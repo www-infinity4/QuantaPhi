@@ -59,7 +59,7 @@ async function search(){
    const sj=sr.ok?await sr.json():{results:[]};
    const evidence=(sj.results||[]).slice(0,12).map((x,i)=>({index:i,title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,900)})).filter(x=>x.title||x.evidence);
    const instruction=['You are QuantaPhi.','User search: '+q,'Write an accurate, readable AI overview of about 500 words.','Use the supplied search evidence as grounding. Do not invent unsupported specifics.','Return plain prose only, no JSON and no heading.','Evidence: '+JSON.stringify(evidence)].join('\n');
-   const r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/reason',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:instruction,context:{application:'QuantaPhi',assistant:'grammar-phi-overview-fallback',task:'500-word-overview',verified_context:{query:q,source_count:evidence.length}}})});
+   const r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:instruction,context:{application:'QuantaPhi',assistant:'grammar-phi-overview-fallback',task:'500-word-overview',verified_context:{query:q,source_count:evidence.length}}})});
    const d=await r.json().catch(()=>({}));
    if(!r.ok)throw new Error(d.message||d.error||('HTTP '+r.status));
    let text=d.output_text??d.output??d.answer??d.response??d.content??d.message??'';
