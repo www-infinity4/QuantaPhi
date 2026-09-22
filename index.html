@@ -47,7 +47,18 @@ function showField(q){
 }
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'';return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(x.title||'Explore')+'</h3><p>'+esc(String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' '))+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'</article>'}
-async function loadMedia(q){try{const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const searches=[terms,terms+' close up detail',terms+' identification variety'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:terms,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
+async function loadMedia(q){try{
+ const terms=(q.match(/[A-Za-z0-9-]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');
+ const isVam=/\bvam\b|morgan dollar|die variety|overdate|repunched/i.test(q);
+ const trusted=isVam?['vamworld.com','ha.com','pcgs.com','ngccoin.com']:[];
+ const iq=isVam?trusted.map(d=>'site:'+d+' '+terms).concat([terms+' VAM diagnostics close up']):[terms,terms+' close up detail',terms+' identification variety'];
+ let all=[];
+ for(const term of iq){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}
+ const host=s=>{try{return new URL(s).hostname.replace(/^www\./,'')}catch{return''}};
+ const seen=new Set();let imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;if(isVam&&!trusted.some(d=>host(x.url||x.source||'').endsWith(d)))return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);
+ $('#mediaGrid').innerHTML=imgs.map(x=>mediaCard({title:x.title||terms,content:x.content||x.description||('Reference image for '+terms+'. Open the source for the full attribution and diagnostic details.'),url:x.url,img_src:x.img_src,thumbnail_src:x.thumbnail_src,thumbnail:x.thumbnail},isVam?'VAM reference image':'Reference image')).join('');
+ $('#media').hidden=!imgs.length;
+}catch(_){$('#media').hidden=true}}
 async function search(){
  const q=$('#q').value.trim(); if(!q)return; $('#media').hidden=true; $('#mediaGrid').innerHTML='';
  $('#result').hidden=false; $('#overview').innerHTML=''; showField(q);
