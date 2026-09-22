@@ -1,38 +1,90 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>QuantaPhi</title><meta name="description" content="QuantaPhi semantic matchmaking search and media-card engine">
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>QuantaPhi</title>
+<meta name="description" content="QuantaPhi experimental semantic-weight search engine">
 <style>
-:root{font-family:system-ui,-apple-system,Roboto,sans-serif;background:#090711;color:#f8f5ff}*{box-sizing:border-box}body{margin:0}.app{max-width:480px;margin:auto;min-height:100vh;padding:18px 15px 60px}
-h1{margin:15px 0 2px;font-size:29px}.phi{color:#c77dff}.sub{margin:0 0 18px;color:#aaa0ba}.search{display:flex;gap:8px;position:sticky;top:0;padding:10px 0;background:#090711eF;z-index:4}
-input{flex:1;min-width:0;border:1px solid #8b5cf6;border-radius:16px;background:#171122;color:white;padding:14px;font-size:16px}button{border:0;border-radius:16px;padding:0 17px;background:#7c3aed;color:white;font-weight:900}
-.field{padding:8px 0}.pill{display:inline-block;margin:3px;padding:5px 8px;border-radius:999px;font-size:12px;font-weight:800}.red{background:#c62828}.blue{background:#2467c7}.yellow{background:#d6a600;color:#211900}.green{background:#27864b}.purple{background:#7b35a8}
-.overview,.card{background:#15101e;border:1px solid #302440;border-radius:22px;padding:17px;margin-top:13px;box-shadow:0 10px 30px #0005}.overview{line-height:1.58}.grid{display:grid;gap:12px}.card img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:15px;background:#21192c}.type{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#cba9ff;font-weight:900}.card h2{margin:8px 0;font-size:20px}.card p{margin:0;color:#d9d2e2;line-height:1.48}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.actions a,.actions button{font-size:12px;padding:9px 11px;border-radius:11px;text-decoration:none;background:#251936;color:#eadcff;border:1px solid #523875}.status{color:#bcb2c8;font-size:13px;margin:8px 2px}
-</style></head><body><main class="app"><h1>Quanta<span class="phi">φ</span></h1><p class="sub">Semantic matchmaking engine · Search → knowledge → media → opportunity</p>
-<div class="search"><input id="q" placeholder="Search anything…" autocomplete="off"><button id="go">Search</button></div><div id="status" class="status"></div><div id="field" class="field"></div><section id="overview" class="overview" hidden></section><section id="cards" class="grid"></section></main>
+:root{font-family:system-ui,-apple-system,Roboto,sans-serif;color:#17131f;background:#f7f4fb}
+*{box-sizing:border-box}body{margin:0}.app{max-width:480px;margin:auto;min-height:100vh;padding:18px 16px 50px}
+h1{font-size:27px;margin:18px 0 4px}.sub{margin:0 0 22px;color:#6b6274;font-size:14px}
+.search{display:flex;gap:8px;position:sticky;top:0;padding:10px 0;background:#f7f4fb;z-index:3}
+input{min-width:0;flex:1;border:2px solid #5f259f;border-radius:15px;padding:14px;font-size:16px;background:#fff}
+button{border:0;border-radius:15px;padding:0 18px;font-weight:800;background:#5f259f;color:#fff}
+.card{background:#fff;border-radius:20px;padding:18px;margin-top:15px;box-shadow:0 5px 22px #29163b14}
+#overview{font-size:16px;line-height:1.65}.meter{display:none;margin-top:12px;font-size:12px;color:#675c70}
+.pill{display:inline-block;margin:3px;padding:5px 8px;border-radius:999px;color:#fff;font-weight:700}
+.red{background:#c62828}.blue{background:#2467c7}.yellow{background:#d6a600;color:#241d00}.green{background:#27864b}.purple{background:#7b35a8}
+small{color:#766c7d}.err{color:#a21d27}.media{margin-top:16px}.media h2{font-size:18px}.mediaGrid{display:grid;gap:12px}.mcard{background:#fff;border:1px solid #e6dfeb;border-radius:18px;padding:12px}.mcard img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:13px}.mcard h3{margin:8px 0 4px}.mcard p{margin:0;color:#62596a;line-height:1.4}.mcard a{display:inline-block;margin-top:9px;color:#5f259f;font-weight:800;text-decoration:none}
+</style></head>
+<body><main class="app">
+<h1>Quantaφ</h1><p class="sub">Semantic field + 500-word overview + weighted media extensions</p>
+<div class="search"><input id="q" autocomplete="off" placeholder="Search anything…"><button id="go">Search</button></div>
+<div id="status"></div><section class="card" id="result" hidden><div id="field"></div><article id="overview"></article><div class="meter" id="meter"></div></section><section class="media" id="media" hidden><h2>Media extensions</h2><div class="mediaGrid" id="mediaGrid"></div></section>
+</main>
 <script>
-const $=s=>document.querySelector(s), STOP=new Set("is was are were be been being the a an of and in by with to for from on at as or but if than then that this these those it its he she they them his her their who which when where how what".split(" "));
-const words=s=>(s.toLowerCase().match(/[a-z0-9'-]+/g)||[]).filter(x=>!STOP.has(x));
-function classify(q){return (q.match(/[A-Za-z0-9'.-]+/g)||[]).map((w,i)=>{let c=i===0?'red':i===1?'blue':'yellow',n=i===0?98:i===1?90:82;if(STOP.has(w.toLowerCase())){c='green';n=15}else if(/(ing|ed)$/.test(w)){c='green';n=26}else if(/(ly|ous|ive|al|ic|ful|less|ary|ory)$/.test(w)){c='purple';n=43}return{w,c,n}})}
-function field(q){$('#field').innerHTML=classify(q).map(x=>'<span class="pill '+x.c+'">'+x.w+' · '+x.n+'</span>').join('')}
-function score(text,anchors,i){let t=words(text),hits=anchors.reduce((n,a)=>n+t.filter(x=>x===a||x.includes(a)||a.includes(x)).length,0);return hits*18+Math.max(0,20-i*2)+Math.min(12,new Set(t).size/5)}
-function trim100(s){let a=String(s||'').replace(/\s+/g,' ').trim().split(' ');return a.slice(0,100).join(' ')+(a.length>100?'…':'')}
-async function searx(q,cat='general'){let u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q,format:'json',categories:cat,safesearch:'1'});let r=await fetch(u);if(!r.ok)throw Error('search '+r.status);return r.json()}
-function card(x,type,img=''){let el=document.createElement('article');el.className='card';el.innerHTML=(img?'<img loading="lazy" src="'+img.replace(/"/g,'')+'" alt="">':'')+'<div class="type">'+type+'</div><h2>'+String(x.title||'Explore').replace(/[<>]/g,'')+'</h2><p>'+trim100(x.content||x.description||'Strong semantic match for this search.')+'</p><div class="actions">'+(x.url?'<a target="_blank" rel="noopener" href="'+x.url+'">Source</a>':'')+'<button class="gen">Generate media</button></div>';el.querySelector('.gen').onclick=()=>alert('Generator extension indexed for: '+(x.title||'this card'));return el}
-async function run(){
- let q=$('#q').value.trim();if(!q)return;field(q);$('#cards').innerHTML='';$('#overview').hidden=true;$('#status').textContent='Weighing buyer/search intent against knowledge, media and opportunity…';
- try{
-  let [g,im,vid]=await Promise.all([searx(q),searx(q,'images'),searx(q+' video','videos').catch(()=>({results:[]}))]);
-  let anchors=words(q),rank=(g.results||[]).map((x,i)=>({...x,_s:score((x.title||'')+' '+(x.content||''),anchors,i)})).sort((a,b)=>b._s-a._s);
-  let top=rank.slice(0,6),overview=top.map(x=>x.content||x.description).filter(Boolean).join(' ');
-  $('#overview').textContent=trim100(overview);$('#overview').hidden=false;
-  let images=(im.results||[]).filter(x=>x.img_src||x.thumbnail_src||x.thumbnail).slice(0,4);
-  top.slice(0,3).forEach((x,i)=>$('#cards').append(card(x,'Knowledge · weight '+Math.round(x._s),images[i]?.img_src||images[i]?.thumbnail_src||images[i]?.thumbnail||'')));
-  images.slice(0,3).forEach(x=>$('#cards').append(card({title:x.title||q,content:'Visual extension selected from the semantic field.',url:x.url},'Image',x.img_src||x.thumbnail_src||x.thumbnail)));
-  (vid.results||[]).slice(0,2).forEach(x=>$('#cards').append(card(x,'Video')));
-  let opportunity=rank.find(x=>/shop|store|buy|sale|auction|price|dealer|market|product/i.test((x.title||'')+' '+(x.content||'')));
-  if(opportunity)$('#cards').append(card(opportunity,'Verified-source opportunity'));
-  $('#status').textContent='QuantaPhi field deployed · cards capped at 100 words';
- }catch(e){$('#status').textContent='Search field unavailable: '+e.message}
+const $=s=>document.querySelector(s);
+const STOP=new Set("is was are were be been being the a an of and in by with to for from on at as or but if than then that this these those it its he she they them his her their who which when where how".split(" "));
+function classify(query){
+ const words=(query.match(/[A-Za-z0-9'.-]+/g)||[]);
+ return words.map((w,i)=>{
+   const x=w.toLowerCase();
+   let color='yellow',region='78–90',role='semantic particle';
+   if(i===0){color='red';region='90–100';role='seed field'}
+   else if(STOP.has(x)){color='green';region='10–20';role='grammar/bond candidate'}
+   else if(/ly$/.test(x)){color='purple';region='30–40';role='modifier candidate'}
+   else if(/(ing|ed)$/.test(x)){color='green';region='20–30';role='event/action candidate'}
+   else if(/(ous|ive|al|ic|ful|less|ary|ory)$/.test(x)){color='purple';region='40–50';role='attribute candidate'}
+   else if(i===1){color='blue';region='80–95';role='inner semantic field'}
+   return {w,color,region,role};
+ });
 }
-$('#go').onclick=run;$('#q').addEventListener('keydown',e=>{if(e.key==='Enter')run()});
+function showField(q){
+ const p=classify(q);
+ $('#field').innerHTML=p.map(x=>'<span class="pill '+x.color+'" title="'+x.role+' · '+x.region+'">'+x.w+'</span>').join('');
+ $('#meter').style.display='block';
+ $('#meter').textContent='Experimental regions: '+p.map(x=>x.w+' '+x.region).join(' · ');
+}
+function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'';return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(x.title||'Explore')+'</h3><p>'+esc(String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' '))+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'</article>'}
+async function loadMedia(q){try{const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const searches=[terms,terms+' close up detail',terms+' identification variety'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:terms,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
+async function search(){
+ const q=$('#q').value.trim(); if(!q)return; $('#media').hidden=true; $('#mediaGrid').innerHTML='';
+ $('#result').hidden=false; $('#overview').innerHTML=''; showField(q);
+ $('#status').innerHTML='<small>Building semantic field and overview…</small>';
+ try{
+   const searchUrl=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+   searchUrl.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});
+   const sr=await fetch(searchUrl,{cache:'no-store'});
+   const sj=sr.ok?await sr.json():{results:[]};
+   const evidence=(sj.results||[]).slice(0,12).map((x,i)=>({index:i,title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,900)})).filter(x=>x.title||x.evidence);
+   const instruction=['You are QuantaPhi.','User search: '+q,'Write an accurate, readable AI overview of about 500 words.','Use the supplied search evidence as grounding. Do not invent unsupported specifics.','Return plain prose only, no JSON and no heading.','Evidence: '+JSON.stringify(evidence)].join('\n');
+   const r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/reason',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:instruction,context:{application:'QuantaPhi',assistant:'grammar-phi-overview-fallback',task:'500-word-overview',verified_context:{query:q,source_count:evidence.length}}})});
+   const d=await r.json().catch(()=>({}));
+   if(!r.ok)throw new Error(d.message||d.error||('HTTP '+r.status));
+   let text=d.output_text??d.output??d.answer??d.response??d.content??d.message??'';
+   if(text&&typeof text==='object')text=text.text||text.content||JSON.stringify(text);
+   text=String(text||'').trim();
+   if(!text)throw new Error('Empty AI response');
+   $('#overview').textContent=text;$('#status').innerHTML='';loadMedia(q);return;
+ }catch(e){
+   try{
+     const u=new URL('https://en.wikipedia.org/w/api.php');
+     u.search=new URLSearchParams({action:'query',generator:'search',gsrsearch:q,gsrlimit:'8',prop:'extracts|info',exintro:'1',explaintext:'1',inprop:'url',format:'json',origin:'*'});
+     const j=await fetch(u).then(r=>r.json());
+     const pages=Object.values(j.query?.pages||{}).filter(x=>x.extract);
+     const prose=pages.slice(0,5).map(x=>x.extract).join(' ').replace(/\s+/g,' ').trim();
+     if(prose){
+       const sentences=prose.match(/[^.!?]+[.!?]+/g)||[prose];
+       let out='',seen=new Set();
+       for(const s of sentences){const k=s.toLowerCase().replace(/[^a-z0-9 ]/g,'').slice(0,90);if(k&&!seen.has(k)){seen.add(k);if((out+' '+s).split(/\s+/).length>520)break;out+=' '+s.trim()}}
+       $('#overview').textContent=out.trim();
+       $('#status').innerHTML='<small>QuantaPhi local synthesis · AI provider quota unavailable</small>'; loadMedia(q);
+       return;
+     }
+   }catch(_){}
+   $('#status').innerHTML='<p class="err">QuantaPhi could not retrieve enough source material for this search.</p>';
+ }
+}
+$('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Enter')search()});
 </script></body></html>
