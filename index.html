@@ -26,7 +26,7 @@ small{color:#766c7d}.err{color:#a21d27}.media{margin-top:16px}.media h2{font-siz
 const $=s=>document.querySelector(s);
 const STOP=new Set("is was are were be been being the a an of and in by with to for from on at as or but if than then that this these those it its he she they them his her their who which when where how".split(" "));
 function classify(query){
- const words=(query.match(/[A-Za-z0-9'.-]+/g)||[]), meaningful=words.filter(w=>!STOP.has(w.toLowerCase()));
+ const words=(query.match(/[A-Za-z0-9'.-]+/g)||[]);
  return words.map((w,i)=>{
    const x=w.toLowerCase();
    let color='yellow',region='78–90',role='semantic particle';
@@ -36,7 +36,6 @@ function classify(query){
    else if(/(ing|ed)$/.test(x)){color='green';region='20–30';role='event/action candidate'}
    else if(/(ous|ive|al|ic|ful|less|ary|ory)$/.test(x)){color='purple';region='40–50';role='attribute candidate'}
    else if(i===1){color='blue';region='80–95';role='inner semantic field'}
-   if(!STOP.has(x)){region='90–100';role='required query concept'}
    return {w,color,region,role};
  });
 }
@@ -48,18 +47,7 @@ function showField(q){
 }
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'';return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(x.title||'Explore')+'</h3><p>'+esc(String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' '))+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'</article>'}
-async function loadMedia(q){try{
- const terms=(q.match(/[A-Za-z0-9-]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');
- const isVam=/\bvam\b|morgan dollar|die variety|overdate|repunched/i.test(q);
- const trusted=isVam?['vamworld.com','ha.com','pcgs.com','ngccoin.com']:[];
- const iq=isVam?trusted.map(d=>'site:'+d+' '+terms).concat([terms+' VAM diagnostics close up']):[terms,terms+' close up detail',terms+' identification variety'];
- let all=[];
- for(const term of iq){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}
- const host=s=>{try{return new URL(s).hostname.replace(/^www\./,'')}catch{return''}};
- const seen=new Set();let imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;if(isVam&&!trusted.some(d=>host(x.url||x.source||'').endsWith(d)))return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);
- $('#mediaGrid').innerHTML=imgs.map(x=>mediaCard({title:x.title||terms,content:x.content||x.description||('Reference image for '+terms+'. Open the source for the full attribution and diagnostic details.'),url:x.url,img_src:x.img_src,thumbnail_src:x.thumbnail_src,thumbnail:x.thumbnail},isVam?'VAM reference image':'Reference image')).join('');
- $('#media').hidden=!imgs.length;
-}catch(_){$('#media').hidden=true}}
+async function loadMedia(q){try{const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const searches=[terms,terms+' close up detail',terms+' identification variety'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:terms,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
 async function search(){
  const q=$('#q').value.trim(); if(!q)return; $('#media').hidden=true; $('#mediaGrid').innerHTML='';
  $('#result').hidden=false; $('#overview').innerHTML=''; showField(q);
@@ -69,19 +57,8 @@ async function search(){
    searchUrl.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});
    const sr=await fetch(searchUrl,{cache:'no-store'});
    const sj=sr.ok?await sr.json():{results:[]};
-   const concepts=(q.match(/[A-Za-z0-9-]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase()));
-   const vam=/\bvam\b/i.test(q);
-   let raw=(sj.results||[]);
-   if(vam){
-     const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
-     vu.search=new URLSearchParams({q:'VAM '+q+' VAMWorld Morgan dollar variety',format:'json',categories:'general',safesearch:'1'});
-     const vj=await fetch(vu,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
-     raw=[...(vj.results||[]),...raw];
-   }
-   const relevance=x=>{const t=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();return concepts.reduce((n,w)=>n+(t.includes(w.toLowerCase())?1:0),0)+(vam&&/vam|vamworld|morgan/.test(t)?5:0)};
-   raw.sort((a,b)=>relevance(b)-relevance(a));
-   const evidence=raw.slice(0,16).map((x,i)=>({index:i,title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,900)})).filter(x=>x.title||x.evidence);
-   const instruction=['You are QuantaPhi.','User search: '+q,'Write an accurate, readable AI overview of about 500 words.','Every meaningful word in the user search is a required concept. Answer the complete question, not a broader category. If the query contains VAM, VAM must remain central throughout the overview.', 'Use the supplied search evidence as grounding. Do not invent unsupported specifics.','Return plain prose only, no JSON and no heading.','Evidence: '+JSON.stringify(evidence)].join('\n');
+   const evidence=(sj.results||[]).slice(0,12).map((x,i)=>({index:i,title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,900)})).filter(x=>x.title||x.evidence);
+   const instruction=['You are QuantaPhi.','User search: '+q,'Write an accurate, readable AI overview of about 500 words.','Use the supplied search evidence as grounding. Do not invent unsupported specifics.','Return plain prose only, no JSON and no heading.','Evidence: '+JSON.stringify(evidence)].join('\n');
    const r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/reason',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:instruction,context:{application:'QuantaPhi',assistant:'grammar-phi-overview-fallback',task:'500-word-overview',verified_context:{query:q,source_count:evidence.length}}})});
    const d=await r.json().catch(()=>({}));
    if(!r.ok)throw new Error(d.message||d.error||('HTTP '+r.status));
@@ -93,7 +70,7 @@ async function search(){
  }catch(e){
    try{
      const u=new URL('https://en.wikipedia.org/w/api.php');
-     u.search=new URLSearchParams({action:'query',generator:'search',gsrsearch:(/\\bvam\\b/i.test(q)?'Morgan dollar VAM variety '+q:q),gsrlimit:'8',prop:'extracts|info',exintro:'1',explaintext:'1',inprop:'url',format:'json',origin:'*'});
+     u.search=new URLSearchParams({action:'query',generator:'search',gsrsearch:q,gsrlimit:'8',prop:'extracts|info',exintro:'1',explaintext:'1',inprop:'url',format:'json',origin:'*'});
      const j=await fetch(u).then(r=>r.json());
      const pages=Object.values(j.query?.pages||{}).filter(x=>x.extract);
      const prose=pages.slice(0,5).map(x=>x.extract).join(' ').replace(/\s+/g,' ').trim();
