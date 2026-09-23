@@ -49,7 +49,7 @@ function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&l
 function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=x.title||'Explore',url=x.url||location.href,desc=String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' ');if(String(type).toLowerCase()==='video'){return '<article class="mcard videoCard"><div class="videoVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':'')+(x.url?'<a class="videoPlay" target="_blank" rel="noopener" href="'+esc(x.url)+'" aria-label="Play '+esc(title)+'">▶</a>':'')+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p><div class="videoActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Watch video</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const audio=x.audio||x.audio_url||x.media_url||x.enclosure||'';return '<article class="mcard soundCard"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(audio?'<audio controls preload="none" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open audio</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
 async function loadMedia(q){try{const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const searches=[terms,terms+' close up detail',terms+' identification variety'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:terms,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
 async function search(){
- const q=$('#q').value.trim(); if(!q)return; if(!window.__qRefining&&window.QuantaPhiWallet)window.QuantaPhiWallet.addToken(); $('#media').hidden=true; $('#mediaGrid').innerHTML='';
+ const q=$('#q').value.trim(); if(!q)return; $('#media').hidden=true; $('#mediaGrid').innerHTML='';
  $('#result').hidden=false; $('#overview').innerHTML=''; showField(q);
  $('#status').innerHTML='<small>Building semantic field and overview…</small>';
  try{
@@ -87,10 +87,16 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
 (function(){
  const T='infinityTokens',S='starCoins';
  function num(k){try{return Number(localStorage.getItem(k)||0)||0}catch(_){return 0}}
- function put(k,v){try{localStorage.setItem(k,String(v))}catch(_){}}
+ function put(k,v){try{localStorage.setItem(k,String(v));return true}catch(_){return false}}
  function render(){const t=document.getElementById('qtoken'),s=document.getElementById('qstar');if(t)t.textContent='∞ Tokens: '+num(T);if(s)s.textContent='★ '+num(S).toFixed(1)}
  window.QuantaPhiWallet={
-  addToken:function(){put(T,num(T)+1);render()},
+  addToken:function(){
+   const next=num(T)+1;
+   put(T,next);
+   window.__qTokenSession=(window.__qTokenSession||0)+1;
+   render();
+   return next;
+  },
   addShare:function(){put(S,Math.round((num(S)+0.1)*10)/10);render()},
   render:render
  };
@@ -184,5 +190,16 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  const grid=document.getElementById('mediaGrid');
  if(grid)new MutationObserver(()=>enrichImageCards()).observe(grid,{childList:true});
  document.getElementById('qImagesBtn')?.addEventListener('click',()=>setTimeout(enrichImageCards,400));
+})();
+</script><script>
+(function(){
+ const go=document.getElementById('go'),q=document.getElementById('q');
+ if(!go||!q)return;
+ function mint(){
+  if(!q.value.trim()||window.__qRefining)return;
+  if(window.QuantaPhiWallet)window.QuantaPhiWallet.addToken();
+ }
+ go.addEventListener('click',mint,true);
+ q.addEventListener('keydown',function(e){if(e.key==='Enter')mint()},true);
 })();
 </script></script></body></html>
