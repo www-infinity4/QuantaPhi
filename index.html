@@ -49,10 +49,12 @@ function showField(q){
  $('#meter').textContent='Experimental regions: '+p.map(x=>x.w+' '+x.region).join(' · ');
 }
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=x.title||'Explore',url=x.url||location.href,desc=String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' ');if(String(type).toLowerCase()==='video'){const candidates=[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),video=candidates.find(v=>/\.(mp4|mpeg|mpg|webm|ogv|m4v)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard videoCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(video)+'"><div class="videoVisual">'+(video?'<video controls playsinline webkit-playsinline preload="metadata" poster="'+esc(img)+'" src="'+esc(video)+'"></video>':(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':''))+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>Collect or share to research this video story.</p><div class="videoActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(img)+'"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3 class="imageStoryTitle">Researching this image…</h3><p>Researching the story behind this image…</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const candidates=[x.audio,x.audio_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),audio=candidates.find(v=>/\.(mp3|m4a|ogg|oga|wav|flac)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard soundCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(audio)+'"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>Collect or share to research this sound story.</p>'+(audio?'<audio controls preload="metadata" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
+function cleanMediaTitle(title,query){let t=String(title||'').replace(/\bfile\s*:\s*/ig,'').replace(/\.(jpe?g|png|gif|webp|bmp|tiff?|svg)(?:\b|$)/ig,'').replace(/\b(jpe?g|png|gif|webp|bmp|tiff?|svg)\b/ig,'').replace(/[_-]+/g,' ').replace(/\s+/g,' ').trim();if(!t||t.length<4||/^(file|image|photo)$/i.test(t))t=String(query||'Image story').trim();return t}
+function searchPermalink(query){const u=new URL(location.href);u.searchParams.set('q',String(query||'').trim());u.hash='result';return u.toString()}
+function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=cleanMediaTitle(x.title,document.getElementById('q')?.value||'Explore'),url=x.url||location.href,desc=String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' ');if(String(type).toLowerCase()==='video'){const candidates=[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),video=candidates.find(v=>/\.(mp4|mpeg|mpg|webm|ogv|m4v)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard videoCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(video)+'"><div class="videoVisual">'+(video?'<video controls playsinline webkit-playsinline preload="metadata" poster="'+esc(img)+'" src="'+esc(video)+'"></video>':(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':''))+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>Collect or share to research this video story.</p><div class="videoActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(img)+'"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3 class="imageStoryTitle">Researching this image…</h3><p>Researching the story behind this image…</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const candidates=[x.audio,x.audio_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),audio=candidates.find(v=>/\.(mp3|m4a|ogg|oga|wav|flac)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard soundCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(audio)+'"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>Collect or share to research this sound story.</p>'+(audio?'<audio controls preload="metadata" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
 async function loadMedia(q){try{const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const entity=entityClause(q);const searches=[entity,entity+' images',entity+' photos',entity+' portrait',entity+' biography',entity+' site:wikipedia.org',entity+' site:archive.org',entity+' site:youtube.com'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,24);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:entity,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).filter(x=>[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].some(v=>/\.(mp4|m4v|webm)(\?|#|$)/i.test(String(v||'')))).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
 async function search(){
- const q=$('#q').value.trim(); if(!q)return; const nq=normalizedEntity(q); $('#media').hidden=true; $('#mediaGrid').innerHTML='';
+ const q=$('#q').value.trim(); if(!q)return; const nq=normalizedEntity(q); try{history.replaceState(null,'',searchPermalink(q))}catch(_){} $('#media').hidden=true; $('#mediaGrid').innerHTML='';
  $('#result').hidden=false; $('#overview').innerHTML=''; showField(q);
  $('#status').innerHTML='<small>Building semantic field and overview…</small>'; loadMedia(nq);
  try{
@@ -132,33 +134,25 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
 })();
 </script><script>(function(){const wrap=document.getElementById('qrefineWrap'),r=document.getElementById('qrefine'),b=document.getElementById('qrefineBtn'),q=document.getElementById('q');if(!wrap||!r||!b||!q)return;function reveal(){if(q.value.trim())wrap.hidden=false}document.getElementById('go').addEventListener('click',reveal);q.addEventListener('keydown',function(e){if(e.key==='Enter')reveal()});function refine(){const extra=r.value.trim(),base=q.value.trim();if(!extra||!base)return;q.value=(base+' '+extra).trim();r.value='';window.__qRefining=true;Promise.resolve(search()).finally(()=>{window.__qRefining=false})}b.addEventListener('click',refine);r.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();refine()}})})();</script><script>(function(){const b=document.getElementById('qshare'),s=document.getElementById('qstar'),q=document.getElementById('q');if(!b||!s)return;async function share(){const data={title:'Quantaφ',text:q&&q.value.trim()?('Quantaφ: '+q.value.trim()):'Quantaφ',url:location.href};let completed=false;try{if(navigator.share){await navigator.share(data);completed=true}else{await navigator.clipboard.writeText(location.href);completed=true}}catch(_){return}if(completed){if(window.QuantaPhiWallet)window.QuantaPhiWallet.addShare();b.textContent='Shared +0.1 ★';setTimeout(()=>b.textContent='Share +0.1 ★',1400)}}b.addEventListener('click',share)})();</script><script>(function(){
  document.addEventListener('click',async function(e){
-  const b=e.target.closest('.cardShare'); if(!b)return;
-  const title=b.dataset.title||'Quantaφ', pageUrl=b.dataset.url||location.href, imageUrl=b.dataset.image||'';
+  const b=e.target.closest('.cardShare');if(!b)return;
+  const card=b.closest('.mcard'),q=document.getElementById('q')?.value.trim()||'QuantaPhi';
+  if(card&&card.dataset.enriched!=='1'&&window.__qResearchStory){
+   const type=card.classList.contains('videoCard')?'Video':card.classList.contains('soundCard')?'Sound':'Image';
+   b.disabled=true;b.textContent='Building story…';try{await window.__qResearchStory(card,type)}catch(_){}finally{b.disabled=false}
+  }
+  const story=String(card?.querySelector('p')?.textContent||'').trim();
+  const heading=cleanMediaTitle(card?.querySelector('h3')?.textContent||card?.dataset.sourceTitle||'',q);
+  const shareText=(story&& !/^Researching|^Building researched|^Collect or share/i.test(story))?story:heading;
+  const returnUrl=searchPermalink(q);
+  const imageUrl=b.dataset.image||card?.querySelector('img')?.currentSrc||card?.querySelector('img')?.src||'';
   let shared=false;
   try{
-   if(imageUrl && navigator.share){
-    try{
-     const r=await fetch(imageUrl,{mode:'cors'});
-     if(r.ok){
-      const blob=await r.blob();
-      const ext=(blob.type&&blob.type.split('/')[1]||'jpg').replace('jpeg','jpg');
-      const file=new File([blob],('quantaphi-'+Date.now()+'.'+ext),{type:blob.type||'image/jpeg'});
-      if(!navigator.canShare || navigator.canShare({files:[file]})){
-       await navigator.share({title,text:title,files:[file]}); shared=true;
-      }
-     }
-    }catch(_){}
+   if(imageUrl&&navigator.share){
+    try{const r=await fetch(imageUrl,{mode:'cors'});if(r.ok){const blob=await r.blob(),ext=(blob.type?.split('/')[1]||'jpg').replace('jpeg','jpg'),file=new File([blob],('quantaphi-image.'+ext),{type:blob.type||'image/jpeg'});if(!navigator.canShare||navigator.canShare({files:[file]})){await navigator.share({title:heading,text:shareText+'\n\nFull QuantaPhi search: '+returnUrl,url:returnUrl,files:[file]});shared=true}}}catch(_){}
    }
-   if(!shared){
-    const data={title,text:title,url:imageUrl||pageUrl};
-    if(navigator.share){await navigator.share(data);shared=true}
-    else if(navigator.clipboard){await navigator.clipboard.writeText(imageUrl||pageUrl);shared=true}
-   }
-  }catch(_){return}
-  if(shared){
-   if(window.QuantaPhiWallet)window.QuantaPhiWallet.addShare();
-   const t=b.textContent;b.textContent='Shared +0.1 ★';setTimeout(()=>b.textContent=t,1400);
-  }
+   if(!shared){const data={title:heading,text:shareText,url:returnUrl};if(navigator.share){await navigator.share(data);shared=true}else if(navigator.clipboard){await navigator.clipboard.writeText(shareText+'\n\n'+returnUrl);shared=true}}
+  }catch(_){b.textContent='Share +0.1 ★';return}
+  if(shared){try{window.QuantaPhiWallet?.addShare()}catch(_){}const old=b.textContent;b.textContent='Shared +0.1 ★';setTimeout(()=>b.textContent=old.includes('image')?'Share image +0.1 ★':'Share +0.1 ★',1400)}
  });
 })();</script><script>(function(){const media=document.getElementById('media'),grid=document.getElementById('mediaGrid');function openMedia(kind){if(media)media.hidden=false;if(grid){const cards=[...grid.querySelectorAll('.mcard')];cards.forEach(card=>{const t=(card.querySelector('small')?.textContent||'').toLowerCase();card.hidden=(kind!=='all'&&!t.includes(kind))})}if(media)media.scrollIntoView({behavior:'smooth',block:'start'})}document.getElementById('qImagesBtn')?.addEventListener('click',()=>openMedia('image'));document.getElementById('qVideoBtn')?.addEventListener('click',()=>openMedia('video'));document.getElementById('qSoundBtn')?.addEventListener('click',()=>openMedia('sound'))})();</script><script>
 (function(){
@@ -205,7 +199,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
    const rawQ=document.getElementById('q')?.value.trim()||'';
    const q=normalizedEntity(rawQ);
    const entity=entityClause(q);
-   const title=String(card.dataset.sourceTitle||'').trim();
+   const title=cleanMediaTitle(card.dataset.sourceTitle||'',q);
    const sourceUrl=String(card.dataset.sourceUrl||'');
    const heading=card.querySelector('h3'),p=card.querySelector('p');
    if(!p)throw new Error('Card story target missing');
@@ -308,7 +302,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   }catch(_){grid.innerHTML='<p class="err">Internet Archive video feed could not load.</p>'}
  }
  document.getElementById('qVideoBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();archiveVideoFeed()},true);
- document.getElementById('overviewShare')?.addEventListener('click',async()=>{const b=document.getElementById('overviewShare'),q=document.getElementById('q')?.value.trim()||'QuantaPhi',text=document.getElementById('overview')?.innerText.trim()||'';if(!text)return;try{if(navigator.share)await navigator.share({title:q+' — QuantaPhi AI Overview',text,url:location.href});else await navigator.clipboard?.writeText(q+'\n\n'+text+'\n\n'+location.href);try{window.QuantaPhiWallet?.addShare()}catch(_){}b.textContent='Shared ✓ +0.1 ★';setTimeout(()=>b.textContent='Share AI Overview +0.1 ★',1800)}catch(_){b.textContent='Share AI Overview +0.1 ★'}});
+ document.getElementById('overviewShare')?.addEventListener('click',async()=>{const b=document.getElementById('overviewShare'),q=document.getElementById('q')?.value.trim()||'QuantaPhi',text=document.getElementById('overview')?.innerText.trim()||'';if(!text)return;try{if(navigator.share)await navigator.share({title:q+' — QuantaPhi AI Overview',text,url:searchPermalink(q)});else await navigator.clipboard?.writeText(q+'\n\n'+text+'\n\n'+searchPermalink(q));try{window.QuantaPhiWallet?.addShare()}catch(_){}b.textContent='Shared ✓ +0.1 ★';setTimeout(()=>b.textContent='Share AI Overview +0.1 ★',1800)}catch(_){b.textContent='Share AI Overview +0.1 ★'}});
  document.addEventListener('click',async e=>{
   const b=e.target.closest('.cardCollect');if(!b)return;
   e.preventDefault();e.stopPropagation();
@@ -337,4 +331,4 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   }catch(err){console.error('QuantaPhi collect failed',err);b.textContent='Collect';b.disabled=false}
  },true);
 })();
-</script></body></html>
+</script><script>(function(){const qFromShare=new URLSearchParams(location.search).get('q');if(qFromShare){const input=document.getElementById('q');if(input){input.value=qFromShare;setTimeout(()=>document.getElementById('go')?.click(),0)}}})();</script></body></html>
