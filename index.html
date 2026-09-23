@@ -93,4 +93,20 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  };
  window.QuantaPhiStarCoins.render();
 })();
-</script></script><script>(function(){const media=document.getElementById('media'),grid=document.getElementById('mediaGrid');function openMedia(kind){if(media)media.hidden=false;if(grid){const cards=[...grid.querySelectorAll('.mcard')];cards.forEach(card=>{const t=(card.querySelector('small')?.textContent||'').toLowerCase();card.hidden=(kind!=='all'&&!t.includes(kind))})}if(media)media.scrollIntoView({behavior:'smooth',block:'start'})}document.getElementById('qImagesBtn')?.addEventListener('click',()=>openMedia('image'));document.getElementById('qVideoBtn')?.addEventListener('click',()=>openMedia('video'));document.getElementById('qSoundBtn')?.addEventListener('click',()=>openMedia('sound'))})();</script></body></html>
+</script></script><script>(function(){const media=document.getElementById('media'),grid=document.getElementById('mediaGrid');function openMedia(kind){if(media)media.hidden=false;if(grid){const cards=[...grid.querySelectorAll('.mcard')];cards.forEach(card=>{const t=(card.querySelector('small')?.textContent||'').toLowerCase();card.hidden=(kind!=='all'&&!t.includes(kind))})}if(media)media.scrollIntoView({behavior:'smooth',block:'start'})}document.getElementById('qImagesBtn')?.addEventListener('click',()=>openMedia('image'));document.getElementById('qVideoBtn')?.addEventListener('click',()=>openMedia('video'));document.getElementById('qSoundBtn')?.addEventListener('click',()=>openMedia('sound'))})();<script>
+(function(){
+ const btn=document.getElementById('qVideoBtn'),q=document.getElementById('q'),media=document.getElementById('media'),grid=document.getElementById('mediaGrid'),menu=document.getElementById('qmenu');
+ if(!btn||!q||!media||!grid)return;
+ btn.addEventListener('click',async function(){
+  const query=q.value.trim(); if(!query)return;
+  if(menu)menu.hidden=true; media.hidden=false; grid.innerHTML='<small>Loading video cards…</small>'; media.scrollIntoView({behavior:'smooth',block:'start'});
+  try{
+   const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+   u.search=new URLSearchParams({q:query,format:'json',categories:'videos',safesearch:'1'});
+   const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+   const videos=(j.results||[]).slice(0,20);
+   grid.innerHTML=videos.length?videos.map(x=>mediaCard(x,'Video')).join(''):'<p class="err">No video results found.</p>';
+  }catch(_){grid.innerHTML='<p class="err">Video search could not load.</p>'}
+ });
+})();
+</script></script></body></html>
