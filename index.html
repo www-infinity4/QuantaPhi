@@ -20,7 +20,7 @@ small{color:#766c7d}.err{color:#a21d27}.media{margin-top:16px}.media h2{font-siz
 <body><main class="app">
 <div class="qtop"><button class="qmenuBtn" id="qmenuBtn" type="button" aria-label="Menu">☰</button><h1>Quantaφ</h1><div class="qbalances" aria-live="polite"><button class="qtoken" id="qtoken" type="button">∞ Tokens: 0</button><button class="qstar" id="qstar" type="button">★ 0.0</button></div><nav class="qmenu" id="qmenu" hidden><button id="qshare" type="button">Share +0.1 ★</button><a href="#result">Overview</a><button class="mediaNav" id="qImagesBtn" type="button">Images</button><button class="mediaNav" id="qVideoBtn" type="button">Video</button><button class="mediaNav" id="qSoundBtn" type="button">Sound</button><a href="#media">Media</a></nav></div><p class="sub">Semantic field + 500-word overview + weighted media extensions</p>
 <div class="search"><input id="q" autocomplete="off" placeholder="Search anything…"><button id="go">Search</button></div>
-<div class="qrefine" id="qrefineWrap" hidden><input id="qrefine" autocomplete="off" placeholder="Refine this entity…"><button id="qrefineBtn" type="button">Refine</button></div><div id="status"></div><section class="card" id="result" hidden><div id="field"></div><article id="overview"></article><div class="meter" id="meter"></div></section><section class="media" id="media" hidden><h2>Media extensions</h2><div class="mediaGrid" id="mediaGrid"></div></section>
+<div class="qrefine" id="qrefineWrap" hidden><input id="qrefine" autocomplete="off" placeholder="Refine this entity…"><button id="qrefineBtn" type="button">Refine</button></div><div id="status"></div><section class="card" id="result" hidden><div id="field"></div><article id="overview"></article><button class="overviewShare" id="overviewShare" type="button">Share AI Overview +0.1 ★</button><div class="meter" id="meter"></div></section><section class="media" id="media" hidden><h2>Media extensions</h2><div class="mediaGrid" id="mediaGrid"></div></section>
 </main>
 <script>
 const $=s=>document.querySelector(s);
@@ -39,7 +39,7 @@ function classify(query){
    return {w,color,region,role};
  });
 }
-function entityClause(query){const raw=String(query||'').trim(),words=raw.match(/[A-Za-z][A-Za-z'.-]*/g)||[];if(words.length<2)return raw;const lead=[];for(const w of words){if(STOP.has(w.toLowerCase()))break;lead.push(w);if(lead.length===4)break}return lead.length>=2?'"'+lead.join(' ')+'"':raw}
+function entityClause(query){const raw=String(query||'').trim();const words=raw.match(/[A-Za-z0-9][A-Za-z0-9'.-]*/g)||[];if(!words.length)return raw;const meaningful=words.filter(w=>!STOP.has(w.toLowerCase()));if(!meaningful.length)return raw;const first=meaningful.slice(0,Math.min(4,meaningful.length));if(first.length===1)return '"'+first[0]+'"';return '"'+first.join(' ')+'"'}return lead.length>=2?'"'+lead.join(' ')+'"':raw}
 function showField(q){
  const p=classify(q);
  $('#field').innerHTML=p.map(x=>'<span class="pill '+x.color+'" title="'+x.role+' · '+x.region+'">'+x.w+'</span>').join('');
@@ -48,7 +48,7 @@ function showField(q){
 }
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=x.title||'Explore',url=x.url||location.href,desc=String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' ');if(String(type).toLowerCase()==='video'){const candidates=[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),video=candidates.find(v=>/\.(mp4|mpeg|mpg|webm|ogv|m4v)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard videoCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(video)+'"><div class="videoVisual">'+(video?'<video controls playsinline webkit-playsinline preload="metadata" poster="'+esc(img)+'" src="'+esc(video)+'"></video>':(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':''))+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>Collect or share to research this video story.</p><div class="videoActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(img)+'"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3 class="imageStoryTitle">Researching this image…</h3><p>Researching the story behind this image…</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const candidates=[x.audio,x.audio_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),audio=candidates.find(v=>/\.(mp3|m4a|ogg|oga|wav|flac)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard soundCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(audio)+'"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>Collect or share to research this sound story.</p>'+(audio?'<audio controls preload="metadata" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
-async function loadMedia(q){try{const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const entity=entityClause(q);const searches=[entity,entity+' photos',entity+' images',entity+' portrait',entity+' social media',entity+' Iowa'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:entity,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).filter(x=>[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].some(v=>/\.(mp4|m4v|webm)(\?|#|$)/i.test(String(v||'')))).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
+async function loadMedia(q){try{const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const entity=entityClause(q);const searches=[entity+' images',entity+' photos',entity+' portrait',entity+' site:archive.org',entity+' site:youtube.com'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:entity,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).filter(x=>[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].some(v=>/\.(mp4|m4v|webm)(\?|#|$)/i.test(String(v||'')))).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
 async function search(){
  const q=$('#q').value.trim(); if(!q)return; $('#media').hidden=true; $('#mediaGrid').innerHTML='';
  $('#result').hidden=false; $('#overview').innerHTML=''; showField(q);
@@ -279,10 +279,15 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
    const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
    u.search=new URLSearchParams({q:entityClause(query)+' site:archive.org/details',format:'json',categories:'music',safesearch:'1'});
    const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
-   const rows=(j.results||[]).filter(x=>archiveId(x)).slice(0,20);
+   const rows=(j.results||[]).filter(x=>archiveId(x)).slice(0,14);
    const playable=await Promise.all(rows.map(iaAudioPlayable));
-   const good=playable.filter(x=>x.audio_url);
-   grid.innerHTML=good.length?good.map(x=>mediaCard(x,'Sound')).join(''):'<p class="err">No playable Internet Archive sound files found.</p>';
+   const archiveGood=playable.filter(x=>x.audio_url);
+   const wu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+   wu.search=new URLSearchParams({q:entityClause(query),format:'json',categories:'music,general',safesearch:'1'});
+   const wj=await fetch(wu,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+   const web=(wj.results||[]).filter(x=>!archiveId(x)).slice(0,20);
+   const good=[...archiveGood,...web];
+   grid.innerHTML=good.length?good.map(x=>mediaCard(x,'Sound')).join(''):'<p class="err">No indexed sound results found.</p>';
   }catch(_){grid.innerHTML='<p class="err">Internet Archive sound feed could not load.</p>'}
  }
  window.__qArchiveSoundFeed=archiveSoundFeed;
@@ -294,13 +299,19 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
    const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
    u.search=new URLSearchParams({q:entityClause(query)+' site:archive.org/details',format:'json',categories:'videos',safesearch:'1'});
    const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
-   const rows=(j.results||[]).filter(x=>archiveId(x)).slice(0,20);
+   const rows=(j.results||[]).filter(x=>archiveId(x)).slice(0,14);
    const playable=await Promise.all(rows.map(iaPlayable));
-   const good=playable.filter(x=>x.video_url);
-   grid.innerHTML=good.length?good.map(x=>mediaCard(x,'Video')).join(''):'<p class="err">No playable Internet Archive video files found.</p>';
+   const archiveGood=playable.filter(x=>x.video_url);
+   const wu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+   wu.search=new URLSearchParams({q:entityClause(query),format:'json',categories:'videos',safesearch:'1'});
+   const wj=await fetch(wu,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+   const web=(wj.results||[]).filter(x=>!archiveId(x)).slice(0,20);
+   const good=[...archiveGood,...web];
+   grid.innerHTML=good.length?good.map(x=>mediaCard(x,'Video')).join(''):'<p class="err">No indexed video results found.</p>';
   }catch(_){grid.innerHTML='<p class="err">Internet Archive video feed could not load.</p>'}
  }
  document.getElementById('qVideoBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();archiveVideoFeed()},true);
+ document.getElementById('overviewShare')?.addEventListener('click',async()=>{const b=document.getElementById('overviewShare'),q=document.getElementById('q')?.value.trim()||'QuantaPhi',text=document.getElementById('overview')?.innerText.trim()||'';if(!text)return;try{if(navigator.share)await navigator.share({title:q+' — QuantaPhi AI Overview',text,url:location.href});else await navigator.clipboard?.writeText(q+'\n\n'+text+'\n\n'+location.href);try{window.QuantaPhiWallet?.addShare()}catch(_){}b.textContent='Shared ✓ +0.1 ★';setTimeout(()=>b.textContent='Share AI Overview +0.1 ★',1800)}catch(_){b.textContent='Share AI Overview +0.1 ★'}});
  document.addEventListener('click',async e=>{
   const b=e.target.closest('.cardCollect');if(!b)return;
   e.preventDefault();e.stopPropagation();
