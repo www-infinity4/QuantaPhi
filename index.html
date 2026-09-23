@@ -39,7 +39,7 @@ function classify(query){
    return {w,color,region,role};
  });
 }
-function entityClause(query){const raw=String(query||'').trim(),words=raw.match(/[A-Za-z][A-Za-z'.-]*/g)||[];if(words.length<2)return raw;const lead=[];for(const w of words){if(STOP.has(w.toLowerCase()))break;lead.push(w);if(lead.length===4)break}return lead.length>=2?('"'+lead.join(' ')+'" '+raw).trim():raw}
+function entityClause(query){const raw=String(query||'').trim(),words=raw.match(/[A-Za-z][A-Za-z'.-]*/g)||[];if(words.length<2)return raw;const lead=[];for(const w of words){if(STOP.has(w.toLowerCase()))break;lead.push(w);if(lead.length===4)break}return lead.length>=2?'"'+lead.join(' ')+'"':raw}
 function showField(q){
  const p=classify(q);
  $('#field').innerHTML=p.map(x=>'<span class="pill '+x.color+'" title="'+x.role+' · '+x.region+'">'+x.w+'</span>').join('');
@@ -55,7 +55,8 @@ async function search(){
  $('#status').innerHTML='<small>Building semantic field and overview…</small>'; loadMedia(q);
  try{
    const searchUrl=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
-   searchUrl.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});
+   const exactEntity=entityClause(q);
+   searchUrl.search=new URLSearchParams({q:exactEntity,format:'json',categories:'general',safesearch:'1'});
    const sr=await fetch(searchUrl,{cache:'no-store'});
    const sj=sr.ok?await sr.json():{results:[]};
    const particles=classify(q); const required=particles.filter(x=>!STOP.has(x.w.toLowerCase())).map(x=>x.w.toLowerCase());
