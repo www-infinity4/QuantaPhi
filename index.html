@@ -86,6 +86,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
 </script><script>(function(){const b=document.getElementById('qmenuBtn'),m=document.getElementById('qmenu');if(!b||!m)return;b.addEventListener('click',function(){m.hidden=!m.hidden});m.addEventListener('click',function(){m.hidden=true})})();</script><script>
 (function(){
  const T='quantaPhiTokens',S='quantaPhiStarCoins';
+ // WALLET CONTRACT: these keys are persistent QuantaPhi state. Never reset, rename, clear, or overwrite them from feature code.
  function num(k){try{return Number(localStorage.getItem(k)||0)||0}catch(_){return 0}}
  function put(k,v){try{localStorage.setItem(k,String(v));return true}catch(_){return false}}
  let tokenBalance=num(T),starBalance=num(S); function pulse(el){if(!el)return;el.classList.remove('qwalletPulse');void el.offsetWidth;el.classList.add('qwalletPulse')} function render(which){const t=document.getElementById('qtoken'),s=document.getElementById('qstar');if(t)t.textContent='∞ Tokens: '+tokenBalance;if(s)s.textContent='★ '+starBalance.toFixed(1);if(which==='token')pulse(t);if(which==='star')pulse(s)}
