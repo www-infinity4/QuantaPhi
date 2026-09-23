@@ -109,4 +109,21 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   }catch(_){grid.innerHTML='<p class="err">Video search could not load.</p>'}
  });
 })();
+</script><script>
+(function(){
+ const q=document.getElementById('q'),media=document.getElementById('media'),grid=document.getElementById('mediaGrid'),menu=document.getElementById('qmenu');
+ async function feed(kind,category){
+  const query=q&&q.value.trim(); if(!query)return;
+  if(menu)menu.hidden=true; media.hidden=false; grid.innerHTML='<small>Loading '+kind.toLowerCase()+' cards…</small>'; media.scrollIntoView({behavior:'smooth',block:'start'});
+  try{
+   const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+   u.search=new URLSearchParams({q:query,format:'json',categories:category,safesearch:'1'});
+   const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+   const rows=(j.results||[]).slice(0,20);
+   grid.innerHTML=rows.length?rows.map(x=>mediaCard(x,kind)).join(''):'<p class="err">No '+kind.toLowerCase()+' results found.</p>';
+  }catch(_){grid.innerHTML='<p class="err">'+kind+' search could not load.</p>'}
+ }
+ document.getElementById('qImagesBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();feed('Image','images')},true);
+ document.getElementById('qSoundBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();feed('Sound','music')},true);
+})();
 </script></script></body></html>
