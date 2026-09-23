@@ -47,7 +47,7 @@ function showField(q){
  $('#meter').textContent='Experimental regions: '+p.map(x=>x.w+' '+x.region).join(' · ');
 }
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=x.title||'Explore',url=x.url||location.href,desc=String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' ');if(String(type).toLowerCase()==='video'){const candidates=[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),video=candidates.find(v=>/\.(mp4|mpeg|mpg|webm|ogv|m4v)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard videoCard" data-source-title="'+esc(title)+'"><div class="videoVisual">'+(video?'<video controls playsinline webkit-playsinline preload="metadata" poster="'+esc(img)+'" src="'+esc(video)+'"></video>':(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':''))+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>Collect or share to research this video story.</p><div class="videoActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard" data-source-title="'+esc(title)+'"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3 class="imageStoryTitle">Researching this image…</h3><p>Researching the story behind this image…</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const candidates=[x.audio,x.audio_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),audio=candidates.find(v=>/\.(mp3|m4a|ogg|oga|wav|flac)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard soundCard" data-source-title="'+esc(title)+'"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>Collect or share to research this sound story.</p>'+(audio?'<audio controls preload="metadata" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
+function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=x.title||'Explore',url=x.url||location.href,desc=String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' ');if(String(type).toLowerCase()==='video'){const candidates=[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),video=candidates.find(v=>/\.(mp4|mpeg|mpg|webm|ogv|m4v)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard videoCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(video)+'"><div class="videoVisual">'+(video?'<video controls playsinline webkit-playsinline preload="metadata" poster="'+esc(img)+'" src="'+esc(video)+'"></video>':(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':''))+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>Collect or share to research this video story.</p><div class="videoActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(img)+'"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3 class="imageStoryTitle">Researching this image…</h3><p>Researching the story behind this image…</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const candidates=[x.audio,x.audio_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),audio=candidates.find(v=>/\.(mp3|m4a|ogg|oga|wav|flac)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard soundCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(audio)+'"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>Collect or share to research this sound story.</p>'+(audio?'<audio controls preload="metadata" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
 async function loadMedia(q){try{const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const entity=entityClause(q);const searches=[entity,entity+' close up detail',entity+' identification variety'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:entity,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
 async function search(){
  const q=$('#q').value.trim(); if(!q)return; $('#media').hidden=true; $('#mediaGrid').innerHTML='';
@@ -171,7 +171,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   }catch(_){grid.innerHTML='<p class="err">'+kind+' search could not load.</p>'}
  }
  document.getElementById('qImagesBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();feed('Image','images')},true);
- document.getElementById('qSoundBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();feed('Sound','music')},true);
+ document.getElementById('qSoundBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();window.__qArchiveSoundFeed?window.__qArchiveSoundFeed():feed('Sound','music')},true);
 })();
 </script><script>
 (function(){
@@ -250,6 +250,31 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   }catch(_){}
   return x;
  }
+ async function iaAudioPlayable(x){
+  const id=archiveId(x);if(!id)return x;
+  try{
+   const j=await fetch('https://archive.org/metadata/'+encodeURIComponent(id),{cache:'no-store'}).then(r=>r.ok?r.json():null);
+   const files=(j&&j.files)||[];
+   const a=files.find(v=>/\.(mp3|ogg|oga|m4a|wav|flac)$/i.test(v.name||'')&&!/64kb|spectrogram/i.test(v.name||''))||files.find(v=>/\.(mp3|ogg|oga|m4a|wav|flac)$/i.test(v.name||''));
+   if(a)x.audio_url='https://archive.org/download/'+encodeURIComponent(id)+'/'+String(a.name).split('/').map(encodeURIComponent).join('/');
+  }catch(_){}
+  return x;
+ }
+ async function archiveSoundFeed(){
+  const q=document.getElementById('q'),media=document.getElementById('media'),menu=document.getElementById('qmenu');
+  const query=q&&q.value.trim();if(!query)return;
+  if(menu)menu.hidden=true;media.hidden=false;grid.innerHTML='<small>Loading Internet Archive sound…</small>';media.scrollIntoView({behavior:'smooth',block:'start'});
+  try{
+   const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+   u.search=new URLSearchParams({q:entityClause(query)+' site:archive.org/details',format:'json',categories:'music',safesearch:'1'});
+   const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+   const rows=(j.results||[]).filter(x=>archiveId(x)).slice(0,20);
+   const playable=await Promise.all(rows.map(iaAudioPlayable));
+   const good=playable.filter(x=>x.audio_url);
+   grid.innerHTML=good.length?good.map(x=>mediaCard(x,'Sound')).join(''):'<p class="err">No playable Internet Archive sound files found.</p>';
+  }catch(_){grid.innerHTML='<p class="err">Internet Archive sound feed could not load.</p>'}
+ }
+ window.__qArchiveSoundFeed=archiveSoundFeed;
  async function archiveVideoFeed(){
   const q=document.getElementById('q'),media=document.getElementById('media'),menu=document.getElementById('qmenu');
   const query=q&&q.value.trim();if(!query)return;
@@ -273,15 +298,23 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   const original=b.textContent;
   b.disabled=true;b.textContent='Collecting…';
   try{
-   const fn=window.__qResearchStory;
-   if(fn)await fn(card,type);
-   const story=(card.querySelector('p')?.textContent||'').trim();
-   if(!story||/Researching|No researched story/i.test(story))throw new Error('story not ready');
    const saved=JSON.parse(localStorage.getItem('quantaPhiCollected')||'[]');
-   const item={type,title:card.dataset.sourceTitle||card.querySelector('h3')?.textContent||'',story,media:card.querySelector('video,audio,img')?.currentSrc||card.querySelector('video,audio,img')?.src||'',collectedAt:new Date().toISOString()};
-   const exists=saved.some(x=>x.type===item.type&&x.title===item.title&&x.media===item.media);
-   if(!exists){saved.push(item);localStorage.setItem('quantaPhiCollected',JSON.stringify(saved));if(window.QuantaPhiWallet)window.QuantaPhiWallet.addShare();}
+   const title=card.dataset.sourceTitle||card.querySelector('h3')?.textContent||'';
+   const mediaSrc=card.dataset.mediaSrc||card.querySelector('video,audio,img')?.currentSrc||card.querySelector('video,audio,img')?.src||'';
+   const sourceUrl=card.dataset.sourceUrl||'';
+   const key=[type,title,mediaSrc||sourceUrl].join('|');
+   let existing=saved.find(x=>x.key===key||(x.type===type&&x.title===title&&x.media===mediaSrc));
+   if(!existing){
+    existing={key,type,title,story:(card.querySelector('p')?.textContent||'').trim(),media:mediaSrc,sourceUrl,collectedAt:new Date().toISOString()};
+    saved.push(existing);localStorage.setItem('quantaPhiCollected',JSON.stringify(saved));
+    if(window.QuantaPhiWallet)window.QuantaPhiWallet.addShare();
+   }
    b.dataset.collected='1';b.textContent='Collected ✓ +0.1 ★';b.disabled=true;
+   const fn=window.__qResearchStory;
+   if(fn)fn(card,type).then(()=>{
+    const story=(card.querySelector('p')?.textContent||'').trim();if(!story)return;
+    const latest=JSON.parse(localStorage.getItem('quantaPhiCollected')||'[]');const hit=latest.find(x=>x.key===key);if(hit){hit.story=story;localStorage.setItem('quantaPhiCollected',JSON.stringify(latest))}
+   }).catch(()=>{});
   }catch(_){b.textContent='Retry Collect';b.disabled=false}
  },true);
 })();
