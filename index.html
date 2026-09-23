@@ -84,7 +84,19 @@ async function search(){
      let out='',seen=new Set(); for(const r of ranked){for(const s of (r.body.match(/[^.!?]+[.!?]+/g)||[r.body])){const low=s.toLowerCase();if(!required.some(w=>low.includes(w)))continue;const k=low.replace(/[^a-z0-9 ]/g,'').slice(0,100);if(k&&!seen.has(k)){seen.add(k);if((out+' '+s).split(/\\s+/).length>520)break;out+=' '+s.trim()}}if(out.split(/\\s+/).length>470)break}
      if(out.trim()){ $('#overview').textContent=out.trim(); $('#status').innerHTML='<small>Weighted local synthesis · AI provider unavailable</small>'; if(typeof loadMedia==='function')loadMedia(q); return; }
    }catch(_){}
-   $('#status').innerHTML='<p class="err">Not enough weighted evidence matched every important search concept.</p>';
+   $('#status').innerHTML='<small>No strong exact match yet — broadening search…</small>';
+   try{
+    const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+    u.search=new URLSearchParams({q:q,format:'json',categories:'general',safesearch:'1'});
+    const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+    const rows=(j.results||[]).filter(x=>x.title||x.content||x.description);
+    if(rows.length){
+     const text=rows.slice(0,12).map(x=>String(x.content||x.description||x.title||'').trim()).filter(Boolean).join(' ').replace(/\s+/g,' ').split(/\s+/).slice(0,500).join(' ');
+     $('#overview').textContent=text;$('#status').innerHTML='<small>Broader source-backed results</small>';if(typeof loadMedia==='function')loadMedia(q);return;
+    }
+   }catch(_){}
+   $('#overview').textContent='Search is still expanding for this query. Try a refinement while media results continue loading.';
+   $('#status').innerHTML='<small>Search continuing</small>';
  }
 }
 $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Enter')search()});
