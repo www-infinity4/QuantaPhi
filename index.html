@@ -174,8 +174,10 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  const AI='https://infinity-rogers.marvaseater.workers.dev/v1/chat';
  const SEARCH='https://orange-brook-a2ac.marvaseater.workers.dev/search';
  async function researchStory(card,type){
-  if(card.dataset.enriched==='1'||card.dataset.enriching==='1')return;
+  if(card.dataset.enriched==='1')return true;
+  if(card.__qResearchPromise)return card.__qResearchPromise;
   card.dataset.enriching='1';
+  card.__qResearchPromise=(async()=>{
   const q=document.getElementById('q')?.value.trim()||'';
   const title=card.dataset.sourceTitle||'';
   const heading=card.querySelector('h3');
@@ -200,18 +202,13 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
     if(rr.ok){const jj=await rr.json();const t=String(jj.output_text||jj.text||jj.response||jj.message||'').trim();if(t)text=t}
    }
    p.textContent=text; if(heading){const clean=(title||q||'Image').replace(/\.(jpe?g|png|gif|webp|bmp|tiff?)\b/ig,'').replace(/[_-]+/g,' ').replace(/\s+/g,' ').trim();heading.textContent=clean||q||'Image story'} card.dataset.enriched='1';
-  }catch(_){p.textContent='Research for this card is still loading. Tap this media section again to retry.'}
-  card.dataset.enriching='';
+  }catch(_){p.textContent='Research could not load yet. Tap Collect again to retry.';throw _}
+  finally{card.dataset.enriching='';card.__qResearchPromise=null}
+  return true;
+  })();
+  return card.__qResearchPromise;
  }
  window.__qResearchStory=researchStory;
- function enrichAll(){
-  document.querySelectorAll('.imageCard').forEach(c=>researchStory(c,'Image'));
-  document.querySelectorAll('.videoCard').forEach(c=>researchStory(c,'Video'));
- }
- const grid=document.getElementById('mediaGrid');
- if(grid)new MutationObserver(enrichAll).observe(grid,{childList:true});
- ['qImagesBtn','qVideoBtn'].forEach(id=>document.getElementById(id)?.addEventListener('click',()=>setTimeout(enrichAll,250)));
- enrichAll();
 })();
 </script><script>
 (function(){
@@ -256,19 +253,22 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  document.getElementById('qVideoBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();archiveVideoFeed()},true);
  document.addEventListener('click',async e=>{
   const b=e.target.closest('.cardCollect');if(!b)return;
-  const card=b.closest('.mcard');if(!card)return;
-  b.disabled=true;
+  e.preventDefault();e.stopPropagation();
+  const card=b.closest('.mcard');if(!card||b.dataset.collected==='1')return;
   const type=card.classList.contains('videoCard')?'Video':card.classList.contains('soundCard')?'Sound':'Image';
+  const original=b.textContent;
+  b.disabled=true;b.textContent='Collecting…';
   try{
    const fn=window.__qResearchStory;
    if(fn)await fn(card,type);
+   const story=(card.querySelector('p')?.textContent||'').trim();
+   if(!story||/Researching|could not load/i.test(story))throw new Error('story not ready');
    const saved=JSON.parse(localStorage.getItem('quantaPhiCollected')||'[]');
-   const item={type,title:card.dataset.sourceTitle||card.querySelector('h3')?.textContent||'',story:card.querySelector('p')?.textContent||'',media:card.querySelector('video,audio,img')?.currentSrc||card.querySelector('video,audio,img')?.src||'',collectedAt:new Date().toISOString()};
-   if(!saved.some(x=>x.type===item.type&&x.title===item.title&&x.media===item.media))saved.push(item);
-   localStorage.setItem('quantaPhiCollected',JSON.stringify(saved));
-   if(window.QuantaPhiWallet)window.QuantaPhiWallet.addShare();
-   b.textContent='Collected +0.1 ★';
-  }catch(_){b.textContent='Collect failed';b.disabled=false}
- });
+   const item={type,title:card.dataset.sourceTitle||card.querySelector('h3')?.textContent||'',story,media:card.querySelector('video,audio,img')?.currentSrc||card.querySelector('video,audio,img')?.src||'',collectedAt:new Date().toISOString()};
+   const exists=saved.some(x=>x.type===item.type&&x.title===item.title&&x.media===item.media);
+   if(!exists){saved.push(item);localStorage.setItem('quantaPhiCollected',JSON.stringify(saved));if(window.QuantaPhiWallet)window.QuantaPhiWallet.addShare();}
+   b.dataset.collected='1';b.textContent='Collected ✓ +0.1 ★';b.disabled=true;
+  }catch(_){b.textContent='Retry Collect';b.disabled=false}
+ },true);
 })();
 </script></body></html>
