@@ -41,7 +41,7 @@ function classify(query){
 }
 const ENTITY_ALIASES={'jackkavorkian':'Jack Kevorkian','jack kavorkian':'Jack Kevorkian','jackkevorkian':'Jack Kevorkian','jack kevorkian':'Jack Kevorkian'};
 function normalizedEntity(query){const raw=String(query||'').trim(),key=raw.toLowerCase().replace(/\s+/g,' ');return ENTITY_ALIASES[key]||raw}
-function entityClause(query){const raw=normalizedEntity(query);const words=raw.match(/[A-Za-z0-9][A-Za-z0-9'.-]*/g)||[];if(!words.length)return raw;const meaningful=words.filter(w=>!STOP.has(w.toLowerCase()));if(!meaningful.length)return raw;const first=meaningful.slice(0,Math.min(4,meaningful.length));if(first.length===1)return '"'+first[0]+'"';return '"'+first.join(' ')+'"'}return lead.length>=2?'"'+lead.join(' ')+'"':raw}
+function entityClause(query){const raw=normalizedEntity(query);const words=raw.match(/[A-Za-z0-9][A-Za-z0-9'.-]*/g)||[];if(!words.length)return raw;const meaningful=words.filter(w=>!STOP.has(w.toLowerCase()));if(!meaningful.length)return raw;const first=meaningful.slice(0,Math.min(4,meaningful.length));return '"'+first.join(' ')+'"'}
 function showField(q){
  const p=classify(q);
  $('#field').innerHTML=p.map(x=>'<span class="pill '+x.color+'" title="'+x.role+' · '+x.region+'">'+x.w+'</span>').join('');
@@ -202,44 +202,33 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   if(card.__qResearchPromise)return card.__qResearchPromise;
   card.dataset.enriching='1';
   card.__qResearchPromise=(async()=>{
-  const q=document.getElementById('q')?.value.trim()||'';
-  const title=card.dataset.sourceTitle||'';
-  const heading=card.querySelector('h3');
-  const p=card.querySelector('p'); if(!p){card.dataset.enriching='';return}
-  p.textContent='Researching the story behind this '+type.toLowerCase()+'…';
-  try{
-   const su=new URL(SEARCH);
-   su.search=new URLSearchParams({q:(q+' '+title).trim(),format:'json',categories:'general',safesearch:'1'});
-   const sj=await fetch(su,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
-   const evidence=(sj.results||[]).slice(0,8).map(x=>({title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,700)})).filter(x=>x.title||x.evidence);
-   const fallback=evidence.map(x=>x.evidence).filter(Boolean).join(' ').replace(/\\s+/g,' ').trim();
-   const prompt='Write AT LEAST 100 words and about 110-140 words of factual researched prose for this '+type+' card. Explain what the specific subject is, its background, the relevant event/story/history, and why it matters. Use the user query and evidence to identify context. Never discuss JPEG, file type, filename, dimensions, metadata, thumbnails, search mechanics, or generic visual properties. For an image, do not claim it is the exact historic artifact unless evidence proves that. For a video, explain the actual subject/event/content context rather than calling it a video file. Plain prose only, no heading. Query: '+q+' Card title: '+title+' Evidence: '+JSON.stringify(evidence);
-   const r=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:type.toLowerCase()+'-card-story',verified_context:{query:q,title:title}}})});
-   if(!r.ok)throw new Error('AI '+r.status);
-   const j=await r.json();
-   let text=String(j.output_text||j.text||j.response||j.message||'').trim().replace(/\b[^\s]*\.(jpe?g|png|gif|webp|bmp|tiff?)\b/ig,'').replace(/\b(JPEG|JPG|PNG|GIF|WEBP|BMP|TIFF?)\s+(image|file)\b/ig,'image');
-   if(!text)throw new Error('empty');
-   const words=text.split(/\s+/).filter(Boolean).length;
-   if(words<100){
-    const retry='Expand this researched card description to AT LEAST 100 words (target 110-140). Keep it factual, specific, and focused on the subject/history; no file or metadata discussion. Original: '+text+' Evidence: '+JSON.stringify(evidence);
-    const rr=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:retry,context:{application:'QuantaPhi',task:'expand-card-story'}})});
-    if(rr.ok){const jj=await rr.json();const t=String(jj.output_text||jj.text||jj.response||jj.message||'').trim();if(t)text=t}
+   const rawQ=document.getElementById('q')?.value.trim()||'';
+   const q=normalizedEntity(rawQ);
+   const entity=entityClause(q);
+   const title=String(card.dataset.sourceTitle||'').trim();
+   const sourceUrl=String(card.dataset.sourceUrl||'');
+   const heading=card.querySelector('h3'),p=card.querySelector('p');
+   if(!p)throw new Error('Card story target missing');
+   p.textContent='Building researched story…';
+   const evidence=[];
+   const queries=[entity,entity+' '+title].filter((v,i,a)=>v&&a.indexOf(v)===i);
+   for(const query of queries){
+    try{const su=new URL(SEARCH);su.search=new URLSearchParams({q:query,format:'json',categories:'general',safesearch:'1'});const sj=await fetch(su,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));for(const x of (sj.results||[]).slice(0,8)){const e={title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,900)};if(e.title||e.evidence)evidence.push(e)}}catch(_){}
    }
-   p.textContent=text; if(heading){const clean=(title||q||'Image').replace(/\.(jpe?g|png|gif|webp|bmp|tiff?)\b/ig,'').replace(/[_-]+/g,' ').replace(/\s+/g,' ').trim();heading.textContent=clean||q||'Image story'} card.dataset.enriched='1';
-  }catch(_){
+   const unique=evidence.filter((x,i,a)=>a.findIndex(y=>(y.url&&y.url===x.url)||(!y.url&&y.title===x.title))===i).slice(0,12);
+   const prompt=['You are QuantaPhi card-story director.','ONE ENTITY ONLY: '+entity,'Original search: '+q,'Media type: '+type,'Card/source title: '+title,'Source URL: '+sourceUrl,'First determine silently what this entity is and what story direction is appropriate for this particular media result. Then write 120–180 words of useful researched prose connecting this card to the searched entity.','For a person, choose relevant biography/career/work/event/context. For an element/material, choose relevant properties/discovery/uses/compounds/technology/context. For places, objects, media, events, organizations, concepts, species or technologies, intelligently choose their own appropriate dimensions. Do not force one template onto every subject.','Do not discuss filenames, JPEGs, thumbnails, metadata, search mechanics, or generic visual appearance. Do not mix similarly named entities. Use evidence; do not invent specifics. Plain prose only.','Evidence: '+JSON.stringify(unique)].join('\n');
+   let text='';
    try{
-    const su=new URL(SEARCH);su.search=new URLSearchParams({q:(q+' '+title).trim(),format:'json',categories:'general',safesearch:'1'});
-    const sj=await fetch(su,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
-    const raw=(sj.results||[]).map(x=>String(x.content||x.description||'')).filter(Boolean).join(' ').replace(/\\s+/g,' ').trim();
-    const words=raw.split(/\\s+/).filter(Boolean).slice(0,140);
-    if(words.length>=35){p.textContent=words.join(' ');if(heading)heading.textContent=(title||q||type+' story').replace(/[_-]+/g,' ');card.dataset.enriched='1';return true}
-   }catch(__){}
-   p.textContent='No researched story was available yet. Tap Collect to retry.';
-   throw _;
-  }
-  finally{card.dataset.enriching='';card.__qResearchPromise=null}
-  return true;
-  })();
+    const r=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'entity-directed-collected-card-story',verified_context:{entity,q,title,type}}})});
+    if(r.ok){const j=await r.json().catch(()=>({}));let v=j.output_text??j.output??j.answer??j.response??j.content??j.message??'';if(v&&typeof v==='object')v=v.text||v.content||'';text=String(v||'').trim()}
+   }catch(_){}
+   if(!text){const raw=unique.map(x=>x.evidence).filter(Boolean).join(' ').replace(/\s+/g,' ').trim();text=raw.split(/\s+/).slice(0,170).join(' ')}
+   if(!text)text='Research is still being gathered for this '+type.toLowerCase()+' result about '+q+'.';
+   p.textContent=text;
+   if(heading)heading.textContent=(title||q||type+' story').replace(/\.(jpe?g|png|gif|webp|bmp|tiff?)\b/ig,'').replace(/[_-]+/g,' ').replace(/\s+/g,' ').trim();
+   card.dataset.enriched='1';
+   return true;
+  })().finally(()=>{card.dataset.enriching='';card.__qResearchPromise=null});
   return card.__qResearchPromise;
  }
  window.__qResearchStory=researchStory;
@@ -323,7 +312,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  document.addEventListener('click',async e=>{
   const b=e.target.closest('.cardCollect');if(!b)return;
   e.preventDefault();e.stopPropagation();
-  const card=b.closest('.mcard');if(!card||b.dataset.collected==='1')return;
+  const card=b.closest('.mcard');if(!card)return;if(b.dataset.collected==='1'&&card.dataset.enriched==='1')return;
   const type=card.classList.contains('videoCard')?'Video':card.classList.contains('soundCard')?'Sound':'Image';
   const original=b.textContent;
   b.disabled=true;b.textContent='Collecting…';
