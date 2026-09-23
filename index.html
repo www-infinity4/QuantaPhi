@@ -32,7 +32,7 @@ small{color:#766c7d}.err{color:#a21d27}.media{margin-top:16px}.media h2{font-siz
 </style></head>
 <body><main class="app">
 <div class="top"><div class="brand"><button class="menuBtn" id="menuBtn" aria-label="Sections">☰</button><h1>Quantaφ</h1></div><div class="wallets"><div class="wallet" id="wallet">∞ Tokens: 0</div><div class="wallet starWallet" id="starWallet">★ 0 · 0/10</div></div><nav class="menu" id="menu" hidden><a href="#result">Overview</a><a href="#images">Images</a><a href="#videos">Video</a><a href="#sound">Sound</a></nav></div><p class="sub">Semantic field + 500-word overview + entity-locked media</p>
-<div class="search"><input id="q" autocomplete="off" placeholder="Search anything…"><button id="go">Search</button></div>
+<div class="search"><input id="q" autocomplete="off" placeholder="Search anything…"><button id="go" type="button" onclick="search()">Search</button></div>
 <div id="status"></div><section class="card" id="result" hidden><div class="sectionHead"><strong>Overview</strong><button class="share" data-share="overview">Share · +1/10 ★</button></div><div id="field"></div><article id="overview"></article><div class="refine"><input id="refineQ" placeholder="Wrong result? Add keywords…"><button id="refineBtn">Refine</button></div><div class="meter" id="meter"></div></section><section class="media mediaSection" id="images" hidden><div class="sectionHead"><h2>Images</h2><button class="share" data-share="images">Share · +1/10 ★</button></div><div class="mediaGrid" id="imageGrid"></div></section><section class="media mediaSection" id="videos" hidden><div class="sectionHead"><h2>Video</h2><button class="share" data-share="videos">Share · +1/10 ★</button></div><div class="mediaGrid" id="videoGrid"></div></section><section class="media mediaSection" id="sound" hidden><div class="sectionHead"><h2>Sound</h2><button class="share" data-share="sound">Share · +1/10 ★</button></div><div class="mediaGrid" id="soundGrid"></div></section>
 </main>
 <script>
@@ -95,5 +95,5 @@ async function search(){
    $('#status').innerHTML='<p class="err">Not enough weighted evidence matched every important search concept.</p>';
  }
 }
-$('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Enter')search()});
+$('#q').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();search()}});
 </script><script>const mb=document.getElementById('menuBtn'),mn=document.getElementById('menu');if(mb&&mn){mb.addEventListener('click',()=>{mn.hidden=!mn.hidden});mn.addEventListener('click',()=>{mn.hidden=true})}</script></body></html>
