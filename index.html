@@ -310,7 +310,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   const original=b.textContent;
   b.disabled=true;b.textContent='Collecting…';
   try{
-   const saved=JSON.parse(localStorage.getItem('quantaPhiCollected')||'[]');
+   let saved=[];try{const parsed=JSON.parse(localStorage.getItem('quantaPhiCollected')||'[]');saved=Array.isArray(parsed)?parsed:[]}catch(_){saved=[];localStorage.removeItem('quantaPhiCollected')}
    const title=card.dataset.sourceTitle||card.querySelector('h3')?.textContent||'';
    const mediaSrc=card.dataset.mediaSrc||card.querySelector('video,audio,img')?.currentSrc||card.querySelector('video,audio,img')?.src||'';
    const sourceUrl=card.dataset.sourceUrl||'';
@@ -318,16 +318,16 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
    let existing=saved.find(x=>x.key===key||(x.type===type&&x.title===title&&x.media===mediaSrc));
    if(!existing){
     existing={key,type,title,story:(card.querySelector('p')?.textContent||'').trim(),media:mediaSrc,sourceUrl,collectedAt:new Date().toISOString()};
-    saved.push(existing);localStorage.setItem('quantaPhiCollected',JSON.stringify(saved));
+    saved.push(existing);try{localStorage.setItem('quantaPhiCollected',JSON.stringify(saved))}catch(storageError){const compact=saved.slice(-75);localStorage.setItem('quantaPhiCollected',JSON.stringify(compact));saved=compact}
     if(window.QuantaPhiWallet)window.QuantaPhiWallet.addShare();
    }
    b.dataset.collected='1';b.textContent='Collected ✓ +0.1 ★';b.disabled=true;
    const fn=window.__qResearchStory;
    if(fn)fn(card,type).then(()=>{
     const story=(card.querySelector('p')?.textContent||'').trim();if(!story)return;
-    const latest=JSON.parse(localStorage.getItem('quantaPhiCollected')||'[]');const hit=latest.find(x=>x.key===key);if(hit){hit.story=story;localStorage.setItem('quantaPhiCollected',JSON.stringify(latest))}
+    let latest=[];try{const parsed=JSON.parse(localStorage.getItem('quantaPhiCollected')||'[]');latest=Array.isArray(parsed)?parsed:[]}catch(_){}const hit=latest.find(x=>x.key===key);if(hit){hit.story=story;try{localStorage.setItem('quantaPhiCollected',JSON.stringify(latest))}catch(_){}}
    }).catch(()=>{});
-  }catch(_){b.textContent='Retry Collect';b.disabled=false}
+  }catch(err){console.error('QuantaPhi collect failed',err);b.textContent='Retry Collect';b.disabled=false}
  },true);
 })();
 </script></body></html>
