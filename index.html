@@ -156,4 +156,30 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  document.getElementById('qImagesBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();feed('Image','images')},true);
  document.getElementById('qSoundBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();feed('Sound','music')},true);
 })();
-</script></body></html>
+<script>
+(function(){
+ async function enrichImageCards(){
+  const q=document.getElementById('q')?.value.trim()||'';
+  const cards=[...document.querySelectorAll('.imageCard')];
+  for(const card of cards){
+   if(card.dataset.enriched==='1')continue; card.dataset.enriched='1';
+   const title=card.querySelector('h3')?.textContent.trim()||'';
+   const p=card.querySelector('p'); if(!p)continue;
+   const research=(q+' '+title).trim();
+   try{
+    const su=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+    su.search=new URLSearchParams({q:research,format:'json',categories:'general',safesearch:'1'});
+    const sj=await fetch(su,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+    const evidence=(sj.results||[]).slice(0,5).map(x=>({title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,500)}));
+    if(!evidence.length)continue;
+    const prompt='Write a 45-75 word factual micro-story for an image card. Identify what the image is about and explain the event, person, object, place, or historical context that makes it meaningful. Never describe file type, JPEG, dimensions, filename, metadata, search-result mechanics, or generic image properties. Do not claim the pictured object is the exact historic artifact unless the evidence establishes that. Plain prose only. User entity: '+q+' Image result title: '+title+' Evidence: '+JSON.stringify(evidence);
+    const r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'image-card-micro-story',verified_context:{query:q,image_title:title}}})});
+    if(r.ok){const j=await r.json();const text=String(j.output_text||j.text||j.response||j.message||'').trim();if(text)p.textContent=text}
+   }catch(_){}
+  }
+ }
+ const grid=document.getElementById('mediaGrid');
+ if(grid)new MutationObserver(()=>enrichImageCards()).observe(grid,{childList:true});
+ document.getElementById('qImagesBtn')?.addEventListener('click',()=>setTimeout(enrichImageCards,400));
+})();
+</script></script></body></html>
