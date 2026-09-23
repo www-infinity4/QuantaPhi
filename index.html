@@ -7,7 +7,7 @@
 <style>
 :root{font-family:system-ui,-apple-system,Roboto,sans-serif;color:#17131f;background:#f7f4fb}
 *{box-sizing:border-box}body{margin:0}.app{max-width:480px;margin:auto;min-height:100vh;padding:18px 16px 50px}
-h1{font-size:27px;margin:18px 0 4px}.sub{margin:0 0 22px;color:#6b6274;font-size:14px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;position:relative}.brand{display:flex;align-items:center;gap:10px}h1{font-size:27px;margin:18px 0 4px}.wallet{background:#17131f;color:#fff;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:900;white-space:nowrap}.menuBtn{padding:9px 12px;font-size:20px}.menu{position:absolute;right:0;top:58px;background:#fff;border:1px solid #e6dfeb;border-radius:16px;padding:8px;z-index:9;box-shadow:0 8px 28px #29163b22}.menu a{display:block;padding:10px 14px;color:#5f259f;font-weight:800;text-decoration:none}.share{margin-top:10px;padding:9px 12px;border-radius:12px}.refine{display:flex;gap:8px;margin-top:10px}.refine input{padding:10px;font-size:14px}.refine button{padding:0 12px}.sectionHead{display:flex;align-items:center;justify-content:space-between}.sectionHead .share{margin:0}.mediaSection{scroll-margin-top:72px}.sub{margin:0 0 22px;color:#6b6274;font-size:14px}
 .search{display:flex;gap:8px;position:sticky;top:0;padding:10px 0;background:#f7f4fb;z-index:3}
 input{min-width:0;flex:1;border:2px solid #5f259f;border-radius:15px;padding:14px;font-size:16px;background:#fff}
 button{border:0;border-radius:15px;padding:0 18px;font-weight:800;background:#5f259f;color:#fff}
@@ -15,12 +15,12 @@ button{border:0;border-radius:15px;padding:0 18px;font-weight:800;background:#5f
 #overview{font-size:16px;line-height:1.65}.meter{display:none;margin-top:12px;font-size:12px;color:#675c70}
 .pill{display:inline-block;margin:3px;padding:5px 8px;border-radius:999px;color:#fff;font-weight:700}
 .red{background:#c62828}.blue{background:#2467c7}.yellow{background:#d6a600;color:#241d00}.green{background:#27864b}.purple{background:#7b35a8}
-small{color:#766c7d}.err{color:#a21d27}.media{margin-top:16px}.media h2{font-size:18px}.mediaGrid{display:grid;gap:12px}.mcard{background:#fff;border:1px solid #e6dfeb;border-radius:18px;padding:12px}.mcard img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:13px}.mcard h3{margin:8px 0 4px}.mcard p{margin:0;color:#62596a;line-height:1.4}.mcard a{display:inline-block;margin-top:9px;color:#5f259f;font-weight:800;text-decoration:none}
+small{color:#766c7d}.err{color:#a21d27}.media{margin-top:16px}.media h2{font-size:18px}.mediaGrid{display:grid;gap:12px}.mcard{background:#fff;border:1px solid #e6dfeb;border-radius:18px;padding:12px}.mcard img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:13px}.mcard h3{margin:8px 0 4px}.mcard p{margin:0;color:#62596a;line-height:1.4}.mcard a{display:inline-block;margin-top:9px;color:#5f259f;font-weight:800;text-decoration:none}.mcard .share{display:inline-block;margin-left:6px}
 </style></head>
 <body><main class="app">
-<h1>Quantaφ</h1><p class="sub">Semantic field + 500-word overview + weighted media extensions</p>
+<div class="top"><div class="brand"><button class="menuBtn" id="menuBtn" aria-label="Sections">☰</button><h1>Quantaφ</h1></div><div class="wallet" id="wallet">Tokens: 0</div><nav class="menu" id="menu" hidden><a href="#result">Overview</a><a href="#images">Images</a><a href="#videos">Video</a><a href="#sound">Sound</a></nav></div><p class="sub">Semantic field + 500-word overview + entity-locked media</p>
 <div class="search"><input id="q" autocomplete="off" placeholder="Search anything…"><button id="go">Search</button></div>
-<div id="status"></div><section class="card" id="result" hidden><div id="field"></div><article id="overview"></article><div class="meter" id="meter"></div></section><section class="media" id="media" hidden><h2>Media extensions</h2><div class="mediaGrid" id="mediaGrid"></div></section>
+<div id="status"></div><section class="card" id="result" hidden><div class="sectionHead"><strong>Overview</strong><button class="share" data-share="overview">Share</button></div><div id="field"></div><article id="overview"></article><div class="refine"><input id="refineQ" placeholder="Wrong result? Add keywords…"><button id="refineBtn">Refine</button></div><div class="meter" id="meter"></div></section><section class="media mediaSection" id="images" hidden><div class="sectionHead"><h2>Images</h2><button class="share" data-share="images">Share</button></div><div class="mediaGrid" id="imageGrid"></div></section><section class="media mediaSection" id="videos" hidden><div class="sectionHead"><h2>Video</h2><button class="share" data-share="videos">Share</button></div><div class="mediaGrid" id="videoGrid"></div></section><section class="media mediaSection" id="sound" hidden><div class="sectionHead"><h2>Sound</h2><button class="share" data-share="sound">Share</button></div><div class="mediaGrid" id="soundGrid"></div></section>
 </main>
 <script>
 const $=s=>document.querySelector(s);
@@ -46,10 +46,21 @@ function showField(q){
  $('#meter').textContent='Experimental regions: '+p.map(x=>x.w+' '+x.region).join(' · ');
 }
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'';return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(x.title||'Explore')+'</h3><p>'+esc(String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' '))+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'</article>'}
-async function loadMedia(q){try{const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const searches=[terms,terms+' close up detail',terms+' identification variety'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:terms,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
+function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'';const title=x.title||'Explore';return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' '))+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="share" data-card-title="'+esc(title)+'" data-card-url="'+esc(x.url||location.href)+'">Share</button></article>'}
+async function loadMedia(q){try{
+ const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');
+ const required=terms.toLowerCase().split(/\s+/).filter(Boolean);
+ const match=x=>{const t=((x.title||'')+' '+(x.content||x.description||'')+' '+(x.url||'')).toLowerCase();return required.length<2?required.some(w=>t.includes(w)):required.filter(w=>t.includes(w)).length>=Math.min(2,required.length)};
+ async function feed(categories,suffix=''){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:(terms+' '+suffix).trim(),format:'json',categories,safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));return (j.results||[]).filter(match)}
+ let all=[];for(const s of ['', 'official', 'portrait album'])all.push(...await feed('images',s));
+ const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,16);
+ const vids=(await feed('videos','official')).slice(0,8);
+ let sounds=[];for(const cat of ['music','files']){try{sounds.push(...await feed(cat,'audio sound'))}catch(_){}}sounds=sounds.slice(0,8);
+ $('#imageGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('');$('#videoGrid').innerHTML=vids.map(x=>mediaCard(x,'Video')).join('');$('#soundGrid').innerHTML=sounds.map(x=>mediaCard(x,'Sound')).join('');
+ $('#images').hidden=!imgs.length;$('#videos').hidden=!vids.length;$('#sound').hidden=!sounds.length;
+}catch(_){$('#images').hidden=$('#videos').hidden=$('#sound').hidden=true}}
 async function search(){
- const q=$('#q').value.trim(); if(!q)return; $('#media').hidden=true; $('#mediaGrid').innerHTML='';
+ const q=$('#q').value.trim(); if(!q)return; ['#images','#videos','#sound'].forEach(s=>$(s).hidden=true); ['#imageGrid','#videoGrid','#soundGrid'].forEach(s=>$(s).innerHTML=''); if(!window._refining){let n=Number(localStorage.getItem('quantaPhiTokens')||0)+1;localStorage.setItem('quantaPhiTokens',n);$('#wallet').textContent='Tokens: '+n} window._refining=false;
  $('#result').hidden=false; $('#overview').innerHTML=''; showField(q);
  $('#status').innerHTML='<small>Building semantic field and overview…</small>';
  try{
@@ -82,5 +93,9 @@ async function search(){
    $('#status').innerHTML='<p class="err">Not enough weighted evidence matched every important search concept.</p>';
  }
 }
+function wallet(){ $('#wallet').textContent='Tokens: '+Number(localStorage.getItem('quantaPhiTokens')||0) } wallet();
+$('#menuBtn').onclick=()=>$('#menu').hidden=!$('#menu').hidden; $('#menu').onclick=()=>$('#menu').hidden=true;
+$('#refineBtn').onclick=()=>{const extra=$('#refineQ').value.trim();if(!extra)return;$('#q').value=($('#q').value+' '+extra).trim();window._refining=true;search()};
+document.addEventListener('click',async e=>{const b=e.target.closest('[data-share]');const card=e.target.closest('[data-card-title]');if(!b&&!card)return;const title=card?.dataset.cardTitle||('QuantaPhi '+(b.dataset.share||'result'));const url=card?.dataset.cardUrl||location.href;const text=card?title:(title+' — '+$('#q').value);try{if(navigator.share)await navigator.share({title,text,url});else{await navigator.clipboard.writeText(text+' '+url);const old=(b||card).textContent;(b||card).textContent='Copied';setTimeout(()=>{(b||card).textContent=old},1200)}}catch(_){}});
 $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Enter')search()});
 </script></body></html>
