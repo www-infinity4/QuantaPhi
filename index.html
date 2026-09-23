@@ -47,7 +47,7 @@ function showField(q){
  $('#meter').textContent='Experimental regions: '+p.map(x=>x.w+' '+x.region).join(' · ');
 }
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=x.title||'Explore',url=x.url||location.href,desc=String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' ');if(String(type).toLowerCase()==='video'){const candidates=[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),video=candidates.find(v=>/\.(mp4|webm|ogv|m4v)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard videoCard" data-source-title="'+esc(title)+'"><div class="videoVisual">'+(video?'<video controls playsinline preload="metadata" poster="'+esc(img)+'"><source src="'+esc(video)+'"></video>':(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':''))+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>Collect or share to research this video story.</p><div class="videoActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard" data-source-title="'+esc(title)+'"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3 class="imageStoryTitle">Researching this image…</h3><p>Researching the story behind this image…</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const candidates=[x.audio,x.audio_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),audio=candidates.find(v=>/\.(mp3|m4a|ogg|oga|wav|flac)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard soundCard" data-source-title="'+esc(title)+'"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>Collect or share to research this sound story.</p>'+(audio?'<audio controls preload="metadata" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
+function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=x.title||'Explore',url=x.url||location.href,desc=String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' ');if(String(type).toLowerCase()==='video'){const candidates=[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),video=candidates.find(v=>/\.(mp4|mpeg|mpg|webm|ogv|m4v)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard videoCard" data-source-title="'+esc(title)+'"><div class="videoVisual">'+(video?'<video controls playsinline webkit-playsinline preload="metadata" poster="'+esc(img)+'" src="'+esc(video)+'"></video>':(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':''))+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>Collect or share to research this video story.</p><div class="videoActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard" data-source-title="'+esc(title)+'"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3 class="imageStoryTitle">Researching this image…</h3><p>Researching the story behind this image…</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const candidates=[x.audio,x.audio_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),audio=candidates.find(v=>/\.(mp3|m4a|ogg|oga|wav|flac)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard soundCard" data-source-title="'+esc(title)+'"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>Collect or share to research this sound story.</p>'+(audio?'<audio controls preload="metadata" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
 async function loadMedia(q){try{const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const entity=entityClause(q);const searches=[entity,entity+' close up detail',entity+' identification variety'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,8);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:entity,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
 async function search(){
  const q=$('#q').value.trim(); if(!q)return; $('#media').hidden=true; $('#mediaGrid').innerHTML='';
@@ -203,6 +203,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   }catch(_){p.textContent='Research for this card is still loading. Tap this media section again to retry.'}
   card.dataset.enriching='';
  }
+ window.__qResearchStory=researchStory;
  function enrichAll(){
   document.querySelectorAll('.imageCard').forEach(c=>researchStory(c,'Image'));
   document.querySelectorAll('.videoCard').forEach(c=>researchStory(c,'Video'));
@@ -222,5 +223,52 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  }
  go.addEventListener('click',mint,true);
  q.addEventListener('keydown',function(e){if(e.key==='Enter')mint()},true);
+})();
+</script><script>
+(function(){
+ const grid=document.getElementById('mediaGrid');
+ function archiveId(x){try{const u=new URL(x.url||'');if(u.hostname.endsWith('archive.org')){const m=u.pathname.match(/\/(?:details|download)\/([^/]+)/);return m&&m[1]}}catch(_){}return ''}
+ async function iaPlayable(x){
+  const id=archiveId(x); if(!id)return x;
+  try{
+   const j=await fetch('https://archive.org/metadata/'+encodeURIComponent(id),{cache:'no-store'}).then(r=>r.ok?r.json():null);
+   const files=(j&&j.files)||[];
+   const f=files.find(v=>/\.(mp4|m4v|webm)$/i.test(v.name||'')&&/MPEG4|h\.264|WebM/i.test(v.format||''))||
+           files.find(v=>/\.(mp4|m4v|webm|mpeg|mpg)$/i.test(v.name||''));
+   if(f)x.video_url='https://archive.org/download/'+encodeURIComponent(id)+'/'+String(f.name).split('/').map(encodeURIComponent).join('/');
+  }catch(_){}
+  return x;
+ }
+ async function archiveVideoFeed(){
+  const q=document.getElementById('q'),media=document.getElementById('media'),menu=document.getElementById('qmenu');
+  const query=q&&q.value.trim();if(!query)return;
+  if(menu)menu.hidden=true;media.hidden=false;grid.innerHTML='<small>Loading Internet Archive videos…</small>';media.scrollIntoView({behavior:'smooth',block:'start'});
+  try{
+   const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+   u.search=new URLSearchParams({q:entityClause(query)+' site:archive.org/details',format:'json',categories:'videos',safesearch:'1'});
+   const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+   const rows=(j.results||[]).filter(x=>archiveId(x)).slice(0,20);
+   const playable=await Promise.all(rows.map(iaPlayable));
+   const good=playable.filter(x=>x.video_url);
+   grid.innerHTML=good.length?good.map(x=>mediaCard(x,'Video')).join(''):'<p class="err">No playable Internet Archive video files found.</p>';
+  }catch(_){grid.innerHTML='<p class="err">Internet Archive video feed could not load.</p>'}
+ }
+ document.getElementById('qVideoBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();archiveVideoFeed()},true);
+ document.addEventListener('click',async e=>{
+  const b=e.target.closest('.cardCollect');if(!b)return;
+  const card=b.closest('.mcard');if(!card)return;
+  b.disabled=true;
+  const type=card.classList.contains('videoCard')?'Video':card.classList.contains('soundCard')?'Sound':'Image';
+  try{
+   const fn=window.__qResearchStory;
+   if(fn)await fn(card,type);
+   const saved=JSON.parse(localStorage.getItem('quantaPhiCollected')||'[]');
+   const item={type,title:card.dataset.sourceTitle||card.querySelector('h3')?.textContent||'',story:card.querySelector('p')?.textContent||'',media:card.querySelector('video,audio,img')?.currentSrc||card.querySelector('video,audio,img')?.src||'',collectedAt:new Date().toISOString()};
+   if(!saved.some(x=>x.type===item.type&&x.title===item.title&&x.media===item.media))saved.push(item);
+   localStorage.setItem('quantaPhiCollected',JSON.stringify(saved));
+   if(window.QuantaPhiWallet)window.QuantaPhiWallet.addShare();
+   b.textContent='Collected +0.1 ★';
+  }catch(_){b.textContent='Collect failed';b.disabled=false}
+ });
 })();
 </script></body></html>
