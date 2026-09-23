@@ -89,7 +89,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  // WALLET CONTRACT: these keys are persistent QuantaPhi state. Never reset, rename, clear, or overwrite them from feature code.
  function cookieGet(k){try{const m=document.cookie.match(new RegExp('(?:^|; )'+k+'=([^;]*)'));return m?decodeURIComponent(m[1]):''}catch(_){return ''}}
  function cookiePut(k,v){try{document.cookie=k+'='+encodeURIComponent(String(v))+'; Max-Age=315360000; Path=/; SameSite=Lax'}catch(_){}}
- function num(k){try{const raw=localStorage.getItem(k);if(raw!==null){const n=Number(raw);if(Number.isFinite(n))return n}const ck=Number(cookieGet(k));return Number.isFinite(ck)?ck:0}catch(_){return Number(cookieGet(k))||0}}
+ function num(k){try{const raw=localStorage.getItem(k),ls=raw===null?NaN:Number(raw),ck=Number(cookieGet(k));if(Number.isFinite(ls)&&Number.isFinite(ck))return Math.max(ls,ck);if(Number.isFinite(ls))return ls;if(Number.isFinite(ck))return ck;return 0}catch(_){return Number(cookieGet(k))||0}}
  function put(k,v){let ok=false;try{localStorage.setItem(k,String(v));ok=localStorage.getItem(k)===String(v)}catch(_){}cookiePut(k,v);return ok}
  let tokenBalance=num(T),starBalance=num(S); function pulse(el){if(!el)return;el.classList.remove('qwalletPulse');void el.offsetWidth;el.classList.add('qwalletPulse')} function render(which){const t=document.getElementById('qtoken'),s=document.getElementById('qstar');if(t)t.textContent='∞ Tokens: '+tokenBalance;if(s)s.textContent='★ '+starBalance.toFixed(1);if(which==='token')pulse(t);if(which==='star')pulse(s)}
  window.QuantaPhiWallet={
