@@ -88,16 +88,16 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  const T='infinityTokens',S='starCoins';
  function num(k){try{return Number(localStorage.getItem(k)||0)||0}catch(_){return 0}}
  function put(k,v){try{localStorage.setItem(k,String(v));return true}catch(_){return false}}
- function pulse(el){if(!el)return;el.classList.remove('qwalletPulse');void el.offsetWidth;el.classList.add('qwalletPulse')} function render(which){const t=document.getElementById('qtoken'),s=document.getElementById('qstar');if(t)t.textContent='∞ Tokens: '+num(T);if(s)s.textContent='★ '+num(S).toFixed(1);if(which==='token')pulse(t);if(which==='star')pulse(s)}
+ let tokenBalance=num(T),starBalance=num(S); function pulse(el){if(!el)return;el.classList.remove('qwalletPulse');void el.offsetWidth;el.classList.add('qwalletPulse')} function render(which){const t=document.getElementById('qtoken'),s=document.getElementById('qstar');if(t)t.textContent='∞ Tokens: '+tokenBalance;if(s)s.textContent='★ '+starBalance.toFixed(1);if(which==='token')pulse(t);if(which==='star')pulse(s)}
  window.QuantaPhiWallet={
   addToken:function(){
-   const next=num(T)+1;
-   put(T,next);
+   tokenBalance+=1;
+   put(T,tokenBalance);
    window.__qTokenSession=(window.__qTokenSession||0)+1;
    render('token');
-   return next;
+   return tokenBalance;
   },
-  addShare:function(){put(S,Math.round((num(S)+0.1)*10)/10);render('star')},
+  addShare:function(){starBalance=Math.round((starBalance+0.1)*10)/10;put(S,starBalance);render('star');return starBalance},
   render:render
  };
  render();
