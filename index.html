@@ -3,7 +3,18 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>QuantaPhi</title>
-<meta name="description" content="QuantaPhi experimental semantic-weight search engine">
+<meta name="description" content="QuantaPhi research overview — original multi-source explanations, images, video and sound.">
+<link rel="canonical" href="https://www-infinity4.github.io/QuantaPhi/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="QuantaPhi">
+<meta property="og:title" content="QuantaPhi — AI Research Overview">
+<meta property="og:description" content="Explore a QuantaPhi research overview with original multi-source writing and media stories.">
+<meta property="og:url" content="https://www-infinity4.github.io/QuantaPhi/">
+<meta property="og:image" content="https://www-infinity4.github.io/QuantaPhi/preview.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="QuantaPhi — AI Research Overview">
+<meta name="twitter:description" content="Explore a QuantaPhi research overview with original multi-source writing and media stories.">
+<meta name="twitter:image" content="https://www-infinity4.github.io/QuantaPhi/preview.svg">
 <style>
 :root{font-family:system-ui,-apple-system,Roboto,sans-serif;color:#17131f;background:#f7f4fb}
 *{box-sizing:border-box}body{margin:0}.app{max-width:480px;margin:auto;min-height:100vh;padding:18px 16px 50px}
@@ -148,7 +159,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   let shared=false;
   try{
    if(imageUrl&&navigator.share){
-    try{const r=await fetch(imageUrl,{mode:'cors'});if(r.ok){const blob=await r.blob(),ext=(blob.type?.split('/')[1]||'jpg').replace('jpeg','jpg'),file=new File([blob],('quantaphi-image.'+ext),{type:blob.type||'image/jpeg'});if(!navigator.canShare||navigator.canShare({files:[file]})){await navigator.share({title:heading,text:shareText+'\n\nFull QuantaPhi search: '+returnUrl,url:returnUrl,files:[file]});shared=true}}}catch(_){}
+    try{const r=await fetch(imageUrl,{mode:'cors'});if(r.ok){const blob=await r.blob(),ext=(blob.type?.split('/')[1]||'jpg').replace('jpeg','jpg'),file=new File([blob],('quantaphi-image.'+ext),{type:blob.type||'image/jpeg'});if(!navigator.canShare||navigator.canShare({files:[file]})){await navigator.share({title:heading,text:shareText,url:returnUrl,files:[file]});shared=true}}}catch(_){}
    }
    if(!shared){const data={title:heading,text:shareText,url:returnUrl};if(navigator.share){await navigator.share(data);shared=true}else if(navigator.clipboard){await navigator.clipboard.writeText(shareText+'\n\n'+returnUrl);shared=true}}
   }catch(_){b.textContent='Share +0.1 ★';return}
