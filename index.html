@@ -95,5 +95,5 @@ async function search(){
    $('#status').innerHTML='<p class="err">Not enough weighted evidence matched every important search concept.</p>';
  }
 }
-const menuBtn=$('#menuBtn'),menu=$('#menu'); if(menuBtn&&menu){menuBtn.onclick=()=>menu.hidden=!menu.hidden;menu.onclick=()=>menu.hidden=true;} $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Enter')search()});
-</script></body></html>
+$('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Enter')search()});
+</script><script>const mb=document.getElementById('menuBtn'),mn=document.getElementById('menu');if(mb&&mn){mb.addEventListener('click',()=>{mn.hidden=!mn.hidden});mn.addEventListener('click',()=>{mn.hidden=true})}</script></body></html>
