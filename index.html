@@ -113,7 +113,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
    const t=b.textContent;b.textContent='Shared +0.1 ★';setTimeout(()=>b.textContent=t,1400);
   }
  });
-})();<script>
+})();</script><script>
 (function(){
  const KEY='starCoins';
  window.QuantaPhiStarCoins={
@@ -123,7 +123,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  };
  window.QuantaPhiStarCoins.render();
 })();
-</script><script>(function(){const media=document.getElementById('media'),grid=document.getElementById('mediaGrid');function openMedia(kind){if(media)media.hidden=false;if(grid){const cards=[...grid.querySelectorAll('.mcard')];cards.forEach(card=>{const t=(card.querySelector('small')?.textContent||'').toLowerCase();card.hidden=(kind!=='all'&&!t.includes(kind))})}if(media)media.scrollIntoView({behavior:'smooth',block:'start'})}document.getElementById('qImagesBtn')?.addEventListener('click',()=>openMedia('image'));document.getElementById('qVideoBtn')?.addEventListener('click',()=>openMedia('video'));document.getElementById('qSoundBtn')?.addEventListener('click',()=>openMedia('sound'))})();<script>
+</script><script>(function(){const media=document.getElementById('media'),grid=document.getElementById('mediaGrid');function openMedia(kind){if(media)media.hidden=false;if(grid){const cards=[...grid.querySelectorAll('.mcard')];cards.forEach(card=>{const t=(card.querySelector('small')?.textContent||'').toLowerCase();card.hidden=(kind!=='all'&&!t.includes(kind))})}if(media)media.scrollIntoView({behavior:'smooth',block:'start'})}document.getElementById('qImagesBtn')?.addEventListener('click',()=>openMedia('image'));document.getElementById('qVideoBtn')?.addEventListener('click',()=>openMedia('video'));document.getElementById('qSoundBtn')?.addEventListener('click',()=>openMedia('sound'))})();</script><script>
 (function(){
  const btn=document.getElementById('qVideoBtn'),q=document.getElementById('q'),media=document.getElementById('media'),grid=document.getElementById('mediaGrid'),menu=document.getElementById('qmenu');
  if(!btn||!q||!media||!grid)return;
@@ -156,4 +156,4 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  document.getElementById('qImagesBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();feed('Image','images')},true);
  document.getElementById('qSoundBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();feed('Sound','music')},true);
 })();
-</script></script></body></html>
+</script></body></html>
