@@ -245,7 +245,10 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
    // Image/media identity must lead the research. The broad search entity is context only.
    // Query the specific card first so each result develops its own evidence set/story.
    const mediaIdentity=[title,sourceUrl].filter(Boolean).join(' ');
-   const queries=[entity+' '+title,title+' '+entity,mediaIdentity].filter((v,i,a)=>v&&a.indexOf(v)===i);
+   // For locked elements, every research query must carry the locked identity.
+   // Never run a title/URL-only query: a generic product phrase such as "half bar" can resolve to another element.
+   const lockedMedia=eid?[eid.name,eid.symbol,'element '+eid.number,title,sourceUrl].filter(Boolean).join(' '):mediaIdentity;
+   const queries=(eid?[entity+' '+title,lockedMedia]:[entity+' '+title,title+' '+entity,mediaIdentity]).filter((v,i,a)=>v&&a.indexOf(v)===i);
    for(const query of queries){
     try{const su=new URL(SEARCH);su.search=new URLSearchParams({q:query,format:'json',categories:'general',safesearch:'1'});const sj=await fetch(su,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));for(const x of (sj.results||[]).slice(0,8)){const e={title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,900)};if(e.title||e.evidence)evidence.push(e)}}catch(_){}
    }
@@ -257,8 +260,10 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
     const r=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'entity-directed-collected-card-story',verified_context:{entity,q,title,type}}})});
     if(r.ok){const j=await r.json().catch(()=>({}));let v=j.output_text??j.output??j.answer??j.response??j.content??j.message??'';if(v&&typeof v==='object')v=v.text||v.content||'';text=String(v||'').trim()}
    }catch(_){}
+   if(eid&&text&&elementConflict(text,eid))text='';
    if(!text){const raw=unique.map(x=>x.evidence).filter(Boolean).join(' ').replace(/\s+/g,' ').trim();text=raw.split(/\s+/).slice(0,170).join(' ')}
-   if(!text)text='Research is still being gathered for this '+type.toLowerCase()+' result about '+q+'.';
+   if(eid&&text&&elementConflict(text,eid))text='';
+   if(!text)text=eid?('This '+type.toLowerCase()+' result is being researched specifically as '+eid.name+' ('+eid.symbol+'), atomic number '+eid.number+'. Conflicting element evidence was rejected.'):('Research is still being gathered for this '+type.toLowerCase()+' result about '+q+'.');
    p.textContent=text;
    if(heading)heading.textContent=(title||q||type+' story').replace(/\.(jpe?g|png|gif|webp|bmp|tiff?)\b/ig,'').replace(/[_-]+/g,' ').replace(/\s+/g,' ').trim();
    card.dataset.enriched='1';
