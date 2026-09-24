@@ -132,11 +132,8 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  function num(k){try{const raw=localStorage.getItem(k),ls=raw===null?NaN:Number(raw),ck=Number(cookieGet(k));if(Number.isFinite(ls)&&Number.isFinite(ck))return Math.max(ls,ck);if(Number.isFinite(ls))return ls;if(Number.isFinite(ck))return ck;return 0}catch(_){return Number(cookieGet(k))||0}}
  function put(k,v){let ok=false;try{localStorage.setItem(k,String(v));ok=localStorage.getItem(k)===String(v)}catch(_){}cookiePut(k,v);return ok}
  let tokenBalance=num(T),starBalance=num(S);
- // One-time unified search-token migration seed:
- // Infinity Phi 98 + OmniPhi 103 + QuantaPhi 27 = 228.
- // Never lower an existing balance; after seeding, every new initial search keeps incrementing normally.
- const UNIFIED_TOKEN_SEED=228;
- if(tokenBalance<UNIFIED_TOKEN_SEED){tokenBalance=UNIFIED_TOKEN_SEED;put(T,tokenBalance)} function pulse(el){if(!el)return;el.classList.remove('qwalletPulse');void el.offsetWidth;el.classList.add('qwalletPulse')} function render(which){const t=document.getElementById('qtoken'),s=document.getElementById('qstar');if(t)t.textContent='∞ Tokens: '+tokenBalance;if(s)s.textContent='★ '+starBalance.toFixed(1);if(which==='token')pulse(t);if(which==='star')pulse(s)}
+ // QuantaPhi wallet is intentionally Quants-only. Do not import, seed, or merge Infinity/Omni balances here.
+ function pulse(el){if(!el)return;el.classList.remove('qwalletPulse');void el.offsetWidth;el.classList.add('qwalletPulse')} function render(which){const t=document.getElementById('qtoken'),s=document.getElementById('qstar');if(t)t.textContent='∞ Tokens: '+tokenBalance;if(s)s.textContent='★ '+starBalance.toFixed(1);if(which==='token')pulse(t);if(which==='star')pulse(s)}
  window.QuantaPhiWallet={
   addToken:function(){
    tokenBalance+=1;
