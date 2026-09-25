@@ -110,8 +110,19 @@ async function search(){
    const exactEntity=entityClause(nq);
    const searchUrl=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
    searchUrl.search=new URLSearchParams({q:nq,format:'json',categories:'general',safesearch:'1'});
-   const sr=await fetch(searchUrl,{cache:'no-store'});
-   const sj=sr.ok?await sr.json():{results:[]};
+   let sr,sj;
+   const searchId=window.__qInitialSearchId;
+   const bridge=window.StarQuestCloudLedger;
+   if(searchId&&!window.__qRefining&&bridge&&bridge.authenticatedFetch){
+     sr=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{query:nq,search_id:searchId}});
+     const payload=sr.ok?await sr.json():{};
+     sj=payload.search||{results:[]};
+     window.__qInitialSearchId='';
+     try{const state=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/state');const stateJson=state.ok?await state.json():null;if(stateJson&&Number.isFinite(Number(stateJson.balance)))document.getElementById('qtoken').textContent='▦ Quants: '+Number(stateJson.balance)}catch(_){}
+   }else{
+     sr=await fetch(searchUrl,{cache:'no-store'});
+     sj=sr.ok?await sr.json():{results:[]};
+   }
    const particles=classify(q); const required=particles.filter(x=>!STOP.has(x.w.toLowerCase())).map(x=>x.w.toLowerCase()); const technicalIntent=/\b(schematic|circuit|diagram|radio|receiver|transmitter|solid state|transistor|oscillator|amplifier|antenna|wiring)\b/i.test(q);
    const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
    const weighted=(sj.results||[]).map((x,i)=>{const text=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>text.includes(w)).length;const entityHits=entityWords.filter(w=>text.includes(w)).length;const coverage=required.length?hits/required.length:0;return {...x,_entityHits:entityHits,_weight:(coverage*100)+(hits*35)+(entityHits*100)+Math.max(0,20-i)};}).filter(x=>{if(technicalIntent){const txt=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>txt.includes(w)).length;return hits>=Math.min(3,required.length)}if(entityWords.length<2)return true;const title=String(x.title||'').toLowerCase(),body=String(x.content||x.description||'').toLowerCase();const phrase=entityWords.join(' ');return title.includes(phrase)||body.includes(phrase)||x._entityHits===entityWords.length}).sort((a,b)=>b._weight-a._weight);
@@ -299,12 +310,12 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
 (function(){
  const go=document.getElementById('go'),q=document.getElementById('q');
  if(!go||!q)return;
- function mint(){
+ function markInitialSearch(){
   if(!q.value.trim()||window.__qRefining)return;
-  if(window.QuantaPhiWallet)window.QuantaPhiWallet.addToken();
+  window.__qInitialSearchId=crypto.randomUUID().replace(/-/g,'');
  }
- go.addEventListener('click',mint,true);
- q.addEventListener('keydown',function(e){if(e.key==='Enter')mint()},true);
+ go.addEventListener('click',markInitialSearch,true);
+ q.addEventListener('keydown',function(e){if(e.key==='Enter')markInitialSearch()},true);
 })();
 </script><script>
 (function(){
