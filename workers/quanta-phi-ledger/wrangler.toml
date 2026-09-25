@@ -1,0 +1,8 @@
+name = "quanta-phi-ledger"
+main = "worker.js"
+compatibility_date = "2026-09-24"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "infinity-ledger"
+database_id = "711b3e05-f318-4d30-9a67-4de2af92aa6d"
