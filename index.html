@@ -105,11 +105,39 @@ function searchPermalink(query){const u=new URL(location.href);u.searchParams.se
 function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=cleanMediaTitle(x.title,document.getElementById('q')?.value||'Explore'),url=x.url||location.href,desc=String(x.content||x.description||'').split(/\\s+/).slice(0,100).join(' ');if(String(type).toLowerCase()==='video'){const candidates=[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),video=candidates.find(v=>/\.(mp4|mpeg|mpg|webm|ogv|m4v)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard videoCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(video)+'" data-archive-id="'+esc(x.archive_id||'')+'" data-archive-metadata="'+esc(x.archive_metadata||'')+'"><div class="videoVisual">'+(video?'<video controls playsinline webkit-playsinline preload="metadata" poster="'+esc(img)+'" src="'+esc(video)+'"></video>':(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':''))+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>Collect or share to research this video story.</p><div class="videoActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(img)+'"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3 class="imageStoryTitle">Researching this image…</h3><p>Researching the story behind this image…</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const candidates=[x.audio,x.audio_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),audio=candidates.find(v=>/\.(mp3|m4a|ogg|oga|wav|flac)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard soundCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(audio)+'" data-archive-id="'+esc(x.archive_id||'')+'" data-archive-metadata="'+esc(x.archive_metadata||'')+'"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>Collect or share to research this sound story.</p>'+(audio?'<audio controls preload="metadata" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
 async function loadMedia(q){try{const eid=elementIdentity(q);const mediaQuery=eid?('element '+eid.number+' '+eid.name+' '+eid.symbol):q;const terms=(q.match(/[A-Za-z0-9]+/g)||[]).filter(x=>!STOP.has(x.toLowerCase())).join(' ');const entity=entityClause(mediaQuery);const searches=[entity,entity+' images',entity+' photos',entity+' portrait',entity+' biography',entity+' site:wikipedia.org',entity+' site:archive.org',entity+' site:youtube.com'];let all=[];for(const term of searches){const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:term,format:'json',categories:'images',safesearch:'1'});const j=await fetch(u).then(r=>r.ok?r.json():({results:[]}));all.push(...(j.results||[]))}const seen=new Set(),imgs=all.filter(x=>{const src=x.img_src||x.thumbnail_src||x.thumbnail;if(!src)return false;if(eid&&elementConflict([x.title,x.content,x.description,x.url].filter(Boolean).join(' '),eid))return false;const k=src.split('?')[0];if(seen.has(k))return false;seen.add(k);return true}).slice(0,24);const vu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');vu.search=new URLSearchParams({q:entity,format:'json',categories:'videos',safesearch:'1'});const vj=await fetch(vu).then(r=>r.ok?r.json():({results:[]}));const vids=(vj.results||[]).filter(x=>[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].some(v=>/\.(mp4|m4v|webm)(\?|#|$)/i.test(String(v||'')))).slice(0,4);$('#mediaGrid').innerHTML=imgs.map(x=>mediaCard(x,'Image')).join('')+vids.map(x=>mediaCard(x,'Video')).join('');$('#media').hidden=!(imgs.length||vids.length)}catch(_){$('#media').hidden=true}}
 function splitOverviewFive(main){const words=String(main||'').trim().split(/\s+/).filter(Boolean),parts=[];for(let i=0;i<5;i++){const start=Math.floor(i*words.length/5),end=i===4?words.length:Math.floor((i+1)*words.length/5);parts.push(words.slice(start,end).join(' '))}return parts}
+function parseAiJson(text){
+ const raw=String(text||'').trim().replace(/^\`\`\`(?:json)?\s*/i,'').replace(/\s*\`\`\`$/i,'');
+ const start=raw.indexOf('{'),end=raw.lastIndexOf('}');
+ if(start<0||end<=start)throw new Error('ai_invalid_json');
+ const json=raw.slice(start,end+1);
+ try{return JSON.parse(json)}catch(firstError){
+  let fixed='',quoted=false,escaped=false;
+  for(const char of json){
+   if(escaped){fixed+=char;escaped=false;continue}
+   if(char==='\\'){fixed+=char;escaped=true;continue}
+   if(char==='"'){fixed+=char;quoted=!quoted;continue}
+   if(quoted&&char==='\n'){fixed+='\\n';continue}
+   if(quoted&&char==='\r'){fixed+='\\r';continue}
+   if(quoted&&char==='\t'){fixed+='\\t';continue}
+   if(quoted&&char.charCodeAt(0)<32){fixed+=' ';continue}
+   fixed+=char
+  }
+  try{return JSON.parse(fixed)}catch(_){throw firstError}
+ }
+}
+function aiPayloadText(payload){
+ const value=payload?.output_text??payload?.output??payload?.answer??payload?.response??payload?.content??payload?.message??'';
+ if(typeof value==='string')return value;
+ if(value&&typeof value==='object'){
+  if(typeof value.text==='string')return value.text;
+  if(typeof value.content==='string')return value.content;
+  try{return JSON.stringify(value)}catch(_){}
+ }
+ return String(value||'')
+}
 function parseOverviewSections(raw){
- const text=String(raw||'').trim().replace(/^\`\`\`(?:json)?\s*/i,'').replace(/\s*\`\`\`$/,'');
  try{
-  const a=text.indexOf('{'),b=text.lastIndexOf('}');if(a<0||b<=a)return null;
-  const j=JSON.parse(text.slice(a,b+1));
+  const j=parseAiJson(raw);
   const arr=v=>Array.isArray(v)?v.filter(Boolean):v?[v]:[];
   const out={
    intent:String(j.intent||'').trim(),
@@ -120,8 +148,20 @@ function parseOverviewSections(raw){
    purple:arr(j.purple).map(x=>typeof x==='string'?{relationship:x,use:''}:{relationship:String(x.relationship||x.link||x.connection||'').trim(),use:String(x.use||x.meaning||x.why_it_matters||'').trim()}).filter(x=>x.relationship)
   };
   if(!out.red.overview||!out.yellow.length||!out.blue.length||!out.orange.length||!out.purple.length)return null;
-  return out;
+  return out
  }catch(_){return null}
+}
+function buildStructuredEvidenceFallback(q,evidence){
+ const rows=(evidence||[]).filter(x=>x&&(x.title||x.evidence||x.snippet)).slice(0,10);
+ const sentence=s=>{const t=String(s||'').replace(/\s+/g,' ').trim();const m=t.match(/^.*?[.!?](?:\s|$)/);return (m?m[0]:t).split(/\s+/).slice(0,42).join(' ')};
+ const facts=rows.map((x,i)=>({label:String(x.title||('Source '+(i+1))).replace(/\s+/g,' ').trim().slice(0,80),value:sentence(x.evidence||x.snippet||x.title),source_indexes:[i]})).filter(x=>x.value).slice(0,8);
+ const domains=[...new Set(rows.map(x=>{try{return new URL(x.url).hostname.replace(/^www\./,'')}catch(_){return ''}}).filter(Boolean))].slice(0,5);
+ const overview=rows.slice(0,3).map(x=>sentence(x.evidence||x.snippet||x.title)).filter(Boolean).join(' ');
+ const blue=(domains.length?domains:['current evidence']).map(d=>({region:d,contribution:'Use this evidence region to deepen the current search while keeping '+q+' as the primary aim.'}));
+ const orange=facts.slice(0,4).map(x=>({aim:'Follow '+x.label,reason:x.value}));
+ let hist=[];try{hist=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]').map(x=>x.query).filter(x=>x&&x.toLowerCase()!==String(q||'').toLowerCase()).slice(0,4)}catch(_){}
+ const purple=(hist.length?hist:[q]).map(h=>({relationship:h===q?'Current evidence relationships':q+' ↔ '+h,use:h===q?'Compare the strongest facts above and keep only relationships supported by the retrieved evidence.':'Use this prior search only where the evidence shows a real connection to the current aim.'}));
+ return {intent:q,red:{overview:overview||('Source-backed evidence was retrieved for '+q+'.')},yellow:facts.length?facts:[{label:'Evidence',value:'No concrete evidence points were returned.',source_indexes:[]}],blue,orange:orange.length?orange:[{aim:'Strengthen evidence',reason:'The current retrieved evidence is too thin for a stronger decision.'}],purple}
 }
 function renderFivePartOverview(main,q,evidence){
  const esc=s=>String(s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
@@ -208,9 +248,7 @@ async function search(){
 const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl.abort(),20000);let r;try{r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:instruction,context:{application:'QuantaPhi',assistant:'gpt-overview-writer',task:'five-zone-overview-synthesis',verified_context:{query:q,source_count:evidence.length}}}),signal:overviewCtl.signal})}finally{clearTimeout(overviewTimer)}
    const d=await r.json().catch(()=>({}));
    if(!r.ok)throw new Error(d.message||d.error||('HTTP '+r.status));
-   let text=d.output_text??d.output??d.answer??d.response??d.content??d.message??'';
-   if(text&&typeof text==='object')text=text.text||text.content||JSON.stringify(text);
-   text=String(text||'').trim();
+   let text=aiPayloadText(d).trim();
    if(!text)throw new Error('Empty AI response');
    const sections=parseOverviewSections(text);
    if(!sections)throw new Error('Invalid five-zone AI response');
@@ -225,7 +263,7 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
      const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
      const ranked=(sj.results||[]).map((x,i)=>{const body=((x.title||'')+' '+(x.content||x.description||'')).replace(/\\s+/g,' ').trim();const low=body.toLowerCase();const hits=required.filter(w=>low.includes(w)).length;const entityHits=entityWords.filter(w=>low.includes(w)).length;return {body,hits,entityHits,score:(required.length?hits/required.length:0)*100+hits*35+entityHits*100+Math.max(0,20-i)}}).filter(x=>x.body&&x.hits&&(entityWords.length<2||x.entityHits===entityWords.length)).sort((a,b)=>b.score-a.score);
      let out='',seen=new Set(); for(const r of ranked){for(const s of (r.body.match(/[^.!?]+[.!?]+/g)||[r.body])){const low=s.toLowerCase();if(!required.some(w=>low.includes(w)))continue;const k=low.replace(/[^a-z0-9 ]/g,'').slice(0,100);if(k&&!seen.has(k)){seen.add(k);if((out+' '+s).split(/\\s+/).length>520)break;out+=' '+s.trim()}}if(out.split(/\\s+/).length>470)break}
-     if(out.trim()){ $('#overview').innerHTML=renderFivePartOverview(out.trim(),q,evidence||[]);activateFivePartOverview(); $('#status').innerHTML='<small>Weighted local synthesis · AI provider unavailable</small>'; if(typeof loadMedia==='function')loadMedia(q); return; }
+     if(out.trim()){ const fallbackRows=(sj.results||[]).slice(0,10).map((x,i)=>({title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').trim(),index:i}));const structured=buildStructuredEvidenceFallback(q,(evidence&&evidence.length)?evidence:fallbackRows);$('#overview').innerHTML=renderFivePartOverview(structured,q,(evidence&&evidence.length)?evidence:fallbackRows);activateFivePartOverview(); $('#status').innerHTML='<small>Structured source-backed fallback · AI response unavailable</small>'; if(typeof loadMedia==='function')loadMedia(q); return; }
    }catch(_){}
    $('#status').innerHTML='<small>AI provider did not finish — building overview from search evidence…</small>';
    try{
@@ -236,10 +274,10 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
     if(rows.length){
      const text=rows.slice(0,12).map(x=>String(x.content||x.description||x.title||'').trim()).filter(Boolean).join(' ').replace(/\s+/g,' ').split(/\s+/).slice(0,500).join(' ');
      const fallbackEvidence=rows.slice(0,10).map(x=>({title:x.title||'',url:x.url||'',snippet:x.content||x.description||''}));
-     $('#overview').innerHTML=renderFivePartOverview(text,q,(evidence&&evidence.length)?evidence:fallbackEvidence);activateFivePartOverview();$('#status').innerHTML='<small>Broader source-backed results</small>';if(typeof loadMedia==='function')loadMedia(q);return;
+     const structured=buildStructuredEvidenceFallback(q,(evidence&&evidence.length)?evidence:fallbackEvidence);$('#overview').innerHTML=renderFivePartOverview(structured,q,(evidence&&evidence.length)?evidence:fallbackEvidence);activateFivePartOverview();$('#status').innerHTML='<small>Structured broader source-backed results</small>';if(typeof loadMedia==='function')loadMedia(q);return;
     }
    }catch(_){}
-   $('#overview').innerHTML=renderFivePartOverview('Search is still expanding for this query. Try a refinement while media results continue loading.',q,evidence||[]);activateFivePartOverview();
+   $('#overview').innerHTML=renderFivePartOverview(buildStructuredEvidenceFallback(q,evidence||[]),q,evidence||[]);activateFivePartOverview();
    $('#status').innerHTML='<small>Search continuing</small>';
  }
 }
