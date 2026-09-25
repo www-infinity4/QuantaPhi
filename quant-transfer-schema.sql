@@ -49,7 +49,8 @@ CREATE INDEX IF NOT EXISTS quant_mints_wallet_time ON quant_mints(wallet_id,crea
 CREATE UNIQUE INDEX IF NOT EXISTS quant_transfer_wallet_once ON quant_ledger_entries(reference_id,wallet_id) WHERE entry_type IN ('transfer','reversal');
 CREATE UNIQUE INDEX IF NOT EXISTS quant_mint_ledger_once ON quant_ledger_entries(reference_id) WHERE entry_type='mint';
 
-CREATE TRIGGER IF NOT EXISTS quant_no_overdraft
+DROP TRIGGER IF EXISTS quant_no_overdraft;
+CREATE TRIGGER quant_no_overdraft
 BEFORE INSERT ON quant_ledger_entries WHEN NEW.delta<0
 BEGIN
   SELECT RAISE(ABORT,'insufficient_quant_balance')
