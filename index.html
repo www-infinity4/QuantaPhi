@@ -113,12 +113,23 @@ async function search(){
    let sr,sj;
    const searchId=window.__qInitialSearchId;
    const bridge=window.StarQuestCloudLedger;
-   if(searchId&&!window.__qRefining&&bridge&&bridge.authenticatedFetch){
-     sr=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{query:nq,search_id:searchId}});
-     const payload=sr.ok?await sr.json():{};
-     sj=payload.search||{results:[]};
-     window.__qInitialSearchId='';
-     try{const state=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/state');const stateJson=state.ok?await state.json():null;if(stateJson&&Number.isFinite(Number(stateJson.balance)))document.getElementById('qtoken').textContent='▦ Quants: '+Number(stateJson.balance)}catch(_){}
+   if(searchId&&!window.__qRefining){
+     if(bridge&&bridge.authenticatedFetch){
+       try{
+         sr=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{query:nq,search_id:searchId}});
+         const payload=await sr.json().catch(()=>({}));
+         if(!sr.ok)throw new Error(payload.message||payload.error||('Quant mint HTTP '+sr.status));
+         sj=payload.search||{results:[]};
+         window.__qInitialSearchId='';
+         try{const state=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/state');const stateJson=state.ok?await state.json():null;if(stateJson&&Number.isFinite(Number(stateJson.balance))){document.getElementById('qtoken').textContent='▦ Quants: '+Number(stateJson.balance);document.getElementById('status').innerHTML='<small>Initial search recorded · +1 Quant · Balance '+Number(stateJson.balance)+'</small>'}}catch(_){}
+       }catch(mintErr){
+         sr=await fetch(searchUrl,{cache:'no-store'});sj=sr.ok?await sr.json():{results:[]};
+         document.getElementById('status').innerHTML='<small>Search completed, but Quant was not recorded: '+String(mintErr.message||mintErr).replace(/[<>&]/g,'')+'</small>';
+       }
+     }else{
+       sr=await fetch(searchUrl,{cache:'no-store'});sj=sr.ok?await sr.json():{results:[]};
+       document.getElementById('status').innerHTML='<small>Search completed. Sign in to record the +1 Quant for an initial search.</small>';
+     }
    }else{
      sr=await fetch(searchUrl,{cache:'no-store'});
      sj=sr.ok?await sr.json():{results:[]};
