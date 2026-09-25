@@ -99,6 +99,32 @@ export default {
       return json({ ok: true, replayed: false, mint_id: mintId, provenance_hash: provenanceHash, source_key: sourceKey, amount: 1, search: searchData }, 201);
     }
 
+    if (url.pathname === "/v1/quants/legacy-migrate" && request.method === "POST") {
+      const body = await request.json().catch(() => ({}));
+      const amount = Number(body.legacy_amount);
+      if (!Number.isSafeInteger(amount) || amount < 0) return json({ error: "invalid_legacy_amount" }, 400);
+      const prior = await env.DB.prepare(
+        "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
+      ).bind(wallet).first();
+      if (prior) return json({ ok: true, replayed: true, migration: prior });
+      const material = "legacy-quanta-phi-v1\n" + wallet + "\n" + String(amount);
+      const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(material));
+      const provenanceHash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, "0")).join("");
+      const migrationId = "qlm_" + crypto.randomUUID();
+      try {
+        await env.DB.prepare(
+          "INSERT INTO quant_legacy_migrations(migration_id,wallet_id,legacy_amount,provenance_hash) VALUES(?,?,?,?)"
+        ).bind(migrationId, wallet, amount, provenanceHash).run();
+      } catch {
+        const existing = await env.DB.prepare(
+          "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
+        ).bind(wallet).first();
+        if (existing) return json({ ok: true, replayed: true, migration: existing });
+        return json({ error: "legacy_migration_failed" }, 409);
+      }
+      return json({ ok: true, replayed: false, migration_id: migrationId, wallet_id: wallet, legacy_amount: amount, provenance_hash: provenanceHash }, 201);
+    }
+
     if (url.pathname === "/v1/quants/receive" && request.method === "GET") {
       const found = await env.DB.prepare(
         "SELECT wallet_id,status,created_at FROM quant_wallets WHERE wallet_id=? AND status='active'"
@@ -118,7 +144,7 @@ export default {
       ).bind(wallet).first();
       if (!found) return json({ error: "wallet_not_found" }, 404);
       const row = await env.DB.prepare(
-        "SELECT COALESCE(SUM(delta),0) balance FROM quant_ledger_entries WHERE wallet_id=?"
+        "SELECT balance FROM quant_wallet_balances WHERE wallet_id=?"
       ).bind(wallet).first();
       return json({ wallet_id: wallet, balance: Number(row?.balance || 0) });
     }
@@ -147,7 +173,7 @@ export default {
       if (prior) return json({ ok: true, replayed: true, transfer: prior });
 
       const balance = await env.DB.prepare(
-        "SELECT COALESCE(SUM(delta),0) balance FROM quant_ledger_entries WHERE wallet_id=?"
+        "SELECT balance FROM quant_wallet_balances WHERE wallet_id=?"
       ).bind(wallet).first();
       if (Number(balance?.balance || 0) < amount)
         return json({ error: "insufficient_balance" }, 409);
