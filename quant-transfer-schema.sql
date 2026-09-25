@@ -3,6 +3,7 @@ PRAGMA foreign_keys=ON;
 CREATE TABLE IF NOT EXISTS quant_wallets(
   wallet_id TEXT PRIMARY KEY,
   user_id TEXT NOT NULL UNIQUE,
+  status TEXT NOT NULL DEFAULT 'active' CHECK(status IN ('active','disabled')),
   created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -81,3 +82,20 @@ BEGIN SELECT RAISE(ABORT,'immutable_quant_ledger'); END;
 CREATE TRIGGER IF NOT EXISTS quant_ledger_no_delete
 BEFORE DELETE ON quant_ledger_entries
 BEGIN SELECT RAISE(ABORT,'immutable_quant_ledger'); END;
+
+
+CREATE TRIGGER IF NOT EXISTS quant_transfers_no_update
+BEFORE UPDATE ON quant_transfers
+BEGIN SELECT RAISE(ABORT,'immutable_quant_transfer'); END;
+
+CREATE TRIGGER IF NOT EXISTS quant_transfers_no_delete
+BEFORE DELETE ON quant_transfers
+BEGIN SELECT RAISE(ABORT,'immutable_quant_transfer'); END;
+
+CREATE TRIGGER IF NOT EXISTS quant_mints_no_update
+BEFORE UPDATE ON quant_mints
+BEGIN SELECT RAISE(ABORT,'immutable_quant_mint'); END;
+
+CREATE TRIGGER IF NOT EXISTS quant_mints_no_delete
+BEFORE DELETE ON quant_mints
+BEGIN SELECT RAISE(ABORT,'immutable_quant_mint'); END;
