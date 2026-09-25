@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS quant_transfers(
   amount INTEGER NOT NULL CHECK(amount>0),
   idempotency_key TEXT NOT NULL,
   status TEXT NOT NULL DEFAULT 'committed',
+  reversal_of TEXT,
   created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
   UNIQUE(sender_wallet_id,idempotency_key),
   FOREIGN KEY(sender_wallet_id) REFERENCES quant_wallets(wallet_id),
@@ -40,6 +41,8 @@ CREATE TABLE IF NOT EXISTS quant_ledger_entries(
   created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY(wallet_id) REFERENCES quant_wallets(wallet_id)
 );
+
+CREATE UNIQUE INDEX IF NOT EXISTS quant_one_reversal_per_transfer ON quant_transfers(reversal_of) WHERE reversal_of IS NOT NULL;
 
 CREATE INDEX IF NOT EXISTS quant_ledger_wallet_time ON quant_ledger_entries(wallet_id,created_at);
 CREATE INDEX IF NOT EXISTS quant_mints_wallet_time ON quant_mints(wallet_id,created_at);
@@ -70,6 +73,23 @@ BEGIN
   WHERE NOT EXISTS(
     SELECT 1 FROM quant_transfers t
     WHERE t.transfer_id=NEW.reference_id
+      AND ((NEW.wallet_id=t.sender_wallet_id AND NEW.delta=-t.amount)
+        OR (NEW.wallet_id=t.recipient_wallet_id AND NEW.delta=t.amount))
+  );
+END;
+
+CREATE TRIGGER IF NOT EXISTS quant_validate_reversal_entry
+BEFORE INSERT ON quant_ledger_entries WHEN NEW.entry_type='reversal'
+BEGIN
+  SELECT RAISE(ABORT,'invalid_quant_reversal_entry')
+  WHERE NOT EXISTS(
+    SELECT 1 FROM quant_transfers t
+    JOIN quant_transfers original ON original.transfer_id=t.reversal_of
+    WHERE t.transfer_id=NEW.reference_id
+      AND t.reversal_of IS NOT NULL
+      AND t.amount=original.amount
+      AND t.sender_wallet_id=original.recipient_wallet_id
+      AND t.recipient_wallet_id=original.sender_wallet_id
       AND ((NEW.wallet_id=t.sender_wallet_id AND NEW.delta=-t.amount)
         OR (NEW.wallet_id=t.recipient_wallet_id AND NEW.delta=t.amount))
   );
