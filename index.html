@@ -336,13 +336,21 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
    // Ask Internet Archive itself for movie items, then resolve each item to a real
    // MP4/WebM file. Do not render search-result links as fake video cards.
    const ia=new URL('https://archive.org/advancedsearch.php');
+   const exact=normalizedEntity(query).replace(/[()"\\]/g,' ').replace(/\s+/g,' ').trim();
+   const wanted=(exact.toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
+   // Keep the requested entity in control of the feed. Search IA metadata fields
+   // directly and reject cross-entity results before any card is rendered.
+   const iaQuery='(title:("'+exact+'") OR description:("'+exact+'") OR subject:("'+exact+'") OR identifier:("'+exact.replace(/\s+/g,'_')+'")) AND mediatype:movies';
    ia.search=new URLSearchParams({
-    q:'('+entityClause(query)+') AND mediatype:movies',
-    fl:'identifier,title,description',
-    rows:'24',page:'1',output:'json'
+    q:iaQuery,
+    fl:'identifier,title,description,subject',
+    rows:'50',page:'1',output:'json'
    });
    const found=await fetch(ia,{cache:'no-store'}).then(r=>r.ok?r.json():({response:{docs:[]}}));
-   const docs=(found.response&&found.response.docs)||[];
+   const docs=((found.response&&found.response.docs)||[]).filter(d=>{
+    const hay=[d.identifier,d.title,Array.isArray(d.description)?d.description.join(' '):d.description,Array.isArray(d.subject)?d.subject.join(' '):d.subject].filter(Boolean).join(' ').toLowerCase();
+    return wanted.length?wanted.every(w=>hay.includes(w)):true;
+   });
    const rows=docs.map(d=>({
     title:d.title||d.identifier,
     description:Array.isArray(d.description)?d.description[0]:d.description||'',
