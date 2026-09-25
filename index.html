@@ -109,7 +109,7 @@ function activateFivePartOverview(){const b=document.getElementById('qZoneBuild'
 async function search(){
  const q=$('#q').value.trim(); if(!q)return;
  try{const key='quantaPhiBuildHistoryV1',items=JSON.parse(localStorage.getItem(key)||'[]'),entry={id:crypto.randomUUID(),query:q,created_at:new Date().toISOString(),url:searchPermalink(q)};items.unshift(entry);localStorage.setItem(key,JSON.stringify(items.slice(0,5000)));window.dispatchEvent(new CustomEvent('quantaPhiHistoryAdded',{detail:entry}))}catch(_){}  const eid=elementIdentity(q);const nq=eid?('Element '+eid.number+' '+eid.name):normalizedEntity(q); try{history.replaceState(null,'',searchPermalink(q))}catch(_){} $('#media').hidden=true; $('#mediaGrid').innerHTML='';
- $('#result').hidden=false; $('#overview').innerHTML=renderFivePartOverview('Building the weighted AI overview for '+q+'…',q,[]); activateFivePartOverview(); showField(q);
+ $('#result').hidden=false; $('#overview').innerHTML='<section class="qzone qzoneRed"><h3>AI Overview</h3><div>Building…</div></section>'; showField(q);
  $('#status').innerHTML='<small>Building semantic field and overview…</small>'; loadMedia(nq);
  try{
    const exactEntity=entityClause(nq);
