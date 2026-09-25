@@ -6,3 +6,8 @@ compatibility_date = "2026-09-24"
 binding = "DB"
 database_name = "infinity-ledger"
 database_id = "711b3e05-f318-4d30-9a67-4de2af92aa6d"
+
+[[d1_databases]]
+binding = "IDENTITY_DB"
+database_name = "starquest-ledger"
+database_id = "a1a973b2-a37c-4e1c-b68e-a73803238206"
