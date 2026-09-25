@@ -172,7 +172,7 @@ function renderFivePartOverview(main,q,evidence){
  }
  let hist=[];try{hist=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]').filter(x=>x.query&&x.query.toLowerCase()!==String(q||'').toLowerCase()).slice(0,6)}catch(_){}
  const chips=hist.length?hist.map(x=>'<button class="qchip" type="button" data-assimilate="'+encodeURIComponent(x.query)+'">'+esc(x.query)+'</button>').join(''):'';
- const yellow='<ul class="qDataLinks">'+sections.yellow.map(x=>{const term=String(x.value||'').trim();return term?'<li><a href="'+esc(searchPermalink(term))+'" title="Search QuantaPhi for '+esc(term)+'">'+esc(term)+'</a></li>':''}).join('')+'</ul>';
+ const yellow='<ul id="qYellowDataList" class="qDataLinks">'+sections.yellow.map(x=>{const term=String(x.value||'').trim();return term?'<li><a href="'+esc(searchPermalink(term))+'" title="Search QuantaPhi for '+esc(term)+'">'+esc(term)+'</a></li>':''}).join('')+'</ul>';
  const blue='<ul>'+sections.blue.map(x=>'<li><strong>'+esc(x.region)+':</strong> '+esc(x.contribution)+'</li>').join('')+'</ul>';
  const orange='<ul>'+sections.orange.map(x=>'<li><strong>'+esc(x.label)+':</strong> '+esc(x.value)+(x.source_indexes&&x.source_indexes.length?'<small> · sources '+x.source_indexes.map(n=>'#'+(n+1)).join(', ')+'</small>':'')+'</li>').join('')+'</ul>';
  const purple='<ul id="qPurpleList">'+((sections.purple&&sections.purple.length)?sections.purple.map(x=>'<li><strong>'+esc((x.type||'conceptual').toUpperCase())+(x.history_query?' · '+esc(x.history_query):'')+':</strong> '+esc(x.relationship)+(x.bridge?' — '+esc(x.bridge):'')+'</li>').join(''):'<li>Assimilating search history…</li>')+'</ul>';
@@ -181,6 +181,89 @@ function renderFivePartOverview(main,q,evidence){
  '<section class="qzone qzoneBlue"><h3>Input regions</h3>'+blue+'<div class="qzoneInput"><input id="qZoneInput" placeholder="Add a skill, tool, source, method, measurement, or related input…"><button id="qZoneBuild" type="button">Add input</button></div></section>'+
  '<section class="qzone qzoneOrange"><h3>Related data · next branches</h3>'+orange+'</section>'+
  '<section class="qzone qzonePurple"><h3>Assimilation</h3>'+purple+(chips?'<div class="qchips">'+chips+'</div>':'')+'</section>';
+}
+async function loadExpandedDataIndex(q,currentSections,currentEvidence){
+ const list=document.getElementById('qYellowDataList');if(!list)return;
+ const esc=s=>String(s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+ const timeout=async(url,opt={},ms=9000)=>{const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),ms);try{return await fetch(url,{...opt,signal:ctl.signal})}finally{clearTimeout(timer)}};
+ const corpus=[q,String(currentSections?.red?.overview||''),...(currentEvidence||[]).slice(0,12).map(x=>String(x.title||'')+' '+String(x.evidence||x.snippet||''))].join(' ').toLowerCase();
+ const music=/\b(band|music|album|song|concert|guitar|bass|drum|singer|recording|tour|venue|live performance|keyboard|vocalist|rock|jazz|folk)\b/.test(corpus);
+ const material=/\b(element|metal|mineral|alloy|chemical|atomic|isotope|ore|compound|material|density|melting point)\b/.test(corpus);
+ const person=/\b(born|actor|author|artist|scientist|musician|politician|director|writer|career|biography)\b/.test(corpus);
+ let queries;
+ if(music)queries=[
+  q,
+  q+' members personnel lineup',
+  q+' albums discography studio live releases',
+  q+' songs tracks repertoire',
+  q+' concerts venues tours festivals',
+  q+' collaborators producers songwriters',
+  q+' instruments guitars equipment gear',
+  q+' record labels side projects related bands',
+  q+' history timeline dates places'
+ ];
+ else if(material)queries=[
+  q,
+  q+' properties measurements atomic data',
+  q+' isotopes compounds chemistry',
+  q+' ores minerals sources production',
+  q+' applications uses industries',
+  q+' history discovery scientists',
+  q+' alloys related elements materials',
+  q+' specifications values temperatures density'
+ ];
+ else if(person)queries=[
+  q,
+  q+' biography family education',
+  q+' career works projects',
+  q+' collaborators colleagues associates',
+  q+' awards events timeline dates',
+  q+' places organizations institutions',
+  q+' books films albums publications works',
+  q+' influences related people'
+ ];
+ else queries=[
+  q,
+  q+' people names',
+  q+' works titles projects',
+  q+' places dates timeline',
+  q+' organizations companies groups',
+  q+' objects models components terms',
+  q+' collaborators relationships',
+  q+' related subjects entities'
+ ];
+ const batches=await Promise.all(queries.map(async searchTerm=>{
+  try{
+   const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+   u.search=new URLSearchParams({q:searchTerm,format:'json',categories:'general',safesearch:'1'});
+   const j=await timeout(u,{cache:'no-store'},5000).then(r=>r.ok?r.json():({results:[]}));
+   return {query:searchTerm,results:(j.results||[]).slice(0,6).map((x,i)=>({index:i,title:String(x.title||'').slice(0,220),url:x.url||'',evidence:String(x.content||x.description||'').replace(/\s+/g,' ').slice(0,650)})).filter(x=>x.title||x.evidence)}
+  }catch(_){return {query:searchTerm,results:[]}}
+ }));
+ const retrieved=batches.filter(x=>x.results.length);
+ if(!retrieved.length)return;
+ const instruction=[
+  'You are the Yellow clickable data-index builder for QuantaPhi.',
+  'Primary subject: '+q,
+  'Build a dense exploration index that stays as close to the primary subject as possible.',
+  music?'This appears to be music-related. Prioritize core/official members, recurring members, albums, live albums, songs, venues, tours, festivals, collaborators, songwriters, producers, instruments, named guitars or gear when evidenced, record labels, side projects, dates, and places directly connected to the act. Include less-famous members and releases, not only the obvious names.':'',
+  material?'This appears to be a material/element subject. Prioritize properties, isotopes, compounds, ores, related elements, applications, scientists, places, industries, measurements, values, and production terms directly connected to the subject.':'',
+  person?'This appears to center on a person. Prioritize works, collaborators, institutions, places, dates, projects, family/associates when evidenced, awards, tools, organizations, and other close entities.':'',
+  'Return many short standalone clickable terms, not descriptions. A term should usually be 1-8 words.',
+  'Target about 80-100 UNIQUE terms when the retrieved evidence supports that many. It is acceptable to return fewer rather than invent anything.',
+  'Keep the index subject-proximate. Reject generic web vocabulary and remote trivia.',
+  'Do not repeat the same entity in slightly different wording unless the variants are genuinely distinct.',
+  'Each item must be supported by the supplied retrieval evidence.',
+  'Return JSON only. Schema: {"terms":[{"value":"clickable term","category":"member|album|song|venue|date|instrument|collaborator|place|organization|work|property|other","source_query":"retrieval query that supports it"}]}',
+  'Retrieval evidence: '+JSON.stringify(retrieved)
+ ].filter(Boolean).join('\n');
+ try{
+  const r=await timeout('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:instruction,context:{application:'QuantaPhi',assistant:'gpt-yellow-data-index',task:'dense-clickable-entity-index',verified_context:{query:q,retrieval_batches:retrieved.length}}})},18000);
+  const d=await r.json().catch(()=>({}));if(!r.ok)throw new Error('HTTP '+r.status);
+  const j=parseAiJson(aiPayloadText(d)),seen=new Set(),terms=(Array.isArray(j.terms)?j.terms:[]).map(x=>String(typeof x==='string'?x:x?.value||'').replace(/\s+/g,' ').trim()).filter(term=>{const k=term.toLowerCase();if(!term||term.length>120||seen.has(k)||k===String(q).toLowerCase())return false;seen.add(k);return true}).slice(0,100);
+  if(!terms.length)return;
+  list.innerHTML=terms.map(term=>'<li><a href="'+esc(searchPermalink(term))+'" title="Search QuantaPhi for '+esc(term)+'">'+esc(term)+'</a></li>').join('');
+ }catch(_){}
 }
 async function loadHistoryAssimilation(q,currentSections){
  const list=document.getElementById('qPurpleList');if(!list)return;
@@ -252,7 +335,7 @@ async function search(){
  inputExtension?('Added Blue input: '+inputExtension.supporting):'',
  'Read and interpret the supplied evidence. Keep the canonical subject and weighted user intent primary. Reject evidence about a different meaning or entity.',
  'RED is the actual AI Overview. Write it like ChatGPT would answer the user directly: coherent, natural, explanatory prose. It should synthesize the evidence and explain what matters about the search. Do not describe your process. Roughly 120-220 words is appropriate, but clarity matters more than length.',
- 'YELLOW is a CLICKABLE DATA INDEX extracted from the current Evidence only. Return 10-40 terse standalone data terms when supported: people, bands, works, albums, songs, instruments, venues, places, dates, numbers, materials, models, components, identifiers, organizations, releases, properties, or other concrete entities/data points. Each value should normally be just the thing a user would want to click and explore next, ideally 1-8 words: “Jerry Garcia”, “Bob Weir”, “Phil Lesh”, “Workingman’s Dead”, “Fillmore West”, “1970”. Do not write explanatory sentences and do not prefix the value with generic prose. Keep source_indexes for grounding, but the visible card will show only the clickable value.',
+ 'YELLOW is a preliminary CLICKABLE DATA INDEX extracted from the current Evidence only. Return 10-25 short standalone terms now. A separate deep Yellow pass will expand this to a much larger subject-proximate index. Prefer core people, works, places, dates, objects, releases, instruments, organizations, or other concrete entities directly tied to the subject. Do not write explanatory sentences.',
  'BLUE is INPUT REGIONS. GPT should infer which additional inputs would materially improve THIS exact search/build. Each item should name one region such as a source class, dataset, method, tool, measurement, component, skill, comparison set, or research angle, then explain exactly what it would contribute. These are useful extensions, not extracted facts and not restatements of Yellow.',
  'ORANGE is RELATED DATA / NEXT BRANCHES, not an essay and not a description of the subject. Build another dense list of short concrete data points from the current Evidence that expand outward from the main subject: related people, works, dates, objects, instruments, places, companies, collaborators, variants, components, events, recordings, materials, or other subject-appropriate entities. Return 8-30 terse items when evidence supports them. Each item needs a short label, the actual value/entity, and supporting current-evidence source_indexes.',
  'Each region must make sense on its own and must perform its own job. Do not write five versions of the same paragraph.',
@@ -267,7 +350,7 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
    if(!text)throw new Error('Empty AI response');
    const sections=parseOverviewSections(text);
    if(!sections)throw new Error('Invalid five-zone AI response');
-   $('#overview').innerHTML=renderFivePartOverview(sections,q,evidence);activateFivePartOverview();loadHistoryAssimilation(q,sections);$('#status').innerHTML='';loadMedia(q);return;
+   $('#overview').innerHTML=renderFivePartOverview(sections,q,evidence);activateFivePartOverview();loadExpandedDataIndex(q,sections,evidence);loadHistoryAssimilation(q,sections);$('#status').innerHTML='';loadMedia(q);return;
  }catch(e){
    try{
      const searchUrl=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
@@ -278,7 +361,7 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
      const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
      const ranked=(sj.results||[]).map((x,i)=>{const body=((x.title||'')+' '+(x.content||x.description||'')).replace(/\\s+/g,' ').trim();const low=body.toLowerCase();const hits=required.filter(w=>low.includes(w)).length;const entityHits=entityWords.filter(w=>low.includes(w)).length;return {body,hits,entityHits,score:(required.length?hits/required.length:0)*100+hits*35+entityHits*100+Math.max(0,20-i)}}).filter(x=>x.body&&x.hits&&(entityWords.length<2||x.entityHits===entityWords.length)).sort((a,b)=>b.score-a.score);
      let out='',seen=new Set(); for(const r of ranked){for(const s of (r.body.match(/[^.!?]+[.!?]+/g)||[r.body])){const low=s.toLowerCase();if(!required.some(w=>low.includes(w)))continue;const k=low.replace(/[^a-z0-9 ]/g,'').slice(0,100);if(k&&!seen.has(k)){seen.add(k);if((out+' '+s).split(/\\s+/).length>520)break;out+=' '+s.trim()}}if(out.split(/\\s+/).length>470)break}
-     if(out.trim()){ const fallbackRows=(sj.results||[]).slice(0,10).map((x,i)=>({title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').trim(),index:i}));const structured=buildStructuredEvidenceFallback(q,(evidence&&evidence.length)?evidence:fallbackRows);$('#overview').innerHTML=renderFivePartOverview(structured,q,(evidence&&evidence.length)?evidence:fallbackRows);activateFivePartOverview();loadHistoryAssimilation(q,structured); $('#status').innerHTML='<small>Structured source-backed fallback · AI response unavailable</small>'; if(typeof loadMedia==='function')loadMedia(q); return; }
+     if(out.trim()){ const fallbackRows=(sj.results||[]).slice(0,10).map((x,i)=>({title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').trim(),index:i}));const structured=buildStructuredEvidenceFallback(q,(evidence&&evidence.length)?evidence:fallbackRows);$('#overview').innerHTML=renderFivePartOverview(structured,q,(evidence&&evidence.length)?evidence:fallbackRows);activateFivePartOverview();loadExpandedDataIndex(q,structured,(evidence&&evidence.length)?evidence:fallbackRows);loadHistoryAssimilation(q,structured); $('#status').innerHTML='<small>Structured source-backed fallback · AI response unavailable</small>'; if(typeof loadMedia==='function')loadMedia(q); return; }
    }catch(_){}
    $('#status').innerHTML='<small>AI provider did not finish — building overview from search evidence…</small>';
    try{
@@ -289,10 +372,10 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
     if(rows.length){
      const text=rows.slice(0,12).map(x=>String(x.content||x.description||x.title||'').trim()).filter(Boolean).join(' ').replace(/\s+/g,' ').split(/\s+/).slice(0,500).join(' ');
      const fallbackEvidence=rows.slice(0,10).map(x=>({title:x.title||'',url:x.url||'',snippet:x.content||x.description||''}));
-     const structured=buildStructuredEvidenceFallback(q,(evidence&&evidence.length)?evidence:fallbackEvidence);$('#overview').innerHTML=renderFivePartOverview(structured,q,(evidence&&evidence.length)?evidence:fallbackEvidence);activateFivePartOverview();loadHistoryAssimilation(q,structured);$('#status').innerHTML='<small>Structured broader source-backed results</small>';if(typeof loadMedia==='function')loadMedia(q);return;
+     const structured=buildStructuredEvidenceFallback(q,(evidence&&evidence.length)?evidence:fallbackEvidence);$('#overview').innerHTML=renderFivePartOverview(structured,q,(evidence&&evidence.length)?evidence:fallbackEvidence);activateFivePartOverview();loadExpandedDataIndex(q,structured,(evidence&&evidence.length)?evidence:fallbackEvidence);loadHistoryAssimilation(q,structured);$('#status').innerHTML='<small>Structured broader source-backed results</small>';if(typeof loadMedia==='function')loadMedia(q);return;
     }
    }catch(_){}
-   const structuredFinal=buildStructuredEvidenceFallback(q,evidence||[]);$('#overview').innerHTML=renderFivePartOverview(structuredFinal,q,evidence||[]);activateFivePartOverview();loadHistoryAssimilation(q,structuredFinal);
+   const structuredFinal=buildStructuredEvidenceFallback(q,evidence||[]);$('#overview').innerHTML=renderFivePartOverview(structuredFinal,q,evidence||[]);activateFivePartOverview();loadExpandedDataIndex(q,structuredFinal,evidence||[]);loadHistoryAssimilation(q,structuredFinal);
    $('#status').innerHTML='<small>Search continuing</small>';
  }
 }
