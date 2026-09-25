@@ -168,7 +168,7 @@ async function search(){
      const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
      const ranked=(sj.results||[]).map((x,i)=>{const body=((x.title||'')+' '+(x.content||x.description||'')).replace(/\\s+/g,' ').trim();const low=body.toLowerCase();const hits=required.filter(w=>low.includes(w)).length;const entityHits=entityWords.filter(w=>low.includes(w)).length;return {body,hits,entityHits,score:(required.length?hits/required.length:0)*100+hits*35+entityHits*100+Math.max(0,20-i)}}).filter(x=>x.body&&x.hits&&(entityWords.length<2||x.entityHits===entityWords.length)).sort((a,b)=>b.score-a.score);
      let out='',seen=new Set(); for(const r of ranked){for(const s of (r.body.match(/[^.!?]+[.!?]+/g)||[r.body])){const low=s.toLowerCase();if(!required.some(w=>low.includes(w)))continue;const k=low.replace(/[^a-z0-9 ]/g,'').slice(0,100);if(k&&!seen.has(k)){seen.add(k);if((out+' '+s).split(/\\s+/).length>520)break;out+=' '+s.trim()}}if(out.split(/\\s+/).length>470)break}
-     if(out.trim()){ $('#overview').textContent=out.trim(); $('#status').innerHTML='<small>Weighted local synthesis · AI provider unavailable</small>'; if(typeof loadMedia==='function')loadMedia(q); return; }
+     if(out.trim()){ $('#overview').innerHTML=renderFivePartOverview(out.trim(),q,evidence||[]);activateFivePartOverview(); $('#status').innerHTML='<small>Weighted local synthesis · AI provider unavailable</small>'; if(typeof loadMedia==='function')loadMedia(q); return; }
    }catch(_){}
    $('#status').innerHTML='<small>No strong exact match yet — broadening search…</small>';
    try{
@@ -178,10 +178,10 @@ async function search(){
     const rows=(j.results||[]).filter(x=>x.title||x.content||x.description);
     if(rows.length){
      const text=rows.slice(0,12).map(x=>String(x.content||x.description||x.title||'').trim()).filter(Boolean).join(' ').replace(/\s+/g,' ').split(/\s+/).slice(0,500).join(' ');
-     $('#overview').textContent=text;$('#status').innerHTML='<small>Broader source-backed results</small>';if(typeof loadMedia==='function')loadMedia(q);return;
+     $('#overview').innerHTML=renderFivePartOverview(text,q,evidence||[]);activateFivePartOverview();$('#status').innerHTML='<small>Broader source-backed results</small>';if(typeof loadMedia==='function')loadMedia(q);return;
     }
    }catch(_){}
-   $('#overview').textContent='Search is still expanding for this query. Try a refinement while media results continue loading.';
+   $('#overview').innerHTML=renderFivePartOverview('Search is still expanding for this query. Try a refinement while media results continue loading.',q,evidence||[]);activateFivePartOverview();
    $('#status').innerHTML='<small>Search continuing</small>';
  }
 }
