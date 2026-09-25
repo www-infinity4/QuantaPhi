@@ -1,5 +1,14 @@
+async function ensureLegacyOverdraftTrigger(env) {
+  if (!env.DB) return;
+  const row = await env.DB.prepare("SELECT sql FROM sqlite_master WHERE type='trigger' AND name='quant_no_overdraft'").first();
+  if (row?.sql && row.sql.includes('quant_legacy_migrations')) return;
+  await env.DB.prepare("DROP TRIGGER IF EXISTS quant_no_overdraft").run();
+  await env.DB.prepare("CREATE TRIGGER quant_no_overdraft BEFORE INSERT ON quant_ledger_entries WHEN NEW.delta<0 BEGIN SELECT RAISE(ABORT,'insufficient_quant_balance') WHERE (SELECT COALESCE(SUM(delta),0) FROM quant_ledger_entries WHERE wallet_id=NEW.wallet_id) + (SELECT COALESCE(legacy_amount,0) FROM quant_legacy_migrations WHERE wallet_id=NEW.wallet_id) + NEW.delta < 0; END").run();
+}
+
 export default {
   async fetch(request, env) {
+    await ensureLegacyOverdraftTrigger(env);
     const url = new URL(request.url);
     const origin = request.headers.get("Origin") || "";
     const allowedOrigin = origin === "https://www-infinity4.github.io" ? origin : "";
