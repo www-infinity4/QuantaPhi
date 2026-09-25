@@ -1,20 +1,26 @@
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    const origin = request.headers.get("Origin") || "";
+    const allowedOrigin = origin === "https://www-infinity4.github.io" ? origin : "";
     const headers = {
       "content-type": "application/json",
-      "access-control-allow-origin": "*",
+      ...(allowedOrigin ? { "access-control-allow-origin": allowedOrigin, "vary": "Origin" } : {}),
       "access-control-allow-headers": "authorization,content-type",
       "access-control-allow-methods": "GET,POST,OPTIONS"
     };
     const json = (value, status = 200) =>
       new Response(JSON.stringify(value), { status, headers });
 
-    if (request.method === "OPTIONS")
+    if (request.method === "OPTIONS") {
+      if (!allowedOrigin) return new Response(null, { status: 403, headers });
       return new Response(null, { status: 204, headers });
+    }
 
     if (url.pathname === "/health")
       return json({ ok: true, service: "quanta-phi-ledger" });
+
+    if (origin && !allowedOrigin) return json({ error: "origin_not_allowed" }, 403);
 
     const authorization = request.headers.get("Authorization") || "";
     const match = /^Bearer\\s+(sq_[A-Za-z0-9_-]{32,})$/.exec(authorization);
