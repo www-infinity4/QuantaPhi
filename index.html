@@ -303,8 +303,18 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   try{
    const j=await fetch('https://archive.org/metadata/'+encodeURIComponent(id),{cache:'no-store'}).then(r=>r.ok?r.json():null);
    const files=(j&&j.files)||[];
-   const a=files.find(v=>/\.(mp3|ogg|oga|m4a|wav|flac)$/i.test(v.name||'')&&!/64kb|spectrogram/i.test(v.name||''))||files.find(v=>/\.(mp3|ogg|oga|m4a|wav|flac)$/i.test(v.name||''));
-   if(a)x.audio_url='https://archive.org/download/'+encodeURIComponent(id)+'/'+String(a.name).split('/').map(encodeURIComponent).join('/');
+   // Archive live-music items can contain lossless originals plus browser-ready
+   // derivatives. Prefer a public VBR MP3/Ogg derivative because Android browsers
+   // can play it directly; never select restricted/private files.
+   const publicAudio=files.filter(v=>/\.(mp3|ogg|oga|m4a|wav|flac)$/i.test(v.name||'')&&v.private!==true&&v.private!=='true'&&v.name&&!/(spectrogram|waveform|fingerprint)/i.test(v.name));
+   const score=v=>(/VBR MP3/i.test(v.format||'')?100:0)+(/\.mp3$/i.test(v.name||'')?80:0)+(/Ogg Vorbis/i.test(v.format||'')?60:0)+(/\.(ogg|oga)$/i.test(v.name||'')?50:0)+(v.source==='derivative'?25:0)-(/64kb/i.test((v.format||'')+' '+(v.name||''))?10:0);
+   publicAudio.sort((a,b)=>score(b)-score(a));
+   const a=publicAudio[0];
+   if(a){
+    x.audio_url='https://archive.org/download/'+encodeURIComponent(id)+'/'+String(a.name).split('/').map(encodeURIComponent).join('/');
+    x.media_url=x.audio_url;
+    x.content_url=x.audio_url;
+   }
   }catch(_){}
   return x;
  }
