@@ -331,21 +331,28 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  async function archiveVideoFeed(){
   const q=document.getElementById('q'),media=document.getElementById('media'),menu=document.getElementById('qmenu');
   const query=q&&q.value.trim();if(!query)return;
-  if(menu)menu.hidden=true;media.hidden=false;grid.innerHTML='<small>Loading Internet Archive videos…</small>';media.scrollIntoView({behavior:'smooth',block:'start'});
+  if(menu)menu.hidden=true;media.hidden=false;grid.innerHTML='<small>Finding playable Internet Archive video files…</small>';media.scrollIntoView({behavior:'smooth',block:'start'});
   try{
-   const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
-   u.search=new URLSearchParams({q:entityClause(query)+' site:archive.org/details',format:'json',categories:'videos',safesearch:'1'});
-   const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
-   const rows=(j.results||[]).filter(x=>archiveId(x)).slice(0,14);
-   const playable=await Promise.all(rows.map(iaPlayable));
-   const archiveGood=playable.filter(x=>x.video_url);
-   const wu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
-   wu.search=new URLSearchParams({q:entityClause(query),format:'json',categories:'videos',safesearch:'1'});
-   const wj=await fetch(wu,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
-   const web=(wj.results||[]).filter(x=>!archiveId(x)).slice(0,20);
-   const good=[...archiveGood,...web];
-   grid.innerHTML=good.length?good.map(x=>mediaCard(x,'Video')).join(''):'<p class="err">No indexed video results found.</p>';
-  }catch(_){grid.innerHTML='<p class="err">Internet Archive video feed could not load.</p>'}
+   // Ask Internet Archive itself for movie items, then resolve each item to a real
+   // MP4/WebM file. Do not render search-result links as fake video cards.
+   const ia=new URL('https://archive.org/advancedsearch.php');
+   ia.search=new URLSearchParams({
+    q:'('+entityClause(query)+') AND mediatype:movies',
+    fl:'identifier,title,description',
+    rows:'24',page:'1',output:'json'
+   });
+   const found=await fetch(ia,{cache:'no-store'}).then(r=>r.ok?r.json():({response:{docs:[]}}));
+   const docs=(found.response&&found.response.docs)||[];
+   const rows=docs.map(d=>({
+    title:d.title||d.identifier,
+    description:Array.isArray(d.description)?d.description[0]:d.description||'',
+    url:'https://archive.org/details/'+d.identifier,
+    thumbnail:'https://archive.org/services/img/'+d.identifier
+   }));
+   const resolved=await Promise.all(rows.map(iaPlayable));
+   const good=resolved.filter(x=>x.video_url).slice(0,20);
+   grid.innerHTML=good.length?good.map(x=>mediaCard(x,'Video')).join(''):'<p class="err">No directly playable Internet Archive video files found for this search.</p>';
+  }catch(err){console.error('Playable video feed failed',err);grid.innerHTML='<p class="err">Playable Internet Archive video feed could not load.</p>'}
  }
  document.getElementById('qVideoBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();archiveVideoFeed()},true);
  document.getElementById('overviewShare')?.addEventListener('click',async()=>{const b=document.getElementById('overviewShare'),q=document.getElementById('q')?.value.trim()||'QuantaPhi',text=document.getElementById('overview')?.innerText.trim()||'';if(!text)return;try{if(navigator.share)await navigator.share({title:q+' — QuantaPhi AI Overview',text,url:searchPermalink(q)});else await navigator.clipboard?.writeText(q+'\n\n'+text+'\n\n'+searchPermalink(q));try{window.QuantaPhiWallet?.addShare()}catch(_){}b.textContent='Shared ✓ +0.1 ★';setTimeout(()=>b.textContent='Share AI Overview +0.1 ★',1800)}catch(_){b.textContent='Share AI Overview +0.1 ★'}});
