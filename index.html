@@ -313,10 +313,24 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   const query=q&&q.value.trim();if(!query)return;
   if(menu)menu.hidden=true;media.hidden=false;grid.innerHTML='<small>Loading Internet Archive sound…</small>';media.scrollIntoView({behavior:'smooth',block:'start'});
   try{
-   const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
-   u.search=new URLSearchParams({q:entityClause(query)+' site:archive.org/details',format:'json',categories:'music',safesearch:'1'});
-   const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
-   const rows=(j.results||[]).filter(x=>archiveId(x)).slice(0,14);
+   // Query Internet Archive directly first. Artist collections such as GratefulDead
+   // are audio/live-music collections, so a web-search-only path can miss thousands
+   // of usable recordings. Prefer the dedicated collection when IA exposes one,
+   // otherwise search creator/title/subject inside the Live Music Archive.
+   const exact=normalizedEntity(query).replace(/[()"\\]/g,' ').replace(/\\s+/g,' ').trim();
+   const lower=exact.toLowerCase();
+   const collection=lower==='grateful dead'?'GratefulDead':'etree';
+   const ia=new URL('https://archive.org/advancedsearch.php');
+   const iaQuery=collection==='GratefulDead'
+    ?'collection:GratefulDead'
+    :'collection:etree AND (creator:("'+exact+'") OR title:("'+exact+'") OR subject:("'+exact+'"))';
+   ia.search=new URLSearchParams({q:iaQuery,fl:'identifier,title,description,creator,collection',rows:'50',page:'1',output:'json',sort:'downloads desc'});
+   const direct=await fetch(ia,{cache:'no-store'}).then(r=>r.ok?r.json():({response:{docs:[]}}));
+   const docs=(direct.response&&direct.response.docs)||[];
+   const rows=docs.map(d=>({title:d.title||d.identifier,description:Array.isArray(d.description)?d.description[0]:d.description||'',url:'https://archive.org/details/'+d.identifier,thumbnail:'https://archive.org/services/img/'+d.identifier}));
+   // Resolve the actual public audio file from each item. This naturally respects
+   // Archive permissions: downloadable audience files work, stream-only items work
+   // only when IA exposes a public playable derivative, and unavailable files are skipped.
    const playable=await Promise.all(rows.map(iaAudioPlayable));
    const archiveGood=playable.filter(x=>x.audio_url);
    const wu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
