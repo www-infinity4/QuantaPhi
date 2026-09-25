@@ -46,16 +46,31 @@ export default {
     if (!senderWallet) return json({ error: "quant_wallet_create_failed" }, 500);
     const wallet = senderWallet.wallet_id;
 
-    if (url.pathname === "/v1/quants/mint" && request.method === "POST") {
+    if (url.pathname === "/v1/quants/search" && request.method === "POST") {
       const body = await request.json().catch(() => ({}));
-      const sourceKey = String(body.source_key || "").trim().slice(0, 200);
-      const queryText = String(body.query_text || "").trim().slice(0, 500);
-      if (!sourceKey || !queryText) return json({ error: "invalid_mint" }, 400);
+      const queryText = String(body.query || "").trim().replace(/\s+/g, " ").slice(0, 500);
+      const searchId = String(body.search_id || "").trim();
+      if (!queryText || !/^[A-Za-z0-9_-]{20,100}$/.test(searchId))
+        return json({ error: "invalid_initial_search" }, 400);
 
+      const sourceKey = "initial-search:" + wallet + ":" + searchId;
       const prior = await env.DB.prepare(
         "SELECT mint_id,provenance_hash,source_key,query_text,amount,created_at FROM quant_mints WHERE source_key=?"
       ).bind(sourceKey).first();
       if (prior) return json({ ok: true, replayed: true, mint: prior });
+
+      const searchURL = new URL("https://orange-brook-a2ac.marvaseater.workers.dev/search");
+      searchURL.search = new URLSearchParams({ q: queryText, format: "json", categories: "general", safesearch: "1" });
+      let searchResponse;
+      try {
+        searchResponse = await fetch(searchURL.toString(), { headers: { accept: "application/json" } });
+      } catch {
+        return json({ error: "search_unavailable" }, 502);
+      }
+      if (!searchResponse.ok) return json({ error: "search_failed" }, 502);
+      const searchData = await searchResponse.json().catch(() => null);
+      if (!searchData || !Array.isArray(searchData.results))
+        return json({ error: "search_invalid_response" }, 502);
 
       const material = wallet + "\n" + sourceKey + "\n" + queryText;
       const mintDigest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(material));
@@ -69,18 +84,18 @@ export default {
             "INSERT INTO quant_mints(mint_id,wallet_id,provenance_hash,source_key,query_text,amount) VALUES(?,?,?,?,?,1)"
           ).bind(mintId, wallet, provenanceHash, sourceKey, queryText),
           env.DB.prepare(
-            "INSERT INTO quant_ledger_entries(entry_id,reference_id,entry_type,wallet_id,delta) VALUES(?,?,\'mint\',?,1)"
+            "INSERT INTO quant_ledger_entries(entry_id,reference_id,entry_type,wallet_id,delta) VALUES(?,?,'mint',?,1)"
           ).bind(entryId, mintId, wallet)
         ]);
       } catch {
         const existing = await env.DB.prepare(
           "SELECT mint_id,provenance_hash,source_key,query_text,amount,created_at FROM quant_mints WHERE source_key=?"
         ).bind(sourceKey).first();
-        if (existing) return json({ ok: true, replayed: true, mint: existing });
+        if (existing) return json({ ok: true, replayed: true, mint: existing, search: searchData });
         return json({ error: "mint_failed" }, 409);
       }
 
-      return json({ ok: true, replayed: false, mint_id: mintId, provenance_hash: provenanceHash, source_key: sourceKey, amount: 1 }, 201);
+      return json({ ok: true, replayed: false, mint_id: mintId, provenance_hash: provenanceHash, source_key: sourceKey, amount: 1, search: searchData }, 201);
     }
 
     if (url.pathname === "/v1/quants/state" && request.method === "GET") {
