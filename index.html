@@ -120,7 +120,7 @@ async function search(){
    const bridge=window.StarQuestCloudLedger;
    if(!window.__qRefining&&!searchId){searchId=crypto.randomUUID().replace(/-/g,'');window.__qInitialSearchId=searchId}
    if(searchId&&!window.__qRefining){
-     let localQuant=0;try{localQuant=Math.max(0,parseInt(localStorage.getItem('quantaPhiTokens')||'0',10)||0);localQuant+=1;localStorage.setItem('quantaPhiTokens',String(localQuant));document.getElementById('qtoken').textContent='▦ Quants: '+localQuant}catch(_){}
+     try{window.QuantaPhiWallet?.addToken()}catch(_){}
      if(bridge&&bridge.authenticatedFetch){
        try{
          sr=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{query:nq,search_id:searchId}});
@@ -190,21 +190,22 @@ async function search(){
 $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Enter')search()});
 </script><script>(function(){const b=document.getElementById('qmenuBtn'),m=document.getElementById('qmenu');if(!b||!m)return;b.addEventListener('click',function(){m.hidden=!m.hidden});m.addEventListener('click',function(){m.hidden=true})})();</script><script>
 (function(){
- const S='quantaPhiStarCoins';
+ const T='quantaPhiTokens',S='quantaPhiStarCoins';
+ // WALLET CONTRACT: persistent QuantaPhi state. Never reset, rename, clear, or overwrite from feature code.
  function cookieGet(k){try{const m=document.cookie.match(new RegExp('(?:^|; )'+k+'=([^;]*)'));return m?decodeURIComponent(m[1]):''}catch(_){return ''}}
  function cookiePut(k,v){try{document.cookie=k+'='+encodeURIComponent(String(v))+'; Max-Age=315360000; Path=/; SameSite=Lax'}catch(_){}}
- function num(k){try{const raw=localStorage.getItem(k)||cookieGet(k);const n=Number(raw);return Number.isFinite(n)?n:0}catch(_){return 0}}
- function put(k,v){try{localStorage.setItem(k,String(v))}catch(_){}cookiePut(k,v)}
- let starBalance=num(S);
+ function num(k){try{const raw=localStorage.getItem(k),ls=raw===null?NaN:Number(raw),ck=Number(cookieGet(k));if(Number.isFinite(ls)&&Number.isFinite(ck))return Math.max(ls,ck);if(Number.isFinite(ls))return ls;if(Number.isFinite(ck))return ck;return 0}catch(_){return Number(cookieGet(k))||0}}
+ function put(k,v){let ok=false;try{localStorage.setItem(k,String(v));ok=localStorage.getItem(k)===String(v)}catch(_){}cookiePut(k,v);return ok}
+ let tokenBalance=num(T),starBalance=num(S);
  function pulse(el){if(!el)return;el.classList.remove('qwalletPulse');void el.offsetWidth;el.classList.add('qwalletPulse')}
- function renderStar(){const s=document.getElementById('qstar');if(s)s.textContent='★ '+starBalance.toFixed(1)}
+ function render(which){const t=document.getElementById('qtoken'),s=document.getElementById('qstar');if(t)t.textContent='▦ Quants: '+tokenBalance;if(s)s.textContent='★ '+starBalance.toFixed(1);if(which==='token')pulse(t);if(which==='star')pulse(s)}
  window.QuantaPhiWallet={
-  addShare:function(){starBalance=Math.round((starBalance+0.1)*10)/10;put(S,starBalance);renderStar();pulse(document.getElementById('qstar'));return starBalance},
-  render:renderStar
+  addToken:function(){tokenBalance=Math.max(tokenBalance,num(T))+1;put(T,tokenBalance);window.__qTokenSession=(window.__qTokenSession||0)+1;render('token');return tokenBalance},
+  addShare:function(){starBalance=Math.round((starBalance+0.1)*10)/10;put(S,starBalance);render('star');return starBalance},
+  render:render
  };
- renderStar();
-})();
-</script><script>(function(){const wrap=document.getElementById('qrefineWrap'),r=document.getElementById('qrefine'),b=document.getElementById('qrefineBtn'),q=document.getElementById('q');if(!wrap||!r||!b||!q)return;function reveal(){if(q.value.trim())wrap.hidden=false}document.getElementById('go').addEventListener('click',reveal);q.addEventListener('keydown',function(e){if(e.key==='Enter')reveal()});function refine(){const extra=r.value.trim(),base=q.value.trim();if(!extra||!base)return;q.value=(base+' '+extra).trim();r.value='';window.__qRefining=true;Promise.resolve(search()).finally(()=>{window.__qRefining=false})}b.addEventListener('click',refine);r.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();refine()}})})();</script><script>(function(){const b=document.getElementById('qshare'),s=document.getElementById('qstar'),q=document.getElementById('q');if(!b||!s)return;async function share(){const data={title:'Quantaφ',text:q&&q.value.trim()?('Quantaφ: '+q.value.trim()):'Quantaφ',url:location.href};let completed=false;try{if(navigator.share){await navigator.share(data);completed=true}else{await navigator.clipboard.writeText(location.href);completed=true}}catch(_){return}if(completed){if(window.QuantaPhiWallet)window.QuantaPhiWallet.addShare();b.textContent='Shared +0.1 ★';setTimeout(()=>b.textContent='Share +0.1 ★',1400)}}b.addEventListener('click',share)})();</script><script>(function(){
+ render();
+})();</script><script>(function(){const wrap=document.getElementById('qrefineWrap'),r=document.getElementById('qrefine'),b=document.getElementById('qrefineBtn'),q=document.getElementById('q');if(!wrap||!r||!b||!q)return;function reveal(){if(q.value.trim())wrap.hidden=false}document.getElementById('go').addEventListener('click',reveal);q.addEventListener('keydown',function(e){if(e.key==='Enter')reveal()});function refine(){const extra=r.value.trim(),base=q.value.trim();if(!extra||!base)return;q.value=(base+' '+extra).trim();r.value='';window.__qRefining=true;Promise.resolve(search()).finally(()=>{window.__qRefining=false})}b.addEventListener('click',refine);r.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();refine()}})})();</script><script>(function(){const b=document.getElementById('qshare'),s=document.getElementById('qstar'),q=document.getElementById('q');if(!b||!s)return;async function share(){const data={title:'Quantaφ',text:q&&q.value.trim()?('Quantaφ: '+q.value.trim()):'Quantaφ',url:location.href};let completed=false;try{if(navigator.share){await navigator.share(data);completed=true}else{await navigator.clipboard.writeText(location.href);completed=true}}catch(_){return}if(completed){if(window.QuantaPhiWallet)window.QuantaPhiWallet.addShare();b.textContent='Shared +0.1 ★';setTimeout(()=>b.textContent='Share +0.1 ★',1400)}}b.addEventListener('click',share)})();</script><script>(function(){
  document.addEventListener('click',async function(e){
   const b=e.target.closest('.cardShare');if(!b)return;
   const card=b.closest('.mcard'),q=document.getElementById('q')?.value.trim()||'QuantaPhi';
