@@ -118,27 +118,28 @@ async function search(){
    let sr,sj;
    let searchId=window.__qInitialSearchId;
    const bridge=window.StarQuestCloudLedger;
+   const fetchWithTimeout=async(url,opt={},ms=6500)=>{const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),ms);try{return await fetch(url,{...opt,signal:ctl.signal})}finally{clearTimeout(timer)}};
    if(!window.__qRefining&&!searchId){searchId=crypto.randomUUID().replace(/-/g,'');window.__qInitialSearchId=searchId}
    if(searchId&&!window.__qRefining){
      try{window.QuantaPhiWallet?.addToken()}catch(_){}
      if(bridge&&bridge.authenticatedFetch){
        try{
-         sr=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{query:nq,search_id:searchId}});
+         const mintPromise=bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{query:nq,search_id:searchId}});sr=await Promise.race([mintPromise,new Promise((_,reject)=>setTimeout(()=>reject(new Error('Quant cloud sync timeout')),6500))]);
          const payload=await sr.json().catch(()=>({}));
          if(!sr.ok)throw new Error(payload.message||payload.error||('Quant mint HTTP '+sr.status));
          sj=payload.search||{results:[]};
          window.__qInitialSearchId='';window.__qLastMintedSearch={query:q,search_id:searchId,at:new Date().toISOString()};
          try{const state=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/state');const stateJson=state.ok?await state.json():null;if(stateJson&&Number.isFinite(Number(stateJson.balance))){const serverBalance=Number(stateJson.balance),deviceBalance=parseInt(localStorage.getItem('quantaPhiTokens')||'0',10)||0;document.getElementById('qtoken').textContent='▦ Quants: '+Math.max(serverBalance,deviceBalance);document.getElementById('status').innerHTML='<small>Initial search recorded · +1 Quant · Balance '+Number(stateJson.balance)+'</small>'}}catch(_){}
        }catch(mintErr){
-         sr=await fetch(searchUrl,{cache:'no-store'});sj=sr.ok?await sr.json():{results:[]};
+         sr=await fetchWithTimeout(searchUrl,{cache:'no-store'},6500);sj=sr.ok?await sr.json():{results:[]};
          document.getElementById('status').innerHTML='<small>Search completed, but Quant was not recorded: '+String(mintErr.message||mintErr).replace(/[<>&]/g,'')+'</small>';
        }
      }else{
-       sr=await fetch(searchUrl,{cache:'no-store'});sj=sr.ok?await sr.json():{results:[]};
+       sr=await fetchWithTimeout(searchUrl,{cache:'no-store'},6500);sj=sr.ok?await sr.json():{results:[]};
        document.getElementById('status').innerHTML='<small>Search completed. Sign in to record the +1 Quant for an initial search.</small>';
      }
    }else{
-     sr=await fetch(searchUrl,{cache:'no-store'});
+     sr=await fetchWithTimeout(searchUrl,{cache:'no-store'},6500);
      sj=sr.ok?await sr.json():{results:[]};
    }
    const particles=classify(q); const required=particles.filter(x=>!STOP.has(x.w.toLowerCase())).map(x=>x.w.toLowerCase()); let assimilation=window.__qAssimilation||null;if(assimilation&&assimilation.primary!==q)assimilation=null;let inputExtension=window.__qInputExtension||null;if(inputExtension&&inputExtension.primary!==q)inputExtension=null; const weightedConcept=particles.map((x,i)=>({term:x.w,color:x.color,region:x.region,role:x.role,weight:i===0?100:i===1?90:STOP.has(x.w.toLowerCase())?15:55})); const searchAim={primary:q,entity:exactEntity,required_terms:required,weighted_concept:weightedConcept}; const technicalIntent=/\b(schematic|circuit|diagram|radio|receiver|transmitter|solid state|transistor|oscillator|amplifier|antenna|wiring)\b/i.test(q);
@@ -165,7 +166,7 @@ async function search(){
      const searchUrl=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
      const exactEntity=entityClause(q);
      searchUrl.search=new URLSearchParams({q:exactEntity,format:'json',categories:'general',safesearch:'1'});
-     const sj=await fetch(searchUrl,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+     const sj=await fetchWithTimeout(searchUrl,{cache:'no-store'},6500).then(r=>r.ok?r.json():({results:[]}));
      const required=classify(q).filter(x=>!STOP.has(x.w.toLowerCase())).map(x=>x.w.toLowerCase());
      const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
      const ranked=(sj.results||[]).map((x,i)=>{const body=((x.title||'')+' '+(x.content||x.description||'')).replace(/\\s+/g,' ').trim();const low=body.toLowerCase();const hits=required.filter(w=>low.includes(w)).length;const entityHits=entityWords.filter(w=>low.includes(w)).length;return {body,hits,entityHits,score:(required.length?hits/required.length:0)*100+hits*35+entityHits*100+Math.max(0,20-i)}}).filter(x=>x.body&&x.hits&&(entityWords.length<2||x.entityHits===entityWords.length)).sort((a,b)=>b.score-a.score);
@@ -176,7 +177,7 @@ async function search(){
    try{
     const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
     u.search=new URLSearchParams({q:q,format:'json',categories:'general',safesearch:'1'});
-    const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+    const j=await fetchWithTimeout(u,{cache:'no-store'},6500).then(r=>r.ok?r.json():({results:[]}));
     const rows=(j.results||[]).filter(x=>x.title||x.content||x.description);
     if(rows.length){
      const text=rows.slice(0,12).map(x=>String(x.content||x.description||x.title||'').trim()).filter(Boolean).join(' ').replace(/\s+/g,' ').split(/\s+/).slice(0,500).join(' ');
@@ -238,7 +239,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   try{
    const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
    u.search=new URLSearchParams({q:query,format:'json',categories:'videos',safesearch:'1'});
-   const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+   const j=await fetchWithTimeout(u,{cache:'no-store'},6500).then(r=>r.ok?r.json():({results:[]}));
    const videos=(j.results||[]).slice(0,20);
    grid.innerHTML=videos.length?videos.map(x=>mediaCard(x,'Video')).join(''):'<p class="err">No video results found.</p>';
   }catch(_){grid.innerHTML='<p class="err">Video search could not load.</p>'}
@@ -253,7 +254,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   try{
    const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
    u.search=new URLSearchParams({q:scoped,format:'json',categories:category,safesearch:'1'});
-   const j=await fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():({results:[]}));
+   const j=await fetchWithTimeout(u,{cache:'no-store'},6500).then(r=>r.ok?r.json():({results:[]}));
    const rows=(j.results||[]).slice(0,20);
    grid.innerHTML=rows.length?rows.map(x=>mediaCard(x,kind)).join(''):'<p class="err">No '+kind.toLowerCase()+' results found.</p>';
   }catch(_){grid.innerHTML='<p class="err">'+kind+' search could not load.</p>'}
