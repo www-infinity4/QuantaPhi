@@ -53,7 +53,9 @@ CREATE TRIGGER IF NOT EXISTS quant_no_overdraft
 BEFORE INSERT ON quant_ledger_entries WHEN NEW.delta<0
 BEGIN
   SELECT RAISE(ABORT,'insufficient_quant_balance')
-  WHERE (SELECT COALESCE(SUM(delta),0) FROM quant_ledger_entries WHERE wallet_id=NEW.wallet_id)+NEW.delta<0;
+  WHERE (SELECT COALESCE(SUM(delta),0) FROM quant_ledger_entries WHERE wallet_id=NEW.wallet_id)
+    + (SELECT COALESCE(legacy_amount,0) FROM quant_legacy_migrations WHERE wallet_id=NEW.wallet_id)
+    + NEW.delta < 0;
 END;
 
 CREATE TRIGGER IF NOT EXISTS quant_validate_mint_credit
