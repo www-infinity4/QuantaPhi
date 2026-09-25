@@ -25,10 +25,19 @@ export default {
       "SELECT a.id AS user_id FROM accounts a JOIN account_devices d ON d.account_id=a.id WHERE d.token_hash=?"
     ).bind(tokenHash).first();
     if (!identity) return json({ error: "invalid_device_token" }, 401);
-    const senderWallet = await env.DB.prepare(
+    let senderWallet = await env.DB.prepare(
       "SELECT wallet_id FROM quant_wallets WHERE user_id=?"
     ).bind(identity.user_id).first();
-    if (!senderWallet) return json({ error: "quant_wallet_not_found" }, 404);
+    if (!senderWallet) {
+      const newWalletId = "qw_" + crypto.randomUUID();
+      await env.DB.prepare(
+        "INSERT OR IGNORE INTO quant_wallets(wallet_id,user_id) VALUES(?,?)"
+      ).bind(newWalletId, identity.user_id).run();
+      senderWallet = await env.DB.prepare(
+        "SELECT wallet_id FROM quant_wallets WHERE user_id=?"
+      ).bind(identity.user_id).first();
+    }
+    if (!senderWallet) return json({ error: "quant_wallet_create_failed" }, 500);
     const wallet = senderWallet.wallet_id;
 
     if (url.pathname === "/v1/quants/state" && request.method === "GET") {
