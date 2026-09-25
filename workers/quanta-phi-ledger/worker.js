@@ -99,6 +99,19 @@ export default {
       return json({ ok: true, replayed: false, mint_id: mintId, provenance_hash: provenanceHash, source_key: sourceKey, amount: 1, search: searchData }, 201);
     }
 
+    if (url.pathname === "/v1/quants/receive" && request.method === "GET") {
+      const found = await env.DB.prepare(
+        "SELECT wallet_id,status,created_at FROM quant_wallets WHERE wallet_id=? AND status='active'"
+      ).bind(wallet).first();
+      if (!found) return json({ error: "wallet_not_found" }, 404);
+      return json({
+        ok: true,
+        wallet_id: found.wallet_id,
+        status: found.status,
+        created_at: found.created_at
+      });
+    }
+
     if (url.pathname === "/v1/quants/state" && request.method === "GET") {
       const found = await env.DB.prepare(
         "SELECT wallet_id FROM quant_wallets WHERE wallet_id=? AND status='active'"
