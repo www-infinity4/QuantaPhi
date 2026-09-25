@@ -32,7 +32,7 @@ export default {
     ).bind(tokenHash).first();
     if (!identity) return json({ error: "invalid_device_token" }, 401);
     let senderWallet = await env.DB.prepare(
-      "SELECT wallet_id FROM quant_wallets WHERE user_id=?"
+      "SELECT wallet_id,status FROM quant_wallets WHERE user_id=?"
     ).bind(identity.user_id).first();
     if (!senderWallet) {
       const newWalletId = "qw_" + crypto.randomUUID();
@@ -40,10 +40,11 @@ export default {
         "INSERT OR IGNORE INTO quant_wallets(wallet_id,user_id) VALUES(?,?)"
       ).bind(newWalletId, identity.user_id).run();
       senderWallet = await env.DB.prepare(
-        "SELECT wallet_id FROM quant_wallets WHERE user_id=?"
+        "SELECT wallet_id,status FROM quant_wallets WHERE user_id=?"
       ).bind(identity.user_id).first();
     }
     if (!senderWallet) return json({ error: "quant_wallet_create_failed" }, 500);
+    if (senderWallet.status !== "active") return json({ error: "wallet_disabled" }, 403);
     const wallet = senderWallet.wallet_id;
 
     if (url.pathname === "/v1/quants/search" && request.method === "POST") {
@@ -100,7 +101,7 @@ export default {
 
     if (url.pathname === "/v1/quants/state" && request.method === "GET") {
       const found = await env.DB.prepare(
-        "SELECT wallet_id FROM quant_wallets WHERE wallet_id=?"
+        "SELECT wallet_id FROM quant_wallets WHERE wallet_id=? AND status='active'"
       ).bind(wallet).first();
       if (!found) return json({ error: "wallet_not_found" }, 404);
       const row = await env.DB.prepare(
@@ -120,10 +121,10 @@ export default {
       if (recipient === wallet) return json({ error: "same_wallet" }, 400);
 
       const sender = await env.DB.prepare(
-        "SELECT wallet_id FROM quant_wallets WHERE wallet_id=?"
+        "SELECT wallet_id FROM quant_wallets WHERE wallet_id=? AND status='active'"
       ).bind(wallet).first();
       const receiver = await env.DB.prepare(
-        "SELECT wallet_id FROM quant_wallets WHERE wallet_id=?"
+        "SELECT wallet_id FROM quant_wallets WHERE wallet_id=? AND status='active'"
       ).bind(recipient).first();
       if (!sender || !receiver) return json({ error: "wallet_not_found" }, 404);
 
