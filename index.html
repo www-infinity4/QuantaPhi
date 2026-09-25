@@ -309,7 +309,7 @@ async function search(){
          if(!sr.ok)throw new Error(payload.message||payload.error||('Quant mint HTTP '+sr.status));
          sj=payload.search||{results:[]};
          window.__qInitialSearchId='';window.__qLastMintedSearch={query:q,search_id:searchId,at:new Date().toISOString()};
-         try{const state=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/state');const stateJson=state.ok?await state.json():null;if(stateJson&&Number.isFinite(Number(stateJson.balance))){const serverBalance=Number(stateJson.balance),deviceBalance=parseInt(localStorage.getItem('quantaPhiTokens')||'0',10)||0;document.getElementById('qtoken').textContent='▦ Quants: '+Math.max(serverBalance,deviceBalance);document.getElementById('status').innerHTML='<small>Initial search recorded · +1 Quant · Balance '+Number(stateJson.balance)+'</small>'}}catch(_){}
+         try{const state=await bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/state');const stateJson=state.ok?await state.json():null;if(stateJson&&Number.isFinite(Number(stateJson.balance))){const serverBalance=Number(stateJson.balance),deviceBalance=parseInt(localStorage.getItem('quantaPhiTokens')||'0',10)||0;document.getElementById('qtoken').textContent='▦ Quants: '+Math.max(serverBalance,deviceBalance);try{window.QuantaUnifiedWalletSync?.('QUANT',serverBalance,'QUANTA_CLOUD',stateJson.wallet_id||'')}catch(_){}document.getElementById('status').innerHTML='<small>Initial search recorded · +1 Quant · Balance '+Number(stateJson.balance)+'</small>'}}catch(_){}
        }catch(mintErr){
          sr=await fetchWithTimeout(searchUrl,{cache:'no-store'},6500);sj=sr.ok?await sr.json():{results:[]};
          document.getElementById('status').innerHTML='<small>Search completed, but Quant was not recorded: '+String(mintErr.message||mintErr).replace(/[<>&]/g,'')+'</small>';
@@ -393,7 +393,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  function render(which){const t=document.getElementById('qtoken'),s=document.getElementById('qstar');if(t)t.textContent='▦ Quants: '+tokenBalance;if(s)s.textContent='★ '+starBalance.toFixed(1);if(which==='token')pulse(t);if(which==='star')pulse(s)}
  window.QuantaPhiWallet={
   addToken:function(){tokenBalance=Math.max(tokenBalance,num(T))+1;put(T,tokenBalance);window.__qTokenSession=(window.__qTokenSession||0)+1;render('token');return tokenBalance},
-  addShare:function(){starBalance=Math.round((starBalance+0.1)*10)/10;put(S,starBalance);render('star');return starBalance},
+  addShare:function(){starBalance=Math.round((starBalance+0.1)*10)/10;put(S,starBalance);render('star');try{window.QuantaUnifiedWalletSync?.('STAR_COIN',starBalance,'QUANTAPHI_LOCAL','device')}catch(_){}return starBalance},
   render:render
  };
  render();
@@ -670,17 +670,27 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
   }catch(err){console.error('QuantaPhi collect failed',err);b.textContent='Collect';b.disabled=false}
  },true);
 })();
-</script><script>(function(){const qFromShare=new URLSearchParams(location.search).get('q');if(qFromShare){const input=document.getElementById('q');if(input){input.value=qFromShare;setTimeout(()=>document.getElementById('go')?.click(),0)}}})();</script><script src="/TV-Database/js/auth.js"></script><script>window.STARQUEST_LEDGER_CONFIG=window.STARQUEST_LEDGER_CONFIG||{endpoint:"https://starquest-ledger.marvaseater.workers.dev"};</script><script src="/TV-Database/js/starquest-cloud-ledger.js"></script><script id="quantWalletUi">(function(){
+</script><script>(function(){const qFromShare=new URLSearchParams(location.search).get('q');if(qFromShare){const input=document.getElementById('q');if(input){input.value=qFromShare;setTimeout(()=>document.getElementById('go')?.click(),0)}}})();</script><script src="https://www-infinity4.github.io/Mint-For-Infinity/unified-wallet.js?v=20260925-multiasset1"></script><script>
+window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId){
+ try{
+  const Wallet=window.InfinityUnifiedWallet?.UnifiedInfinityWallet;if(!Wallet)return null;
+  const w=new Wallet();let id=w.state.currentWalletId;if(!id)id=w.createWallet({displayName:'Unified Infinity Wallet'}).walletId;
+  if(typeof w.syncSourceBalance!=='function')return null;
+  return w.syncSourceBalance({walletId:id,assetCode:asset,amount:Number(amount)||0,sourceSystem,sourceWalletId:sourceWalletId||null,verification:sourceSystem==='QUANTA_CLOUD'?'CLOUD_LEDGER':'DEVICE_LOCAL'});
+ }catch(_){return null}
+};
+</script><script src="/TV-Database/js/auth.js"></script><script>window.STARQUEST_LEDGER_CONFIG=window.STARQUEST_LEDGER_CONFIG||{endpoint:"https://starquest-ledger.marvaseater.workers.dev"};</script><script src="/TV-Database/js/starquest-cloud-ledger.js"></script><script id="quantWalletUi">(function(){
  const API='https://quanta-phi-ledger.marvaseater.workers.dev',panel=document.getElementById('qwalletPanel'),open=document.getElementById('qtoken'),close=document.getElementById('qwalletClose'),receive=document.getElementById('qwalletReceive'),send=document.getElementById('qwalletSend'),msg=document.getElementById('qwalletMsg'),review=document.getElementById('qwalletReview');
  function show(w){receive.hidden=w!=='receive';send.hidden=w!=='send'}
  async function call(path,opt){const bridge=window.StarQuestCloudLedger;if(!bridge||!bridge.authenticatedFetch)throw new Error('Sign in to StarQuest to use the Quant wallet.');const r=await bridge.authenticatedFetch(API+path,opt),j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.message||j.error||'Quant wallet request failed');return j}
  async function recoverLegacyOnce(){try{let raw='';try{raw=localStorage.getItem('quantaPhiTokens')||localStorage.getItem('quantaPhiQuants')||localStorage.getItem('quantaPhiBalance')||''}catch(_){}if(!raw){try{const m=document.cookie.match(/(?:^|; )(?:quantaPhiTokens|quantaPhiQuants|quantaPhiBalance)=([^;]*)/);raw=m?decodeURIComponent(m[1]):''}catch(_){}}const amount=Number(raw);if(!Number.isSafeInteger(amount)||amount<1)return;const r=await call('/v1/quants/legacy-migrate',{method:'POST',body:{legacy_amount:amount}});if(r&&r.ok){try{localStorage.setItem('quantaPhiTokens',String(amount));localStorage.setItem('quantaPhiLegacyRecovered',JSON.stringify({amount,recovered_at:new Date().toISOString()}))}catch(_){}}}catch(e){msg.textContent='Legacy Quant recovery pending: '+e.message}}
- async function load(){msg.textContent='';try{const r=await call('/v1/quants/receive');await recoverLegacyOnce();const s=await call('/v1/quants/state');document.getElementById('qwalletId').textContent=r.wallet_id;open.textContent='▦ Quants: '+s.balance}catch(e){document.getElementById('qwalletId').textContent='Sign in to load wallet';msg.textContent=e.message}}
+ async function load(){msg.textContent='';try{const r=await call('/v1/quants/receive');await recoverLegacyOnce();const s=await call('/v1/quants/state');document.getElementById('qwalletId').textContent=r.wallet_id;open.textContent='▦ Quants: '+s.balance;try{window.QuantaUnifiedWalletSync?.('QUANT',Number(s.balance)||0,'QUANTA_CLOUD',r.wallet_id)}catch(_){}const sq=window.StarQuestAuth?.currentUser?.();if(sq){try{window.QuantaUnifiedWalletSync?.('STAR_COIN',Number(sq.tokens)||0,'STARQUEST_CLOUD',sq.key||'')}catch(_){}}}catch(e){document.getElementById('qwalletId').textContent='Sign in to load wallet';msg.textContent=e.message}}
  open?.addEventListener('click',()=>{panel.hidden=false;show('receive');load()});close?.addEventListener('click',()=>panel.hidden=true);
  document.getElementById('qwalletReceiveTab')?.addEventListener('click',()=>{show('receive');load()});document.getElementById('qwalletSendTab')?.addEventListener('click',()=>show('send'));
  document.getElementById('qwalletCopy')?.addEventListener('click',async()=>{const v=document.getElementById('qwalletId')?.textContent||'';if(v.startsWith('qw_')){await navigator.clipboard?.writeText(v);msg.textContent='Wallet ID copied.'}});
  review?.addEventListener('click',async()=>{const to=document.getElementById('qwalletRecipient').value.trim(),amount=Number(document.getElementById('qwalletAmount').value);if(!to.startsWith('qw_')||!Number.isSafeInteger(amount)||amount<1){msg.textContent='Enter a valid wallet ID and whole Quant amount.';return}if(review.dataset.confirm!=='1'){review.dataset.confirm='1';review.textContent='Confirm send';msg.textContent='Review: send '+amount+' Quant'+(amount===1?'':'s')+' to '+to+'. Tap Confirm send to finish.';return}review.disabled=true;try{const r=await call('/v1/quants/transfer',{method:'POST',body:{recipient_wallet_id:to,amount,idempotency_key:crypto.randomUUID()}});msg.textContent='Transfer complete: '+(r.transfer_id||r.transfer?.transfer_id||'recorded');review.dataset.confirm='';review.textContent='Review transfer';document.getElementById('qwalletAmount').value='';await load()}catch(e){msg.textContent=e.message}finally{review.disabled=false}});
+ window.addEventListener('load',()=>{recoverLegacyOnce().then(load).catch(()=>{});const localStar=Number(localStorage.getItem('quantaPhiStarCoins')||0);try{window.QuantaUnifiedWalletSync?.('STAR_COIN',Number.isFinite(localStar)?localStar:0,'QUANTAPHI_LOCAL','device')}catch(_){}},{once:true});
+ document.addEventListener('starquest:tokens-updated',e=>{const amount=Number(e.detail?.balance);const u=window.StarQuestAuth?.currentUser?.();if(Number.isFinite(amount)&&u){try{window.QuantaUnifiedWalletSync?.('STAR_COIN',amount,'STARQUEST_CLOUD',u.key||'')}catch(_){}}});
 })();
-window.addEventListener('load',()=>{recoverLegacyOnce().catch(()=>{})},{once:true});
-</script><!-- QuantaPhi publish stamp: history-assimilation-dense-data-v2 -->
+</script><!-- QuantaPhi publish stamp: unified-multiasset-wallet-v1 -->
 </body></html>
