@@ -144,8 +144,8 @@ function parseOverviewSections(raw){
    red:{overview:String(j.red?.overview||j.red||j.overview||'').trim()},
    yellow:arr(j.yellow).map(x=>typeof x==='string'?{label:'Data',value:x,source_indexes:[]}:{label:String(x.label||x.type||'Data').trim(),value:String(x.value||x.point||x.text||'').trim(),source_indexes:arr(x.source_indexes).map(Number).filter(Number.isFinite)}).filter(x=>x.value),
    blue:arr(j.blue).map(x=>typeof x==='string'?{region:'Input',contribution:x}:{region:String(x.region||x.input||x.label||'Input').trim(),contribution:String(x.contribution||x.why||x.text||'').trim()}).filter(x=>x.contribution),
-   orange:arr(j.orange).map(x=>typeof x==='string'?{aim:x,reason:''}:{aim:String(x.aim||x.decision||x.next||'').trim(),reason:String(x.reason||x.why||x.basis||'').trim()}).filter(x=>x.aim),
-   purple:arr(j.purple).map(x=>typeof x==='string'?{relationship:x,use:''}:{relationship:String(x.relationship||x.link||x.connection||'').trim(),use:String(x.use||x.meaning||x.why_it_matters||'').trim()}).filter(x=>x.relationship)
+   orange:arr(j.orange).map(x=>typeof x==='string'?{label:'Related data',value:x,source_indexes:[]}:{label:String(x.label||x.type||x.category||'Related data').trim(),value:String(x.value||x.point||x.entity||x.text||'').trim(),source_indexes:arr(x.source_indexes).map(Number).filter(Number.isFinite)}).filter(x=>x.value),
+   purple:arr(j.purple).map(x=>typeof x==='string'?{type:'conceptual',relationship:x,bridge:'',history_query:''}:{type:String(x.type||x.kind||'conceptual').trim(),relationship:String(x.relationship||x.link||x.connection||'').trim(),bridge:String(x.bridge||x.use||x.meaning||x.why_it_matters||'').trim(),history_query:String(x.history_query||x.history||'').trim()}).filter(x=>x.relationship)
   };
   if(!out.red.overview||!out.yellow.length||!out.blue.length||!out.orange.length||!out.purple.length)return null;
   return out
@@ -160,8 +160,8 @@ function buildStructuredEvidenceFallback(q,evidence){
  const blue=(domains.length?domains:['current evidence']).map(d=>({region:d,contribution:'Use this evidence region to deepen the current search while keeping '+q+' as the primary aim.'}));
  const orange=facts.slice(0,4).map(x=>({aim:'Follow '+x.label,reason:x.value}));
  let hist=[];try{hist=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]').map(x=>x.query).filter(x=>x&&x.toLowerCase()!==String(q||'').toLowerCase()).slice(0,4)}catch(_){}
- const purple=(hist.length?hist:[q]).map(h=>({relationship:h===q?'Current evidence relationships':q+' ↔ '+h,use:h===q?'Compare the strongest facts above and keep only relationships supported by the retrieved evidence.':'Use this prior search only where the evidence shows a real connection to the current aim.'}));
- return {intent:q,red:{overview:overview||('Source-backed evidence was retrieved for '+q+'.')},yellow:facts.length?facts:[{label:'Evidence',value:'No concrete evidence points were returned.',source_indexes:[]}],blue,orange:orange.length?orange:[{aim:'Strengthen evidence',reason:'The current retrieved evidence is too thin for a stronger decision.'}],purple}
+ const purple=(hist.length?hist:[q]).map(h=>({type:'conceptual',relationship:h===q?'Current evidence relationships':q+' ↔ '+h,bridge:h===q?'Compare the strongest facts above and keep only relationships supported by the retrieved evidence.':'History connection available; GPT retrieval is needed to decide whether the bridge is factual or conceptual.',history_query:h===q?'':h}));
+ return {intent:q,red:{overview:overview||('Source-backed evidence was retrieved for '+q+'.')},yellow:facts.length?facts:[{label:'Evidence',value:'No concrete evidence points were returned.',source_indexes:[]}],blue,orange:(facts.length?facts:[{label:'Related data',value:'No additional concrete data points were returned.',source_indexes:[]}]),purple}
 }
 function renderFivePartOverview(main,q,evidence){
  const esc=s=>String(s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
@@ -174,12 +174,12 @@ function renderFivePartOverview(main,q,evidence){
  const chips=hist.length?hist.map(x=>'<button class="qchip" type="button" data-assimilate="'+encodeURIComponent(x.query)+'">'+esc(x.query)+'</button>').join(''):'';
  const yellow='<ul>'+sections.yellow.map(x=>'<li><strong>'+esc(x.label)+':</strong> '+esc(x.value)+(x.source_indexes&&x.source_indexes.length?'<small> · sources '+x.source_indexes.map(n=>'#'+(n+1)).join(', ')+'</small>':'')+'</li>').join('')+'</ul>';
  const blue='<ul>'+sections.blue.map(x=>'<li><strong>'+esc(x.region)+':</strong> '+esc(x.contribution)+'</li>').join('')+'</ul>';
- const orange='<ul>'+sections.orange.map(x=>'<li><strong>'+esc(x.aim)+'</strong>'+(x.reason?' — '+esc(x.reason):'')+'</li>').join('')+'</ul>';
- const purple='<ul>'+sections.purple.map(x=>'<li><strong>'+esc(x.relationship)+'</strong>'+(x.use?' — '+esc(x.use):'')+'</li>').join('')+'</ul>';
+ const orange='<ul>'+sections.orange.map(x=>'<li><strong>'+esc(x.label)+':</strong> '+esc(x.value)+(x.source_indexes&&x.source_indexes.length?'<small> · sources '+x.source_indexes.map(n=>'#'+(n+1)).join(', ')+'</small>':'')+'</li>').join('')+'</ul>';
+ const purple='<ul>'+sections.purple.map(x=>'<li><strong>'+esc((x.type||'conceptual').toUpperCase())+(x.history_query?' · '+esc(x.history_query):'')+':</strong> '+esc(x.relationship)+(x.bridge?' — '+esc(x.bridge):'')+'</li>').join('')+'</ul>';
  return '<section class="qzone qzoneRed"><h3>AI Overview</h3>'+(sections.intent?'<div><strong>Aim:</strong> '+esc(sections.intent)+'</div>':'')+'<p>'+esc(sections.red.overview)+'</p></section>'+
  '<section class="qzone qzoneYellow"><h3>Data extraction</h3>'+yellow+'</section>'+
  '<section class="qzone qzoneBlue"><h3>Input regions</h3>'+blue+'<div class="qzoneInput"><input id="qZoneInput" placeholder="Add a skill, tool, source, method, measurement, or related input…"><button id="qZoneBuild" type="button">Add input</button></div></section>'+
- '<section class="qzone qzoneOrange"><h3>Decisions · where to go from here</h3>'+orange+'</section>'+
+ '<section class="qzone qzoneOrange"><h3>Related data · next branches</h3>'+orange+'</section>'+
  '<section class="qzone qzonePurple"><h3>Assimilation</h3>'+purple+(chips?'<div class="qchips">'+chips+'</div>':'')+'</section>';
 }
 function activateFivePartOverview(){const b=document.getElementById('qZoneBuild'),i=document.getElementById('qZoneInput');b?.addEventListener('click',()=>{const v=i.value.trim(),primary=document.getElementById('q').value.trim();if(v&&primary){window.__qInputExtension={primary,supporting:v};try{sessionStorage.setItem('quantaPhiInputExtensionV1',JSON.stringify({primary,supporting:v,created_at:new Date().toISOString()}))}catch(_){}document.getElementById('go').click()}});document.querySelectorAll('[data-assimilate]').forEach(x=>x.addEventListener('click',()=>{const prior=decodeURIComponent(x.dataset.assimilate),cur=document.getElementById('q').value.trim();try{sessionStorage.setItem('quantaPhiAssimilationV1',JSON.stringify({primary:cur,supporting:prior,created_at:new Date().toISOString()}))}catch(_){}window.__qAssimilation={primary:cur,supporting:prior};document.getElementById('go').click()}))}
@@ -224,7 +224,19 @@ async function search(){
    const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
    const weighted=(sj.results||[]).map((x,i)=>{const text=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>text.includes(w)).length;const entityHits=entityWords.filter(w=>text.includes(w)).length;const coverage=required.length?hits/required.length:0;return {...x,_entityHits:entityHits,_weight:(coverage*100)+(hits*35)+(entityHits*100)+Math.max(0,20-i)};}).filter(x=>{if(technicalIntent){const txt=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>txt.includes(w)).length;return hits>=Math.min(3,required.length)}if(entityWords.length<2)return true;const title=String(x.title||'').toLowerCase(),body=String(x.content||x.description||'').toLowerCase();const phrase=entityWords.join(' ');return title.includes(phrase)||body.includes(phrase)||x._entityHits===entityWords.length}).sort((a,b)=>b._weight-a._weight);
    evidence=weighted.slice(0,15).map((x,i)=>({index:i,weight:Math.round(x._weight),title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,1200)})).filter(x=>x.title||x.evidence);
-   let priorSearches=[];try{priorSearches=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]').map(x=>x.query).filter(x=>x&&x.toLowerCase()!==q.toLowerCase()).slice(0,6)}catch(_){}
+   let priorSearches=[];try{priorSearches=[...new Set(JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]').map(x=>x.query).filter(x=>x&&x.toLowerCase()!==q.toLowerCase()))].slice(0,5)}catch(_){}
+   let historyEvidence=[];
+   if(priorSearches.length){
+    const historyJobs=priorSearches.slice(0,4).map(async historyQuery=>{
+     try{
+      const hu=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+      hu.search=new URLSearchParams({q:historyQuery,format:'json',categories:'general',safesearch:'1'});
+      const hj=await fetchWithTimeout(hu,{cache:'no-store'},4500).then(r=>r.ok?r.json():({results:[]}));
+      return {query:historyQuery,evidence:(hj.results||[]).slice(0,5).map((x,i)=>({index:i,title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').slice(0,700)})).filter(x=>x.title||x.evidence)}
+     }catch(_){return {query:historyQuery,evidence:[]}}
+    });
+    historyEvidence=await Promise.all(historyJobs);
+   }
    const instruction=[
  'You are the live GPT reasoning layer for QuantaPhi. Do the semantic work yourself; do not merely reformat snippets.',
  'User query: '+q,
@@ -232,17 +244,18 @@ async function search(){
  'SEARCH AIM: '+JSON.stringify(searchAim),
  'WEIGHTED CONCEPT: '+JSON.stringify(weightedConcept),
  'Previous searches available for assimilation: '+JSON.stringify(priorSearches),
+ 'Retrieved evidence for previous searches: '+JSON.stringify(historyEvidence),
  inputExtension?('Added Blue input: '+inputExtension.supporting):'',
  assimilation?('Selected Purple assimilation search: '+assimilation.supporting):'',
  'Read and interpret the supplied evidence. Keep the canonical subject and weighted user intent primary. Reject evidence about a different meaning or entity.',
  'RED is the actual AI Overview. Write it like ChatGPT would answer the user directly: coherent, natural, explanatory prose. It should synthesize the evidence and explain what matters about the search. Do not describe your process. Roughly 120-220 words is appropriate, but clarity matters more than length.',
- 'YELLOW is DATA EXTRACTION FROM THE AVAILABLE EVIDENCE ONLY. Every item must be a concrete piece of information you actually found in Evidence: a date, measurement, identifier, specification, named relationship, documented event, property, value factor, quantitative result, source-backed observation, or similarly concrete datum. Never invent generic categories or say what could be researched. If a fact is not present in Evidence, do not put it in Yellow. Return 4-10 items when evidence supports them. Give each item a short label, the actual value/fact, and the zero-based source_indexes that support it.',
+ 'YELLOW is a DENSE DATA EXTRACTION BANK FROM THE CURRENT Evidence only. Use short bullet-ready facts, not descriptions. Prefer names, dates, numbers, places, works, instruments, components, models, identifiers, measurements, properties, releases, people, organizations, specifications, values, and other concrete points actually present in the evidence. Maximize useful coverage: return 8-30 terse items when the evidence supports them. A bullet can be as short as “Guitar — Jerry Garcia” or “Album — Workingman’s Dead.” Do not explain what the subject is here. Every item must include the supporting current-evidence source_indexes.',
  'BLUE is INPUT REGIONS. GPT should infer which additional inputs would materially improve THIS exact search/build. Each item should name one region such as a source class, dataset, method, tool, measurement, component, skill, comparison set, or research angle, then explain exactly what it would contribute. These are useful extensions, not extracted facts and not restatements of Yellow.',
- 'ORANGE is DECISIONS / AIMS. Use the current evidence plus the weighted intent to decide where the work should go next. Each item must contain a specific aim/decision and a short reason grounded in what is known now. Avoid generic instructions like research more.',
- 'PURPLE is ASSIMILATION. Build meaningful relationships. Prefer genuinely related prior searches when available; otherwise connect important concepts inside the current evidence. Each item must state the relationship and why that relationship matters to the current aim. Never force unrelated history.',
+ 'ORANGE is RELATED DATA / NEXT BRANCHES, not an essay and not a description of the subject. Build another dense list of short concrete data points from the current Evidence that expand outward from the main subject: related people, works, dates, objects, instruments, places, companies, collaborators, variants, components, events, recordings, materials, or other subject-appropriate entities. Return 8-30 terse items when evidence supports them. Each item needs a short label, the actual value/entity, and supporting current-evidence source_indexes.',
+ 'PURPLE is HISTORY ASSIMILATION. Use the retrieved evidence for previous searches, not just their query names. Try to discover surprising bridges between the current search and several prior searches. A bridge may be FACTUAL only when the supplied current/history evidence actually supports a real connection. If no factual connection is supported, you may create a CONCEPTUAL analogy based on real properties of both subjects, but label its type as conceptual and never invent biographical events, meetings, jobs, collaborations, or other facts. Example of acceptable conceptual behavior: compare improvisation in a band search with branching/variation in a materials or systems search if the evidence supports those characteristics. Each item should identify the history_query, the type factual|conceptual, the relationship, and a short bridge explaining why it is interesting/useful. Aim for 3-8 different history bridges when possible.',
  'Each region must make sense on its own and must perform its own job. Do not write five versions of the same paragraph.',
  'Return JSON only, no markdown and no extra text.',
- 'Schema: {"intent":"one concise sentence stating the user intent","red":{"overview":"natural GPT overview"},"yellow":[{"label":"specific label","value":"actual evidence-backed fact","source_indexes":[0]}],"blue":[{"region":"specific input region","contribution":"what it adds to this build"}],"orange":[{"aim":"specific next aim or decision","reason":"why it follows from the evidence"}],"purple":[{"relationship":"specific relationship","use":"why it matters to the current aim"}]}',
+ 'Schema: {"intent":"one concise sentence stating the user intent","red":{"overview":"natural GPT overview"},"yellow":[{"label":"short category","value":"terse actual data point","source_indexes":[0]}],"blue":[{"region":"specific input region","contribution":"what it adds to this build"}],"orange":[{"label":"short category","value":"terse related data point","source_indexes":[0]}],"purple":[{"type":"factual or conceptual","history_query":"one prior search","relationship":"specific bridge","bridge":"why the bridge matters"}]}',
  'Evidence: '+JSON.stringify(evidence)
 ].filter(Boolean).join('\n');
 const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl.abort(),20000);let r;try{r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:instruction,context:{application:'QuantaPhi',assistant:'gpt-overview-writer',task:'five-zone-overview-synthesis',verified_context:{query:q,source_count:evidence.length}}}),signal:overviewCtl.signal})}finally{clearTimeout(overviewTimer)}
