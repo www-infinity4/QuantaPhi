@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS quant_mints(
 CREATE TABLE IF NOT EXISTS quant_ledger_entries(
   entry_id TEXT PRIMARY KEY,
   reference_id TEXT NOT NULL,
-  entry_type TEXT NOT NULL CHECK(entry_type IN ('mint','transfer','reversal')),
+  entry_type TEXT NOT NULL CHECK(entry_type IN ('mint','transfer','reversal','migration')),
   wallet_id TEXT NOT NULL,
   delta INTEGER NOT NULL CHECK(delta<>0),
   created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -119,3 +119,38 @@ BEGIN SELECT RAISE(ABORT,'immutable_quant_mint'); END;
 CREATE TRIGGER IF NOT EXISTS quant_mints_no_delete
 BEFORE DELETE ON quant_mints
 BEGIN SELECT RAISE(ABORT,'immutable_quant_mint'); END;
+
+
+CREATE TABLE IF NOT EXISTS quant_legacy_migrations(
+  migration_id TEXT PRIMARY KEY,
+  wallet_id TEXT NOT NULL UNIQUE,
+  legacy_amount INTEGER NOT NULL CHECK(legacy_amount>=0),
+  provenance_hash TEXT NOT NULL UNIQUE,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY(wallet_id) REFERENCES quant_wallets(wallet_id)
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS quant_legacy_migration_ledger_once
+ON quant_ledger_entries(reference_id)
+WHERE entry_type='migration';
+
+CREATE TRIGGER IF NOT EXISTS quant_validate_migration_credit
+BEFORE INSERT ON quant_ledger_entries WHEN NEW.entry_type='migration'
+BEGIN
+  SELECT RAISE(ABORT,'invalid_quant_migration_credit')
+  WHERE NOT EXISTS(
+    SELECT 1 FROM quant_legacy_migrations m
+    WHERE m.migration_id=NEW.reference_id
+      AND m.wallet_id=NEW.wallet_id
+      AND NEW.delta=m.legacy_amount
+      AND NEW.delta>0
+  );
+END;
+
+CREATE TRIGGER IF NOT EXISTS quant_legacy_migrations_no_update
+BEFORE UPDATE ON quant_legacy_migrations
+BEGIN SELECT RAISE(ABORT,'immutable_quant_legacy_migration'); END;
+
+CREATE TRIGGER IF NOT EXISTS quant_legacy_migrations_no_delete
+BEFORE DELETE ON quant_legacy_migrations
+BEGIN SELECT RAISE(ABORT,'immutable_quant_legacy_migration'); END;
