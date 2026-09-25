@@ -4,7 +4,7 @@ export default {
     const headers = {
       "content-type": "application/json",
       "access-control-allow-origin": "*",
-      "access-control-allow-headers": "content-type,x-wallet-id",
+      "access-control-allow-headers": "authorization,content-type",
       "access-control-allow-methods": "GET,POST,OPTIONS"
     };
     const json = (value, status = 200) =>
@@ -16,8 +16,20 @@ export default {
     if (url.pathname === "/health")
       return json({ ok: true, service: "quanta-phi-ledger" });
 
-    const wallet = (request.headers.get("x-wallet-id") || "").trim();
-    if (!wallet) return json({ error: "wallet_required" }, 401);
+    const authorization = request.headers.get("Authorization") || "";
+    const match = /^Bearer\\s+(sq_[A-Za-z0-9_-]{32,})$/.exec(authorization);
+    if (!match) return json({ error: "authorization_required" }, 401);
+    const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(match[1]));
+    const tokenHash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, "0")).join("");
+    const identity = await env.IDENTITY_DB.prepare(
+      "SELECT a.id AS user_id FROM accounts a JOIN account_devices d ON d.account_id=a.id WHERE d.token_hash=?"
+    ).bind(tokenHash).first();
+    if (!identity) return json({ error: "invalid_device_token" }, 401);
+    const senderWallet = await env.DB.prepare(
+      "SELECT wallet_id FROM quant_wallets WHERE user_id=?"
+    ).bind(identity.user_id).first();
+    if (!senderWallet) return json({ error: "quant_wallet_not_found" }, 404);
+    const wallet = senderWallet.wallet_id;
 
     if (url.pathname === "/v1/quants/state" && request.method === "GET") {
       const found = await env.DB.prepare(
