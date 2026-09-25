@@ -63,7 +63,7 @@ export default {
             "INSERT INTO quant_mints(mint_id,wallet_id,provenance_hash,source_key,query_text,amount) VALUES(?,?,?,?,?,1)"
           ).bind(mintId, wallet, provenanceHash, sourceKey, queryText),
           env.DB.prepare(
-            "INSERT INTO quant_ledger_entries(entry_id,transfer_id,wallet_id,delta) VALUES(?,?,?,1)"
+            "INSERT INTO quant_ledger_entries(entry_id,reference_id,entry_type,wallet_id,delta) VALUES(?,?,\'mint\',?,1)"
           ).bind(entryId, mintId, wallet)
         ]);
       } catch {
@@ -124,13 +124,17 @@ export default {
             "INSERT INTO quant_transfers(transfer_id,sender_wallet_id,recipient_wallet_id,amount,idempotency_key,status) VALUES(?,?,?,?,?,?)"
           ).bind(transferId, wallet, recipient, amount, key, "committed"),
           env.DB.prepare(
-            "INSERT INTO quant_ledger_entries(entry_id,transfer_id,wallet_id,delta) VALUES(?,?,?,?)"
+            "INSERT INTO quant_ledger_entries(entry_id,reference_id,entry_type,wallet_id,delta) VALUES(?,?,\'transfer\',?,?)"
           ).bind(crypto.randomUUID(), transferId, wallet, -amount),
           env.DB.prepare(
-            "INSERT INTO quant_ledger_entries(entry_id,transfer_id,wallet_id,delta) VALUES(?,?,?,?)"
+            "INSERT INTO quant_ledger_entries(entry_id,reference_id,entry_type,wallet_id,delta) VALUES(?,?,\'transfer\',?,?)"
           ).bind(crypto.randomUUID(), transferId, recipient, amount)
         ]);
       } catch {
+        const existing = await env.DB.prepare(
+          "SELECT transfer_id,sender_wallet_id,recipient_wallet_id,amount,status,created_at FROM quant_transfers WHERE sender_wallet_id=? AND idempotency_key=?"
+        ).bind(wallet, key).first();
+        if (existing) return json({ ok: true, replayed: true, transfer: existing });
         return json({ error: "transfer_failed" }, 409);
       }
 
