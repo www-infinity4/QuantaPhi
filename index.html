@@ -153,9 +153,9 @@ async function search(){
    text=String(text||'').trim();
    if(!text)throw new Error('Empty AI response');
    const wc=text.split(/\s+/).filter(Boolean).length;
-   if(wc<470){
+   if(wc<470&&wc>120){
     const expand=['Expand the following QuantaPhi overview to 500–650 words without padding or repetition. Keep exactly the same entity. Add only subject-appropriate dimensions: choose intelligently from biography/career/works/influence for people; properties/history/production/compounds/material relationships/applications/safety for elements and materials; or an equivalent domain-specific set for other subjects. Preserve factual grounding and do not invent details. Return prose only.','Query: '+q,'Evidence: '+JSON.stringify(evidence),'Draft: '+text].join('\n');
-    const er=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:expand,context:{application:'QuantaPhi',task:'adaptive-500-word-expansion'}})});
+    const expandCtl=new AbortController(),expandTimer=setTimeout(()=>expandCtl.abort(),4500);let er;try{er=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:expand,context:{application:'QuantaPhi',task:'adaptive-500-word-expansion'}}),signal:expandCtl.signal})}finally{clearTimeout(expandTimer)}
     if(er.ok){const ed=await er.json().catch(()=>({}));let et=ed.output_text??ed.output??ed.answer??ed.response??ed.content??ed.message??'';if(et&&typeof et==='object')et=et.text||et.content||'';et=String(et||'').trim();if(et.split(/\s+/).filter(Boolean).length>text.split(/\s+/).filter(Boolean).length)text=et}
    }
    $('#overview').innerHTML=renderFivePartOverview(text,q,evidence);activateFivePartOverview();$('#status').innerHTML='';loadMedia(q);return;
