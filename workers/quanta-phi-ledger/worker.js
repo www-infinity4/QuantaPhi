@@ -40,6 +40,43 @@ export default {
     if (!senderWallet) return json({ error: "quant_wallet_create_failed" }, 500);
     const wallet = senderWallet.wallet_id;
 
+    if (url.pathname === "/v1/quants/mint" && request.method === "POST") {
+      const body = await request.json().catch(() => ({}));
+      const sourceKey = String(body.source_key || "").trim().slice(0, 200);
+      const queryText = String(body.query_text || "").trim().slice(0, 500);
+      if (!sourceKey || !queryText) return json({ error: "invalid_mint" }, 400);
+
+      const prior = await env.DB.prepare(
+        "SELECT mint_id,provenance_hash,source_key,query_text,amount,created_at FROM quant_mints WHERE source_key=?"
+      ).bind(sourceKey).first();
+      if (prior) return json({ ok: true, replayed: true, mint: prior });
+
+      const material = wallet + "\n" + sourceKey + "\n" + queryText;
+      const mintDigest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(material));
+      const provenanceHash = Array.from(new Uint8Array(mintDigest), b => b.toString(16).padStart(2, "0")).join("");
+      const mintId = "qm_" + crypto.randomUUID();
+      const entryId = "qe_" + crypto.randomUUID();
+
+      try {
+        await env.DB.batch([
+          env.DB.prepare(
+            "INSERT INTO quant_mints(mint_id,wallet_id,provenance_hash,source_key,query_text,amount) VALUES(?,?,?,?,?,1)"
+          ).bind(mintId, wallet, provenanceHash, sourceKey, queryText),
+          env.DB.prepare(
+            "INSERT INTO quant_ledger_entries(entry_id,transfer_id,wallet_id,delta) VALUES(?,?,?,1)"
+          ).bind(entryId, mintId, wallet)
+        ]);
+      } catch {
+        const existing = await env.DB.prepare(
+          "SELECT mint_id,provenance_hash,source_key,query_text,amount,created_at FROM quant_mints WHERE source_key=?"
+        ).bind(sourceKey).first();
+        if (existing) return json({ ok: true, replayed: true, mint: existing });
+        return json({ error: "mint_failed" }, 409);
+      }
+
+      return json({ ok: true, replayed: false, mint_id: mintId, provenance_hash: provenanceHash, source_key: sourceKey, amount: 1 }, 201);
+    }
+
     if (url.pathname === "/v1/quants/state" && request.method === "GET") {
       const found = await env.DB.prepare(
         "SELECT wallet_id FROM quant_wallets WHERE wallet_id=?"
