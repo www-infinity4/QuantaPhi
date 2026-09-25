@@ -585,4 +585,5 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  review?.addEventListener('click',async()=>{const to=document.getElementById('qwalletRecipient').value.trim(),amount=Number(document.getElementById('qwalletAmount').value);if(!to.startsWith('qw_')||!Number.isSafeInteger(amount)||amount<1){msg.textContent='Enter a valid wallet ID and whole Quant amount.';return}if(review.dataset.confirm!=='1'){review.dataset.confirm='1';review.textContent='Confirm send';msg.textContent='Review: send '+amount+' Quant'+(amount===1?'':'s')+' to '+to+'. Tap Confirm send to finish.';return}review.disabled=true;try{const r=await call('/v1/quants/transfer',{method:'POST',body:{recipient_wallet_id:to,amount,idempotency_key:crypto.randomUUID()}});msg.textContent='Transfer complete: '+(r.transfer_id||r.transfer?.transfer_id||'recorded');review.dataset.confirm='';review.textContent='Review transfer';document.getElementById('qwalletAmount').value='';await load()}catch(e){msg.textContent=e.message}finally{review.disabled=false}});
 })();
 window.addEventListener('load',()=>{recoverLegacyOnce().catch(()=>{})},{once:true});
-</script></body></html>
+</script><!-- QuantaPhi publish stamp: history-assimilation-dense-data-v2 -->
+</body></html>
