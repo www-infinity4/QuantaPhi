@@ -714,7 +714,7 @@ $('#go').onclick=search;
    const title=card.dataset.sourceTitle||card.querySelector('h3')?.textContent||'',media=card.dataset.mediaSrc||card.querySelector('video,audio,img')?.currentSrc||card.querySelector('video,audio,img')?.src||'';
    saved=saved.filter(x=>!(x.title===title&&(!media||x.media===media)));localStorage.setItem('quantaPhiCollected',JSON.stringify(saved));
   }catch(_){}
-  fetch('https://monitor-phi.marvaseater.workers.dev/p/quants/signal',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({topic,signal:'uncollect'})}).catch(()=>{});
+  fetch('https://monitor-phi.marvaseater.workers.dev/p/quants/signal',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({topic,signal:'uncollect',actionId:'uncollect:'+key})}).catch(()=>{});
   const collect=card.querySelector('.cardCollect');if(collect){collect.dataset.collected='';collect.disabled=false;collect.textContent='Collect +0.1 ★'}b.hidden=true;
  },true);
 })();
