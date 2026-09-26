@@ -647,7 +647,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
    let existing=saved.find(x=>x.key===key||(x.type===type&&x.title===title&&x.media===mediaSrc));
    if(!existing){
     existing={key,type,title,story:(card.querySelector('p')?.textContent||'').trim(),media:mediaSrc,sourceUrl,collectedAt:new Date().toISOString()};
-    saved.push(existing);try{localStorage.setItem('quantaPhiCollected',JSON.stringify(saved))}catch(storageError){try{const compact=saved.slice(-25).map(x=>({...x,media:String(x.media||'').slice(0,1200),story:String(x.story||'').slice(0,1200)}));localStorage.setItem('quantaPhiCollected',JSON.stringify(compact));saved=compact}catch(_){/* Collection must still work even when browser storage is unavailable. */}}
+    saved.push(existing);try{localStorage.setItem('quantaPhiCollected',JSON.stringify(saved));window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:existing}))}catch(storageError){try{const compact=saved.slice(-25).map(x=>({...x,media:String(x.media||'').slice(0,1200),story:String(x.story||'').slice(0,1200)}));localStorage.setItem('quantaPhiCollected',JSON.stringify(compact));saved=compact}catch(_){/* Collection must still work even when browser storage is unavailable. */}}
     try{window.QuantaPhiWallet?.addCollect?.(key)}catch(walletError){console.warn('StarCoin collect credit deferred',walletError)}
    }
    b.dataset.collected='1';b.textContent='Collected ✓ +0.1 ★';b.disabled=true;
