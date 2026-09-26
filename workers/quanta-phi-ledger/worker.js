@@ -147,6 +147,27 @@ export default {
       });
     }
 
+    if (url.pathname === "/v1/quants/collects" && request.method === "POST") {
+      const body = await request.json().catch(() => ({}));
+      const key = String(body.key || "").trim().slice(0, 700);
+      const type = String(body.type || "").trim().slice(0, 40);
+      const title = String(body.title || "").trim().slice(0, 500);
+      const story = String(body.story || "").trim().slice(0, 4000);
+      const media = String(body.media || "").trim().slice(0, 2000);
+      const sourceUrl = String(body.sourceUrl || "").trim().slice(0, 2000);
+      if (!key || !title) return json({ error: "invalid_collect" }, 400);
+      await env.DB.prepare("CREATE TABLE IF NOT EXISTS quant_collects(collect_id TEXT PRIMARY KEY,wallet_id TEXT NOT NULL,content_key TEXT NOT NULL,type TEXT,title TEXT NOT NULL,story TEXT,media TEXT,source_url TEXT,collected_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,UNIQUE(wallet_id,content_key))").run();
+      await env.DB.prepare("INSERT INTO quant_collects(collect_id,wallet_id,content_key,type,title,story,media,source_url) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(wallet_id,content_key) DO UPDATE SET type=excluded.type,title=excluded.title,story=excluded.story,media=excluded.media,source_url=excluded.source_url,collected_at=CURRENT_TIMESTAMP")
+        .bind("qc_" + crypto.randomUUID(), wallet, key, type, title, story, media, sourceUrl).run();
+      return json({ ok: true, key }, 201);
+    }
+
+    if (url.pathname === "/v1/quants/collects" && request.method === "GET") {
+      await env.DB.prepare("CREATE TABLE IF NOT EXISTS quant_collects(collect_id TEXT PRIMARY KEY,wallet_id TEXT NOT NULL,content_key TEXT NOT NULL,type TEXT,title TEXT NOT NULL,story TEXT,media TEXT,source_url TEXT,collected_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,UNIQUE(wallet_id,content_key))").run();
+      const rows = await env.DB.prepare("SELECT content_key AS key,type,title,story,media,source_url AS sourceUrl,collected_at AS collectedAt FROM quant_collects WHERE wallet_id=? ORDER BY collected_at DESC LIMIT 50").bind(wallet).all();
+      return json({ ok: true, cards: rows.results || [] });
+    }
+
     if (url.pathname === "/v1/quants/state" && request.method === "GET") {
       const found = await env.DB.prepare(
         "SELECT wallet_id FROM quant_wallets WHERE wallet_id=? AND status='active'"
