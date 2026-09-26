@@ -650,6 +650,18 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
     saved.push(existing);try{localStorage.setItem('quantaPhiCollected',JSON.stringify(saved));window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:existing}))}catch(storageError){try{const compact=saved.slice(-25).map(x=>({...x,media:String(x.media||'').slice(0,1200),story:String(x.story||'').slice(0,1200)}));localStorage.setItem('quantaPhiCollected',JSON.stringify(compact));saved=compact}catch(_){/* Collection must still work even when browser storage is unavailable. */}}
     try{window.QuantaPhiWallet?.addCollect?.(key)}catch(walletError){console.warn('StarCoin collect credit deferred',walletError)}
     try{const bridge=window.StarQuestCloudLedger;if(bridge?.authenticatedFetch){bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/collects',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(existing)}).catch(err=>console.warn('Quanta collect cloud sync deferred',err))}}catch(syncError){console.warn('Quanta collect cloud sync deferred',syncError)}
+    try{
+     const searchTopic=(document.getElementById('q')?.value||title).trim();
+     fetch('https://monitor-phi.marvaseater.workers.dev/p/quants/collect',{
+      method:'POST',headers:{'content-type':'application/json'},
+      body:JSON.stringify({
+       topic:searchTopic,
+       refinements:title&&title!==searchTopic?[title]:[],
+       media:mediaSrc?[{type:type.toLowerCase(),url:mediaSrc,title,source:sourceUrl}]:[],
+       tags:['quantaphi','collect',type.toLowerCase()]
+      })
+     }).catch(err=>console.warn('Monitor Quant sync deferred',err));
+    }catch(monitorError){console.warn('Monitor Quant sync deferred',monitorError)}
    }
    b.dataset.collected='1';b.textContent='Collected ✓ +0.1 ★';b.disabled=true;
    const fn=window.__qResearchStory;
