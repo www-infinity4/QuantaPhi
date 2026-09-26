@@ -272,8 +272,26 @@ async function loadHistoryAssimilation(q,currentSections){
  }
 }
 function activateFivePartOverview(){const b=document.getElementById('qZoneBuild'),i=document.getElementById('qZoneInput');b?.addEventListener('click',()=>{const v=i.value.trim(),primary=document.getElementById('q').value.trim();if(v&&primary){window.__qInputExtension={primary,supporting:v};try{sessionStorage.setItem('quantaPhiInputExtensionV1',JSON.stringify({primary,supporting:v,created_at:new Date().toISOString()}))}catch(_){}document.getElementById('go').click()}});document.querySelectorAll('[data-assimilate]').forEach(x=>x.addEventListener('click',()=>{const prior=decodeURIComponent(x.dataset.assimilate),cur=document.getElementById('q').value.trim();try{sessionStorage.setItem('quantaPhiAssimilationV1',JSON.stringify({primary:cur,supporting:prior,created_at:new Date().toISOString()}))}catch(_){}window.__qAssimilation={primary:cur,supporting:prior};document.getElementById('go').click()}))}
+async function monitorLifecycleStart(topic){
+ try{
+  const previousId=sessionStorage.getItem('quantaPhiActiveQuditV1')||'';
+  const r=await fetch('https://monitor-phi.marvaseater.workers.dev/p/quants/collect',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({topic,scope:topic,parentId:previousId,tags:['quantaphi','lifecycle']})});
+  const j=r.ok?await r.json():null,id=j?.quant?.id||''; if(id){sessionStorage.setItem('quantaPhiActiveQuditV1',id);sessionStorage.setItem('quantaPhiActiveQuditStageV1','RED')} return id;
+ }catch(_){return ''}
+}
+async function monitorLifecycleAdvance(stage,detail={}){
+ try{
+  const id=sessionStorage.getItem('quantaPhiActiveQuditV1');if(!id)return;
+  const current=sessionStorage.getItem('quantaPhiActiveQuditStageV1')||'RED';if(current===stage)return;
+  const r=await fetch('https://monitor-phi.marvaseater.workers.dev/p/quants/advance',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({quantId:id,stage,...detail})});
+  if(r.ok)sessionStorage.setItem('quantaPhiActiveQuditStageV1',stage);
+ }catch(_){}
+}
+function monitorRendered(){queueMicrotask(()=>requestAnimationFrame(()=>void monitorLifecycleAdvance('BLUE',{destination:'quantaphi-ui'})))}
+function monitorActed(action){const s=sessionStorage.getItem('quantaPhiActiveQuditStageV1');if(s==='RED')monitorLifecycleAdvance('BLUE',{destination:'quantaphi-ui'}).then(()=>monitorLifecycleAdvance('YELLOW',{action}));else if(s==='BLUE')void monitorLifecycleAdvance('YELLOW',{action})}
 async function search(){
  const q=$('#q').value.trim(); if(!q)return;
+ void monitorLifecycleStart(q);
  try{
   const key='quantaPhiLastMonitorTopicV1',previous=(sessionStorage.getItem(key)||'').trim();
   if(previous&&previous.toLowerCase()!==q.toLowerCase()){
@@ -350,7 +368,7 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
    if(!text)throw new Error('Empty AI response');
    const sections=parseOverviewSections(text);
    if(!sections)throw new Error('Invalid five-zone AI response');
-   $('#overview').innerHTML=renderFivePartOverview(sections,q,evidence);activateFivePartOverview();loadExpandedDataIndex(q,sections,evidence);loadHistoryAssimilation(q,sections);$('#status').innerHTML='';loadMedia(q);return;
+   $('#overview').innerHTML=renderFivePartOverview(sections,q,evidence);activateFivePartOverview();monitorRendered();loadExpandedDataIndex(q,sections,evidence);loadHistoryAssimilation(q,sections);$('#status').innerHTML='';loadMedia(q);return;
  }catch(e){
    try{
      const searchUrl=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
@@ -361,7 +379,7 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
      const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
      const ranked=(sj.results||[]).map((x,i)=>{const body=((x.title||'')+' '+(x.content||x.description||'')).replace(/\\s+/g,' ').trim();const low=body.toLowerCase();const hits=required.filter(w=>low.includes(w)).length;const entityHits=entityWords.filter(w=>low.includes(w)).length;return {body,hits,entityHits,score:(required.length?hits/required.length:0)*100+hits*35+entityHits*100+Math.max(0,20-i)}}).filter(x=>x.body&&x.hits&&(entityWords.length<2||x.entityHits===entityWords.length)).sort((a,b)=>b.score-a.score);
      let out='',seen=new Set(); for(const r of ranked){for(const s of (r.body.match(/[^.!?]+[.!?]+/g)||[r.body])){const low=s.toLowerCase();if(!required.some(w=>low.includes(w)))continue;const k=low.replace(/[^a-z0-9 ]/g,'').slice(0,100);if(k&&!seen.has(k)){seen.add(k);if((out+' '+s).split(/\\s+/).length>520)break;out+=' '+s.trim()}}if(out.split(/\\s+/).length>470)break}
-     if(out.trim()){ const fallbackRows=(sj.results||[]).slice(0,10).map((x,i)=>({title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').trim(),index:i}));const structured=buildStructuredEvidenceFallback(q,(evidence&&evidence.length)?evidence:fallbackRows);$('#overview').innerHTML=renderFivePartOverview(structured,q,(evidence&&evidence.length)?evidence:fallbackRows);activateFivePartOverview();loadExpandedDataIndex(q,structured,(evidence&&evidence.length)?evidence:fallbackRows);loadHistoryAssimilation(q,structured); $('#status').innerHTML='<small>Structured source-backed fallback · AI response unavailable</small>'; if(typeof loadMedia==='function')loadMedia(q); return; }
+     if(out.trim()){ const fallbackRows=(sj.results||[]).slice(0,10).map((x,i)=>({title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||'').trim(),index:i}));const structured=buildStructuredEvidenceFallback(q,(evidence&&evidence.length)?evidence:fallbackRows);$('#overview').innerHTML=renderFivePartOverview(structured,q,(evidence&&evidence.length)?evidence:fallbackRows);activateFivePartOverview();monitorRendered();loadExpandedDataIndex(q,structured,(evidence&&evidence.length)?evidence:fallbackRows);loadHistoryAssimilation(q,structured); $('#status').innerHTML='<small>Structured source-backed fallback · AI response unavailable</small>'; if(typeof loadMedia==='function')loadMedia(q); return; }
    }catch(_){}
    $('#status').innerHTML='<small>AI provider did not finish — building overview from search evidence…</small>';
    try{
@@ -372,14 +390,16 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
     if(rows.length){
      const text=rows.slice(0,12).map(x=>String(x.content||x.description||x.title||'').trim()).filter(Boolean).join(' ').replace(/\s+/g,' ').split(/\s+/).slice(0,500).join(' ');
      const fallbackEvidence=rows.slice(0,10).map(x=>({title:x.title||'',url:x.url||'',snippet:x.content||x.description||''}));
-     const structured=buildStructuredEvidenceFallback(q,(evidence&&evidence.length)?evidence:fallbackEvidence);$('#overview').innerHTML=renderFivePartOverview(structured,q,(evidence&&evidence.length)?evidence:fallbackEvidence);activateFivePartOverview();loadExpandedDataIndex(q,structured,(evidence&&evidence.length)?evidence:fallbackEvidence);loadHistoryAssimilation(q,structured);$('#status').innerHTML='<small>Structured broader source-backed results</small>';if(typeof loadMedia==='function')loadMedia(q);return;
+     const structured=buildStructuredEvidenceFallback(q,(evidence&&evidence.length)?evidence:fallbackEvidence);$('#overview').innerHTML=renderFivePartOverview(structured,q,(evidence&&evidence.length)?evidence:fallbackEvidence);activateFivePartOverview();monitorRendered();loadExpandedDataIndex(q,structured,(evidence&&evidence.length)?evidence:fallbackEvidence);loadHistoryAssimilation(q,structured);$('#status').innerHTML='<small>Structured broader source-backed results</small>';if(typeof loadMedia==='function')loadMedia(q);return;
     }
    }catch(_){}
-   const structuredFinal=buildStructuredEvidenceFallback(q,evidence||[]);$('#overview').innerHTML=renderFivePartOverview(structuredFinal,q,evidence||[]);activateFivePartOverview();loadExpandedDataIndex(q,structuredFinal,evidence||[]);loadHistoryAssimilation(q,structuredFinal);
+   const structuredFinal=buildStructuredEvidenceFallback(q,evidence||[]);$('#overview').innerHTML=renderFivePartOverview(structuredFinal,q,evidence||[]);activateFivePartOverview();monitorRendered();loadExpandedDataIndex(q,structuredFinal,evidence||[]);loadHistoryAssimilation(q,structuredFinal);
    $('#status').innerHTML='<small>Search continuing</small>';
  }
 }
-$('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Enter')search()});
+$('#go').onclick=search;
+ document.addEventListener('click',e=>{if(e.target.closest('.cardShare,.overviewShare,[data-assimilate],#qZoneBuild'))monitorActed('interaction')},true);
+ document.addEventListener('play',e=>{if(e.target.matches('audio,video'))monitorActed('media-play')},true); $('#q').addEventListener('keydown',e=>{if(e.key==='Enter')search()});
 </script><script>(function(){const b=document.getElementById('qmenuBtn'),m=document.getElementById('qmenu'),w=document.getElementById('qmenuWallet');if(!b||!m)return;b.addEventListener('click',function(){m.hidden=!m.hidden});m.addEventListener('click',function(e){if(e.target===w){e.preventDefault();setTimeout(()=>document.getElementById('controlPhiWalletButton')?.click(),0)}m.hidden=true})})();</script><script>
 (function(){
  const T='quantaPhiTokens',S='quantaPhiStarCoins';
@@ -645,7 +665,7 @@ $('#go').onclick=search; $('#q').addEventListener('keydown',e=>{if(e.key==='Ente
  document.getElementById('qVideoBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();archiveVideoFeed()},true);
  document.getElementById('overviewShare')?.addEventListener('click',async()=>{const b=document.getElementById('overviewShare'),q=document.getElementById('q')?.value.trim()||'QuantaPhi',text=document.getElementById('overview')?.innerText.trim()||'';if(!text)return;try{if(navigator.share)await navigator.share({title:q+' — QuantaPhi AI Overview',text,url:searchPermalink(q)});else await navigator.clipboard?.writeText(q+'\n\n'+text+'\n\n'+searchPermalink(q));try{window.ControlPhi?.refreshWallet?.()}catch(_){}b.textContent='Shared ✓ +0.1 ★';setTimeout(()=>b.textContent='Share AI Overview +0.1 ★',1800)}catch(_){b.textContent='Share AI Overview +0.1 ★'}});
  document.addEventListener('click',async e=>{
-  const b=e.target.closest('.cardCollect');if(!b)return;
+  const b=e.target.closest('.cardCollect');if(b)monitorActed('collect');if(!b)return;
   e.preventDefault();e.stopPropagation();
   const card=b.closest('.mcard');if(!card)return;if(b.dataset.collected==='1'&&card.dataset.enriched==='1')return;
   const type=card.classList.contains('videoCard')?'Video':card.classList.contains('soundCard')?'Sound':'Image';
