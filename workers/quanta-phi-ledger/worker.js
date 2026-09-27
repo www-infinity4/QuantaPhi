@@ -183,7 +183,9 @@ export default {
           const quantId = String(quant?.id || "").trim();
           const provenanceHash = String(quant?.hash || "").trim().toLowerCase();
           const notes = Array.isArray(quant?.notes) ? quant.notes : [];
-          if (!/^mq_[a-f0-9]{12,64}$/.test(quantId) || !/^[a-f0-9]{64}$/.test(provenanceHash) || notes.length !== 5) continue;
+          const kind = quant?.kind === "listening" ? "listening" : "playable";
+          const validShape = kind === "listening" ? notes.length === 0 : notes.length === 5;
+          if (!/^mq_[a-f0-9]{12,64}$/.test(quantId) || !/^[a-f0-9]{64}$/.test(provenanceHash) || !validShape) continue;
           const normalizedNotes = notes.map(note => ({
             name: String(note?.name || "").slice(0, 12),
             midi: Math.max(0, Math.min(127, Number(note?.midi) || 60)),
@@ -204,7 +206,14 @@ export default {
             version: 2,
             id: quantId,
             hash: provenanceHash,
+            kind,
             notes: normalizedNotes,
+            song: String(quant?.song || rawPlayback?.song || "").slice(0, 180),
+            sourceUrl: String(quant?.sourceUrl || "").slice(0, 900),
+            archiveItem: String(quant?.archiveItem || "").slice(0, 120),
+            startedAt: String(quant?.startedAt || "").slice(0, 40),
+            endedAt: String(quant?.endedAt || "").slice(0, 40),
+            durationSec: Math.max(0, Math.min(86400, Number(quant?.durationSec) || 0)),
             settings: quant?.settings && typeof quant.settings === "object" ? quant.settings : {},
             context: {
               version: 1,
@@ -218,7 +227,7 @@ export default {
               retention: "user-owned-context"
             },
             createdAt: String(quant?.createdAt || new Date().toISOString()),
-            source: "infinity-radio-music-quant"
+            source: kind === "listening" ? "infinity-radio-listening-quant" : "infinity-radio-music-quant"
           });
           await env.DB.prepare("INSERT OR IGNORE INTO music_quants(quant_id,owner_wallet_id,provenance_hash,payload_json) VALUES(?,?,?,?)")
             .bind(quantId, wallet, provenanceHash, payload).run();
