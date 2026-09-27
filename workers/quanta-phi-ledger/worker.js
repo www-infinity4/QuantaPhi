@@ -168,6 +168,81 @@ export default {
       return json({ ok: true, cards: rows.results || [] });
     }
 
+    if (url.pathname.startsWith("/v1/music-quants")) {
+      await env.DB.batch([
+        env.DB.prepare("CREATE TABLE IF NOT EXISTS music_quants(quant_id TEXT PRIMARY KEY,owner_wallet_id TEXT NOT NULL,provenance_hash TEXT NOT NULL UNIQUE,payload_json TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'active',created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)"),
+        env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_music_quants_owner ON music_quants(owner_wallet_id,status,created_at)"),
+        env.DB.prepare("CREATE TABLE IF NOT EXISTS music_quant_transfers(transfer_id TEXT PRIMARY KEY,quant_id TEXT NOT NULL,sender_wallet_id TEXT NOT NULL,recipient_wallet_id TEXT NOT NULL,idempotency_key TEXT NOT NULL,status TEXT NOT NULL,created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,UNIQUE(sender_wallet_id,idempotency_key))")
+      ]);
+
+      if (url.pathname === "/v1/music-quants/sync" && request.method === "POST") {
+        const body = await request.json().catch(() => ({}));
+        const incoming = Array.isArray(body.quants) ? body.quants.slice(0, 100) : [];
+        const accepted = [];
+        for (const quant of incoming) {
+          const quantId = String(quant?.id || "").trim();
+          const provenanceHash = String(quant?.hash || "").trim().toLowerCase();
+          const notes = Array.isArray(quant?.notes) ? quant.notes : [];
+          if (!/^mq_[a-f0-9]{12,64}$/.test(quantId) || !/^[a-f0-9]{64}$/.test(provenanceHash) || notes.length !== 5) continue;
+          const normalizedNotes = notes.map(note => ({
+            name: String(note?.name || "").slice(0, 12),
+            midi: Math.max(0, Math.min(127, Number(note?.midi) || 60)),
+            holdMs: Math.max(40, Math.min(16000, Number(note?.holdMs) || 250)),
+            offsetMs: Math.max(0, Math.min(16000, Number(note?.offsetMs) || 0))
+          }));
+          const payload = JSON.stringify({
+            version: 1,
+            id: quantId,
+            hash: provenanceHash,
+            notes: normalizedNotes,
+            settings: quant?.settings && typeof quant.settings === "object" ? quant.settings : {},
+            createdAt: String(quant?.createdAt || new Date().toISOString()),
+            source: "infinity-radio-music-quant"
+          });
+          await env.DB.prepare("INSERT OR IGNORE INTO music_quants(quant_id,owner_wallet_id,provenance_hash,payload_json) VALUES(?,?,?,?)")
+            .bind(quantId, wallet, provenanceHash, payload).run();
+          const owned = await env.DB.prepare("SELECT quant_id FROM music_quants WHERE quant_id=? AND owner_wallet_id=? AND status='active'")
+            .bind(quantId, wallet).first();
+          if (owned) accepted.push(quantId);
+        }
+        const countRow = await env.DB.prepare("SELECT COUNT(*) AS count FROM music_quants WHERE owner_wallet_id=? AND status='active'").bind(wallet).first();
+        return json({ ok: true, accepted, balance: Number(countRow?.count || 0) });
+      }
+
+      if (url.pathname === "/v1/music-quants/state" && request.method === "GET") {
+        const rows = await env.DB.prepare("SELECT quant_id,provenance_hash,payload_json,created_at FROM music_quants WHERE owner_wallet_id=? AND status='active' ORDER BY created_at DESC LIMIT 500").bind(wallet).all();
+        const quants = (rows.results || []).map(row => {
+          let payload = {};
+          try { payload = JSON.parse(row.payload_json); } catch {}
+          return { ...payload, id: row.quant_id, hash: row.provenance_hash, cloudCreatedAt: row.created_at };
+        });
+        return json({ ok: true, wallet_id: wallet, balance: quants.length, quants });
+      }
+
+      if (url.pathname === "/v1/music-quants/transfer" && request.method === "POST") {
+        const body = await request.json().catch(() => ({}));
+        const quantId = String(body.quant_id || "").trim();
+        const recipient = String(body.recipient_wallet_id || "").trim();
+        const key = String(body.idempotency_key || "").trim();
+        if (!quantId || !/^qw_[A-Za-z0-9-]{20,}$/.test(recipient) || !key) return json({ error: "invalid_music_quant_transfer" }, 400);
+        if (recipient === wallet) return json({ error: "same_wallet" }, 400);
+        const receiver = await env.DB.prepare("SELECT wallet_id FROM quant_wallets WHERE wallet_id=? AND status='active'").bind(recipient).first();
+        if (!receiver) return json({ error: "wallet_not_found" }, 404);
+        const prior = await env.DB.prepare("SELECT transfer_id,quant_id,recipient_wallet_id,status,created_at FROM music_quant_transfers WHERE sender_wallet_id=? AND idempotency_key=?").bind(wallet, key).first();
+        if (prior) return json({ ok: true, replayed: true, transfer: prior });
+        const owned = await env.DB.prepare("SELECT quant_id FROM music_quants WHERE quant_id=? AND owner_wallet_id=? AND status='active'").bind(quantId, wallet).first();
+        if (!owned) return json({ error: "music_quant_not_owned" }, 409);
+        const transferId = "mqt_" + crypto.randomUUID();
+        await env.DB.batch([
+          env.DB.prepare("INSERT INTO music_quant_transfers(transfer_id,quant_id,sender_wallet_id,recipient_wallet_id,idempotency_key,status) VALUES(?,?,?,?,?,'committed')").bind(transferId, quantId, wallet, recipient, key),
+          env.DB.prepare("UPDATE music_quants SET owner_wallet_id=?,updated_at=CURRENT_TIMESTAMP WHERE quant_id=? AND owner_wallet_id=? AND status='active'").bind(recipient, quantId, wallet)
+        ]);
+        return json({ ok: true, replayed: false, transfer_id: transferId, quant_id: quantId, recipient_wallet_id: recipient });
+      }
+
+      return json({ error: "music_quant_route_not_found" }, 404);
+    }
+
     if (url.pathname === "/v1/quants/state" && request.method === "GET") {
       const found = await env.DB.prepare(
         "SELECT wallet_id FROM quant_wallets WHERE wallet_id=? AND status='active'"
