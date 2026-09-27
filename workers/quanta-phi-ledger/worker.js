@@ -190,12 +190,33 @@ export default {
             holdMs: Math.max(40, Math.min(16000, Number(note?.holdMs) || 250)),
             offsetMs: Math.max(0, Math.min(16000, Number(note?.offsetMs) || 0))
           }));
+          const rawContext = quant?.context && typeof quant.context === "object" ? quant.context : {};
+          const rawPlayback = rawContext?.playback && typeof rawContext.playback === "object" ? rawContext.playback : {};
+          const contextEvents = Array.isArray(rawContext?.events) ? rawContext.events.slice(0, 12).map(event => ({
+            action: String(event?.action || "").slice(0, 40),
+            topic: String(event?.topic || "").slice(0, 180),
+            channel: String(event?.channel || "").slice(0, 100),
+            program: String(event?.program || "").slice(0, 180),
+            page: String(event?.page || "").slice(0, 180),
+            at: String(event?.at || "").slice(0, 40)
+          })) : [];
           const payload = JSON.stringify({
-            version: 1,
+            version: 2,
             id: quantId,
             hash: provenanceHash,
             notes: normalizedNotes,
             settings: quant?.settings && typeof quant.settings === "object" ? quant.settings : {},
+            context: {
+              version: 1,
+              playback: {
+                song: String(rawPlayback?.song || "").slice(0, 180),
+                station: "Infinity Radio",
+                playing: Boolean(rawPlayback?.playing),
+                capturedAt: String(rawPlayback?.capturedAt || "").slice(0, 40)
+              },
+              events: contextEvents,
+              retention: "user-owned-context"
+            },
             createdAt: String(quant?.createdAt || new Date().toISOString()),
             source: "infinity-radio-music-quant"
           });
