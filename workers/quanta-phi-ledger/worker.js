@@ -184,13 +184,15 @@ export default {
           const provenanceHash = String(quant?.hash || "").trim().toLowerCase();
           const notes = Array.isArray(quant?.notes) ? quant.notes : [];
           const kind = quant?.kind === "listening" ? "listening" : "playable";
-          const validShape = kind === "listening" ? notes.length === 0 : notes.length === 5;
+          const validShape = kind === "listening" ? notes.length === 0 : notes.length >= 5 && notes.length <= 15;
           if (!/^mq_[a-f0-9]{12,64}$/.test(quantId) || !/^[a-f0-9]{64}$/.test(provenanceHash) || !validShape) continue;
           const normalizedNotes = notes.map(note => ({
             name: String(note?.name || "").slice(0, 12),
             midi: Math.max(0, Math.min(127, Number(note?.midi) || 60)),
             holdMs: Math.max(40, Math.min(16000, Number(note?.holdMs) || 250)),
-            offsetMs: Math.max(0, Math.min(16000, Number(note?.offsetMs) || 0))
+            offsetMs: Math.max(0, Math.min(16000, Number(note?.offsetMs) || 0)),
+            onsetMs: Math.max(0, Math.min(60000, Number(note?.onsetMs) || 0)),
+            group: Math.max(0, Math.min(4, Number(note?.group) || 0))
           }));
           const rawContext = quant?.context && typeof quant.context === "object" ? quant.context : {};
           const rawPlayback = rawContext?.playback && typeof rawContext.playback === "object" ? rawContext.playback : {};
@@ -203,7 +205,7 @@ export default {
             at: String(event?.at || "").slice(0, 40)
           })) : [];
           const payload = JSON.stringify({
-            version: 2,
+            version: Math.max(2, Math.min(3, Number(quant?.version) || 2)),
             id: quantId,
             hash: provenanceHash,
             kind,
@@ -215,6 +217,12 @@ export default {
             endedAt: String(quant?.endedAt || "").slice(0, 40),
             durationSec: Math.max(0, Math.min(86400, Number(quant?.durationSec) || 0)),
             settings: quant?.settings && typeof quant.settings === "object" ? quant.settings : {},
+            assessment: Array.isArray(quant?.assessment) ? quant.assessment.slice(0,5).map(item => ({
+              group: Math.max(0, Math.min(4, Number(item?.group) || 0)),
+              onsetMs: Math.max(0, Math.min(60000, Number(item?.onsetMs) || 0)),
+              deviationMs: Math.max(-10000, Math.min(10000, Number(item?.deviationMs) || 0)),
+              grade: String(item?.grade || "").slice(0,16)
+            })) : [],
             context: {
               version: 1,
               playback: {
