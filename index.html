@@ -169,10 +169,27 @@ function renderFivePartOverview(main,q,evidence){
  '<section class="qzone qzoneOrange"><h3>Related data · next branches</h3>'+orange+'</section>'+
  '<section class="qzone qzonePurple"><h3>Assimilation</h3>'+purple+(chips?'<div class="qchips">'+chips+'</div>':'')+'</section>';
 }
+async function categoryDataIndex(q,currentSections,currentEvidence){
+ const corpus=[q,String(currentSections?.red?.overview||''),...(currentEvidence||[]).map(x=>String(x.title||''))].join(' ').toLowerCase();
+ const botanical=/\b(tree|trees|fruit|orchard|plant|cultivar)\b/.test(corpus);
+ const music=/\b(band|music|album|song|concert|guitar|singer)\b/.test(corpus);
+ const material=/\b(element|metal|mineral|chemical|atomic|isotope)\b/.test(corpus);
+ const anchor=botanical?String(q).toLowerCase().replace(/\b(trees|tree|plants|plant|fruit|fruits)\b/g,'').trim():String(q).trim();
+ const topic=anchor||String(q).trim();
+ const searches=[topic,botanical?topic+' cultivars':music?topic+' albums':material?topic+' compounds':topic+' types',botanical?topic+' varieties':music?topic+' songs':material?topic+' minerals':topic+' works'];
+ const api=async params=>{const u=new URL('https://en.wikipedia.org/w/api.php');u.search=new URLSearchParams({action:'query',format:'json',origin:'*',...params});const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),8000);try{const r=await fetch(u,{signal:ctl.signal});return r.ok?await r.json():{}}finally{clearTimeout(timer)}};
+ const found=await Promise.all(searches.map(async term=>{try{const j=await api({list:'search',srnamespace:'14',srsearch:term,srlimit:'10'});return j.query?.search||[]}catch(_){return []}}));
+ const categories=[...new Set(found.flat().map(x=>x.title).filter(title=>title.toLowerCase().includes(topic.toLowerCase())))].slice(0,5);
+ const pages=await Promise.all(categories.map(async title=>{try{const j=await api({list:'categorymembers',cmtitle:title,cmnamespace:'0',cmlimit:'200'});return j.query?.categorymembers||[]}catch(_){return []}}));
+ const seed=[...(currentSections?.yellow||[]).map(x=>x.value),...(currentEvidence||[]).map(x=>x.title)];
+ const seen=new Set(),terms=[...seed,...pages.flat().map(x=>x.title)].map(x=>String(x||'').replace(/\s+/g,' ').trim()).filter(x=>{const key=x.toLowerCase();if(!x||x.length>100||/^list of /i.test(x)||key===q.toLowerCase()||seen.has(key))return false;seen.add(key);return true}).slice(0,100);
+ return terms;
+}
 async function loadExpandedDataIndex(q,currentSections,currentEvidence){
  const list=document.getElementById('qYellowDataList');if(!list)return;
  const esc=s=>String(s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
  const timeout=async(url,opt={},ms=9000)=>{const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),ms);try{return await fetch(url,{...opt,signal:ctl.signal})}finally{clearTimeout(timer)}};
+ const categoryPromise=categoryDataIndex(q,currentSections,currentEvidence).then(terms=>{if(terms.length){list.innerHTML=terms.map(term=>'<li><a href="'+esc(searchPermalink(term))+'" title="Search QuantaPhi for '+esc(term)+'">'+esc(term)+'</a></li>').join('');list.dataset.count=String(terms.length)}return terms}).catch(()=>[]);
  const corpus=[q,String(currentSections?.red?.overview||''),...(currentEvidence||[]).slice(0,12).map(x=>String(x.title||'')+' '+String(x.evidence||x.snippet||''))].join(' ').toLowerCase();
  const music=/\b(band|music|album|song|concert|guitar|bass|drum|singer|recording|tour|venue|live performance|keyboard|vocalist|rock|jazz|folk)\b/.test(corpus);
  const material=/\b(element|metal|mineral|alloy|chemical|atomic|isotope|ore|compound|material|density|melting point)\b/.test(corpus);
@@ -228,7 +245,7 @@ async function loadExpandedDataIndex(q,currentSections,currentEvidence){
   }catch(_){return {query:searchTerm,results:[]}}
  }));
  const retrieved=batches.filter(x=>x.results.length);
- if(!retrieved.length)return;
+ if(!retrieved.length){await categoryPromise;return;}
  const instruction=[
   'You are the Yellow clickable data-index builder for QuantaPhi.',
   'Primary subject: '+q,
@@ -248,7 +265,7 @@ async function loadExpandedDataIndex(q,currentSections,currentEvidence){
   const r=await timeout('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:instruction,context:{application:'QuantaPhi',assistant:'gpt-yellow-data-index',task:'dense-clickable-entity-index',verified_context:{query:q,retrieval_batches:retrieved.length}}})},18000);
   const d=await r.json().catch(()=>({}));if(!r.ok)throw new Error('HTTP '+r.status);
   const j=parseAiJson(aiPayloadText(d)),seen=new Set(),terms=(Array.isArray(j.terms)?j.terms:[]).map(x=>String(typeof x==='string'?x:x?.value||'').replace(/\s+/g,' ').trim()).filter(term=>{const k=term.toLowerCase();if(!term||term.length>120||seen.has(k)||k===String(q).toLowerCase())return false;seen.add(k);return true}).slice(0,100);
-  if(!terms.length)return;
+  const categoryTerms=await categoryPromise;if(terms.length<=categoryTerms.length)return;
   list.innerHTML=terms.map(term=>'<li><a href="'+esc(searchPermalink(term))+'" title="Search QuantaPhi for '+esc(term)+'">'+esc(term)+'</a></li>').join('');
  }catch(_){}
 }
