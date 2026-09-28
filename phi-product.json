@@ -1,0 +1,39 @@
+{
+  "schema": "phi-product/v1",
+  "name": "QuantaPhi",
+  "repo": "www-infinity4/QuantaPhi",
+  "productionUrl": "https://www-infinity4.github.io/QuantaPhi/",
+  "automation": {
+    "monitor": "https://monitor-phi.marvaseater.workers.dev",
+    "mode": "observe-diagnose-patch-verify",
+    "changePolicy": "scoped",
+    "completionGate": "verification-required"
+  },
+  "checks": [
+    {
+      "id": "page-load",
+      "type": "http",
+      "expect": "2xx"
+    },
+    {
+      "id": "search",
+      "type": "interaction",
+      "expect": "results-render"
+    },
+    {
+      "id": "entity-lock",
+      "type": "contract",
+      "expect": "resolved-entity-persists"
+    },
+    {
+      "id": "media",
+      "type": "interaction",
+      "expect": "playable-in-page"
+    },
+    {
+      "id": "collect",
+      "type": "interaction",
+      "expect": "persists-and-wallet-updates"
+    }
+  ]
+}
