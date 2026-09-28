@@ -147,6 +147,23 @@ export default {
       });
     }
 
+    if (url.pathname === "/v1/quants/events" && ["POST", "GET"].includes(request.method)) {
+      await env.DB.prepare("CREATE TABLE IF NOT EXISTS quant_click_events(event_id TEXT PRIMARY KEY,wallet_id TEXT NOT NULL,site TEXT NOT NULL,action TEXT NOT NULL,content_type TEXT,target TEXT NOT NULL,parent_topic TEXT,target_topic TEXT,parent_quant_id TEXT,quant_id TEXT,token_id TEXT,occurred_at TEXT NOT NULL,received_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)").run();
+      if (request.method === "GET") {
+        const rows = await env.DB.prepare("SELECT event_id AS eventId,site,action,content_type AS contentType,target,parent_topic AS parentTopic,target_topic AS targetTopic,parent_quant_id AS parentQuantId,quant_id AS quantId,token_id AS tokenId,occurred_at AS occurredAt FROM quant_click_events WHERE wallet_id=? ORDER BY received_at DESC LIMIT 100").bind(wallet).all();
+        return json({ ok: true, events: rows.results || [] });
+      }
+      const body = await request.json().catch(() => ({}));
+      const field = (key, max) => String(body[key] || "").trim().slice(0, max);
+      const eventId = field("eventId", 80), site = field("site", 100), action = field("action", 60), target = field("target", 180);
+      if (!/^[a-f0-9-]{36}$/i.test(eventId) || !site || !action || !target) return json({ error: "invalid_event" }, 400);
+      const occurredAt = field("occurredAt", 40);
+      if (!Number.isFinite(Date.parse(occurredAt))) return json({ error: "invalid_event_time" }, 400);
+      await env.DB.prepare("INSERT OR IGNORE INTO quant_click_events(event_id,wallet_id,site,action,content_type,target,parent_topic,target_topic,parent_quant_id,quant_id,token_id,occurred_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)")
+        .bind(eventId,wallet,site,action,field("contentType",60),target,field("parentTopic",180),field("targetTopic",180),field("parentQuantId",100),field("quantId",100),field("tokenId",100),occurredAt).run();
+      return json({ ok: true, eventId }, 201);
+    }
+
     if (url.pathname === "/v1/quants/collects" && request.method === "POST") {
       const body = await request.json().catch(() => ({}));
       const key = String(body.key || "").trim().slice(0, 700);
