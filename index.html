@@ -289,6 +289,12 @@ async function monitorLifecycleAdvance(stage,detail={}){
 }
 function monitorRendered(){queueMicrotask(()=>requestAnimationFrame(()=>void monitorLifecycleAdvance('BLUE',{destination:'quantaphi-ui'})))}
 function monitorActed(action){const s=sessionStorage.getItem('quantaPhiActiveQuditStageV1');if(s==='RED')monitorLifecycleAdvance('BLUE',{destination:'quantaphi-ui'}).then(()=>monitorLifecycleAdvance('YELLOW',{action}));else if(s==='BLUE')void monitorLifecycleAdvance('YELLOW',{action})}
+async function fallbackResearch(query){
+ const u=new URL('https://en.wikipedia.org/w/api.php');
+ u.search=new URLSearchParams({action:'query',format:'json',generator:'search',gsrsearch:query,gsrlimit:'12',prop:'extracts|pageimages',exintro:'1',explaintext:'1',exchars:'600',piprop:'thumbnail',pithumbsize:'700',origin:'*'});
+ const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error('Research source HTTP '+r.status);
+ const j=await r.json();return {results:Object.values(j.query?.pages||{}).sort((a,b)=>(a.index||99)-(b.index||99)).map(p=>({title:p.title,url:'https://en.wikipedia.org/?curid='+p.pageid,content:p.extract||'',img_src:p.thumbnail?.source})).filter(p=>p.title)};
+}
 async function search(){
  const q=$('#q').value.trim(); if(!q)return;
  void monitorLifecycleStart(q);
@@ -340,6 +346,7 @@ async function search(){
      sr=await fetchWithTimeout(searchUrl,{cache:'no-store'},6500);
      sj=sr.ok?await sr.json():{results:[]};
    }
+   if(!Array.isArray(sj?.results)||!sj.results.length){try{sj=await fallbackResearch(nq);$('#status').innerHTML='<small>Search gateway unavailable · showing research source results</small>'}catch(_){sj={results:[]}}}
    const particles=classify(q); const required=particles.filter(x=>!STOP.has(x.w.toLowerCase())).map(x=>x.w.toLowerCase()); let assimilation=window.__qAssimilation||null;if(assimilation&&assimilation.primary!==q)assimilation=null;let inputExtension=window.__qInputExtension||null;if(inputExtension&&inputExtension.primary!==q)inputExtension=null; const weightedConcept=particles.map((x,i)=>({term:x.w,color:x.color,region:x.region,role:x.role,weight:i===0?100:i===1?90:STOP.has(x.w.toLowerCase())?15:55})); const searchAim={primary:q,entity:exactEntity,required_terms:required,weighted_concept:weightedConcept}; const technicalIntent=/\b(schematic|circuit|diagram|radio|receiver|transmitter|solid state|transistor|oscillator|amplifier|antenna|wiring)\b/i.test(q);
    const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
    const weighted=(sj.results||[]).map((x,i)=>{const text=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>text.includes(w)).length;const entityHits=entityWords.filter(w=>text.includes(w)).length;const coverage=required.length?hits/required.length:0;return {...x,_entityHits:entityHits,_weight:(coverage*100)+(hits*35)+(entityHits*100)+Math.max(0,20-i)};}).filter(x=>{if(technicalIntent){const txt=((x.title||'')+' '+(x.content||x.description||'')).toLowerCase();const hits=required.filter(w=>txt.includes(w)).length;return hits>=Math.min(3,required.length)}if(entityWords.length<2)return true;const title=String(x.title||'').toLowerCase(),body=String(x.content||x.description||'').toLowerCase();const phrase=entityWords.join(' ');return title.includes(phrase)||body.includes(phrase)||x._entityHits===entityWords.length}).sort((a,b)=>b._weight-a._weight);
@@ -374,7 +381,7 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
      const searchUrl=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
      const exactEntity=entityClause(q);
      searchUrl.search=new URLSearchParams({q:exactEntity,format:'json',categories:'general',safesearch:'1'});
-     const sj=await fetchWithTimeout(searchUrl,{cache:'no-store'},6500).then(r=>r.ok?r.json():({results:[]}));
+     let sj=await fetchWithTimeout(searchUrl,{cache:'no-store'},6500).then(r=>r.ok?r.json():({results:[]})).catch(()=>({results:[]}));if(!sj.results?.length)sj=await fallbackResearch(q);
      const required=classify(q).filter(x=>!STOP.has(x.w.toLowerCase())).map(x=>x.w.toLowerCase());
      const entityWords=(exactEntity.replace(/["']/g,'').toLowerCase().match(/[a-z0-9]+/g)||[]).filter(w=>!STOP.has(w));
      const ranked=(sj.results||[]).map((x,i)=>{const body=((x.title||'')+' '+(x.content||x.description||'')).replace(/\\s+/g,' ').trim();const low=body.toLowerCase();const hits=required.filter(w=>low.includes(w)).length;const entityHits=entityWords.filter(w=>low.includes(w)).length;return {body,hits,entityHits,score:(required.length?hits/required.length:0)*100+hits*35+entityHits*100+Math.max(0,20-i)}}).filter(x=>x.body&&x.hits&&(entityWords.length<2||x.entityHits===entityWords.length)).sort((a,b)=>b.score-a.score);
@@ -385,7 +392,7 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
    try{
     const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
     u.search=new URLSearchParams({q:q,format:'json',categories:'general',safesearch:'1'});
-    const j=await fetchWithTimeout(u,{cache:'no-store'},6500).then(r=>r.ok?r.json():({results:[]}));
+    let j=await fetchWithTimeout(u,{cache:'no-store'},6500).then(r=>r.ok?r.json():({results:[]})).catch(()=>({results:[]}));if(!j.results?.length)j=await fallbackResearch(q);
     const rows=(j.results||[]).filter(x=>x.title||x.content||x.description);
     if(rows.length){
      const text=rows.slice(0,12).map(x=>String(x.content||x.description||x.title||'').trim()).filter(Boolean).join(' ').replace(/\s+/g,' ').split(/\s+/).slice(0,500).join(' ');
