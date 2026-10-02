@@ -335,6 +335,23 @@ async function fallbackResearch(query){
  const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error('Research source HTTP '+r.status);
  const j=await r.json();const botanical=/\b(tree|trees|orchard|fruit|fruits|plant|plants)\b/i.test(query);return {results:Object.values(j.query?.pages||{}).sort((a,b)=>(a.index||99)-(b.index||99)).filter(p=>{if(!botanical)return true;const title=String(p.title||''),copy=String(p.extract||'');return !/\b(disambiguation|film|novel|album|song|television|series|thriller|fiction)\b/i.test(title+' '+copy.slice(0,160))&&(/\bapple\b/i.test(query)?/\b(apple|malus)\b/i.test(title)&&/\b(malus|fruit|cultivar|rosaceae|apple variety)\b/i.test(copy):/\b(fruit|plant|species|cultivar|orchard|genus|botan|apple tree)\b/i.test(copy))}).map(p=>({title:p.title,url:'https://en.wikipedia.org/?curid='+p.pageid,content:p.extract||'',img_src:p.thumbnail?.source})).filter(p=>p.title)};
 }
+function quantaAiUserId(){
+ try{
+  const unified=JSON.parse(localStorage.getItem('infinity_unified_wallet_v1')||'null');
+  if(unified?.currentWalletId)return 'wallet:'+String(unified.currentWalletId).slice(0,150);
+ }catch(_){}
+ try{
+  const session=JSON.parse(localStorage.getItem('starquest_session')||'null');
+  if(session?.key)return 'starquest:'+String(session.key).slice(0,145);
+ }catch(_){}
+ let id='';
+ try{id=localStorage.getItem('quantaPhiAiUserIdV1')||''}catch(_){}
+ if(!id){
+  id='quanta-device-'+(crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+'-'+Math.random().toString(36).slice(2));
+  try{localStorage.setItem('quantaPhiAiUserIdV1',id)}catch(_){}
+ }
+ return id;
+}
 async function search(){
  const q=$('#q').value.trim(); if(!q)return;
  const unifiedToken=await QuantaUnifiedTokenLedger.create(q),unifiedTokenId=unifiedToken?.id||'';
@@ -455,7 +472,7 @@ async function search(){
  'Schema: {"intent":"one concise sentence stating the user intent","red":{"overview":"natural GPT overview"},"yellow":[{"label":"optional category","value":"short standalone clickable term","source_indexes":[0]}],"blue":[{"region":"specific input region","contribution":"what it adds to this build"}],"orange":[{"label":"short category","value":"terse related data point","source_indexes":[0]}]}',
  'Evidence: '+JSON.stringify(evidence)
 ].filter(Boolean).join('\n');
-const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl.abort(),20000);let r;try{r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:instruction,context:{application:'QuantaPhi',assistant:'gpt-overview-writer',task:'five-zone-overview-synthesis',verified_context:{query:q,source_count:evidence.length}}}),signal:overviewCtl.signal})}finally{clearTimeout(overviewTimer)}
+const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl.abort(),20000);let r;try{r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({userId:quantaAiUserId(),input:instruction,context:{application:'QuantaPhi',assistant:'gpt-overview-writer',task:'five-zone-overview-synthesis',verified_context:{query:q,source_count:evidence.length}}}),signal:overviewCtl.signal})}finally{clearTimeout(overviewTimer)}
    const d=await r.json().catch(()=>({}));
    if(!r.ok)throw new Error(d.message||d.error||('HTTP '+r.status));
    let text=aiPayloadText(d).trim();
