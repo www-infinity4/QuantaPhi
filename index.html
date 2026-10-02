@@ -497,24 +497,105 @@ $('#go').onclick=search;
  document.addEventListener('play',e=>{if(e.target.matches('audio,video'))monitorActed('media-play')},true); $('#q').addEventListener('keydown',e=>{if(e.key==='Enter')search()});
 </script><script>(function(){const b=document.getElementById('qmenuBtn'),m=document.getElementById('qmenu'),w=document.getElementById('qmenuWallet');if(!b||!m)return;b.addEventListener('click',function(){m.hidden=!m.hidden});m.addEventListener('click',function(e){if(e.target===w){e.preventDefault();setTimeout(()=>document.getElementById('controlPhiWalletButton')?.click(),0)}m.hidden=true})})();</script><script>
 (function(){
- const T='quantaPhiTokens',S='quantaPhiStarCoins';
- // WALLET CONTRACT: persistent QuantaPhi state. Never reset, rename, clear, or overwrite from feature code.
+ const T='quantaPhiTokens',S='quantaPhiStarCoins',G='starquest_guest_profile_v1',SESSION='starquest_session',USERS='starquest_users',UNIFIED='infinity_unified_wallet_v1';
+ // WALLET CONTRACT: Star Coins are earned locally first (+0.1 collect/share),
+ // then mirrored into the shared wallet. Control Phi is a UI/bridge, not a
+ // single point of failure for QuantaPhi rewards.
  function cookieGet(k){try{const m=document.cookie.match(new RegExp('(?:^|; )'+k+'=([^;]*)'));return m?decodeURIComponent(m[1]):''}catch(_){return ''}}
  function cookiePut(k,v){try{document.cookie=k+'='+encodeURIComponent(String(v))+'; Max-Age=315360000; Path=/; SameSite=Lax'}catch(_){}}
  function num(k){try{const raw=localStorage.getItem(k),ls=raw===null?NaN:Number(raw),ck=Number(cookieGet(k));if(Number.isFinite(ls)&&Number.isFinite(ck))return Math.max(ls,ck);if(Number.isFinite(ls))return ls;if(Number.isFinite(ck))return ck;return 0}catch(_){return Number(cookieGet(k))||0}}
  function put(k,v){let ok=false;try{localStorage.setItem(k,String(v));ok=localStorage.getItem(k)===String(v)}catch(_){}cookiePut(k,v);return ok}
- let tokenBalance=num(T),starBalance=num(S);
- try{window.ControlPhi?.importLegacyStarCoinBalance?.(starBalance,'quantaPhiStarCoins')}catch(_){}
- function pulse(el){if(!el)return;el.classList.remove('qwalletPulse');void el.offsetWidth;el.classList.add('qwalletPulse')}
- function render(which){const t=document.getElementById('qtoken');if(t)t.textContent='▦ Quants: '+tokenBalance;if(which==='token')pulse(t);try{window.ControlPhi?.refreshWallet?.()}catch(_){}}
+ function read(k,fallback){try{return JSON.parse(localStorage.getItem(k)||'null')??fallback}catch(_){return fallback}}
+ function starStore(){
+  const session=read(SESSION,null),users=read(USERS,{});
+  if(session?.key&&users?.[session.key]){
+   return{wallet:users[session.key],save(wallet){users[session.key]=wallet;localStorage.setItem(USERS,JSON.stringify(users))}}
+  }
+  const wallet=read(G,{key:'__guest__',username:'Guest',tokens:0,pendingShareCredits:0,shareCount:0,shareEvents:[],ledger:[]});
+  return{wallet,save(wallet){localStorage.setItem(G,JSON.stringify(wallet))}}
+ }
+ function normalize(wallet){
+  wallet=wallet&&typeof wallet==='object'?wallet:{};
+  wallet.tokens=Math.max(0,Number(wallet.tokens)||0);
+  wallet.pendingShareCredits=Math.max(0,Number(wallet.pendingShareCredits)||0);
+  wallet.shareCount=Math.max(0,Number(wallet.shareCount)||0);
+  wallet.shareEvents=Array.isArray(wallet.shareEvents)?wallet.shareEvents:[];
+  wallet.ledger=Array.isArray(wallet.ledger)?wallet.ledger:[];
+  return wallet
+ }
+ function effective(wallet){return Math.round((wallet.tokens+wallet.pendingShareCredits/10)*10)/10}
+ function mirror(wallet){
+  try{
+   const state=read(UNIFIED,null),id=state?.currentWalletId,active=id&&state?.wallets?.[id];
+   if(active){
+    active.balances=active.balances&&typeof active.balances==='object'?active.balances:{};
+    active.balances.starCoin=effective(wallet);
+    active.balances.starCoinWhole=wallet.tokens;
+    active.balances.starCoinProgress=wallet.pendingShareCredits;
+    active.starCoinShares=wallet.shareCount;
+    state.updatedAt=new Date().toISOString();
+    localStorage.setItem(UNIFIED,JSON.stringify(state));
+   }
+  }catch(_){}
+ }
+ function paint(wallet,pulseStar){
+  wallet=normalize(wallet||starStore().wallet);
+  const value=effective(wallet);
+  put(S,value);
+  document.querySelectorAll('[data-control-phi-wallet-balance]').forEach(el=>el.textContent=String(wallet.tokens));
+  document.querySelectorAll('[data-control-phi-wallet-progress]').forEach(el=>el.textContent=wallet.pendingShareCredits+'/10');
+  const button=document.getElementById('controlPhiWalletButton');
+  if(button){
+   button.innerHTML='<span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong>'+wallet.tokens+'</strong><small>'+wallet.pendingShareCredits+'/10</small>';
+   if(pulseStar){button.classList.remove('qwalletPulse');void button.offsetWidth;button.classList.add('qwalletPulse')}
+  }
+  try{window.ControlPhi?.refreshWallet?.()}catch(_){}
+  return{balance:wallet.tokens,progressToNextCoin:wallet.pendingShareCredits,effective:value,shareCount:wallet.shareCount}
+ }
+ function importLegacy(){
+  const store=starStore(),wallet=normalize(store.wallet),legacy=num(S),current=effective(wallet);
+  if(legacy>current+0.0001){
+   wallet.tokens=Math.floor(legacy+1e-9);
+   wallet.pendingShareCredits=Math.max(0,Math.min(9,Math.round((legacy-wallet.tokens)*10)));
+   wallet.shareCount=Math.max(wallet.shareCount,wallet.tokens*10+wallet.pendingShareCredits);
+   wallet.ledger.push({id:'tx-quanta-legacy-'+Date.now().toString(36),type:'legacy_balance_recovery',amount:Math.round((legacy-current)*10)/10,balance:wallet.tokens,pendingShareCredits:wallet.pendingShareCredits,referenceId:'legacy-starcoin:quantaPhiStarCoins',createdAt:Date.now(),source:'quantaphi'});
+   wallet.ledger=wallet.ledger.slice(-1000);store.save(wallet);mirror(wallet)
+  }
+  return wallet
+ }
+ function award(kind,reference){
+  const store=starStore(),wallet=normalize(store.wallet),now=Date.now();
+  const ref=String(reference||crypto.randomUUID());
+  const referenceId='quantaphi:'+kind+':'+ref;
+  if(wallet.ledger.some(entry=>entry?.referenceId===referenceId))return{...paint(wallet,false),awarded:0,alreadyRecorded:true};
+  wallet.pendingShareCredits+=1;
+  let awarded=0;
+  while(wallet.pendingShareCredits>=10){wallet.pendingShareCredits-=10;wallet.tokens+=1;awarded+=1}
+  if(kind==='share'){
+   wallet.shareCount+=1;
+   wallet.shareEvents.push({id:'qshare-'+now.toString(36)+'-'+Math.random().toString(36).slice(2,7),reference:ref,method:'quantaphi',confirmed:true,createdAt:now,source:'quantaphi'});
+   wallet.shareEvents=wallet.shareEvents.slice(-1000);
+  }
+  wallet.ledger.push({id:'tx-quantaphi-'+now.toString(36)+'-'+Math.random().toString(36).slice(2,7),type:kind==='share'?'share_credit':'collect_credit',amount:awarded,credit:0.1,balance:wallet.tokens,pendingShareCredits:wallet.pendingShareCredits,referenceId,createdAt:now,source:'quantaphi'});
+  wallet.ledger=wallet.ledger.slice(-2000);
+  store.save(wallet);mirror(wallet);put(S,effective(wallet));
+  const detail={...paint(wallet,true),awarded,credit:0.1,kind,source:'quantaphi',referenceId};
+  window.dispatchEvent(new CustomEvent('controlphi:wallet-change',{detail}));
+  if(kind==='share')window.dispatchEvent(new CustomEvent('starquest:share-progress',{detail}));
+  return detail
+ }
+ let tokenBalance=num(T);
  window.QuantaPhiWallet={
-  addToken:function(){tokenBalance=Math.max(tokenBalance,num(T))+1;put(T,tokenBalance);window.__qTokenSession=(window.__qTokenSession||0)+1;render('token');return tokenBalance},
-  addCollect:function(reference){try{return window.ControlPhi?.ensureActionCredit?.(reference||crypto.randomUUID(),'collect')||null}catch(_){return null}},
-  render:render
+  addToken:function(){tokenBalance=Math.max(tokenBalance,num(T))+1;put(T,tokenBalance);window.__qTokenSession=(window.__qTokenSession||0)+1;return tokenBalance},
+  addCollect:function(reference){return award('collect',reference||crypto.randomUUID())},
+  addShare:function(reference){return award('share',reference||crypto.randomUUID())},
+  snapshot:function(){return paint(starStore().wallet,false)},
+  render:function(){return paint(starStore().wallet,false)}
  };
- render();
- window.addEventListener('load',()=>{try{starBalance=num(S);window.ControlPhi?.importLegacyStarCoinBalance?.(starBalance,'quantaPhiStarCoins');window.ControlPhi?.refreshWallet?.()}catch(_){}},{once:true});
-})();</script><script>(function(){const wrap=document.getElementById('qrefineWrap'),r=document.getElementById('qrefine'),b=document.getElementById('qrefineBtn'),q=document.getElementById('q');if(!wrap||!r||!b||!q)return;function reveal(){if(q.value.trim())wrap.hidden=false}document.getElementById('go').addEventListener('click',reveal);q.addEventListener('keydown',function(e){if(e.key==='Enter')reveal()});function refine(){const extra=r.value.trim(),base=q.value.trim();if(!extra||!base)return;q.value=(base+' '+extra).trim();r.value='';window.__qRefining=true;Promise.resolve(search()).finally(()=>{window.__qRefining=false})}b.addEventListener('click',refine);r.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();refine()}})})();</script><script>(function(){const b=document.getElementById('qshare'),q=document.getElementById('q');if(!b)return;async function share(){const data={title:'Quantaφ',text:q&&q.value.trim()?('Quantaφ: '+q.value.trim()):'Quantaφ',url:location.href};let completed=false;try{if(navigator.share){await navigator.share(data);completed=true}else{await navigator.clipboard.writeText(location.href);completed=true}}catch(_){return}if(completed){try{window.ControlPhi?.refreshWallet?.()}catch(_){}b.textContent='Shared +0.1 ★';setTimeout(()=>b.textContent='Share +0.1 ★',1400)}}b.addEventListener('click',share)})();</script><script>(function(){
+ paint(importLegacy(),false);
+ window.addEventListener('load',()=>paint(importLegacy(),false),{once:true});
+ window.addEventListener('storage',e=>{if([G,SESSION,USERS,S,UNIFIED].includes(e.key||''))paint(starStore().wallet,false)});
+})();</script><script>(function(){const wrap=document.getElementById('qrefineWrap'),r=document.getElementById('qrefine'),b=document.getElementById('qrefineBtn'),q=document.getElementById('q');if(!wrap||!r||!b||!q)return;function reveal(){if(q.value.trim())wrap.hidden=false}document.getElementById('go').addEventListener('click',reveal);q.addEventListener('keydown',function(e){if(e.key==='Enter')reveal()});function refine(){const extra=r.value.trim(),base=q.value.trim();if(!extra||!base)return;q.value=(base+' '+extra).trim();r.value='';window.__qRefining=true;Promise.resolve(search()).finally(()=>{window.__qRefining=false})}b.addEventListener('click',refine);r.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();refine()}})})();</script><script>(function(){const b=document.getElementById('qshare'),q=document.getElementById('q');if(!b)return;async function share(){const data={title:'Quantaφ',text:q&&q.value.trim()?('Quantaφ: '+q.value.trim()):'Quantaφ',url:location.href};let completed=false;try{if(navigator.share){await navigator.share(data);completed=true}else{await navigator.clipboard.writeText(location.href);completed=true}}catch(_){return}if(completed){try{window.QuantaPhiWallet?.addShare?.('page:'+Date.now()+':'+Math.random().toString(36).slice(2,7))}catch(_){}b.textContent='Shared +0.1 ★';setTimeout(()=>b.textContent='Share +0.1 ★',1400)}}b.addEventListener('click',share)})();</script><script>(function(){
  document.addEventListener('click',async function(e){
   const b=e.target.closest('.cardShare');if(!b)return;
   const card=b.closest('.mcard'),q=document.getElementById('q')?.value.trim()||'QuantaPhi';
@@ -534,7 +615,7 @@ $('#go').onclick=search;
    }
    if(!shared){const data={title:heading,text:shareText,url:returnUrl};if(navigator.share){await navigator.share(data);shared=true}else if(navigator.clipboard){await navigator.clipboard.writeText(shareText+'\n\n'+returnUrl);shared=true}}
   }catch(_){b.textContent='Share +0.1 ★';return}
-  if(shared){try{window.ControlPhi?.refreshWallet?.()}catch(_){}const old=b.textContent;b.textContent='Shared +0.1 ★';setTimeout(()=>b.textContent=old.includes('image')?'Share image +0.1 ★':'Share +0.1 ★',1400)}
+  if(shared){try{window.QuantaPhiWallet?.addShare?.('card:'+heading+':'+Date.now()+':'+Math.random().toString(36).slice(2,7))}catch(_){}const old=b.textContent;b.textContent='Shared +0.1 ★';setTimeout(()=>b.textContent=old.includes('image')?'Share image +0.1 ★':'Share +0.1 ★',1400)}
  });
 })();</script><script>(function(){const media=document.getElementById('media'),grid=document.getElementById('mediaGrid');function openMedia(kind){if(media)media.hidden=false;if(grid){const cards=[...grid.querySelectorAll('.mcard')];cards.forEach(card=>{const t=(card.querySelector('small')?.textContent||'').toLowerCase();card.hidden=(kind!=='all'&&!t.includes(kind))})}if(media)media.scrollIntoView({behavior:'smooth',block:'start'})}document.getElementById('qImagesBtn')?.addEventListener('click',()=>openMedia('image'));document.getElementById('qVideoBtn')?.addEventListener('click',()=>openMedia('video'));document.getElementById('qSoundBtn')?.addEventListener('click',()=>openMedia('sound'))})();</script><script>
 (function(){
@@ -758,7 +839,7 @@ $('#go').onclick=search;
   }catch(err){console.error('Playable video feed failed',err);grid.innerHTML='<p class="err">Playable Internet Archive video feed could not load.</p>'}
  }
  document.getElementById('qVideoBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();archiveVideoFeed()},true);
- document.getElementById('overviewShare')?.addEventListener('click',async()=>{const b=document.getElementById('overviewShare'),q=document.getElementById('q')?.value.trim()||'QuantaPhi',text=document.getElementById('overview')?.innerText.trim()||'';if(!text)return;try{if(navigator.share)await navigator.share({title:q+' — QuantaPhi AI Overview',text,url:searchPermalink(q)});else await navigator.clipboard?.writeText(q+'\n\n'+text+'\n\n'+searchPermalink(q));try{window.ControlPhi?.refreshWallet?.()}catch(_){}b.textContent='Shared ✓ +0.1 ★';setTimeout(()=>b.textContent='Share AI Overview +0.1 ★',1800)}catch(_){b.textContent='Share AI Overview +0.1 ★'}});
+ document.getElementById('overviewShare')?.addEventListener('click',async()=>{const b=document.getElementById('overviewShare'),q=document.getElementById('q')?.value.trim()||'QuantaPhi',text=document.getElementById('overview')?.innerText.trim()||'';if(!text)return;try{if(navigator.share)await navigator.share({title:q+' — QuantaPhi AI Overview',text,url:searchPermalink(q)});else await navigator.clipboard?.writeText(q+'\n\n'+text+'\n\n'+searchPermalink(q));try{window.QuantaPhiWallet?.addShare?.('overview:'+q+':'+Date.now()+':'+Math.random().toString(36).slice(2,7))}catch(_){}b.textContent='Shared ✓ +0.1 ★';setTimeout(()=>b.textContent='Share AI Overview +0.1 ★',1800)}catch(_){b.textContent='Share AI Overview +0.1 ★'}});
  document.addEventListener('click',async e=>{
   const b=e.target.closest('.cardCollect');if(b)monitorActed('collect');if(!b)return;
   e.preventDefault();e.stopPropagation();
