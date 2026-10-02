@@ -13,7 +13,7 @@
   const menu=()=>document.getElementById('qmenu');
   const clean=(v,max=1200)=>String(v||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().slice(0,max);
   const esc=v=>clean(v,4000).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
-  const show=message=>{const m=media(),g=grid();if(m)m.hidden=false;if(menu())menu().hidden=true;if(g)g.innerHTML=message||'';m?.scrollIntoView({behavior:'smooth',block:'start'})};
+  const show=(message,scroll=true)=>{const m=media(),g=grid();if(m)m.hidden=false;if(menu())menu().hidden=true;if(g)g.innerHTML=message||'';if(scroll)m?.scrollIntoView({behavior:'smooth',block:'start'})};
   const json=async(url,timeout=9000)=>{
     const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),timeout);
     try{const r=await fetch(url,{cache:'no-store',signal:ctl.signal});if(!r.ok)throw new Error('http '+r.status);return await r.json()}finally{clearTimeout(timer)}
@@ -94,9 +94,9 @@
     return (j?.response?.docs||[]).filter(x=>x.identifier).slice(0,16);
   }
 
-  async function images(){
+  async function images(options={}){
     const query=q();if(!query)return;
-    show('<small>Loading resilient image feed…</small>');
+    show('<small>Loading resilient image feed…</small>',options.scroll!==false);
     const rows=await searchImages(query);
     const g=grid();if(g)g.innerHTML=rows.length?rows.map(imageCard).join(''):'<p class="err">No image results were returned. Try a more specific search.</p>';
   }
@@ -127,7 +127,7 @@
   window.loadMedia = async function(query) {
     const input=document.getElementById('q');
     if(input&&query)input.value=String(query);
-    return images();
+    return images({scroll:false,automatic:true});
   };
-  window.QuantaMediaRepair={images,videos,sounds,commonsImages,iaRows};
+  window.QuantaMediaRepair={images,videos,sounds,commonsImages,iaRows,contract:'quanta-overview-first-v1'};
 })();
