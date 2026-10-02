@@ -7,7 +7,8 @@
     "monitor": "https://monitor-phi.marvaseater.workers.dev",
     "mode": "observe-diagnose-patch-verify",
     "changePolicy": "scoped",
-    "completionGate": "verification-required"
+    "completionGate": "verification-required",
+    "walletContract": "Monitor-Phi/docs/WALLET_MAINTENANCE_RUNBOOK.md"
   },
   "checks": [
     {
@@ -34,6 +35,21 @@
       "id": "collect",
       "type": "interaction",
       "expect": "persists-and-wallet-updates"
+    },
+    {
+      "id": "share-starcoin",
+      "type": "interaction",
+      "expect": "confirmed-share-adds-0.1-starcoin"
+    },
+    {
+      "id": "collect-starcoin",
+      "type": "interaction",
+      "expect": "first-collect-adds-0.1-starcoin-no-double-credit"
+    },
+    {
+      "id": "shared-token-count",
+      "type": "contract",
+      "expect": "matches-infinity-omni-quanta-canonical-total"
     }
   ]
 }
