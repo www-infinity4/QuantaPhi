@@ -89,7 +89,7 @@
     const u=new URL(IA);
     const mediatype=kind==='video'?'movies':'audio';
     const queryText='mediatype:'+mediatype+' AND (title:("'+exact+'") OR creator:("'+exact+'") OR description:("'+exact+'") OR subject:("'+exact+'"))';
-    u.search=new URLSearchParams({q:queryText,'fl[]':['identifier','title','description','creator','date'],rows:'16',page:'1',output:'json',sort:'downloads desc'});
+    u.search=new URLSearchParams({q:queryText,fl:'identifier,title,description,creator,date',rows:'16',page:'1',output:'json',sort:'downloads desc'});
     const j=await json(u,10000);
     return (j?.response?.docs||[]).filter(x=>x.identifier).slice(0,16);
   }
@@ -122,5 +122,12 @@
   replaceButton('qVideoBtn',videos);
   replaceButton('qSoundBtn',sounds);
 
+  // The original page's automatic media loader depended on one search backend.
+  // Keep initial search media useful even when that backend is unavailable.
+  window.loadMedia = async function(query) {
+    const input=document.getElementById('q');
+    if(input&&query)input.value=String(query);
+    return images();
+  };
   window.QuantaMediaRepair={images,videos,sounds,commonsImages,iaRows};
 })();
