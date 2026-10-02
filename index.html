@@ -643,7 +643,7 @@ $('#go').onclick=search;
    const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
    u.search=new URLSearchParams({q:scoped,format:'json',categories:category,safesearch:'1'});
    const j=await fetchWithTimeout(u,{cache:'no-store'},6500).then(r=>r.ok?r.json():({results:[]}));
-   const rows=(j.results||[]).slice(0,20);
+   const rows=(j.results||[]).slice(0,24);
    grid.innerHTML=rows.length?rows.map(x=>mediaCard(x,kind)).join(''):'<p class="err">No '+kind.toLowerCase()+' results found.</p>';
   }catch(_){grid.innerHTML='<p class="err">'+kind+' search could not load.</p>'}
  }
