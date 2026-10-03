@@ -461,8 +461,14 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
    if(!['openai','cloudflare-workers-ai','anthropic'].includes(d.provider))throw new Error('No supported AI provider answered');
    let text=aiPayloadText(d).trim();
    if(!text)throw new Error('Empty AI response');
-   const sections=parseOverviewSections(text);
-   if(!sections)throw new Error('Invalid five-zone AI response');
+   let sections=parseOverviewSections(text);
+   if(!sections){
+     const aiOverview=text.replace(/^\s*```(?:json)?\s*/i,'').replace(/\s*```\s*$/,'').trim();
+     if(!aiOverview)throw new Error('Empty AI overview');
+     sections=buildStructuredEvidenceFallback(q,evidence);
+     sections.sourceFallback=false;
+     sections.red={overview:aiOverview};
+   }
    $('#overview').innerHTML=renderFivePartOverview(sections,q,evidence);activateFivePartOverview();monitorRendered();loadExpandedDataIndex(q,sections,evidence);loadHistoryAssimilation(q,sections);$('#status').innerHTML='';loadMedia(q);await QuantaUnifiedTokenLedger.finalize(unifiedTokenId,q,sections,evidence);return;
  }catch(e){
    if(!isCurrent())return;
