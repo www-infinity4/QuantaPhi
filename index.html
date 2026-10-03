@@ -463,7 +463,11 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
    if(!text)throw new Error('Empty AI response');
    let sections=parseOverviewSections(text);
    if(!sections){
-     const aiOverview=text.replace(/^\s*```(?:json)?\s*/i,'').replace(/\s*```\s*$/,'').trim();
+     let aiOverview=text.replace(/^\s*```(?:json)?\s*/i,'').replace(/\s*```\s*$/,'').trim();
+     try{
+       const loose=parseAiJson(text);
+       aiOverview=String(loose?.red?.overview||loose?.overview||loose?.answer||loose?.output||aiOverview).trim();
+     }catch(_){}
      if(!aiOverview)throw new Error('Empty AI overview');
      sections=buildStructuredEvidenceFallback(q,evidence);
      sections.sourceFallback=false;
