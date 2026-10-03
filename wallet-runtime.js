@@ -237,7 +237,7 @@
   let cloudBalances={};
   async function refreshCloudBalances(){
     const assets=window.PhiAssetBalances,epochs=Object.fromEntries(['INFINITY','QUANT','MUSIC_QUANT'].map(code=>[code,assets?.beginRead(code)]));
-    try{let state;const bridge=window.StarQuestCloudLedger;
+    try{let state;const bridge=window.QuantaCloudConnection||window.StarQuestCloudLedger;
       if(bridge?.authenticatedFetch){const r=await bridge.authenticatedFetch('https://unified-wallet.marvaseater.workers.dev/v1/wallet/state');if(!r.ok)return;state=await r.json()}
       else{const Wallet=window.InfinityCloudWallet||(typeof window.InfinityUnifiedWallet==='function'?window.InfinityUnifiedWallet:null);if(!Wallet)return;const wallet=new Wallet({appName:document.title});state=await wallet.request('/v1/wallet/state',{cache:'no-store'})}
       for(const [code,balance]of Object.entries(state.balances||{})){if(assets&&code in epochs){if(assets.accept(code,balance,epochs[code]))cloudBalances[code]=balance}else cloudBalances[code]=balance}refreshWalletUI()
