@@ -94,10 +94,13 @@
     return (j?.response?.docs||[]).filter(x=>x.identifier).slice(0,16);
   }
 
+  let mediaRun=0;
   async function images(options={}){
+    const ticket=++mediaRun;
     const query=q();if(!query)return;
     show('<small>Loading resilient image feed…</small>',options.scroll!==false);
     const rows=await searchImages(query);
+    if(ticket!==mediaRun||q()!==query)return;
     const g=grid();if(g)g.innerHTML=rows.length?rows.map(imageCard).join(''):'<p class="err">No image results were returned. Try a more specific search.</p>';
   }
   async function videos(){
@@ -125,8 +128,6 @@
   // The original page's automatic media loader depended on one search backend.
   // Keep initial search media useful even when that backend is unavailable.
   window.loadMedia = async function(query) {
-    const input=document.getElementById('q');
-    if(input&&query)input.value=String(query);
     return images({scroll:false,automatic:true});
   };
   const originalElementIdentity=window.elementIdentity;
@@ -138,9 +139,12 @@
     };
   }
 
+  let overviewWatchRun=0;
   function scheduleOverviewWatchdog(){
+    const ticket=++overviewWatchRun;
     const query=q();if(!query)return;
     setTimeout(async()=>{
+      if(ticket!==overviewWatchRun||q()!==query)return;
       const overview=document.getElementById('overview');
       if(!overview)return;
       const text=String(overview.textContent||'').trim();
@@ -148,7 +152,8 @@
       try{
         const result=await window.fallbackResearch?.(query);
         const rows=(result?.results||[]).slice(0,10).map((x,i)=>({index:i,title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||x.extract||'').trim()}));
-        if(!rows.length)return;
+        if(!rows.length||ticket!==overviewWatchRun||q()!==query)return;
+        if(!/Building|AI Overview\s*$/i.test(String(overview.textContent||'')))return;
         const structured=window.buildStructuredEvidenceFallback?.(query,rows);
         const html=structured&&window.renderFivePartOverview?.(structured,query,rows);
         if(html){
@@ -160,8 +165,7 @@
       }catch(_){}
     },2500);
   }
-  document.getElementById('go')?.addEventListener('click',scheduleOverviewWatchdog,true);
-  document.getElementById('q')?.addEventListener('keydown',event=>{if(event.key==='Enter')scheduleOverviewWatchdog()},true);
+  window.addEventListener('quantaphi:search-start',scheduleOverviewWatchdog);
 
   window.QuantaMediaRepair={images,videos,sounds,commonsImages,iaRows,contract:'quanta-overview-first-v2'};
 })();
