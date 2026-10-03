@@ -6,7 +6,7 @@ const parse=key=>{try{return JSON.parse(localStorage.getItem(key)||'[]')}catch{r
 const read=()=>{const merged=[...parse(KEY),...parse(LEGACY),...memory.values()].filter(x=>x&&x.search_id);return [...new Map(merged.map(x=>[x.search_id,{query:x.query,search_id:x.search_id,source:'QUANTAPHI',created_at:x.created_at||new Date().toISOString()}])).values()]};
 const save=items=>{memory.clear();for(const item of items)memory.set(item.search_id,item);try{localStorage.setItem(KEY,JSON.stringify(items));localStorage.removeItem(LEGACY)}catch{}};
 let running=false;
-async function request(options){return Promise.race([global.StarQuestCloudLedger.authenticatedFetch(API,options),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Search commit timed out; retained for retry')),12000))])}
+async function request(options){return Promise.race([global.QuantaCloudConnection.authenticatedFetch(API,options),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Search commit timed out; retained for retry')),12000))])}
 async function apply(item,result){
  global.PhiAssetBalances?.confirm('QUANT',item.search_id,result.balance);
  const records=await global.QuantaUnifiedTokenLedger?.load?.()||[];
@@ -21,7 +21,7 @@ async function apply(item,result){
  global.dispatchEvent(new Event('infinity-wallet-updated'));
 }
 async function flush(){
- if(running||!global.StarQuestCloudLedger?.authenticatedFetch)return;
+ if(running||!global.QuantaCloudConnection?.authenticatedFetch)return;
  running=true;
  try{for(const item of read()){
   try{
@@ -49,15 +49,15 @@ async function confirm(search_id,result){
 }
 async function persistResearch(token){
  const search_id=token?.sourceEventId||token?.quantSearchId;
- if(!search_id||!global.StarQuestCloudLedger?.authenticatedFetch)return;
+ if(!search_id||!global.QuantaCloudConnection?.authenticatedFetch)return;
  const research={id:token.id,query:token.query,websiteUrl:token.websiteUrl,payload:token.payload,stage:token.stage,status:token.status,createdAt:token.createdAt,sourceCount:token.sourceCount};
- const r=await global.StarQuestCloudLedger.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/research',{method:'POST',body:{search_id,research}});
+ const r=await global.QuantaCloudConnection.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/research',{method:'POST',body:{search_id,research}});
  if(!r.ok)throw new Error('Research revision remains pending');
  await global.QuantaUnifiedTokenLedger.update(token.id,{cloudResearchSavedAt:new Date().toISOString()});
 }
 async function restoreHistory(){
- if(!global.StarQuestCloudLedger?.authenticatedFetch||!global.QuantaUnifiedTokenLedger)return;
- const r=await global.StarQuestCloudLedger.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/history');
+ if(!global.QuantaCloudConnection?.authenticatedFetch||!global.QuantaUnifiedTokenLedger)return;
+ const r=await global.QuantaCloudConnection.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/history');
  if(!r.ok)throw new Error('Cloud history read failed');
  const cloud=await r.json(),local=await global.QuantaUnifiedTokenLedger.load();
  const merged=[...local];
