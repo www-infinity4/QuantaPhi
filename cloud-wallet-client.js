@@ -12,7 +12,25 @@ function findDeviceToken(){
   return tokens.size===1?[...tokens][0]:'';
  }catch{return ''}
 }
-global.QuantaCloudConnection={async authenticatedFetch(target,options={}){
+const ready=location.origin==='https://quantaphi.net'?new Promise(resolve=>{
+ const start=()=>{
+  const frame=document.createElement('iframe'),nonce=crypto.randomUUID();frame.hidden=true;frame.src='https://www-infinity4.github.io/QuantaPhi/wallet-link.html?v=20261003-domain4';
+  let done=false;const finish=()=>{if(done)return;done=true;clearTimeout(timer);global.removeEventListener('message',receive);frame.remove();resolve()};
+  const timer=setTimeout(finish,8000);
+  const receive=event=>{
+   if(event.origin!=='https://www-infinity4.github.io'||event.source!==frame.contentWindow||event.data?.type!=='quanta:link-response'||event.data.nonce!==nonce)return;
+   try{const current=read('starquest_session',null),remote=JSON.parse(event.data.values?.starquest_session||'null');if(current&&(current.key||current.username)!==(remote?.key||remote?.username)){finish();return}}catch(_){finish();return}
+   const allowed=new Set(['starquest_session','c13b0_infinity_token_ledger_v3','infinity_unified_token_count_v3','phi:assetBalances:v1','quantaPhiBuildHistoryV1','quantaPhiCollected','quantaPhiTokens','quantaPhi:pendingSearchCommits:v2','quantaPhi:pendingInfinityCredits:v1']);
+   try{for(const [key,value]of Object.entries(event.data.values||{})){if((allowed.has(key)||/^starquest_ledger_device_v1:[A-Za-z0-9_-]+$/.test(key))&&typeof value==='string'&&localStorage.getItem(key)===null)localStorage.setItem(key,value)}}catch(_){}
+   global.dispatchEvent(new StorageEvent('storage',{key:'phi:assetBalances:v1'}));finish();
+   document.dispatchEvent(new CustomEvent('starquest:ledger-connected'));
+  };
+  global.addEventListener('message',receive);frame.onload=()=>frame.contentWindow.postMessage({type:'quanta:link-request',nonce},'https://www-infinity4.github.io');document.body.appendChild(frame);
+ };
+ if(document.body)start();else document.addEventListener('DOMContentLoaded',start,{once:true});
+}):Promise.resolve();
+global.QuantaCloudConnection={ready,async authenticatedFetch(target,options={}){
+ await ready;
  const url=new URL(target);
  const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&url.pathname.startsWith('/v1/quants/'));
  if(!allowed)throw new Error('unsupported_wallet_target');
