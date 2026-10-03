@@ -383,7 +383,16 @@ async function search(options={}){
  const run=++activeSearchRun;let refining=options.refine===true;
  const isCurrent=()=>run===activeSearchRun;
  const q=$('#q').value.trim().slice(0,500); if(!q)return;
- if(options.restore){const saved=(await QuantaUnifiedTokenLedger.load()).find(x=>options.tokenId?(x.id===options.tokenId||x.cloudTokenId===options.tokenId):String(x.query||x.title||'').toLowerCase()===q.toLowerCase());if(saved){window.__qActiveTokenId=saved.id;refining=true}}
+ if(options.restore){
+  const records=await QuantaUnifiedTokenLedger.load();
+  let saved=records.find(x=>options.tokenId?(x.id===options.tokenId||x.cloudTokenId===options.tokenId):String(x.query||x.title||'').toLowerCase()===q.toLowerCase());
+  if(!saved)try{
+   const history=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]');
+   const prior=Array.isArray(history)?history.find(x=>String(x?.query||'').trim().toLowerCase()===q.toLowerCase()&&String(x?.token_id||'').trim()):null;
+   if(prior){const tokenId=String(prior.token_id);saved=records.find(x=>x.id===tokenId||x.cloudTokenId===tokenId)||{id:tokenId}}
+  }catch(_){}
+  if(saved){window.__qActiveTokenId=saved.id;refining=true}
+ }
  const previousTokenId=window.__qActiveTokenId||'';
  const unifiedToken=refining&&previousTokenId?{id:previousTokenId}:await QuantaUnifiedTokenLedger.create(q);
  if(!isCurrent())return;
