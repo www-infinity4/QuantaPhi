@@ -410,7 +410,7 @@ async function search(options={}){
      try{window.QuantaPhiWallet?.addToken()}catch(_){}
      if(bridge&&bridge.authenticatedFetch){
        try{
-         const mintPromise=bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{query:nq,search_id:searchId}});sr=await Promise.race([mintPromise,new Promise((_,reject)=>setTimeout(()=>reject(new Error('Quant cloud sync timeout')),6500))]);
+         const mintPromise=bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{query:nq,credit_query:q,search_id:searchId,created_at:unifiedToken.createdAt||new Date().toISOString()}});sr=await Promise.race([mintPromise,new Promise((_,reject)=>setTimeout(()=>reject(new Error('Quant cloud sync timeout')),6500))]);
          const payload=await sr.json().catch(()=>({}));
          if(!sr.ok)throw new Error(payload.message||payload.error||('Quant mint HTTP '+sr.status));
          sj=payload.search||{results:[]};
@@ -931,21 +931,36 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
  function localQuantBalance(){
   const candidates=[];
   try{for(const key of ['quantaPhiTokens','quantaPhiQuants','quantaPhiBalance']){const n=Number(localStorage.getItem(key));if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}}catch(_){}
-  try{const a=JSON.parse(localStorage.getItem('phi:assetBalances:v1')||'null')?.assets?.QUANT;if(a){const n=Number(a.balance)+Object.keys(a.pending||{}).length;if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}}catch(_){}
+  try{const a=JSON.parse(localStorage.getItem('phi:assetBalances:v1')||'null')?.assets?.QUANT;if(a){const n=Number(a.balance);if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}}catch(_){}
   try{const u=JSON.parse(localStorage.getItem('infinity_unified_wallet_v1')||'null'),w=u?.wallets?.[u.currentWalletId],n=Number(w?.balances?.QUANT);if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}catch(_){}
+  return candidates.length?Math.max(...candidates):0
+ }
+ function localInfinityBalance(){
+  const candidates=[];
+  try{const a=JSON.parse(localStorage.getItem('phi:assetBalances:v1')||'null')?.assets?.INFINITY,n=Number(a?.balance);if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}catch(_){}
+  try{const u=JSON.parse(localStorage.getItem('infinity_unified_wallet_v1')||'null'),w=u?.wallets?.[u.currentWalletId],n=Number(w?.balances?.INFINITY);if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}catch(_){}
+  if(!candidates.length){const n=Number(window.InfinityTokenCount?.value?.());if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}
   return candidates.length?Math.max(...candidates):0
  }
  async function recoverLegacyOnce(){try{const amount=localQuantBalance();if(!Number.isSafeInteger(amount)||amount<1)return null;const r=await call('/v1/quants/legacy-migrate',{method:'POST',body:{legacy_amount:amount}});try{localStorage.setItem('quantaPhiLegacyRecovered',JSON.stringify({amount,at:new Date().toISOString()}))}catch(_){}return r}catch(_){return null}}
  async function recoverInfinityHistory(){
   try{
-   if(!window.InfinityCloudWallet||!window.QuantaUnifiedTokenLedger)return null;
-   const records=await window.QuantaUnifiedTokenLedger.load(),owned=Math.max(records.length,Number(window.InfinityTokenCount?.value?.()||0),Number(window.PhiAssetBalances?.value?.('INFINITY')||0));
-   if(!records.length&&!owned)return null;
-   const ids=records.map(x=>String(x?.id||'')).filter(Boolean).sort().join('|');let hash=2166136261;for(let i=0;i<ids.length;i++){hash^=ids.charCodeAt(i);hash=Math.imul(hash,16777619)}const importKey='quantaphi-canonical-history-v2-'+records.length+'-'+(hash>>>0).toString(16);
-   if(localStorage.getItem('quantaPhiD1HistoryRecoveredV2')===importKey)return null;
-   const tokens=records.filter(x=>x?.id&&!x?.cloudTokenId).slice(0,500).map(x=>({id:String(x.id),type:'INFINITY_SEARCH',source:String(x.sourceSystem||x.source||'INFINITY').toUpperCase(),createdAt:Date.parse(x.createdAt||x.created_at||'')||Date.now(),data:{query:String(x.query||x.title||''),local_token_id:String(x.id),source_event_id:String(x.sourceEventId||x.quantSearchId||''),website_url:String(x.websiteUrl||'')}}));
-   const cloud=new window.InfinityCloudWallet({appName:'QuantaPhi recovery'});const imported=await cloud.importLegacy({importKey,balances:{INFINITY:owned},tokens});
-   localStorage.setItem('quantaPhiD1HistoryRecoveredV2',importKey);return imported
+   if(!window.QuantaUnifiedTokenLedger)return null;
+   const records=await window.QuantaUnifiedTokenLedger.load();
+   let history=[];try{history=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]')}catch(_){}
+   const ids=records.map(x=>String(x?.id||'')).filter(Boolean).sort().join('|');let hash=2166136261;for(let i=0;i<ids.length;i++){hash^=ids.charCodeAt(i);hash=Math.imul(hash,16777619)}
+   const historyKey='quantaphi-history-v3-'+records.length+'-'+history.length+'-'+(hash>>>0).toString(16);
+   const owned=localInfinityBalance();
+   if(owned>0&&window.InfinityCloudWallet&&!localStorage.getItem('quantaPhiOwnedInfinityMigratedV3')){
+    const cloud=new window.InfinityCloudWallet({appName:'QuantaPhi balance recovery'});
+    await cloud.importLegacy({importKey:'quantaphi-owned-infinity-v3-'+owned,balances:{INFINITY:owned},tokens:[]});
+    localStorage.setItem('quantaPhiOwnedInfinityMigratedV3',JSON.stringify({balance:owned,at:new Date().toISOString()}))
+   }
+   if(localStorage.getItem('quantaPhiD1HistoryRecoveredV3')===historyKey)return null;
+   const tokens=records.filter(x=>x?.id&&!x?.cloudTokenId).slice(0,500).map(x=>({id:String(x.id),query:String(x.query||x.title||''),source:String(x.sourceSystem||x.source||'INFINITY').toUpperCase(),created_at:Date.parse(x.createdAt||x.created_at||'')||Date.now(),source_event_id:String(x.sourceEventId||x.quantSearchId||''),website_url:String(x.websiteUrl||'')}));
+   const searches=history.filter(x=>x?.id&&x?.query).slice(0,1000).map(x=>({id:String(x.id),query:String(x.query),created_at:Date.parse(x.created_at||'')||Date.now()}));
+   const imported=await call('/v1/quants/history-import',{method:'POST',body:{tokens,searches}});
+   localStorage.setItem('quantaPhiD1HistoryRecoveredV3',historyKey);return imported
   }catch(error){console.warn('Infinity history recovery deferred',error);return null}
  }
  async function sync(){
