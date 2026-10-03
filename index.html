@@ -57,7 +57,7 @@ const QuantaUnifiedTokenLedger=(()=>{
  async function finalize(id,q,sections,evidence){if(!id)return null;const research=payload(q,sections,evidence),next=await update(id,{stage:'research',status:'finished',sourceCount:research.sources.length,payload:research,websiteUrl:website(id,q),updatedAt:new Date().toISOString()});prebuild(id,q);return next}
  async function refreshCount(){const all=await load(),stable=window.InfinityTokenCount?.reconcile?.(all.length)?.value??all.length;setCount(stable);return stable}
  function protectCounter(){const b=document.getElementById('qtoken');if(!b)return;new MutationObserver(()=>{const expected='▦ Tokens: '+lastCount;if(b.textContent!==expected)b.textContent=expected}).observe(b,{childList:true,subtree:true,characterData:true});b.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();location.href='https://www-infinity4.github.io/C13b0/wallet/'},true)}
- return{load,save,update,create,finalize,refreshCount,protectCounter,website};
+ return{load,save,update,create,finalize,refreshCount,protectCounter,website,setCount};
 })();
 window.QuantaUnifiedTokenLedger=QuantaUnifiedTokenLedger;
 
@@ -963,6 +963,9 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
 window.addEventListener('load',()=>{void QuantaUnifiedTokenLedger.refreshCount();QuantaUnifiedTokenLedger.protectCounter()},{once:true});
 window.addEventListener('focus',()=>void QuantaUnifiedTokenLedger.refreshCount());
 window.addEventListener('infinity:token-ledger-updated',()=>void QuantaUnifiedTokenLedger.refreshCount());
-window.addEventListener('storage',e=>{if(e.key==='c13b0_infinity_token_ledger_v3')void QuantaUnifiedTokenLedger.refreshCount()});
+window.addEventListener('infinity:token-count-updated',e=>{QuantaUnifiedTokenLedger.setCount(e.detail?.value??window.InfinityTokenCount?.value?.()??0)});
+window.addEventListener('infinity:wallet-state',()=>void QuantaUnifiedTokenLedger.refreshCount());
+window.addEventListener('infinity-history-updated',()=>void QuantaUnifiedTokenLedger.refreshCount());
+window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infinity_unified_token_count_v3','infinity_unified_wallet_v1','infinityPhi:searchTokens:v1','omniPhi:history:v1','quantaPhiBuildHistoryV1'].includes(e.key||''))void QuantaUnifiedTokenLedger.refreshCount()});
 </script><!-- QuantaPhi publish stamp: unified-token-ledger-v1 -->
 <script src="media-repair.js?v=20261003-refine2"></script></body></html>
