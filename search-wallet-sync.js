@@ -4,14 +4,15 @@ const KEY='quantaPhi:pendingInfinityCredits:v1',API='https://unified-wallet.marv
 const read=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch{return[]}};
 const save=items=>localStorage.setItem(KEY,JSON.stringify(items));
 let running=false;
+async function request(url,options){return Promise.race([global.StarQuestCloudLedger.authenticatedFetch(url,options),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Cloud credit timed out; retained for retry')),12000))])}
 async function flush(){
  if(running||!global.StarQuestCloudLedger?.authenticatedFetch)return;
  running=true;
  try{for(const item of read()){
   try{
-   if(item.quantPending){const qr=await global.StarQuestCloudLedger.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{query:item.query,search_id:item.search_id}});if(!qr.ok)throw new Error('Quant credit still pending');global.PhiAssetBalances?.confirm('QUANT',item.search_id);item.quantPending=false;save(read().map(x=>x.search_id===item.search_id?item:x))}
+   if(item.quantPending){const qr=await request('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',body:{query:item.query,search_id:item.search_id}});if(!qr.ok)throw new Error('Quant credit still pending');const quantResult=await qr.json().catch(()=>({}));global.PhiAssetBalances?.confirm('QUANT',item.search_id,quantResult.balance);item.quantPending=false;save(read().map(x=>x.search_id===item.search_id?item:x))}
    const data={query:item.query,search_id:item.search_id,source:item.source,created_at:item.created_at};
-   const r=await global.StarQuestCloudLedger.authenticatedFetch(API+'/v1/tokens/mint',{method:'POST',body:{type:'INFINITY_SEARCH',source:'QUANTAPHI',idempotencyKey:'quant-search:'+item.search_id,data}});
+   const r=await request(API+'/v1/tokens/mint',{method:'POST',body:{type:'INFINITY_SEARCH',source:'QUANTAPHI',idempotencyKey:'quant-search:'+item.search_id,data}});
    const result=await r.json();if(!r.ok)throw new Error(result.error||'Infinity credit failed');
    const records=await global.QuantaUnifiedTokenLedger?.load?.()||[];const linked=records.find(x=>x.sourceEventId===item.search_id||x.quantSearchId===item.search_id);
    if(linked)global.PhiAssetBalances?.confirm('INFINITY',linked.id,result.balance);
