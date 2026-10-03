@@ -11,3 +11,6 @@ database_id = "711b3e05-f318-4d30-9a67-4de2af92aa6d"
 binding = "IDENTITY_DB"
 database_name = "starquest-ledger"
 database_id = "a1a973b2-a37c-4e1c-b68e-a73803238206"
+
+[triggers]
+crons = ["* * * * *"]

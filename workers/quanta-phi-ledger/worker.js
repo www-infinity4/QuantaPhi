@@ -1,3 +1,46 @@
+
+async function ensureSearchOutbox(env) {
+  await env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_search_outbox(user_id TEXT NOT NULL,search_id TEXT NOT NULL,wallet_id TEXT NOT NULL,query_text TEXT NOT NULL,credit_query TEXT NOT NULL,client_created_at TEXT NOT NULL DEFAULT '',status TEXT NOT NULL DEFAULT 'PENDING',attempts INTEGER NOT NULL DEFAULT 0,last_error TEXT,created_at INTEGER NOT NULL,updated_at INTEGER NOT NULL,PRIMARY KEY(user_id,search_id))").run();
+}
+async function recordSearchFailure(env,item,error) {
+  await env.DB.prepare("UPDATE quanta_search_outbox SET attempts=attempts+1,last_error=?,updated_at=? WHERE user_id=? AND search_id=? AND status='PENDING'").bind(String(error?.message||error).slice(0,500),Date.now(),item.user_id,item.search_id).run();
+}
+async function commitSearchPair(env,item) {
+  const {user_id:user,wallet_id:wallet,search_id:searchId,query_text:query,credit_query:creditQuery}=item, now=Date.now();
+  const sourceKey='initial-search:'+wallet+':'+searchId;
+  const hash=async value=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value))),b=>b.toString(16).padStart(2,'0')).join('');
+  const quantHash=await hash(wallet+'\n'+sourceKey+'\n'+query);
+  const data={query:creditQuery,search_id:searchId,source:'QUANTAPHI',...(item.client_created_at?{created_at:item.client_created_at}:{})};
+  const infinityHash=await hash(JSON.stringify({userId:user,type:'INFINITY_SEARCH',source:'QUANTAPHI',idempotencyKey:'quant-search:'+searchId,data}));
+  const priorMint=await env.DB.prepare("SELECT mint_id FROM quant_mints WHERE source_key=?").bind(sourceKey).first();
+  const priorToken=await env.DB.prepare("SELECT token_id FROM unified_token_records WHERE user_id=? AND token_type='INFINITY_SEARCH' AND json_extract(data_json,'$.search_id')=? LIMIT 1").bind(user,searchId).first();
+  const mintId=priorMint?.mint_id||'qm_'+quantHash.slice(0,32), tokenId=priorToken?.token_id||'ut_'+infinityHash.slice(0,32);
+  const infinityEvent='mint:'+user+':quant-search:'+searchId, quantEvent='quant-mint:'+user+':'+searchId;
+  const metadata=JSON.stringify({source:'QUANTAPHI',search_id:searchId,query:creditQuery});
+  // Every balance change, provenance record and history event shares this D1 transaction.
+  await env.DB.batch([
+    env.DB.prepare("INSERT OR IGNORE INTO unified_wallet_state(user_id,created_at,updated_at) VALUES(?,?,?)").bind(user,now,now),
+    env.DB.prepare("INSERT OR IGNORE INTO quant_mints(mint_id,wallet_id,provenance_hash,source_key,query_text,amount) VALUES(?,?,?,?,?,1)").bind(mintId,wallet,quantHash,sourceKey,query),
+    env.DB.prepare("INSERT INTO quant_ledger_entries(entry_id,reference_id,entry_type,wallet_id,delta) SELECT ?,?,'mint',?,1 WHERE NOT EXISTS(SELECT 1 FROM quant_ledger_entries WHERE reference_id=? AND entry_type='mint')").bind('qe_'+quantHash.slice(0,32),mintId,wallet,mintId),
+    env.DB.prepare("INSERT OR IGNORE INTO unified_token_records(token_id,user_id,token_type,source,data_json,provenance_hash,created_at) VALUES(?,?,'INFINITY_SEARCH','QUANTAPHI',?,?,?)").bind(tokenId,user,JSON.stringify(data),infinityHash,now),
+    env.DB.prepare("UPDATE unified_wallet_state SET infinity_balance=infinity_balance+?,updated_at=? WHERE user_id=? AND NOT EXISTS(SELECT 1 FROM unified_wallet_events WHERE idempotency_key=?)").bind(priorToken?0:1,now,user,infinityEvent),
+    env.DB.prepare("INSERT OR IGNORE INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) SELECT ?,?,?,'INFINITY','MINT',?,infinity_balance,?,?,? FROM unified_wallet_state WHERE user_id=?").bind('uwe_'+crypto.randomUUID(),infinityEvent,user,priorToken?0:1,tokenId,metadata,now,user),
+    env.DB.prepare("INSERT OR IGNORE INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) SELECT ?,?,?,'QUANT','MINT',1,balance,?,?,? FROM quant_wallet_balances WHERE wallet_id=?").bind('uwe_'+crypto.randomUUID(),quantEvent,user,mintId,metadata,now,wallet),
+    env.DB.prepare("INSERT INTO quanta_search_journal(search_id,user_id,wallet_id,query_text,status,quant_mint_id,infinity_token_id,created_at,updated_at) VALUES(?,?,?,?,'COMMITTED',?,?,?,?) ON CONFLICT(search_id) DO UPDATE SET status='COMMITTED',quant_mint_id=excluded.quant_mint_id,infinity_token_id=excluded.infinity_token_id,updated_at=excluded.updated_at WHERE quanta_search_journal.user_id=excluded.user_id").bind(searchId,user,wallet,creditQuery,mintId,tokenId,item.created_at,now),
+    env.DB.prepare("UPDATE quanta_search_outbox SET status='COMMITTED',last_error=NULL,updated_at=? WHERE user_id=? AND search_id=?").bind(now,user,searchId)
+  ]);
+  const quant=await env.DB.prepare("SELECT balance FROM quant_wallet_balances WHERE wallet_id=?").bind(wallet).first();
+  const infinity=await env.DB.prepare("SELECT infinity_balance FROM unified_wallet_state WHERE user_id=?").bind(user).first();
+  return {ok:true,mint_id:mintId,source_key:sourceKey,provenance_hash:quantHash,amount:1,balance:Number(quant.balance),infinity:{token_id:tokenId,balance:Number(infinity.infinity_balance)}};
+}
+async function drainSearchOutbox(env) {
+  await ensureSearchOutbox(env);
+  const pending=await env.DB.prepare("SELECT * FROM quanta_search_outbox WHERE status='PENDING' ORDER BY created_at LIMIT 50").all();
+  for(const item of pending.results||[]) {
+    try {await commitSearchPair(env,item)}catch(error){await recordSearchFailure(env,item,error)}
+  }
+}
+
 async function ensureLegacyOverdraftTrigger(env) {
   if (!env.DB) return;
   const row = await env.DB.prepare("SELECT sql FROM sqlite_master WHERE type='trigger' AND name='quant_no_overdraft'").first();
@@ -7,11 +50,13 @@ async function ensureLegacyOverdraftTrigger(env) {
 }
 
 export default {
-  async fetch(request, env) {
+  async scheduled(event, env, ctx) { ctx.waitUntil(drainSearchOutbox(env)); },
+  async fetch(request, env, ctx) {
     await ensureLegacyOverdraftTrigger(env);
+    if(ctx?.waitUntil)ctx.waitUntil(drainSearchOutbox(env));
     const url = new URL(request.url);
     const origin = request.headers.get("Origin") || "";
-    const allowedOrigin = origin === "https://www-infinity4.github.io" ? origin : "";
+    const allowedOrigin = ["https://www-infinity4.github.io", "https://quantaphi.net", "https://www.quantaphi.net"].includes(origin) ? origin : "";
     const headers = {
       "content-type": "application/json",
       ...(allowedOrigin ? { "access-control-allow-origin": allowedOrigin, "vary": "Origin" } : {}),
@@ -32,7 +77,7 @@ export default {
     if (origin && !allowedOrigin) return json({ error: "origin_not_allowed" }, 403);
 
     const authorization = request.headers.get("Authorization") || "";
-    const match = /^Bearer\\s+(sq_[A-Za-z0-9_-]{32,})$/.exec(authorization);
+    const match = /^Bearer\s+(sq_[A-Za-z0-9_-]{32,})$/.exec(authorization);
     if (!match) return json({ error: "authorization_required" }, 401);
     const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(match[1]));
     const tokenHash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, "0")).join("");
@@ -56,131 +101,33 @@ export default {
     if (senderWallet.status !== "active") return json({ error: "wallet_disabled" }, 403);
     const wallet = senderWallet.wallet_id;
 
+    if (url.pathname === "/v1/quants/history" && request.method === "GET") {
+      const searches = await env.DB.prepare("SELECT search_id,query_text,status,quant_mint_id,infinity_token_id,created_at FROM quanta_search_journal WHERE user_id=? ORDER BY created_at DESC LIMIT 1000").bind(identity.user_id).all();
+      const tokens = await env.DB.prepare("SELECT token_id,source,data_json,created_at FROM unified_token_records WHERE user_id=? AND token_type='INFINITY_SEARCH' ORDER BY created_at DESC LIMIT 1000").bind(identity.user_id).all();
+      return json({ ok:true, searches:searches.results, tokens:tokens.results });
+    }
+
     if (url.pathname === "/v1/quants/search" && request.method === "POST") {
       const body = await request.json().catch(() => ({}));
-      const queryText = String(body.query || "").trim().replace(/\s+/g, " ").slice(0, 500);
-      const creditQuery = String(body.credit_query || body.query || "").trim().replace(/\s+/g, " ").slice(0, 500);
+      const query = String(body.query || "").trim().replace(/\s+/g, " ").slice(0,500);
+      const creditQuery = String(body.credit_query || query).trim().replace(/\s+/g," ").slice(0,500);
       const searchId = String(body.search_id || "").trim();
-      const createdAt = String(body.created_at || "").trim().slice(0, 80);
-      if (!queryText || !/^[A-Za-z0-9_-]{20,100}$/.test(searchId))
-        return json({ error: "invalid_initial_search" }, 400);
-
-      const now = Date.now();
-      const sourceKey = "initial-search:" + wallet + ":" + searchId;
-      const infinityKey = "quant-search:" + searchId;
-      const infinityEventKey = "mint:" + identity.user_id + ":" + infinityKey;
-      const quantEventKey = "quant-mint:" + identity.user_id + ":" + searchId;
-      const infinityData = { query: creditQuery, search_id: searchId, source: "QUANTAPHI", ...(createdAt ? { created_at: createdAt } : {}) };
-      const canonical = JSON.stringify({ userId: identity.user_id, type: "INFINITY_SEARCH", source: "QUANTAPHI", idempotencyKey: infinityKey, data: infinityData });
-      const infinityDigest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(canonical));
-      const infinityHash = Array.from(new Uint8Array(infinityDigest), b => b.toString(16).padStart(2, "0")).join("");
-      const calculatedInfinityTokenId = "ut_" + infinityHash.slice(0, 32);
-
-      await env.DB.prepare("INSERT OR IGNORE INTO unified_wallet_state(user_id,created_at,updated_at) VALUES(?,?,?)")
-        .bind(identity.user_id, now, now).run();
-      await env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_search_journal(search_id TEXT PRIMARY KEY,user_id TEXT NOT NULL,wallet_id TEXT NOT NULL,query_text TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'COMMITTED',quant_mint_id TEXT,infinity_token_id TEXT,created_at INTEGER NOT NULL,updated_at INTEGER NOT NULL)").run();
-
-      let quantMint = await env.DB.prepare(
-        "SELECT mint_id,provenance_hash,source_key,query_text,amount,created_at FROM quant_mints WHERE source_key=?"
-      ).bind(sourceKey).first();
-
-      if (!quantMint) {
-        const material = wallet + "\n" + sourceKey + "\n" + queryText;
-        const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(material));
-        const provenanceHash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, "0")).join("");
-        const mintId = "qm_" + crypto.randomUUID();
-        try {
-          await env.DB.batch([
-            env.DB.prepare("INSERT INTO quant_mints(mint_id,wallet_id,provenance_hash,source_key,query_text,amount) VALUES(?,?,?,?,?,1)")
-              .bind(mintId, wallet, provenanceHash, sourceKey, queryText),
-            env.DB.prepare("INSERT INTO quant_ledger_entries(entry_id,reference_id,entry_type,wallet_id,delta) VALUES(?,?,'mint',?,1)")
-              .bind("qe_" + crypto.randomUUID(), mintId, wallet)
-          ]);
-          quantMint = { mint_id: mintId, provenance_hash: provenanceHash, source_key: sourceKey, query_text: queryText, amount: 1 };
-        } catch (error) {
-          quantMint = await env.DB.prepare(
-            "SELECT mint_id,provenance_hash,source_key,query_text,amount,created_at FROM quant_mints WHERE source_key=?"
-          ).bind(sourceKey).first();
-          if (!quantMint) return json({ error: "quant_mint_failed", detail: String(error?.message || error) }, 409);
-        }
-      }
-
-      let infinityEvent = await env.DB.prepare(
-        "SELECT reference_id,balance_after FROM unified_wallet_events WHERE idempotency_key=?"
-      ).bind(infinityEventKey).first();
-      let infinityTokenId = infinityEvent?.reference_id || null;
-
-      if (!infinityTokenId) {
-        const existingToken = await env.DB.prepare(
-          "SELECT token_id FROM unified_token_records WHERE user_id=? AND token_type='INFINITY_SEARCH' AND json_extract(data_json,'$.search_id')=? LIMIT 1"
-        ).bind(identity.user_id, searchId).first();
-        infinityTokenId = existingToken?.token_id || null;
-      }
-
-      if (!infinityEvent) {
-        if (!infinityTokenId) {
-          try {
-            await env.DB.batch([
-              env.DB.prepare("INSERT INTO unified_token_records(token_id,user_id,token_type,source,data_json,provenance_hash,created_at) VALUES(?,?,'INFINITY_SEARCH','QUANTAPHI',?,?,?)")
-                .bind(calculatedInfinityTokenId, identity.user_id, JSON.stringify(infinityData), infinityHash, now),
-              env.DB.prepare("UPDATE unified_wallet_state SET infinity_balance=infinity_balance+1,updated_at=? WHERE user_id=?")
-                .bind(now, identity.user_id),
-              env.DB.prepare("INSERT INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) SELECT ?,?,?,'INFINITY','MINT',1,infinity_balance,?,?,? FROM unified_wallet_state WHERE user_id=?")
-                .bind("uwe_" + crypto.randomUUID(), infinityEventKey, identity.user_id, calculatedInfinityTokenId, JSON.stringify({ source: "QUANTAPHI", type: "INFINITY_SEARCH", search_id: searchId, query: creditQuery }), now, identity.user_id)
-            ]);
-            infinityTokenId = calculatedInfinityTokenId;
-          } catch (_) {}
-        }
-        infinityEvent = await env.DB.prepare(
-          "SELECT reference_id,balance_after FROM unified_wallet_events WHERE idempotency_key=?"
-        ).bind(infinityEventKey).first();
-        if (infinityEvent?.reference_id) infinityTokenId = infinityEvent.reference_id;
-      }
-
-      if (!infinityTokenId) return json({ error: "paired_infinity_commit_failed", search_id: searchId }, 409);
-
-      const quantBalanceRow = await env.DB.prepare("SELECT balance FROM quant_wallet_balances WHERE wallet_id=?").bind(wallet).first();
-      const infinityBalanceRow = await env.DB.prepare("SELECT infinity_balance FROM unified_wallet_state WHERE user_id=?").bind(identity.user_id).first();
-      const quantBalance = Number(quantBalanceRow?.balance || 0);
-      const infinityBalance = Number(infinityBalanceRow?.infinity_balance || 0);
-
-      await env.DB.prepare(
-        "INSERT OR IGNORE INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) VALUES(?,?,?,'QUANT','MINT',1,?,?,?,?)"
-      ).bind("uwe_" + crypto.randomUUID(), quantEventKey, identity.user_id, quantBalance, quantMint.mint_id, JSON.stringify({ source: "QUANTAPHI", search_id: searchId, query: creditQuery }), now).run();
-
-      await env.DB.prepare(
-        "INSERT INTO quanta_search_journal(search_id,user_id,wallet_id,query_text,status,quant_mint_id,infinity_token_id,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?) ON CONFLICT(search_id) DO UPDATE SET status=excluded.status,quant_mint_id=COALESCE(quanta_search_journal.quant_mint_id,excluded.quant_mint_id),infinity_token_id=COALESCE(quanta_search_journal.infinity_token_id,excluded.infinity_token_id),updated_at=excluded.updated_at"
-      ).bind(searchId, identity.user_id, wallet, creditQuery, "COMMITTED", quantMint.mint_id, infinityTokenId, now, now).run();
-
-      const searchURL = new URL("https://orange-brook-a2ac.marvaseater.workers.dev/search");
-      searchURL.search = new URLSearchParams({ q: queryText, format: "json", categories: "general", safesearch: "1" });
-      let searchData = { results: [] }, searchError = "";
+      if (!query || !/^[A-Za-z0-9_-]{20,100}$/.test(searchId)) return json({error:"invalid_initial_search"},400);
+      await ensureSearchOutbox(env);
+      const prior = await env.DB.prepare("SELECT user_id,query_text FROM quanta_search_journal WHERE search_id=?").bind(searchId).first();
+      if (prior && (prior.user_id !== identity.user_id || prior.query_text !== creditQuery)) return json({error:"search_id_conflict"},409);
+      const now=Date.now();
+      await env.DB.prepare("INSERT OR IGNORE INTO quanta_search_outbox(user_id,search_id,wallet_id,query_text,credit_query,client_created_at,status,created_at,updated_at) VALUES(?,?,?,?,?,?,'PENDING',?,?)")
+        .bind(identity.user_id,searchId,wallet,query,creditQuery,String(body.created_at||'').slice(0,80),now,now).run();
+      const item=await env.DB.prepare("SELECT * FROM quanta_search_outbox WHERE user_id=? AND search_id=?").bind(identity.user_id,searchId).first();
+      if (item.credit_query!==creditQuery) return json({error:"search_id_conflict"},409);
       try {
-        const searchResponse = await fetch(searchURL.toString(), { headers: { accept: "application/json" } });
-        if (!searchResponse.ok) searchError = "search_failed:" + searchResponse.status;
-        else {
-          const parsed = await searchResponse.json().catch(() => null);
-          if (parsed && Array.isArray(parsed.results)) searchData = parsed;
-          else searchError = "search_invalid_response";
-        }
-      } catch (error) {
-        searchError = "search_unavailable:" + String(error?.message || error);
+        const result=await commitSearchPair(env,item);
+        return json({...result,replayed:Boolean(prior),journal:{search_id:searchId,status:"COMMITTED"}});
+      } catch(error) {
+        await recordSearchFailure(env,item,error);
+        return json({ok:false,error:"search_commit_pending",search_id:searchId,durable_pending:true},503);
       }
-
-      return json({
-        ok: true,
-        replayed: Boolean(await env.DB.prepare("SELECT 1 AS n FROM quanta_search_journal WHERE search_id=? AND created_at<?").bind(searchId, now).first()),
-        mint: quantMint,
-        mint_id: quantMint.mint_id,
-        provenance_hash: quantMint.provenance_hash,
-        source_key: sourceKey,
-        amount: 1,
-        balance: quantBalance,
-        infinity: { token_id: infinityTokenId, balance: infinityBalance },
-        journal: { search_id: searchId, status: "COMMITTED" },
-        search: searchData,
-        ...(searchError ? { search_error: searchError } : {})
-      }, 200);
     }
 
     if (url.pathname === "/v1/quants/infinity-legacy-balance" && request.method === "POST") {

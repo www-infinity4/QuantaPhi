@@ -1,9 +1,10 @@
 (function(global){
 'use strict';
 const KEY='quantaPhi:pendingSearchCommits:v2',LEGACY='quantaPhi:pendingInfinityCredits:v1',API='https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search';
+const memory=new Map();
 const parse=key=>{try{return JSON.parse(localStorage.getItem(key)||'[]')}catch{return[]}};
-const read=()=>{const merged=[...parse(KEY),...parse(LEGACY)].filter(x=>x&&x.search_id);return [...new Map(merged.map(x=>[x.search_id,{query:x.query,search_id:x.search_id,source:'QUANTAPHI',created_at:x.created_at||new Date().toISOString()}])).values()]};
-const save=items=>{localStorage.setItem(KEY,JSON.stringify(items));try{localStorage.removeItem(LEGACY)}catch{}};
+const read=()=>{const merged=[...parse(KEY),...parse(LEGACY),...memory.values()].filter(x=>x&&x.search_id);return [...new Map(merged.map(x=>[x.search_id,{query:x.query,search_id:x.search_id,source:'QUANTAPHI',created_at:x.created_at||new Date().toISOString()}])).values()]};
+const save=items=>{memory.clear();for(const item of items)memory.set(item.search_id,item);try{localStorage.setItem(KEY,JSON.stringify(items));localStorage.removeItem(LEGACY)}catch{}};
 let running=false;
 async function request(options){return Promise.race([global.StarQuestCloudLedger.authenticatedFetch(API,options),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Search commit timed out; retained for retry')),12000))])}
 async function apply(item,result){
@@ -42,7 +43,29 @@ async function confirm(search_id,result){
   if(linked&&result?.infinity?.token_id){global.PhiAssetBalances?.confirm('INFINITY',linked.id,result.infinity.balance);await global.QuantaUnifiedTokenLedger.update(linked.id,{cloudTokenId:result.infinity.token_id,cloudStatus:'saved',cloudSavedAt:new Date().toISOString()})}
  }
 }
-global.QuantaInfinityCredit={enqueue:(q,id,at)=>{queue(q,id,at);void flush()},enqueueSearch:queue,confirm,flush,pending:read};
+async function restoreHistory(){
+ if(!global.StarQuestCloudLedger?.authenticatedFetch||!global.QuantaUnifiedTokenLedger)return;
+ const r=await global.StarQuestCloudLedger.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/history');
+ if(!r.ok)throw new Error('Cloud history read failed');
+ const cloud=await r.json(),local=await global.QuantaUnifiedTokenLedger.load();
+ const merged=[...local];
+ for(const row of cloud.tokens||[]){
+  let data={};try{data=JSON.parse(row.data_json||'{}')}catch{}
+  const searchId=data.search_id||data.source_event_id||'',localId=data.local_token_id;
+  const prior=merged.find(x=>x.cloudTokenId===row.token_id||x.id===row.token_id||(localId&&x.id===localId)||(searchId&&(x.sourceEventId===searchId||x.quantSearchId===searchId)));
+  if(prior){prior.cloudTokenId=row.token_id;prior.cloudStatus='saved';continue}
+  merged.push({id:localId||row.token_id,cloudTokenId:row.token_id,cloudStatus:'saved',query:data.query||'',title:data.query||'',source:row.source,sourceSystem:row.source,sourceEventId:searchId,quantSearchId:searchId,createdAt:new Date(row.created_at).toISOString(),websiteUrl:data.website_url||global.QuantaUnifiedTokenLedger.website(row.token_id,data.query),stage:'search',status:'finished',value:1});
+ }
+ await global.QuantaUnifiedTokenLedger.save(merged);
+ let history=[];try{history=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]')}catch{}
+ const byId=new Map(history.map(x=>[x.search_id||x.token_id||x.id,x]));
+ for(const row of cloud.searches||[]){if(!byId.has(row.search_id))byId.set(row.search_id,{id:row.search_id,search_id:row.search_id,token_id:row.infinity_token_id,query:row.query_text,created_at:new Date(row.created_at).toISOString()})}
+ const next=[...byId.values()].sort((a,b)=>Date.parse(b.created_at)-Date.parse(a.created_at));
+ global.QuantaCloudBuildHistory=next;
+ try{localStorage.setItem('quantaPhiBuildHistoryV1',JSON.stringify(next))}catch{}
+ global.dispatchEvent(new CustomEvent('quantaPhiHistoryAdded'));
+}
+global.QuantaInfinityCredit={enqueue:(q,id,at)=>{queue(q,id,at);void flush()},enqueueSearch:queue,confirm,flush,pending:read,restoreHistory};
 setInterval(flush,60000);
 for(const event of ['load','online','focus'])global.addEventListener(event,flush);
 for(const event of ['starquest:ledger-connected','starquest:auth-changed'])document.addEventListener(event,flush);
