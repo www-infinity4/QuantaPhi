@@ -5,3 +5,30 @@ test('a new spend snapshot lowers only the asset spent',()=>{const a=fixture();a
 test('a pending mint is not counted twice when a cloud snapshot already includes it',()=>{const a=fixture();a.mint('QUANT','oranges');assert.equal(a.accept('QUANT',80,a.beginRead('QUANT')),false);assert.equal(a.value('QUANT'),80);a.confirm('QUANT','oranges',80);assert.equal(a.value('QUANT'),80)});
 test('music count merges IndexedDB with both histories, deduplicates and excludes transfers',async()=>{const values=new Map([['musicPhi:quants:v1',JSON.stringify([{id:'piano1'},{id:'gone',transferredAt:'2026-10-03'}])],['musicPhi:listeningQuants:v1',JSON.stringify([{id:'listen1',kind:'listening'}])]]);const context={window:{MusicQuantStore:{list:async()=>[{id:'piano1'},{id:'piano2'}]},ControlPhi:{refreshWallet(){}},dispatchEvent(){}},document:{readyState:'complete',addEventListener(){}},localStorage:{getItem:k=>values.get(k),setItem:(k,v)=>values.set(k,v)},addEventListener(){},setInterval(){},console,CustomEvent:class{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../music-quant-cloud.js'),'utf8'),context);await new Promise(r=>setImmediate(r));assert.equal(context.window.MusicQuantCloud.localCount,3);assert.equal(context.window.MusicQuantCloud.pianoCount,2);assert.equal(context.window.MusicQuantCloud.listeningCount,1)});
 test('Infinity source split includes Quanta websites but never Music Quants',()=>{const code=fs.readFileSync(path.join(__dirname,'../wallet-runtime.js'),'utf8'),start=code.indexOf('  function canonicalSearchCounts(){'),end=code.indexOf('  let cloudBalances={};',start);const values=new Map([['c13b0_infinity_token_ledger_v3',JSON.stringify([{id:'phi-1',source:'infinity-phi'},{id:'omni-1',source:'omni-phi'},{id:'quant-1',source:'quanta-phi',sourceEventId:'search-1'}])],['infinity_unified_wallet_v1',JSON.stringify({tokens:{music:{id:'mq_1',type:'MUSIC_QUANT',source:'Infinity Radio'},pair:{id:'paired-infinity',type:'INFINITY_SEARCH_TOKEN',source:'QUANTAPHI',sourceEventId:'search-1'}}})]]);const context={clean:(s)=>String(s||''),decodeInfinityEnvelope:JSON.parse,read:(key,f)=>{try{return JSON.parse(values.get(key)||'null')??f}catch{return f}},localStorage:{getItem:key=>values.get(key)},WALLET_SESSION_KEY:'session',WALLET_USERS_KEY:'users',WALLET_GUEST_KEY:'guest'};vm.runInNewContext(code.slice(start,end)+'result=canonicalSearchCounts()',context);assert.equal(context.result.total,3);assert.equal(context.result.infinity,1);assert.equal(context.result.omni,1);assert.equal(context.result.quants,1)});
+
+test('Quanta search retry targets the authoritative paired D1 commit, not a second browser-side Infinity mint',()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../search-wallet-sync.js'),'utf8');
+  assert.match(code,/quanta-phi-ledger[^']*\/v1\/quants\/search/);
+  assert.doesNotMatch(code,/\/v1\/tokens\/mint/);
+  assert.doesNotMatch(code,/unified-wallet\.marvaseater\.workers\.dev/);
+});
+
+test('initial search ledger commit is wired before the AI overview request',()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8');
+  const ledger=code.indexOf("quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search");
+  const overview=code.indexOf("infinity-rogers.marvaseater.workers.dev/v1/chat");
+  assert.ok(ledger>=0&&overview>=0&&ledger<overview);
+  assert.match(code,/credit_query:q/);
+  assert.match(code,/\/v1\/quants\/history-import/);
+  assert.match(code,/\/v1\/quants\/infinity-legacy-balance/);
+});
+
+test('server search commit journals the search and pairs Quant with Infinity history',()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../workers/quanta-phi-ledger/worker.js'),'utf8');
+  assert.match(code,/quanta_search_journal/);
+  assert.match(code,/paired_infinity_commit_failed/);
+  assert.match(code,/token_type,source,data_json,provenance_hash/);
+  assert.match(code,/asset_code,event_type,amount,balance_after/);
+  assert.match(code,/history-import/);
+  assert.match(code,/balance_only_migration/);
+});
