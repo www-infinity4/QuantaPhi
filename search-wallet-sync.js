@@ -30,7 +30,10 @@ async function flush(){
    if(!r.ok)throw new Error(result.error||'Search commit still pending');
    await apply(item,result);
   }catch(error){console.warn('Quanta search commit remains queued',error);break}
- }}finally{running=false}
+ }
+ const records=await global.QuantaUnifiedTokenLedger?.load?.()||[];
+ for(const token of records.filter(x=>x.stage==='research'&&x.cloudTokenId&&(!x.cloudResearchSavedAt||Date.parse(x.cloudResearchSavedAt)<Date.parse(x.updatedAt||x.createdAt))).slice(0,20)){try{await persistResearch(token)}catch(error){console.warn('Research revision remains queued',error);break}}
+ }finally{running=false}
 }
 function queue(query,search_id,created_at){
  const items=read();if(!items.some(x=>x.search_id===search_id)){items.push({query,search_id,source:'QUANTAPHI',created_at:created_at||new Date().toISOString()});save(items)}
@@ -50,6 +53,7 @@ async function persistResearch(token){
  const research={id:token.id,query:token.query,websiteUrl:token.websiteUrl,payload:token.payload,stage:token.stage,status:token.status,createdAt:token.createdAt,sourceCount:token.sourceCount};
  const r=await global.StarQuestCloudLedger.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/research',{method:'POST',body:{search_id,research}});
  if(!r.ok)throw new Error('Research revision remains pending');
+ await global.QuantaUnifiedTokenLedger.update(token.id,{cloudResearchSavedAt:new Date().toISOString()});
 }
 async function restoreHistory(){
  if(!global.StarQuestCloudLedger?.authenticatedFetch||!global.QuantaUnifiedTokenLedger)return;
