@@ -157,3 +157,21 @@ BEGIN SELECT RAISE(ABORT,'immutable_quant_legacy_migration'); END;
 CREATE TRIGGER IF NOT EXISTS quant_legacy_migrations_no_delete
 BEFORE DELETE ON quant_legacy_migrations
 BEGIN SELECT RAISE(ABORT,'immutable_quant_legacy_migration'); END;
+
+
+-- Durable QuantaPhi search journal. Balance mutations stay in the immutable
+-- Quant and unified-wallet ledgers; this table preserves the search lifecycle.
+CREATE TABLE IF NOT EXISTS quanta_search_journal(
+  search_id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  wallet_id TEXT NOT NULL,
+  query_text TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'COMMITTED',
+  quant_mint_id TEXT,
+  infinity_token_id TEXT,
+  created_at INTEGER NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_quanta_search_journal_user_created
+ON quanta_search_journal(user_id,created_at DESC);
