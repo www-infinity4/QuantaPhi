@@ -26,7 +26,7 @@ test('initial search ledger commit is wired before the AI overview request',()=>
 test('server search commit journals the search and pairs Quant with Infinity history',()=>{
   const code=fs.readFileSync(path.join(__dirname,'../workers/quanta-phi-ledger/worker.js'),'utf8');
   assert.match(code,/quanta_search_journal/);
-  assert.match(code,/paired_infinity_commit_failed/);
+  assert.match(code,/search_commit_pending/);
   assert.match(code,/token_type,source,data_json,provenance_hash/);
   assert.match(code,/asset_code,event_type,amount,balance_after/);
   assert.match(code,/history-import/);
