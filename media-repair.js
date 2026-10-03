@@ -129,5 +129,39 @@
     if(input&&query)input.value=String(query);
     return images({scroll:false,automatic:true});
   };
-  window.QuantaMediaRepair={images,videos,sounds,commonsImages,iaRows,contract:'quanta-overview-first-v1'};
+  const originalElementIdentity=window.elementIdentity;
+  if(typeof originalElementIdentity==='function'){
+    window.elementIdentity=function(query){
+      const raw=String(query||'').trim(),normalized=raw.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim(),parts=normalized.split(/\s+/).filter(Boolean);
+      const explicit=/\belement\s*(?:#|number|no\.?\s*)?\d{1,3}\b/i.test(raw)||/\batomic\s+number\s*\d{1,3}\b/i.test(raw)||parts.length===1||(parts.length===2&&(/^\d{1,3}$/.test(parts[1])||parts[1]==='element'));
+      return explicit?originalElementIdentity(query):null;
+    };
+  }
+
+  function scheduleOverviewWatchdog(){
+    const query=q();if(!query)return;
+    setTimeout(async()=>{
+      const overview=document.getElementById('overview');
+      if(!overview)return;
+      const text=String(overview.textContent||'').trim();
+      if(text&&!/Building|AI Overview\s*$/i.test(text))return;
+      try{
+        const result=await window.fallbackResearch?.(query);
+        const rows=(result?.results||[]).slice(0,10).map((x,i)=>({index:i,title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||x.extract||'').trim()}));
+        if(!rows.length)return;
+        const structured=window.buildStructuredEvidenceFallback?.(query,rows);
+        const html=structured&&window.renderFivePartOverview?.(structured,query,rows);
+        if(html){
+          overview.innerHTML=html;
+          window.activateFivePartOverview?.();
+          const status=document.getElementById('status');
+          if(status)status.innerHTML='<small>Source-backed overview ready · AI synthesis still refining…</small>';
+        }
+      }catch(_){}
+    },2500);
+  }
+  document.getElementById('go')?.addEventListener('click',scheduleOverviewWatchdog,true);
+  document.getElementById('q')?.addEventListener('keydown',event=>{if(event.key==='Enter')scheduleOverviewWatchdog()},true);
+
+  window.QuantaMediaRepair={images,videos,sounds,commonsImages,iaRows,contract:'quanta-overview-first-v2'};
 })();
