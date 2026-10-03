@@ -152,7 +152,7 @@
       try{
         const result=await window.fallbackResearch?.(query);
         const rows=(result?.results||[]).slice(0,10).map((x,i)=>({index:i,title:x.title||'',url:x.url||'',evidence:String(x.content||x.description||x.extract||'').trim()}));
-        if(!rows.length||ticket!==overviewWatchRun||q()!==query)return;
+        if(ticket!==overviewWatchRun||q()!==query)return;
         if(!/Building|AI Overview\s*$/i.test(String(overview.textContent||'')))return;
         const structured=window.buildStructuredEvidenceFallback?.(query,rows);
         const html=structured&&window.renderFivePartOverview?.(structured,query,rows);
