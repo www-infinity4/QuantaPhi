@@ -15,7 +15,7 @@ async function flush(){
    const r=await request(API+'/v1/tokens/mint',{method:'POST',body:{type:'INFINITY_SEARCH',source:'QUANTAPHI',idempotencyKey:'quant-search:'+item.search_id,data}});
    const result=await r.json();if(!r.ok)throw new Error(result.error||'Infinity credit failed');
    const records=await global.QuantaUnifiedTokenLedger?.load?.()||[];const linked=records.find(x=>x.sourceEventId===item.search_id||x.quantSearchId===item.search_id);
-   if(linked)global.PhiAssetBalances?.confirm('INFINITY',linked.id,result.balance);
+   if(linked){global.PhiAssetBalances?.confirm('INFINITY',linked.id,result.balance);await global.QuantaUnifiedTokenLedger.update(linked.id,{cloudTokenId:result.tokenId,cloudStatus:'saved',cloudSavedAt:new Date().toISOString()})}
    save(read().filter(x=>x.search_id!==item.search_id));
    global.dispatchEvent(new CustomEvent('infinity:token-created',{detail:{...item,tokenId:result.tokenId,source:'QUANTAPHI'}}));
    global.dispatchEvent(new Event('infinity-wallet-updated'));
