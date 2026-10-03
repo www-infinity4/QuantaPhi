@@ -171,7 +171,7 @@ function buildStructuredEvidenceFallback(q,evidence){
  const orange=facts.slice(0,4).map(x=>({aim:'Follow '+x.label,reason:x.value}));
  let hist=[];try{hist=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]').map(x=>x.query).filter(x=>x&&x.toLowerCase()!==String(q||'').toLowerCase()).slice(0,4)}catch(_){}
  const purple=(hist.length?hist:[q]).map(h=>({type:'conceptual',relationship:h===q?'Current evidence relationships':q+' ↔ '+h,bridge:h===q?'Compare the strongest facts above and keep only relationships supported by the retrieved evidence.':'History connection available; GPT retrieval is needed to decide whether the bridge is factual or conceptual.',history_query:h===q?'':h}));
- return {intent:q,red:{overview:overview||('Source-backed evidence was retrieved for '+q+'.')},yellow:facts.length?facts:[{label:'Evidence',value:'No concrete evidence points were returned.',source_indexes:[]}],blue,orange:(facts.length?facts:[{label:'Related data',value:'No additional concrete data points were returned.',source_indexes:[]}]),purple}
+ return {intent:q,red:{overview:overview||('No reliable source evidence has returned for '+q+' yet. Try a clearer name or refine the query; an unsupported premise should not be treated as established fact.')},yellow:facts.length?facts:[{label:'Evidence',value:'No concrete evidence points were returned.',source_indexes:[]}],blue,orange:(facts.length?facts:[{label:'Related data',value:'No additional concrete data points were returned.',source_indexes:[]}]),purple}
 }
 function renderFivePartOverview(main,q,evidence){
  const esc=s=>String(s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
