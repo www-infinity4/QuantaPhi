@@ -466,7 +466,7 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
    $('#overview').innerHTML=renderFivePartOverview(sections,q,evidence);activateFivePartOverview();monitorRendered();loadExpandedDataIndex(q,sections,evidence);loadHistoryAssimilation(q,sections);$('#status').innerHTML='';loadMedia(q);await QuantaUnifiedTokenLedger.finalize(unifiedTokenId,q,sections,evidence);return;
  }catch(e){
    if(!isCurrent())return;
-   $('#overview').innerHTML='<section class="qzone qzoneRed"><h3>AI Overview</h3><p>'+esc(e.name==='AbortError'?'GPT is taking longer than 45 seconds. The request timed out.':('GPT request failed: '+String(e.message||e)))+'</p></section>';$('#status').textContent='Cloudflare AI did not complete this request; source text has not replaced it.';return;
+   $('#overview').innerHTML='<section class="qzone qzoneRed"><h3>AI Overview</h3><p>'+esc(e.name==='AbortError'?'GPT is taking longer than 45 seconds. Switching to a source-backed overview…':'Primary AI request failed. Switching to the fallback overview…')+'</p></section>';$('#status').innerHTML='<small>AI provider did not finish — building overview from search evidence…</small>';
    try{
      const searchUrl=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
      const exactEntity=entityClause(q);
