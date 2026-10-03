@@ -183,6 +183,45 @@ export default {
       }, 200);
     }
 
+    if (url.pathname === "/v1/quants/history-import" && request.method === "POST") {
+      const body = await request.json().catch(() => ({}));
+      const tokens = Array.isArray(body.tokens) ? body.tokens.slice(0, 500) : [];
+      const searches = Array.isArray(body.searches) ? body.searches.slice(0, 1000) : [];
+      let tokenCount = 0, searchCount = 0;
+      for (const item of tokens) {
+        const localId = String(item?.id || "").trim().slice(0, 180);
+        const query = String(item?.query || "").trim().replace(/\s+/g, " ").slice(0, 500);
+        if (!localId || !query) continue;
+        const source = String(item?.source || "QUANTAPHI").trim().slice(0, 120) || "QUANTAPHI";
+        const sourceEventId = String(item?.source_event_id || "").trim().slice(0, 180);
+        const websiteUrl = String(item?.website_url || "").trim().slice(0, 2000);
+        const created = Number(item?.created_at);
+        const createdAt = Number.isFinite(created) && created > 0 ? Math.trunc(created) : Date.now();
+        const canonical = "legacy-history\n" + identity.user_id + "\n" + localId;
+        const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(canonical));
+        const hash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, "0")).join("");
+        const tokenId = "hist_" + hash.slice(0, 32);
+        const data = { query, local_token_id: localId, source_event_id: sourceEventId, website_url: websiteUrl, imported_history: true };
+        const result = await env.DB.prepare(
+          "INSERT OR IGNORE INTO unified_token_records(token_id,user_id,token_type,source,data_json,provenance_hash,created_at) VALUES(?,?,'INFINITY_SEARCH',?,?,?,?)"
+        ).bind(tokenId, identity.user_id, source, JSON.stringify(data), hash, createdAt).run();
+        if (Number(result?.meta?.changes || 0) > 0) tokenCount++;
+      }
+      for (const item of searches) {
+        const historyId = String(item?.id || "").trim().slice(0, 180);
+        const query = String(item?.query || "").trim().replace(/\s+/g, " ").slice(0, 500);
+        if (!historyId || !query) continue;
+        const created = Number(item?.created_at);
+        const createdAt = Number.isFinite(created) && created > 0 ? Math.trunc(created) : Date.now();
+        const searchId = "archive:" + identity.user_id.slice(0, 24) + ":" + historyId;
+        const result = await env.DB.prepare(
+          "INSERT OR IGNORE INTO quanta_search_journal(search_id,user_id,wallet_id,query_text,status,quant_mint_id,infinity_token_id,created_at,updated_at) VALUES(?,?,?,?, 'ARCHIVED', NULL, NULL, ?, ?)"
+        ).bind(searchId, identity.user_id, wallet, query, createdAt, Date.now()).run();
+        if (Number(result?.meta?.changes || 0) > 0) searchCount++;
+      }
+      return json({ ok: true, imported_tokens: tokenCount, imported_searches: searchCount });
+    }
+
     if (url.pathname === "/v1/quants/legacy-migrate" && request.method === "POST") {
       const body = await request.json().catch(() => ({}));
       const amount = Number(body.legacy_amount);
