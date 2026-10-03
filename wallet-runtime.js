@@ -246,6 +246,8 @@
   document.addEventListener('starquest:ledger-connected',refreshCloudBalances);
   window.addEventListener('load',refreshCloudBalances);
   window.addEventListener('focus',refreshCloudBalances);
+  window.addEventListener('infinity-wallet-updated',refreshCloudBalances);
+  document.addEventListener('starquest:auth-changed',refreshCloudBalances);
   window.addEventListener('phi:asset-balances',refreshWalletUI);
   window.addEventListener('musicquant:cloud-synced',refreshWalletUI);
   window.addEventListener('musicquant:changed',refreshWalletUI);
