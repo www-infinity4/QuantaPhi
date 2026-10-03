@@ -1,3 +1,6 @@
+async function ensureResearchRevisions(env) {
+  await env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_research_revisions(revision_id TEXT PRIMARY KEY,user_id TEXT NOT NULL,search_id TEXT NOT NULL,token_id TEXT NOT NULL,data_json TEXT NOT NULL,created_at INTEGER NOT NULL)").run();
+}
 
 async function ensureSearchOutbox(env) {
   await env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_search_outbox(user_id TEXT NOT NULL,search_id TEXT NOT NULL,wallet_id TEXT NOT NULL,query_text TEXT NOT NULL,credit_query TEXT NOT NULL,client_created_at TEXT NOT NULL DEFAULT '',status TEXT NOT NULL DEFAULT 'PENDING',attempts INTEGER NOT NULL DEFAULT 0,last_error TEXT,created_at INTEGER NOT NULL,updated_at INTEGER NOT NULL,PRIMARY KEY(user_id,search_id))").run();
@@ -101,9 +104,22 @@ export default {
     if (senderWallet.status !== "active") return json({ error: "wallet_disabled" }, 403);
     const wallet = senderWallet.wallet_id;
 
+    if (url.pathname === "/v1/quants/research" && request.method === "POST") {
+      const body=await request.json().catch(()=>({})),searchId=String(body.search_id||'');
+      const journal=await env.DB.prepare("SELECT infinity_token_id FROM quanta_search_journal WHERE user_id=? AND search_id=? AND status='COMMITTED'").bind(identity.user_id,searchId).first();
+      if(!journal?.infinity_token_id)return json({error:'search_not_committed'},409);
+      const data=body.research;
+      if(!data||typeof data!=='object'||JSON.stringify(data).length>100000)return json({error:'invalid_research_revision'},400);
+      await ensureResearchRevisions(env);
+      const raw=JSON.stringify(data),digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(identity.user_id+'\n'+searchId+'\n'+raw));
+      const revisionId=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
+      await env.DB.prepare("INSERT OR IGNORE INTO quanta_research_revisions(revision_id,user_id,search_id,token_id,data_json,created_at) VALUES(?,?,?,?,?,?)").bind(revisionId,identity.user_id,searchId,journal.infinity_token_id,raw,Date.now()).run();
+      return json({ok:true,revision_id:revisionId});
+    }
     if (url.pathname === "/v1/quants/history" && request.method === "GET") {
+      await ensureResearchRevisions(env);
       const searches = await env.DB.prepare("SELECT search_id,query_text,status,quant_mint_id,infinity_token_id,created_at FROM quanta_search_journal WHERE user_id=? ORDER BY created_at DESC LIMIT 1000").bind(identity.user_id).all();
-      const tokens = await env.DB.prepare("SELECT token_id,source,data_json,created_at FROM unified_token_records WHERE user_id=? AND token_type='INFINITY_SEARCH' ORDER BY created_at DESC LIMIT 1000").bind(identity.user_id).all();
+      const tokens = await env.DB.prepare("SELECT t.token_id,t.source,t.data_json,t.created_at,(SELECT r.data_json FROM quanta_research_revisions r WHERE r.token_id=t.token_id AND r.user_id=t.user_id ORDER BY r.created_at DESC LIMIT 1) AS research_json FROM unified_token_records t WHERE t.user_id=? AND t.token_type='INFINITY_SEARCH' ORDER BY t.created_at DESC LIMIT 1000").bind(identity.user_id).all();
       return json({ ok:true, searches:searches.results, tokens:tokens.results });
     }
 

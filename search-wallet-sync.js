@@ -13,7 +13,8 @@ async function apply(item,result){
  const linked=records.find(x=>x.sourceEventId===item.search_id||x.quantSearchId===item.search_id);
  if(linked&&result.infinity?.token_id){
   global.PhiAssetBalances?.confirm('INFINITY',linked.id,result.infinity.balance);
-  await global.QuantaUnifiedTokenLedger.update(linked.id,{cloudTokenId:result.infinity.token_id,cloudStatus:'saved',cloudSavedAt:new Date().toISOString(),sourceEventId:item.search_id,quantSearchId:item.search_id});
+  const saved=await global.QuantaUnifiedTokenLedger.update(linked.id,{cloudTokenId:result.infinity.token_id,cloudStatus:'saved',cloudSavedAt:new Date().toISOString(),sourceEventId:item.search_id,quantSearchId:item.search_id});
+  if(saved.stage==='research')void persistResearch(saved).catch(error=>console.warn('Research revision sync deferred',error));
  }
  save(read().filter(x=>x.search_id!==item.search_id));
  global.dispatchEvent(new CustomEvent('infinity:token-created',{detail:{...item,tokenId:result.infinity?.token_id||'',source:'QUANTAPHI'}}));
@@ -43,6 +44,13 @@ async function confirm(search_id,result){
   if(linked&&result?.infinity?.token_id){global.PhiAssetBalances?.confirm('INFINITY',linked.id,result.infinity.balance);await global.QuantaUnifiedTokenLedger.update(linked.id,{cloudTokenId:result.infinity.token_id,cloudStatus:'saved',cloudSavedAt:new Date().toISOString()})}
  }
 }
+async function persistResearch(token){
+ const search_id=token?.sourceEventId||token?.quantSearchId;
+ if(!search_id||!global.StarQuestCloudLedger?.authenticatedFetch)return;
+ const research={id:token.id,query:token.query,websiteUrl:token.websiteUrl,payload:token.payload,stage:token.stage,status:token.status,createdAt:token.createdAt,sourceCount:token.sourceCount};
+ const r=await global.StarQuestCloudLedger.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/research',{method:'POST',body:{search_id,research}});
+ if(!r.ok)throw new Error('Research revision remains pending');
+}
 async function restoreHistory(){
  if(!global.StarQuestCloudLedger?.authenticatedFetch||!global.QuantaUnifiedTokenLedger)return;
  const r=await global.StarQuestCloudLedger.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/history');
@@ -51,10 +59,11 @@ async function restoreHistory(){
  const merged=[...local];
  for(const row of cloud.tokens||[]){
   let data={};try{data=JSON.parse(row.data_json||'{}')}catch{}
-  const searchId=data.search_id||data.source_event_id||'',localId=data.local_token_id;
+  let research={};try{research=JSON.parse(row.research_json||'{}')}catch{}
+  const searchId=data.search_id||data.source_event_id||'',localId=research.id||data.local_token_id;
   const prior=merged.find(x=>x.cloudTokenId===row.token_id||x.id===row.token_id||(localId&&x.id===localId)||(searchId&&(x.sourceEventId===searchId||x.quantSearchId===searchId)));
-  if(prior){prior.cloudTokenId=row.token_id;prior.cloudStatus='saved';continue}
-  merged.push({id:localId||row.token_id,cloudTokenId:row.token_id,cloudStatus:'saved',query:data.query||'',title:data.query||'',source:row.source,sourceSystem:row.source,sourceEventId:searchId,quantSearchId:searchId,createdAt:new Date(row.created_at).toISOString(),websiteUrl:data.website_url||global.QuantaUnifiedTokenLedger.website(row.token_id,data.query),stage:'search',status:'finished',value:1});
+  if(prior){prior.cloudTokenId=row.token_id;prior.cloudStatus='saved';if(!prior.payload&&research.payload)prior.payload=research.payload;continue}
+  merged.push({...research,id:localId||row.token_id,cloudTokenId:row.token_id,cloudStatus:'saved',query:data.query||'',title:data.query||'',source:row.source,sourceSystem:row.source,sourceEventId:searchId,quantSearchId:searchId,createdAt:new Date(row.created_at).toISOString(),websiteUrl:research.websiteUrl||data.website_url||global.QuantaUnifiedTokenLedger.website(row.token_id,data.query),stage:research.stage||'search',status:'finished',value:1});
  }
  await global.QuantaUnifiedTokenLedger.save(merged);
  let history=[];try{history=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]')}catch{}
@@ -65,7 +74,7 @@ async function restoreHistory(){
  try{localStorage.setItem('quantaPhiBuildHistoryV1',JSON.stringify(next))}catch{}
  global.dispatchEvent(new CustomEvent('quantaPhiHistoryAdded'));
 }
-global.QuantaInfinityCredit={enqueue:(q,id,at)=>{queue(q,id,at);void flush()},enqueueSearch:queue,confirm,flush,pending:read,restoreHistory};
+global.QuantaInfinityCredit={enqueue:(q,id,at)=>{queue(q,id,at);void flush()},enqueueSearch:queue,confirm,flush,pending:read,restoreHistory,persistResearch};
 setInterval(flush,60000);
 for(const event of ['load','online','focus'])global.addEventListener(event,flush);
 for(const event of ['starquest:ledger-connected','starquest:auth-changed'])document.addEventListener(event,flush);
