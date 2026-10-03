@@ -951,10 +951,9 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
    const ids=records.map(x=>String(x?.id||'')).filter(Boolean).sort().join('|');let hash=2166136261;for(let i=0;i<ids.length;i++){hash^=ids.charCodeAt(i);hash=Math.imul(hash,16777619)}
    const historyKey='quantaphi-history-v3-'+records.length+'-'+history.length+'-'+(hash>>>0).toString(16);
    const owned=localInfinityBalance();
-   if(owned>0&&window.InfinityCloudWallet&&!localStorage.getItem('quantaPhiOwnedInfinityMigratedV3')){
-    const cloud=new window.InfinityCloudWallet({appName:'QuantaPhi balance recovery'});
-    await cloud.importLegacy({importKey:'quantaphi-owned-infinity-v3-'+owned,balances:{INFINITY:owned},tokens:[]});
-    localStorage.setItem('quantaPhiOwnedInfinityMigratedV3',JSON.stringify({balance:owned,at:new Date().toISOString()}))
+   if(owned>0&&!localStorage.getItem('quantaPhiOwnedInfinityMigratedV3')){
+    const balanceResult=await call('/v1/quants/infinity-legacy-balance',{method:'POST',body:{legacy_balance:owned}});
+    localStorage.setItem('quantaPhiOwnedInfinityMigratedV3',JSON.stringify({balance:Number(balanceResult.balance??owned),skipped:Boolean(balanceResult.skipped),at:new Date().toISOString()}))
    }
    if(localStorage.getItem('quantaPhiD1HistoryRecoveredV3')===historyKey)return null;
    const tokens=records.filter(x=>x?.id&&!x?.cloudTokenId).slice(0,500).map(x=>({id:String(x.id),query:String(x.query||x.title||''),source:String(x.sourceSystem||x.source||'INFINITY').toUpperCase(),created_at:Date.parse(x.createdAt||x.created_at||'')||Date.now(),source_event_id:String(x.sourceEventId||x.quantSearchId||''),website_url:String(x.websiteUrl||'')}));
