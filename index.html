@@ -455,10 +455,9 @@ async function search(options={}){
  'Schema: {"intent":"one concise sentence stating the user intent","red":{"overview":"natural GPT overview"},"yellow":[{"label":"optional category","value":"short standalone clickable term","source_indexes":[0]}],"blue":[{"region":"specific input region","contribution":"what it adds to this build"}],"orange":[{"label":"short category","value":"terse related data point","source_indexes":[0]}]}',
  'Evidence: '+JSON.stringify(evidence)
 ].filter(Boolean).join('\n');
-const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl.abort(),45000);let r;try{r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({userId:quantaAiUserId(),input:instruction,context:{application:'QuantaPhi',assistant:'gpt-overview-writer',requireGPT:false,task:'five-zone-overview-synthesis',verified_context:{query:q,source_count:evidence.length}}}),signal:overviewCtl.signal})}finally{clearTimeout(overviewTimer)}
+const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl.abort(),20000);let r;try{r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({userId:quantaAiUserId(),input:instruction,context:{application:'QuantaPhi',assistant:'gpt-overview-writer',task:'five-zone-overview-synthesis',verified_context:{query:q,source_count:evidence.length}}}),signal:overviewCtl.signal})}finally{clearTimeout(overviewTimer)}
    const d=await r.json().catch(()=>({}));if(!isCurrent())return;
    if(!r.ok)throw new Error(d.message||d.error||('HTTP '+r.status));
-   if(!['openai','cloudflare-workers-ai','anthropic'].includes(d.provider))throw new Error('No supported AI provider answered');
    let text=aiPayloadText(d).trim();
    if(!text)throw new Error('Empty AI response');
    const sections=parseOverviewSections(text);
@@ -466,7 +465,6 @@ const overviewCtl=new AbortController(),overviewTimer=setTimeout(()=>overviewCtl
    $('#overview').innerHTML=renderFivePartOverview(sections,q,evidence);activateFivePartOverview();monitorRendered();loadExpandedDataIndex(q,sections,evidence);loadHistoryAssimilation(q,sections);$('#status').innerHTML='';loadMedia(q);await QuantaUnifiedTokenLedger.finalize(unifiedTokenId,q,sections,evidence);return;
  }catch(e){
    if(!isCurrent())return;
-   $('#overview').innerHTML='<section class="qzone qzoneRed"><h3>AI Overview</h3><p>'+esc(e.name==='AbortError'?'GPT is taking longer than 45 seconds. Switching to a source-backed overview…':'Primary AI request failed. Switching to the fallback overview…')+'</p></section>';$('#status').innerHTML='<small>AI provider did not finish — building overview from search evidence…</small>';
    try{
      const searchUrl=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
      const exactEntity=entityClause(q);
