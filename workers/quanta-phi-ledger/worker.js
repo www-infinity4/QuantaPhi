@@ -183,6 +183,36 @@ export default {
       }, 200);
     }
 
+    if (url.pathname === "/v1/quants/infinity-legacy-balance" && request.method === "POST") {
+      const body = await request.json().catch(() => ({}));
+      const amount = Number(body.legacy_balance);
+      if (!Number.isSafeInteger(amount) || amount < 0 || amount > 1000000000)
+        return json({ error: "invalid_legacy_infinity_balance" }, 400);
+      const eventKey = "legacy-infinity-balance:" + identity.user_id;
+      const prior = await env.DB.prepare(
+        "SELECT event_id,balance_after,created_at FROM unified_wallet_events WHERE idempotency_key=?"
+      ).bind(eventKey).first();
+      if (prior) return json({ ok: true, replayed: true, balance: Number(prior.balance_after || 0) });
+      await env.DB.prepare("INSERT OR IGNORE INTO unified_wallet_state(user_id,created_at,updated_at) VALUES(?,?,?)")
+        .bind(identity.user_id, Date.now(), Date.now()).run();
+      const operational = await env.DB.prepare(
+        "SELECT COUNT(*) AS n FROM unified_wallet_events WHERE user_id=? AND asset_code='INFINITY' AND event_type IN ('MINT','SPEND','REVERSAL')"
+      ).bind(identity.user_id).first();
+      const current = await env.DB.prepare(
+        "SELECT infinity_balance FROM unified_wallet_state WHERE user_id=?"
+      ).bind(identity.user_id).first();
+      if (Number(operational?.n || 0) > 0)
+        return json({ ok: true, skipped: true, reason: "cloud_history_already_authoritative", balance: Number(current?.infinity_balance || 0) });
+      const before = Number(current?.infinity_balance || 0), next = Math.max(before, amount), now = Date.now();
+      await env.DB.batch([
+        env.DB.prepare("UPDATE unified_wallet_state SET infinity_balance=?,updated_at=? WHERE user_id=?")
+          .bind(next, now, identity.user_id),
+        env.DB.prepare("INSERT INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) VALUES(?,?,?,'INFINITY','IMPORT',?,?,?,?,?)")
+          .bind("uwe_" + crypto.randomUUID(), eventKey, identity.user_id, Math.max(0, next - before), next, "legacy-browser-balance", JSON.stringify({ source: "QUANTAPHI", reason: "balance_only_migration" }), now)
+      ]);
+      return json({ ok: true, replayed: false, balance: next, imported: Math.max(0, next - before) }, 201);
+    }
+
     if (url.pathname === "/v1/quants/history-import" && request.method === "POST") {
       const body = await request.json().catch(() => ({}));
       const tokens = Array.isArray(body.tokens) ? body.tokens.slice(0, 500) : [];
