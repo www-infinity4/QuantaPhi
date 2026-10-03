@@ -4,7 +4,24 @@ const ENDPOINT='https://unified-wallet.marvaseater.workers.dev';
 const DEVICE_PREFIX='starquest_ledger_device_v1:';
 const read=(key,fallback=null)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
 function storedToken(key){const raw=localStorage.getItem(key)||'';if(/^sq_[A-Za-z0-9_-]{32,}$/.test(raw))return raw;const value=read(key,null);return /^sq_[A-Za-z0-9_-]{32,}$/.test(value?.deviceToken||'')?value.deviceToken:''}
-function findDeviceToken(){const session=read('starquest_session',null),username=String(session?.username||session?.key||'').toLowerCase(),exact=username&&storedToken(DEVICE_PREFIX+username);if(exact)return exact;for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(!key.startsWith(DEVICE_PREFIX))continue;const token=storedToken(key);if(token)return token}return ''}
+function findDeviceToken(){
+ try{
+  const session=read('starquest_session',null),username=String(session?.username||session?.key||'').toLowerCase();
+  if(username)return storedToken(DEVICE_PREFIX+username);
+  const tokens=new Set();for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(key.startsWith(DEVICE_PREFIX)){const token=storedToken(key);if(token)tokens.add(token)}}
+  return tokens.size===1?[...tokens][0]:'';
+ }catch{return ''}
+}
+global.QuantaCloudConnection={async authenticatedFetch(target,options={}){
+ const url=new URL(target);
+ const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&url.pathname.startsWith('/v1/quants/'));
+ if(!allowed)throw new Error('unsupported_wallet_target');
+ const bridge=global.StarQuestCloudLedger;
+ if(bridge?.authenticatedFetch){try{return await bridge.authenticatedFetch(target,options)}catch(error){if(error.message!=='ledger_not_connected')throw error}}
+ const token=findDeviceToken();if(!token)throw new Error('ledger_not_connected');
+ const body=options.body&&typeof options.body==='object'?JSON.stringify(options.body):options.body;
+ return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token}});
+}};
 class InfinityUnifiedWallet{
  constructor(options={}){this.endpoint=options.endpoint||ENDPOINT;this.appName=options.appName||document.title||location.hostname;this.state=null;this.listeners=new Set()}
  token(){const token=findDeviceToken();if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token))throw new Error('Connect the same StarQuest account before using the unified wallet.');return token}
