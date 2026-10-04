@@ -15,7 +15,7 @@ test('Quanta search retry targets the authoritative paired D1 commit, not a seco
 
 test('initial search ledger commit is wired before the AI overview request',()=>{
   const code=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8');
-  const ledger=code.indexOf("const mintPromise=bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search'");
+  const ledger=code.indexOf("bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search'");
   const overview=code.indexOf("const overviewCtl=new AbortController()",ledger);
   assert.ok(ledger>=0&&overview>=0&&ledger<overview);
   assert.match(code,/credit_query:q/);
@@ -32,7 +32,7 @@ test('server search commit journals the search and pairs Quant with Infinity his
   assert.match(code,/history-import/);
   assert.match(code,/balance_only_migration/);
 });
-test('two offline searches add two Infinity credits without reseeding pending credits',async()=>{const s=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8'),start=s.indexOf(' async function create(q){'),end=s.indexOf('\n function payload',start),a=fixture();let registered=0,records=[];const context={window:{PhiAssetBalances:a,InfinityTokenCount:{value:()=>registered,register:()=>registered++}},website:(id,q)=>'https://example.test/'+id,load:async()=>records,save:async all=>{records=all},Date,Math};vm.runInNewContext(s.slice(start,end)+'globalThis.createToken=create',context);await context.createToken('oranges');await context.createToken('tech');assert.equal(a.value('INFINITY'),2);assert.equal(records.length,2)});
+test('two offline searches add two Infinity credits without reseeding pending credits',async()=>{const s=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8'),start=s.indexOf(' async function create(q){'),end=s.indexOf('\n function payload',start),a=fixture();let registered=0,records=[];const context={window:{PhiAssetBalances:a,InfinityTokenCount:{value:()=>registered,register:()=>registered++}},website:(id,q)=>'https://example.test/'+id,load:async()=>records,save:async all=>{records=all},mutate:async fn=>{fn(records);return records},Date,Math};vm.runInNewContext(s.slice(start,end)+'globalThis.createToken=create',context);await context.createToken('oranges');await context.createToken('tech');assert.equal(a.value('INFINITY'),2);assert.equal(records.length,2)});
 
 
 test('refresh restore reuses saved search history before any new mint path',()=>{
