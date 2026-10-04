@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v11-health-compatible';
+const EDGE_VERSION = 'quantaphi-org-v12-preview-routes';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -6,7 +6,10 @@ const APPS = [
  { slug: '/news-phi/', aliases: ['/news/'], repo: 'News-Phi' },
  { slug: '/web-phi/', aliases: ['/web/'], repo: 'Web-Phi' },
  { slug: '/builder-reserve/', aliases: ['/builder/'], repo: 'Builder-Reserve' },
- { slug: '/infinity-radio/', aliases: ['/radio/'], repo: 'Alien-Radio' }
+ { slug: '/infinity-radio/', aliases: ['/radio/'], repo: 'Alien-Radio' },
+ { slug: '/omni-tv/', aliases: ['/tv/'], repo: 'Omni-TV' },
+ { slug: '/alien-coin/', aliases: ['/alien/'], repo: 'Alien-Coin' },
+ { slug: '/bitcoin-crusher/', aliases: ['/crusher/'], repo: 'Bitcoin-Crusher' }
 ];
 const SUPPORT_REPOS=[
  {prefix:'/TV-Database/',repo:'TV-Database'},
