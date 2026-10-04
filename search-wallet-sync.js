@@ -117,7 +117,9 @@ async function restoreHistory(){
 function restoreCloudHistory(){void restoreHistory().catch(error=>console.warn('Cloud search history restore deferred',error))}
 global.QuantaInfinityCredit={enqueue:(q,id,at)=>{queue(q,id,at);void flush()},enqueueSearch:queue,commitNow,confirm,flush,pending:read,restoreHistory,persistResearch};
 setInterval(flush,60000);
-for(const event of ['load','online','focus'])global.addEventListener(event,()=>{void flush();restoreCloudHistory()});
-for(const event of ['starquest:ledger-connected','starquest:auth-changed'])document.addEventListener(event,()=>{void flush();restoreCloudHistory()});
+// Keep search credit retries lightweight on lifecycle events. Cloud history is restored
+// explicitly by the history UI so focus/tap/copy cannot start a competing ledger merge.
+for(const event of ['load','online','focus'])global.addEventListener(event,flush);
+for(const event of ['starquest:ledger-connected','starquest:auth-changed'])document.addEventListener(event,flush);
 })(window);
 
