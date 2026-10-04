@@ -17,7 +17,7 @@ function credentialValues(includeLegacy=false){
   let session=null;try{session=JSON.parse(localStorage.getItem('starquest_session')||'null')}catch{}
   const username=String(session?.username||session?.key||'').toLowerCase();
   const deviceKeys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(key.startsWith(DEVICE_PREFIX)&&deviceToken(localStorage.getItem(key)))deviceKeys.push(key)}
-  const selected=username?deviceKeys.filter(key=>key===DEVICE_PREFIX+username):deviceKeys.length===1?deviceKeys:[];
+  const selected=username?deviceKeys.filter(key=>key===DEVICE_PREFIX+username):deviceKeys;
   for(const key of selected)values[key]=localStorage.getItem(key);
   const accountKey=String(session?.key||username||selected[0]?.slice(DEVICE_PREFIX.length)||'').toLowerCase();
   let users={},backup={};try{users=JSON.parse(localStorage.getItem('starquest_users')||'{}')}catch{}try{backup=JSON.parse(localStorage.getItem('starquest_users_backup_v1')||'{}')}catch{}
