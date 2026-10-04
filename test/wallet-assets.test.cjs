@@ -47,6 +47,7 @@ test('refresh restore reuses saved search history before any new mint path',()=>
   const start=code.indexOf('async function search(options={})');
   const end=code.indexOf("$('#go').onclick=search",start);
   const search=code.slice(start,end);
+  assert.match(search,/let refining=options\.refine===true\|\|options\.restore===true/);
   assert.match(search,/if\(options\.restore\)[\s\S]*quantaPhiBuildHistoryV1[\s\S]*token_id[\s\S]*refining=true/);
   assert.match(search,/if\(!refining&&!searchId\)[\s\S]*crypto\.randomUUID/);
   assert.match(search,/if\(searchId&&!refining\)[\s\S]*\/v1\/quants\/search/);
