@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v9-route-suite';
+const EDGE_VERSION = 'quantaphi-org-v10-wallet-dependencies';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -7,6 +7,10 @@ const APPS = [
  { slug: '/web-phi/', aliases: ['/web/'], repo: 'Web-Phi' },
  { slug: '/builder-reserve/', aliases: ['/builder/'], repo: 'Builder-Reserve' },
  { slug: '/infinity-radio/', aliases: ['/radio/'], repo: 'Alien-Radio' }
+];
+const SUPPORT_REPOS=[
+ {prefix:'/TV-Database/',repo:'TV-Database'},
+ {prefix:'/Mint-For-Infinity/',repo:'Mint-For-Infinity'}
 ];
 const RAW_TYPES = {
  html: 'text/html; charset=utf-8', js: 'application/javascript; charset=utf-8',
@@ -32,6 +36,8 @@ const routeFor = incoming => {
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
  if (path === '/learn') return { redirect: '/learn/' };
  if (path.startsWith('/learn/')) return { repo: 'QuantaPhi', sourcePath: path.endsWith('/') ? path + 'index.html' : path, publicPath: path };
+ const support=SUPPORT_REPOS.find(item=>path.startsWith(item.prefix));
+ if(support)return {repo:support.repo,sourcePath:'/'+path.slice(support.prefix.length),publicPath:path};
  const app = appByIncomingPath(path);
  if (app) {
   const matched = [app.slug, ...app.aliases].find(prefix => path === prefix.slice(0, -1) || path.startsWith(prefix));
@@ -61,6 +67,9 @@ async function getUpstream(url, request, headers) {
 function rewriteSuiteText(text) {
  text=text.split('https://www-infinity4.github.io/Infinity-Phi/').join(CANONICAL_ORIGIN + '/infinity-phi/');
  text=text.split('https://www-infinity4.github.io/Infinity-Phi').join(CANONICAL_ORIGIN + '/infinity-phi');
+ for(const support of SUPPORT_REPOS){
+  text=text.split('https://www-infinity4.github.io/'+support.repo+'/').join(CANONICAL_ORIGIN+support.prefix);
+ }
  for (const app of APPS) {
   const github = 'https://www-infinity4.github.io/' + app.repo;
   text = text.split(github + '/').join(CANONICAL_ORIGIN + app.slug);
