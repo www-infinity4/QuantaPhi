@@ -1,7 +1,7 @@
 (function(global){
  'use strict';
  // One read-only check per load. No polling, minting, or UI-blocking work.
- const production='https://quantaphi.net';
+ const production='https://quantaphi.org';
  function banner(message){
   let box=document.getElementById('domainHealth');
   if(!box){box=document.createElement('p');box.id='domainHealth';box.setAttribute('role','status');box.style.cssText='padding:12px;border:1px solid #ead16b;border-radius:12px;background:#fff4b8;color:#332600';document.querySelector('.app')?.prepend(box)}
@@ -9,7 +9,7 @@
  }
  async function check(){
   const status=global.QuantaDomainHealth={origin:location.origin,site:'pending',bridge:'pending',ledger:'pending'};
-  if(location.origin!==production){status.site='alternate-origin';banner('You are using an alternate address. Open https://quantaphi.net/ for the paired production wallet.');return}
+  if(location.origin!==production){status.site='alternate-origin';banner('You are using an alternate address. Open https://quantaphi.org/ for the paired production wallet.');return}
   try{
    const response=await fetch('/health',{cache:'no-store',signal:AbortSignal.timeout(5000)}),data=await response.json();
    if(!response.ok||data.service!=='quantaphi-site'||data.canonicalOrigin!==production||data.appPath!=='/QuantaPhi/index.html'||!response.headers.get('x-quantaphi-edge'))throw Error('site-routing');
