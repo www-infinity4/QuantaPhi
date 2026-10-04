@@ -247,37 +247,50 @@ export default {
 
     if (url.pathname === "/v1/quants/legacy-migrate" && request.method === "POST") {
       const body = await request.json().catch(() => ({}));
-      const amount = Number(body.legacy_amount);
-      if (!Number.isSafeInteger(amount) || amount < 0 || amount > 1000000000) return json({ error: "invalid_legacy_amount" }, 400);
+      // legacy_amount is the browser's recovered TOTAL Quant balance. The D1
+      // migration row stores only the baseline beneath normal ledger entries.
+      const targetBalance = Number(body.legacy_amount);
+      if (!Number.isSafeInteger(targetBalance) || targetBalance < 0 || targetBalance > 1000000000)
+        return json({ error: "invalid_legacy_amount" }, 400);
+      const ledgerRow = await env.DB.prepare(
+        "SELECT COALESCE(SUM(delta),0) AS delta FROM quant_ledger_entries WHERE wallet_id=?"
+      ).bind(wallet).first();
+      const ledgerDelta = Number(ledgerRow?.delta || 0);
+      const requiredLegacy = Math.max(0, targetBalance - ledgerDelta);
       const prior = await env.DB.prepare(
         "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
       ).bind(wallet).first();
-      if (prior && amount <= Number(prior.legacy_amount || 0)) return json({ ok: true, replayed: true, migration: prior });
-      const material = "legacy-quanta-phi-v2\n" + wallet + "\n" + String(amount);
+      if (prior && requiredLegacy <= Number(prior.legacy_amount || 0)) {
+        const balance = ledgerDelta + Number(prior.legacy_amount || 0);
+        return json({ ok: true, replayed: true, target_balance: targetBalance, balance, migration: prior });
+      }
+      const material = "legacy-quanta-phi-floor-v1\n" + wallet + "\n" + String(targetBalance) + "\n" + String(requiredLegacy);
       const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(material));
       const provenanceHash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, "0")).join("");
       if (prior) {
         await env.DB.prepare(
           "UPDATE quant_legacy_migrations SET legacy_amount=?,provenance_hash=? WHERE wallet_id=? AND legacy_amount<?"
-        ).bind(amount, provenanceHash, wallet, amount).run();
+        ).bind(requiredLegacy, provenanceHash, wallet, requiredLegacy).run();
         const updated = await env.DB.prepare(
           "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
         ).bind(wallet).first();
-        return json({ ok: true, replayed: false, raised: true, migration: updated });
+        return json({ ok: true, replayed: false, raised: true, target_balance: targetBalance, balance: ledgerDelta + Number(updated?.legacy_amount || 0), migration: updated });
       }
       const migrationId = "qlm_" + crypto.randomUUID();
       try {
         await env.DB.prepare(
           "INSERT INTO quant_legacy_migrations(migration_id,wallet_id,legacy_amount,provenance_hash) VALUES(?,?,?,?)"
-        ).bind(migrationId, wallet, amount, provenanceHash).run();
+        ).bind(migrationId, wallet, requiredLegacy, provenanceHash).run();
       } catch {
         const existing = await env.DB.prepare(
           "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
         ).bind(wallet).first();
-        if (existing && Number(existing.legacy_amount || 0) >= amount) return json({ ok: true, replayed: true, migration: existing });
+        if (existing && Number(existing.legacy_amount || 0) >= requiredLegacy) {
+          return json({ ok: true, replayed: true, target_balance: targetBalance, balance: ledgerDelta + Number(existing.legacy_amount || 0), migration: existing });
+        }
         return json({ error: "legacy_migration_failed" }, 409);
       }
-      return json({ ok: true, replayed: false, migration_id: migrationId, wallet_id: wallet, legacy_amount: amount, provenance_hash: provenanceHash }, 201);
+      return json({ ok: true, replayed: false, migration_id: migrationId, wallet_id: wallet, target_balance: targetBalance, legacy_amount: requiredLegacy, balance: ledgerDelta + requiredLegacy, provenance_hash: provenanceHash }, 201);
     }
 
     if (url.pathname === "/v1/quants/receive" && request.method === "GET") {
