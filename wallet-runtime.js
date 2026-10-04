@@ -389,11 +389,26 @@
   const REWARD_QUEUE='phi:pendingStarCoinReceipts:v1';
   let rewardSyncing=false;
   async function queueStarReceipt(id,reference,method){
-    const bytes=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(id));
-    id="phi-reward:"+Array.from(new Uint8Array(bytes),x=>x.toString(16).padStart(2,"0")).join("");
+    const rawId=String(id||'');
+    let receiptId='';
+    try{
+      if(globalThis.crypto?.subtle&&typeof TextEncoder==='function'){
+        const bytes=await globalThis.crypto.subtle.digest('SHA-256',new TextEncoder().encode(rawId));
+        receiptId='phi-reward:'+Array.from(new Uint8Array(bytes),x=>x.toString(16).padStart(2,'0')).join('');
+      }
+    }catch(error){console.warn('Star Coin receipt digest fallback used',error)}
+    if(!receiptId){
+      let hash=2166136261;
+      for(let i=0;i<rawId.length;i++){hash^=rawId.charCodeAt(i);hash=Math.imul(hash,16777619)}
+      receiptId='phi-reward:fnv1a-'+(hash>>>0).toString(16).padStart(8,'0');
+    }
     const items=read(REWARD_QUEUE,[]);
-    if(!items.some(x=>x.attemptId===id))write(REWARD_QUEUE,[...items,{attemptId:id,contentId:reference,method}]);
+    if(!items.some(x=>x.attemptId===receiptId)){
+      const saved=write(REWARD_QUEUE,[...items,{attemptId:receiptId,contentId:reference,method}]);
+      if(!saved){console.warn('Star Coin receipt could not be persisted locally');return false}
+    }
     void flushStarReceipts();
+    return true;
   }
   async function flushStarReceipts(){
     if(rewardSyncing)return;
