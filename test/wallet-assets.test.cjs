@@ -16,7 +16,7 @@ test('Quanta search retry targets the authoritative paired D1 commit, not a seco
 test('initial search ledger commit is wired before the AI overview request',()=>{
   const code=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8');
   const ledger=code.indexOf("bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search'");
-  const overview=code.indexOf("const overviewCtl=new AbortController()",ledger);
+  const overview=code.indexOf("/v1/chat",ledger);
   assert.ok(ledger>=0&&overview>=0&&ledger<overview);
   assert.match(code,/credit_query:q/);
   assert.match(code,/\/v1\/quants\/history-import/);
