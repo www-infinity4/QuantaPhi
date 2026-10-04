@@ -44,3 +44,27 @@ test('refresh restore reuses saved search history before any new mint path',()=>
   assert.match(search,/if\(!refining&&!searchId\)[\s\S]*crypto\.randomUUID/);
   assert.match(search,/if\(searchId&&!refining\)[\s\S]*\/v1\/quants\/search/);
 });
+
+
+test('StarCoin receipt queue falls back when Web Crypto subtle is unavailable',async()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../wallet-runtime.js'),'utf8');
+  const start=code.indexOf("  const REWARD_QUEUE='phi:pendingStarCoinReceipts:v1';");
+  const end=code.indexOf('  async function flushStarReceipts(){',start);
+  const values=new Map();
+  const context={
+    crypto:{randomUUID:()=> 'id-only'},
+    globalThis:null,
+    TextEncoder:undefined,
+    read:(key,f)=>{try{return JSON.parse(values.get(key)||'null')??f}catch{return f}},
+    write:(key,value)=>{values.set(key,JSON.stringify(value));return true},
+    flushStarReceipts(){},
+    console:{warn(){}}
+  };
+  context.globalThis=context;
+  vm.runInNewContext(code.slice(start,end)+';globalThis.queueStarReceipt=queueStarReceipt;',context);
+  const ok=await context.queueStarReceipt('share-123','https://quantaphi.org/story','web_share_api');
+  assert.equal(ok,true);
+  const queued=JSON.parse(values.get('phi:pendingStarCoinReceipts:v1'));
+  assert.equal(queued.length,1);
+  assert.match(queued[0].attemptId,/^phi-reward:fnv1a-[0-9a-f]{8}$/);
+});
