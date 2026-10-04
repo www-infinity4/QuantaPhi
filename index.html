@@ -987,7 +987,17 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
   if(!candidates.length){const n=Number(window.InfinityTokenCount?.value?.());if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}
   return candidates.length?Math.max(...candidates):0
  }
- async function recoverLegacyOnce(){try{const amount=localQuantBalance();if(!Number.isSafeInteger(amount)||amount<1)return null;const r=await call('/v1/quants/legacy-migrate',{method:'POST',body:{legacy_amount:amount}});try{localStorage.setItem('quantaPhiLegacyRecovered',JSON.stringify({amount,at:new Date().toISOString()}))}catch(_){}return r}catch(_){return null}}
+ async function recoverLegacyOnce(){
+  // Migration is a one-time recovery operation only. Never derive a new cloud
+  // Quant mint from a changing browser counter during load/focus/refresh.
+  try{
+   if(localStorage.getItem('quantaPhiLegacyRecovered'))return null;
+   const amount=localQuantBalance();if(!Number.isSafeInteger(amount)||amount<1)return null;
+   const r=await call('/v1/quants/legacy-migrate',{method:'POST',body:{legacy_amount:amount}});
+   try{localStorage.setItem('quantaPhiLegacyRecovered',JSON.stringify({amount,at:new Date().toISOString()}))}catch(_){}
+   return r
+  }catch(_){return null}
+ }
  async function recoverInfinityHistory(){
   try{
    if(!window.QuantaUnifiedTokenLedger)return null;
