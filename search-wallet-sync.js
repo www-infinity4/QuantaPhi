@@ -9,7 +9,9 @@ const save=items=>{
  const raw=JSON.stringify(items);let saved=false;
  try{localStorage.setItem(KEY,raw);localStorage.removeItem(LEGACY);saved=localStorage.getItem(KEY)===raw}catch{}
  if(!saved)try{localStorage.setItem(BACKUP,raw);saved=localStorage.getItem(BACKUP)===raw}catch{}
- if(saved)try{localStorage.removeItem(BACKUP)}catch{}
+ if(saved)try{
+  if(localStorage.getItem(KEY)===raw)localStorage.removeItem(BACKUP);
+ }catch{}
  return saved;
 };
 let running=false;
