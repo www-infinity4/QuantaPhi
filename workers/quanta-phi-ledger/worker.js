@@ -181,27 +181,29 @@ export default {
       const amount = Number(body.legacy_balance);
       if (!Number.isSafeInteger(amount) || amount < 0 || amount > 1000000000)
         return json({ error: "invalid_legacy_infinity_balance" }, 400);
-      const eventKey = "legacy-infinity-balance:" + identity.user_id;
-      const prior = await env.DB.prepare(
-        "SELECT event_id,balance_after,created_at FROM unified_wallet_events WHERE idempotency_key=?"
-      ).bind(eventKey).first();
-      if (prior) return json({ ok: true, replayed: true, balance: Number(prior.balance_after || 0) });
       await env.DB.prepare("INSERT OR IGNORE INTO unified_wallet_state(user_id,created_at,updated_at) VALUES(?,?,?)")
         .bind(identity.user_id, Date.now(), Date.now()).run();
       const current = await env.DB.prepare(
         "SELECT infinity_balance FROM unified_wallet_state WHERE user_id=?"
       ).bind(identity.user_id).first();
-      // This is a one-time floor restoration, not a mint. A newer paired search
-      // must not prevent an older owned Infinity balance from being recovered.
-      // The idempotency key above makes reload/retry harmless.
-      const before = Number(current?.infinity_balance || 0), next = Math.max(before, amount), now = Date.now();
+      // Browser recovery is a monotonic floor, never an additive mint. A later
+      // recovery with stronger owned history may raise an earlier low snapshot,
+      // while retries and stale snapshots can never lower or double-count it.
+      const before = Number(current?.infinity_balance || 0);
+      if (amount <= before) return json({ ok: true, replayed: true, balance: before, imported: 0 });
+      const next = amount, now = Date.now(), eventKey = "legacy-infinity-floor:" + identity.user_id + ":" + amount;
+      const prior = await env.DB.prepare(
+        "SELECT event_id,balance_after,created_at FROM unified_wallet_events WHERE idempotency_key=?"
+      ).bind(eventKey).first();
+      if (prior) return json({ ok: true, replayed: true, balance: Math.max(before, Number(prior.balance_after || 0)), imported: 0 });
       await env.DB.batch([
-        env.DB.prepare("UPDATE unified_wallet_state SET infinity_balance=?,updated_at=? WHERE user_id=?")
-          .bind(next, now, identity.user_id),
-        env.DB.prepare("INSERT INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) VALUES(?,?,?,'INFINITY','IMPORT',?,?,?,?,?)")
-          .bind("uwe_" + crypto.randomUUID(), eventKey, identity.user_id, Math.max(0, next - before), next, "legacy-browser-balance", JSON.stringify({ source: "QUANTAPHI", reason: "balance_only_migration" }), now)
+        env.DB.prepare("UPDATE unified_wallet_state SET infinity_balance=?,updated_at=? WHERE user_id=? AND infinity_balance<?")
+          .bind(next, now, identity.user_id, next),
+        env.DB.prepare("INSERT OR IGNORE INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) VALUES(?,?,?,'INFINITY','IMPORT',?,?,?,?,?)")
+          .bind("uwe_" + crypto.randomUUID(), eventKey, identity.user_id, next - before, next, "legacy-browser-balance", JSON.stringify({ source: "QUANTAPHI", reason: "monotonic_balance_floor" }), now)
       ]);
-      return json({ ok: true, replayed: false, balance: next, imported: Math.max(0, next - before) }, 201);
+      const final = await env.DB.prepare("SELECT infinity_balance FROM unified_wallet_state WHERE user_id=?").bind(identity.user_id).first();
+      return json({ ok: true, replayed: false, balance: Number(final?.infinity_balance || next), imported: Math.max(0, next - before) }, 201);
     }
 
     if (url.pathname === "/v1/quants/history-import" && request.method === "POST") {
@@ -246,14 +248,23 @@ export default {
     if (url.pathname === "/v1/quants/legacy-migrate" && request.method === "POST") {
       const body = await request.json().catch(() => ({}));
       const amount = Number(body.legacy_amount);
-      if (!Number.isSafeInteger(amount) || amount < 0) return json({ error: "invalid_legacy_amount" }, 400);
+      if (!Number.isSafeInteger(amount) || amount < 0 || amount > 1000000000) return json({ error: "invalid_legacy_amount" }, 400);
       const prior = await env.DB.prepare(
         "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
       ).bind(wallet).first();
-      if (prior) return json({ ok: true, replayed: true, migration: prior });
-      const material = "legacy-quanta-phi-v1\n" + wallet + "\n" + String(amount);
+      if (prior && amount <= Number(prior.legacy_amount || 0)) return json({ ok: true, replayed: true, migration: prior });
+      const material = "legacy-quanta-phi-v2\n" + wallet + "\n" + String(amount);
       const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(material));
       const provenanceHash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, "0")).join("");
+      if (prior) {
+        await env.DB.prepare(
+          "UPDATE quant_legacy_migrations SET legacy_amount=?,provenance_hash=? WHERE wallet_id=? AND legacy_amount<?"
+        ).bind(amount, provenanceHash, wallet, amount).run();
+        const updated = await env.DB.prepare(
+          "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
+        ).bind(wallet).first();
+        return json({ ok: true, replayed: false, raised: true, migration: updated });
+      }
       const migrationId = "qlm_" + crypto.randomUUID();
       try {
         await env.DB.prepare(
@@ -263,7 +274,7 @@ export default {
         const existing = await env.DB.prepare(
           "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
         ).bind(wallet).first();
-        if (existing) return json({ ok: true, replayed: true, migration: existing });
+        if (existing && Number(existing.legacy_amount || 0) >= amount) return json({ ok: true, replayed: true, migration: existing });
         return json({ error: "legacy_migration_failed" }, 409);
       }
       return json({ ok: true, replayed: false, migration_id: migrationId, wallet_id: wallet, legacy_amount: amount, provenance_hash: provenanceHash }, 201);
