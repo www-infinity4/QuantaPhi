@@ -37,7 +37,8 @@ function record(kind,reference,card){
  return true;
 }
 let running=false;
-function request(options){return Promise.race([global.QuantaCloudConnection.authenticatedFetch(API,options),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Star Coin sync timed out; retained for retry')),12000))])}
+const REQUEST_TIMEOUT_MS=12000;
+async function request(options){let timer;try{return await Promise.race([global.QuantaCloudConnection.authenticatedFetch(API,options),new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error('Star Coin sync timed out; retained for retry')),REQUEST_TIMEOUT_MS)})])}finally{clearTimeout(timer)}}
 function publish(state){
  try{global.localStorage.setItem(STATE,JSON.stringify({...state,history:undefined,syncedAt:new Date().toISOString()}))}catch{}
  try{global.dispatchEvent(new CustomEvent('quantaphi:star-coins-cloud',{detail:state}))}catch{}
@@ -75,7 +76,10 @@ function backfill(){
  try{
   const session=readJson('starquest_session',null),account=String(session?.key||'guest').toLowerCase(),marker=BACKFILL+account;
   if(global.localStorage.getItem(marker))return 0;
-  const users=readJson('starquest_users',{}),wallet=session?.key&&users?.[session.key]?users[session.key]:readJson('starquest_guest_profile_v1',{});
+  const users=readJson('starquest_users',{});
+  // Wait until the signed-in account record is restored before marking it backfilled.
+  if(session?.key&&!users?.[session.key])return 0;
+  const wallet=session?.key?users[session.key]:readJson('starquest_guest_profile_v1',{});
   const items=read(),known=new Set(items.map(x=>x.reference_id));let added=0;
   const add=item=>{if(!known.has(item.reference_id)){known.add(item.reference_id);items.push(item);added++}};
   for(const entry of Array.isArray(wallet?.ledger)?wallet.ledger:[]){

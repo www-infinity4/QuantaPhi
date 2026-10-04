@@ -32,7 +32,7 @@ function browser(connection){
  const values=new Map(),listeners={};
  const localStorage={getItem:k=>values.has(k)?values.get(k):null,setItem:(k,v)=>values.set(k,String(v)),removeItem:k=>values.delete(k)};
  const window={localStorage,QuantaCloudConnection:connection,addEventListener:(e,f)=>(listeners[e]=listeners[e]||[]).push(f),dispatchEvent(){}};
- const context={window,CustomEvent:class{constructor(t,o){this.type=t;this.detail=o?.detail}},setTimeout:()=>0,console:{warn(){}}};
+ const context={window,CustomEvent:class{constructor(t,o){this.type=t;this.detail=o?.detail}},setTimeout:()=>0,clearTimeout(){},console:{warn(){}}};
  vm.runInNewContext(fs.readFileSync('star-coin-cloud.js','utf8'),context);
  return {cloud:window.QuantaStarCoinCloud,values,window};
 }
@@ -77,4 +77,11 @@ test('QuantaStarCredit routes through Control Phi, falls back to the local walle
  window.QuantaStarCredit('collect','Image|Gold|g');window.QuantaStarCredit('share','page:1');
  assert.deepEqual(JSON.parse(JSON.stringify(calls)),[['collect','Image|Gold|g'],['share','page:1']]);
  assert.deepEqual(JSON.parse(JSON.stringify(recorded.map(x=>x.slice(0,2)))),[['collect','Image|Iron|u'],['collect','Image|Gold|g']],'a duplicate share is not sent to Cloudflare');
+});
+test('backfill waits for a signed-in account record instead of marking it done empty',()=>{
+ const {cloud,values}=browser({hasCredential:()=>false,authenticatedFetch(){throw new Error('unused')}});
+ values.set('starquest_session',JSON.stringify({key:'kris'}));
+ assert.equal(cloud.backfill(),0);assert.equal(values.has('quantaPhi:starCoinCloudBackfill:v1:kris'),false);
+ values.set('starquest_users',JSON.stringify({kris:{ledger:[{referenceId:'quantaphi:share:page:9',createdAt:1}]}}));
+ assert.equal(cloud.backfill(),1);
 });
