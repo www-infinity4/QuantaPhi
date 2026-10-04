@@ -2,6 +2,36 @@ async function ensureResearchRevisions(env) {
   await env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_research_revisions(revision_id TEXT PRIMARY KEY,user_id TEXT NOT NULL,search_id TEXT NOT NULL,token_id TEXT NOT NULL,data_json TEXT NOT NULL,created_at INTEGER NOT NULL)").run();
 }
 
+async function ensureStarCoinCredits(env) {
+  await env.DB.batch([
+    env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_star_coin_credits(credit_id TEXT PRIMARY KEY,user_id TEXT NOT NULL,wallet_id TEXT NOT NULL,kind TEXT NOT NULL CHECK(kind IN ('collect','share')),reference_id TEXT NOT NULL,reference TEXT NOT NULL,tenths INTEGER NOT NULL DEFAULT 1,client_created_at TEXT NOT NULL DEFAULT '',created_at INTEGER NOT NULL,UNIQUE(user_id,reference_id))"),
+    env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_star_coin_credits_user_created ON quanta_star_coin_credits(user_id,created_at)")
+  ]);
+}
+async function ensureCollects(env) {
+  await env.DB.prepare("CREATE TABLE IF NOT EXISTS quant_collects(collect_id TEXT PRIMARY KEY,wallet_id TEXT NOT NULL,content_key TEXT NOT NULL,type TEXT,title TEXT NOT NULL,story TEXT,media TEXT,source_url TEXT,collected_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,UNIQUE(wallet_id,content_key))").run();
+}
+function collectRow(body) {
+  return {
+    key: String(body?.key || "").trim().slice(0, 700),
+    type: String(body?.type || "").trim().slice(0, 40),
+    title: String(body?.title || "").trim().slice(0, 500),
+    story: String(body?.story || "").trim().slice(0, 4000),
+    media: String(body?.media || "").trim().slice(0, 2000),
+    sourceUrl: String(body?.sourceUrl || "").trim().slice(0, 2000)
+  };
+}
+function upsertCollect(env, wallet, card) {
+  return env.DB.prepare("INSERT INTO quant_collects(collect_id,wallet_id,content_key,type,title,story,media,source_url) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(wallet_id,content_key) DO UPDATE SET type=excluded.type,title=excluded.title,story=excluded.story,media=excluded.media,source_url=excluded.source_url,collected_at=CURRENT_TIMESTAMP")
+    .bind("qc_" + crypto.randomUUID(), wallet, card.key, card.type, card.title, card.story, card.media, card.sourceUrl);
+}
+async function starCoinState(env, user, limit = 500) {
+  const totals = await env.DB.prepare("SELECT COALESCE(SUM(tenths),0) AS tenths,COALESCE(SUM(kind='collect'),0) AS collects,COALESCE(SUM(kind='share'),0) AS shares FROM quanta_star_coin_credits WHERE user_id=?").bind(user).first();
+  const history = await env.DB.prepare("SELECT reference_id,kind,reference,tenths,client_created_at,created_at FROM quanta_star_coin_credits WHERE user_id=? ORDER BY created_at DESC LIMIT ?").bind(user, limit).all();
+  const tenths = Number(totals?.tenths || 0);
+  return { ok: true, credits_tenths: tenths, star_coins: Math.floor(tenths / 10), progress: tenths % 10, collects: Number(totals?.collects || 0), shares: Number(totals?.shares || 0), history: history.results || [] };
+}
+
 async function ensureSearchOutbox(env) {
   await env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_search_outbox(user_id TEXT NOT NULL,search_id TEXT NOT NULL,wallet_id TEXT NOT NULL,query_text TEXT NOT NULL,credit_query TEXT NOT NULL,client_created_at TEXT NOT NULL DEFAULT '',status TEXT NOT NULL DEFAULT 'PENDING',attempts INTEGER NOT NULL DEFAULT 0,last_error TEXT,created_at INTEGER NOT NULL,updated_at INTEGER NOT NULL,PRIMARY KEY(user_id,search_id))").run();
 }
@@ -253,24 +283,48 @@ export default {
     }
 
     if (url.pathname === "/v1/quants/collects" && request.method === "POST") {
-      const body = await request.json().catch(() => ({}));
-      const key = String(body.key || "").trim().slice(0, 700);
-      const type = String(body.type || "").trim().slice(0, 40);
-      const title = String(body.title || "").trim().slice(0, 500);
-      const story = String(body.story || "").trim().slice(0, 4000);
-      const media = String(body.media || "").trim().slice(0, 2000);
-      const sourceUrl = String(body.sourceUrl || "").trim().slice(0, 2000);
-      if (!key || !title) return json({ error: "invalid_collect" }, 400);
-      await env.DB.prepare("CREATE TABLE IF NOT EXISTS quant_collects(collect_id TEXT PRIMARY KEY,wallet_id TEXT NOT NULL,content_key TEXT NOT NULL,type TEXT,title TEXT NOT NULL,story TEXT,media TEXT,source_url TEXT,collected_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,UNIQUE(wallet_id,content_key))").run();
-      await env.DB.prepare("INSERT INTO quant_collects(collect_id,wallet_id,content_key,type,title,story,media,source_url) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(wallet_id,content_key) DO UPDATE SET type=excluded.type,title=excluded.title,story=excluded.story,media=excluded.media,source_url=excluded.source_url,collected_at=CURRENT_TIMESTAMP")
-        .bind("qc_" + crypto.randomUUID(), wallet, key, type, title, story, media, sourceUrl).run();
-      return json({ ok: true, key }, 201);
+      const card = collectRow(await request.json().catch(() => ({})));
+      if (!card.key || !card.title) return json({ error: "invalid_collect" }, 400);
+      await ensureCollects(env);
+      await upsertCollect(env, wallet, card).run();
+      return json({ ok: true, key: card.key }, 201);
     }
 
     if (url.pathname === "/v1/quants/collects" && request.method === "GET") {
-      await env.DB.prepare("CREATE TABLE IF NOT EXISTS quant_collects(collect_id TEXT PRIMARY KEY,wallet_id TEXT NOT NULL,content_key TEXT NOT NULL,type TEXT,title TEXT NOT NULL,story TEXT,media TEXT,source_url TEXT,collected_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,UNIQUE(wallet_id,content_key))").run();
+      await ensureCollects(env);
       const rows = await env.DB.prepare("SELECT content_key AS key,type,title,story,media,source_url AS sourceUrl,collected_at AS collectedAt FROM quant_collects WHERE wallet_id=? ORDER BY collected_at DESC LIMIT 50").bind(wallet).all();
       return json({ ok: true, cards: rows.results || [] });
+    }
+
+    // Star Coin receipts from QuantaPhi Collect and Share buttons. Each receipt is
+    // +0.1 Star Coin, recorded once per account and reference so retries are harmless.
+    if (url.pathname === "/v1/quants/star-coins" && request.method === "POST") {
+      const body = await request.json().catch(() => ({}));
+      const credits = Array.isArray(body.credits) ? body.credits.slice(0, 100) : [];
+      if (!credits.length) return json({ error: "invalid_star_coin_credits" }, 400);
+      await ensureStarCoinCredits(env);
+      await ensureCollects(env);
+      const now = Date.now(), accepted = [], statements = [];
+      for (const item of credits) {
+        const kind = item?.kind === "share" ? "share" : item?.kind === "collect" ? "collect" : "";
+        const referenceId = String(item?.reference_id || "").trim().slice(0, 800);
+        if (!kind || !referenceId.startsWith("quantaphi:" + kind + ":")) continue;
+        const reference = String(item?.reference || referenceId).trim().slice(0, 800);
+        const createdAt = String(item?.created_at || "").slice(0, 80);
+        statements.push(env.DB.prepare("INSERT OR IGNORE INTO quanta_star_coin_credits(credit_id,user_id,wallet_id,kind,reference_id,reference,tenths,client_created_at,created_at) VALUES(?,?,?,?,?,?,1,?,?)")
+          .bind("qsc_" + crypto.randomUUID(), identity.user_id, wallet, kind, referenceId, reference, createdAt, now));
+        const card = kind === "collect" && item?.card && typeof item.card === "object" ? collectRow(item.card) : null;
+        if (card?.key && card.title) statements.push(upsertCollect(env, wallet, card));
+        accepted.push(referenceId);
+      }
+      if (!statements.length) return json({ error: "invalid_star_coin_credits" }, 400);
+      await env.DB.batch(statements);
+      return json({ ...(await starCoinState(env, identity.user_id, 50)), accepted }, 201);
+    }
+
+    if (url.pathname === "/v1/quants/star-coins" && request.method === "GET") {
+      await ensureStarCoinCredits(env);
+      return json(await starCoinState(env, identity.user_id));
     }
 
     if (url.pathname.startsWith("/v1/music-quants")) {
