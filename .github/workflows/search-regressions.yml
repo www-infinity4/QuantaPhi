@@ -1,0 +1,17 @@
+name: Quanta search and wallet regressions
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  search-and-wallet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify overview failures, recovery, and paired credits
+        run: node --test test/search-isolation.test.cjs test/wallet-search-handoff.test.cjs test/cloud-connection.test.cjs test/search-commit.test.cjs test/overview-response.test.cjs test/domain-health.test.cjs test/suite-routing.test.cjs test/ai-origin.test.cjs test/wallet-recovery-routing.test.cjs

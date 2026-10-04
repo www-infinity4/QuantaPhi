@@ -4,10 +4,10 @@ test('expired session can use its single existing device credential for the pair
 test('ambiguous devices and another account never silently choose a credential',async()=>{for(const entries of [[['starquest_ledger_device_v1:a','sq_'+'a'.repeat(40)],['starquest_ledger_device_v1:b','sq_'+'b'.repeat(40)]],[['starquest_session','{"username":"other"}'],['starquest_ledger_device_v1:a','sq_'+'a'.repeat(40)]]]){const {window,calls}=setup(entries);await assert.rejects(window.QuantaCloudConnection.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/history'),/ledger_not_connected/);assert.equal(calls.length,0)}});
 test('paid-domain bridge accepts only its exact frame and origin, preserves existing data',async()=>{
  const map=new Map([['quantaPhiTokens','80']]),events=new Map(),frame={contentWindow:{postMessage(){}},remove(){this.removed=true}};
- const document={body:{appendChild(){}},createElement:()=>frame,dispatchEvent(){}};
+ const document={body:{appendChild(){}},createElement:()=>frame,dispatchEvent(){},addEventListener(){}};
  const window={addEventListener:(k,f)=>events.set(k,f),removeEventListener:k=>events.delete(k),dispatchEvent(){}};
  const storage={getItem:k=>map.get(k)??null,setItem:(k,v)=>map.set(k,v),key:i=>[...map.keys()][i],get length(){return map.size}};
- vm.runInNewContext(fs.readFileSync('cloud-wallet-client.js','utf8'),{window,localStorage:storage,document,location:{origin:'https://quantaphi.net'},crypto:{randomUUID:()=> 'nonce'},URL,Set,setTimeout:()=>1,clearTimeout(){},StorageEvent:function(){},CustomEvent:function(){}});
+ vm.runInNewContext(fs.readFileSync('cloud-wallet-client.js','utf8'),{window,localStorage:storage,document,location:{origin:'https://quantaphi.net',href:'https://quantaphi.net/?q=alpha'},crypto:{randomUUID:()=> 'nonce'},URL,Set,setTimeout:()=>1,clearTimeout(){},StorageEvent:function(){},CustomEvent:function(){}});
  const receive=events.get('message'),data={type:'quanta:link-response',nonce:'nonce',values:{quantaPhiTokens:'79',quantaPhiBuildHistoryV1:'[{"id":"saved"}]'}};
  receive({origin:'https://untrusted.example',source:frame.contentWindow,data});assert.equal(map.has('quantaPhiBuildHistoryV1'),false);
  receive({origin:'https://www-infinity4.github.io',source:frame.contentWindow,data});await window.QuantaCloudConnection.ready;

@@ -50,7 +50,7 @@ const ready=PAID_ORIGINS.has(location.origin)?new Promise(resolve=>{
  if(document.body)start();else document.addEventListener('DOMContentLoaded',start,{once:true});
 }):Promise.resolve();
 global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Boolean(findDeviceToken()),async authenticatedFetch(target,options={}){
- await ready;
+ if(!findDeviceToken())await ready;
  const url=new URL(target);
  const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&url.pathname.startsWith('/v1/quants/'));
  if(!allowed)throw new Error('unsupported_wallet_target');
@@ -60,17 +60,30 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
  const body=options.body&&typeof options.body==='object'?JSON.stringify(options.body):options.body;
  return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token}});
 }};
-ready.then(()=>{
- if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return;
+function recoverWallet(){
+ if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return false;
  try{
-  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v2'))return;
+  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v2'))return false;
   sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v2',String(Date.now()));
   const returnUrl=new URL(location.href);returnUrl.hash='';
   const bridge=new URL('https://quantaphi.org/__wallet-handoff');
   bridge.searchParams.set('v','20261004-wallet3');bridge.searchParams.set('return',returnUrl.href);
   location.replace(bridge.href);
+  return true;
  }catch(error){console.warn('First-party wallet handoff unavailable',error)}
+ return false;
+}
+global.QuantaCloudConnection.recoverWallet=recoverWallet;
+ready.then(()=>{
+ // A top-level recovery would discard an in-progress query or the displayed overview.
+ if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return;
+ const query=new URL(location.href).searchParams.get('q')||document.getElementById?.('q')?.value||'';
+ if(String(query).trim()||document.activeElement?.matches?.('input,textarea'))return;
+ recoverWallet();
 });
+if(PAID_ORIGINS.has(location.origin))document.addEventListener('click',event=>{
+ if(event.target.closest?.('#controlPhiWalletButton,#qmenuWallet'))recoverWallet();
+},true);
 class InfinityUnifiedWallet{
  constructor(options={}){this.endpoint=options.endpoint||ENDPOINT;this.appName=options.appName||document.title||location.hostname;this.state=null;this.listeners=new Set()}
  token(){const token=findDeviceToken();if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token))throw new Error('Connect the same StarQuest account before using the unified wallet.');return token}

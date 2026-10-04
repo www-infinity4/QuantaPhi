@@ -8,7 +8,7 @@ test('served wallet client keeps the old-origin recovery frame and accepts its a
  const window={addEventListener:(k,f)=>events.set(k,f),removeEventListener:k=>events.delete(k),dispatchEvent(){}};
  const localStorage={getItem:k=>map.get(k)??null,setItem:(k,v)=>map.set(k,v),key:i=>[...map.keys()][i],get length(){return map.size}};
  const location={origin:'https://quantaphi.org',href:'https://quantaphi.org/',hash:''};
- vm.runInNewContext(source,{window,localStorage,document:{body:{appendChild(){}},createElement:()=>frame,dispatchEvent(){}},location,crypto:{randomUUID:()=> 'nonce'},URL,URLSearchParams,Set,setTimeout:()=>1,clearTimeout(){},StorageEvent:function(){},CustomEvent:function(){}});
+ vm.runInNewContext(source,{window,localStorage,document:{body:{appendChild(){}},createElement:()=>frame,dispatchEvent(){},addEventListener(){}},location,crypto:{randomUUID:()=> 'nonce'},URL,URLSearchParams,Set,setTimeout:()=>1,clearTimeout(){},StorageEvent:function(){},CustomEvent:function(){}});
  assert.equal(new URL(frame.src).origin,'https://www-infinity4.github.io');
  const data={type:'quanta:link-response',nonce:'nonce',values:{starquest_session:'{"key":"kris","username":"kris"}','starquest_ledger_device_v1:kris':token,quantaPhiTokens:'79'}};
  events.get('message')({origin:'https://www-infinity4.github.io',source:frame.contentWindow,data});

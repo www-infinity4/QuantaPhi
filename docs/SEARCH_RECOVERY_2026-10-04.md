@@ -1,0 +1,11 @@
+# Overview recovery, October 4, 2026
+
+The root search previously waited for the wallet iframe, paired-credit response, and an additional unbounded balance read before requesting the overview. A missing research-trail script could also throw before the Search button handler was registered. The successful remote-browser test did not establish the behavior in Kris's phone session.
+
+Search now shows its progress immediately and retrieves evidence independently of wallet authentication and the paired commit. The paired commit keeps its original search ID and durable retry queue. Its response updates the confirmed balances; the redundant balance read is removed. Header and JSON-body reads have a shared deadline. Retrieval failure reaches Wikipedia evidence before attempting synthesis. Optional research-trail loading does not prevent the search handlers from registering.
+
+Wallet recovery preserves its existing origin, nonce, account matching, and only-missing-key import rules. Automatic top-level recovery skips an entered or linked query and an active input. Explicit Wallet clicks retain recovery. Existing device credentials can authenticate while the hidden iframe is pending.
+
+`test/search-isolation.test.cjs` executes the production search function against stalled wallet recovery, stalled wallet response bodies, unavailable retrieval, and stalled AI bodies. Restore does not mint or enqueue again. `test/wallet-search-handoff.test.cjs` checks typed queries, shared queries, keyboard focus, explicit recovery, and existing credentials. Existing paired-credit tests verify that concurrent retries credit once and interrupted commits roll back safely. The GitHub workflow runs these and the routing/CORS checks on main pushes and pull requests.
+
+These checks protect the reproduced code failure paths. They do not prove that a particular phone loaded the latest scripts, nor guarantee external providers will stay available. No user's credentials, identity, balances, or history were cleared for this repair.
