@@ -13,6 +13,9 @@ function confirm(code,id,balance){const a=asset(code),wasPending=Boolean(a.pendi
 function beginRead(code){return asset(code).epoch}
 function accept(code,balance,epoch){const a=asset(code);if(epoch!==a.epoch||Object.keys(a.pending||{}).length||!Number.isFinite(Number(balance)))return false;if(a.balance===number(balance)&&a.cloud)return true;const next=number(balance);if(a.cloud&&a.balance===next)return true;a.balance=next;a.cloud=true;persist();return true}
 function seed(code,balance){const a=asset(code);if(!a.cloud&&number(balance)>a.balance){a.balance=number(balance);persist()}return value(code)}
-global.PhiAssetBalances={KEY,value,snapshot,mint,confirm,beginRead,accept,seed};
+// Full cloud state is authoritative. Pending browser guesses must never keep the
+// displayed owned balance above (or below) the ledger after reload/reconnect.
+function authoritative(code,balance){if(!Number.isFinite(Number(balance)))return false;const a=asset(code);a.balance=number(balance);a.pending={};a.epoch++;a.cloud=true;persist();return value(code)}
+global.PhiAssetBalances={KEY,value,snapshot,mint,confirm,beginRead,accept,seed,authoritative};
 global.addEventListener('storage',e=>{if(e.key===KEY){const next=read(KEY,null);if(next?.assets){state.assets=next.assets;global.dispatchEvent(new CustomEvent('phi:asset-balances',{detail:snapshot()}))}}});
 })(window);
