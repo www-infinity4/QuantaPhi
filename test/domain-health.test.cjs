@@ -14,3 +14,5 @@ test('routing and wallet failures remain diagnostic without adding a banner',asy
  r=await run({wallet:false});assert.equal(r.message,undefined);assert.equal(r.status.ledger,'unavailable');
 });
 test('alternate addresses do not add a banner or request the ledger',async()=>{const r=await run({origin:'https://www-infinity4.github.io'});assert.equal(r.status.site,'alternate-origin');assert.equal(r.message,undefined);assert.equal(r.calls.length,0)});
+
+test('QuantaPhi edge reads current main before a potentially stale Pages copy',()=>{const code=fs.readFileSync('workers/quantaphi-site/worker.js','utf8');const rawFirst=code.indexOf("route.repo === 'QuantaPhi' && textual && readRequest"),pagesAfter=code.indexOf('getUpstream(origin, request, headers)',rawFirst);assert.ok(rawFirst>=0&&pagesAfter>rawFirst);assert.match(code,/quantaphi-org-v20-raw-main/)});
