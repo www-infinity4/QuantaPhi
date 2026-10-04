@@ -19,7 +19,7 @@ function importTopLevelHandoff(){
  try{
   const base64=encoded.replace(/-/g,'+').replace(/_/g,'/'),binary=atob(base64),bytes=Uint8Array.from(binary,char=>char.charCodeAt(0));
   const payload=JSON.parse(new TextDecoder().decode(bytes));
-  if(payload?.version!==1||payload.source!=='https://www-infinity4.github.io'||Math.abs(Date.now()-Number(payload.issuedAt||0))>300000)throw new Error('expired_wallet_handoff');
+  if(payload?.version!==1||!['https://www-infinity4.github.io','https://quantaphi.net','https://www.quantaphi.net'].includes(payload.source)||Math.abs(Date.now()-Number(payload.issuedAt||0))>300000)throw new Error('expired_wallet_handoff');
   const values=payload.values&&typeof payload.values==='object'?payload.values:{};
   const current=read('starquest_session',null),remote=JSON.parse(values.starquest_session||'null');
   if(current&&(current.key||current.username)!==(remote?.key||remote?.username))throw new Error('account_mismatch');
@@ -63,11 +63,11 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
 ready.then(()=>{
  if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return;
  try{
-  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v1'))return;
+  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v2'))return;
   sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v1',String(Date.now()));
   const returnUrl=new URL(location.href);returnUrl.hash='';
-  const bridge=new URL('https://www-infinity4.github.io/QuantaPhi/wallet-link.html');
-  bridge.searchParams.set('v','20261004-wallet2');bridge.searchParams.set('mode','top');bridge.searchParams.set('return',returnUrl.href);
+  const bridge=new URL('https://quantaphi.net/__wallet-handoff');
+  bridge.searchParams.set('v','20261004-wallet3');bridge.searchParams.set('return',returnUrl.href);
   location.replace(bridge.href);
  }catch(error){console.warn('First-party wallet handoff unavailable',error)}
 });
