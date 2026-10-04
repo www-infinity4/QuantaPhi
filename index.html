@@ -62,10 +62,10 @@ const QuantaUnifiedTokenLedger=window.QuantaUnifiedTokenLedger=(()=>{
  async function load(){const l=local();if(Array.isArray(l))return l;const d=await durable();return Array.isArray(d)?d:memoryTokens}
  function writeDurable(raw){return new Promise(resolve=>{if(typeof indexedDB==='undefined')return resolve(false);let done=false,timer;const finish=v=>{if(done)return;done=true;clearTimeout(timer);resolve(v)};try{const req=indexedDB.open('infinity-persistent-state',1);timer=setTimeout(()=>finish(false),1500);req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains('records'))req.result.createObjectStore('records')};req.onerror=req.onblocked=()=>finish(false);req.onsuccess=()=>{const db=req.result;try{const tx=db.transaction('records','readwrite');tx.objectStore('records').put(raw,UNIFIED_INFINITY_LEDGER);tx.oncomplete=()=>{db.close();finish(true)};tx.onerror=tx.onabort=()=>{try{db.close()}catch{}finish(false)}}catch{try{db.close()}catch{}finish(false)}}}catch{finish(false)}})}
  function setCount(n){const owned=window.PhiAssetBalances?.snapshot?.().INFINITY;lastCount=owned&&(owned.cloud||owned.pending)?owned.balance:Math.max(0,Number(n)||0);const b=document.getElementById('qinfinity'),expected='Infinity: '+lastCount;if(b&&b.textContent!==expected)b.textContent=expected;if(b)b.title='Infinity website tokens from Infinity Phi, Omni Phi and QuantaPhi'}
- async function save(tokens){const next=Array.isArray(tokens)?tokens:[],raw=encode(next);memoryTokens=next;try{localStorage.setItem(UNIFIED_INFINITY_LEDGER,raw)}catch{}await writeDurable(raw);const stable=window.InfinityTokenCount?.reconcile?.(next.length)?.value??next.length;setCount(stable);window.dispatchEvent(new Event('infinity-history-updated'));window.dispatchEvent(new Event('infinity-wallet-updated'));window.dispatchEvent(new CustomEvent('infinity:token-ledger-updated',{detail:{count:stable}}));return next}
+ async function save(tokens){const next=Array.isArray(tokens)?tokens:[],raw=encode(next);memoryTokens=next;try{localStorage.setItem(UNIFIED_INFINITY_LEDGER,raw)}catch{}await writeDurable(raw);const confirmedCount=next.filter(x=>x?.cloudStatus!=='pending').length;const stable=window.InfinityTokenCount?.reconcile?.(confirmedCount)?.value??confirmedCount;setCount(stable);window.dispatchEvent(new Event('infinity-history-updated'));window.dispatchEvent(new Event('infinity-wallet-updated'));window.dispatchEvent(new CustomEvent('infinity:token-ledger-updated',{detail:{count:stable}}));return next}
  async function update(id,patch){if(!id)return null;return mutate(all=>{const index=all.findIndex(x=>x?.id===id),current=index<0?{id}:all[index],next={...current,...patch,id};if(index<0)all.unshift(next);else all[index]=next;return next})}
  function website(id,q){return 'https://www-infinity4.github.io/C13b0/studio/build/?'+new URLSearchParams({id:String(id),query:String(q||''),mode:'preview'}).toString()}
- async function create(q){const query=String(q||'').replace(/\s+/g,' ').trim();if(!query)return null;const id='quant-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8),now=new Date().toISOString(),token={id,query,title:query,stage:'search',kind:'quant',color:'yellow',status:'finished',value:1,units:1,source:'quanta-phi',sourceSystem:'QUANTAPHI',createdAt:now,websiteUrl:website(id,query),payload:{title:query,dek:'QuantaPhi Quant research token',overview:'QuantaPhi is building the research package for '+query+'.',sources:[]}};if(!window.PhiAssetBalances?.snapshot?.().INFINITY.pending)window.PhiAssetBalances?.seed('INFINITY',window.InfinityTokenCount?.value?.()||0);window.PhiAssetBalances?.mint('INFINITY',id);window.InfinityTokenCount?.register?.(id);await mutate(all=>{all.unshift(token)});return token}
+ async function create(q){const query=String(q||'').replace(/\s+/g,' ').trim();if(!query)return null;const id='quant-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8),now=new Date().toISOString(),token={id,query,title:query,stage:'search',kind:'quant',color:'yellow',status:'finished',value:1,units:1,source:'quanta-phi',sourceSystem:'QUANTAPHI',cloudStatus:'pending',createdAt:now,websiteUrl:website(id,query),payload:{title:query,dek:'QuantaPhi Quant research token',overview:'QuantaPhi is building the research package for '+query+'.',sources:[]}};await mutate(all=>{all.unshift(token)});return token}
  function payload(q,sections,evidence){const red=String(sections?.red?.overview||''),yellow=(sections?.yellow||[]).map(x=>String(x?.value||x?.label||'')).filter(Boolean),blue=(sections?.blue||[]).map(x=>String(x?.contribution||x?.region||'')).filter(Boolean),orange=(sections?.orange||[]).map(x=>String(x?.value||x?.label||'')).filter(Boolean),sources=(evidence||[]).slice(0,40).map(x=>({title:String(x?.title||''),url:String(x?.url||''),excerpt:String(x?.evidence||x?.snippet||'')}));return{title:q,dek:'QuantaPhi Quant research',overview:red,keyTakeaways:yellow,findings:yellow,engineering:blue,context:orange,next:orange,sources}}
  function prebuild(id,q){if(!id||!document.body||document.activeElement?.matches?.('input,textarea')||Date.now()-(window.__qLastInteractionAt||0)<3000)return;document.querySelectorAll('iframe[data-quanta-website-build]').forEach(f=>f.remove());const frame=document.createElement('iframe');frame.dataset.quantaWebsiteBuild=id;frame.src=website(id,q);frame.tabIndex=-1;frame.setAttribute('aria-hidden','true');frame.style.cssText='position:fixed;width:1px;height:1px;right:-8px;bottom:-8px;opacity:0;pointer-events:none;border:0';document.body.appendChild(frame);setTimeout(()=>frame.remove(),45000)}
  async function finalize(id,q,sections,evidence){if(!id)return null;const research=payload(q,sections,evidence),next=await update(id,{stage:'research',status:'finished',sourceCount:research.sources.length,dataExtraction:{...(await load()).find(x=>x.id===id)?.dataExtraction,...(window.QuantaResearch.extraction?.(q,sections,evidence)||{})},payload:{...research,interactions:(await load()).find(x=>x.id===id)?.interactions||[]},websiteUrl:website(id,q),updatedAt:new Date().toISOString()});try{await window.QuantaInfinityCredit?.persistResearch?.(next)}catch(error){console.warn('Research revision sync deferred',error)}void window.QuantaResearch.render?.(id);prebuild(id,q);return next}
@@ -450,7 +450,6 @@ async function search(options={}){
    if(searchId&&!refining){
      await QuantaUnifiedTokenLedger.update(unifiedTokenId,{sourceEventId:searchId,quantSearchId:searchId});
      window.QuantaInfinityCredit?.enqueue(q,searchId,unifiedToken.createdAt||new Date().toISOString());
-     try{window.QuantaPhiWallet?.addToken()}catch(_){}
      // The same paired commit remains queued and idempotent; it cannot hold up the overview.
      if(bridge?.authenticatedFetch)void (async()=>{
        try{
@@ -649,7 +648,7 @@ $('#go').onclick=search;
  }
  let tokenBalance=num(T);
  window.QuantaPhiWallet={
-  addToken:function(){const id=window.__qInitialSearchId||window.__qActiveTokenId;tokenBalance=window.PhiAssetBalances?.mint('QUANT',id)??Math.max(tokenBalance,num(T))+1;put(T,tokenBalance);document.getElementById('qtoken').textContent='Quants: '+tokenBalance;window.__qTokenSession=(window.__qTokenSession||0)+1;return tokenBalance},
+  addToken:function(){tokenBalance=Math.max(0,Number(window.PhiAssetBalances?.snapshot?.().QUANT?.balance??num(T))||0);document.getElementById('qtoken').textContent='Quants: '+tokenBalance;return tokenBalance},
   addCollect:function(reference){return award('collect',reference||crypto.randomUUID())},
   addShare:function(reference){return award('share',reference||crypto.randomUUID())},
   snapshot:function(){return paint(starStore().wallet,false)},
@@ -1015,9 +1014,10 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
    const ids=records.map(x=>String(x?.id||'')).filter(Boolean).sort().join('|');let hash=2166136261;for(let i=0;i<ids.length;i++){hash^=ids.charCodeAt(i);hash=Math.imul(hash,16777619)}
    const historyKey='quantaphi-history-v3-'+records.length+'-'+history.length+'-'+(hash>>>0).toString(16);
    const owned=localInfinityBalance();
-   if(owned>0&&!localStorage.getItem('quantaPhiOwnedInfinityMigratedV3')){
+   const infinityMigrationKey='quantaPhiOwnedInfinityMigratedV4';
+   if(owned>0&&!localStorage.getItem(infinityMigrationKey)){
     const balanceResult=await call('/v1/quants/infinity-legacy-balance',{method:'POST',body:{legacy_balance:owned}});
-    localStorage.setItem('quantaPhiOwnedInfinityMigratedV3',JSON.stringify({balance:Number(balanceResult.balance??owned),skipped:Boolean(balanceResult.skipped),at:new Date().toISOString()}))
+    if(!balanceResult.skipped)localStorage.setItem(infinityMigrationKey,JSON.stringify({balance:Number(balanceResult.balance??owned),at:new Date().toISOString()}))
    }
    if(localStorage.getItem('quantaPhiD1HistoryRecoveredV3')===historyKey)return null;
    const tokens=records.filter(x=>x?.id&&!x?.cloudTokenId).slice(0,500).map(x=>({id:String(x.id),query:String(x.query||x.title||''),source:String(x.sourceSystem||x.source||'INFINITY').toUpperCase(),created_at:Date.parse(x.createdAt||x.created_at||'')||Date.now(),source_event_id:String(x.sourceEventId||x.quantSearchId||''),website_url:String(x.websiteUrl||'')}));
@@ -1031,13 +1031,12 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
    await recoverLegacyOnce();
    await recoverInfinityHistory();
    await window.QuantaInfinityCredit?.restoreHistory?.();
-   const epoch=window.PhiAssetBalances?.beginRead('QUANT');
    const s=await call('/v1/quants/state');
    const balance=Math.max(0,Number(s.balance)||0);
-   const accepted=window.PhiAssetBalances?.accept('QUANT',balance,epoch);
-   const shown=window.PhiAssetBalances?.value('QUANT')??balance;
+   const shown=window.PhiAssetBalances?.authoritative?.('QUANT',balance)??balance;
    const q=document.getElementById('qtoken');if(q)q.textContent='Quants: '+shown;
-   if(accepted!==false)try{localStorage.setItem('quantaPhiTokens',String(shown))}catch(_){}
+   try{localStorage.setItem('quantaPhiTokens',String(shown))}catch(_){}
+   if(Number.isFinite(Number(s.infinity_balance))){const infinity=Math.max(0,Number(s.infinity_balance)||0);window.PhiAssetBalances?.authoritative?.('INFINITY',infinity);window.QuantaUnifiedTokenLedger?.setCount?.(infinity)}
    try{window.QuantaUnifiedWalletSync?.('QUANT',balance,'QUANTA_CLOUD',s.wallet_id||'')}catch(_){}
    try{window.ControlPhi?.refreshWallet?.()}catch(_){}
   }catch(_){try{window.ControlPhi?.refreshWallet?.()}catch(_){}}
