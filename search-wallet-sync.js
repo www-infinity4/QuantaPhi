@@ -1,10 +1,17 @@
 (function(global){
 'use strict';
 const KEY='quantaPhi:pendingSearchCommits:v2',LEGACY='quantaPhi:pendingInfinityCredits:v1',API='https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search';
-const memory=new Map();
+const memory=new Map(),BACKUP='quantaPhi:pendingSearchCommits:backup:v1';
 const parse=key=>{try{return JSON.parse(localStorage.getItem(key)||'[]')}catch{return[]}};
-const read=()=>{const merged=[...parse(KEY),...parse(LEGACY),...memory.values()].filter(x=>x&&x.search_id);return [...new Map(merged.map(x=>[x.search_id,{query:x.query,search_id:x.search_id,source:'QUANTAPHI',created_at:x.created_at||new Date().toISOString()}])).values()]};
-const save=items=>{memory.clear();for(const item of items)memory.set(item.search_id,item);try{localStorage.setItem(KEY,JSON.stringify(items));localStorage.removeItem(LEGACY)}catch{}};
+const read=()=>{const merged=[...parse(KEY),...parse(LEGACY),...parse(BACKUP),...memory.values()].filter(x=>x&&x.search_id);return [...new Map(merged.map(x=>[x.search_id,{query:x.query,search_id:x.search_id,source:'QUANTAPHI',created_at:x.created_at||new Date().toISOString()}])).values()]};
+const save=items=>{
+ memory.clear();for(const item of items)memory.set(item.search_id,item);
+ const raw=JSON.stringify(items);let saved=false;
+ try{localStorage.setItem(KEY,raw);localStorage.removeItem(LEGACY);saved=localStorage.getItem(KEY)===raw}catch{}
+ if(!saved)try{localStorage.setItem(BACKUP,raw);saved=localStorage.getItem(BACKUP)===raw}catch{}
+ if(saved)try{localStorage.removeItem(BACKUP)}catch{}
+ return saved;
+};
 let running=false;
 async function request(options){return Promise.race([global.QuantaCloudConnection.authenticatedFetch(API,options),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Search commit timed out; retained for retry')),12000))])}
 async function apply(item,result){
@@ -36,7 +43,8 @@ async function flush(){
  }finally{running=false}
 }
 function queue(query,search_id,created_at){
- const items=read();if(!items.some(x=>x.search_id===search_id)){items.push({query,search_id,source:'QUANTAPHI',created_at:created_at||new Date().toISOString()});save(items)}
+ const items=read();if(!items.some(x=>x.search_id===search_id)){items.push({query,search_id,source:'QUANTAPHI',created_at:created_at||new Date().toISOString()});return save(items)}
+ return true;
 }
 async function confirm(search_id,result){
  const item=read().find(x=>x.search_id===search_id);
