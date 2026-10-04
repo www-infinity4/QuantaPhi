@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v12-preview-routes';
+const EDGE_VERSION = 'quantaphi-org-v13-mckee-coins';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -9,7 +9,8 @@ const APPS = [
  { slug: '/infinity-radio/', aliases: ['/radio/'], repo: 'Alien-Radio' },
  { slug: '/omni-tv/', aliases: ['/tv/'], repo: 'Omni-TV' },
  { slug: '/alien-coin/', aliases: ['/alien/'], repo: 'Alien-Coin' },
- { slug: '/bitcoin-crusher/', aliases: ['/crusher/'], repo: 'Bitcoin-Crusher' }
+ { slug: '/bitcoin-crusher/', aliases: ['/crusher/'], repo: 'Bitcoin-Crusher' },
+ { slug: '/mckee-coins/', aliases: ['/coins/'], repo: 'Mckee-Coins-Inc' }
 ];
 const SUPPORT_REPOS=[
  {prefix:'/TV-Database/',repo:'TV-Database'},
