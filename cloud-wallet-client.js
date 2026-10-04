@@ -2,6 +2,7 @@
 'use strict';
 const ENDPOINT='https://unified-wallet.marvaseater.workers.dev';
 const DEVICE_PREFIX='starquest_ledger_device_v1:';
+const PAID_ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www.quantaphi.net']);
 const read=(key,fallback=null)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
 function storedToken(key){const raw=localStorage.getItem(key)||'';if(/^sq_[A-Za-z0-9_-]{32,}$/.test(raw))return raw;const value=read(key,null);return /^sq_[A-Za-z0-9_-]{32,}$/.test(value?.deviceToken||'')?value.deviceToken:''}
 function findDeviceToken(){
@@ -12,10 +13,28 @@ function findDeviceToken(){
   return tokens.size===1?[...tokens][0]:'';
  }catch{return ''}
 }
-const connectionStatus={bridge:['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www.quantaphi.net'].includes(location.origin)?'pending':'not-required'};
-const ready=['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www.quantaphi.net'].includes(location.origin)?new Promise(resolve=>{
+function importTopLevelHandoff(){
+ let encoded='';try{encoded=new URLSearchParams(location.hash.slice(1)).get('quantaWalletLink')||''}catch{}
+ if(!encoded)return false;
+ try{
+  const base64=encoded.replace(/-/g,'+').replace(/_/g,'/'),binary=atob(base64),bytes=Uint8Array.from(binary,char=>char.charCodeAt(0));
+  const payload=JSON.parse(new TextDecoder().decode(bytes));
+  if(payload?.version!==1||payload.source!=='https://www-infinity4.github.io'||Math.abs(Date.now()-Number(payload.issuedAt||0))>300000)throw new Error('expired_wallet_handoff');
+  const values=payload.values&&typeof payload.values==='object'?payload.values:{};
+  const current=read('starquest_session',null),remote=JSON.parse(values.starquest_session||'null');
+  if(current&&(current.key||current.username)!==(remote?.key||remote?.username))throw new Error('account_mismatch');
+  for(const [key,value]of Object.entries(values)){
+   if((key==='starquest_session'||/^starquest_ledger_device_v1:[A-Za-z0-9_-]+$/.test(key))&&typeof value==='string'&&localStorage.getItem(key)===null)localStorage.setItem(key,value);
+  }
+  return Boolean(findDeviceToken());
+ }catch(error){console.warn('Wallet handoff rejected',error);return false}
+ finally{try{const clean=new URL(location.href);clean.hash='';history.replaceState(history.state,'',clean.href)}catch{}}
+}
+const handoffImported=PAID_ORIGINS.has(location.origin)&&importTopLevelHandoff();
+const connectionStatus={bridge:PAID_ORIGINS.has(location.origin)?(handoffImported?'linked':'pending'):'not-required'};
+const ready=PAID_ORIGINS.has(location.origin)?new Promise(resolve=>{
  const start=()=>{
-  const frame=document.createElement('iframe'),nonce=crypto.randomUUID();frame.hidden=true;frame.src='https://www-infinity4.github.io/QuantaPhi/wallet-link.html?v=20261004-learn1';
+  const frame=document.createElement('iframe'),nonce=crypto.randomUUID();frame.hidden=true;frame.src='https://www-infinity4.github.io/QuantaPhi/wallet-link.html?v=20261004-wallet2';
   let done=false;const finish=(status='timeout')=>{if(done)return;done=true;connectionStatus.bridge=status;clearTimeout(timer);global.removeEventListener('message',receive);frame.remove();resolve()};
   const timer=setTimeout(()=>finish('timeout'),8000);
   const receive=event=>{
@@ -41,6 +60,17 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
  const body=options.body&&typeof options.body==='object'?JSON.stringify(options.body):options.body;
  return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token}});
 }};
+ready.then(()=>{
+ if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return;
+ try{
+  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v1'))return;
+  sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v1',String(Date.now()));
+  const returnUrl=new URL(location.href);returnUrl.hash='';
+  const bridge=new URL('https://www-infinity4.github.io/QuantaPhi/wallet-link.html');
+  bridge.searchParams.set('v','20261004-wallet2');bridge.searchParams.set('mode','top');bridge.searchParams.set('return',returnUrl.href);
+  location.replace(bridge.href);
+ }catch(error){console.warn('First-party wallet handoff unavailable',error)}
+});
 class InfinityUnifiedWallet{
  constructor(options={}){this.endpoint=options.endpoint||ENDPOINT;this.appName=options.appName||document.title||location.hostname;this.state=null;this.listeners=new Set()}
  token(){const token=findDeviceToken();if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token))throw new Error('Connect the same StarQuest account before using the unified wallet.');return token}
