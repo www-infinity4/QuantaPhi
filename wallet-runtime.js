@@ -278,7 +278,7 @@
     };
     return {
       quants:ownedBalance('QUANT',quants),
-      infinity:canonical.infinity,
+      infinity:ownedBalance('INFINITY',canonical.infinity),
       omni:canonical.omni,
       quantaWebsites:canonical.quants,
       legacy:canonical.legacy,
