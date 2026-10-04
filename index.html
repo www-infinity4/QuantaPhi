@@ -449,7 +449,7 @@ async function search(options={}){
    if(!refining&&!searchId){searchId=crypto.randomUUID().replace(/-/g,'');window.__qInitialSearchId=searchId}
    if(searchId&&!refining){
      await QuantaUnifiedTokenLedger.update(unifiedTokenId,{sourceEventId:searchId,quantSearchId:searchId});
-     window.QuantaInfinityCredit?.enqueueSearch(q,searchId,unifiedToken.createdAt||new Date().toISOString());
+     window.QuantaInfinityCredit?.enqueue(q,searchId,unifiedToken.createdAt||new Date().toISOString());
      try{window.QuantaPhiWallet?.addToken()}catch(_){}
      // The same paired commit remains queued and idempotent; it cannot hold up the overview.
      if(bridge?.authenticatedFetch)void (async()=>{
