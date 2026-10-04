@@ -175,3 +175,22 @@ CREATE TABLE IF NOT EXISTS quanta_search_journal(
 
 CREATE INDEX IF NOT EXISTS idx_quanta_search_journal_user_created
 ON quanta_search_journal(user_id,created_at DESC);
+
+-- QuantaPhi Collect/Share Star Coin receipts (+0.1 each). One row per account
+-- and reference so browser retries never credit twice. The worker also creates
+-- this table on first use.
+CREATE TABLE IF NOT EXISTS quanta_star_coin_credits(
+  credit_id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  wallet_id TEXT NOT NULL,
+  kind TEXT NOT NULL CHECK(kind IN ('collect','share')),
+  reference_id TEXT NOT NULL,
+  reference TEXT NOT NULL,
+  tenths INTEGER NOT NULL DEFAULT 1,
+  client_created_at TEXT NOT NULL DEFAULT '',
+  created_at INTEGER NOT NULL,
+  UNIQUE(user_id,reference_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_star_coin_credits_user_created
+ON quanta_star_coin_credits(user_id,created_at);
