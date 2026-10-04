@@ -96,3 +96,29 @@ test('pending search queue preserves a backup when primary storage write fails',
   assert.equal(backup[0].search_id,'search-1');
   assert.equal(window.QuantaInfinityCredit.pending()[0].search_id,'search-1');
 });
+
+
+test('legacy Quant recovery is a monotonic total-balance floor, not an additive duplicate',()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../workers/quanta-phi-ledger/worker.js'),'utf8');
+  const start=code.indexOf('if (url.pathname === "/v1/quants/legacy-migrate"');
+  const end=code.indexOf('if (url.pathname === "/v1/quants/receive"',start);
+  const route=code.slice(start,end);
+  assert.match(route,/SUM\(delta\)/);
+  assert.match(route,/targetBalance - ledgerDelta/);
+  assert.match(route,/requiredLegacy <= Number\(prior\.legacy_amount/);
+  assert.match(route,/legacy_amount<\?/);
+});
+test('Infinity recovery can raise an earlier low cloud floor but never lower it',()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../workers/quanta-phi-ledger/worker.js'),'utf8');
+  const start=code.indexOf('if (url.pathname === "/v1/quants/infinity-legacy-balance"');
+  const end=code.indexOf('if (url.pathname === "/v1/quants/history-import"',start);
+  const route=code.slice(start,end);
+  assert.match(route,/amount <= before/);
+  assert.match(route,/legacy-infinity-floor:/);
+  assert.match(route,/infinity_balance<\?/);
+});
+test('wallet sync de-duplicates overlapping load focus and auth refreshes',()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8');
+  assert.match(code,/let syncFlight=null/);
+  assert.match(code,/if\(syncFlight\)return syncFlight/);
+});
