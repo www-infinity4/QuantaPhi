@@ -986,23 +986,29 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
   try{for(const key of ['quantaPhiTokens','quantaPhiQuants','quantaPhiBalance']){const n=Number(localStorage.getItem(key));if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}}catch(_){}
   try{const a=JSON.parse(localStorage.getItem('phi:assetBalances:v1')||'null')?.assets?.QUANT;if(a){const n=Number(a.balance);if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}}catch(_){}
   try{const u=JSON.parse(localStorage.getItem('infinity_unified_wallet_v1')||'null'),w=u?.wallets?.[u.currentWalletId],n=Number(w?.balances?.QUANT);if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}catch(_){}
+  try{const h=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]');if(Array.isArray(h)){const n=new Set(h.map(x=>String(x?.id||'')).filter(Boolean)).size;if(n)candidates.push(n)}}catch(_){}
   return candidates.length?Math.max(...candidates):0
  }
  function localInfinityBalance(){
   const candidates=[];
   try{const a=JSON.parse(localStorage.getItem('phi:assetBalances:v1')||'null')?.assets?.INFINITY,n=Number(a?.balance);if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}catch(_){}
   try{const u=JSON.parse(localStorage.getItem('infinity_unified_wallet_v1')||'null'),w=u?.wallets?.[u.currentWalletId],n=Number(w?.balances?.INFINITY);if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}catch(_){}
-  if(!candidates.length){const n=Number(window.InfinityTokenCount?.value?.());if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}
+  try{const n=Number(window.InfinityTokenCount?.value?.());if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}catch(_){}
   return candidates.length?Math.max(...candidates):0
  }
  async function recoverLegacyOnce(){
-  // Migration is a one-time recovery operation only. Never derive a new cloud
-  // Quant mint from a changing browser counter during load/focus/refresh.
+  // One recovery receipt per cloud identity. A browser can legitimately move
+  // between identities after an origin/storage repair, so never use one global
+  // "already migrated" bit for every account on the device.
   try{
-   if(localStorage.getItem('quantaPhiLegacyRecovered'))return null;
+   const state=await call('/v1/quants/state');
+   const identity=String(state.user_id||state.wallet_id||'').replace(/[^A-Za-z0-9_-]/g,'').slice(0,140);
+   if(!identity)return null;
+   const marker='quantaPhiLegacyRecoveredV2:'+identity;
+   if(localStorage.getItem(marker))return null;
    const amount=localQuantBalance();if(!Number.isSafeInteger(amount)||amount<1)return null;
    const r=await call('/v1/quants/legacy-migrate',{method:'POST',body:{legacy_amount:amount}});
-   try{localStorage.setItem('quantaPhiLegacyRecovered',JSON.stringify({amount,at:new Date().toISOString()}))}catch(_){}
+   try{localStorage.setItem(marker,JSON.stringify({amount,at:new Date().toISOString()}))}catch(_){}
    return r
   }catch(_){return null}
  }
@@ -1012,18 +1018,22 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
    const records=await window.QuantaUnifiedTokenLedger.load();
    let history=[];try{history=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]')}catch(_){}
    const ids=records.map(x=>String(x?.id||'')).filter(Boolean).sort().join('|');let hash=2166136261;for(let i=0;i<ids.length;i++){hash^=ids.charCodeAt(i);hash=Math.imul(hash,16777619)}
-   const historyKey='quantaphi-history-v3-'+records.length+'-'+history.length+'-'+(hash>>>0).toString(16);
+   const historyKey='quantaphi-history-v4-'+records.length+'-'+history.length+'-'+(hash>>>0).toString(16);
+   const state=await call('/v1/quants/state');
+   const identity=String(state.user_id||state.wallet_id||'').replace(/[^A-Za-z0-9_-]/g,'').slice(0,140);
+   if(!identity)return null;
    const owned=localInfinityBalance();
-   const infinityMigrationKey='quantaPhiOwnedInfinityMigratedV4';
-   if(owned>0&&!localStorage.getItem(infinityMigrationKey)){
+   const infinityMigrationKey='quantaPhiOwnedInfinityMigratedV5:'+identity;
+   if(owned>Number(state.infinity_balance||0)&&!localStorage.getItem(infinityMigrationKey)){
     const balanceResult=await call('/v1/quants/infinity-legacy-balance',{method:'POST',body:{legacy_balance:owned}});
-    if(!balanceResult.skipped)localStorage.setItem(infinityMigrationKey,JSON.stringify({balance:Number(balanceResult.balance??owned),at:new Date().toISOString()}))
+    localStorage.setItem(infinityMigrationKey,JSON.stringify({balance:Number(balanceResult.balance??owned),at:new Date().toISOString()}))
    }
-   if(localStorage.getItem('quantaPhiD1HistoryRecoveredV3')===historyKey)return null;
+   const historyMarker='quantaPhiD1HistoryRecoveredV4:'+identity;
+   if(localStorage.getItem(historyMarker)===historyKey)return null;
    const tokens=records.filter(x=>x?.id&&!x?.cloudTokenId).slice(0,500).map(x=>({id:String(x.id),query:String(x.query||x.title||''),source:String(x.sourceSystem||x.source||'INFINITY').toUpperCase(),created_at:Date.parse(x.createdAt||x.created_at||'')||Date.now(),source_event_id:String(x.sourceEventId||x.quantSearchId||''),website_url:String(x.websiteUrl||'')}));
    const searches=history.filter(x=>x?.id&&x?.query&&!String(x.id).startsWith('archive:')).slice(0,1000).map(x=>({id:String(x.id),query:String(x.query),created_at:Date.parse(x.created_at||'')||Date.now()}));
    const imported=await call('/v1/quants/history-import',{method:'POST',body:{tokens,searches}});
-   localStorage.setItem('quantaPhiD1HistoryRecoveredV3',historyKey);return imported
+   localStorage.setItem(historyMarker,historyKey);return imported
   }catch(error){console.warn('Infinity history recovery deferred',error);return null}
  }
  async function sync(){
