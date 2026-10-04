@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v7-phi-suite';
+const EDGE_VERSION = 'quantaphi-org-v8-wallet-suite';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -57,9 +57,11 @@ function rewriteSuiteText(text) {
  text = text.split('https://www-infinity4.github.io/QuantaPhi/').join(CANONICAL_ORIGIN + '/');
  return text;
 }
+const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex\"><title>Moving QuantaPhi wallet</title></head><body><p>Recovering your existing wallet…</p><script>\n'use strict';\nconst target=(()=>{try{const u=new URL(new URLSearchParams(location.search).get('return')||'');return ['https://quantaphi.org','https://www.quantaphi.org'].includes(u.origin)?u:null}catch{return null}})();\nconst prefix='starquest_ledger_device_v1:',values={};\ntry{\n const sessionRaw=localStorage.getItem('starquest_session');if(sessionRaw)values.starquest_session=sessionRaw;\n let session=null;try{session=JSON.parse(sessionRaw||'null')}catch{}\n const username=String(session?.username||session?.key||'').toLowerCase(),keys=[];\n for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'',value=localStorage.getItem(key)||'';if(key.startsWith(prefix)&&(/^sq_[A-Za-z0-9_-]{32,}$/.test(value)||/\"deviceToken\"\\s*:\\s*\"sq_[A-Za-z0-9_-]{32,}\"/.test(value)))keys.push(key)}\n const chosen=username?keys.filter(key=>key===prefix+username):keys.length===1?keys:[];\n for(const key of chosen)values[key]=localStorage.getItem(key);\n}catch{}\nif(!target){document.body.textContent='Wallet return address rejected.'}\nelse if(Object.keys(values).some(key=>key.startsWith(prefix))){\n const bytes=new TextEncoder().encode(JSON.stringify({version:1,issuedAt:Date.now(),source:location.origin,values}));let binary='';for(const byte of bytes)binary+=String.fromCharCode(byte);\n target.hash='quantaWalletLink='+btoa(binary).replace(/\\+/g,'-').replace(/\\//g,'_').replace(/=+$/,'');\n location.replace(target.href);\n}else{\n const fallback=new URL('https://www-infinity4.github.io/QuantaPhi/wallet-link.html');fallback.searchParams.set('mode','top');fallback.searchParams.set('v','20261004-wallet3');fallback.searchParams.set('return',target.href);location.replace(fallback.href);\n}\n</script></body></html>";
 export default {
  async fetch(request) {
   const incoming = new URL(request.url);
+  if (/^(?:www\.)?quantaphi\.net$/.test(incoming.hostname) && incoming.pathname === '/__wallet-handoff') return new Response(LEGACY_HANDOFF_HTML, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'x-quantaphi-edge': EDGE_VERSION } });
   if (/^(?:www\.)?quantaphi\.(?:net|org)$/.test(incoming.hostname) && incoming.hostname !== 'quantaphi.org') {
    incoming.hostname = 'quantaphi.org'; incoming.protocol = 'https:';
    return Response.redirect(incoming.toString(), 308);
