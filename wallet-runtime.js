@@ -270,14 +270,20 @@
     const assets=window.PhiAssetBalances,owned=assets?.snapshot?.();
     const localMusic=Number(window.MusicQuantCloud?.localCount)||musicQuants;
     const musicState=window.MusicQuantCloud?.state;
+    const hasCloud=code=>Object.prototype.hasOwnProperty.call(cloudBalances,code)&&Number.isFinite(Number(cloudBalances[code]));
+    const ownedBalance=(code,fallback)=>{
+      if(hasCloud(code))return Math.max(0,Number(cloudBalances[code]));
+      const item=owned?.[code];if(item&&(item.cloud||item.pending))return Math.max(0,Number(item.balance)||0);
+      return Math.max(0,Number(fallback)||0);
+    };
     return {
-      quants:owned?.QUANT?.cloud||owned?.QUANT?.pending?owned.QUANT.balance:quants,
+      quants:ownedBalance('QUANT',quants),
       infinity:canonical.infinity,
       omni:canonical.omni,
       quantaWebsites:canonical.quants,
       legacy:canonical.legacy,
-      total:owned?.INFINITY?.cloud||owned?.INFINITY?.pending?owned.INFINITY.balance:canonical.total,
-      musicQuants:musicState?.ok?Number(musicState.balance)||0:Math.max(localMusic,Number(cloudBalances.MUSIC_QUANT)||0),
+      total:ownedBalance('INFINITY',canonical.total),
+      musicQuants:musicState?.ok?Math.max(0,Number(musicState.balance)||0):ownedBalance('MUSIC_QUANT',localMusic),
       pianoQuants:Number(window.MusicQuantCloud?.pianoCount)||0,
       listeningQuants:Number(window.MusicQuantCloud?.listeningCount)||0
     };
