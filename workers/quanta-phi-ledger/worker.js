@@ -158,14 +158,12 @@ export default {
       if (prior) return json({ ok: true, replayed: true, balance: Number(prior.balance_after || 0) });
       await env.DB.prepare("INSERT OR IGNORE INTO unified_wallet_state(user_id,created_at,updated_at) VALUES(?,?,?)")
         .bind(identity.user_id, Date.now(), Date.now()).run();
-      const operational = await env.DB.prepare(
-        "SELECT COUNT(*) AS n FROM unified_wallet_events WHERE user_id=? AND asset_code='INFINITY' AND event_type IN ('MINT','SPEND','REVERSAL')"
-      ).bind(identity.user_id).first();
       const current = await env.DB.prepare(
         "SELECT infinity_balance FROM unified_wallet_state WHERE user_id=?"
       ).bind(identity.user_id).first();
-      if (Number(operational?.n || 0) > 0)
-        return json({ ok: true, skipped: true, reason: "cloud_history_already_authoritative", balance: Number(current?.infinity_balance || 0) });
+      // This is a one-time floor restoration, not a mint. A newer paired search
+      // must not prevent an older owned Infinity balance from being recovered.
+      // The idempotency key above makes reload/retry harmless.
       const before = Number(current?.infinity_balance || 0), next = Math.max(before, amount), now = Date.now();
       await env.DB.batch([
         env.DB.prepare("UPDATE unified_wallet_state SET infinity_balance=?,updated_at=? WHERE user_id=?")
@@ -203,7 +201,7 @@ export default {
       for (const item of searches) {
         const historyId = String(item?.id || "").trim().slice(0, 180);
         const query = String(item?.query || "").trim().replace(/\s+/g, " ").slice(0, 500);
-        if (!historyId || !query) continue;
+        if (!historyId || !query || historyId.startsWith("archive:")) continue;
         const created = Number(item?.created_at);
         const createdAt = Number.isFinite(created) && created > 0 ? Math.trunc(created) : Date.now();
         const searchId = "archive:" + identity.user_id.slice(0, 24) + ":" + historyId;
