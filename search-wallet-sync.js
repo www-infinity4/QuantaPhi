@@ -14,7 +14,7 @@ const save=items=>{
  }catch{}
  return saved;
 };
-let running=false,retryTimer=0;
+let running=false,retryTimer=0,historyFlight=null;
 function scheduleRetry(){
  if(retryTimer||!read().length)return;
  retryTimer=setTimeout(()=>{retryTimer=0;void flush()},4000);
@@ -88,7 +88,9 @@ async function persistResearch(token){
  await global.QuantaUnifiedTokenLedger.update(token.id,{cloudResearchSavedAt:token.updatedAt||token.createdAt});
 }
 async function restoreHistory(){
+ if(historyFlight)return historyFlight;
  if(!global.QuantaCloudConnection?.authenticatedFetch||!global.QuantaUnifiedTokenLedger)return;
+ historyFlight=(async()=>{
  const r=await global.QuantaCloudConnection.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/history');
  if(!r.ok)throw new Error('Cloud history read failed');
  const cloud=await r.json();
@@ -109,10 +111,13 @@ async function restoreHistory(){
  global.QuantaCloudBuildHistory=next;
  try{localStorage.setItem('quantaPhiBuildHistoryV1',JSON.stringify(next))}catch{}
  global.dispatchEvent(new CustomEvent('quantaPhiHistoryAdded'));
+ })();
+ try{return await historyFlight}finally{historyFlight=null}
 }
+function restoreCloudHistory(){void restoreHistory().catch(error=>console.warn('Cloud search history restore deferred',error))}
 global.QuantaInfinityCredit={enqueue:(q,id,at)=>{queue(q,id,at);void flush()},enqueueSearch:queue,commitNow,confirm,flush,pending:read,restoreHistory,persistResearch};
 setInterval(flush,60000);
-for(const event of ['load','online','focus'])global.addEventListener(event,flush);
-for(const event of ['starquest:ledger-connected','starquest:auth-changed'])document.addEventListener(event,flush);
+for(const event of ['load','online','focus'])global.addEventListener(event,()=>{void flush();restoreCloudHistory()});
+for(const event of ['starquest:ledger-connected','starquest:auth-changed'])document.addEventListener(event,()=>{void flush();restoreCloudHistory()});
 })(window);
 
