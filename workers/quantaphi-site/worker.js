@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v8-wallet-suite';
+const EDGE_VERSION = 'quantaphi-org-v9-route-suite';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -16,8 +16,19 @@ const RAW_TYPES = {
  woff: 'font/woff', woff2: 'font/woff2'
 };
 const appByIncomingPath = path => APPS.find(app => [app.slug, ...app.aliases].some(prefix => path === prefix.slice(0, -1) || path.startsWith(prefix)));
+const OMNI_SUBROUTES=['build','overview','images','video','audio','structured','cards','code','create','ecosystem','share','share-card'];
+const INFINITY_SUBROUTES=['wallet','profile','history','business','research','phi'];
 const routeFor = incoming => {
  let path = incoming.pathname;
+ const first=path.split('/').filter(Boolean)[0]||'';
+ if(OMNI_SUBROUTES.includes(first)){
+  if(path==='/' + first)return {redirect:path+'/'};
+  return {repo:'Omni-Phi',sourcePath:path.endsWith('/')?path+'index.html':path,publicPath:path};
+ }
+ if(INFINITY_SUBROUTES.includes(first)){
+  if(path==='/' + first)return {redirect:path+'/'};
+  return {repo:'C13b0',sourcePath:path.endsWith('/')?path+'index.html':path,publicPath:path};
+ }
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
  if (path === '/learn') return { redirect: '/learn/' };
  if (path.startsWith('/learn/')) return { repo: 'QuantaPhi', sourcePath: path.endsWith('/') ? path + 'index.html' : path, publicPath: path };
@@ -48,6 +59,8 @@ async function getUpstream(url, request, headers) {
  } finally { clearTimeout(timer); }
 }
 function rewriteSuiteText(text) {
+ text=text.split('https://www-infinity4.github.io/Infinity-Phi/').join(CANONICAL_ORIGIN + '/infinity-phi/');
+ text=text.split('https://www-infinity4.github.io/Infinity-Phi').join(CANONICAL_ORIGIN + '/infinity-phi');
  for (const app of APPS) {
   const github = 'https://www-infinity4.github.io/' + app.repo;
   text = text.split(github + '/').join(CANONICAL_ORIGIN + app.slug);
