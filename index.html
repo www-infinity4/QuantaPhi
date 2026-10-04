@@ -396,7 +396,7 @@ async function boundedJsonRequest(request,ms=6500){
 }
 let activeSearchRun=0;
 async function search(options={}){
- const run=++activeSearchRun;let refining=options.refine===true;
+ const run=++activeSearchRun;let refining=options.refine===true||options.restore===true;
  const isCurrent=()=>run===activeSearchRun;
  const q=$('#q').value.trim().slice(0,500); if(!q)return;
  $('#result').hidden=false;$('#overview').innerHTML='<section class="qzone qzoneRed"><h3>AI Overview</h3><div>Building…</div></section>';
