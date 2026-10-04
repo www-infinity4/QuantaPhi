@@ -41,7 +41,7 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 }
 </style><style id="quantWalletStyle">
 .qwalletPanel{position:fixed;inset:0;z-index:9999;background:#f7f3fb;color:#21172b;padding:16px;overflow:auto}.qwalletHead{display:flex;align-items:center;justify-content:space-between;gap:12px}.qwalletHead h2{margin:0}.qwalletClose{border:0;border-radius:12px;padding:10px 14px;font-weight:900}.qwalletTabs{display:flex;gap:8px;margin:18px 0}.qwalletTabs button{flex:1;border:0;border-radius:14px;padding:12px;font-weight:900}.qwalletBox{background:#fff;border:1px solid #ddd2e8;border-radius:18px;padding:16px;margin-top:12px}.qwalletBox label{display:block;font-weight:800;margin:12px 0 5px}.qwalletBox input{box-sizing:border-box;width:100%;padding:12px;border:1px solid #b9a9c9;border-radius:12px;font-size:16px}.qwalletPrimary{width:100%;margin-top:14px;border:0;border-radius:14px;padding:13px;background:#5f259f;color:#fff;font-weight:900}.qwalletId{overflow-wrap:anywhere;font-family:monospace;background:#f3edf8;padding:12px;border-radius:12px}.qwalletMsg{margin-top:12px;font-weight:700}
-</style><script src="https://www-infinity4.github.io/C13b0/unified-token-count.js?v=20261002-stable3"></script><script src="asset-balances.js?v=20261004-authoritative1"></script><script src="cloud-wallet-client.js?v=20261004-account7"></script><script src="https://www-infinity4.github.io/QuantaPhi/music-quant-store.js?v=20261003-assets1"></script><script src="https://www-infinity4.github.io/QuantaPhi/music-quant-cloud.js?v=20261003-assets1"></script><script src="https://www-infinity4.github.io/QuantaPhi/wallet-runtime.js?v=20261003-tidy4" data-control-phi-wallet-only="true"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"992ccaa311754974becbcebf74de1b34"}'></script><script src="search-wallet-sync.js?v=20261004-learn1"></script><script src="star-coin-cloud.js?v=20261004-star1"></script><script defer src="domain-health.js?v=20261004-org7"></script></head>
+</style><script src="https://www-infinity4.github.io/C13b0/unified-token-count.js?v=20261002-stable3"></script><script src="asset-balances.js?v=20261004-authoritative1"></script><script src="cloud-wallet-client.js?v=20261004-account7"></script><script src="https://www-infinity4.github.io/QuantaPhi/music-quant-store.js?v=20261003-assets1"></script><script src="https://www-infinity4.github.io/QuantaPhi/music-quant-cloud.js?v=20261003-assets1"></script><script src="https://www-infinity4.github.io/QuantaPhi/wallet-runtime.js?v=20261003-tidy4" data-control-phi-wallet-only="true"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"992ccaa311754974becbcebf74de1b34"}'></script><script src="search-wallet-sync.js?v=20261004-wallet3"></script><script src="star-coin-cloud.js?v=20261004-star1"></script><script defer src="domain-health.js?v=20261004-org7"></script></head>
 <body><main class="app">
 <div class="qtop"><button class="qmenuBtn" id="qmenuBtn" type="button" aria-label="Menu">☰</button><h1>Quantaφ</h1><div class="qbalances" aria-live="polite" data-control-phi-wallet-host><button class="qtoken" id="qinfinity" type="button" title="Infinity website tokens">Infinity: —</button><button class="qtoken" id="qtoken" type="button" title="Spendable Quants">Quants: —</button><button class="qstar" id="controlPhiWalletButton" type="button" aria-label="Open unified wallet" aria-expanded="false"><span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong data-control-phi-wallet-balance>0</strong><small data-control-phi-wallet-progress>0/10</small></button></div><nav class="qmenu" id="qmenu" hidden><button id="qshare" type="button">Share +0.1 ★</button><button id="qmenuWallet" type="button">Unified Wallet ⭐</button><a href="/about.html">About QuantaPhi</a><a href="/learn/">Learn</a><a href="https://www-infinity4.github.io/Infinity-Phi/">Infinity Phi</a><a href="https://www-infinity4.github.io/Omni-Phi/">Omni Phi</a><a href="https://www-infinity4.github.io/News-Phi/">News Phi</a><a href="https://www-infinity4.github.io/Alien-Radio/">Infinity Radio</a><a href="#result">Overview</a><button id="qHistoryBtn" type="button">Build History</button><button class="mediaNav" id="qImagesBtn" type="button">Images</button><button class="mediaNav" id="qVideoBtn" type="button">Video</button><button class="mediaNav" id="qSoundBtn" type="button">Sound</button><a href="#media">Media</a></nav></div><p class="sub">Semantic field + 500-word overview + weighted media extensions</p><p style="margin:-10px 0 10px;font-size:14px"><a href="/about.html" style="color:#5f259f;text-underline-offset:3px">About QuantaPhi &amp; Quants</a> · <a href="/learn/" style="color:#5f259f">Learn</a></p>
 <div class="search"><input id="q" autocomplete="off" placeholder="Search anything…"><button id="go">Search</button></div>
@@ -434,7 +434,7 @@ async function search(options={}){
   sessionStorage.setItem(key,q);
  }catch(monitorError){console.warn('Monitor bit-flip sync deferred',monitorError)}
  const fetchJsonWithTimeout=(url,opt={},ms=6500)=>boundedJsonRequest(signal=>fetch(url,{...opt,signal}),ms);
- let evidence=[];
+ let evidence=[];let pairedCommitPromise=null;
  if(!refining)try{const key='quantaPhiBuildHistoryV1',items=JSON.parse(localStorage.getItem(key)||'[]'),entry={id:crypto.randomUUID(),token_id:unifiedTokenId,query:q,created_at:new Date().toISOString(),url:searchPermalink(q),website:QuantaUnifiedTokenLedger.website(unifiedTokenId,q)};items.unshift(entry);localStorage.setItem(key,JSON.stringify(items.slice(0,5000)));window.dispatchEvent(new CustomEvent('quantaPhiHistoryAdded',{detail:entry}))}catch(_){}  const eid=elementIdentity(q);const nq=eid?('Element '+eid.number+' '+eid.name):normalizedEntity(q); try{history.replaceState(null,'',searchPermalink(q))}catch(_){} $('#media').hidden=true; $('#mediaGrid').innerHTML='';
  $('#result').hidden=false; $('#overview').innerHTML='<section class="qzone qzoneRed"><h3>AI Overview</h3><div>Building…</div></section>'; showField(q);
  $('#status').innerHTML='<small>Building semantic field and overview…</small>';
@@ -449,21 +449,15 @@ async function search(options={}){
    if(!refining&&!searchId){searchId=crypto.randomUUID().replace(/-/g,'');window.__qInitialSearchId=searchId}
    if(searchId&&!refining){
      await QuantaUnifiedTokenLedger.update(unifiedTokenId,{sourceEventId:searchId,quantSearchId:searchId});
-     window.QuantaInfinityCredit?.enqueue(q,searchId,unifiedToken.createdAt||new Date().toISOString());
-     // The same paired commit remains queued and idempotent; it cannot hold up the overview.
-     if(bridge?.authenticatedFetch)void (async()=>{
-       try{
-         const {response,data:payload}=await boundedJsonRequest(signal=>bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search',{method:'POST',signal,body:{query:nq,credit_query:q,search_id:searchId,created_at:unifiedToken.createdAt||new Date().toISOString()}}),6500);
-         if(!response.ok)throw new Error(payload.message||payload.error||('Quant mint HTTP '+response.status));
-         window.PhiAssetBalances?.confirm('QUANT',searchId,payload.balance);
+     const createdAt=unifiedToken.createdAt||new Date().toISOString();
+     if(window.QuantaInfinityCredit?.commitNow){
+       pairedCommitPromise=window.QuantaInfinityCredit.commitNow(nq,searchId,createdAt,q).then(payload=>{
          if(window.__qInitialSearchId===searchId)window.__qInitialSearchId='';
          window.__qLastMintedSearch={query:q,search_id:searchId,at:new Date().toISOString()};
-         await QuantaUnifiedTokenLedger.update(unifiedTokenId,{sourceEventId:searchId,quantSearchId:searchId,quant:{amount:1,search_id:searchId},cloudTokenId:payload.infinity?.token_id||null,cloudStatus:payload.infinity?.token_id?'saved':'pending',cloudSavedAt:payload.infinity?.token_id?new Date().toISOString():null});
-         if(payload.infinity?.token_id)window.PhiAssetBalances?.confirm('INFINITY',unifiedTokenId,payload.infinity.balance);
-         await window.QuantaInfinityCredit?.confirm?.(searchId,payload);
-         if(Number.isFinite(Number(payload.balance)))try{window.QuantaUnifiedWalletSync?.('QUANT',Number(payload.balance),'QUANTA_CLOUD',payload.wallet_id||'')}catch(_){}
-       }catch(error){console.warn('Quant paired commit retained for retry',error)}
-     })();
+         if(Number.isFinite(Number(payload?.balance)))try{window.QuantaUnifiedWalletSync?.('QUANT',Number(payload.balance),'QUANTA_CLOUD',payload.wallet_id||'')}catch(_){}
+         return payload;
+       }).catch(error=>{console.warn('Quant + Infinity paired commit queued for retry',error);return null});
+     }else window.QuantaInfinityCredit?.enqueue(q,searchId,createdAt);
    }
    try{const {response,data}=await fetchJsonWithTimeout(searchUrl,{cache:'no-store'},6500);sj=response.ok?data:{results:[]}}
    catch(error){console.warn('Search retrieval unavailable; trying research sources',error);sj={results:[]}}
@@ -506,7 +500,7 @@ const {response:r,data:d}=await fetchJsonWithTimeout('https://infinity-rogers.ma
      sections.sourceFallback=false;
      sections.red={overview:aiOverview};
    }
-   $('#overview').innerHTML=renderFivePartOverview(sections,q,evidence);activateFivePartOverview();monitorRendered();loadExpandedDataIndex(q,sections,evidence);loadHistoryAssimilation(q,sections);$('#status').innerHTML='';loadMedia(q);await QuantaUnifiedTokenLedger.finalize(unifiedTokenId,q,sections,evidence);return;
+   $('#overview').innerHTML=renderFivePartOverview(sections,q,evidence);activateFivePartOverview();monitorRendered();loadExpandedDataIndex(q,sections,evidence);loadHistoryAssimilation(q,sections);$('#status').innerHTML='';loadMedia(q);if(pairedCommitPromise)await pairedCommitPromise;await QuantaUnifiedTokenLedger.finalize(unifiedTokenId,q,sections,evidence);return;
  }catch(e){
    if(!isCurrent())return;
    console.warn('Primary Quanta overview failed',e);
