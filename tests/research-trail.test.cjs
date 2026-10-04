@@ -1,0 +1,26 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const root=require('node:path').resolve(__dirname,'..'),source=fs.readFileSync(root+'/index.html','utf8');
+for(const match of source.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g))if(match[1].trim())new vm.Script(match[1]);
+const data=new Map(),minted=[],events=[];let cloudResearch;
+const context={console,AbortSignal,TextEncoder,TextDecoder,atob,btoa,URL,URLSearchParams,Date,Math,JSON,Uint8Array,setTimeout,clearTimeout,setInterval:()=>{},navigator:{},Event:class{constructor(type){this.type=type}},CustomEvent:class{constructor(type,o={}){this.type=type;this.detail=o.detail}},localStorage:{getItem:k=>data.get(k)||null,setItem:(k,v)=>data.set(k,v),removeItem:k=>data.delete(k)},UNIFIED_INFINITY_LEDGER:'test-ledger',document:{getElementById:()=>null,addEventListener:()=>{},body:null},dispatchEvent:e=>events.push(e),addEventListener:()=>{},PhiAssetBalances:{snapshot:()=>({INFINITY:{pending:1}}),mint:(asset,id)=>minted.push([asset,id]),confirm:()=>{}},QuantaCloudConnection:{authenticatedFetch:async(url,options)=>{if(url.endsWith('/research')){cloudResearch=options.body.research;return{ok:true}}return{ok:true,json:async()=>({tokens:[{token_id:'cloud-a',source:'QUANTAPHI',created_at:Date.now(),data_json:JSON.stringify({query:cloudResearch.query,search_id:'search-a'}),research_json:JSON.stringify(cloudResearch)}],searches:[]})}}}};
+context.window=context;vm.createContext(context);
+vm.runInContext(fs.readFileSync(root+'/quant-trail.js','utf8'),context);
+const start=source.indexOf('const QuantaUnifiedTokenLedger='),end=source.indexOf('window.QuantaUnifiedTokenLedger=QuantaUnifiedTokenLedger;',start);
+vm.runInContext(source.slice(start,end),context);
+vm.runInContext(fs.readFileSync(root+'/search-wallet-sync.js','utf8'),context);
+(async()=>{
+ const l=context.QuantaUnifiedTokenLedger,r=context.QuantaResearch;
+ const [a,b,c]=await Promise.all(['ruthenium','atomic number','isotope'].map(q=>l.create(q)));assert.equal((await l.load()).length,3,'concurrent creates must not lose tokens');assert.equal(minted.length,3);
+ await r.link(a.id,null);await r.link(b.id,a.id,'extracted-link','atomic number');await r.link(c.id,b.id);
+ let all=await l.load(),child=all.find(x=>x.id===c.id);assert.equal(child.trail.rootId,a.id);assert.equal(child.trail.parentId,b.id);assert.deepEqual(Array.from(child.trail.containedQuantIds),[b.id,a.id]);assert.ok(all.find(x=>x.id===a.id).trail.children.includes(b.id));
+ await assert.rejects(r.link(a.id,c.id),/cycle/);assert.equal((await l.load()).find(x=>x.id===a.id).trail.parentId,null);
+ const d=await l.create('catalyst');await r.link(d.id,a.id);await r.include(c.id,'catalyst');assert.ok((await l.load()).find(x=>x.id===c.id).trail.containedQuantIds.includes(d.id));await r.include(a.id,'isotope');assert.equal((await l.load()).find(x=>x.id===a.id).trail.containedQuantIds.length,0,'assimilation cannot create a reference cycle');
+ await Promise.all([l.update(c.id,{sourceEventId:'search-a'}),l.update(c.id,{cloudTokenId:'cloud-a'})]);child=(await l.load()).find(x=>x.id===c.id);assert.equal(child.sourceEventId,'search-a');assert.equal(child.cloudTokenId,'cloud-a');
+ await l.finalize(c.id,'isotope',{red:{overview:'A definition'},yellow:[{value:'proton',source_indexes:[0]}]},[{title:'IUPAC',url:'https://goldbook.iupac.org/terms/view/A00499',evidence:'Proton count'}]);
+ assert.equal(cloudResearch.trail.parentId,b.id);assert.equal(cloudResearch.dataExtraction.entries[0].sourceIndexes[0],0);assert.equal(cloudResearch.dataExtraction.sources[0].title,'IUPAC');
+ await r.expanded(c.id,[{value:'neutron',category:'property',source_query:'isotope'}],'retrieval extraction');assert.equal(cloudResearch.dataExtraction.discoveryTerms[0].sourceQuery,'isotope');
+ const saved=JSON.parse(JSON.stringify(cloudResearch));await l.save([]);cloudResearch=saved;await context.QuantaInfinityCredit.restoreHistory();child=(await l.load())[0];assert.equal(child.id,c.id);assert.equal(child.trail.rootId,a.id);assert.equal(child.dataExtraction.discoveryTerms[0].value,'neutron');
+ const creditsBefore=minted.length;await l.update(child.id,{payload:{...child.payload,overview:'refined'}});assert.equal(minted.length,creditsBefore,'record edits never mint');
+ assert.ok(source.includes("void search({refine:true})"));assert.ok(source.includes("u.searchParams.delete('from')"));assert.ok(source.includes('extractionPermalink(term)'));
+ console.log('PASS: syntax, concurrent updates, branching, containment, cycle rejection, sources, cloud restoration, no edit mint');
+})().catch(error=>{console.error(error);process.exitCode=1});

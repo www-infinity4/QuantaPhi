@@ -12,10 +12,10 @@ function findDeviceToken(){
   return tokens.size===1?[...tokens][0]:'';
  }catch{return ''}
 }
-const connectionStatus={bridge:location.origin==='https://quantaphi.net'?'pending':'not-required'};
-const ready=location.origin==='https://quantaphi.net'?new Promise(resolve=>{
+const connectionStatus={bridge:['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www.quantaphi.net'].includes(location.origin)?'pending':'not-required'};
+const ready=['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www.quantaphi.net'].includes(location.origin)?new Promise(resolve=>{
  const start=()=>{
-  const frame=document.createElement('iframe'),nonce=crypto.randomUUID();frame.hidden=true;frame.src='https://www-infinity4.github.io/QuantaPhi/wallet-link.html?v=20261003-domain5';
+  const frame=document.createElement('iframe'),nonce=crypto.randomUUID();frame.hidden=true;frame.src='https://www-infinity4.github.io/QuantaPhi/wallet-link.html?v=20261004-learn1';
   let done=false;const finish=(status='timeout')=>{if(done)return;done=true;connectionStatus.bridge=status;clearTimeout(timer);global.removeEventListener('message',receive);frame.remove();resolve()};
   const timer=setTimeout(()=>finish('timeout'),8000);
   const receive=event=>{
@@ -54,3 +54,4 @@ class InfinityUnifiedWallet{
 }
 global.InfinityCloudWallet=InfinityUnifiedWallet;
 })(window);
+

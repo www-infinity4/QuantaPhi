@@ -59,7 +59,7 @@ export default {
     if(ctx?.waitUntil)ctx.waitUntil(drainSearchOutbox(env));
     const url = new URL(request.url);
     const origin = request.headers.get("Origin") || "";
-    const allowedOrigin = ["https://www-infinity4.github.io", "https://quantaphi.net", "https://www.quantaphi.net"].includes(origin) ? origin : "";
+    const allowedOrigin = ["https://quantaphi.org", "https://www.quantaphi.org", "https://www-infinity4.github.io", "https://quantaphi.net", "https://www.quantaphi.net"].includes(origin) ? origin : "";
     const headers = {
       "content-type": "application/json",
       ...(allowedOrigin ? { "access-control-allow-origin": allowedOrigin, "vary": "Origin" } : {}),
@@ -462,3 +462,4 @@ export default {
     return json({ error: "not_found" }, 404);
   }
 };
+

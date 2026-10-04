@@ -1,0 +1,14 @@
+/* QuantaPhi's shared light theme; wallet balances and authentication stay in the runtime. */
+:root{--qp-purple:#5f259f;--qp-bg:#f7f4fb;--qp-ink:#21172b;--qp-line:#e6dfeb}
+body #controlPhiWalletButton,body #controlPhiWalletMenuButton{background:var(--qp-purple)!important;color:#fff!important;border:1px solid var(--qp-purple)!important;border-radius:12px!important}
+body #controlPhiWalletPanel{background:#fff!important;color:var(--qp-ink)!important;border:1px solid var(--qp-line)!important;border-radius:20px!important;box-shadow:0 8px 30px #29163b22!important;max-height:calc(100dvh - 100px);overflow:auto}
+body #controlPhiWalletPanel .cp-wallet-asset{background:var(--qp-bg)!important;color:var(--qp-ink)!important;border:1px solid var(--qp-line)!important;border-radius:14px!important}
+body #controlPhiWalletPanel .cp-wallet-asset span,body #controlPhiWalletPanel .cp-wallet-asset small{color:#6b6274!important}
+body #controlPhiWalletPanel p{color:#6b6274!important}
+body #controlPhiWalletPanel a{color:var(--qp-purple)!important}
+body #controlPhiWalletPanel button{background:var(--qp-purple)!important;color:#fff!important}
+body #controlPhiWalletPanel input{background:#fff!important;color:var(--qp-ink)!important;border-color:var(--qp-line)!important}
+.qtrailLink{display:block;padding:10px 12px;margin:7px 0;max-width:100%;white-space:normal;text-align:left;overflow-wrap:anywhere}
+#qResearchTrail a{display:block;margin-top:10px;color:var(--qp-purple)}
+
+body #controlPhiWalletPanel .cp-wallet-asset strong span{color:#21172b!important;font-size:18px!important}

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-04",
+  "publicationPolicy": "Selected, source-checked lessons; private search trails are not automatically published.",
+  "lessons": [
+    {
+      "slug": "ruthenium",
+      "url": "https://quantaphi.org/learn/ruthenium/",
+      "title": "Ruthenium: element 44",
+      "extractionTerms": [
+        "Ru",
+        "ruthenium",
+        "atomic number 44",
+        "ruthenium-102",
+        "electrical contacts",
+        "catalysts"
+      ],
+      "sources": [
+        {
+          "title": "Royal Society of Chemistry: Ruthenium",
+          "url": "https://periodic-table.rsc.org/element/44/ruthenium"
+        },
+        {
+          "title": "IUPAC Gold Book: Atomic number",
+          "url": "https://goldbook.iupac.org/terms/view/A00499"
+        },
+        {
+          "title": "US Department of Energy: Isotopes",
+          "url": "https://www.energy.gov/science/doe-explainsisotopes"
+        }
+      ],
+      "author": "QuantaPhi",
+      "writingMethod": "AI-assisted draft by Codex",
+      "sourceCheck": "Codex AI, 2026-10-04",
+      "independentExpertReview": false
+    },
+    {
+      "slug": "atomic-number",
+      "url": "https://quantaphi.org/learn/atomic-number/",
+      "title": "Atomic number, mass number and isotopes",
+      "extractionTerms": [
+        "atomic number",
+        "mass number",
+        "isotope",
+        "proton",
+        "neutron",
+        "deuterium"
+      ],
+      "sources": [
+        {
+          "title": "IUPAC Gold Book: Atomic number",
+          "url": "https://goldbook.iupac.org/terms/view/A00499"
+        },
+        {
+          "title": "US Department of Energy: Deuterium\u2013tritium fusion fuel",
+          "url": "https://www.energy.gov/science/doe-explainsdeuterium-tritium-fusion-fuel"
+        },
+        {
+          "title": "IUPAC Gold Book: Mass number",
+          "url": "https://goldbook.iupac.org/terms/view/M03726"
+        }
+      ],
+      "author": "QuantaPhi",
+      "writingMethod": "AI-assisted draft by Codex",
+      "sourceCheck": "Codex AI, 2026-10-04",
+      "independentExpertReview": false
+    },
+    {
+      "slug": "search-to-quants",
+      "url": "https://quantaphi.org/learn/search-to-quants/",
+      "title": "How a search becomes a Quant",
+      "extractionTerms": [
+        "research trail",
+        "extracted terms",
+        "parent Quant",
+        "root Quant",
+        "sources",
+        "contained references"
+      ],
+      "sources": [
+        {
+          "title": "QuantaPhi: About Quants",
+          "url": "https://quantaphi.org/about.html"
+        },
+        {
+          "title": "QuantaPhi research model",
+          "url": "https://github.com/www-infinity4/QuantaPhi/blob/main/quant-trail.js"
+        },
+        {
+          "title": "QuantaPhi research sync",
+          "url": "https://github.com/www-infinity4/QuantaPhi/blob/main/search-wallet-sync.js"
+        }
+      ],
+      "author": "QuantaPhi",
+      "writingMethod": "AI-assisted draft by Codex",
+      "sourceCheck": "Codex AI, 2026-10-04",
+      "independentExpertReview": false
+    }
+  ]
+}

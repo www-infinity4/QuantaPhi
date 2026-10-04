@@ -1,9 +1,9 @@
-const EDGE_VERSION = 'quantaphi-org-v5-no-loop';
+const EDGE_VERSION = 'quantaphi-org-v6-learn';
 const RAW_TYPES = {
  html: 'text/html; charset=utf-8', js: 'application/javascript; charset=utf-8',
  css: 'text/css; charset=utf-8', json: 'application/json; charset=utf-8',
  svg: 'image/svg+xml', png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg',
- webp: 'image/webp', ico: 'image/x-icon', txt: 'text/plain; charset=utf-8'
+ webp: 'image/webp', ico: 'image/x-icon', txt: 'text/plain; charset=utf-8', xml: 'application/xml; charset=utf-8'
 };
 async function getUpstream(url, request, headers) {
  const controller = new AbortController();
@@ -29,10 +29,12 @@ export default {
   }, { headers: { 'Cache-Control': 'no-store', 'x-quantaphi-edge': EDGE_VERSION } });
   let path = incoming.pathname;
   if (path === '/' || path === '/index.html') path = '/QuantaPhi/index.html';
+  else if (path === '/learn') return Response.redirect(incoming.origin + '/learn/' + incoming.search, 308);
+  else if (path.startsWith('/learn/')) { if(path.endsWith('/')) path += 'index.html'; path = '/QuantaPhi' + path; }
   else if (!path.slice(1).includes('/')) path = '/QuantaPhi' + path;
   const origin = new URL('https://www-infinity4.github.io' + path);
   origin.search = incoming.search;
-  const fresh = /\.(?:html|js|css|json)$/i.test(path);
+  const fresh = /\.(?:html|js|css|json|xml|txt)$/i.test(path);
   if (fresh) origin.searchParams.set('__qpedge', EDGE_VERSION);
   const headers = new Headers(request.headers);
   for (const name of ['Host', 'Cookie', 'Authorization']) headers.delete(name);
@@ -64,3 +66,4 @@ export default {
   return new Response(upstream.body, { status: upstream.status, headers: out });
  }
 };
+

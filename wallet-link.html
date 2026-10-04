@@ -1,8 +1,8 @@
-<!doctype html><html><head><meta charset="utf-8"><title>QuantaPhi wallet connection</title><script src="cloud-wallet-client.js?v=20261003-domain4"></script></head><body><script>
+<!doctype html><html><head><meta charset="utf-8"><title>QuantaPhi wallet connection</title><script src="cloud-wallet-client.js?v=20261004-learn1"></script></head><body><script>
 'use strict';
 const keys=['starquest_session','c13b0_infinity_token_ledger_v3','infinity_unified_token_count_v3','phi:assetBalances:v1','quantaPhiBuildHistoryV1','quantaPhiCollected','quantaPhiTokens','quantaPhi:pendingSearchCommits:v2','quantaPhi:pendingInfinityCredits:v1'];
 window.addEventListener('message',event=>{
- if(event.origin!=='https://quantaphi.net'||event.source!==parent||event.data?.type!=='quanta:link-request')return;
+ if(!['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www.quantaphi.net'].includes(event.origin)||event.source!==parent||event.data?.type!=='quanta:link-request')return;
  const values={};try{for(const key of keys){const value=localStorage.getItem(key);if(value!==null)values[key]=value}
  const session=JSON.parse(localStorage.getItem('starquest_session')||'null'),username=String(session?.username||session?.key||'').toLowerCase();
  const deviceKeys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(key.startsWith('starquest_ledger_device_v1:'))deviceKeys.push(key)}
