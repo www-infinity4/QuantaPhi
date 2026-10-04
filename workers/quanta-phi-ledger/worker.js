@@ -448,7 +448,10 @@ export default {
       const row = await env.DB.prepare(
         "SELECT balance FROM quant_wallet_balances WHERE wallet_id=?"
       ).bind(wallet).first();
-      return json({ wallet_id: wallet, balance: Number(row?.balance || 0) });
+      const infinity = await env.DB.prepare(
+        "SELECT infinity_balance FROM unified_wallet_state WHERE user_id=?"
+      ).bind(identity.user_id).first();
+      return json({ wallet_id: wallet, balance: Number(row?.balance || 0), infinity_balance: Number(infinity?.infinity_balance || 0) });
     }
 
     if (url.pathname === "/v1/quants/transfer" && request.method === "POST") {
