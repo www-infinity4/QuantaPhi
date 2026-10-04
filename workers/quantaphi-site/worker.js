@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v16-wallet-recovery';
+const EDGE_VERSION = 'quantaphi-org-v17-suite-routing';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -30,8 +30,7 @@ const routeFor = incoming => {
  let path = incoming.pathname;
  const first=path.split('/').filter(Boolean)[0]||'';
  if(OMNI_SUBROUTES.includes(first)){
-  if(path==='/' + first)return {redirect:path+'/'};
-  return {repo:'Omni-Phi',sourcePath:path.endsWith('/')?path+'index.html':path,publicPath:path};
+  return {redirect:'/omni-phi'+path+(path==='/' + first?'/':'')+incoming.search};
  }
  if(INFINITY_SUBROUTES.includes(first)){
   if(path==='/' + first)return {redirect:path+'/'};
