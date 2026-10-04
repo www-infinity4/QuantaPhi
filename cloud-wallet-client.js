@@ -5,20 +5,42 @@ const DEVICE_PREFIX='starquest_ledger_device_v1:';
 const PAID_ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www.quantaphi.net']);
 const read=(key,fallback=null)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
 function storedToken(key){const raw=localStorage.getItem(key)||'';if(/^sq_[A-Za-z0-9_-]{32,}$/.test(raw))return raw;const value=read(key,null);return /^sq_[A-Za-z0-9_-]{32,}$/.test(value?.deviceToken||'')?value.deviceToken:''}
+function deviceCandidates(){
+ const out=[],seen=new Set();
+ try{for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(!key.startsWith(DEVICE_PREFIX))continue;const token=storedToken(key);if(token&&!seen.has(token)){seen.add(token);out.push({key,username:key.slice(DEVICE_PREFIX.length).toLowerCase(),token})}}}catch{}
+ return out;
+}
 function findDeviceToken(){
  try{
   const session=read('starquest_session',null),username=String(session?.username||session?.key||'').toLowerCase();
-  if(username)return storedToken(DEVICE_PREFIX+username);
-  const tokens=new Set();for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(key.startsWith(DEVICE_PREFIX)){const token=storedToken(key);if(token)tokens.add(token)}}
-  return tokens.size===1?[...tokens][0]:'';
+  if(username){const exact=storedToken(DEVICE_PREFIX+username);if(exact)return exact}
+  const candidates=deviceCandidates();
+  return candidates.length===1?candidates[0].token:'';
  }catch{return ''}
+}
+async function resolveDeviceToken(){
+ const exact=findDeviceToken();if(exact)return exact;
+ const candidates=deviceCandidates();if(!candidates.length)return '';
+ let best=null;
+ for(const candidate of candidates){
+  try{
+   const response=await fetch(ENDPOINT+'/v1/wallet/state',{headers:{authorization:'Bearer '+candidate.token},cache:'no-store',signal:AbortSignal.timeout(5000)});
+   const state=await response.json().catch(()=>({}));if(!response.ok||!state?.ok)continue;
+   const score=[Number(state.balances?.INFINITY)||0,Number(state.balances?.QUANT)||0,Number(state.updatedAt)||0];
+   if(!best||score[0]>best.score[0]||(score[0]===best.score[0]&&score[1]>best.score[1])||(score[0]===best.score[0]&&score[1]===best.score[1]&&score[2]>best.score[2]))best={candidate,state,score};
+  }catch(_){}
+ }
+ if(!best)return '';
+ const username=String(best.state?.user?.username||best.candidate.username||'').trim().toLowerCase();
+ if(username&&storedToken(DEVICE_PREFIX+username)!==best.candidate.token)try{localStorage.setItem(DEVICE_PREFIX+username,best.candidate.token)}catch(_){}
+ return best.candidate.token;
 }
 function hasAccountProfile(){
  const session=read('starquest_session',null),key=String(session?.key||'').toLowerCase();
  return Boolean(key&&read('starquest_users',{})?.[key]);
 }
 async function recoverAccountProfileFromDevice(){
- const token=findDeviceToken();if(!token||hasAccountProfile())return hasAccountProfile();
+ const token=await resolveDeviceToken();if(!token||hasAccountProfile())return hasAccountProfile();
  try{
   const response=await fetch('https://starquest-ledger.marvaseater.workers.dev/v1/state',{headers:{authorization:'Bearer '+token},cache:'no-store',signal:AbortSignal.timeout(8000)});
   const payload=await response.json().catch(()=>({}));
@@ -91,14 +113,15 @@ const ready=PAID_ORIGINS.has(location.origin)?new Promise(resolve=>{
  };
  if(document.body)start();else document.addEventListener('DOMContentLoaded',start,{once:true});
 }):Promise.resolve();
-global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Boolean(findDeviceToken()),hasAccountProfile,recoverAccountProfileFromDevice,async authenticatedFetch(target,options={}){
+global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Boolean(findDeviceToken()),hasAccountProfile,recoverAccountProfileFromDevice,resolveDeviceToken,async authenticatedFetch(target,options={}){
  if(!findDeviceToken())await ready;
+ if(!findDeviceToken())await recoverAccountProfileFromDevice();
  const url=new URL(target);
  const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&url.pathname.startsWith('/v1/quants/'));
  if(!allowed)throw new Error('unsupported_wallet_target');
  const bridge=global.StarQuestCloudLedger;
  if(bridge?.authenticatedFetch){try{return await bridge.authenticatedFetch(target,options)}catch(error){if(error.message!=='ledger_not_connected')throw error}}
- const token=findDeviceToken();if(!token)throw new Error('ledger_not_connected');
+ const token=findDeviceToken()||await resolveDeviceToken();if(!token)throw new Error('ledger_not_connected');
  const body=options.body&&typeof options.body==='object'?JSON.stringify(options.body):options.body;
  return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token}});
 }};
