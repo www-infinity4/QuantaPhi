@@ -63,11 +63,11 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
 function recoverWallet(){
  if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return false;
  try{
-  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v2'))return false;
-  sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v2',String(Date.now()));
+  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v3'))return false;
+  sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v3',String(Date.now()));
   const returnUrl=new URL(location.href);returnUrl.hash='';
   const bridge=new URL('https://quantaphi.org/__wallet-handoff');
-  bridge.searchParams.set('v','20261004-wallet3');bridge.searchParams.set('return',returnUrl.href);
+  bridge.searchParams.set('v','20261004-wallet5');bridge.searchParams.set('return',returnUrl.href);
   location.replace(bridge.href);
   return true;
  }catch(error){console.warn('First-party wallet handoff unavailable',error)}
@@ -75,10 +75,9 @@ function recoverWallet(){
 }
 global.QuantaCloudConnection.recoverWallet=recoverWallet;
 ready.then(()=>{
- // A top-level recovery would discard an in-progress query or the displayed overview.
+ // Search links must recover the same account too. The return URL retains their query;
+ // the root restore flow reopens the saved search without issuing another paired credit.
  if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return;
- const query=new URL(location.href).searchParams.get('q')||document.getElementById?.('q')?.value||'';
- if(String(query).trim()||document.activeElement?.matches?.('input,textarea'))return;
  recoverWallet();
 });
 if(PAID_ORIGINS.has(location.origin))document.addEventListener('click',event=>{
@@ -97,4 +96,3 @@ class InfinityUnifiedWallet{
 }
 global.InfinityCloudWallet=InfinityUnifiedWallet;
 })(window);
-
