@@ -68,3 +68,23 @@ test('StarCoin receipt queue falls back when Web Crypto subtle is unavailable',a
   assert.equal(queued.length,1);
   assert.match(queued[0].attemptId,/^phi-reward:fnv1a-[0-9a-f]{8}$/);
 });
+
+
+test('pending search queue preserves a backup when primary storage write fails',()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../search-wallet-sync.js'),'utf8');
+  const values=new Map(),listeners={};
+  const localStorage={
+    getItem:key=>values.get(key)??null,
+    setItem:(key,value)=>{if(key==='quantaPhi:pendingSearchCommits:v2')throw new Error('quota');values.set(key,String(value))},
+    removeItem:key=>values.delete(key)
+  };
+  const window={localStorage,addEventListener:(name,fn)=>{listeners[name]=fn},setInterval(){},QuantaCloudConnection:null};
+  const document={addEventListener(){}};
+  const context={window,document,localStorage,console,CustomEvent:class{},Event:class{},setInterval(){},setTimeout,clearTimeout,AbortSignal};
+  vm.runInNewContext(code,context);
+  assert.equal(window.QuantaInfinityCredit.enqueueSearch('alpha','search-1','2026-10-04T00:00:00.000Z'),true);
+  const backup=JSON.parse(values.get('quantaPhi:pendingSearchCommits:backup:v1'));
+  assert.equal(backup.length,1);
+  assert.equal(backup[0].search_id,'search-1');
+  assert.equal(window.QuantaInfinityCredit.pending()[0].search_id,'search-1');
+});
