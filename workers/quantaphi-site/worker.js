@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v14-mckee-emblem';
+const EDGE_VERSION = 'quantaphi-org-v15-mckee-safe';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -83,11 +83,6 @@ function rewriteSuiteText(text) {
  text = text.split('https://www-infinity4.github.io/QuantaPhi/').join(CANONICAL_ORIGIN + '/');
  return text;
 }
-const MCKEE_FOOTER = '<footer data-mckee-coins-edge="true" style="display:grid;place-items:center;padding:32px 16px 112px"><a data-mckee-coins-link="true" href="https://quantaphi.org/mckee-coins/" aria-label="Open McKee Coins" style="display:grid;place-items:center;width:min(82vw,290px);min-height:190px;padding:22px;border:5px double #6f4a08;border-radius:50%;background:radial-gradient(circle at 34% 28%,#fff4a8 0,#f6c84b 22%,#bd7711 58%,#6b3905 100%);color:#241300;text-align:center;text-decoration:none;font-family:Georgia,serif;font-weight:900;box-shadow:0 18px 42px rgba(70,38,0,.32),inset 0 0 0 7px rgba(255,238,151,.48),inset 0 -16px 28px rgba(79,40,0,.28)"><span style="font-size:1.7rem;letter-spacing:.04em;line-height:1.05">McKee Coins</span><span style="font-size:1rem;letter-spacing:.16em;text-transform:uppercase">Tap Here</span><span aria-hidden="true" style="font-size:2rem;line-height:1">★</span></a></footer>';
-function addMckeeFooter(text, route, contentType) {
- if (route.repo !== 'C13b0' || !/text\/html/.test(contentType) || text.includes('data-mckee-coins-link')) return text;
- return text.includes('</body>') ? text.replace('</body>', MCKEE_FOOTER + '</body>') : text + MCKEE_FOOTER;
-}
 const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex\"><title>Moving QuantaPhi wallet</title></head><body><p>Recovering your existing wallet…</p><script>\n'use strict';\nconst target=(()=>{try{const u=new URL(new URLSearchParams(location.search).get('return')||'');return ['https://quantaphi.org','https://www.quantaphi.org'].includes(u.origin)?u:null}catch{return null}})();\nconst prefix='starquest_ledger_device_v1:',values={};\ntry{\n const sessionRaw=localStorage.getItem('starquest_session');if(sessionRaw)values.starquest_session=sessionRaw;\n let session=null;try{session=JSON.parse(sessionRaw||'null')}catch{}\n const username=String(session?.username||session?.key||'').toLowerCase(),keys=[];\n for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'',value=localStorage.getItem(key)||'';if(key.startsWith(prefix)&&(/^sq_[A-Za-z0-9_-]{32,}$/.test(value)||/\"deviceToken\"\\s*:\\s*\"sq_[A-Za-z0-9_-]{32,}\"/.test(value)))keys.push(key)}\n const chosen=username?keys.filter(key=>key===prefix+username):keys.length===1?keys:[];\n for(const key of chosen)values[key]=localStorage.getItem(key);\n}catch{}\nif(!target){document.body.textContent='Wallet return address rejected.'}\nelse if(Object.keys(values).some(key=>key.startsWith(prefix))){\n const bytes=new TextEncoder().encode(JSON.stringify({version:1,issuedAt:Date.now(),source:location.origin,values}));let binary='';for(const byte of bytes)binary+=String.fromCharCode(byte);\n target.hash='quantaWalletLink='+btoa(binary).replace(/\\+/g,'-').replace(/\\//g,'_').replace(/=+$/,'');\n location.replace(target.href);\n}else{\n const fallback=new URL('https://www-infinity4.github.io/QuantaPhi/wallet-link.html');fallback.searchParams.set('mode','top');fallback.searchParams.set('v','20261004-wallet3');fallback.searchParams.set('return',target.href);location.replace(fallback.href);\n}\n</script></body></html>";
 export default {
  async fetch(request) {
@@ -133,7 +128,7 @@ export default {
   if (textual || !upstream.ok) out.set('Cache-Control', 'no-cache, max-age=0, must-revalidate');
   const contentType = out.get('Content-Type') || '';
   if (request.method === 'GET' && upstream.ok && /text\/html|javascript|text\/css|application\/json/.test(contentType)) {
-   const rewritten = addMckeeFooter(rewriteSuiteText(await upstream.text()), route, contentType);
+   const rewritten = rewriteSuiteText(await upstream.text());
    out.delete('Content-Length'); out.delete('Content-Encoding'); out.delete('ETag');
    return new Response(rewritten, { status: upstream.status, headers: out });
   }
