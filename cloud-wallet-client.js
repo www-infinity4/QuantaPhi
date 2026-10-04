@@ -17,6 +17,33 @@ function hasAccountProfile(){
  const session=read('starquest_session',null),key=String(session?.key||'').toLowerCase();
  return Boolean(key&&read('starquest_users',{})?.[key]);
 }
+async function recoverAccountProfileFromDevice(){
+ const token=findDeviceToken();if(!token||hasAccountProfile())return hasAccountProfile();
+ try{
+  const response=await fetch('https://starquest-ledger.marvaseater.workers.dev/v1/state',{headers:{authorization:'Bearer '+token},cache:'no-store',signal:AbortSignal.timeout(8000)});
+  const payload=await response.json().catch(()=>({}));
+  if(!response.ok||!payload?.ok||!payload?.state)return false;
+  const state=payload.state,username=String(state.username||'').trim().toLowerCase();
+  if(!username||storedToken(DEVICE_PREFIX+username)!==token)return false;
+  const users=read('starquest_users',{});if(!users||Array.isArray(users)||typeof users!=='object')return false;
+  if(!users[username]){
+   users[username]={
+    key:username,username:String(state.username||username),passwordHash:'',joinedAt:Date.now(),lastLoginAt:Date.now(),
+    tokens:Math.max(0,Number(state.starCoins)||0),pendingShareCredits:Math.max(0,Number(state.pendingShareCredits)||0),
+    shareCount:Math.max(0,Number(state.shareCount)||0),shareEvents:[],ledger:Array.isArray(state.ledger)?state.ledger:[],
+    watchHistory:Array.isArray(state.watchHistory)?state.watchHistory:[],watchPositions:{},unlockedContent:{}
+   };
+   localStorage.setItem('starquest_users',JSON.stringify(users));
+  }
+  const session=read('starquest_session',null);
+  if(!session||String(session.key||session.username||'').toLowerCase()!==username){
+   localStorage.setItem('starquest_session',JSON.stringify({key:username,username:users[username].username||username,signedInAt:Date.now()}));
+  }
+  const user=global.StarQuestAuth?.currentUser?.();
+  if(user)document.dispatchEvent(new CustomEvent('starquest:auth-changed',{detail:{user,action:'device-profile-recovery'}}));
+  return Boolean(user||hasAccountProfile());
+ }catch(error){console.warn('Cloud wallet profile recovery deferred',error);return false}
+}
 function importAccountProfile(values){
  const session=JSON.parse(values.starquest_session||'null'),key=String(session?.key||session?.username||'').toLowerCase();
  const incoming=JSON.parse(values.starquest_users||'{}')?.[key];
@@ -64,7 +91,7 @@ const ready=PAID_ORIGINS.has(location.origin)?new Promise(resolve=>{
  };
  if(document.body)start();else document.addEventListener('DOMContentLoaded',start,{once:true});
 }):Promise.resolve();
-global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Boolean(findDeviceToken()),hasAccountProfile,async authenticatedFetch(target,options={}){
+global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Boolean(findDeviceToken()),hasAccountProfile,recoverAccountProfileFromDevice,async authenticatedFetch(target,options={}){
  if(!findDeviceToken())await ready;
  const url=new URL(target);
  const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&url.pathname.startsWith('/v1/quants/'));
@@ -89,10 +116,12 @@ function recoverWallet(){
  return false;
 }
 global.QuantaCloudConnection.recoverWallet=recoverWallet;
-ready.then(()=>{
- // Wallet recovery must never navigate away from an entered, linked, or focused search.
- // An existing device credential is sufficient to keep the working wallet connected.
- if(!PAID_ORIGINS.has(location.origin)||(findDeviceToken()&&hasAccountProfile()))return;
+ready.then(async()=>{
+ // A valid enrolled token can reconstruct its own local profile from D1. Do
+ // that before any recovery navigation so cache loss cannot create identity drift.
+ if(!PAID_ORIGINS.has(location.origin))return;
+ if(findDeviceToken()&&!hasAccountProfile())await recoverAccountProfileFromDevice();
+ if(findDeviceToken())return;
  const query=new URL(location.href).searchParams.get('q')||document.getElementById?.('q')?.value||'';
  if(String(query).trim()||document.activeElement?.matches?.('input,textarea'))return;
  recoverWallet();
