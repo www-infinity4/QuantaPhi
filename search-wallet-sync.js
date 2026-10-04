@@ -14,8 +14,17 @@ const save=items=>{
  }catch{}
  return saved;
 };
-let running=false;
-async function request(options){return Promise.race([global.QuantaCloudConnection.authenticatedFetch(API,options),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Search commit timed out; retained for retry')),12000))])}
+let running=false,retryTimer=0;
+function scheduleRetry(){
+ if(retryTimer||!read().length)return;
+ retryTimer=setTimeout(()=>{retryTimer=0;void flush()},4000);
+}
+async function request(options){
+ const bridge=global.QuantaCloudConnection;
+ if(!bridge?.authenticatedFetch)throw new Error('wallet_bridge_unavailable');
+ if(!bridge.hasAccountProfile?.()&&bridge.recoverAccountProfileFromDevice)await bridge.recoverAccountProfileFromDevice();
+ return Promise.race([bridge.authenticatedFetch(API,options),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Search commit timed out; retained for retry')),12000))])
+}
 async function apply(item,result){
  global.PhiAssetBalances?.confirm('QUANT',item.search_id,result.balance);
  const records=await global.QuantaUnifiedTokenLedger?.load?.()||[];
@@ -38,7 +47,7 @@ async function flush(){
    const result=await r.json().catch(()=>({}));
    if(!r.ok)throw new Error(result.error||'Search commit still pending');
    await apply(item,result);
-  }catch(error){console.warn('Quanta search commit remains queued',error);break}
+  }catch(error){console.warn('Quanta search commit remains queued',error);scheduleRetry();break}
  }
  const records=await global.QuantaUnifiedTokenLedger?.load?.()||[];
  for(const token of records.filter(x=>x.stage==='research'&&x.cloudTokenId&&(!x.cloudResearchSavedAt||Date.parse(x.cloudResearchSavedAt)<Date.parse(x.updatedAt||x.createdAt))).slice(0,20)){try{await persistResearch(token)}catch(error){console.warn('Research revision remains queued',error);break}}
@@ -47,6 +56,19 @@ async function flush(){
 function queue(query,search_id,created_at){
  const items=read();if(!items.some(x=>x.search_id===search_id)){items.push({query,search_id,source:'QUANTAPHI',created_at:created_at||new Date().toISOString()});return save(items)}
  return true;
+}
+async function commitNow(query,search_id,created_at,credit_query=query){
+ queue(query,search_id,created_at);
+ try{
+  const r=await request({method:'POST',body:{query,credit_query,search_id,created_at:created_at||new Date().toISOString()}});
+  const result=await r.json().catch(()=>({}));
+  if(!r.ok)throw new Error(result.error||result.message||'Search commit still pending');
+  await apply({query,search_id,created_at},result);
+  return result;
+ }catch(error){
+  scheduleRetry();
+  throw error;
+ }
 }
 async function confirm(search_id,result){
  const item=read().find(x=>x.search_id===search_id);
@@ -88,7 +110,7 @@ async function restoreHistory(){
  try{localStorage.setItem('quantaPhiBuildHistoryV1',JSON.stringify(next))}catch{}
  global.dispatchEvent(new CustomEvent('quantaPhiHistoryAdded'));
 }
-global.QuantaInfinityCredit={enqueue:(q,id,at)=>{queue(q,id,at);void flush()},enqueueSearch:queue,confirm,flush,pending:read,restoreHistory,persistResearch};
+global.QuantaInfinityCredit={enqueue:(q,id,at)=>{queue(q,id,at);void flush()},enqueueSearch:queue,commitNow,confirm,flush,pending:read,restoreHistory,persistResearch};
 setInterval(flush,60000);
 for(const event of ['load','online','focus'])global.addEventListener(event,flush);
 for(const event of ['starquest:ledger-connected','starquest:auth-changed'])document.addEventListener(event,flush);
