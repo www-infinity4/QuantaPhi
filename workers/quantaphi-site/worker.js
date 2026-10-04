@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v18-wallet-account';
+const EDGE_VERSION = 'quantaphi-org-v20-raw-main';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -113,10 +113,20 @@ export default {
   const headers = new Headers(request.headers);
   for (const name of ['Host', 'Cookie', 'Authorization']) headers.delete(name);
   if (textual) headers.set('Cache-Control', 'no-cache');
-  let upstream;
-  try { upstream = await getUpstream(origin, request, headers); } catch {}
-  let raw = false;
-  if ((!upstream || (upstream.status >= 300 && upstream.status < 400) || upstream.status >= 500) && ['GET', 'HEAD'].includes(request.method)) {
+  let upstream, raw = false;
+  const readRequest = ['GET', 'HEAD'].includes(request.method);
+  // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
+  // briefly stale after a commit, which must never keep an old wallet/search script live.
+  if (route.repo === 'QuantaPhi' && textual && readRequest) {
+   const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/main' + route.sourcePath);
+   source.searchParams.set('__qpedge', EDGE_VERSION);
+   try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
+   if (upstream && !upstream.ok) { if (upstream.body) await upstream.body.cancel(); upstream = null; raw = false; }
+  }
+  if (!upstream) {
+   try { upstream = await getUpstream(origin, request, headers); raw = false; } catch {}
+  }
+  if ((!upstream || (upstream.status >= 300 && upstream.status < 400) || upstream.status >= 500) && readRequest) {
    if (upstream?.body) await upstream.body.cancel();
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/main' + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
