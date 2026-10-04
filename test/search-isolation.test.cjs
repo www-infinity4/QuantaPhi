@@ -18,7 +18,7 @@ function fixture({wallet='pending',retrieval='ok',aiBody='ok'}={}){
  fetch:async url=>{requests.push(String(url));if(String(url).includes('/search')){if(retrieval==='failed')throw Error('retrieval failed');return{ok:true,json:async()=>({results:[{title:'alpha source',content:'alpha evidence',url:'https://example.test/alpha'}]})}}return{ok:true,json:aiBody==='stalled'?pending:async()=>({text:'AI overview'})}}
  };
  context.window={dispatchEvent(){},QuantaResearch:{},QuantaCloudConnection:{ready:pending(),authenticatedFetch:async()=>wallet==='body'?{ok:true,json:pending}:pending()},
- QuantaInfinityCredit:{enqueueSearch:(q,id)=>queued.push(id),confirm:async id=>confirmed.push(id)}};
+ QuantaInfinityCredit:{enqueue:(q,id)=>queued.push(id),enqueueSearch:(q,id)=>queued.push(id),confirm:async id=>confirmed.push(id)}};
  vm.createContext(context);vm.runInContext(code+'\nglobalThis.runSearch=search;',context);
  return{context,node,minted,queued,confirmed,saved,requests,records};
 }
