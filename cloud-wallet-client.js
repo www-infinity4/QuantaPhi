@@ -76,7 +76,7 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
  return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token}});
 }};
 function recoverWallet(){
- if(!PAID_ORIGINS.has(location.origin)||(findDeviceToken()&&hasAccountProfile()))return false;
+ if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return false;
  try{
   if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v4'))return false;
   sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v4',String(Date.now()));
@@ -90,9 +90,11 @@ function recoverWallet(){
 }
 global.QuantaCloudConnection.recoverWallet=recoverWallet;
 ready.then(()=>{
- // Search links must recover the same account too. The return URL retains their query;
- // the root restore flow reopens the saved search without issuing another paired credit.
- if(!PAID_ORIGINS.has(location.origin)||(findDeviceToken()&&hasAccountProfile()))return;
+ // Wallet recovery must never navigate away from an entered, linked, or focused search.
+ // An existing device credential is sufficient to keep the working wallet connected.
+ if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return;
+ const query=new URL(location.href).searchParams.get('q')||document.getElementById?.('q')?.value||'';
+ if(String(query).trim()||document.activeElement?.matches?.('input,textarea'))return;
  recoverWallet();
 });
 if(PAID_ORIGINS.has(location.origin))document.addEventListener('click',event=>{
