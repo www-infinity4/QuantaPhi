@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v10-wallet-dependencies';
+const EDGE_VERSION = 'quantaphi-org-v11-health-compatible';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -89,7 +89,7 @@ export default {
    return Response.redirect(incoming.toString(), 308);
   }
   if (incoming.pathname === '/health') return Response.json({
-   ok: true, service: 'quantaphi-site', canonicalOrigin: CANONICAL_ORIGIN,
+   ok: true, service: 'quantaphi-site', canonicalOrigin: CANONICAL_ORIGIN, appPath: '/QuantaPhi/index.html',
    version: EDGE_VERSION,
    routes: Object.fromEntries([['quantaPhi','/'], ...APPS.map(app => [app.repo, app.slug])])
   }, { headers: { 'Cache-Control': 'no-store', 'x-quantaphi-edge': EDGE_VERSION } });
