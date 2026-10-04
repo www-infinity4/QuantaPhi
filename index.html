@@ -1005,10 +1005,9 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
    const identity=String(state.user_id||state.wallet_id||'').replace(/[^A-Za-z0-9_-]/g,'').slice(0,140);
    if(!identity)return null;
    const marker='quantaPhiLegacyRecoveredV2:'+identity;
-   if(localStorage.getItem(marker))return null;
-   const amount=localQuantBalance();if(!Number.isSafeInteger(amount)||amount<1)return null;
+   const amount=localQuantBalance();if(!Number.isSafeInteger(amount)||amount<1||amount<=Number(state.balance||0))return null;
    const r=await call('/v1/quants/legacy-migrate',{method:'POST',body:{legacy_amount:amount}});
-   try{localStorage.setItem(marker,JSON.stringify({amount,at:new Date().toISOString()}))}catch(_){}
+   try{localStorage.setItem(marker,JSON.stringify({amount,balance:Number(r.balance??amount),at:new Date().toISOString()}))}catch(_){}
    return r
   }catch(_){return null}
  }
@@ -1024,9 +1023,9 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
    if(!identity)return null;
    const owned=localInfinityBalance();
    const infinityMigrationKey='quantaPhiOwnedInfinityMigratedV5:'+identity;
-   if(owned>Number(state.infinity_balance||0)&&!localStorage.getItem(infinityMigrationKey)){
+   if(owned>Number(state.infinity_balance||0)){
     const balanceResult=await call('/v1/quants/infinity-legacy-balance',{method:'POST',body:{legacy_balance:owned}});
-    localStorage.setItem(infinityMigrationKey,JSON.stringify({balance:Number(balanceResult.balance??owned),at:new Date().toISOString()}))
+    localStorage.setItem(infinityMigrationKey,JSON.stringify({owned,balance:Number(balanceResult.balance??owned),at:new Date().toISOString()}))
    }
    const historyMarker='quantaPhiD1HistoryRecoveredV4:'+identity;
    if(localStorage.getItem(historyMarker)===historyKey)return null;
@@ -1036,20 +1035,25 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
    localStorage.setItem(historyMarker,historyKey);return imported
   }catch(error){console.warn('Infinity history recovery deferred',error);return null}
  }
+ let syncFlight=null;
  async function sync(){
-  try{
-   await recoverLegacyOnce();
-   await recoverInfinityHistory();
-   await window.QuantaInfinityCredit?.restoreHistory?.();
-   const s=await call('/v1/quants/state');
-   const balance=Math.max(0,Number(s.balance)||0);
-   const shown=window.PhiAssetBalances?.authoritative?.('QUANT',balance)??balance;
-   const q=document.getElementById('qtoken');if(q)q.textContent='Quants: '+shown;
-   try{localStorage.setItem('quantaPhiTokens',String(shown))}catch(_){}
-   if(Number.isFinite(Number(s.infinity_balance))){const infinity=Math.max(0,Number(s.infinity_balance)||0);window.PhiAssetBalances?.authoritative?.('INFINITY',infinity);window.QuantaUnifiedTokenLedger?.setCount?.(infinity)}
-   try{window.QuantaUnifiedWalletSync?.('QUANT',balance,'QUANTA_CLOUD',s.wallet_id||'')}catch(_){}
-   try{window.ControlPhi?.refreshWallet?.()}catch(_){}
-  }catch(_){try{window.ControlPhi?.refreshWallet?.()}catch(_){}}
+  if(syncFlight)return syncFlight;
+  syncFlight=(async()=>{
+   try{
+    await recoverLegacyOnce();
+    await recoverInfinityHistory();
+    await window.QuantaInfinityCredit?.restoreHistory?.();
+    const s=await call('/v1/quants/state');
+    const balance=Math.max(0,Number(s.balance)||0);
+    const shown=window.PhiAssetBalances?.authoritative?.('QUANT',balance)??balance;
+    const q=document.getElementById('qtoken');if(q)q.textContent='Quants: '+shown;
+    try{localStorage.setItem('quantaPhiTokens',String(shown))}catch(_){}
+    if(Number.isFinite(Number(s.infinity_balance))){const infinity=Math.max(0,Number(s.infinity_balance)||0);window.PhiAssetBalances?.authoritative?.('INFINITY',infinity);window.QuantaUnifiedTokenLedger?.setCount?.(infinity)}
+    try{window.QuantaUnifiedWalletSync?.('QUANT',balance,'QUANTA_CLOUD',s.wallet_id||'')}catch(_){}
+    try{window.ControlPhi?.refreshWallet?.()}catch(_){}
+   }catch(_){try{window.ControlPhi?.refreshWallet?.()}catch(_){}}
+  })();
+  try{return await syncFlight}finally{syncFlight=null}
  }
  document.getElementById('qtoken')?.addEventListener('click',()=>document.getElementById('controlPhiWalletButton')?.click());
  window.addEventListener('load',sync,{once:true});
