@@ -43,7 +43,7 @@ test('existing account history is preserved when importing the selected profile'
  assert.equal(f.window.StarQuestAuth.currentUser().ledger[0].id,'local-receipt');
 });
 test('a credential without its account record still requests recovery',async()=>{
- const f=destination('',[['starquest_ledger_device_v1:kris',TOKEN]]);f.timers[0]();await f.window.QuantaCloudConnection.ready;await Promise.resolve();assert.equal(f.nav.length,1);assert.equal(new URL(f.nav[0]).pathname,'/__wallet-handoff');
+ const f=destination('',[['starquest_ledger_device_v1:kris',TOKEN]]);f.scope.location.href='https://quantaphi.org/';f.timers[0]();await f.window.QuantaCloudConnection.ready;await Promise.resolve();assert.equal(f.nav.length,1);assert.equal(new URL(f.nav[0]).pathname,'/__wallet-handoff');
 });
 test('the live gateway handoff falls back to the old origin when only a credential exists',async()=>{
  const context={URL,URLSearchParams,Request,Response,Headers,AbortController,setTimeout,clearTimeout,fetch:()=>{throw Error('unexpected upstream')}};vm.createContext(context);
