@@ -31,6 +31,9 @@ test('server search commit journals the search and pairs Quant with Infinity his
   assert.match(code,/asset_code,event_type,amount,balance_after/);
   assert.match(code,/history-import/);
   assert.match(code,/balance_only_migration/);
+  assert.match(code,/next = Math\.max\(before, amount\)/);
+  assert.doesNotMatch(code,/cloud_history_already_authoritative/);
+  assert.match(code,/historyId\.startsWith\("archive:"\)/);
 });
 test('two offline searches add two Infinity credits without reseeding pending credits',async()=>{const s=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8'),start=s.indexOf(' async function create(q){'),end=s.indexOf('\n function payload',start),a=fixture();let registered=0,records=[];const context={window:{PhiAssetBalances:a,InfinityTokenCount:{value:()=>registered,register:()=>registered++}},website:(id,q)=>'https://example.test/'+id,load:async()=>records,save:async all=>{records=all},mutate:async fn=>{fn(records);return records},Date,Math};vm.runInNewContext(s.slice(start,end)+'globalThis.createToken=create',context);await context.createToken('oranges');await context.createToken('tech');assert.equal(a.value('INFINITY'),2);assert.equal(records.length,2)});
 
