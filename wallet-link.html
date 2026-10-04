@@ -1,14 +1,46 @@
-<!doctype html><html><head><meta charset="utf-8"><title>QuantaPhi wallet connection</title><script src="cloud-wallet-client.js?v=20261004-learn1"></script></head><body><script>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="robots" content="noindex"><title>QuantaPhi wallet connection</title></head>
+<body>
+<p id="status">Connecting your existing Infinity wallet…</p>
+<script>
 'use strict';
+const PAID_ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www.quantaphi.net']);
+const DEVICE_PREFIX='starquest_ledger_device_v1:';
 const keys=['starquest_session','c13b0_infinity_token_ledger_v3','infinity_unified_token_count_v3','phi:assetBalances:v1','quantaPhiBuildHistoryV1','quantaPhiCollected','quantaPhiTokens','quantaPhi:pendingSearchCommits:v2','quantaPhi:pendingInfinityCredits:v1'];
+const deviceToken=value=>{if(/^sq_[A-Za-z0-9_-]{32,}$/.test(value||''))return value;try{const parsed=JSON.parse(value||'null');return /^sq_[A-Za-z0-9_-]{32,}$/.test(parsed?.deviceToken||'')?parsed.deviceToken:''}catch{return ''}};
+function credentialValues(includeLegacy=false){
+ const values={};
+ try{
+  if(includeLegacy)for(const key of keys){const value=localStorage.getItem(key);if(value!==null)values[key]=value}
+  else{const value=localStorage.getItem('starquest_session');if(value!==null)values.starquest_session=value}
+  let session=null;try{session=JSON.parse(localStorage.getItem('starquest_session')||'null')}catch{}
+  const username=String(session?.username||session?.key||'').toLowerCase();
+  const deviceKeys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(key.startsWith(DEVICE_PREFIX)&&deviceToken(localStorage.getItem(key)))deviceKeys.push(key)}
+  const selected=username?deviceKeys.filter(key=>key===DEVICE_PREFIX+username):deviceKeys.length===1?deviceKeys:[];
+  for(const key of selected)values[key]=localStorage.getItem(key);
+ }catch{}
+ return values;
+}
+function encode(payload){
+ const bytes=new TextEncoder().encode(JSON.stringify(payload));
+ let binary='';for(const byte of bytes)binary+=String.fromCharCode(byte);
+ return btoa(binary).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+}
+const params=new URLSearchParams(location.search);
+if(params.get('mode')==='top'){
+ let target=null;try{target=new URL(params.get('return')||'')}catch{}
+ if(!target||!PAID_ORIGINS.has(target.origin)){document.getElementById('status').textContent='Wallet return address was rejected.'}
+ else{
+  const payload={version:1,issuedAt:Date.now(),source:location.origin,values:credentialValues(false)};
+  target.hash='quantaWalletLink='+encode(payload);
+  document.getElementById('status').textContent=Object.keys(payload.values).some(key=>key.startsWith(DEVICE_PREFIX))?'Wallet found. Returning to QuantaPhi…':'No established wallet was found in this browser.';
+  setTimeout(()=>location.replace(target.href),40);
+ }
+}
 window.addEventListener('message',event=>{
- if(!['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www.quantaphi.net'].includes(event.origin)||event.source!==parent||event.data?.type!=='quanta:link-request')return;
- const values={};try{for(const key of keys){const value=localStorage.getItem(key);if(value!==null)values[key]=value}
- const session=JSON.parse(localStorage.getItem('starquest_session')||'null'),username=String(session?.username||session?.key||'').toLowerCase();
- const deviceKeys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(key.startsWith('starquest_ledger_device_v1:'))deviceKeys.push(key)}
- const selected=username?deviceKeys.filter(k=>k==='starquest_ledger_device_v1:'+username):deviceKeys.length===1?deviceKeys:[];
- for(const key of selected)values[key]=localStorage.getItem(key);
- }catch(_){}
- parent.postMessage({type:'quanta:link-response',nonce:event.data.nonce,values},event.origin);
+ if(!PAID_ORIGINS.has(event.origin)||event.source!==parent||event.data?.type!=='quanta:link-request')return;
+ parent.postMessage({type:'quanta:link-response',nonce:event.data.nonce,values:credentialValues(true)},event.origin);
 });
-</script></body></html>
+</script>
+</body></html>
