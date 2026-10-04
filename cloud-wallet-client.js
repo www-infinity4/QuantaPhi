@@ -95,7 +95,7 @@ const handoffImported=PAID_ORIGINS.has(location.origin)&&importTopLevelHandoff()
 const connectionStatus={bridge:PAID_ORIGINS.has(location.origin)?(handoffImported?'linked':'pending'):'not-required'};
 const ready=PAID_ORIGINS.has(location.origin)?new Promise(resolve=>{
  const start=()=>{
-  const frame=document.createElement('iframe'),nonce=crypto.randomUUID();frame.hidden=true;frame.src='https://www-infinity4.github.io/QuantaPhi/wallet-link.html?v=20261004-account6';
+  const frame=document.createElement('iframe'),nonce=crypto.randomUUID();frame.hidden=true;frame.src='https://www-infinity4.github.io/QuantaPhi/wallet-link.html?v=20261004-account9';
   let done=false;const finish=(status='timeout')=>{if(done)return;done=true;connectionStatus.bridge=status;clearTimeout(timer);global.removeEventListener('message',receive);frame.remove();resolve()};
   const timer=setTimeout(()=>finish('timeout'),8000);
   const receive=event=>{
@@ -132,7 +132,7 @@ function recoverWallet(){
   sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v4',String(Date.now()));
   const returnUrl=new URL(location.href);returnUrl.hash='';
   const bridge=new URL('https://quantaphi.org/__wallet-handoff');
-  bridge.searchParams.set('v','20261004-account6');bridge.searchParams.set('return',returnUrl.href);
+  bridge.searchParams.set('v','20261004-account9');bridge.searchParams.set('return',returnUrl.href);
   location.replace(bridge.href);
   return true;
  }catch(error){console.warn('First-party wallet handoff unavailable',error)}
