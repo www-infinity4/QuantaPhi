@@ -1,7 +1,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 function fixture({query='',urlQuery='',focused=false,credential=false,entries=[],hash=''}={}){
  const listeners={},handlers={},navigation=[],map=new Map(entries),session=new Map(),requests=[];
- if(credential)map.set('starquest_ledger_device_v1:kris','sq_'+'a'.repeat(40));
+ if(credential){map.set('starquest_ledger_device_v1:kris','sq_'+'a'.repeat(40));map.set('starquest_session','{"key":"kris","username":"kris"}');map.set('starquest_users','{"kris":{"key":"kris","username":"kris"}}')}
  const store=m=>({getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,v),key:i=>[...m.keys()][i],get length(){return m.size}});
  const frame={contentWindow:{postMessage(){}},remove(){}};
  const window={addEventListener:(name,fn)=>listeners[name]=fn,removeEventListener(){},dispatchEvent(){}};
@@ -17,7 +17,7 @@ test('a previous failed handoff does not permanently suppress repaired wallet re
 test('idle page still recovers once and an existing credential never triggers handoff',async()=>{const idle=fixture();await idle.finish();assert.equal(idle.navigation.length,1);idle.window.QuantaCloudConnection.recoverWallet();assert.equal(idle.navigation.length,1);const linked=fixture({credential:true});await linked.finish();assert.equal(linked.navigation.length,0)});
 test('an existing credential can authenticate while the hidden recovery frame is pending',async()=>{const f=fixture({credential:true});await f.window.QuantaCloudConnection.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/state');assert.equal(f.navigation.length,0)});
 test('top-level handoff restores authenticated cloud balances and history while preserving stored records',async()=>{
- const token='sq_'+'a'.repeat(40),values={starquest_session:'{"username":"kris","key":"kris"}','starquest_ledger_device_v1:kris':token};
+ const token='sq_'+'a'.repeat(40),values={starquest_session:'{"username":"kris","key":"kris"}',starquest_users:'{"kris":{"key":"kris","username":"kris"}}','starquest_ledger_device_v1:kris':token};
  const payload=Buffer.from(JSON.stringify({version:1,source:'https://www-infinity4.github.io',issuedAt:Date.now(),values})).toString('base64url');
  const entries=[['phi:assetBalances:v1','saved-balances'],['c13b0_infinity_token_ledger_v3','saved-history'],['quantaPhi:pendingSearchCommits:v2','queued-search']];
  const f=fixture({urlQuery:'?q=alpha',hash:'#quantaWalletLink='+payload,entries});

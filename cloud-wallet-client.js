@@ -13,6 +13,17 @@ function findDeviceToken(){
   return tokens.size===1?[...tokens][0]:'';
  }catch{return ''}
 }
+function hasAccountProfile(){
+ const session=read('starquest_session',null),key=String(session?.key||'').toLowerCase();
+ return Boolean(key&&read('starquest_users',{})?.[key]);
+}
+function importAccountProfile(values){
+ const session=JSON.parse(values.starquest_session||'null'),key=String(session?.key||session?.username||'').toLowerCase();
+ const incoming=JSON.parse(values.starquest_users||'{}')?.[key];
+ if(!key||!incoming||String(incoming.key||'').toLowerCase()!==key)return;
+ const users=read('starquest_users',{});if(!users||Array.isArray(users)||typeof users!=='object')throw new Error('invalid_account_cache');
+ if(!users[key])localStorage.setItem('starquest_users',JSON.stringify({...users,[key]:incoming}));
+}
 function importTopLevelHandoff(){
  let encoded='';try{encoded=new URLSearchParams(location.hash.slice(1)).get('quantaWalletLink')||''}catch{}
  if(!encoded)return false;
@@ -23,6 +34,7 @@ function importTopLevelHandoff(){
   const values=payload.values&&typeof payload.values==='object'?payload.values:{};
   const current=read('starquest_session',null),remote=JSON.parse(values.starquest_session||'null');
   if(current&&(current.key||current.username)!==(remote?.key||remote?.username))throw new Error('account_mismatch');
+  importAccountProfile(values);
   for(const [key,value]of Object.entries(values)){
    if((key==='starquest_session'||/^starquest_ledger_device_v1:[A-Za-z0-9_-]+$/.test(key))&&typeof value==='string'&&localStorage.getItem(key)===null)localStorage.setItem(key,value);
   }
@@ -34,22 +46,25 @@ const handoffImported=PAID_ORIGINS.has(location.origin)&&importTopLevelHandoff()
 const connectionStatus={bridge:PAID_ORIGINS.has(location.origin)?(handoffImported?'linked':'pending'):'not-required'};
 const ready=PAID_ORIGINS.has(location.origin)?new Promise(resolve=>{
  const start=()=>{
-  const frame=document.createElement('iframe'),nonce=crypto.randomUUID();frame.hidden=true;frame.src='https://www-infinity4.github.io/QuantaPhi/wallet-link.html?v=20261004-wallet2';
+  const frame=document.createElement('iframe'),nonce=crypto.randomUUID();frame.hidden=true;frame.src='https://www-infinity4.github.io/QuantaPhi/wallet-link.html?v=20261004-account6';
   let done=false;const finish=(status='timeout')=>{if(done)return;done=true;connectionStatus.bridge=status;clearTimeout(timer);global.removeEventListener('message',receive);frame.remove();resolve()};
   const timer=setTimeout(()=>finish('timeout'),8000);
   const receive=event=>{
    if(event.origin!=='https://www-infinity4.github.io'||event.source!==frame.contentWindow||event.data?.type!=='quanta:link-response'||event.data.nonce!==nonce)return;
    try{const current=read('starquest_session',null),remote=JSON.parse(event.data.values?.starquest_session||'null');if(current&&(current.key||current.username)!==(remote?.key||remote?.username)){finish('account-mismatch');return}}catch(_){finish('account-mismatch');return}
+   try{importAccountProfile(event.data.values||{})}catch(error){finish('account-cache-error');return}
    const allowed=new Set(['starquest_session','c13b0_infinity_token_ledger_v3','infinity_unified_token_count_v3','phi:assetBalances:v1','quantaPhiBuildHistoryV1','quantaPhiCollected','quantaPhiTokens','quantaPhi:pendingSearchCommits:v2','quantaPhi:pendingInfinityCredits:v1']);
    try{for(const [key,value]of Object.entries(event.data.values||{})){if((allowed.has(key)||/^starquest_ledger_device_v1:[A-Za-z0-9_-]+$/.test(key))&&typeof value==='string'&&localStorage.getItem(key)===null)localStorage.setItem(key,value)}}catch(_){}
    global.dispatchEvent(new StorageEvent('storage',{key:'phi:assetBalances:v1'}));finish('linked');
+   const user=global.StarQuestAuth?.currentUser?.();
+   if(user)document.dispatchEvent(new CustomEvent('starquest:auth-changed',{detail:{user,action:'wallet-recovery'}}));
    document.dispatchEvent(new CustomEvent('starquest:ledger-connected'));
   };
   global.addEventListener('message',receive);frame.onerror=()=>finish('unavailable');frame.onload=()=>frame.contentWindow.postMessage({type:'quanta:link-request',nonce},'https://www-infinity4.github.io');document.body.appendChild(frame);
  };
  if(document.body)start();else document.addEventListener('DOMContentLoaded',start,{once:true});
 }):Promise.resolve();
-global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Boolean(findDeviceToken()),async authenticatedFetch(target,options={}){
+global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Boolean(findDeviceToken()),hasAccountProfile,async authenticatedFetch(target,options={}){
  if(!findDeviceToken())await ready;
  const url=new URL(target);
  const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&url.pathname.startsWith('/v1/quants/'));
@@ -61,13 +76,13 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
  return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token}});
 }};
 function recoverWallet(){
- if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return false;
+ if(!PAID_ORIGINS.has(location.origin)||(findDeviceToken()&&hasAccountProfile()))return false;
  try{
-  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v3'))return false;
-  sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v3',String(Date.now()));
+  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v4'))return false;
+  sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v4',String(Date.now()));
   const returnUrl=new URL(location.href);returnUrl.hash='';
   const bridge=new URL('https://quantaphi.org/__wallet-handoff');
-  bridge.searchParams.set('v','20261004-wallet5');bridge.searchParams.set('return',returnUrl.href);
+  bridge.searchParams.set('v','20261004-account6');bridge.searchParams.set('return',returnUrl.href);
   location.replace(bridge.href);
   return true;
  }catch(error){console.warn('First-party wallet handoff unavailable',error)}
@@ -77,7 +92,7 @@ global.QuantaCloudConnection.recoverWallet=recoverWallet;
 ready.then(()=>{
  // Search links must recover the same account too. The return URL retains their query;
  // the root restore flow reopens the saved search without issuing another paired credit.
- if(!PAID_ORIGINS.has(location.origin)||findDeviceToken())return;
+ if(!PAID_ORIGINS.has(location.origin)||(findDeviceToken()&&hasAccountProfile()))return;
  recoverWallet();
 });
 if(PAID_ORIGINS.has(location.origin))document.addEventListener('click',event=>{

@@ -19,6 +19,15 @@ function credentialValues(includeLegacy=false){
   const deviceKeys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(key.startsWith(DEVICE_PREFIX)&&deviceToken(localStorage.getItem(key)))deviceKeys.push(key)}
   const selected=username?deviceKeys.filter(key=>key===DEVICE_PREFIX+username):deviceKeys.length===1?deviceKeys:[];
   for(const key of selected)values[key]=localStorage.getItem(key);
+  const accountKey=String(session?.key||username||selected[0]?.slice(DEVICE_PREFIX.length)||'').toLowerCase();
+  let users={},backup={};try{users=JSON.parse(localStorage.getItem('starquest_users')||'{}')}catch{}try{backup=JSON.parse(localStorage.getItem('starquest_users_backup_v1')||'{}')}catch{}
+  const user=users[accountKey]||backup[accountKey];
+  if(selected.length===1&&user&&String(user.key||accountKey).toLowerCase()===accountKey){
+   // Transfer only the selected account's bootstrap cache. Password text and other accounts stay behind.
+   const profile={key:accountKey,username:String(user.username||accountKey),passwordHash:String(user.passwordHash||''),joinedAt:user.joinedAt,lastLoginAt:user.lastLoginAt,tokens:user.tokens,pendingShareCredits:user.pendingShareCredits,shareCount:user.shareCount};
+   values.starquest_users=JSON.stringify({[accountKey]:profile});
+   if(!values.starquest_session)values.starquest_session=JSON.stringify({key:accountKey,username:profile.username,signedInAt:Date.now()});
+  }
  }catch{}
  return values;
 }
