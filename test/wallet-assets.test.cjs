@@ -122,3 +122,21 @@ test('wallet sync de-duplicates overlapping load focus and auth refreshes',()=>{
   assert.match(code,/let syncFlight=null/);
   assert.match(code,/if\(syncFlight\)return syncFlight/);
 });
+
+
+test('QuantaPhi search uses the single retryable paired cloud commit path',()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8');
+  assert.match(code,/QuantaInfinityCredit\.commitNow\(nq,searchId,createdAt,q\)/);
+  assert.doesNotMatch(code,/if\(bridge\?\.authenticatedFetch\)void \(async/);
+  assert.match(code,/search-wallet-sync\.js\?v=20261004-wallet3/);
+});
+test('wallet client resolves ambiguous saved device tokens against cloud ownership',()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../cloud-wallet-client.js'),'utf8');
+  assert.match(code,/async function resolveDeviceToken\(\)/);
+  assert.match(code,/balances\?\.INFINITY/);
+  assert.match(code,/recoverAccountProfileFromDevice/);
+});
+test('old-origin handoff passes valid device credentials when no session selects one',()=>{
+  const code=fs.readFileSync(path.join(__dirname,'../wallet-link.html'),'utf8');
+  assert.match(code,/const selected=username\?deviceKeys\.filter\(key=>key===DEVICE_PREFIX\+username\):deviceKeys;/);
+});
