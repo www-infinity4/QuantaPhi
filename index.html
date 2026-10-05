@@ -1034,9 +1034,12 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
   if(syncFlight)return syncFlight;
   syncFlight=(async()=>{
    try{
-    await recoverLegacyOnce();
+    // Restore durable search history before computing the legacy Quant floor.
+    // A previous low cloud snapshot may already have replaced the browser counter;
+    // restored history is another durable source of the older owned balance.
     await recoverInfinityHistory();
     await window.QuantaInfinityCredit?.restoreHistory?.();
+    await recoverLegacyOnce();
     const s=await call('/v1/quants/state');
     const balance=Math.max(0,Number(s.balance)||0);
     const shown=window.PhiAssetBalances?.authoritative?.('QUANT',balance)??balance;
