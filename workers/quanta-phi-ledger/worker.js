@@ -76,10 +76,16 @@ async function drainSearchOutbox(env) {
 
 async function ensureLegacyOverdraftTrigger(env) {
   if (!env.DB) return;
+  await env.DB.batch([
+    env.DB.prepare("CREATE TABLE IF NOT EXISTS quant_recovery_adjustments(adjustment_id TEXT PRIMARY KEY,wallet_id TEXT NOT NULL,amount INTEGER NOT NULL CHECK(amount>0),target_balance INTEGER NOT NULL CHECK(target_balance>=0),provenance_hash TEXT NOT NULL UNIQUE,reference_id TEXT NOT NULL UNIQUE,created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,FOREIGN KEY(wallet_id) REFERENCES quant_wallets(wallet_id))"),
+    env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_quant_recovery_adjustments_wallet ON quant_recovery_adjustments(wallet_id,created_at)"),
+    env.DB.prepare("CREATE TRIGGER IF NOT EXISTS quant_recovery_adjustments_no_update BEFORE UPDATE ON quant_recovery_adjustments BEGIN SELECT RAISE(ABORT,'immutable_quant_recovery_adjustment'); END"),
+    env.DB.prepare("CREATE TRIGGER IF NOT EXISTS quant_recovery_adjustments_no_delete BEFORE DELETE ON quant_recovery_adjustments BEGIN SELECT RAISE(ABORT,'immutable_quant_recovery_adjustment'); END")
+  ]);
   const row = await env.DB.prepare("SELECT sql FROM sqlite_master WHERE type='trigger' AND name='quant_no_overdraft'").first();
-  if (row?.sql && row.sql.includes('quant_legacy_migrations')) return;
+  if (row?.sql && row.sql.includes('quant_legacy_migrations') && row.sql.includes('quant_recovery_adjustments')) return;
   await env.DB.prepare("DROP TRIGGER IF EXISTS quant_no_overdraft").run();
-  await env.DB.prepare("CREATE TRIGGER quant_no_overdraft BEFORE INSERT ON quant_ledger_entries WHEN NEW.delta<0 BEGIN SELECT RAISE(ABORT,'insufficient_quant_balance') WHERE (SELECT COALESCE(SUM(delta),0) FROM quant_ledger_entries WHERE wallet_id=NEW.wallet_id) + (SELECT COALESCE(legacy_amount,0) FROM quant_legacy_migrations WHERE wallet_id=NEW.wallet_id) + NEW.delta < 0; END").run();
+  await env.DB.prepare("CREATE TRIGGER quant_no_overdraft BEFORE INSERT ON quant_ledger_entries WHEN NEW.delta<0 BEGIN SELECT RAISE(ABORT,'insufficient_quant_balance') WHERE (SELECT COALESCE(SUM(delta),0) FROM quant_ledger_entries WHERE wallet_id=NEW.wallet_id) + (SELECT COALESCE(legacy_amount,0) FROM quant_legacy_migrations WHERE wallet_id=NEW.wallet_id) + (SELECT COALESCE(SUM(amount),0) FROM quant_recovery_adjustments WHERE wallet_id=NEW.wallet_id) + NEW.delta < 0; END").run();
 }
 
 export default {
@@ -247,50 +253,34 @@ export default {
 
     if (url.pathname === "/v1/quants/legacy-migrate" && request.method === "POST") {
       const body = await request.json().catch(() => ({}));
-      // legacy_amount is the browser's recovered TOTAL Quant balance. The D1
-      // migration row stores only the baseline beneath normal ledger entries.
       const targetBalance = Number(body.legacy_amount);
       if (!Number.isSafeInteger(targetBalance) || targetBalance < 0 || targetBalance > 1000000000)
         return json({ error: "invalid_legacy_amount" }, 400);
       const ledgerRow = await env.DB.prepare(
         "SELECT COALESCE(SUM(delta),0) AS delta FROM quant_ledger_entries WHERE wallet_id=?"
       ).bind(wallet).first();
-      const ledgerDelta = Number(ledgerRow?.delta || 0);
-      const requiredLegacy = Math.max(0, targetBalance - ledgerDelta);
-      const prior = await env.DB.prepare(
+      const legacyRow = await env.DB.prepare(
         "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
       ).bind(wallet).first();
-      if (prior && requiredLegacy <= Number(prior.legacy_amount || 0)) {
-        const balance = ledgerDelta + Number(prior.legacy_amount || 0);
-        return json({ ok: true, replayed: true, target_balance: targetBalance, balance, migration: prior });
-      }
-      const material = "legacy-quanta-phi-floor-v1\n" + wallet + "\n" + String(targetBalance) + "\n" + String(requiredLegacy);
+      const recoveryRow = await env.DB.prepare(
+        "SELECT COALESCE(SUM(amount),0) AS amount FROM quant_recovery_adjustments WHERE wallet_id=?"
+      ).bind(wallet).first();
+      const ledgerDelta = Number(ledgerRow?.delta || 0);
+      const legacyAmount = Number(legacyRow?.legacy_amount || 0);
+      const recoveryAmount = Number(recoveryRow?.amount || 0);
+      const currentBalance = ledgerDelta + legacyAmount + recoveryAmount;
+      if (targetBalance <= currentBalance)
+        return json({ ok:true,replayed:true,target_balance:targetBalance,balance:currentBalance,imported:0,migration:legacyRow||null });
+      const adjustment = targetBalance - currentBalance;
+      const material = "legacy-quanta-phi-recovery-v2\n" + wallet + "\n" + String(targetBalance) + "\n" + String(adjustment);
       const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(material));
       const provenanceHash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, "0")).join("");
-      if (prior) {
-        await env.DB.prepare(
-          "UPDATE quant_legacy_migrations SET legacy_amount=?,provenance_hash=? WHERE wallet_id=? AND legacy_amount<?"
-        ).bind(requiredLegacy, provenanceHash, wallet, requiredLegacy).run();
-        const updated = await env.DB.prepare(
-          "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
-        ).bind(wallet).first();
-        return json({ ok: true, replayed: false, raised: true, target_balance: targetBalance, balance: ledgerDelta + Number(updated?.legacy_amount || 0), migration: updated });
-      }
-      const migrationId = "qlm_" + crypto.randomUUID();
-      try {
-        await env.DB.prepare(
-          "INSERT INTO quant_legacy_migrations(migration_id,wallet_id,legacy_amount,provenance_hash) VALUES(?,?,?,?)"
-        ).bind(migrationId, wallet, requiredLegacy, provenanceHash).run();
-      } catch {
-        const existing = await env.DB.prepare(
-          "SELECT migration_id,wallet_id,legacy_amount,provenance_hash,created_at FROM quant_legacy_migrations WHERE wallet_id=?"
-        ).bind(wallet).first();
-        if (existing && Number(existing.legacy_amount || 0) >= requiredLegacy) {
-          return json({ ok: true, replayed: true, target_balance: targetBalance, balance: ledgerDelta + Number(existing.legacy_amount || 0), migration: existing });
-        }
-        return json({ error: "legacy_migration_failed" }, 409);
-      }
-      return json({ ok: true, replayed: false, migration_id: migrationId, wallet_id: wallet, target_balance: targetBalance, legacy_amount: requiredLegacy, balance: ledgerDelta + requiredLegacy, provenance_hash: provenanceHash }, 201);
+      const referenceId = "legacy-floor:" + wallet + ":" + targetBalance;
+      await env.DB.prepare(
+        "INSERT OR IGNORE INTO quant_recovery_adjustments(adjustment_id,wallet_id,amount,target_balance,provenance_hash,reference_id) VALUES(?,?,?,?,?,?)"
+      ).bind("qra_" + crypto.randomUUID(), wallet, adjustment, targetBalance, provenanceHash, referenceId).run();
+      const finalRow = await env.DB.prepare("SELECT balance FROM quant_wallet_balances WHERE wallet_id=?").bind(wallet).first();
+      return json({ ok:true,replayed:false,target_balance:targetBalance,balance:Number(finalRow?.balance || targetBalance),imported:adjustment,reference_id:referenceId },201);
     }
 
     if (url.pathname === "/v1/quants/receive" && request.method === "GET") {
