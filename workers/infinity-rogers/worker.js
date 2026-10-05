@@ -303,8 +303,40 @@ async function runImage(request, env) {
   const result=await env.AI.run(IMAGE_MODEL,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
   const b64=typeof result?.image==="string"?result.image:"";
   if(!b64) throw new Error("empty_shell_response");
+
+  // Compose the user's original photo into the generated card shell here in
+  // the worker so even older front ends receive a complete finished card.
+  const photoBytes=new Uint8Array(await image.arrayBuffer());
+  let binary="";
+  const chunk=0x8000;
+  for(let i=0;i<photoBytes.length;i+=chunk){
+   binary+=String.fromCharCode(...photoBytes.subarray(i,Math.min(i+chunk,photoBytes.length)));
+  }
+  const photoB64=btoa(binary);
+  const photoMime=String(image.type||"image/jpeg").replace(/[^a-zA-Z0-9+./-]/g,"")||"image/jpeg";
+  const footer="Fantasy Craft Product · Infinity® · Produced by Goudey Tradition Trading Card Company LLC";
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="768" height="1024" viewBox="0 0 768 1024">
+   <defs>
+    <clipPath id="photoClip"><rect x="92" y="150" width="584" height="676" rx="30" ry="30"/></clipPath>
+    <linearGradient id="photoEdge" x1="0" y1="0" x2="1" y2="1">
+     <stop offset="0" stop-color="#ffffff" stop-opacity=".92"/>
+     <stop offset=".45" stop-color="#ffffff" stop-opacity=".20"/>
+     <stop offset="1" stop-color="#0b1320" stop-opacity=".70"/>
+    </linearGradient>
+    <linearGradient id="footerBg" x1="0" y1="0" x2="0" y2="1">
+     <stop offset="0" stop-color="#07111b" stop-opacity=".08"/>
+     <stop offset="1" stop-color="#07111b" stop-opacity=".78"/>
+    </linearGradient>
+   </defs>
+   <image href="data:image/jpeg;base64,${b64}" x="0" y="0" width="768" height="1024" preserveAspectRatio="xMidYMid slice"/>
+   <image href="data:${photoMime};base64,${photoB64}" x="92" y="150" width="584" height="676" preserveAspectRatio="xMidYMid slice" clip-path="url(#photoClip)"/>
+   <rect x="92" y="150" width="584" height="676" rx="30" ry="30" fill="none" stroke="url(#photoEdge)" stroke-width="7"/>
+   <rect x="0" y="976" width="768" height="48" fill="url(#footerBg)"/>
+   <text x="384" y="1001" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" fill-opacity=".95" font-family="Arial,Helvetica,sans-serif" font-size="14">${footer}</text>
+  </svg>`;
+  const svgB64=btoa(unescape(encodeURIComponent(svg)));
   await recordUsage(env,userId,state,1,1);
-  return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_MODEL,dataURI:"data:image/jpeg;base64,"+b64,attempt:variants.length+1,mode:"shell-fallback",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+  return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_MODEL,dataURI:"data:image/svg+xml;base64,"+svgB64,attempt:variants.length+1,mode:"server-composite",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
  }catch(error){
   lastError=error;
  }
