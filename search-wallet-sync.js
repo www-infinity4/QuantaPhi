@@ -20,9 +20,18 @@ function scheduleRetry(){
  retryTimer=setTimeout(()=>{retryTimer=0;void flush()},4000);
 }
 async function request(options){
- const bridge=global.QuantaCloudConnection;
+ let bridge=global.QuantaCloudConnection;
+ if(bridge?.ready)try{await bridge.ready}catch(_){}
+ if(bridge?.hasCredential&&!bridge.hasCredential()){
+  const star=global.StarQuestCloudLedger;
+  if(star?.authenticatedFetch)bridge=star;
+ }
+ if(!bridge?.authenticatedFetch){
+  const star=global.StarQuestCloudLedger;
+  if(star?.authenticatedFetch)bridge=star;
+ }
  if(!bridge?.authenticatedFetch)throw new Error('wallet_bridge_unavailable');
- if(!bridge.hasAccountProfile?.()&&bridge.recoverAccountProfileFromDevice)await bridge.recoverAccountProfileFromDevice();
+ if(bridge===global.QuantaCloudConnection&&!bridge.hasAccountProfile?.()&&bridge.recoverAccountProfileFromDevice)await bridge.recoverAccountProfileFromDevice();
  return Promise.race([bridge.authenticatedFetch(API,options),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Search commit timed out; retained for retry')),12000))])
 }
 async function apply(item,result){
@@ -112,8 +121,12 @@ async function restoreHistory(){
  });
  let history=[];try{history=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]')}catch{}
  const byId=new Map(history.map(x=>[x.search_id||x.token_id||x.id,x]));
- for(const row of cloud.searches||[]){if(!byId.has(row.search_id))byId.set(row.search_id,{id:row.search_id,search_id:row.search_id,token_id:row.infinity_token_id,query:row.query_text,created_at:new Date(row.created_at).toISOString()})}
- const next=[...byId.values()].sort((a,b)=>Date.parse(b.created_at)-Date.parse(a.created_at));
+ for(const row of cloud.searches||[]){
+  const rawId=String(row?.search_id||'');
+  if(!rawId||rawId.startsWith('archive:'))continue;
+  if(!byId.has(rawId))byId.set(rawId,{id:rawId,search_id:rawId,token_id:row.infinity_token_id,query:row.query_text,created_at:new Date(row.created_at).toISOString()})
+ }
+ const next=[...byId.values()].filter(x=>!String(x?.search_id||x?.id||'').startsWith('archive:')).sort((a,b)=>Date.parse(b.created_at)-Date.parse(a.created_at));
  global.QuantaCloudBuildHistory=next;
  try{localStorage.setItem('quantaPhiBuildHistoryV1',JSON.stringify(next))}catch{}
  global.dispatchEvent(new CustomEvent('quantaPhiHistoryAdded'));
