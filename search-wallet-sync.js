@@ -26,17 +26,23 @@ async function request(options){
  return Promise.race([bridge.authenticatedFetch(API,options),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Search commit timed out; retained for retry')),12000))])
 }
 async function apply(item,result){
- global.PhiAssetBalances?.confirm('QUANT',item.search_id,result.balance);
- const records=await global.QuantaUnifiedTokenLedger?.load?.()||[];
- const linked=records.find(x=>x.sourceEventId===item.search_id||x.quantSearchId===item.search_id);
- if(linked&&result.infinity?.token_id){
-  global.PhiAssetBalances?.confirm('INFINITY',linked.id,result.infinity.balance);
-  const saved=await global.QuantaUnifiedTokenLedger.update(linked.id,{cloudTokenId:result.infinity.token_id,cloudStatus:'saved',cloudSavedAt:new Date().toISOString(),sourceEventId:item.search_id,quantSearchId:item.search_id});
-  if(saved.stage==='research')void persistResearch(saved).catch(error=>console.warn('Research revision sync deferred',error));
- }
+ // The cloud paired-commit response is authoritative. Set exact owned balances and
+ // clear the durable retry before touching optional local research/history state.
+ if(Number.isFinite(Number(result?.balance)))global.PhiAssetBalances?.authoritative('QUANT',result.balance);
+ if(Number.isFinite(Number(result?.infinity?.balance)))global.PhiAssetBalances?.authoritative('INFINITY',result.infinity.balance);
  save(read().filter(x=>x.search_id!==item.search_id));
  global.dispatchEvent(new CustomEvent('infinity:token-created',{detail:{...item,tokenId:result.infinity?.token_id||'',source:'QUANTAPHI'}}));
  global.dispatchEvent(new Event('infinity-wallet-updated'));
+ void (async()=>{
+  try{
+   const records=await global.QuantaUnifiedTokenLedger?.load?.()||[];
+   const linked=records.find(x=>x.sourceEventId===item.search_id||x.quantSearchId===item.search_id);
+   if(linked&&result.infinity?.token_id){
+    const saved=await global.QuantaUnifiedTokenLedger.update(linked.id,{cloudTokenId:result.infinity.token_id,cloudStatus:'saved',cloudSavedAt:new Date().toISOString(),sourceEventId:item.search_id,quantSearchId:item.search_id});
+    if(saved?.stage==='research')void persistResearch(saved).catch(error=>console.warn('Research revision sync deferred',error));
+   }
+  }catch(error){console.warn('Local cloud-token link deferred',error)}
+ })();
 }
 async function flush(){
  if(running||!global.QuantaCloudConnection?.authenticatedFetch)return;
