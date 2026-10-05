@@ -240,7 +240,22 @@
     try{let state;const bridge=window.QuantaCloudConnection||window.StarQuestCloudLedger;
       if(bridge?.authenticatedFetch){const r=await bridge.authenticatedFetch('https://unified-wallet.marvaseater.workers.dev/v1/wallet/state');if(!r.ok)return;state=await r.json()}
       else{const Wallet=window.InfinityCloudWallet||(typeof window.InfinityUnifiedWallet==='function'?window.InfinityUnifiedWallet:null);if(!Wallet)return;const wallet=new Wallet({appName:document.title});state=await wallet.request('/v1/wallet/state',{cache:'no-store'})}
-      for(const [code,balance]of Object.entries(state.balances||{})){if(assets&&code in epochs){if(assets.accept(code,balance,epochs[code]))cloudBalances[code]=balance}else cloudBalances[code]=balance}refreshWalletUI()
+      for(const [code,balance]of Object.entries(state.balances||{})){if(assets&&code in epochs){if(assets.accept(code,balance,epochs[code]))cloudBalances[code]=balance}else cloudBalances[code]=balance}
+      // Quant and Music Quant live in the Quanta ledger, not the unified Infinity state.
+      // Read them independently so one unavailable asset never hides the others.
+      const quantEndpoint='https://quanta-phi-ledger.marvaseater.workers.dev';
+      const readAsset=async(code,path)=>{
+        try{
+          const r=await bridge.authenticatedFetch(quantEndpoint+path,{cache:'no-store'});
+          if(!r.ok)return;
+          const data=await r.json();
+          const balance=Math.max(0,Number(data.balance)||0);
+          if(assets&&code in epochs){if(assets.accept(code,balance,epochs[code]))cloudBalances[code]=balance}
+          else cloudBalances[code]=balance;
+        }catch(error){console.warn(code+' cloud balance refresh deferred',error)}
+      };
+      if(bridge?.authenticatedFetch)await Promise.all([readAsset('QUANT','/v1/quants/state'),readAsset('MUSIC_QUANT','/v1/music-quants/state')]);
+      refreshWalletUI()
     }catch(error){console.warn('Cloud wallet balance refresh deferred',error)}
   }
   document.addEventListener('starquest:ledger-connected',refreshCloudBalances);
