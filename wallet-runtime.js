@@ -312,7 +312,7 @@
     const store=walletStore();
     const wallet=normalizeWallet(store.profile);
     const assets=auxiliaryBalances();
-    return {balance:wallet.tokens,starCoins:wallet.tokens,progressToNextCoin:wallet.pendingShareCredits,shareCount:wallet.shareCount,username:wallet.username||'Guest',totalTokens:assets.total,quants:assets.quants,omni:assets.omni,infinity:assets.infinity,quantaWebsites:assets.quantaWebsites,legacy:assets.legacy,musicQuants:assets.musicQuants,pianoQuants:assets.pianoQuants,listeningQuants:assets.listeningQuants,alienCoins:alienCoinCount()};
+    const starCoins=Math.round((wallet.tokens+(wallet.pendingShareCredits/10))*10)/10;return {balance:starCoins,starCoins,wholeStarCoins:wallet.tokens,progressToNextCoin:wallet.pendingShareCredits,shareCount:wallet.shareCount,username:wallet.username||'Guest',totalTokens:assets.total,quants:assets.quants,omni:assets.omni,infinity:assets.infinity,quantaWebsites:assets.quantaWebsites,legacy:assets.legacy,musicQuants:assets.musicQuants,pianoQuants:assets.pianoQuants,listeningQuants:assets.listeningQuants,alienCoins:alienCoinCount()};
   }
 
   function importLegacyStarCoinBalance(amount,source='legacy'){
