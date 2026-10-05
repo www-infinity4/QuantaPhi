@@ -28,3 +28,12 @@ test('cloud history restore stays off focus and wallet lifecycle events',()=>{
   assert.doesNotMatch(sync,/\['load','online','focus'\][^\n]*restoreCloudHistory/);
   assert.match(page,/QuantaInfinityCredit\?\.restoreHistory\?\.\(\)\.then\(render\)/);
 });
+
+
+test('paired cloud response becomes authoritative before local token bookkeeping',()=>{
+ const code=fs.readFileSync(path.join(__dirname,'../search-wallet-sync.js'),'utf8');
+ const apply=code.slice(code.indexOf('async function apply'),code.indexOf('async function flush'));
+ assert.match(apply,/authoritative\('QUANT',result\.balance\)/);
+ assert.match(apply,/authoritative\('INFINITY',result\.infinity\.balance\)/);
+ assert.ok(apply.indexOf("save(read().filter")<apply.indexOf("QuantaUnifiedTokenLedger?.load"));
+});
