@@ -980,7 +980,7 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
   try{for(const key of ['quantaPhiTokens','quantaPhiQuants','quantaPhiBalance']){const n=Number(localStorage.getItem(key));if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}}catch(_){}
   try{const a=JSON.parse(localStorage.getItem('phi:assetBalances:v1')||'null')?.assets?.QUANT;if(a){const n=Number(a.balance);if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}}catch(_){}
   try{const u=JSON.parse(localStorage.getItem('infinity_unified_wallet_v1')||'null'),w=u?.wallets?.[u.currentWalletId],n=Number(w?.balances?.QUANT);if(Number.isSafeInteger(n)&&n>=0)candidates.push(n)}catch(_){}
-  try{const h=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]');if(Array.isArray(h)){const n=new Set(h.map(x=>String(x?.id||'')).filter(Boolean)).size;if(n)candidates.push(n)}}catch(_){}
+  try{const h=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]');if(Array.isArray(h)){const n=new Set(h.filter(x=>!String(x?.id||'').startsWith('archive:')&&!String(x?.search_id||'').startsWith('archive:')).map(x=>String(x?.search_id||x?.id||'')).filter(Boolean)).size;if(n)candidates.push(n)}}catch(_){}
   return candidates.length?Math.max(...candidates):0
  }
  function localInfinityBalance(){
@@ -1024,7 +1024,7 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
    const historyMarker='quantaPhiD1HistoryRecoveredV4:'+identity;
    if(localStorage.getItem(historyMarker)===historyKey)return null;
    const tokens=records.filter(x=>x?.id&&!x?.cloudTokenId).slice(0,500).map(x=>({id:String(x.id),query:String(x.query||x.title||''),source:String(x.sourceSystem||x.source||'INFINITY').toUpperCase(),created_at:Date.parse(x.createdAt||x.created_at||'')||Date.now(),source_event_id:String(x.sourceEventId||x.quantSearchId||''),website_url:String(x.websiteUrl||'')}));
-   const searches=history.filter(x=>x?.id&&x?.query&&!String(x.id).startsWith('archive:')).slice(0,1000).map(x=>({id:String(x.id),query:String(x.query),created_at:Date.parse(x.created_at||'')||Date.now()}));
+   const searches=history.filter(x=>x?.id&&x?.query&&!String(x.id).startsWith('archive:')&&!String(x.search_id||'').startsWith('archive:')).slice(0,1000).map(x=>({id:String(x.search_id||x.id),query:String(x.query),created_at:Date.parse(x.created_at||'')||Date.now()}));
    const imported=await call('/v1/quants/history-import',{method:'POST',body:{tokens,searches}});
    localStorage.setItem(historyMarker,historyKey);return imported
   }catch(error){console.warn('Infinity history recovery deferred',error);return null}
