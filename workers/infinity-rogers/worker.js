@@ -247,6 +247,81 @@ async function usageState(env,userId){
 async function recordUsage(env,userId,state,promptTokens,completionTokens){
  await env.METER_DB.prepare("INSERT INTO ai_usage_daily(user_id,day,prompt_tokens,completion_tokens,requests,updated_at) VALUES(?1,?2,?3,?4,1,?5) ON CONFLICT(user_id,day) DO UPDATE SET prompt_tokens=prompt_tokens+excluded.prompt_tokens,completion_tokens=completion_tokens+excluded.completion_tokens,requests=requests+1,updated_at=excluded.updated_at").bind(userId,state.day,promptTokens,completionTokens,Date.now()).run();
 }
+
+async function runCardIntel(request, env, body) {
+  const name=clean(body?.name||body?.player||"",120);
+  if(!name) return json(request,{ok:false,error:"player_name_required"},400);
+  try{
+    const searchUrl="https://statsapi.mlb.com/api/v1/people/search?names="+encodeURIComponent(name);
+    const searchResp=await fetch(searchUrl,{headers:{"Accept":"application/json"}});
+    if(!searchResp.ok) throw new Error("mlb_search_"+searchResp.status);
+    const search=await searchResp.json();
+    const person=Array.isArray(search?.people)&&search.people.length?search.people[0]:null;
+    if(!person) return json(request,{ok:false,error:"player_not_found"},404);
+
+    const id=person.id;
+    const [profileResp,hittingResp,pitchingResp]=await Promise.all([
+      fetch("https://statsapi.mlb.com/api/v1/people/"+id,{headers:{"Accept":"application/json"}}),
+      fetch("https://statsapi.mlb.com/api/v1/people/"+id+"/stats?stats=yearByYear&group=hitting",{headers:{"Accept":"application/json"}}),
+      fetch("https://statsapi.mlb.com/api/v1/people/"+id+"/stats?stats=yearByYear&group=pitching",{headers:{"Accept":"application/json"}})
+    ]);
+    const profile=profileResp.ok?await profileResp.json():{};
+    const hitting=hittingResp.ok?await hittingResp.json():{};
+    const pitching=pitchingResp.ok?await pitchingResp.json():{};
+
+    const player=profile?.people?.[0]||person;
+    const hitSplits=hitting?.stats?.[0]?.splits||[];
+    const pitSplits=pitching?.stats?.[0]?.splits||[];
+    const simplify=(split,group)=>({
+      season:String(split?.season||""),
+      team:split?.team?.name||"",
+      group,
+      gamesPlayed:Number(split?.stat?.gamesPlayed||0),
+      avg:split?.stat?.avg||"",
+      homeRuns:Number(split?.stat?.homeRuns||0),
+      rbi:Number(split?.stat?.rbi||0),
+      hits:Number(split?.stat?.hits||0),
+      runs:Number(split?.stat?.runs||0),
+      stolenBases:Number(split?.stat?.stolenBases||0),
+      wins:Number(split?.stat?.wins||0),
+      losses:Number(split?.stat?.losses||0),
+      era:split?.stat?.era||"",
+      strikeOuts:Number(split?.stat?.strikeOuts||0),
+      saves:Number(split?.stat?.saves||0)
+    });
+    const seasons=[...hitSplits.map(s=>simplify(s,"hitting")),...pitSplits.map(s=>simplify(s,"pitching"))]
+      .filter(s=>s.season)
+      .sort((a,b)=>Number(a.season)-Number(b.season));
+
+    const rankScore=s=>s.group==="pitching"
+      ? (s.wins*7+s.strikeOuts*.3+s.saves*4)
+      : (s.homeRuns*4+s.rbi*1.5+s.hits*.3+s.runs*.5+s.stolenBases*.7);
+    const highlights=[...seasons].sort((a,b)=>rankScore(b)-rankScore(a)).slice(0,5);
+
+    return json(request,{
+      ok:true,
+      source:"MLB Stats API",
+      player:{
+        id:player?.id,
+        fullName:player?.fullName||name,
+        primaryPosition:player?.primaryPosition?.name||"",
+        batSide:player?.batSide?.description||"",
+        pitchHand:player?.pitchHand?.description||"",
+        birthDate:player?.birthDate||"",
+        birthCity:player?.birthCity||"",
+        height:player?.height||"",
+        weight:player?.weight||"",
+        mlbDebutDate:player?.mlbDebutDate||"",
+        active:Boolean(player?.active)
+      },
+      seasons,
+      highlights
+    });
+  }catch(error){
+    return json(request,{ok:false,error:String(error?.message||error)},502);
+  }
+}
+
 async function runImage(request, env) {
  if (!env.AI) return json(request,{ok:false,error:"workers_ai_not_configured"},503);
  let form;
@@ -415,7 +490,7 @@ export default {
         version: "2026-10-05-workers-ai-only-1",
         workersAIConfigured: Boolean(env.AI),
         model: env.CF_AI_MODEL || DEFAULT_CF_MODEL,
-         routes: { "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai", "/v1/image": "flux-2-reference-image" },
+         routes: { "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai", "/v1/image": "flux-2-reference-image", "/v1/card-intel": "mlb-stats-enrichment" },
       });
     }
 
@@ -436,6 +511,7 @@ export default {
       let body;
       try { body = await bodyJson(request); }
       catch (error) { return json(request, { ok: false, error: String(error?.message || error) }, 400); }
+      if (url.pathname === "/v1/card-intel") return runCardIntel(request, env, body);
       if (url.pathname === "/v1/chat" || url.pathname === "/api/gpt") return runMetered(request, env, body, "gpt");
       if (url.pathname === "/v1/reason" || url.pathname === "/api/rogers" || url.pathname === "/api/cosmo" || url.pathname === "/") return runMetered(request, env, body, "reason");
     }
