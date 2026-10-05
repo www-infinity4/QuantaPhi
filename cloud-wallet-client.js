@@ -21,19 +21,22 @@ function findDeviceToken(){
 async function resolveDeviceToken(){
  const exact=findDeviceToken();if(exact)return exact;
  const candidates=deviceCandidates();if(!candidates.length)return '';
- let best=null;
+ const session=read('starquest_session',null),users=read('starquest_users',{}),backup=read('starquest_users_backup_v1',{});
+ const known=new Set([session?.key,session?.username,...Object.keys(users||{}),...Object.keys(backup||{})].map(v=>String(v||'').trim().toLowerCase()).filter(Boolean));
+ let matched=null,only=null,valid=0;
  for(const candidate of candidates){
   try{
-   const response=await fetch(ENDPOINT+'/v1/wallet/state',{headers:{authorization:'Bearer '+candidate.token},cache:'no-store',signal:AbortSignal.timeout(5000)});
-   const state=await response.json().catch(()=>({}));if(!response.ok||!state?.ok)continue;
-   const score=[Number(state.balances?.INFINITY)||0,Number(state.balances?.QUANT)||0,Number(state.updatedAt)||0];
-   if(!best||score[0]>best.score[0]||(score[0]===best.score[0]&&score[1]>best.score[1])||(score[0]===best.score[0]&&score[1]===best.score[1]&&score[2]>best.score[2]))best={candidate,state,score};
+   const response=await fetch('https://starquest-ledger.marvaseater.workers.dev/v1/state',{headers:{authorization:'Bearer '+candidate.token},cache:'no-store',signal:AbortSignal.timeout(5000)});
+   const payload=await response.json().catch(()=>({}));if(!response.ok||!payload?.ok||!payload?.state)continue;
+   valid++;const username=String(payload.state.username||candidate.username||'').trim().toLowerCase(),entry={candidate,username};
+   only=entry;
+   if(username&&known.has(username)){matched=entry;break}
   }catch(_){}
  }
- if(!best)return '';
- const username=String(best.state?.user?.username||best.candidate.username||'').trim().toLowerCase();
- if(username&&storedToken(DEVICE_PREFIX+username)!==best.candidate.token)try{localStorage.setItem(DEVICE_PREFIX+username,best.candidate.token)}catch(_){}
- return best.candidate.token;
+ const chosen=matched||(valid===1?only:null);
+ if(!chosen)return '';
+ if(chosen.username&&storedToken(DEVICE_PREFIX+chosen.username)!==chosen.candidate.token)try{localStorage.setItem(DEVICE_PREFIX+chosen.username,chosen.candidate.token)}catch(_){}
+ return chosen.candidate.token;
 }
 function hasAccountProfile(){
  const session=read('starquest_session',null),key=String(session?.key||'').toLowerCase();
