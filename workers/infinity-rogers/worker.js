@@ -253,6 +253,7 @@ async function runImage(request, env) {
  catch { return json(request,{ok:false,error:"multipart_required"},400); }
 
  const prompt=clean(form.get("prompt"),5000);
+ const requestText=clean(form.get("request"),1200);
  const image=form.get("image");
  if(!prompt) return json(request,{ok:false,error:"prompt_required"},400);
  if(!(image instanceof File)) return json(request,{ok:false,error:"image_required"},400);
@@ -263,10 +264,17 @@ async function runImage(request, env) {
  const state=await usageState(env,userId);
  if(state.requests>=IMAGE_DAILY_CAP) return json(request,{ok:false,error:"image_daily_cap",cap:IMAGE_DAILY_CAP},429);
 
+ const literal=(requestText||prompt).trim();
+ const whiteBorder=/\bwhite\s+border\b/i.test(literal);
+ const requestedBorder=whiteBorder
+  ?"A clearly visible bright WHITE outer border must surround the entire card on all four sides. Do not replace it with silver, gray, black, gold, chrome, metallic, or dark framing."
+  :"Follow the user's requested border treatment exactly; do not invent a metallic frame unless requested.";
  const variants=[
   prompt,
-  prompt.replace(/\b(?:Topps|Fleer|Donruss|Upper Deck|Bowman|Stadium Club|Score|Leaf)\b/gi,"classic collector-card").replace(/\b(?:autograph|signature|rookie)\b/gi,"premium detail"),
-  "Create a tasteful premium fantasy baseball trading card from reference image 0. Preserve the recognizable main subject. Use refined collector-card composition, elegant metallic border work, dramatic but natural stadium lighting, sophisticated color, clean print balance, no logos, no text, no watermarks."
+  `Transform reference image 0 into one finished premium fantasy sports trading card. Preserve the recognizable subject and integrate the photo into the entire printed card design rather than placing it inside a generic frame. User request: ${literal}. ${requestedBorder} Preserve requested era, color palette, layout, border width, photographic treatment and material details. No logos, no trademarks, no mockup, no slab, no holder, no tabletop, no empty photo window, no watermark, minimal generated text.`,
+  `Create a real printed baseball-card composition from reference image 0 using the user's exact art direction: ${literal}. ${requestedBorder} Treat the uploaded subject as part of the card artwork: crop, lighting, graphic shapes and border must interact naturally. Avoid generic luxury framing. No logos, no mockup, no empty template, no extra people, no generated lettering.`,
+  `Reference-image edit. Produce a cohesive vintage-to-modern fantasy sports card based on this request: ${literal}. ${requestedBorder} Keep the subject recognizable. Build the card around the subject with authentic card proportions, intentional border geometry, era-appropriate color blocking and print finish. No logos, no frame-only output, no placeholder window, no text.`,
+  `Edit reference image 0 into a finished sports trading card. Exact request: ${literal}. ${requestedBorder} Use a simple, coherent card layout and preserve the subject. No logos, no text, no mockup.`
  ];
 
  let lastError=null;
@@ -294,7 +302,9 @@ async function runImage(request, env) {
  // a clean premium card shell. The browser composites the user's original photo
  // into the shell so the customer never loses the build.
  try{
-  const shellPrompt="Create an EMPTY premium fantasy sports trading card design only, portrait 3:4 composition. Use sophisticated silver, pale blue, charcoal, gold or era-appropriate color accents, layered collector-card borders, subtle foil and print texture, dramatic but restrained sports lighting, and a large clean central portrait photo window occupying about 70 percent of the card. No people, no faces, no logos, no trademarks, no text, no letters, no numbers, no watermark, no mockup, no tabletop.";
+  const shellPrompt=whiteBorder
+   ?"Create an EMPTY classic fantasy baseball trading-card design only, portrait 3:4 composition, with a clearly visible bright WHITE outer border around all four sides, a restrained inner rule, clean vintage flagship proportions, subtle era-appropriate color accents, and a large central portrait area. No people, no faces, no logos, no trademarks, no text, no letters, no numbers, no watermark, no mockup, no slab, no metallic luxury frame."
+   :"Create an EMPTY fantasy sports trading-card design only, portrait 3:4 composition, following this visual direction: "+literal+". Use the requested border/color character, authentic printed-card proportions and a large central portrait area. Do not default to silver/gold luxury framing. No people, no faces, no logos, no trademarks, no text, no letters, no numbers, no watermark, no mockup or slab.";
   const out=new FormData();
   out.append("prompt",shellPrompt);
   out.append("width","768");
