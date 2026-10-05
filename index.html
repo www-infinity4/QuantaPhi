@@ -448,7 +448,7 @@ async function search(options={}){
    const bridge=window.QuantaCloudConnection||window.StarQuestCloudLedger;
    if(!refining&&!searchId){searchId=crypto.randomUUID().replace(/-/g,'');window.__qInitialSearchId=searchId}
    if(searchId&&!refining){
-     await QuantaUnifiedTokenLedger.update(unifiedTokenId,{sourceEventId:searchId,quantSearchId:searchId});
+     void QuantaUnifiedTokenLedger.update(unifiedTokenId,{sourceEventId:searchId,quantSearchId:searchId}).catch(error=>console.warn('Local search link update deferred',error));
      const createdAt=unifiedToken.createdAt||new Date().toISOString();
      if(window.QuantaInfinityCredit?.commitNow){
        pairedCommitPromise=window.QuantaInfinityCredit.commitNow(nq,searchId,createdAt,q).then(payload=>{
