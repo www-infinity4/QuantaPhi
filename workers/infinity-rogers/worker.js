@@ -263,26 +263,38 @@ async function runImage(request, env) {
  const state=await usageState(env,userId);
  if(state.requests>=IMAGE_DAILY_CAP) return json(request,{ok:false,error:"image_daily_cap",cap:IMAGE_DAILY_CAP},429);
 
- try{
-  const out=new FormData();
-  out.append("input_image_0",image,image.name||"reference.jpg");
-  out.append("prompt",prompt);
-  out.append("width","768");
-  out.append("height","1024");
-  const serialized=new Response(out);
-  const result=await env.AI.run(IMAGE_MODEL,{
-   multipart:{
-    body:serialized.body,
-    contentType:serialized.headers.get("content-type")
-   }
-  });
-  const b64=typeof result?.image==="string"?result.image:"";
-  if(!b64) throw new Error("empty_image_response");
-  await recordUsage(env,userId,state,1,1);
-  return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_MODEL,dataURI:"data:image/jpeg;base64,"+b64,remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
- }catch(error){
-  return json(request,{ok:false,error:String(error?.message||error)},502);
+ const variants=[
+  prompt,
+  prompt.replace(/\b(?:Topps|Fleer|Donruss|Upper Deck|Bowman|Stadium Club|Score|Leaf)\b/gi,"classic collector-card").replace(/\b(?:autograph|signature|rookie)\b/gi,"premium detail"),
+  "Create a tasteful premium fantasy baseball trading card from reference image 0. Preserve the recognizable main subject. Use refined collector-card composition, elegant metallic border work, dramatic but natural stadium lighting, sophisticated color, clean print balance, no logos, no text, no watermarks."
+ ];
+
+ let lastError=null;
+ for(let attempt=0;attempt<variants.length;attempt++){
+  try{
+   const out=new FormData();
+   out.append("input_image_0",image,image.name||"reference.jpg");
+   out.append("prompt",variants[attempt]);
+   out.append("width","768");
+   out.append("height","1024");
+   const serialized=new Response(out);
+   const result=await env.AI.run(IMAGE_MODEL,{
+    multipart:{
+     body:serialized.body,
+     contentType:serialized.headers.get("content-type")
+    }
+   });
+   const b64=typeof result?.image==="string"?result.image:"";
+   if(!b64) throw new Error("empty_image_response");
+   await recordUsage(env,userId,state,1,1);
+   return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_MODEL,dataURI:"data:image/jpeg;base64,"+b64,attempt:attempt+1,remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+  }catch(error){
+   lastError=error;
+   const message=String(error?.message||error);
+   if(!message.includes("3030")) break;
+  }
  }
+ return json(request,{ok:false,error:String(lastError?.message||lastError||"image_generation_failed")},502);
 }
 
 async function runMetered(request,env,body,mode){
