@@ -598,15 +598,15 @@ $('#go').onclick=search;
   wallet=normalize(wallet||starStore().wallet);
   const value=effective(wallet);
   put(S,value);
-  document.querySelectorAll('[data-control-phi-wallet-balance]').forEach(el=>el.textContent=String(wallet.tokens));
+  document.querySelectorAll('[data-control-phi-wallet-balance]').forEach(el=>el.textContent=String(value));
   document.querySelectorAll('[data-control-phi-wallet-progress]').forEach(el=>el.textContent=wallet.pendingShareCredits+'/10');
   const button=document.getElementById('controlPhiWalletButton');
   if(button){
-   button.innerHTML='<span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong>'+wallet.tokens+'</strong><small>'+wallet.pendingShareCredits+'/10</small>';
+   button.innerHTML='<span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong>'+value+'</strong><small>'+wallet.pendingShareCredits+'/10</small>';
    if(pulseStar){button.classList.remove('qwalletPulse');void button.offsetWidth;button.classList.add('qwalletPulse')}
   }
   try{window.ControlPhi?.refreshWallet?.()}catch(_){}
-  return{balance:wallet.tokens,progressToNextCoin:wallet.pendingShareCredits,effective:value,shareCount:wallet.shareCount}
+  return{balance:value,wholeBalance:wallet.tokens,progressToNextCoin:wallet.pendingShareCredits,effective:value,shareCount:wallet.shareCount}
  }
  function importLegacy(){
   const store=starStore(),wallet=normalize(store.wallet),legacy=num(S),current=effective(wallet);
