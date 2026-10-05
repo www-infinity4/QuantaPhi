@@ -256,10 +256,14 @@ async function runImage(request, env) {
  const prompt=clean(form.get("prompt"),5000);
  const requestText=clean(form.get("request"),1200);
  const image=form.get("image");
+ const designReference=form.get("design_reference");
  if(!prompt) return json(request,{ok:false,error:"prompt_required"},400);
  if(!(image instanceof File)) return json(request,{ok:false,error:"image_required"},400);
+ if(designReference && !(designReference instanceof File)) return json(request,{ok:false,error:"invalid_design_reference"},400);
  if(!String(image.type||"").startsWith("image/")) return json(request,{ok:false,error:"invalid_image_type"},415);
+ if(designReference && !String(designReference.type||"").startsWith("image/")) return json(request,{ok:false,error:"invalid_design_reference_type"},415);
  if(image.size>3_000_000) return json(request,{ok:false,error:"image_too_large",maxBytes:3000000},413);
+ if(designReference && designReference.size>3_000_000) return json(request,{ok:false,error:"design_reference_too_large",maxBytes:3000000},413);
 
  const userId=aiUser(request,{})+":image";
  const state=await usageState(env,userId);
@@ -289,7 +293,8 @@ async function runImage(request, env) {
    attemptNumber++;
    try{
     const out=new FormData();
-    out.append("input_image_0",image,image.name||"reference.jpg");
+    out.append("input_image_0",image,image.name||"subject.jpg");
+    if(designReference) out.append("input_image_1",designReference,designReference.name||"design-reference.jpg");
     out.append("prompt",variant);
     out.append("width","768");
     out.append("height","1024");
@@ -317,6 +322,7 @@ async function runImage(request, env) {
    :"Create an EMPTY fantasy sports trading-card design only, portrait 3:4 composition, following this visual direction: "+literal+". Use the requested border/color character, authentic printed-card proportions and a large central portrait area. Do not default to silver/gold luxury framing. No people, no faces, no logos, no trademarks, no text, no letters, no numbers, no watermark, no mockup or slab.";
   const out=new FormData();
   out.append("prompt",shellPrompt);
+  if(designReference) out.append("input_image_0",designReference,designReference.name||"design-reference.jpg");
   out.append("width","768");
   out.append("height","1024");
   const serialized=new Response(out);
