@@ -1059,14 +1059,20 @@ window.QuantaUnifiedWalletSync=function(asset,amount,sourceSystem,sourceWalletId
  document.addEventListener('starquest:auth-changed',sync);
 })();
 </script><script>
-window.addEventListener('load',()=>{document.getElementById('qtoken').textContent='Quants: '+(window.PhiAssetBalances?.value('QUANT')??0);void QuantaUnifiedTokenLedger.refreshCount();QuantaUnifiedTokenLedger.protectCounter()},{once:true});
-window.addEventListener('focus',()=>void QuantaUnifiedTokenLedger.refreshCount());
-window.addEventListener('infinity:token-ledger-updated',()=>void QuantaUnifiedTokenLedger.refreshCount());
-window.addEventListener('phi:asset-balances',()=>{const a=window.PhiAssetBalances.snapshot().QUANT;document.getElementById('qtoken').textContent='Quants: '+a.balance+(a.pending?' ('+a.pending+' pending)':'');window.ControlPhi?.refreshWallet?.();void QuantaUnifiedTokenLedger.refreshCount()});
-window.addEventListener('infinity:token-count-updated',e=>{QuantaUnifiedTokenLedger.setCount(e.detail?.value??window.InfinityTokenCount?.value?.()??0)});
-window.addEventListener('infinity:wallet-state',()=>void QuantaUnifiedTokenLedger.refreshCount());
-window.addEventListener('infinity-history-updated',()=>void QuantaUnifiedTokenLedger.refreshCount());
-window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infinity_unified_token_count_v3','infinity_unified_wallet_v1','infinityPhi:searchTokens:v1','omniPhi:history:v1','quantaPhiBuildHistoryV1'].includes(e.key||''))void QuantaUnifiedTokenLedger.refreshCount()});
+function paintTopBalances(){
+ const snap=window.PhiAssetBalances?.snapshot?.()||{},q=snap.QUANT,i=snap.INFINITY;
+ const qb=document.getElementById('qtoken'),ib=document.getElementById('qinfinity');
+ if(qb&&q)qb.textContent='Quants: '+Math.max(0,Number(q.balance)||0)+(q.pending?' ('+q.pending+' pending)':'');
+ if(ib&&i&&(i.cloud||i.pending))ib.textContent='Infinity: '+Math.max(0,Number(i.balance)||0);
+}
+window.addEventListener('load',()=>{paintTopBalances();void QuantaUnifiedTokenLedger.refreshCount();QuantaUnifiedTokenLedger.protectCounter();void window.QuantaCloudConnection?.ready?.then?.(()=>{paintTopBalances();window.dispatchEvent(new Event('focus'))})},{once:true});
+window.addEventListener('focus',()=>{paintTopBalances();void QuantaUnifiedTokenLedger.refreshCount()});
+window.addEventListener('infinity:token-ledger-updated',()=>{paintTopBalances();void QuantaUnifiedTokenLedger.refreshCount()});
+window.addEventListener('phi:asset-balances',()=>{paintTopBalances();window.ControlPhi?.refreshWallet?.();void QuantaUnifiedTokenLedger.refreshCount()});
+window.addEventListener('infinity:token-count-updated',e=>{QuantaUnifiedTokenLedger.setCount(e.detail?.value??window.InfinityTokenCount?.value?.()??0);paintTopBalances()});
+window.addEventListener('infinity:wallet-state',e=>{const state=e.detail||{},n=Number(state?.balances?.INFINITY);if(Number.isFinite(n)){window.PhiAssetBalances?.authoritative?.('INFINITY',n);QuantaUnifiedTokenLedger.setCount(n)}paintTopBalances()});
+window.addEventListener('infinity-history-updated',()=>{paintTopBalances();void QuantaUnifiedTokenLedger.refreshCount()});
+window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infinity_unified_token_count_v3','infinity_unified_wallet_v1','phi:assetBalances:v1','infinityPhi:searchTokens:v1','omniPhi:history:v1','quantaPhiBuildHistoryV1'].includes(e.key||'')){paintTopBalances();void QuantaUnifiedTokenLedger.refreshCount()}});
 </script><!-- QuantaPhi publish stamp: unified-token-ledger-v1 -->
 <script src="media-repair.js?v=20261003-refine2"></script></body></html>
 
