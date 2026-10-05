@@ -159,6 +159,16 @@ export default {
       return json({ ok:true, searches:searches.results, tokens:tokens.results });
     }
 
+    if (url.pathname === "/v1/quants/interests" && request.method === "GET") {
+      const topics = await env.DB.prepare(
+        "SELECT query_text AS query,COUNT(*) AS hits,MAX(created_at) AS last_at,MIN(created_at) AS first_at FROM quanta_search_journal WHERE user_id=? AND status='COMMITTED' GROUP BY lower(trim(query_text)) ORDER BY hits DESC,last_at DESC LIMIT 5000"
+      ).bind(identity.user_id).all();
+      const total = await env.DB.prepare(
+        "SELECT COUNT(*) AS searches,COUNT(DISTINCT lower(trim(query_text))) AS unique_queries,MIN(created_at) AS first_at,MAX(created_at) AS last_at FROM quanta_search_journal WHERE user_id=? AND status='COMMITTED'"
+      ).bind(identity.user_id).first();
+      return json({ok:true,total_searches:Number(total?.searches||0),unique_queries:Number(total?.unique_queries||0),first_at:Number(total?.first_at||0),last_at:Number(total?.last_at||0),topics:topics.results||[]});
+    }
+
     if (url.pathname === "/v1/quants/search" && request.method === "POST") {
       const body = await request.json().catch(() => ({}));
       const query = String(body.query || "").trim().replace(/\s+/g, " ").slice(0,500);
