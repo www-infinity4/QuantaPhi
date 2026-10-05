@@ -120,7 +120,7 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
  if(!findDeviceToken())await ready;
  if(!findDeviceToken())await recoverAccountProfileFromDevice();
  const url=new URL(target);
- const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&url.pathname.startsWith('/v1/quants/'));
+ const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&(url.pathname.startsWith('/v1/quants/')||url.pathname.startsWith('/v1/music-quants/')));
  if(!allowed)throw new Error('unsupported_wallet_target');
  const bridge=global.StarQuestCloudLedger;
  if(bridge?.authenticatedFetch){try{return await bridge.authenticatedFetch(target,options)}catch(error){if(error.message!=='ledger_not_connected')throw error}}
