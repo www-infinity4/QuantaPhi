@@ -41,6 +41,10 @@ const REQUEST_TIMEOUT_MS=12000;
 async function request(options){let timer;try{return await Promise.race([global.QuantaCloudConnection.authenticatedFetch(API,options),new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error('Star Coin sync timed out; retained for retry')),REQUEST_TIMEOUT_MS)})])}finally{clearTimeout(timer)}}
 function publish(state){
  try{global.localStorage.setItem(STATE,JSON.stringify({...state,history:undefined,syncedAt:new Date().toISOString()}))}catch{}
+ // Reconcile the durable QuantaPhi Star Coin receipts into the visible shared
+ // wallet without ever lowering a larger recovered/local Star Coin balance.
+ const tenths=Number(state?.credits_tenths);
+ if(Number.isFinite(tenths)&&tenths>=0)try{global.ControlPhi?.importLegacyStarCoinBalance?.(tenths/10,'quanta-phi-cloud')}catch(error){console.warn('Star Coin wallet reconcile deferred',error)}
  try{global.dispatchEvent(new CustomEvent('quantaphi:star-coins-cloud',{detail:state}))}catch{}
 }
 async function flush(){
@@ -95,7 +99,7 @@ function backfill(){
   return added;
  }catch(error){console.warn('Star Coin backfill deferred',error);return 0}
 }
-const kick=()=>{backfill();void flush()};
+const kick=()=>{backfill();void flush().finally(()=>{const connection=global.QuantaCloudConnection;if(connection?.authenticatedFetch&&(!connection.hasCredential||connection.hasCredential()))void state().catch(error=>console.warn('Star Coin state refresh deferred',error))})};
 for(const event of ['load','online','focus'])global.addEventListener?.(event,kick);
 global.document?.addEventListener?.('starquest:ledger-connected',kick);
 global.document?.addEventListener?.('visibilitychange',()=>{if(global.document.visibilityState==='visible')kick()});
