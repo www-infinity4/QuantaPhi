@@ -11,7 +11,7 @@ const ALLOWED_ORIGINS = new Set([
 
 const DEFAULT_CF_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 const IMAGE_MODEL = "@cf/black-forest-labs/flux-2-klein-9b";
-const IMAGE_DAILY_CAP = 4;
+const IMAGE_DAILY_CAP = 20;
 
 function clean(value, max = 12000) {
   return typeof value === "string" ? value.trim().slice(0, max) : "";
