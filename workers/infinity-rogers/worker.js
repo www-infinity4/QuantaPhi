@@ -10,6 +10,8 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 const DEFAULT_CF_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
+const IMAGE_MODEL = "@cf/black-forest-labs/flux-2-klein-4b";
+const IMAGE_DAILY_CAP = 6;
 
 function clean(value, max = 12000) {
   return typeof value === "string" ? value.trim().slice(0, max) : "";
@@ -244,6 +246,45 @@ async function usageState(env,userId){
 async function recordUsage(env,userId,state,promptTokens,completionTokens){
  await env.METER_DB.prepare("INSERT INTO ai_usage_daily(user_id,day,prompt_tokens,completion_tokens,requests,updated_at) VALUES(?1,?2,?3,?4,1,?5) ON CONFLICT(user_id,day) DO UPDATE SET prompt_tokens=prompt_tokens+excluded.prompt_tokens,completion_tokens=completion_tokens+excluded.completion_tokens,requests=requests+1,updated_at=excluded.updated_at").bind(userId,state.day,promptTokens,completionTokens,Date.now()).run();
 }
+async function runImage(request, env) {
+ if (!env.AI) return json(request,{ok:false,error:"workers_ai_not_configured"},503);
+ let form;
+ try { form = await request.formData(); }
+ catch { return json(request,{ok:false,error:"multipart_required"},400); }
+
+ const prompt=clean(form.get("prompt"),5000);
+ const image=form.get("image");
+ if(!prompt) return json(request,{ok:false,error:"prompt_required"},400);
+ if(!(image instanceof File)) return json(request,{ok:false,error:"image_required"},400);
+ if(!String(image.type||"").startsWith("image/")) return json(request,{ok:false,error:"invalid_image_type"},415);
+ if(image.size>3_000_000) return json(request,{ok:false,error:"image_too_large",maxBytes:3000000},413);
+
+ const userId=aiUser(request,{})+":image";
+ const state=await usageState(env,userId);
+ if(state.requests>=IMAGE_DAILY_CAP) return json(request,{ok:false,error:"image_daily_cap",cap:IMAGE_DAILY_CAP},429);
+
+ try{
+  const out=new FormData();
+  out.append("input_image_0",image,image.name||"reference.jpg");
+  out.append("prompt",prompt);
+  out.append("width","768");
+  out.append("height","1024");
+  const serialized=new Response(out);
+  const result=await env.AI.run(IMAGE_MODEL,{
+   multipart:{
+    body:serialized.body,
+    contentType:serialized.headers.get("content-type")
+   }
+  });
+  const b64=typeof result?.image==="string"?result.image:"";
+  if(!b64) throw new Error("empty_image_response");
+  await recordUsage(env,userId,state,1,1);
+  return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_MODEL,dataURI:"data:image/jpeg;base64,"+b64,remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+ }catch(error){
+  return json(request,{ok:false,error:String(error?.message||error)},502);
+ }
+}
+
 async function runMetered(request,env,body,mode){
  const raw=String(body?.input||body?.message||"");
  if(raw.length>AI_PROMPT_CHARS)return json(request,{ok:false,error:"prompt_too_large",maxCharacters:AI_PROMPT_CHARS},413);
@@ -289,7 +330,7 @@ export default {
         version: "2026-10-05-workers-ai-only-1",
         workersAIConfigured: Boolean(env.AI),
         model: env.CF_AI_MODEL || DEFAULT_CF_MODEL,
-        routes: { "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai" },
+         routes: { "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai", "/v1/image": "flux-2-reference-image" },
       });
     }
 
@@ -306,6 +347,7 @@ export default {
 
     if (request.method === "POST") {
       if (!originAllowed(request)) return json(request, { ok: false, error: "origin_not_allowed" }, 403);
+      if (url.pathname === "/v1/image") return runImage(request, env);
       let body;
       try { body = await bodyJson(request); }
       catch (error) { return json(request, { ok: false, error: String(error?.message || error) }, 400); }
