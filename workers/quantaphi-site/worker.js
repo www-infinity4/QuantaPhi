@@ -143,6 +143,15 @@ export default {
   if (raw) { out.delete('Content-Security-Policy'); out.delete('Content-Disposition'); }
   if (textual || !upstream.ok) out.set('Cache-Control', 'no-cache, max-age=0, must-revalidate');
   const contentType = out.get('Content-Type') || '';
+  const infinityHtml = route.repo === 'C13b0' && /text\/html/i.test(contentType);
+  if (infinityHtml) {
+   // Infinity is a hashed Next.js export. Never let a browser reuse HTML from
+   // one deployment after GitHub Pages has switched to a newer chunk set.
+   // This preserves wallet/storage state while preventing stale HTML -> 404 CSS/JS.
+   out.set('Cache-Control','no-store, no-cache, max-age=0, must-revalidate');
+   out.set('Pragma','no-cache');
+   out.set('Expires','0');
+  }
   if (request.method === 'GET' && upstream.ok && /text\/html|javascript|text\/css|application\/json/.test(contentType)) {
    const rewritten = rewriteSuiteText(await upstream.text());
    out.delete('Content-Length'); out.delete('Content-Encoding'); out.delete('ETag');
