@@ -210,17 +210,17 @@ function renderFivePartOverview(main,q,evidence){
   const p=splitOverviewFive(main);
   sections={intent:q,red:{overview:p[0]},yellow:[{label:'Evidence',value:p[1],source_indexes:[]}],blue:[{region:'Input',contribution:p[2]}],orange:[{aim:p[3],reason:''}],purple:[{relationship:p[4],use:''}]};
  }
- let hist=[];try{hist=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]').filter(x=>x.query&&x.query.toLowerCase()!==String(q||'').toLowerCase()).slice(0,6)}catch(_){}
+ let hist=[];try{const seen=new Set(),words=String(q||'').toLowerCase().split(/\W+/).filter(x=>x.length>2);hist=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]').filter(x=>x.query&&x.query.toLowerCase()!==String(q||'').toLowerCase()).filter(x=>{const key=x.query.trim().toLowerCase();if(seen.has(key))return false;seen.add(key);return true}).map((x,i)=>({...x,_rank:words.reduce((n,w)=>n+(String(x.query).toLowerCase().includes(w)?3:0),0)-i*.01})).sort((a,b)=>b._rank-a._rank).slice(0,6)}catch(_){}
  const chips=hist.length?hist.map(x=>'<button class="qchip" type="button" data-assimilate="'+encodeURIComponent(x.query)+'">'+esc(x.query)+'</button>').join(''):'';
  const yellow='<ul id="qYellowDataList" class="qDataLinks">'+sections.yellow.map(x=>{const term=String(x.value||'').trim();return term?'<li><a href="'+esc(extractionPermalink(term))+'" title="Search QuantaPhi for '+esc(term)+'">'+esc(term)+'</a></li>':''}).join('')+'</ul>';
  const blue='<ul>'+sections.blue.map(x=>'<li><strong>'+esc(x.region)+':</strong> '+esc(x.contribution)+'</li>').join('')+'</ul>';
  const orange='<ul>'+sections.orange.map(x=>'<li><strong>'+esc(x.label)+':</strong> '+esc(x.value)+(x.source_indexes&&x.source_indexes.length?'<small> · sources '+x.source_indexes.map(n=>'#'+(n+1)).join(', ')+'</small>':'')+'</li>').join('')+'</ul>';
  const purple='<ul id="qPurpleList">'+((sections.purple&&sections.purple.length)?sections.purple.map(x=>'<li><strong>'+esc((x.type||'conceptual').toUpperCase())+(x.history_query?' · '+esc(x.history_query):'')+':</strong> '+esc(x.relationship)+(x.bridge?' — '+esc(x.bridge):'')+'</li>').join(''):'<li>Assimilating search history…</li>')+'</ul>';
- return '<section class="qzone qzoneRed"><h3>'+(sections.sourceFallback?'Overview':'AI Overview')+'</h3>'+String(sections.red.overview||'').split(/\n\s*\n/).filter(Boolean).map(p=>'<p>'+esc(p)+'</p>').join('')+'</section>'+
+ return '<section class="qzone qzoneRed"><h3>'+(sections.sourceFallback?'Overview':'AI Overview')+'</h3>'+String(sections.red.overview||'').split(/\n\s*\n/).filter(Boolean).flatMap(p=>{const s=String(p).match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g)||[p],out=[];for(let i=0;i<s.length;i+=3)out.push(s.slice(i,i+3).join(' ').trim());return out}).filter(Boolean).map(p=>'<p>'+esc(p)+'</p>').join('')+'</section>'+
  '<section class="qzone qzoneYellow"><h3>Data extraction</h3>'+yellow+'</section>'+
  '<section class="qzone qzoneBlue"><h3>Input regions</h3>'+blue+'<div class="qzoneInput"><input id="qZoneInput" placeholder="Add a skill, tool, source, method, measurement, or related input…"><button id="qZoneBuild" type="button">Add input</button></div></section>'+
  '<section class="qzone qzoneOrange"><h3>Related data · next branches</h3>'+orange+'</section>'+
- '<section class="qzone qzonePurple"><h3>Assimilation</h3>'+purple+(chips?'<div class="qchips" aria-label="Connect a previous search"><small style="width:100%;color:#5b3d70;font-weight:800">Connect a previous search:</small>'+chips+'</div>':'')+'</section>';
+ '<section class="qzone qzonePurple"><h3>Assimilation</h3>'+purple+(chips?'<div class="qchips" aria-label="Connect a previous search"><small style="width:100%;color:#5b3d70;font-weight:800">Follow a relevant earlier search into the next linked Quant:</small>'+chips+'</div>':'')+'</section>';
 }
 async function categoryDataIndex(q,currentSections,currentEvidence){
  const corpus=[q,String(currentSections?.red?.overview||''),...(currentEvidence||[]).map(x=>String(x.title||''))].join(' ').toLowerCase();
