@@ -10,7 +10,8 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 const DEFAULT_CF_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
-const IMAGE_MODEL = "@cf/black-forest-labs/flux-2-klein-9b";
+const IMAGE_MODEL = "@cf/black-forest-labs/flux-2-dev";
+const IMAGE_FALLBACK_MODEL = "@cf/black-forest-labs/flux-2-klein-9b";
 const IMAGE_DAILY_CAP = 20;
 
 function clean(value, max = 12000) {
@@ -278,23 +279,32 @@ async function runImage(request, env) {
  ];
 
  let lastError=null;
- for(let attempt=0;attempt<variants.length;attempt++){
-  try{
-   const out=new FormData();
-   out.append("input_image_0",image,image.name||"reference.jpg");
-   out.append("prompt",variants[attempt]);
-   out.append("width","768");
-   out.append("height","1024");
-   const serialized=new Response(out);
-   const result=await env.AI.run(IMAGE_MODEL,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
-   const b64=typeof result?.image==="string"?result.image:"";
-   if(!b64) throw new Error("empty_image_response");
-   await recordUsage(env,userId,state,1,1);
-   return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_MODEL,dataURI:"data:image/jpeg;base64,"+b64,attempt:attempt+1,mode:"reference",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
-  }catch(error){
-   lastError=error;
-   const message=String(error?.message||error);
-   if(!message.includes("3030")) break;
+ const modelPlan=[
+  {model:IMAGE_MODEL,variants:variants.slice(0,3),steps:"25"},
+  {model:IMAGE_FALLBACK_MODEL,variants:variants.slice(2),steps:null}
+ ];
+ let attemptNumber=0;
+ for(const plan of modelPlan){
+  for(const variant of plan.variants){
+   attemptNumber++;
+   try{
+    const out=new FormData();
+    out.append("input_image_0",image,image.name||"reference.jpg");
+    out.append("prompt",variant);
+    out.append("width","768");
+    out.append("height","1024");
+    if(plan.steps) out.append("steps",plan.steps);
+    const serialized=new Response(out);
+    const result=await env.AI.run(plan.model,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
+    const b64=typeof result?.image==="string"?result.image:"";
+    if(!b64) throw new Error("empty_image_response");
+    await recordUsage(env,userId,state,1,1);
+    return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:image/jpeg;base64,"+b64,attempt:attemptNumber,mode:"reference",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+   }catch(error){
+    lastError=error;
+    const message=String(error?.message||error);
+    if(!message.includes("3030")&&!message.includes("Invalid input")) break;
+   }
   }
  }
 
@@ -310,7 +320,7 @@ async function runImage(request, env) {
   out.append("width","768");
   out.append("height","1024");
   const serialized=new Response(out);
-  const result=await env.AI.run(IMAGE_MODEL,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
+  const result=await env.AI.run(IMAGE_FALLBACK_MODEL,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
   const b64=typeof result?.image==="string"?result.image:"";
   if(!b64) throw new Error("empty_shell_response");
 
@@ -346,7 +356,7 @@ async function runImage(request, env) {
   </svg>`;
   const svgB64=btoa(unescape(encodeURIComponent(svg)));
   await recordUsage(env,userId,state,1,1);
-  return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_MODEL,dataURI:"data:image/svg+xml;base64,"+svgB64,attempt:variants.length+1,mode:"server-composite",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+  return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_FALLBACK_MODEL,dataURI:"data:image/svg+xml;base64,"+svgB64,attempt:attemptNumber+1,mode:"server-composite",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
  }catch(error){
   lastError=error;
  }
