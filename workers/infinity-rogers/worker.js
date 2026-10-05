@@ -9,8 +9,6 @@ const ALLOWED_ORIGINS = new Set([
   "http://127.0.0.1:8000",
 ]);
 
-const DEFAULT_OPENAI_MODEL = "gpt-5.6-luna";
-const DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001";
 const DEFAULT_CF_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 
 function clean(value, max = 12000) {
@@ -52,71 +50,12 @@ async function bodyJson(request) {
   return request.json();
 }
 
-function openAIKey(env) {
-  return env.OPENAI_API_KEY || env.Gpt || "";
-}
-
-function extractOpenAI(payload) {
-  if (typeof payload?.output_text === "string" && payload.output_text.trim()) return payload.output_text.trim();
-  const chunks = [];
-  for (const item of Array.isArray(payload?.output) ? payload.output : []) {
-    for (const part of Array.isArray(item?.content) ? item.content : []) {
-      if ((part?.type === "output_text" || part?.type === "text") && typeof part.text === "string") chunks.push(part.text);
-    }
-  }
-  return chunks.join("\n").trim();
-}
-
-function extractAnthropic(payload) {
-  return (Array.isArray(payload?.content) ? payload.content : [])
-    .filter((part) => part?.type === "text")
-    .map((part) => part.text || "")
-    .join("\n")
-    .trim();
-}
-
 function extractWorkersAI(payload) {
   if (typeof payload === "string") return payload.trim();
   if (typeof payload?.response === "string") return payload.response.trim();
   if (typeof payload?.result?.response === "string") return payload.result.response.trim();
   if (typeof payload?.choices?.[0]?.message?.content === "string") return payload.choices[0].message.content.trim();
   return "";
-}
-
-async function openai(env, instructions, input, maxOutputTokens = 1400) {
-  const key = openAIKey(env);
-  if (!key) throw new Error("openai_not_configured");
-  const response = await fetch("https://api.openai.com/v1/responses", {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
-    body: JSON.stringify({ model: env.OPENAI_MODEL || DEFAULT_OPENAI_MODEL, instructions, input, max_output_tokens: maxOutputTokens }),
-    signal: AbortSignal.timeout(12000),
-  });
-  const payload = await response.json().catch(() => ({}));
-  if (!response.ok) {
-    const message = clean(payload?.error?.message, 500);
-    throw new Error(`openai_request_failed:${response.status}${message ? ":" + message : ""}`);
-  }
-  const text = extractOpenAI(payload);
-  if (!text) throw new Error("empty_openai_response");
-  return text;
-}
-
-async function anthropic(env, system, input, maxTokens = 900) {
-  if (!env.ANTHROPIC_API_KEY) throw new Error("anthropic_not_configured");
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "Content-Type": "application/json", "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
-    body: JSON.stringify({ model: env.ROGERS_MODEL || DEFAULT_ANTHROPIC_MODEL, max_tokens: maxTokens, system, messages: [{ role: "user", content: input }] }),
-  });
-  const payload = await response.json().catch(() => ({}));
-  if (!response.ok) {
-    const message = clean(payload?.error?.message, 500);
-    throw new Error(`anthropic_request_failed:${response.status}${message ? ":" + message : ""}`);
-  }
-  const text = extractAnthropic(payload);
-  if (!text) throw new Error("empty_anthropic_response");
-  return text;
 }
 
 async function workersAI(env, system, input, maxTokens = 1200) {
@@ -156,36 +95,28 @@ function taskFrom(body) {
   };
 }
 
-async function tryProviders(env, system, task, order, maxOutputTokens = 1400) {
-  const failures = [];
-  for (const provider of order) {
-    try {
-      if (provider === "openai") return { output: await openai(env, system, task, maxOutputTokens), provider: "openai", model: env.OPENAI_MODEL || DEFAULT_OPENAI_MODEL };
-      if (provider === "workers-ai") return { output: await workersAI(env, system, task, maxOutputTokens), provider: "cloudflare-workers-ai", model: env.CF_AI_MODEL || DEFAULT_CF_MODEL };
-      if (provider === "anthropic") return { output: await anthropic(env, system, task), provider: "anthropic", model: env.ROGERS_MODEL || DEFAULT_ANTHROPIC_MODEL };
-    } catch (error) {
-      failures.push(String(error?.message || error));
-    }
-  }
-  throw new Error(failures.join(" | ") || "all_models_failed");
+async function runGatewayModel(env, system, task, maxOutputTokens = 1400) {
+  return {
+    output: await workersAI(env, system, task, maxOutputTokens),
+    provider: "cloudflare-workers-ai",
+    model: env.CF_AI_MODEL || DEFAULT_CF_MODEL,
+  };
 }
 
 async function runGPT(request, env, body) {
   const { input, info, task } = taskFrom(body);
   if (!input) return json(request, { ok: false, error: "input_required" }, 400);
   try {
-    const gptOnly = info.context.requireGPT === true;
-    const cloudflareOnly = info.context.requireCloudflare === true;
-    const result = await tryProviders(env, rules(info.application), task, cloudflareOnly ? ["workers-ai"] : gptOnly ? ["openai"] : ["openai", "workers-ai", "anthropic"], (gptOnly || cloudflareOnly || info.context.task === "five-zone-overview-synthesis") ? 3200 : 1400);
+    const maxTokens = info.context.task === "five-zone-overview-synthesis" || info.context.requireGPT === true || info.context.requireCloudflare === true ? 3200 : 1400;
+    const result = await runGatewayModel(env, rules(info.application), task, maxTokens);
     return json(request, {
       ok: true,
       output: result.output,
       output_text: result.output,
       answer: result.output,
       provider: result.provider,
-      assistant: result.provider === "openai" ? "gpt" : "gateway-fallback",
+      assistant: "rogers",
       model: result.model,
-      note: result.provider === "openai" ? undefined : "OpenAI was unavailable, so the gateway used a fallback model.",
     });
   } catch (error) {
     return json(request, { ok: false, error: String(error?.message || error) }, 502);
@@ -197,7 +128,7 @@ async function runReason(request, env, body) {
   if (!input) return json(request, { ok: false, error: "input_required" }, 400);
   const system = rules(info.application) + " You are Cosmo/Rogers for the Infinity system. Identify uncertainty and challenge assumptions when needed.";
   try {
-    const result = await tryProviders(env, system, task, ["workers-ai", "anthropic", "openai"]);
+    const result = await runGatewayModel(env, system, task, 1400);
     return json(request, {
       ok: true,
       output: result.output,
@@ -211,7 +142,6 @@ async function runReason(request, env, body) {
     return json(request, { ok: false, error: String(error?.message || error) }, 502);
   }
 }
-
 
 
 // PHI_SHARE_PREVIEW_V1
@@ -319,13 +249,6 @@ async function runMetered(request,env,body,mode){
  if(raw.length>AI_PROMPT_CHARS)return json(request,{ok:false,error:"prompt_too_large",maxCharacters:AI_PROMPT_CHARS},413);
  const userId=aiUser(request,body),state=await usageState(env,userId),promptTokens=tokenEstimate(raw+JSON.stringify(body?.context||{}));
  if(promptTokens>state.remaining){
-  if(mode==="gpt"&&env.AI){
-   const fallbackBody={...body,context:{...(body?.context||{}),requireCloudflare:true}};
-   const fallbackResponse=await runGPT(request,env,fallbackBody);
-   const fallbackData=await fallbackResponse.clone().json().catch(()=>({ok:false,error:"invalid_gateway_response"}));
-   if(!fallbackResponse.ok||!fallbackData.ok)return fallbackResponse;
-   return json(request,{...fallbackData,cached:false,meter:{...state,userId},note:"Daily GPT allowance reached; Cloudflare Workers AI supplied this AI overview."});
-  }
   return json(request,{ok:false,error:"daily_quota_exceeded",meter:{...state,userId}},429);
  }
  const key=await cacheKey(mode+"|"+raw+"|"+JSON.stringify(body?.context||{}));
@@ -335,7 +258,7 @@ async function runMetered(request,env,body,mode){
  const data=await response.clone().json().catch(()=>({ok:false,error:"invalid_gateway_response"}));
  if(!response.ok||!data.ok)return response;
  const completionTokens=tokenEstimate(data.output||data.output_text||"");
- if(data.provider==="openai")await recordUsage(env,userId,state,promptTokens,completionTokens);
+ await recordUsage(env,userId,state,promptTokens,completionTokens);
  await env.METER_DB.prepare("INSERT OR REPLACE INTO ai_cache(cache_key,response_json,expires_at,created_at) VALUES(?1,?2,?3,?4)").bind(key,JSON.stringify(data),Date.now()+AI_CACHE_MS,Date.now()).run();
  const next=await usageState(env,userId);
  return json(request,{...data,cached:false,meter:{...next,userId}});
@@ -363,12 +286,10 @@ export default {
       return json(request, {
         ok: true,
         service: "infinity-ai-gateway",
-        version: "2026-09-14-workers-ai-fallback-1",
-        openaiConfigured: Boolean(openAIKey(env)),
-        anthropicConfigured: Boolean(env.ANTHROPIC_API_KEY),
+        version: "2026-10-05-workers-ai-only-1",
         workersAIConfigured: Boolean(env.AI),
-        defaultFallbackModel: env.CF_AI_MODEL || DEFAULT_CF_MODEL,
-        routes: { "/v1/chat": "openai-then-workers-ai", "/v1/reason": "workers-ai-first" },
+        model: env.CF_AI_MODEL || DEFAULT_CF_MODEL,
+        routes: { "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai" },
       });
     }
 
