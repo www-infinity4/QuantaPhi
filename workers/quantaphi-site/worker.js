@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v22-wallet-resolver';
+const EDGE_VERSION = 'quantaphi-org-v23-canonical-base';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -83,6 +83,7 @@ function rewriteSuiteText(text) {
   text = text.split(github + '/').join(CANONICAL_ORIGIN + app.slug);
   text = text.split(github).join(CANONICAL_ORIGIN + app.slug.slice(0, -1));
   text = text.split('/' + app.repo + '/').join(app.slug);
+  text = text.split('/' + app.repo).join(app.slug.slice(0, -1));
  }
  text = text.split('https://www-infinity4.github.io/QuantaPhi/').join(CANONICAL_ORIGIN + '/');
  return text.split('__QUANTAPHI_STORAGE_BRIDGE__').join(bridgeUrl);
