@@ -278,22 +278,37 @@ async function runImage(request, env) {
    out.append("width","768");
    out.append("height","1024");
    const serialized=new Response(out);
-   const result=await env.AI.run(IMAGE_MODEL,{
-    multipart:{
-     body:serialized.body,
-     contentType:serialized.headers.get("content-type")
-    }
-   });
+   const result=await env.AI.run(IMAGE_MODEL,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
    const b64=typeof result?.image==="string"?result.image:"";
    if(!b64) throw new Error("empty_image_response");
    await recordUsage(env,userId,state,1,1);
-   return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_MODEL,dataURI:"data:image/jpeg;base64,"+b64,attempt:attempt+1,remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+   return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_MODEL,dataURI:"data:image/jpeg;base64,"+b64,attempt:attempt+1,mode:"reference",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
   }catch(error){
    lastError=error;
    const message=String(error?.message||error);
    if(!message.includes("3030")) break;
   }
  }
+
+ // If the reference-image path is blocked, still finish the card by generating
+ // a clean premium card shell. The browser composites the user's original photo
+ // into the shell so the customer never loses the build.
+ try{
+  const shellPrompt="Create an EMPTY premium fantasy sports trading card design only, portrait 3:4 composition. Use sophisticated silver, pale blue, charcoal, gold or era-appropriate color accents, layered collector-card borders, subtle foil and print texture, dramatic but restrained sports lighting, and a large clean central portrait photo window occupying about 70 percent of the card. No people, no faces, no logos, no trademarks, no text, no letters, no numbers, no watermark, no mockup, no tabletop.";
+  const out=new FormData();
+  out.append("prompt",shellPrompt);
+  out.append("width","768");
+  out.append("height","1024");
+  const serialized=new Response(out);
+  const result=await env.AI.run(IMAGE_MODEL,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
+  const b64=typeof result?.image==="string"?result.image:"";
+  if(!b64) throw new Error("empty_shell_response");
+  await recordUsage(env,userId,state,1,1);
+  return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_MODEL,dataURI:"data:image/jpeg;base64,"+b64,attempt:variants.length+1,mode:"shell-fallback",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+ }catch(error){
+  lastError=error;
+ }
+
  return json(request,{ok:false,error:String(lastError?.message||lastError||"image_generation_failed")},502);
 }
 
