@@ -353,6 +353,7 @@ async function runImageRead(request, env) {
  let form;
  try { form = await request.formData(); } catch { return json(request,{ok:false,error:"multipart_required"},400); }
  const image=form.get("image");
+ const purpose=clean(form.get("purpose"),40);
  if(!(image instanceof File)) return json(request,{ok:false,error:"image_required"},400);
  if(!String(image.type||"").startsWith("image/")) return json(request,{ok:false,error:"invalid_image_type"},415);
  if(image.size>3_000_000) return json(request,{ok:false,error:"image_too_large",maxBytes:3000000},413);
@@ -386,9 +387,9 @@ async function runImageRead(request, env) {
  }
  try{
   const first=await pass("Return this JSON shape only: "+JSON.stringify(shape)+". Copy every legible word exactly. Enumerate objects, accessories, background elements, colors, visual style, era clues and media clues. Give a dense semanticDescription. Keep unsupported identity blank.",1800);
-  const second=await pass("OCR-FIRST AUDIT. Inspect the same image again from scratch and copy EVERY readable word exactly before describing anything else. First pass: "+JSON.stringify(first)+". If a large printed title, band name, team name, product name, poster title, jersey word, logo text, caption or sign is visibly present, include it verbatim in visibleText and titleOptions when it functions as the image title. Check large lettering, small lettering, stylized lettering, logos-as-text, album/poster words and edge text. Then find missed visual details. Return the same JSON shape only. Do not identify a person or character from appearance alone.",1900);
-  const merged=merge(first,second);
-  return json(request,{ok:true,reader:model,passes:2,...merged});
+  const second=purpose==="review"?null:await pass("OCR-FIRST AUDIT. Inspect the same image again from scratch and copy EVERY readable word exactly before describing anything else. First pass: "+JSON.stringify(first)+". If a large printed title, band name, team name, product name, poster title, jersey word, logo text, caption or sign is visibly present, include it verbatim in visibleText and titleOptions when it functions as the image title. Check large lettering, small lettering, stylized lettering, logos-as-text, album/poster words and edge text. Then find missed visual details. Return the same JSON shape only. Do not identify a person or character from appearance alone.",1900);
+  const merged=second?merge(first,second):first;
+  return json(request,{ok:true,reader:model,passes:second?2:1,purpose:purpose||"source",...merged});
  }catch(error){return json(request,{ok:false,error:String(error?.message||error)},502);}
 }
 
