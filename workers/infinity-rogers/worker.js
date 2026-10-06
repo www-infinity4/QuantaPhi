@@ -10,6 +10,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 const DEFAULT_CF_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
+const CARD_MANAGER_MODEL = "@cf/openai/gpt-oss-120b";
 const IMAGE_MODEL = "@cf/black-forest-labs/flux-2-dev";
 const IMAGE_FALLBACK_MODEL = "@cf/black-forest-labs/flux-2-klein-9b";
 const IMAGE_DAILY_CAP = 20;
@@ -64,9 +65,10 @@ function extractWorkersAI(payload) {
   return "";
 }
 
-async function workersAI(env, system, input, maxTokens = 1200) {
+async function workersAI(env, system, input, maxTokens = 1200, model = "") {
   if (!env.AI) throw new Error("workers_ai_not_configured");
-  const result = await env.AI.run(env.CF_AI_MODEL || DEFAULT_CF_MODEL, {
+  const selectedModel=model||env.CF_AI_MODEL||DEFAULT_CF_MODEL;
+  const result = await env.AI.run(selectedModel, {
     messages: [
       { role: "system", content: system },
       { role: "user", content: input },
@@ -101,11 +103,12 @@ function taskFrom(body) {
   };
 }
 
-async function runGatewayModel(env, system, task, maxOutputTokens = 1400) {
+async function runGatewayModel(env, system, task, maxOutputTokens = 1400, model = "") {
+  const selectedModel=model||env.CF_AI_MODEL||DEFAULT_CF_MODEL;
   return {
-    output: await workersAI(env, system, task, maxOutputTokens),
+    output: await workersAI(env, system, task, maxOutputTokens, selectedModel),
     provider: "cloudflare-workers-ai",
-    model: env.CF_AI_MODEL || DEFAULT_CF_MODEL,
+    model: selectedModel,
   };
 }
 
@@ -114,7 +117,8 @@ async function runGPT(request, env, body) {
   if (!input) return json(request, { ok: false, error: "input_required" }, 400);
   try {
     const maxTokens = info.context.task === "five-zone-overview-synthesis" || info.context.requireGPT === true || info.context.requireCloudflare === true ? 3200 : 1400;
-    const result = await runGatewayModel(env, rules(info.application), task, maxTokens);
+    const managerModel=info.application==="Oracle Card Studio"?CARD_MANAGER_MODEL:"";
+    const result = await runGatewayModel(env, rules(info.application), task, maxTokens, managerModel);
     return json(request, {
       ok: true,
       output: result.output,
@@ -382,8 +386,8 @@ async function runImageRead(request, env) {
  }
  try{
   const first=await pass("Return this JSON shape only: "+JSON.stringify(shape)+". Copy every legible word exactly. Enumerate objects, accessories, background elements, colors, visual style, era clues and media clues. Give a dense semanticDescription. Keep unsupported identity blank.",1800);
-  const sparse=(first.visibleText.length+first.visualTraits.length+first.objects.length+first.mediaClues.length)<8||first.confidence<78;
-  const second=sparse?await pass("Audit the same image again. First pass: "+JSON.stringify(first)+". Find missed OCR and missed visible details. Return the same JSON shape only. Do not identify a person or character from appearance.",1900):null;
+  const sparse=!first.visibleText.length||!first.titleOptions.length||(first.visibleText.length+first.visualTraits.length+first.objects.length+first.mediaClues.length)<8||first.confidence<78;
+  const second=sparse?await pass("OCR-FIRST AUDIT. Inspect the same image again and copy every readable word exactly before describing anything else. First pass: "+JSON.stringify(first)+". If a large printed title, band name, team name, product name, poster title, jersey word, logo text, caption or sign is visibly present, include it verbatim in visibleText and titleOptions when it functions as the image title. Then find missed visual details. Return the same JSON shape only. Do not identify a person or character from appearance alone.",1900):null;
   const merged=second?merge(first,second):first;
   return json(request,{ok:true,reader:model,passes:second?2:1,...merged});
  }catch(error){return json(request,{ok:false,error:String(error?.message||error)},502);}
