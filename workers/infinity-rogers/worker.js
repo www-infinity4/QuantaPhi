@@ -386,10 +386,9 @@ async function runImageRead(request, env) {
  }
  try{
   const first=await pass("Return this JSON shape only: "+JSON.stringify(shape)+". Copy every legible word exactly. Enumerate objects, accessories, background elements, colors, visual style, era clues and media clues. Give a dense semanticDescription. Keep unsupported identity blank.",1800);
-  const sparse=!first.visibleText.length||!first.titleOptions.length||(first.visibleText.length+first.visualTraits.length+first.objects.length+first.mediaClues.length)<8||first.confidence<78;
-  const second=sparse?await pass("OCR-FIRST AUDIT. Inspect the same image again and copy every readable word exactly before describing anything else. First pass: "+JSON.stringify(first)+". If a large printed title, band name, team name, product name, poster title, jersey word, logo text, caption or sign is visibly present, include it verbatim in visibleText and titleOptions when it functions as the image title. Then find missed visual details. Return the same JSON shape only. Do not identify a person or character from appearance alone.",1900):null;
-  const merged=second?merge(first,second):first;
-  return json(request,{ok:true,reader:model,passes:second?2:1,...merged});
+  const second=await pass("OCR-FIRST AUDIT. Inspect the same image again from scratch and copy EVERY readable word exactly before describing anything else. First pass: "+JSON.stringify(first)+". If a large printed title, band name, team name, product name, poster title, jersey word, logo text, caption or sign is visibly present, include it verbatim in visibleText and titleOptions when it functions as the image title. Check large lettering, small lettering, stylized lettering, logos-as-text, album/poster words and edge text. Then find missed visual details. Return the same JSON shape only. Do not identify a person or character from appearance alone.",1900);
+  const merged=merge(first,second);
+  return json(request,{ok:true,reader:model,passes:2,...merged});
  }catch(error){return json(request,{ok:false,error:String(error?.message||error)},502);}
 }
 
