@@ -393,6 +393,48 @@ async function runImageRead(request, env) {
  }catch(error){return json(request,{ok:false,error:String(error?.message||error)},502);}
 }
 
+async function runImageCompare(request, env) {
+ if(!env.AI) return json(request,{ok:false,error:"workers_ai_not_configured"},503);
+ let form;
+ try{form=await request.formData();}catch{return json(request,{ok:false,error:"multipart_required"},400);}
+ const source=form.get("image");
+ if(!(source instanceof File)) return json(request,{ok:false,error:"image_required"},400);
+ if(!String(source.type||"").startsWith("image/")) return json(request,{ok:false,error:"invalid_image_type"},415);
+ if(source.size>3_000_000) return json(request,{ok:false,error:"image_too_large",maxBytes:3000000},413);
+ let candidates=[];
+ try{candidates=JSON.parse(String(form.get("candidates")||"[]"));}catch{}
+ if(!Array.isArray(candidates))candidates=[];
+ candidates=candidates.slice(0,6);
+ function bytesDataURI(bytes,mime){let binary="";for(let i=0;i<bytes.length;i+=0x8000)binary+=String.fromCharCode(...bytes.subarray(i,Math.min(i+0x8000,bytes.length)));return "data:"+mime+";base64,"+btoa(binary)}
+ const sourceURI=bytesDataURI(new Uint8Array(await source.arrayBuffer()),String(source.type||"image/jpeg"));
+ function safeRemote(value){
+  const v=clean(value,2400);
+  if(v.startsWith("data:image/")&&v.length<2_500_000)return v;
+  try{const u=new URL(v);if(u.protocol!=="https:"&&u.protocol!=="http:")return "";const h=u.hostname.toLowerCase();if(h==="localhost"||h.endsWith(".local")||h==="0.0.0.0"||h==="::1"||/^127\./.test(h)||/^10\./.test(h)||/^192\.168\./.test(h)||/^169\.254\./.test(h))return "";const m=h.match(/^172\.(\d+)\./);if(m&&Number(m[1])>=16&&Number(m[1])<=31)return "";return u.toString()}catch{return ""}
+ }
+ async function loadCandidate(candidate,index){
+  const imageUrl=safeRemote(candidate?.image||candidate?.img_src||candidate?.thumbnail||candidate?.thumbnail_src||"");
+  if(!imageUrl)return null;
+  let dataURI=imageUrl;
+  if(!imageUrl.startsWith("data:image/")){
+   try{const response=await fetch(imageUrl,{headers:{Accept:"image/*"}});if(!response.ok)return null;const type=String(response.headers.get("content-type")||"").split(";")[0].trim();if(!type.startsWith("image/"))return null;const ab=await response.arrayBuffer();if(ab.byteLength>1_500_000)return null;dataURI=bytesDataURI(new Uint8Array(ab),type)}catch{return null}
+  }
+  return {index,title:clean(candidate?.title,240),snippet:clean(candidate?.snippet||candidate?.content||candidate?.description,700),source:clean(candidate?.url||candidate?.source,1000),imageUrl:clean(candidate?.image||candidate?.img_src||candidate?.thumbnail||candidate?.thumbnail_src,1000),dataURI};
+ }
+ const loaded=(await Promise.all(candidates.slice(0,4).map(loadCandidate))).filter(Boolean).slice(0,3);
+ if(!loaded.length)return json(request,{ok:true,compared:0,matches:[],title:"",context:"",brand:"",series:"",date:"",evidence:[],confidence:0});
+ const meta=loaded.map(x=>({index:x.index,title:x.title,snippet:x.snippet,source:x.source}));
+ const content=[{type:"text",text:"Image 0 is the user uploaded image. The following images are SearXNG image-search results with metadata: "+JSON.stringify(meta)+". Compare them using visible non-biometric evidence such as exact printed words, artwork/layout, logos-as-text, objects, clothing, background, colors and graphic composition. Do NOT identify a real person or a fictional/TV/movie character from face or appearance. Search-result titles/snippets may provide context only when they agree with visible text or a strong visual-artwork match. Return ONLY JSON: {\"matches\":[{\"index\":0,\"score\":0,\"reason\":\"\"}],\"title\":\"\",\"context\":\"\",\"brand\":\"\",\"series\":\"\",\"date\":\"\",\"evidence\":[],\"confidence\":0}. Keep unsupported fields blank."},{type:"image_url",image_url:{url:sourceURI}}];
+ loaded.forEach(x=>content.push({type:"image_url",image_url:{url:x.dataURI}}));
+ try{
+  const result=await env.AI.run("@cf/google/gemma-4-26b-a4b-it",{messages:[{role:"system",content:"Compare a user-uploaded image with image-search results to recover factual context from visible text and matching artwork. Never perform face recognition or identify a person/character from appearance. Return JSON only."},{role:"user",content}],chat_template_kwargs:{enable_thinking:false},max_tokens:1800});
+  const rawText=extractWorkersAI(result);let parsed=null;try{parsed=JSON.parse(rawText)}catch{const a=rawText.indexOf("{"),b=rawText.lastIndexOf("}");if(a>=0&&b>a){try{parsed=JSON.parse(rawText.slice(a,b+1))}catch{}}}
+  if(!parsed||typeof parsed!=="object")throw new Error("image_compare_invalid_json");
+  const matches=Array.isArray(parsed.matches)?parsed.matches.slice(0,loaded.length).map(m=>({index:Number(m?.index)||0,score:Math.max(0,Math.min(100,Number(m?.score)||0)),reason:clean(m?.reason,500)})):[];
+  return json(request,{ok:true,compared:loaded.length,matches,title:clean(parsed.title,160),context:clean(parsed.context,220),brand:clean(parsed.brand,160),series:clean(parsed.series,180),date:clean(parsed.date,100),evidence:Array.isArray(parsed.evidence)?parsed.evidence.map(x=>clean(x,260)).filter(Boolean).slice(0,12):[],confidence:Math.max(0,Math.min(100,Number(parsed.confidence)||0)),candidates:meta});
+ }catch(error){return json(request,{ok:false,error:String(error?.message||error),compared:loaded.length},502);}
+}
+
 async function runImage(request, env) {
  if (!env.AI) return json(request,{ok:false,error:"workers_ai_not_configured"},503);
  let form;
