@@ -116,7 +116,7 @@ async function runGPT(request, env, body) {
   const { input, info, task } = taskFrom(body);
   if (!input) return json(request, { ok: false, error: "input_required" }, 400);
   try {
-    const maxTokens = info.context.task === "five-zone-overview-synthesis" || info.context.requireGPT === true || info.context.requireCloudflare === true ? 3200 : 1400;
+    const maxTokens = info.context.task === "five-zone-overview-synthesis" || info.context.requireGPT === true || info.context.requireCloudflare === true ? 3200 : info.application === "Oracle Card Studio" ? 2400 : 1400;
     const managerModel=info.application==="Oracle Card Studio"?CARD_MANAGER_MODEL:"";
     const result = await runGatewayModel(env, rules(info.application), task, maxTokens, managerModel);
     return json(request, {
