@@ -419,7 +419,7 @@ async function runImageCompare(request, env) {
   if(!imageUrl.startsWith("data:image/")){
    try{const response=await fetch(imageUrl,{headers:{Accept:"image/*"}});if(!response.ok)return null;const type=String(response.headers.get("content-type")||"").split(";")[0].trim();if(!type.startsWith("image/"))return null;const ab=await response.arrayBuffer();if(ab.byteLength>1_500_000)return null;dataURI=bytesDataURI(new Uint8Array(ab),type)}catch{return null}
   }
-  return {index,title:clean(candidate?.title,240),snippet:clean(candidate?.snippet||candidate?.content||candidate?.description,700),source:clean(candidate?.url||candidate?.source,1000),imageUrl:clean(candidate?.image||candidate?.img_src||candidate?.thumbnail||candidate?.thumbnail_src,1000),dataURI};
+  return {index,title:clean(candidate?.title,240),snippet:clean(candidate?.snippet||candidate?.content||candidate?.description,700),source:clean(candidate?.url||candidate?.source,1000),dataURI};
  }
  const loaded=(await Promise.all(candidates.slice(0,4).map(loadCandidate))).filter(Boolean).slice(0,3);
  if(!loaded.length)return json(request,{ok:true,compared:0,matches:[],title:"",context:"",brand:"",series:"",date:"",evidence:[],confidence:0});
@@ -468,4 +468,125 @@ async function runImage(request, env) {
    :"Follow the selected border treatment exactly.";
 
  const domain=sports?"sports trading card":"premium collectible trading card";
- const executionOnly="You are the rendering engine, not the art director. Execute the supplied build specification literally. Do not invent a different subject, sport, team, year, biography, brand, series or historical context. Do not add any lettering, words, numbers, serial plaques, logos, captions, labels, signatures or pseudo-text. Exact typography is composited later. Preserve the uploaded subject and create one high-end "+domain+" as a complete printed object. "+borderRule+" Keep the full sharp rectangular card perimeter visible. Use contemporary premium production quality: strong photography, precise crop, deliberate negative space, believable --- TRUNCATED --- 30,118 chars
+ const executionOnly="You are the rendering engine, not the art director. Execute the supplied build specification literally. Do not invent a different subject, sport, team, year, biography, brand, series or historical context. Do not add any lettering, words, numbers, serial plaques, logos, captions, labels, signatures or pseudo-text. Exact typography is composited later. Preserve the uploaded subject and create one high-end "+domain+" as a complete printed object. "+borderRule+" Keep the full sharp rectangular card perimeter visible. Use contemporary premium production quality: strong photography, precise crop, deliberate negative space, believable print material, controlled foil/refractor details only when requested, and clean collector-grade geometry. Never output a mockup, slab, phone screen, tabletop, empty template, picture frame, or photo pasted into a fixed rectangle.";
+
+ const variants=[
+   executionOnly+" BUILD SPECIFICATION: "+prompt,
+   executionOnly+" USER DIRECTION: "+literal+" BUILD SPECIFICATION: "+prompt+" Recompose the source photograph naturally into the card artwork; graphic elements may overlap and interact with the photograph, but must not obscure important faces.",
+   executionOnly+" Produce a restrained flagship-quality result with fewer graphic devices and stronger photography. BUILD SPECIFICATION: "+prompt,
+   executionOnly+" Produce a premium insert-quality result only if the selected material/style asks for it; otherwise stay classic and restrained. BUILD SPECIFICATION: "+prompt
+ ];
+
+ let lastError=null;
+ const modelPlan=[
+   {model:IMAGE_MODEL,variants,steps:"25"},
+   {model:IMAGE_FALLBACK_MODEL,variants:variants.slice(1),steps:null}
+ ];
+ const attemptErrors=[];
+ let attemptNumber=0;
+ for(const plan of modelPlan){
+   for(const variant of plan.variants){
+     attemptNumber++;
+     try{
+       const out=new FormData();
+       out.append("input_image_0",image,image.name||"subject.jpg");
+       if(designReference) out.append("input_image_1",designReference,designReference.name||"design-reference.jpg");
+       out.append("prompt",variant);
+       out.append("width","768");
+       out.append("height","1024");
+       if(plan.steps) out.append("steps",plan.steps);
+       const serialized=new Response(out);
+       const result=await env.AI.run(plan.model,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
+       const b64=typeof result?.image==="string"?result.image:"";
+       if(!b64) throw new Error("empty_image_response");
+       await recordUsage(env,userId,state,1,1);
+       return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:image/jpeg;base64,"+b64,attempt:attemptNumber,mode:"reference-edit",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+     }catch(error){
+       lastError=error;
+       const message=String(error?.message||error);
+       attemptErrors.push({model:plan.model,attempt:attemptNumber,error:message.slice(0,700)});
+       if(!message.includes("3030")&&!message.includes("Invalid input")&&!message.includes("empty_image_response")) break;
+     }
+   }
+ }
+
+ return json(request,{ok:false,error:String(lastError?.message||lastError||"high_quality_image_edit_failed"),attemptErrors,quality:"high-end-only",fallback:"disabled"},502);
+}
+
+async function runMetered(request,env,body,mode){
+ const raw=String(body?.input||body?.message||"");
+ if(raw.length>AI_PROMPT_CHARS)return json(request,{ok:false,error:"prompt_too_large",maxCharacters:AI_PROMPT_CHARS},413);
+ const userId=aiUser(request,body),state=await usageState(env,userId),promptTokens=tokenEstimate(raw+JSON.stringify(body?.context||{}));
+ if(promptTokens>state.remaining){
+  return json(request,{ok:false,error:"daily_quota_exceeded",meter:{...state,userId}},429);
+ }
+ const key=await cacheKey(mode+"|"+raw+"|"+JSON.stringify(body?.context||{}));
+ const cached=await env.METER_DB.prepare("SELECT response_json FROM ai_cache WHERE cache_key=?1 AND expires_at>?2").bind(key,Date.now()).first();
+ if(cached){const data=JSON.parse(cached.response_json);return json(request,{...data,cached:true,meter:{...state,userId}})}
+ const response=mode==="gpt"?await runGPT(request,env,body):await runReason(request,env,body);
+ const data=await response.clone().json().catch(()=>({ok:false,error:"invalid_gateway_response"}));
+ if(!response.ok||!data.ok)return response;
+ const completionTokens=tokenEstimate(data.output||data.output_text||"");
+ await recordUsage(env,userId,state,promptTokens,completionTokens);
+ await env.METER_DB.prepare("INSERT OR REPLACE INTO ai_cache(cache_key,response_json,expires_at,created_at) VALUES(?1,?2,?3,?4)").bind(key,JSON.stringify(data),Date.now()+AI_CACHE_MS,Date.now()).run();
+ const next=await usageState(env,userId);
+ return json(request,{...data,cached:false,meter:{...next,userId}});
+}
+async function usageResponse(request,env){
+ const url=new URL(request.url),userId=clean(url.searchParams.get("userId")||request.headers.get("X-Infinity-User")||"guest",180)||"guest";
+ return json(request,{ok:true,meter:{...await usageState(env,userId),userId}});
+}
+
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+
+    if ((request.method === "GET" || request.method === "HEAD") && url.pathname === "/share/phi") {
+      const response = phiSharePreview(request);
+      return request.method === "HEAD" ? new Response(null, { status: response.status, headers: response.headers }) : response;
+    }
+
+    if (request.method === "OPTIONS") {
+      if (!originAllowed(request)) return json(request, { ok: false, error: "origin_not_allowed" }, 403);
+      return new Response(null, { status: 204, headers: cors(request) });
+    }
+
+    if (request.method === "GET" && url.pathname === "/health") {
+      return json(request, {
+        ok: true,
+        service: "infinity-ai-gateway",
+        version: "2026-10-05-workers-ai-only-1",
+        workersAIConfigured: Boolean(env.AI),
+        model: env.CF_AI_MODEL || DEFAULT_CF_MODEL,
+         routes: { "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai", "/v1/image": "flux-2-reference-image", "/v1/comfy-image": "oracle-gpu-renderer", "/v1/image-read": "gemma-4-26b-ocr-reader", "/v1/image-compare": "searxng-image-context-compare", "/v1/card-intel": "mlb-stats-enrichment" },
+      });
+    }
+
+    if (request.method === "GET" && url.pathname === "/v1/usage") return usageResponse(request, env);
+
+    if (request.method === "GET" && url.pathname === "/probe") {
+      try {
+        const output = await workersAI(env, "Reply with exactly: workers-ai-ok", "Connectivity test", 20);
+        return json(request, { ok: true, provider: "cloudflare-workers-ai", output });
+      } catch (error) {
+        return json(request, { ok: false, error: String(error?.message || error) }, 502);
+      }
+    }
+
+    if (request.method === "POST") {
+      if (!originAllowed(request)) return json(request, { ok: false, error: "origin_not_allowed" }, 403);
+      if (url.pathname === "/v1/image") return runImage(request, env);
+      if (url.pathname === "/v1/comfy-image") return runComfyProxy(request, env);
+      if (url.pathname === "/v1/image-read") return runImageRead(request, env);
+      if (url.pathname === "/v1/image-compare") return runImageCompare(request, env);
+      let body;
+      try { body = await bodyJson(request); }
+      catch (error) { return json(request, { ok: false, error: String(error?.message || error) }, 400); }
+      if (url.pathname === "/v1/card-intel") return runCardIntel(request, env, body);
+      if (url.pathname === "/v1/chat" || url.pathname === "/api/gpt") return runMetered(request, env, body, "gpt");
+      if (url.pathname === "/v1/reason" || url.pathname === "/api/rogers" || url.pathname === "/api/cosmo" || url.pathname === "/") return runMetered(request, env, body, "reason");
+    }
+
+    return json(request, { ok: false, error: "not_found" }, 404);
+  },
+};
