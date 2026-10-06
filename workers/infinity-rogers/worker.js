@@ -68,13 +68,15 @@ function extractWorkersAI(payload) {
 async function workersAI(env, system, input, maxTokens = 1200, model = "") {
   if (!env.AI) throw new Error("workers_ai_not_configured");
   const selectedModel=model||env.CF_AI_MODEL||DEFAULT_CF_MODEL;
-  const result = await env.AI.run(selectedModel, {
+  const runOptions={
     messages: [
       { role: "system", content: system },
       { role: "user", content: input },
     ],
-    max_tokens: maxTokens,
-  });
+    max_tokens:maxTokens
+  };
+  if(selectedModel===CARD_MANAGER_MODEL){runOptions.reasoning_effort="low";runOptions.temperature=.2;}
+  const result = await env.AI.run(selectedModel, runOptions);
   const text = extractWorkersAI(result);
   if (!text) throw new Error("empty_workers_ai_response");
   return text;
@@ -380,7 +382,7 @@ async function runImageRead(request, env) {
   return {subjectType:b.subjectType||a.subjectType,titleOptions:union(a.titleOptions,b.titleOptions,6),brandOptions:union(a.brandOptions,b.brandOptions,6),logoOptions:union(a.logoOptions,b.logoOptions,6),styleOptions:union(a.styleOptions,b.styleOptions,6),dateOptions:union(a.dateOptions,b.dateOptions,6),visibleText:union(a.visibleText,b.visibleText,20),keywords:union(a.keywords,b.keywords,30),visualTraits:union(a.visualTraits,b.visualTraits,30),eraClues:union(a.eraClues,b.eraClues,20),mediaClues:union(a.mediaClues,b.mediaClues,20),objects:union(a.objects,b.objects,24),colors:union(a.colors,b.colors,16),environment:union(a.environment,b.environment,20),semanticDescription:(b.semanticDescription||a.semanticDescription||""),description:(b.description||a.description||""),confidence:Math.max(a.confidence||0,b.confidence||0)};
  }
  async function pass(prompt,max_tokens){
-  const result=await env.AI.run(model,{messages:[{role:"system",content:system},{role:"user",content:[{type:"text",text:prompt},{type:"image_url",image_url:{url:imageBase64}}]}],max_tokens});
+  const result=await env.AI.run(model,{messages:[{role:"system",content:system},{role:"user",content:[{type:"text",text:prompt},{type:"image_url",image_url:{url:imageBase64}}]}],chat_template_kwargs:{enable_thinking:false},max_tokens});
   const parsed=parse(extractWorkersAI(result));
   if(!parsed) throw new Error("vision_invalid_json");
   return safe(parsed);
