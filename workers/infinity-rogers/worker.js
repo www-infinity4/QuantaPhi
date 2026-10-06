@@ -57,7 +57,10 @@ function extractWorkersAI(payload) {
   if (typeof payload === "string") return payload.trim();
   if (typeof payload?.response === "string") return payload.response.trim();
   if (typeof payload?.result?.response === "string") return payload.result.response.trim();
-  if (typeof payload?.choices?.[0]?.message?.content === "string") return payload.choices[0].message.content.trim();
+  const content=payload?.choices?.[0]?.message?.content;
+  if (typeof content === "string") return content.trim();
+  if (Array.isArray(content)) return content.map(part=>typeof part==="string"?part:(part?.text||part?.content||"")).join("").trim();
+  if (Array.isArray(payload?.content)) return payload.content.map(part=>typeof part==="string"?part:(part?.text||part?.content||"")).join("").trim();
   return "";
 }
 
@@ -322,14 +325,78 @@ async function runCardIntel(request, env, body) {
   }
 }
 
+async function runComfyProxy(request, env) {
+ const base=clean(env.ORACLE_RENDERER_URL,1000).replace(/\/+$/,'');
+ if(!base) return json(request,{ok:false,error:"renderer_not_configured"},503);
+ let body;
+ try{body=await bodyJson(request);}
+ catch(error){return json(request,{ok:false,error:String(error?.message||error)},400);}
+ try{
+  const upstream=await fetch(base+"/api/render/comfy",{
+   method:"POST",
+   headers:{"Content-Type":"application/json"},
+   body:JSON.stringify(body)
+  });
+  const data=await upstream.json().catch(()=>({ok:false,error:"renderer_invalid_response"}));
+  return json(request,data,upstream.status);
+ }catch(error){
+  return json(request,{ok:false,error:"renderer_offline",detail:String(error?.message||error)},503);
+ }
+}
+
+async function runImageRead(request, env) {
+ if (!env.AI) return json(request,{ok:false,error:"workers_ai_not_configured"},503);
+ let form;
+ try { form = await request.formData(); } catch { return json(request,{ok:false,error:"multipart_required"},400); }
+ const image=form.get("image");
+ if(!(image instanceof File)) return json(request,{ok:false,error:"image_required"},400);
+ if(!String(image.type||"").startsWith("image/")) return json(request,{ok:false,error:"invalid_image_type"},415);
+ if(image.size>3_000_000) return json(request,{ok:false,error:"image_too_large",maxBytes:3000000},413);
+ const bytes=new Uint8Array(await image.arrayBuffer());
+ let binary="";
+ for(let i=0;i<bytes.length;i+=0x8000) binary+=String.fromCharCode(...bytes.subarray(i,Math.min(i+0x8000,bytes.length)));
+ const mime=String(image.type||"image/jpeg").replace(/[^a-zA-Z0-9+./-]/g,"")||"image/jpeg";
+ const imageBase64="data:"+mime+";base64,"+btoa(binary);
+ const model="@cf/google/gemma-4-26b-a4b-it";
+ const system="You are a high-recall image reader for a collectible-card builder. Extract every visibly supported detail, including OCR, objects, clothing, accessories, environment, colors, composition, production style, era clues and media clues. Do not identify a real person or fictional character from appearance alone. Return JSON only.";
+ const shape={subjectType:"",titleOptions:[],brandOptions:[],logoOptions:[],styleOptions:[],dateOptions:[],visibleText:[],keywords:[],visualTraits:[],eraClues:[],mediaClues:[],objects:[],colors:[],environment:[],semanticDescription:"",description:"",confidence:0};
+ function parse(raw){
+  try{return JSON.parse(raw)}catch{}
+  const a=raw.indexOf("{"),b=raw.lastIndexOf("}");
+  if(a>=0&&b>a){try{return JSON.parse(raw.slice(a,b+1))}catch{}}
+  return null;
+ }
+ const arr=(v,max,len)=>Array.isArray(v)?v.map(x=>clean(x,len)).filter(Boolean).slice(0,max):[];
+ function safe(p={}){
+  return {subjectType:clean(p.subjectType,80),titleOptions:arr(p.titleOptions,6,120),brandOptions:arr(p.brandOptions,6,120),logoOptions:arr(p.logoOptions,6,120),styleOptions:arr(p.styleOptions,6,50),dateOptions:arr(p.dateOptions,6,50),visibleText:arr(p.visibleText,20,180),keywords:arr(p.keywords,30,100),visualTraits:arr(p.visualTraits,30,180),eraClues:arr(p.eraClues,20,180),mediaClues:arr(p.mediaClues,20,180),objects:arr(p.objects,24,160),colors:arr(p.colors,16,100),environment:arr(p.environment,20,180),semanticDescription:clean(p.semanticDescription,1800),description:clean(p.description,1000),confidence:Math.max(0,Math.min(100,Number(p.confidence)||0))};
+ }
+ const union=(a,b,n)=>[...new Set([...(a||[]),...(b||[])].map(v=>String(v||"").trim()).filter(Boolean))].slice(0,n);
+ function merge(a,b){
+  return {subjectType:b.subjectType||a.subjectType,titleOptions:union(a.titleOptions,b.titleOptions,6),brandOptions:union(a.brandOptions,b.brandOptions,6),logoOptions:union(a.logoOptions,b.logoOptions,6),styleOptions:union(a.styleOptions,b.styleOptions,6),dateOptions:union(a.dateOptions,b.dateOptions,6),visibleText:union(a.visibleText,b.visibleText,20),keywords:union(a.keywords,b.keywords,30),visualTraits:union(a.visualTraits,b.visualTraits,30),eraClues:union(a.eraClues,b.eraClues,20),mediaClues:union(a.mediaClues,b.mediaClues,20),objects:union(a.objects,b.objects,24),colors:union(a.colors,b.colors,16),environment:union(a.environment,b.environment,20),semanticDescription:(b.semanticDescription||a.semanticDescription||""),description:(b.description||a.description||""),confidence:Math.max(a.confidence||0,b.confidence||0)};
+ }
+ async function pass(prompt,max_tokens){
+  const result=await env.AI.run(model,{messages:[{role:"system",content:system},{role:"user",content:[{type:"text",text:prompt},{type:"image_url",image_url:{url:imageBase64}}]}],max_tokens});
+  const parsed=parse(extractWorkersAI(result));
+  if(!parsed) throw new Error("vision_invalid_json");
+  return safe(parsed);
+ }
+ try{
+  const first=await pass("Return this JSON shape only: "+JSON.stringify(shape)+". Copy every legible word exactly. Enumerate objects, accessories, background elements, colors, visual style, era clues and media clues. Give a dense semanticDescription. Keep unsupported identity blank.",1800);
+  const sparse=(first.visibleText.length+first.visualTraits.length+first.objects.length+first.mediaClues.length)<8||first.confidence<78;
+  const second=sparse?await pass("Audit the same image again. First pass: "+JSON.stringify(first)+". Find missed OCR and missed visible details. Return the same JSON shape only. Do not identify a person or character from appearance.",1900):null;
+  const merged=second?merge(first,second):first;
+  return json(request,{ok:true,reader:model,passes:second?2:1,...merged});
+ }catch(error){return json(request,{ok:false,error:String(error?.message||error)},502);}
+}
+
 async function runImage(request, env) {
  if (!env.AI) return json(request,{ok:false,error:"workers_ai_not_configured"},503);
  let form;
  try { form = await request.formData(); }
  catch { return json(request,{ok:false,error:"multipart_required"},400); }
 
- const prompt=clean(form.get("prompt"),5000);
- const requestText=clean(form.get("request"),1200);
+ const prompt=clean(form.get("prompt"),7000);
+ const requestText=clean(form.get("request"),1800);
  const image=form.get("image");
  const designReference=form.get("design_reference");
  if(!prompt) return json(request,{ok:false,error:"prompt_required"},400);
@@ -346,176 +413,13 @@ async function runImage(request, env) {
 
  const literal=(requestText||prompt).trim();
  const whiteBorder=/\bwhite\s+border\b/i.test(literal);
- const requestedBorder=whiteBorder
-  ?"A clearly visible bright WHITE outer border must surround the entire card on all four sides. Do not replace it with silver, gray, black, gold, chrome, metallic, or dark framing."
-  :"Follow the user's requested border treatment exactly; do not invent a metallic frame unless requested.";
- const variants=[
-  prompt,
-  `Transform reference image 0 into one finished premium fantasy sports trading card. Preserve the recognizable subject and integrate the photo into the entire printed card design rather than placing it inside a generic frame. User request: ${literal}. ${requestedBorder} Preserve requested era, color palette, layout, border width, photographic treatment and material details. No logos, no trademarks, no mockup, no slab, no holder, no tabletop, no empty photo window, no watermark, minimal generated text.`,
-  `Create a real printed baseball-card composition from reference image 0 using the user's exact art direction: ${literal}. ${requestedBorder} Treat the uploaded subject as part of the card artwork: crop, lighting, graphic shapes and border must interact naturally. Avoid generic luxury framing. No logos, no mockup, no empty template, no extra people, no generated lettering.`,
-  `Reference-image edit. Produce a cohesive vintage-to-modern fantasy sports card based on this request: ${literal}. ${requestedBorder} Keep the subject recognizable. Build the card around the subject with authentic card proportions, intentional border geometry, era-appropriate color blocking and print finish. No logos, no frame-only output, no placeholder window, no text.`,
-  `Edit reference image 0 into a finished sports trading card. Exact request: ${literal}. ${requestedBorder} Use a simple, coherent card layout and preserve the subject. No logos, no text, no mockup.`
- ];
+ const blackBorder=/\bblack\s+border\b/i.test(literal);
+ const sports=/\b(baseball|football|basketball|hockey|soccer|mlb|nfl|nba|nhl|athlete|player|pitcher|catcher|rookie)\b/i.test(literal);
+ const borderRule=whiteBorder
+  ?"Use a clearly visible clean WHITE outer border on all four sides."
+  :blackBorder
+   ?"Use a clearly visible clean BLACK outer border on all four sides."
+   :"Follow the selected border treatment exactly.";
 
- let lastError=null;
- const modelPlan=[
-  {model:IMAGE_MODEL,variants:variants.slice(0,3),steps:"25"},
-  {model:IMAGE_FALLBACK_MODEL,variants:variants.slice(2),steps:null}
- ];
- let attemptNumber=0;
- for(const plan of modelPlan){
-  for(const variant of plan.variants){
-   attemptNumber++;
-   try{
-    const out=new FormData();
-    out.append("input_image_0",image,image.name||"subject.jpg");
-    if(designReference) out.append("input_image_1",designReference,designReference.name||"design-reference.jpg");
-    out.append("prompt",variant);
-    out.append("width","768");
-    out.append("height","1024");
-    if(plan.steps) out.append("steps",plan.steps);
-    const serialized=new Response(out);
-    const result=await env.AI.run(plan.model,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
-    const b64=typeof result?.image==="string"?result.image:"";
-    if(!b64) throw new Error("empty_image_response");
-    await recordUsage(env,userId,state,1,1);
-    return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:image/jpeg;base64,"+b64,attempt:attemptNumber,mode:"reference",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
-   }catch(error){
-    lastError=error;
-    const message=String(error?.message||error);
-    if(!message.includes("3030")&&!message.includes("Invalid input")) break;
-   }
-  }
- }
-
- // If the reference-image path is blocked, still finish the card by generating
- // a clean premium card shell. The browser composites the user's original photo
- // into the shell so the customer never loses the build.
- try{
-  const shellPrompt=whiteBorder
-   ?"Create an EMPTY classic fantasy baseball trading-card design only, portrait 3:4 composition, with a clearly visible bright WHITE outer border around all four sides, a restrained inner rule, clean vintage flagship proportions, subtle era-appropriate color accents, and a large central portrait area. No people, no faces, no logos, no trademarks, no text, no letters, no numbers, no watermark, no mockup, no slab, no metallic luxury frame."
-   :"Create an EMPTY fantasy sports trading-card design only, portrait 3:4 composition, following this visual direction: "+literal+". Use the requested border/color character, authentic printed-card proportions and a large central portrait area. Do not default to silver/gold luxury framing. No people, no faces, no logos, no trademarks, no text, no letters, no numbers, no watermark, no mockup or slab.";
-  const out=new FormData();
-  out.append("prompt",shellPrompt);
-  if(designReference) out.append("input_image_0",designReference,designReference.name||"design-reference.jpg");
-  out.append("width","768");
-  out.append("height","1024");
-  const serialized=new Response(out);
-  const result=await env.AI.run(IMAGE_FALLBACK_MODEL,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
-  const b64=typeof result?.image==="string"?result.image:"";
-  if(!b64) throw new Error("empty_shell_response");
-
-  // Compose the user's original photo into the generated card shell here in
-  // the worker so even older front ends receive a complete finished card.
-  const photoBytes=new Uint8Array(await image.arrayBuffer());
-  let binary="";
-  const chunk=0x8000;
-  for(let i=0;i<photoBytes.length;i+=chunk){
-   binary+=String.fromCharCode(...photoBytes.subarray(i,Math.min(i+chunk,photoBytes.length)));
-  }
-  const photoB64=btoa(binary);
-  const photoMime=String(image.type||"image/jpeg").replace(/[^a-zA-Z0-9+./-]/g,"")||"image/jpeg";
-  const footer="Fantasy Craft Product · Infinity® · Produced by Goudey Tradition Trading Card Company LLC";
-  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="768" height="1024" viewBox="0 0 768 1024">
-   <defs>
-    <clipPath id="photoClip"><rect x="92" y="150" width="584" height="676" rx="30" ry="30"/></clipPath>
-    <linearGradient id="photoEdge" x1="0" y1="0" x2="1" y2="1">
-     <stop offset="0" stop-color="#ffffff" stop-opacity=".92"/>
-     <stop offset=".45" stop-color="#ffffff" stop-opacity=".20"/>
-     <stop offset="1" stop-color="#0b1320" stop-opacity=".70"/>
-    </linearGradient>
-    <linearGradient id="footerBg" x1="0" y1="0" x2="0" y2="1">
-     <stop offset="0" stop-color="#07111b" stop-opacity=".08"/>
-     <stop offset="1" stop-color="#07111b" stop-opacity=".78"/>
-    </linearGradient>
-   </defs>
-   <image href="data:image/jpeg;base64,${b64}" x="0" y="0" width="768" height="1024" preserveAspectRatio="xMidYMid slice"/>
-   <image href="data:${photoMime};base64,${photoB64}" x="92" y="150" width="584" height="676" preserveAspectRatio="xMidYMid slice" clip-path="url(#photoClip)"/>
-   <rect x="92" y="150" width="584" height="676" rx="30" ry="30" fill="none" stroke="url(#photoEdge)" stroke-width="7"/>
-   <rect x="0" y="976" width="768" height="48" fill="url(#footerBg)"/>
-   <text x="384" y="1001" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" fill-opacity=".95" font-family="Arial,Helvetica,sans-serif" font-size="14">${footer}</text>
-  </svg>`;
-  const svgB64=btoa(unescape(encodeURIComponent(svg)));
-  await recordUsage(env,userId,state,1,1);
-  return json(request,{ok:true,provider:"cloudflare-workers-ai",model:IMAGE_FALLBACK_MODEL,dataURI:"data:image/svg+xml;base64,"+svgB64,attempt:attemptNumber+1,mode:"server-composite",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
- }catch(error){
-  lastError=error;
- }
-
- return json(request,{ok:false,error:String(lastError?.message||lastError||"image_generation_failed")},502);
-}
-
-async function runMetered(request,env,body,mode){
- const raw=String(body?.input||body?.message||"");
- if(raw.length>AI_PROMPT_CHARS)return json(request,{ok:false,error:"prompt_too_large",maxCharacters:AI_PROMPT_CHARS},413);
- const userId=aiUser(request,body),state=await usageState(env,userId),promptTokens=tokenEstimate(raw+JSON.stringify(body?.context||{}));
- if(promptTokens>state.remaining){
-  return json(request,{ok:false,error:"daily_quota_exceeded",meter:{...state,userId}},429);
- }
- const key=await cacheKey(mode+"|"+raw+"|"+JSON.stringify(body?.context||{}));
- const cached=await env.METER_DB.prepare("SELECT response_json FROM ai_cache WHERE cache_key=?1 AND expires_at>?2").bind(key,Date.now()).first();
- if(cached){const data=JSON.parse(cached.response_json);return json(request,{...data,cached:true,meter:{...state,userId}})}
- const response=mode==="gpt"?await runGPT(request,env,body):await runReason(request,env,body);
- const data=await response.clone().json().catch(()=>({ok:false,error:"invalid_gateway_response"}));
- if(!response.ok||!data.ok)return response;
- const completionTokens=tokenEstimate(data.output||data.output_text||"");
- await recordUsage(env,userId,state,promptTokens,completionTokens);
- await env.METER_DB.prepare("INSERT OR REPLACE INTO ai_cache(cache_key,response_json,expires_at,created_at) VALUES(?1,?2,?3,?4)").bind(key,JSON.stringify(data),Date.now()+AI_CACHE_MS,Date.now()).run();
- const next=await usageState(env,userId);
- return json(request,{...data,cached:false,meter:{...next,userId}});
-}
-async function usageResponse(request,env){
- const url=new URL(request.url),userId=clean(url.searchParams.get("userId")||request.headers.get("X-Infinity-User")||"guest",180)||"guest";
- return json(request,{ok:true,meter:{...await usageState(env,userId),userId}});
-}
-
-export default {
-  async fetch(request, env) {
-    const url = new URL(request.url);
-
-    if ((request.method === "GET" || request.method === "HEAD") && url.pathname === "/share/phi") {
-      const response = phiSharePreview(request);
-      return request.method === "HEAD" ? new Response(null, { status: response.status, headers: response.headers }) : response;
-    }
-
-    if (request.method === "OPTIONS") {
-      if (!originAllowed(request)) return json(request, { ok: false, error: "origin_not_allowed" }, 403);
-      return new Response(null, { status: 204, headers: cors(request) });
-    }
-
-    if (request.method === "GET" && url.pathname === "/health") {
-      return json(request, {
-        ok: true,
-        service: "infinity-ai-gateway",
-        version: "2026-10-05-workers-ai-only-1",
-        workersAIConfigured: Boolean(env.AI),
-        model: env.CF_AI_MODEL || DEFAULT_CF_MODEL,
-         routes: { "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai", "/v1/image": "flux-2-reference-image", "/v1/card-intel": "mlb-stats-enrichment" },
-      });
-    }
-
-    if (request.method === "GET" && url.pathname === "/v1/usage") return usageResponse(request, env);
-
-    if (request.method === "GET" && url.pathname === "/probe") {
-      try {
-        const output = await workersAI(env, "Reply with exactly: workers-ai-ok", "Connectivity test", 20);
-        return json(request, { ok: true, provider: "cloudflare-workers-ai", output });
-      } catch (error) {
-        return json(request, { ok: false, error: String(error?.message || error) }, 502);
-      }
-    }
-
-    if (request.method === "POST") {
-      if (!originAllowed(request)) return json(request, { ok: false, error: "origin_not_allowed" }, 403);
-      if (url.pathname === "/v1/image") return runImage(request, env);
-      let body;
-      try { body = await bodyJson(request); }
-      catch (error) { return json(request, { ok: false, error: String(error?.message || error) }, 400); }
-      if (url.pathname === "/v1/card-intel") return runCardIntel(request, env, body);
-      if (url.pathname === "/v1/chat" || url.pathname === "/api/gpt") return runMetered(request, env, body, "gpt");
-      if (url.pathname === "/v1/reason" || url.pathname === "/api/rogers" || url.pathname === "/api/cosmo" || url.pathname === "/") return runMetered(request, env, body, "reason");
-    }
-
-    return json(request, { ok: false, error: "not_found" }, 404);
-  },
-};
+ const domain=sports?"sports trading card":"premium collectible trading card";
+ const executionOnly="You are the rendering engine, not the art director. Execute the supplied build specification literally. Do not invent a different subject, sport, team, year, biography, brand, series or historical context. Do not add any lettering, words, numbers, serial plaques, logos, captions, labels, signatures or pseudo-text. Exact typography is composited later. Preserve the uploaded subject and create one high-end "+domain+" as a complete printed object. "+borderRule+" Keep the full sharp rectangular card perimeter visible. Use contemporary premium production quality: strong photography, precise crop, deliberate negative space, believable --- TRUNCATED --- 30,118 chars
