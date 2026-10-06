@@ -438,7 +438,7 @@ async function runImageRead(request, env) {
   const first=await pass("Return this JSON shape only: "+JSON.stringify(shape)+". Read the ENTIRE image before answering. Copy every legible word and number exactly, including stylized title text, edge text, credits, maker marks, years and logos-as-text. Fill category/cardMaker/cardYear/franchise/studio/network/team/league/movieTitle/showTitle/characterName/playerName only when visibly or textually supported. Enumerate objects, accessories, background elements, colors, visual style, era clues and media clues. Give a dense semanticDescription. Keep unsupported identity blank.",2200);
   const second=purpose==="review"?null:await pass("OCR-FIRST AUDIT. Inspect the same image again from scratch and compare against the first pass: "+JSON.stringify(first)+". Before describing anything else, scan top-left to bottom-right and every edge for missed text, numbers, credits, logos-as-text, maker marks and years. If a large printed title, band name, team name, product name, poster title, jersey word, logo text, caption or sign is visibly present, include it verbatim in visibleText and put it into the appropriate title/brand/context field. Then find missed visual details and category/card metadata. Return the same JSON shape only. Do not identify a person or character from appearance alone.",2400);
   const merged=second?merge(first,second):first;
-  return json(request,{ok:true,reader:model,passes:second?2:1,purpose:purpose||"source",detail:detail||"default",instructionsApplied:Boolean(instructions),...merged});
+  return json(request,{ok:true,contract:"full-read-v2",reader:model,passes:second?2:1,purpose:purpose||"source",detail:detail||"default",instructionsApplied:Boolean(instructions),...merged});
  }catch(error){return json(request,{ok:false,error:String(error?.message||error)},502);}
 }
 
@@ -527,7 +527,7 @@ async function runImageCompare(request, env) {
   }
   const matches=[...matchMap.values()].sort((a,b)=>b.score-a.score).slice(0,loaded.length);
   const meta=loaded.map(x=>({index:x.index,title:x.title,snippet:x.snippet,source:x.source}));
-  return json(request,{ok:true,compared:loaded.length,matches,title:best.title,context:best.context,brand:best.brand,series:best.series,date:best.date,evidence,confidence:best.confidence,candidates:meta,instructionsApplied:Boolean(compareInstructions),batches:groups.length});
+  return json(request,{ok:true,contract:"image-compare-v2",compared:loaded.length,matches,title:best.title,context:best.context,brand:best.brand,series:best.series,date:best.date,evidence,confidence:best.confidence,candidates:meta,instructionsApplied:Boolean(compareInstructions),batches:groups.length});
  }catch(error){return json(request,{ok:false,error:String(error?.message||error),compared:loaded.length},502);}
 }
 
