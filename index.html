@@ -59,14 +59,14 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 .mckeeCoinIcon{font-size:34px;line-height:1;margin-bottom:5px}.mckeeCoinName{font-size:18px;line-height:1.02}.mckeeCoinSub{max-width:94px;font-size:9px;line-height:1.1;margin-top:5px;letter-spacing:.8px;text-transform:uppercase;white-space:nowrap}
 @media(max-width:480px){.mckeeCoinButton{width:142px;min-height:142px}.mckeeCoinIcon{font-size:30px}.mckeeCoinName{font-size:18px}}
 
-.buttonPerson{width:min(100%,430px);margin:28px auto 12px;display:grid;grid-template-columns:1fr 150px 1fr;grid-template-areas:
+.buttonPerson{width:min(100%,450px);margin:28px auto 12px;display:grid;grid-template-columns:minmax(84px,1fr) 190px minmax(84px,1fr);grid-template-areas:
 ". head ."
 "leftarm torso rightarm"
 ". legs ."
 ". feet .";justify-items:center;align-items:center;column-gap:8px;row-gap:4px}
 .buttonPerson .mckeeCoinButton{grid-area:head;z-index:4;margin-bottom:-8px}
-.buttonPerson .shoplcDressWrap{grid-area:torso;margin:0;padding:0;z-index:3}
-.bodyArm{width:116px;height:76px;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;font-weight:950;text-align:center;font-size:11px;line-height:1.1;background:linear-gradient(135deg,#31b97a,#167a54);border:2px solid #8ff2c3;box-shadow:0 7px 14px rgba(22,122,84,.22);position:relative;padding:8px 12px}
+.buttonPerson .shoplcDressWrap{grid-area:torso;margin:0;padding:0;z-index:3}.buttonPerson .shoplcDressButton{width:190px;height:224px;padding:0 22px 37px}.buttonPerson .shoplcDressButton .shoplcDressIcon{font-size:42px}.buttonPerson .shoplcDressButton .shoplcDressName{font-size:24px}.buttonPerson .shoplcDressButton .shoplcDressSub{font-size:11px}
+.bodyArm{width:108px;height:78px;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;font-weight:950;text-align:center;font-size:11px;line-height:1.1;background:linear-gradient(135deg,#31b97a,#167a54);border:2px solid #8ff2c3;box-shadow:0 7px 14px rgba(22,122,84,.22);position:relative;padding:8px 12px}
 .bodyArm::after{content:"";width:38px;height:38px;border-radius:50%;position:absolute;top:17px;background:radial-gradient(circle at 35% 30%,#d7ffe9,#6fe3aa 52%,#25865e);border:2px solid #b9ffda}
 .bodyArm.left{grid-area:leftarm;clip-path:polygon(0 26%,78% 0,100% 35%,82% 65%,0 74%);padding-right:34px}.bodyArm.left::after{left:-12px}
 .bodyArm.right{grid-area:rightarm;clip-path:polygon(22% 0,100% 26%,100% 74%,18% 65%,0 35%);padding-left:34px}.bodyArm.right::after{right:-12px}
@@ -89,29 +89,42 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 .sponsorPreview{margin-top:10px;min-height:44px;border-radius:12px;background:#f7f4fb;padding:10px;font-size:12px;color:#6b6274}.sponsorPreview img{display:block;max-width:100%;max-height:180px;margin:auto;border-radius:10px}
 .sponsorNote{margin-top:9px!important;font-size:11px!important;color:#8a7d93!important}
 @media(max-width:480px){
-.buttonPerson{grid-template-columns:1fr 136px 1fr;column-gap:3px}
-.bodyArm{width:103px;height:70px}.bodyArm::after{width:34px;height:34px;top:16px}
+.buttonPerson{grid-template-columns:minmax(78px,1fr) 174px minmax(78px,1fr);column-gap:1px}
+.buttonPerson .shoplcDressButton{width:174px;height:210px;padding-bottom:35px}.buttonPerson .shoplcDressButton .shoplcDressIcon{font-size:38px}.buttonPerson .shoplcDressButton .shoplcDressName{font-size:22px}
+.bodyArm{width:94px;height:70px}.bodyArm::after{width:34px;height:34px;top:16px}
 .bodyLegs{grid-template-columns:66px 66px;gap:8px}.bodyLeg{height:145px}.bodyLeg strong{font-size:18px}
 .bodyFeet{grid-template-columns:88px 88px;gap:18px}.bodyShoe{height:47px}
 .sponsorInputs{grid-template-columns:1fr}
 }
+
+.siteViewer{position:fixed;inset:0;z-index:2147483400;background:#08060c;color:#fff;display:grid;grid-template-rows:auto 1fr auto}
+.siteViewer[hidden]{display:none!important}
+.siteViewerBar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;background:#171020;border-bottom:1px solid #3a2d49}
+.siteViewerBar div{min-width:0;display:grid;gap:2px}.siteViewerBar small{color:#ffd979;font-size:10px;font-weight:900;letter-spacing:.12em}.siteViewerBar strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.siteViewerClose{border:1px solid #59466d;background:#2a1938;color:#fff;border-radius:11px;padding:10px 14px;font-weight:900}
+.siteViewerStage{position:relative;min-height:0;background:#fff}
+.siteViewerFrame{display:block;width:100%;height:100%;border:0;background:#fff}
+.siteViewerFallback{position:absolute;inset:auto 12px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:13px;background:rgba(15,10,21,.94);color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.28);font-size:11px}
+.siteViewerFallback a{flex:0 0 auto;text-decoration:none;background:#6f2da8;color:#fff;padding:9px 11px;border-radius:10px;font-weight:900}
+.siteViewerFoot{padding:8px 12px;background:#100a16;border-top:1px solid #3a2d49;color:#baaac7;font-size:10px;line-height:1.35}
+@media(max-width:380px){.buttonPerson{grid-template-columns:76px 164px 76px}.buttonPerson .shoplcDressButton{width:164px;height:202px}.bodyArm{width:88px}.bodyFeet{gap:12px}}
 </style></head>
 <body><main class="app">
 <div class="qtop"><button class="qmenuBtn" id="qmenuBtn" type="button" aria-label="Menu">☰</button><h1>Quantaφ</h1><div class="qbalances" aria-live="polite" data-control-phi-wallet-host><button class="qtoken" id="qinfinity" type="button" title="Infinity website tokens">Infinity: —</button><button class="qtoken" id="qtoken" type="button" title="Spendable Quants">Quants: —</button><button class="qstar" id="controlPhiWalletButton" type="button" aria-label="Open unified wallet" aria-expanded="false"><span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong data-control-phi-wallet-balance>0</strong><small data-control-phi-wallet-progress>0/10</small></button></div><nav class="qmenu" id="qmenu" hidden><button id="qshare" type="button">Share +0.1 ★</button><button id="qmenuWallet" type="button">Unified Wallet ⭐</button><a href="/about.html">About QuantaPhi</a><a href="/learn/">Learn</a><a href="https://www-infinity4.github.io/Infinity-Phi/">Infinity Phi</a><a href="https://www-infinity4.github.io/Omni-Phi/">Omni Phi</a><a href="https://www-infinity4.github.io/News-Phi/">News Phi</a><a href="https://www-infinity4.github.io/Alien-Radio/">Infinity Radio</a><a href="#result">Overview</a><button id="qHistoryBtn" type="button">Build History</button><button class="mediaNav" id="qImagesBtn" type="button">Images</button><button class="mediaNav" id="qVideoBtn" type="button">Video</button><button class="mediaNav" id="qSoundBtn" type="button">Sound</button><a href="#media">Media</a></nav></div><p class="sub">Semantic field + 500-word overview + weighted media extensions</p><p style="margin:-10px 0 10px;font-size:14px"><a href="/about.html" style="color:#5f259f;text-underline-offset:3px">About QuantaPhi &amp; Quants</a> · <a href="/learn/" style="color:#5f259f">Learn</a></p>
 <div class="search"><input id="q" autocomplete="off" placeholder="Search anything…"><button id="go">Search</button></div>
 <div class="qrefine" id="qrefineWrap" hidden><input id="qrefine" autocomplete="off" placeholder="Refine this entity…"><button id="qrefineBtn" type="button">Refine</button></div><div id="status"></div><section class="card" id="result" hidden><div id="field"></div><article id="overview"></article><button class="overviewShare" id="overviewShare" type="button">Share AI Overview +0.1 ★</button><div class="meter" id="meter"></div></section><section class="media" id="media" hidden><h2>Media extensions</h2><div class="mediaGrid" id="mediaGrid"></div></section>
 <section class="buttonPerson" aria-label="QuantaPhi button body">
-<a class="mckeeCoinButton" id="mckeeCoinButton" href="/mckee-coins/" aria-label="Open McKee Coins"><span class="mckeeCoinIcon" aria-hidden="true">🪙</span><span class="mckeeCoinName">McKee<br>Coins</span><span class="mckeeCoinSub">Coin shop</span></a>
+<a class="mckeeCoinButton inPageSite" id="mckeeCoinButton" href="/mckee-coins/" data-site-url="/mckee-coins/" data-site-title="McKee Coins" aria-label="Open McKee Coins inside QuantaPhi"><span class="mckeeCoinIcon" aria-hidden="true">🪙</span><span class="mckeeCoinName">McKee<br>Coins</span><span class="mckeeCoinSub">Coin shop</span></a>
 
 <a class="bodyArm left sponsorSlot" href="#sponsorBoard" data-slot="left-arm" aria-label="Future left arm sponsor spot"><span><strong class="bodySlotTitle">Your Site</strong><small class="bodySlotMeta">1000 ★ · 30 days</small></span></a>
 
-<section class="shoplcDressWrap" aria-label="ShopLC channel"><a class="shoplcDressButton" id="shoplcDressButton" href="/shoplc/" aria-label="Open ShopLC channel"><span class="shoplcDressIcon" aria-hidden="true">👗</span><span class="shoplcDressName">ShopLC</span><span class="shoplcDressSub">Shop live</span></a></section>
+<section class="shoplcDressWrap" aria-label="ShopLC channel"><a class="shoplcDressButton inPageSite" id="shoplcDressButton" href="/shoplc/" data-site-url="/shoplc/" data-site-title="ShopLC" aria-label="Open ShopLC inside QuantaPhi"><span class="shoplcDressIcon" aria-hidden="true">👗</span><span class="shoplcDressName">ShopLC</span><span class="shoplcDressSub">Shop live</span></a></section>
 
 <a class="bodyArm right sponsorSlot" href="#sponsorBoard" data-slot="right-arm" aria-label="Future right arm sponsor spot"><span><strong class="bodySlotTitle">Your Site</strong><small class="bodySlotMeta">1000 ★ · 30 days</small></span></a>
 
 <div class="bodyLegs" aria-label="Business legs">
-<a class="bodyLeg ibm" href="https://www.ibm.com/" target="_blank" rel="noopener noreferrer" aria-label="Open IBM"><strong>IBM</strong><small>LEFT LEG</small></a>
-<a class="bodyLeg gpt" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" aria-label="Open GPT"><strong>GPT</strong><small>RIGHT LEG</small></a>
+<a class="bodyLeg ibm inPageSite" href="https://www.ibm.com/" data-site-url="https://www.ibm.com/" data-site-title="IBM" aria-label="Open IBM inside QuantaPhi"><strong>IBM</strong><small>LEFT LEG</small></a>
+<a class="bodyLeg gpt inPageSite" href="https://chatgpt.com/" data-site-url="https://chatgpt.com/" data-site-title="GPT" aria-label="Open GPT inside QuantaPhi"><strong>GPT</strong><small>RIGHT LEG</small></a>
 </div>
 
 <div class="bodyFeet" aria-label="Future sponsor shoes">
@@ -131,7 +144,49 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 <div class="sponsorPreview" id="sponsorPreview">Choose one of the green arms or black shoes, then add a design. This is a preview only; the 1000-Star-Coin checkout is not active yet.</div>
 <p class="sponsorNote">Imported HTML is never executed in preview. A paid version can validate the destination URL, design file, start date and automatic 30-day expiration before publishing.</p>
 </section>
+
+<section class="siteViewer" id="siteViewer" hidden aria-label="QuantaPhi in-page site viewer">
+  <div class="siteViewerBar">
+    <div><small>QUANTAPHI SITE VIEWER</small><strong id="siteViewerTitle">Site</strong></div>
+    <button class="siteViewerClose" id="siteViewerClose" type="button">Close</button>
+  </div>
+  <div class="siteViewerStage">
+    <iframe class="siteViewerFrame" id="siteViewerFrame" title="Embedded site" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <div class="siteViewerFallback" id="siteViewerFallback">
+      <span>If this company blocks embedded viewing, QuantaPhi stays open. Use the button only if you want to open the site separately.</span>
+      <a id="siteViewerExternal" href="#" target="_blank" rel="noopener noreferrer">Open separately</a>
+    </div>
+  </div>
+  <div class="siteViewerFoot">Your QuantaPhi page stays loaded underneath this viewer. Closing it returns you to the same spot on the body.</div>
+</section>
 <section class="qwalletPanel" id="qhistoryPanel" hidden aria-label="Build history"><div class="qwalletHead"><h2>Build History</h2><button class="qwalletClose" id="qhistoryClose" type="button">Close</button></div><div id="qhistoryList"></div></section></main>
+<script>
+(function(){
+ const viewer=document.getElementById('siteViewer'),frame=document.getElementById('siteViewerFrame'),title=document.getElementById('siteViewerTitle'),close=document.getElementById('siteViewerClose'),external=document.getElementById('siteViewerExternal');
+ function openSite(link){
+   const raw=link.dataset.siteUrl||link.getAttribute('href')||'';
+   let url;try{url=new URL(raw,location.href)}catch{return}
+   title.textContent=link.dataset.siteTitle||link.textContent.trim()||url.hostname;
+   external.href=url.href;
+   frame.src=url.href;
+   viewer.hidden=false;
+   document.documentElement.style.overflow='hidden';
+ }
+ function closeSite(){
+   frame.src='about:blank';
+   viewer.hidden=true;
+   document.documentElement.style.overflow='';
+ }
+ document.addEventListener('click',event=>{
+   const link=event.target.closest?.('.inPageSite');
+   if(!link)return;
+   event.preventDefault();
+   openSite(link);
+ },true);
+ close?.addEventListener('click',closeSite);
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!viewer.hidden)closeSite()});
+})();
+</script>
 <script>
 (function(){
  let selected='left-arm';
