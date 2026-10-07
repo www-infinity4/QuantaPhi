@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v26-shoplc';
+const EDGE_VERSION = 'quantaphi-org-v27-commerce';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
