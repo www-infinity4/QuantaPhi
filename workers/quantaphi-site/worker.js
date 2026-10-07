@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v27-commerce';
+const EDGE_VERSION = 'quantaphi-org-v28-wallet-sync';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -15,7 +15,8 @@ const APPS = [
 ];
 const SUPPORT_REPOS=[
  {prefix:'/TV-Database/',repo:'TV-Database'},
- {prefix:'/Mint-For-Infinity/',repo:'Mint-For-Infinity'}
+ {prefix:'/Mint-For-Infinity/',repo:'Mint-For-Infinity'},
+ {prefix:'/Control-Phi/',repo:'Control-Phi'}
 ];
 const RAW_TYPES = {
  html: 'text/html; charset=utf-8', js: 'application/javascript; charset=utf-8',
@@ -119,7 +120,7 @@ export default {
   const readRequest = ['GET', 'HEAD'].includes(request.method);
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
   // briefly stale after a commit, which must never keep an old wallet/search script live.
-  if ((route.repo === 'QuantaPhi' || route.repo === 'TV-Database' || route.repo === 'ShopLC') && textual && readRequest) {
+  if ((route.repo === 'QuantaPhi' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi') && textual && readRequest) {
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/main' + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
