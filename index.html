@@ -58,16 +58,101 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 .mckeeCoinButton:active{transform:translateY(1px) scale(.99)}
 .mckeeCoinIcon{font-size:34px;line-height:1;margin-bottom:5px}.mckeeCoinName{font-size:18px;line-height:1.02}.mckeeCoinSub{max-width:94px;font-size:9px;line-height:1.1;margin-top:5px;letter-spacing:.8px;text-transform:uppercase;white-space:nowrap}
 @media(max-width:480px){.mckeeCoinButton{width:142px;min-height:142px}.mckeeCoinIcon{font-size:30px}.mckeeCoinName{font-size:18px}}
+
+.buttonPerson{width:min(100%,430px);margin:28px auto 12px;display:grid;grid-template-columns:1fr 150px 1fr;grid-template-areas:
+". head ."
+"leftarm torso rightarm"
+". legs ."
+". feet .";justify-items:center;align-items:center;column-gap:8px;row-gap:4px}
+.buttonPerson .mckeeCoinButton{grid-area:head;z-index:4;margin-bottom:-8px}
+.buttonPerson .shoplcDressWrap{grid-area:torso;margin:0;padding:0;z-index:3}
+.bodyArm{width:116px;height:76px;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;font-weight:950;text-align:center;font-size:11px;line-height:1.1;background:linear-gradient(135deg,#31b97a,#167a54);border:2px solid #8ff2c3;box-shadow:0 7px 14px rgba(22,122,84,.22);position:relative;padding:8px 12px}
+.bodyArm::after{content:"";width:38px;height:38px;border-radius:50%;position:absolute;top:17px;background:radial-gradient(circle at 35% 30%,#d7ffe9,#6fe3aa 52%,#25865e);border:2px solid #b9ffda}
+.bodyArm.left{grid-area:leftarm;clip-path:polygon(0 26%,78% 0,100% 35%,82% 65%,0 74%);padding-right:34px}.bodyArm.left::after{left:-12px}
+.bodyArm.right{grid-area:rightarm;clip-path:polygon(22% 0,100% 26%,100% 74%,18% 65%,0 35%);padding-left:34px}.bodyArm.right::after{right:-12px}
+.bodyArm span,.bodyLeg span,.bodyShoe span{display:block}
+.bodySlotTitle{font-size:12px}.bodySlotMeta{font-size:8px;letter-spacing:.4px;margin-top:3px;opacity:.92}
+.bodyLegs{grid-area:legs;display:grid;grid-template-columns:74px 74px;gap:10px;margin-top:-6px}
+.bodyLeg{height:160px;border-radius:18px 18px 28px 28px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;font-weight:950;text-align:center;padding:12px 7px;box-shadow:0 8px 15px rgba(0,0,0,.14)}
+.bodyLeg.ibm{background:linear-gradient(180deg,#0f62fe,#001d6c);color:#fff;border:2px solid #78a9ff}
+.bodyLeg.gpt{background:linear-gradient(180deg,#f7f7f7,#d7dedb);color:#101815;border:2px solid #8ea49a}
+.bodyLeg strong{font-size:21px}.bodyLeg small{font-size:9px;margin-top:6px;line-height:1.1}
+.bodyFeet{grid-area:feet;display:grid;grid-template-columns:96px 96px;gap:24px;margin-top:-8px}
+.bodyShoe{height:50px;border-radius:28px 35px 13px 13px;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;background:linear-gradient(145deg,#2f3138,#0e0f12);border:2px solid #696d78;box-shadow:0 7px 12px rgba(0,0,0,.18);font-weight:900;text-align:center;padding:5px 9px}
+.bodyShoe.left{transform:rotate(-5deg)}.bodyShoe.right{transform:rotate(5deg)}
+.bodyShoe .bodySlotTitle{font-size:10px}.bodyShoe .bodySlotMeta{font-size:7px}
+.bodyArm:hover,.bodyArm:focus-visible,.bodyLeg:hover,.bodyLeg:focus-visible,.bodyShoe:hover,.bodyShoe:focus-visible{transform:translateY(-2px);filter:brightness(1.05);outline:none}
+.sponsorBoard{margin:24px auto 4px;background:#fff;border:1px solid #ded3e6;border-radius:20px;padding:16px;box-shadow:0 5px 22px #29163b12}
+.sponsorBoard h2{margin:0 0 5px;font-size:18px}.sponsorBoard p{margin:0;color:#6b6274;line-height:1.45;font-size:13px}
+.sponsorTerms{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.sponsorTerms span{background:#f0e4fa;border:1px solid #c9a6e5;border-radius:999px;padding:7px 9px;font-size:11px;font-weight:850;color:#5f259f}
+.sponsorInputs{display:grid;grid-template-columns:1fr 1fr;gap:8px}.sponsorFile{display:flex;align-items:center;justify-content:center;min-height:44px;border:1px dashed #9c86ad;border-radius:12px;background:#faf7fc;color:#5f259f;font-size:12px;font-weight:850;text-align:center;padding:8px;cursor:pointer}.sponsorFile input{display:none}
+.sponsorPreview{margin-top:10px;min-height:44px;border-radius:12px;background:#f7f4fb;padding:10px;font-size:12px;color:#6b6274}.sponsorPreview img{display:block;max-width:100%;max-height:180px;margin:auto;border-radius:10px}
+.sponsorNote{margin-top:9px!important;font-size:11px!important;color:#8a7d93!important}
+@media(max-width:480px){
+.buttonPerson{grid-template-columns:1fr 136px 1fr;column-gap:3px}
+.bodyArm{width:103px;height:70px}.bodyArm::after{width:34px;height:34px;top:16px}
+.bodyLegs{grid-template-columns:66px 66px;gap:8px}.bodyLeg{height:145px}.bodyLeg strong{font-size:18px}
+.bodyFeet{grid-template-columns:88px 88px;gap:18px}.bodyShoe{height:47px}
+.sponsorInputs{grid-template-columns:1fr}
+}
 </style></head>
 <body><main class="app">
 <div class="qtop"><button class="qmenuBtn" id="qmenuBtn" type="button" aria-label="Menu">☰</button><h1>Quantaφ</h1><div class="qbalances" aria-live="polite" data-control-phi-wallet-host><button class="qtoken" id="qinfinity" type="button" title="Infinity website tokens">Infinity: —</button><button class="qtoken" id="qtoken" type="button" title="Spendable Quants">Quants: —</button><button class="qstar" id="controlPhiWalletButton" type="button" aria-label="Open unified wallet" aria-expanded="false"><span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong data-control-phi-wallet-balance>0</strong><small data-control-phi-wallet-progress>0/10</small></button></div><nav class="qmenu" id="qmenu" hidden><button id="qshare" type="button">Share +0.1 ★</button><button id="qmenuWallet" type="button">Unified Wallet ⭐</button><a href="/about.html">About QuantaPhi</a><a href="/learn/">Learn</a><a href="https://www-infinity4.github.io/Infinity-Phi/">Infinity Phi</a><a href="https://www-infinity4.github.io/Omni-Phi/">Omni Phi</a><a href="https://www-infinity4.github.io/News-Phi/">News Phi</a><a href="https://www-infinity4.github.io/Alien-Radio/">Infinity Radio</a><a href="#result">Overview</a><button id="qHistoryBtn" type="button">Build History</button><button class="mediaNav" id="qImagesBtn" type="button">Images</button><button class="mediaNav" id="qVideoBtn" type="button">Video</button><button class="mediaNav" id="qSoundBtn" type="button">Sound</button><a href="#media">Media</a></nav></div><p class="sub">Semantic field + 500-word overview + weighted media extensions</p><p style="margin:-10px 0 10px;font-size:14px"><a href="/about.html" style="color:#5f259f;text-underline-offset:3px">About QuantaPhi &amp; Quants</a> · <a href="/learn/" style="color:#5f259f">Learn</a></p>
 <div class="search"><input id="q" autocomplete="off" placeholder="Search anything…"><button id="go">Search</button></div>
 <div class="qrefine" id="qrefineWrap" hidden><input id="qrefine" autocomplete="off" placeholder="Refine this entity…"><button id="qrefineBtn" type="button">Refine</button></div><div id="status"></div><section class="card" id="result" hidden><div id="field"></div><article id="overview"></article><button class="overviewShare" id="overviewShare" type="button">Share AI Overview +0.1 ★</button><div class="meter" id="meter"></div></section><section class="media" id="media" hidden><h2>Media extensions</h2><div class="mediaGrid" id="mediaGrid"></div></section>
-<section class="commerceButtons" aria-label="Shopping and coins">
-<section class="shoplcDressWrap" aria-label="ShopLC channel"><a class="shoplcDressButton" id="shoplcDressButton" href="/shoplc/" aria-label="Open ShopLC channel"><span class="shoplcDressIcon" aria-hidden="true">👗</span><span class="shoplcDressName">ShopLC</span><span class="shoplcDressSub">Shop live</span></a></section>
+<section class="buttonPerson" aria-label="QuantaPhi button body">
 <a class="mckeeCoinButton" id="mckeeCoinButton" href="/mckee-coins/" aria-label="Open McKee Coins"><span class="mckeeCoinIcon" aria-hidden="true">🪙</span><span class="mckeeCoinName">McKee<br>Coins</span><span class="mckeeCoinSub">Coin shop</span></a>
+
+<a class="bodyArm left sponsorSlot" href="#sponsorBoard" data-slot="left-arm" aria-label="Future left arm sponsor spot"><span><strong class="bodySlotTitle">Your Site</strong><small class="bodySlotMeta">1000 ★ · 30 days</small></span></a>
+
+<section class="shoplcDressWrap" aria-label="ShopLC channel"><a class="shoplcDressButton" id="shoplcDressButton" href="/shoplc/" aria-label="Open ShopLC channel"><span class="shoplcDressIcon" aria-hidden="true">👗</span><span class="shoplcDressName">ShopLC</span><span class="shoplcDressSub">Shop live</span></a></section>
+
+<a class="bodyArm right sponsorSlot" href="#sponsorBoard" data-slot="right-arm" aria-label="Future right arm sponsor spot"><span><strong class="bodySlotTitle">Your Site</strong><small class="bodySlotMeta">1000 ★ · 30 days</small></span></a>
+
+<div class="bodyLegs" aria-label="Business legs">
+<a class="bodyLeg ibm" href="https://www.ibm.com/" target="_blank" rel="noopener noreferrer" aria-label="Open IBM"><strong>IBM</strong><small>LEFT LEG</small></a>
+<a class="bodyLeg gpt" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" aria-label="Open GPT"><strong>GPT</strong><small>RIGHT LEG</small></a>
+</div>
+
+<div class="bodyFeet" aria-label="Future sponsor shoes">
+<a class="bodyShoe left sponsorSlot" href="#sponsorBoard" data-slot="left-foot" aria-label="Future left shoe sponsor spot"><span><strong class="bodySlotTitle">Your Site</strong><small class="bodySlotMeta">1000 ★ · 30d</small></span></a>
+<a class="bodyShoe right sponsorSlot" href="#sponsorBoard" data-slot="right-foot" aria-label="Future right shoe sponsor spot"><span><strong class="bodySlotTitle">Your Site</strong><small class="bodySlotMeta">1000 ★ · 30d</small></span></a>
+</div>
+</section>
+
+<section class="sponsorBoard" id="sponsorBoard" aria-labelledby="sponsorTitle">
+<h2 id="sponsorTitle">Build a billboard button</h2>
+<p>Future body spots can be rented for <strong>1000 Star Coins</strong> for <strong>30 days</strong>. Design the button yourself, upload an image, or import a button file.</p>
+<div class="sponsorTerms"><span>1000 Star Coins</span><span>30-day position</span><span>1 sponsor per spot</span><span>click tracking</span></div>
+<div class="sponsorInputs">
+<label class="sponsorFile">Upload button image<input id="sponsorImageInput" type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/svg+xml"></label>
+<label class="sponsorFile">Import button file<input id="sponsorFileInput" type="file" accept=".json,.html,.htm,.svg,.txt,image/*"></label>
+</div>
+<div class="sponsorPreview" id="sponsorPreview">Choose one of the green arms or black shoes, then add a design. This is a preview only; the 1000-Star-Coin checkout is not active yet.</div>
+<p class="sponsorNote">Imported HTML is never executed in preview. A paid version can validate the destination URL, design file, start date and automatic 30-day expiration before publishing.</p>
 </section>
 <section class="qwalletPanel" id="qhistoryPanel" hidden aria-label="Build history"><div class="qwalletHead"><h2>Build History</h2><button class="qwalletClose" id="qhistoryClose" type="button">Close</button></div><div id="qhistoryList"></div></section></main>
+<script>
+(function(){
+ let selected='left-arm';
+ const preview=document.getElementById('sponsorPreview');
+ document.querySelectorAll('.sponsorSlot').forEach(slot=>slot.addEventListener('click',()=>{selected=slot.dataset.slot||selected;preview.textContent='Selected '+selected.replace(/-/g,' ')+' · add an image or button file to preview the design.'}));
+ const imageInput=document.getElementById('sponsorImageInput');
+ const fileInput=document.getElementById('sponsorFileInput');
+ imageInput?.addEventListener('change',()=>{
+   const file=imageInput.files?.[0];if(!file)return;
+   const url=URL.createObjectURL(file);
+   preview.replaceChildren();
+   const img=document.createElement('img');img.src=url;img.alt='Sponsor button preview';
+   const note=document.createElement('div');note.textContent='Preview for '+selected.replace(/-/g,' ')+' · '+file.name;
+   preview.append(img,note);
+ });
+ fileInput?.addEventListener('change',()=>{
+   const file=fileInput.files?.[0];if(!file)return;
+   preview.textContent='Imported '+file.name+' for '+selected.replace(/-/g,' ')+'. File is staged for preview only and is not executed or published.';
+ });
+})();
+</script>
 <script>
 
 (function(){const panel=document.getElementById('qhistoryPanel'),list=document.getElementById('qhistoryList'),btn=document.getElementById('qHistoryBtn'),close=document.getElementById('qhistoryClose');function render(){let saved=[];try{saved=JSON.parse(localStorage.getItem('quantaPhiBuildHistoryV1')||'[]')}catch(_){}const cloud=window.QuantaCloudBuildHistory||[],byId=new Map();for(const x of [...cloud,...saved]){const id=x?.search_id||x?.token_id||x?.id;if(id&&!byId.has(id))byId.set(id,x)}const items=[...byId.values()].sort((a,b)=>Date.parse(b.created_at||b.createdAt||0)-Date.parse(a.created_at||a.createdAt||0));list.innerHTML=items.length?items.map(x=>'<button class="qwalletBox" style="display:block;width:100%;text-align:left;color:#21172b" data-q="'+encodeURIComponent(x.query||'')+'" data-token="'+encodeURIComponent(x.token_id||'')+'"><strong>'+String(x.query||'').replace(/[<>&"]/g,'')+'</strong><br><small>'+new Date(x.created_at).toLocaleString()+'</small></button>').join(''):'<div class="qwalletBox">No searches recorded yet.</div>'}btn?.addEventListener('click',()=>{render();panel.hidden=false;document.getElementById('qmenu').hidden=true;void window.QuantaInfinityCredit?.restoreHistory?.().then(render).catch(error=>console.warn('Cloud history refresh deferred',error))});close?.addEventListener('click',()=>panel.hidden=true);list?.addEventListener('click',e=>{const b=e.target.closest('[data-q]');if(!b)return;const q=decodeURIComponent(b.dataset.q);document.getElementById('q').value=q;panel.hidden=true;search({restore:true,tokenId:decodeURIComponent(b.dataset.token||'')})});window.addEventListener('quantaPhiHistoryAdded',()=>{if(!panel.hidden)render()})})();
