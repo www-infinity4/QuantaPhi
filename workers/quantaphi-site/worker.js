@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v29-button-body';
+const EDGE_VERSION = 'quantaphi-org-v30-inpage-body';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
