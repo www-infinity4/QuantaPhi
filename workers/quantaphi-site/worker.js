@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v25-identity-lock';
+const EDGE_VERSION = 'quantaphi-org-v26-shoplc';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
@@ -10,7 +10,8 @@ const APPS = [
  { slug: '/omni-tv/', aliases: ['/tv/'], repo: 'Omni-TV' },
  { slug: '/alien-coin/', aliases: ['/alien/'], repo: 'Alien-Coin' },
  { slug: '/bitcoin-crusher/', aliases: ['/crusher/'], repo: 'Bitcoin-Crusher' },
- { slug: '/mckee-coins/', aliases: ['/coins/'], repo: 'Mckee-Coins-Inc' }
+ { slug: '/mckee-coins/', aliases: ['/coins/'], repo: 'Mckee-Coins-Inc' },
+ { slug: '/shoplc/', aliases: ['/shop/'], repo: 'ShopLC' }
 ];
 const SUPPORT_REPOS=[
  {prefix:'/TV-Database/',repo:'TV-Database'},
