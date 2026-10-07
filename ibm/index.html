@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>IBM · Phi</title>
+<style>
+:root{font-family:system-ui,-apple-system,Roboto,sans-serif;color:#f4f4f4;background:#0f0f0f}*{box-sizing:border-box}body{margin:0}
+.wrap{width:min(900px,calc(100% - 24px));margin:auto;padding:18px 0 40px}.head{display:flex;align-items:center;gap:14px;margin-bottom:16px}.ibm{font-size:34px;font-weight:950;letter-spacing:3px;color:#78a9ff}.head p{margin:3px 0 0;color:#a8a8a8}
+.search{display:flex;gap:8px;margin:14px 0}.search input{flex:1;min-width:0;border:1px solid #525252;background:#161616;color:#fff;border-radius:12px;padding:13px;font-size:16px}.search button{border:0;border-radius:12px;background:#0f62fe;color:#fff;font-weight:900;padding:0 18px}
+.panel{background:#161616;border:1px solid #393939;border-radius:18px;padding:16px;margin-top:12px}.panel h2{margin:0 0 8px;font-size:20px}.panel p{color:#c6c6c6;line-height:1.55}.result{border-top:1px solid #393939;padding:13px 0}.result:first-child{border-top:0}.result button{border:0;background:none;color:#78a9ff;font-weight:900;text-align:left;padding:0;font-size:16px}.result p{margin:5px 0 0;color:#c6c6c6}
+.reader{white-space:pre-wrap;line-height:1.6;color:#e0e0e0;max-height:58vh;overflow:auto}.status{color:#a8a8a8;font-size:12px;margin-top:8px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="head"><div class="ibm">IBM</div><div><strong>IBM inside Phi</strong><p>Public IBM information without leaving QuantaPhi.</p></div></div>
+  <form class="search" id="searchForm"><input id="q" placeholder="Search IBM…" value="IBM"><button>Search</button></form>
+  <section class="panel"><h2 id="readerTitle">IBM public site</h2><div class="reader" id="reader">Search IBM, then open any result here inside Phi.</div><div class="status" id="readerStatus">Ready</div></section>
+  <section class="panel"><h2>IBM results</h2><div id="results"><p>Loading IBM results…</p></div></section>
+</main>
+<script>
+(function(){
+ const form=document.getElementById('searchForm'),q=document.getElementById('q'),results=document.getElementById('results'),reader=document.getElementById('reader'),readerTitle=document.getElementById('readerTitle'),readerStatus=document.getElementById('readerStatus');
+ const esc=s=>String(s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+ async function search(term){
+   results.innerHTML='<p>Searching IBM…</p>';
+   try{
+     const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+     u.search=new URLSearchParams({q:'site:ibm.com '+term,format:'json',categories:'general',safesearch:'1'});
+     const r=await fetch(u,{cache:'no-store'}),j=await r.json();
+     const items=(j.results||[]).filter(x=>{try{const h=new URL(x.url).hostname;return h==='ibm.com'||h.endsWith('.ibm.com')}catch{return false}}).slice(0,12);
+     results.innerHTML=items.length?items.map((x,i)=>'<article class="result"><button type="button" data-url="'+esc(x.url)+'" data-title="'+esc(x.title)+'">'+esc(x.title||'IBM page')+'</button><p>'+esc(x.content||x.description||'')+'</p></article>').join(''):'<p>No IBM results returned.</p>';
+   }catch(e){results.innerHTML='<p>IBM search is temporarily unavailable.</p>'}
+ }
+ async function read(url,title){
+   readerTitle.textContent=title||'IBM page';reader.textContent='Reading IBM through Phi…';readerStatus.textContent='Loading';
+   try{
+     const u=new URL('/v1/site-read',location.origin);u.searchParams.set('site','ibm');u.searchParams.set('url',url);
+     const r=await fetch(u,{cache:'no-store'}),j=await r.json();if(!r.ok||!j.ok)throw new Error(j.error||'read failed');
+     readerTitle.textContent=j.title||title||'IBM page';reader.textContent=j.text||'No readable text returned.';readerStatus.textContent='Read inside Phi · '+j.url;
+   }catch(e){reader.textContent='This IBM page could not be read inside Phi right now.';readerStatus.textContent='Unavailable'}
+ }
+ results.addEventListener('click',e=>{const b=e.target.closest('button[data-url]');if(b)read(b.dataset.url,b.dataset.title)});
+ form.addEventListener('submit',e=>{e.preventDefault();search(q.value.trim()||'IBM')});
+ search('IBM');
+})();
+</script>
+</body>
+</html>
