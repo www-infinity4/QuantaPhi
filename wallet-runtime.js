@@ -234,29 +234,72 @@
     return{total,infinity,omni,quants,legacy:legacy+Math.max(0,total-records.size)};
   }
 
+  const STARQUEST_ENDPOINT='https://starquest-ledger.marvaseater.workers.dev';
+  const UNIFIED_WALLET_ENDPOINT='https://unified-wallet.marvaseater.workers.dev';
+  const QUANTA_LEDGER_ENDPOINT='https://quanta-phi-ledger.marvaseater.workers.dev';
+  const STARQUEST_DEVICE_PREFIX='starquest_ledger_device_v1:';
+  function starQuestDeviceToken(){
+    const parseToken=raw=>{
+      const text=String(raw||'');
+      if(/^sq_[A-Za-z0-9_-]{32,}$/.test(text))return text;
+      try{const value=JSON.parse(text);return /^sq_[A-Za-z0-9_-]{32,}$/.test(String(value?.deviceToken||''))?String(value.deviceToken):''}catch{return ''}
+    };
+    try{
+      const session=read(WALLET_SESSION_KEY,null),names=[session?.key,session?.username].filter(Boolean).map(value=>String(value).toLowerCase());
+      for(const name of [...new Set(names)]){const token=parseToken(localStorage.getItem(STARQUEST_DEVICE_PREFIX+name));if(token)return token}
+      const found=[];
+      for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(!key.startsWith(STARQUEST_DEVICE_PREFIX))continue;const token=parseToken(localStorage.getItem(key));if(token&&!found.includes(token))found.push(token)}
+      return found.length===1?found[0]:'';
+    }catch{return ''}
+  }
+  async function phiCloudFetch(target,options={}){
+    const bridge=window.QuantaCloudConnection||window.StarQuestCloudLedger;
+    if(bridge?.authenticatedFetch){try{return await bridge.authenticatedFetch(target,options)}catch(error){if(error?.message!=='ledger_not_connected')throw error}}
+    const token=starQuestDeviceToken();if(!token)throw new Error('ledger_not_connected');
+    const body=options.body&&typeof options.body==='object'?JSON.stringify(options.body):options.body;
+    return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token},cache:options.cache||'no-store'});
+  }
+  let cloudStarState=null;
+  async function refreshStarCoinCloud(){
+    try{
+      const response=await phiCloudFetch(STARQUEST_ENDPOINT+'/v1/state',{cache:'no-store'});
+      const payload=await response.json().catch(()=>({}));
+      if(!response.ok||!payload?.ok||!payload?.state)return null;
+      const state=payload.state,store=walletStore(),wallet=normalizeWallet(store.profile);
+      wallet.tokens=Math.max(0,Number(state.starCoins)||0);
+      wallet.pendingShareCredits=Math.max(0,Math.min(9,Number(state.pendingShareCredits)||0));
+      wallet.shareCount=Math.max(0,Number(state.shareCount)||0);
+      if(Array.isArray(state.ledger)&&state.ledger.length)wallet.ledger=state.ledger.slice(-500);
+      if(Array.isArray(state.watchHistory))wallet.watchHistory=state.watchHistory.slice(-500);
+      if(state.username)wallet.username=String(state.username);
+      store.save(wallet);
+      cloudStarState={starCoins:wallet.tokens,pendingShareCredits:wallet.pendingShareCredits,shareCount:wallet.shareCount,username:wallet.username||'Guest',syncedAt:Date.now()};
+      refreshWalletUI();
+      return cloudStarState;
+    }catch(error){if(error?.message!=='ledger_not_connected')console.warn('Star Coin cloud refresh deferred',error);return null}
+  }
+
   let cloudBalances={};
   async function refreshCloudBalances(){
     const assets=window.PhiAssetBalances,epochs=Object.fromEntries(['INFINITY','QUANT','MUSIC_QUANT'].map(code=>[code,assets?.beginRead(code)]));
-    try{let state;const bridge=window.QuantaCloudConnection||window.StarQuestCloudLedger;
-      if(bridge?.authenticatedFetch){const r=await bridge.authenticatedFetch('https://unified-wallet.marvaseater.workers.dev/v1/wallet/state');if(!r.ok)return;state=await r.json()}
-      else{const Wallet=window.InfinityCloudWallet||(typeof window.InfinityUnifiedWallet==='function'?window.InfinityUnifiedWallet:null);if(!Wallet)return;const wallet=new Wallet({appName:document.title});state=await wallet.request('/v1/wallet/state',{cache:'no-store'})}
-      for(const [code,balance]of Object.entries(state.balances||{})){if(assets&&code in epochs){if(assets.accept(code,balance,epochs[code]))cloudBalances[code]=balance}else cloudBalances[code]=balance}
-      // Quant and Music Quant live in the Quanta ledger, not the unified Infinity state.
-      // Read them independently so one unavailable asset never hides the others.
-      const quantEndpoint='https://quanta-phi-ledger.marvaseater.workers.dev';
-      const readAsset=async(code,path)=>{
-        try{
-          const r=await bridge.authenticatedFetch(quantEndpoint+path,{cache:'no-store'});
-          if(!r.ok)return;
-          const data=await r.json();
-          const balance=Math.max(0,Number(data.balance)||0);
-          if(assets&&code in epochs){if(assets.accept(code,balance,epochs[code]))cloudBalances[code]=balance}
-          else cloudBalances[code]=balance;
-        }catch(error){console.warn(code+' cloud balance refresh deferred',error)}
-      };
-      if(bridge?.authenticatedFetch)await Promise.all([readAsset('QUANT','/v1/quants/state'),readAsset('MUSIC_QUANT','/v1/music-quants/state')]);
-      refreshWalletUI()
-    }catch(error){console.warn('Cloud wallet balance refresh deferred',error)}
+    const readAsset=async(code,url)=>{
+      try{
+        const response=await phiCloudFetch(url,{cache:'no-store'});
+        if(!response.ok)return;
+        const data=await response.json().catch(()=>({}));
+        const balance=code==='INFINITY'?Number(data?.balances?.INFINITY):Number(data?.balance);
+        if(!Number.isFinite(balance))return;
+        const value=Math.max(0,balance);
+        if(assets&&code in epochs){if(assets.accept(code,value,epochs[code]))cloudBalances[code]=value}else cloudBalances[code]=value;
+      }catch(error){if(error?.message!=='ledger_not_connected')console.warn(code+' cloud balance refresh deferred',error)}
+    };
+    await Promise.all([
+      readAsset('INFINITY',UNIFIED_WALLET_ENDPOINT+'/v1/wallet/state'),
+      readAsset('QUANT',QUANTA_LEDGER_ENDPOINT+'/v1/quants/state'),
+      readAsset('MUSIC_QUANT',QUANTA_LEDGER_ENDPOINT+'/v1/music-quants/state'),
+      refreshStarCoinCloud()
+    ]);
+    refreshWalletUI();
   }
   document.addEventListener('starquest:ledger-connected',refreshCloudBalances);
   window.addEventListener('load',refreshCloudBalances);
@@ -699,11 +742,11 @@
     const mount=()=>{if(!document.body.contains(host))document.body.appendChild(host);const t=latestExplicitAdTopic();if(t)renderSponsoredCard(host,t,location.pathname).catch(()=>{});else host.hidden=true};
     mount();setInterval(mount,30000);
   }
-  window.ControlPhi={version:'1.9.1',sourceCounts:canonicalSearchCounts,recordShare,trackingUrl:(input={})=>{const plan=sharePlan(input,input.platform||'share');return plan.trackingUrl},openNews:()=>location.assign(NEWS_URL),shareFeed:()=>read(SHARE_KEY,[]).slice(),interestFeed:()=>read(INTEREST_KEY,[]).slice(),wallet:walletSnapshot,recordActivity,contextFeed:()=>read(CONTEXT_KEY,[]).slice(),ensureShareCredit,ensureActionCredit,reconcileCollectedAds,shopCart,importLegacyStarCoinBalance,refreshWallet:refreshWalletUI,requestSponsoredCard,renderSponsoredCard};
+  window.ControlPhi={version:'1.9.2',sourceCounts:canonicalSearchCounts,recordShare,trackingUrl:(input={})=>{const plan=sharePlan(input,input.platform||'share');return plan.trackingUrl},openNews:()=>location.assign(NEWS_URL),shareFeed:()=>read(SHARE_KEY,[]).slice(),interestFeed:()=>read(INTEREST_KEY,[]).slice(),wallet:walletSnapshot,recordActivity,contextFeed:()=>read(CONTEXT_KEY,[]).slice(),ensureShareCredit,ensureActionCredit,reconcileCollectedAds,shopCart,importLegacyStarCoinBalance,refreshWallet:refreshWalletUI,refreshCloudWallet:refreshCloudBalances,requestSponsoredCard,renderSponsoredCard};
   installShareBridge();
   installShareLinkBridge();
   installCrossTabBridge();
   installContextBridge();
-  const boot=()=>{WALLET_ONLY?injectWallet():injectRemote();reconcileCollectedAds();installSponsoredSlot()};
+  const boot=()=>{WALLET_ONLY?injectWallet():injectRemote();reconcileCollectedAds();installSponsoredSlot();void refreshCloudBalances()};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 })();
