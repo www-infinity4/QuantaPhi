@@ -104,8 +104,6 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 .siteViewerClose{border:1px solid #59466d;background:#2a1938;color:#fff;border-radius:11px;padding:10px 14px;font-weight:900}
 .siteViewerStage{position:relative;min-height:0;background:#fff}
 .siteViewerFrame{display:block;width:100%;height:100%;border:0;background:#fff}
-.siteViewerFallback{position:absolute;inset:auto 12px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:13px;background:rgba(15,10,21,.94);color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.28);font-size:11px}
-.siteViewerFallback a{flex:0 0 auto;text-decoration:none;background:#6f2da8;color:#fff;padding:9px 11px;border-radius:10px;font-weight:900}
 .siteViewerFoot{padding:8px 12px;background:#100a16;border-top:1px solid #3a2d49;color:#baaac7;font-size:10px;line-height:1.35}
 @media(max-width:380px){.buttonPerson{grid-template-columns:76px 164px 76px}.buttonPerson .shoplcDressButton{width:164px;height:202px}.bodyArm{width:88px}.bodyFeet{gap:12px}}
 </style></head>
@@ -123,8 +121,8 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 <a class="bodyArm right sponsorSlot" href="#sponsorBoard" data-slot="right-arm" aria-label="Future right arm sponsor spot"><span><strong class="bodySlotTitle">Your Site</strong><small class="bodySlotMeta">1000 ★ · 30 days</small></span></a>
 
 <div class="bodyLegs" aria-label="Business legs">
-<a class="bodyLeg ibm inPageSite" href="https://www.ibm.com/" data-site-url="https://www.ibm.com/" data-site-title="IBM" aria-label="Open IBM inside QuantaPhi"><strong>IBM</strong><small>LEFT LEG</small></a>
-<a class="bodyLeg gpt inPageSite" href="https://chatgpt.com/" data-site-url="https://chatgpt.com/" data-site-title="GPT" aria-label="Open GPT inside QuantaPhi"><strong>GPT</strong><small>RIGHT LEG</small></a>
+<a class="bodyLeg ibm inPageSite" href="/ibm/" data-site-url="/ibm/" data-site-title="IBM" aria-label="Open IBM inside QuantaPhi"><strong>IBM</strong><small>LEFT LEG</small></a>
+<a class="bodyLeg gpt inPageSite" href="/gpt/" data-site-url="/gpt/" data-site-title="GPT" aria-label="Open GPT inside QuantaPhi"><strong>GPT</strong><small>RIGHT LEG</small></a>
 </div>
 
 <div class="bodyFeet" aria-label="Future sponsor shoes">
@@ -152,22 +150,17 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
   </div>
   <div class="siteViewerStage">
     <iframe class="siteViewerFrame" id="siteViewerFrame" title="Embedded site" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    <div class="siteViewerFallback" id="siteViewerFallback">
-      <span>If this company blocks embedded viewing, QuantaPhi stays open. Use the button only if you want to open the site separately.</span>
-      <a id="siteViewerExternal" href="#" target="_blank" rel="noopener noreferrer">Open separately</a>
-    </div>
   </div>
-  <div class="siteViewerFoot">Your QuantaPhi page stays loaded underneath this viewer. Closing it returns you to the same spot on the body.</div>
+  <div class="siteViewerFoot">Every current business button opens a Phi-owned page in this viewer. Closing it returns you to the same spot on the body.</div>
 </section>
 <section class="qwalletPanel" id="qhistoryPanel" hidden aria-label="Build history"><div class="qwalletHead"><h2>Build History</h2><button class="qwalletClose" id="qhistoryClose" type="button">Close</button></div><div id="qhistoryList"></div></section></main>
 <script>
 (function(){
- const viewer=document.getElementById('siteViewer'),frame=document.getElementById('siteViewerFrame'),title=document.getElementById('siteViewerTitle'),close=document.getElementById('siteViewerClose'),external=document.getElementById('siteViewerExternal');
+ const viewer=document.getElementById('siteViewer'),frame=document.getElementById('siteViewerFrame'),title=document.getElementById('siteViewerTitle'),close=document.getElementById('siteViewerClose');
  function openSite(link){
    const raw=link.dataset.siteUrl||link.getAttribute('href')||'';
    let url;try{url=new URL(raw,location.href)}catch{return}
    title.textContent=link.dataset.siteTitle||link.textContent.trim()||url.hostname;
-   external.href=url.href;
    frame.src=url.href;
    viewer.hidden=false;
    document.documentElement.style.overflow='hidden';
