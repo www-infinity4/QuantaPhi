@@ -59,6 +59,39 @@ const routeFor = incoming => {
  if (!path.slice(1).includes('/')) return { repo: 'QuantaPhi', sourcePath: path, publicPath: path };
  return { repo: 'QuantaPhi', sourcePath: path, publicPath: path };
 };
+
+function decodePublicHtml(value){
+ return String(value||'')
+  .replace(/<script[\s\S]*?<\/script>/gi,' ')
+  .replace(/<style[\s\S]*?<\/style>/gi,' ')
+  .replace(/<noscript[\s\S]*?<\/noscript>/gi,' ')
+  .replace(/<[^>]+>/g,' ')
+  .replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;|&apos;/gi,"'")
+  .replace(/&nbsp;/gi,' ').replace(/&#(\d+);/g,(_m,n)=>String.fromCharCode(Number(n)))
+  .replace(/\s+/g,' ').trim();
+}
+function allowedIbmUrl(value){
+ try{
+  const url=new URL(String(value||''));
+  const host=url.hostname.toLowerCase();
+  if(url.protocol!=='https:'||!(host==='ibm.com'||host.endsWith('.ibm.com')))return null;
+  url.hash='';return url;
+ }catch{return null}
+}
+async function readIbmPublicPage(request,incoming){
+ const target=allowedIbmUrl(incoming.searchParams.get('url'));
+ if(!target)return Response.json({ok:false,error:'invalid_ibm_url'},{status:400,headers:{'Cache-Control':'no-store'}});
+ const response=await fetch(target.href,{headers:{'Accept':'text/html,application/xhtml+xml','User-Agent':'QuantaPhi-IBM-Reader/1.0'},redirect:'follow',signal:AbortSignal.timeout(10000)});
+ const finalUrl=allowedIbmUrl(response.url);
+ if(!response.ok||!finalUrl)return Response.json({ok:false,error:'ibm_page_unavailable'},{status:502,headers:{'Cache-Control':'no-store'}});
+ const type=response.headers.get('content-type')||'';
+ if(!/text\/html/i.test(type))return Response.json({ok:false,error:'ibm_page_not_html'},{status:415,headers:{'Cache-Control':'no-store'}});
+ const html=await response.text();
+ const title=(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]||'IBM').replace(/\s+/g,' ').trim().slice(0,240);
+ const text=decodePublicHtml(html).slice(0,30000);
+ return Response.json({ok:true,title,text,url:finalUrl.href},{headers:{'Cache-Control':'no-store','x-quantaphi-edge':EDGE_VERSION}});
+}
+
 async function getUpstream(url, request, headers) {
  const controller = new AbortController();
  const timer = setTimeout(() => controller.abort(), 10000);
@@ -99,6 +132,11 @@ export default {
   if (/^(?:www\.)?quantaphi\.(?:net|org)$/.test(incoming.hostname) && incoming.hostname !== 'quantaphi.org') {
    incoming.hostname = 'quantaphi.org'; incoming.protocol = 'https:';
    return Response.redirect(incoming.toString(), 308);
+  }
+  if (incoming.pathname === '/v1/site-read' && request.method === 'GET') {
+   const site=(incoming.searchParams.get('site')||'').toLowerCase();
+   if(site==='ibm')return readIbmPublicPage(request,incoming);
+   return Response.json({ok:false,error:'unknown_site'},{status:404,headers:{'Cache-Control':'no-store'}});
   }
   if (incoming.pathname === '/health') return Response.json({
    ok: true, service: 'quantaphi-site', canonicalOrigin: CANONICAL_ORIGIN, appPath: '/QuantaPhi/index.html',
