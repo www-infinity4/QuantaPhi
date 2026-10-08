@@ -14,3 +14,15 @@
 .fs-free{background:#fffdf1;color:#2f5e20;border:1px solid #8eb36e;border-radius:8px;padding:9px 12px;margin:12px 0 2px;font-size:12px;font-weight:900;letter-spacing:.03em}
 .fs-next:disabled{background:#6f6b56;color:#f5f0db;border-color:#74705b;cursor:not-allowed;opacity:.9}
 .fs-stream a{min-height:36px;display:inline-flex;align-items:center}
+
+
+/* Lighter yellow radio card: dark-on-light player, pill-shaped site controls. */
+.fs-card{border-radius:21px}
+.fs-number{background:#fffbea;color:#4e3d05;border:1px solid #cfad48;border-radius:15px}
+.fs-stream{background:#fffdf2;color:#322906;border:1px solid #c7a547;border-radius:18px}
+.fs-play-symbol{color:#a97800}
+.fs-source{color:#164c7d}
+.fs-btn{background:#fffdf3;color:#362a08;border-color:#a98c36;border-radius:22px}
+.fs-phi{background:#fff9df;color:#332806;border:1px solid #a8872f;border-radius:22px}
+.fs-next{background:#256941;color:#fff;border-radius:22px}
+.fs-free{border-radius:15px}

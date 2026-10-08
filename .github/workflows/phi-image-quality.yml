@@ -1,0 +1,33 @@
+name: Phi image-quality regressions
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'phi-image*.js'
+      - 'phi-visual-render.js'
+      - 'phi-image-builder.css'
+      - 'fred-spaces-radio.css'
+      - 'infinite-book.css'
+      - 'workers/infinity-rogers/worker.js'
+      - 'test/phi-image-quality.test.cjs'
+      - '.github/workflows/phi-image-quality.yml'
+  pull_request:
+    paths:
+      - 'phi-image*.js'
+      - 'phi-visual-render.js'
+      - 'phi-image-builder.css'
+      - 'fred-spaces-radio.css'
+      - 'infinite-book.css'
+      - 'workers/infinity-rogers/worker.js'
+      - 'test/phi-image-quality.test.cjs'
+      - '.github/workflows/phi-image-quality.yml'
+jobs:
+  image-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify visual review and local learning contracts
+        run: node --test test/phi-image-quality.test.cjs

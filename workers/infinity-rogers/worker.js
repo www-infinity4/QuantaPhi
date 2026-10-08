@@ -531,6 +531,38 @@ async function runImageCompare(request, env) {
  }catch(error){return json(request,{ok:false,error:String(error?.message||error),compared:loaded.length},502);}
 }
 
+
+async function runImageReview(request,env){
+ if(!env.AI)return json(request,{ok:false,error:"workers_ai_not_configured"},503);
+ let form;try{form=await request.formData()}catch{return json(request,{ok:false,error:"multipart_required"},400)}
+ const file=form.get("image"),description=clean(form.get("description"),1800),mode=clean(form.get("mode"),40),exact=clean(form.get("exact_text"),120);
+ if(!(file instanceof File))return json(request,{ok:false,error:"image_required"},400);
+ if(!["image/jpeg","image/png","image/webp"].includes(file.type))return json(request,{ok:false,error:"invalid_image_type"},415);
+ if(file.size>3e6)return json(request,{ok:false,error:"image_too_large"},413);
+ const bytes=new Uint8Array(await file.arrayBuffer());let bin="";
+ for(let i=0;i<bytes.length;i+=32768)bin+=String.fromCharCode(...bytes.subarray(i,i+32768));
+ const imageUri="data:"+file.type+";base64,"+btoa(bin);
+ const instruction=[
+  "Judge the actual rendered pixels against this intention: "+description,
+  "Mode: "+mode+"; exactly requested lettering: "+(exact||"none"),
+  "Inspect subject fidelity, parts that do not connect, malformed mechanisms or vehicles, physical proportions, historical cues if requested, unintended writing, gibberish letters, illegible required writing, and contradictory lighting. Do not penalize fantasy unless realism was requested.",
+  "Report ONLY visibly evidenced errors; do not invent identities or exact unreadable words. When uncertain, say uncertain.",
+  'Output strict JSON: {"status":"good|needs_work|uncertain","score":75,"issues":[{"severity":"high|medium|low","problem":"visible defect","fix":"specific correction"}],"repairPrompt":"specific repair direction"}. Five issues maximum. Score is advisory, not an objective quality measurement.'
+ ].join("\n");
+ try{
+  const output=await env.AI.run("@cf/google/gemma-4-26b-a4b-it",{messages:[
+   {role:"system",content:"You are a visual quality critic evaluating the supplied image pixels, not its generation metadata. JSON only."},
+   {role:"user",content:[{type:"text",text:instruction},{type:"image_url",image_url:{url:imageUri}}]}
+  ],chat_template_kwargs:{enable_thinking:false},max_tokens:1600});
+  const raw=extractWorkersAI(output),a=raw.indexOf("{"),b=raw.lastIndexOf("}");
+  const p=JSON.parse(a>=0&&b>a?raw.slice(a,b+1):raw);
+  const issues=(Array.isArray(p.issues)?p.issues:[]).slice(0,5).map(v=>({severity:["high","medium","low"].includes(v?.severity)?v.severity:"medium",problem:clean(v?.problem,240),fix:clean(v?.fix,240)})).filter(v=>v.problem);
+  let status=["good","needs_work","uncertain"].includes(p.status)?p.status:"uncertain";
+  if(issues.some(v=>v.severity==="high"))status="needs_work";
+  return json(request,{ok:true,contract:"phi-image-review-v1",reader:"gemma-4-26b",status,score:Math.max(0,Math.min(100,Number(p.score)||0)),issues,repairPrompt:clean(p.repairPrompt,1500)});
+ }catch(error){return json(request,{ok:false,error:String(error?.message||error)},502)}
+}
+
 async function runImage(request, env) {
  if (!env.AI) return json(request,{ok:false,error:"workers_ai_not_configured"},503);
  let form;
@@ -539,6 +571,7 @@ async function runImage(request, env) {
 
  const prompt=clean(form.get("prompt"),7000);
  const requestText=clean(form.get("request"),1800);
+ const exactText=clean(form.get("exact_text"),120);
  const image=form.get("image");
  const designReference=form.get("design_reference");
  if(!prompt) return json(request,{ok:false,error:"prompt_required"},400);
@@ -581,7 +614,8 @@ async function runImage(request, env) {
  const visualExecution="You are the rendering engine for Phi Image Builder. "+modeRules[mode]+
   " Execute the user's specification, not a generic sports-card template. Do not invent identities, dates, brand claims or phrases. "+
   (blankReference?"The provided input is a neutral starting canvas with no visual subject; create the requested original image from the text. ":"Preserve uploaded reference identity and composition where helpful. ")+
-  "Output one finished high-quality image, not a screenshot of a UI.";
+  "Output one finished high-quality image, not a screenshot of a UI. No fake writing, glyphs, pseudo-words, counterfeit watermarks, implausible geometry or disconnected mechanical parts. "+
+  (exactText?"Keep an uncluttered area for browser-applied exact text: "+exactText+". Do not paint lettering yourself. ":"No unintended lettering or invented signage. ");
  const governingPrompt=mode==="Trading Card"?executionOnly:visualExecution;
  const variants=[
    governingPrompt+" BUILD SPECIFICATION: "+prompt,
@@ -671,7 +705,7 @@ export default {
         version: "2026-10-05-workers-ai-only-1",
         workersAIConfigured: Boolean(env.AI),
         model: env.CF_AI_MODEL || DEFAULT_CF_MODEL,
-         routes: { "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai", "/v1/image": "flux-2-reference-image", "/v1/comfy-image": "oracle-gpu-renderer", "/v1/image-read": "gemma-4-26b-ocr-reader", "/v1/image-compare": "searxng-image-context-compare", "/v1/card-intel": "mlb-stats-enrichment" },
+         routes: { "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai", "/v1/image": "flux-2-reference-image", "/v1/comfy-image": "oracle-gpu-renderer", "/v1/image-read": "gemma-4-26b-ocr-reader", "/v1/image-review": "gemma-visual-quality-critic", "/v1/image-compare": "searxng-image-context-compare", "/v1/card-intel": "mlb-stats-enrichment" },
       });
     }
 
@@ -691,6 +725,7 @@ export default {
       if (url.pathname === "/v1/image") return runImage(request, env);
       if (url.pathname === "/v1/comfy-image") return runComfyProxy(request, env);
       if (url.pathname === "/v1/image-read") return runImageRead(request, env);
+       if (url.pathname === "/v1/image-review") return runImageReview(request, env);
       if (url.pathname === "/v1/image-compare") return runImageCompare(request, env);
       let body;
       try { body = await bodyJson(request); }

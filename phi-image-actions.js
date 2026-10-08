@@ -13,6 +13,7 @@ function star(artifact){
  const next=exists?saved.filter(x=>x.id!==artifact.id):[...saved,{id:artifact.id,mode:artifact.mode,prompt:artifact.prompt,story:artifact.story,search:artifact.search,createdAt:artifact.createdAt}].slice(-500);
  if(!save(starsKey,next)){message('Could not save this design preference on this device.');return}
  const b=host.querySelector('[data-pi-action="star"]');if(b)b.textContent=exists?'☆ Star':'★ Starred';
+ window.PhiImageLearning?.record(artifact,exists?'star_off':'star');
  window.dispatchEvent(new CustomEvent('phi:image:star',{detail:{...artifact,starred:!exists}}));
  message(exists?'Removed from design preferences.':'Starred! This design is saved as an inspiration for more like this. Star does not pay StarCoin.');
 }
@@ -32,6 +33,7 @@ async function share(artifact,src){
   }
   await navigator.share({files:[file],title:'Phi Image',text:artifact.prompt.slice(0,140)});
   try{window.QuantaStarCredit?.('share','phi-image:share:'+artifact.id+':'+Date.now(),artifact)}catch(error){console.warn('StarCoin share sync deferred',error)}
+  window.PhiImageLearning?.record(artifact,'share');
   message('Image shared. StarCoin share credit submitted to your existing wallet.');
   window.dispatchEvent(new CustomEvent('phi:image:share',{detail:artifact}));
  }catch(error){message(error?.name==='AbortError'?'Share cancelled. No credit issued.':'Share unavailable: '+String(error?.message||error))}
@@ -72,6 +74,7 @@ async function collect(artifact,src){
     method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(item)
    }).catch(e=>console.warn('Phi collect cloud sync deferred',e));
   }
+  window.PhiImageLearning?.record(artifact,'collect');
   message('Image collected on this device. StarCoin collect credit submitted. Cloud image-blob backup is not connected.');
   window.dispatchEvent(new CustomEvent('phi:image:collect',{detail:item}));
  }catch(error){message('Collect failed: '+String(error?.message||error).slice(0,160)+'. No StarCoin credit was issued.')}
@@ -82,7 +85,8 @@ async function download(artifact,src){
   const url=URL.createObjectURL(file),a=document.createElement('a');
   a.href=url;a.download=file.name;document.body.append(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),2500);
-  message('Image download requested from your browser.');
+  window.PhiImageLearning?.record(artifact,'save_requested');
+  message('Download requested. Browser saves cannot be confirmed automatically; this is a weak preference signal until you Star, Collect, or tap Looks good.');
  }catch(error){message('Save image unavailable: '+String(error?.message||error))}
 }
 window.addEventListener('phi:image:action',event=>{
