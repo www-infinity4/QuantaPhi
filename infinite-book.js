@@ -9,7 +9,8 @@
   const LIVE_CACHE = 'phi_infinite_book_live_v2';
   const bootTime = Date.now();
   const initialQuery = new URL(location.href).searchParams.get('q');
-  let queuedQuery = '', lastQuery = '';
+  const queuedQueries = [];
+  let lastSearchRun = null;
   const E = (tag, cls, value) => {
     const el = document.createElement(tag);
     if (cls) el.className = cls;
@@ -174,7 +175,7 @@
   }
   async function nextStory(query='') {
     if (!catalog) return;
-    if(pending){if(query)queuedQuery=query;return}
+    if(pending){if(query && queuedQueries.length < 20)queuedQueries.push(query);return}
     pending=true;
     const nextButton=root.querySelector('.ib-next');
     if(nextButton)nextButton.disabled=true;
@@ -201,13 +202,14 @@
     } finally {
       pending=false;
       if(nextButton)nextButton.disabled=false;
-      if(queuedQuery){const next=queuedQuery;queuedQuery='';void nextStory(next)}
+      if(queuedQueries.length){const next=queuedQueries.shift();void nextStory(next)}
     }
   }
   window.addEventListener('quantaphi:search-start', event=>{
     const query=String(event.detail?.query||'').trim();
-    if(!query || query===lastQuery)return;
-    lastQuery=query;
+    const run=event.detail?.run;
+    if(!query || (run != null && run===lastSearchRun))return;
+    if(run != null)lastSearchRun=run;
     // A shared / restored search on initial page load is one visit, not a second discovery.
     if(Date.now()-bootTime<6500 && query===initialQuery)return;
     void nextStory(query);
