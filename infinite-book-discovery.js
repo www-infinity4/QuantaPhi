@@ -114,8 +114,8 @@ const CLASS_SEARCH={
  4:{terms:'scientific research institute lab experiment discovery',domains:['nasa.gov','nist.gov','science.nasa.gov']},
  5:{terms:'government archive report declassified document records',domains:['archives.gov','loc.gov','gov']},
  6:{terms:'original company newsroom engineering history prototype',domains:['computerhistory.org','ibm.com','ieee.org']},
- 7:{terms:'specialist historian detailed archival investigation',domains:['historyofscience.com','smithsonianmag.com','ieee.org']},
- 8:{terms:'investigative reporting historical investigation surprising episode',domains:['pbs.org','smithsonianmag.com','npr.org']},
+ 7:{terms:'specialist historian detailed archival investigation overlooked famous history',domains:['history.com','smithsonianmag.com','sciencehistory.org','computerhistory.org','ieee.org']},
+ 8:{terms:'investigative reporting historical investigation surprising episode',domains:['history.com','smithsonianmag.com','nationalww2museum.org','npr.org','pbs.org']},
  9:{terms:'peer reviewed journal archaeological research experiment paper',domains:['nature.com','science.org','journals.plos.org']},
  10:{terms:'oral history recorded testimony legend folklore attributed',domains:['loc.gov','si.edu','archive.org']}
 };
@@ -125,7 +125,12 @@ function sourcePlan(roll,catalog,focus=''){
  const sourceClass=catalog.sourceClasses?.find(x=>x.id===roll.sourceClass)?.name||'Original historical records';
  const preference=CLASS_SEARCH[roll.sourceClass]||CLASS_SEARCH[1];
  const localDomains=catalog.sourceRegistry?.find(x=>x.sector===roll.sector)?.domains||[];
- const domain=localDomains.length?localDomains[random(localDomains.length)]:preference.domains[random(preference.domains.length)];
+ // HISTORY and other editorial investigations are discovery leads, not primary
+ // archive evidence. Prioritize them for historian/reporting rolls only.
+ const editorial=roll.sourceClass===7||roll.sourceClass===8;
+ const overlap=localDomains.filter(x=>preference.domains.includes(x));
+ const choices=editorial?[...new Set([...overlap,...preference.domains])]:[...new Set([...overlap,...localDomains,...preference.domains])];
+ const domain=choices[random(choices.length)];
  const anchor=clean(focus).slice(0,90)||sector;
  const discoveryTerms='obscure specific event little-known documented detail -biography -overview -facts -town -municipality';
  // All three rolled numbers change the actual research and not just the card labels.
@@ -134,6 +139,11 @@ function sourcePlan(roll,catalog,focus=''){
    anchor+' '+angle+' '+sourceClass+' rare incident original source '+discoveryTerms,
    sector+' '+angle+' '+preference.terms+' unusual historical event documented -biography'
  ];
+ if(editorial){
+   // HISTORY articles are used as leads; GPT must still corroborate the
+   // particular event with a separate independent domain before publishing.
+   queries.push(anchor+' forgotten hidden episode invention artifact site:history.com/articles -biography');
+ }
  return {name:sector,angle,sourceClass,sourceClassId:roll.sourceClass,focus:anchor,domain,queries,combination:(roll.sector-1)*200+(roll.angle-1)*10+roll.sourceClass};
 }
 
@@ -229,7 +239,11 @@ async function findSearch({roll,catalog,seen,focus=''}) {
  // GPT first devises event-level searches. Our sector+angle+class queries
  // remain independently usable if the GPT scout cannot answer.
  const suggestions=await scoutQueries(plan,roll);
- const queries=[...new Set([...suggestions,...plan.queries])].slice(0,4);
+ // Reserve a slot for targeted editorial-history material when that evidence
+ // class is rolled; otherwise a GPT scout can crowd out HISTORY searches.
+ const queries=[...new Set([
+  plan.queries[0], ...suggestions.slice(0,1), ...plan.queries.slice(1),
+ ])].slice(0,4);
  const responses=searchServiceFailedAt&&Date.now()-searchServiceFailedAt<90000?[]:
   await Promise.allSettled(queries.map(q=>{
    const u=new URL(SEARCH);u.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});
