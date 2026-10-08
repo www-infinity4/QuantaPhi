@@ -77,7 +77,7 @@ test('short verified source introductions remain usable after built-in stories r
 
 test('all dimensions change discovery while retaining the original 6000 routes plus specialist refinements',()=>{
  const {w}=testReader();
- const c={sectors:[{id:1,name:'Energy & electricity'}],angles:[{id:9,name:'Unexpected invention'},{id:19,name:'Lost and rediscovered'}],
+ const c={sectors:[{id:1,name:'Energy & electricity'},{id:2,name:'Technology & computing'},{id:39,name:'Consumer electronics and gadgets'}],angles:[{id:9,name:'Unexpected invention'},{id:19,name:'Lost and rediscovered'}],
   sourceClasses:[{id:1,name:'Primary archives'},{id:2,name:'Museums and collections'}],
   sourceRegistry:[{sector:1,domains:['tesla-museum.org']}]};
  const archives=w.PhiInfiniteBookDiscover.sourcePlan({sector:1,angle:9,sourceClass:1},c,'Nikola Tesla');
