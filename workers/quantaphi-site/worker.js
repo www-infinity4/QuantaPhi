@@ -38,6 +38,8 @@ const routeFor = incoming => {
   if(path==='/' + first)return {redirect:path+'/'};
   return {repo:'C13b0',sourcePath:path.endsWith('/')?path+'index.html':path,publicPath:path};
  }
+ if (path === '/code-phi' || path === '/code-phi/') return { redirect: '/omni-phi/code/' + incoming.search };
+ if (path.startsWith('/code-phi/')) return { redirect: '/omni-phi/code/' + path.slice('/code-phi/'.length) + incoming.search };
  if (path === '/QuantaPhi' || path === '/QuantaPhi/' || path === '/QuantaPhi/index.html') return { redirect: '/' + incoming.search };
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
  if (path === '/learn') return { redirect: '/learn/' };
