@@ -84,7 +84,11 @@ function preferences(activeQuery,catalog){
 
  for(const v of values){const matched=terms.filter(([_,rx])=>rx.test(v.q));if(!matched.length)continue;const narrow=matched.filter(([id])=>id>=31);const chosen=narrow.length?narrow:matched;for(const [id]of chosen)scores.set(id,(scores.get(id)||0)+v.weight/Math.sqrt(chosen.length))}
  let sector=0,score=0;for(const [id,value]of scores){if(value>score){sector=id;score=value}}
- return {sector,score,signals:values.length};
+ // Preference nudges the sector; the selected person/topic is a research starting
+ // point, never permission to return a biography.
+ const recent=values.slice().reverse().map(x=>x.q).find(q=>q.length>=3&&q.length<=90&&!/^(?:search|home|news|music|hello)$/i.test(q));
+ const focus=clean(activeQuery).slice(0,90)||recent||'';
+ return {sector,score,signals:values.length,focus};
 }
 // A famous person's life is a search topic, not by itself a Big Secret.
 // Artifact, demonstration, incident and document titles are still eligible.
@@ -292,14 +296,15 @@ function wikiExcerpt(s) {
  return String(s||'').replace(/\s+/g,' ').trim();
 }
 async function findWikipedia({roll,catalog,seen}) {
- const base=WIKI_QUERIES[roll.sector] || (catalog.sectors.find(s=>s.id===roll.sector)?.name+' historical discovery');
+ const plan=sourcePlan(roll,catalog,arguments[0]?.focus||'');
+ const base=WIKI_QUERIES[roll.sector] || (plan.name+' historical discovery');
  const seenWikipedia=[...seen].filter(id=>id.startsWith('wiki-')).length;
  // Keep a finite search offset and rotate terms; do not loop over seen items.
  // Rotate search phrasing and offsets independently: the previous five-offset
  // loop exhausted the same articles after only a few visits.
  const variants=['documented discoveries','unusual historical mystery','forgotten experiments','rediscovered artifacts','unexpected events'];
  const variant=variants[seenWikipedia%variants.length];
- const topics=[base,base+' '+variant,'historical '+variant+' '+(catalog.sectors.find(s=>s.id===roll.sector)?.name||'history')];
+ const topics=[base+' '+plan.angle,plan.focus+' '+plan.angle+' '+variant,base+' '+plan.sourceClass+' '+variant];
  const offset=(Math.floor(seenWikipedia/4)%6)*7;
  const replies=await Promise.allSettled(topics.map((q,i)=>{
   const u=new URL(WIKI);
@@ -319,7 +324,7 @@ async function findWikipedia({roll,catalog,seen}) {
    if(/^(List of|Index of|Timeline of|Category:|20[0-9][0-9] in |[0-9]{4} in )/i.test(title))continue;
    if(/may refer to|is a disambiguation page/i.test(full.slice(0,200)))continue;
    if(/television series|fictional character|video game series/i.test(full.slice(0,200)) && roll.sector!==21)continue;
-   if(!isSecretStory({title,summary:full.slice(0,900)}))continue;
+   if(!isSecretStory({title,summary:full.slice(0,900)})||!EVENT_TITLE.test(title))continue;
    candidates.push({id,title,full,pageid:page.pageid});
   }
  }
@@ -338,10 +343,10 @@ async function findWikipedia({roll,catalog,seen}) {
  return {id:choice.id,title:choice.title,summary,
    full:choice.full+'\n\nSource: Wikipedia contributors. Excerpt reused under Creative Commons Attribution-ShareAlike; follow the source and license links for details.',
    year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
-   status:'encyclopedia discovery · CC BY-SA excerpt',
+   status:'backup encyclopedia excerpt · CC BY-SA · no GPT rewrite',
    sourceTitle:'Wikipedia contributors',sourceUrl:article,
    sources:[{title:'Wikipedia copyright and CC BY-SA attribution',url:WIKI_LICENSE}],
-   discoverySource:'live',attribution:'Wikipedia / CC BY-SA'};
+   discoverySource:'live',discoveryMethod:'encyclopedia-backup',attribution:'Wikipedia / CC BY-SA'};
 }
 async function find(options){
  let story=null;
