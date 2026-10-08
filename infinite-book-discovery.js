@@ -241,9 +241,10 @@ async function findSearch({roll,catalog,seen,focus=''}) {
  const suggestions=await scoutQueries(plan,roll);
  // Reserve a slot for targeted editorial-history material when that evidence
  // class is rolled; otherwise a GPT scout can crowd out HISTORY searches.
- const queries=[...new Set([
-  plan.queries[0], ...suggestions.slice(0,1), ...plan.queries.slice(1),
- ])].slice(0,4);
+ const discoveryQueries=(roll.sourceClass===7||roll.sourceClass===8)
+  ?[plan.queries[0],...suggestions.slice(0,1),plan.queries[1],plan.queries[plan.queries.length-1]]
+  :[plan.queries[0],...suggestions.slice(0,1),...plan.queries.slice(1)];
+ const queries=[...new Set(discoveryQueries)].slice(0,4);
  const responses=searchServiceFailedAt&&Date.now()-searchServiceFailedAt<90000?[]:
   await Promise.allSettled(queries.map(q=>{
    const u=new URL(SEARCH);u.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});
