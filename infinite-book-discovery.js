@@ -96,7 +96,7 @@ function preferences(activeQuery,catalog){
 // Artifact, demonstration, incident and document titles are still eligible.
 const PERSON_PROFILE=/\b(?:was|is)\s+(?:an?\s+)?(?:[\w-]+\s+){0,3}(?:inventor|scientist|physicist|engineer|artist|musician|politician|writer|actor|entrepreneur|mathematician|historian|composer|researcher|businessman)\b/i;
 const GENERIC_BIO=/\b(?:was born|is best known|best known for|known for his|known for her|early life|personal life|born in|died in|career and legacy|was a famous)\b/i;
-const EVENT_TITLE=/\b(?:boat|ship|patent|prototype|mechanism|instrument|demonstration|machine|manuscript|papyrus|artifact|artefact|experiment|incident|lost|forgotten|secret|hidden|discovery|discovered|rediscovered|mystery|hoax|forgery|failure|accident|catastrophe|rescued|recovered|first|unusual|invention|device|signal|puzzle|film|recording|transmission|transmitter|letter|notebook|trial|wreck|tomb|operation|conspiracy|breakthrough|controversy|buried|declassified|uncovered)\b/i;
+const EVENT_TITLE=/\b(?:boat|ship|patent|prototype|mechanism|instrument|demonstration|machine|manuscript|papyrus|artifact|artefact|experiment|incident|lost|forgotten|secret|hidden|discovery|discovered|rediscovered|mystery|hoax|forgery|failure|accident|catastrophe|rescued|recovered|first|unusual|invention|device|signal|puzzle|film|recording|transmission|transmitter|letter|notebook|trial|wreck|tomb|operation|conspiracy|breakthrough|controversy|buried|declassified|uncovered|flood|lightning|rocket|launch|mission|spacecraft|telephone|mechanism|computer|engine|switch|circuit|exhibition|cipher|code|paper|scroll|papyrus|balloon|fire|explosion|rescue|sound|phonautograph|recording|telescope)\b/i;
 function isGenericProfile(story){
  const title=clean(story?.title).replace(/\s+[-|–]\s+(?:Wikipedia|Biography|Britannica|History).*$/i,'');
  const intro=clean(story?.summary||story?.full).slice(0,650);
@@ -307,7 +307,9 @@ async function findWikipedia({roll,catalog,seen,focus=''}) {
  // loop exhausted the same articles after only a few visits.
  const variants=['documented discoveries','unusual historical mystery','forgotten experiments','rediscovered artifacts','unexpected events'];
  const variant=variants[seenWikipedia%variants.length];
- const topics=[base+' '+plan.angle,plan.focus+' '+plan.angle+' '+variant,base+' '+plan.sourceClass+' '+variant];
+ // Start with a broad, sector-specific search; a strict intersection of angle,
+ // subject and source-class terms can return no Wikipedia pages at all.
+ const topics=[base,base+' '+plan.angle,base+' '+variant,(plan.focus&&plan.focus!==plan.name?plan.focus:plan.name)+' '+variant];
  const offset=(Math.floor(seenWikipedia/4)%6)*7;
  const replies=await Promise.allSettled(topics.map((q,i)=>{
   const u=new URL(WIKI);
@@ -352,10 +354,24 @@ async function findWikipedia({roll,catalog,seen,focus=''}) {
    discoverySource:'live',discoveryMethod:'encyclopedia-backup',attribution:'Wikipedia / CC BY-SA'};
 }
 async function find(options){
- let story=null;
- try{story=await findSearch(options)}catch(error){console.warn('Book search service unavailable',error);}
- if(story)return story;
- try{return await findWikipedia(options)}catch(error){console.warn('Book independent encyclopedia discovery unavailable',error);return null;}
+ // A stalled GPT/search Worker must not hold the orange story card hostage.
+ // Run the attributed encyclopedia safety net independently of the deep-research path.
+ const deep=findSearch(options).catch(error=>{console.warn('Book GPT research unavailable',error);return null;});
+ const backup=findWikipedia(options).catch(error=>{console.warn('Book independent source discovery unavailable',error);return null;});
+ const first=await Promise.race([
+  deep.then(story=>({kind:'deep',story})),
+  backup.then(story=>({kind:'backup',story}))
+ ]);
+ if(first.story){
+  // A fast cited backup can be upgraded when the deeper two-source GPT story arrives.
+  // The caller decides whether the reader has already interacted or moved on.
+  if(first.kind==='backup'&&typeof options.onDeep==='function'){
+   void deep.then(story=>{if(story?.discoveryMethod==='gpt-deep')options.onDeep(story);})
+    .catch(error=>console.warn('Book late research unavailable',error));
+  }
+  return first.story;
+ }
+ return first.kind==='deep'?backup:deep;
 }
 
 global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,isPlaceProfile,isGenericProfile,isSecretStory};
