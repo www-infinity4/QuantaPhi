@@ -4,7 +4,7 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 const path=require('node:path');
 
-function testReader({townOnly=false}={}) {
+function testReader({townOnly=false,shortOnly=false}={}) {
  const js=fs.readFileSync(path.join(__dirname,'..','infinite-book-discovery.js'),'utf8');
  const requests=[];
  const encyclopedia={
@@ -19,7 +19,7 @@ function testReader({townOnly=false}={}) {
  const fakeFetch=async url=>{
    const href=String(url);requests.push(href);
    if(href.includes('orange-brook'))return {ok:false,status:500};
-   if(href.includes('en.wikipedia.org/w/api.php'))return {ok:true,json:async()=>townOnly?{query:{pages:{'123123':encyclopedia.query.pages['123123']}}}:encyclopedia};
+   if(href.includes('en.wikipedia.org/w/api.php'))return {ok:true,json:async()=>townOnly?{query:{pages:{'123123':encyclopedia.query.pages['123123']}}}:shortOnly?{query:{pages:{'88221':{pageid:88221,title:'Antikythera mechanism',extract:('The Antikythera mechanism was recovered from a shipwreck. Researchers discovered a complex ancient gear mechanism used to predict astronomical positions. ').repeat(3)}}}}:encyclopedia};
    throw Error('Unexpected network request '+href);
  };
  const w={};
@@ -61,4 +61,15 @@ test('real archaeological oddities remain eligible while towns are not',()=>{
  const {w}=testReader();
  const candidate={title:'Derveni papyrus',summary:'An ancient Greek manuscript recovered by archaeologists in 1962 reveals forgotten Orphic traditions.'};
  assert.equal(w.PhiInfiniteBookDiscover.isSecretStory(candidate),true);
+});
+
+test('short verified source introductions remain usable after built-in stories run out',async()=>{
+ const {w,requests}=testReader({shortOnly:true});
+ const story=await w.PhiInfiniteBookDiscover.find({roll,catalog,seen:new Set()});
+ assert.equal(story?.title,'Antikythera mechanism');
+ assert.match(story.sourceUrl,/curid=88221/);
+ assert.ok(story.summary.length>80);
+ assert.ok(requests.filter(u=>u.includes('en.wikipedia.org/w/api.php')).length>=3,'rotated source searches broaden beyond a single page');
+ const repeat=await w.PhiInfiniteBookDiscover.find({roll,catalog,seen:new Set([story.id])});
+ assert.equal(repeat,null,'a seen source must never repeat');
 });
