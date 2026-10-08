@@ -96,7 +96,7 @@ function preferences(activeQuery,catalog){
 // Artifact, demonstration, incident and document titles are still eligible.
 const PERSON_PROFILE=/\b(?:was|is)\s+(?:an?\s+)?(?:[\w-]+\s+){0,3}(?:inventor|scientist|physicist|engineer|artist|musician|politician|writer|actor|entrepreneur|mathematician|historian|composer|researcher|businessman)\b/i;
 const GENERIC_BIO=/\b(?:was born|is best known|best known for|known for his|known for her|early life|personal life|born in|died in|career and legacy|was a famous)\b/i;
-const EVENT_TITLE=/\b(?:boat|ship|patent|prototype|mechanism|instrument|demonstration|machine|manuscript|papyrus|artifact|artefact|experiment|incident|lost|forgotten|secret|hidden|discovery|discovered|rediscovered|mystery|hoax|forgery|failure|accident|catastrophe|rescued|recovered|first|unusual|invention|device|signal|puzzle|film|recording|transmission|transmitter|letter|notebook|trial|wreck|tomb|operation|conspiracy|breakthrough|controversy|buried|declassified|uncovered)\b/i;
+const EVENT_TITLE=/\b(?:boat|ship|patent|prototype|mechanism|instrument|demonstration|machine|manuscript|papyrus|artifact|artefact|experiment|incident|lost|forgotten|secret|hidden|discovery|discovered|rediscovered|mystery|hoax|forgery|failure|accident|catastrophe|rescued|recovered|first|unusual|invention|device|signal|puzzle|film|recording|transmission|transmitter|letter|notebook|trial|wreck|tomb|operation|conspiracy|breakthrough|controversy|buried|declassified|uncovered|flood|lightning|rocket|launch|mission|spacecraft|telephone|mechanism|computer|engine|switch|circuit|exhibition|cipher|code|paper|scroll|papyrus|balloon|fire|explosion|rescue|sound|phonautograph|recording|telescope)\b/i;
 function isGenericProfile(story){
  const title=clean(story?.title).replace(/\s+[-|–]\s+(?:Wikipedia|Biography|Britannica|History).*$/i,'');
  const intro=clean(story?.summary||story?.full).slice(0,650);
@@ -114,8 +114,8 @@ const CLASS_SEARCH={
  4:{terms:'scientific research institute lab experiment discovery',domains:['nasa.gov','nist.gov','science.nasa.gov']},
  5:{terms:'government archive report declassified document records',domains:['archives.gov','loc.gov','gov']},
  6:{terms:'original company newsroom engineering history prototype',domains:['computerhistory.org','ibm.com','ieee.org']},
- 7:{terms:'specialist historian detailed archival investigation',domains:['historyofscience.com','smithsonianmag.com','ieee.org']},
- 8:{terms:'investigative reporting historical investigation surprising episode',domains:['pbs.org','smithsonianmag.com','npr.org']},
+ 7:{terms:'specialist historian detailed archival investigation overlooked famous history',domains:['history.com','smithsonianmag.com','sciencehistory.org','computerhistory.org','ieee.org']},
+ 8:{terms:'investigative reporting historical investigation surprising episode',domains:['history.com','smithsonianmag.com','nationalww2museum.org','npr.org','pbs.org']},
  9:{terms:'peer reviewed journal archaeological research experiment paper',domains:['nature.com','science.org','journals.plos.org']},
  10:{terms:'oral history recorded testimony legend folklore attributed',domains:['loc.gov','si.edu','archive.org']}
 };
@@ -125,7 +125,12 @@ function sourcePlan(roll,catalog,focus=''){
  const sourceClass=catalog.sourceClasses?.find(x=>x.id===roll.sourceClass)?.name||'Original historical records';
  const preference=CLASS_SEARCH[roll.sourceClass]||CLASS_SEARCH[1];
  const localDomains=catalog.sourceRegistry?.find(x=>x.sector===roll.sector)?.domains||[];
- const domain=localDomains.length?localDomains[random(localDomains.length)]:preference.domains[random(preference.domains.length)];
+ // HISTORY and other editorial investigations are discovery leads, not primary
+ // archive evidence. Prioritize them for historian/reporting rolls only.
+ const editorial=roll.sourceClass===7||roll.sourceClass===8;
+ const overlap=localDomains.filter(x=>preference.domains.includes(x));
+ const choices=editorial?[...new Set([...overlap,...preference.domains])]:[...new Set([...overlap,...localDomains,...preference.domains])];
+ const domain=choices[random(choices.length)];
  const anchor=clean(focus).slice(0,90)||sector;
  const discoveryTerms='obscure specific event little-known documented detail -biography -overview -facts -town -municipality';
  // All three rolled numbers change the actual research and not just the card labels.
@@ -134,6 +139,11 @@ function sourcePlan(roll,catalog,focus=''){
    anchor+' '+angle+' '+sourceClass+' rare incident original source '+discoveryTerms,
    sector+' '+angle+' '+preference.terms+' unusual historical event documented -biography'
  ];
+ if(editorial){
+   // HISTORY articles are used as leads; GPT must still corroborate the
+   // particular event with a separate independent domain before publishing.
+   queries.push(anchor+' forgotten hidden episode invention artifact site:history.com/articles -biography');
+ }
  return {name:sector,angle,sourceClass,sourceClassId:roll.sourceClass,focus:anchor,domain,queries,combination:(roll.sector-1)*200+(roll.angle-1)*10+roll.sourceClass};
 }
 
@@ -229,7 +239,12 @@ async function findSearch({roll,catalog,seen,focus=''}) {
  // GPT first devises event-level searches. Our sector+angle+class queries
  // remain independently usable if the GPT scout cannot answer.
  const suggestions=await scoutQueries(plan,roll);
- const queries=[...new Set([...suggestions,...plan.queries])].slice(0,4);
+ // Reserve a slot for targeted editorial-history material when that evidence
+ // class is rolled; otherwise a GPT scout can crowd out HISTORY searches.
+ const discoveryQueries=(roll.sourceClass===7||roll.sourceClass===8)
+  ?[plan.queries[0],...suggestions.slice(0,1),plan.queries[1],plan.queries[plan.queries.length-1]]
+  :[plan.queries[0],...suggestions.slice(0,1),...plan.queries.slice(1)];
+ const queries=[...new Set(discoveryQueries)].slice(0,4);
  const responses=searchServiceFailedAt&&Date.now()-searchServiceFailedAt<90000?[]:
   await Promise.allSettled(queries.map(q=>{
    const u=new URL(SEARCH);u.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});
@@ -307,7 +322,9 @@ async function findWikipedia({roll,catalog,seen,focus=''}) {
  // loop exhausted the same articles after only a few visits.
  const variants=['documented discoveries','unusual historical mystery','forgotten experiments','rediscovered artifacts','unexpected events'];
  const variant=variants[seenWikipedia%variants.length];
- const topics=[base+' '+plan.angle,plan.focus+' '+plan.angle+' '+variant,base+' '+plan.sourceClass+' '+variant];
+ // Start with a broad, sector-specific search; a strict intersection of angle,
+ // subject and source-class terms can return no Wikipedia pages at all.
+ const topics=[base,base+' '+plan.angle,base+' '+variant,(plan.focus&&plan.focus!==plan.name?plan.focus:plan.name)+' '+variant];
  const offset=(Math.floor(seenWikipedia/4)%6)*7;
  const replies=await Promise.allSettled(topics.map((q,i)=>{
   const u=new URL(WIKI);
@@ -352,10 +369,24 @@ async function findWikipedia({roll,catalog,seen,focus=''}) {
    discoverySource:'live',discoveryMethod:'encyclopedia-backup',attribution:'Wikipedia / CC BY-SA'};
 }
 async function find(options){
- let story=null;
- try{story=await findSearch(options)}catch(error){console.warn('Book search service unavailable',error);}
- if(story)return story;
- try{return await findWikipedia(options)}catch(error){console.warn('Book independent encyclopedia discovery unavailable',error);return null;}
+ // A stalled GPT/search Worker must not hold the orange story card hostage.
+ // Run the attributed encyclopedia safety net independently of the deep-research path.
+ const deep=findSearch(options).catch(error=>{console.warn('Book GPT research unavailable',error);return null;});
+ const backup=findWikipedia(options).catch(error=>{console.warn('Book independent source discovery unavailable',error);return null;});
+ const first=await Promise.race([
+  deep.then(story=>({kind:'deep',story})),
+  backup.then(story=>({kind:'backup',story}))
+ ]);
+ if(first.story){
+  // A fast cited backup can be upgraded when the deeper two-source GPT story arrives.
+  // The caller decides whether the reader has already interacted or moved on.
+  if(first.kind==='backup'&&typeof options.onDeep==='function'){
+   void deep.then(story=>{if(story?.discoveryMethod==='gpt-deep')options.onDeep(story);})
+    .catch(error=>console.warn('Book late research unavailable',error));
+  }
+  return first.story;
+ }
+ return first.kind==='deep'?backup:deep;
 }
 
 global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,isPlaceProfile,isGenericProfile,isSecretStory};

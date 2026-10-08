@@ -206,7 +206,7 @@
   }
   let discoveryFlight = null;
   let discoveryRollKey = '';
-  function discoverInBackground(roll) {
+  function discoverInBackground(roll, onDeep) {
     const key = [roll.sector, roll.angle, roll.sourceClass, roll.focus||''].join(':');
     if (discoveryFlight && discoveryRollKey !== key) {
       // Preserve the newly rolled research instructions; never re-label a result
@@ -217,7 +217,12 @@
     const discover = window.PhiInfiniteBookDiscover?.find;
     if (typeof discover !== 'function') return Promise.resolve(null);
     discoveryRollKey = key;
-    discoveryFlight = Promise.resolve().then(() => discover({roll, catalog, seen:seenIds(), focus:roll.focus||''}))
+    discoveryFlight = Promise.resolve().then(() => discover({roll, catalog, seen:seenIds(), focus:roll.focus||'', onDeep: story=>{
+        if(!storyValid(story)||seenIds().has(story.id))return;
+        byId.set(story.id,story);
+        cacheLive(story);
+        if(typeof onDeep==='function')onDeep(story);
+      }}))
       .then(story => {
         if (!storyValid(story) || seenIds().has(story.id)) return null;
         byId.set(story.id, story);
@@ -240,13 +245,21 @@
     if(nextButton)nextButton.disabled = true;
     try {
       const roll = rollDice(query);
+      const acceptDeep = story => {
+        // Never replace a story the reader has opened, starred, shared or collected.
+        // Discard research belonging to a previous click/number combination.
+        if(ticket!==activeStoryTicket||interactedWithStory||
+           story?.discoveryMethod!=='gpt-deep'||!storyValid(story)||seenIds().has(story.id))return;
+        render(story,roll);
+        note('Original GPT-written discovery · supported by independent sources');
+      };
       // Use a readable, genuinely specific sourced discovery while GPT scouts
       // a deeper one. Upgrade to GPT if the reader has not interacted with it.
       const starter = pickUnique(roll,seenIds());
       if (starter) {
         render(starter,roll);
         note('Searching deeper · GPT is investigating this exact subject, angle and source class.');
-        void discoverInBackground(roll).then(live=>{
+        void discoverInBackground(roll,acceptDeep).then(live=>{
           if(!live || ticket!==activeStoryTicket)return;
           if(current?.id===starter.id && !interactedWithStory && live.discoveryMethod==='gpt-deep'){
             render(live,roll);
@@ -258,7 +271,7 @@
         return;
       }
       note('GPT is researching a lesser-known documented event for this exact number combination…');
-      const live = await discoverInBackground(roll);
+      const live = await discoverInBackground(roll,acceptDeep);
       if(ticket!==activeStoryTicket)return;
       if(live && storyValid(live) && !seenIds().has(live.id)){
         render(live,roll);

@@ -157,6 +157,46 @@ test('live discovery rejects biographies even when they mention patents and secr
   summary:'The 1898 demonstration revealed a remote-controlled boat that could turn on command without a steering cable.'
  }),true);
 });
+test('HISTORY.com and specialist museums are indexed as story leads, not unverified claims',()=>{
+ const js=fs.readFileSync(path.join(__dirname,'..','infinite-book-discovery.js'),'utf8');
+ const entries=JSON.parse(fs.readFileSync(path.join(__dirname,'..','infinite-book-catalog.json'),'utf8'));
+ assert.match(js,/site:history\.com\/articles/);
+ assert.match(js,/editorial=roll\.sourceClass===7\|\|roll\.sourceClass===8/);
+ assert.ok(entries.sourceRegistry.some(x=>x.sector===23&&x.domains.includes('history.com')));
+ assert.ok(entries.sourceRegistry.some(x=>x.sector===10&&x.domains.includes('britishmuseum.org')));
+ assert.ok(entries.stories.some(x=>x.id==='lincoln-boat-shoals-patent-1849'&&x.sources.some(y=>y.url.includes('history.com'))));
+ const eniac=entries.stories.find(x=>x.id==='eniac-patent-invalidated-1973');
+ assert.equal(eniac?.year,1973);
+ assert.match(eniac?.sourceUrl||'',/archives\.upenn\.edu/);
+});
+
+test('live discovery races a slow GPT service with an attributed backup', async()=>{
+ const script=fs.readFileSync(path.join(__dirname,'..','infinite-book-discovery.js'),'utf8');
+ const win={};
+ const fetch=async (url,opts={})=>{
+  const u=String(url);
+  if(u.includes('infinity-rogers')){
+   return new Promise(()=>{}); // simulate a nonresponding remote GPT gateway
+  }
+  if(u.includes('orange-brook')){
+   return new Promise(()=>{});
+  }
+  if(u.includes('w/api.php'))return {ok:true,json:async()=>({query:{pages:{
+   '88221':{pageid:88221,title:'Antikythera mechanism',
+    extract:('The Antikythera mechanism was recovered from a shipwreck. Researchers discovered its ancient geared mechanism used for astronomical predictions. ').repeat(6)}
+  }}})};
+  throw Error('Unexpected: '+u);
+ };
+ const context={window:win,localStorage:{getItem:()=>null},fetch,URL,URLSearchParams,
+  setTimeout,clearTimeout,AbortController,console,crypto:{getRandomValues:a=>{a[0]=0;return a}}};
+ vm.createContext(context);vm.runInContext(script,context,{timeout:5000});
+ const result=await Promise.race([
+  win.PhiInfiniteBookDiscover.find({roll,catalog,seen:new Set()}),
+  new Promise((_,reject)=>setTimeout(()=>reject(Error('fallback too slow')),600))
+ ]);
+ assert.equal(result?.title,'Antikythera mechanism');
+});
+
 test('the verified local story library has independently sourced event narratives',()=>{
  const catalog=JSON.parse(fs.readFileSync(path.join(__dirname,'..','infinite-book-catalog.json'),'utf8'));
  assert.equal(catalog.sectors.length*catalog.angles.length*catalog.sourceClasses.length,7800);
