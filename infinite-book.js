@@ -33,11 +33,14 @@
     textSafe(story.title).length > 5 && textSafe(story.summary).length > 15 &&
     textSafe(story.full).length > 30 && trustedUrl(story.sourceUrl) &&
     !window.PhiInfiniteBookDiscover?.isPlaceProfile?.(story) &&
+    !window.PhiInfiniteBookDiscover?.isGenericProfile?.(story) &&
     (story.discoverySource !== 'live' || window.PhiInfiniteBookDiscover?.isSecretStory?.(story) !== false);
   const byId = new Map();
   let catalog = null;
   let current = null;
   let pending = false;
+  let activeStoryTicket = 0;
+  let interactedWithStory = false;
   let favorites = new Set(safeRead(STAR_KEY));
   function cardLayout() {
     root.replaceChildren();
@@ -123,7 +126,7 @@
     return link.href;
   }
   function render(story, roll) {
-    current = story; remember(story.id);
+    current = story; interactedWithStory = false; remember(story.id);
     root.querySelector('.ib-category').textContent = [
       catalog.sectors.find(s => s.id === story.sector)?.name || 'Surprising history',
       story.status || 'sourced story',
@@ -147,12 +150,15 @@
       const a = root.querySelector('[data-book-tool="' + tool + '"]');
       a.href = buildUrl(tool, story); a.dataset.siteUrl = a.href;
     }
-    note(roll ? 'Personal interest: '+(catalog.sectors.find(s=>s.id===roll.sector)?.name || 'Discovery')+' · random angle '+roll.angle+'/20 · source '+roll.sourceClass+'/10' : 'Sourced story');
+    note(roll ? 'Discovery '+((roll.sector-1)*200+(roll.angle-1)*10+roll.sourceClass)+'/7800 · '+(catalog.angles.find(a=>a.id===roll.angle)?.name||'Secret angle')+' · '+(catalog.sourceClasses.find(c=>c.id===roll.sourceClass)?.name||'research sources') : 'Sourced story');
   }
   function rollDice(query='') {
     const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
-    return {sector: profile?.sector || (catalog.sectors[rand(catalog.sectors.length)]?.id || 3), angle: rand(20)+1, sourceClass: rand(10)+1,
-      personal: !!profile?.sector, signals: profile?.signals || 0};
+    // Quants guide the interests without trapping the book in one famous person's biography.
+    const preferred = !!profile?.sector && rand(5)!==0;
+    const sector = preferred ? profile.sector : (catalog.sectors[rand(catalog.sectors.length)]?.id || 3);
+    return {sector,angle:rand(catalog.angles.length)+1,sourceClass:rand(catalog.sourceClasses.length)+1,
+      focus:preferred?(String(query||profile?.focus||'').slice(0,90)):'',personal:preferred,signals:profile?.signals||0};
   }
   function pickUnique(roll, seen) {
     const unseen = Array.from(byId.values()).filter(s => !seen.has(s.id));
@@ -161,8 +167,10 @@
     const sectors = [roll.sector, ...(related[roll.sector]||[])];
     const topical = unseen.filter(s => sectors.includes(s.sector));
     const pool = topical.length ? topical : unseen;
+    const deep = pool.filter(story => story.discoveryMethod === 'gpt-deep');
+    const candidates = deep.length ? deep : pool;
     let best = -1, matches=[];
-    for (const story of pool) {
+    for (const story of candidates) {
       const score=(story.sector===roll.sector?6:0)+(story.angle===roll.angle?2:0)+
         (story.sourceClass===roll.sourceClass?1:0)+rand(4);
       if(score>best){best=score;matches=[story]}
@@ -194,13 +202,19 @@
     } catch (error) { console.warn('Infinite Book feed unavailable; using verified catalog', error); }
   }
   let discoveryFlight = null;
+  let discoveryRollKey = '';
   function discoverInBackground(roll) {
+    const key = [roll.sector, roll.angle, roll.sourceClass, roll.focus||''].join(':');
+    if (discoveryFlight && discoveryRollKey !== key) {
+      // Preserve the newly rolled research instructions; never re-label a result
+      // prepared for a different angle or evidence class.
+      return discoveryFlight.then(() => discoverInBackground(roll));
+    }
     if (discoveryFlight) return discoveryFlight;
     const discover = window.PhiInfiniteBookDiscover?.find;
     if (typeof discover !== 'function') return Promise.resolve(null);
-    // Check fresh seen IDs when the request begins and when it completes:
-    // a second card cannot sneak into the queue after it was already shown.
-    discoveryFlight = Promise.resolve().then(() => discover({ roll, catalog, seen: seenIds() }))
+    discoveryRollKey = key;
+    discoveryFlight = Promise.resolve().then(() => discover({roll, catalog, seen:seenIds(), focus:roll.focus||''}))
       .then(story => {
         if (!storyValid(story) || seenIds().has(story.id)) return null;
         byId.set(story.id, story);
@@ -208,44 +222,54 @@
         return story;
       })
       .catch(error => {
-        console.warn('Infinite Book live discovery deferred', error);
+        console.warn('Infinite Book GPT/source discovery unavailable', error);
         return null;
       })
-      .finally(() => { discoveryFlight = null; });
+      .finally(() => { discoveryFlight = null; discoveryRollKey = ''; });
     return discoveryFlight;
   }
   async function nextStory(query='') {
     if (!catalog) return;
-    if (pending) { if (query && queuedQueries.length < 20) queuedQueries.push(query); return; }
+    if (pending) {if(query&&queuedQueries.length<20)queuedQueries.push(query);return;}
     pending = true;
+    const ticket = ++activeStoryTicket;
     const nextButton = root.querySelector('.ib-next');
-    if (nextButton) nextButton.disabled = true;
+    if(nextButton)nextButton.disabled = true;
     try {
       const roll = rollDice(query);
-      const seen = seenIds();
-      // Show an unused, sourced story without waiting on slow or broken APIs.
-      // Continue discovering in parallel so the book can grow beyond its seeds.
-      let story = pickUnique(roll, seen);
-      if (story) {
-        render(story, roll);
-        note('Verified discovery · finding further sourced secrets for the next page.');
-        void discoverInBackground(roll);
+      // Use a readable, genuinely specific sourced discovery while GPT scouts
+      // a deeper one. Upgrade to GPT if the reader has not interacted with it.
+      const starter = pickUnique(roll,seenIds());
+      if (starter) {
+        render(starter,roll);
+        note('Searching deeper · GPT is investigating this exact subject, angle and source class.');
+        void discoverInBackground(roll).then(live=>{
+          if(!live || ticket!==activeStoryTicket)return;
+          if(current?.id===starter.id && !interactedWithStory){
+            render(live,roll);
+            note(live.discoveryMethod==='gpt-deep'?'New original GPT-written secret · multiple research sources':'Backup source excerpt · GPT writing unavailable this time');
+          } else if(ticket===activeStoryTicket){
+            note('A new sourced discovery is ready for Another secret.');
+          }
+        });
         return;
       }
-      note('Checking new documented discoveries. Previously read stories will not repeat…');
-      story = await discoverInBackground(roll);
-      if (!story || !storyValid(story) || seenIds().has(story.id)) {
-        note('No additional verified story is available right now. Source services may be unavailable; your starred and collected stories remain saved. Try Another secret again.');
-        return;
+      note('GPT is researching a lesser-known documented event for this exact number combination…');
+      const live = await discoverInBackground(roll);
+      if(ticket!==activeStoryTicket)return;
+      if(live && storyValid(live) && !seenIds().has(live.id)){
+        render(live,roll);
+        note(live.discoveryMethod==='gpt-deep'?'Original GPT story · multiple supporting sources':'Backup source excerpt · GPT writing unavailable this time');
+      }else{
+        note('No specific sourced discovery was verified for this combination yet. Your stories are safe; tap Another secret to draw a different combination.');
       }
-      render(story, roll);
-    } catch (error) {
-      console.warn('Infinite Book story request failed', error);
-      note('A source request failed. Tap Another secret to retry a different discovery.');
-    } finally {
+    }catch(error){
+      console.warn('Infinite Book discovery failed',error);
+      note('Research unavailable at this moment. Tap Another secret to try a different combination.');
+    }finally{
       pending = false;
-      if (nextButton) nextButton.disabled = false;
-      if (queuedQueries.length) { const next = queuedQueries.shift(); void nextStory(next); }
+      if(nextButton)nextButton.disabled = false;
+      if(queuedQueries.length){const next=queuedQueries.shift();void nextStory(next);}
     }
   }
   window.addEventListener('quantaphi:search-start', event=>{
@@ -259,6 +283,7 @@
   });
   function favorite() {
     if (!current) return;
+    interactedWithStory = true;
     if (favorites.has(current.id)) favorites.delete(current.id);
     else favorites.add(current.id);
     safeWrite(STAR_KEY, Array.from(favorites));
@@ -269,6 +294,7 @@
   }
   async function share() {
     if (!current) return;
+    interactedWithStory = true;
     const target = deepLink(current);
     const url = typeof window.quantaShareUrl === 'function' ? window.quantaShareUrl({title:current.title,description:current.summary,q:current.title,dest:target,kind:'secret'}) : target;
     try {
@@ -282,6 +308,7 @@
   }
   function collect() {
     if (!current) return;
+    interactedWithStory = true;
     const key = 'infinite-book|' + current.id;
     const collected = safeRead('quantaPhiCollected');
     if (collected.some(x => x && x.key === key)) { note('Already collected'); return; }
@@ -307,6 +334,7 @@
     const target = event.target.closest('[data-book-action]');
     if (!target || !root.contains(target)) return;
     const action = target.dataset.bookAction;
+    if(action!=='next')interactedWithStory = true;
     if (action === 'next') { event.preventDefault(); void nextStory(); }
     if (action === 'star') { event.preventDefault(); favorite(); }
     if (action === 'share') { event.preventDefault(); void share(); }
@@ -318,6 +346,7 @@
     }
     // Build links are handled by QuantaPhi's existing in-page site viewer.
   });
+  root.addEventListener('toggle',event=>{if(event.target?.classList?.contains('ib-details'))interactedWithStory=true;},true);
   async function init() {
     cardLayout();
     note('Loading sourced discoveries…');
@@ -346,7 +375,7 @@
             sourceUrl:source,sourceTitle:new URL(source).hostname},null);
         } else await nextStory();
       } else {
-        await nextStory();
+        await nextStory(initialQuery||'');
       }
     } catch (error) {
       console.warn('Infinite Book failed to initialize', error);

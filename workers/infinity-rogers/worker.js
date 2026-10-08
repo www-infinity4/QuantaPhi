@@ -118,8 +118,12 @@ async function runGPT(request, env, body) {
   const { input, info, task } = taskFrom(body);
   if (!input) return json(request, { ok: false, error: "input_required" }, 400);
   try {
-    const maxTokens = info.context.task === "five-zone-overview-synthesis" || info.context.requireGPT === true || info.context.requireCloudflare === true ? 3200 : info.application === "Oracle Card Studio" ? 2400 : 1400;
-    const managerModel=info.application==="Oracle Card Studio"?CARD_MANAGER_MODEL:"";
+    // The Infinite Book is a two-stage research/writing application, not a
+    // generic fast chat. Use the existing high-reasoning GPT-OSS Worker model
+    // only for these tasks; leave all other callers' routing untouched.
+    const deepBookTask=["infinite-book-scout","infinite-book-deep-story"].includes(info.context.task);
+    const maxTokens = info.context.task === "five-zone-overview-synthesis" || info.context.requireGPT === true || info.context.requireCloudflare === true ? 3200 : info.application === "Oracle Card Studio" || deepBookTask ? 2400 : 1400;
+    const managerModel=info.application==="Oracle Card Studio" || deepBookTask ? CARD_MANAGER_MODEL : "";
     const result = await runGatewayModel(env, rules(info.application), task, maxTokens, managerModel);
     return json(request, {
       ok: true,

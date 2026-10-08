@@ -62,7 +62,7 @@ function isPlaceProfile(story){
    /\b(?:population|census|postal code|zip code|administrative center|administrative centre)\b/i.test(intro.slice(0,650));
 }
 function isSecretStory(story){
- if(isPlaceProfile(story))return false;
+ if(isPlaceProfile(story)||isGenericProfile(story))return false;
  const title=clean(story?.title),lead=clean(story?.summary||story?.full);
  if(!title||!lead)return false;
  if(/^(?:List of|Index of|Timeline of|Category:)/i.test(title))return false;
@@ -84,15 +84,56 @@ function preferences(activeQuery,catalog){
 
  for(const v of values){const matched=terms.filter(([_,rx])=>rx.test(v.q));if(!matched.length)continue;const narrow=matched.filter(([id])=>id>=31);const chosen=narrow.length?narrow:matched;for(const [id]of chosen)scores.set(id,(scores.get(id)||0)+v.weight/Math.sqrt(chosen.length))}
  let sector=0,score=0;for(const [id,value]of scores){if(value>score){sector=id;score=value}}
- return {sector,score,signals:values.length};
+ // Preference nudges the sector; the selected person/topic is a research starting
+ // point, never permission to return a biography.
+ const recent=values.slice().reverse().map(x=>x.q).find(q=>q.length>=3&&q.length<=90&&!/^(?:search|home|news|music|hello)$/i.test(q));
+ const focus=clean(activeQuery).slice(0,90)||recent||'';
+ return {sector,score,signals:values.length,focus};
 }
-function sourcePlan(roll,catalog){
- const name=catalog.sectors.find(s=>s.id===roll.sector)?.name||'surprising history';
- const angle=catalog.angles.find(a=>a.id===roll.angle)?.name||'forgotten discovery';
- const domains=catalog.sourceRegistry.find(s=>s.sector===roll.sector)?.domains||['si.edu','loc.gov','nps.gov','smithsonianmag.com'];
- const domain=domains[random(domains.length)];
- return {name,angle,queries:[name+' '+angle+' hidden discovery unusual event site:'+domain+' -town -municipality -village',name+' '+angle+' documented forgotten event museum archive -town -city']};
+// A famous person's life is a search topic, not by itself a Big Secret.
+// Artifact, demonstration, incident and document titles are still eligible.
+const PERSON_PROFILE=/\b(?:was|is)\s+(?:an?\s+)?(?:[\w-]+\s+){0,3}(?:inventor|scientist|physicist|engineer|artist|musician|politician|writer|actor|entrepreneur|mathematician|historian|composer|researcher|businessman)\b/i;
+const GENERIC_BIO=/\b(?:was born|is best known|best known for|known for his|known for her|early life|personal life|born in|died in|career and legacy|was a famous)\b/i;
+const EVENT_TITLE=/\b(?:boat|ship|patent|prototype|mechanism|instrument|demonstration|machine|manuscript|papyrus|artifact|artefact|experiment|incident|lost|forgotten|secret|hidden|discovery|discovered|rediscovered|mystery|hoax|forgery|failure|accident|catastrophe|rescued|recovered|first|unusual|invention|device|signal|puzzle|film|recording|transmission|transmitter|letter|notebook|trial|wreck|tomb|operation|conspiracy|breakthrough|controversy|buried|declassified|uncovered)\b/i;
+function isGenericProfile(story){
+ const title=clean(story?.title).replace(/\s+[-|–]\s+(?:Wikipedia|Biography|Britannica|History).*$/i,'');
+ const intro=clean(story?.summary||story?.full).slice(0,650);
+ if(!title||!intro)return false;
+ const headline=title.replace(/\s*[-|–]\s*(?:life|biography|history|facts).*$/i,'');
+ // A name-only result with a biographical lead is never the obscure event.
+ const nameOnly=/^[\p{Lu}][\p{L}'-]+(?:\s+[\p{Lu}][\p{L}'-]+){1,3}$/u.test(headline);
+ return !EVENT_TITLE.test(headline)&&(nameOnly||/\bbiography\b/i.test(title))&&(PERSON_PROFILE.test(intro)||GENERIC_BIO.test(intro));
 }
+const CLASS_SEARCH={
+ 1:{terms:'original patent archival record manuscript exhibit evidence',domains:['patents.google.com','loc.gov','archives.gov']},
+ 2:{terms:'museum collection object accession exhibition discovery',domains:['si.edu','americanhistory.si.edu','metmuseum.org']},
+ 3:{terms:'university research archive library special collection manuscript',domains:['edu','loc.gov','bl.uk']},
+ 4:{terms:'scientific research institute lab experiment discovery',domains:['nasa.gov','nist.gov','science.nasa.gov']},
+ 5:{terms:'government archive report declassified document records',domains:['archives.gov','loc.gov','gov']},
+ 6:{terms:'original company newsroom engineering history prototype',domains:['computerhistory.org','ibm.com','ieee.org']},
+ 7:{terms:'specialist historian detailed archival investigation',domains:['historyofscience.com','smithsonianmag.com','ieee.org']},
+ 8:{terms:'investigative reporting historical investigation surprising episode',domains:['pbs.org','smithsonianmag.com','npr.org']},
+ 9:{terms:'peer reviewed journal archaeological research experiment paper',domains:['nature.com','science.org','journals.plos.org']},
+ 10:{terms:'oral history recorded testimony legend folklore attributed',domains:['loc.gov','si.edu','archive.org']}
+};
+function sourcePlan(roll,catalog,focus=''){
+ const sector=catalog.sectors.find(x=>x.id===roll.sector)?.name||'Surprising history';
+ const angle=catalog.angles.find(x=>x.id===roll.angle)?.name||'Forgotten discovery';
+ const sourceClass=catalog.sourceClasses?.find(x=>x.id===roll.sourceClass)?.name||'Original historical records';
+ const preference=CLASS_SEARCH[roll.sourceClass]||CLASS_SEARCH[1];
+ const localDomains=catalog.sourceRegistry?.find(x=>x.sector===roll.sector)?.domains||[];
+ const domain=localDomains.length?localDomains[random(localDomains.length)]:preference.domains[random(preference.domains.length)];
+ const anchor=clean(focus).slice(0,90)||sector;
+ const discoveryTerms='obscure specific event little-known documented detail -biography -overview -facts -town -municipality';
+ // All three rolled numbers change the actual research and not just the card labels.
+ const queries=[
+   anchor+' '+angle+' '+preference.terms+' '+discoveryTerms+' site:'+domain,
+   anchor+' '+angle+' '+sourceClass+' rare incident original source '+discoveryTerms,
+   sector+' '+angle+' '+preference.terms+' unusual historical event documented -biography'
+ ];
+ return {name:sector,angle,sourceClass,sourceClassId:roll.sourceClass,focus:anchor,domain,queries,combination:(roll.sector-1)*200+(roll.angle-1)*10+roll.sourceClass};
+}
+
 async function request(url,options={},ms=8500){
  const c=new AbortController(),timeout=setTimeout(()=>c.abort(),ms);
  try{const r=await fetch(url,{...options,signal:c.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.json()}finally{clearTimeout(timeout)}
@@ -116,44 +157,109 @@ function jsonAnswer(text){
  return null;
 }
 let searchServiceFailedAt=0;
-async function findSearch({roll,catalog,seen}){
- const plan=sourcePlan(roll,catalog);
- const responses=searchServiceFailedAt && Date.now()-searchServiceFailedAt<300000 ? [] : await Promise.allSettled(plan.queries.map(q=>{const u=new URL(SEARCH);u.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});return request(u.href,{cache:'no-store'},6500)}));
- if(responses.length && responses.every(r=>r.status==='rejected'))searchServiceFailedAt=Date.now();
+const QUERY_STOP=new Set(['nikola','tesla','thomas','edison','einstein','history','museum','article','original','about','first','famous','story','discovery','documented','unusual','archive','american','historical','invention','device','research','science','years','exhibit','people']);
+const titleWords=title=>clean(title).toLowerCase().match(/[\p{L}\p{N}]{4,}/gu)||[];
+function distinctiveWords(title,focus=''){
+ const removed=new Set([...QUERY_STOP,...titleWords(focus)]);
+ return [...new Set(titleWords(title).filter(w=>!removed.has(w)))];
+}
+function relatedSources(lead,results,focus){
+ const tokens=distinctiveWords(lead.title,focus);
+ if(!tokens.length)return [];
+ return results.filter(item=>origin(item.url)!==origin(lead.url)&&item.url!==lead.url&&
+   tokens.some(w=>(item.title+' '+item.summary).toLowerCase().includes(w))).slice(0,3);
+}
+async function scoutQueries(plan,roll){
+ const prompt=[
+  'Act as the research librarian and search architect for The Infinite Book of Big Secrets.',
+  'Given a sector, a story angle and a source class, create TWO precise web search queries to uncover a lesser-known DOCUMENTED event or physical artifact, rather than biographies of famous people.',
+  'This is a SEARCH-PLANNING step; do NOT assert any facts or invent a particular event.',
+  'If the focus is a famous person such as Nikola Tesla, look for a specific overlooked demonstration, prototype, patent or incident, not a summary of their life.',
+  'Keep the research angle and source-class constraint. Return JSON only: {"queries":["...","..."]}.',
+  'Sector '+roll.sector+': '+plan.name+'. Angle '+roll.angle+': '+plan.angle+'. Evidence class '+roll.sourceClass+': '+plan.sourceClass+'.',
+  'Search focus: '+plan.focus+'. Preferred evidence: '+(CLASS_SEARCH[roll.sourceClass]?.terms||'archival records')+'.'
+ ].join('\n');
+ try{
+  const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
+   body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-scout',verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass}}})},11000);
+  if(data?.ok===false)return [];
+  const obj=jsonAnswer(textAnswer(data));
+  return (Array.isArray(obj?.queries)?obj.queries:[]).filter(x=>typeof x==='string')
+    .map(x=>clean(x).slice(0,190)).filter(x=>x.length>=25).slice(0,2);
+ }catch(error){console.warn('Book GPT query scout unavailable; using rolled deterministic research queries',error);return []}
+}
+function detailsSupported(detail,sources,focus){
+ const words=distinctiveWords(detail,focus).filter(x=>x.length>=5);
+ const evidence=sources.map(s=>(s.title+' '+s.summary).toLowerCase()).join(' ');
+ return words.filter(w=>evidence.includes(w)).length>=2;
+}
+async function writeSecretStory(sources,plan,roll){
+ const prompt=[
+  'You are writing The Infinite Book of Big Secrets. Write about ONE narrowly identified, unusual and not-obvious historical event, demonstration, document, artifact, accident or overlooked incident, never a subject biography.',
+  'Example of the required difference: "Nikola Tesla" is NOT a story; his 1898 radio-controlled boat demonstration IS the kind of precise event we want, but do not choose it unless the actual evidence here concerns that event.',
+  'This is the final source-grounded story writer. Do not repeat a general overview or recycle a famous person profile.',
+  'Use only facts supported by the search snippets below. Snippets are NOT full source documents and may be wrong. If a specific surprising detail is not supportable, return {"insufficient":true}.',
+  'You must identify one concrete event and an unexpected detail, and explain what makes it surprising. The title must name the EVENT or the OBJECT, not merely the person.',
+  'Both source URLs must refer to the same specific incident or artifact; if they only share the same famous subject return {"insufficient":true}.',
+  'Quote no sentences verbatim. No invented dates, dialogue, motives, achievements, conspiracies or scientific claims. Mark legends and contested claims accurately.',
+  'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 original words","full":"100-210 original words in two paragraphs","detail":"short exact surprising fact","status":"documented|reported|contested|corrected myth|folklore","evidence_urls":["exact URL of source 1","exact URL of source 2"]}.',
+  'Rolled combination '+plan.combination+'; subject '+plan.name+'; angle '+plan.angle+'; source class '+plan.sourceClass+'; focus '+plan.focus+'.',
+  'Sources are snippets, not verified complete pages: '+JSON.stringify(sources)
+ ].join('\n');
+ const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
+  body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,combination:plan.combination,sourceCount:sources.length}}})},20000);
+ if(data?.ok===false)return null;
+ const obj=jsonAnswer(textAnswer(data));
+ if(!obj||obj.insufficient||clean(obj.title).length<16||clean(obj.summary).length<100||clean(obj.full).length<230||!isSecretStory(obj))return null;
+ if(!EVENT_TITLE.test(clean(obj.title)))return null;
+ if(!detailsSupported(obj.detail,sources,plan.focus))return null;
+ const cited=(Array.isArray(obj.evidence_urls)?obj.evidence_urls:[]).map(canonical);
+ const matched=sources.filter(x=>cited.includes(x.url));
+ if(new Set(matched.map(x=>origin(x.url))).size<2)return null;
+ return {title:clean(obj.title).slice(0,180),summary:clean(obj.summary).slice(0,650),
+  full:String(obj.full).trim().slice(0,2300),detail:clean(obj.detail).slice(0,240),
+  status:['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported',
+  supported:matched};
+}
+async function findSearch({roll,catalog,seen,focus=''}) {
+ const plan=sourcePlan(roll,catalog,focus);
+ // GPT first devises event-level searches. Our sector+angle+class queries
+ // remain independently usable if the GPT scout cannot answer.
+ const suggestions=await scoutQueries(plan,roll);
+ const queries=[...new Set([...suggestions,...plan.queries])].slice(0,4);
+ const responses=searchServiceFailedAt&&Date.now()-searchServiceFailedAt<90000?[]:
+  await Promise.allSettled(queries.map(q=>{
+   const u=new URL(SEARCH);u.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});
+   return request(u.href,{cache:'no-store'},7000);
+  }));
+ if(responses.length&&responses.every(r=>r.status==='rejected'))searchServiceFailedAt=Date.now();
  else if(responses.some(r=>r.status==='fulfilled'))searchServiceFailedAt=0;
- let results=[];for(const r of responses)if(r.status==='fulfilled')results.push(...extract(r.value));
- const seenUrls=new Set();results=results.filter(r=>!seenUrls.has(r.url)&&seenUrls.add(r.url));
- const eligible=results.filter(r=>!seen.has('live-'+hash(r.url))&&!seen.has('url:'+r.url)&&!seen.has('title:'+hash(r.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').slice(0,140))));
+ const results=[],seenUrls=new Set();
+ for(const reply of responses)if(reply.status==='fulfilled'){
+  for(const item of extract(reply.value))if(!seenUrls.has(item.url)&&!isGenericProfile(item)){
+   seenUrls.add(item.url);results.push(item);
+  }
+ }
+ const eligible=results.filter(r=>!seen.has('live-'+hash(r.url))&&!seen.has('url:'+r.url)&&
+  !seen.has('title:'+hash(r.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').slice(0,140))));
  if(eligible.length<2)return null;
- // Only accept a discoverable event when separate domains offer related evidence.
- const shuffled=eligible.map(x=>({x,order:random(100000)})).sort((a,b)=>a.order-b.order).map(x=>x.x);
- for(const lead of shuffled.slice(0,4)){
-  const words=lead.title.toLowerCase().split(/\W+/).filter(x=>x.length>5);
-  const corroboration=results.filter(x=>origin(x.url)!==origin(lead.url)&&words.some(w=>x.title.toLowerCase().includes(w)||x.summary.toLowerCase().includes(w))).slice(0,3);
+ const ranked=eligible.map(item=>({item,score:(EVENT_TITLE.test(item.title)?5:0)+
+  (SECRET_HOOK.test(item.title+' '+item.summary)?2:0)+
+  (origin(item.url)===plan.domain?2:0)+random(3)})).sort((a,b)=>b.score-a.score).map(x=>x.item);
+ for(const lead of ranked.slice(0,3)){
+  if(!EVENT_TITLE.test(lead.title)||isPlaceProfile(lead)||isGenericProfile(lead))continue;
+  const corroboration=relatedSources(lead,results,plan.focus);
   if(!corroboration.length)continue;
   const sources=[lead,...corroboration];
-  const prompt=[
-    'Write one surprising, authentic historical story for The Infinite Book of Big Secrets.',
-    'Never use a routine town, city, village, county, or local geography profile as a secret. A location is only context for a documented strange event, hidden history, unusual discovery or corrected misconception.',
-    'Topic: '+plan.name+'. Story angle: '+plan.angle,
-    'Evidence is truncated search snippets, not full documents. ONLY make claims explicitly supported by these snippets. They may contain mistakes. If insufficient, return {"insufficient":true}.',
-    'Do not invent dates, quotes, names, explanations, or motivations. A legend must be called folklore, and controversial allegations require neutral treatment.',
-    'Return JSON only with keys title, summary, full, status. Summary 40-85 words, full 100-210 words in 2 paragraphs, status one of documented, reported, contested, corrected myth, folklore.',
-    'The lead story and corroboration must describe the same specific event, not merely the same broad topic. No pasted original language.',
-    'Evidence: '+JSON.stringify(sources)
-  ].join('\n');
-  let obj;
   try{
-   const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
-      body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-discovery',verified_context:{sector:roll.sector,angle:roll.angle,sources:sources.length}}})},18000);
-   obj=jsonAnswer(textAnswer(data));
-  }catch(_){return null}
-  if(!obj||obj.insufficient||clean(obj.title).length<12||clean(obj.summary).length<80||clean(obj.full).length<200||!isSecretStory(obj))continue;
-  const status=['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported';
-  return {id:'live-'+hash(lead.url),title:clean(obj.title).slice(0,180),summary:clean(obj.summary).slice(0,650),
-    full:String(obj.full).trim().slice(0,2300),year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
-    status:status+' · sourced summary',sourceTitle:lead.title,sourceUrl:lead.url,
-    sources:sources.map(s=>({title:s.title,url:s.url})),discoverySource:'live'};
+   const written=await writeSecretStory(sources,plan,roll);
+   if(!written)continue;
+   return {id:'live-'+hash(lead.url),title:written.title,summary:written.summary,
+    full:written.full,detail:written.detail,year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
+    combination:plan.combination,status:written.status+' · GPT research summary from excerpts',
+    sourceTitle:lead.title,sourceUrl:lead.url,
+    sources:written.supported.map(x=>({title:x.title,url:x.url})),discoverySource:'live',discoveryMethod:'gpt-deep'};
+  }catch(error){console.warn('Book GPT deep story drafting unavailable',error);break;}
  }
  return null;
 }
@@ -189,15 +295,16 @@ const WIKI_QUERIES={
 function wikiExcerpt(s) {
  return String(s||'').replace(/\s+/g,' ').trim();
 }
-async function findWikipedia({roll,catalog,seen}) {
- const base=WIKI_QUERIES[roll.sector] || (catalog.sectors.find(s=>s.id===roll.sector)?.name+' historical discovery');
+async function findWikipedia({roll,catalog,seen,focus=''}) {
+ const plan=sourcePlan(roll,catalog,focus);
+ const base=WIKI_QUERIES[roll.sector] || (plan.name+' historical discovery');
  const seenWikipedia=[...seen].filter(id=>id.startsWith('wiki-')).length;
  // Keep a finite search offset and rotate terms; do not loop over seen items.
  // Rotate search phrasing and offsets independently: the previous five-offset
  // loop exhausted the same articles after only a few visits.
  const variants=['documented discoveries','unusual historical mystery','forgotten experiments','rediscovered artifacts','unexpected events'];
  const variant=variants[seenWikipedia%variants.length];
- const topics=[base,base+' '+variant,'historical '+variant+' '+(catalog.sectors.find(s=>s.id===roll.sector)?.name||'history')];
+ const topics=[base+' '+plan.angle,plan.focus+' '+plan.angle+' '+variant,base+' '+plan.sourceClass+' '+variant];
  const offset=(Math.floor(seenWikipedia/4)%6)*7;
  const replies=await Promise.allSettled(topics.map((q,i)=>{
   const u=new URL(WIKI);
@@ -217,7 +324,7 @@ async function findWikipedia({roll,catalog,seen}) {
    if(/^(List of|Index of|Timeline of|Category:|20[0-9][0-9] in |[0-9]{4} in )/i.test(title))continue;
    if(/may refer to|is a disambiguation page/i.test(full.slice(0,200)))continue;
    if(/television series|fictional character|video game series/i.test(full.slice(0,200)) && roll.sector!==21)continue;
-   if(!isSecretStory({title,summary:full.slice(0,900)}))continue;
+   if(!isSecretStory({title,summary:full.slice(0,900)})||!EVENT_TITLE.test(title))continue;
    candidates.push({id,title,full,pageid:page.pageid});
   }
  }
@@ -236,10 +343,10 @@ async function findWikipedia({roll,catalog,seen}) {
  return {id:choice.id,title:choice.title,summary,
    full:choice.full+'\n\nSource: Wikipedia contributors. Excerpt reused under Creative Commons Attribution-ShareAlike; follow the source and license links for details.',
    year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
-   status:'encyclopedia discovery · CC BY-SA excerpt',
+   status:'backup encyclopedia excerpt · CC BY-SA · no GPT rewrite',
    sourceTitle:'Wikipedia contributors',sourceUrl:article,
    sources:[{title:'Wikipedia copyright and CC BY-SA attribution',url:WIKI_LICENSE}],
-   discoverySource:'live',attribution:'Wikipedia / CC BY-SA'};
+   discoverySource:'live',discoveryMethod:'encyclopedia-backup',attribution:'Wikipedia / CC BY-SA'};
 }
 async function find(options){
  let story=null;
@@ -248,5 +355,5 @@ async function find(options){
  try{return await findWikipedia(options)}catch(error){console.warn('Book independent encyclopedia discovery unavailable',error);return null;}
 }
 
-global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,isPlaceProfile,isSecretStory};
+global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,isPlaceProfile,isGenericProfile,isSecretStory};
 })(window);
