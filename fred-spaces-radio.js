@@ -3,7 +3,7 @@
   "use strict";
   const root = document.getElementById("fredSpacesRadio");
   if (!root) return;
-  const API = "https://starquest-ledger.marvaseater.workers.dev";
+  const API = "https://fred-spaces-ledger.marvaseater.workers.dev";
   const ARCHIVE = "https://www.twitterspacegpt.com/hosts/dotkrueger";
   const FIRST = "fred-0700";
   // Stable numbers: never remap an episode number after somebody shares it.
@@ -122,5 +122,5 @@
   }
   const requested=new URL(location.href).searchParams.get("fredSpace");
   if(requested===FIRST)active=byId.get(FIRST);
-  rememberEpisode(active); render();void sync();
+  render();void sync();
 })();
