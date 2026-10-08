@@ -213,16 +213,17 @@
     // Seen IDs are never truncated; cached story bodies are bounded for device storage.
     safeWrite(LIVE_CACHE,cached.slice(-100));
   }
-  async function appendConfiguredFeed() {
+  async function appendConfiguredFeed(roll=null) {
     // When a server-side discovery service is available, it may publish curated
     // verified stories at a same-origin JSON endpoint. Never scrape arbitrary sites in the browser.
     const feed = window.PhiInfiniteBookFeedUrl;
     if (!feed) return;
     let url;
     try { url = new URL(feed, location.origin); } catch (_) { return; }
-    if (url.origin !== location.origin) return;
+    if (url.origin !== location.origin && url.origin !== 'https://infinite-book-library.marvaseater.workers.dev') return;
+    if (roll?.bracketKey) url.searchParams.set('path',roll.bracketKey);
     try {
-      const response = await fetch(url.href, { cache: 'no-store' });
+      const response = await fetch(url.href, { cache: 'no-store', signal: AbortSignal.timeout(6500) });
       if (!response.ok) return;
       const data = await response.json();
       const stories = Array.isArray(data) ? data : data.stories;
@@ -313,6 +314,7 @@
         ? 'New sourced historical story · original GPT narrative'
         : 'New historical discovery · cited source');
     };
+    void appendConfiguredFeed(roll);
     void discoverInBackground(roll, acceptNew)
       .then(acceptNew)
       .catch(error => console.warn('Book research unavailable', error));
@@ -424,6 +426,7 @@
       for (const story of [...(catalog.stories || []), ...safeRead(LIVE_CACHE)]) if (storyValid(story)) byId.set(story.id, story);
       // A missing/slow server feed must never delay the first story card.
       void appendConfiguredFeed().then(refillReadyStories);
+      void (async()=>{try{const raw=window.PhiInfiniteBookBanksUrl;if(!raw)return;const u=new URL(raw,location.origin);if(u.origin!==location.origin&&u.origin!=='https://infinite-book-library.marvaseater.workers.dev')return;const r=await fetch(u.href,{signal:AbortSignal.timeout(7500)});if(!r.ok)return;const data=await r.json();if(!Array.isArray(data.subjects))return;const ids=new Set(catalog.wordIndex.map(x=>x.id));for(const w of data.subjects){if(!Number.isSafeInteger(Number(w.id))||ids.has(Number(w.id))||!Array.isArray(w.sectors)||!w.word)continue;catalog.wordIndex.push({id:Number(w.id),word:String(w.word).slice(0,120),sector:Number(w.sectors[0]),sectors:w.sectors});ids.add(Number(w.id));}}catch(e){console.warn('Book words offline; bundled words retained',e)}})();
 
       const permalink = new URL(location.href).searchParams.get('secret');
       if (permalink && byId.has(permalink)) {
