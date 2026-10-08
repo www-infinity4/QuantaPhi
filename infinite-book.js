@@ -148,7 +148,7 @@
     note(roll ? 'Personal interest: '+(catalog.sectors.find(s=>s.id===roll.sector)?.name || 'Discovery')+' · random angle '+roll.angle+'/20 · source '+roll.sourceClass+'/10' : 'Sourced story');
   }
   function rollDice(query='') {
-    const profile = window.PhiInfiniteBookDiscover?.preferences(query);
+    const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
     return {sector: profile?.sector || 3, angle: rand(20)+1, sourceClass: rand(10)+1,
       personal: !!profile?.sector, signals: profile?.signals || 0};
   }
