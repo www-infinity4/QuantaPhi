@@ -135,6 +135,7 @@
       story.status || 'sourced story',
       story.year || ''
     ].filter(Boolean).join(' · ');
+    root.querySelector('.ib-story').dataset.storyId = story.id;
     root.querySelector('.ib-title').textContent = story.title;
     root.querySelector('.ib-summary').textContent = story.summary;
     root.querySelector('.ib-full').textContent = story.full;
@@ -154,6 +155,7 @@
       a.href = buildUrl(tool, story); a.dataset.siteUrl = a.href;
     }
     note(roll ? 'Discovery '+((roll.sector-1)*200+(roll.angle-1)*10+roll.sourceClass)+'/6000 · '+(catalog.angles.find(a=>a.id===roll.angle)?.name||'Secret angle')+' · '+(catalog.sourceClasses.find(c=>c.id===roll.sourceClass)?.name||'research sources') : 'Sourced story');
+    window.dispatchEvent(new CustomEvent('phi:story:render',{detail:{id:story.id,title:story.title}}));
   }
   function rollDice(query='') {
     const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
@@ -327,14 +329,18 @@
     interactedWithStory = true;
     const target = deepLink(current);
     const url = typeof window.quantaShareUrl === 'function' ? window.quantaShareUrl({title:current.title,description:current.summary,q:current.title,dest:target,kind:'secret'}) : target;
+    let combined = null;
     try {
-      if (navigator.share) await navigator.share({ title: current.title, text: current.summary, url });
+      combined = await window.PhiBookImageBridge?.shareStory?.(current, url) || null;
+      if (combined?.handled) {
+        if (!combined.success) { note(combined.message || 'Share cancelled. No credit issued.'); return; }
+      } else if (navigator.share) await navigator.share({ title: current.title, text: current.summary, url });
       else if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(current.title + '\n' + url);
       else { note('Sharing is unavailable in this browser'); return; }
     } catch (_) { note('Share cancelled'); return; }
     try { window.QuantaStarCredit?.('share', 'infinite-book:' + current.id + ':' + Date.now(), current); }
     catch (error) { console.warn('Story share credit deferred', error); }
-    note('Story shared or link copied');
+    note(combined?.handled ? 'Story text and image sent to the share sheet. The image stays device-local; link visitors see the story without your picture until cloud publishing is connected.' : combined?.imageMissing ? 'Story link shared. This browser cannot bundle image files; use Save image to share the picture separately.' : 'Story shared or link copied');
   }
   function collect() {
     if (!current) return;
