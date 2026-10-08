@@ -14,4 +14,4 @@ jobs:
         with:
           node-version: '24'
       - name: Verify overview failures, recovery, and paired credits
-        run: node --test test/account-recovery-flow.test.cjs test/search-isolation.test.cjs test/wallet-search-handoff.test.cjs test/cloud-connection.test.cjs test/search-commit.test.cjs test/overview-response.test.cjs test/domain-health.test.cjs test/suite-routing.test.cjs test/ai-origin.test.cjs test/wallet-recovery-routing.test.cjs test/wallet-assets.test.cjs test/star-coin-cloud.test.cjs
+        run: node --test test/account-recovery-flow.test.cjs test/search-isolation.test.cjs test/wallet-search-handoff.test.cjs test/cloud-connection.test.cjs test/search-commit.test.cjs test/overview-response.test.cjs test/domain-health.test.cjs test/suite-routing.test.cjs test/ai-origin.test.cjs test/wallet-recovery-routing.test.cjs test/wallet-assets.test.cjs test/star-coin-cloud.test.cjs test/social-share-preview.test.cjs
