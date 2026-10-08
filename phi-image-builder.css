@@ -1,0 +1,40 @@
+
+/* Image Builder — the blue companion card to Infinite Book */
+#phiImageBuilder{margin:13px 0 16px;max-width:100%;font:inherit;color:#173c63}
+#phiImageBuilder .pi-panel{background:linear-gradient(155deg,#e0f1ff,#afd7fa);border:2px solid #6d9fd1;border-radius:13px;padding:14px;box-shadow:0 3px 0 #bad5eb}
+#phiImageBuilder h2{font-size:20px;line-height:1.3;margin:0 0 5px;color:#0a3257}
+#phiImageBuilder .pi-sub{font-size:12px;line-height:1.5;color:#2c5273;margin:0 0 12px}
+#phiImageBuilder .pi-modes{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+#phiImageBuilder button,#phiImageBuilder textarea{font:inherit}
+#phiImageBuilder .pi-mode{border:1px solid #87b3dc;background:#f8fcff;color:#294867;padding:7px 9px;font-size:11px;font-weight:800;border-radius:9px;cursor:pointer}
+#phiImageBuilder .pi-mode[aria-pressed="true"]{background:#163c64;border-color:#163c64;color:white}
+#phiImageBuilder .pi-file-area{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#phiImageBuilder .pi-file{border:2px dashed #91b8dc;border-radius:12px;background:#f2f9ff;min-height:105px;display:grid;place-items:center;text-align:center;padding:8px;position:relative;overflow:hidden}
+#phiImageBuilder .pi-file:focus-within{outline:2px solid #183fa4;outline-offset:2px}
+#phiImageBuilder .pi-file img{display:none;width:100%;height:95px;object-fit:contain}
+#phiImageBuilder .pi-file strong{font-size:12px;color:#244d72}
+#phiImageBuilder .pi-file small{font-size:10px;color:#527695}
+#phiImageBuilder .pi-file input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer}
+#phiImageBuilder .pi-file:has(img[src]) strong,#phiImageBuilder .pi-file:has(img[src]) small{display:none}
+#phiImageBuilder .pi-file:has(img[src]) img{display:block}
+#phiImageBuilder textarea{box-sizing:border-box;width:100%;margin-top:11px;min-height:114px;resize:vertical;padding:11px;border:2px solid #6d99bf;border-radius:11px;background:#fff;color:#162b42;font-size:14px;line-height:1.5}
+#phiImageBuilder .pi-options{display:flex;gap:12px;flex-wrap:wrap;margin:9px 0}
+#phiImageBuilder .pi-options label{font-size:12px;color:#214a70;display:flex;gap:6px;align-items:center}
+#phiImageBuilder .pi-primary{background:#164c89;color:#fff;border:1px solid #0d396b;border-radius:10px;padding:12px 16px;font-size:14px;font-weight:900;width:100%;cursor:pointer}
+#phiImageBuilder .pi-primary:disabled{opacity:.55}
+#phiImageBuilder .pi-progress,#phiImageBuilder .pi-finished{display:none}
+#phiImageBuilder[data-stage="progress"] .pi-composer,#phiImageBuilder[data-stage="finished"] .pi-composer{display:none}
+#phiImageBuilder[data-stage="progress"] .pi-progress{display:block}
+#phiImageBuilder[data-stage="finished"] .pi-finished{display:block}
+#phiImageBuilder .pi-steps{margin:12px 0;display:grid;gap:7px}
+#phiImageBuilder .pi-step{border:1px solid #9fc1dd;background:#ecf6ff;padding:9px 11px;border-radius:9px;font-size:12px;display:flex;justify-content:space-between;gap:8px}
+#phiImageBuilder .pi-step[data-state="active"]{background:#fff;border-color:#28659d;color:#12385b}
+#phiImageBuilder .pi-step[data-state="done"]{background:#e4f7ed;border-color:#72b58b}
+#phiImageBuilder .pi-step[data-state="error"]{background:#ffecec;border-color:#d78c8c}
+#phiImageBuilder .pi-notice{font-size:12px;line-height:1.5;color:#284960;margin:10px 0;overflow-wrap:anywhere}
+#phiImageBuilder .pi-result{display:block;width:100%;max-height:520px;object-fit:contain;background:#eaf2f7;border:1px solid #9ebed7;border-radius:9px}
+#phiImageBuilder .pi-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:9px}
+#phiImageBuilder .pi-actions button{min-height:40px;border:1px solid #87b0d4;border-radius:9px;background:#f8fcff;color:#20456b;font-size:11px;font-weight:800;padding:8px 5px;cursor:pointer}
+#phiImageBuilder .pi-actions .pi-wide{grid-column:span 3}
+#phiImageBuilder button:focus-visible,#phiImageBuilder textarea:focus-visible,#phiImageBuilder input:focus-visible{outline:3px solid #1556c2;outline-offset:2px}
+#phiImageBuilder .pi-steps span{font-weight:800}
