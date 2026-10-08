@@ -23,19 +23,22 @@ async function one(db,sql,...args){return await db.prepare(sql).bind(...args).fi
 async function counts(db){
  return all(db,'SELECT s.id,s.name,COUNT(t.id) AS topics FROM rr_sectors s LEFT JOIN rr_topics t ON t.sector_id=s.id AND t.reviewed=1 WHERE s.enabled=1 GROUP BY s.id ORDER BY s.id');
 }
-async function draw(db,{sectorId=0,term='',minimum=MIN_TOPICS}={}){
+async function draw(db,{sectorId=0,term='',topicId=0,refinementId=0,genreId=0,sourceClassId=0,minimum=MIN_TOPICS}={}){
  const sectors=(await counts(db)).filter(s=>Number(s.topics)>=minimum);
  const sector=sectorId?sectors.find(s=>s.id===sectorId):pick(sectors);
  if(!sector)return {ok:false,error:sectorId?'sector_index_incomplete':'index_not_ready',readySectors:sectors.length};
- const topic=term?await one(db,'SELECT id,term FROM rr_topics WHERE sector_id=? AND reviewed=1 AND normalized=?',sector.id,stableKey(term)):
+ const topic=topicId?await one(db,'SELECT id,term FROM rr_topics WHERE sector_id=? AND reviewed=1 AND id=?',sector.id,topicId):
+  term?await one(db,'SELECT id,term FROM rr_topics WHERE sector_id=? AND reviewed=1 AND normalized=?',sector.id,stableKey(term)):
   await one(db,'SELECT id,term FROM rr_topics WHERE sector_id=? AND reviewed=1 ORDER BY RANDOM() LIMIT 1',sector.id);
  if(!topic)return {ok:false,error:'topic_unavailable'};
  const [refinement,genre]=await Promise.all([
-  one(db,'SELECT id,label FROM rr_refinements ORDER BY RANDOM() LIMIT 1'),
-  one(db,'SELECT id,label,directive FROM rr_genres ORDER BY RANDOM() LIMIT 1')
+  refinementId?one(db,'SELECT id,label FROM rr_refinements WHERE id=?',refinementId):
+   one(db,'SELECT id,label FROM rr_refinements ORDER BY RANDOM() LIMIT 1'),
+  genreId?one(db,'SELECT id,label,directive FROM rr_genres WHERE id=?',genreId):
+   one(db,'SELECT id,label,directive FROM rr_genres ORDER BY RANDOM() LIMIT 1')
  ]);
  if(!refinement||!genre)return {ok:false,error:'bracket_configuration_missing'};
- const sourceClass=1+Math.floor(Math.random()*10);
+ const sourceClass=sourceClassId||1+Math.floor(Math.random()*10);
  return {ok:true,bracket:{
   sector:{id:sector.id,name:sector.name},
   topic:{id:topic.id,term:topic.term},
@@ -114,7 +117,7 @@ async function writeStory(url,bracket,sources){
 async function recordStory(db,bracket,draft){
  const key=stableKey(draft.title);
  const existing=await one(db,'SELECT id,title,summary,body,evidence_json FROM rr_stories WHERE canonical_event_key=?',key);
- if(existing)return {ok:true,alreadyPublished:true,story:existing};
+ if(existing)return {ok:true,alreadyPublished:true,story:{id:existing.id,title:existing.title,summary:existing.summary,full:existing.body,sources:JSON.parse(existing.evidence_json)}};
  const id=crypto.randomUUID();
  const values=[id,bracket.sector.id,bracket.topic.id,bracket.research.id,bracket.realm.id,
   draft.title,draft.summary,draft.full,JSON.stringify(draft.sources),key];
@@ -145,7 +148,9 @@ export default {
     return reply({ok:false,error:'forbidden'},403,origin);
    const body=await request.json().catch(()=>({}));
    const sectorId=bounded(body.sector,1,30);
-   const chosen=await draw(db,{sectorId,term:tidy(body.topic).slice(0,100)});
+   const chosen=await draw(db,{sectorId,term:tidy(body.topic).slice(0,100),
+    topicId:bounded(body.topic_id,1,1000000000),refinementId:bounded(body.refinement_id,1,30),
+    genreId:bounded(body.genre_id,1,3),sourceClassId:bounded(body.source_class,1,10)});
    if(!chosen.ok)return reply(chosen,409,origin);
    const bracket=chosen.bracket;
    const sources=await research(env.RR_SEARCH_URL||'https://orange-brook-a2ac.marvaseater.workers.dev/search',bracket);
