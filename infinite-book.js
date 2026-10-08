@@ -5,7 +5,7 @@
   if (!root) return;
   const SEEN_KEY = 'phi_infinite_book_seen_v1';
   const STAR_KEY = 'phi_infinite_book_favorites_v1';
-  const CATALOG_URL = 'infinite-book-catalog.json';
+  const CATALOG_URL = '/infinite-book-catalog.json';
   const E = (tag, cls, value) => {
     const el = document.createElement(tag);
     if (cls) el.className = cls;
