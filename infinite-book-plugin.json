@@ -1,6 +1,6 @@
 {
   "name": "infinite-book",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "discovery-widget",
   "mount": "#infiniteBook",
   "entry": "infinite-book.js",
@@ -14,13 +14,13 @@
     "build_story"
   ],
   "dimensions": {
-    "sectors": 30,
+    "sectors": 39,
     "angles": 20,
     "sourceClasses": 10
   },
   "storyCard": "orange",
   "routing": {
-    "oracle": "source-discovery and historical verification",
+    "oracle": "prefer known QuantaPhi quant interest signals, then discover and synthesize source-backed surprises",
     "widgetPhi": "orange-story-card",
     "destinations": [
       "InfinityPhi",
@@ -29,9 +29,19 @@
     ]
   },
   "feed": {
+    "onDemand": "live SearXNG evidence + existing Phi AI writer",
+    "sources": "sector-specific registry",
     "configuredBy": "window.PhiInfiniteBookFeedUrl",
     "requiresSameOrigin": true
   },
   "minting": "none on story impressions or page refresh",
-  "persistence": "browser seen-state fallback; D1 integration pending"
+  "persistence": "local seen history and cached source summaries; cloud cross-device sync pending",
+  "discovery": "infinite-book-discovery.js",
+  "refreshBehavior": "one unseen story each page visit; advance on a new search, not token mint",
+  "personalization": [
+    "quantaPhiBuildHistoryV1",
+    "QuantaCloudBuildHistory",
+    "quantaPhiCollected",
+    "current search"
+  ]
 }
