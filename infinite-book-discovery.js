@@ -96,9 +96,12 @@ function jsonAnswer(text){
  if(a>=0&&b>a)try{return JSON.parse(text.slice(a,b+1))}catch(_){}
  return null;
 }
-async function find({roll,catalog,seen}){
+let searchServiceFailedAt=0;
+async function findSearch({roll,catalog,seen}){
  const plan=sourcePlan(roll,catalog);
- const responses=await Promise.allSettled(plan.queries.map(q=>{const u=new URL(SEARCH);u.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});return request(u.href,{cache:'no-store'},8000)}));
+ const responses=searchServiceFailedAt && Date.now()-searchServiceFailedAt<300000 ? [] : await Promise.allSettled(plan.queries.map(q=>{const u=new URL(SEARCH);u.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});return request(u.href,{cache:'no-store'},6500)}));
+ if(responses.length && responses.every(r=>r.status==='rejected'))searchServiceFailedAt=Date.now();
+ else if(responses.some(r=>r.status==='fulfilled'))searchServiceFailedAt=0;
  let results=[];for(const r of responses)if(r.status==='fulfilled')results.push(...extract(r.value));
  const seenUrls=new Set();results=results.filter(r=>!seenUrls.has(r.url)&&seenUrls.add(r.url));
  const eligible=results.filter(r=>!seen.has('live-'+hash(r.url))&&!seen.has('url:'+r.url)&&!seen.has('title:'+hash(r.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').slice(0,140))));
@@ -134,5 +137,86 @@ async function find({roll,catalog,seen}){
  }
  return null;
 }
+
+// Public MediaWiki API is an independent source: if SearXNG/Workers AI fails,
+// discover real encyclopedic articles rather than exhausting the ten starters.
+// The displayed text is a labelled, attributed CC BY-SA excerpt, not an
+// invented AI account of a source we could not read.
+const WIKI='https://en.wikipedia.org/w/api.php';
+const WIKI_LICENSE='https://en.wikipedia.org/wiki/Wikipedia:Copyrights';
+const WIKI_QUERIES={
+ 1:'electricity invention discovery history',2:'computer invention unusual history',
+ 3:'art forgery rediscovered painting',4:'historical hauntings folklore',
+ 5:'parapsychology experiment historical',6:'accidental discovery famous inventions',
+ 7:'astronomy surprising discovery',8:'military deception operation history',
+ 9:'espionage secret intelligence operation',10:'archaeology remarkable discoveries',
+ 11:'ancient civilization archaeological discovery',12:'medicine accidental discovery history',
+ 13:'biology unexpected discovery species',14:'chemistry new element discovery history',
+ 15:'physics discovery unexpected experiment',16:'geology strange mineral discovery',
+ 17:'ocean shipwreck rediscovery history',18:'weather extraordinary historical event',
+ 19:'engineering disaster unusual history',20:'music recording lost rediscovered history',
+ 21:'cinema lost film rediscovered history',22:'literature lost manuscript rediscovery',
+ 23:'presidential history unusual event',24:'unsolved historical crime discovery',
+ 25:'architecture strange hidden building',26:'transportation invention historical surprise',
+ 27:'business company invention unusual history',28:'unusual world records exploration',
+ 29:'animal rediscovered extinct species',30:'everyday object invention history',
+ 31:'radio invention history unusual',32:'broadcasting radio television early history',
+ 33:'semiconductor surprising discovery history',34:'early personal computer history',
+ 35:'satellite communications invention history',36:'robotics early automatons invention',
+ 37:'audio technology recording invention history',38:'power station engineering history',
+ 39:'electronics historical invention unusual'
+};
+function wikiExcerpt(s) {
+ return String(s||'').replace(/\s+/g,' ').trim();
+}
+async function findWikipedia({roll,catalog,seen}) {
+ const base=WIKI_QUERIES[roll.sector] || (catalog.sectors.find(s=>s.id===roll.sector)?.name+' historical discovery');
+ const seenWikipedia=[...seen].filter(id=>id.startsWith('wiki-')).length;
+ // Keep a finite search offset and rotate terms; do not loop over seen items.
+ const topics=[base,base+' discoveries facts'];
+ const offset=(seenWikipedia%5)*8;
+ const replies=await Promise.allSettled(topics.map((q,i)=>{
+  const u=new URL(WIKI);
+  u.search=new URLSearchParams({action:'query',generator:'search',gsrsearch:q,
+    gsrlimit:'10',gsroffset:String((offset+i*8)%48),
+    prop:'extracts',exintro:'1',explaintext:'1',exchars:'2400',
+    format:'json',origin:'*'});
+  return request(u.href,{cache:'no-store'},8000);
+ }));
+ const candidates=[];
+ for(const reply of replies){
+  if(reply.status!=='fulfilled')continue;
+  for(const page of Object.values(reply.value?.query?.pages||{})){
+   const full=wikiExcerpt(page.extract);
+   const title=clean(page.title), id='wiki-'+page.pageid;
+   if(!Number.isInteger(page.pageid)||!title||seen.has(id)||full.length<460)continue;
+   if(/^(List of|Index of|Timeline of|Category:|20[0-9][0-9] in |[0-9]{4} in )/i.test(title))continue;
+   if(/may refer to|is a disambiguation page/i.test(full.slice(0,200)))continue;
+   if(/television series|fictional character|video game series/i.test(full.slice(0,200)) && roll.sector!==21)continue;
+   candidates.push({id,title,full,pageid:page.pageid});
+  }
+ }
+ if(!candidates.length)return null;
+ const choice=candidates[random(candidates.length)];
+ const sentences=choice.full.match(/[^.!?]+[.!?]+/g)||[];
+ let summary=sentences.slice(0,3).join(' ').trim();
+ if(summary.length<90)summary=choice.full.slice(0,290);
+ if(summary.length>540)summary=summary.slice(0,537).trimEnd()+'…';
+ const article='https://en.wikipedia.org/?curid='+choice.pageid;
+ return {id:choice.id,title:choice.title,summary,
+   full:choice.full+'\n\nSource: Wikipedia contributors. Excerpt reused under Creative Commons Attribution-ShareAlike; follow the source and license links for details.',
+   year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
+   status:'encyclopedia discovery · CC BY-SA excerpt',
+   sourceTitle:'Wikipedia contributors',sourceUrl:article,
+   sources:[{title:'Wikipedia copyright and CC BY-SA attribution',url:WIKI_LICENSE}],
+   discoverySource:'live',attribution:'Wikipedia / CC BY-SA'};
+}
+async function find(options){
+ let story=null;
+ try{story=await findSearch(options)}catch(error){console.warn('Book search service unavailable',error);}
+ if(story)return story;
+ try{return await findWikipedia(options)}catch(error){console.warn('Book independent encyclopedia discovery unavailable',error);return null;}
+}
+
 global.PhiInfiniteBookDiscover={preferences,find,sourcePlan};
 })(window);
