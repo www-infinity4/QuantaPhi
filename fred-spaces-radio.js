@@ -9,7 +9,7 @@
   // Stable numbers: never remap an episode number after somebody shares it.
   // Metadata is verified from the public host catalog; audio is NOT licensed here.
   const episodes = [
-    {id:"fred-0700",slot:700,title:"Bitcoin and Coffee",date:"Dec 29, 2025",duration:"1:09:32",tags:["bitcoin","coffee","markets"],description:"Fred Krueger's archived Bitcoin and Coffee Space. The listing confirms its title, date and duration; a recording transcript has not been verified.",source:ARCHIVE,audioUrl:null},
+    {id:"fred-0700",slot:700,title:"Bitcoin and Coffee",date:"Dec 29, 2025",duration:"1:09:32",tags:["bitcoin","coffee","markets"],description:"Fred Krueger's recorded Bitcoin and Coffee Space. The public listing confirms its title, date and duration; the conversation has not been independently transcribed here.",source:"https://x.com/i/spaces/1OyKAjYPeXqGb",audioUrl:null},
     {id:"fred-0147",slot:147,title:"Silver is a bubble. Bitcoin is the real deal.",date:"Dec 27, 2025",duration:"0:16:21",tags:["silver","bitcoin","metals"],description:"A brief Fred Krueger Space indexed as a comparison of silver and Bitcoin. The specific arguments have not been verified against a transcript.",source:"https://twitter.com/i/spaces/1MnGnPEEvWYxO",audioUrl:null},
     {id:"fred-0298",slot:298,title:"New Year BTC",date:"Jan 1, 2026",duration:"0:56:17",tags:["new year","bitcoin","markets"],description:"An archived New Year's Day Space titled New Year BTC. Specific predictions and discussion are not inferred without an authorized recording.",source:ARCHIVE,audioUrl:null},
     {id:"fred-0555",slot:555,title:"State of the markets. Bitcoin.",date:"Feb 9, 2026",duration:"4:20:17",tags:["markets","bitcoin","macro"],description:"An extended market-focused Fred Krueger Space, according to the public episode listing. Discussion details require the recording or transcript.",source:"https://twitter.com/i/spaces/1MYxNlwEqYyGw",audioUrl:null},
@@ -129,7 +129,7 @@
     }else{
       stream.append(node("div","fs-play-symbol","◉"),node("p","fs-stream-note","The first episode is free to discover. Fred’s recording has not yet been connected to an authorized Phi audio source."));
     }
-    const link=node("a","fs-source","Find Fred’s episode or original replay ↗");link.href=active.source;link.target="_blank";link.rel="noopener noreferrer";stream.append(link);card.append(stream);
+    const link=node("a","fs-source","Open Fred’s original X replay ↗");link.href=active.source;link.target="_blank";link.rel="noopener noreferrer";stream.append(link);card.append(stream);
     const actions=node("div","fs-actions");
     actions.append(button(stars.has(active.id)?"★ Starred":"☆ Star",favorite),button("Share +0.1 ★",share),button("Collect +0.1 ★",collect));
     card.append(actions);
