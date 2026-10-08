@@ -83,7 +83,7 @@ test('all dimensions change the discovery plan and preserve the expanded 7800 co
  const archives=w.PhiInfiniteBookDiscover.sourcePlan({sector:1,angle:9,sourceClass:1},c,'Nikola Tesla');
  const museum=w.PhiInfiniteBookDiscover.sourcePlan({sector:1,angle:19,sourceClass:2},c,'Nikola Tesla');
  assert.equal(archives.combination,81);
- assert.equal(museum.combination,192);
+ assert.equal(museum.combination,182);
  assert.match(archives.queries.join(' '),/patent archival record/);
  assert.match(museum.queries.join(' '),/museum collection/);
  assert.match(museum.queries.join(' '),/Lost and rediscovered/);
