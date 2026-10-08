@@ -652,6 +652,76 @@
       "sourceTitle": "Smithsonian Magazine · Inside the First Deep-Sea Dive in History",
       "sourceUrl": "https://www.smithsonianmag.com/science-nature/inside-the-first-deep-sea-dive-in-history-180982128/",
       "detail": "The 1930 bathysphere used a cable-suspended steel chamber for direct undersea observation."
+    },
+    {
+      "id": "apollo12-sce-aux-1969",
+      "sector": 7,
+      "angle": 9,
+      "sourceClass": 4,
+      "status": "documented",
+      "year": 1969,
+      "title": "The tiny switch that helped save Apollo 12 after lightning struck twice",
+      "summary": "Thirty-six seconds after Apollo 12 lifted off in 1969, lightning disrupted spacecraft readings. A second strike followed. Mission Control engineer John Aaron recognized a little-used electrical-system setting, and astronaut Alan Bean moved the SCE switch to AUX. The crew continued toward the Moon.",
+      "full": "Apollo 12 had scarcely cleared the launch pad when the Saturn V encountered a problem mission planners did not want to see: lightning. Instrument readings became confusing, then another electrical discharge hit seconds later. The booster kept flying, but the team needed reliable spacecraft telemetry to tell what had happened.\n\nIn Mission Control, engineer John Aaron recognized that the Signal Conditioning Equipment could be restored by selecting its auxiliary setting. Alan Bean located and changed the switch aboard the spacecraft. NASA's records describe a recovery accomplished by one precise operational decision amid an enormous launch. Apollo 12 went on to land on the Moon, but its earliest moments remain a striking example of overlooked engineering knowledge.",
+      "sourceTitle": "NASA · 55 Years Ago: Apollo 12 Makes a Pinpoint Landing on the Moon",
+      "sourceUrl": "https://www.nasa.gov/history/55-years-ago-apollo-12-makes-a-pinpoint-landing-on-the-moon/",
+      "detail": "John Aaron identified the SCE-to-AUX correction after Apollo 12's lightning strikes."
+    },
+    {
+      "id": "antikythera-gears-shipwreck",
+      "sector": 10,
+      "angle": 3,
+      "sourceClass": 2,
+      "status": "documented",
+      "year": 1901,
+      "title": "The shipwreck mechanism that calculated eclipses with ancient gears",
+      "summary": "A corroded mechanism recovered from an ancient shipwreck near the Greek island of Antikythera turned out to be a sophisticated geared instrument. The Smithsonian identifies it as the oldest known device designed to predict astronomical positions and eclipses.",
+      "full": "The remarkable object did not look much like a modern calculator. It was a battered assembly of ancient mechanical parts found in the wreck of a ship near Antikythera. Researchers came to recognize its complex gearwork as an instrument for following astronomical cycles and predicting celestial events.\n\nThe surprising point is not an unsupported claim about lost modern technology. It is that ancient makers had built a specialized mechanical calculation device long before electronic machines existed. The Smithsonian's National Museum of American History preserves a modern reconstruction donated by historian Derek de Solla Price in 1979. The replica helps show how physical gears can encode mathematical relationships while the damaged original still invites investigation.",
+      "sourceTitle": "Smithsonian National Museum of American History · Antikythera mechanism replica",
+      "sourceUrl": "https://americanhistory.si.edu/collections/object/nmah_1818245",
+      "detail": "An ancient shipwreck preserved a gear-driven device used to predict astronomical positions and eclipses."
+    },
+    {
+      "id": "phonautogram-2008-playback",
+      "sector": 37,
+      "angle": 3,
+      "sourceClass": 1,
+      "status": "documented",
+      "year": 2008,
+      "title": "A sound recording that waited about 150 years to be heard",
+      "summary": "In the nineteenth century, Édouard-Léon Scott de Martinville's phonautograph traced sound waves without a way to play them. Modern researchers converted surviving traces into audio in 2008, revealing sounds recorded long before conventional sound playback became possible.",
+      "full": "Scott de Martinville's phonautograph was designed to draw the shape of a sound. A vibrating stylus marked soot-darkened surfaces, leaving a physical record of movement rather than something a nineteenth-century listener could play back. The original aim was investigation of acoustics, not a music player.\n\nMore than a century later, digital imaging and reconstruction made the apparently silent drawings audible. Researchers played back an 1860 recording of a French song in 2008, according to the Library of Congress. It is an unusual historical reversal: the sound had been stored first, and the means to hear it had to be invented much later. The object was not a lost recording machine with a hidden speaker; it was a visual trace finally interpreted as sound.",
+      "sourceTitle": "Library of Congress · From the Recording Registry: Phonautograms",
+      "sourceUrl": "https://blogs.loc.gov/now-see-hear/2021/08/from-the-recording-registry-phonautograms-c-1853-61/",
+      "detail": "Digital reconstruction in 2008 made an 1860 phonautograph trace audible."
+    },
+    {
+      "id": "bell-emperor-telephone-1876",
+      "sector": 2,
+      "angle": 9,
+      "sourceClass": 1,
+      "status": "documented",
+      "year": 1876,
+      "title": "The telephone exhibition where an emperor helped test Bell's invention",
+      "summary": "Alexander Graham Bell's telephone was demonstrated to Emperor Pedro II of Brazil and scientist William Thomson at Philadelphia's 1876 Centennial Exhibition. A letter Bell wrote two days later describes his encounter and the demonstration in detail.",
+      "full": "At the 1876 Centennial Exhibition, Alexander Graham Bell was showing an apparatus whose potential was not yet obvious to everyone. Emperor Pedro II of Brazil recognized Bell in the crowd and joined the group examining his work with scientist William Thomson, later Lord Kelvin.\n\nBell described the episode to his parents in a June 27 letter preserved by the Library of Congress. His account compares the costs and capabilities of electrical instruments on display, and it recounts moving into another room to sing into the telephone. The intriguing evidence is not a dramatic quotation repeated without context. It is a firsthand letter showing how a novel technology was demonstrated, compared with its rivals, and presented to influential witnesses before it became ordinary.",
+      "sourceTitle": "Library of Congress · Bell letter about the 1876 Centennial Exhibition",
+      "sourceUrl": "https://www.loc.gov/item/magbell.00500228/",
+      "detail": "Bell documented the Centennial Exhibition telephone demonstration in a letter to his parents."
+    },
+    {
+      "id": "eniac-patent-invalidated-1972",
+      "sector": 2,
+      "angle": 17,
+      "sourceClass": 2,
+      "status": "documented",
+      "year": 1972,
+      "title": "The computer patent ruling that reopened the story of ENIAC",
+      "summary": "ENIAC is a landmark in electronic computing, but its legal history is less familiar. In 1972, a federal judge invalidated an ENIAC patent; the Smithsonian explains how earlier work by John V. Atanasoff at Iowa State College figured in the ruling.",
+      "full": "ENIAC's large electronic circuits helped establish a new age of digital computing. Years afterward, however, the legal story surrounding its inventors became tangled in patent claims and disputes over who had developed key ideas first. A patent issued in 1964 became the focus of a challenge by Honeywell.\n\nThe Smithsonian's collection history explains that Judge Earl Lawson invalidated the ENIAC patent in late 1972. Part of the decision concerned earlier computer work by John V. Atanasoff at Iowa State College during the late 1930s. The ruling does not reduce the entire history of computing to a single person. It does reveal why the familiar 'first computer' label has always involved definitions, competing designs, and legal as well as technical evidence.",
+      "sourceTitle": "Smithsonian National Museum of American History · ENIAC Accumulator #2",
+      "sourceUrl": "https://americanhistory.si.edu/collections/object/nmah_334742",
+      "detail": "The ENIAC patent was invalidated in 1972 partly because of earlier Atanasoff work."
     }
   ]
 }
