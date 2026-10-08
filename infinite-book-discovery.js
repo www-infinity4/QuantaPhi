@@ -351,7 +351,7 @@ async function writeWikipediaStory(page,plan,roll){
 function wikiExcerpt(s) {
  return String(s||'').replace(/\s+/g,' ').trim();
 }
-async function findWikipedia({roll,catalog,seen,focus=''}) {
+async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
  const plan=sourcePlan(roll,catalog,focus);
  const base=WIKI_QUERIES[roll.sector] || (plan.name+' historical discovery');
  const seenWikipedia=[...seen].filter(id=>id.startsWith('wiki-')).length;
@@ -398,15 +398,26 @@ async function findWikipedia({roll,catalog,seen,focus=''}) {
  if(summary.length<90)summary=choice.full.slice(0,290);
  if(summary.length>540)summary=summary.slice(0,537).trimEnd()+'…';
  const article='https://en.wikipedia.org/?curid='+choice.pageid;
- const written=await writeWikipediaStory(choice,plan,roll);
- return {id:choice.id,title:written?.title||choice.title,summary:written?.summary||summary,
-   full:written?.full||(choice.full+'\n\nSource: Wikipedia contributors. Excerpt reused under Creative Commons Attribution-ShareAlike; follow the source and license links for details.'),
-   detail:written?.detail||'',year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
+ const backup={id:choice.id,title:choice.title,summary,
+   full:choice.full+'\n\nSource: Wikipedia contributors. Excerpt reused under Creative Commons Attribution-ShareAlike; follow the source and license links for details.',
+   year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
    combination:plan.combination,
-   status:written?'original single-source research · Wikipedia / CC BY-SA':'backup encyclopedia excerpt · CC BY-SA · no GPT rewrite',
+   status:'backup encyclopedia excerpt · CC BY-SA · no GPT rewrite',
    sourceTitle:'Wikipedia contributors',sourceUrl:article,
    sources:[{title:'Wikipedia copyright and CC BY-SA attribution',url:WIKI_LICENSE}],
-   discoverySource:'live',discoveryMethod:written?'gpt-wiki':'encyclopedia-backup',attribution:'Wikipedia / CC BY-SA'};
+   discoverySource:'live',discoveryMethod:'encyclopedia-backup',attribution:'Wikipedia / CC BY-SA'};
+ // Never make the immediate sourced fallback wait for an unresponsive AI Worker.
+ // Upgrade this same discovery with original prose only after the reader opts
+ // to leave the card undisturbed.
+ if(typeof onDeep==='function'){
+  void writeWikipediaStory(choice,plan,roll).then(written=>{
+   if(!written)return;
+   onDeep({...backup,...written,id:'wiki-gpt-'+choice.pageid,
+    status:'original single-source research · Wikipedia / CC BY-SA',
+    discoveryMethod:'gpt-wiki'});
+  }).catch(error=>console.warn('Wikipedia story rewrite unavailable',error));
+ }
+ return backup;
 }
 async function find(options){
  // A stalled GPT/search Worker must not hold the orange story card hostage.
