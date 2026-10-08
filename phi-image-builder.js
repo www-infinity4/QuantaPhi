@@ -10,7 +10,7 @@ const make=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.class
 const $=selector=>host.querySelector(selector);
 const emit=(type,detail)=>window.dispatchEvent(new CustomEvent('phi:image:'+type,{detail}));
 const id=()=>crypto?.randomUUID?.()||('phi-'+Date.now()+'-'+Math.random().toString(36).slice(2));
-let mode='Image',source=null,design=null,urls=[],result=null,artifact=null,busy=false,lastInstruction='';
+let mode='Image',source=null,design=null,urls=[],result=null,artifact=null,busy=false,lastInstruction='',lastExactText='',preparingReference=false;
 function state(value){host.dataset.stage=value}
 function notice(text){const area=host.dataset.stage==='finished'?'.pi-finished':host.dataset.stage==='progress'?'.pi-progress':'.pi-composer';const el=$(area+' .pi-notice');if(el)el.textContent=text}
 function step(n,value,text){const el=$('[data-pi-step="'+n+'"]');if(el){el.dataset.state=value;el.lastElementChild.textContent=text||(value==='done'?'Done':value==='active'?'Working…':'Waiting')}}
@@ -39,6 +39,7 @@ function layout(){
  form.append(choices);
  const uploads=make('div','pi-file-area');uploads.append(input('source','Upload image','Source / create similar'),input('design','Style reference','Optional second image'));form.append(uploads);
  const prompt=make('textarea');prompt.id='pi-prompt';prompt.setAttribute('aria-label','Describe image to build');prompt.placeholder='Describe the image, style, words, and edits you want. Example: A beautiful vintage AM radio advertisement photographed like a 1950s magazine cover.';form.append(prompt);
+ const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Exact printed words (optional; no imaginary letters)';exact.setAttribute('aria-label','Exact words to print on the finished image');form.append(exact);
  const opts=make('div','pi-options');
  for(const [name,text]of [['story','Use story as inspiration'],['search','Use current search']]){
   const label=make('label');const cb=make('input');cb.type='checkbox';cb.id='pi-'+name;label.append(cb,document.createTextNode(text));opts.append(label)
@@ -51,20 +52,22 @@ function layout(){
  const back=make('button','pi-primary','Back to description');back.type='button';back.dataset.piAction='back';progress.append(back);
  const done=make('div','pi-finished pi-panel');done.append(make('h2','','Your Image'),make('p','pi-sub','This result is the actual image returned by the connected renderer.'));
  const img=make('img','pi-result');img.alt='Generated image result';done.append(img,make('p','pi-notice',''));
+ const audit=make('div','pi-audit');audit.setAttribute('aria-live','polite');audit.append(make('strong','pi-audit-title','Visual review'),make('p','pi-audit-summary','Not yet reviewed.'),make('ul','pi-audit-issues'));done.append(audit);
  const actions=make('div','pi-actions');
- for(const [key,label,wide]of [['star','☆ Star'],['share','↗ Share +★'],['collect','+ Collect +★'],['more','Build more like this',true],['edit','Edit prompt'],['download','Save image']]){
+ for(const [key,label,wide]of [['star','☆ Star'],['share','↗ Share +★'],['collect','+ Collect +★'],['good','✓ Looks good'],['fix','Fix issues',true],['more','Build more like this',true],['edit','Edit prompt'],['download','Save image']]){
   const b=make('button',wide?'pi-wide':'',label);b.type='button';b.dataset.piAction=key;actions.append(b)
  }
  done.append(actions);
  host.replaceChildren(form,progress,done);
 }
 async function build(){
- if(busy)return;
+ if(busy||preparingReference)return;
  const typed=$('#pi-prompt').value.trim().slice(0,3000);
+ const exactText=$('#pi-exact-text').value.trim().slice(0,120);
  if(!typed&&!source&&!contextStory()){notice('Describe the artwork or upload a photo first.');return}
  const description=typed||('Build a distinctive '+mode.toLowerCase()+' based on my uploaded reference or story.');
  const requestId=id(),story=contextStory(),search=contextSearch();
- busy=true;lastInstruction=description;result=null;artifact=null;
+ busy=true;lastInstruction=description;lastExactText=exactText;result=null;artifact=null;
  state('progress');initSteps();notice('Preparing a real render request…');
  emit('build:start',{requestId,mode,description});
  let phase=0,warning='',vision='',prompt='';
@@ -73,18 +76,31 @@ async function build(){
   if(source)try{vision=await renderer.inspect(source)}catch(_){warning='Reference reader unavailable; using the uploaded image directly.'}
   step(phase++,'done');
   step(phase,'active','GPT directing image composition');
-  try{prompt=await renderer.direct({description,mode,vision,story,search,hasUpload:Boolean(source),designFile:Boolean(design)})}
+  try{prompt=await renderer.direct({description,mode,vision,story,search,hasUpload:Boolean(source),designFile:Boolean(design),exactText,preferences:window.PhiImageLearning?.preferences(mode)||''})}
   catch(_){prompt=[renderer.modePrompt(mode),description,story,search].filter(Boolean).join('\n');warning=[warning,'GPT director unavailable; using your instructions.'].filter(Boolean).join(' ')}
   step(phase++,'done');
   step(phase,'active','Image renderer in progress');
   notice([warning,'Sending artwork to the actual image-generation service.'].filter(Boolean).join(' '));
-  const rendered=await renderer.render({description,mode,source,design,prompt});
+  const rendered=await renderer.render({description,mode,source,design,prompt,exactText});
   step(phase++,'done');
-  step(phase,'active','Decoding generated image');
-  const size=await renderer.validate(rendered.src);
-  step(phase,'done');
-  result=rendered.src;
-  artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search};
+  step(phase,'active','Examining finished pixels');
+  result=exactText?await renderer.composeExactText(rendered.src,exactText):rendered.src;
+  const size=await renderer.validate(result);
+  artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search};
+  let review=null;
+  try{review=await renderer.review({src:result,description,mode,exactText})}
+  catch(error){warning=[warning,'Visual reviewer unavailable; result not graded.'].filter(Boolean).join(' ')}
+  artifact.review=review;
+  if(review)window.PhiImageLearning?.record(artifact,'review',{issues:review.issues});
+  const audit=$('.pi-audit'),title=audit.querySelector('.pi-audit-title'),summary=audit.querySelector('.pi-audit-summary'),issues=audit.querySelector('.pi-audit-issues');
+  issues.replaceChildren();
+  if(review){
+   title.textContent='Visual review · '+(review.score===null?'Unscored':review.score+'/100');
+   summary.textContent=review.status==='needs_work'?'Possible mistakes detected — use Fix issues to revise.':review.status==='good'?'No major defects detected by the automated critic. Please verify visually.':'Review uncertain. Check the result before saving.';
+   for(const issue of review.issues){const li=make('li');li.textContent=issue.problem+(issue.fix?' — '+issue.fix:'');issues.append(li)}
+   audit.dataset.review=review.status;
+  }else{title.textContent='Visual review unavailable';summary.textContent='Artwork rendered, but its details and lettering have not been checked.';audit.dataset.review='uncertain'}
+  step(phase,'done',review?'Visual check complete':'Review unavailable');
   $('.pi-result').src=result;
   $('[data-pi-action="star"]').textContent='☆ Star';
   state('finished');notice('Created '+size.width+' × '+size.height+' using '+rendered.renderer+(warning?' · '+warning:''));
@@ -113,13 +129,27 @@ host.addEventListener('click',event=>{
  if(choice){mode=choice.dataset.piMode;host.querySelectorAll('[data-pi-mode]').forEach(b=>b.setAttribute('aria-pressed',b===choice?'true':'false'));return}
  const action=event.target.closest('[data-pi-action]')?.dataset.piAction;
  if(action==='build')void build();
- if(action==='back'||action==='edit'){state('composer');if(lastInstruction)$('#pi-prompt').value=lastInstruction}
- if(action==='more'){
-  state('composer');$('#pi-prompt').value=lastInstruction+'\nCreate a striking new variation retaining the strongest composition and subject identity.';
-  if(result){const oldResult=result;renderer.asBlob(oldResult).then(blob=>{source=new File([blob],'phi-variation-reference.png',{type:blob.type});showFile(source,'source')}).catch(()=>{})}
+ if(action==='back'||action==='edit'){state('composer');if(lastInstruction)$('#pi-prompt').value=lastInstruction;$('#pi-exact-text').value=lastExactText}
+ if(action==='more')void reopenAsReference(lastInstruction+'\nCreate a new variation retaining the original subject, valid geometry, and strongest composition.');
+ if(action==='fix'){
+  const review=artifact?.review;
+  const corrections=(review?.issues||[]).map(i=>i.fix||i.problem).filter(Boolean);
+  const instruction=[lastInstruction,'Refine the CURRENT rendered image. Preserve all correct content and overall subject. Repair the following:',...corrections,review?.repairPrompt||'Correct visually implausible geometry and any fake lettering.','Use physically believable connections and print only exact words provided in the separate text field.'].filter(Boolean).join('\n');
+  window.PhiImageLearning?.record(artifact,'needs_fix',{problem:review?.issues?.[0]?.problem||'User requested corrections'});
+  void reopenAsReference(instruction);
  }
+ if(action==='good'){window.PhiImageLearning?.record(artifact,'looks_good');notice('Thank you. This result is a positive design example for future renders on this device.')}
+
  if(action==='star'||action==='share'||action==='collect'||action==='download')emit('action',{action,artifact,result});
 });
+async function reopenAsReference(instruction){
+ state('composer');$('#pi-prompt').value=instruction.slice(0,3000);$('#pi-exact-text').value=lastExactText;
+ if(!result)return;
+ const previous=result;preparingReference=true;notice('Preparing this image as the next reference…');
+ try{const blob=await renderer.asBlob(previous);source=new File([blob],'phi-refinement.png',{type:blob.type});showFile(source,'source');notice('Reference ready. Build when you want the refined image.')}
+ catch(error){notice('Could not attach the previous render: '+String(error?.message||error))}
+ finally{preparingReference=false}
+}
 layout();state('composer');
 window.PhiImageBuilder={prefill(text,{useStory=false}={}){$('#pi-prompt').value=String(text||'').slice(0,3000);$('#pi-story').checked=!!useStory},get:()=>({artifact,result,mode})};
 })();
