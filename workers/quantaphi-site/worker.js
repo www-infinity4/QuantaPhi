@@ -196,6 +196,7 @@ export default {
    incoming.hostname = 'quantaphi.org'; incoming.protocol = 'https:';
    return Response.redirect(incoming.toString(), 308);
   }
+  if (incoming.pathname === '/q-share' && (request.method === 'GET' || request.method === 'HEAD')) { const response=qpShareResponse(incoming); return request.method === 'HEAD' ? new Response(null,{status:response.status,headers:response.headers}) : response; }
   if (incoming.pathname === '/v1/site-read' && request.method === 'GET') {
    const site=(incoming.searchParams.get('site')||'').toLowerCase();
    if(site==='ibm')return readIbmPublicPage(request,incoming);
