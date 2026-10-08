@@ -36,12 +36,21 @@ No token minting on display or refresh. **Star/Share/Collect/Build** connections
 - Verify a valid public deployment and data source endpoint *before* connecting the new Worker to the main site.
 - Run all existing QuantaPhi story, search, minting and wallet regressions; do not mask unrelated failures.
 
-## Current staging coverage
+## Current staging coverage (October 8, 2026)
 
-The Cloudflare D1 has 30 sectors. Energy has 123 curated indexed topics. The other sector catalogs contain only the retained legacy seed words; those sectors are **not ready to publish**. Count verification is available through `/health` or `/v1/counts` when the staging Worker is deployed with its `RR_INDEX` D1 binding.
+Cloudflare D1 `infinity-reads-realms-index` contains **30 sectors and 4,280 distinct sector/topic entries**, all with at least 100 subjects each (smallest sector: 119; Energy: 123). Sector duplicates are rejected by the database's `UNIQUE(sector_id,normalized)` constraint.
 
-The `/v1/draw` Worker route refuses a sector with fewer than 100 reviewed words. The `/v1/story` route is disabled to public clients unless an authorized server supplies the `RR_WRITER_TOKEN` binding. Those safeguards must remain in place during further expansion.
+Source-controlled vocabulary:
+- `workers/reads-realms/seed-index.sql` supplies the Energy terms, sectors, research refinements and genres.
+- Five `workers/reads-realms/topics/sectors-*.json` files supply at least 100 additional terms for **each** of the other 29 sectors.
+- `workers/reads-realms/generate-seed.cjs` validates every sector, checks normalized duplicates, and generates a repeatable `INSERT OR IGNORE` SQL import for Cloudflare without requiring external packages.
+
+These indexed terms have been curated as research subject labels. They have **not** each been independently fact-checked against historical sources; each generated historical story still requires source checking.
+
+The `/v1/draw` staging Worker refuses a sector with fewer than 100 reviewed indexed subjects. `/v1/story` is closed to public clients unless an authorized server supplies `RR_WRITER_TOKEN`. These thresholds remain active even though the vocabularies are populated.
+
+The staging Worker is **not yet deployed or connected to the live QuantaPhi page**, and neither channel content feeds nor wallet minting has been altered.
 
 ## Next implementation milestone
 
-Fill and independently review the remaining 29 sector-specific word libraries, add a controlled ingestion and editorial review path to D1, then integration-test and launch the new UI behind a feature flag. Existing story card stays in place until the replacement passes.
+Build an accountable content editorial workflow and protected server bridge, verify real-time source retrieval and GPT synthesis under failure conditions, then browser-test and launch the new UI behind a feature flag. The existing story card stays in place until the replacement passes.
