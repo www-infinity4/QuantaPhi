@@ -10,3 +10,7 @@
 .fs-btn{background:#fff9e1;color:#282006;border:1px solid #8b742f;padding:10px 12px;border-radius:9px;font-size:13px;font-weight:800;cursor:pointer;min-height:42px}.fs-btn:disabled{opacity:.65;cursor:progress}.fs-btn:focus-visible,.fs-source:focus-visible{outline:3px solid #143fd7;outline-offset:2px}
 .fs-phi{background:#37301a;color:#fff5b5;border-color:#5d4a19;flex:1 1 122px}.fs-bottom{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:16px}.fs-next{background:#165b34;color:white;border:2px solid #0d4024;min-height:47px}.fs-balance{font-size:12px;font-weight:800}.fs-status{font-size:12px;line-height:1.5;margin:10px 0 0;color:#574111}
 @media(max-width:440px){.fs-card{padding:12px}.fs-heading h2{font-size:20px}.fs-phi{flex-basis:105px}.fs-next{width:100%}}
+
+.fs-free{background:#fffdf1;color:#2f5e20;border:1px solid #8eb36e;border-radius:8px;padding:9px 12px;margin:12px 0 2px;font-size:12px;font-weight:900;letter-spacing:.03em}
+.fs-next:disabled{background:#6f6b56;color:#f5f0db;border-color:#74705b;cursor:not-allowed;opacity:.9}
+.fs-stream a{min-height:36px;display:inline-flex;align-items:center}
