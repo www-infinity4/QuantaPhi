@@ -38,7 +38,7 @@ const terms=[
 [22,/novel|author|literature|poem|writer/i],
 [23,/president|white house|royal|king|queen|lincoln/i],
 [24,/murder|crime|cold case|heist/i],
-[25,/architecture|skyscraper|building design|city history/i],
+[25,/architecture|skyscraper|building design|hidden room|secret passage|unusual building|construction mystery/i],
 [26,/automobile|railroad|car engine|aviation|flight|train/i],
 [27,/business|corporation|company|entrepreneur|startup|stock price/i],
 [28,/world record|athlete|amazing feat|climber|explorer/i],
@@ -51,6 +51,24 @@ const origin=u=>{try{const x=new URL(u);return x.protocol==='https:'?x.hostname.
 const canonical=u=>{try{const x=new URL(u);if(x.protocol!=='https:')return '';x.hash='';for(const k of [...x.searchParams.keys()])if(/^utm_|^(fbclid|gclid|ref)$/i.test(k))x.searchParams.delete(k);return x.toString()}catch(_){return ''}};
 const hash=v=>{let h=2166136261;for(let i=0;i<v.length;i++){h^=v.charCodeAt(i);h=Math.imul(h,16777619)}return(h>>>0).toString(36)};
 const random=n=>{try{const a=new Uint32Array(1);crypto.getRandomValues(a);return a[0]%n}catch(_){return Math.floor(Math.random()*n)}};
+
+const PLACE_PROFILE=/\b(?:is|was|are|were)\s+(?:(?:a|an|the)\s+)?(?:(?:small|large|former|historic|historical|rural|incorporated|unincorporated|coastal|market|medieval|ancient|ghost|administrative|census-designated|independent|populated)\s+){0,4}(?:town|city|village|municipality|commune|county|borough|suburb|hamlet|township|parish|district|settlement|census-designated place|unincorporated community)\b/i;
+const SECRET_HOOK=/\b(?:discovery|discover(?:ed|ies)?|rediscover(?:ed|y)|uncover(?:ed|ing)?|lost|hidden|forgotten|secret|classified|declassified|mystery|mysterious|strange|bizarre|oddity|unexpected|surprising|unknown|unsolved|hoax|myth|forgery|forged|artifact|artefact|excavation|excavated|archaeological|ancient|rare|recovered|accidental(?:ly)?|invention|invented|inventor|experiment|breakthrough|first-ever|pioneering|deception|espionage|spycraft|conspiracy|shipwreck|wreckage|anomal(?:y|ies)|unusual|paradox|cover-up|lost manuscript|patent|disaster|catastrophe|mysteries)\b/i;
+function isPlaceProfile(story){
+ const title=clean(story?.title),intro=clean(story?.summary||story?.full).slice(0,850);
+ if(!title||!intro)return false;
+ if(PLACE_PROFILE.test(intro.slice(0,470)))return true;
+ return /\b(?:town|city|village|municipality|county|borough|township|commune)\b/i.test(intro.slice(0,470)) &&
+   /\b(?:population|census|postal code|zip code|administrative center|administrative centre)\b/i.test(intro.slice(0,650));
+}
+function isSecretStory(story){
+ if(isPlaceProfile(story))return false;
+ const title=clean(story?.title),lead=clean(story?.summary||story?.full);
+ if(!title||!lead)return false;
+ if(/^(?:List of|Index of|Timeline of|Category:)/i.test(title))return false;
+ return SECRET_HOOK.test((title+' '+lead).slice(0,1000));
+}
+
 function preferences(activeQuery,catalog){
  const values=[],unique=new Set(),all=[...read(HISTORY).slice(0,300),...(Array.isArray(global.QuantaCloudBuildHistory)?global.QuantaCloudBuildHistory.slice(0,300):[])];
  for(const x of all){const q=clean(x?.query||x?.title),id=x?.search_id||x?.token_id||x?.id||q;if(!q||unique.has(id))continue;unique.add(id);values.push({q,weight:1.5})}
@@ -73,7 +91,7 @@ function sourcePlan(roll,catalog){
  const angle=catalog.angles.find(a=>a.id===roll.angle)?.name||'forgotten discovery';
  const domains=catalog.sourceRegistry.find(s=>s.sector===roll.sector)?.domains||['si.edu','loc.gov','nps.gov','smithsonianmag.com'];
  const domain=domains[random(domains.length)];
- return {name,angle,queries:[name+' '+angle+' surprising historical discovery site:'+domain,name+' '+angle+' museum archive discovery']};
+ return {name,angle,queries:[name+' '+angle+' hidden discovery unusual event site:'+domain+' -town -municipality -village',name+' '+angle+' documented forgotten event museum archive -town -city']};
 }
 async function request(url,options={},ms=8500){
  const c=new AbortController(),timeout=setTimeout(()=>c.abort(),ms);
@@ -82,7 +100,8 @@ async function request(url,options={},ms=8500){
 function extract(payload){
  return (Array.isArray(payload?.results)?payload.results:[]).map(r=>({title:clean(r.title).slice(0,200),summary:clean(r.content||r.description).slice(0,700),url:canonical(r.url)}))
  .filter(r=>r.title.length>=13&&r.summary.length>=70&&origin(r.url))
- .filter(r=>!/\/(shop|login|signup|cart)(\/|\?|$)/i.test(r.url));
+ .filter(r=>!/\/(shop|login|signup|cart)(\/|\?|$)/i.test(r.url))
+ .filter(r=>!isPlaceProfile(r));
 }
 function textAnswer(data){
  let x=data?.output_text??data?.output??data?.answer??data?.response??data?.content??data?.message??'';
@@ -115,6 +134,7 @@ async function findSearch({roll,catalog,seen}){
   const sources=[lead,...corroboration];
   const prompt=[
     'Write one surprising, authentic historical story for The Infinite Book of Big Secrets.',
+    'Never use a routine town, city, village, county, or local geography profile as a secret. A location is only context for a documented strange event, hidden history, unusual discovery or corrected misconception.',
     'Topic: '+plan.name+'. Story angle: '+plan.angle,
     'Evidence is truncated search snippets, not full documents. ONLY make claims explicitly supported by these snippets. They may contain mistakes. If insufficient, return {"insufficient":true}.',
     'Do not invent dates, quotes, names, explanations, or motivations. A legend must be called folklore, and controversial allegations require neutral treatment.',
@@ -128,7 +148,7 @@ async function findSearch({roll,catalog,seen}){
       body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-discovery',verified_context:{sector:roll.sector,angle:roll.angle,sources:sources.length}}})},18000);
    obj=jsonAnswer(textAnswer(data));
   }catch(_){return null}
-  if(!obj||obj.insufficient||clean(obj.title).length<12||clean(obj.summary).length<80||clean(obj.full).length<200)continue;
+  if(!obj||obj.insufficient||clean(obj.title).length<12||clean(obj.summary).length<80||clean(obj.full).length<200||!isSecretStory(obj))continue;
   const status=['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported';
   return {id:'live-'+hash(lead.url),title:clean(obj.title).slice(0,180),summary:clean(obj.summary).slice(0,650),
     full:String(obj.full).trim().slice(0,2300),year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
@@ -157,7 +177,7 @@ const WIKI_QUERIES={
  19:'engineering disaster unusual history',20:'music recording lost rediscovered history',
  21:'cinema lost film rediscovered history',22:'literature lost manuscript rediscovery',
  23:'presidential history unusual event',24:'unsolved historical crime discovery',
- 25:'architecture strange hidden building',26:'transportation invention historical surprise',
+ 25:'secret passages hidden rooms architectural discoveries',26:'transportation invention historical surprise',
  27:'business company invention unusual history',28:'unusual world records exploration',
  29:'animal rediscovered extinct species',30:'everyday object invention history',
  31:'radio invention history unusual',32:'broadcasting radio television early history',
@@ -193,6 +213,7 @@ async function findWikipedia({roll,catalog,seen}) {
    if(/^(List of|Index of|Timeline of|Category:|20[0-9][0-9] in |[0-9]{4} in )/i.test(title))continue;
    if(/may refer to|is a disambiguation page/i.test(full.slice(0,200)))continue;
    if(/television series|fictional character|video game series/i.test(full.slice(0,200)) && roll.sector!==21)continue;
+   if(!isSecretStory({title,summary:full.slice(0,900)}))continue;
    candidates.push({id,title,full,pageid:page.pageid});
   }
  }
@@ -218,5 +239,5 @@ async function find(options){
  try{return await findWikipedia(options)}catch(error){console.warn('Book independent encyclopedia discovery unavailable',error);return null;}
 }
 
-global.PhiInfiniteBookDiscover={preferences,find,sourcePlan};
+global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,isPlaceProfile,isSecretStory};
 })(window);
