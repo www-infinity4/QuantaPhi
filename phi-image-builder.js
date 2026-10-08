@@ -12,7 +12,7 @@ const emit=(type,detail)=>window.dispatchEvent(new CustomEvent('phi:image:'+type
 const id=()=>crypto?.randomUUID?.()||('phi-'+Date.now()+'-'+Math.random().toString(36).slice(2));
 let mode='Image',source=null,design=null,urls=[],result=null,artifact=null,busy=false,lastInstruction='';
 function state(value){host.dataset.stage=value}
-function notice(text){const el=$('.pi-notice');if(el)el.textContent=text}
+function notice(text){const area=host.dataset.stage==='finished'?'.pi-finished':host.dataset.stage==='progress'?'.pi-progress':'.pi-composer';const el=$(area+' .pi-notice');if(el)el.textContent=text}
 function step(n,value,text){const el=$('[data-pi-step="'+n+'"]');if(el){el.dataset.state=value;el.lastElementChild.textContent=text||(value==='done'?'Done':value==='active'?'Working…':'Waiting')}}
 function initSteps(){names.forEach((_,i)=>step(i,'waiting'))}
 function contextStory(){
@@ -43,7 +43,7 @@ function layout(){
  for(const [name,text]of [['story','Use story as inspiration'],['search','Use current search']]){
   const label=make('label');const cb=make('input');cb.type='checkbox';cb.id='pi-'+name;label.append(cb,document.createTextNode(text));opts.append(label)
  }
- form.append(opts);
+ form.append(opts,make('p','pi-notice',''));
  const go=make('button','pi-primary','Build Image');go.type='button';go.dataset.piAction='build';form.append(go);
  const progress=make('div','pi-progress pi-panel');progress.append(make('h2','','Building your image'),make('p','pi-sub','The input card is replaced as each actual service step runs.'));
  const steps=make('div','pi-steps');names.forEach((name,i)=>{const row=make('div','pi-step');row.dataset.piStep=i;row.dataset.state='waiting';row.append(make('span','',name),make('small','','Waiting'));steps.append(row)});
