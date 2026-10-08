@@ -162,7 +162,8 @@
     // specialist refinements, not 1,800 extra outcomes.
     const original = Number(profile?.sector)||0;
     const mapped = Number(catalog.specialistRefinements?.[original]||original);
-    const preferred = mapped>0 && mapped<=baseCount && rand(5)!==0;
+    // Quants guide about two in five draws; the rest seek unexpected world stories.
+    const preferred = mapped>0 && mapped<=baseCount && rand(5)<2;
     const sector = preferred ? mapped : (catalog.sectors[rand(baseCount)]?.id || 3);
     const refinement = preferred && original!==mapped ?
       (catalog.sectors.find(x=>x.id===original)?.name||'') : '';
