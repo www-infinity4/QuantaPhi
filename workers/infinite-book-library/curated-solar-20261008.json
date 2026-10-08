@@ -1,0 +1,183 @@
+{
+  "batch": "2026-10-08 solar history",
+  "editorial_reviewed": true,
+  "reviewer": "QuantaPhi historical source review",
+  "stories": [
+    {
+      "id": "solar-bell-labs-ferris-wheel-1954",
+      "event_key": "1954-bell-labs-solar-ferris-wheel-demonstration",
+      "sector": 1,
+      "wordNumber": 101,
+      "refinementNumber": 5,
+      "directionNumber": 23,
+      "title": "The tiny Ferris wheel that announced a solar-electric revolution",
+      "summary": "In April 1954, Bell Laboratories researchers demonstrated that their new silicon solar cells could do more than produce a barely detectable current. The team powered a miniature Ferris wheel and a radio transmitter using light. The theatrical demonstration marked a practical leap from photovoltaic curiosity toward equipment that sunlight could run.",
+      "full": "A Ferris wheel seems like an odd way to introduce a breakthrough in physics. Yet at Bell Laboratories in April 1954, that miniature moving machine helped show what Daryl Chapin, Calvin Fuller and Gerald Pearson had accomplished. Their silicon cells converted a useful fraction of sunlight into electricity, allowing them to operate everyday apparatus instead of merely registering a tiny laboratory signal.\n\nThe technical challenge was considerable. Earlier light-sensitive devices offered too little power for most practical uses. By improving semiconductor materials and electrical junctions, the Bell Labs team produced cells approaching six percent efficiency. This was not a promise of endless energy: it was a demonstration that usable electrical work could come directly from sunlight, without a spinning generator. The toy was small, but the engineering question it raised was enormous: how cheaply could the effect be reproduced at scale?",
+      "detail": "The public demonstration used solar power to drive a miniature Ferris wheel and radio transmitter.",
+      "year": 1954,
+      "status": "documented",
+      "sourceTitle": "American Physical Society · First Practical Silicon Solar Cell",
+      "sourceUrl": "https://www.aps.org/apsnews/2009/04/bell-labs-silicon-solar-cell",
+      "sources": [
+        {
+          "title": "Smithsonian · Patent for the First Practical Solar Cell",
+          "url": "https://www.smithsonianmag.com/innovation/document-deep-dive-patent-first-practical-solar-cell-1-180947906/"
+        }
+      ],
+      "paths": [
+        {
+          "sector_id": 1,
+          "subject_id": 101,
+          "angle_id": 5,
+          "direction_id": 23
+        },
+        {
+          "sector_id": 1,
+          "subject_id": 102,
+          "angle_id": 5,
+          "direction_id": 1
+        },
+        {
+          "sector_id": 1,
+          "subject_id": 104,
+          "angle_id": 10,
+          "direction_id": 13
+        }
+      ]
+    },
+    {
+      "id": "solar-telstar-3600-sapphire-cells",
+      "event_key": "telstar-one-3600-sapphire-protected-solar-cells-1962",
+      "sector": 1,
+      "wordNumber": 105,
+      "refinementNumber": 9,
+      "directionNumber": 17,
+      "title": "The 3,600 sapphire-protected solar cells that kept Telstar talking",
+      "summary": "When Telstar 1 went into orbit in 1962, its electricity came from thousands of tiny silicon solar cells. Many were arranged in twelve-cell groups and protected by sapphire cover plates. Solar power did not merely illustrate a future dream: it helped operate a communications satellite facing radiation, violent launch vibration and extreme temperature changes.",
+      "full": "The first transatlantic television relays required more than a radio transmitter in orbit. Telstar 1 needed a dependable source of electricity where nobody could change a dead battery. Engineers built a solar power system with 3,600 silicon cells arranged into 300 groups, each with twelve cells. The initial design provided about fourteen watts at twenty-eight volts, according to a contemporary technical report.\n\nThe sapphire protection was as interesting as the solar cells themselves. The satellite had to survive energetic particles in space, severe launch vibration and large temperature swings. Engineers therefore studied electrical output and shielding together. A museum specimen preserves a solar-cell assembly from the program, while NASA's technical record documents the system's performance. The mystery for a modern reader is not how to collect sunlight, but how to keep a light-powered device alive in such a hostile environment.",
+      "detail": "Telstar's 3,600 solar cells initially delivered about 14 W at 28 V, with sapphire protection against radiation.",
+      "year": 1962,
+      "status": "documented",
+      "sourceTitle": "NASA Technical Reports Server · The Solar Cells and Their Mounting",
+      "sourceUrl": "https://ntrs.nasa.gov/citations/19640001176",
+      "sources": [
+        {
+          "title": "Smithsonian · Telstar Solar Cell",
+          "url": "https://americanhistory.si.edu/collections/object/nmah_1301272"
+        },
+        {
+          "title": "NASA · Telstar Opened Era of Global Satellite Television",
+          "url": "https://www.nasa.gov/history/telstar-opened-era-of-global-satellite-television/"
+        }
+      ],
+      "paths": [
+        {
+          "sector_id": 1,
+          "subject_id": 105,
+          "angle_id": 9,
+          "direction_id": 17
+        },
+        {
+          "sector_id": 1,
+          "subject_id": 101,
+          "angle_id": 6,
+          "direction_id": 14
+        },
+        {
+          "sector_id": 1,
+          "subject_id": 102,
+          "angle_id": 9,
+          "direction_id": 21
+        }
+      ]
+    },
+    {
+      "id": "solar-telstar-sunlight-shadow-battery",
+      "event_key": "telstar-power-system-solar-battery-regulation-1962",
+      "sector": 1,
+      "wordNumber": 103,
+      "refinementNumber": 11,
+      "directionNumber": 7,
+      "title": "The sunlight problem Telstar solved with batteries and clever switching",
+      "summary": "Solar panels cannot power a satellite when that satellite travels through Earth's shadow. Telstar's engineers addressed the gap with rechargeable nickel-cadmium batteries, voltage regulation and electrical switching. The satellite's power system illustrates a lasting bottleneck of solar technology: generating electricity is only half the problem when demand continues after the sunlight disappears.",
+      "full": "Imagine designing a device that must cross from daylight into darkness while carrying equipment that cannot simply turn off whenever the Sun slips behind Earth. This was a real engineering challenge for Telstar. Its solar cells made electricity when illuminated, but the spacecraft also required a battery, a voltage-regulation circuit and switching arrangements to conserve power and recharge storage between communications experiments.\n\nA technical report preserved by NASA describes the components as one coordinated power supply, rather than an isolated solar panel. The lessons still appear in modern electrical design: the battery stores energy, regulation keeps equipment supplied within its operating requirements, and system controls decide when power may be saved. In a simplified educational example, a continuously operating 14-watt load consumes 14 watt-hours in one hour because energy equals power multiplied by time. That calculation is illustrative, not Telstar's actual one-hour consumption measurement.",
+      "detail": "Telstar combined solar generation, nickel-cadmium storage, voltage regulation and switching.",
+      "year": 1962,
+      "status": "documented",
+      "sourceTitle": "NASA Technical Reports Server · The Spacecraft Power Supply System",
+      "sourceUrl": "https://ntrs.nasa.gov/citations/19640000967",
+      "sources": [
+        {
+          "title": "Smithsonian · Telstar Solar Cell",
+          "url": "https://americanhistory.si.edu/collections/object/nmah_711090"
+        },
+        {
+          "title": "NASA · Telstar Opened Era of Global Satellite Television",
+          "url": "https://www.nasa.gov/history/telstar-opened-era-of-global-satellite-television/"
+        }
+      ],
+      "paths": [
+        {
+          "sector_id": 1,
+          "subject_id": 103,
+          "angle_id": 11,
+          "direction_id": 7
+        },
+        {
+          "sector_id": 1,
+          "subject_id": 105,
+          "angle_id": 10,
+          "direction_id": 21
+        },
+        {
+          "sector_id": 1,
+          "subject_id": 101,
+          "angle_id": 5,
+          "direction_id": 14
+        }
+      ]
+    },
+    {
+      "id": "solar-bell-remote-telephone-power-problem",
+      "event_key": "1953-chapin-remote-telephone-battery-solar-origin",
+      "sector": 1,
+      "wordNumber": 101,
+      "refinementNumber": 5,
+      "directionNumber": 28,
+      "title": "The failing remote telephone batteries that pushed Bell Labs toward sunlight",
+      "summary": "The quest for practical silicon solar cells began partly with a much less glamorous problem: telephone equipment at remote sites needed electricity, and ordinary batteries were troublesome in humid locations. Bell Labs engineer Daryl Chapin explored ways to supply that power. The eventual photovoltaic advance grew from an everyday maintenance bottleneck, not a plan to cover entire deserts with panels.",
+      "full": "Years before solar power became a familiar rooftop sight, the Bell telephone system faced a practical power problem. Equipment operated far from conventional electricity supplies, and batteries in remote, humid locations were unreliable. Daryl Chapin was assigned to investigate better arrangements. Solar cells looked promising, but the available selenium devices converted too little of the incoming light to be very useful.\n\nElsewhere at Bell Labs, Calvin Fuller and Gerald Pearson were refining ways to control impurities and junctions in semiconductors. Their work and Chapin's power-supply problem eventually converged in the practical silicon solar cell demonstrated in 1954. The lesson is an inventive paradox: a technology celebrated for harvesting sunlight emerged from the failure of existing batteries to solve a telecommunications maintenance problem. Later, the newly improved solar cell found early customers in space, where cost calculations differed radically from those on Earth.",
+      "detail": "Chapin investigated solar cells while seeking alternatives to unreliable batteries at remote telephone installations.",
+      "year": 1953,
+      "status": "documented",
+      "sourceTitle": "American Physical Society · First Practical Silicon Solar Cell",
+      "sourceUrl": "https://www.aps.org/apsnews/2009/04/bell-labs-silicon-solar-cell",
+      "sources": [
+        {
+          "title": "U.S. Department of Energy · Solar PV Deployment History",
+          "url": "https://www.energy.gov/sites/prod/files/2017/01/f34/Deployment%20of%20Solar%20Photovoltaic%20Generation%20Capacity%20in%20the%20United%20States.pdf"
+        }
+      ],
+      "paths": [
+        {
+          "sector_id": 1,
+          "subject_id": 101,
+          "angle_id": 5,
+          "direction_id": 28
+        },
+        {
+          "sector_id": 1,
+          "subject_id": 102,
+          "angle_id": 5,
+          "direction_id": 3
+        },
+        {
+          "sector_id": 1,
+          "subject_id": 103,
+          "angle_id": 9,
+          "direction_id": 11
+        }
+      ]
+    }
+  ]
+}

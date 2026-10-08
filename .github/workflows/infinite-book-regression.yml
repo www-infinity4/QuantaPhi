@@ -4,6 +4,7 @@ on:
     paths:
       - 'infinite-book*.js'
       - 'infinite-book-catalog.json'
+      - 'workers/infinite-book-library/**'
       - 'test/infinite-book*.cjs'
       - '.github/workflows/infinite-book-regression.yml'
   push:
@@ -25,6 +26,7 @@ jobs:
         run: |
           node --check infinite-book.js
           node --check infinite-book-discovery.js
+          node --check workers/infinite-book-library/worker.js
           node --check workers/infinity-rogers/worker.js
       - name: Verify rolled research, GPT writing and source checks
-        run: node --test test/infinite-book-resilience.test.cjs
+        run: node --test test/infinite-book-resilience.test.cjs test/infinite-book-four-roll.test.cjs

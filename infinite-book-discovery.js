@@ -121,38 +121,44 @@ const CLASS_SEARCH={
 };
 function indexedDraw({catalog,query='',profileSector=0,lastPair='',rng=random,sectorOverride=0}={}){
  const words=Array.isArray(catalog?.wordIndex)?catalog.wordIndex:[];
- const refinements=Array.isArray(catalog?.researchRefinements)?catalog.researchRefinements:catalog?.realmRefinements||[];
+ const angles=Array.isArray(catalog?.researchRefinements)?catalog.researchRefinements:[];
+ const directions=Array.isArray(catalog?.storyDirections)?catalog.storyDirections:[];
  const realms=Array.isArray(catalog?.storytellingRealms)?catalog.storytellingRealms:[];
- const sectors=Array.isArray(catalog?.sectors)?catalog.sectors.slice(0,30):[];
- if(words.length!==100||refinements.length!==20||realms.length!==3||sectors.length!==30)return null;
- const map=catalog.specialistRefinements||{};
- const sectorOf=w=>Array.isArray(w.sectors)&&w.sectors.length ? w.sectors : [Number(map[w.sector]||w.sector)];
+ const sectors=Array.isArray(catalog?.sectors)?catalog.sectors.slice(0,catalog?.baseSectorCount||30):[];
+ // Banks are extensible: never disable discovery because 100 grows to 101.
+ if(!words.length||!angles.length||!directions.length||!realms.length||!sectors.length)return null;
+ const aliases=catalog?.specialistRefinements||{};
+ const allowed=new Set(sectors.map(s=>s.id));
+ const sectorOf=w=>(Array.isArray(w.sectors)&&w.sectors.length?w.sectors:[w.sector])
+  .map(x=>Number(aliases[x]||x)).filter(x=>allowed.has(x));
  const wordsIn=sector=>words.filter(w=>sectorOf(w).includes(sector));
- const normalized=' '+clean(query).toLowerCase().replace(/[^a-z0-9]+/g,' ')+' ';
- const exact=words.find(w=>normalized.includes(' '+w.word.toLowerCase()+' '));
- const preference=Number(map[profileSector]||profileSector);
- const preferred=preference>=1&&preference<=30&&wordsIn(preference).length&&rng(5)<2;
- // Bracket one: sector; the next bracket never selects unrelated subjects.
- const compatible=exact ? sectorOf(exact).filter(id=>id>=1&&id<=30) : [];
- const sector=sectorOverride>=1&&sectorOverride<=30?sectorOverride:
-  compatible.length ? (compatible.includes(preference)?preference:compatible[rng(compatible.length)]):
-  preferred?preference:sectors[rng(sectors.length)].id;
- const options=wordsIn(sector);
+ const norm=v=>' '+clean(v).toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim()+' ';
+ const needle=norm(query);
+ // Longest exact multiword name wins (solar panels instead of energy).
+ const exact=words.filter(w=>needle.includes(norm(w.word))).sort((a,b)=>b.word.length-a.word.length)[0];
+ const preference=Number(aliases[profileSector]||profileSector);
+ const related=exact?sectorOf(exact):[];
+ const desired=sectorOverride>=1&&allowed.has(sectorOverride)?sectorOverride:
+  related.length?(related.includes(preference)?preference:related[rng(related.length)]):
+  allowed.has(preference)&&wordsIn(preference).length&&rng(5)<2?preference:sectors[rng(sectors.length)].id;
+ const options=wordsIn(desired);
  if(!options.length)return null;
- // Bracket two: a single subject from the 100-word master index.
  const word=exact&&options.some(w=>w.id===exact.id)?exact:options[rng(options.length)];
- // Brackets three and four: History and Mystery are independent choices.
- const refine=refinements[rng(refinements.length)];
- let genre=realms[rng(realms.length)];
- const key=()=>[sector,word.id,refine.id,genre.id].join(':');
- if(lastPair===key())genre=realms[genre.id%realms.length];
- const sourceClass=rng((catalog.sourceClasses||[]).length||10)+1;
- return {sector,sectorName:sectors.find(s=>s.id===sector)?.name||'World discoveries',
+ const angle=angles[rng(angles.length)];
+ let direction=directions[rng(directions.length)];
+ const path=()=>[desired,word.id,angle.id,direction.id].join(':');
+ if(lastPair===path()&&directions.length>1)direction=directions[direction.id%directions.length];
+ const realm=realms[rng(realms.length)];
+ const evidence=rng((catalog.sourceClasses||[]).length||10)+1;
+ return {
+  sector:desired,sectorName:sectors.find(s=>s.id===desired)?.name||'World discoveries',
   wordNumber:word.id,indexWord:word.word,
-  refinementNumber:refine.id,refinement:refine.name,angle:refine.id,
-  storytellingRealmNumber:genre.id,storytellingRealm:genre.name,storytellingInstruction:genre.instruction,
-  realm:refine.name,realmNumber:refine.id,sourceClass,
-  bracketKey:key(),searchQuery:word.word+' '+refine.name};
+  angle:angle.id,refinementNumber:angle.id,refinement:angle.name,
+  realm:angle.name,realmNumber:angle.id,
+  directionNumber:direction.id,storyDirection:direction.name,
+  storytellingRealmNumber:realm.id,storytellingRealm:realm.name,storytellingInstruction:realm.instruction,
+  sourceClass:evidence,bracketKey:path(),searchQuery:[word.word,angle.name,direction.name].join(' ')
+ };
 }
 
 function sourcePlan(roll,catalog,focus=''){
@@ -177,6 +183,7 @@ function sourcePlan(roll,catalog,focus=''){
  const domain=preferredDomains[random(preferredDomains.length)]||'si.edu';
  const indexedWord=clean(roll.indexWord||'').slice(0,65);
  const realm=clean(roll.refinement||roll.realm||'').slice(0,65);
+ const direction=clean(roll.storyDirection||'').slice(0,90);
  const storytellingRealm=clean(roll.storytellingRealm||'').slice(0,65);
  const anchor=indexedWord||clean(focus).slice(0,90)||clean(specialty)||sector;
  const discoveryTerms='specific incident demonstration object document event little-known -biography -town -municipality';
@@ -186,9 +193,9 @@ function sourcePlan(roll,catalog,focus=''){
  // research catalog; the 6,000 rolls are query routes, never canned stories.
  const queries=indexedWord?[
    // Begin with the user's actual random-number result: "Helium history".
-   [indexedWord,realm||angle].join(' '),
-   [indexedWord,realm||angle,'unusual origin discovery experiment incident historical source'].join(' '),
-   [indexedWord,realm||angle,variant,preference.terms,'site:'+domain].join(' ')
+   [indexedWord,realm||angle,direction].filter(Boolean).join(' '),
+   [indexedWord,realm||angle,direction,'unusual origin discovery experiment incident historical source'].join(' '),
+   [indexedWord,realm||angle,direction,variant,preference.terms,'site:'+domain].join(' ')
  ]:[
    anchor+' '+angle+' '+variant+' '+preference.terms+' '+discoveryTerms+' site:'+domain,
    [specialty||sector,angle,sourceClass,variant,discoveryTerms].filter(Boolean).join(' '),
@@ -198,7 +205,7 @@ function sourcePlan(roll,catalog,focus=''){
   queries.push(anchor+' '+angle+' '+variant+' hidden historical episode site:history.com/articles -biography');
  }
  return {name:sector,angle,sourceClass,sourceClassId:roll.sourceClass,focus:anchor,
-  indexedWord,realm,storytellingRealm,specialty,domain,queries,sourceSites:approved.slice(0,18).map(x=>({name:x.name,url:x.url,domain:x.domain})),
+  indexedWord,realm,direction,storytellingRealm,specialty,domain,queries,sourceSites:approved.slice(0,18).map(x=>({name:x.name,url:x.url,domain:x.domain})),
   combination:(sectorId-1)*200+(roll.angle-1)*10+roll.sourceClass};
 }
 
@@ -247,7 +254,7 @@ async function scoutQueries(plan,roll){
   'This is a SEARCH-PLANNING step; do NOT assert any facts or invent a particular event.',
   'If the focus is a famous person such as Nikola Tesla, look for a specific overlooked demonstration, prototype, patent or incident, not a summary of their life.',
   'Keep the research angle and source-class constraint. Return JSON only: {"queries":["...","..."]}.',
-  'Sector '+roll.sector+': '+plan.name+'. Angle '+roll.angle+': '+plan.angle+'. Evidence class '+roll.sourceClass+': '+plan.sourceClass+'.',
+  'Sector '+roll.sector+': '+plan.name+'. Subject '+(plan.indexedWord||'')+'. Research angle '+(plan.realm||plan.angle)+'. Story direction '+(plan.direction||'')+'. Evidence class '+roll.sourceClass+': '+plan.sourceClass+'.',
   'Drawn topic: '+(plan.indexedWord||plan.focus)+'. Drawn realm: '+(plan.realm||plan.angle)+'. Preferred evidence: '+(CLASS_SEARCH[roll.sourceClass]?.terms||'archival records')+'.'
  ].join('\n');
  try{
@@ -273,10 +280,11 @@ async function writeSecretStory(sources,plan,roll){
   'You are both evidence reviewer and storyteller: examine up to 20 independent search-result excerpts below, choose the MOST INTERESTING SPECIFIC incident actually corroborated by at least two distinct source websites, then narrate it as an engaging story, not an encyclopedia answer.',
   'You can compare up to 20 search-result excerpts, but they are NOT full source documents. Use ONLY the two or more excerpts about the exact same selected event to support factual statements; do not merge unrelated histories. If a surprising detail cannot be supported, return {"insufficient":true}.',
   'You must identify one concrete event and an unexpected detail, and explain what makes it surprising. The title must name the EVENT or the OBJECT, not merely the person.',
+  'The final direction is '+(plan.direction||'discovery')+'. It guides which supported story to select, not a license to fabricate. Future possibilities must be labeled as possibilities. For educational mathematics include a correct simple equation, SI units, a worked example with explicit assumptions, and a verified source for constants.',
   'Both source URLs must refer to the same specific incident or artifact; if they only share the same famous subject return {"insufficient":true}.',
   'Quote no sentences verbatim. No invented dates, dialogue, motives, achievements, conspiracies or scientific claims. Mark legends and contested claims accurately.',
   'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 original words","full":"100-210 original words in two paragraphs","detail":"short exact surprising fact","status":"documented|reported|contested|corrected myth|folklore","evidence_urls":["exact URL of source 1","exact URL of source 2"]}.',
-  'Rolled combination '+plan.combination+'; indexed topic '+(plan.indexedWord||plan.focus)+'; story refinement '+(plan.realm||plan.angle)+'; source class '+plan.sourceClass+'; focus '+plan.focus+'. Storytelling lens '+(plan.storytellingRealm||'History')+' shapes narrative structure ONLY. Do not invent facts, quotes, fictional experiences or unresolved outcomes.',
+  'Rolled combination '+plan.combination+'; indexed topic '+(plan.indexedWord||plan.focus)+'; story refinement '+(plan.realm||plan.angle)+'; story direction '+(plan.direction||'')+'; source class '+plan.sourceClass+'; focus '+plan.focus+'. Storytelling lens '+(plan.storytellingRealm||'History')+' shapes narrative structure ONLY. Do not invent facts, quotes, fictional experiences or unresolved outcomes.',
   'Sources are snippets, not verified complete pages: '+JSON.stringify(sources)
  ].join('\n');
  const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
@@ -335,7 +343,7 @@ async function findSearch({roll,catalog,seen,focus=''}) {
   return {id:'live-'+hash(lead.url),title:written.title,summary:written.summary,
    full:written.full,detail:written.detail,year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
    indexWord:plan.indexedWord,realm:plan.realm,wordNumber:Number(roll.wordNumber)||0,realmNumber:Number(roll.realmNumber)||0,
-   sectorName:roll.sectorName||plan.name,refinementNumber:Number(roll.refinementNumber)||0,
+   sectorName:roll.sectorName||plan.name,refinementNumber:Number(roll.refinementNumber)||0,directionNumber:Number(roll.directionNumber)||0,storyDirection:roll.storyDirection||'',
    storytellingRealm:plan.storytellingRealm,storytellingRealmNumber:Number(roll.storytellingRealmNumber)||0,
    bracketKey:roll.bracketKey||'',
    reviewedExcerpts:ranked.length,
@@ -449,7 +457,9 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
  const backup={id:choice.id,title:choice.title,summary,
    full:choice.full+'\n\nSource: Wikipedia contributors. Excerpt reused under Creative Commons Attribution-ShareAlike; follow the source and license links for details.',
    year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
-   combination:plan.combination,
+   wordNumber:Number(roll.wordNumber)||0,indexWord:roll.indexWord||'',
+   refinementNumber:Number(roll.refinementNumber)||0,directionNumber:Number(roll.directionNumber)||0,storyDirection:roll.storyDirection||'',
+   bracketKey:roll.bracketKey||'',combination:plan.combination,
    status:'backup encyclopedia excerpt · CC BY-SA · no GPT rewrite',
    sourceTitle:'Wikipedia contributors',sourceUrl:article,
    sources:[{title:'Wikipedia copyright and CC BY-SA attribution',url:WIKI_LICENSE}],

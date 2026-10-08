@@ -154,43 +154,58 @@
       const a = root.querySelector('[data-book-tool="' + tool + '"]');
       a.href = buildUrl(tool, story); a.dataset.siteUrl = a.href;
     }
-    note(roll ? 'Discovery '+((roll.sector-1)*200+(roll.angle-1)*10+roll.sourceClass)+'/6000 · '+(catalog.angles.find(a=>a.id===roll.angle)?.name||'Secret angle')+' · '+(catalog.sourceClasses.find(c=>c.id===roll.sourceClass)?.name||'research sources') : 'Sourced story');
+    note(roll?.bracketKey ? 'Four-roll path '+roll.bracketKey+' · '+(roll.indexWord||'')+' · '+(roll.refinement||'')+' · '+(roll.storyDirection||'') : 'Sourced discovery');
     window.dispatchEvent(new CustomEvent('phi:story:render',{detail:{id:story.id,title:story.title}}));
   }
   function rollDice(query='') {
     const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
-    const baseCount = catalog.baseSectorCount || 30;
-    // The original 6,000 rolls use 30 sectors. Sectors 31-39 are additional
-    // specialist refinements, not 1,800 extra outcomes.
-    const original = Number(profile?.sector)||0;
-    const mapped = Number(catalog.specialistRefinements?.[original]||original);
-    // Quants guide about two in five draws; the rest seek unexpected world stories.
-    const preferred = mapped>0 && mapped<=baseCount && rand(5)<2;
-    const sector = preferred ? mapped : (catalog.sectors[rand(baseCount)]?.id || 3);
-    const refinement = preferred && original!==mapped ?
-      (catalog.sectors.find(x=>x.id===original)?.name||'') : '';
-    return {sector,refinement,angle:rand(catalog.angles.length)+1,
-      sourceClass:rand(catalog.sourceClasses.length)+1,
-      trial:seenIds().size,focus:preferred?(String(query||profile?.focus||refinement||'').slice(0,90)):'',
-      personal:preferred,signals:profile?.signals||0};
+    const lastPath = (()=>{try{return sessionStorage.getItem('phi_book_last_roll_path')||''}catch{return ''}})();
+    const drawn = window.PhiInfiniteBookDiscover?.indexedDraw?.({
+      catalog,query,profileSector:Number(profile?.sector)||0,
+      lastPair:lastPath,rng:rand
+    });
+    if(drawn){
+      try { sessionStorage.setItem('phi_book_last_roll_path',drawn.bracketKey); }catch(_){}
+      return {...drawn,trial:seenIds().size,focus:drawn.indexWord||'',
+        personal:Boolean(profile?.sector),signals:profile?.signals||0};
+    }
+    // Older catalogs remain readable while rolling word banks are upgraded.
+    const sector = catalog.sectors[rand(catalog.baseSectorCount||30)]?.id||3;
+    return {sector,angle:rand(catalog.angles.length)+1,
+      sourceClass:rand(catalog.sourceClasses.length)+1,trial:seenIds().size,
+      focus:String(query||profile?.focus||'').slice(0,90)};
   }
   function pickUnique(roll, seen) {
-    const unseen = Array.from(byId.values()).filter(s => !seen.has(s.id));
-    if (!unseen.length) return null;
-    const related = {31:[2,6,1],32:[2,6],33:[2,6],34:[2],35:[7],36:[6,2],37:[20,2],38:[1],39:[2]};
-    const sectors = [roll.sector, ...(related[roll.sector]||[])];
-    const topical = unseen.filter(s => sectors.includes(s.sector));
-    const pool = topical.length ? topical : unseen;
-    const deep = pool.filter(story => story.discoveryMethod === 'gpt-deep');
-    const candidates = deep.length ? deep : pool;
-    let best = -1, matches=[];
-    for (const story of candidates) {
-      const score=(story.sector===roll.sector?6:0)+(story.angle===roll.angle?2:0)+
-        (story.sourceClass===roll.sourceClass?1:0)+rand(4);
-      if(score>best){best=score;matches=[story]}
-      else if(score===best)matches.push(story);
+    const unread = Array.from(byId.values()).filter(story => !seen.has(story.id));
+    if (!unread.length) return null;
+    let recent = [];
+    try { recent = JSON.parse(sessionStorage.getItem('phi_book_recent_subjects')||'[]'); }catch(_){}
+    const last = recent[recent.length-1];
+    const scored = unread.map(story=>{
+      const sector = Number(story.sector)||0,word = Number(story.wordNumber)||0;
+      const angle = Number(story.refinementNumber||story.angle)||0;
+      const direction = Number(story.directionNumber)||0;
+      let value = rand(12);
+      if(sector===roll.sector)value+=28;
+      if(word&&word===roll.wordNumber)value+=30;
+      if(angle&&angle===roll.refinementNumber)value+=12;
+      if(direction&&direction===roll.directionNumber)value+=12;
+      // Stories from the exact 4-roll route win only when actual articles exist.
+      if(story.bracketKey && story.bracketKey===roll.bracketKey)value+=60;
+      if(story.discoveryMethod==='gpt-deep')value+=8;
+      if(word && word===last)value-=36; // do not serve Tesla ten times in a row
+      if(word && recent.slice(-5).includes(word))value-=12;
+      return {story,value};
+    }).sort((a,b)=>b.value-a.value);
+    // Random choice among near-best independent event stories, not ordered playback.
+    const best = scored[0].value;
+    const pool = scored.filter(x=>x.value>=best-8).slice(0,12);
+    const story=pool[rand(pool.length)].story;
+    if(story.wordNumber){
+      try{sessionStorage.setItem('phi_book_recent_subjects',
+        JSON.stringify([...recent.slice(-11),Number(story.wordNumber)]));}catch(_){}
     }
-    return matches[rand(matches.length)];
+    return story;
   }
   function cacheLive(story) {
     const cached=safeRead(LIVE_CACHE);
@@ -198,16 +213,17 @@
     // Seen IDs are never truncated; cached story bodies are bounded for device storage.
     safeWrite(LIVE_CACHE,cached.slice(-100));
   }
-  async function appendConfiguredFeed() {
+  async function appendConfiguredFeed(roll=null) {
     // When a server-side discovery service is available, it may publish curated
     // verified stories at a same-origin JSON endpoint. Never scrape arbitrary sites in the browser.
     const feed = window.PhiInfiniteBookFeedUrl;
     if (!feed) return;
     let url;
     try { url = new URL(feed, location.origin); } catch (_) { return; }
-    if (url.origin !== location.origin) return;
+    if (url.origin !== location.origin && url.origin !== 'https://infinite-book-library.marvaseater.workers.dev') return;
+    if (roll?.bracketKey) url.searchParams.set('path',roll.bracketKey);
     try {
-      const response = await fetch(url.href, { cache: 'no-store' });
+      const response = await fetch(url.href, { cache: 'no-store', signal: AbortSignal.timeout(6500) });
       if (!response.ok) return;
       const data = await response.json();
       const stories = Array.isArray(data) ? data : data.stories;
@@ -285,7 +301,7 @@
     const ready = pickUnique(roll, seenIds());
     if (ready) {
       render(ready, roll);
-      note('Ready to read · new source-backed discoveries are being prepared in the background.');
+      note(roll?.bracketKey ? 'Ready · '+roll.indexWord+' · '+roll.refinement+' · '+roll.storyDirection : 'Ready · source-backed story');
     } else {
       note('All prepared stories have been read. Researching another documented discovery…');
     }
@@ -298,6 +314,7 @@
         ? 'New sourced historical story · original GPT narrative'
         : 'New historical discovery · cited source');
     };
+    void appendConfiguredFeed(roll);
     void discoverInBackground(roll, acceptNew)
       .then(acceptNew)
       .catch(error => console.warn('Book research unavailable', error));
@@ -409,6 +426,7 @@
       for (const story of [...(catalog.stories || []), ...safeRead(LIVE_CACHE)]) if (storyValid(story)) byId.set(story.id, story);
       // A missing/slow server feed must never delay the first story card.
       void appendConfiguredFeed().then(refillReadyStories);
+      void (async()=>{try{const raw=window.PhiInfiniteBookBanksUrl;if(!raw)return;const u=new URL(raw,location.origin);if(u.origin!==location.origin&&u.origin!=='https://infinite-book-library.marvaseater.workers.dev')return;const r=await fetch(u.href,{signal:AbortSignal.timeout(7500)});if(!r.ok)return;const data=await r.json();if(!Array.isArray(data.subjects))return;const ids=new Set(catalog.wordIndex.map(x=>x.id));for(const w of data.subjects){if(!Number.isSafeInteger(Number(w.id))||ids.has(Number(w.id))||!Array.isArray(w.sectors)||!w.word)continue;catalog.wordIndex.push({id:Number(w.id),word:String(w.word).slice(0,120),sector:Number(w.sectors[0]),sectors:w.sectors});ids.add(Number(w.id));}}catch(e){console.warn('Book words offline; bundled words retained',e)}})();
 
       const permalink = new URL(location.href).searchParams.get('secret');
       if (permalink && byId.has(permalink)) {
