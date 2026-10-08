@@ -2207,6 +2207,125 @@
       "sectors": [
         30
       ]
+    },
+    {
+      "id": 101,
+      "word": "Solar panels",
+      "sector": 1,
+      "sectors": [
+        1,
+        6,
+        14,
+        15
+      ]
+    },
+    {
+      "id": 102,
+      "word": "Photovoltaic cells",
+      "sector": 1,
+      "sectors": [
+        1,
+        14,
+        15
+      ]
+    },
+    {
+      "id": 103,
+      "word": "Energy storage",
+      "sector": 1,
+      "sectors": [
+        1,
+        2,
+        15
+      ]
+    },
+    {
+      "id": 104,
+      "word": "Silicon",
+      "sector": 1,
+      "sectors": [
+        1,
+        14,
+        15
+      ]
+    },
+    {
+      "id": 105,
+      "word": "Solar satellites",
+      "sector": 1,
+      "sectors": [
+        1,
+        7,
+        7
+      ]
+    },
+    {
+      "id": 106,
+      "word": "Perovskite",
+      "sector": 1,
+      "sectors": [
+        1,
+        14,
+        15
+      ]
+    },
+    {
+      "id": 107,
+      "word": "Solar thermal",
+      "sector": 1,
+      "sectors": [
+        1,
+        15
+      ]
+    },
+    {
+      "id": 108,
+      "word": "Battery chemistry",
+      "sector": 1,
+      "sectors": [
+        1,
+        14,
+        15
+      ]
+    },
+    {
+      "id": 109,
+      "word": "Hydrogen fuel cells",
+      "sector": 1,
+      "sectors": [
+        1,
+        14,
+        15
+      ]
+    },
+    {
+      "id": 110,
+      "word": "Power transmission",
+      "sector": 1,
+      "sectors": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "id": 111,
+      "word": "Solar concentrators",
+      "sector": 1,
+      "sectors": [
+        1,
+        15
+      ]
+    },
+    {
+      "id": 112,
+      "word": "Electrolysis",
+      "sector": 1,
+      "sectors": [
+        1,
+        14,
+        15
+      ]
     }
   ],
   "realmRefinements": [
@@ -2396,35 +2515,176 @@
       "name": "Sector",
       "count": 30,
       "field": "sector",
-      "rule": "Draw a subject sector, optionally influenced by Quants"
+      "rule": "Choose a field; Quants may influence some draws"
     },
     {
       "step": 2,
-      "name": "Indexed word",
-      "count": 100,
+      "name": "Subject",
+      "count": 112,
       "field": "wordNumber",
-      "rule": "Draw exactly one indexed topic related to the selected sector"
+      "rule": "Choose an indexed subject compatible with the sector; every word may belong to several sectors"
     },
     {
       "step": 3,
-      "name": "Research refinement",
+      "name": "Research angle",
       "count": 20,
       "field": "refinementNumber",
-      "rule": "Draw an angle such as History or Origins to build the first search query"
+      "rule": "Choose a reusable investigation lens such as Origins or Hidden evidence"
     },
     {
       "step": 4,
-      "name": "Storytelling realm",
-      "count": 3,
-      "field": "storytellingRealmNumber",
-      "rule": "Draw Mystery, Suspense, or Adventure as an evidence-respecting storytelling lens"
+      "name": "Story direction",
+      "count": 36,
+      "field": "directionNumber",
+      "rule": "Choose a particular problem, invention, math lesson, bottleneck or event; find multiple reviewed unique stories"
+    }
+  ],
+  "storyDirections": [
+    {
+      "id": 1,
+      "name": "Inventors & discoveries"
     },
     {
-      "step": 5,
-      "name": "Evidence class",
-      "count": 10,
-      "field": "sourceClass",
-      "rule": "Target archives, museums, researchers or specialist journalism"
+      "id": 2,
+      "name": "Original patents & prototypes"
+    },
+    {
+      "id": 3,
+      "name": "Unexpected origins"
+    },
+    {
+      "id": 4,
+      "name": "The overlooked experiment"
+    },
+    {
+      "id": 5,
+      "name": "Future benefits"
+    },
+    {
+      "id": 6,
+      "name": "Next-generation technology"
+    },
+    {
+      "id": 7,
+      "name": "Engineering bottlenecks"
+    },
+    {
+      "id": 8,
+      "name": "Unsolved scientific questions"
+    },
+    {
+      "id": 9,
+      "name": "Mathematics behind the mystery"
+    },
+    {
+      "id": 10,
+      "name": "A disputed claim examined"
+    },
+    {
+      "id": 11,
+      "name": "The failure that changed the design"
+    },
+    {
+      "id": 12,
+      "name": "A hidden document"
+    },
+    {
+      "id": 13,
+      "name": "The first real-world application"
+    },
+    {
+      "id": 14,
+      "name": "What the materials allow"
+    },
+    {
+      "id": 15,
+      "name": "Accidental breakthroughs"
+    },
+    {
+      "id": 16,
+      "name": "Competing inventors"
+    },
+    {
+      "id": 17,
+      "name": "Space-age applications"
+    },
+    {
+      "id": 18,
+      "name": "Environmental trade-offs"
+    },
+    {
+      "id": 19,
+      "name": "Breakthroughs across centuries"
+    },
+    {
+      "id": 20,
+      "name": "The missing invention"
+    },
+    {
+      "id": 21,
+      "name": "How a machine actually worked"
+    },
+    {
+      "id": 22,
+      "name": "The surprising equation"
+    },
+    {
+      "id": 23,
+      "name": "An unusual historical demonstration"
+    },
+    {
+      "id": 24,
+      "name": "Security & secret research"
+    },
+    {
+      "id": 25,
+      "name": "Where the evidence disagrees"
+    },
+    {
+      "id": 26,
+      "name": "An investigation under pressure"
+    },
+    {
+      "id": 27,
+      "name": "The inventor's next step"
+    },
+    {
+      "id": 28,
+      "name": "Why a promising idea failed"
+    },
+    {
+      "id": 29,
+      "name": "Lost inventions rediscovered"
+    },
+    {
+      "id": 30,
+      "name": "Experiments we can recreate safely"
+    },
+    {
+      "id": 31,
+      "name": "The road to commercial adoption"
+    },
+    {
+      "id": 32,
+      "name": "A modern mystery explained"
+    },
+    {
+      "id": 33,
+      "name": "The chain of scientists"
+    },
+    {
+      "id": 34,
+      "name": "Limits of physics"
+    },
+    {
+      "id": 35,
+      "name": "Rivals and unintended consequences"
+    },
+    {
+      "id": 36,
+      "name": "A forgotten patent dispute"
     }
-  ]
+  ],
+  "discoverableBankVersion": 3,
+  "evidenceClasses": 10
 }
