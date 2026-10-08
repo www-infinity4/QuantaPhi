@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v33-social-cards';
+const EDGE_VERSION = 'quantaphi-org-v34-shared-channel-wallet';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -13,6 +13,7 @@ const APPS = [
  { slug: '/mckee-coins/', aliases: ['/coins/', '/McKeeCoins/'], repo: 'Mckee-Coins-Inc' },
  { slug: '/shoplc/', aliases: ['/shop/'], repo: 'ShopLC' }
 ];
+const CHANNEL_REPOS=new Set(["Hermit-TV","Star-Launcher","HBO","Starz","Cinemax","Showtime","Encore","Cartoon-Network","WGN","TNT","NBC","FOX","FX","Nickelodeon","FSN","ESPN","MTV","VH1","AMC","Disney","USA","Comedy-Central","BET","Discovery","Nintendo-TV","Chiller","TBS","ABC","CBS","PBS","History-Channel","CNN","Trump-TV","ShopLC","Ozzy-TV","CCR-TV","Motor-TV","Physics-TV","Adventure-TV","Trigger-TV","Time-Surfers","Syncord","Astraflix","Vintech","Flix-Blender","Abstractia-","Animasync","SeekSync"]);
 const SUPPORT_REPOS=[
  {prefix:'/TV-Database/',repo:'TV-Database'},
  {prefix:'/Mint-For-Infinity/',repo:'Mint-For-Infinity'},
@@ -44,6 +45,13 @@ const routeFor = incoming => {
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
  if (path === '/learn') return { redirect: '/learn/' };
  if (path.startsWith('/learn/')) return { repo: 'QuantaPhi', sourcePath: path.endsWith('/') ? path + 'index.html' : path, publicPath: path };
+ // Omni's channels keep the same site origin as the unified StarCoin wallet.
+ // Restrict routing to the explicit channel registry to prevent arbitrary repo proxying.
+ if(CHANNEL_REPOS.has(first)){
+  if(path==='/' + first)return {redirect:path+'/'+incoming.search};
+  const suffix=path.slice(first.length+2);
+  return {repo:first,sourcePath:'/'+(!suffix||suffix.endsWith('/')?suffix+'index.html':suffix),publicPath:path};
+ }
  const support=SUPPORT_REPOS.find(item=>path.startsWith(item.prefix));
  if(support)return {repo:support.repo,sourcePath:'/'+path.slice(support.prefix.length),publicPath:path};
  const app = appByIncomingPath(path);
@@ -115,6 +123,9 @@ function rewriteSuiteText(text) {
  text=text.split('https://www-infinity4.github.io/Infinity-Phi').join(CANONICAL_ORIGIN + '/infinity-phi');
  for(const support of SUPPORT_REPOS){
   text=text.split('https://www-infinity4.github.io/'+support.repo+'/').join(CANONICAL_ORIGIN+support.prefix);
+ }
+ for(const repo of CHANNEL_REPOS){
+  text=text.split('https://www-infinity4.github.io/'+repo+'/').join(CANONICAL_ORIGIN+'/'+repo+'/');
  }
  for (const app of APPS) {
   const github = 'https://www-infinity4.github.io/' + app.repo;
