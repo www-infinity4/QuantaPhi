@@ -92,7 +92,7 @@ function preferences(activeQuery,catalog){
 }
 // A famous person's life is a search topic, not by itself a Big Secret.
 // Artifact, demonstration, incident and document titles are still eligible.
-const PERSON_PROFILE=/\b(?:was|is)\s+(?:an?\s+)?(?:American|Serbian|British|German|French|Italian|Russian|Austrian|Canadian|English|Indian|Japanese|Scottish|Dutch|Swedish|Greek|Egyptian|Polish|Spanish|Chinese)?\s*(?:inventor|scientist|physicist|engineer|artist|musician|politician|writer|actor|entrepreneur|mathematician|historian|composer|researcher|businessman)\b/i;
+const PERSON_PROFILE=/\b(?:was|is)\s+(?:an?\s+)?(?:[\w-]+\s+){0,3}(?:inventor|scientist|physicist|engineer|artist|musician|politician|writer|actor|entrepreneur|mathematician|historian|composer|researcher|businessman)\b/i;
 const GENERIC_BIO=/\b(?:was born|is best known|best known for|known for his|known for her|early life|personal life|born in|died in|career and legacy|was a famous)\b/i;
 const EVENT_TITLE=/\b(?:boat|ship|patent|prototype|demonstration|machine|manuscript|papyrus|artifact|artefact|experiment|incident|lost|forgotten|secret|hidden|discovery|discovered|rediscovered|mystery|hoax|forgery|failure|accident|catastrophe|rescued|recovered|first|unusual|invention|device|signal|puzzle|film|recording|transmission|transmitter|letter|notebook|trial|wreck|tomb|operation|conspiracy|breakthrough|controversy|buried|declassified|uncovered)\b/i;
 function isGenericProfile(story){
@@ -295,8 +295,8 @@ const WIKI_QUERIES={
 function wikiExcerpt(s) {
  return String(s||'').replace(/\s+/g,' ').trim();
 }
-async function findWikipedia({roll,catalog,seen}) {
- const plan=sourcePlan(roll,catalog,arguments[0]?.focus||'');
+async function findWikipedia({roll,catalog,seen,focus=''}) {
+ const plan=sourcePlan(roll,catalog,focus);
  const base=WIKI_QUERIES[roll.sector] || (plan.name+' historical discovery');
  const seenWikipedia=[...seen].filter(id=>id.startsWith('wiki-')).length;
  // Keep a finite search offset and rotate terms; do not loop over seen items.
