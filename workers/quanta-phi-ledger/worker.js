@@ -8,6 +8,9 @@ async function ensureStarCoinCredits(env) {
     env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_star_coin_credits_user_created ON quanta_star_coin_credits(user_id,created_at)")
   ]);
 }
+async function ensureStorybook(env) {
+  await env.DB.prepare("CREATE TABLE IF NOT EXISTS quant_storybook_meta(wallet_id TEXT NOT NULL,content_key TEXT NOT NULL,chapter TEXT NOT NULL DEFAULT 'Unsorted',note TEXT NOT NULL DEFAULT '',favorite INTEGER NOT NULL DEFAULT 0,updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(wallet_id,content_key))").run();
+}
 async function ensureCollects(env) {
   await env.DB.prepare("CREATE TABLE IF NOT EXISTS quant_collects(collect_id TEXT PRIMARY KEY,wallet_id TEXT NOT NULL,content_key TEXT NOT NULL,type TEXT,title TEXT NOT NULL,story TEXT,media TEXT,source_url TEXT,collected_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,UNIQUE(wallet_id,content_key))").run();
 }
@@ -316,8 +319,31 @@ export default {
 
     if (url.pathname === "/v1/quants/collects" && request.method === "GET") {
       await ensureCollects(env);
-      const rows = await env.DB.prepare("SELECT content_key AS key,type,title,story,media,source_url AS sourceUrl,collected_at AS collectedAt FROM quant_collects WHERE wallet_id=? ORDER BY collected_at DESC LIMIT 50").bind(wallet).all();
-      return json({ ok: true, cards: rows.results || [] });
+      const limit = Math.max(1,Math.min(200,Number(url.searchParams.get("limit"))||200));
+      const offset = Math.max(0,Math.min(1000000,Math.floor(Number(url.searchParams.get("offset"))||0)));
+      const rows = await env.DB.prepare("SELECT content_key AS key,type,title,story,media,source_url AS sourceUrl,collected_at AS collectedAt FROM quant_collects WHERE wallet_id=? ORDER BY collected_at DESC, content_key DESC LIMIT ? OFFSET ?").bind(wallet,limit,offset).all();
+      const totalRow = await env.DB.prepare("SELECT COUNT(*) AS count FROM quant_collects WHERE wallet_id=?").bind(wallet).first();
+      const cards = rows.results||[], total=Number(totalRow?.count||0);
+      return json({ok:true,cards,total,offset,nextOffset:offset+cards.length<total?offset+cards.length:null,hasMore:offset+cards.length<total});
+    }
+
+    if (url.pathname === "/v1/quants/storybook" && request.method === "GET") {
+      await ensureStorybook(env);
+      const rows = await env.DB.prepare("SELECT m.content_key AS key,m.chapter,m.note,m.favorite,m.updated_at AS updatedAt FROM quant_storybook_meta m JOIN quant_collects c ON c.wallet_id=m.wallet_id AND c.content_key=m.content_key WHERE m.wallet_id=? ORDER BY m.updated_at DESC LIMIT 5000").bind(wallet).all();
+      return json({ok:true,cards:rows.results||[]});
+    }
+    if (url.pathname === "/v1/quants/storybook" && request.method === "POST") {
+      await ensureStorybook(env);
+      const body=await request.json().catch(()=>({}));
+      const key=String(body.key||"").trim().slice(0,700);
+      const chapter=String(body.chapter||"Unsorted").trim().slice(0,90)||"Unsorted";
+      const note=String(body.note||"").trim().slice(0,1200);
+      const favorite=body.favorite?1:0;
+      if(!key)return json({error:"story_key_required"},400);
+      const owned=await env.DB.prepare("SELECT content_key FROM quant_collects WHERE wallet_id=? AND content_key=?").bind(wallet,key).first();
+      if(!owned)return json({error:"story_not_collected"},404);
+      await env.DB.prepare("INSERT INTO quant_storybook_meta(wallet_id,content_key,chapter,note,favorite,updated_at) VALUES(?,?,?,?,?,CURRENT_TIMESTAMP) ON CONFLICT(wallet_id,content_key) DO UPDATE SET chapter=excluded.chapter,note=excluded.note,favorite=excluded.favorite,updated_at=CURRENT_TIMESTAMP").bind(wallet,key,chapter,note,favorite).run();
+      return json({ok:true,key,chapter,note,favorite:!!favorite});
     }
 
     // Star Coin receipts from QuantaPhi Collect and Share buttons. Each receipt is
