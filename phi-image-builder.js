@@ -10,7 +10,7 @@ const make=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.class
 const $=selector=>host.querySelector(selector);
 const emit=(type,detail)=>window.dispatchEvent(new CustomEvent('phi:image:'+type,{detail}));
 const id=()=>crypto?.randomUUID?.()||('phi-'+Date.now()+'-'+Math.random().toString(36).slice(2));
-let mode='Image',source=null,design=null,urls=[],result=null,artifact=null,busy=false,lastInstruction='',lastExactText='',preparingReference=false;
+let mode='Image',source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',preparingReference=false;
 function state(value){host.dataset.stage=value}
 function notice(text){const area=host.dataset.stage==='finished'?'.pi-finished':host.dataset.stage==='progress'?'.pi-progress':'.pi-composer';const el=$(area+' .pi-notice');if(el)el.textContent=text}
 function step(n,value,text){const el=$('[data-pi-step="'+n+'"]');if(el){el.dataset.state=value;el.lastElementChild.textContent=text||(value==='done'?'Done':value==='active'?'Working…':'Waiting')}}
@@ -67,7 +67,7 @@ async function build(){
  if(!typed&&!source&&!contextStory()){notice('Describe the artwork or upload a photo first.');return}
  const description=typed||('Build a distinctive '+mode.toLowerCase()+' based on my uploaded reference or story.');
  const requestId=id(),story=contextStory(),search=contextSearch();
- busy=true;lastInstruction=description;lastExactText=exactText;result=null;artifact=null;
+ busy=true;lastInstruction=description;lastExactText=exactText;result=null;rawResult=null;artifact=null;
  state('progress');initSteps();notice('Preparing a real render request…');
  emit('build:start',{requestId,mode,description});
  let phase=0,warning='',vision='',prompt='';
@@ -84,7 +84,8 @@ async function build(){
   const rendered=await renderer.render({description,mode,source,design,prompt,exactText});
   step(phase++,'done');
   step(phase,'active','Examining finished pixels');
-  result=exactText?await renderer.composeExactText(rendered.src,exactText):rendered.src;
+  rawResult=rendered.src;
+  result=exactText?await renderer.composeExactText(rawResult,exactText):rawResult;
   const size=await renderer.validate(result);
   artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search};
   let review=null;
@@ -145,7 +146,7 @@ host.addEventListener('click',event=>{
 async function reopenAsReference(instruction){
  state('composer');$('#pi-prompt').value=instruction.slice(0,3000);$('#pi-exact-text').value=lastExactText;
  if(!result)return;
- const previous=result;preparingReference=true;notice('Preparing this image as the next reference…');
+ const previous=rawResult||result;preparingReference=true;notice('Preparing this image as the next reference…');
  try{const blob=await renderer.asBlob(previous);source=new File([blob],'phi-refinement.png',{type:blob.type});showFile(source,'source');notice('Reference ready. Build when you want the refined image.')}
  catch(error){notice('Could not attach the previous render: '+String(error?.message||error))}
  finally{preparingReference=false}
