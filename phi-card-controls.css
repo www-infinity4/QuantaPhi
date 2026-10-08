@@ -1,0 +1,89 @@
+/* Unified WidgetPhi controls: white sponsor-card pills and blue-card touch targets. */
+:root{
+  --phi-pill-bg:#fffdfc;
+  --phi-pill-border:#bca4cd;
+  --phi-pill-text:#4c286e;
+  --phi-pill-radius:999px;
+  --phi-pill-height:48px;
+}
+#infiniteBook,#phiImageBuilder,#fredSpacesRadio{min-width:0;max-width:100%}
+#infiniteBook .ib-story,#phiImageBuilder .pi-panel,#fredSpacesRadio .fs-card{border-radius:22px;overflow:visible}
+#infiniteBook button,#infiniteBook a.ib-build-link,
+#phiImageBuilder button,#fredSpacesRadio button,
+.qbalances button{box-sizing:border-box;max-width:100%;min-width:0;font-family:inherit;line-height:1.3;white-space:normal;overflow-wrap:break-word;word-break:normal;text-align:center;vertical-align:middle}
+#infiniteBook .ib-actions,#fredSpacesRadio .fs-actions,
+#fredSpacesRadio .fs-builds{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:9px;margin:14px 0
+}
+#infiniteBook .ib-actions .ib-action,
+#fredSpacesRadio .fs-actions .fs-btn,
+#fredSpacesRadio .fs-builds .fs-btn,
+#phiImageBuilder .pi-actions button{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;min-height:var(--phi-pill-height);height:100%;
+  padding:10px 8px;border-radius:var(--phi-pill-radius);
+  font-size:clamp(12px,3.3vw,14px);font-weight:800
+}
+#infiniteBook .ib-action,#fredSpacesRadio .fs-btn,
+#phiImageBuilder .pi-actions button{
+  background:var(--phi-pill-bg);border:1px solid var(--phi-pill-border);
+  color:var(--phi-pill-text)
+}
+#infiniteBook .ib-next{
+  min-height:44px;padding:9px 14px;border-radius:var(--phi-pill-radius);
+  background:#fffdfc;border-color:#bca4cd;color:var(--phi-pill-text)
+}
+#infiniteBook .ib-build{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:stretch;gap:9px;padding-top:14px
+}
+#infiniteBook .ib-build > span{grid-column:1/-1;font-size:13px;line-height:1.4}
+#infiniteBook a.ib-build-link{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;min-height:54px;padding:9px 7px;
+  background:#fff!important;color:var(--phi-pill-text)!important;
+  border:1px solid var(--phi-pill-border);
+  border-radius:var(--phi-pill-radius);font-size:clamp(12px,3.3vw,14px);
+  font-weight:850;text-decoration:none
+}
+#infiniteBook .ib-build > .ib-action[data-book-action="illustrate"]{
+  grid-column:1/-1;width:100%;min-height:48px
+}
+#fredSpacesRadio .fs-builds .fs-phi{
+  background:#fff;color:var(--phi-pill-text);border:1px solid var(--phi-pill-border);
+  border-radius:var(--phi-pill-radius);min-height:54px;flex:auto
+}
+#fredSpacesRadio .fs-next{width:100%;min-height:48px;border-radius:var(--phi-pill-radius);padding:12px}
+#fredSpacesRadio .fs-stream{max-width:100%;overflow-wrap:anywhere}
+#phiImageBuilder .pi-mode{
+  min-height:44px;padding:10px 14px;border-radius:var(--phi-pill-radius);
+  background:#fff;color:#234d77;border:1px solid #94b8d5;font-size:13px
+}
+#phiImageBuilder .pi-primary{min-height:50px;border-radius:var(--phi-pill-radius)}
+/* Wallet controls match the white billboard card's pale lavender pills. */
+body .qbalances .qtoken,
+body .qbalances .qstar,
+body .qbalances #controlPhiWalletButton{
+  display:inline-flex!important;align-items:center;justify-content:center;gap:5px;
+  min-width:0;min-height:42px;max-width:100%;
+  padding:9px 12px!important;background:#f0e4fa!important;
+  color:#5f259f!important;border:1px solid #c9a6e5!important;
+  border-radius:var(--phi-pill-radius)!important;
+  font-size:12px;font-weight:850;white-space:normal
+}
+body .qbalances #controlPhiWalletButton strong,
+body .qbalances #controlPhiWalletButton small{color:inherit!important}
+body .qbalances{gap:8px;align-items:stretch}
+body #controlPhiWalletPanel button{
+  border-radius:var(--phi-pill-radius)!important;
+  white-space:normal;overflow-wrap:break-word;min-height:42px
+}
+@media(max-width:380px){
+  #infiniteBook .ib-story,#fredSpacesRadio .fs-card,#phiImageBuilder .pi-panel{padding:12px}
+  #infiniteBook .ib-actions,#fredSpacesRadio .fs-actions,
+  #fredSpacesRadio .fs-builds,#infiniteBook .ib-build{gap:6px}
+  #infiniteBook a.ib-build-link{padding:9px 5px}
+  #infiniteBook .ib-actions .ib-action,#fredSpacesRadio .fs-actions .fs-btn,
+  #fredSpacesRadio .fs-builds .fs-btn{padding:9px 5px;font-size:12px}
+}

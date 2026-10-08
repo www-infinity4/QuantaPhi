@@ -145,3 +145,37 @@ test('GPT scouts obscure event queries then writes only when two independent sou
  assert.match(log.prompts[1],/Museums and collections/);
  assert.ok(!/^(Nikola Tesla)$/i.test(story?.title||''));
 });
+
+
+test('live discovery rejects biographies even when they mention patents and secret inventions',()=>{
+ const {w}=testReader();
+ const biography={title:'Nikola Tesla',summary:'Nikola Tesla (10 July 1856 – 7 January 1943) was a Serbian-American engineer and inventor. His work included mysterious inventions, patents, and discoveries.'};
+ assert.equal(w.PhiInfiniteBookDiscover.isGenericProfile(biography),true);
+ assert.equal(w.PhiInfiniteBookDiscover.isSecretStory(biography),false);
+ assert.equal(w.PhiInfiniteBookDiscover.isSecretStory({
+  title:'The boat that Tesla steered with radio commands in 1898',
+  summary:'The 1898 demonstration revealed a remote-controlled boat that could turn on command without a steering cable.'
+ }),true);
+});
+test('the verified local story library has independently sourced event narratives',()=>{
+ const catalog=JSON.parse(fs.readFileSync(path.join(__dirname,'..','infinite-book-catalog.json'),'utf8'));
+ assert.equal(catalog.sectors.length*catalog.angles.length*catalog.sourceClasses.length,7800);
+ assert.ok(catalog.stories.length>=16);
+ assert.equal(new Set(catalog.stories.map(s=>s.id)).size,catalog.stories.length);
+ assert.ok(catalog.stories.every(s=>/^https:\/\//.test(s.sourceUrl)&&s.full.length>80));
+ assert.ok(catalog.stories.some(s=>s.id==='tesla-wireless-boat-1898'));
+});
+test('story-to-Phi links use a semantic index and the existing explicit QuantaPhi search action',()=>{
+ const js=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
+ const html=fs.readFileSync(path.join(__dirname,'..','index.html'),'utf8');
+ const css=fs.readFileSync(path.join(__dirname,'..','phi-card-controls.css'),'utf8');
+ assert.match(js,/link\.searchParams\.set\('q',indexedSearchTerms\(story\)\)/);
+ assert.match(js,/link\.searchParams\.set\('storySummary'/);
+ assert.match(js,/go\.click\(\)/);
+ assert.match(js,/window\.QuantaOpenSite\(target\)/);
+ assert.match(html,/window\.QuantaOpenSite=openSite/);
+ assert.match(html,/phi-card-controls\.css/);
+ assert.match(css,/#infiniteBook a\.ib-build-link/);
+ assert.match(css,/#fredSpacesRadio \.fs-builds/);
+ assert.match(css,/body \.qbalances #controlPhiWalletButton/);
+});

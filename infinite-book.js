@@ -63,7 +63,7 @@
     build.append(E('span', '', 'Build this story with'));
     const illustrate=E('button','ib-action','Build image from story');illustrate.type='button';illustrate.dataset.bookAction='illustrate';
     for (const [tool, label] of [['infinity', 'Infinity'], ['omni', 'Omni'], ['quanta', 'QuantaPhi']]) {
-      const a = E('a', 'ib-build-link inPageSite', label);
+      const a = E('a', 'ib-build-link', label);
       a.dataset.bookAction = 'build'; a.dataset.bookTool = tool;
       a.dataset.siteTitle = label; a.href = '#'; build.append(a);
     }
@@ -121,6 +121,9 @@
     link.searchParams.set('q',indexedSearchTerms(story));
     link.searchParams.set('story',story.id);
     link.searchParams.set('storyTitle',String(story.title||'').slice(0,150));
+    link.searchParams.set('storySummary',String(story.summary||'').slice(0,500));
+    link.searchParams.set('storyDetail',String(story.detail||'').slice(0,200));
+    link.searchParams.set('storySector',String(catalog.sectors.find(x=>x.id===story.sector)?.name||''));
     link.searchParams.set('storySource',story.sourceUrl);
     link.searchParams.set('from','infinite-book');
     return link.href;
@@ -245,9 +248,9 @@
         note('Searching deeper · GPT is investigating this exact subject, angle and source class.');
         void discoverInBackground(roll).then(live=>{
           if(!live || ticket!==activeStoryTicket)return;
-          if(current?.id===starter.id && !interactedWithStory){
+          if(current?.id===starter.id && !interactedWithStory && live.discoveryMethod==='gpt-deep'){
             render(live,roll);
-            note(live.discoveryMethod==='gpt-deep'?'New original GPT-written secret · multiple research sources':'Backup source excerpt · GPT writing unavailable this time');
+            note('New original GPT-written secret · multiple research sources');
           } else if(ticket===activeStoryTicket){
             note('A new sourced discovery is ready for Another secret.');
           }
@@ -344,7 +347,19 @@
       window.PhiImageBuilder?.prefill('Illustrate this surprising historical story: '+current.title+'. Create a distinctive, evidence-respecting visual inspired by its subject.',{useStory:true});
       document.getElementById('phiImageBuilder')?.scrollIntoView({behavior:'smooth',block:'start'});
     }
-    // Build links are handled by QuantaPhi's existing in-page site viewer.
+    if(action==='build'&&current){
+      event.preventDefault();
+      const tool=target.dataset.bookTool;
+      if(tool==='quanta'){
+        // Only an explicit search uses the existing Infinity/Quant mint path.
+        const input=document.getElementById('q'),go=document.getElementById('go');
+        if(input&&go){input.value=indexedSearchTerms(current);go.click();input.scrollIntoView({behavior:'smooth',block:'start'});}
+        else note('QuantaPhi search is temporarily unavailable.');
+      }else if(tool==='infinity'||tool==='omni'){
+        if(typeof window.QuantaOpenSite==='function')window.QuantaOpenSite(target);
+        else window.location.assign(target.href);
+      }
+    }
   });
   root.addEventListener('toggle',event=>{if(event.target?.classList?.contains('ib-details'))interactedWithStory=true;},true);
   async function init() {
