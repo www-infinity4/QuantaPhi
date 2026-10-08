@@ -119,27 +119,40 @@ const CLASS_SEARCH={
  9:{terms:'peer reviewed journal archaeological research experiment paper',domains:['nature.com','science.org','journals.plos.org']},
  10:{terms:'oral history recorded testimony legend folklore attributed',domains:['loc.gov','si.edu','archive.org']}
 };
-function indexedDraw({catalog,query='',profileSector=0,lastPair='',rng=random}){
+function indexedDraw({catalog,query='',profileSector=0,lastPair='',rng=random,sectorOverride=0}={}){
  const words=Array.isArray(catalog?.wordIndex)?catalog.wordIndex:[];
- const realms=Array.isArray(catalog?.realmRefinements)?catalog.realmRefinements:[];
- if(words.length!==100||realms.length!==20)return null;
- const q=clean(query).toLowerCase();
- const exact=words.find(item=>{
-  const key=item.word.toLowerCase();
-  return q===key||q.startsWith(key+' ')||q.endsWith(' '+key);
- });
- const sectors=catalog.specialistRefinements||{};
- const preferred=words.filter(item=>(sectors[item.sector]||item.sector)===profileSector);
- const preference=preferred.length && rng(5)<2;
- let word=exact||((preference)?preferred[rng(preferred.length)]:words[rng(words.length)]);
- let realm=realms[rng(realms.length)];
- // Even under deterministic or poor RNG, don't show the identical numbered
- // topic+realm pair twice in a row. Keep all 2,000 routes reachable.
- if(lastPair===word.id+':'+realm.id)
-  realm=realms[(realm.id%realms.length)];
- return {wordNumber:word.id,indexWord:word.word,realmNumber:realm.id,realm:realm.name,
-  sector:Number(sectors[word.sector]||word.sector),specialtySector:word.sector,
-  searchQuery:word.word+' '+realm.name};
+ const refinements=Array.isArray(catalog?.researchRefinements)?catalog.researchRefinements:catalog?.realmRefinements||[];
+ const realms=Array.isArray(catalog?.storytellingRealms)?catalog.storytellingRealms:[];
+ const sectors=Array.isArray(catalog?.sectors)?catalog.sectors.slice(0,30):[];
+ if(words.length!==100||refinements.length!==20||realms.length!==3||sectors.length!==30)return null;
+ const map=catalog.specialistRefinements||{};
+ const sectorOf=w=>Array.isArray(w.sectors)&&w.sectors.length ? w.sectors : [Number(map[w.sector]||w.sector)];
+ const wordsIn=sector=>words.filter(w=>sectorOf(w).includes(sector));
+ const normalized=' '+clean(query).toLowerCase().replace(/[^a-z0-9]+/g,' ')+' ';
+ const exact=words.find(w=>normalized.includes(' '+w.word.toLowerCase()+' '));
+ const preference=Number(map[profileSector]||profileSector);
+ const preferred=preference>=1&&preference<=30&&wordsIn(preference).length&&rng(5)<2;
+ // Bracket one: sector; the next bracket never selects unrelated subjects.
+ const compatible=exact ? sectorOf(exact).filter(id=>id>=1&&id<=30) : [];
+ const sector=sectorOverride>=1&&sectorOverride<=30?sectorOverride:
+  compatible.length ? (compatible.includes(preference)?preference:compatible[rng(compatible.length)]):
+  preferred?preference:sectors[rng(sectors.length)].id;
+ const options=wordsIn(sector);
+ if(!options.length)return null;
+ // Bracket two: a single subject from the 100-word master index.
+ const word=exact&&options.some(w=>w.id===exact.id)?exact:options[rng(options.length)];
+ // Brackets three and four: History and Mystery are independent choices.
+ const refine=refinements[rng(refinements.length)];
+ let genre=realms[rng(realms.length)];
+ const key=()=>[sector,word.id,refine.id,genre.id].join(':');
+ if(lastPair===key())genre=realms[genre.id%realms.length];
+ const sourceClass=rng((catalog.sourceClasses||[]).length||10)+1;
+ return {sector,sectorName:sectors.find(s=>s.id===sector)?.name||'World discoveries',
+  wordNumber:word.id,indexWord:word.word,
+  refinementNumber:refine.id,refinement:refine.name,angle:refine.id,
+  storytellingRealmNumber:genre.id,storytellingRealm:genre.name,storytellingInstruction:genre.instruction,
+  realm:refine.name,realmNumber:refine.id,sourceClass,
+  bracketKey:key(),searchQuery:word.word+' '+refine.name};
 }
 
 function sourcePlan(roll,catalog,focus=''){
@@ -163,7 +176,8 @@ function sourcePlan(roll,catalog,focus=''){
  const preferredDomains=[...new Set([...approved.map(x=>x.domain),...localDomains,...preference.domains])];
  const domain=preferredDomains[random(preferredDomains.length)]||'si.edu';
  const indexedWord=clean(roll.indexWord||'').slice(0,65);
- const realm=clean(roll.realm||'').slice(0,65);
+ const realm=clean(roll.refinement||roll.realm||'').slice(0,65);
+ const storytellingRealm=clean(roll.storytellingRealm||'').slice(0,65);
  const anchor=indexedWord||clean(focus).slice(0,90)||clean(specialty)||sector;
  const discoveryTerms='specific incident demonstration object document event little-known -biography -town -municipality';
  const trail=['overlooked episode','archival surprise','forgotten evidence','unusual incident','newly rediscovered artifact','historical mystery'];
@@ -184,7 +198,7 @@ function sourcePlan(roll,catalog,focus=''){
   queries.push(anchor+' '+angle+' '+variant+' hidden historical episode site:history.com/articles -biography');
  }
  return {name:sector,angle,sourceClass,sourceClassId:roll.sourceClass,focus:anchor,
-  indexedWord,realm,specialty,domain,queries,sourceSites:approved.slice(0,18).map(x=>({name:x.name,url:x.url,domain:x.domain})),
+  indexedWord,realm,storytellingRealm,specialty,domain,queries,sourceSites:approved.slice(0,18).map(x=>({name:x.name,url:x.url,domain:x.domain})),
   combination:(sectorId-1)*200+(roll.angle-1)*10+roll.sourceClass};
 }
 
@@ -262,7 +276,7 @@ async function writeSecretStory(sources,plan,roll){
   'Both source URLs must refer to the same specific incident or artifact; if they only share the same famous subject return {"insufficient":true}.',
   'Quote no sentences verbatim. No invented dates, dialogue, motives, achievements, conspiracies or scientific claims. Mark legends and contested claims accurately.',
   'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 original words","full":"100-210 original words in two paragraphs","detail":"short exact surprising fact","status":"documented|reported|contested|corrected myth|folklore","evidence_urls":["exact URL of source 1","exact URL of source 2"]}.',
-  'Rolled combination '+plan.combination+'; indexed topic '+(plan.indexedWord||plan.focus)+'; story refinement '+(plan.realm||plan.angle)+'; source class '+plan.sourceClass+'; focus '+plan.focus+'. Mystery, suspense and adventure describe the tone, NEVER licenses to invent facts.',
+  'Rolled combination '+plan.combination+'; indexed topic '+(plan.indexedWord||plan.focus)+'; story refinement '+(plan.realm||plan.angle)+'; source class '+plan.sourceClass+'; focus '+plan.focus+'. Storytelling lens '+(plan.storytellingRealm||'History')+' shapes narrative structure ONLY. Do not invent facts, quotes, fictional experiences or unresolved outcomes.',
   'Sources are snippets, not verified complete pages: '+JSON.stringify(sources)
  ].join('\n');
  const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
@@ -321,6 +335,9 @@ async function findSearch({roll,catalog,seen,focus=''}) {
   return {id:'live-'+hash(lead.url),title:written.title,summary:written.summary,
    full:written.full,detail:written.detail,year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
    indexWord:plan.indexedWord,realm:plan.realm,wordNumber:Number(roll.wordNumber)||0,realmNumber:Number(roll.realmNumber)||0,
+   sectorName:roll.sectorName||plan.name,refinementNumber:Number(roll.refinementNumber)||0,
+   storytellingRealm:plan.storytellingRealm,storytellingRealmNumber:Number(roll.storytellingRealmNumber)||0,
+   bracketKey:roll.bracketKey||'',
    reviewedExcerpts:ranked.length,
    combination:plan.combination,status:written.status+' · research synthesis from search excerpts',
    sourceTitle:lead.title,sourceUrl:lead.url,
