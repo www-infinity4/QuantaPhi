@@ -4,11 +4,12 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 const path=require('node:path');
 
-function testReader() {
+function testReader({townOnly=false}={}) {
  const js=fs.readFileSync(path.join(__dirname,'..','infinite-book-discovery.js'),'utf8');
  const requests=[];
  const encyclopedia={
    query:{pages:{
+     '123123':{pageid:123123,title:'Cedarfield (Iowa)',extract:'Cedarfield is a town in Iowa in the United States. The town has a population recorded in the 2020 census. It is part of a local administrative district. '.repeat(8)},
      '5380129':{pageid:5380129,title:'Derveni papyrus',
        extract:'The Derveni papyrus is an ancient Greek document recovered near Thessaloniki in 1962. '+('It is a philosophical document connected to Orphic religious tradition and has been studied as archaeological evidence. ').repeat(8)},
      '70639759':{pageid:70639759,title:'Discovery of the tomb of Tutankhamun',
@@ -18,7 +19,7 @@ function testReader() {
  const fakeFetch=async url=>{
    const href=String(url);requests.push(href);
    if(href.includes('orange-brook'))return {ok:false,status:500};
-   if(href.includes('en.wikipedia.org/w/api.php'))return {ok:true,json:async()=>encyclopedia};
+   if(href.includes('en.wikipedia.org/w/api.php'))return {ok:true,json:async()=>townOnly?{query:{pages:{'123123':encyclopedia.query.pages['123123']}}}:encyclopedia};
    throw Error('Unexpected network request '+href);
  };
  const w={};
@@ -46,4 +47,18 @@ test('broken primary search fails over to new, attributed and nonrepeating sourc
  const next=await w.PhiInfiniteBookDiscover.find({roll,catalog,seen:new Set([story.id])});
  assert.ok(next,'another sourced story should still be found');
  assert.notEqual(next.id,story.id,'must not recycle seen story');
+});
+
+test('geographic profiles are never big secrets, even when they mention a mystery', async()=>{
+ const {w}=testReader({townOnly:true});
+ const discover=w.PhiInfiniteBookDiscover;
+ assert.equal(discover.isPlaceProfile({title:'Ghost Hollow',summary:'Ghost Hollow is a ghost town in Iowa with a population of 15.'}),true);
+ assert.equal(discover.isSecretStory({title:'Lost Village',summary:'Lost Village is a small town in Iowa. The 2020 census recorded 150 residents.'}),false);
+ const story=await discover.find({roll,catalog,seen:new Set()});
+ assert.equal(story,null,'must not show a town to fill a card');
+});
+test('real archaeological oddities remain eligible while towns are not',()=>{
+ const {w}=testReader();
+ const candidate={title:'Derveni papyrus',summary:'An ancient Greek manuscript recovered by archaeologists in 1962 reveals forgotten Orphic traditions.'};
+ assert.equal(w.PhiInfiniteBookDiscover.isSecretStory(candidate),true);
 });
