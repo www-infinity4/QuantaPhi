@@ -94,7 +94,7 @@ function preferences(activeQuery,catalog){
 // Artifact, demonstration, incident and document titles are still eligible.
 const PERSON_PROFILE=/\b(?:was|is)\s+(?:an?\s+)?(?:[\w-]+\s+){0,3}(?:inventor|scientist|physicist|engineer|artist|musician|politician|writer|actor|entrepreneur|mathematician|historian|composer|researcher|businessman)\b/i;
 const GENERIC_BIO=/\b(?:was born|is best known|best known for|known for his|known for her|early life|personal life|born in|died in|career and legacy|was a famous)\b/i;
-const EVENT_TITLE=/\b(?:boat|ship|patent|prototype|demonstration|machine|manuscript|papyrus|artifact|artefact|experiment|incident|lost|forgotten|secret|hidden|discovery|discovered|rediscovered|mystery|hoax|forgery|failure|accident|catastrophe|rescued|recovered|first|unusual|invention|device|signal|puzzle|film|recording|transmission|transmitter|letter|notebook|trial|wreck|tomb|operation|conspiracy|breakthrough|controversy|buried|declassified|uncovered)\b/i;
+const EVENT_TITLE=/\b(?:boat|ship|patent|prototype|mechanism|instrument|demonstration|machine|manuscript|papyrus|artifact|artefact|experiment|incident|lost|forgotten|secret|hidden|discovery|discovered|rediscovered|mystery|hoax|forgery|failure|accident|catastrophe|rescued|recovered|first|unusual|invention|device|signal|puzzle|film|recording|transmission|transmitter|letter|notebook|trial|wreck|tomb|operation|conspiracy|breakthrough|controversy|buried|declassified|uncovered)\b/i;
 function isGenericProfile(story){
  const title=clean(story?.title).replace(/\s+[-|–]\s+(?:Wikipedia|Biography|Britannica|History).*$/i,'');
  const intro=clean(story?.summary||story?.full).slice(0,650);
