@@ -249,7 +249,8 @@
   }
   async function share() {
     if (!current) return;
-    const url = deepLink(current);
+    const target = deepLink(current);
+    const url = typeof window.quantaShareUrl === 'function' ? window.quantaShareUrl({title:current.title,description:current.summary,q:current.title,dest:target,kind:'secret'}) : target;
     try {
       if (navigator.share) await navigator.share({ title: current.title, text: current.summary, url });
       else if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(current.title + '\n' + url);
