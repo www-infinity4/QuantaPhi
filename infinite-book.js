@@ -160,14 +160,17 @@
   function rollDice(query='') {
     const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
     const lastPath = (()=>{try{return sessionStorage.getItem('phi_book_last_roll_path')||''}catch{return ''}})();
+    // The current search is authoritative; when no query is supplied, a recent
+    // Quant can steer about two in five discoveries without monopolizing the book.
+    const quantFocus=String(query||(!query&&profile?.focus&&rand(5)<2?profile.focus:'')).trim().slice(0,90);
     const drawn = window.PhiInfiniteBookDiscover?.indexedDraw?.({
-      catalog,query,profileSector:Number(profile?.sector)||0,
+      catalog,query:quantFocus,profileSector:Number(profile?.sector)||0,
       lastPair:lastPath,rng:rand
     });
     if(drawn){
       try { sessionStorage.setItem('phi_book_last_roll_path',drawn.bracketKey); }catch(_){}
-      return {...drawn,trial:seenIds().size,focus:drawn.indexWord||'',
-        personal:Boolean(profile?.sector),signals:profile?.signals||0};
+      return {...drawn,quantFocus,trial:seenIds().size,focus:quantFocus||drawn.indexWord||'',
+        personal:Boolean(quantFocus),signals:profile?.signals||0};
     }
     // Older catalogs remain readable while rolling word banks are upgraded.
     const sector = catalog.sectors[rand(catalog.baseSectorCount||30)]?.id||3;
@@ -192,6 +195,7 @@
       if(direction&&direction===roll.directionNumber)value+=12;
       // Stories from the exact 4-roll route win only when actual articles exist.
       if(story.bracketKey && story.bracketKey===roll.bracketKey)value+=60;
+      if(roll.quantFocus){const tokens=roll.quantFocus.toLowerCase().split(/\s+/).filter(x=>x.length>=3);const hay=(story.title+' '+story.summary+' '+(story.indexWord||'')).toLowerCase();value+=Math.min(4,tokens.filter(x=>hay.includes(x)).length)*12;}
       if(story.discoveryMethod==='gpt-deep')value+=8;
       if(word && word===last)value-=36; // do not serve Tesla ten times in a row
       if(word && recent.slice(-5).includes(word))value-=12;

@@ -945,6 +945,31 @@
         }
       ],
       "detail": "Lincoln's inflatable-chamber boat invention received U.S. Patent No. 6,469 on May 22, 1849."
+    },
+    {
+      "id": "math-nine-compensation-pattern",
+      "sector": 15,
+      "wordNumber": 113,
+      "indexWord": "Mental arithmetic",
+      "angle": 1,
+      "refinementNumber": 1,
+      "directionNumber": 9,
+      "storyDirection": "Mathematics behind the mystery",
+      "bracketKey": "15:113:1:9",
+      "sourceClass": 3,
+      "status": "documented",
+      "title": "The nine-plus puzzle: a hidden ten inside every answer",
+      "summary": "Why does adding nine to a single digit so often feel like a trick? Nine is one less than ten. Move one unit from the other number to make ten, and the answer appears as ten plus what remains. For example, 9 + 8 becomes 10 + 7, which is 17.",
+      "full": "Suppose someone challenges you to add nine to any whole number from one through nine without counting on your fingers. The secret is to notice that nine needs only one more to become ten. Borrow one from the other number, then add the rest to ten. When the other number is six, you get 9 + 6 = 10 + 5 = 15. When it is nine, 9 + 9 = 10 + 8 = 18. The tens digit is one, and the units digit is one less than the other number.\n\nThere is no magic and no special exception hidden in the calculation. The identity is 9 + n = 10 + (n − 1). It follows simply because 9 = 10 − 1. It works for every integer n, not only 1 through 9, although the 'put a 1 in front' picture applies specifically when n is a digit from 1 through 9. The same compensation idea can turn 19 + 7 into 20 + 6 = 26, or 99 + 8 into 100 + 7 = 107. The next mystery is how many different quick calculations you can create by making a nearby ten, hundred, or thousand.",
+      "detail": "For n from 1 through 9, 9+n = 10+(n−1), making a simple two-digit mental addition strategy.",
+      "sourceTitle": "Illustrative Mathematics · Making a ten",
+      "sourceUrl": "https://tasks.illustrativemathematics.org/content-standards/tasks/955",
+      "sources": [
+        {
+          "title": "National Academies · Adding It Up",
+          "url": "https://www.nationalacademies.org/read/9822/chapter/8"
+        }
+      ]
     }
   ],
   "baseSectorCount": 30,
@@ -2324,6 +2349,14 @@
       "sectors": [
         1,
         14,
+        15
+      ]
+    },
+    {
+      "id": 113,
+      "word": "Mental arithmetic",
+      "sector": 15,
+      "sectors": [
         15
       ]
     }

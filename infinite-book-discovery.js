@@ -182,20 +182,21 @@ function sourcePlan(roll,catalog,focus=''){
  const preferredDomains=[...new Set([...approved.map(x=>x.domain),...localDomains,...preference.domains])];
  const domain=preferredDomains[random(preferredDomains.length)]||'si.edu';
  const indexedWord=clean(roll.indexWord||'').slice(0,65);
+ const researchedTopic=clean(roll.quantFocus||indexedWord).slice(0,90);
  const realm=clean(roll.refinement||roll.realm||'').slice(0,65);
  const direction=clean(roll.storyDirection||'').slice(0,90);
  const storytellingRealm=clean(roll.storytellingRealm||'').slice(0,65);
- const anchor=indexedWord||clean(focus).slice(0,90)||clean(specialty)||sector;
+ const anchor=researchedTopic||clean(focus).slice(0,90)||clean(specialty)||sector;
  const discoveryTerms='specific incident demonstration object document event little-known -biography -town -municipality';
  const trail=['overlooked episode','archival surprise','forgotten evidence','unusual incident','newly rediscovered artifact','historical mystery'];
  const variant=trail[(Number(roll.trial)||0)%trail.length];
  // Each button triggers new external retrieval. Actual source sites provide the
  // research catalog; the 6,000 rolls are query routes, never canned stories.
- const queries=indexedWord?[
+ const queries=researchedTopic?[
    // Begin with the user's actual random-number result: "Helium history".
-   [indexedWord,realm||angle,direction].filter(Boolean).join(' '),
-   [indexedWord,realm||angle,direction,'unusual origin discovery experiment incident historical source'].join(' '),
-   [indexedWord,realm||angle,direction,variant,preference.terms,'site:'+domain].join(' ')
+   [researchedTopic,realm||angle,direction].filter(Boolean).join(' '),
+   [researchedTopic,realm||angle,direction,'unusual origin discovery experiment incident historical source'].join(' '),
+   [researchedTopic,realm||angle,direction,variant,preference.terms,'site:'+domain].join(' ')
  ]:[
    anchor+' '+angle+' '+variant+' '+preference.terms+' '+discoveryTerms+' site:'+domain,
    [specialty||sector,angle,sourceClass,variant,discoveryTerms].filter(Boolean).join(' '),
@@ -205,7 +206,7 @@ function sourcePlan(roll,catalog,focus=''){
   queries.push(anchor+' '+angle+' '+variant+' hidden historical episode site:history.com/articles -biography');
  }
  return {name:sector,angle,sourceClass,sourceClassId:roll.sourceClass,focus:anchor,
-  indexedWord,realm,direction,storytellingRealm,specialty,domain,queries,sourceSites:approved.slice(0,18).map(x=>({name:x.name,url:x.url,domain:x.domain})),
+  indexedWord:researchedTopic,subjectIndexWord:indexedWord,realm,direction,storytellingRealm,specialty,domain,queries,sourceSites:approved.slice(0,18).map(x=>({name:x.name,url:x.url,domain:x.domain})),
   combination:(sectorId-1)*200+(roll.angle-1)*10+roll.sourceClass};
 }
 
