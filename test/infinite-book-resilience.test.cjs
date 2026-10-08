@@ -238,7 +238,7 @@ test('next story displays prepared content before research begins',()=>{
  assert.ok(code.includes('READY_TARGET = 8'));
  assert.ok(code.includes('MAX_RESEARCH_IN_FLIGHT = 2'));
  assert.ok(code.includes('RESEARCH_DEADLINE_MS = 16000'));
- assert.ok(code.includes('baseSectorCount || 30'));
+ assert.ok(code.includes('catalog.baseSectorCount||30'));
  assert.ok(code.includes('Four-roll path '));
 });
 test('slow same-origin source feed does not delay the first story',()=>{
