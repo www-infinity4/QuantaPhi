@@ -8,6 +8,7 @@
   const CATALOG_URL = '/infinite-book-catalog.json';
   const LIVE_CACHE = 'phi_infinite_book_live_v2';
   const bootTime = Date.now();
+  const initialQuery = new URL(location.href).searchParams.get('q');
   let queuedQuery = '', lastQuery = '';
   const E = (tag, cls, value) => {
     const el = document.createElement(tag);
@@ -201,8 +202,7 @@
     if(!query || query===lastQuery)return;
     lastQuery=query;
     // A shared / restored search on initial page load is one visit, not a second discovery.
-    const urlQuery=new URL(location.href).searchParams.get('q');
-    if(Date.now()-bootTime<6500 && query===urlQuery)return;
+    if(Date.now()-bootTime<6500 && query===initialQuery)return;
     void nextStory(query);
   });
   function favorite() {
