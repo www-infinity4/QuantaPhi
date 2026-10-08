@@ -160,14 +160,14 @@ test('live discovery rejects biographies even when they mention patents and secr
 test('HISTORY.com and specialist museums are indexed as story leads, not unverified claims',()=>{
  const js=fs.readFileSync(path.join(__dirname,'..','infinite-book-discovery.js'),'utf8');
  const entries=JSON.parse(fs.readFileSync(path.join(__dirname,'..','infinite-book-catalog.json'),'utf8'));
- assert.match(js,/site:history\\.com\\/articles/);
- assert.match(js,/editorial=roll\\.sourceClass===7\\|\\|roll\\.sourceClass===8/);
+ assert.match(js,/site:history\.com\/articles/);
+ assert.match(js,/editorial=roll\.sourceClass===7\|\|roll\.sourceClass===8/);
  assert.ok(entries.sourceRegistry.some(x=>x.sector===23&&x.domains.includes('history.com')));
  assert.ok(entries.sourceRegistry.some(x=>x.sector===10&&x.domains.includes('britishmuseum.org')));
  assert.ok(entries.stories.some(x=>x.id==='lincoln-boat-shoals-patent-1849'&&x.sources.some(y=>y.url.includes('history.com'))));
  const eniac=entries.stories.find(x=>x.id==='eniac-patent-invalidated-1973');
  assert.equal(eniac?.year,1973);
- assert.match(eniac?.sourceUrl||'',/archives\\.upenn\\.edu/);
+ assert.match(eniac?.sourceUrl||'',/archives\.upenn\.edu/);
 });
 
 test('live discovery races a slow GPT service with an attributed backup', async()=>{
