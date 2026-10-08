@@ -31,7 +31,9 @@
   const textSafe = (value) => String(value || '').replace(/\s+/g, ' ').trim();
   const storyValid = (story) => story && typeof story.id === 'string' && story.id.length < 120 &&
     textSafe(story.title).length > 5 && textSafe(story.summary).length > 15 &&
-    textSafe(story.full).length > 30 && trustedUrl(story.sourceUrl);
+    textSafe(story.full).length > 30 && trustedUrl(story.sourceUrl) &&
+    !window.PhiInfiniteBookDiscover?.isPlaceProfile?.(story) &&
+    (story.discoverySource !== 'live' || window.PhiInfiniteBookDiscover?.isSecretStory?.(story) !== false);
   const byId = new Map();
   let catalog = null;
   let current = null;
