@@ -47,7 +47,7 @@
     const url=API+path, bridge=window.StarQuestCloudLedger;
     let response;
     const opts={method,cache:"no-store",headers:{"content-type":"application/json"},...(body?{body:JSON.stringify(body)}:{})};
-    if(bridge?.authenticatedFetch){response=await bridge.authenticatedFetch(url,opts);}
+    if(bridge?.authenticatedFetch && !url.includes("fred-spaces-ledger.marvaseater.workers.dev")){response=await bridge.authenticatedFetch(url,opts);}
     else {
       const t=await token();
       if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(t))throw new Error("Connect your existing StarCoin wallet before spending.");
