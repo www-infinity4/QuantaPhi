@@ -193,12 +193,16 @@ async function findWikipedia({roll,catalog,seen}) {
  const base=WIKI_QUERIES[roll.sector] || (catalog.sectors.find(s=>s.id===roll.sector)?.name+' historical discovery');
  const seenWikipedia=[...seen].filter(id=>id.startsWith('wiki-')).length;
  // Keep a finite search offset and rotate terms; do not loop over seen items.
- const topics=[base,base+' discoveries facts'];
- const offset=(seenWikipedia%5)*8;
+ // Rotate search phrasing and offsets independently: the previous five-offset
+ // loop exhausted the same articles after only a few visits.
+ const variants=['documented discoveries','unusual historical mystery','forgotten experiments','rediscovered artifacts','unexpected events'];
+ const variant=variants[seenWikipedia%variants.length];
+ const topics=[base,base+' '+variant,'historical '+variant+' '+(catalog.sectors.find(s=>s.id===roll.sector)?.name||'history')];
+ const offset=(Math.floor(seenWikipedia/4)%6)*7;
  const replies=await Promise.allSettled(topics.map((q,i)=>{
   const u=new URL(WIKI);
   u.search=new URLSearchParams({action:'query',generator:'search',gsrsearch:q,
-    gsrlimit:'10',gsroffset:String((offset+i*8)%48),
+    gsrlimit:'20',gsroffset:String((offset+i*9)%49),
     prop:'extracts',exintro:'1',explaintext:'1',exchars:'2400',
     format:'json',origin:'*'});
   return request(u.href,{cache:'no-store'},8000);
@@ -209,7 +213,7 @@ async function findWikipedia({roll,catalog,seen}) {
   for(const page of Object.values(reply.value?.query?.pages||{})){
    const full=wikiExcerpt(page.extract);
    const title=clean(page.title), id='wiki-'+page.pageid;
-   if(!Number.isInteger(page.pageid)||!title||seen.has(id)||full.length<460)continue;
+   if(!Number.isInteger(page.pageid)||!title||seen.has(id)||full.length<240)continue;
    if(/^(List of|Index of|Timeline of|Category:|20[0-9][0-9] in |[0-9]{4} in )/i.test(title))continue;
    if(/may refer to|is a disambiguation page/i.test(full.slice(0,200)))continue;
    if(/television series|fictional character|video game series/i.test(full.slice(0,200)) && roll.sector!==21)continue;
@@ -218,7 +222,12 @@ async function findWikipedia({roll,catalog,seen}) {
   }
  }
  if(!candidates.length)return null;
- const choice=candidates[random(candidates.length)];
+ // Prefer the strongest discovery language over ordinary topical references.
+ const hook=/\b(?:discovered|rediscovered|forgotten|hidden|lost|mysterious|mystery|unexpected|secret|excavated|recovered|declassified|forgery|accidental|unusual|breakthrough|experiment)\b/i;
+ const ranked=candidates.map(item=>({item,score:(hook.test(item.title)?4:0)+(hook.test(item.full.slice(0,500))?3:0)+Math.min(3,Math.floor(item.full.length/500))}));
+ ranked.sort((a,b)=>b.score-a.score);
+ const shortlist=ranked.slice(0,Math.min(8,ranked.length)).map(x=>x.item);
+ const choice=shortlist[random(shortlist.length)];
  const sentences=choice.full.match(/[^.!?]+[.!?]+/g)||[];
  let summary=sentences.slice(0,3).join(' ').trim();
  if(summary.length<90)summary=choice.full.slice(0,290);
