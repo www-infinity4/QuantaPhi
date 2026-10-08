@@ -66,7 +66,9 @@ function isSecretStory(story){
  const title=clean(story?.title),lead=clean(story?.summary||story?.full);
  if(!title||!lead)return false;
  if(/^(?:List of|Index of|Timeline of|Category:)/i.test(title))return false;
- return SECRET_HOOK.test((title+' '+lead).slice(0,1000));
+ // Secret facts mentioned in a biography do not make that profile a secret story.
+ // The heading must identify a specific event, object, document or incident.
+ return EVENT_TITLE.test(title) && SECRET_HOOK.test((title+' '+lead).slice(0,1000));
 }
 
 function preferences(activeQuery,catalog){
@@ -102,7 +104,8 @@ function isGenericProfile(story){
  const headline=title.replace(/\s*[-|–]\s*(?:life|biography|history|facts).*$/i,'');
  // A name-only result with a biographical lead is never the obscure event.
  const nameOnly=/^[\p{Lu}][\p{L}'-]+(?:\s+[\p{Lu}][\p{L}'-]+){1,3}$/u.test(headline);
- return !EVENT_TITLE.test(headline)&&(nameOnly||/\bbiography\b/i.test(title))&&(PERSON_PROFILE.test(intro)||GENERIC_BIO.test(intro));
+ const lifeDates=/\b(?:born|died)\b|\(\s*\d{1,2}\s+[A-Z][a-z]+\s+\d{4}\s*[–-]|\(\s*\d{4}\s*[–-]/i.test(intro);
+ return !EVENT_TITLE.test(headline)&&(nameOnly||/\bbiography\b/i.test(title))&&(lifeDates||PERSON_PROFILE.test(intro)||GENERIC_BIO.test(intro));
 }
 const CLASS_SEARCH={
  1:{terms:'original patent archival record manuscript exhibit evidence',domains:['patents.google.com','loc.gov','archives.gov']},
@@ -324,7 +327,7 @@ async function findWikipedia({roll,catalog,seen,focus=''}) {
    if(/^(List of|Index of|Timeline of|Category:|20[0-9][0-9] in |[0-9]{4} in )/i.test(title))continue;
    if(/may refer to|is a disambiguation page/i.test(full.slice(0,200)))continue;
    if(/television series|fictional character|video game series/i.test(full.slice(0,200)) && roll.sector!==21)continue;
-   if(!isSecretStory({title,summary:full.slice(0,900)})||!EVENT_TITLE.test(title))continue;
+   if(isGenericProfile({title,summary:full})||!isSecretStory({title,summary:full.slice(0,900)}))continue;
    candidates.push({id,title,full,pageid:page.pageid});
   }
  }
