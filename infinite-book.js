@@ -163,9 +163,12 @@
     // The current search is authoritative; when no query is supplied, a recent
     // Quant can steer about two in five discoveries without monopolizing the book.
     const quantFocus=String(query||(!query&&profile?.focus&&rand(5)<2?profile.focus:'')).trim().slice(0,90);
+    const originalSector=Number(profile?.sector)||0;
+    const mappedSector=Number(catalog.specialistRefinements?.[originalSector]||originalSector);
+    const activeSector=query && mappedSector>=1 && mappedSector<=(catalog.baseSectorCount||30)?mappedSector:0;
     const drawn = window.PhiInfiniteBookDiscover?.indexedDraw?.({
-      catalog,query:quantFocus,profileSector:Number(profile?.sector)||0,
-      lastPair:lastPath,rng:rand
+      catalog,query:quantFocus,profileSector:originalSector,
+      sectorOverride:activeSector,lastPair:lastPath,rng:rand
     });
     if(drawn){
       try { sessionStorage.setItem('phi_book_last_roll_path',drawn.bracketKey); }catch(_){}
