@@ -227,24 +227,24 @@ test('story-to-Phi links use a semantic index and the existing explicit QuantaPh
  assert.match(css,/body \.qbalances #controlPhiWalletButton/);
 });
 
-test('the next story renders ready content before any network request',()=>{
+test('next story displays prepared content before research begins',()=>{
  const code=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
  const section=code.split("async function nextStory(query = '')")[1].split("window.addEventListener('quantaphi:search-start'")[0];
  assert.ok(section.includes('pickUnique(roll, seenIds())'));
  assert.ok(section.includes('render(ready, roll)'));
  assert.ok(section.indexOf('render(ready, roll)') < section.indexOf('discoverInBackground(roll, acceptNew)'));
- assert.doesNotMatch(section,/await Promise\\.race/);
- assert.doesNotMatch(section,/\\.disabled\\s*=\\s*true/);
- assert.match(code,/READY_TARGET = 8/);
- assert.match(code,/MAX_RESEARCH_IN_FLIGHT = 2/);
- assert.match(code,/RESEARCH_DEADLINE_MS = 16000/);
- assert.match(code,/baseSectorCount \\|\\| 30/);
- assert.match(code,/\\+\\'\\/6000 · \\'/);
+ assert.ok(!section.includes('await Promise.race'));
+ assert.ok(!section.includes('nextButton.disabled = true'));
+ assert.ok(code.includes('READY_TARGET = 8'));
+ assert.ok(code.includes('MAX_RESEARCH_IN_FLIGHT = 2'));
+ assert.ok(code.includes('RESEARCH_DEADLINE_MS = 16000'));
+ assert.ok(code.includes('baseSectorCount || 30'));
+ assert.ok(code.includes("+'/6000 · '"));
 });
-test('source feed cannot block initial story display',()=>{
+test('slow same-origin source feed does not delay the first story',()=>{
  const code=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
  const init=code.split('async function init()')[1];
- assert.doesNotMatch(init,/await appendConfiguredFeed/);
- assert.match(init,/void appendConfiguredFeed\\(\\)\\.then\\(refillReadyStories\\)/);
- assert.match(init,/await nextStory\\(initialQuery\\|\\|''\\)/);
+ assert.ok(!init.includes('await appendConfiguredFeed()'));
+ assert.ok(init.includes('void appendConfiguredFeed().then(refillReadyStories)'));
+ assert.ok(init.includes("await nextStory(initialQuery||'')"));
 });
