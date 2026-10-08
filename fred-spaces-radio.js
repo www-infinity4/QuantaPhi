@@ -10,9 +10,9 @@
   // Metadata is verified from the public host catalog; audio is NOT licensed here.
   const episodes = [
     {id:"fred-0700",slot:700,title:"Bitcoin and Coffee",date:"Dec 29, 2025",duration:"1:09:32",tags:["bitcoin","coffee","markets"],description:"Fred Krueger's archived Bitcoin and Coffee Space. The listing confirms its title, date and duration; a recording transcript has not been verified.",source:ARCHIVE,audioUrl:null},
-    {id:"fred-0147",slot:147,title:"Silver is a bubble. The revolution will not be televised.",date:"May 26, 2025",duration:"0:16:21",tags:["silver","bitcoin","metals"],description:"A Fred Krueger recording listed under a title questioning silver. Its arguments are not independently verified without an authorized transcript.",source:ARCHIVE,audioUrl:null},
+    {id:"fred-0147",slot:147,title:"Silver is a bubble. Bitcoin is the real deal.",date:"Dec 27, 2025",duration:"0:16:21",tags:["silver","bitcoin","metals"],description:"A brief Fred Krueger Space indexed as a comparison of silver and Bitcoin. The specific arguments have not been verified against a transcript.",source:"https://twitter.com/i/spaces/1MnGnPEEvWYxO",audioUrl:null},
     {id:"fred-0298",slot:298,title:"New Year BTC",date:"Jan 1, 2026",duration:"0:56:17",tags:["new year","bitcoin","markets"],description:"An archived New Year's Day Space titled New Year BTC. Specific predictions and discussion are not inferred without an authorized recording.",source:ARCHIVE,audioUrl:null},
-    {id:"fred-0555",slot:555,title:"State of the markets. Bitcoin.",date:"Feb 9, 2026",duration:"4:20:17",tags:["markets","bitcoin","macro"],description:"An extended market-focused Fred Krueger Space, according to the public episode listing. Discussion details require the recording or transcript.",source:ARCHIVE,audioUrl:null},
+    {id:"fred-0555",slot:555,title:"State of the markets. Bitcoin.",date:"Feb 9, 2026",duration:"4:20:17",tags:["markets","bitcoin","macro"],description:"An extended market-focused Fred Krueger Space, according to the public episode listing. Discussion details require the recording or transcript.",source:"https://twitter.com/i/spaces/1MYxNlwEqYyGw",audioUrl:null},
     {id:"fred-0888",slot:888,title:"Bitcoin and Trump’s “5D chess”",date:"Apr 7, 2026",duration:"3:22:21",tags:["bitcoin","politics","markets"],description:"A public Fred Krueger Space listed with a Bitcoin and Trump political title. The recording has not been independently reviewed.",source:ARCHIVE,audioUrl:null}
   ];
   const byId = new Map(episodes.map(e=>[e.id,e]));
@@ -52,10 +52,11 @@
     const pool=candidates.length?candidates:episodes.filter(e=>e.id!==FIRST&&e.id!==active.id);
     if(!pool.length)return null;
     const interests=terms();
+    const favoriteTopics=new Set(episodes.filter(e=>stars.has(e.id)).flatMap(e=>e.tags));
     // A real 1-1000 random draw, mixed with known quant/search terms.
     const random=new Uint32Array(1);crypto.getRandomValues(random);
     const roll=1+(random[0]%1000);
-    const ranked=pool.map(e=>({e,weight:1+e.tags.reduce((n,t)=>n+(interests.has(t)?6:0)+Math.min(30,interestWeights.get(t)||0),0)}));
+    const ranked=pool.map(e=>({e,weight:1+e.tags.reduce((n,t)=>n+(interests.has(t)?6:0)+(favoriteTopics.has(t)?4:0)+Math.min(30,interestWeights.get(t)||0),0)}));
     const total=ranked.reduce((n,p)=>n+p.weight,0);
     let ticket=roll%total;
     for(const p of ranked){ticket-=p.weight;if(ticket<0)return p.e;}
@@ -128,7 +129,7 @@
     }else{
       stream.append(node("div","fs-play-symbol","◉"),node("p","fs-stream-note","The first episode is free to discover. Fred’s recording has not yet been connected to an authorized Phi audio source."));
     }
-    const link=node("a","fs-source","Find the original Space / replay ↗");link.href=active.source;link.target="_blank";link.rel="noopener noreferrer";stream.append(link);card.append(stream);
+    const link=node("a","fs-source","Find Fred’s episode or original replay ↗");link.href=active.source;link.target="_blank";link.rel="noopener noreferrer";stream.append(link);card.append(stream);
     const actions=node("div","fs-actions");
     actions.append(button(stars.has(active.id)?"★ Starred":"☆ Star",favorite),button("Share +0.1 ★",share),button("Collect +0.1 ★",collect));
     card.append(actions);
