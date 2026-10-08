@@ -86,6 +86,9 @@ function preferences(activeQuery,catalog){
 
  for(const v of values){const matched=terms.filter(([_,rx])=>rx.test(v.q));if(!matched.length)continue;const narrow=matched.filter(([id])=>id>=31);const chosen=narrow.length?narrow:matched;for(const [id]of chosen)scores.set(id,(scores.get(id)||0)+v.weight/Math.sqrt(chosen.length))}
  let sector=0,score=0;for(const [id,value]of scores){if(value>score){sector=id;score=value}}
+ // An explicit Quant search should beat accumulated older interests for this draw.
+ const activeMatches=clean(activeQuery)?terms.filter(([id,rx])=>rx.test(activeQuery)):[];
+ if(activeMatches.length){const specialist=activeMatches.find(([id])=>id>=31);sector=(specialist||activeMatches[0])[0];score+=3}
  // Preference nudges the sector; the selected person/topic is a research starting
  // point, never permission to return a biography.
  const recent=values.slice().reverse().map(x=>x.q).find(q=>q.length>=3&&q.length<=90&&!/^(?:search|home|news|music|hello)$/i.test(q));
