@@ -58,10 +58,23 @@ async function seedBanks(body,env){
  }
  return {ok:true,updated};
 }
-async function banks(env){
+async function banks(req,env){
+ const u=new URL(req.url);
+ const sector=Number(u.searchParams.get("sector")||0);
  const [a,b,c,d]=await Promise.all(["book_sectors","book_subjects","book_angles","book_directions"].map(table=>env.DB.prepare("SELECT * FROM "+table+" ORDER BY id").all()));
- return {ok:true,revision:4,sectors:a.results||[],subjects:(b.results||[]).map(x=>({id:x.id,word:x.name,sectors:JSON.parse(x.sector_ids_json)})),angles:c.results||[],directions:d.results||[]};
+ const sectors=a.results||[],angles=c.results||[],directions=d.results||[];
+ const subjects=(b.results||[]).map(x=>({id:x.id,word:x.name,sectors:JSON.parse(x.sector_ids_json)}));
+ // Carry forward the existing 4,280 reviewed terms in infinity-reads-realms-index
+ // without changing or deleting the old rr_* schema. Namespace IDs to avoid
+ // collisions with the local 112-word fallback catalog.
+ try {
+  const legacy=await env.DB.prepare("SELECT id,sector_id,term FROM rr_topics WHERE reviewed=1 ORDER BY id LIMIT 6000").all();
+  for(const x of legacy.results||[])subjects.push({id:100000+Number(x.id),word:x.term,sectors:[Number(x.sector_id)]});
+ }catch(_){} // new databases without the legacy index are also supported
+ const filtered=sector>0?subjects.filter(x=>x.sectors.includes(sector)):subjects;
+ return {ok:true,revision:4,sectors,subjects:filtered,angles,directions,total:filtered.length};
 }
+
 function storyCheck(story){
  if(!story||typeof story!=="object")return null;
  const id=clean(story.id,119),eventKey=clean(story.event_key,190).toLowerCase();
@@ -195,7 +208,7 @@ async function draftJob(job,env){
  const draft=parseAI(answer);if(!draft||draft.insufficient)return {status:"needs_sources",error:"GPT_rejected_insufficient_evidence"};
  const corroborating=sources.filter(x=>(draft.source_urls||[]).includes(x.url));
  if(new Set(corroborating.map(x=>host(x.url))).size<2||clean(draft.title).length<16||clean(draft.full,7000).length<210)
-  return {status:"needs_sources",error:"draft_not_corroborrated"};
+  return {status:"needs_sources",error:"draft_not_corroborated"};
  return {status:"review",draft:{...draft,sourceUrl:corroborating[0].url,sources:corroborating,routeKey:job.route_key},error:""};
 }
 async function processJobs(env){
@@ -215,7 +228,7 @@ async function handle(req,env){
  if(req.method==="GET"&&path==="/v1/book/health")return output(req,{ok:!!env.DB,service:"infinite-book-library",editorial:"reviewed-only"});
  if(!env.DB)return output(req,{error:"d1_binding_required"},503);
  if(req.method==="GET"&&path==="/v1/book/feed")return output(req,await feed(req,env));
- if(req.method==="GET"&&path==="/v1/book/banks")return output(req,await banks(env));
+ if(req.method==="GET"&&path==="/v1/book/banks")return output(req,await banks(req,env));
  if(!path.startsWith("/v1/book/admin/"))return output(req,{error:"not_found"},404);
  if(!allowedAdmin(req,env))return output(req,{error:"unauthorized"},401);
  if(req.method==="POST"&&path==="/v1/book/admin/bootstrap"){await ensure(env);return output(req,{ok:true,schemaVersion:1})}
