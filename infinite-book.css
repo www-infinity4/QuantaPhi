@@ -22,3 +22,6 @@
 #infiniteBook .ib-next:focus-visible,#infiniteBook .ib-action:focus-visible,#infiniteBook a:focus-visible,#infiniteBook summary:focus-visible{outline:3px solid #124aff;outline-offset:2px}
 #infiniteBook .ib-status{margin:6px 2px 0;min-height:16px;font-size:11px;color:#6d4f30}
 @media(max-width:360px){#infiniteBook .ib-head strong{font-size:10px}#infiniteBook .ib-next{font-size:11px;padding:7px}#infiniteBook .ib-title{font-size:17px}#infiniteBook .ib-story{padding:11px}}
+
+#infiniteBook .ib-more-sources{display:grid;gap:5px;margin-top:6px}
+#infiniteBook .ib-more-sources .ib-source{font-size:11px}
