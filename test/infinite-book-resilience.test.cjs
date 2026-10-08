@@ -75,7 +75,7 @@ test('short verified source introductions remain usable after built-in stories r
 });
 
 
-test('all dimensions change the discovery plan and preserve the expanded 7800 combinations',()=>{
+test('all dimensions change discovery while retaining the original 6000 routes plus specialist refinements',()=>{
  const {w}=testReader();
  const c={sectors:[{id:1,name:'Energy & electricity'}],angles:[{id:9,name:'Unexpected invention'},{id:19,name:'Lost and rediscovered'}],
   sourceClasses:[{id:1,name:'Primary archives'},{id:2,name:'Museums and collections'}],
@@ -88,7 +88,9 @@ test('all dimensions change the discovery plan and preserve the expanded 7800 co
  assert.match(museum.queries.join(' '),/museum collection/);
  assert.match(museum.queries.join(' '),/Lost and rediscovered/);
  assert.match(museum.queries.join(' '),/Nikola Tesla/);
- assert.equal(w.PhiInfiniteBookDiscover.sourcePlan({sector:39,angle:20,sourceClass:10},c).combination,7800);
+ const specialist=w.PhiInfiniteBookDiscover.sourcePlan({sector:39,angle:20,sourceClass:10},c);
+ assert.equal(specialist.combination,400,'specialist electronics refines one of 6000 base routes');
+ assert.match(specialist.queries.join(' '),/electronics|Energy|Technology/i);
 });
 
 test('famous person biographies are not secret stories, specific historical incidents can be',()=>{
@@ -161,7 +163,7 @@ test('HISTORY.com and specialist museums are indexed as story leads, not unverif
  const js=fs.readFileSync(path.join(__dirname,'..','infinite-book-discovery.js'),'utf8');
  const entries=JSON.parse(fs.readFileSync(path.join(__dirname,'..','infinite-book-catalog.json'),'utf8'));
  assert.match(js,/site:history\.com\/articles/);
- assert.match(js,/editorial=roll\.sourceClass===7\|\|roll\.sourceClass===8/);
+ assert.match(js,/if\(roll\.sourceClass===7\|\|roll\.sourceClass===8\)/);
  assert.ok(entries.sourceRegistry.some(x=>x.sector===23&&x.domains.includes('history.com')));
  assert.ok(entries.sourceRegistry.some(x=>x.sector===10&&x.domains.includes('britishmuseum.org')));
  assert.ok(entries.stories.some(x=>x.id==='lincoln-boat-shoals-patent-1849'&&x.sources.some(y=>y.url.includes('history.com'))));
@@ -199,7 +201,12 @@ test('live discovery races a slow GPT service with an attributed backup', async(
 
 test('the verified local story library has independently sourced event narratives',()=>{
  const catalog=JSON.parse(fs.readFileSync(path.join(__dirname,'..','infinite-book-catalog.json'),'utf8'));
- assert.equal(catalog.sectors.length*catalog.angles.length*catalog.sourceClasses.length,7800);
+ assert.equal(catalog.baseSectorCount*catalog.angles.length*catalog.sourceClasses.length,6000);
+ assert.equal(Object.keys(catalog.specialistRefinements).length,9);
+ assert.ok(catalog.sourceSites.length>=12);
+ assert.ok(catalog.sourceSites.some(s=>s.domain==='history.com'));
+ assert.ok(catalog.sourceSites.some(s=>s.domain==='blogs.loc.gov'));
+ assert.ok(catalog.sourceSites.every(s=>s.url.startsWith('https://')));
  assert.ok(catalog.stories.length>=16);
  assert.equal(new Set(catalog.stories.map(s=>s.id)).size,catalog.stories.length);
  assert.ok(catalog.stories.every(s=>/^https:\/\//.test(s.sourceUrl)&&s.full.length>80));
@@ -218,4 +225,13 @@ test('story-to-Phi links use a semantic index and the existing explicit QuantaPh
  assert.match(css,/#infiniteBook a\.ib-build-link/);
  assert.match(css,/#fredSpacesRadio \.fs-builds/);
  assert.match(css,/body \.qbalances #controlPhiWalletButton/);
+});
+
+test('story button starts live source discovery before any stored backup',()=>{
+ const code=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
+ const section=code.split("async function nextStory(query='')")[1].split("window.addEventListener('quantaphi:search-start'")[0];
+ assert.ok(section.indexOf('discoverInBackground(roll,upgrade)')>=0);
+ assert.ok(section.indexOf('discoverInBackground(roll,upgrade)')<section.indexOf('pickUnique(roll,seenIds())'));
+ assert.match(code,/baseSectorCount \|\| 30/);
+ assert.match(code,/\+\'\/6000 · \'/);
 });
