@@ -120,31 +120,42 @@ const CLASS_SEARCH={
  10:{terms:'oral history recorded testimony legend folklore attributed',domains:['loc.gov','si.edu','archive.org']}
 };
 function sourcePlan(roll,catalog,focus=''){
- const sector=catalog.sectors.find(x=>x.id===roll.sector)?.name||'Surprising history';
+ // The original book has 30 x 20 x 10 = 6,000 discovery routes.
+ // The nine later technical sectors are refinements within those routes.
+ const refinementMap=catalog.specialistRefinements||{31:1,32:2,33:2,34:2,35:7,36:6,37:20,38:1,39:2};
+ const originalSector=Number(roll.sector);
+ const sectorId=Number(refinementMap[originalSector]||originalSector);
+ const sector=catalog.sectors.find(x=>x.id===sectorId)?.name||'Surprising history';
+ const specialty=originalSector!==sectorId ? catalog.sectors.find(x=>x.id===originalSector)?.name||'' : clean(roll.refinement||'');
  const angle=catalog.angles.find(x=>x.id===roll.angle)?.name||'Forgotten discovery';
  const sourceClass=catalog.sourceClasses?.find(x=>x.id===roll.sourceClass)?.name||'Original historical records';
  const preference=CLASS_SEARCH[roll.sourceClass]||CLASS_SEARCH[1];
- const localDomains=catalog.sourceRegistry?.find(x=>x.sector===roll.sector)?.domains||[];
- // HISTORY and other editorial investigations are discovery leads, not primary
- // archive evidence. Prioritize them for historian/reporting rolls only.
- const editorial=roll.sourceClass===7||roll.sourceClass===8;
- const overlap=localDomains.filter(x=>preference.domains.includes(x));
- const choices=editorial?[...new Set([...overlap,...preference.domains])]:[...new Set([...overlap,...localDomains,...preference.domains])];
- const domain=choices[random(choices.length)];
- const anchor=clean(focus).slice(0,90)||sector;
- const discoveryTerms='obscure specific event little-known documented detail -biography -overview -facts -town -municipality';
- // All three rolled numbers change the actual research and not just the card labels.
+ const localDomains=catalog.sourceRegistry?.find(x=>x.sector===originalSector)?.domains||
+  catalog.sourceRegistry?.find(x=>x.sector===sectorId)?.domains||[];
+ const entries=Array.isArray(catalog.sourceSites)?catalog.sourceSites:[];
+ const eligible=entries.filter(x=>Array.isArray(x.classes)&&x.classes.includes(roll.sourceClass)&&
+  (Array.isArray(x.sectors)?x.sectors.includes(sectorId):true));
+ const secondary=entries.filter(x=>Array.isArray(x.classes)&&x.classes.includes(roll.sourceClass));
+ const approved=eligible.length?eligible:secondary;
+ const preferredDomains=[...new Set([...approved.map(x=>x.domain),...localDomains,...preference.domains])];
+ const domain=preferredDomains[random(preferredDomains.length)]||'si.edu';
+ const anchor=clean(focus).slice(0,90)||clean(specialty)||sector;
+ const discoveryTerms='specific incident demonstration object document event little-known -biography -town -municipality';
+ const trail=['overlooked episode','archival surprise','forgotten evidence','unusual incident','newly rediscovered artifact','historical mystery'];
+ const variant=trail[(Number(roll.trial)||0)%trail.length];
+ // Each button triggers new external retrieval. Actual source sites provide the
+ // research catalog; the 6,000 rolls are query routes, never canned stories.
  const queries=[
-   anchor+' '+angle+' '+preference.terms+' '+discoveryTerms+' site:'+domain,
-   anchor+' '+angle+' '+sourceClass+' rare incident original source '+discoveryTerms,
-   sector+' '+angle+' '+preference.terms+' unusual historical event documented -biography'
+   anchor+' '+angle+' '+variant+' '+preference.terms+' '+discoveryTerms+' site:'+domain,
+   [specialty||sector,angle,sourceClass,variant,discoveryTerms].filter(Boolean).join(' '),
+   sector+' '+angle+' documented '+variant+' '+preference.terms+' -biography'
  ];
- if(editorial){
-   // HISTORY articles are used as leads; GPT must still corroborate the
-   // particular event with a separate independent domain before publishing.
-   queries.push(anchor+' forgotten hidden episode invention artifact site:history.com/articles -biography');
+ if(roll.sourceClass===7||roll.sourceClass===8){
+  queries.push(anchor+' '+angle+' '+variant+' hidden historical episode site:history.com/articles -biography');
  }
- return {name:sector,angle,sourceClass,sourceClassId:roll.sourceClass,focus:anchor,domain,queries,combination:(roll.sector-1)*200+(roll.angle-1)*10+roll.sourceClass};
+ return {name:sector,angle,sourceClass,sourceClassId:roll.sourceClass,focus:anchor,
+  specialty,domain,queries,sourceSites:approved.slice(0,12).map(x=>({name:x.name,url:x.url,domain:x.domain})),
+  combination:(sectorId-1)*200+(roll.angle-1)*10+roll.sourceClass};
 }
 
 async function request(url,options={},ms=8500){
@@ -179,8 +190,11 @@ function distinctiveWords(title,focus=''){
 function relatedSources(lead,results,focus){
  const tokens=distinctiveWords(lead.title,focus);
  if(!tokens.length)return [];
- return results.filter(item=>origin(item.url)!==origin(lead.url)&&item.url!==lead.url&&
-   tokens.some(w=>(item.title+' '+item.summary).toLowerCase().includes(w))).slice(0,3);
+ return results.filter(item=>{
+   if(origin(item.url)===origin(lead.url)||item.url===lead.url)return false;
+   const evidence=(item.title+' '+item.summary).toLowerCase();
+   return tokens.filter(w=>evidence.includes(w)).length>=Math.min(2,tokens.length);
+ }).slice(0,3);
 }
 async function scoutQueries(plan,roll){
  const prompt=[
@@ -203,8 +217,10 @@ async function scoutQueries(plan,roll){
 }
 function detailsSupported(detail,sources,focus){
  const words=distinctiveWords(detail,focus).filter(x=>x.length>=5);
- const evidence=sources.map(s=>(s.title+' '+s.summary).toLowerCase()).join(' ');
- return words.filter(w=>evidence.includes(w)).length>=2;
+ if(words.length<2||sources.length<2)return false;
+ const evidence=sources.map(s=>(s.title+' '+s.summary).toLowerCase());
+ return words.filter(w=>evidence.some(line=>line.includes(w))).length>=2 &&
+  evidence.every(line=>words.some(w=>line.includes(w)));
 }
 async function writeSecretStory(sources,plan,roll){
  const prompt=[
