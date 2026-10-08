@@ -310,7 +310,10 @@
         "louvre.fr",
         "metmuseum.org",
         "uni-heidelberg.de",
-        "nga.gov"
+        "nga.gov",
+        "smithsonianmag.com",
+        "history.com",
+        "britishmuseum.org"
       ]
     },
     {
@@ -327,7 +330,18 @@
         "sric.ca",
         "oberf.org",
         "archive.org",
-        "universitypressscholarship.com"
+        "universitypressscholarship.com",
+        "history.com",
+        "si.edu"
+      ]
+    },
+    {
+      "sector": 6,
+      "domains": [
+        "history.com",
+        "patents.google.com",
+        "invention.si.edu",
+        "edison.rutgers.edu"
       ]
     },
     {
@@ -335,7 +349,8 @@
       "domains": [
         "nasa.gov",
         "science.nasa.gov",
-        "esa.int"
+        "esa.int",
+        "history.com"
       ]
     },
     {
@@ -343,7 +358,89 @@
       "domains": [
         "archives.gov",
         "army.mil",
+        "nationalww2museum.org",
+        "history.com"
+      ]
+    },
+    {
+      "sector": 9,
+      "domains": [
+        "history.com",
+        "archives.gov",
+        "cia.gov",
         "nationalww2museum.org"
+      ]
+    },
+    {
+      "sector": 10,
+      "domains": [
+        "history.com",
+        "britishmuseum.org",
+        "smithsonianmag.com"
+      ]
+    },
+    {
+      "sector": 11,
+      "domains": [
+        "history.com",
+        "metmuseum.org",
+        "britishmuseum.org"
+      ]
+    },
+    {
+      "sector": 12,
+      "domains": [
+        "history.com",
+        "nlm.nih.gov",
+        "sciencehistory.org"
+      ]
+    },
+    {
+      "sector": 13,
+      "domains": [
+        "history.com",
+        "si.edu",
+        "nature.com"
+      ]
+    },
+    {
+      "sector": 14,
+      "domains": [
+        "sciencehistory.org",
+        "history.com",
+        "acs.org"
+      ]
+    },
+    {
+      "sector": 15,
+      "domains": [
+        "history.com",
+        "aip.org",
+        "aps.org"
+      ]
+    },
+    {
+      "sector": 16,
+      "domains": [
+        "usgs.gov",
+        "smithsonianmag.com",
+        "history.com"
+      ]
+    },
+    {
+      "sector": 17,
+      "domains": [
+        "noaa.gov",
+        "smithsonianmag.com",
+        "history.com"
+      ]
+    },
+    {
+      "sector": 18,
+      "domains": [
+        "noaa.gov",
+        "history.com",
+        "weather.gov"
       ]
     },
     {
@@ -351,7 +448,97 @@
       "domains": [
         "nps.gov",
         "smithsonianmag.com",
-        "usgs.gov"
+        "usgs.gov",
+        "history.com"
+      ]
+    },
+    {
+      "sector": 20,
+      "domains": [
+        "loc.gov",
+        "rockhall.com",
+        "history.com"
+      ]
+    },
+    {
+      "sector": 21,
+      "domains": [
+        "loc.gov",
+        "afi.com",
+        "history.com"
+      ]
+    },
+    {
+      "sector": 22,
+      "domains": [
+        "loc.gov",
+        "bl.uk",
+        "history.com"
+      ]
+    },
+    {
+      "sector": 23,
+      "domains": [
+        "history.com",
+        "whitehousehistory.org",
+        "archives.gov",
+        "loc.gov"
+      ]
+    },
+    {
+      "sector": 24,
+      "domains": [
+        "history.com",
+        "fbi.gov",
+        "archives.gov"
+      ]
+    },
+    {
+      "sector": 25,
+      "domains": [
+        "nps.gov",
+        "smithsonianmag.com",
+        "history.com"
+      ]
+    },
+    {
+      "sector": 26,
+      "domains": [
+        "history.com",
+        "nasa.gov",
+        "airandspace.si.edu"
+      ]
+    },
+    {
+      "sector": 27,
+      "domains": [
+        "computerhistory.org",
+        "history.com",
+        "hbr.org"
+      ]
+    },
+    {
+      "sector": 28,
+      "domains": [
+        "history.com",
+        "si.edu",
+        "nps.gov"
+      ]
+    },
+    {
+      "sector": 29,
+      "domains": [
+        "smithsonianmag.com",
+        "si.edu",
+        "history.com"
+      ]
+    },
+    {
+      "sector": 30,
+      "domains": [
+        "invention.si.edu",
+        "history.com",
+        "sciencehistory.org"
       ]
     },
     {
@@ -361,7 +548,9 @@
         "americanhistory.si.edu",
         "antiquewireless.org",
         "radiomuseum.org",
-        "ieee.org"
+        "ieee.org",
+        "history.com",
+        "sciencehistory.org"
       ]
     },
     {
@@ -371,7 +560,8 @@
         "fcc.gov",
         "bbc.co.uk",
         "npr.org",
-        "americanhistory.si.edu"
+        "americanhistory.si.edu",
+        "history.com"
       ]
     },
     {
@@ -389,7 +579,8 @@
         "computerhistory.org",
         "ibm.com",
         "si.edu",
-        "apple.com"
+        "apple.com",
+        "history.com"
       ]
     },
     {
@@ -416,7 +607,9 @@
         "loc.gov",
         "aes.org",
         "si.edu",
-        "britannica.com"
+        "britannica.com",
+        "sciencehistory.org",
+        "history.com"
       ]
     },
     {
@@ -710,18 +903,48 @@
       "detail": "Bell documented the Centennial Exhibition telephone demonstration in a letter to his parents."
     },
     {
-      "id": "eniac-patent-invalidated-1972",
+      "id": "eniac-patent-invalidated-1973",
       "sector": 2,
       "angle": 17,
       "sourceClass": 2,
       "status": "documented",
-      "year": 1972,
-      "title": "The computer patent ruling that reopened the story of ENIAC",
-      "summary": "ENIAC is a landmark in electronic computing, but its legal history is less familiar. In 1972, a federal judge invalidated an ENIAC patent; the Smithsonian explains how earlier work by John V. Atanasoff at Iowa State College figured in the ruling.",
-      "full": "ENIAC's large electronic circuits helped establish a new age of digital computing. Years afterward, however, the legal story surrounding its inventors became tangled in patent claims and disputes over who had developed key ideas first. A patent issued in 1964 became the focus of a challenge by Honeywell.\n\nThe Smithsonian's collection history explains that Judge Earl Lawson invalidated the ENIAC patent in late 1972. Part of the decision concerned earlier computer work by John V. Atanasoff at Iowa State College during the late 1930s. The ruling does not reduce the entire history of computing to a single person. It does reveal why the familiar 'first computer' label has always involved definitions, competing designs, and legal as well as technical evidence.",
-      "sourceTitle": "Smithsonian National Museum of American History · ENIAC Accumulator #2",
-      "sourceUrl": "https://americanhistory.si.edu/collections/object/nmah_334742",
-      "detail": "The ENIAC patent was invalidated in 1972 partly because of earlier Atanasoff work."
+      "year": 1973,
+      "title": "The 1973 computer patent ruling that rewrote ENIAC's history",
+      "summary": "In 1973, a federal court invalidated the famous ENIAC computer patent. The judgment reopened questions about who had pioneered electronic computing, including crucial early work by John Atanasoff and Clifford Berry at Iowa State College.",
+      "full": "The ENIAC was a landmark electronic computer developed at the University of Pennsylvania. Years afterward, a broad patent covering it sparked a dispute over who had built the underlying technologies first. Honeywell challenged claims held by Sperry Rand and introduced evidence of older electronic computing work.\n\nIn October 1973, U.S. District Judge Earl R. Larson invalidated the ENIAC patent. The ruling discussed ideas developed by John V. Atanasoff and Clifford Berry at Iowa State College before ENIAC. The court's decision does not reduce all of computing history to one inventor, but it demonstrates how patents, court documents and physical machines can complicate familiar origin stories.",
+      "sourceTitle": "University of Pennsylvania Archives · ENIAC Trial Exhibits",
+      "sourceUrl": "https://archives.upenn.edu/collections/finding-aid/upd8_12/",
+      "detail": "Judge Earl R. Larson invalidated the ENIAC patent in October 1973.",
+      "sources": [
+        {
+          "title": "Smithsonian · ENIAC Accumulator #2",
+          "url": "https://americanhistory.si.edu/collections/object/nmah_334742"
+        }
+      ]
+    },
+    {
+      "id": "lincoln-boat-shoals-patent-1849",
+      "sector": 23,
+      "angle": 9,
+      "sourceClass": 1,
+      "status": "documented",
+      "year": 1849,
+      "title": "The steamboat patent Abraham Lincoln filed before becoming president",
+      "summary": "In 1849, Abraham Lincoln received U.S. Patent No. 6,469 for a boat-lifting system using inflatable chambers. It was meant to help boats pass over shallow riverbeds without unloading cargo. The Smithsonian preserves Lincoln's wooden patent model; the device was never put into production.",
+      "full": "Long before Abraham Lincoln occupied the White House, he knew the practical frustrations of river travel. Shallow riverbeds could stop cargo boats in their tracks. Lincoln proposed attaching expandable buoyant chambers to the sides of a vessel to raise it enough to pass through shoals. His patent was issued on May 22, 1849.\n\nLincoln made a scale model with assistance from a Springfield mechanic, and the original survives in the Smithsonian's collections. HISTORY's survey of famous inventors tells the story, while the Smithsonian model record and the original U.S. patent establish its technical details. Lincoln is the only U.S. president to have held a patent. There is no evidence his floating-device idea was manufactured for regular service.",
+      "sourceTitle": "Smithsonian National Museum of American History · Abraham Lincoln's Patent Model",
+      "sourceUrl": "https://americanhistory.si.edu/collections/object/nmah_213141",
+      "sources": [
+        {
+          "title": "HISTORY · 7 Historical Figures You Didn't Know Were Inventors",
+          "url": "https://www.history.com/articles/7-historical-figures-you-didnt-know-were-inventors"
+        },
+        {
+          "title": "US Patent No. 6,469 · Buoying Vessels over Shoals",
+          "url": "https://patents.google.com/patent/US6469A/en"
+        }
+      ],
+      "detail": "Lincoln's inflatable-chamber boat invention received U.S. Patent No. 6,469 on May 22, 1849."
     }
   ]
 }
