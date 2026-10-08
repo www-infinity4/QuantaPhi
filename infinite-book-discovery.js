@@ -51,12 +51,19 @@ const origin=u=>{try{const x=new URL(u);return x.protocol==='https:'?x.hostname.
 const canonical=u=>{try{const x=new URL(u);if(x.protocol!=='https:')return '';x.hash='';for(const k of [...x.searchParams.keys()])if(/^utm_|^(fbclid|gclid|ref)$/i.test(k))x.searchParams.delete(k);return x.toString()}catch(_){return ''}};
 const hash=v=>{let h=2166136261;for(let i=0;i<v.length;i++){h^=v.charCodeAt(i);h=Math.imul(h,16777619)}return(h>>>0).toString(36)};
 const random=n=>{try{const a=new Uint32Array(1);crypto.getRandomValues(a);return a[0]%n}catch(_){return Math.floor(Math.random()*n)}};
-function preferences(activeQuery){
+function preferences(activeQuery,catalog){
  const values=[],unique=new Set(),all=[...read(HISTORY).slice(0,300),...(Array.isArray(global.QuantaCloudBuildHistory)?global.QuantaCloudBuildHistory.slice(0,300):[])];
  for(const x of all){const q=clean(x?.query||x?.title),id=x?.search_id||x?.token_id||x?.id||q;if(!q||unique.has(id))continue;unique.add(id);values.push({q,weight:1.5})}
  for(const x of read(COLLECT).slice(-160)){const q=clean((x?.title||'')+' '+(x?.story||'').slice(0,140));if(q)values.push({q,weight:2.5})}
  if(activeQuery)values.push({q:clean(activeQuery),weight:3});
  const scores=new Map();
+ const favoriteIds=read('phi_infinite_book_favorites_v1');
+ const stories=[...(catalog?.stories||[]),...read('phi_infinite_book_live_v2')];
+ for(const favorite of favoriteIds){
+   const story=stories.find(x=>x.id===favorite);
+   if(story?.sector){const k=Number(story.sector);scores.set(k,(scores.get(k)||0)+5)}
+ }
+
  for(const v of values){const matched=terms.filter(([_,rx])=>rx.test(v.q));if(!matched.length)continue;const narrow=matched.filter(([id])=>id>=31);const chosen=narrow.length?narrow:matched;for(const [id]of chosen)scores.set(id,(scores.get(id)||0)+v.weight/Math.sqrt(chosen.length))}
  let sector=0,score=0;for(const [id,value]of scores){if(value>score){sector=id;score=value}}
  return {sector,score,signals:values.length};

@@ -56,11 +56,13 @@
     }
     const build = E('div', 'ib-build');
     build.append(E('span', '', 'Build this story with'));
+    const illustrate=E('button','ib-action','Build image from story');illustrate.type='button';illustrate.dataset.bookAction='illustrate';
     for (const [tool, label] of [['infinity', 'Infinity'], ['omni', 'Omni'], ['quanta', 'QuantaPhi']]) {
       const a = E('a', 'ib-build-link inPageSite', label);
       a.dataset.bookAction = 'build'; a.dataset.bookTool = tool;
       a.dataset.siteTitle = label; a.href = '#'; build.append(a);
     }
+    build.append(illustrate);
     const status = E('p', 'ib-status');
     status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
     card.append(detail, actions, build);
@@ -92,14 +94,30 @@
     link.hash = 'infiniteBook';
     return link.href;
   }
+  function indexedSearchTerms(story) {
+    const stop=new Set(['the','a','an','of','on','in','to','for','and','with','from','when','was','were','who','how','that','this','one','more','after','before','into','it','its','is','at','as','by','their','they','has','had','have','finally','revealed','secret','amazing','big']);
+    const subject=catalog.sectors.find(x=>x.id===story.sector)?.name||'';
+    const headline=String(story.title||'').replace(/[^\p{L}\p{N}\s'-]/gu,' ').split(/\s+/);
+    const background=String(story.summary||'').replace(/[^\p{L}\p{N}\s'-]/gu,' ').split(/\s+/);
+    const words=[],used=new Set();
+    for(const token of [...headline,...subject.split(/\s+/),...background]){
+      const clean=String(token||'').trim();
+      if(clean.length<3||stop.has(clean.toLowerCase())||used.has(clean.toLowerCase()))continue;
+      used.add(clean.toLowerCase());words.push(clean);
+      if(words.length>=13)break;
+    }
+    return words.join(' ').slice(0,150);
+  }
   function buildUrl(tool, story) {
-    const paths = { infinity: '/InfinityPhi/', omni: '/OmniPhi/', quanta: '/' };
-    const link = new URL(paths[tool] || '/', location.origin);
-    const seed = [story.title, story.summary, 'Source: ' + story.sourceUrl].join('. ').slice(0, 480);
-    link.searchParams.set('q', seed);
-    link.searchParams.set('story', story.id);
-    link.searchParams.set('storySource', story.sourceUrl);
-    link.searchParams.set('from', 'infinite-book');
+    const routes={infinity:'/InfinityPhi/',omni:'/OmniPhi/overview/',quanta:'/'};
+    const link=new URL(routes[tool]||'/',location.origin);
+    // Existing Phi search pages understand q. Keep it as short semantic index words.
+    // Preserve story metadata separately rather than injecting the full prose into search.
+    link.searchParams.set('q',indexedSearchTerms(story));
+    link.searchParams.set('story',story.id);
+    link.searchParams.set('storyTitle',String(story.title||'').slice(0,150));
+    link.searchParams.set('storySource',story.sourceUrl);
+    link.searchParams.set('from','infinite-book');
     return link.href;
   }
   function render(story, roll) {
@@ -130,7 +148,7 @@
     note(roll ? 'Personal interest: '+(catalog.sectors.find(s=>s.id===roll.sector)?.name || 'Discovery')+' · random angle '+roll.angle+'/20 · source '+roll.sourceClass+'/10' : 'Sourced story');
   }
   function rollDice(query='') {
-    const profile = window.PhiInfiniteBookDiscover?.preferences(query);
+    const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
     return {sector: profile?.sector || 3, angle: rand(20)+1, sourceClass: rand(10)+1,
       personal: !!profile?.sector, signals: profile?.signals || 0};
   }
@@ -220,7 +238,9 @@
     else favorites.add(current.id);
     safeWrite(STAR_KEY, Array.from(favorites));
     root.querySelector('[data-book-action="star"]').textContent = favorites.has(current.id) ? '★ Starred' : '☆ Star';
-    note(favorites.has(current.id) ? 'Saved as a favorite' : 'Removed from favorites');
+    const starred=favorites.has(current.id);
+    window.dispatchEvent(new CustomEvent('phi:story:star',{detail:{id:current.id,sector:current.sector,title:current.title,starred}}));
+    note(starred ? 'Starred. This subject now influences future discoveries and can be used as a build seed.' : 'Removed from favorites');
   }
   async function share() {
     if (!current) return;
@@ -265,6 +285,11 @@
     if (action === 'star') { event.preventDefault(); favorite(); }
     if (action === 'share') { event.preventDefault(); void share(); }
     if (action === 'collect') { event.preventDefault(); collect(); }
+    if(action==='illustrate'&&current){
+      event.preventDefault();
+      window.PhiImageBuilder?.prefill('Illustrate this surprising historical story: '+current.title+'. Create a distinctive, evidence-respecting visual inspired by its subject.',{useStory:true});
+      document.getElementById('phiImageBuilder')?.scrollIntoView({behavior:'smooth',block:'start'});
+    }
     // Build links are handled by QuantaPhi's existing in-page site viewer.
   });
   async function init() {
