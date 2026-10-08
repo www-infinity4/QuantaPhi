@@ -119,6 +119,29 @@ const CLASS_SEARCH={
  9:{terms:'peer reviewed journal archaeological research experiment paper',domains:['nature.com','science.org','journals.plos.org']},
  10:{terms:'oral history recorded testimony legend folklore attributed',domains:['loc.gov','si.edu','archive.org']}
 };
+function indexedDraw({catalog,query='',profileSector=0,lastPair='',rng=random}){
+ const words=Array.isArray(catalog?.wordIndex)?catalog.wordIndex:[];
+ const realms=Array.isArray(catalog?.realmRefinements)?catalog.realmRefinements:[];
+ if(words.length!==100||realms.length!==20)return null;
+ const q=clean(query).toLowerCase();
+ const exact=words.find(item=>{
+  const key=item.word.toLowerCase();
+  return q===key||q.startsWith(key+' ')||q.endsWith(' '+key);
+ });
+ const sectors=catalog.specialistRefinements||{};
+ const preferred=words.filter(item=>(sectors[item.sector]||item.sector)===profileSector);
+ const preference=preferred.length && rng(5)<2;
+ let word=exact||((preference)?preferred[rng(preferred.length)]:words[rng(words.length)]);
+ let realm=realms[rng(realms.length)];
+ // Even under deterministic or poor RNG, don't show the identical numbered
+ // topic+realm pair twice in a row. Keep all 2,000 routes reachable.
+ if(lastPair===word.id+':'+realm.id)
+  realm=realms[(realm.id%realms.length)];
+ return {wordNumber:word.id,indexWord:word.word,realmNumber:realm.id,realm:realm.name,
+  sector:Number(sectors[word.sector]||word.sector),specialtySector:word.sector,
+  searchQuery:word.word+' '+realm.name};
+}
+
 function sourcePlan(roll,catalog,focus=''){
  // The original book has 30 x 20 x 10 = 6,000 discovery routes.
  // The nine later technical sectors are refinements within those routes.
@@ -448,5 +471,5 @@ async function find(options){
  return first.kind==='deep'?backup:deep;
 }
 
-global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,isPlaceProfile,isGenericProfile,isSecretStory};
+global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,indexedDraw,isPlaceProfile,isGenericProfile,isSecretStory};
 })(window);
