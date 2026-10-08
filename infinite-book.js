@@ -149,7 +149,7 @@
   }
   function rollDice(query='') {
     const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
-    return {sector: profile?.sector || 3, angle: rand(20)+1, sourceClass: rand(10)+1,
+    return {sector: profile?.sector || (catalog.sectors[rand(catalog.sectors.length)]?.id || 3), angle: rand(20)+1, sourceClass: rand(10)+1,
       personal: !!profile?.sector, signals: profile?.signals || 0};
   }
   function pickUnique(roll, seen) {
@@ -217,6 +217,9 @@
       if(story.discoverySource !== 'live'){
         note('Verified archived discovery · '+(catalog.sectors.find(s=>s.id===roll.sector)?.name||'personal interests')+'. Live search could not verify a new story this time.');
       }
+    } catch(error) {
+      console.warn('Infinite Book story request failed',error);
+      note('A source failed. Tap Another secret to try a different sourced discovery.');
     } finally {
       pending=false;
       if(nextButton)nextButton.disabled=false;
