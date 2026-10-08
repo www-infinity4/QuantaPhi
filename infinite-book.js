@@ -193,39 +193,59 @@
       for (const s of stories) if (storyValid(s) && !byId.has(s.id)) byId.set(s.id, s);
     } catch (error) { console.warn('Infinite Book feed unavailable; using verified catalog', error); }
   }
+  let discoveryFlight = null;
+  function discoverInBackground(roll) {
+    if (discoveryFlight) return discoveryFlight;
+    const discover = window.PhiInfiniteBookDiscover?.find;
+    if (typeof discover !== 'function') return Promise.resolve(null);
+    // Check fresh seen IDs when the request begins and when it completes:
+    // a second card cannot sneak into the queue after it was already shown.
+    discoveryFlight = Promise.resolve().then(() => discover({ roll, catalog, seen: seenIds() }))
+      .then(story => {
+        if (!storyValid(story) || seenIds().has(story.id)) return null;
+        byId.set(story.id, story);
+        cacheLive(story);
+        return story;
+      })
+      .catch(error => {
+        console.warn('Infinite Book live discovery deferred', error);
+        return null;
+      })
+      .finally(() => { discoveryFlight = null; });
+    return discoveryFlight;
+  }
   async function nextStory(query='') {
     if (!catalog) return;
-    if(pending){if(query && queuedQueries.length < 20)queuedQueries.push(query);return}
-    pending=true;
-    const nextButton=root.querySelector('.ib-next');
-    if(nextButton)nextButton.disabled=true;
-    try{
-      const roll=rollDice(query);
-      note('Finding a new '+(catalog.sectors.find(s=>s.id===roll.sector)?.name||'surprising')+' story with sources…');
-      let story=null;
-      const seen=seenIds();
-      try{
-        story=await window.PhiInfiniteBookDiscover?.find({roll,catalog,seen})||null;
-      }catch(error){console.warn('Live source discovery failed; using saved verified stories',error)}
-      if(story && storyValid(story) && !seen.has(story.id)){
-        byId.set(story.id,story);
-        cacheLive(story);
-      } else story=pickUnique(roll,seen);
-      if(!story){
-        note('No new sourced story is available for this interest yet. Your collected stories remain saved; no story will repeat.');
+    if (pending) { if (query && queuedQueries.length < 20) queuedQueries.push(query); return; }
+    pending = true;
+    const nextButton = root.querySelector('.ib-next');
+    if (nextButton) nextButton.disabled = true;
+    try {
+      const roll = rollDice(query);
+      const seen = seenIds();
+      // Show an unused, sourced story without waiting on slow or broken APIs.
+      // Continue discovering in parallel so the book can grow beyond its seeds.
+      let story = pickUnique(roll, seen);
+      if (story) {
+        render(story, roll);
+        note('Verified discovery · finding further sourced secrets for the next page.');
+        void discoverInBackground(roll);
         return;
       }
-      render(story,roll);
-      if(story.discoverySource !== 'live'){
-        note('Verified archived discovery · '+(catalog.sectors.find(s=>s.id===roll.sector)?.name||'personal interests')+'. Live search could not verify a new story this time.');
+      note('Checking new documented discoveries. Previously read stories will not repeat…');
+      story = await discoverInBackground(roll);
+      if (!story || !storyValid(story) || seenIds().has(story.id)) {
+        note('No additional verified story is available right now. Source services may be unavailable; your starred and collected stories remain saved. Try Another secret again.');
+        return;
       }
-    } catch(error) {
-      console.warn('Infinite Book story request failed',error);
-      note('A source failed. Tap Another secret to try a different sourced discovery.');
+      render(story, roll);
+    } catch (error) {
+      console.warn('Infinite Book story request failed', error);
+      note('A source request failed. Tap Another secret to retry a different discovery.');
     } finally {
-      pending=false;
-      if(nextButton)nextButton.disabled=false;
-      if(queuedQueries.length){const next=queuedQueries.shift();void nextStory(next)}
+      pending = false;
+      if (nextButton) nextButton.disabled = false;
+      if (queuedQueries.length) { const next = queuedQueries.shift(); void nextStory(next); }
     }
   }
   window.addEventListener('quantaphi:search-start', event=>{
