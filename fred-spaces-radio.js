@@ -19,7 +19,7 @@
   const seenKey="phi:fred-spaces-seen:v1";
   const starsKey="phi:fred-spaces-stars:v1";
   const currentKey="phi:fred-spaces-current:v1";
-  let active=byId.get(FIRST), busy=false, unlocked=new Set(), balance=null, message="", stars=new Set(load(starsKey,[]));
+  let active=byId.get(FIRST), busy=false, unlocked=new Set(), balance=null, message="", stars=new Set(load(starsKey,[])), interestWeights=new Map();
   function load(key,fallback){try {return JSON.parse(localStorage.getItem(key)||"null")??fallback;}catch{return fallback;}}
   function save(key,data){try{localStorage.setItem(key,JSON.stringify(data));}catch{}}
   function node(tag,cls,txt){const el=document.createElement(tag);if(cls)el.className=cls;if(txt!=null)el.textContent=String(txt);return el;}
@@ -27,6 +27,25 @@
   function note(t){message=t;render();}
   function indexedTerms(e){return [...new Set([...(e.tags||[]),...e.title.toLowerCase().match(/[a-z]{4,}/g)||[]])].slice(0,6).join(" ");}
   function terms(){const query=String(document.getElementById("q")?.value||new URL(location.href).searchParams.get("q")||"").toLowerCase();return new Set((query.match(/[a-z]{3,}/g)||[]).filter(w=>w!=="the"));}
+  async function loadQuantInterests(){
+    try {
+      const bridge=window.QuantaCloudConnection;
+      if(!bridge?.authenticatedFetch)return;
+      const response=await bridge.authenticatedFetch("https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/interests",{cache:"no-store"});
+      if(!response.ok)return;
+      const data=await response.json();
+      if(!data.ok||!Array.isArray(data.topics))return;
+      const counts=new Map();
+      // Count previously committed Quant searches only. Never mint from a radio card.
+      for(const entry of data.topics){
+        const frequency=Math.max(1,Math.min(50,Number(entry.hits)||1));
+        for(const word of (String(entry.query||"").toLowerCase().match(/[a-z]{3,}/g)||[])){
+          counts.set(word,(counts.get(word)||0)+frequency);
+        }
+      }
+      interestWeights=counts;
+    }catch(e){console.warn("Fred Spaces Quant preferences temporarily unavailable",e);}
+  }
   function pickNext(){
     const old=new Set(load(seenKey,[]));old.add(active.id);
     const candidates=episodes.filter(e=>e.id!==FIRST&&!old.has(e.id));
@@ -36,7 +55,7 @@
     // A real 1-1000 random draw, mixed with known quant/search terms.
     const random=new Uint32Array(1);crypto.getRandomValues(random);
     const roll=1+(random[0]%1000);
-    const ranked=pool.map(e=>({e,weight:1+e.tags.reduce((n,t)=>n+(interests.has(t)?6:0),0)}));
+    const ranked=pool.map(e=>({e,weight:1+e.tags.reduce((n,t)=>n+(interests.has(t)?6:0)+Math.min(30,interestWeights.get(t)||0),0)}));
     const total=ranked.reduce((n,p)=>n+p.weight,0);
     let ticket=roll%total;
     for(const p of ranked){ticket-=p.weight;if(ticket<0)return p.e;}
@@ -122,5 +141,5 @@
   }
   const requested=new URL(location.href).searchParams.get("fredSpace");
   if(requested===FIRST)active=byId.get(FIRST);
-  render();void sync();
+  render();void sync();void loadQuantInterests();
 })();
