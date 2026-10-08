@@ -62,7 +62,7 @@ function isPlaceProfile(story){
    /\b(?:population|census|postal code|zip code|administrative center|administrative centre)\b/i.test(intro.slice(0,650));
 }
 function isSecretStory(story){
- if(isPlaceProfile(story))return false;
+ if(isPlaceProfile(story)||isGenericProfile(story))return false;
  const title=clean(story?.title),lead=clean(story?.summary||story?.full);
  if(!title||!lead)return false;
  if(/^(?:List of|Index of|Timeline of|Category:)/i.test(title))return false;
@@ -86,13 +86,50 @@ function preferences(activeQuery,catalog){
  let sector=0,score=0;for(const [id,value]of scores){if(value>score){sector=id;score=value}}
  return {sector,score,signals:values.length};
 }
-function sourcePlan(roll,catalog){
- const name=catalog.sectors.find(s=>s.id===roll.sector)?.name||'surprising history';
- const angle=catalog.angles.find(a=>a.id===roll.angle)?.name||'forgotten discovery';
- const domains=catalog.sourceRegistry.find(s=>s.sector===roll.sector)?.domains||['si.edu','loc.gov','nps.gov','smithsonianmag.com'];
- const domain=domains[random(domains.length)];
- return {name,angle,queries:[name+' '+angle+' hidden discovery unusual event site:'+domain+' -town -municipality -village',name+' '+angle+' documented forgotten event museum archive -town -city']};
+// A famous person's life is a search topic, not by itself a Big Secret.
+// Artifact, demonstration, incident and document titles are still eligible.
+const PERSON_PROFILE=/\b(?:was|is)\s+(?:an?\s+)?(?:American|Serbian|British|German|French|Italian|Russian|Austrian|Canadian|English|Indian|Japanese|Scottish|Dutch|Swedish|Greek|Egyptian|Polish|Spanish|Chinese)?\s*(?:inventor|scientist|physicist|engineer|artist|musician|politician|writer|actor|entrepreneur|mathematician|historian|composer|researcher|businessman)\b/i;
+const GENERIC_BIO=/\b(?:was born|is best known|best known for|known for his|known for her|early life|personal life|born in|died in|career and legacy|was a famous)\b/i;
+const EVENT_TITLE=/\b(?:boat|ship|patent|prototype|demonstration|machine|manuscript|papyrus|artifact|artefact|experiment|incident|lost|forgotten|secret|hidden|discovery|discovered|rediscovered|mystery|hoax|forgery|failure|accident|catastrophe|rescued|recovered|first|unusual|invention|device|signal|puzzle|film|recording|transmission|transmitter|letter|notebook|trial|wreck|tomb|operation|conspiracy|breakthrough|controversy|buried|declassified|uncovered)\b/i;
+function isGenericProfile(story){
+ const title=clean(story?.title).replace(/\s+[-|–]\s+(?:Wikipedia|Biography|Britannica|History).*$/i,'');
+ const intro=clean(story?.summary||story?.full).slice(0,650);
+ if(!title||!intro)return false;
+ const headline=title.replace(/\s*[-|–]\s*(?:life|biography|history|facts).*$/i,'');
+ // A name-only result with a biographical lead is never the obscure event.
+ const nameOnly=/^[\p{Lu}][\p{L}'-]+(?:\s+[\p{Lu}][\p{L}'-]+){1,3}$/u.test(headline);
+ return !EVENT_TITLE.test(headline)&&(nameOnly||/\bbiography\b/i.test(title))&&(PERSON_PROFILE.test(intro)||GENERIC_BIO.test(intro));
 }
+const CLASS_SEARCH={
+ 1:{terms:'original patent archival record manuscript exhibit evidence',domains:['patents.google.com','loc.gov','archives.gov']},
+ 2:{terms:'museum collection object accession exhibition discovery',domains:['si.edu','americanhistory.si.edu','metmuseum.org']},
+ 3:{terms:'university research archive library special collection manuscript',domains:['edu','loc.gov','bl.uk']},
+ 4:{terms:'scientific research institute lab experiment discovery',domains:['nasa.gov','nist.gov','science.nasa.gov']},
+ 5:{terms:'government archive report declassified document records',domains:['archives.gov','loc.gov','gov']},
+ 6:{terms:'original company newsroom engineering history prototype',domains:['computerhistory.org','ibm.com','ieee.org']},
+ 7:{terms:'specialist historian detailed archival investigation',domains:['historyofscience.com','smithsonianmag.com','ieee.org']},
+ 8:{terms:'investigative reporting historical investigation surprising episode',domains:['pbs.org','smithsonianmag.com','npr.org']},
+ 9:{terms:'peer reviewed journal archaeological research experiment paper',domains:['nature.com','science.org','journals.plos.org']},
+ 10:{terms:'oral history recorded testimony legend folklore attributed',domains:['loc.gov','si.edu','archive.org']}
+};
+function sourcePlan(roll,catalog,focus=''){
+ const sector=catalog.sectors.find(x=>x.id===roll.sector)?.name||'Surprising history';
+ const angle=catalog.angles.find(x=>x.id===roll.angle)?.name||'Forgotten discovery';
+ const sourceClass=catalog.sourceClasses?.find(x=>x.id===roll.sourceClass)?.name||'Original historical records';
+ const preference=CLASS_SEARCH[roll.sourceClass]||CLASS_SEARCH[1];
+ const localDomains=catalog.sourceRegistry?.find(x=>x.sector===roll.sector)?.domains||[];
+ const domain=localDomains.length?localDomains[random(localDomains.length)]:preference.domains[random(preference.domains.length)];
+ const anchor=clean(focus).slice(0,90)||sector;
+ const discoveryTerms='obscure specific event little-known documented detail -biography -overview -facts -town -municipality';
+ // All three rolled numbers change the actual research and not just the card labels.
+ const queries=[
+   anchor+' '+angle+' '+preference.terms+' '+discoveryTerms+' site:'+domain,
+   anchor+' '+angle+' '+sourceClass+' rare incident original source '+discoveryTerms,
+   sector+' '+angle+' '+preference.terms+' unusual historical event documented -biography'
+ ];
+ return {name:sector,angle,sourceClass,sourceClassId:roll.sourceClass,focus:anchor,domain,queries,combination:(roll.sector-1)*200+(roll.angle-1)*10+roll.sourceClass};
+}
+
 async function request(url,options={},ms=8500){
  const c=new AbortController(),timeout=setTimeout(()=>c.abort(),ms);
  try{const r=await fetch(url,{...options,signal:c.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.json()}finally{clearTimeout(timeout)}
