@@ -94,7 +94,7 @@ async function find({roll,catalog,seen}){
  const responses=await Promise.allSettled(plan.queries.map(q=>{const u=new URL(SEARCH);u.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});return request(u.href,{cache:'no-store'},8000)}));
  let results=[];for(const r of responses)if(r.status==='fulfilled')results.push(...extract(r.value));
  const seenUrls=new Set();results=results.filter(r=>!seenUrls.has(r.url)&&seenUrls.add(r.url));
- const eligible=results.filter(r=>!seen.has('live-'+hash(r.url))&&!seen.has('url:'+r.url));
+ const eligible=results.filter(r=>!seen.has('live-'+hash(r.url))&&!seen.has('url:'+r.url)&&!seen.has('title:'+hash(r.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').slice(0,140))));
  if(eligible.length<2)return null;
  // Only accept a discoverable event when separate domains offer related evidence.
  const shuffled=eligible.map(x=>({x,order:random(100000)})).sort((a,b)=>a.order-b.order).map(x=>x.x);
