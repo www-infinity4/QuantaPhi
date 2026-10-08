@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "book": "The Infinite Book of Big Secrets",
+  "sectors": [
+    {
+      "id": 1,
+      "name": "Energy & electricity"
+    },
+    {
+      "id": 2,
+      "name": "Technology & computing"
+    },
+    {
+      "id": 3,
+      "name": "Art & museums"
+    },
+    {
+      "id": 4,
+      "name": "Ghosts & hauntings"
+    },
+    {
+      "id": 5,
+      "name": "Parapsychology & strange experiments"
+    },
+    {
+      "id": 6,
+      "name": "Inventors & patents"
+    },
+    {
+      "id": 7,
+      "name": "Astronomy & space"
+    },
+    {
+      "id": 8,
+      "name": "Hidden military history"
+    },
+    {
+      "id": 9,
+      "name": "Spycraft & intelligence"
+    },
+    {
+      "id": 10,
+      "name": "Archaeology"
+    },
+    {
+      "id": 11,
+      "name": "Ancient civilizations"
+    },
+    {
+      "id": 12,
+      "name": "Medicine & medical history"
+    },
+    {
+      "id": 13,
+      "name": "Biology & evolution"
+    },
+    {
+      "id": 14,
+      "name": "Chemistry & materials"
+    },
+    {
+      "id": 15,
+      "name": "Physics & mathematics"
+    },
+    {
+      "id": 16,
+      "name": "Earth & geology"
+    },
+    {
+      "id": 17,
+      "name": "Oceans & deep sea"
+    },
+    {
+      "id": 18,
+      "name": "Weather & natural disasters"
+    },
+    {
+      "id": 19,
+      "name": "Accidents & engineering failures"
+    },
+    {
+      "id": 20,
+      "name": "Music & musicians"
+    },
+    {
+      "id": 21,
+      "name": "Film & television"
+    },
+    {
+      "id": 22,
+      "name": "Books & literature"
+    },
+    {
+      "id": 23,
+      "name": "Royalty & presidents"
+    },
+    {
+      "id": 24,
+      "name": "Crime & unsolved cases"
+    },
+    {
+      "id": 25,
+      "name": "Cities & architecture"
+    },
+    {
+      "id": 26,
+      "name": "Transportation & flight"
+    },
+    {
+      "id": 27,
+      "name": "Business & corporate history"
+    },
+    {
+      "id": 28,
+      "name": "Remarkable human feats"
+    },
+    {
+      "id": 29,
+      "name": "Animals & unusual behavior"
+    },
+    {
+      "id": 30,
+      "name": "Everyday objects & forgotten origins"
+    }
+  ],
+  "angles": [
+    {
+      "id": 1,
+      "name": "Hidden fact"
+    },
+    {
+      "id": 2,
+      "name": "Secret revealed"
+    },
+    {
+      "id": 3,
+      "name": "Forgotten discovery"
+    },
+    {
+      "id": 4,
+      "name": "Scientific breakthrough"
+    },
+    {
+      "id": 5,
+      "name": "Historical correction"
+    },
+    {
+      "id": 6,
+      "name": "Bizarre experiment"
+    },
+    {
+      "id": 7,
+      "name": "Unsolved mystery"
+    },
+    {
+      "id": 8,
+      "name": "Amazing feat"
+    },
+    {
+      "id": 9,
+      "name": "Unexpected invention"
+    },
+    {
+      "id": 10,
+      "name": "Near disaster"
+    },
+    {
+      "id": 11,
+      "name": "Hoax or misconception"
+    },
+    {
+      "id": 12,
+      "name": "Strange coincidence"
+    },
+    {
+      "id": 13,
+      "name": "Rare artifact"
+    },
+    {
+      "id": 14,
+      "name": "Controversial decision"
+    },
+    {
+      "id": 15,
+      "name": "Remarkable person"
+    },
+    {
+      "id": 16,
+      "name": "Ghost story / folklore"
+    },
+    {
+      "id": 17,
+      "name": "Historical oddity"
+    },
+    {
+      "id": 18,
+      "name": "Unexpected connection"
+    },
+    {
+      "id": 19,
+      "name": "Lost and rediscovered"
+    },
+    {
+      "id": 20,
+      "name": "Behind the scenes"
+    }
+  ],
+  "sourceClasses": [
+    {
+      "id": 1,
+      "name": "Primary archives"
+    },
+    {
+      "id": 2,
+      "name": "Museums and collections"
+    },
+    {
+      "id": 3,
+      "name": "Universities and libraries"
+    },
+    {
+      "id": 4,
+      "name": "Scientific institutions"
+    },
+    {
+      "id": 5,
+      "name": "Government agencies"
+    },
+    {
+      "id": 6,
+      "name": "Company history and newsrooms"
+    },
+    {
+      "id": 7,
+      "name": "Specialist historians"
+    },
+    {
+      "id": 8,
+      "name": "Reputable journalism"
+    },
+    {
+      "id": 9,
+      "name": "Peer-reviewed research"
+    },
+    {
+      "id": 10,
+      "name": "Recorded testimony and folklore"
+    }
+  ],
+  "sourceRegistry": [
+    {
+      "sector": 1,
+      "domains": [
+        "energy.gov",
+        "ge.com",
+        "tesla.com",
+        "edison.rutgers.edu",
+        "ieee.org"
+      ]
+    },
+    {
+      "sector": 2,
+      "domains": [
+        "computerhistory.org",
+        "si.edu",
+        "ibm.com",
+        "apple.com",
+        "bell-labs.com"
+      ]
+    },
+    {
+      "sector": 3,
+      "domains": [
+        "louvre.fr",
+        "metmuseum.org",
+        "uni-heidelberg.de",
+        "nga.gov"
+      ]
+    },
+    {
+      "sector": 4,
+      "domains": [
+        "whitehousehistory.org",
+        "nps.gov",
+        "loc.gov"
+      ]
+    },
+    {
+      "sector": 5,
+      "domains": [
+        "sric.ca",
+        "oberf.org",
+        "archive.org",
+        "universitypressscholarship.com"
+      ]
+    },
+    {
+      "sector": 7,
+      "domains": [
+        "nasa.gov",
+        "science.nasa.gov",
+        "esa.int"
+      ]
+    },
+    {
+      "sector": 8,
+      "domains": [
+        "archives.gov",
+        "army.mil",
+        "nationalww2museum.org"
+      ]
+    },
+    {
+      "sector": 19,
+      "domains": [
+        "nps.gov",
+        "smithsonianmag.com",
+        "usgs.gov"
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "mona-lisa-2005",
+      "sector": 3,
+      "angle": 19,
+      "sourceClass": 3,
+      "status": "documented",
+      "year": 2005,
+      "title": "A 500-year-old note confirmed the Mona Lisa's identity",
+      "summary": "A margin note written in 1503 confirmed that Leonardo was working on a portrait of Lisa del Giocondo. Scholars published the discovery in 2005; Heidelberg announced its importance widely in 2008.",
+      "full": "For centuries, the identity of the Mona Lisa's sitter was debated, though the painter-biographer Giorgio Vasari had named Lisa del Giocondo in 1550. In an early printed edition of Cicero, a librarian at Heidelberg found a handwritten note by Florentine official Agostino Vespucci. The note, dated October 1503, refers to Leonardo painting Lisa del Giocondo. Heidelberg's library published the find in an exhibition catalogue in 2005 and publicized the confirmation in January 2008. That distinction matters: scholars did not first guess her identity in 2008; they obtained unusually strong contemporary evidence.",
+      "sourceTitle": "Heidelberg University Library",
+      "sourceUrl": "https://www.uni-heidelberg.de/press/news/press552e.html"
+    },
+    {
+      "id": "topsy-elephant-myth",
+      "sector": 1,
+      "angle": 11,
+      "sourceClass": 7,
+      "status": "corrected myth",
+      "year": 1903,
+      "title": "The elephant Edison supposedly killed to prove a point",
+      "summary": "Topsy was electrocuted at Coney Island in 1903. Contrary to the popular story, historical evidence does not show Thomas Edison ordered the event or staged it to win the current wars.",
+      "full": "On January 4, 1903, the elephant Topsy was killed at Coney Island through a combination of electrocution and other methods. The disturbing event was filmed by an Edison-branded motion-picture company, and it is often retold as an AC-versus-DC stunt personally arranged by Thomas Edison. Rutgers historians find no contemporaneous evidence linking Edison personally to the decision, and the commercial war between alternating and direct current had largely ended by then. This is a story about a real event and how a compelling but misleading historical explanation spread afterward.",
+      "sourceTitle": "Thomas A. Edison Papers, Rutgers University",
+      "sourceUrl": "https://edison.rutgers.edu/life-of-edison/essaying-edison/essay/myth-buster-topsy-the-elephant"
+    },
+    {
+      "id": "philip-experiment",
+      "sector": 5,
+      "angle": 6,
+      "sourceClass": 10,
+      "status": "reported experiment; paranormal claims unverified",
+      "year": 1972,
+      "title": "A Toronto group invented a ghost named Philip",
+      "summary": "In the 1970s, researchers made up a fictional ghost's biography and reported mysterious raps during séances. The story is a documented experiment—not proof they created a real ghost.",
+      "full": "A Toronto parapsychology group headed by George and Iris Owen invented an imaginary historical character named Philip. Participants supplied him with a fictional past, gathered repeatedly and tried to communicate with him. They reported table movements and tapping responses during sessions. The group's own published accounts interpreted the reported events in paranormal terms, but those interpretations are not established scientific findings. What is historically verifiable is the experiment, its invented character and the researchers' recorded claims. The distinction between a curious experiment and proof of supernatural forces should remain visible on the card.",
+      "sourceTitle": "Survival Research Institute of Canada archive",
+      "sourceUrl": "https://www.oberf.org/sric.htm"
+    },
+    {
+      "id": "lincoln-ghost-lore",
+      "sector": 4,
+      "angle": 16,
+      "sourceClass": 10,
+      "status": "historical folklore",
+      "year": 1903,
+      "title": "The reported ghosts of the White House",
+      "summary": "White House employees and visitors have told ghost stories for generations, especially about Abraham Lincoln. The historical reports are real; the apparitions are unverified.",
+      "full": "The White House Historical Association records a long tradition of supernatural stories from residents, employees and visitors. Jeremiah 'Jerry' Smith, a longtime White House worker, told reporters stories of seeing the spirit of Abraham Lincoln and others. Later tales attributed sightings to prominent visitors. These claims are significant as presidential folklore, especially because their sources and dates can be traced. They should not be presented as independent confirmation that ghosts exist.",
+      "sourceTitle": "White House Historical Association",
+      "sourceUrl": "https://www.whitehousehistory.org/press-room/press-backgrounders/white-house-ghost-stories"
+    },
+    {
+      "id": "iphone-three-products",
+      "sector": 2,
+      "angle": 20,
+      "sourceClass": 6,
+      "status": "documented",
+      "year": 2007,
+      "title": "Steve Jobs introduced the iPhone as three products in one",
+      "summary": "Apple's January 9, 2007 launch framed iPhone as a phone, widescreen iPod and internet communicator. That original announcement also explains the emphasis on finger-driven multitouch.",
+      "full": "At Macworld in January 2007, Apple introduced the first iPhone with an unusual framing: a mobile phone, a widescreen iPod and an internet communications device merged into one. Apple's archived press release emphasized a multitouch interface that people could operate with their fingers rather than a stylus. The original positioning shows what Apple believed would be most surprising at the time, before the App Store and today's smartphone ecosystem reshaped expectations.",
+      "sourceTitle": "Apple Newsroom, January 9 2007",
+      "sourceUrl": "https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/"
+    },
+    {
+      "id": "venus-long-day",
+      "sector": 7,
+      "angle": 1,
+      "sourceClass": 4,
+      "status": "documented",
+      "year": 2026,
+      "title": "On Venus, one rotation lasts longer than one year",
+      "summary": "Venus needs about 243 Earth days to rotate once but about 225 Earth days to orbit the Sun. Because it rotates backward, the Sun rises in the west.",
+      "full": "Venus rotates so slowly that a full spin takes approximately 243 Earth days. Its journey around the Sun takes about 225 Earth days, meaning one sidereal day is longer than its year. The planet also rotates in the opposite direction from most planets. One subtlety: sunrise-to-sunrise is not 243 days, because the planet is orbiting while it rotates; a solar day on Venus is about 117 Earth days. NASA's explanation makes this a perfect surprising fact with an important scientific distinction.",
+      "sourceTitle": "NASA Science: Venus facts",
+      "sourceUrl": "https://science.nasa.gov/venus/venus-facts/"
+    },
+    {
+      "id": "harvard-moth-1947",
+      "sector": 2,
+      "angle": 17,
+      "sourceClass": 2,
+      "status": "documented",
+      "year": 1947,
+      "title": "A real moth appeared in a computer bug log",
+      "summary": "In 1947, Harvard Mark II engineers found a moth in a relay and taped it into the logbook. Engineers had already used the word 'bug' long before that.",
+      "full": "The famous 1947 Harvard Mark II logbook contains a moth discovered inside a computer component, labelled as an actual bug. The Smithsonian preserves the logbook. It's a wonderful origin story, but the word 'bug' for technical trouble predates the moth by many decades; Thomas Edison used the term during the nineteenth century. The historic surprise is that a team encountered a literal insect while diagnosing a machine and recorded it for posterity.",
+      "sourceTitle": "Smithsonian National Museum of American History",
+      "sourceUrl": "https://www.si.edu/object/log-book-computer-bug%3Anmah_334663"
+    },
+    {
+      "id": "boston-molasses",
+      "sector": 19,
+      "angle": 10,
+      "sourceClass": 8,
+      "status": "documented; deaths",
+      "year": 1919,
+      "title": "A wave of molasses devastated Boston",
+      "summary": "A huge molasses tank burst in Boston in January 1919. The flood raced through the North End, killed 21 people and injured about 150.",
+      "full": "On January 15, 1919, a giant storage tank burst in Boston's North End, unleashing an immense surge of molasses. It struck buildings, vehicles and pedestrians; later accounts document 21 deaths and roughly 150 injuries. The disaster can seem impossible until the speed and force of a sudden industrial tank failure are understood. Beyond its bizarre headline, it tells a serious story about engineering safety and the consequences of poor oversight.",
+      "sourceTitle": "Smithsonian Magazine: Great Molasses Flood",
+      "sourceUrl": "https://www.smithsonianmag.com/history/without-warning-molasses-january-surged-over-boston-180971251/"
+    },
+    {
+      "id": "pulsars-1967",
+      "sector": 7,
+      "angle": 3,
+      "sourceClass": 4,
+      "status": "documented",
+      "year": 1967,
+      "title": "A strange repeating signal turned out to be a stellar remnant",
+      "summary": "Jocelyn Bell Burnell spotted an extremely regular radio pulse in 1967. It led to the discovery of pulsars, rapidly spinning neutron stars.",
+      "full": "Working with radio telescope records at Cambridge in 1967, graduate student Jocelyn Bell Burnell identified a signal repeating with extraordinary regularity. The researchers jokingly entertained the possibility of an artificial signal before finding others and understanding the astronomical explanation. Pulsars are rapidly rotating neutron stars that sweep radiation beams across space like lighthouses. NASA recounts how a small oddity in data revealed an entirely new class of observable objects.",
+      "sourceTitle": "NASA: Fifty years after pulsar discovery",
+      "sourceUrl": "https://www.nasa.gov/missions/station/nasa-continues-to-study-pulsars-50-years-after-their-chance-discovery/"
+    },
+    {
+      "id": "ghost-army-decoys",
+      "sector": 8,
+      "angle": 2,
+      "sourceClass": 7,
+      "status": "documented",
+      "year": 1944,
+      "title": "The U.S. Army sent fake tanks to war",
+      "summary": "During World War II, the 23rd Headquarters Special Troops used inflatable vehicles, recorded sounds and fake radio traffic to deceive enemy forces.",
+      "full": "A special American military unit known as the Ghost Army created convincing fake formations in Europe during World War II. Its members used inflatable tanks, false radio messages, sound equipment and theatrical impersonation to make enemy reconnaissance misjudge the location and strength of actual troops. Historians document dozens of deception maneuvers. The unit's name sounds supernatural, but its work involved practical psychology, stagecraft and battlefield intelligence.",
+      "sourceTitle": "National WWII Museum",
+      "sourceUrl": "https://www.nationalww2museum.org/war/articles/wwii-museum-exhibit-ghost-army"
+    }
+  ]
+}
