@@ -1,16 +1,16 @@
-const EDGE_VERSION = 'quantaphi-org-v31-phi-sites';
+const EDGE_VERSION = 'quantaphi-org-v32-path-aliases';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
- { slug: '/infinity-phi/', aliases: ['/infinity/'], repo: 'C13b0' },
- { slug: '/omni-phi/', aliases: ['/omni/'], repo: 'Omni-Phi' },
- { slug: '/news-phi/', aliases: ['/news/'], repo: 'News-Phi' },
- { slug: '/web-phi/', aliases: ['/web/'], repo: 'Web-Phi' },
- { slug: '/builder-reserve/', aliases: ['/builder/'], repo: 'Builder-Reserve' },
- { slug: '/infinity-radio/', aliases: ['/radio/'], repo: 'Alien-Radio' },
- { slug: '/omni-tv/', aliases: ['/tv/'], repo: 'Omni-TV' },
- { slug: '/alien-coin/', aliases: ['/alien/'], repo: 'Alien-Coin' },
- { slug: '/bitcoin-crusher/', aliases: ['/crusher/'], repo: 'Bitcoin-Crusher' },
- { slug: '/mckee-coins/', aliases: ['/coins/'], repo: 'Mckee-Coins-Inc' },
+ { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
+ { slug: '/omni-phi/', aliases: ['/omni/', '/OmniPhi/'], repo: 'Omni-Phi' },
+ { slug: '/news-phi/', aliases: ['/news/', '/NewsPhi/'], repo: 'News-Phi' },
+ { slug: '/web-phi/', aliases: ['/web/', '/WebPhi/'], repo: 'Web-Phi' },
+ { slug: '/builder-reserve/', aliases: ['/builder/', '/BuilderReserve/'], repo: 'Builder-Reserve' },
+ { slug: '/infinity-radio/', aliases: ['/radio/', '/InfinityRadio/'], repo: 'Alien-Radio' },
+ { slug: '/omni-tv/', aliases: ['/tv/', '/OmniTV/'], repo: 'Omni-TV' },
+ { slug: '/alien-coin/', aliases: ['/alien/', '/AlienCoin/'], repo: 'Alien-Coin' },
+ { slug: '/bitcoin-crusher/', aliases: ['/crusher/', '/BitcoinCrusher/'], repo: 'Bitcoin-Crusher' },
+ { slug: '/mckee-coins/', aliases: ['/coins/', '/McKeeCoins/'], repo: 'Mckee-Coins-Inc' },
  { slug: '/shoplc/', aliases: ['/shop/'], repo: 'ShopLC' }
 ];
 const SUPPORT_REPOS=[
@@ -38,6 +38,7 @@ const routeFor = incoming => {
   if(path==='/' + first)return {redirect:path+'/'};
   return {repo:'C13b0',sourcePath:path.endsWith('/')?path+'index.html':path,publicPath:path};
  }
+ if (path === '/QuantaPhi' || path === '/QuantaPhi/' || path === '/QuantaPhi/index.html') return { redirect: '/' + incoming.search };
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
  if (path === '/learn') return { redirect: '/learn/' };
  if (path.startsWith('/learn/')) return { repo: 'QuantaPhi', sourcePath: path.endsWith('/') ? path + 'index.html' : path, publicPath: path };
