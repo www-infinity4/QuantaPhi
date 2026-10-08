@@ -1,0 +1,24 @@
+/* The Infinite Book: compact orange WidgetPhi-compatible story card. */
+#infiniteBook{margin:12px 0 16px;max-width:100%;font-family:inherit}
+#infiniteBook .ib-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
+#infiniteBook .ib-head strong{font-size:11px;letter-spacing:.5px;color:#893e08;line-height:1.35}
+#infiniteBook button{font:inherit;cursor:pointer}
+#infiniteBook .ib-next{border:1px solid #c77f45;background:#fff2e5;color:#7c3804;border-radius:8px;padding:7px 9px;white-space:nowrap;font-size:12px;font-weight:750}
+#infiniteBook .ib-next:disabled{opacity:.55;cursor:not-allowed}
+#infiniteBook .ib-story{background:linear-gradient(150deg,#ffdaab,#f6a75c);color:#321902;border:2px solid #cc7224;border-radius:13px;padding:14px;box-shadow:0 2px 0 rgba(127,69,11,.14)}
+#infiniteBook .ib-category{font-size:11px;font-weight:800;line-height:1.45;text-transform:capitalize;color:#642f0b}
+#infiniteBook .ib-title{font-size:19px;line-height:1.25;margin:7px 0 10px;color:#321902}
+#infiniteBook .ib-summary,#infiniteBook .ib-full{font-size:14px;line-height:1.55;margin:0 0 10px;color:#3d230d;white-space:pre-line}
+#infiniteBook details{border-top:1px solid rgba(75,40,9,.25);padding-top:9px;margin-top:9px}
+#infiniteBook summary{cursor:pointer;font-size:13px;font-weight:800;color:#522502;padding:4px 0}
+#infiniteBook .ib-full{padding-top:10px}
+#infiniteBook .ib-source{display:inline-block;line-height:1.5;font-size:12px;font-weight:800;color:#642f0b;text-decoration:underline;overflow-wrap:anywhere}
+#infiniteBook .ib-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:13px}
+#infiniteBook .ib-action{background:#fff5e8;border:1px solid #a75c1b;border-radius:7px;padding:9px 3px;font-size:12px;color:#4d2909;font-weight:800;min-height:38px}
+#infiniteBook .ib-action:active,#infiniteBook .ib-next:active{transform:translateY(1px)}
+#infiniteBook .ib-build{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:10px;padding-top:10px;border-top:1px solid rgba(75,40,9,.18)}
+#infiniteBook .ib-build span{font-size:12px;font-weight:700}
+#infiniteBook .ib-build-link{display:inline-block;background:#5e287e;color:#fff;text-decoration:none;padding:7px 8px;border-radius:7px;font-size:12px;font-weight:750}
+#infiniteBook .ib-next:focus-visible,#infiniteBook .ib-action:focus-visible,#infiniteBook a:focus-visible,#infiniteBook summary:focus-visible{outline:3px solid #124aff;outline-offset:2px}
+#infiniteBook .ib-status{margin:6px 2px 0;min-height:16px;font-size:11px;color:#6d4f30}
+@media(max-width:360px){#infiniteBook .ib-head strong{font-size:10px}#infiniteBook .ib-next{font-size:11px;padding:7px}#infiniteBook .ib-title{font-size:17px}#infiniteBook .ib-story{padding:11px}}

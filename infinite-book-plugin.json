@@ -1,0 +1,37 @@
+{
+  "name": "infinite-book",
+  "version": "1.0.0",
+  "type": "discovery-widget",
+  "mount": "#infiniteBook",
+  "entry": "infinite-book.js",
+  "stylesheet": "infinite-book.css",
+  "catalog": "infinite-book-catalog.json",
+  "handles": [
+    "discover_story",
+    "display_story",
+    "share_story",
+    "collect_story",
+    "build_story"
+  ],
+  "dimensions": {
+    "sectors": 30,
+    "angles": 20,
+    "sourceClasses": 10
+  },
+  "storyCard": "orange",
+  "routing": {
+    "oracle": "source-discovery and historical verification",
+    "widgetPhi": "orange-story-card",
+    "destinations": [
+      "InfinityPhi",
+      "OmniPhi",
+      "QuantaPhi"
+    ]
+  },
+  "feed": {
+    "configuredBy": "window.PhiInfiniteBookFeedUrl",
+    "requiresSameOrigin": true
+  },
+  "minting": "none on story impressions or page refresh",
+  "persistence": "browser seen-state fallback; D1 integration pending"
+}
