@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v32-path-aliases';
+const EDGE_VERSION = 'quantaphi-org-v33-social-cards';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -126,6 +126,66 @@ function rewriteSuiteText(text) {
  text = text.split('https://www-infinity4.github.io/QuantaPhi/').join(CANONICAL_ORIGIN + '/');
  return text.split('__QUANTAPHI_STORAGE_BRIDGE__').join(bridgeUrl);
 }
+
+// Social crawlers do not execute the browser app. Render topic metadata on the edge.
+const QP_PREVIEW_IMAGE = CANONICAL_ORIGIN + '/preview.png?v=20261008-share1';
+function qpShareEscape(value) {
+ return String(value || '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+}
+function qpSharePlain(value, max) {
+ return String(value || '').replace(/[\x00-\x1f\x7f]/g,' ').replace(/\s+/g,' ').trim().slice(0,max);
+}
+function qpShareImage(value) {
+ try {
+  const url=new URL(String(value || ''));
+  if(url.protocol!=='https:' || url.href.length>1600 || !/\.(?:png|jpe?g|webp|gif)$/i.test(url.pathname)) return '';
+  if(['localhost','127.0.0.1','0.0.0.0','::1'].includes(url.hostname) || url.hostname.endsWith('.local')) return '';
+  return url.href;
+ }catch{return ''}
+}
+function qpShareResponse(incoming) {
+ const search=qpSharePlain(incoming.searchParams.get('q'),320);
+ const title=qpSharePlain(incoming.searchParams.get('title'),160) || search || 'QuantaPhi AI Research';
+ const summary=qpSharePlain(incoming.searchParams.get('text'),450) || 'Discover original research, surprising stories, images, video and sound with QuantaPhi.';
+ const kind=qpSharePlain(incoming.searchParams.get('kind'),30) || 'research';
+ const customImage=qpShareImage(incoming.searchParams.get('image'));
+ const image=customImage || QP_PREVIEW_IMAGE;
+ const destination=new URL('/',CANONICAL_ORIGIN);
+ if(search)destination.searchParams.set('q',search);
+ destination.hash='result';
+ const provided=qpSharePlain(incoming.searchParams.get('dest'),1800);
+ if(provided) {
+  try{const next=new URL(provided,CANONICAL_ORIGIN);if(next.origin===CANONICAL_ORIGIN && !next.pathname.startsWith('/q-share')){destination.pathname=next.pathname;destination.search=next.search;destination.hash=next.hash;}}
+  catch {}
+ }
+ const canonical=new URL(incoming);canonical.hash='';
+ const tags=[
+  '<!doctype html><html lang="en"><head><meta charset="utf-8">',
+  '<meta name="viewport" content="width=device-width,initial-scale=1">',
+  '<title>'+qpShareEscape(title)+' | QuantaPhi</title>',
+  '<meta name="description" content="'+qpShareEscape(summary.slice(0,240))+'">',
+  '<link rel="canonical" href="'+qpShareEscape(canonical.href)+'">',
+  '<meta property="og:type" content="article">',
+  '<meta property="og:site_name" content="QuantaPhi">',
+  '<meta property="og:url" content="'+qpShareEscape(canonical.href)+'">',
+  '<meta property="og:title" content="'+qpShareEscape(title)+'">',
+  '<meta property="og:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
+  '<meta property="og:image" content="'+qpShareEscape(image)+'">',
+  '<meta property="og:image:alt" content="'+qpShareEscape(customImage?'QuantaPhi research image about '+title:'QuantaPhi copper emblem on deep blue background')+'">',
+  '<meta name="twitter:card" content="summary_large_image">',
+  '<meta name="twitter:title" content="'+qpShareEscape(title)+'">',
+  '<meta name="twitter:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
+  '<meta name="twitter:image" content="'+qpShareEscape(image)+'">',
+  '<meta name="twitter:image:alt" content="'+qpShareEscape(customImage?'QuantaPhi research image about '+title:'QuantaPhi research cover artwork')+'">',
+ ];
+ if(!customImage)tags.push('<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png">');
+ const html=tags.join('\n')+'</head><body style="background:#0a215f;color:white;font:16px system-ui;padding:2rem;max-width:42rem;margin:auto">'+
+  '<h1>'+qpShareEscape(title)+'</h1><p>'+qpShareEscape(summary.slice(0,800))+'</p>'+
+  '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">Open in QuantaPhi</a>'+
+  '<script>location.replace('+JSON.stringify(destination.href).replace(/</g,'\\u003c')+')</script></body></html>';
+ return new Response(html,{status:200,headers:{'content-type':'text/html; charset=utf-8','cache-control':'public, max-age=120, s-maxage=300','x-content-type-options':'nosniff','x-quantaphi-edge':EDGE_VERSION,'x-quantaphi-share':kind}});
+}
+
 const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex\"><title>Moving QuantaPhi wallet</title></head><body><p>Recovering your existing wallet\u2026</p><script>\n'use strict';\nconst target=(()=>{try{const u=new URL(new URLSearchParams(location.search).get('return')||'');return ['https://quantaphi.org','https://www.quantaphi.org'].includes(u.origin)?u:null}catch{return null}})();\nconst prefix='starquest_ledger_device_v1:',values={};\ntry{\n const sessionRaw=localStorage.getItem('starquest_session');if(sessionRaw)values.starquest_session=sessionRaw;\n let session=null;try{session=JSON.parse(sessionRaw||'null')}catch{}\n const username=String(session?.username||session?.key||'').toLowerCase(),keys=[];\n for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'',value=localStorage.getItem(key)||'';if(key.startsWith(prefix)&&(/^sq_[A-Za-z0-9_-]{32,}$/.test(value)||/\"deviceToken\"\\s*:\\s*\"sq_[A-Za-z0-9_-]{32,}\"/.test(value)))keys.push(key)}\n const chosen=username?keys.filter(key=>key===prefix+username):(keys.length===1?keys:[]);\n for(const key of chosen)values[key]=localStorage.getItem(key);\n const accountKey=String(session?.key||username||chosen[0]?.slice(prefix.length)||'').toLowerCase();\n let users={},backup={};try{users=JSON.parse(localStorage.getItem('starquest_users')||'{}')}catch{}try{backup=JSON.parse(localStorage.getItem('starquest_users_backup_v1')||'{}')}catch{}\n const user=users[accountKey]||backup[accountKey];\n if(chosen.length===1&&user&&String(user.key||accountKey).toLowerCase()===accountKey){\n  const profile={key:accountKey,username:String(user.username||accountKey),passwordHash:String(user.passwordHash||''),joinedAt:user.joinedAt,lastLoginAt:user.lastLoginAt,tokens:user.tokens,pendingShareCredits:user.pendingShareCredits,shareCount:user.shareCount};\n  values.starquest_users=JSON.stringify({[accountKey]:profile});\n  if(!values.starquest_session)values.starquest_session=JSON.stringify({key:accountKey,username:profile.username,signedInAt:Date.now()});\n }\n}catch{}\nif(!target){document.body.textContent='Wallet return address rejected.'}\nelse if(Object.keys(values).some(key=>key.startsWith(prefix))){\n const bytes=new TextEncoder().encode(JSON.stringify({version:1,issuedAt:Date.now(),source:location.origin,values}));let binary='';for(const byte of bytes)binary+=String.fromCharCode(byte);\n target.hash='quantaWalletLink='+btoa(binary).replace(/\\+/g,'-').replace(/\\//g,'_').replace(/=+$/,'');\n location.replace(target.href);\n}else{\n const fallback=new URL('https://www-infinity4.github.io/QuantaPhi/wallet-link.html');fallback.searchParams.set('mode','top');fallback.searchParams.set('v','20261004-account6');fallback.searchParams.set('return',target.href);location.replace(fallback.href);\n}\n</script></body></html>";
 export default {
  async fetch(request) {
@@ -161,7 +221,7 @@ export default {
   const readRequest = ['GET', 'HEAD'].includes(request.method);
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
   // briefly stale after a commit, which must never keep an old wallet/search script live.
-  if ((route.repo === 'QuantaPhi' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi') && textual && readRequest) {
+  if ((route.repo === 'QuantaPhi' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi') && (textual || route.sourcePath === '/preview.png') && readRequest) {
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/main' + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
