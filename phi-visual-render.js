@@ -13,10 +13,15 @@ async function neutralImage(){
  return new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('Starting canvas unavailable')),'image/jpeg',.94));
 }
 async function jsonResponse(path,options){
- const response=await fetch(BASE+path,options);
- const data=await response.json().catch(()=>({}));
- if(!response.ok)throw Error(String(data.error||data.detail||'Service unavailable').slice(0,220));
- return data;
+ const controller=new AbortController();
+ const ms=path==='/v1/image'?150000:path==='/v1/image-read'?45000:30000;
+ const timer=setTimeout(()=>controller.abort(),ms);
+ try{
+  const response=await fetch(BASE+path,{...options,signal:controller.signal});
+  const data=await response.json().catch(()=>({}));
+  if(!response.ok)throw Error(String(data.error||data.detail||'Service unavailable').slice(0,220));
+  return data;
+ }finally{clearTimeout(timer)}
 }
 async function inspect(file){
  if(!file)return '';
@@ -26,7 +31,7 @@ async function inspect(file){
  body.append('instructions','Read the actual image, exact printed words, subject, marks, color and visual composition. Only report visible evidence; avoid guesses.');
  const j=await jsonResponse('/v1/image-read',{method:'POST',body});
  if(!j.ok)throw Error('Image reader returned no result');
- return [j.summary,j.description,j.output_text,j.text,j.caption,j.detected?.subject].filter(x=>typeof x==='string').join('\n').slice(0,1200);
+ return [j.semanticDescription,j.description,...(j.visibleText||[]),...(j.keywords||[]),...(j.visualTraits||[]),j.summary,j.output_text].filter(x=>typeof x==='string').join('\n').slice(0,1600);
 }
 function modePrompt(mode){
  return ({
@@ -66,12 +71,31 @@ async function direct(input){
  const prompt=aiText(j);if(prompt.length<25)throw Error('GPT provided no usable image directions');
  return prompt;
 }
+async function transport(blob,max=1100){
+ if(!blob)return blob;
+ if(blob.size<=2_800_000) return blob;
+ const image=await createImageBitmap(blob);
+ try{
+  const scale=Math.min(1,max/Math.max(image.width,image.height));
+  const w=Math.max(1,Math.round(image.width*scale)),h=Math.max(1,Math.round(image.height*scale));
+  const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;
+  canvas.getContext('2d').drawImage(image,0,0,w,h);
+  for(const q of [.88,.76,.66]){
+   const out=await new Promise(ok=>canvas.toBlob(ok,'image/jpeg',q));
+   if(out&&out.size<=2_800_000)return out;
+  }
+  throw Error('Image could not be compressed for the Cloudflare renderer');
+ }finally{image.close?.()}
+}
 async function render({description,mode,source,design,prompt}){
  if(source&&(source.size>MAX||!typeOK(source.type)))throw Error('Reference must be PNG/JPG/WebP, up to 10 MB');
  if(design&&(design.size>MAX||!typeOK(design.type)))throw Error('Style reference must be PNG/JPG/WebP, up to 10 MB');
- const blob=source||await neutralImage();
- const body=new FormData();body.append('image',blob,source?.name||'blank-canvas.jpg');
- if(design)body.append('design_reference',design,design.name||'design-reference.jpg');
+ const blob=source?await transport(source):await neutralImage();
+ const designBlob=design?await transport(design):null;
+ const body=new FormData();body.append('image',blob,source?'subject-reference.jpg':'blank-canvas.jpg');
+ if(designBlob)body.append('design_reference',designBlob,'design-reference.jpg');
+ body.append('mode',mode);
+ body.append('reference_mode',source?'uploaded':'blank');
  body.append('prompt',String(prompt||[modePrompt(mode),description].join('\n')).slice(0,7500));
  body.append('request',words(description).slice(0,1800));
  const j=await jsonResponse('/v1/image',{method:'POST',body});
