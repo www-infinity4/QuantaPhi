@@ -6,6 +6,9 @@
   const SEEN_KEY = 'phi_infinite_book_seen_v1';
   const STAR_KEY = 'phi_infinite_book_favorites_v1';
   const CATALOG_URL = '/infinite-book-catalog.json';
+  const LIVE_CACHE = 'phi_infinite_book_live_v2';
+  const bootTime = Date.now();
+  let queuedQuery = '', lastQuery = '';
   const E = (tag, cls, value) => {
     const el = document.createElement(tag);
     if (cls) el.className = cls;
@@ -43,7 +46,7 @@
     detail.append(E('summary', '', 'Expand to read the full story'), E('p', 'ib-full'));
     const source = E('a', 'ib-source', 'View original source ↗');
     source.target = '_blank'; source.rel = 'noopener noreferrer';
-    detail.append(source);
+    detail.append(source, E('div', 'ib-more-sources'));
     const actions = E('div', 'ib-actions');
     for (const [action, label] of [['star', '☆ Star'], ['share', '↗ Share'], ['collect', '+ Collect']]) {
       const button = E('button', 'ib-action', label);
@@ -71,6 +74,12 @@
     const link = new URL(location.href);
     link.searchParams.delete('q'); link.searchParams.delete('from');
     link.searchParams.set('secret', story.id);
+    if(story.discoverySource === 'live') {
+      link.searchParams.set('bookTitle', story.title.slice(0, 140));
+      link.searchParams.set('bookSummary', story.summary.slice(0, 440));
+      link.searchParams.set('bookSource', story.sourceUrl);
+      link.searchParams.set('bookSector', String(story.sector));
+    }
     link.hash = 'infiniteBook';
     return link.href;
   }
@@ -97,6 +106,11 @@
     const source = root.querySelector('.ib-source');
     source.href = story.sourceUrl;
     source.textContent = 'Original source: ' + (story.sourceTitle || new URL(story.sourceUrl).hostname) + ' ↗';
+    const others = root.querySelector('.ib-more-sources');
+    others.replaceChildren();
+    for(const item of (story.sources || []).filter(x=>x.url && x.url!==story.sourceUrl).slice(0,3)){
+      try{ if(new URL(item.url).protocol !== 'https:')continue; const a=E('a','ib-source','Further source: '+(item.title||new URL(item.url).hostname)+' ↗');a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';others.append(a); }catch(_){}
+    }
     root.querySelector('.ib-details').open = false;
     const star = root.querySelector('[data-book-action="star"]');
     star.textContent = favorites.has(story.id) ? '★ Starred' : '☆ Star';
@@ -104,24 +118,34 @@
       const a = root.querySelector('[data-book-tool="' + tool + '"]');
       a.href = buildUrl(tool, story); a.dataset.siteUrl = a.href;
     }
-    note(roll ? 'Discovery roll: sector ' + roll.sector + '/30 · angle ' + roll.angle + '/20 · source ' + roll.sourceClass + '/10' : 'Sourced and independently labeled');
+    note(roll ? 'Personal interest: '+(catalog.sectors.find(s=>s.id===roll.sector)?.name || 'Discovery')+' · random angle '+roll.angle+'/20 · source '+roll.sourceClass+'/10' : 'Sourced story');
   }
-  function rollDice() {
-    return { sector: rand(30) + 1, angle: rand(20) + 1, sourceClass: rand(10) + 1 };
+  function rollDice(query='') {
+    const profile = window.PhiInfiniteBookDiscover?.preferences(query);
+    return {sector: profile?.sector || 3, angle: rand(20)+1, sourceClass: rand(10)+1,
+      personal: !!profile?.sector, signals: profile?.signals || 0};
   }
   function pickUnique(roll, seen) {
     const unseen = Array.from(byId.values()).filter(s => !seen.has(s.id));
     if (!unseen.length) return null;
-    // Strict no-repeat; broadening is allowed, fabricating a story is not.
-    let best = -1, matches = [];
-    for (const story of unseen) {
-      const score = (story.sector === roll.sector ? 4 : 0) +
-        (story.angle === roll.angle ? 2 : 0) +
-        (story.sourceClass === roll.sourceClass ? 1 : 0) + rand(4);
-      if (score > best) { best = score; matches = [story]; }
-      else if (score === best) matches.push(story);
+    const related = {31:[2,6,1],32:[2,6],33:[2,6],34:[2],35:[7],36:[6,2],37:[20,2],38:[1],39:[2]};
+    const sectors = [roll.sector, ...(related[roll.sector]||[])];
+    const topical = unseen.filter(s => sectors.includes(s.sector));
+    const pool = topical.length ? topical : unseen;
+    let best = -1, matches=[];
+    for (const story of pool) {
+      const score=(story.sector===roll.sector?6:0)+(story.angle===roll.angle?2:0)+
+        (story.sourceClass===roll.sourceClass?1:0)+rand(4);
+      if(score>best){best=score;matches=[story]}
+      else if(score===best)matches.push(story);
     }
     return matches[rand(matches.length)];
+  }
+  function cacheLive(story) {
+    const cached=safeRead(LIVE_CACHE);
+    if(!cached.some(x=>x.id===story.id))cached.push(story);
+    // Seen IDs are never truncated; cached story bodies are bounded for device storage.
+    safeWrite(LIVE_CACHE,cached.slice(-100));
   }
   async function appendConfiguredFeed() {
     // When a server-side discovery service is available, it may publish curated
@@ -140,20 +164,47 @@
       for (const s of stories) if (storyValid(s) && !byId.has(s.id)) byId.set(s.id, s);
     } catch (error) { console.warn('Infinite Book feed unavailable; using verified catalog', error); }
   }
-  async function nextStory() {
-    if (pending || !catalog) return;
-    pending = true;
-    try {
-      const roll = rollDice();
-      let story = pickUnique(roll, seenIds());
-      if (!story) {
-        note('All ' + byId.size + ' verified stories in this catalog have been seen. New stories require the next sourced feed update; nothing will repeat.');
-        root.querySelector('.ib-next').disabled = true;
+  async function nextStory(query='') {
+    if (!catalog) return;
+    if(pending){if(query)queuedQuery=query;return}
+    pending=true;
+    const nextButton=root.querySelector('.ib-next');
+    if(nextButton)nextButton.disabled=true;
+    try{
+      const roll=rollDice(query);
+      note('Finding a new '+(catalog.sectors.find(s=>s.id===roll.sector)?.name||'surprising')+' story with sources…');
+      let story=null;
+      const seen=seenIds();
+      try{
+        story=await window.PhiInfiniteBookDiscover?.find({roll,catalog,seen})||null;
+      }catch(error){console.warn('Live source discovery failed; using saved verified stories',error)}
+      if(story && storyValid(story) && !seen.has(story.id)){
+        byId.set(story.id,story);
+        cacheLive(story);
+      } else story=pickUnique(roll,seen);
+      if(!story){
+        note('No new sourced story is available for this interest yet. Your collected stories remain saved; no story will repeat.');
         return;
       }
-      render(story, roll);
-    } finally { pending = false; }
+      render(story,roll);
+      if(story.discoverySource !== 'live'){
+        note('Verified archived discovery · '+(catalog.sectors.find(s=>s.id===roll.sector)?.name||'personal interests')+'. Live search could not verify a new story this time.');
+      }
+    } finally {
+      pending=false;
+      if(nextButton)nextButton.disabled=false;
+      if(queuedQuery){const next=queuedQuery;queuedQuery='';void nextStory(next)}
+    }
   }
+  window.addEventListener('quantaphi:search-start', event=>{
+    const query=String(event.detail?.query||'').trim();
+    if(!query || query===lastQuery)return;
+    lastQuery=query;
+    // A shared / restored search on initial page load is one visit, not a second discovery.
+    const urlQuery=new URL(location.href).searchParams.get('q');
+    if(Date.now()-bootTime<6500 && query===urlQuery)return;
+    void nextStory(query);
+  });
   function favorite() {
     if (!current) return;
     if (favorites.has(current.id)) favorites.delete(current.id);
@@ -214,16 +265,26 @@
       const response = await fetch(CATALOG_URL, { cache: 'no-cache' });
       if (!response.ok) throw new Error('Story catalog HTTP ' + response.status);
       catalog = await response.json();
-      if (!Array.isArray(catalog.sectors) || catalog.sectors.length !== 30 ||
+      if (!Array.isArray(catalog.sectors) || catalog.sectors.length !== 39 ||
           !Array.isArray(catalog.angles) || catalog.angles.length !== 20 ||
           !Array.isArray(catalog.sourceClasses) || catalog.sourceClasses.length !== 10) {
         throw new Error('Story discovery configuration is invalid');
       }
-      for (const story of catalog.stories || []) if (storyValid(story)) byId.set(story.id, story);
+      for (const story of [...(catalog.stories || []), ...safeRead(LIVE_CACHE)]) if (storyValid(story)) byId.set(story.id, story);
       await appendConfiguredFeed();
       const permalink = new URL(location.href).searchParams.get('secret');
       if (permalink && byId.has(permalink)) {
         render(byId.get(permalink));
+      } else if (permalink && /^live-[a-z0-9]+$/.test(permalink)) {
+        const u=new URL(location.href),source=u.searchParams.get('bookSource')||'';
+        let validSource=false;try{validSource=new URL(source).protocol==='https:'}catch(_){}
+        if(validSource && u.searchParams.get('bookTitle') && u.searchParams.get('bookSummary')){
+          render({id:permalink,title:u.searchParams.get('bookTitle').slice(0,160),
+            summary:u.searchParams.get('bookSummary').slice(0,550),
+            full:'This discovery was shared from another Phi session. Its summary and original source are preserved here. Open the cited source to read more.',
+            sector:Number(u.searchParams.get('bookSector'))||3,status:'Shared sourced discovery',
+            sourceUrl:source,sourceTitle:new URL(source).hostname},null);
+        } else await nextStory();
       } else {
         await nextStory();
       }
