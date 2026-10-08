@@ -4,6 +4,7 @@ on:
     branches: [feature/reads-realms-sector-index]
     paths:
       - 'workers/reads-realms/**'
+      - 'test/reads-realms-catalog.test.cjs'
       - 'test/reads-realms-index.test.cjs'
       - '.github/workflows/reads-realms-index.yml'
 jobs:
@@ -16,5 +17,5 @@ jobs:
           node-version: '22'
       - name: Verify Workers module syntax
         run: node --check workers/reads-realms/worker.js
-      - name: Validate bracket and safety behavior
-        run: node --test test/reads-realms-index.test.cjs
+      - name: Validate indexed subjects and story brackets
+        run: node --test test/reads-realms-index.test.cjs test/reads-realms-catalog.test.cjs
