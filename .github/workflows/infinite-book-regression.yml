@@ -1,0 +1,25 @@
+name: Infinite Book secret-story regressions
+on:
+  pull_request:
+    paths:
+      - 'infinite-book*.js'
+      - 'infinite-book-catalog.json'
+      - 'test/infinite-book*.cjs'
+      - '.github/workflows/infinite-book-regression.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'infinite-book*.js'
+      - 'infinite-book-catalog.json'
+      - 'test/infinite-book*.cjs'
+      - '.github/workflows/infinite-book-regression.yml'
+jobs:
+  secret-stories:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reject geography profiles while retaining source-backed discoveries
+        run: node --test test/infinite-book-resilience.test.cjs
