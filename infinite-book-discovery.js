@@ -326,6 +326,28 @@ const WIKI_QUERIES={
  37:'audio technology recording invention history',38:'power station engineering history',
  39:'electronics historical invention unusual'
 };
+async function writeWikipediaStory(page,plan,roll){
+ const prompt=[
+ 'Write an original nonfiction entry in The Infinite Book of Big Secrets about ONE little-known concrete incident, discovery, object, document, or experiment specifically evidenced by this single source.',
+ 'No biography or encyclopedia-style overview. Never invent dialogue, quotes, dates, motives, scientific results or secret plots.',
+ 'Use ONLY the supplied excerpt, not other assumed facts. If the excerpt is too general, answer {"insufficient":true}.',
+ 'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 words","full":"100-210 original words in 2 paragraphs","detail":"one directly supported surprising fact"}.',
+ 'Discovery route '+plan.combination+'; '+plan.name+'; '+plan.angle+'; '+plan.sourceClass+'.',
+ 'Source: Wikipedia contributors, page '+page.title+': '+page.full.slice(0,2200)
+ ].join('\n');
+ try{
+  const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
+   body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',
+    verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},6500);
+  if(data?.ok===false)return null;
+  const out=jsonAnswer(textAnswer(data));
+  if(!out||out.insufficient||!isSecretStory(out)||clean(out.summary).length<90||clean(out.full).length<230)return null;
+  return {title:clean(out.title).slice(0,180),summary:clean(out.summary).slice(0,600),
+   full:String(out.full).trim()+'\n\nBased on Wikipedia contributors (CC BY-SA), linked below.',
+   detail:clean(out.detail).slice(0,180)};
+ }catch(error){console.warn('Wikipedia story rewrite unavailable',error);return null}
+}
+
 function wikiExcerpt(s) {
  return String(s||'').replace(/\s+/g,' ').trim();
 }
@@ -376,13 +398,15 @@ async function findWikipedia({roll,catalog,seen,focus=''}) {
  if(summary.length<90)summary=choice.full.slice(0,290);
  if(summary.length>540)summary=summary.slice(0,537).trimEnd()+'…';
  const article='https://en.wikipedia.org/?curid='+choice.pageid;
- return {id:choice.id,title:choice.title,summary,
-   full:choice.full+'\n\nSource: Wikipedia contributors. Excerpt reused under Creative Commons Attribution-ShareAlike; follow the source and license links for details.',
-   year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
-   status:'backup encyclopedia excerpt · CC BY-SA · no GPT rewrite',
+ const written=await writeWikipediaStory(choice,plan,roll);
+ return {id:choice.id,title:written?.title||choice.title,summary:written?.summary||summary,
+   full:written?.full||(choice.full+'\n\nSource: Wikipedia contributors. Excerpt reused under Creative Commons Attribution-ShareAlike; follow the source and license links for details.'),
+   detail:written?.detail||'',year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
+   combination:plan.combination,
+   status:written?'original single-source research · Wikipedia / CC BY-SA':'backup encyclopedia excerpt · CC BY-SA · no GPT rewrite',
    sourceTitle:'Wikipedia contributors',sourceUrl:article,
    sources:[{title:'Wikipedia copyright and CC BY-SA attribution',url:WIKI_LICENSE}],
-   discoverySource:'live',discoveryMethod:'encyclopedia-backup',attribution:'Wikipedia / CC BY-SA'};
+   discoverySource:'live',discoveryMethod:written?'gpt-wiki':'encyclopedia-backup',attribution:'Wikipedia / CC BY-SA'};
 }
 async function find(options){
  // A stalled GPT/search Worker must not hold the orange story card hostage.
