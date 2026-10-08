@@ -69,7 +69,14 @@
   function seenIds() { return new Set(safeRead(SEEN_KEY)); }
   function remember(storyId) {
     const seen = safeRead(SEEN_KEY);
-    if (!seen.includes(storyId)) { seen.push(storyId); safeWrite(SEEN_KEY, seen); }
+    const keys=[storyId];
+    if(current?.discoverySource==='live'){
+      keys.push('url:'+current.sourceUrl);
+      const title=String(current.sourceTitle||'').toLowerCase().replace(/[^a-z0-9\\s]/g,'').replace(/\\s+/g,' ').slice(0,140);
+      if(title)keys.push('title:'+(()=>{let h=2166136261;for(let i=0;i<title.length;i++){h^=title.charCodeAt(i);h=Math.imul(h,16777619)}return(h>>>0).toString(36)})());
+    }
+    let changed=false;for(const key of keys){if(!seen.includes(key)){seen.push(key);changed=true}}
+    if(changed)safeWrite(SEEN_KEY,seen);
   }
   function deepLink(story) {
     const link = new URL(location.href);
