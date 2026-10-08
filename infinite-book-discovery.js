@@ -139,13 +139,20 @@ function sourcePlan(roll,catalog,focus=''){
  const approved=eligible.length?eligible:secondary;
  const preferredDomains=[...new Set([...approved.map(x=>x.domain),...localDomains,...preference.domains])];
  const domain=preferredDomains[random(preferredDomains.length)]||'si.edu';
- const anchor=clean(focus).slice(0,90)||clean(specialty)||sector;
+ const indexedWord=clean(roll.indexWord||'').slice(0,65);
+ const realm=clean(roll.realm||'').slice(0,65);
+ const anchor=indexedWord||clean(focus).slice(0,90)||clean(specialty)||sector;
  const discoveryTerms='specific incident demonstration object document event little-known -biography -town -municipality';
  const trail=['overlooked episode','archival surprise','forgotten evidence','unusual incident','newly rediscovered artifact','historical mystery'];
  const variant=trail[(Number(roll.trial)||0)%trail.length];
  // Each button triggers new external retrieval. Actual source sites provide the
  // research catalog; the 6,000 rolls are query routes, never canned stories.
- const queries=[
+ const queries=indexedWord?[
+   // Begin with the user's actual random-number result: "Helium history".
+   [indexedWord,realm||angle].join(' '),
+   [indexedWord,realm||angle,'unusual origin discovery experiment incident historical source'].join(' '),
+   [indexedWord,realm||angle,variant,preference.terms,'site:'+domain].join(' ')
+ ]:[
    anchor+' '+angle+' '+variant+' '+preference.terms+' '+discoveryTerms+' site:'+domain,
    [specialty||sector,angle,sourceClass,variant,discoveryTerms].filter(Boolean).join(' '),
    sector+' '+angle+' documented '+variant+' '+preference.terms+' -biography'
@@ -154,7 +161,7 @@ function sourcePlan(roll,catalog,focus=''){
   queries.push(anchor+' '+angle+' '+variant+' hidden historical episode site:history.com/articles -biography');
  }
  return {name:sector,angle,sourceClass,sourceClassId:roll.sourceClass,focus:anchor,
-  specialty,domain,queries,sourceSites:approved.slice(0,12).map(x=>({name:x.name,url:x.url,domain:x.domain})),
+  indexedWord,realm,specialty,domain,queries,sourceSites:approved.slice(0,18).map(x=>({name:x.name,url:x.url,domain:x.domain})),
   combination:(sectorId-1)*200+(roll.angle-1)*10+roll.sourceClass};
 }
 
@@ -198,13 +205,13 @@ function relatedSources(lead,results,focus){
 }
 async function scoutQueries(plan,roll){
  const prompt=[
-  'Act as the research librarian and search architect for The Infinite Book of Big Secrets.',
+  'Act as the research librarian and search architect for Infinity Reads & Realms.',
   'Given a sector, a story angle and a source class, create TWO precise web search queries to uncover a lesser-known DOCUMENTED event or physical artifact, rather than biographies of famous people.',
   'This is a SEARCH-PLANNING step; do NOT assert any facts or invent a particular event.',
   'If the focus is a famous person such as Nikola Tesla, look for a specific overlooked demonstration, prototype, patent or incident, not a summary of their life.',
   'Keep the research angle and source-class constraint. Return JSON only: {"queries":["...","..."]}.',
   'Sector '+roll.sector+': '+plan.name+'. Angle '+roll.angle+': '+plan.angle+'. Evidence class '+roll.sourceClass+': '+plan.sourceClass+'.',
-  'Search focus: '+plan.focus+'. Preferred evidence: '+(CLASS_SEARCH[roll.sourceClass]?.terms||'archival records')+'.'
+  'Drawn topic: '+(plan.indexedWord||plan.focus)+'. Drawn realm: '+(plan.realm||plan.angle)+'. Preferred evidence: '+(CLASS_SEARCH[roll.sourceClass]?.terms||'archival records')+'.'
  ].join('\n');
  try{
   const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
@@ -224,15 +231,15 @@ function detailsSupported(detail,sources,focus){
 }
 async function writeSecretStory(sources,plan,roll){
  const prompt=[
-  'You are writing The Infinite Book of Big Secrets. Write about ONE narrowly identified, unusual and not-obvious historical event, demonstration, document, artifact, accident or overlooked incident, never a subject biography.',
+  'You are writing Infinity Reads & Realms of mystery, adventure and suspense. Write an ORIGINAL enjoyable historical nonfiction story card about ONE concrete unusual event, discovery, demonstration, artifact, overlooked person-specific incident or experiment. Never a general biography.',
   'Example of the required difference: "Nikola Tesla" is NOT a story; his 1898 radio-controlled boat demonstration IS the kind of precise event we want, but do not choose it unless the actual evidence here concerns that event.',
-  'This is the final source-grounded story writer. Do not repeat a general overview or recycle a famous person profile.',
-  'Use only facts supported by the search snippets below. Snippets are NOT full source documents and may be wrong. If a specific surprising detail is not supportable, return {"insufficient":true}.',
+  'You are both evidence reviewer and storyteller: examine up to 20 independent search-result excerpts below, choose the MOST INTERESTING SPECIFIC incident actually corroborated by at least two distinct source websites, then narrate it as an engaging story, not an encyclopedia answer.',
+  'You can compare up to 20 search-result excerpts, but they are NOT full source documents. Use ONLY the two or more excerpts about the exact same selected event to support factual statements; do not merge unrelated histories. If a surprising detail cannot be supported, return {"insufficient":true}.',
   'You must identify one concrete event and an unexpected detail, and explain what makes it surprising. The title must name the EVENT or the OBJECT, not merely the person.',
   'Both source URLs must refer to the same specific incident or artifact; if they only share the same famous subject return {"insufficient":true}.',
   'Quote no sentences verbatim. No invented dates, dialogue, motives, achievements, conspiracies or scientific claims. Mark legends and contested claims accurately.',
   'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 original words","full":"100-210 original words in two paragraphs","detail":"short exact surprising fact","status":"documented|reported|contested|corrected myth|folklore","evidence_urls":["exact URL of source 1","exact URL of source 2"]}.',
-  'Rolled combination '+plan.combination+'; subject '+plan.name+'; angle '+plan.angle+'; source class '+plan.sourceClass+'; focus '+plan.focus+'.',
+  'Rolled combination '+plan.combination+'; indexed topic '+(plan.indexedWord||plan.focus)+'; story refinement '+(plan.realm||plan.angle)+'; source class '+plan.sourceClass+'; focus '+plan.focus+'. Mystery, suspense and adventure describe the tone, NEVER licenses to invent facts.',
   'Sources are snippets, not verified complete pages: '+JSON.stringify(sources)
  ].join('\n');
  const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
@@ -241,10 +248,9 @@ async function writeSecretStory(sources,plan,roll){
  const obj=jsonAnswer(textAnswer(data));
  if(!obj||obj.insufficient||clean(obj.title).length<16||clean(obj.summary).length<100||clean(obj.full).length<230||!isSecretStory(obj))return null;
  if(!EVENT_TITLE.test(clean(obj.title)))return null;
- if(!detailsSupported(obj.detail,sources,plan.focus))return null;
  const cited=(Array.isArray(obj.evidence_urls)?obj.evidence_urls:[]).map(canonical);
  const matched=sources.filter(x=>cited.includes(x.url));
- if(new Set(matched.map(x=>origin(x.url))).size<2)return null;
+ if(new Set(matched.map(x=>origin(x.url))).size<2||!detailsSupported(obj.detail,matched,plan.focus))return null;
  return {title:clean(obj.title).slice(0,180),summary:clean(obj.summary).slice(0,650),
   full:String(obj.full).trim().slice(0,2300),detail:clean(obj.detail).slice(0,240),
   status:['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported',
@@ -254,18 +260,19 @@ async function findSearch({roll,catalog,seen,focus=''}) {
  const plan=sourcePlan(roll,catalog,focus);
  // GPT first devises event-level searches. Our sector+angle+class queries
  // remain independently usable if the GPT scout cannot answer.
- const suggestions=await scoutQueries(plan,roll);
- // Reserve a slot for targeted editorial-history material when that evidence
- // class is rolled; otherwise a GPT scout can crowd out HISTORY searches.
- const discoveryQueries=(roll.sourceClass===7||roll.sourceClass===8)
-  ?[plan.queries[0],...suggestions.slice(0,1),plan.queries[1],plan.queries[plan.queries.length-1]]
-  :[plan.queries[0],...suggestions.slice(0,1),...plan.queries.slice(1)];
- const queries=[...new Set(discoveryQueries)].slice(0,4);
- const responses=searchServiceFailedAt&&Date.now()-searchServiceFailedAt<90000?[]:
-  await Promise.allSettled(queries.map(q=>{
-   const u=new URL(SEARCH);u.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});
-   return request(u.href,{cache:'no-store'},7000);
-  }));
+ // Start retrieval immediately with the drawn indexed words, not after GPT.
+ // GPT can contribute one additional targeted query, without holding up initial requests.
+ const search=q=>{
+  const u=new URL(SEARCH);u.search=new URLSearchParams({q,format:'json',categories:'general',safesearch:'1'});
+  return request(u.href,{cache:'no-store'},7000);
+ };
+ const canSearch=!(searchServiceFailedAt&&Date.now()-searchServiceFailedAt<90000);
+ const direct=canSearch?plan.queries.slice(0,3).map(search):[];
+ const scout=scoutQueries(plan,roll);
+ const suggestions=await Promise.race([scout,new Promise(resolve=>setTimeout(()=>resolve([]),2200))]);
+ const requested=[...direct];
+ if(canSearch&&suggestions[0])requested.push(search(suggestions[0]));
+ const responses=await Promise.allSettled(requested);
  if(responses.length&&responses.every(r=>r.status==='rejected'))searchServiceFailedAt=Date.now();
  else if(responses.some(r=>r.status==='fulfilled'))searchServiceFailedAt=0;
  const results=[],seenUrls=new Set();
@@ -279,22 +286,23 @@ async function findSearch({roll,catalog,seen,focus=''}) {
  if(eligible.length<2)return null;
  const ranked=eligible.map(item=>({item,score:(EVENT_TITLE.test(item.title)?5:0)+
   (SECRET_HOOK.test(item.title+' '+item.summary)?2:0)+
-  (origin(item.url)===plan.domain?2:0)+random(3)})).sort((a,b)=>b.score-a.score).map(x=>x.item);
- for(const lead of ranked.slice(0,3)){
-  if(!EVENT_TITLE.test(lead.title)||isPlaceProfile(lead)||isGenericProfile(lead))continue;
-  const corroboration=relatedSources(lead,results,plan.focus);
-  if(!corroboration.length)continue;
-  const sources=[lead,...corroboration];
-  try{
-   const written=await writeSecretStory(sources,plan,roll);
-   if(!written)continue;
-   return {id:'live-'+hash(lead.url),title:written.title,summary:written.summary,
-    full:written.full,detail:written.detail,year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
-    combination:plan.combination,status:written.status+' · GPT research summary from excerpts',
-    sourceTitle:lead.title,sourceUrl:lead.url,
-    sources:written.supported.map(x=>({title:x.title,url:x.url})),discoverySource:'live',discoveryMethod:'gpt-deep'};
-  }catch(error){console.warn('Book GPT deep story drafting unavailable',error);break;}
- }
+  (origin(item.url)===plan.domain?2:0)+(item.title.toLowerCase().includes(plan.indexedWord.toLowerCase())?2:0)+random(3)}))
+  .sort((a,b)=>b.score-a.score).map(x=>x.item).slice(0,20);
+ // The writer examines the result pool and selects the most compelling
+ // corroborated event; it cannot claim to have read full websites.
+ if(!ranked.some(x=>EVENT_TITLE.test(x.title)&&relatedSources(x,ranked,plan.focus).length))return null;
+ try{
+  const written=await writeSecretStory(ranked,plan,roll);
+  if(!written)return null;
+  const lead=written.supported[0];
+  return {id:'live-'+hash(lead.url),title:written.title,summary:written.summary,
+   full:written.full,detail:written.detail,year:'',sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,
+   indexWord:plan.indexedWord,realm:plan.realm,wordNumber:Number(roll.wordNumber)||0,realmNumber:Number(roll.realmNumber)||0,
+   reviewedExcerpts:ranked.length,
+   combination:plan.combination,status:written.status+' · research synthesis from search excerpts',
+   sourceTitle:lead.title,sourceUrl:lead.url,
+   sources:written.supported.map(x=>({title:x.title,url:x.url})),discoverySource:'live',discoveryMethod:'gpt-deep'};
+ }catch(error){console.warn('Infinity Reads & Realms writer unavailable',error);}
  return null;
 }
 
@@ -328,7 +336,7 @@ const WIKI_QUERIES={
 };
 async function writeWikipediaStory(page,plan,roll){
  const prompt=[
- 'Write an original nonfiction entry in The Infinite Book of Big Secrets about ONE little-known concrete incident, discovery, object, document, or experiment specifically evidenced by this single source.',
+ 'Write an original nonfiction entry in Infinity Reads & Realms about ONE little-known concrete incident, discovery, object, document, or experiment specifically evidenced by this single source.',
  'No biography or encyclopedia-style overview. Never invent dialogue, quotes, dates, motives, scientific results or secret plots.',
  'Use ONLY the supplied excerpt, not other assumed facts. If the excerpt is too general, answer {"insufficient":true}.',
  'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 words","full":"100-210 original words in 2 paragraphs","detail":"one directly supported surprising fact"}.',
@@ -353,7 +361,7 @@ function wikiExcerpt(s) {
 }
 async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
  const plan=sourcePlan(roll,catalog,focus);
- const base=WIKI_QUERIES[roll.sector] || (plan.name+' historical discovery');
+ const base=(plan.indexedWord ? (plan.indexedWord+' '+(plan.realm||'history')+' unusual event') : '') || WIKI_QUERIES[roll.sector] || (plan.name+' historical discovery');
  const seenWikipedia=[...seen].filter(id=>id.startsWith('wiki-')).length;
  // Keep a finite search offset and rotate terms; do not loop over seen items.
  // Rotate search phrasing and offsets independently: the previous five-offset
@@ -420,7 +428,7 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
  return backup;
 }
 async function find(options){
- // A stalled GPT/search Worker must not hold the orange story card hostage.
+ // A stalled GPT/search Worker must not hold the story card hostage.
  // Run the attributed encyclopedia safety net independently of the deep-research path.
  const deep=findSearch(options).catch(error=>{console.warn('Book GPT research unavailable',error);return null;});
  const backup=findWikipedia(options).catch(error=>{console.warn('Book independent source discovery unavailable',error);return null;});
