@@ -1,6 +1,6 @@
 {
   "name": "infinite-book",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "type": "discovery-widget",
   "mount": "#infiniteBook",
   "entry": "infinite-book.js",
@@ -14,9 +14,11 @@
     "build_story"
   ],
   "dimensions": {
-    "sectors": 39,
+    "sectors": 30,
     "angles": 20,
-    "sourceClasses": 10
+    "sourceClasses": 10,
+    "totalRoutes": 6000,
+    "specialistRefinements": 9
   },
   "storyCard": "orange",
   "routing": {
@@ -29,15 +31,16 @@
     ]
   },
   "feed": {
-    "onDemand": "live SearXNG evidence + existing Phi AI writer",
-    "sources": "sector-specific registry",
+    "onDemand": "source-site catalog and rolled search first; verified old story only if research slow",
+    "sources": "catalog.sourceSites plus sourceRegistry",
     "configuredBy": "window.PhiInfiniteBookFeedUrl",
-    "requiresSameOrigin": true
+    "requiresSameOrigin": true,
+    "writer": "GPT-OSS source-grounded one-event account, two independent source hosts required"
   },
   "minting": "none on story impressions or page refresh",
   "persistence": "local seen history and cached source summaries; cloud cross-device sync pending",
   "discovery": "infinite-book-discovery.js",
-  "refreshBehavior": "one unseen story each page visit; advance on a new search, not token mint",
+  "refreshBehavior": "each button click or fresh search attempts a unique researched event; cached verified entry is a temporary fallback",
   "personalization": [
     "quantaPhiBuildHistoryV1",
     "QuantaCloudBuildHistory",
