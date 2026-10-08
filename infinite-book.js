@@ -153,15 +153,23 @@
       const a = root.querySelector('[data-book-tool="' + tool + '"]');
       a.href = buildUrl(tool, story); a.dataset.siteUrl = a.href;
     }
-    note(roll ? 'Discovery '+((roll.sector-1)*200+(roll.angle-1)*10+roll.sourceClass)+'/7800 · '+(catalog.angles.find(a=>a.id===roll.angle)?.name||'Secret angle')+' · '+(catalog.sourceClasses.find(c=>c.id===roll.sourceClass)?.name||'research sources') : 'Sourced story');
+    note(roll ? 'Discovery '+((roll.sector-1)*200+(roll.angle-1)*10+roll.sourceClass)+'/6000 · '+(catalog.angles.find(a=>a.id===roll.angle)?.name||'Secret angle')+' · '+(catalog.sourceClasses.find(c=>c.id===roll.sourceClass)?.name||'research sources') : 'Sourced story');
   }
   function rollDice(query='') {
     const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
-    // Quants guide the interests without trapping the book in one famous person's biography.
-    const preferred = !!profile?.sector && rand(5)!==0;
-    const sector = preferred ? profile.sector : (catalog.sectors[rand(catalog.sectors.length)]?.id || 3);
-    return {sector,angle:rand(catalog.angles.length)+1,sourceClass:rand(catalog.sourceClasses.length)+1,
-      focus:preferred?(String(query||profile?.focus||'').slice(0,90)):'',personal:preferred,signals:profile?.signals||0};
+    const baseCount = catalog.baseSectorCount || 30;
+    // The original 6,000 rolls use 30 sectors. Sectors 31-39 are additional
+    // specialist refinements, not 1,800 extra outcomes.
+    const original = Number(profile?.sector)||0;
+    const mapped = Number(catalog.specialistRefinements?.[original]||original);
+    const preferred = mapped>0 && mapped<=baseCount && rand(5)!==0;
+    const sector = preferred ? mapped : (catalog.sectors[rand(baseCount)]?.id || 3);
+    const refinement = preferred && original!==mapped ?
+      (catalog.sectors.find(x=>x.id===original)?.name||'') : '';
+    return {sector,refinement,angle:rand(catalog.angles.length)+1,
+      sourceClass:rand(catalog.sourceClasses.length)+1,
+      trial:seenIds().size,focus:preferred?(String(query||profile?.focus||refinement||'').slice(0,90)):'',
+      personal:preferred,signals:profile?.signals||0};
   }
   function pickUnique(roll, seen) {
     const unseen = Array.from(byId.values()).filter(s => !seen.has(s.id));
@@ -238,50 +246,55 @@
   }
   async function nextStory(query='') {
     if (!catalog) return;
-    if (pending) {if(query&&queuedQueries.length<20)queuedQueries.push(query);return;}
+    if (pending) { if(query && queuedQueries.length<20)queuedQueries.push(query); return; }
     pending = true;
     const ticket = ++activeStoryTicket;
     const nextButton = root.querySelector('.ib-next');
     if(nextButton)nextButton.disabled = true;
     try {
       const roll = rollDice(query);
-      const acceptDeep = story => {
-        // Never replace a story the reader has opened, starred, shared or collected.
-        // Discard research belonging to a previous click/number combination.
-        if(ticket!==activeStoryTicket||interactedWithStory||
-           story?.discoveryMethod!=='gpt-deep'||!storyValid(story)||seenIds().has(story.id))return;
+      const presentation = story => story.discoveryMethod==='gpt-deep'
+        ? 'New GPT-written historical discovery · researched from independent sources'
+        : story.discoveryMethod==='gpt-wiki'
+          ? 'Original researched story · single identified reference'
+          : 'Attributable research excerpt · GPT writing unavailable';
+      const upgrade = story => {
+        // A late answer can upgrade a preview, but never change a card that
+        // the reader has opened, starred, shared, collected or moved past.
+        if(ticket!==activeStoryTicket || interactedWithStory ||
+          !storyValid(story) || seenIds().has(story.id) ||
+          current?.id===story.id)return;
         render(story,roll);
-        note('Original GPT-written discovery · supported by independent sources');
+        note(presentation(story));
       };
-      // Use a readable, genuinely specific sourced discovery while GPT scouts
-      // a deeper one. Upgrade to GPT if the reader has not interacted with it.
-      const starter = pickUnique(roll,seenIds());
-      if (starter) {
-        render(starter,roll);
-        note('Searching deeper · GPT is investigating this exact subject, angle and source class.');
-        void discoverInBackground(roll,acceptDeep).then(live=>{
-          if(!live || ticket!==activeStoryTicket)return;
-          if(current?.id===starter.id && !interactedWithStory && live.discoveryMethod==='gpt-deep'){
-            render(live,roll);
-            note('New original GPT-written secret · multiple research sources');
-          } else if(ticket===activeStoryTicket){
-            note('A new sourced discovery is ready for Another secret.');
-          }
-        });
+      note('Discovering a new event: searching historical websites and writing from evidence…');
+      // NEW SOURCE RESEARCH COMES FIRST. Stored stories are a last-resort
+      // safety net, not the primary result of the button press.
+      const research = discoverInBackground(roll,upgrade);
+      let timeoutId;
+      const pause = new Promise(resolve => { timeoutId=setTimeout(()=>resolve(null),9000); });
+      const fresh = await Promise.race([research,pause]);
+      clearTimeout(timeoutId);
+      if(ticket!==activeStoryTicket)return;
+      if(fresh && storyValid(fresh) && !seenIds().has(fresh.id)){
+        render(fresh,roll);
+        note(presentation(fresh));
         return;
       }
-      note('GPT is researching a lesser-known documented event for this exact number combination…');
-      const live = await discoverInBackground(roll,acceptDeep);
-      if(ticket!==activeStoryTicket)return;
-      if(live && storyValid(live) && !seenIds().has(live.id)){
-        render(live,roll);
-        note(live.discoveryMethod==='gpt-deep'?'Original GPT story · multiple supporting sources':'Backup source excerpt · GPT writing unavailable this time');
+      const preview = pickUnique(roll,seenIds());
+      if(preview){
+        render(preview,roll);
+        note('A documented story to read while live source research continues…');
       }else{
-        note('No specific sourced discovery was verified for this combination yet. Your stories are safe; tap Another secret to draw a different combination.');
+        note('Still researching this combination. No previous story will be repeated.');
       }
+      // The original asynchronous research remains alive after a preview.
+      void research.then(upgrade).catch(error=>console.warn('Book research unavailable',error));
     }catch(error){
       console.warn('Infinite Book discovery failed',error);
-      note('Research unavailable at this moment. Tap Another secret to try a different combination.');
+      const fallback=pickUnique(rollDice(query),seenIds());
+      if(fallback){render(fallback);note('Verified stored story · live research unavailable');}
+      else note('Research is unavailable for this combination. Tap Another secret for a fresh draw.');
     }finally{
       pending = false;
       if(nextButton)nextButton.disabled = false;
@@ -382,7 +395,7 @@
       const response = await fetch(CATALOG_URL, { cache: 'no-cache' });
       if (!response.ok) throw new Error('Story catalog HTTP ' + response.status);
       catalog = await response.json();
-      if (!Array.isArray(catalog.sectors) || catalog.sectors.length !== 39 ||
+      if (!Array.isArray(catalog.sectors) || catalog.sectors.length < 30 || catalog.baseSectorCount !== 30 ||
           !Array.isArray(catalog.angles) || catalog.angles.length !== 20 ||
           !Array.isArray(catalog.sourceClasses) || catalog.sourceClasses.length !== 10) {
         throw new Error('Story discovery configuration is invalid');
