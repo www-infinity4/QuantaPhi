@@ -1377,502 +1377,836 @@
     {
       "id": 1,
       "word": "Hydrogen",
-      "sector": 14
+      "sector": 14,
+      "sectors": [
+        14,
+        15
+      ]
     },
     {
       "id": 2,
       "word": "Ghosts",
-      "sector": 4
+      "sector": 4,
+      "sectors": [
+        4,
+        5,
+        23,
+        24
+      ]
     },
     {
       "id": 3,
       "word": "Helium",
-      "sector": 14
+      "sector": 14,
+      "sectors": [
+        14,
+        1,
+        7,
+        15
+      ]
     },
     {
       "id": 4,
       "word": "Energy",
-      "sector": 1
+      "sector": 1,
+      "sectors": [
+        1,
+        14,
+        15
+      ]
     },
     {
       "id": 5,
       "word": "Tesla",
-      "sector": 6
+      "sector": 6,
+      "sectors": [
+        6
+      ]
     },
     {
       "id": 6,
       "word": "Electricity",
-      "sector": 1
+      "sector": 1,
+      "sectors": [
+        1
+      ]
     },
     {
       "id": 7,
       "word": "Radio",
-      "sector": 31
+      "sector": 31,
+      "sectors": [
+        1,
+        2
+      ]
     },
     {
       "id": 8,
       "word": "Quantum",
-      "sector": 15
+      "sector": 15,
+      "sectors": [
+        15,
+        14
+      ]
     },
     {
       "id": 9,
       "word": "Space",
-      "sector": 7
+      "sector": 7,
+      "sectors": [
+        7
+      ]
     },
     {
       "id": 10,
       "word": "Moon",
-      "sector": 7
+      "sector": 7,
+      "sectors": [
+        7
+      ]
     },
     {
       "id": 11,
       "word": "Mars",
-      "sector": 7
+      "sector": 7,
+      "sectors": [
+        7
+      ]
     },
     {
       "id": 12,
       "word": "Saturn",
-      "sector": 7
+      "sector": 7,
+      "sectors": [
+        7,
+        15
+      ]
     },
     {
       "id": 13,
       "word": "Comets",
-      "sector": 7
+      "sector": 7,
+      "sectors": [
+        7
+      ]
     },
     {
       "id": 14,
       "word": "Meteors",
-      "sector": 16
+      "sector": 16,
+      "sectors": [
+        16
+      ]
     },
     {
       "id": 15,
       "word": "Stars",
-      "sector": 7
+      "sector": 7,
+      "sectors": [
+        7
+      ]
     },
     {
       "id": 16,
       "word": "Oceans",
-      "sector": 17
+      "sector": 17,
+      "sectors": [
+        17
+      ]
     },
     {
       "id": 17,
       "word": "Shipwrecks",
-      "sector": 17
+      "sector": 17,
+      "sectors": [
+        17
+      ]
     },
     {
       "id": 18,
       "word": "Pirates",
-      "sector": 26
+      "sector": 26,
+      "sectors": [
+        26,
+        16
+      ]
     },
     {
       "id": 19,
       "word": "Atlantis",
-      "sector": 11
+      "sector": 11,
+      "sectors": [
+        11
+      ]
     },
     {
       "id": 20,
       "word": "Archaeology",
-      "sector": 10
+      "sector": 10,
+      "sectors": [
+        10,
+        11
+      ]
     },
     {
       "id": 21,
       "word": "Pyramids",
-      "sector": 11
+      "sector": 11,
+      "sectors": [
+        11
+      ]
     },
     {
       "id": 22,
       "word": "Mummies",
-      "sector": 10
+      "sector": 10,
+      "sectors": [
+        10
+      ]
     },
     {
       "id": 23,
       "word": "Dinosaurs",
-      "sector": 13
+      "sector": 13,
+      "sectors": [
+        13
+      ]
     },
     {
       "id": 24,
       "word": "Fossils",
-      "sector": 13
+      "sector": 13,
+      "sectors": [
+        13
+      ]
     },
     {
       "id": 25,
       "word": "Volcanoes",
-      "sector": 16
+      "sector": 16,
+      "sectors": [
+        16
+      ]
     },
     {
       "id": 26,
       "word": "Earthquakes",
-      "sector": 16
+      "sector": 16,
+      "sectors": [
+        16
+      ]
     },
     {
       "id": 27,
       "word": "Hurricanes",
-      "sector": 18
+      "sector": 18,
+      "sectors": [
+        18
+      ]
     },
     {
       "id": 28,
       "word": "Lightning",
-      "sector": 18
+      "sector": 18,
+      "sectors": [
+        18
+      ]
     },
     {
       "id": 29,
       "word": "Weather",
-      "sector": 18
+      "sector": 18,
+      "sectors": [
+        18
+      ]
     },
     {
       "id": 30,
       "word": "Wilderness",
-      "sector": 16
+      "sector": 16,
+      "sectors": [
+        16
+      ]
     },
     {
       "id": 31,
       "word": "Animals",
-      "sector": 29
+      "sector": 29,
+      "sectors": [
+        29,
+        13
+      ]
     },
     {
       "id": 32,
       "word": "Whales",
-      "sector": 17
+      "sector": 17,
+      "sectors": [
+        17
+      ]
     },
     {
       "id": 33,
       "word": "Octopuses",
-      "sector": 29
+      "sector": 29,
+      "sectors": [
+        29
+      ]
     },
     {
       "id": 34,
       "word": "Birds",
-      "sector": 29
+      "sector": 29,
+      "sectors": [
+        29
+      ]
     },
     {
       "id": 35,
       "word": "Insects",
-      "sector": 13
+      "sector": 13,
+      "sectors": [
+        13
+      ]
     },
     {
       "id": 36,
       "word": "Evolution",
-      "sector": 13
+      "sector": 13,
+      "sectors": [
+        13
+      ]
     },
     {
       "id": 37,
       "word": "DNA",
-      "sector": 13
+      "sector": 13,
+      "sectors": [
+        13
+      ]
     },
     {
       "id": 38,
       "word": "Medicine",
-      "sector": 12
+      "sector": 12,
+      "sectors": [
+        12,
+        14
+      ]
     },
     {
       "id": 39,
       "word": "Vaccines",
-      "sector": 12
+      "sector": 12,
+      "sectors": [
+        12
+      ]
     },
     {
       "id": 40,
       "word": "Chemistry",
-      "sector": 14
+      "sector": 14,
+      "sectors": [
+        14,
+        15
+      ]
     },
     {
       "id": 41,
       "word": "Elements",
-      "sector": 14
+      "sector": 14,
+      "sectors": [
+        14,
+        15
+      ]
     },
     {
       "id": 42,
       "word": "Gold",
-      "sector": 14
+      "sector": 14,
+      "sectors": [
+        14,
+        27
+      ]
     },
     {
       "id": 43,
       "word": "Silver",
-      "sector": 14
+      "sector": 14,
+      "sectors": [
+        14,
+        27
+      ]
     },
     {
       "id": 44,
       "word": "Uranium",
-      "sector": 14
+      "sector": 14,
+      "sectors": [
+        14,
+        1,
+        15
+      ]
     },
     {
       "id": 45,
       "word": "Magnetism",
-      "sector": 15
+      "sector": 15,
+      "sectors": [
+        15
+      ]
     },
     {
       "id": 46,
       "word": "Radiation",
-      "sector": 15
+      "sector": 15,
+      "sectors": [
+        15,
+        12
+      ]
     },
     {
       "id": 47,
       "word": "Robots",
-      "sector": 36
+      "sector": 36,
+      "sectors": [
+        6,
+        2
+      ]
     },
     {
       "id": 48,
       "word": "Computers",
-      "sector": 34
+      "sector": 34,
+      "sectors": [
+        2,
+        6
+      ]
     },
     {
       "id": 49,
       "word": "Internet",
-      "sector": 2
+      "sector": 2,
+      "sectors": [
+        2
+      ]
     },
     {
       "id": 50,
       "word": "Inventions",
-      "sector": 6
+      "sector": 6,
+      "sectors": [
+        6
+      ]
     },
     {
       "id": 51,
       "word": "Patents",
-      "sector": 6
+      "sector": 6,
+      "sectors": [
+        6,
+        27
+      ]
     },
     {
       "id": 52,
       "word": "Automobiles",
-      "sector": 26
+      "sector": 26,
+      "sectors": [
+        26
+      ]
     },
     {
       "id": 53,
       "word": "Trains",
-      "sector": 26
+      "sector": 26,
+      "sectors": [
+        26
+      ]
     },
     {
       "id": 54,
       "word": "Aircraft",
-      "sector": 26
+      "sector": 26,
+      "sectors": [
+        26
+      ]
     },
     {
       "id": 55,
       "word": "Balloons",
-      "sector": 26
+      "sector": 26,
+      "sectors": [
+        26
+      ]
     },
     {
       "id": 56,
       "word": "Rockets",
-      "sector": 7
+      "sector": 7,
+      "sectors": [
+        7
+      ]
     },
     {
       "id": 57,
       "word": "Satellites",
-      "sector": 35
+      "sector": 35,
+      "sectors": [
+        7
+      ]
     },
     {
       "id": 58,
       "word": "Bridges",
-      "sector": 25
+      "sector": 25,
+      "sectors": [
+        25,
+        19
+      ]
     },
     {
       "id": 59,
       "word": "Tunnels",
-      "sector": 25
+      "sector": 25,
+      "sectors": [
+        25
+      ]
     },
     {
       "id": 60,
       "word": "Castles",
-      "sector": 25
+      "sector": 25,
+      "sectors": [
+        25
+      ]
     },
     {
       "id": 61,
       "word": "Palaces",
-      "sector": 23
+      "sector": 23,
+      "sectors": [
+        23
+      ]
     },
     {
       "id": 62,
       "word": "Temples",
-      "sector": 11
+      "sector": 11,
+      "sectors": [
+        11
+      ]
     },
     {
       "id": 63,
       "word": "Cities",
-      "sector": 25
+      "sector": 25,
+      "sectors": [
+        25
+      ]
     },
     {
       "id": 64,
       "word": "Islands",
-      "sector": 16
+      "sector": 16,
+      "sectors": [
+        16
+      ]
     },
     {
       "id": 65,
       "word": "Caves",
-      "sector": 16
+      "sector": 16,
+      "sectors": [
+        16
+      ]
     },
     {
       "id": 66,
       "word": "Expeditions",
-      "sector": 28
+      "sector": 28,
+      "sectors": [
+        28
+      ]
     },
     {
       "id": 67,
       "word": "Explorers",
-      "sector": 28
+      "sector": 28,
+      "sectors": [
+        28
+      ]
     },
     {
       "id": 68,
       "word": "Spies",
-      "sector": 9
+      "sector": 9,
+      "sectors": [
+        9
+      ]
     },
     {
       "id": 69,
       "word": "Codes",
-      "sector": 9
+      "sector": 9,
+      "sectors": [
+        9,
+        2
+      ]
     },
     {
       "id": 70,
       "word": "Intelligence",
-      "sector": 9
+      "sector": 9,
+      "sectors": [
+        9,
+        8
+      ]
     },
     {
       "id": 71,
       "word": "Wars",
-      "sector": 8
+      "sector": 8,
+      "sectors": [
+        8
+      ]
     },
     {
       "id": 72,
       "word": "Battles",
-      "sector": 8
+      "sector": 8,
+      "sectors": [
+        8
+      ]
     },
     {
       "id": 73,
       "word": "Empires",
-      "sector": 11
+      "sector": 11,
+      "sectors": [
+        11,
+        23
+      ]
     },
     {
       "id": 74,
       "word": "Presidents",
-      "sector": 23
+      "sector": 23,
+      "sectors": [
+        23
+      ]
     },
     {
       "id": 75,
       "word": "Royalty",
-      "sector": 23
+      "sector": 23,
+      "sectors": [
+        23
+      ]
     },
     {
       "id": 76,
       "word": "Inventors",
-      "sector": 6
+      "sector": 6,
+      "sectors": [
+        6
+      ]
     },
     {
       "id": 77,
       "word": "Scientists",
-      "sector": 15
+      "sector": 15,
+      "sectors": [
+        15
+      ]
     },
     {
       "id": 78,
       "word": "Artists",
-      "sector": 3
+      "sector": 3,
+      "sectors": [
+        3
+      ]
     },
     {
       "id": 79,
       "word": "Paintings",
-      "sector": 3
+      "sector": 3,
+      "sectors": [
+        3
+      ]
     },
     {
       "id": 80,
       "word": "Museums",
-      "sector": 3
+      "sector": 3,
+      "sectors": [
+        3
+      ]
     },
     {
       "id": 81,
       "word": "Music",
-      "sector": 20
+      "sector": 20,
+      "sectors": [
+        20
+      ]
     },
     {
       "id": 82,
       "word": "Pianos",
-      "sector": 37
+      "sector": 37,
+      "sectors": [
+        20
+      ]
     },
     {
       "id": 83,
       "word": "Recordings",
-      "sector": 37
+      "sector": 37,
+      "sectors": [
+        20
+      ]
     },
     {
       "id": 84,
       "word": "Cinema",
-      "sector": 21
+      "sector": 21,
+      "sectors": [
+        21
+      ]
     },
     {
       "id": 85,
       "word": "Television",
-      "sector": 21
+      "sector": 21,
+      "sectors": [
+        21
+      ]
     },
     {
       "id": 86,
       "word": "Literature",
-      "sector": 22
+      "sector": 22,
+      "sectors": [
+        22
+      ]
     },
     {
       "id": 87,
       "word": "Manuscripts",
-      "sector": 22
+      "sector": 22,
+      "sectors": [
+        22
+      ]
     },
     {
       "id": 88,
       "word": "Folklore",
-      "sector": 4
+      "sector": 4,
+      "sectors": [
+        4
+      ]
     },
     {
       "id": 89,
       "word": "Legends",
-      "sector": 4
+      "sector": 4,
+      "sectors": [
+        4
+      ]
     },
     {
       "id": 90,
       "word": "Mythology",
-      "sector": 11
+      "sector": 11,
+      "sectors": [
+        11
+      ]
     },
     {
       "id": 91,
       "word": "Crime",
-      "sector": 24
+      "sector": 24,
+      "sectors": [
+        24,
+        9
+      ]
     },
     {
       "id": 92,
       "word": "Mysteries",
-      "sector": 24
+      "sector": 24,
+      "sectors": [
+        24
+      ]
     },
     {
       "id": 93,
       "word": "Disappearances",
-      "sector": 24
+      "sector": 24,
+      "sectors": [
+        24,
+        9
+      ]
     },
     {
       "id": 94,
       "word": "Treasure",
-      "sector": 10
+      "sector": 10,
+      "sectors": [
+        10,
+        23
+      ]
     },
     {
       "id": 95,
       "word": "Hoaxes",
-      "sector": 24
+      "sector": 24,
+      "sectors": [
+        24
+      ]
     },
     {
       "id": 96,
       "word": "Disasters",
-      "sector": 19
+      "sector": 19,
+      "sectors": [
+        19
+      ]
     },
     {
       "id": 97,
       "word": "Experiments",
-      "sector": 5
+      "sector": 5,
+      "sectors": [
+        5
+      ]
     },
     {
       "id": 98,
       "word": "Discoveries",
-      "sector": 6
+      "sector": 6,
+      "sectors": [
+        6,
+        27
+      ]
     },
     {
       "id": 99,
       "word": "Machines",
-      "sector": 36
+      "sector": 36,
+      "sectors": [
+        6
+      ]
     },
     {
       "id": 100,
       "word": "Oddities",
-      "sector": 30
+      "sector": 30,
+      "sectors": [
+        30
+      ]
     }
   ],
   "realmRefinements": [
@@ -1955,6 +2289,142 @@
     {
       "id": 20,
       "name": "Rediscovered treasures"
+    }
+  ],
+  "researchRefinements": [
+    {
+      "id": 1,
+      "name": "Mystery"
+    },
+    {
+      "id": 2,
+      "name": "Suspense"
+    },
+    {
+      "id": 3,
+      "name": "Adventure"
+    },
+    {
+      "id": 4,
+      "name": "History"
+    },
+    {
+      "id": 5,
+      "name": "Origins"
+    },
+    {
+      "id": 6,
+      "name": "Hidden evidence"
+    },
+    {
+      "id": 7,
+      "name": "Lost inventions"
+    },
+    {
+      "id": 8,
+      "name": "Forgotten people"
+    },
+    {
+      "id": 9,
+      "name": "Strange experiments"
+    },
+    {
+      "id": 10,
+      "name": "Scientific breakthroughs"
+    },
+    {
+      "id": 11,
+      "name": "Unsolved questions"
+    },
+    {
+      "id": 12,
+      "name": "Historical myths"
+    },
+    {
+      "id": 13,
+      "name": "Near disasters"
+    },
+    {
+      "id": 14,
+      "name": "Unexpected discoveries"
+    },
+    {
+      "id": 15,
+      "name": "Ancient clues"
+    },
+    {
+      "id": 16,
+      "name": "Rare artifacts"
+    },
+    {
+      "id": 17,
+      "name": "Folklore and legends"
+    },
+    {
+      "id": 18,
+      "name": "Secret operations"
+    },
+    {
+      "id": 19,
+      "name": "Impossible coincidences"
+    },
+    {
+      "id": 20,
+      "name": "Rediscovered treasures"
+    }
+  ],
+  "storytellingRealms": [
+    {
+      "id": 1,
+      "name": "Mystery",
+      "instruction": "Unfold the unexplained question while distinguishing established facts from unresolved claims"
+    },
+    {
+      "id": 2,
+      "name": "Suspense",
+      "instruction": "Build tension through the real sequence of events, without inventing danger or dialogue"
+    },
+    {
+      "id": 3,
+      "name": "Adventure",
+      "instruction": "Follow the real journey, investigation or discovery without fictionalizing evidence"
+    }
+  ],
+  "discoveryBrackets": [
+    {
+      "step": 1,
+      "name": "Sector",
+      "count": 30,
+      "field": "sector",
+      "rule": "Draw a subject sector, optionally influenced by Quants"
+    },
+    {
+      "step": 2,
+      "name": "Indexed word",
+      "count": 100,
+      "field": "wordNumber",
+      "rule": "Draw exactly one indexed topic related to the selected sector"
+    },
+    {
+      "step": 3,
+      "name": "Research refinement",
+      "count": 20,
+      "field": "refinementNumber",
+      "rule": "Draw an angle such as History or Origins to build the first search query"
+    },
+    {
+      "step": 4,
+      "name": "Storytelling realm",
+      "count": 3,
+      "field": "storytellingRealmNumber",
+      "rule": "Draw Mystery, Suspense, or Adventure as an evidence-respecting storytelling lens"
+    },
+    {
+      "step": 5,
+      "name": "Evidence class",
+      "count": 10,
+      "field": "sourceClass",
+      "rule": "Target archives, museums, researchers or specialist journalism"
     }
   ]
 }
