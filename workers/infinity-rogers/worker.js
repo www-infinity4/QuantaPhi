@@ -563,14 +563,31 @@ async function runImage(request, env) {
    ?"Use a clearly visible clean BLACK outer border on all four sides."
    :"Follow the selected border treatment exactly.";
 
+ const allowedModes=["Image","Trading Card","Advertisement","Billboard","Poster","Cover Art"];
+ const requestedMode=clean(form.get("mode"),32);
+ const mode=allowedModes.includes(requestedMode)?requestedMode:"Trading Card";
+ const blankReference=clean(form.get("reference_mode"),40)==="blank";
+ const modeRules={
+  "Image":"Create a standalone premium visual image. Match the requested subject, composition and aesthetic. No card frame or printing decoration unless the user requests it.",
+  "Trading Card":"Create a complete sharp-corner premium collectible trading card, sports or nonsports as specified. Do not make a blank template, slab or mockup. Leave exact typography for a separate compositing step.",
+  "Advertisement":"Create one finished professional advertising graphic. Preserve supplied brand/product identity. Do not invent sales claims or prices. No collectible-card framing.",
+  "Billboard":"Create an impactful wide billboard image with a single strong focal point and clean headline area. No trading-card frame or mockup.",
+  "Poster":"Create a finished poster artwork with intentional composition and typography space. No card frame unless explicitly requested.",
+  "Cover Art":"Create finished editorial, music or book-cover artwork. Respect stated lettering and subject. Do not add a trading-card border."
+ };
  const domain=sports?"sports trading card":"premium collectible trading card";
  const executionOnly="You are the rendering engine, not the art director. Execute the supplied build specification literally. Do not invent a different subject, sport, team, year, biography, brand, series or historical context. Do not add any lettering, words, numbers, serial plaques, logos, captions, labels, signatures or pseudo-text. Exact typography is composited later. Preserve the uploaded subject and create one high-end "+domain+" as a complete printed object. "+borderRule+" Keep the full sharp rectangular card perimeter visible. Use contemporary premium production quality: strong photography, precise crop, deliberate negative space, believable print material, controlled foil/refractor details only when requested, and clean collector-grade geometry. Never output a mockup, slab, phone screen, tabletop, empty template, picture frame, or photo pasted into a fixed rectangle.";
 
+ const visualExecution="You are the rendering engine for Phi Image Builder. "+modeRules[mode]+
+  " Execute the user's specification, not a generic sports-card template. Do not invent identities, dates, brand claims or phrases. "+
+  (blankReference?"The provided input is a neutral starting canvas with no visual subject; create the requested original image from the text. ":"Preserve uploaded reference identity and composition where helpful. ")+
+  "Output one finished high-quality image, not a screenshot of a UI.";
+ const governingPrompt=mode==="Trading Card"?executionOnly:visualExecution;
  const variants=[
-   executionOnly+" BUILD SPECIFICATION: "+prompt,
-   executionOnly+" USER DIRECTION: "+literal+" BUILD SPECIFICATION: "+prompt+" Recompose the source photograph naturally into the card artwork; graphic elements may overlap and interact with the photograph, but must not obscure important faces.",
-   executionOnly+" Produce a restrained flagship-quality result with fewer graphic devices and stronger photography. BUILD SPECIFICATION: "+prompt,
-   executionOnly+" Produce a premium insert-quality result only if the selected material/style asks for it; otherwise stay classic and restrained. BUILD SPECIFICATION: "+prompt
+   governingPrompt+" BUILD SPECIFICATION: "+prompt,
+   governingPrompt+" USER DIRECTION: "+literal+" BUILD SPECIFICATION: "+prompt+" Keep original subject identity and make a finished, coherent composition.",
+   governingPrompt+" Keep the final visual clean, polished and purposeful. BUILD SPECIFICATION: "+prompt,
+   governingPrompt+" Prioritize the exact intended image content and avoid invented slogans. BUILD SPECIFICATION: "+prompt
  ];
 
  let lastError=null;
@@ -588,15 +605,15 @@ async function runImage(request, env) {
        out.append("input_image_0",image,image.name||"subject.jpg");
        if(designReference) out.append("input_image_1",designReference,designReference.name||"design-reference.jpg");
        out.append("prompt",variant);
-       out.append("width","768");
-       out.append("height","1024");
+       out.append("width",mode==="Billboard"?"1024":mode==="Image"?"1024":"768");
+       out.append("height",mode==="Billboard"?"576":mode==="Image"?"1024":"1024");
        if(plan.steps) out.append("steps",plan.steps);
        const serialized=new Response(out);
        const result=await env.AI.run(plan.model,{multipart:{body:serialized.body,contentType:serialized.headers.get("content-type")}});
        const b64=typeof result?.image==="string"?result.image:"";
        if(!b64) throw new Error("empty_image_response");
        await recordUsage(env,userId,state,1,1);
-       return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:image/jpeg;base64,"+b64,attempt:attemptNumber,mode:"reference-edit",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+       return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:image/jpeg;base64,"+b64,attempt:attemptNumber,mode,referenceMode:blankReference?"text-on-neutral":"source-image",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
      }catch(error){
        lastError=error;
        const message=String(error?.message||error);
