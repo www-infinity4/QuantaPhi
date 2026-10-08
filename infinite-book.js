@@ -215,25 +215,37 @@
       for (const s of stories) if (storyValid(s) && !byId.has(s.id)) byId.set(s.id, s);
     } catch (error) { console.warn('Infinite Book feed unavailable; using verified catalog', error); }
   }
-  let discoveryFlight = null;
-  let discoveryRollKey = '';
+  // The screen reads from ready stories first. Research never blocks a click.
+  const READY_TARGET = 8;
+  const MAX_RESEARCH_IN_FLIGHT = 2;
+  const RESEARCH_DEADLINE_MS = 16000;
+  const researchFlights = new Map();
+  let refillRunning = false;
+  function readyCount() {
+    const seen = seenIds();
+    let n = 0;
+    for (const story of byId.values()) if (!seen.has(story.id)) n++;
+    return n;
+  }
   function discoverInBackground(roll, onDeep) {
-    const key = [roll.sector, roll.angle, roll.sourceClass, roll.focus||''].join(':');
-    if (discoveryFlight && discoveryRollKey !== key) {
-      // Preserve the newly rolled research instructions; never re-label a result
-      // prepared for a different angle or evidence class.
-      return discoveryFlight.then(() => discoverInBackground(roll));
-    }
-    if (discoveryFlight) return discoveryFlight;
+    const key = [roll.sector, roll.angle, roll.sourceClass, roll.focus || ''].join(':');
+    if (researchFlights.has(key)) return researchFlights.get(key);
+    if (researchFlights.size >= MAX_RESEARCH_IN_FLIGHT) return Promise.resolve(null);
     const discover = window.PhiInfiniteBookDiscover?.find;
     if (typeof discover !== 'function') return Promise.resolve(null);
-    discoveryRollKey = key;
-    discoveryFlight = Promise.resolve().then(() => discover({roll, catalog, seen:seenIds(), focus:roll.focus||'', onDeep: story=>{
-        if(!storyValid(story)||seenIds().has(story.id))return;
-        byId.set(story.id,story);
+    let deadline;
+    const research = Promise.resolve().then(() => discover({
+      roll, catalog, seen: seenIds(), focus: roll.focus || '',
+      onDeep: story => {
+        if (!storyValid(story) || seenIds().has(story.id)) return;
+        byId.set(story.id, story);
         cacheLive(story);
-        if(typeof onDeep==='function')onDeep(story);
-      }}))
+        if (typeof onDeep === 'function') onDeep(story);
+      }
+    }));
+    // Bound the queue even when a remote service ignores its abort signal.
+    const expired = new Promise(resolve => { deadline = setTimeout(() => resolve(null), RESEARCH_DEADLINE_MS); });
+    const flight = Promise.race([research, expired])
       .then(story => {
         if (!storyValid(story) || seenIds().has(story.id)) return null;
         byId.set(story.id, story);
@@ -244,65 +256,52 @@
         console.warn('Infinite Book GPT/source discovery unavailable', error);
         return null;
       })
-      .finally(() => { discoveryFlight = null; discoveryRollKey = ''; });
-    return discoveryFlight;
+      .finally(() => {
+        clearTimeout(deadline);
+        researchFlights.delete(key);
+      });
+    researchFlights.set(key, flight);
+    return flight;
   }
-  async function nextStory(query='') {
+  function refillReadyStories() {
+    if (!catalog || refillRunning || readyCount() >= READY_TARGET) return;
+    refillRunning = true;
+    // A small rolling background batch instead of firing 100 expensive API calls
+    // on a phone. The durable Cloudflare feed can publish much larger batches.
+    void (async () => {
+      for (let attempt = 0; attempt < 4 && readyCount() < READY_TARGET; attempt++) {
+        if (document.visibilityState === 'hidden') break;
+        const roll = rollDice();
+        await discoverInBackground(roll);
+      }
+    })().catch(error => console.warn('Book queue refill unavailable', error))
+      .finally(() => { refillRunning = false; });
+  }
+  async function nextStory(query = '') {
     if (!catalog) return;
-    if (pending) { if(query && queuedQueries.length<20)queuedQueries.push(query); return; }
-    pending = true;
     const ticket = ++activeStoryTicket;
-    const nextButton = root.querySelector('.ib-next');
-    if(nextButton)nextButton.disabled = true;
-    try {
-      const roll = rollDice(query);
-      const presentation = story => story.discoveryMethod==='gpt-deep'
-        ? 'New GPT-written historical discovery · researched from independent sources'
-        : story.discoveryMethod==='gpt-wiki'
-          ? 'Original researched story · single identified reference'
-          : 'Attributable research excerpt · GPT writing unavailable';
-      const upgrade = story => {
-        // A late answer can upgrade a preview, but never change a card that
-        // the reader has opened, starred, shared, collected or moved past.
-        if(ticket!==activeStoryTicket || interactedWithStory ||
-          !storyValid(story) || seenIds().has(story.id) ||
-          current?.id===story.id)return;
-        render(story,roll);
-        note(presentation(story));
-      };
-      note('Discovering a new event: searching historical websites and writing from evidence…');
-      // NEW SOURCE RESEARCH COMES FIRST. Stored stories are a last-resort
-      // safety net, not the primary result of the button press.
-      const research = discoverInBackground(roll,upgrade);
-      let timeoutId;
-      const pause = new Promise(resolve => { timeoutId=setTimeout(()=>resolve(null),9000); });
-      const fresh = await Promise.race([research,pause]);
-      clearTimeout(timeoutId);
-      if(ticket!==activeStoryTicket)return;
-      if(fresh && storyValid(fresh) && !seenIds().has(fresh.id)){
-        render(fresh,roll);
-        note(presentation(fresh));
-        return;
-      }
-      const preview = pickUnique(roll,seenIds());
-      if(preview){
-        render(preview,roll);
-        note('A documented story to read while live source research continues…');
-      }else{
-        note('Still researching this combination. No previous story will be repeated.');
-      }
-      // The original asynchronous research remains alive after a preview.
-      void research.then(upgrade).catch(error=>console.warn('Book research unavailable',error));
-    }catch(error){
-      console.warn('Infinite Book discovery failed',error);
-      const fallback=pickUnique(rollDice(query),seenIds());
-      if(fallback){render(fallback);note('Verified stored story · live research unavailable');}
-      else note('Research is unavailable for this combination. Tap Another secret for a fresh draw.');
-    }finally{
-      pending = false;
-      if(nextButton)nextButton.disabled = false;
-      if(queuedQueries.length){const next=queuedQueries.shift();void nextStory(next);}
+    const roll = rollDice(query);
+    // Instant switch: no network, GPT, source search or feed fetch before render.
+    const ready = pickUnique(roll, seenIds());
+    if (ready) {
+      render(ready, roll);
+      note('Ready to read · new source-backed discoveries are being prepared in the background.');
+    } else {
+      note('All prepared stories have been read. Researching another documented discovery…');
     }
+    const acceptNew = story => {
+      // Do not replace a visible story on an unsuspecting reader.
+      if (ready || ticket !== activeStoryTicket || interactedWithStory ||
+        !storyValid(story) || seenIds().has(story.id) || current?.id === story.id) return;
+      render(story, roll);
+      note(story.discoveryMethod === 'gpt-deep'
+        ? 'New sourced historical story · original GPT narrative'
+        : 'New historical discovery · cited source');
+    };
+    void discoverInBackground(roll, acceptNew)
+      .then(acceptNew)
+      .catch(error => console.warn('Book research unavailable', error));
+    refillReadyStories();
   }
   window.addEventListener('quantaphi:search-start', event=>{
     const query=String(event.detail?.query||'').trim();
@@ -408,7 +407,9 @@
         throw new Error('Story discovery configuration is invalid');
       }
       for (const story of [...(catalog.stories || []), ...safeRead(LIVE_CACHE)]) if (storyValid(story)) byId.set(story.id, story);
-      await appendConfiguredFeed();
+      // A missing/slow server feed must never delay the first story card.
+      void appendConfiguredFeed().then(refillReadyStories);
+
       const permalink = new URL(location.href).searchParams.get('secret');
       if (permalink && byId.has(permalink)) {
         render(byId.get(permalink));
@@ -425,6 +426,7 @@
       } else {
         await nextStory(initialQuery||'');
       }
+      refillReadyStories();
     } catch (error) {
       console.warn('Infinite Book failed to initialize', error);
       note('The verified story collection is temporarily unavailable. Search above still works.');
