@@ -1,0 +1,20 @@
+name: Reads and Realms staging tests
+on:
+  push:
+    branches: [feature/reads-realms-sector-index]
+    paths:
+      - 'workers/reads-realms/**'
+      - 'test/reads-realms-index.test.cjs'
+      - '.github/workflows/reads-realms-index.yml'
+jobs:
+  stage-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Workers module syntax
+        run: node --check workers/reads-realms/worker.js
+      - name: Validate bracket and safety behavior
+        run: node --test test/reads-realms-index.test.cjs
