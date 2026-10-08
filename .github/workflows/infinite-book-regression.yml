@@ -21,5 +21,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Reject geography profiles while retaining source-backed discoveries
+      - name: Check writer and gateway syntax
+        run: |
+          node --check infinite-book.js
+          node --check infinite-book-discovery.js
+          node --check workers/infinity-rogers/worker.js
+      - name: Verify rolled research, GPT writing and source checks
         run: node --test test/infinite-book-resilience.test.cjs
