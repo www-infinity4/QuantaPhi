@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "book": "The Infinite Book of Big Secrets",
   "sectors": [
     {
@@ -121,6 +121,42 @@
     {
       "id": 30,
       "name": "Everyday objects & forgotten origins"
+    },
+    {
+      "id": 31,
+      "name": "Radio hardware and receivers"
+    },
+    {
+      "id": 32,
+      "name": "Broadcasting and transmission"
+    },
+    {
+      "id": 33,
+      "name": "Circuits and semiconductors"
+    },
+    {
+      "id": 34,
+      "name": "Early personal computers"
+    },
+    {
+      "id": 35,
+      "name": "Space communications and satellites"
+    },
+    {
+      "id": 36,
+      "name": "Factory machines and robotics"
+    },
+    {
+      "id": 37,
+      "name": "Acoustics and sound engineering"
+    },
+    {
+      "id": 38,
+      "name": "Power plants and energy infrastructure"
+    },
+    {
+      "id": 39,
+      "name": "Consumer electronics and gadgets"
     }
   ],
   "angles": [
@@ -316,6 +352,89 @@
         "nps.gov",
         "smithsonianmag.com",
         "usgs.gov"
+      ]
+    },
+    {
+      "sector": 31,
+      "domains": [
+        "si.edu",
+        "americanhistory.si.edu",
+        "antiquewireless.org",
+        "radiomuseum.org",
+        "ieee.org"
+      ]
+    },
+    {
+      "sector": 32,
+      "domains": [
+        "loc.gov",
+        "fcc.gov",
+        "bbc.co.uk",
+        "npr.org",
+        "americanhistory.si.edu"
+      ]
+    },
+    {
+      "sector": 33,
+      "domains": [
+        "computerhistory.org",
+        "bell-labs.com",
+        "ieee.org",
+        "nist.gov"
+      ]
+    },
+    {
+      "sector": 34,
+      "domains": [
+        "computerhistory.org",
+        "ibm.com",
+        "si.edu",
+        "apple.com"
+      ]
+    },
+    {
+      "sector": 35,
+      "domains": [
+        "nasa.gov",
+        "jpl.nasa.gov",
+        "esa.int",
+        "ieee.org"
+      ]
+    },
+    {
+      "sector": 36,
+      "domains": [
+        "si.edu",
+        "nist.gov",
+        "americanhistory.si.edu",
+        "ieee.org"
+      ]
+    },
+    {
+      "sector": 37,
+      "domains": [
+        "loc.gov",
+        "aes.org",
+        "si.edu",
+        "britannica.com"
+      ]
+    },
+    {
+      "sector": 38,
+      "domains": [
+        "energy.gov",
+        "ge.com",
+        "ieee.org",
+        "nist.gov"
+      ]
+    },
+    {
+      "sector": 39,
+      "domains": [
+        "computerhistory.org",
+        "si.edu",
+        "apple.com",
+        "ibm.com"
       ]
     }
   ],
