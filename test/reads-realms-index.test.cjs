@@ -15,19 +15,37 @@ function load(){
 }
 function fakeDb(count=123){
  const sectors=[{id:1,name:'Energy & electricity',topics:count},{id:2,name:'Technology & computing',topics:9}];
- const subjects=[{id:31,term:'Helium',normalized:'helium',sector_id:1,reviewed:1},
+ const subjects=[
+  {id:31,term:'Helium',normalized:'helium',sector_id:1,reviewed:1},
   {id:32,term:'Hydrogen',normalized:'hydrogen',sector_id:1,reviewed:1},
-  {id:33,term:'Oil',normalized:'oil',sector_id:1,reviewed:1}];
+  {id:33,term:'Oil',normalized:'oil',sector_id:1,reviewed:1}
+ ];
  const calls=[];
- return {calls,prepare(sql){return {bind(...params){calls.push({sql,params});return {
-   async all(){if(sql.includes('GROUP BY s.id'))return {results:sectors};return {results:[]}},
-   async first(){
-    if(sql.includes('FROM rr_topics'))return subjects.find(x=>x.sector_id===params[0]&&(!sql.includes('normalized=?')||x.normalized===params[1])&&(!sql.includes('AND id=?')||x.id===params[1]))||null;
-    if(sql.includes('FROM rr_refinements'))return {id:params[0]||4,label:'History'};
-    if(sql.includes('FROM rr_genres'))return {id:params[0]||1,label:'Mystery',directive:'Factual mystery'};
-    return null;
-   }
-  }};}}};
+ return {
+  calls,
+  prepare(sql){
+   return {
+    bind(...params){
+     calls.push({sql,params});
+     return {
+      async all(){
+       if(sql.includes('GROUP BY s.id'))return {results:sectors};
+       return {results:[]};
+      },
+      async first(){
+       if(sql.includes('FROM rr_topics'))
+        return subjects.find(x=>x.sector_id===params[0] &&
+         (!sql.includes('normalized=?')||x.normalized===params[1]) &&
+         (!sql.includes('AND id=?')||x.id===params[1]))||null;
+       if(sql.includes('FROM rr_refinements'))return {id:params[0]||4,label:'History'};
+       if(sql.includes('FROM rr_genres'))return {id:params[0]||1,label:'Mystery',directive:'Factual mystery'};
+       return null;
+      }
+     };
+    }
+   };
+  }
+ };
 }
 test('worker loads and never mutates wallet tables',()=>{
  const scope=load();assert.equal(typeof scope.handler.fetch,'function');
