@@ -154,7 +154,7 @@ test('one bounded automatic repair is scored against the original image',()=>{
  assert.doesNotMatch(worker,/variations of the prompt|const variants=\[/);
  assert.doesNotMatch(worker.slice(worker.indexOf(' const executionOnly='),worker.indexOf(' let lastError=null;')),/alien-language|pseudo-words|symbol rows/i);
  assert.match(worker,/Paint only the scene, objects, photography and visual design/);
- assert.match(source('index.html'),/phi-image-builder\.js\?v=20261008-minimal-image1/);
+ assert.match(source('index.html'),/phi-image-builder\.js\?v=20261008-minimal-image2/);
 });
 
 test('FLUX adapter sends true text-only requests and scales reference pixels, not just byte size',()=>{
@@ -231,7 +231,7 @@ test('image render completion never references a removed result Star button',()=
  assert.match(builder,/emit\('build:done',artifact\)/);
  const worker=source('workers/infinity-rogers/worker.js');
  assert.match(worker,/const mime=header\.startsWith/);
- assert.match(worker,/data:"\+mime\+";base64,/);
+ assert.match(worker,/dataURI:"data:"\+mime\+";base64,"\+b64/);
 });
 test('Asteroid card remains visible while evidence and GPT writing run',()=>{
  const book=source('infinite-book.js'),css=source('phi-electric-theme.css');
