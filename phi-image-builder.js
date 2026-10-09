@@ -87,16 +87,51 @@ async function build(){
   step(phase++,'done');
   step(phase,'active','Image renderer in progress');
   notice([warning,'Sending artwork to the actual image-generation service.'].filter(Boolean).join(' '));
-  const rendered=await renderer.render({description,mode,source,design,prompt,exactText});
+  let rendered=await renderer.render({description,mode,source,design,prompt,exactText});
   step(phase++,'done');
-  step(phase,'active','Examining finished pixels');
+  step(phase,'active','Examining finished pixels and lettering');
   rawResult=rendered.src;
   result=exactText?await renderer.composeExactText(rawResult,exactText):rawResult;
-  const size=await renderer.validate(result);
-  artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search};
-  let review=null;
+  let size=await renderer.validate(result);
+  let review=null,autoRefined=false;
   try{review=await renderer.review({src:result,description,mode,exactText})}
   catch(error){warning=[warning,'Visual reviewer unavailable; result not graded.'].filter(Boolean).join(' ')}
+  const score=review?.score;
+  const shouldRefine=review&&(
+   review.status==='needs_work'||(Number.isFinite(score)&&score<75)
+  )&&Array.isArray(review.issues)&&review.issues.length>0;
+  if(shouldRefine){
+   // One automatic quality-improvement pass, not an endless rendering loop.
+   // Never manufacture approval scores or bypass a provider rejection.
+   notice('The visual reviewer found problems. Improving the image once before finishing…');
+   const faults=review.issues.slice(0,4).map(x=>x.fix||x.problem).filter(Boolean).join('; ');
+   const repair=[renderer.modePrompt(mode),
+    'QUALITY REPAIR: Keep the same subject and good composition. Correct these observed defects: '+faults,
+    review.repairPrompt||'',
+    'Absolutely no fabricated letters, fake headlines, pseudo-writing, symbol-like text, labels or word-shaped textures. Any caption is composed by the browser separately. Leave clean blank space where lettering belongs.',
+    'Original request: '+description,'Original art direction: '+prompt].filter(Boolean).join('\n').slice(0,7400);
+   try{
+    const prior=await renderer.asBlob(rawResult);
+    const candidate=await renderer.render({description,mode,source:prior,design:null,prompt:repair,exactText});
+    const candidateRaw=candidate.src;
+    const candidateResult=exactText?await renderer.composeExactText(candidateRaw,exactText):candidateRaw;
+    const candidateSize=await renderer.validate(candidateResult);
+    const candidateReview=await renderer.review({src:candidateResult,description,mode,exactText});
+    const firstScore=Number.isFinite(review.score)?review.score:-1;
+    const nextScore=Number.isFinite(candidateReview?.score)?candidateReview.score:-1;
+    const acceptable=candidateReview&&(
+      nextScore>firstScore ||
+      (nextScore===firstScore && review.status!=='good' && candidateReview.status==='good')
+    );
+    if(acceptable){
+     rawResult=candidateRaw;result=candidateResult;size=candidateSize;
+     rendered=candidate;review=candidateReview;autoRefined=true;
+    }else warning=[warning,'The original was retained because the revision did not receive a better visual review.'].filter(Boolean).join(' ');
+   }catch(error){
+    warning=[warning,'Automatic refinement could not be verified; the original rendered image was kept.'].filter(Boolean).join(' ');
+   }
+  }
+  artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search,autoRefined};
   artifact.review=review;
   if(review)window.PhiImageLearning?.record(artifact,'review',{issues:review.issues});
   const audit=$('.pi-audit'),title=audit.querySelector('.pi-audit-title'),summary=audit.querySelector('.pi-audit-summary'),issues=audit.querySelector('.pi-audit-issues');
