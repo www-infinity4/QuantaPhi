@@ -213,7 +213,8 @@ test('Asteroid presents GPT evidence narratives with a real reviewed image behin
  assert.match(book,/renderer\.review\(\{src:generated\.src/);
  assert.match(book,/review\?\.status==='good'/);
  assert.match(book,/bridge\.attachGenerated\(story,blob/);
- assert.match(bridge,/if\(metadata\?\.review\?\.status!=='good'/);
+ assert.match(bridge,/panel\.dataset\.review=approved/);
+ assert.doesNotMatch(bridge,/throw Error\('Image has not passed visual review'\)/);
  assert.match(style,/ib-asteroid-rock/);
  assert.match(style,/ib-asteroid-shade/);
  assert.match(style,/ib-illustration-image/);

@@ -78,7 +78,9 @@ async function refresh(){
   currentObjectUrl=URL.createObjectURL(record.blob);
   picture.src=currentObjectUrl;
   picture.alt='Created illustration for '+(record.storyTitle||storyTitle());
-  description.textContent='Your story illustration · saved on this device';
+  const approved=record.review?.status==='good'&&Number(record.review.score)>=75;
+  description.textContent=approved?'Your story illustration · reviewed and saved':'Your story illustration · '+(record.review?.status==='needs_work'?'review found details to improve':'visual quality not yet confirmed');
+  panel.dataset.review=approved?'good':record.review?.status||'uncertain';
   panel.hidden=false;
   panelActions.hidden=false;
   visibleIllustration={storyId:id,artifactId:record.artifactId,createdAt:record.createdAt};
@@ -202,7 +204,8 @@ async function hasStored(id){
 }
 async function attachGenerated(story,blob,metadata={}){
  if(!story?.id||!blob||!['image/jpeg','image/png','image/webp'].includes(blob.type))throw Error('Invalid automatically reviewed story image');
- if(metadata?.review?.status!=='good'||!(Number(metadata.review.score)>=75))throw Error('Image has not passed visual review');
+ // Preserve successfully rendered artwork, including drafts; never label an uncertain review approved.
+ if(!metadata.review)metadata.review={status:'uncertain',score:null,issues:[]};
  if(await hasStored(story.id))return {ok:true,reused:true};
  await write({storyId:story.id,storyTitle:String(story.title||'').slice(0,180),
   artifactId:'book-auto-'+String(story.id),blob,review:metadata.review,renderer:metadata.renderer,createdAt:new Date().toISOString()});

@@ -162,10 +162,33 @@ body.oracle-quanta #result .qdata-select {justify-content:flex-start;text-align:
 }
 
 /* Billboard proportions: quiet lavender controls sized to the actual label. */
-body.oracle-quanta :is(#infiniteBook,#phiImageBuilder,#fredSpacesRadio) :is(.ib-next,.pi-primary,.fs-next) {
+body.oracle-quanta :is(#result,#infiniteBook,#phiImageBuilder,#fredSpacesRadio) :is(.qreader-actions button,.ib-next,.pi-primary,.fs-next) {
   width:auto!important;max-width:100%!important;min-height:36px!important;
 }
 body.oracle-quanta #result .qdata-actions {width:100%;flex:1 1 100%}
 body.oracle-quanta :is(.qzone,.mcard,.pi-panel,.fs-card,.widgetphi-stock-card,.ib-story) {
   border-radius:22px;
+}
+
+/* Media Star: topics above playback, separate save and website-building groups. */
+body.oracle-quanta #fredSpacesRadio .fs-media-star .fs-tags {
+  margin:14px 0 16px;padding:0 0 13px;border-bottom:1px solid #b78d4259;
+  display:flex;flex-wrap:wrap;gap:8px;
+}
+body.oracle-quanta #fredSpacesRadio .fs-media-star .fs-control-label {
+  margin:17px 0 8px;font-size:12px;line-height:1.4;color:#563907;font-weight:850;
+}
+body.oracle-quanta #fredSpacesRadio .fs-media-star :is(.fs-actions,.fs-builds) {
+  display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;
+}
+body.oracle-quanta #fredSpacesRadio .fs-media-star :is(.fs-actions,.fs-builds) button {
+  width:100%!important;min-height:38px!important;padding:8px 9px!important;
+}
+body.oracle-quanta #fredSpacesRadio .fs-media-star .fs-embed-row {
+  margin:11px 0 16px;padding-bottom:15px;border-bottom:1px solid #b78d4259;
+}
+body.oracle-quanta #fredSpacesRadio .fs-media-star .fs-embed {
+  min-height:38px!important;padding:8px 12px!important;
+  background:var(--phi-control-surface)!important;color:var(--phi-control-ink)!important;
+  border:1px solid var(--phi-control-border)!important;box-shadow:0 2px 7px #60309020!important;
 }

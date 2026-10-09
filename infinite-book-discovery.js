@@ -263,7 +263,7 @@ async function scoutQueries(plan,roll){
  ].join('\n');
  try{
   const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
-   body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-scout',verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass}}})},11000);
+   body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-scout',verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass}}})},25000);
   if(data?.ok===false)return [];
   const obj=jsonAnswer(textAnswer(data));
   return (Array.isArray(obj?.queries)?obj.queries:[]).filter(x=>typeof x==='string')
@@ -327,7 +327,7 @@ async function writeSecretStory(sources,plan,roll){
   'Use retrieved page text for stronger factual grounding when available. Never claim an inaccessible full page was read. Return insufficient when sources cannot support the event.'
  ].join('\n');
  const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
-  body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,combination:plan.combination,sourceCount:sources.length}}})},20000);
+  body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,combination:plan.combination,sourceCount:sources.length}}})},45000);
  if(data?.ok===false)return null;
  const obj=jsonAnswer(textAnswer(data));
  if(!obj||obj.insufficient||!legitimateNarrative(obj))return null;
@@ -434,7 +434,7 @@ async function writeWikipediaStory(page,plan,roll){
  try{
   const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
    body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',
-    verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},21000);
+    verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},45000);
   if(data?.ok===false)return null;
   const out=jsonAnswer(textAnswer(data));
   if(!out||out.insufficient||!legitimateNarrative(out))return null;

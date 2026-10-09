@@ -199,7 +199,7 @@
       const b=button(tag,()=>chooseTopic(tag),"fs-topic");
       b.setAttribute("aria-expanded",String(selectedTopic===tag));tags.append(b);
     }
-    card.append(tags);
+    card.insertBefore(tags,stream);
     if(selectedTopic){
       const chooser=node("section","fs-topic-panel");
       chooser.setAttribute("aria-label","Explore "+selectedTopic+" with Phi");
@@ -218,13 +218,17 @@
         const b=button(phi,()=>routeTopic(phi),"fs-tool");
         b.setAttribute("aria-label",selectedMode+" "+selectedTopic+" with "+phi);tools.append(b);
       }
-      chooser.append(tools);card.append(chooser);
+      chooser.append(tools);card.insertBefore(chooser,stream);
     }
+    card.append(node("h3","fs-control-label","Save & share"));
     const actions=node("div","fs-actions");
     actions.append(button(stars.has(active.id)?"★ Starred":"☆ Star",favorite),button("Share +0.1 ★",share),button("Collect +0.1 ★",collect));card.append(actions);
+    card.append(node("h3","fs-control-label","Build this episode with"));
     const builds=node("div","fs-builds");
-    ["InfinityPhi","OmniPhi","QuantaPhi"].forEach(t=>builds.append(button("Build with "+t,()=>build(t),"fs-phi")));
-    builds.append(button("Embed Media Star",()=>{void copyMediaStarEmbed()},"fs-phi fs-embed"));card.append(builds);
+    ["InfinityPhi","OmniPhi","QuantaPhi"].forEach(t=>builds.append(button(t,()=>build(t),"fs-phi")));
+    card.append(builds);
+    const embedRow=node("div","fs-embed-row");
+    embedRow.append(button("Embed Media Star",()=>{void copyMediaStarEmbed()},"fs-phi fs-embed"));card.append(embedRow);
     const nextRow=node("div","fs-bottom");
     const hasCurated=episodes.some(e=>e.id!==FIRST&&isReplayLink(e));
     const unlock=button(busy?"Confirming StarCoin charge…":"Buy next curated episode · 1 ★",more,"fs-next");

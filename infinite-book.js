@@ -182,7 +182,7 @@
     host.replaceChildren();
     for(const option of options){const b=E('button','ib-research-branch',option.label);b.type='button';b.dataset.bookAction='research';b.dataset.researchQuery=option.query.slice(0,350);b.dataset.researchBranch=option.branch.slice(0,200);host.append(b)}
   }
-  // Review real pixels once. Never disguise an unapproved image as a finished illustration.
+  // Keep every successfully decoded illustration with its honest review status.
   let artBusy=false,artRequested=null;
   const artRunning=new Set();
   window.addEventListener('phi:book:image-bridge-ready',()=>{if(current&&(root.dataset.context==='home'||window.PhiInfiniteBookDiscover?.eligibleNarrative?.(current)))scheduleAutoIllustration(current)});
@@ -210,12 +210,14 @@
             '. No fabricated events, written words, glyphs, signage, labels, movie titles or pretend text. One cohesive vivid realistic composition.';
           if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(home?'Creating and checking this opening story’s image…':'GPT story sourced · creating and checking its illustration…');
           const generated=await renderer.render({description:intention,mode:'Image',source:null,design:null,prompt:intention,exactText:''});
-          const review=await renderer.review({src:generated.src,description:intention,mode:'Image',exactText:''});
+          let review;
+          try{review=await renderer.review({src:generated.src,description:intention,mode:'Image',exactText:''})}
+          catch(error){review={status:'uncertain',score:null,issues:[],error:String(error?.message||error).slice(0,180)}}
           const approved=review?.status==='good'&&Number(review?.score)>=75&&!(review?.issues||[]).some(i=>i.severity==='high');
-          if(!approved){if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(home?'The opening story is ready, but its image did not pass visual review.':'The story is ready, but its generated illustration did not pass visual review.');continue}
+          await renderer.validate(generated.src);
           const blob=await renderer.asBlob(generated.src);
           await bridge.attachGenerated(story,blob,{renderer:generated.renderer,review});
-          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(home?'Opening story image generated, reviewed and saved to this device.':'Sourced GPT story · original illustration generated, reviewed, and attached.');
+          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(approved?(home?'Opening story image generated, reviewed and saved to this device.':'Sourced GPT story · original illustration generated, reviewed, and attached.'):'Story illustration saved · '+(review.status==='needs_work'?'visual review found details to improve.':'visual quality not yet confirmed.'));
         }catch(error){
           if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(error?.code==='image_daily_cap'?'Story ready. Image service daily limit reached.':'Story ready. Automatic illustration could not be approved or saved: '+String(error?.message||error).slice(0,130));
         }finally{artRunning.delete(story.id)}
@@ -341,7 +343,7 @@
   // The screen reads from ready stories first. Research never blocks a click.
   const READY_TARGET = 8;
   const MAX_RESEARCH_IN_FLIGHT = 2;
-  const RESEARCH_DEADLINE_MS = 52000;
+  const RESEARCH_DEADLINE_MS = 120000;
   const researchFlights = new Map();
   let refillRunning = false;
   function readyCount() {
