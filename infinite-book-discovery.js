@@ -277,7 +277,17 @@ function detailsSupported(detail,sources,focus){
  return words.filter(w=>evidence.some(line=>line.includes(w))).length>=2 &&
   evidence.every(line=>words.some(w=>line.includes(w)));
 }
+async function readPublicSourcePages(sources){
+ try{
+  const pages=sources.slice(0,4).map(x=>({url:x.url,title:x.title}));
+  const data=await request('https://infinity-rogers.marvaseater.workers.dev/v1/research-source-excerpts',{
+   method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
+   body:JSON.stringify({sources:pages})},8500);
+  return (Array.isArray(data?.sources)?data.sources:[]).filter(x=>x?.sourceType==='retrieved-page-text'&&x.excerpt?.length>300).slice(0,4);
+ }catch(error){console.warn('Public source-page extraction unavailable; relying on cited search excerpts',error);return []}
+}
 async function writeSecretStory(sources,plan,roll){
+ const pageEvidence=await readPublicSourcePages(sources);
  const prompt=[
   'You are writing Infinity Reads & Realms of mystery, adventure and suspense. Write an ORIGINAL enjoyable historical nonfiction story card about ONE concrete unusual event, discovery, demonstration, artifact, overlooked person-specific incident or experiment. Never a general biography.',
   'Example of the required difference: "Nikola Tesla" is NOT a story; his 1898 radio-controlled boat demonstration IS the kind of precise event we want, but do not choose it unless the actual evidence here concerns that event.',
@@ -289,7 +299,9 @@ async function writeSecretStory(sources,plan,roll){
   'Quote no sentences verbatim. No invented dates, dialogue, motives, achievements, conspiracies or scientific claims. Mark legends and contested claims accurately.',
   'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 original words","full":"100-210 original words in two paragraphs","detail":"short exact surprising fact","status":"documented|reported|contested|corrected myth|folklore","evidence_urls":["exact URL of source 1","exact URL of source 2"]}.',
   'Rolled combination '+plan.combination+'; indexed topic '+(plan.indexedWord||plan.focus)+'; story refinement '+(plan.realm||plan.angle)+'; story direction '+(plan.direction||'')+'; source class '+plan.sourceClass+'; focus '+plan.focus+'. Storytelling lens '+(plan.storytellingRealm||'History')+' shapes narrative structure ONLY. Do not invent facts, quotes, fictional experiences or unresolved outcomes.',
-  'Sources are snippets, not verified complete pages: '+JSON.stringify(sources)
+  'Search results are snippets, not whole documents: '+JSON.stringify(sources),
+  'Retrieved public source-page excerpts (the only directly fetched page passages): '+JSON.stringify(pageEvidence),
+  'Use retrieved page text for stronger factual grounding when available. Never claim an inaccessible full page was read. Return insufficient when sources cannot support the event.'
  ].join('\n');
  const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
   body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,combination:plan.combination,sourceCount:sources.length}}})},20000);
@@ -303,7 +315,7 @@ async function writeSecretStory(sources,plan,roll){
  return {title:clean(obj.title).slice(0,180),summary:clean(obj.summary).slice(0,650),
   full:String(obj.full).trim().slice(0,2300),detail:clean(obj.detail).slice(0,240),
   status:['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported',
-  supported:matched};
+  supported:matched,fullEvidenceRead:pageEvidence.length};
 }
 async function findSearch({roll,catalog,seen,focus=''}) {
  const plan=sourcePlan(roll,catalog,focus);
@@ -351,7 +363,7 @@ async function findSearch({roll,catalog,seen,focus=''}) {
    storytellingRealm:plan.storytellingRealm,storytellingRealmNumber:Number(roll.storytellingRealmNumber)||0,
    bracketKey:roll.bracketKey||'',
    reviewedExcerpts:ranked.length,
-   combination:plan.combination,status:written.status+' · research synthesis from search excerpts',
+   combination:plan.combination,status:written.status+(written.fullEvidenceRead?' · retrieved-page research':' · research synthesis from search excerpts'),
    sourceTitle:lead.title,sourceUrl:lead.url,
    sources:written.supported.map(x=>({title:x.title,url:x.url})),discoverySource:'live',discoveryMethod:'gpt-deep'};
  }catch(error){console.warn('Infinity Reads & Realms writer unavailable',error);}
