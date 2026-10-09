@@ -26,3 +26,51 @@
 .fs-phi{background:#fff9df;color:#332806;border:1px solid #a8872f;border-radius:22px}
 .fs-next{background:#256941;color:#fff;border-radius:22px}
 .fs-free{border-radius:15px}
+
+
+/* Electric gold replay panel: playback launches the actual X Space, never a fake stream. */
+#fredSpacesRadio .fs-card{position:relative;border:1px solid #e1aa26;border-radius:25px;padding:19px;background:radial-gradient(circle at 97% 3%,#fffef0,transparent 46%),linear-gradient(145deg,#ffef9c,#f6cb43 68%,#efb929);box-shadow:0 0 0 1px #fff1ac,0 0 24px #ffcd43a8,0 12px 32px #ab7c1f4f;color:#362402;overflow:hidden}
+#fredSpacesRadio .fs-card::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,#bd7b08,#fff8c1,#ffcc30,#bd7b08)}
+#fredSpacesRadio .fs-eyebrow{display:inline-flex;align-items:center;min-height:28px;border:1px solid #c79a24;background:#fff9d4;border-radius:999px;padding:6px 11px;font-size:10px;letter-spacing:.07em;color:#744d04}
+#fredSpacesRadio .fs-heading h2{font-size:clamp(21px,5.6vw,27px);line-height:1.17;margin:12px 0 7px;color:#3b2703;text-shadow:0 1px #fff6c4}
+#fredSpacesRadio .fs-host{color:#63420b}
+#fredSpacesRadio .fs-free{display:inline-flex;min-height:35px;align-items:center;border-radius:999px;border:1px solid #94ae58;background:#f9ffe5;padding:8px 12px;color:#37531b}
+#fredSpacesRadio .fs-summary{font-size:14px;line-height:1.6;color:#4a3312}
+#fredSpacesRadio .fs-stream{display:flex;flex-direction:column;gap:10px;align-items:stretch;padding:13px;background:linear-gradient(140deg,#261b13,#493312);border:1px solid #e3ac29;border-radius:22px;box-shadow:inset 0 1px 0 #ffffff2e,0 0 21px #f9c3379e;color:#fff8d9}
+#fredSpacesRadio .fs-player{display:flex;gap:13px;align-items:center;min-height:124px}
+#fredSpacesRadio .fs-play{flex:0 0 auto;width:74px;height:74px;display:flex;align-items:center;justify-content:center;padding-left:5px;background:radial-gradient(circle at 30% 20%,#fff4c9,#f8c840 55%,#b97813);border:2px solid #ffefa7;border-radius:50%;color:#3e2603;text-decoration:none;font-size:30px;box-shadow:0 0 0 4px #9a682355,0 0 27px #fbc640b6;transition:transform .15s,box-shadow .15s}
+#fredSpacesRadio .fs-play:hover,#fredSpacesRadio .fs-play:focus-visible{box-shadow:0 0 0 4px #fff7d6,0 0 31px #ffe08c;transform:scale(1.035)}
+#fredSpacesRadio .fs-play:active{transform:scale(.97)}
+#fredSpacesRadio .fs-player-deck{min-width:0;flex:1;display:grid;gap:8px}
+#fredSpacesRadio .fs-player-name{font-size:16px;color:#fff}
+#fredSpacesRadio .fs-player-sub{font-size:11px;line-height:1.4;color:#ecdcae}
+#fredSpacesRadio .fs-player-track{display:flex;align-items:center;gap:4px;height:26px}
+#fredSpacesRadio .fs-player-track i{display:block;flex:1;max-width:8px;height:8px;background:linear-gradient(180deg,#ffeeb5,#f5c238);border-radius:5px;box-shadow:0 0 6px #ffe07f85}
+#fredSpacesRadio .fs-player-track i:nth-child(3n+1){height:20px}
+#fredSpacesRadio .fs-player-track i:nth-child(4n+2){height:13px}
+#fredSpacesRadio .fs-player-track i:nth-child(5n+4){height:24px}
+#fredSpacesRadio .fs-player-timing{display:flex;align-items:center;justify-content:space-between;font-size:11px;color:#f2e4b9;gap:10px}
+#fredSpacesRadio .fs-source{align-self:flex-start;color:#fff3b9;background:#634419;border:1px solid #c89b47;border-radius:999px;padding:9px 12px;min-height:40px}
+#fredSpacesRadio .fs-play-disclaimer{font-size:11px;color:#f0daa0;line-height:1.5}
+#fredSpacesRadio .fs-tags{margin-top:13px;gap:8px}
+#fredSpacesRadio .fs-topic{width:auto;min-height:42px;padding:10px 15px;background:linear-gradient(145deg,#fffdfa,#ffe7a9);border:1px solid #bc8830;border-radius:999px;font-size:13px;color:#603707;box-shadow:0 0 13px #efbd4283}
+#fredSpacesRadio .fs-topic[aria-expanded="true"]{background:linear-gradient(130deg,#684011,#46270c);color:#fff8e0;border-color:#f6ca55;box-shadow:0 0 17px #c88b20}
+#fredSpacesRadio .fs-topic-panel{border:1px solid #e6c47a;border-radius:20px;padding:13px;background:linear-gradient(150deg,#fffef3,#fff1c2);box-shadow:0 0 15px #e7b43d81;margin:10px 0}
+#fredSpacesRadio .fs-topic-header{display:flex;align-items:center;justify-content:space-between;gap:10px}
+#fredSpacesRadio .fs-topic-header strong{font-size:15px;color:#5d3610}
+#fredSpacesRadio .fs-topic-panel p{margin:8px 0 11px;font-size:12px;line-height:1.5;color:#69440d}
+#fredSpacesRadio .fs-mode-row,#fredSpacesRadio .fs-tool-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+#fredSpacesRadio .fs-mode,#fredSpacesRadio .fs-tool{min-height:44px;padding:9px 6px;background:#fff;border:1px solid #cba456;color:#593709;box-shadow:0 0 11px #e9ad4a66}
+#fredSpacesRadio .fs-mode[aria-pressed="true"]{background:#654011;color:#fff0c1;border-color:#a77412}
+#fredSpacesRadio .fs-tool{background:linear-gradient(140deg,#fff,#f7eaff);border-color:#c79ce4;color:#522477}
+#fredSpacesRadio .fs-topic-close{min-height:34px;font-size:12px;padding:7px 12px}
+#fredSpacesRadio .fs-actions,#fredSpacesRadio .fs-builds{gap:8px}
+#fredSpacesRadio .fs-actions button{min-height:48px;background:linear-gradient(150deg,#fffef5,#fff1c6);border-color:#c6a049;box-shadow:0 0 11px #f7ca5c7d}
+#fredSpacesRadio .fs-builds .fs-phi{background:linear-gradient(150deg,#fff,#f4e9ff);color:#5b2883;border:1px solid #cea1ec;box-shadow:0 0 14px #a66ce778}
+#fredSpacesRadio .fs-bottom{display:grid;gap:9px;margin-top:17px}
+#fredSpacesRadio .fs-bottom .fs-next{width:100%;min-height:55px;grid-column:1;background:linear-gradient(140deg,#286c47,#135936);color:#fff;border:1px solid #95e9b5;box-shadow:0 0 21px #37b87898}
+#fredSpacesRadio .fs-bottom .fs-next:disabled{background:#726e54;border-color:#968f6e;box-shadow:none}
+#fredSpacesRadio .fs-balance{font-size:12px;color:#594118}
+#fredSpacesRadio .fs-status{border-top:1px solid #ae853d79;padding-top:10px;font-size:12px;line-height:1.55;color:#6d4709}
+@media(max-width:380px){#fredSpacesRadio .fs-card{padding:13px}#fredSpacesRadio .fs-player{gap:9px}#fredSpacesRadio .fs-play{width:62px;height:62px}#fredSpacesRadio .fs-player-name{font-size:14px}#fredSpacesRadio .fs-mode-row,#fredSpacesRadio .fs-tool-row{gap:5px}#fredSpacesRadio .fs-mode,#fredSpacesRadio .fs-tool{font-size:12px}}
+@media(prefers-reduced-motion:reduce){#fredSpacesRadio .fs-play{transition:none}}
