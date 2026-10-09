@@ -168,8 +168,8 @@ async function build({retryRender=false}={}){
   }else if(error?.code==='image_input_invalid'){
    notice('The renderer could not accept this request. Check the description and uploaded images, then build again. Your inputs are preserved.');
    $('[data-pi-action="back"]').textContent='Edit description or photo';
-  }else if(error?.code==='image_daily_cap'){
-   notice('Image generation limit reached: 20 completed renders per UTC day for this image identity. Your description and GPT art direction are saved; another request cannot succeed before the allowance resets.');
+  }else if(error?.status===429||error?.code==='provider_rate_limited'){
+   notice('The image provider is temporarily busy or has a service-level limit. The site has no 20-image daily ceiling. Your description is saved and can be retried.');
    $('[data-pi-action="back"]').textContent='Back to saved description';
   }else{
    const transient=phase===2&&(error?.code==='image_render_timeout'||error?.code==='image_render_network'||error?.code==='image_render_bad_response'||error?.status>=500);
