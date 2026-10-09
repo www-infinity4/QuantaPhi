@@ -66,6 +66,20 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 #result button:active{transform:scale(.98)}
 #result .overviewShare{margin-top:10px;padding:10px 15px;max-width:100%;background:#5f259f;color:white}
 @media(prefers-reduced-motion:reduce){#result button{transition:none}}
+
+/* Oracle research actions: each zone can contribute a scoped, non-minting refinement. */
+#result .qzoneOrange li,#result .qzoneBlue li{margin:10px 0;line-height:1.55}
+#result .qbranch-actions{display:inline-flex;gap:7px;flex-wrap:wrap;margin:5px 0 5px 8px}
+#result .qbranch-actions :is(button,a),#result .qregion-act,
+#result .qassim-actions :is(button,a){appearance:none;display:inline-flex;align-items:center;justify-content:center;border:1px solid #bf9ce9;border-radius:999px;background:linear-gradient(145deg,#fefbff,#ecdfff);color:#542783;font:700 12px/1.3 inherit;text-decoration:none;padding:8px 12px;min-height:34px;box-shadow:0 0 8px #9c62e455;cursor:pointer}
+#result .qregion-act{margin:6px 0 0 5px}
+#result .qassim-package{list-style:none;margin:12px 0;padding:16px;border:1px solid #ae76ff;border-radius:19px;background:linear-gradient(125deg,#32115d,#22103e);box-shadow:inset 0 0 24px #7534b52a,0 0 15px #8e4cde50}
+#result .qassim-package strong{display:block;font-size:17px}
+#result .qassim-package p{margin:8px 0;line-height:1.5}
+#result .qassim-package small{display:block;color:#ddc9fc;line-height:1.5}
+#result .qassim-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+#result .qassim-count{display:block;color:#d7c4ee;font-size:11px;line-height:1.5;margin-top:10px}
+#result .qzonePurple #qPurpleList{padding:0;list-style:none}
 </style><style id="quantWalletStyle">
 .qwalletPanel{position:fixed;inset:0;z-index:9999;background:#f7f3fb;color:#21172b;padding:16px;overflow:auto}.qwalletHead{display:flex;align-items:center;justify-content:space-between;gap:12px}.qwalletHead h2{margin:0}.qwalletClose{border:0;border-radius:12px;padding:10px 14px;font-weight:900}.qwalletTabs{display:flex;gap:8px;margin:18px 0}.qwalletTabs button{flex:1;border:0;border-radius:14px;padding:12px;font-weight:900}.qwalletBox{background:#fff;border:1px solid #ddd2e8;border-radius:18px;padding:16px;margin-top:12px}.qwalletBox label{display:block;font-weight:800;margin:12px 0 5px}.qwalletBox input{box-sizing:border-box;width:100%;padding:12px;border:1px solid #b9a9c9;border-radius:12px;font-size:16px}.qwalletPrimary{width:100%;margin-top:14px;border:0;border-radius:14px;padding:13px;background:#5f259f;color:#fff;font-weight:900}.qwalletId{overflow-wrap:anywhere;font-family:monospace;background:#f3edf8;padding:12px;border-radius:12px}.qwalletMsg{margin-top:12px;font-weight:700}
 .book-shelf-link{margin:8px 0 16px}.book-shelf-link a{display:block;border-radius:999px;background:#fff4b8;border:1px solid #e7d17d;color:#382400;text-align:center;text-decoration:none;font-weight:900;padding:12px 14px}</style><script src="https://www-infinity4.github.io/C13b0/unified-token-count.js?v=20261002-stable3"></script><script src="asset-balances.js?v=20261004-authoritative1"></script><script src="cloud-wallet-client.js?v=20261005-legacy-floor2"></script><script src="music-quant-store.js?v=20261005-org-runtime1"></script><script src="music-quant-cloud.js?v=20261005-org-runtime1"></script><script src="wallet-runtime.js?v=20261008-spinwallet5" data-control-phi-wallet-only="true"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"992ccaa311754974becbcebf74de1b34"}'></script><script src="search-wallet-sync.js?v=20261005-pairedmint1"></script><script src="star-coin-cloud.js?v=20261008-research-spins2"></script><script defer src="domain-health.js?v=20261004-org7"></script><style id="shoplcShirtStyle">
@@ -427,8 +441,8 @@ function renderFivePartOverview(main,q,evidence){
  }
  const chips=''; // Ranked buttons are generated from complete owned history.
  const yellow='<ul id="qYellowDataList" class="qDataLinks">'+sections.yellow.map(x=>{const term=String(x.value||'').trim();return term?'<li><a href="'+esc(extractionPermalink(term))+'" title="Search QuantaPhi for '+esc(term)+'">'+esc(term)+'</a></li>':''}).join('')+'</ul>';
- const blue='<ul>'+sections.blue.map(x=>'<li><strong>'+esc(x.region)+':</strong> '+esc(x.contribution)+'</li>').join('')+'</ul>';
- const orange='<ul>'+sections.orange.map(x=>'<li><strong>'+esc(x.label)+':</strong> '+esc(x.value)+(x.source_indexes&&x.source_indexes.length?'<small> · sources '+x.source_indexes.map(n=>'#'+(n+1)).join(', ')+'</small>':'')+'</li>').join('')+'</ul>';
+ const blue='<ul>'+sections.blue.map(x=>{const topic=String(x.region||'Research input').trim(),detail=String(x.contribution||'').trim();return '<li><strong>'+esc(topic)+':</strong> '+esc(detail)+' <button class="qregion-act" type="button" data-qinput="'+encodeURIComponent(topic+': '+detail)+'">Use in research</button></li>'}).join('')+'</ul>';
+ const orange='<ul>'+sections.orange.map(x=>{const label=String(x.label||x.aim||'Related').trim(),value=String(x.value||x.reason||'').trim();if(!value)return '';return '<li><strong>'+esc(label)+':</strong> '+esc(value)+(x.source_indexes&&x.source_indexes.length?'<small> · sources '+x.source_indexes.map(n=>'#'+(n+1)).join(', ')+'</small>':'')+' <span class="qbranch-actions"><button type="button" data-qbranch="'+encodeURIComponent(value)+'">Compare</button><a href="/infinity-phi/?q='+encodeURIComponent((q+' '+value).slice(0,250))+'&intent=build">Build</a></span></li>'}).join('')+'</ul>';
  const purple='<ul id="qPurpleList">'+((sections.purple&&sections.purple.length)?sections.purple.map(x=>'<li><strong>'+esc((x.type||'conceptual').toUpperCase())+(x.history_query?' · '+esc(x.history_query):'')+':</strong> '+esc(x.relationship)+(x.bridge?' — '+esc(x.bridge):'')+'</li>').join(''):'<li>Assimilating search history…</li>')+'</ul>';
  return '<section class="qzone qzoneRed"><h3>'+(sections.sourceFallback?'Overview':'AI Overview')+'</h3>'+String(sections.red.overview||'').split(/\n\s*\n/).filter(Boolean).flatMap(p=>{const s=String(p).match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g)||[p],out=[];for(let i=0;i<s.length;i+=3)out.push(s.slice(i,i+3).join(' ').trim());return out}).filter(Boolean).map(p=>'<p>'+esc(p)+'</p>').join('')+'</section>'+
  '<section class="qzone qzoneYellow"><h3>Data extraction</h3>'+yellow+'</section>'+
@@ -541,7 +555,17 @@ async function loadHistoryAssimilation(q,currentSections){
  try{return await window.PhiAssimilation?.load?.(q,currentSections)}
  catch(error){console.warn('Assimilation deferred',error);const list=document.getElementById('qPurpleList');if(list)list.innerHTML='<li>Cloud history temporarily unavailable; no saved Quants were changed.</li>'}
 }
-function activateFivePartOverview(){const b=document.getElementById('qZoneBuild'),i=document.getElementById('qZoneInput');b?.addEventListener('click',()=>{const v=i.value.trim(),primary=document.getElementById('q').value.trim();if(v&&primary){window.__qInputExtension={primary,supporting:v};try{sessionStorage.setItem('quantaPhiInputExtensionV1',JSON.stringify({primary,supporting:v,created_at:new Date().toISOString()}))}catch(_){}void search({refine:true})}});if(!window.__qAssimilationClickBound){window.__qAssimilationClickBound=true;document.addEventListener('click',e=>{const x=e.target.closest?.('[data-assimilate]');if(!x)return;e.preventDefault();const prior=decodeURIComponent(x.dataset.assimilate),cur=document.getElementById('q').value.trim();try{sessionStorage.setItem('quantaPhiAssimilationV1',JSON.stringify({primary:cur,supporting:prior,created_at:new Date().toISOString()}))}catch(_){}window.__qAssimilation={primary:cur,supporting:prior};void Promise.resolve(window.QuantaResearch.include?.(window.__qActiveTokenId,prior)).catch(error=>console.warn('Research assimilation link deferred',error)).then(()=>search({refine:true}))},true)}}
+function activateFivePartOverview(){
+ if(!window.__qZoneResearchActionsBound){window.__qZoneResearchActionsBound=true;document.addEventListener('click',event=>{
+  const compare=event.target.closest?.('[data-qbranch]'),input=event.target.closest?.('[data-qinput]');if(!compare&&!input)return;
+  event.preventDefault();const q=document.getElementById('q')?.value?.trim();if(!q)return;
+  const value=decodeURIComponent((compare||input).dataset[compare?'qbranch':'qinput']||'').slice(0,400);if(!value)return;
+  if(compare){window.__qAssimilation={primary:q,supporting:'Compare '+q+' with '+value+'. Compile supported similarities, differences and useful next research directions.'};try{sessionStorage.setItem('quantaPhiAssimilationV1',JSON.stringify(window.__qAssimilation))}catch(_){}}
+  else {window.__qInputExtension={primary:q,supporting:value};try{sessionStorage.setItem('quantaPhiInputExtensionV1',JSON.stringify(window.__qInputExtension))}catch(_){}}
+  window.PhiAssimilation?.signal?.({kind:compare?'comparison':'input',action:'click',title:value,query:q,terms:value});
+  void Promise.resolve(window.QuantaResearch.include?.(window.__qActiveTokenId,value)).catch(()=>{}).then(()=>search({refine:true}));
+ },true)}
+const b=document.getElementById('qZoneBuild'),i=document.getElementById('qZoneInput');b?.addEventListener('click',()=>{const v=i.value.trim(),primary=document.getElementById('q').value.trim();if(v&&primary){window.__qInputExtension={primary,supporting:v};try{sessionStorage.setItem('quantaPhiInputExtensionV1',JSON.stringify({primary,supporting:v,created_at:new Date().toISOString()}))}catch(_){}void search({refine:true})}});if(!window.__qAssimilationClickBound){window.__qAssimilationClickBound=true;document.addEventListener('click',e=>{const x=e.target.closest?.('[data-assimilate]');if(!x)return;e.preventDefault();const prior=decodeURIComponent(x.dataset.assimilate),cur=document.getElementById('q').value.trim();try{sessionStorage.setItem('quantaPhiAssimilationV1',JSON.stringify({primary:cur,supporting:prior,created_at:new Date().toISOString()}))}catch(_){}window.__qAssimilation={primary:cur,supporting:prior};void Promise.resolve(window.QuantaResearch.include?.(window.__qActiveTokenId,prior)).catch(error=>console.warn('Research assimilation link deferred',error)).then(()=>search({refine:true}))},true)}}
 async function monitorLifecycleStart(topic){
  try{
   const previousId=sessionStorage.getItem('quantaPhiActiveQuditV1')||'';
@@ -732,6 +756,7 @@ async function search(options={}){
  'Canonical subject: '+exactEntity,
  'SEARCH AIM: '+JSON.stringify({primary:q,entity:exactEntity,required_terms:required.slice(0,20)}),
  'WEIGHTED CONCEPT: '+JSON.stringify(weightedConcept.slice(0,20)),
+ assimilation?('ASSIMILATION USER SELECTED COMPARISON: '+String(assimilation.supporting||'').slice(0,700)+'. Actively compare, compile and investigate the combined subjects, maintaining '+q+' as the anchor. Distinguish factual links from useful hypotheses.'):'' ,
  inputExtension?('Added Blue input: '+String(inputExtension.supporting).slice(0,700)):'',
  'Validate the premise first. If the requested compound, entity, or formula is ambiguous or unsupported, say so and distinguish it from nearby names; never silently identify aluminum dioxide as alumina (Al2O3). Do not invent references or data.',
  'Read and interpret the supplied evidence. Keep the canonical subject and weighted user intent primary. Reject evidence about a different meaning or entity.',
@@ -1331,7 +1356,7 @@ window.addEventListener('infinity-history-updated',()=>{paintTopBalances();void 
 window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infinity_unified_token_count_v3','infinity_unified_wallet_v1','phi:assetBalances:v1','infinityPhi:searchTokens:v1','omniPhi:history:v1','quantaPhiBuildHistoryV1'].includes(e.key||'')){paintTopBalances();void QuantaUnifiedTokenLedger.refreshCount()}});
 </script><!-- QuantaPhi publish stamp: unified-token-ledger-v1 -->
 <script src="media-repair.js?v=20261003-refine2"></script><script>window.PhiInfiniteBookFeedUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/feed';window.PhiInfiniteBookBanksUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/banks';</script><script defer src="/infinite-book-discovery.js?v=20261008-asteroid-gpt4"></script>
-<script defer src="/phi-assimilation.js?v=20261008-full-history1"></script>
+<script defer src="/phi-assimilation.js?v=20261008-packages2"></script>
 <script defer src="/infinite-book.js?v=20261008-home-art2"></script>
 <script defer src="/phi-visual-render.js?v=20261008-textclean3"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
