@@ -677,7 +677,7 @@ async function renderNanoBanana(key, renderDirection, image, designReference, mo
    signal:abort.signal,
    body:JSON.stringify({
     contents:[{role:"user",parts}],
-    generationConfig:{responseModalities:["TEXT","IMAGE"],responseFormat:{image:{aspectRatio,imageSize:"1K"}}}
+    generationConfig:{responseModalities:["TEXT","IMAGE"],imageConfig:{aspectRatio,imageSize:"1K"}}
    })
   });
   const data=await response.json().catch(()=>null);
