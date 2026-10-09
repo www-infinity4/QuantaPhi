@@ -102,3 +102,6 @@
 #fredSpacesRadio .fs-card.fs-media-star .fs-star-backdrop{z-index:0}
 #fredSpacesRadio .fs-card.fs-media-star .fs-player{position:relative;z-index:2}
 #fredSpacesRadio .fs-card.fs-media-star .fs-star-avatar{font-family:"Noto Color Emoji","Segoe UI Emoji",sans-serif}
+
+#fredSpacesRadio .fs-card.fs-media-star img.fs-star-avatar{object-fit:cover;display:block;background:#301e4f;padding:0;box-shadow:0 0 0 5px #fff4b399,0 0 25px #f9ca6899;filter:drop-shadow(0 0 7px #ffe398)}
+@media(max-width:440px){#fredSpacesRadio .fs-card.fs-media-star .fs-heading h2{padding-right:83px}}
