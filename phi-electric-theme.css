@@ -56,3 +56,95 @@ body{background:radial-gradient(ellipse at 50% -6%,#c9a5ff3d,transparent 44%),li
 :is(button,a,input,textarea,summary):focus-visible{outline:3px solid #9951f6;outline-offset:3px}
 @media(max-width:400px){.qnewSearch{padding:8px 11px;font-size:12px}.qtop{gap:7px}.qtop h1{font-size:25px}}
 @media(prefers-reduced-motion:reduce){.qnewSearch,.qmenuBtn,#infiniteBook .ib-action,#infiniteBook .ib-next,#infiniteBook .ib-build-link{transition:none!important}}
+
+
+/* Oracle refinement: assimilation-grade violet story, card-first light, quiet controls. */
+/* Violet story: the same deep illuminated surface as Assimilation, with readable text. */
+#infiniteBook .ib-head{gap:9px;margin:12px 2px 9px}
+#infiniteBook .ib-head strong{font-size:11px;letter-spacing:.065em;color:#60308c}
+#infiniteBook .ib-story{
+  position:relative;padding:17px 15px 16px;border:1px solid #ab78ff;border-radius:23px;
+  background:radial-gradient(circle at 96% 0%,rgba(144,75,250,.47),transparent 49%),linear-gradient(145deg,#301356 0%,#200d41 57%,#15092e 100%);
+  color:#f8f2ff;box-shadow:0 0 0 1px #b480ff42,0 12px 29px #4617a34b,inset 0 1px 0 #ffffff3b;
+}
+#infiniteBook .ib-story::before{height:2px;border-radius:23px 23px 0 0;background:linear-gradient(90deg,#6c35cb,#e6cfff,#ad79ff,#45227e)}
+#infiniteBook .ib-category{background:#ffffff13;border:1px solid #be99f47d;color:#e5d4ff;font-size:10px;font-weight:750;letter-spacing:.035em;padding:5px 9px}
+#infiniteBook .ib-title{color:#fff;font-size:clamp(20px,5vw,24px);line-height:1.28;margin:11px 0 10px;letter-spacing:-.35px;text-shadow:0 0 12px #a86bff40}
+#infiniteBook .ib-summary,#infiniteBook .ib-full{color:#eee3fd;font-size:14px;line-height:1.68}
+#infiniteBook .ib-details{background:#12092487;border:1px solid #a777ed68;border-radius:17px;padding:10px 12px;margin-top:12px}
+#infiniteBook .ib-details summary{color:#f8f1ff;font-weight:750;font-size:12px}
+#infiniteBook .ib-details summary::marker{color:#d4b1ff}
+#infiniteBook .ib-source,#infiniteBook .ib-more-sources .ib-source{color:#afedff;font-weight:750;text-underline-offset:3px}
+#infiniteBook .ib-actions{gap:7px;margin:12px 0 9px}
+#infiniteBook .ib-actions .ib-action,#infiniteBook .ib-build > .ib-action[data-book-action="illustrate"]{
+  min-height:41px;padding:7px 6px;background:#ffffff12;border:1px solid #b897ea78;border-radius:999px;
+  color:#f9f5ff;font-size:11px;font-weight:750;line-height:1.3;box-shadow:none;
+}
+#infiniteBook .ib-next{
+  min-height:39px;background:#f9f5ff;border:1px solid #c3a7e5;color:#4b2572;
+  padding:7px 11px;font-size:11px;font-weight:750;box-shadow:0 2px 7px #42167316;
+}
+#infiniteBook .ib-build{margin-top:6px;padding-top:12px;border-top:1px solid #bd8fee52;gap:7px}
+#infiniteBook .ib-build > span{color:#ddc9fb;font-size:11px;font-weight:700;line-height:1.4}
+#infiniteBook a.ib-build-link{
+  display:flex;align-items:center;justify-content:center;min-height:41px;padding:7px 5px;
+  background:#ffffffeb!important;border:1px solid #d1b9ef!important;border-radius:999px;
+  color:#4a246d!important;font-size:11px;font-weight:750;box-shadow:none;
+}
+#infiniteBook .ib-build > .ib-action[data-book-action="illustrate"]{background:#50308378;border-color:#b291ec8f;grid-column:1/-1}
+#infiniteBook .ib-status{color:#76558d;font-size:11px;line-height:1.45}
+#infiniteBook .ib-illustration{background:#160b30;border:1px solid #a580e1;border-radius:18px;box-shadow:inset 0 1px 0 #ffffff28,0 6px 18px #1a073d50}
+#infiniteBook .ib-illustration-caption{color:#e2d3fb}
+#infiniteBook .ib-illustration-actions button{min-height:41px!important;padding:8px 10px;border:1px solid #bea2f0;border-radius:999px!important;background:#f9f5ff;color:#4f297b;font-size:11px;font-weight:750}
+#infiniteBook :is(.ib-action,.ib-next,.ib-build-link):hover,
+#infiniteBook :is(.ib-action,.ib-next,.ib-build-link):focus-visible{
+  filter:brightness(1.06);box-shadow:0 0 0 2px #b69af555,0 0 11px #ab7bf57d!important;
+}
+#infiniteBook :is(.ib-action,.ib-next,.ib-build-link):active{transform:scale(.98)}
+#infiniteBook :is(button,a,summary):focus-visible{outline:2px solid #bdecff;outline-offset:3px}
+
+/* Bright edges belong to the cards. Controls inside them stay compact and calm. */
+#phiImageBuilder .pi-panel{box-shadow:0 0 0 1px #83baff,0 12px 28px #407dc43a,0 0 18px #58a9ff62}
+#phiImageBuilder .pi-audit{box-shadow:0 0 0 1px #a77cff6b,0 12px 24px #48178452,0 0 17px #ae74ff78}
+#phiImageBuilder .pi-modes{gap:6px}
+#phiImageBuilder .pi-mode{min-height:39px;padding:7px 10px;font-size:11px;font-weight:750;box-shadow:none}
+#phiImageBuilder .pi-actions{gap:7px;margin-top:11px}
+#phiImageBuilder .pi-actions button{min-height:41px;padding:8px 6px;font-size:11px;font-weight:750;border-radius:999px;box-shadow:none}
+#phiImageBuilder .pi-actions button[data-pi-action="good"],#phiImageBuilder .pi-actions button[data-pi-action="fix"]{box-shadow:0 0 11px #934ef566}
+#phiImageBuilder .pi-primary{min-height:45px;padding:10px 13px;font-size:13px;box-shadow:0 4px 12px #18529d3b}
+#phiImageBuilder :is(.pi-mode,.pi-primary,.pi-actions button):hover,
+#phiImageBuilder :is(.pi-mode,.pi-primary,.pi-actions button):focus-visible{box-shadow:0 0 0 2px #ffffffcc,0 0 11px #9380f87f}
+
+/* Gold and image/media cards keep their own identities without oversized action tiles. */
+#fredSpacesRadio .fs-card{box-shadow:0 0 0 1px #ffe184b5,0 12px 28px #b2831d43,0 0 18px #ffd34b78}
+#fredSpacesRadio :is(.fs-actions,.fs-builds){gap:7px;margin:11px 0}
+#fredSpacesRadio :is(.fs-actions,.fs-builds) .fs-btn{min-height:41px;padding:8px 6px;font-size:11px;font-weight:750;box-shadow:none}
+#fredSpacesRadio .fs-builds .fs-phi{min-height:41px;padding:8px 6px;box-shadow:none}
+#fredSpacesRadio .fs-topic{min-height:39px;padding:8px 11px;font-size:11px;box-shadow:none}
+#fredSpacesRadio .fs-mode,#fredSpacesRadio .fs-tool{min-height:40px;padding:7px 5px;font-size:11px;box-shadow:none}
+#fredSpacesRadio .fs-bottom .fs-next{min-height:44px;padding:10px 12px;box-shadow:0 4px 12px #23804952}
+#fredSpacesRadio .fs-source{min-height:38px;padding:7px 11px}
+#fredSpacesRadio .fs-topic-panel{box-shadow:0 5px 14px #e7b43d43}
+#fredSpacesRadio :is(.fs-btn,.fs-topic,.fs-mode,.fs-tool):hover,
+#fredSpacesRadio :is(.fs-btn,.fs-topic,.fs-mode,.fs-tool):focus-visible{box-shadow:0 0 0 2px #fff7ce,0 0 10px #e7b54a8f}
+.mcard :is(.cardShare,.cardCollect),.imageActions a,.videoActions a,.soundActions a{
+  display:inline-flex;align-items:center;justify-content:center;min-height:40px;
+  padding:7px 10px;margin-top:7px;border-radius:999px!important;font-size:11px;font-weight:750;
+  line-height:1.35;text-align:center;box-shadow:none;
+}
+.imageActions,.videoActions,.soundActions{gap:7px}
+.mcard :is(.cardShare,.cardCollect):hover,.mcard :is(.cardShare,.cardCollect):focus-visible{box-shadow:0 0 0 2px #fff,0 0 10px #a169e078}
+#result .qchip{min-height:39px;padding:8px 11px;font-size:11px;font-weight:750;box-shadow:0 0 10px #ad78ff64}
+#result .qzonePurple .qchip{min-height:39px;box-shadow:0 0 12px #ad78ff67}
+#result .overviewShare{min-height:40px;padding:8px 12px;font-size:12px}
+.qmenu a,.qmenu button{padding:9px 11px;font-size:12px;box-shadow:none!important}
+.qmenu a:hover,.qmenu button:hover,.qmenu a:focus-visible,.qmenu button:focus-visible{box-shadow:0 0 11px #9453d264!important}
+@media(max-width:380px){
+  #infiniteBook .ib-story{padding:15px 12px}
+  #infiniteBook .ib-actions,#infiniteBook .ib-build,
+  #phiImageBuilder .pi-actions,#fredSpacesRadio :is(.fs-actions,.fs-builds){gap:6px}
+  #infiniteBook a.ib-build-link{font-size:10.5px;padding:7px 3px}
+}
+@media(prefers-reduced-motion:reduce){
+  #infiniteBook :is(.ib-action,.ib-next,.ib-build-link){transition:none}
+}
