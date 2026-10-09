@@ -253,7 +253,9 @@
     }catch{return ''}
   }
   async function phiCloudFetch(target,options={}){
-    const bridge=window.QuantaCloudConnection||window.StarQuestCloudLedger;
+    // StarQuest's own state endpoint uses its existing enrolled device token.
+    // The Quant bridge intentionally accepts only Quant and Infinity routes.
+    const bridge=new URL(target).origin===STARQUEST_ENDPOINT?null:(window.QuantaCloudConnection||window.StarQuestCloudLedger);
     if(bridge?.authenticatedFetch){try{return await bridge.authenticatedFetch(target,options)}catch(error){if(error?.message!=='ledger_not_connected')throw error}}
     const token=starQuestDeviceToken();if(!token)throw new Error('ledger_not_connected');
     const body=options.body&&typeof options.body==='object'?JSON.stringify(options.body):options.body;
