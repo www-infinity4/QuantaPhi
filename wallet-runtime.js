@@ -488,9 +488,11 @@
     if(!ref||receipt?.kind!=='spin'||Number(receipt?.tenths)!==10)return {...walletSnapshot(),awarded:0,alreadyRecorded:false};
     const store=walletStore(),wallet=normalizeWallet(store.profile);
     const eventKey='cloud-research-spin:'+ref;
-    if(wallet.ledger.some(x=>x?.referenceId===eventKey))return {...walletSnapshot(),awarded:0,alreadyRecorded:true};
+    const applied=Array.isArray(wallet.cloudSpinReceipts)?wallet.cloudSpinReceipts:[];
+    if(applied.includes(ref)||wallet.ledger.some(x=>x?.referenceId===eventKey))return {...walletSnapshot(),awarded:0,alreadyRecorded:true};
     const now=Date.now();
     wallet.tokens+=1;
+    wallet.cloudSpinReceipts=[...applied,ref].slice(-10000);
     wallet.ledger.push({id:'tx-research-'+now.toString(36)+'-'+Math.random().toString(36).slice(2,8),
       type:'research_spin_credit',amount:1,balance:wallet.tokens,pendingShareCredits:wallet.pendingShareCredits,
       reason:clean(receipt.research?.title||'Sourced research spin',180),referenceId:eventKey,
