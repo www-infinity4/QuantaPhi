@@ -26,6 +26,11 @@
     if(next)next.textContent='Another secret · +1 ★';
     const label=root.querySelector('.ib-asteroid-label');
     if(label)label.textContent='ASTEROID · ORIGINAL SOURCED STORY';
+    const card=root.querySelector('.ib-story');
+    if(card?.dataset.ready==='false'){
+      root.querySelector('.ib-title').textContent='Researching your Asteroid story';
+      root.querySelector('.ib-summary').textContent='Researching your search subject and writing an original story from documented evidence.';
+    }
   }
   function placeHomeStory(){
     const shelf=document.querySelector('.book-shelf-link');
@@ -37,6 +42,11 @@
     if(next)next.textContent='Another story';
     const label=root.querySelector('.ib-asteroid-label');
     if(label)label.textContent='INFINITY READS & REALMS';
+    const card=root.querySelector('.ib-story');
+    if(card?.dataset.ready==='false'){
+      root.querySelector('.ib-title').textContent='Writing a fresh Reads & Realms story';
+      root.querySelector('.ib-summary').textContent='Finding documented evidence for an original story of Mystery, Adventure or Suspense.';
+    }
   }
   const E = (tag, cls, value) => {
     const el = document.createElement(tag);
@@ -72,13 +82,13 @@
   function cardLayout() {
     root.replaceChildren();
     const header = E('div', 'ib-head');
-    header.append(E('strong', '', 'ASTEROID · EVIDENCE INTO STORY'), E('button', 'ib-next', 'Another secret · +1 ★'));
+    header.append(E('strong', '', 'INFINITY READS & REALMS · STORIES OF MYSTERY, ADVENTURE & SUSPENSE'), E('button', 'ib-next', 'Another story'));
     header.lastChild.type = 'button'; header.lastChild.dataset.bookAction = 'next';
     const card = E('article', 'ib-story');card.dataset.ready='false';
     const hero=E('div','ib-asteroid-hero');
     const asteroid=E('img','ib-asteroid-rock');asteroid.src=ASTEROID_ART;asteroid.alt='Rocky asteroid with illuminated craters';asteroid.decoding='async';
     const copy=E('div','ib-asteroid-copy');
-    copy.append(E('small','ib-asteroid-label','ASTEROID · ORIGINAL SOURCED STORY'),E('div', 'ib-category'), E('h2', 'ib-title'));
+    copy.append(E('small','ib-asteroid-label','INFINITY READS & REALMS'),E('div', 'ib-category'), E('h2', 'ib-title'));
     hero.append(asteroid,E('div','ib-asteroid-shade'),copy);
     card.append(hero,E('p','ib-summary'));
     const detail = E('details', 'ib-details');
@@ -107,8 +117,8 @@
     const status = E('p', 'ib-status');
     status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
     card.append(detail, actions, build);
-    copy.querySelector('.ib-title').textContent='Researching the next Asteroid story';
-    card.querySelector('.ib-summary').textContent='GPT is gathering documented evidence and writing an original Mystery, Adventure or Suspense story.';
+    copy.querySelector('.ib-title').textContent='Writing a fresh Reads & Realms story';
+    card.querySelector('.ib-summary').textContent='GPT is researching documented evidence for an original Mystery, Adventure or Suspense story.';
     root.append(header, card, status);
   }
   function note(message) { const p = root.querySelector('.ib-status'); if (p) p.textContent = message; }
@@ -352,15 +362,15 @@
     for (const story of byId.values()) if (!seen.has(story.id)) n++;
     return n;
   }
-  function discoverInBackground(roll, onDeep) {
-    const key = [roll.sector, roll.angle, roll.sourceClass, roll.focus || ''].join(':');
+  function discoverInBackground(roll, onDeep, storyKind='reads-realms') {
+    const key = [storyKind,roll.sector, roll.angle, roll.sourceClass, roll.focus || ''].join(':');
     if (researchFlights.has(key)) return researchFlights.get(key);
     if (researchFlights.size >= MAX_RESEARCH_IN_FLIGHT) return Promise.resolve(null);
     const discover = window.PhiInfiniteBookDiscover?.find;
     if (typeof discover !== 'function') return Promise.resolve(null);
     let deadline;
     const research = Promise.resolve().then(() => discover({
-      roll, catalog, seen: seenIds(), focus: roll.focus || '', strictGPT:true,
+      roll, catalog, seen: seenIds(), focus: roll.focus || '', strictGPT:true, storyKind,
       onDeep: story => {
         if (!storyValid(story) || !window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story) || seenIds().has(story.id)) return;
         byId.set(story.id, story);
@@ -393,6 +403,12 @@
     if (!catalog) return;
     const ticket = ++activeStoryTicket;
     window.PhiInfiniteBookResearchStatus='';
+    const searchMode=root.dataset.context==='search';
+    if(searchMode && !String(query||'').trim()){
+      note('Search a subject to generate an Asteroid story.');
+      return;
+    }
+    const storyKind=searchMode?'asteroid':'reads-realms';
     const roll = rollDice(query);
     const requireFresh=options.requireFresh!==false;
     const spinReference=options.rewardSpin?'research-spin:'+String(crypto?.randomUUID?.()||Date.now()+'-'+Math.random()):'';
@@ -411,8 +427,8 @@
       current=null;interactedWithStory=false;
       const card=root.querySelector('.ib-story');card.hidden=false;card.dataset.ready='false';delete card.dataset.storyId;
       root.querySelector('.ib-category').textContent='SOURCED '+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery').toUpperCase();
-      root.querySelector('.ib-title').textContent='Researching '+String(query||roll.indexWord||'your next subject').slice(0,110);
-      root.querySelector('.ib-summary').textContent='Finding original sources for GPT. The verified narrative and its illustration will replace this research message.';
+      root.querySelector('.ib-title').textContent=searchMode?'Researching Asteroid story for '+String(query).slice(0,100):'Writing a fresh Reads & Realms story';
+      root.querySelector('.ib-summary').textContent=searchMode?'Finding original evidence for your search. GPT will write the Asteroid story once the sources support it.':'Finding fresh documented evidence. GPT will write a new Reads & Realms story for this visit.';
       root.setAttribute('aria-busy','true');window.dispatchEvent(new CustomEvent('phi:story:reset'));
     }
     // On a new search show the prepared story immediately, then replace only
@@ -433,9 +449,9 @@
         ? 'New sourced historical story · original GPT narrative'
         : 'New historical discovery · cited source');
     };
-    void discoverInBackground(roll, acceptNew)
+    void discoverInBackground(roll, acceptNew, storyKind)
       .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.dataset.ready!=='true'){root.removeAttribute('aria-busy');root.querySelector('.ib-title').textContent=window.PhiInfiniteBookResearchStatus==='quota'?'Story writing paused':'Story unavailable';root.querySelector('.ib-summary').textContent=window.PhiInfiniteBookResearchStatus==='quota'?'The daily AI story-writing allowance has been reached. Your saved stories and research remain available.':'No source-backed GPT story was completed for this search. A broader source search or another research angle may help.';note(window.PhiInfiniteBookResearchStatus==='quota'?(root.dataset.context==='home'?'Reads & Realms':'Asteroid')+' · Story writing paused · daily AI allowance reached.':(root.dataset.context==='home'?'Reads & Realms':'Asteroid')+' · A complete sourced story is not available yet.')}})
-      .catch(error=>{console.warn('Asteroid research unavailable',error);if(ticket===activeStoryTicket){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent='Research was interrupted. Try another search; no unsupported story was created.';note('Could not complete sourced GPT writing for this topic.')}});
+      .catch(error=>{console.warn(storyKind+' research unavailable',error);if(ticket===activeStoryTicket){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent='Research was interrupted. Try another search; no unsupported story was created.';note('Could not complete sourced GPT writing for this topic.')}});
   }
   window.addEventListener('quantaphi:search-start', event=>{
     const query=String(event.detail?.query||'').trim();
@@ -512,7 +528,7 @@
     if (action === 'next') {
       event.preventDefault();
       if(root.dataset.context==='home'){void nextStory('',{requireFresh:true,rewardSpin:true,researchBranch:'Another secret'});return}
-      void nextStory('',{rewardSpin:true,researchBranch:'Another secret'});
+      void nextStory(lastSearchQuery,{rewardSpin:true,researchBranch:'Another secret'});
     }
     if(action==='research'&&current){
       event.preventDefault();
@@ -588,7 +604,8 @@
         if(validSource && u.searchParams.get('bookTitle') && u.searchParams.get('bookSummary')){
           note('Rebuilding the shared story from evidence with GPT…');
           await nextStory(u.searchParams.get('bookTitle'));
-        } else await nextStory();
+        } else if(root.dataset.context==='search'&&lastSearchQuery) await nextStory(lastSearchQuery);
+        else showHomeStory();
       } else if(lastSearchQuery.trim()&&root.dataset.context==='search'){
         placeSearchStory();
         await nextStory(lastSearchQuery);
