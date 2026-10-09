@@ -103,11 +103,11 @@ body #controlPhiWalletPanel button{
 /* Final card-control contract. Loaded after artwork and Oracle adapters so new
    cards inherit the same controls without changing their subject colors. */
 :root {
-  --phi-control-height:44px;
+  --phi-control-height:36px;
   --phi-control-radius:999px;
-  --phi-control-surface:#fffdfc;
-  --phi-control-ink:#4c286e;
-  --phi-control-border:#bca4cd;
+  --phi-control-surface:#f0e4fa;
+  --phi-control-ink:#5f259f;
+  --phi-control-border:#c9a6e5;
   --phi-control-gap:8px;
 }
 body.oracle-quanta :is(#result,#media,#infiniteBook,#phiImageBuilder,#fredSpacesRadio,.widgetphi-stock-card,#controlPhiWalletPanel,.qbalances) :is(button,a.ib-build-link,.imageActions a,.videoActions a,.soundActions a,.qdata-open) {
@@ -115,10 +115,10 @@ body.oracle-quanta :is(#result,#media,#infiniteBook,#phiImageBuilder,#fredSpaces
   display:inline-flex;align-items:center;justify-content:center;gap:6px;
   min-width:0!important;max-width:100%!important;
   min-height:var(--phi-control-height)!important;height:auto!important;
-  padding:9px 12px!important;border-radius:var(--phi-control-radius)!important;
+  padding:7px 10px!important;border-radius:var(--phi-control-radius)!important;
   border:1px solid var(--phi-control-border)!important;
   background:var(--phi-control-surface)!important;color:var(--phi-control-ink)!important;
-  font-family:inherit!important;font-size:12px!important;font-weight:800!important;
+  font-family:inherit!important;font-size:13px!important;font-weight:800!important;
   line-height:1.4!important;letter-spacing:0!important;
   text-align:center;text-decoration:none;
   white-space:normal!important;overflow-wrap:break-word!important;word-break:normal!important;
@@ -141,13 +141,14 @@ body.oracle-quanta :is(#result,#media,#infiniteBook,#phiImageBuilder,#fredSpaces
 }
 body.oracle-quanta :is(#result,#media,#infiniteBook,#phiImageBuilder,#fredSpacesRadio,.widgetphi-stock-card,#controlPhiWalletPanel,.qbalances) [hidden] {display:none!important}
 body.oracle-quanta :is(.ib-actions,.ib-build,.pi-actions,.fs-actions,.fs-builds,.qreader-actions,.qdata-actions,.qzoneActions,.qactionRows,.qassimilate-actions,.imageActions,.videoActions,.soundActions,.widgetphi-stock-actions) {
-  display:grid!important;grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr))!important;
+  display:flex!important;flex-wrap:wrap!important;
   gap:var(--phi-control-gap)!important;align-items:stretch!important;
 }
 body.oracle-quanta :is(.ib-actions,.ib-build,.pi-actions,.fs-actions,.fs-builds,.qreader-actions,.qdata-actions,.imageActions,.videoActions,.soundActions,.widgetphi-stock-actions) > :is(button,a) {
-  width:100%!important;align-self:stretch;
+  width:auto!important;flex:0 1 auto!important;align-self:stretch;
 }
-body.oracle-quanta .ib-build > span,body.oracle-quanta .pi-actions > .pi-wide {grid-column:1/-1}
+body.oracle-quanta .ib-build > span {flex-basis:100%}
+body.oracle-quanta .pi-actions > .pi-wide {flex-basis:100%!important}
 body.oracle-quanta :is(.qchips,.pi-modes,.fs-topics,.fs-tools,.ib-illustration-actions) {
   display:flex;flex-wrap:wrap;gap:var(--phi-control-gap)!important;
 }
@@ -158,4 +159,13 @@ body.oracle-quanta #result .qdata-open {min-width:44px!important;max-width:44px!
 body.oracle-quanta #result .qdata-select {justify-content:flex-start;text-align:left}
 @media(prefers-reduced-motion:reduce) {
   body.oracle-quanta :is(#result,#media,#infiniteBook,#phiImageBuilder,#fredSpacesRadio) button {transition:none!important}
+}
+
+/* Billboard proportions: quiet lavender controls sized to the actual label. */
+body.oracle-quanta :is(#infiniteBook,#phiImageBuilder,#fredSpacesRadio) :is(.ib-next,.pi-primary,.fs-next) {
+  width:auto!important;max-width:100%!important;min-height:36px!important;
+}
+body.oracle-quanta #result .qdata-actions {width:100%;flex:1 1 100%}
+body.oracle-quanta :is(.qzone,.mcard,.pi-panel,.fs-card,.widgetphi-stock-card,.ib-story) {
+  border-radius:22px;
 }
