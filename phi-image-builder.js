@@ -97,7 +97,10 @@ async function build(){
   try{review=await renderer.review({src:result,description,mode,exactText})}
   catch(error){warning=[warning,'Visual reviewer unavailable; result not graded.'].filter(Boolean).join(' ')}
   const score=review?.score;
-  const shouldRefine=review&&(
+  // Suspend automatic second-generation calls by default while the first
+  // renderer path is stabilized. The explicit Fix issues action still works.
+  // A second FLUX request increases latency and can exhaust the daily limit.
+  const shouldRefine=window.PhiImageAutoRefine===true&&review&&(
    review.status==='needs_work'||(Number.isFinite(score)&&score<75)
   )&&Array.isArray(review.issues)&&review.issues.length>0;
   if(shouldRefine){
@@ -157,6 +160,9 @@ async function build(){
   }else if(error?.code==='image_input_invalid'){
    notice('The renderer could not accept this request. Check the description and uploaded images, then build again. Your inputs are preserved.');
    $('[data-pi-action="back"]').textContent='Edit description or photo';
+  }else if(error?.code==='image_daily_cap'){
+   notice('The connected image service has reached its 20-generation daily limit for this identity. Your description and photo are preserved; more builds are available when the daily limit resets.');
+   $('[data-pi-action="back"]').textContent='Back to saved description';
   }else{
    notice(message.slice(0,210)+'. No image was produced. Return to your description and try again.');
   }

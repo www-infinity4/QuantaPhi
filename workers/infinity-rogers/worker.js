@@ -598,11 +598,12 @@ async function runImage(request, env) {
  const image=form.get("image");
  const designReference=form.get("design_reference");
  if(!prompt) return json(request,{ok:false,error:"prompt_required"},400);
- if(!(image instanceof File)) return json(request,{ok:false,error:"image_required"},400);
+ // Text-to-image needs NO input image. References are optional and validated.
+ if(image && !(image instanceof File)) return json(request,{ok:false,error:"invalid_image_reference"},400);
  if(designReference && !(designReference instanceof File)) return json(request,{ok:false,error:"invalid_design_reference"},400);
- if(!String(image.type||"").startsWith("image/")) return json(request,{ok:false,error:"invalid_image_type"},415);
- if(designReference && !String(designReference.type||"").startsWith("image/")) return json(request,{ok:false,error:"invalid_design_reference_type"},415);
- if(image.size>3_000_000) return json(request,{ok:false,error:"image_too_large",maxBytes:3000000},413);
+ if(image && !["image/jpeg","image/png","image/webp"].includes(image.type)) return json(request,{ok:false,error:"invalid_image_type"},415);
+ if(designReference && !["image/jpeg","image/png","image/webp"].includes(designReference.type)) return json(request,{ok:false,error:"invalid_design_reference_type"},415);
+ if(image && image.size>3_000_000) return json(request,{ok:false,error:"image_too_large",maxBytes:3000000},413);
  if(designReference && designReference.size>3_000_000) return json(request,{ok:false,error:"design_reference_too_large",maxBytes:3000000},413);
 
  const userId=(await aiUser(request,{}))+":image";
@@ -622,7 +623,8 @@ async function runImage(request, env) {
  const allowedModes=["Image","Trading Card","Advertisement","Billboard","Poster","Cover Art"];
  const requestedMode=clean(form.get("mode"),32);
  const mode=allowedModes.includes(requestedMode)?requestedMode:"Trading Card";
- const blankReference=clean(form.get("reference_mode"),40)==="blank";
+ const blankReference=!image&&!designReference;
+ const styleOnly=!image&&Boolean(designReference);
  const modeRules={
   "Image":"Create a standalone premium visual image. Match the requested subject, composition and aesthetic. No card frame or printing decoration unless the user requests it.",
   "Trading Card":"Create a complete sharp-corner premium collectible trading card, sports or nonsports as specified. Do not make a blank template, slab or mockup. All name plates and labels must be blank for exact browser typography afterward; do not create pseudo-lettering.",
@@ -636,7 +638,7 @@ async function runImage(request, env) {
 
  const visualExecution="You are the rendering engine for Phi Image Builder. "+modeRules[mode]+
   " Execute the user\'s specification, not a generic sports-card template. Do not invent identities, dates, brand claims or phrases. "+
-  (blankReference?"The provided input is a neutral starting canvas with no visual subject; create the requested original image from the text. ":"Preserve uploaded reference identity and composition where helpful. ")+
+  (blankReference?"This is TEXT TO IMAGE; there is no input photograph. Draw the requested subject from the words alone. ":styleOnly?"A style-only reference is supplied. Use it for art direction, not as a subject to reproduce. ":"Preserve uploaded reference identity and composition where helpful. ")+
   "Output one finished high-quality image, not a screenshot of a UI. Render visuals ONLY: zero painted letters or numerals, no fake writing, invented logos, glyphs, pseudo-words, handwriting, invented signage, symbol rows or counterfeit watermarks. Where typography belongs use clean blank material rather than text-shaped marks. Build plausible geometry and connected mechanical parts. "+
   (exactText?"Reserve a high-contrast clean blank area for the browser to overlay these exact words later: "+exactText+". The model must not paint any of these words or approximate their shapes. ":"Never insert captions, marks resembling words or invented signage. ");
  const governingPrompt=mode==="Trading Card"?executionOnly:visualExecution;
@@ -648,9 +650,12 @@ async function runImage(request, env) {
  ];
 
  let lastError=null;
+ // FLUX.2 Dev currently returns upstream 3043 errors for valid prompt-only
+ // requests. Prefer the Klein-9B renderer that passed live prompt-only testing,
+ // while retaining Dev as a fallback for transient Klein failures.
  const modelPlan=[
-   {model:IMAGE_MODEL,variants,steps:"25"},
-   {model:IMAGE_FALLBACK_MODEL,variants:variants.slice(1),steps:null}
+   {model:IMAGE_FALLBACK_MODEL,variants:[variants[0],variants[1]],steps:null},
+   {model:IMAGE_MODEL,variants:[variants[0]],steps:"25"}
  ];
  const attemptErrors=[];
  let attemptNumber=0;
@@ -659,8 +664,10 @@ async function runImage(request, env) {
      attemptNumber++;
      try{
        const out=new FormData();
-       out.append("input_image_0",image,image.name||"subject.jpg");
-       if(designReference) out.append("input_image_1",designReference,designReference.name||"design-reference.jpg");
+       const firstReference=image||designReference;
+       // Reference indices must be contiguous even for style-only requests.
+       if(firstReference)out.append("input_image_0",firstReference,firstReference.name||"reference.jpg");
+       if(image&&designReference)out.append("input_image_1",designReference,designReference.name||"design-reference.jpg");
        out.append("prompt",variant);
        out.append("width",mode==="Billboard"?"1024":mode==="Image"?"1024":"768");
        out.append("height",mode==="Billboard"?"576":mode==="Image"?"1024":"1024");
@@ -670,7 +677,7 @@ async function runImage(request, env) {
        const b64=typeof result?.image==="string"?result.image:"";
        if(!b64) throw new Error("empty_image_response");
        await recordUsage(env,userId,state,1,1);
-       return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:image/jpeg;base64,"+b64,attempt:attemptNumber,mode,referenceMode:blankReference?"text-on-neutral":"source-image",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+       return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:image/jpeg;base64,"+b64,attempt:attemptNumber,mode,referenceMode:blankReference?"text-only":styleOnly?"style-only":"source-image",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
      }catch(error){
        lastError=error;
        const message=String(error?.message||error);
