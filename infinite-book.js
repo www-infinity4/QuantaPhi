@@ -124,7 +124,7 @@
     return words.join(' ').slice(0,150);
   }
   function buildUrl(tool, story) {
-    const routes={infinity:'/InfinityPhi/',omni:'/OmniPhi/overview/',quanta:'/'};
+    const routes={infinity:'/infinity-phi/',omni:'/omni-phi/overview/',quanta:'/'};
     const link=new URL(routes[tool]||'/',location.origin);
     // Existing Phi search pages understand q. Keep it as short semantic index words.
     // Preserve story metadata separately rather than injecting the full prose into search.
@@ -359,6 +359,7 @@
     safeWrite(STAR_KEY, Array.from(favorites));
     root.querySelector('[data-book-action="star"]').textContent = favorites.has(current.id) ? '★ Starred' : '☆ Star';
     const starred=favorites.has(current.id);
+    window.PhiAssimilation?.signal?.({kind:'story',action:starred?'star':'unstar',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)});
     window.dispatchEvent(new CustomEvent('phi:story:star',{detail:{id:current.id,sector:current.sector,title:current.title,starred}}));
     note(starred ? 'Starred. This subject now influences future discoveries and can be used as a build seed.' : 'Removed from favorites');
   }
@@ -378,6 +379,7 @@
     } catch (_) { note('Share cancelled'); return; }
     try { window.QuantaStarCredit?.('share', 'infinite-book:' + current.id + ':' + Date.now(), current); }
     catch (error) { console.warn('Story share credit deferred', error); }
+    window.PhiAssimilation?.signal?.({kind:'story',action:'share',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)});
     note(combined?.handled ? 'Story text and image sent to the share sheet. The image stays device-local; link visitors see the story without your picture until cloud publishing is connected.' : combined?.imageMissing ? 'Story link shared. This browser cannot bundle image files; use Save image to share the picture separately.' : 'Story shared or link copied');
   }
   function collect() {
@@ -394,6 +396,7 @@
     collected.push(saved);
     safeWrite('quantaPhiCollected', collected);
     window.dispatchEvent(new CustomEvent('quantaphi:collected', { detail: saved }));
+    window.PhiAssimilation?.signal?.({kind:'story',action:'collect',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)});
     try { window.QuantaStarCredit?.('collect', key, saved); }
     catch (error) { console.warn('Story collect credit deferred', error); }
     const bridge = window.QuantaCloudConnection || window.StarQuestCloudLedger;
@@ -414,6 +417,7 @@
     if (action === 'share') { event.preventDefault(); void share(); }
     if (action === 'collect') { event.preventDefault(); collect(); }
     if(action==='illustrate'&&current){
+       window.PhiAssimilation?.signal?.({kind:'story',action:'build',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)});
       event.preventDefault();
       window.PhiImageBuilder?.prefill('Illustrate this surprising historical story: '+current.title+'. Create a distinctive, evidence-respecting visual inspired by its subject.',{useStory:true});
       document.getElementById('phiImageBuilder')?.scrollIntoView({behavior:'smooth',block:'start'});
@@ -421,6 +425,7 @@
     if(action==='build'&&current){
       event.preventDefault();
       const tool=target.dataset.bookTool;
+      window.PhiAssimilation?.signal?.({kind:'story',action:'build',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)});
       if(tool==='quanta'){
         // Only an explicit search uses the existing Infinity/Quant mint path.
         const input=document.getElementById('q'),go=document.getElementById('go');
@@ -432,7 +437,7 @@
       }
     }
   });
-  root.addEventListener('toggle',event=>{if(event.target?.classList?.contains('ib-details'))interactedWithStory=true;},true);
+  root.addEventListener('toggle',event=>{if(event.target?.classList?.contains('ib-details')&&event.target.open&&current){interactedWithStory=true;window.PhiAssimilation?.signal?.({kind:'story',action:'expand',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)})}},true);
   async function init() {
     cardLayout();
     if(initialQuery?.trim())placeSearchStory();
