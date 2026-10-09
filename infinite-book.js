@@ -11,6 +11,7 @@
   const initialQuery = new URL(location.href).searchParams.get('q');
   const queuedQueries = [];
   let lastSearchRun = null;
+  let lastSearchQuery = initialQuery || '';
   // A search produces the sourced story below the five-part overview, after Assimilation.
   // The idle page retains the original orange-card position above the image builder.
   function placeSearchStory(){
@@ -315,6 +316,8 @@
     const roll = rollDice(query);
     // Instant switch: no network, GPT, source search or feed fetch before render.
     const ready = pickUnique(roll, seenIds());
+    // On a new search show the prepared story immediately, then replace only
+    // if source-backed discovery verifies a more relevant event for that search.
     if (ready) {
       render(ready, roll);
       note(roll?.bracketKey ? 'Ready · '+roll.indexWord+' · '+roll.refinement+' · '+roll.storyDirection : 'Ready · source-backed story');
@@ -323,8 +326,9 @@
     }
     const acceptNew = story => {
       // Do not replace a visible story on an unsuspecting reader.
-      if (ready || ticket !== activeStoryTicket || interactedWithStory ||
+      if (ticket !== activeStoryTicket || interactedWithStory ||
         !storyValid(story) || seenIds().has(story.id) || current?.id === story.id) return;
+      if (ready && (!query || current?.id !== ready.id)) return;
       render(story, roll);
       note(story.discoveryMethod === 'gpt-deep'
         ? 'New sourced historical story · original GPT narrative'
@@ -342,6 +346,7 @@
     if(!query || (run != null && run===lastSearchRun))return;
     placeSearchStory();
     if(run != null)lastSearchRun=run;
+    lastSearchQuery=query;
     // A shared / restored search on initial page load is one visit, not a second discovery.
     if(Date.now()-bootTime<6500 && query===initialQuery)return;
     void nextStory(query);
@@ -460,7 +465,7 @@
             sourceUrl:source,sourceTitle:new URL(source).hostname},null);
         } else await nextStory();
       } else {
-        await nextStory(initialQuery||'');
+        await nextStory(lastSearchQuery);
       }
       refillReadyStories();
     } catch (error) {

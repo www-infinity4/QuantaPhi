@@ -115,6 +115,11 @@ test('search-generated sourced story is displayed after the overview assimilatio
  assert.match(book,/result\.insertAdjacentElement\('afterend',root\)/);
  assert.match(book,/window\.addEventListener\('quantaphi:search-start'/);
  assert.match(html,/infinite-book\.js\?v=20261008-story-image2/);
+ // Layout must be deterministic before scripts run: no flash of the story above the overview.
+ assert.ok(html.indexOf('id="result"') < html.indexOf('id="infiniteBook"'),'Overview must precede story card in the HTML');
+ assert.ok(html.indexOf('id="infiniteBook"') < html.indexOf('id="phiImageBuilder"'),'Story and illustration come before the image builder');
+ assert.match(book,/lastSearchQuery=query/,'search events must refresh the story even while the catalog initializes');
+ assert.match(book,/if \(ready && \(!query \|\| current\?\.id !== ready\.id\)\) return/,'verified search-specific story may replace the prepared discovery');
 });
 
 test('completed story images automatically attach and update is not a redundant save',()=>{
@@ -126,6 +131,10 @@ test('completed story images automatically attach and update is not a redundant 
  assert.match(bridge,/\[data-pi-action="fix"\]/);
  assert.match(bridge,/storeName='stories'/);
  assert.match(source('index.html'),/phi-book-image-bridge\.js\?v=20261008-auto-attach2/);
+ assert.match(bridge,/\['remove','Clear image'\]/,'reader can clear a stored story illustration');
+ assert.match(source('phi-image-builder.js'),/\['clear','Clear image'\]/,'builder can clear finished pixels independently');
+ assert.match(source('phi-image-builder.js'),/if\(action==='clear'\)/,'clear has a real click handler');
+ assert.match(source('phi-image-builder.css'),/Electric purple reader/,'review card uses electric-purple palette');
 });
 
 test('one bounded automatic repair is scored against the original image',()=>{

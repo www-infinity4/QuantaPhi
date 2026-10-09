@@ -51,7 +51,7 @@ panel.hidden=true;
 const picture=make('img','ib-illustration-image');picture.alt='Illustration made for this book story';picture.loading='lazy';
 const description=make('figcaption','ib-illustration-caption','Your story illustration · saved on this device');
 const panelActions=make('div','ib-illustration-actions');
-for(const [action,label] of [['view','View clear image'],['remove','Remove image']]){
+for(const [action,label] of [['view','View clear image'],['remove','Clear image']]){
  const button=make('button','ib-action',label);button.type='button';button.dataset.ibImage=action;panelActions.append(button)
 }
 panel.append(picture,description,panelActions);
@@ -180,7 +180,7 @@ book.addEventListener('click',event=>{
  if(type==='view'&&currentObjectUrl)showPreview(currentObjectUrl);
  if(type==='remove'&&storyId()){
   const id=storyId();
-  void erase(id).then(()=>refresh()).catch(error=>{const p=book.querySelector('.ib-status');if(p)p.textContent='Could not remove image: '+error.message});
+  void erase(id).then(()=>refresh()).then(()=>{const p=book.querySelector('.ib-status');if(p)p.textContent='Story illustration cleared from this device. The story and its source remain.'}).catch(error=>{const p=book.querySelector('.ib-status');if(p)p.textContent='Could not clear image: '+error.message});
  }
 });
 picture.addEventListener('click',()=>{if(currentObjectUrl)showPreview(currentObjectUrl)});

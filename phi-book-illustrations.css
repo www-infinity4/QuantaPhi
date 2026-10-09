@@ -13,3 +13,12 @@
 .pi-clean-dialog .pi-clean-image{display:block;max-width:100%;max-height:calc(98dvh - 20px);width:auto;height:auto;object-fit:contain}
 .pi-clean-dialog .pi-clean-close{position:absolute;z-index:2;top:12px;right:12px;border:1px solid #fff;border-radius:999px;background:#16293ae6;color:#fff;padding:9px 16px;font:700 13px system-ui;cursor:pointer}
 .pi-clean-dialog.pi-dialog-fallback{position:fixed;z-index:99999;inset:1dvh 1vw;margin:auto;box-shadow:0 0 0 100vmax #000e}
+
+
+/* Finished image is a full-width part of the illustrated story, not a separate orphan card. */
+#infiniteBook .ib-illustration{margin:16px 0;padding:12px;background:linear-gradient(150deg,#fffdf8,#fff1df);border:1px solid #d9a16f;border-radius:21px;box-shadow:0 6px 18px #9250162a}
+#infiniteBook .ib-illustration-image{width:100%;max-height:560px;object-fit:contain;border-radius:15px;background:#fff;box-shadow:0 2px 12px #3d250e18}
+#infiniteBook .ib-illustration-caption{font-size:12px;color:#623a1c;font-weight:700}
+#infiniteBook .ib-illustration-actions button{min-height:46px!important;border-radius:999px!important}
+#phiImageBuilder .pi-add-story{min-height:44px;border-radius:999px}
+.pi-clean-dialog{border-radius:24px}
