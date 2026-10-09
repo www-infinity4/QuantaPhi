@@ -55,7 +55,7 @@ function hero(zone,kind){
  const wrapper=make('div','q-oracle-hero q-oracle-'+kind);
  const art=make('div','q-oracle-artwork');
  const image=make('img','q-oracle-avatar');
- image.src=kind==='reader'?'/assets/phi-scholastic-reader.webp':'/assets/phi-data-analyst.webp';
+ image.src=kind==='reader'?'/assets/phi-scholastic-reader.webp?v=20261009-original-art3':'/assets/phi-data-analyst.webp?v=20261009-original-art3';
  image.alt=kind==='reader'?'Illustrated open encyclopedia radiating scholarly light':'Illustrated futuristic android analyst with glowing data screens';
  image.loading='lazy';image.decoding='async';
  const copy=make('div','q-oracle-heading');
