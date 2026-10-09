@@ -51,8 +51,12 @@ const REQUEST_TIMEOUT_MS=12000;
 async function request(options){let timer;try{return await Promise.race([global.QuantaCloudConnection.authenticatedFetch(API,options),new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error('Star Coin sync timed out; retained for retry')),REQUEST_TIMEOUT_MS)})])}finally{clearTimeout(timer)}}
 function publish(state){
  try{global.localStorage.setItem(STATE,JSON.stringify({...state,history:undefined,syncedAt:new Date().toISOString()}))}catch{}
- // Reconcile the durable QuantaPhi Star Coin receipts into the visible shared
- // wallet without ever lowering a larger recovered/local Star Coin balance.
+ // Apply only confirmed, idempotent full-coin research receipts to the visible wallet.
+ // The existing Collect/Share receipts retain their one-tenth reward behavior.
+ for(const receipt of Array.isArray(state?.history)?state.history:[]){
+  if(receipt?.kind==='spin')try{global.ControlPhi?.ensureResearchSpinCredit?.(receipt)}catch(error){console.warn('Star Coin research wallet reconcile deferred',error)}
+ }
+ // Restore any higher Cloudflare balance without reducing an existing wallet.
  const tenths=Number(state?.credits_tenths);
  if(Number.isFinite(tenths)&&tenths>=0)try{global.ControlPhi?.importLegacyStarCoinBalance?.(tenths/10,'quanta-phi-cloud')}catch(error){console.warn('Star Coin wallet reconcile deferred',error)}
  try{global.dispatchEvent(new CustomEvent('quantaphi:star-coins-cloud',{detail:state}))}catch{}
