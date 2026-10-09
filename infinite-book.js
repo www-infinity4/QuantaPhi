@@ -450,7 +450,16 @@
         : 'New historical discovery · cited source');
     };
     void discoverInBackground(roll, acceptNew, storyKind)
-      .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.dataset.ready!=='true'){root.removeAttribute('aria-busy');root.querySelector('.ib-title').textContent=window.PhiInfiniteBookResearchStatus==='quota'?'Story writing paused':'Story unavailable';root.querySelector('.ib-summary').textContent=window.PhiInfiniteBookResearchStatus==='quota'?'The daily AI story-writing allowance has been reached. Your saved stories and research remain available.':'Cloudflare AI could not complete a supported story for this topic. A broader source search or another research angle may help.';note(window.PhiInfiniteBookResearchStatus==='quota'?(root.dataset.context==='home'?'Reads & Realms':'Asteroid')+' · Story writing paused · daily AI allowance reached.':(root.dataset.context==='home'?'Reads & Realms':'Asteroid')+' · A complete sourced story is not available yet.')}})
+      .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.dataset.ready!=='true'){
+        root.removeAttribute('aria-busy');
+        const status=window.PhiInfiniteBookResearchStatus;
+        const busy=status==='provider-busy'||status==='ai-unavailable';
+        root.querySelector('.ib-title').textContent=busy?'Cloudflare AI temporarily unavailable':'Story unavailable';
+        root.querySelector('.ib-summary').textContent=busy
+          ? 'Cloudflare could not finish this request. No old story was substituted; use Another story to retry.'
+          : 'No evidence-supported new story was completed for this topic. Try another research angle.';
+        note((root.dataset.context==='home'?'Reads & Realms':'Asteroid')+(busy?' · Cloudflare AI service could not complete this request.':' · Complete sourced story not yet available.'));
+      }})
       .catch(error=>{console.warn(storyKind+' research unavailable',error);if(ticket===activeStoryTicket){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent='Research was interrupted. Try another search; no unsupported story was created.';note('Cloudflare AI could not complete sourced writing for this topic.')}});
   }
   window.addEventListener('quantaphi:search-start', event=>{
