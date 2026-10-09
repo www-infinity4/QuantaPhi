@@ -106,7 +106,7 @@ test('image rejection keeps the original inputs editable and offers photo remova
  assert.match(css,/\.pi-upload-slot/);
  assert.match(css,/\[hidden\]\{display:none!important\}/);
  const html=source('index.html');
- assert.match(html,/phi-image-builder\.js\?v=20261008-minimal-image2/);
+ assert.match(html,/phi-image-builder\.js\?v=20261009-no-app-cap1/);
  assert.match(html,/phi-visual-render\.js\?v=20261008-textclean3/);
 });
 
@@ -154,7 +154,7 @@ test('one bounded automatic repair is scored against the original image',()=>{
  assert.doesNotMatch(worker,/variations of the prompt|const variants=\[/);
  assert.doesNotMatch(worker.slice(worker.indexOf(' const executionOnly='),worker.indexOf(' let lastError=null;')),/alien-language|pseudo-words|symbol rows/i);
  assert.match(worker,/Paint only the scene, objects, photography and visual design/);
- assert.match(source('index.html'),/phi-image-builder\.js\?v=20261008-minimal-image2/);
+ assert.match(source('index.html'),/phi-image-builder\.js\?v=20261009-no-app-cap1/);
 });
 
 test('FLUX adapter sends true text-only requests and scales reference pixels, not just byte size',()=>{
