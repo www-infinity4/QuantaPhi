@@ -292,4 +292,9 @@ function activate(query,sections,evidence){
  renderLinks();sync();
 }
 window.PhiScholasticData={activate,decorate:renderLinks};
+// A shared URL can launch search before a deferred file finishes loading.
+// Rehydrate the card if both research zones already exist on arrival.
+if(document.getElementById('overview')?.querySelector('.qzoneYellow')){
+ activate(document.getElementById('q')?.value||new URL(location.href).searchParams.get('q')||'');
+}
 })(window,document);
