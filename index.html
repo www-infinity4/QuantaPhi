@@ -613,10 +613,30 @@ window.QuantaResearch.openSaved=id=>search({restore:true,tokenId:id});
 document.addEventListener('click',event=>{const a=event.target.closest?.('.qDataLinks a');if(!a||event.defaultPrevented||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;const u=new URL(a.href);if(u.origin!==location.origin||!u.searchParams.get('q'))return;event.preventDefault();const term=u.searchParams.get('q');document.getElementById('q').value=term;void search({parentTokenId:window.__qActiveTokenId,relation:'extracted-link',term})});
 
 let stockWidgetRequest=0,stockWidgetRuntimePromise=null;
+// Curated aliases for popular exchange listings. Unknown names still go through
+// the verified resolver; an unfamiliar name must never become a guessed ticker.
+const STOCK_LISTINGS=[
+ {match:/\b(?:meta(?:\s+platforms)?|facebook)\b/i,company:'Meta Platforms',symbol:'META',exchange:'NASDAQ'},
+ {match:/\b(?:alphabet|google)\b/i,company:'Alphabet',symbol:'GOOGL',exchange:'NASDAQ'},
+ {match:/\b(?:microsoft)\b/i,company:'Microsoft',symbol:'MSFT',exchange:'NASDAQ'},
+ {match:/\b(?:apple|aapl)\b/i,company:'Apple',symbol:'AAPL',exchange:'NASDAQ'},
+ {match:/\b(?:nvidia|nvda)\b/i,company:'NVIDIA',symbol:'NVDA',exchange:'NASDAQ'},
+ {match:/\b(?:tesla|tsla)\b/i,company:'Tesla',symbol:'TSLA',exchange:'NASDAQ'},
+ {match:/\b(?:amazon|amzn)\b/i,company:'Amazon',symbol:'AMZN',exchange:'NASDAQ'},
+ {match:/\b(?:ibm|international business machines)\b/i,company:'IBM',symbol:'IBM',exchange:'NYSE'},
+ {match:/\b(?:amd|advanced micro devices)\b/i,company:'AMD',symbol:'AMD',exchange:'NASDAQ'}
+];
 function stockQueryIntent(query){
  const q=String(query||'').trim();
  if(!q||/\bstock\s+(photo|image|footage|video|inventory)\b/i.test(q))return false;
- return /\b(stock(?:s)?|stock price|share price|stock quote|ticker|market price|shares?)\b/i.test(q);
+ return /\b(?:stock(?:s)?|share price|stock quote|ticker|market price|shares?)\b/i.test(q)
+   || /\$[A-Z]{1,5}\b/.test(q)
+   || /(?:^|\s)(?:META|GOOGL|GOOG|AAPL|MSFT|NVDA|TSLA|AMZN|IBM|AMD)(?=\s|$)/.test(q);
+}
+function stockKnownListing(query){
+ const q=String(query||'');
+ if(/\bGOOG\b/.test(q)&&!(/\bGOOGL\b/.test(q)))return {company:'Alphabet Class C',symbol:'GOOG',exchange:'NASDAQ'};
+ return STOCK_LISTINGS.find(item=>item.match.test(q))||null;
 }
 function stockWidgetHost(){
  let host=document.getElementById('widgetPhiStockHost');
@@ -626,24 +646,58 @@ function stockWidgetHost(){
  if(result)result.insertAdjacentElement('afterend',host);else document.body.appendChild(host);
  return host;
 }
+function stockNotice(host,message,listing,query){
+ host.hidden=false;host.replaceChildren();
+ const section=document.createElement('section');section.className='qzone qzoneBlue';section.style.margin='14px 0';
+ const heading=document.createElement('h3');heading.textContent='Market card';
+ const description=document.createElement('p');description.textContent=message;
+ section.append(heading,description);
+ if(listing){
+  const link=document.createElement('a');
+  link.href='https://www.google.com/finance/quote/'+encodeURIComponent(listing.symbol)+':'+encodeURIComponent(listing.exchange);
+  link.target='_blank';link.rel='noopener noreferrer';
+  link.textContent='View '+listing.symbol+' quote on Google Finance';
+  section.appendChild(link);
+ }else if(/meta/i.test(query)){
+  const button=document.createElement('button');button.type='button';
+  button.textContent='Did you mean Meta Platforms (META)?';
+  button.onclick=()=>void maybeRenderStockWidget('Meta Platforms stock',activeSearchRun);
+  section.appendChild(button);
+ }
+ host.appendChild(section);
+}
 function loadWidgetPhiStock(){
- if(window.WidgetPhiStock)return Promise.resolve(window.WidgetPhiStock);
+ if(window.WidgetPhiStock?.renderCard)return Promise.resolve(window.WidgetPhiStock);
  if(stockWidgetRuntimePromise)return stockWidgetRuntimePromise;
+ const sources=[
+  '/widgetphi-stock.js?v=20261009-stock-recovery1',
+  'https://cdn.jsdelivr.net/gh/www-infinity4/WidgetPhi@b5c18e8b4938fb91bd8c3f47e94c10352d32d094/browser/widgetphi-stock.js'
+ ];
  stockWidgetRuntimePromise=new Promise((resolve,reject)=>{
-  const existing=document.querySelector('script[data-widgetphi-stock-runtime]');
-  if(existing){existing.addEventListener('load',()=>resolve(window.WidgetPhiStock),{once:true});existing.addEventListener('error',reject,{once:true});return}
-  const script=document.createElement('script');script.async=true;script.dataset.widgetphiStockRuntime='1';
-  script.src='https://cdn.jsdelivr.net/gh/www-infinity4/WidgetPhi@b5c18e8b4938fb91bd8c3f47e94c10352d32d094/browser/widgetphi-stock.js';
-  script.onload=()=>window.WidgetPhiStock?resolve(window.WidgetPhiStock):reject(new Error('WidgetPhi stock runtime unavailable'));
-  script.onerror=()=>reject(new Error('WidgetPhi stock runtime failed to load'));
-  document.head.appendChild(script);
+  function attempt(n){
+   if(n>=sources.length){reject(new Error('WidgetPhi stock runtime unavailable'));return}
+   const script=document.createElement('script');script.async=true;script.dataset.widgetphiStockRuntime='1';script.src=sources[n];
+   let finished=false;
+   const settle=success=>{
+    if(finished)return;finished=true;clearTimeout(timeout);
+    if(success&&window.WidgetPhiStock?.renderCard){resolve(window.WidgetPhiStock);return}
+    script.remove();attempt(n+1);
+   };
+   const timeout=setTimeout(()=>settle(false),8000);
+   script.onload=()=>settle(true);script.onerror=()=>settle(false);
+   document.head.appendChild(script);
+  }
+  attempt(0);
  }).catch(error=>{stockWidgetRuntimePromise=null;throw error});
  return stockWidgetRuntimePromise;
 }
 function stockJsonFromAi(data){
- let raw=data?.output_text??data?.output??data?.answer??data?.response??data?.content??data?.message??'';
- if(raw&&typeof raw==='object'&&!Array.isArray(raw))return raw;
- raw=String(raw||'').replace(/```(?:json)?/gi,'').replace(/```/g,'').trim();
+ let raw=data?.output_text??data?.output??data?.answer??data?.response??data?.content??data?.message??data?.result??'';
+ if(raw&&typeof raw==='object'&&!Array.isArray(raw)){
+  if('is_stock' in raw)return raw;
+  raw=raw.output_text??raw.text??raw.content??raw.answer??'';
+ }
+ raw=String(raw||'').replace(/```(?:json)?/gi,'').trim();
  const a=raw.indexOf('{'),b=raw.lastIndexOf('}');if(a<0||b<a)return null;
  try{return JSON.parse(raw.slice(a,b+1))}catch(_){return null}
 }
@@ -654,19 +708,28 @@ function normalizeStockExchange(value){
  return x;
 }
 async function maybeRenderStockWidget(query,searchRun){
- const host=stockWidgetHost();
+ const host=stockWidgetHost(),request=++stockWidgetRequest;
  if(!stockQueryIntent(query)){host.hidden=true;host.replaceChildren();return}
- const request=++stockWidgetRequest;host.hidden=false;host.innerHTML='<small>Loading market card…</small>';
+ host.hidden=false;host.innerHTML='<small>Loading market card…</small>';
+ let listing=stockKnownListing(query);
  try{
-  const instruction='Resolve this user search only if it is asking for a publicly traded stock/security quote or ticker. Return STRICT JSON only with keys is_stock, company, symbol, exchange. Never invent a ticker. Use the current primary U.S. listing when appropriate. For a generic Google/Alphabet stock request use GOOGL on NASDAQ unless the user explicitly asks for GOOG. If uncertain or not a stock request, return {"is_stock":false}. User search: '+JSON.stringify(String(query||''));
-  const {response,data}=await boundedJsonRequest(signal=>fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',signal,headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({userId:quantaAiUserId(),input:instruction,context:{application:'QuantaPhi',assistant:'widgetphi-stock-resolver',requireCloudflare:true,task:'stock-symbol-resolution',verified_context:{query:String(query||'').slice(0,500)}}})}),12000);
+  if(!listing){
+   const instruction='Resolve this user search only if it is asking for a publicly traded stock/security quote or ticker. Return STRICT JSON only with keys is_stock, company, symbol, exchange. Never invent a ticker. Use the current primary U.S. listing when appropriate. For a generic Google/Alphabet stock request use GOOGL on NASDAQ unless the user explicitly asks for GOOG. If uncertain or not a stock request, return {"is_stock":false}. User search: '+JSON.stringify(String(query||''));
+   const {response,data}=await boundedJsonRequest(signal=>fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',signal,headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({userId:quantaAiUserId(),input:instruction,context:{application:'QuantaPhi',assistant:'widgetphi-stock-resolver',requireCloudflare:true,task:'stock-symbol-resolution',verified_context:{query:String(query||'').slice(0,500)}}})}),12000);
+   if(request!==stockWidgetRequest||searchRun!==activeSearchRun)return;
+   if(!response.ok)throw new Error('stock resolver HTTP '+response.status);
+   const resolved=stockJsonFromAi(data),symbol=String(resolved?.symbol||'').trim().toUpperCase(),exchange=normalizeStockExchange(resolved?.exchange);
+   if(resolved?.is_stock&&/^[A-Z0-9.^-]{1,16}$/.test(symbol)&&exchange)listing={company:String(resolved.company||symbol).slice(0,180),symbol,exchange};
+  }
   if(request!==stockWidgetRequest||searchRun!==activeSearchRun)return;
-  if(!response.ok)throw new Error('stock resolver HTTP '+response.status);
-  const resolved=stockJsonFromAi(data);const symbol=String(resolved?.symbol||'').trim().toUpperCase();const exchange=normalizeStockExchange(resolved?.exchange);
-  if(!resolved?.is_stock||!/^[A-Z0-9.^-]{1,16}$/.test(symbol)||!exchange){host.hidden=true;host.replaceChildren();return}
-  const runtime=await loadWidgetPhiStock();if(request!==stockWidgetRequest||searchRun!==activeSearchRun)return;
-  runtime.renderCard({company:String(resolved.company||symbol).slice(0,180),symbol,exchange,query:String(query||'').slice(0,500),permalink:searchPermalink(query)},host);
- }catch(error){console.warn('WidgetPhi stock card unavailable',error);if(request===stockWidgetRequest){host.hidden=true;host.replaceChildren()}}
+  if(!listing){stockNotice(host,'No verified stock ticker matched this search. Try the company name or ticker, for example META stock or AAPL stock.',null,query);return}
+  const runtime=await loadWidgetPhiStock();
+  if(request!==stockWidgetRequest||searchRun!==activeSearchRun)return;
+  runtime.renderCard({company:listing.company,symbol:listing.symbol,exchange:listing.exchange,query:String(query||'').slice(0,500),permalink:searchPermalink(query)},host);
+ }catch(error){
+  console.warn('WidgetPhi stock card unavailable',error);
+  if(request===stockWidgetRequest&&searchRun===activeSearchRun)stockNotice(host,'The live stock widget is temporarily unavailable. The verified quote link below remains accessible.',listing,query);
+ }
 }
 
 // The deadline covers both response headers and the JSON body, even if a bridge ignores abort.
