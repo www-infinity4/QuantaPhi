@@ -1,0 +1,26 @@
+name: Oracle Storybook regressions
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'storybook/**'
+      - 'index.html'
+      - 'test/oracle-storybook.test.cjs'
+      - '.github/workflows/oracle-storybook.yml'
+  pull_request:
+    paths:
+      - 'storybook/**'
+      - 'index.html'
+      - 'test/oracle-storybook.test.cjs'
+      - '.github/workflows/oracle-storybook.yml'
+jobs:
+  storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          node --check storybook/storybook.js
+          node --test test/oracle-storybook.test.cjs
