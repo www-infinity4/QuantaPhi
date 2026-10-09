@@ -676,7 +676,7 @@ async function runImage(request, env) {
        attemptErrors.push({model:plan.model,attempt:attemptNumber,error:message.slice(0,700)});
        // A provider flag is a terminal moderation decision for this request.
        // Do not try alternate prompts or models to work around the rejection.
-       if(/\\b3030\\b|output has been flagged|choose another prompt\\s*\\/\\s*input image/i.test(message)){
+       if(/\b3030\b|output has been flagged|choose another prompt\s*\/\s*input image/i.test(message)){
          return json(request,{
            ok:false,
            code:"image_input_flagged",
