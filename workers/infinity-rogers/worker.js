@@ -360,6 +360,44 @@ async function runComfyProxy(request, env) {
  }
 }
 
+// Read a small bounded set of public research articles instead of relying on snippets alone.
+async function runResearchSourceExcerpts(request){
+ let body;try{body=await request.json()}catch{return json(request,{ok:false,error:"json_required"},400)}
+ const input=Array.isArray(body?.sources)?body.sources.slice(0,4):[];
+ if(!input.length)return json(request,{ok:false,error:"sources_required"},400);
+ const allowed=host=>host.endsWith(".gov")||host.endsWith(".edu")||[
+   "wikipedia.org","wikimedia.org","archive.org","history.com","britannica.com",
+   "pbs.org","si.edu","smithsonianmag.com","nationalgeographic.com","nature.com",
+   "science.org","royalsociety.org","aps.org","acm.org","ieee.org"
+ ].some(v=>host===v||host.endsWith("."+v));
+ async function read(entry){
+   let url;try{url=new URL(clean(entry?.url,1600))}catch{return null}
+   if(url.protocol!=="https:"||url.username||url.password||url.port||!allowed(url.hostname.toLowerCase()))return null;
+   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),5500);
+   try{
+     const response=await fetch(url.toString(),{redirect:"error",signal:controller.signal,headers:{Accept:"text/html,text/plain"}});
+     if(!response.ok)return null;
+     const type=String(response.headers.get("content-type")||"").toLowerCase();
+     if(type&&!type.includes("text/html")&&!type.includes("text/plain"))return null;
+     const reader=response.body?.getReader();if(!reader)return null;
+     const chunks=[];let bytes=0;
+     try{while(bytes<180000){
+       const next=await reader.read();if(next.done)break;
+       const chunk=next.value||new Uint8Array(0),keep=chunk.subarray(0,180000-bytes);
+       chunks.push(keep);bytes+=keep.byteLength;
+     }}finally{await reader.cancel().catch(()=>{})}
+     const data=new Uint8Array(bytes);let offset=0;for(const chunk of chunks){data.set(chunk,offset);offset+=chunk.byteLength}
+     const excerpt=new TextDecoder().decode(data).replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi," ")
+       .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi," ").replace(/<[^>]+>/g," ")
+       .replace(/&(?:nbsp|#160);/gi," ").replace(/&amp;/gi,"&").replace(/&lt;/gi,"<").replace(/&gt;/gi,">")
+       .replace(/&quot;/gi,'"').replace(/\s+/g," ").trim().slice(0,3600);
+     return excerpt.length>=350?{url:url.toString(),title:clean(entry?.title,180),excerpt,sourceType:"retrieved-page-text"}:null;
+   }catch{return null}finally{clearTimeout(timer)}
+ }
+ const sources=(await Promise.all(input.map(read))).filter(Boolean);
+ return json(request,{ok:true,sources,requested:input.length,read:sources.length,method:"public-page-extraction"});
+}
+
 async function runImageRead(request, env) {
  if (!env.AI) return json(request,{ok:false,error:"workers_ai_not_configured"},503);
  let form;
@@ -763,6 +801,7 @@ export default {
 
     if (request.method === "POST") {
       if (!originAllowed(request)) return json(request, { ok: false, error: "origin_not_allowed" }, 403);
+      if (url.pathname === "/v1/research-source-excerpts") return runResearchSourceExcerpts(request);
       if (url.pathname === "/v1/image") return runImage(request, env);
       if (url.pathname === "/v1/comfy-image") return runComfyProxy(request, env);
       if (url.pathname === "/v1/image-read") return runImageRead(request, env);
