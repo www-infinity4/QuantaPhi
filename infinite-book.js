@@ -229,7 +229,7 @@
           await bridge.attachGenerated(story,blob,{renderer:generated.renderer,review});
           if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(approved?(home?'Opening story image generated, reviewed and saved to this device.':'Sourced GPT story · original illustration generated, reviewed, and attached.'):'Story illustration saved · '+(review.status==='needs_work'?'visual review found details to improve.':'visual quality not yet confirmed.'));
         }catch(error){
-          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(error?.code==='image_daily_cap'?'Story ready. Image service daily limit reached.':'Story ready. Automatic illustration could not be approved or saved: '+String(error?.message||error).slice(0,130));
+          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note('Story ready. Automatic illustration could not be approved or saved: '+String(error?.message||error).slice(0,130));
         }finally{artRunning.delete(story.id)}
       }
     }finally{artBusy=false}
