@@ -86,7 +86,7 @@ async function download(artifact,src){
   a.href=url;a.download=file.name;document.body.append(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),2500);
   window.PhiImageLearning?.record(artifact,'save_requested');
-  message('Download requested. Browser saves cannot be confirmed automatically; this is a weak preference signal until you Star, Collect, or tap Looks good.');
+  message('Download requested. Check your phone Downloads to confirm the image was saved.');
  }catch(error){message('Save image unavailable: '+String(error?.message||error))}
 }
 window.addEventListener('phi:image:action',event=>{
