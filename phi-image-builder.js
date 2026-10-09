@@ -143,7 +143,8 @@ async function build(){
   }else{title.textContent='Visual review unavailable';summary.textContent='Artwork rendered, but its details and lettering have not been checked.';audit.dataset.review='uncertain'}
   step(phase,'done',review?'Visual check complete':'Review unavailable');
   $('.pi-result').src=result;
-  $('[data-pi-action="star"]').textContent='☆ Star';
+  // The standalone image builder no longer has a Star control.
+  // Never let obsolete controls prevent completed artwork from appearing.
   state('finished');notice('Created '+size.width+' × '+size.height+' using '+rendered.renderer+(warning?' · '+warning:''));
   emit('build:done',artifact);
  }catch(error){
