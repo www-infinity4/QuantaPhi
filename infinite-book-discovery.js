@@ -429,7 +429,7 @@ async function writeWikipediaStory(page,plan,roll){
  try{
   const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
    body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',
-    verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},6500);
+    verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},16000);
   if(data?.ok===false)return null;
   const out=jsonAnswer(textAnswer(data));
   if(!out||out.insufficient||!isSecretStory(out)||clean(out.summary).length<90||clean(out.full).length<230)return null;
