@@ -113,6 +113,7 @@ test('GPT scouts obscure event queries then writes only when two independent sou
  const fetch=async(url,opts={})=>{
   const u=String(url);
   if(u.includes('orange-brook')){log.searches.push(u);return {ok:true,json:async()=>({results:sources})}}
+  if(u.includes('/v1/research-source-excerpts'))return {ok:true,json:async()=>({ok:true,sources:[]})};
   if(u.includes('infinity-rogers')){
    const input=JSON.parse(opts.body).input;log.prompts.push(input);
    if(input.includes('SEARCH-PLANNING'))return {ok:true,json:async()=>({ok:true,output:JSON.stringify({queries:['Nikola Tesla overlooked wireless boat prototype 1898 museum patent','1898 Nikola Tesla remotely controlled boat original demonstration history']})})};
