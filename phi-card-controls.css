@@ -4,7 +4,7 @@
   --phi-pill-border:#bca4cd;
   --phi-pill-text:#4c286e;
   --phi-pill-radius:999px;
-  --phi-pill-height:48px;
+  --phi-pill-height:41px;
 }
 #infiniteBook,#phiImageBuilder,#fredSpacesRadio{min-width:0;max-width:100%}
 #infiniteBook .ib-story,#phiImageBuilder .pi-panel,#fredSpacesRadio .fs-card{border-radius:22px;overflow:visible}
@@ -14,7 +14,7 @@
 #infiniteBook .ib-actions,#fredSpacesRadio .fs-actions,
 #fredSpacesRadio .fs-builds{
   display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:9px;margin:14px 0
+  gap:7px;margin:11px 0
 }
 #infiniteBook .ib-actions .ib-action,
 #fredSpacesRadio .fs-actions .fs-btn,
@@ -22,8 +22,8 @@
 #phiImageBuilder .pi-actions button{
   display:flex;align-items:center;justify-content:center;
   width:100%;min-height:var(--phi-pill-height);height:100%;
-  padding:10px 8px;border-radius:var(--phi-pill-radius);
-  font-size:clamp(12px,3.3vw,14px);font-weight:800
+  padding:8px 7px;border-radius:var(--phi-pill-radius);
+  font-size:clamp(11px,3vw,12px);font-weight:750
 }
 #infiniteBook .ib-action,#fredSpacesRadio .fs-btn,
 #phiImageBuilder .pi-actions button{
@@ -31,36 +31,36 @@
   color:var(--phi-pill-text)
 }
 #infiniteBook .ib-next{
-  min-height:44px;padding:9px 14px;border-radius:var(--phi-pill-radius);
+  min-height:40px;padding:7px 11px;border-radius:var(--phi-pill-radius);
   background:#fffdfc;border-color:#bca4cd;color:var(--phi-pill-text)
 }
 #infiniteBook .ib-build{
   display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
-  align-items:stretch;gap:9px;padding-top:14px
+  align-items:stretch;gap:7px;padding-top:11px
 }
-#infiniteBook .ib-build > span{grid-column:1/-1;font-size:13px;line-height:1.4}
+#infiniteBook .ib-build > span{grid-column:1/-1;font-size:11px;line-height:1.4}
 #infiniteBook a.ib-build-link{
   display:flex;align-items:center;justify-content:center;
-  width:100%;min-height:54px;padding:9px 7px;
+  width:100%;min-height:41px;padding:7px 6px;
   background:#fff!important;color:var(--phi-pill-text)!important;
   border:1px solid var(--phi-pill-border);
-  border-radius:var(--phi-pill-radius);font-size:clamp(12px,3.3vw,14px);
+  border-radius:var(--phi-pill-radius);font-size:clamp(11px,3vw,12px);
   font-weight:850;text-decoration:none
 }
 #infiniteBook .ib-build > .ib-action[data-book-action="illustrate"]{
-  grid-column:1/-1;width:100%;min-height:48px
+  grid-column:1/-1;width:100%;min-height:41px
 }
 #fredSpacesRadio .fs-builds .fs-phi{
   background:#fff;color:var(--phi-pill-text);border:1px solid var(--phi-pill-border);
-  border-radius:var(--phi-pill-radius);min-height:54px;flex:auto
+  border-radius:var(--phi-pill-radius);min-height:41px;flex:auto
 }
-#fredSpacesRadio .fs-next{width:100%;min-height:48px;border-radius:var(--phi-pill-radius);padding:12px}
+#fredSpacesRadio .fs-next{width:100%;min-height:44px;border-radius:var(--phi-pill-radius);padding:9px 12px}
 #fredSpacesRadio .fs-stream{max-width:100%;overflow-wrap:anywhere}
 #phiImageBuilder .pi-mode{
-  min-height:44px;padding:10px 14px;border-radius:var(--phi-pill-radius);
-  background:#fff;color:#234d77;border:1px solid #94b8d5;font-size:13px
+  min-height:40px;padding:8px 10px;border-radius:var(--phi-pill-radius);
+  background:#fff;color:#234d77;border:1px solid #94b8d5;font-size:12px
 }
-#phiImageBuilder .pi-primary{min-height:50px;border-radius:var(--phi-pill-radius)}
+#phiImageBuilder .pi-primary{min-height:46px;border-radius:var(--phi-pill-radius)}
 /* Wallet controls match the white billboard card's pale lavender pills. */
 body .qbalances .qtoken,
 body .qbalances .qstar,
