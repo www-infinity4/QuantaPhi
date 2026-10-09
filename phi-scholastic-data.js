@@ -246,6 +246,7 @@ function activate(query,sections,evidence){
  const root=document.getElementById('overview');
  const red=root?.querySelector('.qzoneRed'),yellow=root?.querySelector('.qzoneYellow');
  if(!red||!yellow)return;
+ if(active?.red===red&&active?.yellow===yellow)return;
  if(active?.observer)active.observer.disconnect();
  red.classList.add('qscholastic-reader');yellow.classList.add('qdata-oracle-card');
  active={query:clean(query),tokenId:window.__qActiveTokenId||'',selected:new Set(),yellow,red,sections,evidence,busy:false,lastComparison:null,observer:null};
