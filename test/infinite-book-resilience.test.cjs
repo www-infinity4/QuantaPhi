@@ -229,7 +229,7 @@ test('story-to-Phi links use a semantic index and the existing explicit QuantaPh
 
 test('next story displays prepared content before research begins',()=>{
  const code=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
- const section=code.split("async function nextStory(query = '')")[1].split("window.addEventListener('quantaphi:search-start'")[0];
+ const section=code.split("async function nextStory(query = '', options = {})")[1].split("window.addEventListener('quantaphi:search-start'")[0];
  assert.ok(section.includes('pickUnique(roll, seenIds())'));
  assert.ok(section.includes('render(ready, roll)'));
  assert.ok(section.indexOf('render(ready, roll)') < section.indexOf('discoverInBackground(roll, acceptNew)'));
@@ -247,4 +247,16 @@ test('slow same-origin source feed does not delay the first story',()=>{
  assert.ok(!init.includes('await appendConfiguredFeed()'));
  assert.ok(init.includes('void appendConfiguredFeed().then(refillReadyStories)'));
  assert.ok(init.includes('await nextStory(lastSearchQuery)'),'latest search must be honored if it arrived while the catalog loaded');
+});
+
+test('explicit research spins are cloud-receipted with sourced articles and never on ordinary search',()=>{
+ const code=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
+ assert.match(code,/rewardSpin:true/);
+ assert.match(code,/QuantaStarCoinCloud\?\.record\?\.\('spin',spinReference/);
+ assert.match(code,/requireFresh=options\.requireFresh===true/);
+ assert.match(code,/\.ib-research-chips/);
+ assert.match(code,/PhiAssimilation\?\.corpus/);
+ assert.match(code,/parentQuery:lastSearchQuery/);
+ assert.match(fs.readFileSync(path.join(__dirname,'..','star-coin-cloud.js'),'utf8'),/compactResearch/);
+ assert.match(fs.readFileSync(path.join(__dirname,'..','workers/quanta-phi-ledger/worker.js'),'utf8'),/spinCount\*10/);
 });
