@@ -1,0 +1,61 @@
+/* Media Star-level Oracle treatment for the real research cards. */
+#result .qzoneRed.qscholastic-reader,
+#result .qzoneYellow.qdata-oracle-card{position:relative;isolation:isolate;overflow:hidden;border-radius:27px!important;padding:18px!important;box-shadow:0 0 0 1px #f1b5ff38,0 12px 34px #4c193b50!important}
+#result .qzoneRed.qscholastic-reader{background:radial-gradient(circle at 95% 5%,#b947478a,transparent 43%),linear-gradient(145deg,#690c27,#330713 85%)!important;color:#fff2e6!important;border:2px solid #f65d6f!important;box-shadow:0 0 0 2px #fff5ef4d,0 0 28px #fa617c83,0 16px 35px #53112973!important}
+#result .qzoneYellow.qdata-oracle-card{background:radial-gradient(circle at 91% 0%,#fff8c4,transparent 46%),linear-gradient(145deg,#fff9cd,#ffde80 66%,#e6a728)!important;color:#4f2b03!important;border:2px solid #f4c343!important;box-shadow:0 0 0 1px #fff8d7,0 0 26px #ffcf67a8,0 16px 35px #7d551e45!important}
+#result .q-oracle-hero{min-height:155px;position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 12px;border-radius:20px;margin-bottom:13px;overflow:hidden}
+#result .q-oracle-reader{background:radial-gradient(circle at 75% 40%,#f3a96080,transparent 55%),linear-gradient(115deg,#390513,#7c172f);border:1px solid #ffb177;box-shadow:inset 0 0 24px #ffb35d35}
+#result .q-oracle-data{background:radial-gradient(circle at 78% 38%,#fff8ce,transparent 50%),linear-gradient(110deg,#ffd56b,#dca129);border:1px solid #fff5c9;box-shadow:inset 0 0 24px #fff1b471}
+#result .q-oracle-hero::before{content:"";pointer-events:none;position:absolute;inset:5px;border-radius:19px;border:1px solid #ffffff59;z-index:0}
+#result .q-oracle-avatar{position:absolute;right:-14px;top:-11px;width:clamp(160px,45%,275px);height:calc(100% + 35px);object-fit:contain;pointer-events:none;filter:drop-shadow(0 0 13px #ffd36e75);z-index:0}
+#result .q-oracle-heading{position:relative;z-index:1;display:flex;flex-direction:column;gap:10px;width:72%;max-width:370px}
+#result .q-oracle-heading .q-oracle-eyebrow{display:inline-flex;align-self:flex-start;padding:5px 9px;border-radius:999px;font-size:10px;font-weight:950;letter-spacing:.03em;line-height:1.3;backdrop-filter:blur(5px)}
+#result .q-oracle-reader .q-oracle-eyebrow{background:#5b182d;color:#fff4d9;border:1px solid #ffc6a6}
+#result .q-oracle-data .q-oracle-eyebrow{background:#fff5cd;color:#684004;border:1px solid #eeb848}
+#result .q-oracle-heading strong{font-weight:950;font-size:clamp(19px,5vw,27px);line-height:1.2;letter-spacing:-.02em;text-wrap:balance;text-shadow:0 2px 11px #32000d55}
+#result .q-oracle-heading small{font-size:12px;font-weight:850;line-height:1.5}
+#result .q-oracle-reader .q-oracle-heading :is(strong,small){color:#fff8ee!important}
+#result .q-oracle-data .q-oracle-heading :is(strong,small){color:#492a02!important;text-shadow:0 1px 1px #fff7c5}
+#result .qscholastic-reader > h3.qreader-original-title,#result .qdata-oracle-card > h3{font-size:15px!important;font-weight:900;letter-spacing:.02em}
+#result .qscholastic-reader > h3.qreader-original-title{color:#ffe7cf!important}
+#result .qdata-oracle-card > h3{color:#573100!important}
+#result .qreader-prose{padding:17px 16px 12px;border-radius:18px;background:#23051075;border:1px solid #ffb4ac75;box-shadow:inset 0 0 20px #e26c3030}
+#result .qreader-prose p{color:#fff9ef!important;font-size:16px!important;line-height:1.78!important;margin:0 0 13px;letter-spacing:.01em}
+#result .qreader-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}
+#result .qreader-actions button{min-width:130px;flex:1;background:linear-gradient(140deg,#e62a4d,#91112e)!important;border:1px solid #ffa58e!important;color:#fff!important;box-shadow:0 0 15px #ff60786b;font-weight:850}
+#result .qreader-actions button:last-child{background:linear-gradient(145deg,#fff6e6,#ffe0c2)!important;color:#6a1b2f!important;border-color:#ffe1a9!important}
+#result .qdata-oracle-card .qdata-lead{font-weight:750;color:#5b370a!important;line-height:1.55;margin:10px 0 14px}
+#result .qdata-toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:10px;border-radius:17px;background:#fff8e4;border:1px solid #f3c569}
+#result .qdata-count{font-size:12px;font-weight:900;color:#67420a;flex:1}
+#result .qdata-actions{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+#result .qdata-actions button{min-height:40px;padding:9px 12px;font-size:12px;flex:1;white-space:nowrap!important;color:#482903!important;background:linear-gradient(140deg,#fffdeb,#ffe4a1)!important;border:1px solid #d8a64c!important;box-shadow:0 3px 9px #99601938}
+#result .qdata-actions .qdata-extract{background:linear-gradient(140deg,#5b3b0b,#3a250a)!important;color:#fff7d9!important;box-shadow:0 0 16px #dc9a399e}
+#result .qdata-actions button:disabled{filter:grayscale(.75);opacity:.52;cursor:not-allowed}
+#result .qdata-oracle-card #qYellowDataList{list-style:none;max-height:505px;overflow-y:auto;overscroll-behavior:contain;margin:12px 0;padding:10px;display:grid;gap:7px;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));border-radius:17px;background:#fff7dc7e;border:1px solid #eabe66;scrollbar-color:#b7832d #fff5cb;scrollbar-width:thin}
+#result .qdata-oracle-card #qYellowDataList li{list-style:none;margin:0!important;padding:0!important;min-width:0;display:flex;gap:5px;align-items:stretch}
+#result .qdata-oracle-card .qdata-select{flex:1;min-width:0;text-align:left!important;display:flex;align-items:center;gap:8px;padding:9px 11px!important;line-height:1.35!important;background:#fff9e9!important;color:#573406!important;border:1px solid #edc36e!important;border-radius:13px!important;box-shadow:0 2px 7px #96621219;min-height:44px!important;font-size:13px!important;font-weight:800;white-space:normal!important}
+#result .qdata-oracle-card .qdata-select::before{content:"";flex:0 0 15px;width:15px;height:15px;border:2px solid #a57323;border-radius:5px;background:#fff;box-sizing:border-box}
+#result .qdata-oracle-card .qdata-select.is-selected,#result .qdata-oracle-card .qdata-select[aria-pressed=true]{background:linear-gradient(135deg,#3f290b,#65400e)!important;color:#fff4c9!important;border-color:#f4c85d!important;box-shadow:0 0 0 2px #ffdf7b,0 0 14px #efac39a8}
+#result .qdata-oracle-card .qdata-select.is-selected::before{background:#ffdf77;box-shadow:inset 0 0 0 3px #4e3108;border-color:#f9dd86}
+#result .qdata-oracle-card .qdata-open{display:grid;place-items:center;align-self:stretch;min-width:36px;max-width:36px;margin:0!important;text-align:center;text-decoration:none!important;font-size:16px!important;color:#68420a!important;border:1px solid #e2b85c;background:#fffbef;border-radius:11px;font-weight:950}
+#result .qdata-oracle-card .qdata-open:focus-visible,#result .qdata-oracle-card .qdata-select:focus-visible{outline:3px solid #9a4bce;outline-offset:2px}
+#result .qdata-oracle-card .qdata-output{border:1px solid #dcb156;background:linear-gradient(145deg,#fffef5,#fff4d7);border-radius:18px;margin-top:14px;padding:15px;box-shadow:0 5px 15px #92620d2d}
+#result .qdata-oracle-card .qdata-output[hidden]{display:none!important}
+#result .qdata-oracle-card .qdata-output h4{color:#4f2b03;font-size:17px;margin:0 0 10px}
+#result .qdata-oracle-card .qdata-output p{white-space:pre-wrap;line-height:1.6;font-size:14px;margin:8px 0;color:#47300c}
+#result .qdata-oracle-card .qdata-evidence,#result .qdata-oracle-card .qdata-sources{margin-top:9px;border:1px solid #ebc474;background:#fff9e8;border-radius:12px;padding:9px 11px;color:#583604}
+#result .qdata-oracle-card :is(.qdata-evidence,.qdata-sources) summary{font-weight:900;cursor:pointer}
+#result .qdata-oracle-card .qdata-evidence a{color:#5833a2;overflow-wrap:anywhere}
+#result .qdata-oracle-card .qdata-evidence li{margin:7px 0}
+#result .qdata-oracle-card .qdata-status{margin-top:9px!important;font-size:12px!important;font-weight:800;color:#694916!important}
+@media(max-width:480px){
+ #result .q-oracle-hero{min-height:156px;padding:12px 9px}
+ #result .q-oracle-avatar{right:-29px;top:0;width:49%;height:100%;opacity:.94}
+ #result .q-oracle-heading{width:73%}
+ #result .q-oracle-heading strong{font-size:21px}
+ #result .q-oracle-eyebrow{font-size:9px!important}
+ #result .qdata-oracle-card #qYellowDataList{grid-template-columns:1fr;max-height:460px}
+ #result .qdata-actions{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ #result .qreader-actions{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){#result .qdata-oracle-card *,#result .qscholastic-reader *{transition:none!important}}
