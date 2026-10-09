@@ -269,5 +269,23 @@ async function reopenAsReference(instruction){
  finally{preparingReference=false}
 }
 layout();state('composer');
-window.PhiImageBuilder={prefill(text){$('#pi-prompt').value=String(text||'').slice(0,3000)},get:()=>({artifact,result,mode})};
+window.PhiImageBuilder={
+ prefill(text){$('#pi-prompt').value=String(text||'').slice(0,3000)},
+ get:()=>({artifact,result,mode}),
+ async applyEditedImage(src,options={}){
+  if(busy||!artifact||!result)throw Error('No finished image available to edit');
+  if(!String(src||'').startsWith('data:image/png;base64,'))throw Error('Expected a PNG image from the local editor');
+  const current=artifact;
+  const dimensions=await renderer.validate(src);
+  if(busy||artifact!==current)throw Error('Image changed during editing');
+  result=src;rawResult=src;lastRenderPlan=null;
+  artifact={...current,letteringEdited:true,editor:String(options.source||'local-canvas').slice(0,60),width:dimensions.width,height:dimensions.height};
+  $('.pi-result').src=src;
+  const audit=$('.pi-audit');
+  if(audit){audit.dataset.review='uncertain';audit.querySelector('.pi-audit-title').textContent='Typography edited locally';audit.querySelector('.pi-audit-summary').textContent='Editable real-font text was applied without another AI render. Please inspect the result before saving.';audit.querySelector('.pi-audit-issues').replaceChildren()}
+  notice('Updated artwork with real typography. Save, share or collect this edited image; no additional AI generation was called.');
+  emit('build:lettering',artifact);
+  return artifact;
+ }
+};
 })();
