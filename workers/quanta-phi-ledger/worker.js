@@ -492,8 +492,8 @@ export default {
         const directionCards=rows.filter(x=>x&&typeof x.title==="string"&&x.title.trim()).slice(0,30).map((d,i)=>({id:articleId+"-"+i,title:String(d.title||"").slice(0,180),body:String(d.body||"").slice(0,900),type:String(d.type||"website").slice(0,80),indexedWords:String(d.indexedWords||pack.terms.join(" ")).slice(0,700),source:"Bitcoin Crusher research Quant",articleId}));
         if(directionCards.length<10)return json({error:"directions_required"},400);
         const now=Date.now();
-        const result=await env.DB.prepare("INSERT OR IGNORE INTO quanta_crusher_research(user_id,article_id,wallet_id,article_json,directions_json,created_at,updated_at) VALUES(?,?,?,?,?,?,?)").bind(identity.user_id,articleId,wallet,JSON.stringify(pack),JSON.stringify(directionCards),now,now).run();
-        return json({ok:true,collected:true,duplicate:Number(result.meta?.changes||0)===0,article_id:articleId,directions:directionCards.length},201);
+        const result=await env.DB.prepare("INSERT INTO quanta_crusher_research(user_id,article_id,wallet_id,article_json,directions_json,created_at,updated_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(user_id,article_id) DO UPDATE SET article_json=excluded.article_json,directions_json=excluded.directions_json,updated_at=excluded.updated_at").bind(identity.user_id,articleId,wallet,JSON.stringify(pack),JSON.stringify(directionCards),now,now).run();
+        return json({ok:true,collected:true,article_id:articleId,directions:directionCards.length},201);
       }
       return json({error:"method_not_allowed"},405);
     }
