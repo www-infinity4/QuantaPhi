@@ -8,6 +8,12 @@ async function ensureStarCoinCredits(env) {
     env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_star_coin_credits_user_created ON quanta_star_coin_credits(user_id,created_at)")
   ]);
 }
+async function ensureCardInteractions(env) {
+  await env.DB.batch([
+    env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_card_interactions(user_id TEXT NOT NULL,event_id TEXT NOT NULL,kind TEXT NOT NULL,action TEXT NOT NULL,content_key TEXT NOT NULL,query_text TEXT NOT NULL,title TEXT NOT NULL,index_terms TEXT NOT NULL,created_at INTEGER NOT NULL,PRIMARY KEY(user_id,event_id))"),
+    env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_quanta_card_interactions_user_time ON quanta_card_interactions(user_id,created_at)")
+  ]);
+}
 async function ensureStorybook(env) {
   await env.DB.prepare("CREATE TABLE IF NOT EXISTS quant_storybook_meta(wallet_id TEXT NOT NULL,content_key TEXT NOT NULL,chapter TEXT NOT NULL DEFAULT 'Unsorted',note TEXT NOT NULL DEFAULT '',favorite INTEGER NOT NULL DEFAULT 0,updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(wallet_id,content_key))").run();
 }
@@ -160,6 +166,25 @@ export default {
       const searches = await env.DB.prepare("SELECT search_id,query_text,status,quant_mint_id,infinity_token_id,created_at FROM quanta_search_journal WHERE user_id=? ORDER BY created_at DESC LIMIT 1000").bind(identity.user_id).all();
       const tokens = await env.DB.prepare("SELECT t.token_id,t.source,t.data_json,t.created_at,(SELECT r.data_json FROM quanta_research_revisions r WHERE r.token_id=t.token_id AND r.user_id=t.user_id ORDER BY r.created_at DESC LIMIT 1) AS research_json FROM unified_token_records t WHERE t.user_id=? AND t.token_type='INFINITY_SEARCH' ORDER BY t.created_at DESC LIMIT 1000").bind(identity.user_id).all();
       return json({ ok:true, searches:searches.results, tokens:tokens.results });
+    }
+
+    if (url.pathname === "/v1/quants/card-interactions") {
+      await ensureCardInteractions(env);
+      if (request.method === "GET") {
+        const rows=await env.DB.prepare("SELECT event_id,kind,action,content_key,query_text,title,index_terms,created_at FROM quanta_card_interactions WHERE user_id=? ORDER BY created_at DESC LIMIT 2500").bind(identity.user_id).all();
+        return json({ok:true,events:rows.results||[]});
+      }
+      if (request.method === "POST") {
+        const body=await request.json().catch(()=>({}));
+        const eventId=String(body.id||'').slice(0,140),kind=String(body.kind||'card').slice(0,35),action=String(body.action||''),key=String(body.key||'').slice(0,250);
+        if(!/^[a-zA-Z0-9_-]{8,140}$/.test(eventId)||!['open','expand','star','unstar','collect','share','build','click'].includes(action))return json({error:'invalid_card_interaction'},400);
+        const query=String(body.query||'').trim().slice(0,600),title=String(body.title||'').trim().slice(0,600),terms=String(body.terms||'').trim().slice(0,600);
+        if(!title&&!query)return json({error:'card_subject_required'},400);
+        const clientTime=Date.parse(String(body.createdAt||'')),createdAt=Number.isFinite(clientTime)&&Math.abs(clientTime-Date.now())<86400000*30?clientTime:Date.now();
+        const result=await env.DB.prepare("INSERT OR IGNORE INTO quanta_card_interactions(user_id,event_id,kind,action,content_key,query_text,title,index_terms,created_at) VALUES(?,?,?,?,?,?,?,?,?)").bind(identity.user_id,eventId,kind,action,key,query,title,terms,createdAt).run();
+        return json({ok:true,recorded:Number(result.meta?.changes||0)>0});
+      }
+      return json({error:'method_not_allowed'},405);
     }
 
     if (url.pathname === "/v1/quants/interests" && request.method === "GET") {
