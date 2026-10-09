@@ -213,7 +213,7 @@ export default {
   const repoPath = '/' + route.repo + route.sourcePath;
   // Versioned repair assets read the exact published commit, avoiding stale main responses.
   const repairRef = ['20261009-billboard-grid5','20261009-eight-subjects5'].includes(incoming.searchParams.get('v'));
-  const sourceRef = repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
+  const sourceRef = (repairRef || route.sourcePath === '/index.html') && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
   const origin = new URL('https://www-infinity4.github.io' + repoPath);
   origin.search = incoming.search;
   const extension = route.sourcePath.split('.').pop().toLowerCase();
