@@ -3,7 +3,7 @@
 'use strict';
 const HISTORY='quantaPhiBuildHistoryV1',COLLECT='quantaPhiCollected';
 const SEARCH='https://orange-brook-a2ac.marvaseater.workers.dev/search';
-const AI='https://infinity-rogers.marvaseater.workers.dev/v1/chat';
+const AI='https://infinity-rogers.marvaseater.workers.dev/v1/book/generate';
 const terms=[
 [31,/radio|shortwave|ham\s?radio|am receiver|fm receiver|antenna|vacuum tube|transistor radio|rf circuit|walkie.talkie/i],
 [32,/broadcast|transmitter|airwaves|radio station|television signal|wireless telegraph/i],
@@ -355,7 +355,8 @@ async function findSearch({roll,catalog,seen,focus='',storyKind='legacy'}) {
  const direct=canSearch?plan.queries.slice(0,3).map(search):[];
  // Preserve daily writing tokens for the home opener; optional GPT scouting
  // belongs to actual search-driven Asteroid research only.
- const scout=storyKind==='reads-realms'?Promise.resolve([]):scoutQueries(plan,roll);
+ // The indexed search plan runs without requiring a separate model request first.
+ const scout=storyKind==='reads-realms'||storyKind==='asteroid'?Promise.resolve([]):scoutQueries(plan,roll);
  const suggestions=await Promise.race([scout,new Promise(resolve=>setTimeout(()=>resolve([]),2200))]);
  const requested=[...direct];
  if(canSearch&&suggestions[0])requested.push(search(suggestions[0]));
