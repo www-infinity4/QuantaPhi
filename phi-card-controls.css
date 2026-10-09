@@ -68,3 +68,22 @@ body.oracle-quanta #fredSpacesRadio .fs-media-star .fs-control-label{margin:17px
 body.oracle-quanta #fredSpacesRadio .fs-media-star .fs-embed-row{margin:11px 0 16px;padding-bottom:15px;border-bottom:1px solid #b78d4259}
 /* In-progress cards never expose the previous story's controls. */
 body.oracle-quanta #infiniteBook .ib-story[data-ready="false"] :is(.ib-details,.ib-research-branches,.ib-actions,.ib-build,.ib-illustration-actions){display:none!important}
+
+/* Billboard control rhythm: balanced rows instead of crowded pill clusters. */
+body.oracle-quanta{--phi-control-height:44px;--phi-control-radius:10px;--phi-control-gap:10px}
+body.oracle-quanta :is(.ib-actions,.ib-build,.pi-actions,.fs-actions,.fs-builds,.qreader-actions,.qdata-actions,.qzoneActions,.qactionRows,.qassimilate-actions,.qassim-actions,.imageActions,.videoActions,.soundActions,.widgetphi-stock-actions,.ib-illustration-actions){
+ display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch!important;margin-top:14px;
+}
+body.oracle-quanta :is(.ib-actions,.ib-build,.pi-actions,.fs-actions,.fs-builds,.qreader-actions,.qdata-actions,.qzoneActions,.qactionRows,.qassimilate-actions,.qassim-actions,.imageActions,.videoActions,.soundActions,.widgetphi-stock-actions,.ib-illustration-actions)>:is(button,a){width:100%!important;margin:0!important;padding:10px 12px!important}
+body.oracle-quanta :is(.ib-build>span,.pi-actions>.pi-wide){grid-column:1/-1}
+body.oracle-quanta :is(.qassim-package,.ib-story,.pi-panel,.fs-card,.qzone){padding:18px;line-height:1.6}
+body.oracle-quanta #result .qdata-toolbar{display:block;padding:14px}
+body.oracle-quanta #result .qdata-count{display:block;margin-bottom:10px;font-size:13px}
+body.oracle-quanta #result .qdata-select{border-radius:12px!important;min-height:48px!important;padding:12px!important}
+body.oracle-quanta #result .qdata-select[aria-pressed="true"]{background:#4e3514!important;color:#fff8e9!important;border-color:#a47835!important;box-shadow:0 0 0 2px #eac277!important}
+body.oracle-quanta #result .qdata-select[aria-pressed="true"]::before{background:#f8d87a;border-color:#f8d87a}
+body.oracle-quanta #result .qdata-output{padding:18px;background:#fffcf2;border:1px solid #dcb156}
+body.oracle-quanta #result .qdata-response{line-height:1.75}
+@media(max-width:340px){
+ body.oracle-quanta :is(.qdata-actions,.ib-actions,.ib-build,.pi-actions,.fs-actions,.fs-builds,.qassim-actions){grid-template-columns:1fr}
+}
