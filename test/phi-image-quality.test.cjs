@@ -107,3 +107,38 @@ test('image rejection keeps the original inputs editable and offers photo remova
  assert.match(html,/phi-image-builder\.js\?v=20261008-flag-recovery1/);
  assert.match(html,/phi-visual-render\.js\?v=20261008-flag-recovery1/);
 });
+
+test('search-generated sourced story is displayed after the overview assimilation',()=>{
+ const book=source('infinite-book.js');
+ const html=source('index.html');
+ assert.match(book,/function placeSearchStory\(/);
+ assert.match(book,/result\.insertAdjacentElement\('afterend',root\)/);
+ assert.match(book,/window\.addEventListener\('quantaphi:search-start'/);
+ assert.match(html,/infinite-book\.js\?v=20261008-story-image2/);
+});
+
+test('completed story images automatically attach and update is not a redundant save',()=>{
+ const bridge=source('phi-book-image-bridge.js');
+ assert.match(bridge,/phi:image:build:done/);
+ assert.match(bridge,/if\(finishedStory\?\.id\)void attach\(true\)/);
+ assert.match(bridge,/Update story image/);
+ assert.match(bridge,/visibleIllustration\?\.artifactId===data\?\.artifact\?\.id/);
+ assert.match(bridge,/\[data-pi-action="fix"\]/);
+ assert.match(bridge,/storeName='stories'/);
+ assert.match(source('index.html'),/phi-book-image-bridge\.js\?v=20261008-auto-attach2/);
+});
+
+test('one bounded automatic repair is scored against the original image',()=>{
+ const builder=source('phi-image-builder.js');
+ const worker=source('workers/infinity-rogers/worker.js');
+ assert.match(builder,/let review=null,autoRefined=false/);
+ assert.match(builder,/review\.status==='needs_work'/);
+ assert.match(builder,/score<75/);
+ assert.match(builder,/nextScore>firstScore/);
+ assert.match(builder,/const prior=await renderer\.asBlob\(rawResult\)/);
+ assert.match(builder,/No fake|pseudo-writing|fabricated letters|fake headlines/);
+ assert.match(worker,/LETTERING CHECK/);
+ assert.match(worker,/text-like textures are a high-severity issue/);
+ assert.match(worker,/Render visuals ONLY: zero painted letters or numerals/);
+ assert.match(source('index.html'),/phi-image-builder\.js\?v=20261008-auto-qa2/);
+});
