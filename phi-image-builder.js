@@ -37,7 +37,12 @@ function layout(){
  const choices=make('div','pi-modes');
  for(const name of modes){const b=make('button','pi-mode',name);b.type='button';b.dataset.piMode=name;b.setAttribute('aria-pressed',name===mode?'true':'false');choices.append(b)}
  form.append(choices);
- const uploads=make('div','pi-file-area');uploads.append(input('source','Upload image','Source / create similar'),input('design','Style reference','Optional second image'));form.append(uploads);
+ const uploads=make('div','pi-file-area');
+ for(const [kind,title,subtitle,removeLabel] of [['source','Upload image','Source / create similar','Remove uploaded photo'],['design','Style reference','Optional second image','Remove style reference']]){
+  uploads.append(input(kind,title,subtitle));
+  const remove=make('button','pi-mode',removeLabel);remove.type='button';remove.dataset.piAction='remove-'+kind;remove.hidden=true;uploads.append(remove);
+ }
+ form.append(uploads);
  const prompt=make('textarea');prompt.id='pi-prompt';prompt.setAttribute('aria-label','Describe image to build');prompt.placeholder='Describe the image, style, words, and edits you want. Example: A beautiful vintage AM radio advertisement photographed like a 1950s magazine cover.';form.append(prompt);
  const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Exact printed words (optional; no imaginary letters)';exact.setAttribute('aria-label','Exact words to print on the finished image');form.append(exact);
  const opts=make('div','pi-options');
@@ -68,7 +73,7 @@ async function build(){
  const description=typed||('Build a distinctive '+mode.toLowerCase()+' based on my uploaded reference or story.');
  const requestId=id(),story=contextStory(),search=contextSearch();
  busy=true;lastInstruction=description;lastExactText=exactText;result=null;rawResult=null;artifact=null;
- state('progress');initSteps();notice('Preparing a real render request…');
+ state('progress');initSteps();$('[data-pi-action="back"]').textContent='Back to description';notice('Preparing a real render request…');
  emit('build:start',{requestId,mode,description});
  let phase=0,warning='',vision='',prompt='';
  try{
@@ -108,14 +113,25 @@ async function build(){
   emit('build:done',artifact);
  }catch(error){
   step(phase,'error','Failed');
-  notice(String(error?.message||error).slice(0,290)+'. No image was produced. Go back to the description and retry.');
-  emit('build:error',{requestId,error:String(error?.message||error),phase});
+  const message=String(error?.message||error);
+  const flagged=error?.code==='image_input_flagged'||/\b3030\b|output has been flagged/i.test(message);
+  if(flagged){
+   notice('The image service flagged this attempt, and no artwork was produced. Change the description or remove/replace a reference photo, then build again. Your original inputs are saved here.');
+   $('[data-pi-action="back"]').textContent='Edit description or photo';
+  }else if(error?.code==='image_input_invalid'){
+   notice('The renderer could not accept this request. Check the description and uploaded images, then build again. Your inputs are preserved.');
+   $('[data-pi-action="back"]').textContent='Edit description or photo';
+  }else{
+   notice(message.slice(0,210)+'. No image was produced. Return to your description and try again.');
+  }
+  emit('build:error',{requestId,error:message,code:error?.code||'',phase});
  }finally{busy=false}
 }
 function showFile(file,kind){
  const el=kind==='source'?$('.pi-upload-image'):$('.pi-design-image');
  const old=el.dataset.url;if(old)URL.revokeObjectURL(old);el.removeAttribute('src');el.dataset.url='';
  if(file){const url=URL.createObjectURL(file);el.src=url;el.dataset.url=url}
+ const remove=$('[data-pi-action="remove-'+kind+'"]');if(remove)remove.hidden=!file;
 }
 host.addEventListener('change',event=>{
  const input=event.target.closest('[data-pi-file]');if(!input)return;
@@ -130,6 +146,13 @@ host.addEventListener('click',event=>{
  if(choice){mode=choice.dataset.piMode;host.querySelectorAll('[data-pi-mode]').forEach(b=>b.setAttribute('aria-pressed',b===choice?'true':'false'));return}
  const action=event.target.closest('[data-pi-action]')?.dataset.piAction;
  if(action==='build')void build();
+ if(action==='remove-source'||action==='remove-design'){
+  const kind=action==='remove-source'?'source':'design';
+  if(kind==='source')source=null;else design=null;
+  const upload=$('[data-pi-file="'+kind+'"]');if(upload)upload.value='';
+  showFile(null,kind);
+  notice(kind==='source'?'Uploaded photo removed. You can build from the description or choose another photo.':'Style reference removed.');
+ }
  if(action==='back'||action==='edit'){state('composer');if(lastInstruction)$('#pi-prompt').value=lastInstruction;$('#pi-exact-text').value=lastExactText}
  if(action==='more')void reopenAsReference(lastInstruction+'\nCreate a new variation retaining the original subject, valid geometry, and strongest composition.');
  if(action==='fix'){
