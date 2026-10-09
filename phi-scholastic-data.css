@@ -62,3 +62,22 @@
  #result .qreader-actions{flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){#result .qdata-oracle-card *,#result .qscholastic-reader *{transition:none!important}}
+/* Original generated Oracle artwork, presented at card width. The artwork
+   viewport shows the illustration; readable live content and real controls
+   follow below rather than duplicating the decorative text/buttons in the PNG. */
+body.oracle-quanta #result .q-oracle-hero {
+  display:block;min-height:0;padding:0;overflow:hidden;border-radius:20px;
+}
+body.oracle-quanta #result .q-oracle-artwork {
+  position:relative;width:100%;aspect-ratio:1.55;overflow:hidden;
+}
+body.oracle-quanta #result .q-oracle-data .q-oracle-artwork {aspect-ratio:1.3}
+body.oracle-quanta #result .q-oracle-artwork .q-oracle-avatar {
+  position:static;display:block;width:100%;height:auto;max-width:none;
+  object-fit:initial;opacity:1;filter:none;
+}
+body.oracle-quanta #result .q-oracle-heading {
+  position:relative;display:flex;flex-direction:column;gap:8px;
+  width:100%;max-width:none;box-sizing:border-box;padding:15px;
+}
+body.oracle-quanta #result .q-oracle-hero::before {display:none}

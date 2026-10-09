@@ -53,15 +53,16 @@ function renderLinks(){
 function hero(zone,kind){
  if(zone.querySelector('.q-oracle-hero'))return;
  const wrapper=make('div','q-oracle-hero q-oracle-'+kind);
+ const art=make('div','q-oracle-artwork');
  const image=make('img','q-oracle-avatar');
- image.src=kind==='reader'?'/assets/phi-scholastic-reader.svg':'/assets/phi-data-analyst.svg';
+ image.src=kind==='reader'?'/assets/phi-scholastic-reader.webp':'/assets/phi-data-analyst.webp';
  image.alt=kind==='reader'?'Illustrated open encyclopedia radiating scholarly light':'Illustrated futuristic android analyst with glowing data screens';
  image.loading='lazy';image.decoding='async';
  const copy=make('div','q-oracle-heading');
  copy.append(make('span','q-oracle-eyebrow','QUANTAPHI · ORACLE RESEARCH'),
   make('strong','',kind==='reader'?'Scholastic Reader':'Data Extraction'),
   make('small','',kind==='reader'?'AI Overview · Research & reading':'Select · Extract · Compare · Build'));
- wrapper.append(image,copy);
+ art.append(image);wrapper.append(art,copy);
  zone.insertBefore(wrapper,zone.firstChild);
 }
 function sourceNotes(items,container){
