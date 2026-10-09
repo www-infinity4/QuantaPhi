@@ -14,6 +14,7 @@ on:
       - 'infinite-book.css'
       - 'workers/infinity-rogers/worker.js'
       - 'test/phi-image-quality.test.cjs'
+      - 'test/phi-unlimited-generation.test.cjs'
       - '.github/workflows/phi-image-quality.yml'
   pull_request:
     paths:
@@ -28,6 +29,7 @@ on:
       - 'infinite-book.css'
       - 'workers/infinity-rogers/worker.js'
       - 'test/phi-image-quality.test.cjs'
+      - 'test/phi-unlimited-generation.test.cjs'
       - '.github/workflows/phi-image-quality.yml'
 jobs:
   image-quality:
@@ -41,4 +43,4 @@ jobs:
         run: |
           node --check fred-spaces-radio.js
           node --check phi-page-ui.js
-          node --test test/phi-image-quality.test.cjs test/phi-electric-ui.test.cjs
+          node --test test/phi-image-quality.test.cjs test/phi-electric-ui.test.cjs test/phi-unlimited-generation.test.cjs
