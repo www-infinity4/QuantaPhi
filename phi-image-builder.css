@@ -58,3 +58,29 @@
 #phiImageBuilder .pi-audit[data-review="needs_work"]{border-color:#cc9a5a;background:#fff8eb}
 #phiImageBuilder .pi-audit[data-review="good"]{border-color:#8aaf9b;background:#f5fcf7}
 #phiImageBuilder .pi-exact-input:focus-visible{outline:3px solid #1556c2;outline-offset:2px}
+
+
+/* Electric purple reader / review card, blue composition card, glowing touch controls. */
+#phiImageBuilder .pi-panel{padding:18px;border-radius:24px;border:1px solid #81afe0;background:radial-gradient(circle at 100% 0%,#ffffffb9,transparent 55%),linear-gradient(150deg,#eaf7ff,#b9dcff);box-shadow:0 12px 32px #2359a129,inset 0 1px 0 #fff}
+#phiImageBuilder h2{font-size:21px;letter-spacing:-.2px}
+#phiImageBuilder .pi-file{background:linear-gradient(145deg,#fff,#e7f4ff);min-height:122px;border:2px dashed #79aade}
+#phiImageBuilder .pi-mode{box-shadow:0 3px 9px #2255841b;transition:box-shadow .15s,transform .15s}
+#phiImageBuilder .pi-mode[aria-pressed="true"]{background:linear-gradient(135deg,#164c89,#295aa0);box-shadow:0 0 0 2px #acd7ff,0 0 14px #5da6f694}
+#phiImageBuilder .pi-primary{background:linear-gradient(135deg,#1257a0,#123e8a);border:1px solid #397fbd;box-shadow:0 6px 16px #18529d50}
+#phiImageBuilder .pi-steps{gap:10px}
+#phiImageBuilder .pi-step{min-height:44px;border-radius:15px;align-items:center}
+#phiImageBuilder .pi-result{border-radius:17px;border:2px solid #ac84e3;box-shadow:0 7px 24px #43187934;background:#f6f3ff}
+#phiImageBuilder .pi-audit{border:1px solid #a777f9;border-radius:22px;padding:17px;background:radial-gradient(circle at 90% 0%,#7a37f48c,transparent 55%),linear-gradient(140deg,#351265,#190a38);box-shadow:0 0 0 1px #d1adff35,0 12px 26px #461b896b,inset 0 1px 0 #ffffff3c;color:#fbf8ff}
+#phiImageBuilder .pi-audit-title{display:block;font-size:17px;letter-spacing:.2px;color:#fff;text-shadow:0 0 9px #a270ff}
+#phiImageBuilder .pi-audit-summary,#phiImageBuilder .pi-audit-issues{font-size:13px;line-height:1.65;color:#eee3ff}
+#phiImageBuilder .pi-audit[data-review="needs_work"]{border-color:#f0b1ff;background:radial-gradient(circle at 95% 0%,#a84ce66b,transparent 55%),linear-gradient(145deg,#49145f,#23103d)}
+#phiImageBuilder .pi-audit[data-review="good"]{border-color:#b1a5ff;background:radial-gradient(circle at 95% 0%,#704de682,transparent 55%),linear-gradient(145deg,#2f195e,#1b103e)}
+#phiImageBuilder .pi-actions{gap:9px;align-items:stretch;margin-top:15px}
+#phiImageBuilder .pi-actions button{background:linear-gradient(155deg,#fff,#f4eaff);border:1px solid #c39de8;color:#50216f;min-height:48px;border-radius:999px;box-shadow:0 4px 12px #4f257333;transition:box-shadow .15s,transform .15s}
+#phiImageBuilder .pi-actions button[data-pi-action="good"],#phiImageBuilder .pi-actions button[data-pi-action="fix"]{background:linear-gradient(140deg,#6d2fba,#421182);border:1px solid #cb9aff;color:#fff;box-shadow:0 0 18px #934ef599}
+#phiImageBuilder .pi-actions button:hover,#phiImageBuilder .pi-actions button:focus-visible{box-shadow:0 0 0 3px #fff8ff,0 0 20px #9b59ecbb}
+#phiImageBuilder .pi-actions button:active{transform:scale(.98)}
+#phiImageBuilder .pi-actions button[data-pi-action="clear"]{border:1px solid #a6b4cf;background:#f8fbff;color:#243e61}
+#phiImageBuilder .pi-notice{overflow-wrap:anywhere}
+@media(max-width:370px){#phiImageBuilder .pi-panel{padding:13px}#phiImageBuilder .pi-actions{grid-template-columns:repeat(2,minmax(0,1fr))}#phiImageBuilder .pi-actions .pi-wide{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){#phiImageBuilder .pi-actions button,#phiImageBuilder .pi-mode{transition:none}}
