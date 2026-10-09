@@ -8,6 +8,12 @@ async function ensureStarCoinCredits(env) {
     env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_star_coin_credits_user_created ON quanta_star_coin_credits(user_id,created_at)")
   ]);
 }
+async function ensureStorySpinCredits(env) {
+  await env.DB.batch([
+    env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_story_spin_credits(credit_id TEXT PRIMARY KEY,user_id TEXT NOT NULL,wallet_id TEXT NOT NULL,reference_id TEXT NOT NULL,research_json TEXT NOT NULL,created_at INTEGER NOT NULL,UNIQUE(user_id,reference_id))"),
+    env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_quanta_spin_user ON quanta_story_spin_credits(user_id,created_at)")
+  ]);
+}
 async function ensureCardInteractions(env) {
   await env.DB.batch([
     env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_card_interactions(user_id TEXT NOT NULL,event_id TEXT NOT NULL,kind TEXT NOT NULL,action TEXT NOT NULL,content_key TEXT NOT NULL,query_text TEXT NOT NULL,title TEXT NOT NULL,index_terms TEXT NOT NULL,created_at INTEGER NOT NULL,PRIMARY KEY(user_id,event_id))"),
@@ -35,10 +41,16 @@ function upsertCollect(env, wallet, card) {
     .bind("qc_" + crypto.randomUUID(), wallet, card.key, card.type, card.title, card.story, card.media, card.sourceUrl);
 }
 async function starCoinState(env, user, limit = 500) {
+  await ensureStorySpinCredits(env);
   const totals = await env.DB.prepare("SELECT COALESCE(SUM(tenths),0) AS tenths,COALESCE(SUM(kind='collect'),0) AS collects,COALESCE(SUM(kind='share'),0) AS shares FROM quanta_star_coin_credits WHERE user_id=?").bind(user).first();
+  const spins = await env.DB.prepare("SELECT COUNT(*) AS spins FROM quanta_story_spin_credits WHERE user_id=?").bind(user).first();
   const history = await env.DB.prepare("SELECT reference_id,kind,reference,tenths,client_created_at,created_at FROM quanta_star_coin_credits WHERE user_id=? ORDER BY created_at DESC LIMIT ?").bind(user, limit).all();
-  const tenths = Number(totals?.tenths || 0);
-  return { ok: true, credits_tenths: tenths, star_coins: Math.floor(tenths / 10), progress: tenths % 10, collects: Number(totals?.collects || 0), shares: Number(totals?.shares || 0), history: history.results || [] };
+  const research = await env.DB.prepare("SELECT reference_id,research_json,created_at FROM quanta_story_spin_credits WHERE user_id=? ORDER BY created_at DESC LIMIT ?").bind(user,limit).all();
+  const spinCount=Number(spins?.spins||0);
+  const tenths = Number(totals?.tenths || 0) + spinCount*10;
+  const spinRows=(research.results||[]).map(x=>({reference_id:x.reference_id,kind:'spin',reference:x.reference_id,tenths:10,created_at:x.created_at,research:JSON.parse(x.research_json)}));
+  const combined=[...(history.results||[]),...spinRows].sort((a,b)=>b.created_at-a.created_at).slice(0,limit);
+  return {ok:true,credits_tenths:tenths,star_coins:Math.floor(tenths/10),progress:tenths%10,collects:Number(totals?.collects||0),shares:Number(totals?.shares||0),spins:spinCount,history:combined};
 }
 
 async function ensureSearchOutbox(env) {
@@ -378,16 +390,27 @@ export default {
       const credits = Array.isArray(body.credits) ? body.credits.slice(0, 100) : [];
       if (!credits.length) return json({ error: "invalid_star_coin_credits" }, 400);
       await ensureStarCoinCredits(env);
+      await ensureStorySpinCredits(env);
       await ensureCollects(env);
       const now = Date.now(), accepted = [], statements = [];
       for (const item of credits) {
-        const kind = item?.kind === "share" ? "share" : item?.kind === "collect" ? "collect" : "";
+        const kind = item?.kind === "share" ? "share" : item?.kind === "collect" ? "collect" : item?.kind === "spin" ? "spin" : "";
         const referenceId = String(item?.reference_id || "").trim().slice(0, 800);
         if (!kind || !referenceId.startsWith("quantaphi:" + kind + ":")) continue;
         const reference = String(item?.reference || referenceId).trim().slice(0, 800);
         const createdAt = String(item?.created_at || "").slice(0, 80);
-        statements.push(env.DB.prepare("INSERT OR IGNORE INTO quanta_star_coin_credits(credit_id,user_id,wallet_id,kind,reference_id,reference,tenths,client_created_at,created_at) VALUES(?,?,?,?,?,?,1,?,?)")
+        if(kind==='spin'){
+          const research=item?.research;
+          const sources=Array.isArray(research?.sources)?research.sources.slice(0,5).filter(x=>typeof x?.url==='string'&&/^https:\/\//.test(x.url)):[];
+          const primary=String(research?.sourceUrl||'');
+          const valid=String(research?.title||'').trim().length>=12 && String(research?.full||'').trim().length>=150 && /^https:\/\//.test(primary) && sources.some(x=>x.url===primary);
+          if(!valid)continue;
+          const researchRecord=JSON.stringify({title:String(research.title).slice(0,180),summary:String(research.summary||'').slice(0,950),full:String(research.full).slice(0,4000),sourceUrl:primary.slice(0,1500),sources:sources.map(x=>({title:String(x.title||'').slice(0,180),url:x.url.slice(0,1500)})),parentQuery:String(research.parentQuery||'').slice(0,450),researchBranch:String(research.researchBranch||'').slice(0,250)});
+          statements.push(env.DB.prepare("INSERT OR IGNORE INTO quanta_story_spin_credits(credit_id,user_id,wallet_id,reference_id,research_json,created_at) VALUES(?,?,?,?,?,?)").bind('qsp_'+crypto.randomUUID(),identity.user_id,wallet,referenceId,researchRecord,now));
+        }else{
+          statements.push(env.DB.prepare("INSERT OR IGNORE INTO quanta_star_coin_credits(credit_id,user_id,wallet_id,kind,reference_id,reference,tenths,client_created_at,created_at) VALUES(?,?,?,?,?,?,1,?,?)")
           .bind("qsc_" + crypto.randomUUID(), identity.user_id, wallet, kind, referenceId, reference, createdAt, now));
+        }
         const card = kind === "collect" && item?.card && typeof item.card === "object" ? collectRow(item.card) : null;
         if (card?.key && card.title) statements.push(upsertCollect(env, wallet, card));
         accepted.push(referenceId);
