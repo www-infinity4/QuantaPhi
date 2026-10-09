@@ -650,9 +650,12 @@ async function runImage(request, env) {
  ];
 
  let lastError=null;
+ // FLUX.2 Dev currently returns upstream 3043 errors for valid prompt-only
+ // requests. Prefer the Klein-9B renderer that passed live prompt-only testing,
+ // while retaining Dev as a fallback for transient Klein failures.
  const modelPlan=[
-   {model:IMAGE_MODEL,variants,steps:"25"},
-   {model:IMAGE_FALLBACK_MODEL,variants:variants.slice(1),steps:null}
+   {model:IMAGE_FALLBACK_MODEL,variants:[variants[0],variants[1]],steps:null},
+   {model:IMAGE_MODEL,variants:[variants[0]],steps:"25"}
  ];
  const attemptErrors=[];
  let attemptNumber=0;
