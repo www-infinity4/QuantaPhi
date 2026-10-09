@@ -712,7 +712,11 @@ async function runImage(request, env) {
        const b64=typeof result?.image==="string"?result.image:"";
        if(!b64) throw new Error("empty_image_response");
        await recordUsage(env,userId,state,1,1);
-       return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:image/jpeg;base64,"+b64,attempt:attemptNumber,mode,referenceMode:blankReference?"text-only":styleOnly?"style-only":"source-image",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+       // Cloudflare image models may return PNG, JPEG or WebP. Label actual
+       // bytes correctly or Android's image decode / canvas review can fail.
+       const header=atob(b64.slice(0,48));
+       const mime=header.startsWith("\x89PNG")?"image/png":header.startsWith("\xff\xd8\xff")?"image/jpeg":header.startsWith("RIFF")&&header.slice(8,12)==="WEBP"?"image/webp":"image/jpeg";
+       return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:"+mime+";base64,"+b64,attempt:attemptNumber,mode,referenceMode:blankReference?"text-only":styleOnly?"style-only":"source-image",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
      }catch(error){
        lastError=error;
        const message=String(error?.message||error);
