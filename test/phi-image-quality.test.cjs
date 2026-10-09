@@ -104,8 +104,8 @@ test('image rejection keeps the original inputs editable and offers photo remova
  assert.match(css,/\.pi-upload-slot/);
  assert.match(css,/\[hidden\]\{display:none!important\}/);
  const html=source('index.html');
- assert.match(html,/phi-image-builder\.js\?v=20261008-auto-qa2/);
- assert.match(html,/phi-visual-render\.js\?v=20261008-flag-recovery1/);
+ assert.match(html,/phi-image-builder\.js\?v=20261008-flux-input2/);
+ assert.match(html,/phi-visual-render\.js\?v=20261008-flux-input2/);
 });
 
 test('search-generated sourced story is displayed after the overview assimilation',()=>{
@@ -140,7 +140,7 @@ test('one bounded automatic repair is scored against the original image',()=>{
  assert.match(worker,/LETTERING CHECK/);
  assert.match(worker,/text-like textures are a high-severity issue/);
  assert.match(worker,/Render visuals ONLY: zero painted letters or numerals/);
- assert.match(source('index.html'),/phi-image-builder\.js\?v=20261008-auto-qa2/);
+ assert.match(source('index.html'),/phi-image-builder\.js\?v=20261008-flux-input2/);
 });
 
 test('FLUX adapter sends true text-only requests and scales reference pixels, not just byte size',()=>{
