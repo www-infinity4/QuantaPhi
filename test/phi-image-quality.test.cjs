@@ -178,6 +178,7 @@ test('Workers image route permits text-only generation with no synthetic image a
  }
  const textResult=await request(false);
  assert.equal(textResult.referenceMode,'text-only');
+ assert.equal(calls[0].model,'@cf/black-forest-labs/flux-2-klein-9b');
  assert.deepEqual(calls[0].keys.includes('input_image_0'),false);
  assert.deepEqual(calls[0].keys.includes('input_image_1'),false);
  const styleResult=await request(true);
