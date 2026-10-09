@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v35-oracle-design-system';
+const EDGE_VERSION = 'quantaphi-org-v36-fresh-oracle-cards';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -14,7 +14,6 @@ const APPS = [
  { slug: '/mckee-coins/', aliases: ['/coins/', '/McKeeCoins/'], repo: 'Mckee-Coins-Inc' },
  { slug: '/shoplc/', aliases: ['/shop/'], repo: 'ShopLC' }
 ];
-const CHANNEL_REPOS=new Set(["Hermit-TV","Star-Launcher","HBO","Starz","Cinemax","Showtime","Encore","Cartoon-Network","WGN","TNT","NBC","FOX","FX","Nickelodeon","FSN","ESPN","MTV","VH1","AMC","Disney","USA","Comedy-Central","BET","Discovery","Nintendo-TV","Chiller","TBS","ABC","CBS","PBS","History-Channel","CNN","Trump-TV","ShopLC","Ozzy-TV","CCR-TV","Motor-TV","Physics-TV","Adventure-TV","Trigger-TV","Time-Surfers","Syncord","Astraflix","Vintech","Flix-Blender","Abstractia-","Animasync","SeekSync"]);
 const SUPPORT_REPOS=[
  {prefix:'/TV-Database/',repo:'TV-Database'},
  {prefix:'/Mint-For-Infinity/',repo:'Mint-For-Infinity'},
@@ -40,22 +39,13 @@ const routeFor = incoming => {
   if(path==='/' + first)return {redirect:path+'/'};
   return {repo:'C13b0',sourcePath:path.endsWith('/')?path+'index.html':path,publicPath:path};
  }
- if (path === '/code-phi' || path === '/code-phi/') return { redirect: '/omni-phi/code/' + incoming.search };
- if (path.startsWith('/code-phi/')) return { redirect: '/omni-phi/code/' + path.slice('/code-phi/'.length) + incoming.search };
- if (path === '/oracle-interface.css') return { repo:'Oracle', sourcePath:'/oracle-interface.css', publicPath:path };
+ if (path === '/oracle-interface.css') return {repo:'Oracle',sourcePath:'/oracle-interface.css',publicPath:path};
  if (path === '/QuantaPhi' || path === '/QuantaPhi/' || path === '/QuantaPhi/index.html') return { redirect: '/' + incoming.search };
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
- if (path === '/page') return {redirect:'/page/'+incoming.search};
- if (path === '/page/' || path === '/page/index.html') return {repo:'QuantaPhi',sourcePath:'/page/index.html',publicPath:'/page/'};
+ if (path === '/page') return { redirect: '/page/' + incoming.search };
+ if (path === '/page/' || path === '/page/index.html') return { repo: 'QuantaPhi', sourcePath: '/page/index.html', publicPath: '/page/' };
  if (path === '/learn') return { redirect: '/learn/' };
  if (path.startsWith('/learn/')) return { repo: 'QuantaPhi', sourcePath: path.endsWith('/') ? path + 'index.html' : path, publicPath: path };
- // Omni's channels keep the same site origin as the unified StarCoin wallet.
- // Restrict routing to the explicit channel registry to prevent arbitrary repo proxying.
- if(CHANNEL_REPOS.has(first)){
-  if(path==='/' + first)return {redirect:path+'/'+incoming.search};
-  const suffix=path.slice(first.length+2);
-  return {repo:first,sourcePath:'/'+(!suffix||suffix.endsWith('/')?suffix+'index.html':suffix),publicPath:path};
- }
  const support=SUPPORT_REPOS.find(item=>path.startsWith(item.prefix));
  if(support)return {repo:support.repo,sourcePath:'/'+path.slice(support.prefix.length),publicPath:path};
  const app = appByIncomingPath(path);
@@ -128,9 +118,6 @@ function rewriteSuiteText(text) {
  for(const support of SUPPORT_REPOS){
   text=text.split('https://www-infinity4.github.io/'+support.repo+'/').join(CANONICAL_ORIGIN+support.prefix);
  }
- for(const repo of CHANNEL_REPOS){
-  text=text.split('https://www-infinity4.github.io/'+repo+'/').join(CANONICAL_ORIGIN+'/'+repo+'/');
- }
  for (const app of APPS) {
   const github = 'https://www-infinity4.github.io/' + app.repo;
   text = text.split(github + '/').join(CANONICAL_ORIGIN + app.slug);
@@ -141,7 +128,6 @@ function rewriteSuiteText(text) {
  text = text.split('https://www-infinity4.github.io/QuantaPhi/').join(CANONICAL_ORIGIN + '/');
  return text.split('__QUANTAPHI_STORAGE_BRIDGE__').join(bridgeUrl);
 }
-
 // Social crawlers do not execute the browser app. Render topic metadata on the edge.
 const QP_PREVIEW_IMAGE = CANONICAL_ORIGIN + '/preview.png?v=20261008-share1';
 function qpShareEscape(value) {
@@ -225,6 +211,8 @@ export default {
   const route = routeFor(incoming);
   if (route.redirect) return Response.redirect(new URL(route.redirect, incoming.origin).toString(), 308);
   const repoPath = '/' + route.repo + route.sourcePath;
+  // Versioned repair assets read the exact published commit, avoiding stale main responses.
+  const sourceRef = route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
   const origin = new URL('https://www-infinity4.github.io' + repoPath);
   origin.search = incoming.search;
   const extension = route.sourcePath.split('.').pop().toLowerCase();
@@ -238,7 +226,7 @@ export default {
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
   // briefly stale after a commit, which must never keep an old wallet/search script live.
   if (((route.repo === 'Alien-Radio' && route.sourcePath === '/oracle-track-feed.json') || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi') && textual && readRequest) {
-   const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/main' + route.sourcePath);
+   const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/' + sourceRef + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
    if (upstream && !upstream.ok) { if (upstream.body) await upstream.body.cancel(); upstream = null; raw = false; }
@@ -248,7 +236,7 @@ export default {
   }
   if ((!upstream || (upstream.status >= 300 && upstream.status < 400) || upstream.status >= 500) && readRequest) {
    if (upstream?.body) await upstream.body.cancel();
-   const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/main' + route.sourcePath);
+   const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/' + sourceRef + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch { upstream = null; }
   }
