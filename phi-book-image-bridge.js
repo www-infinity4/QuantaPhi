@@ -205,9 +205,9 @@ async function attachGenerated(story,blob,metadata={}){
  if(metadata?.review?.status!=='good'||!(Number(metadata.review.score)>=75))throw Error('Image has not passed visual review');
  if(await hasStored(story.id))return {ok:true,reused:true};
  await write({storyId:story.id,storyTitle:String(story.title||'').slice(0,180),
-  artifactId:'asteroid-auto-'+String(story.id),blob,review:metadata.review,renderer:metadata.renderer,createdAt:new Date().toISOString()});
+  artifactId:'book-auto-'+String(story.id),blob,review:metadata.review,renderer:metadata.renderer,createdAt:new Date().toISOString()});
  if(storyId()===story.id)await refresh();
- window.dispatchEvent(new CustomEvent('phi:story:image-attached',{detail:{storyId:story.id,artifactId:'asteroid-auto-'+story.id,automatic:true}}));
+ window.dispatchEvent(new CustomEvent('phi:story:image-attached',{detail:{storyId:story.id,artifactId:'book-auto-'+story.id,automatic:true}}));
  return {ok:true};
 }
 window.PhiBookImageBridge={shareStory,refresh,hasStored,attachGenerated,attached:()=>visibleIllustration};
