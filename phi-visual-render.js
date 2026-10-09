@@ -17,13 +17,24 @@ async function jsonResponse(path,options){
  const ms=path==='/v1/image'?150000:path==='/v1/image-read'||path==='/v1/image-review'?45000:30000;
  const timer=setTimeout(()=>controller.abort(),ms);
  try{
-  const response=await fetch(BASE+path,{...options,signal:controller.signal});
-  const data=await response.json().catch(()=>({}));
-  if(!response.ok){
-   const error=new Error(String(data.error||data.detail||'Service unavailable').slice(0,220));
-   error.code=String(data.code||data.error||'');
+  let response;
+  try{response=await fetch(BASE+path,{...options,signal:controller.signal})}
+  catch(networkError){
+   const timeout=controller.signal.aborted||networkError?.name==='AbortError';
+   const error=new Error(timeout?'Image service timed out before a render was confirmed.':'Cannot contact the image service. Check the network connection and try again.');
+   error.code=timeout?'image_render_timeout':'image_render_network';
+   throw error;
+  }
+  let data={};
+  try{data=await response.json()}catch(parseError){
+   const error=new Error('Image service returned an unreadable response ('+response.status+').');
+   error.code='image_render_bad_response';error.status=response.status;throw error;
+  }
+  if(!response.ok||data?.ok===false){
+   const error=new Error(String(data?.error||data?.detail||('Image service HTTP '+response.status)).slice(0,220));
+   error.code=String(data?.code||data?.error||('image_http_'+response.status));
    error.status=response.status;
-   error.suggestion=String(data.suggestion||'').slice(0,240);
+   error.suggestion=String(data?.suggestion||'').slice(0,240);
    throw error;
   }
   return data;
@@ -130,7 +141,7 @@ async function render({description,mode,source,design,prompt,exactText}){
  body.append('request',words(description).slice(0,1800));
  body.append('exact_text',words(exactText).slice(0,120));
  const j=await jsonResponse('/v1/image',{method:'POST',body});
- if(!j.ok)throw Error(String(j.error||'Image service returned no successful render'));
+ if(!j.ok){const error=new Error(String(j.error||'Image service returned no successful render'));error.code=String(j.code||j.error||'image_render_failed');throw error;}
  const src=imageFrom(j);if(!src)throw Error('Image service returned no supported image output');
  return {src,renderer:String(j.renderer||j.model||'Cloudflare image renderer').slice(0,90)};
 }
