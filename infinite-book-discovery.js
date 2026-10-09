@@ -215,7 +215,22 @@ function sourcePlan(roll,catalog,focus=''){
 
 async function request(url,options={},ms=8500){
  const c=new AbortController(),timeout=setTimeout(()=>c.abort(),ms);
- try{const r=await fetch(url,{...options,signal:c.signal});if(!r.ok){let errorData={};if(String(url).includes('infinity-rogers')&&r.status===429){errorData=await r.json().catch(()=>({}));global.PhiInfiniteBookResearchStatus=errorData.error==='daily_quota_exceeded'?'quota':'rate-limited'}throw Error('HTTP '+r.status+(errorData.error?' '+errorData.error:''))}return await r.json()}finally{clearTimeout(timeout)}
+ try{
+  const r=await fetch(url,{...options,signal:c.signal});
+  if(!r.ok){
+   let errorData={};
+   if(String(url).includes('infinity-rogers')){
+    errorData=await r.json().catch(()=>({}));
+    global.PhiInfiniteBookResearchStatus=r.status===429?'provider-busy':r.status>=500?'ai-unavailable':'service-error';
+   }
+   throw Error('HTTP '+r.status+(errorData.error?' '+errorData.error:''));
+  }
+  const data=await r.json();
+  if(data?.ok===false&&String(url).includes('infinity-rogers')){
+   global.PhiInfiniteBookResearchStatus='ai-unavailable';
+  }
+  return data;
+ }finally{clearTimeout(timeout)}
 }
 function extract(payload){
  return (Array.isArray(payload?.results)?payload.results:[]).map(r=>({title:clean(r.title).slice(0,200),summary:clean(r.content||r.description).slice(0,700),url:canonical(r.url)}))
