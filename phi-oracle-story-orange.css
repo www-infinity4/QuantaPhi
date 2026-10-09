@@ -83,3 +83,21 @@ body.oracle-quanta .crusher-inline-frame{display:block;width:100%;border:0;backg
 body.oracle-quanta .bitcoinCrusherShoe[aria-expanded="true"]{outline:3px solid #ffcc61;box-shadow:0 0 19px #e8a542}
 @media(max-width:400px){body.oracle-quanta #infiniteBook .ib-asteroid-copy{padding:17px 12px!important}body.oracle-quanta #infiniteBook :is(.ib-next,.ib-action,.ib-build-link){font-size:11px!important;padding:9px 8px!important}body.oracle-quanta .crusher-inline{padding:10px}body.oracle-quanta .crusher-inline-controls{width:100%}body.oracle-quanta .crusher-inline-controls :is(button,a){flex:1 1 100px}}
 @media(prefers-reduced-motion:reduce){body.oracle-quanta #infiniteBook :is(.ib-next,.ib-action,.ib-build-link,.ib-research-branch){transition:none!important}}
+
+/* Site-wide Oracle finish: retain every zone's original color and artwork. */
+body.oracle-quanta .qzone{--oracle-glow:#ad82ef;border-radius:23px!important;overflow:hidden;box-shadow:0 11px 32px #3622501b,0 0 18px var(--oracle-glow)!important;transition:box-shadow .18s ease,transform .18s ease}
+body.oracle-quanta .qzoneRed{--oracle-glow:#ff9baa77}
+body.oracle-quanta .qzoneYellow{--oracle-glow:#ffd56b83}
+body.oracle-quanta .qzoneBlue{--oracle-glow:#7fc7ff80}
+body.oracle-quanta .qzoneOrange{--oracle-glow:#ffad6085}
+body.oracle-quanta .qzonePurple{--oracle-glow:#b98dff83}
+body.oracle-quanta .qzoneGreen{--oracle-glow:#82d4a683}
+body.oracle-quanta .qzone :is(h2,h3){letter-spacing:-.025em;line-height:1.24;overflow-wrap:anywhere}
+body.oracle-quanta :is(.qzoneActions,.qactionRows,.qreader-actions,.qdata-actions,.qassim-actions,.mcard .imageActions,.mcard .videoActions){display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;min-width:0}
+body.oracle-quanta :is(.qzoneActions,.qactionRows,.qreader-actions,.qdata-actions,.qassim-actions) :is(button,a){min-height:44px;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.28}
+body.oracle-quanta .qzone :is(button,a):focus-visible{outline:3px solid #693cbd!important;outline-offset:2px}
+body.oracle-quanta .mcard{overflow:hidden;border-radius:21px!important;box-shadow:0 7px 23px #2b154027,0 0 13px #ba94e339}
+body.oracle-quanta .mcard :is(h3,p){overflow-wrap:anywhere}
+body.oracle-quanta :is(.qmenu a,.qmenu button,.qnewSearch){min-height:44px;line-height:1.3;overflow-wrap:anywhere}
+@media(hover:hover){body.oracle-quanta .qzone:hover{box-shadow:0 15px 39px #3622502b,0 0 23px var(--oracle-glow)!important}}
+@media(prefers-reduced-motion:reduce){body.oracle-quanta .qzone{transition:none}}
