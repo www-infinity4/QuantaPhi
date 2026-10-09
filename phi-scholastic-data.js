@@ -175,7 +175,7 @@ async function compare(snapshot){
   finally{clearTimeout(timer)}
   const d=await r.json().catch(()=>({}));
   if(!r.ok||d.ok===false)throw Error(String(d.error||'GPT comparison unavailable'));
-  prose=clean(explanationText(d.output_text??d.output??d.answer??d.response));
+  prose=String(explanationText(d.output_text??d.output??d.answer??d.response)||'').trim().slice(0,9000);
   if(!prose||prose.length<50)throw Error('GPT returned no usable comparison');
   verified=true;
  }catch(err){
@@ -242,6 +242,7 @@ function activate(query,sections,evidence){
  const red=root?.querySelector('.qzoneRed'),yellow=root?.querySelector('.qzoneYellow');
  if(!red||!yellow)return;
  if(active?.observer)active.observer.disconnect();
+ red.classList.add('qscholastic-reader');yellow.classList.add('qdata-oracle-card');
  active={query:clean(query),tokenId:window.__qActiveTokenId||'',selected:new Set(),yellow,red,sections,evidence,busy:false,lastComparison:null,observer:null};
  hero(red,'reader');hero(yellow,'data');
  const redTitle=red.querySelector('h3');
