@@ -3,6 +3,7 @@
   'use strict';
   const root = document.getElementById('infiniteBook');
   if (!root) return;
+  const ASTEROID_ART='data:image/svg+xml;charset=utf-8,'+encodeURIComponent("<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 600\"><defs><radialGradient id=\"r\" cx=\"32%\" cy=\"28%\" r=\"73%\"><stop stop-color=\"#f6c895\"/><stop offset=\".34\" stop-color=\"#ae7a83\"/><stop offset=\".68\" stop-color=\"#6b4e75\"/><stop offset=\"1\" stop-color=\"#211939\"/></radialGradient><radialGradient id=\"c\"><stop stop-color=\"#372d56\"/><stop offset=\".75\" stop-color=\"#513a62\"/><stop offset=\"1\" stop-color=\"#c49588\"/></radialGradient><filter id=\"s\"><feGaussianBlur stdDeviation=\"16\"/></filter></defs><ellipse cx=\"315\" cy=\"318\" rx=\"225\" ry=\"220\" fill=\"#bc68ff\" opacity=\".36\" filter=\"url(#s)\"/><path d=\"M104 215 149 142 226 103 325 87 424 113 501 189 535 280 509 376 450 458 368 516 261 521 168 471 94 395 75 296Z\" fill=\"url(#r)\" stroke=\"#f5c1a2\" stroke-opacity=\".56\" stroke-width=\"5\"/><g fill=\"url(#c)\" stroke=\"#cfab9e\" stroke-width=\"7\"><ellipse cx=\"242\" cy=\"216\" rx=\"63\" ry=\"47\" transform=\"rotate(-16 242 216)\"/><ellipse cx=\"397\" cy=\"320\" rx=\"79\" ry=\"61\" transform=\"rotate(25 397 320)\"/><ellipse cx=\"213\" cy=\"385\" rx=\"44\" ry=\"36\"/><ellipse cx=\"360\" cy=\"165\" rx=\"30\" ry=\"24\"/><ellipse cx=\"332\" cy=\"446\" rx=\"31\" ry=\"21\"/></g><g fill=\"#211e39\" opacity=\".4\"><ellipse cx=\"233\" cy=\"216\" rx=\"38\" ry=\"27\"/><ellipse cx=\"387\" cy=\"319\" rx=\"52\" ry=\"37\"/><ellipse cx=\"208\" cy=\"384\" rx=\"26\" ry=\"19\"/></g><path d=\"M130 256 189 289 173 351M287 135 306 208 280 249M436 410 398 450\" fill=\"none\" stroke=\"#f5d3ad\" stroke-opacity=\".28\" stroke-width=\"8\" stroke-linecap=\"round\"/></svg>");
   const SEEN_KEY = 'phi_infinite_book_seen_v1';
   const STAR_KEY = 'phi_infinite_book_favorites_v1';
   const CATALOG_URL = '/infinite-book-catalog.json';
@@ -55,10 +56,15 @@
   function cardLayout() {
     root.replaceChildren();
     const header = E('div', 'ib-head');
-    header.append(E('strong', '', 'THE INFINITE BOOK OF BIG SECRETS'), E('button', 'ib-next', 'Another secret · +1 ★'));
+    header.append(E('strong', '', 'ASTEROID · EVIDENCE INTO STORY'), E('button', 'ib-next', 'Another secret · +1 ★'));
     header.lastChild.type = 'button'; header.lastChild.dataset.bookAction = 'next';
     const card = E('article', 'ib-story');
-    card.append(E('div', 'ib-category'), E('h2', 'ib-title'), E('p', 'ib-summary'));
+    const hero=E('div','ib-asteroid-hero');
+    const asteroid=E('img','ib-asteroid-rock');asteroid.src=ASTEROID_ART;asteroid.alt='Rocky asteroid with illuminated craters';asteroid.decoding='async';
+    const copy=E('div','ib-asteroid-copy');
+    copy.append(E('small','ib-asteroid-label','ASTEROID · ORIGINAL SOURCED STORY'),E('div', 'ib-category'), E('h2', 'ib-title'), E('p', 'ib-summary'));
+    hero.append(asteroid,E('div','ib-asteroid-shade'),copy);
+    card.append(hero);
     const detail = E('details', 'ib-details');
     detail.append(E('summary', '', 'Expand to read the full story'), E('p', 'ib-full'));
     const source = E('a', 'ib-source', 'View original source ↗');
@@ -75,13 +81,13 @@
     }
     const build = E('div', 'ib-build');
     build.append(E('span', '', 'Build this story with'));
-    const illustrate=E('button','ib-action','Build image from story');illustrate.type='button';illustrate.dataset.bookAction='illustrate';
+    // Illustrations are automatic. The Image Builder below is reserved for separate projects.
     for (const [tool, label] of [['infinity', 'Infinity'], ['omni', 'Omni'], ['quanta', 'QuantaPhi']]) {
       const a = E('a', 'ib-build-link', label);
       a.dataset.bookAction = 'build'; a.dataset.bookTool = tool;
       a.dataset.siteTitle = label; a.href = '#'; build.append(a);
     }
-    build.append(illustrate);
+    // No redundant manual illustration button.
     const status = E('p', 'ib-status');
     status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
     card.append(detail, actions, build);
@@ -158,9 +164,48 @@
     host.replaceChildren();
     for(const option of options){const b=E('button','ib-research-branch',option.label);b.type='button';b.dataset.bookAction='research';b.dataset.researchQuery=option.query.slice(0,350);b.dataset.researchBranch=option.branch.slice(0,200);host.append(b)}
   }
+  // Review real pixels once. Never disguise an unapproved image as a finished illustration.
+  let artBusy=false,artRequested=null;
+  const artRunning=new Set();
+  function scheduleAutoIllustration(story){
+    if(!story?.id||!window.PhiVisualRender||!window.PhiBookImageBridge)return;
+    artRequested=story;
+    if(!artBusy)void drainAsteroidArtwork();
+  }
+  async function drainAsteroidArtwork(){
+    if(artBusy)return;
+    artBusy=true;
+    try{
+      while(artRequested){
+        const story=artRequested;artRequested=null;
+        if(artRunning.has(story.id))continue;
+        artRunning.add(story.id);
+        try{
+          const bridge=window.PhiBookImageBridge;
+          if(await bridge.hasStored(story.id))continue;
+          const renderer=window.PhiVisualRender;
+          const intention='Original nonfiction illustration of '+story.title+'. '+String(story.summary||'').slice(0,650)+
+            '. Picture the actual documented subject accurately, not an invented movie scene. Atmosphere: '+(story.mood||'Mystery')+
+            '. No fabricated events, written words, glyphs, signage, labels, movie titles or pretend text. One cohesive vivid realistic composition.';
+          if(storyId()===story.id)note('GPT story sourced · creating and checking its illustration…');
+          const generated=await renderer.render({description:intention,mode:'Image',source:null,design:null,prompt:intention,exactText:''});
+          const review=await renderer.review({src:generated.src,description:intention,mode:'Image',exactText:''});
+          const approved=review?.status==='good'&&Number(review?.score)>=75&&!(review?.issues||[]).some(i=>i.severity==='high');
+          if(!approved){if(storyId()===story.id)note('The story is ready, but the generated illustration failed visual review. The asteroid art remains until a satisfactory image is made.');continue}
+          const blob=await renderer.asBlob(generated.src);
+          await bridge.attachGenerated(story,blob,{renderer:generated.renderer,review});
+          if(storyId()===story.id)note('Sourced GPT story · original illustration generated, reviewed, and attached.');
+        }catch(error){
+          if(storyId()===story.id)note(error?.code==='image_daily_cap'?'Story ready. Image service daily limit reached; asteroid artwork remains visible.':'Story ready. Automatic illustration could not be approved or saved: '+String(error?.message||error).slice(0,130));
+        }finally{artRunning.delete(story.id)}
+      }
+    }finally{artBusy=false}
+  }
   function render(story, roll) {
     current = story; interactedWithStory = false; remember(story.id);
+    const card=root.querySelector('.ib-story');card.hidden=false;root.removeAttribute('aria-busy');
     root.querySelector('.ib-category').textContent = [
+      story.mood||window.PhiInfiniteBookDiscover?.storyMood?.(lastSearchQuery,roll)||'Mystery',
       catalog.sectors.find(s => s.id === story.sector)?.name || 'Surprising history',
       story.status || 'sourced story',
       story.year || ''
@@ -188,6 +233,7 @@
     note(roll?.bracketKey ? 'Four-roll path '+roll.bracketKey+' · '+(roll.indexWord||'')+' · '+(roll.refinement||'')+' · '+(roll.storyDirection||'') : 'Sourced discovery');
     window.PhiAssimilation?.signal?.({kind:'story',action:'open',id:'ci_view_'+String(story.id).replace(/[^A-Za-z0-9_-]/g,'_').slice(0,120),key:story.id,title:story.title,query:lastSearchQuery,terms:indexedSearchTerms(story)});
     window.dispatchEvent(new CustomEvent('phi:story:render',{detail:{id:story.id,title:story.title}}));
+    if(window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story))scheduleAutoIllustration(story);
   }
   function rollDice(query='') {
     const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
@@ -273,7 +319,7 @@
   // The screen reads from ready stories first. Research never blocks a click.
   const READY_TARGET = 8;
   const MAX_RESEARCH_IN_FLIGHT = 2;
-  const RESEARCH_DEADLINE_MS = 16000;
+  const RESEARCH_DEADLINE_MS = 52000;
   const researchFlights = new Map();
   let refillRunning = false;
   function readyCount() {
@@ -290,9 +336,9 @@
     if (typeof discover !== 'function') return Promise.resolve(null);
     let deadline;
     const research = Promise.resolve().then(() => discover({
-      roll, catalog, seen: seenIds(), focus: roll.focus || '',
+      roll, catalog, seen: seenIds(), focus: roll.focus || '', strictGPT:true,
       onDeep: story => {
-        if (!storyValid(story) || seenIds().has(story.id)) return;
+        if (!storyValid(story) || !window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story) || seenIds().has(story.id)) return;
         byId.set(story.id, story);
         cacheLive(story);
         if (typeof onDeep === 'function') onDeep(story);
@@ -302,7 +348,7 @@
     const expired = new Promise(resolve => { deadline = setTimeout(() => resolve(null), RESEARCH_DEADLINE_MS); });
     const flight = Promise.race([research, expired])
       .then(story => {
-        if (!storyValid(story) || seenIds().has(story.id)) return null;
+        if (!storyValid(story) || !window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story) || seenIds().has(story.id)) return null;
         byId.set(story.id, story);
         cacheLive(story);
         return story;
@@ -318,37 +364,25 @@
     researchFlights.set(key, flight);
     return flight;
   }
-  function refillReadyStories() {
-    if (!catalog || refillRunning || readyCount() >= READY_TARGET) return;
-    refillRunning = true;
-    // A small rolling background batch instead of firing 100 expensive API calls
-    // on a phone. The durable Cloudflare feed can publish much larger batches.
-    void (async () => {
-      for (let attempt = 0; attempt < 4 && readyCount() < READY_TARGET; attempt++) {
-        if (document.visibilityState === 'hidden') break;
-        const roll = rollDice();
-        await discoverInBackground(roll);
-      }
-    })().catch(error => console.warn('Book queue refill unavailable', error))
-      .finally(() => { refillRunning = false; });
-  }
+  function refillReadyStories(){ /* Never pre-generate GPT stories or artwork on refresh. */ }
   async function nextStory(query = '', options = {}) {
     if (!catalog) return;
     const ticket = ++activeStoryTicket;
     const roll = rollDice(query);
-    const requireFresh=options.requireFresh===true;
+    const requireFresh=options.requireFresh!==false;
     const spinReference=options.rewardSpin?'research-spin:'+String(crypto?.randomUUID?.()||Date.now()+'-'+Math.random()):'';
     let spinSubmitted=false;
     const present=(story,roll)=>{
       render(story,roll);
-      if(!spinReference||spinSubmitted||!storyValid(story))return;
+      if(!spinReference||spinSubmitted||!storyValid(story)||!window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story))return;
       const queued=window.QuantaStarCoinCloud?.record?.('spin',spinReference,{
         ...story,parentQuery:lastSearchQuery,researchBranch:options.researchBranch||'Another secret'
       });
       if(queued){spinSubmitted=true;note('Sourced research attached to your 1 StarCoin spin receipt. Cloud wallet credit submitted for confirmation.')}else note('Research is shown, but the StarCoin credit could not be queued; check the wallet connection.');
     };
-    // Instant switch: no network, GPT, source search or feed fetch before render.
+    // No catalog film or encyclopedia excerpt is shown instead of a GPT narrative.
     const ready = requireFresh?null:pickUnique(roll, seenIds());
+    if(requireFresh){root.querySelector('.ib-story').hidden=true;root.setAttribute('aria-busy','true')}
     // On a new search show the prepared story immediately, then replace only
     // if source-backed discovery verifies a more relevant event for that search.
     if (ready) {
@@ -367,11 +401,9 @@
         ? 'New sourced historical story · original GPT narrative'
         : 'New historical discovery · cited source');
     };
-    void appendConfiguredFeed(roll);
     void discoverInBackground(roll, acceptNew)
-      .then(acceptNew)
-      .catch(error => console.warn('Book research unavailable', error));
-    refillReadyStories();
+      .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.hidden){root.removeAttribute('aria-busy');note('The research services could not verify and write a GPT story for this search. No invented story or image was displayed; try a more specific source angle.')}})
+      .catch(error=>{console.warn('Asteroid research unavailable',error);if(ticket===activeStoryTicket){root.removeAttribute('aria-busy');note('Could not complete sourced GPT writing for this topic. No story was invented.')}});
   }
   window.addEventListener('quantaphi:search-start', event=>{
     const query=String(event.detail?.query||'').trim();
@@ -491,9 +523,9 @@
           !Array.isArray(catalog.sourceClasses) || catalog.sourceClasses.length !== 10) {
         throw new Error('Story discovery configuration is invalid');
       }
-      for (const story of [...(catalog.stories || []), ...safeRead(LIVE_CACHE)]) if (storyValid(story)) byId.set(story.id, story);
+      // Old catalog films and cached encyclopedia blurbs are excluded from Asteroid.
       // A missing/slow server feed must never delay the first story card.
-      void appendConfiguredFeed().then(refillReadyStories);
+      // No speculative background stories or artwork.
       void (async()=>{try{const raw=window.PhiInfiniteBookBanksUrl;if(!raw)return;const u=new URL(raw,location.origin);if(u.origin!==location.origin&&u.origin!=='https://infinite-book-library.marvaseater.workers.dev')return;const r=await fetch(u.href,{signal:AbortSignal.timeout(7500)});if(!r.ok)return;const data=await r.json();if(!Array.isArray(data.subjects))return;const ids=new Set(catalog.wordIndex.map(x=>x.id));for(const w of data.subjects){if(!Number.isSafeInteger(Number(w.id))||ids.has(Number(w.id))||!Array.isArray(w.sectors)||!w.word)continue;catalog.wordIndex.push({id:Number(w.id),word:String(w.word).slice(0,120),sector:Number(w.sectors[0]),sectors:w.sectors});ids.add(Number(w.id));}}catch(e){console.warn('Book words offline; bundled words retained',e)}})();
 
       const permalink = new URL(location.href).searchParams.get('secret');
@@ -503,11 +535,8 @@
         const u=new URL(location.href),source=u.searchParams.get('bookSource')||'';
         let validSource=false;try{validSource=new URL(source).protocol==='https:'}catch(_){}
         if(validSource && u.searchParams.get('bookTitle') && u.searchParams.get('bookSummary')){
-          render({id:permalink,title:u.searchParams.get('bookTitle').slice(0,160),
-            summary:u.searchParams.get('bookSummary').slice(0,550),
-            full:'This discovery was shared from another Phi session. Its summary and original source are preserved here. Open the cited source to read more.',
-            sector:Number(u.searchParams.get('bookSector'))||3,status:'Shared sourced discovery',
-            sourceUrl:source,sourceTitle:new URL(source).hostname},null);
+          note('Rebuilding the shared story from evidence with GPT…');
+          await nextStory(u.searchParams.get('bookTitle'));
         } else await nextStory();
       } else {
         await nextStory(lastSearchQuery);
