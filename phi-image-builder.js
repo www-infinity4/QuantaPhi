@@ -97,7 +97,10 @@ async function build(){
   try{review=await renderer.review({src:result,description,mode,exactText})}
   catch(error){warning=[warning,'Visual reviewer unavailable; result not graded.'].filter(Boolean).join(' ')}
   const score=review?.score;
-  const shouldRefine=review&&(
+  // Suspend automatic second-generation calls by default while the first
+  // renderer path is stabilized. The explicit Fix issues action still works.
+  // A second FLUX request increases latency and can exhaust the daily limit.
+  const shouldRefine=window.PhiImageAutoRefine===true&&review&&(
    review.status==='needs_work'||(Number.isFinite(score)&&score<75)
   )&&Array.isArray(review.issues)&&review.issues.length>0;
   if(shouldRefine){
