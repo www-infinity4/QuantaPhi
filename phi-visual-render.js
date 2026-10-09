@@ -97,17 +97,35 @@ async function transport(blob,max=1100){
   throw Error('Image could not be compressed for the Cloudflare renderer');
  }finally{image.close?.()}
 }
+/* FLUX.2 reference images must be smaller than 512x512. Size in bytes is NOT
+   enough: phone photos often exceed model pixel limits despite small files. */
+async function fluxReference(blob){
+ if(!blob)return null;
+ const image=await createImageBitmap(blob);
+ try{
+  const scale=Math.min(1,500/Math.max(image.width,image.height));
+  const width=Math.max(1,Math.round(image.width*scale)),height=Math.max(1,Math.round(image.height*scale));
+  const canvas=document.createElement('canvas');canvas.width=width;canvas.height=height;
+  const ctx=canvas.getContext('2d');
+  if(!ctx)throw Error('Cannot prepare reference image');
+  ctx.fillStyle='#ffffff';ctx.fillRect(0,0,width,height);
+  ctx.drawImage(image,0,0,width,height);
+  const resized=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',.9));
+  if(!resized||resized.size>2_800_000)throw Error('Reference image could not be prepared for FLUX');
+  return resized;
+ }finally{image.close?.()}
+}
 async function render({description,mode,source,design,prompt,exactText}){
  if(source&&(source.size>MAX||!typeOK(source.type)))throw Error('Reference must be PNG/JPG/WebP, up to 10 MB');
  if(design&&(design.size>MAX||!typeOK(design.type)))throw Error('Style reference must be PNG/JPG/WebP, up to 10 MB');
- const blob=source?await transport(source):await neutralImage();
- const designBlob=design?await transport(design):null;
+ const blob=source?await fluxReference(source):null;
+ const designBlob=design?await fluxReference(design):null;
  const body=new FormData();
- const extension=file=>file?.type==='image/png'?'png':file?.type==='image/webp'?'webp':'jpg';
- body.append('image',blob,source?'subject-reference.'+extension(blob):'blank-canvas.jpg');
- if(designBlob)body.append('design_reference',designBlob,'design-reference.'+extension(designBlob));
+ // FLUX text-to-image is prompt-only: never append a fake white canvas.
+ if(blob)body.append('image',blob,'subject-reference.jpg');
+ if(designBlob)body.append('design_reference',designBlob,'design-reference.jpg');
  body.append('mode',mode);
- body.append('reference_mode',source?'uploaded':'blank');
+ body.append('reference_mode',source?'uploaded':design?'style-only':'text-only');
  body.append('prompt',String(prompt||[modePrompt(mode),description].join('\n')).slice(0,7500));
  body.append('request',words(description).slice(0,1800));
  body.append('exact_text',words(exactText).slice(0,120));
