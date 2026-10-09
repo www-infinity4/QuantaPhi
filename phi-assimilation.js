@@ -10,11 +10,12 @@ const DOMAINS={
  energy:'electricity battery solar nuclear power energy hydrogen thermal fuel generator',
  history:'history historical ancient archeology archaeology invention inventor patent discovery museum',
  music:'song songs music guitar piano band singer album concert radio',
- nature:'biology life plant plants tree trees animal cell organism photosynthesis',
+ nature:'biology life plant plants tree trees animal cell organism photosynthesis botanical fruits fruit orchard crop crops cultivar cultivars citrus grapefruit plum plums berry berries apple apples pear pears',
+ food:'fruit fruits grapefruit citrus plum plums berries berry apple apples pear pears orchard orchards crop crops vegetable vegetables produce cooking juice nutrition agriculture horticulture',
  technology:'technology robotics computer electronics engineering machine circuit invention engine',
  finance:'stock stocks market business gold silver money economy finance currency'
 };
-const CONNECT={planetary:['chemistry','geology','energy','technology','nature'],chemistry:['planetary','geology','energy','nature'],geology:['planetary','chemistry','history'],energy:['planetary','chemistry','technology'],history:['technology','geology','music','finance'],nature:['planetary','chemistry','geology'],music:['history','technology'],technology:['planetary','chemistry','energy','finance'],finance:['history','technology','chemistry']};
+const CONNECT={planetary:['chemistry','geology','energy','technology','nature'],chemistry:['planetary','geology','energy','nature'],geology:['planetary','chemistry','history'],energy:['planetary','chemistry','technology'],history:['technology','geology','music','finance'],nature:['planetary','chemistry','geology','food'],food:['nature','chemistry','geology','history'],music:['history','technology'],technology:['planetary','chemistry','energy','finance'],finance:['history','technology','chemistry']};
 const clean=s=>String(s||'').replace(/\s+/g,' ').trim().slice(0,600);
 const terms=s=>new Set((clean(s).toLowerCase().match(/[\p{L}\p{N}]+/gu)||[]).filter(x=>x.length>2&&!STOP.has(x)));
 const cats=s=>{const t=terms(s);return Object.keys(DOMAINS).filter(k=>DOMAINS[k].split(' ').some(v=>t.has(v)))};
@@ -46,28 +47,104 @@ function rank(items,q,sections){
 }
 const safe=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function evidence(q,old){try{const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:q+' '+old,format:'json',categories:'general',safesearch:'1'});const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),4500);let r;try{r=await fetch(u,{signal:ctl.signal})}finally{clearTimeout(timer)}const j=r.ok?await r.json():{};return (j.results||[]).slice(0,2).map(x=>({url:x.url,title:clean(x.title),excerpt:clean(x.content||x.description).slice(0,320)})).filter(x=>/^https:\/\//.test(x.url||''))}catch{return[]}}
+
 let ticket=0;
+function researchTopic(raw){
+ return clean(raw).replace(/\([0-9]{6,}\)\.(?:jpe?g|png|webp)$/i,'').replace(/\.(?:jpe?g|png|webp)$/i,'').trim().slice(0,130);
+}
+function packageOptions(items,q,sections){
+ const ranked=rank(items,q,sections);
+ const candidates=ranked.filter(x=>x.score>0&&!/^\w+:\/\/|^https?:|^\s*data:/i.test(x.query)&&researchTopic(x.query).length>=3);
+ const chosen=[],counts={};
+ for(const x of candidates){
+  if(chosen.length>=24)break;
+  const category=x.categories[0]||'general';
+  if((counts[category]||0)>=8)continue;
+  counts[category]=(counts[category]||0)+1;chosen.push({...x,query:researchTopic(x.query)});
+ }
+ return {ranked,chosen};
+}
+function parsePackages(payload,allowed){
+ let value=payload?.output_text??payload?.output??payload?.answer??payload?.response??payload?.content??payload?.message??payload?.text??'';
+ if(Array.isArray(value))value=value.map(x=>x?.text||x?.content||'').join('\n');
+ if(value&&typeof value==='object')value=value.text||value.content||JSON.stringify(value);
+ const raw=String(value||'');let obj=parse(raw);
+ if(!Array.isArray(obj.packages)){const m=raw.match(/\{[\s\S]*\}/);obj=m?parse(m[0]):{}}
+ return (Array.isArray(obj.packages)?obj.packages:[]).map(x=>{
+  const related=(Array.isArray(x.topics)?x.topics:[]).map(researchTopic).filter(t=>allowed.has(t.toLowerCase())).slice(0,4);
+  return {title:clean(x.title).slice(0,110),topics:[...new Set(related)],connection:clean(x.connection).slice(0,450),question:clean(x.next_question||x.question).slice(0,240),status:x.status==='supported'?'source-backed':'research comparison',sourceUrl:String(x.source_url||'')};
+ }).filter(x=>x.title&&x.topics.length&&x.connection).slice(0,5);
+}
+function fallbackPackages(chosen,q){
+ // When AI research is unavailable, present useful *questions* instead of invented links.
+ const groups=new Map();
+ for(const x of chosen){const k=x.categories[0]||'other';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(x);}
+ const packages=[];
+ for(const [domain,arr] of groups){
+  if(packages.length>=4)break;
+  const topics=arr.slice(0,3).map(x=>x.query);
+  if(!topics.length)continue;
+  packages.push({title:domain==='other'?'Compare earlier research':domain[0].toUpperCase()+domain.slice(1)+' connections',topics,connection:'Explore what the current subject and these earlier topics have in common, where they differ, and what additional evidence is needed. No factual relationship is assumed.',question:'What related subjects emerge when '+q+' is compared with '+topics.slice(0,2).join(' and ')+'?',status:'research comparison',sourceUrl:''});
+ }
+ return packages;
+}
+function showPackages(list,packages,q){
+ list.replaceChildren();
+ for(const pack of packages){
+  const li=document.createElement('li');li.className='qassim-package';
+  const heading=document.createElement('strong');heading.textContent=pack.title;
+  const text=document.createElement('p');text.textContent=pack.connection;
+  const related=document.createElement('small');related.textContent='Combines: '+[q,...pack.topics].join(' + ');
+  const actions=document.createElement('div');actions.className='qassim-actions';
+  const compare=document.createElement('button');compare.type='button';compare.textContent='Compare & compile';compare.dataset.assimilate=encodeURIComponent([pack.title,pack.connection,pack.question,'Compare '+q+' with '+pack.topics.join(', ')].filter(Boolean).join('. ').slice(0,650));actions.append(compare);
+  const explore=document.createElement('a');const topic=pack.question||('How are '+q+' and '+pack.topics.join(', ')+' connected?');
+  explore.href='/?q='+encodeURIComponent(topic.slice(0,250));explore.textContent='Explore new Quant';actions.append(explore);
+  const build=document.createElement('a');build.href='/infinity-phi/?q='+encodeURIComponent([q,...pack.topics].join(' + ').slice(0,250))+'&intent=build';build.textContent='Build website';actions.append(build);
+  li.append(heading,text,related,actions);
+  if(pack.status==='source-backed'&&/^https:\/\//.test(pack.sourceUrl)){const source=document.createElement('a');source.href=pack.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';source.textContent='View research source';li.append(source)}
+  list.append(li);
+ }
+}
 async function load(q,sections){
  const id=++ticket,list=document.getElementById('qPurpleList');if(!list)return;
- list.innerHTML='<li>Indexing all saved Quants, searches and interacted-with cards…</li>';
- const {items,remote}=await corpus();if(id!==ticket||!list.isConnected||clean(document.getElementById('q')?.value).toLowerCase()!==clean(q).toLowerCase())return;
- const ranked=rank(items,q,sections),selected=[],limits={};
- for(const x of ranked){if(selected.length>=16)break;const c=x.categories[0]||'other';if((limits[c]||0)>=5&&selected.length>=7)continue;selected.push(x);limits[c]=(limits[c]||0)+1;}
- let chips=document.getElementById('qAssimilationChips');if(!chips){chips=document.createElement('div');chips.id='qAssimilationChips';chips.className='qchips';list.parentElement.append(chips)}chips.replaceChildren();
- const label=document.createElement('small');label.style.width='100%';label.textContent='Compared '+items.length+' available records ('+(remote?'cloud and device':'device only')+'); '+ranked.length+' distinct earlier topics. Select a suggestion to refine without minting.';chips.append(label);
- for(const x of selected.slice(0,10)){const btn=document.createElement('button');btn.type='button';btn.className='qchip';btn.dataset.assimilate=encodeURIComponent(x.query);btn.textContent=x.query;chips.append(btn)}
- if(!selected.length){list.innerHTML='<li>No saved research could be read for this identity. Existing Quants remain unchanged.</li>';return}
- list.innerHTML='<li>Checking cross-topic evidence across '+selected.length+' promising indexed topics…</li>';
- const samples=await Promise.all(selected.slice(0,5).map(async x=>({query:x.query,sources:await evidence(q,x.query)})));
+ list.textContent='Combining saved Quant research…';
+ const {items,remote}=await corpus();
  if(id!==ticket||!list.isConnected)return;
- const prompt=['You are QuantaPhi Purple Assimilation. Use these shortlisted topics from the FULL saved Quant and story index. Current research:',q,JSON.stringify({overview:clean(sections?.red?.overview).slice(0,850),facts:(sections?.yellow||[]).slice(0,10).map(x=>x.value)}),'Related topics:',JSON.stringify(selected.map(x=>({query:x.query,categories:x.categories,crossDomain:x.cross,kind:x.kind}))),'Evidence:',JSON.stringify(samples),'Find 3-6 genuinely interesting connections. Cross-domain similarities are research questions unless evidence verifies a factual relationship. Example: manganese, element 25, and Venus can motivate investigating planetary mineral chemistry; DO NOT assert manganese was detected on Venus without evidence. Do not invent facts or URLs. Return JSON only {"purple":[{"type":"factual|conceptual","history_query":"exact earlier topic","relationship":"clear specific relation or hypothesis","bridge":"why interesting","source_url":"verified evidence URL if factual"}]}'].join('\n');
+ const {ranked,chosen}=packageOptions(items,q,sections);
+ const old=document.getElementById('qAssimilationChips');if(old)old.remove();
+ if(!chosen.length){list.innerHTML='<li>There are no matching earlier topics available for this research yet. Explore a new Quant to add another connection.</li>';return}
+ list.textContent='Assembling related research packages…';
+ // Evidence is collected for promising bridges only; history remains indexed, not
+ // dumped to the screen or sent wholesale with private card interaction details.
+ const samples=await Promise.all(chosen.slice(0,5).map(async x=>({query:x.query,sources:await evidence(q,x.query)})));
+ if(id!==ticket||!list.isConnected)return;
+ const prompt=[
+ 'You are the GPT synthesis engine for QuantaPhi Assimilation. Your job is to COMBINE useful saved research into 3-5 coherent topic packages, not print an inventory of old searches.',
+ 'CURRENT SUBJECT:',q,
+ 'CURRENT SOURCED OVERVIEW:',clean(sections?.red?.overview).slice(0,1000),
+ 'CURRENT FACT INDEX:',JSON.stringify((sections?.yellow||[]).slice(0,12).map(x=>x.value)),
+ 'SHORTLIST FROM THE COMPLETE STORED SEARCH, QUANT, AND INTERACTION INDEX:',JSON.stringify(chosen.map(x=>({query:x.query,domain:x.categories,kind:x.kind,score:x.score}))),
+ 'INDEPENDENT WEB EVIDENCE:',JSON.stringify(samples),
+ 'Example: plums + grapefruit may lead to a citrus-versus-stone-fruit comparison, orchard cultivation, fruit chemistry or related crops, not a random fruit-name list. Explore the deeper family of useful ideas without asserting that the fruits share a botanical genus.',
+ 'Only select topics exactly present in the shortlist. Some comparisons are conceptual, not factual; say what to RESEARCH rather than pretending a connection is verified. If a claim is supported, cite a URL actually present in the evidence; otherwise status must be conceptual.',
+ 'Each package must contain at least one earlier topic and the current subject, a clear synthesis, and a strong follow-up question that can drive a new Quant or website. Avoid generic filler, repetition, and filenames.',
+ 'Return strict JSON {"packages":[{"title":"meaningful cluster","topics":["exact earlier topic"],"connection":"why this is a promising comparison","next_question":"specific deeper research question","status":"conceptual|supported","source_url":"URL from supplied evidence or empty"}]}.'
+ ].join('\n');
+ let packages=[];
  try{
-  const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),16000);let r;try{r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'full-history-assimilation',scanned_records:items.length}}),signal:ctl.signal})}finally{clearTimeout(timer)}
-  if(!r.ok)throw Error('no ai');const d=await r.json();const value=d.output_text??d.output??d.answer??d.response??d.content??d.message??d.text??'';const raw=typeof value==='string'?value:typeof value?.text==='string'?value.text:JSON.stringify(value);const json=raw.match(/\{[\s\S]*\}/)?.[0]||raw;const result=parse(json);const allowed=new Set(selected.map(x=>x.query.toLowerCase()));const rows=(result.purple||[]).filter(x=>allowed.has(clean(x.history_query).toLowerCase())&&clean(x.relationship)).slice(0,6);
-  if(!rows.length)throw Error('no bridges');if(id!==ticket||!list.isConnected)return;
-  list.innerHTML=rows.map(x=>{const verified=x.type==='factual'&&samples.some(s=>s.query.toLowerCase()===clean(x.history_query).toLowerCase()&&s.sources.some(y=>y.url===x.source_url));const type=verified?'FACTUAL · source checked':'CONCEPTUAL · research question';return '<li><strong>'+type+' · '+safe(x.history_query)+':</strong> '+safe(x.relationship)+(x.bridge?' — '+safe(x.bridge):'')+(verified?' <a href="'+safe(x.source_url)+'" target="_blank" rel="noopener noreferrer">Source ↗</a>':'')+'</li>'}).join('');
- }catch{if(id===ticket&&list.isConnected)list.innerHTML='<li>Earlier topics are indexed, but independent bridge verification is unavailable. Select a topic to research it without an unsupported factual claim.</li>'}
+  const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),24000);
+  let response;try{response=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'full-history-assimilation',requireCloudflare:true,scanned_records:items.length}}),signal:ctl.signal})}finally{clearTimeout(timer)}
+  if(!response.ok)throw Error('AI status '+response.status);
+  const payload=await response.json();
+  packages=parsePackages(payload,new Set(chosen.map(x=>x.query.toLowerCase())));
+ }catch(error){console.warn('GPT package synthesis unavailable; showing labeled research comparisons',error)}
+ if(id!==ticket||!list.isConnected)return;
+ if(!packages.length)packages=fallbackPackages(chosen,q);
+ if(!packages.length){list.textContent='No useful comparison was found in the available Quant history.';return}
+ showPackages(list,packages,q);
+ const caption=document.createElement('small');caption.className='qassim-count';caption.textContent='Assessed '+items.length+' stored records ('+(remote?'cloud and device':'device only')+'), grouped '+ranked.filter(x=>x.score>0).length+' potentially related topics. These packages are research paths, not automatic factual claims.';list.after(caption);
 }
+
 function signal({kind='card',action='click',key='',title='',query='',terms='',id}={}){
  if(!['open','expand','star','unstar','collect','share','build','click'].includes(action))return;
  const event={id:id||'ci_'+(w.crypto?.randomUUID?.()||String(Date.now())+'_'+Math.random().toString(36).slice(2)),kind:clean(kind).slice(0,35),action,key:clean(key).slice(0,250),title:clean(title),query:clean(query),terms:clean(terms),createdAt:new Date().toISOString()};
