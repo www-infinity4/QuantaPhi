@@ -6,6 +6,7 @@
   const ASTEROID_ART='data:image/svg+xml;charset=utf-8,'+encodeURIComponent("<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 600\"><defs><radialGradient id=\"r\" cx=\"32%\" cy=\"28%\" r=\"73%\"><stop stop-color=\"#f6c895\"/><stop offset=\".34\" stop-color=\"#ae7a83\"/><stop offset=\".68\" stop-color=\"#6b4e75\"/><stop offset=\"1\" stop-color=\"#211939\"/></radialGradient><radialGradient id=\"c\"><stop stop-color=\"#372d56\"/><stop offset=\".75\" stop-color=\"#513a62\"/><stop offset=\"1\" stop-color=\"#c49588\"/></radialGradient><filter id=\"s\"><feGaussianBlur stdDeviation=\"16\"/></filter></defs><ellipse cx=\"315\" cy=\"318\" rx=\"225\" ry=\"220\" fill=\"#bc68ff\" opacity=\".36\" filter=\"url(#s)\"/><path d=\"M104 215 149 142 226 103 325 87 424 113 501 189 535 280 509 376 450 458 368 516 261 521 168 471 94 395 75 296Z\" fill=\"url(#r)\" stroke=\"#f5c1a2\" stroke-opacity=\".56\" stroke-width=\"5\"/><g fill=\"url(#c)\" stroke=\"#cfab9e\" stroke-width=\"7\"><ellipse cx=\"242\" cy=\"216\" rx=\"63\" ry=\"47\" transform=\"rotate(-16 242 216)\"/><ellipse cx=\"397\" cy=\"320\" rx=\"79\" ry=\"61\" transform=\"rotate(25 397 320)\"/><ellipse cx=\"213\" cy=\"385\" rx=\"44\" ry=\"36\"/><ellipse cx=\"360\" cy=\"165\" rx=\"30\" ry=\"24\"/><ellipse cx=\"332\" cy=\"446\" rx=\"31\" ry=\"21\"/></g><g fill=\"#211e39\" opacity=\".4\"><ellipse cx=\"233\" cy=\"216\" rx=\"38\" ry=\"27\"/><ellipse cx=\"387\" cy=\"319\" rx=\"52\" ry=\"37\"/><ellipse cx=\"208\" cy=\"384\" rx=\"26\" ry=\"19\"/></g><path d=\"M130 256 189 289 173 351M287 135 306 208 280 249M436 410 398 450\" fill=\"none\" stroke=\"#f5d3ad\" stroke-opacity=\".28\" stroke-width=\"8\" stroke-linecap=\"round\"/></svg>");
   const SEEN_KEY = 'phi_infinite_book_seen_v1';
   const STAR_KEY = 'phi_infinite_book_favorites_v1';
+  const HOME_STORY_KEY = 'phi_infinite_book_home_story_v1';
   const CATALOG_URL = '/infinite-book-catalog.json';
   const LIVE_CACHE = 'phi_infinite_book_live_v2';
   const bootTime = Date.now();
@@ -184,10 +185,10 @@
   // Review real pixels once. Never disguise an unapproved image as a finished illustration.
   let artBusy=false,artRequested=null;
   const artRunning=new Set();
-  window.addEventListener('phi:book:image-bridge-ready',()=>{if(current&&window.PhiInfiniteBookDiscover?.eligibleNarrative?.(current))scheduleAutoIllustration(current)});
+  window.addEventListener('phi:book:image-bridge-ready',()=>{if(current&&(root.dataset.context==='home'||window.PhiInfiniteBookDiscover?.eligibleNarrative?.(current)))scheduleAutoIllustration(current)});
   function scheduleAutoIllustration(story){
     if(!story?.id||!window.PhiVisualRender||!window.PhiBookImageBridge)return;
-    artRequested=story;
+    artRequested={story,context:root.dataset.context};
     if(!artBusy)void drainAsteroidArtwork();
   }
   async function drainAsteroidArtwork(){
@@ -195,26 +196,28 @@
     artBusy=true;
     try{
       while(artRequested){
-        const story=artRequested;artRequested=null;
+        const request=artRequested;artRequested=null;
+        const {story,context}=request;
+        const home=context==='home';
         if(artRunning.has(story.id))continue;
         artRunning.add(story.id);
         try{
           const bridge=window.PhiBookImageBridge;
           if(await bridge.hasStored(story.id))continue;
           const renderer=window.PhiVisualRender;
-          const intention='Original nonfiction illustration of '+story.title+'. '+String(story.summary||'').slice(0,650)+
+          const intention=(home?'Original cinematic editorial cover illustration for the Infinity Reads & Realms opening story about ':'Original nonfiction illustration of ')+story.title+'. '+String(story.summary||'').slice(0,650)+
             '. Picture the actual documented subject accurately, not an invented movie scene. Atmosphere: '+(story.mood||'Mystery')+
             '. No fabricated events, written words, glyphs, signage, labels, movie titles or pretend text. One cohesive vivid realistic composition.';
-          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note('GPT story sourced · creating and checking its illustration…');
+          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(home?'Creating and checking this opening story’s image…':'GPT story sourced · creating and checking its illustration…');
           const generated=await renderer.render({description:intention,mode:'Image',source:null,design:null,prompt:intention,exactText:''});
           const review=await renderer.review({src:generated.src,description:intention,mode:'Image',exactText:''});
           const approved=review?.status==='good'&&Number(review?.score)>=75&&!(review?.issues||[]).some(i=>i.severity==='high');
-          if(!approved){if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note('The story is ready, but the generated illustration failed visual review. The asteroid art remains until a satisfactory image is made.');continue}
+          if(!approved){if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(home?'The opening story is ready, but its image did not pass visual review.':'The story is ready, but its generated illustration did not pass visual review.');continue}
           const blob=await renderer.asBlob(generated.src);
           await bridge.attachGenerated(story,blob,{renderer:generated.renderer,review});
-          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note('Sourced GPT story · original illustration generated, reviewed, and attached.');
+          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(home?'Opening story image generated, reviewed and saved to this device.':'Sourced GPT story · original illustration generated, reviewed, and attached.');
         }catch(error){
-          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(error?.code==='image_daily_cap'?'Story ready. Image service daily limit reached; asteroid artwork remains visible.':'Story ready. Automatic illustration could not be approved or saved: '+String(error?.message||error).slice(0,130));
+          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(error?.code==='image_daily_cap'?'Story ready. Image service daily limit reached.':'Story ready. Automatic illustration could not be approved or saved: '+String(error?.message||error).slice(0,130));
         }finally{artRunning.delete(story.id)}
       }
     }finally{artBusy=false}
@@ -251,7 +254,8 @@
     note(roll?.bracketKey ? 'Four-roll path '+roll.bracketKey+' · '+(roll.indexWord||'')+' · '+(roll.refinement||'')+' · '+(roll.storyDirection||'') : 'Sourced discovery');
     window.PhiAssimilation?.signal?.({kind:'story',action:'open',id:'ci_view_'+String(story.id).replace(/[^A-Za-z0-9_-]/g,'_').slice(0,120),key:story.id,title:story.title,query:lastSearchQuery,terms:indexedSearchTerms(story)});
     window.dispatchEvent(new CustomEvent('phi:story:render',{detail:{id:story.id,title:story.title}}));
-    if(root.dataset.context==='search'&&window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story))scheduleAutoIllustration(story);
+    // Both the no-search opener and each verified search Asteroid get their own image.
+    if(root.dataset.context==='home'||window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story))scheduleAutoIllustration(story);
   }
   function rollDice(query='') {
     const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
@@ -545,7 +549,12 @@
     const options=(catalog.stories||[]).filter(x=>storyValid(x)&&!/(?:\\bfilm\\b|\\bmovie\\b|\\btelevision series\\b|\\btrailer\\b)/i.test(x.title));
     if(!options.length){note('The sourced story collection is unavailable. Try again later.');return}
     const candidates=rotate?options.filter(x=>x.id!==current?.id):options;
-    const story=candidates[rand(candidates.length)]||options[0];
+    // Keep the same opener across refreshes, so page reloads do not generate
+    // a new paid image or consume a new random story every time.
+    let previous='';
+    if(!rotate)try{previous=localStorage.getItem(HOME_STORY_KEY)||''}catch(_){}
+    const story=(!rotate&&options.find(x=>x.id===previous))||candidates[rand(candidates.length)]||options[0];
+    try{localStorage.setItem(HOME_STORY_KEY,story.id)}catch(_){}
     render(story);
     note('Original sourced collection · browse a story or start a search to create an Asteroid narrative with GPT.');
   }
