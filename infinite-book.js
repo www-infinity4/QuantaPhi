@@ -272,9 +272,12 @@
   function rollDice(query='') {
     const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
     const lastPath = (()=>{try{return sessionStorage.getItem('phi_book_last_roll_path')||''}catch{return ''}})();
-    // The current search is authoritative; when no query is supplied, a recent
-    // Quant can steer about two in five discoveries without monopolizing the book.
-    const quantFocus=String(query||(!query&&profile?.focus&&rand(5)<2?profile.focus:'')).trim().slice(0,90);
+    // Search is authoritative. At home, the original random rolls lead and
+    // a Quant from the complete indexed history occasionally steers them.
+    // This deliberately does not reuse only the last four search terms.
+    const focusPool=Array.isArray(profile?.focusPool)?profile.focusPool:[];
+    const steeredFocus=!query&&focusPool.length&&rand(5)<2?focusPool[rand(focusPool.length)]:'';
+    const quantFocus=String(query||steeredFocus||'').trim().slice(0,90);
     const originalSector=Number(profile?.sector)||0;
     const mappedSector=Number(catalog.specialistRefinements?.[originalSector]||originalSector);
     const activeSector=query && mappedSector>=1 && mappedSector<=(catalog.baseSectorCount||30)?mappedSector:0;
