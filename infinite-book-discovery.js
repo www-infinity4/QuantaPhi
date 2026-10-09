@@ -341,7 +341,7 @@ async function writeSecretStory(sources,plan,roll,storyKind='reads-realms'){
   status:['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported',
   mood,supported:matched,fullEvidenceRead:pageEvidence.filter(x=>matched.some(y=>y.url===x.url)).length};
 }
-async function findSearch({roll,catalog,seen,focus='',storyKind='reads-realms'}) {
+async function findSearch({roll,catalog,seen,focus='',storyKind='legacy'}) {
  const plan=sourcePlan(roll,catalog,focus);
  // GPT first devises event-level searches. Our sector+angle+class queries
  // remain independently usable if the GPT scout cannot answer.
@@ -355,7 +355,7 @@ async function findSearch({roll,catalog,seen,focus='',storyKind='reads-realms'})
  const direct=canSearch?plan.queries.slice(0,3).map(search):[];
  // Preserve daily writing tokens for the home opener; optional GPT scouting
  // belongs to actual search-driven Asteroid research only.
- const scout=storyKind==='asteroid'?scoutQueries(plan,roll):Promise.resolve([]);
+ const scout=storyKind==='reads-realms'?Promise.resolve([]):scoutQueries(plan,roll);
  const suggestions=await Promise.race([scout,new Promise(resolve=>setTimeout(()=>resolve([]),2200))]);
  const requested=[...direct];
  if(canSearch&&suggestions[0])requested.push(search(suggestions[0]));
@@ -451,7 +451,7 @@ async function writeWikipediaStory(page,plan,roll,storyKind='reads-realms'){
 function wikiExcerpt(s) {
  return String(s||'').replace(/\s+/g,' ').trim();
 }
-async function findWikipedia({roll,catalog,seen,focus='',onDeep,storyKind='reads-realms'}) {
+async function findWikipedia({roll,catalog,seen,focus='',onDeep,storyKind='legacy'}) {
  const plan=sourcePlan(roll,catalog,focus);
  const base=(plan.indexedWord ? (plan.indexedWord+' '+(plan.realm||'history')+' unusual event') : '') || WIKI_QUERIES[roll.sector] || (plan.name+' historical discovery');
  const seenWikipedia=[...seen].filter(id=>id.startsWith('wiki-')).length;
