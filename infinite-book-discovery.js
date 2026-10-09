@@ -326,7 +326,7 @@ async function writeSecretStory(sources,plan,roll){
  if(data?.ok===false)return null;
  const obj=jsonAnswer(textAnswer(data));
  if(!obj||obj.insufficient||clean(obj.title).length<16||clean(obj.summary).length<100||clean(obj.full).length<230||!isSecretStory(obj))return null;
- if(/\\b(movie|film|trailer|screenplay|fictional film|plot synopsis)\\b/i.test(clean(obj.title)))return null;
+ if(/\b(movie|film|trailer|screenplay|fictional film|plot synopsis)\b/i.test(clean(obj.title)))return null;
  const cited=(Array.isArray(obj.evidence_urls)?obj.evidence_urls:[]).map(canonical);
  const matched=sources.filter(x=>cited.includes(x.url));
  if(new Set(matched.map(x=>origin(x.url))).size<2||!detailsSupported(obj.detail,matched,plan.focus))return null;
@@ -369,7 +369,7 @@ async function findSearch({roll,catalog,seen,focus=''}) {
   .sort((a,b)=>b.score-a.score).map(x=>x.item).slice(0,20);
  // The writer examines the result pool and selects the most compelling
  // corroborated event; it cannot claim to have read full websites.
- if(!ranked.some(x=>EVENT_TITLE.test(x.title)&&relatedSources(x,ranked,plan.focus).length))return null;
+ if(!ranked.some(x=>relatedSources(x,ranked,plan.focus).length))return null;
  try{
   const written=await writeSecretStory(ranked,plan,roll);
   if(!written)return null;
@@ -499,6 +499,16 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
    sourceTitle:'Wikipedia contributors',sourceUrl:article,
    sources:[{title:'Wikipedia copyright and CC BY-SA attribution',url:WIKI_LICENSE}],
    discoverySource:'live',discoveryMethod:'encyclopedia-backup',attribution:'Wikipedia / CC BY-SA'};
+ // Asteroid never displays an encyclopedia excerpt as a finished story.
+ // Research it with GPT before it can enter the visible card, even when the
+ // multi-source web search endpoint is down.
+ if(arguments[0]?.strictGPT===true){
+  const written=await writeWikipediaStory(choice,plan,roll);
+  if(!written)return null;
+  return {...backup,...written,id:'wiki-gpt-'+choice.pageid,
+   status:'original single-source GPT research · Wikipedia CC BY-SA',
+   discoveryMethod:'gpt-wiki',mood:written.mood};
+ }
  // Never make the immediate sourced fallback wait for an unresponsive AI Worker.
  // Upgrade this same discovery with original prose only after the reader opts
  // to leave the card undisturbed.
