@@ -74,3 +74,25 @@
 #fredSpacesRadio .fs-status{border-top:1px solid #ae853d79;padding-top:10px;font-size:12px;line-height:1.55;color:#6d4709}
 @media(max-width:380px){#fredSpacesRadio .fs-card{padding:13px}#fredSpacesRadio .fs-player{gap:9px}#fredSpacesRadio .fs-play{width:62px;height:62px}#fredSpacesRadio .fs-player-name{font-size:14px}#fredSpacesRadio .fs-mode-row,#fredSpacesRadio .fs-tool-row{gap:5px}#fredSpacesRadio .fs-mode,#fredSpacesRadio .fs-tool{font-size:12px}}
 @media(prefers-reduced-motion:reduce){#fredSpacesRadio .fs-play{transition:none}}
+
+/* MEDIA STAR — distinctive golden star-shaped media asset, avatar behind replay interface. */
+#fredSpacesRadio .fs-media-star{isolation:isolate;overflow:hidden;border:2px solid #f5c453;background:radial-gradient(circle at 86% 17%,#fffde8 0%,#ffe991 30%,transparent 58%),linear-gradient(144deg,#fff5b2,#efc645 70%,#dda82b);box-shadow:0 0 0 1px #fff5ae,0 0 22px #f2bb48a4,0 18px 37px #ae7c316b}
+#fredSpacesRadio .fs-media-star > :not(.fs-star-backdrop){position:relative;z-index:1}
+#fredSpacesRadio .fs-star-backdrop{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+#fredSpacesRadio .fs-star-rays{position:absolute;right:-62px;top:-85px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,#fff8d1e0 0 23%,#fff7bc80 27%,#ffdb617d 44%,transparent 65%);filter:blur(7px)}
+#fredSpacesRadio .fs-big-star{position:absolute;right:-32px;top:-24px;width:clamp(190px,55vw,315px);height:clamp(190px,55vw,315px);clip-path:polygon(50% 0%,61% 33%,98% 35%,68% 57%,79% 91%,50% 72%,21% 91%,32% 57%,2% 35%,39% 33%);background:radial-gradient(circle at 34% 30%,#fffbea,#ffe982 35%,#fbbd34 60%,#bb7822 100%);box-shadow:inset 0 0 22px #fff7db;border:none;filter:drop-shadow(0 0 16px #ffd75e);opacity:.91}
+#fredSpacesRadio .fs-star-avatar{position:absolute;right:clamp(45px,15%,103px);top:clamp(43px,6%,66px);display:grid;place-items:center;width:clamp(75px,20vw,110px);height:clamp(75px,20vw,110px);border:3px solid #fff6c7;border-radius:50%;background:radial-gradient(circle at 35% 22%,#855c39,#392443 73%);color:#fff6c9;font-size:clamp(36px,10vw,54px);text-shadow:0 0 9px #ffc956;box-shadow:0 0 0 5px #9c5a3066,0 0 28px #f8ce7a}
+#fredSpacesRadio .fs-media-star .fs-eyebrow{background:#fff9da;border-color:#f3ce6b;color:#542f0a;font-weight:900;box-shadow:0 0 13px #fffce3b0}
+#fredSpacesRadio .fs-media-star .fs-heading{max-width:min(83%,470px);text-shadow:0 1px 1px #fffbd3}
+#fredSpacesRadio .fs-media-star .fs-heading h2{color:#332009;font-weight:900}
+#fredSpacesRadio .fs-media-star .fs-summary{color:#38270d;font-weight:650;background:#fffcdfb5;border-radius:13px;padding:11px 12px;border:1px solid #efce7c}
+#fredSpacesRadio .fs-media-star .fs-stream{position:relative;z-index:2;background:linear-gradient(145deg,#1e153b,#342249 60%,#46341c);border:1px solid #f0cc6b;box-shadow:0 0 0 1px #fff7c163,0 0 18px #f6d4718c,inset 0 1px 0 #fff5c355}
+#fredSpacesRadio .fs-media-star .fs-play{box-shadow:0 0 0 2px #fff6d6,0 0 26px #ffcd64a8}
+#fredSpacesRadio .fs-media-star :is(.fs-actions button,.fs-builds button,.fs-next,.fs-topic){border-radius:999px!important;font-weight:850;letter-spacing:.01em}
+#fredSpacesRadio .fs-media-star :is(.fs-actions button,.fs-builds button,.fs-topic):hover,#fredSpacesRadio .fs-media-star :is(.fs-actions button,.fs-builds button,.fs-topic):focus-visible{box-shadow:0 0 0 2px #fffdf0,0 0 19px #ffd15bbc!important}
+#fredSpacesRadio .fs-media-star .fs-builds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#fredSpacesRadio .fs-media-star .fs-builds .fs-embed{grid-column:1/-1;min-height:48px;background:linear-gradient(135deg,#47336f,#25163e)!important;color:#fff1c5!important;border:1px solid #e2c0ff!important;box-shadow:0 0 17px #b37cff80!important}
+#fredSpacesRadio .fs-media-star .fs-embed:focus-visible{outline:3px solid #fff;outline-offset:3px}
+#fredSpacesRadio .fs-media-star .fs-status{color:#53340f;font-weight:650}
+@media(max-width:440px){#fredSpacesRadio .fs-big-star{right:-67px;top:0;opacity:.79}#fredSpacesRadio .fs-star-avatar{right:8px;top:55px;width:75px;height:75px;font-size:36px}#fredSpacesRadio .fs-media-star .fs-heading{max-width:100%}#fredSpacesRadio .fs-media-star .fs-heading h2{padding-right:53px}#fredSpacesRadio .fs-media-star .fs-eyebrow{font-size:9px;max-width:100%;white-space:normal}#fredSpacesRadio .fs-media-star .fs-summary{font-size:13px}}
+@media(prefers-reduced-motion:reduce){#fredSpacesRadio .fs-media-star *{transition:none!important}}
