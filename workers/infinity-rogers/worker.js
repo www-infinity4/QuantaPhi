@@ -14,7 +14,7 @@ const DEFAULT_CF_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 const CARD_MANAGER_MODEL = "@cf/openai/gpt-oss-120b";
 const IMAGE_MODEL = "@cf/black-forest-labs/flux-2-dev";
 const IMAGE_FALLBACK_MODEL = "@cf/black-forest-labs/flux-2-klein-9b";
-const IMAGE_DAILY_CAP = 20;
+// Image generation has no application-enforced daily count; provider capacity still applies.
 
 function clean(value, max = 12000) {
   return typeof value === "string" ? value.trim().slice(0, max) : "";
@@ -246,7 +246,7 @@ ${sharedImage ? `<img class="image" src="${phiHtml(sharedImage)}" alt="">` : ""}
 }
 
 
-const AI_DAILY_LIMIT=10000, AI_RESERVE=1000, AI_PROMPT_CHARS=12000, AI_CACHE_MS=600000;
+const AI_PROMPT_CHARS=12000, AI_CACHE_MS=600000;
 async function aiUser(request,body){
  const explicit=clean(body?.userId||body?.holderId||request.headers.get("X-Infinity-User")||"",180);
  if(explicit)return explicit;
@@ -259,12 +259,19 @@ function tokenEstimate(value){return Math.max(1,Math.ceil(String(value||"").leng
 async function cacheKey(value){const bytes=new TextEncoder().encode(value);const digest=await crypto.subtle.digest("SHA-256",bytes);return [...new Uint8Array(digest)].map(x=>x.toString(16).padStart(2,"0")).join("")}
 async function usageState(env,userId){
  const day=new Date().toISOString().slice(0,10);
- const row=await env.METER_DB.prepare("SELECT prompt_tokens,completion_tokens,requests FROM ai_usage_daily WHERE user_id=?1 AND day=?2").bind(userId,day).first();
- const used=Number(row?.prompt_tokens||0)+Number(row?.completion_tokens||0),usable=AI_DAILY_LIMIT-AI_RESERVE;
- return{day,used,remaining:Math.max(0,usable-used),limit:AI_DAILY_LIMIT,reserve:AI_RESERVE,requests:Number(row?.requests||0)};
+ let row=null;
+ try {
+  if(env.METER_DB) row=await env.METER_DB.prepare("SELECT prompt_tokens,completion_tokens,requests FROM ai_usage_daily WHERE user_id=?1 AND day=?2").bind(userId,day).first();
+ } catch(error){console.warn("AI usage meter read deferred",error);}
+ const used=Number(row?.prompt_tokens||0)+Number(row?.completion_tokens||0);
+ // Usage reporting must not become a generation ceiling.
+ return{day,used,remaining:null,limit:null,reserve:0,requests:Number(row?.requests||0)};
 }
 async function recordUsage(env,userId,state,promptTokens,completionTokens){
- await env.METER_DB.prepare("INSERT INTO ai_usage_daily(user_id,day,prompt_tokens,completion_tokens,requests,updated_at) VALUES(?1,?2,?3,?4,1,?5) ON CONFLICT(user_id,day) DO UPDATE SET prompt_tokens=prompt_tokens+excluded.prompt_tokens,completion_tokens=completion_tokens+excluded.completion_tokens,requests=requests+1,updated_at=excluded.updated_at").bind(userId,state.day,promptTokens,completionTokens,Date.now()).run();
+ if(!env.METER_DB)return;
+ try{
+  await env.METER_DB.prepare("INSERT INTO ai_usage_daily(user_id,day,prompt_tokens,completion_tokens,requests,updated_at) VALUES(?1,?2,?3,?4,1,?5) ON CONFLICT(user_id,day) DO UPDATE SET prompt_tokens=prompt_tokens+excluded.prompt_tokens,completion_tokens=completion_tokens+excluded.completion_tokens,requests=requests+1,updated_at=excluded.updated_at").bind(userId,state.day,promptTokens,completionTokens,Date.now()).run();
+ }catch(error){console.warn("AI usage meter write deferred",error);}
 }
 
 async function runCardIntel(request, env, body) {
@@ -646,7 +653,7 @@ async function runImage(request, env) {
 
  const userId=(await aiUser(request,{}))+":image";
  const state=await usageState(env,userId);
- if(state.requests>=IMAGE_DAILY_CAP) return json(request,{ok:false,error:"image_daily_cap",cap:IMAGE_DAILY_CAP},429);
+ // No artificial daily image ceiling. Real provider errors are returned below.
 
  const literal=(requestText||prompt).trim();
  const whiteBorder=/\bwhite\s+border\b/i.test(literal);
@@ -716,7 +723,7 @@ async function runImage(request, env) {
        // bytes correctly or Android's image decode / canvas review can fail.
        const header=atob(b64.slice(0,48));
        const mime=header.startsWith("\x89PNG")?"image/png":header.startsWith("\xff\xd8\xff")?"image/jpeg":header.startsWith("RIFF")&&header.slice(8,12)==="WEBP"?"image/webp":"image/jpeg";
-       return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:"+mime+";base64,"+b64,attempt:attemptNumber,mode,referenceMode:blankReference?"text-only":styleOnly?"style-only":"source-image",remaining:Math.max(0,IMAGE_DAILY_CAP-state.requests-1)});
+       return json(request,{ok:true,provider:"cloudflare-workers-ai",model:plan.model,dataURI:"data:"+mime+";base64,"+b64,attempt:attemptNumber,mode,referenceMode:blankReference?"text-only":styleOnly?"style-only":"source-image",remaining:null});
      }catch(error){
        lastError=error;
        const message=String(error?.message||error);
@@ -747,18 +754,25 @@ async function runMetered(request,env,body,mode){
  const raw=String(body?.input||body?.message||"");
  if(raw.length>AI_PROMPT_CHARS)return json(request,{ok:false,error:"prompt_too_large",maxCharacters:AI_PROMPT_CHARS},413);
  const userId=await aiUser(request,body),state=await usageState(env,userId),promptTokens=tokenEstimate(raw+JSON.stringify(body?.context||{}));
- if(promptTokens>state.remaining){
-  return json(request,{ok:false,error:"daily_quota_exceeded",meter:{...state,userId}},429);
+ // Every Reads & Realms/Asteroid request must reach the model, not a ten-minute cached story.
+ const freshStory=body?.context?.task==="infinite-book-deep-story";
+ const key=freshStory?"":await cacheKey(mode+"|"+raw+"|"+JSON.stringify(body?.context||{}));
+ if(key&&env.METER_DB){
+  try{
+   const cached=await env.METER_DB.prepare("SELECT response_json FROM ai_cache WHERE cache_key=?1 AND expires_at>?2").bind(key,Date.now()).first();
+   if(cached){const data=JSON.parse(cached.response_json);return json(request,{...data,cached:true,meter:{...state,userId}});}
+  }catch(error){console.warn("AI response cache read deferred",error);}
  }
- const key=await cacheKey(mode+"|"+raw+"|"+JSON.stringify(body?.context||{}));
- const cached=await env.METER_DB.prepare("SELECT response_json FROM ai_cache WHERE cache_key=?1 AND expires_at>?2").bind(key,Date.now()).first();
- if(cached){const data=JSON.parse(cached.response_json);return json(request,{...data,cached:true,meter:{...state,userId}})}
  const response=mode==="gpt"?await runGPT(request,env,body):await runReason(request,env,body);
  const data=await response.clone().json().catch(()=>({ok:false,error:"invalid_gateway_response"}));
  if(!response.ok||!data.ok)return response;
  const completionTokens=tokenEstimate(data.output||data.output_text||"");
  await recordUsage(env,userId,state,promptTokens,completionTokens);
- await env.METER_DB.prepare("INSERT OR REPLACE INTO ai_cache(cache_key,response_json,expires_at,created_at) VALUES(?1,?2,?3,?4)").bind(key,JSON.stringify(data),Date.now()+AI_CACHE_MS,Date.now()).run();
+ if(key&&env.METER_DB){
+  try{
+   await env.METER_DB.prepare("INSERT OR REPLACE INTO ai_cache(cache_key,response_json,expires_at,created_at) VALUES(?1,?2,?3,?4)").bind(key,JSON.stringify(data),Date.now()+AI_CACHE_MS,Date.now()).run();
+  }catch(error){console.warn("AI response cache write deferred",error);}
+ }
  const next=await usageState(env,userId);
  return json(request,{...data,cached:false,meter:{...next,userId}});
 }
