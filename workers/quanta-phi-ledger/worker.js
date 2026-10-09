@@ -15,6 +15,12 @@ async function ensureStarCoinCredits(env) {
     env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_star_coin_credits_user_created ON quanta_star_coin_credits(user_id,created_at)")
   ]);
 }
+async function ensureCrusherResearch(env) {
+ await env.DB.batch([
+  env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_crusher_research(user_id TEXT NOT NULL,article_id TEXT NOT NULL,wallet_id TEXT NOT NULL,article_json TEXT NOT NULL,directions_json TEXT NOT NULL,created_at INTEGER NOT NULL,updated_at INTEGER NOT NULL,PRIMARY KEY(user_id,article_id))"),
+  env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_quanta_crusher_research_recent ON quanta_crusher_research(user_id,updated_at)")
+ ]);
+}
 async function ensureCrusherSpinCredits(env) {
   await env.DB.batch([
     env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_crusher_spin_credits(credit_id TEXT PRIMARY KEY,user_id TEXT NOT NULL,wallet_id TEXT NOT NULL,spin_id TEXT NOT NULL,terms_json TEXT NOT NULL,query_text TEXT NOT NULL,research_hash TEXT NOT NULL DEFAULT '',created_at INTEGER NOT NULL,UNIQUE(user_id,spin_id))"),
@@ -468,6 +474,29 @@ export default {
 
     // Bitcoin Crusher: exactly one tenth of a StarCoin for each distinct completed spin.
     // The authenticated D1 account, not a browser counter, owns these receipts.
+    // Collected research Quant -> article -> ten or more private website-direction cards.
+    // The Reserve reads the signed-in user's collection; nothing is made public by default.
+    if (url.pathname === "/v1/quants/crusher-research") {
+      await ensureCrusherResearch(env);
+      if(request.method==="GET"){
+        const rows=await env.DB.prepare("SELECT article_id,article_json,directions_json,created_at,updated_at FROM quanta_crusher_research WHERE user_id=? ORDER BY updated_at DESC LIMIT 150").bind(identity.user_id).all();
+        return json({ok:true,articles:(rows.results||[]).map(row=>({article_id:row.article_id,article:JSON.parse(row.article_json),directions:JSON.parse(row.directions_json),created_at:row.created_at,updated_at:row.updated_at}))});
+      }
+      if(request.method==="POST"){
+        const data=await request.json().catch(()=>({}));
+        const articleId=String(data.article_id||"").trim().slice(0,100);
+        const article=data.article,rows=Array.isArray(data.directions)?data.directions.slice(0,30):[];
+        if(!/^[a-zA-Z0-9_-]{12,100}$/.test(articleId)||!article||typeof article!=="object"||!Array.isArray(article.terms)||article.terms.length!==4||!String(article.title||"").trim()||rows.length<10)return json({error:"invalid_research_quant"},400);
+        const sources=(Array.isArray(article.sources)?article.sources:[]).filter(src=>src&&typeof src.url==="string"&&/^https:\/\//.test(src.url)).slice(0,15).map(src=>({title:String(src.title||"").slice(0,260),url:src.url.slice(0,1700),abstract:String(src.abstract||"").slice(0,1500),provider:String(src.provider||"").slice(0,70)}));
+        const pack={title:String(article.title).slice(0,250),question:String(article.question||"").slice(0,1000),terms:article.terms.map(x=>String(x||"").slice(0,90)),abstract:String(article.abstract||"").slice(0,4500),synthesis:String(article.synthesis||"").slice(0,9000),evidenceStatus:String(article.evidenceStatus||"pending").slice(0,100),hash:String(article.hash||"").slice(0,120),sources};
+        const directionCards=rows.filter(x=>x&&typeof x.title==="string"&&x.title.trim()).slice(0,30).map((d,i)=>({id:articleId+"-"+i,title:String(d.title||"").slice(0,180),body:String(d.body||"").slice(0,900),type:String(d.type||"website").slice(0,80),indexedWords:String(d.indexedWords||pack.terms.join(" ")).slice(0,700),source:"Bitcoin Crusher research Quant",articleId}));
+        if(directionCards.length<10)return json({error:"directions_required"},400);
+        const now=Date.now();
+        const result=await env.DB.prepare("INSERT OR IGNORE INTO quanta_crusher_research(user_id,article_id,wallet_id,article_json,directions_json,created_at,updated_at) VALUES(?,?,?,?,?,?,?)").bind(identity.user_id,articleId,wallet,JSON.stringify(pack),JSON.stringify(directionCards),now,now).run();
+        return json({ok:true,collected:true,duplicate:Number(result.meta?.changes||0)===0,article_id:articleId,directions:directionCards.length},201);
+      }
+      return json({error:"method_not_allowed"},405);
+    }
     if (url.pathname === "/v1/quants/crusher-spins" && request.method === "POST") {
       const body=await request.json().catch(()=>({}));
       const id=String(body.spin_id||"").trim();
