@@ -390,7 +390,7 @@
       present(ready, roll);
       if(!spinSubmitted)note(roll?.bracketKey ? 'Ready · '+roll.indexWord+' · '+roll.refinement+' · '+roll.storyDirection : 'Ready · source-backed story');
     } else {
-      note(requireFresh?'Researching this selected branch against live sources; the current article stays visible until a sourced result is ready…':'All prepared stories have been read. Researching another documented discovery…');
+      note('ASTEROID · researching '+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery')+' from real sources for GPT to write. The card appears only when evidence supports the story…');
     }
     const acceptNew = story => {
       // Do not replace a visible story on an unsuspecting reader.
