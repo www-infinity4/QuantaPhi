@@ -1,0 +1,17 @@
+# Production configuration for the infinity-rogers Worker.
+# Kept in sync with Cloudflare dashboard on 2026-10-09.
+# IMPORTANT: Do not place API keys in this file or GitHub.
+# The following are managed as encrypted Cloudflare Secrets in the dashboard:
+# GEMINI_API_KEY, ANTHROPIC_API_KEY, Gpt.
+name = "infinity-rogers"
+main = "worker.js"
+compatibility_date = "2026-08-23"
+keep_vars = true
+
+[ai]
+binding = "AI"
+
+[[d1_databases]]
+binding = "METER_DB"
+database_name = "infinity-ai-meter"
+database_id = "3a755f82-da9a-4e2b-a4f8-67f35d726ee0"
