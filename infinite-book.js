@@ -165,6 +165,7 @@
       a.href = buildUrl(tool, story); a.dataset.siteUrl = a.href;
     }
     note(roll?.bracketKey ? 'Four-roll path '+roll.bracketKey+' · '+(roll.indexWord||'')+' · '+(roll.refinement||'')+' · '+(roll.storyDirection||'') : 'Sourced discovery');
+    window.PhiAssimilation?.signal?.({kind:'story',action:'open',id:'ci_view_'+String(story.id).replace(/[^A-Za-z0-9_-]/g,'_').slice(0,120),key:story.id,title:story.title,query:lastSearchQuery,terms:indexedSearchTerms(story)});
     window.dispatchEvent(new CustomEvent('phi:story:render',{detail:{id:story.id,title:story.title}}));
   }
   function rollDice(query='') {
