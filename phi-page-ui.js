@@ -8,7 +8,7 @@
   const refine=document.getElementById('qrefine');if(refine)refine.value='';
   const refWrap=document.getElementById('qrefineWrap');if(refWrap)refWrap.hidden=true;
   const result=document.getElementById('result');if(result)result.hidden=true;
-  window.dispatchEvent(new CustomEvent('quantaphi:new-search'));
+  window.dispatchEvent?.(new CustomEvent('quantaphi:new-search'));
   const status=document.getElementById('status');if(status)status.textContent='';
   const media=document.getElementById('media');if(media)media.hidden=true;
   const grid=document.getElementById('mediaGrid');if(grid)grid.replaceChildren();
