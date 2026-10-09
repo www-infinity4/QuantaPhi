@@ -60,7 +60,7 @@ function layout(){
  const img=make('img','pi-result');img.alt='Generated image result';done.append(img,make('p','pi-notice',''));
  const audit=make('div','pi-audit');audit.setAttribute('aria-live','polite');audit.append(make('strong','pi-audit-title','Visual review'),make('p','pi-audit-summary','Not yet reviewed.'),make('ul','pi-audit-issues'));done.append(audit);
  const actions=make('div','pi-actions');
- for(const [key,label,wide]of [['star','☆ Star'],['share','↗ Share +★'],['collect','+ Collect +★'],['good','✓ Looks good'],['fix','Fix issues',true],['more','Build more like this',true],['edit','Edit prompt'],['download','Save image']]){
+ for(const [key,label,wide]of [['star','☆ Star'],['share','↗ Share +★'],['collect','+ Collect +★'],['good','✓ Looks good'],['fix','Fix issues',true],['more','Build more like this',true],['edit','Edit prompt'],['clear','Clear image'],['download','Save image']]){
   const b=make('button',wide?'pi-wide':'',label);b.type='button';b.dataset.piAction=key;actions.append(b)
  }
  done.append(actions);
@@ -205,6 +205,17 @@ host.addEventListener('click',event=>{
   void reopenAsReference(instruction);
  }
  if(action==='good'){window.PhiImageLearning?.record(artifact,'looks_good');notice('Thank you. This result is a positive design example for future renders on this device.')}
+ if(action==='clear'){
+  if(busy)return;
+  const clearedId=artifact?.id||'';
+  result=null;rawResult=null;artifact=null;
+  const finished=$('.pi-result');if(finished)finished.removeAttribute('src');
+  const audit=$('.pi-audit');if(audit){audit.dataset.review='uncertain';audit.querySelector('.pi-audit-title').textContent='Visual review';audit.querySelector('.pi-audit-summary').textContent='No generated image selected.';audit.querySelector('.pi-audit-issues').replaceChildren()}
+  state('composer');
+  notice('Generated image cleared. Your description and uploaded references are still here. Images already saved in a story can be cleared on that story card.');
+  emit('build:cleared',{artifactId:clearedId});
+  return;
+ }
 
  if(action==='star'||action==='share'||action==='collect'||action==='download')emit('action',{action,artifact,result});
 });
