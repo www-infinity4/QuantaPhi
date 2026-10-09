@@ -527,8 +527,9 @@ async function find(options){
  const deep=findSearch(options).catch(error=>{console.warn('Book GPT research unavailable',error);return null;});
  const backup=findWikipedia(options).catch(error=>{console.warn('Book independent source discovery unavailable',error);return null;});
  if(!strict){
-  const first=await Promise.race([deep,backup]);
-  return first||await (first===null?deep:backup);
+  const first=await Promise.race([deep.then(story=>({type:'deep',story})),backup.then(story=>({type:'wiki',story}))]);
+  if(first.story)return first.story;
+  return first.type==='deep'?backup:deep;
  }
  // Only the actual model's original source-backed writing can enter Asteroid.
  // A retrieved excerpt, old film catalog, or encyclopedia blurb is not a finished story.
