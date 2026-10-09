@@ -570,6 +570,8 @@
         throw new Error('Story discovery configuration is invalid');
       }
       // The home story is a properly attributed catalog story, not a fake GPT article.
+      // Retain catalog permalink IDs, but search-generated Asteroids NEVER show these as GPT results.
+      for(const story of catalog.stories||[])if(storyValid(story))byId.set(story.id,story);
       // Only explicit searches enter the separate Asteroid / GPT research flow.
       // No speculative background stories or artwork.
       void (async()=>{try{const raw=window.PhiInfiniteBookBanksUrl;if(!raw)return;const u=new URL(raw,location.origin);if(u.origin!==location.origin&&u.origin!=='https://infinite-book-library.marvaseater.workers.dev')return;const r=await fetch(u.href,{signal:AbortSignal.timeout(7500)});if(!r.ok)return;const data=await r.json();if(!Array.isArray(data.subjects))return;const ids=new Set(catalog.wordIndex.map(x=>x.id));for(const w of data.subjects){if(!Number.isSafeInteger(Number(w.id))||ids.has(Number(w.id))||!Array.isArray(w.sectors)||!w.word)continue;catalog.wordIndex.push({id:Number(w.id),word:String(w.word).slice(0,120),sector:Number(w.sectors[0]),sectors:w.sectors});ids.add(Number(w.id));}}catch(e){console.warn('Book words offline; bundled words retained',e)}})();
@@ -584,7 +586,7 @@
           note('Rebuilding the shared story from evidence with GPT…');
           await nextStory(u.searchParams.get('bookTitle'));
         } else await nextStory();
-      } else if(initialQuery?.trim()){
+      } else if(lastSearchQuery.trim()&&root.dataset.context==='search'){
         placeSearchStory();
         await nextStory(lastSearchQuery);
       }else{
