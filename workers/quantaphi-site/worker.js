@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v36-fresh-oracle-cards';
+const EDGE_VERSION = 'quantaphi-org-v37-eight-subjects';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -212,7 +212,8 @@ export default {
   if (route.redirect) return Response.redirect(new URL(route.redirect, incoming.origin).toString(), 308);
   const repoPath = '/' + route.repo + route.sourcePath;
   // Versioned repair assets read the exact published commit, avoiding stale main responses.
-  const sourceRef = route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
+  const repairRef = ['20261009-billboard-grid5','20261009-eight-subjects5'].includes(incoming.searchParams.get('v'));
+  const sourceRef = repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
   const origin = new URL('https://www-infinity4.github.io' + repoPath);
   origin.search = incoming.search;
   const extension = route.sourcePath.split('.').pop().toLowerCase();
