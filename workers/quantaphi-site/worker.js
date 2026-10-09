@@ -43,6 +43,8 @@ const routeFor = incoming => {
  if (path.startsWith('/code-phi/')) return { redirect: '/omni-phi/code/' + path.slice('/code-phi/'.length) + incoming.search };
  if (path === '/QuantaPhi' || path === '/QuantaPhi/' || path === '/QuantaPhi/index.html') return { redirect: '/' + incoming.search };
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
+ if (path === '/page') return {redirect:'/page/'+incoming.search};
+ if (path === '/page/' || path === '/page/index.html') return {repo:'QuantaPhi',sourcePath:'/page/index.html',publicPath:'/page/'};
  if (path === '/learn') return { redirect: '/learn/' };
  if (path.startsWith('/learn/')) return { repo: 'QuantaPhi', sourcePath: path.endsWith('/') ? path + 'index.html' : path, publicPath: path };
  // Omni's channels keep the same site origin as the unified StarCoin wallet.
