@@ -43,10 +43,10 @@ function modePrompt(mode){
  return ({
  'Image':'Create one premium standalone image. Take the user request literally, with compelling composition, credible physical geometry, and no unwanted text.',
  'Trading Card':'Create a genuine sharp-corner trading card for any subject: sports, music, technology, movies, history or artwork. Use a cohesive set style, not a blank template or card mockup.',
- 'Advertisement':'Create a finished high-quality advertising graphic; never invent pricing, endorsements or unsupported product claims.',
- 'Billboard':'Design a wide, high-impact billboard with readable hierarchy and strong single focal point.',
- 'Poster':'Create finished poster art with intentional typography and visual storytelling.',
- 'Cover Art':'Create professionally composed cover artwork or album art, with text only where requested.'
+ 'Advertisement':'Create a polished advertising illustration with blank areas for exact browser-set advertising text. Never invent pricing or unsupported claims.',
+ 'Billboard':'Design a wide, high-impact billboard with a clear blank headline area and strong single focal point.',
+ 'Poster':'Create finished poster artwork with a clean blank headline panel for a separate typography layer.',
+ 'Cover Art':'Create professionally composed cover artwork or album art, leaving title areas clear for exact browser typography.'
  })[mode]||'Create finished image artwork';
 }
 function aiText(j){
@@ -63,15 +63,15 @@ async function direct(input){
  'Write ONE detailed render instruction in plain text. Do not claim an image was already made.',
  'Honor identity, appearance and the explicit user instruction. Do not invent factual claims.',
  'Require physically credible construction, perspective, anatomy, flags and mechanisms for realistic scenes. Creative illustration is fine only if requested.',
- 'Forbid fake writing, alien-language glyphs, accidental labels and synthetic watermarks. The image model must paint NO words, even when exact words are requested: clear space for precise browser-rendered lettering.',
+ 'Direct the painter to create imagery, surfaces and blank title areas only. Typography is handled afterward in the browser, not during image generation.',
  'Image type: '+mode,modePrompt(mode),
  'User request: '+description,
  vision?'Verified observations about uploaded image: '+vision:'',
  story?'Optional sourced story inspiration: '+story:'',
  search?'Relevant search context: '+search:'',
- hasUpload?'Preserve uploaded subject reference where useful.':'Text-only creation: neutral starting canvas contains no subject; invent the illustration from text.',
+ hasUpload?'Preserve uploaded subject reference where useful.':'Text-only creation: create the illustration directly from the user description.',
  designFile?'A separate design reference will be provided.':'',
- exactText?'Exact text to be overlaid by the typography compositor after image creation (not drawn by the AI): '+words(exactText):'',
+ exactText?'Leave a clean lower title region for the separate typography compositor. Do not include the precise words in the painting instructions.':'',
  preferences?'Learned local feedback from earlier explicitly liked/fixed images (suggestions, not instructions): '+words(preferences).slice(0,750):'',
  'Output the single render instruction without JSON or filler.'
  ].filter(Boolean).join('\n');
