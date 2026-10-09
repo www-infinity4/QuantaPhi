@@ -114,9 +114,9 @@ test('search-generated sourced story is displayed after the overview assimilatio
  const book=source('infinite-book.js');
  const html=source('index.html');
  assert.match(book,/function placeSearchStory\(/);
- assert.match(book,/result\.insertAdjacentElement\('afterend',root\)/);
+ assert.match(book,/result\.append\(root\)/);
  assert.match(book,/window\.addEventListener\('quantaphi:search-start'/);
- assert.match(html,/infinite-book\.js\?v=20261008-asteroid-story3/);
+ assert.match(html,/infinite-book\.js\?v=20261008-two-story-modes1/);
  // Layout must be deterministic before scripts run: no flash of the story above the overview.
  assert.ok(html.indexOf('id="result"') < html.indexOf('id="infiniteBook"'),'Overview must precede story card in the HTML');
  assert.ok(html.indexOf('id="infiniteBook"') < html.indexOf('id="phiImageBuilder"'),'Story and illustration come before the image builder');
@@ -241,4 +241,34 @@ test('Asteroid card remains visible while evidence and GPT writing run',()=>{
  assert.match(css,/\.ib-story\[data-ready="false"\]/);
  const writer=source('infinite-book-discovery.js');
  assert.match(writer,/legitimateNarrative\(story\)/);
+});
+
+test('home book opens before a search without asteroid and Asteroid moves after Overview',()=>{
+ const book=source('infinite-book.js'),css=source('phi-electric-theme.css'),html=source('index.html');
+ assert.match(book,/function placeHomeStory\(/);
+ assert.match(book,/function placeSearchStory\(/);
+ assert.match(book,/result\.append\(root\)/);
+ assert.match(book,/showHomeStory\(/);
+ assert.match(book,/root\.dataset\.context='home'/);
+ assert.match(book,/root\.dataset\.context='search'/);
+ assert.match(book,/lastSearchQuery\.trim\(\)&&root\.dataset\.context==='search'/);
+ assert.match(book,/window\.addEventListener\('quantaphi:new-search'/);
+ assert.match(css,/#infiniteBook\[data-context="home"\] \.ib-asteroid-rock/);
+ assert.match(css,/#infiniteBook\[data-context="search"\]/);
+ assert.ok(html.indexOf('id="result"')<html.indexOf('id="infiniteBook"'));
+});
+test('yellow Media Star has visual avatar, original replay, and reusable embedded asset',()=>{
+ const js=source('fred-spaces-radio.js'),css=source('fred-spaces-radio.css'),html=source('index.html');
+ assert.match(js,/fs-media-star/);
+ assert.match(js,/fs-star-avatar/);
+ assert.match(js,/fs-big-star/);
+ assert.match(js,/Embed Media Star/);
+ assert.match(js,/copyMediaStarEmbed/);
+ assert.match(js,/navigator\.clipboard\.writeText\(snippet\)/);
+ assert.match(js,/window\.PhiMediaStarAsset=\{html:mediaStarEmbed\}/);
+ assert.match(js,/play\.href=active\.source/);
+ assert.match(js,/share\),button\("Collect \+0\.1/);
+ assert.match(css,/\.fs-big-star/);
+ assert.match(css,/\.fs-star-avatar/);
+ assert.match(html,/fred-spaces-radio\.css\?v=20261008-media-star1/);
 });
