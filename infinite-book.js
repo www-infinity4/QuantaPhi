@@ -55,7 +55,7 @@
   function cardLayout() {
     root.replaceChildren();
     const header = E('div', 'ib-head');
-    header.append(E('strong', '', 'THE INFINITE BOOK OF BIG SECRETS'), E('button', 'ib-next', 'Another secret ↻'));
+    header.append(E('strong', '', 'THE INFINITE BOOK OF BIG SECRETS'), E('button', 'ib-next', 'Another secret · +1 ★'));
     header.lastChild.type = 'button'; header.lastChild.dataset.bookAction = 'next';
     const card = E('article', 'ib-story');
     card.append(E('div', 'ib-category'), E('h2', 'ib-title'), E('p', 'ib-summary'));
