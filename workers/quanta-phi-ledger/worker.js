@@ -15,6 +15,12 @@ async function ensureStarCoinCredits(env) {
     env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_star_coin_credits_user_created ON quanta_star_coin_credits(user_id,created_at)")
   ]);
 }
+async function ensureCrusherSpinCredits(env) {
+  await env.DB.batch([
+    env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_crusher_spin_credits(credit_id TEXT PRIMARY KEY,user_id TEXT NOT NULL,wallet_id TEXT NOT NULL,spin_id TEXT NOT NULL,terms_json TEXT NOT NULL,query_text TEXT NOT NULL,research_hash TEXT NOT NULL DEFAULT '',created_at INTEGER NOT NULL,UNIQUE(user_id,spin_id))"),
+    env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_quanta_crusher_spin_user ON quanta_crusher_spin_credits(user_id,created_at)")
+  ]);
+}
 async function ensureStorySpinCredits(env) {
   await env.DB.batch([
     env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_story_spin_credits(credit_id TEXT PRIMARY KEY,user_id TEXT NOT NULL,wallet_id TEXT NOT NULL,reference_id TEXT NOT NULL,research_json TEXT NOT NULL,created_at INTEGER NOT NULL,UNIQUE(user_id,reference_id))"),
@@ -49,15 +55,19 @@ function upsertCollect(env, wallet, card) {
 }
 async function starCoinState(env, user, limit = 500) {
   await ensureStorySpinCredits(env);
+  await ensureCrusherSpinCredits(env);
   const totals = await env.DB.prepare("SELECT COALESCE(SUM(tenths),0) AS tenths,COALESCE(SUM(kind='collect'),0) AS collects,COALESCE(SUM(kind='share'),0) AS shares FROM quanta_star_coin_credits WHERE user_id=?").bind(user).first();
   const spins = await env.DB.prepare("SELECT COUNT(*) AS spins FROM quanta_story_spin_credits WHERE user_id=?").bind(user).first();
   const history = await env.DB.prepare("SELECT reference_id,kind,reference,tenths,client_created_at,created_at FROM quanta_star_coin_credits WHERE user_id=? ORDER BY created_at DESC LIMIT ?").bind(user, limit).all();
   const research = await env.DB.prepare("SELECT reference_id,research_json,created_at FROM quanta_story_spin_credits WHERE user_id=? ORDER BY created_at DESC LIMIT ?").bind(user,limit).all();
-  const spinCount=Number(spins?.spins||0);
-  const tenths = Number(totals?.tenths || 0) + spinCount*10;
+  const crusher=await env.DB.prepare("SELECT COUNT(*) AS spins FROM quanta_crusher_spin_credits WHERE user_id=?").bind(user).first();
+  const crusherRows=await env.DB.prepare("SELECT spin_id,terms_json,query_text,research_hash,created_at FROM quanta_crusher_spin_credits WHERE user_id=? ORDER BY created_at DESC LIMIT ?").bind(user,limit).all();
+  const spinCount=Number(spins?.spins||0),crusherCount=Number(crusher?.spins||0);
+  const tenths = Number(totals?.tenths || 0) + spinCount*10 + crusherCount;
   const spinRows=(research.results||[]).map(x=>({reference_id:x.reference_id,kind:'spin',reference:x.reference_id,tenths:10,created_at:x.created_at,research:JSON.parse(x.research_json)}));
-  const combined=[...(history.results||[]),...spinRows].sort((a,b)=>b.created_at-a.created_at).slice(0,limit);
-  return {ok:true,credits_tenths:tenths,star_coins:Math.floor(tenths/10),progress:tenths%10,collects:Number(totals?.collects||0),shares:Number(totals?.shares||0),spins:spinCount,history:combined};
+  const crusherHistory=(crusherRows.results||[]).map(x=>({reference_id:'bitcoin-crusher:spin:'+x.spin_id,kind:'crusher_spin',reference:x.query_text,tenths:1,created_at:x.created_at,terms:JSON.parse(x.terms_json),research_hash:x.research_hash}));
+  const combined=[...(history.results||[]),...spinRows,...crusherHistory].sort((a,b)=>b.created_at-a.created_at).slice(0,limit);
+  return {ok:true,credits_tenths:tenths,star_coins:Math.floor(tenths/10),progress:tenths%10,collects:Number(totals?.collects||0),shares:Number(totals?.shares||0),spins:spinCount,crusher_spins:crusherCount,history:combined};
 }
 
 async function ensureSearchOutbox(env) {
@@ -454,6 +464,22 @@ export default {
       if (!statements.length) return json({ error: "invalid_star_coin_credits" }, 400);
       await env.DB.batch(statements);
       return json({ ...(await starCoinState(env, identity.user_id, 50)), accepted }, 201);
+    }
+
+    // Bitcoin Crusher: exactly one tenth of a StarCoin for each distinct completed spin.
+    // The authenticated D1 account, not a browser counter, owns these receipts.
+    if (url.pathname === "/v1/quants/crusher-spins" && request.method === "POST") {
+      const body=await request.json().catch(()=>({}));
+      const id=String(body.spin_id||"").trim();
+      const terms=Array.isArray(body.terms)?body.terms.map(v=>String(v||"").trim().slice(0,65)):[];
+      const query=String(body.query||"").trim().slice(0,1000);
+      const hash=String(body.research_hash||"").trim().slice(0,120);
+      if(!/^[a-zA-Z0-9_-]{12,100}$/.test(id)||terms.length!==4||terms.some(v=>v.length<2)||new Set(terms.map(v=>v.toLowerCase())).size!==4||query.length<8||!terms.every(v=>query.toLowerCase().includes(v.toLowerCase())))return json({error:"invalid_crusher_spin"},400);
+      await ensureStarCoinCredits(env);
+      await ensureCrusherSpinCredits(env);
+      const now=Date.now();
+      const receipt=await env.DB.prepare("INSERT OR IGNORE INTO quanta_crusher_spin_credits(credit_id,user_id,wallet_id,spin_id,terms_json,query_text,research_hash,created_at) VALUES(?,?,?,?,?,?,?,?)").bind('qcr_'+crypto.randomUUID(),identity.user_id,wallet,id,JSON.stringify(terms),query,hash,now).run();
+      return json({...(await starCoinState(env,identity.user_id,100)),accepted:Number(receipt.meta?.changes||0)>0,spin_id:id,credited_tenths:Number(receipt.meta?.changes||0)>0?1:0});
     }
 
     if (url.pathname === "/v1/quants/star-coins" && request.method === "GET") {
