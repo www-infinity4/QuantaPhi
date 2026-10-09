@@ -156,3 +156,8 @@ body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-play{
  background:linear-gradient(135deg,#fff9e6,#f5d378)!important;border:1px solid #c69b3d;
  color:#4e3209;box-shadow:0 0 0 4px #fffbea88,0 8px 20px #bb842f38!important;
 }
+
+/* A pending or unavailable home story stays compact until real artwork exists. */
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-story[data-ready="false"] :is(.ib-asteroid-hero,.ib-asteroid-copy){
+ min-height:150px!important;
+}
