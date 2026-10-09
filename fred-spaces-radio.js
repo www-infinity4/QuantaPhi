@@ -1,4 +1,4 @@
-/* Fred Spaces Radio v1. One yellow card, no pretend audio or browser-side wallet debits. */
+/* Fred Spaces Radio: yellow electric player-style card; genuine replays open on X. Cloud wallet charges only for explicitly approved curated-next links. */
 (() => {
   "use strict";
   const root = document.getElementById("fredSpacesRadio");
@@ -19,7 +19,7 @@
   const seenKey="phi:fred-spaces-seen:v1";
   const starsKey="phi:fred-spaces-stars:v1";
   const currentKey="phi:fred-spaces-current:v1";
-  let active=byId.get(FIRST), busy=false, unlocked=new Set(), balance=null, message="", stars=new Set(load(starsKey,[])), interestWeights=new Map();
+  let active=byId.get(FIRST), busy=false, unlocked=new Set(), balance=null, message="", stars=new Set(load(starsKey,[])), interestWeights=new Map(), selectedTopic="", selectedMode="search";
   function load(key,fallback){try {return JSON.parse(localStorage.getItem(key)||"null")??fallback;}catch{return fallback;}}
   function save(key,data){try{localStorage.setItem(key,JSON.stringify(data));}catch{}}
   function node(tag,cls,txt){const el=document.createElement(tag);if(cls)el.className=cls;if(txt!=null)el.textContent=String(txt);return el;}
@@ -46,10 +46,11 @@
       interestWeights=counts;
     }catch(e){console.warn("Fred Spaces Quant preferences temporarily unavailable",e);}
   }
+  function isReplayLink(episode){try{const u=new URL(episode.source);return ["x.com","twitter.com","www.x.com","www.twitter.com"].includes(u.hostname)&&/^\/i\/spaces\/[A-Za-z0-9]+\/?$/.test(u.pathname)}catch{return false}}
   function pickNext(){
     const old=new Set(load(seenKey,[]));old.add(active.id);
-    const candidates=episodes.filter(e=>e.id!==FIRST&&!old.has(e.id));
-    const pool=candidates.length?candidates:episodes.filter(e=>e.id!==FIRST&&e.id!==active.id);
+    const candidates=episodes.filter(e=>e.id!==FIRST&&isReplayLink(e)&&!old.has(e.id));
+    const pool=candidates.length?candidates:episodes.filter(e=>e.id!==FIRST&&isReplayLink(e)&&e.id!==active.id);
     if(!pool.length)return null;
     const interests=terms();
     const favoriteTopics=new Set(episodes.filter(e=>stars.has(e.id)).flatMap(e=>e.tags));
@@ -77,20 +78,20 @@
     if(!response.ok||!data.ok)throw new Error(data.message||data.error||"StarQuest could not confirm the charge.");
     return data;
   }
-  async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;const saved=byId.get(load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
+  async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
   function rememberEpisode(e){active=e;const seen=new Set(load(seenKey,[]));seen.add(e.id);save(seenKey,[...seen].slice(-1000));save(currentKey,e.id);}
   async function more(){
     if(busy)return;
     const next=pickNext();if(!next){note("No additional indexed episodes are available.");return;}
-    if(!next.audioUrl){note("More Fred episodes are indexed, but recording playback has not been connected yet. No StarCoins charged.");return;}
-    // This is an explicit charge for another curated discovery, not resale of X audio.
-    if(!window.confirm("Spend 1 full StarCoin to unlock and play another matched Fred Krueger Space?"))return;
+    // The fee is for curated discovery of a direct X replay link, not streaming rights.
+    // The source may require X sign-in or disappear. Display this before every new debit.
+    if(!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the curated episode: "+next.title+"? The replay opens on X, not inside QuantaPhi. X may require sign-in or may not offer playback. The StarCoin pays for curation, not guaranteed audio. Continue?"))return;
     busy=true;render();
     try{
       const data=await ledger("/v1/spaces/unlock","POST",{episodeId:next.id});
       if(!data.ok)throw new Error("Unlock was not confirmed.");
       balance=data.starCoins;unlocked.add(next.id);rememberEpisode(next);
-      message=(data.charged===1?"1 StarCoin spent. ":"Already unlocked; no new charge. ")+(next.audioUrl?"Ready to play.":"Recording source is linked; native audio is not yet available.");
+      message=(data.charged===1?"1 StarCoin spent for the curated episode link. ":"Already unlocked; no new charge. ")+"Use the play button to open the original replay on X.";
       window.dispatchEvent(new Event("focus"));
     }catch(error){message=error.message||"No StarCoin was charged. Please retry.";}
     finally{busy=false;render();}
@@ -115,32 +116,84 @@
     u.searchParams.set("episodeSource",active.source);
     location.href=u.href;
   }
+  function chooseTopic(tag){selectedTopic=selectedTopic===tag?"":tag;selectedMode="search";render();}
+  function routeTopic(tool){
+    const topic=selectedTopic.trim();
+    const paths={InfinityPhi:"/InfinityPhi/",OmniPhi:"/OmniPhi/overview/",QuantaPhi:"/"};
+    if(!topic||!paths[tool])return;
+    const q=selectedMode==="learn"?"Learn about "+topic:topic;
+    if(tool==="QuantaPhi"&&selectedMode==="search"){
+      const input=document.getElementById("q"),go=document.getElementById("go");
+      if(input&&go){input.value=q;selectedTopic="";go.click();input.scrollIntoView({behavior:"smooth",block:"start"});render();return;}
+    }
+    const u=new URL(paths[tool],location.origin);
+    u.searchParams.set("q",q);u.searchParams.set("intent",selectedMode);
+    u.searchParams.set("topic",topic);u.searchParams.set("from","fred-spaces");
+    u.searchParams.set("episode",active.id);u.searchParams.set("episodeSource",active.source);
+    if(selectedMode==="build")u.searchParams.set("buildPrompt","Create an original website about "+topic+" using this indexed Fred Krueger Space as context. Verify factual claims.");
+    location.assign(u.href);
+  }
   function render(){
     root.replaceChildren();
-    const card=node("article","fs-card"); const top=node("div","fs-header");
-    const ident=node("div","fs-heading");ident.append(node("small","fs-eyebrow","YELLOW CARD · INFINITY SPACES RADIO"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
-    top.append(ident,node("strong","fs-number","#"+active.slot));
-    if(active.id===FIRST)card.append(node("p","fs-free","FIRST FRED SPACE · FREE · 0 STARCOINS"));
-    card.append(top,node("p","fs-meta",active.date+" · "+active.duration+" · Publicly indexed episode"),node("p","fs-summary",active.description));
-    const tags=node("div","fs-tags");active.tags.forEach(t=>tags.append(node("span","",t)));card.append(tags);
-    const stream=node("div","fs-stream");
-    if(active.audioUrl){
-      const audio=node("audio","fs-audio");audio.controls=true;audio.preload="none";audio.src=active.audioUrl;stream.append(audio);
-    }else{
-      stream.append(node("div","fs-play-symbol","◉"),node("p","fs-stream-note","The first episode is free to discover. Fred’s recording has not yet been connected to an authorized Phi audio source."));
+    const card=node("article","fs-card"),top=node("div","fs-header"),ident=node("div","fs-heading");
+    ident.append(node("small","fs-eyebrow","FRED'S SPACES · CURATED REPLAY"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
+    top.append(ident);card.append(top);
+    if(active.id===FIRST)card.append(node("p","fs-free","FEATURED EPISODE · FREE"));
+    card.append(node("p","fs-meta",active.date+" · "+active.duration),node("p","fs-summary",active.description));
+    const stream=node("section","fs-stream");
+    stream.setAttribute("aria-label","X Spaces replay player-style link");
+    const player=node("div","fs-player"),play=node("a","fs-play","▶");
+    play.href=active.source;play.target="_blank";play.rel="noopener noreferrer";
+    play.setAttribute("aria-label","Open "+active.title+" on X to play the replay");
+    player.append(play);
+    const deck=node("div","fs-player-deck");
+    deck.append(node("strong","fs-player-name","X Spaces replay"),node("span","fs-player-sub","Open on X to listen · Not hosted by Phi"));
+    const track=node("div","fs-player-track");track.setAttribute("aria-hidden","true");
+    for(let i=0;i<13;i++)track.append(node("i",""));deck.append(track);
+    const timing=node("div","fs-player-timing");
+    timing.append(node("span","","Replay on X"),node("span","",active.duration));deck.append(timing);
+    player.append(deck);stream.append(player);
+    const replay=node("a","fs-source","Open original on X ↗");
+    replay.href=active.source;replay.target="_blank";replay.rel="noopener noreferrer";
+    stream.append(replay,node("small","fs-play-disclaimer","X sign-in or replay availability may vary. No simulated audio."));
+    card.append(stream);
+    const tags=node("div","fs-tags");tags.setAttribute("aria-label","Explore episode topics");
+    for(const tag of active.tags){
+      const b=button(tag,()=>chooseTopic(tag),"fs-topic");
+      b.setAttribute("aria-expanded",String(selectedTopic===tag));tags.append(b);
     }
-    const link=node("a","fs-source","Open Fred’s original X replay ↗");link.href=active.source;link.target="_blank";link.rel="noopener noreferrer";stream.append(link);card.append(stream);
+    card.append(tags);
+    if(selectedTopic){
+      const chooser=node("section","fs-topic-panel");
+      chooser.setAttribute("aria-label","Explore "+selectedTopic+" with Phi");
+      const header=node("div","fs-topic-header");
+      header.append(node("strong","","Explore "+selectedTopic));
+      header.append(button("Close",()=>{selectedTopic="";render()},"fs-topic-close"));
+      chooser.append(header,node("p","","Choose Search, Build or Learn, then select a Phi."));
+      const modes=node("div","fs-mode-row");
+      for(const mode of ["search","build","learn"]){
+        const b=button(mode[0].toUpperCase()+mode.slice(1),()=>{selectedMode=mode;render()},"fs-mode");
+        b.setAttribute("aria-pressed",String(selectedMode===mode));modes.append(b);
+      }
+      chooser.append(modes);
+      const tools=node("div","fs-tool-row");
+      for(const phi of ["QuantaPhi","InfinityPhi","OmniPhi"]){
+        const b=button(phi,()=>routeTopic(phi),"fs-tool");
+        b.setAttribute("aria-label",selectedMode+" "+selectedTopic+" with "+phi);tools.append(b);
+      }
+      chooser.append(tools);card.append(chooser);
+    }
     const actions=node("div","fs-actions");
-    actions.append(button(stars.has(active.id)?"★ Starred":"☆ Star",favorite),button("Share +0.1 ★",share),button("Collect +0.1 ★",collect));
-    card.append(actions);
-    const builds=node("div","fs-builds");["InfinityPhi","OmniPhi","QuantaPhi"].forEach(t=>builds.append(button("Build with "+t,()=>build(t),"fs-phi")));card.append(builds);
+    actions.append(button(stars.has(active.id)?"★ Starred":"☆ Star",favorite),button("Share +0.1 ★",share),button("Collect +0.1 ★",collect));card.append(actions);
+    const builds=node("div","fs-builds");
+    ["InfinityPhi","OmniPhi","QuantaPhi"].forEach(t=>builds.append(button("Build with "+t,()=>build(t),"fs-phi")));card.append(builds);
     const nextRow=node("div","fs-bottom");
-    const playableMore=episodes.some(e=>e.id!==FIRST&&e.audioUrl);
-    const unlock=button(busy?"Checking StarQuest…":playableMore?"Next playable Space · 1 ★":"Next playable Space · 1 ★ (pending)",more,"fs-next");unlock.disabled=busy||!playableMore;
-    nextRow.append(unlock,node("span","fs-balance",balance==null?"StarQuest balance pending":"StarCoins: "+balance+" · First card free"));
-    card.append(nextRow);
-    const status=node("p","fs-status",message||"First Fred episode: free. Further playable episodes: 1 full StarCoin each. Paid unlocks remain unavailable until audio can actually play.");
-    status.setAttribute("role","status");card.append(status);
+    const hasCurated=episodes.some(e=>e.id!==FIRST&&isReplayLink(e));
+    const unlock=button(busy?"Confirming StarCoin charge…":"Buy next curated episode · 1 ★",more,"fs-next");
+    unlock.disabled=busy||!hasCurated;
+    nextRow.append(unlock,node("span","fs-balance",balance==null?"Wallet balance unavailable":"StarCoins: "+balance));card.append(nextRow);
+    const status=node("p","fs-status",message||"Featured replay is free. One new curated X episode link costs 1 full StarCoin after confirmation. Listening happens on X.");
+    status.setAttribute("role","status");status.setAttribute("aria-live","polite");card.append(status);
     root.append(card);
   }
   const requested=new URL(location.href).searchParams.get("fredSpace");

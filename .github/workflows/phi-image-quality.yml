@@ -7,6 +7,10 @@ on:
       - 'phi-visual-render.js'
       - 'phi-image-builder.css'
       - 'fred-spaces-radio.css'
+      - 'fred-spaces-radio.js'
+      - 'phi-electric-theme.css'
+      - 'phi-page-ui.js'
+      - 'test/phi-electric-ui.test.cjs'
       - 'infinite-book.css'
       - 'workers/infinity-rogers/worker.js'
       - 'test/phi-image-quality.test.cjs'
@@ -17,6 +21,10 @@ on:
       - 'phi-visual-render.js'
       - 'phi-image-builder.css'
       - 'fred-spaces-radio.css'
+      - 'fred-spaces-radio.js'
+      - 'phi-electric-theme.css'
+      - 'phi-page-ui.js'
+      - 'test/phi-electric-ui.test.cjs'
       - 'infinite-book.css'
       - 'workers/infinity-rogers/worker.js'
       - 'test/phi-image-quality.test.cjs'
@@ -30,4 +38,7 @@ jobs:
         with:
           node-version: '24'
       - name: Verify visual review and local learning contracts
-        run: node --test test/phi-image-quality.test.cjs
+        run: |
+          node --check fred-spaces-radio.js
+          node --check phi-page-ui.js
+          node --test test/phi-image-quality.test.cjs test/phi-electric-ui.test.cjs
