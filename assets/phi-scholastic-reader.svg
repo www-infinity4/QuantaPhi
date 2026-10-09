@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Glowing scholarly encyclopedia">
+<defs><radialGradient id="a"><stop stop-color="#ffd7a1"/><stop offset=".42" stop-color="#e86b3a"/><stop offset="1" stop-color="#5d0b19"/></radialGradient><linearGradient id="book" x2=".3" y2="1"><stop stop-color="#fff8d8"/><stop offset=".45" stop-color="#ffda88"/><stop offset="1" stop-color="#9e4e25"/></linearGradient><linearGradient id="cover" x2=".8" y2="1"><stop stop-color="#e53837"/><stop offset=".52" stop-color="#9b121c"/><stop offset="1" stop-color="#400511"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="9"/></filter><filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#3a0410" flood-opacity=".76"/></filter></defs>
+<ellipse cx="285" cy="203" rx="218" ry="163" fill="url(#a)" opacity=".67"/>
+<g opacity=".7" fill="none" stroke="#ffbf72"><ellipse cx="283" cy="194" rx="238" ry="125" transform="rotate(-13 283 194)" stroke-width="3"/><ellipse cx="283" cy="194" rx="174" ry="157" transform="rotate(24 283 194)" stroke-width="2"/></g>
+<circle cx="275" cy="116" r="69" fill="#5c0b16" stroke="#ffdc92" stroke-width="4"/>
+<circle cx="275" cy="116" r="55" fill="none" stroke="#ffa959" stroke-width="2" stroke-dasharray="6 8"/><path d="M275 55L291 99L335 116L291 132L275 177L260 132L216 116L260 99Z" fill="#ffe9b4" stroke="#ff9d3b" stroke-width="5"/>
+<circle cx="275" cy="116" r="15" fill="#fff"/>
+<g fill="#fff9cb"><path d="M98 125l5 16 18 5-18 6-5 17-6-17-18-6 18-5z"/><path d="M439 73l8 22 22 8-22 8-8 24-8-24-23-8 23-8z"/><circle cx="132" cy="76" r="3"/><circle cx="401" cy="165" r="5"/><circle cx="458" cy="220" r="3"/></g>
+<g filter="url(#shadow)"><path d="M87 229Q184 183 277 250Q382 179 482 233L480 337Q368 304 277 358Q186 305 90 337Z" fill="url(#cover)" stroke="#ffcb7a" stroke-width="7" stroke-linejoin="round"/>
+<path d="M100 216Q184 165 274 232L277 333Q189 275 107 305Z" fill="url(#book)" stroke="#e5a451" stroke-width="4"/>
+<path d="M455 214Q376 166 280 232L277 333Q365 275 460 305Z" fill="url(#book)" stroke="#e5a451" stroke-width="4"/>
+<path d="M277 236L277 339" stroke="#fff9da" stroke-width="7" stroke-linecap="round"/><path d="M121 238Q195 213 254 267M123 256Q200 240 252 282M130 274Q199 266 248 298M432 238Q356 211 300 268M430 257Q359 242 305 282M427 278Q355 260 305 302" fill="none" stroke="#a45625" stroke-width="3" opacity=".66"/>
+<path d="M93 338Q191 308 277 364Q362 309 475 338" fill="none" stroke="#ffc969" stroke-width="5"/></g>
+<circle cx="277" cy="351" r="39" fill="#630b18" stroke="#ffd47c" stroke-width="6"/><path d="M254 344q10-5 23 7 13-12 23-7v23q-14-7-23 3-11-10-23-3z" fill="#fff1c3"/>
+<g stroke="#ffbd76" stroke-width="3" fill="none" opacity=".75"><path d="M80 368Q270 419 475 368"/><path d="M134 387Q270 425 425 384"/></g></svg>
