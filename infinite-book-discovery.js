@@ -294,11 +294,16 @@ function storyMood(query='',roll={}){
  if(/\b(grapes?|trains?|railway|railroad|adventure|voyage|journey|exploration)\b/.test(q))return 'Adventure';
  return ['Mystery','Adventure','Suspense'][Math.abs(Number(roll.combination)||Number(roll.sector)||0)%3];
 }
+function legitimateNarrative(story){
+ const title=clean(story?.title),summary=clean(story?.summary),full=clean(story?.full);
+ return title.length>=14&&summary.length>=90&&full.length>=230 &&
+  !isPlaceProfile(story)&&!isGenericProfile(story)&&
+  !/\b(movie|film|screenplay|fictional film|plot synopsis|trailer)\b/i.test(title+' '+summary.slice(0,160));
+}
 function eligibleNarrative(story){
  return !!story && /^gpt-(deep|wiki)$/.test(String(story.discoveryMethod||'')) &&
   /^https:\/\//.test(String(story.sourceUrl||'')) &&
-  String(story.full||'').trim().length>=230 &&
-  !/\b(movie|film|screenplay|fictional film|plot synopsis|trailer)\b/i.test(String(story.title||'')+' '+String(story.summary||'').slice(0,100));
+  legitimateNarrative(story);
 }
 async function writeSecretStory(sources,plan,roll){
  const mood=storyMood(roll.quantFocus||roll.indexWord||plan.focus,roll);
@@ -310,8 +315,8 @@ async function writeSecretStory(sources,plan,roll){
   'NARRATIVE MOOD: '+mood+'. Shape pacing, curiosity and tension around facts; mystery means an evidence-supported unknown, adventure means a documented journey/process, suspense means real stakes or uncertainty. Do not invent danger, dialogue, plot twists, witnesses, or cinematic scenes.',
   'Example of the required difference: "Nikola Tesla" is NOT a story; his 1898 radio-controlled boat demonstration IS the kind of precise event we want, but do not choose it unless the actual evidence here concerns that event.',
   'You are both evidence reviewer and storyteller: examine up to 20 independent search-result excerpts below, choose the MOST INTERESTING SPECIFIC incident actually corroborated by at least two distinct source websites, then narrate it as an engaging story, not an encyclopedia answer.',
-  'You can compare up to 20 search-result excerpts, but they are NOT full source documents. Use ONLY the two or more excerpts about the exact same selected event to support factual statements; do not merge unrelated histories. If a surprising detail cannot be supported, return {"insufficient":true}.',
-  'You must identify one concrete event and an unexpected detail, and explain what makes it surprising. The title must name the EVENT or the OBJECT, not merely the person.',
+  'Search-result excerpts are NOT full source documents. Use two independent citations about the same selected subject or well documented process; do not merge unrelated incidents. If a concrete detail cannot be supported, return {"insufficient":true}.',
+  'Find one specific verifiable observation, event, process, artifact or unexpected detail. The title must name the concrete subject and its nonfiction story, not merely the person. The headline need not say secret or mystery.',
   'The final direction is '+(plan.direction||'discovery')+'. It guides which supported story to select, not a license to fabricate. Future possibilities must be labeled as possibilities. For educational mathematics include a correct simple equation, SI units, a worked example with explicit assumptions, and a verified source for constants.',
   'Both source URLs must refer to the same specific incident, observation or documented process; if they only share the broad topic return {"insufficient":true}.',
   'Quote no sentences verbatim. No invented dates, dialogue, motives, achievements, conspiracies or scientific claims. Mark legends and contested claims accurately.',
@@ -325,7 +330,7 @@ async function writeSecretStory(sources,plan,roll){
   body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,combination:plan.combination,sourceCount:sources.length}}})},20000);
  if(data?.ok===false)return null;
  const obj=jsonAnswer(textAnswer(data));
- if(!obj||obj.insufficient||clean(obj.title).length<16||clean(obj.summary).length<100||clean(obj.full).length<230||!isSecretStory(obj))return null;
+ if(!obj||obj.insufficient||!legitimateNarrative(obj))return null;
  if(/\b(movie|film|trailer|screenplay|fictional film|plot synopsis)\b/i.test(clean(obj.title)))return null;
  const cited=(Array.isArray(obj.evidence_urls)?obj.evidence_urls:[]).map(canonical);
  const matched=sources.filter(x=>cited.includes(x.url));
@@ -419,7 +424,7 @@ const WIKI_QUERIES={
 async function writeWikipediaStory(page,plan,roll){
  const mood=storyMood(roll.quantFocus||roll.indexWord||plan.focus,roll);
  const prompt=[
- 'Write one original Asteroid nonfiction story about a specific documented event, discovery, object, natural process or experiment evidenced by the provided source excerpt. Apply the '+mood+' narrative style without inventing details, threats or cinema-style fiction.',
+ 'Write one original Asteroid nonfiction story about a specific documented event, discovery, object, natural process or experiment evidenced by the provided source excerpt. Apply the '+mood+' narrative style without inventing details, threats or cinema-style fiction. For crops, natural phenomena, arts and ordinary subjects, a documented process or genuine unresolved historical question is a valid narrative, not a secret-headline requirement.',
  'No biography or encyclopedia-style overview. Never invent dialogue, quotes, dates, motives, scientific results or secret plots.',
  'Use ONLY the supplied excerpt, not other assumed facts. If the excerpt is too general, answer {"insufficient":true}.',
  'Return JSON ONLY with {"title":"specific nonfiction headline","summary":"40-85 words","full":"150-240 original words in at least 2 paragraphs","detail":"one directly supported surprising fact"}.',
@@ -432,7 +437,7 @@ async function writeWikipediaStory(page,plan,roll){
     verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},16000);
   if(data?.ok===false)return null;
   const out=jsonAnswer(textAnswer(data));
-  if(!out||out.insufficient||!isSecretStory(out)||clean(out.summary).length<90||clean(out.full).length<230)return null;
+  if(!out||out.insufficient||!legitimateNarrative(out))return null;
   return {title:clean(out.title).slice(0,180),summary:clean(out.summary).slice(0,600),
    full:String(out.full).trim()+'\n\nBased on Wikipedia contributors (CC BY-SA), linked below.',
    detail:clean(out.detail).slice(0,180),mood};
@@ -453,7 +458,7 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
  const variant=variants[seenWikipedia%variants.length];
  // Start with a broad, sector-specific search; a strict intersection of angle,
  // subject and source-class terms can return no Wikipedia pages at all.
- const topics=[base,base+' '+plan.angle,base+' '+variant,(plan.focus&&plan.focus!==plan.name?plan.focus:plan.name)+' '+variant];
+ const topics=[plan.indexedWord||base,base,plan.indexedWord?plan.indexedWord+' historical discoveries':base+' '+variant,(plan.focus&&plan.focus!==plan.name?plan.focus:plan.name)+' '+variant];
  const offset=(Math.floor(seenWikipedia/4)%6)*7;
  const replies=await Promise.allSettled(topics.map((q,i)=>{
   const u=new URL(WIKI);
@@ -473,7 +478,7 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
    if(/^(List of|Index of|Timeline of|Category:|20[0-9][0-9] in |[0-9]{4} in )/i.test(title))continue;
    if(/may refer to|is a disambiguation page/i.test(full.slice(0,200)))continue;
    if(/television series|fictional character|video game series/i.test(full.slice(0,200)) && roll.sector!==21)continue;
-   if(isGenericProfile({title,summary:full})||!isSecretStory({title,summary:full.slice(0,900)}))continue;
+   if(isGenericProfile({title,summary:full})||isPlaceProfile({title,summary:full})||(/\b(film|movie|fictional|video game|episode|television series)\b/i.test(title) && roll.sector!==21))continue;
    candidates.push({id,title,full,pageid:page.pageid});
   }
  }
