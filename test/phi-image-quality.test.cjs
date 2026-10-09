@@ -169,7 +169,7 @@ test('FLUX adapter sends true text-only requests and scales reference pixels, no
  assert.match(adapter,/reference_mode',source\?'uploaded':design\?'style-only':'text-only'/);
  assert.doesNotMatch(adapter.slice(adapter.indexOf('async function render('),adapter.indexOf('async function validate(')),/neutralImage\(/);
  assert.match(builder,/window\.PhiImageAutoRefine===true&&review/);
- assert.match(builder,/error\?\.code==='image_daily_cap'/);
+ assert.match(builder,/error\?\.status===429\|\|error\?\.code==='provider_rate_limited'/);
 });
 
 test('Workers image route permits text-only generation with no synthetic image and style-only indices',async()=>{
