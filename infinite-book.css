@@ -32,3 +32,26 @@
 #infiniteBook .ib-next{border-radius:999px;padding:9px 13px}
 #infiniteBook .ib-action{border-radius:19px;min-height:43px}
 #infiniteBook .ib-build-link{border-radius:999px;padding:9px 12px}
+
+
+/* Oracle story presentation: layered orange card with a bright, legible action rail. */
+#infiniteBook{scroll-margin-top:76px}
+#infiniteBook .ib-head{gap:12px;flex-wrap:wrap;margin:17px 2px 9px}
+#infiniteBook .ib-head strong{font-size:12px;letter-spacing:1px;color:#853c12}
+#infiniteBook .ib-story{position:relative;padding:19px 16px 17px;border-radius:24px;border:1px solid #d88b42;background:radial-gradient(circle at 100% 0%,#fff4d7 0%,transparent 52%),linear-gradient(155deg,#ffe8c3,#f4af6b 70%,#e99248);box-shadow:0 14px 32px #a75c2440,inset 0 1px 0 #fff8eb;overflow:hidden}
+#infiniteBook .ib-story::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#bb6225,#fff3bb,#e38b3e)}
+#infiniteBook .ib-category{display:inline-block;background:#fff4e2d9;border:1px solid #dfac78;border-radius:999px;padding:6px 10px;color:#69310e;font-size:11px;letter-spacing:.18px}
+#infiniteBook .ib-title{font-size:clamp(20px,5.1vw,25px);line-height:1.24;letter-spacing:-.35px;margin:13px 0 10px;color:#361905}
+#infiniteBook .ib-summary,#infiniteBook .ib-full{font-size:14px;line-height:1.68;color:#39220f}
+#infiniteBook .ib-details{background:#fff8eacc;border:1px solid #dfae78;border-radius:17px;padding:12px;margin:13px 0 0}
+#infiniteBook .ib-details summary{min-height:32px;color:#6c330c}
+#infiniteBook .ib-details summary::marker{color:#8f410d}
+#infiniteBook .ib-actions{gap:8px}
+#infiniteBook .ib-action,#infiniteBook .ib-next{background:linear-gradient(160deg,#fff,#fff0e3);border:1px solid #dbb087;color:#66300f;box-shadow:0 3px 9px #8c501824;border-radius:999px;transition:transform .15s,box-shadow .15s,background .15s}
+#infiniteBook .ib-action:hover,#infiniteBook .ib-next:hover,#infiniteBook .ib-action:focus-visible,#infiniteBook .ib-next:focus-visible{box-shadow:0 0 0 2px #fff7ea,0 0 14px #fdc082}
+#infiniteBook .ib-build{border-top:1px solid #b66e3d63;padding-top:14px}
+#infiniteBook .ib-build > span{font-weight:850;color:#60300d}
+#infiniteBook .ib-build-link{box-shadow:0 4px 12px #58249421;border:1px solid #cfb0db!important;background:linear-gradient(160deg,#fff,#f8eefe)!important;color:#552b76!important}
+#infiniteBook .ib-status{font-size:11px;line-height:1.5;color:#765336;margin-top:8px;overflow-wrap:anywhere}
+@media(max-width:360px){#infiniteBook .ib-story{padding:15px 12px}#infiniteBook .ib-title{font-size:20px}}
+@media(prefers-reduced-motion:reduce){#infiniteBook .ib-action,#infiniteBook .ib-next{transition:none}}
