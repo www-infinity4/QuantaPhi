@@ -634,25 +634,26 @@ async function runImage(request, env) {
   "Cover Art":"Create finished editorial, music or book-cover artwork. Preserve the subject and leave clean empty title space; the browser adds correct lettering afterward. Do not add a trading-card border."
  };
  const domain=sports?"sports trading card":"premium collectible trading card";
- const executionOnly="You are the rendering engine, not the art director. Execute the supplied build specification literally. Do not invent a different subject, sport, team, year, biography, brand, series or historical context. Do not add any lettering, words, numbers, serial plaques, logos, captions, labels, signatures or pseudo-text. Exact typography is composited later. Preserve the uploaded subject and create one high-end "+domain+" as a complete printed object. "+borderRule+" Keep the full sharp rectangular card perimeter visible. Use contemporary premium production quality: strong photography, precise crop, deliberate negative space, believable print material, controlled foil/refractor details only when requested, and clean collector-grade geometry. Never output a mockup, slab, phone screen, tabletop, empty template, picture frame, or photo pasted into a fixed rectangle.";
-
- const visualExecution="You are the rendering engine for Phi Image Builder. "+modeRules[mode]+
-  " Execute the user\'s specification, not a generic sports-card template. Do not invent identities, dates, brand claims or phrases. "+
-  (blankReference?"This is TEXT TO IMAGE; there is no input photograph. Draw the requested subject from the words alone. ":styleOnly?"A style-only reference is supplied. Use it for art direction, not as a subject to reproduce. ":"Preserve uploaded reference identity and composition where helpful. ")+
-  "Output one finished high-quality image, not a screenshot of a UI. Render visuals ONLY: zero painted letters or numerals, no fake writing, invented logos, glyphs, pseudo-words, handwriting, invented signage, symbol rows or counterfeit watermarks. Where typography belongs use clean blank material rather than text-shaped marks. Build plausible geometry and connected mechanical parts. "+
-  (exactText?"Reserve a high-contrast clean blank area for the browser to overlay these exact words later: "+exactText+". The model must not paint any of these words or approximate their shapes. ":"Never insert captions, marks resembling words or invented signage. ");
+ const executionOnly="Create a complete premium collectible trading-card illustration. Preserve the supplied subject, correct era, identity, and proportions. "+
+  borderRule+" Show the full straight rectangular perimeter, connected anatomy and equipment, controlled light and credible materials. "+
+  "Use smooth completely unmarked nameplates and title panels: a separate browser typography compositor handles all printed words. "+
+  "Focus entirely on photography, illustration, color, texture and graphic layout rather than printed lettering.";
+ const visualExecution="Create one finished professional "+mode.toLowerCase()+" image. "+modeRules[mode]+" "+
+  (blankReference?"Create the picture from the subject description alone. ":styleOnly?"Use the single reference for style, not as the subject. ":"Preserve the uploaded subject and composition as directed. ")+
+  "Paint only the scene, objects, photography and visual design. Make all signage, logos, captions and title areas smooth and empty for later precise browser text placement. "+
+  "Use coherent perspective, physically connected parts and realistic materials when realism is requested. "+
+  (exactText?"Leave an unobstructed, high-contrast lower title area for precise browser lettering. ":"Keep decorative panels and surfaces clean and unmarked. ");
+ // A single clean art direction is used for each model; no prompt mutation
+ // or fabricated text variants between attempts.
  const governingPrompt=mode==="Trading Card"?executionOnly:visualExecution;
- const variants=[
-   governingPrompt+" BUILD SPECIFICATION: "+prompt,
-   governingPrompt+" USER DIRECTION: "+literal+" BUILD SPECIFICATION: "+prompt+" Keep original subject identity and make a finished, coherent composition.",
-   governingPrompt+" Keep the final visual clean, polished and purposeful. BUILD SPECIFICATION: "+prompt,
-   governingPrompt+" Prioritize the exact intended image content and avoid invented slogans. BUILD SPECIFICATION: "+prompt
+ const renderDirection=(governingPrompt+" Scene description: "+prompt).slice(0,7000);
+ const modelPlan=[
+   {model:IMAGE_FALLBACK_MODEL,variants:[renderDirection],steps:null},
+   {model:IMAGE_MODEL,variants:[renderDirection],steps:"25"}
  ];
-
  let lastError=null;
- // FLUX.2 Dev currently returns upstream 3043 errors for valid prompt-only
- // requests. Prefer the Klein-9B renderer that passed live prompt-only testing,
- // while retaining Dev as a fallback for transient Klein failures.
+ // Keep the tested Klein renderer first and use Dev once only for technical failures.
+ // A provider moderation/invalid-input rejection remains terminal.
  const modelPlan=[
    {model:IMAGE_FALLBACK_MODEL,variants:[variants[0],variants[1]],steps:null},
    {model:IMAGE_MODEL,variants:[variants[0]],steps:"25"}
