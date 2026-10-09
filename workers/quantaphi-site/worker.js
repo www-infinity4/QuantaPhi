@@ -10,6 +10,7 @@ const APPS = [
  { slug: '/omni-tv/', aliases: ['/tv/', '/OmniTV/'], repo: 'Omni-TV' },
  { slug: '/alien-coin/', aliases: ['/alien/', '/AlienCoin/'], repo: 'Alien-Coin' },
  { slug: '/bitcoin-crusher/', aliases: ['/crusher/', '/BitcoinCrusher/'], repo: 'Bitcoin-Crusher' },
+ { slug: '/oracle-octaves/', aliases: ['/octaves/'], repo: 'Oracle-Octaves' },
  { slug: '/mckee-coins/', aliases: ['/coins/', '/McKeeCoins/'], repo: 'Mckee-Coins-Inc' },
  { slug: '/shoplc/', aliases: ['/shop/'], repo: 'ShopLC' }
 ];
