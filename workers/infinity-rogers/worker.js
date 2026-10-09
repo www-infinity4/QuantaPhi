@@ -674,7 +674,21 @@ async function runImage(request, env) {
        lastError=error;
        const message=String(error?.message||error);
        attemptErrors.push({model:plan.model,attempt:attemptNumber,error:message.slice(0,700)});
-       if(!message.includes("3030")&&!message.includes("Invalid input")&&!message.includes("empty_image_response")) break;
+       // A provider flag is a terminal moderation decision for this request.
+       // Do not try alternate prompts or models to work around the rejection.
+       if(/\\b3030\\b|output has been flagged|choose another prompt\\s*\\/\\s*input image/i.test(message)){
+         return json(request,{
+           ok:false,
+           code:"image_input_flagged",
+           error:"The image service did not accept this description and reference-image combination.",
+           suggestion:"Change the description or try another reference image before building again."
+         },422);
+       }
+       // A malformed input is not fixed by resubmitting it repeatedly.
+       if(/Invalid input/i.test(message)){
+         return json(request,{ok:false,code:"image_input_invalid",error:"The renderer could not accept this image request. Check the image file and description."},422);
+       }
+       if(!message.includes("empty_image_response")) break;
      }
    }
  }
