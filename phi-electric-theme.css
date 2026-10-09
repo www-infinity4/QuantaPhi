@@ -156,3 +156,5 @@ body{background:radial-gradient(ellipse at 50% -6%,#c9a5ff3d,transparent 44%),li
 #infiniteBook .ib-research-branch{flex:1 1 120px;min-height:44px;max-width:100%;padding:10px 12px;border-radius:999px;border:1px solid #9156df;background:linear-gradient(145deg,#fff,#e9d8ff);color:#271443;font-size:12px;font-weight:900;line-height:1.27;letter-spacing:.01em;overflow-wrap:anywhere;box-shadow:0 2px 9px #8d4cde35}
 #infiniteBook .ib-research-branch:focus-visible{outline:3px solid #6e22b9;outline-offset:2px}
 #infiniteBook .ib-research-branch:hover{background:#f5eeff;box-shadow:0 0 15px #934ceb80}
+
+#infiniteBook .ib-full{white-space:pre-line;line-height:1.74;overflow-wrap:anywhere}
