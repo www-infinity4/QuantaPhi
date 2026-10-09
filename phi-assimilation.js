@@ -30,7 +30,15 @@ async function corpus(){
   for(const x of history.searches)add({id:'search:'+x.search_id,query:x.query_text});
   for(const x of history.tokens||[]){const d=parse(x.data_json),r=parse(x.research_json);add({id:'quant:'+x.token_id,query:d.query||r.query||r.title,detail:[r.overview,...(r.keyTakeaways||[])].join(' '),kind:'quant'})}
  }
- for(const x of Array.isArray(tokens)?tokens:[])add({id:'local:'+x.id,query:x.query||x.title,detail:[x.payload?.overview,...(x.payload?.findings||[])].join(' '),kind:'quant'});
+ for(const x of Array.isArray(tokens)?tokens:[]){
+  add({id:'local:'+x.id,query:x.query||x.title,detail:[x.payload?.overview,...(x.payload?.findings||[])].join(' '),kind:'quant'});
+  for(const e of (x.dataExtraction?.selectedEntries||[]).slice(-100)){
+   const value=clean(e.value);if(value)add({id:'extracted:'+x.id+':'+value.toLowerCase(),query:value,detail:[x.query,...(e.sources||[]).map(k=>k.title+' '+k.excerpt)].join(' '),kind:'extraction',weight:7});
+  }
+  for(const c of (x.dataExtraction?.comparisons||[]).slice(-20)){
+   const value=clean((c.terms||[]).join(' + '));if(value)add({id:'comparison:'+x.id+':'+value.toLowerCase(),query:value,detail:clean(c.analysis),kind:'comparison',weight:8});
+  }
+ }
  for(const x of local('quantaPhiBuildHistoryV1'))add({id:'old:'+String(x.search_id||x.id||x.query),query:x.query});
  for(const x of local('quantaPhiCollected'))add({id:'collected:'+x.key,query:x.searchQuery||x.title,detail:x.story,kind:'story',weight:4});
  const oldStars=new Set(local('phi_infinite_book_favorites_v1'));
@@ -47,6 +55,66 @@ function rank(items,q,sections){
 }
 const safe=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function evidence(q,old){try{const u=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');u.search=new URLSearchParams({q:q+' '+old,format:'json',categories:'general',safesearch:'1'});const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),4500);let r;try{r=await fetch(u,{signal:ctl.signal})}finally{clearTimeout(timer)}const j=r.ok?await r.json():{};return (j.results||[]).slice(0,2).map(x=>({url:x.url,title:clean(x.title),excerpt:clean(x.content||x.description).slice(0,320)})).filter(x=>/^https:\/\//.test(x.url||''))}catch{return[]}}
+
+
+function quantBuildUrl(q,subjects,analysis){
+ const target=new URL('/omni-phi/code/',location.origin);
+ target.searchParams.set('q',[q,...subjects].join(' + ').slice(0,240));
+ target.searchParams.set('intent','build');
+ target.searchParams.set('buildPrompt',[
+  'Build a complete original website with independently readable story cards and proper navigation.',
+  'Structure the active Quant into topical sections and research evidence, rather than a single overview.',
+  analysis||'Compare the selected subjects and use cited evidence.'
+ ].join(' ').slice(0,1100));
+ return target.pathname+target.search;
+}
+async function renderExtracts(q){
+ const list=document.getElementById('qPurpleList');if(!list)return;
+ const zone=list.closest('.qzonePurple');if(!zone)return;
+ zone.querySelector('.qassim-extracted')?.remove();
+ const tokens=await w.QuantaUnifiedTokenLedger?.load?.().catch(()=>[])||[];
+ const key=String(q||'').toLowerCase(),active=w.__qActiveTokenId;
+ const current=tokens.find(x=>x.id===active)||tokens.find(x=>String(x.query||'').toLowerCase()===key);
+ if(!current||!list.isConnected)return;
+ const extracted=(current.dataExtraction?.selectedEntries||[]).slice(-100);
+ const comparisons=(current.dataExtraction?.comparisons||[]).slice(-12);
+ if(!extracted.length&&!comparisons.length)return;
+ const section=document.createElement('section');section.className='qassim-extracted';
+ const heading=document.createElement('h4');heading.textContent='Assimilated Quant data · '+(extracted.length)+' extracted subjects';
+ const intro=document.createElement('p');intro.textContent='Your selected source records and comparisons are connected to this Quant. Choose an entry to continue research, or combine the package into a website.';
+ section.append(heading,intro);
+ const subjectContainer=document.createElement('div');subjectContainer.className='qassim-extraction-items';
+ for(const entry of extracted.slice(-18)){
+  const value=clean(entry.value);if(!value)continue;
+  const item=document.createElement('details');item.className='qassim-source-item';
+  const label=document.createElement('summary');label.textContent=value;item.append(label);
+  const small=document.createElement('p');small.textContent=entry.status||'Saved extracted research entry';item.append(small);
+  for(const source of (entry.sources||[]).slice(0,3)){
+   if(!/^https:\/\//.test(source.url||''))continue;
+   const a=document.createElement('a');a.href=source.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=source.title||'Research source';item.append(a);
+  }
+  const open=document.createElement('a');open.href='/?q='+encodeURIComponent(value);open.textContent='Research this subject →';item.append(open);
+  subjectContainer.append(item);
+ }
+ section.append(subjectContainer);
+ const groups=comparisons.length?comparisons.slice(-3):[];
+ for(const record of groups){
+  const terms=(record.terms||[]).map(clean).filter(Boolean);
+  const article=document.createElement('article');article.className='qassim-package';
+  const strong=document.createElement('strong');strong.textContent='Compared · '+terms.join(' + ');
+  const p=document.createElement('p');p.textContent=clean(record.analysis).slice(0,2100);
+  const build=document.createElement('a');build.href=quantBuildUrl(q,terms,record.analysis);build.textContent='Build researched website →';
+  article.append(strong,p,build);section.append(article);
+ }
+ const build=document.createElement('a');build.className='qassim-build-all';build.href=quantBuildUrl(q,extracted.slice(-12).map(x=>clean(x.value)),comparisons.at(-1)?.analysis);build.textContent='Build website with extracted Quant data';
+ section.append(build);
+ list.after(section);
+}
+function ingest({query='',tokenId='',entries=[],comparison=null}={}){
+ if(tokenId&&w.__qActiveTokenId&&tokenId!==w.__qActiveTokenId)return Promise.resolve();
+ if(!entries.length&&!comparison)return Promise.resolve();
+ return renderExtracts(query);
+}
 
 let ticket=0;
 function researchTopic(raw){
@@ -99,7 +167,7 @@ function showPackages(list,packages,q){
   const compare=document.createElement('button');compare.type='button';compare.textContent='Compare & compile';compare.dataset.assimilate=encodeURIComponent([pack.title,pack.connection,pack.question,'Compare '+q+' with '+pack.topics.join(', ')].filter(Boolean).join('. ').slice(0,650));actions.append(compare);
   const explore=document.createElement('a');const topic=pack.question||('How are '+q+' and '+pack.topics.join(', ')+' connected?');
   explore.href='/?q='+encodeURIComponent(topic.slice(0,250));explore.textContent='Explore new Quant';actions.append(explore);
-  const build=document.createElement('a');build.href='/infinity-phi/?q='+encodeURIComponent([q,...pack.topics].join(' + ').slice(0,250))+'&intent=build';build.textContent='Build website';actions.append(build);
+  const build=document.createElement('a');build.href=quantBuildUrl(q,pack.topics,[pack.title,pack.connection,pack.question].join(' '));build.textContent='Build researched website';actions.append(build);
   li.append(heading,text,related,actions);
   if(pack.status==='source-backed'&&/^https:\/\//.test(pack.sourceUrl)){const source=document.createElement('a');source.href=pack.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';source.textContent='View research source';li.append(source)}
   list.append(li);
@@ -112,7 +180,7 @@ async function load(q,sections){
  if(id!==ticket||!list.isConnected)return;
  const {ranked,chosen}=packageOptions(items,q,sections);
  const old=document.getElementById('qAssimilationChips');if(old)old.remove();
- if(!chosen.length){list.innerHTML='<li>There are no matching earlier topics available for this research yet. Explore a new Quant to add another connection.</li>';return}
+ if(!chosen.length){list.innerHTML='<li>No earlier matches found in the research history. Your extracted data, if available, appears below.</li>';void renderExtracts(q);return}
  list.textContent='Assembling related research packages…';
  // Evidence is collected for promising bridges only; history remains indexed, not
  // dumped to the screen or sent wholesale with private card interaction details.
@@ -140,8 +208,9 @@ async function load(q,sections){
  }catch(error){console.warn('GPT package synthesis unavailable; showing labeled research comparisons',error)}
  if(id!==ticket||!list.isConnected)return;
  if(!packages.length)packages=fallbackPackages(chosen,q);
- if(!packages.length){list.textContent='No useful comparison was found in the available Quant history.';return}
+ if(!packages.length){list.textContent='No independently supported historical comparison was found. Saved extracted data appears below.';void renderExtracts(q);return}
  showPackages(list,packages,q);
+ void renderExtracts(q);
  list.parentElement.querySelectorAll('.qassim-count').forEach(x=>x.remove());
  const caption=document.createElement('small');caption.className='qassim-count';caption.textContent='Assessed '+items.length+' stored records ('+(remote?'cloud and device':'device only')+'), grouped '+ranked.filter(x=>x.score>0).length+' potentially related topics. These packages are research paths, not automatic factual claims.';list.after(caption);
 }
@@ -152,5 +221,5 @@ function signal({kind='card',action='click',key='',title='',query='',terms='',id
  try{const a=local(KEY);if(!a.some(x=>x.id===event.id)){a.push(event);localStorage.setItem(KEY,JSON.stringify(a.slice(-2500)))}}catch{}
  void cloud('/v1/quants/card-interactions',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(event)}).catch(()=>{});
 }
-w.PhiAssimilation={load,rank,corpus,signal};
+w.PhiAssimilation={load,rank,corpus,signal,ingest,renderExtracts};
 })(window);
