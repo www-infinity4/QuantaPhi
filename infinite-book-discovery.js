@@ -72,7 +72,7 @@ function isSecretStory(story){
 }
 
 function preferences(activeQuery,catalog){
- const values=[],unique=new Set(),all=[...read(HISTORY).slice(0,300),...(Array.isArray(global.QuantaCloudBuildHistory)?global.QuantaCloudBuildHistory.slice(0,300):[])];
+ const values=[],unique=new Set(),all=[...read(HISTORY).slice(-5000),...(Array.isArray(global.QuantaCloudBuildHistory)?global.QuantaCloudBuildHistory.slice(-5000):[])];
  for(const x of all){const q=clean(x?.query||x?.title),id=x?.search_id||x?.token_id||x?.id||q;if(!q||unique.has(id))continue;unique.add(id);values.push({q,weight:1.5})}
  for(const x of read(COLLECT).slice(-160)){const q=clean((x?.title||'')+' '+(x?.story||'').slice(0,140));if(q)values.push({q,weight:2.5})}
  if(activeQuery)values.push({q:clean(activeQuery),weight:3});
@@ -91,9 +91,12 @@ function preferences(activeQuery,catalog){
  if(activeMatches.length){const specialist=activeMatches.find(([id])=>id>=31);sector=(specialist||activeMatches[0])[0];score+=3}
  // Preference nudges the sector; the selected person/topic is a research starting
  // point, never permission to return a biography.
- const recent=values.slice().reverse().map(x=>x.q).find(q=>q.length>=3&&q.length<=90&&!/^(?:search|home|news|music|hello)$/i.test(q));
- const focus=clean(activeQuery).slice(0,90)||recent||'';
- return {sector,score,signals:values.length,focus};
+ const focusPool=[...new Set(values.map(x=>x.q).filter(q=>q.length>=3&&q.length<=90&&!/^(?:search|home|news|music|hello)$/i.test(q)))];
+ const recent=focusPool[focusPool.length-1]||'';
+ const focus=clean(activeQuery).slice(0,90)||recent;
+ // Historic Quants steer some rolls. Do not restrict discovery to the last
+ // four searches, nor let a single recent topic monopolize the randomizer.
+ return {sector,score,signals:values.length,focus,focusPool};
 }
 // A famous person's life is a search topic, not by itself a Big Secret.
 // Artifact, demonstration, incident and document titles are still eligible.
