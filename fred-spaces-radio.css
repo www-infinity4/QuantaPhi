@@ -96,3 +96,9 @@
 #fredSpacesRadio .fs-media-star .fs-status{color:#53340f;font-weight:650}
 @media(max-width:440px){#fredSpacesRadio .fs-big-star{right:-67px;top:0;opacity:.79}#fredSpacesRadio .fs-star-avatar{right:8px;top:55px;width:75px;height:75px;font-size:36px}#fredSpacesRadio .fs-media-star .fs-heading{max-width:100%}#fredSpacesRadio .fs-media-star .fs-heading h2{padding-right:53px}#fredSpacesRadio .fs-media-star .fs-eyebrow{font-size:9px;max-width:100%;white-space:normal}#fredSpacesRadio .fs-media-star .fs-summary{font-size:13px}}
 @media(prefers-reduced-motion:reduce){#fredSpacesRadio .fs-media-star *{transition:none!important}}
+
+/* Higher specificity than shared Oracle card styles loaded afterward. */
+#fredSpacesRadio .fs-card.fs-media-star{box-shadow:0 0 0 1px #fff9b7,0 0 28px #f2bb48ae,0 19px 42px #ad703370}
+#fredSpacesRadio .fs-card.fs-media-star .fs-star-backdrop{z-index:0}
+#fredSpacesRadio .fs-card.fs-media-star .fs-player{position:relative;z-index:2}
+#fredSpacesRadio .fs-card.fs-media-star .fs-star-avatar{font-family:"Noto Color Emoji","Segoe UI Emoji",sans-serif}
