@@ -143,7 +143,8 @@ async function extract(snapshot){
   await saveToCurrent(snapshot.tokenId,entries,null);
   if(active!==snapshot)return;
   window.PhiAssimilation?.signal?.({kind:'data',action:'click',query:snapshot.query,title:'Extracted research',terms:terms.join(' + ')});
-  show('extract','Extracted into this Quant',terms.length+' item'+(terms.length===1?'':'s')+' saved with available source references. This does not mint new Quants or StarCoins.',byTerm);
+  await window.PhiAssimilation?.ingest?.({query:snapshot.query,tokenId:snapshot.tokenId,entries,comparison:null});
+  show('extract','Extracted into this Quant',terms.length+' item'+(terms.length===1?'':'s')+' saved with available source references and sent into Assimilation. No new Quants or StarCoins were minted.',byTerm);
   status(terms.length+' extracted · linked to the active Quant research record');
  }catch(err){if(active===snapshot)status('Extraction could not be saved: '+clean(err.message))}
 }
@@ -190,6 +191,7 @@ async function compare(snapshot){
   await saveToCurrent(snapshot.tokenId,[],comparison);
   if(active!==snapshot)return;
   snapshot.lastComparison=comparison;
+  await window.PhiAssimilation?.ingest?.({query:snapshot.query,tokenId:snapshot.tokenId,entries:[],comparison});
   show('compare','Compared '+terms.length+' selected subjects',prose,byTerm);
   window.PhiAssimilation?.signal?.({kind:'comparison',action:'click',title:'Data comparison',query:snapshot.query,terms:terms.join(' + ')});
   status('Comparison saved in this Quant · select Build to reuse it');
@@ -198,20 +200,18 @@ async function compare(snapshot){
  }
 }
 function build(snapshot,reader=false){
- const terms=reader?[snapshot.query]:selected();
+ const terms=selected();
  if(!terms.length)return;
  const combined=terms.join(' + ').slice(0,350);
- const context=reader?'Build a unique website from the QuantaPhi Scholastic Reader overview on '+snapshot.query+'. Use actual sourced research.':
-  'Build an interactive website using these QuantaPhi selected extracted data topics: '+terms.join(', ')+'. Compare their verified similarities and differences, retain source references and include useful research widgets.';
+ const context='Build an interactive original website using these QuantaPhi selected extracted data topics: '+terms.join(', ')+'. Separate the material into reader introduction, individual evidence sections, comparisons and research trails. Include real source links, site navigation and original story cards with functional expand controls. Preserve the distinct subjects rather than a single giant paragraph.';
  const matchingComparison=!reader&&snapshot.lastComparison&&snapshot.lastComparison.terms.join('|')===terms.join('|');
- const extra=reader?clean(snapshot.red.querySelector('.qreader-prose')?.textContent||'').slice(0,900):
-  matchingComparison?snapshot.lastComparison.analysis:'';
+ const extra=matchingComparison?snapshot.lastComparison.analysis:'';
  const combinedPrompt=(context+' '+extra).slice(0,1250);
- const u=new URL('/infinity-phi/',location.origin);
+ const u=new URL('/omni-phi/code/',location.origin);
  u.searchParams.set('q',combined);u.searchParams.set('intent','build');u.searchParams.set('from','quanta-data');
  u.searchParams.set('buildPrompt',combinedPrompt);
  if(snapshot.tokenId)u.searchParams.set('sourceQuant',snapshot.tokenId);
- const a=make('a');a.href=u.href;a.dataset.siteUrl=u.href;a.dataset.siteTitle=reader?'Build from Scholastic Reader':'Build with '+terms.length+' data subjects';
+ const a=make('a');a.href=u.href;a.dataset.siteUrl=u.href;a.dataset.siteTitle='Build with '+terms.length+' data subjects';
  window.PhiAssimilation?.signal?.({kind:'data',action:'build',title:combined,query:snapshot.query,terms:combined});
  if(typeof window.QuantaOpenSite==='function')window.QuantaOpenSite(a);
  else location.assign(u.href);
@@ -257,11 +257,8 @@ function activate(query,sections,evidence){
  const paras=[...red.querySelectorAll(':scope > p')];
  for(const p of paras)prosa.append(p);
  red.append(prosa);
- const readerActions=make('div','qreader-actions');
- const read=make('button','','Read the overview');read.type='button';read.addEventListener('click',()=>prosa.scrollIntoView({block:'start',behavior:'smooth'}));
- const buildReader=make('button','','Build from overview');buildReader.type='button';
- buildReader.addEventListener('click',()=>{if(active)build(active,true)});
- readerActions.append(read,buildReader);red.append(readerActions);
+ // The full AI Overview remains above, readable without a redundant scroll button.
+ // Website building belongs to selected, structured data in the yellow / purple cards.
  const original=yellow.querySelector('h3');if(original)original.textContent='Data Extraction · live index';
  const description=make('p','qdata-lead','Tap subjects to select them. Extract a term into this Quant, compare 2–8 subjects with GPT and source evidence, or build a website from the selection.');
  const toolbar=make('div','qdata-toolbar');
