@@ -123,6 +123,7 @@ window.addEventListener('phi:image:build:done',()=>{
  if(finishedStory?.id)void attach(true);
 });
 window.addEventListener('phi:story:render',()=>{void refresh()});
+window.addEventListener('phi:story:reset',()=>{void refresh()});
 async function attach(automatic=false){
  if(attaching)return;
  const data=window.PhiImageBuilder?.get?.();
