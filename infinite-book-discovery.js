@@ -308,8 +308,8 @@ function eligibleNarrative(story){
 async function writeSecretStory(sources,plan,roll){
  const mood=storyMood(roll.quantFocus||roll.indexWord||plan.focus,roll);
  const pageEvidence=await readPublicSourcePages(sources);
- const conciseSources=sources.slice(0,10).map(x=>({title:x.title,url:x.url,summary:String(x.summary||'').slice(0,260)}));
- const readablePages=pageEvidence.slice(0,2).map(x=>({url:x.url,title:x.title,excerpt:x.excerpt.slice(0,1600)}));
+ const conciseSources=sources.slice(0,7).map(x=>({title:x.title,url:x.url,summary:String(x.summary||'').slice(0,195)}));
+ const readablePages=pageEvidence.slice(0,2).map(x=>({url:x.url,title:x.title,excerpt:x.excerpt.slice(0,1100)}));
  const prompt=[
   'You are the GPT author of the Asteroid nonfiction story, for any researched subject, including music, weather, railways, food, science or history. Write one ORIGINAL sourced narrative about a concrete evidence-supported incident, observation, discovery, process, demonstration or artifact. Never a general biography, film synopsis or fabricated movie.',
   'NARRATIVE MOOD: '+mood+'. Shape pacing, curiosity and tension around facts; mystery means an evidence-supported unknown, adventure means a documented journey/process, suspense means real stakes or uncertainty. Do not invent danger, dialogue, plot twists, witnesses, or cinematic scenes.',
@@ -520,10 +520,12 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
   // Ask GPT about two distinct sourced candidates concurrently instead of
   // abandoning the Asteroid story after a single "insufficient" response.
   const alternatives=shortlist.slice(0,2);
-  const attempts=await Promise.all(alternatives.map(async page=>({
-   page,written:await writeWikipediaStory(page,plan,roll).catch(()=>null)
-  })));
-  const successful=attempts.find(x=>x.written);
+  let successful=null;
+  // Retry only when needed: avoid paying twice for a successful first story.
+  for(const page of alternatives){
+   const written=await writeWikipediaStory(page,plan,roll).catch(()=>null);
+   if(written){successful={page,written};break}
+  }
   if(!successful)return null;
   const {page,written}=successful,articleUrl='https://en.wikipedia.org/?curid='+page.pageid;
   return {...backup,...written,id:'wiki-gpt-'+page.pageid,
