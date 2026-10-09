@@ -87,3 +87,72 @@ body.oracle-quanta #result .qdata-response{line-height:1.75}
 @media(max-width:340px){
  body.oracle-quanta :is(.qdata-actions,.ib-actions,.ib-build,.pi-actions,.fs-actions,.fs-builds,.qassim-actions){grid-template-columns:1fr}
 }
+
+/* Reads & Realms: daylight violet, distinct from the orbital Asteroid card. */
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-story{
+ background:radial-gradient(circle at 90% 0%,#fff7df 0,transparent 45%),linear-gradient(145deg,#fffaff,#eee1ff 70%,#e7ceff)!important;
+ border:1px solid #b994dd!important;color:#342247!important;
+ box-shadow:0 0 0 1px #ffffff,0 16px 36px #7949a32b,0 0 22px #b585ea45!important;
+}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-asteroid-hero{
+ background:radial-gradient(circle at 85% 20%,#fff5cf,transparent 40%),linear-gradient(135deg,#f8f1ff,#d9b6f4)!important;
+ min-height:250px;
+}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-asteroid-shade{
+ background:linear-gradient(0deg,#f5eafffa 0%,#f4e9ffe8 24%,#f4e9ff40 68%,transparent 100%)!important;
+}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-title{
+ color:#38204e!important;text-shadow:0 1px 0 #ffffffb8!important;line-height:1.25!important;
+}
+body.oracle-quanta #infiniteBook[data-context="home"] :is(.ib-summary,.ib-full,.ib-status){color:#4c355f!important}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-category{
+ background:#ffffffda!important;color:#623187!important;border-color:#c6a4e2!important;
+}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-details{
+ background:#fffafee8!important;border:1px solid #d4b9e8!important;
+}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-details summary{color:#4b2869!important}
+body.oracle-quanta #infiniteBook[data-context="home"] :is(.ib-source,.ib-build>span){color:#5b3283!important}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-build{border-color:#c9acd9!important}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-illustration{background:transparent!important}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-illustration-caption{color:#583d70!important}
+
+/* A complete, large five-point star sits behind the yellow card's live content. */
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star{
+ isolation:isolate;background:radial-gradient(ellipse at 50% 38%,#fff9d8,#ffec9d 48%,#eec557)!important;
+ border-color:#d5a63c!important;
+}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-star-backdrop{
+ inset:0!important;overflow:hidden;z-index:0;pointer-events:none;
+}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-big-star{
+ width:96%!important;height:auto!important;aspect-ratio:1;top:75px!important;left:2%!important;right:auto!important;
+ clip-path:polygon(50% 0%,61% 33%,98% 35%,68% 57%,79% 91%,50% 72%,21% 91%,32% 57%,2% 35%,39% 33%);
+ background:linear-gradient(140deg,#fffef2 0%,#ffe38a 27%,#dca729 55%,#ffe7a0 78%,#bb841d 100%)!important;
+ opacity:1!important;filter:drop-shadow(0 10px 9px #a76d2940)!important;
+}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-star-rays{
+ width:110%!important;height:520px!important;left:-5%;right:auto!important;top:0!important;
+ background:radial-gradient(ellipse,#fffdf7 0%,#fff5ce66 40%,transparent 70%);
+}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-star-avatar{
+ top:24px!important;right:16px!important;width:64px!important;height:64px!important;
+ border:2px solid #fffbe4;box-shadow:0 0 0 4px #e9bd5b55,0 8px 20px #8d652433;
+}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-heading{max-width:100%;padding-right:74px}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-heading h2{padding-right:0!important}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-summary{
+ background:#fffdf0cc!important;border:1px solid #dcb86288;color:#49310b!important;
+}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-stream{
+ background:linear-gradient(145deg,#fffdf2f2,#fff6d8eb)!important;color:#382606!important;
+ border:1px solid #cfa653!important;box-shadow:0 9px 25px #aa75202b!important;
+}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star :is(.fs-player-name,.fs-player-sub,.fs-player-timing,.fs-play-disclaimer){color:#523711!important}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-source{
+ color:#65491b!important;background:#ffffffd9!important;border-color:#d9bb80!important;border-radius:10px;
+}
+body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-play{
+ background:linear-gradient(135deg,#fff9e6,#f5d378)!important;border:1px solid #c69b3d;
+ color:#4e3209;box-shadow:0 0 0 4px #fffbea88,0 8px 20px #bb842f38!important;
+}
