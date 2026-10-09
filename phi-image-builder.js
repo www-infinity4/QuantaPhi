@@ -39,8 +39,9 @@ function layout(){
  form.append(choices);
  const uploads=make('div','pi-file-area');
  for(const [kind,title,subtitle,removeLabel] of [['source','Upload image','Source / create similar','Remove uploaded photo'],['design','Style reference','Optional second image','Remove style reference']]){
-  uploads.append(input(kind,title,subtitle));
-  const remove=make('button','pi-mode',removeLabel);remove.type='button';remove.dataset.piAction='remove-'+kind;remove.hidden=true;uploads.append(remove);
+  const slot=make('div','pi-upload-slot');slot.append(input(kind,title,subtitle));
+  const remove=make('button','pi-mode pi-remove',removeLabel);remove.type='button';remove.dataset.piAction='remove-'+kind;remove.hidden=true;slot.append(remove);
+  uploads.append(slot);
  }
  form.append(uploads);
  const prompt=make('textarea');prompt.id='pi-prompt';prompt.setAttribute('aria-label','Describe image to build');prompt.placeholder='Describe the image, style, words, and edits you want. Example: A beautiful vintage AM radio advertisement photographed like a 1950s magazine cover.';form.append(prompt);
