@@ -654,8 +654,55 @@ async function runImageReview(request,env){
  }catch(error){return json(request,{ok:false,error:String(error?.message||error)},502)}
 }
 
+// Nano Banana uses Google's image-generation endpoint rather than the Cloudflare
+// vision reader. Its secret stays in this Worker, never in browser JavaScript.
+// This route is opt-in: without GEMINI_API_KEY the existing FLUX path is unchanged.
+async function nanoBananaInlineImage(file) {
+ const bytes=new Uint8Array(await file.arrayBuffer());
+ let binary="";
+ for(let i=0;i<bytes.length;i+=32768) binary+=String.fromCharCode(...bytes.subarray(i,i+32768));
+ return {inline_data:{mime_type:file.type,data:btoa(binary)}};
+}
+async function renderNanoBanana(key, renderDirection, image, designReference, mode) {
+ const parts=[{text:renderDirection}];
+ if(image) parts.push(await nanoBananaInlineImage(image));
+ if(designReference) parts.push(await nanoBananaInlineImage(designReference));
+ const aspectRatio=mode==="Billboard"?"16:9":mode==="Trading Card"?"3:4":mode==="Poster"?"2:3":mode==="Cover Art"?"1:1":"1:1";
+ const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),120000);
+ let response;
+ try {
+  response=await fetch("https://generativelanguage.googleapis.com/v1/models/gemini-3.1-flash-image:generateContent",{
+   method:"POST",
+   headers:{"content-type":"application/json","x-goog-api-key":key},
+   signal:abort.signal,
+   body:JSON.stringify({
+    contents:[{role:"user",parts}],
+    generationConfig:{responseModalities:["TEXT","IMAGE"],responseFormat:{image:{aspectRatio,imageSize:"1K"}}}
+   })
+  });
+  const data=await response.json().catch(()=>null);
+  if(!response.ok){
+   const status=response.status;
+   const err=new Error(clean(data?.error?.message||"Nano Banana provider request failed",220));
+   err.status=status;err.code=status===429?"provider_rate_limited":status===400?"image_input_invalid":status===401||status===403?"nano_banana_authorization_failed":"nano_banana_provider_error";
+   throw err;
+  }
+  const partsOut=data?.candidates?.[0]?.content?.parts||[];
+  const found=partsOut.find(p=>p?.inlineData?.data||p?.inline_data?.data);
+  const inline=found?.inlineData||found?.inline_data;
+  const mime=inline?.mimeType||inline?.mime_type||"";
+  if(!inline?.data||!["image/png","image/jpeg","image/webp"].includes(mime)){
+   const err=new Error("Nano Banana returned no supported image pixels.");err.code="nano_banana_no_image";throw err;
+  }
+  return {dataURI:"data:"+mime+";base64,"+inline.data,model:"gemini-3.1-flash-image",provider:"google-gemini-api"};
+ }catch(error){
+  if(error?.name==="AbortError"){const err=new Error("Nano Banana timed out before returning image pixels.");err.code="image_render_timeout";throw err;}
+  throw error;
+ }finally{clearTimeout(timer)}
+}
+
 async function runImage(request, env) {
- if (!env.AI) return json(request,{ok:false,error:"workers_ai_not_configured"},503);
+ if (!env.AI && !env.GEMINI_API_KEY) return json(request,{ok:false,error:"image_renderer_not_configured"},503);
  let form;
  try { form = await request.formData(); }
  catch { return json(request,{ok:false,error:"multipart_required"},400); }
@@ -715,6 +762,21 @@ async function runImage(request, env) {
  // or fabricated text variants between attempts.
  const governingPrompt=mode==="Trading Card"?executionOnly:visualExecution;
  const renderDirection=(governingPrompt+" Scene description: "+prompt).slice(0,7000);
+ // Nano Banana is selected only when its Google API key is configured.
+ // Keep the working Cloudflare vision/reading route untouched.
+ if(env.GEMINI_API_KEY){
+  try{
+   const result=await renderNanoBanana(env.GEMINI_API_KEY,renderDirection,image,designReference,mode);
+   await recordUsage(env,userId,state,1,1);
+   return json(request,{ok:true,...result,mode,referenceMode:blankReference?"text-only":styleOnly?"style-only":"source-image",remaining:null});
+  }catch(error){
+   const status=error?.status===429?429:error?.code==="image_input_invalid"?422:error?.code==="nano_banana_authorization_failed"?503:502;
+   const code=clean(error?.code,60)||"nano_banana_render_failed";
+   console.warn("Nano Banana image render failed",code,status);
+   return json(request,{ok:false,code,error:clean(error?.message,220)||"Nano Banana image render failed",provider:"google-gemini-api",model:"gemini-3.1-flash-image"},status);
+  }
+ }
+ if(!env.AI)return json(request,{ok:false,error:"workers_ai_not_configured"},503);
  const modelPlan=[
    {model:IMAGE_FALLBACK_MODEL,variants:[renderDirection],steps:null},
    {model:IMAGE_MODEL,variants:[renderDirection],steps:"25"}
