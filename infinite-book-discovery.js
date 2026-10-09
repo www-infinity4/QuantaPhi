@@ -286,20 +286,36 @@ async function readPublicSourcePages(sources){
   return (Array.isArray(data?.sources)?data.sources:[]).filter(x=>x?.sourceType==='retrieved-page-text'&&x.excerpt?.length>300).slice(0,4);
  }catch(error){console.warn('Public source-page extraction unavailable; relying on cited search excerpts',error);return []}
 }
+// The subject determines the nonfiction research target; the mood only controls narration.
+function storyMood(query='',roll={}){
+ const q=String(query||roll.quantFocus||roll.indexWord||roll.focus||'').toLowerCase();
+ if(/\b(pink floyd|plum|plums|mystery|unsolved|unknown|lost|hidden|secret)\b/.test(q))return 'Mystery';
+ if(/\b(hail|storm|tornado|danger|disaster|suspense|crisis|rescue)\b/.test(q))return 'Suspense';
+ if(/\b(grapes?|train|railway|railroad|adventure|voyage|journey|exploration)\b/.test(q))return 'Adventure';
+ return ['Mystery','Adventure','Suspense'][Math.abs(Number(roll.combination)||Number(roll.sector)||0)%3];
+}
+function eligibleNarrative(story){
+ return !!story && /^gpt-(deep|wiki)$/.test(String(story.discoveryMethod||'')) &&
+  /^https:\/\//.test(String(story.sourceUrl||'')) &&
+  String(story.full||'').trim().length>=230 &&
+  !/\b(movie|film|screenplay|fictional film|plot synopsis|trailer)\b/i.test(String(story.title||'')+' '+String(story.summary||'').slice(0,100));
+}
 async function writeSecretStory(sources,plan,roll){
+ const mood=storyMood(roll.quantFocus||roll.indexWord||plan.focus,roll);
  const pageEvidence=await readPublicSourcePages(sources);
  const conciseSources=sources.slice(0,10).map(x=>({title:x.title,url:x.url,summary:String(x.summary||'').slice(0,260)}));
  const readablePages=pageEvidence.slice(0,2).map(x=>({url:x.url,title:x.title,excerpt:x.excerpt.slice(0,1600)}));
  const prompt=[
-  'You are writing Infinity Reads & Realms of mystery, adventure and suspense. Write an ORIGINAL enjoyable historical nonfiction story card about ONE concrete unusual event, discovery, demonstration, artifact, overlooked person-specific incident or experiment. Never a general biography.',
+  'You are the GPT author of the Asteroid nonfiction story, for any researched subject, including music, weather, railways, food, science or history. Write one ORIGINAL sourced narrative about a concrete evidence-supported incident, observation, discovery, process, demonstration or artifact. Never a general biography, film synopsis or fabricated movie.',
+  'NARRATIVE MOOD: '+mood+'. Shape pacing, curiosity and tension around facts; mystery means an evidence-supported unknown, adventure means a documented journey/process, suspense means real stakes or uncertainty. Do not invent danger, dialogue, plot twists, witnesses, or cinematic scenes.',
   'Example of the required difference: "Nikola Tesla" is NOT a story; his 1898 radio-controlled boat demonstration IS the kind of precise event we want, but do not choose it unless the actual evidence here concerns that event.',
   'You are both evidence reviewer and storyteller: examine up to 20 independent search-result excerpts below, choose the MOST INTERESTING SPECIFIC incident actually corroborated by at least two distinct source websites, then narrate it as an engaging story, not an encyclopedia answer.',
   'You can compare up to 20 search-result excerpts, but they are NOT full source documents. Use ONLY the two or more excerpts about the exact same selected event to support factual statements; do not merge unrelated histories. If a surprising detail cannot be supported, return {"insufficient":true}.',
   'You must identify one concrete event and an unexpected detail, and explain what makes it surprising. The title must name the EVENT or the OBJECT, not merely the person.',
   'The final direction is '+(plan.direction||'discovery')+'. It guides which supported story to select, not a license to fabricate. Future possibilities must be labeled as possibilities. For educational mathematics include a correct simple equation, SI units, a worked example with explicit assumptions, and a verified source for constants.',
-  'Both source URLs must refer to the same specific incident or artifact; if they only share the same famous subject return {"insufficient":true}.',
+  'Both source URLs must refer to the same specific incident, observation or documented process; if they only share the broad topic return {"insufficient":true}.',
   'Quote no sentences verbatim. No invented dates, dialogue, motives, achievements, conspiracies or scientific claims. Mark legends and contested claims accurately.',
-  'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 original words","full":"280-450 original words in 3-5 distinct paragraphs","detail":"short exact surprising fact","status":"documented|reported|contested|corrected myth|folklore","evidence_urls":["exact URL of source 1","exact URL of source 2"]}.',
+  'Return JSON ONLY with {"title":"specific nonfiction story headline","summary":"40-85 original words","full":"280-450 original words in 3-5 distinct paragraphs","detail":"short evidence-backed hook","status":"documented|reported|contested|corrected myth|folklore","evidence_urls":["exact URL of source 1","exact URL of source 2"]}.',
   'Rolled combination '+plan.combination+'; indexed topic '+(plan.indexedWord||plan.focus)+'; story refinement '+(plan.realm||plan.angle)+'; story direction '+(plan.direction||'')+'; source class '+plan.sourceClass+'; focus '+plan.focus+'. Storytelling lens '+(plan.storytellingRealm||'History')+' shapes narrative structure ONLY. Do not invent facts, quotes, fictional experiences or unresolved outcomes.',
   'Search results are snippets, not whole documents: '+JSON.stringify(conciseSources),
   'Retrieved public source-page excerpts (the only directly fetched page passages): '+JSON.stringify(readablePages),
@@ -310,14 +326,14 @@ async function writeSecretStory(sources,plan,roll){
  if(data?.ok===false)return null;
  const obj=jsonAnswer(textAnswer(data));
  if(!obj||obj.insufficient||clean(obj.title).length<16||clean(obj.summary).length<100||clean(obj.full).length<230||!isSecretStory(obj))return null;
- if(!EVENT_TITLE.test(clean(obj.title)))return null;
+ if(/\\b(movie|film|trailer|screenplay|fictional film|plot synopsis)\\b/i.test(clean(obj.title)))return null;
  const cited=(Array.isArray(obj.evidence_urls)?obj.evidence_urls:[]).map(canonical);
  const matched=sources.filter(x=>cited.includes(x.url));
  if(new Set(matched.map(x=>origin(x.url))).size<2||!detailsSupported(obj.detail,matched,plan.focus))return null;
  return {title:clean(obj.title).slice(0,180),summary:clean(obj.summary).slice(0,650),
   full:String(obj.full).trim().slice(0,4200),detail:clean(obj.detail).slice(0,240),
   status:['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported',
-  supported:matched,fullEvidenceRead:pageEvidence.filter(x=>matched.some(y=>y.url===x.url)).length};
+  mood,supported:matched,fullEvidenceRead:pageEvidence.filter(x=>matched.some(y=>y.url===x.url)).length};
 }
 async function findSearch({roll,catalog,seen,focus=''}) {
  const plan=sourcePlan(roll,catalog,focus);
@@ -367,7 +383,7 @@ async function findSearch({roll,catalog,seen,focus=''}) {
    reviewedExcerpts:ranked.length,
    combination:plan.combination,status:written.status+(written.fullEvidenceRead?' · retrieved-page research':' · research synthesis from search excerpts'),
    sourceTitle:lead.title,sourceUrl:lead.url,
-   sources:written.supported.map(x=>({title:x.title,url:x.url})),discoverySource:'live',discoveryMethod:'gpt-deep'};
+   sources:written.supported.map(x=>({title:x.title,url:x.url})),discoverySource:'live',discoveryMethod:'gpt-deep',mood:written.mood};
  }catch(error){console.warn('Infinity Reads & Realms writer unavailable',error);}
  return null;
 }
@@ -401,11 +417,12 @@ const WIKI_QUERIES={
  39:'electronics historical invention unusual'
 };
 async function writeWikipediaStory(page,plan,roll){
+ const mood=storyMood(roll.quantFocus||roll.indexWord||plan.focus,roll);
  const prompt=[
- 'Write an original nonfiction entry in Infinity Reads & Realms about ONE little-known concrete incident, discovery, object, document, or experiment specifically evidenced by this single source.',
+ 'Write one original Asteroid nonfiction story about a specific documented event, discovery, object, natural process or experiment evidenced by the provided source excerpt. Apply the '+mood+' narrative style without inventing details, threats or cinema-style fiction.',
  'No biography or encyclopedia-style overview. Never invent dialogue, quotes, dates, motives, scientific results or secret plots.',
  'Use ONLY the supplied excerpt, not other assumed facts. If the excerpt is too general, answer {"insufficient":true}.',
- 'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 words","full":"100-210 original words in 2 paragraphs","detail":"one directly supported surprising fact"}.',
+ 'Return JSON ONLY with {"title":"specific nonfiction headline","summary":"40-85 words","full":"150-240 original words in at least 2 paragraphs","detail":"one directly supported surprising fact"}.',
  'Discovery route '+plan.combination+'; '+plan.name+'; '+plan.angle+'; '+plan.sourceClass+'.',
  'Source: Wikipedia contributors, page '+page.title+': '+page.full.slice(0,2200)
  ].join('\n');
@@ -418,7 +435,7 @@ async function writeWikipediaStory(page,plan,roll){
   if(!out||out.insufficient||!isSecretStory(out)||clean(out.summary).length<90||clean(out.full).length<230)return null;
   return {title:clean(out.title).slice(0,180),summary:clean(out.summary).slice(0,600),
    full:String(out.full).trim()+'\n\nBased on Wikipedia contributors (CC BY-SA), linked below.',
-   detail:clean(out.detail).slice(0,180)};
+   detail:clean(out.detail).slice(0,180),mood};
  }catch(error){console.warn('Wikipedia story rewrite unavailable',error);return null}
 }
 
@@ -496,25 +513,23 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
  return backup;
 }
 async function find(options){
- // A stalled GPT/search Worker must not hold the story card hostage.
- // Run the attributed encyclopedia safety net independently of the deep-research path.
+ const strict=options?.strictGPT===true;
  const deep=findSearch(options).catch(error=>{console.warn('Book GPT research unavailable',error);return null;});
  const backup=findWikipedia(options).catch(error=>{console.warn('Book independent source discovery unavailable',error);return null;});
- const first=await Promise.race([
-  deep.then(story=>({kind:'deep',story})),
-  backup.then(story=>({kind:'backup',story}))
- ]);
- if(first.story){
-  // A fast cited backup can be upgraded when the deeper two-source GPT story arrives.
-  // The caller decides whether the reader has already interacted or moved on.
-  if(first.kind==='backup'&&typeof options.onDeep==='function'){
-   void deep.then(story=>{if(story?.discoveryMethod==='gpt-deep')options.onDeep(story);})
-    .catch(error=>console.warn('Book late research unavailable',error));
-  }
-  return first.story;
+ if(!strict){
+  const first=await Promise.race([deep,backup]);
+  return first||await (first===null?deep:backup);
  }
- return first.kind==='deep'?backup:deep;
+ // Only the actual model's original source-backed writing can enter Asteroid.
+ // A retrieved excerpt, old film catalog, or encyclopedia blurb is not a finished story.
+ const first=await Promise.race([
+  deep.then(x=>({type:'deep',story:x})),
+  backup.then(x=>({type:'wiki',story:x}))
+ ]);
+ if(eligibleNarrative(first.story))return first.story;
+ const second=first.type==='deep'?await backup:await deep;
+ return eligibleNarrative(second)?second:null;
 }
 
-global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,indexedDraw,isPlaceProfile,isGenericProfile,isSecretStory};
+global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,indexedDraw,isPlaceProfile,isGenericProfile,isSecretStory,storyMood,eligibleNarrative};
 })(window);
