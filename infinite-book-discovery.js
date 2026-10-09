@@ -291,7 +291,7 @@ function storyMood(query='',roll={}){
  const q=String(query||roll.quantFocus||roll.indexWord||roll.focus||'').toLowerCase();
  if(/\b(pink floyd|plum|plums|mystery|unsolved|unknown|lost|hidden|secret)\b/.test(q))return 'Mystery';
  if(/\b(hail|storm|tornado|danger|disaster|suspense|crisis|rescue)\b/.test(q))return 'Suspense';
- if(/\b(grapes?|train|railway|railroad|adventure|voyage|journey|exploration)\b/.test(q))return 'Adventure';
+ if(/\b(grapes?|trains?|railway|railroad|adventure|voyage|journey|exploration)\b/.test(q))return 'Adventure';
  return ['Mystery','Adventure','Suspense'][Math.abs(Number(roll.combination)||Number(roll.sector)||0)%3];
 }
 function eligibleNarrative(story){
