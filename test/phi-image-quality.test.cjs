@@ -14,8 +14,9 @@ test('image builder and actions load with quality reviewer and learning in the c
  assert.deepEqual([...order].sort((a,b)=>a-b),order);
  assert.match(source('phi-image-builder.js'),/renderer\.review\(/);
  assert.match(source('phi-image-builder.js'),/data-pi-action/);
- assert.match(source('phi-image-builder.js'),/Fix issues/);
- assert.match(source('phi-image-builder.js'),/Looks good/);
+ assert.match(source('phi-image-builder.js'),/Fix image/);
+ assert.match(source('phi-image-builder.js'),/Save image/);
+ assert.doesNotMatch(source('phi-image-builder.js').split('const actions=make')[1].split('done.append(actions)')[0],/Share \+|Collect|Starred|Build more like this/);
 });
 
 test('finished image reviewer is a real vision endpoint, not dimension checking',()=>{
@@ -67,7 +68,8 @@ test('Infinite Book images can be viewed cleanly, attached, restored and shared 
  assert.match(code,/URL\.revokeObjectURL\(currentObjectUrl\)/);
  assert.match(code,/showModal/);
  assert.match(css,/object-fit:contain/);
- assert.match(code,/dataset\.piBook='use-story'/);
+ assert.match(code,/attachGenerated/);
+ assert.match(code,/hasStored/);
  assert.match(code,/window\.PhiVisualRender\.asBlob/);
  assert.match(code,/navigator\.canShare\(\{files:\[file\]\}\)/);
  assert.match(code,/navigator\.share\(\{title:story\.title,text:body,url,files:\[file\]\}\)/);
@@ -104,7 +106,7 @@ test('image rejection keeps the original inputs editable and offers photo remova
  assert.match(css,/\.pi-upload-slot/);
  assert.match(css,/\[hidden\]\{display:none!important\}/);
  const html=source('index.html');
- assert.match(html,/phi-image-builder\.js\?v=20261008-flux-input2/);
+ assert.match(html,/phi-image-builder\.js\?v=20261008-minimal-image1/);
  assert.match(html,/phi-visual-render\.js\?v=20261008-textclean3/);
 });
 
@@ -114,7 +116,7 @@ test('search-generated sourced story is displayed after the overview assimilatio
  assert.match(book,/function placeSearchStory\(/);
  assert.match(book,/result\.insertAdjacentElement\('afterend',root\)/);
  assert.match(book,/window\.addEventListener\('quantaphi:search-start'/);
- assert.match(html,/infinite-book\.js\?v=20261008-story-image2/);
+ assert.match(html,/infinite-book\.js\?v=20261008-asteroid-story1/);
  // Layout must be deterministic before scripts run: no flash of the story above the overview.
  assert.ok(html.indexOf('id="result"') < html.indexOf('id="infiniteBook"'),'Overview must precede story card in the HTML');
  assert.ok(html.indexOf('id="infiniteBook"') < html.indexOf('id="phiImageBuilder"'),'Story and illustration come before the image builder');
@@ -126,11 +128,11 @@ test('completed story images automatically attach and update is not a redundant 
  const bridge=source('phi-book-image-bridge.js');
  assert.match(bridge,/phi:image:build:done/);
  assert.match(bridge,/if\(finishedStory\?\.id\)void attach\(true\)/);
- assert.match(bridge,/Update story image/);
+ assert.match(bridge,/attachGenerated/);
  assert.match(bridge,/visibleIllustration\?\.artifactId===data\?\.artifact\?\.id/);
  assert.match(bridge,/\[data-pi-action="fix"\]/);
  assert.match(bridge,/storeName='stories'/);
- assert.match(source('index.html'),/phi-book-image-bridge\.js\?v=20261008-auto-attach2/);
+ assert.match(source('index.html'),/phi-book-image-bridge\.js\?v=20261008-asteroid-art1/);
  assert.match(bridge,/\['remove','Clear image'\]/,'reader can clear a stored story illustration');
  assert.match(source('phi-image-builder.js'),/\['clear','Clear image'\]/,'builder can clear finished pixels independently');
  assert.match(source('phi-image-builder.js'),/if\(action==='clear'\)/,'clear has a real click handler');
@@ -152,7 +154,7 @@ test('one bounded automatic repair is scored against the original image',()=>{
  assert.doesNotMatch(worker,/variations of the prompt|const variants=\[/);
  assert.doesNotMatch(worker.slice(worker.indexOf(' const executionOnly='),worker.indexOf(' let lastError=null;')),/alien-language|pseudo-words|symbol rows/i);
  assert.match(worker,/Paint only the scene, objects, photography and visual design/);
- assert.match(source('index.html'),/phi-image-builder\.js\?v=20261008-flux-input2/);
+ assert.match(source('index.html'),/phi-image-builder\.js\?v=20261008-minimal-image1/);
 });
 
 test('FLUX adapter sends true text-only requests and scales reference pixels, not just byte size',()=>{
@@ -200,4 +202,23 @@ test('Workers image route permits text-only generation with no synthetic image a
  assert.equal(styleResult.referenceMode,'style-only');
  assert.equal(calls[1].keys.includes('input_image_0'),true);
  assert.equal(calls[1].keys.includes('input_image_1'),false);
+});
+
+test('Asteroid presents GPT evidence narratives with a real reviewed image behind readable words',()=>{
+ const book=source('infinite-book.js'),writer=source('infinite-book-discovery.js'),bridge=source('phi-book-image-bridge.js'),style=source('phi-electric-theme.css');
+ assert.match(book,/strictGPT:true/);
+ assert.match(book,/ASTEROID · ORIGINAL SOURCED STORY/);
+ assert.match(book,/scheduleAutoIllustration\(story\)/);
+ assert.match(book,/renderer\.render\(\{description:intention/);
+ assert.match(book,/renderer\.review\(\{src:generated\.src/);
+ assert.match(book,/review\?\.status==='good'/);
+ assert.match(book,/bridge\.attachGenerated\(story,blob/);
+ assert.match(bridge,/if\(metadata\?\.review\?\.status!=='good'/);
+ assert.match(style,/ib-asteroid-rock/);
+ assert.match(style,/ib-asteroid-shade/);
+ assert.match(style,/ib-illustration-image/);
+ assert.match(writer,/strictGPT===true/);
+ assert.match(writer,/eligibleNarrative/);
+ assert.doesNotMatch(book,/for \(const story of \[\.\.\.\(catalog\.stories/);
+ assert.ok(book.indexOf('id="result"')===-1);
 });
