@@ -133,10 +133,39 @@
     if(selectedMode==="build")u.searchParams.set("buildPrompt","Create an original website about "+topic+" using this indexed Fred Krueger Space as context. Verify factual claims.");
     location.assign(u.href);
   }
+  const escapeMarkup=x=>String(x||'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  function mediaStarEmbed(episode=active){
+    // Self-contained HTML / CSS asset. The play icon LINKS to the original X
+    // replay: it never claims that the site has licensed or embedded X audio.
+    const title=escapeMarkup(episode.title),description=escapeMarkup(episode.description),source=escapeMarkup(episode.source);
+    return '<article aria-label="Media Star: '+title+'" style="position:relative;isolation:isolate;overflow:hidden;max-width:720px;padding:22px;border:2px solid #f2c44f;border-radius:24px;background:linear-gradient(135deg,#fff9d0,#e9b739);color:#33200a;font:16px/1.5 system-ui,sans-serif;box-shadow:0 9px 28px #8d5d2666">'+
+      '<span aria-hidden="true" style="position:absolute;right:-60px;top:-64px;width:330px;height:330px;clip-path:polygon(50% 0%,62% 34%,98% 35%,69% 57%,80% 91%,50% 72%,20% 91%,31% 57%,2% 35%,38% 34%);background:linear-gradient(135deg,#fff0ad,#f6b81e);opacity:.62;z-index:-1"></span>'+
+      '<div style="display:flex;align-items:center;gap:13px"><span aria-hidden="true" style="font-size:37px;display:grid;place-items:center;width:66px;height:66px;border-radius:50%;border:2px solid #ffec9d;background:#624522;color:#fff">🎙</span><div><strong style="font-size:13px;letter-spacing:.08em">⭐ MEDIA STAR</strong><h2 style="font-size:24px;margin:5px 0">'+title+'</h2></div></div>'+
+      '<p style="max-width:95%;margin:15px 0">'+description+'</p>'+
+      '<a href="'+source+'" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 17px;border-radius:999px;background:#2e2145;color:white;text-decoration:none;font-weight:900">▶ Open original replay on X ↗</a>'+
+      '<p style="font-size:12px;margin:11px 0 0">X may require sign-in. Audio is not hosted here.</p></article>';
+  }
+  async function copyMediaStarEmbed(){
+    const snippet=mediaStarEmbed();
+    try{
+      if(!navigator.clipboard?.writeText)throw Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(snippet);
+      note('Media Star HTML copied. Paste into your website builder to embed this player-style card with the original X source.');
+    }catch(error){
+      if(typeof window.prompt==='function')window.prompt('Copy this Media Star HTML into your website builder:',snippet);
+      note('Media Star HTML ready for copying. Your browser could not copy automatically.');
+    }
+  }
+  window.PhiMediaStarAsset={html:mediaStarEmbed};
   function render(){
     root.replaceChildren();
-    const card=node("article","fs-card"),top=node("div","fs-header"),ident=node("div","fs-heading");
-    ident.append(node("small","fs-eyebrow","CURIO SPACE SPOTLIGHT"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
+    const card=node("article","fs-card fs-media-star"),top=node("div","fs-header"),ident=node("div","fs-heading");
+    card.setAttribute("data-media-asset","media-star-v1");
+    const backdrop=node("div","fs-star-backdrop");
+    backdrop.setAttribute("aria-hidden","true");
+    backdrop.append(node("span","fs-star-rays"),node("span","fs-big-star"),node("span","fs-star-avatar","🎙"));
+    card.append(backdrop);
+    ident.append(node("small","fs-eyebrow","⭐ MEDIA STAR · CURIO SPACE SPOTLIGHT"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
     top.append(ident);card.append(top);
     if(active.id===FIRST)card.append(node("p","fs-free","FEATURED EPISODE · FREE"));
     card.append(node("p","fs-meta",active.date+" · "+active.duration),node("p","fs-summary",active.description));
@@ -186,7 +215,8 @@
     const actions=node("div","fs-actions");
     actions.append(button(stars.has(active.id)?"★ Starred":"☆ Star",favorite),button("Share +0.1 ★",share),button("Collect +0.1 ★",collect));card.append(actions);
     const builds=node("div","fs-builds");
-    ["InfinityPhi","OmniPhi","QuantaPhi"].forEach(t=>builds.append(button("Build with "+t,()=>build(t),"fs-phi")));card.append(builds);
+    ["InfinityPhi","OmniPhi","QuantaPhi"].forEach(t=>builds.append(button("Build with "+t,()=>build(t),"fs-phi")));
+    builds.append(button("Embed Media Star",()=>{void copyMediaStarEmbed()},"fs-phi fs-embed"));card.append(builds);
     const nextRow=node("div","fs-bottom");
     const hasCurated=episodes.some(e=>e.id!==FIRST&&isReplayLink(e));
     const unlock=button(busy?"Confirming StarCoin charge…":"Buy next curated episode · 1 ★",more,"fs-next");
