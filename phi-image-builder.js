@@ -45,7 +45,7 @@ function layout(){
  }
  form.append(uploads);
  const prompt=make('textarea');prompt.id='pi-prompt';prompt.setAttribute('aria-label','Describe image to build');prompt.placeholder='Describe the image, style, words, and edits you want. Example: A beautiful vintage AM radio advertisement photographed like a 1950s magazine cover.';form.append(prompt);
- const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Exact printed words (optional; no imaginary letters)';exact.setAttribute('aria-label','Exact words to print on the finished image');form.append(exact);
+ const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Exact title or words to print (optional — use this to avoid fake letters)';exact.setAttribute('aria-label','Exact words to print on the finished image');form.append(exact);
  form.append(make('p','pi-notice',''));
  const go=make('button','pi-primary','Build Image');go.type='button';go.dataset.piAction='build';form.append(go);
  const progress=make('div','pi-progress pi-panel');progress.append(make('h2','','Building your image'),make('p','pi-sub','The input card is replaced as each actual service step runs.'));
@@ -55,6 +55,13 @@ function layout(){
  const back=make('button','pi-primary','Back to description');back.type='button';back.dataset.piAction='back';progress.append(back);
  const done=make('div','pi-finished pi-panel');done.append(make('h2','','Your Image'),make('p','pi-sub','This result is the actual image returned by the connected renderer.'));
  const img=make('img','pi-result');img.alt='Generated image result';done.append(img,make('p','pi-notice',''));
+ // Browser-only typography repair: no fresh FLUX render or paid image call.
+ const lettering=make('div','pi-lettering');
+ lettering.append(make('strong','','Fix printed words without regenerating'),make('p','pi-sub','Use real lettering for your title. This edits the saved result, not the underlying picture; any fake lettering painted into the background may still remain.'));
+ const correction=make('input','pi-exact-input');correction.id='pi-correct-text';correction.type='text';correction.maxLength=120;correction.placeholder='Enter precisely what the image should say';correction.setAttribute('aria-label','Correct the lettering printed on the final image');
+ const applyText=make('button','pi-mode','Apply exact lettering');applyText.type='button';applyText.dataset.piAction='apply-lettering';
+ const removeText=make('button','pi-mode','Remove added lettering');removeText.type='button';removeText.dataset.piAction='remove-lettering';
+ lettering.append(correction,applyText,removeText);done.append(lettering);
  const audit=make('div','pi-audit');audit.setAttribute('aria-live','polite');audit.append(make('strong','pi-audit-title','Visual review'),make('p','pi-audit-summary','Not yet reviewed.'),make('ul','pi-audit-issues'));done.append(audit);
  const actions=make('div','pi-actions');
  for(const [key,label,wide]of [['fix','Fix image',true],['download','Save image'],['clear','Clear image']]){
@@ -154,6 +161,7 @@ async function build({retryRender=false}={}){
   }else{title.textContent='Visual review unavailable';summary.textContent='Artwork rendered, but its details and lettering have not been checked.';audit.dataset.review='uncertain'}
   step(phase,'done',review?'Visual check complete':'Review unavailable');
   $('.pi-result').src=result;
+  const correction=$('#pi-correct-text');if(correction)correction.value=exactText;
   // The standalone image builder no longer has a Star control.
   // Never let obsolete controls prevent completed artwork from appearing.
   state('finished');notice('Created '+size.width+' × '+size.height+' using '+rendered.renderer+(warning?' · '+warning:''));
@@ -199,6 +207,26 @@ host.addEventListener('click',event=>{
  const choice=event.target.closest('[data-pi-mode]');
  if(choice){mode=choice.dataset.piMode;host.querySelectorAll('[data-pi-mode]').forEach(b=>b.setAttribute('aria-pressed',b===choice?'true':'false'));return}
  const action=event.target.closest('[data-pi-action]')?.dataset.piAction;
+ if(action==='apply-lettering'||action==='remove-lettering'){
+  if(busy||!rawResult||!artifact)return;
+  const editField=$('#pi-correct-text');
+  const corrected=action==='remove-lettering'?'':String(editField?.value||'').trim().slice(0,120);
+  busy=true;
+  void (async()=>{
+   try{
+    const revised=corrected?await renderer.composeExactText(rawResult,corrected):rawResult;
+    const dimensions=await renderer.validate(revised);
+    result=revised;lastExactText=corrected;artifact={...artifact,exactText:corrected,letteringEdited:true,width:dimensions.width,height:dimensions.height};
+    $('.pi-result').src=result;if(editField)editField.value=corrected;
+    const original=$('#pi-exact-text');if(original)original.value=corrected;
+    const audit=$('.pi-audit');if(audit){audit.dataset.review='uncertain';audit.querySelector('.pi-audit-title').textContent='Lettering changed locally';audit.querySelector('.pi-audit-summary').textContent='The corrected caption uses real browser fonts. The base illustration was not regenerated or rechecked.';audit.querySelector('.pi-audit-issues').replaceChildren()}
+    notice(corrected?'Exact lettering saved into the preview. Save image to keep this correction. No new AI render was charged.':'Added lettering removed. The original illustration is preserved. No new AI render was charged.');
+    emit('build:lettering',artifact);
+   }catch(error){notice('Unable to update lettering: '+String(error?.message||error).slice(0,130))}
+   finally{busy=false}
+  })();
+  return;
+ }
  if(action==='build')void build();
  if(action==='retry-render'&&!busy)void build({retryRender:true});
  if(action==='remove-source'||action==='remove-design'){
