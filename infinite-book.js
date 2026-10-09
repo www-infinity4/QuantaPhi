@@ -167,6 +167,7 @@
   // Review real pixels once. Never disguise an unapproved image as a finished illustration.
   let artBusy=false,artRequested=null;
   const artRunning=new Set();
+  window.addEventListener('phi:book:image-bridge-ready',()=>{if(current&&window.PhiInfiniteBookDiscover?.eligibleNarrative?.(current))scheduleAutoIllustration(current)});
   function scheduleAutoIllustration(story){
     if(!story?.id||!window.PhiVisualRender||!window.PhiBookImageBridge)return;
     artRequested=story;
