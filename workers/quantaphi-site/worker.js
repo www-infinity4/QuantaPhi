@@ -237,7 +237,7 @@ export default {
   const readRequest = ['GET', 'HEAD'].includes(request.method);
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
   // briefly stale after a commit, which must never keep an old wallet/search script live.
-  if ((route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi') && textual && readRequest) {
+  if ((route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi') && textual && readRequest) {
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/main' + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
