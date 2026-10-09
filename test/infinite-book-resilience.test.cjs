@@ -260,3 +260,17 @@ test('explicit research spins are cloud-receipted with sourced articles and neve
  assert.match(fs.readFileSync(path.join(__dirname,'..','star-coin-cloud.js'),'utf8'),/compactResearch/);
  assert.match(fs.readFileSync(path.join(__dirname,'..','workers/quanta-phi-ledger/worker.js'),'utf8'),/spinCount\*10/);
 });
+
+test('Asteroid story moods follow the searched subject and exclude unrewritten films',()=>{
+ const source=fs.readFileSync(path.join(__dirname,'..','infinite-book-discovery.js'),'utf8');
+ const w={},context={window:w,localStorage:{getItem:()=>null},URL,URLSearchParams,
+  setTimeout,clearTimeout,AbortController,console,crypto:{getRandomValues:a=>{a[0]=1}}};
+ vm.createContext(context);vm.runInContext(source,context,{timeout:5000});
+ const engine=w.PhiInfiniteBookDiscover;
+ for(const [topic,mood] of [['Pink Floyd','Mystery'],['Grapes','Adventure'],['Hail','Suspense'],['Trains','Adventure'],['Plums','Mystery']])
+  assert.equal(engine.storyMood(topic),mood,topic);
+ const story={title:'A documented surprising discovery',sourceUrl:'https://example.edu/story',full:'A'.repeat(350)};
+ assert.equal(engine.eligibleNarrative({...story,discoveryMethod:'gpt-deep'}),true);
+ assert.equal(engine.eligibleNarrative({...story,discoveryMethod:'encyclopedia-backup'}),false);
+ assert.equal(engine.eligibleNarrative({...story,discoveryMethod:'gpt-deep',title:'Fictional film synopsis'}),false);
+});
