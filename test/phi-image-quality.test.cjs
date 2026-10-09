@@ -116,7 +116,7 @@ test('search-generated sourced story is displayed after the overview assimilatio
  assert.match(book,/function placeSearchStory\(/);
  assert.match(book,/result\.insertAdjacentElement\('afterend',root\)/);
  assert.match(book,/window\.addEventListener\('quantaphi:search-start'/);
- assert.match(html,/infinite-book\.js\?v=20261008-asteroid-story1/);
+ assert.match(html,/infinite-book\.js\?v=20261008-asteroid-story2/);
  // Layout must be deterministic before scripts run: no flash of the story above the overview.
  assert.ok(html.indexOf('id="result"') < html.indexOf('id="infiniteBook"'),'Overview must precede story card in the HTML');
  assert.ok(html.indexOf('id="infiniteBook"') < html.indexOf('id="phiImageBuilder"'),'Story and illustration come before the image builder');
