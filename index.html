@@ -168,6 +168,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 @media(max-width:380px){.buttonPerson .bodyShoe{min-height:63px;padding:7px 4px}.buttonPerson .bodyShoe .bodySlotTitle{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.buttonPerson .bodyShoe{transition:none}}
 </style>
+<link rel="stylesheet" href="/phi-oracle-story-orange.css?v=20261009-orange-inline1">
 </head>
 <body class="oracle-surface oracle-quanta"><main class="app">
 <div class="qtop"><button class="qmenuBtn" id="qmenuBtn" type="button" aria-label="Menu">☰</button><h1>Quantaφ</h1><button class="qnewSearch" id="qNewSearch" type="button" aria-label="Start a new search">＋ New Search</button><div class="qbalances" aria-live="polite" data-control-phi-wallet-host><button class="qtoken" id="qinfinity" type="button" title="Infinity website tokens">Infinity: —</button><button class="qtoken" id="qtoken" type="button" title="Spendable Quants">Quants: —</button><button class="qstar" id="controlPhiWalletButton" type="button" aria-label="Open unified wallet" aria-expanded="false"><span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong data-control-phi-wallet-balance>0</strong><small data-control-phi-wallet-progress>0/10</small></button></div><nav class="qmenu" id="qmenu" hidden><button id="qshare" type="button">Share +0.1 ★</button><button id="qmenuWallet" type="button">Unified Wallet ⭐</button><a href="/about.html">About QuantaPhi</a><a href="/learn/">Learn</a><a href="https://www-infinity4.github.io/Infinity-Phi/">Infinity Phi</a><a href="https://www-infinity4.github.io/Omni-Phi/">Omni Phi</a><a href="https://www-infinity4.github.io/News-Phi/">News Phi</a><a href="https://www-infinity4.github.io/Alien-Radio/">Infinity Radio</a><a href="#result">Overview</a><button id="qHistoryBtn" type="button">Build History</button><button class="mediaNav" id="qImagesBtn" type="button">Images</button><button class="mediaNav" id="qVideoBtn" type="button">Video</button><button class="mediaNav" id="qSoundBtn" type="button">Sound</button><a href="#media">Media</a></nav></div><p class="sub">Semantic field + 500-word overview + weighted media extensions</p><p style="margin:-10px 0 10px;font-size:14px"><a href="/about.html" style="color:#5f259f;text-underline-offset:3px">About QuantaPhi &amp; Quants</a> · <a href="/learn/" style="color:#5f259f">Learn</a></p>
@@ -195,9 +196,20 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 </div>
 
 <div class="bodyFeet" aria-label="Future sponsor shoes">
-<a class="bodyShoe left inPageSite bitcoinCrusherShoe" href="/bitcoin-crusher/" data-site-url="/bitcoin-crusher/" data-site-title="Bitcoin Crusher" aria-label="Open Bitcoin Crusher on the viewer-left foot inside QuantaPhi"><span><strong class="bodySlotTitle">Bitcoin<br>Crusher</strong><small class="bodySlotMeta">▶ Tap to open</small></span></a>
+<a class="bodyShoe left bitcoinCrusherShoe" id="bitcoinCrusherShoe" href="/bitcoin-crusher/" aria-controls="quantaCrusherInline" aria-expanded="false" aria-label="Expand the original Bitcoin Crusher slot machine on this QuantaPhi page"><span><strong class="bodySlotTitle">Bitcoin<br>Crusher</strong><small class="bodySlotMeta">▶ Play here</small></span></a>
 <a class="bodyShoe right sponsorSlot" href="#sponsorBoard" data-slot="right-foot" aria-label="Future right shoe sponsor spot"><span><strong class="bodySlotTitle">Your Site</strong><small class="bodySlotMeta">1000 ★ · 30d</small></span></a>
 </div>
+</section>
+<section class="crusher-inline" id="quantaCrusherInline" aria-labelledby="quantaCrusherTitle" hidden>
+ <header class="crusher-inline-head">
+  <div><h2 id="quantaCrusherTitle">₿ Bitcoin Crusher · Oracle Research</h2>
+   <p>Original five-reel machine → unlimited research words → sourced article → collected purple build cards.</p></div>
+  <div class="crusher-inline-controls">
+   <a href="/bitcoin-crusher/" target="_blank" rel="noopener noreferrer">Full Crusher ↗</a>
+   <button type="button" id="closeInlineCrusher">Close ✕</button>
+  </div>
+ </header>
+ <iframe class="crusher-inline-frame" id="quantaCrusherFrame" title="Bitcoin Crusher original reels, research word bank, sourced articles and purple build cards" loading="lazy" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </section>
 
 <section class="sponsorBoard" id="sponsorBoard" aria-labelledby="sponsorTitle">
@@ -254,6 +266,38 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
  },true);
  close?.addEventListener('click',closeSite);
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!viewer.hidden)closeSite()});
+})();
+</script>
+<script id="quanta-inline-crusher">
+(function(){
+ const foot=document.getElementById('bitcoinCrusherShoe');
+ const wrap=document.getElementById('quantaCrusherInline');
+ const frame=document.getElementById('quantaCrusherFrame');
+ const close=document.getElementById('closeInlineCrusher');
+ if(!foot||!wrap||!frame)return;
+ function show(event){
+  event?.preventDefault();
+  const opening=wrap.hidden;
+  wrap.hidden=!opening;
+  foot.setAttribute('aria-expanded',String(opening));
+  foot.querySelector('.bodySlotMeta').textContent=opening?'▼ Open below':'▶ Play here';
+  if(opening){
+   if(!frame.getAttribute('src'))frame.src='/bitcoin-crusher/?embed=quanta';
+   wrap.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+  }else{
+   foot.focus({preventScroll:true});
+  }
+ }
+ foot.addEventListener('click',show);
+ close?.addEventListener('click',()=>{wrap.hidden=true;foot.setAttribute('aria-expanded','false');foot.querySelector('.bodySlotMeta').textContent='▶ Play here';foot.focus({preventScroll:true})});
+ window.addEventListener('message',event=>{
+  if(event.origin!==location.origin||event.source!==frame.contentWindow)return;
+  if(event.data?.type!=='quantaphi:crusher-embed-height')return;
+  const height=Number(event.data.height);
+  if(Number.isFinite(height)&&height>=400&&height<=30000){
+   frame.style.height=Math.ceil(height+28)+'px';
+  }
+ });
 })();
 </script>
 <script>
@@ -1436,10 +1480,10 @@ window.addEventListener('infinity:wallet-state',e=>{const state=e.detail||{},n=N
 window.addEventListener('infinity-history-updated',()=>{paintTopBalances();void QuantaUnifiedTokenLedger.refreshCount()});
 window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infinity_unified_token_count_v3','infinity_unified_wallet_v1','phi:assetBalances:v1','infinityPhi:searchTokens:v1','omniPhi:history:v1','quantaPhiBuildHistoryV1'].includes(e.key||'')){paintTopBalances();void QuantaUnifiedTokenLedger.refreshCount()}});
 </script><!-- QuantaPhi publish stamp: unified-token-ledger-v1 -->
-<script src="media-repair.js?v=20261003-refine2"></script><script>window.PhiInfiniteBookFeedUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/feed';window.PhiInfiniteBookBanksUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/banks';</script><script defer src="/infinite-book-discovery.js?v=20261009-native-cloudflare1"></script>
+<script src="media-repair.js?v=20261003-refine2"></script><script>window.PhiInfiniteBookFeedUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/feed';window.PhiInfiniteBookBanksUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/banks';</script><script defer src="/infinite-book-discovery.js?v=20261009-orange-roll2"></script>
 <script defer src="/phi-scholastic-data.js?v=20261009-eight-subjects5"></script>
 <script defer src="/phi-assimilation.js?v=20261009-extraction-to-purple1"></script>
-<script defer src="/infinite-book.js?v=20261009-native-cloudflare1"></script>
+<script defer src="/infinite-book.js?v=20261009-orange-roll2"></script>
 <script defer src="/phi-visual-render.js?v=20261009-render-errors1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
 <script defer src="/phi-image-builder.js?v=20261009-no-app-cap1"></script>

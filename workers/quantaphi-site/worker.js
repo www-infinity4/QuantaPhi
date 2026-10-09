@@ -215,7 +215,7 @@ export default {
   const repairRef = ['20261009-billboard-grid5','20261009-eight-subjects5'].includes(incoming.searchParams.get('v'));
   const newQuantaRelease = route.repo === 'QuantaPhi' && (route.sourcePath === '/index.html' || ['20261009-bright-star6','20261009-octaves-routing6'].includes(incoming.searchParams.get('v')));
   const newOctavesRelease = route.repo === 'Oracle-Octaves' && (route.sourcePath === '/index.html' || ['20261009-origin-timing2','20261009-resilient2'].includes(incoming.searchParams.get('v')));
-  const sourceRef = newQuantaRelease ? '5bed04faacb527c6ef991829b30283db7429309b' : newOctavesRelease ? '60c9436507cc34cb674a7b9a766c335a399b8dec' : repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
+  const sourceRef = newQuantaRelease ? 'main' : newOctavesRelease ? '60c9436507cc34cb674a7b9a766c335a399b8dec' : repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
   const origin = new URL('https://www-infinity4.github.io' + repoPath);
   origin.search = incoming.search;
   const extension = route.sourcePath.split('.').pop().toLowerCase();
@@ -228,7 +228,7 @@ export default {
   const readRequest = ['GET', 'HEAD'].includes(request.method);
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
   // briefly stale after a commit, which must never keep an old wallet/search script live.
-  if (((route.repo === 'Alien-Radio' && route.sourcePath === '/oracle-track-feed.json') || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi') && textual && readRequest) {
+  if (((route.repo === 'Alien-Radio' && route.sourcePath === '/oracle-track-feed.json') || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi') && textual && readRequest) {
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/' + sourceRef + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
