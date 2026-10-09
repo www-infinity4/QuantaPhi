@@ -436,8 +436,10 @@ function renderFivePartOverview(main,q,evidence){
  const esc=s=>String(s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
  let sections=main&&typeof main==='object'?main:null;
  if(!sections){
-  const p=splitOverviewFive(main);
-  sections={intent:q,red:{overview:p[0]},yellow:[{label:'Evidence',value:p[1],source_indexes:[]}],blue:[{region:'Input',contribution:p[2]}],orange:[{aim:p[3],reason:''}],purple:[{relationship:p[4],use:''}]};
+  // A plain-text GPT overview is the ENTIRE reader article, not five chunks
+  // with four of them taken away to populate unrelated colored cards.
+  const structured=buildStructuredEvidenceFallback(q,evidence||[]);
+  sections={...structured,sourceFallback:false,intent:q,red:{overview:String(main||'').trim()}};
  }
  const chips=''; // Ranked buttons are generated from complete owned history.
  const yellow='<ul id="qYellowDataList" class="qDataLinks">'+sections.yellow.map(x=>{const term=String(x.value||'').trim();return term?'<li><a href="'+esc(extractionPermalink(term))+'" title="Search QuantaPhi for '+esc(term)+'">'+esc(term)+'</a></li>':''}).join('')+'</ul>';
@@ -1356,8 +1358,8 @@ window.addEventListener('infinity-history-updated',()=>{paintTopBalances();void 
 window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infinity_unified_token_count_v3','infinity_unified_wallet_v1','phi:assetBalances:v1','infinityPhi:searchTokens:v1','omniPhi:history:v1','quantaPhiBuildHistoryV1'].includes(e.key||'')){paintTopBalances();void QuantaUnifiedTokenLedger.refreshCount()}});
 </script><!-- QuantaPhi publish stamp: unified-token-ledger-v1 -->
 <script src="media-repair.js?v=20261003-refine2"></script><script>window.PhiInfiniteBookFeedUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/feed';window.PhiInfiniteBookBanksUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/banks';</script><script defer src="/infinite-book-discovery.js?v=20261008-research-retry5"></script>
-<script defer src="/phi-scholastic-data.js?v=20261009-oracle2"></script>
-<script defer src="/phi-assimilation.js?v=20261008-packages3"></script>
+<script defer src="/phi-scholastic-data.js?v=20261009-extract-assimilate1"></script>
+<script defer src="/phi-assimilation.js?v=20261009-extraction-to-purple1"></script>
 <script defer src="/infinite-book.js?v=20261008-quotastatus3"></script>
 <script defer src="/phi-visual-render.js?v=20261009-render-errors1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
