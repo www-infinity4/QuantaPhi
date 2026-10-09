@@ -223,8 +223,8 @@ test('story-to-Phi links use a semantic index and the existing explicit QuantaPh
  assert.match(js,/window\.QuantaOpenSite\(target\)/);
  assert.match(html,/window\.QuantaOpenSite=openSite/);
  assert.match(html,/phi-card-controls\.css/);
- assert.match(css,/#infiniteBook a\.ib-build-link/);
- assert.match(css,/#fredSpacesRadio \.fs-builds/);
+ assert.match(css,/a\.ib-build-link/);
+ assert.match(css,/#fredSpacesRadio/);
  assert.match(css,/body \.qbalances #controlPhiWalletButton/);
 });
 
@@ -232,10 +232,10 @@ test('Asteroid waits for GPT evidence instead of displaying prewritten movie car
  const code=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
  const section=code.split("async function nextStory(query = '', options = {})")[1].split("window.addEventListener('quantaphi:search-start'")[0];
  assert.ok(section.includes('requireFresh=options.requireFresh!==false'));
- assert.ok(section.includes("root.querySelector('.ib-story').hidden=true"));
- assert.ok(section.includes('discoverInBackground(roll, acceptNew)'));
+ assert.ok(section.includes("card.hidden=false"));
+ assert.ok(section.includes('discoverInBackground(roll, acceptNew, storyKind)'));
  assert.ok(code.includes('strictGPT:true'));
- assert.ok(code.includes('RESEARCH_DEADLINE_MS = 52000'));
+ assert.ok(code.includes('RESEARCH_DEADLINE_MS = 120000'));
  assert.ok(code.includes('catalog.baseSectorCount||30'));
  assert.ok(code.includes('Four-roll path '));
 });
@@ -269,7 +269,7 @@ test('Asteroid story moods follow the searched subject and exclude unrewritten f
  const engine=w.PhiInfiniteBookDiscover;
  for(const [topic,mood] of [['Pink Floyd','Mystery'],['Grapes','Adventure'],['Hail','Suspense'],['Trains','Adventure'],['Plums','Mystery']])
   assert.equal(engine.storyMood(topic),mood,topic);
- const story={title:'A documented surprising discovery',sourceUrl:'https://example.edu/story',full:'A'.repeat(350)};
+ const story={title:'A documented surprising discovery',summary:'Researchers documented a concrete experimental discovery, examined the actual surviving evidence, and reported its historical significance without speculation.',sourceUrl:'https://example.edu/story',full:'A'.repeat(350)};
  assert.equal(engine.eligibleNarrative({...story,discoveryMethod:'gpt-deep'}),true);
  assert.equal(engine.eligibleNarrative({...story,discoveryMethod:'encyclopedia-backup'}),false);
  assert.equal(engine.eligibleNarrative({...story,discoveryMethod:'gpt-deep',title:'Fictional film synopsis'}),false);

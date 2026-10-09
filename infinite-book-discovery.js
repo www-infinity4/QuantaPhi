@@ -305,13 +305,14 @@ function eligibleNarrative(story){
   /^https:\/\//.test(String(story.sourceUrl||'')) &&
   legitimateNarrative(story);
 }
-async function writeSecretStory(sources,plan,roll){
+async function writeSecretStory(sources,plan,roll,storyKind='reads-realms'){
  const mood=storyMood(roll.quantFocus||roll.indexWord||plan.focus,roll);
+ const product=storyKind==='asteroid'?'Asteroid':'Infinity Reads & Realms';
  const pageEvidence=await readPublicSourcePages(sources);
  const conciseSources=sources.slice(0,7).map(x=>({title:x.title,url:x.url,summary:String(x.summary||'').slice(0,195)}));
  const readablePages=pageEvidence.slice(0,2).map(x=>({url:x.url,title:x.title,excerpt:x.excerpt.slice(0,1100)}));
  const prompt=[
-  'You are the GPT author of the Asteroid nonfiction story, for any researched subject, including music, weather, railways, food, science or history. Write one ORIGINAL sourced narrative about a concrete evidence-supported incident, observation, discovery, process, demonstration or artifact. Never a general biography, film synopsis or fabricated movie.',
+  'You are the GPT author of the '+product+' nonfiction story. '+(storyKind==='asteroid'?'This Asteroid is ONLY for the actual current QuantaPhi search; anchor the story in that searched subject.':'This is the original Reads & Realms home-page opening story, written fresh for a page visit without requiring a user search; select the documented subject from the rolled word bank.')+' Write an ORIGINAL sourced narrative about a concrete evidence-supported incident, observation, discovery, process, demonstration or artifact. Never a general biography, film synopsis or fabricated movie.',
   'NARRATIVE MOOD: '+mood+'. Shape pacing, curiosity and tension around facts; mystery means an evidence-supported unknown, adventure means a documented journey/process, suspense means real stakes or uncertainty. Do not invent danger, dialogue, plot twists, witnesses, or cinematic scenes.',
   'Example of the required difference: "Nikola Tesla" is NOT a story; his 1898 radio-controlled boat demonstration IS the kind of precise event we want, but do not choose it unless the actual evidence here concerns that event.',
   'You are both evidence reviewer and storyteller: examine up to 20 independent search-result excerpts below, choose the MOST INTERESTING SPECIFIC incident actually corroborated by at least two distinct source websites, then narrate it as an engaging story, not an encyclopedia answer.',
@@ -327,7 +328,7 @@ async function writeSecretStory(sources,plan,roll){
   'Use retrieved page text for stronger factual grounding when available. Never claim an inaccessible full page was read. Return insufficient when sources cannot support the event.'
  ].join('\n');
  const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
-  body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',generationId:global.crypto?.randomUUID?.()||Date.now()+'-'+Math.random(),verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,combination:plan.combination,sourceCount:sources.length}}})},45000);
+  body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',generationId:global.crypto?.randomUUID?.()||Date.now()+'-'+Math.random(),verified_context:{storyKind,sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,combination:plan.combination,sourceCount:sources.length}}})},45000);
  if(data?.ok===false)return null;
  const obj=jsonAnswer(textAnswer(data));
  if(!obj||obj.insufficient||!legitimateNarrative(obj))return null;
@@ -340,7 +341,7 @@ async function writeSecretStory(sources,plan,roll){
   status:['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported',
   mood,supported:matched,fullEvidenceRead:pageEvidence.filter(x=>matched.some(y=>y.url===x.url)).length};
 }
-async function findSearch({roll,catalog,seen,focus=''}) {
+async function findSearch({roll,catalog,seen,focus='',storyKind='legacy'}) {
  const plan=sourcePlan(roll,catalog,focus);
  // GPT first devises event-level searches. Our sector+angle+class queries
  // remain independently usable if the GPT scout cannot answer.
@@ -352,7 +353,9 @@ async function findSearch({roll,catalog,seen,focus=''}) {
  };
  const canSearch=!(searchServiceFailedAt&&Date.now()-searchServiceFailedAt<90000);
  const direct=canSearch?plan.queries.slice(0,3).map(search):[];
- const scout=scoutQueries(plan,roll);
+ // Preserve daily writing tokens for the home opener; optional GPT scouting
+ // belongs to actual search-driven Asteroid research only.
+ const scout=storyKind==='reads-realms'?Promise.resolve([]):scoutQueries(plan,roll);
  const suggestions=await Promise.race([scout,new Promise(resolve=>setTimeout(()=>resolve([]),2200))]);
  const requested=[...direct];
  if(canSearch&&suggestions[0])requested.push(search(suggestions[0]));
@@ -376,7 +379,7 @@ async function findSearch({roll,catalog,seen,focus=''}) {
  // corroborated event; it cannot claim to have read full websites.
  if(!ranked.some(x=>relatedSources(x,ranked,plan.focus).length))return null;
  try{
-  const written=await writeSecretStory(ranked,plan,roll);
+  const written=await writeSecretStory(ranked,plan,roll,storyKind);
   if(!written)return null;
   const lead=written.supported[0];
   return {id:'live-'+hash(lead.url),title:written.title,summary:written.summary,
@@ -421,10 +424,11 @@ const WIKI_QUERIES={
  37:'audio technology recording invention history',38:'power station engineering history',
  39:'electronics historical invention unusual'
 };
-async function writeWikipediaStory(page,plan,roll){
+async function writeWikipediaStory(page,plan,roll,storyKind='reads-realms'){
  const mood=storyMood(roll.quantFocus||roll.indexWord||plan.focus,roll);
+ const product=storyKind==='asteroid'?'Asteroid':'Infinity Reads & Realms';
  const prompt=[
- 'Write one original Asteroid nonfiction story about a specific documented event, discovery, object, natural process or experiment evidenced by the provided source excerpt. Apply the '+mood+' narrative style without inventing details, threats or cinema-style fiction. For crops, natural phenomena, arts and ordinary subjects, a documented process or genuine unresolved historical question is a valid narrative, not a secret-headline requirement.',
+ 'Write one original '+product+' nonfiction story about a specific documented event, discovery, object, natural process or experiment evidenced by the provided source excerpt. '+(storyKind==='asteroid'?'The Asteroid must relate to the user-searched subject.':'This is a new Reads & Realms home-page opener chosen from the indexed word bank, NOT an Asteroid story.')+' Apply the '+mood+' narrative style without inventing details, threats or cinema-style fiction. For crops, natural phenomena, arts and ordinary subjects, a documented process or genuine unresolved historical question is a valid narrative, not a secret-headline requirement.',
  'No biography or encyclopedia-style overview. Never invent dialogue, quotes, dates, motives, scientific results or secret plots.',
  'Use ONLY the supplied excerpt, not other assumed facts. If the excerpt is too general, answer {"insufficient":true}.',
  'Return JSON ONLY with {"title":"specific nonfiction headline","summary":"40-85 words","full":"150-240 original words in at least 2 paragraphs","detail":"one directly supported surprising fact"}.',
@@ -434,7 +438,7 @@ async function writeWikipediaStory(page,plan,roll){
  try{
   const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
    body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',generationId:global.crypto?.randomUUID?.()||Date.now()+'-'+Math.random(),
-    verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},45000);
+    verified_context:{storyKind,sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},45000);
   if(data?.ok===false)return null;
   const out=jsonAnswer(textAnswer(data));
   if(!out||out.insufficient||!legitimateNarrative(out))return null;
@@ -447,7 +451,7 @@ async function writeWikipediaStory(page,plan,roll){
 function wikiExcerpt(s) {
  return String(s||'').replace(/\s+/g,' ').trim();
 }
-async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
+async function findWikipedia({roll,catalog,seen,focus='',onDeep,storyKind='legacy'}) {
  const plan=sourcePlan(roll,catalog,focus);
  const base=(plan.indexedWord ? (plan.indexedWord+' '+(plan.realm||'history')+' unusual event') : '') || WIKI_QUERIES[roll.sector] || (plan.name+' historical discovery');
  const seenWikipedia=[...seen].filter(id=>id.startsWith('wiki-')).length;
@@ -523,7 +527,8 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
   let successful=null;
   // Retry only when needed: avoid paying twice for a successful first story.
   for(const page of alternatives){
-   const written=await writeWikipediaStory(page,plan,roll).catch(()=>null);
+   if(global.PhiInfiniteBookResearchStatus==='quota')break;
+   const written=await writeWikipediaStory(page,plan,roll,storyKind).catch(()=>null);
    if(written){successful={page,written};break}
   }
   if(!successful)return null;
@@ -538,7 +543,7 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
  // Upgrade this same discovery with original prose only after the reader opts
  // to leave the card undisturbed.
  if(typeof onDeep==='function'){
-  void writeWikipediaStory(choice,plan,roll).then(written=>{
+  void writeWikipediaStory(choice,plan,roll,storyKind).then(written=>{
    if(!written)return;
    onDeep({...backup,...written,id:'wiki-gpt-'+choice.pageid,
     status:'original single-source research · Wikipedia / CC BY-SA',
