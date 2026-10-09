@@ -64,6 +64,10 @@
     const source = E('a', 'ib-source', 'View original source ↗');
     source.target = '_blank'; source.rel = 'noopener noreferrer';
     detail.append(source, E('div', 'ib-more-sources'));
+    const research = E('section','ib-research-branches');
+    research.append(E('strong','','Research deeper · guided by your search history'));
+    const branches=E('div','ib-research-chips');research.append(branches);
+    card.append(research);
     const actions = E('div', 'ib-actions');
     for (const [action, label] of [['star', '☆ Star'], ['share', '↗ Share'], ['collect', '+ Collect']]) {
       const button = E('button', 'ib-action', label);
@@ -138,6 +142,22 @@
     link.searchParams.set('from','infinite-book');
     return link.href;
   }
+  async function researchSuggestions(story, ticket){
+    const host=root.querySelector('.ib-research-chips');if(!host)return;
+    const options=[
+      {label:'Original evidence',query:story.title+' primary source original records document',branch:'Original evidence'},
+      {label:'Historical context',query:story.title+' historical context earlier discovery documented',branch:'Historical context'}
+    ];
+    try{
+      const corpus=await window.PhiAssimilation?.corpus?.();
+      const ranked=window.PhiAssimilation?.rank?.(corpus?.items||[],story.title+' '+lastSearchQuery,{yellow:[]})||[];
+      const earlier=ranked.find(x=>x.score>0&&x.query.toLowerCase()!==story.title.toLowerCase());
+      if(earlier)options.push({label:'Connect: '+earlier.query.slice(0,27),query:story.title+' '+earlier.query+' connected evidence documented',branch:'Previous search: '+earlier.query});
+    }catch(_){/* independent source research still works without history */}
+    if(ticket!==activeStoryTicket||root.querySelector('.ib-story')?.dataset.storyId!==story.id)return;
+    host.replaceChildren();
+    for(const option of options){const b=E('button','ib-research-branch',option.label);b.type='button';b.dataset.bookAction='research';b.dataset.researchQuery=option.query.slice(0,350);b.dataset.researchBranch=option.branch.slice(0,200);host.append(b)}
+  }
   function render(story, roll) {
     current = story; interactedWithStory = false; remember(story.id);
     root.querySelector('.ib-category').textContent = [
@@ -149,6 +169,7 @@
     root.querySelector('.ib-title').textContent = story.title;
     root.querySelector('.ib-summary').textContent = story.summary;
     root.querySelector('.ib-full').textContent = story.full;
+    void researchSuggestions(story,activeStoryTicket);
     const source = root.querySelector('.ib-source');
     source.href = story.sourceUrl;
     source.textContent = 'Original source: ' + (story.sourceTitle || new URL(story.sourceUrl).hostname) + ' ↗';
@@ -311,27 +332,38 @@
     })().catch(error => console.warn('Book queue refill unavailable', error))
       .finally(() => { refillRunning = false; });
   }
-  async function nextStory(query = '') {
+  async function nextStory(query = '', options = {}) {
     if (!catalog) return;
     const ticket = ++activeStoryTicket;
     const roll = rollDice(query);
+    const requireFresh=options.requireFresh===true;
+    const spinReference=options.rewardSpin?'research-spin:'+String(crypto?.randomUUID?.()||Date.now()+'-'+Math.random()):'';
+    let spinSubmitted=false;
+    const present=(story,roll)=>{
+      render(story,roll);
+      if(!spinReference||spinSubmitted||!storyValid(story))return;
+      const queued=window.QuantaStarCoinCloud?.record?.('spin',spinReference,{
+        ...story,parentQuery:lastSearchQuery,researchBranch:options.researchBranch||'Another secret'
+      });
+      if(queued){spinSubmitted=true;note('Sourced research attached to your 1 StarCoin spin receipt. Cloud wallet credit submitted for confirmation.')}else note('Research is shown, but the StarCoin credit could not be queued; check the wallet connection.');
+    };
     // Instant switch: no network, GPT, source search or feed fetch before render.
-    const ready = pickUnique(roll, seenIds());
+    const ready = requireFresh?null:pickUnique(roll, seenIds());
     // On a new search show the prepared story immediately, then replace only
     // if source-backed discovery verifies a more relevant event for that search.
     if (ready) {
-      render(ready, roll);
-      note(roll?.bracketKey ? 'Ready · '+roll.indexWord+' · '+roll.refinement+' · '+roll.storyDirection : 'Ready · source-backed story');
+      present(ready, roll);
+      if(!spinSubmitted)note(roll?.bracketKey ? 'Ready · '+roll.indexWord+' · '+roll.refinement+' · '+roll.storyDirection : 'Ready · source-backed story');
     } else {
-      note('All prepared stories have been read. Researching another documented discovery…');
+      note(requireFresh?'Researching this selected branch against live sources; the current article stays visible until a sourced result is ready…':'All prepared stories have been read. Researching another documented discovery…');
     }
     const acceptNew = story => {
       // Do not replace a visible story on an unsuspecting reader.
       if (ticket !== activeStoryTicket || interactedWithStory ||
         !storyValid(story) || seenIds().has(story.id) || current?.id === story.id) return;
       if (ready && (!query || current?.id !== ready.id)) return;
-      render(story, roll);
-      note(story.discoveryMethod === 'gpt-deep'
+      present(story, roll);
+      if(!spinSubmitted)note(story.discoveryMethod === 'gpt-deep'
         ? 'New sourced historical story · original GPT narrative'
         : 'New historical discovery · cited source');
     };
@@ -413,7 +445,14 @@
     if (!target || !root.contains(target)) return;
     const action = target.dataset.bookAction;
     if(action!=='next')interactedWithStory = true;
-    if (action === 'next') { event.preventDefault(); void nextStory(); }
+    if (action === 'next') { event.preventDefault(); void nextStory('',{rewardSpin:true,researchBranch:'Another secret'}); }
+    if(action==='research'&&current){
+      event.preventDefault();
+      const query=String(target.dataset.researchQuery||'').trim();
+      if(!query)return;
+      window.PhiAssimilation?.signal?.({kind:'story',action:'click',key:current.id,title:current.title,query:lastSearchQuery,terms:query});
+      void nextStory(query,{requireFresh:true,rewardSpin:true,researchBranch:target.dataset.researchBranch||'Research suggestion'});
+    }
     if (action === 'star') { event.preventDefault(); favorite(); }
     if (action === 'share') { event.preventDefault(); void share(); }
     if (action === 'collect') { event.preventDefault(); collect(); }
