@@ -105,3 +105,8 @@
 
 #fredSpacesRadio .fs-card.fs-media-star img.fs-star-avatar{object-fit:cover;display:block;background:#301e4f;padding:0;box-shadow:0 0 0 5px #fff4b399,0 0 25px #f9ca6899;filter:drop-shadow(0 0 7px #ffe398)}
 @media(max-width:440px){#fredSpacesRadio .fs-card.fs-media-star .fs-heading h2{padding-right:83px}}
+
+/* Recognizable Media Star brand on phones and embedded cards. */
+#fredSpacesRadio .fs-brand{display:block;font-size:clamp(25px,7vw,32px);font-weight:900;line-height:1.2;color:#55300b;margin:4px 0 10px;text-shadow:0 1px #fff9db,0 0 14px #ffef9a}
+#fredSpacesRadio .fs-index-count{font-size:12px;line-height:1.5;color:#55340f}
+#fredSpacesRadio .fs-media-star .fs-eyebrow{font-size:11px}

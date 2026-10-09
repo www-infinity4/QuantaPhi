@@ -1,0 +1,5522 @@
+{
+  "schemaVersion": 1,
+  "indexedAt": "2026-10-09",
+  "source": "https://www.twitterspacegpt.com/hosts/dotkrueger",
+  "coverage": "All 342 Fred-hosted ended Spaces exposed by this catalog snapshot. Replay availability is controlled by X and has not been individually verified.",
+  "hosts": [
+    {
+      "id": "dotkrueger",
+      "name": "Fred Krueger",
+      "handle": "@dotkrueger"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "fred-1nGnRYWkaPeGO",
+      "spaceId": "1nGnRYWkaPeGO",
+      "hostId": "dotkrueger",
+      "title": "Trump Always Chickens Out.",
+      "date": "Apr 07, 2026",
+      "duration": "02:01:56",
+      "tags": [
+        "trump"
+      ],
+      "description": "Fred Krueger’s Space: Trump Always Chickens Out.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1nGnRYWkaPeGO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 1
+    },
+    {
+      "id": "fred-0888",
+      "spaceId": "1kKzDMoedMoJv",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin and Trump’s “5D chess”",
+      "date": "Apr 07, 2026",
+      "duration": "03:22:21",
+      "tags": [
+        "bitcoin",
+        "trump"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin and Trump’s “5D chess”. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1kKzDMoedMoJv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 3
+    },
+    {
+      "id": "fred-1OGwblDRMOMKB",
+      "spaceId": "1OGwblDRMOMKB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Sunday: Bombing Iran into the \"Stone Age\"",
+      "date": "Apr 05, 2026",
+      "duration": "02:44:56",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Sunday: Bombing Iran into the \"Stone Age\". Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OGwblDRMOMKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1djGXWWXzXPKZ",
+      "spaceId": "1djGXWWXzXPKZ",
+      "hostId": "dotkrueger",
+      "title": "Saturday Bitcoin:  Epstein, Voter Fraud, more shoes to drop.",
+      "date": "Feb 14, 2026",
+      "duration": "01:32:54",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Saturday Bitcoin:  Epstein, Voter Fraud, more shoes to drop.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1djGXWWXzXPKZ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 3
+    },
+    {
+      "id": "fred-1vAxRQDrRRkJl",
+      "spaceId": "1vAxRQDrRRkJl",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Bulls only. Weasels, Bears and “Crypto” will be booted 👀",
+      "date": "Feb 11, 2026",
+      "duration": "02:03:06",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Bulls only. Weasels, Bears and “Crypto” will be booted 👀. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1vAxRQDrRRkJl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 3
+    },
+    {
+      "id": "fred-0555",
+      "spaceId": "1MYxNlwEqYyGw",
+      "hostId": "dotkrueger",
+      "title": "State of the markets. Bitcoin.",
+      "date": "Feb 09, 2026",
+      "duration": "04:20:17",
+      "tags": [
+        "markets",
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: State of the markets. Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1MYxNlwEqYyGw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 1
+    },
+    {
+      "id": "fred-1DXxyWDYzQWGM",
+      "spaceId": "1DXxyWDYzQWGM",
+      "hostId": "dotkrueger",
+      "title": "Waiting it out. Bang Bang",
+      "date": "Jan 20, 2026",
+      "duration": "03:07:53",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Waiting it out. Bang Bang. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1DXxyWDYzQWGM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 3
+    },
+    {
+      "id": "fred-0298",
+      "spaceId": "1DXxyWeoXpbGM",
+      "hostId": "dotkrueger",
+      "title": "New Year BTC",
+      "date": "Dec 31, 2025",
+      "duration": "00:56:17",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: New Year BTC. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1DXxyWeoXpbGM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 3
+    },
+    {
+      "id": "fred-0700",
+      "spaceId": "1OyKAjYPeXqGb",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin and Coffee",
+      "date": "Dec 29, 2025",
+      "duration": "01:09:32",
+      "tags": [
+        "bitcoin",
+        "coffee"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin and Coffee. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1OyKAjYPeXqGb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 3
+    },
+    {
+      "id": "fred-0147",
+      "spaceId": "1MnGnPEEvWYxO",
+      "hostId": "dotkrueger",
+      "title": "Silver is a bubble. Bitcoin is the real deal.",
+      "date": "Dec 27, 2025",
+      "duration": "00:16:21",
+      "tags": [
+        "silver",
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Silver is a bubble. Bitcoin is the real deal.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1MnGnPEEvWYxO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 1
+    },
+    {
+      "id": "fred-1ynKOMwzaMkJR",
+      "spaceId": "1ynKOMwzaMkJR",
+      "hostId": "dotkrueger",
+      "title": "Christmas Predictions: AI+Bitcoin.",
+      "date": "Dec 25, 2025",
+      "duration": "00:55:47",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Christmas Predictions: AI+Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1ynKOMwzaMkJR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 1
+    },
+    {
+      "id": "fred-1MnxnPmDVzmGO",
+      "spaceId": "1MnxnPmDVzmGO",
+      "hostId": "dotkrueger",
+      "title": "The banking system versus BTC",
+      "date": "Nov 22, 2025",
+      "duration": "03:04:42",
+      "tags": [
+        "banking"
+      ],
+      "description": "Fred Krueger’s Space: The banking system versus BTC. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1MnxnPmDVzmGO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 1
+    },
+    {
+      "id": "fred-1OdJrOyMPAPxX",
+      "spaceId": "1OdJrOyMPAPxX",
+      "hostId": "dotkrueger",
+      "title": "Sell Everything?",
+      "date": "Nov 14, 2025",
+      "duration": "02:05:22",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Sell Everything?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1OdJrOyMPAPxX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 1
+    },
+    {
+      "id": "fred-1YqGolEOYDAJv",
+      "spaceId": "1YqGolEOYDAJv",
+      "hostId": "dotkrueger",
+      "title": "Nothing Stops This Train, Really",
+      "date": "Nov 03, 2025",
+      "duration": "02:12:07",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Nothing Stops This Train, Really. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1YqGolEOYDAJv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 1
+    },
+    {
+      "id": "fred-1BRJjglbwqLxw",
+      "spaceId": "1BRJjglbwqLxw",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 124k. Return of the Jedi",
+      "date": "Oct 06, 2025",
+      "duration": "02:03:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 124k. Return of the Jedi. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1BRJjglbwqLxw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 1
+    },
+    {
+      "id": "fred-1OdJrOEEMWexX",
+      "spaceId": "1OdJrOEEMWexX",
+      "hostId": "dotkrueger",
+      "title": "Don’t stop Believing BTC",
+      "date": "Aug 11, 2025",
+      "duration": "00:24:30",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Don’t stop Believing BTC. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1OdJrOEEMWexX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 1
+    },
+    {
+      "id": "fred-1ypKdZgvXQdJW",
+      "spaceId": "1ypKdZgvXQdJW",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin for real men",
+      "date": "Jul 08, 2025",
+      "duration": "03:09:28",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin for real men. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypKdZgvXQdJW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1zqJVjXpqkYJB",
+      "spaceId": "1zqJVjXpqkYJB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 109k. The look of love",
+      "date": "Jul 06, 2025",
+      "duration": "05:47:42",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 109k. The look of love. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1zqJVjXpqkYJB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YpKkBNBdbmxj",
+      "spaceId": "1YpKkBNBdbmxj",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin July 4 open mic. Let freedom ring!",
+      "date": "Jul 04, 2025",
+      "duration": "01:37:37",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin July 4 open mic. Let freedom ring!. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YpKkBNBdbmxj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAKEgArEwgJL",
+      "spaceId": "1nAKEgArEwgJL",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin, Quantum, and stuff",
+      "date": "Jul 04, 2025",
+      "duration": "01:06:41",
+      "tags": [
+        "bitcoin",
+        "quantum"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin, Quantum, and stuff. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAKEgArEwgJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAKEgArzpbJL",
+      "spaceId": "1nAKEgArzpbJL",
+      "hostId": "dotkrueger",
+      "title": "Late Night Bitcoin",
+      "date": "Jul 04, 2025",
+      "duration": "01:03:13",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Late Night Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAKEgArzpbJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMJgkXXrpeJL",
+      "spaceId": "1jMJgkXXrpeJL",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Today Pre Show",
+      "date": "Jul 03, 2025",
+      "duration": "01:01:56",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Today Pre Show. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMJgkXXrpeJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1kvKpyeZBbPGE",
+      "spaceId": "1kvKpyeZBbPGE",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin timelines and analysis",
+      "date": "Jul 01, 2025",
+      "duration": "03:33:35",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin timelines and analysis. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1kvKpyeZBbPGE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdGYqnzallGX",
+      "spaceId": "1BdGYqnzallGX",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin After Dark",
+      "date": "Jun 30, 2025",
+      "duration": "03:48:26",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin After Dark. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdGYqnzallGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1djGXVojWqExZ",
+      "spaceId": "1djGXVojWqExZ",
+      "hostId": "dotkrueger",
+      "title": "Space reboot",
+      "date": "Jun 30, 2025",
+      "duration": "00:19:36",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Space reboot. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1djGXVojWqExZ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqxooRqorbxv",
+      "spaceId": "1YqxooRqorbxv",
+      "hostId": "dotkrueger",
+      "title": "Sunday afternoon bitcoin. Oye como va?",
+      "date": "Jun 30, 2025",
+      "duration": "00:08:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Sunday afternoon bitcoin. Oye como va?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqxooRqorbxv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BRKjmQkByQxw",
+      "spaceId": "1BRKjmQkByQxw",
+      "hostId": "dotkrueger",
+      "title": "Fly me to the moon. Bitcoin.",
+      "date": "Jun 25, 2025",
+      "duration": "02:15:59",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Fly me to the moon. Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BRKjmQkByQxw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypJdZQjOrgKW",
+      "spaceId": "1ypJdZQjOrgKW",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin by Night with Quantum Freddy",
+      "date": "Jun 25, 2025",
+      "duration": "01:11:24",
+      "tags": [
+        "bitcoin",
+        "quantum"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin by Night with Quantum Freddy. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypJdZQjOrgKW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBWNMeabKN",
+      "spaceId": "1LyxBWNMeabKN",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin is money for nothing",
+      "date": "Jun 23, 2025",
+      "duration": "02:29:56",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin is money for nothing. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBWNMeabKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmGPyQeqZgJN",
+      "spaceId": "1rmGPyQeqZgJN",
+      "hostId": "dotkrueger",
+      "title": "The system is rigged. Opt out.",
+      "date": "Jun 11, 2025",
+      "duration": "00:38:49",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The system is rigged. Opt out.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmGPyQeqZgJN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdxYqOPNbNxX",
+      "spaceId": "1BdxYqOPNbNxX",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin poised to blast into outer space",
+      "date": "Jun 10, 2025",
+      "duration": "01:05:50",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin poised to blast into outer space. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdxYqOPNbNxX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1RDGlzqOWWVxL",
+      "spaceId": "1RDGlzqOWWVxL",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 110k. Hold the line.",
+      "date": "Jun 10, 2025",
+      "duration": "01:19:52",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 110k. Hold the line.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1RDGlzqOWWVxL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYxNwqgkyLKw",
+      "spaceId": "1MYxNwqgkyLKw",
+      "hostId": "dotkrueger",
+      "title": "Saturday Bitcoin",
+      "date": "Jun 07, 2025",
+      "duration": "00:46:38",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Saturday Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYxNwqgkyLKw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lPJqMkpVrNJb",
+      "spaceId": "1lPJqMkpVrNJb",
+      "hostId": "dotkrueger",
+      "title": "Elon versus the money printer",
+      "date": "Jun 06, 2025",
+      "duration": "01:00:04",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Elon versus the money printer. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lPJqMkpVrNJb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ZkKzYNvYzLxv",
+      "spaceId": "1ZkKzYNvYzLxv",
+      "hostId": "dotkrueger",
+      "title": "The printer is coming. Macro discussion",
+      "date": "Jun 04, 2025",
+      "duration": "01:16:28",
+      "tags": [
+        "macro"
+      ],
+      "description": "Fred Krueger’s Space: The printer is coming. Macro discussion. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ZkKzYNvYzLxv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAKEgWgbWoJL",
+      "spaceId": "1nAKEgWgbWoJL",
+      "hostId": "dotkrueger",
+      "title": "Vegas insomniacs. Digital hotels and proof of reserves.",
+      "date": "May 28, 2025",
+      "duration": "01:28:36",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Vegas insomniacs. Digital hotels and proof of reserves.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAKEgWgbWoJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ZkKzYdNrDRxv",
+      "spaceId": "1ZkKzYdNrDRxv",
+      "hostId": "dotkrueger",
+      "title": "Small bitcoin discussion group. The revolution will not be televised.",
+      "date": "May 26, 2025",
+      "duration": "01:17:10",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Small bitcoin discussion group. The revolution will not be televised.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ZkKzYdNrDRxv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BRJjmLbpepGw",
+      "spaceId": "1BRJjmLbpepGw",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin at Night",
+      "date": "May 23, 2025",
+      "duration": "03:28:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin at Night. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BRJjmLbpepGw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OwxWXoLrAwKQ",
+      "spaceId": "1OwxWXoLrAwKQ",
+      "hostId": "dotkrueger",
+      "title": "Pre-bitcoin today space. Winds of change.",
+      "date": "May 21, 2025",
+      "duration": "00:30:58",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Pre-bitcoin today space. Winds of change.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OwxWXoLrAwKQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OyKALrNyVaxb",
+      "spaceId": "1OyKALrNyVaxb",
+      "hostId": "dotkrueger",
+      "title": "Restart: Bitcoin, the final countdown. AKA Big Print.",
+      "date": "May 20, 2025",
+      "duration": "01:27:15",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Restart: Bitcoin, the final countdown. AKA Big Print.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OyKALrNyVaxb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMJgkPqZjlJL",
+      "spaceId": "1jMJgkPqZjlJL",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin. The final countdown to complete domination",
+      "date": "May 20, 2025",
+      "duration": "00:38:17",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin. The final countdown to complete domination. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMJgkPqZjlJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDZRakZeJV",
+      "spaceId": "1YqKDZRakZeJV",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin is ripping. Might as well jump",
+      "date": "May 18, 2025",
+      "duration": "03:29:08",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin is ripping. Might as well jump. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDZRakZeJV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ynJOljrppZxR",
+      "spaceId": "1ynJOljrppZxR",
+      "hostId": "dotkrueger",
+      "title": "Ride the bitcoin horse",
+      "date": "May 13, 2025",
+      "duration": "01:40:38",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Ride the bitcoin horse. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ynJOljrppZxR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mnxegVAnNqGX",
+      "spaceId": "1mnxegVAnNqGX",
+      "hostId": "dotkrueger",
+      "title": "Give your mom a Bitcoin",
+      "date": "May 11, 2025",
+      "duration": "01:26:32",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Give your mom a Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mnxegVAnNqGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDZXpPQNJV",
+      "spaceId": "1YqKDZXpPQNJV",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin and macro 2",
+      "date": "May 10, 2025",
+      "duration": "00:27:53",
+      "tags": [
+        "bitcoin",
+        "macro"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin and macro 2. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDZXpPQNJV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mrGmPeraRMKy",
+      "spaceId": "1mrGmPeraRMKy",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Saturday chill and macro",
+      "date": "May 10, 2025",
+      "duration": "00:15:07",
+      "tags": [
+        "bitcoin",
+        "macro"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Saturday chill and macro. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mrGmPeraRMKy",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAxRDgMalNGl",
+      "spaceId": "1vAxRDgMalNGl",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin is over 100k. What’s next?",
+      "date": "May 09, 2025",
+      "duration": "03:08:06",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin is over 100k. What’s next?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAxRDgMalNGl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdJrDeQdnpKX",
+      "spaceId": "1OdJrDeQdnpKX",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin knocking on heavens door",
+      "date": "May 02, 2025",
+      "duration": "01:21:03",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin knocking on heavens door. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdJrDeQdnpKX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypKdZABByQJW",
+      "spaceId": "1ypKdZABByQJW",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 95k. Breathe. We’re going higher.",
+      "date": "Apr 29, 2025",
+      "duration": "01:17:45",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 95k. Breathe. We’re going higher.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypKdZABByQJW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdGYqNZEngGX",
+      "spaceId": "1BdGYqNZEngGX",
+      "hostId": "dotkrueger",
+      "title": "100k watch party",
+      "date": "Apr 25, 2025",
+      "duration": "01:19:47",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 100k watch party. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdGYqNZEngGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAxRDLEBWjGl",
+      "spaceId": "1vAxRDLEBWjGl",
+      "hostId": "dotkrueger",
+      "title": "Trump caved. No 4d chess. Bitcoin.",
+      "date": "Apr 23, 2025",
+      "duration": "00:06:58",
+      "tags": [
+        "trump",
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Trump caved. No 4d chess. Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAxRDLEBWjGl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1eaKbWXDXnvGX",
+      "spaceId": "1eaKbWXDXnvGX",
+      "hostId": "dotkrueger",
+      "title": "87K Breakout, Powell might be toast",
+      "date": "Apr 21, 2025",
+      "duration": "02:16:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 87K Breakout, Powell might be toast. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1eaKbWXDXnvGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAJEgDXnPAKL",
+      "spaceId": "1nAJEgDXnPAKL",
+      "hostId": "dotkrueger",
+      "title": "Easter Bitcoin. Let’s give 84k some respect",
+      "date": "Apr 20, 2025",
+      "duration": "00:33:20",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Easter Bitcoin. Let’s give 84k some respect. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAJEgDXnPAKL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1zqJVjzlzBpJB",
+      "spaceId": "1zqJVjzlzBpJB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Friday. Chilling at 84k.",
+      "date": "Apr 18, 2025",
+      "duration": "01:47:38",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Friday. Chilling at 84k.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1zqJVjzlzBpJB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOxwXppMpPKB",
+      "spaceId": "1vOxwXppMpPKB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin on the rocks. Shaken not stirred. With a splash of Solana",
+      "date": "Apr 16, 2025",
+      "duration": "00:58:57",
+      "tags": [
+        "bitcoin",
+        "solana"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin on the rocks. Shaken not stirred. With a splash of Solana. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOxwXppMpPKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1djGXVwrVEXxZ",
+      "spaceId": "1djGXVwrVEXxZ",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin after dark. Tariffs. China. Liquidity.",
+      "date": "Apr 14, 2025",
+      "duration": "01:56:29",
+      "tags": [
+        "bitcoin",
+        "tariffs"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin after dark. Tariffs. China. Liquidity.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1djGXVwrVEXxZ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDZVMkOYJV",
+      "spaceId": "1YqKDZVMkOYJV",
+      "hostId": "dotkrueger",
+      "title": "Trade wars. Bitcoin.",
+      "date": "Apr 09, 2025",
+      "duration": "01:53:21",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Trade wars. Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDZVMkOYJV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAKEgnLoZlJL",
+      "spaceId": "1nAKEgnLoZlJL",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin holding better than big tech. Tariff insanity",
+      "date": "Apr 07, 2025",
+      "duration": "01:08:07",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin holding better than big tech. Tariff insanity. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAKEgnLoZlJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1gqxvjDbkwjxB",
+      "spaceId": "1gqxvjDbkwjxB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin, Solana, Tao and more",
+      "date": "Mar 31, 2025",
+      "duration": "00:16:52",
+      "tags": [
+        "bitcoin",
+        "solana"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin, Solana, Tao and more. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1gqxvjDbkwjxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BRJjmobVrjGw",
+      "spaceId": "1BRJjmobVrjGw",
+      "hostId": "dotkrueger",
+      "title": "Requiem for what Satoshi stood for",
+      "date": "Mar 29, 2025",
+      "duration": "00:11:41",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Requiem for what Satoshi stood for. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BRJjmobVrjGw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ynJOlXYDgAxR",
+      "spaceId": "1ynJOlXYDgAxR",
+      "hostId": "dotkrueger",
+      "title": "Solana Bitcoin and AI. Party just getting started.",
+      "date": "Mar 26, 2025",
+      "duration": "01:48:16",
+      "tags": [
+        "solana",
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Solana Bitcoin and AI. Party just getting started.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ynJOlXYDgAxR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAxRDYMMArGl",
+      "spaceId": "1vAxRDYMMArGl",
+      "hostId": "dotkrueger",
+      "title": "Solana and Bitcoin",
+      "date": "Mar 26, 2025",
+      "duration": "01:02:49",
+      "tags": [
+        "solana",
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Solana and Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAxRDYMMArGl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lDxLzwAQbZGm",
+      "spaceId": "1lDxLzwAQbZGm",
+      "hostId": "dotkrueger",
+      "title": "Utility versus store of value. The case for both SOL and BTC",
+      "date": "Mar 26, 2025",
+      "duration": "01:03:00",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Utility versus store of value. The case for both SOL and BTC. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lDxLzwAQbZGm",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAKEgjQnRaJL",
+      "spaceId": "1nAKEgjQnRaJL",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin, rates, tariffs, and other topics.",
+      "date": "Mar 20, 2025",
+      "duration": "00:45:50",
+      "tags": [
+        "bitcoin",
+        "tariffs"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin, rates, tariffs, and other topics.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAKEgjQnRaJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lPKqMjqDDnKb",
+      "spaceId": "1lPKqMjqDDnKb",
+      "hostId": "dotkrueger",
+      "title": "The inevitability of debt and Bitcoin",
+      "date": "Mar 19, 2025",
+      "duration": "00:51:27",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The inevitability of debt and Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lPKqMjqDDnKb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YpKkBaDzLXxj",
+      "spaceId": "1YpKkBaDzLXxj",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin, STRF, time machines and tariffs",
+      "date": "Mar 18, 2025",
+      "duration": "01:40:31",
+      "tags": [
+        "bitcoin",
+        "tariffs"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin, STRF, time machines and tariffs. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YpKkBaDzLXxj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ZkJzYaLVraGv",
+      "spaceId": "1ZkJzYaLVraGv",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Sunday for the faithful.",
+      "date": "Mar 09, 2025",
+      "duration": "01:09:05",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Sunday for the faithful.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ZkJzYaLVraGv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNGaLDoXrqKj",
+      "spaceId": "1yNGaLDoXrqKj",
+      "hostId": "dotkrueger",
+      "title": "Winds of Change. Bitcoin, Solana, AI and the future",
+      "date": "Mar 05, 2025",
+      "duration": "01:46:00",
+      "tags": [
+        "bitcoin",
+        "solana"
+      ],
+      "description": "Fred Krueger’s Space: Winds of Change. Bitcoin, Solana, AI and the future. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNGaLDoXrqKj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAKEgXpBpgJL",
+      "spaceId": "1nAKEgXpBpgJL",
+      "hostId": "dotkrueger",
+      "title": "Strap in. Ignore the FUD. Bitcoin. Let’s go.",
+      "date": "Mar 04, 2025",
+      "duration": "00:59:28",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Strap in. Ignore the FUD. Bitcoin. Let’s go.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAKEgXpBpgJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMJgkjlgyOJL",
+      "spaceId": "1jMJgkjlgyOJL",
+      "hostId": "dotkrueger",
+      "title": "Don’t dream it’s over. Bitcoin",
+      "date": "Feb 28, 2025",
+      "duration": "00:08:09",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Don’t dream it’s over. Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMJgkjlgyOJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXxyqBwPvnxM",
+      "spaceId": "1DXxyqBwPvnxM",
+      "hostId": "dotkrueger",
+      "title": "In the trenches sub 90k",
+      "date": "Feb 27, 2025",
+      "duration": "00:18:41",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: In the trenches sub 90k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXxyqBwPvnxM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1djxXVbBORBGZ",
+      "spaceId": "1djxXVbBORBGZ",
+      "hostId": "dotkrueger",
+      "title": "Friday Night Cypto Horror with Freddy Krueger",
+      "date": "Feb 22, 2025",
+      "duration": "02:46:15",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Friday Night Cypto Horror with Freddy Krueger. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1djxXVbBORBGZ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OyKALwDXarxb",
+      "spaceId": "1OyKALwDXarxb",
+      "hostId": "dotkrueger",
+      "title": "Morning bitcoin. With a side of Solana.",
+      "date": "Feb 20, 2025",
+      "duration": "01:14:45",
+      "tags": [
+        "bitcoin",
+        "solana"
+      ],
+      "description": "Fred Krueger’s Space: Morning bitcoin. With a side of Solana.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OyKALwDXarxb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ZkJzYPNZVwGv",
+      "spaceId": "1ZkJzYPNZVwGv",
+      "hostId": "dotkrueger",
+      "title": "Fold App, Meme Coins and random Bitcoin stuff",
+      "date": "Feb 19, 2025",
+      "duration": "01:54:12",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Fold App, Meme Coins and random Bitcoin stuff. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ZkJzYPNZVwGv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1eaKbWdzXXqGX",
+      "spaceId": "1eaKbWdzXXqGX",
+      "hostId": "dotkrueger",
+      "title": "Abu Dhabi Bitcoin",
+      "date": "Feb 14, 2025",
+      "duration": "00:11:13",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Abu Dhabi Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1eaKbWdzXXqGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ynJOlLrXRwxR",
+      "spaceId": "1ynJOlLrXRwxR",
+      "hostId": "dotkrueger",
+      "title": "Space reboot",
+      "date": "Feb 12, 2025",
+      "duration": "00:39:49",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Space reboot. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ynJOlLrXRwxR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1dRKZYzkzqoxB",
+      "spaceId": "1dRKZYzkzqoxB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin and Solana on a Tuesday.",
+      "date": "Feb 12, 2025",
+      "duration": "01:01:28",
+      "tags": [
+        "bitcoin",
+        "solana"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin and Solana on a Tuesday.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1dRKZYzkzqoxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1gqxvjkzMRBxB",
+      "spaceId": "1gqxvjkzMRBxB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Today: Solana Wrapped Bitcoin Tomorrow",
+      "date": "Feb 05, 2025",
+      "duration": "01:02:44",
+      "tags": [
+        "bitcoin",
+        "solana"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Today: Solana Wrapped Bitcoin Tomorrow. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1gqxvjkzMRBxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1kvJpyrrZpXxE",
+      "spaceId": "1kvJpyrrZpXxE",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Roundtable: anything goes",
+      "date": "Feb 04, 2025",
+      "duration": "01:23:29",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Roundtable: anything goes. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1kvJpyrrZpXxE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1zqJVYdBkdDGB",
+      "spaceId": "1zqJVYdBkdDGB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Roundtable: BTC in a multi-coin world",
+      "date": "Feb 03, 2025",
+      "duration": "02:11:33",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Roundtable: BTC in a multi-coin world. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1zqJVYdBkdDGB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1gqxvNrAYnBxB",
+      "spaceId": "1gqxvNrAYnBxB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Roundtable: STRK 10% yield. Is it over for MSTR?",
+      "date": "Jan 31, 2025",
+      "duration": "01:29:38",
+      "tags": [
+        "bitcoin",
+        "mstr"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Roundtable: STRK 10% yield. Is it over for MSTR?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1gqxvNrAYnBxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOxwrdwdeNJB",
+      "spaceId": "1vOxwrdwdeNJB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Roundtable: STRK, potential ATH.",
+      "date": "Jan 30, 2025",
+      "duration": "01:43:40",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Roundtable: STRK, potential ATH.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOxwrdwdeNJB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mnxeAgaqRrxX",
+      "spaceId": "1mnxeAgaqRrxX",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Roundtable: Deep Seek and what it means for Bitcoin.",
+      "date": "Jan 28, 2025",
+      "duration": "01:02:32",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Roundtable: Deep Seek and what it means for Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mnxeAgaqRrxX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMJgBkEjVMGL",
+      "spaceId": "1jMJgBkEjVMGL",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Roundtable: Deep Seek, MSTR, STRK and Meme Coins",
+      "date": "Jan 27, 2025",
+      "duration": "01:38:48",
+      "tags": [
+        "bitcoin",
+        "mstr"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Roundtable: Deep Seek, MSTR, STRK and Meme Coins. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMJgBkEjVMGL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1zqKVYYkAnpxB",
+      "spaceId": "1zqKVYYkAnpxB",
+      "hostId": "dotkrueger",
+      "title": "A requiem to Trump coin. Rugged by his own wife",
+      "date": "Jan 20, 2025",
+      "duration": "01:42:25",
+      "tags": [
+        "trump"
+      ],
+      "description": "Fred Krueger’s Space: A requiem to Trump coin. Rugged by his own wife. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1zqKVYYkAnpxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBggYRgkKN",
+      "spaceId": "1LyxBggYRgkKN",
+      "hostId": "dotkrueger",
+      "title": "24 hours left. Reboot",
+      "date": "Jan 19, 2025",
+      "duration": "00:03:30",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 24 hours left. Reboot. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBggYRgkKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdKrXXMNVwJX",
+      "spaceId": "1OdKrXXMNVwJX",
+      "hostId": "dotkrueger",
+      "title": "24 hours left",
+      "date": "Jan 19, 2025",
+      "duration": "00:26:38",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 24 hours left. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdKrXXMNVwJX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YpKkllRXgAGj",
+      "spaceId": "1YpKkllRXgAGj",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin, Trump Coin and the crypto ball. Respect.",
+      "date": "Jan 18, 2025",
+      "duration": "03:43:31",
+      "tags": [
+        "bitcoin",
+        "trump"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin, Trump Coin and the crypto ball. Respect.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YpKkllRXgAGj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmxPooLEmQJN",
+      "spaceId": "1rmxPooLEmQJN",
+      "hostId": "dotkrueger",
+      "title": "The United States ShitCoin Reserve (USSR)",
+      "date": "Jan 18, 2025",
+      "duration": "00:36:58",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The United States ShitCoin Reserve (USSR). Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmxPooLEmQJN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYxNMoVXvwJw",
+      "spaceId": "1MYxNMoVXvwJw",
+      "hostId": "dotkrueger",
+      "title": "90 hours left",
+      "date": "Jan 16, 2025",
+      "duration": "01:42:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 90 hours left. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYxNMoVXvwJw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBgqgeNPKN",
+      "spaceId": "1LyxBgqgeNPKN",
+      "hostId": "dotkrueger",
+      "title": "9 days left",
+      "date": "Jan 11, 2025",
+      "duration": "00:22:50",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 9 days left. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBgqgeNPKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAKEprRVPoxL",
+      "spaceId": "1nAKEprRVPoxL",
+      "hostId": "dotkrueger",
+      "title": "Time to actually “build back better”",
+      "date": "Jan 09, 2025",
+      "duration": "00:38:18",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Time to actually “build back better”. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAKEprRVPoxL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdxYEwRybDxX",
+      "spaceId": "1BdxYEwRybDxX",
+      "hostId": "dotkrueger",
+      "title": "Friday night Bitcoin. Only the lonely",
+      "date": "Jan 03, 2025",
+      "duration": "01:32:12",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Friday night Bitcoin. Only the lonely. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdxYEwRybDxX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYxNMnNNmbJw",
+      "spaceId": "1MYxNMnNNmbJw",
+      "hostId": "dotkrueger",
+      "title": "2025 new year in Bitcoin. Praise the Lord.",
+      "date": "Jan 02, 2025",
+      "duration": "02:08:24",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 2025 new year in Bitcoin. Praise the Lord.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYxNMnNNmbJw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqxovpqkXzJv",
+      "spaceId": "1YqxovpqkXzJv",
+      "hostId": "dotkrueger",
+      "title": "I am on a boat!",
+      "date": "Dec 31, 2024",
+      "duration": "01:01:46",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: I am on a boat!. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqxovpqkXzJv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOxwrEdwzgJB",
+      "spaceId": "1vOxwrEdwzgJB",
+      "hostId": "dotkrueger",
+      "title": "New years gloom, doom and FUD.",
+      "date": "Dec 31, 2024",
+      "duration": "01:25:34",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: New years gloom, doom and FUD.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOxwrEdwzgJB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBgdZZXkKN",
+      "spaceId": "1LyxBgdZZXkKN",
+      "hostId": "dotkrueger",
+      "title": "Come on Bitcoin. Let’s get it on",
+      "date": "Dec 26, 2024",
+      "duration": "01:14:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Come on Bitcoin. Let’s get it on. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBgdZZXkKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yoKMyAdlZdKQ",
+      "spaceId": "1yoKMyAdlZdKQ",
+      "hostId": "dotkrueger",
+      "title": "100k again?",
+      "date": "Dec 26, 2024",
+      "duration": "01:00:22",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 100k again?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yoKMyAdlZdKQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lDGLlywNePGm",
+      "spaceId": "1lDGLlywNePGm",
+      "hostId": "dotkrueger",
+      "title": "Respect Bitcoin.",
+      "date": "Dec 20, 2024",
+      "duration": "01:15:31",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Respect Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lDGLlywNePGm",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqJDkEeMVVGV",
+      "spaceId": "1YqJDkEeMVVGV",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin for Christmas",
+      "date": "Dec 17, 2024",
+      "duration": "00:49:43",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin for Christmas. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqJDkEeMVVGV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1kvJpbXEwqQKE",
+      "spaceId": "1kvJpbXEwqQKE",
+      "hostId": "dotkrueger",
+      "title": "We beat Joe. 105k victory space",
+      "date": "Dec 17, 2024",
+      "duration": "01:13:26",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: We beat Joe. 105k victory space. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1kvJpbXEwqQKE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1kvJpbXnlzVKE",
+      "spaceId": "1kvJpbXnlzVKE",
+      "hostId": "dotkrueger",
+      "title": "New All Time High watch party",
+      "date": "Dec 15, 2024",
+      "duration": "03:03:54",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: New All Time High watch party. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1kvJpbXnlzVKE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNGagpWbOjxj",
+      "spaceId": "1yNGagpWbOjxj",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 100k. We will survive.",
+      "date": "Dec 12, 2024",
+      "duration": "00:43:47",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 100k. We will survive.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNGagpWbOjxj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mnGeAzwpqYGX",
+      "spaceId": "1mnGeAzwpqYGX",
+      "hostId": "dotkrueger",
+      "title": "Staying Alive at 99k after 60 minutes",
+      "date": "Dec 09, 2024",
+      "duration": "01:12:43",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Staying Alive at 99k after 60 minutes. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mnGeAzwpqYGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1RDxlyvyRgoKL",
+      "spaceId": "1RDxlyvyRgoKL",
+      "hostId": "dotkrueger",
+      "title": "Oops I did it again 100k",
+      "date": "Dec 06, 2024",
+      "duration": "00:04:22",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Oops I did it again 100k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1RDxlyvyRgoKL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDkByVMAxV",
+      "spaceId": "1YqKDkByVMAxV",
+      "hostId": "dotkrueger",
+      "title": "We are the champions",
+      "date": "Dec 05, 2024",
+      "duration": "01:16:03",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: We are the champions. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDkByVMAxV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYGNMdpwOXKw",
+      "spaceId": "1MYGNMdpwOXKw",
+      "hostId": "dotkrueger",
+      "title": "100K Bitcoin. Soon.",
+      "date": "Dec 04, 2024",
+      "duration": "01:28:15",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 100K Bitcoin. Soon.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYGNMdpwOXKw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMJgBOkmreGL",
+      "spaceId": "1jMJgBOkmreGL",
+      "hostId": "dotkrueger",
+      "title": "Daydreaming of 100k",
+      "date": "Nov 30, 2024",
+      "duration": "00:04:48",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Daydreaming of 100k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMJgBOkmreGL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdKrXRpQPeJX",
+      "spaceId": "1OdKrXRpQPeJX",
+      "hostId": "dotkrueger",
+      "title": "It’s a Bitcoin Thanksgiving!",
+      "date": "Nov 28, 2024",
+      "duration": "01:38:35",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: It’s a Bitcoin Thanksgiving!. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdKrXRpQPeJX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXxydarXNNJM",
+      "spaceId": "1DXxydarXNNJM",
+      "hostId": "dotkrueger",
+      "title": "British hodl claims today is the day. 100k? Or no cigar?",
+      "date": "Nov 27, 2024",
+      "duration": "01:30:25",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: British hodl claims today is the day. 100k? Or no cigar?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXxydarXNNJM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMJgBONMpMGL",
+      "spaceId": "1jMJgBONMpMGL",
+      "hostId": "dotkrueger",
+      "title": "Late night vigil. 100k",
+      "date": "Nov 25, 2024",
+      "duration": "00:45:17",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Late night vigil. 100k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMJgBONMpMGL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdKrXpOeWyJX",
+      "spaceId": "1OdKrXpOeWyJX",
+      "hostId": "dotkrueger",
+      "title": "MSTR,  Bitcoin and the 100k wall. More than a feeling",
+      "date": "Nov 24, 2024",
+      "duration": "04:19:44",
+      "tags": [
+        "mstr",
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: MSTR,  Bitcoin and the 100k wall. More than a feeling. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdKrXpOeWyJX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lPJqOkBQnZKb",
+      "spaceId": "1lPJqOkBQnZKb",
+      "hostId": "dotkrueger",
+      "title": "The 100k vigil continues",
+      "date": "Nov 24, 2024",
+      "duration": "03:13:32",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The 100k vigil continues. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lPJqOkBQnZKb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypKdpYwgdaKW",
+      "spaceId": "1ypKdpYwgdaKW",
+      "hostId": "dotkrueger",
+      "title": "The bitcoin 100k vigil continues",
+      "date": "Nov 23, 2024",
+      "duration": "04:06:09",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The bitcoin 100k vigil continues. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypKdpYwgdaKW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lDGLlXMZdqGm",
+      "spaceId": "1lDGLlXMZdqGm",
+      "hostId": "dotkrueger",
+      "title": "100k vigil continued",
+      "date": "Nov 22, 2024",
+      "duration": "02:33:46",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 100k vigil continued. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lDGLlXMZdqGm",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNxagXXByDGj",
+      "spaceId": "1yNxagXXByDGj",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 100k vigil",
+      "date": "Nov 22, 2024",
+      "duration": "01:06:53",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 100k vigil. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNxagXXByDGj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mrGmMnePoMGy",
+      "spaceId": "1mrGmMnePoMGy",
+      "hostId": "dotkrueger",
+      "title": "Continous Space to 100K continued",
+      "date": "Nov 21, 2024",
+      "duration": "01:42:47",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Continous Space to 100K continued. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mrGmMnePoMGy",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAxROEdDnyKl",
+      "spaceId": "1vAxROEdDnyKl",
+      "hostId": "dotkrueger",
+      "title": "Hosting a continous space to 100k",
+      "date": "Nov 21, 2024",
+      "duration": "04:14:54",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Hosting a continous space to 100k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAxROEdDnyKl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypKdpYLgmvKW",
+      "spaceId": "1ypKdpYLgmvKW",
+      "hostId": "dotkrueger",
+      "title": "Hosting a continuous space until 100k",
+      "date": "Nov 21, 2024",
+      "duration": "00:25:30",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Hosting a continuous space until 100k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypKdpYLgmvKW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YpJklLoqdmxj",
+      "spaceId": "1YpJklLoqdmxj",
+      "hostId": "dotkrueger",
+      "title": "97k watch party",
+      "date": "Nov 21, 2024",
+      "duration": "00:39:46",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 97k watch party. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YpJklLoqdmxj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BRJjweorddxw",
+      "spaceId": "1BRJjweorddxw",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Orange Pilling Stories with Brian De Mint",
+      "date": "Nov 20, 2024",
+      "duration": "02:01:20",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Orange Pilling Stories with Brian De Mint. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BRJjweorddxw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNGagXzzrlxj",
+      "spaceId": "1yNGagXzzrlxj",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: MSTR, MARA, IBIT Options",
+      "date": "Nov 19, 2024",
+      "duration": "01:56:47",
+      "tags": [
+        "bitcoin",
+        "mstr"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: MSTR, MARA, IBIT Options. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNGagXzzrlxj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mnxeAXvpbqxX",
+      "spaceId": "1mnxeAXvpbqxX",
+      "hostId": "dotkrueger",
+      "title": "Free for all bitcoin ramblings",
+      "date": "Nov 17, 2024",
+      "duration": "01:28:19",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Free for all bitcoin ramblings. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mnxeAXvpbqxX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MnGnDevNjmxO",
+      "spaceId": "1MnGnDevNjmxO",
+      "hostId": "dotkrueger",
+      "title": "A Fistfull of Satoshis. Saturday night free for all.",
+      "date": "Nov 17, 2024",
+      "duration": "01:12:17",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: A Fistfull of Satoshis. Saturday night free for all.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MnGnDevNjmxO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXxydXYbYRJM",
+      "spaceId": "1DXxydXYbYRJM",
+      "hostId": "dotkrueger",
+      "title": "100k. I heard it through the grapevine.",
+      "date": "Nov 16, 2024",
+      "duration": "02:44:15",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 100k. I heard it through the grapevine.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXxydXYbYRJM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOxwrNZLWbJB",
+      "spaceId": "1vOxwrNZLWbJB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Sunday praise the lord edition",
+      "date": "Nov 10, 2024",
+      "duration": "04:47:42",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Sunday praise the lord edition. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOxwrNZLWbJB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypJdpNlZkdJW",
+      "spaceId": "1ypJdpNlZkdJW",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Emergency 79k space",
+      "date": "Nov 10, 2024",
+      "duration": "01:39:02",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Emergency 79k space. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypJdpNlZkdJW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdKrXAeBnwJX",
+      "spaceId": "1OdKrXAeBnwJX",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Exceptional Saturday Space",
+      "date": "Nov 09, 2024",
+      "duration": "01:14:58",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Exceptional Saturday Space. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdKrXAeBnwJX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ynJODornBXxR",
+      "spaceId": "1ynJODornBXxR",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Week in review / Open mic",
+      "date": "Nov 08, 2024",
+      "duration": "02:03:02",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Week in review / Open mic. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ynJODornBXxR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYxNMjRygNJw",
+      "spaceId": "1MYxNMjRygNJw",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Plan C",
+      "date": "Nov 07, 2024",
+      "duration": "02:04:05",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Plan C. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYxNMjRygNJw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOGwrOdmYDKB",
+      "spaceId": "1vOGwrOdmYDKB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Election 2024 Consequences",
+      "date": "Nov 06, 2024",
+      "duration": "02:00:32",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Election 2024 Consequences. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOGwrOdmYDKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MnxnDmljlBGO",
+      "spaceId": "1MnxnDmljlBGO",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Decision Time",
+      "date": "Nov 05, 2024",
+      "duration": "02:00:50",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Decision Time. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MnxnDmljlBGO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDkRQnZLxV",
+      "spaceId": "1YqKDkRQnZLxV",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Election 2024",
+      "date": "Nov 04, 2024",
+      "duration": "02:02:10",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Election 2024. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDkRQnZLxV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXGydOkqrEKM",
+      "spaceId": "1DXGydOkqrEKM",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Uptober Recap, Bullvember starts now",
+      "date": "Nov 01, 2024",
+      "duration": "01:48:33",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Uptober Recap, Bullvember starts now. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXGydOkqrEKM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1gqxvNbjMaBxB",
+      "spaceId": "1gqxvNbjMaBxB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: MSTR 42 Billion  raise",
+      "date": "Oct 31, 2024",
+      "duration": "02:08:51",
+      "tags": [
+        "bitcoin",
+        "mstr"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: MSTR 42 Billion  raise. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1gqxvNbjMaBxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lPKqOyLLmNJb",
+      "spaceId": "1lPKqOyLLmNJb",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Caitlin Long",
+      "date": "Oct 30, 2024",
+      "duration": "01:57:58",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Caitlin Long. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lPKqOyLLmNJb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YpJklnLwzoxj",
+      "spaceId": "1YpJklnLwzoxj",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: New ATH Today?",
+      "date": "Oct 29, 2024",
+      "duration": "00:22:11",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: New ATH Today?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YpJklnLwzoxj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BRJjwWeqPBxw",
+      "spaceId": "1BRJjwWeqPBxw",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First: Winner Takes It All",
+      "date": "Oct 29, 2024",
+      "duration": "00:33:22",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First: Winner Takes It All. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BRJjwWeqPBxw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ZkKzRyOyreKv",
+      "spaceId": "1ZkKzRyOyreKv",
+      "hostId": "dotkrueger",
+      "title": "71k gang. Bitcoin First late night space, mstr, double or nothing bet",
+      "date": "Oct 29, 2024",
+      "duration": "01:23:35",
+      "tags": [
+        "bitcoin",
+        "mstr"
+      ],
+      "description": "Fred Krueger’s Space: 71k gang. Bitcoin First late night space, mstr, double or nothing bet. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ZkKzRyOyreKv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1RDxlyZZlgVKL",
+      "spaceId": "1RDxlyZZlgVKL",
+      "hostId": "dotkrueger",
+      "title": "70k gloat time. Short concession speech by Joe?",
+      "date": "Oct 28, 2024",
+      "duration": "00:30:42",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 70k gloat time. Short concession speech by Joe?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1RDxlyZZlgVKL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OwxWNAnobnJQ",
+      "spaceId": "1OwxWNAnobnJQ",
+      "hostId": "dotkrueger",
+      "title": "Talking about a Revolution. Bitcoin",
+      "date": "Oct 28, 2024",
+      "duration": "03:07:27",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Talking about a Revolution. Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OwxWNAnobnJQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAKEpBnRgvxL",
+      "spaceId": "1nAKEpBnRgvxL",
+      "hostId": "dotkrueger",
+      "title": "This election matters. Bitcoin.",
+      "date": "Oct 27, 2024",
+      "duration": "04:10:13",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: This election matters. Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAKEpBnRgvxL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YpKkldBrOjGj",
+      "spaceId": "1YpKkldBrOjGj",
+      "hostId": "dotkrueger",
+      "title": "Don’t think twice. Just buy Bitcoin.",
+      "date": "Oct 25, 2024",
+      "duration": "04:49:07",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Don’t think twice. Just buy Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YpKkldBrOjGj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypKdpXEyDLKW",
+      "spaceId": "1ypKdpXEyDLKW",
+      "hostId": "dotkrueger",
+      "title": "68k",
+      "date": "Oct 24, 2024",
+      "duration": "00:40:08",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 68k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypKdpXEyDLKW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXxydrArvEJM",
+      "spaceId": "1DXxydrArvEJM",
+      "hostId": "dotkrueger",
+      "title": "Vegas, Baby. Bitcoin First.",
+      "date": "Oct 24, 2024",
+      "duration": "03:51:56",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Vegas, Baby. Bitcoin First.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXxydrArvEJM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdGYEPolvZGX",
+      "spaceId": "1BdGYEPolvZGX",
+      "hostId": "dotkrueger",
+      "title": "The BRICs answer to the USD",
+      "date": "Oct 23, 2024",
+      "duration": "04:34:52",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The BRICs answer to the USD. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdGYEPolvZGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOGwrYggwbKB",
+      "spaceId": "1vOGwrYggwbKB",
+      "hostId": "dotkrueger",
+      "title": "6102s, Bitcoin and Civil War",
+      "date": "Oct 22, 2024",
+      "duration": "04:10:02",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 6102s, Bitcoin and Civil War. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOGwrYggwbKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAxROgROZzKl",
+      "spaceId": "1vAxROgROZzKl",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin, inflation and the end of world as we know it",
+      "date": "Oct 21, 2024",
+      "duration": "03:20:02",
+      "tags": [
+        "bitcoin",
+        "inflation"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin, inflation and the end of world as we know it. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAxROgROZzKl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mnGeAVyEbLGX",
+      "spaceId": "1mnGeAVyEbLGX",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 6102",
+      "date": "Oct 19, 2024",
+      "duration": "02:13:39",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 6102. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mnGeAVyEbLGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAxROgaLggKl",
+      "spaceId": "1vAxROgaLggKl",
+      "hostId": "dotkrueger",
+      "title": "Hooked on Bitcoin. Conference recap",
+      "date": "Oct 19, 2024",
+      "duration": "00:26:08",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Hooked on Bitcoin. Conference recap. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAxROgaLggKl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1eaJbaRVmzkGX",
+      "spaceId": "1eaJbaRVmzkGX",
+      "hostId": "dotkrueger",
+      "title": "Trump wins and BTC goes interstellar. Discuss:",
+      "date": "Oct 17, 2024",
+      "duration": "01:01:12",
+      "tags": [
+        "trump"
+      ],
+      "description": "Fred Krueger’s Space: Trump wins and BTC goes interstellar. Discuss:. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1eaJbaRVmzkGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mrGmMNeobMGy",
+      "spaceId": "1mrGmMNeobMGy",
+      "hostId": "dotkrueger",
+      "title": "Kamala’s odds plummet. My bitcoin gently weeps",
+      "date": "Oct 16, 2024",
+      "duration": "02:03:51",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Kamala’s odds plummet. My bitcoin gently weeps. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mrGmMNeobMGy",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMJgBZlkqPGL",
+      "spaceId": "1jMJgBZlkqPGL",
+      "hostId": "dotkrueger",
+      "title": "Ground control to major Tom. We’re headed higher",
+      "date": "Oct 15, 2024",
+      "duration": "01:58:01",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Ground control to major Tom. We’re headed higher. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMJgBZlkqPGL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypKdpLazEgKW",
+      "spaceId": "1ypKdpLazEgKW",
+      "hostId": "dotkrueger",
+      "title": "66k. Here comes the sun",
+      "date": "Oct 14, 2024",
+      "duration": "03:39:24",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 66k. Here comes the sun. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypKdpLazEgKW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1PlJQbkOPdvxE",
+      "spaceId": "1PlJQbkOPdvxE",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin church. All are welcome",
+      "date": "Oct 13, 2024",
+      "duration": "03:28:20",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin church. All are welcome. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1PlJQbkOPdvxE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBgOoZvyKN",
+      "spaceId": "1LyxBgOoZvyKN",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Reboot",
+      "date": "Oct 12, 2024",
+      "duration": "01:03:20",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Reboot. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBgOoZvyKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OyKAZODXeWGb",
+      "spaceId": "1OyKAZODXeWGb",
+      "hostId": "dotkrueger",
+      "title": "Space reboot",
+      "date": "Oct 12, 2024",
+      "duration": "00:16:22",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Space reboot. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OyKAZODXeWGb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BRJjwABQadxw",
+      "spaceId": "1BRJjwABQadxw",
+      "hostId": "dotkrueger",
+      "title": "Saturday Bitcoin. Have we lost the plot?",
+      "date": "Oct 12, 2024",
+      "duration": "01:13:49",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Saturday Bitcoin. Have we lost the plot?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BRJjwABQadxw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOGwreqwevKB",
+      "spaceId": "1vOGwreqwevKB",
+      "hostId": "dotkrueger",
+      "title": "Uptober is real. Don’t leave",
+      "date": "Oct 11, 2024",
+      "duration": "01:33:57",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Uptober is real. Don’t leave. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOGwreqwevKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOGwreVMndKB",
+      "spaceId": "1vOGwreVMndKB",
+      "hostId": "dotkrueger",
+      "title": "Fly Bitcoin. Fly.",
+      "date": "Oct 11, 2024",
+      "duration": "01:51:34",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Fly Bitcoin. Fly.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOGwreVMndKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1djxXrEAOAyGZ",
+      "spaceId": "1djxXrEAOAyGZ",
+      "hostId": "dotkrueger",
+      "title": "They will sell all the bitcoin. October bloodbath.",
+      "date": "Oct 10, 2024",
+      "duration": "04:27:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: They will sell all the bitcoin. October bloodbath.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1djxXrEAOAyGZ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mrxmMAeRonxy",
+      "spaceId": "1mrxmMAeRonxy",
+      "hostId": "dotkrueger",
+      "title": "60k blues. 26 days till the election",
+      "date": "Oct 10, 2024",
+      "duration": "01:38:06",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 60k blues. 26 days till the election. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mrxmMAeRonxy",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lDGLlmeWaYGm",
+      "spaceId": "1lDGLlmeWaYGm",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 62k. Genius Bar is Open.",
+      "date": "Oct 09, 2024",
+      "duration": "02:23:19",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 62k. Genius Bar is Open.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lDGLlmeWaYGm",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOxwreWElLJB",
+      "spaceId": "1vOxwreWElLJB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Genius Bar",
+      "date": "Oct 08, 2024",
+      "duration": "01:07:20",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Genius Bar. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOxwreWElLJB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ZkKzRngNWeKv",
+      "spaceId": "1ZkKzRngNWeKv",
+      "hostId": "dotkrueger",
+      "title": "Space reboot",
+      "date": "Oct 08, 2024",
+      "duration": "00:48:23",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Space reboot. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ZkKzRngNWeKv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYGNMOezVvKw",
+      "spaceId": "1MYGNMOezVvKw",
+      "hostId": "dotkrueger",
+      "title": "Ain’t no sunshine at 62k",
+      "date": "Oct 08, 2024",
+      "duration": "01:12:52",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Ain’t no sunshine at 62k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYGNMOezVvKw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ynKODknQOlGR",
+      "spaceId": "1ynKODknQOlGR",
+      "hostId": "dotkrueger",
+      "title": "Let us pray for a rally. Bitcoin Tuesday",
+      "date": "Oct 08, 2024",
+      "duration": "01:54:01",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Let us pray for a rally. Bitcoin Tuesday. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ynKODknQOlGR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXxydowrBPJM",
+      "spaceId": "1DXxydowrBPJM",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin first sessions and prep",
+      "date": "Oct 07, 2024",
+      "duration": "00:38:00",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin first sessions and prep. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXxydowrBPJM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqGovXjDdlKv",
+      "spaceId": "1YqGovXjDdlKv",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Saturday. “I ran”",
+      "date": "Oct 05, 2024",
+      "duration": "04:05:51",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Saturday. “I ran”. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqGovXjDdlKv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypKdpomamvKW",
+      "spaceId": "1ypKdpomamvKW",
+      "hostId": "dotkrueger",
+      "title": "I am. I said. Friday Bitcoin",
+      "date": "Oct 04, 2024",
+      "duration": "00:50:37",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: I am. I said. Friday Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypKdpomamvKW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypKdpoloaQKW",
+      "spaceId": "1ypKdpoloaQKW",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin come fly with me",
+      "date": "Oct 04, 2024",
+      "duration": "02:06:29",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin come fly with me. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypKdpoloaQKW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXGydLVWBkKM",
+      "spaceId": "1DXGydLVWBkKM",
+      "hostId": "dotkrueger",
+      "title": "61k. I am happy again",
+      "date": "Oct 04, 2024",
+      "duration": "00:20:26",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 61k. I am happy again. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXGydLVWBkKM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNxagnnwbjGj",
+      "spaceId": "1yNxagnnwbjGj",
+      "hostId": "dotkrueger",
+      "title": "60k bitcoin chill. Change is in the air",
+      "date": "Oct 03, 2024",
+      "duration": "01:16:43",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 60k bitcoin chill. Change is in the air. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNxagnnwbjGj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lPJqOqDYzbKb",
+      "spaceId": "1lPJqOqDYzbKb",
+      "hostId": "dotkrueger",
+      "title": "58k is dead and gone. Right?",
+      "date": "Oct 02, 2024",
+      "duration": "01:18:27",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 58k is dead and gone. Right?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lPJqOqDYzbKb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmxPoRdrvyJN",
+      "spaceId": "1rmxPoRdrvyJN",
+      "hostId": "dotkrueger",
+      "title": "60k. What me worry?",
+      "date": "Oct 01, 2024",
+      "duration": "00:40:48",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 60k. What me worry?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmxPoRdrvyJN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdGYENBdnXGX",
+      "spaceId": "1BdGYENBdnXGX",
+      "hostId": "dotkrueger",
+      "title": "Uptober blues",
+      "date": "Oct 01, 2024",
+      "duration": "00:56:06",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Uptober blues. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdGYENBdnXGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ZkJzRWMEEwJv",
+      "spaceId": "1ZkJzRWMEEwJv",
+      "hostId": "dotkrueger",
+      "title": "We’re all just betting on Bitcoin.",
+      "date": "Oct 01, 2024",
+      "duration": "00:01:30",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: We’re all just betting on Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ZkJzRWMEEwJv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAJEpbEWWyGL",
+      "spaceId": "1nAJEpbEWWyGL",
+      "hostId": "dotkrueger",
+      "title": "Hungry like a Bitcoin Wolf",
+      "date": "Sep 30, 2024",
+      "duration": "00:50:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Hungry like a Bitcoin Wolf. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAJEpbEWWyGL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lDGLlQlrEkGm",
+      "spaceId": "1lDGLlQlrEkGm",
+      "hostId": "dotkrueger",
+      "title": "We only need One. Bitcoin.",
+      "date": "Sep 30, 2024",
+      "duration": "02:00:41",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: We only need One. Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lDGLlQlrEkGm",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMKgByLNMexL",
+      "spaceId": "1jMKgByLNMexL",
+      "hostId": "dotkrueger",
+      "title": "Hey hey hey. Bitcoins versus altcoins",
+      "date": "Sep 30, 2024",
+      "duration": "02:24:06",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Hey hey hey. Bitcoins versus altcoins. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMKgByLNMexL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MnxnDyZrmYGO",
+      "spaceId": "1MnxnDyZrmYGO",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Saturday part 2",
+      "date": "Sep 28, 2024",
+      "duration": "00:44:24",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Saturday part 2. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MnxnDyZrmYGO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OyKAZbQqkaGb",
+      "spaceId": "1OyKAZbQqkaGb",
+      "hostId": "dotkrueger",
+      "title": "bitcoin Saturday",
+      "date": "Sep 28, 2024",
+      "duration": "00:33:54",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: bitcoin Saturday. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OyKAZbQqkaGb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lDxLlQRnvmxm",
+      "spaceId": "1lDxLlQRnvmxm",
+      "hostId": "dotkrueger",
+      "title": "Don’t stop believing in that all time high. Bitcoin only",
+      "date": "Sep 27, 2024",
+      "duration": "01:10:49",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Don’t stop believing in that all time high. Bitcoin only. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lDxLlQRnvmxm",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BRKjwkEzOeGw",
+      "spaceId": "1BRKjwkEzOeGw",
+      "hostId": "dotkrueger",
+      "title": "66k baby",
+      "date": "Sep 27, 2024",
+      "duration": "02:25:33",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 66k baby. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BRKjwkEzOeGw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmGPoDpzNEKN",
+      "spaceId": "1rmGPoDpzNEKN",
+      "hostId": "dotkrueger",
+      "title": "What the Swan?",
+      "date": "Sep 26, 2024",
+      "duration": "01:02:24",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: What the Swan?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmGPoDpzNEKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MnxnDyjWeyGO",
+      "spaceId": "1MnxnDyjWeyGO",
+      "hostId": "dotkrueger",
+      "title": "65k. Hip hop hooray. Liquiditay.",
+      "date": "Sep 26, 2024",
+      "duration": "02:06:01",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 65k. Hip hop hooray. Liquiditay.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MnxnDyjWeyGO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOGwrpzjyoKB",
+      "spaceId": "1vOGwrpzjyoKB",
+      "hostId": "dotkrueger",
+      "title": "Do you believe in “Uptober” ?",
+      "date": "Sep 25, 2024",
+      "duration": "02:11:17",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Do you believe in “Uptober” ?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOGwrpzjyoKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmGPoDllggKN",
+      "spaceId": "1rmGPoDllggKN",
+      "hostId": "dotkrueger",
+      "title": "65k dreaming.",
+      "date": "Sep 25, 2024",
+      "duration": "01:49:49",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 65k dreaming.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmGPoDllggKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yoJMylvnrNJQ",
+      "spaceId": "1yoJMylvnrNJQ",
+      "hostId": "dotkrueger",
+      "title": "64k gang.",
+      "date": "Sep 24, 2024",
+      "duration": "01:15:58",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 64k gang.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yoJMylvnrNJQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1PlKQbjOOeBGE",
+      "spaceId": "1PlKQbjOOeBGE",
+      "hostId": "dotkrueger",
+      "title": "Tuesday Bitcoin. Winds of Change",
+      "date": "Sep 24, 2024",
+      "duration": "00:50:00",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Tuesday Bitcoin. Winds of Change. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1PlKQbjOOeBGE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNGagRZDRrxj",
+      "spaceId": "1yNGagRZDRrxj",
+      "hostId": "dotkrueger",
+      "title": "Monday Bitcoin.",
+      "date": "Sep 23, 2024",
+      "duration": "01:40:00",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Monday Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNGagRZDRrxj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ynJODPwnEqxR",
+      "spaceId": "1ynJODPwnEqxR",
+      "hostId": "dotkrueger",
+      "title": "Sunday Bitcoin confessions",
+      "date": "Sep 22, 2024",
+      "duration": "01:41:28",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Sunday Bitcoin confessions. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ynJODPwnEqxR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNxagRmoplGj",
+      "spaceId": "1yNxagRmoplGj",
+      "hostId": "dotkrueger",
+      "title": "Ibit options. Fly me to the moon",
+      "date": "Sep 21, 2024",
+      "duration": "01:47:20",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Ibit options. Fly me to the moon. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNxagRmoplGj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNGagRAdDlxj",
+      "spaceId": "1yNGagRAdDlxj",
+      "hostId": "dotkrueger",
+      "title": "SEC Approves IBIT Options. This is the full monte.",
+      "date": "Sep 20, 2024",
+      "duration": "01:25:32",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: SEC Approves IBIT Options. This is the full monte.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNGagRAdDlxj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BRJjwjknnvxw",
+      "spaceId": "1BRJjwjknnvxw",
+      "hostId": "dotkrueger",
+      "title": "Fly me to the moon.",
+      "date": "Sep 20, 2024",
+      "duration": "00:58:20",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Fly me to the moon.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BRJjwjknnvxw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ynJODPXaglxR",
+      "spaceId": "1ynJODPXaglxR",
+      "hostId": "dotkrueger",
+      "title": "Are we headed higher?",
+      "date": "Sep 19, 2024",
+      "duration": "01:52:45",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Are we headed higher?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ynJODPXaglxR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdxYEXbmWvxX",
+      "spaceId": "1BdxYEXbmWvxX",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Ballers Only",
+      "date": "Sep 19, 2024",
+      "duration": "00:55:21",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Ballers Only. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdxYEXbmWvxX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDkVMwODxV",
+      "spaceId": "1YqKDkVMwODxV",
+      "hostId": "dotkrueger",
+      "title": "Fed cut. 50. How bizarre",
+      "date": "Sep 18, 2024",
+      "duration": "02:07:02",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Fed cut. 50. How bizarre. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDkVMwODxV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lPKqOzaYqeJb",
+      "spaceId": "1lPKqOzaYqeJb",
+      "hostId": "dotkrueger",
+      "title": "Here we go",
+      "date": "Sep 18, 2024",
+      "duration": "00:15:32",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Here we go. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lPKqOzaYqeJb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yoKMyLNjEoKQ",
+      "spaceId": "1yoKMyLNjEoKQ",
+      "hostId": "dotkrueger",
+      "title": "Fed decision time",
+      "date": "Sep 18, 2024",
+      "duration": "01:04:15",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Fed decision time. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yoKMyLNjEoKQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNGagwbOyRxj",
+      "spaceId": "1yNGagwbOyRxj",
+      "hostId": "dotkrueger",
+      "title": "world liberty financial is the new hex",
+      "date": "Sep 18, 2024",
+      "duration": "02:01:38",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: world liberty financial is the new hex. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNGagwbOyRxj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1PlJQbdbknZxE",
+      "spaceId": "1PlJQbdbknZxE",
+      "hostId": "dotkrueger",
+      "title": "61k. Such a perfect day",
+      "date": "Sep 17, 2024",
+      "duration": "02:09:19",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 61k. Such a perfect day. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1PlJQbdbknZxE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOGwrBkgMqKB",
+      "spaceId": "1vOGwrBkgMqKB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Monday part 2",
+      "date": "Sep 16, 2024",
+      "duration": "02:05:03",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Monday part 2. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOGwrBkgMqKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OyJAZngvAzxb",
+      "spaceId": "1OyJAZngvAzxb",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Monday",
+      "date": "Sep 16, 2024",
+      "duration": "00:11:24",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Monday. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OyJAZngvAzxb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdKrXmeDDzJX",
+      "spaceId": "1OdKrXmeDDzJX",
+      "hostId": "dotkrueger",
+      "title": "The Valuation of MSTR and BTC holding companies",
+      "date": "Sep 14, 2024",
+      "duration": "01:19:57",
+      "tags": [
+        "mstr"
+      ],
+      "description": "Fred Krueger’s Space: The Valuation of MSTR and BTC holding companies. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdKrXmeDDzJX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDklAkpVxV",
+      "spaceId": "1YqKDklAkpVxV",
+      "hostId": "dotkrueger",
+      "title": "Space reboot",
+      "date": "Sep 14, 2024",
+      "duration": "00:06:46",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Space reboot. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDklAkpVxV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1PlKQbdELNDGE",
+      "spaceId": "1PlKQbdELNDGE",
+      "hostId": "dotkrueger",
+      "title": "Knocking on heavens door. 60k. Does the election matter?",
+      "date": "Sep 14, 2024",
+      "duration": "00:43:31",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Knocking on heavens door. 60k. Does the election matter?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1PlKQbdELNDGE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXxydMMnoLJM",
+      "spaceId": "1DXxydMMnoLJM",
+      "hostId": "dotkrueger",
+      "title": "“Why gold is not already at 5k and BTC 100k is beyond me” - lavish",
+      "date": "Sep 13, 2024",
+      "duration": "01:59:47",
+      "tags": [
+        "gold"
+      ],
+      "description": "Fred Krueger’s Space: “Why gold is not already at 5k and BTC 100k is beyond me” - lavish. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXxydMMnoLJM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBgkzgzrKN",
+      "spaceId": "1LyxBgkzgzrKN",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Thursday oh oh.",
+      "date": "Sep 12, 2024",
+      "duration": "01:21:21",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Thursday oh oh.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBgkzgzrKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1zqJVYkZwvnGB",
+      "spaceId": "1zqJVYkZwvnGB",
+      "hostId": "dotkrueger",
+      "title": "I miss 70k",
+      "date": "Sep 12, 2024",
+      "duration": "03:53:06",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: I miss 70k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1zqJVYkZwvnGB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1zqKVYkmaAXxB",
+      "spaceId": "1zqKVYkmaAXxB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin back to pre debate levels",
+      "date": "Sep 11, 2024",
+      "duration": "02:40:54",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin back to pre debate levels. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1zqKVYkmaAXxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXxydMmpLkJM",
+      "spaceId": "1DXxydMmpLkJM",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin space reboot",
+      "date": "Sep 11, 2024",
+      "duration": "01:00:46",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin space reboot. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXxydMmpLkJM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OwxWNDeebkJQ",
+      "spaceId": "1OwxWNDeebkJQ",
+      "hostId": "dotkrueger",
+      "title": "Post debate blues",
+      "date": "Sep 11, 2024",
+      "duration": "02:09:34",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Post debate blues. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OwxWNDeebkJQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmxPoBomyQJN",
+      "spaceId": "1rmxPoBomyQJN",
+      "hostId": "dotkrueger",
+      "title": "Quick post debate space",
+      "date": "Sep 11, 2024",
+      "duration": "00:20:36",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Quick post debate space. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmxPoBomyQJN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXxydbjqAvJM",
+      "spaceId": "1DXxydbjqAvJM",
+      "hostId": "dotkrueger",
+      "title": "The debate. Bitcoiners gather round",
+      "date": "Sep 10, 2024",
+      "duration": "01:04:20",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The debate. Bitcoiners gather round. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXxydbjqAvJM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YpJklDgORMxj",
+      "spaceId": "1YpJklDgORMxj",
+      "hostId": "dotkrueger",
+      "title": "I’ll be straight with you. Bitcoin is going much higher",
+      "date": "Sep 10, 2024",
+      "duration": "01:05:30",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: I’ll be straight with you. Bitcoin is going much higher. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YpJklDgORMxj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OwGWNDkdowKQ",
+      "spaceId": "1OwGWNDkdowKQ",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin, bring it on home",
+      "date": "Sep 09, 2024",
+      "duration": "01:28:15",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin, bring it on home. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OwGWNDkdowKQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mrxmMLlVpLxy",
+      "spaceId": "1mrxmMLlVpLxy",
+      "hostId": "dotkrueger",
+      "title": "Short Friday bitcoin space.",
+      "date": "Sep 06, 2024",
+      "duration": "01:04:19",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Short Friday bitcoin space.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mrxmMLlVpLxy",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yoJMymOLVwJQ",
+      "spaceId": "1yoJMymOLVwJQ",
+      "hostId": "dotkrueger",
+      "title": "The thrill is gone. Friday bitcoin blues",
+      "date": "Sep 06, 2024",
+      "duration": "02:22:45",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The thrill is gone. Friday bitcoin blues. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yoJMymOLVwJQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OwGWNDRbyeKQ",
+      "spaceId": "1OwGWNDRbyeKQ",
+      "hostId": "dotkrueger",
+      "title": "Trump Cheats at Golf. But he's pro Bitcoin.",
+      "date": "Sep 05, 2024",
+      "duration": "02:03:43",
+      "tags": [
+        "trump",
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Trump Cheats at Golf. But he's pro Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OwGWNDRbyeKQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mnxeAeNAVNxX",
+      "spaceId": "1mnxeAeNAVNxX",
+      "hostId": "dotkrueger",
+      "title": "58k chain gang",
+      "date": "Sep 04, 2024",
+      "duration": "01:21:17",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 58k chain gang. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mnxeAeNAVNxX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYGNMQwWgPKw",
+      "spaceId": "1MYGNMQwWgPKw",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin is temporarily down. That’s life.",
+      "date": "Sep 04, 2024",
+      "duration": "01:06:07",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin is temporarily down. That’s life.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYGNMQwWgPKw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MnGnDOkrbExO",
+      "spaceId": "1MnGnDOkrbExO",
+      "hostId": "dotkrueger",
+      "title": "Back on the 58k chain gang",
+      "date": "Sep 03, 2024",
+      "duration": "02:00:48",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Back on the 58k chain gang. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MnGnDOkrbExO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAKEpoLqgaxL",
+      "spaceId": "1nAKEpoLqgaxL",
+      "hostId": "dotkrueger",
+      "title": "September Bitcoin. Lee turns cautious.",
+      "date": "Sep 03, 2024",
+      "duration": "01:27:00",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: September Bitcoin. Lee turns cautious.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAKEpoLqgaxL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OyKAZqyPALGb",
+      "spaceId": "1OyKAZqyPALGb",
+      "hostId": "dotkrueger",
+      "title": "Imagine a world without fiat",
+      "date": "Sep 02, 2024",
+      "duration": "00:02:42",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Imagine a world without fiat. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OyKAZqyPALGb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1kvKpbBjgkaJE",
+      "spaceId": "1kvKpbBjgkaJE",
+      "hostId": "dotkrueger",
+      "title": "Hyperbitcoinization. Science fiction or the future?",
+      "date": "Sep 01, 2024",
+      "duration": "01:51:02",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Hyperbitcoinization. Science fiction or the future?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1kvKpbBjgkaJE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1RDGlyMkbDRJL",
+      "spaceId": "1RDGlyMkbDRJL",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin going higher after election. I heard it through the grapevine",
+      "date": "Aug 31, 2024",
+      "duration": "00:37:14",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin going higher after election. I heard it through the grapevine. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1RDGlyMkbDRJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YpKklMaNMZGj",
+      "spaceId": "1YpKklMaNMZGj",
+      "hostId": "dotkrueger",
+      "title": "Oops I did it again. Another bitcoin space",
+      "date": "Aug 30, 2024",
+      "duration": "02:24:32",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Oops I did it again. Another bitcoin space. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YpKklMaNMZGj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1dRKZdypzYrJB",
+      "spaceId": "1dRKZdypzYrJB",
+      "hostId": "dotkrueger",
+      "title": "The mad, mad ideas of Kamala Harris",
+      "date": "Aug 30, 2024",
+      "duration": "01:20:10",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The mad, mad ideas of Kamala Harris. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1dRKZdypzYrJB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1zqKVYomlqVxB",
+      "spaceId": "1zqKVYomlqVxB",
+      "hostId": "dotkrueger",
+      "title": "I  tired of 59k. I want to fly away.",
+      "date": "Aug 29, 2024",
+      "duration": "02:23:29",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: I  tired of 59k. I want to fly away.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1zqKVYomlqVxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBgmnbMWKN",
+      "spaceId": "1LyxBgmnbMWKN",
+      "hostId": "dotkrueger",
+      "title": "The fed is evil. Operation mockingbird",
+      "date": "Aug 28, 2024",
+      "duration": "01:36:11",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The fed is evil. Operation mockingbird. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBgmnbMWKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lPKqOjprkmJb",
+      "spaceId": "1lPKqOjprkmJb",
+      "hostId": "dotkrueger",
+      "title": "Monday morning Bitcoin",
+      "date": "Aug 26, 2024",
+      "duration": "01:23:09",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Monday morning Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lPKqOjprkmJb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBgmYbapKN",
+      "spaceId": "1LyxBgmYbapKN",
+      "hostId": "dotkrueger",
+      "title": "Saturday morning bitcoin",
+      "date": "Aug 24, 2024",
+      "duration": "02:55:58",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Saturday morning bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBgmYbapKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1djxXrmbZleGZ",
+      "spaceId": "1djxXrmbZleGZ",
+      "hostId": "dotkrueger",
+      "title": "I love the smell of money printing in the morning. True love.",
+      "date": "Aug 23, 2024",
+      "duration": "02:11:43",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: I love the smell of money printing in the morning. True love.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1djxXrmbZleGZ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1eaKbaDWERqxX",
+      "spaceId": "1eaKbaDWERqxX",
+      "hostId": "dotkrueger",
+      "title": "Thursday classic bitcoin",
+      "date": "Aug 22, 2024",
+      "duration": "01:34:53",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Thursday classic bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1eaKbaDWERqxX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAxROjkaqVKl",
+      "spaceId": "1vAxROjkaqVKl",
+      "hostId": "dotkrueger",
+      "title": "Afternoon bitcoin.",
+      "date": "Aug 21, 2024",
+      "duration": "01:29:37",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Afternoon bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAxROjkaqVKl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OwxWNgLVjjJQ",
+      "spaceId": "1OwxWNgLVjjJQ",
+      "hostId": "dotkrueger",
+      "title": "Post power law recap.",
+      "date": "Aug 21, 2024",
+      "duration": "00:43:36",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Post power law recap.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OwxWNgLVjjJQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1dRKZdpZWRAJB",
+      "spaceId": "1dRKZdpZWRAJB",
+      "hostId": "dotkrueger",
+      "title": "2024 and beyond. A bitcoin odyessey",
+      "date": "Aug 21, 2024",
+      "duration": "01:03:58",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 2024 and beyond. A bitcoin odyessey. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1dRKZdpZWRAJB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ynJODnOPBWxR",
+      "spaceId": "1ynJODnOPBWxR",
+      "hostId": "dotkrueger",
+      "title": "Space reboot",
+      "date": "Aug 20, 2024",
+      "duration": "01:17:10",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Space reboot. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ynJODnOPBWxR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmxPojQjkmJN",
+      "spaceId": "1rmxPojQjkmJN",
+      "hostId": "dotkrueger",
+      "title": "Trump leads in Polymarket!",
+      "date": "Aug 20, 2024",
+      "duration": "00:37:08",
+      "tags": [
+        "trump"
+      ],
+      "description": "Fred Krueger’s Space: Trump leads in Polymarket!. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmxPojQjkmJN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1djGXrzdrydxZ",
+      "spaceId": "1djGXrzdrydxZ",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Tuesdays. King of the Road.",
+      "date": "Aug 20, 2024",
+      "duration": "01:54:18",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Tuesdays. King of the Road.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1djGXrzdrydxZ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OyKAZzALNgGb",
+      "spaceId": "1OyKAZzALNgGb",
+      "hostId": "dotkrueger",
+      "title": "Monday morning Bitcoin",
+      "date": "Aug 19, 2024",
+      "duration": "01:13:11",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Monday morning Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OyKAZzALNgGb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yoKMydogQeKQ",
+      "spaceId": "1yoKMydogQeKQ",
+      "hostId": "dotkrueger",
+      "title": "Post debate. Who won?",
+      "date": "Aug 09, 2024",
+      "duration": "00:36:22",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Post debate. Who won?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yoKMydogQeKQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypJdpzkkzrJW",
+      "spaceId": "1ypJdpzkkzrJW",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin allocation",
+      "date": "Aug 09, 2024",
+      "duration": "04:03:29",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin allocation. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypJdpzkkzrJW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMKgBjXXLAxL",
+      "spaceId": "1jMKgBjXXLAxL",
+      "hostId": "dotkrueger",
+      "title": "Pump it up",
+      "date": "Aug 08, 2024",
+      "duration": "01:53:43",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Pump it up. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMKgBjXXLAxL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1kvJpbYXNRPKE",
+      "spaceId": "1kvJpbYXNRPKE",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin is back",
+      "date": "Aug 08, 2024",
+      "duration": "01:33:46",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin is back. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1kvJpbYXNRPKE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBgpRQRPKN",
+      "spaceId": "1LyxBgpRQRPKN",
+      "hostId": "dotkrueger",
+      "title": "Space reboot",
+      "date": "Aug 07, 2024",
+      "duration": "01:32:01",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Space reboot. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBgpRQRPKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1gqxvNwYOQwxB",
+      "spaceId": "1gqxvNwYOQwxB",
+      "hostId": "dotkrueger",
+      "title": "Is this the end of the Trump Bitcoin dream?",
+      "date": "Aug 07, 2024",
+      "duration": "00:12:43",
+      "tags": [
+        "trump",
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Is this the end of the Trump Bitcoin dream?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1gqxvNwYOQwxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAxROPXPvVKl",
+      "spaceId": "1vAxROPXPvVKl",
+      "hostId": "dotkrueger",
+      "title": "Back on the horse again. Bitcoin.",
+      "date": "Aug 06, 2024",
+      "duration": "01:37:53",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Back on the horse again. Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAxROPXPvVKl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAxROPmdnRKl",
+      "spaceId": "1vAxROPmdnRKl",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin First",
+      "date": "Aug 05, 2024",
+      "duration": "00:43:46",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin First. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAxROPmdnRKl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAGROPYylVJl",
+      "spaceId": "1vAGROPYylVJl",
+      "hostId": "dotkrueger",
+      "title": "Inflation is transitory, we can print infinite money.",
+      "date": "Aug 05, 2024",
+      "duration": "02:43:03",
+      "tags": [
+        "inflation"
+      ],
+      "description": "Fred Krueger’s Space: Inflation is transitory, we can print infinite money.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAGROPYylVJl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdJrXlRBLeKX",
+      "spaceId": "1OdJrXlRBLeKX",
+      "hostId": "dotkrueger",
+      "title": "And just like that 65k. Ultimate victory for holders.",
+      "date": "Aug 01, 2024",
+      "duration": "01:18:12",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: And just like that 65k. Ultimate victory for holders.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdJrXlRBLeKX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMJgBVYgAOGL",
+      "spaceId": "1jMJgBVYgAOGL",
+      "hostId": "dotkrueger",
+      "title": "Tradfi and bitcoin lending.",
+      "date": "Jul 31, 2024",
+      "duration": "01:27:45",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Tradfi and bitcoin lending.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMJgBVYgAOGL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1dRJZdwqvlwKB",
+      "spaceId": "1dRJZdwqvlwKB",
+      "hostId": "dotkrueger",
+      "title": "Are you in the Bitcoin for the long haul club?",
+      "date": "Jul 30, 2024",
+      "duration": "01:22:57",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Are you in the Bitcoin for the long haul club?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1dRJZdwqvlwKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOGwrLzppbKB",
+      "spaceId": "1vOGwrLzppbKB",
+      "hostId": "dotkrueger",
+      "title": "Send in the clowns",
+      "date": "Jul 29, 2024",
+      "duration": "02:25:58",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Send in the clowns. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOGwrLzppbKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYxNMbMrjoJw",
+      "spaceId": "1MYxNMbMrjoJw",
+      "hostId": "dotkrueger",
+      "title": "Conference wrap up",
+      "date": "Jul 27, 2024",
+      "duration": "00:52:09",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Conference wrap up. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1MYxNMbMrjoJw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBgPNNjoKN",
+      "spaceId": "1LyxBgPNNjoKN",
+      "hostId": "dotkrueger",
+      "title": "Nashville 68k. Here we go again",
+      "date": "Jul 26, 2024",
+      "duration": "00:56:22",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Nashville 68k. Here we go again. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBgPNNjoKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1eaKbaEpPyjxX",
+      "spaceId": "1eaKbaEpPyjxX",
+      "hostId": "dotkrueger",
+      "title": "Is anybody at bitcoin Nashville yet?",
+      "date": "Jul 25, 2024",
+      "duration": "00:31:05",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Is anybody at bitcoin Nashville yet?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1eaKbaEpPyjxX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MnGnDBXrWkxO",
+      "spaceId": "1MnGnDBXrWkxO",
+      "hostId": "dotkrueger",
+      "title": "Why are we in Bitcoin? must be the money.",
+      "date": "Jul 24, 2024",
+      "duration": "01:01:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Why are we in Bitcoin? must be the money.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MnGnDBXrWkxO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OwxWNlynLmJQ",
+      "spaceId": "1OwxWNlynLmJQ",
+      "hostId": "dotkrueger",
+      "title": "ETH ETF",
+      "date": "Jul 23, 2024",
+      "duration": "00:20:49",
+      "tags": [
+        "etf"
+      ],
+      "description": "Fred Krueger’s Space: ETH ETF. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OwxWNlynLmJQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1kvJpbNBVOoKE",
+      "spaceId": "1kvJpbNBVOoKE",
+      "hostId": "dotkrueger",
+      "title": "ETH R.I.P.",
+      "date": "Jul 23, 2024",
+      "duration": "00:09:45",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: ETH R.I.P.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1kvJpbNBVOoKE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yoKMyNQbmeKQ",
+      "spaceId": "1yoKMyNQbmeKQ",
+      "hostId": "dotkrueger",
+      "title": "Your mission, mr Elon, is to buy the most bitcoin on planet earth",
+      "date": "Jul 22, 2024",
+      "duration": "01:33:46",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Your mission, mr Elon, is to buy the most bitcoin on planet earth. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yoKMyNQbmeKQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmGPoavEZnKN",
+      "spaceId": "1rmGPoavEZnKN",
+      "hostId": "dotkrueger",
+      "title": "President Kamala Harris?",
+      "date": "Jul 21, 2024",
+      "duration": "02:20:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: President Kamala Harris?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmGPoavEZnKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMJgBNpNbbGL",
+      "spaceId": "1jMJgBNpNbbGL",
+      "hostId": "dotkrueger",
+      "title": "What are we going to do with all the Bitcoin money ?",
+      "date": "Jul 20, 2024",
+      "duration": "01:03:48",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: What are we going to do with all the Bitcoin money ?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMJgBNpNbbGL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mnxeALvzLaxX",
+      "spaceId": "1mnxeALvzLaxX",
+      "hostId": "dotkrueger",
+      "title": "The bitcoin revolution will not be televised",
+      "date": "Jul 19, 2024",
+      "duration": "02:34:02",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: The bitcoin revolution will not be televised. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mnxeALvzLaxX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDkzbEkDxV",
+      "spaceId": "1YqKDkzbEkDxV",
+      "hostId": "dotkrueger",
+      "title": "Countdown to all time high. Open mike.",
+      "date": "Jul 17, 2024",
+      "duration": "00:37:33",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Countdown to all time high. Open mike.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDkzbEkDxV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1PlJQbRjeqqxE",
+      "spaceId": "1PlJQbRjeqqxE",
+      "hostId": "dotkrueger",
+      "title": "Energy, AI, Bitcoin and the next administration",
+      "date": "Jul 17, 2024",
+      "duration": "01:25:06",
+      "tags": [
+        "energy",
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Energy, AI, Bitcoin and the next administration. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1PlJQbRjeqqxE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ynKODLnOgqGR",
+      "spaceId": "1ynKODLnOgqGR",
+      "hostId": "dotkrueger",
+      "title": "Higher",
+      "date": "Jul 16, 2024",
+      "duration": "01:27:01",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Higher. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ynKODLnOgqGR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1dRJZdjbDDAKB",
+      "spaceId": "1dRJZdjbDDAKB",
+      "hostId": "dotkrueger",
+      "title": "Thanks germany for your bitcoin",
+      "date": "Jul 12, 2024",
+      "duration": "01:19:04",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Thanks germany for your bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1dRJZdjbDDAKB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OwxWNanZnAJQ",
+      "spaceId": "1OwxWNanZnAJQ",
+      "hostId": "dotkrueger",
+      "title": "More power law and other topics",
+      "date": "Jul 11, 2024",
+      "duration": "01:06:54",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: More power law and other topics. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OwxWNanZnAJQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDkPjNjvxV",
+      "spaceId": "1YqKDkPjNjvxV",
+      "hostId": "dotkrueger",
+      "title": "Thursday free for all btc chat. Open mike.",
+      "date": "Jul 11, 2024",
+      "duration": "00:48:04",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Thursday free for all btc chat. Open mike.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDkPjNjvxV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1RDGlyEpvbmJL",
+      "spaceId": "1RDGlyEpvbmJL",
+      "hostId": "dotkrueger",
+      "title": "Wednesday Bitcoin. Got something to say?",
+      "date": "Jul 10, 2024",
+      "duration": "01:04:54",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Wednesday Bitcoin. Got something to say?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1RDGlyEpvbmJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqJDgNYzXNGV",
+      "spaceId": "1YqJDgNYzXNGV",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin versus ETH. How they stack up. And tax on HODL????",
+      "date": "Jul 03, 2024",
+      "duration": "00:05:56",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin versus ETH. How they stack up. And tax on HODL????. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqJDgNYzXNGV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1dRKZEaojAvxB",
+      "spaceId": "1dRKZEaojAvxB",
+      "hostId": "dotkrueger",
+      "title": "Let’s put a HODL tax on Bitcoin!",
+      "date": "Jul 03, 2024",
+      "duration": "00:07:12",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Let’s put a HODL tax on Bitcoin!. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1dRKZEaojAvxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lDxLPzBMDYxm",
+      "spaceId": "1lDxLPzBMDYxm",
+      "hostId": "dotkrueger",
+      "title": "What can be. Unburdened by what has been.",
+      "date": "Jul 02, 2024",
+      "duration": "02:18:39",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: What can be. Unburdened by what has been.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lDxLPzBMDYxm",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MnxnMwNPeEJO",
+      "spaceId": "1MnxnMwNPeEJO",
+      "hostId": "dotkrueger",
+      "title": "Harris Newsom Ticket? Dell buying? Sunday roundup",
+      "date": "Jun 30, 2024",
+      "duration": "01:20:55",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Harris Newsom Ticket? Dell buying? Sunday roundup. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MnxnMwNPeEJO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1zqJVqjWZdmGB",
+      "spaceId": "1zqJVqjWZdmGB",
+      "hostId": "dotkrueger",
+      "title": "4 more months of this nonsense. Can you feel the wind of change?",
+      "date": "Jun 29, 2024",
+      "duration": "02:34:43",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 4 more months of this nonsense. Can you feel the wind of change?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1zqJVqjWZdmGB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdGYrqXMADJX",
+      "spaceId": "1BdGYrqXMADJX",
+      "hostId": "dotkrueger",
+      "title": "Friday bitcoin shoot the breeze",
+      "date": "Jun 28, 2024",
+      "duration": "02:38:27",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Friday bitcoin shoot the breeze. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdGYrqXMADJX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1jMJgmkDPbmKL",
+      "spaceId": "1jMJgmkDPbmKL",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin in a Trump 2.0 World",
+      "date": "Jun 28, 2024",
+      "duration": "01:14:35",
+      "tags": [
+        "bitcoin",
+        "trump"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin in a Trump 2.0 World. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1jMJgmkDPbmKL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdKrjDaVAVKX",
+      "spaceId": "1OdKrjDaVAVKX",
+      "hostId": "dotkrueger",
+      "title": "Debate prep. Trump versus CNN",
+      "date": "Jun 27, 2024",
+      "duration": "00:37:22",
+      "tags": [
+        "trump"
+      ],
+      "description": "Fred Krueger’s Space: Debate prep. Trump versus CNN. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdKrjDaVAVKX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDgkkLlkxV",
+      "spaceId": "1YqKDgkkLlkxV",
+      "hostId": "dotkrueger",
+      "title": "Don’t fear the Bitcoin reaper",
+      "date": "Jun 26, 2024",
+      "duration": "01:37:16",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Don’t fear the Bitcoin reaper. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDgkkLlkxV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1kvKpvbWXPPJE",
+      "spaceId": "1kvKpvbWXPPJE",
+      "hostId": "dotkrueger",
+      "title": "Should you be terrified of mount gox?",
+      "date": "Jun 24, 2024",
+      "duration": "01:15:00",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Should you be terrified of mount gox?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://twitter.com/i/spaces/1kvKpvbWXPPJE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAJEapPZaYJL",
+      "spaceId": "1nAJEapPZaYJL",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin and DELL. Can we break 73k just one more time? Please.",
+      "date": "Jun 21, 2024",
+      "duration": "01:28:21",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin and DELL. Can we break 73k just one more time? Please.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAJEapPZaYJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lDxLPPaeQbxm",
+      "spaceId": "1lDxLPPaeQbxm",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin is perfect money",
+      "date": "Jun 18, 2024",
+      "duration": "00:54:43",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin is perfect money. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lDxLPPaeQbxm",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1lPJqbBneqPxb",
+      "spaceId": "1lPJqbBneqPxb",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin - don’t dream it’s over",
+      "date": "Jun 12, 2024",
+      "duration": "01:14:38",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin - don’t dream it’s over. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1lPJqbBneqPxb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAGRvkrLBDGl",
+      "spaceId": "1vAGRvkrLBDGl",
+      "hostId": "dotkrueger",
+      "title": "GME is a distraction. ETH is a distraction. Laser Eyes on Bitcoin.",
+      "date": "Jun 07, 2024",
+      "duration": "00:46:27",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: GME is a distraction. ETH is a distraction. Laser Eyes on Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAGRvkrLBDGl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ZkJzjbVoAeJv",
+      "spaceId": "1ZkJzjbVoAeJv",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin. Rate Cuts. ETF Flows. Robinhood. Keep trucking.",
+      "date": "Jun 06, 2024",
+      "duration": "01:23:06",
+      "tags": [
+        "bitcoin",
+        "etf"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin. Rate Cuts. ETF Flows. Robinhood. Keep trucking.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ZkJzjbVoAeJv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYxNonOjnRKw",
+      "spaceId": "1MYxNonOjnRKw",
+      "hostId": "dotkrueger",
+      "title": "Higher",
+      "date": "Jun 05, 2024",
+      "duration": "02:23:06",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Higher. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYxNonOjnRKw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYxNonbmkvKw",
+      "spaceId": "1MYxNonbmkvKw",
+      "hostId": "dotkrueger",
+      "title": "Crowdfunding and democratizing investing",
+      "date": "Jun 03, 2024",
+      "duration": "01:38:16",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Crowdfunding and democratizing investing. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYxNonbmkvKw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdJrjVDPaVJX",
+      "spaceId": "1OdJrjVDPaVJX",
+      "hostId": "dotkrueger",
+      "title": "I am waiting for the rally. Do something, Bitcoin",
+      "date": "Jun 02, 2024",
+      "duration": "02:59:56",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: I am waiting for the rally. Do something, Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdJrjVDPaVJX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYGNompaVbJw",
+      "spaceId": "1MYGNompaVbJw",
+      "hostId": "dotkrueger",
+      "title": "AI and the future",
+      "date": "May 31, 2024",
+      "duration": "01:32:11",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: AI and the future. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYGNompaVbJw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1djGXNqEpOvxZ",
+      "spaceId": "1djGXNqEpOvxZ",
+      "hostId": "dotkrueger",
+      "title": "MMT deficits bitcoin",
+      "date": "May 30, 2024",
+      "duration": "01:46:00",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: MMT deficits bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1djGXNqEpOvxZ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqGoDynOqXJv",
+      "spaceId": "1YqGoDynOqXJv",
+      "hostId": "dotkrueger",
+      "title": "Ethereum’s broken narrative. BTC is better.",
+      "date": "May 29, 2024",
+      "duration": "01:00:53",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Ethereum’s broken narrative. BTC is better.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqGoDynOqXJv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1RDGllryDqgGL",
+      "spaceId": "1RDGllryDqgGL",
+      "hostId": "dotkrueger",
+      "title": "We’re back. Bitcoin.",
+      "date": "May 27, 2024",
+      "duration": "02:31:13",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: We’re back. Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1RDGllryDqgGL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdJrjWQdWVJX",
+      "spaceId": "1OdJrjWQdWVJX",
+      "hostId": "dotkrueger",
+      "title": "CBDCs  Bitcoin:   🎶”I will survive”",
+      "date": "May 23, 2024",
+      "duration": "02:16:42",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: CBDCs  Bitcoin:   🎶”I will survive”. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdJrjWQdWVJX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdGYrnzzkLJX",
+      "spaceId": "1BdGYrnzzkLJX",
+      "hostId": "dotkrueger",
+      "title": "ETH ETF. Ain’t talking about Love.",
+      "date": "May 22, 2024",
+      "duration": "01:03:37",
+      "tags": [
+        "etf"
+      ],
+      "description": "Fred Krueger’s Space: ETH ETF. Ain’t talking about Love.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdGYrnzzkLJX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MnGnMvqlOBKO",
+      "spaceId": "1MnGnMvqlOBKO",
+      "hostId": "dotkrueger",
+      "title": "Put the coffee down and buy Bitcoin.",
+      "date": "May 03, 2024",
+      "duration": "01:42:58",
+      "tags": [
+        "coffee",
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Put the coffee down and buy Bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MnGnMvqlOBKO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1dRKZEOgNyzxB",
+      "spaceId": "1dRKZEOgNyzxB",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin. Only the strong survive.",
+      "date": "Apr 30, 2024",
+      "duration": "01:45:05",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin. Only the strong survive.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1dRKZEOgNyzxB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmxPMQbNRdKN",
+      "spaceId": "1rmxPMQbNRdKN",
+      "hostId": "dotkrueger",
+      "title": "Monday bitcoin church.",
+      "date": "Apr 29, 2024",
+      "duration": "01:42:22",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Monday bitcoin church.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmxPMQbNRdKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNGaZXXvOVJj",
+      "spaceId": "1yNGaZXXvOVJj",
+      "hostId": "dotkrueger",
+      "title": "Why is crypto so tacky? Except btc",
+      "date": "Apr 24, 2024",
+      "duration": "01:04:07",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Why is crypto so tacky? Except btc. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNGaZXXvOVJj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBnQjLXOxN",
+      "spaceId": "1LyxBnQjLXOxN",
+      "hostId": "dotkrueger",
+      "title": "Tuesday morning bitcoin.",
+      "date": "Apr 23, 2024",
+      "duration": "00:50:25",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Tuesday morning bitcoin.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBnQjLXOxN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBnQbbBOxN",
+      "spaceId": "1LyxBnQbbBOxN",
+      "hostId": "dotkrueger",
+      "title": "67k. We are the champions of the world",
+      "date": "Apr 22, 2024",
+      "duration": "01:06:19",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 67k. We are the champions of the world. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBnQbbBOxN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1PlJQDrjlVZGE",
+      "spaceId": "1PlJQDrjlVZGE",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin Post Halving. Feeling the Wind of Change",
+      "date": "Apr 22, 2024",
+      "duration": "01:47:50",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin Post Halving. Feeling the Wind of Change. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1PlJQDrjlVZGE",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBnrXygnxN",
+      "spaceId": "1LyxBnrXygnxN",
+      "hostId": "dotkrueger",
+      "title": "After the halving. The good, the bad and the ugly",
+      "date": "Apr 20, 2024",
+      "duration": "02:29:22",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: After the halving. The good, the bad and the ugly. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBnrXygnxN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYGNopovmPJw",
+      "spaceId": "1MYGNopovmPJw",
+      "hostId": "dotkrueger",
+      "title": "One block left",
+      "date": "Apr 20, 2024",
+      "duration": "00:47:38",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: One block left. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYGNopovmPJw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypJdkmdYbjGW",
+      "spaceId": "1ypJdkmdYbjGW",
+      "hostId": "dotkrueger",
+      "title": "12 more blocks to go",
+      "date": "Apr 19, 2024",
+      "duration": "01:01:12",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 12 more blocks to go. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypJdkmdYbjGW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDgdnRrVxV",
+      "spaceId": "1YqKDgdnRrVxV",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 63k. You are so beautiful.",
+      "date": "Apr 18, 2024",
+      "duration": "01:29:14",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 63k. You are so beautiful.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDgdnRrVxV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqKDgdRnaNxV",
+      "spaceId": "1YqKDgdRnaNxV",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin — just dust in the wind?",
+      "date": "Apr 17, 2024",
+      "duration": "00:51:47",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin — just dust in the wind?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqKDgdRnaNxV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1djGXNdzLnExZ",
+      "spaceId": "1djGXNdzLnExZ",
+      "hostId": "dotkrueger",
+      "title": "Post War Bitcoin",
+      "date": "Apr 15, 2024",
+      "duration": "00:17:52",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Post War Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1djGXNdzLnExZ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXGyjEVoARJM",
+      "spaceId": "1DXGyjEVoARJM",
+      "hostId": "dotkrueger",
+      "title": "70k. Up Where We Belong.",
+      "date": "Apr 10, 2024",
+      "duration": "00:46:34",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 70k. Up Where We Belong.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXGyjEVoARJM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OwxWYMrZPVGQ",
+      "spaceId": "1OwxWYMrZPVGQ",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin: Money for Nothing",
+      "date": "Apr 10, 2024",
+      "duration": "03:01:40",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin: Money for Nothing. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OwxWYMrZPVGQ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1DXxyjEPmqLKM",
+      "spaceId": "1DXxyjEPmqLKM",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 72k. Ground control to major tom.",
+      "date": "Apr 08, 2024",
+      "duration": "02:57:28",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 72k. Ground control to major tom.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1DXxyjEPmqLKM",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1eaKbgmNbgrGX",
+      "spaceId": "1eaKbgmNbgrGX",
+      "hostId": "dotkrueger",
+      "title": "How fast hyperbitcoinization?",
+      "date": "Apr 06, 2024",
+      "duration": "02:09:46",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: How fast hyperbitcoinization?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1eaKbgmNbgrGX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ypJdkllWzdGW",
+      "spaceId": "1ypJdkllWzdGW",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 68k: Stairway to heaven?",
+      "date": "Apr 04, 2024",
+      "duration": "00:38:24",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 68k: Stairway to heaven?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ypJdkllWzdGW",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vOxwjORrWMJB",
+      "spaceId": "1vOxwjORrWMJB",
+      "hostId": "dotkrueger",
+      "title": "30 min bitcoin spaces. Ends 4.30 PST. Open mic",
+      "date": "Apr 03, 2024",
+      "duration": "01:06:27",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 30 min bitcoin spaces. Ends 4.30 PST. Open mic. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vOxwjORrWMJB",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNxaZmeQdvKj",
+      "spaceId": "1yNxaZmeQdvKj",
+      "hostId": "dotkrueger",
+      "title": "Heavens door part 2",
+      "date": "Apr 03, 2024",
+      "duration": "02:19:33",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Heavens door part 2. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNxaZmeQdvKj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYxNoXzeeVKw",
+      "spaceId": "1MYxNoXzeeVKw",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin: knocking on heavens door",
+      "date": "Apr 03, 2024",
+      "duration": "02:02:19",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin: knocking on heavens door. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYxNoXzeeVKw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqxoDkvzgkKv",
+      "spaceId": "1YqxoDkvzgkKv",
+      "hostId": "dotkrueger",
+      "title": "Easter Bitcoin. The resurrection is here. Heaven awaits",
+      "date": "Mar 31, 2024",
+      "duration": "00:55:03",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Easter Bitcoin. The resurrection is here. Heaven awaits. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqxoDkvzgkKv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MYxNoLbPRpKw",
+      "spaceId": "1MYxNoLbPRpKw",
+      "hostId": "dotkrueger",
+      "title": "Was Gareth Solloway Right?- is this the end?",
+      "date": "Mar 19, 2024",
+      "duration": "00:48:01",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Was Gareth Solloway Right?- is this the end?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MYxNoLbPRpKw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1nAJEaMEnRoJL",
+      "spaceId": "1nAJEaMEnRoJL",
+      "hostId": "dotkrueger",
+      "title": "Here I go again. Back to 70k",
+      "date": "Mar 18, 2024",
+      "duration": "01:06:41",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Here I go again. Back to 70k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1nAJEaMEnRoJL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1RDGllYnbgkGL",
+      "spaceId": "1RDGllYnbgkGL",
+      "hostId": "dotkrueger",
+      "title": "Power law or s2f",
+      "date": "Mar 16, 2024",
+      "duration": "00:06:13",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Power law or s2f. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1RDGllYnbgkGL",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ynKOyNkXAAJR",
+      "spaceId": "1ynKOyNkXAAJR",
+      "hostId": "dotkrueger",
+      "title": "Thorchain btc lend",
+      "date": "Mar 14, 2024",
+      "duration": "00:41:35",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Thorchain btc lend. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ynKOyNkXAAJR",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ZkJzjqoQVRJv",
+      "spaceId": "1ZkJzjqoQVRJv",
+      "hostId": "dotkrueger",
+      "title": "Btc 100k take 2",
+      "date": "Mar 13, 2024",
+      "duration": "00:30:03",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Btc 100k take 2. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ZkJzjqoQVRJv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmxPMrBdbYKN",
+      "spaceId": "1rmxPMrBdbYKN",
+      "hostId": "dotkrueger",
+      "title": "100k before the halving.",
+      "date": "Mar 13, 2024",
+      "duration": "00:37:33",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 100k before the halving.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmxPMrBdbYKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdGYrgBoWXJX",
+      "spaceId": "1BdGYrgBoWXJX",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin. Aint talking about love.",
+      "date": "Mar 12, 2024",
+      "duration": "01:38:48",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin. Aint talking about love.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdGYrgBoWXJX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YpJkwAkAPPJj",
+      "spaceId": "1YpJkwAkAPPJj",
+      "hostId": "dotkrueger",
+      "title": "BTC 72,000 Fly me to the moon",
+      "date": "Mar 11, 2024",
+      "duration": "03:00:17",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: BTC 72,000 Fly me to the moon. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YpJkwAkAPPJj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNxaZAYgArKj",
+      "spaceId": "1yNxaZAYgArKj",
+      "hostId": "dotkrueger",
+      "title": "Restart btc price talk",
+      "date": "Mar 10, 2024",
+      "duration": "01:39:49",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Restart btc price talk. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNxaZAYgArKj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmGPMbgklYJN",
+      "spaceId": "1rmGPMbgklYJN",
+      "hostId": "dotkrueger",
+      "title": "Quick space on next week. BTC Breakout or more of the same?",
+      "date": "Mar 10, 2024",
+      "duration": "00:16:53",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Quick space on next week. BTC Breakout or more of the same?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmGPMbgklYJN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BdxYrdbwqQKX",
+      "spaceId": "1BdxYrdbwqQKX",
+      "hostId": "dotkrueger",
+      "title": "S curves and bitcoin 1 million",
+      "date": "Mar 06, 2024",
+      "duration": "01:43:46",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: S curves and bitcoin 1 million. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BdxYrdbwqQKX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1mnGepjyeOvKX",
+      "spaceId": "1mnGepjyeOvKX",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin 68k. What do you expect in the next 45 days?",
+      "date": "Mar 04, 2024",
+      "duration": "01:51:13",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin 68k. What do you expect in the next 45 days?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1mnGepjyeOvKX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OyKAWvWZEeJb",
+      "spaceId": "1OyKAWvWZEeJb",
+      "hostId": "dotkrueger",
+      "title": "It’s all about NGU. Everything else is bullshit",
+      "date": "Mar 04, 2024",
+      "duration": "01:22:11",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: It’s all about NGU. Everything else is bullshit. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OyKAWvWZEeJb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1vAxRvLBqOyxl",
+      "spaceId": "1vAxRvLBqOyxl",
+      "hostId": "dotkrueger",
+      "title": "Power Laws and Btc 1 million in 2033",
+      "date": "Mar 02, 2024",
+      "duration": "02:09:22",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Power Laws and Btc 1 million in 2033. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1vAxRvLBqOyxl",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1BRJjPRygqaKw",
+      "spaceId": "1BRJjPRygqaKw",
+      "hostId": "dotkrueger",
+      "title": "2024 is the new 2017.",
+      "date": "Mar 01, 2024",
+      "duration": "01:05:48",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: 2024 is the new 2017.. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1BRJjPRygqaKw",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1LyxBnDVLELxN",
+      "spaceId": "1LyxBnDVLELxN",
+      "hostId": "dotkrueger",
+      "title": "Live Q+A with Arthur Van Pelt on the COPA trial",
+      "date": "Feb 27, 2024",
+      "duration": "01:13:11",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Live Q+A with Arthur Van Pelt on the COPA trial. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1LyxBnDVLELxN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1rmxPMRWVXYKN",
+      "spaceId": "1rmxPMRWVXYKN",
+      "hostId": "dotkrueger",
+      "title": "What’s the right portfolio allocation to Bitcoin?",
+      "date": "Feb 26, 2024",
+      "duration": "02:22:06",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: What’s the right portfolio allocation to Bitcoin?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1rmxPMRWVXYKN",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1yNxaZePdAqKj",
+      "spaceId": "1yNxaZePdAqKj",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin ETFs versus Stock Index Funds. What’s better ?",
+      "date": "Feb 19, 2024",
+      "duration": "01:19:04",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin ETFs versus Stock Index Funds. What’s better ?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1yNxaZePdAqKj",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1MnxnMyjWXOJO",
+      "spaceId": "1MnxnMyjWXOJO",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin ETF junkies anonymous",
+      "date": "Feb 17, 2024",
+      "duration": "01:57:21",
+      "tags": [
+        "bitcoin",
+        "etf"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin ETF junkies anonymous. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1MnxnMyjWXOJO",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1djGXNXjddexZ",
+      "spaceId": "1djGXNXjddexZ",
+      "hostId": "dotkrueger",
+      "title": "Bitcoin versus Real Estate",
+      "date": "Feb 15, 2024",
+      "duration": "01:30:05",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Bitcoin versus Real Estate. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1djGXNXjddexZ",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OyKAWbPdDOJb",
+      "spaceId": "1OyKAWbPdDOJb",
+      "hostId": "dotkrueger",
+      "title": "Dotkrueger and British hodl discuss bitcoin 51k",
+      "date": "Feb 14, 2024",
+      "duration": "01:51:26",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Dotkrueger and British hodl discuss bitcoin 51k. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OyKAWbPdDOJb",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1ZkJzjvXZvDJv",
+      "spaceId": "1ZkJzjvXZvDJv",
+      "hostId": "dotkrueger",
+      "title": "Wall Street loves Bitcoin",
+      "date": "Feb 12, 2024",
+      "duration": "02:05:04",
+      "tags": [
+        "bitcoin"
+      ],
+      "description": "Fred Krueger’s Space: Wall Street loves Bitcoin. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1ZkJzjvXZvDJv",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1YqJDgOWzXOGV",
+      "spaceId": "1YqJDgOWzXOGV",
+      "hostId": "dotkrueger",
+      "title": "Ignore the hack, let’s talk about tomorrow ETF",
+      "date": "Jan 09, 2024",
+      "duration": "00:58:29",
+      "tags": [
+        "etf"
+      ],
+      "description": "Fred Krueger’s Space: Ignore the hack, let’s talk about tomorrow ETF. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1YqJDgOWzXOGV",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    },
+    {
+      "id": "fred-1OdKrjMrggyKX",
+      "spaceId": "1OdKrjMrggyKX",
+      "hostId": "dotkrueger",
+      "title": "The Jan 10 ETF round. Bullish or mega bullish?",
+      "date": "Dec 28, 2023",
+      "duration": "00:13:11",
+      "tags": [
+        "etf"
+      ],
+      "description": "Fred Krueger’s Space: The Jan 10 ETF round. Bullish or mega bullish?. Listed in the public host catalog; open the original X recording to listen.",
+      "source": "https://x.com/i/spaces/1OdKrjMrggyKX",
+      "audioUrl": null,
+      "availability": "listed",
+      "catalogStatus": 0
+    }
+  ]
+}

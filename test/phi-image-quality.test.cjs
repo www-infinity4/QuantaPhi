@@ -271,7 +271,7 @@ test('yellow Media Star has visual avatar, original replay, and reusable embedde
  assert.match(js,/share\),button\("Collect \+0\.1/);
  assert.match(css,/\.fs-big-star/);
  assert.match(css,/\.fs-star-avatar/);
- assert.match(html,/fred-spaces-radio\.css\?v=20261008-media-star2/);
+ assert.match(html,/fred-spaces-radio\.css\?v=20261009-full-fred1/);
 });
 
 test('Asteroid fallback uses the strongest search-relevant source for actual GPT writing',()=>{

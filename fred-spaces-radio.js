@@ -15,6 +15,7 @@
     {id:"fred-0555",slot:555,title:"State of the markets. Bitcoin.",date:"Feb 9, 2026",duration:"4:20:17",tags:["markets","bitcoin","macro"],description:"An extended market-focused Fred Krueger Space, according to the public episode listing. Discussion details require the recording or transcript.",source:"https://twitter.com/i/spaces/1MYxNlwEqYyGw",audioUrl:null},
     {id:"fred-0888",slot:888,title:"Bitcoin and Trump’s “5D chess”",date:"Apr 7, 2026",duration:"3:22:21",tags:["bitcoin","politics","markets"],description:"A public Fred Krueger Space listed with a Bitcoin and Trump political title. The recording has not been independently reviewed.",source:ARCHIVE,audioUrl:null}
   ];
+  let catalogLoading=true;
   const byId = new Map(episodes.map(e=>[e.id,e]));
   const seenKey="phi:fred-spaces-seen:v1";
   const starsKey="phi:fred-spaces-stars:v1";
@@ -49,8 +50,10 @@
   function isReplayLink(episode){try{const u=new URL(episode.source);return ["x.com","twitter.com","www.x.com","www.twitter.com"].includes(u.hostname)&&/^\/i\/spaces\/[A-Za-z0-9]+\/?$/.test(u.pathname)}catch{return false}}
   function pickNext(){
     const old=new Set(load(seenKey,[]));old.add(active.id);
-    const candidates=episodes.filter(e=>e.id!==FIRST&&isReplayLink(e)&&!old.has(e.id));
-    const pool=candidates.length?candidates:episodes.filter(e=>e.id!==FIRST&&isReplayLink(e)&&e.id!==active.id);
+    const available=episodes.filter(e=>isReplayLink(e));
+    let pool=available.filter(e=>!old.has(e.id));
+    // Start a new round only after every indexed episode has been selected.
+    if(!pool.length){pool=available.filter(e=>e.id!==active.id);}
     if(!pool.length)return null;
     const interests=terms();
     const favoriteTopics=new Set(episodes.filter(e=>stars.has(e.id)).flatMap(e=>e.tags));
@@ -79,16 +82,18 @@
     return data;
   }
   async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
-  function rememberEpisode(e){active=e;const seen=new Set(load(seenKey,[]));seen.add(e.id);save(seenKey,[...seen].slice(-1000));save(currentKey,e.id);}
+  function rememberEpisode(e){const seen=new Set(load(seenKey,[]));seen.add(active.id);active=e;seen.add(e.id);const available=episodes.filter(isReplayLink);
+    if(available.length&&available.every(x=>seen.has(x.id))) {save("phi:fred-spaces-previous-round:v1",[...seen]);seen.clear();seen.add(e.id);}
+    save(seenKey,[...seen]);save(currentKey,e.id);}
   async function more(){
-    if(busy)return;
+    if(busy||catalogLoading)return;
     const next=pickNext();if(!next){note("No additional indexed episodes are available.");return;}
     // The fee is for curated discovery of a direct X replay link, not streaming rights.
     // The source may require X sign-in or disappear. Display this before every new debit.
-    if(!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the curated episode: "+next.title+"? The replay opens on X, not inside QuantaPhi. X may require sign-in or may not offer playback. The StarCoin pays for curation, not guaranteed audio. Continue?"))return;
+    if(next.id!==FIRST&&!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the curated episode: "+next.title+"? The replay opens on X, not inside QuantaPhi. X may require sign-in or may not offer playback. The StarCoin pays for curation, not guaranteed audio. Continue?"))return;
     busy=true;render();
     try{
-      const data=await ledger("/v1/spaces/unlock","POST",{episodeId:next.id});
+      const data=next.id===FIRST?{ok:true,charged:0,starCoins:balance}:await ledger("/v1/spaces/unlock","POST",{episodeId:next.id});
       if(!data.ok)throw new Error("Unlock was not confirmed.");
       balance=data.starCoins;unlocked.add(next.id);rememberEpisode(next);
       message=(data.charged===1?"1 StarCoin spent for the curated episode link. ":"Already unlocked; no new charge. ")+"Use the play button to open the original replay on X.";
@@ -147,7 +152,7 @@
     const title=escapeMarkup(episode.title),description=escapeMarkup(episode.description),source=escapeMarkup(episode.source);
     return '<article aria-label="Media Star: '+title+'" style="position:relative;isolation:isolate;overflow:hidden;max-width:720px;padding:22px;border:2px solid #f2c44f;border-radius:24px;background:linear-gradient(135deg,#fff9d0,#e9b739);color:#33200a;font:16px/1.5 system-ui,sans-serif;box-shadow:0 9px 28px #8d5d2666">'+
       '<span aria-hidden="true" style="position:absolute;right:-60px;top:-64px;width:330px;height:330px;clip-path:polygon(50% 0%,62% 34%,98% 35%,69% 57%,80% 91%,50% 72%,20% 91%,31% 57%,2% 35%,38% 34%);background:linear-gradient(135deg,#fff0ad,#f6b81e);opacity:.62;z-index:-1"></span>'+
-      '<div style="display:flex;align-items:center;gap:13px"><span aria-hidden="true" style="font-size:37px;display:grid;place-items:center;width:66px;height:66px;border-radius:50%;border:2px solid #ffec9d;background:#624522;color:#fff">🎙</span><div><strong style="font-size:13px;letter-spacing:.08em">⭐ MEDIA STAR</strong><h2 style="font-size:24px;margin:5px 0">'+title+'</h2></div></div>'+
+      '<div style="display:flex;align-items:center;gap:13px"><span aria-hidden="true" style="font-size:37px;display:grid;place-items:center;width:66px;height:66px;border-radius:50%;border:2px solid #ffec9d;background:#624522;color:#fff">🎙</span><div><strong style="font-size:23px;letter-spacing:.04em">⭐ MEDIA STAR</strong><h2 style="font-size:24px;margin:5px 0">'+title+'</h2></div></div>'+
       '<p style="max-width:95%;margin:15px 0">'+description+'</p>'+
       '<a href="'+source+'" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 17px;border-radius:999px;background:#2e2145;color:white;text-decoration:none;font-weight:900">▶ Open original replay on X ↗</a>'+
       '<p style="font-size:12px;margin:11px 0 0">X may require sign-in. Audio is not hosted here.</p></article>';
@@ -173,7 +178,7 @@
     const avatar=node("img","fs-star-avatar");avatar.src="data:image/svg+xml;charset=utf-8,"+encodeURIComponent("<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><defs><radialGradient id=\"bg\" cx=\"32%\" cy=\"25%\" r=\"90%\"><stop stop-color=\"#8158ae\"/><stop offset=\"1\" stop-color=\"#2b1b4e\"/></radialGradient><linearGradient id=\"gold\"><stop stop-color=\"#ffe69f\"/><stop offset=\"1\" stop-color=\"#b97a24\"/></linearGradient></defs><rect width=\"128\" height=\"128\" rx=\"64\" fill=\"url(#bg)\"/><circle cx=\"64\" cy=\"56\" r=\"23\" fill=\"#f0bb88\"/><path d=\"M27 118c2-27 17-41 37-41s35 14 37 41\" fill=\"#edd2b8\"/><path d=\"M42 57c-8-20 4-37 21-37 14 0 29 10 25 36-3-11-10-15-17-16-9 12-18 16-29 17\" fill=\"#37243a\"/><path d=\"M34 57c-2-21 12-38 30-38s32 17 30 38\" fill=\"none\" stroke=\"url(#gold)\" stroke-width=\"7\" stroke-linecap=\"round\"/><rect x=\"28\" y=\"49\" width=\"13\" height=\"25\" rx=\"6\" fill=\"#fbd979\"/><rect x=\"87\" y=\"49\" width=\"13\" height=\"25\" rx=\"6\" fill=\"#fbd979\"/><path d=\"M93 71c0 19-9 25-23 25\" fill=\"none\" stroke=\"#e5b95f\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"69\" cy=\"96\" r=\"5\" fill=\"#fff3bd\"/></svg>");avatar.alt="";avatar.decoding="async";
     backdrop.append(node("span","fs-star-rays"),node("span","fs-big-star"),avatar);
     card.append(backdrop);
-    ident.append(node("small","fs-eyebrow","⭐ MEDIA STAR · CURIO SPACE SPOTLIGHT"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
+    ident.append(node("strong","fs-brand","⭐ Media Star"),node("small","fs-eyebrow","CURIO SPACE SPOTLIGHT"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
     top.append(ident);card.append(top);
     if(active.id===FIRST)card.append(node("p","fs-free","FEATURED EPISODE · FREE"));
     card.append(node("p","fs-meta",active.date+" · "+active.duration),node("p","fs-summary",active.description));
@@ -232,13 +237,27 @@
     const nextRow=node("div","fs-bottom");
     const hasCurated=episodes.some(e=>e.id!==FIRST&&isReplayLink(e));
     const unlock=button(busy?"Confirming StarCoin charge…":"Buy next curated episode · 1 ★",more,"fs-next");
-    unlock.disabled=busy||!hasCurated;
-    nextRow.append(unlock,node("span","fs-balance",balance==null?"Wallet balance unavailable":"StarCoins: "+balance));card.append(nextRow);
+    unlock.disabled=busy||catalogLoading||!hasCurated;
+    nextRow.append(node("span","fs-index-count",catalogLoading?"Loading episode index…":episodes.filter(isReplayLink).length+" indexed Fred Spaces · no repeats until the round is complete"),unlock,node("span","fs-balance",balance==null?"Wallet balance unavailable":"StarCoins: "+balance));card.append(nextRow);
     const status=node("p","fs-status",message||"Featured replay is free. One new curated X episode link costs 1 full StarCoin after confirmation. Listening happens on X.");
     status.setAttribute("role","status");status.setAttribute("aria-live","polite");card.append(status);
     root.append(card);
   }
   const requested=new URL(location.href).searchParams.get("fredSpace");
   if(requested===FIRST)active=byId.get(FIRST);
-  render();void sync();void loadQuantInterests();
+  async function loadCatalog(){
+    try{
+      const response=await fetch(new URL("media-star-index.json?v=20261009-full-fred1",document.currentScript?.src||location.href),{cache:"no-cache"});
+      if(!response.ok)throw Error("Episode index unavailable");
+      const catalog=await response.json();
+      if(catalog.schemaVersion!==1||!Array.isArray(catalog.episodes))throw Error("Invalid episode index");
+      const valid=catalog.episodes.filter(e=>e.hostId==="dotkrueger"&&e.id&&e.title&&Array.isArray(e.tags)&&isReplayLink(e));
+      if(!valid.some(e=>e.id===FIRST))throw Error("Featured episode missing");
+      episodes.splice(0,episodes.length,...valid);byId.clear();episodes.forEach(e=>byId.set(e.id,e));
+      active=byId.get(FIRST);
+      window.PhiMediaStarAsset.catalog=catalog;
+    }catch(error){message="Full episode index could not load. Next episode is paused; retry by reloading.";render();return;}
+    catalogLoading=false;render();await sync();
+  }
+  render();void loadCatalog();void loadQuantInterests();
 })();

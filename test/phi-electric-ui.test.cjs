@@ -56,7 +56,8 @@ test('Fred player opens actual X replay, hides internal slot, and presents inter
 test('Fred next card requires user consent and a verified direct X Spaces link; ledger is authoritative',()=>{
  const js=read('fred-spaces-radio.js');
  assert.match(js,/function isReplayLink\(episode\)/);
- assert.match(js,/isReplayLink\(e\)&&!old\.has\(e\.id\)/);
+ assert.match(js,/episodes\.filter\(e=>isReplayLink\(e\)\)/);
+ assert.match(js,/available\.filter\(e=>!old\.has\(e\.id\)\)/);
  assert.match(js,/!unlocked\.has\(next\.id\)&&!window\.confirm/);
  assert.match(js,/ledger\("\/v1\/spaces\/unlock","POST",\{episodeId:next\.id\}\)/);
  assert.match(js,/Buy next curated episode · 1 ★/);
