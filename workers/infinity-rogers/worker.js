@@ -120,7 +120,7 @@ async function runGPT(request, env, body) {
   if (!input) return json(request, { ok: false, error: "input_required" }, 400);
   try {
     // The Infinite Book needs specific GPT-OSS research and writing; preserve all other routes.
-    const deepBookTask=["infinite-book-scout","infinite-book-deep-story"].includes(info.context.task);
+    const deepBookTask=["infinite-book-scout","infinite-book-deep-story","full-history-assimilation","crusher-research-synthesis"].includes(info.context.task);
     const maxTokens = info.context.task === "five-zone-overview-synthesis" || info.context.requireGPT === true || info.context.requireCloudflare === true ? 3200 : info.application === "Oracle Card Studio" || deepBookTask ? 2400 : 1400;
     const managerModel=info.application==="Oracle Card Studio" || deepBookTask ? CARD_MANAGER_MODEL : "";
     const result = await runGatewayModel(env, rules(info.application), task, maxTokens, managerModel);
