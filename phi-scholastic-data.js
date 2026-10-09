@@ -27,6 +27,7 @@ function sync(){
  const bar=active.yellow.querySelector('.qdata-actions');
  if(bar){
   bar.querySelector('[data-work="extract"]').disabled=n===0;
+  bar.querySelector('[data-work="search"]').disabled=n===0;
   bar.querySelector('[data-work="compare"]').disabled=n<2;
   bar.querySelector('[data-work="build"]').disabled=n===0;
   bar.querySelector('[data-work="clear"]').disabled=n===0;
@@ -61,7 +62,7 @@ function hero(zone,kind){
  const copy=make('div','q-oracle-heading');
  copy.append(make('span','q-oracle-eyebrow','QUANTAPHI · ORACLE RESEARCH'),
   make('strong','',kind==='reader'?'Scholastic Reader':'Data Extraction'),
-  make('small','',kind==='reader'?'AI Overview · Research & reading':'Select · Extract · Compare · Build'));
+  make('small','',kind==='reader'?'AI Overview · Research & reading':'Select · Search · Compare · Build'));
  art.append(image);wrapper.append(art,copy);
  zone.insertBefore(wrapper,zone.firstChild);
 }
@@ -165,7 +166,8 @@ async function compare(snapshot){
   'You are QuantaPhi Scholastic Data Comparison. Compare exactly these user-selected entries from the live yellow extraction index:',
   JSON.stringify(terms),
   'Primary research context: '+snapshot.query,
-  'Retrieved public search evidence for each term: '+JSON.stringify(evidences).slice(0,7800),
+  'Retrieved public search evidence for each term: '+JSON.stringify(evidences),
+  'Cover EVERY selected subject by name. Start with one concise evidence-based entry for each subject, then compare all subjects together across explicit dimensions. Never silently omit a selection.\n',
   'Write a specific, original comparison. Explain similarities, differences, meaningful classifications and additional closely related entities the reader could search next. Example: plum and grapefruit may point to stone fruits vs citrus, orchard cultivation and related fruits. Do NOT state they share a genus.',
   'Use only retrieved evidence for factual specifics. Explicitly distinguish proven facts, conceptual analogies and unknowns. If the evidence is unavailable, give a useful comparison plan and label it unverified.',
   'Use clearly separated short paragraphs; give a 2-5 sentence conclusion with a concrete next research question. No invented sources or URLs.'
@@ -203,7 +205,7 @@ async function compare(snapshot){
 function build(snapshot,reader=false){
  const terms=selected();
  if(!terms.length)return;
- const combined=terms.join(' + ').slice(0,350);
+ const combined=terms.join(' + ');
  const context='Build an interactive original website using these QuantaPhi selected extracted data topics: '+terms.join(', ')+'. Separate the material into reader introduction, individual evidence sections, comparisons and research trails. Include real source links, site navigation and original story cards with functional expand controls. Preserve the distinct subjects rather than a single giant paragraph.';
  const matchingComparison=!reader&&snapshot.lastComparison&&snapshot.lastComparison.terms.join('|')===terms.join('|');
  const extra=matchingComparison?snapshot.lastComparison.analysis:'';
@@ -226,7 +228,7 @@ function click(event){
   if(active.selected.has(value))active.selected.delete(value);
   else if(active.selected.size<8)active.selected.add(value);
   else {status('Up to eight subjects can be compared together. Clear one selection first.');return}
-  sync();status(active.selected.size+' selected. Use Extract, Compare, or Build.');return;
+  sync();status(active.selected.size+' selected: '+selected().join(' · ')+'. Search or compare uses every selection.');return;
  }
  const work=event.target.closest('[data-work]');
  if(!work||!active.yellow.contains(work))return;
@@ -234,6 +236,14 @@ function click(event){
  const snapshot=active;
  const job=work.dataset.work;
  if(job==='clear'){snapshot.selected.clear();sync();status('Selection cleared.');return}
+ if(job==='search'){
+  const terms=selected();if(!terms.length)return;
+  const query=terms.join(' + ');
+  const destination=new URL('/',location.origin);
+  destination.searchParams.set('q',query);
+  destination.searchParams.set('selectedSubjects',JSON.stringify(terms));
+  location.assign(destination.href);return;
+ }
  if(job==='build'){build(snapshot);return}
  if(job==='extract'||job==='compare'){
   snapshot.busy=true;
@@ -261,7 +271,7 @@ function activate(query,sections,evidence){
  // The full AI Overview remains above, readable without a redundant scroll button.
  // Website building belongs to selected, structured data in the yellow / purple cards.
  const original=yellow.querySelector('h3');if(original)original.textContent='Data Extraction · live index';
- const description=make('p','qdata-lead','Tap subjects to select them. Extract a term into this Quant, compare 2–8 subjects with GPT and source evidence, or build a website from the selection.');
+ const description=make('p','qdata-lead','Select up to eight subjects. Search all selections together, compare each one using source evidence, extract their research, or build from the full selection.');
  const toolbar=make('div','qdata-toolbar');
  const filter=make('input','qdata-filter');filter.type='search';filter.placeholder='Find among extracted data…';
  filter.setAttribute('aria-label','Filter the clickable data index');
@@ -274,7 +284,7 @@ function activate(query,sections,evidence){
  yellow.insertBefore(filter,yellow.querySelector('#qYellowDataList'));
  const count=make('span','qdata-count','0 selected · choose up to 8');count.setAttribute('aria-live','polite');
  const actions=make('div','qdata-actions');
- for(const [key,label] of [['extract','Extract'],['compare','Compare selected'],['build','Build'],['clear','Clear']]){
+ for(const [key,label] of [['search','Search selected'],['compare','Compare selected'],['extract','Extract'],['build','Build'],['clear','Clear']]){
   const button=make('button','qdata-action qdata-'+key,label);button.type='button';button.dataset.work=key;actions.append(button)
  }
  toolbar.append(count,actions);
