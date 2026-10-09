@@ -201,14 +201,15 @@ body{background:radial-gradient(ellipse at 50% -6%,#c9a5ff3d,transparent 44%),li
 
 /* Distinct products: the original Infinity Reads & Realms home opener is NOT an Asteroid. */
 #infiniteBook[data-context="home"] .ib-asteroid-rock,
-#infiniteBook[data-context="home"] .ib-asteroid-shade,
-#infiniteBook[data-context="home"] .ib-research-branches,
-#infiniteBook[data-context="home"] .ib-illustration,
-#infiniteBook[data-context="home"] .ib-illustration-actions{display:none!important}
+#infiniteBook[data-context="home"] .ib-research-branches{display:none!important}
+/* Home is NOT an asteroid, but it must show its independently generated image. */
+#infiniteBook[data-context="home"] .ib-illustration:not([hidden]){display:block!important}
+#infiniteBook[data-context="home"] .ib-illustration-actions:not([hidden]){display:flex!important}
+#infiniteBook[data-context="home"] .ib-asteroid-shade{background:linear-gradient(0deg,#140c27f2 0%,#1d133bbd 42%,#24184047 100%)}
 #infiniteBook[data-context="home"] .ib-story{background:linear-gradient(145deg,#34195d,#170e37)!important;border:1px solid #c297ff!important;box-shadow:0 0 0 1px #d3acff5c,0 0 26px #b175ff78,0 12px 30px #25134779!important}
-#infiniteBook[data-context="home"] .ib-asteroid-hero{background:radial-gradient(circle at 83% 13%,#8251d67a,transparent 36%),linear-gradient(145deg,#512987,#281445 72%,#1b1038);min-height:176px}
+#infiniteBook[data-context="home"] .ib-asteroid-hero{background:radial-gradient(circle at 83% 13%,#8251d67a,transparent 36%),linear-gradient(145deg,#512987,#281445 72%,#1b1038);min-height:250px}
 #infiniteBook[data-context="home"] .ib-asteroid-hero::before{background-image:radial-gradient(circle,#f5dcffaf 1px,transparent 2px);background-size:52px 56px;opacity:.26}
-#infiniteBook[data-context="home"] .ib-asteroid-copy{min-height:176px;padding:19px 16px 21px;justify-content:center}
+#infiniteBook[data-context="home"] .ib-asteroid-copy{min-height:250px;padding:19px 16px 21px;justify-content:flex-end}
 #infiniteBook[data-context="home"] .ib-asteroid-label{background:#ead3ff;color:#3d186a;border:1px solid #c99afa;font-weight:900;letter-spacing:.06em}
 #infiniteBook[data-context="home"] .ib-title{max-width:100%;font-size:clamp(20px,5.2vw,27px)!important}
 #infiniteBook[data-context="home"] .ib-category{background:#ffffff1b!important}
