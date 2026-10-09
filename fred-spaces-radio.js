@@ -170,7 +170,8 @@
     card.setAttribute("data-media-asset","media-star-v1");
     const backdrop=node("div","fs-star-backdrop");
     backdrop.setAttribute("aria-hidden","true");
-    backdrop.append(node("span","fs-star-rays"),node("span","fs-big-star"),node("span","fs-star-avatar","🎙"));
+    const avatar=node("img","fs-star-avatar");avatar.src="data:image/svg+xml;charset=utf-8,"+encodeURIComponent("<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><defs><radialGradient id=\"bg\" cx=\"32%\" cy=\"25%\" r=\"90%\"><stop stop-color=\"#8158ae\"/><stop offset=\"1\" stop-color=\"#2b1b4e\"/></radialGradient><linearGradient id=\"gold\"><stop stop-color=\"#ffe69f\"/><stop offset=\"1\" stop-color=\"#b97a24\"/></linearGradient></defs><rect width=\"128\" height=\"128\" rx=\"64\" fill=\"url(#bg)\"/><circle cx=\"64\" cy=\"56\" r=\"23\" fill=\"#f0bb88\"/><path d=\"M27 118c2-27 17-41 37-41s35 14 37 41\" fill=\"#edd2b8\"/><path d=\"M42 57c-8-20 4-37 21-37 14 0 29 10 25 36-3-11-10-15-17-16-9 12-18 16-29 17\" fill=\"#37243a\"/><path d=\"M34 57c-2-21 12-38 30-38s32 17 30 38\" fill=\"none\" stroke=\"url(#gold)\" stroke-width=\"7\" stroke-linecap=\"round\"/><rect x=\"28\" y=\"49\" width=\"13\" height=\"25\" rx=\"6\" fill=\"#fbd979\"/><rect x=\"87\" y=\"49\" width=\"13\" height=\"25\" rx=\"6\" fill=\"#fbd979\"/><path d=\"M93 71c0 19-9 25-23 25\" fill=\"none\" stroke=\"#e5b95f\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"69\" cy=\"96\" r=\"5\" fill=\"#fff3bd\"/></svg>");avatar.alt="";avatar.decoding="async";
+    backdrop.append(node("span","fs-star-rays"),node("span","fs-big-star"),avatar);
     card.append(backdrop);
     ident.append(node("small","fs-eyebrow","⭐ MEDIA STAR · CURIO SPACE SPOTLIGHT"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
     top.append(ident);card.append(top);
