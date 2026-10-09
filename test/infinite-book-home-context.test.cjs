@@ -51,5 +51,6 @@ test('GPT writer differentiates a home opener from a search-triggered Asteroid',
   assert.match(source, /home-page opening story, written fresh for a page visit/);
   assert.match(source, /storyKind==='reads-realms'\|\|storyKind==='asteroid'\?Promise\.resolve\(\[\]\):scoutQueries/);
   assert.match(source, /verified_context:\{storyKind,/);
-  assert.match(source, /daily_quota_exceeded/);
+  assert.doesNotMatch(source, /daily_quota_exceeded/);
+  assert.match(source, /PhiInfiniteBookResearchStatus='ai-unavailable'/);
 });
