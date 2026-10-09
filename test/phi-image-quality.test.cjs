@@ -23,7 +23,7 @@ test('finished image reviewer is a real vision endpoint, not dimension checking'
  assert.match(worker,/async function runImageReview/);
  assert.match(worker,/url\.pathname === "\/v1\/image-review"/);
  assert.match(worker,/type:"image_url",image_url:\{url:imageUri\}/);
- assert.match(worker,/Render visuals ONLY: zero painted letters or numerals/);
+ assert.match(worker,/Paint only the scene, objects, photography and visual design/);
  assert.match(source('phi-visual-render.js'),/composeExactText/);
  assert.match(source('phi-visual-render.js'),/\/v1\/image-review/);
 });
@@ -105,7 +105,7 @@ test('image rejection keeps the original inputs editable and offers photo remova
  assert.match(css,/\[hidden\]\{display:none!important\}/);
  const html=source('index.html');
  assert.match(html,/phi-image-builder\.js\?v=20261008-flux-input2/);
- assert.match(html,/phi-visual-render\.js\?v=20261008-flux-input2/);
+ assert.match(html,/phi-visual-render\.js\?v=20261008-textclean3/);
 });
 
 test('search-generated sourced story is displayed after the overview assimilation',()=>{
@@ -148,7 +148,10 @@ test('one bounded automatic repair is scored against the original image',()=>{
  assert.match(builder,/No fake|pseudo-writing|fabricated letters|fake headlines/);
  assert.match(worker,/LETTERING CHECK/);
  assert.match(worker,/text-like textures are a high-severity issue/);
- assert.match(worker,/Render visuals ONLY: zero painted letters or numerals/);
+ assert.match(worker,/variants:\[renderDirection\]/);
+ assert.doesNotMatch(worker,/variations of the prompt|const variants=\[/);
+ assert.doesNotMatch(worker.slice(worker.indexOf(' const executionOnly='),worker.indexOf(' let lastError=null;')),/alien-language|pseudo-words|symbol rows/i);
+ assert.match(worker,/Paint only the scene, objects, photography and visual design/);
  assert.match(source('index.html'),/phi-image-builder\.js\?v=20261008-flux-input2/);
 });
 
@@ -158,6 +161,8 @@ test('FLUX adapter sends true text-only requests and scales reference pixels, no
  assert.match(adapter,/async function fluxReference\(blob\)/);
  assert.match(adapter,/500\/Math\.max\(image\.width,image\.height\)/);
  assert.match(adapter,/const blob=source\?await fluxReference\(source\):null/);
+ assert.match(adapter,/Typography is handled afterward in the browser/);
+ assert.doesNotMatch(adapter,/Forbid fake writing, alien-language glyphs/);
  assert.match(adapter,/if\(blob\)body\.append\('image',blob,'subject-reference\.jpg'\)/);
  assert.match(adapter,/reference_mode',source\?'uploaded':design\?'style-only':'text-only'/);
  assert.doesNotMatch(adapter.slice(adapter.indexOf('async function render('),adapter.indexOf('async function validate(')),/neutralImage\(/);
