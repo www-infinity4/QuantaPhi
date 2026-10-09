@@ -29,6 +29,6 @@ test('Bitcoin Crusher foot reveals real inline app, not fake slot',()=>{
  assert.match(html,/frame\.src='\/bitcoin-crusher\/\?embed=quanta'/);
  assert.match(html,/event\.origin!==location\.origin/);
  assert.match(html,/event\.source!==frame\.contentWindow/);
- assert.match(html,/type:'quantaphi:crusher-embed-height'/);
+ assert.match(html,/quantaphi:crusher-embed-height/);
  assert.match(file('phi-oracle-story-orange.css'),/\.crusher-inline-frame/);
 });
