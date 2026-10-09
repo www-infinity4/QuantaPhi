@@ -95,7 +95,7 @@ test('image rejection keeps the original inputs editable and offers photo remova
  const builder=source('phi-image-builder.js');
  const adapter=source('phi-visual-render.js');
  const css=source('phi-image-builder.css');
- assert.match(adapter,/error\.code=String\(data\.code\|\|''\)/);
+ assert.match(adapter,/error\.code=String\(data\.code\|\|data\.error\|\|''\)/);
  assert.match(builder,/error\?\.code==='image_input_flagged'/);
  assert.match(builder,/remove-source/);
  assert.match(builder,/remove-design/);
@@ -153,6 +153,7 @@ test('FLUX adapter sends true text-only requests and scales reference pixels, no
  assert.match(adapter,/reference_mode',source\?'uploaded':design\?'style-only':'text-only'/);
  assert.doesNotMatch(adapter.slice(adapter.indexOf('async function render('),adapter.indexOf('async function validate(')),/neutralImage\(/);
  assert.match(builder,/window\.PhiImageAutoRefine===true&&review/);
+ assert.match(builder,/error\?\.code==='image_daily_cap'/);
 });
 
 test('Workers image route permits text-only generation with no synthetic image and style-only indices',async()=>{
