@@ -10,7 +10,7 @@ const make=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.class
 const $=selector=>host.querySelector(selector);
 const emit=(type,detail)=>window.dispatchEvent(new CustomEvent('phi:image:'+type,{detail}));
 const id=()=>crypto?.randomUUID?.()||('phi-'+Date.now()+'-'+Math.random().toString(36).slice(2));
-let mode='Image',source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',preparingReference=false;
+let mode='Image',source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',preparingReference=false,lastRenderPlan=null;
 function state(value){host.dataset.stage=value}
 function notice(text){const area=host.dataset.stage==='finished'?'.pi-finished':host.dataset.stage==='progress'?'.pi-progress':'.pi-composer';const el=$(area+' .pi-notice');if(el)el.textContent=text}
 function step(n,value,text){const el=$('[data-pi-step="'+n+'"]');if(el){el.dataset.state=value;el.lastElementChild.textContent=text||(value==='done'?'Done':value==='active'?'Working…':'Waiting')}}
@@ -51,6 +51,7 @@ function layout(){
  const progress=make('div','pi-progress pi-panel');progress.append(make('h2','','Building your image'),make('p','pi-sub','The input card is replaced as each actual service step runs.'));
  const steps=make('div','pi-steps');names.forEach((name,i)=>{const row=make('div','pi-step');row.dataset.piStep=i;row.dataset.state='waiting';row.append(make('span','',name),make('small','','Waiting'));steps.append(row)});
  progress.append(steps,make('p','pi-notice',''));
+ const retry=make('button','pi-primary','Retry image render');retry.type='button';retry.dataset.piAction='retry-render';retry.hidden=true;progress.append(retry);
  const back=make('button','pi-primary','Back to description');back.type='button';back.dataset.piAction='back';progress.append(back);
  const done=make('div','pi-finished pi-panel');done.append(make('h2','','Your Image'),make('p','pi-sub','This result is the actual image returned by the connected renderer.'));
  const img=make('img','pi-result');img.alt='Generated image result';done.append(img,make('p','pi-notice',''));
@@ -62,32 +63,42 @@ function layout(){
  done.append(actions);
  host.replaceChildren(form,progress,done);
 }
-async function build(){
+async function build({retryRender=false}={}){
  if(busy||preparingReference)return;
  const typed=$('#pi-prompt').value.trim().slice(0,3000);
  const exactText=$('#pi-exact-text').value.trim().slice(0,120);
  if(!typed&&!source&&!contextStory()){notice('Describe the artwork or upload a photo first.');return}
  const description=typed||('Build a distinctive '+mode.toLowerCase()+' based on my uploaded reference or story.');
  const requestId=id(),story=contextStory(),search=contextSearch();
+ const canReuse=retryRender&&lastRenderPlan&&lastRenderPlan.description===description&&lastRenderPlan.mode===mode&&lastRenderPlan.source===source&&lastRenderPlan.design===design&&lastRenderPlan.exactText===exactText;
  busy=true;lastInstruction=description;lastExactText=exactText;result=null;rawResult=null;artifact=null;
- state('progress');initSteps();$('[data-pi-action="back"]').textContent='Back to description';notice('Preparing a real render request…');
+ state('progress');initSteps();$('[data-pi-action="retry-render"]').hidden=true;$('[data-pi-action="back"]').textContent='Back to description';notice(canReuse?'Retrying the image service with the previous GPT directions…':'Preparing a real render request…');
  emit('build:start',{requestId,mode,description});
  let phase=0,warning='',vision='',prompt='';
  try{
-  step(phase,'active',source?'Reading reference':'Text-only build');
-  if(source)try{vision=await renderer.inspect(source)}catch(_){warning='Reference reader unavailable; using the uploaded image directly.'}
-  step(phase++,'done');
-  step(phase,'active','GPT directing image composition');
-  try{prompt=await renderer.direct({description,mode,vision,story,search,hasUpload:Boolean(source),designFile:Boolean(design),exactText,preferences:window.PhiImageLearning?.preferences(mode)||''})}
-  catch(_){prompt=[renderer.modePrompt(mode),description,story,search].filter(Boolean).join('\n');warning=[warning,'GPT director unavailable; using your instructions.'].filter(Boolean).join(' ')}
-  step(phase++,'done');
+  if(canReuse){
+   prompt=lastRenderPlan.prompt;
+   step(0,'done','Saved reference');
+   step(1,'done','Saved GPT image directions');
+   phase=2;
+  }else{
+   step(phase,'active',source?'Reading reference':'Text-only build');
+   if(source)try{vision=await renderer.inspect(source)}catch(_){warning='Reference reader unavailable; using the uploaded image directly.'}
+   step(phase++,'done');
+   step(phase,'active','GPT directing image composition');
+   try{prompt=await renderer.direct({description,mode,vision,story,search,hasUpload:Boolean(source),designFile:Boolean(design),exactText,preferences:window.PhiImageLearning?.preferences(mode)||''})}
+   catch(_){prompt=[renderer.modePrompt(mode),description,story,search].filter(Boolean).join('\n');warning=[warning,'GPT director unavailable; using your instructions.'].filter(Boolean).join(' ')}
+   step(phase++,'done');
+   lastRenderPlan={description,mode,source,design,exactText,prompt};
+  }
   step(phase,'active','Image renderer in progress');
-  notice([warning,'Sending artwork to the actual image-generation service.'].filter(Boolean).join(' '));
+  notice([warning,'Step 3 of 4 · Waiting for the Cloudflare image renderer. This request may take up to 150 seconds.'].filter(Boolean).join(' '));
   let rendered=await renderer.render({description,mode,source,design,prompt,exactText});
   step(phase++,'done');
   step(phase,'active','Examining finished pixels and lettering');
   rawResult=rendered.src;
-  result=exactText?await renderer.composeExactText(rawResult,exactText):rawResult;
+  result=rawResult;
+  if(exactText)try{result=await renderer.composeExactText(rawResult,exactText)}catch(error){warning=[warning,'Artwork rendered, but exact lettering could not be added: '+String(error?.message||error).slice(0,90)].filter(Boolean).join(' ')}
   let size=await renderer.validate(result);
   let review=null,autoRefined=false;
   try{review=await renderer.review({src:result,description,mode,exactText})}
@@ -158,10 +169,14 @@ async function build(){
    notice('The renderer could not accept this request. Check the description and uploaded images, then build again. Your inputs are preserved.');
    $('[data-pi-action="back"]').textContent='Edit description or photo';
   }else if(error?.code==='image_daily_cap'){
-   notice('The connected image service has reached its 20-generation daily limit for this identity. Your description and photo are preserved; more builds are available when the daily limit resets.');
+   notice('Image generation limit reached: 20 completed renders per UTC day for this image identity. Your description and GPT art direction are saved; another request cannot succeed before the allowance resets.');
    $('[data-pi-action="back"]').textContent='Back to saved description';
   }else{
-   notice(message.slice(0,210)+'. No image was produced. Return to your description and try again.');
+   const transient=phase===2&&(error?.code==='image_render_timeout'||error?.code==='image_render_network'||error?.code==='image_render_bad_response'||error?.status>=500);
+   if(transient){
+    $('[data-pi-action="retry-render"]').hidden=false;
+    notice((error?.code==='image_render_timeout'?'The render did not finish within 150 seconds.':error?.code==='image_render_network'?'The image service connection failed.':message.slice(0,145))+' Your description and GPT direction are saved. Tap Retry image render to retry ONLY step 3.');
+   }else notice(message.slice(0,210)+'. No completed image was returned. Your description is saved for editing.');
   }
   emit('build:error',{requestId,error:message,code:error?.code||'',phase});
  }finally{busy=false}
@@ -185,6 +200,7 @@ host.addEventListener('click',event=>{
  if(choice){mode=choice.dataset.piMode;host.querySelectorAll('[data-pi-mode]').forEach(b=>b.setAttribute('aria-pressed',b===choice?'true':'false'));return}
  const action=event.target.closest('[data-pi-action]')?.dataset.piAction;
  if(action==='build')void build();
+ if(action==='retry-render'&&!busy)void build({retryRender:true});
  if(action==='remove-source'||action==='remove-design'){
   const kind=action==='remove-source'?'source':'design';
   if(kind==='source')source=null;else design=null;
@@ -192,7 +208,7 @@ host.addEventListener('click',event=>{
   showFile(null,kind);
   notice(kind==='source'?'Uploaded photo removed. You can build from the description or choose another photo.':'Style reference removed.');
  }
- if(action==='back'||action==='edit'){state('composer');if(lastInstruction)$('#pi-prompt').value=lastInstruction;$('#pi-exact-text').value=lastExactText}
+ if(action==='back'||action==='edit'){const retry=$('[data-pi-action="retry-render"]');if(retry)retry.hidden=true;state('composer');if(lastInstruction)$('#pi-prompt').value=lastInstruction;$('#pi-exact-text').value=lastExactText}
  if(action==='more')void reopenAsReference(lastInstruction+'\nCreate a new variation retaining the original subject, valid geometry, and strongest composition.');
  if(action==='fix'){
   const review=artifact?.review;
@@ -205,7 +221,7 @@ host.addEventListener('click',event=>{
  if(action==='clear'){
   if(busy)return;
   const clearedId=artifact?.id||'';
-  result=null;rawResult=null;artifact=null;
+  result=null;rawResult=null;artifact=null;lastRenderPlan=null;
   const finished=$('.pi-result');if(finished)finished.removeAttribute('src');
   const audit=$('.pi-audit');if(audit){audit.dataset.review='uncertain';audit.querySelector('.pi-audit-title').textContent='Visual review';audit.querySelector('.pi-audit-summary').textContent='No generated image selected.';audit.querySelector('.pi-audit-issues').replaceChildren()}
   state('composer');
