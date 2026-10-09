@@ -228,25 +228,24 @@ test('story-to-Phi links use a semantic index and the existing explicit QuantaPh
  assert.match(css,/body \.qbalances #controlPhiWalletButton/);
 });
 
-test('next story displays prepared content before research begins',()=>{
+test('Asteroid waits for GPT evidence instead of displaying prewritten movie cards',()=>{
  const code=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
  const section=code.split("async function nextStory(query = '', options = {})")[1].split("window.addEventListener('quantaphi:search-start'")[0];
- assert.ok(section.includes('pickUnique(roll, seenIds())'));
- assert.ok(section.includes('render(ready, roll)'));
- assert.ok(section.indexOf('render(ready, roll)') < section.indexOf('discoverInBackground(roll, acceptNew)'));
- assert.ok(!section.includes('await Promise.race'));
- assert.ok(!section.includes('nextButton.disabled = true'));
- assert.ok(code.includes('READY_TARGET = 8'));
- assert.ok(code.includes('MAX_RESEARCH_IN_FLIGHT = 2'));
- assert.ok(code.includes('RESEARCH_DEADLINE_MS = 16000'));
+ assert.ok(section.includes('requireFresh=options.requireFresh!==false'));
+ assert.ok(section.includes("root.querySelector('.ib-story').hidden=true"));
+ assert.ok(section.includes('discoverInBackground(roll, acceptNew)'));
+ assert.ok(code.includes('strictGPT:true'));
+ assert.ok(code.includes('RESEARCH_DEADLINE_MS = 52000'));
  assert.ok(code.includes('catalog.baseSectorCount||30'));
  assert.ok(code.includes('Four-roll path '));
 });
+
 test('slow same-origin source feed does not delay the first story',()=>{
  const code=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
  const init=code.split('async function init()')[1];
  assert.ok(!init.includes('await appendConfiguredFeed()'));
- assert.ok(init.includes('void appendConfiguredFeed().then(refillReadyStories)'));
+ assert.ok(!init.includes('void appendConfiguredFeed().then(refillReadyStories)'));
+ assert.match(code,/No speculative background stories or artwork/);
  assert.ok(init.includes('await nextStory(lastSearchQuery)'),'latest search must be honored if it arrived while the catalog loaded');
 });
 
@@ -254,7 +253,7 @@ test('explicit research spins are cloud-receipted with sourced articles and neve
  const code=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
  assert.match(code,/rewardSpin:true/);
  assert.match(code,/QuantaStarCoinCloud\?\.record\?\.\('spin',spinReference/);
- assert.match(code,/requireFresh=options\.requireFresh===true/);
+ assert.match(code,/requireFresh=options\.requireFresh!==false/);
  assert.match(code,/\.ib-research-chips/);
  assert.match(code,/PhiAssimilation\?\.corpus/);
  assert.match(code,/parentQuery:lastSearchQuery/);
