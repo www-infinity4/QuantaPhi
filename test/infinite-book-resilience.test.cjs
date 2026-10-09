@@ -232,10 +232,10 @@ test('Asteroid waits for GPT evidence instead of displaying prewritten movie car
  const code=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
  const section=code.split("async function nextStory(query = '', options = {})")[1].split("window.addEventListener('quantaphi:search-start'")[0];
  assert.ok(section.includes('requireFresh=options.requireFresh!==false'));
- assert.ok(section.includes("root.querySelector('.ib-story').hidden=true"));
+ assert.ok(section.includes("card.hidden=false"));
  assert.ok(section.includes('discoverInBackground(roll, acceptNew)'));
  assert.ok(code.includes('strictGPT:true'));
- assert.ok(code.includes('RESEARCH_DEADLINE_MS = 52000'));
+ assert.ok(code.includes('RESEARCH_DEADLINE_MS = 120000'));
  assert.ok(code.includes('catalog.baseSectorCount||30'));
  assert.ok(code.includes('Four-roll path '));
 });
