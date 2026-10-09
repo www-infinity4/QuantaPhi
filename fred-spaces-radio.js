@@ -1,4 +1,4 @@
-/* Fred Spaces Radio v1. One yellow card, no pretend audio or browser-side wallet debits. */
+/* Fred Spaces Radio: yellow electric player-style card; genuine replays open on X. Cloud wallet charges only for explicitly approved curated-next links. */
 (() => {
   "use strict";
   const root = document.getElementById("fredSpacesRadio");
@@ -19,7 +19,7 @@
   const seenKey="phi:fred-spaces-seen:v1";
   const starsKey="phi:fred-spaces-stars:v1";
   const currentKey="phi:fred-spaces-current:v1";
-  let active=byId.get(FIRST), busy=false, unlocked=new Set(), balance=null, message="", stars=new Set(load(starsKey,[])), interestWeights=new Map();
+  let active=byId.get(FIRST), busy=false, unlocked=new Set(), balance=null, message="", stars=new Set(load(starsKey,[])), interestWeights=new Map(), selectedTopic="", selectedMode="search";
   function load(key,fallback){try {return JSON.parse(localStorage.getItem(key)||"null")??fallback;}catch{return fallback;}}
   function save(key,data){try{localStorage.setItem(key,JSON.stringify(data));}catch{}}
   function node(tag,cls,txt){const el=document.createElement(tag);if(cls)el.className=cls;if(txt!=null)el.textContent=String(txt);return el;}
@@ -46,10 +46,11 @@
       interestWeights=counts;
     }catch(e){console.warn("Fred Spaces Quant preferences temporarily unavailable",e);}
   }
+  function isReplayLink(episode){try{const u=new URL(episode.source);return ["x.com","twitter.com","www.x.com","www.twitter.com"].includes(u.hostname)&&/^\/i\/spaces\/[A-Za-z0-9]+\/?$/.test(u.pathname)}catch{return false}}
   function pickNext(){
     const old=new Set(load(seenKey,[]));old.add(active.id);
-    const candidates=episodes.filter(e=>e.id!==FIRST&&!old.has(e.id));
-    const pool=candidates.length?candidates:episodes.filter(e=>e.id!==FIRST&&e.id!==active.id);
+    const candidates=episodes.filter(e=>e.id!==FIRST&&isReplayLink(e)&&!old.has(e.id));
+    const pool=candidates.length?candidates:episodes.filter(e=>e.id!==FIRST&&isReplayLink(e)&&e.id!==active.id);
     if(!pool.length)return null;
     const interests=terms();
     const favoriteTopics=new Set(episodes.filter(e=>stars.has(e.id)).flatMap(e=>e.tags));
@@ -77,20 +78,20 @@
     if(!response.ok||!data.ok)throw new Error(data.message||data.error||"StarQuest could not confirm the charge.");
     return data;
   }
-  async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;const saved=byId.get(load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
+  async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
   function rememberEpisode(e){active=e;const seen=new Set(load(seenKey,[]));seen.add(e.id);save(seenKey,[...seen].slice(-1000));save(currentKey,e.id);}
   async function more(){
     if(busy)return;
     const next=pickNext();if(!next){note("No additional indexed episodes are available.");return;}
-    if(!next.audioUrl){note("More Fred episodes are indexed, but recording playback has not been connected yet. No StarCoins charged.");return;}
-    // This is an explicit charge for another curated discovery, not resale of X audio.
-    if(!window.confirm("Spend 1 full StarCoin to unlock and play another matched Fred Krueger Space?"))return;
+    // The fee is for curated discovery of a direct X replay link, not streaming rights.
+    // The source may require X sign-in or disappear. Display this before every new debit.
+    if(!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the curated episode: "+next.title+"? The replay opens on X, not inside QuantaPhi. X may require sign-in or may not offer playback. The StarCoin pays for curation, not guaranteed audio. Continue?"))return;
     busy=true;render();
     try{
       const data=await ledger("/v1/spaces/unlock","POST",{episodeId:next.id});
       if(!data.ok)throw new Error("Unlock was not confirmed.");
       balance=data.starCoins;unlocked.add(next.id);rememberEpisode(next);
-      message=(data.charged===1?"1 StarCoin spent. ":"Already unlocked; no new charge. ")+(next.audioUrl?"Ready to play.":"Recording source is linked; native audio is not yet available.");
+      message=(data.charged===1?"1 StarCoin spent for the curated episode link. ":"Already unlocked; no new charge. ")+"Use the play button to open the original replay on X.";
       window.dispatchEvent(new Event("focus"));
     }catch(error){message=error.message||"No StarCoin was charged. Please retry.";}
     finally{busy=false;render();}
