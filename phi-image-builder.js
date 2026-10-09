@@ -16,13 +16,13 @@ function notice(text){const area=host.dataset.stage==='finished'?'.pi-finished':
 function step(n,value,text){const el=$('[data-pi-step="'+n+'"]');if(el){el.dataset.state=value;el.lastElementChild.textContent=text||(value==='done'?'Done':value==='active'?'Working…':'Waiting')}}
 function initSteps(){names.forEach((_,i)=>step(i,'waiting'))}
 function contextStory(){
- if(!$('#pi-story').checked)return '';
+ if(!$('#pi-story')?.checked)return '';
  const title=document.querySelector('#infiniteBook .ib-title')?.textContent||'';
  const summary=document.querySelector('#infiniteBook .ib-summary')?.textContent||'';
  const source=document.querySelector('#infiniteBook .ib-source')?.href||'';
  return [title,summary.slice(0,260),source].filter(Boolean).join('. ');
 }
-function contextSearch(){return $('#pi-search').checked?String(document.getElementById('q')?.value||'').trim().slice(0,220):''}
+function contextSearch(){return $('#pi-search')?.checked?String(document.getElementById('q')?.value||'').trim().slice(0,220):''}
 function input(kind,title,subtitle){
  const item=make('label','pi-file');
  const img=make('img',kind==='source'?'pi-upload-image':'pi-design-image');img.alt='Reference preview';
@@ -46,11 +46,7 @@ function layout(){
  form.append(uploads);
  const prompt=make('textarea');prompt.id='pi-prompt';prompt.setAttribute('aria-label','Describe image to build');prompt.placeholder='Describe the image, style, words, and edits you want. Example: A beautiful vintage AM radio advertisement photographed like a 1950s magazine cover.';form.append(prompt);
  const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Exact printed words (optional; no imaginary letters)';exact.setAttribute('aria-label','Exact words to print on the finished image');form.append(exact);
- const opts=make('div','pi-options');
- for(const [name,text]of [['story','Use story as inspiration'],['search','Use current search']]){
-  const label=make('label');const cb=make('input');cb.type='checkbox';cb.id='pi-'+name;label.append(cb,document.createTextNode(text));opts.append(label)
- }
- form.append(opts,make('p','pi-notice',''));
+ form.append(make('p','pi-notice',''));
  const go=make('button','pi-primary','Build Image');go.type='button';go.dataset.piAction='build';form.append(go);
  const progress=make('div','pi-progress pi-panel');progress.append(make('h2','','Building your image'),make('p','pi-sub','The input card is replaced as each actual service step runs.'));
  const steps=make('div','pi-steps');names.forEach((name,i)=>{const row=make('div','pi-step');row.dataset.piStep=i;row.dataset.state='waiting';row.append(make('span','',name),make('small','','Waiting'));steps.append(row)});
@@ -60,7 +56,7 @@ function layout(){
  const img=make('img','pi-result');img.alt='Generated image result';done.append(img,make('p','pi-notice',''));
  const audit=make('div','pi-audit');audit.setAttribute('aria-live','polite');audit.append(make('strong','pi-audit-title','Visual review'),make('p','pi-audit-summary','Not yet reviewed.'),make('ul','pi-audit-issues'));done.append(audit);
  const actions=make('div','pi-actions');
- for(const [key,label,wide]of [['star','☆ Star'],['share','↗ Share +★'],['collect','+ Collect +★'],['good','✓ Looks good'],['fix','Fix issues',true],['more','Build more like this',true],['edit','Edit prompt'],['clear','Clear image'],['download','Save image']]){
+ for(const [key,label,wide]of [['fix','Fix image',true],['download','Save image'],['clear','Clear image']]){
   const b=make('button',wide?'pi-wide':'',label);b.type='button';b.dataset.piAction=key;actions.append(b)
  }
  done.append(actions);
@@ -228,5 +224,5 @@ async function reopenAsReference(instruction){
  finally{preparingReference=false}
 }
 layout();state('composer');
-window.PhiImageBuilder={prefill(text,{useStory=false}={}){$('#pi-prompt').value=String(text||'').slice(0,3000);$('#pi-story').checked=!!useStory},get:()=>({artifact,result,mode})};
+window.PhiImageBuilder={prefill(text){$('#pi-prompt').value=String(text||'').slice(0,3000)},get:()=>({artifact,result,mode})};
 })();
