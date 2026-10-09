@@ -628,7 +628,7 @@ const STOCK_LISTINGS=[
 ];
 function stockQueryIntent(query){
  const q=String(query||'').trim();
- if(!q||/\bstock\s+(photo|image|footage|video|inventory)\b/i.test(q))return false;
+ if(!q||/\bstock\s+(?:photos?|images?|photography|footage|videos?|inventory)\b/i.test(q))return false;
  return /\b(?:stock(?:s)?|share price|stock quote|ticker|market price|shares?)\b/i.test(q)
    || /\$[A-Z]{1,5}\b/.test(q)
    || /(?:^|\s)(?:META|GOOGL|GOOG|AAPL|MSFT|NVDA|TSLA|AMZN|IBM|AMD)(?=\s|$)/.test(q);
