@@ -1,0 +1,58 @@
+/* QuantaPhi Electric: each card retains its own color, adds a controlled luminous edge.
+   No pulsing layouts or seizure-risk strobing; keyboard / reduced-motion supported. */
+:root{--qe-violet:#8d51f1;--qe-deep:#4a1b90;--qe-glow:rgba(146,87,243,.28)}
+body{background:radial-gradient(ellipse at 50% -6%,#c9a5ff3d,transparent 44%),linear-gradient(180deg,#fbf8ff,#f6f2fd 65%,#fcfaff);color:#21132d}
+.app{position:relative}
+.qtop{gap:10px;align-items:center}
+.qtop h1{color:#52208c;text-shadow:0 0 11px #9b63ed6b,0 1px #fff;letter-spacing:-.8px}
+.qtop .qmenuBtn{border:1px solid #c3a2fc;background:linear-gradient(135deg,#6e29bd,#48138f);color:#fff;box-shadow:0 0 0 2px #e9dcff,0 0 19px #8e47dd92;min-height:45px;border-radius:16px;transition:box-shadow .18s,transform .18s}
+.qtop .qmenuBtn:hover,.qtop .qmenuBtn:focus-visible{box-shadow:0 0 0 3px #d8bbff,0 0 25px #ac62ff}
+.qtop .qmenuBtn:active{transform:scale(.97)}
+.qnewSearch{margin-left:auto;min-height:45px;padding:9px 14px;border-radius:999px;border:1px solid #b28eea;background:linear-gradient(145deg,#fff,#e6d5ff);color:#4a1b86;font-size:13px;font-weight:900;white-space:nowrap;box-shadow:0 0 0 1px #fff,0 0 16px #8f45d262;cursor:pointer;transition:transform .18s,box-shadow .18s}
+.qnewSearch:hover,.qnewSearch:focus-visible{box-shadow:0 0 0 3px #ead7ff,0 0 26px #9953f5ad}
+.qnewSearch:active{transform:scale(.97)}
+.qbalances .qtoken,.qbalances .qstar,body #controlPhiWalletButton{box-shadow:0 0 0 1px #ffffffa6,0 0 15px #a75ced7a!important}
+.qmenu:not([hidden]){border:1px solid #b57fe7;background:linear-gradient(160deg,#fcf9ff,#e7d6fb);box-shadow:0 13px 35px #4c21834f,0 0 15px #9753eb53;z-index:40}
+.qmenu a,.qmenu button{border:1px solid #d9bdf6!important;border-radius:999px!important;background:linear-gradient(140deg,#fff,#f2e8ff)!important;color:#4c2185!important;box-shadow:0 0 10px #b877fa26;font-size:13px}
+.qmenu a:hover,.qmenu button:hover,.qmenu a:focus-visible,.qmenu button:focus-visible{background:#e5d0ff!important;box-shadow:0 0 18px #9453d288}
+.search{border-radius:20px;box-shadow:0 12px 23px #a27cd12a;padding:10px 8px}
+.search input{border:2px solid #9a62ec;background:#fff;box-shadow:inset 0 0 10px #b995f526,0 0 10px #9462db42;min-width:0}
+.search #go,.qrefine button{border:1px solid #b78aff;border-radius:999px;background:linear-gradient(145deg,#7333ce,#4b1b94);box-shadow:0 4px 16px #814bd38a;color:#fff;min-height:44px;padding:8px 13px}
+.search #go:hover,.search #go:focus-visible{box-shadow:0 0 0 3px #e5d8fb,0 0 22px #9054e0c2}
+#result,.card,.mcard,.sponsorBoard,.qwalletBox,.book-shelf-link a{box-shadow:0 10px 27px #6a3eab24,0 0 0 1px #b88dec70,0 0 17px #986ad13b;border-radius:22px}
+#result{border:1px solid #d6b5f3;background:linear-gradient(145deg,#fff,#fcf9ff)}
+.qzone{--qe-card:#ad68f7;border-radius:22px;box-shadow:0 7px 17px #25154b16,0 0 0 1px color-mix(in srgb,var(--qe-card),transparent 43%),0 0 17px color-mix(in srgb,var(--qe-card),transparent 69%)!important}
+.qzoneRed{--qe-card:#f25f84;background:linear-gradient(155deg,#fff5f7,#ffe0e7);border-color:#eaa1b7}
+.qzoneYellow{--qe-card:#f5c83a;background:linear-gradient(155deg,#fffdf1,#fff0ab);border-color:#e4be59}
+.qzoneBlue{--qe-card:#5bacff;background:linear-gradient(155deg,#f7fbff,#d8edff);border-color:#9acbf0}
+.qzoneOrange{--qe-card:#f1a646;background:linear-gradient(155deg,#fff8f0,#ffe1b8);border-color:#e7b07f}
+.qzonePurple{--qe-card:#aa5bff;box-shadow:0 10px 25px #50218d57,0 0 0 1px #a75bfd9c,0 0 22px #a65fff7d!important}
+#infiniteBook .ib-story{box-shadow:0 10px 31px #b96c3452,0 0 0 1px #ffc98b,0 0 23px #ffaa5978}
+#infiniteBook .ib-next,#infiniteBook .ib-action,#infiniteBook .ib-build-link{transition:filter .16s,box-shadow .16s,transform .16s}
+#infiniteBook :is(.ib-next,.ib-action,.ib-build-link):hover,#infiniteBook :is(.ib-next,.ib-action,.ib-build-link):focus-visible{box-shadow:0 0 0 2px #fff,0 0 19px #ffc46f,0 5px 12px #8a54183d!important}
+#phiImageBuilder .pi-panel{box-shadow:0 12px 29px #407dc43a,0 0 0 1px #96c6ff,0 0 20px #58a9ff78}
+#phiImageBuilder .pi-audit{box-shadow:0 11px 27px #4817845e,0 0 19px #b978ff99}
+#phiImageBuilder :is(.pi-actions button,.pi-mode,.pi-primary):hover,#phiImageBuilder :is(.pi-actions button,.pi-mode,.pi-primary):focus-visible{filter:brightness(1.04);box-shadow:0 0 0 2px #fff,0 0 17px #9380f8c2}
+#fredSpacesRadio .fs-card{box-shadow:0 12px 34px #b2831d49,0 0 0 1px #ffe184,0 0 24px #ffd34b92}
+#fredSpacesRadio .fs-btn:hover,#fredSpacesRadio .fs-btn:focus-visible{box-shadow:0 0 0 2px #fff7cb,0 0 20px #fbd84dc4}
+.mcard{border:1px solid #d5b7f0;background:linear-gradient(155deg,#fff,#f7edff);overflow:hidden}
+.mcard.imageCard{border-color:#abceeb;background:linear-gradient(155deg,#f7fbff,#e8f3ff);box-shadow:0 9px 24px #468eda2e,0 0 18px #66aaff5c}
+.mcard.videoCard{border-color:#8257d9;box-shadow:0 11px 28px #4930887a,0 0 19px #8550ee73}
+.mcard.soundCard{border-color:#b277ec;box-shadow:0 11px 28px #49277674,0 0 19px #ab61f18c}
+.mcard :is(.cardShare,.cardCollect),.imageActions a,.videoActions a,.soundActions a{min-height:42px;border-radius:999px!important;box-shadow:0 0 13px #9d65dc54}
+.mcard :is(.cardShare,.cardCollect):hover,.mcard :is(.cardShare,.cardCollect):focus-visible{box-shadow:0 0 0 2px #fff,0 0 20px #a169e0a0}
+.sponsorBoard{border-color:#ba85e6}
+.book-shelf-link a{border:1px solid #ebc959;background:linear-gradient(135deg,#fff9d0,#ffe58e);box-shadow:0 5px 17px #d6aa4161,0 0 19px #fbd05766}
+.buttonPerson .mckeeCoinButton{filter:drop-shadow(0 0 11px #e2b641b5)}
+.buttonPerson .shoplcShirtButton{filter:drop-shadow(0 0 12px #0ec6d4a8)}
+.buttonPerson .bodyArm{box-shadow:0 5px 18px #27cb8d70,0 0 18px #47e0a27a}
+.buttonPerson .bodyLeg{box-shadow:0 7px 18px #2d7fd264,0 0 16px #4d9df384}
+.buttonPerson .bodyShoe{box-shadow:0 7px 17px #2c215999,0 0 16px #725ba484}
+.siteViewerBar{box-shadow:inset 0 -1px 0 #ae6afa83,0 0 14px #8c4dd97a}
+.siteViewerClose{border-radius:999px;box-shadow:0 0 14px #9d55f783}
+#controlPhiWalletPanel{box-shadow:0 0 0 1px #ad7cfa,0 0 25px #9252e16b!important}
+#controlPhiWalletPanel .cp-wallet-asset{box-shadow:0 0 12px #955dc73d}
+.qrefine input:focus-visible,.search input:focus-visible{outline:2px solid #a966ed;outline-offset:2px;box-shadow:0 0 20px #ba6bf9aa}
+:is(button,a,input,textarea,summary):focus-visible{outline:3px solid #9951f6;outline-offset:3px}
+@media(max-width:400px){.qnewSearch{padding:8px 11px;font-size:12px}.qtop{gap:7px}.qtop h1{font-size:25px}}
+@media(prefers-reduced-motion:reduce){.qnewSearch,.qmenuBtn,#infiniteBook .ib-action,#infiniteBook .ib-next,#infiniteBook .ib-build-link{transition:none!important}}
