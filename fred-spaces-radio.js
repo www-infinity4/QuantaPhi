@@ -114,6 +114,10 @@
     u.searchParams.set("from","fred-spaces");
     u.searchParams.set("episode",active.id);
     u.searchParams.set("episodeSource",active.source);
+    u.searchParams.set("assetType","media-star");
+    u.searchParams.set("assetTitle",active.title);
+    u.searchParams.set("assetDescription",active.description.slice(0,300));
+    if(tool!=="QuantaPhi")u.searchParams.set("buildPrompt","Include a reusable Media Star X Spaces player-style card with a golden star, microphone avatar, title, source description, and a direct button opening the original X replay. Do not simulate or claim hosted audio.");
     location.href=u.href;
   }
   function chooseTopic(tag){selectedTopic=selectedTopic===tag?"":tag;selectedMode="search";render();}
@@ -130,7 +134,10 @@
     u.searchParams.set("q",q);u.searchParams.set("intent",selectedMode);
     u.searchParams.set("topic",topic);u.searchParams.set("from","fred-spaces");
     u.searchParams.set("episode",active.id);u.searchParams.set("episodeSource",active.source);
-    if(selectedMode==="build")u.searchParams.set("buildPrompt","Create an original website about "+topic+" using this indexed Fred Krueger Space as context. Verify factual claims.");
+    u.searchParams.set("assetType","media-star");
+    u.searchParams.set("assetTitle",active.title);
+    u.searchParams.set("assetSource",active.source);
+    if(selectedMode==="build")u.searchParams.set("buildPrompt","Create an original website about "+topic+" with an embeddable Media Star card for "+active.title+". Credit the X Spaces source and use its original link, not simulated audio. Verify other factual claims.");
     location.assign(u.href);
   }
   const escapeMarkup=x=>String(x||'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
