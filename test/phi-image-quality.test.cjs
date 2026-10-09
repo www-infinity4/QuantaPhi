@@ -78,3 +78,32 @@ test('Infinite Book images can be viewed cleanly, attached, restored and shared 
  assert.doesNotMatch(code,/QuantaStarCredit/,'bridge must never mint coins or credit shares itself');
  assert.match(book,/QuantaStarCredit\?\.\('share'/,'existing successful-share credit remains in book');
 });
+
+test('image safety flags are terminal and return actionable feedback without a retry loop',()=>{
+ const worker=source('workers/infinity-rogers/worker.js');
+ const matcher=worker.match(/if\((\/\\b3030\\b\|output has been flagged\|.*?\/i)\.test\(message\)\)\{/);
+ assert.ok(matcher,'a provider flag check must be present in the model catch');
+ const blocked=new vm.Script('('+matcher[1]+')').runInNewContext();
+ assert.equal(blocked.test('3030: Your output has been flagged. Please choose another prompt / input image combination.'),true);
+ assert.equal(blocked.test('Cloudflare temporarily unavailable'),false);
+ assert.match(worker,/code:"image_input_flagged"/);
+ assert.match(worker,/code:"image_input_invalid"/);
+ assert.match(worker,/Do not try alternate prompts or models to work around the rejection/);
+});
+
+test('image rejection keeps the original inputs editable and offers photo removal',()=>{
+ const builder=source('phi-image-builder.js');
+ const adapter=source('phi-visual-render.js');
+ const css=source('phi-image-builder.css');
+ assert.match(adapter,/error\.code=String\(data\.code\|\|''\)/);
+ assert.match(builder,/error\?\.code==='image_input_flagged'/);
+ assert.match(builder,/remove-source/);
+ assert.match(builder,/remove-design/);
+ assert.match(builder,/Edit description or photo/);
+ assert.match(builder,/showFile\(null,kind\)/);
+ assert.match(css,/\.pi-upload-slot/);
+ assert.match(css,/\[hidden\]\{display:none!important\}/);
+ const html=source('index.html');
+ assert.match(html,/phi-image-builder\.js\?v=20261008-flag-recovery1/);
+ assert.match(html,/phi-visual-render\.js\?v=20261008-flag-recovery1/);
+});
