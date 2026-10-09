@@ -33,6 +33,9 @@
 #result .qdata-actions button:disabled{filter:grayscale(.75);opacity:.52;cursor:not-allowed}
 #result .qdata-oracle-card #qYellowDataList{list-style:none;max-height:505px;overflow-y:auto;overscroll-behavior:contain;margin:12px 0;padding:10px;display:grid;gap:7px;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));border-radius:17px;background:#fff7dc7e;border:1px solid #eabe66;scrollbar-color:#b7832d #fff5cb;scrollbar-width:thin}
 #result .qdata-oracle-card #qYellowDataList li{list-style:none;margin:0!important;padding:0!important;min-width:0;display:flex;gap:5px;align-items:stretch}
+#result .qdata-oracle-card #qYellowDataList li[hidden]{display:none!important}
+#result .qdata-oracle-card .qdata-filter{display:block;box-sizing:border-box;width:100%;margin:12px 0 0;padding:12px 14px;min-height:45px;font-size:14px;border-radius:14px;border:1px solid #e7bb5a;background:#fffbf0;color:#563507;box-shadow:inset 0 1px 6px #b37b2a18}
+#result .qdata-oracle-card .qdata-filter:focus-visible{outline:3px solid #7e4ab6;outline-offset:2px}
 #result .qdata-oracle-card .qdata-select{flex:1;min-width:0;text-align:left!important;display:flex;align-items:center;gap:8px;padding:9px 11px!important;line-height:1.35!important;background:#fff9e9!important;color:#573406!important;border:1px solid #edc36e!important;border-radius:13px!important;box-shadow:0 2px 7px #96621219;min-height:44px!important;font-size:13px!important;font-weight:800;white-space:normal!important}
 #result .qdata-oracle-card .qdata-select::before{content:"";flex:0 0 15px;width:15px;height:15px;border:2px solid #a57323;border-radius:5px;background:#fff;box-sizing:border-box}
 #result .qdata-oracle-card .qdata-select.is-selected,#result .qdata-oracle-card .qdata-select[aria-pressed=true]{background:linear-gradient(135deg,#3f290b,#65400e)!important;color:#fff4c9!important;border-color:#f4c85d!important;box-shadow:0 0 0 2px #ffdf7b,0 0 14px #efac39a8}
