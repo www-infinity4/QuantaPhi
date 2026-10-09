@@ -13,14 +13,29 @@
   const queuedQueries = [];
   let lastSearchRun = null;
   let lastSearchQuery = initialQuery || '';
-  // A search produces the sourced story below the five-part overview, after Assimilation.
-  // The idle page retains the original orange-card position above the image builder.
+  // One durable story reader with two distinct presentations:
+  // home: Infinity Reads & Realms, no asteroid; search: Asteroid inside the
+  // result card AFTER all five AI overview regions, including Assimilation.
   function placeSearchStory(){
     const result=document.getElementById('result');
-    if(result&&result.parentElement&&root.previousElementSibling!==result){
-      result.insertAdjacentElement('afterend',root);
-    }
+    if(result&&root.parentElement!==result)result.append(root);
     root.dataset.context='search';
+    const name=root.querySelector('.ib-head strong'),next=root.querySelector('.ib-next');
+    if(name)name.textContent='ASTEROID · EVIDENCE INTO STORY';
+    if(next)next.textContent='Another secret · +1 ★';
+    const label=root.querySelector('.ib-asteroid-label');
+    if(label)label.textContent='ASTEROID · ORIGINAL SOURCED STORY';
+  }
+  function placeHomeStory(){
+    const shelf=document.querySelector('.book-shelf-link');
+    if(shelf?.parentElement&&root.nextElementSibling!==shelf)shelf.parentElement.insertBefore(root,shelf);
+    root.dataset.context='home';
+    root.removeAttribute('aria-busy');
+    const name=root.querySelector('.ib-head strong'),next=root.querySelector('.ib-next');
+    if(name)name.textContent='INFINITY READS & REALMS · STORIES OF MYSTERY, ADVENTURE & SUSPENSE';
+    if(next)next.textContent='Another story';
+    const label=root.querySelector('.ib-asteroid-label');
+    if(label)label.textContent='INFINITY READS & REALMS';
   }
   const E = (tag, cls, value) => {
     const el = document.createElement(tag);
@@ -64,7 +79,7 @@
     const copy=E('div','ib-asteroid-copy');
     copy.append(E('small','ib-asteroid-label','ASTEROID · ORIGINAL SOURCED STORY'),E('div', 'ib-category'), E('h2', 'ib-title'));
     hero.append(asteroid,E('div','ib-asteroid-shade'),copy);
-    card.append(hero,E('p','ib-summary','',''));
+    card.append(hero,E('p','ib-summary'));
     const detail = E('details', 'ib-details');
     detail.append(E('summary', '', 'Expand to read the full story'), E('p', 'ib-full'));
     const source = E('a', 'ib-source', 'View original source ↗');
@@ -236,7 +251,7 @@
     note(roll?.bracketKey ? 'Four-roll path '+roll.bracketKey+' · '+(roll.indexWord||'')+' · '+(roll.refinement||'')+' · '+(roll.storyDirection||'') : 'Sourced discovery');
     window.PhiAssimilation?.signal?.({kind:'story',action:'open',id:'ci_view_'+String(story.id).replace(/[^A-Za-z0-9_-]/g,'_').slice(0,120),key:story.id,title:story.title,query:lastSearchQuery,terms:indexedSearchTerms(story)});
     window.dispatchEvent(new CustomEvent('phi:story:render',{detail:{id:story.id,title:story.title}}));
-    if(window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story))scheduleAutoIllustration(story);
+    if(root.dataset.context==='search'&&window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story))scheduleAutoIllustration(story);
   }
   function rollDice(query='') {
     const profile = window.PhiInfiniteBookDiscover?.preferences(query,catalog);
@@ -487,7 +502,11 @@
     if (!target || !root.contains(target)) return;
     const action = target.dataset.bookAction;
     if(action!=='next')interactedWithStory = true;
-    if (action === 'next') { event.preventDefault(); void nextStory('',{rewardSpin:true,researchBranch:'Another secret'}); }
+    if (action === 'next') {
+      event.preventDefault();
+      if(root.dataset.context==='home'){showHomeStory(true);return}
+      void nextStory('',{rewardSpin:true,researchBranch:'Another secret'});
+    }
     if(action==='research'&&current){
       event.preventDefault();
       const query=String(target.dataset.researchQuery||'').trim();
@@ -520,10 +539,27 @@
     }
   });
   root.addEventListener('toggle',event=>{if(event.target?.classList?.contains('ib-details')&&event.target.open&&current){interactedWithStory=true;window.PhiAssimilation?.signal?.({kind:'story',action:'expand',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)})}},true);
+  function showHomeStory(rotate=false){
+    if(!catalog)return;
+    placeHomeStory();
+    const options=(catalog.stories||[]).filter(x=>storyValid(x)&&!/(?:\\bfilm\\b|\\bmovie\\b|\\btelevision series\\b|\\btrailer\\b)/i.test(x.title));
+    if(!options.length){note('The sourced story collection is unavailable. Try again later.');return}
+    const candidates=rotate?options.filter(x=>x.id!==current?.id):options;
+    const story=candidates[rand(candidates.length)]||options[0];
+    render(story);
+    note('Original sourced collection · browse a story or start a search to create an Asteroid narrative with GPT.');
+  }
+  window.addEventListener('quantaphi:new-search',()=>{
+    ++activeStoryTicket;
+    artRequested=null;
+    lastSearchQuery='';lastSearchRun=null;
+    if(catalog)showHomeStory(false);
+    else {placeHomeStory();note('Loading the original story collection…')}
+  });
   async function init() {
     cardLayout();
-    if(initialQuery?.trim())placeSearchStory();
-    note('Loading sourced discoveries…');
+    if(initialQuery?.trim())placeSearchStory();else placeHomeStory();
+    note('Loading Infinity Reads & Realms…');
     try {
       const response = await fetch(CATALOG_URL, { cache: 'no-cache' });
       if (!response.ok) throw new Error('Story catalog HTTP ' + response.status);
@@ -533,8 +569,8 @@
           !Array.isArray(catalog.sourceClasses) || catalog.sourceClasses.length !== 10) {
         throw new Error('Story discovery configuration is invalid');
       }
-      // Old catalog films and cached encyclopedia blurbs are excluded from Asteroid.
-      // A missing/slow server feed must never delay the first story card.
+      // The home story is a properly attributed catalog story, not a fake GPT article.
+      // Only explicit searches enter the separate Asteroid / GPT research flow.
       // No speculative background stories or artwork.
       void (async()=>{try{const raw=window.PhiInfiniteBookBanksUrl;if(!raw)return;const u=new URL(raw,location.origin);if(u.origin!==location.origin&&u.origin!=='https://infinite-book-library.marvaseater.workers.dev')return;const r=await fetch(u.href,{signal:AbortSignal.timeout(7500)});if(!r.ok)return;const data=await r.json();if(!Array.isArray(data.subjects))return;const ids=new Set(catalog.wordIndex.map(x=>x.id));for(const w of data.subjects){if(!Number.isSafeInteger(Number(w.id))||ids.has(Number(w.id))||!Array.isArray(w.sectors)||!w.word)continue;catalog.wordIndex.push({id:Number(w.id),word:String(w.word).slice(0,120),sector:Number(w.sectors[0]),sectors:w.sectors});ids.add(Number(w.id));}}catch(e){console.warn('Book words offline; bundled words retained',e)}})();
 
@@ -548,8 +584,11 @@
           note('Rebuilding the shared story from evidence with GPT…');
           await nextStory(u.searchParams.get('bookTitle'));
         } else await nextStory();
-      } else {
+      } else if(initialQuery?.trim()){
+        placeSearchStory();
         await nextStory(lastSearchQuery);
+      }else{
+        showHomeStory();
       }
       refillReadyStories();
     } catch (error) {
