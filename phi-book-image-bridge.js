@@ -54,16 +54,20 @@ const panelActions=make('div','ib-illustration-actions');
 for(const [action,label] of [['view','View clear image'],['remove','Clear image']]){
  const button=make('button','ib-action',label);button.type='button';button.dataset.ibImage=action;panelActions.append(button)
 }
-panel.append(picture,description,panelActions);
+panel.append(picture,description);
+panelActions.hidden=true;
 function placePanel(){
- const hero=storyCard()?.querySelector('.ib-asteroid-hero');
+ const card=storyCard(),hero=card?.querySelector('.ib-asteroid-hero');
  if(hero&&panel.parentElement!==hero)hero.insertBefore(panel,hero.querySelector('.ib-asteroid-shade'));
+ const actions=card?.querySelector('.ib-actions');
+ if(actions&&panelActions.parentElement!==card)actions.after(panelActions);
 }
 async function refresh(){
  const ticket=++renderTicket,id=storyId();
  placePanel();
  visibleIllustration=null;
  panel.hidden=true;
+ panelActions.hidden=true;
  picture.removeAttribute('src');
  if(currentObjectUrl){URL.revokeObjectURL(currentObjectUrl);currentObjectUrl=''}
  if(!id)return;
@@ -76,6 +80,7 @@ async function refresh(){
   picture.alt='Created illustration for '+(record.storyTitle||storyTitle());
   description.textContent='Your story illustration · saved on this device';
   panel.hidden=false;
+  panelActions.hidden=false;
   visibleIllustration={storyId:id,artifactId:record.artifactId,createdAt:record.createdAt};
  }catch(error){console.warn('Phi story image unavailable',error)}
 }
@@ -206,4 +211,5 @@ async function attachGenerated(story,blob,metadata={}){
 }
 window.PhiBookImageBridge={shareStory,refresh,hasStored,attachGenerated,attached:()=>visibleIllustration};
 void refresh();
+window.dispatchEvent(new CustomEvent('phi:book:image-bridge-ready'));
 })();
