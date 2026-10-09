@@ -56,8 +56,8 @@ for(const [action,label] of [['view','View clear image'],['remove','Clear image'
 }
 panel.append(picture,description,panelActions);
 function placePanel(){
- const card=storyCard(),details=card?.querySelector('.ib-details');
- if(card&&details&&panel.parentElement!==card)card.insertBefore(panel,details)
+ const hero=storyCard()?.querySelector('.ib-asteroid-hero');
+ if(hero&&panel.parentElement!==hero)hero.insertBefore(panel,hero.querySelector('.ib-asteroid-shade'));
 }
 async function refresh(){
  const ticket=++renderTicket,id=storyId();
@@ -99,17 +99,7 @@ function hidePreview(){
  modal.removeAttribute('open');modal.classList.remove('pi-dialog-fallback');
  fullImage.removeAttribute('src');
 }
-const actionArea=builder.querySelector('.pi-finished .pi-actions');
-if(actionArea){
- for(const [key,label] of [['preview','View clear image'],['attach','Update story image']]){
-  const b=make('button','pi-wide',label);b.type='button';b.dataset.piBook=key;actionArea.append(b)
- }
-}
-const sourceArea=builder.querySelector('.pi-composer .pi-options');
-if(sourceArea){
- const add=make('button','pi-add-story','Add visible story to prompt');add.type='button';add.dataset.piBook='use-story';
- sourceArea.after(add);
-}
+// The separate image builder stays compact; story images attach automatically.
 book.addEventListener('click',event=>{
  const target=event.target.closest('[data-book-action="illustrate"]');
  if(target){
@@ -201,6 +191,19 @@ async function shareStory(story,url){
   return{handled:true,success:false,message:error?.name==='AbortError'?'Share cancelled. No credit issued.':'Could not share story and picture: '+String(error?.message||error)}
  }
 }
-window.PhiBookImageBridge={shareStory,refresh,attached:()=>visibleIllustration};
+async function hasStored(id){
+ try{return Boolean((await stored(id))?.blob)}catch{return false}
+}
+async function attachGenerated(story,blob,metadata={}){
+ if(!story?.id||!blob||!['image/jpeg','image/png','image/webp'].includes(blob.type))throw Error('Invalid automatically reviewed story image');
+ if(metadata?.review?.status!=='good'||!(Number(metadata.review.score)>=75))throw Error('Image has not passed visual review');
+ if(await hasStored(story.id))return {ok:true,reused:true};
+ await write({storyId:story.id,storyTitle:String(story.title||'').slice(0,180),
+  artifactId:'asteroid-auto-'+String(story.id),blob,review:metadata.review,renderer:metadata.renderer,createdAt:new Date().toISOString()});
+ if(storyId()===story.id)await refresh();
+ window.dispatchEvent(new CustomEvent('phi:story:image-attached',{detail:{storyId:story.id,artifactId:'asteroid-auto-'+story.id,automatic:true}}));
+ return {ok:true};
+}
+window.PhiBookImageBridge={shareStory,refresh,hasStored,attachGenerated,attached:()=>visibleIllustration};
 void refresh();
 })();
