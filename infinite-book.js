@@ -45,7 +45,7 @@
     textSafe(story.full).length > 30 && trustedUrl(story.sourceUrl) &&
     !window.PhiInfiniteBookDiscover?.isPlaceProfile?.(story) &&
     !window.PhiInfiniteBookDiscover?.isGenericProfile?.(story) &&
-    (story.discoverySource !== 'live' || window.PhiInfiniteBookDiscover?.isSecretStory?.(story) !== false);
+    (window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story) || story.discoverySource !== 'live' || window.PhiInfiniteBookDiscover?.isSecretStory?.(story) !== false);
   const byId = new Map();
   let catalog = null;
   let current = null;
@@ -58,13 +58,13 @@
     const header = E('div', 'ib-head');
     header.append(E('strong', '', 'ASTEROID · EVIDENCE INTO STORY'), E('button', 'ib-next', 'Another secret · +1 ★'));
     header.lastChild.type = 'button'; header.lastChild.dataset.bookAction = 'next';
-    const card = E('article', 'ib-story');
+    const card = E('article', 'ib-story');card.dataset.ready='false';
     const hero=E('div','ib-asteroid-hero');
     const asteroid=E('img','ib-asteroid-rock');asteroid.src=ASTEROID_ART;asteroid.alt='Rocky asteroid with illuminated craters';asteroid.decoding='async';
     const copy=E('div','ib-asteroid-copy');
     copy.append(E('small','ib-asteroid-label','ASTEROID · ORIGINAL SOURCED STORY'),E('div', 'ib-category'), E('h2', 'ib-title'));
     hero.append(asteroid,E('div','ib-asteroid-shade'),copy);
-    card.append(hero,E('p','ib-summary'));
+    card.append(hero,E('p','ib-summary','',''));
     const detail = E('details', 'ib-details');
     detail.append(E('summary', '', 'Expand to read the full story'), E('p', 'ib-full'));
     const source = E('a', 'ib-source', 'View original source ↗');
@@ -91,6 +91,8 @@
     const status = E('p', 'ib-status');
     status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
     card.append(detail, actions, build);
+    copy.querySelector('.ib-title').textContent='Researching the next Asteroid story';
+    card.querySelector('.ib-summary').textContent='GPT is gathering documented evidence and writing an original Mystery, Adventure or Suspense story.';
     root.append(header, card, status);
   }
   function note(message) { const p = root.querySelector('.ib-status'); if (p) p.textContent = message; }
@@ -204,7 +206,7 @@
   }
   function render(story, roll) {
     current = story; interactedWithStory = false; remember(story.id);
-    const card=root.querySelector('.ib-story');card.hidden=false;root.removeAttribute('aria-busy');
+    const card=root.querySelector('.ib-story');card.hidden=false;card.dataset.ready='true';root.removeAttribute('aria-busy');
     root.querySelector('.ib-category').textContent = [
       story.mood||window.PhiInfiniteBookDiscover?.storyMood?.(lastSearchQuery,roll)||'Mystery',
       catalog.sectors.find(s => s.id === story.sector)?.name || 'Surprising history',
@@ -383,7 +385,14 @@
     };
     // No catalog film or encyclopedia excerpt is shown instead of a GPT narrative.
     const ready = requireFresh?null:pickUnique(roll, seenIds());
-    if(requireFresh){root.querySelector('.ib-story').hidden=true;root.setAttribute('aria-busy','true')}
+    if(requireFresh){
+      current=null;interactedWithStory=false;
+      const card=root.querySelector('.ib-story');card.hidden=false;card.dataset.ready='false';delete card.dataset.storyId;
+      root.querySelector('.ib-category').textContent='SOURCED '+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery').toUpperCase();
+      root.querySelector('.ib-title').textContent='Researching '+String(query||roll.indexWord||'your next subject').slice(0,110);
+      root.querySelector('.ib-summary').textContent='Finding original sources for GPT. The verified narrative and its illustration will replace this research message.';
+      root.setAttribute('aria-busy','true');window.dispatchEvent(new CustomEvent('phi:story:reset'));
+    }
     // On a new search show the prepared story immediately, then replace only
     // if source-backed discovery verifies a more relevant event for that search.
     if (ready) {
@@ -403,8 +412,8 @@
         : 'New historical discovery · cited source');
     };
     void discoverInBackground(roll, acceptNew)
-      .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.hidden){root.removeAttribute('aria-busy');note('The research services could not verify and write a GPT story for this search. No invented story or image was displayed; try a more specific source angle.')}})
-      .catch(error=>{console.warn('Asteroid research unavailable',error);if(ticket===activeStoryTicket){root.removeAttribute('aria-busy');note('Could not complete sourced GPT writing for this topic. No story was invented.')}});
+      .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.dataset.ready!=='true'){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent='No source-backed GPT story was completed for this search. Try another research angle or a more specific topic.';note('Asteroid could not verify a finished narrative. No film or unsupported text was substituted.')}})
+      .catch(error=>{console.warn('Asteroid research unavailable',error);if(ticket===activeStoryTicket){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent='Research was interrupted. Try another search; no unsupported story was created.';note('Could not complete sourced GPT writing for this topic.')}});
   }
   window.addEventListener('quantaphi:search-start', event=>{
     const query=String(event.detail?.query||'').trim();
