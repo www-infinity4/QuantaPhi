@@ -288,6 +288,8 @@ async function readPublicSourcePages(sources){
 }
 async function writeSecretStory(sources,plan,roll){
  const pageEvidence=await readPublicSourcePages(sources);
+ const conciseSources=sources.slice(0,10).map(x=>({title:x.title,url:x.url,summary:String(x.summary||'').slice(0,260)}));
+ const readablePages=pageEvidence.slice(0,2).map(x=>({url:x.url,title:x.title,excerpt:x.excerpt.slice(0,1600)}));
  const prompt=[
   'You are writing Infinity Reads & Realms of mystery, adventure and suspense. Write an ORIGINAL enjoyable historical nonfiction story card about ONE concrete unusual event, discovery, demonstration, artifact, overlooked person-specific incident or experiment. Never a general biography.',
   'Example of the required difference: "Nikola Tesla" is NOT a story; his 1898 radio-controlled boat demonstration IS the kind of precise event we want, but do not choose it unless the actual evidence here concerns that event.',
@@ -297,10 +299,10 @@ async function writeSecretStory(sources,plan,roll){
   'The final direction is '+(plan.direction||'discovery')+'. It guides which supported story to select, not a license to fabricate. Future possibilities must be labeled as possibilities. For educational mathematics include a correct simple equation, SI units, a worked example with explicit assumptions, and a verified source for constants.',
   'Both source URLs must refer to the same specific incident or artifact; if they only share the same famous subject return {"insufficient":true}.',
   'Quote no sentences verbatim. No invented dates, dialogue, motives, achievements, conspiracies or scientific claims. Mark legends and contested claims accurately.',
-  'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 original words","full":"100-210 original words in two paragraphs","detail":"short exact surprising fact","status":"documented|reported|contested|corrected myth|folklore","evidence_urls":["exact URL of source 1","exact URL of source 2"]}.',
+  'Return JSON ONLY with {"title":"specific event headline","summary":"40-85 original words","full":"280-450 original words in 3-5 distinct paragraphs","detail":"short exact surprising fact","status":"documented|reported|contested|corrected myth|folklore","evidence_urls":["exact URL of source 1","exact URL of source 2"]}.',
   'Rolled combination '+plan.combination+'; indexed topic '+(plan.indexedWord||plan.focus)+'; story refinement '+(plan.realm||plan.angle)+'; story direction '+(plan.direction||'')+'; source class '+plan.sourceClass+'; focus '+plan.focus+'. Storytelling lens '+(plan.storytellingRealm||'History')+' shapes narrative structure ONLY. Do not invent facts, quotes, fictional experiences or unresolved outcomes.',
-  'Search results are snippets, not whole documents: '+JSON.stringify(sources),
-  'Retrieved public source-page excerpts (the only directly fetched page passages): '+JSON.stringify(pageEvidence),
+  'Search results are snippets, not whole documents: '+JSON.stringify(conciseSources),
+  'Retrieved public source-page excerpts (the only directly fetched page passages): '+JSON.stringify(readablePages),
   'Use retrieved page text for stronger factual grounding when available. Never claim an inaccessible full page was read. Return insufficient when sources cannot support the event.'
  ].join('\n');
  const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
@@ -313,7 +315,7 @@ async function writeSecretStory(sources,plan,roll){
  const matched=sources.filter(x=>cited.includes(x.url));
  if(new Set(matched.map(x=>origin(x.url))).size<2||!detailsSupported(obj.detail,matched,plan.focus))return null;
  return {title:clean(obj.title).slice(0,180),summary:clean(obj.summary).slice(0,650),
-  full:String(obj.full).trim().slice(0,2300),detail:clean(obj.detail).slice(0,240),
+  full:String(obj.full).trim().slice(0,4200),detail:clean(obj.detail).slice(0,240),
   status:['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported',
   supported:matched,fullEvidenceRead:pageEvidence.length};
 }
