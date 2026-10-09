@@ -183,3 +183,8 @@ body{background:radial-gradient(ellipse at 50% -6%,#c9a5ff3d,transparent 44%),li
 #infiniteBook .ib-status{color:#d7c2f3!important;margin:8px 16px!important}
 @media(max-width:390px){#infiniteBook .ib-asteroid-hero,#infiniteBook .ib-asteroid-copy{min-height:246px}#infiniteBook .ib-asteroid-rock{width:148px;right:-18px}#infiniteBook .ib-asteroid-copy{padding:17px 12px 18px}#infiniteBook .ib-title{font-size:21px!important}#infiniteBook .ib-illustration-actions button{font-size:9px!important;padding:6px!important}}
 @media(prefers-reduced-motion:reduce){#infiniteBook :is(.ib-action,.ib-next,.ib-build-link,.ib-research-branch){transition:none}}
+
+/* Keep picture controls out of the transparent image underlay so they're tappable. */
+#infiniteBook .ib-illustration-actions{position:static!important;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:7px;margin:8px 15px 10px}
+#infiniteBook .ib-illustration-actions[hidden]{display:none!important}
+#infiniteBook .ib-illustration-actions button{font-size:11px!important;min-height:40px!important;padding:8px 12px!important;background:#f4eaff!important;color:#261341!important;border-color:#c5a1fd!important;box-shadow:0 0 16px #ac72ff80!important}
