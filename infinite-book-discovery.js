@@ -327,7 +327,7 @@ async function writeSecretStory(sources,plan,roll){
   'Use retrieved page text for stronger factual grounding when available. Never claim an inaccessible full page was read. Return insufficient when sources cannot support the event.'
  ].join('\n');
  const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
-  body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,combination:plan.combination,sourceCount:sources.length}}})},45000);
+  body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',generationId:global.crypto?.randomUUID?.()||Date.now()+'-'+Math.random(),verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,combination:plan.combination,sourceCount:sources.length}}})},45000);
  if(data?.ok===false)return null;
  const obj=jsonAnswer(textAnswer(data));
  if(!obj||obj.insufficient||!legitimateNarrative(obj))return null;
@@ -433,7 +433,7 @@ async function writeWikipediaStory(page,plan,roll){
  ].join('\n');
  try{
   const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
-   body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',
+   body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',generationId:global.crypto?.randomUUID?.()||Date.now()+'-'+Math.random(),
     verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},45000);
   if(data?.ok===false)return null;
   const out=jsonAnswer(textAnswer(data));
@@ -474,7 +474,7 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
   for(const page of Object.values(reply.value?.query?.pages||{})){
    const full=wikiExcerpt(page.extract);
    const title=clean(page.title), id='wiki-'+page.pageid;
-   if(!Number.isInteger(page.pageid)||!title||seen.has(id)||full.length<240)continue;
+   if(!Number.isInteger(page.pageid)||!title||seen.has(id)||seen.has('wiki-gpt-'+page.pageid)||seen.has('url:https://en.wikipedia.org/?curid='+page.pageid)||full.length<240)continue;
    if(/^(List of|Index of|Timeline of|Category:|20[0-9][0-9] in |[0-9]{4} in )/i.test(title))continue;
    if(/may refer to|is a disambiguation page/i.test(full.slice(0,200)))continue;
    if(/television series|fictional character|video game series/i.test(full.slice(0,200)) && roll.sector!==21)continue;

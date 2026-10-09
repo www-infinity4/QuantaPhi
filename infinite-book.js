@@ -421,7 +421,7 @@
       present(ready, roll);
       if(!spinSubmitted)note(roll?.bracketKey ? 'Ready · '+roll.indexWord+' · '+roll.refinement+' · '+roll.storyDirection : 'Ready · source-backed story');
     } else {
-      note('ASTEROID · researching '+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery')+' from real sources for GPT to write. The card appears only when evidence supports the story…');
+      note((root.dataset.context==='home'?'Reads & Realms · researching ':'ASTEROID · researching ')+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery')+' from real sources for GPT to write. The card appears only when evidence supports the story…');
     }
     const acceptNew = story => {
       // Do not replace a visible story on an unsuspecting reader.
@@ -511,7 +511,7 @@
     if(action!=='next')interactedWithStory = true;
     if (action === 'next') {
       event.preventDefault();
-      if(root.dataset.context==='home'){showHomeStory(true);return}
+      if(root.dataset.context==='home'){void nextStory('',{requireFresh:true,rewardSpin:true,researchBranch:'Another secret'});return}
       void nextStory('',{rewardSpin:true,researchBranch:'Another secret'});
     }
     if(action==='research'&&current){
@@ -546,20 +546,11 @@
     }
   });
   root.addEventListener('toggle',event=>{if(event.target?.classList?.contains('ib-details')&&event.target.open&&current){interactedWithStory=true;window.PhiAssimilation?.signal?.({kind:'story',action:'expand',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)})}},true);
-  function showHomeStory(rotate=false){
+  function showHomeStory(){
     if(!catalog)return;
     placeHomeStory();
-    const options=(catalog.stories||[]).filter(x=>storyValid(x)&&!/(?:\\bfilm\\b|\\bmovie\\b|\\btelevision series\\b|\\btrailer\\b)/i.test(x.title));
-    if(!options.length){note('The sourced story collection is unavailable. Try again later.');return}
-    const candidates=rotate?options.filter(x=>x.id!==current?.id):options;
-    // Keep the same opener across refreshes, so page reloads do not generate
-    // a new paid image or consume a new random story every time.
-    let previous='';
-    if(!rotate)try{previous=localStorage.getItem(HOME_STORY_KEY)||''}catch(_){}
-    const story=(!rotate&&options.find(x=>x.id===previous))||candidates[rand(candidates.length)]||options[0];
-    try{localStorage.setItem(HOME_STORY_KEY,story.id)}catch(_){}
-    render(story);
-    note('Original sourced collection · browse a story or start a search to create an Asteroid narrative with GPT.');
+    // The opener uses the same live writer as search stories, without an asteroid.
+    void nextStory('',{requireFresh:true});
   }
   window.addEventListener('quantaphi:new-search',()=>{
     ++activeStoryTicket;
