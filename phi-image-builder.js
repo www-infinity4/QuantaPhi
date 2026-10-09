@@ -168,8 +168,8 @@ async function build({retryRender=false}={}){
   }else if(error?.code==='image_input_invalid'){
    notice('The renderer could not accept this request. Check the description and uploaded images, then build again. Your inputs are preserved.');
    $('[data-pi-action="back"]').textContent='Edit description or photo';
-  }else if(error?.status===429||error?.code==='provider_rate_limited'){
-   notice('The image provider is temporarily busy or has a service-level limit. The site has no 20-image daily ceiling. Your description is saved and can be retried.');
+  }else if(error?.status===429||error?.code==='provider_rate_limited'||error?.code==='cloudflare_ai_capacity_or_limit'){
+   notice(error?.code==='cloudflare_ai_capacity_or_limit'?'Cloudflare Workers AI reached a capacity, rate, or usage limit. Check Workers AI usage in Cloudflare, or retry after the daily reset. Your description is saved.':'The image provider is temporarily busy or has a service-level limit. Your description is saved and can be retried.');
    $('[data-pi-action="back"]').textContent='Back to saved description';
   }else{
    const transient=phase===2&&(error?.code==='image_render_timeout'||error?.code==='image_render_network'||error?.code==='image_render_bad_response'||error?.status>=500);
