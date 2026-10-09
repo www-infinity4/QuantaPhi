@@ -106,7 +106,7 @@ test('image rejection keeps the original inputs editable and offers photo remova
  assert.match(css,/\.pi-upload-slot/);
  assert.match(css,/\[hidden\]\{display:none!important\}/);
  const html=source('index.html');
- assert.match(html,/phi-image-builder\.js\?v=20261008-minimal-image1/);
+ assert.match(html,/phi-image-builder\.js\?v=20261008-minimal-image2/);
  assert.match(html,/phi-visual-render\.js\?v=20261008-textclean3/);
 });
 
@@ -116,7 +116,7 @@ test('search-generated sourced story is displayed after the overview assimilatio
  assert.match(book,/function placeSearchStory\(/);
  assert.match(book,/result\.insertAdjacentElement\('afterend',root\)/);
  assert.match(book,/window\.addEventListener\('quantaphi:search-start'/);
- assert.match(html,/infinite-book\.js\?v=20261008-asteroid-story2/);
+ assert.match(html,/infinite-book\.js\?v=20261008-asteroid-story3/);
  // Layout must be deterministic before scripts run: no flash of the story above the overview.
  assert.ok(html.indexOf('id="result"') < html.indexOf('id="infiniteBook"'),'Overview must precede story card in the HTML');
  assert.ok(html.indexOf('id="infiniteBook"') < html.indexOf('id="phiImageBuilder"'),'Story and illustration come before the image builder');
@@ -132,7 +132,7 @@ test('completed story images automatically attach and update is not a redundant 
  assert.match(bridge,/visibleIllustration\?\.artifactId===data\?\.artifact\?\.id/);
  assert.match(bridge,/\[data-pi-action="fix"\]/);
  assert.match(bridge,/storeName='stories'/);
- assert.match(source('index.html'),/phi-book-image-bridge\.js\?v=20261008-asteroid-art1/);
+ assert.match(source('index.html'),/phi-book-image-bridge\.js\?v=20261008-asteroid-art2/);
  assert.match(bridge,/\['remove','Clear image'\]/,'reader can clear a stored story illustration');
  assert.match(source('phi-image-builder.js'),/\['clear','Clear image'\]/,'builder can clear finished pixels independently');
  assert.match(source('phi-image-builder.js'),/if\(action==='clear'\)/,'clear has a real click handler');
@@ -221,4 +221,24 @@ test('Asteroid presents GPT evidence narratives with a real reviewed image behin
  assert.match(writer,/eligibleNarrative/);
  assert.doesNotMatch(book,/for \(const story of \[\.\.\.\(catalog\.stories/);
  assert.ok(book.indexOf('id="result"')===-1);
+});
+
+test('image render completion never references a removed result Star button',()=>{
+ const builder=source('phi-image-builder.js');
+ assert.doesNotMatch(builder,/\$\('\[data-pi-action="star"\]'\)\.textContent/);
+ assert.match(builder,/\$\('\.pi-result'\)\.src=result/);
+ assert.match(builder,/state\('finished'\)/);
+ assert.match(builder,/emit\('build:done',artifact\)/);
+ const worker=source('workers/infinity-rogers/worker.js');
+ assert.match(worker,/const mime=header\.startsWith/);
+ assert.match(worker,/data:"\+mime\+";base64,/);
+});
+test('Asteroid card remains visible while evidence and GPT writing run',()=>{
+ const book=source('infinite-book.js'),css=source('phi-electric-theme.css');
+ assert.match(book,/card\.dataset\.ready='false'/);
+ assert.match(book,/card\.dataset\.ready='true'/);
+ assert.match(book,/window\.dispatchEvent\(new CustomEvent\('phi:story:reset'\)\)/);
+ assert.match(css,/\.ib-story\[data-ready="false"\]/);
+ const writer=source('infinite-book-discovery.js');
+ assert.match(writer,/legitimateNarrative\(story\)/);
 });
