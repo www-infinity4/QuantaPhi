@@ -78,7 +78,7 @@ function parsePackages(payload,allowed,sourceUrls){
 function fallbackPackages(chosen,q){
  // When AI research is unavailable, present useful *questions* instead of invented links.
  const groups=new Map();
- for(const x of chosen){const k=x.categories[0]||'other';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(x);}
+ for(const x of chosen.filter(x=>x.score>=8)){const k=x.categories[0]||'other';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(x);}
  const packages=[];
  for(const [domain,arr] of groups){
   if(packages.length>=4)break;
