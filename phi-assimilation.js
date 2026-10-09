@@ -64,7 +64,7 @@ function packageOptions(items,q,sections){
  }
  return {ranked,chosen};
 }
-function parsePackages(payload,allowed){
+function parsePackages(payload,allowed,sourceUrls){
  let value=payload?.output_text??payload?.output??payload?.answer??payload?.response??payload?.content??payload?.message??payload?.text??'';
  if(Array.isArray(value))value=value.map(x=>x?.text||x?.content||'').join('\n');
  if(value&&typeof value==='object')value=value.text||value.content||JSON.stringify(value);
@@ -72,7 +72,7 @@ function parsePackages(payload,allowed){
  if(!Array.isArray(obj.packages)){const m=raw.match(/\{[\s\S]*\}/);obj=m?parse(m[0]):{}}
  return (Array.isArray(obj.packages)?obj.packages:[]).map(x=>{
   const related=(Array.isArray(x.topics)?x.topics:[]).map(researchTopic).filter(t=>allowed.has(t.toLowerCase())).slice(0,4);
-  return {title:clean(x.title).slice(0,110),topics:[...new Set(related)],connection:clean(x.connection).slice(0,450),question:clean(x.next_question||x.question).slice(0,240),status:x.status==='supported'?'source-backed':'research comparison',sourceUrl:String(x.source_url||'')};
+  return {title:clean(x.title).slice(0,110),topics:[...new Set(related)],connection:clean(x.connection).slice(0,450),question:clean(x.next_question||x.question).slice(0,240),status:x.status==='supported'&&sourceUrls.has(String(x.source_url||''))?'source-backed':'research comparison',sourceUrl:sourceUrls.has(String(x.source_url||''))?String(x.source_url||''):''};
  }).filter(x=>x.title&&x.topics.length&&x.connection).slice(0,5);
 }
 function fallbackPackages(chosen,q){
@@ -136,12 +136,13 @@ async function load(q,sections){
   let response;try{response=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'full-history-assimilation',requireCloudflare:true,scanned_records:items.length}}),signal:ctl.signal})}finally{clearTimeout(timer)}
   if(!response.ok)throw Error('AI status '+response.status);
   const payload=await response.json();
-  packages=parsePackages(payload,new Set(chosen.map(x=>x.query.toLowerCase())));
+  packages=parsePackages(payload,new Set(chosen.map(x=>x.query.toLowerCase())),new Set(samples.flatMap(s=>s.sources.map(x=>x.url))));
  }catch(error){console.warn('GPT package synthesis unavailable; showing labeled research comparisons',error)}
  if(id!==ticket||!list.isConnected)return;
  if(!packages.length)packages=fallbackPackages(chosen,q);
  if(!packages.length){list.textContent='No useful comparison was found in the available Quant history.';return}
  showPackages(list,packages,q);
+ list.parentElement.querySelectorAll('.qassim-count').forEach(x=>x.remove());
  const caption=document.createElement('small');caption.className='qassim-count';caption.textContent='Assessed '+items.length+' stored records ('+(remote?'cloud and device':'device only')+'), grouped '+ranked.filter(x=>x.score>0).length+' potentially related topics. These packages are research paths, not automatic factual claims.';list.after(caption);
 }
 
