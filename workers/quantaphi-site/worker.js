@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v34-shared-channel-wallet';
+const EDGE_VERSION = 'quantaphi-org-v35-oracle-design-system';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -41,6 +41,7 @@ const routeFor = incoming => {
  }
  if (path === '/code-phi' || path === '/code-phi/') return { redirect: '/omni-phi/code/' + incoming.search };
  if (path.startsWith('/code-phi/')) return { redirect: '/omni-phi/code/' + path.slice('/code-phi/'.length) + incoming.search };
+ if (path === '/oracle-interface.css') return { repo:'Oracle', sourcePath:'/oracle-interface.css', publicPath:path };
  if (path === '/QuantaPhi' || path === '/QuantaPhi/' || path === '/QuantaPhi/index.html') return { redirect: '/' + incoming.search };
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
  if (path === '/page') return {redirect:'/page/'+incoming.search};
