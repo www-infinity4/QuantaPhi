@@ -485,10 +485,18 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
  if(!candidates.length)return null;
  // Prefer the strongest discovery language over ordinary topical references.
  const hook=/\b(?:discovered|rediscovered|forgotten|hidden|lost|mysterious|mystery|unexpected|secret|excavated|recovered|declassified|forgery|accidental|unusual|breakthrough|experiment)\b/i;
- const ranked=candidates.map(item=>({item,score:(hook.test(item.title)?4:0)+(hook.test(item.full.slice(0,500))?3:0)+Math.min(3,Math.floor(item.full.length/500))}));
+ const topicWords=(clean(plan.indexedWord||plan.focus).toLowerCase().match(/[a-z]{4,}/g)||[])
+   .filter(w=>!['history','unusual','mystery','discovery','invention','original'].includes(w)).slice(0,4);
+ const ranked=candidates.map(item=>{
+   const title=item.title.toLowerCase(),body=item.full.slice(0,600).toLowerCase();
+   const relevance=topicWords.reduce((score,w)=>score+(title.includes(w)?8:0)+(body.includes(w)?2:0),0);
+   return {item,score:relevance+(hook.test(item.title)?4:0)+(hook.test(item.full.slice(0,500))?3:0)+Math.min(3,Math.floor(item.full.length/500))};
+ });
  ranked.sort((a,b)=>b.score-a.score);
  const shortlist=ranked.slice(0,Math.min(8,ranked.length)).map(x=>x.item);
- const choice=shortlist[random(shortlist.length)];
+ // For an explicit search, take the strongest matching real article rather
+ // than randomly giving the GPT writer an unrelated page.
+ const choice=shortlist[arguments[0]?.strictGPT===true?0:random(shortlist.length)];
  const sentences=choice.full.match(/[^.!?]+[.!?]+/g)||[];
  let summary=sentences.slice(0,3).join(' ').trim();
  if(summary.length<90)summary=choice.full.slice(0,290);
