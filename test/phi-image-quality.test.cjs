@@ -23,7 +23,7 @@ test('finished image reviewer is a real vision endpoint, not dimension checking'
  assert.match(worker,/async function runImageReview/);
  assert.match(worker,/url\.pathname === "\/v1\/image-review"/);
  assert.match(worker,/type:"image_url",image_url:\{url:imageUri\}/);
- assert.match(worker,/No fake writing, glyphs, pseudo-words/);
+ assert.match(worker,/Render visuals ONLY: zero painted letters or numerals/);
  assert.match(source('phi-visual-render.js'),/composeExactText/);
  assert.match(source('phi-visual-render.js'),/\/v1\/image-review/);
 });
@@ -104,7 +104,7 @@ test('image rejection keeps the original inputs editable and offers photo remova
  assert.match(css,/\.pi-upload-slot/);
  assert.match(css,/\[hidden\]\{display:none!important\}/);
  const html=source('index.html');
- assert.match(html,/phi-image-builder\.js\?v=20261008-flag-recovery1/);
+ assert.match(html,/phi-image-builder\.js\?v=20261008-auto-qa2/);
  assert.match(html,/phi-visual-render\.js\?v=20261008-flag-recovery1/);
 });
 
