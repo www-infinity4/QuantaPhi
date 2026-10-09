@@ -200,7 +200,12 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
  const viewer=document.getElementById('siteViewer'),frame=document.getElementById('siteViewerFrame'),title=document.getElementById('siteViewerTitle'),close=document.getElementById('siteViewerClose');
  function openSite(link){
    const repo=String(link.dataset.siteRepo||'').trim();
-   const raw=/^[A-Za-z0-9._-]+$/.test(repo)?('https://www-infinity4.github.io/'+repo+'/'):(link.dataset.siteUrl||link.getAttribute('href')||'');
+   const specified=link.dataset.siteUrl||link.getAttribute('href')||'';
+    // Prefer the canonical address and indexed search parameters. A repo hint
+    // must never override a working Phi link with an old GitHub Pages copy.
+    const raw=specified&&specified!=='#'?specified:(
+      /^[A-Za-z0-9._-]+$/.test(repo)?('https://quantaphi.org/'+({C13b0:'infinity-phi', 'Omni-Phi':'omni-phi',QuantaPhi:''}[repo]||repo)+'/'):''
+    );
    let url;try{url=new URL(raw,location.href)}catch{return}
    title.textContent=link.dataset.siteTitle||link.textContent.trim()||url.hostname;
    frame.src=url.href;
