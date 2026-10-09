@@ -19,7 +19,13 @@ async function jsonResponse(path,options){
  try{
   const response=await fetch(BASE+path,{...options,signal:controller.signal});
   const data=await response.json().catch(()=>({}));
-  if(!response.ok)throw Error(String(data.error||data.detail||'Service unavailable').slice(0,220));
+  if(!response.ok){
+   const error=new Error(String(data.error||data.detail||'Service unavailable').slice(0,220));
+   error.code=String(data.code||'');
+   error.status=response.status;
+   error.suggestion=String(data.suggestion||'').slice(0,240);
+   throw error;
+  }
   return data;
  }finally{clearTimeout(timer)}
 }
@@ -96,8 +102,10 @@ async function render({description,mode,source,design,prompt,exactText}){
  if(design&&(design.size>MAX||!typeOK(design.type)))throw Error('Style reference must be PNG/JPG/WebP, up to 10 MB');
  const blob=source?await transport(source):await neutralImage();
  const designBlob=design?await transport(design):null;
- const body=new FormData();body.append('image',blob,source?'subject-reference.jpg':'blank-canvas.jpg');
- if(designBlob)body.append('design_reference',designBlob,'design-reference.jpg');
+ const body=new FormData();
+ const extension=file=>file?.type==='image/png'?'png':file?.type==='image/webp'?'webp':'jpg';
+ body.append('image',blob,source?'subject-reference.'+extension(blob):'blank-canvas.jpg');
+ if(designBlob)body.append('design_reference',designBlob,'design-reference.'+extension(designBlob));
  body.append('mode',mode);
  body.append('reference_mode',source?'uploaded':'blank');
  body.append('prompt',String(prompt||[modePrompt(mode),description].join('\n')).slice(0,7500));
