@@ -317,7 +317,7 @@ async function writeSecretStory(sources,plan,roll){
  return {title:clean(obj.title).slice(0,180),summary:clean(obj.summary).slice(0,650),
   full:String(obj.full).trim().slice(0,4200),detail:clean(obj.detail).slice(0,240),
   status:['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported',
-  supported:matched,fullEvidenceRead:pageEvidence.length};
+  supported:matched,fullEvidenceRead:pageEvidence.filter(x=>matched.some(y=>y.url===x.url)).length};
 }
 async function findSearch({roll,catalog,seen,focus=''}) {
  const plan=sourcePlan(roll,catalog,focus);
