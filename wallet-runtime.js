@@ -483,6 +483,25 @@
   for(const event of ['load','online','focus'])window.addEventListener(event,flushStarReceipts);
   document.addEventListener('starquest:ledger-connected',flushStarReceipts);
 
+  function ensureResearchSpinCredit(receipt){
+    const ref=clean(receipt?.reference_id||'',800);
+    if(!ref||receipt?.kind!=='spin'||Number(receipt?.tenths)!==10)return {...walletSnapshot(),awarded:0,alreadyRecorded:false};
+    const store=walletStore(),wallet=normalizeWallet(store.profile);
+    const eventKey='cloud-research-spin:'+ref;
+    if(wallet.ledger.some(x=>x?.referenceId===eventKey))return {...walletSnapshot(),awarded:0,alreadyRecorded:true};
+    const now=Date.now();
+    wallet.tokens+=1;
+    wallet.ledger.push({id:'tx-research-'+now.toString(36)+'-'+Math.random().toString(36).slice(2,8),
+      type:'research_spin_credit',amount:1,balance:wallet.tokens,pendingShareCredits:wallet.pendingShareCredits,
+      reason:clean(receipt.research?.title||'Sourced research spin',180),referenceId:eventKey,
+      research:receipt.research||null,createdAt:now,source:'quanta-phi-cloud'});
+    wallet.ledger=wallet.ledger.slice(-500);store.save(wallet);
+    const detail={awarded:1,balance:wallet.tokens,kind:'research-spin',referenceId:ref};
+    window.dispatchEvent(new CustomEvent('controlphi:wallet-change',{detail}));
+    refreshWalletUI();
+    return detail;
+  }
+
   function ensureActionCredit(reference='',kind='collect'){
     const store=walletStore();
     const wallet=normalizeWallet(store.profile);
@@ -742,7 +761,7 @@
     const mount=()=>{if(!document.body.contains(host))document.body.appendChild(host);const t=latestExplicitAdTopic();if(t)renderSponsoredCard(host,t,location.pathname).catch(()=>{});else host.hidden=true};
     mount();setInterval(mount,30000);
   }
-  window.ControlPhi={version:'1.9.2',sourceCounts:canonicalSearchCounts,recordShare,trackingUrl:(input={})=>{const plan=sharePlan(input,input.platform||'share');return plan.trackingUrl},openNews:()=>location.assign(NEWS_URL),shareFeed:()=>read(SHARE_KEY,[]).slice(),interestFeed:()=>read(INTEREST_KEY,[]).slice(),wallet:walletSnapshot,recordActivity,contextFeed:()=>read(CONTEXT_KEY,[]).slice(),ensureShareCredit,ensureActionCredit,reconcileCollectedAds,shopCart,importLegacyStarCoinBalance,refreshWallet:refreshWalletUI,refreshCloudWallet:refreshCloudBalances,requestSponsoredCard,renderSponsoredCard};
+  window.ControlPhi={version:'1.9.2',sourceCounts:canonicalSearchCounts,recordShare,trackingUrl:(input={})=>{const plan=sharePlan(input,input.platform||'share');return plan.trackingUrl},openNews:()=>location.assign(NEWS_URL),shareFeed:()=>read(SHARE_KEY,[]).slice(),interestFeed:()=>read(INTEREST_KEY,[]).slice(),wallet:walletSnapshot,recordActivity,contextFeed:()=>read(CONTEXT_KEY,[]).slice(),ensureShareCredit,ensureActionCredit,ensureResearchSpinCredit,reconcileCollectedAds,shopCart,importLegacyStarCoinBalance,refreshWallet:refreshWalletUI,refreshCloudWallet:refreshCloudBalances,requestSponsoredCard,renderSponsoredCard};
   installShareBridge();
   installShareLinkBridge();
   installCrossTabBridge();
