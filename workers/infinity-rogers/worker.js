@@ -654,10 +654,6 @@ async function runImage(request, env) {
  let lastError=null;
  // Keep the tested Klein renderer first and use Dev once only for technical failures.
  // A provider moderation/invalid-input rejection remains terminal.
- const modelPlan=[
-   {model:IMAGE_FALLBACK_MODEL,variants:[variants[0],variants[1]],steps:null},
-   {model:IMAGE_MODEL,variants:[variants[0]],steps:"25"}
- ];
  const attemptErrors=[];
  let attemptNumber=0;
  for(const plan of modelPlan){
