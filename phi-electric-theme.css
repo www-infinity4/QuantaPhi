@@ -198,3 +198,23 @@ body{background:radial-gradient(ellipse at 50% -6%,#c9a5ff3d,transparent 44%),li
 #infiniteBook .ib-story[data-ready="false"] .ib-title{max-width:86%}
 #infiniteBook .ib-story[data-ready="false"] .ib-summary{font-weight:650;color:#e3d7f3!important}
 #infiniteBook[aria-busy="true"] .ib-asteroid-rock{filter:drop-shadow(0 0 22px #b782ffc9) drop-shadow(0 0 32px #b19bff73)}
+
+/* Distinct products: the original Infinity Reads & Realms home opener is NOT an Asteroid. */
+#infiniteBook[data-context="home"] .ib-asteroid-rock,
+#infiniteBook[data-context="home"] .ib-asteroid-shade,
+#infiniteBook[data-context="home"] .ib-research-branches,
+#infiniteBook[data-context="home"] .ib-illustration,
+#infiniteBook[data-context="home"] .ib-illustration-actions{display:none!important}
+#infiniteBook[data-context="home"] .ib-story{background:linear-gradient(145deg,#34195d,#170e37)!important;border:1px solid #c297ff!important;box-shadow:0 0 0 1px #d3acff5c,0 0 26px #b175ff78,0 12px 30px #25134779!important}
+#infiniteBook[data-context="home"] .ib-asteroid-hero{background:radial-gradient(circle at 83% 13%,#8251d67a,transparent 36%),linear-gradient(145deg,#512987,#281445 72%,#1b1038);min-height:176px}
+#infiniteBook[data-context="home"] .ib-asteroid-hero::before{background-image:radial-gradient(circle,#f5dcffaf 1px,transparent 2px);background-size:52px 56px;opacity:.26}
+#infiniteBook[data-context="home"] .ib-asteroid-copy{min-height:176px;padding:19px 16px 21px;justify-content:center}
+#infiniteBook[data-context="home"] .ib-asteroid-label{background:#ead3ff;color:#3d186a;border:1px solid #c99afa;font-weight:900;letter-spacing:.06em}
+#infiniteBook[data-context="home"] .ib-title{max-width:100%;font-size:clamp(20px,5.2vw,27px)!important}
+#infiniteBook[data-context="home"] .ib-category{background:#ffffff1b!important}
+#infiniteBook[data-context="home"] .ib-head strong{font-size:11px;max-width:65%;line-height:1.5;letter-spacing:.035em}
+#infiniteBook[data-context="home"] .ib-story[data-ready="false"] .ib-actions{display:grid!important}
+#infiniteBook[data-context="search"]{display:block;margin-top:19px;margin-bottom:17px}
+#result:has(> #infiniteBook) {overflow:visible}
+#infiniteBook[data-context="search"] .ib-head{margin-top:13px}
+@media(max-width:390px){#infiniteBook[data-context="home"] .ib-asteroid-hero,#infiniteBook[data-context="home"] .ib-asteroid-copy{min-height:150px}}
