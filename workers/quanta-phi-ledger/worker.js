@@ -1,3 +1,10 @@
+async function ensurePublishedPages(env){
+ await env.DB.batch([
+  env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_published_pages(slug TEXT PRIMARY KEY,owner_user_id TEXT NOT NULL,revision_id TEXT NOT NULL,source_token TEXT NOT NULL,title TEXT NOT NULL,html TEXT NOT NULL,created_at INTEGER NOT NULL,updated_at INTEGER NOT NULL,UNIQUE(owner_user_id,revision_id))"),
+  env.DB.prepare("CREATE INDEX IF NOT EXISTS idx_quanta_published_owner ON quanta_published_pages(owner_user_id,updated_at)")
+ ]);
+}
+
 async function ensureResearchRevisions(env) {
   await env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_research_revisions(revision_id TEXT PRIMARY KEY,user_id TEXT NOT NULL,search_id TEXT NOT NULL,token_id TEXT NOT NULL,data_json TEXT NOT NULL,created_at INTEGER NOT NULL)").run();
 }
@@ -136,6 +143,14 @@ export default {
 
     if (origin && !allowedOrigin) return json({ error: "origin_not_allowed" }, 403);
 
+    const publicSlug=url.pathname.match(/^\/v1\/public\/pages\/(p_[a-z0-9]{20,40})$/);
+    if(publicSlug&&request.method==="GET"){
+      await ensurePublishedPages(env);
+      const page=await env.DB.prepare("SELECT slug,title,html,created_at,updated_at FROM quanta_published_pages WHERE slug=? LIMIT 1").bind(publicSlug[1]).first();
+      if(!page)return json({ok:false,error:"page_not_found"},404);
+      return json({ok:true,slug:page.slug,title:page.title,html:page.html,publishedAt:page.created_at,updatedAt:page.updated_at});
+    }
+
     const authorization = request.headers.get("Authorization") || "";
     const match = /^Bearer\s+(sq_[A-Za-z0-9_-]{32,})$/.exec(authorization);
     if (!match) return json({ error: "authorization_required" }, 401);
@@ -160,6 +175,27 @@ export default {
     if (!senderWallet) return json({ error: "quant_wallet_create_failed" }, 500);
     if (senderWallet.status !== "active") return json({ error: "wallet_disabled" }, 403);
     const wallet = senderWallet.wallet_id;
+
+    if(url.pathname==="/v1/pages"&&request.method==="POST"){
+      // Authorize through the same device identity and wallet as Quant research.
+      // HTML is served only inside the separate sandboxed /page/ viewer.
+      const body=await request.json().catch(()=>({}));
+      const html=String(body.html||''),title=String(body.title||body.query||'Infinity website').replace(/[<>]/g,'').trim().slice(0,180);
+      const revision=String(body.revision_id||'').trim().slice(0,140);
+      const sourceToken=String(body.source_token||body.token_id||'').slice(0,140);
+      if(!revision||revision.length<4||html.length<350||html.length>180000||!/<html[\s>]/i.test(html)||!/<(main|article|section)\b/i.test(html))
+       return json({ok:false,error:"invalid_publication",detail:"Publish a complete HTML website, up to 180000 characters."},400);
+      await ensurePublishedPages(env);
+      const existing=await env.DB.prepare("SELECT slug,title FROM quanta_published_pages WHERE owner_user_id=? AND revision_id=?").bind(identity.user_id,revision).first();
+      if(existing)return json({ok:true,slug:existing.slug,title:existing.title,url:"https://quantaphi.org/page/?id="+existing.slug,replayed:true});
+      const counts=await env.DB.prepare("SELECT COUNT(*) AS total FROM quanta_published_pages WHERE owner_user_id=?").bind(identity.user_id).first();
+      if(Number(counts?.total||0)>=80)return json({ok:false,error:"page_limit_reached"},429);
+      const slug="p_"+crypto.randomUUID().replace(/-/g,'').slice(0,28);
+      const now=Date.now();
+      await env.DB.prepare("INSERT INTO quanta_published_pages(slug,owner_user_id,revision_id,source_token,title,html,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?)")
+        .bind(slug,identity.user_id,revision,sourceToken,title||"Infinity website",html,now,now).run();
+      return json({ok:true,slug,title,url:"https://quantaphi.org/page/?id="+slug,publishedAt:now},201);
+    }
 
     if (url.pathname === "/v1/quants/research" && request.method === "POST") {
       const body=await request.json().catch(()=>({})),searchId=String(body.search_id||'');
