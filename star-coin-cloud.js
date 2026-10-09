@@ -1,6 +1,6 @@
 (function(global){
 'use strict';
-// Durable Cloudflare record of QuantaPhi Collect/Share Star Coin credits (+0.1 each).
+// Durable Cloudflare credits: +0.1 Collect/Share; +1.0 for each sourced research spin.
 // Credits are kept in a browser outbox until the QuantaPhi ledger confirms them, and
 // the ledger ignores repeated reference IDs, so retries never credit twice.
 const KEY='quantaPhi:pendingStarCoinCredits:v1',BACKUP='quantaPhi:pendingStarCoinCredits:backup:v1',BACKFILL='quantaPhi:starCoinCloudBackfill:v1:',STATE='quantaPhi:starCoinCloudState:v1';
@@ -25,12 +25,22 @@ function compactCard(card){
  const out={key:String(card.key||'').slice(0,700),type:String(card.type||'').slice(0,40),title:String(card.title||'').slice(0,500),story:String(card.story||'').slice(0,4000),media:String(card.media||'').slice(0,2000),sourceUrl:String(card.sourceUrl||'').slice(0,2000)};
  return out.key&&out.title?out:undefined;
 }
+function compactResearch(item){
+ if(!item||typeof item!=='object')return undefined;
+ const sources=(Array.isArray(item.sources)?item.sources:[]).filter(x=>x&&/^https:\/\//.test(x.url||'')).slice(0,5).map(x=>({title:String(x.title||'').slice(0,180),url:String(x.url).slice(0,1500)}));
+ const sourceUrl=String(item.sourceUrl||'').slice(0,1500);
+ if(!sources.some(x=>x.url===sourceUrl)&&/^https:\/\//.test(sourceUrl))sources.unshift({title:String(item.sourceTitle||'Original source').slice(0,180),url:sourceUrl});
+ const research={title:String(item.title||'').slice(0,180),summary:String(item.summary||'').slice(0,950),full:String(item.full||'').slice(0,4000),sourceUrl,sources:sources.slice(0,5),parentQuery:String(item.parentQuery||'').slice(0,450),researchBranch:String(item.researchBranch||'').slice(0,250)};
+ return research.title.length>=12&&research.full.length>=150&&sources.length>0?research:undefined;
+}
 function record(kind,reference,card){
- if(kind!=='collect'&&kind!=='share')return false;
+ if(!['collect','share','spin'].includes(kind))return false;
+ const research=kind==='spin'?compactResearch(card):undefined;
+ if(kind==='spin'&&!research)return false;
  const ref=String(reference||'').trim().slice(0,700);if(!ref)return false;
  const reference_id='quantaphi:'+kind+':'+ref,items=read();
  if(!items.some(x=>x.reference_id===reference_id)){
-  items.push({reference_id,kind,reference:ref,created_at:new Date().toISOString(),...(kind==='collect'&&compactCard(card)?{card:compactCard(card)}:{})});
+  items.push({reference_id,kind,reference:ref,created_at:new Date().toISOString(),...(kind==='collect'&&compactCard(card)?{card:compactCard(card)}:{}),...(kind==='spin'?{research}:{})});
   save(items);
  }
  void flush();
