@@ -196,10 +196,31 @@
   let artBusy=false,artRequested=null;
   const artRunning=new Set();
   window.addEventListener('phi:book:image-bridge-ready',()=>{if(current&&(root.dataset.context==='home'||window.PhiInfiniteBookDiscover?.eligibleNarrative?.(current)))scheduleAutoIllustration(current)});
-  function scheduleAutoIllustration(story){
+  // A user-requested replacement must not alter other stories or delete the original
+  // until a new, decoded illustration is ready to store.
+  window.addEventListener('phi:story:image-retry',event=>{
+    if(!current?.id||event.detail?.storyId!==current.id)return;
+    scheduleAutoIllustration(current,true);
+  });
+  function scheduleAutoIllustration(story,force=false){
     if(!story?.id||!window.PhiVisualRender||!window.PhiBookImageBridge)return;
-    artRequested={story,context:root.dataset.context};
+    artRequested={story,context:root.dataset.context,force};
     if(!artBusy)void drainAsteroidArtwork();
+  }
+  function storyIllustrationPrompt(story){
+    // The correct headline is rendered once by HTML (.ib-title). Passing a
+    // "cover" direction plus the headline made FLUX invent letters in the
+    // picture, as seen in the Ridgecrest story screenshot.
+    const description=String(story.summary||story.detail||'').replace(/\s+/g,' ').slice(0,680);
+    const subject=description||String(story.title||'').replace(/\s+/g,' ').slice(0,160);
+    return [
+      'Create ONE full-bleed uncaptioned documentary landscape scene. This is a photograph-style illustration, NEVER a book cover, poster, headline card, magazine page, presentation slide or infographic.',
+      'What should be visible: '+subject,
+      'Show historically or scientifically credible details; do not fabricate incidents. Mood: '+String(story.mood||'Mystery').slice(0,35)+'.',
+      'No title banners, logos, signs, letterforms, digits, diagrams, map labels, fake headlines, invented language, punctuation, written text, or typographic shapes anywhere in the pixels.',
+      'Do not quote, spell, abbreviate, stylize, or redraw the source title. The web page prints the correct title as accessible HTML on a separate layer.',
+      'Only paint the real-world scenery and subjects. No graphic text containers; retain a natural documentary composition.'
+    ].join('\n');
   }
   async function drainAsteroidArtwork(){
     if(artBusy)return;
@@ -207,17 +228,15 @@
     try{
       while(artRequested){
         const request=artRequested;artRequested=null;
-        const {story,context}=request;
+        const {story,context,force=false}=request;
         const home=context==='home';
         if(artRunning.has(story.id))continue;
         artRunning.add(story.id);
         try{
           const bridge=window.PhiBookImageBridge;
-          if(await bridge.hasStored(story.id))continue;
+          if(!force&&await bridge.hasStored(story.id))continue;
           const renderer=window.PhiVisualRender;
-          const intention=(home?'Original cinematic editorial cover illustration for the Infinity Reads & Realms opening story about ':'Original nonfiction illustration of ')+story.title+'. '+String(story.summary||'').slice(0,650)+
-            '. Picture the actual documented subject accurately, not an invented movie scene. Atmosphere: '+(story.mood||'Mystery')+
-            '. No fabricated events, written words, glyphs, signage, labels, movie titles or pretend text. One cohesive vivid realistic composition.';
+          const intention=storyIllustrationPrompt(story);
           if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(home?'Creating and checking this opening story’s image…':'GPT story sourced · creating and checking its illustration…');
           const generated=await renderer.render({description:intention,mode:'Image',source:null,design:null,prompt:intention,exactText:''});
           let review;
@@ -226,8 +245,8 @@
           const approved=review?.status==='good'&&Number(review?.score)>=75&&!(review?.issues||[]).some(i=>i.severity==='high');
           await renderer.validate(generated.src);
           const blob=await renderer.asBlob(generated.src);
-          await bridge.attachGenerated(story,blob,{renderer:generated.renderer,review});
-          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(approved?(home?'Opening story image generated, reviewed and saved to this device.':'Sourced GPT story · original illustration generated, reviewed, and attached.'):'Story illustration saved · '+(review.status==='needs_work'?'visual review found details to improve.':'visual quality not yet confirmed.'));
+          await bridge.attachGenerated(story,blob,{renderer:generated.renderer,review,replaceExisting:force});
+          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(approved?(home?'Opening story image generated, reviewed and saved to this device.':'Sourced GPT story · original illustration generated, reviewed, and attached.'):'Story illustration saved · '+(review.status==='needs_work'?'visual review found details to improve.':'visual quality not yet confirmed.')+' If FLUX paints words, use Fix image text without paying for a second image.');
         }catch(error){
           if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note('Story ready. Automatic illustration could not be approved or saved: '+String(error?.message||error).slice(0,130));
         }finally{artRunning.delete(story.id)}
