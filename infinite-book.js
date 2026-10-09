@@ -11,6 +11,15 @@
   const initialQuery = new URL(location.href).searchParams.get('q');
   const queuedQueries = [];
   let lastSearchRun = null;
+  // A search produces the sourced story below the five-part overview, after Assimilation.
+  // The idle page retains the original orange-card position above the image builder.
+  function placeSearchStory(){
+    const result=document.getElementById('result');
+    if(result&&result.parentElement&&root.previousElementSibling!==result){
+      result.insertAdjacentElement('afterend',root);
+    }
+    root.dataset.context='search';
+  }
   const E = (tag, cls, value) => {
     const el = document.createElement(tag);
     if (cls) el.className = cls;
@@ -331,6 +340,7 @@
     const query=String(event.detail?.query||'').trim();
     const run=event.detail?.run;
     if(!query || (run != null && run===lastSearchRun))return;
+    placeSearchStory();
     if(run != null)lastSearchRun=run;
     // A shared / restored search on initial page load is one visit, not a second discovery.
     if(Date.now()-bootTime<6500 && query===initialQuery)return;
@@ -420,6 +430,7 @@
   root.addEventListener('toggle',event=>{if(event.target?.classList?.contains('ib-details'))interactedWithStory=true;},true);
   async function init() {
     cardLayout();
+    if(initialQuery?.trim())placeSearchStory();
     note('Loading sourced discoveries…');
     try {
       const response = await fetch(CATALOG_URL, { cache: 'no-cache' });

@@ -568,6 +568,7 @@ async function runImageReview(request,env){
   "Judge the actual rendered pixels against this intention: "+description,
   "Mode: "+mode+"; exactly requested lettering: "+(exact||"none"),
   "Inspect subject fidelity, parts that do not connect, malformed mechanisms or vehicles, physical proportions, historical cues if requested, unintended writing, gibberish letters, illegible required writing, and contradictory lighting. Do not penalize fantasy unless realism was requested.",
+  "LETTERING CHECK: The only authorized readable words are the exactly requested browser-composited words above, if any. Invented or misspelled text, alien glyphs, pseudo-logos, squiggly writing or text-like textures are a high-severity issue with a concrete instruction to replace them with clean, unmarked space. Never penalize correctly spelled, exact requested overlay text.",
   "Report ONLY visibly evidenced errors; do not invent identities or exact unreadable words. When uncertain, say uncertain.",
   'Output strict JSON: {"status":"good|needs_work|uncertain","score":75,"issues":[{"severity":"high|medium|low","problem":"visible defect","fix":"specific correction"}],"repairPrompt":"specific repair direction"}. Five issues maximum. Score is advisory, not an objective quality measurement.'
  ].join("\n");
@@ -624,11 +625,11 @@ async function runImage(request, env) {
  const blankReference=clean(form.get("reference_mode"),40)==="blank";
  const modeRules={
   "Image":"Create a standalone premium visual image. Match the requested subject, composition and aesthetic. No card frame or printing decoration unless the user requests it.",
-  "Trading Card":"Create a complete sharp-corner premium collectible trading card, sports or nonsports as specified. Do not make a blank template, slab or mockup. Leave exact typography for a separate compositing step.",
+  "Trading Card":"Create a complete sharp-corner premium collectible trading card, sports or nonsports as specified. Do not make a blank template, slab or mockup. All name plates and labels must be blank for exact browser typography afterward; do not create pseudo-lettering.",
   "Advertisement":"Create one finished professional advertising graphic. Preserve supplied brand/product identity. Do not invent sales claims or prices. No collectible-card framing.",
   "Billboard":"Create an impactful wide billboard image with a single strong focal point and clean headline area. No trading-card frame or mockup.",
-  "Poster":"Create a finished poster artwork with intentional composition and typography space. No card frame unless explicitly requested.",
-  "Cover Art":"Create finished editorial, music or book-cover artwork. Respect stated lettering and subject. Do not add a trading-card border."
+  "Poster":"Create finished poster artwork with intentional composition and a clean empty headline region for later real typography. No card frame unless explicitly requested.",
+  "Cover Art":"Create finished editorial, music or book-cover artwork. Preserve the subject and leave clean empty title space; the browser adds correct lettering afterward. Do not add a trading-card border."
  };
  const domain=sports?"sports trading card":"premium collectible trading card";
  const executionOnly="You are the rendering engine, not the art director. Execute the supplied build specification literally. Do not invent a different subject, sport, team, year, biography, brand, series or historical context. Do not add any lettering, words, numbers, serial plaques, logos, captions, labels, signatures or pseudo-text. Exact typography is composited later. Preserve the uploaded subject and create one high-end "+domain+" as a complete printed object. "+borderRule+" Keep the full sharp rectangular card perimeter visible. Use contemporary premium production quality: strong photography, precise crop, deliberate negative space, believable print material, controlled foil/refractor details only when requested, and clean collector-grade geometry. Never output a mockup, slab, phone screen, tabletop, empty template, picture frame, or photo pasted into a fixed rectangle.";
@@ -636,8 +637,8 @@ async function runImage(request, env) {
  const visualExecution="You are the rendering engine for Phi Image Builder. "+modeRules[mode]+
   " Execute the user\'s specification, not a generic sports-card template. Do not invent identities, dates, brand claims or phrases. "+
   (blankReference?"The provided input is a neutral starting canvas with no visual subject; create the requested original image from the text. ":"Preserve uploaded reference identity and composition where helpful. ")+
-  "Output one finished high-quality image, not a screenshot of a UI. No fake writing, glyphs, pseudo-words, counterfeit watermarks, implausible geometry or disconnected mechanical parts. "+
-  (exactText?"Keep an uncluttered area for browser-applied exact text: "+exactText+". Do not paint lettering yourself. ":"No unintended lettering or invented signage. ");
+  "Output one finished high-quality image, not a screenshot of a UI. Render visuals ONLY: zero painted letters or numerals, no fake writing, invented logos, glyphs, pseudo-words, handwriting, invented signage, symbol rows or counterfeit watermarks. Where typography belongs use clean blank material rather than text-shaped marks. Build plausible geometry and connected mechanical parts. "+
+  (exactText?"Reserve a high-contrast clean blank area for the browser to overlay these exact words later: "+exactText+". The model must not paint any of these words or approximate their shapes. ":"Never insert captions, marks resembling words or invented signage. ");
  const governingPrompt=mode==="Trading Card"?executionOnly:visualExecution;
  const variants=[
    governingPrompt+" BUILD SPECIFICATION: "+prompt,

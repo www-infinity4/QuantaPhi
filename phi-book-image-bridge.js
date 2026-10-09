@@ -8,7 +8,7 @@ if(!book||!builder)return;
 const databaseName='phi_book_illustrations_v1';
 const storeName='stories';
 let currentObjectUrl='',renderTicket=0;
-let selectedStory=null,buildStory=null,finishedStory=null,visibleIllustration=null;
+let selectedStory=null,buildStory=null,finishedStory=null,visibleIllustration=null,attaching=false;
 const make=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
 const storyCard=()=>book.querySelector('.ib-story');
 const storyId=()=>storyCard()?.dataset.storyId||'';
@@ -101,7 +101,7 @@ function hidePreview(){
 }
 const actionArea=builder.querySelector('.pi-finished .pi-actions');
 if(actionArea){
- for(const [key,label] of [['preview','View clear image'],['attach','Add image to book story']]){
+ for(const [key,label] of [['preview','View clear image'],['attach','Update story image']]){
   const b=make('button','pi-wide',label);b.type='button';b.dataset.piBook=key;actionArea.append(b)
  }
 }
@@ -123,13 +123,18 @@ window.addEventListener('phi:image:build:start',()=>{
 });
 window.addEventListener('phi:image:build:done',()=>{
  finishedStory=buildStory?.id?buildStory:null;
+ // The reviewed finished image is the product. Store it immediately with its
+ // original story; the reader must not have to tap another attach button.
+ if(finishedStory?.id)void attach(true);
 });
 window.addEventListener('phi:story:render',()=>{void refresh()});
-async function attach(){
+async function attach(automatic=false){
+ if(attaching)return;
  const data=window.PhiImageBuilder?.get?.();
  if(!data?.artifact||!data.result){notify('Finish building an image first.');return}
  const destination=finishedStory?.id?finishedStory:{id:storyId(),title:storyTitle()};
  if(!destination.id){notify('Open a book story before attaching an image.');return}
+ attaching=true;
  try{
   const blob=await window.PhiVisualRender.asBlob(data.result);
   if(!blob.type.startsWith('image/'))throw Error('The result is not a supported image');
@@ -137,8 +142,9 @@ async function attach(){
    blob,createdAt:new Date().toISOString()});
   if(storyId()===destination.id)await refresh();
   window.dispatchEvent(new CustomEvent('phi:story:image-attached',{detail:{storyId:destination.id,artifactId:data.artifact.id}}));
-  notify('Image attached to "'+destination.title+'". It is stored on this device and can travel with the story using supported native sharing.');
+  notify((automatic?'Finished illustration automatically included in "':'Updated illustration for "')+destination.title+'". Saved on this device for story viewing and supported sharing.');
  }catch(error){notify('Could not attach image: '+String(error?.message||error))}
+ finally{attaching=false}
 }
 builder.addEventListener('click',event=>{
  const action=event.target.closest('[data-pi-book]')?.dataset.piBook;
@@ -146,7 +152,17 @@ builder.addEventListener('click',event=>{
   const src=window.PhiImageBuilder?.get?.().result;
   if(src)showPreview(src);
  }
- if(action==='attach')void attach();
+ if(action==='attach'){
+  const data=window.PhiImageBuilder?.get?.();
+  const destination=finishedStory?.id?finishedStory:{id:storyId(),title:storyTitle()};
+  if(destination.id&&visibleIllustration?.storyId===destination.id&&visibleIllustration?.artifactId===data?.artifact?.id){
+   // Already included. This control should now open an edit, not pointlessly
+   // save the same pixels a second time.
+   const use=builder.querySelector('#pi-story');if(use)use.checked=true;
+   selectedStory=destination;
+   builder.querySelector('[data-pi-action="fix"]')?.click();
+  }else void attach();
+ }
  if(action==='use-story'){
   const title=storyTitle(),summary=book.querySelector('.ib-summary')?.textContent||'';
   if(!title){notify('There is no visible story to add.');return}
