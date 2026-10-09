@@ -62,9 +62,9 @@
     const hero=E('div','ib-asteroid-hero');
     const asteroid=E('img','ib-asteroid-rock');asteroid.src=ASTEROID_ART;asteroid.alt='Rocky asteroid with illuminated craters';asteroid.decoding='async';
     const copy=E('div','ib-asteroid-copy');
-    copy.append(E('small','ib-asteroid-label','ASTEROID · ORIGINAL SOURCED STORY'),E('div', 'ib-category'), E('h2', 'ib-title'), E('p', 'ib-summary'));
+    copy.append(E('small','ib-asteroid-label','ASTEROID · ORIGINAL SOURCED STORY'),E('div', 'ib-category'), E('h2', 'ib-title'));
     hero.append(asteroid,E('div','ib-asteroid-shade'),copy);
-    card.append(hero);
+    card.append(hero,E('p','ib-summary'));
     const detail = E('details', 'ib-details');
     detail.append(E('summary', '', 'Expand to read the full story'), E('p', 'ib-full'));
     const source = E('a', 'ib-source', 'View original source ↗');
@@ -187,16 +187,16 @@
           const intention='Original nonfiction illustration of '+story.title+'. '+String(story.summary||'').slice(0,650)+
             '. Picture the actual documented subject accurately, not an invented movie scene. Atmosphere: '+(story.mood||'Mystery')+
             '. No fabricated events, written words, glyphs, signage, labels, movie titles or pretend text. One cohesive vivid realistic composition.';
-          if(storyId()===story.id)note('GPT story sourced · creating and checking its illustration…');
+          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note('GPT story sourced · creating and checking its illustration…');
           const generated=await renderer.render({description:intention,mode:'Image',source:null,design:null,prompt:intention,exactText:''});
           const review=await renderer.review({src:generated.src,description:intention,mode:'Image',exactText:''});
           const approved=review?.status==='good'&&Number(review?.score)>=75&&!(review?.issues||[]).some(i=>i.severity==='high');
-          if(!approved){if(storyId()===story.id)note('The story is ready, but the generated illustration failed visual review. The asteroid art remains until a satisfactory image is made.');continue}
+          if(!approved){if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note('The story is ready, but the generated illustration failed visual review. The asteroid art remains until a satisfactory image is made.');continue}
           const blob=await renderer.asBlob(generated.src);
           await bridge.attachGenerated(story,blob,{renderer:generated.renderer,review});
-          if(storyId()===story.id)note('Sourced GPT story · original illustration generated, reviewed, and attached.');
+          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note('Sourced GPT story · original illustration generated, reviewed, and attached.');
         }catch(error){
-          if(storyId()===story.id)note(error?.code==='image_daily_cap'?'Story ready. Image service daily limit reached; asteroid artwork remains visible.':'Story ready. Automatic illustration could not be approved or saved: '+String(error?.message||error).slice(0,130));
+          if(root.querySelector('.ib-story')?.dataset.storyId===story.id)note(error?.code==='image_daily_cap'?'Story ready. Image service daily limit reached; asteroid artwork remains visible.':'Story ready. Automatic illustration could not be approved or saved: '+String(error?.message||error).slice(0,130));
         }finally{artRunning.delete(story.id)}
       }
     }finally{artBusy=false}
