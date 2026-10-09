@@ -434,7 +434,7 @@ async function writeWikipediaStory(page,plan,roll){
  try{
   const data=await request(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},
    body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'infinite-book-deep-story',
-    verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},16000);
+    verified_context:{sector:roll.sector,angle:roll.angle,sourceClass:roll.sourceClass,sourceCount:1}}})},21000);
   if(data?.ok===false)return null;
   const out=jsonAnswer(textAnswer(data));
   if(!out||out.insufficient||!legitimateNarrative(out))return null;
@@ -516,9 +516,19 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep}) {
  // Research it with GPT before it can enter the visible card, even when the
  // multi-source web search endpoint is down.
  if(arguments[0]?.strictGPT===true){
-  const written=await writeWikipediaStory(choice,plan,roll);
-  if(!written)return null;
-  return {...backup,...written,id:'wiki-gpt-'+choice.pageid,
+  // A broad topic can surface a disambiguation or a general page first.
+  // Ask GPT about two distinct sourced candidates concurrently instead of
+  // abandoning the Asteroid story after a single "insufficient" response.
+  const alternatives=shortlist.slice(0,2);
+  const attempts=await Promise.all(alternatives.map(async page=>({
+   page,written:await writeWikipediaStory(page,plan,roll).catch(()=>null)
+  })));
+  const successful=attempts.find(x=>x.written);
+  if(!successful)return null;
+  const {page,written}=successful,articleUrl='https://en.wikipedia.org/?curid='+page.pageid;
+  return {...backup,...written,id:'wiki-gpt-'+page.pageid,
+   sourceTitle:'Wikipedia contributors · '+page.title,sourceUrl:articleUrl,
+   sources:[{title:page.title+' · Wikipedia (CC BY-SA)',url:articleUrl}],
    status:'original single-source GPT research · Wikipedia CC BY-SA',
    discoveryMethod:'gpt-wiki',mood:written.mood};
  }
