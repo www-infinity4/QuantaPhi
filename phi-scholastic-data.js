@@ -45,6 +45,8 @@ function renderLinks(){
   btn.type='button';btn.dataset.value=value;btn.title='Select '+value+' for extraction, comparison, or building';
   const go=make('a','qdata-open','↗');go.href=originHref;go.title='Start a separate Quant search for '+value;go.setAttribute('aria-label','Search '+value+' as a new Quant');
   li.append(btn,go);li.dataset.qdataReady='yes';
+  const needle=clean(active.yellow.querySelector('.qdata-filter')?.value||'').toLowerCase();
+  li.hidden=!!needle&&!value.toLowerCase().includes(needle);
  }
  sync();
 }
@@ -201,7 +203,10 @@ function build(snapshot,reader=false){
  const combined=terms.join(' + ').slice(0,350);
  const context=reader?'Build a unique website from the QuantaPhi Scholastic Reader overview on '+snapshot.query+'. Use actual sourced research.':
   'Build an interactive website using these QuantaPhi selected extracted data topics: '+terms.join(', ')+'. Compare their verified similarities and differences, retain source references and include useful research widgets.';
- const combinedPrompt=(context+' '+((!reader&&snapshot.lastComparison?.analysis)||'')).slice(0,1100);
+ const matchingComparison=!reader&&snapshot.lastComparison&&snapshot.lastComparison.terms.join('|')===terms.join('|');
+ const extra=reader?clean(snapshot.red.querySelector('.qreader-prose')?.textContent||'').slice(0,900):
+  matchingComparison?snapshot.lastComparison.analysis:'';
+ const combinedPrompt=(context+' '+extra).slice(0,1250);
  const u=new URL('/infinity-phi/',location.origin);
  u.searchParams.set('q',combined);u.searchParams.set('intent','build');u.searchParams.set('from','quanta-data');
  u.searchParams.set('buildPrompt',combinedPrompt);
@@ -259,6 +264,15 @@ function activate(query,sections,evidence){
  const original=yellow.querySelector('h3');if(original)original.textContent='Data Extraction · live index';
  const description=make('p','qdata-lead','Tap subjects to select them. Extract a term into this Quant, compare 2–8 subjects with GPT and source evidence, or build a website from the selection.');
  const toolbar=make('div','qdata-toolbar');
+ const filter=make('input','qdata-filter');filter.type='search';filter.placeholder='Find among extracted data…';
+ filter.setAttribute('aria-label','Filter the clickable data index');
+ filter.addEventListener('input',()=>{
+  const needle=clean(filter.value).toLowerCase();
+  yellow.querySelectorAll('#qYellowDataList li').forEach(li=>{
+   li.hidden=!!needle&&!clean(li.querySelector('.qdata-select')?.dataset.value||li.textContent).toLowerCase().includes(needle);
+  });
+ });
+ yellow.insertBefore(filter,yellow.querySelector('#qYellowDataList'));
  const count=make('span','qdata-count','0 selected · choose up to 8');count.setAttribute('aria-live','polite');
  const actions=make('div','qdata-actions');
  for(const [key,label] of [['extract','Extract'],['compare','Compare selected'],['build','Build'],['clear','Clear']]){
