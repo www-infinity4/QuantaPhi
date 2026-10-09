@@ -715,7 +715,12 @@ async function runImage(request, env) {
  // A single clean art direction is used for each model; no prompt mutation
  // or fabricated text variants between attempts.
  const governingPrompt=mode==="Trading Card"?executionOnly:visualExecution;
- const renderDirection=(governingPrompt+" Scene description: "+prompt).slice(0,7000);
+ // Keep the "no invented writing" rule LAST so descriptions that mention signs,
+ // packaging, or titles don't persuade the model to paint unreadable glyphs.
+ // Exact requested text is composed separately in the browser.
+ const letteringRule=" FINAL RENDER CONSTRAINT: Generate imagery, never typeset. Even when the scene mentions titles, brands, signs, labels or quotations, leave those surfaces empty and clean. Do not paint letters, pseudo-letters, symbols that resemble writing, words or foreign-looking invented scripts. Preserve clear space for exact browser typography. ";
+ const sceneRoom=Math.max(0,7000-governingPrompt.length-letteringRule.length-21);
+ const renderDirection=(governingPrompt+" Scene description: "+prompt.slice(0,sceneRoom)+letteringRule).slice(0,7000);
  // Render only on Cloudflare Workers AI. Never call the Google image API.
  const modelPlan=[
    {model:IMAGE_MODEL,variants:[renderDirection],steps:null},
