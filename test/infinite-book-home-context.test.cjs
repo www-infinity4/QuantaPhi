@@ -40,7 +40,8 @@ test('only fresh GPT narratives become displayed, never old ready catalog fallba
   assert.match(next, /const ready = requireFresh\?null:pickUnique/);
   assert.match(next, /eligibleNarrative/);
   assert.match(code, /strictGPT:true, storyKind/);
-  assert.match(code, /PhiInfiniteBookResearchStatus==='quota'/);
+  assert.match(code, /PhiInfiniteBookResearchStatus/);
+  assert.doesNotMatch(code, /The daily AI story-writing allowance has been reached/);
 });
 
 test('GPT writer differentiates a home opener from a search-triggered Asteroid', () => {
@@ -48,7 +49,8 @@ test('GPT writer differentiates a home opener from a search-triggered Asteroid',
   assert.match(source, /storyKind==='asteroid'\?'Asteroid':'Infinity Reads & Realms'/);
   assert.match(source, /This Asteroid is ONLY for the actual current QuantaPhi search/);
   assert.match(source, /home-page opening story, written fresh for a page visit/);
-  assert.match(source, /storyKind==='reads-realms'\?Promise\.resolve\(\[\]\):scoutQueries/);
+  assert.match(source, /storyKind==='reads-realms'\|\|storyKind==='asteroid'\?Promise\.resolve\(\[\]\):scoutQueries/);
   assert.match(source, /verified_context:\{storyKind,/);
-  assert.match(source, /daily_quota_exceeded/);
+  assert.doesNotMatch(source, /daily_quota_exceeded/);
+  assert.match(source, /PhiInfiniteBookResearchStatus='ai-unavailable'/);
 });

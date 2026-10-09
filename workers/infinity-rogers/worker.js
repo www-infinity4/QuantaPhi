@@ -12,6 +12,8 @@ const ALLOWED_ORIGINS = new Set([
 
 const DEFAULT_CF_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 const CARD_MANAGER_MODEL = "@cf/openai/gpt-oss-120b";
+// The Infinite Book runs directly on the Cloudflare Workers AI binding, not the GPT-OSS manager.
+const BOOK_CF_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 const IMAGE_MODEL = "@cf/black-forest-labs/flux-2-dev";
 const IMAGE_FALLBACK_MODEL = "@cf/black-forest-labs/flux-2-klein-9b";
 // Image generation has no application-enforced daily count; provider capacity still applies.
@@ -135,6 +137,27 @@ async function runGPT(request, env, body) {
     });
   } catch (error) {
     return json(request, { ok: false, error: String(error?.message || error) }, 502);
+  }
+}
+
+// Dedicated story generator: no external OpenAI key, no general GPT manager,
+// no chat-prompt wrapper, and no response cache for original stories.
+async function runBookNative(request, env, body) {
+  const task=body?.context?.task;
+  if(!["infinite-book-scout","infinite-book-deep-story"].includes(task))
+    return json(request,{ok:false,error:"unsupported_book_task"},400);
+  const input=clean(body?.input||body?.message,12000);
+  if(!input)return json(request,{ok:false,error:"input_required"},400);
+  const model=BOOK_CF_MODEL;
+  try {
+    const output=await workersAI(env,
+      "You are the original nonfiction research writer for QuantaPhi. Work only from user-supplied evidence, mark uncertainties, and never invent evidence, citations, or historical incidents. Follow the supplied task instructions and return ONLY a valid JSON object without markdown.",
+      input,task==="infinite-book-deep-story"?2600:300,model);
+    return json(request,{ok:true,output,output_text:output,answer:output,
+      provider:"cloudflare-workers-ai",route:"native-workers-ai-binding",model,cached:false});
+  }catch(error){
+    console.warn("Cloudflare native Infinite Book request failed",String(error?.message||error));
+    return json(request,{ok:false,error:"cloudflare_book_generation_failed",detail:String(error?.message||error).slice(0,250),model},502);
   }
 }
 
@@ -799,10 +822,10 @@ export default {
       return json(request, {
         ok: true,
         service: "infinity-ai-gateway",
-        version: "2026-10-05-workers-ai-only-1",
+        version: "2026-10-09-native-book-ai-1",
         workersAIConfigured: Boolean(env.AI),
         model: env.CF_AI_MODEL || DEFAULT_CF_MODEL,
-         routes: { "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai", "/v1/image": "flux-2-reference-image", "/v1/comfy-image": "oracle-gpu-renderer", "/v1/image-read": "gemma-4-26b-ocr-reader", "/v1/image-review": "gemma-visual-quality-critic", "/v1/image-compare": "searxng-image-context-compare", "/v1/card-intel": "mlb-stats-enrichment" },
+         routes: { "/v1/book/generate": "native-cloudflare-workers-ai", "/v1/chat": "rogers-workers-ai", "/v1/reason": "rogers-workers-ai", "/v1/image": "flux-2-reference-image", "/v1/comfy-image": "oracle-gpu-renderer", "/v1/image-read": "gemma-4-26b-ocr-reader", "/v1/image-review": "gemma-visual-quality-critic", "/v1/image-compare": "searxng-image-context-compare", "/v1/card-intel": "mlb-stats-enrichment" },
       });
     }
 
@@ -829,6 +852,7 @@ export default {
       try { body = await bodyJson(request); }
       catch (error) { return json(request, { ok: false, error: String(error?.message || error) }, 400); }
       if (url.pathname === "/v1/card-intel") return runCardIntel(request, env, body);
+      if (url.pathname === "/v1/book/generate") return runBookNative(request, env, body);
       if (url.pathname === "/v1/chat" || url.pathname === "/api/gpt") return runMetered(request, env, body, "gpt");
       if (url.pathname === "/v1/reason" || url.pathname === "/api/rogers" || url.pathname === "/api/cosmo" || url.pathname === "/") return runMetered(request, env, body, "reason");
     }

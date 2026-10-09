@@ -3,7 +3,7 @@
 'use strict';
 const HISTORY='quantaPhiBuildHistoryV1',COLLECT='quantaPhiCollected';
 const SEARCH='https://orange-brook-a2ac.marvaseater.workers.dev/search';
-const AI='https://infinity-rogers.marvaseater.workers.dev/v1/chat';
+const AI='https://infinity-rogers.marvaseater.workers.dev/v1/book/generate';
 const terms=[
 [31,/radio|shortwave|ham\s?radio|am receiver|fm receiver|antenna|vacuum tube|transistor radio|rf circuit|walkie.talkie/i],
 [32,/broadcast|transmitter|airwaves|radio station|television signal|wireless telegraph/i],
@@ -215,7 +215,22 @@ function sourcePlan(roll,catalog,focus=''){
 
 async function request(url,options={},ms=8500){
  const c=new AbortController(),timeout=setTimeout(()=>c.abort(),ms);
- try{const r=await fetch(url,{...options,signal:c.signal});if(!r.ok){let errorData={};if(String(url).includes('infinity-rogers')&&r.status===429){errorData=await r.json().catch(()=>({}));global.PhiInfiniteBookResearchStatus=errorData.error==='daily_quota_exceeded'?'quota':'rate-limited'}throw Error('HTTP '+r.status+(errorData.error?' '+errorData.error:''))}return await r.json()}finally{clearTimeout(timeout)}
+ try{
+  const r=await fetch(url,{...options,signal:c.signal});
+  if(!r.ok){
+   let errorData={};
+   if(String(url).includes('infinity-rogers')){
+    errorData=await r.json().catch(()=>({}));
+    global.PhiInfiniteBookResearchStatus=r.status===429?'provider-busy':r.status>=500?'ai-unavailable':'service-error';
+   }
+   throw Error('HTTP '+r.status+(errorData.error?' '+errorData.error:''));
+  }
+  const data=await r.json();
+  if(data?.ok===false&&String(url).includes('infinity-rogers')){
+   global.PhiInfiniteBookResearchStatus='ai-unavailable';
+  }
+  return data;
+ }finally{clearTimeout(timeout)}
 }
 function extract(payload){
  return (Array.isArray(payload?.results)?payload.results:[]).map(r=>({title:clean(r.title).slice(0,200),summary:clean(r.content||r.description).slice(0,700),url:canonical(r.url)}))
@@ -355,7 +370,8 @@ async function findSearch({roll,catalog,seen,focus='',storyKind='legacy'}) {
  const direct=canSearch?plan.queries.slice(0,3).map(search):[];
  // Preserve daily writing tokens for the home opener; optional GPT scouting
  // belongs to actual search-driven Asteroid research only.
- const scout=storyKind==='reads-realms'?Promise.resolve([]):scoutQueries(plan,roll);
+ // The indexed search plan runs without requiring a separate model request first.
+ const scout=storyKind==='reads-realms'||storyKind==='asteroid'?Promise.resolve([]):scoutQueries(plan,roll);
  const suggestions=await Promise.race([scout,new Promise(resolve=>setTimeout(()=>resolve([]),2200))]);
  const requested=[...direct];
  if(canSearch&&suggestions[0])requested.push(search(suggestions[0]));

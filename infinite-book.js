@@ -29,7 +29,7 @@
     const card=root.querySelector('.ib-story');
     if(card?.dataset.ready==='false'){
       root.querySelector('.ib-title').textContent='Researching your Asteroid story';
-      root.querySelector('.ib-summary').textContent='Researching your search subject and writing an original story from documented evidence.';
+      root.querySelector('.ib-summary').textContent='Researching your search subject and writing a new original story using Cloudflare AI.';
     }
   }
   function placeHomeStory(){
@@ -118,7 +118,7 @@
     status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
     card.append(detail, actions, build);
     copy.querySelector('.ib-title').textContent='Writing a fresh Reads & Realms story';
-    card.querySelector('.ib-summary').textContent='GPT is researching documented evidence for an original Mystery, Adventure or Suspense story.';
+    card.querySelector('.ib-summary').textContent='Cloudflare AI is researching documented evidence for a new Mystery, Adventure or Suspense story.';
     root.append(header, card, status);
   }
   function note(message) { const p = root.querySelector('.ib-status'); if (p) p.textContent = message; }
@@ -428,7 +428,7 @@
       const card=root.querySelector('.ib-story');card.hidden=false;card.dataset.ready='false';delete card.dataset.storyId;
       root.querySelector('.ib-category').textContent='SOURCED '+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery').toUpperCase();
       root.querySelector('.ib-title').textContent=searchMode?'Researching Asteroid story for '+String(query).slice(0,100):'Writing a fresh Reads & Realms story';
-      root.querySelector('.ib-summary').textContent=searchMode?'Finding original evidence for your search. GPT will write the Asteroid story once the sources support it.':'Finding fresh documented evidence. GPT will write a new Reads & Realms story for this visit.';
+      root.querySelector('.ib-summary').textContent=searchMode?'Finding original evidence for your search. Cloudflare AI will write the Asteroid story when the evidence supports it.':'Finding fresh documented evidence. Cloudflare AI will write a new Reads & Realms story for this visit.';
       root.setAttribute('aria-busy','true');window.dispatchEvent(new CustomEvent('phi:story:reset'));
     }
     // On a new search show the prepared story immediately, then replace only
@@ -437,7 +437,7 @@
       present(ready, roll);
       if(!spinSubmitted)note(roll?.bracketKey ? 'Ready · '+roll.indexWord+' · '+roll.refinement+' · '+roll.storyDirection : 'Ready · source-backed story');
     } else {
-      note((root.dataset.context==='home'?'Reads & Realms · researching ':'ASTEROID · researching ')+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery')+' from real sources for GPT to write. The card appears only when evidence supports the story…');
+      note((root.dataset.context==='home'?'Reads & Realms · researching ':'ASTEROID · researching ')+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery')+' from real sources for Cloudflare AI to write. The card appears only when evidence supports the story…');
     }
     const acceptNew = story => {
       // Do not replace a visible story on an unsuspecting reader.
@@ -446,12 +446,21 @@
       if (ready && (!query || current?.id !== ready.id)) return;
       present(story, roll);
       if(!spinSubmitted)note(story.discoveryMethod === 'gpt-deep'
-        ? 'New sourced historical story · original GPT narrative'
+        ? 'New sourced historical story · original Cloudflare AI narrative'
         : 'New historical discovery · cited source');
     };
     void discoverInBackground(roll, acceptNew, storyKind)
-      .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.dataset.ready!=='true'){root.removeAttribute('aria-busy');root.querySelector('.ib-title').textContent=window.PhiInfiniteBookResearchStatus==='quota'?'Story writing paused':'Story unavailable';root.querySelector('.ib-summary').textContent=window.PhiInfiniteBookResearchStatus==='quota'?'The daily AI story-writing allowance has been reached. Your saved stories and research remain available.':'No source-backed GPT story was completed for this search. A broader source search or another research angle may help.';note(window.PhiInfiniteBookResearchStatus==='quota'?(root.dataset.context==='home'?'Reads & Realms':'Asteroid')+' · Story writing paused · daily AI allowance reached.':(root.dataset.context==='home'?'Reads & Realms':'Asteroid')+' · A complete sourced story is not available yet.')}})
-      .catch(error=>{console.warn(storyKind+' research unavailable',error);if(ticket===activeStoryTicket){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent='Research was interrupted. Try another search; no unsupported story was created.';note('Could not complete sourced GPT writing for this topic.')}});
+      .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.dataset.ready!=='true'){
+        root.removeAttribute('aria-busy');
+        const status=window.PhiInfiniteBookResearchStatus;
+        const busy=status==='provider-busy'||status==='ai-unavailable';
+        root.querySelector('.ib-title').textContent=busy?'Cloudflare AI temporarily unavailable':'Story unavailable';
+        root.querySelector('.ib-summary').textContent=busy
+          ? 'Cloudflare could not finish this request. No old story was substituted; use Another story to retry.'
+          : 'No evidence-supported new story was completed for this topic. Try another research angle.';
+        note((root.dataset.context==='home'?'Reads & Realms':'Asteroid')+(busy?' · Cloudflare AI service could not complete this request.':' · Complete sourced story not yet available.'));
+      }})
+      .catch(error=>{console.warn(storyKind+' research unavailable',error);if(ticket===activeStoryTicket){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent='Research was interrupted. Try another search; no unsupported story was created.';note('Cloudflare AI could not complete sourced writing for this topic.')}});
   }
   window.addEventListener('quantaphi:search-start', event=>{
     const query=String(event.detail?.query||'').trim();
@@ -602,7 +611,7 @@
         const u=new URL(location.href),source=u.searchParams.get('bookSource')||'';
         let validSource=false;try{validSource=new URL(source).protocol==='https:'}catch(_){}
         if(validSource && u.searchParams.get('bookTitle') && u.searchParams.get('bookSummary')){
-          note('Rebuilding the shared story from evidence with GPT…');
+          note('Rebuilding the shared story from evidence with Cloudflare AI…');
           await nextStory(u.searchParams.get('bookTitle'));
         } else if(root.dataset.context==='search'&&lastSearchQuery) await nextStory(lastSearchQuery);
         else showHomeStory();
