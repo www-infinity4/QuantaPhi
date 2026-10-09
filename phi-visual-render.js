@@ -21,7 +21,7 @@ async function jsonResponse(path,options){
   const data=await response.json().catch(()=>({}));
   if(!response.ok){
    const error=new Error(String(data.error||data.detail||'Service unavailable').slice(0,220));
-   error.code=String(data.code||'');
+   error.code=String(data.code||data.error||'');
    error.status=response.status;
    error.suggestion=String(data.suggestion||'').slice(0,240);
    throw error;
