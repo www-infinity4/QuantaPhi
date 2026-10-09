@@ -87,3 +87,15 @@ body #controlPhiWalletPanel button{
   #infiniteBook .ib-actions .ib-action,#fredSpacesRadio .fs-actions .fs-btn,
   #fredSpacesRadio .fs-builds .fs-btn{padding:9px 5px;font-size:12px}
 }
+
+/* Oracle text clarity: bolder, darker labels with consistent wrapping. */
+#infiniteBook :is(button,a.ib-build-link),#phiImageBuilder button,#fredSpacesRadio :is(button,.fs-source),
+.buttonPerson :is(a,button),#controlPhiWalletPanel button,.qchips button,body .qbalances button{
+ font-weight:900;letter-spacing:.012em;text-rendering:optimizeLegibility;
+}
+#infiniteBook .ib-action,#infiniteBook .ib-next,#phiImageBuilder .pi-mode,#phiImageBuilder .pi-actions button,
+#fredSpacesRadio :is(.fs-btn,.fs-topic,.fs-mode,.fs-tool),.qchips .qchip{color:#261637}
+#fredSpacesRadio .fs-next,#fredSpacesRadio .fs-mode[aria-pressed="true"]{color:#fff!important}
+.buttonPerson .bitcoinCrusherShoe{color:#f9f9ff;border-color:#a991fb;background:linear-gradient(145deg,#263462,#131c38);box-shadow:0 0 0 1px #c0cfff,0 0 17px #716efa70}
+.buttonPerson .bitcoinCrusherShoe .bodySlotTitle{font-size:11px;line-height:1.15;letter-spacing:.01em}
+.buttonPerson .bitcoinCrusherShoe .bodySlotMeta{font-size:8px;color:#e5eaff}
