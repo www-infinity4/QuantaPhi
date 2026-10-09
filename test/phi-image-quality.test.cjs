@@ -142,3 +142,46 @@ test('one bounded automatic repair is scored against the original image',()=>{
  assert.match(worker,/Render visuals ONLY: zero painted letters or numerals/);
  assert.match(source('index.html'),/phi-image-builder\.js\?v=20261008-auto-qa2/);
 });
+
+test('FLUX adapter sends true text-only requests and scales reference pixels, not just byte size',()=>{
+ const adapter=source('phi-visual-render.js');
+ const builder=source('phi-image-builder.js');
+ assert.match(adapter,/async function fluxReference\(blob\)/);
+ assert.match(adapter,/500\/Math\.max\(image\.width,image\.height\)/);
+ assert.match(adapter,/const blob=source\?await fluxReference\(source\):null/);
+ assert.match(adapter,/if\(blob\)body\.append\('image',blob,'subject-reference\.jpg'\)/);
+ assert.match(adapter,/reference_mode',source\?'uploaded':design\?'style-only':'text-only'/);
+ assert.doesNotMatch(adapter.slice(adapter.indexOf('async function render('),adapter.indexOf('async function validate(')),/neutralImage\(/);
+ assert.match(builder,/window\.PhiImageAutoRefine===true&&review/);
+});
+
+test('Workers image route permits text-only generation with no synthetic image and style-only indices',async()=>{
+ const worker=await import('data:text/javascript;base64,'+Buffer.from(source('workers/infinity-rogers/worker.js')).toString('base64'));
+ const calls=[];
+ const env={
+  AI:{run:async(model,args)=>{
+   const form=await new Response(args.multipart.body,{headers:{'content-type':args.multipart.contentType}}).formData();
+   calls.push({model,keys:[...form.keys()]});
+   return {image:'ZmFrZS1pbWFnZQ=='};
+  }},
+  METER_DB:{prepare:()=>({bind:()=>({first:async()=>null,run:async()=>({})})})}
+ };
+ async function request(style=false){
+  const form=new FormData();form.set('prompt','A clean drawing of a cherry tree at sunrise');form.set('mode','Image');
+  form.set('reference_mode',style?'style-only':'text-only');
+  if(style)form.set('design_reference',new File([new Uint8Array([255,216,255,217])],'style.jpg',{type:'image/jpeg'}));
+  const response=await worker.default.fetch(new Request('https://infinity-rogers.marvaseater.workers.dev/v1/image',{
+   method:'POST',headers:{origin:'https://quantaphi.org','X-Infinity-User':style?'test-style':'test-text'},body:form
+  }),env,{});
+  assert.equal(response.status,200);
+  return response.json();
+ }
+ const textResult=await request(false);
+ assert.equal(textResult.referenceMode,'text-only');
+ assert.deepEqual(calls[0].keys.includes('input_image_0'),false);
+ assert.deepEqual(calls[0].keys.includes('input_image_1'),false);
+ const styleResult=await request(true);
+ assert.equal(styleResult.referenceMode,'style-only');
+ assert.equal(calls[1].keys.includes('input_image_0'),true);
+ assert.equal(calls[1].keys.includes('input_image_1'),false);
+});
