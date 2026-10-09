@@ -136,7 +136,7 @@
   function render(){
     root.replaceChildren();
     const card=node("article","fs-card"),top=node("div","fs-header"),ident=node("div","fs-heading");
-    ident.append(node("small","fs-eyebrow","FRED'S SPACES · CURATED REPLAY"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
+    ident.append(node("small","fs-eyebrow","CURIO SPACE SPOTLIGHT"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
     top.append(ident);card.append(top);
     if(active.id===FIRST)card.append(node("p","fs-free","FEATURED EPISODE · FREE"));
     card.append(node("p","fs-meta",active.date+" · "+active.duration),node("p","fs-summary",active.description));
