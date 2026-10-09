@@ -246,5 +246,5 @@ test('slow same-origin source feed does not delay the first story',()=>{
  const init=code.split('async function init()')[1];
  assert.ok(!init.includes('await appendConfiguredFeed()'));
  assert.ok(init.includes('void appendConfiguredFeed().then(refillReadyStories)'));
- assert.ok(init.includes("await nextStory(initialQuery||'')"));
+ assert.ok(init.includes('await nextStory(lastSearchQuery)'),'latest search must be honored if it arrived while the catalog loaded');
 });
