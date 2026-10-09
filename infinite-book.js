@@ -390,6 +390,7 @@
   async function nextStory(query = '', options = {}) {
     if (!catalog) return;
     const ticket = ++activeStoryTicket;
+    window.PhiInfiniteBookResearchStatus='';
     const roll = rollDice(query);
     const requireFresh=options.requireFresh!==false;
     const spinReference=options.rewardSpin?'research-spin:'+String(crypto?.randomUUID?.()||Date.now()+'-'+Math.random()):'';
@@ -431,7 +432,7 @@
         : 'New historical discovery · cited source');
     };
     void discoverInBackground(roll, acceptNew)
-      .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.dataset.ready!=='true'){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent='No source-backed GPT story was completed for this search. Try another research angle or a more specific topic.';note('Asteroid could not verify a finished narrative. No film or unsupported text was substituted.')}})
+      .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.dataset.ready!=='true'){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent=window.PhiInfiniteBookResearchStatus==='quota'?'The AI story-writing allowance for today was reached. Your research and saved Quants remain intact; another topic cannot bypass this limit.':'No source-backed GPT story was completed for this search. A broader source search or another research angle may help.';note(window.PhiInfiniteBookResearchStatus==='quota'?'Asteroid · AI daily token allowance reached; no reward was submitted for an unfinished story.':'Asteroid could not verify a finished narrative. No unsupported story was substituted.')}})
       .catch(error=>{console.warn('Asteroid research unavailable',error);if(ticket===activeStoryTicket){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent='Research was interrupted. Try another search; no unsupported story was created.';note('Could not complete sourced GPT writing for this topic.')}});
   }
   window.addEventListener('quantaphi:search-start', event=>{
