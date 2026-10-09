@@ -116,32 +116,84 @@
     u.searchParams.set("episodeSource",active.source);
     location.href=u.href;
   }
+  function chooseTopic(tag){selectedTopic=selectedTopic===tag?"":tag;selectedMode="search";render();}
+  function routeTopic(tool){
+    const topic=selectedTopic.trim();
+    const paths={InfinityPhi:"/InfinityPhi/",OmniPhi:"/OmniPhi/overview/",QuantaPhi:"/"};
+    if(!topic||!paths[tool])return;
+    const q=selectedMode==="learn"?"Learn about "+topic:topic;
+    if(tool==="QuantaPhi"&&selectedMode==="search"){
+      const input=document.getElementById("q"),go=document.getElementById("go");
+      if(input&&go){input.value=q;selectedTopic="";go.click();input.scrollIntoView({behavior:"smooth",block:"start"});render();return;}
+    }
+    const u=new URL(paths[tool],location.origin);
+    u.searchParams.set("q",q);u.searchParams.set("intent",selectedMode);
+    u.searchParams.set("topic",topic);u.searchParams.set("from","fred-spaces");
+    u.searchParams.set("episode",active.id);u.searchParams.set("episodeSource",active.source);
+    if(selectedMode==="build")u.searchParams.set("buildPrompt","Create an original website about "+topic+" using this indexed Fred Krueger Space as context. Verify factual claims.");
+    location.assign(u.href);
+  }
   function render(){
     root.replaceChildren();
-    const card=node("article","fs-card"); const top=node("div","fs-header");
-    const ident=node("div","fs-heading");ident.append(node("small","fs-eyebrow","YELLOW CARD · INFINITY SPACES RADIO"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
-    top.append(ident,node("strong","fs-number","#"+active.slot));
-    if(active.id===FIRST)card.append(node("p","fs-free","FIRST FRED SPACE · FREE · 0 STARCOINS"));
-    card.append(top,node("p","fs-meta",active.date+" · "+active.duration+" · Publicly indexed episode"),node("p","fs-summary",active.description));
-    const tags=node("div","fs-tags");active.tags.forEach(t=>tags.append(node("span","",t)));card.append(tags);
-    const stream=node("div","fs-stream");
-    if(active.audioUrl){
-      const audio=node("audio","fs-audio");audio.controls=true;audio.preload="none";audio.src=active.audioUrl;stream.append(audio);
-    }else{
-      stream.append(node("div","fs-play-symbol","◉"),node("p","fs-stream-note","The first episode is free to discover. Fred’s recording has not yet been connected to an authorized Phi audio source."));
+    const card=node("article","fs-card"),top=node("div","fs-header"),ident=node("div","fs-heading");
+    ident.append(node("small","fs-eyebrow","FRED'S SPACES · CURATED REPLAY"),node("h2","",active.title),node("p","fs-host","Fred Krueger · @dotkrueger · X Spaces"));
+    top.append(ident);card.append(top);
+    if(active.id===FIRST)card.append(node("p","fs-free","FEATURED EPISODE · FREE"));
+    card.append(node("p","fs-meta",active.date+" · "+active.duration),node("p","fs-summary",active.description));
+    const stream=node("section","fs-stream");
+    stream.setAttribute("aria-label","X Spaces replay player-style link");
+    const player=node("div","fs-player"),play=node("a","fs-play","▶");
+    play.href=active.source;play.target="_blank";play.rel="noopener noreferrer";
+    play.setAttribute("aria-label","Open "+active.title+" on X to play the replay");
+    player.append(play);
+    const deck=node("div","fs-player-deck");
+    deck.append(node("strong","fs-player-name","X Spaces replay"),node("span","fs-player-sub","Open on X to listen · Not hosted by Phi"));
+    const track=node("div","fs-player-track");track.setAttribute("aria-hidden","true");
+    for(let i=0;i<13;i++)track.append(node("i",""));deck.append(track);
+    const timing=node("div","fs-player-timing");
+    timing.append(node("span","","Replay on X"),node("span","",active.duration));deck.append(timing);
+    player.append(deck);stream.append(player);
+    const replay=node("a","fs-source","Open original on X ↗");
+    replay.href=active.source;replay.target="_blank";replay.rel="noopener noreferrer";
+    stream.append(replay,node("small","fs-play-disclaimer","X sign-in or replay availability may vary. No simulated audio."));
+    card.append(stream);
+    const tags=node("div","fs-tags");tags.setAttribute("aria-label","Explore episode topics");
+    for(const tag of active.tags){
+      const b=button(tag,()=>chooseTopic(tag),"fs-topic");
+      b.setAttribute("aria-expanded",String(selectedTopic===tag));tags.append(b);
     }
-    const link=node("a","fs-source","Open Fred’s original X replay ↗");link.href=active.source;link.target="_blank";link.rel="noopener noreferrer";stream.append(link);card.append(stream);
+    card.append(tags);
+    if(selectedTopic){
+      const chooser=node("section","fs-topic-panel");
+      chooser.setAttribute("aria-label","Explore "+selectedTopic+" with Phi");
+      const header=node("div","fs-topic-header");
+      header.append(node("strong","","Explore "+selectedTopic));
+      header.append(button("Close",()=>{selectedTopic="";render()},"fs-topic-close"));
+      chooser.append(header,node("p","","Choose Search, Build or Learn, then select a Phi."));
+      const modes=node("div","fs-mode-row");
+      for(const mode of ["search","build","learn"]){
+        const b=button(mode[0].toUpperCase()+mode.slice(1),()=>{selectedMode=mode;render()},"fs-mode");
+        b.setAttribute("aria-pressed",String(selectedMode===mode));modes.append(b);
+      }
+      chooser.append(modes);
+      const tools=node("div","fs-tool-row");
+      for(const phi of ["QuantaPhi","InfinityPhi","OmniPhi"]){
+        const b=button(phi,()=>routeTopic(phi),"fs-tool");
+        b.setAttribute("aria-label",selectedMode+" "+selectedTopic+" with "+phi);tools.append(b);
+      }
+      chooser.append(tools);card.append(chooser);
+    }
     const actions=node("div","fs-actions");
-    actions.append(button(stars.has(active.id)?"★ Starred":"☆ Star",favorite),button("Share +0.1 ★",share),button("Collect +0.1 ★",collect));
-    card.append(actions);
-    const builds=node("div","fs-builds");["InfinityPhi","OmniPhi","QuantaPhi"].forEach(t=>builds.append(button("Build with "+t,()=>build(t),"fs-phi")));card.append(builds);
+    actions.append(button(stars.has(active.id)?"★ Starred":"☆ Star",favorite),button("Share +0.1 ★",share),button("Collect +0.1 ★",collect));card.append(actions);
+    const builds=node("div","fs-builds");
+    ["InfinityPhi","OmniPhi","QuantaPhi"].forEach(t=>builds.append(button("Build with "+t,()=>build(t),"fs-phi")));card.append(builds);
     const nextRow=node("div","fs-bottom");
-    const playableMore=episodes.some(e=>e.id!==FIRST&&e.audioUrl);
-    const unlock=button(busy?"Checking StarQuest…":playableMore?"Next playable Space · 1 ★":"Next playable Space · 1 ★ (pending)",more,"fs-next");unlock.disabled=busy||!playableMore;
-    nextRow.append(unlock,node("span","fs-balance",balance==null?"StarQuest balance pending":"StarCoins: "+balance+" · First card free"));
-    card.append(nextRow);
-    const status=node("p","fs-status",message||"First Fred episode: free. Further playable episodes: 1 full StarCoin each. Paid unlocks remain unavailable until audio can actually play.");
-    status.setAttribute("role","status");card.append(status);
+    const hasCurated=episodes.some(e=>e.id!==FIRST&&isReplayLink(e));
+    const unlock=button(busy?"Confirming StarCoin charge…":"Buy next curated episode · 1 ★",more,"fs-next");
+    unlock.disabled=busy||!hasCurated;
+    nextRow.append(unlock,node("span","fs-balance",balance==null?"Wallet balance unavailable":"StarCoins: "+balance));card.append(nextRow);
+    const status=node("p","fs-status",message||"Featured replay is free. One new curated X episode link costs 1 full StarCoin after confirmation. Listening happens on X.");
+    status.setAttribute("role","status");status.setAttribute("aria-live","polite");card.append(status);
     root.append(card);
   }
   const requested=new URL(location.href).searchParams.get("fredSpace");
