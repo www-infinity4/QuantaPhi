@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Published Infinity Website · QuantaPhi</title>
+<meta name="description" content="A real website published from QuantaPhi research and built with Infinity and Omni Code Phi.">
+<link rel="canonical" href="https://quantaphi.org/page/">
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#442073,#170e2b 64%);color:#fff;font:15px/1.5 system-ui,sans-serif}
+header{padding:12px clamp(12px,3vw,24px);display:flex;flex-wrap:wrap;align-items:center;gap:10px;background:#120b28ed;border-bottom:1px solid #a87cf3}
+h1{font-size:15px;line-height:1.2;margin:0;flex:1;font-weight:900}
+a,button{font:800 12px/1.2 system-ui;min-height:38px;display:inline-flex;align-items:center;justify-content:center;padding:10px 13px;border:1px solid #c6a1f7;border-radius:999px;background:#fff;color:#3b1b64;text-decoration:none;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:3px solid #ffa9e3;outline-offset:3px}
+#note{min-height:35px;margin:0;padding:7px 16px;background:#271241;color:#f5e7ff;font-size:12px}
+iframe{display:block;width:100%;height:calc(100dvh - 125px);min-height:530px;background:white;border:0}
+.shell{display:none;margin:auto;max-width:740px;padding:32px 18px}
+.shell h2{font-size:25px}
+.shell p{line-height:1.7;color:#f1e7ff}
+@media(max-width:420px){header{gap:8px;padding:9px}header h1{flex:1 0 100%}iframe{height:calc(100dvh - 165px)}}
+</style></head><body>
+<header><h1>QuantaPhi · Published Infinity Website</h1><a href="/">QuantaPhi Search</a><a href="/omni-phi/code/">Code Phi</a><button type="button" id="copy">Copy page link</button></header>
+<p id="note" role="status">Loading published website…</p>
+<section class="shell" id="error"><h2>Website not yet available</h2><p id="reason">This page could not be loaded. The address must identify an actually published website.</p><a href="/">Back to QuantaPhi</a></section>
+<iframe id="site" title="Published Infinity website" sandbox="allow-scripts allow-forms allow-popups allow-downloads" referrerpolicy="no-referrer" hidden></iframe>
+<script>
+(function(){
+'use strict';
+const id=new URL(location.href).searchParams.get('id')||'';
+const site=document.getElementById('site'),note=document.getElementById('note'),error=document.getElementById('error');
+document.getElementById('copy').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);note.textContent='Public page link copied.'}catch{note.textContent='Use your browser Share menu to copy this address.'}};
+function fail(message){note.textContent='This website is unavailable.';error.style.display='block';document.getElementById('reason').textContent=message}
+if(!/^p_[a-z0-9]{20,40}$/.test(id)){fail('This is the public viewer. Open a complete published website link that includes its page ID.');return}
+const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),16000);
+fetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/public/pages/'+encodeURIComponent(id),{signal:controller.signal,cache:'no-store'}).then(async r=>{
+ const data=await r.json().catch(()=>({}));
+ if(!r.ok||!data.ok||typeof data.html!=='string')throw Error(data.error==='page_not_found'?'No website exists at this address.':'The public website service has not supplied this page.');
+ if(!/<!doctype|<html/i.test(data.html))throw Error('The published content did not pass the document check.');
+ // Opaque iframe origin isolates page JavaScript from wallet, tokens,
+ // IndexedDB, service workers and the main QuantaPhi site.
+ const source=data.html.replace(/<head(\s[^>]*)?>/i,match=>match+'<base href="https://quantaphi.org/">');
+ site.srcdoc=source;site.hidden=false;
+ note.textContent='Published website · '+String(data.title||'Infinity website').slice(0,140);
+ document.title=String(data.title||'Infinity website').slice(0,130)+' · QuantaPhi';
+}).catch(e=>fail(String(e.message||'Network unavailable.'))).finally(()=>clearTimeout(timer));
+})();
+</script>
+</body></html>
