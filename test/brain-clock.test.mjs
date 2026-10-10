@@ -3,8 +3,17 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 const authUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-auth.mjs',import.meta.url))).toString('base64');
 const previewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/preview-contract.mjs',import.meta.url))).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl);
+const quantUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/job-quant.mjs',import.meta.url))).toString('base64');
+const policyUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/bot-work-policy.mjs',import.meta.url))).toString('base64');
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl);
 const {BrainClock,validateInstruction}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
+ const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{BOT_WALLET:{fetch:async()=>Response.json({ok:true,user:{id:userId,username:'fixture-owner'}})}});
+ const request=()=>new Request('https://clock.internal/earnings-connect',{method:'POST',body:JSON.stringify({walletToken:token})});
+ const connected=await clock.fetch(request());assert.equal((await connected.json()).connected,true);assert.equal(memory.get('bot-work-recipient').userId,'owner');assert.ok(!JSON.stringify([...memory]).includes(token));
+ userId='other';assert.equal((await clock.fetch(request())).status,409);assert.equal(memory.get('bot-work-recipient').userId,'owner');
+});
 test('reader receives verified runtime capabilities rather than stale adapter blockers',async()=>{
  const memory=new Map([['key',{key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,job:{instructions:'Repair page',progress:{blocker:'repository_adapter_not_connected'}}}]]);
  let messages;

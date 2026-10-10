@@ -2,6 +2,7 @@ import { DurableObject } from 'cloudflare:workers';
 import { authenticate, supported } from './runner-auth.mjs';
 import { validatePreview } from './preview-contract.mjs';
 import { jobQuant } from './job-quant.mjs';
+import { earnedWork } from './bot-work-policy.mjs';
 const PERIOD=30000,VERSION='20261010-repository-engine1';
 const REPOS={has:repo=>/^[\w.-]+$/.test(repo)};
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
@@ -30,6 +31,28 @@ async function read(url,max=14000){
 }
 export class BrainClock extends DurableObject{
  constructor(ctx,env){super(ctx,env);this.ctx=ctx;this.env=env;this.running=false;}
+ async payWork(quant,verificationToken=''){
+  if(quant.payout?.status==='paid')return quant.payout;
+  const recipient=await this.ctx.storage.get('bot-work-recipient');
+  if(!recipient)return {status:'awaiting_wallet_connection'};
+  const attempt=quant.attempts?.findLast(a=>['committed_unverified','deployed_verified'].includes(a.status)&&a.testsPassed===true&&/^[a-f0-9]{40}$/.test(a.commitSha||''));
+  if(!attempt)return {status:'not_earned'};
+  const response=await fetch('https://api.github.com/repos/'+quant.repository+'/commits/'+attempt.commitSha,{headers:{Accept:'application/vnd.github+json','User-Agent':'Infinity-Bot-Earnings',...(verificationToken?{Authorization:'Bearer '+verificationToken}:{})},signal:AbortSignal.timeout(15000)});
+  if(!response.ok)throw Error('earnings_commit_read_failed');
+  const reward=earnedWork(quant,await response.json());if(!reward)return {status:'not_earned'};
+  const paid=await this.env.BOT_WALLET.fetch('https://wallet.internal/internal/bot-work-credit',{method:'POST',headers:{'Content-Type':'application/json','X-Bot-Work-Key':this.env.BOT_WORK_SECRET},body:JSON.stringify({...reward,userId:recipient.userId}),signal:AbortSignal.timeout(15000)});
+  const receipt=await paid.json();if(!paid.ok||!receipt.ok)throw Error(receipt.error||'earnings_wallet_rejected');
+  const payout={status:'paid',...receipt,when:new Date().toISOString()};await this.ctx.storage.put(quant.id,{...quant,payout});return payout;
+ }
+ async settleWork(){
+  const index=await this.ctx.storage.get('job-quant-index')||[],payouts=[];
+  for(const item of index){const quant=await this.ctx.storage.get(item.id);if(!quant||quant.payout?.status==='paid')continue;
+   if(!quant.attempts?.some(a=>a.testsPassed&&a.commitSha))continue;
+   try{payouts.push({quantId:quant.id,...await this.payWork(quant)})}catch(e){payouts.push({quantId:quant.id,status:'pending',error:String(e.message).slice(0,200)})}
+   if(payouts.length>=3)break;
+  }
+  return payouts;
+ }
  async emit(agent,to,kind,message,url){
   const entries=await this.ctx.storage.get('events')||[];
   entries.push({id:crypto.randomUUID(),agent,to,kind,phase:kind,project:'Robot Brain',when:new Date().toISOString(),message:String(message).slice(0,390),
@@ -186,6 +209,7 @@ export class BrainClock extends DurableObject{
   await this.ctx.storage.put(quant.id,quant);
   const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
   await this.ctx.storage.put('job-quant-index',[{id:quant.id,repository:quant.repository,status:quant.status,updatedAt:quant.updatedAt},...quantIndex.filter(q=>q.id!==quant.id)].slice(0,200));
+  try{await this.payWork(quant,body.verificationToken||'')}catch(e){await this.ctx.storage.put('bot-work-credit-error',{when:Date.now(),error:String(e.message).slice(0,200),quantId:quant.id})}
   await this.ctx.storage.put('repository-lease:'+lease.repository,{...receipt,leaseUntil:0});
   const fresh=await this.env.WORK_DB.prepare('SELECT context_json FROM work_tickets WHERE id=?').bind(lease.ticketId).first();
   if(fresh){
@@ -199,6 +223,14 @@ export class BrainClock extends DurableObject{
   return Response.json({ok:true});
  }
  async fetch(request){
+  if(new URL(request.url).pathname==='/earnings-connect'){
+   const body=await request.json();if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(body.walletToken||''))return Response.json({ok:false,error:'wallet_connection_required'},{status:401});
+   const response=await this.env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/state',{headers:{Authorization:'Bearer '+body.walletToken},signal:AbortSignal.timeout(15000)});
+   const state=await response.json();if(!response.ok||!state.ok||!state.user?.id)return Response.json({ok:false,error:'wallet_identity_not_verified'},{status:401});
+   const previous=await this.ctx.storage.get('bot-work-recipient');if(previous&&previous.userId!==state.user.id)return Response.json({ok:false,error:'earnings_wallet_already_bound'},{status:409});
+   await this.ctx.storage.put('bot-work-recipient',{userId:state.user.id,username:state.user.username,connectedAt:previous?.connectedAt||Date.now()});
+   return Response.json({ok:true,connected:true,username:state.user.username,payouts:await this.settleWork(),policy:{repair:{asset:'QUANT',amount:1},completePage:{asset:'STARCOIN',amount:1}}});
+  }
   if(new URL(request.url).pathname==='/quants'){const id=new URL(request.url).searchParams.get('id');if(id){const quant=id.startsWith('job-quant:')?await this.ctx.storage.get(id):null;return Response.json({ok:!!quant,quant});}return Response.json({ok:true,items:await this.ctx.storage.get('job-quant-index')||[]});}
   if(new URL(request.url).pathname==='/runner/claim')return this.ctx.blockConcurrencyWhile(()=>this.runner(request));
   if(new URL(request.url).pathname.startsWith('/runner/'))return this.runner(request);
@@ -218,6 +250,7 @@ export class BrainClock extends DurableObject{
   // Recovery alarm is installed before network calls, so a crashed turn can recover.
   await this.ctx.storage.setAlarm(Date.now()+120000);
   try{
+   if(await this.ctx.storage.get('bot-work-recipient'))await this.settleWork();
    const page=await read('https://quantaphi.org/',150000);
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
    let selected=null;
@@ -303,6 +336,13 @@ export default{
  async scheduled(event,env){await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/start');},
  async fetch(request,env){
   const path=new URL(request.url).pathname;
+  if(path==='/work/earnings/connect'&&request.method==='POST'){
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!token||!env.WRITER_OWNER_HASH||await digest(token)!==env.WRITER_OWNER_HASH)return output(request,{ok:false,error:'owner_authorization_required'});
+   const text=await request.text();if(text.length>4096)return new Response('Body too large',{status:413});
+   const r=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/earnings-connect',{method:'POST',body:text});
+   return output(request,await r.json());
+  }
   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':origins.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Access-Control-Allow-Methods':'GET, POST, OPTIONS','Access-Control-Allow-Headers':'Authorization, Content-Type','Vary':'Origin'}});
   if(request.method==='POST' && ['/runner/claim','/runner/event','/runner/result','/runner/quant-receipt','/runner/quant-audit','/runner/propose','/runner/review','/runner/preview','/runner/plan','/runner/build','/runner/engine-review','/runner/arbitrate','/runner/capability'].includes(path)){
    try{
