@@ -231,7 +231,9 @@ async function shareStory(story,url){
  const extension=record.blob.type==='image/jpeg'?'jpg':record.blob.type==='image/webp'?'webp':'png';
  const file=new File([record.blob],'infinite-book-story-'+String(story.id).replace(/[^a-z0-9-]/gi,'-')+'.'+extension,{type:record.blob.type||'image/png'});
  if(!navigator.canShare({files:[file]}))return{handled:false,imageMissing:true};
- const body=[story.title,story.full||story.summary,'Original source: '+story.sourceUrl,'Open the story: '+url].filter(Boolean).join('\n\n').slice(0,4200);
+ const starter=String(story.summary||story.full||'').replace(/\s+/g,' ').trim();
+ const teaser=starter.slice(0,145).replace(/\s+\S*$/,'')+(starter.length>145?'…':'');
+ const body=[story.title,teaser,'Read and explore in Infinity Phi: '+url].filter(Boolean).join('\n\n').slice(0,360);
  try{
   await navigator.share({title:story.title,text:body,url,files:[file]});
   return{handled:true,success:true}
