@@ -525,12 +525,14 @@
     if(rewardSyncing)return {pending:read(REWARD_QUEUE,[]).length};
     const queued=read(REWARD_QUEUE,[]);
     if(!queued.length)return {pending:0,ok:true};
-    const token=await starQuestPayoutToken();
+    rewardSyncing=true; // Lock before resolving credentials, including simultaneous button taps.
+    let token='';
+    try{token=await starQuestPayoutToken()}catch(error){console.warn('StarQuest token lookup deferred',error)}
     if(!token){
+      rewardSyncing=false;
       starPayoutStatus(queued.length+' StarCoin reward'+(queued.length===1?'':'s')+' pending wallet connection',queued.length);
       return {pending:queued.length,ok:false,reason:'ledger_not_connected'};
     }
-    rewardSyncing=true;
     let lastError='';
     try{
       for(const receipt of read(REWARD_QUEUE,[])){
@@ -552,8 +554,10 @@
     finally{rewardSyncing=false}
     const remaining=read(REWARD_QUEUE,[]).length;
     if(remaining){
-      console.warn('StarCoin payout receipts retained for retry',lastError||'connection_pending');
+      if(lastError)console.warn('StarCoin payout receipts retained for retry',lastError);
       starPayoutStatus(remaining+' StarCoin reward'+(remaining===1?'':'s')+' pending sync',remaining);
+      // If another tap was queued during this request, drain it without waiting for a reload.
+      if(!lastError)setTimeout(()=>{void flushStarReceipts()},100);
     }else{
       starPayoutStatus('StarCoin wallet synced',0);
       void refreshStarCoinCloud();
