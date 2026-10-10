@@ -21,7 +21,7 @@
     return {id:"magoo-"+id,title:String(raw.title||"Magoo PhD Space"),date:String(raw.date||""),duration:String(raw.duration||""),source:new URL(raw.source).origin+"/i/spaces/"+id,tags:Array.isArray(raw.tags)?raw.tags.slice(0,10).map(String):[]};
   }
   function pick(){
-    const seen=new Set(read(SEEN,[]));
+    const seen=new Set(read(SEEN,[]));if(state.current)seen.add(state.current.id);
     let pool=state.episodes.filter(e=>!seen.has(e.id));
     if(!pool.length){seen.clear();pool=state.episodes.filter(e=>e.id!==state.current?.id);if(!pool.length)pool=state.episodes.slice();}
     if(!pool.length)return null;
