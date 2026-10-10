@@ -10,7 +10,7 @@ const make=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.class
 const $=selector=>host.querySelector(selector);
 const emit=(type,detail)=>window.dispatchEvent(new CustomEvent('phi:image:'+type,{detail}));
 const id=()=>crypto?.randomUUID?.()||('phi-'+Date.now()+'-'+Math.random().toString(36).slice(2));
-let mode='Image',source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',preparingReference=false,lastRenderPlan=null;
+let mode='Image',source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',preparingReference=false,lastRenderPlan=null,storyWriterId='';
 function state(value){host.dataset.stage=value}
 function notice(text){const area=host.dataset.stage==='finished'?'.pi-finished':host.dataset.stage==='progress'?'.pi-progress':'.pi-composer';const el=$(area+' .pi-notice');if(el)el.textContent=text}
 function step(n,value,text){const el=$('[data-pi-step="'+n+'"]');if(el){el.dataset.state=value;el.lastElementChild.textContent=text||(value==='done'?'Done':value==='active'?'Working…':'Waiting')}}
@@ -64,7 +64,7 @@ function layout(){
  lettering.append(correction,applyText,removeText);done.append(lettering);
  const audit=make('div','pi-audit');audit.setAttribute('aria-live','polite');audit.append(make('strong','pi-audit-title','Visual review'),make('p','pi-audit-summary','Not yet reviewed.'),make('ul','pi-audit-issues'));done.append(audit);
  const actions=make('div','pi-actions');
- for(const [key,label,wide]of [['fix','Fix image',true],['download','Save image'],['clear','Clear image']]){
+ for(const [key,label,wide]of [['fix','Fix image · rebuild',true],['download','Save image'],['clear','Clear image']]){
   const b=make('button',wide?'pi-wide':'',label);b.type='button';b.dataset.piAction=key;actions.append(b)
  }
  done.append(actions);
@@ -148,7 +148,7 @@ async function build({retryRender=false}={}){
     warning=[warning,'Automatic refinement could not be verified; the original rendered image was kept.'].filter(Boolean).join(' ');
    }
   }
-  artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search,autoRefined};
+  artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search,storyWriterId,autoRefined};
   artifact.review=review;
   window.QuantaStarCredit?.(description.includes("Refine the CURRENT rendered image")?"fix_image":"build_image",artifact.id,artifact);
   if(review)window.PhiImageLearning?.record(artifact,'review',{issues:review.issues});
@@ -244,7 +244,10 @@ host.addEventListener('click',event=>{
   const corrections=(review?.issues||[]).map(i=>i.fix||i.problem).filter(Boolean);
   const instruction=[lastInstruction,'Refine the CURRENT rendered image. Preserve all correct content and overall subject. Repair the following:',...corrections,review?.repairPrompt||'Correct visually implausible geometry and any fake lettering.','Use physically believable connections and print only exact words provided in the separate text field.'].filter(Boolean).join('\n');
   window.PhiImageLearning?.record(artifact,'needs_fix',{problem:review?.issues?.[0]?.problem||'User requested corrections'});
-  void reopenAsReference(instruction);
+  // Preserve the prior pixels as a repair reference; start rendering immediately.
+  // Keep Story Writer ownership on the repaired artwork so its image updates too.
+  storyWriterId=artifact?.storyWriterId||'';
+  void reopenAsReference(instruction).then(ready=>ready?build():null).finally(()=>{storyWriterId=''});
  }
  if(action==='good'){window.PhiImageLearning?.record(artifact,'looks_good');notice('Thank you. This result is a positive design example for future renders on this device.')}
  if(action==='clear'){
@@ -263,16 +266,26 @@ host.addEventListener('click',event=>{
 });
 async function reopenAsReference(instruction){
  state('composer');$('#pi-prompt').value=instruction.slice(0,3000);$('#pi-exact-text').value=lastExactText;
- if(!result)return;
+ if(!result)return false;
  const previous=rawResult||result;preparingReference=true;notice('Preparing this image as the next reference…');
- try{const blob=await renderer.asBlob(previous);source=new File([blob],'phi-refinement.png',{type:blob.type});showFile(source,'source');notice('Reference ready. Build when you want the refined image.')}
- catch(error){notice('Could not attach the previous render: '+String(error?.message||error))}
+ try{const blob=await renderer.asBlob(previous);source=new File([blob],'phi-refinement.png',{type:blob.type});showFile(source,'source');notice('Reference prepared for image repair.');return true}
+ catch(error){notice('Could not attach the previous render: '+String(error?.message||error));return false}
  finally{preparingReference=false}
 }
 layout();state('composer');
 window.PhiImageBuilder={
  prefill(text){$('#pi-prompt').value=String(text||'').slice(0,3000)},
- get:()=>({artifact,result,mode}),
+ get:()=>({artifact,result,mode,busy}),
+ async generateFromStory(id,imageInstructions){
+  if(busy||preparingReference)throw Error('Image Builder is finishing another image. Try the illustration again when it finishes.');
+  storyWriterId=String(id||'').slice(0,120);
+  mode='Image';source=null;design=null;lastRenderPlan=null;
+  host.querySelectorAll('[data-pi-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.piMode==='Image'?'true':'false'));
+  $('#pi-prompt').value=String(imageInstructions||'').slice(0,3000);
+  $('#pi-exact-text').value='';state('composer');
+  try{await build();if(!artifact||!result||artifact.storyWriterId!==storyWriterId)throw Error('The image renderer did not finish this illustration.');return {artifact,result}}
+  finally{storyWriterId=''}
+ },
  async applyEditedImage(src,options={}){
   if(busy||!artifact||!result)throw Error('No finished image available to edit');
   if(!String(src||'').startsWith('data:image/png;base64,'))throw Error('Expected a PNG image from the local editor');
