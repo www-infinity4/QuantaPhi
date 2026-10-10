@@ -35,14 +35,16 @@ function show(ticket){
 }
 try{input.value=localStorage.getItem(DRAFT)||''}catch{}
 input.addEventListener('input',()=>{try{localStorage.setItem(DRAFT,input.value.slice(0,16000))}catch{}});
-async function refresh(){try{if(!owner())return;const d=await post('/v1/tickets/list',{owner_token:owner()});const t=d.tickets.find(x=>x.context?.kind==='robot-directions');if(t)show(t)}catch(e){status.textContent=e.message}}
+async function refresh(){try{if(!owner())return;const d=await post('/v1/tickets/list',{owner_token:owner()});const t=d.tickets.find(x=>x.context?.kind==='robot-directions');if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}}
 let pending=null;
 send.addEventListener('click',async()=>{
  const directions=input.value.trim();if(!directions){status.textContent='Write your directions first.';return}
  send.disabled=true;status.textContent='Saving your directions to Cloudflare…';
  try{
   if(!pending||pending.request!==directions){
-   const d=await post('/v1/tickets/create',{owner_token:owner(),source_app:'QuantaPhi Robot Brain',source_url:location.origin+location.pathname,title:directions.slice(0,120),request:directions,context:{kind:'robot-directions',design:'Oracle Octaves · Android first'}});
+   let ownerToken=owner();if(!ownerToken){ownerToken=crypto.randomUUID()+crypto.randomUUID();localStorage.setItem(OWNER,ownerToken)}
+   const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(directions));const submission=[...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('');
+   const d=await post('/v1/tickets/create',{owner_token:ownerToken,source_app:'QuantaPhi Robot Brain',source_url:location.origin+location.pathname,title:directions.slice(0,120),request:directions,context:{kind:'robot-directions',submission_id:submission,design:'Oracle Octaves · Android first'}});
    if(d.owner_token){localStorage.setItem(OWNER,d.owner_token)}pending=d.ticket;
   }
   status.textContent='Saved '+pending.id+'. GPT is parsing and assigning color bots…';
@@ -51,7 +53,7 @@ send.addEventListener('click',async()=>{
   const d=await r.json();if(!r.ok||!d.ok)throw Error(d.error||'GPT unavailable');
   const text=d.output_text||d.output||'',start=text.indexOf('{'),end=text.lastIndexOf('}');
   const jobs=normalize(JSON.parse(text.slice(start,end+1)));
-  const saved=await post('/v1/tickets/update',{id:pending.id,owner_token:owner(),status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',color_jobs:jobs,provider:d.provider||'Infinity gateway',model:d.model||'',design:'Oracle Octaves · Android first'}});
+  const saved=await post('/v1/tickets/update',{id:pending.id,owner_token:owner(),status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',submission_id:pending.context?.submission_id,color_jobs:jobs,provider:d.provider||'Infinity gateway',model:d.model||'',design:'Oracle Octaves · Android first'}});
   pending=saved.ticket;show(pending);status.textContent=jobs.length+' jobs assigned and saved. Queued for the build runner; no repairs are claimed completed.';
   window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:pending.id,jobs}}));
  }catch(e){status.textContent=(pending?'Saved '+pending.id+'. ':'')+'Routing stopped: '+e.message+'. Your directions remain available; tap Send to retry.';if(pending)show(pending)}
