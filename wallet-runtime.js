@@ -729,7 +729,9 @@
       const outgoing={...data,title:data.title||plan.payload.title,text:data.text||plan.payload.text,url:plan.payload.url};
       const result=await nativeShare(outgoing);
       recordShare({...plan.payload,id:plan.id,trackingUrl:plan.trackingUrl,shareConfirmed:true,shareMethod:'web_share_api',platform:'external'});
-      setTimeout(()=>ensureShareCredit(plan.payload.url,'web_share_api'),900);
+      // QuantaPhi page actions use a single authenticated server payout,
+      // issued by QuantaStarCredit AFTER this native share succeeds.
+      if(!window.__quantaStarServerSettlement)setTimeout(()=>ensureShareCredit(plan.payload.url,'web_share_api'),900);
       return result;
     };
     wrapped.__controlPhi=true;
@@ -862,7 +864,10 @@
       const kind=clean(item?.kind,50),ref=clean(item?.ref,700);
       if(!ref||!['collect','share','star','build_image','fix_image','extract','compare'].includes(kind))continue;
       try{
-        if(kind==='share')ensureShareCredit(ref,'web_share_api');
+        if(window.__quantaStarServerSettlement){
+          const cloud=window.QuantaStarCoinCloud;
+          if(!cloud?.record?.(kind,ref,item?.card||{title:document.title,reference:ref}))remaining.push(item);
+        }else if(kind==='share')ensureShareCredit(ref,'web_share_api');
         else ensureActionCredit(ref,kind);
       }catch(error){remaining.push(item)}
     }
