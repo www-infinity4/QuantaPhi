@@ -49,6 +49,84 @@
  const profileData=() => Object.entries(local.counts||{}).filter(([key,count])=>PROFILES[key]&&Number(count)>0)
      .sort((a,b)=>b[1]-a[1]).slice(0,4);
  let data=null,events=[],loading=false;
+
+ // The speaker cadence is presentation only. Every card links to an actual
+ // GitHub event. Prior observations are explicitly marked as a replay.
+ let brainPlaylist=[],brainCursor=0,brainSignature='',brainReady=false;
+ function verifiedCommit(item){
+   const url=safeUrl(item?.url);
+   if(!url||item?.kind!=='commit'||!item?.title||!item?.when)return null;
+   if(/refresh verified moltnook agent activity|automatic evidence feed \[skip ci\]/i.test(item.title))return null;
+   const sha=(String(item.id||'').match(/[a-f0-9]{40}/i)||[''])[0].slice(0,9);
+   return {
+     id:'source:'+String(item.id),agent:item.agent||'greenbeans',to:item.to||'pink-panther',
+     kind:'commit',phase:'Source commit',project:String(item.project||'Infinity'),
+     when:item.when,url,
+     message:'A commit was recorded in '+item.project+': “'+String(item.title).slice(0,160)+'”.'+
+       (sha?' Commit '+sha+'.':'')+' This is verified source activity, not a claim that the whole job is finished.'
+   };
+ }
+ function assembleBrain(feedItems){
+   const commits=(Array.isArray(feedItems)?feedItems:[])
+     .map(verifiedCommit).filter(Boolean).slice(0,35);
+   const notes=events.filter(x=>safeUrl(x.url)&&
+     /read|test|repository maintenance|inspection|routing|report|commit/i.test(x.kind||''))
+     .filter(x=>!/human update:.*?authenticated, scoped writer/i.test(x.message||''))
+     .slice(0,42);
+   const combined=[],keys=new Set(),limit=Math.max(commits.length,notes.length);
+   // A commit then a verified investigation/CI receipt; no fictional "live" messages.
+   for(let i=0;i<limit;i++){
+     for(const event of [commits[i],notes[i]]){
+       if(!event)continue;
+       const key=String(event.id||event.url+'|'+event.message);
+       if(keys.has(key))continue;keys.add(key);combined.push(event);
+     }
+   }
+   return combined.slice(0,70);
+ }
+ function paintBrainEvent(entry,replay){
+   const wrap=ui('article','qai-brain-bubble qai-brain-'+role(entry.agent)[1]);
+   const top=ui('div','qai-brain-bubble-head');
+   top.append(ui('strong','',role(entry.agent)[0]+' → '+role(entry.to)[0]),
+     ui('span','qai-brain-when',(replay?'Archive replay · ':'Recorded · ')+deltaTime(entry.when)));
+   wrap.append(top,ui('p','',String(entry.message||'Source event recorded').slice(0,390)));
+   const foot=ui('div','qai-brain-bubble-foot');
+   foot.append(ui('span','',String(entry.phase||entry.kind||'observed')+' · '+String(entry.project||'Infinity')),
+     makeLink('View real evidence ↗',entry.url));
+   wrap.append(foot);return wrap;
+ }
+ function speakNext(){
+   if(document.hidden)return;
+   const log=$('#qai-brain-log'),status=$('#qai-brain-status');
+   if(!brainPlaylist.length){
+     if(!brainReady)status.textContent='Checking GitHub evidence. No speech is invented while the source is unavailable.';
+     else status.textContent='No verified project messages are available. Checking again automatically.';
+     return;
+   }
+   const index=brainCursor%brainPlaylist.length;
+   const entry=brainPlaylist[index];
+   const replay=brainCursor>=brainPlaylist.length ||
+      Date.now()-Date.parse(entry.when||'')>2*60*1000;
+   brainCursor++;
+   if(log.querySelector('.qai-brain-empty'))log.replaceChildren();
+   log.append(paintBrainEvent(entry,replay));
+   while(log.children.length>3)log.firstElementChild.remove();
+   status.textContent='Recorded project events · '+brainPlaylist.length+' sourced messages in rotation · next playback in 10 seconds. The source is checked for changes automatically.';
+ }
+ function updateBrain(feedItems){
+   const next=assembleBrain(feedItems);
+   const signature=next.map(x=>x.id).slice(0,4).join('|');
+   const hasNew=signature!==brainSignature;
+   brainPlaylist=next;
+   if(hasNew){
+     brainSignature=signature;brainCursor=0;
+     // Present new source activity right away when it actually arrives.
+     $('#qai-brain-log').replaceChildren();
+     speakNext();
+   }
+   brainReady=true;
+ }
+
  function makeEvent(entry){
   const item=ui('article','qai-event');
   const meta=ui('div','qai-event-meta');
@@ -143,6 +221,14 @@
    if(!res.ok)throw Error('HTTP '+res.status);
    const payload=await res.json();
    if(payload.schemaVersion!==2||!Array.isArray(payload.jobs)||!Array.isArray(payload.messages))throw Error('Invalid source format');
+   let sourceEvents=[];
+   try{
+     const actual=await fetch(BASE+'activity/feed.json?fresh='+Date.now(),{cache:'no-store'});
+     if(actual.ok){
+       const verified=await actual.json();
+       if(Array.isArray(verified.items))sourceEvents=verified.items;
+     }
+   }catch(_){/* Public source feed is optional; job evidence still displays. */}
    let repair=null;
    try{
     const check=await fetch(BASE+'activity/repair-report.json?fresh='+Date.now(),{cache:'no-store'});
@@ -157,6 +243,7 @@
    }
    events.sort((a,b)=>Date.parse(b.when||'')-Date.parse(a.when||''));
    $('#qai-connection').textContent='Verified source feed';
+   updateBrain(sourceEvents);
    render();
   }catch(error){
    $('#qai-connection').textContent='Source unavailable · previous evidence retained';
@@ -205,8 +292,17 @@
  });
  $('#qai-watch').addEventListener('change',event=>{local.enabled=event.target.checked;save();renderLearning()});
  $('#qai-reset').addEventListener('click',()=>{local=defaultData();save();renderLearning()});
+ const more=$('#qai-more'),dashboard=$('#qai-dashboard');
+ more.addEventListener('click',()=>{
+   const opening=dashboard.hidden;
+   dashboard.hidden=!opening;
+   more.setAttribute('aria-expanded',String(opening));
+   more.replaceChildren(document.createTextNode(opening?'Hide jobs, tools and learning ':'View jobs, tools and learning '),
+     ui('span','','▾'));
+ });
  $('#qai-refresh').addEventListener('click',pull);
  render();pull();
+ setInterval(speakNext,10000);
  setInterval(()=>{if(!document.hidden)pull()},45000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)pull()});
 })();
