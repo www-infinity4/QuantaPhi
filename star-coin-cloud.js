@@ -69,7 +69,7 @@ function publish(state){
  }
  // Restore any higher Cloudflare balance without reducing an existing wallet.
  const tenths=Number(state?.credits_tenths);
- if(Number.isFinite(tenths)&&tenths>=0)try{global.ControlPhi?.importLegacyStarCoinBalance?.(tenths/10,'quanta-phi-cloud')}catch(error){console.warn('Star Coin wallet reconcile deferred',error)}
+ if(!global.__quantaStarServerSettlement&&Number.isFinite(tenths)&&tenths>=0)try{global.ControlPhi?.importLegacyStarCoinBalance?.(tenths/10,'quanta-phi-cloud')}catch(error){console.warn('Star Coin wallet reconcile deferred',error)}
  try{global.dispatchEvent(new CustomEvent('quantaphi:star-coins-cloud',{detail:state}))}catch{}
 }
 async function flush(){
