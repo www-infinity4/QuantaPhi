@@ -20,7 +20,7 @@
   const seenKey="phi:fred-spaces-seen:v1";
   const starsKey="phi:fred-spaces-stars:v1";
   const currentKey="phi:fred-spaces-current:v1";
-  let active=byId.get(FIRST), busy=false, paymentsReady=false, unlocked=new Set(), balance=null, message="", stars=new Set(load(starsKey,[])), interestWeights=new Map(), selectedTopic="", selectedMode="search";
+  let active=byId.get(FIRST), busy=false, paymentsReady=false, isPlatformOwner=false, unlocked=new Set(), balance=null, message="", stars=new Set(load(starsKey,[])), interestWeights=new Map(), selectedTopic="", selectedMode="search";
   function load(key,fallback){try {return JSON.parse(localStorage.getItem(key)||"null")??fallback;}catch{return fallback;}}
   function save(key,data){try{localStorage.setItem(key,JSON.stringify(data));}catch{}}
   function node(tag,cls,txt){const el=document.createElement(tag);if(cls)el.className=cls;if(txt!=null)el.textContent=String(txt);return el;}
@@ -90,7 +90,7 @@
     if(!paymentsReady)message="Media Star purchases are paused until the owner's StarCoin payout wallet is connected. No StarCoin will be charged.";
     render();
   }
-  async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
+  async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;isPlatformOwner=!!d.isPlatformOwner;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
   function rememberEpisode(e){const seen=new Set(load(seenKey,[]));seen.add(active.id);active=e;seen.add(e.id);const available=episodes.filter(isReplayLink);
     if(available.length&&available.every(x=>seen.has(x.id))) {save("phi:fred-spaces-previous-round:v1",[...seen]);seen.clear();seen.add(e.id);}
     save(seenKey,[...seen]);save(currentKey,e.id);}
@@ -100,13 +100,13 @@
     const next=pickNext();if(!next){note("No additional indexed episodes are available.");return;}
     // The fee is for curated discovery of a direct X replay link, not streaming rights.
     // The source may require X sign-in or disappear. Display this before every new debit.
-    if(next.id!==FIRST&&!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the curated episode: "+next.title+"? The replay opens on X, not inside QuantaPhi. X may require sign-in or may not offer playback. The StarCoin pays for curation, not guaranteed audio. Continue?"))return;
+    if(next.id!==FIRST&&!isPlatformOwner&&!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the curated episode: "+next.title+"? The replay opens on X, not inside QuantaPhi. X may require sign-in or may not offer playback. The StarCoin pays for curation, not guaranteed audio. Continue?"))return;
     busy=true;render();
     try{
       const data=next.id===FIRST?{ok:true,charged:0,starCoins:balance}:await ledger("/v1/spaces/unlock","POST",{episodeId:next.id});
       if(!data.ok)throw new Error("Unlock was not confirmed.");
       balance=data.starCoins;unlocked.add(next.id);rememberEpisode(next);
-      message=(data.charged===1?"1 StarCoin spent for the curated episode link. ":"Already unlocked; no new charge. ")+"Use the play button to open the original replay on X.";
+      message=(data.ownerPreview?"Owner preview — no StarCoin deducted. ":data.charged===1?"1 StarCoin paid to the QuantaPhi Media Star platform. ":"Already unlocked; no new charge. ")+"Use the play button to open the original replay on X."
       window.dispatchEvent(new Event("focus"));
     }catch(error){message=error.message||"No StarCoin was charged. Please retry.";}
     finally{busy=false;render();}
@@ -156,7 +156,7 @@
   }
   const escapeMarkup=x=>String(x||'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   // Export ONLY the blank Media Star asset; Fred's curated content remains on QuantaPhi.
-  function mediaStarEmbed(){return "<!-- Media Star: blank, creator-editable card template by QuantaPhi. -->\n<!-- Your AI website builder replaces the sample title, description and source with YOUR content. -->\n<!-- No Fred episodes, unlock tokens, QuantaPhi wallet credentials or payout endpoints are shipped in this embed. -->\n<article data-media-star=\"creator-template-v2\" data-payment-mode=\"off\" aria-label=\"Media Star creator card\" style=\"position:relative;isolation:isolate;overflow:hidden;max-width:720px;padding:24px;border:2px solid #f2c44f;border-radius:24px;background:linear-gradient(135deg,#fff9d0,#e8b537);color:#33200a;font:16px/1.5 system-ui,sans-serif;box-shadow:0 9px 28px #8d5d2666\">\n  <span aria-hidden=\"true\" style=\"position:absolute;right:-55px;top:-75px;width:300px;height:300px;clip-path:polygon(50% 0%,62% 34%,98% 35%,69% 57%,80% 91%,50% 72%,20% 91%,31% 57%,2% 35%,38% 34%);background:linear-gradient(135deg,#fff0ad,#f6b81e);opacity:.48;z-index:-1\"></span>\n  <div style=\"position:relative\"><strong style=\"font-size:21px;letter-spacing:.06em\">⭐ MEDIA STAR</strong><p style=\"font-size:12px;font-weight:700;letter-spacing:.08em;margin:6px 0\">YOUR ORIGINAL MEDIA</p>\n  <h2 data-creator-field=\"title\" style=\"font-size:25px;margin:8px 0\">Add your title with your AI builder</h2>\n  <p data-creator-field=\"description\">Add your own original episode, podcast, music, video or media description here.</p>\n  <div data-creator-field=\"player\" role=\"note\" style=\"padding:14px;border-radius:14px;background:#fff4c9;border:1px dashed #926820\">Your AI builder adds your own authorized media player or original source link here.</div>\n  <p style=\"font-size:12px\">Optional paid access: configure your own creator payment provider and verified recipient on your own server. Default: free; no payment is connected.</p></div>\n</article>";}
+  function mediaStarEmbed(){return "<!-- Media Star: blank, creator-editable card template by QuantaPhi. -->\n<!-- Your AI website builder replaces the sample title, description and source with YOUR content. -->\n<!-- This template carries no show recordings, unlock tokens, platform-wallet credentials or payout endpoints. -->\n<article data-media-star=\"creator-template-v2\" data-payment-mode=\"off\" aria-label=\"Media Star creator card\" style=\"position:relative;isolation:isolate;overflow:hidden;max-width:720px;padding:24px;border:2px solid #f2c44f;border-radius:24px;background:linear-gradient(135deg,#fff9d0,#e8b537);color:#33200a;font:16px/1.5 system-ui,sans-serif;box-shadow:0 9px 28px #8d5d2666\">\n  <span aria-hidden=\"true\" style=\"position:absolute;right:-55px;top:-75px;width:300px;height:300px;clip-path:polygon(50% 0%,62% 34%,98% 35%,69% 57%,80% 91%,50% 72%,20% 91%,31% 57%,2% 35%,38% 34%);background:linear-gradient(135deg,#fff0ad,#f6b81e);opacity:.48;z-index:-1\"></span>\n  <div style=\"position:relative\"><strong style=\"font-size:21px;letter-spacing:.06em\">⭐ MEDIA STAR</strong><p style=\"font-size:12px;font-weight:700;letter-spacing:.08em;margin:6px 0\">YOUR ORIGINAL MEDIA</p>\n  <h2 data-creator-field=\"title\" style=\"font-size:25px;margin:8px 0\">Add your title with your AI builder</h2>\n  <p data-creator-field=\"description\">Add your own original episode, podcast, music, video or media description here.</p>\n  <div data-creator-field=\"player\" role=\"note\" style=\"padding:14px;border-radius:14px;background:#fff4c9;border:1px dashed #926820\">Your AI builder adds your own authorized media player or original source link here.</div>\n  <p style=\"font-size:12px\">Optional paid access: configure your own creator payment provider and verified recipient on your own server. Default: free; no payment is connected.</p></div>\n</article>";}
   async function copyMediaStarEmbed(){
     const snippet=mediaStarEmbed();
     try{
@@ -165,7 +165,7 @@
       note('Blank Media Star template copied. Add your own media and optional payment setup in your AI website builder. Fred episodes and Phi wallet connections are not included.');
     }catch(error){
       if(typeof window.prompt==='function')window.prompt('Copy this Media Star HTML into your website builder:',snippet);
-      note('Media Star HTML ready for copying. Your browser could not copy automatically.');
+      note('Blank Media Star template ready to copy. Add your own authorized content and separate optional creator payments.');
     }
   }
   window.PhiMediaStarAsset={html:mediaStarEmbed};
@@ -236,7 +236,7 @@
     embedRow.append(button("Copy blank Media Star template",()=>{void copyMediaStarEmbed()},"fs-phi fs-embed"));card.append(embedRow);
     const nextRow=node("div","fs-bottom");
     const hasCurated=episodes.some(e=>e.id!==FIRST&&isReplayLink(e));
-    const unlock=button(busy?"Confirming StarCoin charge…":!paymentsReady?"Purchases paused · owner payout setup":"Buy next curated episode · 1 ★",more,"fs-next");
+    const unlock=button(busy?"Loading next episode…":!paymentsReady?"Episode unlocks paused — wallet routing":isPlatformOwner?"Next curated episode · owner preview (free)":"Unlock next curated episode · 1 ★",more,"fs-next");
     unlock.disabled=busy||catalogLoading||!hasCurated||!paymentsReady;
     nextRow.append(node("span","fs-index-count",catalogLoading?"Loading episode index…":episodes.filter(isReplayLink).length+" indexed Fred Spaces · no repeats until the round is complete"),unlock,node("span","fs-balance",balance==null?"Wallet balance unavailable":"StarCoins: "+balance));card.append(nextRow);
     const status=node("p","fs-status",message||"Featured replay is free. One new curated X episode link costs 1 full StarCoin after confirmation. Listening happens on X.");
