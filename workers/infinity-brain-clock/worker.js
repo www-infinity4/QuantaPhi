@@ -118,7 +118,7 @@ export class BrainClock extends DurableObject{
   await this.ctx.storage.setAlarm(Date.now()+120000);
   try{
    const page=await read('https://quantaphi.org/',150000);
-   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").all();
+   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
    let selected=null;
    for(const ticket of rows.results||[]){
     let context;try{context=JSON.parse(ticket.context_json);}catch{continue;}
@@ -202,6 +202,7 @@ export default{
  async scheduled(event,env){await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/start');},
  async fetch(request,env){
   const path=new URL(request.url).pathname;
+  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':origins.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Access-Control-Allow-Methods':'GET, POST, OPTIONS','Access-Control-Allow-Headers':'Authorization, Content-Type','Vary':'Origin'}});
   if(request.method==='POST' && ['/runner/claim','/runner/event','/runner/result','/runner/propose','/runner/review'].includes(path)){
    try{
     const identity=await authenticate(request);
@@ -212,6 +213,9 @@ export default{
    }catch(e){return Response.json({ok:false,error:e.message},{status:401});}
   }
   if(request.method!=='GET' ||!['/health','/activity/feed.json'].includes(path))return new Response('Not found',{status:404});
+  const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+  if(!env.WRITER_OWNER_HASH||!token||await digest(token)!==env.WRITER_OWNER_HASH)
+   return new Response('Not found',{status:404,headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':origins.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Vary':'Origin'}});
   const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
   await clock.fetch('https://clock.internal/start');
   const r=await clock.fetch('https://clock.internal/'+(path.includes('feed')?'feed':'status'));
