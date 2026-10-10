@@ -1,0 +1,24 @@
+name: Quanta StarCoin payout connection
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'wallet-runtime.js'
+      - 'index.html'
+      - 'test/starcoin-payout-connection.test.cjs'
+      - '.github/workflows/starcoin-payout.yml'
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  payout-receipts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Parse live wallet script
+        run: node --check wallet-runtime.js
+      - name: Verify Collect Star and Share settle with StarQuest
+        run: node --test test/starcoin-payout-connection.test.cjs
