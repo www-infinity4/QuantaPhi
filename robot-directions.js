@@ -43,7 +43,7 @@ async function verifyBrainOwner(){
  }catch{return null}
 }
 
-const brainHeaders=await verifyBrainOwner();if(!brainHeaders){root.remove();return;}root.dataset.ownerVerified='1';
+const brainHeaders=await verifyBrainOwner();if(!brainHeaders){root.remove();return;}root.dataset.ownerVerified='1';root.hidden=false;
 const earningsButton=document.createElement('button'),earningsStatus=document.createElement('p');
 earningsButton.type='button';earningsButton.textContent='Connect bot earnings to my wallet';earningsStatus.setAttribute('role','status');root.append(earningsButton,earningsStatus);
 earningsButton.addEventListener('click',async()=>{

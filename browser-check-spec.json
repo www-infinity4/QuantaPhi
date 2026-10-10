@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "changed_features": {
+    "files": [
+      "index.html",
+      "quanta-agent-iterations.js",
+      "robot-directions.js"
+    ],
+    "components": [
+      "quantaAgentIterations",
+      "robotDirections"
+    ],
+    "urls": [
+      "https://quantaphi.org/"
+    ]
+  },
+  "screenshot_strategy": {
+    "storage_location": "./proofs/screenshots/",
+    "publishing_method": "github-actions-artifact-upload-public-evidence-only",
+    "private_evidence": "Do not upload authenticated brain or wallet screenshots to public repository artifacts.",
+    "ui_assertions": [
+      "#quantaAgentIterations is hidden before authentication",
+      "#robotDirections is hidden before authentication",
+      "Unauthenticated brain endpoints return 401 or 403"
+    ]
+  },
+  "automation_library": "playwright",
+  "test_file": "tests/browser-owner-boundary.spec.mjs",
+  "authenticated_checks": {
+    "status": "requires protected evidence storage and an approved runner credential",
+    "never_embed_tokens_in_browser": true
+  }
+}

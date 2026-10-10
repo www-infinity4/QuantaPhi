@@ -175,6 +175,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 <link rel="stylesheet" href="/phi-oracle-story-orange.css?v=20261009-orange-inline1">
 <link rel="stylesheet" href="/robot-directions.css?v=20261010-progress-live4">
 <style>#quantaAgentIterations:not([data-owner-verified="1"]),#robotDirections:not([data-owner-verified="1"]){display:none!important}</style>
+<style>#quantaAgentIterations[hidden],#robotDirections[hidden]{display:none!important}</style>
 </head>
 <body class="oracle-surface oracle-quanta"><main class="app">
 <div class="qtop"><button class="qmenuBtn" id="qmenuBtn" type="button" aria-label="Menu">☰</button><h1>Quantaφ</h1><button class="qnewSearch" id="qNewSearch" type="button" aria-label="Start a new search">＋ New Search</button><div class="qbalances" aria-live="polite" data-control-phi-wallet-host><button class="qtoken" id="qinfinity" type="button" title="Infinity website tokens">Infinity: —</button><button class="qtoken" id="qtoken" type="button" title="Spendable Quants">Quants: —</button><button class="qstar" id="controlPhiWalletButton" type="button" aria-label="Open unified wallet" aria-expanded="false"><span class="cp-wallet-button-label">Wallet</span> <span aria-hidden="true">⭐</span><strong data-control-phi-wallet-balance>0</strong><small data-control-phi-wallet-progress>0/10</small></button></div><nav class="qmenu" id="qmenu" hidden><button id="qshare" type="button">Share +0.1 ★</button><button id="qmenuWallet" type="button">Unified Wallet ⭐</button><a href="/about.html">About QuantaPhi</a><a href="/learn/">Learn</a><a href="#phiStoryWriter">Story Writer</a><a href="https://www-infinity4.github.io/Infinity-Phi/">Infinity Phi</a><a href="https://www-infinity4.github.io/Omni-Phi/">Omni Phi</a><a href="https://www-infinity4.github.io/News-Phi/">News Phi</a><a href="https://www-infinity4.github.io/Alien-Radio/">Infinity Radio</a><a href="#result">Overview</a><button id="qHistoryBtn" type="button">Build History</button><button class="mediaNav" id="qImagesBtn" type="button">Images</button><button class="mediaNav" id="qVideoBtn" type="button">Video</button><button class="mediaNav" id="qSoundBtn" type="button">Sound</button><a href="#media">Media</a></nav></div><p class="sub">Semantic field + 500-word overview + weighted media extensions</p><p style="margin:-10px 0 10px;font-size:14px"><a href="/about.html" style="color:#5f259f;text-underline-offset:3px">About QuantaPhi &amp; Quants</a> · <a href="/learn/" style="color:#5f259f">Learn</a></p>
@@ -183,7 +184,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 <div id="status" role="status" aria-live="polite"></div>
 <section class="card" id="result" hidden><div id="field"></div><article id="overview"></article><button class="overviewShare" id="overviewShare" type="button">Share AI Overview +0.1 ★</button><div class="meter" id="meter"></div></section>
 <section id="infiniteBook" aria-label="Reads & Realms — original stories organized by category"></section>
-<section id="quantaAgentIterations" aria-labelledby="qai-title">
+<section hidden id="quantaAgentIterations" aria-labelledby="qai-title">
   <div class="qai-brain">
     <div class="qai-brain-head">
       <div><div class="qai-eyebrow">Infinity · Oracle Octaves</div><h2 id="qai-title">Robot Brain · Agent Conversations</h2></div>
@@ -194,7 +195,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
     </div>
     <p id="qai-brain-status" class="qai-brain-status" role="status">Connecting to GitHub commits, agent job reports and tests. Recorded events, never fictional conversation.</p>
   </div>
-  <section id="robotDirections" aria-labelledby="robotDirectionsTitle">
+  <section hidden id="robotDirections" aria-labelledby="robotDirectionsTitle">
     <h3 id="robotDirectionsTitle">Give the Robot Brain directions</h3>
     <label for="robotDirectionsInput">What should Infinity build, fix or research?</label>
     <textarea id="robotDirectionsInput" maxlength="16000" placeholder="Type your directions or paste advice from Gemini…"></textarea>
