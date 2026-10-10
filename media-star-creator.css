@@ -1,0 +1,24 @@
+/* Standalone Media Star creator studio, separate from Fred Curio Spotlight. */
+#mediaStarCreator{max-width:840px;margin:32px auto;padding:0 12px;box-sizing:border-box;min-width:0}
+#mediaStarCreator *{box-sizing:border-box}
+#mediaStarCreator .ms-creator-card{position:relative;isolation:isolate;overflow:hidden;border:2px solid #f7d261;border-radius:24px;background:linear-gradient(145deg,#fff9da 0%,#fbe9aa 40%,#e9b94d 100%);color:#321f11;padding:clamp(17px,4vw,28px);box-shadow:0 10px 35px #dfa34277,0 0 0 1px #f8d663,0 0 22px #f4d05c77}
+#mediaStarCreator .ms-creator-card:before{content:"★";position:absolute;pointer-events:none;right:-27px;top:-155px;z-index:-1;font-size:min(480px,85vw);color:#f0c25588;line-height:1}
+#mediaStarCreator .ms-creator-heading{display:flex;gap:12px;align-items:center}
+#mediaStarCreator .ms-creator-logo{display:grid;place-items:center;flex-shrink:0;height:56px;width:56px;border-radius:50%;border:2px solid #fff6c1;background:linear-gradient(145deg,#3e1b65,#1e1b3d);font-size:33px;box-shadow:0 0 18px #6446d788}
+#mediaStarCreator .ms-creator-heading-copy{font-size:13px;font-weight:900;letter-spacing:.085em}
+#mediaStarCreator h2{font-size:clamp(23px,5vw,30px);line-height:1.2;margin:14px 0 10px;color:#352044}
+#mediaStarCreator .ms-creator-intro{font-size:14px;line-height:1.6;margin:0 0 15px;max-width:720px}
+#mediaStarCreator .ms-creator-form{display:grid;gap:12px}
+#mediaStarCreator .ms-creator-label{display:grid;gap:7px;font-size:13px;font-weight:800;letter-spacing:.015em}
+#mediaStarCreator .ms-creator-input{display:block;width:100%;min-width:0;padding:12px;border-radius:12px;background:#fffdf2;color:#311b3f;border:1px solid #9b753c;font:500 15px/1.5 system-ui,sans-serif;box-shadow:inset 0 2px 5px #1c14231c;resize:vertical}
+#mediaStarCreator textarea.ms-creator-input{min-height:85px}
+#mediaStarCreator .ms-creator-input:focus-visible{outline:3px solid #884acf;outline-offset:1px}
+#mediaStarCreator .ms-creator-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+#mediaStarCreator .ms-creator-button{font:800 13px/1.35 system-ui,sans-serif;min-height:43px;border-radius:999px;padding:11px 15px;border:1px solid #b38228;background:linear-gradient(145deg,#fff8d8,#f0cd76);color:#37214a;cursor:pointer;max-width:100%;white-space:normal;box-shadow:0 3px 10px #8563313c;transition:filter .15s,transform .15s}
+#mediaStarCreator .ms-creator-button:hover,#mediaStarCreator .ms-creator-button:focus-visible{filter:brightness(1.08);transform:translateY(-1px)}
+#mediaStarCreator .ms-creator-button.ms-primary{background:linear-gradient(130deg,#432367,#271841);border-color:#ad77f0;color:#fff3ba}
+#mediaStarCreator .ms-creator-status{min-height:22px;margin:1px 0;font-size:13px;font-weight:700;color:#59375b}
+#mediaStarCreator .ms-creator-preview{max-width:100%;margin-top:14px}
+#mediaStarCreator .ms-creator-preview:empty{display:none}
+#mediaStarCreator .ms-creator-preview>article{max-width:100%!important}
+@media (max-width:540px){#mediaStarCreator .ms-creator-actions{display:grid;grid-template-columns:1fr 1fr}#mediaStarCreator .ms-creator-button{padding:10px;font-size:12px}#mediaStarCreator .ms-creator-card{padding:15px}#mediaStarCreator .ms-creator-heading-copy{font-size:11px}}
