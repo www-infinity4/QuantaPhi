@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v45-crusher-button';
+const EDGE_VERSION = 'quantaphi-org-v46-channel-wallet';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -17,7 +17,55 @@ const APPS = [
 const SUPPORT_REPOS=[
  {prefix:'/TV-Database/',repo:'TV-Database'},
  {prefix:'/Mint-For-Infinity/',repo:'Mint-For-Infinity'},
- {prefix:'/Control-Phi/',repo:'Control-Phi'}
+ {prefix:'/Control-Phi/',repo:'Control-Phi'},
+ {prefix:"/Hermit-TV/",repo:"Hermit-TV"},
+ {prefix:"/Star-Launcher/",repo:"Star-Launcher"},
+ {prefix:"/HBO/",repo:"HBO"},
+ {prefix:"/Starz/",repo:"Starz"},
+ {prefix:"/Cinemax/",repo:"Cinemax"},
+ {prefix:"/Showtime/",repo:"Showtime"},
+ {prefix:"/Encore/",repo:"Encore"},
+ {prefix:"/Cartoon-Network/",repo:"Cartoon-Network"},
+ {prefix:"/WGN/",repo:"WGN"},
+ {prefix:"/TNT/",repo:"TNT"},
+ {prefix:"/NBC/",repo:"NBC"},
+ {prefix:"/FOX/",repo:"FOX"},
+ {prefix:"/FX/",repo:"FX"},
+ {prefix:"/Nickelodeon/",repo:"Nickelodeon"},
+ {prefix:"/FSN/",repo:"FSN"},
+ {prefix:"/ESPN/",repo:"ESPN"},
+ {prefix:"/MTV/",repo:"MTV"},
+ {prefix:"/VH1/",repo:"VH1"},
+ {prefix:"/AMC/",repo:"AMC"},
+ {prefix:"/Disney/",repo:"Disney"},
+ {prefix:"/USA/",repo:"USA"},
+ {prefix:"/Comedy-Central/",repo:"Comedy-Central"},
+ {prefix:"/BET/",repo:"BET"},
+ {prefix:"/Discovery/",repo:"Discovery"},
+ {prefix:"/Nintendo-TV/",repo:"Nintendo-TV"},
+ {prefix:"/Chiller/",repo:"Chiller"},
+ {prefix:"/TBS/",repo:"TBS"},
+ {prefix:"/ABC/",repo:"ABC"},
+ {prefix:"/CBS/",repo:"CBS"},
+ {prefix:"/PBS/",repo:"PBS"},
+ {prefix:"/History-Channel/",repo:"History-Channel"},
+ {prefix:"/CNN/",repo:"CNN"},
+ {prefix:"/Trump-TV/",repo:"Trump-TV"},
+ {prefix:"/ShopLC/",repo:"ShopLC"},
+ {prefix:"/Ozzy-TV/",repo:"Ozzy-TV"},
+ {prefix:"/CCR-TV/",repo:"CCR-TV"},
+ {prefix:"/Motor-TV/",repo:"Motor-TV"},
+ {prefix:"/Physics-TV/",repo:"Physics-TV"},
+ {prefix:"/Adventure-TV/",repo:"Adventure-TV"},
+ {prefix:"/Trigger-TV/",repo:"Trigger-TV"},
+ {prefix:"/Time-Surfers/",repo:"Time-Surfers"},
+ {prefix:"/Syncord/",repo:"Syncord"},
+ {prefix:"/Astraflix/",repo:"Astraflix"},
+ {prefix:"/Vintech/",repo:"Vintech"},
+ {prefix:"/Flix-Blender/",repo:"Flix-Blender"},
+ {prefix:"/Abstractia-/",repo:"Abstractia-"},
+ {prefix:"/Animasync/",repo:"Animasync"},
+ {prefix:"/SeekSync/",repo:"SeekSync"}
 ];
 const RAW_TYPES = {
  html: 'text/html; charset=utf-8', js: 'application/javascript; charset=utf-8',
@@ -47,7 +95,7 @@ const routeFor = incoming => {
  if (path === '/learn') return { redirect: '/learn/' };
  if (path.startsWith('/learn/')) return { repo: 'QuantaPhi', sourcePath: path.endsWith('/') ? path + 'index.html' : path, publicPath: path };
  const support=SUPPORT_REPOS.find(item=>path.startsWith(item.prefix));
- if(support)return {repo:support.repo,sourcePath:'/'+path.slice(support.prefix.length),publicPath:path};
+ if(support){let suffix=path.slice(support.prefix.length);if(!suffix||suffix.endsWith('/'))suffix+='index.html';return {repo:support.repo,sourcePath:'/'+suffix,publicPath:path};}
  const app = appByIncomingPath(path);
  if (app) {
   const matched = [app.slug, ...app.aliases].find(prefix => path === prefix.slice(0, -1) || path.startsWith(prefix));
@@ -230,7 +278,7 @@ export default {
   const repairRef = ['20261009-billboard-grid5','20261009-eight-subjects5'].includes(incoming.searchParams.get('v'));
   const newQuantaRelease = route.repo === 'QuantaPhi' && (route.sourcePath === '/index.html' || ['20261009-bright-star6','20261009-octaves-routing6'].includes(incoming.searchParams.get('v')));
   const newOctavesRelease = route.repo === 'Oracle-Octaves' && (route.sourcePath === '/index.html' || ['20261009-origin-timing2','20261009-resilient2'].includes(incoming.searchParams.get('v')));
-  const sourceRef = route.repo === 'Bitcoin-Crusher' ? 'a2899745962de6ef43be78e63f441fe8361e9b1f' : route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/') ? '4db62fa3f8644254ed4137b99e8db860513f99ae' : newQuantaRelease ? 'main' : newOctavesRelease ? '60c9436507cc34cb674a7b9a766c335a399b8dec' : repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
+  const sourceRef = route.repo === 'Control-Phi' ? 'dc19316df356178ee8925f0fc8358eb77abbb4aa' : route.repo === 'Bitcoin-Crusher' ? 'a2899745962de6ef43be78e63f441fe8361e9b1f' : route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/') ? '4db62fa3f8644254ed4137b99e8db860513f99ae' : newQuantaRelease ? 'main' : newOctavesRelease ? '60c9436507cc34cb674a7b9a766c335a399b8dec' : repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
   const origin = new URL('https://www-infinity4.github.io' + repoPath);
   origin.search = incoming.search;
   const extension = route.sourcePath.split('.').pop().toLowerCase();
@@ -243,7 +291,7 @@ export default {
   const readRequest = ['GET', 'HEAD'].includes(request.method);
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
   // briefly stale after a commit, which must never keep an old wallet/search script live.
-  if (((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || (route.repo === 'Alien-Radio' && route.sourcePath === '/oracle-track-feed.json') || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi') && textual && readRequest) {
+  if (((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || (route.repo === 'Alien-Radio' && route.sourcePath === '/oracle-track-feed.json') || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && textual && readRequest) {
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/' + sourceRef + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
@@ -252,7 +300,7 @@ export default {
   if (!upstream) {
    try { upstream = await getUpstream(origin, request, headers); raw = false; } catch {}
   }
-  if ((!upstream || (upstream.status >= 300 && upstream.status < 400) || upstream.status >= 500) && readRequest) {
+  if ((!upstream || (upstream.status >= 300 && upstream.status < 400) || upstream.status >= 500 || upstream.status === 404) && readRequest) {
    if (upstream?.body) await upstream.body.cancel();
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/' + sourceRef + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
