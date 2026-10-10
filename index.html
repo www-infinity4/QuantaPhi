@@ -1067,8 +1067,24 @@ $('#go').onclick=search;
   if(!['collect','share','star','build_image','fix_image','extract','compare'].includes(kind))return {awarded:0};
   if(!card)card={title:document.getElementById('q')?.value||document.title,query:document.getElementById('q')?.value||'',page:globalThis.location?.href||''};
   const ref=String(reference||crypto.randomUUID()),cp=window.ControlPhi;let detail=null;
-  try{detail=kind==='share'?(cp?.ensureShareCredit?cp.ensureShareCredit(ref):award('share',ref)):(cp?.ensureActionCredit?cp.ensureActionCredit(ref,kind):award(kind,ref))}
-  catch(error){console.warn('Control Phi Star Coin credit unavailable; using QuantaPhi wallet',error);detail=award(kind,ref)}
+  const pendingKey='quantaPhi:pendingStarCoinWalletActions:v1';
+  const deferToWallet=()=>{
+    try{
+      const stored=JSON.parse(localStorage.getItem(pendingKey)||'[]');
+      const items=Array.isArray(stored)?stored:[];
+      if(!items.some(x=>x.kind===kind&&x.ref===ref)){
+        const queued=[...items,{kind,ref,createdAt:Date.now()}].slice(-500);
+        localStorage.setItem(pendingKey,JSON.stringify(queued));
+      }
+    }catch(error){console.warn('StarCoin wallet queue temporarily unavailable',error)}
+    try{window.dispatchEvent(new CustomEvent('quantaphi:starcoin-payout-pending',{detail:{kind,reference:ref}}))}catch(_){}
+    return{awarded:0,pending:true,reason:'wallet_connection_pending'};
+  };
+  try{
+    if(kind==='share'&&cp?.ensureShareCredit)detail=cp.ensureShareCredit(ref);
+    else if(kind!=='share'&&cp?.ensureActionCredit)detail=cp.ensureActionCredit(ref,kind);
+    else detail=deferToWallet();
+  }catch(error){console.warn('Star Coin credit retained for wallet retry',error);detail=deferToWallet()}
   // Queue new credit evidence once. For an already-paid action, retry existing outbox
   // receipts without generating another record or an additional wallet payment.
   if(!detail?.alreadyRecorded)try{window.QuantaStarCoinCloud?.record(kind,ref,card)}catch(error){console.warn('Star Coin Cloudflare record deferred',error)}
