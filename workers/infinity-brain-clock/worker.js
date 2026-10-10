@@ -1,6 +1,7 @@
 import { DurableObject } from 'cloudflare:workers';
 import { authenticate, supported } from './runner-auth.mjs';
 import { validatePreview } from './preview-contract.mjs';
+import { jobQuant } from './job-quant.mjs';
 const PERIOD=30000,VERSION='20261010-repository-engine1';
 const REPOS={has:repo=>/^[\w.-]+$/.test(repo)};
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
@@ -81,7 +82,9 @@ export class BrainClock extends DurableObject{
      if(repositoryLease?.leaseUntil>Date.now())continue;
      if(previous?.adapterVersion===VERSION&&previous?.leaseUntil>Date.now()||previous?.status==='deployed_verified'||previous?.retryAt>Date.now())continue;
      const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+(engine?40:20)*60*1000,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
-     lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null};
+     const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
+     const memories=[];for(const item of quantIndex.filter(q=>q.repository===job.repository).slice(0,5)){const q=await this.ctx.storage.get(item.id);if(q)memories.push(q);}
+     lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories};
      await this.ctx.storage.put(key,lease);
      await this.ctx.storage.put('repository-lease:'+job.repository,lease);
      await this.emit('greenbeans','pink-panther','writer claimed','Authenticated repository runner claimed '+ticket.id+'/'+job.id+'. It will inspect its credential, target repository and acceptance adapters before any write.',runUrl);
@@ -162,6 +165,11 @@ export class BrainClock extends DurableObject{
   }
   const receipt={...lease,repairFeedback,status:body.status,leaseUntil:0,retryAt:body.status==='blocked'?Date.now()+30*60*1000:Date.now()+5*60*1000,when:new Date().toISOString(),commitSha:body.commitSha||null,testsPassed:body.testsPassed===true,browserPassed:body.browserPassed===true,summary:message,runUrl};
   await this.ctx.storage.put(lease.key,receipt);
+  const quantId='job-quant:'+receipt.revision+':'+receipt.ticketId+':'+receipt.jobId;
+  const quant=jobQuant(receipt,await this.ctx.storage.get(quantId));
+  await this.ctx.storage.put(quant.id,quant);
+  const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
+  await this.ctx.storage.put('job-quant-index',[{id:quant.id,repository:quant.repository,status:quant.status,updatedAt:quant.updatedAt},...quantIndex.filter(q=>q.id!==quant.id)].slice(0,200));
   await this.ctx.storage.put('repository-lease:'+lease.repository,{...receipt,leaseUntil:0});
   const fresh=await this.env.WORK_DB.prepare('SELECT context_json FROM work_tickets WHERE id=?').bind(lease.ticketId).first();
   if(fresh){
@@ -175,6 +183,7 @@ export class BrainClock extends DurableObject{
   return Response.json({ok:true});
  }
  async fetch(request){
+  if(new URL(request.url).pathname==='/quants'){const id=new URL(request.url).searchParams.get('id');if(id){const quant=id.startsWith('job-quant:')?await this.ctx.storage.get(id):null;return Response.json({ok:!!quant,quant});}return Response.json({ok:true,items:await this.ctx.storage.get('job-quant-index')||[]});}
   if(new URL(request.url).pathname==='/runner/claim')return this.ctx.blockConcurrencyWhile(()=>this.runner(request));
   if(new URL(request.url).pathname.startsWith('/runner/'))return this.runner(request);
   if(new URL(request.url).pathname==='/start'){
@@ -288,13 +297,13 @@ export default{
     return await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal'+path,{method:'POST',body:JSON.stringify(body)});
    }catch(e){return Response.json({ok:false,error:e.message},{status:401});}
   }
-  if(request.method!=='GET' ||!['/health','/activity/feed.json','/work/preview'].includes(path))return new Response('Not found',{status:404});
+  if(request.method!=='GET' ||!['/health','/activity/feed.json','/work/preview','/work/quants'].includes(path))return new Response('Not found',{status:404});
   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
   if(!env.WRITER_OWNER_HASH||!token||await digest(token)!==env.WRITER_OWNER_HASH)
    return new Response('Not found',{status:404,headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':origins.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Vary':'Origin'}});
   const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
   await clock.fetch('https://clock.internal/start');
-  const r=await clock.fetch('https://clock.internal/'+(path==='/work/preview'?'preview?sha='+encodeURIComponent(new URL(request.url).searchParams.get('sha')||''):path.includes('feed')?'feed':'status'));
+  const r=await clock.fetch('https://clock.internal/'+(path==='/work/quants'?'quants?id='+encodeURIComponent(new URL(request.url).searchParams.get('id')||''):path==='/work/preview'?'preview?sha='+encodeURIComponent(new URL(request.url).searchParams.get('sha')||''):path.includes('feed')?'feed':'status'));
   return output(request,await r.json());
  }
 };
