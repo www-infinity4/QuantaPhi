@@ -137,6 +137,15 @@
     if(session&&session.key&&users&&users[session.key]){
       return {profile:users[session.key],save(profile){users[session.key]=profile;write(WALLET_USERS_KEY,users)}};
     }
+    // Match rotating/masked wallet IDs only to a unique named profile.
+    const named=String(session?.username||'').trim().toLowerCase();
+    if(named&&users&&typeof users==='object'){
+      const matches=Object.keys(users).filter(key=>key.toLowerCase()===named||String(users[key]?.username||'').trim().toLowerCase()===named);
+      if(matches.length===1){
+        const key=matches[0];
+        return {profile:users[key],save(profile){users[key]=profile;write(WALLET_USERS_KEY,users)}};
+      }
+    }
     const guest=read(WALLET_GUEST_KEY,{key:'__guest__',username:'Guest',tokens:0,shareCount:0,pendingShareCredits:0,shareEvents:[],ledger:[],watchHistory:[],watchPositions:{},unlockedContent:{}});
     return {profile:guest,save(profile){write(WALLET_GUEST_KEY,profile)}};
   }
@@ -287,12 +296,12 @@
       // Quanta's payouts instead of silently leaving the cached total.
       const tokens=[];
       const add=token=>{if(/^sq_[A-Za-z0-9_-]{32,}$/.test(String(token||''))&&!tokens.includes(token))tokens.push(token)};
-      add(starQuestDeviceToken());
       const bridge=window.QuantaCloudConnection;
       if(typeof bridge?.resolveDeviceToken==='function'){
         try{add(await bridge.resolveDeviceToken())}
         catch(error){console.warn('StarQuest token resolution deferred',error)}
       }
+      add(starQuestDeviceToken());
       if(!tokens.length)throw new Error('ledger_not_connected');
       let state=null,lastError='wallet_request_failed';
       for(const token of tokens){
@@ -315,18 +324,26 @@
       const current=read(WALLET_SESSION_KEY,null);
       if(sessionKey!==String(current?.key||''))return null;
       const store=walletStore(),wallet=normalizeWallet(store.profile);
-      wallet.tokens=Math.max(0,Number(state.starCoins)||0);
-      wallet.pendingShareCredits=Math.max(0,Math.min(9,Number(state.pendingShareCredits)||0));
-      wallet.shareCount=Math.max(0,Number(state.shareCount)||0);
-      if(Array.isArray(state.ledger)&&state.ledger.length){
-        const local=Array.isArray(wallet.ledger)?wallet.ledger:[];
-        const byId=new Map([...local,...state.ledger].map(x=>[x?.id||x?.referenceId,x]));
-        wallet.ledger=[...byId.values()].slice(-500);
+      const confirmed={starCoins:Math.max(0,Number(state.starCoins)||0),
+        pendingShareCredits:Math.max(0,Math.min(9,Number(state.pendingShareCredits)||0)),
+        shareCount:Math.max(0,Number(state.shareCount)||0),
+        username:String(state.username||accountName||'Guest'),syncedAt:Date.now(),sessionKey};
+      // An unresolved masked account must never be written into the Guest record.
+      const mapped=wallet.key!=='__guest__'&&(!wallet.username||wallet.username==='Guest'||!state.username||String(wallet.username).trim().toLowerCase()===String(state.username).trim().toLowerCase());
+      if(mapped){
+        wallet.tokens=confirmed.starCoins;
+        wallet.pendingShareCredits=confirmed.pendingShareCredits;
+        wallet.shareCount=confirmed.shareCount;
+        if(Array.isArray(state.ledger)&&state.ledger.length){
+          const local=Array.isArray(wallet.ledger)?wallet.ledger:[];
+          const byId=new Map([...local,...state.ledger].map(x=>[x?.id||x?.referenceId,x]));
+          wallet.ledger=[...byId.values()].slice(-500);
+        }
+        if(Array.isArray(state.watchHistory))wallet.watchHistory=state.watchHistory.slice(-500);
+        if(state.username)wallet.username=String(state.username);
+        store.save(wallet);
       }
-      if(Array.isArray(state.watchHistory))wallet.watchHistory=state.watchHistory.slice(-500);
-      if(state.username)wallet.username=String(state.username);
-      store.save(wallet);
-      cloudStarState={starCoins:wallet.tokens,pendingShareCredits:wallet.pendingShareCredits,shareCount:wallet.shareCount,username:wallet.username||'Guest',syncedAt:Date.now()};
+      cloudStarState=confirmed;
       refreshWalletUI();
       setStarCloudStatus('StarQuest confirmed • '+new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'}));
       return cloudStarState;
@@ -388,6 +405,9 @@
   window.addEventListener('load',refreshCloudBalances);
   window.addEventListener('focus',refreshCloudBalances);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)void refreshStarCoinCloud()});
+  // Media Star confirms the same account's whole coins. Re-read the authoritative
+  // StarQuest state including the tenths earned by actions, instead of copying it.
+  window.addEventListener('phi:media-star-wallet-synced',()=>{void refreshStarCoinCloud()});
   window.addEventListener('quantaphi:star-coins-cloud',event=>{
     const state=event?.detail;
     if(Array.isArray(state?.settled)&&state.settled.length||state?.wallet_state)
@@ -459,7 +479,11 @@
     const store=walletStore();
     const wallet=normalizeWallet(store.profile);
     const assets=auxiliaryBalances();
-    const starCoins=Math.round((wallet.tokens+(wallet.pendingShareCredits/10))*10)/10;return {balance:starCoins,starCoins,wholeStarCoins:wallet.tokens,progressToNextCoin:wallet.pendingShareCredits,shareCount:wallet.shareCount,username:wallet.username||'Guest',totalTokens:assets.total,quants:assets.quants,omni:assets.omni,infinity:assets.infinity,quantaWebsites:assets.quantaWebsites,legacy:assets.legacy,musicQuants:assets.musicQuants,pianoQuants:assets.pianoQuants,listeningQuants:assets.listeningQuants,alienCoins:alienCoinCount()};
+    const session=read(WALLET_SESSION_KEY,null);
+    const verified=cloudStarState&&cloudStarState.sessionKey===String(session?.key||'')?cloudStarState:null;
+    const whole=verified?verified.starCoins:wallet.tokens;
+    const tenths=verified?verified.pendingShareCredits:wallet.pendingShareCredits;
+    const starCoins=Math.round((whole+(tenths/10))*10)/10;return {balance:starCoins,starCoins,wholeStarCoins:whole,progressToNextCoin:tenths,shareCount:verified?verified.shareCount:wallet.shareCount,username:verified?verified.username:wallet.username||'Guest',totalTokens:assets.total,quants:assets.quants,omni:assets.omni,infinity:assets.infinity,quantaWebsites:assets.quantaWebsites,legacy:assets.legacy,musicQuants:assets.musicQuants,pianoQuants:assets.pianoQuants,listeningQuants:assets.listeningQuants,alienCoins:alienCoinCount()};
   }
 
   function importLegacyStarCoinBalance(amount,source='legacy'){
