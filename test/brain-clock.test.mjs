@@ -5,6 +5,17 @@ const authUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new U
 const previewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/preview-contract.mjs',import.meta.url))).toString('base64');
 const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl);
 const {BrainClock,validateInstruction}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+test('reader receives verified runtime capabilities rather than stale adapter blockers',async()=>{
+ const memory=new Map([['key',{key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,job:{instructions:'Repair page',progress:{blocker:'repository_adapter_not_connected'}}}]]);
+ let messages;
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async(model,input)=>{messages=input.messages;return {response:JSON.stringify({summary:'Inspect source',files:['index.html'],subtasks:[],blockers:[]})};}}});
+ const runtime={repositoryCloned:true,reportedPushPermission:true,excludedPaths:['.github/']};
+ await clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{runtime}})}));
+ const input=JSON.parse(messages[1].content);
+ assert.equal(input.job.progress,undefined);assert.deepEqual(input.evidence.runtime,runtime);
+ assert.match(messages[0].content,/There is no central adapter registry/);
+ assert.match(messages[0].content,/specific writer policy limitation/);
+});
 test('gate rejects executable, extra and misdirected actions',()=>{
  assert.throws(()=>validateInstruction({target_element:'robotDirections',action:'eval',payload:{reason:'x'}}));
  assert.throws(()=>validateInstruction({target_element:'other',action:'idle',payload:{reason:'x'}}));
