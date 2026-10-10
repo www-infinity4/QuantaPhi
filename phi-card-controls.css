@@ -161,3 +161,37 @@ body.oracle-quanta #fredSpacesRadio .fs-card.fs-media-star .fs-play{
 body.oracle-quanta #infiniteBook[data-context="home"] .ib-story[data-ready="false"] :is(.ib-asteroid-hero,.ib-asteroid-copy){
  min-height:150px!important;
 }
+
+/* Reads & Realms editorial brand emblem: permanently inside the home story artwork.
+   Only the rotating genre belongs in the category chip; Asteroid keeps its own title. */
+#infiniteBook .ib-brand{display:none}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-head{justify-content:flex-end;margin:5px 2px 9px}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-head strong{display:none}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-brand{
+ position:absolute;z-index:5;top:14px;left:14px;max-width:calc(100% - 28px);
+ display:inline-flex;align-items:center;gap:9px;padding:8px 15px 8px 8px;
+ border-radius:15px;background:linear-gradient(135deg,#fffdf7f5,#f8e9d6ed);
+ border:1px solid #bb905ca8;box-shadow:0 6px 20px #2c17364d,0 0 0 2px #ffffffa3;
+ color:#44244f;pointer-events:none;
+}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-brand-emblem{
+ display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;
+ border-radius:11px;border:1px solid #f4d08b;background:linear-gradient(145deg,#a36c38,#603d71);
+ box-shadow:inset 0 1px 0 #ffffff85,0 3px 9px #5d325a4a;color:#fff9e4;
+ font:700 25px/1 Georgia,"Times New Roman",serif;
+}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-brand-name{
+ display:block;font:800 clamp(17px,4.4vw,22px)/1.13 Georgia,"Times New Roman",serif;
+ letter-spacing:.018em;white-space:normal;overflow-wrap:normal;color:#44244f;
+}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-asteroid-label{display:none!important}
+body.oracle-quanta #infiniteBook[data-context="home"] .ib-category{
+ max-width:100%;font-size:11px;font-weight:850;line-height:1.35;
+ letter-spacing:.015em;text-transform:none;padding:6px 11px;
+}
+#infiniteBook .ib-story-meta{margin:4px 0 10px;font-size:11px;line-height:1.5;font-weight:700;opacity:.75;overflow-wrap:anywhere}
+@media(max-width:380px){
+ body.oracle-quanta #infiniteBook[data-context="home"] .ib-brand{left:10px;top:10px;gap:7px;padding:7px 10px 7px 7px;max-width:calc(100% - 20px)}
+ body.oracle-quanta #infiniteBook[data-context="home"] .ib-brand-emblem{flex-basis:33px;width:33px;height:33px;font-size:22px}
+ body.oracle-quanta #infiniteBook[data-context="home"] .ib-brand-name{font-size:17px}
+}
