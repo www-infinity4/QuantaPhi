@@ -13,7 +13,7 @@
   function store(key,value){try{localStorage.setItem(key,JSON.stringify(value));}catch{}}
   function elem(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;}
   function btn(label,callback){const b=elem("button","mp-btn",label);b.type="button";b.addEventListener("click",callback);return b;}
-  function validLink(value){try{const u=new URL(value);return u.protocol==="https:"&&["x.com","twitter.com","www.x.com","www.twitter.com"].includes(u.hostname)&&/^\\/i\\/spaces\\/[A-Za-z0-9]+\\/?$/.test(u.pathname);}catch{return false;}}
+  function validLink(value){try{const u=new URL(value);return u.protocol==="https:"&&["x.com","twitter.com","www.x.com","www.twitter.com"].includes(u.hostname)&&/^\/i\/spaces\/[A-Za-z0-9]+\/?$/.test(u.pathname);}catch{return false;}}
   function normalize(raw){
     if(!raw||!validLink(raw.source))return null;
     const id=String(raw.spaceId||new URL(raw.source).pathname.split("/").pop());
