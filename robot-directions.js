@@ -59,6 +59,18 @@ function show(ticket){
  }
  if(!ticket.context?.color_jobs?.length)list.append(node('p','Directions are saved. GPT routing needs a retry.'));
 }
+// Manual clear also cancels a pending draft write and clears both recovery stores.
+const clearButton=node('button','Clear text');clearButton.type='button';clearButton.dataset.clear='1';
+clearButton.style.minHeight='44px';send.after(clearButton);
+clearButton.addEventListener('click',async()=>{
+ clearButton.disabled=true;
+ try{
+  await ready;clearTimeout(draftTimer);input.value='';await storage(DRAFT,'');
+  try{localStorage.removeItem(DRAFT)}catch{}
+  status.textContent='Text cleared. Your saved jobs are still available.';input.focus();
+ }catch(e){status.textContent='Could not clear the saved draft: '+e.message}
+ finally{clearButton.disabled=false}
+});
 let draftTimer;input.addEventListener('input',()=>{clearTimeout(draftTimer);draftTimer=setTimeout(()=>storage(DRAFT,input.value.slice(0,16000)).catch(()=>{status.textContent='Draft stays in this page until you send it to Cloudflare.'}),250)});
 async function refresh(){if(refreshing)return;refreshing=true;try{await ready;if(!owner())return;const d=await post('/v1/tickets/list',{owner_token:owner()});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();for(const t of tickets){const b=node('button',t.title+' · '+t.status);b.type='button';b.addEventListener('click',()=>{pending=t;show(t)});history.append(b)}const t=tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}finally{refreshing=false}}
 let pending=null,refreshing=false;
