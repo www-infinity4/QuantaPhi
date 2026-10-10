@@ -1069,7 +1069,8 @@ $('#go').onclick=search;
   const ref=String(reference||crypto.randomUUID()),cp=window.ControlPhi;let detail=null;
   try{detail=kind==='share'?(cp?.ensureShareCredit?cp.ensureShareCredit(ref):award('share',ref)):(cp?.ensureActionCredit?cp.ensureActionCredit(ref,kind):award(kind,ref))}
   catch(error){console.warn('Control Phi Star Coin credit unavailable; using QuantaPhi wallet',error);detail=award(kind,ref)}
-  if(!detail?.alreadyRecorded)try{window.QuantaStarCoinCloud?.record(kind,ref,card)}catch(error){console.warn('Star Coin Cloudflare record deferred',error)}
+  // Catalog writes are independently idempotent. Retry even when Control Phi already credited the wallet.
+  try{window.QuantaStarCoinCloud?.record(kind,ref,card)}catch(error){console.warn('Star Coin Cloudflare record deferred',error)}
   return detail;
  };
  paint(importLegacy(),false);
