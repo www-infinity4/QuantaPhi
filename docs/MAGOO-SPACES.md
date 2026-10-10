@@ -1,10 +1,12 @@
-# Magoo PhD X Spaces catalog
-- Owner: Magoo PhD on X, @HodlMagoo (independent of Fred Krueger).
+# Magoo PhD recording library
+- Host reference: Magoo PhD (@HodlMagoo). This library is independent of Fred Krueger's curated X Spaces.
 - Cloudflare D1 database: `magoo-phd-spaces`; Worker: `magoo-phd-spaces`.
-- Public read-only endpoint: `https://magoo-phd-spaces.marvaseater.workers.dev/v1/episodes`.
+- Read-only endpoint: `https://magoo-phd-spaces.marvaseater.workers.dev/v1/episodes`, including separately marked guest recordings and any verified X Spaces.
+- Source-specific endpoints: `/v1/spaces` for direct X Spaces and `/v1/recordings` for interviews/panels.
 - QuantaPhi frontend: `#magooSpacesRadio`, `magoo-spaces-radio.js`, `magoo-spaces-radio.css`.
-- Entries **must** have a verified X Space replay URL, not a tweet or account profile.
-- Schema restricts `space_id` and `source_url` to unique values; index `episode_id = magoo-<space-id>`.
-- The initial corpus is empty because no original recorded Magoo Spaces could be verified. Do not fill it with fabricated titles or unrelated host recordings.
-- Read-only Worker: add entries through the owner's Cloudflare D1 dashboard or a separate authenticated curator pipeline. Mark an episode `availability='verified'` after confirming the recording.
-- Device-local no-repeat playlist only; X provides the recording. This is not an audio rebroadcast, a wallet charge, or a clone of Fred's paid unlock service.
+- Verified appearances added October 10, 2026:
+  - Apr 1, 2022: Bitcoin Made Simple BMS 053, "HODL Magoo, who are you?" (Apple Podcasts). Source: https://podcasts.apple.com/us/podcast/bms-053-hodl-magoo-who-are-you-is-he-bearish-and/id1552915480?i=1000555962028
+  - Dec 10, 2021: BTC Sessions, "Why Are We Bullish?" with Louis Shulman, Hodl Magoo and Nate (YouTube). Source: https://www.youtube.com/watch?v=kO8IFG0aTDA
+- Neither entry is an X Space. Keep them in `recordings` (not `episodes`) with `guest-interview` or `guest-panel`.
+- X Space records require direct genuine `https://x.com/i/spaces/<id>` replay URLs; leave the X Spaces table empty until verified.
+- Device-local no-repeat shuffle. Not an audio rehost or reproduction; publishers own their playback pages. No StarCoin charge, Fred keys, or Fred media should be used.
