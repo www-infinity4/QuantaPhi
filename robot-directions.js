@@ -6,7 +6,13 @@ function normalize(value){
  if(!value||!Array.isArray(value.jobs)||!value.jobs.length)throw Error('GPT did not provide structured jobs');
  return value.jobs.slice(0,30).map((j,i)=>{
   if(!j||!ROLES[j.agent]||typeof j.title!=='string'||!j.title.trim()||!Array.isArray(j.acceptance)||!j.acceptance.some(x=>typeof x==='string'&&x.trim()))throw Error('Invalid color-bot assignment');
-  return {id:'TASK-'+(i+1),title:j.title.slice(0,180),agent:j.agent,color:ROLES[j.agent],status:'queued',
+  const text=(j.title+' '+(j.instructions||'')).toLowerCase();
+  const team=new Set([j.agent,'greenbeans','pink-panther','purple-pearl']);
+  if(/ledger|wallet|data|inventory|ticker|market|source|profile|evidence/.test(text))team.add('blueberry');
+  if(/story|lore|caption|transcript|research|evidence|paper/.test(text))team.add('gold-diggers-ink');
+  if(/market|stock|ticker/.test(text))team.add('naked-gold-digger');
+  if(/decision|policy|reward|privacy|isolat|tracker|rarity/.test(text))team.add('orange-peel');
+  return {id:'TASK-'+(i+1),team:[...team],title:j.title.slice(0,180),agent:j.agent,color:ROLES[j.agent],status:'queued',
    repository:typeof j.repository==='string'&&/^www-infinity4\/[\w.-]+$/.test(j.repository)?j.repository:'scope-to-resolve',
    instructions:String(j.instructions||j.title).slice(0,2000),acceptance:j.acceptance.filter(x=>typeof x==='string').slice(0,5).map(x=>x.slice(0,400)),
    dependencies:Array.isArray(j.dependencies)?j.dependencies.filter(x=>typeof x==='string').slice(0,6):[],
@@ -28,7 +34,7 @@ function show(ticket){
  const heading=node('p',ticket.id+' · '+ticket.status+' · saved to Cloudflare');list.append(heading);
  for(const job of ticket.context?.color_jobs||[]){
   const card=node('article','');card.className='robot-job robot-'+job.color;
-  card.append(node('strong',job.agent+' · '+job.title),node('p',job.instructions),node('small',job.repository+' · queued'));
+  card.append(node('strong',job.agent+' · '+job.title),node('small','Team: '+(job.team||[job.agent]).join(' → ')),node('p',job.instructions),node('small',job.repository+' · queued'));
   const ul=document.createElement('ul');for(const test of job.acceptance)ul.append(node('li',test));card.append(ul);list.append(card);
  }
  if(!ticket.context?.color_jobs?.length)list.append(node('p','Directions are saved. GPT routing needs a retry.'));
