@@ -495,7 +495,18 @@
       lastStarPayoutStatus=message;
       try{window.dispatchEvent(new CustomEvent('quantaphi:starcoin-payout-status',{detail}))}catch{}
     }
-    const indicator=document.getElementById('quantaStarPayoutStatus');
+    let indicator=document.getElementById('quantaStarPayoutStatus');
+    if(!indicator&&message){
+      const button=document.getElementById('controlPhiWalletButton');
+      if(button){
+        indicator=document.createElement('small');
+        indicator.id='quantaStarPayoutStatus';
+        indicator.setAttribute('role','status');
+        indicator.setAttribute('aria-live','polite');
+        indicator.style.cssText='display:inline-block;margin:4px 8px;color:#805500;font:600 11px system-ui;max-width:250px;vertical-align:middle';
+        button.insertAdjacentElement('afterend',indicator);
+      }
+    }
     if(indicator){indicator.textContent=message;indicator.hidden=!message;indicator.dataset.pending=String(pending>0)}
   }
   async function starQuestPayoutToken(){
