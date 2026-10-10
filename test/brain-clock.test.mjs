@@ -62,3 +62,18 @@ test('GPT Purple cannot approve absent tests and immutable patch evidence',async
  await assert.rejects(clock.runner(request),/arbitration_evidence_required/);assert.equal(memory.has('engine-review:key'),false);
 });
 
+
+test('capability and private preview publish without a repair lease and preserve verification boundaries',async()=>{
+ const memory=new Map(),oldFetch=globalThis.fetch;
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)}},{});
+ const request=(step,body)=>new Request('https://clock/runner/'+step,{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/QuantaPhi',...body})});
+ const preview={repository:'www-infinity4/QuantaPhi',baseSha:'a'.repeat(40),commitSha:'b'.repeat(40),paths:['robot-directions.js'],summary:'Clear draft',status:'deployed_verified',before:'data:image/jpeg;base64,/9j/AA==',after:'data:image/jpeg;base64,/9j/AA=='};
+ try{
+  assert.equal((await (await clock.runner(request('capability',{runnerRepository:'www-infinity4/Moltnook',status:'credential_missing'}))).json()).ok,true);
+  assert.equal(memory.get('engine-capability').status,'credential_missing');
+  globalThis.fetch=async(url,options)=>{assert.ok(url.endsWith(preview.commitSha));assert.equal(options.headers.Authorization,'Bearer fixture-token');return Response.json({parents:[{sha:preview.baseSha}],commit:{author:{name:'infinity-brain[bot]'},message:'Repair ticket/TASK-1 after GPT review and tests'},files:[{filename:'robot-directions.js'}]});};
+  const result=await (await clock.runner(request('preview',{preview,verificationToken:'fixture-token'}))).json();
+  assert.equal(result.status,'source_preview');assert.equal(memory.get('previews').length,1);assert.ok(!JSON.stringify([...memory.values()]).includes('fixture-token'));
+  await assert.rejects(clock.runner(request('preview',{preview:{...preview,repository:'www-infinity4/Other'}})),/preview_repository_identity_mismatch/);
+ }finally{globalThis.fetch=oldFetch}
+});
