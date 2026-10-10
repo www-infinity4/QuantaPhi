@@ -24,6 +24,7 @@ if(typeof module!=='undefined')module.exports={normalize,ROLES};
 if(typeof document==='undefined')return;
 const root=document.getElementById('robotDirections');if(!root)return;
 const input=root.querySelector('textarea'),send=root.querySelector('[data-send]'),status=root.querySelector('[role=status]'),list=root.querySelector('[data-jobs]');
+const history=document.createElement('div');list.before(history);
 const OWNER='infinity-work-ticket-owner-v1',DRAFT='quantaphi-robot-directions-draft-v1';
 const API='https://infinity-work-tickets.marvaseater.workers.dev';
 const node=(tag,text)=>{const n=document.createElement(tag);n.textContent=text;return n};
@@ -41,7 +42,7 @@ function show(ticket){
 }
 try{input.value=localStorage.getItem(DRAFT)||''}catch{}
 input.addEventListener('input',()=>{try{localStorage.setItem(DRAFT,input.value.slice(0,16000))}catch{}});
-async function refresh(){try{if(!owner())return;const d=await post('/v1/tickets/list',{owner_token:owner()});const t=d.tickets.find(x=>x.context?.kind==='robot-directions');if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}}
+async function refresh(){try{if(!owner())return;const d=await post('/v1/tickets/list',{owner_token:owner()});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();for(const t of tickets){const b=node('button',t.title+' · '+t.status);b.type='button';b.addEventListener('click',()=>{pending=t;input.value=t.request;show(t)});history.append(b)}const t=tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}}
 let pending=null;
 send.addEventListener('click',async()=>{
  const directions=input.value.trim();if(!directions){status.textContent='Write your directions first.';return}
