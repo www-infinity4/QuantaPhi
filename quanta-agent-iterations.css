@@ -80,3 +80,23 @@
 #quantaAgentIterations #qai-dashboard{border:1px solid #a8cee5;border-top:0;border-radius:0 0 16px 16px;padding:12px;background:#eff7fe}
 @keyframes qai-bubble-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){#quantaAgentIterations .qai-brain-bubble{animation:none!important}#quantaAgentIterations .qai-pulse{animation:none!important}}
+
+
+/* Exact source previews: same viewport, synchronized pan and shared zoom. */
+#quantaAgentIterations .qai-work-preview{margin-top:12px;padding:12px;border:1px solid #dfcdbd;border-radius:14px;background:#fffdf8;color:#29231f}
+#quantaAgentIterations .qai-work-preview h3{color:#402c3e;font-size:17px}
+#quantaAgentIterations .qai-work-preview select{width:100%;min-height:44px;padding:8px;margin:9px 0;border:1px solid #cbb8a5;border-radius:9px;background:white;color:#29231f}
+#quantaAgentIterations .qai-preview-portals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+#quantaAgentIterations .qai-preview-portal{min-width:0;margin:0;border:1px solid #d9c8b8;border-radius:10px;overflow:hidden;background:white}
+#quantaAgentIterations .qai-preview-portal figcaption{padding:8px;background:#f0e8df;font-size:11px;font-weight:800}
+#quantaAgentIterations .qai-preview-scroll{height:360px;overflow:auto;overscroll-behavior:contain}
+#quantaAgentIterations .qai-preview-scroll img{display:block;width:100%;height:auto}
+#quantaAgentIterations .qai-preview-links{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0}
+#quantaAgentIterations .qai-preview-links a{color:#683c86;font-size:12px}
+#quantaAgentIterations .qai-work-preview button{min-height:44px;border:1px solid #922e2e;border-radius:22px;padding:8px 12px;background:#aa3028;color:white;font:inherit}
+#quantaAgentIterations .qai-work-preview label{display:flex;align-items:center;gap:9px;margin:8px 0}
+#quantaAgentIterations .qai-work-preview input[type=range]{flex:1;min-width:0}
+#quantaAgentIterations .qai-work-preview small{display:block;line-height:1.5;margin-top:9px;color:#6a5e55}
+#quantaAgentIterations .qai-preview-expanded{position:fixed;inset:8px;z-index:2147483000;margin:0;overflow:auto;box-shadow:0 0 0 12px #241928a8}
+#quantaAgentIterations .qai-preview-expanded .qai-preview-scroll{height:60vh}
+@media(min-width:700px){#quantaAgentIterations .qai-preview-scroll{height:480px}}

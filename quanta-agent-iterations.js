@@ -34,7 +34,7 @@ const brainHeaders=await verifyBrainOwner();if(!brainHeaders){root.remove();retu
   'orange-julius':['Orange Julius','orange'],'orange-peel':['Orange Peel','orange'],
   'greenbeans':['Greenbeans','green'],'pink-panther':['Pink Panther','pink'],
   'purple-pearl':['Purple Pearl','purple'],'purple-pleasure':['Purple Pleasure','purple'],
-  'purple-people-eater':['Purple People Eater','purple']
+  'purple-people-eater':['Purple People Eater','purple'],'gpt-purple':['GPT Purple','purple']
  };
  const PROFILES={
   chemistry:{label:'Elements and chemistry',agent:'blueberry',skill:'Element fact validator',detail:'Validate atomic symbols, numbers, sources and images before an element card is published.',tokens:/\b(atomic|element|periodic|chemistr|molecul|argon|ruthenium|hydrogen|samarium|sulfur|electron|rubidium|catalyst|oxid)\w*\b/i},
@@ -68,6 +68,62 @@ const brainHeaders=await verifyBrainOwner();if(!brainHeaders){root.remove();retu
  const profileData=() => Object.entries(local.counts||{}).filter(([key,count])=>PROFILES[key]&&Number(count)>0)
      .sort((a,b)=>b[1]-a[1]).slice(0,4);
  let data=null,events=[],loading=false;
+ // Owner-only work evidence stays separate from the conversation stream.
+ let previewRows=[],previewSelected='',previewBusy=false,previewLoaded='',previewLocked=false;
+ const previewBox=ui('section','qai-work-preview');previewBox.setAttribute('aria-label','Bot work before and after');
+ const previewHeading=ui('h3','','See what the bot changed');
+ const previewSelect=ui('select','');previewSelect.setAttribute('aria-label','Choose a recorded bot repair');
+ const engineStatus=ui('p','','Cross-repository executor: checking actual runner connections.');
+ const previewStatus=ui('p','','Waiting for a real bot commit with before-and-after evidence.');previewStatus.setAttribute('role','status');
+ const previewLinks=ui('div','qai-preview-links'),previewPortals=ui('div','qai-preview-portals');
+ const previewImages={},previewScrolls={};
+ for(const side of ['before','after']){
+  const portal=ui('figure','qai-preview-portal'),label=ui('figcaption','',side==='before'?'Before · original source':'After · bot source');
+  const scroll=ui('div','qai-preview-scroll'),image=ui('img','');image.alt=side+' repair source preview';image.hidden=true;
+  scroll.append(image);portal.append(label,scroll);previewPortals.append(portal);previewImages[side]=image;previewScrolls[side]=scroll;
+  scroll.addEventListener('scroll',()=>{if(previewLocked)return;previewLocked=true;const other=previewScrolls[side==='before'?'after':'before'];other.scrollTop=scroll.scrollTop;other.scrollLeft=scroll.scrollLeft;requestAnimationFrame(()=>{previewLocked=false})});
+ }
+ const zoomLabel=ui('label','','Zoom both views '),zoom=ui('input','');zoom.type='range';zoom.min='100';zoom.max='250';zoom.value='100';zoom.setAttribute('aria-label','Zoom both page views');
+ zoom.addEventListener('input',()=>Object.values(previewImages).forEach(img=>{img.style.width=zoom.value+'%';img.style.maxWidth='none'}));zoomLabel.append(zoom);
+ const expand=ui('button','','Expand both views');expand.type='button';
+ expand.addEventListener('click',()=>{const expanded=previewBox.classList.toggle('qai-preview-expanded');expand.textContent=expanded?'Close expanded views':'Expand both views';expand.setAttribute('aria-expanded',String(expanded))});
+ previewBox.append(previewHeading,engineStatus,previewSelect,previewStatus,previewLinks,zoomLabel,expand,previewPortals,ui('small','','Pinned source previews use disconnected service fixtures. Live verification is shown separately; images alone do not prove a repair works.'));
+ $('.qai-brain').append(previewBox);
+ async function selectPreview(sha){
+  if(!/^[a-f0-9]{40}$/.test(sha||''))return;
+  previewSelected=sha;previewSelect.value=sha;if(previewLoaded===sha)return;
+  previewStatus.textContent='Loading exact before-and-after source views…';
+  try{
+   const response=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/work/preview?sha='+sha,{headers:brainHeaders,cache:'no-store',signal:AbortSignal.timeout(15000)});
+   if(!response.ok)throw Error('Preview HTTP '+response.status);const {preview:p}=await response.json();
+   if(previewSelected!==sha)return;
+   if(p?.commitSha!==sha||!p.baseSha||!['before','after'].every(side=>typeof p[side]==='string'&&p[side].length<=60000&&/^data:image\/jpeg;base64,[A-Za-z0-9+/]+={0,2}$/.test(p[side])))throw Error('Preview evidence is invalid');
+   for(const side of ['before','after']){previewImages[side].src=p[side];previewImages[side].hidden=false;previewScrolls[side].scrollTop=0;}
+   previewLoaded=sha;
+   previewStatus.textContent=(p.status==='deployed_verified'?'Live repair verified':'Source preview · live behavior not verified')+' · '+p.summary;
+   previewLinks.replaceChildren(makeLink('Before '+p.baseSha.slice(0,8),'https://github.com/'+p.repository+'/tree/'+p.baseSha),makeLink('After '+sha.slice(0,8),'https://github.com/'+p.repository+'/commit/'+sha),makeLink('Changed files','https://github.com/'+p.repository+'/compare/'+p.baseSha+'...'+sha));
+   if(p.runUrl)previewLinks.append(makeLink('Runner / tests',p.runUrl));
+  }catch(e){if(previewSelected===sha)previewStatus.textContent='Preview unavailable: '+e.message;}
+ }
+ previewSelect.addEventListener('change',()=>selectPreview(previewSelect.value));
+ async function pullPreviews(){
+  if(previewBusy||document.hidden)return;previewBusy=true;
+  try{
+   const response=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/activity/feed.json',{headers:brainHeaders,cache:'no-store',signal:AbortSignal.timeout(12000)});
+   if(!response.ok)throw Error('Evidence service HTTP '+response.status);const payload=await response.json();
+   if(payload.engine)engineStatus.textContent='Repository engine · '+payload.engine.status.replaceAll('_',' ')+' · '+(payload.engine.repositoriesVisible??'unknown')+' repositories visible · checked '+deltaTime(payload.engine.when);
+   const rows=(payload.previews||[]).filter(p=>/^www-infinity4\/[\w.-]+$/.test(p.repository||'')&&/^[a-f0-9]{40}$/.test(p.commitSha||''));
+   const oldNewest=previewRows[0]?.commitSha;previewRows=rows;previewSelect.replaceChildren();
+   if(!rows.length){previewSelect.append(ui('option','','No visual repair receipts yet'));return;}
+   for(const row of rows){const option=ui('option','',row.repository.split('/')[1]+' · '+row.summary);option.value=row.commitSha;previewSelect.append(option);}
+   // Follow new work automatically unless the owner is inspecting an older repair.
+   const selected=!previewSelected||previewSelected===oldNewest?rows[0].commitSha:rows.some(x=>x.commitSha===previewSelected)?previewSelected:rows[0].commitSha;
+   previewSelect.value=selected;await selectPreview(selected);
+  }catch(e){if(!previewLoaded)previewStatus.textContent='No visual evidence available: '+e.message;}
+  finally{previewBusy=false;}
+ }
+ pullPreviews();setInterval(pullPreviews,30000);
+
 
  // Display each source-backed event at most once, and only after this visit began.
  let brainPlaylist=[],brainReady=false;
@@ -326,3 +382,4 @@ const brainHeaders=await verifyBrainOwner();if(!brainHeaders){root.remove();retu
  setInterval(()=>{if(!document.hidden)pull()},10000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)pull()});
 })();
+

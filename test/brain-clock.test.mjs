@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 const authUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-auth.mjs',import.meta.url))).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl);
+const previewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/preview-contract.mjs',import.meta.url))).toString('base64');
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl);
 const {BrainClock,validateInstruction}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 test('gate rejects executable, extra and misdirected actions',()=>{
  assert.throws(()=>validateInstruction({target_element:'robotDirections',action:'eval',payload:{reason:'x'}}));
@@ -14,7 +15,7 @@ test('stable state avoids repeated inference; provider failure backs off Gemini 
  const oldFetch=globalThis.fetch,memory=new Map();let alarm=0,modelCalls=0;
  const storage={get:async k=>memory.get(k),put:async(k,v)=>{memory.set(k,v)},getAlarm:async()=>alarm,setAlarm:async v=>{alarm=v}};
  globalThis.fetch=async()=>new Response('<section id="quantaAgentIterations"></section><section id="robotDirections"></section>');
- const env={WORK_DB:{prepare:()=>({all:async()=>({results:[]})})},MODELS:{plan:async()=>{modelCalls++;return {provider:'gemini',model:'mock',instruction:{target_element:'robotDirections',action:'idle',payload:{reason:'unchanged'}}}}}};
+ const env={WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[]})})},MODELS:{plan:async()=>{modelCalls++;return {provider:'gemini',model:'mock',instruction:{target_element:'robotDirections',action:'idle',payload:{reason:'unchanged'}}}}}};
  try{
   const clock=new BrainClock({storage},env);await clock.alarm();await clock.alarm();
   assert.equal(modelCalls,1);assert.equal(memory.get('state').status,'idle');assert.ok(alarm>Date.now());
@@ -40,3 +41,24 @@ test('queued owner job gets real inspection and Purple review once without fabri
   assert.ok(!JSON.stringify(updated).includes('"status":"complete"'));
  }finally{globalThis.fetch=oldFetch}
 });
+
+test('repository engine claims any owner repository while honoring leases and job dependencies',async()=>{
+ const memory=new Map();const context={color_jobs:[
+  {id:'dependent',repository:'www-infinity4/Project401',instructions:'Build page',dependencies:['base'],status:'queued'},
+  {id:'base',repository:'www-infinity4/Project401',instructions:'Build new component',dependencies:[],status:'queued'},
+  {id:'outside',repository:'other/Project401',instructions:'Build',status:'queued'}
+ ]};
+ const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)};
+ const clock=new BrainClock({storage},{WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Build my project',context_json:JSON.stringify(context)}]})})}});
+ const request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
+ const first=await (await clock.runner(request())).json();assert.equal(first.lease.jobId,'base');assert.equal(first.lease.job.ownerRequest,'Build my project');
+ const second=await (await clock.runner(request())).json();assert.equal(second.lease,null);
+});
+
+test('GPT Purple cannot approve absent tests and immutable patch evidence',async()=>{
+ const memory=new Map([['key',{key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,job:{instructions:'Build'}}]]);
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async()=>({response:JSON.stringify({decision:'approve',reason:'looks good'})})}});
+ const request=new Request('https://clock/runner/arbitrate',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{tests:{passed:false},review:{approved:true},baseSha:'a'.repeat(40),patched:{'index.html':'hello'}}})});
+ await assert.rejects(clock.runner(request),/arbitration_evidence_required/);assert.equal(memory.has('engine-review:key'),false);
+});
+

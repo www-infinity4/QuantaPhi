@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {allowedFiles,applyEdits,clearButtonPatch} from './brain-patch.mjs';
+import {capturePair} from './brain-preview.mjs';
 const API='https://infinity-brain-clock.marvaseater.workers.dev';
 const git=(...args)=>execFileSync('git',args,{encoding:'utf8',stdio:['ignore','pipe','pipe']}).trim();
 let lease,commitSha,testsPassed=false,reviewApproved=false;
@@ -37,7 +38,16 @@ async function browserCheck(){
 try{
  await fs.mkdir('brain-receipts',{recursive:true});
  lease=(await call('claim',{})).lease;
- if(!lease){report.status='idle';console.log('No eligible brain-interface job.');}
+ if(!lease){
+  report.status='idle';console.log('No eligible brain-interface job.');
+  const last=git('log','-1','--author=infinity-brain','--grep=^Repair .* after GPT review and tests$','--format=%H');
+  if(/^[a-f0-9]{40}$/.test(last)){
+   const baseSha=git('rev-parse',last+'^'),paths=git('diff-tree','--no-commit-id','--name-only','-r',last).split('\n').filter(Boolean);
+   const pair=await capturePair({baseSha,commitSha:last,paths,summary:git('show','-s','--format=%s',last)});
+   await fs.writeFile('brain-receipts/work-preview.json',JSON.stringify(pair));
+   await call('preview',{preview:pair});report.previewCommit=last;
+  }
+ }
  else{
   report.jobId=lease.ticketId+'/'+lease.jobId;report.baseSha=git('rev-parse','HEAD');
   await event('greenbeans','Claimed '+report.jobId+'. Reading exact repository files before editing.');
@@ -65,6 +75,7 @@ try{
   git('add','--',...paths);git('commit','-m','Repair '+report.jobId+' after GPT review and tests');commitSha=git('rev-parse','HEAD');
   git('push','origin','HEAD:main');
   }
+  report.preview={baseSha:git('rev-parse',commitSha+'^'),commitSha,paths:git('diff-tree','--no-commit-id','--name-only','-r',commitSha).split('\n').filter(Boolean),summary:'Bot repair: '+report.jobId,jobId:report.jobId};
   await event('greenbeans','Committed '+commitSha.slice(0,9)+' for '+report.jobId+'. Waiting for the deployed source, then opening the hosted Android browser.',{commitSha});
   // The existing .org edge serves source from main. Verify exact deployed bytes, not HTTP alone.
   let matched=false;
@@ -86,6 +97,12 @@ try{
  if(lease)try{await call('result',{status:report.status,commitSha,testsPassed,reviewApproved,message:report.error});}catch(resultError){report.receiptError=resultError.message;}
  process.exitCode=1;
 }finally{
+ if(report.preview){try{
+  const pair=await capturePair({...report.preview,status:report.status==='deployed_verified'?'deployed_verified':'committed_unverified'});
+  await fs.writeFile('brain-receipts/work-preview.json',JSON.stringify(pair));
+  await call('preview',{preview:pair});report.previewPublished=true;
+ }catch(e){report.previewError=e.message;}}
  report.commitSha=commitSha||null;report.testsPassed=testsPassed;
  await fs.mkdir('brain-receipts',{recursive:true});await fs.writeFile('brain-receipts/report.json',JSON.stringify(report,null,2));
 }
+

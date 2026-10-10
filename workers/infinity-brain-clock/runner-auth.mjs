@@ -3,9 +3,12 @@ const ISSUER='https://token.actions.githubusercontent.com';
 const AUDIENCE='infinity-brain-writer';
 const REPO='www-infinity4/QuantaPhi';
 const WORKFLOW=REPO+'/.github/workflows/brain-writer.yml@refs/heads/main';
+const ENGINE_REPO='www-infinity4/Moltnook';
+const ENGINE_WORKFLOW=ENGINE_REPO+'/.github/workflows/moltnook-repository-engine.yml@refs/heads/main';
 const bytes=s=>Uint8Array.from(atob(s.replace(/-/g,'+').replace(/_/g,'/')),c=>c.charCodeAt(0));
 export function checkClaims(c,now=Date.now()/1000){
- if(c.iss!==ISSUER||c.aud!==AUDIENCE||c.repository!==REPO||c.repository_id!=='1380883643'||c.ref!=='refs/heads/main'||c.workflow_ref!==WORKFLOW||!['push','schedule','workflow_dispatch'].includes(c.event_name)||!/^\d+$/.test(c.run_id||'')||!Number.isFinite(c.exp)||c.exp<=now||c.nbf>now+30)throw Error('runner_identity_rejected');
+ const scoped=c.repository===REPO&&c.repository_id==='1380883643'&&c.workflow_ref===WORKFLOW||c.repository===ENGINE_REPO&&c.repository_id==='1188306316'&&c.workflow_ref===ENGINE_WORKFLOW;
+ if(c.iss!==ISSUER||c.aud!==AUDIENCE||!scoped||c.ref!=='refs/heads/main'||!['push','schedule','workflow_dispatch'].includes(c.event_name)||!/^\d+$/.test(c.run_id||'')||!Number.isFinite(c.exp)||c.exp<=now||c.nbf>now+30)throw Error('runner_identity_rejected');
  return c;
 }
 export async function authenticate(request){
@@ -25,3 +28,4 @@ export function supported(job){
  // The first adapter handles brain-interface repairs. Other jobs retain their original scope.
  return job.repository===REPO && /clear\s+(?:text|input)|(?:brain|robot).*(?:input|button|readab|message|display)/i.test(job.instructions||'') && !(job.dependencies||[]).length;
 }
+
