@@ -125,6 +125,22 @@ const CLASS_SEARCH={
  9:{terms:'peer reviewed journal archaeological research experiment paper',domains:['nature.com','science.org','journals.plos.org']},
  10:{terms:'oral history recorded testimony legend folklore attributed',domains:['loc.gov','si.edu','archive.org']}
 };
+// Editorial weights guide discovery, never a finite list of finished stories.
+const REALM_SECTOR_WEIGHTS={4:6,5:3,6:5,9:4,10:5,11:3,16:3,17:4,19:3,22:3,24:5,25:3,28:5};
+const REALM_DIRECTION=/mystery|hidden|lost|forgotten|secret|disput|accidental|unexpected|investigation|pressure|failure|rivals/i;
+const STORY_HOOK=/\b(?:ghosts?|haunt(?:ed|ing|ings)?|apparition|poltergeist|disappear(?:ed|ance|ances)?|vanished|expedition|voyage|rescue|survival|treasure|cipher|cryptogram|unsolved|deception|hoax|lost|hidden|secret|mystery|shipwreck|prototype|automaton|invention|inventor|cave|caves|eruption)\b/i;
+function weightedChoice(items,weight,rng=random){
+ const total=items.reduce((sum,item)=>sum+Math.max(1,weight(item)),0);
+ let draw=rng(total);
+ for(const item of items){draw-=Math.max(1,weight(item));if(draw<0)return item}
+ return items[items.length-1];
+}
+function intrigueScore(item){
+ const title=clean(item?.title),lead=clean(item?.summary||item?.full).slice(0,650);
+ return (STORY_HOOK.test(title)?8:0)+(STORY_HOOK.test(lead)?4:0)+
+  (SECRET_HOOK.test(title)?4:0)+(EVENT_TITLE.test(title)?2:0);
+}
+const EDITORIAL_BRIEF='Prioritize secrets, historical mysteries, attributed ghost lore, strange inventions, lost expeditions, daring rescues, hidden treasures and startling discoveries. Geology and education belong through a concrete cave discovery, eruption, expedition, disputed clue or surprising event, not a generic lesson. Start with a supported unsettling clue or surprising fact; unfold the evidence, real stakes and discovery in a clear sequence; end with what is known and what remains unresolved. Deliver the interesting payoff, not clickbait or a promise of a secret. Treat ghosts as reported experiences or folklore, never established supernatural facts. Never inflate ordinary events into conspiracies or invent shocks.';
 function indexedDraw({catalog,query='',profileSector=0,lastPair='',rng=random,sectorOverride=0}={}){
  const words=Array.isArray(catalog?.wordIndex)?catalog.wordIndex:[];
  const angles=Array.isArray(catalog?.researchRefinements)?catalog.researchRefinements:[];
@@ -146,14 +162,14 @@ function indexedDraw({catalog,query='',profileSector=0,lastPair='',rng=random,se
  const related=exact?sectorOf(exact):[];
  const desired=sectorOverride>=1&&allowed.has(sectorOverride)?sectorOverride:
   related.length?(related.includes(preference)?preference:related[rng(related.length)]):
-  allowed.has(preference)&&wordsIn(preference).length&&rng(5)<2?preference:sectors[rng(sectors.length)].id;
+  allowed.has(preference)&&wordsIn(preference).length&&rng(5)<2?preference:weightedChoice(sectors,s=>REALM_SECTOR_WEIGHTS[s.id]||1,rng).id;
  const options=wordsIn(desired);
  if(!options.length)return null;
  const word=exact&&options.some(w=>w.id===exact.id)?exact:options[rng(options.length)];
- const angle=angles[rng(angles.length)];
- let direction=directions[rng(directions.length)];
+ const angle=weightedChoice(angles,a=>REALM_DIRECTION.test(a.name)?4:1,rng);
+ let direction=weightedChoice(directions,d=>REALM_DIRECTION.test(d.name)?5:1,rng);
  const path=()=>[desired,word.id,angle.id,direction.id].join(':');
- if(lastPair===path()&&directions.length>1)direction=directions[direction.id%directions.length];
+ if(lastPair===path()&&directions.length>1)direction=weightedChoice(directions.filter(d=>d.id!==direction.id),d=>REALM_DIRECTION.test(d.name)?5:1,rng);
  const realm=realms[rng(realms.length)];
  const evidence=rng((catalog.sourceClasses||[]).length||10)+1;
  return {
@@ -196,11 +212,12 @@ function sourcePlan(roll,catalog,focus=''){
  const discoveryTerms='specific incident demonstration object document event little-known -biography -town -municipality';
  const trail=['overlooked episode','archival surprise','forgotten evidence','unusual incident','newly rediscovered artifact','historical mystery'];
  const variant=trail[(Number(roll.trial)||0)%trail.length];
+ const thematicTerms=sectorId===4||sectorId===5?'haunting ghost folklore investigation historical accounts':sectorId===16?'cave expedition eruption buried discovery geological mystery':sectorId===28||sectorId===17?'lost expedition voyage rescue survival discovery':sectorId===6?'lost invention strange prototype accidental discovery':'hidden evidence historical mystery unexpected discovery';
  // Each button triggers new external retrieval. Actual source sites provide the
  // research catalog; the 6,000 rolls are query routes, never canned stories.
  const queries=researchedTopic?[
    // Begin with the user's actual random-number result: "Helium history".
-   [researchedTopic,realm||angle,direction].filter(Boolean).join(' '),
+   [researchedTopic,variant,thematicTerms].filter(Boolean).join(' '),
    [researchedTopic,realm||angle,direction,'unusual origin discovery experiment incident historical source'].join(' '),
    [researchedTopic,realm||angle,direction,variant,preference.terms,'site:'+domain].join(' ')
  ]:[
@@ -239,7 +256,8 @@ function extract(payload){
  return (Array.isArray(payload?.results)?payload.results:[]).map(r=>({title:clean(r.title).slice(0,200),summary:clean(r.content||r.description).slice(0,700),url:canonical(r.url)}))
  .filter(r=>r.title.length>=13&&r.summary.length>=70&&origin(r.url))
  .filter(r=>!/\/(shop|login|signup|cart)(\/|\?|$)/i.test(r.url))
- .filter(r=>!isPlaceProfile(r));
+ .filter(r=>!isPlaceProfile(r))
+ .filter(r=>origin(r.url)!=='books.toscrape.com');
 }
 function textAnswer(data){
  let x=data?.output_text??data?.output??data?.answer??data?.response??data?.content??data?.message??'';
@@ -331,6 +349,7 @@ async function writeSecretStory(sources,plan,roll,storyKind='reads-realms'){
  const readablePages=pageEvidence.slice(0,2).map(x=>({url:x.url,title:x.title,excerpt:x.excerpt.slice(0,1100)}));
  const prompt=[
   'You are the GPT author of the '+product+' nonfiction story. '+(storyKind==='asteroid'?'This Asteroid is ONLY for the actual current QuantaPhi search; anchor the story in that searched subject.':'This is the original Reads & Realms home-page opening story, written fresh for a page visit without requiring a user search; select the documented subject from the rolled word bank.')+' Write an ORIGINAL sourced narrative about a concrete evidence-supported incident, observation, discovery, process, demonstration or artifact. Never a general biography, film synopsis or fabricated movie.',
+  EDITORIAL_BRIEF,
   'NARRATIVE MOOD: '+mood+'. Shape pacing, curiosity and tension around facts; mystery means an evidence-supported unknown, adventure means a documented journey/process, suspense means real stakes or uncertainty. Do not invent danger, dialogue, plot twists, witnesses, or cinematic scenes.',
   'Example of the required difference: "Nikola Tesla" is NOT a story; his 1898 radio-controlled boat demonstration IS the kind of precise event we want, but do not choose it unless the actual evidence here concerns that event.',
   'You are both evidence reviewer and storyteller: examine up to 20 independent search-result excerpts below, choose the MOST INTERESTING SPECIFIC incident actually corroborated by at least two distinct source websites, then narrate it as an engaging story, not an encyclopedia answer.',
@@ -391,7 +410,7 @@ async function findSearch({roll,catalog,seen,focus='',storyKind='legacy'}) {
   !seen.has('title:'+hash(r.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').slice(0,140))));
  if(eligible.length<2)return null;
  const ranked=eligible.map(item=>({item,score:(EVENT_TITLE.test(item.title)?5:0)+
-  (SECRET_HOOK.test(item.title+' '+item.summary)?2:0)+
+  intrigueScore(item)+
   (origin(item.url)===plan.domain?2:0)+(item.title.toLowerCase().includes(plan.indexedWord.toLowerCase())?2:0)+random(3)}))
   .sort((a,b)=>b.score-a.score).map(x=>x.item).slice(0,20);
  // The writer examines the result pool and selects the most compelling
@@ -448,6 +467,7 @@ async function writeWikipediaStory(page,plan,roll,storyKind='reads-realms'){
  const product=storyKind==='asteroid'?'Asteroid':'Infinity Reads & Realms';
  const prompt=[
  'Write one original '+product+' nonfiction story about a specific documented event, discovery, object, natural process or experiment evidenced by the provided source excerpt. '+(storyKind==='asteroid'?'The Asteroid must relate to the user-searched subject.':'This is a new Reads & Realms home-page opener chosen from the indexed word bank, NOT an Asteroid story.')+' Apply the '+mood+' narrative style without inventing details, threats or cinema-style fiction. For crops, natural phenomena, arts and ordinary subjects, a documented process or genuine unresolved historical question is a valid narrative, not a secret-headline requirement.',
+ EDITORIAL_BRIEF,
  'No biography or encyclopedia-style overview. Never invent dialogue, quotes, dates, motives, scientific results or secret plots.',
  'Use ONLY the supplied excerpt, not other assumed facts. If the excerpt is too general, answer {"insufficient":true}.',
  'Return JSON ONLY with {"title":"specific nonfiction headline","summary":"40-85 words","full":"150-240 original words in at least 2 paragraphs","detail":"one directly supported surprising fact"}.',
@@ -513,7 +533,7 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep,storyKind='legac
  const ranked=candidates.map(item=>{
    const title=item.title.toLowerCase(),body=item.full.slice(0,600).toLowerCase();
    const relevance=topicWords.reduce((score,w)=>score+(title.includes(w)?8:0)+(body.includes(w)?2:0),0);
-   return {item,score:relevance+(hook.test(item.title)?4:0)+(hook.test(item.full.slice(0,500))?3:0)+Math.min(3,Math.floor(item.full.length/500))};
+   return {item,score:relevance+intrigueScore(item)+(hook.test(item.title)?4:0)+(hook.test(item.full.slice(0,500))?3:0)+Math.min(3,Math.floor(item.full.length/500))};
  });
  ranked.sort((a,b)=>b.score-a.score);
  const shortlist=ranked.slice(0,Math.min(8,ranked.length)).map(x=>x.item);
@@ -605,5 +625,6 @@ async function find(options){
   second?.discoveryMethod==='encyclopedia-backup'?second:null;
 }
 
-global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,indexedDraw,isPlaceProfile,isGenericProfile,isSecretStory,storyMood,eligibleNarrative};
+global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,indexedDraw,isPlaceProfile,isGenericProfile,isSecretStory,storyMood,eligibleNarrative,weightedChoice,intrigueScore};
 })(window);
+
