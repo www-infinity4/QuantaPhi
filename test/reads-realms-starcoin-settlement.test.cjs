@@ -27,6 +27,7 @@ test('Reads and Realms Collect Star Share pay the real StarQuest account once',a
  const credits=[action('collect','infinite-book|mystery-one'),action('star','infinite-book:mystery-one'),action('share','infinite-book:mystery-one:unique-one')];
  let r=await call(credits);assert.equal(r.status,201);let j=await r.json();
  assert.equal(j.wallet_state.starCoins,0);assert.equal(j.wallet_state.pendingShareCredits,3);
+ assert.equal(identity.prepare('SELECT share_count AS n FROM accounts').get().n,1,'only Share increments the share counter');
  assert.equal(j.settled.filter(x=>x.credited).length,3);
  assert.equal(identity.prepare('SELECT COUNT(*) AS n FROM share_receipts WHERE credited_at IS NOT NULL').get().n,3);
  r=await call(credits);assert.equal(r.status,201);j=await r.json();
@@ -41,6 +42,7 @@ test('Ten distinct eligible actions pay one StarCoin and preserve 10 ledger entr
  assert.equal(result.wallet_state.starCoins,1);
  assert.equal(result.wallet_state.pendingShareCredits,0);
  assert.equal(result.settled.filter(x=>x.credited).length,10);
+ assert.equal(identity.prepare('SELECT share_count AS n FROM accounts').get().n,2,'Star/Collect/Build/Extract/Compare never inflate Share count');
  assert.equal(identity.prepare('SELECT COUNT(*) AS n FROM ledger_events WHERE event_type=?').get('share_reward').n,1);
 });
 test('Legacy client receipts still use their existing payout path to avoid duplicate StarQuest minting',async()=>{
