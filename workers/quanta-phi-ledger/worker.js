@@ -62,6 +62,32 @@ function upsertCollect(env, wallet, card) {
   return env.DB.prepare("INSERT INTO quant_collects(collect_id,wallet_id,content_key,type,title,story,media,source_url) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(wallet_id,content_key) DO UPDATE SET type=excluded.type,title=excluded.title,story=excluded.story,media=excluded.media,source_url=excluded.source_url,collected_at=CURRENT_TIMESTAMP")
     .bind("qc_" + crypto.randomUUID(), wallet, card.key, card.type, card.title, card.story, card.media, card.sourceUrl);
 }
+// The Quanta ledger and StarQuest wallet use the SAME authenticated account ID.
+// Settle +0.1 on the spendable StarQuest balance only for newly opted-in
+// client receipts. The deterministic key is stable across timeouts/retries.
+async function settleStarQuestCardAction(env,user,kind,referenceId,reference,data){
+  const ref=String(reference||'').slice(0,500),method=kind==='share'?'web_share_api':kind;
+  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('quantaphi-card-payout-v1:'+referenceId));
+  const key='qp-'+Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
+  const existing=await env.IDENTITY_DB.prepare(
+    "SELECT idempotency_key FROM share_receipts WHERE account_id=? AND (idempotency_key=? OR (content_id=? AND method=?)) LIMIT 1"
+  ).bind(user,key,ref,method).first();
+  if(existing)return {reference_id:referenceId,duplicate:true,credited:false};
+  const now=Date.now(),title=String(data?.title||data?.query||kind).slice(0,240);
+  const receiptId='ledger-'+crypto.randomUUID(),rewardId='ledger-'+crypto.randomUUID();
+  const result=await env.IDENTITY_DB.batch([
+    env.IDENTITY_DB.prepare("INSERT OR IGNORE INTO share_receipts(idempotency_key,account_id,content_id,method,receipt_hash,show_title,episode_id,company_id,actors_json,fully_watched,attribution_status,payout_status,created_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)")
+      .bind(key,user,ref,method,key,title,'','quanta-phi','[]',0,'quanta_card_action','credited',now),
+    env.IDENTITY_DB.prepare("UPDATE accounts SET share_count=share_count+1,star_coins=star_coins+CASE WHEN pending_share_credits=9 THEN 1 ELSE 0 END,pending_share_credits=(pending_share_credits+1)%10,updated_at=? WHERE id=? AND EXISTS(SELECT 1 FROM share_receipts WHERE idempotency_key=? AND account_id=? AND credited_at IS NULL)")
+      .bind(now,user,key,user),
+    env.IDENTITY_DB.prepare("INSERT INTO ledger_events(id,account_id,event_type,amount,balance,progress_to_next_coin,shares_per_coin,reference_id,content_id,company_id,actors_json,attribution_status,payout_status,created_at) SELECT ?,a.id,?,0,a.star_coins,a.pending_share_credits,10,?,?,'quanta-phi','[]','quanta_card_action','credited',? FROM accounts a JOIN share_receipts r ON r.account_id=a.id WHERE a.id=? AND r.idempotency_key=? AND r.credited_at IS NULL")
+      .bind(receiptId,kind+'_credit',key,ref,now,user,key),
+    env.IDENTITY_DB.prepare("INSERT INTO ledger_events(id,account_id,event_type,amount,balance,progress_to_next_coin,shares_per_coin,reference_id,content_id,company_id,actors_json,attribution_status,payout_status,created_at) SELECT ?,a.id,'share_reward',1,a.star_coins,0,10,?,?,'quanta-phi','[]','quanta_card_action','credited',? FROM accounts a JOIN share_receipts r ON r.account_id=a.id WHERE a.id=? AND r.idempotency_key=? AND r.credited_at IS NULL AND a.pending_share_credits=0")
+      .bind(rewardId,key,ref,now,user,key),
+    env.IDENTITY_DB.prepare("UPDATE share_receipts SET credited_at=? WHERE account_id=? AND idempotency_key=? AND credited_at IS NULL").bind(now,user,key)
+  ]);
+  return {reference_id:referenceId,credited:Number(result[1]?.meta?.changes||0)===1,duplicate:Number(result[1]?.meta?.changes||0)!==1};
+}
 async function starCoinState(env, user, limit = 500) {
   await ensureActionCatalog(env);
   await ensureStorySpinCredits(env);
@@ -454,7 +480,7 @@ export default {
       await ensureActionCatalog(env);
       await ensureStorySpinCredits(env);
       await ensureCollects(env);
-      const now = Date.now(), accepted = [], statements = [];
+      const now = Date.now(), accepted = [], statements = [], settlements = [];
       for (const item of credits) {
         const kind = ["share","collect","star","build_image","fix_image","extract","compare","spin"].includes(item?.kind)?item.kind:"";
         const referenceId = String(item?.reference_id || "").trim().slice(0, 800);
@@ -483,10 +509,23 @@ export default {
         const card = kind === "collect" && item?.card && typeof item.card === "object" ? collectRow(item.card) : null;
         if (card?.key && card.title) statements.push(upsertCollect(env, wallet, card));
         accepted.push(referenceId);
+        // Older clients already use StarQuest /v1/shares; leave them unchanged.
+        // New opted-in clients pay server-side instead of minting twice locally.
+        if(item?.serverSettlement===true && kind!=='spin')
+          settlements.push({kind,referenceId,reference,data:item?.data||item?.card||{}});
       }
       if (!statements.length) return json({ error: "invalid_star_coin_credits" }, 400);
       await env.DB.batch(statements);
-      return json({ ...(await starCoinState(env, identity.user_id, 50)), accepted }, 201);
+      const settled=[];
+      try{
+        for(const item of settlements)
+          settled.push(await settleStarQuestCardAction(env,identity.user_id,item.kind,item.referenceId,item.reference,item.data));
+      }catch(error){
+        console.error('StarQuest card payout retained for retry',String(error?.message||error));
+        return json({error:'starquest_settlement_pending',accepted:[],settled},503);
+      }
+      const walletState=settlements.length?await env.IDENTITY_DB.prepare("SELECT star_coins AS starCoins,pending_share_credits AS pendingShareCredits FROM accounts WHERE id=?").bind(identity.user_id).first():null;
+      return json({ ...(await starCoinState(env, identity.user_id, 50)), accepted, settled, wallet_state:walletState }, 201);
     }
 
     // Bitcoin Crusher: exactly one tenth of a StarCoin for each distinct completed spin.
