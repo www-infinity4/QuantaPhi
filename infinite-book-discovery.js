@@ -520,6 +520,14 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep,storyKind='legac
  // For an explicit search, take the strongest matching real article rather
  // than randomly giving the GPT writer an unrelated page.
  const choice=shortlist[arguments[0]?.strictGPT===true?0:random(shortlist.length)];
+ // For a typed search, don't fill the Asteroid with an unrelated archival page
+ // if the model cannot finish its original narrative.
+ if(storyKind==='asteroid'){
+  const keywords=(clean(roll.quantFocus||focus).toLowerCase().match(/[a-z0-9]{4,}/g)||[])
+   .filter(word=>!['story','read','research','mystery','secret','about','original','history'].includes(word)).slice(0,6);
+  const evidence=(choice.title+' '+choice.full.slice(0,1150)).toLowerCase();
+  if(keywords.length&&!keywords.some(word=>evidence.includes(word)))return null;
+ }
  const sentences=choice.full.match(/[^.!?]+[.!?]+/g)||[];
  let summary=sentences.slice(0,3).join(' ').trim();
  if(summary.length<90)summary=choice.full.slice(0,290);
@@ -550,7 +558,11 @@ async function findWikipedia({roll,catalog,seen,focus='',onDeep,storyKind='legac
    const written=await writeWikipediaStory(page,plan,roll,storyKind).catch(()=>null);
    if(written){successful={page,written};break}
   }
-  if(!successful)return null;
+  // A genuine cited excerpt is better than a blank card when GPT is busy.
+  // Never label this as a completed original story or invented narrative.
+  if(!successful)return {...backup,
+   status:'Verified Wikipedia source excerpt · original GPT story not completed',
+   discoveryMethod:'encyclopedia-backup'};
   const {page,written}=successful,articleUrl='https://en.wikipedia.org/?curid='+page.pageid;
   return {...backup,...written,id:'wiki-gpt-'+page.pageid,
    sourceTitle:'Wikipedia contributors · '+page.title,sourceUrl:articleUrl,
@@ -580,15 +592,17 @@ async function find(options){
   if(first.story)return first.story;
   return first.type==='deep'?backup:deep;
  }
- // Only the actual model's original source-backed writing can enter Asteroid.
- // A retrieved excerpt, old film catalog, or encyclopedia blurb is not a finished story.
+ // Prefer genuine original writing. If the provider fails, a clearly labeled
+ // cited source excerpt may temporarily occupy the card; never call it GPT prose.
  const first=await Promise.race([
   deep.then(x=>({type:'deep',story:x})),
   backup.then(x=>({type:'wiki',story:x}))
  ]);
  if(eligibleNarrative(first.story))return first.story;
  const second=first.type==='deep'?await backup:await deep;
- return eligibleNarrative(second)?second:null;
+ return eligibleNarrative(second)?second:
+  first.story?.discoveryMethod==='encyclopedia-backup'?first.story:
+  second?.discoveryMethod==='encyclopedia-backup'?second:null;
 }
 
 global.PhiInfiniteBookDiscover={preferences,find,sourcePlan,indexedDraw,isPlaceProfile,isGenericProfile,isSecretStory,storyMood,eligibleNarrative};

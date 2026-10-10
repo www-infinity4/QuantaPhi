@@ -316,8 +316,13 @@
       focus:String(query||profile?.focus||'').slice(0,90)};
   }
   function pickUnique(roll, seen) {
-    const unread = Array.from(byId.values()).filter(story => !seen.has(story.id));
-    if (!unread.length) return null;
+    const all = Array.from(byId.values()).filter(storyValid);
+    const unique = all.filter(story => !seen.has(story.id));
+    // Exhaust the entire verified catalog before repeating an older story.
+    // If all locally available stories were read, gracefully cycle from the
+    // archived evidence rather than leaving the reader blank when GPT is down.
+    const unread = unique.length ? unique : all.filter(story=>story.id!==current?.id);
+    if (!unread.length) return all[0] || null;
     let recent = [];
     try { recent = JSON.parse(sessionStorage.getItem('phi_book_recent_subjects')||'[]'); }catch(_){}
     const last = recent[recent.length-1];
@@ -384,6 +389,14 @@
     for (const story of byId.values()) if (!seen.has(story.id)) n++;
     return n;
   }
+  function sourcedCard(story){
+    return storyValid(story) && (
+      window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story) ||
+      (story.discoveryMethod==='encyclopedia-backup' &&
+       /^https:\/\/en\.wikipedia\.org\//.test(story.sourceUrl) &&
+       String(story.status||'').includes('source excerpt'))
+    );
+  }
   function discoverInBackground(roll, onDeep, storyKind='reads-realms') {
     const key = [storyKind,roll.sector, roll.angle, roll.sourceClass, roll.focus || ''].join(':');
     if (researchFlights.has(key)) return researchFlights.get(key);
@@ -394,7 +407,7 @@
     const research = Promise.resolve().then(() => discover({
       roll, catalog, seen: seenIds(), focus: roll.focus || '', strictGPT:true, storyKind,
       onDeep: story => {
-        if (!storyValid(story) || !window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story) || seenIds().has(story.id)) return;
+        if (!sourcedCard(story) || seenIds().has(story.id)) return;
         byId.set(story.id, story);
         cacheLive(story);
         if (typeof onDeep === 'function') onDeep(story);
@@ -404,7 +417,7 @@
     const expired = new Promise(resolve => { deadline = setTimeout(() => resolve(null), RESEARCH_DEADLINE_MS); });
     const flight = Promise.race([research, expired])
       .then(story => {
-        if (!storyValid(story) || !window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story) || seenIds().has(story.id)) return null;
+        if (!sourcedCard(story) || seenIds().has(story.id)) return null;
         byId.set(story.id, story);
         cacheLive(story);
         return story;
@@ -444,7 +457,10 @@
       if(queued){spinSubmitted=true;note('Sourced research attached to your 1 StarCoin spin receipt. Cloud wallet credit submitted for confirmation.')}else note('Research is shown, but the StarCoin credit could not be queued; check the wallet connection.');
     };
     // No catalog film or encyclopedia excerpt is shown instead of a GPT narrative.
-    const ready = requireFresh?null:pickUnique(roll, seenIds());
+    // Readers get a real sourced story immediately whenever an unused verified
+    // item exists. The Cloudflare writer can replace it with a new original.
+    // Search-specific Asteroids do not substitute an unrelated catalog article.
+    const ready = searchMode ? null : pickUnique(roll, seenIds());
     if(requireFresh){
       current=null;interactedWithStory=false;
       const card=root.querySelector('.ib-story');card.hidden=false;card.dataset.ready='false';delete card.dataset.storyId;
@@ -457,29 +473,31 @@
     // if source-backed discovery verifies a more relevant event for that search.
     if (ready) {
       present(ready, roll);
-      if(!spinSubmitted)note(roll?.bracketKey ? 'Ready · '+roll.indexWord+' · '+roll.refinement+' · '+roll.storyDirection : 'Ready · source-backed story');
+      if(!spinSubmitted)note('Reading a verified archived story while Oracle researches the next original. Source and attribution are available in the full story.');
     } else {
       note((root.dataset.context==='home'?'Reads & Realms · researching ':'ASTEROID · researching ')+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery')+' from real sources for Cloudflare AI to write. The card appears only when evidence supports the story…');
     }
     const acceptNew = story => {
       // Do not replace a visible story on an unsuspecting reader.
       if (ticket !== activeStoryTicket || interactedWithStory ||
-        !storyValid(story) || seenIds().has(story.id) || current?.id === story.id) return;
-      if (ready && (!query || current?.id !== ready.id)) return;
+        !sourcedCard(story) || seenIds().has(story.id) || current?.id === story.id) return;
+      if (ready && current?.id !== ready.id) return;
       present(story, roll);
-      if(!spinSubmitted)note(story.discoveryMethod === 'gpt-deep'
-        ? 'New sourced historical story · original Cloudflare AI narrative'
-        : 'New historical discovery · cited source');
+      if(!spinSubmitted)note(story.discoveryMethod === 'encyclopedia-backup'
+        ? 'Cited Wikipedia source excerpt · original AI story could not finish. This is not GPT-written prose.'
+        : story.discoveryMethod === 'gpt-deep'
+          ? 'New sourced historical story · original Cloudflare AI narrative'
+          : 'New historical discovery · original GPT research with cited source');
     };
     void discoverInBackground(roll, acceptNew, storyKind)
       .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.dataset.ready!=='true'){
         root.removeAttribute('aria-busy');
         const status=window.PhiInfiniteBookResearchStatus;
         const busy=status==='provider-busy'||status==='ai-unavailable';
-        root.querySelector('.ib-title').textContent=busy?'Cloudflare AI temporarily unavailable':'Story unavailable';
+        root.querySelector('.ib-title').textContent=busy?'Cloudflare AI temporarily unavailable':'Source research incomplete';
         root.querySelector('.ib-summary').textContent=busy
-          ? 'Cloudflare could not finish this request. No old story was substituted; use Another story to retry.'
-          : 'No evidence-supported new story was completed for this topic. Try another research angle.';
+          ? 'The AI writer could not finish the new story. Try Another story to retry; a sourced excerpt may appear when available.'
+          : 'No verified original narrative was completed for this topic. Try a more specific subject or another research angle.';
         note((root.dataset.context==='home'?'Reads & Realms':'Asteroid')+(busy?' · Cloudflare AI service could not complete this request.':' · Complete sourced story not yet available.'));
       }})
       .catch(error=>{console.warn(storyKind+' research unavailable',error);if(ticket===activeStoryTicket){root.removeAttribute('aria-busy');root.querySelector('.ib-summary').textContent='Research was interrupted. Try another search; no unsupported story was created.';note('Cloudflare AI could not complete sourced writing for this topic.')}});
@@ -597,7 +615,7 @@
     if(!catalog)return;
     placeHomeStory();
     // The opener uses the same live writer as search stories, without an asteroid.
-    void nextStory('',{requireFresh:true});
+    void nextStory('',{requireFresh:false});
   }
   window.addEventListener('quantaphi:new-search',()=>{
     ++activeStoryTicket;
