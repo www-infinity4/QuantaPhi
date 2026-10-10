@@ -81,7 +81,7 @@ export class BrainClock extends DurableObject{
      if(repositoryLease?.leaseUntil>Date.now())continue;
      if(previous?.adapterVersion===VERSION&&previous?.leaseUntil>Date.now()||previous?.status==='deployed_verified'||previous?.retryAt>Date.now())continue;
      const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+(engine?40:20)*60*1000,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
-     lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request};
+     lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null};
      await this.ctx.storage.put(key,lease);
      await this.ctx.storage.put('repository-lease:'+job.repository,lease);
      await this.emit('greenbeans','pink-panther','writer claimed','Authenticated repository runner claimed '+ticket.id+'/'+job.id+'. It will inspect its credential, target repository and acceptance adapters before any write.',runUrl);
@@ -154,7 +154,13 @@ export class BrainClock extends DurableObject{
    if(body.status==='deployed_verified'&&((await this.ctx.storage.get('review:'+lease.key))?.leaseId!==lease.leaseId||body.browserPassed!==true||body.deployedFilesMatched!==true||body.reviewApproved!==true))throw Error('browser_and_review_receipt_required');
    }
   }
-  const receipt={...lease,status:body.status,leaseUntil:0,retryAt:body.status==='blocked'?Date.now()+30*60*1000:Date.now()+5*60*1000,when:new Date().toISOString(),commitSha:body.commitSha||null,testsPassed:body.testsPassed===true,browserPassed:body.browserPassed===true,summary:message,runUrl};
+  let repairFeedback=null;
+  if(engine&&body.status==='blocked'&&body.repairFeedback){
+   const f=body.repairFeedback;
+   if(!['build','review','test','arbitration'].includes(f.stage)||!/^([a-f0-9]{40})$/.test(f.baseSha||'')||typeof f.reason!=='string'||f.reason.length>9000||JSON.stringify(f).length>30000)throw Error('repair_feedback_schema_rejected');
+   repairFeedback={baseSha:f.baseSha,stage:f.stage,reason:f.reason,tests:f.tests||null};
+  }
+  const receipt={...lease,repairFeedback,status:body.status,leaseUntil:0,retryAt:body.status==='blocked'?Date.now()+30*60*1000:Date.now()+5*60*1000,when:new Date().toISOString(),commitSha:body.commitSha||null,testsPassed:body.testsPassed===true,browserPassed:body.browserPassed===true,summary:message,runUrl};
   await this.ctx.storage.put(lease.key,receipt);
   await this.ctx.storage.put('repository-lease:'+lease.repository,{...receipt,leaseUntil:0});
   const fresh=await this.env.WORK_DB.prepare('SELECT context_json FROM work_tickets WHERE id=?').bind(lease.ticketId).first();
