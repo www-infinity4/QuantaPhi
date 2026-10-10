@@ -6,6 +6,10 @@ on:
       - 'quanta-agent-iterations.js'
       - 'quanta-agent-iterations.css'
       - 'index.html'
+      - 'robot-directions.js'
+      - 'workers/infinity-brain-clock/**'
+      - 'workers/infinity-rogers/brain-models.js'
+      - 'test/brain-clock.test.mjs'
       - 'test/agent-iteration-card.test.cjs'
       - '.github/workflows/moltnook-card.yml'
   workflow_dispatch:
@@ -22,6 +26,8 @@ jobs:
       - name: Test the embedded agent card
         run: |
           node --check quanta-agent-iterations.js
+          node --check robot-directions.js
+          node --test test/brain-clock.test.mjs
           node --test test/agent-iteration-card.test.cjs
       - name: Verify Moltnook public activity source is genuine and valid
         run: |
