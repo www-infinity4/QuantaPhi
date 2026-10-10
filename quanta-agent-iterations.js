@@ -27,10 +27,16 @@
   wallet:{label:'Wallets and rewards',agent:'blueberry',skill:'StarCoin receipt auditor',detail:'Compare authenticated ledger receipts, masked account identity and duplicate-proof payouts.',tokens:/\b(wallet|starcoin|star coin|quants?|ledger|token|reward|payout|collect|share|mint)\w*\b/i},
   builder:{label:'Websites and code',agent:'greenbeans',skill:'Build-and-preview repair runner',detail:'Check actual repositories, failing CI, interface build iterations and published page results.',tokens:/\b(code|build|website|widget|program|worker|cloudflare|github|api|deploy|agent|script)\w*\b/i}
  };
+ const WORKFLOWS={
+   'stories>visuals':{label:'Write a story → generate its illustration',agent:'greenbeans',skill:'One-click illustrated Story Writer',detail:'Connect the final story scene, image prompt, artwork, and saved card without entering the topic twice.'},
+   'chemistry>visuals':{label:'Research an element → illustrate it',agent:'blueberry',skill:'Chemistry image research studio',detail:'Carry verified element identity, accurate molecular or crystal data, and source context into image creation.'},
+   'markets>builder':{label:'Research a market → build a page',agent:'naked-gold-digger',skill:'Research-to-website evidence composer',detail:'Transfer named source comparisons into builder cards with links, dates and citations.'},
+   'builder>wallet':{label:'Build a site → check wallet credit',agent:'pink-panther',skill:'End-to-end build reward verifier',detail:'Trace site construction, search tokens and StarCoin reward references through authoritative ledgers.'}
+ };
  const STORE='quantaphi:agent-learning-local:v1';
  const read=()=>{try{const x=JSON.parse(localStorage.getItem(STORE)||'{}');return x&&typeof x==='object'?x:{}}catch{return {}}};
  let local=read();
- const defaultData=()=>({enabled:true,counts:{},lastSeen:{},total:0});
+ const defaultData=()=>({enabled:true,counts:{},lastSeen:{},flows:{},lastCategory:'',lastCategoryAt:0,total:0});
  if(!local||typeof local.enabled!=='boolean')local=defaultData();
  const save=()=>{try{localStorage.setItem(STORE,JSON.stringify(local))}catch{}};
  const safeUrl=value=>{try{const url=new URL(value);return url.protocol==='https:'&&url.hostname==='github.com'?url.href:''}catch{return ''}};
@@ -90,6 +96,17 @@
   if(!trends.length){slot.append(ui('p','qai-muted',local.enabled===false?
      'Learning is off. Turn it on to detect useful skill categories.':
      'Search for topics or use Image Builder, Story Writer, and other QuantaPhi tools. Skill suggestions will appear from those actions.'));return}
+  const repeatedFlows=Object.entries(local.flows||{}).filter(([key,count])=>WORKFLOWS[key]&&Number(count)>=2).sort((a,b)=>b[1]-a[1]).slice(0,2);
+  for(const [flowId,n] of repeatedFlows){
+    const plan=WORKFLOWS[flowId],section=ui('article','qai-skill');
+    section.append(ui('strong','','Learned workflow: '+plan.label),ui('small','','Sequence detected '+n+' times · '+role(plan.agent)[0]));
+    section.append(ui('p','',plan.detail));
+    const title='[Agent Job] '+plan.skill+' for QuantaPhi';
+    const body='Repeated task-pattern proposal.\\nWorkflow: '+plan.label+'\\nAcceptance: '+plan.detail+'\\nRead project READMEs and build a reusable integration with verified tests.';
+    const anchor=ui('a','','Open combined-skill job ↗');
+    anchor.href='https://github.com/www-infinity4/Oracle-Octaves/issues/new?title='+encodeURIComponent(title)+'&body='+encodeURIComponent(body);
+    anchor.rel='noopener noreferrer';anchor.target='_blank';section.append(anchor);slot.append(section);
+  }
   for(const [category,n] of trends){
     const info=PROFILES[category],section=ui('article','qai-skill');
     section.append(ui('strong','',info.skill),ui('small','',info.label+' · '+n+' matching actions · '+role(info.agent)[0]));
@@ -160,6 +177,13 @@
   const id=selected.join('|')+':'+raw.slice(0,100);
   if(id===lastSignal&&Date.now()-lastAt<3500)return;
   lastSignal=id;lastAt=Date.now();
+  // Learn repeated sequences without retaining words, URLs or identities.
+  const step=selected[0],pair=String(local.lastCategory||'')+'>'+step;
+  if(WORKFLOWS[pair]&&Date.now()-Number(local.lastCategoryAt||0)<30*60000){
+    if(!local.flows||typeof local.flows!=='object')local.flows={};
+    local.flows[pair]=Math.min(9999,(Number(local.flows[pair])||0)+1);
+  }
+  local.lastCategory=step;local.lastCategoryAt=Date.now();
   for(const key of selected){
     local.counts[key]=Math.min(9999,Math.max(0,Number(local.counts[key])||0)+1);
     local.lastSeen[key]=Date.now();
