@@ -34,13 +34,14 @@ function compactResearch(item){
  return research.title.length>=12&&research.full.length>=150&&sources.length>0?research:undefined;
 }
 function record(kind,reference,card){
- if(!['collect','share','spin'].includes(kind))return false;
+ if(!['collect','share','star','build_image','fix_image','extract','compare','spin'].includes(kind))return false;
  const research=kind==='spin'?compactResearch(card):undefined;
  if(kind==='spin'&&!research)return false;
  const ref=String(reference||'').trim().slice(0,700);if(!ref)return false;
  const reference_id='quantaphi:'+kind+':'+ref,items=read();
  if(!items.some(x=>x.reference_id===reference_id)){
-  items.push({reference_id,kind,reference:ref,created_at:new Date().toISOString(),...(kind==='collect'&&compactCard(card)?{card:compactCard(card)}:{}),...(kind==='spin'?{research}:{})});
+  let data;try{data=JSON.parse(JSON.stringify(card||{}));if(JSON.stringify(data).length>100000)return false}catch{return false}
+  items.push({reference_id,kind,reference:ref,data,created_at:new Date().toISOString(),...(kind==='collect'&&compactCard(card)?{card:compactCard(card)}:{}),...(kind==='spin'?{research}:{})});
   save(items);
  }
  void flush();

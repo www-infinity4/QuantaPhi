@@ -59,7 +59,7 @@ test('earlier browser-only QuantaPhi credits are backfilled once per account',()
 test('Collect and Share buttons credit through Control Phi and record to the Cloudflare ledger',()=>{
  const html=fs.readFileSync('index.html','utf8');
  assert.match(html,/<script src="star-coin-cloud\.js\?v=[^"]+"><\/script>/);
- assert.match(html,/cp\.ensureActionCredit\(ref,'collect'\)/);
+ assert.match(html,/cp\.ensureActionCredit\(ref,kind\)/);
  assert.match(html,/QuantaStarCoinCloud\?\.record\(kind,ref,card\)/);
  assert.match(html,/QuantaStarCredit\?\.\('collect',key,existing\)/);
  assert.equal((html.match(/QuantaStarCredit\?\.\('share',/g)||[]).length,3);
@@ -84,4 +84,24 @@ test('backfill waits for a signed-in account record instead of marking it done e
  assert.equal(cloud.backfill(),0);assert.equal(values.has('quantaPhi:starCoinCloudBackfill:v1:kris'),false);
  values.set('starquest_users',JSON.stringify({kris:{ledger:[{referenceId:'quantaphi:share:page:9',createdAt:1}]}}));
  assert.equal(cloud.backfill(),1);
+});
+
+test('all completed research actions pay one tenth with exact data and harmless retries',async()=>{
+ const {sqlite,call}=await ledger();
+ const kinds=['star','build_image','fix_image','extract','compare'];
+ const credits=kinds.map(kind=>({kind,reference_id:'quantaphi:'+kind+':exact-quant',reference:'exact-quant',data:{quantId:'q-44',terms:['ruthenium','iron'],output:{text:'Exact comparison',source:'https://example.org/evidence'}}}));
+ let response=await call('POST',{credits});assert.equal(response.status,201);
+ assert.equal((await response.json()).credits_tenths,5);
+ response=await call('POST',{credits});const state=await response.json();assert.equal(state.credits_tenths,5);
+ assert.equal(state.history.length,5);assert.deepEqual(state.history[0].data,credits[0].data);
+ assert.equal(sqlite.prepare('SELECT COUNT(*) AS n FROM quanta_action_catalog').get().n,5);
+ const bad=await call('POST',{credits:[{kind:'star',reference_id:'quantaphi:star:empty'}]});assert.equal(bad.status,400);
+});
+test('share receipts retain exact story and source data through the offline outbox',()=>{
+ const {cloud}=browser({hasCredential:()=>false,authenticatedFetch(){throw Error('offline')}});
+ const data={quantId:'q-44',story:'Full original story',sources:[{url:'https://example.org/evidence'}],selected:['ruthenium']};
+ assert.equal(cloud.record('share','story-44',data),true);
+ assert.deepEqual(JSON.parse(JSON.stringify(cloud.pending()[0].data)),data);
+ assert.equal(cloud.record('star','story-44',data),true);
+ assert.equal(cloud.pending().length,2);
 });

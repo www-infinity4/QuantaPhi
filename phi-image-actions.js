@@ -13,9 +13,10 @@ function star(artifact){
  const next=exists?saved.filter(x=>x.id!==artifact.id):[...saved,{id:artifact.id,mode:artifact.mode,prompt:artifact.prompt,story:artifact.story,search:artifact.search,createdAt:artifact.createdAt}].slice(-500);
  if(!save(starsKey,next)){message('Could not save this design preference on this device.');return}
  const b=host.querySelector('[data-pi-action="star"]');if(b)b.textContent=exists?'☆ Star':'★ Starred';
+ if(!exists)window.QuantaStarCredit?.('star',artifact.id,artifact);
  window.PhiImageLearning?.record(artifact,exists?'star_off':'star');
  window.dispatchEvent(new CustomEvent('phi:image:star',{detail:{...artifact,starred:!exists}}));
- message(exists?'Removed from design preferences.':'Starred! This design is saved as an inspiration for more like this. Star does not pay StarCoin.');
+ message(exists?'Removed from design preferences.':'Starred! This design is saved as an inspiration for more like this. StarCoin receipt submitted.');
 }
 async function blobOf(src){
  const b=await window.PhiVisualRender.asBlob(src);

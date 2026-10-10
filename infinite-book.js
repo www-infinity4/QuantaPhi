@@ -510,6 +510,7 @@
     safeWrite(STAR_KEY, Array.from(favorites));
     root.querySelector('[data-book-action="star"]').textContent = favorites.has(current.id) ? '★ Starred' : '☆ Star';
     const starred=favorites.has(current.id);
+    if(starred)window.QuantaStarCredit?.('star','infinite-book:'+current.id,current);
     window.PhiAssimilation?.signal?.({kind:'story',action:starred?'star':'unstar',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)});
     window.dispatchEvent(new CustomEvent('phi:story:star',{detail:{id:current.id,sector:current.sector,title:current.title,starred}}));
     note(starred ? 'Starred. This subject now influences future discoveries and can be used as a build seed.' : 'Removed from favorites');

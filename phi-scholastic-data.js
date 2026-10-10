@@ -143,10 +143,11 @@ async function extract(snapshot){
   extractedAt:new Date().toISOString()}));
  try{
   await saveToCurrent(snapshot.tokenId,entries,null);
+  window.QuantaStarCredit?.('extract',snapshot.tokenId+':'+JSON.stringify(terms),{quantId:snapshot.tokenId,query:snapshot.query,entries});
   if(active!==snapshot)return;
   window.PhiAssimilation?.signal?.({kind:'data',action:'click',query:snapshot.query,title:'Extracted research',terms:terms.join(' + ')});
   await window.PhiAssimilation?.ingest?.({query:snapshot.query,tokenId:snapshot.tokenId,entries,comparison:null});
-  show('extract','Extracted into this Quant',terms.length+' item'+(terms.length===1?'':'s')+' saved with available source references and sent into Assimilation. No new Quants or StarCoins were minted.',byTerm);
+  show('extract','Extracted into this Quant',terms.length+' item'+(terms.length===1?'':'s')+' saved with available source references and sent into Assimilation. StarCoin action receipt submitted.',byTerm);
   status(terms.length+' extracted · linked to the active Quant research record');
  }catch(err){if(active===snapshot)status('Extraction could not be saved: '+clean(err.message))}
 }
@@ -192,6 +193,7 @@ async function compare(snapshot){
   status:verified?'AI synthesis from retrieved source snippets':'source evidence only · GPT unavailable',createdAt:new Date().toISOString()};
  try{
   await saveToCurrent(snapshot.tokenId,[],comparison);
+  if(verified)window.QuantaStarCredit?.('compare',snapshot.tokenId+':'+comparison.createdAt,{quantId:snapshot.tokenId,comparison});
   if(active!==snapshot)return;
   snapshot.lastComparison=comparison;
   await window.PhiAssimilation?.ingest?.({query:snapshot.query,tokenId:snapshot.tokenId,entries:[],comparison});

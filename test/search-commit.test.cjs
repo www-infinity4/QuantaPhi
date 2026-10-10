@@ -1,4 +1,5 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),{DatabaseSync}=require('node:sqlite');
+const path=require('node:path');
 const source=fs.readFileSync('workers/quanta-phi-ledger/worker.js','utf8');
 function fixture(){
  const sqlite=new DatabaseSync(':memory:');sqlite.exec(fs.readFileSync('quant-transfer-schema.sql','utf8'));

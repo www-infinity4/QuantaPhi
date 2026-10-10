@@ -28,6 +28,7 @@
     stars[key] = !stars[key]; write(STAR_KEY, stars);
     const button = card.querySelector('[data-phi-stock-action="star"]');
     if (button) button.setAttribute('aria-pressed', stars[key] ? 'true' : 'false');
+    if(stars[key])global.QuantaStarCredit?.('star','stock:'+key,item);
     emit('infinity:stock:star', { item, starred: !!stars[key] });
     return !!stars[key];
   }

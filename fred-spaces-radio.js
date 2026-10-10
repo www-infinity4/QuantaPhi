@@ -115,13 +115,13 @@
     const url=new URL(location.href);url.hash="fredSpacesRadio";url.searchParams.set("fredSpace",active.id);
     const data={title:active.title+" — Fred Krueger Space",text:active.title,url:url.href};
     const completed=navigator.share?navigator.share(data):navigator.clipboard?.writeText?.(url.href)||Promise.reject(new Error("No share mechanism"));
-    Promise.resolve(completed).then(()=>{window.QuantaStarCredit?.("share","fred-space:"+active.id+":"+Date.now());note("Shared +0.1 StarCoin.");}).catch(()=>note("Share canceled; no StarCoin awarded."));
+    Promise.resolve(completed).then(()=>{window.QuantaStarCredit?.("share","fred-space:"+active.id+":"+Date.now(),active);note("Shared +0.1 StarCoin.");}).catch(()=>note("Share canceled; no StarCoin awarded."));
   }
   function collect(){
     try{window.QuantaStarCredit?.("collect","fred-space:"+active.id,{key:"fred-space|"+active.id,type:"fred-space",title:active.title,story:active.description,media:"",sourceUrl:active.source});note("Collected to Phi. Collect rewards follow the existing StarCoin rules.");}
     catch{note("Collect is temporarily unavailable.");}
   }
-  function favorite(){stars.has(active.id)?stars.delete(active.id):stars.add(active.id);save(starsKey,[...stars]);note(stars.has(active.id)?"Starred for future matching.":"Removed from favorites.");}
+  function favorite(){const episode=active;stars.has(active.id)?stars.delete(active.id):stars.add(active.id);save(starsKey,[...stars]);if(stars.has(episode.id))window.QuantaStarCredit?.('star','fred-space:'+episode.id,episode);note(stars.has(active.id)?"Starred for future matching.":"Removed from favorites.");}
   function build(tool){
     const paths={InfinityPhi:"/InfinityPhi/",OmniPhi:"/OmniPhi/overview/",QuantaPhi:"/"};
     const u=new URL(paths[tool],location.origin);

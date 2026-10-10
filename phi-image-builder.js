@@ -150,6 +150,7 @@ async function build({retryRender=false}={}){
   }
   artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search,autoRefined};
   artifact.review=review;
+  window.QuantaStarCredit?.(description.includes("Refine the CURRENT rendered image")?"fix_image":"build_image",artifact.id,artifact);
   if(review)window.PhiImageLearning?.record(artifact,'review',{issues:review.issues});
   const audit=$('.pi-audit'),title=audit.querySelector('.pi-audit-title'),summary=audit.querySelector('.pi-audit-summary'),issues=audit.querySelector('.pi-audit-issues');
   issues.replaceChildren();
