@@ -7,6 +7,7 @@ on:
       - 'index.html'
       - 'test/starcoin-payout-connection.test.cjs'
       - 'test/starcoin-wallet-modal-sync.test.cjs'
+      - 'tests/story-writer-wallet.test.cjs'
       - 'test/reads-realms-starcoin-settlement.test.cjs'
       - 'star-coin-cloud.js'
       - 'infinite-book.js'
@@ -26,4 +27,4 @@ jobs:
       - name: Parse live wallet script
         run: node --check wallet-runtime.js
       - name: Verify Collect Star and Share settle with StarQuest
-        run: node --test test/starcoin-payout-connection.test.cjs test/reads-realms-starcoin-settlement.test.cjs test/starcoin-wallet-modal-sync.test.cjs
+        run: node --test test/starcoin-payout-connection.test.cjs test/reads-realms-starcoin-settlement.test.cjs test/starcoin-wallet-modal-sync.test.cjs tests/story-writer-wallet.test.cjs
