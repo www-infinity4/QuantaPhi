@@ -407,16 +407,19 @@ function cleanMediaTitle(title,query){let t=String(title||'').replace(/\bfile\s*
 function extractionPermalink(query){const u=new URL(searchPermalink(query));if(window.__qActiveTokenId)u.searchParams.set('from',window.__qActiveTokenId);return u.toString()}
 function searchPermalink(query){const u=new URL(location.href);u.searchParams.set('q',String(query||'').trim());u.searchParams.delete('from');u.hash='result';return u.toString()}
 function quantaShareUrl({title='',description='',q='',image='',dest='',kind='research'}={}){
- const u=new URL('/q-share',location.origin);
+ // Social URLs carry an indexed search seed, not the complete article,
+ // media asset URL, nested destination, or OG copy.
  const clean=(value,max)=>String(value||'').replace(/\s+/g,' ').trim().slice(0,max);
- const query=clean(q||document.getElementById('q')?.value||'',320);
- if(query)u.searchParams.set('q',query);
- u.searchParams.set('title',clean(title||query||'QuantaPhi',160));
- if(description)u.searchParams.set('text',clean(description,450));
- const picture=clean(image,1600);
- if(/^https:\/\//i.test(picture)&&/\.(?:png|jpe?g|webp|gif)(?:[?#]|$)/i.test(picture))u.searchParams.set('image',picture);
- if(dest){try{const d=new URL(dest,location.origin);if(d.origin===location.origin)u.searchParams.set('dest',d.pathname+d.search+d.hash)}catch(_){}}
- u.searchParams.set('kind',clean(kind,30));
+ const topic=clean(q||title||document.getElementById('q')?.value||'',100);
+ if(dest){
+   try{
+     const d=new URL(dest,location.origin);
+     if(d.origin===location.origin && d.href.length<=190 &&
+       !/[?&](?:storyDetail|storySummary|bookSummary|cardBody|text)=/i.test(d.search))return d.href;
+   }catch(_){}
+ }
+ const u=new URL('/infinity-phi/',location.origin);
+ if(topic)u.searchParams.set('q',topic);
  return u.href;
 }
 function mediaCard(x,type){const img=x.img_src||x.thumbnail_src||x.thumbnail||'',title=cleanMediaTitle(x.title,document.getElementById('q')?.value||'Explore'),url=x.url||location.href,desc=String(x.content||x.description||'').replace(/\s+/g,' ').trim().slice(0,1200);if(String(type).toLowerCase()==='video'){const candidates=[x.video,x.video_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),video=candidates.find(v=>/\.(mp4|mpeg|mpg|webm|ogv|m4v)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard videoCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(video)+'" data-archive-id="'+esc(x.archive_id||'')+'" data-archive-metadata="'+esc(x.archive_metadata||'')+'"><div class="videoVisual">'+(video?'<video controls playsinline webkit-playsinline preload="metadata" poster="'+esc(img)+'" src="'+esc(video)+'"></video>':(img?'<img loading="lazy" src="'+esc(img)+'" alt="'+esc(title)+'">':''))+'</div><div class="videoBody"><small>VIDEO</small><h3>'+esc(title)+'</h3><p>Collect or share to research this video story.</p><div class="videoActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardUncollect" type="button" hidden>Uncollect</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='image'){return '<article class="mcard imageCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(img)+'" data-source-snippet="'+esc(desc)+'"><div class="imageVisual">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<span class="imageBadge">IMAGE</span></div><div class="imageBody"><h3 class="imageStoryTitle">Researching this image…</h3><p>Researching the story behind this image…</p><div class="imageActions">'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">View source</a>':'')+'<button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardUncollect" type="button" hidden>Uncollect</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'" data-image="'+esc(img)+'">Share image +0.1 ★</button></div></div></article>'}if(String(type).toLowerCase()==='sound'){const candidates=[x.audio,x.audio_url,x.media_url,x.enclosure,x.content_url].filter(Boolean),audio=candidates.find(v=>/\.(mp3|m4a|ogg|oga|wav|flac)(\?|#|$)/i.test(String(v)))||candidates[0]||'';return '<article class="mcard soundCard" data-source-title="'+esc(title)+'" data-source-url="'+esc(url)+'" data-media-src="'+esc(audio)+'" data-archive-id="'+esc(x.archive_id||'')+'" data-archive-metadata="'+esc(x.archive_metadata||'')+'"><div class="soundVisual">♫</div><div class="soundBody"><small>SOUND</small><h3>'+esc(title)+'</h3><p>Collect or share to research this sound story.</p>'+(audio?'<audio controls preload="metadata" src="'+esc(audio)+'"></audio>':'')+'<div class="soundActions"><button class="cardCollect" type="button">Collect +0.1 ★</button><button class="cardUncollect" type="button" hidden>Uncollect</button><button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></div></div></article>'}return '<article class="mcard">'+(img?'<img loading="lazy" src="'+esc(img)+'" alt="">':'')+'<small>'+esc(type)+'</small><h3>'+esc(title)+'</h3><p>'+esc(desc)+'</p>'+(x.url?'<a target="_blank" rel="noopener" href="'+esc(x.url)+'">Open source</a>':'')+'<button class="cardShare" type="button" data-title="'+esc(title)+'" data-url="'+esc(url)+'">Share +0.1 ★</button></article>'}
@@ -1078,7 +1081,8 @@ $('#go').onclick=search;
   }
   const story=String(card?.querySelector('p')?.textContent||'').trim();
   const heading=cleanMediaTitle(card?.querySelector('h3')?.textContent||card?.dataset.sourceTitle||'',q);
-  const shareText=(story&& !/^Researching|^Building researched|^Collect or share/i.test(story))?story:heading;
+  const fullText=(story&& !/^Researching|^Building researched|^Collect or share/i.test(story))?story:heading;
+  const shareText=String(fullText).replace(/\s+/g,' ').slice(0,155).replace(/\s+\S*$/,'')+(String(fullText).length>155?'… Read it on Infinity Phi.':' · Explore with Infinity Phi.');
   const imageUrl=b.dataset.image||card?.querySelector('img')?.currentSrc||card?.querySelector('img')?.src||'';
   const returnUrl=quantaShareUrl({title:heading,description:shareText,q,image:imageUrl,kind:'media'});
   let shared=false;
@@ -1310,7 +1314,7 @@ $('#go').onclick=search;
   }catch(err){console.error('Playable video feed failed',err);grid.innerHTML='<p class="err">Playable Internet Archive video feed could not load.</p>'}
  }
  document.getElementById('qVideoBtn')?.addEventListener('click',e=>{e.stopImmediatePropagation();archiveVideoFeed()},true);
- document.getElementById('overviewShare')?.addEventListener('click',async()=>{const b=document.getElementById('overviewShare'),q=document.getElementById('q')?.value.trim()||'QuantaPhi',text=document.getElementById('overview')?.innerText.trim()||'';if(!text)return;try{if(navigator.share)await navigator.share({title:q+' — QuantaPhi AI Overview',text,url:quantaShareUrl({title:q+' — QuantaPhi AI Overview',description:text,q,kind:'overview'})});else await navigator.clipboard?.writeText(q+'\n\n'+text+'\n\n'+quantaShareUrl({title:q+' — QuantaPhi AI Overview',description:text,q,kind:'overview'}));try{window.QuantaStarCredit?.('share','overview:'+q+':'+Date.now()+':'+Math.random().toString(36).slice(2,7))}catch(_){}b.textContent='Shared ✓ +0.1 ★';setTimeout(()=>b.textContent='Share AI Overview +0.1 ★',1800)}catch(_){b.textContent='Share AI Overview +0.1 ★'}});
+ document.getElementById('overviewShare')?.addEventListener('click',async()=>{const b=document.getElementById('overviewShare'),q=document.getElementById('q')?.value.trim()||'QuantaPhi',text=document.getElementById('overview')?.innerText.trim()||'';if(!text)return;try{if(navigator.share)await navigator.share({title:q+' — QuantaPhi AI Overview',text:text.replace(/\s+/g,' ').slice(0,155)+'… Read the full overview on Infinity Phi.',url:quantaShareUrl({title:q+' — QuantaPhi AI Overview',description:text,q,kind:'overview'})});else await navigator.clipboard?.writeText(q+'\n\n'+text.replace(/\s+/g,' ').slice(0,155)+'… Read on Infinity Phi.\n\n'+quantaShareUrl({title:q+' — QuantaPhi AI Overview',description:text,q,kind:'overview'}));try{window.QuantaStarCredit?.('share','overview:'+q+':'+Date.now()+':'+Math.random().toString(36).slice(2,7))}catch(_){}b.textContent='Shared ✓ +0.1 ★';setTimeout(()=>b.textContent='Share AI Overview +0.1 ★',1800)}catch(_){b.textContent='Share AI Overview +0.1 ★'}});
  document.addEventListener('click',async e=>{
   const b=e.target.closest('.cardCollect');if(b)monitorActed('collect');if(!b)return;
   e.preventDefault();e.stopPropagation();
