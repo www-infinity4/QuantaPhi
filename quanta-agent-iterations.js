@@ -110,6 +110,8 @@
   $('#qai-updated').textContent=generated?'Checked '+deltaTime(generated):'No verified feed yet';
   $('#qai-updated').dataset.stale=String(!generated||Date.now()-Date.parse(generated)>45*60000);
   renderTicker();renderJobs();renderLearning();
+  const latest=events.find(x=>safeUrl(x.url));
+  $('#qai-last-event').textContent=latest?'Latest: '+role(latest.agent)[0]+' → '+role(latest.to)[0]+' · '+String(latest.message).slice(0,175):'No verified agent work is available yet.';
   const evidence=$('#qai-source');evidence.href=safeUrl(data?.runUrl)||source;
   const stream=$('#qai-events');stream.replaceChildren();
   const verified=events.filter(x=>safeUrl(x.url)).slice(0,7);
@@ -124,8 +126,19 @@
    if(!res.ok)throw Error('HTTP '+res.status);
    const payload=await res.json();
    if(payload.schemaVersion!==2||!Array.isArray(payload.jobs)||!Array.isArray(payload.messages))throw Error('Invalid source format');
-   data=payload;events=payload.messages.filter(x=>x&&typeof x.message==='string'&&safeUrl(x.url))
-      .sort((a,b)=>Date.parse(b.when||'')-Date.parse(a.when||''));
+   let repair=null;
+   try{
+    const check=await fetch(BASE+'activity/repair-report.json?fresh='+Date.now(),{cache:'no-store'});
+    if(check.ok)repair=await check.json();
+   }catch(_){/* Optional report never blocks the main task feed. */}
+   data=payload;events=payload.messages.filter(x=>x&&typeof x.message==='string'&&safeUrl(x.url));
+   if(repair?.schemaVersion===1&&repair?.runId&&Array.isArray(repair.unresolved)){
+    events.push({id:'repair-'+repair.runId,agent:'greenbeans',to:'pink-panther',project:'Moltnook',
+      kind:'repository maintenance',phase:'Verified repair scan',when:repair.when,
+      url:'https://github.com/www-infinity4/Moltnook/actions/runs/'+encodeURIComponent(repair.runId),
+      message:'Scanned '+repair.scannedHtml+' HTML pages and recorded '+repair.applied+' safe fixes, with '+repair.unresolved.length+' unresolved references. See test and commit evidence.'});
+   }
+   events.sort((a,b)=>Date.parse(b.when||'')-Date.parse(a.when||''));
    $('#qai-connection').textContent='Verified source feed';
    render();
   }catch(error){
