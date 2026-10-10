@@ -75,7 +75,8 @@ function publish(state){
 async function flush(){
  const connection=global.QuantaCloudConnection;
  if(running||!connection?.authenticatedFetch)return {ok:false,pending:read().length};
- if(typeof connection.hasCredential==='function'&&!connection.hasCredential())return {ok:false,pending:read().length,reason:'ledger_not_connected'};
+ // Do not block recoverable wallet identities here. authenticatedFetch
+ // resolves enrolled tokens even when multiple old device records exist.
  running=true;
  try{
   for(let pending=read();pending.length;pending=read()){
@@ -93,6 +94,22 @@ async function flush(){
   return {ok:true,pending:read().length};
  }catch(error){console.warn('Star Coin credits retained for Cloudflare retry',error);return {ok:false,pending:read().length}}
  finally{running=false}
+}
+let reconciling=false;
+async function reconcile(){
+ const connection=global.QuantaCloudConnection;
+ if(reconciling||!connection?.authenticatedFetch)return{ok:false,reason:'wallet_not_connected'};
+ reconciling=true;
+ try{
+  const response=await connection.authenticatedFetch(API+'/reconcile',{method:'POST',body:{}});
+  const result=await response.json().catch(()=>({}));
+  if(!response.ok||!result.ok)throw Error(result.error||('StarQuest reconcile HTTP '+response.status));
+  publish(result);
+  return{ok:true,checked:result.checked||0,credited:result.credited||0,alreadyPaid:result.alreadyPaid||0};
+ }catch(error){
+  console.warn('Recorded StarCoin payouts retained for authenticated reconciliation',error);
+  return{ok:false,reason:String(error?.message||error)};
+ }finally{reconciling=false}
 }
 async function state(){
  const r=await global.QuantaCloudConnection.authenticatedFetch(API,{method:'GET'});
@@ -124,10 +141,24 @@ function backfill(){
   return added;
  }catch(error){console.warn('Star Coin backfill deferred',error);return 0}
 }
-const kick=()=>{backfill();void flush().finally(()=>{const connection=global.QuantaCloudConnection;if(connection?.authenticatedFetch&&(!connection.hasCredential||connection.hasCredential()))void state().catch(error=>console.warn('Star Coin state refresh deferred',error))})};
+let kickRunning=false;
+const kick=()=>{
+ backfill();
+ if(kickRunning)return;
+ kickRunning=true;
+ void (async()=>{
+  try{
+   await flush();
+   // The server checks the real ledger before recovering each recorded action.
+   await reconcile();
+   const connection=global.QuantaCloudConnection;
+   if(connection?.authenticatedFetch)await state().catch(error=>console.warn('Star Coin state refresh deferred',error));
+  }finally{kickRunning=false}
+ })();
+};
 for(const event of ['load','online','focus'])global.addEventListener?.(event,kick);
 global.document?.addEventListener?.('starquest:ledger-connected',kick);
 global.document?.addEventListener?.('visibilitychange',()=>{if(global.document.visibilityState==='visible')kick()});
-global.QuantaStarCoinCloud={API,KEY,record,flush,state,backfill,pending:()=>read()};
+global.QuantaStarCoinCloud={API,KEY,record,flush,state,reconcile,backfill,pending:()=>read()};
 setTimeout(kick,0);
 })(window);
