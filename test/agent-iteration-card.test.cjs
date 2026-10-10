@@ -44,3 +44,27 @@ test('accessible animation and consistent card size for mobile',()=>{
  assert.match(css,/@keyframes qai-scroll/);
  assert.match(css,/:focus-visible/);
 });
+
+test('Story card is before compact robot brain and detailed controls start hidden',()=>{
+ const story=page.indexOf('id="infiniteBook"');
+ const brain=page.indexOf('id="quantaAgentIterations"');
+ const writer=page.indexOf('id="phiStoryWriter"');
+ assert.ok(story>=0&&brain>story&&writer>brain,'Reads & Realms must remain the first content card');
+ assert.match(page,/id="qai-brain-log"[^>]*role="log"/);
+ assert.match(page,/id="qai-dashboard" hidden/);
+ assert.match(page,/id="qai-more"[^>]*aria-expanded="false"/);
+ assert.match(page,/id="qai-brain-status"/);
+ assert.match(css,/#quantaAgentIterations #qai-dashboard\[hidden\]\{display:none!important\}/);
+});
+test('source-driven bot conversations advance every 10 seconds, never fabricate a commit',()=>{
+ assert.match(js,/setInterval\(speakNext,10000\)/);
+ assert.match(js,/activity\/feed\.json/);
+ assert.match(js,/item\?\.kind!=='commit'/);
+ assert.match(js,/item\.title/);
+ assert.match(js,/safeUrl\(item\?\.url\)/);
+ assert.match(js,/const replay=brainCursor>=brainPlaylist\.length/);
+ assert.match(js,/Archive replay/);
+ assert.match(js,/source event/i);
+ assert.match(js,/while\(log\.children\.length>3\)/);
+ assert.match(js,/sourceEvents/);
+});
