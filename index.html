@@ -1069,8 +1069,10 @@ $('#go').onclick=search;
   const ref=String(reference||crypto.randomUUID()),cp=window.ControlPhi;let detail=null;
   try{detail=kind==='share'?(cp?.ensureShareCredit?cp.ensureShareCredit(ref):award('share',ref)):(cp?.ensureActionCredit?cp.ensureActionCredit(ref,kind):award(kind,ref))}
   catch(error){console.warn('Control Phi Star Coin credit unavailable; using QuantaPhi wallet',error);detail=award(kind,ref)}
-  // Catalog writes are independently idempotent. Retry even when Control Phi already credited the wallet.
-  try{window.QuantaStarCoinCloud?.record(kind,ref,card)}catch(error){console.warn('Star Coin Cloudflare record deferred',error)}
+  // Queue new credit evidence once. For an already-paid action, retry existing outbox
+  // receipts without generating another record or an additional wallet payment.
+  if(!detail?.alreadyRecorded)try{window.QuantaStarCoinCloud?.record(kind,ref,card)}catch(error){console.warn('Star Coin Cloudflare record deferred',error)}
+  else try{void window.QuantaStarCoinCloud?.flush?.()}catch(error){console.warn('Star Coin Cloudflare retry deferred',error)}
   return detail;
  };
  paint(importLegacy(),false);
