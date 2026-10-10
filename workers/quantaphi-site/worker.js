@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v39-codephi-workshop';
+const EDGE_VERSION = 'quantaphi-org-v40-codephi-preview';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
