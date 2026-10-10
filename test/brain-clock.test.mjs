@@ -64,6 +64,10 @@ test('repository engine claims any owner repository while honoring leases and jo
  const request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
  const first=await (await clock.runner(request())).json();assert.equal(first.lease.jobId,'base');assert.equal(first.lease.job.ownerRequest,'Build my project');
  const second=await (await clock.runner(request())).json();assert.equal(second.lease,null);
+ const feedback={baseSha:'a'.repeat(40),stage:'test',reason:'describe is not defined'};
+ memory.delete('repository-lease:www-infinity4/Project401');
+ memory.set(first.lease.key,{...first.lease,leaseUntil:0,retryAt:0,repairFeedback:feedback});
+ const retried=await (await clock.runner(request())).json();assert.deepEqual(retried.lease.job.runtimeFeedback,feedback);
 });
 
 test('GPT Purple cannot approve absent tests and immutable patch evidence',async()=>{
