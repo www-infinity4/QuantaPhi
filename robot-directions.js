@@ -54,6 +54,7 @@ function show(ticket){
  for(const job of ticket.context?.color_jobs||[]){
   const card=node('article','');card.className='robot-job robot-'+job.color;
   card.append(node('strong',job.agent+' · '+job.title),node('small','Team: '+(job.team||[job.agent]).join(' → ')),node('p',job.instructions),node('small',job.repository+' · '+(job.status||'queued')));
+  if(job.progress){card.append(node('p',job.progress.summary||''),node('small',job.progress.next||job.progress.blocker||''));}
   const ul=document.createElement('ul');for(const test of job.acceptance)ul.append(node('li',test));card.append(ul);list.append(card);
  }
  if(!ticket.context?.color_jobs?.length)list.append(node('p','Directions are saved. GPT routing needs a retry.'));
