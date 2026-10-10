@@ -245,7 +245,9 @@ host.addEventListener('click',event=>{
   const instruction=[lastInstruction,'Refine the CURRENT rendered image. Preserve all correct content and overall subject. Repair the following:',...corrections,review?.repairPrompt||'Correct visually implausible geometry and any fake lettering.','Use physically believable connections and print only exact words provided in the separate text field.'].filter(Boolean).join('\n');
   window.PhiImageLearning?.record(artifact,'needs_fix',{problem:review?.issues?.[0]?.problem||'User requested corrections'});
   // Preserve the prior pixels as a repair reference; start rendering immediately.
-  void reopenAsReference(instruction).then(ready=>{if(ready)void build()});
+  // Keep Story Writer ownership on the repaired artwork so its image updates too.
+  storyWriterId=artifact?.storyWriterId||'';
+  void reopenAsReference(instruction).then(ready=>ready?build():null).finally(()=>{storyWriterId=''});
  }
  if(action==='good'){window.PhiImageLearning?.record(artifact,'looks_good');notice('Thank you. This result is a positive design example for future renders on this device.')}
  if(action==='clear'){
