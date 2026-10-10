@@ -411,6 +411,12 @@
 
   function refreshWalletUI(){
     const snapshot=walletSnapshot();
+    const panel=document.getElementById('controlPhiWalletPanel');
+    if(panel&&!panel.querySelector('[data-crusher-research-history]')){
+      const link=document.createElement('a');link.dataset.crusherResearchHistory='1';
+      link.href='/bitcoin-crusher/?history=1#researchHistory';link.textContent='Open research article history';
+      link.style.cssText='display:block;margin-top:12px;color:#e6c5ff;text-decoration:underline';panel.appendChild(link);
+    }
     document.querySelectorAll('[data-control-phi-wallet-balance]').forEach(el=>{const value=String(snapshot.balance);if(el.textContent!==value)el.textContent=value});
     document.querySelectorAll('[data-control-phi-wallet-progress]').forEach(el=>{const value=`${snapshot.progressToNextCoin}/10`;if(el.textContent!==value)el.textContent=value});
     document.querySelectorAll('[data-control-phi-wallet-menu-balance]').forEach(el=>{const value=`${snapshot.balance} ⭐`;if(el.textContent!==value)el.textContent=value});
