@@ -62,16 +62,17 @@ function upsertCollect(env, wallet, card) {
 async function starCoinState(env, user, limit = 500) {
   await ensureStorySpinCredits(env);
   await ensureCrusherSpinCredits(env);
+  await ensureCrusherResearch(env);
   const totals = await env.DB.prepare("SELECT COALESCE(SUM(tenths),0) AS tenths,COALESCE(SUM(kind='collect'),0) AS collects,COALESCE(SUM(kind='share'),0) AS shares FROM quanta_star_coin_credits WHERE user_id=?").bind(user).first();
   const spins = await env.DB.prepare("SELECT COUNT(*) AS spins FROM quanta_story_spin_credits WHERE user_id=?").bind(user).first();
   const history = await env.DB.prepare("SELECT reference_id,kind,reference,tenths,client_created_at,created_at FROM quanta_star_coin_credits WHERE user_id=? ORDER BY created_at DESC LIMIT ?").bind(user, limit).all();
   const research = await env.DB.prepare("SELECT reference_id,research_json,created_at FROM quanta_story_spin_credits WHERE user_id=? ORDER BY created_at DESC LIMIT ?").bind(user,limit).all();
   const crusher=await env.DB.prepare("SELECT COUNT(*) AS spins FROM quanta_crusher_spin_credits WHERE user_id=?").bind(user).first();
-  const crusherRows=await env.DB.prepare("SELECT spin_id,terms_json,query_text,research_hash,created_at FROM quanta_crusher_spin_credits WHERE user_id=? ORDER BY created_at DESC LIMIT ?").bind(user,limit).all();
+  const crusherRows=await env.DB.prepare("SELECT c.spin_id,c.terms_json,c.query_text,c.research_hash,c.created_at,r.article_json FROM quanta_crusher_spin_credits c LEFT JOIN quanta_crusher_research r ON r.user_id=c.user_id AND r.article_id=c.spin_id WHERE c.user_id=? ORDER BY c.created_at DESC LIMIT ?").bind(user,limit).all();
   const spinCount=Number(spins?.spins||0),crusherCount=Number(crusher?.spins||0);
   const tenths = Number(totals?.tenths || 0) + spinCount*10 + crusherCount;
   const spinRows=(research.results||[]).map(x=>({reference_id:x.reference_id,kind:'spin',reference:x.reference_id,tenths:10,created_at:x.created_at,research:JSON.parse(x.research_json)}));
-  const crusherHistory=(crusherRows.results||[]).map(x=>({reference_id:'bitcoin-crusher:spin:'+x.spin_id,kind:'crusher_spin',reference:x.query_text,tenths:1,created_at:x.created_at,terms:JSON.parse(x.terms_json),research_hash:x.research_hash}));
+  const crusherHistory=(crusherRows.results||[]).map(x=>({reference_id:'bitcoin-crusher:spin:'+x.spin_id,kind:'crusher_spin',reference:x.query_text,tenths:1,created_at:x.created_at,terms:JSON.parse(x.terms_json),research_hash:x.research_hash,article_id:x.spin_id,research:x.article_json?JSON.parse(x.article_json):null,article_url:'https://quantaphi.org/bitcoin-crusher/?article='+encodeURIComponent(x.spin_id)+'#researchHistory'}));
   const combined=[...(history.results||[]),...spinRows,...crusherHistory].sort((a,b)=>b.created_at-a.created_at).slice(0,limit);
   return {ok:true,credits_tenths:tenths,star_coins:Math.floor(tenths/10),progress:tenths%10,collects:Number(totals?.collects||0),shares:Number(totals?.shares||0),spins:spinCount,crusher_spins:crusherCount,history:combined};
 }
@@ -478,9 +479,10 @@ export default {
     // The Reserve reads the signed-in user's collection; nothing is made public by default.
     if (url.pathname === "/v1/quants/crusher-research") {
       await ensureCrusherResearch(env);
+      await ensureCrusherSpinCredits(env);
       if(request.method==="GET"){
-        const rows=await env.DB.prepare("SELECT article_id,article_json,directions_json,created_at,updated_at FROM quanta_crusher_research WHERE user_id=? ORDER BY updated_at DESC LIMIT 150").bind(identity.user_id).all();
-        return json({ok:true,articles:(rows.results||[]).map(row=>({article_id:row.article_id,article:JSON.parse(row.article_json),directions:JSON.parse(row.directions_json),created_at:row.created_at,updated_at:row.updated_at}))});
+        const rows=await env.DB.prepare("SELECT r.article_id,r.article_json,r.directions_json,r.created_at,r.updated_at,c.credit_id FROM quanta_crusher_research r LEFT JOIN quanta_crusher_spin_credits c ON c.user_id=r.user_id AND c.spin_id=r.article_id WHERE r.user_id=? ORDER BY r.updated_at DESC LIMIT 1000").bind(identity.user_id).all();
+        return json({ok:true,articles:(rows.results||[]).map(row=>({article_id:row.article_id,credit_id:row.credit_id,credited_tenths:row.credit_id?1:0,article:JSON.parse(row.article_json),directions:JSON.parse(row.directions_json),created_at:row.created_at,updated_at:row.updated_at}))});
       }
       if(request.method==="POST"){
         const data=await request.json().catch(()=>({}));
@@ -488,11 +490,11 @@ export default {
         const article=data.article,rows=Array.isArray(data.directions)?data.directions.slice(0,30):[];
         if(!/^[a-zA-Z0-9_-]{12,100}$/.test(articleId)||!article||typeof article!=="object"||!Array.isArray(article.terms)||article.terms.length!==4||!String(article.title||"").trim()||rows.length<10)return json({error:"invalid_research_quant"},400);
         const sources=(Array.isArray(article.sources)?article.sources:[]).filter(src=>src&&typeof src.url==="string"&&/^https:\/\//.test(src.url)).slice(0,15).map(src=>({title:String(src.title||"").slice(0,260),url:src.url.slice(0,1700),abstract:String(src.abstract||"").slice(0,1500),provider:String(src.provider||"").slice(0,70)}));
-        const pack={title:String(article.title).slice(0,250),question:String(article.question||"").slice(0,1000),terms:article.terms.map(x=>String(x||"").slice(0,90)),wordBankSize:Math.max(0,Math.min(1000000,Number(article.wordBankSize)||0)),abstract:String(article.abstract||"").slice(0,7000),synthesis:String(article.synthesis||"").slice(0,12000),introduction:String(article.introduction||"").slice(0,8000),methods:String(article.methods||"").slice(0,8000),results:String(article.results||"").slice(0,8000),discussion:String(article.discussion||"").slice(0,8000),conclusion:String(article.conclusion||"").slice(0,8000),doi:String(article.doi||"").slice(0,140),tokenId:String(article.tokenId||"").slice(0,180),evidenceStatus:String(article.evidenceStatus||"pending").slice(0,100),hash:String(article.hash||"").slice(0,120),sources};
+        const pack={revisionAt:Math.min(Date.now(),Math.max(0,Number(data.revision_at)||Date.now())),title:String(article.title).slice(0,250),question:String(article.question||"").slice(0,1000),terms:article.terms.map(x=>String(x||"").slice(0,90)),wordBankSize:Math.max(0,Math.min(1000000,Number(article.wordBankSize)||0)),abstract:String(article.abstract||"").slice(0,7000),synthesis:String(article.synthesis||"").slice(0,12000),introduction:String(article.introduction||"").slice(0,8000),methods:String(article.methods||"").slice(0,8000),results:String(article.results||"").slice(0,8000),discussion:String(article.discussion||"").slice(0,8000),conclusion:String(article.conclusion||"").slice(0,8000),doi:String(article.doi||"").slice(0,140),tokenId:String(article.tokenId||"").slice(0,180),evidenceStatus:String(article.evidenceStatus||"pending").slice(0,100),hash:String(article.hash||"").slice(0,120),sources};
         const directionCards=rows.filter(x=>x&&typeof x.title==="string"&&x.title.trim()).slice(0,30).map((d,i)=>({id:articleId+"-"+i,title:String(d.title||"").slice(0,180),body:String(d.body||"").slice(0,900),type:String(d.type||"website").slice(0,80),indexedWords:String(d.indexedWords||pack.terms.join(" ")).slice(0,700),source:"Bitcoin Crusher research Quant",articleId}));
         if(directionCards.length<10)return json({error:"directions_required"},400);
         const now=Date.now();
-        const result=await env.DB.prepare("INSERT INTO quanta_crusher_research(user_id,article_id,wallet_id,article_json,directions_json,created_at,updated_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(user_id,article_id) DO UPDATE SET article_json=excluded.article_json,directions_json=excluded.directions_json,updated_at=excluded.updated_at").bind(identity.user_id,articleId,wallet,JSON.stringify(pack),JSON.stringify(directionCards),now,now).run();
+        const result=await env.DB.prepare("INSERT INTO quanta_crusher_research(user_id,article_id,wallet_id,article_json,directions_json,created_at,updated_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(user_id,article_id) DO UPDATE SET article_json=excluded.article_json,directions_json=excluded.directions_json,updated_at=excluded.updated_at WHERE COALESCE(json_extract(quanta_crusher_research.article_json,'$.revisionAt'),0)<=COALESCE(json_extract(excluded.article_json,'$.revisionAt'),0)").bind(identity.user_id,articleId,wallet,JSON.stringify(pack),JSON.stringify(directionCards),now,now).run();
         return json({ok:true,collected:true,article_id:articleId,directions:directionCards.length},201);
       }
       return json({error:"method_not_allowed"},405);
@@ -506,6 +508,11 @@ export default {
       if(!/^[a-zA-Z0-9_-]{12,100}$/.test(id)||terms.length!==4||terms.some(v=>v.length<2)||new Set(terms.map(v=>v.toLowerCase())).size!==4||query.length<8||!terms.every(v=>query.toLowerCase().includes(v.toLowerCase())))return json({error:"invalid_crusher_spin"},400);
       await ensureStarCoinCredits(env);
       await ensureCrusherSpinCredits(env);
+      await ensureCrusherResearch(env);
+      const saved=await env.DB.prepare("SELECT article_json FROM quanta_crusher_research WHERE user_id=? AND article_id=?").bind(identity.user_id,id).first();
+      if(!saved)return json({error:"research_article_required"},409);
+      const attached=JSON.parse(saved.article_json);
+      if(JSON.stringify(attached.terms)!==JSON.stringify(terms))return json({error:"research_terms_mismatch"},409);
       const now=Date.now();
       const receipt=await env.DB.prepare("INSERT OR IGNORE INTO quanta_crusher_spin_credits(credit_id,user_id,wallet_id,spin_id,terms_json,query_text,research_hash,created_at) VALUES(?,?,?,?,?,?,?,?)").bind('qcr_'+crypto.randomUUID(),identity.user_id,wallet,id,JSON.stringify(terms),query,hash,now).run();
       return json({...(await starCoinState(env,identity.user_id,100)),accepted:Number(receipt.meta?.changes||0)>0,spin_id:id,credited_tenths:Number(receipt.meta?.changes||0)>0?1:0});
