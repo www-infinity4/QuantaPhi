@@ -1,6 +1,6 @@
 import { DurableObject } from 'cloudflare:workers';
 import { authenticate, supported } from './runner-auth.mjs';
-const PERIOD=30000,VERSION='20261010-writer1';
+const PERIOD=30000,VERSION='20261010-writer2';
 const REPOS=new Set(['QuantaPhi','Moltnook','Oracle-Octaves','claude-flow','InfinityPhi','OmniPhi','NewsPhi','Bitcoin-Crusher']);
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 function output(request,value){
@@ -48,8 +48,8 @@ export class BrainClock extends DurableObject{
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
      const key='writer:'+ticket.id+':'+job.id+':'+revision;
      const previous=await this.ctx.storage.get(key);
-     if(previous?.leaseUntil>Date.now()||previous?.status==='deployed_verified'||previous?.retryAt>Date.now())continue;
-     const lease={key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+20*60*1000,status:'claimed',job};
+     if(previous?.adapterVersion===VERSION&&previous?.leaseUntil>Date.now()||previous?.status==='deployed_verified'||previous?.retryAt>Date.now())continue;
+     const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+20*60*1000,status:'claimed',job};
      await this.ctx.storage.put(key,lease);
      await this.emit('greenbeans','pink-panther','writer claimed','Authenticated repository runner claimed '+ticket.id+'/'+job.id+'. It can write brain-interface files, run tests, and open a hosted Android browser.',runUrl);
      return Response.json({ok:true,lease});
@@ -71,16 +71,18 @@ export class BrainClock extends DurableObject{
    const text=typeof response==='string'?response:response.response||response.choices?.[0]?.message?.content||'';
    const start=text.indexOf('{'),end=text.lastIndexOf('}');const value=JSON.parse(text.slice(start,end+1));
    if(isReview && (typeof value.approved!=='boolean'||typeof value.reason!=='string'))throw Error('writer_review_schema_rejected');
-   if(isReview && value.approved)await this.ctx.storage.put('review:'+lease.key,{leaseId:lease.leaseId,approved:true});
+   if(isReview && value.approved){const hashes={};for(const [path,content]of Object.entries(body.source||{})){if(!['robot-directions.js','robot-directions.css','quanta-agent-iterations.js','quanta-agent-iterations.css'].includes(path)||typeof content!=='string')throw Error('review_source_scope_rejected');hashes[path]=await digest(content);}await this.ctx.storage.put('review:'+lease.key,{leaseId:lease.leaseId,approved:true,hashes});}
    return Response.json({ok:true,...value});
   }
   if(!['blocked','deployed_verified','committed_unverified'].includes(body.status))return Response.json({ok:false,error:'receipt_status_rejected'},{status:400});
   if(body.status!=='blocked'){
    if(!/^[a-f0-9]{40}$/.test(body.commitSha||'')||body.testsPassed!==true)throw Error('commit_receipt_required');
-   const commitResponse=await fetch('https://api.github.com/repos/www-infinity4/QuantaPhi/commits/'+body.commitSha,{headers:{Accept:'application/vnd.github+json','User-Agent':'InfinityBrain'},signal:AbortSignal.timeout(10000)});
-   if(!commitResponse.ok)throw Error('commit_receipt_unverified');
-   const commit=await commitResponse.json();
-   if(!commit.commit.message.includes(lease.ticketId+'/'+lease.jobId))throw Error('commit_job_mismatch');
+   const reviewed=await this.ctx.storage.get('review:'+lease.key);
+   if(reviewed?.leaseId!==lease.leaseId||!Object.keys(reviewed.hashes||{}).length)throw Error('reviewed_source_required');
+   for(const [path,hash] of Object.entries(reviewed.hashes)){
+    const immutable=await read('https://raw.githubusercontent.com/www-infinity4/QuantaPhi/'+body.commitSha+'/'+path,120000);
+    if(immutable.truncated||immutable.sha256!==hash)throw Error('immutable_commit_source_mismatch');
+   }
    if(body.status==='deployed_verified'&&((await this.ctx.storage.get('review:'+lease.key))?.leaseId!==lease.leaseId||body.browserPassed!==true||body.deployedFilesMatched!==true||body.reviewApproved!==true))throw Error('browser_and_review_receipt_required');
   }
   const receipt={...lease,status:body.status,leaseUntil:0,retryAt:body.status==='blocked'?Date.now()+30*60*1000:Date.now()+24*60*60*1000,when:new Date().toISOString(),commitSha:body.commitSha||null,testsPassed:body.testsPassed===true,browserPassed:body.browserPassed===true,summary:message,runUrl};
@@ -97,6 +99,7 @@ export class BrainClock extends DurableObject{
   return Response.json({ok:true});
  }
  async fetch(request){
+  if(new URL(request.url).pathname==='/runner/claim')return this.ctx.blockConcurrencyWhile(()=>this.runner(request));
   if(new URL(request.url).pathname.startsWith('/runner/'))return this.runner(request);
   if(new URL(request.url).pathname==='/start'){
    if(await this.ctx.storage.get('version')!==VERSION){await this.ctx.storage.put('version',VERSION);await this.ctx.storage.setAlarm(Date.now()+1000);}
@@ -203,7 +206,7 @@ export default{
     if(Number(request.headers.get('Content-Length')||0)>100000)return new Response('Body too large',{status:413});
     const text=await request.text();if(text.length>100000)return new Response('Body too large',{status:413});
     const body=JSON.parse(text);body.runId=identity.run_id;
-    return env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal'+path,{method:'POST',body:JSON.stringify(body)});
+    return await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal'+path,{method:'POST',body:JSON.stringify(body)});
    }catch(e){return Response.json({ok:false,error:e.message},{status:401});}
   }
   if(request.method!=='GET' ||!['/health','/activity/feed.json'].includes(path))return new Response('Not found',{status:404});

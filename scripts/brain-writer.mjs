@@ -44,9 +44,11 @@ try{
   const original={};for(const path of allowedFiles)original[path]=await fs.readFile(path,'utf8');
   const clearJob=/clear\s+(?:text|input)/i.test(lease.job.instructions);
   let edits=clearJob?clearButtonPatch(original):(await call('propose',{source:original})).edits;
-  if(!edits.length)throw Error('Requested change is already present; job needs an existing-commit verification adapter');
-  const patched=applyEdits(original,edits);report.edits=edits;
-  const review=await call('review',{job:lease.job,edits});
+  const resume=!edits.length && clearJob && /^[a-f0-9]{40}$/.test(lease.job.progress?.commitSha||'');
+  if(!edits.length&&!resume)throw Error('Requested change is already present; no recorded source commit to resume');
+  const patched=resume?original:applyEdits(original,edits);report.edits=edits;
+  const reviewedSource=Object.fromEntries(Object.entries(patched).filter(([path])=>resume?path==='robot-directions.js':edits.some(e=>e.path===path)));
+  const review=await call('review',{job:lease.job,edits,source:reviewedSource});
   if(review.approved!==true)throw Error('GPT patch review rejected: '+review.reason);
   reviewApproved=true;report.review=review;
   await event('pink-panther','Separate GPT review accepted the bounded source patch. Running repository regressions before commit.');
@@ -57,16 +59,19 @@ try{
    execFileSync(process.execPath,['--test','test/brain-writer.test.mjs','test/brain-clock.test.mjs','test/agent-iteration-card.test.cjs'],{stdio:'pipe'});
   }catch(e){for(const path of paths)await fs.writeFile(path,original[path]);throw Error('Regression failure: '+String(e.stderr||e.message).slice(-1400));}
   testsPassed=true;
+  if(resume){commitSha=lease.job.progress.commitSha;}else{
   git('fetch','origin','main');if(git('rev-parse','origin/main')!==report.baseSha)throw Error('Main changed; retry against the new head');
   git('config','user.name','infinity-brain[bot]');git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com');
   git('add','--',...paths);git('commit','-m','Repair '+report.jobId+' after GPT review and tests');commitSha=git('rev-parse','HEAD');
   git('push','origin','HEAD:main');
+  }
   await event('greenbeans','Committed '+commitSha.slice(0,9)+' for '+report.jobId+'. Waiting for the deployed source, then opening the hosted Android browser.');
   // The existing .org edge serves source from main. Verify exact deployed bytes, not HTTP alone.
   let matched=false;
+  const deployedPaths=resume?['robot-directions.js']:paths;
   for(let attempt=0;attempt<18&&!matched;attempt++){
    matched=true;
-   for(const path of paths){const r=await fetch('https://quantaphi.org/'+path+'?brainCommit='+commitSha+'&attempt='+attempt,{cache:'no-store',signal:AbortSignal.timeout(20000)});if(!r.ok||await r.text()!==patched[path])matched=false;}
+   for(const path of deployedPaths){const r=await fetch('https://quantaphi.org/'+path+'?brainCommit='+commitSha+'&attempt='+attempt,{cache:'no-store',signal:AbortSignal.timeout(20000)});if(!r.ok||await r.text()!==patched[path])matched=false;}
    if(!matched)await new Promise(resolve=>setTimeout(resolve,10000));
   }
   if(!matched)throw Error('Committed source has not reached the .org deployment');
