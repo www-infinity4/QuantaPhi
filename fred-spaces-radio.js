@@ -125,7 +125,12 @@
   function build(tool){
     const paths={InfinityPhi:"/InfinityPhi/",OmniPhi:"/OmniPhi/overview/",QuantaPhi:"/"};
     const u=new URL(paths[tool],location.origin);
-    u.searchParams.set("q",indexedTerms(active));
+    u.searchParams.set("q",tool==="InfinityPhi"?active.title:indexedTerms(active));
+    if(tool==="InfinityPhi"){
+      u.searchParams.set("cardTitle",active.title);
+      u.searchParams.set("sourceQuery",indexedTerms(active));
+      u.searchParams.set("run","1");
+    }
     u.searchParams.set("from","fred-spaces");
     u.searchParams.set("episode",active.id);
     u.searchParams.set("episodeSource",active.source);
