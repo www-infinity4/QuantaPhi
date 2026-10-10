@@ -4,7 +4,7 @@
 (function(){
 'use strict';
 const root=document.getElementById('phiStoryWriter');if(!root)return;
-const KEY='quantaPhi:storyWriter:drafts:v1',COLLECT='quantaPhiCollected';
+const KEY='quantaPhi:storyWriter:drafts:v1',COLLECT='quantaPhiCollected',STARS='quantaPhi:storyWriter:stars:v1';
 const AI='https://infinity-rogers.marvaseater.workers.dev/v1/chat';
 const $=s=>root.querySelector(s);
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
@@ -33,15 +33,17 @@ function ui(){
  const artStatus=make('p','sw-art-status','');artStatus.id='sw-art-status';
  const body=make('div','sw-story');body.id='sw-body';
  const controls=make('div','sw-actions');
- for(const [id,label]of [['sw-collect','Collect to Storybook'],['sw-share','Share teaser'],['sw-copy-story','Copy story'],['sw-fix','Fix illustration'],['sw-retry-image','Retry image']]){
+ for(const [id,label]of [['sw-star','☆ Star +0.1 ★'],['sw-collect','Collect +0.1 ★'],['sw-share','Share +0.1 ★'],['sw-copy-story','Copy story'],['sw-fix','Fix illustration'],['sw-retry-image','Retry image']]){
    const b=make('button','',''+label);b.type='button';b.id=id;controls.append(b);
  }
+ const rewardStatus=make('p','sw-reward-status','A verified Star, Collect, or Share submits a separate +0.1 StarCoin receipt.');rewardStatus.id='sw-reward-status';rewardStatus.setAttribute('role','status');
  const history=make('section','sw-card sw-history');history.append(make('strong','','Your saved drafts'));
  const picker=make('select','sw-field');picker.id='sw-history';picker.setAttribute('aria-label','Open a saved Story Writer draft');
  history.append(picker,make('p','sw-muted','Drafts and illustrations are saved on this device. Cloud backup is not connected.'));
- section.append(header,art,artStatus,body,controls);
+ section.append(header,art,artStatus,body,controls,rewardStatus);
  root.append(form,section,history);
  $('#sw-write').addEventListener('click',()=>void writeStory());
+ $('#sw-star').addEventListener('click',star);
  $('#sw-collect').addEventListener('click',collect);
  $('#sw-share').addEventListener('click',()=>void share());
  $('#sw-copy-story').addEventListener('click',()=>void copy());
@@ -50,7 +52,7 @@ function ui(){
  picker.addEventListener('change',()=>{active=stories.find(x=>x.id===picker.value)||null;renderStory();});
  historyList();
 }
-function note(message){$('#sw-notice').textContent=message}
+function note(message){$('#sw-notice').textContent=message;const status=$('#sw-reward-status');if(status)status.textContent=message}
 function historyList(){
  const picker=$('#sw-history');picker.replaceChildren();
  const empty=make('option','','Choose a draft to reopen');empty.value='';picker.append(empty);
@@ -116,7 +118,8 @@ function renderStory(){
  const section=$('#sw-output');section.hidden=!active;if(!active){showArt(null);return}
  $('.sw-title').textContent=active.title;const body=$('#sw-body');body.replaceChildren();
  for(const paragraph of active.body.split(/\n\s*\n/).filter(Boolean)){body.append(make('p','',paragraph))}
- $('#sw-collect').textContent=read(COLLECT,[]).some(x=>x.key==='story-writer|'+active.id)?'Collected ✓':'Collect to Storybook';
+ $('#sw-collect').textContent=read(COLLECT,[]).some(x=>x.key==='story-writer|'+active.id)?'Collected ✓':'Collect +0.1 ★';
+ $('#sw-star').textContent=read(STARS,[]).includes(active.id)?'★ Starred':'☆ Star +0.1 ★';
  $('#sw-art-status').textContent=active.imageStatus||'Illustration will appear here when the renderer finishes.';
  showArt(null);const id=active.id;
  getPicture(id).then(blob=>{if(active?.id===id&&blob)showArt(blob)}).catch(()=>{});
@@ -169,6 +172,17 @@ async function illustrate(story){
   if(active?.id===storyId)$('#sw-art-status').textContent=message;
  }finally{artBusy=false;$('#sw-retry-image').disabled=false;$('#sw-fix').disabled=false}
 }
+function creditStatus(result,action){return result?.pending?' '+action+' receipt saved; +0.1 StarCoin awaits ledger confirmation.':result?.awarded?' '+action+' confirmed by ledger.':' '+action+' could not be saved for payout; please check your wallet connection.'}
+function star(){
+ if(!active)return;
+ const selected=read(STARS,[]);if(!Array.isArray(selected))return;
+ if(selected.includes(active.id)){note('Already starred. No duplicate StarCoin reward.');return}
+ if(!store(STARS,[...selected,active.id].slice(-1000))){note('Could not save the Star preference; no payout submitted.');return}
+ $('#sw-star').textContent='★ Starred';
+ const card={key:'story-writer|'+active.id,type:'Fantasy',title:active.title,story:active.body.slice(0,4000),keywords:active.keywords,genre:active.genre};
+ let result;try{result=window.QuantaStarCredit?.('star','story-writer|'+active.id,card)}catch(error){console.warn('Story Writer Star reward deferred',error)}
+ note('Story starred.'+creditStatus(result,'Star'));
+}
 function collect(){
  if(!active)return;
  const all=read(COLLECT,[]);if(!Array.isArray(all))return;
@@ -177,9 +191,9 @@ function collect(){
  const item={key,type:'Story',title:active.title,story:active.body,media:'',sourceUrl:'',createdAt:active.createdAt,collectedAt:new Date().toISOString(),generator:'story-writer',keywords:active.keywords};
  if(!store(COLLECT,[...all,item].slice(-1000))){note('Collection storage is full. Copy your story to preserve it.');return}
  $('#sw-collect').textContent='Collected ✓';
- try{window.QuantaStarCredit?.('collect',key,item)}catch(e){console.warn('Story Writer credit remains pending',e)}
+ let reward;try{reward=window.QuantaStarCredit?.('collect',key,item)}catch(e){console.warn('Story Writer credit remains pending',e)}
  window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:item}));
- note('Collected to My Storybook. +0.1 StarCoin submitted for server confirmation.');
+ note('Collected to My Storybook.'+creditStatus(reward,'Collect'))
 }
 async function share(){
  if(!active)return;
@@ -190,8 +204,8 @@ async function share(){
   if(navigator.share)await navigator.share(data);
   else if(navigator.clipboard)await navigator.clipboard.writeText(teaser+' '+u.href);
   else throw Error('Sharing not supported on this device');
-  window.QuantaStarCredit?.('share','story-writer:'+active.id+':'+Date.now(),{key:'story-writer|'+active.id,title:active.title,story:teaser});
-  note('Shared short teaser. +0.1 StarCoin submitted for server confirmation.');
+  const reward=window.QuantaStarCredit?.('share','story-writer:'+active.id+':'+Date.now(),{key:'story-writer|'+active.id,title:active.title,story:teaser,type:'Fantasy'});
+  note('Shared short teaser.'+creditStatus(reward,'Share'))
  }catch(error){note(error?.name==='AbortError'?'Share canceled; no credit submitted.':'Could not share: '+String(error?.message||error))}
 }
 async function copy(){
