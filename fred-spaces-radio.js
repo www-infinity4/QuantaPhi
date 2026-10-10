@@ -155,19 +155,7 @@
   }
   const escapeMarkup=x=>String(x||'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   // Export ONLY the blank Media Star asset; Fred's curated content remains on QuantaPhi.
-  function mediaStarEmbed(){return "<!-- Media Star: blank, creator-editable card template by QuantaPhi. -->\n<!-- Your AI website builder replaces the sample title, description and source with YOUR content. -->\n<!-- This template carries no show recordings, unlock tokens, platform-wallet credentials or payout endpoints. -->\n<article data-media-star=\"creator-template-v2\" data-payment-mode=\"off\" aria-label=\"Media Star creator card\" style=\"position:relative;isolation:isolate;overflow:hidden;max-width:720px;padding:24px;border:2px solid #f2c44f;border-radius:24px;background:linear-gradient(135deg,#fff9d0,#e8b537);color:#33200a;font:16px/1.5 system-ui,sans-serif;box-shadow:0 9px 28px #8d5d2666\">\n  <span aria-hidden=\"true\" style=\"position:absolute;right:-55px;top:-75px;width:300px;height:300px;clip-path:polygon(50% 0%,62% 34%,98% 35%,69% 57%,80% 91%,50% 72%,20% 91%,31% 57%,2% 35%,38% 34%);background:linear-gradient(135deg,#fff0ad,#f6b81e);opacity:.48;z-index:-1\"></span>\n  <div style=\"position:relative\"><strong style=\"font-size:21px;letter-spacing:.06em\">⭐ MEDIA STAR</strong><p style=\"font-size:12px;font-weight:700;letter-spacing:.08em;margin:6px 0\">YOUR ORIGINAL MEDIA</p>\n  <h2 data-creator-field=\"title\" style=\"font-size:25px;margin:8px 0\">Add your title with your AI builder</h2>\n  <p data-creator-field=\"description\">Add your own original episode, podcast, music, video or media description here.</p>\n  <div data-creator-field=\"player\" role=\"note\" style=\"padding:14px;border-radius:14px;background:#fff4c9;border:1px dashed #926820\">Your AI builder adds your own authorized media player or original source link here.</div>\n  <p style=\"font-size:12px\">Optional paid access: configure your own creator payment provider and verified recipient on your own server. Default: free; no payment is connected.</p></div>\n</article>";}
-  async function copyMediaStarEmbed(){
-    const snippet=mediaStarEmbed();
-    try{
-      if(!navigator.clipboard?.writeText)throw Error('Clipboard unavailable');
-      await navigator.clipboard.writeText(snippet);
-      note('Blank Media Star template copied. Add your own media and optional payment setup in your AI website builder. Fred episodes and Phi wallet connections are not included.');
-    }catch(error){
-      if(typeof window.prompt==='function')window.prompt('Copy this Media Star HTML into your website builder:',snippet);
-      note('Blank Media Star template ready to copy. Add your own authorized content and separate optional creator payments.');
-    }
-  }
-  window.PhiMediaStarAsset={html:mediaStarEmbed};
+  // Fred's Curio Spotlight player remains a QuantaPhi service and is not an embeddable card.
   function render(){
     root.replaceChildren();
     const card=node("article","fs-card fs-media-star"),top=node("div","fs-header"),ident=node("div","fs-heading");
@@ -231,8 +219,6 @@
     const builds=node("div","fs-builds");
     ["InfinityPhi","OmniPhi","QuantaPhi"].forEach(t=>builds.append(button(t,()=>build(t),"fs-phi")));
     card.append(builds);
-    const embedRow=node("div","fs-embed-row");
-    embedRow.append(button("Copy blank Media Star template",()=>{void copyMediaStarEmbed()},"fs-phi fs-embed"));card.append(embedRow);
     const nextRow=node("div","fs-bottom");
     const hasCurated=episodes.some(e=>e.id!==FIRST&&isReplayLink(e));
     const unlock=button(busy?"Loading next episode…":!paymentsReady?"Episode unlocks paused — wallet routing":isPlatformOwner?"Next curated episode · owner preview (free)":"Unlock next curated episode · 1 ★",more,"fs-next");
