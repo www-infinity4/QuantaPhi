@@ -135,15 +135,11 @@
     if(changed)safeWrite(SEEN_KEY,seen);
   }
   function deepLink(story) {
-    const link = new URL(location.href);
-    link.searchParams.delete('q'); link.searchParams.delete('from');
+    // Catalog stories retain an exact short permalink; live stories hand
+    // readers to the research engine instead of encoding the full article.
+    if (story.discoverySource === 'live') return buildUrl('infinity', story);
+    const link = new URL('/', location.origin);
     link.searchParams.set('secret', story.id);
-    if(story.discoverySource === 'live') {
-      link.searchParams.set('bookTitle', story.title.slice(0, 140));
-      link.searchParams.set('bookSummary', story.summary.slice(0, 440));
-      link.searchParams.set('bookSource', story.sourceUrl);
-      link.searchParams.set('bookSector', String(story.sector));
-    }
     link.hash = 'infiniteBook';
     return link.href;
   }
@@ -164,16 +160,9 @@
   function buildUrl(tool, story) {
     const routes={infinity:'/infinity-phi/',omni:'/omni-phi/overview/',quanta:'/'};
     const link=new URL(routes[tool]||'/',location.origin);
-    // Existing Phi search pages understand q. Keep it as short semantic index words.
-    // Preserve story metadata separately rather than injecting the full prose into search.
-    link.searchParams.set('q',indexedSearchTerms(story));
-    link.searchParams.set('story',story.id);
-    link.searchParams.set('storyTitle',String(story.title||'').slice(0,150));
-    link.searchParams.set('storySummary',String(story.summary||'').slice(0,500));
-    link.searchParams.set('storyDetail',String(story.detail||'').slice(0,200));
-    link.searchParams.set('storySector',String(catalog.sectors.find(x=>x.id===story.sector)?.name||''));
-    link.searchParams.set('storySource',story.sourceUrl);
-    link.searchParams.set('from','infinite-book');
+    // A concise search seed, not the full summary, detailed story and source URL.
+    link.searchParams.set('q',indexedSearchTerms(story).slice(0,110) || String(story.title||'').slice(0,100));
+    if (/^[a-z0-9_-]{3,48}$/i.test(String(story.id||''))) link.searchParams.set('story',story.id);
     return link.href;
   }
   async function researchSuggestions(story, ticket){
@@ -529,13 +518,15 @@
     if (!current) return;
     interactedWithStory = true;
     const target = deepLink(current);
-    const url = typeof window.quantaShareUrl === 'function' ? window.quantaShareUrl({title:current.title,description:current.summary,q:current.title,dest:target,kind:'secret'}) : target;
+    const url = target; // Avoid wrapping a URL inside another URL's query string.
+    const starter = String(current.summary || '').replace(/\\s+/g,' ').trim();
+    const teaser = (starter.slice(0,150).replace(/\\s+\\S*$/,'') || starter.slice(0,150)) + (starter.length > 150 ? '… Read and research it in Infinity Phi.' : ' · Explore on Phi.');
     let combined = null;
     try {
       combined = await window.PhiBookImageBridge?.shareStory?.(current, url) || null;
       if (combined?.handled) {
         if (!combined.success) { note(combined.message || 'Share cancelled. No credit issued.'); return; }
-      } else if (navigator.share) await navigator.share({ title: current.title, text: current.summary, url });
+      } else if (navigator.share) await navigator.share({ title: current.title, text: teaser, url });
       else if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(current.title + '\n' + url);
       else { note('Sharing is unavailable in this browser'); return; }
     } catch (_) { note('Share cancelled'); return; }
