@@ -18,7 +18,7 @@ async function digest(value){
  return [...new Uint8Array(data)].map(x=>x.toString(16).padStart(2,'0')).join('');
 }
 async function read(url,max=14000){
- const r=await fetch(url,{redirect:'error',signal:AbortSignal.timeout(12000),headers:{Accept:'text/html,application/json,text/plain'}});
+ const r=await fetch(url,{redirect:'manual',signal:AbortSignal.timeout(12000),headers:{Accept:'text/html,application/json,text/plain'}});
  if(!r.ok)throw Error('source_http_'+r.status);
  const reader=r.body.getReader();let bytes=0,chunks=[];
  try{while(bytes<max){const n=await reader.read();if(n.done)break;const c=n.value.subarray(0,max-bytes);chunks.push(c);bytes+=c.length;}}finally{await reader.cancel().catch(()=>{});}
@@ -76,7 +76,12 @@ export class BrainClock extends DurableObject{
     if(selected&&plan.instruction.action==='inspect_repository'){
      const {ticket,context,job,key}=selected;
      const repo=String(job.repository||'').replace(/^www-infinity4\//,'');
-     if(!REPOS.has(repo))throw Error('repository_outside_inspection_allowlist');
+     if(!REPOS.has(repo)){
+      await this.ctx.storage.put(key,{status:'blocked',blocker:'repository_scope_unresolved',when:new Date().toISOString()});
+      await this.emit('orange-peel','purple-pearl','blocked','Repository scope is unresolved for '+ticket.id+'/'+job.id+'. Retained the job and moved on to other inspections.');
+      await this.ctx.storage.put('state',{status:'scope_blocked',lastTick:Date.now(),signature,failures:0});
+      return;
+     }
      const sources=[];
      for(const file of ['README.md','index.html']){
       try{sources.push(await read('https://raw.githubusercontent.com/www-infinity4/'+repo+'/main/'+file,9000));}
@@ -118,7 +123,9 @@ export default{
  async fetch(request,env){
   const path=new URL(request.url).pathname;
   if(request.method!=='GET'||!['/health','/activity/feed.json'].includes(path))return new Response('Not found',{status:404});
-  const r=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/'+(path.includes('feed')?'feed':'status'));
+  const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
+  await clock.fetch('https://clock.internal/start');
+  const r=await clock.fetch('https://clock.internal/'+(path.includes('feed')?'feed':'status'));
   return output(request,await r.json());
  }
 };
