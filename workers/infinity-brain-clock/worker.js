@@ -42,6 +42,14 @@ export class BrainClock extends DurableObject{
   const runUrl='https://github.com/'+(engine?'www-infinity4/Moltnook':'www-infinity4/QuantaPhi')+'/actions/runs/'+runId;
   const path=new URL(request.url).pathname;
   await this.ctx.storage.put('writerHeartbeat',{when:Date.now(),runUrl});
+  if(path==='/runner/quant-audit'){
+   if(!engine)throw Error('repository_engine_identity_required');
+   const index=await this.ctx.storage.get('job-quant-index')||[],item=index[0];
+   if(!item)return Response.json({ok:true,verified:false,status:'awaiting_first_job_result'});
+   const quant=await this.ctx.storage.get(item.id),latest=index.filter(q=>q.repository===item.repository).slice(0,5);
+   if(!quant||quant.id!==item.id||quant.repository!==item.repository||!quant.attempts?.length||latest.filter(q=>q.id===quant.id).length!==1)throw Error('durable_quant_audit_failed');
+   return Response.json({ok:true,verified:true,quantId:quant.id,repository:quant.repository,status:quant.status,attemptCount:quant.attempts.length,latestFiveContains:true,durableReadback:true,checkedAt:new Date().toISOString()});
+  }
   if(path==='/runner/capability'){
    if(!engine)throw Error('repository_engine_identity_required');
    const capability={when:new Date().toISOString(),runUrl,status:body.status==='credential_configured'?'credential_configured':'credential_missing',repositoriesVisible:Number.isInteger(body.repositoriesVisible)?Math.max(0,body.repositoriesVisible):null,note:'Repository writes are proven by commits, not account role permissions.'};
@@ -94,6 +102,14 @@ export class BrainClock extends DurableObject{
    return Response.json({ok:true,lease:null});
   }
   const lease=await this.ctx.storage.get(String(body.key||''));
+  if(path==='/runner/quant-receipt'){
+   if(!lease||lease.runId!==runId||lease.leaseId!==body.leaseId)throw Error('quant_receipt_identity_rejected');
+   const id='job-quant:'+lease.revision+':'+lease.ticketId+':'+lease.jobId;
+   const quant=await this.ctx.storage.get(id),index=await this.ctx.storage.get('job-quant-index')||[];
+   const latest=index.filter(q=>q.repository===lease.repository).slice(0,5);
+   if(!quant||quant.repository!==lease.repository||!quant.attempts.some(a=>a.runUrl===runUrl)||latest.filter(q=>q.id===id).length!==1)throw Error('durable_quant_readback_failed');
+   return Response.json({ok:true,quantId:id,status:quant.status,durableReadback:true,latestFiveContains:true,attemptCount:quant.attempts.length,repository:quant.repository,runUrl});
+  }
   if(!lease||lease.runId!==runId||lease.leaseId!==body.leaseId||lease.leaseUntil<Date.now())return Response.json({ok:false,error:'writer_lease_rejected',adapter:VERSION,path},{status:409});
   const message=String(body.message||'').slice(0,390);
   if(path==='/runner/event'){
@@ -288,7 +304,7 @@ export default{
  async fetch(request,env){
   const path=new URL(request.url).pathname;
   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':origins.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Access-Control-Allow-Methods':'GET, POST, OPTIONS','Access-Control-Allow-Headers':'Authorization, Content-Type','Vary':'Origin'}});
-  if(request.method==='POST' && ['/runner/claim','/runner/event','/runner/result','/runner/propose','/runner/review','/runner/preview','/runner/plan','/runner/build','/runner/engine-review','/runner/arbitrate','/runner/capability'].includes(path)){
+  if(request.method==='POST' && ['/runner/claim','/runner/event','/runner/result','/runner/quant-receipt','/runner/quant-audit','/runner/propose','/runner/review','/runner/preview','/runner/plan','/runner/build','/runner/engine-review','/runner/arbitrate','/runner/capability'].includes(path)){
    try{
     const identity=await authenticate(request);
     if(Number(request.headers.get('Content-Length')||0)>160000)return new Response('Body too large',{status:413});
