@@ -38,14 +38,14 @@
     root.dataset.context='home';
     root.removeAttribute('aria-busy');
     const name=root.querySelector('.ib-head strong'),next=root.querySelector('.ib-next');
-    if(name)name.textContent='INFINITY READS & REALMS · STORIES OF MYSTERY, ADVENTURE & SUSPENSE';
+    if(name)name.textContent='READS & REALMS';
     if(next)next.textContent='Another story';
     const label=root.querySelector('.ib-asteroid-label');
-    if(label)label.textContent='INFINITY READS & REALMS';
+    if(label)label.textContent='READS & REALMS';
     const card=root.querySelector('.ib-story');
     if(card?.dataset.ready==='false'){
       root.querySelector('.ib-title').textContent='Writing a fresh Reads & Realms story';
-      root.querySelector('.ib-summary').textContent='Finding documented evidence for an original story of Mystery, Adventure or Suspense.';
+      root.querySelector('.ib-summary').textContent='Finding documented evidence for a fresh original story.';
     }
   }
   const E = (tag, cls, value) => {
@@ -82,17 +82,20 @@
   function cardLayout() {
     root.replaceChildren();
     const header = E('div', 'ib-head');
-    header.append(E('strong', '', 'INFINITY READS & REALMS · STORIES OF MYSTERY, ADVENTURE & SUSPENSE'), E('button', 'ib-next', 'Another story'));
+    header.append(E('strong', '', 'READS & REALMS'), E('button', 'ib-next', 'Another story'));
     header.lastChild.type = 'button'; header.lastChild.dataset.bookAction = 'next';
     const card = E('article', 'ib-story');card.dataset.ready='false';
     const hero=E('div','ib-asteroid-hero');
+    const brand=E('div','ib-brand');brand.setAttribute('aria-label','Reads & Realms');
+    const emblem=E('span','ib-brand-emblem','R');emblem.setAttribute('aria-hidden','true');
+    brand.append(emblem,E('strong','ib-brand-name','READS & REALMS'));
     const asteroid=E('img','ib-asteroid-rock');asteroid.src=ASTEROID_ART;asteroid.alt='Rocky asteroid with illuminated craters';asteroid.decoding='async';
     const copy=E('div','ib-asteroid-copy');
-    copy.append(E('small','ib-asteroid-label','INFINITY READS & REALMS'),E('div', 'ib-category'), E('h2', 'ib-title'));
-    hero.append(asteroid,E('div','ib-asteroid-shade'),copy);
+    copy.append(E('small','ib-asteroid-label','READS & REALMS'),E('div', 'ib-category'), E('h2', 'ib-title'));
+    hero.append(asteroid,E('div','ib-asteroid-shade'),brand,copy);
     card.append(hero,E('p','ib-summary'));
     const detail = E('details', 'ib-details');
-    detail.append(E('summary', '', 'Expand to read the full story'), E('p', 'ib-full'));
+    detail.append(E('summary', '', 'Expand to read the full story'), E('p', 'ib-full'),E('p','ib-story-meta'));
     const source = E('a', 'ib-source', 'View original source ↗');
     source.target = '_blank'; source.rel = 'noopener noreferrer';
     detail.append(source, E('div', 'ib-more-sources'));
@@ -118,7 +121,7 @@
     status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite');
     card.append(detail, actions, build);
     copy.querySelector('.ib-title').textContent='Writing a fresh Reads & Realms story';
-    card.querySelector('.ib-summary').textContent='Cloudflare AI is researching documented evidence for a new Mystery, Adventure or Suspense story.';
+    card.querySelector('.ib-summary').textContent='Cloudflare AI is researching documented evidence for a new original story.';
     root.append(header, card, status);
   }
   function note(message) { const p = root.querySelector('.ib-status'); if (p) p.textContent = message; }
@@ -245,12 +248,10 @@
   function render(story, roll) {
     current = story; interactedWithStory = false; remember(story.id);
     const card=root.querySelector('.ib-story');card.hidden=false;card.dataset.ready='true';root.removeAttribute('aria-busy');
-    root.querySelector('.ib-category').textContent = [
-      story.mood||window.PhiInfiniteBookDiscover?.storyMood?.(lastSearchQuery,roll)||'Mystery',
-      catalog.sectors.find(s => s.id === story.sector)?.name || 'Surprising history',
-      story.status || 'sourced story',
-      story.year || ''
-    ].filter(Boolean).join(' · ');
+    const mood=story.mood||window.PhiInfiniteBookDiscover?.storyMood?.(lastSearchQuery,roll)||'Mystery';
+    root.querySelector('.ib-category').textContent='Category: '+String(mood).trim().slice(0,40);
+    const meta=[catalog.sectors.find(s=>s.id===story.sector)?.name,story.status,story.year].filter(Boolean).join(' · ');
+    const metadata=root.querySelector('.ib-story-meta');metadata.textContent=meta;metadata.hidden=!meta;
     root.querySelector('.ib-story').dataset.storyId = story.id;
     root.querySelector('.ib-title').textContent = story.title;
     root.querySelector('.ib-summary').textContent = story.summary;
@@ -453,7 +454,8 @@
     if(requireFresh){
       current=null;interactedWithStory=false;
       const card=root.querySelector('.ib-story');card.hidden=false;card.dataset.ready='false';delete card.dataset.storyId;
-      root.querySelector('.ib-category').textContent='SOURCED '+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery').toUpperCase();
+      root.querySelector('.ib-category').textContent='Category: '+(window.PhiInfiniteBookDiscover?.storyMood?.(query,roll)||'Mystery');
+      const metadata=root.querySelector('.ib-story-meta');metadata.textContent='';metadata.hidden=true;
       root.querySelector('.ib-title').textContent=searchMode?'Researching Asteroid story for '+String(query).slice(0,100):'Writing a fresh Reads & Realms story';
       root.querySelector('.ib-summary').textContent=searchMode?'Finding original evidence for your search. Cloudflare AI will write the Asteroid story when the evidence supports it.':'Finding fresh documented evidence. Cloudflare AI will write a new Reads & Realms story for this visit.';
       root.setAttribute('aria-busy','true');window.dispatchEvent(new CustomEvent('phi:story:reset'));
