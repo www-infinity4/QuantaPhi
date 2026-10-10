@@ -3,6 +3,7 @@
 'use strict';
 const ROLES={'gold-diggers-ink':'yellow','naked-gold-digger':'yellow',bluey:'blue',blueberry:'blue',bluth:'blue','orange-julius':'orange','orange-peel':'orange',greenbeans:'green','pink-panther':'pink','purple-pearl':'purple','purple-pleasure':'purple','purple-people-eater':'purple'};
 Object.assign(ROLES,{"enchilada-lifecycle-manager": "purple", "pipeline-architect": "purple", "branch-fork-evaluator": "orange", "ambiguity-strainer": "orange", "utility-optimizer": "blue", "triage-selector": "blue", "repo-script-writer": "green", "layout-router": "green", "ecosystem-watcher": "red", "structural-auditor": "red", "interaction-sniffer": "yellow", "state-delta-tracker": "yellow", "regression-detective": "pink", "silent-storage-auditor": "pink"});
+Object.assign(ROLES,{"purple-reign":"purple","grape-escape":"purple","deep-plum":"purple","orange-peel":"orange","marmalade":"orange","tangelo":"orange","blue-velvet":"blue","indigo":"blue","cobalt":"blue","green-hornet":"green","jade":"green","mint-condition":"green","red-alert":"red","crimson":"red","yellow-jacket":"yellow","gold-digger":"yellow","pink-floyd":"pink","bubblegum":"pink","magenta":"pink","the-black-box":"black"});
 function normalize(value){
  if(!value||!Array.isArray(value.jobs)||!value.jobs.length)throw Error('GPT did not provide structured jobs');
  return value.jobs.slice(0,30).map((j,i)=>{
