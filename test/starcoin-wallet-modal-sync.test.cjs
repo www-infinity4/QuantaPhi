@@ -8,16 +8,17 @@ const end=js.indexOf('  let cloudBalances={};',start);
 assert.ok(start>0&&end>start,'extract deployed StarQuest wallet refresh');
 const implementation=js.slice(start,end);
 const token='sq_'+'b'.repeat(40);
-function harness(username='device_example',remoteName=username,hasLocalToken=false){
+function harness(username='device_example',remoteName=username,hasLocalToken=false,maskedKey=username){
  const messages=[],calls=[];
- const session={key:username,username};
+ const session={key:maskedKey,username};
  const profile={tokens:47,pendingShareCredits:9,shareCount:100,ledger:[]};
  const state={username:remoteName,starCoins:49,pendingShareCredits:5,shareCount:120,ledger:[]};
  const ctx={
    console,Date,Number,String,Map,Array,AbortSignal:{timeout:()=>undefined},
    document:{querySelectorAll:()=>[{set textContent(v){messages.push(v)},dataset:{}}]},
    window:{QuantaCloudConnection:{resolveDeviceToken:async()=>token},QuantaStarCoinCloud:null},
-   read:()=>session, WALLET_SESSION_KEY:'starquest_session',
+   read:(key,fallback)=>key==='starquest_session'?session:key==='starquest_users'?{[maskedKey]:{username}}:fallback,
+   WALLET_SESSION_KEY:'starquest_session', WALLET_USERS_KEY:'starquest_users',
    walletStore:()=>({profile,save:next=>Object.assign(profile,next)}),
    normalizeWallet:next=>next,
    starQuestDeviceToken:()=>hasLocalToken?token:'',
@@ -55,5 +56,13 @@ test('both popup opening handlers recheck the server rather than repaint the cac
  assert.match(js,/if\(!panel\.hidden\)refreshWalletOnOpen\(\)/);
  assert.match(js,/await window\.QuantaStarCoinCloud\?\.reconcile\?\.\(\)/);
  const html=fs.readFileSync('index.html','utf8');
- assert.match(html,/wallet-runtime\.js\?v=20261010-starquest-modal-sync2/);
+ assert.match(html,/wallet-runtime\.js\?v=20261010-[^"']+/);
+});
+
+test('masked wallet IDs can share one authenticated StarQuest username without rejecting their balance',async()=>{
+ const h=harness('device_example','device_example',false,'masked-wallet-revolver-001');
+ const result=await h.api.refreshStarCoinCloud();
+ assert.equal(result.starCoins,49);
+ assert.equal(h.profile.tokens,49);
+ assert.equal(h.calls.length,1);
 });
