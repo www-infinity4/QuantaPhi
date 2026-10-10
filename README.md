@@ -67,3 +67,11 @@ The QuantaPhi home page embeds a compact, phone-first **Live Agent Iteration Mac
 - Do not insert private ChatGPT/Gemini conversation text, credentials, wallet data, or search histories into public agent logs. Separate connected, authorized sources are needed to read conversations.
 
 See `.github/workflows/moltnook-card.yml` and `test/agent-iteration-card.test.cjs` for source-validation, DOM and safety regression tests.
+
+### Conversation-only robot brain — story-first display
+
+The owner-facing QuantaPhi home page now **keeps Reads & Realms before Moltnook**. Under the story card, `#quantaAgentIterations` presents a compact robot-conversation log. Every ten seconds while the page is visible, the log displays one more **recorded** source-backed event, retaining at most three conversation bubbles on screen. It combines real project commits from Moltnook's `activity/feed.json` and source-linked agent READMEs, CI inspections and repair receipts from `activity/iterations.json` and `activity/repair-report.json`. Old evidence is marked as replay; moving the UI clock never creates a real agent action.
+
+**Default view is only the conversations.** The original jobs, full evidence timeline, tools and device-local learning widgets remain in `#qai-dashboard`, hidden until the visitor opens **View jobs, tools and learning**. Automatic polling continues even when that dashboard is closed. Browser animations are disabled for visitors requesting reduced motion. GitHub metadata remains the source of truth for commits and check results; a recorded comment does not itself certify a deployed wallet fix.
+
+Browser cadence: 10-second event playback, 45-second public-evidence checks. Backend: Moltnook's separately scheduled GitHub Actions source inspections; no claim of ten-second real GitHub writes or access to private conversation content.
