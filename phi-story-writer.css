@@ -1,29 +1,30 @@
-/* Oracle Octaves Story Writer: compact, calm, mobile-first, independent of Reads & Realms */
-#phiStoryWriter{display:grid;gap:12px;margin:18px 0;color:#faf4ff;font:500 14px/1.55 system-ui,sans-serif}
+/* Story Writer — light blue companion to Image Builder, distinct from purple research cards. */
+#phiStoryWriter{display:grid;gap:12px;margin:13px 0 16px;max-width:100%;color:#173c63;font:500 14px/1.55 system-ui,sans-serif}
 #phiStoryWriter *{box-sizing:border-box}
-#phiStoryWriter .sw-card{min-width:0;border:1px solid rgba(231,192,255,.42);border-radius:19px;padding:17px;background:linear-gradient(145deg,#24133e 0%,#120e2a 65%,#231145 100%);box-shadow:0 10px 30px #23113d25}
-#phiStoryWriter .sw-eyebrow{display:block;color:#f5c862;font-size:11px;font-weight:900;letter-spacing:.14em}
-#phiStoryWriter h2{color:#fff;margin:5px 0 7px;font-size:25px;line-height:1.15}
-#phiStoryWriter h3{color:#fff;margin:6px 0 12px;font-size:21px;line-height:1.25;overflow-wrap:anywhere}
-#phiStoryWriter .sw-copy,#phiStoryWriter .sw-muted{color:#d5c6e9;margin:0 0 13px}
+#phiStoryWriter .sw-card{min-width:0;border:2px solid #6d9fd1;border-radius:13px;padding:14px;background:linear-gradient(155deg,#e0f1ff,#afd7fa);box-shadow:0 3px 0 #bad5eb}
+#phiStoryWriter .sw-eyebrow{display:block;color:#225f94;font-size:11px;font-weight:900;letter-spacing:.11em}
+#phiStoryWriter h2{color:#0a3257;margin:5px 0 7px;font-size:22px;line-height:1.2}
+#phiStoryWriter h3{color:#0a3257;margin:6px 0 12px;font-size:20px;line-height:1.25;overflow-wrap:anywhere}
+#phiStoryWriter .sw-copy,#phiStoryWriter .sw-muted{color:#2c5273;margin:0 0 13px}
 #phiStoryWriter .sw-muted{font-size:12px;margin:8px 0 0}
-#phiStoryWriter .sw-label{display:block;font-weight:800;margin:12px 0 5px;color:#f9e7ff}
-#phiStoryWriter .sw-field{display:block;width:100%;min-width:0;background:#fcf9ff;color:#221332;border:1px solid #bd9ad6;border-radius:11px;padding:11px 12px;font:500 15px/1.4 system-ui,sans-serif}
+#phiStoryWriter .sw-label{display:block;font-weight:800;margin:12px 0 5px;color:#214a70}
+#phiStoryWriter .sw-field{display:block;width:100%;min-width:0;background:#fff;color:#162b42;border:2px solid #87b3dc;border-radius:11px;padding:11px 12px;font:500 15px/1.4 system-ui,sans-serif}
 #phiStoryWriter textarea.sw-field{resize:vertical;min-height:102px}
 #phiStoryWriter .sw-options{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
 #phiStoryWriter button{touch-action:manipulation;cursor:pointer}
-#phiStoryWriter .sw-primary{display:block;width:100%;border:1px solid #e5bf59;border-radius:13px;background:linear-gradient(120deg,#ffe391,#f6bf48);color:#291b13;padding:13px 10px;font:900 14px/1.3 system-ui,sans-serif}
+#phiStoryWriter .sw-primary{display:block;width:100%;border:1px solid #0d396b;border-radius:10px;background:#164c89;color:#fff;padding:13px 10px;font:900 14px/1.3 system-ui,sans-serif}
 #phiStoryWriter button:disabled{cursor:wait;opacity:.6}
-#phiStoryWriter .sw-notice,#phiStoryWriter .sw-art-status{font-size:12px;color:#f4e9ff;margin:10px 0 3px;overflow-wrap:anywhere}
+#phiStoryWriter .sw-notice,#phiStoryWriter .sw-art-status,#phiStoryWriter .sw-reward-status{font-size:12px;color:#244f75;margin:10px 0 3px;overflow-wrap:anywhere}
 #phiStoryWriter .sw-output[hidden]{display:none}
-#phiStoryWriter .sw-story{white-space:pre-line;color:#f7efff;line-height:1.72;font-size:14px}
+#phiStoryWriter .sw-story{white-space:pre-line;color:#163f65;line-height:1.72;font-size:14px}
 #phiStoryWriter .sw-story p{margin:0 0 14px}
-#phiStoryWriter .sw-art{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;background:#0c0917;border:1px solid #9570b2;border-radius:12px;margin:8px 0 10px}
+#phiStoryWriter .sw-art{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;background:#f5faff;border:1px solid #83b0da;border-radius:12px;margin:8px 0 10px}
 #phiStoryWriter .sw-art[hidden]{display:none}
 #phiStoryWriter .sw-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:16px}
-#phiStoryWriter .sw-actions button{background:#34234f;color:#fff;border:1px solid #a98cc6;border-radius:10px;min-height:39px;padding:8px 5px;font-weight:800;font-size:11px;overflow-wrap:anywhere}
-#phiStoryWriter .sw-actions button:first-child{grid-column:span 2;background:#edc457;color:#291427;border-color:#edc457;font-size:13px}
-#phiStoryWriter .sw-history strong{display:block;margin-bottom:8px;color:#f6c862}
-#phiStoryWriter .sw-history{padding:12px 17px}
-#phiStoryWriter :focus-visible{outline:3px solid #f7d473;outline-offset:2px}
-@media(max-width:350px){#phiStoryWriter .sw-options{grid-template-columns:1fr}#phiStoryWriter .sw-actions{grid-template-columns:1fr}#phiStoryWriter .sw-actions button:first-child{grid-column:span 1}}
+#phiStoryWriter .sw-actions button{background:#f8fcff;color:#173e63;border:1px solid #87b3dc;border-radius:10px;min-height:43px;padding:8px 5px;font-weight:800;font-size:12px;overflow-wrap:anywhere}
+#phiStoryWriter .sw-actions #sw-star{grid-column:span 2;background:linear-gradient(120deg,#fff1bd,#f2c765);color:#402d05;border-color:#ca9f36;font-size:13px}
+#phiStoryWriter .sw-actions #sw-collect,#phiStoryWriter .sw-actions #sw-share{background:#174e86;color:#fff;border-color:#174e86}
+#phiStoryWriter .sw-history strong{display:block;margin-bottom:8px;color:#164e80}
+#phiStoryWriter .sw-history{padding:12px 14px}
+#phiStoryWriter :focus-visible{outline:3px solid #164e86;outline-offset:2px}
+@media(max-width:350px){#phiStoryWriter .sw-options{grid-template-columns:1fr}#phiStoryWriter .sw-actions{grid-template-columns:1fr}#phiStoryWriter .sw-actions #sw-star{grid-column:span 1}}
