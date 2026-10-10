@@ -49,7 +49,7 @@ export class BrainClock extends DurableObject{
      const key='writer:'+ticket.id+':'+job.id+':'+revision;
      const previous=await this.ctx.storage.get(key);
      if(previous?.adapterVersion===VERSION&&previous?.leaseUntil>Date.now()||previous?.status==='deployed_verified'||previous?.retryAt>Date.now())continue;
-     const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+20*60*1000,status:'claimed',job};
+     const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+20*60*1000,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
      await this.ctx.storage.put(key,lease);
      await this.emit('greenbeans','pink-panther','writer claimed','Authenticated repository runner claimed '+ticket.id+'/'+job.id+'. It can write brain-interface files, run tests, and open a hosted Android browser.',runUrl);
      return Response.json({ok:true,lease});
@@ -61,6 +61,7 @@ export class BrainClock extends DurableObject{
   if(!lease||lease.runId!==runId||lease.leaseId!==body.leaseId||lease.leaseUntil<Date.now())return Response.json({ok:false,error:'writer_lease_rejected'},{status:409});
   const message=String(body.message||'').slice(0,390);
   if(path==='/runner/event'){
+   if(/^[a-f0-9]{40}$/.test(body.commitSha||'')){lease.commitSha=body.commitSha;await this.ctx.storage.put(lease.key,lease);}
    await this.emit(body.agent==='pink-panther'?'pink-panther':'greenbeans','purple-pearl','repair progress',message,runUrl);
    return Response.json({ok:true});
   }
@@ -85,7 +86,7 @@ export class BrainClock extends DurableObject{
    }
    if(body.status==='deployed_verified'&&((await this.ctx.storage.get('review:'+lease.key))?.leaseId!==lease.leaseId||body.browserPassed!==true||body.deployedFilesMatched!==true||body.reviewApproved!==true))throw Error('browser_and_review_receipt_required');
   }
-  const receipt={...lease,status:body.status,leaseUntil:0,retryAt:body.status==='blocked'?Date.now()+30*60*1000:Date.now()+24*60*60*1000,when:new Date().toISOString(),commitSha:body.commitSha||null,testsPassed:body.testsPassed===true,browserPassed:body.browserPassed===true,summary:message,runUrl};
+  const receipt={...lease,status:body.status,leaseUntil:0,retryAt:body.status==='blocked'?Date.now()+30*60*1000:Date.now()+5*60*1000,when:new Date().toISOString(),commitSha:body.commitSha||null,testsPassed:body.testsPassed===true,browserPassed:body.browserPassed===true,summary:message,runUrl};
   await this.ctx.storage.put(lease.key,receipt);
   const fresh=await this.env.WORK_DB.prepare('SELECT context_json FROM work_tickets WHERE id=?').bind(lease.ticketId).first();
   if(fresh){
@@ -169,13 +170,14 @@ export class BrainClock extends DurableObject{
      const reviewed=await this.env.MODELS.review({job,receipts:sources,page:telemetry.page});
      const review=reviewed.review;
      if(typeof review.approved!=='boolean'||typeof review.summary!=='string'||typeof review.next!=='string')throw Error('purple_review_schema_rejected');
-     const receipt={when:new Date().toISOString(),sources,gemini:{model:plan.model,instruction:plan.instruction},purple:{...reviewed},status:'blocked',blocker:'repository_write_executor_not_connected'};
+     const writerEligible=supported(job);
+     const receipt={when:new Date().toISOString(),sources,gemini:{model:plan.model,instruction:plan.instruction},purple:{...reviewed},status:writerEligible?'queued':'blocked',blocker:writerEligible?'awaiting_repository_runner':'repository_adapter_not_connected'};
      await this.ctx.storage.put(key,receipt);
      const fresh=await this.env.WORK_DB.prepare('SELECT context_json FROM work_tickets WHERE id=?').bind(ticket.id).first();
      const current=JSON.parse(fresh.context_json||'{}');
      const index=(current.color_jobs||[]).findIndex(j=>j.id===job.id);
      if(index>=0 && current.color_jobs[index].status!=='complete' && JSON.stringify(current.color_jobs[index].instructions)===JSON.stringify(job.instructions)){
-      current.color_jobs[index]={...current.color_jobs[index],status:'blocked',last_inspected_at:receipt.when,
+      current.color_jobs[index]={...current.color_jobs[index],status:receipt.status,last_inspected_at:receipt.when,
        progress:{summary:review.summary.slice(0,350),next:review.next.slice(0,350),blocker:receipt.blocker,receipt_key:key}};
       const serialized=JSON.stringify(current);
       if(serialized.length>64000)throw Error('ticket_context_full_receipt_retained_in_clock');
@@ -183,7 +185,7 @@ export class BrainClock extends DurableObject{
       await this.env.WORK_DB.prepare("UPDATE work_tickets SET context_json=?,claimed_by='Purple Pearl / Brain Clock',status=?,updated_at=? WHERE id=? AND context_json=?")
        .bind(serialized,current.color_jobs.every(j=>j.status==='blocked')?'blocked':'working',Date.now(),ticket.id,fresh.context_json).run();
      }
-     await this.emit('purple-pearl','greenbeans','progress review','GPT-OSS reviewed the source evidence for '+ticket.id+'/'+job.id+'. Inspection is recorded; implementation is blocked because a repository writer is not connected.','https://github.com/www-infinity4/'+repo);
+     await this.emit('purple-pearl','greenbeans','progress review','GPT-OSS inspected '+ticket.id+'/'+job.id+'. '+(writerEligible?'Queued for the connected repository writer and hosted browser; no completion claimed.':'This job needs its own repository/acceptance adapter. The connected brain-interface writer cannot implement this scope.'),'https://github.com/www-infinity4/'+repo);
     }
     await this.ctx.storage.put('state',{status:selected?'inspecting_queue':'watching',lastTick:Date.now(),signature,failures:0,
      provider:plan.provider,model:plan.model,monitor:'live HTML and source reads; no rendered-browser telemetry'});

@@ -14,7 +14,7 @@ async function call(path,body){
  const response=await fetch(API+'/runner/'+path,{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+token},body:JSON.stringify({...body,key:lease?.key,leaseId:lease?.leaseId}),signal:AbortSignal.timeout(120000)});
  const data=await response.json();if(!response.ok||!data.ok)throw Error(data.error||'Runner HTTP '+response.status);return data;
 }
-async function event(agent,message){report.events.push({agent,message,when:new Date().toISOString()});await call('event',{agent,message});}
+async function event(agent,message,receipt={}){report.events.push({agent,message,when:new Date().toISOString()});await call('event',{agent,message,...receipt});}
 async function browserCheck(){
  const {chromium}=await import('playwright');
  const browser=await chromium.launch({headless:true});
@@ -65,7 +65,7 @@ try{
   git('add','--',...paths);git('commit','-m','Repair '+report.jobId+' after GPT review and tests');commitSha=git('rev-parse','HEAD');
   git('push','origin','HEAD:main');
   }
-  await event('greenbeans','Committed '+commitSha.slice(0,9)+' for '+report.jobId+'. Waiting for the deployed source, then opening the hosted Android browser.');
+  await event('greenbeans','Committed '+commitSha.slice(0,9)+' for '+report.jobId+'. Waiting for the deployed source, then opening the hosted Android browser.',{commitSha});
   // The existing .org edge serves source from main. Verify exact deployed bytes, not HTTP alone.
   let matched=false;
   const deployedPaths=resume?['robot-directions.js']:paths;
