@@ -20,7 +20,7 @@
   const seenKey="phi:fred-spaces-seen:v1";
   const starsKey="phi:fred-spaces-stars:v1";
   const currentKey="phi:fred-spaces-current:v1";
-  let active=byId.get(FIRST), busy=false, unlocked=new Set(), balance=null, message="", stars=new Set(load(starsKey,[])), interestWeights=new Map(), selectedTopic="", selectedMode="search";
+  let active=byId.get(FIRST), busy=false, paymentsReady=false, unlocked=new Set(), balance=null, message="", stars=new Set(load(starsKey,[])), interestWeights=new Map(), selectedTopic="", selectedMode="search";
   function load(key,fallback){try {return JSON.parse(localStorage.getItem(key)||"null")??fallback;}catch{return fallback;}}
   function save(key,data){try{localStorage.setItem(key,JSON.stringify(data));}catch{}}
   function node(tag,cls,txt){const el=document.createElement(tag);if(cls)el.className=cls;if(txt!=null)el.textContent=String(txt);return el;}
@@ -81,12 +81,22 @@
     if(!response.ok||!data.ok)throw new Error(data.message||data.error||"StarQuest could not confirm the charge.");
     return data;
   }
+  async function checkPaymentReadiness(){
+    try {
+      const response=await fetch(API+"/health",{cache:"no-store"});
+      const data=await response.json();
+      paymentsReady=Boolean(response.ok&&data.ok&&data.paymentsReady);
+    }catch(_){paymentsReady=false;}
+    if(!paymentsReady)message="Media Star purchases are paused until the owner's StarCoin payout wallet is connected. No StarCoin will be charged.";
+    render();
+  }
   async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
   function rememberEpisode(e){const seen=new Set(load(seenKey,[]));seen.add(active.id);active=e;seen.add(e.id);const available=episodes.filter(isReplayLink);
     if(available.length&&available.every(x=>seen.has(x.id))) {save("phi:fred-spaces-previous-round:v1",[...seen]);seen.clear();seen.add(e.id);}
     save(seenKey,[...seen]);save(currentKey,e.id);}
   async function more(){
     if(busy||catalogLoading)return;
+    if(!paymentsReady){note("Media Star payments are paused until the owner payout wallet is verified. No StarCoin was charged.");return;}
     const next=pickNext();if(!next){note("No additional indexed episodes are available.");return;}
     // The fee is for curated discovery of a direct X replay link, not streaming rights.
     // The source may require X sign-in or disappear. Display this before every new debit.
@@ -236,8 +246,8 @@
     embedRow.append(button("Embed Media Star",()=>{void copyMediaStarEmbed()},"fs-phi fs-embed"));card.append(embedRow);
     const nextRow=node("div","fs-bottom");
     const hasCurated=episodes.some(e=>e.id!==FIRST&&isReplayLink(e));
-    const unlock=button(busy?"Confirming StarCoin charge…":"Buy next curated episode · 1 ★",more,"fs-next");
-    unlock.disabled=busy||catalogLoading||!hasCurated;
+    const unlock=button(busy?"Confirming StarCoin charge…":!paymentsReady?"Purchases paused · owner payout setup":"Buy next curated episode · 1 ★",more,"fs-next");
+    unlock.disabled=busy||catalogLoading||!hasCurated||!paymentsReady;
     nextRow.append(node("span","fs-index-count",catalogLoading?"Loading episode index…":episodes.filter(isReplayLink).length+" indexed Fred Spaces · no repeats until the round is complete"),unlock,node("span","fs-balance",balance==null?"Wallet balance unavailable":"StarCoins: "+balance));card.append(nextRow);
     const status=node("p","fs-status",message||"Featured replay is free. One new curated X episode link costs 1 full StarCoin after confirmation. Listening happens on X.");
     status.setAttribute("role","status");status.setAttribute("aria-live","polite");card.append(status);
@@ -257,7 +267,7 @@
       active=byId.get(FIRST);
       window.PhiMediaStarAsset.catalog=catalog;
     }catch(error){message="Full episode index could not load. Next episode is paused; retry by reloading.";render();return;}
-    catalogLoading=false;render();await sync();
+    catalogLoading=false;render();await sync();await checkPaymentReadiness();
   }
   render();void loadCatalog();void loadQuantInterests();
 })();
