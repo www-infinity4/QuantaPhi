@@ -851,6 +851,28 @@
     mount();setInterval(mount,30000);
   }
   window.ControlPhi={version:'1.9.2',sourceCounts:canonicalSearchCounts,recordShare,trackingUrl:(input={})=>{const plan=sharePlan(input,input.platform||'share');return plan.trackingUrl},openNews:()=>location.assign(NEWS_URL),shareFeed:()=>read(SHARE_KEY,[]).slice(),interestFeed:()=>read(INTEREST_KEY,[]).slice(),wallet:walletSnapshot,recordActivity,contextFeed:()=>read(CONTEXT_KEY,[]).slice(),ensureShareCredit,ensureActionCredit,ensureResearchSpinCredit,reconcileCollectedAds,shopCart,importLegacyStarCoinBalance,refreshWallet:refreshWalletUI,refreshCloudWallet:refreshCloudBalances,requestSponsoredCard,renderSponsoredCard};
+  // When QuantaPhi rendered buttons before Control Phi finished loading,
+  // their reward intents were persisted, not misrepresented as paid locally.
+  const QUANTA_DEFERRED_ACTIONS='quantaPhi:pendingStarCoinWalletActions:v1';
+  function flushDeferredQuantaActions(){
+    const queued=read(QUANTA_DEFERRED_ACTIONS,[]);
+    if(!Array.isArray(queued)||!queued.length)return;
+    const remaining=[];
+    for(const item of queued.slice(0,500)){
+      const kind=clean(item?.kind,50),ref=clean(item?.ref,700);
+      if(!ref||!['collect','share','star','build_image','fix_image','extract','compare'].includes(kind))continue;
+      try{
+        if(kind==='share')ensureShareCredit(ref,'web_share_api');
+        else ensureActionCredit(ref,kind);
+      }catch(error){remaining.push(item)}
+    }
+    if(remaining.length!==queued.length)write(QUANTA_DEFERRED_ACTIONS,remaining);
+    void flushStarReceipts();
+  }
+  window.addEventListener('load',flushDeferredQuantaActions);
+  document.addEventListener('starquest:ledger-connected',flushDeferredQuantaActions);
+  window.addEventListener('online',flushDeferredQuantaActions);
+  setTimeout(flushDeferredQuantaActions,0);
   installShareBridge();
   installShareLinkBridge();
   installCrossTabBridge();
