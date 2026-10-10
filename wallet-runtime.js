@@ -268,10 +268,19 @@
       const payload=await response.json().catch(()=>({}));
       if(!response.ok||!payload?.ok||!payload?.state)return null;
       const state=payload.state,store=walletStore(),wallet=normalizeWallet(store.profile);
-      wallet.tokens=Math.max(0,Number(state.starCoins)||0);
-      wallet.pendingShareCredits=Math.max(0,Math.min(9,Number(state.pendingShareCredits)||0));
-      wallet.shareCount=Math.max(0,Number(state.shareCount)||0);
-      if(Array.isArray(state.ledger)&&state.ledger.length)wallet.ledger=state.ledger.slice(-500);
+      // Never overwrite an optimistic local action while its payout is still
+      // queued. The authoritative StarQuest balance is applied after ACK.
+      const payoutPending=read('phi:pendingStarCoinReceipts:v1',[]).length;
+      if(!payoutPending){
+        wallet.tokens=Math.max(0,Number(state.starCoins)||0);
+        wallet.pendingShareCredits=Math.max(0,Math.min(9,Number(state.pendingShareCredits)||0));
+        wallet.shareCount=Math.max(0,Number(state.shareCount)||0);
+      }
+      if(Array.isArray(state.ledger)&&state.ledger.length){
+        const local=Array.isArray(wallet.ledger)?wallet.ledger:[];
+        const byId=new Map([...local,...state.ledger].map(x=>[x?.id||x?.referenceId,x]));
+        wallet.ledger=[...byId.values()].slice(-500);
+      }
       if(Array.isArray(state.watchHistory))wallet.watchHistory=state.watchHistory.slice(-500);
       if(state.username)wallet.username=String(state.username);
       store.save(wallet);
@@ -476,20 +485,75 @@
     void flushStarReceipts();
     return true;
   }
+  // StarQuest, not the Quanta action catalog, owns spendable StarCoin rewards.
+  // Always use the enrolled StarQuest device identity, including restored Cloudflare
+  // accounts. The Infinity wallet class alone may be unavailable on this page.
+  let lastStarPayoutStatus='';
+  function starPayoutStatus(message,pending=0){
+    const detail={message,pending,confirmed:pending===0,updatedAt:Date.now()};
+    if(message!==lastStarPayoutStatus){
+      lastStarPayoutStatus=message;
+      try{window.dispatchEvent(new CustomEvent('quantaphi:starcoin-payout-status',{detail}))}catch{}
+    }
+    const indicator=document.getElementById('quantaStarPayoutStatus');
+    if(indicator){indicator.textContent=message;indicator.hidden=!message;indicator.dataset.pending=String(pending>0)}
+  }
+  async function starQuestPayoutToken(){
+    const bridge=window.QuantaCloudConnection;
+    let token=starQuestDeviceToken();
+    if(!token&&typeof bridge?.resolveDeviceToken==='function'){
+      try{token=await bridge.resolveDeviceToken()}catch(error){console.warn('StarQuest device recovery deferred',error)}
+    }
+    if(!token){
+      const Wallet=window.InfinityCloudWallet||window.InfinityUnifiedWallet;
+      try{if(Wallet)token=new Wallet({appName:document.title}).token()}catch{}
+    }
+    return /^sq_[A-Za-z0-9_-]{32,}$/.test(String(token||''))?token:'';
+  }
   async function flushStarReceipts(){
-    if(rewardSyncing)return;
-    const Wallet=window.InfinityCloudWallet||window.InfinityUnifiedWallet;
-    if(!Wallet)return;
-    let token;try{token=new Wallet({appName:document.title}).token()}catch{return}
+    if(rewardSyncing)return {pending:read(REWARD_QUEUE,[]).length};
+    const queued=read(REWARD_QUEUE,[]);
+    if(!queued.length)return {pending:0,ok:true};
+    const token=await starQuestPayoutToken();
+    if(!token){
+      starPayoutStatus(queued.length+' StarCoin reward'+(queued.length===1?'':'s')+' pending wallet connection',queued.length);
+      return {pending:queued.length,ok:false,reason:'ledger_not_connected'};
+    }
     rewardSyncing=true;
-    try{for(const receipt of read(REWARD_QUEUE,[])){
-      const response=await fetch('https://starquest-ledger.marvaseater.workers.dev/v1/shares',{method:'POST',headers:{'content-type':'application/json',authorization:'Bearer '+token},body:JSON.stringify(receipt),signal:AbortSignal.timeout(8000)});
-      if(!response.ok)break;
-      write(REWARD_QUEUE,read(REWARD_QUEUE,[]).filter(x=>x.attemptId!==receipt.attemptId));
-    }}catch(error){console.warn('Star Coin receipt saved for retry',error)}finally{rewardSyncing=false}
+    let lastError='';
+    try{
+      for(const receipt of read(REWARD_QUEUE,[])){
+        const response=await fetch(STARQUEST_ENDPOINT+'/v1/shares',{
+          method:'POST',headers:{'content-type':'application/json',authorization:'Bearer '+token},
+          body:JSON.stringify(receipt),signal:AbortSignal.timeout(12000),cache:'no-store'});
+        const payload=await response.json().catch(()=>({}));
+        if(!response.ok||payload.ok!==true||!(payload.credited===true||payload.duplicate===true)){
+          lastError=String(payload.error||'HTTP '+response.status);
+          break;
+        }
+        // Remove only once StarQuest acknowledges credit or the same receipt ID.
+        const remaining=read(REWARD_QUEUE,[]).filter(x=>x.attemptId!==receipt.attemptId);
+        if(!write(REWARD_QUEUE,remaining)){
+          lastError='reward_receipt_storage_unavailable';break;
+        }
+      }
+    }catch(error){lastError=String(error?.message||error||'network_error')}
+    finally{rewardSyncing=false}
+    const remaining=read(REWARD_QUEUE,[]).length;
+    if(remaining){
+      console.warn('StarCoin payout receipts retained for retry',lastError||'connection_pending');
+      starPayoutStatus(remaining+' StarCoin reward'+(remaining===1?'':'s')+' pending sync',remaining);
+    }else{
+      starPayoutStatus('StarCoin wallet synced',0);
+      void refreshStarCoinCloud();
+    }
+    return {pending:remaining,ok:!remaining,reason:lastError};
   }
   for(const event of ['load','online','focus'])window.addEventListener(event,flushStarReceipts);
   document.addEventListener('starquest:ledger-connected',flushStarReceipts);
+  document.addEventListener('starquest:auth-changed',flushStarReceipts);
+  window.addEventListener('quantaphi:wallet-linked',flushStarReceipts);
+  window.addEventListener('online',()=>{void flushStarReceipts()});
 
   function ensureResearchSpinCredit(receipt){
     const ref=clean(receipt?.reference_id||'',800);
@@ -518,7 +582,7 @@
     const ref=clean(reference||location.href,700);
     const eventKey=`action:${clean(kind,40)}:${ref}`;
     const already=wallet.ledger.some(entry=>entry?.referenceId===eventKey||(entry?.type===`${kind}_credit`&&entry?.referenceId===ref));
-    if(already){refreshWalletUI();return {...walletSnapshot(),awarded:0,alreadyRecorded:true}}
+    if(already){void queueStarReceipt(eventKey,ref,kind);refreshWalletUI();return {...walletSnapshot(),awarded:0,alreadyRecorded:true}}
     const now=Date.now();
     wallet.pendingShareCredits+=1;
     let awarded=0;
