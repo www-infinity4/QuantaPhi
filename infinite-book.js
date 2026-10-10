@@ -519,8 +519,8 @@
     interactedWithStory = true;
     const target = deepLink(current);
     const url = target; // Avoid wrapping a URL inside another URL's query string.
-    const starter = String(current.summary || '').replace(/\\s+/g,' ').trim();
-    const teaser = (starter.slice(0,150).replace(/\\s+\\S*$/,'') || starter.slice(0,150)) + (starter.length > 150 ? '… Read and research it in Infinity Phi.' : ' · Explore on Phi.');
+    const starter = String(current.summary || '').replace(/\s+/g,' ').trim();
+    const teaser = (starter.slice(0,150).replace(/\s+\S*$/,'') || starter.slice(0,150)) + (starter.length > 150 ? '… Read and research it in Infinity Phi.' : ' · Explore on Phi.');
     let combined = null;
     try {
       combined = await window.PhiBookImageBridge?.shareStory?.(current, url) || null;
