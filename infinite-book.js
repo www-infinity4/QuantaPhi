@@ -389,6 +389,14 @@
     for (const story of byId.values()) if (!seen.has(story.id)) n++;
     return n;
   }
+  function sourcedCard(story){
+    return storyValid(story) && (
+      window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story) ||
+      (story.discoveryMethod==='encyclopedia-backup' &&
+       /^https:\/\/en\.wikipedia\.org\//.test(story.sourceUrl) &&
+       String(story.status||'').includes('source excerpt'))
+    );
+  }
   function discoverInBackground(roll, onDeep, storyKind='reads-realms') {
     const key = [storyKind,roll.sector, roll.angle, roll.sourceClass, roll.focus || ''].join(':');
     if (researchFlights.has(key)) return researchFlights.get(key);
@@ -399,7 +407,7 @@
     const research = Promise.resolve().then(() => discover({
       roll, catalog, seen: seenIds(), focus: roll.focus || '', strictGPT:true, storyKind,
       onDeep: story => {
-        if (!storyValid(story) || !window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story) || seenIds().has(story.id)) return;
+        if (!sourcedCard(story) || seenIds().has(story.id)) return;
         byId.set(story.id, story);
         cacheLive(story);
         if (typeof onDeep === 'function') onDeep(story);
@@ -409,7 +417,7 @@
     const expired = new Promise(resolve => { deadline = setTimeout(() => resolve(null), RESEARCH_DEADLINE_MS); });
     const flight = Promise.race([research, expired])
       .then(story => {
-        if (!storyValid(story) || !window.PhiInfiniteBookDiscover?.eligibleNarrative?.(story) || seenIds().has(story.id)) return null;
+        if (!sourcedCard(story) || seenIds().has(story.id)) return null;
         byId.set(story.id, story);
         cacheLive(story);
         return story;
@@ -472,12 +480,14 @@
     const acceptNew = story => {
       // Do not replace a visible story on an unsuspecting reader.
       if (ticket !== activeStoryTicket || interactedWithStory ||
-        !storyValid(story) || seenIds().has(story.id) || current?.id === story.id) return;
+        !sourcedCard(story) || seenIds().has(story.id) || current?.id === story.id) return;
       if (ready && current?.id !== ready.id) return;
       present(story, roll);
-      if(!spinSubmitted)note(story.discoveryMethod === 'gpt-deep'
-        ? 'New sourced historical story · original Cloudflare AI narrative'
-        : 'New historical discovery · cited source');
+      if(!spinSubmitted)note(story.discoveryMethod === 'encyclopedia-backup'
+        ? 'Cited Wikipedia source excerpt · original AI story could not finish. This is not GPT-written prose.'
+        : story.discoveryMethod === 'gpt-deep'
+          ? 'New sourced historical story · original Cloudflare AI narrative'
+          : 'New historical discovery · original GPT research with cited source');
     };
     void discoverInBackground(roll, acceptNew, storyKind)
       .then(story=>{acceptNew(story);if(ticket===activeStoryTicket&&root.querySelector('.ib-story')?.dataset.ready!=='true'){
