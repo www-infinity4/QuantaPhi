@@ -51,7 +51,7 @@ panel.hidden=true;
 const picture=make('img','ib-illustration-image');picture.alt='Illustration made for this book story';picture.loading='lazy';
 const description=make('figcaption','ib-illustration-caption','Your story illustration · saved on this device');
 const panelActions=make('div','ib-illustration-actions');
-for(const [action,label] of [['view','View clear image'],['remove','Clear image']]){
+for(const [action,label] of [['view','View clear image'],['trim','Hide top lettering'],['regenerate','Rebuild clean image'],['remove','Clear image']]){
  const button=make('button','ib-action',label);button.type='button';button.dataset.ibImage=action;panelActions.append(button)
 }
 panel.append(picture,description);
@@ -79,7 +79,9 @@ async function refresh(){
   picture.src=currentObjectUrl;
   picture.alt='Created illustration for '+(record.storyTitle||storyTitle());
   const approved=record.review?.status==='good'&&Number(record.review.score)>=75;
-  description.textContent=approved?'Your story illustration · reviewed and saved':'Your story illustration · '+(record.review?.status==='needs_work'?'review found details to improve':'visual quality not yet confirmed');
+  description.textContent=record.originalBlob?'Top lettering cropped · original preserved for restore':approved?'Your story illustration · reviewed and saved':'Your story illustration · '+(record.review?.status==='needs_work'?'review found details to improve':'visual quality not yet confirmed');
+  const trimButton=panelActions.querySelector('[data-ib-image="trim"]');
+  if(trimButton)trimButton.textContent=record.originalBlob?'Restore original image':'Hide top lettering';
   panel.dataset.review=approved?'good':record.review?.status||'uncertain';
   panel.hidden=false;
   panelActions.hidden=false;
@@ -173,9 +175,47 @@ builder.addEventListener('click',event=>{
   notify('Added the visible story. You can switch to another story and add more context before building.');
  }
 });
+async function toggleTopLettering(story){
+ const record=await stored(story);if(!record?.blob)throw Error('No existing illustration');
+ if(record.originalBlob){
+  await write({...record,blob:record.originalBlob,originalBlob:null,letteringTrimmed:false});
+  await refresh();return 'Original untrimmed picture restored.';
+ }
+ // The visual model sometimes writes a fake heading in the TOP of the pixel
+ // image. Cropping is an explicit, free, reversible local repair, not AI OCR.
+ const original=record.blob;
+ const bitmap=await createImageBitmap(original);
+ try{
+  const top=Math.floor(bitmap.height*.19);
+  const canvas=document.createElement('canvas');
+  canvas.width=bitmap.width;canvas.height=bitmap.height-top;
+  const ctx=canvas.getContext('2d');
+  if(!ctx)throw Error('Image canvas unavailable');
+  ctx.drawImage(bitmap,0,top,bitmap.width,bitmap.height-top,0,0,canvas.width,canvas.height);
+  const repaired=await new Promise(ok=>canvas.toBlob(ok,'image/png'));
+  if(!repaired)throw Error('Could not crop top lettering');
+  // Never discard the user-visible original, nor modify a different story.
+  await write({...record,blob:repaired,originalBlob:original,letteringTrimmed:true});
+ }finally{bitmap.close?.()}
+ if(storyId()===story)await refresh();
+ return 'Top 19% of the picture cropped to remove its fake heading. The original is preserved; tap Restore original image to undo. No AI generation used.';
+}
 book.addEventListener('click',event=>{
  const type=event.target.closest('[data-ib-image]')?.dataset.ibImage;
  if(type==='view'&&currentObjectUrl)showPreview(currentObjectUrl);
+ if(type==='trim'&&storyId()){
+  const id=storyId(),button=event.target.closest('[data-ib-image]');
+  if(button.disabled)return;button.disabled=true;
+  void toggleTopLettering(id).then(message=>{const p=book.querySelector('.ib-status');if(p)p.textContent=message})
+   .catch(error=>{const p=book.querySelector('.ib-status');if(p)p.textContent='Could not adjust image: '+String(error?.message||error)})
+   .finally(()=>{button.disabled=false});
+ }
+ if(type==='regenerate'&&storyId()){
+  const id=storyId();
+  window.dispatchEvent(new CustomEvent('phi:story:image-retry',{detail:{storyId:id}}));
+  const p=book.querySelector('.ib-status');
+  if(p)p.textContent='Requested a new text-free illustration. The previous image stays until the replacement is successfully saved. This will use one Cloudflare image request.';
+ }
  if(type==='remove'&&storyId()){
   const id=storyId();
   void erase(id).then(()=>refresh()).then(()=>{const p=book.querySelector('.ib-status');if(p)p.textContent='Story illustration cleared from this device. The story and its source remain.'}).catch(error=>{const p=book.querySelector('.ib-status');if(p)p.textContent='Could not clear image: '+error.message});
@@ -206,7 +246,7 @@ async function attachGenerated(story,blob,metadata={}){
  if(!story?.id||!blob||!['image/jpeg','image/png','image/webp'].includes(blob.type))throw Error('Invalid automatically reviewed story image');
  // Preserve successfully rendered artwork, including drafts; never label an uncertain review approved.
  if(!metadata.review)metadata.review={status:'uncertain',score:null,issues:[]};
- if(await hasStored(story.id))return {ok:true,reused:true};
+ if(!metadata.replaceExisting&&await hasStored(story.id))return {ok:true,reused:true};
  await write({storyId:story.id,storyTitle:String(story.title||'').slice(0,180),
   artifactId:'book-auto-'+String(story.id),blob,review:metadata.review,renderer:metadata.renderer,createdAt:new Date().toISOString()});
  if(storyId()===story.id)await refresh();
