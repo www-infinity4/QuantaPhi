@@ -15,7 +15,7 @@ test('a normal refresh labels the home story Reads & Realms, never Asteroid', ()
   assert.match(home, /Writing a fresh Reads & Realms story/);
   const show = code.split('function showHomeStory()')[1].split("window.addEventListener('quantaphi:new-search'")[0];
   assert.match(show, /placeHomeStory\(\)/);
-  assert.match(show, /nextStory\('',\{requireFresh:true\}\)/);
+  assert.match(show, /nextStory\('',\{requireFresh:false\}\)/);
 });
 
 test('Asteroid generation requires a genuine active search query', () => {
@@ -32,12 +32,14 @@ test('Asteroid generation requires a genuine active search query', () => {
   assert.match(code, /quantaphi:search-start/);
 });
 
-test('only fresh GPT narratives become displayed, never old ready catalog fallbacks', () => {
+test('home renders an attributed source while GPT writes; searched Asteroids still require research', () => {
   const code = load('infinite-book.js');
   const next = code.split("async function nextStory(query = '', options = {})")[1]
     .split("window.addEventListener('quantaphi:search-start'")[0];
   assert.match(next, /requireFresh=options\.requireFresh!==false/);
-  assert.match(next, /const ready = requireFresh\?null:pickUnique/);
+  assert.match(next, /const ready = searchMode \? null : pickUnique/);
+  assert.match(next, /sourcedCard/);
+  assert.match(next, /Reading a verified archived story while Oracle researches/);
   assert.match(next, /eligibleNarrative/);
   assert.match(code, /strictGPT:true, storyKind/);
   assert.match(code, /PhiInfiniteBookResearchStatus/);
