@@ -1,5 +1,5 @@
 /* Owner directions → persistent work ticket → validated color-agent assignments. */
-(function(){
+(async function(){
 'use strict';
 const ROLES={'gold-diggers-ink':'yellow','naked-gold-digger':'yellow',bluey:'blue',blueberry:'blue',bluth:'blue','orange-julius':'orange','orange-peel':'orange',greenbeans:'green','pink-panther':'pink','purple-pearl':'purple','purple-pleasure':'purple','purple-people-eater':'purple'};
 Object.assign(ROLES,{"enchilada-lifecycle-manager": "purple", "pipeline-architect": "purple", "branch-fork-evaluator": "orange", "ambiguity-strainer": "orange", "utility-optimizer": "blue", "triage-selector": "blue", "repo-script-writer": "green", "layout-router": "green", "ecosystem-watcher": "red", "structural-auditor": "red", "interaction-sniffer": "yellow", "state-delta-tracker": "yellow", "regression-detective": "pink", "silent-storage-auditor": "pink"});
@@ -24,6 +24,25 @@ function normalize(value){
 if(typeof module!=='undefined')module.exports={normalize,ROLES};
 if(typeof document==='undefined')return;
 const root=document.getElementById('robotDirections');if(!root)return;
+
+async function verifyBrainOwner(){
+ let token='';
+ try{
+  token=await new Promise((resolve,reject)=>{
+   const r=indexedDB.open('quantaphi-robot-inbox',1);
+   r.onupgradeneeded=()=>r.result.createObjectStore('settings');
+   r.onerror=()=>reject(r.error);
+   r.onsuccess=()=>{const db=r.result,t=db.transaction('settings','readonly'),q=t.objectStore('settings').get('infinity-work-ticket-owner-v1');q.onsuccess=()=>{resolve(q.result||'');db.close()};q.onerror=()=>reject(q.error)};
+  });
+  token=token||sessionStorage.getItem('infinity-work-ticket-owner-v1')||localStorage.getItem('infinity-work-ticket-owner-v1')||'';
+  if(!token)return null;
+  const headers={Authorization:'Bearer '+token};
+  const r=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/health',{headers,cache:'no-store',signal:AbortSignal.timeout(12000)});
+  return r.ok?headers:null;
+ }catch{return null}
+}
+
+const brainHeaders=await verifyBrainOwner();if(!brainHeaders){root.remove();return;}root.dataset.ownerVerified='1';
 const input=root.querySelector('textarea'),send=root.querySelector('[data-send]'),status=root.querySelector('[role=status]'),list=root.querySelector('[data-jobs]');
 const history=document.createElement('div');list.before(history);
 const OWNER='infinity-work-ticket-owner-v1',DRAFT='quantaphi-robot-directions-draft-v1';
