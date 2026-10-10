@@ -260,7 +260,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 </div>
 
 <div class="bodyFeet" aria-label="Future sponsor shoes">
-<a class="bodyShoe left bitcoinCrusherShoe" id="bitcoinCrusherShoe" href="/bitcoin-crusher/" aria-controls="quantaCrusherInline" aria-expanded="false" aria-label="Expand the original Bitcoin Crusher slot machine on this QuantaPhi page"><span><strong class="bodySlotTitle">Bitcoin<br>Crusher</strong><small class="bodySlotMeta">▶ Play here</small></span></a>
+<button type="button" class="bodyShoe left bitcoinCrusherShoe" id="bitcoinCrusherShoe" aria-controls="quantaCrusherInline" aria-expanded="false" aria-label="Expand the original Bitcoin Crusher slot machine on this QuantaPhi page"><span><strong class="bodySlotTitle">Bitcoin<br>Crusher</strong><small class="bodySlotMeta">▶ Play here</small></span></button>
 <a class="bodyShoe right sponsorSlot" href="#sponsorBoard" data-slot="right-foot" aria-label="Future right shoe sponsor spot"><span><strong class="bodySlotTitle">Your Site</strong><small class="bodySlotMeta">1000 ★ · 30d</small></span></a>
 </div>
 </section>
@@ -341,6 +341,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
  if(!foot||!wrap||!frame)return;
  function show(event){
   event?.preventDefault();
+  event?.stopImmediatePropagation();
   const opening=wrap.hidden;
   wrap.hidden=!opening;
   foot.setAttribute('aria-expanded',String(opening));
@@ -352,7 +353,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
    foot.focus({preventScroll:true});
   }
  }
- foot.addEventListener('click',show);
+ foot.addEventListener('click',show,true);
  close?.addEventListener('click',()=>{wrap.hidden=true;foot.setAttribute('aria-expanded','false');foot.querySelector('.bodySlotMeta').textContent='▶ Play here';foot.focus({preventScroll:true})});
  window.addEventListener('message',event=>{
   if(event.origin!==location.origin||event.source!==frame.contentWindow)return;
