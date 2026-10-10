@@ -1,10 +1,29 @@
 /* QuantaPhi · Oracle Moltnook iteration card
  * An evidence-linked display, NOT an invented continuous agent dialogue.
  * Learns task categories on this device; no raw search text uploaded or saved. */
-(function () {
+(async function () {
  'use strict';
  const root=document.getElementById('quantaAgentIterations');
  if(!root || root.dataset.bound==='1')return;
+
+async function verifyBrainOwner(){
+ let token='';
+ try{
+  token=await new Promise((resolve,reject)=>{
+   const r=indexedDB.open('quantaphi-robot-inbox',1);
+   r.onupgradeneeded=()=>r.result.createObjectStore('settings');
+   r.onerror=()=>reject(r.error);
+   r.onsuccess=()=>{const db=r.result,t=db.transaction('settings','readonly'),q=t.objectStore('settings').get('infinity-work-ticket-owner-v1');q.onsuccess=()=>{resolve(q.result||'');db.close()};q.onerror=()=>reject(q.error)};
+  });
+  token=token||sessionStorage.getItem('infinity-work-ticket-owner-v1')||localStorage.getItem('infinity-work-ticket-owner-v1')||'';
+  if(!token)return null;
+  const headers={Authorization:'Bearer '+token};
+  const r=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/health',{headers,cache:'no-store',signal:AbortSignal.timeout(12000)});
+  return r.ok?headers:null;
+ }catch{return null}
+}
+
+const brainHeaders=await verifyBrainOwner();if(!brainHeaders){root.remove();return;}root.dataset.ownerVerified='1';
  root.dataset.bound='1';
  const $=selector=>root.querySelector(selector);
  const ui=(tag,cl,text)=>{const el=document.createElement(tag);if(cl)el.className=cl;if(text!==undefined)el.textContent=String(text);return el;};
@@ -227,7 +246,7 @@
      }
    }catch(_){/* Public source feed is optional; job evidence still displays. */}
    try{
-    const clock=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/activity/feed.json',{cache:'no-store',signal:AbortSignal.timeout(12000)});
+    const clock=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/activity/feed.json',{headers:brainHeaders,cache:'no-store',signal:AbortSignal.timeout(12000)});
     if(clock.ok){const receipts=await clock.json();if(receipts.schemaVersion===1&&Array.isArray(receipts.items))sourceEvents.push(...receipts.items.map(x=>({...x,clockReceipt:true})));}
    }catch(_){/* Clock outage does not invent activity or block other real sources. */}
    let repair=null;
