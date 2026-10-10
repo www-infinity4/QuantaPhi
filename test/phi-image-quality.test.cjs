@@ -258,20 +258,30 @@ test('home book opens before a search without asteroid and Asteroid moves after 
  assert.match(css,/#infiniteBook\[data-context="search"\]/);
  assert.ok(html.indexOf('id="result"')<html.indexOf('id="infiniteBook"'));
 });
-test('yellow Media Star has visual avatar, original replay, and reusable embedded asset',()=>{
- const js=source('fred-spaces-radio.js'),css=source('fred-spaces-radio.css'),html=source('index.html');
- assert.match(js,/fs-media-star/);
- assert.match(js,/fs-star-avatar/);
- assert.match(js,/fs-big-star/);
- assert.match(js,/Embed Media Star/);
- assert.match(js,/copyMediaStarEmbed/);
- assert.match(js,/navigator\.clipboard\.writeText\(snippet\)/);
- assert.match(js,/window\.PhiMediaStarAsset=\{html:mediaStarEmbed\}/);
- assert.match(js,/play\.href=active\.source/);
- assert.match(js,/share\),button\("Collect \+0\.1/);
+test('Fred Curio Spotlight stays live on QuantaPhi but is not exported',()=>{
+ const fred=source('fred-spaces-radio.js'),css=source('fred-spaces-radio.css'),html=source('index.html');
+ assert.match(fred,/fs-media-star/);
+ assert.match(fred,/fs-star-avatar/);
+ assert.match(fred,/fs-big-star/);
+ assert.match(fred,/play\.href=active\.source/);
+ assert.match(fred,/share\),button\("Collect \+0\.1/);
  assert.match(css,/\.fs-big-star/);
  assert.match(css,/\.fs-star-avatar/);
- assert.match(html,/fred-spaces-radio\.css\?v=20261009-full-fred1/);
+ assert.match(html,/id="fredSpacesRadio"/);
+ assert.doesNotMatch(fred,/window\.PhiMediaStarAsset|copyMediaStarEmbed|function mediaStarEmbed/);
+});
+test('Media Star creator studio exports an independent link-first card',()=>{
+ const builder=source('media-star-creator.js'),html=source('index.html');
+ assert.match(html,/id="mediaStarCreator"/);
+ assert.match(html,/media-star-creator\.js/);
+ assert.match(builder,/Add a link to your own episode/);
+ assert.match(builder,/data-media-star="creator-v3"/);
+ assert.match(builder,/data-payment-mode="off"/);
+ assert.match(builder,/PhiMediaStarAsset/);
+ assert.match(builder,/navigator\.clipboard\.writeText/);
+ assert.match(builder,/media-star-blank-v3/);
+ assert.match(builder,/their own|MY OWN Cloudflare/);
+ assert.doesNotMatch(builder,/fred-spaces-ledger|media-star-index\.json|QuantaStarCredit/);
 });
 
 test('Asteroid fallback uses the strongest search-relevant source for actual GPT writing',()=>{
