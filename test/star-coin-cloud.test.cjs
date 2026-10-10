@@ -56,27 +56,27 @@ test('earlier browser-only QuantaPhi credits are backfilled once per account',()
  assert.equal(cloud.backfill(),3);assert.equal(cloud.backfill(),0);
  assert.deepEqual(JSON.parse(JSON.stringify(cloud.pending().map(x=>x.reference_id).sort())),['quantaphi:collect:Image|A|m','quantaphi:collect:Video|B|v','quantaphi:share:page:1']);
 });
-test('Collect and Share buttons credit through Control Phi and record to the Cloudflare ledger',()=>{
+test('Quanta action buttons queue authenticated StarQuest payouts, not browser-only money',()=>{
  const html=fs.readFileSync('index.html','utf8');
- assert.match(html,/<script src="star-coin-cloud\.js\?v=[^"]+"><\/script>/);
- assert.match(html,/cp\.ensureActionCredit\(ref,kind\)/);
- assert.match(html,/QuantaStarCoinCloud\?\.record\(kind,ref,card\)/);
- assert.match(html,/QuantaStarCredit\?\.\('collect',key,existing\)/);
- assert.equal((html.match(/QuantaStarCredit\?\.\('share',/g)||[]).length,3);
- assert.doesNotMatch(html,/ControlPhi\.ensureShareCredit\.bind/);
+ assert.ok(html.includes('star-coin-cloud.js?v='));
+ assert.ok(html.includes('cloud?.record?.(kind,ref,card)'));
+ assert.ok(html.includes("QuantaStarCredit?.('collect',key,existing)"));
+ assert.equal(html.split("QuantaStarCredit?.('share',").length-1,3);
+ assert.ok(html.includes('__quantaStarServerSettlement=true'));
 });
-test('QuantaStarCredit routes through Control Phi, falls back to the local wallet, and skips duplicate receipts',()=>{
+test('QuantaStarCredit sends all actions to Cloudflare without inventing a local payment',()=>{
  const html=fs.readFileSync('index.html','utf8'),end=html.indexOf('window.QuantaStarCredit=function'),start=html.lastIndexOf('<script>',end)+8,code=html.slice(start,html.indexOf('</script>',end));
- const values=new Map(),calls=[],recorded=[];
- const window={addEventListener(){},dispatchEvent(){},QuantaStarCoinCloud:{record:(...a)=>recorded.push(a)}};
- const context={window,localStorage:{getItem:k=>values.has(k)?values.get(k):null,setItem:(k,v)=>values.set(k,String(v))},document:{cookie:'',querySelectorAll:()=>[],getElementById:()=>null},crypto:{randomUUID:()=>'uuid'},CustomEvent:class{},Date,Math,JSON,Number,String,Array,RegExp,console};
+ const values=new Map(),recorded=[];
+ const window={addEventListener(){},dispatchEvent(){},QuantaStarCoinCloud:{record:(...a)=>{recorded.push(a);return true}}};
+ const context={window,location:{href:'https://quantaphi.org'},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,String(v))},document:{cookie:'',querySelectorAll:()=>[],getElementById:()=>null},crypto:{randomUUID:()=>'uuid'},CustomEvent:class{},Date,Math,JSON,Number,String,Array,RegExp,console};
  vm.runInNewContext(code,context);
- window.QuantaStarCredit('collect','Image|Iron|u',{title:'Iron'});
- assert.equal(JSON.parse(values.get('starquest_guest_profile_v1')).pendingShareCredits,1,'local wallet credits without Control Phi');
- window.ControlPhi={ensureActionCredit:(ref,kind)=>{calls.push([kind,ref]);return {awarded:0}},ensureShareCredit:ref=>{calls.push(['share',ref]);return {alreadyRecorded:true}}};
- window.QuantaStarCredit('collect','Image|Gold|g');window.QuantaStarCredit('share','page:1');
- assert.deepEqual(JSON.parse(JSON.stringify(calls)),[['collect','Image|Gold|g'],['share','page:1']]);
- assert.deepEqual(JSON.parse(JSON.stringify(recorded.map(x=>x.slice(0,2)))),[['collect','Image|Iron|u'],['collect','Image|Gold|g']],'a duplicate share is not sent to Cloudflare');
+ const before=JSON.stringify(values.get('starquest_guest_profile_v1')||null);
+ const collect=window.QuantaStarCredit('collect','Image|Iron|u',{title:'Iron'});
+ const star=window.QuantaStarCredit('star','story-44',{title:'Story 44'});
+ const share=window.QuantaStarCredit('share','page:1',{title:'Page'});
+ assert.equal(collect.pending,true);assert.equal(star.pending,true);assert.equal(share.pending,true);
+ assert.equal(JSON.stringify(values.get('starquest_guest_profile_v1')||null),before,'clicks do not pretend to mint wallet funds');
+ assert.deepEqual(JSON.parse(JSON.stringify(recorded.map(x=>x.slice(0,2)))),[['collect','Image|Iron|u'],['star','story-44'],['share','page:1']]);
 });
 test('backfill waits for a signed-in account record instead of marking it done empty',()=>{
  const {cloud,values}=browser({hasCredential:()=>false,authenticatedFetch(){throw new Error('unused')}});
