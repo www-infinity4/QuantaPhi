@@ -45,20 +45,30 @@ async function verifyBrainOwner(){
 
 const brainHeaders=await verifyBrainOwner();if(!brainHeaders){root.remove();return;}root.dataset.ownerVerified='1';root.hidden=false;
 const earningsButton=document.createElement('button'),earningsStatus=document.createElement('p');
-earningsButton.type='button';earningsButton.textContent='Connect bot earnings to my wallet';earningsStatus.setAttribute('role','status');root.append(earningsButton,earningsStatus);
-earningsButton.addEventListener('click',async()=>{
+earningsButton.type='button';earningsButton.textContent='Retry bot earnings settlement';earningsStatus.setAttribute('role','status');root.append(earningsButton,earningsStatus);
+let earningsConnecting=false,earningsConnected=false;
+async function connectBotEarnings(){
+ if(earningsConnecting)return;
+ earningsConnecting=true;
  earningsButton.disabled=true;earningsStatus.textContent='Verifying your wallet and recorded bot work…';
  try{
   await window.QuantaCloudConnection?.ready;
   if(!window.InfinityCloudWallet)throw Error('Wallet connection is not loaded yet.');
   const wallet=new window.InfinityCloudWallet(),walletToken=wallet.token();
+  if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(walletToken||''))throw Error('Your wallet identity is not connected yet. Bot earnings remain saved and will retry when it connects.');
   const response=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/work/earnings/connect',{method:'POST',headers:{...brainHeaders,'Content-Type':'application/json'},body:JSON.stringify({walletToken}),signal:AbortSignal.timeout(60000)});
   const result=await response.json();if(!response.ok||!result.ok)throw Error(result.error||'Bot earnings connection failed');
+  earningsConnected=true;
   const paid=(result.payouts||[]).filter(p=>p.status==='paid'&&!p.replayed),quants=paid.filter(p=>p.asset==='QUANT').length,stars=paid.filter(p=>p.asset==='STARCOIN').length;
   earningsStatus.textContent='Connected to '+result.username+'. '+quants+' Quant and '+stars+' StarCoin credited now. Verified future work credits automatically; retries do not pay twice.';
   await wallet.refresh();window.dispatchEvent(new CustomEvent('infinity:bot-work-paid'));
- }catch(e){earningsStatus.textContent=e.message}finally{earningsButton.disabled=false}
-});
+ }catch(e){earningsStatus.textContent=e.message}finally{earningsButton.disabled=false;earningsConnecting=false}
+}
+earningsButton.addEventListener('click',connectBotEarnings);
+// Owner authentication above and the wallet service handshake determine the destination.
+// Tokens are sent only to the authenticated brain; they are never recorded as earnings data.
+connectBotEarnings();
+const earningsRetry=setInterval(()=>{if(earningsConnected){clearInterval(earningsRetry);return;}if(document.visibilityState==='visible')connectBotEarnings();},30000);
 const input=root.querySelector('textarea'),send=root.querySelector('[data-send]'),status=root.querySelector('[role=status]'),list=root.querySelector('[data-jobs]');
 const history=document.createElement('div');list.before(history);
 const OWNER='infinity-work-ticket-owner-v1',DRAFT='quantaphi-robot-directions-draft-v1';

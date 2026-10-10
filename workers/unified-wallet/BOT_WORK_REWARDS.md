@@ -22,3 +22,7 @@ Future runner results trigger settlement, with the durable alarm retrying unpaid
 records. Live wallet connection and a paid ledger receipt are required before
 claiming a real deposit. Source-verified repairs can earn while their separate
 deployment/browser verification remains pending; the receipt retains that state.
+
+
+## Automatic owner connection
+The owner-authenticated Robot Brain page now connects the existing device wallet automatically. No separate Connect button is required. If the wallet identity is not ready, the page retries while visible. Pending work remains retained. The Retry button is only a recovery control. A server-side authenticated wallet handshake supplies the account ID; usernames are never guessed as payout destinations.
