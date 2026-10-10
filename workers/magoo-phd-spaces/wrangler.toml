@@ -1,0 +1,9 @@
+name = "magoo-phd-spaces"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "magoo-phd-spaces"
+database_id = "b6fce506-c941-492c-8fc6-90e12f055be3"
