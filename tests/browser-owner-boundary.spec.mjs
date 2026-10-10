@@ -5,7 +5,8 @@ test('public page keeps private robot controls hidden', async ({ page, request }
   await expect(page.locator('#robotDirections')).toBeHidden();
   for (const path of ['/health', '/activity/feed.json', '/work/preview', '/work/quants']) {
     const response = await request.get('https://infinity-brain-clock.marvaseater.workers.dev' + path);
-    expect([401, 403]).toContain(response.status());
+    expect(response.status()).toBe(404);
+    expect(await response.text()).toBe('Not found');
   }
   await page.screenshot({ path: 'proofs/screenshots/public-owner-boundary.png', fullPage: true });
 });

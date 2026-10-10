@@ -21,7 +21,7 @@
     "ui_assertions": [
       "#quantaAgentIterations is hidden before authentication",
       "#robotDirections is hidden before authentication",
-      "Unauthenticated brain endpoints return 401 or 403"
+      "Unauthenticated brain endpoints return an opaque 404 Not found"
     ]
   },
   "automation_library": "playwright",
