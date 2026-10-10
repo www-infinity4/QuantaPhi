@@ -470,6 +470,43 @@ export default {
       return json({ok:true,key,chapter,note,favorite:!!favorite});
     }
 
+    // Reconcile already-durable Quanta button evidence with the real StarQuest
+    // wallet. This repairs receipts accepted by the old Quanta catalog but never
+    // paid into StarQuest. One authenticated account, one receipt ID, no refresh
+    // mint. Limit recovery to Oct 10 onwards; do not blindly repay historic
+    // credits that may have used another client idempotency reference.
+    if(url.pathname === "/v1/quants/star-coins/reconcile" && request.method==="POST"){
+      await ensureActionCatalog(env);
+      await ensureStarCoinCredits(env);
+      const since=1791608400000; // Oct 10, 2026 00:00 America/Chicago
+      const catalog=await env.DB.prepare("SELECT reference_id,kind,data_json,created_at FROM quanta_action_catalog WHERE user_id=? AND created_at>=? AND kind IN ('collect','share','star','build_image','fix_image','extract','compare') ORDER BY created_at ASC LIMIT 100")
+        .bind(identity.user_id,since).all();
+      const receipts=await env.DB.prepare("SELECT reference_id,kind,reference,created_at FROM quanta_star_coin_credits WHERE user_id=? AND created_at>=? ORDER BY created_at ASC LIMIT 100")
+        .bind(identity.user_id,since).all();
+      const pending=new Map();
+      for(const row of catalog.results||[]){
+        const prefix="quantaphi:"+row.kind+":";
+        if(!String(row.reference_id||"").startsWith(prefix))continue;
+        let data={};try{data=JSON.parse(row.data_json||"{}")}catch{}
+        pending.set(row.reference_id,{kind:row.kind,referenceId:row.reference_id,reference:row.reference_id.slice(prefix.length),data});
+      }
+      for(const row of receipts.results||[]){
+        const prefix="quantaphi:"+row.kind+":";
+        if(!String(row.reference_id||"").startsWith(prefix)||pending.has(row.reference_id))continue;
+        pending.set(row.reference_id,{kind:row.kind,referenceId:row.reference_id,reference:row.reference||row.reference_id.slice(prefix.length),data:{}});
+      }
+      const settled=[];
+      try{
+        for(const item of [...pending.values()].slice(0,100))
+          settled.push(await settleStarQuestCardAction(env,identity.user_id,item.kind,item.referenceId,item.reference,item.data));
+      }catch(error){
+        console.error("StarCoin action reconciliation stopped safely",String(error?.message||error));
+        return json({error:"starquest_reconcile_deferred",settled,retained:true},503);
+      }
+      const account=await env.IDENTITY_DB.prepare("SELECT star_coins AS starCoins,pending_share_credits AS pendingShareCredits FROM accounts WHERE id=?").bind(identity.user_id).first();
+      return json({ok:true,checked:settled.length,credited:settled.filter(x=>x.credited).length,alreadyPaid:settled.filter(x=>x.duplicate).length,settled,wallet_state:account});
+    }
+
     // Star Coin receipts from QuantaPhi Collect and Share buttons. Each receipt is
     // +0.1 Star Coin, recorded once per account and reference so retries are harmless.
     if (url.pathname === "/v1/quants/star-coins" && request.method === "POST") {
