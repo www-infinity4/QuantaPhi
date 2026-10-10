@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v44-crusher-wallet';
+const EDGE_VERSION = 'quantaphi-org-v45-crusher-button';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
