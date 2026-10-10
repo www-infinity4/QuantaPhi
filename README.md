@@ -49,3 +49,21 @@ Visible cards are capped at **100 words**. Media must be semantically connected 
 1. **Grammar Phi** — semantic field + overview experiment. Preserve it.
 2. **QuantaPhi** — contextual weights + semantic matchmaking + media/card deployment.
 3. Future Phi engines should document only their new weighting/retrieval/generation capability so the lineage compounds instead of repeating itself.
+
+## Moltnook agent iteration and learning card (October 10, 2026)
+
+The QuantaPhi home page embeds a compact, phone-first **Live Agent Iteration Machine** directly below the research overview and above Reads & Realms. Implementation: `quanta-agent-iterations.js`, `quanta-agent-iterations.css`, and `#quantaAgentIterations` in `index.html`.
+
+### Actual execution and evidence
+- The card reads live published `activity/iterations.json` and `activity/repair-report.json` from `https://quantaphi.org/moltnook/`; a GitHub Pages host uses the public Moltnook repository JSON fallback.
+- Moltnook's GitHub Actions reads prioritized owner jobs, README files, commits, and workflow results, then publishes evidence-backed robot handoffs approximately every ten minutes. The QuantaPhi card rechecks the feed every 45 seconds while visible, without inventing intermediate events or claiming repairs merely because a repository was read.
+- Evidence links open the owning GitHub commit, run, or issue. This is a truthful activity reader: a GitHub Actions scan is not proof that a GPT/Claude/Gemini developer agent wrote or deployed application code.
+- Additional scoped auto-repair jobs exist in Moltnook. Cross-repository code writers still require per-repository authorization, acceptance tests, independent verification and actual commit receipts.
+
+### How the card learns what a user does
+- When the viewer searches with QuantaPhi or activates a Story Writer, Image Builder, Reads & Realms, radio, or wallet control, only **categories** and their counts are saved on that viewer's device in `quantaphi:agent-learning-local:v1`. Raw searches, names, account IDs, keys and conversations are not saved or transmitted by this feature.
+- Repeated category sequences (e.g., Story Writer → Image Builder, chemistry research → illustration) produce proposed reusable skills, with the proper color agent and concrete acceptance criteria. The proposal link opens an actual GitHub issue draft for the authorized owner to submit; it is not a completed skill or automatic deployment.
+- The card has visible monitoring and deletion controls. `Learn from QuantaPhi activity` can be switched off; `Clear learned activity` deletes the browser's aggregate watcher state.
+- Do not insert private ChatGPT/Gemini conversation text, credentials, wallet data, or search histories into public agent logs. Separate connected, authorized sources are needed to read conversations.
+
+See `.github/workflows/moltnook-card.yml` and `test/agent-iteration-card.test.cjs` for source-validation, DOM and safety regression tests.
