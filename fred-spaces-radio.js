@@ -133,11 +133,8 @@
     }
     u.searchParams.set("from","fred-spaces");
     u.searchParams.set("episode",active.id);
-    u.searchParams.set("episodeSource",active.source);
-    u.searchParams.set("assetType","media-star");
-    u.searchParams.set("assetTitle",active.title);
-    u.searchParams.set("assetDescription",active.description.slice(0,300));
-    if(tool!=="QuantaPhi")u.searchParams.set("buildPrompt","Include a reusable Media Star X Spaces player-style card with a golden star, microphone avatar, title, source description, and a direct button opening the original X replay. Do not simulate or claim hosted audio.");
+    // Builders receive searchable topic context, not Fred audio/media packaged into an embed.
+    if(tool!=="QuantaPhi")u.searchParams.set("buildPrompt","Research the topic of this recorded Space and build an original page with citations. Do not repackage Fred\'s replay as an embeddable Media Star. The Media Star embed is a separate, blank creator-owned media template.");
     location.href=u.href;
   }
   function chooseTopic(tag){selectedTopic=selectedTopic===tag?"":tag;selectedMode="search";render();}
@@ -153,31 +150,19 @@
     const u=new URL(paths[tool],location.origin);
     u.searchParams.set("q",q);u.searchParams.set("intent",selectedMode);
     u.searchParams.set("topic",topic);u.searchParams.set("from","fred-spaces");
-    u.searchParams.set("episode",active.id);u.searchParams.set("episodeSource",active.source);
-    u.searchParams.set("assetType","media-star");
-    u.searchParams.set("assetTitle",active.title);
-    u.searchParams.set("assetSource",active.source);
-    if(selectedMode==="build")u.searchParams.set("buildPrompt","Create an original website about "+topic+" with an embeddable Media Star card for "+active.title+". Credit the X Spaces source and use its original link, not simulated audio. Verify other factual claims.");
+    // Topic actions initiate searches/learning; do not export source replay or wallet configuration.
+    if(selectedMode==="build")u.searchParams.set("buildPrompt","Create an original website about "+topic+". Any Media Star card must start blank and contain only content provided by the creator; verify other factual claims.");
     location.assign(u.href);
   }
   const escapeMarkup=x=>String(x||'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
-  function mediaStarEmbed(episode=active){
-    // Self-contained HTML / CSS asset. The play icon LINKS to the original X
-    // replay: it never claims that the site has licensed or embedded X audio.
-    const title=escapeMarkup(episode.title),description=escapeMarkup(episode.description),source=escapeMarkup(episode.source);
-    return '<article aria-label="Media Star: '+title+'" style="position:relative;isolation:isolate;overflow:hidden;max-width:720px;padding:22px;border:2px solid #f2c44f;border-radius:24px;background:linear-gradient(135deg,#fff9d0,#e9b739);color:#33200a;font:16px/1.5 system-ui,sans-serif;box-shadow:0 9px 28px #8d5d2666">'+
-      '<span aria-hidden="true" style="position:absolute;right:-60px;top:-64px;width:330px;height:330px;clip-path:polygon(50% 0%,62% 34%,98% 35%,69% 57%,80% 91%,50% 72%,20% 91%,31% 57%,2% 35%,38% 34%);background:linear-gradient(135deg,#fff0ad,#f6b81e);opacity:.62;z-index:-1"></span>'+
-      '<div style="display:flex;align-items:center;gap:13px"><span aria-hidden="true" style="font-size:37px;display:grid;place-items:center;width:66px;height:66px;border-radius:50%;border:2px solid #ffec9d;background:#624522;color:#fff">🎙</span><div><strong style="font-size:23px;letter-spacing:.04em">⭐ MEDIA STAR</strong><h2 style="font-size:24px;margin:5px 0">'+title+'</h2></div></div>'+
-      '<p style="max-width:95%;margin:15px 0">'+description+'</p>'+
-      '<a href="'+source+'" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 17px;border-radius:999px;background:#2e2145;color:white;text-decoration:none;font-weight:900">▶ Open original replay on X ↗</a>'+
-      '<p style="font-size:12px;margin:11px 0 0">X may require sign-in. Audio is not hosted here.</p></article>';
-  }
+  // Export ONLY the blank Media Star asset; Fred's curated content remains on QuantaPhi.
+  function mediaStarEmbed(){return "<!-- Media Star: blank, creator-editable card template by QuantaPhi. -->\n<!-- Your AI website builder replaces the sample title, description and source with YOUR content. -->\n<!-- No Fred episodes, unlock tokens, QuantaPhi wallet credentials or payout endpoints are shipped in this embed. -->\n<article data-media-star=\"creator-template-v2\" data-payment-mode=\"off\" aria-label=\"Media Star creator card\" style=\"position:relative;isolation:isolate;overflow:hidden;max-width:720px;padding:24px;border:2px solid #f2c44f;border-radius:24px;background:linear-gradient(135deg,#fff9d0,#e8b537);color:#33200a;font:16px/1.5 system-ui,sans-serif;box-shadow:0 9px 28px #8d5d2666\">\n  <span aria-hidden=\"true\" style=\"position:absolute;right:-55px;top:-75px;width:300px;height:300px;clip-path:polygon(50% 0%,62% 34%,98% 35%,69% 57%,80% 91%,50% 72%,20% 91%,31% 57%,2% 35%,38% 34%);background:linear-gradient(135deg,#fff0ad,#f6b81e);opacity:.48;z-index:-1\"></span>\n  <div style=\"position:relative\"><strong style=\"font-size:21px;letter-spacing:.06em\">⭐ MEDIA STAR</strong><p style=\"font-size:12px;font-weight:700;letter-spacing:.08em;margin:6px 0\">YOUR ORIGINAL MEDIA</p>\n  <h2 data-creator-field=\"title\" style=\"font-size:25px;margin:8px 0\">Add your title with your AI builder</h2>\n  <p data-creator-field=\"description\">Add your own original episode, podcast, music, video or media description here.</p>\n  <div data-creator-field=\"player\" role=\"note\" style=\"padding:14px;border-radius:14px;background:#fff4c9;border:1px dashed #926820\">Your AI builder adds your own authorized media player or original source link here.</div>\n  <p style=\"font-size:12px\">Optional paid access: configure your own creator payment provider and verified recipient on your own server. Default: free; no payment is connected.</p></div>\n</article>";}
   async function copyMediaStarEmbed(){
     const snippet=mediaStarEmbed();
     try{
       if(!navigator.clipboard?.writeText)throw Error('Clipboard unavailable');
       await navigator.clipboard.writeText(snippet);
-      note('Media Star HTML copied. Paste into your website builder to embed this player-style card with the original X source.');
+      note('Blank Media Star template copied. Add your own media and optional payment setup in your AI website builder. Fred episodes and Phi wallet connections are not included.');
     }catch(error){
       if(typeof window.prompt==='function')window.prompt('Copy this Media Star HTML into your website builder:',snippet);
       note('Media Star HTML ready for copying. Your browser could not copy automatically.');
@@ -248,7 +233,7 @@
     ["InfinityPhi","OmniPhi","QuantaPhi"].forEach(t=>builds.append(button(t,()=>build(t),"fs-phi")));
     card.append(builds);
     const embedRow=node("div","fs-embed-row");
-    embedRow.append(button("Embed Media Star",()=>{void copyMediaStarEmbed()},"fs-phi fs-embed"));card.append(embedRow);
+    embedRow.append(button("Copy blank Media Star template",()=>{void copyMediaStarEmbed()},"fs-phi fs-embed"));card.append(embedRow);
     const nextRow=node("div","fs-bottom");
     const hasCurated=episodes.some(e=>e.id!==FIRST&&isReplayLink(e));
     const unlock=button(busy?"Confirming StarCoin charge…":!paymentsReady?"Purchases paused · owner payout setup":"Buy next curated episode · 1 ★",more,"fs-next");
