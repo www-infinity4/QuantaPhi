@@ -108,12 +108,12 @@ export class BrainClock extends DurableObject{
      const index=(current.color_jobs||[]).findIndex(j=>j.id===job.id);
      if(index>=0 && JSON.stringify(current.color_jobs[index].instructions)===JSON.stringify(job.instructions)){
       current.color_jobs[index]={...current.color_jobs[index],status:'blocked',last_inspected_at:receipt.when,
-       progress:{summary:review.summary.slice(0,1500),next:review.next.slice(0,1500),blocker:receipt.blocker,receipt_key:key}};
+       progress:{summary:review.summary.slice(0,350),next:review.next.slice(0,350),blocker:receipt.blocker,receipt_key:key}};
       const serialized=JSON.stringify(current);
-      if(serialized.length>24000)throw Error('ticket_context_full_receipt_retained_in_clock');
+      if(serialized.length>64000)throw Error('ticket_context_full_receipt_retained_in_clock');
       // Compare-and-swap protects simultaneous owner edits.
-      await this.env.WORK_DB.prepare("UPDATE work_tickets SET context_json=?,claimed_by='Purple Pearl / Brain Clock',status='working',updated_at=? WHERE id=? AND context_json=?")
-       .bind(serialized,Date.now(),ticket.id,fresh.context_json).run();
+      await this.env.WORK_DB.prepare("UPDATE work_tickets SET context_json=?,claimed_by='Purple Pearl / Brain Clock',status=?,updated_at=? WHERE id=? AND context_json=?")
+       .bind(serialized,current.color_jobs.every(j=>j.status==='blocked')?'blocked':'working',Date.now(),ticket.id,fresh.context_json).run();
      }
      await this.emit('purple-pearl','greenbeans','progress review','GPT-OSS reviewed the source evidence for '+ticket.id+'/'+job.id+'. Inspection is recorded; implementation is blocked because a repository writer is not connected.','https://github.com/www-infinity4/'+repo);
     }
