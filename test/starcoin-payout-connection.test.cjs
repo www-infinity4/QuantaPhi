@@ -21,7 +21,7 @@ function setup({tokens=true,response}={}){
   return response?response(url,opts):{ok:true,status:200,json:async()=>({ok:true,credited:true,duplicate:false})};
  };
  const context={window,document,crypto,TextEncoder,Uint8Array,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts?.detail}},AbortSignal:{timeout:()=>undefined},read,write,starQuestDeviceToken:()=>'',refreshStarCoinCloud:async()=>events.push({type:'cloud-refresh'}),console:{warn(){}},fetch,setTimeout:()=>0};
- vm.runInNewContext(implementation+'\nglobalThis.payout={queueStarReceipt,flushStarReceipts};',context);
+ vm.runInNewContext("const STARQUEST_ENDPOINT='https://starquest-ledger.marvaseater.workers.dev';\n"+implementation+'\nglobalThis.payout={queueStarReceipt,flushStarReceipts};',context);
  return {payout:context.payout,data,calls,events};
 }
 test('Collect/Star/Share payout receipts use enrolled StarQuest identity even without an Infinity wallet class',async()=>{
