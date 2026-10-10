@@ -1,0 +1,37 @@
+name: Infinity brain repository writer and cloud browser
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/brain-*.mjs', 'workers/infinity-brain-clock/**', 'test/brain-writer.test.mjs', '.github/workflows/brain-writer.yml']
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+permissions:
+  contents: write
+  id-token: write
+concurrency:
+  group: infinity-brain-quantaphi-writer
+  cancel-in-progress: false
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install hosted browser
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Claim, repair, review, test, commit and verify deployed Android page
+        run: node scripts/brain-writer.mjs
+      - name: Save browser screenshots and repair evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: brain-browser-and-repair-evidence
+          path: brain-receipts/

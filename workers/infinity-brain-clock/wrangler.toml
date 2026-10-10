@@ -17,3 +17,6 @@ tag = "v1"
 new_sqlite_classes = ["BrainClock"]
 [triggers]
 crons = ["* * * * *"]
+
+[ai]
+binding = "WRITER_AI"
