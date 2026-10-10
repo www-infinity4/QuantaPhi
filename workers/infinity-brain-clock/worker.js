@@ -1,5 +1,5 @@
 import { DurableObject } from 'cloudflare:workers';
-const PERIOD=30000;
+const PERIOD=30000,VERSION='20261010-gemini-discovery2';
 const REPOS=new Set(['QuantaPhi','Moltnook','Oracle-Octaves','claude-flow','InfinityPhi','OmniPhi','NewsPhi','Bitcoin-Crusher']);
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 function output(request,value){
@@ -35,7 +35,8 @@ export class BrainClock extends DurableObject{
  }
  async fetch(request){
   if(new URL(request.url).pathname==='/start'){
-   if(!await this.ctx.storage.getAlarm())await this.ctx.storage.setAlarm(Date.now()+1000);
+   if(await this.ctx.storage.get('version')!==VERSION){await this.ctx.storage.put('version',VERSION);await this.ctx.storage.setAlarm(Date.now()+1000);}
+   else if(!await this.ctx.storage.getAlarm())await this.ctx.storage.setAlarm(Date.now()+1000);
    return Response.json({ok:true});
   }
   const state=await this.ctx.storage.get('state')||{status:'starting'};
