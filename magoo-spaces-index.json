@@ -1,9 +1,38 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "hostId": "hodlmagoo",
   "hostName": "Magoo PhD",
   "handle": "HodlMagoo",
   "profile": "https://x.com/HodlMagoo",
-  "episodes": [],
-  "notes": "The D1 catalog is authoritative. Only index verified direct X Space recording URLs; never fabricate episodes."
+  "episodes": [
+    {
+      "id": "magoo-bms-053",
+      "title": "BMS 053 — HODL Magoo: Who Are You?",
+      "source": "https://podcasts.apple.com/us/podcast/bms-053-hodl-magoo-who-are-you-is-he-bearish-and/id1552915480?i=1000555962028",
+      "platform": "Apple Podcasts",
+      "kind": "guest-interview",
+      "date": "2022-04-01",
+      "duration": "1:25:00",
+      "tags": [
+        "bitcoin",
+        "market cycles",
+        "volcano bonds"
+      ]
+    },
+    {
+      "id": "magoo-btcs-222",
+      "title": "Why Are We Bullish? — Louis Shulman, Hodl Magoo, Nate",
+      "source": "https://www.youtube.com/watch?v=kO8IFG0aTDA",
+      "platform": "YouTube",
+      "kind": "guest-panel",
+      "date": "2021-12-10",
+      "duration": "1:28:04",
+      "tags": [
+        "bitcoin",
+        "markets",
+        "bullish panel"
+      ]
+    }
+  ],
+  "notes": "Original verified guest recordings. These are not X Spaces; actual Magoo-hosted X Space replays remain a separate D1 table with no verified records yet."
 }
