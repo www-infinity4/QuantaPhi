@@ -39,7 +39,7 @@
  const defaultData=()=>({enabled:true,counts:{},lastSeen:{},flows:{},lastCategory:'',lastCategoryAt:0,total:0});
  if(!local||typeof local.enabled!=='boolean')local=defaultData();
  const save=()=>{try{localStorage.setItem(STORE,JSON.stringify(local))}catch{}};
- const safeUrl=value=>{try{const url=new URL(value);return url.protocol==='https:'&&url.hostname==='github.com'?url.href:''}catch{return ''}};
+ const safeUrl=value=>{try{const url=new URL(value);return url.protocol==='https:'&&['github.com','quantaphi.org','infinity-brain-clock.marvaseater.workers.dev'].includes(url.hostname)?url.href:''}catch{return ''}};
  const role=id=>ROLES[id]||[id||'Observer','blue'];
  const deltaTime=when=>{const age=Date.now()-Date.parse(when||'');if(!Number.isFinite(age))return 'time unknown';if(age<60000)return 'just now';if(age<3600000)return Math.floor(age/60000)+'m ago';if(age<86400000)return Math.floor(age/3600000)+'h ago';return new Date(when).toLocaleDateString()};
  const makeLink=(label,url)=>{const anchor=ui('a','',label);anchor.href=safeUrl(url)||'https://quantaphi.org/moltnook/';anchor.target='_blank';anchor.rel='noopener noreferrer';return anchor;};
@@ -67,13 +67,14 @@
    };
  }
  function assembleBrain(feedItems){
+   const clockEvents=(Array.isArray(feedItems)?feedItems:[]).filter(x=>x.clockReceipt===true&&safeUrl(x.url)&&typeof x.message==='string');
    const commits=(Array.isArray(feedItems)?feedItems:[])
      .map(verifiedCommit).filter(Boolean).slice(0,35);
    const notes=events.filter(x=>safeUrl(x.url)&&
      /read|test|repository maintenance|inspection|routing|report|commit/i.test(x.kind||''))
      .filter(x=>!/human update:.*?authenticated, scoped writer/i.test(x.message||''))
      .slice(0,42);
-   const combined=[],keys=new Set(),limit=Math.max(commits.length,notes.length);
+   const combined=clockEvents.slice(),keys=new Set(clockEvents.map(x=>String(x.id))),limit=Math.max(commits.length,notes.length);
    // A commit then a verified investigation/CI receipt; no fictional "live" messages.
    for(let i=0;i<limit;i++){
      for(const event of [commits[i],notes[i]]){
@@ -225,6 +226,10 @@
        if(Array.isArray(verified.items))sourceEvents=verified.items;
      }
    }catch(_){/* Public source feed is optional; job evidence still displays. */}
+   try{
+    const clock=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/activity/feed.json',{cache:'no-store',signal:AbortSignal.timeout(12000)});
+    if(clock.ok){const receipts=await clock.json();if(receipts.schemaVersion===1&&Array.isArray(receipts.items))sourceEvents.push(...receipts.items.map(x=>({...x,clockReceipt:true})));}
+   }catch(_){/* Clock outage does not invent activity or block other real sources. */}
    let repair=null;
    try{
     const check=await fetch(BASE+'activity/repair-report.json?fresh='+Date.now(),{cache:'no-store'});
