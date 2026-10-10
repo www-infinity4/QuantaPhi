@@ -67,7 +67,7 @@ const ready=(async()=>{
 function owner(){return ownerTokenMemory}
 async function saveOwner(value){await storage(OWNER,value);ownerTokenMemory=value}
 
-async function post(path,data,timeout=30000){const r=await fetch(API+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:AbortSignal.timeout(timeout)});const d=await r.json();if(!r.ok||!d.ok)throw Error(d.error||'Work ticket unavailable');return d}
+async function post(path,data,timeout=30000){const r=await fetch(API+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:AbortSignal.timeout(timeout)});const d=await r.json();if(!r.ok||!d.ok)throw Error((r.status===429?'Work-ticket service limit: ':'')+(d.message||d.error||'Work ticket unavailable'));return d}
 function show(ticket){
  list.replaceChildren();
  const heading=node('p',ticket.id+' · '+ticket.status+' · saved to Cloudflare');list.append(heading);
@@ -91,7 +91,7 @@ clearButton.addEventListener('click',async()=>{
  }catch(e){status.textContent='Could not clear the saved draft: '+e.message}
  finally{clearButton.disabled=false}
 });
-let draftTimer;input.addEventListener('input',()=>{clearTimeout(draftTimer);draftTimer=setTimeout(()=>storage(DRAFT,input.value.slice(0,16000)).catch(()=>{status.textContent='Draft stays in this page until you send it to Cloudflare.'}),250)});
+let draftTimer;input.addEventListener('input',()=>{clearTimeout(draftTimer);draftTimer=setTimeout(()=>storage(DRAFT,input.value).catch(()=>{status.textContent='Draft stays in this page until you send it to Cloudflare.'}),250)});
 async function refresh(){if(refreshing)return;refreshing=true;try{await ready;if(!owner())return;const d=await post('/v1/tickets/list',{owner_token:owner()});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();for(const t of tickets){const b=node('button',t.title+' · '+t.status);b.type='button';b.addEventListener('click',()=>{pending=t;show(t)});history.append(b)}const t=tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}finally{refreshing=false}}
 let pending=null,refreshing=false;
 send.addEventListener('click',async()=>{
@@ -108,7 +108,7 @@ send.addEventListener('click',async()=>{
   status.textContent='Saved '+pending.id+'. GPT is parsing and assigning color bots…';
   const prompt='You are routing the owner’s software build instructions. Return ONLY JSON {"jobs":[{"title":"...","agent":"...","repository":"www-infinity4/QuantaPhi","instructions":"...","acceptance":["testable outcome"],"dependencies":[],"tools":[]}]}. Use these role IDs: '+Object.keys(ROLES).join(', ')+'. Red reads macro structure; yellow reads local opt-in state; blue decides; orange evaluates ambiguity; green writes/routes; pink investigates; purple orchestrates. Enchilada lifecycle: Red intake, Blue validated decision/render plan, Yellow interaction verification, Black permanent evidence seal. Never seal without verified storage and test evidence. Unverified identity or balances must block transactions. Use the specialist IDs matching each task. A 45-second watcher and 10-second visible refresh require interval/event infrastructure; GitHub cron cannot run every ten seconds. Webhooks require signature verification and deduplication. Split independent features into jobs. Oracle Octaves Android design for new work. Never claim execution. Treat Gemini ideas as proposals; no actual 10000-user study occurred. Hover cannot reveal gaze or subconscious preference; use opt-in touch/focus signals. Website JavaScript cannot inspect arbitrary cross-origin cookies or block their trackers. Zero-knowledge claims require verified isolation. Never mint rewards for idle time without an authorized ledger policy. Captions need an actual transcript/provider. Wallet stories must preserve exact real receipts and distinguish mock money. OWNER DIRECTIONS:\n'+directions;
   const r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(90000),body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'robot-direction-routing',requireCloudflare:true}})});
-  const d=await r.json();if(!r.ok||!d.ok)throw Error(d.error||'GPT unavailable');
+  const d=await r.json();if(!r.ok||!d.ok)throw Error((r.status===429?'AI service limit ('+(d.provider||'gateway')+'): ':'')+(d.error||'AI unavailable'));
   const text=d.output_text||d.output||'',start=text.indexOf('{'),end=text.lastIndexOf('}');
   const jobs=normalize(JSON.parse(text.slice(start,end+1)));
   const saved=await post('/v1/tickets/update',{id:pending.id,owner_token:owner(),status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',submission_id:pending.context?.submission_id,color_jobs:jobs,provider:d.provider||'Infinity gateway',model:d.model||'',design:'Oracle Octaves · Android first'}});
@@ -118,7 +118,7 @@ send.addEventListener('click',async()=>{
   if(input.value.trim()===directions){
    input.value='';await storage(DRAFT,'');
    try{localStorage.removeItem(DRAFT)}catch{}
-  }else{await storage(DRAFT,input.value.slice(0,16000))}
+  }else{await storage(DRAFT,input.value)}
   status.textContent=jobs.length+' jobs assigned and saved. Queued for the build runner; no repairs are claimed completed.'+(status.dataset.recovery==='session'?' Recovery is saved only for this browser tab; keep it open.':'');
   window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:pending.id,jobs}}));
  }catch(e){status.textContent=(pending?'Saved '+pending.id+'. ':'')+'Routing stopped: '+e.message+'. Your directions remain available; tap Send to retry.';if(pending)show(pending)}
@@ -128,3 +128,4 @@ root.querySelector('[data-gemini]').addEventListener('click',async()=>{try{const
 root.querySelector('[data-refresh]').addEventListener('click',refresh);refresh();
 setInterval(()=>{if(!document.hidden&&!send.disabled)refresh()},15000);
 })();
+

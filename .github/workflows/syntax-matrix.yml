@@ -1,0 +1,26 @@
+name: Yellow Jacket Green Hornet Pink Panther syntax matrix
+on:
+  workflow_dispatch:
+  push:
+    paths: ['robot-directions.*', 'quanta-agent-iterations.*', 'tools/syntax-matrix.cjs', 'test/syntax-matrix.cjs', 'workers/infinity-work-tickets/worker.js', 'test/work-ticket-limits.cjs', '.github/workflows/syntax-matrix.yml']
+  pull_request:
+    paths: ['robot-directions.*', 'quanta-agent-iterations.*', 'tools/syntax-matrix.cjs', 'workers/infinity-work-tickets/worker.js']
+permissions:
+  contents: read
+jobs:
+  syntax-matrix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false acorn@8.15.0 postcss@8.5.6
+      - run: node tools/syntax-matrix.cjs
+      - run: node --test test/syntax-matrix.cjs test/work-ticket-limits.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: syntax-matrix-evidence
+          path: syntax-evidence/
+          retention-days: 14
