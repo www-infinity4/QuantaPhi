@@ -1,0 +1,50 @@
+/* Oracle Octaves QuantaPhi iteration machine — compact phone-first card */
+#quantaAgentIterations{display:block;contain:layout style;position:relative;margin:12px auto 18px;border:2px solid #86bed8;border-radius:17px;padding:13px;overflow:hidden;background:linear-gradient(160deg,#e2f4ff 0%,#f6fbff 49%,#e3eefa 100%);box-shadow:0 8px 22px #1e54851b;color:#163b61;font:500 13px/1.5 system-ui,-apple-system,sans-serif}
+#quantaAgentIterations *{box-sizing:border-box}
+#quantaAgentIterations h2,#quantaAgentIterations h3,#quantaAgentIterations h4{line-height:1.2;color:#143f64;margin:0}
+#quantaAgentIterations h2{font-size:21px;font-weight:900;margin:2px 0 5px}
+#quantaAgentIterations h3{font-size:16px;margin:0}
+#quantaAgentIterations p{color:#375a77;margin:6px 0;overflow-wrap:anywhere}
+#quantaAgentIterations .qai-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap}
+#quantaAgentIterations .qai-eyebrow{font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:900;color:#216b99}
+#quantaAgentIterations .qai-sub{font-size:12px;line-height:1.5;margin:6px 0 0}
+#quantaAgentIterations .qai-live{display:inline-flex;align-items:center;gap:5px;color:#26547a;font-size:11px;font-weight:800;padding:6px 8px;border-radius:999px;background:#fff;border:1px solid #98bbda}
+#quantaAgentIterations .qai-pulse{width:8px;height:8px;border-radius:50%;background:#25a268;box-shadow:0 0 0 3px #b1e9d3;animation:qai-pulse 2.5s ease-in-out infinite}
+@keyframes qai-pulse{50%{box-shadow:0 0 0 6px #b1e9d333}}
+#quantaAgentIterations .qai-meta{display:flex;gap:5px;flex-wrap:wrap;margin:11px 0}
+#quantaAgentIterations .qai-meta>span{border-radius:8px;background:#fff;border:1px solid #afd0e7;padding:5px 7px;font-size:10px;color:#345977}
+#quantaAgentIterations .qai-controls{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}
+#quantaAgentIterations .qai-controls button,#quantaAgentIterations .qai-controls a{display:inline-flex;align-items:center;justify-content:center;flex:1 1 auto;padding:9px 10px;min-height:42px;text-align:center;font:800 11px/1.35 system-ui,sans-serif;border-radius:10px;border:1px solid #2771a8;background:#155c92;color:#fff;text-decoration:none;cursor:pointer}
+#quantaAgentIterations .qai-controls a{background:#fff;color:#155c92}
+#quantaAgentIterations button:disabled{opacity:.62;cursor:wait}
+#quantaAgentIterations :is(a,button,input,summary):focus-visible{outline:3px solid #0f5a91;outline-offset:2px}
+#quantaAgentIterations .qai-marquee{overflow:hidden;width:100%;background:#d5ebfb;border:1px solid #9bc6e3;border-radius:10px;padding:7px 0;margin:9px 0}
+#quantaAgentIterations .qai-ticker-track{display:flex;gap:9px;width:max-content;align-items:center;white-space:nowrap;animation:qai-scroll 47s linear infinite}
+#quantaAgentIterations .qai-marquee:hover .qai-ticker-track{animation-play-state:paused}
+#quantaAgentIterations .qai-ticker-item{display:inline-flex;align-items:center;padding:6px 10px;border:1px solid #b0cbe1;border-radius:8px;background:#fff;color:#38607e;font-size:11px}
+#quantaAgentIterations .qai-ticker-item b{color:#125587}
+@keyframes qai-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+#quantaAgentIterations .qai-fold{background:#fff;border:1px solid #aecfe5;border-radius:11px;padding:0 10px;margin:9px 0;overflow:hidden}
+#quantaAgentIterations .qai-fold summary{display:list-item;cursor:pointer;padding:11px 0;font-weight:900;color:#185a85;min-height:43px}
+#quantaAgentIterations .qai-fold[open] summary{border-bottom:1px solid #d5e7f4}
+#quantaAgentIterations .qai-event{border-left:4px solid #6b99c0;border-bottom:1px solid #d9e6f0;padding:9px 8px 10px;margin:7px 0;background:#fafcff;border-radius:8px}
+#quantaAgentIterations .qai-event-meta,#quantaAgentIterations .qai-event-foot{display:flex;gap:7px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+#quantaAgentIterations .qai-event-meta strong{font-size:11px}
+#quantaAgentIterations .qai-event small,#quantaAgentIterations .qai-job small,#quantaAgentIterations .qai-skill small{color:#5f7890;font-size:10px}
+#quantaAgentIterations .qai-event p{font-size:12px;margin:6px 0}
+#quantaAgentIterations .qai-event-foot a,#quantaAgentIterations .qai-job a,#quantaAgentIterations .qai-skill a{font-size:11px;color:#16679c;font-weight:850;text-decoration:underline;text-underline-offset:2px}
+#quantaAgentIterations .qai-event-meta .qai-yellow{color:#a76c07}#quantaAgentIterations .qai-event-meta .qai-orange{color:#ab5e21}#quantaAgentIterations .qai-event-meta .qai-pink{color:#b14e7d}#quantaAgentIterations .qai-event-meta .qai-purple{color:#7d53af}#quantaAgentIterations .qai-event-meta .qai-green{color:#177950}
+#quantaAgentIterations .qai-job,#quantaAgentIterations .qai-skill{padding:11px 4px;border-bottom:1px solid #d8e6f1}
+#quantaAgentIterations .qai-job-head{display:flex;justify-content:space-between;gap:6px;align-items:center}
+#quantaAgentIterations .qai-job-head b{font-size:11px;color:#184f78}
+#quantaAgentIterations .qai-job p,#quantaAgentIterations .qai-skill p{font-size:12px;margin:6px 0}
+#quantaAgentIterations .qai-job small,#quantaAgentIterations .qai-skill small{display:block;margin:4px 0 6px}
+#quantaAgentIterations .qai-skill strong{font-size:13px}
+#quantaAgentIterations .qai-privacybar{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+#quantaAgentIterations .qai-switch{display:inline-flex;gap:5px;align-items:center;font-size:11px;font-weight:800;color:#1b5c88}
+#quantaAgentIterations .qai-switch input{accent-color:#186da2;width:18px;height:18px}
+#quantaAgentIterations #qai-reset{border-radius:8px;border:1px solid #8eb8d6;background:#fff;color:#1f628b;font:800 11px system-ui;padding:9px;cursor:pointer}
+#quantaAgentIterations .qai-muted{font-size:12px;padding:6px 2px}
+#quantaAgentIterations #qai-updated[data-stale=true]{color:#9a462c}
+#quantaAgentIterations .qai-disclaimer{font-size:10px;margin:11px 0 0}
+@media(prefers-reduced-motion:reduce){#quantaAgentIterations .qai-ticker-track,#quantaAgentIterations .qai-pulse{animation:none}#quantaAgentIterations .qai-marquee{overflow:auto}}
