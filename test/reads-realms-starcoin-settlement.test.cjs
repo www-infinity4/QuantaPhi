@@ -19,7 +19,8 @@ INSERT INTO account_devices VALUES('user_test','${hash}');`);
  vm.runInContext(workerSource.replace('export default {','const worker = {')+'\nglobalThis.worker=worker;',context);
  const env={DB:d1(ledger),IDENTITY_DB:d1(identity)};
  const call=(credits)=>context.worker.fetch(new Request('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/star-coins',{method:'POST',headers:{origin:'https://quantaphi.org',authorization:'Bearer '+TOKEN,'content-type':'application/json'},body:JSON.stringify({credits})}),env,{});
- return {identity,ledger,call};
+ const reconcile=()=>context.worker.fetch(new Request('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/star-coins/reconcile',{method:'POST',headers:{origin:'https://quantaphi.org',authorization:'Bearer '+TOKEN,'content-type':'application/json'},body:'{}'}),env,{});
+ return {identity,ledger,call,reconcile};
 }
 const action=(kind,ref,serverSettlement=true)=>({kind,reference:ref,reference_id:'quantaphi:'+kind+':'+ref,serverSettlement,data:{id:ref,title:'Reads & Realms story',sourceUrl:'https://example.org/story',action:kind}});
 test('Reads and Realms Collect Star Share pay the real StarQuest account once',async()=>{
@@ -61,4 +62,18 @@ test('Reads and Realms action handlers connect Star Collect and successful Share
  assert.match(cloud,/serverSettlement:true/);
  const html=fs.readFileSync('index.html','utf8');
  assert.match(html,/__quantaStarServerSettlement=true/);
+});
+
+test('authenticated reconciliation recovers an unpaid catalog Star/Collect/Share exactly once',async()=>{
+ const {identity,call,reconcile}=await setup();
+ const credits=[action('star','infinite-book:unpaid-star',false),action('collect','infinite-book|unpaid-collect',false),action('share','infinite-book:unpaid-share:event-1',false)];
+ let r=await call(credits);assert.equal(r.status,201);assert.equal((await r.json()).settled.length,0,'old clients only catalog actions');
+ r=await reconcile();assert.equal(r.status,200);
+ let j=await r.json();
+ assert.equal(j.checked,3);assert.equal(j.credited,3);
+ assert.equal(j.wallet_state.pendingShareCredits,3);
+ r=await reconcile();j=await r.json();
+ assert.equal(j.credited,0);assert.equal(j.alreadyPaid,3);
+ assert.equal(j.wallet_state.pendingShareCredits,3,'a replay cannot mint twice');
+ assert.equal(identity.prepare('SELECT COUNT(*) AS n FROM share_receipts').get().n,3);
 });
