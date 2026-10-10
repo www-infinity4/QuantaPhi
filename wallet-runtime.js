@@ -271,7 +271,7 @@
       // Never overwrite an optimistic local action while its payout is still
       // queued. The authoritative StarQuest balance is applied after ACK.
       const payoutPending=read('phi:pendingStarCoinReceipts:v1',[]).length;
-      if(!payoutPending){
+      if(window.__quantaStarServerSettlement||!payoutPending){
         wallet.tokens=Math.max(0,Number(state.starCoins)||0);
         wallet.pendingShareCredits=Math.max(0,Math.min(9,Number(state.pendingShareCredits)||0));
         wallet.shareCount=Math.max(0,Number(state.shareCount)||0);
