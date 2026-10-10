@@ -83,7 +83,7 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 #result .qzonePurple #qPurpleList{padding:0;list-style:none}
 </style><style id="quantWalletStyle">
 .qwalletPanel{position:fixed;inset:0;z-index:9999;background:#f7f3fb;color:#21172b;padding:16px;overflow:auto}.qwalletHead{display:flex;align-items:center;justify-content:space-between;gap:12px}.qwalletHead h2{margin:0}.qwalletClose{border:0;border-radius:12px;padding:10px 14px;font-weight:900}.qwalletTabs{display:flex;gap:8px;margin:18px 0}.qwalletTabs button{flex:1;border:0;border-radius:14px;padding:12px;font-weight:900}.qwalletBox{background:#fff;border:1px solid #ddd2e8;border-radius:18px;padding:16px;margin-top:12px}.qwalletBox label{display:block;font-weight:800;margin:12px 0 5px}.qwalletBox input{box-sizing:border-box;width:100%;padding:12px;border:1px solid #b9a9c9;border-radius:12px;font-size:16px}.qwalletPrimary{width:100%;margin-top:14px;border:0;border-radius:14px;padding:13px;background:#5f259f;color:#fff;font-weight:900}.qwalletId{overflow-wrap:anywhere;font-family:monospace;background:#f3edf8;padding:12px;border-radius:12px}.qwalletMsg{margin-top:12px;font-weight:700}
-.book-shelf-link{margin:8px 0 16px}.book-shelf-link a{display:block;border-radius:999px;background:#fff4b8;border:1px solid #e7d17d;color:#382400;text-align:center;text-decoration:none;font-weight:900;padding:12px 14px}</style><script src="https://www-infinity4.github.io/C13b0/unified-token-count.js?v=20261002-stable3"></script><script src="asset-balances.js?v=20261004-authoritative1"></script><script src="cloud-wallet-client.js?v=20261005-legacy-floor2"></script><script src="music-quant-store.js?v=20261005-org-runtime1"></script><script src="music-quant-cloud.js?v=20261005-org-runtime1"></script><script src="wallet-runtime.js?v=20261010-starcoin-payout-repair3" data-control-phi-wallet-only="true"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"992ccaa311754974becbcebf74de1b34"}'></script><script src="search-wallet-sync.js?v=20261005-pairedmint1"></script><script src="star-coin-cloud.js?v=20261010-action-catalog1"></script><script defer src="domain-health.js?v=20261004-org7"></script><style id="shoplcShirtStyle">
+.book-shelf-link{margin:8px 0 16px}.book-shelf-link a{display:block;border-radius:999px;background:#fff4b8;border:1px solid #e7d17d;color:#382400;text-align:center;text-decoration:none;font-weight:900;padding:12px 14px}</style><script src="https://www-infinity4.github.io/C13b0/unified-token-count.js?v=20261002-stable3"></script><script src="asset-balances.js?v=20261004-authoritative1"></script><script src="cloud-wallet-client.js?v=20261005-legacy-floor2"></script><script src="music-quant-store.js?v=20261005-org-runtime1"></script><script src="music-quant-cloud.js?v=20261005-org-runtime1"></script><script>window.__quantaStarServerSettlement=true;</script><script src="wallet-runtime.js?v=20261010-starcoin-payout-repair3" data-control-phi-wallet-only="true"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"992ccaa311754974becbcebf74de1b34"}'></script><script src="search-wallet-sync.js?v=20261005-pairedmint1"></script><script src="star-coin-cloud.js?v=20261010-server-payments2"></script><script defer src="domain-health.js?v=20261004-org7"></script><style id="shoplcShirtStyle">
 .shoplcShirtWrap{display:flex;justify-content:center;align-items:center;margin:24px auto 8px;padding:8px 0 18px}
 .shoplcShirtButton{width:150px;height:174px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-sizing:border-box;padding:34px 24px 22px;text-align:center;text-decoration:none;color:#fff;background:
 radial-gradient(circle at 19% 25%,#ffd166 0 5px,transparent 6px),
@@ -1064,32 +1064,25 @@ $('#go').onclick=search;
  // Collect/Share credit: Control Phi sends the StarQuest cloud receipt that owns the
  // signed-in Star Coin balance; the QuantaPhi ledger keeps a durable Cloudflare record.
  window.QuantaStarCredit=function(kind,reference,card){
-  if(!['collect','share','star','build_image','fix_image','extract','compare'].includes(kind))return {awarded:0};
-  if(!card)card={title:document.getElementById('q')?.value||document.title,query:document.getElementById('q')?.value||'',page:globalThis.location?.href||''};
-  const ref=String(reference||crypto.randomUUID()),cp=window.ControlPhi;let detail=null;
-  const pendingKey='quantaPhi:pendingStarCoinWalletActions:v1';
-  const deferToWallet=()=>{
+  if(!['collect','share','star','build_image','fix_image','extract','compare'].includes(kind))return{awarded:0};
+  const ref=String(reference||crypto.randomUUID());
+  if(!card)card={title:document.getElementById('q')?.value||document.title,query:document.getElementById('q')?.value||'',page:location.href};
+  const cloud=window.QuantaStarCoinCloud;
+  let queued=false;
+  try{queued=Boolean(cloud?.record?.(kind,ref,card))}catch(error){console.warn('StarCoin server payout deferred',error)}
+  if(!queued){
+    // The Cloudflare script may not have loaded yet. Save exact action evidence
+    // so it can be replayed on load without an invented browser-only payment.
+    const key='quantaPhi:pendingStarCoinWalletActions:v1';
     try{
-      const stored=JSON.parse(localStorage.getItem(pendingKey)||'[]');
-      const items=Array.isArray(stored)?stored:[];
-      if(!items.some(x=>x.kind===kind&&x.ref===ref)){
-        const queued=[...items,{kind,ref,createdAt:Date.now()}].slice(-500);
-        localStorage.setItem(pendingKey,JSON.stringify(queued));
-      }
-    }catch(error){console.warn('StarCoin wallet queue temporarily unavailable',error)}
-    try{window.dispatchEvent(new CustomEvent('quantaphi:starcoin-payout-pending',{detail:{kind,reference:ref}}))}catch(_){}
-    return{awarded:0,pending:true,reason:'wallet_connection_pending'};
-  };
-  try{
-    if(kind==='share'&&cp?.ensureShareCredit)detail=cp.ensureShareCredit(ref);
-    else if(kind!=='share'&&cp?.ensureActionCredit)detail=cp.ensureActionCredit(ref,kind);
-    else detail=deferToWallet();
-  }catch(error){console.warn('Star Coin credit retained for wallet retry',error);detail=deferToWallet()}
-  // Queue new credit evidence once. For an already-paid action, retry existing outbox
-  // receipts without generating another record or an additional wallet payment.
-  if(!detail?.alreadyRecorded)try{window.QuantaStarCoinCloud?.record(kind,ref,card)}catch(error){console.warn('Star Coin Cloudflare record deferred',error)}
-  else try{void window.QuantaStarCoinCloud?.flush?.()}catch(error){console.warn('Star Coin Cloudflare retry deferred',error)}
-  return detail;
+      const stored=JSON.parse(localStorage.getItem(key)||'[]'),items=Array.isArray(stored)?stored:[];
+      if(!items.some(x=>x.kind===kind&&x.ref===ref))
+        localStorage.setItem(key,JSON.stringify([...items,{kind,ref,card,createdAt:Date.now()}].slice(-500)));
+      queued=true;
+    }catch(error){console.warn('StarCoin payout evidence could not be persisted',error)}
+  }
+  try{window.dispatchEvent(new CustomEvent('quantaphi:starcoin-payout-pending',{detail:{kind,reference:ref,queued}}))}catch(_){}
+  return{awarded:0,pending:queued,kind,reference:ref,reason:queued?'server_confirmation_pending':'storage_unavailable'};
  };
  paint(importLegacy(),false);
  window.addEventListener('load',()=>paint(importLegacy(),false),{once:true});
@@ -1510,7 +1503,7 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script src="media-repair.js?v=20261003-refine2"></script><script>window.PhiInfiniteBookFeedUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/feed';window.PhiInfiniteBookBanksUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/banks';</script><script defer src="/infinite-book-discovery.js?v=20261009-available-source1"></script>
 <script defer src="/phi-scholastic-data.js?v=20261010-action-catalog1"></script>
 <script defer src="/phi-assimilation.js?v=20261009-extraction-to-purple1"></script>
-<script defer src="/infinite-book.js?v=20261010-action-catalog1"></script>
+<script defer src="/infinite-book.js?v=20261010-reads-realms-star2"></script>
 <script defer src="/phi-visual-render.js?v=20261009-render-errors1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
 <script defer src="/phi-image-builder.js?v=20261010-action-catalog1"></script>
