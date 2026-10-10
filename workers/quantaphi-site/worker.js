@@ -108,6 +108,12 @@ async function getUpstream(url, request, headers) {
  } finally { clearTimeout(timer); }
 }
 function rewriteSuiteText(text) {
+ // Preserve inline Crusher behavior even while the page origin serves older HTML.
+ if(text.includes('id="quanta-inline-crusher"')){
+  text=text.replace('<a class="bodyShoe left bitcoinCrusherShoe" id="bitcoinCrusherShoe" href="/bitcoin-crusher/"','<button type="button" class="bodyShoe left bitcoinCrusherShoe" id="bitcoinCrusherShoe"').replace('▶ Play here</small></span></a>','▶ Play here</small></span></button>');
+  text=text.replace("  event?.preventDefault();\n  const opening=wrap.hidden;","  event?.preventDefault();\n  event?.stopImmediatePropagation();\n  const opening=wrap.hidden;").replace(" foot.addEventListener('click',show);"," foot.addEventListener('click',show,true);");
+ }
+
  // This bridge must execute on the old storage origin. It authenticates
  // postMessage replies against that origin, so suite navigation rewriting
  // must never move the bridge itself to quantaphi.org.
