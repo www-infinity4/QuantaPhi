@@ -32,6 +32,8 @@ async function listNotifications(req,env,b){
 }
 
 async function createTicket(req,env,b){
+ const existingOwner=clean(b.owner_token,300),submission=clean(b.context?.submission_id,100);
+ if(existingOwner&&submission){const row=await env.WORK_DB.prepare("SELECT * FROM work_tickets WHERE owner_hash=?1 AND json_extract(context_json,'$.submission_id')=?2 LIMIT 1").bind(await hash(existingOwner),submission).first();if(row)return json(req,{ok:true,ticket:publicTicket(row),deduplicated:true});}
  if(!(await allowCreate(req,env)))return json(req,{ok:false,error:"rate_limited",message:"Ticket creation limit reached for today."},429);
  const requestText=clean(b.request||b.input,16000);if(!requestText)return json(req,{ok:false,error:"request_required"},400);
  let ownerToken=clean(b.owner_token,300),ownerTokenCreated=false;if(!ownerToken){ownerToken=token();ownerTokenCreated=true}
