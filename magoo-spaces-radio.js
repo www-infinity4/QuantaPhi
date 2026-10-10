@@ -1,4 +1,4 @@
-/* Magoo PhD X Spaces catalog: separate host and D1 index from Fred.
+/* Magoo PhD guest recordings and X Spaces catalog; separate host and D1 index from Fred.
  * Shuffle is free, device-local, and never reveals Fred's curated paid links.
  */
 (() => {
@@ -13,12 +13,20 @@
   function store(key,value){try{localStorage.setItem(key,JSON.stringify(value));}catch{}}
   function elem(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;}
   function btn(label,callback){const b=elem("button","mp-btn",label);b.type="button";b.addEventListener("click",callback);return b;}
-  function validLink(value){try{const u=new URL(value);return u.protocol==="https:"&&["x.com","twitter.com","www.x.com","www.twitter.com"].includes(u.hostname)&&/^\/i\/spaces\/[A-Za-z0-9]+\/?$/.test(u.pathname);}catch{return false;}}
   function normalize(raw){
-    if(!raw||!validLink(raw.source))return null;
-    const id=String(raw.spaceId||new URL(raw.source).pathname.split("/").pop());
-    if(!/^[A-Za-z0-9]+$/.test(id))return null;
-    return {id:"magoo-"+id,title:String(raw.title||"Magoo PhD Space"),date:String(raw.date||""),duration:String(raw.duration||""),source:new URL(raw.source).origin+"/i/spaces/"+id,tags:Array.isArray(raw.tags)?raw.tags.slice(0,10).map(String):[]};
+    if(!raw||!raw.source)return null;
+    let u;try{u=new URL(raw.source)}catch{return null}
+    if(u.protocol!=="https:")return null;
+    const host=u.hostname.toLowerCase(),kind=String(raw.kind||"space"),platform=String(raw.platform||"X");
+    const space=["x.com","twitter.com","www.x.com","www.twitter.com"].includes(host)&&/^\/i\/spaces\/[A-Za-z0-9]+\/?$/.test(u.pathname);
+    const podcast=host==="podcasts.apple.com"&&/^\/us\/podcast\//.test(u.pathname)&&/^\d+$/.test(u.searchParams.get("i")||"");
+    const youtube=["www.youtube.com","youtube.com"].includes(host)&&u.pathname==="/watch"&&/^[a-zA-Z0-9_-]{11}$/.test(u.searchParams.get("v")||"");
+    if(!(space||podcast||youtube))return null;
+    if((space&&kind!=="space")||(podcast&&(platform!=="Apple Podcasts"||kind==="space"))||(youtube&&(platform!=="YouTube"||kind==="space")))return null;
+    const id=String(raw.id||(space?"magoo-"+(raw.spaceId||u.pathname.split("/").pop()):""));
+    if(!/^[a-zA-Z0-9_-]{5,100}$/.test(id))return null;
+    const source=space?u.origin+u.pathname:u.href;
+    return {id,title:String(raw.title||(space?"Magoo PhD Space":"Magoo PhD appearance")),date:String(raw.date||""),duration:String(raw.duration||""),source,tags:Array.isArray(raw.tags)?raw.tags.slice(0,10).map(String):[],kind,platform};
   }
   function pick(){
     const seen=new Set(read(SEEN,[]));if(state.current)seen.add(state.current.id);
@@ -49,7 +57,7 @@
       for(const entry of records){const episode=normalize(entry);if(episode)unique.set(episode.id,episode);}
       state.episodes=[...unique.values()];
       state.current=state.episodes.find(e=>e.id===read(CURRENT,""))||state.episodes[0]||null;
-      if(!state.episodes.length)state.error="No verified Magoo replay links indexed yet.";
+      if(!state.episodes.length)state.error="No verified Magoo recordings indexed yet.";
       else state.error="";
     }
     state.loading=false;render();
@@ -57,18 +65,21 @@
   function render(){
     root.replaceChildren();
     const card=elem("article","mp-card"),header=elem("header","mp-header");
-    header.append(elem("small","mp-eyebrow","ORACLE OCTAVES · SPACES LIBRARY"),elem("h2","mp-name","Magoo PhD Spaces"),elem("p","mp-host","@HodlMagoo · Separate Cloudflare catalog"));
+    header.append(elem("small","mp-eyebrow","ORACLE OCTAVES · RECORDING LIBRARY"),elem("h2","mp-name","Magoo PhD Recordings"),elem("p","mp-host","@HodlMagoo · Independent Cloudflare catalog"));
     card.append(header);
-    const info=elem("p","mp-info",state.loading?"Loading verified episodes…":state.episodes.length+" verified replay"+(state.episodes.length===1?"":"s")+" indexed · Shuffles without repeats");
+    const spaceCount=state.episodes.filter(e=>e.kind==="space").length;
+    const guestCount=state.episodes.length-spaceCount;
+    const info=elem("p","mp-info",state.loading?"Loading verified recordings…":guestCount+" guest recording"+(guestCount===1?"":"s")+" · "+spaceCount+" X Spaces · No-repeat shuffle");
     card.append(info);
     if(state.current){
+      card.append(elem("p","mp-kind",state.current.kind==="space"?"X Space replay":state.current.kind==="guest-panel"?"Guest panel · "+state.current.platform:"Guest interview · "+state.current.platform));
       card.append(elem("h3","mp-title",state.current.title));
-      card.append(elem("p","mp-meta",[state.current.date,state.current.duration].filter(Boolean).join(" · ")||"Original X Space"));
+      card.append(elem("p","mp-meta",[state.current.date,state.current.duration].filter(Boolean).join(" · ")||"Original recording"));
       if(state.current.tags.length)card.append(elem("p","mp-topics",state.current.tags.join(" · ")));
-      const play=elem("a","mp-play","▶ Open original Space on X ↗");play.href=state.current.source;play.target="_blank";play.rel="noopener noreferrer";card.append(play);
-      card.append(elem("small","mp-disclaimer","X controls recording availability and sign-in. This site does not host or simulate the audio."));
+      const play=elem("a","mp-play","▶ Open original on "+state.current.platform+" ↗");play.href=state.current.source;play.target="_blank";play.rel="noopener noreferrer";card.append(play);
+      card.append(elem("small","mp-disclaimer","Opens the original "+state.current.platform+" recording. Playback and sign-in depend on the provider; Phi does not copy or simulate the audio."));
     }else{
-      card.append(elem("p","mp-empty","The Magoo catalog is ready. A verified X Space URL is needed before there is anything to shuffle."));
+      card.append(elem("p","mp-empty","The Magoo catalog is ready, awaiting verified recording links."));
     }
     const actions=elem("div","mp-actions");
     const next=btn("⤨ Shuffle Magoo",shuffle);next.disabled=state.loading||state.episodes.length===0;
