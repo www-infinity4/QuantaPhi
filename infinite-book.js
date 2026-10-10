@@ -510,10 +510,10 @@
     safeWrite(STAR_KEY, Array.from(favorites));
     root.querySelector('[data-book-action="star"]').textContent = favorites.has(current.id) ? '★ Starred' : '☆ Star';
     const starred=favorites.has(current.id);
-    if(starred)window.QuantaStarCredit?.('star','infinite-book:'+current.id,current);
+    const payout=starred?window.QuantaStarCredit?.('star','infinite-book:'+current.id,{...current,storyId:current.id,query:lastSearchQuery,sourceUrl:current.sourceUrl,action:'star'}):null;
     window.PhiAssimilation?.signal?.({kind:'story',action:starred?'star':'unstar',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)});
     window.dispatchEvent(new CustomEvent('phi:story:star',{detail:{id:current.id,sector:current.sector,title:current.title,starred}}));
-    note(starred ? 'Starred. This subject now influences future discoveries and can be used as a build seed.' : 'Removed from favorites');
+    note(starred?(payout?.pending?'Starred · +0.1 StarCoin queued for verified wallet payout.':'Star saved, but reward connection needs repair.'): 'Removed from favorites · the previous StarCoin receipt remains intact.');
   }
   async function share() {
     if (!current) return;
@@ -531,27 +531,36 @@
       else if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(current.title + '\n' + url);
       else { note('Sharing is unavailable in this browser'); return; }
     } catch (_) { note('Share cancelled'); return; }
-    try { window.QuantaStarCredit?.('share', 'infinite-book:' + current.id + ':' + Date.now(), current); }
+    let payout=null;
+    try { payout=window.QuantaStarCredit?.('share', 'infinite-book:' + current.id + ':' + crypto.randomUUID(), {...current,storyId:current.id,query:lastSearchQuery,action:'share',shareUrl:url}); }
     catch (error) { console.warn('Story share credit deferred', error); }
     window.PhiAssimilation?.signal?.({kind:'story',action:'share',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)});
-    note(combined?.handled ? 'Story text and image sent to the share sheet. The image stays device-local; link visitors see the story without your picture until cloud publishing is connected.' : combined?.imageMissing ? 'Story link shared. This browser cannot bundle image files; use Save image to share the picture separately.' : 'Story shared or link copied');
+    note(payout?.pending?'Story shared · +0.1 StarCoin awaiting verified wallet settlement.': 'Story shared · payout could not be queued; your story remains intact.');
   }
   function collect() {
     if (!current) return;
     interactedWithStory = true;
     const key = 'infinite-book|' + current.id;
     const collected = safeRead('quantaPhiCollected');
-    if (collected.some(x => x && x.key === key)) { note('Already collected'); return; }
+    const existing=collected.find(x=>x&&x.key===key);
+    if(existing){
+      const receipt=window.QuantaStarCredit?.('collect',key,existing);
+      note(receipt?.pending?'Already collected · checking the original +0.1 StarCoin receipt.':'Already collected · wallet payout sync unavailable.');
+      return;
+    }
     const saved = {
       key, type: 'story', title: current.title, story: current.full,
       media: '', sourceUrl: current.sourceUrl, category: 'infinite-book',
       collectedAt: new Date().toISOString()
     };
     collected.push(saved);
-    safeWrite('quantaPhiCollected', collected);
+    if(!safeWrite('quantaPhiCollected',collected)){
+      note('Collection storage is unavailable. Nothing was reported as paid.');return;
+    }
     window.dispatchEvent(new CustomEvent('quantaphi:collected', { detail: saved }));
     window.PhiAssimilation?.signal?.({kind:'story',action:'collect',key:current.id,title:current.title,query:lastSearchQuery,terms:indexedSearchTerms(current)});
-    try { window.QuantaStarCredit?.('collect', key, saved); }
+    let receipt=null;
+    try { receipt=window.QuantaStarCredit?.('collect',key,{...saved,storyId:current.id,query:lastSearchQuery,action:'collect'}); }
     catch (error) { console.warn('Story collect credit deferred', error); }
     const bridge = window.QuantaCloudConnection || window.StarQuestCloudLedger;
     if (typeof bridge?.authenticatedFetch === 'function') {
@@ -559,8 +568,15 @@
         method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(saved)
       }).catch(error => console.warn('Story collect sync deferred', error));
     }
-    note('Collected. Cloud wallet credit follows the existing QuantaPhi connection.');
+    note(receipt?.pending?'Collected · +0.1 StarCoin queued for StarQuest confirmation.':'Collected · wallet payout needs reconnecting.');
   }
+  // The backend emits a confirmed settlement only after StarQuest acknowledges it.
+  window.addEventListener('quantaphi:star-coins-cloud',event=>{
+    const settled=Array.isArray(event?.detail?.settled)?event.detail.settled:[];
+    if(!current||!settled.length)return;
+    const matched=settled.find(x=>String(x.reference_id||'').includes('infinite-book:')||String(x.reference_id||'').includes('infinite-book|'));
+    if(matched)note(matched.credited?'+0.1 StarCoin confirmed in StarQuest wallet.':'Existing StarCoin receipt verified. No duplicate payment.');
+  });
   root.addEventListener('click', (event) => {
     const target = event.target.closest('[data-book-action]');
     if (!target || !root.contains(target)) return;
