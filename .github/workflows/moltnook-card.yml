@@ -1,0 +1,35 @@
+name: QuantaPhi Moltnook agent card
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'quanta-agent-iterations.js'
+      - 'quanta-agent-iterations.css'
+      - 'index.html'
+      - 'test/agent-iteration-card.test.cjs'
+      - '.github/workflows/moltnook-card.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  agent-card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test the embedded agent card
+        run: |
+          node --check quanta-agent-iterations.js
+          node --test test/agent-iteration-card.test.cjs
+      - name: Verify Moltnook public activity source is genuine and valid
+        run: |
+          curl -fsSL --retry 3 --max-time 25 https://quantaphi.org/moltnook/activity/iterations.json -o /tmp/moltnook-iterations.json
+          node -e "const fs=require('fs');const d=JSON.parse(fs.readFileSync('/tmp/moltnook-iterations.json'));if(d.schemaVersion!==2||!Array.isArray(d.jobs)||!Array.isArray(d.messages)||!d.jobs.length||!d.messages.length)process.exit(1);console.log('Verified source',d.jobs.length,'jobs',d.messages.length,'messages')"
+      - name: Verify QuantaPhi production page contains the card
+        run: |
+          curl -fsSL --retry 3 --max-time 25 'https://quantaphi.org/' -o /tmp/quanta.html
+          grep -q 'id="quantaAgentIterations"' /tmp/quanta.html
+          curl -fsSL --retry 3 --max-time 25 'https://quantaphi.org/quanta-agent-iterations.js' -o /tmp/quanta-agent.js
+          node --check /tmp/quanta-agent.js
