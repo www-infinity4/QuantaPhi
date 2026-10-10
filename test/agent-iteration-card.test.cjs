@@ -28,6 +28,10 @@ test('skill learning retains aggregate categories locally without uploading sear
  assert.match(js,/localStorage\.setItem\(STORE,JSON\.stringify\(local\)\)/);
  assert.match(js,/const raw=String\(input\|\|''\)\.trim\(\)/);
  assert.match(js,/local\.counts\[key\]=/);
+ assert.match(js,/WORKFLOWS/);
+ assert.match(js,/local\.flows\[pair\]=/);
+ assert.match(js,/stories>visuals/);
+ assert.match(js,/chemistry>visuals/);
  assert.match(js,/qai-watch/);
  assert.match(js,/qai-reset/);
  assert.doesNotMatch(js,/fetch\([^)]*raw/);
