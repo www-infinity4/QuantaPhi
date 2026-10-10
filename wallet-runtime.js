@@ -274,7 +274,12 @@
   async function refreshStarCoinCloud(){
     const readNumber=++starCloudReadNumber;
     const session=read(WALLET_SESSION_KEY,null);
-    const accountName=String(session?.key||session?.username||'').trim().toLowerCase();
+    // session.key can be a masked/rotating wallet ID, not the account's username.
+    // Compare the authenticated StarQuest username only to a real username;
+    // still reject stale replies if the selected local account changes.
+    const sessionKey=String(session?.key||'');
+    const profiles=read(WALLET_USERS_KEY,{});
+    const accountName=String(session?.username||profiles?.[sessionKey]?.username||'').trim().toLowerCase();
     setStarCloudStatus('Checking StarQuest…');
     try{
       // The older wallet reader returned an empty token if more than one
@@ -300,7 +305,7 @@
           lastError=String(payload?.error||('HTTP '+response.status));continue;
         }
         const candidate=payload.state;
-        if(accountName&&String(candidate.username||'').trim().toLowerCase()!==accountName){
+        if(accountName&&candidate.username&&String(candidate.username).trim().toLowerCase()!==accountName){
           lastError='wallet_identity_mismatch';continue;
         }
         state=candidate;break;
@@ -308,7 +313,7 @@
       if(!state)throw new Error(lastError);
       if(readNumber!==starCloudReadNumber)return null;
       const current=read(WALLET_SESSION_KEY,null);
-      if(accountName!==String(current?.key||current?.username||'').trim().toLowerCase())return null;
+      if(sessionKey!==String(current?.key||''))return null;
       const store=walletStore(),wallet=normalizeWallet(store.profile);
       wallet.tokens=Math.max(0,Number(state.starCoins)||0);
       wallet.pendingShareCredits=Math.max(0,Math.min(9,Number(state.pendingShareCredits)||0));
@@ -364,6 +369,21 @@
     ]);
     refreshWalletUI();
   }
+  // Manual recovery uses the SAME confirmed StarQuest ledger as the Media Star.
+  // Never turn a pending receipt into an optimistic spendable balance.
+  document.addEventListener('click',event=>{
+    const button=event.target.closest?.('[data-control-phi-sync-stars]');
+    if(!button||button.disabled)return;
+    button.disabled=true;button.textContent='Syncing…';
+    void (async()=>{
+      try{
+        await window.QuantaStarCoinCloud?.flush?.();
+        await window.QuantaStarCoinCloud?.reconcile?.();
+        await flushStarReceipts();
+        await refreshStarCoinCloud();
+      }finally{button.disabled=false;button.textContent='Sync StarCoins'}
+    })();
+  });
   document.addEventListener('starquest:ledger-connected',refreshCloudBalances);
   window.addEventListener('load',refreshCloudBalances);
   window.addEventListener('focus',refreshCloudBalances);
@@ -740,7 +760,7 @@
     document.head.appendChild(style);
     const button=existingTrigger||document.createElement('button');
     button.id='controlPhiWalletButton';button.type='button';button.setAttribute('aria-label','Open unified wallet');button.setAttribute('aria-expanded','false');
-    const panel=document.createElement('section');panel.id='controlPhiWalletPanel';panel.hidden=true;panel.setAttribute('aria-label','Unified wallet');panel.innerHTML='<div class="cp-wallet-row"><span data-control-phi-wallet-name>Guest</span><strong>Unified Wallet</strong></div><div class="cp-wallet-assets"><div class="cp-wallet-asset"><span>Star Coins</span><strong><span data-control-phi-wallet-balance>0</span> ⭐</strong><small data-control-phi-wallet-progress>0/10</small><small data-control-phi-star-sync>Cached • checking StarQuest</small></div><div class="cp-wallet-asset"><span>Owned Infinity tokens</span><strong data-control-phi-wallet-total>0</strong><small>One website token type</small></div><div class="cp-wallet-asset"><span>Created through Infinity Phi</span><strong data-control-phi-wallet-infinity>0</strong><small>tokens</small></div><div class="cp-wallet-asset"><span>Created through Omni Phi</span><strong data-control-phi-wallet-omni>0</strong><small>tokens</small></div><div class="cp-wallet-asset"><span>Quants</span><strong data-control-phi-wallet-quants>0</strong><small>Independent spendable balance</small></div><div class="cp-wallet-asset"><span>Created through QuantaPhi</span><strong data-control-phi-wallet-quanta-websites>0</strong><small>Infinity tokens</small></div><div class="cp-wallet-asset"><span>Legacy / metadata pending</span><strong data-control-phi-wallet-legacy>0</strong><small>counted, details not recovered yet</small></div><div class="cp-wallet-asset"><span>Music Quants</span><strong data-control-phi-wallet-music-quants>0</strong><small><span data-control-phi-wallet-piano>0</span> five-note + <span data-control-phi-wallet-listening>0</span> listening</small></div><div class="cp-wallet-asset"><span>Alien Coins</span><strong data-control-phi-wallet-alien-coins>0</strong><small>secured tokens</small></div></div><p>Each search creates an Infinity website token and a separate Quant. Spending either changes only that asset. Music Quants combine five-note and listening records.</p>';
+    const panel=document.createElement('section');panel.id='controlPhiWalletPanel';panel.hidden=true;panel.setAttribute('aria-label','Unified wallet');panel.innerHTML='<div class="cp-wallet-row"><span data-control-phi-wallet-name>Guest</span><strong>Unified Wallet</strong></div><div class="cp-wallet-assets"><div class="cp-wallet-asset"><span>Star Coins</span><strong><span data-control-phi-wallet-balance>0</span> ⭐</strong><small data-control-phi-wallet-progress>0/10</small><small data-control-phi-star-sync>Cached • checking StarQuest</small><button type="button" data-control-phi-sync-stars style="margin-top:7px;border:1px solid #d7b85d;background:#ffe99d;border-radius:9px;padding:6px;color:#382600;font-weight:800;font-size:11px">Sync StarCoins</button></div><div class="cp-wallet-asset"><span>Owned Infinity tokens</span><strong data-control-phi-wallet-total>0</strong><small>One website token type</small></div><div class="cp-wallet-asset"><span>Created through Infinity Phi</span><strong data-control-phi-wallet-infinity>0</strong><small>tokens</small></div><div class="cp-wallet-asset"><span>Created through Omni Phi</span><strong data-control-phi-wallet-omni>0</strong><small>tokens</small></div><div class="cp-wallet-asset"><span>Quants</span><strong data-control-phi-wallet-quants>0</strong><small>Independent spendable balance</small></div><div class="cp-wallet-asset"><span>Created through QuantaPhi</span><strong data-control-phi-wallet-quanta-websites>0</strong><small>Infinity tokens</small></div><div class="cp-wallet-asset"><span>Legacy / metadata pending</span><strong data-control-phi-wallet-legacy>0</strong><small>counted, details not recovered yet</small></div><div class="cp-wallet-asset"><span>Music Quants</span><strong data-control-phi-wallet-music-quants>0</strong><small><span data-control-phi-wallet-piano>0</span> five-note + <span data-control-phi-wallet-listening>0</span> listening</small></div><div class="cp-wallet-asset"><span>Alien Coins</span><strong data-control-phi-wallet-alien-coins>0</strong><small>secured tokens</small></div></div><p>Each search creates an Infinity website token and a separate Quant. Spending either changes only that asset. Music Quants combine five-note and listening records.</p>';
     const host=document.querySelector('.head-actions,.qbalances,[data-control-phi-wallet-host]');
     if(!existingTrigger){if(host)host.appendChild(button);else{button.classList.add('control-phi-wallet-floating');document.body.appendChild(button)}}
     document.body.appendChild(panel);
