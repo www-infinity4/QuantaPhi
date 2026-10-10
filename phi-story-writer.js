@@ -176,7 +176,11 @@ function creditStatus(result,action){return result?.pending?' '+action+' receipt
 function star(){
  if(!active)return;
  const selected=read(STARS,[]);if(!Array.isArray(selected))return;
- if(selected.includes(active.id)){note('Already starred. No duplicate StarCoin reward.');return}
+ if(selected.includes(active.id)){
+   const card={key:'story-writer|'+active.id,type:'Fantasy',title:active.title,story:active.body.slice(0,4000),keywords:active.keywords,genre:active.genre};
+   const receipt=window.QuantaStarCredit?.('star','story-writer|'+active.id,card);
+   note('Already starred; retried the original idempotent receipt.'+creditStatus(receipt,'Star'));return
+ }
  if(!store(STARS,[...selected,active.id].slice(-1000))){note('Could not save the Star preference; no payout submitted.');return}
  $('#sw-star').textContent='★ Starred';
  const card={key:'story-writer|'+active.id,type:'Fantasy',title:active.title,story:active.body.slice(0,4000),keywords:active.keywords,genre:active.genre};
@@ -187,7 +191,10 @@ function collect(){
  if(!active)return;
  const all=read(COLLECT,[]);if(!Array.isArray(all))return;
  const key='story-writer|'+active.id;
- if(all.some(x=>x.key===key)){note('Already collected. No duplicate StarCoin action.');return}
+ if(all.some(x=>x.key===key)){
+   const existing=all.find(x=>x.key===key),receipt=window.QuantaStarCredit?.('collect',key,existing);
+   note('Already collected; retried the original idempotent receipt.'+creditStatus(receipt,'Collect'));return
+ }
  const item={key,type:'Story',title:active.title,story:active.body,media:'',sourceUrl:'',createdAt:active.createdAt,collectedAt:new Date().toISOString(),generator:'story-writer',keywords:active.keywords};
  if(!store(COLLECT,[...all,item].slice(-1000))){note('Collection storage is full. Copy your story to preserve it.');return}
  $('#sw-collect').textContent='Collected ✓';
