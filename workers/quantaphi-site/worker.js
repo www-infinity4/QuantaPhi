@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v42-codephi-preview';
+const EDGE_VERSION = 'quantaphi-org-v43-crusher-wallet';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -260,6 +260,8 @@ export default {
   out.set('x-quantaphi-app', route.repo);
   if (raw && upstream.ok && RAW_TYPES[extension]) out.set('Content-Type', RAW_TYPES[extension]);
   if (raw) { out.delete('Content-Security-Policy'); out.delete('Content-Disposition'); }
+  // Upstream GitHub headers prohibit even our own embedded suite pages.
+  if (route.repo === 'Bitcoin-Crusher' && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
   if (textual || !upstream.ok) out.set('Cache-Control', 'no-cache, max-age=0, must-revalidate');
   const contentType = out.get('Content-Type') || '';
   const infinityHtml = route.repo === 'C13b0' && /text\/html/i.test(contentType);
