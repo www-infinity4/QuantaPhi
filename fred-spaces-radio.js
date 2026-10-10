@@ -90,7 +90,7 @@
     if(!paymentsReady)message="Media Star purchases are paused until the owner's StarCoin payout wallet is connected. No StarCoin will be charged.";
     render();
   }
-  async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;isPlatformOwner=!!d.isPlatformOwner;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
+  async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;isPlatformOwner=!!d.isPlatformOwner;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
   function rememberEpisode(e){const seen=new Set(load(seenKey,[]));seen.add(active.id);active=e;seen.add(e.id);const available=episodes.filter(isReplayLink);
     if(available.length&&available.every(x=>seen.has(x.id))) {save("phi:fred-spaces-previous-round:v1",[...seen]);seen.clear();seen.add(e.id);}
     save(seenKey,[...seen]);save(currentKey,e.id);}
@@ -107,7 +107,7 @@
       if(!data.ok)throw new Error("Unlock was not confirmed.");
       balance=data.starCoins;unlocked.add(next.id);rememberEpisode(next);
       message=(data.ownerPreview?"Owner preview — no StarCoin deducted. ":data.charged===1?"1 StarCoin paid to the QuantaPhi Media Star platform. ":"Already unlocked; no new charge. ")+"Use the play button to open the original replay on X."
-      window.dispatchEvent(new Event("focus"));
+      window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));
     }catch(error){message=error.message||"No StarCoin was charged. Please retry.";}
     finally{busy=false;render();}
   }
