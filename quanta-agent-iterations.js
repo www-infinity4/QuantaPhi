@@ -67,7 +67,7 @@
    };
  }
  function assembleBrain(feedItems){
-   const clockEvents=(Array.isArray(feedItems)?feedItems:[]).filter(x=>x.clockReceipt===true&&safeUrl(x.url)&&typeof x.message==='string');
+   const clockEvents=(Array.isArray(feedItems)?feedItems:[]).filter(x=>x.clockReceipt===true&&safeUrl(x.url)&&typeof x.message==='string').sort((a,b)=>Date.parse(b.when)-Date.parse(a.when)).slice(0,35);
    const commits=(Array.isArray(feedItems)?feedItems:[])
      .map(verifiedCommit).filter(Boolean).slice(0,35);
    const notes=events.filter(x=>safeUrl(x.url)&&
