@@ -45,7 +45,7 @@ try{
    const baseSha=git('rev-parse',last+'^'),paths=git('diff-tree','--no-commit-id','--name-only','-r',last).split('\n').filter(Boolean);
    const pair=await capturePair({baseSha,commitSha:last,paths,summary:git('show','-s','--format=%s',last)});
    await fs.writeFile('brain-receipts/work-preview.json',JSON.stringify(pair));
-   await call('preview',{preview:pair});report.previewCommit=last;
+   await call('preview',{preview:pair,verificationToken:process.env.GITHUB_TOKEN});report.previewCommit=last;
   }
  }
  else{
@@ -100,7 +100,7 @@ try{
  if(report.preview){try{
   const pair=await capturePair({...report.preview,status:report.status==='deployed_verified'?'deployed_verified':'committed_unverified'});
   await fs.writeFile('brain-receipts/work-preview.json',JSON.stringify(pair));
-  await call('preview',{preview:pair});report.previewPublished=true;
+  await call('preview',{preview:pair,verificationToken:process.env.GITHUB_TOKEN});report.previewPublished=true;
  }catch(e){report.previewError=e.message;}}
  report.commitSha=commitSha||null;report.testsPassed=testsPassed;
  await fs.mkdir('brain-receipts',{recursive:true});await fs.writeFile('brain-receipts/report.json',JSON.stringify(report,null,2));

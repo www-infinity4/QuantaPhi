@@ -24,7 +24,7 @@ export async function capturePair({baseSha,commitSha,paths,summary,jobId,status=
     const url=new URL(route.request().url());
     if(url.origin==='https://preview.invalid'){
      const path=url.pathname.slice(1);
-     if(path==='')return route.fulfill({contentType:'text/html',body:'<!doctype html><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{margin:0;padding:8px;background:#f6f1e8;font:14px system-ui}*,*::before,*::after{box-sizing:border-box}#quantaAgentIterations{display:block!important}</style><link rel="stylesheet" href="/quanta-agent-iterations.css"><link rel="stylesheet" href="/robot-directions.css">'+markup+'<script src="/quanta-agent-iterations.js"></script><script src="/robot-directions.js"></script>'});
+     if(path==='')return route.fulfill({contentType:'text/html; charset=utf-8',body:'<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{margin:0;padding:8px;background:#f6f1e8;font:14px system-ui}*,*::before,*::after{box-sizing:border-box}#quantaAgentIterations{display:block!important}</style><link rel="stylesheet" href="/quanta-agent-iterations.css"><link rel="stylesheet" href="/robot-directions.css">'+markup+'<script src="/quanta-agent-iterations.js"></script><script src="/robot-directions.js"></script>'});
      if(Object.hasOwn(resources,path))return route.fulfill({contentType:path.endsWith('.css')?'text/css':'application/javascript',body:resources[path]});
     }
     const body=url.pathname==='/health'?{ok:true}:url.pathname==='/v1/tickets/list'?{ok:true,tickets:[]}:{schemaVersion:2,jobs:[],messages:[],items:[]};

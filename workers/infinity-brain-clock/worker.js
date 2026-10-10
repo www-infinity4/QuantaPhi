@@ -1,7 +1,7 @@
 import { DurableObject } from 'cloudflare:workers';
 import { authenticate, supported } from './runner-auth.mjs';
 import { validatePreview } from './preview-contract.mjs';
-const PERIOD=30000,VERSION='20261010-writer2';
+const PERIOD=30000,VERSION='20261010-repository-engine1';
 const REPOS={has:repo=>/^[\w.-]+$/.test(repo)};
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 function output(request,value){
@@ -48,7 +48,8 @@ export class BrainClock extends DurableObject{
   }
   if(path==='/runner/preview'){
    const preview=validatePreview(body.preview);
-   const response=await fetch('https://api.github.com/repos/'+preview.repository+'/commits/'+preview.commitSha,{headers:{Accept:'application/vnd.github+json','User-Agent':'Infinity-Brain-Preview',...(engine&&body.verificationToken?{Authorization:'Bearer '+body.verificationToken}:{})},signal:AbortSignal.timeout(15000)});
+   if(!engine&&preview.repository!=='www-infinity4/QuantaPhi')throw Error('preview_repository_identity_mismatch');
+   const response=await fetch('https://api.github.com/repos/'+preview.repository+'/commits/'+preview.commitSha,{headers:{Accept:'application/vnd.github+json','User-Agent':'Infinity-Brain-Preview',...(body.verificationToken?{Authorization:'Bearer '+body.verificationToken}:{})},signal:AbortSignal.timeout(15000)});
    if(!response.ok)throw Error('preview_commit_unavailable');
    const commit=await response.json();
    if(commit.parents?.[0]?.sha!==preview.baseSha||!(commit.commit?.author?.name==='infinity-brain[bot]'&&/^Repair .+ after GPT review and tests$/.test(commit.commit?.message||'')||engine&&commit.commit?.author?.name==='infinity-repository-engine[bot]'&&/^Implement .+ after reader handoff, tests and GPT Purple arbitration$/.test(commit.commit?.message||''))||
@@ -72,7 +73,7 @@ export class BrainClock extends DurableObject{
     const context=JSON.parse(ticket.context_json),jobs=context.color_jobs||[];
     for(const job of jobs){
      if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified'].includes(job.status))continue;
-     if(engine&&(job.dependencies||[]).some(id=>!jobs.some(j=>j.id===id&&['complete','deployed_verified'].includes(j.status))))continue;
+     if(engine&&(job.dependencies||[]).some(id=>jobs.some(j=>j.id===id&&!['complete','deployed_verified'].includes(j.status))))continue;
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
      const key='writer:'+ticket.id+':'+job.id+':'+revision;
      const previous=await this.ctx.storage.get(key);
@@ -90,7 +91,7 @@ export class BrainClock extends DurableObject{
    return Response.json({ok:true,lease:null});
   }
   const lease=await this.ctx.storage.get(String(body.key||''));
-  if(!lease||lease.runId!==runId||lease.leaseId!==body.leaseId||lease.leaseUntil<Date.now())return Response.json({ok:false,error:'writer_lease_rejected'},{status:409});
+  if(!lease||lease.runId!==runId||lease.leaseId!==body.leaseId||lease.leaseUntil<Date.now())return Response.json({ok:false,error:'writer_lease_rejected',adapter:VERSION,path},{status:409});
   const message=String(body.message||'').slice(0,390);
   if(path==='/runner/event'){
    if(/^[a-f0-9]{40}$/.test(body.commitSha||'')){lease.commitSha=body.commitSha;await this.ctx.storage.put(lease.key,lease);}
