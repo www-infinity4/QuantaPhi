@@ -53,14 +53,14 @@ function show(ticket){
  const heading=node('p',ticket.id+' · '+ticket.status+' · saved to Cloudflare');list.append(heading);
  for(const job of ticket.context?.color_jobs||[]){
   const card=node('article','');card.className='robot-job robot-'+job.color;
-  card.append(node('strong',job.agent+' · '+job.title),node('small','Team: '+(job.team||[job.agent]).join(' → ')),node('p',job.instructions),node('small',job.repository+' · queued'));
+  card.append(node('strong',job.agent+' · '+job.title),node('small','Team: '+(job.team||[job.agent]).join(' → ')),node('p',job.instructions),node('small',job.repository+' · '+(job.status||'queued')));
   const ul=document.createElement('ul');for(const test of job.acceptance)ul.append(node('li',test));card.append(ul);list.append(card);
  }
  if(!ticket.context?.color_jobs?.length)list.append(node('p','Directions are saved. GPT routing needs a retry.'));
 }
 let draftTimer;input.addEventListener('input',()=>{clearTimeout(draftTimer);draftTimer=setTimeout(()=>storage(DRAFT,input.value.slice(0,16000)).catch(()=>{status.textContent='Draft stays in this page until you send it to Cloudflare.'}),250)});
-async function refresh(){try{await ready;if(!owner())return;const d=await post('/v1/tickets/list',{owner_token:owner()});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();for(const t of tickets){const b=node('button',t.title+' · '+t.status);b.type='button';b.addEventListener('click',()=>{pending=t;input.value=t.request;show(t)});history.append(b)}const t=tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}}
-let pending=null;
+async function refresh(){if(refreshing)return;refreshing=true;try{await ready;if(!owner())return;const d=await post('/v1/tickets/list',{owner_token:owner()});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();for(const t of tickets){const b=node('button',t.title+' · '+t.status);b.type='button';b.addEventListener('click',()=>{pending=t;show(t)});history.append(b)}const t=tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}finally{refreshing=false}}
+let pending=null,refreshing=false;
 send.addEventListener('click',async()=>{
  const directions=input.value.trim();if(!directions){status.textContent='Write your directions first.';return}
  send.disabled=true;status.textContent='Saving your directions to Cloudflare…';
@@ -79,11 +79,19 @@ send.addEventListener('click',async()=>{
   const text=d.output_text||d.output||'',start=text.indexOf('{'),end=text.lastIndexOf('}');
   const jobs=normalize(JSON.parse(text.slice(start,end+1)));
   const saved=await post('/v1/tickets/update',{id:pending.id,owner_token:owner(),status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',submission_id:pending.context?.submission_id,color_jobs:jobs,provider:d.provider||'Infinity gateway',model:d.model||'',design:'Oracle Octaves · Android first'}});
-  pending=saved.ticket;show(pending);status.textContent=jobs.length+' jobs assigned and saved. Queued for the build runner; no repairs are claimed completed.'+(status.dataset.recovery==='session'?' Recovery is saved only for this browser tab; keep it open.':'');
+  pending=saved.ticket;show(pending);
+  // Do not erase a newer instruction typed while this request was routing.
+  clearTimeout(draftTimer);
+  if(input.value.trim()===directions){
+   input.value='';await storage(DRAFT,'');
+   try{localStorage.removeItem(DRAFT)}catch{}
+  }else{await storage(DRAFT,input.value.slice(0,16000))}
+  status.textContent=jobs.length+' jobs assigned and saved. Queued for the build runner; no repairs are claimed completed.'+(status.dataset.recovery==='session'?' Recovery is saved only for this browser tab; keep it open.':'');
   window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:pending.id,jobs}}));
  }catch(e){status.textContent=(pending?'Saved '+pending.id+'. ':'')+'Routing stopped: '+e.message+'. Your directions remain available; tap Send to retry.';if(pending)show(pending)}
  finally{send.disabled=false}
 });
 root.querySelector('[data-gemini]').addEventListener('click',async()=>{try{const r=await fetch('/docs/gemini-card-expansion-directions.txt',{cache:'no-store'});if(!r.ok)throw Error('Bundle unavailable');input.value=await r.text();input.dispatchEvent(new Event('input'));status.textContent='Gemini bundle loaded. Send it to GPT to create persistent color-bot jobs.';}catch(e){status.textContent=e.message}});
 root.querySelector('[data-refresh]').addEventListener('click',refresh);refresh();
+setInterval(()=>{if(!document.hidden&&!send.disabled)refresh()},15000);
 })();
