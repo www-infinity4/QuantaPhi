@@ -41,7 +41,7 @@ function record(kind,reference,card){
  const reference_id='quantaphi:'+kind+':'+ref,items=read();
  if(!items.some(x=>x.reference_id===reference_id)){
   let data;try{data=JSON.parse(JSON.stringify(card||{}));if(JSON.stringify(data).length>100000)return false}catch{return false}
-  items.push({reference_id,kind,reference:ref,data,created_at:new Date().toISOString(),...(kind==='collect'&&compactCard(card)?{card:compactCard(card)}:{}),...(kind==='spin'?{research}:{})});
+  items.push({reference_id,kind,reference:ref,data,created_at:new Date().toISOString(),...((kind!=='spin')?{serverSettlement:true}:{}),...(kind==='collect'&&compactCard(card)?{card:compactCard(card)}:{}),...(kind==='spin'?{research}:{})});
   save(items);
  }
  void flush();
@@ -56,6 +56,16 @@ function publish(state){
  // The existing Collect/Share receipts retain their one-tenth reward behavior.
  for(const receipt of Array.isArray(state?.history)?state.history:[]){
   if(receipt?.kind==='spin')try{global.ControlPhi?.ensureResearchSpinCredit?.(receipt)}catch(error){console.warn('Star Coin research wallet reconcile deferred',error)}
+ }
+ // The StarQuest account is now actually settled by the Quanta worker for
+ // opted-in Collect/Share/Star/Image/Extract/Compare actions. A confirmed
+ // StarQuest balance (not an optimistic click) may update the visible wallet.
+ const settled=Array.isArray(state?.settled)?state.settled:[];
+ const account=state?.wallet_state;
+ if(settled.length&&account&&Number.isFinite(Number(account.starCoins))&&Number.isFinite(Number(account.pendingShareCredits))){
+   const confirmed=Number(account.starCoins)+Number(account.pendingShareCredits)/10;
+   try{global.ControlPhi?.importLegacyStarCoinBalance?.(confirmed,'starquest-settled-card-receipt')}catch(error){console.warn('Confirmed StarQuest balance update deferred',error)}
+   try{void global.ControlPhi?.refreshCloudWallet?.()}catch(error){console.warn('StarQuest wallet refresh deferred',error)}
  }
  // Restore any higher Cloudflare balance without reducing an existing wallet.
  const tenths=Number(state?.credits_tenths);
