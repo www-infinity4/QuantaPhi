@@ -18,3 +18,5 @@
 #magooSpacesRadio .mp-profile{font-size:13px;color:#443e90;font-weight:800}
 #magooSpacesRadio :is(.mp-btn,.mp-play,.mp-profile):focus-visible{outline:3px solid #3156bb;outline-offset:2px}
 @media(max-width:380px){#magooSpacesRadio .mp-card{padding:12px}#magooSpacesRadio .mp-actions{grid-template-columns:1fr}#magooSpacesRadio .mp-actions>.mp-btn:last-child{grid-column:auto}}
+
+#magooSpacesRadio .mp-kind{display:inline-flex;margin:10px 0 0;padding:7px 11px;border-radius:999px;background:#2f214a;color:#fff5d7;border:1px solid #a389d1;font-size:12px;font-weight:850;letter-spacing:.01em}
