@@ -50,9 +50,9 @@
      .sort((a,b)=>b[1]-a[1]).slice(0,4);
  let data=null,events=[],loading=false;
 
- // The speaker cadence is presentation only. Every card links to an actual
- // GitHub event. Prior observations are explicitly marked as a replay.
- let brainPlaylist=[],brainCursor=0,brainSignature='',brainReady=false;
+ // Display each source-backed event at most once, and only after this visit began.
+ let brainPlaylist=[],brainReady=false;
+ const brainStartedAt=Date.now(),brainSeen=new Set();
  function verifiedCommit(item){
    const url=safeUrl(item?.url);
    if(!url||item?.kind!=='commit'||!item?.title||!item?.when)return null;
@@ -88,7 +88,7 @@
    const wrap=ui('article','qai-brain-bubble qai-brain-'+role(entry.agent)[1]);
    const top=ui('div','qai-brain-bubble-head');
    top.append(ui('strong','',role(entry.agent)[0]+' → '+role(entry.to)[0]),
-     ui('span','qai-brain-when',(replay?'Archive replay · ':'Recorded · ')+deltaTime(entry.when)));
+     ui('span','qai-brain-when','Recorded · '+deltaTime(entry.when)));
    wrap.append(top,ui('p','',String(entry.message||'Source event recorded').slice(0,390)));
    const foot=ui('div','qai-brain-bubble-foot');
    foot.append(ui('span','',String(entry.phase||entry.kind||'observed')+' · '+String(entry.project||'Infinity')),
@@ -103,29 +103,25 @@
      else status.textContent='No verified project messages are available. Checking again automatically.';
      return;
    }
-   const index=brainCursor%brainPlaylist.length;
-   const entry=brainPlaylist[index];
-   const replay=brainCursor>=brainPlaylist.length ||
-      Date.now()-Date.parse(entry.when||'')>2*60*1000;
-   brainCursor++;
+   const entry=brainPlaylist.shift();
    if(log.querySelector('.qai-brain-empty'))log.replaceChildren();
-   log.append(paintBrainEvent(entry,replay));
+   log.append(paintBrainEvent(entry,false));
    while(log.children.length>3)log.firstElementChild.remove();
-   status.textContent='Recorded project events · '+brainPlaylist.length+' sourced messages in rotation · next playback in 10 seconds. The source is checked for changes automatically.';
+   status.textContent=brainPlaylist.length?'Fresh verified activity · '+brainPlaylist.length+' new messages waiting.':'Watching for new verified activity. No replay.';
  }
  function updateBrain(feedItems){
-   const next=assembleBrain(feedItems);
-   const signature=next.map(x=>x.id).slice(0,4).join('|');
-   const hasNew=signature!==brainSignature;
-   brainPlaylist=next;
-   if(hasNew){
-     brainSignature=signature;brainCursor=0;
-     // Present new source activity right away when it actually arrives.
-     $('#qai-brain-log').replaceChildren();
-     speakNext();
-   }
+   const next=assembleBrain(feedItems).filter(entry=>{
+     const when=Date.parse(entry.when||'');
+     const id=String(entry.id||entry.url+'|'+entry.message);
+     if(!Number.isFinite(when)||when<brainStartedAt||when>Date.now()+60000||brainSeen.has(id))return false;
+     brainSeen.add(id);return true;
+   }).sort((a,b)=>Date.parse(a.when)-Date.parse(b.when));
+   brainPlaylist.push(...next);
    brainReady=true;
+   if(next.length)speakNext();
+   else if(!brainPlaylist.length)$('#qai-brain-status').textContent='Watching for new verified activity. No replay.';
  }
+
 
  function makeEvent(entry){
   const item=ui('article','qai-event');
@@ -303,6 +299,6 @@
  $('#qai-refresh').addEventListener('click',pull);
  render();pull();
  setInterval(speakNext,10000);
- setInterval(()=>{if(!document.hidden)pull()},45000);
+ setInterval(()=>{if(!document.hidden)pull()},10000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)pull()});
 })();
