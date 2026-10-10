@@ -19,7 +19,7 @@ test('verified agent evidence comes from Moltnook and is never invented as a com
  assert.match(js,/Array\.isArray\(payload\.messages\)/);
  assert.match(js,/safeUrl\(x\.url\)/);
  assert.match(js,/https:\/\/quantaphi\.org\/moltnook\//);
- assert.match(js,/45000/);
+ assert.match(js,/10000/);
  assert.doesNotMatch(js,/Math\.random\(/);
  assert.doesNotMatch(js,/document\.write\(/);
 });
@@ -62,9 +62,23 @@ test('source-driven bot conversations advance every 10 seconds, never fabricate 
  assert.match(js,/item\?\.kind!=='commit'/);
  assert.match(js,/item\.title/);
  assert.match(js,/safeUrl\(item\?\.url\)/);
- assert.match(js,/const replay=brainCursor>=brainPlaylist\.length/);
- assert.match(js,/Archive replay/);
+ assert.match(js,/brainPlaylist\.shift\(\)/);
+ assert.doesNotMatch(js,/Archive replay/);
+ assert.match(js,/when<brainStartedAt/);
+ assert.match(js,/brainSeen\.has\(id\)/);
  assert.match(js,/source event/i);
  assert.match(js,/while\(log\.children\.length>3\)/);
  assert.match(js,/sourceEvents/);
+});
+
+test('brain excludes historical events and repeated polling never repeats speech',()=>{
+ const vm=require('node:vm');
+ const source=js.slice(js.indexOf(' function speakNext(){'),js.indexOf('\n\n function makeEvent'));
+ const log={children:[],querySelector(){return null},append(x){this.children.push(x)},get firstElementChild(){return {remove:()=>this.children.shift()}}};
+ const status={textContent:''};
+ const context=vm.createContext({Date,document:{hidden:false},log,status,$:id=>id.includes('status')?status:log,paintBrainEvent:e=>e,assembleBrain:x=>x});
+ vm.runInContext('let brainPlaylist=[],brainReady=false;const brainStartedAt=Date.now(),brainSeen=new Set();'+source,context);
+ vm.runInContext("const fresh={id:'new',when:new Date(brainStartedAt).toISOString()};updateBrain([{id:'old',when:new Date(brainStartedAt-1000).toISOString()},fresh]);updateBrain([fresh]);speakNext();",context);
+ assert.equal(log.children.length,1);
+ assert.equal(log.children[0].id,'new');
 });
