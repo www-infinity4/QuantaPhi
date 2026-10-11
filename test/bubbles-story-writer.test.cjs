@@ -202,6 +202,7 @@ test('reply actions take notes and prepare work without sending unapproved robot
  const noteAction=get('button','Save note');
  assert.ok(noteAction,'assistant reply has a note action');
  noteAction.handlers.click();
+ assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'note storage keys: '+[...values.keys()].join(', '));
  const notes=JSON.parse(values.get('quantaphi:bubbles:notes:v1:work-cards'));
  assert.equal(notes[0].text,'Here is a practical plan to update the README and run tests.');
  const draft=get('button','Make work draft');
