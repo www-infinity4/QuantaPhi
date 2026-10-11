@@ -6,7 +6,7 @@ const previewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(ne
 const quantUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/job-quant.mjs',import.meta.url))).toString('base64');
 const policyUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/bot-work-policy.mjs',import.meta.url))).toString('base64');
 const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl);
-const {BrainClock,validateInstruction}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+const {BrainClock,validateInstruction,readRunnerBody}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
  const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{BOT_WALLET:{fetch:async()=>Response.json({ok:true,user:{id:userId,username:'fixture-owner'}})}});
@@ -100,4 +100,20 @@ test('capability and private preview publish without a repair lease and preserve
   assert.equal(result.status,'source_preview');assert.equal(memory.get('previews').length,1);assert.ok(!JSON.stringify([...memory.values()]).includes('fixture-token'));
   await assert.rejects(clock.runner(request('preview',{preview:{...preview,repository:'www-infinity4/Other'}})),/preview_repository_identity_mismatch/);
  }finally{globalThis.fetch=oldFetch}
+});
+
+test('authenticated source handoff accepts files above the old 160 KB ceiling',async()=>{
+ const body=JSON.stringify({evidence:{source:{'worker.js':'a'.repeat(180000),'tests.mjs':'b'.repeat(180000)}}});
+ for(const stage of ['build','engine-review','arbitrate'])assert.equal(await readRunnerBody(new Request('https://clock.internal/runner/'+stage,{method:'POST',body}),'/runner/'+stage),body);
+});
+test('routine messages and source handoffs retain separate byte ceilings',async()=>{
+ await assert.rejects(readRunnerBody(new Request('https://clock.internal/runner/event',{method:'POST',body:'é'.repeat(80001)}),'/runner/event'),e=>e.status===413);
+ await assert.rejects(readRunnerBody(new Request('https://clock.internal/runner/build',{method:'POST',body:'a'.repeat(3*1024*1024+1)}),'/runner/build'),e=>e.status===413);
+ await assert.rejects(readRunnerBody(new Request('https://clock.internal/runner/build',{method:'POST',headers:{'Content-Length':String(3*1024*1024+1)},body:'small'}),'/runner/build'),e=>e.status===413);
+});
+test('oversized streamed handoff is cancelled without reading the remainder',async()=>{
+ let cancelled=false;
+ const stream=new ReadableStream({start(c){c.enqueue(new Uint8Array(3*1024*1024+1));},cancel(){cancelled=true;}});
+ await assert.rejects(readRunnerBody({headers:new Headers(),body:stream},'/runner/build'),e=>e.status===413);
+ assert.equal(cancelled,true);
 });
