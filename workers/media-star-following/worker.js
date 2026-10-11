@@ -49,7 +49,7 @@ async function followImport(env,owner,hosts,source){
  for(const h of hosts){
   const handle=cleanHandle(typeof h==='string'?h:h?.username||h?.handle);
   if(!handle)continue;
-  const id=safe(typeof h==='string'?'handle:'+handle:h.id||'handle:'+handle,70);
+  const id=safe(typeof h==='string'?'handle:'+handle:h?.id||'handle:'+handle,70);
   if(!/^(?:[0-9]{1,22}|handle:[A-Za-z0-9_]{1,15})$/.test(id))continue;
   clean.set(handle.toLowerCase(),{id,handle,name:safe(h?.name||handle,100)});
  }
@@ -134,7 +134,10 @@ async function eligible(env,owner){
 async function roll(env,owner,rollId){
  if(!/^[A-Za-z0-9_-]{8,100}$/.test(rollId))throw error('roll_id_required');
  const prior=await env.DB.prepare('SELECT r.host_roll AS hostRoll,r.host_range AS hostRange,r.episode_roll AS episodeRoll,r.episode_range AS episodeRange,e.title,e.space_url AS url,h.handle,h.display_name AS name,e.availability,e.space_id AS spaceId FROM space_rolls r JOIN space_episodes e ON e.space_id=r.space_id JOIN space_hosts h ON h.x_user_id=r.host_user_id WHERE r.owner_id=? AND r.roll_id=?').bind(owner,rollId).first();
- if(prior)return{roll:prior,reused:true};
+ if(prior){
+  if(prior.handle.toLowerCase()==='dotkrueger'){prior.url=null;prior.requiresOriginalUnlock=true;prior.curatedBy='fred-spaces-ledger'}
+  return{roll:prior,reused:true};
+ }
  const hosts=await eligible(env,owner);if(!hosts.length)throw error('no_indexed_spaces_for_following',404);
  // Each eligible followed host gets precisely one ticket. A host with 33 Spaces
  // is not 33 times more likely to win the first host roll.
@@ -157,7 +160,7 @@ async function roll(env,owner,rollId){
  ]);
  // The draw slot is position among the currently unseen episodes. For 33 new
  // episodes, the second roll has the exact 1-33 range.
- return{roll:{hostRoll:hostIndex+1,hostRange:hosts.length,episodeRoll:chosenIndex+1,episodeRange:pool.length,handle:host.handle,name:host.name,spaceId:e.spaceId,title:e.title,url:e.url,availability:e.availability},reused:false};
+ return{roll:{hostRoll:hostIndex+1,hostRange:hosts.length,episodeRoll:chosenIndex+1,episodeRange:pool.length,handle:host.handle,name:host.name,spaceId:e.spaceId,title:e.title,url:host.handle.toLowerCase()==='dotkrueger'?null:e.url,availability:e.availability,requiresOriginalUnlock:host.handle.toLowerCase()==='dotkrueger',curatedBy:host.handle.toLowerCase()==='dotkrueger'?'fred-spaces-ledger':null},reused:false};
 }
 async function handle(request,env){
  const url=new URL(request.url),path=url.pathname;
@@ -181,7 +184,7 @@ async function handle(request,env){
    if(!exists)throw error('host_not_followed',404);
    const rows=await env.DB.prepare(`SELECT e.space_id AS id,e.title,e.space_url AS url,e.availability,e.started_at AS date
    FROM space_episodes e JOIN space_hosts h ON h.x_user_id=e.host_user_id WHERE lower(h.handle)=lower(?) AND e.availability IN ('indexed','verified_replay') ORDER BY e.started_at DESC,e.space_id LIMIT 2000`).bind(handle).all();
-   return out({handle,episodes:rows.results||[],count:(rows.results||[]).length});
+   return out({handle,episodes:(rows.results||[]).map(x=>handle.toLowerCase()==='dotkrueger'?{...x,url:null,requiresOriginalUnlock:true}:x),count:(rows.results||[]).length});
   }
   if(path==='/v1/roll'&&request.method==='POST'){
    const d=await request.json().catch(()=>({}));return out(await roll(env,owner,String(d.rollId||'')));
@@ -212,4 +215,19 @@ async function handle(request,env){
  }catch(err){return out({error:err.message||'failed'},err.status||500)}
 }
 export {handle,randBelow,directSpace};
-export default {fetch:handle};
+const allowedOrigins=new Set(['https://quantaphi.org','https://www.quantaphi.org']);
+async function browserFetch(request,env){
+ const origin=request.headers.get('Origin')||'';
+ if(request.method==='OPTIONS'){
+  return new Response(null,{status:allowedOrigins.has(origin)?204:403,headers:allowedOrigins.has(origin)?{
+   'Access-Control-Allow-Origin':origin,'Access-Control-Allow-Headers':'Authorization,Content-Type',
+   'Access-Control-Allow-Methods':'GET,POST,OPTIONS','Vary':'Origin'
+  }:{}});
+ }
+ const response=await handle(request,env);
+ if(!allowedOrigins.has(origin))return response;
+ const headers=new Headers(response.headers);
+ headers.set('Access-Control-Allow-Origin',origin);headers.set('Vary','Origin');
+ return new Response(response.body,{status:response.status,headers});
+}
+export default {fetch:browserFetch};
