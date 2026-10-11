@@ -58,3 +58,17 @@ CREATE TABLE IF NOT EXISTS space_host_sources (
  PRIMARY KEY(host_user_id,source_url)
 );
 CREATE INDEX IF NOT EXISTS idx_space_sources_host ON space_host_sources(host_user_id);
+
+-- An owner-declared X @handle identifies which authorized X account may sync.
+-- A screenshot/name alone is not provider authentication. Only X /2/users/me
+-- can transition a matching handle to x_api_verified.
+CREATE TABLE IF NOT EXISTS x_account_links (
+ owner_id TEXT PRIMARY KEY,
+ handle TEXT NOT NULL,
+ verification TEXT NOT NULL DEFAULT 'owner_claimed'
+  CHECK(verification IN ('owner_claimed','x_api_verified')),
+ x_user_id TEXT,
+ declared_at INTEGER NOT NULL,
+ verified_at INTEGER,
+ CHECK(verification!='x_api_verified' OR (x_user_id IS NOT NULL AND verified_at IS NOT NULL))
+);
