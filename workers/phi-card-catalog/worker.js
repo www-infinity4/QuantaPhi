@@ -65,7 +65,7 @@ async function handle(request,env){
    await env.DB.prepare("INSERT INTO card_sites(id,owner_id,request_key,name,origin,slug,status,created_at) VALUES(?,?,?,?,?,?,'active',?)").bind(id,owner,key,name,origin||null,slug,stamp).run();
    return json({site:{id,name,origin:origin||null,slug},created:true},201);
   }
-  const publishMatch=/^\\/v1\\/sites\\/([a-zA-Z0-9_-]+)\\/stories\\/([a-zA-Z0-9_-]+)\\/publish$/.exec(path);
+  const publishMatch=path.match(new RegExp('^/v1/sites/([a-zA-Z0-9_-]+)/stories/([a-zA-Z0-9_-]+)/publish$'));
   if(publishMatch&&request.method==='POST'){
    const home=await site(env,idPart(publishMatch[1]),owner),storyId=idPart(publishMatch[2]),d=await body(request);
    const reviewer=text(d.reviewedBy,100);
