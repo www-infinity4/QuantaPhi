@@ -60,7 +60,8 @@ const publish=create('button','ba-control','Create embed code');publish.type='bu
 const snippet=create('textarea','ba-field');snippet.rows=4;snippet.readOnly=true;snippet.hidden=true;snippet.setAttribute('aria-label','Bubbles embed code to copy');
 const publishStatus=create('p','ba-muted','Place the embed code in your own page, or ask your authorized GitHub bot to add it.');
 publishStatus.setAttribute('role','status');
-publishing.append(publishHint,publish,snippet,publishStatus);
+const fullPage=create('a','ba-link','Open the Bubbles studio ↗');fullPage.href='/bubbles.html';fullPage.target='_blank';fullPage.rel='noopener noreferrer';
+publishing.append(publishHint,publish,snippet,publishStatus,fullPage);
 card.append(publishing);
 host.append(card);
 const launcher=create('button','ba-launcher','💬');launcher.type='button';launcher.setAttribute('aria-label','Open Bubbles AI messenger');
