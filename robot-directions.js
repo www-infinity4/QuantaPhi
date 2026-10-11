@@ -69,6 +69,21 @@ earningsButton.addEventListener('click',connectBotEarnings);
 // Tokens are sent only to the authenticated brain; they are never recorded as earnings data.
 connectBotEarnings();
 const earningsRetry=setInterval(()=>{if(earningsConnected){clearInterval(earningsRetry);return;}if(document.visibilityState==='visible')connectBotEarnings();},30000);
+const auditButton=document.createElement('button'),auditStatus=document.createElement('p');
+auditButton.type='button';auditButton.textContent='Check bot commit earnings';auditStatus.setAttribute('role','status');root.append(auditButton,auditStatus);
+auditButton.addEventListener('click',async()=>{
+ auditButton.disabled=true;auditStatus.textContent='Checking verified job receipts and wallet settlement…';
+ try{
+  const response=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/work/earnings/status',{headers:brainHeaders,cache:'no-store',signal:AbortSignal.timeout(15000)});
+  const data=await response.json();if(!response.ok||!data.ok)throw Error(data.error||'Earnings audit unavailable');
+  const counts=data.counts||{};
+  auditStatus.textContent=(data.recipientConnected?'Wallet connected. ':'Wallet connection pending. ')+
+   Number(counts.paid||0)+' paid job receipts; '+Number(counts.eligibleUnpaid||0)+' eligible but unpaid; '+
+   Number(counts.unverified||0)+' unverified or blocked; '+Number(counts.failedRetry||0)+' delayed retries. '+
+   (data.lastError?.error?'Last problem: '+String(data.lastError.error).slice(0,110):'Only tested Robot Brain commits earn payouts.');
+ }catch(error){auditStatus.textContent='Earnings audit unavailable: '+String(error.message||error).slice(0,150)}
+ finally{auditButton.disabled=false}
+});
 const input=root.querySelector('textarea'),send=root.querySelector('[data-send]'),status=root.querySelector('[role=status]'),list=root.querySelector('[data-jobs]');
 const history=document.createElement('div');list.before(history);
 const OWNER='infinity-work-ticket-owner-v1',DRAFT='quantaphi-robot-directions-draft-v1';
