@@ -79,3 +79,21 @@ test('manual following is labeled unverified, direct imported URLs require a fol
  const browse=await(await call('/v1/episodes?handle=HodlMagoo',tok)).json();assert.equal(browse.episodes.length,1);
  const sync=await call('/v1/following/sync',tok,{});assert.equal(sync.status,503);
 });
+
+test('original X Space import has durable receipt and retry cannot double import',async()=>{
+ const {call,db}=await fixture();
+ await call('/v1/following/import',tok,{following:['HodlMagoo']});
+ const input={importId:'repeat-import-0001',episodes:[{handle:'HodlMagoo',url:'https://x.com/i/spaces/1OyKAjYPeXqGb',title:'Verified format, unverified playback'}]};
+ let response=await call('/v1/space/import',tok,input);
+ assert.equal(response.status,200);
+ const first=await response.json();assert.equal(first.added,1);
+ response=await call('/v1/space/import',tok,input);
+ assert.equal(response.status,200);
+ const same=await response.json();assert.equal(same.unchanged,true);
+ assert.equal(same.added,1);
+ const episodes=db.prepare('SELECT COUNT(*) AS n FROM space_episodes').get().n;
+ const receipts=db.prepare('SELECT COUNT(*) AS n FROM space_import_runs').get().n;
+ assert.equal(episodes,1);assert.equal(receipts,1);
+ const otherResponse=await call('/v1/history',other);
+ assert.equal(otherResponse.status,200);assert.equal((await otherResponse.json()).count,0);
+});
