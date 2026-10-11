@@ -208,7 +208,7 @@ async function sendMessage(text){
  const request=String(text||'').trim();if(busy||!request)return;
  busy=true;send.disabled=true;mic.disabled=true;display(request,'you');input.value='';
  const role=ROLES[config.role]||ROLES.assistant;
- const history=messages.slice(-10).map(m=>m.role+': '+m.text.slice(0,650)).join('\\n');
+ const history=messages.slice(-10).map(m=>m.role+': '+m.text.slice(0,650)).join('\n');
  messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
  status.textContent=config.alias+' is thinking…';
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger inside QuantaPhi.','Your selected role: '+role.name+'. '+role.prompt,
