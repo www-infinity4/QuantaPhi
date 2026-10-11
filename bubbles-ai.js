@@ -25,7 +25,7 @@ const create=(tag,cls,content)=>{const el=document.createElement(tag);if(cls)el.
 const data=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||'null')??fallback}catch{return fallback}};
 const save=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}};
 const previousConfig=data(CONFIG,null);
-let config=previousConfig&&typeof previousConfig==='object'?previousConfig:{role:'assistant',alias:'Bubbles',instructions:'',voice:false};
+let config=previousConfig&&typeof previousConfig==='object'?previousConfig:{role:'assistant',alias:'Bubbles',instructions:'',voice:true};
 if(!ROLES[config.role])config.role='assistant';
 if(embedded&&!previousConfig){
  const requested=String(params.get('role')||'').toLowerCase();
@@ -45,8 +45,10 @@ function persistChat(){
  if(!keepChat)return false;
  return save(HISTORY,messages.slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)})));
 }
-const card=create('section','ba-card');
-card.append(create('div','ba-eyebrow','ORACLE OCTAVES · PERSONAL AI'),create('h2','','Bubbles AI'),create('p','ba-copy','Your floating voice-and-chat companion. Choose its job, give it directions, take notes, and bring an authorized work request to Robot Brain.'));
+const card=create('section','ba-card ba-studio-card');
+card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','A living voice bubble. Touch the bubble to allow your microphone, then say “Bubbles” and talk. It lights up when it hears you.'));
+const studioToggle=create('button','ba-control ba-studio-toggle','Customize Bubbles');studioToggle.type='button';studioToggle.setAttribute('aria-expanded','false');
+studioToggle.addEventListener('click',()=>{const open=card.dataset.expanded!=='true';card.dataset.expanded=String(open);studioToggle.setAttribute('aria-expanded',String(open));studioToggle.textContent=open?'Hide customization':'Customize Bubbles'});card.append(studioToggle);
 const edit=create('div','ba-settings');
 const persona=create('select','ba-field');persona.id='ba-role';persona.setAttribute('aria-label','Bubbles job');
 for(const [id,value] of Object.entries(ROLES)){const op=create('option','',value.name);op.value=id;persona.append(op)}
@@ -54,7 +56,7 @@ persona.value=config.role;
 const alias=create('input','ba-field');alias.id='ba-alias';alias.maxLength=38;alias.placeholder='Bubble name';alias.value=config.alias||'Bubbles';alias.setAttribute('aria-label','Bubbles name');
 const instructions=create('textarea','ba-field');instructions.id='ba-instructions';instructions.rows=2;instructions.maxLength=1200;instructions.placeholder='Special instructions: what should this bubble specialize in?';instructions.value=config.instructions||'';
 const saveRole=create('button','ba-control','Save bubble role');saveRole.type='button';
-const launchCard=create('button','ba-primary','Open my Bubbles chat');launchCard.type='button';
+const launchCard=create('button','ba-primary','Connect Bubbles voice');launchCard.type='button';
 edit.append(create('label','','Job / specialty'),persona,create('label','','Bubble name'),alias,create('label','','Give this bubble its instructions'),instructions,saveRole,launchCard);
 const connections=create('div','ba-connect');
 connections.append(create('strong','','Connections'));
@@ -75,17 +77,18 @@ const fullPage=create('a','ba-link','Open the Bubbles studio ↗');fullPage.href
 publishing.append(publishHint,publish,snippet,publishStatus,fullPage);
 card.append(publishing);
 host.append(card);
-const launcher=create('button','ba-launcher','💬');launcher.type='button';launcher.setAttribute('aria-label','Open Bubbles AI messenger');
+const launcher=create('button','ba-launcher','');launcher.type='button';launcher.setAttribute('aria-label','Connect Bubbles AI voice or open conversation');
+launcher.append(create('span','ba-orb-shine'),create('span','ba-orb-center'));launcher.dataset.state='idle';
 const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('aria-label','Bubbles AI messenger');
 const header=create('header','ba-header');const name=create('strong','',config.alias||'Bubbles');const close=create('button','ba-close','×');close.type='button';close.setAttribute('aria-label','Close Bubbles');
 header.append(name,close);
-const status=create('p','ba-status','Oracle Cloudflare AI · chat is active only when you send');
+const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then say “Bubbles”.');
 status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
 const composer=create('form','ba-composer');
 const input=create('textarea','ba-field');input.rows=2;input.maxLength=2500;input.placeholder='Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
 const actions=create('div','ba-actions');
-const mic=create('button','ba-mic','🎤 Talk');mic.type='button';
+const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mic.setAttribute('aria-pressed','false');
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
 const send=create('button','ba-send','Send');send.type='submit';
 actions.append(mic,speak,send);composer.append(input,actions);
@@ -146,7 +149,13 @@ function speakText(value){
  if(typeof speechSynthesis==='undefined'||typeof SpeechSynthesisUtterance==='undefined'){
   status.textContent='Speech playback is not supported on this browser.';return;
  }
- try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-US';utterance.rate=1;speechSynthesis.speak(utterance)}
+ try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-GB';utterance.rate=1.08;
+   const voices=speechSynthesis.getVoices?.()||[];
+   utterance.voice=voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
+   utterance.onstart=()=>{speaking=true;setOrbState('speaking');pauseRecognition()};
+   const finished=()=>{speaking=false;if(voiceEnabled)beginRecognition();else setOrbState('idle')};
+   utterance.onend=finished;utterance.onerror=finished;speechSynthesis.speak(utterance)
+  }
  catch(error){status.textContent='Speech playback could not start: '+String(error?.message||error).slice(0,120)}
 }
 function display(text,who,greeting=false){
@@ -192,10 +201,10 @@ function toggle(open){
  showing=Boolean(open);panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
  if(embedded)window.parent.postMessage({type:'quantaphi:bubbles:size',open:showing},'*');
  if(showing){
-  if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. Ask a question, use Talk for the microphone, or save my replies as notes.','ai',true);greeted=true}
+  if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. Once connected, say Bubbles and speak naturally. Say Bubbles go quiet to mute.','ai',true);greeted=true}
   input.focus();
  }
- else{try{listening?.stop()}catch{}listening=null;try{speechSynthesis.cancel()}catch{}}
+ else{ /* Closing the panel does not disconnect the voice session. */ }
 }
 launcher.addEventListener('click',()=>toggle(!showing));launchCard.addEventListener('click',()=>toggle(true));close.addEventListener('click',()=>toggle(false));
 function extract(reply){
@@ -206,7 +215,7 @@ function extract(reply){
 }
 async function sendMessage(text){
  const request=String(text||'').trim();if(busy||!request)return;
- busy=true;send.disabled=true;mic.disabled=true;display(request,'you');input.value='';
+ busy=true;send.disabled=true;display(request,'you');input.value='';setOrbState('thinking');
  const role=ROLES[config.role]||ROLES.assistant;
  const history=messages.slice(-10).map(m=>m.role+': '+m.text.slice(0,650)).join('\n');
  messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
@@ -216,7 +225,7 @@ async function sendMessage(text){
  'You have NO independent GitHub write authorization or access to ChatGPT/Claude subscriptions. Only confirmed owner-submitted Robot Brain tickets count as queued; never claim a repository change occurred without tool evidence.',
  'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Reply directly and use clear plain text.'].join('\n\n');
  try{
-  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),55000);
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),22000);
   let response;try{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})})}finally{clearTimeout(timer)}
   const json=await response.json().catch(()=>({}));
   if(!response.ok||json.ok===false)throw Error(String(json.error||'Oracle conversation failed'));
@@ -225,7 +234,9 @@ async function sendMessage(text){
   display(answer,'ai');status.textContent=config.alias+' · response received';
   if(config.voice)speakText(answer);
  }catch(error){const message='I could not complete the response: '+String(error?.message||error).slice(0,150);display(message,'ai');status.textContent=message}
- finally{busy=false;send.disabled=false;mic.disabled=false}
+ finally{busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+    if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
+  }
 }
 composer.addEventListener('submit',event=>{event.preventDefault();void sendMessage(input.value)});
 input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();void sendMessage(input.value)}});
