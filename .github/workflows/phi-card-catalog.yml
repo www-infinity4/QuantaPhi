@@ -1,0 +1,36 @@
+name: Phi card catalog and tenant isolation
+on:
+  pull_request:
+    paths:
+      - 'card-catalog/**'
+      - 'workers/phi-card-catalog/**'
+      - 'test/phi-card-catalog.test.cjs'
+      - 'test/phi-card-tenants.test.cjs'
+      - '.github/workflows/phi-card-catalog.yml'
+      - 'workers/quantaphi-site/worker.js'
+  push:
+    branches: [main]
+    paths:
+      - 'card-catalog/**'
+      - 'workers/phi-card-catalog/**'
+      - 'test/phi-card-catalog.test.cjs'
+      - 'test/phi-card-tenants.test.cjs'
+      - '.github/workflows/phi-card-catalog.yml'
+permissions:
+  contents: read
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check independent card assets
+        run: |
+          node --check card-catalog/catalog.js
+          node --check card-catalog/search.js
+          node --check card-catalog/embed.js
+          node --check workers/phi-card-catalog/worker.js
+      - name: Test catalog and real tenant D1 SQL
+        run: node --test test/phi-card-catalog.test.cjs test/phi-card-tenants.test.cjs
