@@ -29,3 +29,14 @@
 .fsr-import textarea{display:block;width:100%;min-height:80px;padding:9px;border:1px solid #a3895e;border-radius:8px;background:white;color:#2f2514;font:13px/1.4 system-ui}
 .fsr-card :focus-visible{outline:3px solid #2864cc;outline-offset:2px}
 @media(max-width:420px){.fsr-card{padding:12px}.fsr-hosts{grid-template-columns:1fr}.fsr-brand{font-size:22px}}
+
+/* Explicit provenance: followed handles are not playable-episode receipts. */
+.fsr-priority{margin-top:12px}
+.fsr-priority .fsr-source,.fsr-follow-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:7px;padding:9px 0;border-bottom:1px solid #bba9b64a}
+.fsr-priority .fsr-source:last-child,.fsr-follow-row:last-child{border-bottom:0}
+.fsr-priority .fsr-source strong,.fsr-follow-row strong{font-size:13px}
+.fsr-priority .fsr-source small,.fsr-follow-row small{display:block;font-size:11px;opacity:.8}
+.fsr-priority a,.fsr-follow-row a{font-size:12px;font-weight:800;white-space:normal}
+.fsr-following{padding:13px;border-radius:14px;background:linear-gradient(135deg,#f7f3ff,#e7fff5);border:1px solid #b5d9c6;color:#342448;margin:14px 0}
+.fsr-following h3{font-size:16px;margin:0 0 9px}
+@media(max-width:400px){.fsr-priority .fsr-source,.fsr-follow-row{display:block}.fsr-priority a,.fsr-follow-row a{display:inline-block;margin-top:7px}}
