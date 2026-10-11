@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v47-shoplc-same-origin';
+const EDGE_VERSION = 'quantaphi-org-v48-quant-ai-same-origin';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -250,6 +250,27 @@ export default {
   if (/^(?:www\.)?quantaphi\.(?:net|org)$/.test(incoming.hostname) && incoming.hostname !== 'quantaphi.org') {
    incoming.hostname = 'quantaphi.org'; incoming.protocol = 'https:';
    return Response.redirect(incoming.toString(), 308);
+  }
+  // Quant-AI uses a private Worker service binding, never a public GitHub proxy.
+  // Strip only the fixed site mount prefix; the browser and wallet stay on
+  // quantaphi.org and the upstream Worker receives its expected root paths.
+  if (incoming.pathname === '/quant-ai') {
+   return Response.redirect(new URL('/quant-ai/' + incoming.search, CANONICAL_ORIGIN).toString(), 308);
+  }
+  if (incoming.pathname.startsWith('/quant-ai/')) {
+   if (!env.QUANT_AI) return Response.json(
+    { ok: false, error: 'quant_ai_service_not_configured' },
+    { status: 503, headers: { 'Cache-Control': 'no-store', 'x-quantaphi-edge': EDGE_VERSION } }
+   );
+   const upstreamUrl=new URL(request.url);
+   upstreamUrl.pathname=incoming.pathname.slice('/quant-ai'.length);
+   const forwarded=new Request(upstreamUrl.toString(),request);
+   const response=await env.QUANT_AI.fetch(forwarded);
+   const headers=new Headers(response.headers);
+   headers.set('Cache-Control','no-store');
+   headers.set('x-quantaphi-edge',EDGE_VERSION);
+   headers.set('x-quantaphi-app','Quant-AI');
+   return new Response(response.body,{status:response.status,statusText:response.statusText,headers});
   }
   if (incoming.pathname.startsWith('/api/codephi/')) {
    if (!env.CODEPHI) return Response.json({ok:false,error:'Code Phi workshop is not bound.'},{status:503});
