@@ -84,7 +84,7 @@ function parseSpaces(raw){
 }
 async function importSpaces(raw){
  const episodes=parseSpaces(raw);if(!episodes.length){notice('Use: @handle | https://x.com/i/spaces/SPACEID | Recorded Space title');return}
- try{const d=await query('/v1/space/import','POST',{episodes});
+ try{const d=await query('/v1/space/import','POST',{importId:'imp'+crypto.randomUUID().replaceAll('-',''),episodes});
   state.notice=d.added+' Space URLs indexed; '+d.rejected.length+' rejected. Link indexing does not prove replay audio works.';
   await refresh();
  }catch(e){notice(String(e.message||e))}
