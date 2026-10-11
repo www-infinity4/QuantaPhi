@@ -72,3 +72,27 @@ CREATE TABLE IF NOT EXISTS x_account_links (
  verified_at INTEGER,
  CHECK(verification!='x_api_verified' OR (x_user_id IS NOT NULL AND verified_at IS NOT NULL))
 );
+
+-- Private per-listener replay outcomes: owner-reported "no audio" episodes are
+-- excluded from subsequent rolls for that owner only. A reported successful
+-- playback is NOT a global verified_replay entitlement.
+CREATE TABLE IF NOT EXISTS space_playback_reports (
+ owner_id TEXT NOT NULL,
+ space_id TEXT NOT NULL REFERENCES space_episodes(space_id),
+ state TEXT NOT NULL CHECK(state IN ('played','unavailable')),
+ reported_at INTEGER NOT NULL,
+ PRIMARY KEY(owner_id,space_id)
+);
+CREATE INDEX IF NOT EXISTS idx_space_playback_reports_owner
+ ON space_playback_reports(owner_id,state);
+
+-- Personal radio settings. Weighted means an episode ticket wins first,
+-- so a 342-episode host naturally wins more often than a one-episode host.
+-- Only eligible indexed hosts participate; unfinished Magoo source cards don't.
+CREATE TABLE IF NOT EXISTS space_radio_preferences (
+ owner_id TEXT PRIMARY KEY,
+ selection_mode TEXT NOT NULL DEFAULT 'episodes_weighted'
+ CHECK(selection_mode IN ('episodes_weighted','equal_hosts')),
+ include_fred INTEGER NOT NULL DEFAULT 0 CHECK(include_fred IN (0,1)),
+ updated_at INTEGER NOT NULL
+);

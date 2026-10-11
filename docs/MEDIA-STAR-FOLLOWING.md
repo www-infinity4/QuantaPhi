@@ -102,3 +102,39 @@ platform must configure owner-authorized X provider credentials with
 appropriate read scopes before genuine full import and historical Space
 discovery can run. The existing six screenshot-confirmed followed handles
 remain available even without this connection.
+
+## Personal curated radio — episode-weighted mode (October 11)
+Media Star's primary use is the owner's private taste: choose voices, roll a
+different real recording, listen, and label a silent/dead replay. It is not a
+system that assigns ratings or preferences on behalf of every other listener.
+
+`space_radio_preferences` is wallet-owner-scoped. A curator may enable the
+featured Fred catalog **without requiring Fred to appear in a partial X
+Following screenshot**. Its 342 existing indexed episodes then count as 342
+potential episode tickets until individually chosen or reported dead. A host
+with one eligible unplayed Space has one ticket. Those are the exact odds for
+`episodes_weighted`; `equal_hosts` remains optional.
+
+All currently eligible records share one per-owner no-repeat round. Magoo
+remains a separate Media Star guest-media card and has **zero Spaces shuffle
+tickets unless a genuine Magoo-hosted X Space is indexed**. Archived guest
+appearances do not automatically establish he hosted a Space.
+
+`space_playback_reports` stores `played` or `unavailable` by owner, never
+overwriting a global replay verification record from one user's click.
+`POST /v1/playback/report` requires the owner to follow the host or to have
+the Fred feature enabled. A failed replay is omitted from their future draws
+without deleting it from other users' libraries.
+
+When Roll & Play selects a non-Fred recording it attempts an embedded original
+X viewer and shows an original-X link if framing/audio is blocked. When Fred
+is selected, the exact ID is sent to Curio Spotlight for authoritative
+owner-preview / previously-unlocked / confirmed one-StarCoin entitlement
+handling. A roll by itself must not debit or mint anything.
+
+This does **not** publish an arbitrary X replay directly within the Spotify
+service. Spotify embeds play *Spotify-hosted* tracks or podcast episodes. To
+link or publish a relevant Spotify episode, the customer must supply an actual
+Spotify episode reference and have the appropriate publishing rights. The
+Spotify profile or show destination has not yet been identified; claiming a
+Spotify-site change without it would be inaccurate.

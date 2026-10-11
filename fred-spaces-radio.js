@@ -111,6 +111,33 @@
     }catch(error){message=error.message||"No StarCoin was charged. Please retry.";}
     finally{busy=false;render();}
   }
+  // Handoff from the owner-curated Media Star roulette. Never expose an
+  // unpaid Fred episode through a direct caller-supplied Space ID.
+  async function selectRadioEpisode(raw){
+    const id=String(raw||'');
+    if(!/^[A-Za-z0-9]{10,25}$/.test(id)){note("The selected Space ID is invalid.");return}
+    if(catalogLoading){note("Fred catalog is still loading. Try the selection again.");return}
+    const target=byId.get(id);
+    if(!target||!isReplayLink(target)){note("Selected Fred episode is not in the curated catalog.");return}
+    if(busy)return;
+    if(target.id!==FIRST&&!isPlatformOwner&&!unlocked.has(target.id)){
+      if(!paymentsReady){note("Wallet payments are unavailable; no StarCoin was charged.");return}
+      if(!window.confirm("Spend 1 full StarCoin to reveal this Fred episode: "+target.title+"? Audio comes from the original X recording, which might require sign-in or be unavailable."))return;
+    }
+    busy=true;render();
+    try{
+      const alreadyFree=target.id===FIRST||unlocked.has(target.id);
+      const data=alreadyFree?{ok:true,charged:0,starCoins:balance}:await ledger("/v1/spaces/unlock","POST",{episodeId:target.id});
+      if(!data.ok)throw new Error("The Fred unlock was not confirmed.");
+      unlocked.add(target.id);
+      if(data.starCoins!==undefined)balance=data.starCoins;
+      rememberEpisode(target);
+      message=(data.ownerPreview?"Owner preview · no StarCoin deducted. ":data.charged===1?"One StarCoin paid and receipt confirmed. ":"Already available in your library. ")+"Open the original X Space using the player.";
+      window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));
+    }catch(e){message=e?.message||"Fred episode selection failed; check the wallet receipt before retrying."}
+    finally{busy=false;render()}
+  }
+  window.addEventListener('phi:media-star:fred-selected',event=>{void selectRadioEpisode(event?.detail?.spaceId)});
   function share(){
     const url=new URL(location.href);url.hash="fredSpacesRadio";url.searchParams.set("fredSpace",active.id);
     const data={title:active.title+" — Fred Krueger Space",text:active.title,url:url.href};

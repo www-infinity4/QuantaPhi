@@ -3,7 +3,7 @@
 const root=document.getElementById('followingSpacesRadio');if(!root)return;
 const API='https://media-star-following-spaces.marvaseater.workers.dev';
 const item=(tag,cls,str)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(str!==undefined)e.textContent=str;return e};
-const state={following:[],hosts:[],featured:[],ownerAccount:null,xConnected:false,choice:null,loading:false,notice:'Connect the existing wallet and sync your X following list. Fred stays highlighted separately.'};
+const state={following:[],hosts:[],featured:[],ownerAccount:null,xConnected:false,radio:{mode:'equal_hosts',includeFred:false},choice:null,loading:false,notice:'Connect the existing wallet and sync your X following list. Fred stays highlighted separately.'};
 let sessionRequest=null;
 async function token(){return String(await window.QuantaCloudConnection?.resolveDeviceToken?.()||'')}
 async function query(path,method='GET',data){
@@ -19,9 +19,9 @@ function link(url,label){const a=item('a','',label);a.href=url;a.target='_blank'
 async function refresh(){
  if(state.loading)return;
  state.loading=true;render();
- try{const [following,hosts,featured,xAccount]=await Promise.all([query('/v1/following'),query('/v1/hosts'),query('/v1/featured'),query('/v1/x/account').catch(()=>({account:null,xConnected:false}))]);
+ try{const [following,hosts,featured,xAccount,radio]=await Promise.all([query('/v1/following'),query('/v1/hosts'),query('/v1/featured'),query('/v1/x/account').catch(()=>({account:null,xConnected:false})),query('/v1/radio/preferences')]);
   state.following=following.following||[];state.hosts=hosts.hosts||[];state.featured=featured.featured||[];
-  state.ownerAccount=xAccount.account||null;state.xConnected=!!xAccount.xConnected;
+  state.ownerAccount=xAccount.account||null;state.xConnected=!!xAccount.xConnected;state.radio=radio;
   state.notice=state.following.length+' followed accounts in this library · '+state.hosts.length+' with indexed Space links.';
  }catch(e){state.notice=String(e.message||e)}
  finally{state.loading=false;render()}
@@ -30,29 +30,63 @@ function picked(result){
  const c=result.roll;
  const panel=root.querySelector('.fsr-picked');if(!panel)return;
  panel.replaceChildren();
- const hostRange=c.hostRange,episodeRange=c.episodeRange;
- panel.append(item('strong','fsr-label','ROLL '+c.hostRoll+' / '+hostRange+' · THEN '+c.episodeRoll+' / '+episodeRange),
+ const weighted=result.selectionMode==='episodes_weighted'||state.radio.mode==='episodes_weighted';
+ const selection=weighted?'Episode-weighted curated radio':'Equal chance per followed host';
+ panel.append(item('strong','fsr-label',selection+' · host '+c.hostRoll+'/'+c.hostRange+' · episode '+c.episodeRoll+'/'+c.episodeRange),
  item('h3','',c.title),
- item('p','',c.name+' · @'+c.handle+' · '+(c.availability==='verified_replay'?'Reviewed replay status':'Indexed X Space link; playback on X is not guaranteed')));
+ item('p','',c.name+' · @'+c.handle+' · '+(c.availability==='verified_replay'?'Source marked replay-verified':'Indexed original X recording; may not contain playable audio')));
  if(c.requiresOriginalUnlock){
-  panel.append(item('p','','Fred remains in the original Curio Spotlight. The StarCoin unlock rules have not changed.'));
-  const a=link('#fredSpacesRadio','Continue in Fred Media Star ↗');a.target='_self';panel.append(a);
+  panel.append(item('p','','Fred is curated through your original Media Star ledger. Owner preview or existing entitlement is checked there; other listeners confirm 1 StarCoin only if locked.'));
+  const a=link('#fredSpacesRadio','▶ Play selected Fred episode in Curio Spotlight');a.target='_self';
+  a.addEventListener('click',()=>requestFredEpisode(c.spaceId));
+  panel.append(a);
  }else if(c.url){
-  panel.append(link(c.url,'▶ Open the original X Space replay'));
-  panel.append(item('p','','X may require sign-in or may no longer have audio. This player links to the original recording rather than rehosting it.'));
+  const player=item('div','fsr-embedded-player');
+  const iframe=item('iframe');iframe.title='Original X Space playback · '+c.title;iframe.src=c.url;
+  iframe.setAttribute('sandbox','allow-scripts allow-same-origin allow-forms allow-popups');
+  iframe.setAttribute('allow','autoplay; fullscreen; encrypted-media');
+  iframe.setAttribute('referrerpolicy','no-referrer');
+  iframe.loading='eager';player.append(iframe);
+  panel.append(player);
+  const a=link(c.url,'▶ Play on X when the internal viewer cannot load');
+  panel.append(a);
+  panel.append(item('p','','The original publisher controls whether an X Space can play inside this card. The player may require a login or block embedding; it cannot be bypassed.'));
  }
+ const controls=item('div','fsr-playback-controls');
+ controls.append(button('✓ Heard it',()=>void reportPlayback('played',c.spaceId)),
+ button('✕ No audio · skip this link',()=>void reportPlayback('unavailable',c.spaceId)));
+ panel.append(controls);
  panel.hidden=false;
+}
+function requestFredEpisode(spaceId){
+ window.dispatchEvent(new CustomEvent('phi:media-star:fred-selected',{detail:{spaceId}}));
+ const fred=document.getElementById('fredSpacesRadio');
+ fred?.scrollIntoView?.({behavior:'smooth',block:'start'});
+}
+async function reportPlayback(stateName,spaceId){
+ try{
+  await query('/v1/playback/report','POST',{spaceId,state:stateName});
+  state.notice=stateName==='unavailable'?'Unplayable link removed from your future rolls.':'Thanks. This episode stays in your personal listened history.';
+  if(stateName==='unavailable')state.choice=null;
+  render();
+ }catch(e){notice('Could not save playback feedback: '+String(e.message||e))}
 }
 async function spin(){
  if(state.loading)return;
- state.loading=true;render();
+ state.choice=null;state.loading=true;render();
  try{
   const id='r'+crypto.randomUUID().replaceAll('-','');
   const result=await query('/v1/roll','POST',{rollId:id});
   state.choice=result;
-  state.notice='Randomly selected one followed person, then one of their indexed Space episodes. No StarCoin was charged.';
+  state.notice='Rolled a new original recording; no coin was charged for this selection. Playback depends on the source.';
  }catch(e){state.notice=String(e.message||e)}
- finally{state.loading=false;render();if(state.choice)picked(state.choice)}
+ finally{
+  state.loading=false;render();
+  if(state.choice){
+   picked(state.choice);
+   if(state.choice.roll?.requiresOriginalUnlock)requestFredEpisode(state.choice.roll.spaceId);
+  }
+ }
 }
 async function sync(type){
  if(state.loading)return;
@@ -168,10 +202,24 @@ function render(){
  const followed=item('div','fsr-stat');followed.append(item('strong','',String(state.following.length)),item('small','','Followed accounts imported'));
  const eligible=item('div','fsr-stat');eligible.append(item('strong','',String(state.hosts.length)),item('small','','Accounts with indexed Spaces'));
  counts.append(followed,eligible);card.append(counts);
+ const radioOpts=item('section','fsr-radio-settings');
+ radioOpts.append(item('strong','','My curation settings'),item('p','','More recorded episodes = more chances in episode-weighted mode. Fred stays in the playlist even when not separately followed, if enabled.'));
+ const mode=item('select');mode.setAttribute('aria-label','Curation shuffle mode');
+ for(const [value,label] of [['episodes_weighted','Weight by number of unplayed recordings'],['equal_hosts','Equal chance for each host']]){
+  const o=item('option','',label);o.value=value;mode.append(o);
+ }
+ mode.value=state.radio.mode;
+ const fredLabel=item('label','fsr-radio-toggle'),include=item('input');include.type='checkbox';include.checked=!!state.radio.includeFred;
+ fredLabel.append(include,item('span','',' Include original Fred Curio Spotlight episodes'));
+ const save=button('Save my radio mix',async()=>{try{
+  state.radio=await query('/v1/radio/preferences','POST',{mode:mode.value,includeFred:include.checked});
+  state.notice='Your personal curation mix is saved.';await refresh();
+ }catch(e){notice(e.message||String(e))}});
+ radioOpts.append(mode,fredLabel,save);card.append(radioOpts);
  const controls=item('div','fsr-actions');
  controls.append(button('Sync my X following',()=>void sync('following')),
  button('Discover X Spaces',()=>void sync('spaces')),
- button('🎲 Roll a person → roll their Space',()=>void spin(),'fsr-roll'));
+ button('▶ Roll & Play · new recording',()=>void spin(),'fsr-roll'));
  card.append(controls);
  const current=item('div','fsr-picked');current.hidden=!state.choice;card.append(current);
  const status=item('p','fsr-status',state.notice);status.setAttribute('role','status');card.append(status);

@@ -51,3 +51,16 @@
 .fsr-profile-edit summary{font-size:12px;font-weight:800;cursor:pointer;padding:5px}
 .fsr-profile-edit input{width:100%;max-width:300px;min-height:40px;padding:9px;border:1px solid #8fa6ca;background:white;color:#213352;border-radius:9px;font:inherit}
 .fsr-profile-edit button{display:block;margin-top:7px}
+
+/* Personal audio-curation player: full-width responsive playback attempt. */
+.fsr-radio-settings{padding:12px 13px;margin:12px 0;border:1px solid #a98d47;border-radius:14px;background:#fff5cdda}
+.fsr-radio-settings>strong{display:block;color:#4c310f;font-size:15px}
+.fsr-radio-settings p{font-size:12px;line-height:1.4;color:#554626;margin:6px 0 9px}
+.fsr-radio-settings select{width:100%;min-height:40px;padding:8px;border:1px solid #b49a55;border-radius:9px;font:inherit;color:#38270f;background:#fff}
+.fsr-radio-toggle{display:flex;gap:10px;align-items:center;cursor:pointer;margin:10px 0;font-size:13px;font-weight:800}
+.fsr-radio-toggle input{width:18px;height:18px;flex:none;accent-color:#533099}
+.fsr-embedded-player{width:100%;margin:10px 0;overflow:hidden;border-radius:12px;background:#221d3f;min-height:270px;border:1px solid #6c5590}
+.fsr-embedded-player iframe{display:block;width:100%;height:330px;border:0;background:#221d3f}
+.fsr-playback-controls{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+.fsr-playback-controls button{min-width:0;white-space:normal;font-size:12px}
+@media(max-width:420px){.fsr-embedded-player iframe{height:290px}.fsr-playback-controls{grid-template-columns:1fr}}
