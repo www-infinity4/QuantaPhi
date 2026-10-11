@@ -4,7 +4,11 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const source = fs.readFileSync(path.join(__dirname, '..', 'workers/infinity-rogers/worker.js'), 'utf8');
-const worker = import('data:text/javascript;base64,' + Buffer.from(source).toString('base64'));
+// Node's data: module loader cannot resolve the Cloudflare RPC class export.
+// Isolate only the default fetch router used by these tests.
+const isolated = source.replace(/export \{ BrainModels \} from "\.\/brain-models\.js";/, '');
+assert.notEqual(isolated,source,'Expected external RPC export in Worker source');
+const worker = import('data:text/javascript;base64,' + Buffer.from(isolated).toString('base64'));
 const endpoint = 'https://infinity-rogers.marvaseater.workers.dev';
 
 test('gateway does not contain artificial daily story or image ceilings', () => {
