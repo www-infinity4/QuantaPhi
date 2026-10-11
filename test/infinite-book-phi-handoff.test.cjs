@@ -18,7 +18,7 @@ test('Phi story handoff keeps exact story title before index words',()=>{
   assert.match(keywords,/^The Who(?: |$)/);
   assert.match(keywords,/Music|bands|British|rock/i);
   assert.ok(keywords.length<=110);
-  assert.equal(keywords.split(/\\s+/).filter(x=>x==='The').length,1);
+  assert.equal(keywords.split(/\s+/).filter(x=>x==='The').length,1);
 });
 test('each Phi destination receives the same keywords and a safe story identifier',()=>{
   const story={id:'real-history-1',title:'The Doors',sector:'music',summary:'American rock music keyboard band'};
