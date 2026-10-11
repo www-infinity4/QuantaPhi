@@ -147,7 +147,7 @@ async function preferences(env,owner){
 async function eligible(env,owner,opts){
  // All curated episodes are indexed original-source links. Missing host
  // catalogs and explicitly reported dead links have zero raffle tickets.
- const sql = \`SELECT h.x_user_id AS hostId,h.handle,h.display_name AS name,
+ const sql = `SELECT h.x_user_id AS hostId,h.handle,h.display_name AS name,
  COUNT(e.space_id) AS total,
  SUM(CASE WHEN sn.space_id IS NULL THEN 1 ELSE 0 END) AS unseen
  FROM space_hosts h
@@ -157,7 +157,7 @@ async function eligible(env,owner,opts){
  LEFT JOIN space_seen sn ON sn.space_id=e.space_id AND sn.owner_id=?
  WHERE (f.owner_id IS NOT NULL OR (lower(h.handle)='dotkrueger' AND ?=1))
  AND dead.space_id IS NULL
- GROUP BY h.x_user_id,h.handle,h.display_name ORDER BY lower(h.handle)\`;
+ GROUP BY h.x_user_id,h.handle,h.display_name ORDER BY lower(h.handle)`;
  const q=await env.DB.prepare(sql).bind(owner,owner,owner,opts.includeFred?1:0).all();
  return (q.results||[]).map(x=>({...x,total:Number(x.total),unseen:Number(x.unseen)})).filter(x=>x.total>0);
 }
@@ -190,12 +190,12 @@ async function roll(env,owner,rollId){
   chosenHost=available[randBelow(available.length)];
  }
  const hostIndex=hosts.findIndex(h=>h.hostId===chosenHost.hostId);
- const recorded=await env.DB.prepare(\`SELECT e.space_id AS spaceId,e.title,e.space_url AS url,e.availability,e.started_at AS date
+ const recorded=await env.DB.prepare(`SELECT e.space_id AS spaceId,e.title,e.space_url AS url,e.availability,e.started_at AS date
  FROM space_episodes e
  LEFT JOIN space_seen sn ON sn.owner_id=? AND sn.space_id=e.space_id
  LEFT JOIN space_playback_reports dead ON dead.owner_id=? AND dead.space_id=e.space_id AND dead.state='unavailable'
  WHERE e.host_user_id=? AND e.availability IN ('indexed','verified_replay') AND sn.space_id IS NULL AND dead.space_id IS NULL
- ORDER BY e.started_at DESC,e.space_id\`).bind(owner,owner,chosenHost.hostId).all();
+ ORDER BY e.started_at DESC,e.space_id`).bind(owner,owner,chosenHost.hostId).all();
  const episodes=recorded.results||[];
  if(!episodes.length)throw error('host_has_no_unplayed_episodes',409);
  const episodeIndex=randBelow(episodes.length),e=episodes[episodeIndex],ts=Date.now();
@@ -213,10 +213,10 @@ async function playbackReport(env,owner,body){
  const id=String(body.spaceId||'');
  if(!/^[A-Za-z0-9]{10,25}$/.test(id))throw error('invalid_space_id');
  const opts=await preferences(env,owner);
- const record=await env.DB.prepare(\`SELECT e.space_id FROM space_episodes e
+ const record=await env.DB.prepare(`SELECT e.space_id FROM space_episodes e
  JOIN space_hosts h ON h.x_user_id=e.host_user_id
  LEFT JOIN followed_hosts f ON f.owner_id=? AND f.active=1 AND lower(f.handle)=lower(h.handle)
- WHERE e.space_id=? AND (f.owner_id IS NOT NULL OR (lower(h.handle)='dotkrueger' AND ?=1))\`).bind(owner,id,opts.includeFred?1:0).first();
+ WHERE e.space_id=? AND (f.owner_id IS NOT NULL OR (lower(h.handle)='dotkrueger' AND ?=1))`).bind(owner,id,opts.includeFred?1:0).first();
  if(!record)throw error('recording_not_in_curated_library',404);
  await env.DB.prepare("INSERT INTO space_playback_reports(owner_id,space_id,state,reported_at) VALUES(?,?,?,?) ON CONFLICT(owner_id,space_id) DO UPDATE SET state=excluded.state,reported_at=excluded.reported_at").bind(owner,id,body.state,Date.now()).run();
  return {ok:true,spaceId:id,state:body.state,globalPlaybackVerified:false};
