@@ -40,8 +40,8 @@ async function insertSpace(env,data){
  const title=safe(data.title,250);if(title.length<3)throw error('space_title_required');
  const existing=await env.DB.prepare('SELECT host_user_id FROM space_episodes WHERE space_id=?').bind(link.id).first();
  if(existing&&existing.host_user_id!==host.x_user_id)throw error('space_host_conflict',409);
- await env.DB.prepare("INSERT OR IGNORE INTO space_episodes(space_id,host_user_id,title,space_url,started_at,duration_seconds,summary,source_type,availability,imported_at) VALUES(?,?,?,?,?,?,?,'owner_submitted','indexed',?)").bind(link.id,host.x_user_id,title,link.url,safe(data.date,45)||null,null,safe(data.summary,300),Date.now()).run();
- return link.id;
+ const receipt=await env.DB.prepare("INSERT OR IGNORE INTO space_episodes(space_id,host_user_id,title,space_url,started_at,duration_seconds,summary,source_type,availability,imported_at) VALUES(?,?,?,?,?,?,?,'owner_submitted','indexed',?)").bind(link.id,host.x_user_id,title,link.url,safe(data.date,45)||null,null,safe(data.summary,300),Date.now()).run();
+ return {id:link.id,created:Number(receipt.meta?.changes||0)===1};
 }
 async function followImport(env,owner,hosts,source){
  if(!Array.isArray(hosts)||hosts.length>500)throw error('following_list_max_500');
@@ -199,6 +199,11 @@ async function handle(request,env){
    const raw=await request.text();if(raw.length>90000)throw error('import_limit_exceeded',413);
    const d=JSON.parse(raw),rows=Array.isArray(d.episodes)?d.episodes:[];
    if(rows.length>100)throw error('import_max_100_per_batch');
+   const importKey=String(d.importId||crypto.randomUUID());
+   if(!/^[A-Za-z0-9_-]{8,100}$/.test(importKey))throw error('invalid_import_id');
+   const runId=owner+':'+importKey;
+   const previous=await env.DB.prepare('SELECT imported_episodes,rejected FROM space_import_runs WHERE run_id=? AND owner_id=?').bind(runId,owner).first();
+   if(previous)return out({added:previous.imported_episodes,rejectedCount:previous.rejected,unchanged:true,recordingStatus:'indexed_links_unverified'});
    const followed=await env.DB.prepare('SELECT handle FROM followed_hosts WHERE owner_id=? AND active=1').bind(owner).all();
    const handles=new Set((followed.results||[]).map(x=>x.handle.toLowerCase()));
    let added=0,rejected=[];
@@ -206,10 +211,11 @@ async function handle(request,env){
     try{const handle=cleanHandle(episode?.handle);if(!handles.has(handle.toLowerCase()))throw error('host_not_followed');
      const host=await env.DB.prepare('SELECT x_user_id FROM space_hosts WHERE lower(handle)=lower(?)').bind(handle).first();
      if(!host)await insertHost(env,{id:'handle:'+handle,handle,name:handle});
-     await insertSpace(env,episode);added++;
+     const saved=await insertSpace(env,episode);if(saved.created)added++;
     }catch(e){rejected.push({index:i,reason:e.message})}
    }
-   return out({added,rejected,recordingStatus:'indexed_links_unverified'});
+   await env.DB.prepare("INSERT INTO space_import_runs(run_id,owner_id,source,imported_hosts,imported_episodes,rejected,created_at) VALUES(?,?,'owner_submitted',0,?,?,?)").bind(runId,owner,added,rejected.length,Date.now()).run();
+   return out({added,rejected,importId:importKey,recordingStatus:'indexed_links_unverified'});
   }
   return out({error:'not_found'},404);
  }catch(err){return out({error:err.message||'failed'},err.status||500)}
