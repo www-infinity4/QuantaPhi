@@ -58,6 +58,11 @@ async function followImport(env,owner,hosts,source){
  const statements=[env.DB.prepare('INSERT INTO follow_snapshots(owner_id,snapshot_id,source,imported_at,account_count) VALUES(?,?,?,?,?)').bind(owner,snapshot,source,ts,clean.size),
  env.DB.prepare('UPDATE followed_hosts SET active=0,updated_at=? WHERE owner_id=?').bind(ts,owner)];
  for(const h of clean.values()){
+  // Include a host catalog row even when they have no Spaces yet.
+  // Canonical identity is stable by handle until provider IDs are available.
+  const known=await env.DB.prepare('SELECT x_user_id FROM space_hosts WHERE lower(handle)=lower(?)').bind(h.handle).first();
+  const hostKey=known?.x_user_id||h.id;
+  statements.push(env.DB.prepare('INSERT OR IGNORE INTO space_hosts(x_user_id,handle,display_name,profile_url,featured,updated_at) VALUES(?,?,?,?,0,?)').bind(hostKey,h.handle,h.name,'https://x.com/'+h.handle,ts));
   statements.push(env.DB.prepare('INSERT INTO followed_hosts(owner_id,x_user_id,handle,display_name,source,active,snapshot_id,updated_at) VALUES(?,?,?,?,?,1,?,?) ON CONFLICT(owner_id,x_user_id) DO UPDATE SET handle=excluded.handle,display_name=excluded.display_name,source=excluded.source,active=1,snapshot_id=excluded.snapshot_id,updated_at=excluded.updated_at').bind(owner,h.id,h.handle,h.name,source,snapshot,ts));
  }
  await env.DB.batch(statements);
