@@ -11,7 +11,9 @@ const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.classNa
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||'null')??fallback}catch{return fallback}};
 const store=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}};
 let stories=read(KEY,[]);if(!Array.isArray(stories))stories=[];
-let active=null,busy=false,artUrl='',artBusy=false;
+let active=null,busy=false,artUrl='',artBusy=false,sourcePreviewUrl='';
+const MAX_SOURCE_BYTES=10*1024*1024;
+
 function ui(){
  root.innerHTML='';
  const form=make('section','sw-card sw-create');
@@ -24,11 +26,16 @@ function ui(){
  const length=make('select','sw-field');length.id='sw-length';length.setAttribute('aria-label','Story length');
  for(const [value,label] of [['500','Short story'],['900','Full story'],['1500','Long story']]){const o=make('option','',label);o.value=value;length.append(o)}
  options.append(type,length);
+ const upload=make('input','sw-field');upload.type='file';upload.id='sw-source-image';upload.accept='image/jpeg,image/png,image/webp';upload.setAttribute('aria-label','Upload a picture to inspire the story');
+ const photo=make('img','sw-source-preview');photo.id='sw-source-preview';photo.alt='Selected story source picture';photo.hidden=true;
+ const photoNote=make('p','sw-muted','Optional: upload a picture and Oracle will inspect visible details before writing. No filename guessing. PNG, JPG or WebP, up to 10 MB.');photoNote.id='sw-source-note';
  const go=make('button','sw-primary','Write story + create image');go.type='button';go.id='sw-write';
  const notice=make('p','sw-notice','');notice.id='sw-notice';notice.setAttribute('role','status');
- form.append(make('label','sw-label','Describe your story'),idea,make('label','sw-label','Keywords (optional)'),keys,options,go,notice);
+ form.append(make('label','sw-label','Describe your story'),idea,make('label','sw-label','Keywords (optional)'),keys,make('label','sw-label','Picture to write about (optional)'),upload,photo,photoNote,options,go,notice);
  const section=make('section','sw-card sw-output');section.id='sw-output';section.hidden=true;
  const header=make('div','sw-result-head');header.append(make('span','sw-eyebrow','YOUR ORIGINAL STORY'),make('h3','sw-title',''));
+ const sourceArt=make('img','sw-art sw-original-photo');sourceArt.id='sw-original-photo';sourceArt.alt='Original picture submitted by the storyteller';sourceArt.hidden=true;
+ const sourceCaption=make('p','sw-muted sw-original-caption','Your original uploaded picture');sourceCaption.id='sw-original-caption';sourceCaption.hidden=true;
  const art=make('img','sw-art');art.id='sw-art';art.alt='AI illustration of the story';art.hidden=true;
  const artStatus=make('p','sw-art-status','');artStatus.id='sw-art-status';
  const body=make('div','sw-story');body.id='sw-body';
@@ -40,9 +47,10 @@ function ui(){
  const history=make('section','sw-card sw-history');history.append(make('strong','','Your saved drafts'));
  const picker=make('select','sw-field');picker.id='sw-history';picker.setAttribute('aria-label','Open a saved Story Writer draft');
  history.append(picker,make('p','sw-muted','Drafts and illustrations are saved on this device. Cloud backup is not connected.'));
- section.append(header,art,artStatus,body,controls,rewardStatus);
+ section.append(header,sourceArt,sourceCaption,art,artStatus,body,controls,rewardStatus);
  root.append(form,section,history);
  $('#sw-write').addEventListener('click',()=>void writeStory());
+ upload.addEventListener('change',previewSource);
  $('#sw-star').addEventListener('click',star);
  $('#sw-collect').addEventListener('click',collect);
  $('#sw-share').addEventListener('click',()=>void share());
@@ -114,6 +122,39 @@ function showArt(blob){
  if(blob){artUrl=URL.createObjectURL(blob);img.src=artUrl;img.hidden=false}
  else{img.removeAttribute('src');img.hidden=true}
 }
+async function prepareSource(file){
+ if(!file||!['image/jpeg','image/png','image/webp'].includes(file.type))throw Error('Select a PNG, JPG or WebP picture.');
+ if(file.size>MAX_SOURCE_BYTES)throw Error('That picture exceeds 10 MB. Choose a smaller one.');
+ if(file.size<=2_700_000)return file;
+ // Cloudflare vision currently accepts up to 3 MB, even when the UI accepts 10 MB.
+ const bitmap=await createImageBitmap(file);
+ try{
+  const scale=Math.min(1,1600/Math.max(bitmap.width,bitmap.height));
+  const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(bitmap.width*scale));canvas.height=Math.max(1,Math.round(bitmap.height*scale));
+  const ctx=canvas.getContext('2d');if(!ctx)throw Error('Picture resize unavailable on this browser');
+  ctx.drawImage(bitmap,0,0,canvas.width,canvas.height);
+  const blob=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('Cannot prepare picture')),'image/jpeg',.82));
+  if(blob.size>2_900_000)throw Error('Picture remains too large for the image reader');
+  return new File([blob],'story-source.jpg',{type:'image/jpeg'});
+ }finally{bitmap.close?.()}
+}
+function previewSource(){
+ const photo=$('#sw-source-preview'),file=$('#sw-source-image').files?.[0];
+ if(sourcePreviewUrl){URL.revokeObjectURL(sourcePreviewUrl);sourcePreviewUrl=''}
+ photo.hidden=true;photo.removeAttribute('src');
+ if(!file){$('#sw-source-note').textContent='No picture selected. You can still write from an idea or keywords.';return}
+ if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>MAX_SOURCE_BYTES){
+  $('#sw-source-image').value='';note('Picture must be PNG/JPG/WebP, 10 MB or smaller.');return;
+ }
+ sourcePreviewUrl=URL.createObjectURL(file);photo.src=sourcePreviewUrl;photo.hidden=false;
+ $('#sw-source-note').textContent='Selected picture: '+file.name+'. Oracle will read its visible content before composing your story.';
+}
+function showOriginal(id){
+ const img=$('#sw-original-photo'),caption=$('#sw-original-caption');
+ img.hidden=true;caption.hidden=true;img.removeAttribute('src');
+ if(!id)return;
+ getPicture('source:'+id).then(blob=>{if(active?.id!==id||!blob)return;const src=URL.createObjectURL(blob);img.src=src;img.hidden=false;caption.hidden=false;img.onload=()=>URL.revokeObjectURL(src);}).catch(()=>{});
+}
 function renderStory(){
  const section=$('#sw-output');section.hidden=!active;if(!active){showArt(null);return}
  $('.sw-title').textContent=active.title;const body=$('#sw-body');body.replaceChildren();
@@ -121,14 +162,26 @@ function renderStory(){
  $('#sw-collect').textContent=read(COLLECT,[]).some(x=>x.key==='story-writer|'+active.id)?'Collected ✓':'Collect +0.1 ★';
  $('#sw-star').textContent=read(STARS,[]).includes(active.id)?'★ Starred':'☆ Star +0.1 ★';
  $('#sw-art-status').textContent=active.imageStatus||'Illustration will appear here when the renderer finishes.';
- showArt(null);const id=active.id;
+ showArt(null);const id=active.id;showOriginal(id);
  getPicture(id).then(blob=>{if(active?.id===id&&blob)showArt(blob)}).catch(()=>{});
  historyList();
 }
 async function writeStory(){
  if(busy||artBusy)return;
  const idea=$('#sw-idea').value.trim(),keys=$('#sw-keys').value.trim(),genre=$('#sw-genre').value,words=Number($('#sw-length').value)||900;
- if(!idea&&!keys){note('Start with an idea or at least one keyword.');return}
+ const sourceFile=$('#sw-source-image').files?.[0]||null;
+ if(!idea&&!keys&&!sourceFile){note('Start with an idea, keywords, or upload a picture.');return}
+ busy=true;$('#sw-write').disabled=true;
+ let prepared=null,visualEvidence='';
+ try{
+  if(sourceFile){
+   note('Oracle is reading the picture before writing…');
+   prepared=await prepareSource(sourceFile);
+   if(typeof window.PhiVisualRender?.inspect!=='function')throw Error('Cloudflare image reader is unavailable. Your picture was not analyzed.');
+   visualEvidence=String(await window.PhiVisualRender.inspect(prepared)||'').trim();
+   if(visualEvidence.length<25)throw Error('Image reader did not describe the picture. No story was invented from the filename.');
+  }
+ }catch(error){note('Picture reading could not finish: '+String(error?.message||error).slice(0,160));busy=false;$('#sw-write').disabled=false;return}
  const id=(crypto.randomUUID?.()||Date.now().toString(36)),prompt=[
  'You are the Story Writer in QuantaPhi. Write a completely original, polished fictional story driven by the user.',
  'Produce a surprising opening, vividly different characters, scenes that advance the plot, a meaningful reveal, and a satisfying ending. Avoid generic summaries, repetition, filler or disclaimers.',
@@ -136,16 +189,19 @@ async function writeStory(){
  'Return ONLY valid JSON with keys "title", "story", "illustration". The story value must contain fully written prose with paragraphs separated by two newline characters.',
  'The illustration value describes ONE striking scene from this exact story, with composition, lighting, period details, subject and atmosphere. Do not include words or titles in the painted image.',
  'Genre: '+genre,'Length target: '+words+' words','Opening idea: '+idea,'Keywords: '+keys,
+ visualEvidence?'This source image was inspected by a visual model. Build the narrative around what it visibly depicts, using the user’s creative instructions. Distinguish visible evidence from fictional invention. Never identify a real person from appearance alone. Visible content:\\n'+visualEvidence:'',
+ sourceFile?'The uploaded picture is the main subject even when the opening idea is blank.':'',
  'Write now.'
  ].join('\n');
- busy=true;$('#sw-write').disabled=true;note('GPT is writing your original story…');
+ note('Oracle is writing your original story…');
  try{
   const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),65000);
   let response;try{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'oracle-story-writer',requireCloudflare:true}}),signal:controller.signal})}finally{clearTimeout(timeout)}
   const data=await response.json().catch(()=>({}));if(!response.ok||data.ok===false)throw Error(String(data.error||'GPT did not return a completed story'));
   const parsed=parseStory(takeText(data),idea||keys);
   if(parsed.body.length<250)throw Error('GPT returned an incomplete story. Please try Write Story again.');
-  active={id,title:parsed.title,body:parsed.body,scene:parsed.scene,idea,keywords:keys,genre,createdAt:new Date().toISOString(),imageStatus:'Preparing your illustration…'};
+  active={id,title:parsed.title,body:parsed.body,scene:parsed.scene,idea,keywords:keys,genre,photoBased:Boolean(prepared),visualEvidence:visualEvidence.slice(0,1600),createdAt:new Date().toISOString(),imageStatus:'Preparing your illustration…'};
+  if(prepared){try{await picture('source:'+id,prepared)}catch(error){note('Original source image could not be saved: '+String(error?.message||error))}}
   saveStory(active);renderStory();note('Story written and saved on this device. Creating its image…');
   void illustrate(active);
  }catch(error){note('Story writing could not finish: '+String(error?.message||error).slice(0,180))}
