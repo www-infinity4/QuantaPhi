@@ -81,9 +81,14 @@ test('repository engine claims any owner repository while honoring leases and jo
 
 test('GPT Purple cannot approve absent tests and immutable patch evidence',async()=>{
  const memory=new Map([['key',{key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,job:{instructions:'Build'}}]]);
- const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async()=>({response:JSON.stringify({decision:'approve',reason:'looks good'})})}});
- const request=new Request('https://clock/runner/arbitrate',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{tests:{passed:false},review:{approved:true},baseSha:'a'.repeat(40),patched:{'index.html':'hello'}}})});
+ let messages;
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async(model,input)=>{messages=input.messages;return {response:JSON.stringify({decision:'approve',reason:'looks good'})};}}});
+ const pins=[{sourcePath:'index.html',selector:'#buy',existingLabel:'Buy Item',existingHref:'/item',sourceEvidence:true,ownerSpecified:false}];
+ const request=new Request('https://clock/runner/arbitrate',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{tests:{passed:false},review:{approved:true},baseSha:'a'.repeat(40),patched:{'index.html':'hello'},source:{'index.html':'<a id="buy" href="/item">Buy Item</a>'},pinnedControls:pins}})});
  await assert.rejects(clock.runner(request),/arbitration_evidence_required/);assert.equal(memory.has('engine-review:key'),false);
+ assert.match(messages[0].content,/preserves an existing, verified button label/);
+ assert.match(messages[0].content,/Reject invented or changed text/);
+ assert.deepEqual(JSON.parse(messages[1].content).evidence.pinnedControls,pins);
 });
 
 
