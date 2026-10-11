@@ -695,13 +695,18 @@ export default {
       }
 
       if (url.pathname === "/v1/music-quants/state" && request.method === "GET") {
-        const rows = await env.DB.prepare("SELECT quant_id,provenance_hash,payload_json,created_at FROM music_quants WHERE owner_wallet_id=? AND status='active' ORDER BY created_at DESC LIMIT 500").bind(wallet).all();
+        // Count ALL active Music Quants. A 500-row history page must never cap a wallet balance.
+        const offset = Math.max(0, Math.min(100000, Number.parseInt(url.searchParams.get("offset") || "0", 10) || 0));
+        const [rows, total] = await Promise.all([
+          env.DB.prepare("SELECT quant_id,provenance_hash,payload_json,created_at FROM music_quants WHERE owner_wallet_id=? AND status='active' ORDER BY created_at DESC, rowid DESC LIMIT 500 OFFSET ?").bind(wallet, offset).all(),
+          env.DB.prepare("SELECT COUNT(*) AS count FROM music_quants WHERE owner_wallet_id=? AND status='active'").bind(wallet).first()
+        ]);
         const quants = (rows.results || []).map(row => {
           let payload = {};
           try { payload = JSON.parse(row.payload_json); } catch {}
           return { ...payload, id: row.quant_id, hash: row.provenance_hash, cloudCreatedAt: row.created_at };
         });
-        return json({ ok: true, wallet_id: wallet, balance: quants.length, quants });
+        return json({ ok: true, wallet_id: wallet, balance: Number(total?.count || 0), quants, offset, has_more: offset + quants.length < Number(total?.count || 0) });
       }
 
       if (url.pathname === "/v1/music-quants/transfer" && request.method === "POST") {

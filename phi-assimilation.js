@@ -49,8 +49,9 @@ async function corpus(){
  return{items:all,remote};
 }
 function rank(items,q,sections){
- const qs=terms([q,...(sections?.yellow||[]).map(x=>x.value)].join(' ')),qc=cats([q,...(sections?.yellow||[]).map(x=>x.value)].join(' ')),seen=new Set();
- return items.map(x=>{const ts=terms(x.query+' '+x.detail),cs=cats(x.query+' '+x.detail),overlap=[...qs].filter(v=>ts.has(v)).length,same=cs.filter(v=>qc.includes(v)).length,cross=cs.some(c=>qc.some(z=>(CONNECT[z]||[]).includes(c)))&&!same;return {...x,score:overlap*9+same*5+(cross?4:0)+Math.min(Math.max(0,(Number(x.weight)||1)-1),5),cross,categories:cs}})
+ // Rank against the user's actual subject; unverified generated indexes cannot make unrelated prior searches relevant.
+ const qs=terms(q),qc=cats(q),seen=new Set();
+ return items.map(x=>{const ts=terms(x.query+' '+x.detail),cs=cats(x.query+' '+x.detail),overlap=[...qs].filter(v=>ts.has(v)).length,same=cs.filter(v=>qc.includes(v)).length,cross=cs.some(c=>qc.some(z=>(CONNECT[z]||[]).includes(c)))&&!same;return {...x,score:overlap*9+same*5+(cross?4:0)+Math.min(Math.max(0,(Number(x.weight)||1)-1),5),overlap,same,cross,categories:cs}})
  .filter(x=>x.query.toLowerCase()!==clean(q).toLowerCase()).sort((a,b)=>b.score-a.score).filter(x=>{const id=x.query.toLowerCase();if(seen.has(id))return false;seen.add(id);return true});
 }
 const safe=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -122,7 +123,7 @@ function researchTopic(raw){
 }
 function packageOptions(items,q,sections){
  const ranked=rank(items,q,sections);
- const candidates=ranked.filter(x=>x.score>0&&!/^\w+:\/\/|^https?:|^\s*data:/i.test(x.query)&&researchTopic(x.query).length>=3);
+ const candidates=ranked.filter(x=>x.score>=9&&(x.overlap>0||(x.same>0&&x.kind==='extraction'))&&!/^\w+:\/\/|^https?:|^\s*data:/i.test(x.query)&&researchTopic(x.query).length>=3);
  const chosen=[],counts={};
  for(const x of candidates){
   if(chosen.length>=24)break;
@@ -180,7 +181,7 @@ async function load(q,sections){
  if(id!==ticket||!list.isConnected)return;
  const {ranked,chosen}=packageOptions(items,q,sections);
  const old=document.getElementById('qAssimilationChips');if(old)old.remove();
- if(!chosen.length){list.innerHTML='<li>No earlier matches found in the research history. Your extracted data, if available, appears below.</li>';void renderExtracts(q);return}
+ if(!chosen.length){list.innerHTML='<li>No relevant earlier Quants verified for this subject. Use the extracted entries below to build a research trail; unrelated histories are not presented as connections.</li>';void renderExtracts(q);return}
  list.textContent='Assembling related research packages…';
  // Evidence is collected for promising bridges only; history remains indexed, not
  // dumped to the screen or sent wholesale with private card interaction details.

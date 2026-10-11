@@ -81,3 +81,21 @@ body.oracle-quanta #result .q-oracle-heading {
   width:100%;max-width:none;box-sizing:border-box;padding:15px;
 }
 body.oracle-quanta #result .q-oracle-hero::before {display:none}
+
+/* Scholastic Reader is an original text-first card, not an image of a book or fake controls. */
+body.oracle-quanta #result .q-oracle-reader.qreader-text-only {
+  min-height:0;padding:12px 14px;display:block;
+  background:linear-gradient(120deg,#421025,#6b2344)!important;
+}
+body.oracle-quanta #result .q-oracle-reader.qreader-text-only .q-oracle-heading {
+  width:100%;max-width:none;padding:5px;gap:6px;
+}
+#result .qdata-comparison-viewer {max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;border:1px solid #c49b49;border-radius:14px;margin:15px 0;background:#fffefa}
+#result .qdata-comparison-viewer:focus-visible {outline:3px solid #8d4bc2;outline-offset:2px}
+#result .qdata-comparison-table {border-collapse:collapse;min-width:650px;width:100%;text-align:left;font-size:13px;color:#503108}
+#result .qdata-comparison-table th,#result .qdata-comparison-table td {padding:11px;border-bottom:1px solid #e8c878;vertical-align:top;min-width:120px;overflow-wrap:anywhere}
+#result .qdata-comparison-table thead th {background:#653c12;color:#fff9dd}
+#result .qdata-comparison-table tbody th {background:#fff1be}
+#result .qdata-comparison-table a {display:block;color:#5b2c91;font-weight:800;margin-bottom:5px}
+#result .qdata-comparison-table small {display:block;font-size:12px;line-height:1.45;margin-bottom:10px}
+#result .qdata-oracle-card .qdata-actions button {min-height:44px}
