@@ -159,7 +159,7 @@ async function eligible(env,owner,opts){
  AND dead.space_id IS NULL
  GROUP BY h.x_user_id,h.handle,h.display_name ORDER BY lower(h.handle)`;
  const q=await env.DB.prepare(sql).bind(owner,owner,owner,opts.includeFred?1:0).all();
- return (q.results||[]).map(x=>({...x,total:Number(x.total),unseen:Number(x.unseen)})).filter(x=>x.total>0);
+ return (q.results||[]).map(x=>({...x,total:Number(x.total),count:Number(x.total),unseen:Number(x.unseen)})).filter(x=>x.total>0);
 }
 async function roll(env,owner,rollId){
  if(!/^[A-Za-z0-9_-]{8,100}$/.test(rollId))throw error('roll_id_required');
@@ -260,11 +260,12 @@ async function handle(request,env){
    return out({following:r.results||[],count:(r.results||[]).length});
   }
   if(path==='/v1/hosts'&&request.method==='GET'){
-   const h=await eligible(env,owner);return out({hosts:h,eligibleCount:h.length});
+   const h=await eligible(env,owner,await preferences(env,owner));return out({hosts:h,eligibleCount:h.length});
   }
   if(path==='/v1/episodes'&&request.method==='GET'){
    const handle=cleanHandle(url.searchParams.get('handle')),exists=await env.DB.prepare('SELECT 1 AS yes FROM followed_hosts WHERE owner_id=? AND lower(handle)=lower(?) AND active=1').bind(owner,handle).first();
-   if(!exists)throw error('host_not_followed',404);
+   const config=await preferences(env,owner);
+   if(!exists&&!(handle.toLowerCase()==='dotkrueger'&&config.includeFred))throw error('host_not_followed',404);
    const rows=await env.DB.prepare(`SELECT e.space_id AS id,e.title,e.space_url AS url,e.availability,e.started_at AS date
    FROM space_episodes e JOIN space_hosts h ON h.x_user_id=e.host_user_id WHERE lower(h.handle)=lower(?) AND e.availability IN ('indexed','verified_replay') ORDER BY e.started_at DESC,e.space_id LIMIT 2000`).bind(handle).all();
    return out({handle,episodes:(rows.results||[]).map(x=>handle.toLowerCase()==='dotkrueger'?{...x,url:null,requiresOriginalUnlock:true}:x),count:(rows.results||[]).length});
