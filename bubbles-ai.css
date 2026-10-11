@@ -105,3 +105,7 @@
 @keyframes ba-breathe{from{transform:scale(.98)}to{transform:scale(1.065)}}
 @keyframes ba-think{to{filter:hue-rotate(70deg)}}
 @media(prefers-reduced-motion:reduce){.ba-launcher[data-state="hearing"],.ba-launcher[data-state="speaking"],.ba-launcher[data-state="thinking"]{animation:none}}
+
+.ba-tool-rail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:8px 0}
+.ba-panel .ba-tool-link{display:flex;align-items:center;justify-content:center;min-height:43px;text-align:center;padding:5px;border:1px solid #7cd3d6;border-radius:10px;background:#15415c;color:#e2fff9;text-decoration:none;font-size:11px;font-weight:800}
+@media(max-width:340px){.ba-tool-rail{grid-template-columns:1fr}}
