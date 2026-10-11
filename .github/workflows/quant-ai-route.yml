@@ -1,0 +1,25 @@
+name: Quant-AI same-origin route
+on:
+  pull_request:
+    paths:
+      - workers/quantaphi-site/worker.js
+      - test/quant-ai-routing.test.cjs
+      - .github/workflows/quant-ai-route.yml
+  push:
+    branches: [main]
+    paths:
+      - workers/quantaphi-site/worker.js
+      - test/quant-ai-routing.test.cjs
+      - .github/workflows/quant-ai-route.yml
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check workers/quantaphi-site/worker.js
+      - run: node --test test/quant-ai-routing.test.cjs test/suite-routing.test.cjs test/shoplc-embed.test.cjs
