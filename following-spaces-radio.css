@@ -1,0 +1,31 @@
+#followingSpacesRadio{font:500 14px/1.5 system-ui,sans-serif;margin:17px 0}
+#followingSpacesRadio *{box-sizing:border-box}
+.fsr-card{background:radial-gradient(circle at 94% 0,#fffdea,transparent 48%),linear-gradient(150deg,#fff7bd,#f6d256 77%,#d6a83a);color:#3b2b09;border:2px solid #dba82e;border-radius:23px;padding:17px;box-shadow:0 8px 27px #8e621844}
+.fsr-brand{font-weight:1000;font-size:25px;color:#552f09;letter-spacing:-.04em}
+.fsr-label{display:block;letter-spacing:.12em;font-size:10px;font-weight:900;color:#745119}
+.fsr-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.fsr-head h2{font-size:21px;line-height:1.2;margin:9px 0;color:#422803}
+.fsr-feature{background:#fffce2;border:1px solid #c49a3b;border-radius:14px;padding:11px;margin:11px 0}
+.fsr-feature a{color:#5027a0;font-weight:850}
+.fsr-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:11px 0}
+.fsr-stat{background:#fff9e9;border:1px solid #d3b65f;padding:9px;border-radius:12px;display:grid;gap:2px;text-align:center}
+.fsr-stat strong{font-size:27px}.fsr-stat small{font-size:12px}
+.fsr-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0}
+.fsr-card button{background:#fff9dc;color:#502d09;border:1px solid #9b7736;min-height:43px;padding:10px;border-radius:12px;font:850 13px system-ui,sans-serif;cursor:pointer}
+.fsr-card .fsr-roll{grid-column:1/-1;background:#175f46;color:#fff;border:1px solid #0a4936;font-size:16px;min-height:58px;box-shadow:0 0 13px #3ca66d88}
+.fsr-card button:disabled{opacity:.55;cursor:wait}
+.fsr-status{margin:10px 0;color:#5c4110;font-size:12px;line-height:1.5;border-top:1px solid #c4a451;padding-top:7px}
+.fsr-picked{border:2px solid #bda065;border-radius:17px;padding:13px;margin:10px 0;background:#fffefa}
+.fsr-picked h3{font-size:18px;margin:3px 0 8px}
+.fsr-picked a,.fsr-card .fsr-play{display:inline-flex;align-items:center;justify-content:center;min-height:44px;background:#271d41;color:#fff1b2;border-radius:13px;padding:9px 12px;text-decoration:none;font-weight:800}
+.fsr-picked p{font-size:13px}.fsr-hosts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-height:260px;overflow:auto}
+.fsr-hosts button{text-align:left;display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:#fffdf2}
+.fsr-hosts small{font-size:11px;font-weight:500;color:#6b5228}
+.fsr-episodes{margin:10px 0;display:grid;gap:6px}
+.fsr-episode{padding:8px 10px;border:1px solid #dec68d;border-radius:10px;background:#fffdf1;display:grid;gap:4px}
+.fsr-episode strong{font-size:13px}.fsr-episode a{color:#512e8e;font-weight:800;font-size:12px}
+.fsr-import{border-top:1px solid #c89a35;padding:10px 0;margin-top:12px}
+.fsr-import summary{cursor:pointer;font-weight:900;color:#4f310b}
+.fsr-import textarea{display:block;width:100%;min-height:80px;padding:9px;border:1px solid #a3895e;border-radius:8px;background:white;color:#2f2514;font:13px/1.4 system-ui}
+.fsr-card :focus-visible{outline:3px solid #2864cc;outline-offset:2px}
+@media(max-width:420px){.fsr-card{padding:12px}.fsr-hosts{grid-template-columns:1fr}.fsr-brand{font-size:22px}}
