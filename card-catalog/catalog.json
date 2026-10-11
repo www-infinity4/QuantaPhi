@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "updated": "2026-10-11",
+  "cards": [
+    {
+      "id": "search-engine",
+      "name": "Search Engine",
+      "category": "Search & discovery",
+      "status": "previewable",
+      "source": {
+        "repo": "QuantaPhi",
+        "path": "index.html"
+      },
+      "options": [
+        "overview-first",
+        "image-first",
+        "links-only",
+        "quanta-style"
+      ],
+      "tenantData": false
+    },
+    {
+      "id": "search-viewer",
+      "name": "Search Viewer",
+      "category": "Search & discovery",
+      "status": "previewable",
+      "source": {
+        "repo": "QuantaPhi",
+        "path": "index.html"
+      },
+      "options": [
+        "overview-first",
+        "image-first",
+        "links-only",
+        "quanta-style"
+      ],
+      "tenantData": false
+    },
+    {
+      "id": "scholastic-reader",
+      "name": "Scholastic Reader",
+      "category": "Reading & research",
+      "status": "planned-adapter",
+      "source": {
+        "repo": "QuantaPhi",
+        "path": "phi-scholastic-data.js"
+      },
+      "options": [
+        "source-first",
+        "overview-first"
+      ],
+      "tenantData": false
+    },
+    {
+      "id": "asteroid",
+      "name": "Asteroid Reads",
+      "category": "Reading & research",
+      "status": "planned-adapter",
+      "source": {
+        "repo": "QuantaPhi",
+        "path": "infinite-book.js"
+      },
+      "options": [
+        "story-first",
+        "source-first"
+      ],
+      "tenantData": true
+    },
+    {
+      "id": "reads-realms",
+      "name": "Infinite Reader · Reads & Realms",
+      "category": "Stories & books",
+      "status": "planned-tenant-backend",
+      "source": {
+        "repo": "QuantaPhi",
+        "path": "infinite-book-discovery.js"
+      },
+      "options": [
+        "free",
+        "paid"
+      ],
+      "tenantData": true
+    },
+    {
+      "id": "story-writer",
+      "name": "Infinite Story Writer",
+      "category": "Stories & books",
+      "status": "planned-adapter",
+      "source": {
+        "repo": "QuantaPhi",
+        "path": "phi-story-writer.js"
+      },
+      "options": [
+        "original-story",
+        "documented-story"
+      ],
+      "tenantData": true
+    },
+    {
+      "id": "image-builder",
+      "name": "Image Builder",
+      "category": "Creation",
+      "status": "planned-adapter",
+      "source": {
+        "repo": "QuantaPhi",
+        "path": "phi-image-builder.js"
+      },
+      "options": [
+        "generate",
+        "fix"
+      ],
+      "tenantData": false
+    },
+    {
+      "id": "radio",
+      "name": "Infinity Radio",
+      "category": "Audio & video",
+      "status": "planned-adapter",
+      "source": {
+        "repo": "Alien-Radio",
+        "path": "index.html"
+      },
+      "options": [
+        "single-station",
+        "schedule"
+      ],
+      "tenantData": true
+    },
+    {
+      "id": "media-card",
+      "name": "Media Star Creator",
+      "category": "Audio & video",
+      "status": "planned-adapter",
+      "source": {
+        "repo": "QuantaPhi",
+        "path": "media-star-creator.js"
+      },
+      "options": [
+        "audio",
+        "video"
+      ],
+      "tenantData": true
+    },
+    {
+      "id": "code-workshop",
+      "name": "Code Phi Workshop",
+      "category": "Building tools",
+      "status": "planned-adapter",
+      "source": {
+        "repo": "Omni-Phi",
+        "path": "code/"
+      },
+      "options": [
+        "code",
+        "preview"
+      ],
+      "tenantData": false
+    },
+    {
+      "id": "website-builder",
+      "name": "Infinity Website Builder",
+      "category": "Building tools",
+      "status": "planned-adapter",
+      "source": {
+        "repo": "C13b0",
+        "path": "index.html"
+      },
+      "options": [
+        "research-to-site"
+      ],
+      "tenantData": false
+    },
+    {
+      "id": "bubbles-ai",
+      "name": "Bubbles AI Orb",
+      "category": "Building tools",
+      "status": "planned-adapter",
+      "source": {
+        "repo": "QuantaPhi",
+        "path": "bubbles-embed.js"
+      },
+      "options": [
+        "voice",
+        "chat"
+      ],
+      "tenantData": false
+    },
+    {
+      "id": "news-reader",
+      "name": "News Phi Reader",
+      "category": "Reading & research",
+      "status": "planned-adapter",
+      "source": {
+        "repo": "News-Phi",
+        "path": "index.html"
+      },
+      "options": [
+        "visual-news"
+      ],
+      "tenantData": true
+    }
+  ]
+}
