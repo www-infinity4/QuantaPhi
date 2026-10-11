@@ -33,7 +33,8 @@ test('knowledge tables migrate idempotently and evidence gates reject invented c
   assert.match(result.stdout,/schema validated twice/);
 });
 test('knowledge schema cannot touch existing wallet or work-ticket tables',()=>{
-  assert.doesNotMatch(schema,/\b(?:ALTER|DROP|DELETE|UPDATE|REPLACE|TRUNCATE)\s+(?:TABLE\s+)?(?:wallet|work_tickets|quant_ledger|unified_wallet|starcoin)/i);
+  const statements=schema.replace(/--[^\n]*/g,''); // comments name preserved tables but do not execute mutations
+  assert.doesNotMatch(statements,/\b(?:ALTER|DROP|DELETE|UPDATE|REPLACE|TRUNCATE)\s+(?:TABLE\s+)?(?:wallet|work_tickets|quant_ledger|unified_wallet|starcoin)/i);
   for(const table of ['quant_knowledge_catalog','knowledge_dependency_edges','execution_provenance_registry'])
     assert.match(schema,new RegExp('CREATE TABLE IF NOT EXISTS '+table));
 });
