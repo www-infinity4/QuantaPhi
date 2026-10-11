@@ -199,10 +199,10 @@ test('reply actions take notes and prepare work without sending unapproved robot
  nodes.find(e=>e.className==='ba-composer').handlers.submit({preventDefault(){}});
  for(let tick=0;tick<3;tick++)await new Promise(resolve=>setImmediate(resolve));
  assert.equal(calls.length,1,'only the approved AI chat endpoint is called');
- const noteAction=get('button','Save note');
+ const noteAction=nodes.find(e=>e.tag==='button'&&e.className==='ba-miniaction'&&e.textContent==='Save note');
  assert.ok(noteAction,'assistant reply has a note action');
  noteAction.handlers.click();
- assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'note storage keys: '+[...values.keys()].join(', ')+'; status: '+nodes.find(x=>x.className==='ba-status')?.textContent+'; action: '+noteAction.handlers.click.toString().slice(0,220));
+ assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'assistant reply note was saved');
  const notes=JSON.parse(values.get('quantaphi:bubbles:notes:v1:work-cards'));
  assert.equal(notes[0].text,'Here is a practical plan to update the README and run tests.');
  const draft=get('button','Make work draft');
