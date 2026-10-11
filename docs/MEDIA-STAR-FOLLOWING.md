@@ -73,3 +73,32 @@ supplies or explicitly confirms. No independent follow set is overwritten by
 a partial screenshot import. Each person is a logical partition in the shared
 D1 host/episode schema, not an unnecessary standalone Cloudflare account or
 new physically empty D1 database.
+
+## Owner X identity link — October 11
+The owner identified the X handle as **@YahooPingcwlz**. It has been
+registered in the existing `media-star-following-spaces` D1
+`x_account_links` table as `owner_claimed`, associated exclusively with
+their already-verified `kris` StarQuest account. No claim has been made that
+X verified the account or that the current full Following list was retrieved.
+
+Endpoints `GET /v1/x/account` and `POST /v1/x/account` are wallet-session
+authenticated and do not allow another owner to view or change this mapping.
+The radio card shows its saved @handle, opens the exact
+`https://x.com/YahooPingcwlz/following` page, and can save another handle
+from its account-settings panel.
+
+**Safety rule for future OAuth:** Before any authorized X Following sync may
+replace screenshot-imported rows, the Worker checks that `/2/users/me` returns
+the **same username** as the owner-declared one (case-insensitive). A mismatch
+returns HTTP 403 without deactivating previous follows. Only after every
+page of the authorized Following response is fetched and committed may the
+mapping change to `x_api_verified`. It records the verified X user ID and
+timestamp. No private X token should be kept in D1, source, browser local
+storage, logs or Media Star exported cards.
+
+Public browser page retrieval of X's Following tab is not a reliable
+authenticated feed; do not assume it exposes every followed user. The
+platform must configure owner-authorized X provider credentials with
+appropriate read scopes before genuine full import and historical Space
+discovery can run. The existing six screenshot-confirmed followed handles
+remain available even without this connection.
