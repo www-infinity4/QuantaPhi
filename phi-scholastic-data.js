@@ -44,7 +44,11 @@ function renderLinks(){
   const originHref=link.href;li.replaceChildren();
   const btn=make('button','qdata-select',value);
   btn.type='button';btn.dataset.value=value;btn.title='Select '+value+' for extraction, comparison, or building';
-  const go=make('a','qdata-open','↗');go.href=originHref;go.title='Start a separate Quant search for '+value;go.setAttribute('aria-label','Search '+value+' as a new Quant');
+  const go=make('a','qdata-open','↗');
+  const next=new URL(originHref,location.href);
+  const query=scopedTerm(value,active.query);next.searchParams.set('q',query);
+  if(active.tokenId)next.searchParams.set('from',active.tokenId);
+  go.href=next.href;go.title='Research '+query+' in a linked Quant';go.setAttribute('aria-label','Research '+query+' in a linked Quant');
   li.append(btn,go);li.dataset.qdataReady='yes';
   const needle=clean(active.yellow.querySelector('.qdata-filter')?.value||'').toLowerCase();
   li.hidden=!!needle&&!value.toLowerCase().includes(needle);
@@ -53,18 +57,32 @@ function renderLinks(){
 }
 function hero(zone,kind){
  if(zone.querySelector('.q-oracle-hero'))return;
- const wrapper=make('div','q-oracle-hero q-oracle-'+kind);
- const art=make('div','q-oracle-artwork');
- const image=make('img','q-oracle-avatar');
- image.src=kind==='reader'?'/assets/phi-scholastic-reader.webp?v=20261009-original-art3':'/assets/phi-data-analyst.webp?v=20261009-original-art3';
- image.alt=kind==='reader'?'Illustrated open encyclopedia radiating scholarly light':'Illustrated futuristic android analyst with glowing data screens';
- image.loading='lazy';image.decoding='async';
+ const wrapper=make('div','q-oracle-hero q-oracle-'+kind+(kind==='reader'?' qreader-text-only':''));
+ if(kind==='data'){
+  const art=make('div','q-oracle-artwork');
+  const image=make('img','q-oracle-avatar');
+  image.src='/assets/phi-data-analyst.webp?v=20261009-original-art3';
+  image.alt='Illustrated data analysis workspace';image.loading='lazy';image.decoding='async';
+  art.append(image);wrapper.append(art);
+ }
  const copy=make('div','q-oracle-heading');
  copy.append(make('span','q-oracle-eyebrow','QUANTAPHI · ORACLE RESEARCH'),
   make('strong','',kind==='reader'?'Scholastic Reader':'Data Extraction'),
-  make('small','',kind==='reader'?'AI Overview · Research & reading':'Select · Search · Compare · Build'));
- art.append(image);wrapper.append(art,copy);
- zone.insertBefore(wrapper,zone.firstChild);
+  make('small','',kind==='reader'?'Original research · readable text and sources':'Select · Search · Compare · Extract'));
+ wrapper.append(copy);zone.insertBefore(wrapper,zone.firstChild);
+}
+// A category such as "brand" is a filter on the current research subject,
+// never a standalone subject that discards the RadioShack (or other) Quant.
+const CONTEXT_FILTERS=new Set('brand brands manufacturer manufacturers model models product products category categories price prices location locations store stores history founder founders founded ownership company companies specifications specs material materials feature features year years release releases service services'.split(' '));
+function scopedTerm(term,subject){
+ const choice=clean(term).slice(0,170),root=clean(subject).slice(0,170);
+ if(!choice||!root)return choice||root;
+ if(choice.toLowerCase()===root.toLowerCase())return root;
+ if(CONTEXT_FILTERS.has(choice.toLowerCase())||/^(brand|model|category|manufacturer|specification|product|store|owner|founder)\s*:/i.test(choice))return root+' '+choice;
+ return choice;
+}
+function selectionQueries(subject,terms){
+ return [...new Set(terms.map(term=>scopedTerm(term,subject)).filter(Boolean))].slice(0,8);
 }
 function sourceNotes(items,container){
  if(!container)return;
@@ -109,6 +127,28 @@ function show(kind,title,body,byTerm){
    result.append(detail);
   }
  }
+ if(kind==='compare'&&byTerm?.length){
+  const viewer=make('div','qdata-comparison-viewer');
+  viewer.setAttribute('role','region');viewer.setAttribute('aria-label','Side by side evidence comparison');viewer.tabIndex=0;
+  const table=make('table','qdata-comparison-table');
+  const head=make('thead'),headRow=make('tr');
+  for(const name of ['Selected subject','Research with original context','Source evidence','Evidence status'])headRow.append(make('th','',name));
+  head.append(headRow);table.append(head);
+  const rows=make('tbody');
+  for(const item of byTerm){
+   const tr=make('tr');
+   tr.append(make('th','',item.term),make('td','',item.query||item.term));
+   const src=make('td');
+   for(const evidence of item.sources.slice(0,2)){
+    const a=make('a','',evidence.title||evidence.url);a.href=evidence.url;a.target='_blank';a.rel='noopener noreferrer';src.append(a);
+    if(evidence.excerpt)src.append(make('small','',evidence.excerpt));
+   }
+   if(!item.sources.length)src.append(make('span','','No indexed evidence returned'));
+   tr.append(src,make('td','',item.sources.length?'Source snippets only; verify before concluding':'Unverified'));
+   rows.append(tr);
+  }
+  table.append(rows);viewer.append(table);result.insertBefore(viewer,result.children[2]||null);
+ }
  result.scrollIntoView({block:'nearest',behavior:'smooth'});
 }
 async function saveToCurrent(tokenId,entries,comparison){
@@ -136,9 +176,9 @@ async function saveToCurrent(tokenId,entries,comparison){
 async function extract(snapshot){
  const terms=selected();if(!terms.length)return;
  status('Extracting '+terms.length+' selected data item'+(terms.length===1?'':'s')+'…');
- const byTerm=await Promise.all(terms.map(async term=>({term,sources:await lookup(term)})));
+ const byTerm=await Promise.all(terms.map(async term=>({term,query:scopedTerm(term,snapshot.query),sources:await lookup(scopedTerm(term,snapshot.query))})));
  if(active!==snapshot)return;
- const entries=byTerm.map(x=>({value:x.term,originQuery:snapshot.query,sourceQuantId:snapshot.tokenId,
+ const entries=byTerm.map(x=>({value:x.term,sourceQuery:x.query,originQuery:snapshot.query,sourceQuantId:snapshot.tokenId,
   sources:x.sources.slice(0,3),status:x.sources.length?'indexed source extracts · not full-page verified':'selected term · source verification unavailable',
   extractedAt:new Date().toISOString()}));
  try{
@@ -160,9 +200,9 @@ function explanationText(value){
 async function compare(snapshot){
  const terms=selected();if(terms.length<2)return;
  status('Finding real sources for '+terms.length+' subjects…');
- const byTerm=await Promise.all(terms.map(async term=>({term,sources:await lookup(term)})));
+ const byTerm=await Promise.all(terms.map(async term=>({term,query:scopedTerm(term,snapshot.query),sources:await lookup(scopedTerm(term,snapshot.query))})));
  if(active!==snapshot)return;
- const evidences=byTerm.map(x=>({term:x.term,sources:x.sources.slice(0,3)}));
+ const evidences=byTerm.map(x=>({term:x.term,query:x.query,sources:x.sources.slice(0,3)}));
  const input=[
   'You are QuantaPhi Scholastic Data Comparison. Compare exactly these user-selected entries from the live yellow extraction index:',
   JSON.stringify(terms),
@@ -207,7 +247,7 @@ async function compare(snapshot){
 function build(snapshot,reader=false){
  const terms=selected();
  if(!terms.length)return;
- const combined=terms.join(' + ');
+ const combined=selectionQueries(snapshot.query,terms).join(' + ');
  const context='Build an interactive original website using these QuantaPhi selected extracted data topics: '+terms.join(', ')+'. Separate the material into reader introduction, individual evidence sections, comparisons and research trails. Include real source links, site navigation and original story cards with functional expand controls. Preserve the distinct subjects rather than a single giant paragraph.';
  const matchingComparison=!reader&&snapshot.lastComparison&&snapshot.lastComparison.terms.join('|')===terms.join('|');
  const extra=matchingComparison?snapshot.lastComparison.analysis:'';
@@ -240,10 +280,12 @@ function click(event){
  if(job==='clear'){snapshot.selected.clear();sync();status('Selection cleared.');return}
  if(job==='search'){
   const terms=selected();if(!terms.length)return;
-  const query=terms.join(' + ');
+  const queries=selectionQueries(snapshot.query,terms);
+  const query=queries.join(' + ');
   const destination=new URL('/',location.origin);
   destination.searchParams.set('q',query);
-  destination.searchParams.set('selectedSubjects',JSON.stringify(terms));
+  destination.searchParams.set('selectedSubjects',JSON.stringify(queries));
+  if(snapshot.tokenId)destination.searchParams.set('from',snapshot.tokenId);
   location.assign(destination.href);return;
  }
  if(job==='build'){build(snapshot);return}
@@ -302,7 +344,7 @@ function activate(query,sections,evidence){
  active.observer.observe(list,{childList:true,subtree:true});
  renderLinks();sync();
 }
-window.PhiScholasticData={activate,decorate:renderLinks};
+window.PhiScholasticData={activate,decorate:renderLinks,scopedTerm,selectionQueries};
 // A shared URL can launch search before a deferred file finishes loading.
 // Rehydrate the card if both research zones already exist on arrival.
 if(document.getElementById('overview')?.querySelector('.qzoneYellow')){
