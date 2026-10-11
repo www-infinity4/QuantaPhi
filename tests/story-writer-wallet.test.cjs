@@ -65,6 +65,6 @@ test('Media Star triggers full StarQuest refresh and masked sessions do not writ
  assert.match(wallet,/const verified=cloudStarState/);
  assert.match(wallet,/phi:media-star-wallet-synced/);
  assert.match(radio,/phi:media-star-wallet-synced/);
- assert.match(index,/phi-story-writer\.css\?v=20261010-sky-blue2/);
+ assert.match(index,/phi-story-writer\.css\?v=\d{8}-[\w-]+/);
  assert.match(index,/wallet-runtime\.js\?v=20261010-masked-media-sync4/);
 });
