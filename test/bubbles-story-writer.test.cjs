@@ -191,7 +191,7 @@ test('reply actions take notes and prepare work without sending unapproved robot
  };
  vm.runInNewContext(code,{document,window,localStorage,URLSearchParams,
   location:{search:'?embed=1&id=work-cards&role=github',origin:'https://quantaphi.org',pathname:'/bubbles.html'},
-  crypto:{randomUUID:()=>'saved-note'},navigator:{},fetch,setTimeout:()=>1,clearTimeout:()=>{}},{timeout:1500});
+  crypto:{randomUUID:()=>'saved-note'},navigator:{},fetch,AbortController,setTimeout:()=>1,clearTimeout:()=>{}},{timeout:1500});
  const get=(tag,txt)=>nodes.find(e=>e.tag===tag&&e.textContent===txt);
  const chatInput=nodes.find(e=>e.tag==='textarea'&&e.placeholder?.startsWith('Say something'));
  assert.ok(chatInput);
