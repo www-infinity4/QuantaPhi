@@ -20,7 +20,14 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - uses: android-actions/setup-android@v3
+      - name: Use hosted Android SDK (avoid deprecated sdkmanager tools package)
+        run: |
+          set -e
+          SDK="${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}"
+          echo "ANDROID_HOME=$SDK" >> "$GITHUB_ENV"
+          TOOL="$(find "$SDK/cmdline-tools" -name sdkmanager -type f | head -n 1)"
+          test -n "$TOOL"
+          "$TOOL" "platforms;android-35" "build-tools;35.0.0"
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
