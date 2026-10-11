@@ -217,8 +217,8 @@ test('personal episode-weighted curator includes Fred even if not followed and i
  assert.equal(retry.roll.spaceId,ids[0]);
  const fourth=await(await call('/v1/roll',tok,{rollId:'fred-radio-roll-next'})).json();
  assert.equal(fourth.roll.hostRange,1);
- const other=await(await call('/v1/hosts',other)).json();
- assert.equal(other.eligibleCount,0,'curator list must be owner-specific');
+ const otherLibrary=await(await call('/v1/hosts',other)).json();
+ assert.equal(otherLibrary.eligibleCount,0,'curator list must be owner-specific');
 });
 test('owner-reported unplayable Space is removed without changing global source status or other users',async()=>{
  const {call,db}=await fixture();
