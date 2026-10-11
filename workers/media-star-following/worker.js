@@ -186,6 +186,10 @@ async function handle(request,env){
    FROM space_episodes e JOIN space_hosts h ON h.x_user_id=e.host_user_id WHERE lower(h.handle)=lower(?) AND e.availability IN ('indexed','verified_replay') ORDER BY e.started_at DESC,e.space_id LIMIT 2000`).bind(handle).all();
    return out({handle,episodes:(rows.results||[]).map(x=>handle.toLowerCase()==='dotkrueger'?{...x,url:null,requiresOriginalUnlock:true}:x),count:(rows.results||[]).length});
   }
+  if(path==='/v1/history'&&request.method==='GET'){
+   const history=await env.DB.prepare('SELECT roll_id AS rollId,host_user_id AS hostId,space_id AS spaceId,host_roll AS hostRoll,host_range AS hostRange,episode_roll AS episodeRoll,episode_range AS episodeRange,created_at AS createdAt FROM space_rolls WHERE owner_id=? ORDER BY created_at DESC LIMIT 100').bind(owner).all();
+   return out({rolls:history.results||[],count:(history.results||[]).length});
+  }
   if(path==='/v1/roll'&&request.method==='POST'){
    const d=await request.json().catch(()=>({}));return out(await roll(env,owner,String(d.rollId||'')));
   }
