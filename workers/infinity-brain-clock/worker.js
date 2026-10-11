@@ -45,13 +45,47 @@ export class BrainClock extends DurableObject{
   const payout={status:'paid',...receipt,when:new Date().toISOString()};await this.ctx.storage.put(quant.id,{...quant,payout});return payout;
  }
  async settleWork(){
-  const index=await this.ctx.storage.get('job-quant-index')||[],payouts=[];
-  for(const item of index){const quant=await this.ctx.storage.get(item.id);if(!quant||quant.payout?.status==='paid')continue;
-   if(!quant.attempts?.some(a=>a.testsPassed&&a.commitSha))continue;
-   try{payouts.push({quantId:quant.id,...await this.payWork(quant)})}catch(e){payouts.push({quantId:quant.id,status:'pending',error:String(e.message).slice(0,200)})}
-   if(payouts.length>=3)break;
+  const index=await this.ctx.storage.get('job-quant-index')||[],payouts=[],now=Date.now();
+  let examined=0;
+  // Use a bounded scan, with a cooldown per failed payout, rather than repeatedly
+  // spending all three available attempts on the same broken receipt.
+  for(const item of index){
+   if(++examined>200||payouts.length>=3)break;
+   const quant=await this.ctx.storage.get(item.id);
+   if(!quant||quant.payout?.status==='paid')continue;
+   if(!quant.attempts?.some(a=>['committed_unverified','deployed_verified'].includes(a.status)&&a.testsPassed===true&&/^[a-f0-9]{40}$/.test(a.commitSha||'')))continue;
+   const key='earnings-retry:'+quant.id,previous=await this.ctx.storage.get(key);
+   if(previous?.retryAfter>now)continue;
+   try{
+    const result=await this.payWork(quant);
+    if(result.status==='awaiting_wallet_connection')break;
+    if(result.status==='paid')await this.ctx.storage.delete(key);
+    payouts.push({quantId:quant.id,...result});
+   }catch(e){
+    const error=String(e?.message||e).slice(0,200);
+    await this.ctx.storage.put(key,{error,when:now,retryAfter:now+300000});
+    await this.ctx.storage.put('bot-work-credit-error',{when:now,error,quantId:quant.id});
+    payouts.push({quantId:quant.id,status:'pending',error});
+   }
   }
   return payouts;
+ }
+ async earningsStatus(){
+  const index=await this.ctx.storage.get('job-quant-index')||[];
+  const recipient=await this.ctx.storage.get('bot-work-recipient');
+  const counts={recorded:index.length,paid:0,eligibleUnpaid:0,unverified:0,failedRetry:0};
+  const recent=[];
+  for(const item of index.slice(0,200)){
+   const quant=await this.ctx.storage.get(item.id);if(!quant)continue;
+   const valid=quant.attempts?.some(a=>['committed_unverified','deployed_verified'].includes(a.status)&&a.testsPassed===true&&/^[a-f0-9]{40}$/.test(a.commitSha||''));
+   if(quant.payout?.status==='paid')counts.paid++;
+   else if(valid)counts.eligibleUnpaid++;
+   else counts.unverified++;
+   const retry=await this.ctx.storage.get('earnings-retry:'+quant.id);
+   if(retry?.retryAfter>Date.now())counts.failedRetry++;
+   if(recent.length<12)recent.push({quantId:quant.id,repository:quant.repository,status:quant.payout?.status||(!valid?'not_earned':recipient?'awaiting_settlement':'awaiting_wallet_connection'),asset:quant.payout?.asset||null,retryError:retry?.error||null});
+  }
+  return {ok:true,recipientConnected:!!recipient,policy:{repair:'1 QUANT',completePage:'1 STARCOIN'},counts,recent,lastError:await this.ctx.storage.get('bot-work-credit-error')||null};
  }
  async emit(agent,to,kind,message,url){
   const entries=await this.ctx.storage.get('events')||[];
@@ -223,6 +257,7 @@ export class BrainClock extends DurableObject{
   return Response.json({ok:true});
  }
  async fetch(request){
+  if(new URL(request.url).pathname==='/earnings-status')return Response.json(await this.earningsStatus());
   if(new URL(request.url).pathname==='/earnings-connect'){
    const body=await request.json();if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(body.walletToken||''))return Response.json({ok:false,error:'wallet_connection_required'},{status:401});
    const response=await this.env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/state',{headers:{Authorization:'Bearer '+body.walletToken},signal:AbortSignal.timeout(15000)});
@@ -371,13 +406,13 @@ export default{
     return await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal'+path,{method:'POST',body:JSON.stringify(body)});
    }catch(e){return Response.json({ok:false,error:e.message},{status:e.status===413?413:401});}
   }
-  if(request.method!=='GET' ||!['/health','/activity/feed.json','/work/preview','/work/quants'].includes(path))return new Response('Not found',{status:404});
+  if(request.method!=='GET' ||!['/health','/activity/feed.json','/work/preview','/work/quants','/work/earnings/status'].includes(path))return new Response('Not found',{status:404});
   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
   if(!env.WRITER_OWNER_HASH||!token||await digest(token)!==env.WRITER_OWNER_HASH)
    return new Response('Not found',{status:404,headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':origins.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Vary':'Origin'}});
   const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
   await clock.fetch('https://clock.internal/start');
-  const r=await clock.fetch('https://clock.internal/'+(path==='/work/quants'?'quants?id='+encodeURIComponent(new URL(request.url).searchParams.get('id')||''):path==='/work/preview'?'preview?sha='+encodeURIComponent(new URL(request.url).searchParams.get('sha')||''):path.includes('feed')?'feed':'status'));
+  const r=await clock.fetch('https://clock.internal/'+(path==='/work/earnings/status'?'earnings-status':path==='/work/quants'?'quants?id='+encodeURIComponent(new URL(request.url).searchParams.get('id')||''):path==='/work/preview'?'preview?sha='+encodeURIComponent(new URL(request.url).searchParams.get('sha')||''):path.includes('feed')?'feed':'status'));
   return output(request,await r.json());
  }
 };

@@ -1,0 +1,31 @@
+name: Verified bot work earnings audit
+on:
+  pull_request:
+    paths:
+      - 'workers/infinity-brain-clock/**'
+      - 'workers/unified-wallet/**'
+      - 'robot-directions.js'
+      - 'test/bot-work-*.test.mjs'
+      - '.github/workflows/bot-work-earnings.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/infinity-brain-clock/**'
+      - 'workers/unified-wallet/**'
+      - 'robot-directions.js'
+      - 'test/bot-work-*.test.mjs'
+      - '.github/workflows/bot-work-earnings.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-receipts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check workers/infinity-brain-clock/worker.js
+      - run: node --check robot-directions.js
+      - run: node --test test/bot-work-credit.test.mjs test/bot-work-earnings-status.test.mjs test/bot-earnings-auto.test.mjs
