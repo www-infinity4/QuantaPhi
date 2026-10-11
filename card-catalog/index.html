@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phi Card Catalog · Choose, configure, and build</title>
+<meta name="description" content="Choose reusable Phi cards for your own website. Configure search, viewer, reader and creator tools without copying another site's database.">
+<link rel="canonical" href="https://quantaphi.org/card-catalog/">
+<link rel="stylesheet" href="./catalog.css?v=1">
+<script src="./catalog.js?v=1" defer></script>
+</head><body>
+<header class="mast">
+  <a href="/" class="home">← QuantaPhi</a>
+  <span class="overline">INFINITY · PHI CARD SYSTEM</span>
+  <h1>Build your website with cards.</h1>
+  <p>Search for an element, see what it does, adjust its behavior, and add it to your own site. Your site keeps its name, readers and data.</p>
+</header>
+<main>
+ <section class="workspace" aria-label="Card discovery and configuration">
+  <section class="catalog" aria-labelledby="catalog-title">
+   <h2 id="catalog-title">The element library</h2>
+   <label for="catalogSearch">Find a card</label>
+   <input id="catalogSearch" type="search" placeholder="Try search engine, story, radio, viewer…" autocomplete="off">
+   <label for="category">Category</label><select id="category"><option value="">All categories</option></select>
+   <p class="muted" id="count" role="status">Loading elements…</p>
+   <div id="cards" class="cards"></div>
+  </section>
+  <section class="configure" aria-labelledby="configure-title">
+   <h2 id="configure-title">Make it yours</h2>
+   <p class="muted" id="selectedHelp">Select a card to see the options and its actual readiness.</p>
+   <form id="configForm">
+    <label for="siteName">Your website name</label><input id="siteName" maxlength="60" placeholder="My Infinity Website" required>
+    <label for="siteOrigin">Your website address (optional)</label><input id="siteOrigin" type="url" placeholder="https://your-site.example">
+    <div id="fields"></div>
+    <button id="add" class="primary" type="submit" disabled>Add configured card</button>
+   </form>
+   <h3>My website cards <span id="numSelected">0</span></h3>
+   <div id="chosen" class="chosen"></div>
+   <div class="actions"><button id="export" type="button" disabled>Export website blueprint</button><button id="copy" type="button" disabled>Copy working embed</button></div>
+   <label for="snippet">Working card embed code</label><textarea id="snippet" rows="5" readonly placeholder="Select and add a working card to create code…"></textarea>
+   <p class="muted">Cards marked <strong>Adapter needed</strong> are registered components, not yet deployable embeds. Saved blueprints do not create databases or paid products until a securely authorized publisher provisions them.</p>
+  </section>
+ </section>
+ <section class="preview" aria-labelledby="preview-title">
+  <div class="preview-head"><h2 id="preview-title">Live card preview</h2><span id="previewState" class="muted">Choose a card</span></div>
+  <div id="previewBody" class="preview-body"><p>Pick Search Engine or Search Viewer to test the independent search and viewer components.</p></div>
+ </section>
+</main><footer>Phi Card Catalog · Components from QuantaPhi, WidgetPhi, Omni Phi and the wider Infinity system. Customer data does not copy the platform owner's ledger or library.</footer>
+</body></html>
