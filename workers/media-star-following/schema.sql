@@ -44,3 +44,17 @@ CREATE TABLE IF NOT EXISTS space_seen (
  owner_id TEXT NOT NULL,space_id TEXT NOT NULL,last_seen INTEGER NOT NULL,
  cycle INTEGER NOT NULL DEFAULT 1,PRIMARY KEY(owner_id,space_id)
 );
+
+-- Source discovery links are NOT verified playable episodes. These source
+-- indexes let a reviewer/authorized importer investigate each followed host.
+CREATE TABLE IF NOT EXISTS space_host_sources (
+ host_user_id TEXT NOT NULL REFERENCES space_hosts(x_user_id),
+ source_url TEXT NOT NULL,
+ source_kind TEXT NOT NULL CHECK(source_kind IN ('x_profile','public_archive')),
+ review_status TEXT NOT NULL DEFAULT 'discovery_only'
+ CHECK(review_status IN ('discovery_only','reviewed')),
+ last_checked INTEGER,
+ notes TEXT NOT NULL DEFAULT '',
+ PRIMARY KEY(host_user_id,source_url)
+);
+CREATE INDEX IF NOT EXISTS idx_space_sources_host ON space_host_sources(host_user_id);
