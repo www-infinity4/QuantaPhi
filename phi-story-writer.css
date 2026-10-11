@@ -28,3 +28,8 @@
 #phiStoryWriter .sw-history{padding:12px 14px}
 #phiStoryWriter :focus-visible{outline:3px solid #164e86;outline-offset:2px}
 @media(max-width:350px){#phiStoryWriter .sw-options{grid-template-columns:1fr}#phiStoryWriter .sw-actions{grid-template-columns:1fr}#phiStoryWriter .sw-actions #sw-star{grid-column:span 1}}
+
+#phiStoryWriter .sw-source-preview{display:block;width:100%;height:auto;max-height:310px;object-fit:contain;background:#fff;border:1px solid #8bb2d6;border-radius:11px;margin:9px 0}
+#phiStoryWriter .sw-source-preview[hidden],#phiStoryWriter .sw-original-photo[hidden],#phiStoryWriter .sw-original-caption[hidden]{display:none!important}
+#phiStoryWriter .sw-original-caption{margin:4px 0 9px;font-weight:800;color:#194b77}
+#phiStoryWriter #sw-source-note{margin-top:7px}
