@@ -1,0 +1,32 @@
+name: Media Star followed X Spaces
+on:
+  pull_request:
+    paths:
+      - 'following-spaces-radio.*'
+      - 'workers/media-star-following/**'
+      - 'test/media-star-following.test.cjs'
+      - '.github/workflows/media-star-following.yml'
+      - 'index.html'
+  push:
+    branches: [main]
+    paths:
+      - 'following-spaces-radio.*'
+      - 'workers/media-star-following/**'
+      - 'test/media-star-following.test.cjs'
+      - '.github/workflows/media-star-following.yml'
+      - 'index.html'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate Worker and website
+        run: |
+          node --check workers/media-star-following/worker.js
+          node --check following-spaces-radio.js
+          node --test test/media-star-following.test.cjs test/fred-catalog.test.cjs test/magoo-spaces.test.cjs
