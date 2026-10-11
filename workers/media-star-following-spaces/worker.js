@@ -8,7 +8,7 @@ const json=(request,value,status=200)=>{
 const bad=(error,status=400)=>Object.assign(new Error(error),{status});
 const clean=(v,max=150)=>String(v??'').replace(/\s+/g,' ').trim().slice(0,max);
 const shortId=x=>{const v=String(x||'');if(!/^[A-Za-z0-9:_-]{1,110}$/.test(v))throw bad('invalid_id');return v};
-const handle=x=>{const v=clean(x,30).replace(/^@/,'');return /^[A-Za-z0-9_]{1,15}$/.test(v)?v:null};
+const parseHandle=x=>{const v=clean(x,30).replace(/^@/,'');return /^[A-Za-z0-9_]{1,15}$/.test(v)?v:null};
 const spaceLink=value=>{
  try{const u=new URL(value);if(!['x.com','twitter.com','www.x.com','www.twitter.com'].includes(u.hostname))return null;
  const m=/^\/i\/spaces\/([A-Za-z0-9]{8,35})\/?$/.exec(u.pathname);return m?{spaceId:m[1],url:'https://x.com/i/spaces/'+m[1]}:null;}
@@ -61,7 +61,7 @@ async function importFollows(env,id,body){
  if(!Array.isArray(accounts)||accounts.length===0||accounts.length>1000)throw bad('following_list_required');
  const snapshot=shortId(body.snapshotId||crypto.randomUUID()),seen=new Set(),valid=[];
  for(const item of accounts){
-  const person=typeof item==='string'?{handle:item}:item||{},h=handle(person.handle);
+  const person=typeof item==='string'?{handle:item}:item||{},h=parseHandle(person.handle);
   if(!h)throw bad('invalid_follow_handle');
   const existing=person.xUserId?null:await env.DB.prepare('SELECT x_user_id FROM space_hosts WHERE LOWER(handle)=? LIMIT 1').bind(h.toLowerCase()).first();
   const userId=person.xUserId?shortId(person.xUserId):(existing?.x_user_id||'handle:'+h.toLowerCase());
