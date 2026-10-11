@@ -60,7 +60,7 @@ test('Fred next card requires user consent and a verified direct X Spaces link; 
  assert.match(js,/available\.filter\(e=>!old\.has\(e\.id\)\)/);
  assert.match(js,/!unlocked\.has\(next\.id\)&&!window\.confirm/);
  assert.match(js,/ledger\("\/v1\/spaces\/unlock","POST",\{episodeId:next\.id\}\)/);
- assert.match(js,/Buy next curated episode · 1 ★/);
+ assert.match(js,/Unlock next curated episode · 1 ★/);
  assert.match(js,/X may require sign-in or may not offer playback/);
  assert.match(js,/data\.charged===1/);
  assert.doesNotMatch(js,/if\(!next\.audioUrl\)/,'paid curation does not pretend to have local licensed audio');

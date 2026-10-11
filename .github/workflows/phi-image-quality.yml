@@ -12,6 +12,12 @@ on:
       - 'phi-page-ui.js'
       - 'test/phi-electric-ui.test.cjs'
       - 'infinite-book.css'
+      - 'infinite-book.js'
+      - 'phi-book-image-bridge.js'
+      - 'phi-book-illustrations.css'
+      - 'phi-story-writer.js'
+      - 'index.html'
+      - 'test/story-illustration-lettering.test.cjs'
       - 'workers/infinity-rogers/worker.js'
       - 'test/phi-image-quality.test.cjs'
       - 'test/phi-unlimited-generation.test.cjs'
@@ -27,6 +33,12 @@ on:
       - 'phi-page-ui.js'
       - 'test/phi-electric-ui.test.cjs'
       - 'infinite-book.css'
+      - 'infinite-book.js'
+      - 'phi-book-image-bridge.js'
+      - 'phi-book-illustrations.css'
+      - 'phi-story-writer.js'
+      - 'index.html'
+      - 'test/story-illustration-lettering.test.cjs'
       - 'workers/infinity-rogers/worker.js'
       - 'test/phi-image-quality.test.cjs'
       - 'test/phi-unlimited-generation.test.cjs'
@@ -43,4 +55,4 @@ jobs:
         run: |
           node --check fred-spaces-radio.js
           node --check phi-page-ui.js
-          node --test test/phi-image-quality.test.cjs test/phi-electric-ui.test.cjs test/phi-unlimited-generation.test.cjs
+          node --test test/phi-image-quality.test.cjs test/phi-electric-ui.test.cjs test/phi-unlimited-generation.test.cjs test/story-illustration-lettering.test.cjs

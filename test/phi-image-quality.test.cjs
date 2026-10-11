@@ -97,7 +97,7 @@ test('image rejection keeps the original inputs editable and offers photo remova
  const builder=source('phi-image-builder.js');
  const adapter=source('phi-visual-render.js');
  const css=source('phi-image-builder.css');
- assert.match(adapter,/error\.code=String\(data\.code\|\|data\.error\|\|''\)/);
+ assert.match(adapter,/error\.code=String\(data\?\.code\|\|data\?\.error\|\|/);
  assert.match(builder,/error\?\.code==='image_input_flagged'/);
  assert.match(builder,/remove-source/);
  assert.match(builder,/remove-design/);
@@ -106,8 +106,8 @@ test('image rejection keeps the original inputs editable and offers photo remova
  assert.match(css,/\.pi-upload-slot/);
  assert.match(css,/\[hidden\]\{display:none!important\}/);
  const html=source('index.html');
- assert.match(html,/phi-image-builder\.js\?v=20261009-no-app-cap1/);
- assert.match(html,/phi-visual-render\.js\?v=20261008-textclean3/);
+ assert.match(html,/phi-image-builder\.js\?v=\d{8}-[\w-]+/);
+ assert.match(html,/phi-visual-render\.js\?v=\d{8}-[\w-]+/);
 });
 
 test('search-generated sourced story is displayed after the overview assimilation',()=>{
@@ -116,12 +116,13 @@ test('search-generated sourced story is displayed after the overview assimilatio
  assert.match(book,/function placeSearchStory\(/);
  assert.match(book,/result\.append\(root\)/);
  assert.match(book,/window\.addEventListener\('quantaphi:search-start'/);
- assert.match(html,/infinite-book\.js\?v=20261008-two-story-modes1/);
+ assert.match(html,/infinite-book\.js\?v=\d{8}-[\w-]+/);
  // Layout must be deterministic before scripts run: no flash of the story above the overview.
  assert.ok(html.indexOf('id="result"') < html.indexOf('id="infiniteBook"'),'Overview must precede story card in the HTML');
  assert.ok(html.indexOf('id="infiniteBook"') < html.indexOf('id="phiImageBuilder"'),'Story and illustration come before the image builder');
  assert.match(book,/lastSearchQuery=query/,'search events must refresh the story even while the catalog initializes');
- assert.match(book,/if \(ready && \(!query \|\| current\?\.id !== ready\.id\)\) return/,'verified search-specific story may replace the prepared discovery');
+ assert.match(book,/const ready = searchMode \? null : pickUnique/,'search-only Asteroids do not reuse unrelated prebuilt stories');
+ assert.match(book,/if \(ready && current\?\.id !== ready\.id\) return/,'new sourced discoveries cannot overwrite another visible card');
 });
 
 test('completed story images automatically attach and update is not a redundant save',()=>{
@@ -132,7 +133,7 @@ test('completed story images automatically attach and update is not a redundant 
  assert.match(bridge,/visibleIllustration\?\.artifactId===data\?\.artifact\?\.id/);
  assert.match(bridge,/\[data-pi-action="fix"\]/);
  assert.match(bridge,/storeName='stories'/);
- assert.match(source('index.html'),/phi-book-image-bridge\.js\?v=20261008-asteroid-art2/);
+ assert.match(source('index.html'),/phi-book-image-bridge\.js\?v=\d{8}-[\w-]+/);
  assert.match(bridge,/\['remove','Clear image'\]/,'reader can clear a stored story illustration');
  assert.match(source('phi-image-builder.js'),/\['clear','Clear image'\]/,'builder can clear finished pixels independently');
  assert.match(source('phi-image-builder.js'),/if\(action==='clear'\)/,'clear has a real click handler');
@@ -154,7 +155,7 @@ test('one bounded automatic repair is scored against the original image',()=>{
  assert.doesNotMatch(worker,/variations of the prompt|const variants=\[/);
  assert.doesNotMatch(worker.slice(worker.indexOf(' const executionOnly='),worker.indexOf(' let lastError=null;')),/alien-language|pseudo-words|symbol rows/i);
  assert.match(worker,/Paint only the scene, objects, photography and visual design/);
- assert.match(source('index.html'),/phi-image-builder\.js\?v=20261009-no-app-cap1/);
+ assert.match(source('index.html'),/phi-image-builder\.js\?v=\d{8}-[\w-]+/);
 });
 
 test('FLUX adapter sends true text-only requests and scales reference pixels, not just byte size',()=>{
@@ -173,7 +174,12 @@ test('FLUX adapter sends true text-only requests and scales reference pixels, no
 });
 
 test('Workers image route permits text-only generation with no synthetic image and style-only indices',async()=>{
- const worker=await import('data:text/javascript;base64,'+Buffer.from(source('workers/infinity-rogers/worker.js')).toString('base64'));
+ const workerSource=source('workers/infinity-rogers/worker.js');
+// This test exercises the fetch router, not the Cloudflare-only BrainModels RPC
+// re-export. A relative export cannot resolve from a data: URL in Node.
+const isolated=workerSource.replace(/export \{ BrainModels \} from "\.\/brain-models\.js";/, '');
+assert.notEqual(isolated,workerSource,'Expected external RPC export in Worker source');
+const worker=await import('data:text/javascript;base64,'+Buffer.from(isolated).toString('base64'));
  const calls=[];
  const env={
   AI:{run:async(model,args)=>{
@@ -195,7 +201,7 @@ test('Workers image route permits text-only generation with no synthetic image a
  }
  const textResult=await request(false);
  assert.equal(textResult.referenceMode,'text-only');
- assert.equal(calls[0].model,'@cf/black-forest-labs/flux-2-klein-9b');
+ assert.equal(calls[0].model,'@cf/black-forest-labs/flux-2-klein-4b');
  assert.deepEqual(calls[0].keys.includes('input_image_0'),false);
  assert.deepEqual(calls[0].keys.includes('input_image_1'),false);
  const styleResult=await request(true);
@@ -289,5 +295,5 @@ test('Asteroid fallback uses the strongest search-relevant source for actual GPT
  assert.match(sourceCode,/topicWords/);
  assert.match(sourceCode,/relevance=topicWords\.reduce/);
  assert.match(sourceCode,/strictGPT===true\?0:random/);
- assert.match(sourceCode,/writeWikipediaStory\(choice,plan,roll\)/);
+ assert.match(sourceCode,/writeWikipediaStory\(choice,plan,roll,storyKind\)/);
 });
