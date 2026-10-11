@@ -85,3 +85,14 @@ CREATE TABLE IF NOT EXISTS space_playback_reports (
 );
 CREATE INDEX IF NOT EXISTS idx_space_playback_reports_owner
  ON space_playback_reports(owner_id,state);
+
+-- Personal radio settings. Weighted means an episode ticket wins first,
+-- so a 342-episode host naturally wins more often than a one-episode host.
+-- Only eligible indexed hosts participate; unfinished Magoo source cards don't.
+CREATE TABLE IF NOT EXISTS space_radio_preferences (
+ owner_id TEXT PRIMARY KEY,
+ selection_mode TEXT NOT NULL DEFAULT 'episodes_weighted'
+ CHECK(selection_mode IN ('episodes_weighted','equal_hosts')),
+ include_fred INTEGER NOT NULL DEFAULT 0 CHECK(include_fred IN (0,1)),
+ updated_at INTEGER NOT NULL
+);
