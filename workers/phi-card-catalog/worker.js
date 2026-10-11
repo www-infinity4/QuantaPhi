@@ -3,6 +3,7 @@ const OWN_ORIGIN='https://quantaphi.org';
 const PUBLISHABLE=new Set(['search-engine','search-viewer','reads-realms','asteroid','scholastic-reader','story-writer','image-builder','radio','media-card','code-workshop','website-builder','bubbles-ai','news-reader']);
 const now=()=>Date.now();
 const text=(v,n=160)=>String(v??'').replace(/\s+/g,' ').trim().slice(0,n);
+const safeLink=value=>{try{const u=new URL(value);return ['https:','http:'].includes(u.protocol)?u.href.slice(0,1800):''}catch{return''}};
 const failure=(reason,status=400)=>Object.assign(new Error(reason),{status});
 const json=(data,status=200,origin='')=>new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json;charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Access-Control-Allow-Origin':origin||OWN_ORIGIN,'Vary':'Origin'}});
 const publicJson=(data,status=200)=>{const r=json(data,status,'*');return r};
@@ -64,6 +65,18 @@ async function handle(request,env){
    await env.DB.prepare("INSERT INTO card_sites(id,owner_id,request_key,name,origin,slug,status,created_at) VALUES(?,?,?,?,?,?,'active',?)").bind(id,owner,key,name,origin||null,slug,stamp).run();
    return json({site:{id,name,origin:origin||null,slug},created:true},201);
   }
+  const publishMatch=/^\\/v1\\/sites\\/([a-zA-Z0-9_-]+)\\/stories\\/([a-zA-Z0-9_-]+)\\/publish$/.exec(path);
+  if(publishMatch&&request.method==='POST'){
+   const home=await site(env,idPart(publishMatch[1]),owner),storyId=idPart(publishMatch[2]),d=await body(request);
+   const reviewer=text(d.reviewedBy,100);
+   if(reviewer.length<3||d.editorialReviewed!==true)throw failure('editorial_review_required',403);
+   const draft=await env.DB.prepare("SELECT id,access,sources_json FROM card_stories WHERE id=? AND site_id=? AND editorial_status='draft'").bind(storyId,home.id).first();
+   if(!draft)throw failure('draft_not_found',404);
+   if(draft.access==='paid')throw failure('paid_settlement_not_connected',409);
+   if(JSON.parse(draft.sources_json).length===0&&d.documentedStory===true)throw failure('documented_story_needs_sources',422);
+   await env.DB.prepare("UPDATE card_stories SET editorial_status='published',reviewed_by=?,updated_at=? WHERE site_id=? AND id=? AND editorial_status='draft'").bind(reviewer,now(),home.id,storyId).run();
+   return json({ok:true,published:true,id:storyId});
+  }
   const siteMatch=/^\/v1\/sites\/([a-zA-Z0-9_-]+)(?:\/(cards|stories|events))?$/.exec(path);
   if(!siteMatch)return json({error:'not_found'},404);
   const home=await site(env,idPart(siteMatch[1]),owner),part=siteMatch[2];
@@ -80,13 +93,18 @@ async function handle(request,env){
    const packed=JSON.stringify(options);
    if(packed.length>3500)throw failure('card_options_too_large');
    if(cardId==='reads-realms'&&options.access==='paid')return json({error:'paid_settlement_not_connected'},409);
-   await env.DB.prepare('INSERT INTO card_instances(id,site_id,card_id,options_json,updated_at) VALUES(?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET options_json=excluded.options_json,updated_at=excluded.updated_at WHERE site_id=excluded.site_id').bind(instanceId,home.id,cardId,packed,now()).run();
+   const saved=await env.DB.prepare('INSERT INTO card_instances(id,site_id,card_id,options_json,updated_at) VALUES(?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET options_json=excluded.options_json,updated_at=excluded.updated_at WHERE site_id=excluded.site_id').bind(instanceId,home.id,cardId,packed,now()).run();
+   if(saved.meta?.changes===0)throw failure('card_instance_conflict',409);
    return json({ok:true,instanceId});
+  }
+  if(part==='stories'&&request.method==='GET'){
+   const records=await env.DB.prepare('SELECT id,title,body,sources_json,editorial_status,access,created_at FROM card_stories WHERE site_id=? ORDER BY created_at DESC LIMIT 50').bind(home.id).all();
+   return json({stories:(records.results||[]).map(x=>({id:x.id,title:x.title,body:x.body,sources:JSON.parse(x.sources_json),editorialStatus:x.editorial_status,access:x.access,createdAt:x.created_at}))});
   }
   if(part==='stories'&&request.method==='POST'){
    const d=await body(request),title=text(d.title,160),story=String(d.body||'').trim().slice(0,14000),id=makeId();
    if(title.length<3||story.length<25)throw failure('story_title_and_body_required');
-   const sources=(Array.isArray(d.sources)?d.sources:[]).slice(0,12).map(originURL).filter(Boolean);
+   const sources=(Array.isArray(d.sources)?d.sources:[]).slice(0,12).map(safeLink).filter(Boolean);
    const access=d.access==='paid'?'paid':'free',stamp=now();
    await env.DB.prepare("INSERT INTO card_stories(id,site_id,title,body,sources_json,editorial_status,access,reviewed_by,created_at,updated_at) VALUES(?,?,?,?,?,'draft',?,'',?,?)").bind(id,home.id,title,story,JSON.stringify(sources),access,stamp,stamp).run();
    return json({story:{id,title,editorialStatus:'draft',access},published:false},201);
@@ -96,7 +114,7 @@ async function handle(request,env){
    if(!['search','click','research'].includes(kind)||!q)throw failure('bad_research_event');
    const owned=await env.DB.prepare('SELECT id FROM card_instances WHERE site_id=? AND id=?').bind(home.id,instanceId).first();
    if(!owned)throw failure('card_not_in_site',404);
-   await env.DB.prepare('INSERT OR IGNORE INTO card_research_events(site_id,event_id,card_instance_id,kind,query_text,source_url,occurred_at) VALUES(?,?,?,?,?,?,?)').bind(home.id,eventId,instanceId,kind,q,originURL(d.url)||'',now()).run();
+   await env.DB.prepare('INSERT OR IGNORE INTO card_research_events(site_id,event_id,card_instance_id,kind,query_text,source_url,occurred_at) VALUES(?,?,?,?,?,?,?)').bind(home.id,eventId,instanceId,kind,q,safeLink(d.url)||'',now()).run();
    return json({ok:true,eventId});
   }
   return json({error:'route_not_supported'},404);
