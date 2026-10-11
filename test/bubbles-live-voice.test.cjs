@@ -35,7 +35,7 @@ function harness(){
  return {window,document,nodes,orb,requests,recognized,track};
 }
 const flush=async()=>{for(let i=0;i<8;i++)await Promise.resolve()};
-const result=s=>Object.assign([[{transcript:s}]],{isFinal:true});
+const result=s=>Object.assign([{transcript:s}],{isFinal:true});
 test('Bubbles orb enters visible continuous speech session after user gesture; no Talk press required',async()=>{
  const h=harness();assert.equal(h.recognized.length,0);
  h.orb.handlers.click();await flush();
