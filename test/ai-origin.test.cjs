@@ -1,6 +1,9 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
+// HTTP routing is independent of the Cloudflare-only private RPC entrypoint.
 const source=fs.readFileSync('workers/infinity-rogers/worker.js','utf8');
-const worker=import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+const rpcExport='export { BrainModels } from "./brain-models.js";';
+assert.equal(source.split(rpcExport).length,2);
+const worker=import('data:text/javascript;base64,'+Buffer.from(source.replace(rpcExport,'')).toString('base64'));
 test('QuantaPhi org and existing origins can reach the AI service',async()=>{
  const app=(await worker).default;
  for(const origin of ['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www-infinity4.github.io']){

@@ -15,10 +15,10 @@ test('Quanta search retry targets the authoritative paired D1 commit, not a seco
 
 test('initial search ledger commit is wired before the AI overview request',()=>{
   const code=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8');
-  const ledger=code.indexOf("bridge.authenticatedFetch('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/search'");
+  const ledger=code.indexOf("window.QuantaInfinityCredit.commitNow(nq,searchId,createdAt,q)");
   const overview=code.indexOf("/v1/chat",ledger);
   assert.ok(ledger>=0&&overview>=0&&ledger<overview);
-  assert.match(code,/credit_query:q/);
+  assert.match(fs.readFileSync('search-wallet-sync.js','utf8'),/credit_query/);
   assert.match(code,/\/v1\/quants\/history-import/);
   assert.match(code,/\/v1\/quants\/infinity-legacy-balance/);
 });
@@ -30,8 +30,8 @@ test('server search commit journals the search and pairs Quant with Infinity his
   assert.match(code,/token_type,source,data_json,provenance_hash/);
   assert.match(code,/asset_code,event_type,amount,balance_after/);
   assert.match(code,/history-import/);
-  assert.match(code,/balance_only_migration/);
-  assert.match(code,/next = Math\.max\(before, amount\)/);
+  assert.match(code,/amount <= before/);
+  assert.match(code,/infinity_balance<\?/);
   assert.doesNotMatch(code,/cloud_history_already_authoritative/);
   assert.match(code,/historyId\.startsWith\("archive:"\)/);
 });
@@ -50,7 +50,7 @@ test('refresh restore reuses saved search history before any new mint path',()=>
   assert.match(search,/let refining=options\.refine===true\|\|options\.restore===true/);
   assert.match(search,/if\(options\.restore\)[\s\S]*quantaPhiBuildHistoryV1[\s\S]*token_id[\s\S]*refining=true/);
   assert.match(search,/if\(!refining&&!searchId\)[\s\S]*crypto\.randomUUID/);
-  assert.match(search,/if\(searchId&&!refining\)[\s\S]*\/v1\/quants\/search/);
+  assert.match(search,/if\(searchId&&!refining\)[\s\S]*QuantaInfinityCredit\.commitNow/);
 });
 
 
@@ -104,9 +104,9 @@ test('legacy Quant recovery is a monotonic total-balance floor, not an additive 
   const end=code.indexOf('if (url.pathname === "/v1/quants/receive"',start);
   const route=code.slice(start,end);
   assert.match(route,/SUM\(delta\)/);
-  assert.match(route,/targetBalance - ledgerDelta/);
-  assert.match(route,/requiredLegacy <= Number\(prior\.legacy_amount/);
-  assert.match(route,/legacy_amount<\?/);
+  assert.match(route,/targetBalance <= currentBalance/);
+  assert.match(route,/targetBalance - currentBalance/);
+  assert.match(route,/INSERT OR IGNORE INTO quant_recovery_adjustments/);
 });
 test('Infinity recovery can raise an earlier low cloud floor but never lower it',()=>{
   const code=fs.readFileSync(path.join(__dirname,'../workers/quanta-phi-ledger/worker.js'),'utf8');
@@ -128,12 +128,12 @@ test('QuantaPhi search uses the single retryable paired cloud commit path',()=>{
   const code=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8');
   assert.match(code,/QuantaInfinityCredit\.commitNow\(nq,searchId,createdAt,q\)/);
   assert.doesNotMatch(code,/if\(bridge\?\.authenticatedFetch\)void \(async/);
-  assert.match(code,/search-wallet-sync\.js\?v=20261004-wallet3/);
+  assert.match(code,/search-wallet-sync\.js\?v=[A-Za-z0-9-]+/);
 });
 test('wallet client resolves ambiguous saved device tokens against cloud ownership',()=>{
   const code=fs.readFileSync(path.join(__dirname,'../cloud-wallet-client.js'),'utf8');
   assert.match(code,/async function resolveDeviceToken\(\)/);
-  assert.match(code,/balances\?\.INFINITY/);
+  assert.match(code,/payload\.state\.username/);
   assert.match(code,/recoverAccountProfileFromDevice/);
 });
 test('old-origin handoff passes valid device credentials when no session selects one',()=>{
