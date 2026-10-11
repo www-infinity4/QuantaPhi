@@ -41,6 +41,10 @@ let messages=keepChat?data(HISTORY,[]):[];
 if(!Array.isArray(messages))messages=[];
 messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerReady=false,showing=false;
+let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
+let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
+const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000})||null;
+
 function persistChat(){
  if(!keepChat)return false;
  return save(HISTORY,messages.slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)})));
@@ -206,7 +210,9 @@ function toggle(open){
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
-launcher.addEventListener('click',()=>toggle(!showing));launchCard.addEventListener('click',()=>toggle(true));close.addEventListener('click',()=>toggle(false));
+launcher.addEventListener('click',()=>{if(dragSuppressed){dragSuppressed=false;return}if(!voiceEnabled){void startVoice();return}toggle(!showing)});
+launchCard.addEventListener('click',()=>{toggle(true);if(!voiceEnabled)void startVoice()});
+close.addEventListener('click',()=>toggle(false));
 function extract(reply){
  let value=reply?.output_text??reply?.output??reply?.response??reply?.answer??reply?.content??reply?.message??'';
  if(Array.isArray(value))value=value.map(x=>x?.text||'').join('\n');
@@ -242,16 +248,132 @@ composer.addEventListener('submit',event=>{event.preventDefault();void sendMessa
 input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();void sendMessage(input.value)}});
 speak.addEventListener('click',()=>{config.voice=!config.voice;save(CONFIG,config);speak.textContent=config.voice?'🔊 Voice on':'🔇 Voice off';speak.setAttribute('aria-pressed',String(config.voice));if(!config.voice)try{speechSynthesis.cancel()}catch{}});
 speak.textContent=config.voice?'🔊 Voice on':'🔇 Voice off';speak.setAttribute('aria-pressed',String(Boolean(config.voice)));
-mic.addEventListener('click',()=>{
+// Bubbles is already in-session when the microphone has been allowed. There is
+// no call-start button, recording upload, or auto-open session without consent.
+function setOrbState(state){
+ launcher.dataset.state=state;
+ launcher.setAttribute('aria-label',voiceEnabled?'Bubbles AI · '+state+' · tap to view conversation':'Bubbles AI · touch to enable the microphone');
+}
+function pauseRecognition(){
+ if(!recognition)return;
+ const old=recognition;recognition=null;
+ old.onend=null;try{old.abort()}catch{try{old.stop()}catch{}}
+}
+function stopMeter(){
+ if(meterFrame&&window.cancelAnimationFrame)window.cancelAnimationFrame(meterFrame);
+ meterFrame=0;try{meterStream?.getTracks().forEach(track=>track.stop())}catch{}
+ meterStream=null;meterAnalyser=null;
+ try{audioContext?.close()}catch{}audioContext=null;
+ launcher.style.setProperty('--ba-energy','0');
+}
+function stopVoice(message){
+ voiceEnabled=false;voicePending='';
+ if(voiceRetry)clearTimeout(voiceRetry);voiceRetry=null;
+ pauseRecognition();stopMeter();
+ try{speechSynthesis.cancel()}catch{}
+ speaking=false;setOrbState('idle');mic.textContent='🎙 Enable listening';
+ mic.setAttribute('aria-pressed','false');
+ status.textContent=message||'Microphone muted. Touch Bubbles to reconnect.';
+}
+function showLevel(){
+ if(!voiceEnabled||!meterAnalyser)return;
+ const samples=new Uint8Array(meterAnalyser.fftSize);
+ meterAnalyser.getByteTimeDomainData(samples);
+ let power=0;for(let i=0;i<samples.length;i++){const v=(samples[i]-128)/128;power+=v*v}
+ const level=Math.min(1,Math.sqrt(power/samples.length)*7);
+ launcher.style.setProperty('--ba-energy',String(level.toFixed(3)));
+ if(!busy&&!speaking)setOrbState(level>.19?'hearing':'listening');
+ meterFrame=window.requestAnimationFrame?.(showLevel)||0;
+}
+function beginRecognition(){
  const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;
- if(!Recognition){status.textContent='Microphone dictation is not supported in this browser. You can type instead.';return}
- if(listening){try{listening.stop()}catch{}listening=null;return}
- const recognition=new Recognition();recognition.lang='en-US';recognition.interimResults=false;recognition.continuous=false;listening=recognition;mic.textContent='⏹ Stop';status.textContent='Listening after your tap…';
- recognition.onresult=event=>{const transcript=String(event.results?.[0]?.[0]?.transcript||'').trim();if(transcript){input.value=transcript;void sendMessage(transcript)}};
- recognition.onerror=event=>{status.textContent='Microphone: '+String(event.error||'unavailable')};
- recognition.onend=()=>{listening=null;mic.textContent='🎤 Talk'};
- try{recognition.start()}catch(error){listening=null;mic.textContent='🎤 Talk';status.textContent=String(error?.message||error)}
+ if(!voiceEnabled||recognition||speaking||document.visibilityState==='hidden'||!Recognition)return;
+ const r=new Recognition();recognition=r;listening=r;
+ r.lang='en-GB';r.continuous=true;r.interimResults=true;r.maxAlternatives=1;
+ r.onaudiostart=()=>{tries=0;setOrbState('listening')};
+ r.onsoundstart=()=>{if(!speaking)setOrbState('hearing')};
+ r.onresult=event=>{
+  const from=Number(event.resultIndex||0);
+  for(let i=from;i<(event.results?.length||0);i++){
+   const result=event.results[i],transcript=String(result?.[0]?.transcript||'').trim();
+   if(!transcript)continue;
+   if(!result.isFinal){if(!speaking){setOrbState('hearing');status.textContent='Hearing your voice · say Bubbles to address me.'}continue}
+   // Ignore the assistant's synthesized speech. Only addressed speech becomes a request.
+   if(speaking||!voiceGate)continue;
+   const turn=voiceGate.accept(transcript,Date.now());
+   if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
+   if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';setOrbState('listening');continue}
+   if(turn.type==='message'){
+    status.textContent='Heard you · responding…';
+    if(busy)voicePending=turn.text;
+    else void sendMessage(turn.text);
+   }
+  }
+ };
+ r.onerror=event=>{
+  const error=String(event.error||'unknown');
+  if(error==='not-allowed'||error==='service-not-allowed'||error==='audio-capture'){
+   stopVoice('Microphone unavailable: '+error+'. Use the keyboard or allow microphone access.');return;
+  }
+  if(error!=='no-speech')status.textContent='Speech recognition: '+error+'. Reconnecting if allowed.';
+ };
+ r.onend=()=>{
+  if(recognition!==r)return;
+  recognition=null;listening=null;
+  if(!voiceEnabled||speaking||document.visibilityState==='hidden')return;
+  if(voiceRetry)clearTimeout(voiceRetry);
+  voiceRetry=setTimeout(()=>{voiceRetry=null;beginRecognition()},Math.min(2500,300*Math.pow(1.5,Math.min(tries++,5))));
+ };
+ try{r.start();setOrbState('listening');status.textContent='Bubbles is listening. Say “Bubbles” and your request.'}
+ catch(error){recognition=null;listening=null;stopVoice('Speech recognition could not start: '+String(error?.message||error).slice(0,110))}
+}
+async function startVoice(){
+ if(voiceEnabled)return;
+ const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;
+ if(!Recognition||!voiceGate){toggle(true);status.textContent='Continuous speech recognition is not supported here. You can still type. An Android app is needed for other apps.';return}
+ if(!navigator.mediaDevices?.getUserMedia){toggle(true);status.textContent='This browser cannot request a microphone stream. Use the keyboard.';return}
+ try{
+  const stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
+  meterStream=stream;voiceEnabled=true;tries=0;voiceGate.reset();
+  const Ctx=window.AudioContext||window.webkitAudioContext;
+  if(Ctx&&window.requestAnimationFrame){
+   try{audioContext=new Ctx();const source=audioContext.createMediaStreamSource(stream);
+    meterAnalyser=audioContext.createAnalyser();meterAnalyser.fftSize=256;
+    source.connect(meterAnalyser);showLevel();
+   }catch{ /* Browser recognition still works without the amplitude analyser. */ }
+  }
+  mic.textContent='🔇 Mute Bubbles';mic.setAttribute('aria-pressed','true');
+  beginRecognition();
+ }catch(error){stopMeter();toggle(true);status.textContent='Microphone was not enabled: '+String(error?.name||error?.message||error).slice(0,130)}
+}
+mic.addEventListener('click',()=>{if(voiceEnabled)stopVoice();else void startVoice()});
+document.addEventListener?.('visibilitychange',()=>{
+ if(document.visibilityState==='hidden'&&voiceEnabled)stopVoice('Bubbles paused when this page went into the background. Touch the bubble to reconnect.');
 });
+window.addEventListener?.('pagehide',()=>{if(voiceEnabled)stopVoice()});
+// Drag the literal bubble across the viewport; distinguish tap from movement.
+launcher.addEventListener?.('pointerdown',event=>{
+ if(event.button!==undefined&&event.button!==0)return;
+ const rect=launcher.getBoundingClientRect?.();if(!rect)return;
+ orbDragging={x:event.clientX,y:event.clientY,left:rect.left,top:rect.top,moved:false};
+ launcher.setPointerCapture?.(event.pointerId);
+});
+launcher.addEventListener?.('pointermove',event=>{
+ if(!orbDragging)return;
+ const dx=event.clientX-orbDragging.x,dy=event.clientY-orbDragging.y;
+ if(Math.hypot(dx,dy)<9&&!orbDragging.moved)return;
+ orbDragging.moved=true;
+ const width=launcher.offsetWidth||57,height=launcher.offsetHeight||57;
+ const left=Math.max(4,Math.min(window.innerWidth-width-4,orbDragging.left+dx));
+ const top=Math.max(4,Math.min(window.innerHeight-height-4,orbDragging.top+dy));
+ if(embedded){
+  window.parent.postMessage({type:'quantaphi:bubbles:move',dx,dy},'*');
+ }else{
+  launcher.style.left=left+'px';launcher.style.top=top+'px';
+  launcher.style.right='auto';launcher.style.bottom='auto';
+ }
+});
+launcher.addEventListener?.('pointerup',()=>{if(orbDragging?.moved)dragSuppressed=true;orbDragging=false});
 function renderNotes(){
  noteList.replaceChildren();
  for(const note of notes.slice(0,8)){const box=create('div','ba-note');box.append(create('p','',note.text));const remove=create('button','ba-remove','Delete');remove.type='button';remove.addEventListener('click',()=>{notes=notes.filter(n=>n.id!==note.id);save(NOTES,notes);renderNotes()});box.append(remove);noteList.append(box)}
