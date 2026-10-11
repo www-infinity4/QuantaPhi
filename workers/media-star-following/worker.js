@@ -95,6 +95,35 @@ async function syncX(env,owner){
  if(!all.length)throw error('following_list_empty',409);
  return followImport(env,owner,all,'x_api_verified');
 }
+async function syncSpaceMetadata(env,owner){
+ // The X API may return only supported discoverable Spaces, not a full history
+ // or accessible replay audio. Import only ended Space IDs, marked indexed.
+ if(!env.X_OWNER_ID||!env.X_USER_ACCESS_TOKEN||owner!==env.X_OWNER_ID)throw error('x_account_not_connected',503);
+ const following=await env.DB.prepare("SELECT x_user_id AS id,handle FROM followed_hosts WHERE owner_id=? AND source='x_api_verified' AND active=1").bind(owner).all();
+ const hosts=(following.results||[]).filter(x=>/^[0-9]{1,22}$/.test(x.id));
+ if(!hosts.length)throw error('verified_following_sync_required',409);
+ const header={Authorization:'Bearer '+env.X_USER_ACCESS_TOKEN,Accept:'application/json'};
+ let indexed=0,rejected=0,attempted=0;
+ for(let offset=0;offset<hosts.length;offset+=25){
+  const chunk=hosts.slice(offset,offset+25);
+  const u=new URL('https://api.x.com/2/spaces/by/creator_ids');
+  u.searchParams.set('user_ids',chunk.map(x=>x.id).join(','));
+  u.searchParams.set('space.fields','creator_id,title,state,started_at,ended_at');
+  const res=await fetch(u,{headers:header,signal:AbortSignal.timeout(15000)});
+  if(!res.ok)throw error('x_spaces_api_'+res.status,502);
+  const payload=await res.json();
+  for(const sp of(payload.data||[])){
+   attempted++;if(!/^[A-Za-z0-9]{10,25}$/.test(sp.id||'')||sp.state!=='ended'){rejected++;continue}
+   const host=chunk.find(h=>h.id===sp.creator_id);if(!host){rejected++;continue}
+   const row=await env.DB.prepare('SELECT x_user_id FROM space_hosts WHERE lower(handle)=lower(?)').bind(host.handle).first();
+   if(!row){rejected++;continue}
+   const url='https://x.com/i/spaces/'+sp.id,title=safe(sp.title||'X Space '+sp.id,250);
+   const x=await env.DB.prepare("INSERT OR IGNORE INTO space_episodes(space_id,host_user_id,title,space_url,started_at,summary,source_type,availability,imported_at) VALUES(?,?,?,?,?,'','x_api','indexed',?)").bind(sp.id,row.x_user_id,title,url,safe(sp.started_at||sp.ended_at,45)||null,Date.now()).run();
+   indexed+=Number(x.meta?.changes||0);
+  }
+ }
+ return{hostsChecked:hosts.length,reportedSpaces:attempted,indexed,skipped:rejected,playabilityVerified:false,archiveCompletenessGuaranteed:false};
+}
 async function eligible(env,owner){
  const res=await env.DB.prepare(`SELECT f.handle,f.display_name AS name,h.x_user_id AS hostId,COUNT(e.space_id) AS count
  FROM followed_hosts f JOIN space_hosts h ON lower(h.handle)=lower(f.handle)
@@ -158,6 +187,7 @@ async function handle(request,env){
    const d=await request.json().catch(()=>({}));return out(await roll(env,owner,String(d.rollId||'')));
   }
   if(path==='/v1/following/sync'&&request.method==='POST')return out(await syncX(env,owner));
+  if(path==='/v1/spaces/sync'&&request.method==='POST')return out(await syncSpaceMetadata(env,owner));
   if(path==='/v1/following/import'&&request.method==='POST'){
    const raw=await request.text();if(raw.length>90000)throw error('import_limit_exceeded',413);
    const d=JSON.parse(raw);return out(await followImport(env,owner,d.following,'owner_import'));
