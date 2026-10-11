@@ -63,7 +63,8 @@ async function importFollows(env,id,body){
  for(const item of accounts){
   const person=typeof item==='string'?{handle:item}:item||{},h=handle(person.handle);
   if(!h)throw bad('invalid_follow_handle');
-  const userId=person.xUserId?shortId(person.xUserId):'handle:'+h.toLowerCase();
+  const existing=person.xUserId?null:await env.DB.prepare('SELECT x_user_id FROM space_hosts WHERE LOWER(handle)=? LIMIT 1').bind(h.toLowerCase()).first();
+  const userId=person.xUserId?shortId(person.xUserId):(existing?.x_user_id||'handle:'+h.toLowerCase());
   if(seen.has(userId))continue;seen.add(userId);
   valid.push({id:userId,handle:h,name:clean(person.name||h,100)});
  }
@@ -120,7 +121,8 @@ async function shuffle(env,id,body){
  }else{
   hostRange=hosts.length;hostRoll=1+drawIndex(hostRange);person=hosts[hostRoll-1];
   let list=(await env.DB.prepare("SELECT space_id,title,space_url,availability FROM space_episodes WHERE host_user_id=? AND availability IN ('indexed','verified_replay') ORDER BY space_id").bind(person.id).all()).results||[];
-  let unseen=new Set((await env.DB.prepare('SELECT space_id FROM space_seen WHERE owner_id=?').bind(id).all()).results.map(x=>x.space_id));
+  const existingSeen=(await env.DB.prepare('SELECT space_id FROM space_seen WHERE owner_id=?').bind(id).all()).results||[];
+  const unseen=new Set(existingSeen.map(x=>x.space_id));
   let pool=list.filter(e=>!unseen.has(e.space_id));
   if(!pool.length)pool=list;
   episodeRange=pool.length;episodeRoll=1+drawIndex(episodeRange);episode=pool[episodeRoll-1];
