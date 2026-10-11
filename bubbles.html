@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Bubbles AI · QuantaPhi</title>
+  <meta name="description" content="Program your own Bubbles AI specialist and speak with your floating voice assistant.">
+  <link rel="canonical" href="https://quantaphi.org/bubbles.html">
+  <link rel="stylesheet" href="/bubbles-ai.css?v=20261011-embed2">
+  <style>
+    html{min-height:100%;background:#150f26}
+    body{margin:0;min-height:100dvh;padding:15px 15px 100px;box-sizing:border-box;background:radial-gradient(circle at 80% 10%,#493083,#150f26 60%);font:15px/1.5 system-ui,sans-serif;color:#fff}
+    .bubbles-page{max-width:720px;margin:auto}
+    .bubbles-page>a{display:inline-block;color:#d2f1ff;margin:0 0 13px}
+    body.bubbles-embedded{background:transparent!important;padding:0!important;margin:0!important;height:100dvh!important;overflow:hidden}
+    body.bubbles-embedded .bubbles-page{display:none!important}
+    body.bubbles-embedded .ba-launcher{right:3px!important;bottom:3px!important}
+    body.bubbles-embedded .ba-panel{right:4px!important;bottom:4px!important;width:calc(100% - 8px)!important;height:calc(100% - 8px)!important;max-height:none;min-height:0!important}
+    body.bubbles-embedded .ba-tools{max-height:35%}
+  </style>
+  <script>
+    if(new URLSearchParams(location.search).get('embed')==='1')document.documentElement.classList.add('bubble-iframe');
+    document.addEventListener('DOMContentLoaded',()=>{
+      if(document.documentElement.classList.contains('bubble-iframe'))document.body.classList.add('bubbles-embedded');
+    });
+  </script>
+  <script defer src="/bubbles-ai.js?v=20261011-embed2"></script>
+</head>
+<body>
+  <main class="bubbles-page">
+    <a href="https://quantaphi.org/">← QuantaPhi</a>
+    <div id="bubblesAICard"></div>
+    <p>Bubbles uses the QuantaPhi Oracle AI service. Speech recognition and local notes depend on your browser permissions and storage settings.</p>
+  </main>
+</body>
+</html>
