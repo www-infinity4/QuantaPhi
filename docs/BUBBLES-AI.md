@@ -4,7 +4,7 @@ Bubbles AI is QuantaPhi's Oracle-powered messenger at https://quantaphi.org/bubb
 
 ## Put a Bubbles assistant on your page
 
-On the QuantaPhi Bubbles card, choose a role, name, and optional public instructions. Press **Create embed code** to copy a complete script tag into your own HTML. The generated code loads a small floating bubble from the canonical .org domain and expands a sandboxed iframe when clicked.
+On the QuantaPhi Bubbles card, choose a role, name, and optional public instructions. Press **Create embed code** to copy a complete script tag into your own HTML. The generated code loads a glass-like, audio-reactive floating bubble from the canonical .org domain and opens a sandboxed transcript/programming drawer when requested. A user gesture grants microphone permission once; while the page is active, saying “Bubbles” addresses the assistant without pressing Talk for every turn.
 
 Example (assign a distinct ID to every bubble):
 
@@ -28,11 +28,11 @@ Provider secrets must never appear in public page HTML, URLs, notes, or embed sn
 
 ## Verified embed message model
 
-The embed iframe sends only an open/closed resize event with type quantaphi:bubbles:size. The host loader requires the exact https://quantaphi.org origin and the specific iframe's window as event source. It receives no note text, AI conversation data, passwords or account tokens. Embedded widgets do not read the platform-owner work token.
+The embed iframe sends only open/closed resize events with type quantaphi:bubbles:size and small finite drag deltas with type quantaphi:bubbles:move. The host loader requires the exact https://quantaphi.org origin and the specific iframe's window as event source. It receives no note text, AI conversation data, passwords or account tokens. Embedded widgets do not read the platform-owner work token.
 
 ## Observer checklist
 
-Check that bubbles.html and bubbles-embed.js load with appropriate HTML and JS content, and the launcher opens and closes on Android without covering core navigation. Test voice-on/off, note storage and the keyboard fallback. Verify that unrelated message senders and origins cannot resize an embed, that different bubble IDs have separate storage, and that server-confirmed Robot Brain tickets are not called finished GitHub edits. No automatic StarCoin minting is wired to idle chat.
+Check that bubbles.html and bubbles-embed.js load with appropriate HTML and JS content, and the literal glass bubble moves on Android without covering core navigation. Test voice permission, wake phrase, consecutive follow-ups, background pause, mute command, microphone glow, note storage and keyboard fallback. Verify that unrelated message senders and origins cannot resize an embed, that different bubble IDs have separate storage, and that server-confirmed Robot Brain tickets are not called finished GitHub edits. No automatic StarCoin minting is wired to idle chat.
 
 ## Embedded visitor controls and private memory
 
@@ -41,3 +41,28 @@ Inside the floating chat, open **Program this bubble** to customize its role and
 AI replies offer **Save note** (a deliberate browser-local note), **Make work draft** (fills the reviewable Robot Brain field without sending anything), and **Read aloud** (an explicit playback button). The owner must separately approve any available Robot Brain submission. Third-party embeds have no owner submit control.
 
 Recent conversation history is **off by default**; enabling **Keep recent chat on this device** saves only the last 12 messages to local browser storage under the bubble ID. Turning it off deletes that local chat copy. **Clear chat** removes the current conversation while preserving separately saved private notes. The AI receives only the conversation context needed for the current response, not the private notes unless the user explicitly pastes them.
+
+## Voice-first Bubbles — October 11, 2026
+
+The floating orb is the primary interface. On a compatible browser, touch the
+orb to grant microphone permission, then say **“Bubbles, ...”**. Speech recognition
+continues while the page is visible. Non-addressed transcripts are dropped
+unless Bubbles is within a short 30-second follow-up conversation window.
+**“Bubbles go quiet”** releases browser audio resources. Closing the transcript
+drawer does **not** stop the authorized voice session. The orb's glow changes
+with measured microphone amplitude, and replies prefer an installed
+British-English voice. The existing Oracle Cloudflare chat route is reused.
+
+This uses Web Speech API support provided by the browser; speech recognition
+may use a remote speech provider. No microphone permission is requested
+automatically when a webpage loads. Background capture is stopped when the
+page becomes hidden; browsers cannot offer an overlay above unrelated apps.
+
+For a real cross-app overlay, the **native Android Bubbles companion project**
+lives in [android/bubbles-overlay/](../android/bubbles-overlay/README.md).
+Its Android foreground service requires explicit microphone, overlay and
+notification permissions, remains visibly indicated while active, has an
+ongoing stop notification, and calls the existing Oracle chat endpoint.
+This native project is an initial test build, not a completed production app
+or a replica of a proprietary GPT model. Provider access and tools require
+proper credentials and separately authorized adapters.
