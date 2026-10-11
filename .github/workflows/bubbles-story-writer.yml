@@ -1,0 +1,36 @@
+name: Bubbles and picture-led story regressions
+on:
+  pull_request:
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-ai.css'
+      - 'phi-story-writer.js'
+      - 'phi-story-writer.css'
+      - 'phi-visual-render.js'
+      - 'index.html'
+      - 'test/bubbles-story-writer.test.cjs'
+      - '.github/workflows/bubbles-story-writer.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-ai.css'
+      - 'phi-story-writer.js'
+      - 'phi-story-writer.css'
+      - 'phi-visual-render.js'
+      - 'index.html'
+      - 'test/bubbles-story-writer.test.cjs'
+      - '.github/workflows/bubbles-story-writer.yml'
+jobs:
+  bubbles-and-photo-stories:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check browser script syntax and behavior contracts
+        run: |
+          node --check bubbles-ai.js
+          node --check phi-story-writer.js
+          node --test test/bubbles-story-writer.test.cjs
