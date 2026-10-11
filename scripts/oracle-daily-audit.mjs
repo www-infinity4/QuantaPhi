@@ -13,7 +13,7 @@ async function inspectSource(){
  const html=await content('index.html'),card=await content('phi-scholastic-data.js');
  const css=await content('phi-scholastic-data.css'),purple=await content('phi-assimilation.js');
  for(const file of required){
-  if(!html.includes('/'+file))report('asset', 'high',file+' is missing from the page entrypoint');
+  if(!html.includes(file))report('asset', 'high',file+' is missing from the page entrypoint');
   try{execFileSync(process.execPath,['--check',file],{stdio:'pipe'})}
   catch(error){report('syntax','high',file+': '+String(error.stderr||error.message).slice(0,300))}
  }
