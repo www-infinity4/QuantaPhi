@@ -217,8 +217,8 @@ test('story-to-Phi links use a semantic index and the existing explicit QuantaPh
  const js=fs.readFileSync(path.join(__dirname,'..','infinite-book.js'),'utf8');
  const html=fs.readFileSync(path.join(__dirname,'..','index.html'),'utf8');
  const css=fs.readFileSync(path.join(__dirname,'..','phi-card-controls.css'),'utf8');
- assert.match(js,/link\.searchParams\.set\('q',indexedSearchTerms\(story\)\)/);
- assert.match(js,/link\.searchParams\.set\('storySummary'/);
+ assert.match(js,/link\.searchParams\.set\('q',indexedSearchTerms\(story\)\.slice\(0,110\)/);
+ assert.match(js,/link\.searchParams\.set\('story',story\.id\)/);
  assert.match(js,/go\.click\(\)/);
  assert.match(js,/window\.QuantaOpenSite\(target\)/);
  assert.match(html,/window\.QuantaOpenSite=openSite/);
