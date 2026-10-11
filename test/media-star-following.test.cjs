@@ -1,7 +1,6 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
-const {DatabaseSync}=require('node:sqlite'),{createHash,webcrypto}=require('node:crypto');
-globalThis.crypto=webcrypto;
+const {DatabaseSync}=require('node:sqlite'),{createHash}=require('node:crypto');
 const source=fs.readFileSync('workers/media-star-following/worker.js','utf8');
 const mod=import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 function d1(db){
