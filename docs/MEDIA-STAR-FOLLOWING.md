@@ -41,3 +41,35 @@ The root QuantaPhi page mounts `#followingSpacesRadio` after the Fred and Magoo 
 Node 24 integration tests: `node --test test/media-star-following.test.cjs test/fred-catalog.test.cjs test/magoo-spaces.test.cjs`, plus existing QuantaPhi wallet and news regressions.
 
 Security/rights: no audio rehosting, no entitlement bypass, no unverified payment credit, no scraping or automated private following access without the user's authorized X connection.
+
+## October 11 screenshot import and priority research
+The user supplied a screenshot of the **Following** tab from their X account.
+Six clearly readable handles were saved to their private Cloudflare followed
+catalog as `owner_import` with snapshot ID
+`x-screenshot-20261011-six-visible`: HodlMagoo, 1_isavedbygrace,
+Aequitas42, BankerWeimar, AMCDiamondHands, optionscalps. The screenshot is
+a **partial scrolling window**, not evidence that the user follows only six
+accounts, and does not reveal the user's exact X @handle.
+
+The public priority source index separately identifies **Aequitas42,
+GaryCardone and GrantCardone** as requested research targets. Aequitas is
+visible in the Following screenshot; the Cardone accounts are **not confirmed
+as followed by that screenshot**. The Cardones are not inserted into the
+owner's `followed_hosts` set solely on the basis of public search.
+
+The new `space_host_sources` table stores host-linked public archive/profile
+discovery URLs as `discovery_only` leads. These URLs do not go in
+`space_episodes`. Public Spaces host archives can include **appearances
+as speakers**, not necessarily recordings hosted by that profile; confirm the
+role and the complete original X Space ID before creating any episode.
+A source page being indexed, or an X Space URL being syntactically valid,
+cannot prove that a recording remains playable. Never synthesize missing
+Space IDs from truncated search-engine result URLs.
+
+Before claiming a complete live Following sync, resolve the actual account
+identifier through authorized X access and review the full paginated response.
+If X access is unavailable, only collect accounts that the user visibly
+supplies or explicitly confirms. No independent follow set is overwritten by
+a partial screenshot import. Each person is a logical partition in the shared
+D1 host/episode schema, not an unnecessary standalone Cloudflare account or
+new physically empty D1 database.

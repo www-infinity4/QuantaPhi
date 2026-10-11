@@ -3,7 +3,7 @@
 const root=document.getElementById('followingSpacesRadio');if(!root)return;
 const API='https://media-star-following-spaces.marvaseater.workers.dev';
 const item=(tag,cls,str)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(str!==undefined)e.textContent=str;return e};
-const state={following:[],hosts:[],choice:null,loading:false,notice:'Connect the existing wallet and sync your X following list. Fred stays highlighted separately.'};
+const state={following:[],hosts:[],featured:[],choice:null,loading:false,notice:'Connect the existing wallet and sync your X following list. Fred stays highlighted separately.'};
 let sessionRequest=null;
 async function token(){return String(await window.QuantaCloudConnection?.resolveDeviceToken?.()||'')}
 async function query(path,method='GET',data){
@@ -19,8 +19,8 @@ function link(url,label){const a=item('a','',label);a.href=url;a.target='_blank'
 async function refresh(){
  if(state.loading)return;
  state.loading=true;render();
- try{const [following,hosts]=await Promise.all([query('/v1/following'),query('/v1/hosts')]);
-  state.following=following.following||[];state.hosts=hosts.hosts||[];
+ try{const [following,hosts,featured]=await Promise.all([query('/v1/following'),query('/v1/hosts'),query('/v1/featured')]);
+  state.following=following.following||[];state.hosts=hosts.hosts||[];state.featured=featured.featured||[];
   state.notice=state.following.length+' followed accounts in this library · '+state.hosts.length+' with indexed Space links.';
  }catch(e){state.notice=String(e.message||e)}
  finally{state.loading=false;render()}
@@ -111,6 +111,32 @@ function render(){
  const featured=item('div','fsr-feature');
  featured.append(item('strong','','Featured · Fred Krueger'),item('p','','The original Fred Curio Spotlight stays highlighted, with its independent StarCoin unlocks.'));
  const fred=link('#fredSpacesRadio','Open Fred Media Star →');fred.target='_self';featured.append(fred);card.append(featured);
+ const priority=state.featured.filter(p=>p.handle.toLowerCase()!=='dotkrueger');
+ if(priority.length){
+  const chosen=item('section','fsr-feature fsr-priority');
+  chosen.append(item('strong','','Priority Spaces · Aequitas & Cardones'),
+   item('p','','Each person has a separate host index. Public archive pages are research leads; only exact X Space links enter the shuffle.'));
+  for(const p of priority){
+   const row=item('div','fsr-source');
+   row.append(item('strong','',p.name+' · @'+p.handle),
+     item('small','',p.episodes+' indexed direct X Spaces'));
+   if(p.archiveUrl){row.append(link(p.archiveUrl,'Browse public Spaces archive ↗'))}
+   else{row.append(link('https://x.com/'+p.handle,'Open original X profile ↗'))}
+   chosen.append(row);
+  }
+  card.append(chosen);
+ }
+ if(state.following.length){
+  const following=item('section','fsr-following');
+  following.append(item('h3','','My followed accounts · '+state.following.length));
+  for(const person of state.following){
+   const row=item('div','fsr-follow-row');
+   const display=item('div','');display.append(item('strong','',person.name+' · @'+person.handle),
+    item('small','',Number(person.episodes||0)+' indexed X Spaces · '+(person.source==='x_api_verified'?'X-verified following':'Imported following')));
+   row.append(display,link('https://x.com/'+person.handle,'View X profile ↗'));following.append(row);
+  }
+  card.append(following);
+ }
  const counts=item('div','fsr-grid');
  const followed=item('div','fsr-stat');followed.append(item('strong','',String(state.following.length)),item('small','','Followed accounts imported'));
  const eligible=item('div','fsr-stat');eligible.append(item('strong','',String(state.hosts.length)),item('small','','Accounts with indexed Spaces'));
