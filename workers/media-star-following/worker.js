@@ -101,7 +101,7 @@ async function syncX(env,owner){
   }
   if(all.length>500)throw error('following_limit_exceeded',409);
   const next=data.meta?.next_token||'';
-  if(next===cursor)throw error('x_pagination_loop',502);
+  if(next&&next===cursor)throw error('x_pagination_loop',502);
   cursor=next;pages++;
  }while(cursor&&pages<12);
  if(cursor)throw error('following_pagination_incomplete',502);
@@ -204,7 +204,7 @@ async function handle(request,env){
    if(raw.length>1024)throw error('request_too_large',413);
    let data;try{data=JSON.parse(raw)}catch{throw error('invalid_json')}
    const claimed=await declareAccount(env,owner,data?.handle);
-   return out({account:claimed,verifiedByX:false,followListSynced:false});
+   return out({account:claimed,verifiedByX:claimed.verification==='x_api_verified',followListSynced:false});
   }
   if(path==='/v1/following'&&request.method==='GET'){
    const r=await env.DB.prepare(`SELECT f.handle,f.display_name AS name,f.source,COUNT(DISTINCT e.space_id) AS episodes
