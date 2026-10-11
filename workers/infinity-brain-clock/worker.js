@@ -332,6 +332,25 @@ export class BrainClock extends DurableObject{
   }finally{this.running=false;await this.ctx.storage.setAlarm(Date.now()+delay);}
  }
 }
+
+// Source handoffs contain up to 12 bounded files plus patch/test evidence.
+// Keep routine runner messages small; only authenticated source stages use this budget.
+export async function readRunnerBody(request, pathname){
+ const limit=['/runner/build','/runner/engine-review','/runner/arbitrate'].includes(pathname)?3*1024*1024:160000;
+ const tooLarge=()=>Object.assign(new Error('runner_body_too_large'),{status:413});
+ if(Number(request.headers.get('Content-Length')||0)>limit)throw tooLarge();
+ const reader=request.body?.getReader();if(!reader)return '';
+ const chunks=[];let size=0;
+ try{
+  for(;;){const {done,value}=await reader.read();if(done)break;size+=value.byteLength;
+   if(size>limit){await reader.cancel();throw tooLarge();}chunks.push(value);
+  }
+ }finally{reader.releaseLock();}
+ const bytes=new Uint8Array(size);let offset=0;
+ for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.byteLength;}
+ return new TextDecoder().decode(bytes);
+}
+
 export default{
  async scheduled(event,env){await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/start');},
  async fetch(request,env){
@@ -347,11 +366,10 @@ export default{
   if(request.method==='POST' && ['/runner/claim','/runner/event','/runner/result','/runner/quant-receipt','/runner/quant-audit','/runner/propose','/runner/review','/runner/preview','/runner/plan','/runner/build','/runner/engine-review','/runner/arbitrate','/runner/capability'].includes(path)){
    try{
     const identity=await authenticate(request);
-    if(Number(request.headers.get('Content-Length')||0)>160000)return new Response('Body too large',{status:413});
-    const text=await request.text();if(text.length>160000)return new Response('Body too large',{status:413});
+    const text=await readRunnerBody(request,path);
     const body=JSON.parse(text);body.runId=identity.run_id;body.runnerRepository=identity.repository;
     return await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal'+path,{method:'POST',body:JSON.stringify(body)});
-   }catch(e){return Response.json({ok:false,error:e.message},{status:401});}
+   }catch(e){return Response.json({ok:false,error:e.message},{status:e.status===413?413:401});}
   }
   if(request.method!=='GET' ||!['/health','/activity/feed.json','/work/preview','/work/quants'].includes(path))return new Response('Not found',{status:404});
   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
