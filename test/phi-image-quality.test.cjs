@@ -173,7 +173,12 @@ test('FLUX adapter sends true text-only requests and scales reference pixels, no
 });
 
 test('Workers image route permits text-only generation with no synthetic image and style-only indices',async()=>{
- const worker=await import('data:text/javascript;base64,'+Buffer.from(source('workers/infinity-rogers/worker.js')).toString('base64'));
+ const workerSource=source('workers/infinity-rogers/worker.js');
+// This test exercises the fetch router, not the Cloudflare-only BrainModels RPC
+// re-export. A relative export cannot resolve from a data: URL in Node.
+const isolated=workerSource.replace(/export \{ BrainModels \} from "\.\/brain-models\.js";/, '');
+assert.notEqual(isolated,workerSource,'Expected external RPC export in Worker source');
+const worker=await import('data:text/javascript;base64,'+Buffer.from(isolated).toString('base64'));
  const calls=[];
  const env={
   AI:{run:async(model,args)=>{
