@@ -139,43 +139,87 @@ async function syncSpaceMetadata(env,owner){
  }
  return{hostsChecked:hosts.length,reportedSpaces:attempted,indexed,skipped:rejected,playabilityVerified:false,archiveCompletenessGuaranteed:false};
 }
-async function eligible(env,owner){
- const res=await env.DB.prepare(`SELECT f.handle,f.display_name AS name,h.x_user_id AS hostId,COUNT(e.space_id) AS count
- FROM followed_hosts f JOIN space_hosts h ON lower(h.handle)=lower(f.handle)
+
+async function preferences(env,owner){
+ const row=await env.DB.prepare('SELECT selection_mode AS mode,include_fred AS includeFred FROM space_radio_preferences WHERE owner_id=?').bind(owner).first();
+ return {mode:row?.mode||'equal_hosts',includeFred:!!row?.includeFred};
+}
+async function eligible(env,owner,opts){
+ // All curated episodes are indexed original-source links. Missing host
+ // catalogs and explicitly reported dead links have zero raffle tickets.
+ const sql = \`SELECT h.x_user_id AS hostId,h.handle,h.display_name AS name,
+ COUNT(e.space_id) AS total,
+ SUM(CASE WHEN sn.space_id IS NULL THEN 1 ELSE 0 END) AS unseen
+ FROM space_hosts h
  JOIN space_episodes e ON e.host_user_id=h.x_user_id AND e.availability IN ('indexed','verified_replay')
- WHERE f.owner_id=? AND f.active=1 GROUP BY f.handle,h.x_user_id ORDER BY lower(f.handle)`).bind(owner).all();
- return res.results||[];
+ LEFT JOIN followed_hosts f ON lower(f.handle)=lower(h.handle) AND f.owner_id=? AND f.active=1
+ LEFT JOIN space_playback_reports dead ON dead.space_id=e.space_id AND dead.owner_id=? AND dead.state='unavailable'
+ LEFT JOIN space_seen sn ON sn.space_id=e.space_id AND sn.owner_id=?
+ WHERE (f.owner_id IS NOT NULL OR (lower(h.handle)='dotkrueger' AND ?=1))
+ AND dead.space_id IS NULL
+ GROUP BY h.x_user_id,h.handle,h.display_name ORDER BY lower(h.handle)\`;
+ const q=await env.DB.prepare(sql).bind(owner,owner,owner,opts.includeFred?1:0).all();
+ return (q.results||[]).map(x=>({...x,total:Number(x.total),unseen:Number(x.unseen)})).filter(x=>x.total>0);
 }
 async function roll(env,owner,rollId){
  if(!/^[A-Za-z0-9_-]{8,100}$/.test(rollId))throw error('roll_id_required');
  const prior=await env.DB.prepare('SELECT r.host_roll AS hostRoll,r.host_range AS hostRange,r.episode_roll AS episodeRoll,r.episode_range AS episodeRange,e.title,e.space_url AS url,h.handle,h.display_name AS name,e.availability,e.space_id AS spaceId FROM space_rolls r JOIN space_episodes e ON e.space_id=r.space_id JOIN space_hosts h ON h.x_user_id=r.host_user_id WHERE r.owner_id=? AND r.roll_id=?').bind(owner,rollId).first();
  if(prior){
   if(prior.handle.toLowerCase()==='dotkrueger'){prior.url=null;prior.requiresOriginalUnlock=true;prior.curatedBy='fred-spaces-ledger'}
-  return{roll:prior,reused:true};
+  return {roll:prior,reused:true};
  }
- const hosts=await eligible(env,owner);if(!hosts.length)throw error('no_indexed_spaces_for_following',404);
- // Each eligible followed host gets precisely one ticket. A host with 33 Spaces
- // is not 33 times more likely to win the first host roll.
- const hostIndex=randBelow(hosts.length),host=hosts[hostIndex];
- const records=await env.DB.prepare(`SELECT e.space_id AS spaceId,e.title,e.space_url AS url,e.availability,e.started_at AS date
- FROM space_episodes e WHERE e.host_user_id=? AND e.availability IN ('indexed','verified_replay')
- ORDER BY e.started_at DESC,e.space_id`).bind(host.hostId).all();
- const episodes=records.results||[];
- if(!episodes.length)throw error('host_has_no_episodes',404);
- const seen=await env.DB.prepare('SELECT space_id AS id FROM space_seen WHERE owner_id=? AND space_id IN (SELECT space_id FROM space_episodes WHERE host_user_id=?)').bind(owner,host.hostId).all();
- const used=new Set((seen.results||[]).map(x=>x.id));
- let pool=episodes.filter(x=>!used.has(x.spaceId));
- if(!pool.length){await env.DB.prepare('DELETE FROM space_seen WHERE owner_id=? AND space_id IN (SELECT space_id FROM space_episodes WHERE host_user_id=?)').bind(owner,host.hostId).run();pool=episodes;}
- const chosenIndex=randBelow(pool.length),e=pool[chosenIndex];
- const ts=Date.now();
- // This persisted draw ensures repeat requests do not reshuffle the result.
- const batch=await env.DB.batch([
-  env.DB.prepare('INSERT OR IGNORE INTO space_rolls(owner_id,roll_id,host_user_id,space_id,host_roll,host_range,episode_roll,episode_range,created_at) VALUES(?,?,?,?,?,?,?,?,?)').bind(owner,rollId,host.hostId,e.spaceId,hostIndex+1,hosts.length,chosenIndex+1,pool.length,ts),
+ const opts=await preferences(env,owner);
+ let hosts=await eligible(env,owner,opts);
+ if(!hosts.length)throw error('no_indexed_spaces_for_following',404);
+ // Avoid repeats across the entire eligible playlist, rather than resetting
+ // the first host while unplayed episodes remain with other followed hosts.
+ if(!hosts.some(h=>h.unseen>0)){
+  await env.DB.prepare('DELETE FROM space_seen WHERE owner_id=? AND space_id IN (SELECT e.space_id FROM space_episodes e JOIN space_hosts h ON e.host_user_id=h.x_user_id WHERE e.availability IN (\'indexed\',\'verified_replay\'))').bind(owner).run();
+  hosts=await eligible(env,owner,opts);
+ }
+ const available=hosts.filter(h=>h.unseen>0);
+ if(!available.length)throw error('no_unplayed_episodes',409);
+ let chosenHost;
+ if(opts.mode==='episodes_weighted'){
+  // Every eligible, unseen episode contributes one ticket.
+  // 342 Fred entries against 1 entry elsewhere: Fred has 342/343 chance.
+  const tickets=available.reduce((sum,h)=>sum+h.unseen,0);
+  const winning=randBelow(tickets);let cursor=0;
+  for(const h of available){cursor+=h.unseen;if(winning<cursor){chosenHost=h;break}}
+ }else{
+  chosenHost=available[randBelow(available.length)];
+ }
+ const hostIndex=hosts.findIndex(h=>h.hostId===chosenHost.hostId);
+ const recorded=await env.DB.prepare(\`SELECT e.space_id AS spaceId,e.title,e.space_url AS url,e.availability,e.started_at AS date
+ FROM space_episodes e
+ LEFT JOIN space_seen sn ON sn.owner_id=? AND sn.space_id=e.space_id
+ LEFT JOIN space_playback_reports dead ON dead.owner_id=? AND dead.space_id=e.space_id AND dead.state='unavailable'
+ WHERE e.host_user_id=? AND e.availability IN ('indexed','verified_replay') AND sn.space_id IS NULL AND dead.space_id IS NULL
+ ORDER BY e.started_at DESC,e.space_id\`).bind(owner,owner,chosenHost.hostId).all();
+ const episodes=recorded.results||[];
+ if(!episodes.length)throw error('host_has_no_unplayed_episodes',409);
+ const episodeIndex=randBelow(episodes.length),e=episodes[episodeIndex],ts=Date.now();
+ const receipt=await env.DB.batch([
+  env.DB.prepare('INSERT OR IGNORE INTO space_rolls(owner_id,roll_id,host_user_id,space_id,host_roll,host_range,episode_roll,episode_range,created_at) VALUES(?,?,?,?,?,?,?,?,?)').bind(owner,rollId,chosenHost.hostId,e.spaceId,hostIndex+1,hosts.length,episodeIndex+1,episodes.length,ts),
   env.DB.prepare('INSERT INTO space_seen(owner_id,space_id,last_seen,cycle) VALUES(?,?,?,1) ON CONFLICT(owner_id,space_id) DO UPDATE SET last_seen=excluded.last_seen,cycle=cycle+1').bind(owner,e.spaceId,ts)
  ]);
- // The draw slot is position among the currently unseen episodes. For 33 new
- // episodes, the second roll has the exact 1-33 range.
- return{roll:{hostRoll:hostIndex+1,hostRange:hosts.length,episodeRoll:chosenIndex+1,episodeRange:pool.length,handle:host.handle,name:host.name,spaceId:e.spaceId,title:e.title,url:host.handle.toLowerCase()==='dotkrueger'?null:e.url,availability:e.availability,requiresOriginalUnlock:host.handle.toLowerCase()==='dotkrueger',curatedBy:host.handle.toLowerCase()==='dotkrueger'?'fred-spaces-ledger':null},reused:false};
+ if(receipt[0]?.meta?.changes===0)return roll(env,owner,rollId);
+ const fred=chosenHost.handle.toLowerCase()==='dotkrueger';
+ return {roll:{hostRoll:hostIndex+1,hostRange:hosts.length,episodeRoll:episodeIndex+1,episodeRange:episodes.length,handle:chosenHost.handle,name:chosenHost.name,spaceId:e.spaceId,title:e.title,url:fred?null:e.url,availability:e.availability,requiresOriginalUnlock:fred,curatedBy:fred?'fred-spaces-ledger':null},reused:false,
+ selectionMode:opts.mode,remainingUnplayed:available.reduce((n,h)=>n+h.unseen,0)-1};
+}
+async function playbackReport(env,owner,body){
+ if(!body||!['played','unavailable'].includes(body.state))throw error('invalid_playback_state');
+ const id=String(body.spaceId||'');
+ if(!/^[A-Za-z0-9]{10,25}$/.test(id))throw error('invalid_space_id');
+ const opts=await preferences(env,owner);
+ const record=await env.DB.prepare(\`SELECT e.space_id FROM space_episodes e
+ JOIN space_hosts h ON h.x_user_id=e.host_user_id
+ LEFT JOIN followed_hosts f ON f.owner_id=? AND f.active=1 AND lower(f.handle)=lower(h.handle)
+ WHERE e.space_id=? AND (f.owner_id IS NOT NULL OR (lower(h.handle)='dotkrueger' AND ?=1))\`).bind(owner,id,opts.includeFred?1:0).first();
+ if(!record)throw error('recording_not_in_curated_library',404);
+ await env.DB.prepare("INSERT INTO space_playback_reports(owner_id,space_id,state,reported_at) VALUES(?,?,?,?) ON CONFLICT(owner_id,space_id) DO UPDATE SET state=excluded.state,reported_at=excluded.reported_at").bind(owner,id,body.state,Date.now()).run();
+ return {ok:true,spaceId:id,state:body.state,globalPlaybackVerified:false};
 }
 async function handle(request,env){
  const url=new URL(request.url),path=url.pathname;
@@ -225,6 +269,14 @@ async function handle(request,env){
    FROM space_episodes e JOIN space_hosts h ON h.x_user_id=e.host_user_id WHERE lower(h.handle)=lower(?) AND e.availability IN ('indexed','verified_replay') ORDER BY e.started_at DESC,e.space_id LIMIT 2000`).bind(handle).all();
    return out({handle,episodes:(rows.results||[]).map(x=>handle.toLowerCase()==='dotkrueger'?{...x,url:null,requiresOriginalUnlock:true}:x),count:(rows.results||[]).length});
   }
+  if(path==='/v1/radio/preferences'&&request.method==='GET')return out(await preferences(env,owner));
+  if(path==='/v1/radio/preferences'&&request.method==='POST'){
+   const d=await request.json().catch(()=>({}));
+   if(!['equal_hosts','episodes_weighted'].includes(d.mode)||typeof d.includeFred!=='boolean')throw error('invalid_radio_preferences');
+   await env.DB.prepare('INSERT INTO space_radio_preferences(owner_id,selection_mode,include_fred,updated_at) VALUES(?,?,?,?) ON CONFLICT(owner_id) DO UPDATE SET selection_mode=excluded.selection_mode,include_fred=excluded.include_fred,updated_at=excluded.updated_at').bind(owner,d.mode,d.includeFred?1:0,Date.now()).run();
+   return out(await preferences(env,owner));
+  }
+  if(path==='/v1/playback/report'&&request.method==='POST')return out(await playbackReport(env,owner,await request.json().catch(()=>({}))));
   if(path==='/v1/history'&&request.method==='GET'){
    const history=await env.DB.prepare('SELECT roll_id AS rollId,host_user_id AS hostId,space_id AS spaceId,host_roll AS hostRoll,host_range AS hostRange,episode_roll AS episodeRoll,episode_range AS episodeRange,created_at AS createdAt FROM space_rolls WHERE owner_id=? ORDER BY created_at DESC LIMIT 100').bind(owner).all();
    return out({rolls:history.results||[],count:(history.results||[]).length});
