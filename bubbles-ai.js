@@ -7,7 +7,11 @@ if(!host)return;
 const AI='https://infinity-rogers.marvaseater.workers.dev/v1/chat';
 const TICKETS='https://infinity-work-tickets.marvaseater.workers.dev';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
-const NOTES='quantaphi:bubbles:notes:v1',CONFIG='quantaphi:bubbles:config:v1';
+const params=new URLSearchParams(location.search);
+const embedded=params.get('embed')==='1'&&window.parent!==window;
+const bubbleId=embedded?(String(params.get('id')||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,48)||'embedded'):'';
+const NOTES='quantaphi:bubbles:notes:v1'+(bubbleId?':'+bubbleId:'');
+const CONFIG='quantaphi:bubbles:config:v1'+(bubbleId?':'+bubbleId:'');
 const ROLES={
  assistant:{name:'Assistant',prompt:'Help with research, planning and everyday work. Be precise about what you have and have not done.'},
  singer:{name:'Singer & songwriter',prompt:'Help compose original songs, melodies described in words, verses and vocal practice. Speaking aloud is not singing an actual musical performance. Do not imitate a specific real artist voice.'},
@@ -20,6 +24,14 @@ const data=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||'nu
 const save=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}};
 let config=data(CONFIG,{role:'assistant',alias:'Bubbles',instructions:'',voice:false});
 if(!ROLES[config.role])config.role='assistant';
+if(embedded){
+ const requested=String(params.get('role')||'').toLowerCase();
+ if(ROLES[requested])config.role=requested;
+ const name=String(params.get('name')||'').trim().slice(0,38);
+ if(name)config.alias=name;
+ const instruction=String(params.get('instructions')||'').trim().slice(0,800);
+ if(instruction)config.instructions=instruction;
+}
 let notes=data(NOTES,[]);if(!Array.isArray(notes))notes=[];
 let messages=[],busy=false,listening=null,ownerToken='',ownerReady=false,showing=false;
 const card=create('section','ba-card');
@@ -41,6 +53,16 @@ const claude=create('a','ba-link','Claude third-party API requirements ↗');cla
 const github=create('a','ba-link','GitHub App permission model ↗');github.href='https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps';github.target='_blank';github.rel='noopener noreferrer';
 connections.append(provider,openai,claude,github);
 card.append(edit,connections);
+const publishing=create('div','ba-publish');
+publishing.append(create('strong','','Publish your bubble'));
+const publishHint=create('p','ba-muted','Generate reusable embed code for a page you control. Only the role, name and public instructions appear in the HTML. Never put passwords, API keys or private notes in the instructions.');
+const publish=create('button','ba-control','Create embed code');publish.type='button';
+const snippet=create('textarea','ba-field');snippet.rows=4;snippet.readOnly=true;snippet.hidden=true;snippet.setAttribute('aria-label','Bubbles embed code to copy');
+const publishStatus=create('p','ba-muted','Place the embed code in your own page, or ask your authorized GitHub bot to add it.');
+publishStatus.setAttribute('role','status');
+const fullPage=create('a','ba-link','Open the Bubbles studio ↗');fullPage.href='/bubbles.html';fullPage.target='_blank';fullPage.rel='noopener noreferrer';
+publishing.append(publishHint,publish,snippet,publishStatus,fullPage);
+card.append(publishing);
 host.append(card);
 const launcher=create('button','ba-launcher','💬');launcher.type='button';launcher.setAttribute('aria-label','Open Bubbles AI messenger');
 const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('aria-label','Bubbles AI messenger');
@@ -73,12 +95,32 @@ function updateRole(){
 }
 saveRole.addEventListener('click',()=>{updateRole();saveRole.textContent='Role saved ✓';setTimeout(()=>saveRole.textContent='Save bubble role',1300)});
 persona.addEventListener('change',updateRole);
+
+function xmlAttr(value){
+ return String(value).replace(/[&"'<>]/g,char=>({'&':'&amp;','"':'&quot;',"'":'&#39;','<':'&lt;','>':'&gt;'}[char]));
+}
+publish.addEventListener('click',async()=>{
+ updateRole();
+ const id=(crypto.randomUUID?.()||('bubble-'+Date.now())).replace(/[^a-zA-Z0-9_-]/g,'').slice(0,48);
+ const markup='<script async src="https://quantaphi.org/bubbles-embed.js" data-bubble-id="'+xmlAttr(id)+'" data-bubble-role="'+xmlAttr(config.role)+'" data-bubble-name="'+xmlAttr(config.alias)+'" data-bubble-instructions="'+xmlAttr(config.instructions)+'"></'+'script>';
+ snippet.value=markup;snippet.hidden=false;
+ try{
+  if(!navigator.clipboard?.writeText)throw Error('clipboard unavailable');
+  await navigator.clipboard.writeText(markup);
+  publishStatus.textContent='Embed code copied. Paste it into your page HTML. Only this bubble’s public role instructions are included.';
+ }catch{
+  publishStatus.textContent='The embed code is ready below. Select and copy it manually, then add it to your page.';
+  snippet.focus();snippet.select();
+ }
+});
+
 function display(text,who){
  const bubble=create('p','ba-message '+(who==='you'?'ba-you':'ba-assistant'),text);
  conversation.append(bubble);conversation.scrollTop=conversation.scrollHeight;
 }
 function toggle(open){
  showing=Boolean(open);panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
+ if(embedded)window.parent.postMessage({type:'quantaphi:bubbles:size',open:showing},'*');
  if(showing){if(!messages.length)display('Hello! I am '+config.alias+'. Choose my role on the Bubbles card. Tap Talk to use your microphone, or type a message.','ai');input.focus()}
  else{try{listening?.stop()}catch{}listening=null;try{speechSynthesis.cancel()}catch{}}
 }
@@ -133,6 +175,7 @@ function renderNotes(){
 }
 saveNote.addEventListener('click',()=>{const value=noteText.value.trim();if(!value)return;notes.unshift({id:crypto.randomUUID?.()||String(Date.now()),text:value.slice(0,3000)});notes=notes.slice(0,30);if(save(NOTES,notes)){noteText.value='';renderNotes();workStatus.textContent='Note saved locally on this device. Not sent to AI or GitHub.'}else{workStatus.textContent='Could not save: browser storage is unavailable.'}});
 renderNotes();
+// A third-party page embedding this messenger never sees owner-only GitHub controls.
 async function getOwnerToken(){
  try{
   const token=await new Promise(resolve=>{
@@ -143,6 +186,7 @@ async function getOwnerToken(){
  }catch{return ''}
 }
 (async()=>{
+ if(embedded)return;
  const token=await getOwnerToken();if(!token)return;
  try{const response=await fetch(BRAIN+'/health',{headers:{Authorization:'Bearer '+token},cache:'no-store',signal:AbortSignal.timeout(12000)});
  if(response.ok){ownerToken=token;ownerReady=true;workButton.hidden=false;workStatus.textContent='Verified owner access to Robot Brain inbox. Each work ticket still requires your tap; a ticket is not a merged GitHub change.'}}
@@ -163,4 +207,7 @@ workButton.addEventListener('click',async()=>{
  finally{workButton.disabled=false}
 });
 window.QuantaBubbles={open:()=>toggle(true),close:()=>toggle(false)};
+if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
+// An embed opens inside a sandboxed iframe; only window dimensions are messaged.
+
 })();

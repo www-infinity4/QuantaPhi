@@ -41,3 +41,9 @@
 .ba-panel :focus-visible,#bubblesAICard :focus-visible{outline:3px solid #80e8d3;outline-offset:2px}
 @media(max-width:440px){.ba-panel{height:min(67dvh,590px)}.ba-launcher{right:11px;bottom:88px}}
 @media(prefers-reduced-motion:reduce){.ba-launcher,.ba-panel{transition:none;animation:none}}
+
+#bubblesAICard .ba-publish{margin-top:14px;padding-top:12px;border-top:1px solid #906dbe;display:grid;gap:9px}
+#bubblesAICard .ba-publish strong{font-size:16px;color:#f9f4ff}
+#bubblesAICard .ba-publish textarea{font:500 12px/1.45 ui-monospace,monospace;min-height:92px;white-space:pre-wrap;overflow-wrap:anywhere}
+#bubblesAICard .ba-publish textarea[hidden]{display:none!important}
+#bubblesAICard .ba-publish .ba-muted{margin:0}

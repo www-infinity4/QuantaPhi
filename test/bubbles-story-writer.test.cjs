@@ -75,3 +75,58 @@ test('existing StarCoin ledger and no-refresh artwork behavior are untouched by 
  assert.match(writer,/window\.QuantaStarCredit\?\.\('share'/);
  assert.doesNotMatch(bubbles,/QuantaStarCredit|mintQuant|mintToken/);
 });
+
+
+test('published Bubbles embed stays inside a checked-origin floating frame',()=>{
+ const code=source('bubbles-embed.js');
+ const html=source('bubbles.html');
+ const css=source('bubbles-ai.css');
+ assert.doesNotThrow(()=>new vm.Script(code));
+ assert.match(html,/id="bubblesAICard"/);
+ assert.match(html,/bubbles-ai\.js\?v=/);
+ assert.match(html,/body\.bubbles-embedded \.ba-launcher/);
+ assert.match(css,/\.ba-panel/);
+ const events=new Map();
+ const child={};
+ const iframe={style:{},dataset:{},contentWindow:child,addEventListener:(event,fn)=>events.set('iframe:'+event,fn),setAttribute(){}};
+ let appended=null;
+ let listener=null;
+ const document={
+  currentScript:{dataset:{bubbleRole:'singer',bubbleId:'my_page',bubbleName:'Choir helper',bubbleInstructions:'Original singing exercises'}},
+  createElement:type=>{assert.equal(type,'iframe');return iframe},
+  body:{appendChild:value=>{appended=value}}
+ };
+ const window={addEventListener:(event,fn)=>{if(event==='message')listener=fn}};
+ vm.runInNewContext(code,{document,window,URLSearchParams,Set});
+ assert.equal(appended,iframe);
+ const url=new URL(iframe.src);
+ assert.equal(url.origin,'https://quantaphi.org');
+ assert.equal(url.pathname,'/bubbles.html');
+ assert.equal(url.searchParams.get('role'),'singer');
+ assert.equal(url.searchParams.get('id'),'my_page');
+ assert.equal(url.searchParams.get('name'),'Choir helper');
+ assert.equal(url.searchParams.get('instructions'),'Original singing exercises');
+ assert.equal(iframe.style.width,undefined);
+ listener({origin:'https://evil.example',source:child,data:{type:'quantaphi:bubbles:size',open:true}});
+ assert.equal(iframe.style.width,undefined,'cross-origin frames may not expand');
+ listener({origin:'https://quantaphi.org',source:{},data:{type:'quantaphi:bubbles:size',open:true}});
+ assert.equal(iframe.style.width,undefined,'unrelated frames may not expand');
+ listener({origin:'https://quantaphi.org',source:child,data:{type:'quantaphi:bubbles:size',open:true}});
+ assert.match(iframe.style.width,/min\(425px/);
+ listener({origin:'https://quantaphi.org',source:child,data:{type:'quantaphi:bubbles:size',open:false}});
+ assert.equal(iframe.style.width,'70px');
+});
+
+test('multiple Bubbles embeds isolate notes and never inherit owner authorization',()=>{
+ const code=source('bubbles-ai.js');
+ assert.match(code,/const bubbleId=embedded/);
+ assert.match(code,/const NOTES='quantaphi:bubbles:notes:v1'\+\(bubbleId\?':'\+bubbleId:''\)/);
+ assert.match(code,/const CONFIG='quantaphi:bubbles:config:v1'\+\(bubbleId\?':'\+bubbleId:''\)/);
+ assert.match(code,/if\(embedded\)return;\s*const token=await getOwnerToken/);
+ assert.match(code,/window\.parent\.postMessage\(\{type:'quantaphi:bubbles:size',open:showing\},'\*'\)/);
+ assert.match(code,/const markup='<script async src="https:\/\/quantaphi\.org\/bubbles-embed\.js"/);
+ assert.match(code,/function xmlAttr\(value\)/);
+ assert.match(code,/await navigator\.clipboard\.writeText\(markup\)/);
+ assert.match(code,/Never put passwords, API keys or private notes/);
+ assert.doesNotMatch(source('bubbles-embed.js'),/localStorage|document\.cookie|Authorization:|owner_token/);
+});
