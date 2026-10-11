@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-voice-gate.js'
+      - 'test/bubbles-voice-gate.test.cjs'
+      - 'test/bubbles-live-voice.test.cjs'
       - 'bubbles-ai.css'
       - 'bubbles-embed.js'
       - 'bubbles.html'
@@ -38,6 +41,7 @@ jobs:
       - name: Check browser script syntax and behavior contracts
         run: |
           node --check bubbles-ai.js
+          node --check bubbles-voice-gate.js
           node --check bubbles-embed.js
           node --check phi-story-writer.js
-          node --test test/bubbles-story-writer.test.cjs
+          node --test test/bubbles-story-writer.test.cjs test/bubbles-voice-gate.test.cjs test/bubbles-live-voice.test.cjs
