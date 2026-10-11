@@ -46,6 +46,9 @@ CREATE TABLE IF NOT EXISTS execution_provenance_registry (
   deploy_receipt_ref TEXT,
   summary TEXT NOT NULL DEFAULT '',
   recorded_at INTEGER NOT NULL,
+  CHECK(status NOT IN ('committed_unverified','deployed_verified') OR
+    (commit_sha IS NOT NULL AND length(commit_sha)=40 AND test_receipt_ref IS NOT NULL AND review_receipt_ref IS NOT NULL)),
+  CHECK(status<>'deployed_verified' OR (deploy_receipt_ref IS NOT NULL AND length(deploy_receipt_ref)>0)),
   UNIQUE(ticket_id,job_id,attempt_id)
 );
 CREATE INDEX IF NOT EXISTS idx_brain_provenance_job
