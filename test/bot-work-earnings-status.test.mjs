@@ -18,7 +18,7 @@ function rig(){
 test('failed payout cannot consume all three batch slots forever',async()=>{
  const {brain,data}=rig();const result=await brain.settleWork();
  assert.equal(result.length,3);
- assert.deepEqual(brain.calls,['job-quant:bad1','job-quant:ok2','job-quant:ok3']);
+ assert.deepEqual(Array.from(brain.calls),['job-quant:bad1','job-quant:ok2','job-quant:ok3']);
  assert.equal(result[0].status,'pending');
  assert.equal(result[1].status,'paid');
  assert.equal(data.get('earnings-retry:job-quant:bad1').error,'temporary remote failure');
