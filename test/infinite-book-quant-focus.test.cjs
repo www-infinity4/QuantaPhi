@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p
 test('Quant search topic is preserved in GPT source queries',()=>{
  const code=read('infinite-book-discovery.js');
  assert.match(code,/researchedTopic=clean\(roll\.quantFocus\|\|indexedWord\)/);
- assert.match(code,/\[researchedTopic,realm\|\|angle,direction\]/);
+ assert.match(code,/\[researchedTopic,realm\|\|angle,direction,/);
  const browser=read('infinite-book.js');
  assert.match(browser,/quantFocus=String\(query\|\|/);
  assert.match(browser,/quantFocus,trial:seenIds/);

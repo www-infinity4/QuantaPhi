@@ -5,6 +5,11 @@ const path = require('node:path');
 
 const file = name => fs.readFileSync(path.join(__dirname,'..',name),'utf8');
 const gatewaySource=file('workers/infinity-rogers/worker.js');
+// The browser-fetch tests exercise this Worker's default fetch export. Its
+// unrelated Cloudflare RPC class is exported from a local module, which cannot
+// resolve from Node's synthetic data: URL module loader.
+const testGatewaySource=gatewaySource.replace(/export \{ BrainModels \} from "\.\/brain-models\.js";/, '');
+const nativeModule=()=>import('data:text/javascript;base64,'+Buffer.from(testGatewaySource).toString('base64'));
 
 test('Infinite Book uses Cloudflare-native AI endpoint, not the general GPT gateway', () => {
  const writer=file('infinite-book-discovery.js');
@@ -21,7 +26,7 @@ test('Infinite Book uses Cloudflare-native AI endpoint, not the general GPT gate
 });
 
 test('direct Cloudflare AI binding responds to story requests without any external GPT API key', async () => {
- const mod=await import('data:text/javascript;base64,'+Buffer.from(gatewaySource).toString('base64'));
+ const mod=await nativeModule();
  const calls=[];
  const env={AI:{run:async(model,options)=>{
   calls.push({model,options});
@@ -45,7 +50,7 @@ test('direct Cloudflare AI binding responds to story requests without any extern
 });
 
 test('invalid requests cannot turn dedicated story endpoint into a general AI proxy', async () => {
- const mod=await import('data:text/javascript;base64,'+Buffer.from(gatewaySource).toString('base64'));
+ const mod=await nativeModule();
  let invocations=0;
  const env={AI:{run:async()=>{invocations++;return {response:'unexpected'}}}};
  const req=new Request('https://infinity-rogers.marvaseater.workers.dev/v1/book/generate',{
