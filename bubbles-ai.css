@@ -1,0 +1,43 @@
+/* Bubbles AI · voice messenger and programmable specialist card */
+#bubblesAICard{margin:14px 0 18px;max-width:100%;font:500 14px/1.55 system-ui,sans-serif;color:#f1f0ff}
+#bubblesAICard *,.ba-panel *{box-sizing:border-box}
+#bubblesAICard .ba-card{padding:15px;border-radius:17px;border:2px solid #9d7ce6;background:linear-gradient(148deg,#26184d,#19122f);box-shadow:0 6px 24px #1b10377a}
+#bubblesAICard h2{margin:3px 0 5px;font-size:24px;color:#fff}
+#bubblesAICard .ba-copy{margin:0 0 12px;color:#ebe1ff}
+#bubblesAICard .ba-eyebrow{font-size:11px;letter-spacing:.12em;font-weight:900;color:#debcff}
+#bubblesAICard .ba-settings{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+#bubblesAICard label{display:block;font-size:12px;font-weight:850;color:#eee4ff;grid-column:1/-1}
+#bubblesAICard .ba-settings label:nth-of-type(2){grid-column:2}
+#bubblesAICard .ba-settings select{grid-column:1}#bubblesAICard .ba-settings input{grid-column:2}
+#bubblesAICard .ba-settings textarea{grid-column:1/-1;min-height:65px}
+#bubblesAICard .ba-settings button{grid-column:span 1}
+#bubblesAICard .ba-field,.ba-panel .ba-field{display:block;min-width:0;width:100%;padding:10px;color:#17132d;background:#fff;border:1px solid #a892d8;border-radius:9px;font:500 14px/1.4 system-ui,sans-serif}
+#bubblesAICard textarea,.ba-panel textarea{resize:vertical}
+#bubblesAICard .ba-control,#bubblesAICard .ba-primary,.ba-panel button{min-height:42px;border-radius:10px;border:1px solid #c9b3fa;background:#f2eaff;color:#32135b;font-weight:850;padding:8px 10px;cursor:pointer;touch-action:manipulation}
+#bubblesAICard .ba-primary,.ba-panel .ba-send{background:#adf2cf;border-color:#69ba96;color:#12372e}
+#bubblesAICard .ba-connect{border-top:1px solid #9d7ce6;margin-top:15px;padding-top:10px;display:flex;flex-wrap:wrap;gap:6px 12px}
+#bubblesAICard .ba-muted,.ba-panel .ba-muted{width:100%;font-size:12px;line-height:1.5;margin:6px 0;color:#dfd6f4}
+#bubblesAICard .ba-link{font-size:12px;color:#ccf8ff;overflow-wrap:anywhere}
+.ba-launcher{position:fixed;z-index:1100;right:13px;bottom:92px;width:57px;height:57px;border-radius:50%;border:2px solid #f5d7ff;background:linear-gradient(135deg,#7248d8,#40218b);box-shadow:0 0 0 4px #7445aa45,0 6px 20px #180c2e7a;color:white;font-size:26px;cursor:pointer;touch-action:manipulation}
+.ba-panel[hidden]{display:none!important}
+.ba-panel{position:fixed;z-index:1101;bottom:153px;right:10px;width:min(420px,calc(100vw - 20px));height:min(69dvh,620px);min-height:340px;display:flex;flex-direction:column;gap:7px;padding:10px;border:2px solid #b49aff;border-radius:18px;background:#21153a;color:#fff;font:500 14px/1.45 system-ui,sans-serif;box-shadow:0 9px 28px #0c081ecc}
+.ba-header{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:2px 5px}
+.ba-header strong{font-size:18px;color:#fff}
+.ba-panel .ba-close{min-width:44px;min-height:40px;font-size:27px;background:#684ab3;color:#fff}
+.ba-status{color:#d8c8fd;font-size:11px;margin:0 3px}
+.ba-messages{flex:1;min-height:65px;overflow:auto;display:flex;flex-direction:column;gap:8px;padding:6px;border-radius:10px;background:#140b2a}
+.ba-message{margin:0;padding:10px 11px;white-space:pre-wrap;overflow-wrap:anywhere;max-width:94%;border-radius:14px;line-height:1.5}
+.ba-you{align-self:flex-end;background:#d2f9e7;color:#132d26}.ba-assistant{align-self:flex-start;background:#e5d8ff;color:#251144}
+.ba-composer{display:grid;gap:6px}.ba-panel .ba-composer textarea{min-height:56px;max-height:105px}
+.ba-actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+.ba-panel button:disabled{opacity:.55;cursor:wait}
+.ba-tools{border-top:1px solid #7458a3;padding:5px 3px;max-height:30%;overflow:auto}
+.ba-tools summary{cursor:pointer;font-weight:900;color:#bcefe3;min-height:30px}
+.ba-tools label{display:block;font-size:12px;margin:8px 0 4px}
+.ba-notes{max-height:92px;overflow:auto}
+.ba-note{border:1px solid #77619e;border-radius:9px;padding:6px;margin-top:5px}
+.ba-note p{margin:0 0 3px;white-space:pre-wrap;overflow-wrap:anywhere}
+.ba-panel .ba-remove{font-size:11px;min-height:30px;padding:3px 7px}
+.ba-panel :focus-visible,#bubblesAICard :focus-visible{outline:3px solid #80e8d3;outline-offset:2px}
+@media(max-width:440px){.ba-panel{height:min(67dvh,590px)}.ba-launcher{right:11px;bottom:88px}}
+@media(prefers-reduced-motion:reduce){.ba-launcher,.ba-panel{transition:none;animation:none}}
