@@ -28,4 +28,4 @@ jobs:
           node-version: '22'
       - run: node --check workers/infinity-brain-clock/worker.js
       - run: node --check robot-directions.js
-      - run: node --test test/bot-work-credit.test.mjs test/bot-work-earnings-status.test.mjs test/bot-earnings-auto.test.mjs
+      - run: node --test test/bot-work-credit.test.mjs test/bot-work-earnings-status.test.mjs test/bot-earnings-auto.test.mjs test/pink-review-anchors.test.mjs
