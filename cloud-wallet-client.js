@@ -13,7 +13,7 @@ function deviceCandidates(){
 function findDeviceToken(){
  try{
   const session=read('starquest_session',null),username=String(session?.username||session?.key||'').toLowerCase();
-  if(username){const exact=storedToken(DEVICE_PREFIX+username);if(exact)return exact}
+  if(username)return storedToken(DEVICE_PREFIX+username);
   const candidates=deviceCandidates();
   return candidates.length===1?candidates[0].token:'';
  }catch{return ''}
@@ -21,19 +21,21 @@ function findDeviceToken(){
 async function resolveDeviceToken(){
  const exact=findDeviceToken();if(exact)return exact;
  const candidates=deviceCandidates();if(!candidates.length)return '';
- const session=read('starquest_session',null),users=read('starquest_users',{}),backup=read('starquest_users_backup_v1',{});
- const known=new Set([session?.key,session?.username,...Object.keys(users||{}),...Object.keys(backup||{})].map(v=>String(v||'').trim().toLowerCase()).filter(Boolean));
- let matched=null,only=null,valid=0;
+ const session=read('starquest_session',null);
+ // An explicitly selected account must never fall back to another account.
+ if(String(session?.key||session?.username||'').trim())return '';
+ let only=null,valid=0;
  for(const candidate of candidates){
   try{
    const response=await fetch('https://starquest-ledger.marvaseater.workers.dev/v1/state',{headers:{authorization:'Bearer '+candidate.token},cache:'no-store',signal:AbortSignal.timeout(5000)});
    const payload=await response.json().catch(()=>({}));if(!response.ok||!payload?.ok||!payload?.state)continue;
-   valid++;const username=String(payload.state.username||candidate.username||'').trim().toLowerCase(),entry={candidate,username};
+   const username=String(payload.state.username||'').trim().toLowerCase();
+   if(!username||username!==candidate.username)continue;
+   valid++;const entry={candidate,username};
    only=entry;
-   if(username&&known.has(username)){matched=entry;break}
   }catch(_){}
  }
- const chosen=matched||(valid===1?only:null);
+ const chosen=valid===1?only:null;
  if(!chosen)return '';
  if(chosen.username&&storedToken(DEVICE_PREFIX+chosen.username)!==chosen.candidate.token)try{localStorage.setItem(DEVICE_PREFIX+chosen.username,chosen.candidate.token)}catch(_){}
  return chosen.candidate.token;
@@ -171,7 +173,7 @@ ready.then(async()=>{
  // that before any recovery navigation so cache loss cannot create identity drift.
  if(!PAID_ORIGINS.has(location.origin))return;
  if(findDeviceToken()&&!hasAccountProfile())await recoverAccountProfileFromDevice();
- if(findDeviceToken())return;
+ if(findDeviceToken()&&hasAccountProfile())return;
  const query=new URL(location.href).searchParams.get('q')||document.getElementById?.('q')?.value||'';
  if(String(query).trim()||document.activeElement?.matches?.('input,textarea'))return;
  recoverWallet();

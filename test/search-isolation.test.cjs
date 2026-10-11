@@ -10,7 +10,7 @@ function fixture({wallet='pending',retrieval='ok',aiBody='ok',ledgerUpdate='ok'}
  $:node,history:{replaceState(){}},document:{getElementById:id=>node('#'+id)},
  localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},sessionStorage:{getItem:()=>null,setItem(){}},
  CustomEvent:function(){},searchPermalink:()=> 'https://quantaphi.org/?q=alpha',elementIdentity:()=>null,normalizedEntity:q=>q,entityClause:q=>q,
- monitorLifecycleStart(){},showField(){},loadMedia(){},classify:q=>[{w:q}],quantaAiUserId:()=> 'test',
+ maybeRenderStockWidget(){},monitorLifecycleStart(){},showField(){},loadMedia(){},classify:q=>[{w:q}],quantaAiUserId:()=> 'test',
  aiPayloadText:d=>d.text,parseOverviewSections:t=>({red:{overview:t}}),overviewProse:t=>t,renderFivePartOverview:s=>s.red.overview,
  activateFivePartOverview(){},monitorRendered(){},loadExpandedDataIndex(){},loadHistoryAssimilation(){},
  buildStructuredEvidenceFallback:()=>({red:{overview:'Source overview'}}),fallbackResearch:async()=>({results:[{title:'alpha source',url:'https://example.test/alpha',content:'alpha evidence'}]}),
