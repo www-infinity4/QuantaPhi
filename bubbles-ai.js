@@ -355,7 +355,7 @@ window.addEventListener?.('pagehide',()=>{if(voiceEnabled)stopVoice()});
 launcher.addEventListener?.('pointerdown',event=>{
  if(event.button!==undefined&&event.button!==0)return;
  const rect=launcher.getBoundingClientRect?.();if(!rect)return;
- orbDragging={x:event.clientX,y:event.clientY,left:rect.left,top:rect.top,moved:false};
+ orbDragging={x:event.clientX,y:event.clientY,lastX:event.clientX,lastY:event.clientY,left:rect.left,top:rect.top,moved:false};
  launcher.setPointerCapture?.(event.pointerId);
 });
 launcher.addEventListener?.('pointermove',event=>{
@@ -367,7 +367,8 @@ launcher.addEventListener?.('pointermove',event=>{
  const left=Math.max(4,Math.min(window.innerWidth-width-4,orbDragging.left+dx));
  const top=Math.max(4,Math.min(window.innerHeight-height-4,orbDragging.top+dy));
  if(embedded){
-  window.parent.postMessage({type:'quantaphi:bubbles:move',dx,dy},'*');
+  window.parent.postMessage({type:'quantaphi:bubbles:move',dx:event.clientX-orbDragging.lastX,dy:event.clientY-orbDragging.lastY},'*');
+  orbDragging.lastX=event.clientX;orbDragging.lastY=event.clientY;
  }else{
   launcher.style.left=left+'px';launcher.style.top=top+'px';
   launcher.style.right='auto';launcher.style.bottom='auto';
