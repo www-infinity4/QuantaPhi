@@ -40,3 +40,14 @@
 .fsr-following{padding:13px;border-radius:14px;background:linear-gradient(135deg,#f7f3ff,#e7fff5);border:1px solid #b5d9c6;color:#342448;margin:14px 0}
 .fsr-following h3{font-size:16px;margin:0 0 9px}
 @media(max-width:400px){.fsr-priority .fsr-source,.fsr-follow-row{display:block}.fsr-priority a,.fsr-follow-row a{display:inline-block;margin-top:7px}}
+
+/* Owner-provided X identity and privacy-aware sync status */
+.fsr-owner-profile{border:1px solid #9cd4c3;border-radius:15px;padding:13px;margin:12px 0;background:linear-gradient(130deg,#e9fff6,#f4ecff);color:#27394b}
+.fsr-owner-profile>strong{font-size:15px;color:#263954}
+.fsr-owner-profile p{margin:7px 0;font-size:14px;font-weight:750}
+.fsr-owner-profile small{display:block;margin:7px 0;font-size:12px;line-height:1.45;color:#465b63}
+.fsr-owner-profile>a{display:inline-block;margin:7px 0;font-size:13px;font-weight:850}
+.fsr-profile-edit{margin:10px 0 0;border-top:1px solid #aac8c4;padding-top:8px}
+.fsr-profile-edit summary{font-size:12px;font-weight:800;cursor:pointer;padding:5px}
+.fsr-profile-edit input{width:100%;max-width:300px;min-height:40px;padding:9px;border:1px solid #8fa6ca;background:white;color:#213352;border-radius:9px;font:inherit}
+.fsr-profile-edit button{display:block;margin-top:7px}

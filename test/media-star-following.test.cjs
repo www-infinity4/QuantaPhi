@@ -121,3 +121,67 @@ test('owner-imported following displays all indexed and empty host records witho
  const b=await(await call('/v1/following',other)).json();
  assert.equal(b.count,0);
 });
+
+test('X username @YahooPingcwlz belongs only to its authenticated Media Star owner',async()=>{
+ const {call,db}=await fixture();
+ let response=await call('/v1/x/account',tok);
+ assert.equal((await response.json()).account,null);
+ response=await call('/v1/x/account',tok,{handle:'@YahooPingcwlz'});
+ assert.equal(response.status,200);
+ let data=await response.json();
+ assert.equal(data.account.handle,'YahooPingcwlz');
+ assert.equal(data.account.verification,'owner_claimed');
+ assert.equal(data.verifiedByX,false);
+ const otherAccount=await call('/v1/x/account',other);
+ assert.equal((await otherAccount.json()).account,null);
+ const stranger=await call('/v1/x/account',other,{handle:'@AnotherPerson'});
+ assert.equal(stranger.status,200);
+ assert.equal((await(await call('/v1/x/account',tok)).json()).account.handle,'YahooPingcwlz');
+ const invalid=await call('/v1/x/account',tok,{handle:'https://x.com/not_a_username'});
+ assert.equal(invalid.status,400);
+ const saved=db.prepare('SELECT handle FROM x_account_links WHERE owner_id=?').get('owner-one');
+ assert.equal(saved.handle,'YahooPingcwlz');
+});
+test('official sync refuses wrong X profile even when a provider bearer token exists',async()=>{
+ const {env,call}=await fixture();
+ await call('/v1/x/account',tok,{handle:'@YahooPingcwlz'});
+ await call('/v1/following/import',tok,{following:['HodlMagoo']});
+ env.X_OWNER_ID='owner-one';env.X_USER_ACCESS_TOKEN='test-nonsecret';
+ const prior=global.fetch;let requests=0;
+ global.fetch=async()=>{
+  requests++;return new Response(JSON.stringify({data:{id:'some-other-id',username:'DifferentUser'}}),{status:200,headers:{'content-type':'application/json'}});
+ };
+ try{
+  const response=await call('/v1/following/sync',tok,{});
+  assert.equal(response.status,403);
+  assert.equal((await response.json()).error,'x_account_handle_mismatch');
+  assert.equal(requests,1);
+  const record=(await(await call('/v1/following',tok)).json()).following;
+  assert.equal(record.length,1);assert.equal(record[0].source,'owner_import');
+  const acct=(await(await call('/v1/x/account',tok)).json()).account;
+  assert.equal(acct.verification,'owner_claimed');
+ }finally{global.fetch=prior}
+});
+test('official sync marks X account verified only after a complete matching following import',async()=>{
+ const {env,call}=await fixture();
+ await call('/v1/x/account',tok,{handle:'YahooPingcwlz'});
+ env.X_OWNER_ID='owner-one';env.X_USER_ACCESS_TOKEN='test-nonsecret';
+ const prior=global.fetch;
+ global.fetch=async url=>{
+  const text=String(url);
+  if(text.endsWith('/users/me'))return new Response(JSON.stringify({data:{id:'986512',username:'YahooPingcwlz'}}),{status:200});
+  if(text.includes('/986512/following'))return new Response(JSON.stringify({data:[{id:'998877',name:'Example Space Host',username:'SpaceTester'}],meta:{}}),{status:200});
+  throw Error('unexpected X endpoint '+text);
+ };
+ try{
+  const result=await call('/v1/following/sync',tok,{});
+  assert.equal(result.status,200);
+  const sync=await result.json();assert.equal(sync.verifiedXHandle,'YahooPingcwlz');
+  const acct=(await(await call('/v1/x/account',tok)).json()).account;
+  assert.equal(acct.verification,'x_api_verified');
+  assert.equal(acct.userId,'986512');
+  const follows=(await(await call('/v1/following',tok)).json()).following;
+  assert.equal(follows[0].source,'x_api_verified');
+  assert.equal(follows[0].handle,'SpaceTester');
+ }finally{global.fetch=prior}
+});
