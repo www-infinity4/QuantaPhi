@@ -73,14 +73,20 @@ async function reportPlayback(stateName,spaceId){
 }
 async function spin(){
  if(state.loading)return;
- state.loading=true;render();
+ state.choice=null;state.loading=true;render();
  try{
   const id='r'+crypto.randomUUID().replaceAll('-','');
   const result=await query('/v1/roll','POST',{rollId:id});
   state.choice=result;
   state.notice='Rolled a new original recording; no coin was charged for this selection. Playback depends on the source.';
  }catch(e){state.notice=String(e.message||e)}
- finally{state.loading=false;render();if(state.choice)picked(state.choice)}
+ finally{
+  state.loading=false;render();
+  if(state.choice){
+   picked(state.choice);
+   if(state.choice.roll?.requiresOriginalUnlock)requestFredEpisode(state.choice.roll.spaceId);
+  }
+ }
 }
 async function sync(type){
  if(state.loading)return;
