@@ -147,18 +147,23 @@
     return link.href;
   }
   function indexedSearchTerms(story) {
+    // Preserve the complete subject first. A title such as "The Who" must
+    // not turn into generic "rock history" when stopwords are removed.
+    const title=String(story.title||'').replace(/\s+/g,' ').trim().slice(0,110);
     const stop=new Set(['the','a','an','of','on','in','to','for','and','with','from','when','was','were','who','how','that','this','one','more','after','before','into','it','its','is','at','as','by','their','they','has','had','have','finally','revealed','secret','amazing','big']);
     const subject=catalog.sectors.find(x=>x.id===story.sector)?.name||'';
-    const headline=String(story.title||'').replace(/[^\p{L}\p{N}\s'-]/gu,' ').split(/\s+/);
     const background=String(story.summary||'').replace(/[^\p{L}\p{N}\s'-]/gu,' ').split(/\s+/);
-    const words=[],used=new Set();
-    for(const token of [...headline,...subject.split(/\s+/),...background]){
-      const clean=String(token||'').trim();
-      if(clean.length<3||stop.has(clean.toLowerCase())||used.has(clean.toLowerCase()))continue;
-      used.add(clean.toLowerCase());words.push(clean);
-      if(words.length>=13)break;
+    const used=new Set((title.toLowerCase().match(/[\p{L}\p{N}]+/gu)||[]));
+    let query=title,added=0;
+    for(const token of [...subject.split(/\s+/),...background]){
+      const clean=String(token||'').replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu,'').trim();
+      const key=clean.toLowerCase();
+      if(clean.length<3||stop.has(key)||used.has(key))continue;
+      if(query.length+clean.length+(query?1:0)>110)continue;
+      used.add(key);query+=(query?' ':'')+clean;
+      if(++added>=8)break;
     }
-    return words.join(' ').slice(0,150);
+    return query.trim();
   }
   function buildUrl(tool, story) {
     const routes={infinity:'/infinity-phi/',omni:'/omni-phi/overview/',quanta:'/'};
