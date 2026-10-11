@@ -3,11 +3,18 @@ main = "worker.js"
 compatibility_date = "2026-10-10"
 [[d1_databases]]
 binding = "WORK_DB"
-database_name = "infinity-work-tickets"
+database_name = "rogers-consensus" # Verified account D1 name; original ID/binding unchanged
 database_id = "4aa6a463-02c6-48c3-854f-a87c0ca5f41c"
 [[services]]
 binding = "MODELS"
 service = "infinity-rogers"
+environment = "production"
+
+# Preserve the existing authenticated bot-wallet settlement service on redeploy.
+[[services]]
+binding = "BOT_WALLET"
+service = "unified-wallet"
+environment = "production"
 entrypoint = "BrainModels"
 [[durable_objects.bindings]]
 name = "CLOCK"
@@ -20,3 +27,7 @@ crons = ["* * * * *"]
 
 [ai]
 binding = "WRITER_AI"
+
+# BOT_WORK_SECRET (secret_text) and WRITER_OWNER_HASH (plain_text) exist on the
+# deployed Worker; do not commit their values. Verify these bindings survive
+# deployment before enabling bot payouts or owner-authorized job access.
