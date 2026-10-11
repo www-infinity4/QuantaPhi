@@ -47,3 +47,20 @@
 #bubblesAICard .ba-publish textarea{font:500 12px/1.45 ui-monospace,monospace;min-height:92px;white-space:pre-wrap;overflow-wrap:anywhere}
 #bubblesAICard .ba-publish textarea[hidden]{display:none!important}
 #bubblesAICard .ba-publish .ba-muted{margin:0}
+
+.ba-line{display:flex;flex-direction:column;gap:3px;max-width:100%}
+.ba-line-you{align-items:flex-end}.ba-line-ai{align-items:flex-start}
+.ba-message-actions{display:flex;flex-wrap:wrap;gap:5px;padding:0 3px 4px}
+.ba-panel .ba-miniaction{min-height:33px;padding:5px 7px;font-size:11px;background:#dacaf2;color:#27123f;border:1px solid #a897d1;border-radius:8px}
+.ba-privacy{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:8px 0}
+.ba-privacy-label{display:flex;align-items:center;gap:8px;color:#fff;font-size:12px}
+.ba-privacy-label input{height:18px;width:18px;flex:none;accent-color:#8febc8}
+.ba-panel .ba-privacy .ba-control{min-height:35px;font-size:12px}
+.ba-program{padding:5px 4px;max-height:35%;overflow:auto;border-top:1px solid #755b9e}
+.ba-program summary{min-height:30px;cursor:pointer;font-weight:900;color:#bcefe3}
+.ba-program .ba-settings{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:7px}
+.ba-program .ba-settings label{grid-column:1/-1;color:#eee4ff;font-size:12px}
+.ba-program .ba-settings select,.ba-program .ba-settings input{grid-column:auto}
+.ba-program .ba-settings textarea{grid-column:1/-1;min-height:65px}
+.ba-program .ba-settings button{min-height:38px;font-size:12px}
+@media(max-width:360px){.ba-program .ba-settings{grid-template-columns:1fr}.ba-program .ba-settings>*{grid-column:1!important}}

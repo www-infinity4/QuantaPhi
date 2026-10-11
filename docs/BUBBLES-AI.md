@@ -33,3 +33,11 @@ The embed iframe sends only an open/closed resize event with type quantaphi:bubb
 ## Observer checklist
 
 Check that bubbles.html and bubbles-embed.js load with appropriate HTML and JS content, and the launcher opens and closes on Android without covering core navigation. Test voice-on/off, note storage and the keyboard fallback. Verify that unrelated message senders and origins cannot resize an embed, that different bubble IDs have separate storage, and that server-confirmed Robot Brain tickets are not called finished GitHub edits. No automatic StarCoin minting is wired to idle chat.
+
+## Embedded visitor controls and private memory
+
+Inside the floating chat, open **Program this bubble** to customize its role and name. A saved visitor choice takes priority over the site's public default on reload. This cannot change server-side model entitlements or GitHub permissions.
+
+AI replies offer **Save note** (a deliberate browser-local note), **Make work draft** (fills the reviewable Robot Brain field without sending anything), and **Read aloud** (an explicit playback button). The owner must separately approve any available Robot Brain submission. Third-party embeds have no owner submit control.
+
+Recent conversation history is **off by default**; enabling **Keep recent chat on this device** saves only the last 12 messages to local browser storage under the bubble ID. Turning it off deletes that local chat copy. **Clear chat** removes the current conversation while preserving separately saved private notes. The AI receives only the conversation context needed for the current response, not the private notes unless the user explicitly pastes them.

@@ -130,3 +130,95 @@ test('multiple Bubbles embeds isolate notes and never inherit owner authorizatio
  assert.match(code,/Never put passwords, API keys or private notes/);
  assert.doesNotMatch(source('bubbles-embed.js'),/localStorage|document\.cookie|Authorization:|owner_token/);
 });
+
+
+test('embedded Bubbles programming persists user-chosen role instead of overwriting it on reload',()=>{
+ const code=source('bubbles-ai.js');
+ function execute(map){
+  const nodes=[];
+  const make=tag=>{
+   const e={tag,children:[],dataset:{},style:{},hidden:false,handlers:{},value:'',
+    append(...items){for(const item of items){this.children.push(item);item.parent=this}},
+    insertBefore(item,before){const at=this.children.indexOf(before);this.children.splice(at<0?this.children.length:at,0,item);item.parent=this},
+    setAttribute(){},addEventListener(type,callback){this.handlers[type]=callback},focus(){},
+    replaceChildren(...items){this.children=items},removeAttribute(){},select(){}};
+   nodes.push(e);return e;
+  };
+  const host=make('host'),body=make('body'),parentMessages=[];
+  const document={getElementById:id=>id==='bubblesAICard'?host:null,createElement:make,body};
+  const window={parent:{postMessage:msg=>parentMessages.push(msg)}};
+  const localStorage={getItem:key=>map.get(key)||null,setItem:(key,value)=>map.set(key,value),removeItem:key=>map.delete(key)};
+  const context={document,window,localStorage,location:{search:'?embed=1&id=alice&role=singer&name=Songbird',origin:'https://quantaphi.org',pathname:'/bubbles.html'},URLSearchParams,crypto:{randomUUID:()=> 'test-note-id'},navigator:{},setTimeout:fn=>fn()};
+  vm.runInNewContext(code,context,{timeout:1500});
+  return{nodes,host,body,parentMessages};
+ }
+ const storage=new Map();
+ const a=execute(storage);
+ const node=(nodes,tag,text)=>nodes.find(x=>x.tag===tag&&(!text||x.textContent===text));
+ const programmer=a.nodes.find(x=>x.className==='ba-program');
+ assert.ok(programmer,'embedded role editor must be inside visible chat panel');
+ const settings=a.nodes.find(x=>x.className==='ba-settings');
+ assert.equal(settings.parent,programmer);
+ const role=a.nodes.find(x=>x.id==='ba-role'),alias=a.nodes.find(x=>x.id==='ba-alias');
+ assert.equal(role.value,'singer');
+ role.value='specialist';alias.value='Expert visitor';
+ const saveButton=node(a.nodes,'button','Save bubble role');
+ saveButton.handlers.click();
+ const saved=JSON.parse(storage.get('quantaphi:bubbles:config:v1:alice'));
+ assert.equal(saved.role,'specialist');
+ assert.equal(saved.alias,'Expert visitor');
+ const b=execute(storage);
+ assert.equal(b.nodes.find(x=>x.id==='ba-role').value,'specialist','previous user choice must override the embed URL default');
+ assert.equal(b.nodes.find(x=>x.id==='ba-alias').value,'Expert visitor');
+ assert.equal(b.nodes.some(x=>x.textContent==='Send approved request to Robot Brain'&&x.hidden===false),false,'external iframe has no owner controls');
+});
+
+test('reply actions take notes and prepare work without sending unapproved robot tickets',async()=>{
+ const code=source('bubbles-ai.js'),nodes=[],values=new Map(),calls=[];
+ const make=tag=>{
+  const e={tag,children:[],dataset:{},style:{},hidden:false,handlers:{},value:'',
+   append(...items){this.children.push(...items)},insertBefore(item,before){this.children.splice(this.children.indexOf(before),0,item)},
+   setAttribute(){},addEventListener(type,fn){this.handlers[type]=fn},focus(){},replaceChildren(...items){this.children=items},removeAttribute(){},select(){}};
+  nodes.push(e);return e;
+ };
+ const document={createElement:make,getElementById:id=>id==='bubblesAICard'?host:null};
+ const host=make('div');document.body=make('body');
+ const window={parent:{postMessage(){}},SpeechRecognition:null,webkitSpeechRecognition:null};
+ const localStorage={getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v),removeItem:k=>values.delete(k)};
+ const fetch=async(url)=>{
+  calls.push(url);
+  return{ok:true,json:async()=>({ok:true,output:'Here is a practical plan to update the README and run tests.'})};
+ };
+ vm.runInNewContext(code,{document,window,localStorage,URLSearchParams,
+  location:{search:'?embed=1&id=work-cards&role=github',origin:'https://quantaphi.org',pathname:'/bubbles.html'},
+  crypto:{randomUUID:()=>'saved-note'},navigator:{},fetch,AbortController,setTimeout:()=>1,clearTimeout:()=>{}},{timeout:1500});
+ const get=(tag,txt)=>nodes.find(e=>e.tag===tag&&e.textContent===txt);
+ const chatInput=nodes.find(e=>e.tag==='textarea'&&e.placeholder?.startsWith('Say something'));
+ assert.ok(chatInput);
+ chatInput.value='Draft a repository update';
+ nodes.find(e=>e.className==='ba-composer').handlers.submit({preventDefault(){}});
+ for(let tick=0;tick<3;tick++)await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(calls.length,1,'only the approved AI chat endpoint is called');
+ const noteAction=nodes.find(e=>e.tag==='button'&&e.className==='ba-miniaction'&&e.textContent==='Save note');
+ assert.ok(noteAction,'assistant reply has a note action');
+ noteAction.handlers.click();
+ assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'assistant reply note was saved');
+ const notes=JSON.parse(values.get('quantaphi:bubbles:notes:v1:work-cards'));
+ assert.equal(notes[0].text,'Here is a practical plan to update the README and run tests.');
+ const draft=get('button','Make work draft');
+ draft.handlers.click();
+ const work=nodes.find(e=>e.tag==='textarea'&&e.placeholder?.startsWith('A specific GitHub'));
+ assert.equal(work.value,notes[0].text);
+ const submit=get('button','Send approved request to Robot Brain');
+ assert.equal(submit.hidden,true);
+ assert.equal(calls.length,1,'copying a work draft does not submit it');
+ const saveHistory=nodes.find(e=>e.tag==='input'&&e.type==='checkbox');
+ assert.ok(saveHistory);
+ saveHistory.checked=true;saveHistory.handlers.change();
+ const history=JSON.parse(values.get('quantaphi:bubbles:history:v1:work-cards'));
+ assert.equal(history.length,2);
+ assert.equal(history[0].role,'user');
+ get('button','Clear chat').handlers.click();
+ assert.equal(values.has('quantaphi:bubbles:history:v1:work-cards'),false);
+ assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'clearing chat never destroys notes');
+});

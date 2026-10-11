@@ -12,6 +12,8 @@ const embedded=params.get('embed')==='1'&&window.parent!==window;
 const bubbleId=embedded?(String(params.get('id')||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,48)||'embedded'):'';
 const NOTES='quantaphi:bubbles:notes:v1'+(bubbleId?':'+bubbleId:'');
 const CONFIG='quantaphi:bubbles:config:v1'+(bubbleId?':'+bubbleId:'');
+const HISTORY='quantaphi:bubbles:history:v1'+(bubbleId?':'+bubbleId:'');
+const KEEP_HISTORY='quantaphi:bubbles:keep-history:v1'+(bubbleId?':'+bubbleId:'');
 const ROLES={
  assistant:{name:'Assistant',prompt:'Help with research, planning and everyday work. Be precise about what you have and have not done.'},
  singer:{name:'Singer & songwriter',prompt:'Help compose original songs, melodies described in words, verses and vocal practice. Speaking aloud is not singing an actual musical performance. Do not imitate a specific real artist voice.'},
@@ -22,9 +24,10 @@ const ROLES={
 const create=(tag,cls,content)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(content!==undefined)el.textContent=content;return el};
 const data=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||'null')??fallback}catch{return fallback}};
 const save=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}};
-let config=data(CONFIG,{role:'assistant',alias:'Bubbles',instructions:'',voice:false});
+const previousConfig=data(CONFIG,null);
+let config=previousConfig&&typeof previousConfig==='object'?previousConfig:{role:'assistant',alias:'Bubbles',instructions:'',voice:false};
 if(!ROLES[config.role])config.role='assistant';
-if(embedded){
+if(embedded&&!previousConfig){
  const requested=String(params.get('role')||'').toLowerCase();
  if(ROLES[requested])config.role=requested;
  const name=String(params.get('name')||'').trim().slice(0,38);
@@ -33,7 +36,15 @@ if(embedded){
  if(instruction)config.instructions=instruction;
 }
 let notes=data(NOTES,[]);if(!Array.isArray(notes))notes=[];
-let messages=[],busy=false,listening=null,ownerToken='',ownerReady=false,showing=false;
+let keepChat=data(KEEP_HISTORY,false)===true;
+let messages=keepChat?data(HISTORY,[]):[];
+if(!Array.isArray(messages))messages=[];
+messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)}));
+let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerReady=false,showing=false;
+function persistChat(){
+ if(!keepChat)return false;
+ return save(HISTORY,messages.slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)})));
+}
 const card=create('section','ba-card');
 card.append(create('div','ba-eyebrow','ORACLE OCTAVES · PERSONAL AI'),create('h2','','Bubbles AI'),create('p','ba-copy','Your floating voice-and-chat companion. Choose its job, give it directions, take notes, and bring an authorized work request to Robot Brain.'));
 const edit=create('div','ba-settings');
@@ -79,6 +90,12 @@ const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';spe
 const send=create('button','ba-send','Send');send.type='submit';
 actions.append(mic,speak,send);composer.append(input,actions);
 const tools=create('details','ba-tools');const summary=create('summary','','Notes & authorized work');tools.append(summary);
+const privacy=create('div','ba-privacy');
+const privacyLabel=create('label','ba-privacy-label');
+const historyToggle=create('input','');historyToggle.type='checkbox';historyToggle.checked=keepChat;
+privacyLabel.append(historyToggle,create('span','','Keep recent chat on this device (optional)'));
+const clearChat=create('button','ba-control','Clear chat');clearChat.type='button';
+privacy.append(privacyLabel,clearChat);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 const noteList=create('div','ba-notes');
@@ -86,8 +103,12 @@ const workText=create('textarea','ba-field');workText.rows=2;workText.maxLength=
 const workButton=create('button','ba-control','Send approved request to Robot Brain');workButton.type='button';workButton.hidden=true;
 const workStatus=create('p','ba-muted','Repository writes require your authorized GitHub integration. Only verified platform owners can submit to the existing Robot Brain inbox here.');
 workStatus.setAttribute('role','status');
-tools.append(create('label','','Private notes'),noteText,saveNote,noteList,create('label','','Approved work request'),workText,workButton,workStatus);
+tools.append(privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','','Approved work request'),workText,workButton,workStatus);
 panel.append(header,status,conversation,composer,tools);
+if(embedded){
+ const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
+ panel.insertBefore(program,composer);
+}
 document.body.append(launcher,panel);
 function updateRole(){
  config={role:persona.value,alias:alias.value.trim().slice(0,38)||'Bubbles',instructions:instructions.value.trim().slice(0,1200),voice:Boolean(config.voice)};
@@ -114,14 +135,66 @@ publish.addEventListener('click',async()=>{
  }
 });
 
-function display(text,who){
- const bubble=create('p','ba-message '+(who==='you'?'ba-you':'ba-assistant'),text);
- conversation.append(bubble);conversation.scrollTop=conversation.scrollHeight;
+function addNote(value){
+ const text=String(value||'').trim().slice(0,3000);
+ if(!text)return false;
+ const next=[{id:crypto.randomUUID?.()||String(Date.now()),text},...notes].slice(0,30);
+ if(!save(NOTES,next))return false;
+ notes=next;renderNotes();return true;
 }
+function speakText(value){
+ if(typeof speechSynthesis==='undefined'||typeof SpeechSynthesisUtterance==='undefined'){
+  status.textContent='Speech playback is not supported on this browser.';return;
+ }
+ try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-US';utterance.rate=1;speechSynthesis.speak(utterance)}
+ catch(error){status.textContent='Speech playback could not start: '+String(error?.message||error).slice(0,120)}
+}
+function display(text,who,greeting=false){
+ const line=create('div','ba-line '+(who==='you'?'ba-line-you':'ba-line-ai'));
+ const bubble=create('p','ba-message '+(who==='you'?'ba-you':'ba-assistant'),text);
+ line.append(bubble);
+ if(who!=='you'&&!greeting){
+  const row=create('div','ba-message-actions');
+  const remember=create('button','ba-miniaction','Save note');remember.type='button';
+  remember.addEventListener('click',()=>{
+   if(addNote(text)){tools.open=true;status.textContent='Reply saved as a private note on this device.'}
+   else status.textContent='Could not save note. Browser storage is unavailable.';
+  });
+  const task=create('button','ba-miniaction','Make work draft');task.type='button';
+  task.addEventListener('click',()=>{
+   workText.value=String(text).slice(0,4000);
+   tools.open=true;workText.focus();
+   workStatus.textContent=ownerReady?'Task draft prepared. Review it and press the approved Robot Brain button to send.':'Task draft prepared locally. Robot Brain submission requires a verified owner session; no work was sent.';
+  });
+  const say=create('button','ba-miniaction','Read aloud');say.type='button';
+  say.addEventListener('click',()=>speakText(text));
+  row.append(remember,task,say);line.append(row);
+ }
+ conversation.append(line);conversation.scrollTop=conversation.scrollHeight;
+}
+for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
+historyToggle.addEventListener('change',()=>{
+ keepChat=historyToggle.checked;
+ save(KEEP_HISTORY,keepChat);
+ if(keepChat){
+  status.textContent=persistChat()?'Recent conversation saved locally on this device.':'Could not save chat history to this browser.';
+ }else{
+  try{localStorage.removeItem(HISTORY)}catch{}
+  status.textContent='Chat history will not be saved to device storage. Current messages remain until cleared or reloaded.';
+ }
+});
+clearChat.addEventListener('click',()=>{
+ messages=[];conversation.replaceChildren();greeted=false;
+ try{localStorage.removeItem(HISTORY)}catch{}
+ status.textContent='Local chat cleared. Private notes remain until you delete them separately.';
+});
 function toggle(open){
  showing=Boolean(open);panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
  if(embedded)window.parent.postMessage({type:'quantaphi:bubbles:size',open:showing},'*');
- if(showing){if(!messages.length)display('Hello! I am '+config.alias+'. Choose my role on the Bubbles card. Tap Talk to use your microphone, or type a message.','ai');input.focus()}
+ if(showing){
+  if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. Ask a question, use Talk for the microphone, or save my replies as notes.','ai',true);greeted=true}
+  input.focus();
+ }
  else{try{listening?.stop()}catch{}listening=null;try{speechSynthesis.cancel()}catch{}}
 }
 launcher.addEventListener('click',()=>toggle(!showing));launchCard.addEventListener('click',()=>toggle(true));close.addEventListener('click',()=>toggle(false));
@@ -136,6 +209,7 @@ async function sendMessage(text){
  busy=true;send.disabled=true;mic.disabled=true;display(request,'you');input.value='';
  const role=ROLES[config.role]||ROLES.assistant;
  const history=messages.slice(-10).map(m=>m.role+': '+m.text.slice(0,650)).join('\n');
+ messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
  status.textContent=config.alias+' is thinking…';
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger inside QuantaPhi.','Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
@@ -147,11 +221,9 @@ async function sendMessage(text){
   const json=await response.json().catch(()=>({}));
   if(!response.ok||json.ok===false)throw Error(String(json.error||'Oracle conversation failed'));
   const answer=extract(json);if(!answer)throw Error('The AI returned no spoken or written reply');
-  messages.push({role:'user',text:request},{role:'assistant',text:answer});messages=messages.slice(-20);
+  messages.push({role:'assistant',text:answer});messages=messages.slice(-20);persistChat();
   display(answer,'ai');status.textContent=config.alias+' · response received';
-  if(config.voice&&typeof speechSynthesis!=='undefined'&&typeof SpeechSynthesisUtterance!=='undefined'){
-   speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(answer.slice(0,2800));utterance.lang='en-US';utterance.rate=1;speechSynthesis.speak(utterance);
-  }
+  if(config.voice)speakText(answer);
  }catch(error){const message='I could not complete the response: '+String(error?.message||error).slice(0,150);display(message,'ai');status.textContent=message}
  finally{busy=false;send.disabled=false;mic.disabled=false}
 }
@@ -173,7 +245,10 @@ function renderNotes(){
  noteList.replaceChildren();
  for(const note of notes.slice(0,8)){const box=create('div','ba-note');box.append(create('p','',note.text));const remove=create('button','ba-remove','Delete');remove.type='button';remove.addEventListener('click',()=>{notes=notes.filter(n=>n.id!==note.id);save(NOTES,notes);renderNotes()});box.append(remove);noteList.append(box)}
 }
-saveNote.addEventListener('click',()=>{const value=noteText.value.trim();if(!value)return;notes.unshift({id:crypto.randomUUID?.()||String(Date.now()),text:value.slice(0,3000)});notes=notes.slice(0,30);if(save(NOTES,notes)){noteText.value='';renderNotes();workStatus.textContent='Note saved locally on this device. Not sent to AI or GitHub.'}else{workStatus.textContent='Could not save: browser storage is unavailable.'}});
+saveNote.addEventListener('click',()=>{
+ if(addNote(noteText.value)){noteText.value='';workStatus.textContent='Note saved locally on this device. Not sent to AI or GitHub.'}
+ else workStatus.textContent='Could not save note: check the text and browser storage.';
+});
 renderNotes();
 // A third-party page embedding this messenger never sees owner-only GitHub controls.
 async function getOwnerToken(){
