@@ -16,6 +16,7 @@ const HISTORY='quantaphi:bubbles:history:v1'+(bubbleId?':'+bubbleId:'');
 const KEEP_HISTORY='quantaphi:bubbles:keep-history:v1'+(bubbleId?':'+bubbleId:'');
 const ROLES={
  assistant:{name:'Assistant',prompt:'Help with research, planning and everyday work. Be precise about what you have and have not done.'},
+ builder:{name:'Infinity Builder',prompt:'Act as the QuantaPhi/Infinity build architect. Turn an idea into practical steps, suitable repository work, tests, receipts and tool boundaries. Maintain a clear builder atmosphere, but never claim edits, deployments or wallet payments without confirmed tools.'},
  singer:{name:'Singer & songwriter',prompt:'Help compose original songs, melodies described in words, verses and vocal practice. Speaking aloud is not singing an actual musical performance. Do not imitate a specific real artist voice.'},
  listener:{name:'Supportive listener',prompt:'Listen compassionately, reflect feelings and offer practical support without pretending to be a licensed therapist or providing diagnosis. Suggest professional help for urgent needs.'},
  specialist:{name:'Specialist',prompt:'Use the user-customized expertise. State uncertainty and verification needs for consequential work.'},
@@ -110,7 +111,11 @@ const workText=create('textarea','ba-field');workText.rows=2;workText.maxLength=
 const workButton=create('button','ba-control','Send approved request to Robot Brain');workButton.type='button';workButton.hidden=true;
 const workStatus=create('p','ba-muted','Repository writes require your authorized GitHub integration. Only verified platform owners can submit to the existing Robot Brain inbox here.');
 workStatus.setAttribute('role','status');
-tools.append(privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','','Approved work request'),workText,workButton,workStatus);
+const toolRail=create('nav','ba-tool-rail');toolRail.setAttribute('aria-label','Infinity builder workspaces');
+for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi','/infinity-phi/'],['Code · Omni Phi','/omni-phi/']]){
+ const link=create('a','ba-tool-link',label);link.href=path;link.rel='noopener';toolRail.append(link);
+}
+tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','','Approved work request'),workText,workButton,workStatus);
 panel.append(header,status,conversation,composer,tools);
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
