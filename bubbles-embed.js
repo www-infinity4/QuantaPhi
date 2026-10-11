@@ -7,7 +7,7 @@ if(!script)return;
 const ORIGIN='https://quantaphi.org';
 const MAXLEN={name:38,instructions:800,id:48};
 const role=String(script.dataset.bubbleRole||'assistant').toLowerCase();
-const allowedRoles=new Set(['assistant','singer','listener','specialist','github']);
+const allowedRoles=new Set(['assistant','builder','singer','listener','specialist','github']);
 const name=String(script.dataset.bubbleName||'Bubbles').slice(0,MAXLEN.name);
 const instructions=String(script.dataset.bubbleInstructions||'').slice(0,MAXLEN.instructions);
 const id=String(script.dataset.bubbleId||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,MAXLEN.id)||'embedded';
