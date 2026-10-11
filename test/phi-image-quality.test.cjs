@@ -121,7 +121,8 @@ test('search-generated sourced story is displayed after the overview assimilatio
  assert.ok(html.indexOf('id="result"') < html.indexOf('id="infiniteBook"'),'Overview must precede story card in the HTML');
  assert.ok(html.indexOf('id="infiniteBook"') < html.indexOf('id="phiImageBuilder"'),'Story and illustration come before the image builder');
  assert.match(book,/lastSearchQuery=query/,'search events must refresh the story even while the catalog initializes');
- assert.match(book,/if \(ready && \(!query \|\| current\?\.id !== ready\.id\)\) return/,'verified search-specific story may replace the prepared discovery');
+ assert.match(book,/const ready = searchMode \? null : pickUnique/,'search-only Asteroids do not reuse unrelated prebuilt stories');
+ assert.match(book,/if \(ready && current\?\.id !== ready\.id\) return/,'new sourced discoveries cannot overwrite another visible card');
 });
 
 test('completed story images automatically attach and update is not a redundant save',()=>{
