@@ -4,6 +4,9 @@ on:
     paths:
       - 'bubbles-ai.js'
       - 'bubbles-ai.css'
+      - 'bubbles-embed.js'
+      - 'bubbles.html'
+      - 'bubbles/index.html'
       - 'phi-story-writer.js'
       - 'phi-story-writer.css'
       - 'phi-visual-render.js'
@@ -15,6 +18,9 @@ on:
     paths:
       - 'bubbles-ai.js'
       - 'bubbles-ai.css'
+      - 'bubbles-embed.js'
+      - 'bubbles.html'
+      - 'bubbles/index.html'
       - 'phi-story-writer.js'
       - 'phi-story-writer.css'
       - 'phi-visual-render.js'
@@ -32,5 +38,6 @@ jobs:
       - name: Check browser script syntax and behavior contracts
         run: |
           node --check bubbles-ai.js
+          node --check bubbles-embed.js
           node --check phi-story-writer.js
           node --test test/bubbles-story-writer.test.cjs
