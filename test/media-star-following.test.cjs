@@ -185,3 +185,58 @@ test('official sync marks X account verified only after a complete matching foll
   assert.equal(follows[0].handle,'SpaceTester');
  }finally{global.fetch=prior}
 });
+
+test('personal episode-weighted curator includes Fred even if not followed and ignores empty hosts',async()=>{
+ const {call,db}=await fixture();
+ const ts=Date.now();
+ db.prepare("INSERT INTO space_hosts(x_user_id,handle,display_name,profile_url,featured,updated_at) VALUES(?,?,?,?,1,?)")
+ .run('dotkrueger','dotkrueger','Fred Krueger','https://x.com/dotkrueger',ts);
+ for(const id of ['1OyKAjYPeXqGb','1BRJjPRygqaKw','1BRJjmLbpepGw']){
+  db.prepare("INSERT INTO space_episodes(space_id,host_user_id,title,space_url,source_type,availability,imported_at) VALUES(?,?,?,?,'curated_archive','indexed',?)")
+  .run(id,'dotkrueger','Fred Space '+id,'https://x.com/i/spaces/'+id,ts);
+ }
+ await call('/v1/following/import',tok,{following:['HodlMagoo']});
+ const before=await call('/v1/hosts',tok);assert.equal((await before.json()).eligibleCount,0);
+ const set=await call('/v1/radio/preferences',tok,{mode:'episodes_weighted',includeFred:true});
+ assert.equal(set.status,200);assert.equal((await set.json()).includeFred,true);
+ const hosts=await(await call('/v1/hosts',tok)).json();
+ assert.equal(hosts.eligibleCount,1);assert.equal(hosts.hosts[0].count,3);
+ const ids=[];
+ for(let i=0;i<3;i++){
+  const response=await call('/v1/roll',tok,{rollId:'fred-radio-roll-'+i});
+  assert.equal(response.status,200);
+  const draw=await response.json();
+  assert.equal(draw.selectionMode,'episodes_weighted');
+  assert.equal(draw.roll.requiresOriginalUnlock,true);
+  assert.equal(draw.roll.url,null);
+  assert.equal(draw.roll.hostRange,1);
+  ids.push(draw.roll.spaceId);
+ }
+ assert.equal(new Set(ids).size,3,'every episode must differ before round resets');
+ const retry=await(await call('/v1/roll',tok,{rollId:'fred-radio-roll-0'})).json();
+ assert.equal(retry.roll.spaceId,ids[0]);
+ const fourth=await(await call('/v1/roll',tok,{rollId:'fred-radio-roll-next'})).json();
+ assert.equal(fourth.roll.hostRange,1);
+ const other=await(await call('/v1/hosts',other)).json();
+ assert.equal(other.eligibleCount,0,'curator list must be owner-specific');
+});
+test('owner-reported unplayable Space is removed without changing global source status or other users',async()=>{
+ const {call,db}=await fixture();
+ const ts=Date.now();
+ db.prepare("INSERT INTO space_hosts(x_user_id,handle,display_name,profile_url,featured,updated_at) VALUES(?,?,?,?,0,?)")
+ .run('handle:hodlmagoo','HodlMagoo','Magoo PhD','https://x.com/HodlMagoo',ts);
+ const id='1OyKAjYPeXqGb';
+ db.prepare("INSERT INTO space_episodes(space_id,host_user_id,title,space_url,source_type,availability,imported_at) VALUES(?,?,?,?,'owner_submitted','indexed',?)")
+ .run(id,'handle:hodlmagoo','A submitted recording','https://x.com/i/spaces/'+id,ts);
+ await call('/v1/following/import',tok,{following:['HodlMagoo']});
+ await call('/v1/following/import',other,{following:['HodlMagoo']});
+ const failed=await call('/v1/playback/report',tok,{spaceId:id,state:'unavailable'});
+ assert.equal(failed.status,200);assert.equal((await failed.json()).globalPlaybackVerified,false);
+ assert.equal((await(await call('/v1/hosts',tok)).json()).eligibleCount,0);
+ assert.equal((await(await call('/v1/hosts',other)).json()).eligibleCount,1);
+ assert.equal(db.prepare("SELECT availability FROM space_episodes WHERE space_id=?").get(id).availability,'indexed');
+ const no=await call('/v1/roll',tok,{rollId:'new-without-audio'});assert.equal(no.status,404);
+ const restored=await call('/v1/playback/report',tok,{spaceId:id,state:'played'});
+ assert.equal(restored.status,200);
+ assert.equal((await(await call('/v1/hosts',tok)).json()).eligibleCount,1);
+});
