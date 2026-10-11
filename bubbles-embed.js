@@ -13,7 +13,7 @@ const instructions=String(script.dataset.bubbleInstructions||'').slice(0,MAXLEN.
 const id=String(script.dataset.bubbleId||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,MAXLEN.id)||'embedded';
 const options=new URLSearchParams({embed:'1',id,role:allowedRoles.has(role)?role:'assistant',name,instructions});
 const iframe=document.createElement('iframe');
-iframe.src=ORIGIN+'/bubbles/?'+options;
+iframe.src=ORIGIN+'/bubbles.html?'+options;
 iframe.title=name+' · Bubbles AI messenger';
 iframe.loading='eager';
 iframe.setAttribute('allow','microphone');
