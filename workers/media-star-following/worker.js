@@ -165,15 +165,28 @@ async function roll(env,owner,rollId){
 async function handle(request,env){
  const url=new URL(request.url),path=url.pathname;
  if(path==='/health')return out({ok:true,service:'media-star-following-spaces',xConnected:Boolean(env.X_OWNER_ID&&env.X_USER_ACCESS_TOKEN),playsAudioLocally:false});
- if(path==='/v1/featured'&&request.method==='GET'){
-  const h=await env.DB.prepare("SELECT display_name AS name,handle FROM space_hosts WHERE featured=1 ORDER BY handle LIMIT 12").all();
-  return out({featured:h.results||[]});
- }
  if(!env.DB)return out({error:'media_star_database_unavailable'},503);
+ if(path==='/v1/featured'&&request.method==='GET'){
+  // A priority source URL is a discovery lead, NOT a playable X replay.
+  const h=await env.DB.prepare(`SELECT h.display_name AS name,h.handle,h.x_user_id AS hostId,
+    COUNT(DISTINCT e.space_id) AS episodes,
+    MAX(CASE WHEN s.source_kind='public_archive' THEN s.source_url ELSE NULL END) AS archiveUrl
+    FROM space_hosts h
+    LEFT JOIN space_episodes e ON e.host_user_id=h.x_user_id AND e.availability IN ('indexed','verified_replay')
+    LEFT JOIN space_host_sources s ON s.host_user_id=h.x_user_id
+    WHERE h.featured=1
+    GROUP BY h.x_user_id,h.display_name,h.handle ORDER BY CASE WHEN h.handle='dotkrueger' THEN 0 ELSE 1 END,lower(h.handle) LIMIT 12`).all();
+  return out({featured:(h.results||[]).map(x=>({...x,episodes:Number(x.episodes||0),archiveUrl:x.archiveUrl||null})),discoveryLinksNotReplays:true});
+ }
  try{
   const owner=await account(request,env);
   if(path==='/v1/following'&&request.method==='GET'){
-   const r=await env.DB.prepare('SELECT handle,display_name AS name,source FROM followed_hosts WHERE owner_id=? AND active=1 ORDER BY lower(handle) LIMIT 500').bind(owner).all();
+   const r=await env.DB.prepare(`SELECT f.handle,f.display_name AS name,f.source,COUNT(DISTINCT e.space_id) AS episodes
+     FROM followed_hosts f
+     LEFT JOIN space_hosts h ON lower(h.handle)=lower(f.handle)
+     LEFT JOIN space_episodes e ON e.host_user_id=h.x_user_id AND e.availability IN ('indexed','verified_replay')
+     WHERE f.owner_id=? AND f.active=1 GROUP BY f.x_user_id,f.handle,f.display_name,f.source
+     ORDER BY lower(f.handle) LIMIT 500`).bind(owner).all();
    return out({following:r.results||[],count:(r.results||[]).length});
   }
   if(path==='/v1/hosts'&&request.method==='GET'){
