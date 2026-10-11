@@ -1,6 +1,5 @@
 name: Oracle daily card, wallet and security audit
 on:
-  workflow_dispatch:
   schedule:
     - cron: '17 5 * * *'
   workflow_dispatch:
@@ -8,7 +7,7 @@ on:
     branches: [main]
     paths: ['phi-scholastic-data.*','phi-assimilation.js','music-quant-cloud.js','wallet-runtime.js','workers/quanta-phi-ledger/worker.js','scripts/oracle-daily-audit.mjs','scripts/oracle-safe-repair.mjs','test/oracle-safe-repair.test.mjs','.github/workflows/oracle-daily-audit.yml']
   pull_request:
-    paths: ['phi-scholastic-data.*','phi-assimilation.js','music-quant-cloud.js','wallet-runtime.js','workers/quanta-phi-ledger/worker.js','scripts/oracle-daily-audit.mjs','.github/workflows/oracle-daily-audit.yml']
+    paths: ['phi-scholastic-data.*','phi-assimilation.js','music-quant-cloud.js','wallet-runtime.js','workers/quanta-phi-ledger/worker.js','scripts/oracle-daily-audit.mjs','scripts/oracle-safe-repair.mjs','test/oracle-safe-repair.test.mjs','.github/workflows/oracle-daily-audit.yml']
 permissions:
   contents: write
   pull-requests: write
