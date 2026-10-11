@@ -3,7 +3,7 @@
 const root=document.getElementById('followingSpacesRadio');if(!root)return;
 const API='https://media-star-following-spaces.marvaseater.workers.dev';
 const item=(tag,cls,str)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(str!==undefined)e.textContent=str;return e};
-const state={following:[],hosts:[],featured:[],choice:null,loading:false,notice:'Connect the existing wallet and sync your X following list. Fred stays highlighted separately.'};
+const state={following:[],hosts:[],featured:[],ownerAccount:null,xConnected:false,choice:null,loading:false,notice:'Connect the existing wallet and sync your X following list. Fred stays highlighted separately.'};
 let sessionRequest=null;
 async function token(){return String(await window.QuantaCloudConnection?.resolveDeviceToken?.()||'')}
 async function query(path,method='GET',data){
@@ -19,8 +19,9 @@ function link(url,label){const a=item('a','',label);a.href=url;a.target='_blank'
 async function refresh(){
  if(state.loading)return;
  state.loading=true;render();
- try{const [following,hosts,featured]=await Promise.all([query('/v1/following'),query('/v1/hosts'),query('/v1/featured')]);
+ try{const [following,hosts,featured,xAccount]=await Promise.all([query('/v1/following'),query('/v1/hosts'),query('/v1/featured'),query('/v1/x/account').catch(()=>({account:null,xConnected:false}))]);
   state.following=following.following||[];state.hosts=hosts.hosts||[];state.featured=featured.featured||[];
+  state.ownerAccount=xAccount.account||null;state.xConnected=!!xAccount.xConnected;
   state.notice=state.following.length+' followed accounts in this library · '+state.hosts.length+' with indexed Space links.';
  }catch(e){state.notice=String(e.message||e)}
  finally{state.loading=false;render()}
@@ -108,6 +109,32 @@ function render(){
  root.replaceChildren();const card=item('article','fsr-card'),head=item('div','fsr-head'),left=item('div');
  left.append(item('span','fsr-label','TWO-STAGE FOLLOWING RADIO'),item('strong','fsr-brand','⭐ Media Star'),item('h2','','Followed X Spaces · Radio'));
  head.append(left);card.append(head);
+ const ownerPanel=item('section','fsr-owner-profile');
+ ownerPanel.append(item('strong','','My X Following account'));
+ if(state.ownerAccount){
+  const profile=state.ownerAccount;
+  ownerPanel.append(item('p','','@'+profile.handle+' · '+(profile.verification==='x_api_verified'?'Connected and verified by X':'Account saved · X authorization not yet connected')));
+  const path=link('https://x.com/'+profile.handle+'/following','Open my Following on X ↗');ownerPanel.append(path);
+  if(!state.xConnected)ownerPanel.append(item('small','','Your imported screenshot follows remain saved. X authorization is required to sync your complete live list.'));
+ }else{
+  ownerPanel.append(item('p','','Register your X @username to identify which Following list Media Star should use.'));
+ }
+ const accountSettings=item('details','fsr-profile-edit');
+ accountSettings.append(item('summary','',''+(state.ownerAccount?'Change X account':'Set my X username')));
+ const claimInput=item('input');claimInput.type='text';claimInput.maxLength=16;claimInput.placeholder='@username';
+ claimInput.value=state.ownerAccount?'@'+state.ownerAccount.handle:'';
+ claimInput.setAttribute('aria-label','X account username');
+ accountSettings.append(claimInput);
+ accountSettings.append(button('Save my X account',async()=>{
+  const name=claimInput.value.trim().replace(/^@/,'');
+  if(!/^[A-Za-z0-9_]{1,15}$/.test(name)){notice('Enter a valid X @username, up to 15 letters, numbers, or underscores.');return}
+  try{
+   const response=await query('/v1/x/account','POST',{handle:name});
+   state.ownerAccount=response.account;state.notice='X username saved. Official X authorization must match this username before the full list can sync.';
+   render();
+  }catch(e){notice(String(e.message||e))}
+ }));
+ ownerPanel.append(accountSettings);card.append(ownerPanel);
  const featured=item('div','fsr-feature');
  featured.append(item('strong','','Featured · Fred Krueger'),item('p','','The original Fred Curio Spotlight stays highlighted, with its independent StarCoin unlocks.'));
  const fred=link('#fredSpacesRadio','Open Fred Media Star →');fred.target='_self';featured.append(fred);card.append(featured);
