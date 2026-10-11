@@ -34,7 +34,7 @@ test('following snapshot preserves owner separation, anti-duplicates and 41 elig
  const {call,db}=await fixture();
  const people=Array.from({length:41},(_,i)=>'follow'+String(i+1).padStart(2,'0'));
  let r=await call('/v1/following/import',tok,{following:people});assert.equal(r.status,200);assert.equal((await r.json()).imported,41);
- assert.equal((await(call('/v1/following',other)).json()).count,0);
+ assert.equal((await (await call('/v1/following',other)).json()).count,0);
  for(let i=0;i<41;i++){
   const handle=people[i],hid='handle:'+handle;
   for(let j=1;j<=33;j++){
