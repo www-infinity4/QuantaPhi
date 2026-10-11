@@ -97,3 +97,27 @@ test('original X Space import has durable receipt and retry cannot double import
  const otherResponse=await call('/v1/history',other);
  assert.equal(otherResponse.status,200);assert.equal((await otherResponse.json()).count,0);
 });
+
+test('featured Aequitas/Cardone archive leads are NOT manufactured playable episodes',async()=>{
+ const {db,call}=await fixture();
+ const timestamp=Date.now();
+ db.prepare("INSERT INTO space_hosts(x_user_id,handle,display_name,profile_url,featured,updated_at) VALUES(?,?,?,?,1,?)")
+ .run('handle:aequitas42','Aequitas42','Aequitas','https://x.com/Aequitas42',timestamp);
+ db.prepare("INSERT INTO space_host_sources(host_user_id,source_url,source_kind,review_status,notes) VALUES(?,?,'public_archive','discovery_only',?)")
+ .run('handle:aequitas42','https://example.org/aequitas-archive','Test only; no replay verified');
+ const featured=await(await call('/v1/featured')).json();
+ const aequitas=featured.featured.find(x=>x.handle==='Aequitas42');
+ assert.equal(aequitas.episodes,0);
+ assert.equal(aequitas.archiveUrl,'https://example.org/aequitas-archive');
+ assert.equal(featured.discoveryLinksNotReplays,true);
+});
+test('owner-imported following displays all indexed and empty host records without leaking other owners',async()=>{
+ const {call}=await fixture();
+ await call('/v1/following/import',tok,{following:['Aequitas42','BankerWeimar']});
+ const a=await(await call('/v1/following',tok)).json();
+ assert.equal(a.count,2);
+ assert.equal(a.following.find(x=>x.handle==='Aequitas42').episodes,0);
+ assert.equal(a.following.find(x=>x.handle==='Aequitas42').source,'owner_import');
+ const b=await(await call('/v1/following',other)).json();
+ assert.equal(b.count,0);
+});
