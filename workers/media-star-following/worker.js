@@ -23,6 +23,16 @@ function directSpace(input){
  }catch{return null}
 }
 const cleanHandle=v=>safe(v,40).replace(/^@/,'').replace(/[^A-Za-z0-9_]/g,'').slice(0,15);
+const exactXHandle=v=>{const handle=String(v??'').trim().replace(/^@/,'');if(!/^[A-Za-z0-9_]{1,15}$/.test(handle))throw error('invalid_x_handle');return handle};
+async function linkedAccount(env,owner){
+ return await env.DB.prepare('SELECT handle,verification,x_user_id AS userId,verified_at AS verifiedAt FROM x_account_links WHERE owner_id=?').bind(owner).first();
+}
+async function declareAccount(env,owner,raw){
+ const handle=exactXHandle(raw),stamp=Date.now(),previous=await linkedAccount(env,owner);
+ if(previous?.handle.toLowerCase()===handle.toLowerCase())return previous;
+ await env.DB.prepare("INSERT INTO x_account_links(owner_id,handle,verification,x_user_id,declared_at,verified_at) VALUES(? ,?,'owner_claimed',NULL,?,NULL) ON CONFLICT(owner_id) DO UPDATE SET handle=excluded.handle,verification='owner_claimed',x_user_id=NULL,declared_at=excluded.declared_at,verified_at=NULL").bind(owner,handle,stamp).run();
+ return await linkedAccount(env,owner);
+}
 const randBelow=n=>{
  if(!Number.isInteger(n)||n<=0||n>0xffffffff)throw error('invalid_roll_range');
  const max=0x100000000,ceiling=Math.floor(max/n)*n;
@@ -70,10 +80,13 @@ async function followImport(env,owner,hosts,source){
 }
 async function syncX(env,owner){
  if(!env.X_OWNER_ID||!env.X_USER_ACCESS_TOKEN||owner!==env.X_OWNER_ID)throw error('x_account_not_connected',503);
+ const declared=await linkedAccount(env,owner);
+ if(!declared?.handle)throw error('x_handle_not_registered',409);
  const headers={Authorization:'Bearer '+env.X_USER_ACCESS_TOKEN,Accept:'application/json'};
  const profile=await fetch('https://api.x.com/2/users/me',{headers,signal:AbortSignal.timeout(12000)});
  if(!profile.ok)throw error('x_authentication_failed',502);
- const me=(await profile.json()).data;if(!me?.id)throw error('x_identity_missing',502);
+ const me=(await profile.json()).data;if(!me?.id||!me?.username)throw error('x_identity_missing',502);
+ if(me.username.toLowerCase()!==declared.handle.toLowerCase())throw error('x_account_handle_mismatch',403);
  const all=[],seen=new Set();let cursor='',pages=0;
  do{
   const u=new URL('https://api.x.com/2/users/'+encodeURIComponent(me.id)+'/following');
@@ -93,7 +106,9 @@ async function syncX(env,owner){
  }while(cursor&&pages<12);
  if(cursor)throw error('following_pagination_incomplete',502);
  if(!all.length)throw error('following_list_empty',409);
- return followImport(env,owner,all,'x_api_verified');
+ const imported=await followImport(env,owner,all,'x_api_verified');
+ await env.DB.prepare("UPDATE x_account_links SET verification='x_api_verified',x_user_id=?,verified_at=? WHERE owner_id=? AND lower(handle)=lower(?)").bind(me.id,Date.now(),owner,declared.handle).run();
+ return {...imported,verifiedXHandle:me.username};
 }
 async function syncSpaceMetadata(env,owner){
  // The X API may return only supported discoverable Spaces, not a full history
@@ -180,6 +195,17 @@ async function handle(request,env){
  }
  try{
   const owner=await account(request,env);
+  if(path==='/v1/x/account'&&request.method==='GET'){
+   const claimed=await linkedAccount(env,owner);
+   return out({account:claimed||null,xConnected:Boolean(env.X_OWNER_ID&&env.X_USER_ACCESS_TOKEN&&owner===env.X_OWNER_ID)});
+  }
+  if(path==='/v1/x/account'&&request.method==='POST'){
+   const raw=await request.text();
+   if(raw.length>1024)throw error('request_too_large',413);
+   let data;try{data=JSON.parse(raw)}catch{throw error('invalid_json')}
+   const claimed=await declareAccount(env,owner,data?.handle);
+   return out({account:claimed,verifiedByX:false,followListSynced:false});
+  }
   if(path==='/v1/following'&&request.method==='GET'){
    const r=await env.DB.prepare(`SELECT f.handle,f.display_name AS name,f.source,COUNT(DISTINCT e.space_id) AS episodes
      FROM followed_hosts f
