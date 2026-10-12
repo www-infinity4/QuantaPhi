@@ -23,7 +23,7 @@ function rename(title){const p=active();if(!p)return false;const all=read(),item
 async function tokens(){
  const ledger=root.QuantaUnifiedTokenLedger;
  if(typeof ledger?.load!=='function')return [];
- try{return (await ledger.load()).filter(t=>t?.id&&t.cloudStatus!=='pending'&&t.stage!=='pending').map(t=>({id:String(t.id),cloudTokenId:t.cloudTokenId||'',title:clean(t.query||t.title,110)})).slice(0,400)}
+ try{return (await ledger.load()).filter(t=>t?.id&&t.cloudStatus==='saved'&&t.cloudTokenId).map(t=>({id:String(t.id),cloudTokenId:t.cloudTokenId||'',title:clean(t.query||t.title,110)})).slice(0,400)}
  catch{return []}
 }
 async function attachToken(tokenId){
