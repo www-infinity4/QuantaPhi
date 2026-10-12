@@ -91,8 +91,28 @@ async function clubFetch(url,accept){
   'Accept':accept,'User-Agent':'QuantaPhi-RadioClubhouse/1.0 (+https://quantaphi.org)'
  }});
  if(!response.ok)throw Error('forum_http_'+response.status);
- const content=await response.text();
- if(content.length>2_000_000)throw Error('forum_response_too_large');
+ const maxBytes=2_000_000;
+ const declared=Number(response.headers.get('content-length')||0);
+ if(Number.isFinite(declared)&&declared>maxBytes){
+  await response.body?.cancel();
+  throw Error('forum_response_too_large');
+ }
+ if(!response.body)throw Error('forum_empty_response');
+ const reader=response.body.getReader(),decoder=new TextDecoder();
+ let bytes=0,content='';
+ try{
+  while(true){
+   const part=await reader.read();
+   if(part.done)break;
+   bytes+=part.value.byteLength;
+   if(bytes>maxBytes){
+    await reader.cancel();
+    throw Error('forum_response_too_large');
+   }
+   content+=decoder.decode(part.value,{stream:true});
+  }
+  content+=decoder.decode();
+ }finally{reader.releaseLock()}
  return content;
 }
 async function radioClubhouseFeed(request){
