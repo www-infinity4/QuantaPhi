@@ -46,7 +46,9 @@ function ui(){
  const rewardStatus=make('p','sw-reward-status','A verified Star, Collect, or Share submits a separate +0.1 StarCoin receipt.');rewardStatus.id='sw-reward-status';rewardStatus.setAttribute('role','status');
  const history=make('section','sw-card sw-history');history.append(make('strong','','Your saved drafts'));
  const picker=make('select','sw-field');picker.id='sw-history';picker.setAttribute('aria-label','Open a saved Story Writer draft');
- history.append(picker,make('p','sw-muted','Drafts and illustrations are saved on this device. Cloud backup is not connected.'));
+ const exportBtn=make('button','','Download story text backup');exportBtn.type='button';exportBtn.id='sw-export';
+ const historyState=make('p','sw-muted','Loading saved stories…');historyState.id='sw-history-state';
+ history.append(picker,exportBtn,historyState);
  section.append(header,sourceArt,sourceCaption,art,artStatus,body,controls,rewardStatus);
  root.append(form,section,history);
  $('#sw-write').addEventListener('click',()=>void writeStory());
@@ -58,6 +60,7 @@ function ui(){
  $('#sw-fix').addEventListener('click',()=>void fix());
  $('#sw-retry-image').addEventListener('click',()=>void illustrate(active));
  picker.addEventListener('change',()=>{active=stories.find(x=>x.id===picker.value)||null;renderStory();});
+ exportBtn.addEventListener('click',exportStories);
  historyList();
 }
 function note(message){$('#sw-notice').textContent=message;const status=$('#sw-reward-status');if(status)status.textContent=message}
@@ -66,11 +69,64 @@ function historyList(){
  const empty=make('option','','Choose a draft to reopen');empty.value='';picker.append(empty);
  for(const s of stories){const o=make('option','',s.title||'Untitled');o.value=s.id;picker.append(o)}
  if(active)picker.value=active.id;
+ picker.disabled=!stories.length;
+ const exportBtn=$('#sw-export');if(exportBtn)exportBtn.disabled=!stories.length;
+ const status=$('#sw-history-state');
+ if(status)status.textContent=stories.length
+  ?stories.length+' stories saved on this device (browser storage + IndexedDB backup). Cloud backup is not connected.'
+  :'No saved stories were found in this browser. Cloud backup is not connected.';
 }
-function saveStory(story){
+async function persistDraft(story){
+ const database=await db();
+ try{return await new Promise((resolve,reject)=>{
+  const tx=database.transaction('drafts','readwrite');tx.objectStore('drafts').put(story);
+  tx.oncomplete=()=>resolve(true);tx.onerror=()=>reject(tx.error||Error('Draft backup failed'));
+ })}finally{database.close()}
+}
+async function saveStory(story){
  stories=[story,...stories.filter(x=>x.id!==story.id)].slice(0,25);
- if(!store(KEY,stories))note('Draft is visible but browser storage is full. Copy the text to keep it.');
+ const savedLocal=store(KEY,stories);
+ let savedBackup=false;
+ try{savedBackup=await persistDraft(story)}catch(error){console.warn('Story Writer draft backup unavailable',error)}
  historyList();
+ if(!savedLocal&&!savedBackup)note('Device storage is full or blocked. Copy your story before leaving this page.');
+ return savedLocal||savedBackup;
+}
+async function recoverDrafts(){
+ let database;
+ try{
+  database=await db();
+  const recovered=await new Promise((resolve,reject)=>{
+   const tx=database.transaction('drafts','readonly'),req=tx.objectStore('drafts').getAll();
+   req.onsuccess=()=>resolve(req.result||[]);req.onerror=()=>reject(req.error||Error('Cannot restore drafts'));
+  });
+  const before=new Set(stories.map(s=>s.id));
+  const combined=new Map();
+  for(const story of [...recovered,...stories]){
+   if(story&&typeof story.id==='string'&&typeof story.body==='string')combined.set(story.id,story);
+  }
+  stories=[...combined.values()].sort((a,b)=>Date.parse(b.createdAt||0)-Date.parse(a.createdAt||0)).slice(0,25);
+  if(stories.length)store(KEY,stories);
+  if(stories.length)await new Promise((resolve,reject)=>{
+   const tx=database.transaction('drafts','readwrite'),object=tx.objectStore('drafts');
+   for(const story of stories)object.put(story);
+   tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error||Error('Draft migration failed'));
+  });
+  historyList();
+  const restored=stories.filter(s=>!before.has(s.id)).length;
+  if(restored)note('Recovered '+restored+' saved story draft(s) from this browser’s backup.');
+ }catch(error){
+  console.warn('Story Writer browser backup is unavailable',error);
+  historyList();
+ }finally{database?.close()}
+}
+function exportStories(){
+ if(!stories.length)return note('No saved story text to export yet.');
+ const payload={format:'phi-story-writer-text-backup-v1',exportedAt:new Date().toISOString(),stories};
+ const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}));
+ const a=document.createElement('a');a.href=url;a.download='phi-story-writer-backup.json';
+ document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);
+ note('Story text backup prepared. Keep the downloaded file safe; images are stored separately.');
 }
 function formatTitle(raw,idea){
  return String(raw||idea.split(/[.!?]/)[0]||'Untitled story').replace(/^#+\s*/,'').replace(/^title\s*:/i,'').replace(/["*]/g,'').trim().slice(0,130)||'Untitled story';
@@ -96,8 +152,11 @@ function parseStory(raw,idea){
 function db(){
  return new Promise((resolve,reject)=>{
   if(!window.indexedDB)return reject(Error('Image storage is unavailable'));
-  const req=indexedDB.open('phi-story-writer-images-v1',1);
-  req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains('images'))req.result.createObjectStore('images',{keyPath:'id'})};
+  const req=indexedDB.open('phi-story-writer-images-v1',2);
+  req.onupgradeneeded=()=>{
+   if(!req.result.objectStoreNames.contains('images'))req.result.createObjectStore('images',{keyPath:'id'});
+   if(!req.result.objectStoreNames.contains('drafts'))req.result.createObjectStore('drafts',{keyPath:'id'});
+  };
   req.onerror=()=>reject(req.error||Error('Cannot open illustration storage'));
   req.onsuccess=()=>resolve(req.result);
  });
@@ -203,7 +262,8 @@ async function writeStory(){
   if(parsed.body.length<250)throw Error('GPT returned an incomplete story. Please try Write Story again.');
   active={id,title:parsed.title,body:parsed.body,scene:parsed.scene,idea,keywords:keys,genre,photoBased:Boolean(prepared),visualEvidence:visualEvidence.slice(0,1600),createdAt:new Date().toISOString(),imageStatus:'Preparing your illustration…'};
   if(prepared){try{await picture('source:'+id,prepared)}catch(error){note('Original source image could not be saved: '+String(error?.message||error))}}
-  saveStory(active);renderStory();note('Story written and saved on this device. Creating its image…');
+  const saved=await saveStory(active);renderStory();
+  note(saved?'Story written and saved on this device. Creating its image…':'Story written, but local storage failed. Copy your story before leaving.');
   void illustrate(active);
  }catch(error){note('Story writing could not finish: '+String(error?.message||error).slice(0,180))}
  finally{busy=false;$('#sw-write').disabled=false}
@@ -296,4 +356,5 @@ window.addEventListener('phi:image:build:done',event=>{
  void (async()=>{try{const blob=await window.PhiVisualRender.asBlob(src);await picture(storyId,blob);const row=stories.find(x=>x.id===storyId);if(row){row.imageStatus='Repaired illustration saved on this device.';saveStory(row)}if(active?.id===storyId){showArt(blob);$('#sw-art-status').textContent='Repaired illustration saved on this device.'}}catch(error){console.warn('Story image repair save deferred',error)}})();
 });
 ui();
+void recoverDrafts();
 })();
