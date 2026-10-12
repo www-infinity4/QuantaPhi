@@ -5,7 +5,7 @@
  'use strict';
  const mount=document.getElementById('radioClubhouse');
  if(!mount)return;
- const ENDPOINT='/api/radio-clubhouse';
+ const ENDPOINT='https://radio-clubhouse-feed.marvaseater.workers.dev/api/radio-clubhouse';
  const SNAPSHOT='quantaphi:radio-clubhouse:latest:v1';
  const SEEN='quantaphi:radio-clubhouse:seen:v1';
  const COLLECTED='quantaPhiCollected';
