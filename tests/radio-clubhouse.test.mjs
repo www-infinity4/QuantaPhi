@@ -5,7 +5,7 @@ import { test, after } from 'node:test';
 const source=await readFile(new URL('../workers/quantaphi-site/worker.js',import.meta.url),'utf8');
 const worker=(await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'))).default;
 const originalFetch=globalThis.fetch;
-const URL='https://quantaphi.org/api/radio-clubhouse';
+const ENDPOINT='https://quantaphi.org/api/radio-clubhouse';
 const BOARD='https://antiqueradios.com/forums/viewforum.php?f=2';
 const indexFragment='<h1>Radio Clubhouse</h1>';
 const html=indexFragment+'<ul class="topiclist topics">'+
@@ -29,7 +29,7 @@ const atom='<?xml version="1.0"?><feed>'+
  '</feed>';
 const blocked=async ()=>new Response('Access denied',{status:403});
 const mock=fn=>{globalThis.fetch=fn;};
-const run=async()=>worker.fetch(new Request(URL),{});
+const run=async()=>worker.fetch(new Request(ENDPOINT),{});
 after(()=>{globalThis.fetch=originalFetch});
 test('exact Radio Clubhouse page 1 is the first and only needed HTML address',async()=>{
  const calls=[];
@@ -97,7 +97,7 @@ test('unexpected board body does not get misrepresented as live Radio Clubhouse'
 });
 test('no POST writes, wallet changes or archive backfills through public feed',async()=>{
  mock(async()=>{throw Error('Should not make upstream request')});
- const response=await worker.fetch(new Request(URL,{method:'POST'}),{});
+ const response=await worker.fetch(new Request(ENDPOINT,{method:'POST'}),{});
  assert.equal(response.status,405);
  assert.equal((await response.json()).error,'method_not_allowed');
 });
