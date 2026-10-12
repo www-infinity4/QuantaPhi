@@ -338,4 +338,7 @@ test('painter prompts never name text, quoted words or signage that FLUX turns i
  const route=worker.slice(worker.indexOf(' const modeRules={'),worker.indexOf(' let lastError=null;')).replace(/\/\/.*$/gm,'');
  assert.doesNotMatch(route.replace(/pictorialPrompt|exactText|requestText/g,''),/\b(lettering|typography|headline|captions?|signage|logos?|pseudo|title)\b/i);
  assert.match(worker,/const scene=pictorialPrompt\(prompt,/);
+ const shared=(code,end)=>code.slice(code.indexOf('const TEXT_TOPIC='),code.indexOf(end));
+ assert.equal(shared(worker,'async function runImage(request, env)'),shared(source('phi-visual-render.js'),'function modePrompt(mode)'),'worker and browser sanitizers must stay identical');
+ assert.match(pictorialPrompt('A model in a printed floral dress holding digital art, a movie script on the desk.'),/printed floral dress.*digital art.*movie script/);
 });

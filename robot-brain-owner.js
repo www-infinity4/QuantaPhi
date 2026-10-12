@@ -113,7 +113,8 @@ async function start(attempt=0){
  const wait=RETRY_MS[Math.min(attempt,RETRY_MS.length-1)];
  const message='Your owner key is saved, but the brain clock is not reachable yet. Retrying automatically in '+Math.round(wait/1000)+' seconds…';
  const typing=host.querySelector('#robotBrainOwnerKey');
- if(typing&&typing.value)host.querySelector('[role=status]').textContent=message;else form(message);
+ const existing=host.querySelector('.rbo-gate [role=status]');
+ if(existing){existing.textContent=message;if(!typing||!typing.value)host.querySelector('.rbo-gate').open=true}else form(message);
  setTimeout(()=>{if(host.dataset.state!=='verified')start(attempt+1)},wait);
 }
 if(host)start();else readToken().then(verify).then(r=>{if(r.state==='verified')resolveReady(r.headers)});

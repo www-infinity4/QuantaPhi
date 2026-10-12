@@ -229,14 +229,15 @@ async function releaseCrew(crew,button){
   pending=saved.ticket;show(pending);
   status.textContent=crew.label+' crew released: '+(existing?.length||jobs.length)+' jobs '+(existing?.length?'already queued today':'queued')+' for the build runner. Progress appears as runner receipts arrive.';
   window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:pending.id,jobs:pending.context?.color_jobs||jobs}}));
- }catch(e){status.textContent='Crew not released: '+e.message}
+  return '';
+ }catch(e){status.textContent='Crew not released: '+e.message;return crew.label+': '+e.message}
  finally{button.disabled=false}
 }
 const crewBox=document.createElement('div');crewBox.className='robot-crews';
 crewBox.append(node('h4','Site-care crews'),node('p','One tap saves a ready-to-run job ticket for the color bots. The runner claims it on its next cycle, even if GPT is busy.'));
 const crewButtons=SITE_CREWS.map(crew=>{const b=node('button',crew.label);b.type='button';b.dataset.crew=crew.id;b.addEventListener('click',()=>releaseCrew(crew,b));return b});
 const allCrews=node('button','Release all crews');allCrews.type='button';allCrews.dataset.crew='all';
-allCrews.addEventListener('click',async()=>{allCrews.disabled=true;try{for(let i=0;i<SITE_CREWS.length;i++)await releaseCrew(SITE_CREWS[i],crewButtons[i])}finally{allCrews.disabled=false}});
+allCrews.addEventListener('click',async()=>{allCrews.disabled=true;const failed=[];try{for(let i=0;i<SITE_CREWS.length;i++){const problem=await releaseCrew(SITE_CREWS[i],crewButtons[i]);if(problem)failed.push(problem)}status.textContent=failed.length?(SITE_CREWS.length-failed.length)+' of '+SITE_CREWS.length+' crews released. Not released: '+failed.join('; '):'All '+SITE_CREWS.length+' site-care crews released to the build runner.'}finally{allCrews.disabled=false}});
 crewBox.append(...crewButtons,allCrews);
 const toolbox=document.createElement('details');toolbox.className='robot-toolbox';
 toolbox.append(node('summary','Bot toolbox · what each color team uses'));

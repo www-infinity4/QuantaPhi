@@ -657,7 +657,7 @@ async function runImageReview(request,env){
 
 /* Image models paint whatever text-related words name, even when told not to.
    The renderer receives only pictorial vocabulary (mirrors phi-visual-render.js). */
-const TEXT_TOPIC=/\b(?:text|texts|textual|letters?|lettering|lettered|words?|wording|typograph\w*|typeset\w*|typefaces?|fonts?|captions?|headlines?|subtitles?|titles?|titled|taglines?|slogans?|writing|written|scripts?|alphabets?|glyphs?|inscriptions?|inscribed|calligraph\w*|handwrit\w*|printed|watermarks?|signatures?|monograms?|lorem|ipsum|quotations?|quotes?|readable|legible|illegible|gibberish|pseudo[- ]?\w+|numerals?|digits?)\b/i;
+const TEXT_TOPIC=/\b(?:text|texts|textual|letters?|lettering|lettered|words?|wording|typograph\w*|typeset\w*|typefaces?|fonts?|captions?|headlines?|subtitles?|titles?|titled|taglines?|slogans?|writing|(?:written|printed|engraved)\s+(?:on|in|across|along|with)|alphabets?|glyphs?|inscriptions?|inscribed|calligraph\w*|handwrit\w*|watermarks?|monograms?|lorem|ipsum|quotations?|readable|legible|illegible|gibberish|pseudo[- ]?\w+|numerals?)\b/i;
 const ERASE=/^\s*(?:please\s+)?(?:remove|erase|delete|clean away|paint over)\b/i;
 const SAYING=/\b(?:(?:that|which)\s+(?:says|said|reads|read)|saying|spell(?:s|ing)?\s+out|titled|entitled|labell?ed|captioned|inscribed\s+with|with\s+the\s+(?:words?|text|phrase|caption|title|name))\b[^.,;:!?\n]*/gi;
 const OBJECTS=[
