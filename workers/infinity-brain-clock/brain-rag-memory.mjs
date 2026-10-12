@@ -40,16 +40,16 @@ function embedding(output){
 }
 export async function rememberOutcome(env,input) {
   const m=await normalizeExperience(input);
-  const inserted=await env.WORK_DB.prepare('INSERT OR IGNORE INTO brain_experiences (id,owner_hash,repository,ticket_id,job_id,status,task,summary,commit_sha,occurred_at,vector_state) VALUES (?,?,?,?,?,?,?,?,?,?,"pending")')
-    .bind(m.id,m.ownerHash,m.repository,m.ticketId,m.jobId,m.status,m.task,m.summary,m.commitSha,m.occurredAt).run();
+  const inserted=await env.WORK_DB.prepare('INSERT OR IGNORE INTO brain_experiences (experience_id,owner_hash,repository,ticket_id,job_id,kind,status,summary,evidence_url,metadata_json,verified,occurred_at,created_at,embedding_status) VALUES (?,?,?,?,?,'outcome',?,?,'',?,?,?,?, 'pending')')
+    .bind(m.id,m.ownerHash,m.repository,m.ticketId,m.jobId,m.status,m.summary,JSON.stringify({task:m.task,commitSha:m.commitSha}),m.status==='deployed_verified'?1:0,m.occurredAt,Date.now()).run();
   if(!env.BRAIN_MEMORY||!env.WRITER_AI)return {id:m.id,durable:true,vector:'unbound'};
   try{
     const vector=embedding(await env.WRITER_AI.run(MODEL,{text:[m.text.slice(0,1800)]}));
     await env.BRAIN_MEMORY.upsert([{id:m.id,namespace:m.ownerHash,values:vector,metadata:{repository:m.repository,occurred_at:m.occurredAt,status:m.status}}]);
-    await env.WORK_DB.prepare('UPDATE brain_experiences SET vector_state="indexed" WHERE id=? AND owner_hash=?').bind(m.id,m.ownerHash).run();
+    await env.WORK_DB.prepare('UPDATE brain_experiences SET embedding_status='indexed' WHERE experience_id=? AND owner_hash=?').bind(m.id,m.ownerHash).run();
     return {id:m.id,durable:true,vector:'submitted',duplicate:inserted?.meta?.changes===0};
   }catch{
-    await env.WORK_DB.prepare('UPDATE brain_experiences SET vector_state="retry" WHERE id=? AND owner_hash=?').bind(m.id,m.ownerHash).run();
+    await env.WORK_DB.prepare('UPDATE brain_experiences SET embedding_status='retry' WHERE experience_id=? AND owner_hash=?').bind(m.id,m.ownerHash).run();
     return {id:m.id,durable:true,vector:'retry'};
   }
 }
@@ -63,7 +63,7 @@ export async function recallOutcomes(env,{ownerHash,repository,query,limit=6,now
   if(!ownerOK(ownerHash)||!repoOK(repository)) throw Error('memory_scope_invalid');
   const amount=Math.max(1,Math.min(8,Math.floor(Number(limit)||6)));
   const q=redactExperience(query).slice(0,1200);
-  const latest=await env.WORK_DB.prepare('SELECT id,repository,ticket_id,job_id,status,task,summary,commit_sha,occurred_at FROM brain_experiences WHERE owner_hash=? AND repository=? ORDER BY occurred_at DESC LIMIT 40').bind(ownerHash,repository).all();
+  const latest=await env.WORK_DB.prepare('SELECT experience_id AS id,repository,ticket_id,job_id,status,json_extract(metadata_json,'$.task') AS task,summary,json_extract(metadata_json,'$.commitSha') AS commit_sha,occurred_at FROM brain_experiences WHERE owner_hash=? AND repository=? ORDER BY occurred_at DESC LIMIT 40').bind(ownerHash,repository).all();
   const found=new Map((latest.results||[]).map(r=>[r.id,{...r,semantic:0}]));
   if(q&&env.BRAIN_MEMORY&&env.WRITER_AI){
     try{
@@ -72,7 +72,7 @@ export async function recallOutcomes(env,{ownerHash,repository,query,limit=6,now
       const valid=matches.filter(m=>/^exp-[a-f0-9]{60}$/.test(m.id||''));
       if(valid.length){
         const ids=[...new Set(valid.map(m=>m.id))];
-        const sql='SELECT id,repository,ticket_id,job_id,status,task,summary,commit_sha,occurred_at FROM brain_experiences WHERE owner_hash=? AND repository=? AND id IN ('+ids.map(()=>'?').join(',')+')';
+        const sql='SELECT experience_id AS id,repository,ticket_id,job_id,status,json_extract(metadata_json,'$.task') AS task,summary,json_extract(metadata_json,'$.commitSha') AS commit_sha,occurred_at FROM brain_experiences WHERE owner_hash=? AND repository=? AND experience_id IN ('+ids.map(()=>'?').join(',')+')';
         const fromDb=await env.WORK_DB.prepare(sql).bind(ownerHash,repository,...ids).all();
         const scores=new Map(valid.map(m=>[m.id,Math.max(0,Math.min(1,Number(m.score)||0))]));
         // Vector IDs are not trusted for authorization. Always verify owner + repository in D1.
