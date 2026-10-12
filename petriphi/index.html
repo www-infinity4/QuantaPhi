@@ -76,6 +76,7 @@ document.getElementById('phi-project-new').addEventListener('click',function(){
 });
 window.addEventListener('phi-projects:changed',paint);paint();
 document.getElementById('save')?.addEventListener('click',function(){
+ if(!document.getElementById('status').textContent.startsWith('Saved'))return;
  var p=api.capture({kind:'poster-design',title:document.getElementById('title').value||'PetriPhi poster',
   sourceUrl:location.origin+'/petriphi/',description:document.getElementById('subtitle').value+' (design settings saved in the local PetriPhi studio; export PNG separately)',originCard:'petriphi'});
  note.textContent=p.ok?'Poster design reference added to '+p.project.title+'.':p.reason;
