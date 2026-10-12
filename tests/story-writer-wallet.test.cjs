@@ -23,11 +23,16 @@ test('Story Writer invokes existing GPT and image pipeline, saves drafts, and us
  assert.match(sw,/if\(all\.some\(x=>x\.key===key\)\)/);
  assert.doesNotMatch(sw,/QuantaPhiWallet\.addToken\(/);
 });
-test('Fix Image reuses the preceding pixels and automatically reruns the image builder',()=>{
+test('Fix Image uses the preceding pixels internally without rewriting uploaded references',()=>{
  const builder=file('phi-image-builder.js');
- assert.match(builder,/reopenAsReference\(instruction\)\.then\(ready=>ready\?build\(\{repairBaseline:baseline\}\):null\)/);
- assert.match(builder,/const previous=rawResult\|\|result/);
- assert.match(builder,/storyWriterId=artifact\.storyWriterId\|\|''/);
+ const fix=builder.slice(builder.indexOf('async function fixImage()'),builder.indexOf("layout();state('composer');"));
+ assert.match(builder,/if\(action==='fix'\)void fixImage\(\)/);
+ assert.match(fix,/renderer\.asBlob\(original\.rawResult\)/);
+ assert.match(fix,/renderer\.render\(\{description,mode,source:prior,design:null,prompt:repair,exactText\}\)/);
+ assert.match(fix,/renderer\.review\(\{src:nextResult,description,mode,exactText\}\)/);
+ assert.match(fix,/artifact=\{\.\.\.original\.artifact/);
+ assert.match(fix,/emit\('build:done',artifact\)/);
+ assert.doesNotMatch(fix,/reopenAsReference|showFile\(|state\('composer'\)/);
  assert.match(builder,/async generateFromStory\(/);
  assert.match(builder,/if\(busy\|\|preparingReference\)throw Error/);
 });
