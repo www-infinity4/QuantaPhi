@@ -56,3 +56,11 @@
 #phiProjectActions .pp-upload-preview{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;opacity:.65}
 #phiProjectActions .pp-upload-preview[hidden]{display:none!important}
 #phiProjectActions .pp-upload-note{font-size:12px;color:#735982;margin:0 0 13px}
+
+#halloweenPhi .hphi-upload-tile{display:flex;position:relative;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:106px;height:106px;border:2px dashed #c4a5d8;border-radius:16px;background:#fffbfd;cursor:pointer;overflow:hidden;color:#552f7b;text-align:center}
+#halloweenPhi .hphi-upload-tile:focus-within{outline:3px solid #7139ba;outline-offset:2px}
+#halloweenPhi .hphi-upload-tile input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer;z-index:2}
+#halloweenPhi .hphi-upload-plus{font-size:30px;font-weight:850;line-height:1}
+#halloweenPhi .hphi-upload-label{font-size:11px;font-weight:800}
+#halloweenPhi .hphi-upload-preview{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6;pointer-events:none}
+#halloweenPhi .hphi-upload-preview[hidden]{display:none!important}
