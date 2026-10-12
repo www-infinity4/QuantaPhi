@@ -53,7 +53,7 @@ function input(kind,title,subtitle){
 function layout(){
  host.classList.add('oracle-image-studio');
  const form=make('div','pi-composer pi-panel');
- form.append(make('span','pi-eyebrow','ORACLE · IMAGE STUDIO'),make('h2','','Create your image'),make('p','pi-sub','Describe the artwork, choose references, then add exact lettering.'));
+ form.append(make('span','pi-eyebrow','ORACLE · BLUE IMAGE GENERATOR'),make('h2','','Create your image'),make('p','pi-sub','Upload your photos or describe an image. After creating it, use Image Grader and Fix image to correct the finished result without moving or reuploading it.'));
  const format=section('1 · Choose a format');const choices=make('div','pi-modes');
  for(const name of modes){const b=make('button','pi-mode',name);b.type='button';b.dataset.piMode=name;b.setAttribute('aria-pressed',name===mode?'true':'false');choices.append(b)}
  format.append(choices);form.append(format);
@@ -64,9 +64,10 @@ function layout(){
  references.append(uploads);form.append(references);
  const brief=section('3 · Describe the artwork');const promptLabel=make('label','pi-label','Image instructions');promptLabel.htmlFor='pi-prompt';
  const prompt=make('textarea');prompt.id='pi-prompt';prompt.placeholder='Subject, composition, colors, style, and anything to preserve.';brief.append(promptLabel,prompt);form.append(brief);
- const type=section('4 · Lettering','Choose no lettering, or enter words to add with real fonts.');const textLabel=make('label','pi-label','Lettering mode');textLabel.htmlFor='pi-text-mode';
- const policy=make('select','pi-exact-input');policy.id='pi-text-mode';for(const [value,label] of [['none','No lettering'],['exact','Add exact words']]){const o=make('option','',label);o.value=value;policy.append(o)}
- const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Type exactly what the finished image should say';exact.setAttribute('aria-label','Exact words to print');type.append(textLabel,policy,exact);form.append(type,make('p','pi-notice',''));
+ const optional=make('details','pi-exact-optional');optional.append(make('summary','','Optional: put readable words on the image'));
+ const textLabel=make('label','pi-label','Words on image');textLabel.htmlFor='pi-text-mode';
+ const policy=make('select','pi-exact-input');policy.id='pi-text-mode';for(const [value,label] of [['none','No added words'],['exact','Add readable words']]){const o=make('option','',label);o.value=value;policy.append(o)}
+ const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Write the words exactly as you want them';exact.setAttribute('aria-label','Exact words on image');optional.append(textLabel,policy,exact);form.append(optional,make('p','pi-notice',''));
  const go=make('button','pi-primary','Create image');go.type='button';go.dataset.piAction='build';form.append(go);
  const progress=make('div','pi-progress pi-panel');progress.append(make('span','pi-eyebrow','ORACLE · CREATING'),make('h2','','Creating your image'),make('p','pi-sub','Your description and references are kept while the image is built.'));
  const steps=make('div','pi-steps');names.forEach((name,i)=>{const row=make('div','pi-step');row.dataset.piStep=i;row.dataset.state='waiting';row.append(make('span','',name),make('small','','Waiting'));steps.append(row)});progress.append(steps,make('p','pi-notice',''));
@@ -76,7 +77,7 @@ function layout(){
  audit.append(make('strong','pi-audit-title','Image Grader'),make('p','pi-audit-summary','The grader runs automatically after an image is created.'),make('ul','pi-audit-issues'));
  done.append(audit);
  const notesLabel=make('label','pi-label','What else needs fixing?');notesLabel.htmlFor='pi-fix-notes';
- const notes=make('textarea','pi-fix-notes');notes.id='pi-fix-notes';notes.rows=2;notes.maxLength=1200;notes.placeholder='Optional: describe a specific correction. No dragging or reuploading.';
+ const notes=make('textarea','pi-fix-notes');notes.id='pi-fix-notes';notes.rows=2;notes.maxLength=1200;notes.placeholder='Optional: describe a specific correction. The image is fixed automatically.';
  done.append(notesLabel,notes);
  const actions=make('div','pi-actions');
  for(const [key,label,wide] of [['fix','Fix image',true],['edit','Edit description'],['download','Save image'],['clear','Clear image']]){
@@ -90,7 +91,7 @@ async function build({retryRender=false}={}){
  if(busy||preparingReference)return;
  const typed=$('#pi-prompt').value.trim().slice(0,3000);
  const exactText=$('#pi-text-mode').value==='exact'?$('#pi-exact-text').value.trim().slice(0,120):'';
- if($('#pi-text-mode').value==='exact'&&!exactText){notice('Enter exact words, or choose No lettering.');return}
+ if($('#pi-text-mode').value==='exact'&&!exactText){notice('Enter the words you want to add, or choose No added words.');return}
  if(!typed&&!source&&!contextStory()){notice('Describe the artwork or upload a photo first.');return}
  const description=typed||('Build a distinctive '+mode.toLowerCase()+' based on my uploaded reference or story.');
  const requestId=id(),story=contextStory(),search=contextSearch();
@@ -119,7 +120,7 @@ async function build({retryRender=false}={}){
   notice([warning,'Step 3 of 4 · Waiting for the Cloudflare image renderer. This request may take up to 150 seconds.'].filter(Boolean).join(' '));
   let rendered=await renderer.render({description,mode,source,design,prompt,exactText});
   step(phase++,'done');
-  step(phase,'active','Examining finished pixels and lettering');
+  step(phase,'active','Examining finished image');
   rawResult=rendered.src;
   result=rawResult;
   if(exactText)try{result=await renderer.composeExactText(rawResult,exactText)}catch(error){warning=[warning,'Artwork rendered, but exact lettering could not be added: '+String(error?.message||error).slice(0,90)].filter(Boolean).join(' ')}
