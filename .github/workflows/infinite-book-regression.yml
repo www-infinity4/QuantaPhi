@@ -6,6 +6,12 @@ on:
       - 'infinite-book-catalog.json'
       - 'workers/infinite-book-library/**'
       - 'test/infinite-book*.cjs'
+      - 'test/story-share-reader.test.cjs'
+      - 'phi-story-share.js'
+      - 'phi-business-search.js'
+      - 'story/**'
+      - 'phi-story-writer.js'
+      - 'index.html'
       - '.github/workflows/infinite-book-regression.yml'
   push:
     branches: [main]
@@ -13,6 +19,12 @@ on:
       - 'infinite-book*.js'
       - 'infinite-book-catalog.json'
       - 'test/infinite-book*.cjs'
+      - 'test/story-share-reader.test.cjs'
+      - 'phi-story-share.js'
+      - 'phi-business-search.js'
+      - 'story/**'
+      - 'phi-story-writer.js'
+      - 'index.html'
       - '.github/workflows/infinite-book-regression.yml'
 jobs:
   secret-stories:
@@ -24,9 +36,12 @@ jobs:
           node-version: '22'
       - name: Check writer and gateway syntax
         run: |
+          node --check phi-story-share.js
+          node --check phi-business-search.js
+          node --check phi-story-writer.js
           node --check infinite-book.js
           node --check infinite-book-discovery.js
           node --check workers/infinite-book-library/worker.js
           node --check workers/infinity-rogers/worker.js
       - name: Verify rolled research, GPT writing and source checks
-        run: node --test test/infinite-book-resilience.test.cjs test/infinite-book-four-roll.test.cjs test/infinite-book-quant-focus.test.cjs test/infinite-book-home-context.test.cjs test/infinite-book-native-ai.test.cjs test/oracle-orange-inline.test.cjs test/infinite-book-phi-handoff.test.cjs
+        run: node --test test/infinite-book-resilience.test.cjs test/infinite-book-four-roll.test.cjs test/infinite-book-quant-focus.test.cjs test/infinite-book-home-context.test.cjs test/infinite-book-native-ai.test.cjs test/oracle-orange-inline.test.cjs test/infinite-book-phi-handoff.test.cjs test/story-share-reader.test.cjs
