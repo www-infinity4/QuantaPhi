@@ -442,7 +442,7 @@ export async function ownerTickets(env,path,body){
  };
  if(path==='/work/memory/status'){
   try{
-   const row=await db.prepare("SELECT COUNT(*) AS total, SUM(CASE WHEN vector_state='indexed' THEN 1 ELSE 0 END) AS indexed, SUM(CASE WHEN vector_state='retry' THEN 1 ELSE 0 END) AS retry FROM brain_experiences WHERE owner_hash=?").bind(ownerHash).first();
+   const row=await db.prepare("SELECT COUNT(*) AS total, SUM(CASE WHEN embedding_status='indexed' THEN 1 ELSE 0 END) AS indexed, SUM(CASE WHEN embedding_status='retry' THEN 1 ELSE 0 END) AS retry FROM brain_experiences WHERE owner_hash=?").bind(ownerHash).first();
    return {status:200,result:{ok:true,total:row?.total||0,indexed:row?.indexed||0,retry:row?.retry||0,vectorBinding:!!env.BRAIN_MEMORY,embeddingBinding:!!env.WRITER_AI}};
   }catch{return {status:503,result:{ok:false,error:'brain_memory_schema_unavailable'}}}
  }
