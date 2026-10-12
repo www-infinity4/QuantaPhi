@@ -25,6 +25,6 @@ test('scheduled retry marks a failure with a future backoff',async()=>{
   const env={WORK_DB:db,WRITER_AI:{async run(){throw Error('temporary unavailable')}},BRAIN_MEMORY:{async upsert(){}}};
   const result=await retryPendingEmbeddings(env,owner,2,input.occurredAt);
   assert.equal(result.failed,1);
-  const updated=queries.find(x=>x.sql.includes('memoryRetryAfter'));
+  const updated=queries.find(x=>x.sql.startsWith('UPDATE')&&x.sql.includes('memoryRetryAfter'));
   assert.ok(updated.args[1]>input.occurredAt);
 });
