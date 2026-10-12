@@ -32,3 +32,17 @@ test('reader static route has its own canonical path',()=>{
  assert.match(router,/path === '\/story\/'/);
  assert.match(router,/sourcePath: '\/story\/index\.html'/);
 });
+
+test('Business intent presents RadioShack official store first without claiming search listings are paid advertising',()=>{
+ const code=load('phi-business-search.js'),html=load('index.html');
+ assert.match(code,/radioshack:\{name:'RadioShack',domain:'radioshack\\.com'/);
+ assert.match(code,/result\.parentNode\.insertBefore\(panel,result\)/);
+ assert.match(code,/not a paid advertisement/);
+ assert.match(code,/matchOfficial\(x\.url,brand\)/);
+ assert.match(html,/phi-business-search\.js/);
+});
+test('Site viewer always offers the actual page when iframe embedding is rejected',()=>{
+ const html=load('index.html');
+ assert.match(html,/id="siteViewerExternal"/);
+ assert.match(html,/fallback\.href=url\.href/);
+});
