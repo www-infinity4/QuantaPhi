@@ -122,3 +122,36 @@ test('oversized streamed handoff is cancelled without reading the remainder',asy
  await assert.rejects(readRunnerBody({headers:new Headers(),body:stream},'/runner/build'),e=>e.status===413);
  assert.equal(cancelled,true);
 });
+
+test('wallet-owner sessions require an existing verified payout owner, expire, and never persist bearer secrets',async()=>{
+ const memory=new Map();
+ const storage={get:async key=>memory.get(key),put:async(key,value)=>memory.set(key,value),delete:async key=>memory.delete(key)};
+ const clock=new BrainClock({storage},{});
+ const create=userId=>clock.fetch(new Request('https://clock.internal/owner/session-create',{method:'POST',body:JSON.stringify({userId})}));
+ assert.equal((await create('owner')).status,404,'first random wallet cannot claim ownership');
+ memory.set('bot-work-recipient',{userId:'owner',username:'fixture-owner'});
+ assert.equal((await create('visitor')).status,404,'different wallet must remain locked out');
+ const response=await create('owner');
+ assert.equal(response.status,200);
+ const {token,expiresAt}=await response.json();
+ assert.match(token,/^rb_[a-f0-9]{64}$/);
+ assert.ok(expiresAt>Date.now());
+ assert.ok(!JSON.stringify([...memory]).includes(token),'raw wallet or Brain credentials may not enter durable storage');
+ const check=t=>clock.fetch(new Request('https://clock.internal/owner/session-check',{method:'POST',body:JSON.stringify({token:t})}));
+ assert.equal((await check(token)).status,200);
+ assert.equal((await check('rb_'+'0'.repeat(64))).status,404);
+ const key=memory.get('brain-owner-session-index')[0].key;
+ memory.set(key,{...memory.get(key),expiresAt:Date.now()-1});
+ assert.equal((await check(token)).status,404,'expired sessions must be rejected');
+ // Revoking the wallet binding also revokes still-unexpired sessions.
+ memory.set(key,{userId:'owner',expiresAt:Date.now()+60000});
+ memory.set('bot-work-recipient',{userId:'different'});
+ assert.equal((await check(token)).status,404);
+});
+
+test('the public Brain route never authorizes by displayed wallet balances or account names',()=>{
+ assert.match(source,/BOT_WALLET\.fetch\('https:\/\/wallet\.internal\/v1\/wallet\/state'/);
+ assert.match(source,/recipient\.userId!==body\.userId/);
+ assert.match(source,/await ownerAuthorized\(env,token\)/);
+ assert.match(source,/if\(origin&&!origins\.has\(origin\)\)/);
+});
