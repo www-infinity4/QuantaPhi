@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { test } from 'node:test';
+import { test, after } from 'node:test';
 
 // Load the same deployed Worker source without requiring a package type flip.
 const source=await readFile(new URL('../workers/quantaphi-site/worker.js',import.meta.url),'utf8');
@@ -21,7 +21,7 @@ const FEED='<?xml version="1.0"?><feed>'+
  '</feed>';
 function mockFetch(handler){globalThis.fetch=handler}
 async function run(){return worker.fetch(new Request('https://quantaphi.org/api/radio-clubhouse'),{})}
-test.after(()=>{globalThis.fetch=orig});
+after(()=>{globalThis.fetch=orig});
 test('Only source-verified Radio Clubhouse topics become cards; newest first',async()=>{
  const called=[];
  mockFetch(async target=>{
