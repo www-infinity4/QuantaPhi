@@ -189,31 +189,53 @@ async function validate(src){
 async function asBlob(src){const r=await fetch(src);if(!r.ok)throw Error('Image file unavailable');const b=await r.blob();if(!typeOK(b.type))throw Error('Unsupported renderer image file');return b}
 
 /* Explicit typography is drawn with browser fonts, not guessed by an image model. */
+/* Print the EXACT customer-supplied title/tagline with real browser fonts.
+   The renderer never invents or spells these words. Multi-line text survives
+   unchanged and no line is silently clipped or discarded. */
 async function composeExactText(src,exactText){
- const label=String(exactText||'').replace(/\s+/g,' ').trim().slice(0,120);
- if(!label)return src;
+ const literal=String(exactText||'').trim();
+ if(!literal)return src;
+ if(literal.length>120)throw Error('Requested image wording exceeds the readable text limit');
+ const phrases=literal.split(/\n+/).map(line=>line.replace(/\s+/g,' ').trim()).filter(Boolean);
+ if(!phrases.length)return src;
+ if(phrases.length>3)throw Error('Too many separate lines of words for this image');
  const picture=new Image();picture.src=src;
- await new Promise((resolve,reject)=>{if(picture.complete&&picture.naturalWidth)return resolve();picture.onload=resolve;picture.onerror=()=>reject(Error('Cannot compose exact text on unavailable image'))});
+ await new Promise((resolve,reject)=>{if(picture.complete&&picture.naturalWidth)return resolve();picture.onload=resolve;picture.onerror=()=>reject(Error('Cannot compose exact words on unavailable image'))});
  const canvas=document.createElement('canvas');canvas.width=picture.naturalWidth;canvas.height=picture.naturalHeight;
- const c=canvas.getContext('2d');if(!c)throw Error('Typography compositor unavailable');
- c.drawImage(picture,0,0);const w=canvas.width,h=canvas.height;
- const pad=w*.055,boxHeight=Math.max(80,Math.min(h*.28,h*.13+(label.length>37?h*.08:0))),y=h-boxHeight;
- c.fillStyle='rgba(255,255,255,.92)';c.fillRect(0,y,w,boxHeight);
- c.fillStyle='#122334';c.textAlign='center';c.textBaseline='middle';
- const pieces=label.split(/\s+/),lines=[];let line='';
- const fontSize=Math.max(18,Math.min(w*.075,boxHeight*.36));c.font='800 '+fontSize+'px system-ui, Arial, sans-serif';
- for(const piece of pieces){
-  const attempt=line?line+' '+piece:piece;
-  if(line&&c.measureText(attempt).width>w-pad*2){lines.push(line);line=piece}else line=attempt;
+ const c=canvas.getContext('2d');if(!c)throw Error('Image text compositor unavailable');
+ c.drawImage(picture,0,0);
+ const w=canvas.width,h=canvas.height,space=w*.055,maxWidth=w-space*2;
+ const rows=[];
+ for(let i=0;i<phrases.length;i++){
+  const phrase=phrases[i];
+  const size=Math.max(16,Math.min(w*(i?0.050:0.076),h*(i?0.060:0.095),i?34:55));
+  c.font=(i?'700 ':'850 ')+size+'px system-ui, Arial, sans-serif';
+  const pieces=phrase.split(/\s+/);let current='';
+  for(const piece of pieces){
+   const candidate=current?current+' '+piece:piece;
+   if(current&&c.measureText(candidate).width>maxWidth){rows.push({text:current,size,secondary:i>0});current=piece}
+   else current=candidate;
+  }
+  if(current)rows.push({text:current,size,secondary:i>0});
  }
- if(line)lines.push(line);
- // Words longer than a line are fitted with a smaller font rather than cropped.
- const lineCount=Math.min(lines.length,3);const heightPerLine=fontSize*1.2;
- let actualSize=fontSize;
- while(actualSize>16&&lines.slice(0,lineCount).some(v=>{c.font='800 '+actualSize+'px system-ui, Arial, sans-serif';return c.measureText(v).width>w-pad*2}))actualSize-=2;
- c.font='800 '+actualSize+'px system-ui, Arial, sans-serif';
- for(let i=0;i<lineCount;i++){const rendered=lines[i];c.fillText(rendered,w/2,y+boxHeight/2+(i-(lineCount-1)/2)*Math.min(actualSize*1.2,boxHeight/lineCount),w-pad*2)}
- if(lines.length>3)throw Error('Exact text too long for this image; shorten the caption before building');
+ if(rows.length>3)throw Error('The exact words need more than three lines. Shorten the wording or use a wider image.');
+ let height=rows.reduce((sum,r)=>sum+r.size*1.25,0),band=Math.min(h*.42,Math.max(82,height+Math.min(38,h*.04)));
+ if(height>band*.87){
+  const multiplier=band*.87/height;
+  for(const row of rows)row.size=Math.max(12,Math.floor(row.size*multiplier));
+  height=rows.reduce((sum,r)=>sum+r.size*1.25,0);
+ }
+ const y=h-band;
+ c.fillStyle='rgba(255,255,255,.94)';c.fillRect(0,y,w,band);
+ c.textAlign='center';c.textBaseline='middle';
+ let cursor=y+(band-height)/2;
+ for(const row of rows){
+  const lineHeight=row.size*1.25;
+  c.fillStyle='#122334';
+  c.font=(row.secondary?'700 ':'850 ')+row.size+'px system-ui, Arial, sans-serif';
+  c.fillText(row.text,w/2,cursor+lineHeight/2,maxWidth);
+  cursor+=lineHeight;
+ }
  return canvas.toDataURL('image/png');
 }
 async function review({src,description,mode,exactText}){

@@ -20,6 +20,8 @@ on:
       - 'test/story-illustration-lettering.test.cjs'
       - 'workers/infinity-rogers/worker.js'
       - 'test/phi-image-quality.test.cjs'
+      - 'test/phi-image-language.test.cjs'
+      - 'test/oracle-image-studio.browser.cjs'
       - 'test/phi-unlimited-generation.test.cjs'
       - '.github/workflows/phi-image-quality.yml'
   pull_request:
@@ -41,6 +43,8 @@ on:
       - 'test/story-illustration-lettering.test.cjs'
       - 'workers/infinity-rogers/worker.js'
       - 'test/phi-image-quality.test.cjs'
+      - 'test/phi-image-language.test.cjs'
+      - 'test/oracle-image-studio.browser.cjs'
       - 'test/phi-unlimited-generation.test.cjs'
       - '.github/workflows/phi-image-quality.yml'
 jobs:
@@ -55,4 +59,4 @@ jobs:
         run: |
           node --check fred-spaces-radio.js
           node --check phi-page-ui.js
-          node --test test/phi-image-quality.test.cjs test/phi-electric-ui.test.cjs test/phi-unlimited-generation.test.cjs test/story-illustration-lettering.test.cjs
+          node --test test/phi-image-quality.test.cjs test/phi-electric-ui.test.cjs test/phi-unlimited-generation.test.cjs test/story-illustration-lettering.test.cjs test/phi-image-language.test.cjs

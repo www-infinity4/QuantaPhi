@@ -332,7 +332,7 @@ test('blue Image Grader repairs current pixels directly without changing uploads
  assert.doesNotMatch(fix,/showFile\(|source=new File|state\('composer'\)|#pi-prompt'\)\.value=/);
  assert.doesNotMatch(js,/reopenAsReference/);
  assert.doesNotMatch(html,/phi-image-type-studio\.js/);
- assert.match(html,/phi-image-builder\.js\?v=20261011-blue-rebuild3/);
+ assert.match(html,/phi-image-builder\.js\?v=20261011-natural-copy1/);
  assert.match(css,/\.pi-grade-fix/);
 });
 
@@ -361,4 +361,19 @@ test('painter prompts never name text, quoted words or signage that FLUX turns i
  const shared=(code,end)=>code.slice(code.indexOf('const TEXT_TOPIC='),code.indexOf(end));
  assert.equal(shared(worker,'async function runImage(request, env)'),shared(source('phi-visual-render.js'),'function modePrompt(mode)'),'worker and browser sanitizers must stay identical');
  assert.match(pictorialPrompt('A model in a printed floral dress holding digital art, a movie script on the desk.'),/printed floral dress.*digital art.*movie script/);
+});
+
+
+test('natural language exact wording is automatically available without a separate lettering mode',()=>{
+ const html=source('index.html'),builder=source('phi-image-builder.js');
+ assert.ok(html.indexOf('phi-image-language.js?v=')>=0);
+ assert.ok(html.indexOf('phi-image-language.js?v=')<html.indexOf('phi-image-builder.js?v='));
+ assert.match(builder,/window\.PhiImageLanguage\?\.infer\(typed,mode,manualText\)/);
+ assert.match(builder,/Automatic from my description/);
+ assert.match(builder,/No words on the image/);
+ assert.match(builder,/exactText\)result=await renderer\.composeExactText\(rawResult,exactText\)/);
+ const renderer=source('phi-visual-render.js');
+ assert.match(renderer,/literal\.split\(\/\\n\+\/\)/,'compositor preserves customer title/tagline split');
+ assert.match(renderer,/if\(rows\.length>3\)throw Error/,'overflow cannot be silently hidden');
+ assert.match(renderer,/c\.fillText\(row\.text,w\/2/,'compositor draws precise words with browser fonts');
 });
