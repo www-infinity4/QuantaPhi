@@ -187,5 +187,7 @@
  window.addEventListener('online',load);
  load();
  const poll=setInterval(()=>{if(!document.hidden)load()},INTERVAL);
- window.addEventListener('pagehide',()=>clearInterval(poll),{once:true});
+ // Timers are suspended inside the back-forward cache, then resume automatically.
+ // A one-time pagehide handler would stop updates permanently after restoration.
+ window.addEventListener('pageshow',event=>{if(event.persisted)load()});
 })();
