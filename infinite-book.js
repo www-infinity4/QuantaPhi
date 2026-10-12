@@ -137,10 +137,14 @@
     let changed=false;for(const key of keys){if(!seen.includes(key)){seen.push(key);changed=true}}
     if(changed)safeWrite(SEEN_KEY,seen);
   }
-  function deepLink(story) {
-    // Catalog stories retain an exact short permalink; live stories hand
-    // readers to the research engine instead of encoding the full article.
-    if (story.discoverySource === 'live') return buildUrl('infinity', story);
+  async function deepLink(story) {
+    // Live researched stories need their full, portable body in the share link;
+    // a research search alone cannot reproduce the exact story.
+    if (story.discoverySource === 'live') {
+      if(typeof window.PhiStoryShare?.create!=='function')throw Error('Full-story sharing unavailable');
+      return window.PhiStoryShare.create({kind:'research',title:story.title,body:story.full,
+        summary:story.summary,sourceTitle:story.sourceTitle,sourceUrl:story.sourceUrl});
+    }
     const link = new URL('/', location.origin);
     link.searchParams.set('secret', story.id);
     link.hash = 'infiniteBook';
@@ -525,8 +529,10 @@
   async function share() {
     if (!current) return;
     interactedWithStory = true;
-    const target = deepLink(current);
-    const url = target; // Avoid wrapping a URL inside another URL's query string.
+    let url;
+    try { url=await deepLink(current); }
+    catch(error){ note(String(error?.message||'Full-story link could not be prepared')+' No share credit was issued.');return; }
+    // Never replace a full-story link with a search URL.
     const starter = String(current.summary || '').replace(/\s+/g,' ').trim();
     const teaser = (starter.slice(0,150).replace(/\s+\S*$/,'') || starter.slice(0,150)) + (starter.length > 150 ? '… Read and research it in Infinity Phi.' : ' · Explore on Phi.');
     let combined = null;
