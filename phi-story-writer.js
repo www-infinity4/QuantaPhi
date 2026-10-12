@@ -30,8 +30,10 @@ function ui(){
  const photo=make('img','sw-source-preview');photo.id='sw-source-preview';photo.alt='Selected story source picture';photo.hidden=true;
  const photoNote=make('p','sw-muted','Optional: upload a picture and Oracle will inspect visible details before writing. No filename guessing. PNG, JPG or WebP, up to 10 MB.');photoNote.id='sw-source-note';
  const go=make('button','sw-primary','Write story + create image');go.type='button';go.id='sw-write';
+ const viewStories=make('button','sw-view-stories','View Stories');viewStories.type='button';viewStories.id='sw-view-stories';
+ viewStories.setAttribute('aria-controls','sw-saved-library');viewStories.setAttribute('aria-expanded','false');
  const notice=make('p','sw-notice','');notice.id='sw-notice';notice.setAttribute('role','status');
- form.append(make('label','sw-label','Describe your story'),idea,make('label','sw-label','Keywords (optional)'),keys,make('label','sw-label','Picture to write about (optional)'),upload,photo,photoNote,options,go,notice);
+ form.append(make('label','sw-label','Describe your story'),idea,make('label','sw-label','Keywords (optional)'),keys,make('label','sw-label','Picture to write about (optional)'),upload,photo,photoNote,options,go,viewStories,notice);
  const section=make('section','sw-card sw-output');section.id='sw-output';section.hidden=true;
  const header=make('div','sw-result-head');header.append(make('span','sw-eyebrow','YOUR ORIGINAL STORY'),make('h3','sw-title',''));
  const sourceArt=make('img','sw-art sw-original-photo');sourceArt.id='sw-original-photo';sourceArt.alt='Original picture submitted by the storyteller';sourceArt.hidden=true;
@@ -44,11 +46,13 @@ function ui(){
    const b=make('button','',''+label);b.type='button';b.id=id;controls.append(b);
  }
  const rewardStatus=make('p','sw-reward-status','A verified Star, Collect, or Share submits a separate +0.1 StarCoin receipt.');rewardStatus.id='sw-reward-status';rewardStatus.setAttribute('role','status');
- const history=make('section','sw-card sw-history');history.append(make('strong','','Your saved drafts'));
+ const history=make('section','sw-card sw-history');history.id='sw-saved-library';history.hidden=true;
+ history.append(make('strong','','Your saved stories'));
  const picker=make('select','sw-field');picker.id='sw-history';picker.setAttribute('aria-label','Open a saved Story Writer draft');
  const exportBtn=make('button','','Download story text backup');exportBtn.type='button';exportBtn.id='sw-export';
  const historyState=make('p','sw-muted','Loading saved stories…');historyState.id='sw-history-state';
- history.append(picker,exportBtn,historyState);
+ const library=make('div','sw-library');library.id='sw-library';library.setAttribute('aria-label','Saved stories available to read');
+ history.append(picker,library,exportBtn,historyState);
  section.append(header,sourceArt,sourceCaption,art,artStatus,body,controls,rewardStatus);
  root.append(form,section,history);
  $('#sw-write').addEventListener('click',()=>void writeStory());
@@ -59,18 +63,41 @@ function ui(){
  $('#sw-copy-story').addEventListener('click',()=>void copy());
  $('#sw-fix').addEventListener('click',()=>void fix());
  $('#sw-retry-image').addEventListener('click',()=>void illustrate(active));
- picker.addEventListener('change',()=>{active=stories.find(x=>x.id===picker.value)||null;renderStory();});
+ picker.addEventListener('change',()=>openSavedStory(picker.value)); 
+ viewStories.addEventListener('click',()=>{
+  const show=history.hidden;history.hidden=!show;
+  viewStories.textContent=show?'Hide Stories':'View Stories';
+  viewStories.setAttribute('aria-expanded',String(show));
+  if(show){historyList();history.scrollIntoView({block:'start',behavior:'smooth'});}
+ });
  exportBtn.addEventListener('click',exportStories);
  historyList();
 }
 function note(message){$('#sw-notice').textContent=message;const status=$('#sw-reward-status');if(status)status.textContent=message}
+function openSavedStory(id){
+ active=stories.find(s=>s.id===id)||null;
+ if(!active)return;
+ renderStory();
+ $('#sw-output').scrollIntoView({block:'start',behavior:'smooth'});
+}
 function historyList(){
  const picker=$('#sw-history');picker.replaceChildren();
- const empty=make('option','','Choose a draft to reopen');empty.value='';picker.append(empty);
+ const empty=make('option','','Choose a saved story');empty.value='';picker.append(empty);
  for(const s of stories){const o=make('option','',s.title||'Untitled');o.value=s.id;picker.append(o)}
  if(active)picker.value=active.id;
  picker.disabled=!stories.length;
  const exportBtn=$('#sw-export');if(exportBtn)exportBtn.disabled=!stories.length;
+ const library=$('#sw-library');library.replaceChildren();
+ for(const s of stories){
+  const row=make('article','sw-library-item');
+  const h=make('h4','',s.title||'Untitled Story');
+  const date=make('p','sw-muted',String(s.createdAt||'').slice(0,10));
+  const teaser=make('p','sw-library-teaser',String(s.body||'').replace(/\\s+/g,' ').slice(0,175));
+  const open=make('button','sw-library-open','Read full story');open.type='button';
+  open.addEventListener('click',()=>openSavedStory(s.id));
+  row.append(h,date,teaser,open);library.append(row);
+ }
+ if(!stories.length)library.append(make('p','sw-muted','Write a story to see it here.'));
  const status=$('#sw-history-state');
  if(status)status.textContent=stories.length
   ?stories.length+' stories saved on this device (browser storage + IndexedDB backup). Cloud backup is not connected.'
@@ -84,8 +111,8 @@ async function persistDraft(story){
  })}finally{database.close()}
 }
 async function saveStory(story){
- stories=[story,...stories.filter(x=>x.id!==story.id)].slice(0,25);
- const savedLocal=store(KEY,stories);
+ stories=[story,...stories.filter(x=>x.id!==story.id)];
+ const savedLocal=store(KEY,stories.slice(0,25));
  let savedBackup=false;
  try{savedBackup=await persistDraft(story)}catch(error){console.warn('Story Writer draft backup unavailable',error)}
  historyList();
@@ -105,8 +132,8 @@ async function recoverDrafts(){
   for(const story of [...recovered,...stories]){
    if(story&&typeof story.id==='string'&&typeof story.body==='string')combined.set(story.id,story);
   }
-  stories=[...combined.values()].sort((a,b)=>Date.parse(b.createdAt||0)-Date.parse(a.createdAt||0)).slice(0,25);
-  if(stories.length)store(KEY,stories);
+  stories=[...combined.values()].sort((a,b)=>Date.parse(b.createdAt||0)-Date.parse(a.createdAt||0));
+  if(stories.length)store(KEY,stories.slice(0,25));
   if(stories.length)await new Promise((resolve,reject)=>{
    const tx=database.transaction('drafts','readwrite'),object=tx.objectStore('drafts');
    for(const story of stories)object.put(story);

@@ -33,3 +33,13 @@
 #phiStoryWriter .sw-source-preview[hidden],#phiStoryWriter .sw-original-photo[hidden],#phiStoryWriter .sw-original-caption[hidden]{display:none!important}
 #phiStoryWriter .sw-original-caption{margin:4px 0 9px;font-weight:800;color:#194b77}
 #phiStoryWriter #sw-source-note{margin-top:7px}
+
+
+/* Story library is a readable destination, not a second generation flow. */
+#phiStoryWriter .sw-history[hidden]{display:none}
+#phiStoryWriter .sw-view-stories{display:block;width:100%;margin:9px 0 0;min-height:44px;border:2px solid #164c89;border-radius:11px;background:#f8fcff;color:#164c89;font:850 14px system-ui,sans-serif}
+#phiStoryWriter .sw-library{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:13px 0}
+#phiStoryWriter .sw-library-item{min-width:0;background:#f7fbff;border:1px solid #82b1db;border-radius:13px;padding:13px;box-shadow:0 2px 0 #d0e7f8}
+#phiStoryWriter .sw-library-item h4{font-size:16px;color:#0a3257;margin:0 0 5px;line-height:1.25;overflow-wrap:anywhere}
+#phiStoryWriter .sw-library-teaser{font-size:13px;color:#214a70;line-height:1.5;overflow-wrap:anywhere}
+#phiStoryWriter .sw-library-open{min-height:44px;border:1px solid #0e3d70;border-radius:10px;background:#164c89;color:white;padding:8px 14px;font-weight:850}
