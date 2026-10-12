@@ -152,3 +152,27 @@ body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(.pi-primary,.pi-mode
 body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(.pi-modes,.pi-actions){display:grid!important;gap:9px!important;align-items:stretch!important}
 body.oracle-quanta #phiImageBuilder.oracle-image-studio .pi-primary{width:100%!important}
 body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(button,input,textarea,select):focus-visible{outline:3px solid #8654de!important}
+
+/* Blue Image Builder: simple result, visible grader, direct one-tap repair. */
+#phiImageBuilder.oracle-image-studio .pi-audit{
+ margin:14px 0;padding:16px;border:1px solid #759bde;border-radius:18px;
+ background:linear-gradient(150deg,#f9fcff,#e6f1ff);color:#1b3558;
+ box-shadow:0 4px 15px #235a9430;
+}
+#phiImageBuilder.oracle-image-studio .pi-audit-title{font-size:18px;font-weight:850;color:#163e74;text-shadow:none}
+#phiImageBuilder.oracle-image-studio .pi-audit-summary,
+#phiImageBuilder.oracle-image-studio .pi-audit-issues{color:#244563;font-size:13px;line-height:1.55}
+#phiImageBuilder.oracle-image-studio .pi-audit[data-review="needs_work"]{
+ border-color:#9b79ca;background:linear-gradient(150deg,#f8faff,#eee5ff);
+}
+#phiImageBuilder.oracle-image-studio .pi-grade-issue{padding:9px 0;border-top:1px solid #c4d2e8;overflow-wrap:anywhere}
+#phiImageBuilder.oracle-image-studio .pi-grade-fix{display:block;margin-top:3px;color:#295b84}
+#phiImageBuilder.oracle-image-studio .pi-fix-notes{min-height:66px;margin:8px 0 0}
+#phiImageBuilder.oracle-image-studio .pi-actions{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+#phiImageBuilder.oracle-image-studio .pi-actions [data-pi-action="fix"]{grid-column:1/-1;min-height:52px}
+#phiImageBuilder.oracle-image-studio .pi-actions button{min-width:0;overflow-wrap:anywhere}
+#phiImageBuilder.oracle-image-studio .pi-result{background:#f5faff;border-color:#86b0dd;box-shadow:0 4px 17px #2c60a433}
+@media(max-width:390px){
+ #phiImageBuilder.oracle-image-studio .pi-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #phiImageBuilder.oracle-image-studio .pi-actions button[data-pi-action="clear"]{grid-column:1/-1}
+}
