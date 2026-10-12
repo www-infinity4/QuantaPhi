@@ -15,10 +15,20 @@ function state(value){host.dataset.stage=value;host.setAttribute('aria-busy',val
 function section(title,copy){const box=make('section','pi-section');box.append(make('h3','',title));if(copy)box.append(make('p','pi-sub',copy));return box}
 function letteringMode(){const field=$('#pi-exact-text');const enabled=$('#pi-text-mode').value==='exact';field.disabled=!enabled;field.hidden=!enabled}
 function paintReview(review){
- const audit=$('.pi-audit'),title=audit.querySelector('.pi-audit-title'),summary=audit.querySelector('.pi-audit-summary'),issues=audit.querySelector('.pi-audit-issues');issues.replaceChildren();
- title.textContent=review?'Oracle review · '+(review.score===null?'Unscored':review.score+'/100'):'Oracle review unavailable';
- summary.textContent=review?.status==='needs_work'?'Choose the issues you want repaired. Lettering controls below keep your artwork intact.':review?.status==='good'?'Review complete. Inspect the image before saving.':'Inspect the image before saving; automated review is uncertain.';
- for(const [index,issue] of (review?.issues||[]).entries()){const li=make('li'),label=make('label','pi-issue-choice'),check=make('input');check.type='checkbox';check.dataset.piIssue=index;check.checked=/text|letter|spell|word|caption|label|gibberish/i.test(issue.problem);label.append(check,make('span','',issue.problem+(issue.fix?' — '+issue.fix:'')));li.append(label);issues.append(li)}
+ const audit=$('.pi-audit'),title=audit.querySelector('.pi-audit-title'),summary=audit.querySelector('.pi-audit-summary'),issues=audit.querySelector('.pi-audit-issues');
+ issues.replaceChildren();
+ const score=review?.score;
+ title.textContent='Image Grader · '+(Number.isFinite(score)?score+'/100':'Not graded');
+ summary.textContent=!review?'The image review service is unavailable. You can still describe a problem and try Fix Image.':
+  review.status==='needs_work'?'The grader found issues below. Fix Image attempts the corrections and then grades the result again.':
+  review.status==='good'?'The image passed review. You can save it or describe a specific change below.':
+  'Review is uncertain. Inspect the image and describe anything that needs correction.';
+ for(const issue of (review?.issues||[])){
+  const li=make('li','pi-grade-issue');
+  li.append(make('strong','','Problem: '),document.createTextNode(String(issue.problem||'Unknown problem')));
+  if(issue.fix)li.append(make('span','pi-grade-fix','Correction: '+issue.fix));
+  issues.append(li);
+ }
  audit.dataset.review=review?.status||'uncertain';
 }
 function notice(text){const area=host.dataset.stage==='finished'?'.pi-finished':host.dataset.stage==='progress'?'.pi-progress':'.pi-composer';const el=$(area+' .pi-notice');if(el)el.textContent=text}
@@ -62,15 +72,21 @@ function layout(){
  const steps=make('div','pi-steps');names.forEach((name,i)=>{const row=make('div','pi-step');row.dataset.piStep=i;row.dataset.state='waiting';row.append(make('span','',name),make('small','','Waiting'));steps.append(row)});progress.append(steps,make('p','pi-notice',''));
  for(const [key,label] of [['retry-render','Retry image render'],['back','Back to description']]){const button=make('button','pi-mode',label);button.type='button';button.dataset.piAction=key;button.hidden=key==='retry-render';progress.append(button)}
  const done=make('div','pi-finished pi-panel');done.append(make('span','pi-eyebrow','ORACLE · YOUR ARTWORK'),make('h2','','Your image'));const img=make('img','pi-result');img.alt='Generated image result';done.append(img,make('p','pi-notice',''));
- const lettering=make('div','pi-lettering');lettering.append(make('h3','','Lettering controls'),make('p','pi-sub','Add or change exact words without rebuilding the artwork. Removing added words restores the base image. Words painted into the base image need a separate repair.'));
- const correction=make('input','pi-exact-input');correction.id='pi-correct-text';correction.type='text';correction.maxLength=120;correction.placeholder='Exact words';correction.setAttribute('aria-label','Correct lettering');lettering.append(correction);
- const local=make('div','pi-local-actions');for(const [key,label] of [['apply-lettering','Apply exact words'],['remove-lettering','Remove added words'],['repair-lettering','Repair painted words']]){const button=make('button','pi-mode',label);button.type='button';button.dataset.piAction=key;local.append(button)}lettering.append(local);done.append(lettering);
- const audit=make('div','pi-audit');audit.setAttribute('aria-live','polite');audit.append(make('strong','pi-audit-title','Oracle review'),make('p','pi-audit-summary','Not yet reviewed.'),make('ul','pi-audit-issues'));done.append(audit);
- const actions=make('div','pi-actions');for(const [key,label,wide] of [['fix','Fix image · selected issues',true],['edit','Edit description'],['download','Save image'],['clear','Clear image']]){const button=make('button',wide?'pi-wide':'',label);button.type='button';button.dataset.piAction=key;actions.append(button)}done.append(actions);
+ const audit=make('div','pi-audit');audit.setAttribute('aria-live','polite');
+ audit.append(make('strong','pi-audit-title','Image Grader'),make('p','pi-audit-summary','The grader runs automatically after an image is created.'),make('ul','pi-audit-issues'));
+ done.append(audit);
+ const notesLabel=make('label','pi-label','What else needs fixing?');notesLabel.htmlFor='pi-fix-notes';
+ const notes=make('textarea','pi-fix-notes');notes.id='pi-fix-notes';notes.rows=2;notes.maxLength=1200;notes.placeholder='Optional: describe a specific correction. No dragging or reuploading.';
+ done.append(notesLabel,notes);
+ const actions=make('div','pi-actions');
+ for(const [key,label,wide] of [['fix','Fix image',true],['edit','Edit description'],['download','Save image'],['clear','Clear image']]){
+  const button=make('button',wide?'pi-wide':'',label);button.type='button';button.dataset.piAction=key;actions.append(button);
+ }
+ done.append(actions);
  host.replaceChildren(form,progress,done);letteringMode();
  host.querySelectorAll('.pi-notice').forEach(el=>{el.setAttribute('role','status');el.setAttribute('aria-live','polite')});
 }
-async function build({retryRender=false,repairBaseline=null}={}){
+async function build({retryRender=false}={}){
  if(busy||preparingReference)return;
  const typed=$('#pi-prompt').value.trim().slice(0,3000);
  const exactText=$('#pi-text-mode').value==='exact'?$('#pi-exact-text').value.trim().slice(0,120):'';
@@ -149,9 +165,6 @@ async function build({retryRender=false,repairBaseline=null}={}){
     warning=[warning,'Automatic refinement could not be verified; the original rendered image was kept.'].filter(Boolean).join(' ');
    }
   }
-  if(repairBaseline&&(!review||!Number.isFinite(review.score)||(Number.isFinite(repairBaseline.artifact.review?.score)&&review.score<repairBaseline.artifact.review.score))){
-   result=repairBaseline.result;rawResult=repairBaseline.rawResult;artifact=repairBaseline.artifact;lastInstruction=repairBaseline.instruction;lastExactText=artifact.exactText||'';paintReview(artifact.review);$('.pi-result').src=result;state('finished');notice('Your previous image was kept because the repair was lower-scoring or could not be verified.');return;
-  }
   artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search,storyWriterId,autoRefined};
   artifact.review=review;
   window.QuantaStarCredit?.(description.includes("Refine the CURRENT rendered image")?"fix_image":"build_image",artifact.id,artifact);
@@ -184,7 +197,6 @@ async function build({retryRender=false,repairBaseline=null}={}){
     notice((error?.code==='image_render_timeout'?'The render did not finish within 150 seconds.':error?.code==='image_render_network'?'The image service connection failed.':message.slice(0,145))+' Your description and GPT direction are saved. Tap Retry image render to retry ONLY step 3.');
    }else notice(message.slice(0,210)+'. No completed image was returned. Your description is saved for editing.');
   }
-  if(repairBaseline){result=repairBaseline.result;rawResult=repairBaseline.rawResult;artifact=repairBaseline.artifact;lastInstruction=repairBaseline.instruction;lastExactText=artifact.exactText||'';paintReview(artifact.review);$('.pi-result').src=result;state('finished');notice('Repair failed. Your previous image is preserved. '+message.slice(0,120));}
   emit('build:error',{requestId,error:message,code:error?.code||'',phase});
  }finally{busy=false}
 }
@@ -208,26 +220,6 @@ host.addEventListener('click',event=>{
  const choice=event.target.closest('[data-pi-mode]');
  if(choice){mode=choice.dataset.piMode;host.querySelectorAll('[data-pi-mode]').forEach(b=>b.setAttribute('aria-pressed',b===choice?'true':'false'));return}
  const action=event.target.closest('[data-pi-action]')?.dataset.piAction;
- if(action==='apply-lettering'||action==='remove-lettering'){
-  if(busy||!rawResult||!artifact)return;
-  const editField=$('#pi-correct-text');
-  const corrected=action==='remove-lettering'?'':String(editField?.value||'').trim().slice(0,120);
-  busy=true;
-  void (async()=>{
-   try{
-    const revised=corrected?await renderer.composeExactText(rawResult,corrected):rawResult;
-    const dimensions=await renderer.validate(revised);
-    result=revised;lastExactText=corrected;artifact={...artifact,exactText:corrected,letteringEdited:true,width:dimensions.width,height:dimensions.height};
-    $('.pi-result').src=result;if(editField)editField.value=corrected;
-    const original=$('#pi-exact-text');if(original)original.value=corrected;$('#pi-text-mode').value=corrected?'exact':'none';letteringMode();
-    const audit=$('.pi-audit');if(audit){audit.dataset.review='uncertain';audit.querySelector('.pi-audit-title').textContent='Lettering changed locally';audit.querySelector('.pi-audit-summary').textContent='The corrected caption uses real browser fonts. The base illustration was not regenerated or rechecked.';audit.querySelector('.pi-audit-issues').replaceChildren()}
-    notice(corrected?'Exact lettering saved into the preview. Save image to keep this correction. No new AI render was charged.':'Added lettering removed. The original illustration is preserved. No new AI render was charged.');
-    emit('build:lettering',artifact);
-   }catch(error){notice('Unable to update lettering: '+String(error?.message||error).slice(0,130))}
-   finally{busy=false}
-  })();
-  return;
- }
  if(action==='build')void build();
  if(action==='retry-render'&&!busy)void build({retryRender:true});
  if(action==='remove-source'||action==='remove-design'){
@@ -238,17 +230,7 @@ host.addEventListener('click',event=>{
   notice(kind==='source'?'Uploaded photo removed. You can build from the description or choose another photo.':'Style reference removed.');
  }
  if(action==='back'||action==='edit'){const retry=$('[data-pi-action="retry-render"]');if(retry)retry.hidden=true;state('composer');if(lastInstruction)$('#pi-prompt').value=lastInstruction;$('#pi-exact-text').value=lastExactText;$('#pi-text-mode').value=lastExactText?'exact':'none';letteringMode()}
- if(action==='more')void reopenAsReference(lastInstruction+'\nCreate a new variation retaining the original subject, valid geometry, and strongest composition.');
- if(action==='fix'||action==='repair-lettering'){
-  if(!artifact||!result)return;
-  const review=artifact.review;
-  const corrections=action==='repair-lettering'?['Remove all text painted into the image and fill only those text regions with matching clean background. Preserve all objects, geometry, materials, connections, lighting and composition exactly. Do not fix or redesign the mechanism.']:[...host.querySelectorAll('[data-pi-issue]:checked')].map(el=>review?.issues?.[Number(el.dataset.piIssue)]).filter(Boolean).map(issue=>issue.fix||issue.problem);
-  if(!corrections.length){notice('Select the review issues you want repaired, or use Lettering controls.');return}
-  const baseline={artifact,result,rawResult,instruction:lastInstruction};
-  const instruction=['Refine the CURRENT rendered image. Preserve all correct content and overall subject. Repair only the following selected changes:',...corrections,'Paint no letters, words, labels, numbers or pseudo-text. Exact words are added separately with real fonts.'].join('\n');
-  window.PhiImageLearning?.record(artifact,'needs_fix',{problem:corrections[0]});storyWriterId=artifact.storyWriterId||'';
-  void reopenAsReference(instruction).then(ready=>ready?build({repairBaseline:baseline}):null).finally(()=>{storyWriterId=''});
- }
+ if(action==='fix')void fixImage();
  if(action==='good'){window.PhiImageLearning?.record(artifact,'looks_good');notice('Thank you. This result is a positive design example for future renders on this device.')}
  if(action==='clear'){
   if(busy)return;
@@ -264,13 +246,56 @@ host.addEventListener('click',event=>{
 
  if(action==='star'||action==='share'||action==='collect'||action==='download')emit('action',{action,artifact,result});
 });
-async function reopenAsReference(instruction){
- state('composer');$('#pi-prompt').value=instruction.slice(0,3000);$('#pi-exact-text').value=lastExactText;$('#pi-text-mode').value=lastExactText?'exact':'none';letteringMode();
- if(!result)return false;
- const previous=rawResult||result;preparingReference=true;notice('Preparing this image as the next reference…');
- try{const blob=await renderer.asBlob(previous);source=new File([blob],'phi-refinement.png',{type:blob.type});showFile(source,'source');notice('Reference prepared for image repair.');return true}
- catch(error){notice('Could not attach the previous render: '+String(error?.message||error));return false}
- finally{preparingReference=false}
+/* Repair runs against the finished image internally. It must never replace the
+   user's uploaded photo, change the description, or reopen an upload box. */
+async function fixImage(){
+ if(busy||preparingReference||!artifact||!rawResult)return;
+ const original={artifact,result,rawResult};
+ const fixes=(original.artifact.review?.issues||[]).slice(0,6)
+  .map(issue=>String(issue.fix||issue.problem||'').trim()).filter(Boolean);
+ const custom=String($('#pi-fix-notes')?.value||'').trim().slice(0,1200);
+ if(!fixes.length&&!custom){notice('The grader has no corrections selected. Describe what you want fixed in the box above.');return}
+ busy=true;
+ const button=$('[data-pi-action="fix"]');if(button)button.disabled=true;
+ notice('Fixing the current image and checking the corrected version. Uploads and description remain unchanged.');
+ try{
+  const prior=await renderer.asBlob(original.rawResult);
+  const repair=[
+   'IMAGE REPAIR of the supplied current image, not a new image or a redesign.',
+   'Preserve the subject, recognisable objects, perspective, positions, geometry, colors, lighting and all already-correct details.',
+   'Correct these Image Grader findings:',...fixes,
+   custom?'Additional user correction: '+custom:'',
+   'Original image description: '+original.artifact.prompt,
+   'Paint no lettering, numbers, labels, fake words or pseudo-text. Exact text is composited separately.',
+   'Do not change any other areas of the image.'
+  ].filter(Boolean).join('\n').slice(0,7400);
+  const mode=original.artifact.mode,description=original.artifact.prompt,exactText=original.artifact.exactText||'';
+  const rendered=await renderer.render({description,mode,source:prior,design:null,prompt:repair,exactText});
+  const nextRaw=rendered.src;
+  const nextResult=exactText?await renderer.composeExactText(nextRaw,exactText):nextRaw;
+  const size=await renderer.validate(nextResult);
+  let review=null;
+  try{review=await renderer.review({src:nextResult,description,mode,exactText})}
+  catch(_){/* Do not replace a previously graded image without a new grade. */}
+  const before=original.artifact.review?.score,after=review?.score;
+  if(Number.isFinite(before)&&(!Number.isFinite(after)||after<before)){
+   notice('The original image is preserved: the corrected attempt was not graded higher or equal. No upload or description was changed.');
+   return;
+  }
+  rawResult=nextRaw;result=nextResult;
+  artifact={...original.artifact,id:'phi-visual-'+id(),previousId:original.artifact.id,
+   renderPrompt:repair,renderer:rendered.renderer,createdAt:new Date().toISOString(),
+   width:size.width,height:size.height,review,autoRefined:false};
+  $('.pi-result').src=result;
+  paintReview(review);
+  $('#pi-fix-notes').value='';
+  window.PhiImageLearning?.record(artifact,'review',{issues:review?.issues||[]});
+  window.QuantaStarCredit?.('fix_image',artifact.id,artifact);
+  notice('Corrected image is displayed above.'+(review?' Image Grader checked it again.':' Grader unavailable; please inspect before saving.'));
+  emit('build:done',artifact);
+ }catch(error){
+  notice('Fix Image could not produce a verified correction. Your original image is unchanged. '+String(error?.message||error).slice(0,130));
+ }finally{busy=false;if(button)button.disabled=false}
 }
 layout();state('composer');
 window.PhiImageBuilder={
