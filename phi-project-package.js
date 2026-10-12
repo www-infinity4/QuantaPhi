@@ -5,7 +5,7 @@ if(root.PhiProjectPackage)return;
 const KEY='quantaphi:asset-projects:v1', ACTIVE='quantaphi:active-asset-project:v1', LIMIT=70,MAX_ASSETS=240;
 const clean=(s,max=400)=>String(s==null?'':s).replace(/\s+/g,' ').trim().slice(0,max);
 const uid=()=>root.crypto?.randomUUID?.()||('p'+Date.now().toString(36)+Math.random().toString(36).slice(2));
-const safeUrl=s=>{try{const u=new URL(String(s||''),location.origin);return u.protocol==='https:'&&!u.username&&!u.password?u.href:''}catch{return''}};
+const safeUrl=s=>{const raw=String(s||'').trim();if(!raw)return'';try{const u=new URL(raw,location.origin);return u.protocol==='https:'&&!u.username&&!u.password?u.href:''}catch{return''}};
 function read(){try{const a=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(a)?a.filter(x=>x&&typeof x.id==='string').slice(0,LIMIT):[]}catch{return[]}}
 function notice(){root.dispatchEvent(new CustomEvent('phi-projects:changed'))}
 function write(items){try{localStorage.setItem(KEY,JSON.stringify(items.slice(0,LIMIT)));notice();return true}catch{return false}}
