@@ -315,3 +315,23 @@ test('unscored Oracle review stays unscored rather than reporting zero',async()=
  const review=await window.PhiVisualRender.review({src:'https://example.test/image.png',description:'No lettering',mode:'Image',exactText:''});
  assert.equal(review.score,null);
 });
+
+test('blue Image Grader repairs current pixels directly without changing uploads or description',()=>{
+ const js=source('phi-image-builder.js'),html=source('index.html'),css=source('phi-image-builder.css');
+ assert.match(js,/Image Grader · /);
+ assert.match(js,/What else needs fixing/);
+ assert.match(js,/\['fix','Fix image'/);
+ assert.match(js,/async function fixImage\(\)/);
+ const fix=js.slice(js.indexOf('async function fixImage()'),js.indexOf("layout();state('composer');"));
+ assert.match(fix,/renderer\.asBlob\(original\.rawResult\)/);
+ assert.match(fix,/const fixes=custom\?\[\]:/,'user correction must override grader guesses');
+ assert.match(fix,/renderer\.render\(\{description,mode,source:prior,design:null,prompt:repair,exactText\}\)/);
+ assert.match(fix,/renderer\.review\(\{src:nextResult,description,mode,exactText\}\)/);
+ assert.match(fix,/after<before/);
+ assert.match(fix,/\.pi-result'\)\.src=result/);
+ assert.doesNotMatch(fix,/showFile\(|source=new File|state\('composer'\)|#pi-prompt'\)\.value=/);
+ assert.doesNotMatch(js,/reopenAsReference/);
+ assert.doesNotMatch(html,/phi-image-type-studio\.js/);
+ assert.match(html,/phi-image-builder\.js\?v=20261011-grader2/);
+ assert.match(css,/\.pi-grade-fix/);
+});
