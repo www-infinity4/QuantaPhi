@@ -410,6 +410,68 @@ export async function readRunnerBody(request, pathname){
  return new TextDecoder().decode(bytes);
 }
 
+/* An owner-verifed Brain session can operate on the very same D1 owner
+ * partition that the Brain Clock's authenticated writer reads. Do not create
+ * a new anonymous owner_token in the browser: those tickets never dispatch. */
+export async function ownerTickets(env,path,body){
+ const denied=(error,status=400)=>({status,result:{ok:false,error}});
+ const ownerHash=env.WRITER_OWNER_HASH;
+ if(!/^[a-f0-9]{64}$/.test(ownerHash||''))return denied('brain_owner_partition_not_configured',503);
+ const db=env.WORK_DB;
+ const publicTicket=row=>{
+  if(!row)return null;
+  let context={};try{context=JSON.parse(row.context_json||'{}')}catch{}
+  return {id:row.id,title:row.title,request:row.request,storyboard:row.storyboard||'',context,
+   repository:row.repository||'',status:row.status,claimed_by:row.claimed_by||'',
+   result_summary:row.result_summary||'',result_url:row.result_url||'',
+   created_at:row.created_at,updated_at:row.updated_at};
+ };
+ if(path==='/work/tickets/list'){
+  const rows=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100").bind(ownerHash).all();
+  return {status:200,result:{ok:true,tickets:(rows.results||[]).map(publicTicket)}};
+ }
+ if(path==='/work/tickets/create'){
+  const request=typeof body.request==='string'?body.request.trim().slice(0,12000):'';
+  const title=typeof body.title==='string'?body.title.trim().slice(0,180):'';
+  const context=body.context&&typeof body.context==='object'&&!Array.isArray(body.context)?body.context:{};
+  const submission=String(context.submission_id||'').slice(0,100);
+  if(!request||context.kind!=='robot-directions')return denied('robot_directions_required');
+  if(submission){
+   const old=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND json_extract(context_json,'$.submission_id')=? LIMIT 1").bind(ownerHash,submission).first();
+   if(old)return {status:200,result:{ok:true,ticket:publicTicket(old),deduplicated:true}};
+  }
+  const id='IW-'+new Date().toISOString().slice(0,10).replaceAll('-','')+'-'+crypto.randomUUID().slice(0,8).toUpperCase();
+  const now=Date.now(),handoffHash=await digest(crypto.randomUUID()+crypto.randomUUID());
+  const sql="INSERT INTO work_tickets (id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,status,claimed_by,created_at,updated_at,completed_at,handoff_expires_at,result_summary,result_url) VALUES (?,?,?,?,?,?,?,?,?,?,'draft','',?,?,NULL,?,'','')";
+  await db.prepare(sql).bind(id,ownerHash,handoffHash,'QuantaPhi Robot Brain','https://quantaphi.org/','',
+   title||request.slice(0,120),request,'',JSON.stringify(context),now,now,now+30*86400000).run();
+  const row=await db.prepare('SELECT * FROM work_tickets WHERE id=? AND owner_hash=?').bind(id,ownerHash).first();
+  return {status:200,result:{ok:true,ticket:publicTicket(row)}};
+ }
+ if(path==='/work/tickets/update'){
+  const id=String(body.id||'').trim().slice(0,80);
+  if(!/^IW-\d{8}-[0-9A-F-]{8}$/.test(id))return denied('invalid_ticket_id');
+  const row=await db.prepare('SELECT * FROM work_tickets WHERE id=? AND owner_hash=?').bind(id,ownerHash).first();
+  if(!row)return denied('owner_ticket_not_found',404);
+  if(!['draft','ready','blocked'].includes(row.status))return denied('ticket_already_in_progress',409);
+  const context=body.context&&typeof body.context==='object'&&!Array.isArray(body.context)?body.context:null;
+  if(!context||context.kind!=='robot-directions')return denied('robot_context_required');
+  const jobs=context.color_jobs;
+  if(!Array.isArray(jobs)||jobs.length===0||jobs.length>24)return denied('color_jobs_required');
+  if(jobs.some(j=>!j||typeof j!=='object'||!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(j.repository||'')||
+   !/^TASK-\d+$/.test(j.id||'')||!String(j.instructions||'').trim()))return denied('invalid_color_jobs');
+  const serialized=JSON.stringify(context);
+  if(serialized.length>50000)return denied('ticket_context_too_large',413);
+  const now=Date.now(),status=body.status==='ready'?'ready':'draft';
+  const changed=await db.prepare('UPDATE work_tickets SET context_json=?,storyboard=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?')
+   .bind(serialized,String(body.storyboard||'').slice(0,24000),status,now,id,ownerHash,row.context_json).run();
+  if(changed?.meta?.changes===0)return denied('ticket_changed_retry',409);
+  const current=await db.prepare('SELECT * FROM work_tickets WHERE id=? AND owner_hash=?').bind(id,ownerHash).first();
+  return {status:200,result:{ok:true,ticket:publicTicket(current)}};
+ }
+ return denied('not_found',404);
+}
+
 async function ownerAuthorized(env,token){
  if(!token)return false;
  if(env.WRITER_OWNER_HASH&&await digest(token)===env.WRITER_OWNER_HASH)return true;
@@ -438,6 +500,19 @@ export default{
     const response=await clock.fetch('https://clock.internal/owner/session-create',{method:'POST',body:JSON.stringify({userId:state.user.id})});
     return output(request,await response.json(),response.ok?200:404);
    }catch{return output(request,{ok:false,error:'wallet_service_unreachable'},503)}
+  }
+  if(['/work/tickets/create','/work/tickets/list','/work/tickets/update'].includes(path)&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
+   try{
+    const text=await request.text();
+    if(text.length>70000)return output(request,{ok:false,error:'request_too_large'},413);
+    const body=JSON.parse(text||'{}');
+    const result=await ownerTickets(env,path,body);
+    return output(request,result.result,result.status);
+   }catch(error){return output(request,{ok:false,error:'owner_ticket_request_failed'},500)}
   }
   if(path==='/work/earnings/connect'&&request.method==='POST'){
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
