@@ -35,7 +35,7 @@ test('reader static route has its own canonical path',()=>{
 
 test('Business intent presents RadioShack official store first without claiming search listings are paid advertising',()=>{
  const code=load('phi-business-search.js'),html=load('index.html');
- assert.match(code,/radioshack:\{name:'RadioShack',domain:'radioshack\\.com'/);
+ assert.match(code,/radioshack:\{name:'RadioShack',domain:'radioshack\.com'/);
  assert.match(code,/result\.parentNode\.insertBefore\(panel,result\)/);
  assert.match(code,/not a paid advertisement/);
  assert.match(code,/matchOfficial\(x\.url,brand\)/);
