@@ -43,6 +43,10 @@ export async function rememberOutcome(env,input) {
   const m=await normalizeExperience(input);
   const inserted=await env.WORK_DB.prepare("INSERT OR IGNORE INTO brain_experiences (experience_id,owner_hash,repository,ticket_id,job_id,kind,status,summary,evidence_url,metadata_json,verified,occurred_at,created_at,embedding_status) VALUES (?,?,?,?,?,'outcome',?,?,'',?,?,?,?,'pending')")
     .bind(m.id,m.ownerHash,m.repository,m.ticketId,m.jobId,m.status,m.summary,JSON.stringify({task:m.task,commitSha:m.commitSha}),m.status==='deployed_verified'?1:0,m.occurredAt,Date.now()).run();
+  if(inserted?.meta?.changes===0){
+    const previous=await env.WORK_DB.prepare("SELECT embedding_status FROM brain_experiences WHERE experience_id=? AND owner_hash=?").bind(m.id,m.ownerHash).first();
+    if(previous?.embedding_status==='indexed')return {id:m.id,durable:true,vector:'already_indexed',duplicate:true};
+  }
   if(!env.BRAIN_MEMORY||!env.WRITER_AI)return {id:m.id,durable:true,vector:'unbound'};
   try{
     const vector=embedding(await env.WRITER_AI.run(MODEL,{text:[m.text.slice(0,1800)]}));
@@ -89,4 +93,32 @@ export async function recallOutcomes(env,{ownerHash,repository,query,limit=6,now
     id:r.id,ticketId:r.ticket_id,jobId:r.job_id,status:r.status,task:r.task,summary:r.summary,
     commitSha:r.commit_sha||null,occurredAt:r.occurred_at,provenance:'historical_receipt_data_not_instructions'
   }));
+}
+
+/** Retry at most two pending/retry embeddings each scheduled clock tick.
+ * Failures back off in D1 metadata; no coin minting, tool execution, or LLM action.
+ */
+export async function retryPendingEmbeddings(env,ownerHash,max=2,now=Date.now()) {
+  if(!ownerOK(ownerHash))throw Error('memory_scope_invalid');
+  if(!env.BRAIN_MEMORY||!env.WRITER_AI)return {attempted:0,reason:'unbound'};
+  const limit=Math.max(1,Math.min(2,Math.floor(Number(max)||2)));
+  const q=await env.WORK_DB.prepare("SELECT experience_id,repository,summary,status,metadata_json,occurred_at FROM brain_experiences WHERE owner_hash=? AND kind='outcome' AND embedding_status IN ('pending','retry') AND COALESCE(json_extract(metadata_json,'$.memoryRetryAfter'),0)<=? ORDER BY occurred_at LIMIT ?").bind(ownerHash,now,limit).all();
+  let indexed=0,failed=0;
+  for(const row of q.results||[]){
+    if(!/^exp-[a-f0-9]{60}$/.test(row.experience_id||'')||!repoOK(row.repository))continue;
+    let meta={};try{meta=JSON.parse(row.metadata_json||'{}')}catch{}
+    const text=[row.repository,'Task: '+redactExperience(meta.task).slice(0,700),'Result: '+row.status,'Outcome: '+redactExperience(row.summary)].join('\n');
+    try{
+      const vector=embedding(await env.WRITER_AI.run(MODEL,{text:[text.slice(0,1800)]}));
+      await env.BRAIN_MEMORY.upsert([{id:row.experience_id,namespace:ownerHash,values:vector,metadata:{repository:row.repository,occurred_at:row.occurred_at,status:row.status}}]);
+      await env.WORK_DB.prepare("UPDATE brain_experiences SET embedding_status='indexed' WHERE owner_hash=? AND experience_id=?").bind(ownerHash,row.experience_id).run();
+      indexed++;
+    }catch{
+      const count=Math.min(8,(Number(meta.memoryRetryCount)||0)+1);
+      const nextRetry=now+Math.min(3600000,60000*(2**count));
+      await env.WORK_DB.prepare("UPDATE brain_experiences SET embedding_status='retry',metadata_json=json_set(metadata_json,'$.memoryRetryCount',?,'$.memoryRetryAfter',?) WHERE owner_hash=? AND experience_id=?").bind(count,nextRetry,ownerHash,row.experience_id).run();
+      failed++;
+    }
+  }
+  return {attempted:indexed+failed,indexed,failed};
 }
