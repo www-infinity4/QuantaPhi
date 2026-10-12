@@ -6,6 +6,16 @@ const fs = require('node:fs');
 const source=fs.readFileSync('bubbles-voice-gate.js','utf8');
 function gate(){const context={};vm.runInNewContext(source,context);return context.BubblesVoiceGate.create({followupMs:20000})}
 
+test('custom Brain wake name works alongside Bubbles and updates safely',()=>{
+ const context={};vm.runInNewContext(source,context);
+ const g=context.BubblesVoiceGate.create({name:'Brain'});
+ assert.equal(g.accept('Hey Brain explain the wallet',1000).text,'explain the wallet');
+ assert.equal(g.accept('Bubbles another question',5000).type,'message');
+ g.reset();g.setName('Brain.*');
+ assert.equal(g.accept('BrainXYZ explain this',6000).type,'ignore');
+ assert.equal(g.accept('Brain.* explain this',6001).text,'explain this');
+});
+
 test('wake name opens a speech conversation without a Talk button',()=>{
  const g=gate();
  assert.equal(g.accept('It is sunny here',1000).type,'ignore');
@@ -34,3 +44,4 @@ test('unrecognized people and unrelated transcripts do not start a session',()=>
  for(const s of ['the bubbles are beautiful','Bubblegum is red','Tell Alexa about it',''])assert.equal(g.accept(s,1000).type,'ignore');
  assert.equal(g.accept('Bubble AI, start listening',1100).type,'wake');
 });
+
