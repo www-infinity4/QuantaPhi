@@ -4,6 +4,45 @@
 const ROLES={'gold-diggers-ink':'yellow','naked-gold-digger':'yellow',bluey:'blue',blueberry:'blue',bluth:'blue','orange-julius':'orange','orange-peel':'orange',greenbeans:'green','pink-panther':'pink','purple-pearl':'purple','purple-pleasure':'purple','purple-people-eater':'purple'};
 Object.assign(ROLES,{"enchilada-lifecycle-manager": "purple", "pipeline-architect": "purple", "branch-fork-evaluator": "orange", "ambiguity-strainer": "orange", "utility-optimizer": "blue", "triage-selector": "blue", "repo-script-writer": "green", "layout-router": "green", "ecosystem-watcher": "red", "structural-auditor": "red", "interaction-sniffer": "yellow", "state-delta-tracker": "yellow", "regression-detective": "pink", "silent-storage-auditor": "pink"});
 Object.assign(ROLES,{"purple-reign":"purple","grape-escape":"purple","deep-plum":"purple","orange-peel":"orange","marmalade":"orange","tangelo":"orange","blue-velvet":"blue","indigo":"blue","cobalt":"blue","green-hornet":"green","jade":"green","mint-condition":"green","red-alert":"red","crimson":"red","yellow-jacket":"yellow","gold-digger":"yellow","pink-floyd":"pink","bubblegum":"pink","magenta":"pink","the-black-box":"black"});
+// Default toolbox for each color team, used whenever GPT omits a job's tools.
+const ROLE_TOOLS={
+ red:['Live page fetch & HTTP status','Uptime and domain health watch','Sitemap and link crawler','CDN / dependency change watch'],
+ yellow:['Android Chromium browser run','Tap-target and form checks','Local storage and draft state inspector','Screenshot capture'],
+ blue:['Repository source reader','Ledger and receipt comparator','Priority triage','Acceptance-criteria planner'],
+ orange:['Requirement clarifier','Privacy and wallet-safety policy check','Branch / fork evaluator'],
+ green:['Bounded patch writer','Cache-version bumper','Layout router','Commit with base-SHA conflict check'],
+ pink:['Regression test runner','Console and network error reader','Broken image and media detector','Silent storage auditor'],
+ purple:['GPT receipt review','Job sequencer and retries','Progress reporter','Owner acceptance gate'],
+ black:['Permanent evidence seal','Deployed source verification']
+};
+const REPO='www-infinity4/QuantaPhi';
+const MOBILE='Verified in the Android Chromium browser on quantaphi.org with screenshots attached';
+// One-tap maintenance crews: saved straight to the work ticket as structured
+// jobs, so they reach the runner even when GPT routing is unavailable.
+const SITE_CREWS=[
+ {id:'health-watch',label:'Site health watch',jobs:[
+  {agent:'ecosystem-watcher',title:'Watch quantaphi.org uptime, HTTP status and broken links',instructions:'Fetch the live home page, About, Learn, Storybook and every in-page site link. Record HTTP status, response time and any 4xx/5xx or redirect loop.',acceptance:['Every linked page returns HTTP 200 or a documented redirect','A dated report lists any broken link with its source element']},
+  {agent:'regression-detective',title:'Read console and network errors on the live page',instructions:'Load quantaphi.org on Android Chromium, capture console errors, failed requests and uncaught promise rejections.',acceptance:['Zero uncaught errors on first load, or each one is filed as a repair job',MOBILE]}]},
+ {id:'repair',label:'Repair broken pieces',jobs:[
+  {agent:'regression-detective',title:'Find and repair broken images, audio and video',instructions:'Check every card image, story illustration, radio episode and media extension for failed loads. Repair the source or show a working fallback.',acceptance:['No broken-image icons or silent players on the home page',MOBILE]},
+  {agent:'repo-script-writer',title:'Patch failing cards with bounded fixes',instructions:'For each defect found by the watch crew, apply the smallest patch, bump its cache version and run the regression tests.',acceptance:['Existing regression tests pass','The repaired card works on quantaphi.org after deploy']}]},
+ {id:'upgrades',label:'Upgrades & speed',jobs:[
+  {agent:'utility-optimizer',title:'Speed up first load on Android',instructions:'Measure load time and largest assets. Defer non-critical scripts and compress oversized images without changing behavior.',acceptance:['Home page is interactive faster than the recorded baseline','No feature is removed']},
+  {agent:'pipeline-architect',title:'Plan the next owner-requested upgrade',instructions:'Read saved owner directions and open issues, pick the highest-value upgrade and break it into tested steps.',acceptance:['A prioritized upgrade plan with testable steps is saved to this ticket']}]},
+ {id:'image-proofreading',label:'Image lettering proofreading',jobs:[
+  {agent:'purple-pearl',title:'Proofread generated images for fake lettering',instructions:'Review recent Image Studio and story illustrations. Flag any painted pseudo-letters and repaint them as clean artwork with exact words added by real browser fonts.',acceptance:['No unreadable or invented writing appears in saved images','Requested words are spelled exactly using browser typography']}]},
+ {id:'mobile-a11y',label:'Mobile & accessibility check',jobs:[
+  {agent:'interaction-sniffer',title:'Check tap targets, contrast and keyboard focus',instructions:'Inspect every button and input on the home page for 44px tap targets, visible focus and readable contrast.',acceptance:['All controls are at least 44px tall on Android','Focus is visible on every interactive element']},
+  {agent:'layout-router',title:'Fix horizontal scrolling and overlapping cards',instructions:'Find any card wider than the phone viewport or overlapping content and correct its layout.',acceptance:['No horizontal scroll at 360px width',MOBILE]}]},
+ {id:'security-wallet',label:'Security & wallet guard',jobs:[
+  {agent:'silent-storage-auditor',title:'Audit private keys and wallet safety',instructions:'Confirm owner keys and wallet tokens never appear in URLs, logs or public pages, and that unverified balances block transactions.',acceptance:['No secret appears in page source, URLs or console output','Unverified identity blocks wallet actions']},
+  {agent:'structural-auditor',title:'Verify owner-only areas stay private',instructions:'Confirm the Robot Brain and job controls stay hidden for visitors and the brain clock returns 404 without the owner key.',acceptance:['Public page hides the Robot Brain','Brain clock endpoints return 404 without the owner key']}]}
+];
+function fallbackJobs(directions){
+ const parts=String(directions||'').split(/\n+|(?<=[.!?])\s+/).map(x=>x.replace(/^[\s*\-\u2022\d.)]+/,'').trim()).filter(x=>x.length>=8).slice(0,8);
+ const pick=text=>/broken|bug|error|fix|repair|crash|fail/i.test(text)?'regression-detective':/image|picture|letter|font|text on/i.test(text)?'purple-pearl':/mobile|android|layout|button|tap|scroll/i.test(text)?'layout-router':/wallet|coin|quant|ledger|payout|secur|private/i.test(text)?'silent-storage-auditor':/watch|monitor|uptime|health|link/i.test(text)?'ecosystem-watcher':/fast|speed|slow|upgrade|improve/i.test(text)?'utility-optimizer':'repo-script-writer';
+ return {jobs:(parts.length?parts:[String(directions||'').trim()]).map(text=>({title:text.slice(0,180),agent:pick(text),repository:REPO,instructions:text,acceptance:['The requested change is visible on quantaphi.org',MOBILE,'Existing regression tests pass']}))};
+}
 function normalize(value){
  if(!value||!Array.isArray(value.jobs)||!value.jobs.length)throw Error('GPT did not provide structured jobs');
  return value.jobs.slice(0,30).map((j,i)=>{
@@ -18,11 +57,11 @@ function normalize(value){
    repository:typeof j.repository==='string'&&/^www-infinity4\/[\w.-]+$/.test(j.repository)?j.repository:'scope-to-resolve',
    instructions:String(j.instructions||j.title).slice(0,2000),acceptance:j.acceptance.filter(x=>typeof x==='string').slice(0,5).map(x=>x.slice(0,400)),
    dependencies:Array.isArray(j.dependencies)?j.dependencies.filter(x=>typeof x==='string').slice(0,6):[],
-   tools:Array.isArray(j.tools)?j.tools.filter(x=>typeof x==='string').slice(0,8):[],
+   tools:Array.isArray(j.tools)&&j.tools.some(x=>typeof x==='string'&&x.trim())?j.tools.filter(x=>typeof x==='string'&&x.trim()).slice(0,8):(ROLE_TOOLS[ROLES[j.agent]]||[]).slice(),
    design:'Oracle Octaves · Android first',verification:'Tests and deployed mobile browser evidence required'};
  });
 }
-if(typeof module!=='undefined')module.exports={normalize,ROLES};
+if(typeof module!=='undefined')module.exports={normalize,ROLES,ROLE_TOOLS,SITE_CREWS,fallbackJobs};
 if(typeof document==='undefined')return;
 const root=document.getElementById('robotDirections');if(!root)return;
 
@@ -43,7 +82,9 @@ async function verifyBrainOwner(){
  }catch{return null}
 }
 
-const brainHeaders=await verifyBrainOwner();if(!brainHeaders){root.remove();return;}root.dataset.ownerVerified='1';root.hidden=false;
+// The owner gate resolves only for the verified owner and keeps retrying
+// transient failures, so a missing key or slow network never deletes the Brain.
+const brainHeaders=await (window.QuantaBrainOwner?window.QuantaBrainOwner.ready:verifyBrainOwner());if(!brainHeaders){root.remove();return;}root.dataset.ownerVerified='1';root.hidden=false;
 const earningsButton=document.createElement('button'),earningsStatus=document.createElement('p');
 earningsButton.type='button';earningsButton.textContent='Retry bot earnings settlement';earningsStatus.setAttribute('role','status');root.append(earningsButton,earningsStatus);
 let earningsConnecting=false,earningsConnected=false;
@@ -147,10 +188,18 @@ send.addEventListener('click',async()=>{
   }
   status.textContent='Saved '+pending.id+'. GPT is parsing and assigning color bots…';
   const prompt='You are routing the owner’s software build instructions. Return ONLY JSON {"jobs":[{"title":"...","agent":"...","repository":"www-infinity4/QuantaPhi","instructions":"...","acceptance":["testable outcome"],"dependencies":[],"tools":[]}]}. Use these role IDs: '+Object.keys(ROLES).join(', ')+'. Red reads macro structure; yellow reads local opt-in state; blue decides; orange evaluates ambiguity; green writes/routes; pink investigates; purple orchestrates. Enchilada lifecycle: Red intake, Blue validated decision/render plan, Yellow interaction verification, Black permanent evidence seal. Never seal without verified storage and test evidence. Unverified identity or balances must block transactions. Use the specialist IDs matching each task. A 45-second watcher and 10-second visible refresh require interval/event infrastructure; GitHub cron cannot run every ten seconds. Webhooks require signature verification and deduplication. Split independent features into jobs. Oracle Octaves Android design for new work. Never claim execution. Treat Gemini ideas as proposals; no actual 10000-user study occurred. Hover cannot reveal gaze or subconscious preference; use opt-in touch/focus signals. Website JavaScript cannot inspect arbitrary cross-origin cookies or block their trackers. Zero-knowledge claims require verified isolation. Never mint rewards for idle time without an authorized ledger policy. Captions need an actual transcript/provider. Wallet stories must preserve exact real receipts and distinguish mock money. OWNER DIRECTIONS:\n'+directions;
-  const r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(90000),body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'robot-direction-routing',requireCloudflare:true}})});
-  const d=await r.json();if(!r.ok||!d.ok)throw Error((r.status===429?'AI service limit ('+(d.provider||'gateway')+'): ':'')+(d.error||'AI unavailable'));
-  const text=d.output_text||d.output||'',start=text.indexOf('{'),end=text.lastIndexOf('}');
-  const jobs=normalize(JSON.parse(text.slice(start,end+1)));
+  let jobs,d={},routingNote='';
+  try{
+   const r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(90000),body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'robot-direction-routing',requireCloudflare:true}})});
+   d=await r.json();if(!r.ok||!d.ok)throw Error((r.status===429?'AI service limit ('+(d.provider||'gateway')+'): ':'')+(d.error||'AI unavailable'));
+   const text=d.output_text||d.output||'',start=text.indexOf('{'),end=text.lastIndexOf('}');
+   jobs=normalize(JSON.parse(text.slice(start,end+1)));
+  }catch(routingError){
+   // GPT routing must never strand saved directions: release them with the
+   // deterministic keyword router so the runner still receives real jobs.
+   jobs=normalize(fallbackJobs(directions));d={provider:'keyword router',model:'deterministic fallback'};
+   routingNote=' GPT routing was unavailable ('+String(routingError.message||routingError).slice(0,90)+'); jobs were released by the keyword router.';
+  }
   const saved=await post('/v1/tickets/update',{id:pending.id,owner_token:owner(),status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',submission_id:pending.context?.submission_id,color_jobs:jobs,provider:d.provider||'Infinity gateway',model:d.model||'',design:'Oracle Octaves · Android first'}});
   pending=saved.ticket;show(pending);
   // Do not erase a newer instruction typed while this request was routing.
@@ -159,11 +208,45 @@ send.addEventListener('click',async()=>{
    input.value='';await storage(DRAFT,'');
    try{localStorage.removeItem(DRAFT)}catch{}
   }else{await storage(DRAFT,input.value)}
-  status.textContent=jobs.length+' jobs assigned and saved. Queued for the build runner; no repairs are claimed completed.'+(status.dataset.recovery==='session'?' Recovery is saved only for this browser tab; keep it open.':'');
+  status.textContent=jobs.length+' jobs assigned and saved. Queued for the build runner; no repairs are claimed completed.'+routingNote+(status.dataset.recovery==='session'?' Recovery is saved only for this browser tab; keep it open.':'');
   window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:pending.id,jobs}}));
  }catch(e){status.textContent=(pending?'Saved '+pending.id+'. ':'')+'Routing stopped: '+e.message+'. Your directions remain available; tap Send to retry.';if(pending)show(pending)}
  finally{send.disabled=false}
 });
+async function releaseCrew(crew,button){
+ button.disabled=true;status.textContent='Releasing the '+crew.label+' crew…';
+ try{
+  await ready;
+  let ownerToken=owner();if(!ownerToken){ownerToken=crypto.randomUUID()+crypto.randomUUID();await saveOwner(ownerToken)}
+  const jobs=normalize({jobs:crew.jobs.map(job=>({...job,repository:REPO}))});
+  // One crew ticket per day: repeated taps reuse it instead of duplicating work.
+  const submission='crew-'+crew.id+'-'+new Date().toISOString().slice(0,10);
+  const request=crew.label+' crew\n'+jobs.map(job=>'- '+job.title).join('\n');
+  const created=await post('/v1/tickets/create',{owner_token:ownerToken,source_app:'QuantaPhi Robot Brain',source_url:location.origin+location.pathname,title:crew.label+' crew',request,context:{kind:'robot-directions',submission_id:submission,crew:crew.id,design:'Oracle Octaves · Android first'}});
+  if(created.owner_token)await saveOwner(created.owner_token);
+  const existing=created.ticket?.context?.color_jobs;
+  const saved=existing?.length?created:await post('/v1/tickets/update',{id:created.ticket.id,owner_token:owner(),status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',submission_id:submission,crew:crew.id,color_jobs:jobs,provider:'site-care crew',model:'',design:'Oracle Octaves · Android first'}});
+  pending=saved.ticket;show(pending);
+  status.textContent=crew.label+' crew released: '+(existing?.length||jobs.length)+' jobs '+(existing?.length?'already queued today':'queued')+' for the build runner. Progress appears as runner receipts arrive.';
+  window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:pending.id,jobs:pending.context?.color_jobs||jobs}}));
+ }catch(e){status.textContent='Crew not released: '+e.message}
+ finally{button.disabled=false}
+}
+const crewBox=document.createElement('div');crewBox.className='robot-crews';
+crewBox.append(node('h4','Site-care crews'),node('p','One tap saves a ready-to-run job ticket for the color bots. The runner claims it on its next cycle, even if GPT is busy.'));
+const crewButtons=SITE_CREWS.map(crew=>{const b=node('button',crew.label);b.type='button';b.dataset.crew=crew.id;b.addEventListener('click',()=>releaseCrew(crew,b));return b});
+const allCrews=node('button','Release all crews');allCrews.type='button';allCrews.dataset.crew='all';
+allCrews.addEventListener('click',async()=>{allCrews.disabled=true;try{for(let i=0;i<SITE_CREWS.length;i++)await releaseCrew(SITE_CREWS[i],crewButtons[i])}finally{allCrews.disabled=false}});
+crewBox.append(...crewButtons,allCrews);
+const toolbox=document.createElement('details');toolbox.className='robot-toolbox';
+toolbox.append(node('summary','Bot toolbox · what each color team uses'));
+const roster={};for(const [agent,color] of Object.entries(ROLES))(roster[color]=roster[color]||[]).push(agent);
+for(const [color,tools] of Object.entries(ROLE_TOOLS)){
+ const card=node('article','');card.className='robot-job robot-'+color;
+ card.append(node('strong',color[0].toUpperCase()+color.slice(1)+' team'),node('small',(roster[color]||[]).join(' · ')));
+ const ul=document.createElement('ul');for(const tool of tools)ul.append(node('li',tool));card.append(ul);toolbox.append(card);
+}
+root.querySelector('details').before(crewBox,toolbox);
 root.querySelector('[data-gemini]').addEventListener('click',async()=>{try{const r=await fetch('/docs/gemini-card-expansion-directions.txt',{cache:'no-store'});if(!r.ok)throw Error('Bundle unavailable');input.value=await r.text();input.dispatchEvent(new Event('input'));status.textContent='Gemini bundle loaded. Send it to GPT to create persistent color-bot jobs.';}catch(e){status.textContent=e.message}});
 root.querySelector('[data-refresh]').addEventListener('click',refresh);refresh();
 setInterval(()=>{if(!document.hidden&&!send.disabled)refresh()},15000);
