@@ -38,7 +38,7 @@ async function execute(request,env,body){
   }catch(error){
    try {
     const url='https://news-phi-feed.marvaseater.workers.dev/v1/news/feed';
-    const feed=await fetch(url,{signal:AbortSignal.timeout(8000)});
+    const feed=env.NEWS?await env.NEWS.fetch(new Request(url,{signal:AbortSignal.timeout(8000)})):await fetch(url,{signal:AbortSignal.timeout(8000)});
     if(!feed.ok)throw Error('fallback_unavailable');
     const payload=await feed.json(),seen=new Set();
     const sources=(Array.isArray(payload.articles)?payload.articles:[]).filter(item=>{
