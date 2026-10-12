@@ -6,9 +6,12 @@ import { earnedWork } from './bot-work-policy.mjs';
 const PERIOD=30000,VERSION='20261010-repository-engine1';
 const REPOS={has:repo=>/^[\w.-]+$/.test(repo)};
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
-function output(request,value){
+const OWNER_SESSION_MS=30*60*1000;
+// The wallet token is only exchanged server-side for a short-lived Robot Brain session.
+// Neither wallet balances nor public wallet names grant owner access.
+function output(request,value,status=200){
  const origin=request.headers.get('Origin');
- return Response.json(value,{headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':origins.has(origin)?origin:'https://quantaphi.org','Vary':'Origin'}});
+ return Response.json(value,{status,headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':origins.has(origin)?origin:'https://quantaphi.org','Vary':'Origin'}});
 }
 export function validateInstruction(value){
  if(!value||value.target_element!=='robotDirections'||!['inspect_repository','idle'].includes(value.action)||
@@ -257,6 +260,27 @@ export class BrainClock extends DurableObject{
   return Response.json({ok:true});
  }
  async fetch(request){
+  if(new URL(request.url).pathname==='/owner/session-create'){
+   const body=await request.json(),recipient=await this.ctx.storage.get('bot-work-recipient');
+   // Never let the first wallet to visit a public website claim Robot Brain.
+   if(!recipient?.userId||recipient.userId!==body.userId)return Response.json({ok:false},{status:404});
+   const token='rb_'+crypto.randomUUID().replaceAll('-','')+crypto.randomUUID().replaceAll('-','');
+   const key='brain-owner-session:'+await digest(token),expiresAt=Date.now()+OWNER_SESSION_MS;
+   const index=await this.ctx.storage.get('brain-owner-session-index')||[];
+   const keep=index.filter(item=>item?.key&&item.expiresAt>Date.now()).slice(-31);
+   for(const item of index)if(!keep.includes(item))await this.ctx.storage.delete(item.key);
+   await this.ctx.storage.put(key,{userId:recipient.userId,expiresAt});
+   await this.ctx.storage.put('brain-owner-session-index',[...keep,{key,expiresAt}]);
+   return Response.json({ok:true,token,expiresAt});
+  }
+  if(new URL(request.url).pathname==='/owner/session-check'){
+   const {token}=await request.json();
+   if(!/^rb_[a-f0-9]{64}$/.test(token||''))return Response.json({ok:false},{status:404});
+   const session=await this.ctx.storage.get('brain-owner-session:'+await digest(token));
+   const recipient=await this.ctx.storage.get('bot-work-recipient');
+   const valid=!!(session?.expiresAt>Date.now()&&recipient?.userId&&recipient.userId===session.userId);
+   return Response.json({ok:valid},{status:valid?200:404});
+  }
   if(new URL(request.url).pathname==='/earnings-status')return Response.json(await this.earningsStatus());
   if(new URL(request.url).pathname==='/earnings-connect'){
    const body=await request.json();if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(body.walletToken||''))return Response.json({ok:false,error:'wallet_connection_required'},{status:401});
@@ -386,13 +410,38 @@ export async function readRunnerBody(request, pathname){
  return new TextDecoder().decode(bytes);
 }
 
+async function ownerAuthorized(env,token){
+ if(!token)return false;
+ if(env.WRITER_OWNER_HASH&&await digest(token)===env.WRITER_OWNER_HASH)return true;
+ if(!/^rb_[a-f0-9]{64}$/.test(token))return false;
+ const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
+ const response=await clock.fetch('https://clock.internal/owner/session-check',{method:'POST',body:JSON.stringify({token})});
+ return response.ok&&(await response.json()).ok===true;
+}
+
 export default{
  async scheduled(event,env){await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/start');},
  async fetch(request,env){
   const path=new URL(request.url).pathname;
+  if(path==='/owner/session'&&request.method==='POST'){
+   // This endpoint cannot enroll an owner. It only recognizes a previously
+   // owner-approved earnings wallet, using the existing private wallet service.
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return new Response('Not found',{status:404});
+   const token=request.headers.get('Authorization')?.match(/^Bearer (sq_[A-Za-z0-9_-]{32,})$/)?.[1];
+   if(!token)return output(request,{ok:false,error:'wallet_connection_required'},404);
+   try{
+    const verified=await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/state',{headers:{Authorization:'Bearer '+token},signal:AbortSignal.timeout(12000)});
+    const state=await verified.json();
+    if(!verified.ok||!state.ok||!state.user?.id)return output(request,{ok:false,error:'wallet_not_verified'},404);
+    const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
+    const response=await clock.fetch('https://clock.internal/owner/session-create',{method:'POST',body:JSON.stringify({userId:state.user.id})});
+    return output(request,await response.json(),response.ok?200:404);
+   }catch{return output(request,{ok:false,error:'wallet_service_unreachable'},503)}
+  }
   if(path==='/work/earnings/connect'&&request.method==='POST'){
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
-   if(!token||!env.WRITER_OWNER_HASH||await digest(token)!==env.WRITER_OWNER_HASH)return output(request,{ok:false,error:'owner_authorization_required'});
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
    const text=await request.text();if(text.length>4096)return new Response('Body too large',{status:413});
    const r=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/earnings-connect',{method:'POST',body:text});
    return output(request,await r.json());
@@ -408,7 +457,7 @@ export default{
   }
   if(request.method!=='GET' ||!['/health','/activity/feed.json','/work/preview','/work/quants','/work/earnings/status'].includes(path))return new Response('Not found',{status:404});
   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
-  if(!env.WRITER_OWNER_HASH||!token||await digest(token)!==env.WRITER_OWNER_HASH)
+  if(!await ownerAuthorized(env,token))
    return new Response('Not found',{status:404,headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':origins.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Vary':'Origin'}});
   const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
   await clock.fetch('https://clock.internal/start');
