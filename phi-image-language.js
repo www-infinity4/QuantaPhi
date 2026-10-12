@@ -22,11 +22,18 @@ function infer(description,mode='Image',manual=''){
   const named=line.match(/^(?:[-*]\s*)?(title|heading|headline|brand(?:\s+name)?|name|subtitle|tagline|slogan|phrase|caption|words?(?:\s+on\s+(?:the\s+)?image)?)\s*:\s*(.+)$/i);
   if(named)add(named[2],/tagline|subtitle|slogan|phrase|caption/i.test(named[1])?'tagline':'title');
  }
- const quotes=[...request.matchAll(/["“]([^"”\n]{1,105})["”]/g)].map(m=>({text:m[1],index:m.index}));
+ const quotes=[...request.matchAll(/["“]([^"”\n]{1,105})["”]|(?:^|[\s:(\[{])(?:[\u0027‘])([^\u0027’\n]{1,105})(?:[\u0027’])/g)].map(m=>({text:m[1]||m[2],index:m.index}));
  for(const q of quotes){
   const prev=request.slice(Math.max(0,q.index-90),q.index);
   if(/\b(?:slogan|tagline|subtitle|phrase|quote|words?|says|reads|prints?|lettering|title|heading|headline|called|named|brand|caption)\b/i.test(prev)||presentation.test(request)&&/\b(?:poster|billboard|advertisement|flyer|banner|cover|card)\b/i.test(request))
    add(q.text,/\b(?:slogan|tagline|subtitle|phrase|quote|caption)\b/i.test(prev)?'tagline':'title');
+ }
+ // Also honor simple image descriptions such as "a sign that says OPEN",
+ // without ever guessing how the user might want the letters spelled.
+ const readable=request.match(/\b(?:that\s+(?:says|reads)|(?:should|must)\s+(?:say|read)|(?:print|write|show)\s+(?:the\s+)?(?:exact\s+)?(?:words|phrase))\s*:?\s*["“'‘]?([^.,;!?\n"'‘’”]{1,80})/i);
+ if(readable){
+  const candidate=readable[1].split(/\s+(?:on|in|at)\s+(?:a|the)\s+/i)[0];
+  add(candidate,'title');
  }
  // Unquoted direction: "title Oracle AI Studio - Mosaic" or "slogan: ..."
  const explicit=/\b(title|heading|headline|brand(?:\s+name)?|tagline|subtitle|slogan|phrase|words?)\s+(?:is|of|reading|that\s+says|should\s+(?:say|read)|as|:)?\s*([A-Z][^.,;!?\n"“”]{3,85}?)(?=\s+(?:with|and\s+(?:the|a)|plus|using|in\s+(?:the|a)\s+style)|[.,;!?\n]|$)/g;
