@@ -57,7 +57,7 @@ public final class BubblesService extends Service implements RecognitionListener
     public static final String ACTION_STOP = "org.quantaphi.bubbles.STOP";
     private static final int NOTIFY_ID = 511;
     private static final String CHANNEL = "bubbles_voice";
-    private static final String AI_URL = "https://infinity-rogers.marvaseater.workers.dev/v1/chat";
+    private static final String AI_URL = "https://bubbles-tools.marvaseater.workers.dev/v1/assist";
     private static final Pattern WAKE = Pattern.compile(
             "^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",
             Pattern.CASE_INSENSITIVE);
@@ -279,7 +279,7 @@ public final class BubblesService extends Service implements RecognitionListener
                 + "You see only selected visible app text; never claim complete history or device control. "
                 + "\nRecent notes (included only by user setting):\n"+notes
                 + "\nThe person said: " + question;
-        JSONObject request = new JSONObject().put("input", prompt).put("context", context);
+        JSONObject request = new JSONObject().put("request",question).put("input", prompt).put("context", context);
         try {
             byte[] bytes = request.toString().getBytes(StandardCharsets.UTF_8);
             try (OutputStream output = conn.getOutputStream()) {output.write(bytes);}
@@ -291,6 +291,7 @@ public final class BubblesService extends Service implements RecognitionListener
                 String line;while ((line = reader.readLine()) != null && response.length() < 24000)response.append(line);
             }
             JSONObject json = new JSONObject(response.toString());
+            if(json.optJSONObject("receipt")!=null) BrainNotes.receipt(this,question,json);
             if (json.optBoolean("ok", true) == false) throw new IllegalStateException("Oracle reported an error");
             for (String key : new String[]{"output_text", "output", "response", "answer", "content", "message"}) {
                 String value = json.optString(key, "").trim();
