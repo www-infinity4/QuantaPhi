@@ -27,7 +27,7 @@ test('physics card has distinct Star Collect Share actions with Cloud receipt co
  assert.match(js,/quantaphi:collected/);
  assert.match(js,/if\(navigator\.share\)await navigator\.share\(details\)/);
  assert.match(js,/shareButton\.disabled=true/);
- assert.match(js,/infinity-concept-\'+slug\(e\.id\)/);
+ assert.match(js,/infinity-concept-'\+slug\(e\.id\)/);
  assert.match(js,/wallet payout is unconfirmed/);
  assert.match(css,/#infinityConcepts \.icp-actions\{display:grid/);
  assert.match(css,/#infinityConcepts \.icp-shell\{/);
