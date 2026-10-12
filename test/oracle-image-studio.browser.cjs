@@ -29,6 +29,9 @@ const path=require('node:path');
  });
  await page.addScriptTag({path:path.resolve(__dirname,'../phi-image-builder.js')});
  assert.equal(await page.locator('#pi-exact-text').isVisible(),false);
+ assert.equal(await page.locator('.pi-exact-optional').isVisible(),true);
+ assert.equal(await page.locator('.pi-exact-optional').getAttribute('open'),null);
+ assert.equal(await page.locator('.pi-section h3').filter({hasText:'Lettering'}).count(),0,'There must not be a prominent lettering step');
  assert.equal(await page.locator('#pi-text-mode').inputValue(),'none');
  assert.equal(await page.locator('.pi-type-panel').count(),0,'No dragging studio should appear');
  const description='Preserve my mechanism artwork';
@@ -74,6 +77,7 @@ const path=require('node:path');
  assert.doesNotMatch(fixed.prompt,/Repair the connection to the plate/,'specific user fix must override other grader suggestions');
  await page.locator('[data-pi-action="edit"]').click();
  assert.equal(await page.locator('#pi-prompt').inputValue(),description);
+ await page.locator('.pi-exact-optional summary').click();
  await page.locator('#pi-text-mode').selectOption('exact');
  assert.equal(await page.locator('#pi-exact-text').isVisible(),true);
  const mobile=await page.evaluate(()=>({
@@ -85,7 +89,9 @@ const path=require('node:path');
  }));
  assert.equal(mobile.overflow,false);assert.ok(mobile.height>=44);
  assert.equal(mobile.radius,'999px');assert.equal(mobile.grid,'grid');
- assert.match(mobile.background,/255, 255, 255/);
+ assert.match(mobile.background,/247, 252, 255/,'The user-facing composer must use the blue palette');
+ const primary=await page.locator('[data-pi-action="build"]').evaluate(el=>getComputedStyle(el).backgroundImage);
+ assert.match(primary,/23, 105, 182/,'Main button should be blue rather than purple');
  console.log('PASS: blue mobile card, grader, direct repair, preserved upload and prompt, failure and lower-score recovery');
  }finally{await browser.close()}
 })().catch(error=>{console.error(error);process.exitCode=1});
