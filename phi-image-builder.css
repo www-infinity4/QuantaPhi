@@ -176,3 +176,49 @@ body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(button,input,textare
  #phiImageBuilder.oracle-image-studio .pi-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
  #phiImageBuilder.oracle-image-studio .pi-actions button[data-pi-action="clear"]{grid-column:1/-1}
 }
+
+/* October blue card restoration: blue composer + grader, not the purple studio.
+   Important overrides are necessary because the site theme defines global button colors. */
+#phiImageBuilder.oracle-image-studio{color:#163d66}
+#phiImageBuilder.oracle-image-studio .pi-panel{
+ background:linear-gradient(150deg,#f7fcff,#d7ebff 65%,#afd4fa)!important;
+ border:2px solid #629bd1!important;box-shadow:0 8px 21px #15467c25!important;
+}
+#phiImageBuilder.oracle-image-studio :is(h2,h3){color:#103e70}
+#phiImageBuilder.oracle-image-studio .pi-eyebrow{color:#1558a0}
+#phiImageBuilder.oracle-image-studio :is(.pi-sub,.pi-notice){color:#295a84}
+#phiImageBuilder.oracle-image-studio .pi-section{border-top:1px solid #a9cee9}
+#phiImageBuilder.oracle-image-studio .pi-file{border:2px dashed #82abd1;background:#f5fbff}
+#phiImageBuilder.oracle-image-studio .pi-file strong,
+#phiImageBuilder.oracle-image-studio .pi-label{color:#174777}
+#phiImageBuilder.oracle-image-studio .pi-file small{color:#37688e}
+#phiImageBuilder.oracle-image-studio :is(textarea,.pi-exact-input){border-color:#8ab6da;color:#1c3654}
+#phiImageBuilder.oracle-image-studio .pi-result{border:2px solid #73a6d8;background:#e4f3ff}
+#phiImageBuilder.oracle-image-studio .pi-audit{
+ background:linear-gradient(155deg,#fff,#e0f1ff)!important;
+ border:2px solid #6ba0d3!important;color:#163e6a!important;
+}
+#phiImageBuilder.oracle-image-studio .pi-audit-title{color:#0c4c89}
+#phiImageBuilder.oracle-image-studio :is(.pi-audit-summary,.pi-audit-issues){color:#254e75}
+#phiImageBuilder.oracle-image-studio .pi-audit[data-review="needs_work"]{background:linear-gradient(155deg,#fff,#e3f1ff)!important;border-color:#8aa8d8!important}
+#phiImageBuilder.oracle-image-studio .pi-audit[data-review="good"]{background:linear-gradient(155deg,#fff,#e0f8f0)!important;border-color:#68b89c!important}
+#phiImageBuilder.oracle-image-studio .pi-exact-optional{
+ padding:10px 12px;border:1px solid #8eb8da;border-radius:13px;background:#eef8ff;
+ margin-top:14px;color:#234e77
+}
+#phiImageBuilder.oracle-image-studio .pi-exact-optional summary{
+ cursor:pointer;min-height:32px;display:list-item;font-size:12px;font-weight:750;
+}
+#phiImageBuilder.oracle-image-studio .pi-exact-optional[open] :is(label,select,input){margin-top:10px}
+#phiImageBuilder.oracle-image-studio .pi-actions [data-pi-action="fix"]{
+ font-size:15px!important;min-height:56px!important
+}
+body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(.pi-mode,.pi-actions button){
+ border:1px solid #7ea6ce!important;background:linear-gradient(155deg,#fff,#e8f5ff)!important;
+ color:#164b7f!important;box-shadow:0 3px 11px #1b6eb021!important
+}
+body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(.pi-primary,.pi-mode[aria-pressed="true"],.pi-actions [data-pi-action="fix"]){
+ background:linear-gradient(135deg,#1769b6,#124682)!important;border-color:#17619f!important;
+ color:#fff!important;box-shadow:0 5px 16px #14579945!important
+}
+#phiImageBuilder.oracle-image-studio .pi-steps .pi-step{background:#eef8ff;color:#184978;border-color:#94b8dc}
