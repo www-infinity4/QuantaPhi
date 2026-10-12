@@ -1,4 +1,4 @@
-const EDGE_VERSION = 'quantaphi-org-v48-quant-ai-same-origin';
+const EDGE_VERSION = 'quantaphi-org-v49-radio-clubhouse';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -251,7 +251,7 @@ const CLUB_BASE = 'https://antiqueradios.com/forums/';
 const CLUB_LIMIT = 8;
 function clubText(value) {
  return String(value||'').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g,'$1')
-  .replace(/<[^>]*>/g,' ').replace(/&(?:amp|#38);/gi,'&')
+  .replace(/<[^>]*>/g,' ').replace(/&nbsp;/gi,' ').replace(/&(?:amp|#38);/gi,'&')
   .replace(/&(?:quot|#34);/gi,'"').replace(/&#(?:39|x27);/gi,"'")
   .replace(/&(?:lt|#60);/gi,'<').replace(/&(?:gt|#62);/gi,'>')
   .replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Math.min(Number(n),0x10ffff)))
