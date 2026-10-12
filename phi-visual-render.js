@@ -137,7 +137,8 @@ async function render({description,mode,source,design,prompt,exactText}){
  if(designBlob)body.append('design_reference',designBlob,'design-reference.jpg');
  body.append('mode',mode);
  body.append('reference_mode',source?'uploaded':design?'style-only':'text-only');
- body.append('prompt',String(prompt||[modePrompt(mode),description].join('\n')).slice(0,7500));
+ const artOnly='ARTWORK ONLY: Render no lettering, words, captions, labels, numbers, logos or pseudo-text. Keep text areas clean and unmarked. Exact lettering is added separately by the browser.';
+ body.append('prompt',artOnly+'\n'+String(prompt||[modePrompt(mode),description].join('\n')).slice(0,7500-artOnly.length-1));
  body.append('request',words(description).slice(0,1800));
  body.append('exact_text',words(exactText).slice(0,120));
  const j=await jsonResponse('/v1/image',{method:'POST',body});
@@ -194,7 +195,7 @@ async function review({src,description,mode,exactText}){
  const j=await jsonResponse('/v1/image-review',{method:'POST',body});
  if(!j.ok||!Array.isArray(j.issues))throw Error(String(j.error||'Visual review unavailable'));
  return {
-  status:String(j.status||'uncertain'),score:Number.isFinite(Number(j.score))?Math.max(0,Math.min(100,Number(j.score))):null,
+  status:String(j.status||'uncertain'),score:j.score!==null&&j.score!==undefined&&j.score!==''&&Number.isFinite(Number(j.score))?Math.max(0,Math.min(100,Number(j.score))):null,
   issues:j.issues.slice(0,6).map(i=>({severity:String(i.severity||'medium'),problem:String(i.problem||'').slice(0,240),fix:String(i.fix||'').slice(0,250)})).filter(i=>i.problem),
   repairPrompt:String(j.repairPrompt||'').slice(0,1500),
   reader:String(j.reader||'Cloudflare vision')
@@ -203,3 +204,4 @@ async function review({src,description,mode,exactText}){
 
 root.PhiVisualRender={inspect,direct,render,validate,asBlob,neutralImage,modePrompt,composeExactText,review};
 })(window);
+

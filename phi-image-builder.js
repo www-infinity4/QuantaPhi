@@ -11,7 +11,16 @@ const $=selector=>host.querySelector(selector);
 const emit=(type,detail)=>window.dispatchEvent(new CustomEvent('phi:image:'+type,{detail}));
 const id=()=>crypto?.randomUUID?.()||('phi-'+Date.now()+'-'+Math.random().toString(36).slice(2));
 let mode='Image',source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',preparingReference=false,lastRenderPlan=null,storyWriterId='';
-function state(value){host.dataset.stage=value}
+function state(value){host.dataset.stage=value;host.setAttribute('aria-busy',value==='progress'?'true':'false')}
+function section(title,copy){const box=make('section','pi-section');box.append(make('h3','',title));if(copy)box.append(make('p','pi-sub',copy));return box}
+function letteringMode(){const field=$('#pi-exact-text');const enabled=$('#pi-text-mode').value==='exact';field.disabled=!enabled;field.hidden=!enabled}
+function paintReview(review){
+ const audit=$('.pi-audit'),title=audit.querySelector('.pi-audit-title'),summary=audit.querySelector('.pi-audit-summary'),issues=audit.querySelector('.pi-audit-issues');issues.replaceChildren();
+ title.textContent=review?'Oracle review · '+(review.score===null?'Unscored':review.score+'/100'):'Oracle review unavailable';
+ summary.textContent=review?.status==='needs_work'?'Choose the issues you want repaired. Lettering controls below keep your artwork intact.':review?.status==='good'?'Review complete. Inspect the image before saving.':'Inspect the image before saving; automated review is uncertain.';
+ for(const [index,issue] of (review?.issues||[]).entries()){const li=make('li'),label=make('label','pi-issue-choice'),check=make('input');check.type='checkbox';check.dataset.piIssue=index;check.checked=/text|letter|spell|word|caption|label|gibberish/i.test(issue.problem);label.append(check,make('span','',issue.problem+(issue.fix?' — '+issue.fix:'')));li.append(label);issues.append(li)}
+ audit.dataset.review=review?.status||'uncertain';
+}
 function notice(text){const area=host.dataset.stage==='finished'?'.pi-finished':host.dataset.stage==='progress'?'.pi-progress':'.pi-composer';const el=$(area+' .pi-notice');if(el)el.textContent=text}
 function step(n,value,text){const el=$('[data-pi-step="'+n+'"]');if(el){el.dataset.state=value;el.lastElementChild.textContent=text||(value==='done'?'Done':value==='active'?'Working…':'Waiting')}}
 function initSteps(){names.forEach((_,i)=>step(i,'waiting'))}
@@ -32,48 +41,40 @@ function input(kind,title,subtitle){
  return item;
 }
 function layout(){
+ host.classList.add('oracle-image-studio');
  const form=make('div','pi-composer pi-panel');
- form.append(make('h2','','Build an Image'),make('p','pi-sub','Describe it, add a reference photo, or create something similar. Trading cards are one image mode.'));
- const choices=make('div','pi-modes');
+ form.append(make('span','pi-eyebrow','ORACLE · IMAGE STUDIO'),make('h2','','Create your image'),make('p','pi-sub','Describe the artwork, choose references, then add exact lettering.'));
+ const format=section('1 · Choose a format');const choices=make('div','pi-modes');
  for(const name of modes){const b=make('button','pi-mode',name);b.type='button';b.dataset.piMode=name;b.setAttribute('aria-pressed',name===mode?'true':'false');choices.append(b)}
- form.append(choices);
- const uploads=make('div','pi-file-area');
- for(const [kind,title,subtitle,removeLabel] of [['source','Upload image','Source / create similar','Remove uploaded photo'],['design','Style reference','Optional second image','Remove style reference']]){
-  const slot=make('div','pi-upload-slot');slot.append(input(kind,title,subtitle));
-  const remove=make('button','pi-mode pi-remove',removeLabel);remove.type='button';remove.dataset.piAction='remove-'+kind;remove.hidden=true;slot.append(remove);
-  uploads.append(slot);
+ format.append(choices);form.append(format);
+ const references=section('2 · Add references','Optional. Use one image for the subject and another for the style.');const uploads=make('div','pi-file-area');
+ for(const [kind,title,subtitle,removeLabel] of [['source','Subject image','Upload JPG, PNG or WebP','Remove uploaded photo'],['design','Style reference','Optional second image','Remove style reference']]){
+  const slot=make('div','pi-upload-slot');slot.append(input(kind,title,subtitle));const remove=make('button','pi-mode pi-remove',removeLabel);remove.type='button';remove.dataset.piAction='remove-'+kind;remove.hidden=true;slot.append(remove);uploads.append(slot);
  }
- form.append(uploads);
- const prompt=make('textarea');prompt.id='pi-prompt';prompt.setAttribute('aria-label','Describe image to build');prompt.placeholder='Describe the image, style, words, and edits you want. Example: A beautiful vintage AM radio advertisement photographed like a 1950s magazine cover.';form.append(prompt);
- const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Exact title or words to print (optional — use this to avoid fake letters)';exact.setAttribute('aria-label','Exact words to print on the finished image');form.append(exact);
- form.append(make('p','pi-notice',''));
- const go=make('button','pi-primary','Build Image');go.type='button';go.dataset.piAction='build';form.append(go);
- const progress=make('div','pi-progress pi-panel');progress.append(make('h2','','Building your image'),make('p','pi-sub','The input card is replaced as each actual service step runs.'));
- const steps=make('div','pi-steps');names.forEach((name,i)=>{const row=make('div','pi-step');row.dataset.piStep=i;row.dataset.state='waiting';row.append(make('span','',name),make('small','','Waiting'));steps.append(row)});
- progress.append(steps,make('p','pi-notice',''));
- const retry=make('button','pi-primary','Retry image render');retry.type='button';retry.dataset.piAction='retry-render';retry.hidden=true;progress.append(retry);
- const back=make('button','pi-primary','Back to description');back.type='button';back.dataset.piAction='back';progress.append(back);
- const done=make('div','pi-finished pi-panel');done.append(make('h2','','Your Image'),make('p','pi-sub','This result is the actual image returned by the connected renderer.'));
- const img=make('img','pi-result');img.alt='Generated image result';done.append(img,make('p','pi-notice',''));
- // Browser-only typography repair: no fresh FLUX render or paid image call.
- const lettering=make('div','pi-lettering');
- lettering.append(make('strong','','Fix printed words without regenerating'),make('p','pi-sub','Use real lettering for your title. This edits the saved result, not the underlying picture; any fake lettering painted into the background may still remain.'));
- const correction=make('input','pi-exact-input');correction.id='pi-correct-text';correction.type='text';correction.maxLength=120;correction.placeholder='Enter precisely what the image should say';correction.setAttribute('aria-label','Correct the lettering printed on the final image');
- const applyText=make('button','pi-mode','Apply exact lettering');applyText.type='button';applyText.dataset.piAction='apply-lettering';
- const removeText=make('button','pi-mode','Remove added lettering');removeText.type='button';removeText.dataset.piAction='remove-lettering';
- lettering.append(correction,applyText,removeText);done.append(lettering);
- const audit=make('div','pi-audit');audit.setAttribute('aria-live','polite');audit.append(make('strong','pi-audit-title','Visual review'),make('p','pi-audit-summary','Not yet reviewed.'),make('ul','pi-audit-issues'));done.append(audit);
- const actions=make('div','pi-actions');
- for(const [key,label,wide]of [['fix','Fix image · rebuild',true],['download','Save image'],['clear','Clear image']]){
-  const b=make('button',wide?'pi-wide':'',label);b.type='button';b.dataset.piAction=key;actions.append(b)
- }
- done.append(actions);
- host.replaceChildren(form,progress,done);
+ references.append(uploads);form.append(references);
+ const brief=section('3 · Describe the artwork');const promptLabel=make('label','pi-label','Image instructions');promptLabel.htmlFor='pi-prompt';
+ const prompt=make('textarea');prompt.id='pi-prompt';prompt.placeholder='Subject, composition, colors, style, and anything to preserve.';brief.append(promptLabel,prompt);form.append(brief);
+ const type=section('4 · Lettering','Choose no lettering, or enter words to add with real fonts.');const textLabel=make('label','pi-label','Lettering mode');textLabel.htmlFor='pi-text-mode';
+ const policy=make('select','pi-exact-input');policy.id='pi-text-mode';for(const [value,label] of [['none','No lettering'],['exact','Add exact words']]){const o=make('option','',label);o.value=value;policy.append(o)}
+ const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Type exactly what the finished image should say';exact.setAttribute('aria-label','Exact words to print');type.append(textLabel,policy,exact);form.append(type,make('p','pi-notice',''));
+ const go=make('button','pi-primary','Create image');go.type='button';go.dataset.piAction='build';form.append(go);
+ const progress=make('div','pi-progress pi-panel');progress.append(make('span','pi-eyebrow','ORACLE · CREATING'),make('h2','','Creating your image'),make('p','pi-sub','Your description and references are kept while the image is built.'));
+ const steps=make('div','pi-steps');names.forEach((name,i)=>{const row=make('div','pi-step');row.dataset.piStep=i;row.dataset.state='waiting';row.append(make('span','',name),make('small','','Waiting'));steps.append(row)});progress.append(steps,make('p','pi-notice',''));
+ for(const [key,label] of [['retry-render','Retry image render'],['back','Back to description']]){const button=make('button','pi-mode',label);button.type='button';button.dataset.piAction=key;button.hidden=key==='retry-render';progress.append(button)}
+ const done=make('div','pi-finished pi-panel');done.append(make('span','pi-eyebrow','ORACLE · YOUR ARTWORK'),make('h2','','Your image'));const img=make('img','pi-result');img.alt='Generated image result';done.append(img,make('p','pi-notice',''));
+ const lettering=make('div','pi-lettering');lettering.append(make('h3','','Lettering controls'),make('p','pi-sub','Add or change exact words without rebuilding the artwork. Removing added words restores the base image. Words painted into the base image need a separate repair.'));
+ const correction=make('input','pi-exact-input');correction.id='pi-correct-text';correction.type='text';correction.maxLength=120;correction.placeholder='Exact words';correction.setAttribute('aria-label','Correct lettering');lettering.append(correction);
+ const local=make('div','pi-local-actions');for(const [key,label] of [['apply-lettering','Apply exact words'],['remove-lettering','Remove added words'],['repair-lettering','Repair painted words']]){const button=make('button','pi-mode',label);button.type='button';button.dataset.piAction=key;local.append(button)}lettering.append(local);done.append(lettering);
+ const audit=make('div','pi-audit');audit.setAttribute('aria-live','polite');audit.append(make('strong','pi-audit-title','Oracle review'),make('p','pi-audit-summary','Not yet reviewed.'),make('ul','pi-audit-issues'));done.append(audit);
+ const actions=make('div','pi-actions');for(const [key,label,wide] of [['fix','Fix image · selected issues',true],['edit','Edit description'],['download','Save image'],['clear','Clear image']]){const button=make('button',wide?'pi-wide':'',label);button.type='button';button.dataset.piAction=key;actions.append(button)}done.append(actions);
+ host.replaceChildren(form,progress,done);letteringMode();
+ host.querySelectorAll('.pi-notice').forEach(el=>{el.setAttribute('role','status');el.setAttribute('aria-live','polite')});
 }
-async function build({retryRender=false}={}){
+async function build({retryRender=false,repairBaseline=null}={}){
  if(busy||preparingReference)return;
  const typed=$('#pi-prompt').value.trim().slice(0,3000);
- const exactText=$('#pi-exact-text').value.trim().slice(0,120);
+ const exactText=$('#pi-text-mode').value==='exact'?$('#pi-exact-text').value.trim().slice(0,120):'';
+ if($('#pi-text-mode').value==='exact'&&!exactText){notice('Enter exact words, or choose No lettering.');return}
  if(!typed&&!source&&!contextStory()){notice('Describe the artwork or upload a photo first.');return}
  const description=typed||('Build a distinctive '+mode.toLowerCase()+' based on my uploaded reference or story.');
  const requestId=id(),story=contextStory(),search=contextSearch();
@@ -148,18 +149,14 @@ async function build({retryRender=false}={}){
     warning=[warning,'Automatic refinement could not be verified; the original rendered image was kept.'].filter(Boolean).join(' ');
    }
   }
+  if(repairBaseline&&(!review||!Number.isFinite(review.score)||(Number.isFinite(repairBaseline.artifact.review?.score)&&review.score<repairBaseline.artifact.review.score))){
+   result=repairBaseline.result;rawResult=repairBaseline.rawResult;artifact=repairBaseline.artifact;lastInstruction=repairBaseline.instruction;lastExactText=artifact.exactText||'';paintReview(artifact.review);$('.pi-result').src=result;state('finished');notice('Your previous image was kept because the repair was lower-scoring or could not be verified.');return;
+  }
   artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search,storyWriterId,autoRefined};
   artifact.review=review;
   window.QuantaStarCredit?.(description.includes("Refine the CURRENT rendered image")?"fix_image":"build_image",artifact.id,artifact);
   if(review)window.PhiImageLearning?.record(artifact,'review',{issues:review.issues});
-  const audit=$('.pi-audit'),title=audit.querySelector('.pi-audit-title'),summary=audit.querySelector('.pi-audit-summary'),issues=audit.querySelector('.pi-audit-issues');
-  issues.replaceChildren();
-  if(review){
-   title.textContent='Visual review · '+(review.score===null?'Unscored':review.score+'/100');
-   summary.textContent=review.status==='needs_work'?'Possible mistakes detected — use Fix issues to revise.':review.status==='good'?'No major defects detected by the automated critic. Please verify visually.':'Review uncertain. Check the result before saving.';
-   for(const issue of review.issues){const li=make('li');li.textContent=issue.problem+(issue.fix?' — '+issue.fix:'');issues.append(li)}
-   audit.dataset.review=review.status;
-  }else{title.textContent='Visual review unavailable';summary.textContent='Artwork rendered, but its details and lettering have not been checked.';audit.dataset.review='uncertain'}
+  paintReview(review);
   step(phase,'done',review?'Visual check complete':'Review unavailable');
   $('.pi-result').src=result;
   const correction=$('#pi-correct-text');if(correction)correction.value=exactText;
@@ -187,6 +184,7 @@ async function build({retryRender=false}={}){
     notice((error?.code==='image_render_timeout'?'The render did not finish within 150 seconds.':error?.code==='image_render_network'?'The image service connection failed.':message.slice(0,145))+' Your description and GPT direction are saved. Tap Retry image render to retry ONLY step 3.');
    }else notice(message.slice(0,210)+'. No completed image was returned. Your description is saved for editing.');
   }
+  if(repairBaseline){result=repairBaseline.result;rawResult=repairBaseline.rawResult;artifact=repairBaseline.artifact;lastInstruction=repairBaseline.instruction;lastExactText=artifact.exactText||'';paintReview(artifact.review);$('.pi-result').src=result;state('finished');notice('Repair failed. Your previous image is preserved. '+message.slice(0,120));}
   emit('build:error',{requestId,error:message,code:error?.code||'',phase});
  }finally{busy=false}
 }
@@ -197,6 +195,7 @@ function showFile(file,kind){
  const remove=$('[data-pi-action="remove-'+kind+'"]');if(remove)remove.hidden=!file;
 }
 host.addEventListener('change',event=>{
+ if(event.target.id==='pi-text-mode'){letteringMode();return}
  const input=event.target.closest('[data-pi-file]');if(!input)return;
  const file=input.files?.[0]||null,kind=input.dataset.piFile;
  if(file&&(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>10*1024*1024)){
@@ -205,6 +204,7 @@ host.addEventListener('change',event=>{
  if(kind==='source')source=file;else design=file;showFile(file,kind);
 });
 host.addEventListener('click',event=>{
+ if(busy||preparingReference)return;
  const choice=event.target.closest('[data-pi-mode]');
  if(choice){mode=choice.dataset.piMode;host.querySelectorAll('[data-pi-mode]').forEach(b=>b.setAttribute('aria-pressed',b===choice?'true':'false'));return}
  const action=event.target.closest('[data-pi-action]')?.dataset.piAction;
@@ -219,7 +219,7 @@ host.addEventListener('click',event=>{
     const dimensions=await renderer.validate(revised);
     result=revised;lastExactText=corrected;artifact={...artifact,exactText:corrected,letteringEdited:true,width:dimensions.width,height:dimensions.height};
     $('.pi-result').src=result;if(editField)editField.value=corrected;
-    const original=$('#pi-exact-text');if(original)original.value=corrected;
+    const original=$('#pi-exact-text');if(original)original.value=corrected;$('#pi-text-mode').value=corrected?'exact':'none';letteringMode();
     const audit=$('.pi-audit');if(audit){audit.dataset.review='uncertain';audit.querySelector('.pi-audit-title').textContent='Lettering changed locally';audit.querySelector('.pi-audit-summary').textContent='The corrected caption uses real browser fonts. The base illustration was not regenerated or rechecked.';audit.querySelector('.pi-audit-issues').replaceChildren()}
     notice(corrected?'Exact lettering saved into the preview. Save image to keep this correction. No new AI render was charged.':'Added lettering removed. The original illustration is preserved. No new AI render was charged.');
     emit('build:lettering',artifact);
@@ -237,17 +237,17 @@ host.addEventListener('click',event=>{
   showFile(null,kind);
   notice(kind==='source'?'Uploaded photo removed. You can build from the description or choose another photo.':'Style reference removed.');
  }
- if(action==='back'||action==='edit'){const retry=$('[data-pi-action="retry-render"]');if(retry)retry.hidden=true;state('composer');if(lastInstruction)$('#pi-prompt').value=lastInstruction;$('#pi-exact-text').value=lastExactText}
+ if(action==='back'||action==='edit'){const retry=$('[data-pi-action="retry-render"]');if(retry)retry.hidden=true;state('composer');if(lastInstruction)$('#pi-prompt').value=lastInstruction;$('#pi-exact-text').value=lastExactText;$('#pi-text-mode').value=lastExactText?'exact':'none';letteringMode()}
  if(action==='more')void reopenAsReference(lastInstruction+'\nCreate a new variation retaining the original subject, valid geometry, and strongest composition.');
- if(action==='fix'){
-  const review=artifact?.review;
-  const corrections=(review?.issues||[]).map(i=>i.fix||i.problem).filter(Boolean);
-  const instruction=[lastInstruction,'Refine the CURRENT rendered image. Preserve all correct content and overall subject. Repair the following:',...corrections,review?.repairPrompt||'Correct visually implausible geometry and any fake lettering.','Use physically believable connections and print only exact words provided in the separate text field.'].filter(Boolean).join('\n');
-  window.PhiImageLearning?.record(artifact,'needs_fix',{problem:review?.issues?.[0]?.problem||'User requested corrections'});
-  // Preserve the prior pixels as a repair reference; start rendering immediately.
-  // Keep Story Writer ownership on the repaired artwork so its image updates too.
-  storyWriterId=artifact?.storyWriterId||'';
-  void reopenAsReference(instruction).then(ready=>ready?build():null).finally(()=>{storyWriterId=''});
+ if(action==='fix'||action==='repair-lettering'){
+  if(!artifact||!result)return;
+  const review=artifact.review;
+  const corrections=action==='repair-lettering'?['Remove all text painted into the image and fill only those text regions with matching clean background. Preserve all objects, geometry, materials, connections, lighting and composition exactly. Do not fix or redesign the mechanism.']:[...host.querySelectorAll('[data-pi-issue]:checked')].map(el=>review?.issues?.[Number(el.dataset.piIssue)]).filter(Boolean).map(issue=>issue.fix||issue.problem);
+  if(!corrections.length){notice('Select the review issues you want repaired, or use Lettering controls.');return}
+  const baseline={artifact,result,rawResult,instruction:lastInstruction};
+  const instruction=['Refine the CURRENT rendered image. Preserve all correct content and overall subject. Repair only the following selected changes:',...corrections,'Paint no letters, words, labels, numbers or pseudo-text. Exact words are added separately with real fonts.'].join('\n');
+  window.PhiImageLearning?.record(artifact,'needs_fix',{problem:corrections[0]});storyWriterId=artifact.storyWriterId||'';
+  void reopenAsReference(instruction).then(ready=>ready?build({repairBaseline:baseline}):null).finally(()=>{storyWriterId=''});
  }
  if(action==='good'){window.PhiImageLearning?.record(artifact,'looks_good');notice('Thank you. This result is a positive design example for future renders on this device.')}
  if(action==='clear'){
@@ -265,7 +265,7 @@ host.addEventListener('click',event=>{
  if(action==='star'||action==='share'||action==='collect'||action==='download')emit('action',{action,artifact,result});
 });
 async function reopenAsReference(instruction){
- state('composer');$('#pi-prompt').value=instruction.slice(0,3000);$('#pi-exact-text').value=lastExactText;
+ state('composer');$('#pi-prompt').value=instruction.slice(0,3000);$('#pi-exact-text').value=lastExactText;$('#pi-text-mode').value=lastExactText?'exact':'none';letteringMode();
  if(!result)return false;
  const previous=rawResult||result;preparingReference=true;notice('Preparing this image as the next reference…');
  try{const blob=await renderer.asBlob(previous);source=new File([blob],'phi-refinement.png',{type:blob.type});showFile(source,'source');notice('Reference prepared for image repair.');return true}
@@ -282,7 +282,7 @@ window.PhiImageBuilder={
   mode='Image';source=null;design=null;lastRenderPlan=null;
   host.querySelectorAll('[data-pi-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.piMode==='Image'?'true':'false'));
   $('#pi-prompt').value=String(imageInstructions||'').slice(0,3000);
-  $('#pi-exact-text').value='';state('composer');
+  $('#pi-exact-text').value='';$('#pi-text-mode').value='none';letteringMode();state('composer');
   try{await build();if(!artifact||!result||artifact.storyWriterId!==storyWriterId)throw Error('The image renderer did not finish this illustration.');return {artifact,result}}
   finally{storyWriterId=''}
  },
@@ -303,3 +303,4 @@ window.PhiImageBuilder={
  }
 };
 })();
+

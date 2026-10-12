@@ -25,9 +25,9 @@ test('Story Writer invokes existing GPT and image pipeline, saves drafts, and us
 });
 test('Fix Image reuses the preceding pixels and automatically reruns the image builder',()=>{
  const builder=file('phi-image-builder.js');
- assert.match(builder,/reopenAsReference\(instruction\)\.then\(ready=>ready\?build\(\):null\)/);
+ assert.match(builder,/reopenAsReference\(instruction\)\.then\(ready=>ready\?build\(\{repairBaseline:baseline\}\):null\)/);
  assert.match(builder,/const previous=rawResult\|\|result/);
- assert.match(builder,/storyWriterId=artifact\?\.storyWriterId\|\|''/);
+ assert.match(builder,/storyWriterId=artifact\.storyWriterId\|\|''/);
  assert.match(builder,/async generateFromStory\(/);
  assert.match(builder,/if\(busy\|\|preparingReference\)throw Error/);
 });

@@ -297,3 +297,21 @@ test('Asteroid fallback uses the strongest search-relevant source for actual GPT
  assert.match(sourceCode,/strictGPT===true\?0:random/);
  assert.match(sourceCode,/writeWikipediaStory\(choice,plan,roll,storyKind\)/);
 });
+
+
+test('render transport locks artwork-only instructions before a long director prompt',async()=>{
+ let body;
+ const window={};
+ vm.runInNewContext(source('phi-visual-render.js'),{window,FormData,AbortController,setTimeout,clearTimeout,fetch:async(_,options)=>{body=options.body;return {ok:true,json:async()=>({ok:true,dataURI:'data:image/png;base64,ZmFrZQ=='})}}});
+ await window.PhiVisualRender.render({description:'Keep artwork',mode:'Image',prompt:'x'.repeat(8000),exactText:'Exact title'});
+ assert.match(body.get('prompt'),/^ARTWORK ONLY: Render no lettering/);
+ assert.ok(body.get('prompt').length<=7500);
+ assert.equal(body.get('exact_text'),'Exact title');
+});
+
+test('unscored Oracle review stays unscored rather than reporting zero',async()=>{
+ const window={};
+ vm.runInNewContext(source('phi-visual-render.js'),{window,FormData,Blob,AbortController,setTimeout,clearTimeout,fetch:async url=>String(url).endsWith('/v1/image-review')?{ok:true,json:async()=>({ok:true,status:'uncertain',score:null,issues:[]})}:{ok:true,blob:async()=>new Blob(['pixels'],{type:'image/png'})}});
+ const review=await window.PhiVisualRender.review({src:'https://example.test/image.png',description:'No lettering',mode:'Image',exactText:''});
+ assert.equal(review.score,null);
+});
