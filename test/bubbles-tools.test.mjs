@@ -27,3 +27,17 @@ test('ordinary chat calls the existing service and carries a result receipt',asy
  const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{ORACLE:{fetch:async request=>{used=true;assert.equal(request.headers.get('Origin'),'https://quantaphi.org');return Response.json({ok:true,output:'Hello'});}}});
  const body=await r.json();assert.equal(used,true);assert.equal(body.output,'Hello');assert.equal(body.receipt.tool,'oracle.chat');
 });
+test('Google failure uses explicitly labelled current source fallback, excluding undated news',async()=>{
+ const original=globalThis.fetch;
+ globalThis.fetch=async url=>String(url).includes('news.google.com')?new Response('',{status:503}):Response.json({articles:[
+  {title:'Current verified headline',url:'https://publisher.example/story',publishedAt:new Date().toISOString(),domain:'publisher.example'},
+  {title:'Missing date',url:'https://publisher.example/old'},
+  {title:'Future',url:'https://publisher.example/future',publishedAt:new Date(Date.now()+3600000).toISOString()}
+ ]});
+ try {
+  const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Check Google News headlines'})}),{});
+  const body=await r.json();assert.equal(body.receipt.status,'complete');assert.equal(body.sources.length,1);
+  assert.match(body.output,/Google News is unavailable/);assert.match(body.output,/News Phi/);
+  assert.equal(body.receipt.provider,'News Phi');
+ } finally {globalThis.fetch=original;}
+});
