@@ -47,7 +47,7 @@ test('PetriPhi retains real poster creation and a distinct horror screening',()=
 
 test('image feeds are distinct, rights labelled, and no movie autoplays',()=>{
  assert.notEqual(config.cards[0].feed.search,config.cards[1].feed.search);
- assert.match(config.cards[0].feed.search,/photography/);
+ assert.match(config.cards[0].feed.search,/costume/);
  assert.match(config.cards[1].feed.search,/postcard/);
  assert.match(js,/LicenseShortName/);
  assert.match(js,/Public domain/);
