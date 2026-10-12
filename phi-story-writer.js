@@ -158,7 +158,8 @@ function showOriginal(id){
 function renderStory(){
  const section=$('#sw-output');section.hidden=!active;if(!active){showArt(null);return}
  $('.sw-title').textContent=active.title;const body=$('#sw-body');body.replaceChildren();
- for(const paragraph of active.body.split(/\n\s*\n/).filter(Boolean)){body.append(make('p','',paragraph))}
+ // Preserve the author’s complete text, including single-newline paragraphs.
+ for(const paragraph of active.body.split(/\n\s*\n|\n(?=[^\n])/).map(x=>x.trim()).filter(Boolean)){body.append(make('p','',paragraph))}
  $('#sw-collect').textContent=read(COLLECT,[]).some(x=>x.key==='story-writer|'+active.id)?'Collected ✓':'Collect +0.1 ★';
  $('#sw-star').textContent=read(STARS,[]).includes(active.id)?'★ Starred':'☆ Star +0.1 ★';
  $('#sw-art-status').textContent=active.imageStatus||'Illustration will appear here when the renderer finishes.';
@@ -261,14 +262,15 @@ function collect(){
 async function share(){
  if(!active)return;
  const teaser=active.body.replace(/\s+/g,' ').slice(0,160).trim()+'…';
- const u=new URL('/',location.origin);u.searchParams.set('q',[active.title,active.keywords].filter(Boolean).join(' ').slice(0,210));u.hash='phiStoryWriter';
- const data={title:active.title,text:teaser,url:u.href};
  try{
+  if(typeof window.PhiStoryShare?.create!=='function')throw Error('The full-story reader is unavailable');
+  const url=await window.PhiStoryShare.create({kind:'fiction',title:active.title,body:active.body,summary:teaser});
+  const data={title:active.title,text:teaser,url};
   if(navigator.share)await navigator.share(data);
-  else if(navigator.clipboard)await navigator.clipboard.writeText(teaser+' '+u.href);
+  else if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(teaser+' '+url);
   else throw Error('Sharing not supported on this device');
   const reward=window.QuantaStarCredit?.('share','story-writer:'+active.id+':'+Date.now(),{key:'story-writer|'+active.id,title:active.title,story:teaser,type:'Fantasy'});
-  note('Shared short teaser.'+creditStatus(reward,'Share'))
+  note('Shared a link to the complete story.'+creditStatus(reward,'Share'))
  }catch(error){note(error?.name==='AbortError'?'Share canceled; no credit submitted.':'Could not share: '+String(error?.message||error))}
 }
 async function copy(){

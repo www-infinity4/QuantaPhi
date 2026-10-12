@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#211331"><title>Read the complete story · QuantaPhi</title>
+<meta name="description" content="Read a complete, shared QuantaPhi or Reads & Realms story.">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f8f4fb;color:#261838;font:16px/1.75 system-ui,sans-serif}
+header{background:#211331;color:#fff;padding:14px max(18px,calc((100% - 780px)/2))}
+header a{color:#fbe39a;font-weight:850;text-decoration:none}
+main{max-width:780px;margin:20px auto 80px;padding:0 15px}
+article{background:white;border:1px solid #eadcf4;border-radius:20px;padding:clamp(18px,5vw,42px);box-shadow:0 10px 35px #32134b14}
+.kicker{font:900 12px/1.5 system-ui;color:#6b308e;letter-spacing:.13em}
+h1{font:750 clamp(27px,6vw,44px)/1.18 Georgia,serif;color:#27123c;margin:14px 0 20px;overflow-wrap:anywhere}
+#storyText{font:18px/1.88 Georgia,serif;color:#25212b}
+#storyText p{white-space:pre-wrap;margin:0 0 1.35em}#storyText p:first-child::first-letter{font-size:1.5em;font-weight:700}
+aside{padding:16px 0;border-top:1px solid #ddd3e8;margin-top:24px}
+a{color:#5d2394}button{background:#5b2a91;color:#fff;border:0;border-radius:12px;min-height:46px;padding:10px 16px;font-weight:800}
+#status{color:#643d72;font-size:14px}button:focus-visible,a:focus-visible{outline:3px solid #edb725;outline-offset:3px}
+</style></head><body>
+<header><a href="/">← QuantaPhi</a> <span aria-hidden="true"> · </span> <span>Reads &amp; Realms / Story Writer</span></header>
+<main><article><div class="kicker" id="kind">COMPLETE STORY</div><h1 id="headline">Opening your story…</h1>
+<div id="storyText"></div><aside id="source" hidden></aside><p id="status" role="status"></p>
+<button id="share" type="button" hidden>Share this complete story</button></article></main>
+<script src="/phi-story-share.js"></script>
+<script>
+(async()=>{
+ const h=document.getElementById('headline'),body=document.getElementById('storyText'),source=document.getElementById('source'),status=document.getElementById('status'),button=document.getElementById('share');
+ try{
+  const story=await window.PhiStoryShare.read(location.hash);
+  document.title=story.title+' · QuantaPhi';
+  h.textContent=story.title;
+  document.getElementById('kind').textContent=story.kind==='fiction'?'ORIGINAL FICTION · STORY WRITER':'SOURCED NONFICTION · READS & REALMS';
+  const parts=story.body.split(/\n\s*\n/).map(x=>x.trim()).filter(Boolean);
+  for(const paragraph of parts){const p=document.createElement('p');p.textContent=paragraph;body.append(p)}
+  if(story.sourceUrl){
+    source.hidden=false;const a=document.createElement('a');a.href=story.sourceUrl;a.rel='noopener noreferrer';a.target='_blank';
+    a.textContent=story.sourceTitle||'Read the original research source';source.append(a);
+  }
+  button.hidden=false;button.onclick=async()=>{try{
+    if(navigator.share)await navigator.share({title:story.title,url:location.href});
+    else if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(location.href);status.textContent='Full-story link copied.'}
+    else status.textContent='Copy the address to share this story.';
+  }catch(e){if(e.name!=='AbortError')status.textContent='Sharing unavailable on this device.'}};
+ }catch(e){h.textContent='Story link could not be opened';status.textContent=String(e.message||e)+ ' No replacement search or unrelated story was opened.'}
+})();
+</script></body></html>

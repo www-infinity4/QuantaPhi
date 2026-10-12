@@ -90,6 +90,8 @@ const routeFor = incoming => {
  if (path === '/oracle-interface.css') return {repo:'Oracle',sourcePath:'/oracle-interface.css',publicPath:path};
  if (path === '/QuantaPhi' || path === '/QuantaPhi/' || path === '/QuantaPhi/index.html') return { redirect: '/' + incoming.search };
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
+ if (path === '/story') return { redirect: '/story/' + incoming.search };
+ if (path === '/story/' || path === '/story/index.html') return { repo: 'QuantaPhi', sourcePath: '/story/index.html', publicPath: '/story/' };
  if (path === '/page') return { redirect: '/page/' + incoming.search };
  if (path === '/page/' || path === '/page/index.html') return { repo: 'QuantaPhi', sourcePath: '/page/index.html', publicPath: '/page/' };
  if (path === '/learn') return { redirect: '/learn/' };

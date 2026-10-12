@@ -310,7 +310,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
   <div class="siteViewerStage">
     <iframe class="siteViewerFrame" id="siteViewerFrame" title="Embedded site" allow="autoplay; encrypted-media; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
   </div>
-  <div class="siteViewerFoot">Every current business button opens a Phi-owned page in this viewer. Closing it returns you to the same spot on the body.</div>
+  <div class="siteViewerFoot">Some sites block in-page framing. If this viewer is blank, <a id="siteViewerExternal" href="/" target="_blank" rel="noopener noreferrer" style="color:#ffe38a;font-weight:900">open the original source</a>. Close to return to the same place in QuantaPhi.</div>
 </section>
 <section class="qwalletPanel" id="qhistoryPanel" hidden aria-label="Build history"><div class="qwalletHead"><h2>Build History</h2><button class="qwalletClose" id="qhistoryClose" type="button">Close</button></div><div id="qhistoryList"></div></section></main>
 <script>
@@ -326,6 +326,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
     );
    let url;try{url=new URL(raw,location.href)}catch{return}
    title.textContent=link.dataset.siteTitle||link.textContent.trim()||url.hostname;
+   const fallback=document.getElementById('siteViewerExternal');if(fallback)fallback.href=url.href;
    frame.src=url.href;
    viewer.hidden=false;
    document.documentElement.style.overflow='hidden';
@@ -1579,15 +1580,17 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 </script><!-- QuantaPhi publish stamp: unified-token-ledger-v1 -->
 <script src="media-repair.js?v=20261003-refine2"></script><script>window.PhiInfiniteBookFeedUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/feed';window.PhiInfiniteBookBanksUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/banks';</script><script defer src="/infinite-book-discovery.js?v=20261009-available-source1"></script>
 <script defer src="/phi-scholastic-data.js?v=20261011-context-compare1"></script>
+<script defer src="/phi-business-search.js?v=20261011-shopping-source1"></script>
 <script defer src="/phi-assimilation.js?v=20261011-relevance1"></script>
-<script defer src="/infinite-book.js?v=20261011-phi-story-handoff1"></script>
+<script defer src="/phi-story-share.js?v=20261011-full-story1"></script>
+<script defer src="/infinite-book.js?v=20261011-full-story1"></script>
 <script defer src="/phi-visual-render.js?v=20261009-render-errors1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
 <script defer src="/phi-image-builder.js?v=20261010-autofix-story2"></script>
 <script defer src="/phi-image-type-studio.js?v=20261009-forked-type1"></script>
 <script defer src="/phi-image-actions.js?v=20261010-action-catalog1"></script>
 <script defer src="/phi-book-image-bridge.js?v=20261009-text-repair1"></script>
-<script defer src="/phi-story-writer.js?v=20261011-photo-story1"></script>
+<script defer src="/phi-story-writer.js?v=20261011-full-story1"></script>
 <script defer src="/bubbles-voice-gate.js?v=20261011-voice1"></script>
 <script defer src="/bubbles-ai.js?v=20261011-voice1"></script>
 <script defer src="/fred-spaces-radio.js?v=20261011-targeted-fred2"></script>
