@@ -23,7 +23,9 @@ async function verifyBrainOwner(){
  }catch{return null}
 }
 
-const brainHeaders=await verifyBrainOwner();if(!brainHeaders){root.remove();return;}root.dataset.ownerVerified='1';root.hidden=false;
+// The owner gate resolves only for the verified owner and keeps retrying
+// transient failures, so a missing key or slow network never deletes the Brain.
+const brainHeaders=await (window.QuantaBrainOwner?window.QuantaBrainOwner.ready:verifyBrainOwner());if(!brainHeaders){root.remove();return;}root.dataset.ownerVerified='1';root.hidden=false;
  root.dataset.bound='1';
  const $=selector=>root.querySelector(selector);
  const ui=(tag,cl,text)=>{const el=document.createElement(tag);if(cl)el.className=cl;if(text!==undefined)el.textContent=String(text);return el;};

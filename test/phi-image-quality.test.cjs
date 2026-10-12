@@ -304,7 +304,7 @@ test('render transport locks artwork-only instructions before a long director pr
  const window={};
  vm.runInNewContext(source('phi-visual-render.js'),{window,FormData,AbortController,setTimeout,clearTimeout,fetch:async(_,options)=>{body=options.body;return {ok:true,json:async()=>({ok:true,dataURI:'data:image/png;base64,ZmFrZQ=='})}}});
  await window.PhiVisualRender.render({description:'Keep artwork',mode:'Image',prompt:'x'.repeat(8000),exactText:'Exact title'});
- assert.match(body.get('prompt'),/^ARTWORK ONLY: Render no lettering/);
+ assert.match(body.get('prompt'),/^PURE PICTURE: imagery only/);
  assert.ok(body.get('prompt').length<=7500);
  assert.equal(body.get('exact_text'),'Exact title');
 });
@@ -334,4 +334,31 @@ test('blue Image Grader repairs current pixels directly without changing uploads
  assert.doesNotMatch(html,/phi-image-type-studio\.js/);
  assert.match(html,/phi-image-builder\.js\?v=20261011-grader2/);
  assert.match(css,/\.pi-grade-fix/);
+});
+
+test('painter prompts never name text, quoted words or signage that FLUX turns into pseudo-writing',async()=>{
+ let body;
+ const window={};
+ vm.runInNewContext(source('phi-visual-render.js'),{window,FormData,AbortController,setTimeout,clearTimeout,fetch:async(_,options)=>{body=options.body;return {ok:true,json:async()=>({ok:true,dataURI:'data:image/png;base64,ZmFrZQ=='})}}});
+ const {pictorialPrompt,modePrompt}=window.PhiVisualRender;
+ const textTopic=/\b(text|letters?|lettering|words?|typography|fonts?|captions?|headlines?|titles?|signs?|signage|labels?|logos?|writing|printed|says)\b/i;
+ for(const mode of ['Image','Trading Card','Advertisement','Billboard','Poster','Cover Art'])assert.doesNotMatch(modePrompt(mode),textTopic,mode);
+ const scene=pictorialPrompt('A cozy bakery with a neon sign that says "Fresh Bread", warm morning light, a golden retriever by the door. Leave a blank title area for typography. Poster with the words Happy Birthday Mom, balloons and confetti.');
+ assert.doesNotMatch(scene,textTopic);
+ assert.doesNotMatch(scene,/Fresh Bread|Happy Birthday Mom/);
+ assert.match(scene,/golden retriever/);
+ assert.match(scene,/balloons and confetti/);
+ assert.match(pictorialPrompt('A girl reading a book under an oak tree, cartoon characters dancing nearby.'),/reading a book under an oak tree, cartoon characters/);
+ assert.match(pictorialPrompt('Remove all text painted into the image. Preserve all objects.'),/^Remove all text/,'explicit erase edits stay intact');
+ await window.PhiVisualRender.render({description:'Shop sign that says "OPEN"',mode:'Poster',prompt:'A shop at dusk with a sign reading OPEN, title lettering at the top, rain on cobblestones.',exactText:'OPEN'});
+ assert.doesNotMatch(body.get('prompt'),textTopic);
+ assert.match(body.get('prompt'),/rain on cobblestones/);
+ assert.equal(body.get('exact_text'),'OPEN');
+ const worker=source('workers/infinity-rogers/worker.js');
+ const route=worker.slice(worker.indexOf(' const modeRules={'),worker.indexOf(' let lastError=null;')).replace(/\/\/.*$/gm,'');
+ assert.doesNotMatch(route.replace(/pictorialPrompt|exactText|requestText/g,''),/\b(lettering|typography|headline|captions?|signage|logos?|pseudo|title)\b/i);
+ assert.match(worker,/const scene=pictorialPrompt\(prompt,/);
+ const shared=(code,end)=>code.slice(code.indexOf('const TEXT_TOPIC='),code.indexOf(end));
+ assert.equal(shared(worker,'async function runImage(request, env)'),shared(source('phi-visual-render.js'),'function modePrompt(mode)'),'worker and browser sanitizers must stay identical');
+ assert.match(pictorialPrompt('A model in a printed floral dress holding digital art, a movie script on the desk.'),/printed floral dress.*digital art.*movie script/);
 });
