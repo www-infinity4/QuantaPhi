@@ -1,21 +1,22 @@
--- Infinity Brain durable episodic job memory, additive D1 migration.
--- Run on WORK_DB (rogers-consensus) before deploying the Brain Clock code.
--- Source of truth, partitioned by server-authorized owner. Vector index is rebuildable.
+-- Compatibility migration for the EXISTING live brain_experiences table in WORK_DB.
+-- Additive-only; no ALTER, DROP, DELETE, wallet mutations or table replacement.
 CREATE TABLE IF NOT EXISTS brain_experiences (
- id TEXT PRIMARY KEY,
- owner_hash TEXT NOT NULL CHECK(length(owner_hash)=64),
+ experience_id TEXT PRIMARY KEY,
+ owner_hash TEXT NOT NULL,
  repository TEXT NOT NULL,
- ticket_id TEXT NOT NULL,
- job_id TEXT NOT NULL,
+ ticket_id TEXT NOT NULL DEFAULT '',
+ job_id TEXT NOT NULL DEFAULT '',
+ kind TEXT NOT NULL CHECK(kind IN ('observation','outcome','lesson','procedure')),
  status TEXT NOT NULL,
- task TEXT NOT NULL,
- summary TEXT NOT NULL,
- commit_sha TEXT NOT NULL DEFAULT '',
+ summary TEXT NOT NULL CHECK(length(summary) BETWEEN 1 AND 1800),
+ evidence_url TEXT NOT NULL DEFAULT '',
+ metadata_json TEXT NOT NULL DEFAULT '{}',
+ verified INTEGER NOT NULL DEFAULT 0 CHECK(verified IN (0,1)),
  occurred_at INTEGER NOT NULL,
- vector_state TEXT NOT NULL DEFAULT 'pending' CHECK(vector_state IN ('pending','indexed','retry')),
- created_at INTEGER NOT NULL DEFAULT (unixepoch()*1000)
+ created_at INTEGER NOT NULL,
+ embedding_status TEXT NOT NULL DEFAULT 'pending'
 );
-CREATE INDEX IF NOT EXISTS idx_brain_experiences_owner_repo_time
+CREATE INDEX IF NOT EXISTS idx_brain_memory_owner_repo_time
  ON brain_experiences(owner_hash,repository,occurred_at DESC);
-CREATE INDEX IF NOT EXISTS idx_brain_experiences_retry
- ON brain_experiences(vector_state,occurred_at);
+CREATE INDEX IF NOT EXISTS idx_brain_memory_owner_time
+ ON brain_experiences(owner_hash,occurred_at DESC);
