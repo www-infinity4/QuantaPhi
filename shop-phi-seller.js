@@ -73,7 +73,7 @@ function mount(form,fields,status,config={}){
  const note=el('p','AI identification, authentication, comparable prices and approval are not connected yet. Images cannot prove authenticity by themselves.','sap-small');
  const reviewLabel=el('p','Review status: unverified draft','sap-review-status');
  area.append(check,note,reviewLabel);
- form.insertBefore(area,form.firstChild);
+ form.append(area);
  let ids=[],previews=[],stream=null,previewEpoch=0;
  const revoke=()=>{previews.forEach(URL.revokeObjectURL);previews=[]};
  async function render(){
