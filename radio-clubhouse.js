@@ -40,7 +40,7 @@
  const titleGroup=add(head,make('div','rc-heading'));
  add(titleGroup,make('span','rc-eyebrow','ORACLE OCTAVES  ·  INFINITY 2026®  ·  COMMUNITY RADIO'));
  add(titleGroup,make('h2','rc-title','📻 Radio Clubhouse'));
- add(titleGroup,make('p','rc-subtitle','The newest discussions from Antique Radio Forums. One original-source card for each thread.'));
+ add(titleGroup,make('p','rc-subtitle','Radio Clubhouse discussion cards: latest verified forum topics first, with real archived threads if live access is unavailable.'));
  const refresh=add(head,make('button','rc-refresh','Refresh discussions'));
  refresh.type='button';
  const status=add(shell,make('p','rc-status','Connecting to Radio Clubhouse…'));
@@ -49,7 +49,7 @@
  const footer=add(shell,make('footer','rc-footer'));
  add(footer,make('span','','Discussions belong to their original authors at Antique Radio Forums.'));
  const source=add(footer,make('a','','Visit Antique Radio Forums ↗'));
- source.href='https://antiqueradios.com/forums/';source.target='_blank';source.rel='noopener noreferrer';
+ source.href='https://antiqueradios.com/forums/viewforum.php?f=2';source.target='_blank';source.rel='noopener noreferrer';
  let pending=false,live=[],known=new Set(stored(SEEN,[]).map(String)),everLoaded=!!stored(SNAPSHOT,null),lastChecked=null;
  function actions(article,t){
   const buttons=add(article,make('div','rc-actions'));
@@ -109,13 +109,15 @@
    article.dataset.topicId=t.id;
    const top=add(article,make('div','rc-topic-top'));
    add(top,make('span','rc-topic-index','#'+String(i+1).padStart(2,'0')+' · RADIO CLUBHOUSE'));
-   if(isLive&&t.isNew)add(top,make('span','rc-new','NEW DISCUSSION'));
+   if(t.archived)add(top,make('span','rc-archive','ARCHIVED THREAD'));
+   else if(isLive&&t.isNew)add(top,make('span','rc-new','NEW TO FEED'));
    add(article,make('h3','',t.title));
    if(t.snippet)add(article,make('p','rc-excerpt',t.snippet));
    else add(article,make('p','rc-excerpt','Read the original Radio Clubhouse discussion and replies.'));
    const meta=add(article,make('p','rc-meta','Source: Antique Radio Forums'));
    if(t.author)meta.append(document.createTextNode(' · '+t.author));
-   if(t.updated)meta.append(document.createTextNode(' · '+formatDate(t.updated)));
+   if(t.updated)meta.append(document.createTextNode(' · Last activity '+formatDate(t.updated)));
+   else if(t.publishedAt)meta.append(document.createTextNode(' · Posted '+t.publishedAt));
    actions(article,t);
   }
  }
@@ -127,7 +129,8 @@
    if(!isTopic(raw))continue;
    const t={id:String(raw.id),url:url(raw.url),title:raw.title.trim().slice(0,180),
     author:String(raw.author||'').slice(0,70),snippet:String(raw.snippet||'').slice(0,340),
-    updated:raw.updated&&Number.isFinite(Date.parse(raw.updated))?raw.updated:null};
+    updated:raw.updated&&Number.isFinite(Date.parse(raw.updated))?raw.updated:null,
+    archived:raw.archived===true,publishedAt:/^\d{4}-\d{2}-\d{2}$/.test(String(raw.publishedAt||''))?raw.publishedAt:null};
    if(!uniq.has(t.id))uniq.set(t.id,t);
   }
   return [...uniq.values()].slice(0,8);
@@ -146,6 +149,19 @@
    if(!response.ok||!payload?.ok)throw new Error('forum_feed_unavailable');
    const topics=normalize(payload.topics);
    if(!topics.length)throw new Error('no_valid_discussions');
+   const archived=payload.archived===true||payload.feedType==='archive';
+   if(archived){
+    const snapshot=stored(SNAPSHOT,null);
+    const recent=normalize(snapshot?.topics);
+    if(recent.length){
+     render(recent,false);
+     status.textContent='Live forum access unavailable. Showing the last previously retrieved forum discussions ('+formatDate(new Date(snapshot.checkedAt).toISOString())+'). The archive is available if needed; these are not confirmed current.';
+    }else{
+     render(topics,false);
+     status.textContent='Showing '+topics.length+' VERIFIED ARCHIVED discussions (2025). The direct forum and RSS are currently inaccessible; these are not the newest live posts. Checks retry every 5 minutes.';
+    }
+    return;
+   }
    const first=!everLoaded;
    for(const t of topics)t.isNew=!first&&!known.has(t.id);
    known=new Set([...known,...topics.map(t=>t.id)].slice(-500));
@@ -153,8 +169,8 @@
    live=topics;everLoaded=true;lastChecked=Date.now();
    save(SNAPSHOT,{topics:topics.map(({isNew,...t})=>t),checkedAt:lastChecked});
    render(topics,true);
-   status.textContent='Latest '+topics.length+' discussions · Checked '+formatDate(new Date(lastChecked).toISOString())+
-    ' · Updates checked every 5 minutes.'+(first?' Starting with the current newest topics; no old archive imported.':'');
+   status.textContent='Latest '+topics.length+' discussion topics from Radio Clubhouse · Checked '+formatDate(new Date(lastChecked).toISOString())+
+    ' · Updates checked every 5 minutes.'+(first?' Starting with the current forum topics.':'');
   }catch{
    const snapshot=stored(SNAPSHOT,null);
    const previous=normalize(snapshot?.topics);
@@ -163,7 +179,7 @@
     status.textContent='Forum feed unavailable. Showing the last saved snapshot from '+formatDate(new Date(snapshot.checkedAt).toISOString())+'; these are not verified as current.';
    }else{
     render([],false,'The source is not returning a usable live forum feed at the moment.');
-    status.textContent='Unable to verify the latest discussions. No sample or old topics have been substituted.';
+    status.textContent='Radio Clubhouse discussions are temporarily unavailable. See the original board; automatic checks will continue.';
    }
   }finally{pending=false;refresh.disabled=false;refresh.textContent='Refresh discussions'}
  }
