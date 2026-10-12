@@ -1,0 +1,48 @@
+/* Oracle Octaves action cards · matched to Radio Clubhouse's cream/lavender studio. */
+#phiProjectActions{width:min(1120px,calc(100% - 24px));margin:18px auto;font-family:system-ui,-apple-system,Roboto,sans-serif}
+#phiProjectActions *{box-sizing:border-box}
+#phiProjectActions .pp-deck{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,390px),1fr));gap:16px}
+#phiProjectActions .pp-card{background:linear-gradient(140deg,#fffdf9,#f6effd 57%,#fff9e9);border:1px solid #ceb5e6;border-radius:24px;box-shadow:0 11px 32px #38144720;padding:clamp(16px,3vw,24px);color:#352444;min-width:0}
+#phiProjectActions .pp-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;border-bottom:1px solid #e3d6ec;padding-bottom:12px}
+#phiProjectActions .pp-eyebrow{font-size:10px;font-weight:950;letter-spacing:.10em;color:#5b2d84}
+#phiProjectActions .pp-name{font-size:clamp(25px,4vw,32px);font-weight:950;letter-spacing:-.04em;color:#3d1f5d;margin:6px 0}
+#phiProjectActions .pp-orb{display:grid;place-items:center;flex:0 0 54px;height:54px;border-radius:50%;background:#f2defc;color:#542481;font-size:33px;border:1px solid #d1b1e6}
+#phiProjectActions .pp-description{font-size:14px;color:#594967;line-height:1.55;margin:15px 0}
+#phiProjectActions .pp-active{font-size:13px;font-weight:850;color:#5f327b;margin:10px 0}
+#phiProjectActions .pp-status{font-size:12px;color:#6d5778;min-height:18px;line-height:1.5}
+#phiProjectActions .pp-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:13px 0}
+#phiProjectActions .pp-btn,#phiProjectActions .pp-select{font:800 13px/1.25 system-ui,sans-serif;border:1px solid #ab91c6;min-height:44px;border-radius:999px;padding:10px 14px;cursor:pointer;background:white;color:#492277;max-width:100%}
+#phiProjectActions .pp-select{min-width:150px;flex:1 1 160px;color:#3d1e57}
+#phiProjectActions .pp-plus{background:#fff5cf;border-color:#d7b65b;color:#5d3e0d}
+#phiProjectActions .pp-primary{background:#492277;border-color:#492277;color:white}
+#phiProjectActions .pp-link{display:inline-flex;align-items:center;text-decoration:none}
+#phiProjectActions .pp-token-import{border:1px solid #dfccec;padding:12px;border-radius:14px;background:#ffffffba}
+#phiProjectActions .pp-token-import summary{font-weight:850;color:#502d6c;cursor:pointer}
+#phiProjectActions .pp-token-import .pp-btn{margin-top:10px}
+#phiProjectActions .pp-token-import .pp-select{width:100%;margin-top:10px}
+#phiProjectActions .pp-file{display:none}
+#phiProjectActions .pp-frame-wrap{margin-top:14px}
+#phiProjectActions .pp-frame{width:100%;height:min(78vh,800px);min-height:520px;border:1px solid #c9b6dd;border-radius:14px;background:white}
+#phiProjectActions .pp-footer{font-size:12px;color:#685473;margin:10px 0}
+#phiProjectActions .pp-btn:focus-visible,#phiProjectActions .pp-select:focus-visible{outline:3px solid #6b33bc;outline-offset:2px}
+#halloweenPhi .hphi-card{background:linear-gradient(145deg,#fffdf8,#f7efff 58%,#fffaf0);color:#35283f;border:1px solid #ceb5e6;border-radius:24px;box-shadow:0 11px 32px #38144720}
+#halloweenPhi .hphi-card[data-card="petriphi"]{background:linear-gradient(145deg,#fffdf7,#fdf1f5 55%,#f4eafc);border-color:#d6b6d8}
+#halloweenPhi .hphi-card h2{color:#3d1f5d}
+#halloweenPhi .hphi-card h3{color:#4f2870}
+#halloweenPhi .hphi-brand{color:#63348b}
+#halloweenPhi .hphi-card p,#halloweenPhi .hphi-subtitle{color:#56485c}
+#halloweenPhi .hphi-note,#halloweenPhi .hphi-credit{color:#654e70}
+#halloweenPhi .hphi-status{color:#603f72}
+#halloweenPhi .hphi-card button,#halloweenPhi .hphi-card .hphi-btn{border:1px solid #b59ad0;border-radius:999px;background:#f4e8fa;color:#4b2771}
+#halloweenPhi .hphi-card button:hover,#halloweenPhi .hphi-card .hphi-btn:hover{background:#e9d6f5}
+#halloweenPhi .hphi-film,#halloweenPhi .hphi-studio{border:1px solid #dfcbea;border-radius:15px;background:#ffffffb3}
+#halloweenPhi .hphi-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}
+#halloweenPhi .hphi-image img{filter:grayscale(1) contrast(1.04)}
+#halloweenPhi .hphi-image-dialog{background:#fffdf7;color:#35283f;border-color:#d2a86a}
+#halloweenPhi .hphi-image-dialog .hphi-credit{color:#654e70}
+#halloweenPhi .hphi-image-dialog a{color:#532880}
+#halloweenPhi .hphi-collect-asset,#halloweenPhi .hphi-project-new{background:#fff2bd!important;border-color:#cba955!important;color:#5d3c0b!important}
+#halloweenPhi .hphi-project-strip{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0;border-bottom:1px solid #e5d5ec;padding-bottom:12px}
+#halloweenPhi .hphi-project-note{font-size:12px;color:#5b4771;flex:1 1 140px}
+#halloweenPhi .hphi-project-link{font-weight:800;color:#603084;font-size:13px}
+@media(max-width:580px){#phiProjectActions .pp-controls .pp-select{flex-basis:100%}#halloweenPhi .hphi-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
