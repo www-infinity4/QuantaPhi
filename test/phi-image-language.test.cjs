@@ -43,3 +43,11 @@ test('long wording is never silently chopped or sent to compositor unverified',(
  const title='This extremely long headline '.repeat(6);
  assert.equal(infer('Poster for ABC','Poster',title).error,'exact_words_too_long');
 });
+
+test('quoted slogans work with the single quotes common on phone keyboards',()=>{
+ const request="Create a poster for Oracle AI Studio - Mosaic with the phrase 'The Intelligence Architecture Solution'";
+ assert.equal(infer(request,'Poster').text,'Oracle AI Studio - Mosaic\nThe Intelligence Architecture Solution');
+});
+test('a customer can ask for exact sign words without entering an advanced lettering field',()=>{
+ assert.equal(infer('Draw a storefront sign that says OPEN on a blue wall','Image').text,'OPEN');
+});
