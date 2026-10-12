@@ -5,3 +5,7 @@ compatibility_date = "2026-10-12"
 binding = "ORACLE"
 service = "infinity-rogers"
 environment = "production"
+[[services]]
+binding = "NEWS"
+service = "news-phi-feed"
+environment = "production"
