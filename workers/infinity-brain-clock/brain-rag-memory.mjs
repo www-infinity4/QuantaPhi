@@ -12,8 +12,9 @@ const repoOK = v => /^www-infinity4\/[\w.-]{1,100}$/.test(v||'');
 export function redactExperience(value) {
   return clip(value,3000)
     .replace(/\b(?:sq_[A-Za-z0-9_-]{20,}|rb_[a-f0-9]{40,}|gh[pousr]_[A-Za-z0-9_]{20,})\b/g,'[credential]')
+    .replace(/\b(?:github_pat_[A-Za-z0-9_]{16,}|glpat-[A-Za-z0-9_-]{16,}|sk-[A-Za-z0-9_-]{16,}|xox[baprs]-[A-Za-z0-9-]{16,})\b/gi,'[credential]')
     .replace(/\bBearer\s+[^\s"']+/gi,'Bearer [redacted]')
-    .replace(/\b(authorization|api[_-]?key|password|secret|access[_-]?token)\s*[:=]\s*[^\s,;"']+/gi,'$1=[redacted]')
+    .replace(/\b(authorization|api[_-]?key|password|secret|token|access[_-]?token)\s*[:=]\s*(?:"[^"]*"|'[^']*'|[^\s,;"']+)/gi,'$1=[redacted]')
     .replace(/[\u0000-\u0008\u000b-\u001f]/g,' ').trim();
 }
 async function hash(text) {
