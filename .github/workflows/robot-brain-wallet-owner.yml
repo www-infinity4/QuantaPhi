@@ -31,4 +31,4 @@ jobs:
           node --check workers/infinity-brain-clock/worker.js
       - name: Verify private wallet-owner authorization
         run: |
-          node --test test/robot-brain-owner.test.cjs test/brain-clock.test.mjs
+          node --test test/robot-brain-owner.test.cjs test/brain-clock.test.mjs workers/infinity-brain-clock/brain-rag-memory.test.mjs
