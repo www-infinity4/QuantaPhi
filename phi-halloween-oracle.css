@@ -1,0 +1,25 @@
+/* Oracle Octaves style for the existing full TerriPhi and PetriPhi mini-apps. */
+body.phi-halloween-oracle{background:linear-gradient(155deg,#fbf7ff 0%,#f4eafc 42%,#fffbef 100%);color:#30243e;font-family:system-ui,-apple-system,Roboto,sans-serif}
+body.phi-halloween-oracle header strong{color:#502e76}
+body.phi-halloween-oracle header nav a{color:#563086;font-weight:750}
+body.phi-halloween-oracle h1{color:#40235e;font-weight:900}
+body.phi-halloween-oracle h2{color:#40215c}
+body.phi-halloween-oracle .eyebrow,body.phi-halloween-oracle .tag{color:#64318b}
+body.phi-halloween-oracle .hero{background:transparent}
+body.phi-halloween-oracle .hero p{color:#654e6f}
+body.phi-halloween-oracle .panel{background:linear-gradient(146deg,#fffdf9,#f7effe 58%,#fffaf0)!important;color:#322341;border:1px solid #cfb8e3!important;border-radius:24px;box-shadow:0 10px 30px #3814471a}
+body.phi-halloween-oracle .panel p,body.phi-halloween-oracle .note{color:#65516f}
+body.phi-halloween-oracle button,body.phi-halloween-oracle .button{background:#f0e2fa;color:#4c2971;border:1px solid #b69cce;border-radius:999px;font-weight:800}
+body.phi-halloween-oracle button:hover,body.phi-halloween-oracle .button:hover{background:#e7d5f5}
+body.phi-halloween-oracle .status{color:#603d75}
+body.phi-halloween-oracle .source{color:#6b5774}
+body.phi-halloween-oracle label{color:#4c2b66}
+body.phi-halloween-oracle input,body.phi-halloween-oracle select,body.phi-halloween-oracle textarea{background:white;color:#372440;border:1px solid #b9a0c9}
+body.phi-halloween-oracle .stage{background:#21192c}
+body.phi-halloween-oracle .saved{background:#fff;border-color:#d5bde7;color:#3d2652}
+body.phi-halloween-oracle footer{color:#665373}
+body.phi-halloween-oracle .phi-oracle-project-actions{max-width:1120px;margin:0 auto 14px;padding:12px 18px;border:1px solid #ceb5e6;border-radius:16px;background:#fffbf3;display:flex;align-items:center;gap:12px;flex-wrap:wrap;box-shadow:0 7px 21px #38144714}
+body.phi-halloween-oracle .phi-oracle-project-actions span{font-size:13px;color:#552b73;font-weight:800;flex:1 1 170px}
+body.phi-halloween-oracle .phi-oracle-project-actions a{font-size:13px;font-weight:850;color:#62338b}
+body.phi-halloween-oracle .phi-oracle-project-actions button{min-height:44px;padding:10px 14px;background:#fff3c5;border-color:#d6b65d;color:#5e410e}
+body.phi-halloween-oracle .mini{background:#f0e2fa}
