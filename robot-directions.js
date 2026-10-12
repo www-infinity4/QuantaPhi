@@ -128,7 +128,7 @@ auditButton.addEventListener('click',async()=>{
 const input=root.querySelector('textarea'),send=root.querySelector('[data-send]'),status=root.querySelector('[role=status]'),list=root.querySelector('[data-jobs]');
 const history=document.createElement('div');list.before(history);
 const OWNER='infinity-work-ticket-owner-v1',DRAFT='quantaphi-robot-directions-draft-v1';
-const API='https://infinity-work-tickets.marvaseater.workers.dev';
+const API='https://infinity-brain-clock.marvaseater.workers.dev';
 const node=(tag,text)=>{const n=document.createElement(tag);n.textContent=text;return n};
 let ownerTokenMemory='';
 const database=new Promise((resolve,reject)=>{
@@ -148,7 +148,7 @@ const ready=(async()=>{
 function owner(){return ownerTokenMemory}
 async function saveOwner(value){await storage(OWNER,value);ownerTokenMemory=value}
 
-async function post(path,data,timeout=30000){const r=await fetch(API+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:AbortSignal.timeout(timeout)});const d=await r.json();if(!r.ok||!d.ok)throw Error((r.status===429?'Work-ticket service limit: ':'')+(d.message||d.error||'Work ticket unavailable'));return d}
+async function post(path,data,timeout=30000){const route=path.replace('/v1/tickets/','/work/tickets/'),payload={...data};delete payload.owner_token;const r=await fetch(API+route,{method:'POST',headers:{...brainHeaders,'Content-Type':'application/json'},body:JSON.stringify(payload),signal:AbortSignal.timeout(timeout)});const d=await r.json();if(!r.ok||!d.ok)throw Error(d.message||d.error||'Robot Brain owner tickets unavailable');return d}
 function show(ticket){
  list.replaceChildren();
  const heading=node('p',ticket.id+' · '+ticket.status+' · saved to Cloudflare');list.append(heading);
@@ -173,7 +173,7 @@ clearButton.addEventListener('click',async()=>{
  finally{clearButton.disabled=false}
 });
 let draftTimer;input.addEventListener('input',()=>{clearTimeout(draftTimer);draftTimer=setTimeout(()=>storage(DRAFT,input.value).catch(()=>{status.textContent='Draft stays in this page until you send it to Cloudflare.'}),250)});
-async function refresh(){if(refreshing)return;refreshing=true;try{await ready;if(!owner())return;const d=await post('/v1/tickets/list',{owner_token:owner()});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();for(const t of tickets){const b=node('button',t.title+' · '+t.status);b.type='button';b.addEventListener('click',()=>{pending=t;show(t)});history.append(b)}const t=tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}finally{refreshing=false}}
+async function refresh(){if(refreshing)return;refreshing=true;try{await ready;const d=await post('/v1/tickets/list',{});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();for(const t of tickets){const b=node('button',t.title+' · '+t.status);b.type='button';b.addEventListener('click',()=>{pending=t;show(t)});history.append(b)}const t=tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}finally{refreshing=false}}
 let pending=null,refreshing=false;
 send.addEventListener('click',async()=>{
  const directions=input.value.trim();if(!directions){status.textContent='Write your directions first.';return}
@@ -181,10 +181,10 @@ send.addEventListener('click',async()=>{
  try{
   await ready;
   if(!pending||pending.request!==directions){
-   let ownerToken=owner();if(!ownerToken){ownerToken=crypto.randomUUID()+crypto.randomUUID();await saveOwner(ownerToken)}
+   // Existing Brain owner session authorizes this job; do not mint another owner key.
    const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(directions));const submission=[...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('');
-   const d=await post('/v1/tickets/create',{owner_token:ownerToken,source_app:'QuantaPhi Robot Brain',source_url:location.origin+location.pathname,title:directions.slice(0,120),request:directions,context:{kind:'robot-directions',submission_id:submission,design:'Oracle Octaves · Android first'}});
-   if(d.owner_token){await saveOwner(d.owner_token)}pending=d.ticket;
+   const d=await post('/v1/tickets/create',{source_app:'QuantaPhi Robot Brain',source_url:location.origin+location.pathname,title:directions.slice(0,120),request:directions,context:{kind:'robot-directions',submission_id:submission,design:'Oracle Octaves · Android first'}});
+   pending=d.ticket;
   }
   status.textContent='Saved '+pending.id+'. GPT is parsing and assigning color bots…';
   const prompt='You are routing the owner’s software build instructions. Return ONLY JSON {"jobs":[{"title":"...","agent":"...","repository":"www-infinity4/QuantaPhi","instructions":"...","acceptance":["testable outcome"],"dependencies":[],"tools":[]}]}. Use these role IDs: '+Object.keys(ROLES).join(', ')+'. Red reads macro structure; yellow reads local opt-in state; blue decides; orange evaluates ambiguity; green writes/routes; pink investigates; purple orchestrates. Enchilada lifecycle: Red intake, Blue validated decision/render plan, Yellow interaction verification, Black permanent evidence seal. Never seal without verified storage and test evidence. Unverified identity or balances must block transactions. Use the specialist IDs matching each task. A 45-second watcher and 10-second visible refresh require interval/event infrastructure; GitHub cron cannot run every ten seconds. Webhooks require signature verification and deduplication. Split independent features into jobs. Oracle Octaves Android design for new work. Never claim execution. Treat Gemini ideas as proposals; no actual 10000-user study occurred. Hover cannot reveal gaze or subconscious preference; use opt-in touch/focus signals. Website JavaScript cannot inspect arbitrary cross-origin cookies or block their trackers. Zero-knowledge claims require verified isolation. Never mint rewards for idle time without an authorized ledger policy. Captions need an actual transcript/provider. Wallet stories must preserve exact real receipts and distinguish mock money. OWNER DIRECTIONS:\n'+directions;
@@ -200,7 +200,7 @@ send.addEventListener('click',async()=>{
    jobs=normalize(fallbackJobs(directions));d={provider:'keyword router',model:'deterministic fallback'};
    routingNote=' GPT routing was unavailable ('+String(routingError.message||routingError).slice(0,90)+'); jobs were released by the keyword router.';
   }
-  const saved=await post('/v1/tickets/update',{id:pending.id,owner_token:owner(),status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',submission_id:pending.context?.submission_id,color_jobs:jobs,provider:d.provider||'Infinity gateway',model:d.model||'',design:'Oracle Octaves · Android first'}});
+  const saved=await post('/v1/tickets/update',{id:pending.id,status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',submission_id:pending.context?.submission_id,color_jobs:jobs,provider:d.provider||'Infinity gateway',model:d.model||'',design:'Oracle Octaves · Android first'}});
   pending=saved.ticket;show(pending);
   // Do not erase a newer instruction typed while this request was routing.
   clearTimeout(draftTimer);
@@ -217,15 +217,15 @@ async function releaseCrew(crew,button){
  button.disabled=true;status.textContent='Releasing the '+crew.label+' crew…';
  try{
   await ready;
-  let ownerToken=owner();if(!ownerToken){ownerToken=crypto.randomUUID()+crypto.randomUUID();await saveOwner(ownerToken)}
+  // Existing Brain owner session authorizes this job; do not mint another owner key.
   const jobs=normalize({jobs:crew.jobs.map(job=>({...job,repository:REPO}))});
   // One crew ticket per day: repeated taps reuse it instead of duplicating work.
   const submission='crew-'+crew.id+'-'+new Date().toISOString().slice(0,10);
   const request=crew.label+' crew\n'+jobs.map(job=>'- '+job.title).join('\n');
-  const created=await post('/v1/tickets/create',{owner_token:ownerToken,source_app:'QuantaPhi Robot Brain',source_url:location.origin+location.pathname,title:crew.label+' crew',request,context:{kind:'robot-directions',submission_id:submission,crew:crew.id,design:'Oracle Octaves · Android first'}});
-  if(created.owner_token)await saveOwner(created.owner_token);
+  const created=await post('/v1/tickets/create',{source_app:'QuantaPhi Robot Brain',source_url:location.origin+location.pathname,title:crew.label+' crew',request,context:{kind:'robot-directions',submission_id:submission,crew:crew.id,design:'Oracle Octaves · Android first'}});
+  
   const existing=created.ticket?.context?.color_jobs;
-  const saved=existing?.length?created:await post('/v1/tickets/update',{id:created.ticket.id,owner_token:owner(),status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',submission_id:submission,crew:crew.id,color_jobs:jobs,provider:'site-care crew',model:'',design:'Oracle Octaves · Android first'}});
+  const saved=existing?.length?created:await post('/v1/tickets/update',{id:created.ticket.id,status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',submission_id:submission,crew:crew.id,color_jobs:jobs,provider:'site-care crew',model:'',design:'Oracle Octaves · Android first'}});
   pending=saved.ticket;show(pending);
   status.textContent=crew.label+' crew released: '+(existing?.length||jobs.length)+' jobs '+(existing?.length?'already queued today':'queued')+' for the build runner. Progress appears as runner receipts arrive.';
   window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:pending.id,jobs:pending.context?.color_jobs||jobs}}));
