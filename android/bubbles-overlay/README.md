@@ -64,3 +64,32 @@ response before describing the cross-app feature as production-ready.
 - Measure wake-to-response latency, recognizer failure rates and battery use.
 - Add a privacy-preserving session handoff between Android overlay and
   QuantaPhi account; **never** copy WebView cookies to the network.
+
+## Brain workflow learning (October 12 update)
+
+The Android companion now stores a configurable name and job. It recognises that
+name (Brain by default) and Bubbles. The native Oracle request includes the site
+Origin required by the existing endpoint.
+
+Optional learning is read-only and disabled by default. Select ChatGPT, X, or the
+standalone Gemini app, then manually enable **Brain workflow learning** in Android
+Accessibility Settings. This observes visible accessibility text only, skips
+password/editable fields, and records up to 30 bounded local snapshots after a
+screen settles. It does not read hidden conversation history, Chrome tabs, the
+Google app's integrated Gemini, images, or arbitrary apps; some app views may
+expose no readable text. Uncheck an app to stop its capture. Review or clear
+notes in the native Bubbles settings.
+
+The separate **Include my recent notes ... Oracle Cloudflare AI** switch is also
+off by default. When enabled, up to 10,000 characters of recent notes accompany
+the next addressed voice request. No capture event sends a network request or
+runs a tool. Ask Brain what needs fixing next to get evidence-based suggestions.
+The assistant cannot identify your intent perfectly from screen text.
+
+The browser embed does not auto-install this app or grant these permissions.
+Native profile settings are currently separate from web-created bubble profiles;
+wallet-bound profile sync and multiple simultaneous persona overlays remain
+future work. Install the updated debug APK and verify overlay movement between
+apps, name recognition, capture permission, pause/review, and Oracle response on
+the real device. The CI job runs JVM allowlist/bounded-text checks and assembles
+the full APK; it does not replace real-device testing.
