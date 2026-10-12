@@ -1,0 +1,60 @@
+{
+  "schema": "quantaphi.halloween-phi/v1",
+  "updated": "2026-10-12",
+  "note": "Edit the individual cards here to curate movies and rights-cleared artwork. No copyrighted film is downloaded or rehosted.",
+  "cards": [
+    {
+      "id": "terriphi",
+      "title": "TerriPhi",
+      "subtitle": "Halloween Arcade & Cinema",
+      "role": "Play · Watch · Listen",
+      "description": "Haunted Door Hunt, spooky sounds, costume adventures and vintage scares. The full arcade runs inside this card.",
+      "studioPath": "/terriphi/",
+      "movie": {
+        "title": "Ernest Scared Stupid (1991)",
+        "kind": "trailer",
+        "label": "Watch theatrical trailer",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/daxX6NY1tVM",
+        "watchUrl": "https://play.google.com/store/movies/details/Ernest_Scared_Stupid?hl=en_US&id=dDGmBTJ3SKg",
+        "watchLabel": "Find legitimate full movie (rent/buy)",
+        "note": "The trailer is not the full movie. A free authorized feature-length source has not been verified."
+      },
+      "feed": {
+        "title": "Vintage frights & Halloween costumes",
+        "search": "Halloween costume",
+        "source": "https://www.loc.gov/free-to-use/autumn-and-halloween/"
+      },
+      "images": []
+    },
+    {
+      "id": "petriphi",
+      "title": "PetriPhi",
+      "subtitle": "Halloween Art Studio",
+      "role": "Create · Collect · Share",
+      "description": "Make original Halloween posters, save up to twelve locally, download PNG artwork and browse antique illustrated Halloween art. The studio works inside this card.",
+      "studioPath": "/petriphi/",
+      "movie": {
+        "title": "Nosferatu (1922)",
+        "kind": "feature",
+        "label": "Watch full public-domain horror film",
+        "embedUrl": "https://archive.org/embed/Nosferatu1922_58",
+        "watchUrl": "https://archive.org/details/Nosferatu1922_58",
+        "watchLabel": "View Internet Archive film & source",
+        "note": "1922 silent horror; rights and any added soundtrack can vary by copy and jurisdiction."
+      },
+      "feed": {
+        "title": "Illustrated Halloween postcards & gothic art",
+        "search": "Halloween postcard",
+        "source": "https://publicdomainreview.org/collection/halloween-postcards/"
+      },
+      "images": [
+        {
+          "title": "Early twentieth-century Halloween postcard",
+          "src": "https://pdr-assets.b-cdn.net/collections/halloween-postcards/halloween-card-22.jpg?height=1200&width=600",
+          "source": "https://publicdomainreview.org/collection/halloween-postcards/",
+          "license": "Historic postcard · underlying work public domain in the U.S.; review digital-copy credit at source"
+        }
+      ]
+    }
+  ]
+}
