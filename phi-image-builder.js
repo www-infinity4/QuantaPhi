@@ -251,9 +251,11 @@ host.addEventListener('click',event=>{
 async function fixImage(){
  if(busy||preparingReference||!artifact||!rawResult)return;
  const original={artifact,result,rawResult};
- const fixes=(original.artifact.review?.issues||[]).slice(0,6)
-  .map(issue=>String(issue.fix||issue.problem||'').trim()).filter(Boolean);
  const custom=String($('#pi-fix-notes')?.value||'').trim().slice(0,1200);
+ // Explicit user directions win over grader suggestions: do not "fix" parts
+ // the user has said are already right.
+ const fixes=custom?[]:(original.artifact.review?.issues||[]).slice(0,6)
+  .map(issue=>String(issue.fix||issue.problem||'').trim()).filter(Boolean);
  if(!fixes.length&&!custom){notice('The grader has no corrections selected. Describe what you want fixed in the box above.');return}
  busy=true;
  const button=$('[data-pi-action="fix"]');if(button)button.disabled=true;
