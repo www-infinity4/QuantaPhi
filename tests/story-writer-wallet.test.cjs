@@ -86,5 +86,5 @@ test('Media Star preserves import feedback and shows X authorization gate and em
  assert.match(radio,/await refresh\(true\)/);
  assert.match(radio,/An authorized X connection is not configured yet/);
  assert.match(radio,/No recordings indexed for this person yet/);
- assert.match(html,/following-spaces-radio\.js\?v=[^"'\\s]+/);
+ assert.match(html,/following-spaces-radio\.js\?v=[A-Za-z0-9-]+/);
 });
