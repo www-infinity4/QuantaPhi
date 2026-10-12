@@ -216,11 +216,13 @@ function sourcePlan(roll,catalog,focus=''){
  // Each button triggers new external retrieval. Actual source sites provide the
  // research catalog; the 6,000 rolls are query routes, never canned stories.
  const queries=researchedTopic?[
-   // Begin with the user's actual random-number result: "Helium history".
-   [researchedTopic,variant,thematicTerms].filter(Boolean).join(' '),
-   [researchedTopic,realm||angle,direction,'unusual origin discovery experiment incident historical source'].join(' '),
-   [researchedTopic,realm||angle,direction,variant,preference.terms,'site:'+domain].join(' ')
- ]:[
+    // Asteroid is a research lens, not a space topic or permission to swap subjects.
+    // Start with the user's exact subject, not a random editorial angle.
+    researchedTopic+' documented history original source',
+    researchedTopic+' specific event origin development contemporary accounts',
+    [researchedTopic,sectorId===27?'company store brand business archive':'original evidence records',
+     'documented historical incident development'].join(' ')
+  ]:[
    anchor+' '+angle+' '+variant+' '+preference.terms+' '+discoveryTerms+' site:'+domain,
    [specialty||sector,angle,sourceClass,variant,discoveryTerms].filter(Boolean).join(' '),
    sector+' '+angle+' documented '+variant+' '+preference.terms+' -biography'
@@ -348,7 +350,7 @@ async function writeSecretStory(sources,plan,roll,storyKind='reads-realms'){
  const conciseSources=sources.slice(0,7).map(x=>({title:x.title,url:x.url,summary:String(x.summary||'').slice(0,195)}));
  const readablePages=pageEvidence.slice(0,2).map(x=>({url:x.url,title:x.title,excerpt:x.excerpt.slice(0,1100)}));
  const prompt=[
-  'You are the GPT author of the '+product+' nonfiction story. '+(storyKind==='asteroid'?'This Asteroid is ONLY for the actual current QuantaPhi search; anchor the story in that searched subject.':'This is the original Reads & Realms home-page opening story, written fresh for a page visit without requiring a user search; select the documented subject from the rolled word bank.')+' Write an ORIGINAL sourced narrative about a concrete evidence-supported incident, observation, discovery, process, demonstration or artifact. Never a general biography, film synopsis or fabricated movie.',
+  'You are the GPT author of the '+product+' nonfiction story. '+(storyKind==='asteroid'?'Asteroid is a metaphor for investigating the current search. Your story MUST explicitly concern the exact searched subject '+(roll.quantFocus||plan.focus)+', not an asteroid or a random substitute.':'This is the original Reads & Realms home-page opening story, written fresh for a page visit without requiring a user search; select the documented subject from the rolled word bank.')+' Write an ORIGINAL sourced narrative about a concrete evidence-supported incident, observation, discovery, process, demonstration or artifact. Never a general biography, film synopsis or fabricated movie.',
   EDITORIAL_BRIEF,
   'NARRATIVE MOOD: '+mood+'. Shape pacing, curiosity and tension around facts; mystery means an evidence-supported unknown, adventure means a documented journey/process, suspense means real stakes or uncertainty. Do not invent danger, dialogue, plot twists, witnesses, or cinematic scenes.',
   'Example of the required difference: "Nikola Tesla" is NOT a story; his 1898 radio-controlled boat demonstration IS the kind of precise event we want, but do not choose it unless the actual evidence here concerns that event.',
@@ -373,6 +375,13 @@ async function writeSecretStory(sources,plan,roll,storyKind='reads-realms'){
  const cited=(Array.isArray(obj.evidence_urls)?obj.evidence_urls:[]).map(canonical);
  const matched=sources.filter(x=>cited.includes(x.url));
  if(new Set(matched.map(x=>origin(x.url))).size<2||!detailsSupported(obj.detail,matched,plan.focus))return null;
+  if(storyKind==='asteroid' && roll.quantFocus){
+    // Require subject coverage in the story and cited evidence, not a random tale.
+    const words=clean(roll.quantFocus).toLowerCase().match(/[\p{L}\p{N}]{3,}/gu)||[];
+    const normalized=text=>clean(text).toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'');
+    const mention=text=>words.length>0&&words.every(word=>normalized(text).includes(word));
+    if(!mention(obj.title+' '+obj.summary+' '+obj.full)||!matched.some(source=>mention(source.title+' '+source.summary)))return null;
+  }
  return {title:clean(obj.title).slice(0,180),summary:clean(obj.summary).slice(0,650),
   full:String(obj.full).trim().slice(0,4200),detail:clean(obj.detail).slice(0,240),
   status:['documented','reported','contested','corrected myth','folklore'].includes(obj.status)?obj.status:'reported',
@@ -492,7 +501,7 @@ function wikiExcerpt(s) {
 }
 async function findWikipedia({roll,catalog,seen,focus='',onDeep,storyKind='legacy'}) {
  const plan=sourcePlan(roll,catalog,focus);
- const base=(plan.indexedWord ? (plan.indexedWord+' '+(plan.realm||'history')+' unusual event') : '') || WIKI_QUERIES[roll.sector] || (plan.name+' historical discovery');
+ const base=storyKind==='asteroid'&&roll.quantFocus ? clean(roll.quantFocus)+' documented history event' : (plan.indexedWord ? (plan.indexedWord+' '+(plan.realm||'history')+' unusual event') : '') || WIKI_QUERIES[roll.sector] || (plan.name+' historical discovery');
  const seenWikipedia=[...seen].filter(id=>id.startsWith('wiki-')).length;
  // Keep a finite search offset and rotate terms; do not loop over seen items.
  // Rotate search phrasing and offsets independently: the previous five-offset
