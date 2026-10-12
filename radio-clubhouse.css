@@ -17,6 +17,7 @@
 #radioClubhouse .rc-topic-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
 #radioClubhouse .rc-topic-index{font-size:10px;color:#694681;letter-spacing:.10em;font-weight:950}
 #radioClubhouse .rc-new{font-size:10px;font-weight:950;letter-spacing:.08em;border:1px solid #9970bd;color:#54207f;background:#f5e7ff;padding:5px 8px;border-radius:999px}
+#radioClubhouse .rc-archive{font-size:10px;font-weight:950;letter-spacing:.08em;border:1px solid #b59b55;color:#654c16;background:#fff6cc;padding:5px 8px;border-radius:999px}
 #radioClubhouse .rc-topic h3{color:#30203d;font-size:18px;line-height:1.33;font-weight:900;letter-spacing:-.02em;margin:10px 0 7px;overflow-wrap:anywhere}
 #radioClubhouse .rc-excerpt{font-size:14px;line-height:1.5;color:#4c4355;margin:4px 0 9px;overflow-wrap:anywhere}
 #radioClubhouse .rc-meta{font-size:11px;line-height:1.5;color:#73617e;margin:4px 0 12px}
