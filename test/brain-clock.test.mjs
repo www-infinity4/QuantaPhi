@@ -6,7 +6,7 @@ const previewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(ne
 const quantUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/job-quant.mjs',import.meta.url))).toString('base64');
 const policyUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/bot-work-policy.mjs',import.meta.url))).toString('base64');
 const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl);
-const {BrainClock,validateInstruction,readRunnerBody}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+const {BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
  const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{BOT_WALLET:{fetch:async()=>Response.json({ok:true,user:{id:userId,username:'fixture-owner'}})}});
@@ -154,4 +154,60 @@ test('the public Brain route never authorizes by displayed wallet balances or ac
  assert.match(source,/recipient\.userId!==body\.userId/);
  assert.match(source,/await ownerAuthorized\(env,token\)/);
  assert.match(source,/if\(origin&&!origins\.has\(origin\)\)/);
+});
+
+test('verified Brain tickets share the writer owner partition instead of an anonymous browser key',async()=>{
+ const ownerHash='a'.repeat(64),otherHash='b'.repeat(64),rows=[];
+ const db={prepare(sql){return{bind(...params){return{
+  async first(){
+   if(sql.includes("json_extract(context_json"))return rows.find(r=>r.owner_hash===params[0]&&JSON.parse(r.context_json).submission_id===params[1])||null;
+   return rows.find(r=>r.id===params[0]&&r.owner_hash===params[1])||null;
+  },
+  async all(){return {results:rows.filter(r=>r.owner_hash===params[0])}},
+  async run(){
+   if(sql.startsWith('INSERT')){
+    const [id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,created_at,updated_at,handoff_expires_at]=params;
+    rows.push({id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,
+     status:'draft',claimed_by:'',created_at,updated_at,handoff_expires_at,result_summary:'',result_url:''});
+   }else if(sql.startsWith('UPDATE')){
+    const [context_json,storyboard,status,updated_at,id,owner_hash,oldContext]=params;
+    const row=rows.find(r=>r.id===id&&r.owner_hash===owner_hash&&r.context_json===oldContext);
+    if(!row)return {meta:{changes:0}};
+    Object.assign(row,{context_json,storyboard,status,updated_at});
+   }
+   return {meta:{changes:1}};
+  }
+ }}}}};
+ const env={WORK_DB:db,WRITER_OWNER_HASH:ownerHash},request='Repair my existing image button';
+ const context={kind:'robot-directions',submission_id:'fixed-request-1'};
+ const created=await ownerTickets(env,'/work/tickets/create',{title:'Fix image',request,context});
+ assert.equal(created.status,200);
+ assert.equal(rows[0].owner_hash,ownerHash,'writer SELECT owner_hash partition must match');
+ assert.equal(rows[0].status,'draft','new tickets cannot run before jobs are ready');
+ assert.equal(JSON.stringify(rows).includes('sq_'),false);
+ const id=created.result.ticket.id;
+ const jobs=[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:request,status:'queued'}];
+ const updated=await ownerTickets(env,'/work/tickets/update',{id,status:'ready',storyboard:'checked',context:{...context,color_jobs:jobs}});
+ assert.equal(updated.status,200);
+ assert.equal(rows[0].status,'ready');
+ assert.equal(updated.result.ticket.context.color_jobs[0].repository,'www-infinity4/QuantaPhi');
+ const deduped=await ownerTickets(env,'/work/tickets/create',{title:'duplicate',request,context});
+ assert.equal(deduped.result.deduplicated,true);
+ assert.equal(rows.length,1);
+ const visible=await ownerTickets(env,'/work/tickets/list',{});
+ assert.equal(visible.result.tickets.length,1);
+ assert.equal((await ownerTickets({...env,WRITER_OWNER_HASH:otherHash},'/work/tickets/list',{})).result.tickets.length,0);
+ const forbidden=await ownerTickets(env,'/work/tickets/update',{id,status:'ready',context:{...context,color_jobs:[{id:'TASK-1',repository:'other/private',instructions:'wrong'}]}});
+ assert.equal(forbidden.status,400);
+});
+
+test('the owner ticket router is authentication gated and the browser never generates a separate owner key',async()=>{
+ const worker=await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
+ const client=await fs.readFile(new URL('../robot-directions.js',import.meta.url),'utf8');
+ assert.match(worker,/if\(!await ownerAuthorized\(env,token\)\)return output\(request,\{ok:false,error:'owner_authorization_required'\},404\)/);
+ assert.match(worker,/await ownerTickets\(env,path,body\)/);
+ assert.match(client,/API='https:\/\/infinity-brain-clock\.marvaseater\.workers\.dev'/);
+ assert.match(client,/delete payload\.owner_token/);
+ assert.doesNotMatch(client,/ownerToken=crypto\.randomUUID\(\)/,'Brain must not create new anonymous identities');
+ assert.match(client,/const d=await post\('\/v1\/tickets\/list',\{\}\)/);
 });
