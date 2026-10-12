@@ -19,10 +19,18 @@ header.pwp-header{max-width:1100px;margin:auto;padding:23px 15px 12px;display:fl
 .pwp-assets>h3,.pwp-assets>p{grid-column:1/-1;margin:2px 0}
 .pwp-asset{display:flex;gap:12px;border:1px solid #e1d3e9;background:white;border-radius:14px;padding:12px;min-width:0;overflow-wrap:anywhere}
 .pwp-asset img{width:90px;height:115px;object-fit:contain;background:#18121b;border-radius:8px;flex-shrink:0}
+.pwp-upload{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:146px;height:146px;background:#fcf5ff;border:2px dashed #ab81cf;border-radius:19px;color:#4a2670;cursor:pointer;overflow:hidden;margin:12px 0}
+.pwp-upload:focus-within{outline:3px solid #7339b9;outline-offset:3px}
+.pwp-upload input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;z-index:2}
+.pwp-upload-plus{font-weight:800;font-size:38px;line-height:1}
+.pwp-upload-text{font-size:12px;font-weight:850}
+.pwp-upload-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.65;pointer-events:none}
+.pwp-upload-thumb[hidden]{display:none!important}
 .pwp-asset strong{color:#422060;font-size:14px}.pwp-asset a{font-size:12px;font-weight:850}
 .pwp-footer{font-size:12px;color:#6e5880;text-align:center;padding:18px}
 </style>
-<script defer src="/phi-project-package.js?v=20261012-action1"></script>
+<script defer src="/phi-project-files.js?v=20261012-upload1"></script>
+<script defer src="/phi-project-package.js?v=20261012-upload1"></script>
 <script defer src="/phi-project-page.js?v=20261012-action1"></script>
 <script defer src="/phi-project-cards.js?v=20261012-action1"></script>
 </head><body>
@@ -30,5 +38,5 @@ header.pwp-header{max-width:1100px;margin:auto;padding:23px 15px 12px;display:fl
 <main class="pwp-layout">
 <section id="phiProjectPage" aria-label="Token projects and collected assets"></section>
 <section id="phiProjectActions" aria-label="Code Phi and Create Phi on-page editors"></section>
-</main><footer class="pwp-footer">Local device drafts and source links are not cloud backups, minted Infinity tokens, or published websites.</footer>
+</main><footer class="pwp-footer">Local device drafts, uploaded images and source links are not cloud backups, minted Infinity tokens, or published websites.</footer>
 </body></html>
