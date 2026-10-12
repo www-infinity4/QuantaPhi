@@ -42,3 +42,23 @@ test('every bot gets a toolbox and site-care crews release structured jobs witho
  assert.deepEqual(fallback.map(j=>j.agent),['regression-detective','layout-router']);
  assert.equal(directions.normalize({jobs:[{agent:'greenbeans',title:'x',acceptance:['y'],tools:['Custom tool']}]})[0].tools[0],'Custom tool');
 });
+
+test('Unified Wallet login uses a server-matched owner session, not a visible balance or a copied owner key',async()=>{
+ const calls=[],walletToken='sq_'+'a'.repeat(40),brainToken='rb_'+'b'.repeat(64);
+ const window={QuantaCloudConnection:{ready:Promise.resolve(),resolveDeviceToken:async()=>walletToken}};
+ const context={window,document:{title:'QuantaPhi',getElementById:()=>null},AbortSignal,
+  fetch:async(url,options)=>{
+   calls.push({url,method:options.method,auth:options.headers.Authorization});
+   if(url.endsWith('/owner/session'))return {ok:true,status:200,json:async()=>({ok:true,token:brainToken,expiresAt:Date.now()+600000})};
+   return {ok:true,status:200};
+  }};
+ require('node:vm').runInNewContext(gate,context);
+ const result=await window.QuantaBrainOwner.walletIdentity();
+ assert.equal(result.state,'verified');
+ assert.equal(result.headers.Authorization,'Bearer '+brainToken);
+ assert.equal(calls.filter(c=>c.url.endsWith('/owner/session')).length,1);
+ assert.equal(calls.find(c=>c.url.endsWith('/owner/session')).auth,'Bearer '+walletToken);
+ assert.doesNotMatch(gate,/localStorage\.setItem\([^\n]*walletToken/);
+ assert.match(gate,/result\.state==='no-wallet'\|\|result\.state==='not-linked'/,'logout must lock the Brain');
+ assert.match(gate,/verifiedHeaders\.Authorization=result\.headers\.Authorization/,'refresh keeps existing Brain components authenticated');
+});

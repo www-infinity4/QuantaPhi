@@ -1,17 +1,20 @@
 /* Robot Brain owner gate.
- * The Robot Brain stays hidden from the public. The owner key is checked by the
- * brain clock (/health returns 404 for any other key). A missing key on this
- * device or a brief network failure must never remove the Brain for good, so
- * this gate lets the owner unlock it again and retries transient failures. */
+ * Prefer the verified Unified Wallet identity. A wallet balance, displayed
+ * username or browser flag is never owner proof: the Brain clock verifies the
+ * device token using its private wallet binding, then matches the already
+ * bound owner wallet before issuing a short-lived session.
+ * Existing owner keys remain a recovery option, not a login requirement.
+ */
 (function(){
 'use strict';
 const KEY='infinity-work-ticket-owner-v1';
 const HEALTH='https://infinity-brain-clock.marvaseater.workers.dev/health';
+const SESSION='https://infinity-brain-clock.marvaseater.workers.dev/owner/session';
 const RETRY_MS=[5000,15000,30000,60000,120000];
 
 function openInbox(){
  return new Promise((resolve,reject)=>{
-  try{const r=indexedDB.open('quantaphi-robot-inbox',1);r.onupgradeneeded=()=>r.result.createObjectStore('settings');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);r.onblocked=()=>reject(Error('Inbox storage blocked'));}
+  try{const r=indexedDB.open('quantaphi-robot-inbox',1);r.onupgradeneeded=()=>{if(!r.result.objectStoreNames.contains('settings'))r.result.createObjectStore('settings')};r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);r.onblocked=()=>reject(Error('Inbox storage blocked'))}
   catch(e){reject(e)}
  });
 }
@@ -35,7 +38,6 @@ async function readToken(){
 async function saveToken(token){
  let saved=false;
  try{await inbox(token);saved=true}catch{}
- // A second copy lets the Brain recover if the browser evicts IndexedDB.
  try{localStorage.setItem(KEY,token);saved=true}catch{}
  if(!saved)try{sessionStorage.setItem(KEY,token)}catch{}
 }
@@ -54,68 +56,122 @@ async function verify(token){
   return {state:r.status===404||r.status===401||r.status===403?'rejected':'unreachable'};
  }catch{return {state:'unreachable'}}
 }
-
+async function walletIdentity(){
+ try{
+  await window.QuantaCloudConnection?.ready;
+  let token=await window.QuantaCloudConnection?.resolveDeviceToken?.();
+  if(!token){try{token=new window.InfinityCloudWallet({appName:document.title}).token()}catch{}}
+  if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token||''))return {state:'no-wallet'};
+  // A device credential is presented only to this first-party Brain endpoint.
+  // The server confirms the session against the private Unified Wallet service.
+  const response=await fetch(SESSION,{method:'POST',headers:{Authorization:'Bearer '+token},cache:'no-store',signal:AbortSignal.timeout(15000)});
+  if(response.status===404||response.status===401||response.status===403)return {state:'not-linked'};
+  if(!response.ok)return {state:'unreachable'};
+  const body=await response.json();
+  if(!body?.ok||!/^rb_[a-f0-9]{64}$/.test(body.token||'')||Number(body.expiresAt)<=Date.now())return {state:'unreachable'};
+  return {state:'verified',headers:{Authorization:'Bearer '+body.token},expiresAt:Number(body.expiresAt)};
+ }catch{return {state:'unreachable'}}
+}
 let resolveReady;
 const ready=new Promise(resolve=>{resolveReady=resolve});
-window.QuantaBrainOwner={ready,verify};
+window.QuantaBrainOwner={ready,verify,walletIdentity};
 
 if(typeof document==='undefined')return;
 const host=document.getElementById('robotBrainOwner');
 const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n};
+let busy=false,retryTimer=null,renewTimer=null,verifiedHeaders=null,verifiedSource='';
+const later=(fn,ms)=>{clearTimeout(retryTimer);retryTimer=setTimeout(fn,ms)};
 
-function unlocked(headers,token){
- host.dataset.state='verified';
- const bar=node('div','','rbo-bar');
- const label=node('span','🤖 Robot Brain unlocked for the owner on this device.');
- const copy=node('button','Copy owner key');copy.type='button';
- const lock=node('button','Lock on this device');lock.type='button';
- const status=node('small','');status.setAttribute('role','status');
- copy.addEventListener('click',async()=>{
-  try{await navigator.clipboard.writeText(token);status.textContent='Owner key copied. Keep it private; paste it on another device or domain to unlock the Brain there.'}
-  catch{status.textContent='Clipboard is blocked in this browser.'}
- });
- lock.addEventListener('click',async()=>{await forgetToken();location.reload()});
- bar.append(label,copy,lock,status);host.replaceChildren(bar);
- resolveReady(headers);
+async function renewWallet(){
+ if(verifiedSource!=='wallet')return;
+ const result=await walletIdentity();
+ if(result.state==='verified'){
+  // Mutate the same header object captured by the two Brain components.
+  verifiedHeaders.Authorization=result.headers.Authorization;
+  const delay=Math.max(10000,Math.min(15*60*1000,result.expiresAt-Date.now()-60000));
+  clearTimeout(renewTimer);renewTimer=setTimeout(renewWallet,delay);
+ }else if(result.state==='no-wallet'||result.state==='not-linked'){
+  // When the active wallet changes or signs out, do not leave owner UI active.
+  location.reload();
+ }else{
+  clearTimeout(renewTimer);renewTimer=setTimeout(renewWallet,30000);
+ }
 }
-
+function unlocked(headers,token,source,expiresAt){
+ clearTimeout(retryTimer);
+ host.dataset.state='verified';verifiedHeaders=headers;verifiedSource=source;
+ const bar=node('div','','rbo-bar');
+ const label=node('span',source==='wallet'?'🤖 Robot Brain unlocked with your verified Unified Wallet.':'🤖 Robot Brain unlocked with the existing owner key.');
+ bar.append(label);
+ if(source==='key'){
+  const copy=node('button','Copy owner key');copy.type='button';
+  const lock=node('button','Lock on this device');lock.type='button';
+  const status=node('small','');status.setAttribute('role','status');
+  copy.addEventListener('click',async()=>{
+   try{await navigator.clipboard.writeText(token);status.textContent='Owner key copied. Keep it private.'}
+   catch{status.textContent='Clipboard is blocked in this browser.'}
+  });
+  lock.addEventListener('click',async()=>{await forgetToken();location.reload()});
+  bar.append(copy,lock,status);
+ }
+ host.replaceChildren(bar);
+ resolveReady(headers);
+ if(source==='wallet'){
+  const delay=Math.max(10000,Math.min(15*60*1000,expiresAt-Date.now()-60000));
+  clearTimeout(renewTimer);renewTimer=setTimeout(renewWallet,delay);
+ }
+}
 function form(message){
+ if(host.dataset.state==='verified')return;
  host.dataset.state='locked';
  const details=node('details','','rbo-gate');
- const summary=node('summary','🔒 Robot Brain · owner sign-in');
- const intro=node('p','Owner only. Paste your Robot Brain owner key to show the Brain, its color-bot crews and the job controls on this device. The key is checked by the brain clock and stays in this browser.');
- const label=node('label','Owner key');label.htmlFor='robotBrainOwnerKey';
+ const summary=node('summary','🔒 Robot Brain · owner access');
+ const intro=node('p','Robot Brain checks your Unified Wallet automatically. The older owner key is available only as a recovery method.');
+ const label=node('label','Existing owner key (optional)');label.htmlFor='robotBrainOwnerKey';
  const input=node('input');input.id='robotBrainOwnerKey';input.type='password';input.autocomplete='current-password';input.spellcheck=false;input.maxLength=512;
- const button=node('button','Unlock Robot Brain');button.type='button';
+ const button=node('button','Unlock with existing owner key');button.type='button';
  const status=node('p',message||'');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  if(message)details.open=true;
  async function submit(){
   const token=input.value.trim();
-  if(!validToken(token)){status.textContent='That does not look like an owner key.';return}
-  button.disabled=true;status.textContent='Checking the key with the brain clock…';
+  if(!validToken(token)){status.textContent='That does not look like an existing owner key.';return}
+  button.disabled=true;status.textContent='Checking the existing key with Brain…';
   const result=await verify(token);
   button.disabled=false;
-  if(result.state==='verified'){await saveToken(token);input.value='';unlocked(result.headers,token);return}
-  status.textContent=result.state==='rejected'?'The brain clock did not accept this key.':'The brain clock is not reachable right now. Try again in a moment.';
+  if(result.state==='verified'){await saveToken(token);input.value='';unlocked(result.headers,token,'key');return}
+  status.textContent=result.state==='rejected'?'Brain did not accept this key.':'Brain cannot be reached right now. Please retry.';
  }
  button.addEventListener('click',submit);
  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submit()}});
  details.append(summary,intro,label,input,button,status);host.replaceChildren(details);
 }
-
 async function start(attempt=0){
- const token=await readToken();
- if(!token){form();return}
- const result=await verify(token);
- if(result.state==='verified'){unlocked(result.headers,token);return}
- if(result.state==='rejected'){form('The owner key saved on this device was not accepted. Paste your current owner key.');return}
- // Unreachable: keep the saved key and retry instead of hiding the Brain forever.
- const wait=RETRY_MS[Math.min(attempt,RETRY_MS.length-1)];
- const message='Your owner key is saved, but the brain clock is not reachable yet. Retrying automatically in '+Math.round(wait/1000)+' seconds…';
- const typing=host.querySelector('#robotBrainOwnerKey');
- const existing=host.querySelector('.rbo-gate [role=status]');
- if(existing){existing.textContent=message;if(!typing||!typing.value)host.querySelector('.rbo-gate').open=true}else form(message);
- setTimeout(()=>{if(host.dataset.state!=='verified')start(attempt+1)},wait);
+ if(!host||host.dataset.state==='verified'||busy)return;
+ busy=true;
+ try{
+  const wallet=await walletIdentity();
+  if(wallet.state==='verified'){unlocked(wallet.headers,null,'wallet',wallet.expiresAt);return}
+  const token=await readToken();
+  if(token){
+   const existing=await verify(token);
+   if(existing.state==='verified'){unlocked(existing.headers,token,'key');return}
+   if(existing.state==='unreachable'&&wallet.state!=='not-linked'){const wait=RETRY_MS[Math.min(attempt,RETRY_MS.length-1)];form('Brain is temporarily unreachable. Retrying automatically.');later(()=>start(attempt+1),wait);return}
+  }
+  if(wallet.state==='not-linked')form('Your Unified Wallet was recognized, but has not yet been securely linked as Robot Brain\'s owner account. Nothing has been unlocked for another wallet.');
+  else if(wallet.state==='no-wallet')form('Connect your existing Unified Wallet on QuantaPhi; Robot Brain will check it automatically.');
+  else{
+   const wait=RETRY_MS[Math.min(attempt,RETRY_MS.length-1)];
+   form('Wallet verification is temporarily unavailable. Retrying automatically.');
+   later(()=>start(attempt+1),wait);
+  }
+ }finally{busy=false}
 }
-if(host)start();else readToken().then(verify).then(r=>{if(r.state==='verified')resolveReady(r.headers)});
+if(host){
+ start();
+ const retry=()=>{if(host.dataset.state!=='verified')start()};
+ document.addEventListener('starquest:ledger-connected',retry);
+ document.addEventListener('starquest:auth-changed',()=>{if(verifiedSource==='wallet')renewWallet();else retry()});
+ window.addEventListener('infinity:wallet-state',retry);
+ document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&verifiedSource==='wallet')renewWallet();else retry()});
+}else readToken().then(verify).then(r=>{if(r.state==='verified')resolveReady(r.headers)});
 })();
