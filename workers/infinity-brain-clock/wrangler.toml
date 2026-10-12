@@ -25,6 +25,10 @@ new_sqlite_classes = ["BrainClock"]
 [triggers]
 crons = ["* * * * *"]
 
+[[vectorize]]
+binding = "BRAIN_MEMORY"
+index_name = "infinity-brain-memory"
+
 [ai]
 binding = "WRITER_AI"
 
