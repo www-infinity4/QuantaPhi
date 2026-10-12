@@ -45,16 +45,28 @@ test('PetriPhi retains real poster creation and a distinct horror screening',()=
  assert.notEqual(film.embedUrl,config.cards[0].movie.embedUrl);
 });
 
-test('image feeds are distinct, rights labelled, and no movie autoplays',()=>{
+test('only pre-1940 curated images appear, with source and rights labels',()=>{
  assert.notEqual(config.cards[0].feed.search,config.cards[1].feed.search);
- assert.match(config.cards[0].feed.search,/costume/);
- assert.match(config.cards[1].feed.search,/postcard/);
- assert.match(js,/LicenseShortName/);
- assert.match(js,/Public domain/);
- assert.match(js,/commons\.wikimedia\.org/);
- assert.doesNotMatch(js,/autoplay=1/);
- assert.match(js,/addEventListener\('click'/);
- assert.match(js,/halloweenPreview/);
+ for(const card of config.cards){
+  assert.ok(card.images.length>=3);
+  for(const image of card.images){
+   assert.ok(image.year<1940&&image.year>=1800);
+   assert.ok(image.source.includes('commons.wikimedia.org/wiki/File:'));
+   assert.ok(image.license.includes('public domain'));
+  }
+ }
+ assert.ok(!js.includes('commons.wikimedia.org/w/api.php'));
+ assert.ok(!js.includes('autoplay=1'));
+ assert.ok(js.includes('halloweenPreview'));
+});
+test('archive playback is a single player and only accepts approved IDs',()=>{
+ assert.ok(js.includes('QuantaPhiHalloweenPlayer'));
+ assert.ok(js.includes('setArchiveMovie'));
+ assert.ok(js.includes('https://archive.org/embed/'));
+ assert.ok(js.includes('approved.has(identifier)'));
+ assert.ok(js.includes('host.replaceChildren()'));
+ assert.deepEqual(config.cards[0].approvedArchiveIds,['night_of_the_living_dead_dvd']);
+ assert.deepEqual(config.cards[1].approvedArchiveIds,['Nosferatu1922_58']);
 });
 
 test('StarQuest actions are requested only on actual user events',()=>{
