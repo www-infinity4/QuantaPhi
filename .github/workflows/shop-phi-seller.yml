@@ -1,0 +1,39 @@
+name: Shop Phi seller photo flow
+on:
+  pull_request:
+    paths:
+      - 'shop-ad-phi.*'
+      - 'shop-phi-seller.js'
+      - 'shop-phi-policy.js'
+      - 'index.html'
+      - 'tests/shop-ad-phi.test.cjs'
+      - 'tests/shop-phi-seller.test.cjs'
+      - '.github/workflows/shop-phi-seller.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'shop-ad-phi.*'
+      - 'shop-phi-seller.js'
+      - 'shop-phi-policy.js'
+      - 'index.html'
+      - 'tests/shop-ad-phi.test.cjs'
+      - 'tests/shop-phi-seller.test.cjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  seller-capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: JavaScript syntax
+        run: |
+          node --check shop-ad-phi.js
+          node --check shop-phi-seller.js
+          node --check shop-phi-policy.js
+      - name: Shop Phi regression tests
+        run: |
+          node --test tests/shop-ad-phi.test.cjs
+          node --test tests/shop-phi-seller.test.cjs
