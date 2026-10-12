@@ -27,12 +27,13 @@ const path=require('node:path');
     issues:[{problem:'Gibberish text',fix:'Remove painted text'},{problem:'Unclear disc geometry',fix:'Repair the connection to the plate'}]})
   };
  });
+ await page.addScriptTag({path:path.resolve(__dirname,'../phi-image-language.js')});
  await page.addScriptTag({path:path.resolve(__dirname,'../phi-image-builder.js')});
  assert.equal(await page.locator('#pi-exact-text').isVisible(),false);
  assert.equal(await page.locator('.pi-exact-optional').isVisible(),true);
  assert.equal(await page.locator('.pi-exact-optional').getAttribute('open'),null);
  assert.equal(await page.locator('.pi-section h3').filter({hasText:'Lettering'}).count(),0,'There must not be a prominent lettering step');
- assert.equal(await page.locator('#pi-text-mode').inputValue(),'none');
+ assert.equal(await page.locator('#pi-text-mode').inputValue(),'auto');
  assert.equal(await page.locator('.pi-type-panel').count(),0,'No dragging studio should appear');
  const description='Preserve my mechanism artwork';
  await page.locator('#pi-prompt').fill(description);
@@ -92,6 +93,20 @@ const path=require('node:path');
  assert.match(mobile.background,/247, 252, 255/,'The user-facing composer must use the blue palette');
  const primary=await page.locator('[data-pi-action="build"]').evaluate(el=>getComputedStyle(el).backgroundImage);
  assert.match(primary,/23, 105, 182/,'Main button should be blue rather than purple');
+ // Normal customers never open a lettering mode. Their poster still prints
+ // the two requested lines directly from the one description field.
+ await page.locator('#pi-text-mode').selectOption('auto');
+ await page.locator('.pi-exact-optional summary').click();
+ await page.locator('[data-pi-mode="Poster"]').click();
+ await page.locator('#pi-prompt').fill('Design a mosaic poster for Oracle AI Studio - Mosaic with the phrase "The Intelligence Architecture Solution".');
+ await page.locator('[data-pi-action="build"]').click();
+ await page.waitForFunction(()=>document.querySelector('#phiImageBuilder').dataset.stage==='finished' && !window.PhiImageBuilder.get().busy);
+ const auto=await page.evaluate(()=>window.calls.filter(c=>c.type==='render').at(-1));
+ assert.equal(auto.exactText,'Oracle AI Studio - Mosaic\nThe Intelligence Architecture Solution');
+ assert.equal(await page.locator('.pi-exact-optional').getAttribute('open'),null);
+ const print=await page.evaluate(()=>window.calls.filter(c=>c.type==='compose').at(-1));
+ assert.equal(print.text,auto.exactText,'automatically inferred wording is printed without additional user input');
+ assert.match(await page.locator('.pi-finished .pi-notice').innerText(),/Exact requested words printed/);
  console.log('PASS: blue mobile card, grader, direct repair, preserved upload and prompt, failure and lower-score recovery');
  }finally{await browser.close()}
 })().catch(error=>{console.error(error);process.exitCode=1});
