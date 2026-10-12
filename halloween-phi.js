@@ -121,7 +121,7 @@ function actions(card,c){
    const entry=old||{...info,createdAt:new Date().toISOString(),collectedAt:new Date().toISOString(),generator:'halloween-phi'};
    if(!old){
      if(!save(COLLECTED,[...items,entry].slice(-1000))){status.textContent='Unable to collect; no credit requested.';return;}
-     window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:entry}));
+     window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:{...entry,kind:'card',originCard:c.id}}));
    }
    const captured=project()?.capture({kind:'card',title:c.title,sourceUrl:info.sourceUrl,description:c.description,originCard:c.id});
    paint();status.textContent=credit('collect',key,entry)+(captured?.ok?' · Added to project.':'');
