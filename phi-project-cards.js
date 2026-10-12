@@ -27,6 +27,24 @@ function build(kind){
  const picker=add(controls,el('select','pp-select'));picker.setAttribute('aria-label','Select project token for '+(code?'Code Phi':'Create Phi'));
  const open=add(controls,el('button','pp-btn pp-primary',code?'Open Code Phi':'Open Create Phi'));open.type='button';
  const full=add(controls,el('a','pp-btn pp-link','Full studio ↗'));full.href='/project-workspace/';
+ const uploadTile=add(card,el('label','pp-upload-tile'));
+ const uploadInput=add(uploadTile,el('input'));uploadInput.type='file';uploadInput.accept='image/png,image/jpeg,image/webp,image/gif,image/avif';uploadInput.multiple=true;uploadInput.setAttribute('aria-label','Add images to '+(code?'Code Phi':'Create Phi')+' project');
+ add(uploadTile,el('span','pp-upload-plus','＋'));
+ const uploadLabel=add(uploadTile,el('span','pp-upload-caption','Add images from device'));
+ const uploadPreview=add(uploadTile,el('img','pp-upload-preview'));uploadPreview.alt='Image selected for project';uploadPreview.hidden=true;
+ add(card,el('p','pp-upload-note','Tap + to add images to the active project without entering a filename. Local images are not yet uploaded to Cloudflare.'));
+ let tempPreview='';
+ uploadInput.addEventListener('change',async()=>{
+  const chosen=Array.from(uploadInput.files||[]).slice(0,8);uploadInput.value='';
+  if(!chosen.length)return;
+  if(!pkg.active()){status.textContent='Start or select a token project before adding images.';return}
+  if(tempPreview)URL.revokeObjectURL(tempPreview);
+  tempPreview=URL.createObjectURL(chosen[0]);uploadPreview.src=tempPreview;uploadPreview.hidden=false;uploadLabel.textContent='Add more images';
+  let count=0,errors=[];
+  for(const file of chosen){const result=await pkg.captureFile(file,kind);if(result.ok)count++;else errors.push(result.reason)}
+  status.textContent=count+' local image'+(count===1?'':'s')+' saved to '+getTitle()+'.'+(errors.length?' '+errors.join(' '):'');
+  refresh();
+ });
  const tokenRow=add(card,el('details','pp-token-import'));
  add(tokenRow,el('summary','','Import existing token or project'));
  const walletPick=add(tokenRow,el('select','pp-select'));walletPick.setAttribute('aria-label','Existing confirmed token');
@@ -61,7 +79,7 @@ function build(kind){
   if(!url){status.textContent='Create or import a project first.';return}
   frame.src=url;
   frameWrap.hidden=false;open.textContent=code?'Reload Code Phi':'Reload Create Phi';
-  status.textContent='Opened the actual Oracle editor for '+getTitle()+'. The collected assets were passed as source context.';
+  status.textContent='Opened Oracle editor for '+getTitle()+'. Source links were passed to the editor; device-uploaded images remain in Project Workspace until imported into the editor.';
  });
  apply.addEventListener('click',async()=>{
   if(!walletPick.value){status.textContent='Select an existing token first.';return}
