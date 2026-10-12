@@ -324,6 +324,7 @@ test('blue Image Grader repairs current pixels directly without changing uploads
  assert.match(js,/async function fixImage\(\)/);
  const fix=js.slice(js.indexOf('async function fixImage()'),js.indexOf("layout();state('composer');"));
  assert.match(fix,/renderer\.asBlob\(original\.rawResult\)/);
+ assert.match(fix,/const fixes=custom\?\[\]:/,'user correction must override grader guesses');
  assert.match(fix,/renderer\.render\(\{description,mode,source:prior,design:null,prompt:repair,exactText\}\)/);
  assert.match(fix,/renderer\.review\(\{src:nextResult,description,mode,exactText\}\)/);
  assert.match(fix,/after<before/);
