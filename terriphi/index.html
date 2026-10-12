@@ -5,7 +5,8 @@
 <style>
 :root{color-scheme:dark;--purple:#21102f;--gold:#f5cb78;--edge:#a469db;--cream:#fff3dc}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#462356,#130b21 60%);color:var(--cream);font:16px/1.5 system-ui,sans-serif}a{color:var(--gold)}button,select{font:700 15px system-ui,sans-serif}header,main,footer{width:min(1100px,100% - 28px);margin:auto}header{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:20px 0;flex-wrap:wrap}header strong{font-size:20px;color:var(--gold)}header nav{display:flex;gap:12px;flex-wrap:wrap}h1,h2,h3{line-height:1.15}h1{font-size:clamp(38px,7vw,80px);margin:12px 0}h2{font-size:25px;margin-top:0}.intro{max-width:720px;margin:10px 0 28px}.eyebrow{color:var(--gold);letter-spacing:.14em;font-size:12px;font-weight:900}.hero{padding:40px 0 30px;position:relative}.hero:before{content:'🌕';position:absolute;right:5%;top:10px;font-size:clamp(70px,15vw,165px);opacity:.45;pointer-events:none}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:16px}.panel{border:1px solid var(--edge);background:linear-gradient(150deg,#39214e,#21112f);border-radius:21px;box-shadow:0 6px 25px #06020a88;min-width:0;padding:22px}.panel p{color:#e8ddec}.panel .tag{color:var(--gold);font-weight:800;font-size:12px;letter-spacing:.1em}.actions{display:flex;gap:9px;flex-wrap:wrap}button,.button{border:1px solid var(--gold);border-radius:12px;background:#63288c;color:white;cursor:pointer;display:inline-flex;justify-content:center;align-items:center;min-height:45px;padding:10px 13px;text-decoration:none;text-align:center;overflow-wrap:anywhere;white-space:normal}button:hover,.button:hover{background:#8642aa}button:focus-visible,a:focus-visible{outline:3px solid #f5cb78;outline-offset:3px}.status{color:var(--gold);min-height:30px;font-weight:600}.door{font-size:17px;flex:1;min-width:90px}.film{padding:14px;border:1px solid #9c71ab;border-radius:14px}.source{font-size:13px;color:#d7c5e3}footer{padding:35px 0;color:#b9a9c8;font-size:13px}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-</style></head><body>
+</style><link rel="stylesheet" href="/phi-halloween-oracle.css?v=20261012-action1"></head><body class="phi-halloween-oracle">
+<div class="phi-oracle-project-actions"><strong>ORACLE OCTAVES · TerriPhi</strong><span id="phi-project-status">Collect into a project token.</span><button id="phi-project-new" type="button">＋ New token</button><a href="/project-workspace/">Project page ↗</a></div>
 <header><strong>🎃 TerriPhi</strong><nav aria-label="Site"><a href="#arcade">Arcade</a><a href="#sounds">Sounds</a><a href="#screening">Movies</a><a href="#vintage">Vintage</a><a href="https://github.com/www-infinity4/Petra-Phi">PetriPhi Studio ↗</a></nav></header>
 <main><section class="hero"><div class="eyebrow">A SEASONAL PHI EXPERIENCE</div><h1>Enter if you <em>dare.</em></h1><p class="intro">A haunted little corner of the Phi universe: games, sounds, costumes, old Halloween treasures and a movie room. Play for fun; no wallet required.</p><a class="button" href="#arcade">👻 Enter the arcade</a></section>
 <div class="grid">
@@ -32,4 +33,19 @@
  var roles=['moonlit astronomer','haunted librarian','clockwork vampire','ghost pirate','pumpkin astronaut','forest witch'],details=['with glowing goggles','carrying an antique lantern','in a shimmering cape','holding a mystery map','with a miniature haunted house'];
  document.getElementById('costume').addEventListener('click',function(){document.getElementById('costume-result').textContent='Try a '+roles[Math.floor(Math.random()*roles.length)]+' '+details[Math.floor(Math.random()*details.length)]+'.';});
 })();
-</script><script>(function(){var b=document.getElementById("ernest-trailer-btn");if(!b)return;b.addEventListener("click",function(){var f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/daxX6NY1tVM";f.title="Ernest Scared Stupid theatrical trailer";f.loading="lazy";f.referrerPolicy="strict-origin-when-cross-origin";f.allowFullscreen=true;f.style.cssText="border:0;width:100%;aspect-ratio:16/9;border-radius:10px;margin-top:12px";document.getElementById("ernest-trailer-frame").appendChild(f);b.disabled=true;b.textContent="Trailer loaded";});})();</script></body></html>
+</script><script>(function(){var b=document.getElementById("ernest-trailer-btn");if(!b)return;b.addEventListener("click",function(){var f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/daxX6NY1tVM";f.title="Ernest Scared Stupid theatrical trailer";f.loading="lazy";f.referrerPolicy="strict-origin-when-cross-origin";f.allowFullscreen=true;f.style.cssText="border:0;width:100%;aspect-ratio:16/9;border-radius:10px;margin-top:12px";document.getElementById("ernest-trailer-frame").appendChild(f);b.disabled=true;b.textContent="Trailer loaded";});})();</script><script src="/phi-project-package.js?v=20261012-action1"></script>
+<script>(function(){
+var api=window.PhiProjectPackage,note=document.getElementById('phi-project-status');
+if(!api)return;
+function paint(){var p=api.active();note.textContent=p?'Working on '+p.title+' · '+p.assets.length+' sources':'No project selected';}
+document.getElementById('phi-project-new').addEventListener('click',function(){
+ var p=api.newToken('TerriPhi collection');note.textContent=p?'Local token draft created.':'Storage not available.';paint();
+});
+window.addEventListener('phi-projects:changed',paint);paint();
+document.querySelector('#vintage')?.insertAdjacentHTML('beforeend','<button type="button" id="phi-collect-vintage">＋ Collect vintage postcard</button>');
+document.getElementById('phi-collect-vintage')?.addEventListener('click',function(){
+ var img=document.querySelector('#vintage img'),p=api.capture({kind:'image',title:img.alt,sourceUrl:'https://publicdomainreview.org/collection/halloween-postcards/',
+ imageUrl:img.src,license:'Review postcard rights at Public Domain Review',originCard:'terriphi'});
+ note.textContent=p.ok?'Historic image reference added to '+p.project.title+'.':p.reason;
+});
+})();</script></body></html>
