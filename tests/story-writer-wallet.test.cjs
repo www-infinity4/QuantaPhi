@@ -68,3 +68,23 @@ test('Media Star triggers full StarQuest refresh and masked sessions do not writ
  assert.match(index,/phi-story-writer\.css\?v=\d{8}-[\w-]+/);
  assert.match(index,/wallet-runtime\.js\?v=20261010-masked-media-sync4/);
 });
+
+test('Story Writer saves complete drafts in browser backup and supports recovery/export',()=>{
+ const sw=file('phi-story-writer.js');
+ assert.match(sw,/indexedDB\.open\('phi-story-writer-images-v1',2\)/);
+ assert.match(sw,/createObjectStore\('drafts'/);
+ assert.match(sw,/async function recoverDrafts\(/);
+ assert.match(sw,/async function persistDraft\(story\)/);
+ assert.match(sw,/const saved=await saveStory\(active\)/);
+ assert.match(sw,/function exportStories\(/);
+ assert.match(sw,/No saved stories were found in this browser/);
+});
+test('Media Star preserves import feedback and shows X authorization gate and empty-state assistance',()=>{
+ const radio=file('following-spaces-radio.js'),html=file('index.html');
+ assert.match(radio,/async function refresh\(preserveNotice=false\)/);
+ assert.match(radio,/Promise\.allSettled\(requests\)/);
+ assert.match(radio,/await refresh\(true\)/);
+ assert.match(radio,/X sync needs authorization/);
+ assert.match(radio,/No indexed Spaces available for this wallet yet/);
+ assert.match(html,/following-spaces-radio\.js\?v=20261011-following-status3/);
+});
