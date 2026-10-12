@@ -14,6 +14,21 @@ const read=k=>{try{const x=JSON.parse(localStorage.getItem(k)||'[]');return Arra
 const save=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}};
 const link=(parent,label,url)=>{const u=valid(url);if(!u)return null;const a=append(parent,e('a',label,'hphi-btn'));a.href=u;a.rel='noopener noreferrer';a.target='_blank';return a;};
 const deck=append(mount,e('div',undefined,'hphi-deck'));
+const project=()=>window.PhiProjectPackage;
+function projectControls(card,c){
+ const bar=append(card,e('div',undefined,'hphi-project-strip'));
+ const plus=append(bar,e('button','＋ New token','hphi-project-new'));plus.type='button';
+ const note=append(bar,e('span','','hphi-project-note'));note.setAttribute('role','status');
+ const link=append(bar,e('a','Project page ↗','hphi-project-link'));link.href='/project-workspace/';
+ const refresh=()=>{const active=project()?.active();note.textContent=active?'Collecting to '+active.title+' ('+active.assets.length+' sources)':'No project token selected'};
+ plus.addEventListener('click',()=>{
+  const started=project()?.newToken(c.title+' collection');
+  note.textContent=started?'New local token draft created · '+started.title:'Project storage unavailable.';
+  refresh();
+ });
+ window.addEventListener('phi-projects:changed',refresh);
+ refresh();
+}
 const filmSlots=new Map();
 const validArchiveId=id=>typeof id==='string'&&/^[A-Za-z0-9_-]{1,100}$/.test(id);
 function mountFilm(host,url,title){
@@ -35,6 +50,12 @@ function movie(parent,c){
   b.addEventListener('click',()=>mountFilm(host,src,m.title||'Film player'));
  }
  link(controls,m.watchLabel||'View original movie source ↗',m.watchUrl);
+ const collect=append(controls,e('button','＋ Collect movie','hphi-collect-asset'));collect.type='button';
+ collect.addEventListener('click',()=>{
+  const result=project()?.capture({kind:'video',title:m.title,sourceUrl:m.watchUrl,description:m.note,originCard:c.id});
+  collect.textContent=result?.ok?(result.duplicate?'Already in project ✓':'Added to project ✓'):'＋ Collect movie';
+  if(!result?.ok)append(section,e('p',result?.reason||'Start a project first.','hphi-status'));
+ });
  const approved=new Set(Array.isArray(c.approvedArchiveIds)?c.approvedArchiveIds.filter(validArchiveId):[]);
  filmSlots.set(c.id,{host,approved});
 }
@@ -47,7 +68,7 @@ window.QuantaPhiHalloweenPlayer=Object.freeze({
   return true;
  }
 });
-function image(grid,image){
+function image(grid,image,cardId){
  const src=valid(image.src),source=valid(image.source);if(!src||!source)return false;
  const b=append(grid,e('button',undefined,'hphi-image'));b.type='button';b.title=image.title||'Preview historic artwork';
  const img=append(b,e('img'));img.src=src;img.alt=image.title||'Historic Halloween artwork';img.loading='lazy';img.referrerPolicy='no-referrer';
@@ -57,6 +78,11 @@ function image(grid,image){
    const large=append(d,e('img'));large.src=src;large.alt=img.alt;
    append(d,e('p',image.title||'Historic Halloween image'));
    append(d,e('p','Image license / credit: '+(image.license||'Check original source'),'hphi-credit'));
+   const collect=append(d,e('button','＋ Collect image','hphi-collect-asset'));collect.type='button';
+   collect.addEventListener('click',()=>{
+     const result=project()?.capture({kind:'image',title:image.title,sourceUrl:source,imageUrl:src,license:image.license,year:image.year,originCard:cardId});
+     collect.textContent=result?.ok?(result.duplicate?'Already in project ✓':'Added to project ✓'):(result?.reason||'Start a project first.');
+   });
    link(d,'View original image and credit ↗',source);
    d.addEventListener('close',()=>d.remove(),{once:true});
    if(d.showModal)d.showModal();else d.open=true;
@@ -68,7 +94,7 @@ function gallery(c,grid,status,offset){
  const shown=items.slice(offset,offset+2);
  for(const item of shown){
   // Never show an uncurated live-search result or an item without a pre-1940 date.
-  if(Number.isInteger(item.year)&&item.year>=1800&&item.year<1940)image(grid,item);
+  if(Number.isInteger(item.year)&&item.year>=1800&&item.year<1940)image(grid,item,c.id);
  }
  status.textContent=grid.children.length+' vetted vintage images · tap one for source and rights.';
  return offset+shown.length;
@@ -95,9 +121,10 @@ function actions(card,c){
    const entry=old||{...info,createdAt:new Date().toISOString(),collectedAt:new Date().toISOString(),generator:'halloween-phi'};
    if(!old){
      if(!save(COLLECTED,[...items,entry].slice(-1000))){status.textContent='Unable to collect; no credit requested.';return;}
-     window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:entry}));
+     window.dispatchEvent(new CustomEvent('quantaphi:collected',{detail:{...entry,kind:'card',originCard:c.id}}));
    }
-   paint();status.textContent=credit('collect',key,entry);
+   const captured=project()?.capture({kind:'card',title:c.title,sourceUrl:info.sourceUrl,description:c.description,originCard:c.id});
+   paint();status.textContent=credit('collect',key,entry)+(captured?.ok?' · Added to project.':'');
  });
  share.addEventListener('click',async()=>{
    if(share.disabled)return;share.disabled=true;
@@ -116,6 +143,7 @@ function render(c){
  card.setAttribute('aria-label',c.title+' seasonal card');
  append(card,e('span','INFINITY 2026® · ORACLE OCTAVES · '+c.role,'hphi-brand'));
  append(card,e('h2',c.title));append(card,e('p',c.subtitle,'hphi-subtitle'));append(card,e('p',c.description));
+ projectControls(card,c);
  movie(card,c);append(card,e('h3',c.feed?.title||'Halloween images'));
  const grid=append(card,e('div',undefined,'hphi-gallery'));
  const status=append(card,e('p','Loading image feed…','hphi-status'));status.setAttribute('role','status');

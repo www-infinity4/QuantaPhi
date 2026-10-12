@@ -1,0 +1,43 @@
+name: Phi token-project action cards
+on:
+  pull_request:
+    paths:
+      - 'phi-project-*.js'
+      - 'phi-project-*.css'
+      - 'phi-halloween-oracle.css'
+      - 'project-workspace/**'
+      - 'halloween-phi.js'
+      - 'terriphi/**'
+      - 'petriphi/**'
+      - 'index.html'
+      - 'test/phi-project-actions.test.cjs'
+      - '.github/workflows/phi-project-actions.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'phi-project-*.js'
+      - 'phi-project-*.css'
+      - 'phi-halloween-oracle.css'
+      - 'project-workspace/**'
+      - 'halloween-phi.js'
+      - 'test/phi-project-actions.test.cjs'
+      - '.github/workflows/phi-project-actions.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Oracle card JavaScript
+        run: |
+          node --check phi-project-package.js
+          node --check phi-project-cards.js
+          node --check phi-project-page.js
+          node --check halloween-phi.js
+      - name: Test real project-token and asset handoffs
+        run: node --test test/phi-project-actions.test.cjs
