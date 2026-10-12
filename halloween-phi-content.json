@@ -1,14 +1,14 @@
 {
   "schema": "quantaphi.halloween-phi/v1",
   "updated": "2026-10-12",
-  "note": "Edit the individual cards here to curate movies and rights-cleared artwork. No copyrighted film is downloaded or rehosted.",
+  "note": "Curated pre-1940 source-labelled artwork only. Archive streams use original host players; source and rights information is preserved.",
   "cards": [
     {
       "id": "terriphi",
       "title": "TerriPhi",
       "subtitle": "Halloween Arcade & Cinema",
       "role": "Play · Watch · Listen",
-      "description": "Haunted Door Hunt, spooky sounds, costume adventures and vintage scares. The full arcade runs inside this card.",
+      "description": "Classic monster studio imagery, an archive screening, haunted games and sound effects. No modern costume stock photos.",
       "studioPath": "/terriphi/",
       "movie": {
         "title": "Ernest Scared Stupid (1991)",
@@ -20,11 +20,36 @@
         "note": "The trailer is not the full movie. A free authorized feature-length source has not been verified."
       },
       "feed": {
-        "title": "Vintage frights & Halloween costumes",
-        "search": "Halloween costume",
-        "source": "https://www.loc.gov/free-to-use/autumn-and-halloween/"
+        "title": "Classic monster studio imagery · 1931–1932",
+        "search": "Frankenstein Dracula The Mummy original studio 1931 1932",
+        "source": "https://commons.wikimedia.org/wiki/Category:Boris_Karloff_as_The_Frankenstein_Monster"
       },
-      "images": []
+      "images": [
+        {
+          "title": "The Mummy (1932) · studio still",
+          "year": 1932,
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Mummy_1932_still.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Mummy_1932_still.jpg",
+          "license": "U.S. public domain · Wikimedia Commons studio publicity still."
+        },
+        {
+          "title": "Dracula (1931) · Bela Lugosi studio photograph",
+          "year": 1931,
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bela_Lugosi_as_Dracula%2C_anonymous_photograph_from_1931%2C_Universal_Studios.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Bela_Lugosi_as_Dracula%2C_anonymous_photograph_from_1931%2C_Universal_Studios.jpg",
+          "license": "U.S. public domain · Wikimedia Commons original studio photograph."
+        },
+        {
+          "title": "Frankenstein (1931) · original studio publicity photograph",
+          "year": 1931,
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Frankenstein_and_Maria_(cropped).jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Frankenstein_and_Maria_(cropped).jpg",
+          "license": "Wikimedia Commons: U.S. public domain (original 1931 publicity still, no copyright notice); review other jurisdictions."
+        }
+      ],
+      "approvedArchiveIds": [
+        "night_of_the_living_dead_dvd"
+      ]
     },
     {
       "id": "petriphi",
@@ -43,17 +68,42 @@
         "note": "1922 silent horror; rights and any added soundtrack can vary by copy and jurisdiction."
       },
       "feed": {
-        "title": "Illustrated Halloween postcards & gothic art",
-        "search": "Halloween postcard",
-        "source": "https://publicdomainreview.org/collection/halloween-postcards/"
+        "title": "Antique Halloween postcards · 1900–1915",
+        "search": "Halloween postcard 1900 to 1915",
+        "source": "https://commons.wikimedia.org/wiki/Category:Halloween_postcards_in_the_United_States"
       },
       "images": [
         {
-          "title": "Early twentieth-century Halloween postcard",
-          "src": "https://pdr-assets.b-cdn.net/collections/halloween-postcards/halloween-card-22.jpg?height=1200&width=600",
-          "source": "https://publicdomainreview.org/collection/halloween-postcards/",
-          "license": "Historic postcard · underlying work public domain in the U.S.; review digital-copy credit at source"
+          "title": "Hinged pumpkin Halloween card (1900)",
+          "year": 1900,
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hinged_pumpkin_Halloween_card.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:Hinged_pumpkin_Halloween_card.jpg",
+          "license": "U.S. public domain · Middlebury College antique card scan on Commons."
+        },
+        {
+          "title": "Witch and cauldron postcard (1915)",
+          "year": 1915,
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1910s-Witch-Cauldron-Halloween-Postcard-I-Summon-Up-Remembrance-1152x1536.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:1910s-Witch-Cauldron-Halloween-Postcard-I-Summon-Up-Remembrance-1152x1536.jpg",
+          "license": "U.S. public domain · 1915 postcard on Commons."
+        },
+        {
+          "title": "Halloween vintage postcard (1900–1910)",
+          "year": 1905,
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Halloween_Vintage_05.JPG",
+          "source": "https://commons.wikimedia.org/wiki/File:Halloween_Vintage_05.JPG",
+          "license": "U.S. public domain · circa 1900–1910 postcard on Commons."
+        },
+        {
+          "title": "Black cats Halloween card (1900–1916)",
+          "year": 1910,
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/A_Jolly_Halloween_card_Black_Cats.jpg",
+          "source": "https://commons.wikimedia.org/wiki/File:A_Jolly_Halloween_card_Black_Cats.jpg",
+          "license": "U.S. public domain · early twentieth-century postcard on Commons."
         }
+      ],
+      "approvedArchiveIds": [
+        "Nosferatu1922_58"
       ]
     }
   ]

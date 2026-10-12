@@ -14,18 +14,39 @@ const read=k=>{try{const x=JSON.parse(localStorage.getItem(k)||'[]');return Arra
 const save=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}};
 const link=(parent,label,url)=>{const u=valid(url);if(!u)return null;const a=append(parent,e('a',label,'hphi-btn'));a.href=u;a.rel='noopener noreferrer';a.target='_blank';return a;};
 const deck=append(mount,e('div',undefined,'hphi-deck'));
+const filmSlots=new Map();
+const validArchiveId=id=>typeof id==='string'&&/^[A-Za-z0-9_-]{1,100}$/.test(id);
+function mountFilm(host,url,title){
+ host.replaceChildren();
+ const f=append(host,e('iframe',undefined,'hphi-player'));
+ f.src=url;f.title=title||'Film player';f.loading='lazy';
+ f.allowFullscreen=true;f.allow='fullscreen; picture-in-picture';
+ f.referrerPolicy='strict-origin-when-cross-origin';
+ return f;
+}
 function movie(parent,c){
- const m=c.movie||{},section=append(parent,e('section',undefined,'hphi-film'));append(section,e('h3',m.title||'Halloween movie'));
+ const m=c.movie||{},section=append(parent,e('section',undefined,'hphi-film'));
+ append(section,e('h3',m.title||'Halloween movie'));
  if(m.note)append(section,e('p',m.note,'hphi-note'));
  const controls=append(section,e('div',undefined,'hphi-controls'));
+ const host=append(section,e('div',undefined,'hphi-player-host'));
  const src=embed(m.embedUrl);
  if(src){const b=append(controls,e('button',m.label||'Watch selected film'));b.type='button';
-   b.addEventListener('click',()=>{if(section.querySelector('iframe'))return;
-     const f=append(section,e('iframe'));f.src=src;f.title=m.title||'Film player';f.loading='lazy';f.allowFullscreen=true;f.allow='encrypted-media; fullscreen; picture-in-picture';f.referrerPolicy='strict-origin-when-cross-origin';
-     b.textContent='Player loaded';b.disabled=true;});
+  b.addEventListener('click',()=>mountFilm(host,src,m.title||'Film player'));
  }
- link(controls,m.watchLabel||'View movie source ↗',m.watchUrl);
+ link(controls,m.watchLabel||'View original movie source ↗',m.watchUrl);
+ const approved=new Set(Array.isArray(c.approvedArchiveIds)?c.approvedArchiveIds.filter(validArchiveId):[]);
+ filmSlots.set(c.id,{host,approved});
 }
+window.QuantaPhiHalloweenPlayer=Object.freeze({
+ setArchiveMovie(cardId,identifier){
+  const slot=filmSlots.get(cardId);
+  if(!slot||!validArchiveId(identifier)||!slot.approved.has(identifier))return false;
+  mountFilm(slot.host,'https://archive.org/embed/'+encodeURIComponent(identifier),
+   'Internet Archive screening: '+identifier);
+  return true;
+ }
+});
 function image(grid,image){
  const src=valid(image.src),source=valid(image.source);if(!src||!source)return false;
  const b=append(grid,e('button',undefined,'hphi-image'));b.type='button';b.title=image.title||'Preview historic artwork';
@@ -42,27 +63,15 @@ function image(grid,image){
  });
  return true;
 }
-async function gallery(c,grid,status,offset){
- const q=String(c.feed?.search||'').slice(0,140);
- if(!q){status.textContent='Curate a valid image feed search first.';return;}
- const url=new URL('https://commons.wikimedia.org/w/api.php');
- const fields={action:'query',generator:'search',gsrsearch:q,gsrnamespace:'6',gsrlimit:'12',gsroffset:String(offset),prop:'imageinfo',iiprop:'url|mime|extmetadata',iiurlwidth:'480',format:'json',origin:'*'};
- Object.keys(fields).forEach(k=>url.searchParams.set(k,fields[k]));
- const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),11000);
- try{
-   const r=await fetch(url.href,{signal:ctrl.signal});if(!r.ok)throw Error('Media API unavailable');
-   const j=await r.json(),pages=Object.values(j.query?.pages||{});
-   let added=0;
-   for(const page of pages){
-     const item=page.imageinfo?.[0];if(!item||!/^image\/(png|jpeg|webp)$/.test(item.mime||''))continue;
-     const license=String(item.extmetadata?.LicenseShortName?.value||'').replace(/<[^>]*>/g,'').trim();
-     if(!/^(Public domain|PD|CC0|CC BY|CC BY-SA)/i.test(license))continue;
-     const title=String(page.title||'Vintage art').replace(/^File:/,'').replace(/_/g,' ').replace(/\.[^.]+$/,'');
-     if(image(grid,{src:item.thumburl||item.url,title,source:item.descriptionurl,license:license+' · Wikimedia Commons'}))added++;
-   }
-   status.textContent=added?grid.children.length+' license-labelled vintage images. Select one to preview.':'No matching reusable images in this batch. Browse the archive or try more.';
- }catch{status.textContent='Live image feed is temporarily unavailable. The original archive collection can still be browsed.';}
- finally{clearTimeout(timer);}
+function gallery(c,grid,status,offset){
+ const items=Array.isArray(c.images)?c.images:[];
+ const shown=items.slice(offset,offset+2);
+ for(const item of shown){
+  // Never show an uncurated live-search result or an item without a pre-1940 date.
+  if(Number.isInteger(item.year)&&item.year>=1800&&item.year<1940)image(grid,item);
+ }
+ status.textContent=grid.children.length+' vetted vintage images · tap one for source and rights.';
+ return offset+shown.length;
 }
 function actions(card,c){
  const controls=append(card,e('div',undefined,'hphi-controls'));
@@ -113,13 +122,12 @@ function render(c){
  const controls=append(card,e('div',undefined,'hphi-controls'));
  const more=append(controls,e('button','More images'));more.type='button';
  link(controls,'Browse source archive ↗',c.feed?.source);
- for(const i of Array.isArray(c.images)?c.images.slice(0,12):[])image(grid,i);
- let offset=0,busy=false;
- async function next(){
-   if(busy)return;busy=true;more.disabled=true;status.textContent='Checking license-labelled image sources…';
-   try{await gallery(c,grid,status,offset);offset+=12}finally{busy=false;more.disabled=false}
+ let offset=0;
+ function next(){
+  offset=gallery(c,grid,status,offset);
+  more.hidden=offset>=(Array.isArray(c.images)?c.images.length:0);
  }
- more.addEventListener('click',next);void next();
+ more.addEventListener('click',next);next();
  const studio=append(card,e('details',undefined,'hphi-studio'));
  append(studio,e('summary',c.id==='terriphi'?'Play Haunted Door Hunt, spooky audio and costumes':'Open the poster creator and saved art gallery'));
  studio.addEventListener('toggle',()=>{if(!studio.open||studio.querySelector('iframe'))return;
