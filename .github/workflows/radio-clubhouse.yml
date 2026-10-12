@@ -6,6 +6,7 @@ on:
       - 'index.html'
       - 'workers/radio-clubhouse-feed/worker.js'
       - 'tests/radio-clubhouse.test.mjs'
+      - 'tests/radio-clubhouse-ui.test.mjs'
       - '.github/workflows/radio-clubhouse.yml'
   push:
     branches: [main]
@@ -28,4 +29,4 @@ jobs:
           node --check radio-clubhouse.js
           node --check workers/radio-clubhouse-feed/worker.js
       - name: Verify source, newest-first and no backfill behavior
-        run: node --test tests/radio-clubhouse.test.mjs
+        run: node --test tests/radio-clubhouse.test.mjs tests/radio-clubhouse-ui.test.mjs
