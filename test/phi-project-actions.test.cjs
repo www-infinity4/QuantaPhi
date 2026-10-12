@@ -92,6 +92,8 @@ test('TerriPhi and PetriPhi preserve original interactive studio while adding Or
 
 test('Oracle file-picker tiles replace typed image filenames in both action cards and project workspace',()=>{
  assert.match(cards,/pp-upload-tile/);
+ assert.match(halloween,/hphi-upload-tile/);
+ assert.match(halloween,/project\(\)\.captureFile\(file,c\.id\)/);
  assert.match(cards,/uploadInput\.type='file'/);
  assert.match(cards,/pkg\.captureFile\(file,kind\)/);
  assert.match(ui,/pwp-upload/);
