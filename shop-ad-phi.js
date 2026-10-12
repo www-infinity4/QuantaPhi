@@ -65,9 +65,13 @@ form.addEventListener('submit',e=>{
  const item=Object.fromEntries(Object.entries(fields).map(([k,v])=>[k,v.value.trim()]));
  item.mediaIds=sellerStudio?.ids()||[];
  if((!item.url&&!item.mediaIds.length)||(item.url&&!safe(item.url))||(item.imageUrl&&!safe(item.imageUrl))){
-  status.textContent='Add item photos or a valid HTTPS source link. External images must also use HTTPS.';return
+  status.textContent='Use an https source link, or attach actual item photos. External image links must use https.';return
  }
  if(item.sponsor&&item.mediaIds.length){status.textContent='Paid sponsored placements require a separately reviewed ad campaign. Save this as an ordinary seller listing instead.';return}
+ const policy=window.ShopPhiPolicy?.evaluate(item)||{status:'needs_review'};
+ if(policy.status==='blocked'){status.textContent='Shop Phi cannot accept this listing: '+policy.reason+' If this is a mistake, request a manual policy review once the seller service is connected.';return}
+ item.policyStatus=policy.status;
+ item.policyNote=policy.reason;
  item.itemId=crypto.randomUUID();
  item.kind=item.sponsor?'advertisement':'product';item.sponsored=!!item.sponsor;
  item.verificationStatus=item.mediaIds.length?'not-reviewed':'external-source-unverified';
