@@ -16,15 +16,24 @@ async function query(path,method='GET',data){
 }
 function notice(str){state.notice=str;const el=root.querySelector('.fsr-status');if(el)el.textContent=str}
 function link(url,label){const a=item('a','',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a}
-async function refresh(){
+async function refresh(preserveNotice=false){
  if(state.loading)return;
  state.loading=true;render();
- try{const [following,hosts,featured,xAccount,radio]=await Promise.all([query('/v1/following'),query('/v1/hosts'),query('/v1/featured'),query('/v1/x/account').catch(()=>({account:null,xConnected:false})),query('/v1/radio/preferences')]);
-  state.following=following.following||[];state.hosts=hosts.hosts||[];state.featured=featured.featured||[];
-  state.ownerAccount=xAccount.account||null;state.xConnected=!!xAccount.xConnected;state.radio=radio;
-  state.notice=state.following.length+' followed accounts in this library · '+state.hosts.length+' with indexed Space links.';
- }catch(e){state.notice=String(e.message||e)}
- finally{state.loading=false;render()}
+ const previousNotice=state.notice;
+ try{
+  const requests=[query('/v1/following'),query('/v1/hosts'),query('/v1/featured'),query('/v1/x/account'),query('/v1/radio/preferences')];
+  const results=await Promise.allSettled(requests),problems=[];
+  const read=(index,name)=>{const result=results[index];if(result.status==='fulfilled')return result.value;problems.push(name+': '+String(result.reason?.message||result.reason));return null};
+  const following=read(0,'Following list'),hosts=read(1,'Spaces'),featured=read(2,'Featured'),xAccount=read(3,'X account'),radio=read(4,'Radio settings');
+  if(following)state.following=following.following||[];
+  if(hosts)state.hosts=hosts.hosts||[];
+  if(featured)state.featured=featured.featured||[];
+  if(xAccount){state.ownerAccount=xAccount.account||null;state.xConnected=!!xAccount.xConnected}
+  if(radio)state.radio=radio;
+  state.notice=problems.length
+   ?'Could not confirm all Media Star data: '+problems.join(' · ')+'. Counts may be incomplete.'
+   :(preserveNotice?previousNotice:state.following.length+' imported follows for this wallet · '+state.hosts.length+' hosts with indexed Spaces.');
+ }finally{state.loading=false;render()}
 }
 function picked(result){
  const c=result.roll;
@@ -96,7 +105,7 @@ async function sync(type){
   state.notice=type==='following'?('X following imported: '+d.imported+'.'):('X reported '+d.reportedSpaces+' records; indexed '+d.indexed+'. Replay availability still requires verification.');
  }catch(e){
   state.notice=e.message==='x_account_not_connected'?'An authorized X connection is not configured yet. You can import your followed handles below; this does not verify an X follow.':String(e.message||e);
- }finally{state.loading=false;render();await refresh()}
+ }finally{state.loading=false;render();await refresh(true)}
 }
 function parseFollowing(txt){
  return [...new Set(String(txt||'').split(/[\s,;]+/).map(x=>x.replace(/^https?:\/\/(?:x|twitter)\.com\//i,'').replace(/^@/,'').replace(/\/.*$/,'')).filter(x=>/^[A-Za-z0-9_]{1,15}$/.test(x)))].slice(0,500);
@@ -106,7 +115,7 @@ async function importFollowing(raw){
  try{
   const answer=await query('/v1/following/import','POST',{following:list});
   state.notice=answer.imported+' accounts imported as user-supplied follows (not verified by X).';
-  await refresh();
+  await refresh(true);
  }catch(e){notice(String(e.message||e))}
 }
 function parseSpaces(raw){
@@ -121,7 +130,7 @@ async function importSpaces(raw){
  const episodes=parseSpaces(raw);if(!episodes.length){notice('Use: @handle | https://x.com/i/spaces/SPACEID | Recorded Space title');return}
  try{const d=await query('/v1/space/import','POST',{importId:'imp'+crypto.randomUUID().replaceAll('-',''),episodes});
   state.notice=d.added+' Space URLs indexed; '+d.rejected.length+' rejected. Link indexing does not prove replay audio works.';
-  await refresh();
+  await refresh(true);
  }catch(e){notice(String(e.message||e))}
 }
 async function browse(host){
@@ -149,7 +158,7 @@ function render(){
   const profile=state.ownerAccount;
   ownerPanel.append(item('p','','@'+profile.handle+' · '+(profile.verification==='x_api_verified'?'Connected and verified by X':'Account saved · X authorization not yet connected')));
   const path=link('https://x.com/'+profile.handle+'/following','Open my Following on X ↗');ownerPanel.append(path);
-  if(!state.xConnected)ownerPanel.append(item('small','','Your imported screenshot follows remain saved. X authorization is required to sync your complete live list.'));
+  if(!state.xConnected)ownerPanel.append(item('small','','Saving an X username does not authorize a live Following import. The counts below reflect only follows returned for this wallet session. Use the import form below until authorized X access is available.'));
  }else{
   ownerPanel.append(item('p','','Register your X @username to identify which Following list Media Star should use.'));
  }
@@ -213,13 +222,17 @@ function render(){
  fredLabel.append(include,item('span','',' Include original Fred Curio Spotlight episodes'));
  const save=button('Save my radio mix',async()=>{try{
   state.radio=await query('/v1/radio/preferences','POST',{mode:mode.value,includeFred:include.checked});
-  state.notice='Your personal curation mix is saved.';await refresh();
+  state.notice='Your personal curation mix is saved.';await refresh(true);
  }catch(e){notice(e.message||String(e))}});
  radioOpts.append(mode,fredLabel,save);card.append(radioOpts);
  const controls=item('div','fsr-actions');
- controls.append(button('Sync my X following',()=>void sync('following')),
- button('Discover X Spaces',()=>void sync('spaces')),
- button('▶ Roll & Play · new recording',()=>void spin(),'fsr-roll'));
+ const xSync=button(state.xConnected?'Sync my X following':'X sync needs authorization',()=>void sync('following'));
+ xSync.disabled=xSync.disabled||!state.xConnected;
+ const spaceSync=button('Discover X Spaces',()=>void sync('spaces'));
+ spaceSync.disabled=spaceSync.disabled||!state.xConnected;
+ const rollButton=button('▶ Roll & Play · new recording',()=>void spin(),'fsr-roll');
+ rollButton.disabled=rollButton.disabled||!state.hosts.length;
+ controls.append(xSync,spaceSync,rollButton);
  card.append(controls);
  const current=item('div','fsr-picked');current.hidden=!state.choice;card.append(current);
  const status=item('p','fsr-status',state.notice);status.setAttribute('role','status');card.append(status);
@@ -232,7 +245,9 @@ function render(){
   }
   card.append(hosts,item('div','fsr-episodes'));
  }
+ if(!state.hosts.length)card.append(item('p','fsr-empty','No indexed Spaces available for this wallet yet. Import followed handles and original Space links, or enable Fred Curio Spotlight in your radio settings.'));
  const details=item('details','fsr-import'),summary=item('summary','','Import followed list or saved Space links');
+ details.open=!state.following.length&&!state.xConnected;
  details.append(summary,item('p','','For an X account without an authorized X API connection, paste the handles you follow. This is labeled a user-supplied list until X verifies it.'));
  const handles=item('textarea');handles.setAttribute('aria-label','Followed X handles');handles.placeholder='@PersonOne, @PersonTwo, @PersonThree';
  details.append(handles,button('Import my followed handles',()=>void importFollowing(handles.value)));
