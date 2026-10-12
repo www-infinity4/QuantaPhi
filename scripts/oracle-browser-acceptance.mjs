@@ -17,7 +17,7 @@ try{
   await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({results:[{title:'Indexed research for '+term,url:'https://example.org/'+encodeURIComponent(term),content:'Search snippet for '+term}]})});
  });
  await page.route('https://infinity-rogers.marvaseater.workers.dev/**',async route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({ok:true,output_text:'RadioShack Brand covers manufacturer and company identity. RadioShack Model covers catalog models and product families. Both categories belong to this RadioShack research record, but their evidence is distinct and requires source checking.'})}));
- await page.setContent('<main id="result"><div id="overview"><section class="qzone qzoneRed"><h3>AI Overview</h3><p>RadioShack was an electronics retail brand.</p></section><section class="qzone qzoneYellow"><h3>Data extraction</h3><ul id="qYellowDataList"><li><a href="/?q=Brand">Brand</a></li><li><a href="/?q=Model">Model</a></li></ul></section></div><input id="q" value="RadioShack"></main>');
+ await page.setContent('<head><base href="https://quantaphi.org/"></head><main id="result"><div id="overview"><section class="qzone qzoneRed"><h3>AI Overview</h3><p>RadioShack was an electronics retail brand.</p></section><section class="qzone qzoneYellow"><h3>Data extraction</h3><ul id="qYellowDataList"><li><a href="/?q=Brand">Brand</a></li><li><a href="/?q=Model">Model</a></li></ul></section></div><input id="q" value="RadioShack"></main>');
  await page.evaluate(()=>{window.__qActiveTokenId='quant-demo';window.__testTokens=[{id:'quant-demo',query:'RadioShack',payload:{findings:[]},dataExtraction:{}}];window.QuantaUnifiedTokenLedger={mutate:async fn=>fn(window.__testTokens),load:async()=>window.__testTokens};window.QuantaInfinityCredit={persistResearch:async()=>true};window.PhiAssimilation={ingest:async()=>true,signal:()=>true};window.QuantaStarCredit=()=>false;});
  await page.addStyleTag({path:'phi-scholastic-data.css'});
  await page.addScriptTag({path:'phi-scholastic-data.js'});
@@ -62,7 +62,7 @@ try{
     const unnamed=await tab.locator('button').evaluateAll(bs=>bs.filter(b=>!b.textContent?.trim()&&!b.getAttribute('aria-label')&&!b.getAttribute('title')).length);
     entry.unnamedButtons=unnamed;
     if(unnamed>0)report.warnings.push(target.name+': '+unnamed+' controls have no textual label');
-    await tab.screenshot({path:output+'/'+target.name.toLowerCase().replace(/\\s/g,'-')+'-mobile.png',animations:'disabled'});
+    await tab.screenshot({path:output+'/'+target.name.toLowerCase().replace(/\s/g,'-')+'-mobile.png',animations:'disabled'});
     report.screenshots.push(target.name.toLowerCase()+'-mobile.png');
    }catch(error){entry.status='unavailable';entry.error=String(error.message||error).slice(0,250);}
    report.live.push(entry);await ctx.close();
