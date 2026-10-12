@@ -33,4 +33,16 @@ final class BrainNotes {
         } catch (Exception ignored) {}
         return out.substring(0,Math.min(10000,out.length()));
     }
+    static synchronized void receipt(Context c,String request,JSONObject result) {
+        try {
+            JSONObject receipt=result.getJSONObject("receipt");
+            receipt.put("request",LearningPolicy.clean(request));
+            receipt.put("output",LearningPolicy.clean(result.optString("output")));
+            receipt.put("sources",result.optJSONArray("sources"));
+            JSONArray old=new JSONArray(prefs(c).getString("tool_receipts","[]")),next=new JSONArray();
+            next.put(receipt);
+            for(int i=0;i<old.length() && i<29;i++)next.put(old.get(i));
+            prefs(c).edit().putString("tool_receipts",next.toString()).apply();
+        } catch(Exception ignored) {}
+    }
 }
