@@ -1,15 +1,16 @@
 name: Oracle daily card, wallet and security audit
 on:
-  workflow_dispatch:
   schedule:
     - cron: '17 5 * * *'
+  workflow_dispatch:
   push:
     branches: [main]
-    paths: ['phi-scholastic-data.*','phi-assimilation.js','music-quant-cloud.js','wallet-runtime.js','workers/quanta-phi-ledger/worker.js','scripts/oracle-daily-audit.mjs','.github/workflows/oracle-daily-audit.yml']
+    paths: ['phi-scholastic-data.*','phi-assimilation.js','music-quant-cloud.js','wallet-runtime.js','workers/quanta-phi-ledger/worker.js','scripts/oracle-daily-audit.mjs','scripts/oracle-safe-repair.mjs','test/oracle-safe-repair.test.mjs','.github/workflows/oracle-daily-audit.yml']
   pull_request:
-    paths: ['phi-scholastic-data.*','phi-assimilation.js','music-quant-cloud.js','wallet-runtime.js','workers/quanta-phi-ledger/worker.js','scripts/oracle-daily-audit.mjs','.github/workflows/oracle-daily-audit.yml']
+    paths: ['phi-scholastic-data.*','phi-assimilation.js','music-quant-cloud.js','wallet-runtime.js','workers/quanta-phi-ledger/worker.js','scripts/oracle-daily-audit.mjs','scripts/oracle-safe-repair.mjs','test/oracle-safe-repair.test.mjs','.github/workflows/oracle-daily-audit.yml']
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
   issues: write
 concurrency:
   group: oracle-daily-${{ github.ref }}
@@ -24,12 +25,23 @@ jobs:
         with:
           node-version: '22'
       - name: Research controls and wallet regression
-        run: node --test test/oracle-research-controls.test.cjs test/wallet-assets.test.cjs
+        run: node --test test/oracle-research-controls.test.cjs test/wallet-assets.test.cjs test/oracle-safe-repair.test.mjs
       - name: Scan source, deployed buttons, unauthorized wallet access and Oracle styling
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ORACLE_AUDIT_SKIP_LIVE: ${{ github.event_name == 'pull_request' && '1' || '0' }}
         run: node scripts/oracle-daily-audit.mjs
+      - name: Dispatch bounded Oracle repair to isolated draft pull request
+        if: ${{ always() && github.event_name != 'pull_request' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ORACLE_REPAIR_APPLY: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+        run: |
+          if [ -f oracle-audit-evidence/report.json ]; then
+            node scripts/oracle-safe-repair.mjs
+          else
+            echo "No current audit evidence; no repair attempted."
+          fi
       - name: Preserve audit evidence
         if: always()
         uses: actions/upload-artifact@v4
