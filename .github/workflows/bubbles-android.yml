@@ -31,6 +31,11 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
+      - name: Verify Brain learning policy
+        run: |
+          mkdir -p /tmp/brain-policy
+          javac -d /tmp/brain-policy android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LearningPolicy.java android/bubbles-overlay/checks/LearningPolicyCheck.java
+          java -cp /tmp/brain-policy LearningPolicyCheck
       - name: Compile Bubbles Android application
         working-directory: android/bubbles-overlay
         run: gradle --no-daemon assembleDebug

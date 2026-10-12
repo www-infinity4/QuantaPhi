@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brain_learning_description">With your permission, Brain saves visible text from the ChatGPT, X, and Gemini apps you select. Notes stay on this device. It skips password and editable fields and cannot read hidden history or control other apps. You can pause capture or review notes in Bubbles AI.</string>
+</resources>
