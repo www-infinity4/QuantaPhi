@@ -1,0 +1,34 @@
+name: Robot Brain wallet owner boundary
+on:
+  pull_request:
+    paths:
+      - 'robot-brain-owner.js'
+      - 'workers/infinity-brain-clock/**'
+      - 'test/robot-brain-owner.test.cjs'
+      - 'test/brain-clock.test.mjs'
+      - '.github/workflows/robot-brain-wallet-owner.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'robot-brain-owner.js'
+      - 'workers/infinity-brain-clock/**'
+      - 'test/robot-brain-owner.test.cjs'
+      - 'test/brain-clock.test.mjs'
+      - '.github/workflows/robot-brain-wallet-owner.yml'
+permissions:
+  contents: read
+jobs:
+  owner-boundary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax-check owner and clock source
+        run: |
+          node --check robot-brain-owner.js
+          node --check workers/infinity-brain-clock/worker.js
+      - name: Verify private wallet-owner authorization
+        run: |
+          node --test test/robot-brain-owner.test.cjs test/brain-clock.test.mjs
