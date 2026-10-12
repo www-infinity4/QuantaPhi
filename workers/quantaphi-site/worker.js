@@ -333,6 +333,8 @@ export default {
    status: 503, headers: { 'Cache-Control': 'no-store', 'Retry-After': '10', 'x-quantaphi-edge': EDGE_VERSION }
   });
   const out = new Headers(upstream.headers);
+  // Only the public, unprivileged Bubbles messenger is designed for embedding.
+  if (route.repo === 'QuantaPhi' && route.sourcePath === '/bubbles.html' && incoming.searchParams.get('embed') === '1') out.delete('X-Frame-Options');
   out.set('x-quantaphi-edge', EDGE_VERSION);
   out.set('x-quantaphi-app', route.repo);
   if (raw && upstream.ok && RAW_TYPES[extension]) out.set('Content-Type', RAW_TYPES[extension]);
@@ -358,3 +360,4 @@ export default {
   return new Response(upstream.body, { status: upstream.status, headers: out });
  }
 };
+
