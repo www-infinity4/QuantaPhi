@@ -45,7 +45,7 @@ test('older images can hide the garbled top heading without erasing original pix
 
 test('browser loads the corrected scripts and JavaScript remains parseable', () => {
  const html = source('index.html');
- assert.match(html,/infinite-book\.js\?v=20261011-phi-story-handoff1/);
+ assert.match(html,/infinite-book\.js\?v=20261011-full-story1/);
  assert.match(html,/phi-book-image-bridge\.js\?v=20261009-text-repair1/);
  for (const name of ['infinite-book.js', 'phi-book-image-bridge.js']) {
   assert.doesNotThrow(() => new vm.Script(source(name)),name);
