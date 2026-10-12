@@ -3,7 +3,7 @@
 const root=document.getElementById('followingSpacesRadio');if(!root)return;
 const API='https://media-star-following-spaces.marvaseater.workers.dev';
 const item=(tag,cls,str)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(str!==undefined)e.textContent=str;return e};
-const state={following:[],hosts:[],featured:[],ownerAccount:null,xConnected:false,radio:{mode:'equal_hosts',includeFred:false},choice:null,loading:false,notice:'Connect the existing wallet and sync your X following list. Fred stays highlighted separately.'};
+const state={following:[],hosts:[],featured:[],ownerAccount:null,xConnected:false,radio:{mode:'equal_hosts',includeFred:false},choice:null,loading:false,notice:'Loading your followed accounts…'};
 let sessionRequest=null;
 async function token(){return String(await window.QuantaCloudConnection?.resolveDeviceToken?.()||'')}
 async function query(path,method='GET',data){
@@ -134,127 +134,59 @@ async function importSpaces(raw){
  }catch(e){notice(String(e.message||e))}
 }
 async function browse(host){
- const box=root.querySelector('.fsr-episodes');box.replaceChildren(item('p','','Loading indexed Spaces from @'+host.handle+'…'));
+ const box=root.querySelector('.fsr-episodes');if(!box)return;box.replaceChildren(item('p','','Loading indexed Spaces from @'+host.handle+'…'));
  try{
   const d=await query('/v1/episodes?handle='+encodeURIComponent(host.handle));
   box.replaceChildren(item('strong','',host.name+' · '+d.count+' indexed Spaces'));
   for(const episode of d.episodes.slice(0,120)){
    const line=item('div','fsr-episode');line.append(item('strong','',episode.title));
-   if(episode.requiresOriginalUnlock){const a=link('#fredSpacesRadio','Use Fred Media Star unlock →');a.target='_self';line.append(a)}
-   else if(episode.url)line.append(link(episode.url,'Open original replay ↗'));
+   if(episode.requiresOriginalUnlock){const a=button('Play episode',()=>requestFredEpisode(episode.id));line.append(a)}
+   else if(episode.url)line.append(link(episode.url,'▶ Play recording on X'));
    box.append(line);
   }
-  if(!d.episodes.length)box.append(item('p','','No direct X Space replay links indexed for this host yet.'));
+  if(!d.episodes.length)box.append(item('p','','No recordings indexed for this person yet.'),link('https://x.com/'+host.handle,'View this person on X'));
  }catch(e){box.replaceChildren(item('p','',e.message||'Cannot load episodes'))}
 }
 function button(text,click,cls=''){const b=item('button',cls,text);b.type='button';b.onclick=click;b.disabled=state.loading;return b}
-function render(){
- root.replaceChildren();const card=item('article','fsr-card'),head=item('div','fsr-head'),left=item('div');
- left.append(item('span','fsr-label','TWO-STAGE FOLLOWING RADIO'),item('strong','fsr-brand','⭐ Media Star'),item('h2','','Followed X Spaces · Radio'));
- head.append(left);card.append(head);
- const ownerPanel=item('section','fsr-owner-profile');
- ownerPanel.append(item('strong','','My X Following account'));
- if(state.ownerAccount){
-  const profile=state.ownerAccount;
-  ownerPanel.append(item('p','','@'+profile.handle+' · '+(profile.verification==='x_api_verified'?'Connected and verified by X':'Account saved · X authorization not yet connected')));
-  const path=link('https://x.com/'+profile.handle+'/following','Open my Following on X ↗');ownerPanel.append(path);
-  if(!state.xConnected)ownerPanel.append(item('small','','Saving an X username does not authorize a live Following import. The counts below reflect only follows returned for this wallet session. Use the import form below until authorized X access is available.'));
- }else{
-  ownerPanel.append(item('p','','Register your X @username to identify which Following list Media Star should use.'));
+let selectedHandle='dotkrueger';
+function mountInMediaStar(){
+ const card=document.querySelector('#fredSpacesRadio .fs-card');
+ if(!card)return;
+ if(root.parentElement!==card)card.insertBefore(root,card.querySelector('.fs-stream'));
+ // Fred's player and actions remain available only while Fred is selected.
+ for(const child of card.children){
+  if(child===root||child.classList.contains('fs-star-backdrop'))continue;
+  child.hidden=selectedHandle.toLowerCase()!=='dotkrueger';
  }
- const accountSettings=item('details','fsr-profile-edit');
- accountSettings.append(item('summary','',''+(state.ownerAccount?'Change X account':'Set my X username')));
- const claimInput=item('input');claimInput.type='text';claimInput.maxLength=16;claimInput.placeholder='@username';
- claimInput.value=state.ownerAccount?'@'+state.ownerAccount.handle:'';
- claimInput.setAttribute('aria-label','X account username');
- accountSettings.append(claimInput);
- accountSettings.append(button('Save my X account',async()=>{
-  const name=claimInput.value.trim().replace(/^@/,'');
-  if(!/^[A-Za-z0-9_]{1,15}$/.test(name)){notice('Enter a valid X @username, up to 15 letters, numbers, or underscores.');return}
-  try{
-   const response=await query('/v1/x/account','POST',{handle:name});
-   state.ownerAccount=response.account;state.notice='X username saved. Official X authorization must match this username before the full list can sync.';
-   render();
-  }catch(e){notice(String(e.message||e))}
- }));
- ownerPanel.append(accountSettings);card.append(ownerPanel);
- const featured=item('div','fsr-feature');
- featured.append(item('strong','','Featured · Fred Krueger'),item('p','','The original Fred Curio Spotlight stays highlighted, with its independent StarCoin unlocks.'));
- const fred=link('#fredSpacesRadio','Open Fred Media Star →');fred.target='_self';featured.append(fred);card.append(featured);
- const priority=state.featured.filter(p=>p.handle.toLowerCase()!=='dotkrueger');
- if(priority.length){
-  const chosen=item('section','fsr-feature fsr-priority');
-  chosen.append(item('strong','','Priority Spaces · Aequitas & Cardones'),
-   item('p','','Each person has a separate host index. Public archive pages are research leads; only exact X Space links enter the shuffle.'));
-  for(const p of priority){
-   const row=item('div','fsr-source');
-   row.append(item('strong','',p.name+' · @'+p.handle),
-     item('small','',p.episodes+' indexed direct X Spaces'));
-   if(p.archiveUrl){row.append(link(p.archiveUrl,'Browse public Spaces archive ↗'))}
-   else{row.append(link('https://x.com/'+p.handle,'Open original X profile ↗'))}
-   chosen.append(row);
-  }
-  card.append(chosen);
- }
- if(state.following.length){
-  const following=item('section','fsr-following');
-  following.append(item('h3','','My followed accounts · '+state.following.length));
-  for(const person of state.following){
-   const row=item('div','fsr-follow-row');
-   const display=item('div','');display.append(item('strong','',person.name+' · @'+person.handle),
-    item('small','',Number(person.episodes||0)+' indexed X Spaces · '+(person.source==='x_api_verified'?'X-verified following':'Imported following')));
-   row.append(display,link('https://x.com/'+person.handle,'View X profile ↗'));following.append(row);
-  }
-  card.append(following);
- }
- const counts=item('div','fsr-grid');
- const followed=item('div','fsr-stat');followed.append(item('strong','',String(state.following.length)),item('small','','Followed accounts imported'));
- const eligible=item('div','fsr-stat');eligible.append(item('strong','',String(state.hosts.length)),item('small','','Accounts with indexed Spaces'));
- counts.append(followed,eligible);card.append(counts);
- const radioOpts=item('section','fsr-radio-settings');
- radioOpts.append(item('strong','','My curation settings'),item('p','','More recorded episodes = more chances in episode-weighted mode. Fred stays in the playlist even when not separately followed, if enabled.'));
- const mode=item('select');mode.setAttribute('aria-label','Curation shuffle mode');
- for(const [value,label] of [['episodes_weighted','Weight by number of unplayed recordings'],['equal_hosts','Equal chance for each host']]){
-  const o=item('option','',label);o.value=value;mode.append(o);
- }
- mode.value=state.radio.mode;
- const fredLabel=item('label','fsr-radio-toggle'),include=item('input');include.type='checkbox';include.checked=!!state.radio.includeFred;
- fredLabel.append(include,item('span','',' Include original Fred Curio Spotlight episodes'));
- const save=button('Save my radio mix',async()=>{try{
-  state.radio=await query('/v1/radio/preferences','POST',{mode:mode.value,includeFred:include.checked});
-  state.notice='Your personal curation mix is saved.';await refresh(true);
- }catch(e){notice(e.message||String(e))}});
- radioOpts.append(mode,fredLabel,save);card.append(radioOpts);
- const controls=item('div','fsr-actions');
- const xSync=button(state.xConnected?'Sync my X following':'X sync needs authorization',()=>void sync('following'));
- xSync.disabled=xSync.disabled||!state.xConnected;
- const spaceSync=button('Discover X Spaces',()=>void sync('spaces'));
- spaceSync.disabled=spaceSync.disabled||!state.xConnected;
- const rollButton=button('▶ Roll & Play · new recording',()=>void spin(),'fsr-roll');
- rollButton.disabled=rollButton.disabled||!state.hosts.length;
- controls.append(xSync,spaceSync,rollButton);
- card.append(controls);
- const current=item('div','fsr-picked');current.hidden=!state.choice;card.append(current);
- const status=item('p','fsr-status',state.notice);status.setAttribute('role','status');card.append(status);
- if(state.hosts.length){
-  card.append(item('h3','','Browse followed accounts with indexed Spaces'));
-  const hosts=item('div','fsr-hosts');
-  for(const h of state.hosts){
-   const b=button('@'+h.handle,()=>void browse(h));
-   b.append(item('small','',h.count+' indexed Spaces'));hosts.append(b);
-  }
-  card.append(hosts,item('div','fsr-episodes'));
- }
- if(!state.hosts.length)card.append(item('p','fsr-empty','No indexed Spaces available for this wallet yet. Import followed handles and original Space links, or enable Fred Curio Spotlight in your radio settings.'));
- const details=item('details','fsr-import'),summary=item('summary','','Import followed list or saved Space links');
- details.open=!state.following.length&&!state.xConnected;
- details.append(summary,item('p','','For an X account without an authorized X API connection, paste the handles you follow. This is labeled a user-supplied list until X verifies it.'));
- const handles=item('textarea');handles.setAttribute('aria-label','Followed X handles');handles.placeholder='@PersonOne, @PersonTwo, @PersonThree';
- details.append(handles,button('Import my followed handles',()=>void importFollowing(handles.value)));
- details.append(item('p','','Import genuine X Space replay links from those handles; one link per line, with title. X controls actual replay availability.'));
- const links=item('textarea');links.setAttribute('aria-label','Space replay URLs');links.placeholder='@PersonOne | https://x.com/i/spaces/1xxxxxxxxxxxx | Episode title';
- details.append(links,button('Import Space links to Media Star',()=>void importSpaces(links.value)));card.append(details);
- root.append(card);if(state.choice)picked(state.choice);
 }
+async function choosePerson(handle){
+ selectedHandle=handle;state.choice=null;render();
+ if(handle.toLowerCase()==='dotkrueger')return;
+ await browse({handle,name:state.following.find(p=>p.handle.toLowerCase()===handle.toLowerCase())?.name||handle});
+}
+function render(){
+ root.replaceChildren();
+ const panel=item('section','fsr-person-picker');
+ panel.append(item('strong','','Choose a person'));
+ const select=item('select');select.setAttribute('aria-label','Media Star person');
+ const people=[{handle:'dotkrueger',name:'Fred Krueger'},...state.following.filter(p=>p.handle.toLowerCase()!=='dotkrueger')];
+ for(const person of people){
+  const option=item('option','',(person.name||person.handle)+' · @'+person.handle);
+  option.value=person.handle;select.append(option);
+ }
+ select.value=selectedHandle;select.disabled=state.loading;
+ select.onchange=()=>void choosePerson(select.value);
+ panel.append(select,item('small','',state.following.length+' saved followed accounts · Fred included'));
+ const episodes=item('div','fsr-episodes');panel.append(episodes);
+ const status=item('p','fsr-status',state.notice);status.setAttribute('role','status');panel.append(status);
+ const settings=item('details','fsr-import');settings.append(item('summary','','Update following list'));
+ if(state.xConnected)settings.append(button('Sync my following',()=>void sync('following')));
+ const handles=item('textarea');handles.setAttribute('aria-label','Followed X handles');
+ handles.placeholder='Paste your followed @handles';
+ settings.append(handles,button('Save following list',()=>void importFollowing(handles.value)));
+ panel.append(settings);root.append(panel);mountInMediaStar();
+}
+const fredRoot=document.getElementById('fredSpacesRadio');
+if(fredRoot)new MutationObserver(()=>mountInMediaStar()).observe(fredRoot,{childList:true});
 render();void refresh();
 })();
