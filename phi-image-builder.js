@@ -10,7 +10,7 @@ const make=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.class
 const $=selector=>host.querySelector(selector);
 const emit=(type,detail)=>window.dispatchEvent(new CustomEvent('phi:image:'+type,{detail}));
 const id=()=>crypto?.randomUUID?.()||('phi-'+Date.now()+'-'+Math.random().toString(36).slice(2));
-let mode='Image',source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',preparingReference=false,lastRenderPlan=null,storyWriterId='';
+let mode='Image',source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',lastManualText='',preparingReference=false,lastRenderPlan=null,storyWriterId='';
 function state(value){host.dataset.stage=value;host.setAttribute('aria-busy',value==='progress'?'true':'false')}
 function section(title,copy){const box=make('section','pi-section');box.append(make('h3','',title));if(copy)box.append(make('p','pi-sub',copy));return box}
 function letteringMode(){const field=$('#pi-exact-text');const enabled=$('#pi-text-mode').value==='exact';field.disabled=!enabled;field.hidden=!enabled}
@@ -53,7 +53,7 @@ function input(kind,title,subtitle){
 function layout(){
  host.classList.add('oracle-image-studio');
  const form=make('div','pi-composer pi-panel');
- form.append(make('span','pi-eyebrow','ORACLE · BLUE IMAGE GENERATOR'),make('h2','','Create your image'),make('p','pi-sub','Upload your photos or describe an image. After creating it, use Image Grader and Fix image to correct the finished result without moving or reuploading it.'));
+ form.append(make('span','pi-eyebrow','ORACLE · BLUE IMAGE GENERATOR'),make('h2','','Create your image'),make('p','pi-sub','Describe what you want in ordinary words. Oracle automatically prints requested titles and slogans accurately, then grades the image. Fix image corrects the result without moving or reuploading it.'));
  const format=section('1 · Choose a format');const choices=make('div','pi-modes');
  for(const name of modes){const b=make('button','pi-mode',name);b.type='button';b.dataset.piMode=name;b.setAttribute('aria-pressed',name===mode?'true':'false');choices.append(b)}
  format.append(choices);form.append(format);
@@ -90,13 +90,17 @@ function layout(){
 async function build({retryRender=false}={}){
  if(busy||preparingReference)return;
  const typed=$('#pi-prompt').value.trim().slice(0,3000);
- const exactText=$('#pi-text-mode').value==='exact'?$('#pi-exact-text').value.trim().slice(0,120):'';
- if($('#pi-text-mode').value==='exact'&&!exactText){notice('Enter the words you want to add, or choose No added words.');return}
+ const advanced=$('#pi-text-mode').value==='exact';
+ const manualText=advanced?$('#pi-exact-text').value.trim():'';
+ if(advanced&&!manualText){notice('Enter the words you want to add, or choose No added words.');return}
+ const textPlan=window.PhiImageLanguage?.infer(typed,mode,manualText)||{text:manualText};
+ if(textPlan.error==='exact_words_too_long'){notice('The requested wording is too long to print legibly in this image. Shorten the title or slogan. Your original instructions are unchanged.');return}
+ const exactText=textPlan.text||'';
  if(!typed&&!source&&!contextStory()){notice('Describe the artwork or upload a photo first.');return}
  const description=typed||('Build a distinctive '+mode.toLowerCase()+' based on my uploaded reference or story.');
  const requestId=id(),story=contextStory(),search=contextSearch();
  const canReuse=retryRender&&lastRenderPlan&&lastRenderPlan.description===description&&lastRenderPlan.mode===mode&&lastRenderPlan.source===source&&lastRenderPlan.design===design&&lastRenderPlan.exactText===exactText;
- busy=true;lastInstruction=description;lastExactText=exactText;result=null;rawResult=null;artifact=null;
+ busy=true;lastInstruction=description;lastExactText=exactText;lastManualText=manualText;result=null;rawResult=null;artifact=null;
  state('progress');initSteps();$('[data-pi-action="retry-render"]').hidden=true;$('[data-pi-action="back"]').textContent='Back to description';notice(canReuse?'Retrying the image service with the previous GPT directions…':'Preparing a real render request…');
  emit('build:start',{requestId,mode,description});
  let phase=0,warning='',vision='',prompt='';
@@ -123,7 +127,7 @@ async function build({retryRender=false}={}){
   step(phase,'active','Examining finished image');
   rawResult=rendered.src;
   result=rawResult;
-  if(exactText)try{result=await renderer.composeExactText(rawResult,exactText)}catch(error){warning=[warning,'Artwork rendered, but exact lettering could not be added: '+String(error?.message||error).slice(0,90)].filter(Boolean).join(' ')}
+  if(exactText)result=await renderer.composeExactText(rawResult,exactText); // Never silently publish artwork missing requested words.
   let size=await renderer.validate(result);
   let review=null,autoRefined=false;
   try{review=await renderer.review({src:result,description,mode,exactText})}
@@ -176,7 +180,7 @@ async function build({retryRender=false}={}){
   const correction=$('#pi-correct-text');if(correction)correction.value=exactText;
   // The standalone image builder no longer has a Star control.
   // Never let obsolete controls prevent completed artwork from appearing.
-  state('finished');notice('Created '+size.width+' × '+size.height+' using '+rendered.renderer+(warning?' · '+warning:''));
+  state('finished');notice('Created '+size.width+' × '+size.height+' using '+rendered.renderer+(exactText?' · Exact requested words printed: '+exactText.replace(/\n/g,' / '):'')+(warning?' · '+warning:''));
   emit('build:done',artifact);
  }catch(error){
   step(phase,'error','Failed');
@@ -230,7 +234,7 @@ host.addEventListener('click',event=>{
   showFile(null,kind);
   notice(kind==='source'?'Uploaded photo removed. You can build from the description or choose another photo.':'Style reference removed.');
  }
- if(action==='back'||action==='edit'){const retry=$('[data-pi-action="retry-render"]');if(retry)retry.hidden=true;state('composer');if(lastInstruction)$('#pi-prompt').value=lastInstruction;$('#pi-exact-text').value=lastExactText;$('#pi-text-mode').value=lastExactText?'exact':'none';letteringMode()}
+ if(action==='back'||action==='edit'){const retry=$('[data-pi-action="retry-render"]');if(retry)retry.hidden=true;state('composer');if(lastInstruction)$('#pi-prompt').value=lastInstruction;$('#pi-exact-text').value=lastManualText;$('#pi-text-mode').value=lastManualText?'exact':'none';letteringMode()}
  if(action==='fix')void fixImage();
  if(action==='good'){window.PhiImageLearning?.record(artifact,'looks_good');notice('Thank you. This result is a positive design example for future renders on this device.')}
  if(action==='clear'){
