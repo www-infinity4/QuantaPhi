@@ -220,8 +220,8 @@ function sourcePlan(roll,catalog,focus=''){
     // Start with the user's exact subject, not a random editorial angle.
     researchedTopic+' documented history original source',
     researchedTopic+' specific event origin development contemporary accounts',
-    [researchedTopic,sectorId===27?'company store brand business archive':'original evidence records',
-     'documented historical incident development'].join(' ')
+    [researchedTopic,realm||angle,direction,
+     sectorId===27?'company store brand business archive':'documented historical evidence'].join(' ')
   ]:[
    anchor+' '+angle+' '+variant+' '+preference.terms+' '+discoveryTerms+' site:'+domain,
    [specialty||sector,angle,sourceClass,variant,discoveryTerms].filter(Boolean).join(' '),
