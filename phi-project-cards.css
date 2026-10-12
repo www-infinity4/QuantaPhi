@@ -46,3 +46,21 @@
 #halloweenPhi .hphi-project-note{font-size:12px;color:#5b4771;flex:1 1 140px}
 #halloweenPhi .hphi-project-link{font-weight:800;color:#603084;font-size:13px}
 @media(max-width:580px){#phiProjectActions .pp-controls .pp-select{flex-basis:100%}#halloweenPhi .hphi-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Reusable Oracle Octaves image-upload tile: the invisible native picker owns the tap target. */
+#phiProjectActions .pp-upload-tile{display:flex;position:relative;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:142px;min-height:142px;margin:10px 0 6px;border:2px dashed #ae88d0;border-radius:19px;background:#fdf8ff;cursor:pointer;overflow:hidden;color:#502779;text-align:center}
+#phiProjectActions .pp-upload-tile:focus-within{outline:3px solid #6b33bc;outline-offset:3px}
+#phiProjectActions .pp-upload-tile input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;z-index:2}
+#phiProjectActions .pp-upload-plus{font-size:38px;font-weight:700;line-height:1}
+#phiProjectActions .pp-upload-caption{font-size:12px;font-weight:850;max-width:115px}
+#phiProjectActions .pp-upload-preview{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;opacity:.65}
+#phiProjectActions .pp-upload-preview[hidden]{display:none!important}
+#phiProjectActions .pp-upload-note{font-size:12px;color:#735982;margin:0 0 13px}
+
+#halloweenPhi .hphi-upload-tile{display:flex;position:relative;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:106px;height:106px;border:2px dashed #c4a5d8;border-radius:16px;background:#fffbfd;cursor:pointer;overflow:hidden;color:#552f7b;text-align:center}
+#halloweenPhi .hphi-upload-tile:focus-within{outline:3px solid #7139ba;outline-offset:2px}
+#halloweenPhi .hphi-upload-tile input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer;z-index:2}
+#halloweenPhi .hphi-upload-plus{font-size:30px;font-weight:850;line-height:1}
+#halloweenPhi .hphi-upload-label{font-size:11px;font-weight:800}
+#halloweenPhi .hphi-upload-preview{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6;pointer-events:none}
+#halloweenPhi .hphi-upload-preview[hidden]{display:none!important}

@@ -20,6 +20,25 @@ function projectControls(card,c){
  const plus=append(bar,e('button','＋ New token','hphi-project-new'));plus.type='button';
  const note=append(bar,e('span','','hphi-project-note'));note.setAttribute('role','status');
  const link=append(bar,e('a','Project page ↗','hphi-project-link'));link.href='/project-workspace/';
+ const imageTile=append(bar,e('label',undefined,'hphi-upload-tile'));
+ const imageInput=append(imageTile,e('input'));imageInput.type='file';imageInput.accept='image/png,image/jpeg,image/webp,image/gif,image/avif';imageInput.multiple=true;imageInput.setAttribute('aria-label','Add images to '+c.title+' project');
+ append(imageTile,e('span','＋','hphi-upload-plus'));
+ const uploadLabel=append(imageTile,e('span','Add images','hphi-upload-label'));
+ const uploadPreview=append(imageTile,e('img',undefined,'hphi-upload-preview'));uploadPreview.hidden=true;uploadPreview.alt='Selected Halloween image';
+ let preview='';
+ imageInput.addEventListener('change',async()=>{
+  const selected=Array.from(imageInput.files||[]).slice(0,8);imageInput.value='';
+  if(!selected.length)return;
+  if(!project()?.active()){note.textContent='Start or select a project token before adding images.';return}
+  if(preview)URL.revokeObjectURL(preview);
+  preview=URL.createObjectURL(selected[0]);uploadPreview.src=preview;uploadPreview.hidden=false;uploadLabel.textContent='Add more';
+  let added=0,failures=[];
+  for(const file of selected){
+   const result=await project().captureFile(file,c.id);
+   if(result.ok)added++;else failures.push(result.reason);
+  }
+  note.textContent=added+' image'+(added===1?'':'s')+' saved locally.'+(failures.length?' '+failures.join(' '):'');
+ });
  const refresh=()=>{const active=project()?.active();note.textContent=active?'Collecting to '+active.title+' ('+active.assets.length+' sources)':'No project token selected'};
  plus.addEventListener('click',()=>{
   const started=project()?.newToken(c.title+' collection');
