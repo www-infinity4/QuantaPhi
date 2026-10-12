@@ -68,8 +68,7 @@ window.QuantaPhiHalloweenPlayer=Object.freeze({
   return true;
  }
 });
-function cardForImage(src){return src.includes('Frankenstein')||src.includes('Dracula')||src.includes('Mummy')?'terriphi':'petriphi'}
-function image(grid,image){
+function image(grid,image,cardId){
  const src=valid(image.src),source=valid(image.source);if(!src||!source)return false;
  const b=append(grid,e('button',undefined,'hphi-image'));b.type='button';b.title=image.title||'Preview historic artwork';
  const img=append(b,e('img'));img.src=src;img.alt=image.title||'Historic Halloween artwork';img.loading='lazy';img.referrerPolicy='no-referrer';
@@ -81,7 +80,7 @@ function image(grid,image){
    append(d,e('p','Image license / credit: '+(image.license||'Check original source'),'hphi-credit'));
    const collect=append(d,e('button','＋ Collect image','hphi-collect-asset'));collect.type='button';
    collect.addEventListener('click',()=>{
-     const result=project()?.capture({kind:'image',title:image.title,sourceUrl:source,imageUrl:src,license:image.license,year:image.year,originCard:cardForImage(src)});
+     const result=project()?.capture({kind:'image',title:image.title,sourceUrl:source,imageUrl:src,license:image.license,year:image.year,originCard:cardId});
      collect.textContent=result?.ok?(result.duplicate?'Already in project ✓':'Added to project ✓'):(result?.reason||'Start a project first.');
    });
    link(d,'View original image and credit ↗',source);
@@ -95,7 +94,7 @@ function gallery(c,grid,status,offset){
  const shown=items.slice(offset,offset+2);
  for(const item of shown){
   // Never show an uncurated live-search result or an item without a pre-1940 date.
-  if(Number.isInteger(item.year)&&item.year>=1800&&item.year<1940)image(grid,item);
+  if(Number.isInteger(item.year)&&item.year>=1800&&item.year<1940)image(grid,item,c.id);
  }
  status.textContent=grid.children.length+' vetted vintage images · tap one for source and rights.';
  return offset+shown.length;
