@@ -158,7 +158,7 @@ export class BrainClock extends DurableObject{
        experientialMemory=await recallOutcomes(this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
          repository:job.repository,query:ticket.request+' '+job.instructions,limit:6});
      }catch{/* A missing memory schema must not block existing jobs. */}
-     lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories,experientialMemory};
+     lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories,...(engine?{experientialMemory}:{})};
      await this.ctx.storage.put(key,lease);
      await this.ctx.storage.put('repository-lease:'+job.repository,lease);
      await this.emit('greenbeans','pink-panther','writer claimed','Authenticated repository runner claimed '+ticket.id+'/'+job.id+'. It will inspect its credential, target repository and acceptance adapters before any write.',runUrl);
