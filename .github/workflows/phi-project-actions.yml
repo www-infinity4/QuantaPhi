@@ -35,6 +35,7 @@ jobs:
           node-version: '22'
       - name: Verify Oracle card JavaScript
         run: |
+          node --check phi-project-files.js
           node --check phi-project-package.js
           node --check phi-project-cards.js
           node --check phi-project-page.js
