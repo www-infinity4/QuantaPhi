@@ -12,11 +12,18 @@
     let quiet = false;
     let lastMessage = '';
     let lastAt = 0;
+    let wake = WAKE;
+    function setName(value) {
+      const alias = String(value || '').replace(/\s+/g, ' ').trim().slice(0,38);
+      const escaped = alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      wake = escaped ? new RegExp('^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:' + escaped + '|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])','i') : WAKE;
+    }
+    setName(options?.name);
     function accept(raw, time) {
       const now = Number.isFinite(time) ? time : Date.now();
       const text = String(raw ?? '').replace(/\s+/g, ' ').trim().slice(0, 1800);
       if (!text) return {type: 'ignore', reason: 'empty'};
-      const matched = text.match(WAKE);
+      const matched = text.match(wake);
       const directed = Boolean(matched);
       const content = directed ? text.slice(matched[0].length).replace(/^[\s,:.!?-]+/, '').trim() : text;
       if (!directed && (quiet || now > activeUntil)) return {type: 'ignore', reason: 'wake_name_required'};
@@ -34,6 +41,7 @@
     }
     return {
       accept,
+      setName,
       extend: (at) => {if (!quiet && activeUntil) activeUntil = (Number.isFinite(at) ? at : Date.now()) + keepMs;},
       reset: () => {activeUntil = 0; quiet = false; lastMessage = ''; lastAt = 0;},
       get active() {return !quiet && Date.now() <= activeUntil;},
@@ -42,3 +50,4 @@
   }
   root.BubblesVoiceGate = Object.freeze({create});
 })(typeof window !== 'undefined' ? window : globalThis);
+
