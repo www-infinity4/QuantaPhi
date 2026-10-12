@@ -71,6 +71,7 @@ const path=require('node:path');
  assert.equal(await page.locator('#pi-fix-notes').inputValue(),'');
  const fixed=await page.evaluate(()=>calls.filter(x=>x.type==='render').at(-1));
  assert.match(fixed.prompt,/Clean the distracting lettering only/);
+ assert.doesNotMatch(fixed.prompt,/Repair the connection to the plate/,'specific user fix must override other grader suggestions');
  await page.locator('[data-pi-action="edit"]').click();
  assert.equal(await page.locator('#pi-prompt').inputValue(),description);
  await page.locator('#pi-text-mode').selectOption('exact');
