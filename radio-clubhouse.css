@@ -8,7 +8,7 @@
 #radioClubhouse .rc-eyebrow{display:block;color:#5b2d84;font-size:10px;font-weight:950;letter-spacing:.11em;line-height:1.5}
 #radioClubhouse .rc-title{font-size:clamp(22px,5vw,30px);font-weight:950;line-height:1.2;margin:8px 0 6px;letter-spacing:-.04em;color:#3d1f5d}
 #radioClubhouse .rc-subtitle{font-size:13px;line-height:1.55;color:#6c547b;margin:0;max-width:520px}
-#radioClubhouse .rc-refresh{background:#492277;color:white;border:1px solid #714ba0;border-radius:999px;min-height:43px;padding:8px 16px;font-size:12px;font-weight:850;box-shadow:0 4px 13px #4a278f30;cursor:pointer}
+#radioClubhouse .rc-refresh{background:#492277;color:white;border:1px solid #714ba0;border-radius:999px;min-height:44px;padding:8px 16px;font-size:12px;font-weight:850;box-shadow:0 4px 13px #4a278f30;cursor:pointer}
 #radioClubhouse .rc-refresh:disabled{opacity:.65;cursor:wait}
 #radioClubhouse .rc-status{font-size:12px;color:#674e74;line-height:1.5;margin:12px 0 15px}
 #radioClubhouse .rc-feed{display:grid;gap:13px}
@@ -22,7 +22,7 @@
 #radioClubhouse .rc-excerpt{font-size:14px;line-height:1.5;color:#4c4355;margin:4px 0 9px;overflow-wrap:anywhere}
 #radioClubhouse .rc-meta{font-size:11px;line-height:1.5;color:#73617e;margin:4px 0 12px}
 #radioClubhouse .rc-actions{display:flex;gap:8px;flex-wrap:wrap}
-#radioClubhouse .rc-actions .rc-button{min-height:43px;border-radius:999px;border:1px solid #ab91c6;padding:10px 13px;display:inline-flex;align-items:center;justify-content:center;text-align:center;font:800 12px/1.25 system-ui,-apple-system,Roboto,sans-serif;text-decoration:none;white-space:normal;cursor:pointer;background:#f2e8fa;color:#452366;box-shadow:none;margin:0;max-width:100%}
+#radioClubhouse .rc-actions .rc-button{min-height:44px;border-radius:999px;border:1px solid #ab91c6;padding:10px 13px;display:inline-flex;align-items:center;justify-content:center;text-align:center;font:800 12px/1.25 system-ui,-apple-system,Roboto,sans-serif;text-decoration:none;white-space:normal;cursor:pointer;background:#f2e8fa;color:#452366;box-shadow:none;margin:0;max-width:100%}
 #radioClubhouse .rc-actions .rc-reader{background:#492277;border-color:#492277;color:white}
 #radioClubhouse .rc-actions .rc-original{background:#fff8de;border-color:#dfbf65;color:#51370d}
 #radioClubhouse .rc-actions .rc-secondary{background:#fff;color:#5b377b}
