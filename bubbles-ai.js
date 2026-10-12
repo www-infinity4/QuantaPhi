@@ -44,7 +44,7 @@ messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&t
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerReady=false,showing=false;
 let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
-const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000})||null;
+const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias})||null;
 
 function persistChat(){
  if(!keepChat)return false;
@@ -125,6 +125,7 @@ document.body.append(launcher,panel);
 function updateRole(){
  config={role:persona.value,alias:alias.value.trim().slice(0,38)||'Bubbles',instructions:instructions.value.trim().slice(0,1200),voice:Boolean(config.voice)};
  save(CONFIG,config);name.textContent=config.alias;status.textContent=ROLES[config.role].name+' · Oracle Cloudflare AI · account access not implied';
+ voiceGate?.setName(config.alias);
 }
 saveRole.addEventListener('click',()=>{updateRole();saveRole.textContent='Role saved ✓';setTimeout(()=>saveRole.textContent='Save bubble role',1300)});
 persona.addEventListener('change',updateRole);
@@ -329,11 +330,14 @@ function beginRecognition(){
   if(voiceRetry)clearTimeout(voiceRetry);
   voiceRetry=setTimeout(()=>{voiceRetry=null;beginRecognition()},Math.min(2500,300*Math.pow(1.5,Math.min(tries++,5))));
  };
- try{r.start();setOrbState('listening');status.textContent='Bubbles is listening. Say “Bubbles” and your request.'}
+ try{r.start();setOrbState('listening');status.textContent=config.alias+' is listening. Say “'+config.alias+'” and your request.'}
  catch(error){recognition=null;listening=null;stopVoice('Speech recognition could not start: '+String(error?.message||error).slice(0,110))}
 }
 async function startVoice(){
  if(voiceEnabled)return;
+ // Unlock spoken output in the tap gesture, before microphone permission awaits.
+ toggle(true);
+ if(config.voice)speakText('Hello, I am '+config.alias+'. Say '+config.alias+' and your request.');
  const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;
  if(!Recognition||!voiceGate){toggle(true);status.textContent='Continuous speech recognition is not supported here. You can still type. An Android app is needed for other apps.';return}
  if(!navigator.mediaDevices?.getUserMedia){toggle(true);status.textContent='This browser cannot request a microphone stream. Use the keyboard.';return}
@@ -425,3 +429,4 @@ if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 
 })();
+
