@@ -5,6 +5,7 @@ on:
       - 'radio-clubhouse.*'
       - 'index.html'
       - 'workers/quantaphi-site/worker.js'
+      - 'workers/radio-clubhouse-feed/worker.js'
       - 'tests/radio-clubhouse.test.mjs'
       - '.github/workflows/radio-clubhouse.yml'
   push:
@@ -27,5 +28,6 @@ jobs:
         run: |
           node --check radio-clubhouse.js
           node --check workers/quantaphi-site/worker.js
+          node --check workers/radio-clubhouse-feed/worker.js
       - name: Verify source, newest-first and no backfill behavior
         run: node --test tests/radio-clubhouse.test.mjs
