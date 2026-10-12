@@ -3,7 +3,7 @@ import { authenticate, supported } from './runner-auth.mjs';
 import { validatePreview } from './preview-contract.mjs';
 import { jobQuant } from './job-quant.mjs';
 import { earnedWork } from './bot-work-policy.mjs';
-import { rememberOutcome, recallOutcomes } from './brain-rag-memory.mjs';
+import { rememberOutcome, recallOutcomes, retryPendingEmbeddings } from './brain-rag-memory.mjs';
 const PERIOD=30000,VERSION='20261010-repository-engine1';
 const REPOS={has:repo=>/^[\w.-]+$/.test(repo)};
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
@@ -502,7 +502,11 @@ async function ownerAuthorized(env,token){
 }
 
 export default{
- async scheduled(event,env){await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/start');},
+ async scheduled(event,env){
+  await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/start');
+  // Bounded, credential-free replay of high-level memories after transient AI/index failures.
+  try{await retryPendingEmbeddings(env,env.WRITER_OWNER_HASH,2)}catch{/* Existing Brain scheduler must keep running. */}
+ },
  async fetch(request,env){
   const path=new URL(request.url).pathname;
   if(path==='/owner/session'&&request.method==='POST'){
