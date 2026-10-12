@@ -1,0 +1,18 @@
+name: Bubbles real tool results
+on:
+  pull_request:
+    paths: ['workers/bubbles-tools/**', 'test/bubbles-tools.test.mjs', '.github/workflows/bubbles-tools.yml']
+  push:
+    branches: [main]
+    paths: ['workers/bubbles-tools/**', 'test/bubbles-tools.test.mjs', '.github/workflows/bubbles-tools.yml']
+permissions:
+  contents: read
+jobs:
+  tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test test/bubbles-tools.test.mjs
