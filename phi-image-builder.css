@@ -103,3 +103,52 @@
 #phiImageBuilder .pi-type-status{margin:8px 0;color:#392567;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
 #phiImageBuilder .pi-type-footer{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:10px 0}
 #phiImageBuilder .pi-type-footer button{padding:7px 4px;font-size:11px}
+
+
+/* Oracle Octaves image studio: light cards, quiet controls, readable review. */
+#phiImageBuilder.oracle-image-studio{color:var(--oracle-ink,#28183d);font-family:system-ui,-apple-system,Roboto,sans-serif}
+#phiImageBuilder.oracle-image-studio .pi-panel{background:linear-gradient(145deg,#fff,#f8f1ff);border:1px solid var(--oracle-edge,#cba5ee);border-radius:24px;padding:clamp(16px,3vw,24px);box-shadow:0 13px 30px #6b2db72e,0 0 16px #8441df26;min-width:0;box-sizing:border-box}
+#phiImageBuilder.oracle-image-studio :is(h2,h3){color:#532784;line-height:1.3;text-wrap:balance}
+#phiImageBuilder.oracle-image-studio h2{font-size:clamp(22px,5vw,28px);margin:5px 0 8px}
+#phiImageBuilder.oracle-image-studio h3{font-size:15px;margin:0 0 9px}
+#phiImageBuilder.oracle-image-studio .pi-eyebrow{font-size:11px;font-weight:850;letter-spacing:.1em;color:#7542b0}
+#phiImageBuilder.oracle-image-studio :is(.pi-sub,.pi-notice){font-size:13px;line-height:1.6;color:#5f4a73}
+#phiImageBuilder.oracle-image-studio .pi-section{padding:16px 0;border-top:1px solid #e5d3f5;margin-top:14px;min-width:0}
+#phiImageBuilder.oracle-image-studio .pi-modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:0}
+#phiImageBuilder.oracle-image-studio :is(button,.pi-mode){min-height:44px;border-radius:999px;padding:10px 14px;border:1px solid #bd9bd7;background:linear-gradient(150deg,#fff,#f2e6ff);color:#532885;font-size:13px;line-height:1.38;font-weight:800;box-shadow:0 4px 14px #7f4dbb20;white-space:normal;overflow-wrap:break-word;touch-action:manipulation}
+#phiImageBuilder.oracle-image-studio :is(.pi-primary,.pi-mode[aria-pressed="true"]){color:#fff;background:linear-gradient(135deg,#7940c9,#5a269b);border-color:#7138b8;box-shadow:0 4px 14px #7f4dbb2e}
+#phiImageBuilder.oracle-image-studio .pi-primary{width:100%!important}
+#phiImageBuilder.oracle-image-studio .pi-file{border:1px dashed #b68ddf;background:#fff;min-height:114px;border-radius:18px}
+#phiImageBuilder.oracle-image-studio .pi-file strong{color:#532885;font-size:13px}
+#phiImageBuilder.oracle-image-studio .pi-file small{color:#6b5b7d;font-size:11px}
+#phiImageBuilder.oracle-image-studio .pi-label{display:block;font-size:12px;font-weight:800;color:#5a308b;margin-bottom:7px}
+#phiImageBuilder.oracle-image-studio :is(textarea,.pi-exact-input){box-sizing:border-box;width:100%;min-height:44px;background:#fff;color:#332345;border:1px solid #bba0d9;border-radius:16px;padding:12px;font:inherit;font-size:14px;margin-top:0}
+#phiImageBuilder.oracle-image-studio textarea{min-height:140px;line-height:1.6}
+#phiImageBuilder.oracle-image-studio #pi-exact-text{margin-top:9px}
+#phiImageBuilder.oracle-image-studio .pi-result{border:1px solid #c6a2ee;box-shadow:none;background:#f5ebff;border-radius:18px;max-height:640px}
+#phiImageBuilder.oracle-image-studio :is(.pi-lettering,.pi-type-panel,.pi-audit){background:linear-gradient(145deg,#fff,#f8f1ff);color:#28183d;border:1px solid #c6a2ee;border-radius:20px;padding:16px;box-shadow:none;margin-top:16px}
+#phiImageBuilder.oracle-image-studio :is(.pi-audit-title,.pi-lettering strong){color:#532784;text-shadow:none}
+#phiImageBuilder.oracle-image-studio :is(.pi-audit-summary,.pi-audit-issues){color:#5f4a73;font-size:13px;line-height:1.6}
+#phiImageBuilder.oracle-image-studio .pi-audit-issues{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+#phiImageBuilder.oracle-image-studio .pi-issue-choice{display:flex;gap:10px;align-items:flex-start;padding:10px;background:#fff;border:1px solid #e5d3f5;border-radius:12px;cursor:pointer}
+#phiImageBuilder.oracle-image-studio .pi-issue-choice input{flex:0 0 20px;width:20px;height:20px;margin:2px 0;accent-color:#7940c9}
+#phiImageBuilder.oracle-image-studio .pi-audit[data-review="needs_work"]{border-color:#c49b49;background:#fffaf0}
+#phiImageBuilder.oracle-image-studio .pi-audit[data-review="good"]{border-color:#8aaf9b;background:#f5fcf7}
+#phiImageBuilder.oracle-image-studio :is(.pi-actions,.pi-local-actions){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;align-items:stretch}
+#phiImageBuilder.oracle-image-studio .pi-actions .pi-wide{grid-column:1/-1}
+#phiImageBuilder.oracle-image-studio .pi-local-actions button:last-child{grid-column:1/-1}
+#phiImageBuilder.oracle-image-studio .pi-step{background:#f8f1ff;border:1px solid #dbc7ed;color:#532885;min-height:44px}
+#phiImageBuilder.oracle-image-studio .pi-step[data-state="active"]{background:#fff;border-color:#7940c9}
+#phiImageBuilder.oracle-image-studio .pi-step[data-state="done"]{background:#e4f7ed;border-color:#72b58b}
+#phiImageBuilder.oracle-image-studio .pi-step[data-state="error"]{background:#ffecec;border-color:#d78c8c}
+#phiImageBuilder.oracle-image-studio :is(button,input,textarea,select):focus-visible{outline:3px solid #8654de;outline-offset:3px}
+#phiImageBuilder.oracle-image-studio button:hover{border-color:#8b49d5;box-shadow:0 0 0 2px #9153de29}
+#phiImageBuilder.oracle-image-studio button:disabled{opacity:.55;cursor:wait}
+@media(min-width:700px){#phiImageBuilder.oracle-image-studio .pi-modes{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:350px){#phiImageBuilder.oracle-image-studio .pi-file-area{grid-template-columns:1fr}#phiImageBuilder.oracle-image-studio :is(.pi-local-actions,.pi-actions){grid-template-columns:1fr}}
+/* Scoped precedence over legacy home-page control adapters. */
+body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(.pi-mode,.pi-primary,.pi-actions button){min-height:44px!important;border-radius:999px!important;border:1px solid #bd9bd7!important;background:linear-gradient(150deg,#fff,#f2e6ff)!important;color:#532885!important;font-weight:800!important;padding:10px 14px!important;box-shadow:0 4px 14px #7f4dbb20!important}
+body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(.pi-primary,.pi-mode[aria-pressed="true"]){background:linear-gradient(135deg,#7940c9,#5a269b)!important;color:#fff!important;border-color:#7138b8!important}
+body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(.pi-modes,.pi-actions){display:grid!important;gap:9px!important;align-items:stretch!important}
+body.oracle-quanta #phiImageBuilder.oracle-image-studio .pi-primary{width:100%!important}
+body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(button,input,textarea,select):focus-visible{outline:3px solid #8654de!important}
