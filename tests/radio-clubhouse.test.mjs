@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { test, after } from 'node:test';
 
-const source=await readFile(new URL('../workers/quantaphi-site/worker.js',import.meta.url),'utf8');
+const source=await readFile(new URL('../workers/radio-clubhouse-feed/worker.js',import.meta.url),'utf8');
 const worker=(await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'))).default;
 const originalFetch=globalThis.fetch;
 const ENDPOINT='https://quantaphi.org/api/radio-clubhouse';
