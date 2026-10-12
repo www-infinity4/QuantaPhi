@@ -4,7 +4,8 @@
 'use strict';
 const host=document.getElementById('bubblesAICard');
 if(!host)return;
-const AI='https://infinity-rogers.marvaseater.workers.dev/v1/chat';
+// The tool gateway delegates ordinary chat to Oracle /v1/chat.
+const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
 const TICKETS='https://infinity-work-tickets.marvaseater.workers.dev';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
 const params=new URLSearchParams(location.search);
@@ -238,12 +239,22 @@ async function sendMessage(text){
  'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Reply directly and use clear plain text.'].join('\n\n');
  try{
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),22000);
-  let response;try{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})})}finally{clearTimeout(timer)}
+  let response;try{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})})}finally{clearTimeout(timer)}
   const json=await response.json().catch(()=>({}));
   if(!response.ok||json.ok===false)throw Error(String(json.error||'Oracle conversation failed'));
   const answer=extract(json);if(!answer)throw Error('The AI returned no spoken or written reply');
   messages.push({role:'assistant',text:answer});messages=messages.slice(-20);persistChat();
   display(answer,'ai');status.textContent=config.alias+' · response received';
+  if(Array.isArray(json.sources)){
+   const row=create('div','ba-message-actions');
+   for(const source of json.sources.slice(0,5)){
+    try{const url=new URL(source.url);if(url.protocol!=='https:')continue;
+     const link=create('a','ba-link',String(source.title||'News source').slice(0,320));link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';row.append(link);
+    }catch{}
+   }
+   conversation.append(row);
+  }
+  if(json.receipt)status.textContent=config.alias+' · '+json.receipt.tool+' · '+json.receipt.status;
   if(config.voice)speakText(answer);
  }catch(error){const message='I could not complete the response: '+String(error?.message||error).slice(0,150);display(message,'ai');status.textContent=message}
  finally{busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
