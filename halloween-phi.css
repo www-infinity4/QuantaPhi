@@ -1,25 +1,25 @@
 
 #halloweenPhi{margin:20px auto;max-width:1120px;font-family:system-ui,sans-serif}
 .hphi-deck{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:17px}
-.hphi-card{color:#fff8e5;background:radial-gradient(circle at 88% 0%,#61306f,#1a102a 67%);border:2px solid #aa76df;border-radius:22px;padding:19px;box-shadow:0 10px 36px #100a2450;min-width:0;overflow-wrap:anywhere}
-.hphi-card[data-card="petriphi"]{background:radial-gradient(circle at 85% 0%,#513354,#1b1223 65%);border-color:#dfbd75}
+.hphi-card{color:#efe4cb;background:#111111;border:1px solid #79694e;border-radius:12px;padding:19px;box-shadow:0 10px 30px #0007;min-width:0;overflow-wrap:anywhere}
+.hphi-card[data-card="petriphi"]{background:#1a1a1a;border-color:#83705b}
 .hphi-brand{display:block;color:#ffdb91;font-size:12px;font-weight:850;letter-spacing:.11em;text-transform:uppercase}
 .hphi-card h2{font-size:clamp(25px,5vw,34px);color:#fff8e9;margin:10px 0 5px}
 .hphi-card h3{font-size:19px;color:#ffdda0;margin:17px 0 7px}
 .hphi-card p{line-height:1.45;margin:9px 0}
 .hphi-subtitle{font-size:14px;color:#e8d3f1}
 .hphi-controls{display:flex;flex-wrap:wrap;gap:9px;margin:11px 0}
-.hphi-card button,.hphi-card .hphi-btn{font:700 14px system-ui,sans-serif;min-height:44px;white-space:normal;overflow-wrap:anywhere;padding:10px 13px;border-radius:12px;border:1px solid #e9c482;background:#52256c;color:#fffbea;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none}
-.hphi-card button:hover,.hphi-card .hphi-btn:hover{background:#7d39a1}
+.hphi-card button,.hphi-card .hphi-btn{font:700 14px system-ui,sans-serif;min-height:44px;white-space:normal;overflow-wrap:anywhere;padding:10px 13px;border-radius:6px;border:1px solid #a49373;background:#242424;color:#f2e5c9;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none}
+.hphi-card button:hover,.hphi-card .hphi-btn:hover{background:#3b3329}
 .hphi-card button:focus-visible,.hphi-card a:focus-visible,.hphi-card summary:focus-visible{outline:3px solid #fff09e;outline-offset:3px}
-.hphi-film{border:1px solid #a57fba;border-radius:15px;padding:12px;margin:14px 0;background:#ffffff0d}
+.hphi-film{border:1px solid #655744;border-radius:8px;padding:12px;margin:14px 0;background:#1a1a1a}
 .hphi-film iframe{aspect-ratio:16/9;width:100%;border:0;border-radius:12px}
 .hphi-note,.hphi-credit{font-size:12px;color:#e2d0e8}
 .hphi-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
 .hphi-card .hphi-image{padding:0;min-height:0;aspect-ratio:3/4;overflow:hidden;background:#211427;width:100%}
 .hphi-image img{width:100%;height:100%;object-fit:cover;display:block}
 .hphi-status{font-size:13px;color:#f6dba0;min-height:20px}
-.hphi-studio{margin-top:16px;border:1px solid #a78cbd;border-radius:14px;padding:12px;background:#ffffff0b}
+.hphi-studio{margin-top:16px;border:1px solid #655744;border-radius:8px;padding:12px;background:#1a1a1a}
 .hphi-studio summary{font-weight:800;cursor:pointer}
 .hphi-studio iframe{width:100%;height:550px;max-height:75vh;border:0;border-radius:10px;background:#fff;margin:10px 0}
 .hphi-image-dialog{width:min(94vw,680px);max-height:90vh;border:2px solid #ddb96f;border-radius:18px;background:#170e24;color:#fff4df;padding:20px}
@@ -27,3 +27,6 @@
 .hphi-image-dialog img{width:100%;max-height:63vh;object-fit:contain}
 .hphi-image-dialog a{color:#ffe09a}
 @media(prefers-reduced-motion:reduce){.hphi-card *{animation:none!important;scroll-behavior:auto!important}}
+
+.hphi-player-host:empty{display:none}
+.hphi-player-host iframe{display:block;max-width:100%;background:#000}
