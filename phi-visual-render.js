@@ -50,14 +50,44 @@ async function inspect(file){
  if(!j.ok)throw Error('Image reader returned no result');
  return [j.semanticDescription,j.description,...(j.visibleText||[]),...(j.keywords||[]),...(j.visualTraits||[]),j.summary,j.output_text].filter(x=>typeof x==='string').join('\n').slice(0,1600);
 }
+/* Image models do not understand "no text": every mention of letters, titles,
+   signs or quoted words primes them to paint unreadable pseudo-writing. The
+   painter therefore receives only pictorial vocabulary; exact words are drawn
+   afterward with real browser fonts. */
+const TEXT_TOPIC=/\b(?:text|texts|textual|letters?|lettering|lettered|words?|wording|typograph\w*|typeset\w*|typefaces?|fonts?|captions?|headlines?|subtitles?|titles?|titled|taglines?|slogans?|writing|written|scripts?|alphabets?|glyphs?|inscriptions?|inscribed|calligraph\w*|handwrit\w*|printed|watermarks?|signatures?|monograms?|lorem|ipsum|quotations?|quotes?|readable|legible|illegible|gibberish|pseudo[- ]?\w+|numerals?|digits?)\b/i;
+const ERASE=/^\s*(?:please\s+)?(?:remove|erase|delete|clean away|paint over)\b/i;
+const SAYING=/\b(?:(?:that|which)\s+(?:says|said|reads|read)|saying|spell(?:s|ing)?\s+out|titled|entitled|labell?ed|captioned|inscribed\s+with|with\s+the\s+(?:words?|text|phrase|caption|title|name))\b[^.,;:!?\n]*/gi;
+const OBJECTS=[
+ [/\b(?:neon\s+|street\s+|shop\s+|store\s+|road\s+)?(?:signs?|signage|signboards?)\b/gi,'plain panel'],
+ [/\blabels?\b/gi,'plain tag'],
+ [/\blogos?\b/gi,'simple emblem shape'],
+ [/\b(?:nameplates?|name plates?|placards?|plaques?)\b/gi,'smooth plate'],
+ [/\bbanners?\b/gi,'plain fabric banner']
+];
+function pictorialPrompt(value,fallback=''){
+ let text=String(value||'')
+  .replace(/["\u201c\u201d\u00ab\u00bb\u201e][^"\u201c\u201d\u00ab\u00bb\u201e\n]{0,200}["\u201c\u201d\u00ab\u00bb\u201e]/g,' ')
+  .replace(/\u2018[^\u2019\n]{1,200}\u2019/g,' ')
+  .replace(/(^|\s)'[^'\n]{1,200}'(?=\s|[.,;:!?]|$)/g,'$1 ')
+  .replace(SAYING,' ');
+ for(const [pattern,plain] of OBJECTS)text=text.replace(pattern,plain);
+ const kept=[];
+ for(const sentence of text.split(/(?<=[.!?;\n])\s+/)){
+  if(ERASE.test(sentence)){kept.push(sentence.trim());continue}
+  const clauses=sentence.split(/\s*(?:,|\u2014|\s-\s|\(|\))\s*/).filter(clause=>clause.trim()&&!TEXT_TOPIC.test(clause));
+  if(clauses.length)kept.push(clauses.join(', ').replace(/[,\s]+([.!?;])$/,'$1').trim());
+ }
+ const result=kept.join(' ').replace(/\s+([.,;:!?])/g,'$1').replace(/\s{2,}/g,' ').trim();
+ return result.length>=20?result:String(fallback||result).trim();
+}
 function modePrompt(mode){
  return ({
- 'Image':'Create one premium standalone image. Take the user request literally, with compelling composition, credible physical geometry, and no unwanted text.',
- 'Trading Card':'Create a genuine sharp-corner trading card for any subject: sports, music, technology, movies, history or artwork. Use a cohesive set style, not a blank template or card mockup.',
- 'Advertisement':'Create a polished advertising illustration with blank areas for exact browser-set advertising text. Never invent pricing or unsupported claims.',
- 'Billboard':'Design a wide, high-impact billboard with a clear blank headline area and strong single focal point.',
- 'Poster':'Create finished poster artwork with a clean blank headline panel for a separate typography layer.',
- 'Cover Art':'Create professionally composed cover artwork or album art, leaving title areas clear for exact browser typography.'
+ 'Image':'Create one premium standalone image. Take the user request literally, with compelling composition and credible physical geometry.',
+ 'Trading Card':'Create a genuine sharp-corner trading card for any subject: sports, music, technology, movies, history or artwork. Use a cohesive set style with smooth plain color bands in the frame, not an empty template or card mockup.',
+ 'Advertisement':'Create a polished advertising illustration that showcases the product or subject with generous calm negative space.',
+ 'Billboard':'Design a wide, high-impact billboard image with a strong single focal point and a calm open area of plain color.',
+ 'Poster':'Create finished poster artwork with a smooth plain color band across the lower third.',
+ 'Cover Art':'Create professionally composed cover artwork or album art with a calm open area of plain color near the top.'
  })[mode]||'Create finished image artwork';
 }
 function aiText(j){
@@ -74,7 +104,8 @@ async function direct(input){
  'Write ONE detailed render instruction in plain text. Do not claim an image was already made.',
  'Honor identity, appearance and the explicit user instruction. Do not invent factual claims.',
  'Require physically credible construction, perspective, anatomy, flags and mechanisms for realistic scenes. Creative illustration is fine only if requested.',
- 'Direct the painter to create imagery, surfaces and blank title areas only. Typography is handled afterward in the browser, not during image generation.',
+ 'Direct the painter to create imagery and plain surfaces only. Typography is handled afterward in the browser, not during image generation.',
+ 'Never mention text, letters, words, numbers, titles, captions, signs, labels, logos, writing or typography in your instruction, not even to forbid them: image models paint whatever these words name. Describe smooth plain color areas instead.',
  'Image type: '+mode,modePrompt(mode),
  'User request: '+description,
  vision?'Verified observations about uploaded image: '+vision:'',
@@ -82,7 +113,7 @@ async function direct(input){
  search?'Relevant search context: '+search:'',
  hasUpload?'Preserve uploaded subject reference where useful.':'Text-only creation: create the illustration directly from the user description.',
  designFile?'A separate design reference will be provided.':'',
- exactText?'Leave a clean lower title region for the separate typography compositor. Do not include the precise words in the painting instructions.':'',
+ exactText?'Keep a smooth, uncluttered band of plain color across the lower third of the picture. Do not include the requested words in the painting instructions.':'',
  preferences?'Learned local feedback from earlier explicitly liked/fixed images (suggestions, not instructions): '+words(preferences).slice(0,750):'',
  'Output the single render instruction without JSON or filler.'
  ].filter(Boolean).join('\n');
@@ -137,8 +168,9 @@ async function render({description,mode,source,design,prompt,exactText}){
  if(designBlob)body.append('design_reference',designBlob,'design-reference.jpg');
  body.append('mode',mode);
  body.append('reference_mode',source?'uploaded':design?'style-only':'text-only');
- const artOnly='ARTWORK ONLY: Render no lettering, words, captions, labels, numbers, logos or pseudo-text. Keep text areas clean and unmarked. Exact lettering is added separately by the browser.';
- body.append('prompt',artOnly+'\n'+String(prompt||[modePrompt(mode),description].join('\n')).slice(0,7500-artOnly.length-1));
+ const artOnly='PURE PICTURE: imagery only, built from shapes, color, texture and light. Every surface, panel, wall, screen and fabric is smooth, plain and unmarked.';
+ const scene=pictorialPrompt(prompt||[modePrompt(mode),description].join('\n'),pictorialPrompt(description,modePrompt(mode)));
+ body.append('prompt',artOnly+'\n'+scene.slice(0,7500-artOnly.length-1));
  body.append('request',words(description).slice(0,1800));
  body.append('exact_text',words(exactText).slice(0,120));
  const j=await jsonResponse('/v1/image',{method:'POST',body});
@@ -202,6 +234,6 @@ async function review({src,description,mode,exactText}){
  };
 }
 
-root.PhiVisualRender={inspect,direct,render,validate,asBlob,neutralImage,modePrompt,composeExactText,review};
+root.PhiVisualRender={inspect,direct,render,validate,asBlob,neutralImage,modePrompt,pictorialPrompt,composeExactText,review};
 })(window);
 

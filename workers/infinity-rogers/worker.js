@@ -655,6 +655,34 @@ async function runImageReview(request,env){
  }catch(error){return json(request,{ok:false,error:String(error?.message||error)},502)}
 }
 
+/* Image models paint whatever text-related words name, even when told not to.
+   The renderer receives only pictorial vocabulary (mirrors phi-visual-render.js). */
+const TEXT_TOPIC=/\b(?:text|texts|textual|letters?|lettering|lettered|words?|wording|typograph\w*|typeset\w*|typefaces?|fonts?|captions?|headlines?|subtitles?|titles?|titled|taglines?|slogans?|writing|written|scripts?|alphabets?|glyphs?|inscriptions?|inscribed|calligraph\w*|handwrit\w*|printed|watermarks?|signatures?|monograms?|lorem|ipsum|quotations?|quotes?|readable|legible|illegible|gibberish|pseudo[- ]?\w+|numerals?|digits?)\b/i;
+const ERASE=/^\s*(?:please\s+)?(?:remove|erase|delete|clean away|paint over)\b/i;
+const SAYING=/\b(?:(?:that|which)\s+(?:says|said|reads|read)|saying|spell(?:s|ing)?\s+out|titled|entitled|labell?ed|captioned|inscribed\s+with|with\s+the\s+(?:words?|text|phrase|caption|title|name))\b[^.,;:!?\n]*/gi;
+const OBJECTS=[
+ [/\b(?:neon\s+|street\s+|shop\s+|store\s+|road\s+)?(?:signs?|signage|signboards?)\b/gi,'plain panel'],
+ [/\blabels?\b/gi,'plain tag'],
+ [/\blogos?\b/gi,'simple emblem shape'],
+ [/\b(?:nameplates?|name plates?|placards?|plaques?)\b/gi,'smooth plate'],
+ [/\bbanners?\b/gi,'plain fabric banner']
+];
+function pictorialPrompt(value,fallback=''){
+ let text=String(value||'')
+  .replace(/["\u201c\u201d\u00ab\u00bb\u201e][^"\u201c\u201d\u00ab\u00bb\u201e\n]{0,200}["\u201c\u201d\u00ab\u00bb\u201e]/g,' ')
+  .replace(/\u2018[^\u2019\n]{1,200}\u2019/g,' ')
+  .replace(/(^|\s)'[^'\n]{1,200}'(?=\s|[.,;:!?]|$)/g,'$1 ')
+  .replace(SAYING,' ');
+ for(const [pattern,plain] of OBJECTS)text=text.replace(pattern,plain);
+ const kept=[];
+ for(const sentence of text.split(/(?<=[.!?;\n])\s+/)){
+  if(ERASE.test(sentence)){kept.push(sentence.trim());continue}
+  const clauses=sentence.split(/\s*(?:,|\u2014|\s-\s|\(|\))\s*/).filter(clause=>clause.trim()&&!TEXT_TOPIC.test(clause));
+  if(clauses.length)kept.push(clauses.join(', ').replace(/[,\s]+([.!?;])$/,'$1').trim());
+ }
+ const result=kept.join(' ').replace(/\s+([.,;:!?])/g,'$1').replace(/\s{2,}/g,' ').trim();
+ return result.length>=20?result:String(fallback||result).trim();
+}
 async function runImage(request, env) {
  if (!env.AI) return json(request,{ok:false,error:"workers_ai_not_configured"},503);
  let form;
@@ -696,31 +724,32 @@ async function runImage(request, env) {
  const styleOnly=!image&&Boolean(designReference);
  const modeRules={
   "Image":"Create a standalone premium visual image. Match the requested subject, composition and aesthetic. No card frame or printing decoration unless the user requests it.",
-  "Trading Card":"Create a complete sharp-corner premium collectible trading card, sports or nonsports as specified. Do not make a blank template, slab or mockup. All name plates and labels must be blank for exact browser typography afterward; do not create pseudo-lettering.",
-  "Advertisement":"Create one finished professional advertising graphic. Preserve supplied brand/product identity. Do not invent sales claims or prices. No collectible-card framing.",
-  "Billboard":"Create an impactful wide billboard image with a single strong focal point and clean headline area. No trading-card frame or mockup.",
-  "Poster":"Create finished poster artwork with intentional composition and a clean empty headline region for later real typography. No card frame unless explicitly requested.",
-  "Cover Art":"Create finished editorial, music or book-cover artwork. Preserve the subject and leave clean empty title space; the browser adds correct lettering afterward. Do not add a trading-card border."
+  "Trading Card":"Create a complete sharp-corner premium collectible trading card, sports or nonsports as specified. Do not make an empty template, slab or mockup. Frame bands are smooth plain color.",
+  "Advertisement":"Create one finished professional advertising picture that showcases the product or subject with generous calm negative space. No collectible-card framing.",
+  "Billboard":"Create an impactful wide billboard image with a single strong focal point and a calm open area of plain color. No trading-card frame or mockup.",
+  "Poster":"Create finished poster artwork with intentional composition and a smooth plain color band across the lower third. No card frame unless explicitly requested.",
+  "Cover Art":"Create finished editorial, music or book-cover artwork. Preserve the subject and keep a calm open area of plain color near the top. Do not add a trading-card border."
  };
  const domain=sports?"sports trading card":"premium collectible trading card";
  const executionOnly="Create a complete premium collectible trading-card illustration. Preserve the supplied subject, correct era, identity, and proportions. "+
   borderRule+" Show the full straight rectangular perimeter, connected anatomy and equipment, controlled light and credible materials. "+
-  "Use smooth completely unmarked nameplates and title panels: a separate browser typography compositor handles all printed words. "+
-  "Focus entirely on photography, illustration, color, texture and graphic layout rather than printed lettering.";
+  "Frame bands and panels are smooth, plain and unmarked. "+
+  "Focus entirely on photography, illustration, color, texture and graphic layout.";
  const visualExecution="Create one finished professional "+mode.toLowerCase()+" image. "+modeRules[mode]+" "+
   (blankReference?"Create the picture from the subject description alone. ":styleOnly?"Use the single reference for style, not as the subject. ":"Preserve the uploaded subject and composition as directed. ")+
-  "Paint only the scene, objects, photography and visual design. Make all signage, logos, captions and title areas smooth and empty for later precise browser text placement. "+
+  "Paint only the scene, objects, photography and visual design. Every panel, wall, screen and fabric is smooth, plain and unmarked. "+
   "Use coherent perspective, physically connected parts and realistic materials when realism is requested. "+
-  (exactText?"Leave an unobstructed, high-contrast lower title area for precise browser lettering. ":"Keep decorative panels and surfaces clean and unmarked. ");
+  (exactText?"Keep a smooth, uncluttered band of plain color across the lower third. ":"Keep decorative panels and surfaces clean and unmarked. ");
  // A single clean art direction is used for each model; no prompt mutation
  // or fabricated text variants between attempts.
  const governingPrompt=mode==="Trading Card"?executionOnly:visualExecution;
- // Keep the "no invented writing" rule LAST so descriptions that mention signs,
- // packaging, or titles don't persuade the model to paint unreadable glyphs.
+ // Naming text (even to forbid it) makes FLUX paint unreadable glyphs, so the
+ // scene is reduced to pictorial vocabulary and the closing rule stays positive.
  // Exact requested text is composed separately in the browser.
- const letteringRule=" FINAL RENDER CONSTRAINT: Generate imagery, never typeset. Even when the scene mentions titles, brands, signs, labels or quotations, leave those surfaces empty and clean. Do not paint letters, pseudo-letters, symbols that resemble writing, words or foreign-looking invented scripts. Preserve clear space for exact browser typography. ";
+ const letteringRule=" FINAL RENDER CONSTRAINT: pure picture made of shapes, color, texture and light; every surface stays smooth, plain and unmarked. ";
+ const scene=pictorialPrompt(prompt,pictorialPrompt(requestText,modeRules[mode]));
  const sceneRoom=Math.max(0,7000-governingPrompt.length-letteringRule.length-21);
- const renderDirection=(governingPrompt+" Scene description: "+prompt.slice(0,sceneRoom)+letteringRule).slice(0,7000);
+ const renderDirection=(governingPrompt+" Scene description: "+scene.slice(0,sceneRoom)+letteringRule).slice(0,7000);
  // Render only on Cloudflare Workers AI. Never call the Google image API.
  const modelPlan=[
    {model:IMAGE_MODEL,variants:[renderDirection],steps:null},
