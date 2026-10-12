@@ -244,6 +244,121 @@ function qpShareResponse(incoming) {
 }
 
 const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex\"><title>Moving QuantaPhi wallet</title></head><body><p>Recovering your existing wallet\u2026</p><script>\n'use strict';\nconst target=(()=>{try{const u=new URL(new URLSearchParams(location.search).get('return')||'');return ['https://quantaphi.org','https://www.quantaphi.org'].includes(u.origin)?u:null}catch{return null}})();\nconst prefix='starquest_ledger_device_v1:',values={};\ntry{\n const sessionRaw=localStorage.getItem('starquest_session');if(sessionRaw)values.starquest_session=sessionRaw;\n let session=null;try{session=JSON.parse(sessionRaw||'null')}catch{}\n const username=String(session?.username||session?.key||'').toLowerCase(),keys=[];\n for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'',value=localStorage.getItem(key)||'';if(key.startsWith(prefix)&&(/^sq_[A-Za-z0-9_-]{32,}$/.test(value)||/\"deviceToken\"\\s*:\\s*\"sq_[A-Za-z0-9_-]{32,}\"/.test(value)))keys.push(key)}\n const chosen=username?keys.filter(key=>key===prefix+username):(keys.length===1?keys:[]);\n for(const key of chosen)values[key]=localStorage.getItem(key);\n const accountKey=String(session?.key||username||chosen[0]?.slice(prefix.length)||'').toLowerCase();\n let users={},backup={};try{users=JSON.parse(localStorage.getItem('starquest_users')||'{}')}catch{}try{backup=JSON.parse(localStorage.getItem('starquest_users_backup_v1')||'{}')}catch{}\n const user=users[accountKey]||backup[accountKey];\n if(chosen.length===1&&user&&String(user.key||accountKey).toLowerCase()===accountKey){\n  const profile={key:accountKey,username:String(user.username||accountKey),passwordHash:String(user.passwordHash||''),joinedAt:user.joinedAt,lastLoginAt:user.lastLoginAt,tokens:user.tokens,pendingShareCredits:user.pendingShareCredits,shareCount:user.shareCount};\n  values.starquest_users=JSON.stringify({[accountKey]:profile});\n  if(!values.starquest_session)values.starquest_session=JSON.stringify({key:accountKey,username:profile.username,signedInAt:Date.now()});\n }\n}catch{}\nif(!target){document.body.textContent='Wallet return address rejected.'}\nelse if(Object.keys(values).some(key=>key.startsWith(prefix))){\n const bytes=new TextEncoder().encode(JSON.stringify({version:1,issuedAt:Date.now(),source:location.origin,values}));let binary='';for(const byte of bytes)binary+=String.fromCharCode(byte);\n target.hash='quantaWalletLink='+btoa(binary).replace(/\\+/g,'-').replace(/\\//g,'_').replace(/=+$/,'');\n location.replace(target.href);\n}else{\n const fallback=new URL('https://www-infinity4.github.io/QuantaPhi/wallet-link.html');fallback.searchParams.set('mode','top');fallback.searchParams.set('v','20261004-account6');fallback.searchParams.set('return',target.href);location.replace(fallback.href);\n}\n</script></body></html>";
+
+// Radio Clubhouse: public, attributed forum metadata only. No cross-origin
+// HTML injection, forum login, bulk archive scrape, or invented discussions.
+const CLUB_BASE = 'https://antiqueradios.com/forums/';
+const CLUB_LIMIT = 8;
+function clubText(value) {
+ return String(value||'').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g,'$1')
+  .replace(/<[^>]*>/g,' ').replace(/&(?:amp|#38);/gi,'&')
+  .replace(/&(?:quot|#34);/gi,'"').replace(/&#(?:39|x27);/gi,"'")
+  .replace(/&(?:lt|#60);/gi,'<').replace(/&(?:gt|#62);/gi,'>')
+  .replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Math.min(Number(n),0x10ffff)))
+  .replace(/\s+/g,' ').trim();
+}
+function clubAttr(attributes,name) {
+ const re=new RegExp('(?:^|\\s)'+name+'\\s*=\\s*(?:"([^"]*)"|\\x27([^\\x27]*)\\x27)','i');
+ const match=String(attributes).match(re);
+ return match ? (match[1]??match[2]??'') : '';
+}
+function clubTopic(link) {
+ try {
+  const u=new URL(String(link).replace(/&amp;/gi,'&'),CLUB_BASE);
+  if(u.protocol!=='https:'||u.hostname!=='antiqueradios.com'||!u.pathname.endsWith('/viewtopic.php'))return null;
+  const id=u.searchParams.get('t');
+  if(!/^\d{1,12}$/.test(id||''))return null;
+  return {id,url:CLUB_BASE+'viewtopic.php?t='+id};
+ } catch { return null; }
+}
+function clubForumId(html) {
+ for(const match of html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)) {
+  if(clubText(match[2]).toLowerCase()!=='radio clubhouse')continue;
+  try{
+   const u=new URL(clubAttr(match[1],'href').replace(/&amp;/gi,'&'),CLUB_BASE);
+   const id=u.searchParams.get('f');
+   if(u.hostname==='antiqueradios.com'&&u.pathname.endsWith('/viewforum.php')&&/^\d{1,3}$/.test(id||''))return id;
+  }catch{}
+ }
+ return null;
+}
+function clubDate(raw) {
+ const stamp=Date.parse(String(raw||''));
+ return Number.isFinite(stamp)&&stamp>946684800000&&stamp<Date.now()+86400000?new Date(stamp).toISOString():null;
+}
+function clubParseAtom(xml) {
+ const topics=new Map();
+ for(const match of xml.matchAll(/<entry\b[^>]*>([\s\S]*?)<\/entry>/gi)){
+  const entry=match[1];
+  const linkTags=[...entry.matchAll(/<link\b([^>]*)\/?>/gi)];
+  const link=linkTags.map(x=>clubTopic(clubAttr(x[1],'href'))).find(Boolean);
+  if(!link||topics.has(link.id))continue;
+  const title=clubText((entry.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)||[])[1]).slice(0,180);
+  if(!title)continue;
+  const updated=clubDate((entry.match(/<updated[^>]*>([\s\S]*?)<\/updated>/i)||[])[1]||
+                       (entry.match(/<published[^>]*>([\s\S]*?)<\/published>/i)||[])[1]);
+  const author=clubText((entry.match(/<author\b[^>]*>[\s\S]*?<name\b[^>]*>([\s\S]*?)<\/name>/i)||[])[1]).slice(0,70);
+  const snippet=clubText((entry.match(/<summary\b[^>]*>([\s\S]*?)<\/summary>/i)||[])[1]||
+                         (entry.match(/<content\b[^>]*>([\s\S]*?)<\/content>/i)||[])[1]).slice(0,340);
+  topics.set(link.id,{...link,title,updated,author,snippet});
+ }
+ return [...topics.values()].sort((a,b)=>(Date.parse(b.updated||0)||0)-(Date.parse(a.updated||0)||0)).slice(0,CLUB_LIMIT);
+}
+function clubParseHtml(html) {
+ const topics=new Map();
+ // phpBB's forum list uses topictitle links. Never select sidebar,
+ // global-navigation, "similar topic", or recent-index links.
+ for(const match of html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)) {
+  if(!/\btopictitle\b/i.test(clubAttr(match[1],'class')))continue;
+  const link=clubTopic(clubAttr(match[1],'href'));
+  if(!link||topics.has(link.id))continue;
+  const title=clubText(match[2]).slice(0,180);
+  if(title)topics.set(link.id,{...link,title,updated:null,author:'',snippet:''});
+  if(topics.size>=CLUB_LIMIT+6)break;
+ }
+ return [...topics.values()].slice(0,CLUB_LIMIT);
+}
+async function clubFetch(url,accept) {
+ const response=await fetch(url,{redirect:'follow',signal:AbortSignal.timeout(10000),headers:{
+  'Accept':accept,'User-Agent':'QuantaPhi-RadioClubhouse/1.0 (public discussion titles; https://quantaphi.org)'
+ }});
+ if(!response.ok)throw new Error('forum_upstream_'+response.status);
+ const text=await response.text();
+ if(text.length>2_000_000)throw new Error('forum_response_too_large');
+ return text;
+}
+async function radioClubhouseFeed(request) {
+ if(request.method!=='GET')return Response.json({ok:false,error:'method_not_allowed'},{status:405,headers:{Allow:'GET','Cache-Control':'no-store'}});
+ const headers={'Cache-Control':'public, max-age=0, s-maxage=300','Content-Type':'application/json; charset=utf-8',
+  'X-Content-Type-Options':'nosniff','x-quantaphi-edge':EDGE_VERSION};
+ try {
+  // Resolve by the *label* instead of guessing the forum id. A wrong id
+  // would silently publish unrelated boards under Radio Clubhouse branding.
+  const index=await clubFetch(CLUB_BASE+'index.php','text/html');
+  const forumId=clubForumId(index);
+  if(!forumId)throw new Error('radio_clubhouse_forum_not_found');
+  const forumUrl=CLUB_BASE+'viewforum.php?f='+forumId;
+  let topics=[],feedType='';
+  try {
+   const atom=await clubFetch(CLUB_BASE+'feed.php?f='+forumId,'application/atom+xml, application/xml');
+   topics=clubParseAtom(atom);if(topics.length)feedType='atom';
+  }catch{}
+  if(!topics.length){
+   const forum=await clubFetch(forumUrl,'text/html');
+   if(!/radio\s+clubhouse/i.test(clubText(forum.slice(0,30000))))throw new Error('clubhouse_board_mismatch');
+   topics=clubParseHtml(forum);feedType='forum';
+  }
+  if(!topics.length)throw new Error('no_confirmed_topics');
+  return Response.json({ok:true,source:'Antique Radio Forums · Radio Clubhouse',sourceUrl:forumUrl,
+   checkedAt:new Date().toISOString(),feedType,topics}, {headers});
+ }catch(error){
+  // No historical fixtures or unrelated forum threads masquerading as live news.
+  return Response.json({ok:false,error:'radio_clubhouse_temporarily_unavailable',
+   sourceUrl:CLUB_BASE+'index.php',checkedAt:new Date().toISOString()},
+   {status:503,headers:{...headers,'Cache-Control':'no-store','Retry-After':'300'}});
+ }
+}
+
 export default {
  async fetch(request, env) {
   const incoming = new URL(request.url);
@@ -283,6 +398,7 @@ export default {
    const destination=new URL('/omni-phi/code/',CANONICAL_ORIGIN);destination.search=incoming.search;destination.searchParams.set('from','infinity');
    return Response.redirect(destination.href,302);
   }
+  if (incoming.pathname === '/api/radio-clubhouse') return radioClubhouseFeed(request);
   if (incoming.pathname === '/q-share' && (request.method === 'GET' || request.method === 'HEAD')) { const response=qpShareResponse(incoming); return request.method === 'HEAD' ? new Response(null,{status:response.status,headers:response.headers}) : response; }
   if (incoming.pathname === '/v1/site-read' && request.method === 'GET') {
    const site=(incoming.searchParams.get('site')||'').toLowerCase();
