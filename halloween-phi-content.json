@@ -20,8 +20,8 @@
         "note": "The trailer is not the full movie. A free authorized feature-length source has not been verified."
       },
       "feed": {
-        "title": "Vintage scares & costumes",
-        "search": "historic halloween costumes ghosts spooky vintage photography",
+        "title": "Vintage frights & Halloween costumes",
+        "search": "Halloween costume",
         "source": "https://www.loc.gov/free-to-use/autumn-and-halloween/"
       },
       "images": []
@@ -43,11 +43,18 @@
         "note": "1922 silent horror; rights and any added soundtrack can vary by copy and jurisdiction."
       },
       "feed": {
-        "title": "Antique Halloween illustration & postcards",
-        "search": "Halloween postcard vintage witch black cat pumpkin illustration 1900 1920",
+        "title": "Illustrated Halloween postcards & gothic art",
+        "search": "Halloween postcard",
         "source": "https://publicdomainreview.org/collection/halloween-postcards/"
       },
-      "images": []
+      "images": [
+        {
+          "title": "Early twentieth-century Halloween postcard",
+          "src": "https://pdr-assets.b-cdn.net/collections/halloween-postcards/halloween-card-22.jpg?height=1200&width=600",
+          "source": "https://publicdomainreview.org/collection/halloween-postcards/",
+          "license": "Historic postcard · underlying work public domain in the U.S.; review digital-copy credit at source"
+        }
+      ]
     }
   ]
 }
