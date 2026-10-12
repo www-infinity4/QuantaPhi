@@ -60,7 +60,7 @@ test('home renders an attributed source while GPT writes; searched Asteroids sti
 test('GPT writer differentiates a home opener from a search-triggered Asteroid', () => {
   const source = load('infinite-book-discovery.js');
   assert.match(source, /storyKind==='asteroid'\?'Asteroid':'Infinity Reads & Realms'/);
-  assert.match(source, /This Asteroid is ONLY for the actual current QuantaPhi search/);
+  assert.match(source, /Asteroid is a metaphor for investigating the current search/);
   assert.match(source, /home-page opening story, written fresh for a page visit/);
   assert.match(source, /storyKind==='reads-realms'\|\|storyKind==='asteroid'\?Promise\.resolve\(\[\]\):scoutQueries/);
   assert.match(source, /verified_context:\{storyKind,/);
