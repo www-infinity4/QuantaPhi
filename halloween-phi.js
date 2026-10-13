@@ -1,123 +1,20 @@
-/* Two independent Halloween Phi experiences, backed by curated data.
-   No automatic wallet credits, popups, or autoplay. */
+/* Terra Phi and Petra Phi: one selection at a time, one automatic collection. */
 (function(){
 'use strict';
-const mount=document.getElementById('halloweenPhi');
-if(!mount)return;
-if(new Date().getMonth()!==9&&!new URLSearchParams(location.search).has('halloweenPreview')){mount.hidden=true;return;}
+const mount=document.getElementById('halloweenPhi');if(!mount)return;mount.hidden=false;
 const STARS='quantaPhi:halloweenStars:v1',COLLECTED='quantaPhiCollected';
-const e=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=String(text);if(cls)n.className=cls;return n;};
-const append=(p,c)=>{p.append(c);return c;};
+const e=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=String(text);if(cls)n.className=cls;return n};
+const append=(p,c)=>{p.append(c);return c};
 const valid=raw=>{try{const u=new URL(String(raw||''),location.origin);return u.protocol==='https:'&&!u.username&&!u.password?u.href:''}catch{return''}};
-const embed=raw=>{const u=valid(raw);return /^https:\/\/(www\.youtube-nocookie\.com\/embed\/[A-Za-z0-9_-]+|archive\.org\/embed\/[A-Za-z0-9_-]+)$/.test(u)?u:''};
-const read=k=>{try{const x=JSON.parse(localStorage.getItem(k)||'[]');return Array.isArray(x)?x:[]}catch{return[]}};
+const read=k=>{try{const v=JSON.parse(localStorage.getItem(k)||'[]');return Array.isArray(v)?v:[]}catch{return[]}};
 const save=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}};
-const link=(parent,label,url)=>{const u=valid(url);if(!u)return null;const a=append(parent,e('a',label,'hphi-btn'));a.href=u;a.rel='noopener noreferrer';a.target='_blank';return a;};
-const deck=append(mount,e('div',undefined,'hphi-deck'));
 const project=()=>window.PhiProjectPackage;
-function projectControls(card,c){
- const bar=append(card,e('div',undefined,'hphi-project-strip'));
- const plus=append(bar,e('button','＋ New token','hphi-project-new'));plus.type='button';
- const note=append(bar,e('span','','hphi-project-note'));note.setAttribute('role','status');
- const link=append(bar,e('a','Project page ↗','hphi-project-link'));link.href='/project-workspace/';
- const imageTile=append(bar,e('label',undefined,'hphi-upload-tile'));
- const imageInput=append(imageTile,e('input'));imageInput.type='file';imageInput.accept='image/png,image/jpeg,image/webp,image/gif,image/avif';imageInput.multiple=true;imageInput.setAttribute('aria-label','Add images to '+c.title+' project');
- append(imageTile,e('span','＋','hphi-upload-plus'));
- const uploadLabel=append(imageTile,e('span','Add images','hphi-upload-label'));
- const uploadPreview=append(imageTile,e('img',undefined,'hphi-upload-preview'));uploadPreview.hidden=true;uploadPreview.alt='Selected Halloween image';
- let preview='';
- imageInput.addEventListener('change',async()=>{
-  const selected=Array.from(imageInput.files||[]).slice(0,8);imageInput.value='';
-  if(!selected.length)return;
-  if(!project()?.active()){note.textContent='Start or select a project token before adding images.';return}
-  if(preview)URL.revokeObjectURL(preview);
-  preview=URL.createObjectURL(selected[0]);uploadPreview.src=preview;uploadPreview.hidden=false;uploadLabel.textContent='Add more';
-  let added=0,failures=[];
-  for(const file of selected){
-   const result=await project().captureFile(file,c.id);
-   if(result.ok)added++;else failures.push(result.reason);
-  }
-  note.textContent=added+' image'+(added===1?'':'s')+' saved locally.'+(failures.length?' '+failures.join(' '):'');
- });
- const refresh=()=>{const active=project()?.active();note.textContent=active?'Collecting to '+active.title+' ('+active.assets.length+' sources)':'No project token selected'};
- plus.addEventListener('click',()=>{
-  const started=project()?.newToken(c.title+' collection');
-  note.textContent=started?'New local token draft created · '+started.title:'Project storage unavailable.';
-  refresh();
- });
- window.addEventListener('phi-projects:changed',refresh);
- refresh();
-}
+const link=(p,label,url)=>{const u=valid(url);if(!u)return;const a=append(p,e('a',label,'hphi-btn'));a.href=u;a.target='_blank';a.rel='noopener noreferrer';return a};
+const button=(p,label,fn)=>{const b=append(p,e('button',label));b.type='button';b.onclick=fn;return b};
+const deck=append(mount,e('div',undefined,'hphi-deck'));
+function ensure(){return project()?.active()||project()?.newToken('Terra & Petra collection')}
 const filmSlots=new Map();
-const validArchiveId=id=>typeof id==='string'&&/^[A-Za-z0-9_-]{1,100}$/.test(id);
-function mountFilm(host,url,title){
- host.replaceChildren();
- const f=append(host,e('iframe',undefined,'hphi-player'));
- f.src=url;f.title=title||'Film player';f.loading='lazy';
- f.allowFullscreen=true;f.allow='fullscreen; picture-in-picture';
- f.referrerPolicy='strict-origin-when-cross-origin';
- return f;
-}
-function movie(parent,c){
- const m=c.movie||{},section=append(parent,e('section',undefined,'hphi-film'));
- append(section,e('h3',m.title||'Halloween movie'));
- if(m.note)append(section,e('p',m.note,'hphi-note'));
- const controls=append(section,e('div',undefined,'hphi-controls'));
- const host=append(section,e('div',undefined,'hphi-player-host'));
- const src=embed(m.embedUrl);
- if(src){const b=append(controls,e('button',m.label||'Watch selected film'));b.type='button';
-  b.addEventListener('click',()=>mountFilm(host,src,m.title||'Film player'));
- }
- link(controls,m.watchLabel||'View original movie source ↗',m.watchUrl);
- const collect=append(controls,e('button','＋ Collect movie','hphi-collect-asset'));collect.type='button';
- collect.addEventListener('click',()=>{
-  const result=project()?.capture({kind:'video',title:m.title,sourceUrl:m.watchUrl,description:m.note,originCard:c.id});
-  collect.textContent=result?.ok?(result.duplicate?'Already in project ✓':'Added to project ✓'):'＋ Collect movie';
-  if(!result?.ok)append(section,e('p',result?.reason||'Start a project first.','hphi-status'));
- });
- const approved=new Set(Array.isArray(c.approvedArchiveIds)?c.approvedArchiveIds.filter(validArchiveId):[]);
- filmSlots.set(c.id,{host,approved});
-}
-window.QuantaPhiHalloweenPlayer=Object.freeze({
- setArchiveMovie(cardId,identifier){
-  const slot=filmSlots.get(cardId);
-  if(!slot||!validArchiveId(identifier)||!slot.approved.has(identifier))return false;
-  mountFilm(slot.host,'https://archive.org/embed/'+encodeURIComponent(identifier),
-   'Internet Archive screening: '+identifier);
-  return true;
- }
-});
-function image(grid,image,cardId){
- const src=valid(image.src),source=valid(image.source);if(!src||!source)return false;
- const b=append(grid,e('button',undefined,'hphi-image'));b.type='button';b.title=image.title||'Preview historic artwork';
- const img=append(b,e('img'));img.src=src;img.alt=image.title||'Historic Halloween artwork';img.loading='lazy';img.referrerPolicy='no-referrer';
- b.addEventListener('click',()=>{
-   const d=append(document.body,e('dialog',undefined,'hphi-image-dialog'));
-   const close=append(d,e('button','Close'));close.addEventListener('click',()=>d.close());
-   const large=append(d,e('img'));large.src=src;large.alt=img.alt;
-   append(d,e('p',image.title||'Historic Halloween image'));
-   append(d,e('p','Image license / credit: '+(image.license||'Check original source'),'hphi-credit'));
-   const collect=append(d,e('button','＋ Collect image','hphi-collect-asset'));collect.type='button';
-   collect.addEventListener('click',()=>{
-     const result=project()?.capture({kind:'image',title:image.title,sourceUrl:source,imageUrl:src,license:image.license,year:image.year,originCard:cardId});
-     collect.textContent=result?.ok?(result.duplicate?'Already in project ✓':'Added to project ✓'):(result?.reason||'Start a project first.');
-   });
-   link(d,'View original image and credit ↗',source);
-   d.addEventListener('close',()=>d.remove(),{once:true});
-   if(d.showModal)d.showModal();else d.open=true;
- });
- return true;
-}
-function gallery(c,grid,status,offset){
- const items=Array.isArray(c.images)?c.images:[];
- const shown=items.slice(offset,offset+2);
- for(const item of shown){
-  // Never show an uncurated live-search result or an item without a pre-1940 date.
-  if(Number.isInteger(item.year)&&item.year>=1800&&item.year<1940)image(grid,item,c.id);
- }
- status.textContent=grid.children.length+' vetted vintage images · tap one for source and rights.';
- return offset+shown.length;
-}
+window.QuantaPhiHalloweenPlayer=Object.freeze({setArchiveMovie(id,identifier){const slot=filmSlots.get(id);if(!slot||!slot.approved.has(identifier))return false;slot.play('https://archive.org/embed/'+encodeURIComponent(identifier));return true}});
 function actions(card,c){
  const controls=append(card,e('div',undefined,'hphi-controls'));
  const star=append(controls,e('button','☆ Star')),collect=append(controls,e('button','Collect')),share=append(controls,e('button','Share'));
@@ -157,37 +54,47 @@ function actions(card,c){
  });
  paint();
 }
+
 function render(c){
- const card=append(deck,e('article',undefined,'hphi-card'));card.id=c.id;card.dataset.card=c.id;
- card.setAttribute('aria-label',c.title+' seasonal card');
- append(card,e('span','INFINITY 2026® · ORACLE OCTAVES · '+c.role,'hphi-brand'));
- append(card,e('h2',c.title));append(card,e('p',c.subtitle,'hphi-subtitle'));append(card,e('p',c.description));
- projectControls(card,c);
- movie(card,c);append(card,e('h3',c.feed?.title||'Halloween images'));
- const grid=append(card,e('div',undefined,'hphi-gallery'));
- const status=append(card,e('p','Loading image feed…','hphi-status'));status.setAttribute('role','status');
- const controls=append(card,e('div',undefined,'hphi-controls'));
- const more=append(controls,e('button','More images'));more.type='button';
- link(controls,'Browse source archive ↗',c.feed?.source);
- let offset=0;
- function next(){
-  offset=gallery(c,grid,status,offset);
-  more.hidden=offset>=(Array.isArray(c.images)?c.images.length:0);
+ const card=append(deck,e('article',undefined,'hphi-card'));card.id=c.id;card.dataset.card=c.id;card.setAttribute('aria-label',c.title+' cinema and art');
+ append(card,e('span','INFINITY 2026® · ORACLE OCTAVES · CURIO CINEMA','hphi-brand'));append(card,e('h2',c.title));append(card,e('p',c.subtitle,'hphi-subtitle'));append(card,e('p',c.description));
+ const bar=append(card,e('div',undefined,'hphi-project-strip'));const note=append(bar,e('p','','hphi-project-note'));note.setAttribute('role','status');
+ button(bar,'＋ New token',()=>{const next=project()?.newToken('Terra & Petra collection');note.textContent=next?'Previous collection saved. New collection started.':'Project storage unavailable.';refresh()});
+ link(bar,'My collection ↗','/project-workspace/');
+ const refresh=()=>{const p=project()?.active();note.textContent=p?'Collection token '+p.id.slice(-6)+' · '+p.assets.length+' items. Both cards collect here. New token keeps this collection and starts another.':'Collection storage unavailable.'};
+ ensure();window.addEventListener('phi-projects:changed',refresh);refresh();
+ append(card,e('p','Collection tokens are device-local project drafts; opening this card does not mint a wallet coin.','hphi-note'));
+ const controls=append(card,e('div',undefined,'hphi-controls'));let type='video',position=0,filter=c.id==='terriphi'?'youtube':'archive';let movies=c.movies||[],images=c.images||[];
+ const imageBtn=button(controls,'Images',()=>{type='image';position=0;paint()});const videoBtn=button(controls,'Videos',()=>{type='video';position=0;paint()});
+ const provider=append(controls,e('select'));provider.setAttribute('aria-label',c.title+' movie source');for(const [value,label] of [['youtube','YouTube · 1970–1990'],['archive','Internet Archive'],['all','Both sources']]){const o=append(provider,e('option',label));o.value=value;}provider.value=filter;provider.onchange=()=>{filter=provider.value;position=0;paint()};
+ const media=append(card,e('section',undefined,'hphi-film'));const navigation=append(card,e('div',undefined,'hphi-controls'));const count=append(card,e('p','','hphi-status'));count.setAttribute('role','status');
+ const items=()=>type==='image'?images:movies.filter(x=>filter==='all'||x.provider===filter);
+ const current=()=>items()[position%Math.max(1,items().length)];
+ const player=append(card,e('div',undefined,'hphi-player-host'));
+ const play=(url,title)=>{player.replaceChildren();const f=append(player,e('iframe'));f.src=url;f.title=title||c.title+' movie';f.allow='fullscreen; picture-in-picture';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin'};
+ filmSlots.set(c.id,{approved:new Set(c.approvedArchiveIds||[]),play});
+ button(navigation,'← Previous',()=>{const n=items().length;position=n?(position+n-1)%n:0;paint()});button(navigation,'Next →',()=>{position=(position+1)%Math.max(1,items().length);paint()});
+ const collected=button(navigation,'＋ Collect selection',()=>{const m=current();if(!m)return;ensure();const r=project()?.capture({kind:type,title:m.title,sourceUrl:m.watchUrl||m.source,imageUrl:m.imageUrl||m.src,description:m.description,license:m.license||m.rightsNote,year:m.year,originCard:c.id});count.textContent=r?.ok?(r.duplicate?'Already in collection ✓':'Added to collection ✓'):(r?.reason||'Collection storage unavailable.');});
+ button(navigation,'Watch movie',()=>{const m=current();if(type!=='video'){count.textContent='Choose Videos first.';return}if(m?.embedUrl)play(m.embedUrl,m.title)});
+ let archivePage=1;const more=button(navigation,'More Archive movies',async()=>{if(more.disabled)return;more.disabled=true;count.textContent='Loading the Archive horror catalog…';
+  try{const q='collection:feature_films AND mediatype:movies AND (subject:horror OR subject:Horror)';const u=new URL('https://archive.org/advancedsearch.php');u.searchParams.set('q',q);u.searchParams.set('output','json');u.searchParams.set('rows','24');u.searchParams.set('page',String(archivePage));['identifier','title','description','year'].forEach(v=>u.searchParams.append('fl[]',v));u.searchParams.append('sort[]','downloads desc');
+   const response=await fetch(u,{signal:AbortSignal.timeout(20000)});if(!response.ok)throw Error('Archive catalog unavailable');const data=await response.json();let added=0;for(const m of data.response?.docs||[]){if(!/^[A-Za-z0-9_.-]{1,150}$/.test(m.identifier)||movies.some(x=>x.id===m.identifier))continue;const description=String(Array.isArray(m.description)?m.description[0]:m.description||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim().slice(0,650);movies.push({id:m.identifier,title:String(m.title||m.identifier).slice(0,180),year:m.year,provider:'archive',watchUrl:'https://archive.org/details/'+m.identifier,embedUrl:'https://archive.org/embed/'+m.identifier,imageUrl:'https://archive.org/services/img/'+m.identifier,description:description||'An Archive catalog selection. Read the original item for its edition and source details.',rightsNote:'Additional Archive catalog entry. Uploader rights and edition have not been reviewed.'});added++}archivePage++;filter='archive';provider.value=filter;type='video';position=Math.max(0,movies.filter(x=>x.provider==='archive').length-added);paint();count.textContent=added+' additional Archive catalog movies loaded. Original uploader descriptions; these are separate from the curated opening selections.';
+  }catch(error){count.textContent=error.message+'. Curated films remain available.'}finally{more.disabled=false}});
+ function paint(){player.replaceChildren();media.replaceChildren();const m=current();imageBtn.setAttribute('aria-pressed',String(type==='image'));videoBtn.setAttribute('aria-pressed',String(type==='video'));provider.hidden=type==='image';more.hidden=type==='image';collected.disabled=!m;if(!m){media.append(e('p','No selections in this source.'));return}
+  const src=valid(m.imageUrl||m.src);if(src){const img=append(media,e('img',undefined,'hphi-feature-image'));img.src=src;img.alt=m.title||'Source artwork';img.loading='lazy';img.onerror=()=>{img.hidden=true;count.textContent='This source image is unavailable. The original source and collection controls still work.'};}
+  append(media,e('span',(type==='image'?'IMAGE':'FULL MOVIE')+' · '+(m.provider==='youtube'?'YOUTUBE':m.provider==='archive'?'INTERNET ARCHIVE':'SOURCE ART')+(m.year?' · '+m.year:''),'hphi-brand'));append(media,e('h3',m.title));if(m.publisher)append(media,e('p',m.publisher,'hphi-note'));append(media,e('p',m.description||m.title));append(media,e('p',m.rightsNote||m.license||'Source reference; see original for reuse information.','hphi-credit'));link(media,'Original source ↗',m.watchUrl||m.source);count.textContent=(position+1)+' of '+items().length+' '+(type==='image'?'images':'movies')+' · collect favorites into the current token.';
  }
- more.addEventListener('click',next);next();
- const studio=append(card,e('details',undefined,'hphi-studio'));
- append(studio,e('summary',c.id==='terriphi'?'Play Haunted Door Hunt, spooky audio and costumes':'Open the poster creator and saved art gallery'));
- studio.addEventListener('toggle',()=>{if(!studio.open||studio.querySelector('iframe'))return;
-   const frame=append(studio,e('iframe'));frame.src=c.id==='terriphi'?'/terriphi/':'/petriphi/';frame.title=c.title+' full interactive experience';frame.loading='lazy';});
- const path=c.id==='terriphi'?'/terriphi/':'/petriphi/';
- const a=append(studio,e('a','Open full '+c.title+' page ↗','hphi-btn'));a.href=path;
+ paint();
+ const create=append(card,e('details',undefined,'hphi-studio'));append(create,e('summary','Create · image generator & reel editor'));
+ const label=append(create,e('label','Describe your artwork'));const prompt=append(label,e('textarea'));prompt.setAttribute('aria-label',c.title+' artwork instructions');prompt.placeholder='Make a striking original horror cinema advertisement…';prompt.rows=3;
+ const generationStatus=append(create,e('p','','hphi-status'));generationStatus.setAttribute('role','status');const generated=append(create,e('img',undefined,'hphi-feature-image'));generated.hidden=true;
+ const generate=button(create,'Generate real artwork',async()=>{if(generate.disabled)return;if(!prompt.value.trim()){generationStatus.textContent='Describe the artwork first.';return}const renderer=window.PhiVisualRender;if(!renderer){generationStatus.textContent='Image service adapter has not loaded. Reload this page.';return}ensure();const projectId=project()?.active()?.id;generate.disabled=true;generationStatus.textContent='Rendering with Cloudflare Workers AI…';
+  try{const description=prompt.value.trim().slice(0,3000);const wording=window.PhiImageLanguage?.infer(description,'Advertisement','')?.text||'';const plan=await renderer.direct({description,mode:'Advertisement',vision:'',story:'',search:'',hasUpload:false,designFile:false,exactText:wording,preferences:''}).catch(()=>description);const result=await renderer.render({description,mode:'Advertisement',prompt:plan,exactText:wording});await renderer.validate(result.src);const src=wording?await renderer.composeExactText(result.src,wording,'Advertisement'):result.src;generated.src=src;generated.hidden=false;const blob=await renderer.asBlob(src);const saved=await project()?.captureFile(new File([blob],'curio-artwork.png',{type:blob.type}),c.id,projectId);generationStatus.textContent='Artwork rendered by '+result.renderer+'. '+(saved?.ok?'Saved to this collection.':'Image is displayed; collection save failed. Use Save artwork.');generated.dataset.source=src;
+  }catch(error){generationStatus.textContent='Image not generated: '+String(error.message||error)}finally{generate.disabled=false}});
+ button(create,'Save artwork',()=>{if(!generated.dataset.source){generationStatus.textContent='Generate artwork first.';return}const a=e('a');a.href=generated.dataset.source;a.download='curio-artwork.png';a.click()});
+ button(create,'Open full Image Builder',()=>{window.PhiImageBuilder?.prefill(prompt.value||'Create an original horror cinema advertisement for '+(project()?.active()?.title||c.title));document.getElementById('phiImageBuilder')?.scrollIntoView({block:'start',behavior:'smooth'})});
+ window.PhiCinemaReel?.mount(create,{title:c.title,current:()=>type==='video'?current():movies[0]});
  actions(card,c);
 }
-fetch('/halloween-phi-content.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('content unavailable');return r.json();}).then(data=>{
- if(data.schema!=='quantaphi.halloween-phi/v1'||!Array.isArray(data.cards))throw Error('Invalid Halloween cards configuration');
- const cards=data.cards.filter(x=>x&&['terriphi','petriphi'].includes(x.id));
- if(cards.length!==2||new Set(cards.map(x=>x.id)).size!==2)throw Error('Two different seasonal cards required');
- cards.forEach(render);
- const h=location.hash.slice(1);if(h==='terriphi'||h==='petriphi')requestAnimationFrame(()=>document.getElementById(h)?.scrollIntoView({block:'start'}));
-}).catch(error=>{append(mount,e('p','Halloween cards could not load the curated config. Please try again.','hphi-status'));console.warn('Halloween Phi:',error.message)});
+fetch('/halloween-phi-content.json?v=20261013-cinema',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Catalog unavailable');return r.json()}).then(data=>{if(data.schema!=='quantaphi.halloween-phi/v1')throw Error('Invalid catalog');data.cards.filter(c=>['terriphi','petriphi'].includes(c.id)).forEach(render)}).catch(error=>append(mount,e('p','Cinema catalog could not load: '+error.message,'hphi-status')));
 })();
