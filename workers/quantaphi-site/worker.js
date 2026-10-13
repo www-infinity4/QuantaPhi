@@ -274,6 +274,10 @@ export default {
    headers.set('x-quantaphi-app','Quant-AI');
    return new Response(response.body,{status:response.status,statusText:response.statusText,headers});
   }
+  if(incoming.pathname.startsWith('/quant-ai/api/')){
+   if(!env.QUANTAI)return Response.json({ok:false,error:'quant_ai_not_connected'},{status:503});
+   return env.QUANTAI.fetch(request);
+  }
   if (incoming.pathname.startsWith('/api/codephi/')) {
    if (!env.CODEPHI) return Response.json({ok:false,error:'Code Phi workshop is not bound.'},{status:503});
    const safeHeaders=new Headers(request.headers);safeHeaders.set('x-codephi-edge','trusted-router');

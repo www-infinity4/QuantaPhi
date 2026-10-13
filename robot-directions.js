@@ -105,7 +105,7 @@ async function connectBotEarnings(){
   await wallet.refresh();window.dispatchEvent(new CustomEvent('infinity:bot-work-paid'));
  }catch(e){earningsStatus.textContent=e.message}finally{earningsButton.disabled=false;earningsConnecting=false}
 }
-earningsButton.addEventListener('click',connectBotEarnings);
+earningsButton.addEventListener('click',connectBotEarnings);window.addEventListener('quantaphi:collect-bot-earnings',connectBotEarnings);
 // Owner authentication above and the wallet service handshake determine the destination.
 // Tokens are sent only to the authenticated brain; they are never recorded as earnings data.
 connectBotEarnings();
@@ -149,12 +149,16 @@ function owner(){return ownerTokenMemory}
 async function saveOwner(value){await storage(OWNER,value);ownerTokenMemory=value}
 
 async function post(path,data,timeout=30000){const route=path.replace('/v1/tickets/','/work/tickets/'),payload={...data};delete payload.owner_token;const r=await fetch(API+route,{method:'POST',headers:{...brainHeaders,'Content-Type':'application/json'},body:JSON.stringify(payload),signal:AbortSignal.timeout(timeout)});const d=await r.json();if(!r.ok||!d.ok)throw Error(d.message||d.error||'Robot Brain owner tickets unavailable');return d}
+const runNext=node('button','Run next queued job');runNext.type='button';root.append(runNext);
+async function requestNext(ticketId,jobId){runNext.disabled=true;try{const r=await fetch(API+'/work/run-next',{method:'POST',headers:{...brainHeaders,'Content-Type':'application/json'},body:JSON.stringify({ticketId,jobId}),signal:AbortSignal.timeout(15000)}),d=await r.json();if(!r.ok||!d.ok)throw Error(d.error||'Runner request unavailable');status.textContent=d.status==='no_pending_jobs'?'No pending jobs. Existing commits remain available in the viewer.':'Queued '+d.ticketId+'/'+d.jobId+' for the next runner cycle. Progress refreshes automatically.';await refresh();}catch(e){status.textContent=e.message}finally{runNext.disabled=false}}
+runNext.addEventListener('click',()=>requestNext());
 function show(ticket){
  list.replaceChildren();
  const heading=node('p',ticket.id+' · '+ticket.status+' · saved to Cloudflare');list.append(heading);
  for(const job of ticket.context?.color_jobs||[]){
   const card=node('article','');card.className='robot-job robot-'+job.color;
   card.append(node('strong',job.agent+' · '+job.title),node('small','Team: '+(job.team||[job.agent]).join(' → ')),node('p',job.instructions),node('small',job.repository+' · '+(job.status||'queued')));
+  if(job.status==='blocked'||job.status==='queued'){const retry=node('button',job.status==='blocked'?'Retry this job':'Run this job next');retry.type='button';retry.addEventListener('click',()=>requestNext(ticket.id,job.id));card.append(retry);}
   if(job.progress){card.append(node('p',job.progress.summary||''),node('small',job.progress.next||job.progress.blocker||''));}
   const ul=document.createElement('ul');for(const test of job.acceptance)ul.append(node('li',test));card.append(ul);list.append(card);
  }
@@ -173,7 +177,7 @@ clearButton.addEventListener('click',async()=>{
  finally{clearButton.disabled=false}
 });
 let draftTimer;input.addEventListener('input',()=>{clearTimeout(draftTimer);draftTimer=setTimeout(()=>storage(DRAFT,input.value).catch(()=>{status.textContent='Draft stays in this page until you send it to Cloudflare.'}),250)});
-async function refresh(){if(refreshing)return;refreshing=true;try{await ready;const d=await post('/v1/tickets/list',{});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();for(const t of tickets){const b=node('button',t.title+' · '+t.status);b.type='button';b.addEventListener('click',()=>{pending=t;show(t)});history.append(b)}const t=tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}finally{refreshing=false}}
+async function refresh(){if(refreshing)return;refreshing=true;try{await ready;const d=await post('/v1/tickets/list',{});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();for(const t of tickets){const b=node('button',t.title+' · '+t.status);b.type='button';b.addEventListener('click',()=>{pending=t;show(t)});history.append(b)}const t=tickets.find(x=>x.id===pending?.id)||tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}finally{refreshing=false}}
 let pending=null,refreshing=false;
 send.addEventListener('click',async()=>{
  const directions=input.value.trim();if(!directions){status.textContent='Write your directions first.';return}

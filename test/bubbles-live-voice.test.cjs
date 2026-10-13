@@ -36,9 +36,10 @@ function harness(){
 }
 const flush=async()=>{for(let i=0;i<8;i++)await Promise.resolve()};
 const result=s=>Object.assign([{transcript:s}],{isFinal:true});
-test('Bubbles orb enters visible continuous speech session after user gesture; no Talk press required',async()=>{
+test('Bubbles opens typing first and explicit voice control starts continuous listening',async()=>{
  const h=harness();assert.equal(h.recognized.length,0);
- h.orb.handlers.click();await flush();
+ h.orb.handlers.click();await flush();assert.equal(h.recognized.length,0);
+ h.nodes.find(n=>n.textContent==='Connect Bubbles voice').handlers.click();await flush();
  assert.equal(h.recognized.length,1);assert.equal(h.recognized[0].continuous,true);
  assert.equal(h.recognized[0].interimResults,true);
  h.recognized[0].onresult({resultIndex:0,results:[result('Someone talking nearby')]});
@@ -49,7 +50,7 @@ test('Bubbles orb enters visible continuous speech session after user gesture; n
  assert.match(h.requests[0].opts.body,/explain stars/);
 });
 test('wake window accepts follow ups and a voice mute releases microphone',async()=>{
- const h=harness();h.orb.handlers.click();await flush();
+ const h=harness();h.nodes.find(n=>n.textContent==='Connect Bubbles voice').handlers.click();await flush();
  const rec=h.recognized[0];
  rec.onresult({resultIndex:0,results:[result('Bubbles')]});
  rec.onresult({resultIndex:0,results:[result('Tell me what this page does')]});
