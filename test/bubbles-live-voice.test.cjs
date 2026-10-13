@@ -110,4 +110,14 @@ test('spoken replies keep the same microphone and recognizer active',async()=>{
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles response from Oracle')]});await flush();
  assert.equal(h.requests.length,1,'synthesized speech is not sent back into AI');
 });
+test('owner helper loaded after Bubbles is connected after deferred scripts finish',async()=>{
+ const h=harness();await flush();
+ h.window.QuantaBrainOwner={ready:Promise.resolve({'X-Owner-Token':'fixture-only'})};
+ h.document.handlers.DOMContentLoaded();await flush();
+ assert.equal(h.nodes.find(n=>n.textContent==='Send approved request to Robot Brain').hidden,false);
+ h.orb.handlers.click();await flush();
+ h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles repair the upload')]});
+ await new Promise(resolve=>setTimeout(resolve,20));await flush();
+ assert.equal(h.requests.length,2);
+});
 
