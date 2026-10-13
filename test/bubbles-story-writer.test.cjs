@@ -43,8 +43,9 @@ test('Bubbles has real AI chat and opt-in browser speech rather than simulated r
  assert.match(code,/\/v1\/chat/);
  assert.match(code,/await fetch\(AI/);
  assert.match(code,/if\(!response\.ok\|\|json\.ok===false\)throw/);
- assert.match(code,/window\.SpeechRecognition\|\|window\.webkitSpeechRecognition/);
- assert.match(code,/r\.onresult/);
+ assert.match(code,/navigator\.mediaDevices\.getUserMedia/);
+ assert.match(code,/module\.startContinuousVoice/);
+ assert.match(code,/onTranscript:heardTranscript/);
  assert.match(code,/new SpeechSynthesisUtterance/);
  assert.match(code,/if\(config\.voice/);
  assert.match(code,/config\.role/);
