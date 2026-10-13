@@ -154,10 +154,10 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
  const body=options.body&&typeof options.body==='object'?JSON.stringify(options.body):options.body;
  return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token}});
 }};
-function recoverWallet(){
- if(!PAID_ORIGINS.has(location.origin)||(findDeviceToken()&&hasAccountProfile()))return false;
+function recoverWallet(force=false){
+ if(!PAID_ORIGINS.has(location.origin)||(!force&&findDeviceToken()&&hasAccountProfile()))return false;
  try{
-  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v4'))return false;
+  if(!force&&sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v4'))return false;
   sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v4',String(Date.now()));
   const returnUrl=new URL(location.href);returnUrl.hash='';
   const bridge=new URL('https://quantaphi.org/__wallet-handoff');
@@ -169,6 +169,9 @@ function recoverWallet(){
 }
 global.QuantaCloudConnection.recoverWallet=recoverWallet;
 ready.then(async()=>{
+ // Infinity Radio runs the same-origin bridge but controls its own recovery UI.
+ // Do not bounce its music player through an automatic sign-in navigation.
+ if(global.QuantaCloudConnectionDisableAutoRecovery===true)return;
  // A valid enrolled token can reconstruct its own local profile from D1. Do
  // that before any recovery navigation so cache loss cannot create identity drift.
  if(!PAID_ORIGINS.has(location.origin))return;
@@ -178,7 +181,7 @@ ready.then(async()=>{
  if(String(query).trim()||document.activeElement?.matches?.('input,textarea'))return;
  recoverWallet();
 });
-if(PAID_ORIGINS.has(location.origin))document.addEventListener('click',event=>{
+if(PAID_ORIGINS.has(location.origin)&&global.QuantaCloudConnectionDisableAutoRecovery!==true)document.addEventListener('click',event=>{
  if(event.target.closest?.('#controlPhiWalletButton,#qmenuWallet'))recoverWallet();
 },true);
 class InfinityUnifiedWallet{
