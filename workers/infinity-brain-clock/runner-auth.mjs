@@ -25,6 +25,7 @@ export async function authenticate(request){
  return checkClaims(JSON.parse(new TextDecoder().decode(bytes(parts[1]))));
 }
 export function supported(job){
+ if(job.executor==='repository-engine')return false;
  // The first adapter handles brain-interface repairs. Other jobs retain their original scope.
  return job.repository===REPO && /clear\s+(?:text|input)|(?:brain|robot).*(?:input|button|readab|message|display)/i.test(job.instructions||'') && !(job.dependencies||[]).length;
 }
