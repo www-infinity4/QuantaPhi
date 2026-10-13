@@ -57,12 +57,14 @@ test('Bubbles never impersonates account sign-in or grants unverified repository
  const code=source('bubbles-ai.js');
  assert.match(code,/account access require separate provider authorization/);
  assert.match(code,/You have NO independent GitHub write authorization/);
- assert.match(code,/await fetch\(BRAIN\+'\/health'/);
- assert.match(code,/if\(response\.ok\)\{ownerToken=token;ownerReady=true;workButton\.hidden=false/);
+ assert.match(code,/const headers=window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready:null/);
+ assert.match(code,/if\(!headers\)return/);
+ assert.match(code,/ownerHeaders=headers;ownerReady=true;workButton\.hidden=false/);
  assert.match(code,/workButton\.addEventListener\('click'/);
- assert.match(code,/context:\{kind:'bubbles-approved-work'/);
+ assert.match(code,/context:\{kind:'robot-directions'/);
+ assert.match(code,/approval:'explicit-click'/);
  assert.match(code,/No confirmed ticket/);
- assert.match(code,/does not mean code was changed, merged or deployed/);
+ assert.match(code,/Only confirmed owner-submitted Robot Brain tickets count as queued/);
  assert.doesNotMatch(code,/github\.com\/login\/oauth\/authorize\?/);
  assert.doesNotMatch(code,/https:\/\/api\.github\.com\/repos\/.*\/contents/);
  assert.doesNotMatch(code,/ANTHROPIC_API_KEY|OPENAI_API_KEY|ghp_/);
@@ -122,7 +124,7 @@ test('multiple Bubbles embeds isolate notes and never inherit owner authorizatio
  assert.match(code,/const bubbleId=embedded/);
  assert.match(code,/const NOTES='quantaphi:bubbles:notes:v1'\+\(bubbleId\?':'\+bubbleId:''\)/);
  assert.match(code,/const CONFIG='quantaphi:bubbles:config:v1'\+\(bubbleId\?':'\+bubbleId:''\)/);
- assert.match(code,/if\(embedded\)return;\s*const token=await getOwnerToken/);
+ assert.match(code,/if\(embedded\)return;\s*const headers=window\.QuantaBrainOwner/);
  assert.match(code,/window\.parent\.postMessage\(\{type:'quantaphi:bubbles:size',open:showing\},'\*'\)/);
  assert.match(code,/const markup='<script async src="https:\/\/quantaphi\.org\/bubbles-embed\.js"/);
  assert.match(code,/function xmlAttr\(value\)/);
@@ -212,7 +214,7 @@ test('reply actions take notes and prepare work without sending unapproved robot
  const submit=get('button','Send approved request to Robot Brain');
  assert.equal(submit.hidden,true);
  assert.equal(calls.length,1,'copying a work draft does not submit it');
- const saveHistory=nodes.find(e=>e.tag==='input'&&e.type==='checkbox');
+ const saveHistory=nodes.find(e=>e.tag==='input'&&e.type==='checkbox'&&e.handlers.change?.toString().includes('keepChat'));
  assert.ok(saveHistory);
  saveHistory.checked=true;saveHistory.handlers.change();
  const history=JSON.parse(values.get('quantaphi:bubbles:history:v1:work-cards'));
