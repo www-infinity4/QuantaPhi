@@ -22,9 +22,12 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.os.SystemClock;
 import android.provider.Settings;
-import android.speech.RecognitionListener;
-import android.speech.RecognizerIntent;
-import android.speech.SpeechRecognizer;
+import android.media.AudioFormat;
+import android.media.AudioRecord;
+import android.media.MediaRecorder;
+import org.vosk.Model;
+import org.vosk.Recognizer;
+import org.vosk.android.StorageService;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
 import android.view.Gravity;
@@ -50,10 +53,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /** User-started, visibly foregrounded cross-application voice overlay.
- * Android's speech recognizer may use a system speech service; no raw audio
- * is uploaded by this app. Only addressed transcripts go to the Oracle API.
+ * One continuous AudioRecord stream feeds the bundled offline Vosk model.
+ * Raw audio stays on-device. Only addressed transcripts go to the Oracle API.
  */
-public final class BubblesService extends Service implements RecognitionListener {
+public final class BubblesService extends Service {
     public static final String ACTION_STOP = "org.quantaphi.bubbles.STOP";
     private static final int NOTIFY_ID = 511;
     private static final String CHANNEL = "bubbles_voice";
@@ -73,9 +76,15 @@ public final class BubblesService extends Service implements RecognitionListener
     private WindowManager manager;
     private WindowManager.LayoutParams bubbleLayout;
     private OrbView orb;
-    private SpeechRecognizer recognizer;
+    private AudioRecord microphone;
+    private Thread audioThread;
+    private Model voiceModel;
+    private volatile boolean captureRunning = false;
+    private boolean modelLoading = false;
+    private boolean ttsReady = false;
     private TextToSpeech tts;
-    private boolean connected = false, muted = false, speaking = false, busy = false, recognizing = false;
+    private volatile boolean connected = false, muted = false, speaking = false;
+    private boolean busy = false;
     private long activeUntil = 0L, lastAt = 0L;
     private String lastTranscript = "", queued = "";
     private int retries = 0;
@@ -88,6 +97,7 @@ public final class BubblesService extends Service implements RecognitionListener
                     new NotificationChannel(CHANNEL, "Bubbles voice microphone", NotificationManager.IMPORTANCE_LOW));
         tts = new TextToSpeech(this, result -> {
             if (result == TextToSpeech.SUCCESS && tts != null) {
+                ttsReady = true;
                 int language = tts.setLanguage(Locale.UK);
                 if (language == TextToSpeech.LANG_MISSING_DATA || language == TextToSpeech.LANG_NOT_SUPPORTED)
                     tts.setLanguage(Locale.ENGLISH);
@@ -123,7 +133,7 @@ public final class BubblesService extends Service implements RecognitionListener
                     156, 156, WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
                     WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
                     PixelFormat.TRANSLUCENT);
-            bubbleLayout.gravity = Gravity.TOP | Gravity.RIGHT;
+            bubbleLayout.gravity = Gravity.TOP | Gravity.LEFT;
             bubbleLayout.x = 14; bubbleLayout.y = 240;
             manager.addView(orb, bubbleLayout);
             connected = true;
@@ -157,43 +167,100 @@ public final class BubblesService extends Service implements RecognitionListener
     }
 
     private void beginListening() {
-        if (!connected || muted || speaking || recognizing) return;
-        if (!SpeechRecognizer.isRecognitionAvailable(this)) {
-            state("error", 0);
-            Toast.makeText(this, "Android speech recognition is unavailable on this device.", Toast.LENGTH_LONG).show();
-            muteSession(); return;
+        if (!connected || muted || captureRunning || modelLoading
+                || (audioThread != null && audioThread.isAlive())) return;
+        if (voiceModel == null) {
+            modelLoading = true;
+            state("loading", .1f);
+            StorageService.unpack(this, "model-en-us", "voice-model", model -> {
+                modelLoading = false;
+                if (!connected) { model.close(); return; }
+                voiceModel = model;
+                beginListening();
+            }, error -> {
+                modelLoading = false;
+                muteSession();
+                state("error", 0);
+                Toast.makeText(this, "Offline voice model could not load. Reopen Bubbles to retry.", Toast.LENGTH_LONG).show();
+            });
+            return;
         }
         try {
-            if (recognizer == null) {
-                recognizer = SpeechRecognizer.createSpeechRecognizer(this);
-                recognizer.setRecognitionListener(this);
-            }
-            Intent speech = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-            speech.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-            speech.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "en-GB");
-            speech.putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true);
-            speech.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1);
-            recognizing = true;
+            int minimum = AudioRecord.getMinBufferSize(16000, AudioFormat.CHANNEL_IN_MONO,
+                    AudioFormat.ENCODING_PCM_16BIT);
+            if (minimum <= 0) throw new IllegalStateException("Unsupported microphone format");
+            microphone = new AudioRecord(MediaRecorder.AudioSource.VOICE_RECOGNITION, 16000,
+                    AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT, Math.max(minimum, 8192));
+            if (microphone.getState() != AudioRecord.STATE_INITIALIZED)
+                throw new IllegalStateException("Microphone unavailable");
+            final AudioRecord input = microphone;
+            final Recognizer decoder = new Recognizer(voiceModel, 16000f);
+            input.startRecording();
+            captureRunning = true;
             state("listening", .12f);
-            recognizer.startListening(speech);
+            audioThread = new Thread(() -> {
+                short[] samples = new short[1600];
+                boolean suppressingReply = false;
+                try (Recognizer speech = decoder) {
+                    while (captureRunning && connected && !muted) {
+                        int count = input.read(samples, 0, samples.length);
+                        if (count <= 0) throw new IllegalStateException("Microphone read failed: " + count);
+                        double sum = 0;
+                        for (int i = 0; i < count; i++) sum += (double) samples[i] * samples[i];
+                        final float level = Math.min(1f, (float) Math.sqrt(sum / count) / 6000f);
+                        // Keep capture active during TTS; discard speaker echo instead of closing the microphone.
+                        if (speaking) {
+                            suppressingReply = true;
+                            speech.reset();
+                            continue;
+                        }
+                        if (suppressingReply) { speech.reset(); suppressingReply = false; }
+                        main.post(() -> {
+                            if (connected && !muted && !speaking) state(level > .08f ? "hearing" : "listening", level);
+                        });
+                        boolean complete = speech.acceptWaveForm(samples, count);
+                        if (complete) {
+                            final String transcript = new JSONObject(speech.getResult()).optString("text", "");
+                            main.post(() -> { if (connected && !muted && !speaking) heard(transcript); });
+                        }
+                    }
+                } catch (Exception error) {
+                    main.post(() -> {
+                        if (connected && !muted) {
+                            muteSession();
+                            state("error", 0);
+                            Toast.makeText(this, "Microphone capture stopped. Tap Bubbles to retry.", Toast.LENGTH_LONG).show();
+                        }
+                    });
+                }
+            }, "Bubbles-continuous-audio");
+            audioThread.start();
         } catch (Exception ex) {
-            recognizing = false;
-            scheduleRestart(900);
+            stopRecognition();
+            muted = true;
+            state("error", 0);
+            Toast.makeText(this, "Cannot open microphone. Check its permission and other recording apps.", Toast.LENGTH_LONG).show();
         }
     }
 
-    private void scheduleRestart(long delay) {
-        if (!connected || muted || speaking) return;
-        main.removeCallbacks(restart);
-        main.postDelayed(restart, delay);
-    }
-    private final Runnable restart = this::beginListening;
-
     private void stopRecognition() {
-        main.removeCallbacks(restart);
-        recognizing = false;
-        if (recognizer != null) {
-            try { recognizer.cancel(); } catch (Exception ignored) {}
+        captureRunning = false;
+        if (microphone != null) {
+            try { microphone.stop(); } catch (Exception ignored) {}
+        }
+        // Wait for the blocking read/decoder to finish before releasing its model.
+        if (audioThread != null) {
+            try { audioThread.join(1500); } catch (InterruptedException ex) { Thread.currentThread().interrupt(); }
+            if (audioThread.isAlive()) {
+                // Do not start another capture thread while this one still owns the decoder.
+                muted = true;
+                return;
+            }
+            audioThread = null;
+        }
+        if (microphone != null) {
+            microphone.release();
+            microphone = null;
         }
     }
     private void muteSession() {
@@ -211,8 +278,7 @@ public final class BubblesService extends Service implements RecognitionListener
     }
     private void finishSpeaking() {
         speaking = false;
-        state("listening", .1f);
-        if (!muted) scheduleRestart(200);
+        if (connected && !muted) state("listening", .1f);
     }
 
     private void heard(String raw) {
@@ -302,41 +368,22 @@ public final class BubblesService extends Service implements RecognitionListener
     }
     private void speak(String response) {
         if (!connected || muted) return;
-        if (tts == null) {state("listening", 0);scheduleRestart(300);return;}
+        if (tts == null || !ttsReady) {
+            state("listening", 0);
+            Toast.makeText(this, response, Toast.LENGTH_LONG).show();
+            return;
+        }
         speaking = true;
-        stopRecognition();
         state("speaking", .4f);
         int result = tts.speak(response, TextToSpeech.QUEUE_FLUSH, null, "bubbles-" + SystemClock.elapsedRealtime());
         if (result == TextToSpeech.ERROR) finishSpeaking();
     }
 
-    @Override public void onReadyForSpeech(android.os.Bundle params) {retries=0;state("listening", .1f);}
-    @Override public void onBeginningOfSpeech() {state("hearing", .5f);}
-    @Override public void onRmsChanged(float rmsdB) {if (!speaking)state(rmsdB>5f?"hearing":"listening", Math.max(0, Math.min(1f, rmsdB/13f)));}
-    @Override public void onBufferReceived(byte[] buffer) {}
-    @Override public void onEndOfSpeech() {if (!speaking)state("listening", .14f);}
-    @Override public void onError(int error) {
-        recognizing = false;
-        if (error == SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS) {muteSession();return;}
-        retries = Math.min(8,retries+1);
-        scheduleRestart(Math.min(4000,300L*(1L<<Math.min(retries,4))));
-    }
-    @Override public void onResults(android.os.Bundle results) {
-        recognizing=false;
-        ArrayList<String> values=results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-        if (values != null && !values.isEmpty()) heard(values.get(0));
-        if (!speaking) scheduleRestart(260);
-    }
-    @Override public void onPartialResults(android.os.Bundle partial) {
-        // Amplitude powers the orb; unfinalized transcripts never leave the device.
-    }
-    @Override public void onEvent(int type, android.os.Bundle params) {}
-
     @Override public IBinder onBind(Intent intent) {return null;}
     @Override public void onDestroy() {
         connected=false;muted=true;
         stopRecognition();
-        if (recognizer != null) {recognizer.destroy();recognizer=null;}
+        if (voiceModel != null && audioThread == null) {voiceModel.close();voiceModel=null;}
         if (tts != null) {tts.stop();tts.shutdown();tts=null;}
         if (orb != null && manager != null) {
             try {manager.removeView(orb);}catch(Exception ignored){}
@@ -349,6 +396,7 @@ public final class BubblesService extends Service implements RecognitionListener
         private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         private String currentState="listening";
         private float energy=.1f, downX, downY;
+        private int startX, startY;
         private long downAt;
         private boolean moved=false;
         OrbView(Context context) {super(context);setContentDescription("Bubbles AI floating voice bubble");}
@@ -373,16 +421,17 @@ public final class BubblesService extends Service implements RecognitionListener
             switch(e.getActionMasked()) {
                 case MotionEvent.ACTION_DOWN:
                     downX=e.getRawX();downY=e.getRawY();downAt=SystemClock.elapsedRealtime();moved=false;
+                    startX=bubbleLayout.x;startY=bubbleLayout.y;
                     return true;
                 case MotionEvent.ACTION_MOVE:
                     float dx=e.getRawX()-downX,dy=e.getRawY()-downY;
                     if(Math.abs(dx)>8||Math.abs(dy)>8)moved=true;
                     if(moved && bubbleLayout!=null&&manager!=null) {
-                        bubbleLayout.x=Math.max(0,bubbleLayout.x-Math.round(dx));
-                        bubbleLayout.y=Math.max(0,bubbleLayout.y+Math.round(dy));
+                        android.util.DisplayMetrics screen = getResources().getDisplayMetrics();
+                        bubbleLayout.x=Math.max(0,Math.min(screen.widthPixels-getWidth(),startX+Math.round(dx)));
+                        bubbleLayout.y=Math.max(0,Math.min(screen.heightPixels-getHeight(),startY+Math.round(dy)));
                         try{manager.updateViewLayout(this,bubbleLayout);}catch(Exception ignored){}
                     }
-                    downX=e.getRawX();downY=e.getRawY();
                     return true;
                 case MotionEvent.ACTION_UP:
                     if(!moved) {
@@ -402,4 +451,5 @@ public final class BubblesService extends Service implements RecognitionListener
         }
     }
 }
+
 
