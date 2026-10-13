@@ -6,7 +6,7 @@ const fs=require('node:fs');
 const gateSource=fs.readFileSync('bubbles-voice-gate.js','utf8');
 const appSource=fs.readFileSync('bubbles-ai.js','utf8');
 
-function harness(){
+function harness(owner=false){
  const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
  const node=(tag)=>{
   const n={tag,className:'',dataset:{},style:{setProperty(){}},children:[],handlers:{},hidden:false,value:'',
@@ -23,12 +23,12 @@ function harness(){
   start(){this.started=true}
   abort(){this.stopped=true}
  }
- const window={parent:{postMessage(){}},SpeechRecognition:Recognition,addEventListener(){},innerWidth:390,innerHeight:780};
+ const window={parent:{postMessage(){}},dispatchEvent(){},SpeechRecognition:Recognition,addEventListener(){},innerWidth:390,innerHeight:780, ...(owner?{QuantaBrainOwner:{ready:Promise.resolve({'X-Owner-Token':'fixture-only'})}}:{})};
  const navigator={mediaDevices:{async getUserMedia(){return{getTracks:()=>[track]}}}};
  const localStorage={getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)};
- const fetch=async(url,opts)=>{requests.push({url,opts});return{ok:true,json:async()=>({ok:true,output:'Bubbles response from Oracle'})}};
+ const fetch=async(url,opts)=>{requests.push({url,opts});return{ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',context:{}}}:{ok:true,output:'Bubbles response from Oracle'}}};
  const context={window,document,navigator,localStorage,location:{search:'',origin:'https://quantaphi.org',pathname:'/'},
-  URLSearchParams,crypto:{randomUUID:()=> 'note-id'},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
+  URLSearchParams,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
  vm.runInNewContext(gateSource,context);
  vm.runInNewContext(appSource,context);
  const orb=nodes.find(n=>n.className==='ba-launcher');
@@ -36,9 +36,9 @@ function harness(){
 }
 const flush=async()=>{for(let i=0;i<8;i++)await Promise.resolve()};
 const result=s=>Object.assign([{transcript:s}],{isFinal:true});
-test('Bubbles opens typing first and explicit voice control starts continuous listening',async()=>{
+test('Touching Bubbles starts continuous listening',async()=>{
  const h=harness();assert.equal(h.recognized.length,0);
- h.orb.handlers.click();await flush();assert.equal(h.recognized.length,0);
+ h.orb.handlers.click();await flush();assert.equal(h.recognized.length,1);
  h.nodes.find(n=>n.textContent==='Connect Bubbles voice').handlers.click();await flush();
  assert.equal(h.recognized.length,1);assert.equal(h.recognized[0].continuous,true);
  assert.equal(h.recognized[0].interimResults,true);
@@ -72,4 +72,26 @@ test('background suspension resumes on return but deliberate mute stays muted',a
  h.document.visibilityState='hidden';h.document.handlers.visibilitychange();
  h.document.visibilityState='visible';h.document.handlers.visibilitychange();await flush();
  assert.equal(h.recognized.length,2);
+});
+
+test('interim words light the bubble and show the heard transcript without sending it',async()=>{
+ const h=harness();h.orb.handlers.click();await flush();
+ const interim=Object.assign([{transcript:'Bubbles hello there'}],{isFinal:false});
+ h.recognized[0].onresult({resultIndex:0,results:[interim]});
+ assert.equal(h.orb.dataset.state,'hearing');assert.equal(h.orb.dataset.words,'3');assert.equal(h.requests.length,0);
+});
+test('explicit repair command is kept as work rather than a fabricated chat repair',async()=>{
+ const h=harness();h.orb.handlers.click();await flush();
+ h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles fix the image upload')]});await flush();
+ assert.equal(h.requests.length,0);
+ assert.equal(h.nodes.find(n=>n['aria-label']==='Work request for Robot Brain').value,'fix the image upload');
+});
+
+test('owner repair command creates and readies one real ticket with receipt',async()=>{
+ const h=harness(true);await flush();h.orb.handlers.click();await flush();
+ h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles repair the video generator')]});
+ await new Promise(resolve=>setTimeout(resolve,20));await flush();
+ assert.equal(h.requests.length,2);assert.match(h.requests[0].url,/tickets\/create$/);assert.match(h.requests[1].url,/tickets\/update$/);
+ assert.equal(JSON.parse(h.requests[0].opts.body).context.approval,'explicit-user-command');
+ assert.equal(h.nodes.find(n=>n['aria-label']==='Work request for Robot Brain').value,'');
 });
