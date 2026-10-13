@@ -7,7 +7,7 @@ const segment=source.slice(source.indexOf('const earningsButton='),source.indexO
 async function run(token){
  const calls=[],elements=[],timers=[];
  const wallet={token:()=>token,refresh:async()=>{}};
- const context={root:{append(){}},brainHeaders:{Authorization:'Bearer OWNER_TEST'},document:{visibilityState:'visible',createElement(){const el={setAttribute(){},addEventListener(){}};elements.push(el);return el}},window:{QuantaCloudConnection:{ready:Promise.resolve()},InfinityCloudWallet:class{constructor(){return wallet}},dispatchEvent(){}},CustomEvent:class{},AbortSignal,setInterval:f=>{timers.push(f);return 1},clearInterval(){},fetch:async(url,options)=>{calls.push({url,options});return {ok:true,json:async()=>({ok:true,username:'verified-device',payouts:[{status:'paid',asset:'QUANT'}]})}}};
+ const context={root:{append(){}},brainHeaders:{Authorization:'Bearer OWNER_TEST'},document:{visibilityState:'visible',createElement(){const el={setAttribute(){},addEventListener(){}};elements.push(el);return el}},window:{QuantaCloudConnection:{ready:Promise.resolve()},InfinityCloudWallet:class{constructor(){return wallet}},dispatchEvent(){},addEventListener(){}},CustomEvent:class{},AbortSignal,setInterval:f=>{timers.push(f);return 1},clearInterval(){},fetch:async(url,options)=>{calls.push({url,options});return {ok:true,json:async()=>({ok:true,username:'verified-device',payouts:[{status:'paid',asset:'QUANT'}]})}}};
  vm.runInNewContext(segment,context);
  for(let n=0;n<8;n++)await Promise.resolve();
  return {calls,elements,timers};
