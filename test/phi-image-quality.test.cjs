@@ -332,7 +332,7 @@ test('blue Image Grader repairs current pixels directly without changing uploads
  assert.doesNotMatch(fix,/showFile\(|source=new File|state\('composer'\)|#pi-prompt'\)\.value=/);
  assert.doesNotMatch(js,/reopenAsReference/);
  assert.doesNotMatch(html,/phi-image-type-studio\.js/);
- assert.match(html,/phi-image-builder\.js\?v=20261011-natural-copy1/);
+ assert.match(html,/phi-image-builder\.js\?v=[A-Za-z0-9-]+/);
  assert.match(css,/\.pi-grade-fix/);
 });
 

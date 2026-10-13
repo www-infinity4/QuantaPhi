@@ -1,0 +1,34 @@
+/* Oracle Octaves · shared image/video creation and full studio. */
+:root{--ovs-ink:#30243e;--ovs-purple:#492277;--ovs-line:#ceb5e6;--ovs-gold:#d6b65d}
+.oracle-video-page{margin:0;background:linear-gradient(145deg,#fffdf8,#f6effd 54%,#fffbef);color:var(--ovs-ink);font:16px/1.6 system-ui,-apple-system,Roboto,sans-serif;min-height:100dvh}
+.ovs-page{max-width:1120px;margin:auto;padding:clamp(16px,4vw,42px)}
+.ovs-page *,.phi-media-studio *{box-sizing:border-box}
+.ovs-nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:28px}
+.ovs-page a{color:#563086}.ovs-nav a{font-weight:800;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.ovs-hero{position:relative;overflow:hidden;padding:clamp(24px,5vw,52px);border:1px solid var(--ovs-line);border-radius:28px;background:linear-gradient(145deg,#fffdf8,#f6effd 54%,#fffbef);box-shadow:0 11px 32px #38144720;margin-bottom:24px}
+.ovs-hero:after{content:"";position:absolute;right:-55px;top:-85px;width:230px;height:230px;border:2px solid #c7a1eb50;border-radius:50%;box-shadow:0 0 0 18px #c7a1eb12,0 0 0 36px #dca95b17;pointer-events:none}
+.ovs-eyebrow{display:block;color:#5b2d84;font-size:11px;font-weight:950;letter-spacing:.11em}
+.ovs-hero h1{position:relative;font-size:clamp(35px,7vw,68px);line-height:1.06;letter-spacing:-.045em;color:#3d1f5d;max-width:760px;margin:15px 0 20px}
+.ovs-hero p{max-width:650px;color:#654e6f;margin:8px 0}.ovs-hero strong{color:#3d1f5d}
+.ovs-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.ovs-chips span{font-size:12px;font-weight:850;padding:5px 13px;background:#fff9df;border:1px solid #ddc77f;border-radius:999px;color:#684e21}
+.ovs-surface,.pv-panel{border:1px solid var(--ovs-line);border-radius:24px;background:#fff;box-shadow:0 8px 24px #38144716;padding:clamp(16px,3vw,28px);margin-bottom:20px;min-width:0}
+.ovs-surface h2,.pv-panel h2{color:#3d1f5d;margin:0 0 8px;font-size:25px;letter-spacing:-.03em}.ovs-surface p{max-width:75ch}
+.ovs-page canvas,.pv-canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border:1px solid #dbc7ed;border-radius:18px;background:white;margin:16px 0}
+.ovs-controls,.pv-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.ovs-page button,.ovs-button,.pv-panel button,.pm-toggle button{font:800 14px/1.3 system-ui;min-height:44px;border:1px solid #ab91c6;border-radius:999px;padding:11px 18px;background:linear-gradient(155deg,#fff,#f2e6ff);color:#452366;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.ovs-page .ovs-primary,.pv-panel .pv-primary,.pm-toggle [aria-selected="true"]{background:linear-gradient(135deg,#7940c9,#492277);color:#fff;border-color:#7138b8;box-shadow:0 5px 16px #49227730}
+.ovs-page button:disabled,.pv-panel button:disabled{opacity:.55;cursor:wait}.ovs-page :is(a,button,input,textarea,select):focus-visible,.phi-media-studio :is(a,button,input,textarea,select):focus-visible{outline:3px solid #8654de;outline-offset:3px}
+.ovs-page label,.pv-label{display:block;font-size:13px;font-weight:800;color:#4c2b66;margin:14px 0 7px}
+.ovs-page input,.pv-panel input,.pv-panel textarea,.pv-panel select{max-width:100%;font:inherit;border:1px solid #b9a0c9;border-radius:12px;background:white;color:#372440;padding:11px;min-height:44px}
+.pv-panel textarea{width:100%;min-height:110px;resize:vertical}.ovs-page input[type=checkbox]{min-height:0}.ovs-check{display:flex!important;gap:8px;align-items:center}
+.ovs-status,.pv-status{padding:12px 15px;background:#f8f1ff;border:1px solid #dbc7ed;border-radius:14px;font-size:13px;color:#532885;overflow-wrap:anywhere}
+.ovs-page video,.pv-result{display:block;width:100%;border-radius:18px;background:#21192c}.ovs-page [hidden],.phi-media-studio [hidden],.pv-panel [hidden]{display:none!important}
+.ovs-footnote,.pv-note{font-size:12px;color:#6b5774}.ovs-footer{padding:20px 5px;color:#6b5774;font-size:13px}
+.phi-media-studio{margin:14px 0 18px;border:1px solid var(--ovs-line);border-radius:24px;padding:clamp(14px,3vw,24px);background:linear-gradient(145deg,#fffdf8,#f6effd 54%,#fffbef);box-shadow:0 11px 32px #38144720;color:var(--ovs-ink);min-width:0}
+.pm-header{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;padding-bottom:15px;border-bottom:1px solid #e3d6ec;margin-bottom:16px}.pm-header h2{color:#3d1f5d;margin:5px 0;font-size:26px;letter-spacing:-.04em}.pm-header p{font-size:13px;color:#6c547b;margin:0}.pm-toggle{display:flex;gap:7px;padding:5px;border:1px solid #dbc7ed;border-radius:999px;background:#fff}.pm-toggle button{min-width:88px}
+.phi-media-studio #phiImageBuilder{margin:0}.phi-media-studio .pv-panel{margin:0;box-shadow:none}.pv-options{display:flex;flex-wrap:wrap;gap:14px;align-items:end}.pv-options>label{flex:1 1 140px;min-width:0}.pv-options select,.pv-options input{width:100%}.pv-thumbs{display:flex;gap:8px;overflow-x:auto;padding:7px 0}.pv-thumbs figure{margin:0;flex:0 0 100px}.pv-thumbs img{width:100px;height:65px;object-fit:cover;border-radius:10px;border:1px solid #dbc7ed}.pv-thumbs figcaption{font-size:10px;color:#6b5774}.pv-section{margin-top:15px;padding-top:15px;border-top:1px solid #e3d6ec}.pv-download{font-weight:800;color:#492277;min-height:44px;display:inline-flex;align-items:center}
+body.oracle-quanta .phi-media-studio .pm-toggle button,body.oracle-quanta .phi-media-studio .pv-panel button{border-radius:999px!important;min-height:44px!important;border:1px solid #ab91c6!important;background:#f2e8fa!important;color:#452366!important;padding:11px 18px!important;box-shadow:none!important}
+body.oracle-quanta .phi-media-studio .pm-toggle [aria-selected=true],body.oracle-quanta .phi-media-studio .pv-panel .pv-primary{background:linear-gradient(135deg,#7940c9,#492277)!important;color:white!important;border-color:#7138b8!important}
+@media(max-width:420px){.pm-header{display:block}.pm-toggle{width:fit-content;margin-top:15px}.pv-actions button{flex:1 1 140px}.ovs-controls button{flex:1 1 140px}}
+
+.ovs-art{margin:0 0 24px;border:1px solid #dbc7ed;border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 8px 24px #38144716}.ovs-art img{display:block;width:100%;height:auto}
