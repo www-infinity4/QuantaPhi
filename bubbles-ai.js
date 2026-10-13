@@ -252,7 +252,7 @@ async function sendMessage(text){
  messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
- if(/^(?:(?:can|could|would) you\s+)?(?:please\s+)?(?:fix|repair|restore|debug|check and fix)\b/i.test(request)){
+ if(/^(?:please\s+)?(?:(?:(?:can|could|would|will) you|i (?:want|need)(?: you)? to|you (?:need|have) to)\s+)?(?:please\s+)?(?:fix|repair|restore|debug|check and fix)\b/i.test(request)){
   workText.value=request;tools.open=true;
   try{const ticket=await submitWork(request,'explicit-user-command');workEvidence='Robot Brain receipt: ticket '+ticket+' is ready for the authenticated build runner. Queued only; no repair is verified complete.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
