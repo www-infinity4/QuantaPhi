@@ -2,6 +2,34 @@ const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','http
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
 function headers(request){return {'Content-Type':'application/json','Cache-Control':'no-store','Access-Control-Allow-Origin':ORIGINS.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Vary':'Origin','Access-Control-Allow-Headers':'Content-Type','Access-Control-Allow-Methods':'POST,GET,OPTIONS'};}
 function response(request,body,status=200){return new Response(JSON.stringify(body),{status,headers:headers(request)});}
+export function validateSpeechAudio(audio) {
+ if(typeof audio!=='string'||audio.length>520000||!audio.length||!/^[A-Za-z0-9+/]*={0,2}$/.test(audio))throw Error('invalid_audio');
+ let raw;try{raw=atob(audio)}catch{throw Error('invalid_audio')}
+ const bytes=Uint8Array.from(raw,c=>c.charCodeAt(0)),v=new DataView(bytes.buffer);
+ const text=(at,n)=>String.fromCharCode(...bytes.subarray(at,at+n));
+ if(bytes.length<44||text(0,4)!=='RIFF'||text(8,4)!=='WAVE'||text(12,4)!=='fmt '||
+  v.getUint32(16,true)!==16||v.getUint16(20,true)!==1||v.getUint16(22,true)!==1||
+  v.getUint32(24,true)!==16000||v.getUint16(34,true)!==16||text(36,4)!=='data'||
+  v.getUint32(40,true)!==bytes.length-44||v.getUint32(4,true)!==bytes.length-8||
+  bytes.length<8044||bytes.length>384044||(bytes.length-44)%2)throw Error('invalid_audio');
+ return bytes;
+}
+const speechWindows=new Map();
+async function transcribe(request,env) {
+ if(!env.AI)return response(request,{ok:false,error:'speech_service_unavailable'},503);
+ const key=request.headers.get('CF-Connecting-IP')||'unknown',now=Date.now();
+ let window=speechWindows.get(key);
+ if(!window||now-window.at>60000){window={at:now,count:0};speechWindows.set(key,window)}
+ if(speechWindows.size>1024)speechWindows.delete(speechWindows.keys().next().value);
+ if(++window.count>20)return response(request,{ok:false,error:'speech_rate_limited'},429);
+ if(Number(request.headers.get('Content-Length')||0)>520050)return response(request,{ok:false,error:'audio_too_large'},413);
+ try{
+  const body=await request.text();if(body.length>520050)return response(request,{ok:false,error:'audio_too_large'},413);
+  const data=JSON.parse(body);validateSpeechAudio(data.audio);
+  const result=await env.AI.run('@cf/openai/whisper-large-v3-turbo',{audio:data.audio,language:'en',task:'transcribe',vad_filter:true});
+  return response(request,{ok:true,text:clean(result.text,2500),provider:'cloudflare-workers-ai',stored:false});
+ }catch(error){return response(request,{ok:false,error:error?.message==='invalid_audio'?'invalid_audio':'speech_transcription_failed'},error?.message==='invalid_audio'?400:502)}
+}
 export function chooseTool(text){
  const request=clean(text).toLowerCase();
  if(/\b(?:create|start|make|open|build)\b.{0,70}\b(?:github\s+)?(?:repo|repository)\b/.test(request))return 'github.create_repository';
@@ -59,10 +87,12 @@ async function execute(request,env,body){
 }
 export default {async fetch(request,env){
  const url=new URL(request.url);
- if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',tools:{news:'connected',chat:Boolean(env.ORACLE),githubCreate:'not_connected'}});
+ if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',tools:{news:'connected',chat:Boolean(env.ORACLE),speech:Boolean(env.AI),githubCreate:'not_connected'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
+ if(request.method==='POST'&&url.pathname==='/v1/transcribe')return transcribe(request,env);
  if(request.method!=='POST'||url.pathname!=='/v1/assist')return response(request,{ok:false,error:'not_found'},404);
  if(Number(request.headers.get('Content-Length')||0)>20000)return response(request,{ok:false,error:'body_too_large'},413);
  try{const text=await request.text();if(text.length>20000)return response(request,{ok:false,error:'body_too_large'},413);return await execute(request,env,JSON.parse(text));}catch{return response(request,{ok:false,error:'assistant_request_failed'},502);}
 }};
+

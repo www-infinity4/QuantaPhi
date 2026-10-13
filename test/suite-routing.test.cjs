@@ -1,5 +1,5 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
-const worker=import('data:text/javascript;base64,'+Buffer.from(fs.readFileSync('workers/quantaphi-site/worker.js','utf8')).toString('base64'));
+const worker=import(require('node:url').pathToFileURL(require('node:path').resolve('workers/quantaphi-site/worker.js')).href);
 test('legacy Omni pages redirect inside the app so relative scripts resolve to Omni',async()=>{
  const app=(await worker).default;
  for(const route of ['overview','images','video','audio','code','create','cards','build']){

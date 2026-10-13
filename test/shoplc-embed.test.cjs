@@ -1,7 +1,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 async function request(path,type='text/html'){
  const scope={URL,Request,Response,Headers,AbortController,AbortSignal,setTimeout,clearTimeout,fetch:async()=>new Response('<!doctype html><html><body>ShopLC</body></html>',{headers:{'Content-Type':type,'X-Frame-Options':'DENY','Content-Security-Policy':"frame-ancestors 'none'"}})};
- vm.createContext(scope);vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace('export default','globalThis.worker='),scope);
+ vm.createContext(scope);vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace(/^import \{videoAPI\} from '\.\/video-api\.mjs';\s*/m,"const videoAPI=()=>{throw Error('Video route requires its dedicated API fixture')};\n").replace('export default','globalThis.worker='),scope);
  return scope.worker.fetch(new Request('https://quantaphi.org'+path));
 }
 test('Phi-owned ShopLC HTML can embed only on the same origin',async()=>{

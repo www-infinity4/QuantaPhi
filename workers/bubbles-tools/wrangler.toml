@@ -9,3 +9,6 @@ environment = "production"
 binding = "NEWS"
 service = "news-phi-feed"
 environment = "production"
+
+[ai]
+binding = "AI"

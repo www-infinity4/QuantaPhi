@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 
 const source=fs.readFileSync('workers/quantaphi-site/worker.js','utf8');
-const app=import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+const app=import(require('node:url').pathToFileURL(require('node:path').resolve('workers/quantaphi-site/worker.js')).href);
 const origin='https://quantaphi.org';
 
 test('Quant-AI mount normalizes its base path without leaving the paid origin',async()=>{

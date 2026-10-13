@@ -47,7 +47,7 @@ test('a credential without its account record still requests recovery',async()=>
 });
 test('the live gateway transfers an enrolled credential with or without its profile',async()=>{
  const context={URL,URLSearchParams,Request,Response,Headers,AbortController,setTimeout,clearTimeout,fetch:()=>{throw Error('unexpected upstream')}};vm.createContext(context);
- vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace('export default','globalThis.worker='),context);
+ vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace(/^import \{videoAPI\} from '\.\/video-api\.mjs';\s*/m,"const videoAPI=()=>{throw Error('Video route requires its dedicated API fixture')};\n").replace('export default','globalThis.worker='),context);
  const html=await(await context.worker.fetch(new Request('https://quantaphi.org/__wallet-handoff?return='+encodeURIComponent('https://quantaphi.org/?q=alpha')))).text();
  for(const withProfile of [false,true]){
   const entries=[['starquest_session',session],['starquest_ledger_device_v1:kris',TOKEN]];if(withProfile)entries.push(['starquest_users',JSON.stringify({kris:profile})]);
@@ -68,7 +68,7 @@ test('an enrolled token rebuilds its cloud profile without navigation or minting
 });
 test('gateway with no enrolled credential still falls back to the legacy recovery page',async()=>{
  const context={URL,URLSearchParams,Request,Response,Headers,AbortController,setTimeout,clearTimeout,fetch:()=>{throw Error('unexpected upstream')}};vm.createContext(context);
- vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace('export default','globalThis.worker='),context);
+ vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace(/^import \{videoAPI\} from '\.\/video-api\.mjs';\s*/m,"const videoAPI=()=>{throw Error('Video route requires its dedicated API fixture')};\n").replace('export default','globalThis.worker='),context);
  const html=await(await context.worker.fetch(new Request('https://quantaphi.org/__wallet-handoff?return='+encodeURIComponent('https://quantaphi.org/')))).text();const nav=[];
  vm.runInNewContext(html.match(/<script>([\s\S]*?)<\/script>/)[1],{localStorage:storage([]),URL,URLSearchParams,TextEncoder,btoa,Date,location:{origin:'https://quantaphi.org',search:'?return='+encodeURIComponent('https://quantaphi.org/'),replace:u=>nav.push(u)},document:{body:{}}});
  const target=new URL(nav[0]);assert.equal(target.origin,'https://www-infinity4.github.io');assert.equal(target.pathname,'/QuantaPhi/wallet-link.html');assert.equal(target.searchParams.get('mode'),'top');

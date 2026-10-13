@@ -17,7 +17,7 @@ test('alternate addresses do not add a banner or request the ledger',async()=>{c
 
 test('QuantaPhi edge reads current main before a potentially stale Pages copy',async()=>{
  const requests=[],context={URL,URLSearchParams,Request,Response,Headers,AbortController,setTimeout,clearTimeout,fetch:async request=>{requests.push(String(request.url||request));return new Response('current source',{headers:{'content-type':'application/javascript'}})}};
- vm.createContext(context);vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace('export default','globalThis.worker='),context);
+ vm.createContext(context);vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace(/^import \{videoAPI\} from '\.\/video-api\.mjs';\s*/m,"const videoAPI=()=>{throw Error('Video route requires its dedicated API fixture')};\n").replace('export default','globalThis.worker='),context);
  const response=await context.worker.fetch(new Request('https://quantaphi.org/cloud-wallet-client.js'));
  assert.equal(response.status,200);assert.equal(await response.text(),'current source');
  assert.equal(requests.length,1);const source=new URL(requests[0]);assert.equal(source.origin,'https://raw.githubusercontent.com');assert.equal(source.pathname,'/www-infinity4/QuantaPhi/main/cloud-wallet-client.js');assert.ok(source.searchParams.get('__qpedge'));

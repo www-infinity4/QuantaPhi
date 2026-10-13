@@ -23,12 +23,16 @@ function harness(owner=false,speech=false){
   start(){this.started=true}
   abort(){this.stopped=true}
  }
- const window={parent:{postMessage(){}},dispatchEvent(){},SpeechRecognition:Recognition,addEventListener(){},innerWidth:390,innerHeight:780, ...(owner?{QuantaBrainOwner:{ready:Promise.resolve({'X-Owner-Token':'fixture-only'})}}:{})};
+ const window={parent:{postMessage(){}},dispatchEvent(){},BubblesContinuousVoice:{async startContinuousVoice(options){
+  const rec=new Recognition();rec.start();rec.continuous=true;rec.interimResults=true;
+  rec.onresult=event=>{for(const result of event.results){if(result.isFinal&&!options.isSpeaking())options.onTranscript(result[0].transcript);else if(!options.isSpeaking())options.onLevel(.1)}};
+  return {stop(){rec.abort()},async resume(){}};
+ }},addEventListener(){},innerWidth:390,innerHeight:780, ...(owner?{QuantaBrainOwner:{ready:Promise.resolve({'X-Owner-Token':'fixture-only'})}}:{})};
  const navigator={mediaDevices:{async getUserMedia(){return{getTracks:()=>[track]}}}};
  const localStorage={getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)};
  const fetch=async(url,opts)=>{requests.push({url,opts});return{ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',context:{}}}:{ok:true,output:'Bubbles response from Oracle'}}};
- const context={window,document,navigator,localStorage,location:{search:'',origin:'https://quantaphi.org',pathname:'/'},
-  URLSearchParams,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
+ const context={window,document,navigator,localStorage,location:{href:'https://quantaphi.org/',search:'',origin:'https://quantaphi.org',pathname:'/'},
+  URL,URLSearchParams,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
  if(speech){context.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};context.speechSynthesis={cancel(){},getVoices:()=>[],speak(u){utterances.push(u);u.onstart?.()}};}
  vm.runInNewContext(gateSource,context);
  vm.runInNewContext(appSource,context);
@@ -75,11 +79,11 @@ test('microphone stays on across tab visibility changes until deliberate mute',a
  assert.equal(h.recognized.length,1);assert.equal(h.track.stopped,true);
 });
 
-test('interim words light the bubble and show the heard transcript without sending it',async()=>{
+test('local speech energy lights the bubble without sending a chat request',async()=>{
  const h=harness();h.orb.handlers.click();await flush();
  const interim=Object.assign([{transcript:'Bubbles hello there'}],{isFinal:false});
  h.recognized[0].onresult({resultIndex:0,results:[interim]});
- assert.equal(h.orb.dataset.state,'hearing');assert.equal(h.orb.dataset.words,'3');assert.equal(h.requests.length,0);
+ assert.equal(h.orb.dataset.state,'hearing');assert.equal(h.requests.length,0);
 });
 test('explicit repair command is kept as work rather than a fabricated chat repair',async()=>{
  const h=harness();h.orb.handlers.click();await flush();
@@ -106,3 +110,14 @@ test('spoken replies keep the same microphone and recognizer active',async()=>{
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles response from Oracle')]});await flush();
  assert.equal(h.requests.length,1,'synthesized speech is not sent back into AI');
 });
+test('owner helper loaded after Bubbles is connected after deferred scripts finish',async()=>{
+ const h=harness();await flush();
+ h.window.QuantaBrainOwner={ready:Promise.resolve({'X-Owner-Token':'fixture-only'})};
+ h.document.handlers.DOMContentLoaded();await flush();
+ assert.equal(h.nodes.find(n=>n.textContent==='Send approved request to Robot Brain').hidden,false);
+ h.orb.handlers.click();await flush();
+ h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles repair the upload')]});
+ await new Promise(resolve=>setTimeout(resolve,20));await flush();
+ assert.equal(h.requests.length,2);
+});
+
