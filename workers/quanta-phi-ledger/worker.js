@@ -1,4 +1,4 @@
-import {handleCollectorRequest,serveCollectorArt} from './collector-cards.mjs';
+import {handleCollectorRequest,listCollectorMuseum,serveCollectorArt} from './collector-cards.mjs';
 async function ensurePublishedPages(env){
  await env.DB.batch([
   env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_published_pages(slug TEXT PRIMARY KEY,owner_user_id TEXT NOT NULL,revision_id TEXT NOT NULL,source_token TEXT NOT NULL,title TEXT NOT NULL,html TEXT NOT NULL,created_at INTEGER NOT NULL,updated_at INTEGER NOT NULL,UNIQUE(owner_user_id,revision_id))"),
@@ -196,7 +196,16 @@ export default {
     if (origin && !allowedOrigin) return json({ error: "origin_not_allowed" }, 403);
 
     const collectorArt=url.pathname.match(/^\/v1\/collector\/art\/(ic_[a-f0-9-]{36})$/);
-    if(collectorArt&&request.method==='GET')return serveCollectorArt(request,env,collectorArt[1]);
+    if(collectorArt&&request.method==='GET'){
+      const response=await serveCollectorArt(request,env,collectorArt[1],false);
+      const cors=new Headers(response.headers);
+      if(allowedOrigin)cors.set('access-control-allow-origin',allowedOrigin);
+      return new Response(response.body,{status:response.status,headers:cors});
+    }
+    if(url.pathname==='/v1/collector/museum'&&request.method==='GET'){
+      try{const result=await listCollectorMuseum(env,request);return json(result.payload,result.status)}
+      catch(error){console.warn('Museum temporarily unavailable',error);return json({ok:false,error:'museum_unavailable'},503)}
+    }
 
     const publicSlug=url.pathname.match(/^\/v1\/public\/pages\/(p_[a-z0-9]{20,40})$/);
     if(publicSlug&&request.method==="GET"){
@@ -231,6 +240,13 @@ export default {
     if (senderWallet.status !== "active") return json({ error: "wallet_disabled" }, 403);
     const wallet = senderWallet.wallet_id;
 
+    const collectorPreview=url.pathname.match(/^\/v1\/collector\/preview\/(ic_[a-f0-9-]{36})$/);
+    if(collectorPreview&&request.method==='GET'){
+      const response=await serveCollectorArt(request,env,collectorPreview[1],true);
+      const cors=new Headers(response.headers);
+      if(allowedOrigin)cors.set('access-control-allow-origin',allowedOrigin);
+      return new Response(response.body,{status:response.status,headers:cors});
+    }
     if(url.pathname.startsWith('/v1/collector/')){
       try{
         const handled=await handleCollectorRequest(request,env,identity,wallet);
