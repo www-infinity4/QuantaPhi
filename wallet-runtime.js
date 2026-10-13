@@ -372,7 +372,7 @@
         const response=await phiCloudFetch(url,{cache:'no-store'});
         if(!response.ok)return;
         const data=await response.json().catch(()=>({}));
-        const balance=code==='INFINITY'?Number(data?.balances?.INFINITY):Number(data?.balance);
+        const balance=(code==='INFINITY'||code==='MUSIC_QUANT')?Number(data?.balances?.[code]):Number(data?.balance);
         if(!Number.isFinite(balance))return;
         const value=Math.max(0,balance);
         if(assets&&code in epochs){if(assets.accept(code,value,epochs[code]))cloudBalances[code]=value}else cloudBalances[code]=value;
@@ -381,7 +381,7 @@
     await Promise.all([
       readAsset('INFINITY',UNIFIED_WALLET_ENDPOINT+'/v1/wallet/state'),
       readAsset('QUANT',QUANTA_LEDGER_ENDPOINT+'/v1/quants/state'),
-      readAsset('MUSIC_QUANT',QUANTA_LEDGER_ENDPOINT+'/v1/music-quants/state'),
+      readAsset('MUSIC_QUANT',UNIFIED_WALLET_ENDPOINT+'/v1/wallet/state'),
       refreshStarCoinCloud()
     ]);
     refreshWalletUI();
@@ -450,7 +450,7 @@
       quantaWebsites:canonical.quants,
       legacy:canonical.legacy,
       total:ownedBalance('INFINITY',canonical.total),
-      musicQuants:musicState?.ok?Math.max(0,Number(musicState.balance)||0):ownedBalance('MUSIC_QUANT',localMusic),
+      musicQuants:ownedBalance('MUSIC_QUANT',localMusic), // Dedicated receipt count is not Unified Wallet balance.
       pianoQuants:Number(window.MusicQuantCloud?.pianoCount)||0,
       listeningQuants:Number(window.MusicQuantCloud?.listeningCount)||0
     };

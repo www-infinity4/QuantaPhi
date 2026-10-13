@@ -10,8 +10,13 @@ function mirror(state){
  const wallets=unified.wallets&&typeof unified.wallets==='object'?unified.wallets:{},wallet=wallets[walletId]&&typeof wallets[walletId]==='object'?wallets[walletId]:{},balances=wallet.balances&&typeof wallet.balances==='object'?wallet.balances:{};
  const confirmed=Math.max(0,Number(state.balance)||0);
  wallets[walletId]={...wallet,balances:{...balances,MUSIC_QUANT:confirmed},updatedAt:Date.now()};
- write(UNIFIED,{...unified,currentWalletId:unified.currentWalletId||walletId,wallets,musicQuants:confirmed,updatedAt:Date.now(),source:'music-quant-cloud'});
- window.dispatchEvent(new CustomEvent('controlphi:wallet-change',{detail:{musicQuants:confirmed,attachedMusicQuantRecords:confirmed,source:'music-quant-cloud'}}));
+ // A dedicated receipt ledger can contain only a subset of historical
+ // Unified Wallet Music Quants. Preserve the selected wallet's confirmed
+ // balance independently of the count of currently attached receipts.
+ const selected=String(unified.currentWalletId||'');
+ const displayMusic=selected?Math.max(0,Number(unified.musicQuants)||0):confirmed;
+ write(UNIFIED,{...unified,currentWalletId:selected||walletId,wallets,musicQuants:displayMusic,updatedAt:Date.now(),source:unified.source||'music-quant-cloud'});
+ window.dispatchEvent(new CustomEvent('controlphi:wallet-change',{detail:{attachedMusicQuantRecords:confirmed,source:'music-quant-cloud'}}));
  window.ControlPhi?.refreshWallet?.();
 }
 async function mergeCloud(cloud){
