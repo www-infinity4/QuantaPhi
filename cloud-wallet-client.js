@@ -154,10 +154,10 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
  const body=options.body&&typeof options.body==='object'?JSON.stringify(options.body):options.body;
  return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token}});
 }};
-function recoverWallet(){
- if(!PAID_ORIGINS.has(location.origin)||(findDeviceToken()&&hasAccountProfile()))return false;
+function recoverWallet(force=false){
+ if(!PAID_ORIGINS.has(location.origin)||(!force&&findDeviceToken()&&hasAccountProfile()))return false;
  try{
-  if(sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v4'))return false;
+  if(!force&&sessionStorage.getItem('quantaPhi:firstPartyWalletHandoff:v4'))return false;
   sessionStorage.setItem('quantaPhi:firstPartyWalletHandoff:v4',String(Date.now()));
   const returnUrl=new URL(location.href);returnUrl.hash='';
   const bridge=new URL('https://quantaphi.org/__wallet-handoff');
