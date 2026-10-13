@@ -233,7 +233,7 @@ function toggle(open){
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
-launcher.addEventListener('click',()=>{if(dragSuppressed){dragSuppressed=false;return}toggle(!showing)});
+launcher.addEventListener('click',()=>{if(dragSuppressed){dragSuppressed=false;return}if(!voiceEnabled){toggle(true);void startVoice()}else toggle(!showing)});
 launchCard.addEventListener('click',()=>{toggle(true);if(!voiceEnabled)void startVoice()});
 close.addEventListener('click',()=>toggle(false));
 function extract(reply){
@@ -249,6 +249,13 @@ async function sendMessage(text){
  const history=messages.slice(-10).map(m=>m.role+': '+m.text.slice(0,650)).join('\n');
  messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
  status.textContent=config.alias+' is thinking…';
+ if(/^(?:please\s+)?(?:fix|repair|restore|debug|check and fix)\b/i.test(request)){
+  workText.value=request;tools.open=true;
+  try{const ticket=await submitWork(request,'explicit-user-command');const answer='Repair ticket '+ticket+' is ready for Robot Brain. The repair is queued; it is not finished yet.';display(answer,'ai');status.textContent=answer;if(config.voice)speakText(answer)}
+  catch(error){const answer='Repair request kept in Notes & authorized work. '+String(error.message||error);display(answer,'ai');status.textContent=answer}
+  finally{busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}}
+  return;
+ }
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger inside QuantaPhi.','Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'You have NO independent GitHub write authorization or access to ChatGPT/Claude subscriptions. Only confirmed owner-submitted Robot Brain tickets count as queued; never claim a repository change occurred without tool evidence.',
@@ -329,7 +336,8 @@ function beginRecognition(){
   for(let i=from;i<(event.results?.length||0);i++){
    const result=event.results[i],transcript=String(result?.[0]?.transcript||'').trim();
    if(!transcript)continue;
-   if(!result.isFinal){if(!speaking){setOrbState('hearing');status.textContent='Hearing your voice · say Bubbles to address me.'}continue}
+   if(!speaking){setOrbState('hearing');launcher.style.setProperty('--ba-energy','1');status.textContent='Heard: '+transcript; launcher.dataset.words=String(transcript.split(/\s+/).length)}
+   if(!result.isFinal)continue;
    // Ignore the assistant's synthesized speech. Only addressed speech becomes a request.
    if(speaking||!voiceGate)continue;
    const turn=voiceGate.accept(transcript,Date.now());
@@ -376,7 +384,7 @@ async function startVoice(){
   if(Ctx&&window.requestAnimationFrame){
    try{audioContext=new Ctx();const source=audioContext.createMediaStreamSource(stream);
     meterAnalyser=audioContext.createAnalyser();meterAnalyser.fftSize=256;
-    source.connect(meterAnalyser);showLevel();
+    source.connect(meterAnalyser);await audioContext.resume();showLevel();
    }catch{ /* Browser recognition still works without the amplitude analyser. */ }
   }
   mic.textContent='🔇 Mute Bubbles';mic.setAttribute('aria-pressed','true');
@@ -440,24 +448,26 @@ async function getOwnerToken(){
  if(!headers)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=false;workStatus.textContent='Robot Brain connected to your verified owner session. Tap to queue a work request.';
 })();
-workButton.addEventListener('click',async()=>{
- if(!ownerReady||!ownerHeaders)return;
- const request=workText.value.trim();if(!request){workStatus.textContent='Describe the repository work to authorize first.';return}
+async function submitWork(request,approval='explicit-click'){
+ if(!ownerReady||!ownerHeaders)throw Error('Robot Brain needs your verified owner connection.');
+ if(workButton.disabled)throw Error('A work request is already being submitted.');
+ if(!request)throw Error('Describe the repository work first.');
  workButton.disabled=true;workStatus.textContent='Sending your approved task to the owner inbox…';
  try{
   const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(request));
   const submission=[...new Uint8Array(digest)].map(n=>n.toString(16).padStart(2,'0')).join('');
-  const response=await fetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},signal:AbortSignal.timeout(30000),body:JSON.stringify({source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,context:{kind:'robot-directions',submission_id:submission,requested_role:config.role,approval:'explicit-click',repository_writes:'require-github-authorization'}})});
+  const response=await fetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},signal:AbortSignal.timeout(30000),body:JSON.stringify({source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,context:{kind:'robot-directions',submission_id:submission,requested_role:config.role,approval,repository_writes:'require-github-authorization'}})});
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||result.message||'No confirmed ticket'));
   const job={id:'TASK-1',agent:'greenbeans',color:'green',team:['greenbeans','pink-panther','purple-pearl'],repository:'www-infinity4/QuantaPhi',status:'queued',title:request.slice(0,180),instructions:request,acceptance:['Implement the requested source behavior and pass focused regression checks. Report missing runtime verification separately.'],dependencies:[]};
   const updated=await fetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},signal:AbortSignal.timeout(20000),body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify([job]),context:{...result.ticket.context,color_jobs:[job]}})});
   const ready=await updated.json();if(!updated.ok||!ready.ok)throw Error(ready.error||'Ticket saved but not ready; open Robot Brain to finish routing.');
   workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs:[job]}}));
-  workStatus.textContent='Work ticket '+result.ticket.id+' is ready for the authenticated build runner. Follow its real progress in Robot Brain.';
- }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145)}
+  workStatus.textContent='Work ticket '+result.ticket.id+' is ready for the authenticated build runner. Follow its real progress in Robot Brain.';return result.ticket.id;
+ }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145);throw error}
  finally{workButton.disabled=false}
-});
+}
+workButton.addEventListener('click',()=>{void submitWork(workText.value.trim()).catch(()=>{})});
 window.QuantaBubbles={open:()=>toggle(true),close:()=>toggle(false)};
 if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
