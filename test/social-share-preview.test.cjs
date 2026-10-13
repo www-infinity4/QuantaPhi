@@ -10,7 +10,7 @@ const source=fs.readFileSync(path.join(ROOT,'workers/quantaphi-site/worker.js'),
 const index=fs.readFileSync(path.join(ROOT,'index.html'),'utf8');
 
 async function share(url,init){
-  const {default:worker}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+  const {default:worker}=await import(require('node:url').pathToFileURL(path.join(ROOT,'workers/quantaphi-site/worker.js')).href);
   return worker.fetch(new Request(url,init));
 }
 test('QuantaPhi X preview PNG is 1200x630 and is decodable',()=>{
