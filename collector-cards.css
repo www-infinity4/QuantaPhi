@@ -19,3 +19,8 @@
 #collectorShelf .ic-owned small{display:block;overflow-wrap:anywhere}
 @media(max-width:480px){#collectorCheckout,#collectorShelf{padding:13px}#collectorCheckout .ic-actions button{flex-basis:100%}}
 #collectorCheckout [hidden],#collectorShelf [hidden]{display:none!important}
+
+#collectorShelf .ic-owned-art{position:relative;flex:0 0 85px;min-width:0}
+#collectorShelf .ic-owned-art img{display:block;max-width:100%}
+#collectorShelf .ic-gold-number{position:absolute;bottom:7px;right:3px;font-family:Georgia,serif;font-size:15px;font-weight:900;color:#f7d36e;-webkit-text-stroke:.45px #2b1805;text-shadow:1px 2px 4px #17100d}
+#collectorShelf .ic-save-owned{font-size:13px;min-height:42px;margin-top:7px}
