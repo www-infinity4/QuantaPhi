@@ -31,6 +31,11 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify continuous native microphone contract
+        run: node --test test/bubbles-continuous-native.test.cjs
       - name: Verify Brain learning policy
         run: |
           mkdir -p /tmp/brain-policy
