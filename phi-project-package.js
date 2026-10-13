@@ -6,9 +6,9 @@ const KEY='quantaphi:asset-projects:v1', ACTIVE='quantaphi:active-asset-project:
 const clean=(s,max=400)=>String(s==null?'':s).replace(/\s+/g,' ').trim().slice(0,max);
 const uid=()=>root.crypto?.randomUUID?.()||('p'+Date.now().toString(36)+Math.random().toString(36).slice(2));
 const safeUrl=s=>{const raw=String(s||'').trim();if(!raw)return'';try{const u=new URL(raw,location.origin);return u.protocol==='https:'&&!u.username&&!u.password?u.href:''}catch{return''}};
-function read(){try{const a=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(a)?a.filter(x=>x&&typeof x.id==='string').slice(0,LIMIT):[]}catch{return[]}}
+function read(){try{const a=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(a)?a.filter(x=>x&&typeof x.id==='string'):[]}catch{return[]}}
 function notice(){root.dispatchEvent(new CustomEvent('phi-projects:changed'))}
-function write(items){try{localStorage.setItem(KEY,JSON.stringify(items.slice(0,LIMIT)));notice();return true}catch{return false}}
+function write(items){try{localStorage.setItem(KEY,JSON.stringify(items));notice();return true}catch{return false}}
 const list=()=>read();
 const active=()=>read().find(p=>p.id===localStorage.getItem(ACTIVE))||null;
 function use(id){if(!read().some(p=>p.id===id))return false;try{localStorage.setItem(ACTIVE,id);notice();return true}catch{return false}}
@@ -47,8 +47,8 @@ function normalized(item,allowLocal=false){
   license:clean(item?.license,280),year:Number.isInteger(item?.year)?item.year:null,
   originCard:clean(item?.originCard||item?.generator||'',65),collectedAt:new Date().toISOString()};
 }
-function capture(item){
- const p=active();if(!p)return {ok:false,reason:'Start or select a project token first.'};
+function capture(item,projectId){
+ const p=projectId?read().find(x=>x.id===projectId):active();if(!p)return {ok:false,reason:'Start or select a project token first.'};
  const asset=normalized(item,true);if(!asset)return {ok:false,reason:'Choose an image or a valid HTTPS source URL.'};
  const all=read(),project=all.find(x=>x.id===p.id);
  if(project.assets.some(x=>x.kind===asset.kind&&(asset.localAssetId?x.localAssetId===asset.localAssetId:x.sourceUrl===asset.sourceUrl)))return {ok:true,duplicate:true,project};
@@ -57,14 +57,14 @@ function capture(item){
  if(!write(all))return {ok:false,reason:'Local storage unavailable; export your project.'};
  return {ok:true,duplicate:false,project};
 }
-async function captureFile(file,originCard='project-workspace'){
+async function captureFile(file,originCard='project-workspace',projectId){
  const files=root.PhiProjectFiles;
  if(!active())return {ok:false,reason:'Start or select a project token first.'};
  if(!files)return {ok:false,reason:'Image storage is unavailable.'};
  let saved;
  try{
   saved=await files.save(file);
-  const result=capture({kind:'image',title:saved.name,localAssetId:saved.id,fileName:saved.name,mime:saved.mime,originCard});
+  const result=capture({kind:'image',title:saved.name,localAssetId:saved.id,fileName:saved.name,mime:saved.mime,originCard},projectId);
   if(!result.ok)await files.remove(saved.id);
   return {...result,localAssetId:result.ok?saved.id:''};
  }catch(e){if(saved)await files.remove(saved.id).catch(()=>{});return {ok:false,reason:clean(e?.message||'Could not save that image.',150)}}
@@ -104,3 +104,4 @@ root.addEventListener('quantaphi:collected',event=>{if(active()&&event?.detail)c
 root.addEventListener('storage',event=>{if(event.key===KEY||event.key===ACTIVE)notice()});
 root.PhiProjectPackage=Object.freeze({list,active,use,newToken,rename,tokens,attachToken,capture,captureFile,download,importProject,seed});
 })(window);
+

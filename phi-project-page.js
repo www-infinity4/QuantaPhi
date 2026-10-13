@@ -58,11 +58,11 @@ function render(){
  name.value=p.title;
  append(items,el('h3','',''+p.title));
  append(items,el('p','pwp-note',p.assets.length+' collected sources · '+(p.tokenId?'Linked token '+p.tokenId:'Local draft '+p.draftTokenId)+'.'));
- if(!p.assets.length){append(items,el('p','','Collect an image in TerriPhi/PetriPhi or add a source below.'))}
+ if(!p.assets.length){append(items,el('p','','Collect an image in Terra Phi/Petra Phi or add a source below.'))}
  for(const asset of p.assets){
   const card=append(items,el('article','pwp-asset'));
   if(asset.imageUrl||asset.localAssetId){
-   const img=append(card,el('img'));img.alt=asset.title;img.loading='lazy';img.referrerPolicy='no-referrer';
+   const img=append(card,el(asset.kind==='video'&&asset.localAssetId?'video':'img'));img.alt=asset.title;img.loading='lazy';img.referrerPolicy='no-referrer';if(img.tagName==='VIDEO'){img.controls=true;img.playsInline=true;img.style.width='100%';img.style.maxWidth='280px';}
    if(asset.imageUrl)img.src=asset.imageUrl;
    else{img.hidden=true;void displaySavedImage(img,asset.localAssetId,version)}
   }
@@ -71,7 +71,7 @@ function render(){
   append(copy,el('p','pwp-note',asset.kind+(asset.year?' · '+asset.year:'')+(asset.license?' · '+asset.license:'')));
   if(asset.sourceUrl){
    const link=append(copy,el('a','','Open original source ↗'));link.href=asset.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';
-  }else append(copy,el('p','pwp-note','Uploaded on this device · '+(asset.fileName||'Image')+' · not yet backed up to the cloud'));
+  }else {append(copy,el('p','pwp-note','Saved on this device · '+(asset.fileName||'Media')+' · not yet backed up to the cloud'));if(asset.localAssetId){const download=append(copy,el('button','pwp-action','Download file'));download.type='button';download.onclick=async()=>{const record=await window.PhiProjectFiles?.get(asset.localAssetId);if(!record?.blob){status.textContent='File unavailable on this device.';return}const u=URL.createObjectURL(record.blob),a=el('a');a.href=u;a.download=record.name;a.click();setTimeout(()=>URL.revokeObjectURL(u),30000)}}}
  }
 }
 async function walletOptions(){
@@ -82,7 +82,7 @@ add.onclick=()=>{const p=pkg.newToken(name.value||'New project');status.textCont
 rename.onclick=()=>{status.textContent=pkg.rename(name.value)?'Project renamed.':'Choose a project first.'};
 exportButton.onclick=()=>{
  const p=pkg.active();
- status.textContent=pkg.download()?(p.assets.some(x=>x.localAssetId)?'Project source JSON exported. Device images are not included in the JSON; keep their originals.':'Project source JSON exported.'):'Choose a project first.';
+ status.textContent=pkg.download()?(p.assets.some(x=>x.localAssetId)?'Project source JSON exported. Device media files are not included in the JSON; use the individual download controls.':'Project source JSON exported.'):'Choose a project first.';
 };
 file.onchange=async()=>{const f=file.files?.[0];if(!f)return;try{if(f.size>500000)throw Error('File exceeds 500 KB');
  const result=pkg.importProject(JSON.parse(await f.text()));status.textContent=result?'Imported '+result.assets.length+' sources.':'Not a supported asset project.'}
@@ -109,3 +109,4 @@ sourceForm.onsubmit=e=>{e.preventDefault();const result=pkg.capture({kind:kind.v
 window.addEventListener('phi-projects:changed',render);
 render();void walletOptions();
 })();
+
