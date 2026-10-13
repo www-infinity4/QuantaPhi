@@ -1,16 +1,20 @@
+import {available,openVideo,openMedia} from './open-video.mjs';
 const json=(data,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'no-store'}});
 export async function videoAPI(request,env,fetcher=fetch){
  const url=new URL(request.url),path=url.pathname;
- if(path==='/api/video/config'&&request.method==='GET')return json({ok:true,configured:!!env.XAI_API_KEY&&!!env.VIDEO_RATE_LIMITER,provider:'Grok Imagine',model:env.XAI_VIDEO_MODEL||'grok-imagine-video-1.5'});
+ if(path==='/api/video/media'&&request.method==='GET')return openMedia(request,env,fetcher);
+ if(path==='/api/video/config'&&request.method==='GET')return json({ok:true,configured:!!env.XAI_API_KEY&&!!env.VIDEO_RATE_LIMITER,engines:available(env),defaultProvider:'open',provider:'Grok Imagine',model:env.XAI_VIDEO_MODEL||'grok-imagine-video-1.5'});
  if(request.method!=='POST')return json({ok:false,error:'Method not allowed'},405);
  if(request.headers.get('Origin')!==url.origin)return json({ok:false,error:'Same-origin request required'},403);
- if(!env.XAI_API_KEY)return json({ok:false,error:'Imagine video is not configured. The site owner must add XAI_API_KEY on the server.'},503);
+
  const token=request.headers.get('Authorization')||'';
  if(!/^Bearer sq_[A-Za-z0-9_-]{32,}$/.test(token))return json({ok:false,error:'Connect your StarQuest wallet first.'},401);
  const wallet=await fetcher('https://unified-wallet.marvaseater.workers.dev/v1/wallet/state',{headers:{Authorization:token},signal:AbortSignal.timeout(10000)});
  if(!wallet.ok)return json({ok:false,error:'Wallet authentication failed'},401);
  const raw=await request.text();if(raw.length>15000000)return json({ok:false,error:'Reference image is too large'},413);
  let body;try{body=JSON.parse(raw)}catch{return json({ok:false,error:'Invalid JSON'},400)}
+ if(body.provider==='open'){if(path==='/api/video/generate'&&(typeof body.prompt!=='string'||!body.prompt.trim()||body.prompt.length>6000||![5,10,15].includes(body.duration)||!['16:9','9:16','1:1'].includes(body.aspect_ratio)))return json({ok:false,error:'Invalid generation settings'},400);return openVideo(request,env,body,token,fetcher);}
+ if(!env.XAI_API_KEY)return json({ok:false,error:'Imagine is not configured; select an open-model renderer.'},503);
  const headers={Authorization:'Bearer '+env.XAI_API_KEY,'Content-Type':'application/json'};
  let endpoint,payload;
  if(path==='/api/video/status'){

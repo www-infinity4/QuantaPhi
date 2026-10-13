@@ -7,7 +7,7 @@ const token='Bearer sq_'+'a'.repeat(40);
 const req=(path,body,auth=token)=>new Request('https://quantaphi.org/api/video/'+path,{method:'POST',headers:{Origin:'https://quantaphi.org',Authorization:auth},body:JSON.stringify(body)});
 const env={XAI_API_KEY:'test-only',VIDEO_RATE_LIMITER:{limit:async()=>({success:true})}};
 const body={prompt:'A cartoon robot walks and waves',duration:5,aspect_ratio:'16:9',resolution:'1080p',generate_audio:true};
-test('fails closed without provider key or authenticated wallet',async()=>{assert.equal((await videoAPI(req('generate',body),{})).status,503);assert.equal((await videoAPI(req('generate',body,''),env)).status,401)});
+test('fails closed without provider key or authenticated wallet',async()=>{assert.equal((await videoAPI(req('generate',body),{},async()=>Response.json({ok:true}))).status,503);assert.equal((await videoAPI(req('generate',body,''),env)).status,401)});
 test('submits real video request and polls only with wallet-bound receipt',async()=>{const calls=[];const f=async(url,options)=>{calls.push({url,options});if(url.includes('wallet/state'))return Response.json({ok:true});if(url.endsWith('/generations'))return Response.json({request_id:'job-12345678'});return Response.json({status:'done',video:{url:'https://vidgen.x.ai/test.mp4',duration:5,respect_moderation:true}})};
 const r=await (await videoAPI(req('generate',body),env,f)).json();assert.equal(r.ok,true);const submitted=JSON.parse(calls[1].options.body);assert.equal(submitted.model,'grok-imagine-video-1.5');assert.equal(submitted.generate_audio,true);assert.equal(submitted.resolution,'1080p');
 assert.equal((await videoAPI(req('status',{request_id:r.request_id,receipt:'bad'}),env,f)).status,403);
