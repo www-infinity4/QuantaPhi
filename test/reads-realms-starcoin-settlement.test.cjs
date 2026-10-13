@@ -16,7 +16,7 @@ INSERT INTO account_devices VALUES('user_test','${hash}');`);
  const context={crypto,TextEncoder,Response,URL,console};
  vm.createContext(context);
  const workerSource=fs.readFileSync('workers/quanta-phi-ledger/worker.js','utf8');
- vm.runInContext(workerSource.replace('export default {','const worker = {')+'\nglobalThis.worker=worker;',context);
+ vm.runInContext(workerSource.replace("import {handleCollectorRequest,serveCollectorArt} from './collector-cards.mjs';",'').replace('export default {','const worker = {')+'\nglobalThis.worker=worker;',context);
  const env={DB:d1(ledger),IDENTITY_DB:d1(identity)};
  const call=(credits)=>context.worker.fetch(new Request('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/star-coins',{method:'POST',headers:{origin:'https://quantaphi.org',authorization:'Bearer '+TOKEN,'content-type':'application/json'},body:JSON.stringify({credits})}),env,{});
  const reconcile=()=>context.worker.fetch(new Request('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/star-coins/reconcile',{method:'POST',headers:{origin:'https://quantaphi.org',authorization:'Bearer '+TOKEN,'content-type':'application/json'},body:'{}'}),env,{});
