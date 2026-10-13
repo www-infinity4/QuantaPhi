@@ -244,6 +244,16 @@ function extract(reply){
  if(value&&typeof value==='object')value=value.text||value.content||'';
  return String(value||'').trim();
 }
+function isOwnerWorkRequest(text){
+ const request=String(text||'').trim();
+ if(!request||request.length>4000)return false;
+ const verb=/\b(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct)\b/i;
+ const target=/\b(?:quantaphi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone)\b/i;
+ const direct=/^(?:(?:please|hey bubbles|bubbles)\s+)*(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct)\b/i;
+ const directive=/^(?:please\s+)?(?:i\s+(?:need|want)\s+(?:you\s+)?to|you\s+(?:need|have)\s+to|can\s+you|could\s+you|would\s+you|please|we\s+need\s+to)\b/i;
+ const followup=/(?:^|[.!?]\s+)(?:please\s+)?(?:fix|repair|restore|update|upgrade|wire|connect)\b/i;
+ return verb.test(request)&&target.test(request)&&(direct.test(request)||directive.test(request)||followup.test(request));
+}
 async function sendMessage(text){
  const request=String(text||'').trim();if(busy||!request)return;
  busy=true;send.disabled=true;display(request,'you');input.value='';setOrbState('thinking');
@@ -252,7 +262,7 @@ async function sendMessage(text){
  messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
- if(/^(?:please\s+)?(?:(?:(?:can|could|would|will) you|i (?:want|need)(?: you)? to|you (?:need|have) to)\s+)?(?:please\s+)?(?:fix|repair|restore|debug|check and fix)\b/i.test(request)){
+ if(!embedded&&isOwnerWorkRequest(request)){
   workText.value=request;tools.open=true;
   try{const ticket=await submitWork(request,'explicit-user-command');workEvidence='Robot Brain receipt: ticket '+ticket+' is ready for the authenticated build runner. Queued only; no repair is verified complete.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
