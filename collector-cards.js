@@ -10,6 +10,12 @@ const panel=make('section','ic-collector oracle-surface');
 panel.id='collectorCheckout';panel.hidden=true;
 panel.append(make('h3','','Infinity 2026® Collector Edition'),
  make('p','ic-explainer','Publish one finished design. Each buyer pays 1 StarCoin and receives the next permanent gold edition number: 1/1, 1/2, 1/3…'));
+const seriesLabel=make('label','ic-series-label','Choose collector series');
+const seriesSelect=make('select','ic-series');seriesSelect.setAttribute('aria-label','Card series');
+for(const name of ['StarQuest','Chiller','ShopLC','Infinity Radio']){
+ const opt=make('option','',name);opt.value=name;seriesSelect.append(opt);
+}
+seriesLabel.append(seriesSelect);panel.append(seriesLabel);
 const actions=make('div','ic-actions');
 const publish=make('button','ic-primary','Publish this card design');publish.type='button';
 const buy=make('button','','Buy a numbered copy · 1 StarCoin');buy.type='button';buy.disabled=true;
@@ -60,7 +66,7 @@ async function publishDesign(){
  try{
   const imageDataUrl=await asDataURL(activeArtwork);
   const title=String(at.artifact.prompt||'Infinity 2026 Original Card').trim().slice(0,140);
-  const response=await request('/designs','POST',{title,renderId:activeArtifactId,prompt:String(at.artifact.prompt||''),imageDataUrl});
+  const response=await request('/designs','POST',{title,renderId:activeArtifactId,prompt:String(at.artifact.prompt||''),series:seriesSelect.value,imageDataUrl});
   if(root.PhiImageBuilder?.get?.()?.artifact?.id!==activeArtifactId){message('A newer image replaced this design. Its published copy remains unchanged.');return;}
   design=response;buy.disabled=false;publish.textContent='Design published';message('Design is saved. Gold serial numbers are assigned upon successful 1 StarCoin purchases.');
  }catch(error){publish.disabled=false;message(String(error?.message||error)+'. No purchase was made.')}
@@ -107,6 +113,15 @@ async function buyCopy(){
  }catch(error){message(String(error?.message||error)+'. If this timed out, retry uses the SAME purchase ID; no extra charge.')}
  finally{working=false;buy.disabled=false;}
 }
+const artObjects=new Set();
+async function ownedArt(designId){
+ const resp=await root.QuantaCloudConnection.authenticatedFetch(API+'/preview/'+encodeURIComponent(designId),{method:'GET'});
+ if(!resp.ok)throw Error('Collector artwork unavailable ('+resp.status+')');
+ const file=await resp.blob();
+ if(!/^image\/(png|jpeg|webp)$/.test(file.type))throw Error('Invalid collector artwork');
+ const url=URL.createObjectURL(file);artObjects.add(url);return url;
+}
+root.addEventListener('pagehide',()=>{for(const u of artObjects)URL.revokeObjectURL(u);artObjects.clear()});
 async function myCards(){
  shelfButton.disabled=true;shelfStatus.textContent='Loading your settled collector receipts…';
  try{
@@ -116,12 +131,17 @@ async function myCards(){
   shelfStatus.textContent=response.copies.length+' recent owned cards';
   for(const item of response.copies){
    const r=item.receipt;const card=make('article','ic-owned');
-   const frame=make('div','ic-owned-art');const img=make('img');img.src=r.artUrl;img.loading='lazy';img.alt=r.title;
+   const frame=make('div','ic-owned-art');const img=make('img');img.loading='lazy';img.alt=r.title;
+   const loadOwned=async()=>{try{img.src=await ownedArt(r.designId)}catch{img.alt='Collector artwork temporarily unavailable'}};
+   if('IntersectionObserver' in root){
+    const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){observer.disconnect();void loadOwned()}});
+    observer.observe(frame);
+   }else void loadOwned();
    frame.append(img,make('span','ic-gold-number',r.goldEdition));
    const details=make('div');details.append(make('strong','',r.title),make('p','','Gold edition '+r.goldEdition+' · '+r.purchasePriceStarCoins+' StarCoin'));
    const token=make('small','',r.assetTokenId+' · '+(item.quantDataSynced?'Quant data saved':'Quant data pending'));
    const save=make('button','ic-save-owned','Save numbered image');save.type='button';
-   save.addEventListener('click',async()=>{save.disabled=true;try{const u=await goldImage(r.artUrl,r.serialNumber);const link=document.createElement('a');link.href=u;link.download='Infinity-2026-'+r.goldEdition.replace('/','-')+'.png';link.click();setTimeout(()=>URL.revokeObjectURL(u),20000);}catch(error){shelfStatus.textContent='Numbered download unavailable: '+String(error?.message||error)}finally{save.disabled=false;}});
+   save.addEventListener('click',async()=>{save.disabled=true;try{const privateUrl=img.src.startsWith('blob:')?img.src:await ownedArt(r.designId);const u=await goldImage(privateUrl,r.serialNumber);const link=document.createElement('a');link.href=u;link.download='Infinity-2026-'+r.goldEdition.replace('/','-')+'.png';link.click();setTimeout(()=>URL.revokeObjectURL(u),20000);}catch(error){shelfStatus.textContent='Numbered download unavailable: '+String(error?.message||error)}finally{save.disabled=false;}});
    details.append(token,save);card.append(frame,details);shelfRows.append(card);
   }
  }catch(error){shelfStatus.textContent=String(error?.message||error);}
