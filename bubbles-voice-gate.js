@@ -8,6 +8,7 @@
   const RESUME = /^(?:wake up|start listening|listen|unmute|are you there)[\s.!?]*$/i;
   function create(options) {
     const keepMs = Math.max(5000, Math.min(90000, Number(options?.followupMs) || 30000));
+    const requireWakeName = options?.requireWakeName !== false;
     let activeUntil = 0;
     let quiet = false;
     let lastMessage = '';
@@ -26,7 +27,7 @@
       const matched = text.match(wake);
       const directed = Boolean(matched);
       const content = directed ? text.slice(matched[0].length).replace(/^[\s,:.!?-]+/, '').trim() : text;
-      if (!directed && (quiet || now > activeUntil)) return {type: 'ignore', reason: 'wake_name_required'};
+      if ((!requireWakeName && quiet) || (requireWakeName && !directed && (quiet || now > activeUntil))) return {type: 'ignore', reason: 'wake_name_required'};
       if (MUTE.test(content)) {
         activeUntil = 0; quiet = true;
         return {type: 'mute'};
@@ -44,7 +45,7 @@
       setName,
       extend: (at) => {if (!quiet && activeUntil) activeUntil = (Number.isFinite(at) ? at : Date.now()) + keepMs;},
       reset: () => {activeUntil = 0; quiet = false; lastMessage = ''; lastAt = 0;},
-      get active() {return !quiet && Date.now() <= activeUntil;},
+      get active() {return !quiet && (!requireWakeName || Date.now() <= activeUntil);},
       get quiet() {return quiet;}
     };
   }
