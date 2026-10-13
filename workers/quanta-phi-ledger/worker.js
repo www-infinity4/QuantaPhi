@@ -1,3 +1,4 @@
+import {handleCollectorRequest,serveCollectorArt} from './collector-cards.mjs';
 async function ensurePublishedPages(env){
  await env.DB.batch([
   env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_published_pages(slug TEXT PRIMARY KEY,owner_user_id TEXT NOT NULL,revision_id TEXT NOT NULL,source_token TEXT NOT NULL,title TEXT NOT NULL,html TEXT NOT NULL,created_at INTEGER NOT NULL,updated_at INTEGER NOT NULL,UNIQUE(owner_user_id,revision_id))"),
@@ -194,6 +195,9 @@ export default {
 
     if (origin && !allowedOrigin) return json({ error: "origin_not_allowed" }, 403);
 
+    const collectorArt=url.pathname.match(/^\/v1\/collector\/art\/(ic_[a-f0-9-]{36})$/);
+    if(collectorArt&&request.method==='GET')return serveCollectorArt(request,env,collectorArt[1]);
+
     const publicSlug=url.pathname.match(/^\/v1\/public\/pages\/(p_[a-z0-9]{20,40})$/);
     if(publicSlug&&request.method==="GET"){
       await ensurePublishedPages(env);
@@ -226,6 +230,16 @@ export default {
     if (!senderWallet) return json({ error: "quant_wallet_create_failed" }, 500);
     if (senderWallet.status !== "active") return json({ error: "wallet_disabled" }, 403);
     const wallet = senderWallet.wallet_id;
+
+    if(url.pathname.startsWith('/v1/collector/')){
+      try{
+        const handled=await handleCollectorRequest(request,env,identity,wallet);
+        return json(handled.payload,handled.status);
+      }catch(error){
+        console.error('Collector checkout failure',error);
+        return json({ok:false,error:'collector_service_unavailable'},503);
+      }
+    }
 
     if(url.pathname==="/v1/pages"&&request.method==="POST"){
       // Authorize through the same device identity and wallet as Quant research.
