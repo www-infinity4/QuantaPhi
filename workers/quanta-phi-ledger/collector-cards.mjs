@@ -2,6 +2,8 @@
 // Canonical StarQuest debit, serial and receipt live in ONE IDENTITY_DB transaction.
 // Quant data is an idempotent projection; it never issues or charges a card.
 const PRICE = 1;
+const REVEAL_DELAY_MS = 7 * 24 * 60 * 60 * 1000;
+const SERIES = Object.freeze(['StarQuest','Chiller','ShopLC','Infinity Radio']);
 const ART_PREFIX = 'collector-cards/';
 const json = (payload,status=200)=>({payload,status});
 const clean = (v,max=200)=>String(v||'').trim().slice(0,max);
@@ -14,19 +16,20 @@ export async function ensureCollectorSchema(env){
   db.prepare("CREATE TABLE IF NOT EXISTS qp_collector_designs(design_id TEXT PRIMARY KEY,creator_account_id TEXT NOT NULL,title TEXT NOT NULL,art_key TEXT NOT NULL UNIQUE,art_mime TEXT NOT NULL,art_sha256 TEXT NOT NULL,render_id TEXT NOT NULL,prompt TEXT NOT NULL,created_at INTEGER NOT NULL,is_active INTEGER NOT NULL DEFAULT 1)"),
   db.prepare("CREATE TABLE IF NOT EXISTS qp_collector_copies(token_id TEXT PRIMARY KEY,receipt_id TEXT NOT NULL UNIQUE,design_id TEXT NOT NULL,account_id TEXT NOT NULL,serial_number INTEGER NOT NULL CHECK(serial_number>0),request_id TEXT NOT NULL,price_starcoins INTEGER NOT NULL DEFAULT 1 CHECK(price_starcoins=1),created_at INTEGER NOT NULL,UNIQUE(design_id,serial_number),UNIQUE(account_id,request_id),FOREIGN KEY(design_id) REFERENCES qp_collector_designs(design_id))"),
   db.prepare("CREATE INDEX IF NOT EXISTS qp_collector_owner_idx ON qp_collector_copies(account_id,created_at DESC)"),
+  db.prepare("CREATE TABLE IF NOT EXISTS qp_collector_series(design_id TEXT PRIMARY KEY,series TEXT NOT NULL,FOREIGN KEY(design_id) REFERENCES qp_collector_designs(design_id))"),
   // If the account cannot be debited, the INSERT and all its effects roll back.
   db.prepare("CREATE TRIGGER IF NOT EXISTS qp_collector_charge_v1 AFTER INSERT ON qp_collector_copies BEGIN UPDATE accounts SET star_coins=star_coins-1,updated_at=NEW.created_at WHERE id=NEW.account_id AND star_coins>=1; SELECT RAISE(ABORT,'insufficient_star_coins') WHERE changes()!=1; INSERT INTO ledger_events(id,account_id,event_type,amount,balance,progress_to_next_coin,shares_per_coin,reference_id,content_id,company_id,actors_json,attribution_status,payout_status,created_at) SELECT 'ledger-' || NEW.receipt_id,NEW.account_id,'collector_purchase',-1,a.star_coins,a.pending_share_credits,10,NEW.receipt_id,NEW.design_id,'quanta-phi','[]','infinity_collector','settled',NEW.created_at FROM accounts a WHERE a.id=NEW.account_id; END")
  ]);
 }
 function artURL(request,id){return new URL('/v1/collector/art/'+id,request.url).toString();}
 function receipt(row,request){
- return {receiptId:row.receipt_id,assetTokenId:row.token_id,designId:row.design_id,title:row.title,
+ return {receiptId:row.receipt_id,assetTokenId:row.token_id,designId:row.design_id,title:row.title,series:row.series||'StarQuest',
   serialNumber:Number(row.serial_number),goldEdition:'1/'+Number(row.serial_number),purchasePriceStarCoins:PRICE,
   assetCostBasis:{unit:'StarCoin',amount:PRICE},marketResaleValue:null,
   artUrl:artURL(request,row.design_id),purchasedAt:new Date(Number(row.created_at)).toISOString()};
 }
 async function getCopy(env,account,requestId){
- return env.IDENTITY_DB.prepare('SELECT c.*,d.title FROM qp_collector_copies c JOIN qp_collector_designs d ON d.design_id=c.design_id WHERE c.account_id=? AND c.request_id=? LIMIT 1').bind(account,requestId).first();
+ return env.IDENTITY_DB.prepare("SELECT c.*,d.title,s.series FROM qp_collector_copies c JOIN qp_collector_designs d ON d.design_id=c.design_id LEFT JOIN qp_collector_series s ON s.design_id=d.design_id WHERE c.account_id=? AND c.request_id=? LIMIT 1").bind(account,requestId).first();
 }
 async function quantProjection(env,wallet,row,request){
  try{
@@ -49,24 +52,58 @@ function checkImageData(image){
  if(!(mime==='image/png'&&isPng||mime==='image/jpeg'&&isJpeg||mime==='image/webp'&&isWebp))throw Object.assign(new Error('invalid_image_signature'),{status:400});
  return {bytes,mime};
 }
-export async function serveCollectorArt(request,env,designId){
+// The public museum never leaks unexposed artwork or unreleased sales totals.
+// A buyer can explicitly preview the artwork through an authenticated offer,
+// before paying. Owners always see receipts for their own copies.
+export async function listCollectorMuseum(env,request){
+ await ensureCollectorSchema(env);
+ const rows=await env.IDENTITY_DB.prepare(
+  "SELECT d.design_id,d.title,d.created_at,s.series,COUNT(c.token_id) AS sold,MIN(c.created_at) AS first_sold " +
+  "FROM qp_collector_designs d LEFT JOIN qp_collector_series s ON s.design_id=d.design_id " +
+  "LEFT JOIN qp_collector_copies c ON c.design_id=d.design_id WHERE d.is_active=1 " +
+  "GROUP BY d.design_id ORDER BY d.created_at DESC LIMIT 300").all();
+ const now=Date.now();
+ return json({ok:true,series:SERIES,cards:(rows.results||[]).map(row=>{
+  const first=Number(row.first_sold||0);
+  const publicAt=first+REVEAL_DELAY_MS;
+  const revealed=first>0&&now>=publicAt;
+  return {designId:row.design_id,title:row.title,series:row.series||'StarQuest',
+   revealed,sold:revealed?Number(row.sold):null,firstSoldAt:revealed?new Date(first).toISOString():null,
+   revealAt:revealed?new Date(publicAt).toISOString():null,
+   artUrl:revealed?artURL(request,row.design_id):null,
+   previewAvailable:true,priceStarCoins:PRICE};
+ })});
+}
+export async function serveCollectorArt(request,env,designId,authenticatedPreview=false){
  if(!validId(designId))return new Response('Not found',{status:404});
  if(!env.COLLECTOR_ART)return new Response('Collector storage not configured',{status:503});
  await ensureCollectorSchema(env);
- const row=await env.IDENTITY_DB.prepare('SELECT art_key,art_mime FROM qp_collector_designs WHERE design_id=? AND is_active=1').bind(designId).first();
+ const row=await env.IDENTITY_DB.prepare(
+  'SELECT d.art_key,d.art_mime,(SELECT MIN(created_at) FROM qp_collector_copies WHERE design_id=d.design_id) AS first_sold FROM qp_collector_designs d WHERE d.design_id=? AND d.is_active=1'
+ ).bind(designId).first();
  if(!row)return new Response('Not found',{status:404});
+ const revealed=Number(row.first_sold)>0&&Date.now()>=Number(row.first_sold)+REVEAL_DELAY_MS;
+ if(!revealed&&!authenticatedPreview)return new Response('Unrevealed museum artwork',{status:403,headers:{'cache-control':'no-store'}});
  const object=await env.COLLECTOR_ART.get(row.art_key);
  if(!object)return new Response('Not found',{status:404});
- return new Response(object.body,{headers:{'content-type':row.art_mime,'cache-control':'public,max-age=3600','access-control-allow-origin':'*','x-content-type-options':'nosniff'}});
+ return new Response(object.body,{headers:{'content-type':row.art_mime,
+   'cache-control':revealed&&!authenticatedPreview?'public,max-age=3600':'private,no-store',
+   'x-content-type-options':'nosniff','cross-origin-resource-policy':'cross-origin'}});
 }
 export async function handleCollectorRequest(request,env,identity,wallet){
  const url=new URL(request.url),path=url.pathname,account=identity.user_id;
  await ensureCollectorSchema(env);
+ if(path==='/v1/collector/offers'&&request.method==='GET'){
+  const catalog=await listCollectorMuseum(env,request);
+  const cards=catalog.payload.cards.map(card=>({...card,
+   previewUrl:new URL('/v1/collector/preview/'+card.designId,request.url).toString()}));
+  return json({ok:true,series:SERIES,cards});
+ }
  if(path==='/v1/collector/designs'&&request.method==='POST'){
   if(!env.COLLECTOR_ART)return json({ok:false,error:'collector_storage_not_configured'},503);
   const body=await request.json().catch(()=>({}));
-  const title=clean(body.title,140),renderId=clean(body.renderId,140),prompt=clean(body.prompt,1000);
-  if(title.length<3||!renderId)return json({ok:false,error:'missing_design_details'},400);
+  const title=clean(body.title,140),renderId=clean(body.renderId,140),prompt=clean(body.prompt,1000),series=clean(body.series,50);
+  if(title.length<3||!renderId||!SERIES.includes(series))return json({ok:false,error:'missing_or_invalid_design_details'},400);
   let image;
   try{image=checkImageData(body.imageDataUrl);}catch(error){return json({ok:false,error:error.message},error.status||400);}
   const id='ic_'+crypto.randomUUID(),ext=image.mime==='image/png'?'png':image.mime==='image/jpeg'?'jpg':'webp';
@@ -75,13 +112,13 @@ export async function handleCollectorRequest(request,env,identity,wallet){
   const hash=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
   await env.COLLECTOR_ART.put(key,image.bytes,{httpMetadata:{contentType:image.mime},customMetadata:{owner:account,renderId}});
   try{
-   await env.IDENTITY_DB.prepare('INSERT INTO qp_collector_designs(design_id,creator_account_id,title,art_key,art_mime,art_sha256,render_id,prompt,created_at) VALUES(?,?,?,?,?,?,?,?,?)')
-    .bind(id,account,title,key,image.mime,hash,renderId,prompt,now).run();
+   await env.IDENTITY_DB.batch([env.IDENTITY_DB.prepare('INSERT INTO qp_collector_designs(design_id,creator_account_id,title,art_key,art_mime,art_sha256,render_id,prompt,created_at) VALUES(?,?,?,?,?,?,?,?,?)')
+    .bind(id,account,title,key,image.mime,hash,renderId,prompt,now),env.IDENTITY_DB.prepare('INSERT INTO qp_collector_series(design_id,series) VALUES(?,?)').bind(id,series)]);
   }catch(error){
    await env.COLLECTOR_ART.delete(key).catch(()=>{});
    throw error;
   }
-  return json({ok:true,designId:id,title,artUrl:artURL(request,id),costStarCoins:PRICE});
+  return json({ok:true,designId:id,title,series,costStarCoins:PRICE,previewUrl:new URL('/v1/collector/preview/'+id,request.url).toString()});
  }
  if(path==='/v1/collector/purchase'&&request.method==='POST'){
   const body=await request.json().catch(()=>({})),designId=clean(body.designId,90),requestId=clean(body.requestId,160);
@@ -120,7 +157,7 @@ export async function handleCollectorRequest(request,env,identity,wallet){
   return json({ok:true,replayed:false,quantDataSynced:synced,receipt:receipt(issued,request)},201);
  }
  if(path==='/v1/collector/copies'&&request.method==='GET'){
-  const rows=await env.IDENTITY_DB.prepare('SELECT c.*,d.title FROM qp_collector_copies c JOIN qp_collector_designs d ON d.design_id=c.design_id WHERE c.account_id=? ORDER BY c.created_at DESC LIMIT 100').bind(account).all();
+  const rows=await env.IDENTITY_DB.prepare("SELECT c.*,d.title,s.series FROM qp_collector_copies c JOIN qp_collector_designs d ON d.design_id=c.design_id LEFT JOIN qp_collector_series s ON s.design_id=d.design_id WHERE c.account_id=? ORDER BY c.created_at DESC LIMIT 100").bind(account).all();
   const copies=[];
   for(const row of rows.results||[]){
    copies.push({receipt:receipt(row,request),quantDataSynced:await quantProjection(env,wallet,row,request)});
