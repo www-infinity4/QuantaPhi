@@ -1,0 +1,52 @@
+/* Oracle Octaves shared design for QuantaPhi's native cards.
+ * White daylight surfaces and warm ink, with each card retaining its color,
+ * artwork, player and StarQuest controls. This file is loaded after electric
+ * theme and before individual story/card overrides.
+ */
+body.oracle-quanta{
+ --oracle-paper:#f7f4f0;
+ --oracle-surface:#fff;
+ --oracle-ink:#312722;
+ --oracle-muted:#736a64;
+ --oracle-line:#e5ddd6;
+ --oracle-red:#b83b32;
+ --oracle-gold:#d6a34a;
+ --oracle-radius:18px;
+ --oracle-shadow:0 12px 30px rgb(49 39 34 / 7%);
+}
+body.oracle-quanta :is(.qzone,.mcard,.phi-media-studio,.pv-panel,#phiImageBuilder .pi-panel,#fredSpacesRadio .fs-card,#robotDirections){
+ color:var(--oracle-ink);
+ border-radius:var(--oracle-radius);
+ border:1px solid var(--oracle-line);
+ box-shadow:var(--oracle-shadow);
+}
+body.oracle-quanta .qzoneRed{background:linear-gradient(155deg,#fff,#fff0ef 100%);border-color:#edbfb9}
+body.oracle-quanta .qzoneYellow{background:linear-gradient(155deg,#fff,#fff8df 100%);border-color:#e7d093}
+body.oracle-quanta .qzoneBlue{background:linear-gradient(155deg,#fff,#eef7ff 100%);border-color:#b9d6ee}
+body.oracle-quanta .qzoneOrange{background:linear-gradient(155deg,#fff,#fff3e5 100%);border-color:#efcead}
+body.oracle-quanta .qzonePurple{background:linear-gradient(155deg,#fff,#f5efff 100%);border-color:#d2bcea}
+body.oracle-quanta .qzoneGreen{background:linear-gradient(155deg,#fff,#eef8f0 100%);border-color:#b9dbc2}
+body.oracle-quanta :is(.mcard,.phi-media-studio,.pv-panel,#phiImageBuilder .pi-panel,#robotDirections){background-color:#fff}
+body.oracle-quanta :is(.qzone,.mcard,.phi-media-studio,.pv-panel,#robotDirections) :is(h2,h3){
+ color:var(--oracle-ink);
+ letter-spacing:-.025em;
+ line-height:1.3;
+ overflow-wrap:anywhere;
+}
+body.oracle-quanta :is(.qzone,.mcard,.phi-media-studio,.pv-panel,#robotDirections) :is(input,select,textarea){
+ background:#fff;color:var(--oracle-ink);border:1px solid #cdbfb5;
+ border-radius:10px;max-width:100%;box-sizing:border-box;
+}
+body.oracle-quanta :is(.qzone,.mcard,.phi-media-studio,.pv-panel,#robotDirections) :is(button,a):focus-visible{
+ outline:3px solid #236b83;outline-offset:3px;
+}
+body.oracle-quanta :is(.qzone,.mcard,.phi-media-studio,.pv-panel,#robotDirections) [hidden]{display:none!important}
+body.oracle-quanta :is(.qzone,.mcard,.phi-media-studio,.pv-panel,#robotDirections){
+ min-width:0;max-width:100%;overflow-wrap:anywhere;
+}
+@media(max-width:400px){
+ body.oracle-quanta :is(.qzone,.mcard,.phi-media-studio,.pv-panel,#robotDirections){border-radius:16px}
+}
+@media(prefers-reduced-motion:reduce){
+ body.oracle-quanta :is(.qzone,.mcard,.phi-media-studio,.pv-panel,#robotDirections){transition:none}
+}
