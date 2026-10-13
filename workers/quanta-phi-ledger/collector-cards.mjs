@@ -57,7 +57,7 @@ export async function serveCollectorArt(request,env,designId){
  if(!row)return new Response('Not found',{status:404});
  const object=await env.COLLECTOR_ART.get(row.art_key);
  if(!object)return new Response('Not found',{status:404});
- return new Response(object.body,{headers:{'content-type':row.art_mime,'cache-control':'public,max-age=3600','x-content-type-options':'nosniff'}});
+ return new Response(object.body,{headers:{'content-type':row.art_mime,'cache-control':'public,max-age=3600','access-control-allow-origin':'*','x-content-type-options':'nosniff'}});
 }
 export async function handleCollectorRequest(request,env,identity,wallet){
  const url=new URL(request.url),path=url.pathname,account=identity.user_id;
