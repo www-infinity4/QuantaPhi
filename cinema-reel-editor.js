@@ -9,7 +9,7 @@ function mount(host,context){
  const box=make('section');box.className='hphi-studio';host.append(box);box.append(make('h3','Preview reel editor'),make('p','Choose a start time, add a 15-second cut, and build a reel. YouTube selections preview on YouTube; exporting needs a usable video file.'));
  const status=make('p');status.setAttribute('role','status');
  const sources=new Map(),clips=[];let selected=null,rows=[],recording=false,cancelled=false,resultUrl='',localUrls=[];
- const list=make('ol');const player=make('div');player.className='hphi-player-host';
+ const list=make('ol');const player=make('div');player.className='hphi-player-host';let resultProjectId='';
  const start=make('input');start.type='number';start.min='0';start.step='.1';start.value='30';start.setAttribute('aria-label',context.title+' clip start seconds');
  const stamp=make('label','Start at (seconds) ');stamp.append(start);box.append(stamp);
  const control=make('div');control.className='hphi-controls';box.append(control);
@@ -41,7 +41,14 @@ function mount(host,context){
  box.append(list,player,status);
  const output=make('video');output.controls=true;output.playsInline=true;output.hidden=true;box.append(output);
  const price=make('input');price.type='number';price.min='0';price.max='1000';price.value='1';price.setAttribute('aria-label',context.title+' screening price StarCoins');const priceLabel=make('label','Screening price draft (StarCoins) ');priceLabel.append(price);box.append(priceLabel,make('p','The preview is free. This price is saved as a draft; paid screenings await authenticated checkout and access control.'));
+ const curio=make('section');curio.className='hphi-film';curio.hidden=true;
+ button(box,'Preview curio page',async()=>{const p=root.PhiProjectPackage?.active();if(!p){status.textContent='Choose a collection first.';return}curio.replaceChildren();curio.hidden=false;curio.append(make('h3',p.title),make('p','CURIO CINEMA · PAGE PREVIEW'));
+  const artwork=p.assets.findLast(a=>a.kind==='image'&&a.localAssetId);if(artwork){const address=await root.PhiProjectFiles?.objectUrl(artwork.localAssetId);if(address){localUrls.push(address);const img=make('img');img.className='hphi-feature-image';img.src=address;img.alt='Your collected curio artwork';curio.append(img)}}
+  let address=resultProjectId===p.id?resultUrl:'';if(!address){const reel=p.assets.findLast(a=>a.kind==='video'&&a.localAssetId);if(reel){address=await root.PhiProjectFiles?.objectUrl(reel.localAssetId);if(address)localUrls.push(address)}}if(address){const video=make('video');video.controls=true;video.playsInline=true;video.src=address;video.style.width='100%';curio.append(video)}
+  const films=p.assets.filter(a=>a.kind==='video'&&a.sourceUrl);if(!films.length)curio.append(make('p','Collect a movie to add it to this page.'));for(const film of films){const article=make('article');article.append(make('h3',film.title),make('p',film.description||'A film selected for this curio collection.'));if(film.imageUrl){const img=make('img');img.src=film.imageUrl.replace('https://i.ytimg.com/vi/','https://img.youtube.com/vi/');img.alt=film.title;img.className='hphi-feature-image';article.append(img)}const a=make('a','Open original screening ↗');a.href=film.sourceUrl;a.target='_blank';a.rel='noopener noreferrer';article.append(a);curio.append(article)}curio.append(make('p','Planned screening price: '+Math.max(0,Number(price.value)||0)+' StarCoins. Checkout is not active; original-host screenings remain free.'));status.textContent='Curio page preview is displayed below. This draft is not published.';
+ });
  button(box,'Save curio page draft',()=>{const project=root.PhiProjectPackage?.active();if(!project){status.textContent='Project unavailable.';return}const key='phi:cinema-page:'+project.id;const data={schema:'phi-cinema-page/v1',projectId:project.id,title:project.title,movies:project.assets.filter(a=>a.kind==='video'),clips:clips.map(c=>({...c,mediaUrl:c.mediaUrl.startsWith('blob:')?'':c.mediaUrl})),starCoinPrice:Math.max(0,Math.min(1000,Number(price.value)||0)),checkoutEnabled:false};try{localStorage.setItem(key,JSON.stringify(data));status.textContent='Curio page draft saved on this device. No StarCoins were charged.'}catch{status.textContent='Draft could not save.'}});
+ box.append(curio);
  function download(blob,name){const u=URL.createObjectURL(blob),a=make('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),30000)}
  async function exportReel(){
   if(recording)return;if(!clips.length){status.textContent='Add cuts first.';return}if(clips.some(c=>!c.mediaUrl)){status.textContent='YouTube embeds cannot be exported. Attach a usable file to those cuts, or use Archive cuts.';return}
@@ -63,10 +70,10 @@ function mount(host,context){
     recorder.pause();renderedSeconds+=Math.max(0,Math.min(end,video.currentTime)-c.start);video.pause();cancelAnimationFrame(draw);video.remove();video=null;
    }
    if(cancelled)throw recorderError||Error('Export canceled.');const stopped=new Promise(r=>recorder.onstop=r);recorder.stop();await stopped;const blob=await root.PhiCinemaTimeline.finalizeWebM(new Blob(chunks,{type:mime}),renderedSeconds);if(blob.size<1000)throw Error('Export produced no usable video.');
-   if(resultUrl)URL.revokeObjectURL(resultUrl);resultUrl=URL.createObjectURL(blob);output.src=resultUrl;output.hidden=false;download(blob,'curio-preview-reel.'+(mime.includes('mp4')?'mp4':'webm'));
+   if(resultUrl)URL.revokeObjectURL(resultUrl);resultUrl=URL.createObjectURL(blob);resultProjectId=projectId;output.src=resultUrl;output.hidden=false;download(blob,'curio-preview-reel.'+(mime.includes('mp4')?'mp4':'webm'));
    const saved=root.PhiProjectFiles?await root.PhiProjectFiles.save(new File([blob],'curio-preview-reel.'+(mime.includes('mp4')?'mp4':'webm'),{type:blob.type})).catch(()=>null):null;
    if(saved)root.PhiProjectPackage?.capture({kind:'video',title:'Curio preview reel',localAssetId:saved.id,fileName:saved.name,mime:saved.mime},projectId);
-   status.textContent='Reel exported with '+clips.length+' cuts.'+(saved?' Saved in the collection project.':' Download contains the actual video; project video storage is unavailable.');
+   status.textContent='Reel exported with '+clips.length+' cut'+(clips.length===1?'':'s')+'.'+(saved?' Saved in the collection project.':' Download contains the actual video; project video storage is unavailable.');
   }catch(e){status.textContent=String(e.message||e);if(recorder.state!=='inactive')recorder.stop();}
   finally{video?.pause();video?.remove();cancelAnimationFrame(draw);stream.getTracks().forEach(t=>t.stop());await audio.close();recording=false;exportBtn.disabled=false;}
  }

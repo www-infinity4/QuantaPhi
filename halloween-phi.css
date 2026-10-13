@@ -9,6 +9,9 @@
 .hphi-subtitle{font-size:14px;color:#725580;font-weight:750}
 .hphi-controls,.hphi-project-strip{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;align-items:center}
 .hphi-project-note{width:100%;font-size:13px}
+#halloweenPhi .hphi-project-strip{flex-wrap:wrap}
+#halloweenPhi .hphi-project-note{flex:0 0 100%;width:100%;margin:4px 0}
+.hphi-studio>button{margin:4px 3px}
 .hphi-card button,.hphi-card .hphi-btn{font:750 13px system-ui,sans-serif;min-height:44px;white-space:normal;padding:10px 14px;border-radius:999px;border:1px solid #d6bde8;background:#fff;color:#572675;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none}
 .hphi-card button:hover,.hphi-card .hphi-btn:hover{background:#f3eaff}
 .hphi-card button[aria-pressed=true]{background:#7336b6;color:#fff;border-color:#7336b6}
