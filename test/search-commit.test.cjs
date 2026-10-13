@@ -12,7 +12,7 @@ function fixture(){
  INSERT INTO quant_legacy_migrations VALUES('legacy','qw_test',79,'legacyhash',CURRENT_TIMESTAMP);`);
  let fail=false;
  const DB={prepare(sql){return{args:[],bind(...args){this.args=args;return this},async run(){return sqlite.prepare(sql).run(...this.args)},async first(){return sqlite.prepare(sql).get(...this.args)||null},async all(){return {results:sqlite.prepare(sql).all(...this.args)}},sql}},async batch(items){sqlite.exec('BEGIN');try{for(let i=0;i<items.length;i++){if(fail&&i===5)throw Error('simulated crash');sqlite.prepare(items[i].sql).run(...items[i].args)}sqlite.exec('COMMIT')}catch(e){sqlite.exec('ROLLBACK');throw e}}};
- const context={crypto,TextEncoder,Response,URL,console};vm.createContext(context);vm.runInContext(source.replace('export default {','const worker = {')+'\nglobalThis.api={commitSearchPair,ensureSearchOutbox,drainSearchOutbox,worker};',context);
+ const context={crypto,TextEncoder,Response,URL,console};vm.createContext(context);vm.runInContext(source.replace("import {handleCollectorRequest,serveCollectorArt} from './collector-cards.mjs';",'').replace('export default {','const worker = {')+'\nglobalThis.api={commitSearchPair,ensureSearchOutbox,drainSearchOutbox,worker};',context);
  const item={user_id:'user_test',wallet_id:'qw_test',search_id:'search_012345678901234567890',query_text:'oranges',credit_query:'oranges',client_created_at:'2026-10-03',created_at:Date.now()};
  return {sqlite,env:{DB},api:context.api,item,setFail:v=>fail=v};
 }
