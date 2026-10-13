@@ -55,6 +55,33 @@ function actions(card,c){
  paint();
 }
 
+function projectControls(card,c){
+ const rail=append(card,e('div',undefined,'hphi-project-controls'));
+ const status=append(card,e('p','Collect a source or add your own image.','hphi-status'));status.setAttribute('role','status');
+ function collect(kind){
+  const choices=kind==='image'?c.images:c.movies,item=Array.isArray(choices)?choices[0]:null;
+  if(!item){status.textContent='No '+kind+' available yet.';return}
+  ensure();
+  const r=project()?.capture({kind,title:item.title||c.title,sourceUrl:item.watchUrl||item.source||'',imageUrl:item.imageUrl||item.src||'',description:item.description||c.description,license:item.license||item.rightsNote||'',year:item.year,originCard:c.id});
+  status.textContent=r?.ok?(r.duplicate?'Already in this collection.':'Added '+(item.title||kind)+' to this collection.'):(r?.reason||'Collection storage unavailable.');
+ }
+ button(rail,'＋ Collect image',()=>collect('image'));
+ button(rail,'＋ Collect movie',()=>collect('video'));
+ const tile=append(rail,e('label','＋ Add image from device','hphi-upload-tile'));
+ const uploadInput=append(tile,e('input'));uploadInput.type='file';uploadInput.accept='image/png,image/jpeg,image/webp';uploadInput.hidden=true;
+ uploadInput.setAttribute('aria-label','Choose image for '+c.title);
+ uploadInput.addEventListener('change',async()=>{
+  const file=uploadInput.files?.[0];if(!file)return;
+  status.textContent='Saving original artwork on this device…';tile.setAttribute('aria-busy','true');
+  try{
+   ensure();if(!project()?.captureFile)throw Error('Image storage unavailable');
+   const r=await project().captureFile(file,c.id);
+   status.textContent=r?.ok?(r.duplicate?'Already added to this collection.':'Image saved to your local project.'):(r?.reason||'Image was not saved.');
+  }catch(x){status.textContent='Image was not saved: '+String(x.message||x).slice(0,130)}
+  finally{tile.removeAttribute('aria-busy');uploadInput.value=''}
+ });
+}
+
 function render(c){
  const card=append(deck,e('article',undefined,'hphi-card'));card.id=c.id;card.dataset.card=c.id;card.setAttribute('aria-label',c.title+' cinema and art');
  append(card,e('span','INFINITY 2026® · ORACLE OCTAVES · CURIO CINEMA','hphi-brand'));append(card,e('h2',c.title));append(card,e('p',c.subtitle,'hphi-subtitle'));append(card,e('p',c.description));
@@ -131,6 +158,7 @@ function render(c){
  button(create,'Save artwork',()=>{if(!generated.dataset.source){generationStatus.textContent='Generate artwork first.';return}const a=e('a');a.href=generated.dataset.source;a.download='curio-artwork.png';a.click()});
  button(create,'Open full Image Builder',()=>{window.PhiImageBuilder?.prefill(prompt.value||'Create an original horror cinema advertisement for '+(project()?.active()?.title||c.title));document.getElementById('phiImageBuilder')?.scrollIntoView({block:'start',behavior:'smooth'})});
  window.PhiCinemaReel?.mount(create,{title:c.title,current:()=>type==='video'?current():movies[0]});
+ projectControls(card,c);
  actions(card,c);
 }
 fetch('/halloween-phi-content.json?v=20261013-cinema',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Catalog unavailable');return r.json()}).then(data=>{if(data.schema!=='quantaphi.halloween-phi/v1')throw Error('Invalid catalog');data.cards.filter(c=>['terriphi','petriphi'].includes(c.id)).forEach(render)}).catch(error=>append(mount,e('p','Cinema catalog could not load: '+error.message,'hphi-status')));

@@ -23,3 +23,11 @@ body.phi-halloween-oracle .phi-oracle-project-actions span{font-size:13px;color:
 body.phi-halloween-oracle .phi-oracle-project-actions a{font-size:13px;font-weight:850;color:#62338b}
 body.phi-halloween-oracle .phi-oracle-project-actions button{min-height:44px;padding:10px 14px;background:#fff3c5;border-color:#d6b65d;color:#5e410e}
 body.phi-halloween-oracle .mini{background:#f0e2fa}
+
+/* Oracle Octaves source-image collection tiles on Terra/Petra cards. */
+.hphi-project-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0}
+.hphi-project-controls button,.hphi-upload-tile{min-height:44px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-align:center;padding:10px 12px;border:1px solid #d9bba1;border-radius:12px;background:#fffdf8;color:#513323;font:750 13px/1.4 system-ui,sans-serif;cursor:pointer}
+.hphi-upload-tile{grid-column:1/-1;border:1px dashed #b99ad8;background:#fff;color:#563086}
+.hphi-project-controls :is(button,.hphi-upload-tile):focus-within{outline:3px solid #236b83;outline-offset:2px}
+.hphi-project-controls [aria-busy="true"]{opacity:.65;cursor:progress}
+@media(max-width:340px){.hphi-project-controls{grid-template-columns:1fr}}
