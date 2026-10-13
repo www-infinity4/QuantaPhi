@@ -63,7 +63,7 @@ function render(){
   const card=append(items,el('article','pwp-asset'));
   if(asset.imageUrl||asset.localAssetId){
    const img=append(card,el(asset.kind==='video'&&asset.localAssetId?'video':'img'));img.alt=asset.title;img.loading='lazy';img.referrerPolicy='no-referrer';if(img.tagName==='VIDEO'){img.controls=true;img.playsInline=true;img.style.width='100%';img.style.maxWidth='280px';}
-   if(asset.imageUrl)img.src=asset.imageUrl;
+   if(asset.imageUrl)img.src=asset.imageUrl.replace('https://i.ytimg.com/vi/','https://img.youtube.com/vi/');
    else{img.hidden=true;void displaySavedImage(img,asset.localAssetId,version)}
   }
   const copy=append(card,el('div'));
