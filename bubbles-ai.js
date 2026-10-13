@@ -251,17 +251,16 @@ async function sendMessage(text){
  const history=messages.slice(-10).map(m=>m.role+': '+m.text.slice(0,650)).join('\n');
  messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
  status.textContent=config.alias+' is thinking…';
- if(/^(?:please\s+)?(?:fix|repair|restore|debug|check and fix)\b/i.test(request)){
+ let workEvidence='';
+ if(/^(?:please\s+)?(?:(?:(?:can|could|would|will) you|i (?:want|need)(?: you)? to|you (?:need|have) to)\s+)?(?:please\s+)?(?:fix|repair|restore|debug|check and fix)\b/i.test(request)){
   workText.value=request;tools.open=true;
-  try{const ticket=await submitWork(request,'explicit-user-command');const answer='Repair ticket '+ticket+' is ready for Robot Brain. The repair is queued; it is not finished yet.';display(answer,'ai');status.textContent=answer;if(config.voice)speakText(answer)}
-  catch(error){const answer='Repair request kept in Notes & authorized work. '+String(error.message||error);display(answer,'ai');status.textContent=answer}
-  finally{busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}}
-  return;
+  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence='Robot Brain receipt: ticket '+ticket+' is ready for the authenticated build runner. Queued only; no repair is verified complete.'}
+  catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
  }
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger inside QuantaPhi.','Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'You have NO independent GitHub write authorization or access to ChatGPT/Claude subscriptions. Only confirmed owner-submitted Robot Brain tickets count as queued; never claim a repository change occurred without tool evidence.',
- 'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Speak in calm, natural British English. Keep spoken answers concise and conversational. For a task, explain the actual result and next step; distinguish completed, queued and blocked work. Reply directly in plain text.'].join('\n\n');
+ 'Actual authorized work result:\n'+workEvidence,'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Speak in calm, natural British English. Keep spoken answers concise and conversational. For a task, explain the actual result and next step; distinguish completed, queued and blocked work. Reply directly in plain text.'].join('\n\n');
  try{
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),22000);
   let response,json;try{if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}

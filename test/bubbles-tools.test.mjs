@@ -14,7 +14,7 @@ test('headlines require dated current Google News links, deduplicate and reject 
 });
 test('unconnected GitHub action is blocked and makes no network or queued-work claim',async()=>{
  const request=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},body:JSON.stringify({request:'Create a repo named Rain'})});
- const result=await (await worker.fetch(request,{})).json();
+ const result=await (await worker.fetch(request,{AI:{run:async()=>({response:'No repository was created or queued.'})}})).json();
  assert.equal(result.receipt.status,'blocked');assert.equal(result.receipt.minted,false);
  assert.match(result.output,/No repository was created or queued/);
 });
@@ -22,10 +22,14 @@ test('foreign website origins cannot invoke assistant tools',async()=>{
  const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://evil.example'},body:'{}'}),{});
  assert.equal(r.status,403);
 });
-test('ordinary chat calls the existing service and carries a result receipt',async()=>{
+test('ordinary conversation uses GPT OSS and reports the actual model',async()=>{
  let used=false;
- const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{ORACLE:{fetch:async request=>{used=true;assert.equal(request.headers.get('Origin'),'https://quantaphi.org');return Response.json({ok:true,output:'Hello'});}}});
- const body=await r.json();assert.equal(used,true);assert.equal(body.output,'Hello');assert.equal(body.receipt.tool,'oracle.chat');
+ const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{AI:{run:async(model,options)=>{used=true;assert.equal(model,'@cf/openai/gpt-oss-120b');assert.match(options.messages[1].content,/hello/);return {response:'Hello'};}}});
+ const body=await r.json();assert.equal(used,true);assert.equal(body.output,'Hello');assert.equal(body.model,'@cf/openai/gpt-oss-120b');
+});
+test('missing GPT binding fails without falling back to canned conversation',async()=>{
+ const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{});
+ assert.equal(r.status,503);
 });
 test('Google failure uses explicitly labelled current source fallback, excluding undated news',async()=>{
  const original=globalThis.fetch;
@@ -35,7 +39,7 @@ test('Google failure uses explicitly labelled current source fallback, excluding
   {title:'Future',url:'https://publisher.example/future',publishedAt:new Date(Date.now()+3600000).toISOString()}
  ]});
  try {
-  const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Check Google News headlines'})}),{});
+  const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Check Google News headlines'})}),{AI:{run:async(model,options)=>{assert.doesNotMatch(options.messages[1].content,/Missing date/);return {response:'Google News is unavailable. News Phi has current headlines.'};}}});
   const body=await r.json();assert.equal(body.receipt.status,'complete');assert.equal(body.sources.length,1);
   assert.match(body.output,/Google News is unavailable/);assert.match(body.output,/News Phi/);
   assert.equal(body.receipt.provider,'News Phi');
