@@ -1,6 +1,6 @@
 /* Radio Clubhouse · Oracle Octaves · live, source-attributed cards.
  * Only the top few threads are shown. Refresh does not duplicate existing cards.
- * Threads always link to the original Antique Radio Forums page. */
+ * Topic previews and shares stay on QuantaPhi; the original forum remains cited. */
 (() => {
  'use strict';
  const mount=document.getElementById('radioClubhouse');
@@ -28,8 +28,17 @@
   const time=Date.parse(value||'');
   return Number.isFinite(time)?new Intl.DateTimeFormat(undefined,{dateStyle:'medium',timeStyle:'short'}).format(time):'';
  };
+ // Same-origin reader is a first-party preview. External forums may forbid iframe embedding.
+ // Always keep the original forum URL available separately, never send Share there.
+ const readerUrl=t=>{
+  const page=new URL('/radio-clubhouse/','https://quantaphi.org');
+  page.searchParams.set('t',String(t.id));
+  page.searchParams.set('title',String(t.title||'').slice(0,140));
+  return page.href;
+ };
  const cardData=t=>({key:'radio-clubhouse:'+t.id,type:'Radio Clubhouse',title:t.title,
-  story:t.snippet||'Antique Radio Forums — Radio Clubhouse discussion.',sourceUrl:t.url,media:''});
+  story:t.snippet||'Antique Radio Forums — Radio Clubhouse discussion.',
+  pageUrl:readerUrl(t),sourceUrl:t.url,media:''});
  const creditNotice=(action,receipt)=>{
   if(receipt?.awarded)return action+' confirmed by StarQuest.';
   if(receipt?.pending)return action+' submitted; StarQuest confirmation is pending.';
@@ -55,8 +64,8 @@
  let pending=false,live=[],known=new Set(stored(SEEN,[]).map(String)),everLoaded=!!stored(SNAPSHOT,null),lastChecked=null;
  function actions(article,t){
   const buttons=add(article,make('div','rc-actions'));
-  const reader=add(buttons,make('a','rc-button rc-reader inPageSite','Read in Infinity Reader ↗'));
-  reader.href=t.url;reader.dataset.siteUrl=t.url;reader.dataset.siteTitle='Radio Clubhouse · '+t.title;
+  const reader=add(buttons,make('a','rc-button rc-reader inPageSite','Read in Infinity Viewer'));
+  reader.href=readerUrl(t);reader.dataset.siteUrl=reader.href;reader.dataset.siteTitle='Radio Clubhouse · '+t.title;
   const outside=add(buttons,make('a','rc-button rc-original','Original page ↗'));
   outside.href=t.url;outside.target='_blank';outside.rel='noopener noreferrer';
   const star=add(buttons,make('button','rc-button rc-secondary','☆ Star'));
@@ -89,8 +98,9 @@
   share.addEventListener('click',async()=>{
    share.disabled=true;
    try{
-    if(navigator.share)await navigator.share({title:t.title,text:'Radio Clubhouse discussion at Antique Radio Forums',url:t.url});
-    else if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(t.url);
+    const page=readerUrl(t);
+    if(navigator.share)await navigator.share({title:t.title+' · QuantaPhi Radio Clubhouse',text:'Read the Radio Clubhouse card on QuantaPhi. The original forum source is linked inside.',url:page});
+    else if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(page);
     else throw new Error('Sharing is not available on this device');
     let receipt;try{receipt=window.QuantaStarCredit?.('share',key+':'+Date.now(),data)}catch{}
     notice.textContent=creditNotice('Share',receipt);
@@ -121,7 +131,8 @@
    if(t.author)meta.append(document.createTextNode(' · '+t.author));
    if(t.updated)meta.append(document.createTextNode(' · Last activity '+formatDate(t.updated)));
    else if(t.publishedAt)meta.append(document.createTextNode(' · Posted '+t.publishedAt));
-   actions(body,t);
+   // Keep Read and Share visible before Expand (the excerpt is collapsible).
+   actions(article,t);
    add(article,make('small','rc-meta','Discussion '+(position+1)+' of '+topics.length+(t.archived?' · Curated archive':'')));
   }
  }

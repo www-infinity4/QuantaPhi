@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1a1128">
+<title>Radio Clubhouse · QuantaPhi Infinity Viewer</title>
+<meta name="description" content="Read a sourced Antique Radio Forums topic preview in QuantaPhi Radio Clubhouse, with a direct link to the original discussion.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="QuantaPhi">
+<meta property="og:title" content="Radio Clubhouse · QuantaPhi">
+<meta property="og:description" content="Explore a radio discussion on QuantaPhi, then follow the credited original source when you want the full conversation.">
+<meta property="og:image" content="https://quantaphi.org/preview.png?v=20261008-share1">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Radio Clubhouse · QuantaPhi">
+<meta name="twitter:description" content="Radio discussion previews, original source citations and more discoveries at QuantaPhi.">
+<meta name="twitter:image" content="https://quantaphi.org/preview.png?v=20261008-share1">
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#100b19;color:#f8f0e0}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top right,#49305f 0,transparent 55%),linear-gradient(160deg,#21122e,#100b19 78%);line-height:1.65}
+main{width:min(860px,calc(100% - 28px));margin:0 auto;padding:clamp(20px,5vw,48px) 0}
+a{color:#ffdc8a}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.brand{font-size:13px;letter-spacing:.14em;font-weight:900;color:#ffe3a2;text-decoration:none}
+.back{border:1px solid #9c7cbb;border-radius:14px;padding:10px 14px;color:#fff3d7;text-decoration:none;font-weight:750}
+.reader{border:1px solid #b79454;border-radius:24px;padding:clamp(20px,5vw,42px);background:linear-gradient(160deg,#322044,#1c142a 66%);box-shadow:0 20px 52px #0007;overflow-wrap:anywhere}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#ffda88;font-weight:800}
+h1{font-size:clamp(26px,6vw,42px);line-height:1.22;margin:14px 0 12px}
+p{font-size:clamp(16px,3.5vw,19px)}
+.status{border-left:4px solid #bc93f0;padding:10px 15px;background:#241833;color:#eee1f8;border-radius:0 12px 12px 0;font-size:15px}
+.excerpt{padding:20px 0;margin:14px 0;border-top:1px solid #6a5675;border-bottom:1px solid #6a5675;white-space:pre-wrap}
+.sources{border:1px solid #826943;background:#271d25;border-radius:16px;padding:16px;margin-top:20px}
+.sources h2{font-size:18px;color:#ffe1a2;margin:0 0 8px}
+.sources p{font-size:15px;margin:0 0 12px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.button{display:inline-block;border:1px solid #dab56c;background:#f2d18b;color:#211222;padding:12px 16px;border-radius:13px;text-decoration:none;font-size:15px;font-weight:850}
+.button.secondary{background:#312341;color:#fff1d9;border-color:#9d83b3}
+button.button{cursor:pointer;font:inherit;font-weight:850}
+footer{margin-top:26px;color:#c5b4d6;font-size:12px}
+@media(max-width:460px){.actions>*{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<main>
+<nav class="nav" aria-label="Reader navigation"><a class="brand" href="/">INFINITY 2026® · QUANTAPHI · ORACLE OCTAVES</a><a class="back" href="/">← QuantaPhi home</a></nav>
+<article class="reader" aria-labelledby="topicTitle">
+<div class="eyebrow">📻 Radio Clubhouse · Infinity Viewer</div>
+<h1 id="topicTitle">Loading Radio Clubhouse discussion…</h1>
+<p class="status" id="topicStatus" role="status" aria-live="polite">Checking the sourced topic preview.</p>
+<p class="excerpt" id="topicExcerpt" hidden></p>
+<section class="sources" aria-label="Source attribution">
+<h2>Original source · Antique Radio Forums</h2>
+<p>QuantaPhi displays a topic preview, not the complete forum discussion. To read the full conversation, replies and attachments, use the original source link. The discussion belongs to its original authors.</p>
+<div class="actions"><a class="button" id="readOriginal" href="https://antiqueradios.com/forums/viewforum.php?f=2" target="_blank" rel="noopener noreferrer">Read full discussion at source ↗</a><a class="button secondary" href="/">Explore QuantaPhi</a></div>
+</section>
+</article>
+<footer>Radio Clubhouse · QuantaPhi research cards · Source-first browsing without taking readers away from your QuantaPhi card.</footer>
+</main>
+<script>
+(()=>{
+'use strict';
+const params=new URLSearchParams(location.search);
+const id=params.get('t')||'';
+const title=document.getElementById('topicTitle');
+const status=document.getElementById('topicStatus');
+const excerpt=document.getElementById('topicExcerpt');
+const source=document.getElementById('readOriginal');
+if(!/^\d{1,12}$/.test(id)){
+ title.textContent='Choose a Radio Clubhouse discussion';
+ status.textContent='This card link is missing a valid topic ID. Return to QuantaPhi for the available topics.';
+ source.textContent='Browse original Radio Clubhouse board ↗';
+ return;
+}
+source.href='https://antiqueradios.com/forums/viewtopic.php?t='+id;
+const hint=(params.get('title')||'').replace(/\s+/g,' ').trim().slice(0,140);
+title.textContent=hint||'Radio Clubhouse topic #'+id;
+document.title=(hint||'Radio Clubhouse topic #'+id)+' · QuantaPhi';
+status.textContent='Checking the current source-attributed QuantaPhi preview…';
+(async()=>{
+ let item=null;
+ for(const endpoint of ['/api/radio-clubhouse','/api/radio-reads']){
+  const controller=new AbortController();
+  const timeout=setTimeout(()=>controller.abort(),8000);
+  try{
+   const response=await fetch('https://radio-clubhouse-feed.marvaseater.workers.dev'+endpoint,{
+    headers:{Accept:'application/json'},signal:controller.signal});
+   if(response.ok){
+    const payload=await response.json();
+    if(payload.ok&&Array.isArray(payload.topics)){
+     item=payload.topics.find(t=>String(t.id)===id);
+     if(item)break;
+    }
+   }
+  }catch{}
+  finally{clearTimeout(timeout)}
+ }
+ if(item){
+  title.textContent=String(item.title||title.textContent).slice(0,180);
+  document.title=title.textContent+' · QuantaPhi';
+  const snippet=String(item.snippet||'').trim().slice(0,340);
+  if(snippet){excerpt.textContent=snippet;excerpt.hidden=false}
+  status.textContent=(item.archived?'Archived topic':'Forum topic')+
+   ' · QuantaPhi source-attributed preview. Use the original source for the complete discussion.';
+ }else{
+  status.textContent='This topic is not in the latest available QuantaPhi feed. The original thread link is preserved below; no discussion text has been invented.';
+ }
+})();
+})();
+</script>
+</body>
+</html>
