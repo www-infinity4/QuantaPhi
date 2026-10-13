@@ -23,3 +23,5 @@ test('clear patch uniquely edits source and cannot mutate privileged files',asyn
  assert.throws(()=>applyEdits({'.github/workflows/x.yml':'abc'},[{path:'.github/workflows/x.yml',before:'abc',after:'xyz'}]));
  assert.throws(()=>applyEdits({'robot-directions.js':'abc abc'},[{path:'robot-directions.js',before:'abc',after:'xyz'}]));
 });
+
+test('explicit production executor cannot be claimed by the narrow interface writer',()=>{assert.equal(supported({repository:'www-infinity4/QuantaPhi',executor:'repository-engine',instructions:'Robot presentation reads source inputs and displays scene buttons',dependencies:[]}),false)});
