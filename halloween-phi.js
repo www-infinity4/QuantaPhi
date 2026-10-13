@@ -70,19 +70,56 @@ function render(c){
  const media=append(card,e('section',undefined,'hphi-film'));const navigation=append(card,e('div',undefined,'hphi-controls'));const count=append(card,e('p','','hphi-status'));count.setAttribute('role','status');
  const items=()=>type==='image'?images:movies.filter(x=>filter==='all'||x.provider===filter);
  const current=()=>items()[position%Math.max(1,items().length)];
- const player=append(card,e('div',undefined,'hphi-player-host'));
- const play=(url,title)=>{player.replaceChildren();const f=append(player,e('iframe'));f.src=url;f.title=title||c.title+' movie';f.allow='fullscreen; picture-in-picture';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin'};
+ // The player lives INSIDE the selected movie, rather than several controls below it.
+ const player=e('div',undefined,'hphi-player-host');
+ function play(source,title){
+  const m=typeof source==='string'?{embedUrl:source,watchUrl:source,title:title||c.title,provider:'archive'}:source;
+  if(!m)return;
+  const embed=valid(m.embedUrl),original=valid(m.watchUrl)||embed;
+  player.replaceChildren();
+  const status=append(player,e('p','Loading '+(m.title||'movie')+' here…','hphi-player-status'));status.setAttribute('role','status');
+  const frame=()=>{
+   if(!embed){status.textContent='No embeddable player is available for this edition.';return}
+   player.querySelector('video')?.pause();
+   player.querySelector('video')?.remove();
+   player.querySelector('iframe')?.remove();
+   const u=new URL(embed);
+   if(u.hostname==='www.youtube-nocookie.com'||u.hostname==='www.youtube.com'){
+    u.searchParams.set('autoplay','1');u.searchParams.set('playsinline','1');u.searchParams.set('rel','0');
+   }else if(u.hostname==='archive.org'||u.hostname==='www.archive.org')u.searchParams.set('autoplay','1');
+   else{status.textContent='This source cannot be embedded. Use Watch at source.';return}
+   const f=append(player,e('iframe'));f.src=u.href;f.title=(m.title||c.title)+' full movie';f.loading='eager';
+   f.allow='autoplay; encrypted-media; fullscreen; picture-in-picture';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin';
+   status.textContent='Movie player opened here. Tap its Play button if your browser requires it.';
+  };
+  if(m.provider==='archive'&&valid(m.originalMediaUrl||m.mediaUrl)){
+   const src=valid(m.originalMediaUrl||m.mediaUrl);
+   const v=append(player,e('video'));v.controls=true;v.playsInline=true;v.preload='metadata';v.src=src;
+   v.setAttribute('aria-label',m.title+' full movie');v.addEventListener('error',()=>{status.textContent='Original video file did not load; opening its Archive player.';frame()},{once:true});
+   try{const request=v.play();if(request?.catch)request.catch(()=>{status.textContent='Press Play on the movie controls to start.'})}catch(_){status.textContent='Press Play on the movie controls to start.'}
+  }else frame();
+  const fallback=append(player,e('div',undefined,'hphi-player-alternatives'));
+  if(m.provider==='archive'&&embed)button(fallback,'Try Archive player',()=>frame());
+  if(original)link(fallback,'Watch at source ↗',original);
+  if(player.isConnected)player.scrollIntoView({block:'nearest',behavior:'auto'});
+ }
  filmSlots.set(c.id,{approved:new Set(c.approvedArchiveIds||[]),play});
  button(navigation,'← Previous',()=>{const n=items().length;position=n?(position+n-1)%n:0;paint()});button(navigation,'Next →',()=>{position=(position+1)%Math.max(1,items().length);paint()});
  const collected=button(navigation,'＋ Collect selection',()=>{const m=current();if(!m)return;ensure();const r=project()?.capture({kind:type,title:m.title,sourceUrl:m.watchUrl||m.source,imageUrl:m.imageUrl||m.src,description:m.description,license:m.license||m.rightsNote,year:m.year,originCard:c.id});count.textContent=r?.ok?(r.duplicate?'Already in collection ✓':'Added to collection ✓'):(r?.reason||'Collection storage unavailable.');});
- const watch=button(navigation,'Watch movie',()=>{const m=current();if(type!=='video'){count.textContent='Choose Videos first.';return}if(m?.embedUrl)play(m.embedUrl,m.title)});
+ const watch=button(navigation,'▶ Watch movie here',()=>{const m=current();if(type!=='video'){count.textContent='Choose Videos first.';return}if(m?.embedUrl)play(m)});
  let archivePage=1;const more=button(navigation,'More Archive movies',async()=>{if(more.disabled)return;more.disabled=true;count.textContent='Loading the Archive horror catalog…';
   try{const q='collection:feature_films AND mediatype:movies AND (subject:horror OR subject:Horror)';const u=new URL('https://archive.org/advancedsearch.php');u.searchParams.set('q',q);u.searchParams.set('output','json');u.searchParams.set('rows','24');u.searchParams.set('page',String(archivePage));['identifier','title','description','year'].forEach(v=>u.searchParams.append('fl[]',v));u.searchParams.append('sort[]','downloads desc');
    const response=await fetch(u,{signal:AbortSignal.timeout(20000)});if(!response.ok)throw Error('Archive catalog unavailable');const data=await response.json();let added=0;for(const m of data.response?.docs||[]){if(!/^[A-Za-z0-9_.-]{1,150}$/.test(m.identifier)||movies.some(x=>x.id===m.identifier))continue;const description=String(Array.isArray(m.description)?m.description[0]:m.description||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim().slice(0,650);movies.push({id:m.identifier,title:String(m.title||m.identifier).slice(0,180),year:m.year,provider:'archive',watchUrl:'https://archive.org/details/'+m.identifier,embedUrl:'https://archive.org/embed/'+m.identifier,imageUrl:'https://archive.org/services/img/'+m.identifier,description:description||'An Archive catalog selection. Read the original item for its edition and source details.',rightsNote:'Additional Archive catalog entry. Uploader rights and edition have not been reviewed.'});added++}archivePage++;filter='archive';provider.value=filter;type='video';position=Math.max(0,movies.filter(x=>x.provider==='archive').length-added);paint();count.textContent=added+' additional Archive catalog movies loaded. Original uploader descriptions; these are separate from the curated opening selections.';
   }catch(error){count.textContent=error.message+'. Curated films remain available.'}finally{more.disabled=false}});
  function paint(){player.replaceChildren();media.replaceChildren();const m=current();imageBtn.setAttribute('aria-pressed',String(type==='image'));videoBtn.setAttribute('aria-pressed',String(type==='video'));provider.hidden=type==='image';more.hidden=type==='image';watch.hidden=type==='image';collected.disabled=!m;if(!m){media.append(e('p','No selections in this source.'));return}
   const src=valid(m.imageUrl||m.src);if(src){const img=append(media,e('img',undefined,'hphi-feature-image'));img.src=src;img.alt=m.title||'Source artwork';img.loading='lazy';img.onerror=()=>{img.hidden=true;count.textContent='This source image is unavailable. The original source and collection controls still work.'};}
-  append(media,e('span',(type==='image'?'IMAGE':'FULL MOVIE')+' · '+(m.provider==='youtube'?'YOUTUBE':m.provider==='archive'?'INTERNET ARCHIVE':'SOURCE ART')+(m.year?' · '+m.year:''),'hphi-brand'));append(media,e('h3',m.title));if(m.publisher)append(media,e('p',m.publisher,'hphi-note'));append(media,e('p',m.description||m.title));append(media,e('p',m.rightsNote||m.license||'Source reference; see original for reuse information.','hphi-credit'));link(media,'Original source ↗',m.watchUrl||m.source);count.textContent=(position+1)+' of '+items().length+' '+(type==='image'?'images':'movies')+' · collect favorites into the current token.';
+  append(media,e('span',(type==='image'?'IMAGE':'FULL MOVIE')+' · '+(m.provider==='youtube'?'YOUTUBE':m.provider==='archive'?'INTERNET ARCHIVE':'SOURCE ART')+(m.year?' · '+m.year:''),'hphi-brand'));append(media,e('h3',m.title));if(m.publisher)append(media,e('p',m.publisher,'hphi-note'));append(media,e('p',m.description||m.title));
+   if(type==='video'&&m.embedUrl){
+    const tap=button(media,'▶ Play movie here',()=>play(m));tap.classList.add('hphi-play-now');
+    append(media,player);
+   }
+   append(media,e('p',m.rightsNote||m.license||'Source reference; see original for reuse information.','hphi-credit'));link(media,'Original source ↗',m.watchUrl||m.source);
+   count.textContent=(position+1)+' of '+items().length+' '+(type==='image'?'images':'movies')+' · collect favorites into the current token.';
  }
  paint();
  const create=append(card,e('details',undefined,'hphi-studio'));append(create,e('summary','Create · image generator & reel editor'));

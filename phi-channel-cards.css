@@ -1,0 +1,22 @@
+/* Oracle Octaves: mobile-first QuantaPhi TV channel cards. */
+#phiChannelCards{margin:20px 0;padding:20px;background:linear-gradient(145deg,#fffcff 0%,#f7f0ff 60%,#fffaf0 100%);border:1px solid #d9c8e8;border-radius:22px;color:#332347;box-shadow:0 8px 28px #6b339e17}
+.channelphi-heading h2{margin:6px 0 8px;font-size:clamp(24px,4.8vw,34px);color:#40235c;line-height:1.15}
+.channelphi-heading p{margin:0 0 15px;line-height:1.5;color:#5c4a70}
+.channelphi-kicker{display:block;font-weight:900;letter-spacing:.09em;font-size:11px;color:#794e97}
+.channelphi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:14px}
+.channelphi-card{background:#fff;border:1px solid #ddcfeb;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0;box-shadow:0 5px 14px #45276912}
+.channelphi-mast{display:flex;align-items:center;gap:12px;min-width:0}
+.channelphi-monogram{display:grid;place-items:center;flex:0 0 64px;height:64px;border-radius:17px;color:white;font-size:25px;font-weight:950;letter-spacing:-.05em;background:linear-gradient(145deg,#7340aa,#42205f)}
+.channelphi-hbo .channelphi-monogram{background:linear-gradient(145deg,#142c54,#080d1c)}
+.channelphi-chiller .channelphi-monogram{background:linear-gradient(145deg,#285467,#091b28)}
+.channelphi-shoplc .channelphi-monogram{background:linear-gradient(145deg,#d53b92,#522181)}
+.channelphi-name{min-width:0}.channelphi-name h3{font-size:25px;line-height:1.1;margin:4px 0;color:#342049}
+.channelphi-description{margin:0!important;font-size:15px;line-height:1.5;flex:1}
+.channelphi-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.channelphi-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:47px;padding:11px 15px;border-radius:13px;text-decoration:none;font-size:15px;line-height:1.2;font-weight:850;outline-offset:3px}
+.channelphi-enter{color:#fff;background:#6c32a1;border:1px solid #6c32a1;flex:1}
+.channelphi-enter:hover{background:#4b2176}
+.channelphi-external{color:#572875;background:#faf4ff;border:1px solid #d7bee9}
+.channelphi-foot{font-size:12px;color:#746080;margin:14px 0 0;line-height:1.55}
+@media(max-width:430px){#phiChannelCards{padding:14px}.channelphi-card{padding:14px}}
+@media(prefers-reduced-motion:reduce){#phiChannelCards *{scroll-behavior:auto!important;animation:none!important}}
