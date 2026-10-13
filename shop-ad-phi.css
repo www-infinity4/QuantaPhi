@@ -16,3 +16,5 @@
 .sap-shell .sap-review-btn{background:#54217d;color:white;margin:12px 0 5px}
 .sap-review-status{font-size:13px;font-weight:750;color:#624278}
 .sap-shell [hidden]{display:none!important}
+
+#shopAdPhi .sap-shell{background:#fffdf8;border:1px solid #ceb5e6;border-radius:22px;color:#2b1e33;box-shadow:0 8px 25px #3a203315}#shopAdPhi .sap-shell button,#shopAdPhi .sap-shell a{color:#492277;border-color:#ceb5e6}#shopAdPhi .sap-actions>button:first-child,#shopAdPhi .sap-review-btn,#shopAdPhi .sap-form>button[type=submit]{background:#492277;color:#fff}#shopAdPhi .sap-shell button:disabled{opacity:.55;cursor:default}#shopAdPhi .sap-feature{background:#fff;border-color:#ceb5e6}#shopAdPhi .sap-shell h2{font-size:24px}#shopAdPhi .sap-form details{background:#fff7ef;border:1px solid #e3d0c1;border-radius:14px;padding:12px}#shopAdPhi .sap-form summary{min-height:44px;color:#492277;font-weight:800;cursor:pointer}

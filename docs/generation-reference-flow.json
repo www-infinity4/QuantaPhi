@@ -1,0 +1,7 @@
+{
+ "schema":"infinity.generation-reference-flow/v1",
+ "modelTrainingPerformed":false,
+ "flow":["retrieve approved reference asset","GPT directs composition","renderer receives subject/style reference","review result","retain output and reference provenance"],
+ "packs":[{"id":"infinity-julius-miller-v1","characterReference":"/assets/julius-style-reference.jpg","approvedExample":"/assets/julius-balloon-001.jpg","modes":["image","video-planning"],"videoGenerationConnected":false,"characterLock":"Wild white hair, narrow lined face, heavy brows, long nose, glasses, red bow tie and teal dark academic suit","design":"Original Infinity 2026 collectible physics; ivory border, teal-gold frame, front-only 1/1"}],
+ "privacy":"Reference packs contain artwork and design instructions, never wallet identity or buyer delivery details."
+}

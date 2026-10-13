@@ -93,9 +93,9 @@ async function connectBotEarnings(){
  earningsConnecting=true;
  earningsButton.disabled=true;earningsStatus.textContent='Verifying your wallet and recorded bot work…';
  try{
-  await window.QuantaCloudConnection?.ready;
+
   if(!window.InfinityCloudWallet)throw Error('Wallet connection is not loaded yet.');
-  const wallet=new window.InfinityCloudWallet(),walletToken=wallet.token();
+  const wallet=new window.InfinityCloudWallet(),walletToken=await window.QuantaCloudConnection?.resolveDeviceToken?.()||wallet.token();
   if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(walletToken||''))throw Error('Your wallet identity is not connected yet. Bot earnings remain saved and will retry when it connects.');
   const response=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/work/earnings/connect',{method:'POST',headers:{...brainHeaders,'Content-Type':'application/json'},body:JSON.stringify({walletToken}),signal:AbortSignal.timeout(60000)});
   const result=await response.json();if(!response.ok||!result.ok)throw Error(result.error||'Bot earnings connection failed');

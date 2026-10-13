@@ -103,8 +103,9 @@ async function build({retryRender=false}={}){
  busy=true;lastInstruction=description;lastExactText=exactText;lastManualText=manualText;lastTextMode=textMode;result=null;rawResult=null;artifact=null;
  state('progress');initSteps();$('[data-pi-action="retry-render"]').hidden=true;$('[data-pi-action="back"]').textContent='Back to description';notice(canReuse?'Retrying the image service with the previous GPT directions…':'Preparing a real render request…');
  emit('build:start',{requestId,mode,description});
- let phase=0,warning='',vision='',prompt='';
+ let phase=0,warning='',vision='',prompt='';const referencePack=window.PhiGenerationReferences?.match(description);let renderDesign=design;
  try{
+  if(referencePack&&!renderDesign){try{renderDesign=await renderer.asBlob(referencePack.assetUrl);emit('reference:retrieved',{requestId,packId:referencePack.id,version:referencePack.version,assetUrl:referencePack.assetUrl});}catch{warning='Saved character reference is unavailable; your instructions remain intact.';}}
   if(canReuse){
    prompt=lastRenderPlan.prompt;
    step(0,'done','Saved reference');
@@ -115,14 +116,14 @@ async function build({retryRender=false}={}){
    if(source)try{vision=await renderer.inspect(source)}catch(_){warning='Reference reader unavailable; using the uploaded image directly.'}
    step(phase++,'done');
    step(phase,'active','GPT directing image composition');
-   try{prompt=await renderer.direct({description,mode,vision,story,search,hasUpload:Boolean(source),designFile:Boolean(design),exactText,preferences:window.PhiImageLearning?.preferences(mode)||''})}
+   try{prompt=await renderer.direct({description,mode,vision,story,search,hasUpload:Boolean(source),designFile:Boolean(renderDesign),exactText,preferences:[window.PhiImageLearning?.preferences(mode)||'',referencePack?.instructions||''].filter(Boolean).join('\n')})}
    catch(_){prompt=[renderer.modePrompt(mode),description,story,search].filter(Boolean).join('\n');warning=[warning,'GPT director unavailable; using your instructions.'].filter(Boolean).join(' ')}
    step(phase++,'done');
    lastRenderPlan={description,mode,source,design,exactText,prompt};
   }
   step(phase,'active','Image renderer in progress');
   notice([warning,'Step 3 of 4 · Waiting for the Cloudflare image renderer. This request may take up to 150 seconds.'].filter(Boolean).join(' '));
-  let rendered=await renderer.render({description,mode,source,design,prompt,exactText});
+  let rendered=await renderer.render({description,mode,source,design:renderDesign,prompt:prompt+(referencePack?'\n'+referencePack.instructions:''),exactText});
   step(phase++,'done');
   step(phase,'active','Examining finished image');
   rawResult=rendered.src;
