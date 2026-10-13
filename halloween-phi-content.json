@@ -19,7 +19,7 @@
         "publisher": "FFF+ | Full Free Films Plus",
         "watchUrl": "https://www.youtube.com/watch?v=6ucWqsQj5G8",
         "embedUrl": "https://www.youtube-nocookie.com/embed/6ucWqsQj5G8",
-        "imageUrl": "https://i.ytimg.com/vi/6ucWqsQj5G8/hqdefault.jpg",
+        "imageUrl": "https://img.youtube.com/vi/6ucWqsQj5G8/hqdefault.jpg",
         "rightsNote": "Publisher describes this upload as licensed AVOD. Playback is through the original host. Editing requires a separately usable source file.",
         "checkedAt": "2026-10-13",
         "note": "Survivors of a maritime disaster board a freighter that seems to have a will of its own. George Kennedy anchors this claustrophobic voyage through rusting corridors and industrial nightmares.",
@@ -55,28 +55,28 @@
         {
           "title": "Death Ship \u00b7 source artwork",
           "year": 1980,
-          "src": "https://i.ytimg.com/vi/6ucWqsQj5G8/hqdefault.jpg",
+          "src": "https://img.youtube.com/vi/6ucWqsQj5G8/hqdefault.jpg",
           "source": "https://www.youtube.com/watch?v=6ucWqsQj5G8",
           "license": "Source thumbnail; collecting a reference does not grant reuse rights."
         },
         {
           "title": "Lisa and the Devil \u00b7 source artwork",
           "year": 1973,
-          "src": "https://i.ytimg.com/vi/GB4NOdy9rRI/hqdefault.jpg",
+          "src": "https://img.youtube.com/vi/GB4NOdy9rRI/hqdefault.jpg",
           "source": "https://www.youtube.com/watch?v=GB4NOdy9rRI",
           "license": "Source thumbnail; collecting a reference does not grant reuse rights."
         },
         {
           "title": "The House That Dripped Blood \u00b7 source artwork",
           "year": 1971,
-          "src": "https://i.ytimg.com/vi/If2fAB_Zcs4/hqdefault.jpg",
+          "src": "https://img.youtube.com/vi/If2fAB_Zcs4/hqdefault.jpg",
           "source": "https://www.youtube.com/watch?v=If2fAB_Zcs4",
           "license": "Source thumbnail; collecting a reference does not grant reuse rights."
         },
         {
           "title": "Horror Express \u00b7 source artwork",
           "year": 1972,
-          "src": "https://i.ytimg.com/vi/4LCtzLEebBI/hqdefault.jpg",
+          "src": "https://img.youtube.com/vi/4LCtzLEebBI/hqdefault.jpg",
           "source": "https://www.youtube.com/watch?v=4LCtzLEebBI",
           "license": "Source thumbnail; collecting a reference does not grant reuse rights."
         },
@@ -121,6 +121,13 @@
           "src": "https://archive.org/services/img/TheLittleShopOfHorrors",
           "source": "https://archive.org/details/TheLittleShopOfHorrors",
           "license": "Source thumbnail; collecting a reference does not grant reuse rights."
+        },
+        {
+          "title": "Nightwish \u00b7 source artwork",
+          "year": 1989,
+          "src": "https://img.youtube.com/vi/ZDm8wPSiBG0/hqdefault.jpg",
+          "source": "https://www.youtube.com/watch?v=ZDm8wPSiBG0",
+          "license": "Source thumbnail; collecting a reference does not grant reuse rights."
         }
       ],
       "approvedArchiveIds": [
@@ -141,7 +148,7 @@
           "publisher": "FFF+ | Full Free Films Plus",
           "watchUrl": "https://www.youtube.com/watch?v=6ucWqsQj5G8",
           "embedUrl": "https://www.youtube-nocookie.com/embed/6ucWqsQj5G8",
-          "imageUrl": "https://i.ytimg.com/vi/6ucWqsQj5G8/hqdefault.jpg",
+          "imageUrl": "https://img.youtube.com/vi/6ucWqsQj5G8/hqdefault.jpg",
           "rightsNote": "Publisher describes this upload as licensed AVOD. Playback is through the original host. Editing requires a separately usable source file.",
           "checkedAt": "2026-10-13",
           "note": "Survivors of a maritime disaster board a freighter that seems to have a will of its own. George Kennedy anchors this claustrophobic voyage through rusting corridors and industrial nightmares.",
@@ -156,7 +163,7 @@
           "publisher": "Film&Clips",
           "watchUrl": "https://www.youtube.com/watch?v=GB4NOdy9rRI",
           "embedUrl": "https://www.youtube-nocookie.com/embed/GB4NOdy9rRI",
-          "imageUrl": "https://i.ytimg.com/vi/GB4NOdy9rRI/hqdefault.jpg",
+          "imageUrl": "https://img.youtube.com/vi/GB4NOdy9rRI/hqdefault.jpg",
           "rightsNote": "Full film published by verified Film&Clips. Playback is through the original host. Editing requires a separately usable source file.",
           "checkedAt": "2026-10-13"
         },
@@ -169,7 +176,7 @@
           "publisher": "Film&Clips",
           "watchUrl": "https://www.youtube.com/watch?v=If2fAB_Zcs4",
           "embedUrl": "https://www.youtube-nocookie.com/embed/If2fAB_Zcs4",
-          "imageUrl": "https://i.ytimg.com/vi/If2fAB_Zcs4/hqdefault.jpg",
+          "imageUrl": "https://img.youtube.com/vi/If2fAB_Zcs4/hqdefault.jpg",
           "rightsNote": "Italian audio with English subtitles as labeled by publisher. Playback is through the original host. Editing requires a separately usable source file.",
           "checkedAt": "2026-10-13"
         },
@@ -182,7 +189,7 @@
           "publisher": "Feature Film Channel",
           "watchUrl": "https://www.youtube.com/watch?v=4LCtzLEebBI",
           "embedUrl": "https://www.youtube-nocookie.com/embed/4LCtzLEebBI",
-          "imageUrl": "https://i.ytimg.com/vi/4LCtzLEebBI/hqdefault.jpg",
+          "imageUrl": "https://img.youtube.com/vi/4LCtzLEebBI/hqdefault.jpg",
           "rightsNote": "Free full-film upload; regional playback can vary. Playback is through the original host. Editing requires a separately usable source file.",
           "checkedAt": "2026-10-13"
         },
@@ -277,6 +284,19 @@
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
           "checkedAt": "2026-10-13",
           "originalMediaUrl": "https://archive.org/download/TheLittleShopOfHorrors/The Little Shop of Horrors.mp4"
+        },
+        {
+          "id": "ZDm8wPSiBG0",
+          "title": "Nightwish",
+          "year": 1989,
+          "description": "A paranormal research trip becomes an unstable journey through fear, dreams and a remote mountain house. Bruce R. Cook blends late-eighties creature effects with a reality-bending premise and a sharply uneasy atmosphere.",
+          "provider": "youtube",
+          "publisher": "FILMIX",
+          "watchUrl": "https://www.youtube.com/watch?v=ZDm8wPSiBG0",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/ZDm8wPSiBG0",
+          "imageUrl": "https://img.youtube.com/vi/ZDm8wPSiBG0/hqdefault.jpg",
+          "rightsNote": "Full film published by verified FILMIX. Viewing remains on the original host; editing requires a separately usable file.",
+          "checkedAt": "2026-10-13"
         }
       ]
     },
@@ -379,6 +399,13 @@
           "src": "https://archive.org/services/img/TheLittleShopOfHorrors",
           "source": "https://archive.org/details/TheLittleShopOfHorrors",
           "license": "Source thumbnail; collecting a reference does not grant reuse rights."
+        },
+        {
+          "title": "Nightwish \u00b7 source artwork",
+          "year": 1989,
+          "src": "https://img.youtube.com/vi/ZDm8wPSiBG0/hqdefault.jpg",
+          "source": "https://www.youtube.com/watch?v=ZDm8wPSiBG0",
+          "license": "Source thumbnail; collecting a reference does not grant reuse rights."
         }
       ],
       "approvedArchiveIds": [
@@ -491,7 +518,7 @@
           "publisher": "FFF+ | Full Free Films Plus",
           "watchUrl": "https://www.youtube.com/watch?v=6ucWqsQj5G8",
           "embedUrl": "https://www.youtube-nocookie.com/embed/6ucWqsQj5G8",
-          "imageUrl": "https://i.ytimg.com/vi/6ucWqsQj5G8/hqdefault.jpg",
+          "imageUrl": "https://img.youtube.com/vi/6ucWqsQj5G8/hqdefault.jpg",
           "rightsNote": "Publisher describes this upload as licensed AVOD. Playback is through the original host. Editing requires a separately usable source file.",
           "checkedAt": "2026-10-13",
           "note": "Survivors of a maritime disaster board a freighter that seems to have a will of its own. George Kennedy anchors this claustrophobic voyage through rusting corridors and industrial nightmares.",
@@ -506,7 +533,7 @@
           "publisher": "Film&Clips",
           "watchUrl": "https://www.youtube.com/watch?v=GB4NOdy9rRI",
           "embedUrl": "https://www.youtube-nocookie.com/embed/GB4NOdy9rRI",
-          "imageUrl": "https://i.ytimg.com/vi/GB4NOdy9rRI/hqdefault.jpg",
+          "imageUrl": "https://img.youtube.com/vi/GB4NOdy9rRI/hqdefault.jpg",
           "rightsNote": "Full film published by verified Film&Clips. Playback is through the original host. Editing requires a separately usable source file.",
           "checkedAt": "2026-10-13"
         },
@@ -519,7 +546,7 @@
           "publisher": "Film&Clips",
           "watchUrl": "https://www.youtube.com/watch?v=If2fAB_Zcs4",
           "embedUrl": "https://www.youtube-nocookie.com/embed/If2fAB_Zcs4",
-          "imageUrl": "https://i.ytimg.com/vi/If2fAB_Zcs4/hqdefault.jpg",
+          "imageUrl": "https://img.youtube.com/vi/If2fAB_Zcs4/hqdefault.jpg",
           "rightsNote": "Italian audio with English subtitles as labeled by publisher. Playback is through the original host. Editing requires a separately usable source file.",
           "checkedAt": "2026-10-13"
         },
@@ -532,8 +559,21 @@
           "publisher": "Feature Film Channel",
           "watchUrl": "https://www.youtube.com/watch?v=4LCtzLEebBI",
           "embedUrl": "https://www.youtube-nocookie.com/embed/4LCtzLEebBI",
-          "imageUrl": "https://i.ytimg.com/vi/4LCtzLEebBI/hqdefault.jpg",
+          "imageUrl": "https://img.youtube.com/vi/4LCtzLEebBI/hqdefault.jpg",
           "rightsNote": "Free full-film upload; regional playback can vary. Playback is through the original host. Editing requires a separately usable source file.",
+          "checkedAt": "2026-10-13"
+        },
+        {
+          "id": "ZDm8wPSiBG0",
+          "title": "Nightwish",
+          "year": 1989,
+          "description": "A paranormal research trip becomes an unstable journey through fear, dreams and a remote mountain house. Bruce R. Cook blends late-eighties creature effects with a reality-bending premise and a sharply uneasy atmosphere.",
+          "provider": "youtube",
+          "publisher": "FILMIX",
+          "watchUrl": "https://www.youtube.com/watch?v=ZDm8wPSiBG0",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/ZDm8wPSiBG0",
+          "imageUrl": "https://img.youtube.com/vi/ZDm8wPSiBG0/hqdefault.jpg",
+          "rightsNote": "Full film published by verified FILMIX. Viewing remains on the original host; editing requires a separately usable file.",
           "checkedAt": "2026-10-13"
         }
       ]

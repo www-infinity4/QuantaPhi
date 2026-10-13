@@ -49,7 +49,7 @@ function mount(host,context){
   const mime=['video/webm;codecs=vp8,opus','video/webm','video/mp4'].find(x=>MediaRecorder.isTypeSupported(x));if(!mime){status.textContent='No supported export format.';return}
   const projectId=root.PhiProjectPackage?.active()?.id;const canvas=make('canvas');canvas.width=640;canvas.height=360;const ctx=canvas.getContext('2d');const stream=canvas.captureStream(24);const audio=new (root.AudioContext||root.webkitAudioContext)();const dest=audio.createMediaStreamDestination();dest.stream.getAudioTracks().forEach(t=>stream.addTrack(t));const chunks=[];
   const recorder=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:1800000});let recorderError=null;recorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};recorder.onerror=e=>{recorderError=e.error||Error('Recording failed');cancelled=true};
-  recording=true;cancelled=false;exportBtn.disabled=true;let video,draw=0;
+  recording=true;cancelled=false;exportBtn.disabled=true;let video,draw=0,renderedSeconds=0;
   try{
    await audio.resume();ctx.fillStyle='#171025';ctx.fillRect(0,0,640,360);recorder.start(500);recorder.pause();
    for(let i=0;i<clips.length;i++){
@@ -60,9 +60,9 @@ function mount(host,context){
     audio.createMediaElementSource(video).connect(dest);
     const paintFrame=()=>{if(cancelled)return;ctx.fillStyle='#14101e';ctx.fillRect(0,0,640,360);const ratio=Math.min(640/video.videoWidth,360/video.videoHeight),w=video.videoWidth*ratio,h=video.videoHeight*ratio;ctx.drawImage(video,(640-w)/2,(360-h)/2,w,h);ctx.fillStyle='#171025dd';ctx.fillRect(0,310,640,50);ctx.fillStyle='#fff';ctx.font='bold 17px system-ui';ctx.fillText(c.title.slice(0,58),18,341);draw=requestAnimationFrame(paintFrame)};
     paintFrame();await video.play();recorder.resume();const started=Date.now();while(video.currentTime<end&&!video.ended&&!cancelled){if(Date.now()-started>(c.duration+20)*1000)throw Error('Source playback stalled.');await pause(60)}
-    recorder.pause();video.pause();cancelAnimationFrame(draw);video.remove();video=null;
+    recorder.pause();renderedSeconds+=Math.max(0,Math.min(end,video.currentTime)-c.start);video.pause();cancelAnimationFrame(draw);video.remove();video=null;
    }
-   if(cancelled)throw recorderError||Error('Export canceled.');const stopped=new Promise(r=>recorder.onstop=r);recorder.stop();await stopped;const blob=new Blob(chunks,{type:mime});if(blob.size<1000)throw Error('Export produced no usable video.');
+   if(cancelled)throw recorderError||Error('Export canceled.');const stopped=new Promise(r=>recorder.onstop=r);recorder.stop();await stopped;const blob=await root.PhiCinemaTimeline.finalizeWebM(new Blob(chunks,{type:mime}),renderedSeconds);if(blob.size<1000)throw Error('Export produced no usable video.');
    if(resultUrl)URL.revokeObjectURL(resultUrl);resultUrl=URL.createObjectURL(blob);output.src=resultUrl;output.hidden=false;download(blob,'curio-preview-reel.'+(mime.includes('mp4')?'mp4':'webm'));
    const saved=root.PhiProjectFiles?await root.PhiProjectFiles.save(new File([blob],'curio-preview-reel.'+(mime.includes('mp4')?'mp4':'webm'),{type:blob.type})).catch(()=>null):null;
    if(saved)root.PhiProjectPackage?.capture({kind:'video',title:'Curio preview reel',localAssetId:saved.id,fileName:saved.name,mime:saved.mime},projectId);
