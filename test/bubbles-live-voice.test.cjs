@@ -47,12 +47,13 @@ test('Touching Bubbles starts continuous listening',async()=>{
  h.nodes.find(n=>n.textContent==='Connect Bubbles voice').handlers.click();await flush();
  assert.equal(h.recognized.length,1);assert.equal(h.recognized[0].continuous,true);
  assert.equal(h.recognized[0].interimResults,true);
- h.recognized[0].onresult({resultIndex:0,results:[result('Someone talking nearby')]});
- await flush();assert.equal(h.requests.length,0);
+ h.recognized[0].onresult({resultIndex:0,results:[result('Explain the wallet')]});
+ await flush();assert.equal(h.requests.length,1);
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles explain stars')]});
  await flush();
- assert.equal(h.requests.length,1);
- assert.match(h.requests[0].opts.body,/explain stars/);
+ assert.equal(h.requests.length,2);
+ assert.match(h.requests[0].opts.body,/Explain the wallet/);
+ assert.match(h.requests[1].opts.body,/explain stars/);
 });
 test('wake window accepts follow ups and a voice mute releases microphone',async()=>{
  const h=harness();h.nodes.find(n=>n.textContent==='Connect Bubbles voice').handlers.click();await flush();

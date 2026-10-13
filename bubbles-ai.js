@@ -48,14 +48,14 @@ let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeade
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
-const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias})||null;
+const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias,requireWakeName:false})||null;
 
 function persistChat(){
  if(!keepChat)return false;
  return save(HISTORY,messages.slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)})));
 }
 const card=create('section','ba-card ba-studio-card');
-card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','Tap Bubbles once to enable continuous listening. It glows when it hears sound. Say “Bubbles” and your request. Speech clips go to Cloudflare for transcription; silence stays on your device. Mute releases the microphone.'));
+card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','Tap Bubbles once to enable continuous listening. It glows when it hears sound. Just speak naturally—no wake name needed. Speech clips go to Cloudflare for transcription; silence stays on your device. Mute releases the microphone.'));
 const studioToggle=create('button','ba-control ba-studio-toggle','Customize Bubbles');studioToggle.type='button';studioToggle.setAttribute('aria-expanded','false');
 studioToggle.addEventListener('click',()=>{const open=card.dataset.expanded!=='true';card.dataset.expanded=String(open);studioToggle.setAttribute('aria-expanded',String(open));studioToggle.textContent=open?'Hide customization':'Customize Bubbles'});card.append(studioToggle);
 const edit=create('div','ba-settings');
@@ -105,7 +105,7 @@ launcher.append(create('span','ba-orb-shine'),create('span','ba-orb-center'));la
 const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('aria-label','Bubbles AI messenger');
 const header=create('header','ba-header');const name=create('strong','',config.alias||'Bubbles');const close=create('button','ba-close','×');close.type='button';close.setAttribute('aria-label','Close Bubbles');
 header.append(name,close);
-const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then say “Bubbles”.');
+const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then speak naturally.');
 status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
 const composer=create('form','ba-composer');
@@ -230,7 +230,7 @@ function toggle(open){
  showing=Boolean(open);panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
  if(embedded)window.parent.postMessage({type:'quantaphi:bubbles:size',open:showing},'*');
  if(showing){
-  if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. Once connected, say Bubbles and speak naturally. Say Bubbles go quiet to mute.','ai',true);greeted=true}
+  if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. Once connected, just speak naturally. Say stop listening to mute.','ai',true);greeted=true}
   input.focus();
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
@@ -362,8 +362,8 @@ async function startVoice(){
   });
   if(generation!==voiceGeneration){capture.stop();stream.getTracks().forEach(t=>t.stop());return}
   streamVoice=capture;mic.textContent='🔇 Mute Bubbles';mic.setAttribute('aria-pressed','true');
-  setOrbState('listening');status.textContent='Microphone on continuously · say “'+config.alias+'” and your request.';
-  if(config.voice)speakText('I am listening. Say '+config.alias+' and your request.');
+  setOrbState('listening');status.textContent='Microphone on continuously · speak naturally, no wake name needed.';
+  if(config.voice)speakText('I am listening. Just speak naturally.');
  }catch(error){stopVoice('Microphone could not start: '+String(error?.message||error?.name||error).slice(0,130))}
  finally{voiceStarting=false}
 }

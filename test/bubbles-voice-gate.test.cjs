@@ -45,3 +45,15 @@ test('unrecognized people and unrelated transcripts do not start a session',()=>
  assert.equal(g.accept('Bubble AI, start listening',1100).type,'wake');
 });
 
+
+test('natural listening accepts speech after long silence and respects mute',()=>{
+ const context={};vm.runInNewContext(source,context);
+ const g=context.BubblesVoiceGate.create({requireWakeName:false});
+ assert.equal(g.accept('Explain the wallet',1000).type,'message');
+ assert.equal(g.accept('What about my quants?',600000).type,'message');
+ assert.equal(g.accept('What about my quants?',600001).reason,'duplicate');
+ assert.equal(g.accept('stop listening',601000).type,'mute');
+ assert.equal(g.accept('Bubbles wake up',602000).type,'ignore');
+ g.reset();
+ assert.equal(g.accept('Hello again',603000).type,'message');
+});
