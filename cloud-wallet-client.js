@@ -169,6 +169,9 @@ function recoverWallet(){
 }
 global.QuantaCloudConnection.recoverWallet=recoverWallet;
 ready.then(async()=>{
+ // Infinity Radio runs the same-origin bridge but controls its own recovery UI.
+ // Do not bounce its music player through an automatic sign-in navigation.
+ if(global.QuantaCloudConnectionDisableAutoRecovery===true)return;
  // A valid enrolled token can reconstruct its own local profile from D1. Do
  // that before any recovery navigation so cache loss cannot create identity drift.
  if(!PAID_ORIGINS.has(location.origin))return;
@@ -178,7 +181,7 @@ ready.then(async()=>{
  if(String(query).trim()||document.activeElement?.matches?.('input,textarea'))return;
  recoverWallet();
 });
-if(PAID_ORIGINS.has(location.origin))document.addEventListener('click',event=>{
+if(PAID_ORIGINS.has(location.origin)&&global.QuantaCloudConnectionDisableAutoRecovery!==true)document.addEventListener('click',event=>{
  if(event.target.closest?.('#controlPhiWalletButton,#qmenuWallet'))recoverWallet();
 },true);
 class InfinityUnifiedWallet{
