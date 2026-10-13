@@ -70,7 +70,7 @@ function safeStorageRead(key){try{return localStorage.getItem(key)}catch{return 
 function safeStorageSet(key,value){try{localStorage.setItem(key,value)}catch{}}
 function safeStorageDelete(key){try{localStorage.removeItem(key)}catch{}}
 async function goldImage(src,edition){
- const image=new Image();image.decoding='async';
+ const image=new Image();image.crossOrigin='anonymous';image.decoding='async';
  await new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=()=>reject(Error('Artwork unavailable for numbered download'));image.src=src});
  const canvas=document.createElement('canvas');canvas.width=image.naturalWidth;canvas.height=image.naturalHeight;
  const ctx=canvas.getContext('2d');ctx.drawImage(image,0,0);
@@ -116,10 +116,13 @@ async function myCards(){
   shelfStatus.textContent=response.copies.length+' recent owned cards';
   for(const item of response.copies){
    const r=item.receipt;const card=make('article','ic-owned');
-   const img=make('img');img.src=r.artUrl;img.loading='lazy';img.alt=r.title;
+   const frame=make('div','ic-owned-art');const img=make('img');img.src=r.artUrl;img.loading='lazy';img.alt=r.title;
+   frame.append(img,make('span','ic-gold-number',r.goldEdition));
    const details=make('div');details.append(make('strong','',r.title),make('p','','Gold edition '+r.goldEdition+' · '+r.purchasePriceStarCoins+' StarCoin'));
    const token=make('small','',r.assetTokenId+' · '+(item.quantDataSynced?'Quant data saved':'Quant data pending'));
-   details.append(token);card.append(img,details);shelfRows.append(card);
+   const save=make('button','ic-save-owned','Save numbered image');save.type='button';
+   save.addEventListener('click',async()=>{save.disabled=true;try{const u=await goldImage(r.artUrl,r.serialNumber);const link=document.createElement('a');link.href=u;link.download='Infinity-2026-'+r.goldEdition.replace('/','-')+'.png';link.click();setTimeout(()=>URL.revokeObjectURL(u),20000);}catch(error){shelfStatus.textContent='Numbered download unavailable: '+String(error?.message||error)}finally{save.disabled=false;}});
+   details.append(token,save);card.append(frame,details);shelfRows.append(card);
   }
  }catch(error){shelfStatus.textContent=String(error?.message||error);}
  finally{shelfButton.disabled=false;}
