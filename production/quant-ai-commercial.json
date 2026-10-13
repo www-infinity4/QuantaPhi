@@ -1,6 +1,6 @@
 {
   "schema": "quant-ai-commercial/v1",
-  "status": "planned_not_submitted",
+  "status": "queued",
   "product": "Quant AI",
   "descriptor": "Automated Banking & Business Agent",
   "studio": "Oracle AI Studio",
@@ -67,5 +67,6 @@
       ]
     }
   ],
-  "execution": "Submit via Quant AI production crew in authenticated Robot Brain. Repository plan alone is not an executing job."
+  "execution": "Submitted through the authorized Cloudflare connection to the existing Robot Brain queue. Three dependent jobs; verify actual executor receipts before claiming completion.",
+  "ticket_id": "IW-20261013-51A17E01"
 }

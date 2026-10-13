@@ -4,6 +4,12 @@ on:
     branches: [main]
     paths:
       - 'phi-image*.js'
+      - 'phi-video-builder.js'
+      - 'phi-media-studio.js'
+      - 'oracle-video-studio.css'
+      - 'video-studio.html'
+      - 'test/phi-video-builder.test.cjs'
+      - 'test/phi-media-studio.browser.cjs'
       - 'phi-visual-render.js'
       - 'phi-image-builder.css'
       - 'fred-spaces-radio.css'
@@ -27,6 +33,12 @@ on:
   pull_request:
     paths:
       - 'phi-image*.js'
+      - 'phi-video-builder.js'
+      - 'phi-media-studio.js'
+      - 'oracle-video-studio.css'
+      - 'video-studio.html'
+      - 'test/phi-video-builder.test.cjs'
+      - 'test/phi-media-studio.browser.cjs'
       - 'phi-visual-render.js'
       - 'phi-image-builder.css'
       - 'fred-spaces-radio.css'
@@ -59,4 +71,12 @@ jobs:
         run: |
           node --check fred-spaces-radio.js
           node --check phi-page-ui.js
-          node --test test/phi-image-quality.test.cjs test/phi-electric-ui.test.cjs test/phi-unlimited-generation.test.cjs test/story-illustration-lettering.test.cjs test/phi-image-language.test.cjs
+          node --test test/phi-image-quality.test.cjs test/phi-electric-ui.test.cjs test/phi-unlimited-generation.test.cjs test/story-illustration-lettering.test.cjs test/phi-image-language.test.cjs test/phi-video-builder.test.cjs
+      - name: Install test-only browser for image and video acceptance
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify existing image repair and shared video export on Android
+        run: |
+          node test/oracle-image-studio.browser.cjs
+          node test/phi-media-studio.browser.cjs

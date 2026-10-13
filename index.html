@@ -33,6 +33,7 @@
 <link rel="stylesheet" href="/infinity-concepts.css?v=20261013-cards2">
 <link rel="stylesheet" href="/radio-clubhouse.css?v=20261013-cards2">
 <link rel="stylesheet" href="/phi-image-builder.css?v=20261013-cards2">
+<link rel="stylesheet" href="/oracle-video-studio.css?v=20261013-studio1">
 <link rel="stylesheet" href="/phi-story-writer.css?v=20261011-view-stories2"><link rel="stylesheet" href="/bubbles-ai.css?v=20261011-voice1">
 <link rel="stylesheet" href="/quanta-agent-iterations.css?v=20261010-work-portals1">
 <link rel="stylesheet" href="/phi-book-illustrations.css?v=20261008-book-image1-electric3">
@@ -275,7 +276,13 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 <p class="book-shelf-link"><a href="https://quantaphi.org/storybook/">📖 My Storybook · Read what I collected</a></p>
 <section id="groupStoryBuild" aria-label="Collaborative group stories"></section>
 <section id="phiStoryWriter" aria-label="Oracle Story Writer — write and illustrate an original story"></section>
-<section id="phiImageBuilder" aria-label="Phi Image Builder"></section>
+<section id="phiMediaBuilder" class="phi-media-studio" aria-label="Oracle Image and Video Studio">
+  <header class="pm-header"><div><span class="ovs-eyebrow">ORACLE AI STUDIO · MOSAIC</span><h2>Image &amp; Video</h2><p>Describe it. Create it. Bring it to life.</p></div>
+    <div class="pm-toggle" role="tablist" aria-label="Creation mode"><button id="pm-image-tab" type="button" role="tab" aria-selected="true" aria-controls="phiImagePanel" data-media-mode="image">Image</button><button id="pm-video-tab" type="button" role="tab" aria-selected="false" aria-controls="phiVideoPanel" tabindex="-1" data-media-mode="video">Video</button></div>
+  </header>
+  <div id="phiImagePanel" role="tabpanel" aria-labelledby="pm-image-tab"><section id="phiImageBuilder" aria-label="Phi Image Builder"></section></div>
+  <div id="phiVideoPanel" role="tabpanel" aria-labelledby="pm-video-tab" hidden><div id="phiVideoBuilder"></div></div>
+</section>
 <section id="fredSpacesRadio" aria-label="Fred Spaces curated episode player; blank Media Star template available separately"></section>
 <section id="magooSpacesRadio" aria-label="Magoo PhD guest recordings and X Spaces catalog with no-repeat shuffle"></section>
 <section id="followingSpacesRadio" aria-label="Media Star X Spaces radio built from followed accounts and indexed replay links"></section>
@@ -1646,7 +1653,9 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script defer src="/phi-visual-render.js?v=20261011-exact-type1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
 <script defer src="/phi-generation-references.js?v=20261013-julius1"></script>
-<script defer src="/phi-image-builder.js?v=20261013-cards2"></script>
+<script defer src="/phi-image-builder.js?v=20261013-media1"></script>
+<script defer src="/phi-video-builder.js?v=20261013-studio1"></script>
+<script defer src="/phi-media-studio.js?v=20261013-studio1"></script>
 
 <script defer src="/phi-image-actions.js?v=20261010-action-catalog1"></script>
 <script defer src="/phi-book-image-bridge.js?v=20261009-text-repair1"></script>

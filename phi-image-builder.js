@@ -310,6 +310,7 @@ window.PhiImageBuilder={
  prefill(text){$('#pi-prompt').value=String(text||'').slice(0,3000)},
  get:()=>({artifact,result,mode,busy}),
  async generateFromStory(id,imageInstructions){
+  window.dispatchEvent(new Event('phi:media:show-image'));
   if(busy||preparingReference)throw Error('Image Builder is finishing another image. Try the illustration again when it finishes.');
   storyWriterId=String(id||'').slice(0,120);
   mode='Image';source=null;design=null;lastRenderPlan=null;
