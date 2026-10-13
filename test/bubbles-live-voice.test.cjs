@@ -6,8 +6,8 @@ const fs=require('node:fs');
 const gateSource=fs.readFileSync('bubbles-voice-gate.js','utf8');
 const appSource=fs.readFileSync('bubbles-ai.js','utf8');
 
-function harness(owner=false){
- const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
+function harness(owner=false,speech=false){
+ const utterances=[];const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
  const node=(tag)=>{
   const n={tag,className:'',dataset:{},style:{setProperty(){}},children:[],handlers:{},hidden:false,value:'',
    append(...arr){this.children.push(...arr)},insertBefore(item,before){this.children.splice(this.children.indexOf(before),0,item)},
@@ -29,10 +29,11 @@ function harness(owner=false){
  const fetch=async(url,opts)=>{requests.push({url,opts});return{ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',context:{}}}:{ok:true,output:'Bubbles response from Oracle'}}};
  const context={window,document,navigator,localStorage,location:{search:'',origin:'https://quantaphi.org',pathname:'/'},
   URLSearchParams,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
+ if(speech){context.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};context.speechSynthesis={cancel(){},getVoices:()=>[],speak(u){utterances.push(u);u.onstart?.()}};}
  vm.runInNewContext(gateSource,context);
  vm.runInNewContext(appSource,context);
  const orb=nodes.find(n=>n.className==='ba-launcher');
- return {window,document,nodes,orb,requests,recognized,track};
+ return {window,document,nodes,orb,requests,recognized,track,utterances};
 }
 const flush=async()=>{for(let i=0;i<8;i++)await Promise.resolve()};
 const result=s=>Object.assign([{transcript:s}],{isFinal:true});
@@ -62,16 +63,16 @@ test('wake window accepts follow ups and a voice mute releases microphone',async
  assert.equal(h.orb.dataset.state,'idle');
 });
 
-test('background suspension resumes on return but deliberate mute stays muted',async()=>{
+test('microphone stays on across tab visibility changes until deliberate mute',async()=>{
  const h=harness();h.nodes.find(n=>n.textContent==='Connect Bubbles voice').handlers.click();await flush();
  h.document.visibilityState='hidden';h.document.handlers.visibilitychange();
- assert.equal(h.recognized[0].stopped,true);assert.equal(h.track.stopped,true);
+ assert.equal(h.recognized[0].stopped,undefined);assert.equal(h.track.stopped,false);
  h.document.visibilityState='visible';h.document.handlers.visibilitychange();await flush();
- assert.equal(h.recognized.length,2);assert.equal(h.recognized[1].started,true);
+ assert.equal(h.recognized.length,1);assert.equal(h.recognized[0].started,true);
  h.nodes.find(n=>n.className==='ba-mic').handlers.click();
  h.document.visibilityState='hidden';h.document.handlers.visibilitychange();
  h.document.visibilityState='visible';h.document.handlers.visibilitychange();await flush();
- assert.equal(h.recognized.length,2);
+ assert.equal(h.recognized.length,1);assert.equal(h.track.stopped,true);
 });
 
 test('interim words light the bubble and show the heard transcript without sending it',async()=>{
@@ -94,4 +95,14 @@ test('owner repair command creates and readies one real ticket with receipt',asy
  assert.equal(h.requests.length,2);assert.match(h.requests[0].url,/tickets\/create$/);assert.match(h.requests[1].url,/tickets\/update$/);
  assert.equal(JSON.parse(h.requests[0].opts.body).context.approval,'explicit-user-command');
  assert.equal(h.nodes.find(n=>n['aria-label']==='Work request for Robot Brain').value,'');
+});
+
+test('spoken replies keep the same microphone and recognizer active',async()=>{
+ const h=harness(false,true);h.orb.handlers.click();await flush();
+ assert.equal(h.recognized.length,1);assert.equal(h.track.stopped,false);
+ h.utterances[0].onend();
+ h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles hello')]});await flush();
+ assert.equal(h.requests.length,1);assert.equal(h.recognized[0].stopped,undefined);assert.equal(h.track.stopped,false);
+ h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles response from Oracle')]});await flush();
+ assert.equal(h.requests.length,1,'synthesized speech is not sent back into AI');
 });

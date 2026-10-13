@@ -43,7 +43,7 @@ let messages=keepChat?data(HISTORY,[]):[];
 if(!Array.isArray(messages))messages=[];
 messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
-let voiceResumeWanted=false,voiceStarting=false;
+let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
 const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias})||null;
@@ -179,8 +179,8 @@ function speakText(value){
  try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
    const voices=speechSynthesis.getVoices?.()||[];
    utterance.voice=voices.find(v=>v.voiceURI===config.voiceURI)||voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
-   utterance.onstart=()=>{speaking=true;setOrbState('speaking');pauseRecognition()};
-   const finished=()=>{speaking=false;if(voiceEnabled)beginRecognition();else setOrbState('idle')};
+   utterance.onstart=()=>{speaking=true;setOrbState('speaking')};
+   const finished=()=>{speaking=false;if(voiceEnabled){setOrbState('listening');beginRecognition()}else setOrbState('idle')};
    utterance.onend=finished;utterance.onerror=finished;speechSynthesis.speak(utterance)
   }
  catch(error){status.textContent='Speech playback could not start: '+String(error?.message||error).slice(0,120)}
@@ -319,24 +319,27 @@ function showLevel(){
  const samples=new Uint8Array(meterAnalyser.fftSize);
  meterAnalyser.getByteTimeDomainData(samples);
  let power=0;for(let i=0;i<samples.length;i++){const v=(samples[i]-128)/128;power+=v*v}
- const level=Math.min(1,Math.sqrt(power/samples.length)*7);
- launcher.style.setProperty('--ba-energy',String(level.toFixed(3)));
- if(!busy&&!speaking)setOrbState(level>.19?'hearing':'listening');
+ const level=Math.min(1,Math.sqrt(power/samples.length)*12);
+ if(level>.06)heardUntil=Date.now()+350;
+ const hearing=Date.now()<heardUntil;
+ launcher.style.setProperty('--ba-energy',String(Math.max(level,hearing?.65:0).toFixed(3)));
+ if(!busy&&!speaking)setOrbState(hearing?'hearing':'listening');
  meterFrame=window.requestAnimationFrame?.(showLevel)||0;
 }
 function beginRecognition(){
  const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;
- if(!voiceEnabled||recognition||speaking||document.visibilityState==='hidden'||!Recognition)return;
+ if(!voiceEnabled||recognition||!Recognition)return;
  const r=new Recognition();recognition=r;listening=r;
  r.lang='en-GB';r.continuous=true;r.interimResults=true;r.maxAlternatives=1;
  r.onaudiostart=()=>{tries=0;setOrbState('listening')};
- r.onsoundstart=()=>{if(!speaking)setOrbState('hearing')};
+ r.onsoundstart=()=>{if(!speaking){heardUntil=Date.now()+750;setOrbState('hearing')}};
+ r.onspeechstart=()=>{if(!speaking){heardUntil=Date.now()+750;setOrbState('hearing');status.textContent='I can hear you…'}};
  r.onresult=event=>{
   const from=Number(event.resultIndex||0);
   for(let i=from;i<(event.results?.length||0);i++){
    const result=event.results[i],transcript=String(result?.[0]?.transcript||'').trim();
    if(!transcript)continue;
-   if(!speaking){setOrbState('hearing');launcher.style.setProperty('--ba-energy','1');status.textContent='Heard: '+transcript; launcher.dataset.words=String(transcript.split(/\s+/).length)}
+   if(!speaking){heardUntil=Date.now()+750;setOrbState('hearing');launcher.style.setProperty('--ba-energy','1');status.textContent='Heard: '+transcript; launcher.dataset.words=String(transcript.split(/\s+/).length)}
    if(!result.isFinal)continue;
    // Ignore the assistant's synthesized speech. Only addressed speech becomes a request.
    if(speaking||!voiceGate)continue;
@@ -360,7 +363,7 @@ function beginRecognition(){
  r.onend=()=>{
   if(recognition!==r)return;
   recognition=null;listening=null;
-  if(!voiceEnabled||speaking||document.visibilityState==='hidden')return;
+  if(!voiceEnabled)return;
   if(voiceRetry)clearTimeout(voiceRetry);
   voiceRetry=setTimeout(()=>{voiceRetry=null;beginRecognition()},Math.min(2500,300*Math.pow(1.5,Math.min(tries++,5))));
  };
@@ -378,7 +381,6 @@ async function startVoice(){
  if(!navigator.mediaDevices?.getUserMedia){voiceStarting=false;toggle(true);status.textContent='This browser cannot request a microphone stream. Use the keyboard.';return}
  try{
   const stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
-  if(document.visibilityState==='hidden'){stream.getTracks().forEach(track=>track.stop());voiceResumeWanted=true;return;}
   meterStream=stream;voiceEnabled=true;voiceResumeWanted=true;tries=0;voiceGate.reset();
   const Ctx=window.AudioContext||window.webkitAudioContext;
   if(Ctx&&window.requestAnimationFrame){
@@ -393,10 +395,11 @@ async function startVoice(){
 }
 mic.addEventListener('click',()=>{if(voiceEnabled)stopVoice();else void startVoice()});
 document.addEventListener?.('visibilitychange',()=>{
- if(document.visibilityState==='hidden'&&voiceEnabled){
-  stopVoice('Listening paused while this page is in the background. Bubbles will reconnect when you return.');
-  voiceResumeWanted=true;
- }else if(document.visibilityState!=='hidden'&&voiceResumeWanted&&!voiceEnabled){void startVoice();}
+ // Preserve the granted stream when switching tabs. Android may suspend web
+ // recognition itself; reconnect the recognizer without cycling microphone permission.
+ if(document.visibilityState!=='hidden'&&voiceEnabled){
+  void audioContext?.resume().catch(()=>{});beginRecognition();
+ }
 });
 window.addEventListener?.('pagehide',()=>{if(voiceEnabled)stopVoice()});
 // Drag the literal bubble across the viewport; distinguish tap from movement.
