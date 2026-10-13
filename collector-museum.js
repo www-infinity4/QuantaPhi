@@ -14,7 +14,7 @@ const museum=$('section','ic-museum oracle-surface');museum.id='collectorMuseum'
 museum.append($('span','ic-kicker','INFINITY 2026® · DIGITAL COLLECTION'),$('h2','','The Card Museum'),
  $('p','ic-intro','Every Infinity card design has one museum slot. Your wallet owns the individually numbered copies you purchase. New artwork stays concealed in the public museum until seven days after the first sale. Preview any card offered for sale before spending a StarCoin.'));
 const toolbar=$('div','ic-museum-tools'),refresh=$('button','','Refresh museum'),owned=$('a','','My owned cards');
-refresh.type='button';owned.href='#collectorShelf';toolbar.append(refresh,owned);museum.append(toolbar);
+refresh.type='button';owned.href=location.pathname.startsWith('/card-museum/')?'/#collectorShelf':'#collectorShelf';toolbar.append(refresh,owned);museum.append(toolbar);
 const info=$('p','ic-status','');
 const sections=$('div','ic-series-grid');museum.append(info,sections);
 rootEl.insertAdjacentElement('afterend',museum);
