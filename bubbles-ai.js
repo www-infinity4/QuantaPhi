@@ -64,6 +64,20 @@ const instructions=create('textarea','ba-field');instructions.id='ba-instruction
 const saveRole=create('button','ba-control','Save bubble role');saveRole.type='button';
 const launchCard=create('button','ba-primary','Connect Bubbles voice');launchCard.type='button';
 edit.append(create('label','','Job / specialty'),persona,create('label','','Bubble name'),alias,create('label','','Give this bubble its instructions'),instructions,saveRole,launchCard);
+const voiceChoice=create('select','ba-field');voiceChoice.setAttribute('aria-label','Speaking voice');
+const voiceHint=create('p','ba-muted','Choose a voice installed on your device. British English is preferred automatically.');
+function loadVoices(){
+ const voices=typeof speechSynthesis==='undefined'?[]:speechSynthesis.getVoices();
+ voiceChoice.replaceChildren();const auto=create('option','','Automatic · British English preferred');auto.value='';voiceChoice.append(auto);
+ for(const voice of voices.filter(v=>/^en[-_]/i.test(v.lang))){const option=create('option','',voice.name+' · '+voice.lang);option.value=voice.voiceURI;voiceChoice.append(option)}
+ voiceChoice.value=config.voiceURI||'';
+ voiceHint.textContent=voices.some(v=>/^en[-_]GB/i.test(v.lang))?'British English is available. Preview voices to choose your favourite.':'No British English voice is available yet on this device. Your device speech settings control available voices.';
+}
+voiceChoice.addEventListener('change',()=>{config.voiceURI=voiceChoice.value;save(CONFIG,config)});
+const previewVoice=create('button','ba-control','Preview voice');previewVoice.type='button';previewVoice.addEventListener('click',()=>speakText('Hello, I am '+config.alias+'. What shall we work on today?'));
+edit.append(create('label','','Speaking voice'),voiceChoice,previewVoice,voiceHint);
+if(typeof speechSynthesis!=='undefined')speechSynthesis.addEventListener?.('voiceschanged',loadVoices);
+loadVoices();
 const connections=create('div','ba-connect');
 connections.append(create('strong','','Connections'));
 const provider=create('p','ba-muted','Live now: Oracle Cloudflare AI. ChatGPT and Claude account access require separate provider authorization; a normal sign-in tab does not connect their accounts or subscriptions.');
@@ -124,7 +138,7 @@ if(embedded){
 }
 document.body.append(launcher,panel);
 function updateRole(){
- config={role:persona.value,alias:alias.value.trim().slice(0,38)||'Bubbles',instructions:instructions.value.trim().slice(0,1200),voice:Boolean(config.voice)};
+ config={role:persona.value,alias:alias.value.trim().slice(0,38)||'Bubbles',instructions:instructions.value.trim().slice(0,1200),voice:Boolean(config.voice),voiceURI:config.voiceURI||''};
  save(CONFIG,config);name.textContent=config.alias;status.textContent=ROLES[config.role].name+' · Oracle Cloudflare AI · account access not implied';
  voiceGate?.setName(config.alias);
 }
@@ -160,9 +174,9 @@ function speakText(value){
  if(typeof speechSynthesis==='undefined'||typeof SpeechSynthesisUtterance==='undefined'){
   status.textContent='Speech playback is not supported on this browser.';return;
  }
- try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-GB';utterance.rate=1.08;
+ try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
    const voices=speechSynthesis.getVoices?.()||[];
-   utterance.voice=voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
+   utterance.voice=voices.find(v=>v.voiceURI===config.voiceURI)||voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
    utterance.onstart=()=>{speaking=true;setOrbState('speaking');pauseRecognition()};
    const finished=()=>{speaking=false;if(voiceEnabled)beginRecognition();else setOrbState('idle')};
    utterance.onend=finished;utterance.onerror=finished;speechSynthesis.speak(utterance)
@@ -236,7 +250,7 @@ async function sendMessage(text){
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger inside QuantaPhi.','Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'You have NO independent GitHub write authorization or access to ChatGPT/Claude subscriptions. Only confirmed owner-submitted Robot Brain tickets count as queued; never claim a repository change occurred without tool evidence.',
- 'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Reply directly and use clear plain text.'].join('\n\n');
+ 'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Speak in calm, natural British English. Keep spoken answers concise and conversational. For a task, explain the actual result and next step; distinguish completed, queued and blocked work. Reply directly in plain text.'].join('\n\n');
  try{
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),22000);
   let response;try{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})})}finally{clearTimeout(timer)}
