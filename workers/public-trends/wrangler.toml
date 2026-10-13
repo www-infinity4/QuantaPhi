@@ -1,0 +1,8 @@
+name = "quantaphi-public-trends"
+main = "worker.mjs"
+compatibility_date = "2026-10-13"
+workers_dev = true
+[[d1_databases]]
+binding = "DB"
+database_name = "quantaphi-public-trends"
+database_id = "a763460f-dba7-422d-857d-ad7c98d512c3"
