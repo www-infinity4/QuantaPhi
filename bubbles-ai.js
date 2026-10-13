@@ -43,6 +43,7 @@ let messages=keepChat?data(HISTORY,[]):[];
 if(!Array.isArray(messages))messages=[];
 messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
+let voiceResumeWanted=false,voiceStarting=false;
 let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
 const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias})||null;
@@ -298,7 +299,7 @@ function stopMeter(){
  launcher.style.setProperty('--ba-energy','0');
 }
 function stopVoice(message){
- voiceEnabled=false;voicePending='';
+ voiceResumeWanted=false;voiceEnabled=false;voicePending='';
  if(voiceRetry)clearTimeout(voiceRetry);voiceRetry=null;
  pauseRecognition();stopMeter();
  try{speechSynthesis.cancel()}catch{}
@@ -359,16 +360,18 @@ function beginRecognition(){
  catch(error){recognition=null;listening=null;stopVoice('Speech recognition could not start: '+String(error?.message||error).slice(0,110))}
 }
 async function startVoice(){
- if(voiceEnabled)return;
+ if(voiceEnabled||voiceStarting)return;
+ voiceStarting=true;
  // Unlock spoken output in the tap gesture, before microphone permission awaits.
  toggle(true);
  if(config.voice)speakText('Hello, I am '+config.alias+'. Say '+config.alias+' and your request.');
  const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;
- if(!Recognition||!voiceGate){toggle(true);status.textContent='Continuous speech recognition is not supported here. You can still type. An Android app is needed for other apps.';return}
- if(!navigator.mediaDevices?.getUserMedia){toggle(true);status.textContent='This browser cannot request a microphone stream. Use the keyboard.';return}
+ if(!Recognition||!voiceGate){voiceStarting=false;toggle(true);status.textContent='Continuous speech recognition is not supported here. You can still type. An Android app is needed for other apps.';return}
+ if(!navigator.mediaDevices?.getUserMedia){voiceStarting=false;toggle(true);status.textContent='This browser cannot request a microphone stream. Use the keyboard.';return}
  try{
   const stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
-  meterStream=stream;voiceEnabled=true;tries=0;voiceGate.reset();
+  if(document.visibilityState==='hidden'){stream.getTracks().forEach(track=>track.stop());voiceResumeWanted=true;return;}
+  meterStream=stream;voiceEnabled=true;voiceResumeWanted=true;tries=0;voiceGate.reset();
   const Ctx=window.AudioContext||window.webkitAudioContext;
   if(Ctx&&window.requestAnimationFrame){
    try{audioContext=new Ctx();const source=audioContext.createMediaStreamSource(stream);
@@ -378,11 +381,14 @@ async function startVoice(){
   }
   mic.textContent='🔇 Mute Bubbles';mic.setAttribute('aria-pressed','true');
   beginRecognition();
- }catch(error){stopMeter();toggle(true);status.textContent='Microphone was not enabled: '+String(error?.name||error?.message||error).slice(0,130)}
+ }catch(error){voiceResumeWanted=false;stopMeter();toggle(true);status.textContent='Microphone was not enabled: '+String(error?.name||error?.message||error).slice(0,130)}finally{voiceStarting=false}
 }
 mic.addEventListener('click',()=>{if(voiceEnabled)stopVoice();else void startVoice()});
 document.addEventListener?.('visibilitychange',()=>{
- if(document.visibilityState==='hidden'&&voiceEnabled)stopVoice('Bubbles paused when this page went into the background. Touch the bubble to reconnect.');
+ if(document.visibilityState==='hidden'&&voiceEnabled){
+  stopVoice('Listening paused while this page is in the background. Bubbles will reconnect when you return.');
+  voiceResumeWanted=true;
+ }else if(document.visibilityState!=='hidden'&&voiceResumeWanted&&!voiceEnabled){void startVoice();}
 });
 window.addEventListener?.('pagehide',()=>{if(voiceEnabled)stopVoice()});
 // Drag the literal bubble across the viewport; distinguish tap from movement.
