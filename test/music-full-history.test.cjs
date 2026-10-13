@@ -27,3 +27,21 @@ test('Rejects a continuation page from a different wallet owner',async()=>{
  assert.equal(result.ok,false);assert.equal(result.reason,'music_quant_wallet_changed_during_sync');
  assert.equal(f.cloud.state,null);assert.equal(f.stored.length,0);
 });
+
+test('A partial Music Quant receipt ledger does not erase a selected Unified Wallet balance',async()=>{
+ const f=fixture();
+ f.memory.set('infinity_unified_wallet_v1',JSON.stringify({currentWalletId:'cloudflare:authenticated',musicQuants:2327,source:'unified-wallet-cloudflare',wallets:{'cloudflare:authenticated':{balances:{MUSIC_QUANT:2327}}}}));
+ const state=await f.cloud.sync();
+ assert.equal(state.balance,3,'dedicated ledger reports only three attached receipts');
+ const wallet=JSON.parse(f.memory.get('infinity_unified_wallet_v1'));
+ assert.equal(wallet.musicQuants,2327);
+ assert.equal(wallet.currentWalletId,'cloudflare:authenticated');
+ assert.equal(wallet.wallets['cloudflare:authenticated'].balances.MUSIC_QUANT,2327);
+ assert.equal(wallet.wallets.qw_authenticated.balances.MUSIC_QUANT,3);
+});
+test('Wallet runtime reads spendable Music Quants from verified Unified Wallet, not the partial music receipt ledger',()=>{
+ const runtime=fs.readFileSync('wallet-runtime.js','utf8');
+ assert.ok(runtime.includes("readAsset('MUSIC_QUANT',UNIFIED_WALLET_ENDPOINT+'/v1/wallet/state')"));
+ assert.ok(runtime.includes("musicQuants:ownedBalance('MUSIC_QUANT',localMusic)"));
+ assert.ok(!runtime.includes("musicQuants:musicState?.ok?"));
+});
