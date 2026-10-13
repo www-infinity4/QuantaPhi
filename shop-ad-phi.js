@@ -47,6 +47,18 @@ function show(item,draft=false){
  if(item.url)button(row,'Share',async()=>{try{if(navigator.share)await navigator.share({title:item.title,url:item.url});else await navigator.clipboard.writeText(item.url);status.textContent='Seller link shared.'}catch(e){status.textContent=e.name==='AbortError'?'Share canceled.':'Sharing unavailable.'}});
  if(item.affiliate)feature.append(node('small','Affiliate link; the curator may earn a commission.'));
 }
+const shopLinks=node('div',undefined,'sap-actions sap-search-links');shell.append(shopLinks);
+function showSearchFallback(topic){
+ shopLinks.replaceChildren();
+ const term=String(topic||'').trim().slice(0,140);if(!term)return;
+ const destination=new URL('https://www.ebay.com/sch/i.html');
+ destination.searchParams.set('_nkw',term);
+ const a=node('a','Shop '+term);a.href=destination.href;
+ a.target='_blank';a.rel='noopener noreferrer';
+ a.dataset.siteUrl=a.href;a.dataset.siteTitle='Shop '+term;
+ a.addEventListener('click',e=>{if(window.QuantaOpenSite){e.preventDefault();window.QuantaOpenSite(a)}});
+ shopLinks.append(a);
+}
 async function loadAd(){status.textContent='Loading an available ad…';try{const ad=await window.ControlPhi?.requestSponsoredCard(query,'shop-ad-phi');if(ad&&safe(ad.destinationUrl)){show({title:ad.title,description:ad.body,url:ad.destinationUrl,sponsored:true,sponsor:ad.advertiser||'Advertiser',merchant:ad.advertiser,imageUrl:ad.imageUrl});status.textContent='Advertisement ready.';return}}catch{}const draft=read(KEY)[0];if(draft){show(draft,true);status.textContent='Your most recent listing draft. Not published.';}else{current=null;feature.replaceChildren();feature.append(node('h3','Your ad goes here'),node('p','Open an available ad, or create a listing with an item description, price and optional link.'));openAd.disabled=true;status.textContent='No live advertisement is available from Ad Phi right now.';}}
 const openAd=button(actions,'Open ad',()=>{if(!safe(current?.url)){status.textContent='This listing has no destination link yet.';return}if(window.QuantaOpenSite){const a=node('a');a.href=current.url;a.dataset.siteUrl=current.url;a.dataset.siteTitle=current.title;window.QuantaOpenSite(a)}else window.open(current.url,'_blank','noopener,noreferrer')});openAd.disabled=true;
 button(actions,'Create listing',()=>{form.hidden=!form.hidden;if(!form.hidden){fields.title.focus();if(window.QuantAIPersonal)void window.QuantAIPersonal.profile().then(p=>{fields.merchant.value=p.publicAlias}).catch(()=>{});}});
@@ -89,5 +101,5 @@ form.addEventListener('submit',e=>{
  }catch{status.textContent='Storage is full or unavailable. Draft was not saved.'}
 });
 shell.append(form,node('footer','External sellers control stock, checkout and price. Sponsored offers are labeled Advertisement.'));
-window.addEventListener('quantaphi:search-start',e=>{query=String(e.detail?.query||'').slice(0,140);void loadAd()});void loadAd();
+window.addEventListener('quantaphi:search-start',e=>{query=String(e.detail?.query||'').slice(0,140);showSearchFallback(query);void loadAd()});showSearchFallback(query);void loadAd();
 })();
