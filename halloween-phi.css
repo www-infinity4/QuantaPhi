@@ -33,3 +33,12 @@
 .hphi-card li{font-size:13px;margin:10px 0}
 .hphi-card li button{min-height:34px;margin-left:5px}
 @media(prefers-reduced-motion:reduce){.hphi-card *{animation:none!important;scroll-behavior:auto!important}}
+
+/* In-card full-movie playback: large, usable controls on small Android screens. */
+.hphi-card .hphi-play-now{display:flex;width:100%;min-height:54px;margin:12px 0;background:linear-gradient(120deg,#6b2caf,#3f1e63);color:white;border-color:#653c85;font-size:18px;font-weight:900;border-radius:14px}
+.hphi-card .hphi-play-now:hover{background:linear-gradient(120deg,#522081,#2b1540);color:white}
+.hphi-player-host:not(:empty){margin:8px 0 14px;padding:10px;border:1px solid #dbc6ec;border-radius:15px;background:#160e21;color:#fff}
+.hphi-player-host .hphi-player-status{color:#efddff;font-size:13px;margin:6px 2px}
+.hphi-player-host iframe,.hphi-player-host video{width:100%;max-height:min(65vh,540px);aspect-ratio:16/9;border:0;background:#000;border-radius:11px;display:block;margin:10px 0}
+.hphi-player-alternatives{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.hphi-player-alternatives .hphi-btn,.hphi-player-alternatives button{background:#fff;border-color:#bda0d8;color:#40205d;min-height:44px}
