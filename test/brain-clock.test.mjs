@@ -6,7 +6,9 @@ const previewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(ne
 const quantUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/job-quant.mjs',import.meta.url))).toString('base64');
 const policyUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/bot-work-policy.mjs',import.meta.url))).toString('base64');
 const episodicUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/brain-rag-memory.mjs',import.meta.url))).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl);
+const evidenceUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/evidence-store.mjs',import.meta.url))).toString('base64');
+const evidenceDbUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/evidence-db.mjs',import.meta.url))).toString('base64');
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl);
 const {BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
@@ -94,8 +96,9 @@ test('GPT Purple cannot approve absent tests and immutable patch evidence',async
 
 
 test('capability and private preview publish without a repair lease and preserve verification boundaries',async()=>{
- const memory=new Map(),oldFetch=globalThis.fetch;
- const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)}},{});
+ const memory=new Map(),oldFetch=globalThis.fetch,objects=new Map();
+ const bucket={head:async k=>objects.has(k)?{}:null,put:async(k,v)=>objects.set(k,v),get:async k=>({arrayBuffer:async()=>objects.get(k).buffer})};
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)}},{EVIDENCE:bucket});
  const request=(step,body)=>new Request('https://clock/runner/'+step,{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/QuantaPhi',...body})});
  const preview={repository:'www-infinity4/QuantaPhi',baseSha:'a'.repeat(40),commitSha:'b'.repeat(40),paths:['robot-directions.js'],summary:'Clear draft',status:'deployed_verified',before:'data:image/jpeg;base64,/9j/AA==',after:'data:image/jpeg;base64,/9j/AA=='};
  try{
@@ -211,4 +214,13 @@ test('the owner ticket router is authentication gated and the browser never gene
  assert.match(client,/delete payload\.owner_token/);
  assert.doesNotMatch(client,/ownerToken=crypto\.randomUUID\(\)/,'Brain must not create new anonymous identities');
  assert.match(client,/const d=await post\('\/v1\/tickets\/list',\{\}\)/);
+});
+
+test('untouched queued work advances ahead of an earlier blocked job, and owner selection is honored',async()=>{
+ const memory=new Map(),jobs=[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'Old repair',status:'blocked',dependencies:[]},{id:'TASK-2',repository:'www-infinity4/QuantaPhi',instructions:'New repair',status:'queued',dependencies:[]}];
+ const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)};
+ const env={WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Fix my cards',context_json:JSON.stringify({color_jobs:jobs})}]})})}};
+ const clock=new BrainClock({storage},env),request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
+ const first=await(await clock.runner(request())).json();assert.equal(first.lease.jobId,'TASK-2');
+ memory.clear();memory.set('requested-next-job',{ticketId:'ticket',jobId:'TASK-1'});const next=await(await clock.runner(request())).json();assert.equal(next.lease.jobId,'TASK-1');assert.equal(memory.has('requested-next-job'),false);
 });

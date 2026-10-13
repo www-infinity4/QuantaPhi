@@ -1,3 +1,5 @@
+import {publishReviewed} from './brain-publish.mjs';
+import {archiveScreenshots} from './archive-screenshots.mjs';
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
 import {execFileSync} from 'node:child_process';
@@ -73,7 +75,9 @@ try{
   git('fetch','origin','main');if(git('rev-parse','origin/main')!==report.baseSha)throw Error('Main changed; retry against the new head');
   git('config','user.name','infinity-brain[bot]');git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com');
   git('add','--',...paths);git('commit','-m','Repair '+report.jobId+' after GPT review and tests');commitSha=git('rev-parse','HEAD');
-  git('push','origin','HEAD:main');
+  report.publication=await publishReviewed({repository:'www-infinity4/QuantaPhi',base:'main',commitSha,jobId:report.jobId,runId:process.env.GITHUB_RUN_ID,push:ref=>git('push','origin',ref),api:async(resource,options)=>{const r=await fetch('https://api.github.com/'+resource,{method:options.method,headers:{Authorization:'Bearer '+process.env.GITHUB_TOKEN,'Content-Type':'application/json',Accept:'application/vnd.github+json'},body:JSON.stringify(options.body),signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Reviewed PR could not be created: HTTP '+r.status);return r.json()}});
+  if(!report.publication.publishedToDefault){report.status='committed_unverified';report.preview={baseSha:report.baseSha,commitSha,paths,summary:'Reviewed bot repair: '+report.jobId,jobId:report.jobId};await call('result',{status:'committed_unverified',commitSha,testsPassed,reviewApproved,message:'Tested source repair is awaiting protected-branch review: '+report.publication.prUrl});throw Object.assign(new Error('protected_branch_review_pending'),{reviewPending:true});}
+
   }
   report.preview={baseSha:git('rev-parse',commitSha+'^'),commitSha,paths:git('diff-tree','--no-commit-id','--name-only','-r',commitSha).split('\n').filter(Boolean),summary:'Bot repair: '+report.jobId,jobId:report.jobId};
   await event('greenbeans','Committed '+commitSha.slice(0,9)+' for '+report.jobId+'. Waiting for the deployed source, then opening the hosted Android browser.',{commitSha});
@@ -92,11 +96,12 @@ try{
   report.status='deployed_verified';
  }
 }catch(e){
+ if(e.reviewPending){report.status='committed_unverified';}else{
  report.status=commitSha?'committed_unverified':'blocked';report.error=e.message;
  console.error(report.status,e.message);
  if(lease)try{await call('result',{status:report.status,commitSha,testsPassed,reviewApproved,message:report.error});}catch(resultError){report.receiptError=resultError.message;}
- process.exitCode=1;
-}finally{
+ process.exitCode=1;}
+}finally{if(lease&&/^[a-f0-9]{40}$/.test(commitSha||report.baseSha||''))try{report.visualEvidence=await archiveScreenshots('brain-receipts',{repository:lease.job.repository||lease.repository,commitSha:commitSha||report.baseSha},call)}catch(e){report.evidenceArchiveError=String(e.message).slice(0,300)}
  if(report.preview){try{
   const pair=await capturePair({...report.preview,status:report.status==='deployed_verified'?'deployed_verified':'committed_unverified'});
   await fs.writeFile('brain-receipts/work-preview.json',JSON.stringify(pair));

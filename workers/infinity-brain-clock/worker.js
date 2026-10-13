@@ -1,5 +1,7 @@
+import { evidenceBucket } from './evidence-db.mjs';
 import { DurableObject } from 'cloudflare:workers';
 import { authenticate, supported } from './runner-auth.mjs';
+import { archiveImage, evidenceKey } from './evidence-store.mjs';
 import { validatePreview } from './preview-contract.mjs';
 import { jobQuant } from './job-quant.mjs';
 import { earnedWork } from './bot-work-policy.mjs';
@@ -116,6 +118,12 @@ export class BrainClock extends DurableObject{
    const capability={when:new Date().toISOString(),runUrl,status:body.status==='credential_configured'?'credential_configured':'credential_missing',repositoriesVisible:Number.isInteger(body.repositoriesVisible)?Math.max(0,body.repositoriesVisible):null,note:'Repository writes are proven by commits, not account role permissions.'};
    await this.ctx.storage.put('engine-capability',capability);return Response.json({ok:true});
   }
+  if(path==='/runner/screenshots'){
+   const lease=await this.ctx.storage.get(String(body.key||''));
+   if(!lease||lease.leaseId!==body.leaseId||lease.runId!==runId||lease.repository!==body.repository)throw Error('screenshot_lease_mismatch');
+   const evidence=await archiveImage(evidenceBucket(this.env),{repository:body.repository,commitSha:body.commitSha,runId,name:body.name},body.image);
+   return Response.json({ok:true,evidence});
+  }
   if(path==='/runner/preview'){
    const preview=validatePreview(body.preview);
    if(!engine&&preview.repository!=='www-infinity4/QuantaPhi')throw Error('preview_repository_identity_mismatch');
@@ -129,19 +137,25 @@ export class BrainClock extends DurableObject{
    const matching=await this.ctx.storage.get(String(body.key||''));
    preview.status=matching?.commitSha===preview.commitSha&&matching?.status==='deployed_verified'?'deployed_verified':previous?.status==='deployed_verified'?'deployed_verified':'source_preview';
    preview.runUrl=runUrl;preview.recordedAt=new Date().toISOString();
+   const archive={};for(const side of ['before','after'])archive[side]=await archiveImage(evidenceBucket(this.env),{repository:preview.repository,commitSha:preview.commitSha,runId,name:side+'.jpg'},preview[side]);
+   preview.archive=archive;
+   const manifest=evidenceKey({repository:preview.repository,commitSha:preview.commitSha,runId,name:'before.jpg'}).replace(/before\.jpg$/,'preview.json');
+   if(!await evidenceBucket(this.env).head(manifest))await evidenceBucket(this.env).put(manifest,JSON.stringify(preview),{httpMetadata:{contentType:'application/json',cacheControl:'private, no-store'}});
    await this.ctx.storage.put('preview:'+preview.commitSha,preview);
    const list=await this.ctx.storage.get('previews')||[];
    const metadata={...preview};delete metadata.before;delete metadata.after;
-   const next=[metadata,...list.filter(x=>x.commitSha!==preview.commitSha)].slice(0,20);
+   const next=[metadata,...list.filter(x=>x.commitSha!==preview.commitSha)].slice(0,100);
    await this.ctx.storage.put('previews',next);
    for(const old of list)if(!next.some(x=>x.commitSha===old.commitSha))await this.ctx.storage.delete('preview:'+old.commitSha);
    return Response.json({ok:true,status:preview.status});
   }
   if(path==='/runner/claim'){
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at DESC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
-   for(const ticket of rows.results||[]){
-    const context=JSON.parse(ticket.context_json),jobs=context.color_jobs||[];
-    for(const job of jobs){
+   const requested=await this.ctx.storage.get('requested-next-job');
+   const candidates=(rows.results||[]).flatMap(ticket=>{const context=JSON.parse(ticket.context_json);return (context.color_jobs||[]).map(job=>({ticket,jobs:context.color_jobs,job}))});
+   candidates.sort((a,b)=>Number(!(a.ticket.id===requested?.ticketId&&a.job.id===requested?.jobId))-Number(!(b.ticket.id===requested?.ticketId&&b.job.id===requested?.jobId))||Number(a.job.status==='blocked')-Number(b.job.status==='blocked')||Date.parse(a.job.progress?.attemptedAt||a.job.last_inspected_at||0)-Date.parse(b.job.progress?.attemptedAt||b.job.last_inspected_at||0));
+   for(const {ticket,jobs,job} of candidates){
+    {
      if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified'].includes(job.status))continue;
      if(engine&&(job.dependencies||[]).some(id=>jobs.some(j=>j.id===id&&!['complete','deployed_verified'].includes(j.status))))continue;
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
@@ -159,6 +173,7 @@ export class BrainClock extends DurableObject{
          repository:job.repository,query:ticket.request+' '+job.instructions,limit:6});
      }catch{/* A missing memory schema must not block existing jobs. */}
      lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories,...(engine?{experientialMemory}:{})};
+     if(requested?.ticketId===ticket.id&&requested?.jobId===job.id)await this.ctx.storage.delete('requested-next-job');
      await this.ctx.storage.put(key,lease);
      await this.ctx.storage.put('repository-lease:'+job.repository,lease);
      await this.emit('greenbeans','pink-panther','writer claimed','Authenticated repository runner claimed '+ticket.id+'/'+job.id+'. It will inspect its credential, target repository and acceptance adapters before any write.',runUrl);
@@ -258,7 +273,7 @@ export class BrainClock extends DurableObject{
   if(fresh){
    const context=JSON.parse(fresh.context_json),job=(context.color_jobs||[]).find(j=>j.id===lease.jobId);
    if(job && await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}))===lease.revision){
-    job.status=body.status==='deployed_verified'?'complete':body.status==='committed_unverified'?'committed_unverified':'blocked';job.progress={summary:message,next:body.status==='deployed_verified'?'Verified in the deployed Android browser.':body.status==='committed_unverified'?'Source committed; deployed browser verification still required.':'Runner will retry after backoff.',blocker:body.status==='deployed_verified'?'':body.status,commitSha:receipt.commitSha,runUrl};
+    job.status=body.status==='deployed_verified'?'complete':body.status==='committed_unverified'?'committed_unverified':'blocked';job.progress={attemptedAt:receipt.when,summary:message,next:body.status==='deployed_verified'?'Verified in the deployed Android browser.':body.status==='committed_unverified'?'Source committed; deployed browser verification still required.':'Runner will retry after backoff.',blocker:body.status==='deployed_verified'?'':body.status,commitSha:receipt.commitSha,runUrl};
     await this.env.WORK_DB.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND context_json=?').bind(JSON.stringify(context),context.color_jobs.every(j=>j.status==='complete')?'complete':'working',Date.now(),lease.ticketId,fresh.context_json).run();
    }
   }
@@ -295,6 +310,21 @@ export class BrainClock extends DurableObject{
    const valid=!!(session?.expiresAt>Date.now()&&recipient?.userId&&recipient.userId===session.userId);
    return Response.json({ok:valid},{status:valid?200:404});
   }
+  if(new URL(request.url).pathname==='/run-next'){
+   const body=await request.json();
+   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+   for(const t of rows.results||[]){if(body.ticketId&&body.ticketId!==t.id)continue;const jobs=JSON.parse(t.context_json).color_jobs||[];
+    for(const job of jobs){if(body.jobId&&body.jobId!==job.id||['complete','deployed_verified','committed_unverified'].includes(job.status))continue;
+     const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository})),key='writer:'+t.id+':'+job.id+':'+revision,prior=await this.ctx.storage.get(key),active=await this.ctx.storage.get('repository-lease:'+job.repository);
+     if(active?.leaseUntil>Date.now())return Response.json({ok:false,error:'repository_job_running',runUrl:active.runUrl||''},{status:409});
+     if(prior)await this.ctx.storage.put(key,{...prior,retryAt:0});
+     await this.ctx.storage.put('requested-next-job',{ticketId:t.id,jobId:job.id});
+     await this.emit('purple-pearl','greenbeans','owner requested next job','Owner queued '+t.id+'/'+job.id+' for the next authenticated runner cycle. No completion claimed.');
+     return Response.json({ok:true,status:'queued_for_runner',ticketId:t.id,jobId:job.id});
+    }
+   }
+   return Response.json({ok:true,status:'no_pending_jobs'});
+  }
   if(new URL(request.url).pathname==='/earnings-status')return Response.json(await this.earningsStatus());
   if(new URL(request.url).pathname==='/earnings-connect'){
    const body=await request.json();if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(body.walletToken||''))return Response.json({ok:false,error:'wallet_connection_required'},{status:401});
@@ -317,12 +347,23 @@ export class BrainClock extends DurableObject{
   if(new URL(request.url).pathname==='/feed')return Response.json({schemaVersion:1,items:await this.ctx.storage.get('events')||[],previews:await this.ctx.storage.get('previews')||[],engine:await this.ctx.storage.get('engine-capability')||null,state});
   return Response.json({ok:true,...state,periodMs:PERIOD,nextAlarm:await this.ctx.storage.getAlarm(),executor:'authenticated GitHub writer for brain-interface jobs',writer:await this.ctx.storage.get('writerHeartbeat')||null});
  }
+ async archiveOlderPreviews(){
+  if(!this.env.EVIDENCE&&!this.env.WORK_DB?.batch)return;
+  const index=await this.ctx.storage.get('previews')||[];let count=0;
+  for(const item of index){if(item.archive||count>=3)continue;const p=await this.ctx.storage.get('preview:'+item.commitSha);if(!p?.before||!p.after)continue;
+   const runId=String(p.runUrl||'').match(/actions\/runs\/(\d+)/)?.[1]||'0',archive={};
+   for(const side of ['before','after'])archive[side]=await archiveImage(evidenceBucket(this.env),{repository:p.repository,commitSha:p.commitSha,runId,name:side+'.jpg'},p[side]);
+   p.archive=archive;await this.ctx.storage.put('preview:'+p.commitSha,p);item.archive=archive;const manifest=archive.before.key.replace(/before\.jpg$/,'preview.json');if(!await evidenceBucket(this.env).head(manifest))await evidenceBucket(this.env).put(manifest,JSON.stringify(p),{httpMetadata:{contentType:'application/json',cacheControl:'private, no-store'}});count++;
+  }
+  if(count)await this.ctx.storage.put('previews',index);
+ }
  async alarm(){
   if(this.running)return;this.running=true;
   let delay=PERIOD;
   // Recovery alarm is installed before network calls, so a crashed turn can recover.
   await this.ctx.storage.setAlarm(Date.now()+120000);
   try{
+   try{await this.archiveOlderPreviews()}catch(e){await this.ctx.storage.put('evidence-archive-error',{when:Date.now(),error:String(e.message).slice(0,200)})}
    if(await this.ctx.storage.get('bot-work-recipient'))await this.settleWork();
    const page=await read('https://quantaphi.org/',150000);
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
@@ -409,7 +450,7 @@ export class BrainClock extends DurableObject{
 // Source handoffs contain up to 12 bounded files plus patch/test evidence.
 // Keep routine runner messages small; only authenticated source stages use this budget.
 export async function readRunnerBody(request, pathname){
- const limit=['/runner/build','/runner/engine-review','/runner/arbitrate'].includes(pathname)?3*1024*1024:160000;
+ const limit=['/runner/build','/runner/engine-review','/runner/arbitrate'].includes(pathname)||pathname==='/runner/screenshots'?3*1024*1024:160000;
  const tooLarge=()=>Object.assign(new Error('runner_body_too_large'),{status:413});
  if(Number(request.headers.get('Content-Length')||0)>limit)throw tooLarge();
  const reader=request.body?.getReader();if(!reader)return '';
@@ -538,6 +579,20 @@ export default{
     return output(request,result.result,result.status);
    }catch(error){return output(request,{ok:false,error:'owner_ticket_request_failed'},500)}
   }
+  if((path==='/work/evidence'||path==='/work/evidence/list')&&request.method==='GET'){
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
+   const url=new URL(request.url),bucket=evidenceBucket(env);
+   if(path.endsWith('/list')){const found=await bucket.list({prefix:'robot-evidence/',limit:100,cursor:url.searchParams.get('cursor')||undefined});return output(request,{ok:true,objects:found.objects.map(x=>({key:x.key,size:x.size,metadata:x.customMetadata})),cursor:found.cursor||null});}
+   const key=url.searchParams.get('key')||'';if(!/^robot-evidence\/www-infinity4\/[\w.-]+\/[a-f0-9]{40}\/\d{1,24}\/[a-zA-Z0-9_-]{1,100}\.(jpg|jpeg|png|json)$/.test(key))return output(request,{ok:false,error:'invalid_evidence_key'},400);
+   const object=await bucket.get(key);if(!object)return output(request,{ok:false,error:'evidence_not_found'},404);
+   return new Response(object.body,{headers:{'Content-Type':object.httpMetadata?.contentType||'application/octet-stream','Cache-Control':'private, no-store','Access-Control-Allow-Origin':origins.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Vary':'Origin'}});
+  }
+  if(path==='/work/run-next'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
+   const text=await request.text();if(text.length>2000)return output(request,{ok:false,error:'request_too_large'},413);
+   try{JSON.parse(text||'{}');const r=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/run-next',{method:'POST',body:text||'{}'});return output(request,await r.json(),r.status);}catch{return output(request,{ok:false,error:'run_next_unavailable'},503)}
+  }
   if(path==='/work/earnings/connect'&&request.method==='POST'){
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
    if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
@@ -546,7 +601,7 @@ export default{
    return output(request,await r.json());
   }
   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':origins.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Access-Control-Allow-Methods':'GET, POST, OPTIONS','Access-Control-Allow-Headers':'Authorization, Content-Type','Vary':'Origin'}});
-  if(request.method==='POST' && ['/runner/claim','/runner/event','/runner/result','/runner/quant-receipt','/runner/quant-audit','/runner/propose','/runner/review','/runner/preview','/runner/plan','/runner/build','/runner/engine-review','/runner/arbitrate','/runner/capability'].includes(path)){
+  if(request.method==='POST' && ['/runner/claim','/runner/event','/runner/result','/runner/quant-receipt','/runner/quant-audit','/runner/propose','/runner/review','/runner/preview','/runner/screenshots','/runner/plan','/runner/build','/runner/engine-review','/runner/arbitrate','/runner/capability'].includes(path)){
    try{
     const identity=await authenticate(request);
     const text=await readRunnerBody(request,path);

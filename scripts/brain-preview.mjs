@@ -1,8 +1,9 @@
+import {focusPair} from './image-focus.mjs';
 import {execFileSync} from 'node:child_process';
 import {previewFiles,validatePreview} from '../workers/infinity-brain-clock/preview-contract.mjs';
 export {validatePreview};
 export function sourceSection(html){
- const start=html.indexOf('<section id="quantaAgentIterations"');
+ const start=html.search(/<section\b[^>]*\bid=["']quantaAgentIterations["']/i);
  if(start<0)throw Error('Preview component missing');
  const tags=/<\/?section\b[^>]*>/gi;tags.lastIndex=start;let depth=0,match;
  while((match=tags.exec(html))){depth+=match[0].startsWith('</')?-1:1;if(depth===0)return html.slice(start,tags.lastIndex);}
@@ -12,7 +13,7 @@ export async function capturePair({baseSha,commitSha,paths,summary,jobId,status=
  const source=options.source||((ref,path)=>execFileSync('git',['show',ref+':'+path],{encoding:'utf8',maxBuffer:2*1024*1024}));
  const {chromium}=options.browserModule||await import('playwright');
  const browser=await chromium.launch({headless:true});
- const images={};
+ const images={};let focus=null;
  try{for(const [side,ref]of [['before',baseSha],['after',commitSha]]){
   const context=await browser.newContext({viewport:{width:360,height:800},isMobile:true,hasTouch:true,serviceWorkers:'block'});
   try{
@@ -40,6 +41,6 @@ export async function capturePair({baseSha,commitSha,paths,summary,jobId,status=
    if(jpeg.length>44000)throw Error('Preview image exceeds storage bound');
    images[side]='data:image/jpeg;base64,'+jpeg.toString('base64');
   }finally{await context.close()}
- }}finally{await browser.close()}
- return validatePreview({schemaVersion:1,repository:'www-infinity4/QuantaPhi',baseSha,commitSha,paths,summary:summary.slice(0,500),jobId:jobId||'recorded bot repair',status,runUrl,when:new Date().toISOString(),viewport:'360x800',renderMode:'isolated-source-component',note:'Exact before/after source rendered with disconnected service fixtures. These images do not prove live deployment or wallet behavior.',...images});
+ }focus=await focusPair(browser,images);}finally{await browser.close()}
+ return validatePreview({schemaVersion:1,repository:'www-infinity4/QuantaPhi',baseSha,commitSha,paths,summary:summary.slice(0,500),jobId:jobId||'recorded bot repair',status,runUrl,when:new Date().toISOString(),viewport:'360x800',renderMode:'isolated-source-component',note:'Exact before/after source rendered with disconnected service fixtures. These images do not prove live deployment or wallet behavior.',focus,...images});
 }

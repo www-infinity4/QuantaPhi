@@ -6,7 +6,7 @@ const host=document.getElementById('bubblesAICard');
 if(!host)return;
 // The tool gateway delegates ordinary chat to Oracle /v1/chat.
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
-const TICKETS='https://infinity-work-tickets.marvaseater.workers.dev';
+const TICKETS='https://infinity-brain-clock.marvaseater.workers.dev';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
 const params=new URLSearchParams(location.search);
 const embedded=params.get('embed')==='1'&&window.parent!==window;
@@ -42,7 +42,7 @@ let keepChat=data(KEEP_HISTORY,false)===true;
 let messages=keepChat?data(HISTORY,[]):[];
 if(!Array.isArray(messages))messages=[];
 messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)}));
-let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerReady=false,showing=false;
+let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
 const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias})||null;
@@ -112,6 +112,7 @@ const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mi
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
 const send=create('button','ba-send','Send');send.type='submit';
 actions.append(mic,speak,send);composer.append(input,actions);
+const privateLabel=create('label','ba-muted'),privateContext=create('input');privateContext.type='checkbox';privateContext.checked=config.privateContext===true;privateLabel.append(privateContext,create('span','',' Use my private Quant-AI selling defaults'));privateContext.addEventListener('change',()=>{config.privateContext=privateContext.checked;save(CONFIG,config)});composer.append(privateLabel);
 const tools=create('details','ba-tools');const summary=create('summary','','Notes & authorized work');tools.append(summary);
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
@@ -231,11 +232,11 @@ function toggle(open){
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
-launcher.addEventListener('click',()=>{if(dragSuppressed){dragSuppressed=false;return}if(!voiceEnabled){void startVoice();return}toggle(!showing)});
+launcher.addEventListener('click',()=>{if(dragSuppressed){dragSuppressed=false;return}toggle(!showing)});
 launchCard.addEventListener('click',()=>{toggle(true);if(!voiceEnabled)void startVoice()});
 close.addEventListener('click',()=>toggle(false));
 function extract(reply){
- let value=reply?.output_text??reply?.output??reply?.response??reply?.answer??reply?.content??reply?.message??'';
+ let value=reply?.reply??reply?.output_text??reply?.output??reply?.response??reply?.answer??reply?.content??reply?.message??'';
  if(Array.isArray(value))value=value.map(x=>x?.text||'').join('\n');
  if(value&&typeof value==='object')value=value.text||value.content||'';
  return String(value||'').trim();
@@ -253,8 +254,7 @@ async function sendMessage(text){
  'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Speak in calm, natural British English. Keep spoken answers concise and conversational. For a task, explain the actual result and next step; distinguish completed, queued and blocked work. Reply directly in plain text.'].join('\n\n');
  try{
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),22000);
-  let response;try{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})})}finally{clearTimeout(timer)}
-  const json=await response.json().catch(()=>({}));
+  let response,json;try{if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.error||'Oracle conversation failed'));
   const answer=extract(json);if(!answer)throw Error('The AI returned no spoken or written reply');
   messages.push({role:'assistant',text:answer});messages=messages.slice(-20);persistChat();
@@ -430,22 +430,25 @@ async function getOwnerToken(){
 }
 (async()=>{
  if(embedded)return;
- const token=await getOwnerToken();if(!token)return;
- try{const response=await fetch(BRAIN+'/health',{headers:{Authorization:'Bearer '+token},cache:'no-store',signal:AbortSignal.timeout(12000)});
- if(response.ok){ownerToken=token;ownerReady=true;workButton.hidden=false;workStatus.textContent='Verified owner access to Robot Brain inbox. Each work ticket still requires your tap; a ticket is not a merged GitHub change.'}}
- catch{ /* No privileged controls are shown without server verification. */ }
+ const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
+ if(!headers)return;
+ ownerHeaders=headers;ownerReady=true;workButton.hidden=false;workStatus.textContent='Robot Brain connected to your verified owner session. Tap to queue a work request.';
 })();
 workButton.addEventListener('click',async()=>{
- if(!ownerReady||!ownerToken)return;
+ if(!ownerReady||!ownerHeaders)return;
  const request=workText.value.trim();if(!request){workStatus.textContent='Describe the repository work to authorize first.';return}
  workButton.disabled=true;workStatus.textContent='Sending your approved task to the owner inbox…';
  try{
   const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(request));
   const submission=[...new Uint8Array(digest)].map(n=>n.toString(16).padStart(2,'0')).join('');
-  const response=await fetch(TICKETS+'/v1/tickets/create',{method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(30000),body:JSON.stringify({owner_token:ownerToken,source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,context:{kind:'bubbles-approved-work',submission_id:submission,requested_role:config.role,approval:'explicit-click',repository_writes:'require-github-authorization'}})});
+  const response=await fetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},signal:AbortSignal.timeout(30000),body:JSON.stringify({source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,context:{kind:'robot-directions',submission_id:submission,requested_role:config.role,approval:'explicit-click',repository_writes:'require-github-authorization'}})});
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||result.message||'No confirmed ticket'));
-  workStatus.textContent='Work ticket '+result.ticket.id+' saved to Cloudflare. This does not mean code was changed, merged or deployed.';
+  const job={id:'TASK-1',agent:'greenbeans',color:'green',team:['greenbeans','pink-panther','purple-pearl'],repository:'www-infinity4/QuantaPhi',status:'queued',title:request.slice(0,180),instructions:request,acceptance:['Implement the requested source behavior and pass focused regression checks. Report missing runtime verification separately.'],dependencies:[]};
+  const updated=await fetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},signal:AbortSignal.timeout(20000),body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify([job]),context:{...result.ticket.context,color_jobs:[job]}})});
+  const ready=await updated.json();if(!updated.ok||!ready.ok)throw Error(ready.error||'Ticket saved but not ready; open Robot Brain to finish routing.');
+  workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs:[job]}}));
+  workStatus.textContent='Work ticket '+result.ticket.id+' is ready for the authenticated build runner. Follow its real progress in Robot Brain.';
  }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145)}
  finally{workButton.disabled=false}
 });

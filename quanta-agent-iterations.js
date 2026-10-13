@@ -78,31 +78,39 @@ const brainHeaders=await (window.QuantaBrainOwner?window.QuantaBrainOwner.ready:
  const engineStatus=ui('p','','Cross-repository executor: checking actual runner connections.');
  const previewStatus=ui('p','','Waiting for a real bot commit with before-and-after evidence.');previewStatus.setAttribute('role','status');
  const previewLinks=ui('div','qai-preview-links'),previewPortals=ui('div','qai-preview-portals');
- const previewImages={},previewScrolls={};
+ const previewImages={},previewScrolls={};let focus=null;
+ function autoFocus(){if(!focus)return;for(const side of ['before','after']){const img=previewImages[side],box=previewScrolls[side];if(!img.naturalWidth||!box.clientWidth)return;const scale=Math.min(3,Math.max(1,1/Math.max(.34,focus.width)));img.style.width=(scale*100)+'%';img.style.maxWidth='none';zoom.value=String(Math.round(scale*100));box.scrollLeft=Math.max(0,(focus.x+focus.width/2)*img.clientWidth-box.clientWidth/2);box.scrollTop=Math.max(0,(focus.y+focus.height/2)*(focus.imageHeight||img.naturalHeight)*img.clientWidth/(focus.imageWidth||img.naturalWidth)-box.clientHeight/2);}}
  for(const side of ['before','after']){
   const portal=ui('figure','qai-preview-portal'),label=ui('figcaption','',side==='before'?'Before · original source':'After · bot source');
   const scroll=ui('div','qai-preview-scroll'),image=ui('img','');image.alt=side+' repair source preview';image.hidden=true;
   scroll.append(image);portal.append(label,scroll);previewPortals.append(portal);previewImages[side]=image;previewScrolls[side]=scroll;
   scroll.addEventListener('scroll',()=>{if(previewLocked)return;previewLocked=true;const other=previewScrolls[side==='before'?'after':'before'];other.scrollTop=scroll.scrollTop;other.scrollLeft=scroll.scrollLeft;requestAnimationFrame(()=>{previewLocked=false})});
  }
- const zoomLabel=ui('label','','Zoom both views '),zoom=ui('input','');zoom.type='range';zoom.min='100';zoom.max='250';zoom.value='100';zoom.setAttribute('aria-label','Zoom both page views');
+ const zoomLabel=ui('label','','Zoom both views '),zoom=ui('input','');zoom.type='range';zoom.min='100';zoom.max='300';zoom.value='100';zoom.setAttribute('aria-label','Zoom both page views');
  zoom.addEventListener('input',()=>Object.values(previewImages).forEach(img=>{img.style.width=zoom.value+'%';img.style.maxWidth='none'}));zoomLabel.append(zoom);
  const expand=ui('button','','Expand both views');expand.type='button';
  expand.addEventListener('click',()=>{const expanded=previewBox.classList.toggle('qai-preview-expanded');expand.textContent=expanded?'Close expanded views':'Expand both views';expand.setAttribute('aria-expanded',String(expanded))});
- previewBox.append(previewHeading,engineStatus,previewSelect,previewStatus,previewLinks,zoomLabel,expand,previewPortals,ui('small','','Pinned source previews use disconnected service fixtures. Live verification is shown separately; images alone do not prove a repair works.'));
+ const previous=ui('button','','Previous improvement'),next=ui('button','','Next improvement'),fit=ui('button','','Focus on change'),collect=ui('button','','Collect verified earnings');for(const b of [previous,next,fit,collect])b.type='button';
+ previous.addEventListener('click',()=>{const i=previewRows.findIndex(x=>x.commitSha===previewSelected);if(i+1<previewRows.length)selectPreview(previewRows[i+1].commitSha)});
+ next.addEventListener('click',()=>{const i=previewRows.findIndex(x=>x.commitSha===previewSelected);if(i>0)selectPreview(previewRows[i-1].commitSha)});fit.addEventListener('click',autoFocus);
+ collect.addEventListener('click',()=>{window.dispatchEvent(new CustomEvent('quantaphi:collect-bot-earnings'));previewStatus.textContent='Checking verified work receipts. 1 Quant per qualifying repair or 1 StarCoin per qualifying page build; viewing never pays twice.'});
+ const archive=ui('button','','Saved visual evidence'),archiveList=ui('div','qai-evidence-files');archive.type='button';archiveList.hidden=true;let cursor=null;
+ async function showArchive(more=false){archive.disabled=true;try{const r=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/work/evidence/list'+(more&&cursor?'?cursor='+encodeURIComponent(cursor):''),{headers:brainHeaders,cache:'no-store',signal:AbortSignal.timeout(15000)});const d=await r.json();if(!r.ok||!d.ok)throw Error(d.error||'Evidence folder unavailable');if(!more)archiveList.replaceChildren();archiveList.hidden=false;cursor=d.cursor;for(const file of d.objects.filter(x=>/\.(png|jpe?g)$/.test(x.key))){const b=ui('button','',file.key);b.type='button';b.addEventListener('click',async()=>{try{const response=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/work/evidence?key='+encodeURIComponent(file.key),{headers:brainHeaders,signal:AbortSignal.timeout(15000)});if(!response.ok)throw Error('Saved capture unavailable');const blob=await response.blob(),url=URL.createObjectURL(blob),image=ui('img','');image.src=url;image.alt=file.key;image.style.maxWidth='100%';const old=archiveList.querySelector('img');if(old){URL.revokeObjectURL(old.src);old.remove()}archiveList.prepend(image);}catch(e){previewStatus.textContent=e.message}});archiveList.append(b)}if(cursor){const moreButton=ui('button','','More saved captures');moreButton.type='button';moreButton.addEventListener('click',()=>{moreButton.remove();showArchive(true)});archiveList.append(moreButton)}if(!d.objects.length)archiveList.append(ui('p','','No captures have been archived yet.'));}catch(e){previewStatus.textContent=e.message}finally{archive.disabled=false}}
+ archive.addEventListener('click',()=>showArchive());const nav=ui('div','qai-preview-links');nav.append(previous,next,fit,collect,archive);previewBox.append(archiveList);
+ previewBox.append(nav,previewHeading,engineStatus,previewSelect,previewStatus,previewLinks,zoomLabel,expand,previewPortals,ui('small','','Pinned source previews use disconnected service fixtures. Live verification is shown separately; images alone do not prove a repair works.'));
  $('.qai-brain').append(previewBox);
  async function selectPreview(sha){
   if(!/^[a-f0-9]{40}$/.test(sha||''))return;
-  previewSelected=sha;previewSelect.value=sha;if(previewLoaded===sha)return;
+  previewSelected=sha;previewSelect.value=sha;const selectedIndex=previewRows.findIndex(x=>x.commitSha===sha);next.disabled=selectedIndex<=0;previous.disabled=selectedIndex>=previewRows.length-1;if(previewLoaded===sha){autoFocus();return;}
   previewStatus.textContent='Loading exact before-and-after source views…';
   try{
    const response=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/work/preview?sha='+sha,{headers:brainHeaders,cache:'no-store',signal:AbortSignal.timeout(15000)});
    if(!response.ok)throw Error('Preview HTTP '+response.status);const {preview:p}=await response.json();
    if(previewSelected!==sha)return;
    if(p?.commitSha!==sha||!p.baseSha||!['before','after'].every(side=>typeof p[side]==='string'&&p[side].length<=60000&&/^data:image\/jpeg;base64,[A-Za-z0-9+/]+={0,2}$/.test(p[side])))throw Error('Preview evidence is invalid');
-   for(const side of ['before','after']){previewImages[side].src=p[side];previewImages[side].hidden=false;previewScrolls[side].scrollTop=0;}
-   previewLoaded=sha;
-   previewStatus.textContent=(p.status==='deployed_verified'?'Live repair verified':'Source preview · live behavior not verified')+' · '+p.summary;
+   focus=p.focus||null;fit.disabled=!focus;for(const side of ['before','after']){previewImages[side].onload=autoFocus;previewImages[side].style.width='100%';previewImages[side].src=p[side];previewImages[side].hidden=false;previewScrolls[side].scrollTop=0;}
+   previewLoaded=sha;requestAnimationFrame(autoFocus);
+   previewStatus.textContent=(p.status==='deployed_verified'?'Live repair verified':'Source preview · live behavior not verified')+' · '+p.summary+(focus?' · Both views focused on measured visual changes.':' · No measured visual difference; full views shown.')+(p.archive?' · Visual evidence saved in Cloudflare.':' · Older evidence awaiting archive.');
    previewLinks.replaceChildren(makeLink('Before '+p.baseSha.slice(0,8),'https://github.com/'+p.repository+'/tree/'+p.baseSha),makeLink('After '+sha.slice(0,8),'https://github.com/'+p.repository+'/commit/'+sha),makeLink('Changed files','https://github.com/'+p.repository+'/compare/'+p.baseSha+'...'+sha));
    if(p.runUrl)previewLinks.append(makeLink('Runner / tests',p.runUrl));
   }catch(e){if(previewSelected===sha)previewStatus.textContent='Preview unavailable: '+e.message;}
@@ -119,7 +127,7 @@ const brainHeaders=await (window.QuantaBrainOwner?window.QuantaBrainOwner.ready:
    if(!rows.length){previewSelect.append(ui('option','','No visual repair receipts yet'));return;}
    for(const row of rows){const option=ui('option','',row.repository.split('/')[1]+' · '+row.summary);option.value=row.commitSha;previewSelect.append(option);}
    // Follow new work automatically unless the owner is inspecting an older repair.
-   const selected=!previewSelected||previewSelected===oldNewest?rows[0].commitSha:rows.some(x=>x.commitSha===previewSelected)?previewSelected:rows[0].commitSha;
+   const selected=!previewSelected?rows[rows.length-1].commitSha:previewSelected===oldNewest?rows[0].commitSha:rows.some(x=>x.commitSha===previewSelected)?previewSelected:rows[0].commitSha;
    previewSelect.value=selected;await selectPreview(selected);
   }catch(e){if(!previewLoaded)previewStatus.textContent='No visual evidence available: '+e.message;}
   finally{previewBusy=false;}

@@ -5,5 +5,6 @@ export function validatePreview(p){
  !Array.isArray(p.paths)||!p.paths.length||p.paths.length>12||p.paths.some(x=>typeof x!=='string'||x.startsWith('/')||x.includes('..')||x.includes('\\')||/^(?:\.git|\.env|\.github)(?:[.\/]|$)/.test(x))||
  typeof p.summary!=='string'||p.summary.length>500)throw Error('preview_metadata_rejected');
  for(const side of ['before','after'])if(typeof p[side]!=='string'||p[side].length>60000||!/^data:image\/jpeg;base64,[A-Za-z0-9+/]+={0,2}$/.test(p[side]))throw Error('preview_image_rejected');
+ if(p.focus!==undefined&&p.focus!==null){const f=p.focus;if(!['x','y','width','height'].every(k=>Number.isFinite(f[k]))||f.x<0||f.y<0||f.width<=0||f.height<=0||f.x+f.width>1.001||f.y+f.height>1.001)throw Error('preview_focus_rejected');}
  return p;
 }
