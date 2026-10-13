@@ -12,7 +12,7 @@ bubble over other apps while its visible microphone session is active.
   Say **“Bubbles, explain Quants”**. Follow-up phrases are recognized for 30
   seconds; otherwise unrelated speech is discarded. Say **“Bubbles go quiet”**
   to mute. Long-press the bubble to mute, tap it to unmute.
-- Android's speech-recognition service converts audio to text. The app sends
+- One continuous AudioRecord stream feeds the bundled Vosk small English model locally. The microphone stays open across utterances and while Bubbles speaks. Speaker-echo transcripts are discarded during replies; speaking interruption is not implemented. The app sends
   only addressed text to QuantaPhi's existing **Oracle Cloudflare** chat
   endpoint, then attempts spoken playback with an available British-English
   system voice. It does not send raw audio files itself.
@@ -23,17 +23,16 @@ bubble over other apps while its visible microphone session is active.
   replies do not prove that tools were run or actions were completed.
 
 ## Boundaries
-- Android may limit speech recognizer background operation, foreground service
+- Android may limit microphone background operation, foreground service
   launches, overlays on sensitive screens, microphone concurrency and battery
-  behavior. **Continuous listening is best effort**, not a promised phone-call
+  behavior. The microphone is continuous while the explicitly started foreground session remains active; Android can still interrupt it. This is not a promised phone-call
   or guaranteed unattended hot mic.
 - Neither the web bubble nor an ordinary PWA can float above another app.
   The native app is necessary for that. An embed can only follow the user
   within website pages that include the Bubbles script.
-- This debug build is **not signed for distribution** and is not published to
+- This debug build uses a debug signature and is **not release-signed for distribution** and is not published to
   the Play Store. It needs live testing on an Android device before production.
-- Speech recognition can involve Android's speech provider; this is not
-  guaranteed on-device speech processing. No private API keys are embedded.
+- Speech recognition uses bundled Vosk 0.3.75 and the Apache-2.0 vosk-model-small-en-us-0.15 model offline. Addressed text still goes to Oracle for replies. No raw audio or private API keys are uploaded. The model is downloaded from its official versioned HTTPS URL at build time; dependencies/model should be reviewed before release.
 - There is no phone-dialer/VoIP call or background phone call. “Call” means
   an active, clearly visible and user-authorized assistant session.
 - OpenAI/Claude model access requires separate properly authenticated API or

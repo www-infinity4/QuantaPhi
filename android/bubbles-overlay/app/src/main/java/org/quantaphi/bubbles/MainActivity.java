@@ -39,7 +39,7 @@ public final class MainActivity extends Activity {
         layout.addView(title);
 
         TextView copy = new TextView(this);
-        copy.setText("A floating voice companion, available while other apps are open.\n\nAllow the microphone and the Android overlay permission once. Bubbles then listens for its name—no push-to-talk call button.\n\nYou will see an ongoing microphone notification. Say “Bubbles go quiet” or long-press the orb to mute. Tap the orb to reconnect.");
+        copy.setText("A floating voice companion, available while other apps are open.\n\nAllow the microphone and Android overlay permission once, then enable Bubbles. The microphone stays open during your session; speech is recognized offline. Drag the orb to move it over other apps.\n\nYou will see an ongoing microphone notification. Say “Bubbles go quiet” or long-press the orb to mute. Tap it to resume, or use Stop to release the microphone. While Bubbles speaks, audio still reaches the local microphone meter but transcripts are discarded to avoid speaker echo.");
         copy.setTextColor(Color.rgb(202, 242, 235));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
@@ -166,4 +166,5 @@ public final class MainActivity extends Activity {
         checkAndStart();
     }
 }
+
 

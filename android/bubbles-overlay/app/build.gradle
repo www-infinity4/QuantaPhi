@@ -8,11 +8,70 @@ android {
         applicationId 'org.quantaphi.bubbles'
         minSdk 26
         targetSdk 35
-        versionCode 1
-        versionName '0.1.0'
+        versionCode 2
+        versionName '0.2.0'
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
 }
+
+dependencies {
+    implementation 'net.java.dev.jna:jna:5.18.1@aar'
+    implementation 'com.alphacephei:vosk-android:0.3.75@aar'
+}
+
+// Bundle the versioned, Apache-2.0 small English model so the phone does not
+// require a provider account or a first-run model download.
+def voiceAssets = layout.buildDirectory.dir('generated/voice-assets')
+android.sourceSets.main.assets.srcDir(voiceAssets)
+tasks.register('prepareOfflineVoice') {
+    outputs.dir(voiceAssets)
+    doLast {
+        def archive = layout.buildDirectory.file('voice-model-0.15.zip').get().asFile
+        archive.parentFile.mkdirs()
+        if (!archive.exists()) {
+            def connection = new URL('https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip').openConnection()
+            connection.connectTimeout = 30000
+            connection.readTimeout = 60000
+            try {
+                connection.inputStream.withCloseable { source ->
+                    archive.withOutputStream { target ->
+                        byte[] bytes = new byte[65536]
+                        long total = 0
+                        int count
+                        while ((count = source.read(bytes)) != -1) {
+                            total += count
+                            if (total > 100 * 1024 * 1024) throw new GradleException('Voice model exceeds size limit')
+                            target.write(bytes, 0, count)
+                        }
+                    }
+                }
+            } catch (Exception error) { archive.delete(); throw error }
+        }
+        def destination = voiceAssets.get().asFile
+        new java.util.zip.ZipFile(archive).withCloseable { zip ->
+            zip.entries().each { entry ->
+                def prefix = 'vosk-model-small-en-us-0.15/'
+                if (!entry.name.startsWith(prefix)) throw new GradleException('Unexpected voice model entry')
+                def relative = entry.name.substring(prefix.length())
+                def output = new File(destination, 'model-en-us/' + relative)
+                def root = new File(destination, 'model-en-us').canonicalPath + File.separator
+                if (relative && !output.canonicalPath.startsWith(root)) throw new GradleException('Unsafe voice model path')
+                if (entry.directory) output.mkdirs()
+                else {
+                    output.parentFile.mkdirs()
+                    zip.getInputStream(entry).withCloseable { source -> output.withOutputStream { it << source } }
+                }
+            }
+        }
+        def model = new File(destination, 'model-en-us')
+        for (def required : ['am/final.mdl', 'conf/model.conf', 'graph/HCLr.fst']) {
+            if (!new File(model, required).isFile()) throw new GradleException('Incomplete voice model: ' + required)
+        }
+        new File(model, 'uuid').text = 'vosk-small-en-us-0.15'
+    }
+}
+tasks.named('preBuild').configure { dependsOn('prepareOfflineVoice') }
+
