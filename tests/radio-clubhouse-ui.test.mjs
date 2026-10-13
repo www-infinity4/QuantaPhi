@@ -57,7 +57,8 @@ test('Radio Clubhouse browser refresh, archive labels, pending rewards and BFCac
   assert.deepEqual(find(mount,'rc-topic').map(x=>x.dataset.topicId),['9']);
   assert.equal(find(mount,'rc-new').length,1);
   find(mount,'rc-secondary')[0].listeners.click();
-  assert.equal(credits.length,1);
+  assert.equal(credits.length,2); // successful Share and Star each submit one receipt
+  assert.deepEqual(credits.map(x=>x[0]),['share','star']);
   assert.match(find(mount,'rc-notice')[0].textContent,/pending/);
   assert.ok(typeof poll==='function');
   assert.ok(typeof listeners.get('pageshow')==='function');
