@@ -1,5 +1,5 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
-function router(upstream){const scope={URL,URLSearchParams,Request,Response,Headers,AbortController,setTimeout,clearTimeout,fetch:async req=>upstream(req)};vm.createContext(scope);vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace('export default','globalThis.worker='),scope);return scope.worker;}
+function router(upstream){const scope={URL,URLSearchParams,Request,Response,Headers,AbortController,setTimeout,clearTimeout,fetch:async req=>upstream(req)};vm.createContext(scope);vm.runInContext(fs.readFileSync('workers/quantaphi-site/worker.js','utf8').replace(/^import \{videoAPI\} from '\.\/video-api\.mjs';\s*/m,"const videoAPI=()=>{throw Error('Video route requires its dedicated API fixture')};\n").replace('export default','globalThis.worker='),scope);return scope.worker;}
 test('served wallet client keeps the old-origin recovery frame and accepts its authenticated reply',async()=>{
  const worker=router(()=>new Response(fs.readFileSync('cloud-wallet-client.js','utf8'),{headers:{'content-type':'application/javascript'}}));
  const source=await (await worker.fetch(new Request('https://quantaphi.org/cloud-wallet-client.js'))).text();
