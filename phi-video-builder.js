@@ -76,3 +76,5 @@ preview.onclick=()=>run(false);exportButton.onclick=()=>run(true);stop.onclick=(
 for(const el of [prompt,title,duration])el.addEventListener('change',()=>{if(plan&&!busy){invalidate();status.textContent='Settings changed. Create video again to prepare the updated animation.'}});
 root.PhiVideoBuilder={...api,get:()=>({plan,busy,sourceCount:sources.length}),stopPreview(){if(running)cancelled=true}};
 })(typeof window==='undefined'?globalThis:window);
+
+if(typeof document!=="undefined"&&document.getElementById("phiVideoBuilder")){const imagineScript=document.createElement("script");imagineScript.src="/phi-imagine-video.js?v=20261013-imagine1";document.head.append(imagineScript);}
