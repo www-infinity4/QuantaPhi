@@ -57,3 +57,17 @@
  #infinityConcepts .icp-actions{grid-template-columns:1fr 1fr}
  #infinityConcepts .icp-share{grid-column:1/-1}
 }
+
+/* Match the shared Oracle Octaves card rather than a separate dark skin. */
+#infinityConcepts{color:#2b1e33;max-width:900px;margin:14px auto 18px}
+#infinityConcepts .icp-shell{max-width:900px;background:#fffdf8;color:#2b1e33;border:1px solid #ceb5e6;border-radius:22px;box-shadow:0 8px 25px #3a203315;padding:18px}
+#infinityConcepts .icp-shell:before{display:none}
+#infinityConcepts h2{color:#322536;font-size:24px}
+#infinityConcepts .icp-brand,#infinityConcepts .icp-section-label{color:#492277}
+#infinityConcepts .icp-tag{background:#f7efe8;color:#665044;border-color:#e3d0c1}
+#infinityConcepts .icp-demonstration,#infinityConcepts .icp-explanation{background:#fff8ef;color:#332839;border-color:#e3d0c1;box-shadow:none}
+#infinityConcepts .icp-next,#infinityConcepts .icp-action{background:#492277;color:#fff;border:1px solid #492277;border-radius:999px;min-height:44px;box-shadow:none}
+#infinityConcepts summary,#infinityConcepts a{color:#492277}
+#infinityConcepts .icp-fine,#infinityConcepts .icp-status,#infinityConcepts .icp-reward-status{color:#71635c}
+#infinityConcepts .icp-safety{background:#fff0d9;color:#543b26}
+#infinityConcepts .icp-art{display:block;width:100%;max-height:620px;object-fit:contain;border-radius:16px;margin:15px 0;background:#f7efe1}

@@ -15,6 +15,14 @@ const CLUB_ARCHIVE=[
  {id:'447115',title:'Contact cleaner recommendation?',author:'DWSmith',publishedAt:'2025-04-15',snippet:'A member requests advice about cleaning contacts on radios and test equipment.'},
  {id:'445985',title:'The Martin Family mystery, solved?',author:'Eric H',publishedAt:'2025-03-07',snippet:'Members discuss news about a longstanding disappearance in Oregon.'}
 ].map(t=>({...t,url:CLUB_BASE+'viewtopic.php?t='+t.id,updated:null,archived:true}));
+
+const CURATED_READS=[
+ {id:'429710',title:'Building from kits',author:'smithdoor',publishedAt:'2023-08-29',category:'Radio Clubhouse · electronics memories',snippet:'Builders recall putting together Heathkit, Knight and other kits, including the test equipment that equipped repair shops.'},
+ {id:'372892',title:'Philco 40-190 Tips for absolute beginner',author:'ScottH7a9',publishedAt:'2020-02-22',category:'Radio restoration',snippet:'A beginner inherits a Philco console with missing tubes, and forum members discuss service information and how to begin restoration.'},
+ {id:'414080',title:'Sony 5-307uw TV repair questions',author:'Alex',publishedAt:'2022-06-14',category:'Vintage television',snippet:'A restorer asks about the challenges of a compact Sony television; replies discuss its unusual components and careful repair work.'},
+ ...CLUB_ARCHIVE.filter(x=>['447116','447344','445985'].includes(x.id))
+].map(t=>({...t,url:CLUB_BASE+'viewtopic.php?t='+t.id,archived:true,updated:null}));
+
 const CLUB_EXCLUDED_IDS=new Set(['392271']); // Known pinned shipping megathread, not a new story.
 function clubText(value){
  return String(value||'').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g,'$1')
@@ -149,6 +157,7 @@ async function radioClubhouseFeed(request){
 export default {
  async fetch(request){
   const url=new URL(request.url);
+  if(url.pathname==='/api/radio-reads'&&request.method==='GET')return Response.json({ok:true,source:'Antique Radio Forums · curated historical reads',sourceUrl:CLUB_FORUM_URL,checkedAt:new Date().toISOString(),feedType:'archive',archived:true,topics:CURATED_READS},{headers:{'Access-Control-Allow-Origin':'*','Cache-Control':'public, max-age=0, s-maxage=300','X-Content-Type-Options':'nosniff'}});
   if(url.pathname!=='/api/radio-clubhouse')return Response.json({ok:false,error:'not_found'},{status:404,headers:{'Access-Control-Allow-Origin':'*'}});
   return radioClubhouseFeed(request);
  }

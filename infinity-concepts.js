@@ -14,7 +14,7 @@
   const deepLink=e=>'https://quantaphi.org/#infinity-concept-'+slug(e.id);
   const cardData=e=>({
     key:conceptKey(e),type:'Physics Experiment',title:e.title,story:String(e.description||'')+'\n'+String(e.principle||''),
-    media:'',sourceUrl:url(e.sources?.[0]?.url),experimentId:String(e.id),number:e.number
+    media:e.id==='physics-001'?'https://quantaphi.org/assets/julius-balloon-001.jpg':url(e.imageUrl),sourceUrl:url(e.sources?.[0]?.url),experimentId:String(e.id),number:e.number
   });
   const creditStatus=(receipt,action)=>receipt?.pending
     ?action+' action saved; +0.1 StarCoin awaits ledger confirmation.'
@@ -58,6 +58,8 @@
       current=(current+1)%entries.length;render();mount.scrollIntoView({block:'start',behavior:'auto'});
     });
     add(shell,node('h2','',e.title));
+    const art=e.id==='physics-001'?'/assets/julius-balloon-001.jpg':url(e.imageUrl);if(art){const image=add(shell,node('img','icp-art'));image.src=art;image.alt='Original Infinity Julius Miller illustration · '+e.title;image.loading='lazy';}
+
     const labels=add(shell,node('div','icp-labels'));
     add(labels,node('span','icp-tag','Physics experiment'));
     add(labels,node('span','icp-tag','Guide: '+String(e.character||'Oracle')));

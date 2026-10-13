@@ -43,3 +43,5 @@
  #radioClubhouse .rc-topic h3{font-size:17px}
 }
 @media(prefers-reduced-motion:reduce){#radioClubhouse .rc-actions .rc-button{transition:none}}
+
+#radioClubhouse [hidden]{display:none!important}#radioClubhouse .rc-topic-body{margin-top:10px}#radioClubhouse .rc-actions button{min-height:44px;border-radius:999px}

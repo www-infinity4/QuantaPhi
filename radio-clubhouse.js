@@ -46,6 +46,8 @@
  const status=add(shell,make('p','rc-status','Connecting to Radio Clubhouse…'));
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const collection=add(shell,make('div','rc-feed'));
+ const navigation=add(shell,make('div','rc-actions')),expand=add(navigation,make('button','rc-button','Expand discussion')),next=add(navigation,make('button','rc-button','Next discussion')),reads=add(navigation,make('button','rc-button','Interesting radio reads'));for(const b of [expand,next,reads])b.type='button';let deck=[],position=0,expanded=false,curated=false,deckLive=false;expand.setAttribute('aria-expanded','false');
+ expand.addEventListener('click',()=>{expanded=!expanded;expand.textContent=expanded?'Collapse discussion':'Expand discussion';expand.setAttribute('aria-expanded',String(expanded));render(deck,deckLive)});next.addEventListener('click',()=>{if(deck.length){position=(position+1)%deck.length;render(deck,deckLive)}});reads.addEventListener('click',()=>{curated=!curated;position=0;reads.textContent=curated?'Back to Clubhouse':'Interesting radio reads';load()});
  const footer=add(shell,make('footer','rc-footer'));
  add(footer,make('span','','Discussions belong to their original authors at Antique Radio Forums.'));
  const source=add(footer,make('a','','Visit Antique Radio Forums ↗'));
@@ -98,13 +100,13 @@
   current();
  }
  function render(topics,isLive,message){
-  collection.replaceChildren();
+  const selected=deck[position]?.id;deck=topics;deckLive=isLive;position=Math.max(0,topics.findIndex(x=>x.id===selected));next.disabled=topics.length<2;expand.disabled=!topics.length;collection.replaceChildren();
   if(!topics.length){
    const empty=add(collection,make('div','rc-empty',message||'No verified Radio Clubhouse discussions are available.'));
    add(empty,make('p','','Use the original forum link or refresh when the feed becomes available.'));
    return;
   }
-  for(const [i,t] of topics.entries()){
+  for(const [i,t] of topics.entries()){if(i!==position)continue;
    const article=add(collection,make('article','rc-topic'));
    article.dataset.topicId=t.id;
    const top=add(article,make('div','rc-topic-top'));
@@ -112,13 +114,15 @@
    if(t.archived)add(top,make('span','rc-archive','ARCHIVED THREAD'));
    else if(isLive&&t.isNew)add(top,make('span','rc-new','NEW TO FEED'));
    add(article,make('h3','',t.title));
-   if(t.snippet)add(article,make('p','rc-excerpt',t.snippet));
-   else add(article,make('p','rc-excerpt','Read the original Radio Clubhouse discussion and replies.'));
-   const meta=add(article,make('p','rc-meta','Source: Antique Radio Forums'));
+   const body=add(article,make('div','rc-topic-body'));body.hidden=!expanded;
+   if(t.snippet)add(body,make('p','rc-excerpt',t.snippet));
+   else add(body,make('p','rc-excerpt','Read the original Radio Clubhouse discussion and replies.'));
+   const meta=add(body,make('p','rc-meta','Source: Antique Radio Forums'));
    if(t.author)meta.append(document.createTextNode(' · '+t.author));
    if(t.updated)meta.append(document.createTextNode(' · Last activity '+formatDate(t.updated)));
    else if(t.publishedAt)meta.append(document.createTextNode(' · Posted '+t.publishedAt));
-   actions(article,t);
+   actions(body,t);
+   add(article,make('small','rc-meta','Discussion '+(position+1)+' of '+topics.length+(t.archived?' · Curated archive':'')));
   }
  }
  const isTopic=t=>t&&/^\d{1,12}$/.test(String(t.id||''))&&url(t.url)&&
@@ -143,13 +147,14 @@
    const controller=new AbortController(),stop=setTimeout(()=>controller.abort(),13000);
    let response,payload;
    try{
-    response=await fetch(ENDPOINT,{headers:{Accept:'application/json'},signal:controller.signal,cache:'no-store'});
+    response=await fetch(curated?ENDPOINT.replace('/api/radio-clubhouse','/api/radio-reads'):ENDPOINT,{headers:{Accept:'application/json'},signal:controller.signal,cache:'no-store'});
     payload=await response.json();
    }finally{clearTimeout(stop)}
    if(!response.ok||!payload?.ok)throw new Error('forum_feed_unavailable');
    const topics=normalize(payload.topics);
    if(!topics.length)throw new Error('no_valid_discussions');
    const archived=payload.archived===true||payload.feedType==='archive';
+   if(curated){render(topics,false);status.textContent='Curated historical reads from Antique Radio Forums · source dates are shown when available. These are not the latest live posts.';return;}
    if(archived){
     const snapshot=stored(SNAPSHOT,null);
     const recent=normalize(snapshot?.topics);
@@ -158,7 +163,7 @@
      status.textContent='Live forum access unavailable. Showing the last previously retrieved forum discussions ('+formatDate(new Date(snapshot.checkedAt).toISOString())+'). The archive is available if needed; these are not confirmed current.';
     }else{
      render(topics,false);
-     status.textContent='Showing '+topics.length+' VERIFIED ARCHIVED discussions (2025). The direct forum and RSS are currently inaccessible; these are not the newest live posts. Checks retry every 5 minutes.';
+     status.textContent='Showing '+topics.length+' VERIFIED ARCHIVED discussions (2025). Live access is unavailable to the feed service; these are not the newest live posts. Checks retry every 5 minutes.';
     }
     return;
    }
