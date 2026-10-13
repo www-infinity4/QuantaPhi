@@ -18,7 +18,7 @@ Daily review must use exposure as well as interaction counts. A card with few vi
 The leaderboard currently sorts live interaction totals, then views. Future page order experiments must be reversible, preserve anchors, keyboard focus, drafts and wallet behavior, and retain diversity instead of hiding low-exposure cards. Compare exposure-adjusted results over sufficient traffic. User-selected room topics only may be used for recommendations.
 
 ## Further work the owner requested
-1. Opt-in pre-room typing lobby: count people actively writing within an explicitly selected topic; then invite matching participants to join the room. No transmission of raw unsent ideas.
+1. The initial opt-in topic typing lobby is implemented. Extend topic recommendations across cards, room discovery and recoverable presence. No transmission of raw unsent ideas.
 2. Topic discovery and matching for different specific subjects, with explicit participation consent and accurate attendance.
 3. Longer books: chapter continuation, durable full history, stable recovery of coauthor credentials and editorial moderation/version rollback.
 4. Scientist/doctor groups: optional verified credentials, source ingestion and citation checking; distinguish unverified research from peer-reviewed output.
