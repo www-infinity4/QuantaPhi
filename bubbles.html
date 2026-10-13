@@ -19,6 +19,8 @@
     body.bubbles-embedded .ba-panel{right:4px!important;bottom:4px!important;width:calc(100% - 8px)!important;height:calc(100% - 8px)!important;max-height:none;min-height:0!important}
     body.bubbles-embedded .ba-tools{max-height:35%}
   </style>
+  <link rel="stylesheet" href="/bubbles-introduction.css?v=20261013-intro1">
+  <meta property="og:image" content="https://quantaphi.org/assets/bubbles-introduction.webp">
   <script>
     if(new URLSearchParams(location.search).get('embed')==='1')document.documentElement.classList.add('bubble-iframe');
     document.addEventListener('DOMContentLoaded',()=>{
@@ -31,11 +33,26 @@
 <body>
   <main class="bubbles-page">
     <a href="https://quantaphi.org/">← QuantaPhi</a>
-    <h1>Bubbles AI voice assistant</h1>
-    <p>Talk or type to Bubbles for research, writing, planning and current news. Customize its name and specialty, choose an available English voice, and embed your bubble on a website you control.</p>
-    <h2>Try a useful task</h2>
-    <ul><li>“Bubbles, get the latest news headlines.”</li><li>“Bubbles, help me write a description of my project.”</li><li>“Bubbles, plan the changes needed for my website.”</li></ul>
-    <p>News requests return source links and task status. Verified owners can review and submit repository work to Robot Brain. Creating a GitHub repository requires a separate authenticated connection; a chat reply alone does not create it.</p>
+    <section class="bubbles-intro" aria-labelledby="bubbles-title">
+      <div class="bubbles-art" role="img" aria-label="Bubbles in shades, surrounded by iridescent bubbles and a nuclear science card"></div>
+      <div class="bubbles-copy">
+        <span class="bubbles-eyebrow">ORACLE AI STUDIO · CREATED BY MOSAIC</span>
+        <h1 id="bubbles-title">Bubbles</h1>
+        <p><strong>Automated Intelligence Assistant</strong></p>
+        <p><strong>The Intelligence Architecture Solution.</strong> One lead. A team of specialists. Turn your ideas into research, stories, media and useful work.</p>
+        <div class="bubbles-actions"><a href="#bubblesAICard">Meet your assistant</a><a href="/bubbles-commercial.html">Preview the commercial</a></div>
+      </div>
+    </section>
+    <!-- Add the approved final video source here after production verification. -->
+    <video class="bubbles-video" controls playsinline preload="none" poster="/assets/bubbles-introduction.webp" hidden aria-label="Finished Bubbles commercial"></video>
+    <section class="bubbles-production" aria-labelledby="quant-ai-title">
+      <span class="bubbles-eyebrow">QUANT AI · PRODUCTION CONCEPT</span>
+      <h2 id="quant-ai-title">Automated Banking &amp; Business Agent</h2>
+      <p>A robot at the switchboard. Bubbles in motion. Quant AI’s film follows a humanoid business agent and its compact robot partner as they interpret indexed data, connect the right information and prepare useful business outputs.</p>
+      <ol><li>Read the data: hundreds of indexed words appear across a Cloudflare-inspired information wall.</li><li>Make the connections: the robots discuss meaning, then route information from A to B through a luminous switchboard.</li><li>Send Bubbles into action: specialist bubbles research, read and assemble customer-relevant advertising drafts.</li><li>Build the output: product cards, inventory proposals and order drafts appear for the business owner to review.</li></ol>
+      <p>This is the film’s planned workflow. Banking, ad placement and orders require connected services and the owner’s authorization.</p>
+      <div class="bubbles-actions"><a href="/production/quant-ai-commercial.json">View the production storyboard</a><a href="/#robotDirections">Open Robot Brain production crew</a></div>
+    </section>
     <div id="bubblesAICard"></div>
     <p><a href="/bubbles-commercial.html">Open Bubbles Commercial Studio · preview and export video</a></p>
     <p>Bubbles uses the QuantaPhi Oracle AI service. Speech recognition and local notes depend on your browser permissions and storage settings.</p>
