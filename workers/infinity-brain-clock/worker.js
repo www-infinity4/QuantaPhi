@@ -1,3 +1,4 @@
+import {sortCandidates} from './queue-order.mjs';
 import { evidenceBucket } from './evidence-db.mjs';
 import { DurableObject } from 'cloudflare:workers';
 import { authenticate, supported } from './runner-auth.mjs';
@@ -153,7 +154,7 @@ export class BrainClock extends DurableObject{
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at DESC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
    const requested=await this.ctx.storage.get('requested-next-job');
    const candidates=(rows.results||[]).flatMap(ticket=>{const context=JSON.parse(ticket.context_json);return (context.color_jobs||[]).map(job=>({ticket,jobs:context.color_jobs,job}))});
-   candidates.sort((a,b)=>Number(!(a.ticket.id===requested?.ticketId&&a.job.id===requested?.jobId))-Number(!(b.ticket.id===requested?.ticketId&&b.job.id===requested?.jobId))||Number(a.job.status==='blocked')-Number(b.job.status==='blocked')||Date.parse(a.job.progress?.attemptedAt||a.job.last_inspected_at||0)-Date.parse(b.job.progress?.attemptedAt||b.job.last_inspected_at||0));
+   sortCandidates(candidates,requested);
    for(const {ticket,jobs,job} of candidates){
     {
      if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified'].includes(job.status))continue;
