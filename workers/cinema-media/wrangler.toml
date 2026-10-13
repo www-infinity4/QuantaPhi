@@ -1,0 +1,4 @@
+name = "cinema-media"
+main = "worker.mjs"
+compatibility_date = "2026-10-13"
+routes = [{ pattern = "quantaphi.org/api/cinema-media/*", zone_name = "quantaphi.org" }]

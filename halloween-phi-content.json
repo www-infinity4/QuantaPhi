@@ -195,12 +195,13 @@
           "watchUrl": "https://archive.org/details/night_of_the_living_dead_dvd",
           "embedUrl": "https://archive.org/embed/night_of_the_living_dead_dvd",
           "imageUrl": "https://archive.org/services/img/night_of_the_living_dead_dvd",
-          "mediaUrl": "https://archive.org/download/night_of_the_living_dead_dvd/Night.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/night_of_the_living_dead_dvd",
           "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
           "checkedAt": "2026-10-13",
           "note": "George A. Romero turns an isolated farmhouse into a pressure cooker of fear. Stark photography and a relentless siege make this a landmark of independent horror.",
-          "label": "Watch full movie"
+          "label": "Watch full movie",
+          "originalMediaUrl": "https://archive.org/download/night_of_the_living_dead_dvd/Night.mp4"
         },
         {
           "id": "HouseOnHauntedHill1959",
@@ -211,10 +212,11 @@
           "watchUrl": "https://archive.org/details/HouseOnHauntedHill1959",
           "embedUrl": "https://archive.org/embed/HouseOnHauntedHill1959",
           "imageUrl": "https://archive.org/services/img/HouseOnHauntedHill1959",
-          "mediaUrl": "https://archive.org/download/HouseOnHauntedHill1959/House-On-Haunted-Hill_512kb.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/HouseOnHauntedHill1959",
           "licenseUrl": "http://creativecommons.org/licenses/by/3.0/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
-          "checkedAt": "2026-10-13"
+          "checkedAt": "2026-10-13",
+          "originalMediaUrl": "https://archive.org/download/HouseOnHauntedHill1959/House-On-Haunted-Hill_512kb.mp4"
         },
         {
           "id": "HorrorExpress",
@@ -225,10 +227,11 @@
           "watchUrl": "https://archive.org/details/HorrorExpress",
           "embedUrl": "https://archive.org/embed/HorrorExpress",
           "imageUrl": "https://archive.org/services/img/HorrorExpress",
-          "mediaUrl": "https://archive.org/download/HorrorExpress/MoviePowderPresentsHorrorExpress_512kb.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/HorrorExpress",
           "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
-          "checkedAt": "2026-10-13"
+          "checkedAt": "2026-10-13",
+          "originalMediaUrl": "https://archive.org/download/HorrorExpress/MoviePowderPresentsHorrorExpress_512kb.mp4"
         },
         {
           "id": "Nosferatu1922_58",
@@ -239,10 +242,11 @@
           "watchUrl": "https://archive.org/details/Nosferatu1922_58",
           "embedUrl": "https://archive.org/embed/Nosferatu1922_58",
           "imageUrl": "https://archive.org/services/img/Nosferatu1922_58",
-          "mediaUrl": "https://archive.org/download/Nosferatu1922_58/Nosferatu-mid-3.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/Nosferatu1922_58",
           "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
-          "checkedAt": "2026-10-13"
+          "checkedAt": "2026-10-13",
+          "originalMediaUrl": "https://archive.org/download/Nosferatu1922_58/Nosferatu-mid-3.mp4"
         },
         {
           "id": "WhiteZombie",
@@ -253,10 +257,11 @@
           "watchUrl": "https://archive.org/details/WhiteZombie",
           "embedUrl": "https://archive.org/embed/WhiteZombie",
           "imageUrl": "https://archive.org/services/img/WhiteZombie",
-          "mediaUrl": "https://archive.org/download/WhiteZombie/White_Zombie_512kb.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/WhiteZombie",
           "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
-          "checkedAt": "2026-10-13"
+          "checkedAt": "2026-10-13",
+          "originalMediaUrl": "https://archive.org/download/WhiteZombie/White_Zombie_512kb.mp4"
         },
         {
           "id": "TheLittleShopOfHorrors",
@@ -267,10 +272,11 @@
           "watchUrl": "https://archive.org/details/TheLittleShopOfHorrors",
           "embedUrl": "https://archive.org/embed/TheLittleShopOfHorrors",
           "imageUrl": "https://archive.org/services/img/TheLittleShopOfHorrors",
-          "mediaUrl": "https://archive.org/download/TheLittleShopOfHorrors/The Little Shop of Horrors.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/TheLittleShopOfHorrors",
           "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
-          "checkedAt": "2026-10-13"
+          "checkedAt": "2026-10-13",
+          "originalMediaUrl": "https://archive.org/download/TheLittleShopOfHorrors/The Little Shop of Horrors.mp4"
         }
       ]
     },
@@ -290,12 +296,13 @@
         "watchUrl": "https://archive.org/details/night_of_the_living_dead_dvd",
         "embedUrl": "https://archive.org/embed/night_of_the_living_dead_dvd",
         "imageUrl": "https://archive.org/services/img/night_of_the_living_dead_dvd",
-        "mediaUrl": "https://archive.org/download/night_of_the_living_dead_dvd/Night.mp4",
+        "mediaUrl": "https://quantaphi.org/api/cinema-media/night_of_the_living_dead_dvd",
         "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
         "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
         "checkedAt": "2026-10-13",
         "note": "George A. Romero turns an isolated farmhouse into a pressure cooker of fear. Stark photography and a relentless siege make this a landmark of independent horror.",
-        "label": "Watch full movie"
+        "label": "Watch full movie",
+        "originalMediaUrl": "https://archive.org/download/night_of_the_living_dead_dvd/Night.mp4"
       },
       "feed": {
         "title": "Antique Halloween postcards \u00b7 1900\u20131915",
@@ -392,12 +399,13 @@
           "watchUrl": "https://archive.org/details/night_of_the_living_dead_dvd",
           "embedUrl": "https://archive.org/embed/night_of_the_living_dead_dvd",
           "imageUrl": "https://archive.org/services/img/night_of_the_living_dead_dvd",
-          "mediaUrl": "https://archive.org/download/night_of_the_living_dead_dvd/Night.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/night_of_the_living_dead_dvd",
           "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
           "checkedAt": "2026-10-13",
           "note": "George A. Romero turns an isolated farmhouse into a pressure cooker of fear. Stark photography and a relentless siege make this a landmark of independent horror.",
-          "label": "Watch full movie"
+          "label": "Watch full movie",
+          "originalMediaUrl": "https://archive.org/download/night_of_the_living_dead_dvd/Night.mp4"
         },
         {
           "id": "HouseOnHauntedHill1959",
@@ -408,10 +416,11 @@
           "watchUrl": "https://archive.org/details/HouseOnHauntedHill1959",
           "embedUrl": "https://archive.org/embed/HouseOnHauntedHill1959",
           "imageUrl": "https://archive.org/services/img/HouseOnHauntedHill1959",
-          "mediaUrl": "https://archive.org/download/HouseOnHauntedHill1959/House-On-Haunted-Hill_512kb.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/HouseOnHauntedHill1959",
           "licenseUrl": "http://creativecommons.org/licenses/by/3.0/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
-          "checkedAt": "2026-10-13"
+          "checkedAt": "2026-10-13",
+          "originalMediaUrl": "https://archive.org/download/HouseOnHauntedHill1959/House-On-Haunted-Hill_512kb.mp4"
         },
         {
           "id": "HorrorExpress",
@@ -422,10 +431,11 @@
           "watchUrl": "https://archive.org/details/HorrorExpress",
           "embedUrl": "https://archive.org/embed/HorrorExpress",
           "imageUrl": "https://archive.org/services/img/HorrorExpress",
-          "mediaUrl": "https://archive.org/download/HorrorExpress/MoviePowderPresentsHorrorExpress_512kb.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/HorrorExpress",
           "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
-          "checkedAt": "2026-10-13"
+          "checkedAt": "2026-10-13",
+          "originalMediaUrl": "https://archive.org/download/HorrorExpress/MoviePowderPresentsHorrorExpress_512kb.mp4"
         },
         {
           "id": "Nosferatu1922_58",
@@ -436,10 +446,11 @@
           "watchUrl": "https://archive.org/details/Nosferatu1922_58",
           "embedUrl": "https://archive.org/embed/Nosferatu1922_58",
           "imageUrl": "https://archive.org/services/img/Nosferatu1922_58",
-          "mediaUrl": "https://archive.org/download/Nosferatu1922_58/Nosferatu-mid-3.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/Nosferatu1922_58",
           "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
-          "checkedAt": "2026-10-13"
+          "checkedAt": "2026-10-13",
+          "originalMediaUrl": "https://archive.org/download/Nosferatu1922_58/Nosferatu-mid-3.mp4"
         },
         {
           "id": "WhiteZombie",
@@ -450,10 +461,11 @@
           "watchUrl": "https://archive.org/details/WhiteZombie",
           "embedUrl": "https://archive.org/embed/WhiteZombie",
           "imageUrl": "https://archive.org/services/img/WhiteZombie",
-          "mediaUrl": "https://archive.org/download/WhiteZombie/White_Zombie_512kb.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/WhiteZombie",
           "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
-          "checkedAt": "2026-10-13"
+          "checkedAt": "2026-10-13",
+          "originalMediaUrl": "https://archive.org/download/WhiteZombie/White_Zombie_512kb.mp4"
         },
         {
           "id": "TheLittleShopOfHorrors",
@@ -464,10 +476,11 @@
           "watchUrl": "https://archive.org/details/TheLittleShopOfHorrors",
           "embedUrl": "https://archive.org/embed/TheLittleShopOfHorrors",
           "imageUrl": "https://archive.org/services/img/TheLittleShopOfHorrors",
-          "mediaUrl": "https://archive.org/download/TheLittleShopOfHorrors/The Little Shop of Horrors.mp4",
+          "mediaUrl": "https://quantaphi.org/api/cinema-media/TheLittleShopOfHorrors",
           "licenseUrl": "http://creativecommons.org/publicdomain/mark/1.0/",
           "rightsNote": "License metadata supplied by the Archive uploader; confirm this edition before commercial reuse.",
-          "checkedAt": "2026-10-13"
+          "checkedAt": "2026-10-13",
+          "originalMediaUrl": "https://archive.org/download/TheLittleShopOfHorrors/The Little Shop of Horrors.mp4"
         },
         {
           "id": "6ucWqsQj5G8",
