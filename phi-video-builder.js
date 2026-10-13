@@ -77,4 +77,4 @@ for(const el of [prompt,title,duration])el.addEventListener('change',()=>{if(pla
 root.PhiVideoBuilder={...api,get:()=>({plan,busy,sourceCount:sources.length}),stopPreview(){if(running)cancelled=true}};
 })(typeof window==='undefined'?globalThis:window);
 
-if(typeof document!=="undefined"&&document.getElementById("phiVideoBuilder")){const imagineScript=document.createElement("script");imagineScript.src="/phi-imagine-video.js?v=20261013-imagine1";document.head.append(imagineScript);}
+if(typeof document!=="undefined"&&document.getElementById("phiVideoBuilder")){const imagineScript=document.createElement("script");imagineScript.src="/phi-imagine-video.js?v=20261013-combined1";document.head.append(imagineScript);}
