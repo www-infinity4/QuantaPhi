@@ -6,3 +6,11 @@ workers_dev = true
 binding = "DB"
 database_name = "quantaphi-public-trends"
 database_id = "a763460f-dba7-422d-857d-ad7c98d512c3"
+
+[triggers]
+crons = ["0 12 * * *"]
+[[d1_databases]]
+binding = "WORK_DB"
+database_name = "rogers-consensus"
+database_id = "4aa6a463-02c6-48c3-854f-a87c0ca5f41c"
+# OWNER_HASH is configured on the deployed Worker; never commit owner partition values.
