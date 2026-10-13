@@ -1,4 +1,5 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
+import {readFileSync} from 'node:fs';
 import {rewardSchema,creditStatements} from '../workers/unified-wallet/bot-work-credit.mjs';
 import {earnedWork} from '../workers/infinity-brain-clock/bot-work-policy.mjs';
 import walletWorker from '../workers/unified-wallet/worker.js';
@@ -26,4 +27,23 @@ test('blocked work cannot earn; one added full index earns one StarCoin',()=>{
  assert.equal(earnedWork(q,{sha,files:[{filename:'new/index.html',status:'added',additions:50,patch:'+<html><title>New page</title><body>Real content</body></html>'}]}).asset,'STARCOIN');
  assert.equal(earnedWork(q,{sha,files:[{filename:'new/index.html',status:'added',additions:50,patch:'+placeholder'}]}).asset,'QUANT');
  assert.equal(earnedWork({...q,attempts:[{status:'blocked',testsPassed:false}]},{sha,files:[{}]}),null);
+});
+
+test('Quant work payout passes the real D1 mint trigger, credits the existing wallet, and remains replay-safe',()=>{
+ const plan=creditStatements({id:'botwork_real_trigger',userId:'owner',asset:'QUANT',metadata:'{"quantId":"job-quant:test","repository":"www-infinity4/QuantaPhi"}',now:123,walletId:'fallback-wallet'});
+ const python=`import sqlite3,json,sys
+p=json.loads(sys.stdin.read())
+db=sqlite3.connect(':memory:')
+db.executescript(p['quantSchema'])
+db.executescript('CREATE VIEW quant_wallet_balances AS SELECT wallet_id,COALESCE((SELECT SUM(delta) FROM quant_ledger_entries l WHERE l.wallet_id=w.wallet_id),0) balance FROM quant_wallets w;CREATE TABLE unified_token_records(token_id TEXT PRIMARY KEY,user_id TEXT,token_type TEXT,source TEXT,data_json TEXT,provenance_hash TEXT UNIQUE,created_at INTEGER);CREATE TABLE unified_wallet_events(event_id TEXT PRIMARY KEY,idempotency_key TEXT UNIQUE,user_id TEXT,asset_code TEXT,event_type TEXT,amount INTEGER,balance_after INTEGER,reference_id TEXT,metadata_json TEXT,created_at INTEGER);')
+db.execute(p['rewardSchema'])
+db.execute('INSERT INTO quant_wallets(wallet_id,user_id) VALUES(?,?)',('existing-wallet','owner'))
+for _ in range(3):
+ with db:
+  for s in p['plan']:db.execute(s['sql'],s['params'])
+mint=db.execute('SELECT mint_id,wallet_id FROM quant_mints').fetchone()
+ledger=db.execute("SELECT reference_id,wallet_id,delta FROM quant_ledger_entries WHERE entry_type='mint'").fetchone()
+print(json.dumps(dict(mints=db.execute('SELECT COUNT(*) FROM quant_mints').fetchone()[0],ledgers=db.execute('SELECT COUNT(*) FROM quant_ledger_entries').fetchone()[0],receipts=db.execute('SELECT COUNT(*) FROM bot_work_rewards WHERE paid=1').fetchone()[0],wallet=ledger[1],linked=ledger[0]==mint[0] and ledger[1]==mint[1],balance=db.execute("SELECT balance FROM quant_wallet_balances WHERE wallet_id='existing-wallet'").fetchone()[0])))`;
+ const result=JSON.parse(execFileSync('python3',['-c',python],{input:JSON.stringify({quantSchema:readFileSync('quant-transfer-schema.sql','utf8'),rewardSchema,plan}),encoding:'utf8'}));
+ assert.deepEqual(result,{mints:1,ledgers:1,receipts:1,wallet:'existing-wallet',linked:true,balance:1});
 });
