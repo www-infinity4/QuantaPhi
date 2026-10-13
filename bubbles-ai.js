@@ -6,6 +6,8 @@ const host=document.getElementById('bubblesAICard');
 if(!host)return;
 // The tool gateway delegates ordinary chat to Oracle /v1/chat.
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
+const STREAM_VOICE_URL=new URL('./bubbles-stream-voice.js?v=20261013-stream1',document.currentScript?.src||location.href).href;
+let streamVoice=null,voiceGeneration=0;
 const TICKETS='https://infinity-brain-clock.marvaseater.workers.dev';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
 const params=new URLSearchParams(location.search);
@@ -53,7 +55,7 @@ function persistChat(){
  return save(HISTORY,messages.slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)})));
 }
 const card=create('section','ba-card ba-studio-card');
-card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','A living voice bubble. Touch the bubble to allow your microphone, then say “Bubbles” and talk. It lights up when it hears you.'));
+card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','Tap Bubbles once to enable continuous listening. It glows when it hears sound. Say “Bubbles” and your request. Speech clips go to Cloudflare for transcription; silence stays on your device. Mute releases the microphone.'));
 const studioToggle=create('button','ba-control ba-studio-toggle','Customize Bubbles');studioToggle.type='button';studioToggle.setAttribute('aria-expanded','false');
 studioToggle.addEventListener('click',()=>{const open=card.dataset.expanded!=='true';card.dataset.expanded=String(open);studioToggle.setAttribute('aria-expanded',String(open));studioToggle.textContent=open?'Hide customization':'Customize Bubbles'});card.append(studioToggle);
 const edit=create('div','ba-settings');
@@ -180,7 +182,7 @@ function speakText(value){
    const voices=speechSynthesis.getVoices?.()||[];
    utterance.voice=voices.find(v=>v.voiceURI===config.voiceURI)||voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
    utterance.onstart=()=>{speaking=true;setOrbState('speaking')};
-   const finished=()=>{speaking=false;if(voiceEnabled){setOrbState('listening');beginRecognition()}else setOrbState('idle')};
+   const finished=()=>{speaking=false;if(voiceEnabled){setOrbState('listening');void streamVoice?.resume()}else setOrbState('idle')};
    utterance.onend=finished;utterance.onerror=finished;speechSynthesis.speak(utterance)
   }
  catch(error){status.textContent='Speech playback could not start: '+String(error?.message||error).slice(0,120)}
@@ -306,6 +308,7 @@ function stopMeter(){
  launcher.style.setProperty('--ba-energy','0');
 }
 function stopVoice(message){
+ voiceGeneration++;streamVoice?.stop();streamVoice=null;
  voiceResumeWanted=false;voiceEnabled=false;voicePending='';
  if(voiceRetry)clearTimeout(voiceRetry);voiceRetry=null;
  pauseRecognition();stopMeter();
@@ -326,79 +329,50 @@ function showLevel(){
  if(!busy&&!speaking)setOrbState(hearing?'hearing':'listening');
  meterFrame=window.requestAnimationFrame?.(showLevel)||0;
 }
-function beginRecognition(){
- const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;
- if(!voiceEnabled||recognition||!Recognition)return;
- const r=new Recognition();recognition=r;listening=r;
- r.lang='en-GB';r.continuous=true;r.interimResults=true;r.maxAlternatives=1;
- r.onaudiostart=()=>{tries=0;setOrbState('listening')};
- r.onsoundstart=()=>{if(!speaking){heardUntil=Date.now()+750;setOrbState('hearing')}};
- r.onspeechstart=()=>{if(!speaking){heardUntil=Date.now()+750;setOrbState('hearing');status.textContent='I can hear you…'}};
- r.onresult=event=>{
-  const from=Number(event.resultIndex||0);
-  for(let i=from;i<(event.results?.length||0);i++){
-   const result=event.results[i],transcript=String(result?.[0]?.transcript||'').trim();
-   if(!transcript)continue;
-   if(!speaking){heardUntil=Date.now()+750;setOrbState('hearing');launcher.style.setProperty('--ba-energy','1');status.textContent='Heard: '+transcript; launcher.dataset.words=String(transcript.split(/\s+/).length)}
-   if(!result.isFinal)continue;
-   // Ignore the assistant's synthesized speech. Only addressed speech becomes a request.
-   if(speaking||!voiceGate)continue;
-   const turn=voiceGate.accept(transcript,Date.now());
-   if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
-   if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';setOrbState('listening');continue}
-   if(turn.type==='message'){
-    status.textContent='Heard you · responding…';
-    if(busy)voicePending=turn.text;
-    else void sendMessage(turn.text);
-   }
-  }
- };
- r.onerror=event=>{
-  const error=String(event.error||'unknown');
-  if(error==='not-allowed'||error==='service-not-allowed'||error==='audio-capture'){
-   stopVoice('Microphone unavailable: '+error+'. Use the keyboard or allow microphone access.');return;
-  }
-  if(error!=='no-speech')status.textContent='Speech recognition: '+error+'. Reconnecting if allowed.';
- };
- r.onend=()=>{
-  if(recognition!==r)return;
-  recognition=null;listening=null;
-  if(!voiceEnabled)return;
-  if(voiceRetry)clearTimeout(voiceRetry);
-  voiceRetry=setTimeout(()=>{voiceRetry=null;beginRecognition()},Math.min(2500,300*Math.pow(1.5,Math.min(tries++,5))));
- };
- try{r.start();setOrbState('listening');status.textContent=config.alias+' is listening. Say “'+config.alias+'” and your request.'}
- catch(error){recognition=null;listening=null;stopVoice('Speech recognition could not start: '+String(error?.message||error).slice(0,110))}
+function heardTranscript(transcript){
+ if(!voiceEnabled||speaking||!voiceGate)return;
+ heardUntil=Date.now()+750;setOrbState('hearing');launcher.style.setProperty('--ba-energy','1');
+ status.textContent='Heard: '+transcript;launcher.dataset.words=String(transcript.split(/\s+/).length);
+ const turn=voiceGate.accept(transcript,Date.now());
+ if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
+ if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';return}
+ if(turn.type==='message'){if(busy)voicePending=turn.text;else void sendMessage(turn.text)}
 }
 async function startVoice(){
  if(voiceEnabled||voiceStarting)return;
- voiceStarting=true;
- // Unlock spoken output in the tap gesture, before microphone permission awaits.
+ voiceStarting=true;const generation=++voiceGeneration;
  toggle(true);
- if(config.voice)speakText('Hello, I am '+config.alias+'. Say '+config.alias+' and your request.');
- const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;
- if(!Recognition||!voiceGate){voiceStarting=false;toggle(true);status.textContent='Continuous speech recognition is not supported here. You can still type. An Android app is needed for other apps.';return}
- if(!navigator.mediaDevices?.getUserMedia){voiceStarting=false;toggle(true);status.textContent='This browser cannot request a microphone stream. Use the keyboard.';return}
+ if(!voiceGate){voiceStarting=false;status.textContent='Voice command rules did not load. Reload this page.';return}
+ if(!navigator.mediaDevices?.getUserMedia){voiceStarting=false;status.textContent='This browser cannot request a microphone. Open QuantaPhi in Chrome.';return}
  try{
   const stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
-  meterStream=stream;voiceEnabled=true;voiceResumeWanted=true;tries=0;voiceGate.reset();
-  const Ctx=window.AudioContext||window.webkitAudioContext;
-  if(Ctx&&window.requestAnimationFrame){
-   try{audioContext=new Ctx();const source=audioContext.createMediaStreamSource(stream);
-    meterAnalyser=audioContext.createAnalyser();meterAnalyser.fftSize=256;
-    source.connect(meterAnalyser);await audioContext.resume();showLevel();
-   }catch{ /* Browser recognition still works without the amplitude analyser. */ }
-  }
-  mic.textContent='🔇 Mute Bubbles';mic.setAttribute('aria-pressed','true');
-  beginRecognition();
- }catch(error){voiceResumeWanted=false;stopMeter();toggle(true);status.textContent='Microphone was not enabled: '+String(error?.name||error?.message||error).slice(0,130)}finally{voiceStarting=false}
+  if(generation!==voiceGeneration){stream.getTracks().forEach(t=>t.stop());return}
+  meterStream=stream;voiceEnabled=true;voiceResumeWanted=true;voiceGate.reset();
+  const module=window.BubblesContinuousVoice||await import(STREAM_VOICE_URL);
+  const capture=await module.startContinuousVoice({
+   stream,url:AI.replace('/v1/assist','/v1/transcribe'),isSpeaking:()=>speaking,
+   onTranscript:heardTranscript,
+   onStatus:message=>{if(voiceEnabled&&!busy&&!speaking)status.textContent=message},
+   onLevel:level=>{
+    if(!voiceEnabled)return;
+    if(level>.015)heardUntil=Date.now()+350;
+    launcher.style.setProperty('--ba-energy',String(Math.min(1,level*18)));
+    if(!busy&&!speaking)setOrbState(Date.now()<heardUntil?'hearing':'listening');
+   }
+  });
+  if(generation!==voiceGeneration){capture.stop();stream.getTracks().forEach(t=>t.stop());return}
+  streamVoice=capture;mic.textContent='🔇 Mute Bubbles';mic.setAttribute('aria-pressed','true');
+  setOrbState('listening');status.textContent='Microphone on continuously · say “'+config.alias+'” and your request.';
+  if(config.voice)speakText('I am listening. Say '+config.alias+' and your request.');
+ }catch(error){stopVoice('Microphone could not start: '+String(error?.message||error?.name||error).slice(0,130))}
+ finally{voiceStarting=false}
 }
 mic.addEventListener('click',()=>{if(voiceEnabled)stopVoice();else void startVoice()});
 document.addEventListener?.('visibilitychange',()=>{
  // Preserve the granted stream when switching tabs. Android may suspend web
  // recognition itself; reconnect the recognizer without cycling microphone permission.
  if(document.visibilityState!=='hidden'&&voiceEnabled){
-  void audioContext?.resume().catch(()=>{});beginRecognition();
+  void streamVoice?.resume().catch(()=>{});
  }
 });
 window.addEventListener?.('pagehide',()=>{if(voiceEnabled)stopVoice()});
@@ -476,4 +450,5 @@ if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 
 })();
+
 
