@@ -17,7 +17,7 @@ function harness(){
   nodes.push(n);return n;
  };
  const host=node('div'),body=node('body');
- const document={body,visibilityState:'visible',createElement:node,addEventListener(){},getElementById:id=>id==='bubblesAICard'?host:null};
+ const document={body,visibilityState:'visible',handlers:{},createElement:node,addEventListener(name,fn){this.handlers[name]=fn},getElementById:id=>id==='bubblesAICard'?host:null};
  class Recognition{
   constructor(){recognized.push(this)}
   start(){this.started=true}
@@ -60,4 +60,16 @@ test('wake window accepts follow ups and a voice mute releases microphone',async
  assert.equal(h.track.stopped,true);
  assert.equal(rec.stopped,true);
  assert.equal(h.orb.dataset.state,'idle');
+});
+
+test('background suspension resumes on return but deliberate mute stays muted',async()=>{
+ const h=harness();h.nodes.find(n=>n.textContent==='Connect Bubbles voice').handlers.click();await flush();
+ h.document.visibilityState='hidden';h.document.handlers.visibilitychange();
+ assert.equal(h.recognized[0].stopped,true);assert.equal(h.track.stopped,true);
+ h.document.visibilityState='visible';h.document.handlers.visibilitychange();await flush();
+ assert.equal(h.recognized.length,2);assert.equal(h.recognized[1].started,true);
+ h.nodes.find(n=>n.className==='ba-mic').handlers.click();
+ h.document.visibilityState='hidden';h.document.handlers.visibilitychange();
+ h.document.visibilityState='visible';h.document.handlers.visibilitychange();await flush();
+ assert.equal(h.recognized.length,2);
 });
