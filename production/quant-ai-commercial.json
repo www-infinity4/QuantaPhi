@@ -1,0 +1,71 @@
+{
+  "schema": "quant-ai-commercial/v1",
+  "status": "planned_not_submitted",
+  "product": "Quant AI",
+  "descriptor": "Automated Banking & Business Agent",
+  "studio": "Oracle AI Studio",
+  "creator": "Mosaic",
+  "duration_seconds": 35,
+  "design": "Oracle Octaves \u00b7 white / iridescent cyan blue violet",
+  "characters": "Original humanoid business robot and compact robotic partner",
+  "scenes": [
+    {
+      "seconds": "0\u20136",
+      "title": "Your data. Put to work.",
+      "action": "Original polished humanoid robot and compact partner inspect hundreds of indexed words; clean white Oracle Octaves environment."
+    },
+    {
+      "seconds": "6\u201313",
+      "title": "Understand. Connect. Act.",
+      "action": "Partner asks what the signals mean. Lead identifies context and connects luminous switchboard routes A to B."
+    },
+    {
+      "seconds": "13\u201321",
+      "title": "The right message starts with understanding.",
+      "action": "Bubbles specialists emerge to scan approved sources and assemble advertising drafts for relevant customer groups."
+    },
+    {
+      "seconds": "21\u201329",
+      "title": "From insight to business output.",
+      "action": "Robot produces product cards, inventory proposals and order drafts; owner reviews results."
+    },
+    {
+      "seconds": "29\u201335",
+      "title": "Quant AI",
+      "action": "End card: Automated Banking & Business Agent. Oracle AI Studio. Created by Mosaic."
+    }
+  ],
+  "jobs": [
+    {
+      "agent": "pipeline-architect",
+      "title": "Quant AI presentation and storyboard",
+      "instructions": "Read production/quant-ai-commercial.json. Build an Oracle Octaves presentation from its five scenes. Quant AI is an original humanoid banking/business robot, not a bubble; it dispatches Bubbles specialists. Show indexed words, semantic interpretation, switchboard routes A to B, advertising drafts, cards and inventory order drafts. Use original humanoid and compact partner designs.",
+      "acceptance": [
+        "Exact approved product descriptor and branding",
+        "Five scenes match the saved storyboard",
+        "Real integrations distinguished from illustrative outputs"
+      ]
+    },
+    {
+      "agent": "repo-script-writer",
+      "title": "Quant AI film production",
+      "instructions": "Use production/quant-ai-commercial.json to build the 35-second video and matching original robot artwork. Preserve Bubbles glass/cyan/blue/violet styling and white Oracle Octaves setting. Compose exact titles with real fonts. Do not publish an unfinished film as final or depict actual unapproved payments or orders.",
+      "acceptance": [
+        "Playable 35-second export with readable lettering",
+        "Bubbles specialists and switchboard sequence present",
+        "Artifact and production status saved"
+      ]
+    },
+    {
+      "agent": "regression-detective",
+      "title": "Verify Bubbles and Quant AI production",
+      "instructions": "Check 360px Android layout, title spelling, asset loads, video playback, and exact scene timing. Attach before/after evidence. Replace the hidden Bubbles video slot only after finished film approval and verification.",
+      "acceptance": [
+        "No mobile overflow or broken asset",
+        "Existing Bubbles assistant and embed remain functional",
+        "Final film status supported by evidence"
+      ]
+    }
+  ],
+  "execution": "Submit via Quant AI production crew in authenticated Robot Brain. Repository plan alone is not an executing job."
+}
