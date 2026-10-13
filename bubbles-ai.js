@@ -419,12 +419,16 @@ async function getOwnerToken(){
   return token||sessionStorage.getItem('infinity-work-ticket-owner-v1')||localStorage.getItem('infinity-work-ticket-owner-v1')||'';
  }catch{return ''}
 }
-(async()=>{
+async function connectOwner(){
  if(embedded)return;
  const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
  if(!headers)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=false;workStatus.textContent='Robot Brain connected to your verified owner session. Tap to queue a work request.';
-})();
+}
+void connectOwner();
+// Home loads the owner helper after this script. Deferred scripts finish before
+// DOMContentLoaded; attach to its real verification promise after load order settles.
+document.addEventListener?.('DOMContentLoaded',()=>void connectOwner(),{once:true});
 async function submitWork(request,approval='explicit-click'){
  if(!ownerReady||!ownerHeaders)throw Error('Robot Brain needs your verified owner connection.');
  if(workButton.disabled)throw Error('A work request is already being submitted.');
