@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Infinity Resonance Ratio Calculator v3 — Module 1</title>
+<style>
+/* ── Design tokens ─────────────────────────────────────────────────────── */
+:root {
+  --bg:    #07101d;
+  --p1:    #0c1828;
+  --p2:    #101e35;
+  --p3:    #152440;
+  --text:  #eef3ff;
+  --muted: #7a90b8;
+  --line:  #1e3050;
+  --cyan:  #00d4ff;
+  --gold:  #f0a830;
+  --orange:#ff8040;
+  --red:   #ff5555;
+  --green: #4ade80;
+  --purple:#a78bfa;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(ellipse 130% 55% at 50% -5%, #0e2040 0%, var(--bg) 55%);
+  color: var(--text);
+  min-height: 100vh;
+}
+.wrap { max-width: 1200px; margin: 0 auto; padding: 14px 16px 48px; }
+
+/* ── Breadcrumb nav ─────────────────────────────────────────────────────── */
+.nav {
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px 0 22px; font-size: .86rem; color: var(--muted);
+}
+.nav a { color: var(--cyan); text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+.nav-sep { opacity: .45; }
+
+/* ── Page header ────────────────────────────────────────────────────────── */
+.hdr { text-align: center; margin-bottom: 24px; }
+.hdr h1 {
+  font-size: clamp(1.35rem, 4.5vw, 2.3rem);
+  color: var(--cyan); letter-spacing: -.5px; line-height: 1.2;
+}
+.hdr .sub { color: var(--muted); margin-top: 8px; font-size: .96rem; }
+.hdr .tag {
+  display: inline-block; margin-top: 10px;
+  font-size: .75rem; font-weight: 700; padding: 3px 14px;
+  border-radius: 999px;
+  background: rgba(0,212,255,.08); border: 1px solid rgba(0,212,255,.28);
+  color: var(--cyan); letter-spacing: .4px;
+}
+
+/* ── Cards ──────────────────────────────────────────────────────────────── */
+.card {
+  background: linear-gradient(155deg, var(--p1), var(--p2));
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.32);
+}
+.card + .card { margin-top: 0; }
+
+/* section titles */
+.sec-title {
+  font-size: 1rem; font-weight: 700;
+  margin-bottom: 14px;
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.badge {
+  font-size: .68rem; font-weight: 800; padding: 3px 9px;
+  border-radius: 6px; letter-spacing: .7px; text-transform: uppercase;
+}
+.b-eng { background: rgba(0,212,255,.1);  color: var(--cyan);   border: 1px solid rgba(0,212,255,.28); }
+.b-sym { background: rgba(240,168,48,.1); color: var(--gold);   border: 1px solid rgba(240,168,48,.28); }
+.b-ra  { background: rgba(255,85,85,.1);  color: var(--red);    border: 1px solid rgba(255,85,85,.28); }
+
+/* ── Input form ─────────────────────────────────────────────────────────── */
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+.fld { display: flex; flex-direction: column; gap: 5px; }
+.fld label { font-size: .8rem; color: var(--muted); }
+.inp-row { display: flex; gap: 6px; }
+.fld input, .fld select {
+  flex: 1; min-width: 0;
+  background: #060d1a; color: var(--text);
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 9px 10px; font-size: .94rem;
+  transition: border-color .15s;
+}
+.fld input:focus, .fld select:focus {
+  outline: none; border-color: rgba(0,212,255,.55);
+}
+.fld .unit { flex: 0 0 68px; }
+.calc-btn {
+  width: 100%; padding: 12px 16px;
+  background: linear-gradient(90deg, #2b5fff, #8a3dff);
+  border: none; border-radius: 10px;
+  color: #fff; font-weight: 700; font-size: .97rem;
+  cursor: pointer; letter-spacing: .3px;
+  transition: opacity .15s;
+}
+.calc-btn:hover { opacity: .84; }
+.calc-btn:active { opacity: .7; }
+
+/* ── Two-track layout ───────────────────────────────────────────────────── */
+.tracks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.track-a { border-color: rgba(240,168,48,.38); }
+.track-b { border-color: rgba(0,212,255,.38); }
+
+/* ── Output rows (stacked label / value) ─────────────────────────────────── */
+.out-row {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+}
+.out-row:last-child { border-bottom: none; }
+.out-lbl { font-size: .79rem; color: var(--muted); margin-bottom: 3px; }
+.out-val {
+  font-size: .94rem; font-weight: 600;
+  line-height: 1.4; word-break: break-word;
+}
+/* value colour helpers */
+.vc  { color: var(--cyan); }
+.vg  { color: var(--gold); }
+.vr  { color: var(--red); }
+.vgr { color: var(--green); }
+
+/* disclaimer banners */
+.disc {
+  font-size: .78rem; line-height: 1.45;
+  padding: 8px 11px; border-radius: 8px; margin-bottom: 14px;
+}
+.disc-sym { background: rgba(240,168,48,.06); border-left: 3px solid var(--gold); color: var(--muted); }
+.disc-eng { background: rgba(0,212,255,.06);  border-left: 3px solid var(--cyan); color: var(--muted); }
+
+/* ── Visualisation grid ─────────────────────────────────────────────────── */
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.viz-title { font-size: .97rem; font-weight: 700; margin-bottom: 12px; }
+svg { width: 100%; height: auto; display: block; }
+
+/* LC tank */
+.coil-path { fill: none; stroke: var(--cyan); stroke-width: 3.5; stroke-linecap: round; }
+.fld-ring   { fill: none; stroke: var(--cyan); stroke-width: 1.5; opacity: .38; }
+.pulse-anim { animation: pulsate 1.8s ease-in-out infinite; transform-origin: 50% 50%; }
+@keyframes pulsate {
+  0%, 100% { opacity: .15; transform: scale(.87); }
+  50%       { opacity: .65; transform: scale(1.1); }
+}
+.edot { fill: var(--gold); }
+.edot-move { animation: slideDot 2.4s ease-in-out infinite; }
+@keyframes slideDot {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(116px); }
+  100% { transform: translateX(0); }
+}
+
+/* transformer */
+.pri-coil  { fill: none; stroke: var(--cyan);  stroke-width: 3.5; stroke-linecap: round; }
+.sec-coil  { fill: none; stroke: var(--green); stroke-width: 3.5; stroke-linecap: round; }
+.core-bar  { fill: #354060; }
+.flux-arc  { fill: none; stroke: var(--gold); stroke-width: 1.8; opacity: .5; }
+
+/* frequency bar */
+.fbar-bg {
+  height: 22px; background: #060d1a;
+  border-radius: 999px; overflow: hidden;
+  border: 1px solid var(--line); margin: 8px 0;
+}
+.fbar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2255ff, var(--cyan));
+  border-radius: 999px; width: 0%;
+  transition: width .35s ease;
+}
+.fbar-ticks {
+  display: flex; justify-content: space-between;
+  font-size: .68rem; color: var(--muted); margin-top: 2px;
+}
+.band-pill {
+  display: inline-block; padding: 3px 10px;
+  border-radius: 999px; font-size: .8rem; font-weight: 700;
+  background: rgba(0,212,255,.1); border: 1px solid rgba(0,212,255,.28);
+  color: var(--cyan); margin-top: 8px;
+}
+
+/* skin-depth ring */
+.ring-wrap { display: grid; place-items: center; padding: 8px 0 12px; }
+.ring {
+  width: 168px; height: 168px; border-radius: 50%;
+  background: conic-gradient(var(--cyan) var(--fill, 0%), #111d32 0);
+  display: grid; place-items: center; position: relative;
+}
+.ring::after {
+  content: ""; position: absolute;
+  width: 118px; height: 118px; border-radius: 50%;
+  background: var(--p1); border: 1px solid var(--line);
+}
+.ring-text { position: relative; z-index: 2; text-align: center; }
+.ring-val  { font-size: 1.2rem; font-weight: 800; color: var(--cyan); }
+.ring-sub  { font-size: .7rem; color: var(--muted); margin-top: 2px; }
+
+/* material path */
+.mat-path {
+  display: flex; align-items: center;
+  justify-content: center; gap: 6px;
+  flex-wrap: wrap; padding: 8px 0 12px;
+}
+.mat-chip {
+  background: var(--p3); border: 1px solid var(--line);
+  border-radius: 10px; padding: 8px 12px;
+  text-align: center; min-width: 62px;
+}
+.mat-sym { font-size: 1.35rem; font-weight: 800; line-height: 1; }
+.mat-nm  { font-size: .68rem; color: var(--muted); margin-top: 3px; }
+.mat-arrow { color: var(--muted); font-size: 1rem; }
+.chip-src  .mat-sym { color: var(--gold); }
+.chip-load .mat-sym { color: var(--cyan); }
+.chip-ruby   { border-color: rgba(220,60,60,.45); }
+.chip-ruby   .mat-sym { color: #ff7272; }
+.chip-indium { border-color: rgba(0,212,255,.38); }
+.chip-indium .mat-sym { color: var(--cyan); }
+
+/* shared note text */
+.note { font-size: .79rem; color: var(--muted); line-height: 1.45; margin-top: 8px; }
+
+/* ── Mobile overrides ────────────────────────────────────────────────────── */
+@media (max-width: 580px) {
+  .hdr h1 { font-size: 1.3rem; }
+  .controls { grid-template-columns: 1fr 1fr; }
+  .mat-path { gap: 4px; }
+  .mat-chip { min-width: 52px; padding: 6px 8px; }
+  .mat-sym  { font-size: 1.1rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── Breadcrumb ──────────────────────────────────────────────────────── -->
+  <nav class="nav" aria-label="Site navigation">
+    <a href="/">QuantaPhi</a>
+    <span class="nav-sep">›</span>
+    <span>Resonance Ratio Calculator v3 — Module 1</span>
+  </nav>
+
+  <!-- ── Header ────────────────────────────────────────────────────────────── -->
+  <header class="hdr">
+    <h1>Infinity Resonance Ratio Calculator v3</h1>
+    <div class="sub">Module 1 — Convert symbolic element ratios into real RF circuit values</div>
+    <span class="tag">Visual Field Engine</span>
+  </header>
+
+  <!-- ── Input Controls ─────────────────────────────────────────────────── -->
+  <div class="card" aria-label="Input controls">
+    <div class="sec-title">Input Controls</div>
+    <div class="controls">
+
+      <div class="fld">
+        <label for="srcSel">Source element</label>
+        <select id="srcSel"></select>
+      </div>
+
+      <div class="fld">
+        <label for="loadSel">Load element</label>
+        <select id="loadSel"></select>
+      </div>
+
+      <div class="fld">
+        <label for="zpInp">Primary impedance Zp (Ω)</label>
+        <input id="zpInp" type="number" min="0.001" step="any" value="23104" />
+      </div>
+
+      <div class="fld">
+        <label for="zsInp">Secondary impedance Zs (Ω)</label>
+        <input id="zsInp" type="number" min="0.001" step="any" value="1" />
+      </div>
+
+      <div class="fld">
+        <label for="lVal">Inductance</label>
+        <div class="inp-row">
+          <input id="lVal" type="number" min="0.000001" step="any" value="10" />
+          <select id="lUnit" class="unit">
+            <option value="uH" selected>µH</option>
+            <option value="mH">mH</option>
+            <option value="H">H</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fld">
+        <label for="cVal">Capacitance</label>
+        <div class="inp-row">
+          <input id="cVal" type="number" min="0.000001" step="any" value="22" />
+          <select id="cUnit" class="unit">
+            <option value="pF" selected>pF</option>
+            <option value="nF">nF</option>
+            <option value="uF">µF</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fld" style="align-self:end">
+        <button class="calc-btn" id="calcBtn">Calculate / Update</button>
+      </div>
+
+    </div><!-- /.controls -->
+  </div><!-- /.card -->
+
+  <!-- ── Two Tracks ─────────────────────────────────────────────────────── -->
+  <div class="tracks">
+
+    <!-- Track A — Symbolic -->
+    <div class="card track-a" aria-label="Track A symbolic output">
+      <div class="sec-title">
+        Track A — Infinity Interpretation
+        <span class="badge b-sym">Symbolic</span>
+      </div>
+      <div class="disc disc-sym">
+        This section presents a symbolic design and interpretation layer based on elemental properties.
+        Values are for conceptual exploration only and do not represent physical measurements or proven engineering outcomes.
+      </div>
+
+      <div class="out-row">
+        <div class="out-lbl">Source material</div>
+        <div class="out-val vg" id="a-src">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Load material</div>
+        <div class="out-val vg" id="a-load">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Atomic-number ratio (source ÷ load)</div>
+        <div class="out-val vg" id="a-z-ratio">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Atomic-number sum</div>
+        <div class="out-val vg" id="a-z-sum">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Atomic-mass ratio (source ÷ load)</div>
+        <div class="out-val vg" id="a-m-ratio">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Source symbolic role</div>
+        <div class="out-val vg" id="a-src-role">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Load symbolic role</div>
+        <div class="out-val vg" id="a-load-role">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Operational interpretation</div>
+        <div class="out-val vg" id="a-interp">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Suggested ruby lens</div>
+        <div class="out-val vg" id="a-ruby">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Suggested indium shield</div>
+        <div class="out-val vg" id="a-indium">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Symbolic gear-reduction interpretation</div>
+        <div class="out-val vg" id="a-gear">—</div>
+      </div>
+    </div><!-- /.track-a -->
+
+    <!-- Track B — Engineering -->
+    <div class="card track-b" aria-label="Track B engineering output">
+      <div class="sec-title">
+        Track B — Engineering Output
+        <span class="badge b-eng">Calculated</span>
+      </div>
+      <div class="disc disc-eng">
+        Calculated using standard RF engineering formulas (IEC/IEEE conventions).
+        All values assume ideal, lossless components unless otherwise noted.
+      </div>
+
+      <div class="out-row">
+        <div class="out-lbl">Transformer turns ratio (Np / Ns = √(Zp / Zs))</div>
+        <div class="out-val vc" id="b-turns">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Impedance ratio (Zp / Zs = (Np / Ns)²)</div>
+        <div class="out-val vc" id="b-imp">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">LC resonant frequency (f = 1 / 2π√LC)</div>
+        <div class="out-val vc" id="b-freq">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Free-space wavelength (λ = c / f, c = 299 792 458 m/s)</div>
+        <div class="out-val vc" id="b-wave">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Quarter wavelength (λ / 4)</div>
+        <div class="out-val vc" id="b-qwave">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">RF frequency band</div>
+        <div class="out-val vc" id="b-band">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Conductor skin-depth estimate (δ = √(ρ / πfµ₀))</div>
+        <div class="out-val vc" id="b-skin">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Material electrical classification (source)</div>
+        <div class="out-val vc" id="b-elec">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Low-voltage safety classification</div>
+        <div class="out-val vc" id="b-safety">—</div>
+      </div>
+    </div><!-- /.track-b -->
+
+  </div><!-- /.tracks -->
+
+  <!-- ── Visualisation Grid ─────────────────────────────────────────────── -->
+  <div class="viz-grid">
+
+    <!-- Viz 1 — LC Tank Animation -->
+    <div class="card">
+      <div class="viz-title">Viz 1 — LC Tank Animation</div>
+      <svg viewBox="0 0 340 175" aria-label="LC tank circuit animation">
+        <!-- Capacitor box -->
+        <rect x="16" y="54" width="64" height="68" rx="8"
+              fill="#08111f" stroke="var(--line)" stroke-width="1"/>
+        <!-- Capacitor plates -->
+        <line x1="37" y1="64" x2="37" y2="114" stroke="var(--text)" stroke-width="3.5"/>
+        <line x1="56" y1="64" x2="56" y2="114" stroke="var(--text)" stroke-width="3.5"/>
+        <!-- Charge level bar (inside cap) -->
+        <rect id="capCharge" x="38" y="68" width="17" height="0"
+              fill="rgba(0,212,255,.35)" rx="1" style="transform-box:fill-box;transform-origin:bottom"/>
+        <!-- Inductor coil -->
+        <path d="M106 88 C116 60,134 116,144 88 S172 60,182 88 S210 116,220 88 S248 60,258 88"
+              class="coil-path"/>
+        <!-- Wiring loop -->
+        <line x1="80" y1="88" x2="106" y2="88" stroke="var(--text)" stroke-width="2.5"/>
+        <line x1="258" y1="88" x2="316" y2="88" stroke="var(--text)" stroke-width="2.5"/>
+        <line x1="316" y1="88" x2="316" y2="30" stroke="var(--text)" stroke-width="2.5"/>
+        <line x1="316" y1="30" x2="47"  y2="30" stroke="var(--text)" stroke-width="2.5"/>
+        <line x1="47"  y1="30" x2="47"  y2="54" stroke="var(--text)" stroke-width="2.5"/>
+        <!-- Field rings around inductor -->
+        <ellipse cx="182" cy="88" rx="70"  ry="42" class="fld-ring pulse-anim"/>
+        <ellipse cx="182" cy="88" rx="90"  ry="56" class="fld-ring pulse-anim" style="animation-delay:.35s"/>
+        <ellipse cx="182" cy="88" rx="110" ry="70" class="fld-ring pulse-anim" style="animation-delay:.7s"/>
+        <!-- Animated energy dot -->
+        <g class="edot-move">
+          <circle cx="92" cy="88" r="7" class="edot"/>
+        </g>
+        <!-- Labels -->
+        <text x="48"  y="158" text-anchor="middle" fill="var(--muted)" font-size="11">Capacitor</text>
+        <text x="182" y="158" text-anchor="middle" fill="var(--muted)" font-size="11">Inductor</text>
+      </svg>
+      <p class="note">Idealised energy exchange: the capacitor stores electric-field energy;
+        the inductor stores magnetic-field energy. The gold dot represents the oscillating charge
+        carrier. Pulsing rings show the expanding/collapsing magnetic field.</p>
+    </div>
+
+    <!-- Viz 2 — Transformer Visualization -->
+    <div class="card">
+      <div class="viz-title">Viz 2 — Transformer Visualization</div>
+      <svg viewBox="0 0 340 208" aria-label="Transformer visualization">
+        <!-- Dynamic labels -->
+        <text id="v-src-lbl"  x="72" y="20" text-anchor="middle"
+              fill="var(--gold)" font-size="10.5" font-weight="700">Source (Ag)</text>
+        <text id="v-load-lbl" x="268" y="20" text-anchor="middle"
+              fill="var(--cyan)" font-size="10.5" font-weight="700">Load (Ni)</text>
+
+        <!-- Primary coil (larger — represents many turns) -->
+        <path d="M58 38 C28 54,96 64,58 80
+                 C28 96,96 106,58 122
+                 C28 138,96 148,58 164
+                 C28 180,96 190,58 206"
+              class="pri-coil"/>
+
+        <!-- Secondary coil (smaller — represents fewer turns) -->
+        <path d="M282 72 C252 88,312 98,282 114
+                 C252 130,312 140,282 156"
+              class="sec-coil"/>
+
+        <!-- Ferrite core bars -->
+        <rect x="150" y="32" width="15" height="178" rx="4" class="core-bar"/>
+        <rect x="172" y="32" width="15" height="178" rx="4" class="core-bar"/>
+
+        <!-- Flux coupling arcs -->
+        <path d="M84 120 C118 92,136 92,150 120"  class="flux-arc pulse-anim"/>
+        <path d="M200 120 C222 92,248 92,268 120" class="flux-arc pulse-anim" style="animation-delay:.45s"/>
+
+        <!-- Coil side labels (static) -->
+        <text x="72" y="222" text-anchor="middle" fill="var(--muted)" font-size="9.5">Primary (Np)</text>
+        <text x="268" y="222" text-anchor="middle" fill="var(--muted)" font-size="9.5">Secondary (Ns)</text>
+      </svg>
+      <!-- Ratio readouts below SVG -->
+      <div class="out-row">
+        <div class="out-lbl">Turns ratio Np : Ns</div>
+        <div class="out-val vc" id="v-turns">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Impedance ratio (Np / Ns)²</div>
+        <div class="out-val vc" id="v-n2">—</div>
+      </div>
+    </div>
+
+    <!-- Viz 3 — Frequency & Wavelength Scale -->
+    <div class="card">
+      <div class="viz-title">Viz 3 — Frequency &amp; Wavelength Scale</div>
+      <div class="out-row">
+        <div class="out-lbl">Frequency</div>
+        <div class="out-val vc" id="v-freq">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Free-space wavelength</div>
+        <div class="out-val vc" id="v-wl">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Quarter wavelength</div>
+        <div class="out-val vc" id="v-qwl">—</div>
+      </div>
+      <!-- Spectrum bar -->
+      <div class="fbar-bg">
+        <div class="fbar-fill" id="freqBar"></div>
+      </div>
+      <div class="fbar-ticks">
+        <span>1 kHz</span>
+        <span>10 kHz</span>
+        <span>100 kHz</span>
+        <span>1 MHz</span>
+        <span>10 MHz</span>
+        <span>1 GHz</span>
+      </div>
+      <div id="bandPill" class="band-pill">—</div>
+      <!-- Wave SVG -->
+      <svg viewBox="0 0 340 90" aria-label="Waveform representation" style="margin-top:10px">
+        <path id="wavePath" d="" fill="none" stroke="var(--green)"
+              stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <!-- Viz 4 — Skin-Depth Ring -->
+    <div class="card">
+      <div class="viz-title">Viz 4 — Skin-Depth Ring</div>
+      <div class="ring-wrap">
+        <div class="ring" id="skinRing">
+          <div class="ring-text">
+            <div class="ring-val" id="skinVal">—</div>
+            <div class="ring-sub">RF penetration</div>
+          </div>
+        </div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Skin depth in source material</div>
+        <div class="out-val vc" id="skinDetail">—</div>
+      </div>
+      <p class="note">The ring fill represents the relative RF penetration depth on a logarithmic
+        scale. A full ring indicates deep penetration (lower frequency or higher resistivity).
+        Noble gases and non-RF conductors display N/A — bulk metallic skin-effect physics does not
+        apply to those materials.</p>
+    </div>
+
+    <!-- Viz 5 — Material Path Diagram -->
+    <div class="card">
+      <div class="viz-title">Viz 5 — Material Path Diagram</div>
+      <div class="mat-path">
+        <!-- Source chip -->
+        <div class="mat-chip chip-src">
+          <div class="mat-sym" id="mp-src-sym">Ag</div>
+          <div class="mat-nm"  id="mp-src-nm">Silver</div>
+        </div>
+        <span class="mat-arrow">→</span>
+        <!-- Ruby lens (symbolic) -->
+        <div class="mat-chip chip-ruby">
+          <div class="mat-sym">💎</div>
+          <div class="mat-nm">Ruby lens</div>
+        </div>
+        <span class="mat-arrow">→</span>
+        <!-- Indium shield (symbolic) -->
+        <div class="mat-chip chip-indium">
+          <div class="mat-sym">In</div>
+          <div class="mat-nm">In shield</div>
+        </div>
+        <span class="mat-arrow">→</span>
+        <!-- Load chip -->
+        <div class="mat-chip chip-load">
+          <div class="mat-sym" id="mp-load-sym">Ni</div>
+          <div class="mat-nm"  id="mp-load-nm">Nickel</div>
+        </div>
+      </div>
+      <!-- Detail rows -->
+      <div class="out-row">
+        <div class="out-lbl">Source</div>
+        <div class="out-val vg" id="mp-src-detail">—</div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Ruby lens (symbolic intermediary)</div>
+        <div class="out-val" style="color:#ff7272">
+          Ruby — Cr³⁺:Al₂O₃ corundum crystal, 694 nm optical reference
+        </div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Indium shield (symbolic boundary)</div>
+        <div class="out-val vc">
+          Indium (In, Z=49) foil — soft metallic EMI boundary layer
+        </div>
+      </div>
+      <div class="out-row">
+        <div class="out-lbl">Load</div>
+        <div class="out-val vc" id="mp-load-detail">—</div>
+      </div>
+      <p class="note">Symbolic signal-flow path from source element through the ruby photonic
+        reference and indium shielding layer to the load element. This is a conceptual design
+        diagram, not a physical wiring schematic.</p>
+    </div>
+
+  </div><!-- /.viz-grid -->
+
+</div><!-- /.wrap -->
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   ELEMENT DATABASE
+   Fields: z (atomic number), sym (symbol), name, mass (u), cat (category),
+           elec (electrical classification), rho (resistivity Ω·m or null),
+           role (symbolic description), radioactive (boolean, optional)
+   ═══════════════════════════════════════════════════════════════════════════ */
+const ELEMENTS = [
+  // z   sym   name              mass      category               electrical class.                  rho (Ω·m)   symbolic role
+  { z:3,  sym:"Li", name:"Lithium",       mass:6.941,   cat:"Alkali metal",         elec:"Conductor",                  rho:9.28e-8,  role:"Lightest metallic signal carrier — alkali primary emitter" },
+  { z:10, sym:"Ne", name:"Neon",          mass:20.180,  cat:"Noble gas",             elec:"Gas / non-RF conductor",     rho:null,     role:"Luminescent discharge medium — photonic excitation reference" },
+  { z:18, sym:"Ar", name:"Argon",         mass:39.948,  cat:"Noble gas",             elec:"Gas / non-RF conductor",     rho:null,     role:"Inert discharge envelope — controlled plasma reference" },
+  { z:28, sym:"Ni", name:"Nickel",        mass:58.693,  cat:"Transition metal",      elec:"Conductor",                  rho:6.99e-8,  role:"Ferromagnetic core reservoir — magnetic field anchor" },
+  { z:29, sym:"Cu", name:"Copper",        mass:63.546,  cat:"Transition metal",      elec:"Conductor",                  rho:1.72e-8,  role:"High-conductance current bus — primary RF signal trace" },
+  { z:40, sym:"Zr", name:"Zirconium",     mass:91.224,  cat:"Transition metal",      elec:"Conductor",                  rho:4.21e-7,  role:"Structural resonance frame — high-temperature stability anchor" },
+  { z:42, sym:"Mo", name:"Molybdenum",    mass:95.96,   cat:"Transition metal",      elec:"Conductor",                  rho:5.34e-8,  role:"High-melting-point RF bridge — thermal stability reference" },
+  { z:43, sym:"Tc", name:"Technetium",    mass:98,      cat:"Transition metal",      elec:"Conductor (radioactive)",    rho:2.0e-7,   role:"⚠ Radioactive synthetic element — laboratory research reference only", radioactive:true },
+  { z:46, sym:"Pd", name:"Palladium",     mass:106.42,  cat:"Transition metal",      elec:"Conductor",                  rho:1.05e-7,  role:"Catalytic interface layer — hydrogen-absorption reference" },
+  { z:47, sym:"Ag", name:"Silver",        mass:107.868, cat:"Transition metal",      elec:"Conductor",                  rho:1.59e-8,  role:"Maximum-conductivity signal emitter — primary RF transmitter" },
+  { z:48, sym:"Cd", name:"Cadmium",       mass:112.411, cat:"Transition metal",      elec:"Conductor",                  rho:7.2e-8,   role:"Intermetallic boundary layer — galvanic isolation reference" },
+  { z:49, sym:"In", name:"Indium",        mass:114.818, cat:"Post-transition metal", elec:"Conductor",                  rho:8.37e-8,  role:"Soft metallic shield interface — low-temperature bonding medium" },
+  { z:50, sym:"Sn", name:"Tin",           mass:118.710, cat:"Post-transition metal", elec:"Conductor",                  rho:1.09e-7,  role:"Solder-matrix conductor — mechanical bonding reference" },
+  { z:51, sym:"Sb", name:"Antimony",      mass:121.760, cat:"Metalloid",             elec:"Metalloid / semiconductor",  rho:4.17e-7,  role:"Metalloid dopant bridge — n-type semiconductor reference" },
+  { z:52, sym:"Te", name:"Tellurium",     mass:127.600, cat:"Metalloid",             elec:"Semiconductor",              rho:null,     role:"Photovoltaic chalcogenide — thermoelectric junction reference" },
+  { z:53, sym:"I",  name:"Iodine",        mass:126.904, cat:"Halogen",               elec:"Insulator / non-conductor",  rho:null,     role:"Halide oxidiser layer — reactive boundary reference" },
+  { z:54, sym:"Xe", name:"Xenon",         mass:131.293, cat:"Noble gas",             elec:"Gas / non-RF conductor",     rho:null,     role:"Heavy noble-gas resonator — high-pressure discharge reference" },
+  { z:55, sym:"Cs", name:"Cesium",        mass:132.905, cat:"Alkali metal",          elec:"Conductor",                  rho:2.05e-7,  role:"Atomic clock reference metal — precision frequency standard" },
+  { z:56, sym:"Ba", name:"Barium",        mass:137.327, cat:"Alkaline earth metal",  elec:"Conductor",                  rho:3.5e-7,   role:"Electron-emitting cathode base — thermionic emission reference" },
+  { z:57, sym:"La", name:"Lanthanum",     mass:138.905, cat:"Lanthanide",            elec:"Conductor",                  rho:6.1e-7,   role:"Rare-earth optical dopant — glass refraction modifier" },
+  { z:58, sym:"Ce", name:"Cerium",        mass:140.116, cat:"Lanthanide",            elec:"Conductor",                  rho:7.5e-7,   role:"Oxidation-resilient rare earth — catalytic surface layer" },
+  { z:59, sym:"Pr", name:"Praseodymium",  mass:140.908, cat:"Lanthanide",            elec:"Conductor",                  rho:7.0e-7,   role:"Green-spectrum optical dopant — fibre-optic amplifier reference" },
+  { z:60, sym:"Nd", name:"Neodymium",     mass:144.242, cat:"Lanthanide",            elec:"Conductor",                  rho:6.4e-7,   role:"Permanent magnet rare earth — high-field storage reference" },
+  { z:61, sym:"Pm", name:"Promethium",    mass:145,     cat:"Lanthanide",            elec:"Conductor (radioactive)",    rho:null,     role:"⚠ Radioactive synthetic rare earth — nuclear research reference only", radioactive:true },
+  { z:62, sym:"Sm", name:"Samarium",      mass:150.36,  cat:"Lanthanide",            elec:"Conductor",                  rho:9.4e-7,   role:"Samarium-cobalt magnet base — high-coercivity field anchor" },
+  { z:63, sym:"Eu", name:"Europium",      mass:151.964, cat:"Lanthanide",            elec:"Conductor",                  rho:9.0e-7,   role:"Red-phosphor rare earth — luminescence frequency reference" },
+  { z:64, sym:"Gd", name:"Gadolinium",    mass:157.25,  cat:"Lanthanide",            elec:"Conductor",                  rho:1.3e-6,   role:"Neutron-absorbing magnetic rare earth — MRI contrast reference" },
+  { z:65, sym:"Tb", name:"Terbium",       mass:158.925, cat:"Lanthanide",            elec:"Conductor",                  rho:1.15e-6,  role:"Green-phosphor terbium — solid-state lighting reference" },
+  { z:66, sym:"Dy", name:"Dysprosium",    mass:162.500, cat:"Lanthanide",            elec:"Conductor",                  rho:9.2e-7,   role:"High-anisotropy rare earth — high-temperature magnet additive" },
+  { z:67, sym:"Ho", name:"Holmium",       mass:164.930, cat:"Lanthanide",            elec:"Conductor",                  rho:8.1e-7,   role:"Highest magnetic moment rare earth — pole-piece field concentrator" },
+  { z:68, sym:"Er", name:"Erbium",        mass:167.259, cat:"Lanthanide",            elec:"Conductor",                  rho:8.6e-7,   role:"Optical amplifier dopant — 1550 nm fibre reference" },
+  { z:69, sym:"Tm", name:"Thulium",       mass:168.934, cat:"Lanthanide",            elec:"Conductor",                  rho:6.7e-7,   role:"Thulium fibre-laser rare earth — 2 µm spectral reference" },
+  { z:70, sym:"Yb", name:"Ytterbium",     mass:173.054, cat:"Lanthanide",            elec:"Conductor",                  rho:2.5e-7,   role:"Ytterbium precision laser — optical clock frequency reference" },
+];
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   POPULATE SELECTS
+   ═══════════════════════════════════════════════════════════════════════════ */
+const srcSel  = document.getElementById("srcSel");
+const loadSel = document.getElementById("loadSel");
+
+ELEMENTS.forEach(e => {
+  const label = `${e.name} (${e.sym}, Z=${e.z})${e.radioactive ? " ⚠ radioactive" : ""}`;
+  srcSel.add(new Option(label, e.sym));
+  loadSel.add(new Option(label, e.sym));
+});
+srcSel.value  = "Ag";
+loadSel.value = "Ni";
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   CONSTANTS & HELPERS
+   ═══════════════════════════════════════════════════════════════════════════ */
+const C_LIGHT = 299792458;         // m/s
+const MU0     = 4 * Math.PI * 1e-7; // H/m
+
+/** Format a frequency in Hz with appropriate SI prefix (3 d.p.) */
+function fmtFreq(f) {
+  if (!isFinite(f) || f <= 0) return "—";
+  if (f >= 1e9) return `${(f / 1e9).toFixed(3)} GHz`;
+  if (f >= 1e6) return `${(f / 1e6).toFixed(3)} MHz`;
+  if (f >= 1e3) return `${(f / 1e3).toFixed(3)} kHz`;
+  return `${f.toFixed(3)} Hz`;
+}
+
+/** Format a length in metres with appropriate SI prefix (4 s.f.) */
+function fmtLen(m) {
+  if (!isFinite(m) || m <= 0) return "—";
+  if (m >= 1e6)  return `${(m / 1e6).toFixed(4)} Mm`;
+  if (m >= 1e3)  return `${(m / 1e3).toFixed(4)} km`;
+  if (m >= 1)    return `${m.toFixed(4)} m`;
+  if (m >= 1e-3) return `${(m * 1e3).toFixed(4)} mm`;
+  return `${(m * 1e6).toFixed(4)} µm`;
+}
+
+/** Return the ITU RF band name for a frequency in Hz */
+function bandName(f) {
+  if (f < 3e3)  return "ELF — Extremely Low Frequency (< 3 kHz)";
+  if (f < 3e4)  return "VLF — Very Low Frequency (3–30 kHz)";
+  if (f < 3e5)  return "LF — Low Frequency (30–300 kHz)";
+  if (f < 3e6)  return "MF — Medium Frequency (300 kHz – 3 MHz)";
+  if (f < 3e7)  return "HF — High Frequency (3–30 MHz)";
+  if (f < 3e8)  return "VHF — Very High Frequency (30–300 MHz)";
+  if (f < 3e9)  return "UHF — Ultra High Frequency (300 MHz – 3 GHz)";
+  if (f < 3e10) return "SHF — Super High Frequency / Microwave (3–30 GHz)";
+  return "EHF — Extremely High Frequency (> 30 GHz)";
+}
+
+/** Return short band label for the pill badge */
+function bandShort(f) {
+  if (f < 3e3)  return "ELF";
+  if (f < 3e4)  return "VLF";
+  if (f < 3e5)  return "LF";
+  if (f < 3e6)  return "MF";
+  if (f < 3e7)  return "HF";
+  if (f < 3e8)  return "VHF";
+  if (f < 3e9)  return "UHF";
+  if (f < 3e10) return "SHF";
+  return "EHF";
+}
+
+/** Look up an element by symbol */
+function getElem(sym) {
+  return ELEMENTS.find(e => e.sym === sym) || null;
+}
+
+/** Read inductance in Henrys from the L inputs; returns null on invalid input */
+function getL() {
+  const v = parseFloat(document.getElementById("lVal").value);
+  const u = document.getElementById("lUnit").value;
+  if (!isFinite(v) || v <= 0) return null;
+  if (u === "uH") return v * 1e-6;
+  if (u === "mH") return v * 1e-3;
+  return v; // H
+}
+
+/** Read capacitance in Farads from the C inputs; returns null on invalid input */
+function getC() {
+  const v = parseFloat(document.getElementById("cVal").value);
+  const u = document.getElementById("cUnit").value;
+  if (!isFinite(v) || v <= 0) return null;
+  if (u === "pF") return v * 1e-12;
+  if (u === "nF") return v * 1e-9;
+  return v * 1e-6; // µF
+}
+
+/** Set text content of an element by id */
+function setText(id, txt) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = txt;
+}
+
+/** Remove all colour classes then optionally apply one */
+function setValColor(id, cls) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.classList.remove("vc", "vg", "vr", "vgr");
+  if (cls) el.classList.add(cls);
+}
+
+/** Draw a waveform in the wave SVG path; cycles scaled to frequency */
+function drawWave(f) {
+  const cycles = Math.max(1, Math.min(16,
+    Math.round(1 + (Math.log10(Math.max(f, 1)) - 3) * 2)));
+  const W = 340, mid = 45, amp = 30;
+  let d = `M 0 ${mid}`;
+  for (let x = 1; x <= W; x++) {
+    const y = mid + Math.sin((x / W) * Math.PI * 2 * cycles) * amp;
+    d += ` L ${x} ${y.toFixed(1)}`;
+  }
+  document.getElementById("wavePath").setAttribute("d", d);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   MAIN CALCULATION
+   ═══════════════════════════════════════════════════════════════════════════ */
+function calculate() {
+  const srcEl  = getElem(srcSel.value);
+  const loadEl = getElem(loadSel.value);
+  if (!srcEl || !loadEl) return;
+
+  const Zp = parseFloat(document.getElementById("zpInp").value);
+  const Zs = parseFloat(document.getElementById("zsInp").value);
+  const L  = getL();
+  const C  = getC();
+
+  const zpOk = isFinite(Zp) && Zp > 0;
+  const zsOk = isFinite(Zs) && Zs > 0;
+  const lcOk = L !== null && C !== null;
+
+  /* ── Track A — Symbolic ─────────────────────────────────────────────── */
+
+  setText("a-src",
+    `${srcEl.name} (${srcEl.sym}) — Z = ${srcEl.z}, mass ≈ ${srcEl.mass} u, ${srcEl.cat}`);
+  setText("a-load",
+    `${loadEl.name} (${loadEl.sym}) — Z = ${loadEl.z}, mass ≈ ${loadEl.mass} u, ${loadEl.cat}`);
+  setText("a-z-ratio",  (srcEl.z / loadEl.z).toFixed(4));
+  setText("a-z-sum",    (srcEl.z + loadEl.z).toString());
+  setText("a-m-ratio",  (srcEl.mass / loadEl.mass).toFixed(4));
+  setText("a-src-role",  srcEl.role);
+  setText("a-load-role", loadEl.role);
+  setText("a-interp",
+    `${srcEl.name} (source) coupled to ${loadEl.name} (load) — ` +
+    `symbolic signal transfer from ${srcEl.cat.toLowerCase()} transmitter ` +
+    `into ${loadEl.cat.toLowerCase()} reservoir medium`);
+  setText("a-ruby",
+    "Ruby (Cr³⁺:Al₂O₃ corundum) — 694 nm optical reference; " +
+    "symbolic photonic intermediary between source and load planes");
+  setText("a-indium",
+    "Indium (In, Z=49) foil — soft metallic EMI boundary layer; " +
+    "symbolic load-side isolation interface");
+
+  if (zpOk && zsOk) {
+    const nRatio = Math.sqrt(Zp / Zs);
+    const impR   = Zp / Zs;
+    setText("a-gear",
+      `${nRatio.toFixed(2)}:1 turns reduction — symbolic compression of ` +
+      `${srcEl.name} signal cycles into ${loadEl.name} reservoir medium; ` +
+      `N² = ${impR.toLocaleString("en-US")}:1 symbolic impedance compression ratio`);
+  } else {
+    setText("a-gear", "Enter valid Zp and Zs values to calculate.");
+  }
+
+  /* ── Track B — Engineering ──────────────────────────────────────────── */
+
+  // Transformer turns & impedance ratios
+  if (zpOk && zsOk) {
+    const nRatio = Math.sqrt(Zp / Zs);
+    const impR   = Zp / Zs;
+    setText("b-turns", `${nRatio.toFixed(3)} : 1`);
+    setText("b-imp",   `${impR.toLocaleString("en-US")} : 1`);
+    setText("v-turns", `${nRatio.toFixed(3)} : 1`);
+    setText("v-n2",    `${impR.toLocaleString("en-US")} : 1`);
+  } else {
+    const msg = "Invalid Zp / Zs — enter positive values";
+    ["b-turns", "b-imp", "v-turns", "v-n2"].forEach(id => setText(id, msg));
+  }
+
+  // LC resonance and wavelength
+  if (lcOk) {
+    const f  = 1 / (2 * Math.PI * Math.sqrt(L * C));
+    if (isFinite(f) && f > 0) {
+      const wl  = C_LIGHT / f;
+      const qwl = wl / 4;
+
+      setText("b-freq",  fmtFreq(f));
+      setText("b-wave",  fmtLen(wl));
+      setText("b-qwave", fmtLen(qwl));
+      setText("b-band",  bandName(f));
+      setText("v-freq",  fmtFreq(f));
+      setText("v-wl",    fmtLen(wl));
+      setText("v-qwl",   fmtLen(qwl));
+
+      // Band pill
+      const pill = document.getElementById("bandPill");
+      if (pill) pill.textContent = `${bandShort(f)} — ${fmtFreq(f)} — λ = ${fmtLen(wl)}`;
+
+      // Frequency spectrum bar (log scale: 10³ Hz → 10⁹ Hz mapped to 0–100%)
+      const logPos = Math.max(0,
+        Math.min(100, ((Math.log10(f) - 3) / (9 - 3)) * 100));
+      document.getElementById("freqBar").style.width = `${logPos}%`;
+
+      // Wave animation
+      drawWave(f);
+
+      // Skin depth calculation
+      const isRA = srcEl.radioactive === true;
+      const hasRho = srcEl.rho !== null && isFinite(srcEl.rho);
+
+      if (hasRho) {
+        // Standard metallic skin-depth formula: δ = √(ρ / π·f·µ₀)
+        const skin    = Math.sqrt(srcEl.rho / (Math.PI * f * MU0));
+        const microns = skin * 1e6;
+        let skinStr = `${microns.toFixed(2)} µm estimated in ${srcEl.name} at ${fmtFreq(f)}`;
+        if (isRA) skinStr += " — ⚠ radioactive element; see safety note";
+        setText("b-skin",    skinStr);
+        setText("skinDetail", skinStr);
+
+        // Ring: fill% decreases logarithmically as microns increases
+        const fill = Math.max(3,
+          Math.min(100, 100 - Math.log10(Math.max(microns, 0.01)) * 18));
+        document.getElementById("skinRing").style.setProperty("--fill", `${fill}%`);
+        setText("skinVal", `${microns.toFixed(1)} µm`);
+        setValColor("skinVal", isRA ? "vr" : "vc");
+
+      } else if (isRA) {
+        // Radioactive with no reliable rho (Pm)
+        const msg = "N/A — radioactive element; no reliable RF conductivity data for circuit use";
+        setText("b-skin",    msg);
+        setText("skinDetail", msg);
+        setText("skinVal",   "N/A");
+        document.getElementById("skinRing").style.setProperty("--fill", "0%");
+        setValColor("skinVal", "vr");
+
+      } else {
+        // Gas, insulator, or semiconductor without rho
+        const msg = "N/A — modeled as a gas or non-RF conductor";
+        setText("b-skin",    msg);
+        setText("skinDetail", msg);
+        setText("skinVal",   "N/A");
+        document.getElementById("skinRing").style.setProperty("--fill", "0%");
+        setValColor("skinVal", "vr");
+      }
+
+    } else {
+      // f is not finite (e.g. sqrt of zero product — guard)
+      ["b-freq","b-wave","b-qwave","b-band"].forEach(id => setText(id, "—"));
+    }
+  } else {
+    const msg = "Enter valid inductance and capacitance values";
+    ["b-freq", "b-wave", "b-qwave", "b-band"].forEach(id => setText(id, msg));
+  }
+
+  // Electrical and safety classifications (based on source element)
+  let elecClass, safetyClass, elecCls, safeCls;
+
+  if (srcEl.radioactive) {
+    elecClass  = `${srcEl.elec} — theoretical resistivity only; not for consumer or circuit-board use`;
+    safetyClass = "⚠ Radioactive — not suitable for wearable, nutritional, or consumer circuit applications";
+    elecCls = "vr"; safeCls = "vr";
+
+  } else if (srcEl.rho === null) {
+    elecClass  = `${srcEl.elec} — not a bulk metallic conductor; ` +
+                 `not suitable for RF coil, transformer, or skin-depth analysis`;
+    safetyClass = "N/A — not a DC/RF bulk conductor in ordinary circuit form";
+    elecCls = null; safeCls = null;
+
+  } else if (srcEl.elec.includes("Metalloid") || srcEl.elec.includes("Semiconductor")) {
+    elecClass  = `${srcEl.elec} — atypical for RF coil construction; conductivity is limited`;
+    safetyClass = "Metalloid — observe standard low-voltage precautions; not a drop-in substitute for a metallic conductor";
+    elecCls = null; safeCls = null;
+
+  } else {
+    elecClass  = `${srcEl.cat} — ${srcEl.elec}; suitable for RF circuit construction`;
+    safetyClass = "Low-voltage safe — insulate connections and joints per standard electrical practice";
+    elecCls = "vc"; safeCls = "vgr";
+  }
+
+  setText("b-elec",   elecClass);
+  setText("b-safety", safetyClass);
+  setValColor("b-elec",   elecCls);
+  setValColor("b-safety", safeCls);
+
+  /* ── Transformer SVG labels ─────────────────────────────────────────── */
+  setText("v-src-lbl",  `${srcEl.sym} — source`);
+  setText("v-load-lbl", `${loadEl.sym} — load`);
+
+  /* ── Material path diagram ──────────────────────────────────────────── */
+  setText("mp-src-sym",    srcEl.sym);
+  setText("mp-src-nm",     srcEl.name);
+  setText("mp-load-sym",   loadEl.sym);
+  setText("mp-load-nm",    loadEl.name);
+  setText("mp-src-detail",
+    `${srcEl.name} (${srcEl.sym}, Z=${srcEl.z}) — ${srcEl.cat}${srcEl.radioactive ? " ⚠ radioactive" : ""}`);
+  setText("mp-load-detail",
+    `${loadEl.name} (${loadEl.sym}, Z=${loadEl.z}) — ${loadEl.cat}${loadEl.radioactive ? " ⚠ radioactive" : ""}`);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   EVENT LISTENERS — auto-recalculate on any input change
+   ═══════════════════════════════════════════════════════════════════════════ */
+document.getElementById("calcBtn").addEventListener("click", calculate);
+
+[
+  srcSel, loadSel,
+  document.getElementById("zpInp"),
+  document.getElementById("zsInp"),
+  document.getElementById("lVal"),
+  document.getElementById("lUnit"),
+  document.getElementById("cVal"),
+  document.getElementById("cUnit"),
+].forEach(el => el.addEventListener("input", calculate));
+
+// Run once on load with default values
+calculate();
+</script>
+</body>
+</html>
