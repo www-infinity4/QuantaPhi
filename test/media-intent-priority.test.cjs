@@ -1,7 +1,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
 const source=fs.readFileSync('media-repair.js','utf8');
 function fixture(){
- const listeners=new Map(),calls=[],pending=[];
+ const listeners=new Map(),documentEvents=new Map(),calls=[],pending=[];
  const parent={children:[],insertBefore(item,reference){
   if(item.parentNode){const old=item.parentNode.children.indexOf(item);if(old>=0)item.parentNode.children.splice(old,1)}
   let index=this.children.indexOf(reference);if(index<0)index=this.children.length;
@@ -12,7 +12,7 @@ function fixture(){
  const heading={textContent:'Media extensions'};
  const nodes=Object.fromEntries(['q','go','status','webSearchResults','result','media','mediaGrid','qImagesBtn','qVideoBtn','qSoundBtn'].map(id=>[id,el(id)]));
  nodes.q.value='';parent.children=[nodes.status,nodes.webSearchResults,nodes.result,nodes.media];nodes.media.hidden=true;
- const document={getElementById:id=>nodes[id],createComment:()=>({nodeType:8})};
+ const document={getElementById:id=>nodes[id],createComment:()=>({nodeType:8}),addEventListener:(name,fn)=>documentEvents.set(name,fn)};
  let json=async()=>({results:[]});
  const fetch=(url)=>{const u=new URL(String(url));calls.push(u);return Promise.resolve({ok:true,json:()=>json(u)})};
  const window={addEventListener:(name,fn)=>listeners.set(name,[...(listeners.get(name)||[]),fn]),dispatchEvent:e=>(listeners.get(e.type)||[]).forEach(fn=>fn(e))};
@@ -20,7 +20,7 @@ function fixture(){
  vm.createContext(context);vm.runInContext(source,context);
  const search=q=>{nodes.q.value=q;(listeners.get('quantaphi:search-start')||[]).forEach(fn=>fn({detail:{query:q,run:calls.length+1}}))};
  const next=()=>new Promise(resolve=>setTimeout(resolve,0));
- return {nodes,parent,calls,window,search,next,respond:f=>{json=f}};
+ return {nodes,parent,calls,window,search,next,preflight:(query)=>{nodes.q.value=query;documentEvents.get('click')?.({type:'click',target:nodes.go})},respond:f=>{json=f}};
 }
 test('explicit image/video feed intent and subject extraction, never generic search hijack',()=>{
  const api=fixture().window.QuantaMediaRepair,intent=api.mediaIntent;
@@ -73,4 +73,15 @@ test('stale video results cannot overwrite a newer image search',async()=>{
  assert.match(f.nodes.mediaGrid.innerHTML,/Newer Image/);
  release();await f.next();
  assert.doesNotMatch(f.nodes.mediaGrid.innerHTML,/Late Video/);
+});
+
+test('explicit image feed starts at Search click before asynchronous wallet token creation',async()=>{
+ const f=fixture();
+ f.respond(url=>url.hostname.includes('wikimedia')?{query:{pages:{1:{title:'File:Preflight kit',imageinfo:[{thumburl:'https://commons.wikimedia.org/kit.png',mime:'image/png'}]}}}}:{results:[]});
+ f.preflight('images of radio clubhouse kit');await f.next();
+ assert.equal(f.nodes.media.dataset.searchFocus,'image');
+ assert.match(f.nodes.mediaGrid.innerHTML,/Preflight kit/);
+ const count=f.calls.length;
+ f.search('images of radio clubhouse kit');await f.next();
+ assert.equal(f.calls.length,count,'later Brain search-start reuses the first feed');
 });
