@@ -58,6 +58,8 @@ import java.util.regex.Pattern;
  */
 public final class BubblesService extends Service {
     public static final String ACTION_TEXT = "org.quantaphi.bubbles.TEXT";
+    public static final String ACTION_STOP_SPEAKING = "org.quantaphi.bubbles.STOP_SPEAKING";
+    public static final String ACTION_RESUME = "org.quantaphi.bubbles.RESUME";
     public static final String ACTION_RECORD = "org.quantaphi.bubbles.RECORD_AUDIO";
     public static final String ACTION_SAVE_AUDIO = "org.quantaphi.bubbles.SAVE_AUDIO";
     private final VoiceRecording recording = new VoiceRecording();
@@ -91,6 +93,7 @@ public final class BubblesService extends Service {
     private TextToSpeech tts;
     private volatile boolean connected = false, muted = false, speaking = false;
     private boolean busy = false;
+    private volatile boolean speechSuppressed = false;
     private long activeUntil = 0L, lastAt = 0L;
     private String lastTranscript = "", queued = "";
     private int retries = 0;
@@ -121,6 +124,14 @@ public final class BubblesService extends Service {
     }
 
     @Override public int onStartCommand(Intent intent, int flags, int startId) {
+        if (intent != null && ACTION_STOP_SPEAKING.equals(intent.getAction())) {
+            silenceReply();
+            return START_NOT_STICKY;
+        }
+        if (intent != null && ACTION_RESUME.equals(intent.getAction()) && connected) {
+            resumeSession();
+            return START_NOT_STICKY;
+        }
         if (intent != null && ACTION_STOP.equals(intent.getAction())) {
             stopSelf();
             return START_NOT_STICKY;
@@ -130,6 +141,7 @@ public final class BubblesService extends Service {
             if (intent != null && ACTION_TEXT.equals(intent.getAction())) {
                 String text = intent.getStringExtra("text");
                 if (text != null && !text.trim().isEmpty() && text.length() <= 1800) {
+                    speechSuppressed = true; // Typed questions get quiet, visible replies.
                     if (busy) queued = text.trim(); else askOracle(text.trim());
                 }
             } else if (intent != null && ACTION_RECORD.equals(intent.getAction())) {
@@ -167,7 +179,10 @@ public final class BubblesService extends Service {
             beginListening();
             if (intent != null && ACTION_TEXT.equals(intent.getAction())) {
                 String text = intent.getStringExtra("text");
-                if (text != null && !text.trim().isEmpty() && text.length() <= 1800) askOracle(text.trim());
+                if (text != null && !text.trim().isEmpty() && text.length() <= 1800) {
+                    speechSuppressed = true;
+                    askOracle(text.trim());
+                }
             }
         } catch (Exception error) {
             BrainNotes.prefs(this).edit().putString("last_error", "Overlay startup failed: " + error.getClass().getSimpleName()).apply();
@@ -180,13 +195,13 @@ public final class BubblesService extends Service {
         Intent stopIntent = new Intent(this, BubblesService.class).setAction(ACTION_STOP);
         PendingIntent stop = PendingIntent.getService(this, 1, stopIntent,
                 PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
-        Intent app = new Intent(this, MainActivity.class);
+        Intent app = new Intent(this, OracleChatActivity.class);
         PendingIntent open = PendingIntent.getActivity(this, 2, app,
                 PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
         return new Notification.Builder(this, CHANNEL)
                 .setSmallIcon(android.R.drawable.ic_btn_speak_now)
                 .setContentTitle(BrainNotes.prefs(this).getString("name","Brain")+" · Bubbles AI")
-                .setContentText("Listening to your speech · long-press to mute")
+                .setContentText("Tap bubble to type or interrupt · long-press to mute")
                 .setOngoing(true)
                 .setContentIntent(open)
                 .addAction(android.R.drawable.ic_delete, "Stop and release microphone", stop)
@@ -335,6 +350,14 @@ public final class BubblesService extends Service {
         lastTranscript = ""; retries = 0;
         beginListening();
     }
+    private void silenceReply() {
+        // Immediate playback interrupt does not turn off the always-on microphone.
+        speechSuppressed = true;
+        speechGeneration++;
+        speaking = false;
+        if (tts != null) tts.stop();
+        if (connected && !muted) state("listening", .1f);
+    }
     private void finishSpeaking() {
         speaking = false;
         speechGeneration++;
@@ -408,6 +431,7 @@ public final class BubblesService extends Service {
         if (normalized.equals(lastTranscript) && now - lastAt < 2500) return;
         lastTranscript = normalized;lastAt = now;activeUntil = now + 30000L;
         if (busy) {queued = addressed;return;}
+        speechSuppressed = false; // A new spoken request can receive spoken output.
         if (addressed.matches("(?i)^(?:please\\s+)?(?:create|make|submit|queue|start)\\s+(?:a\\s+)?(?:work\\s+)?ticket\\b.*")) {
             Intent handoff = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://quantaphi.org/bubbles.html")
                     .buildUpon().appendQueryParameter("workRequest", addressed).build());
@@ -420,6 +444,8 @@ public final class BubblesService extends Service {
     }
 
     private void askOracle(String userRequest) {
+        final boolean quietRequest = speechSuppressed;
+        OracleChatActivity.append(this, "You", userRequest);
         busy = true;
         state("thinking", .4f);
         network.execute(() -> {
@@ -438,7 +464,9 @@ public final class BubblesService extends Service {
             main.post(() -> {
                 busy = false;
                 BrainNotes.prefs(this).edit().putString("last_reply", result).apply();
-                speak(result);
+                OracleChatActivity.append(this, "Oracle", result);
+                if (!speechSuppressed && !quietRequest) speak(result);
+                else if (connected && !muted) state("listening", .1f);
                 if (!queued.isEmpty()) {String next = queued;queued = "";main.postDelayed(() -> askOracle(next), 250);}
             });
         });
@@ -596,13 +624,10 @@ public final class BubblesService extends Service {
                         if(SystemClock.elapsedRealtime()-downAt>650) {
                             muteSession();
                             Toast.makeText(BubblesService.this,"Bubbles muted. Tap to reconnect.",Toast.LENGTH_SHORT).show();
-                        } else if(muted) {
-                            resumeSession();
-                            Toast.makeText(BubblesService.this,"Bubbles listening. Just speak.",Toast.LENGTH_SHORT).show();
                         } else {
-                            Intent conversation = new Intent(BubblesService.this, MainActivity.class);
+                            if (speaking) silenceReply();
+                            Intent conversation = new Intent(BubblesService.this, OracleChatActivity.class);
                             conversation.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                            conversation.putExtra("open_chat", true);
                             try { startActivity(conversation); }
                             catch (Exception error) { Toast.makeText(BubblesService.this, "Open Bubbles from its notification to type.", Toast.LENGTH_LONG).show(); }
                         }
