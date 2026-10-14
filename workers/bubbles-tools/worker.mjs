@@ -113,7 +113,7 @@ async function execute(request,env,body){
    const url='https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en';
    const upstream=await fetch(url,{redirect:'follow',headers:{Accept:'application/rss+xml,application/xml,text/xml','User-Agent':'Bubbles-AI-News/1.0'},signal:AbortSignal.timeout(12000)});
    if(!upstream.ok)throw Error('news_feed_http_'+upstream.status);
-   const xml=await upstream.text();if(xml.length>2000000)throw Error('news_feed_too_large');
+   const xml=await upstream.text();if(xml.length>7000000)throw Error('news_feed_too_large');
    const sources=parseHeadlines(xml);if(!sources.length)throw Error('no_verified_current_headlines');
    const output='Here are '+sources.length+' current US headlines from Google News:\n'+sources.map((s,i)=>(i+1)+'. '+s.title).join('\n');
    return response(request,{ok:true,output,sources,receipt:{...receipt,status:'complete',sourceUrl:url,completedAt:new Date().toISOString()}});
@@ -134,7 +134,7 @@ async function execute(request,env,body){
    }catch{return response(request,{ok:true,output:'I could not retrieve current headlines. I have not substituted remembered headlines.',receipt:{...receipt,status:'failed',reason:'news_sources_unavailable'}});}
   }
  }
- return gptReply(request,env,clean(body.input,16000)||question,receipt,null,question);
+ return gptReply(request,env,clean(body.input,32000)||question,receipt,null,question);
 }
 async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
  if(!env.AI)return response(request,{ok:false,error:'gpt_service_unavailable',receipt:{...receipt,status:'failed'}},503);
@@ -172,8 +172,8 @@ export default {async fetch(request,env){
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
  if(request.method==='POST'&&url.pathname==='/v1/transcribe')return transcribe(request,env);
  if(request.method!=='POST'||url.pathname!=='/v1/assist')return response(request,{ok:false,error:'not_found'},404);
- if(Number(request.headers.get('Content-Length')||0)>20000)return response(request,{ok:false,error:'body_too_large'},413);
- try{const text=await request.text();if(text.length>20000)return response(request,{ok:false,error:'body_too_large'},413);const body=JSON.parse(text),result=await execute(request,env,body);if(!result.ok)return result;const data=await result.clone().json();if(data.model||data.receipt?.tool?.startsWith('resonance.'))return result;return await gptReply(request,env,clean(body.input,16000)||clean(body.request),data.receipt,data,clean(body.request));}catch{return response(request,{ok:false,error:'assistant_request_failed'},502);}
+ if(Number(request.headers.get('Content-Length')||0)>70000)return response(request,{ok:false,error:'body_too_large'},413);
+ try{const text=await request.text();if(text.length>70000)return response(request,{ok:false,error:'body_too_large'},413);const body=JSON.parse(text),result=await execute(request,env,body);if(!result.ok)return result;const data=await result.clone().json();if(data.model||data.receipt?.tool?.startsWith('resonance.'))return result;return await gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));}catch{return response(request,{ok:false,error:'assistant_request_failed'},502);}
 }};
 
 
