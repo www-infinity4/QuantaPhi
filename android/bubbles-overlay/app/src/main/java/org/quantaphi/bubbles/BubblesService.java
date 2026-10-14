@@ -59,6 +59,7 @@ import java.util.regex.Pattern;
 public final class BubblesService extends Service {
     public static final String ACTION_TEXT = "org.quantaphi.bubbles.TEXT";
     public static final String ACTION_STOP_SPEAKING = "org.quantaphi.bubbles.STOP_SPEAKING";
+    public static final String ACTION_REFRESH_VOICE = "org.quantaphi.bubbles.REFRESH_VOICE";
     public static final String ACTION_RESUME = "org.quantaphi.bubbles.RESUME";
     public static final String ACTION_RECORD = "org.quantaphi.bubbles.RECORD_AUDIO";
     public static final String ACTION_SAVE_AUDIO = "org.quantaphi.bubbles.SAVE_AUDIO";
@@ -107,23 +108,49 @@ public final class BubblesService extends Service {
         if (Build.VERSION.SDK_INT >= 26)
             notificationManager.createNotificationChannel(
                     new NotificationChannel(CHANNEL, "Bubbles voice microphone", NotificationManager.IMPORTANCE_LOW));
-        tts = new TextToSpeech(this, result -> {
-            if (result == TextToSpeech.SUCCESS && tts != null) {
-                ttsReady = true;
-                // Honor the phone's selected Android speech engine, including
-                // compatible installed on-device neural TTS engines.
-                // This is NOT the proprietary ChatGPT Live voice.
-                int language = tts.setLanguage(Locale.US);
-                if (language == TextToSpeech.LANG_MISSING_DATA || language == TextToSpeech.LANG_NOT_SUPPORTED)
-                    tts.setLanguage(Locale.ENGLISH);
-                tts.setPitch(1.0f); // Preserve the natural timbre of the chosen voice.
-                tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
-                    @Override public void onStart(String id) { main.post(() -> state("speaking", 0.6f)); }
-                    @Override public void onDone(String id) { main.post(() -> finishSpeaking()); }
-                    @Override public void onError(String id) { main.post(() -> finishSpeaking()); }
-                });
+        reloadSpeechEngine();
+    }
+
+    /** Changing voices never changes microphone consent or the speech recognizer. */
+    private void reloadSpeechEngine() {
+        ttsReady = false;
+        TextToSpeech previous = tts;
+        tts = null;
+        if (previous != null) { previous.stop(); previous.shutdown(); }
+        tts = new TextToSpeech(this, result -> main.post(() -> {
+            if (tts == null || result != TextToSpeech.SUCCESS) return;
+            String savedName = getSharedPreferences(BubblesVoicePicker.PREFS, MODE_PRIVATE)
+                .getString(BubblesVoicePicker.VOICE_NAME, "");
+            String savedEngine = getSharedPreferences(BubblesVoicePicker.PREFS, MODE_PRIVATE)
+                .getString(BubblesVoicePicker.ENGINE, "");
+            boolean selected = false;
+            if (!savedName.isEmpty() && savedEngine.equals(tts.getDefaultEngine())) {
+                try {
+                    java.util.Set<android.speech.tts.Voice> available = tts.getVoices();
+                    if (available != null) for (android.speech.tts.Voice voice : available) {
+                        if (savedName.equals(voice.getName())
+                                && tts.setVoice(voice) == TextToSpeech.SUCCESS) {
+                            selected = true;
+                            break;
+                        }
+                    }
+                } catch (Exception ignored) { /* Restore default voice. */ }
             }
-        });
+            if (!selected) {
+                int language = tts.setLanguage(Locale.US);
+                if (language == TextToSpeech.LANG_MISSING_DATA
+                        || language == TextToSpeech.LANG_NOT_SUPPORTED)
+                    tts.setLanguage(Locale.ENGLISH);
+            }
+            tts.setPitch(1f);
+            tts.setSpeechRate(1f);
+            tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+                @Override public void onStart(String id) { main.post(() -> state("speaking", 0.6f)); }
+                @Override public void onDone(String id) { main.post(() -> finishSpeaking()); }
+                @Override public void onError(String id) { main.post(() -> finishSpeaking()); }
+            });
+            ttsReady = true;
+        }));
     }
 
     @Override public int onStartCommand(Intent intent, int flags, int startId) {
@@ -137,6 +164,16 @@ public final class BubblesService extends Service {
         }
         if (intent != null && ACTION_STOP.equals(intent.getAction())) {
             stopSelf();
+            return START_NOT_STICKY;
+        }
+        if (intent != null && ACTION_REFRESH_VOICE.equals(intent.getAction())) {
+            if (connected) {
+                silenceReply();
+                reloadSpeechEngine();
+            } else {
+                // A preferences change must not start an unsolicited microphone session.
+                stopSelf();
+            }
             return START_NOT_STICKY;
         }
         if (!connected && intent != null && ACTION_SAVE_AUDIO.equals(intent.getAction())) { stopSelf(); return START_NOT_STICKY; }
