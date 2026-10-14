@@ -20,7 +20,8 @@
   }catch{done(null)}
  })}
  function request(db,kind,write,operation){return new Promise((resolve,reject)=>{
-  try{const tx=db.transaction('turns',write?'readwrite':'readonly'),s=tx.objectStore('turns');
+  try{const storeName=kind==='terms'?'terms':'turns';
+   const tx=db.transaction(storeName,write?'readwrite':'readonly'),s=tx.objectStore(storeName);
    const r=operation(s);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);
   }catch(e){reject(e)}
  })}
