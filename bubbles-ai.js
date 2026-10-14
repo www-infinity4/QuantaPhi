@@ -266,7 +266,7 @@ async function sendMessage(text){
  let workEvidence='';
  if(!embedded&&isOwnerWorkRequest(request)){
   workText.value=request;tools.open=true;
-  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence='Robot Brain receipt: ticket '+ticket+' is ready for the authenticated build runner. Queued only; no repair is verified complete.'}
+  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence='Robot Brain receipt: ticket '+ticket.id+' is '+ticket.status+'. '+(ticket.deduplicated?'This job was already recorded; no duplicate created.':'The jobs are saved for the authenticated runner.')+' No repair or deployment is verified complete.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='report'){
   try{workEvidence=await readBrainReport()}
@@ -488,14 +488,14 @@ async function submitWork(request,approval='explicit-click'){
   if(result.deduplicated&&Array.isArray(existingJobs)&&existingJobs.length){
    workText.value='';
    workStatus.textContent='Robot Brain ticket '+result.ticket.id+' already exists ('+result.ticket.status+'). No duplicate jobs created.';
-   return result.ticket.id;
+   return {id:result.ticket.id,status:result.ticket.status,deduplicated:true};
   }
   if(!['draft','ready','blocked'].includes(result.ticket.status))throw Error('Existing ticket '+result.ticket.id+' is '+result.ticket.status+'; inspect progress in Robot Brain.');
   const jobs=brainTools.makeJobs(request);
   const updated=await fetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...headers,'Content-Type':'application/json'},signal:AbortSignal.timeout(20000),body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify(jobs),context:{...result.ticket.context,color_jobs:jobs}})});
   const ready=await updated.json().catch(()=>({}));if(!updated.ok||!ready.ok)throw Error(ready.error||'Ticket saved as a draft but not ready; check Robot Brain.');
   workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs}}));
-  workStatus.textContent='Robot Brain ticket '+result.ticket.id+' confirmed ready with '+jobs.length+' queued jobs. No execution is claimed yet.';return result.ticket.id;
+  workStatus.textContent='Robot Brain ticket '+result.ticket.id+' confirmed ready with '+jobs.length+' queued jobs. No execution is claimed yet.';return {id:result.ticket.id,status:'ready',deduplicated:false};
  }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145);throw error}
  finally{workButton.disabled=false}
 }
