@@ -49,6 +49,15 @@ function resolveFollowupRequest(utterance, history=[]){
  if(previous.length<12||classify(previous)!=='queue')return '';
  return previous;
 }
+// Resolve a deictic repair command only against the owner's latest message.
+function resolveRepairRequest(utterance, history=[]){
+ const command=String(utterance||'').trim();
+ if(!/^(?:(?:please|bubbles)[\s,:]+)*(?:fix|repair|correct|restore)\s+(?:it|that|this|these(?: things| problems| issues)?|those(?: things| problems| issues)?)[.!]*$/i.test(command))return '';
+ const last=Array.isArray(history)?[...history].reverse().find(item=>item?.role==='user'&&typeof item.text==='string'):null;
+ const context=String(last?.text||'').trim();
+ if(context.length<12||context.length>3500||!(/\b(?:broken|fail|error|problem|issue|not working|doesn['’]t|cannot|can['’]t|won['’]t|missing)\b/i.test(context)||classify(context)==='queue'))return '';
+ return 'Repair the problems in this owner message: '+context;
+}
 function repositoryFor(text){
  const source=String(text||'').toLowerCase();
  for(const [name,repo] of Object.entries(OWNER_REPOS)){
@@ -65,7 +74,8 @@ function makeJobs(request){
   repository,executor:'repository-engine',queue_priority:80,status:'queued',
   title,instructions:message,
   acceptance:['Inspect actual repository implementation and implement this owner request; never fabricate source changes.',
-   'Run focused tests and record commit/PR evidence, noting missing credentials or services.'],
+   'Run focused tests and record commit/PR evidence, noting missing credentials or services.',
+   'Carry the tested repair through the authorized review, merge and deployment pipeline. Record the actual live result; stop and report blockers when authorization or checks are missing.'],
   dependencies:[],design:'Oracle Octaves · Android first'
  },{
   id:'TASK-2',agent:'pink-panther',color:'pink',team:['pink-panther','purple-pearl'],
@@ -99,7 +109,7 @@ function describeTickets(tickets,limit=10){
  const selected=entries.slice(0,Math.max(1,Math.min(10,Number(limit)||10)));
  return 'Robot Brain report from '+tickets.length+' saved owner tickets; '+selected.length+' job updates. Queued is not running and no payment is implied.\n'+selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
 }
-const api={classify,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets};
+const api={classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);

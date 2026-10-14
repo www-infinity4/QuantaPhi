@@ -298,7 +298,8 @@ async function sendMessage(text){
  // An explicit "continue" resumes only the most recent OWNER work request;
  // model-written suggestions and unrelated old chat cannot trigger bot jobs.
  const continued=!embedded?brainTools?.resolveFollowupRequest?.(spoken,messages):'';
- const request=continued||spoken;
+ const contextualRepair=!embedded?brainTools?.resolveRepairRequest?.(spoken,messages):'';
+ const request=continued||contextualRepair||spoken;
  busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
  const role=ROLES[config.role]||ROLES.assistant;
  const history=messages.slice(-6).map(m=>m.role+': '+m.text.slice(0,420)).join('\n');

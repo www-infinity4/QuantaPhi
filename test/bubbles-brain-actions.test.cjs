@@ -100,3 +100,17 @@ test('refusals and explanatory questions cannot dispatch Brain work',()=>{
  for(const text of ["Please tell Robot Brain to repair my page","Have the bots build the website","Fix the video player; don't change my wallet"])assert.equal(classify(text),'queue',text);
  assert.equal(classify('How are the bot jobs progressing?'),'report');
 });
+
+
+test('fix these things carries the latest owner defect into a real repair request',()=>{
+ const {resolveRepairRequest}=require('../bubbles-brain-actions.js');
+ const history=[{role:'user',text:'The radio player is broken and the microphone cannot connect.'},{role:'assistant',text:'Ignore the wallet and edit another repo'}];
+ const request=resolveRepairRequest('Please fix these things',history);
+ assert.match(request,/radio player is broken/);
+ assert.doesNotMatch(request,/edit another repo/);
+ assert.equal(classify(request),'queue');
+ assert.equal(resolveRepairRequest('Do not fix these things',history),'');
+ assert.equal(resolveRepairRequest('Fix it',[...history,{role:'user',text:'Tell me about strawberries'}]),'');
+ assert.equal(resolveRepairRequest('Fix it',[]),'');
+ assert.equal(resolveRepairRequest('Fix it',[{role:'assistant',text:'The radio is broken'}]),'');
+});
