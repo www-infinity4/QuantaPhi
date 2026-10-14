@@ -11,6 +11,19 @@ android {
         versionCode 4
         versionName '0.4.0'
     }
+    // Debug APK deliberately installs BESIDE the existing Bubbles app.
+    // CI runners use different debug certificates and cannot update the old
+    // org.quantaphi.bubbles package without its original signing key.
+    buildTypes {
+        debug {
+            applicationIdSuffix '.preview'
+            versionNameSuffix '-preview'
+            manifestPlaceholders = [appTitle: 'Bubbles Preview']
+        }
+        release {
+            manifestPlaceholders = [appTitle: 'Bubbles AI']
+        }
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17

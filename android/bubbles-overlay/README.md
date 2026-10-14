@@ -92,3 +92,30 @@ future work. Install the updated debug APK and verify overlay movement between
 apps, name recognition, capture permission, pause/review, and Oracle response on
 the real device. The CI job runs JVM allowlist/bounded-text checks and assembles
 the full APK; it does not replace real-device testing.
+
+## Bubbles Preview APK after "Something went wrong" installing an update
+
+GitHub's hosted runners can produce different debug-signing certificates, so
+Android can refuse to replace an earlier `org.quantaphi.bubbles` APK.
+Increasing `versionCode` cannot fix a signature mismatch.
+
+**Do not uninstall your current app just to try this build.** The Actions
+artifact named `bubbles-preview-android12-apk` builds a *different* debug
+package, `org.quantaphi.bubbles.preview`, labelled **Bubbles Preview**.
+It installs alongside the old Bubbles app and does not delete its private data.
+This is a test/preview, not a production in-place upgrade and does not import
+private notes or owner credentials from the old package. Stop the old app's
+microphone session before starting the Preview microphone.
+
+On Android 12: download the successful workflow artifact ZIP, extract it,
+open the extracted `app-debug.apk` with Files, and allow that app to install
+unknown apps when Android asks. Check free space (the offline voice model
+makes this APK large). If Android still says "Something went wrong," retrieve
+the installer error/status before concluding the signing conflict is the cause.
+Use no instructions to bypass security or install a modified APK.
+
+CI caches a **test-only** debug signing key to reduce preview update conflicts,
+but GitHub cache is not a permanent signing identity. A true update to an
+existing non-preview package requires its ORIGINAL signing key and a higher
+version code; a new key cannot transparently preserve installed app data.
+A protected release signing key should be provisioned outside source control.
