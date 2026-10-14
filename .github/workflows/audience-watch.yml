@@ -16,7 +16,7 @@ on:
       - 'test/audience-audit.test.mjs'
       - '.github/workflows/audience-watch.yml'
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: quantaphi-audience-audit
   cancel-in-progress: false
@@ -39,18 +39,13 @@ jobs:
         id: site_audit
         continue-on-error: true
         run: node scripts/audience-audit.mjs
-      - name: Publish inspection evidence (including failures)
+      - name: Summarize verified inspection (no protected branch writes)
         if: always()
         run: |
           if test -f audience-evidence/latest.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add audience-evidence/latest.json
-            if ! git diff --cached --quiet; then
-              git commit -m "Publish sourced audience discovery inspection [skip ci]"
-              git pull --rebase origin main
-              git push origin HEAD:main
-            fi
+            node --input-type=module -e 'import fs from "node:fs"; const r=JSON.parse(fs.readFileSync("audience-evidence/latest.json","utf8")); console.log("Audience audit:",r.status,r.summary); const note=["### QuantaPhi audience audit", "", "Status: **"+r.status+"**", "Pages: "+r.summary.healthyPages+" healthy / "+r.summary.pagesChecked+" checked", "Sitemap: "+(r.sitemap.healthy?"OK":"Needs work"), "", ...r.pages.filter(x=>!x.healthy).map(x=>"- "+x.url+": "+x.findings.map(f=>f.code).join(", "))].join("\\n"); fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,note+"\\n");'
+          else
+            echo "Audit file missing; no fabricated receipt" >> "$GITHUB_STEP_SUMMARY"
           fi
       - name: Store audit evidence
         if: always()
