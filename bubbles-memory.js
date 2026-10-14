@@ -11,9 +11,10 @@
  function database(){return new Promise(resolve=>{
   if(!global.indexedDB)return resolve(null);
   let finished=false;const done=db=>{if(!finished){finished=true;resolve(db)}};
-  try{const request=indexedDB.open(DB_NAME,1);
+  try{const request=indexedDB.open(DB_NAME,2);
    request.onupgradeneeded=()=>{const db=request.result;if(!db.objectStoreNames.contains('turns')){
-    const store=db.createObjectStore('turns',{keyPath:'id'});store.createIndex('byTime','at');}};
+    const store=db.createObjectStore('turns',{keyPath:'id'});store.createIndex('byTime','at');}
+   if(!db.objectStoreNames.contains('terms'))db.createObjectStore('terms',{keyPath:'key'}).createIndex('byTerm','scopeTerm');};
    request.onsuccess=()=>done(request.result);request.onerror=()=>done(null);
    request.onblocked=()=>done(null);
   }catch{done(null)}
@@ -24,8 +25,11 @@
   }catch(e){reject(e)}
  })}
  async function list(db){return db?request(db,'all',false,s=>s.getAll()):[]}
+ function tokenize(text){return [...new Set(String(text).toLowerCase().match(/[a-z0-9]{3,}/g)||[])].slice(0,160)}
  async function record(db,entry){if(!db)return false;return new Promise(resolve=>{
-  try{const t=db.transaction('turns','readwrite');t.objectStore('turns').put(entry);
+  try{const t=db.transaction(['turns','terms'],'readwrite');t.objectStore('turns').put(entry);
+   const terms=t.objectStore('terms'),partition=entry.scope||'guest';
+   for(const term of tokenize(entry.text))terms.put({key:partition+'|'+term+'|'+entry.id,scopeTerm:partition+'|'+term,id:entry.id});
    t.oncomplete=()=>resolve(true);t.onerror=t.onabort=()=>resolve(false);
   }catch{resolve(false)}})}
  function matches(e,q){const words=q.toLowerCase().split(/[^a-z0-9]+/).filter(x=>x.length>2);
@@ -53,7 +57,17 @@
    .filter(e=>(e.scope||'guest')===scope).sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id))}
   async function recent(limit=30){return (await all()).slice(-limit)}
   async function search(q,limit=8){
-   const xs=(await all()).map(e=>({...e,score:matches(e,q)})).filter(e=>e.score>0);
+   const db=await dbPromise;if(!db)return [];
+   const terms=tokenize(q).slice(0,24),scores=new Map();
+   // Indexed retrieval: search only the matching terms, not every old transcript.
+   for(const term of terms){
+    const items=await request(db,'terms',false,s=>s.index('byTerm').getAll(scope+'|'+term));
+    for(const item of items)scores.set(item.id,(scores.get(item.id)||0)+1);
+   }
+   const xs=[];
+   for(const [id,score] of scores){const e=await request(db,'one',false,s=>s.get(id));
+    if(e&&(e.scope||'guest')===scope)xs.push({...e,score});
+   }
    xs.sort((a,b)=>b.score-a.score||b.at-a.at);return xs.slice(0,limit);
   }
   async function context(q){
@@ -120,10 +134,14 @@
   async function clear({cloudToo=false}={}){
    if(cloudToo&&cloud)await remoteFetch('/v1/history',{method:'DELETE'});
    const db=await dbPromise;if(db)await new Promise(resolve=>{
-    const tx=db.transaction('turns','readwrite'),store=tx.objectStore('turns');
+    const tx=db.transaction(['turns','terms'],'readwrite'),store=tx.objectStore('turns');
     const cursorRequest=store.openCursor();
     cursorRequest.onsuccess=()=>{const row=cursorRequest.result;if(row){
      if((row.value.scope||'guest')===scope)row.delete();row.continue();
+    }};
+    const termRequest=tx.objectStore('terms').openCursor();
+    termRequest.onsuccess=()=>{const row=termRequest.result;if(row){
+     if(row.value.scopeTerm.startsWith(scope+'|'))row.delete();row.continue();
     }};
     tx.oncomplete=tx.onerror=tx.onabort=()=>resolve();
    });
