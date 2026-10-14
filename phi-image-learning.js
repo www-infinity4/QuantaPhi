@@ -29,7 +29,10 @@ function preferences(mode){
 }
 root.PhiImageLearning={record,preferences,summary:()=>read().map(x=>({...x}))};
 })(window);
-\n\n/* Intelligent Card workspace modules. Loaded before phi-image-builder.js in the existing deferred sequence. */\n/* QuantaPhi card context: same-tab topic and source, never payment or account state. */
+
+
+/* Intelligent Card workspace modules. Loaded before phi-image-builder.js in the existing deferred sequence. */
+/* QuantaPhi card context: same-tab topic and source, never payment or account state. */
 (function(root){
 'use strict';
 const KEY='phi_card_context_v1',TTL=1800000;
