@@ -499,6 +499,14 @@ async function submitWork(request,approval='explicit-click'){
  finally{workButton.disabled=false}
 }
 workButton.addEventListener('click',()=>{void submitWork(workText.value.trim()).catch(()=>{})});
+// Android hands off text only. Owner credentials remain in the verified website;
+// an explicit owner button press is required before saving any ticket.
+const incomingWork=params.get('workRequest');
+if(!embedded&&incomingWork&&incomingWork.length<=1800){
+ workText.value=incomingWork;tools.open=true;toggle(true);
+ workStatus.textContent='Android work draft received. Verify your owner wallet and press Send approved request to Robot Brain. No ticket has been submitted.';
+ history.replaceState(null,'',location.pathname);
+}
 window.QuantaBubbles={open:()=>toggle(true),close:()=>toggle(false)};
 if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
