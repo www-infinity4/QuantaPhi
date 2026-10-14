@@ -47,7 +47,7 @@ test('jobs target an allowlisted repository and its real repository executor',()
 
 test('report uses recorded job status and blocker, never invents progress',()=>{
  const report=describeTickets([
-  {id:'IW-20261013-AABBCCDD',updated_at:1,context:{kind:'robot-directions',color_jobs:[
+  {id:'IW-20261013-AABBCCDD',created_at:Date.now(),updated_at:1,context:{kind:'robot-directions',color_jobs:[
    {id:'TASK-1',agent:'greenbeans',title:'Repair video',repository:'www-infinity4/QuantaPhi',status:'queued'},
    {id:'TASK-2',agent:'pink-panther',title:'Verify video',repository:'www-infinity4/QuantaPhi',status:'blocked',progress:{blocker:'no GPU host'}}
   ]}}
@@ -77,7 +77,7 @@ test('website uses same-origin verified owner gate for Brain calls and keeps gue
  assert.match(js,/BRAIN\+'\/work\/tickets\/list'/);
  assert.match(js,/brainTools\.makeJobs\(request\)/);
  assert.match(js,/result\.deduplicated/);
- assert.match(js,/jobs are saved for the authenticated runner/);
+ assert.match(js,/you do not need to press another button/);
 });
 
 test('owner continue resumes the immediately preceding explicit task without broadening privileges',()=>{
@@ -113,4 +113,21 @@ test('fix these things carries the latest owner defect into a real repair reques
  assert.equal(resolveRepairRequest('Fix it',[...history,{role:'user',text:'Tell me about strawberries'}]),'');
  assert.equal(resolveRepairRequest('Fix it',[]),'');
  assert.equal(resolveRepairRequest('Fix it',[{role:'assistant',text:'The radio is broken'}]),'');
+});
+
+
+test('explicit repository requests route to owner work without turning explanations into jobs',()=>{
+ for(const text of ['Start a repo for my new widget','Create a repository called widget-tools','Edit the repo player','Search all my repos and pull together radio widgets'])assert.equal(classify(text),'queue',text);
+ for(const text of ['Explain how to start a repo','Do not search my repos'])assert.equal(classify(text),'chat',text);
+});
+
+
+test('owner job receipts finish before the chat-only service can contradict them',()=>{
+ const js=fs.readFileSync('bubbles-ai.js','utf8');
+ const branch=js.slice(js.indexOf('if(workEvidence){'),js.indexOf('const prompt='));
+ assert.match(branch,/nativeSpeechReply=workEvidence/);
+ assert.match(branch,/messages.push\(\{role:'assistant',text:workEvidence\}\)/);
+ assert.match(branch,/busy=false;send.disabled=false/);
+ assert.match(branch,/return;/);
+ assert.match(js,/https:\/\/quantaphi.org\/#robotDirections/);
 });

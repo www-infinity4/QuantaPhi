@@ -91,8 +91,7 @@ test('local speech energy lights the bubble without sending a chat request',asyn
 test('explicit repair command is kept as work rather than a fabricated chat repair',async()=>{
  const h=harness();h.orb.handlers.click();await flush();
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles fix the image upload')]});await flush();
- assert.equal(h.requests.length,1,'GPT explains the blocked submission without making a Brain write');
- assert.match(JSON.parse(h.requests[0].opts.body).input,/No job was confirmed queued/);
+ assert.equal(h.requests.length,0,'Blocked owner submission reports its actual result without a second chat request');
  assert.equal(h.nodes.find(n=>n['aria-label']==='Work request for Robot Brain').value,'fix the image upload');
  assert.ok(h.nodes.some(n=>String(n.textContent||'').includes('No job was confirmed queued')));
 });
@@ -101,11 +100,12 @@ test('owner repair command creates and readies one real ticket with receipt',asy
  const h=harness(true);await flush();h.orb.handlers.click();await flush();
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles repair the video generator')]});
  await new Promise(resolve=>setTimeout(resolve,20));await flush();
- assert.equal(h.requests.length,3);assert.match(h.requests[0].url,/tickets\/create$/);assert.match(h.requests[1].url,/tickets\/update$/);
+ assert.equal(h.requests.length,2);assert.match(h.requests[0].url,/tickets\/create$/);assert.match(h.requests[1].url,/tickets\/update$/);
  assert.equal(JSON.parse(h.requests[0].opts.body).context.approval,'explicit-user-command');
- assert.match(JSON.parse(h.requests[2].opts.body).input,/fixture-ticket is ready/);
+ assert.ok(h.nodes.some(n=>n.tag==='a'&&n.href==='https://quantaphi.org/#robotDirections'),'Receipt contains a clickable progress link');
+ assert.ok(h.requests.every(r=>!r.url.includes('/v1/assist')),'No chat-only service can contradict the receipt');
  assert.equal(h.nodes.find(n=>n['aria-label']==='Work request for Robot Brain').value,'');
- assert.ok(h.nodes.some(n=>String(n.textContent||'').includes('Robot Brain receipt: ticket fixture-ticket is ready')));
+ assert.ok(h.nodes.some(n=>[n.textContent,...n.children.filter(c=>typeof c==='string')].join('').includes('Your request is saved and waiting for the repair runner')));
 });
 
 test('spoken replies keep the same microphone and recognizer active',async()=>{
@@ -125,6 +125,6 @@ test('owner helper loaded after Bubbles is connected after deferred scripts fini
  h.orb.handlers.click();await flush();
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles repair the upload')]});
  await new Promise(resolve=>setTimeout(resolve,20));await flush();
- assert.equal(h.requests.length,3);
+ assert.equal(h.requests.length,2);
 });
 

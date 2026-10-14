@@ -220,6 +220,16 @@ function speakText(value){
 function display(text,who,greeting=false){
  const line=create('div','ba-line '+(who==='you'?'ba-line-you':'ba-line-ai'));
  const bubble=create('p','ba-message '+(who==='you'?'ba-you':'ba-assistant'),text);
+ // Render only explicit HTTP(S) URLs as links; all other content stays text.
+ if(who!=='you'){
+  bubble.textContent='';let cursor=0;const value=String(text);
+  for(const match of value.matchAll(/https?:\/\/[^\s<>"']+/g)){
+   const url=match[0].replace(/[),.;!?]+$/,'');
+   bubble.append(value.slice(cursor,match.index));
+   const link=create('a','ba-reply-link',url);link.href=url;link.target='_blank';link.rel='noopener noreferrer';bubble.append(link);cursor=match.index+url.length;
+  }
+  bubble.append(value.slice(cursor));
+ }
  line.append(bubble);
  if(who!=='you'&&!greeting){
   const row=create('div','ba-message-actions');
@@ -308,7 +318,7 @@ async function sendMessage(text){
  let workEvidence='';
  if(!embedded&&isOwnerWorkRequest(request)){
   workText.value=request;tools.open=true;
-  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence=(continued?'Resumed your last specific work request. ':'')+'Robot Brain receipt: ticket '+ticket.id+' is '+ticket.status+'. '+(ticket.deduplicated?'This job was already recorded; no duplicate created.':'The jobs are saved for the authenticated runner.')+' No repair or deployment is verified complete.'}
+  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence=(continued?'Continuing your last request. ':'')+(ticket.deduplicated?'This request is already saved. Its recorded status is '+ticket.status+'.':'Your request is saved and waiting for the repair runner; you do not need to press another button.')+' Follow progress here: https://quantaphi.org/#robotDirections . Reference: '+ticket.id+'. The repair is not yet verified finished.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='report'){
   try{workEvidence=await readBrainReport()}
@@ -316,11 +326,26 @@ async function sendMessage(text){
  }
  // Show the authoritative receipt immediately, then let GPT explain it.
  // Model latency or failure cannot change whether the Brain job was recorded.
- if(workEvidence){display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240)}
+ if(workEvidence){
+  // The authenticated tool result is final; a second chat-only service cannot
+  // contradict it or invent another submit step.
+  display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240);
+  messages.push({role:'assistant',text:workEvidence});messages=messages.slice(-20);persistChat();
+  try{
+   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=workEvidence;
+   else if(config.voice&&!nativeOverlay)speakText(workEvidence);
+  }finally{
+   nativeSpeechPending=false;busy=false;send.disabled=false;
+   if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
+  }
+  return;
+ }
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
  'You have NO independent GitHub write authorization or access to ChatGPT/Claude subscriptions. Only confirmed owner-submitted Robot Brain tickets count as queued; never claim a repository change occurred without tool evidence.',
+ 'Keep the owner on QuantaPhi. Never invent a navigation destination. If a real evidence URL is available, include its full https URL in text so the interface can make it clickable. Explain work states in plain English: waiting, working, blocked, or finished with proof.',
  'When the work receipt says ready or queued, submission is already complete. Never tell the owner to click a submit, run, publish or finish button. The authorized runner handles execution. Report recorded blockers honestly; never invent a missing control or claim a repair is complete.',
  'Actual authorized work result:\n'+workEvidence,'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Speak in calm, natural British English. Default to one or two short sentences (20–50 words). No greeting or repeated summary. Elaborate when requested or needed for a safe, useful explanation. For a task, report the verified outcome and next step; distinguish completed, queued and blocked. Plain text.'].join('\n\n');
  try{

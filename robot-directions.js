@@ -170,7 +170,7 @@ auditButton.addEventListener('click',async()=>{
  finally{auditButton.disabled=false}
 });
 const input=root.querySelector('textarea'),send=root.querySelector('[data-send]'),status=root.querySelector('p[role="status"]'),list=root.querySelector('[data-jobs]');
-const history=document.createElement('div'),historyBox=document.createElement('details'),historyTitle=document.createElement('summary');historyTitle.textContent='Past work tickets';historyBox.append(historyTitle,history);list.before(historyBox);
+const history=document.createElement('div'),historyBox=document.createElement('details'),historyTitle=document.createElement('summary');historyTitle.textContent='Past work tickets';historyBox.append(historyTitle,history);// Historical tickets remain stored, but are not rendered in the owner console.
 const OWNER='infinity-work-ticket-owner-v1',DRAFT='quantaphi-robot-directions-draft-v1';
 const API='https://infinity-brain-clock.marvaseater.workers.dev';
 const node=(tag,text)=>{const n=document.createElement(tag);n.textContent=text;return n};
@@ -216,12 +216,12 @@ clearButton.addEventListener('click',async()=>{
  try{
   await ready;clearTimeout(draftTimer);input.value='';await storage(DRAFT,'');
   try{localStorage.removeItem(DRAFT)}catch{}
-  status.textContent='Text cleared. Your saved jobs are still available.';input.focus();
+  status.textContent='Instructions cleared.';input.focus();
  }catch(e){status.textContent='Could not clear the saved draft: '+e.message}
  finally{clearButton.disabled=false}
 });
 let draftTimer;input.addEventListener('input',()=>{clearTimeout(draftTimer);draftTimer=setTimeout(()=>storage(DRAFT,input.value).catch(()=>{status.textContent='Draft stays in this page until you send it to Cloudflare.'}),250)});
-async function refresh(){if(refreshing)return;refreshing=true;try{await ready;const d=await post('/v1/tickets/list',{});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();for(const t of tickets){const b=node('button',t.title+' · '+t.status);b.type='button';b.addEventListener('click',()=>{pending=t;show(t)});history.append(b)}const t=tickets.find(x=>x.id===pending?.id)||tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}finally{refreshing=false}}
+async function refresh(){if(refreshing)return;refreshing=true;try{await ready;const d=await post('/v1/tickets/list',{});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();const t=tickets.find(x=>x.id===pending?.id)||tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}finally{refreshing=false}}
 let pending=null,refreshing=false;
 send.addEventListener('click',async()=>{
  const directions=input.value.trim();if(!directions){status.textContent='Write your directions first.';return}

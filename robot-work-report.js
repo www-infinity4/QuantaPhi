@@ -11,7 +11,7 @@
  report.type='button';top.type='button';bar.append(report,top);
  const stamp=make('small','Waiting for verified task records.');
  const prose=make('div','');prose.className='robot-work-prose';prose.setAttribute('aria-live','polite');
- panel.append(bar,stamp,prose);
+ panel.append(stamp,prose);
  const help=make('p','Tell Bubbles what needs fixing. You can read the latest progress here without pressing any buttons.');
  panel.prepend(help);
  const spareJobs=root.querySelector('[data-refresh]'),spareGemini=root.querySelector('[data-gemini]');
@@ -26,10 +26,13 @@
   const rows=[];
   for(const ticket of Array.isArray(tickets)?tickets:[]){
    if(ticket?.context?.kind!=='robot-directions')continue;
+   const created=Number(ticket.created_at)||Date.parse(ticket.created_at||'')||0;
+   const freshRequest=created>0&&Date.now()-created<24*60*60*1000;
    for(const job of ticket.context.color_jobs||[]){
     const rawStatus=clean(job.status||'queued',35),progress=job.progress||{};
     const stamp=Date.parse(progress.attemptedAt||progress.last_inspected_at||job.last_inspected_at||'')||0;
     const status=['working','running','leased'].includes(rawStatus)&&(!stamp||Date.now()-stamp>30*60000)?'unverified':rawStatus;
+    if(!freshRequest&&!(stamp>0&&Date.now()-stamp<30*60000&&['working','running','leased'].includes(rawStatus)))continue;
     const tier=['working','running','leased'].includes(status)?0:['ready','queued','unverified'].includes(status)?1:status==='blocked'?2:3;
     rows.push({id:clean(ticket.id,80)+'/'+clean(job.id,45),title:clean(job.title,150),agent:clean(job.agent||'unassigned',65),repository:clean(job.repository||'unresolved repository',100),status,tier,priority:Number(job.queue_priority)||0,summary:clean(progress.summary,320),next:clean(progress.next,200),blocker:clean(progress.blocker,200),when:Date.parse(progress.attemptedAt||job.last_inspected_at||'')||Number(ticket.updated_at)||0});
    }
@@ -47,7 +50,7 @@
    if(r.blocker)sentence+=' Blocker: '+r.blocker+'.';else if(r.next)sentence+=' Next: '+r.next+'.';
    lines.push(sentence+' Reference: '+r.id+'.');
   });
-  if(!rows.length)lines.push('No owner tasks were returned. This is not evidence of active bot work.');
+  if(!rows.length)lines.push('No recent work is running or waiting. Tell Bubbles what you want done, or submit instructions below.');
   const counts=earnings?.counts;
   if(earnings?.ok&&counts)lines.push('Automatic reward audit: '+(Number(counts.paid)||0)+' paid work receipts; '+(Number(counts.eligibleUnpaid)||0)+' eligible but unpaid; '+(Number(counts.unverified)||0)+' unverified or blocked; '+(Number(counts.failedRetry)||0)+' delayed retries. This report does not issue payments.');
   else lines.push('Reward-status endpoint could not be verified; no payment is assumed.');

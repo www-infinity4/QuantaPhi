@@ -13,3 +13,9 @@
 #robotDirections .robot-work-report small{display:block;font-size:13px;line-height:1.55;color:#62554d}
 #robotDirections .robot-work-actions button:focus-visible{outline:3px solid #b83b32;outline-offset:2px}
 @media(max-width:390px){#robotDirections .robot-work-report{padding:9px}#robotDirections .robot-work-prose p{padding:9px 10px}}
+
+/* Owner console: current progress and one instruction form. */
+#robotDirections{font-size:18px;line-height:1.65;background:#fff;color:#29231f}
+#robotDirections .robot-work-prose p{font-size:18px;line-height:1.7}
+#robotDirections .robot-work-report small,#robotDirections [role=status]{font-size:16px}
+#robotDirections>details,#robotDirections [data-refresh],#robotDirections [data-gemini],#qai-more,#qai-dashboard,.qai-brain{display:none!important}
