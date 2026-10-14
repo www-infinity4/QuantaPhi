@@ -43,6 +43,8 @@ test('website repair requests get high reasoning and a larger output budget',asy
    assert.equal(options.reasoning_effort,'high');
    assert.equal(options.max_tokens,3000);
    assert.match(options.messages[0].content,/only verified tool receipts/);
+   assert.match(options.messages[0].content,/test\\/bubbles-brain-actions\\.test\\.cjs/);
+   assert.match(options.messages[0].content,/workers\\/infinity-brain-clock\\/worker\\.js/);
    return {response:'The request needs a verified repository repair.'};
  }}});
  assert.equal(result.status,200);assert.match((await result.json()).output,/verified repository repair/);
