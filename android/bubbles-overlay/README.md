@@ -135,3 +135,35 @@ Verified reference docs:
 - https://developers.openai.com/api/docs/guides/voice-webrtc
 - https://github.com/k2-fsa/sherpa-onnx
 - https://github.com/HayaiApp/HayaiTTS
+
+## Installed Android voice picker (October 14 follow-up)
+
+The **Choose and test Bubbles voice** button lists voices the phone's currently
+selected Android TTS engine actually reports, marks on-device versus
+network-required voices, saves an engine-scoped voice identifier to private app
+preferences, and plays a short sample. Voice choice refreshes the running
+Bubbles foreground service without stopping its microphone. The fallback
+is the installed engine's English/default voice when a saved voice is missing.
+The separate **Change Android speech engine** button opens Android's TTS
+settings if available; **Optional: install open-source neural voices** links
+HayaiTTS, which the user must install and enable separately.
+
+This is a *speech-output picker*, not speech-recognition improvement,
+voice cloning, or a licensed ChatGPT Live voice. NaturalReader's proprietary
+voices are not extracted or redistributed. Any self-voice-cloning service
+should require an explicit microphone sample and confirmation that the
+recorded speaker has authorized cloning. Evaluate OpenVoice V2 (MIT code and
+model claims) separately from large noncommercial model-weight families.
+A song-generation provider such as ACE-Step 1.5 and pitch-controlled
+DiffSinger/OpenUtau would be distinct, optional **singing tools**, not a
+replacement for real-time spoken assistant replies. Check each model's
+weights and distribution terms before offering paid StarCoin services.
+
+**Test on the actual Android phone:** choose a bundled voice, listen to the
+sample, ask Bubbles a question, switch to HayaiTTS as Android's TTS provider
+if installed, reopen the selector, choose a neural voice, and ask again
+without stopping the mic. Also test the no-voice-data and engine-not-installed
+cases. GitHub CI can confirm compilation but not perceived quality or
+always-listening battery/microphone performance. This branch does not change
+Robot Brain job submission, radio playback, wallet transfers, or Android
+screen-recording permissions.
