@@ -133,7 +133,7 @@ function promptFor(topic,kind='Image'){
   'Story Illustration':'Create a cinematic but faithful story illustration based on '+subject+', avoiding invented historical claims.',
   'Thumbnail':'Create an attractive subject-first thumbnail about '+subject+' with clear shapes and editable title space.'
  };
- return kind==='Logo / Wordmark'?sentences[kind]+'\\nTitle: '+t:(sentences[kind]||'Create an original, detailed illustration of '+subject+', reflecting the topic with grounded visual details and a clear focal point.');
+ return kind==='Logo / Wordmark'?sentences[kind]+'\nTitle: '+t:(sentences[kind]||'Create an original, detailed illustration of '+subject+', reflecting the topic with grounded visual details and a clear focal point.');
 }
 root.PhiImageSuggestions={modes:modes.map(([label,base])=>({label,renderMode:base})),ranked,renderMode,instructions,promptFor};
 })(window);
