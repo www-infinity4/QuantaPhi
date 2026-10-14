@@ -372,8 +372,8 @@ async function sendMessage(text){
  busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
  const role=ROLES[config.role]||ROLES.assistant;
  const history=keepChat&&longMemory?(await longMemory.context(request))||
-   messages.slice(-8).map(m=>m.role+': '+m.text.slice(0,700)).join('\\n'):
-   messages.slice(-8).map(m=>m.role+': '+m.text.slice(0,700)).join('\\n');
+   messages.slice(-8).map(m=>m.role+': '+m.text.slice(0,700)).join('\n'):
+   messages.slice(-8).map(m=>m.role+': '+m.text.slice(0,700)).join('\n');
  messages.push({role:'user',text:request});messages=messages.slice(-30);persistChat();
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
