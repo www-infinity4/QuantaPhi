@@ -1,0 +1,64 @@
+name: QuantaPhi audience discovery health bots
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'explore/**'
+      - 'bubbles.html'
+      - 'video-studio.html'
+      - 'learn/**'
+      - 'sitemap.xml'
+      - 'scripts/audience-audit.mjs'
+      - 'test/audience-audit.test.mjs'
+      - '.github/workflows/audience-watch.yml'
+permissions:
+  contents: write
+concurrency:
+  group: quantaphi-audience-audit
+  cancel-in-progress: false
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify audit source and regression tests
+        run: |
+          node --check scripts/audience-audit.mjs
+          node --test test/audience-audit.test.mjs
+      - name: Inspect public search landing pages and social previews
+        id: site_audit
+        continue-on-error: true
+        run: node scripts/audience-audit.mjs
+      - name: Publish inspection evidence (including failures)
+        if: always()
+        run: |
+          if test -f audience-evidence/latest.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add audience-evidence/latest.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Publish sourced audience discovery inspection [skip ci]"
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
+      - name: Store audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quantaphi-audience-evidence
+          path: audience-evidence/latest.json
+          if-no-files-found: warn
+      - name: Fail visibly on broken pages or missing share metadata
+        if: steps.site_audit.outcome == 'failure'
+        run: exit 1
