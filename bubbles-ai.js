@@ -80,11 +80,11 @@ async function sharedVoice(claim=false){
  if(embedded||!ownerReady||!ownerHeaders)return true;
  try{
   const response=await fetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({mode:claim?'voice-claim':'voice-renew',client:memoryClient}),signal:AbortSignal.timeout(10000)});
-  const result=await response.json();if(!response.ok||!result.ok)return true;
+  const result=await response.json();if(!response.ok||!result.ok)throw Error('voice_coordination_unavailable');
   voiceConflict=!result.owned;
   if(voiceConflict&&!nativeOverlay&&voiceEnabled)stopVoice('Bubbles microphone moved to your other session. Your conversation stays saved.');
   return !voiceConflict;
- }catch{return true}
+ }catch{voiceConflict=true;memoryHint.textContent='Microphone coordination is unavailable. Reconnect before starting another owner voice session.';if(!nativeOverlay&&voiceEnabled)stopVoice('Shared microphone coordination is unavailable.');return false}
 }
 function persistChat(){
  for(const m of messages){if(!m.id){m.id=crypto.randomUUID();m.at=Date.now();}if(!m.at)m.at=Date.now();}
@@ -328,8 +328,10 @@ function isOwnerWorkRequest(text){
  const followup=/(?:^|[.!?]\s+)(?:please\s+)?(?:fix|repair|restore|update|upgrade|wire|connect)\b/i;
  return verb.test(request)&&target.test(request)&&(direct.test(request)||directive.test(request)||followup.test(request));
 }
-async function sendMessage(text){
+async function sendMessage(text,fromVoice=false){
  const spoken=String(text||'').trim();if(busy||!spoken)return;
+ if(fromVoice&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
+ if(busy)return;
  const noteResult=noteCommand(spoken);
  if(noteResult){
   messages.push({role:'user',text:spoken},{role:'assistant',text:noteResult});persistChat();
@@ -373,7 +375,7 @@ async function sendMessage(text){
   }finally{
    nativeSpeechPending=false;busy=false;send.disabled=false;
    if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
+   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
   }
   return;
  }
@@ -420,7 +422,7 @@ async function sendMessage(text){
      nativeSpeechPending=false;
    }
    busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-    if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
+    if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
   }
 }
 composer.addEventListener('submit',event=>{event.preventDefault();void sendMessage(input.value)});
@@ -475,7 +477,7 @@ function heardTranscript(transcript){
  const turn=voiceGate.accept(transcript,Date.now());
  if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
  if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';return}
- if(turn.type==='message'){if(busy)voicePending=turn.text;else void sendMessage(turn.text)}
+ if(turn.type==='message'){if(busy)voicePending=turn.text;else void sendMessage(turn.text,true)}
 }
 async function startVoice(){
  if(voiceEnabled||voiceStarting)return;
@@ -484,7 +486,7 @@ async function startVoice(){
  if(!voiceGate){voiceStarting=false;status.textContent='Voice command rules did not load. Reload this page.';return}
  if(!navigator.mediaDevices?.getUserMedia){voiceStarting=false;status.textContent='This browser cannot request a microphone. Open QuantaPhi in Chrome.';return}
  try{
-  voiceLeaseWanted=true;await sharedVoice(true);
+  voiceLeaseWanted=true;if(!await sharedVoice(true))throw Error('Shared microphone could not be claimed.');
   const stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
   if(generation!==voiceGeneration){stream.getTracks().forEach(t=>t.stop());return}
   meterStream=stream;voiceEnabled=true;voiceResumeWanted=true;voiceGate.reset();
@@ -639,7 +641,7 @@ window.QuantaBubbles={
   const value=String(message||'').slice(0,1800).trim();
   if(!value)return false;
   nativeSpeechReply='';nativeSpeechPending=true;
-  void sendMessage(value);
+  void sendMessage(value,true);
   return true;
  },
  drainNativeReply:()=>{
