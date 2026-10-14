@@ -24,7 +24,7 @@ test('Live model is real OpenAI API, not substitute Android speech synthesis',()
  assert.match(frontend,/new RTCPeerConnection\(\)/);
  assert.match(frontend,/getUserMedia\(/);
  assert.match(frontend,/session\.close/);
- assert.doesNotMatch(frontend.split('\n').filter(line=>!line.trim().startsWith('//')).join('\n'),/localStorage|sessionStorage/);
+ assert.doesNotMatch(frontend,/speechSynthesis|TextToSpeech/);
 });
 test('live broker fails closed on unconfigured server and wrong origin',async()=>{
  const app=await load();
@@ -64,6 +64,6 @@ test('valid authorized session forwards SDP to GPT Live, never returns API key',
 test('UI never stores owner token or promises free ChatGPT Live audio',()=>{
  assert.match(html,/Owner-only developer connection/);
  assert.match(html,/separately billed OpenAI project API key/);
- assert.doesNotMatch(frontend,/\b(?:localStorage|sessionStorage)\s*\./);
+ assert.doesNotMatch(frontend.split('\n').filter(line=>!line.trim().startsWith('//')).join('\n'),/localStorage|sessionStorage/);
  assert.match(frontend,/secret\.value=""/);
 });
