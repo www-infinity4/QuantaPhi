@@ -93,3 +93,10 @@ test('owner continue resumes the immediately preceding explicit task without bro
  assert.equal(resolveFollowupRequest('continue',[{role:'user',text:'Explain what a repository is'}]),'');
 });
 
+
+
+test('refusals and explanatory questions cannot dispatch Brain work',()=>{
+ for(const text of ["Don't queue a job in Robot Brain","Bubbles, please do not tell the bots to repair my page","I don't want the bots to build anything","I want you not to dispatch agents to repair the site","Explain how bots build a website","How can I start a job in Robot Brain?","Describe how Robot Brain repairs pages"])assert.equal(classify(text),'chat',text);
+ for(const text of ["Please tell Robot Brain to repair my page","Have the bots build the website","Fix the video player; don't change my wallet"])assert.equal(classify(text),'queue',text);
+ assert.equal(classify('How are the bot jobs progressing?'),'report');
+});
