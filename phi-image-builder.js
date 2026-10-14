@@ -4,13 +4,13 @@
 const host=document.getElementById('phiImageBuilder');
 const renderer=window.PhiVisualRender;
 if(!host||!renderer)return;
-const modes=['Image','Trading Card','Advertisement','Billboard','Poster','Cover Art'];
+const modes=window.PhiImageSuggestions?.modes||['Image','Trading Card','Advertisement','Billboard','Poster','Cover Art'].map(label=>({label,renderMode:label}));
 const names=['Reading uploaded photo','Planning with Oracle GPT','Rendering original image','Checking finished artwork'];
 const make=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=text;return el};
 const $=selector=>host.querySelector(selector);
 const emit=(type,detail)=>window.dispatchEvent(new CustomEvent('phi:image:'+type,{detail}));
 const id=()=>crypto?.randomUUID?.()||('phi-'+Date.now()+'-'+Math.random().toString(36).slice(2));
-let mode='Image',source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',lastManualText='',lastTextMode='auto',preparingReference=false,lastRenderPlan=null,storyWriterId='';
+let mode='Image',buildType='Image',promptEdited=false,autoPrefill=false,source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',lastManualText='',lastTextMode='auto',preparingReference=false,lastRenderPlan=null,storyWriterId='';
 function state(value){host.dataset.stage=value;host.setAttribute('aria-busy',value==='progress'?'true':'false')}
 function section(title,copy){const box=make('section','pi-section');box.append(make('h3','',title));if(copy)box.append(make('p','pi-sub',copy));return box}
 function letteringMode(){const field=$('#pi-exact-text');const enabled=$('#pi-text-mode').value==='exact';field.disabled=!enabled;field.hidden=!enabled}
@@ -54,16 +54,19 @@ function layout(){
  host.classList.add('oracle-image-studio');
  const form=make('div','pi-composer pi-panel');
  form.append(make('span','pi-eyebrow','ORACLE · BLUE IMAGE GENERATOR'),make('h2','','Create your image'),make('p','pi-sub','Describe what you want in ordinary words. Oracle automatically prints requested titles and slogans accurately, then grades the image. Fix image corrects the result without moving or reuploading it.'));
- const format=section('1 · Choose a format');const choices=make('div','pi-modes');
- for(const name of modes){const b=make('button','pi-mode',name);b.type='button';b.dataset.piMode=name;b.setAttribute('aria-pressed',name===mode?'true':'false');choices.append(b)}
- format.append(choices);form.append(format);
+ const format=section('1 · Choose a format');const label=make('label','pi-label','Build Type');label.htmlFor='pi-build-type';
+ const chooser=make('select','pi-build-type');chooser.id='pi-build-type';chooser.setAttribute('aria-label','Build Type');
+ for(const entry of modes){const option=make('option','',entry.label);option.value=entry.label;chooser.append(option)}
+ format.append(label,chooser);form.append(format);
  const references=section('2 · Add references','Optional. Use one image for the subject and another for the style.');const uploads=make('div','pi-file-area');
  for(const [kind,title,subtitle,removeLabel] of [['source','Subject image','Upload JPG, PNG or WebP','Remove uploaded photo'],['design','Style reference','Optional second image','Remove style reference']]){
   const slot=make('div','pi-upload-slot');slot.append(input(kind,title,subtitle));const remove=make('button','pi-mode pi-remove',removeLabel);remove.type='button';remove.dataset.piAction='remove-'+kind;remove.hidden=true;slot.append(remove);uploads.append(slot);
  }
  references.append(uploads);form.append(references);
  const brief=section('3 · Describe the artwork');const promptLabel=make('label','pi-label','Image instructions');promptLabel.htmlFor='pi-prompt';
- const prompt=make('textarea');prompt.id='pi-prompt';prompt.placeholder='Subject, composition, colors, style, and anything to preserve.';brief.append(promptLabel,prompt);form.append(brief);
+ const prompt=make('textarea');prompt.id='pi-prompt';prompt.placeholder='Subject, composition, colors, style, and anything to preserve.';brief.append(promptLabel,prompt);
+ const contextBar=make('div','pi-context-line');const contextText=make('span','pi-context-label','');contextText.id='pi-context-label';const clearContext=make('button','pi-context-clear','Clear context');clearContext.type='button';clearContext.dataset.piAction='clear-context';clearContext.hidden=true;contextBar.append(contextText,clearContext);
+ const tips=make('div','pi-smart-suggestions');tips.id='pi-smart-suggestions';tips.setAttribute('aria-label','Suggested artwork formats');brief.append(contextBar,tips);form.append(brief);
  const optional=make('details','pi-exact-optional');optional.append(make('summary','','Optional: change automatic wording'));
  const textLabel=make('label','pi-label','Wording preference');textLabel.htmlFor='pi-text-mode';
  const policy=make('select','pi-exact-input');policy.id='pi-text-mode';for(const [value,label] of [['auto','Automatic from my description'],['exact','Override the exact words'],['off','No words on the image']]){const o=make('option','',label);o.value=value;policy.append(o)}
@@ -84,8 +87,34 @@ function layout(){
   const button=make('button',wide?'pi-wide':'',label);button.type='button';button.dataset.piAction=key;actions.append(button);
  }
  done.append(actions);
- host.replaceChildren(form,progress,done);letteringMode();
+ host.replaceChildren(form,progress,done);letteringMode();refreshSuggestions();
  host.querySelectorAll('.pi-notice').forEach(el=>{el.setAttribute('role','status');el.setAttribute('aria-live','polite')});
+}
+function currentContext(){
+ const snapshot=window.PhiCardContext?.getSnapshot?.();
+ if(snapshot?.topic)return snapshot;
+ const q=String(document.getElementById('q')?.value||'').trim().slice(0,140);
+ return q?{topic:q,sourceCard:'search'}:null;
+}
+function applyTopicPrompt(force=false){
+ const context=currentContext(),prompt=$('#pi-prompt'),suggest=window.PhiImageSuggestions;
+ if(!context?.topic||!suggest||!prompt||(!force&&promptEdited))return;
+ const next=suggest.promptFor(context.topic,buildType);
+ if(!next)return;
+ prompt.value=next;autoPrefill=true;
+}
+function refreshSuggestions(){
+ const context=currentContext(),label=$('#pi-context-label'),clear=$('[data-pi-action="clear-context"]'),tips=$('#pi-smart-suggestions'),suggest=window.PhiImageSuggestions;
+ if(!label||!clear||!tips)return;
+ tips.replaceChildren();
+ if(!context?.topic||!suggest){label.textContent='';clear.hidden=true;return}
+ label.textContent='Using context from '+(context.sourceCard==='story'?'Story':'Search')+': '+context.topic;
+ clear.hidden=false;
+ const types=suggest.ranked(context.topic).slice(0,6);
+ for(const type of types){if(!modes.some(m=>m.label===type))continue;
+  const chip=make('button','pi-suggestion-chip',type);chip.type='button';chip.dataset.piSuggestType=type;tips.append(chip)}
+ if(!promptEdited&&!autoPrefill&&$('#pi-prompt')?.value.trim())return;
+ if(!promptEdited)applyTopicPrompt();
 }
 async function build({retryRender=false}={}){
  if(busy||preparingReference)return;
@@ -98,8 +127,10 @@ async function build({retryRender=false}={}){
  const exactText=textPlan.text||'';
  if(!typed&&!source&&!contextStory()){notice('Describe the artwork or upload a photo first.');return}
  const description=typed||('Build a distinctive '+mode.toLowerCase()+' based on my uploaded reference or story.');
+ const formatGuidance=window.PhiImageSuggestions?.instructions(buildType)||'';
+ const directedDescription=formatGuidance?description+'\nSelected visual format: '+buildType+'. '+formatGuidance:description;
  const requestId=id(),story=contextStory(),search=contextSearch();
- const canReuse=retryRender&&lastRenderPlan&&lastRenderPlan.description===description&&lastRenderPlan.mode===mode&&lastRenderPlan.source===source&&lastRenderPlan.design===design&&lastRenderPlan.exactText===exactText;
+ const canReuse=retryRender&&lastRenderPlan&&lastRenderPlan.description===description&&lastRenderPlan.mode===mode&&lastRenderPlan.buildType===buildType&&lastRenderPlan.source===source&&lastRenderPlan.design===design&&lastRenderPlan.exactText===exactText;
  busy=true;lastInstruction=description;lastExactText=exactText;lastManualText=manualText;lastTextMode=textMode;result=null;rawResult=null;artifact=null;
  state('progress');initSteps();$('[data-pi-action="retry-render"]').hidden=true;$('[data-pi-action="back"]').textContent='Back to description';notice(canReuse?'Retrying the image service with the previous GPT directions…':'Preparing a real render request…');
  emit('build:start',{requestId,mode,description});
@@ -116,14 +147,14 @@ async function build({retryRender=false}={}){
    if(source)try{vision=await renderer.inspect(source)}catch(_){warning='Reference reader unavailable; using the uploaded image directly.'}
    step(phase++,'done');
    step(phase,'active','GPT directing image composition');
-   try{prompt=await renderer.direct({description,mode,vision,story,search,hasUpload:Boolean(source),designFile:Boolean(renderDesign),exactText,preferences:[window.PhiImageLearning?.preferences(mode)||'',referencePack?.instructions||''].filter(Boolean).join('\n')})}
-   catch(_){prompt=[renderer.modePrompt(mode),description,story,search].filter(Boolean).join('\n');warning=[warning,'GPT director unavailable; using your instructions.'].filter(Boolean).join(' ')}
+   try{prompt=await renderer.direct({description:directedDescription,mode,vision,story,search,hasUpload:Boolean(source),designFile:Boolean(renderDesign),exactText,preferences:[window.PhiImageLearning?.preferences(mode)||'',referencePack?.instructions||''].filter(Boolean).join('\n')})}
+   catch(_){prompt=[renderer.modePrompt(mode),directedDescription,story,search].filter(Boolean).join('\n');warning=[warning,'GPT director unavailable; using your instructions.'].filter(Boolean).join(' ')}
    step(phase++,'done');
-   lastRenderPlan={description,mode,source,design,exactText,prompt};
+   lastRenderPlan={description,mode,buildType,source,design,exactText,prompt};
   }
   step(phase,'active','Image renderer in progress');
   notice([warning,'Step 3 of 4 · Waiting for the Cloudflare image renderer. This request may take up to 150 seconds.'].filter(Boolean).join(' '));
-  let rendered=await renderer.render({description,mode,source,design:renderDesign,prompt:prompt+(referencePack?'\n'+referencePack.instructions:''),exactText});
+  let rendered=await renderer.render({description:directedDescription,mode,source,design:renderDesign,prompt:prompt+(referencePack?'\n'+referencePack.instructions:''),exactText});
   step(phase++,'done');
   step(phase,'active','Examining finished image');
   rawResult=rendered.src;
@@ -171,7 +202,7 @@ async function build({retryRender=false}={}){
     warning=[warning,'Automatic refinement could not be verified; the original rendered image was kept.'].filter(Boolean).join(' ');
    }
   }
-  artifact={id:'phi-visual-'+requestId,mode,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search,storyWriterId,autoRefined};
+  artifact={id:'phi-visual-'+requestId,mode,buildType,prompt:description,renderPrompt:prompt,exactText,renderer:rendered.renderer,createdAt:new Date().toISOString(),width:size.width,height:size.height,story,search,storyWriterId,autoRefined};
   artifact.review=review;
   window.QuantaStarCredit?.(description.includes("Refine the CURRENT rendered image")?"fix_image":"build_image",artifact.id,artifact);
   if(review)window.PhiImageLearning?.record(artifact,'review',{issues:review.issues});
@@ -213,6 +244,7 @@ function showFile(file,kind){
  const remove=$('[data-pi-action="remove-'+kind+'"]');if(remove)remove.hidden=!file;
 }
 host.addEventListener('change',event=>{
+ if(event.target.id==='pi-build-type'){buildType=event.target.value;mode=window.PhiImageSuggestions?.renderMode(buildType)||buildType;if(!promptEdited)applyTopicPrompt();return}
  if(event.target.id==='pi-text-mode'){letteringMode();return}
  const input=event.target.closest('[data-pi-file]');if(!input)return;
  const file=input.files?.[0]||null,kind=input.dataset.piFile;
@@ -223,9 +255,10 @@ host.addEventListener('change',event=>{
 });
 host.addEventListener('click',event=>{
  if(busy||preparingReference)return;
- const choice=event.target.closest('[data-pi-mode]');
- if(choice){mode=choice.dataset.piMode;host.querySelectorAll('[data-pi-mode]').forEach(b=>b.setAttribute('aria-pressed',b===choice?'true':'false'));return}
+ const choice=event.target.closest('[data-pi-suggest-type]');
+ if(choice){buildType=choice.dataset.piSuggestType;mode=window.PhiImageSuggestions?.renderMode(buildType)||buildType;$('#pi-build-type').value=buildType;applyTopicPrompt(true);return}
  const action=event.target.closest('[data-pi-action]')?.dataset.piAction;
+ if(action==='clear-context'){window.PhiCardContext?.clear();if(!promptEdited&&autoPrefill){$('#pi-prompt').value='';autoPrefill=false}refreshSuggestions();return}
  if(action==='build')void build();
  if(action==='retry-render'&&!busy)void build({retryRender:true});
  if(action==='remove-source'||action==='remove-design'){
@@ -305,16 +338,18 @@ async function fixImage(){
   notice('Fix Image could not produce a verified correction. Your original image is unchanged. '+String(error?.message||error).slice(0,130));
  }finally{busy=false;if(button)button.disabled=false}
 }
+host.addEventListener('input',event=>{if(event.target.id==='pi-prompt'){promptEdited=true;autoPrefill=false}});
+window.addEventListener('phi:card-context:update',()=>refreshSuggestions());
 layout();state('composer');
 window.PhiImageBuilder={
- prefill(text){$('#pi-prompt').value=String(text||'').slice(0,3000)},
+ prefill(text){$('#pi-prompt').value=String(text||'').slice(0,3000);promptEdited=true;autoPrefill=false},
  get:()=>({artifact,result,mode,busy}),
  async generateFromStory(id,imageInstructions){
   window.dispatchEvent(new Event('phi:media:show-image'));
   if(busy||preparingReference)throw Error('Image Builder is finishing another image. Try the illustration again when it finishes.');
   storyWriterId=String(id||'').slice(0,120);
-  mode='Image';source=null;design=null;lastRenderPlan=null;
-  host.querySelectorAll('[data-pi-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.piMode==='Image'?'true':'false'));
+  mode='Image';buildType='Image';source=null;design=null;lastRenderPlan=null;promptEdited=true;autoPrefill=false;
+  $('#pi-build-type').value='Image';
   $('#pi-prompt').value=String(imageInstructions||'').slice(0,3000);
   $('#pi-exact-text').value='';$('#pi-text-mode').value='auto';letteringMode();state('composer');
   try{await build();if(!artifact||!result||artifact.storyWriterId!==storyWriterId)throw Error('The image renderer did not finish this illustration.');return {artifact,result}}
