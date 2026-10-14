@@ -5,7 +5,7 @@ const path = require('node:path');
 const root = path.join(__dirname, '../android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles');
 const service = fs.readFileSync(path.join(root, 'BubblesService.java'), 'utf8');
 const chat = fs.readFileSync(path.join(root, 'OracleChatActivity.java'), 'utf8');
-const manifest = fs.readFileSync(path.join(root, '../../..', 'AndroidManifest.xml'), 'utf8');
+const manifest = fs.readFileSync(path.join(root, '../../../..', 'AndroidManifest.xml'), 'utf8');
 const gradle = fs.readFileSync(path.join(root, '../../../../../../', 'build.gradle'), 'utf8');
 
 test('tap interrupts TTS immediately then opens a dedicated Oracle text window', () => {
