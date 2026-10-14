@@ -7,6 +7,9 @@ export function creditStatements({id,userId,asset,metadata,now,walletId}){
   {sql:'UPDATE bot_work_rewards SET paid=1 WHERE reward_id=?1 AND user_id=?2',params:[id,userId]}];
  return [...common,
   {sql:'INSERT OR IGNORE INTO quant_wallets(wallet_id,user_id) VALUES(?1,?2)',params:[walletId,userId]},
+  // The live D1 Quant trigger requires an immutable matching mint record before a ledger credit.
+  // Work receipt ID is stable per repository+commit; reruns cannot mint another Quant.
+  {sql:"INSERT OR IGNORE INTO quant_mints(mint_id,wallet_id,provenance_hash,source_key,query_text,amount) SELECT ?1,wallet_id,?1,?1,?3,1 FROM quant_wallets WHERE user_id=?2 AND status='active'",params:[id,userId,metadata]},
   {sql:"INSERT OR IGNORE INTO quant_ledger_entries(entry_id,reference_id,entry_type,wallet_id,delta) SELECT ?1,?1,'mint',wallet_id,1 FROM quant_wallets WHERE user_id=?2 AND status='active'",params:[id,userId]},
   {sql:"INSERT OR IGNORE INTO unified_token_records(token_id,user_id,token_type,source,data_json,provenance_hash,created_at) VALUES(?1,?2,'QUANT_DATA','Infinity bot work',?3,?1,?4)",params:[id,userId,metadata,now]},
   {sql:"INSERT OR IGNORE INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) SELECT ?1,?1,?2,'QUANT','MINT',1,balance,?1,?3,?4 FROM quant_wallet_balances WHERE wallet_id=(SELECT wallet_id FROM quant_wallets WHERE user_id=?2)",params:[id,userId,metadata,now]},
