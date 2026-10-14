@@ -49,7 +49,7 @@ let notes=data(NOTES,[]);if(!Array.isArray(notes))notes=[];
 let keepChat=data(KEEP_HISTORY,false)===true;
  const CLOUD_MEMORY_KEY='quantaphi:bubbles:cloud-memory:v1'+(bubbleId?':'+bubbleId:'');
  let cloudChat=data(CLOUD_MEMORY_KEY,false)===true;
- const longMemory=window.BubblesMemory||null;
+ const longMemory=embedded?null:(window.BubblesMemory||null); // Visitor embeds remain isolated per bubble.
  longMemory?.setEnabled(keepChat);
  let messages=keepChat?data(HISTORY,[]):[];
  if(!Array.isArray(messages))messages=[];
