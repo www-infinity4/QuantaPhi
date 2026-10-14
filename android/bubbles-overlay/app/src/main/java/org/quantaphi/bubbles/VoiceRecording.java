@@ -11,7 +11,7 @@ final class VoiceRecording {
     synchronized void start(File directory) throws Exception {
         if (output != null) throw new IllegalStateException("A recording is already active");
         directory.mkdirs();
-        file = new File(directory, "audio-" + System.currentTimeMillis() + ".wav");
+        file = File.createTempFile("audio-", ".wav", directory);
         output = new RandomAccessFile(file, "rw");
         output.write(new byte[44]);
         bytes = 0;
