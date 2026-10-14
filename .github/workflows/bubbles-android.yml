@@ -4,6 +4,7 @@ on:
     paths:
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-chatgpt-native.test.cjs'
+      - 'test/bubbles-apk-preview.test.cjs'
       - '.github/workflows/bubbles-android.yml'
   push:
     branches: [main]
@@ -36,6 +37,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify isolated Android preview install contract
+        run: node --test test/bubbles-apk-preview.test.cjs
       - name: Verify continuous native microphone contract
         run: node --test test/bubbles-continuous-native.test.cjs
       - name: Verify ChatGPT OAuth permission and response contract
@@ -50,12 +53,20 @@ jobs:
           mkdir -p /tmp/bubbles-wav
           javac -d /tmp/bubbles-wav android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/VoiceRecording.java android/bubbles-overlay/checks/VoiceRecordingCheck.java
           java -cp /tmp/bubbles-wav org.quantaphi.bubbles.VoiceRecordingCheck
+      # GitHub runners do not retain debug signing certificates by default.
+      # Restore a main-branch test signing cache where available. This is ONLY
+      # for the isolated Bubbles Preview package, never a release signer.
+      - name: Reuse test-only preview signing key
+        uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: bubbles-preview-debug-keystore-v1
       - name: Compile Bubbles Android application
         working-directory: android/bubbles-overlay
         run: gradle --no-daemon assembleDebug
-      - name: Upload installable debug APK
+      - name: Upload separately installable Bubbles Preview APK
         uses: actions/upload-artifact@v4
         with:
-          name: bubbles-android-debug-apk
+          name: bubbles-preview-android12-apk
           path: android/bubbles-overlay/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
