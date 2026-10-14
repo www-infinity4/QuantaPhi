@@ -478,6 +478,18 @@ public final class BubblesService extends Service {
         String normalized = addressed.toLowerCase(Locale.ROOT).replaceAll("[\\s,.!?]+", " ").trim();
         if (normalized.equals(lastTranscript) && now - lastAt < 2500) return;
         lastTranscript = normalized;lastAt = now;activeUntil = now + 30000L;
+        // Use the SAME QuantaPhi website assistant, owner-wallet verification,
+        // Robot Brain job receipts, notes and typed conversation when available.
+        // The floating WebView never receives ChatGPT OAuth credentials.
+        if (oracleWindow != null && oracleWindow.sendSpoken(addressed)) return;
+        // Offline/native fallback: voice commands still take notes locally.
+        String noteReply = VoiceNotes.consume(this, addressed);
+        if (noteReply != null) {
+            OracleChatActivity.append(this, "You", addressed);
+            OracleChatActivity.append(this, "Oracle", noteReply);
+            speak(noteReply);
+            return;
+        }
         if (busy) {queued = addressed;return;}
         speechSuppressed = false; // A new spoken request can receive spoken output.
         if (addressed.matches("(?i)^(?:please\\s+)?(?:create|make|submit|queue|start)\\s+(?:a\\s+)?(?:work\\s+)?ticket\\b.*")) {
@@ -590,6 +602,12 @@ public final class BubblesService extends Service {
             throw new IllegalStateException("Empty Oracle response");
         } finally {conn.disconnect();}
     }
+    /** Only results from the first-party QuantaPhi site voice request are spoken. */
+    void speakWebsiteReply(String response) {
+        if (response == null || response.trim().isEmpty()) return;
+        if (connected && !muted) speak(response);
+    }
+
     private void speak(String response) {
         if (!connected || muted) return;
         if (tts == null || !ttsReady) {
