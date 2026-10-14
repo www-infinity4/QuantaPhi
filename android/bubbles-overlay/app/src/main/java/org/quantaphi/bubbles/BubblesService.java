@@ -105,9 +105,12 @@ public final class BubblesService extends Service {
         tts = new TextToSpeech(this, result -> {
             if (result == TextToSpeech.SUCCESS && tts != null) {
                 ttsReady = true;
-                int language = tts.setLanguage(Locale.UK);
+                // Use a lower-pitched on-device English voice by default.
+                // This is Android TTS, not the proprietary ChatGPT Live voice.
+                int language = tts.setLanguage(Locale.US);
                 if (language == TextToSpeech.LANG_MISSING_DATA || language == TextToSpeech.LANG_NOT_SUPPORTED)
                     tts.setLanguage(Locale.ENGLISH);
+                tts.setPitch(0.84f);
                 tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
                     @Override public void onStart(String id) { main.post(() -> state("speaking", 0.6f)); }
                     @Override public void onDone(String id) { main.post(() -> finishSpeaking()); }
