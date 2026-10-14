@@ -56,11 +56,11 @@ export function isGenericBuildReply(userRequest, answer) {
 // implementation that require real GitHub, owner Brain or deployment receipts.
 export function hasUnverifiedActionClaim(userRequest,answer){
  const request=clean(userRequest,4000),text=clean(answer,8000);
- if(!/\\b(?:build|repair|fix|continue|implement|upgrade|integrat|expand|develop|website|code|repository|project|robot brain|bot|app|video generator)\\b/i.test(request))return false;
- if(/^\\s*(?:#{1,4}\\s*|\\*\\*|[-*]\\s*)*(?:completed|done|fixed|merged|deployed)\\s*(?:[✅✔✓:!]|\\*\\*|\\s*[-—])/im.test(text))return true;
- if(/\\b(?:I|we|our (?:bots?|agents?)|the (?:bots?|agents?|robot brain))\\s+(?:(?:have|has|already|just|now|successfully)\\s+){0,3}(?:created|edited|implemented|merged|deployed|fixed|built|committed|uploaded|provisioned)\\b/i.test(text))return true;
- if(/\\b(?:codebase|repository|pull request|branch|source file|website|page|app|site|adapter|implementation)\\b.{0,120}\\b(?:has been|have been|was|were|is now)\\s+(?:already\\s+|successfully\\s+)?(?:merged|deployed|implemented|added|fixed|committed|built)\\b/i.test(text))return true;
- if(/\\b(?:merged into (?:the )?main|deployed to (?:production|your site)|pushed to main)\\b/i.test(text)&&/\\b(?:we|I|our|code|repository|branch|adapter|changes)\\b/i.test(text))return true;
+ if(!/\b(?:build|repair|fix|continue|implement|upgrade|integrat|expand|develop|website|code|repository|project|robot brain|bot|app|video generator)\b/i.test(request))return false;
+ if(/^\s*(?:#{1,4}\s*|\*\*|[-*]\s*)*(?:completed|done|fixed|merged|deployed)\s*(?:[✅✔✓:!]|\*\*|\s*[-—])/im.test(text))return true;
+ if(/\b(?:I|we|our (?:bots?|agents?)|the (?:bots?|agents?|robot brain))\s+(?:(?:have|has|already|just|now|successfully)\s+){0,3}(?:created|edited|implemented|merged|deployed|fixed|built|committed|uploaded|provisioned)\b/i.test(text))return true;
+ if(/\b(?:codebase|repository|pull request|branch|source file|website|page|app|site|adapter|implementation)\b.{0,120}\b(?:has been|have been|was|were|is now)\s+(?:already\s+|successfully\s+)?(?:merged|deployed|implemented|added|fixed|committed|built)\b/i.test(text))return true;
+ if(/\b(?:merged into (?:the )?main|deployed to (?:production|your site)|pushed to main)\b/i.test(text)&&/\b(?:we|I|our|code|repository|branch|adapter|changes)\b/i.test(text))return true;
  return false;
 }
 function groundedWorkFallback(request){
@@ -129,7 +129,7 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
   try{
    const corrected=await env.AI.run(model,{messages:[
     {role:'system',content:'Give one concrete next engineering step. This is a chat-only interface: no GitHub, Robot Brain ticket or deployment tool was run in THIS response. Never say completed, fixed, merged, deployed, added to the codebase or invent filenames/classes. Refer to any user-provided past state as unverified context. Do not offer a menu of options or ask the user which area to focus on. State the precise next test or source-inspection action and the need for an authenticated real receipt.'},
-    {role:'user',content:'Request: '+clean(userRequest,3500)+'\\nContext: '+clean(input,7000)+'\\nUnverified answer to correct: '+String(output).slice(0,2500)}
+    {role:'user',content:'Request: '+clean(userRequest,3500)+'\nContext: '+clean(input,7000)+'\nUnverified answer to correct: '+String(output).slice(0,2500)}
    ],max_tokens:1200,reasoning_effort:'medium'});
    const revised=corrected?.response||corrected?.choices?.[0]?.message?.content;
    if(typeof revised==='string'&&revised.trim())output=revised;
