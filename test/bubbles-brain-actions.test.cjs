@@ -28,6 +28,11 @@ test('actual owner status commands are read-only reports, not new jobs',()=>{
  ])assert.equal(classify(utterance),'report',utterance);
 });
 
+test('make a job in Robot Brain is an explicit action while questions and refusals are not',()=>{
+ for(const message of ['make a job in Robot Brain','Please make a new task in my robot brain to fix images','I need you to make a job in the robot brain','Can you add a job to Robot Brain for the video player'])assert.equal(classify(message),'queue',message);
+ for(const message of ['How do I make a job in Robot Brain?','Do not make a job in Robot Brain','I want you not to make a job in Robot Brain','Explain how to create a task in Robot Brain'])assert.equal(classify(message),'chat',message);
+});
+
 test('jobs target an allowlisted repository and its real repository executor',()=>{
  assert.equal(repositoryFor('Fix Moltnook bot creation'),'www-infinity4/Moltnook');
  assert.equal(repositoryFor('Fix video generator in QuantaPhi'),'www-infinity4/QuantaPhi');
@@ -87,3 +92,4 @@ test('owner continue resumes the immediately preceding explicit task without bro
  assert.equal(resolveFollowupRequest('please fix a new project',context),'');
  assert.equal(resolveFollowupRequest('continue',[{role:'user',text:'Explain what a repository is'}]),'');
 });
+
