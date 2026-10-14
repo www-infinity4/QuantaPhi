@@ -9,6 +9,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
+import android.view.ViewGroup;
 import android.graphics.Typeface;
 import android.view.Gravity;
 import android.view.View;
@@ -39,7 +41,7 @@ public final class MainActivity extends Activity {
         LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
         layout.setPadding(38, 48, 38, 28);
-        layout.setBackgroundColor(Color.rgb(248, 243, 252));
+        layout.setBackgroundColor(Color.rgb(251, 247, 238));
 
         TextView title = new TextView(this);
         title.setText("Bubbles AI");
@@ -351,8 +353,50 @@ public final class MainActivity extends Activity {
 
 
 
-        ScrollView scroll=new ScrollView(this);scroll.addView(layout);setContentView(scroll);
+        styleOracleControls(layout);
+        ScrollView scroll=new ScrollView(this);
+        scroll.setBackgroundColor(Color.rgb(251, 247, 238));
+        scroll.addView(layout);setContentView(scroll);
     }
+
+    // Style the entire native fallback in the same visual language as Oracle Octaves.
+    // These are programmatic Android views, not an obsolete web/CSS framework.
+    private void styleOracleControls(View view) {
+        if (view instanceof Button) {
+            Button button=(Button)view;
+            String label=button.getText().toString().toLowerCase(java.util.Locale.ROOT);
+            boolean primary=label.contains("enable the floating") ||
+                label.equals("continue with chatgpt") || label.equals("send") ||
+                label.contains("save brain name");
+            boolean warning=label.contains("stop bubbles and release");
+            int fill=primary?Color.rgb(181,48,39):Color.WHITE;
+            int ink=primary?Color.WHITE:Color.rgb(49,37,41);
+            GradientDrawable shape=new GradientDrawable();
+            shape.setColor(fill);shape.setCornerRadius(dp(22));
+            if(!primary)shape.setStroke(dp(1),warning?Color.rgb(181,48,39):Color.rgb(221,205,197));
+            button.setAllCaps(false);
+            button.setTextColor(ink);
+            button.setTextSize(15);
+            button.setMinHeight(dp(48));
+            button.setPadding(dp(14),dp(10),dp(14),dp(10));
+            button.setBackground(shape);
+            button.setElevation(dp(2));
+        } else if(view instanceof EditText) {
+            EditText edit=(EditText)view;
+            GradientDrawable paper=new GradientDrawable();
+            paper.setColor(Color.WHITE);paper.setCornerRadius(dp(12));
+            paper.setStroke(dp(1),Color.rgb(207,190,179));
+            edit.setBackground(paper);
+            edit.setTextColor(Color.rgb(49,37,41));
+            edit.setTextSize(16);
+            edit.setPadding(dp(12),dp(12),dp(12),dp(12));
+        }
+        if(view instanceof ViewGroup){
+            ViewGroup group=(ViewGroup)view;
+            for(int i=0;i<group.getChildCount();i++)styleOracleControls(group.getChildAt(i));
+        }
+    }
+    private int dp(float value){return Math.round(getResources().getDisplayMetrics().density*value);}
 
     @Override protected void onResume() {
         super.onResume();
