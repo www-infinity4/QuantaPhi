@@ -1,5 +1,5 @@
 import {videoAPI} from './video-api.mjs';
-const EDGE_VERSION = 'quantaphi-org-service-20261013-3';
+const EDGE_VERSION = 'quantaphi-org-service-20261014-radio4';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -320,7 +320,7 @@ export default {
   const readRequest = ['GET', 'HEAD'].includes(request.method);
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
   // briefly stale after a commit, which must never keep an old wallet/search script live.
-  if (((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || (route.repo === 'Alien-Radio' && route.sourcePath === '/oracle-track-feed.json') || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && textual && readRequest) {
+  if (((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || route.repo === 'Alien-Radio' || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && textual && readRequest) {
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/' + sourceRef + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
