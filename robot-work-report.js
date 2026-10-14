@@ -122,7 +122,8 @@
    audience.replaceChildren(make('p','Cloudflare traffic unavailable: '+clean(err.message,120)+'. No visitor totals have been invented.'));
   }finally{audienceBusy=false}
  }
- report.addEventListener('click',()=>{void pullTraffic();void pull('report',{gpt:true})});
+ report.addEventListener('click',()=>pull('report',{gpt:true}));
+ report.addEventListener('click',()=>pullTraffic());
  traffic.addEventListener('click',()=>pullTraffic({force:true}));
  top.addEventListener('click',()=>pull('top'));
  window.addEventListener('quantaphi:robot-directions',()=>pull());
