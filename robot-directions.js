@@ -62,7 +62,46 @@ function normalize(value){
    executor:j.executor==='repository-engine'?'repository-engine':undefined,queue_priority:Number.isFinite(j.queue_priority)?Math.max(-100,Math.min(100,j.queue_priority)):0,design:'Oracle Octaves · Android first',verification:'Tests and deployed mobile browser evidence required'};
  });
 }
-if(typeof module!=='undefined')module.exports={normalize,ROLES,ROLE_TOOLS,SITE_CREWS,fallbackJobs};
+// An evidence-bounded owner report. "Running" is reserved for an actual
+// job state with a recent progress receipt; a queued ticket never talks.
+function topBrainTasks(tickets,now=Date.now()){
+ const rows=[];
+ const roles={'pink-panther':'Pink Panther','greenbeans':'Greenbeans','purple-pearl':'Purple Pearl','purple-reign':'Purple Reign','gpt-purple':'GPT Purple','blueberry':'Blueberry','yellow-jacket':'Yellow Jacket','orange-peel':'Orange Peel'};
+ for(const ticket of (Array.isArray(tickets)?tickets:[])){
+  if(ticket?.context?.kind!=='robot-directions')continue;
+  for(const job of ticket.context.color_jobs||[]){
+   const name=roles[job.agent]||String(job.agent||'Color bot').replace(/[-_]/g,' ');
+   const raw=String(job.status||'queued').toLowerCase(),progress=job.progress||{};
+   const at=Number(progress.at||progress.updatedAt||progress.when||ticket.updated_at||ticket.updatedAt||0);
+   const recent=at>0&&at<=now&&now-at<30*60000;
+   const working=['working','running','claimed','testing','reviewing'].includes(raw)&&recent;
+   const done=['completed','done','verified','merged','deployed_verified'].includes(raw);
+   const blocked=['blocked','failed','retry_delayed'].includes(raw);
+   const title=String(job.title||'a repository task').replace(/[<>]/g,' ').replace(/\s+/g,' ').trim().slice(0,175);
+   const repo=/^www-infinity4\/[\w.-]+$/.test(job.repository||'')?job.repository:'repository not selected';
+   const note=String(progress.summary||progress.blocker||'').replace(/[<>]/g,' ').replace(/\s+/g,' ').trim().slice(0,250);
+   const phase=working?'working':done?'completed':blocked?'blocked':'queued';
+   const statement=working?
+    name+' is currently assigned to '+title+' in '+repo+'.'+(note?' Latest recorded work: '+note+'.':''):
+    done?name+' finished '+title+' in '+repo+'.'+(note?' Result: '+note+'.':''):
+    blocked?name+' is blocked on '+title+' in '+repo+'.'+(note?' Recorded problem: '+note+'.':' No verified repair yet.'):
+    name+' is queued to work on '+title+' in '+repo+'.'+(note?' Most recent note: '+note+'.':' No active execution receipt yet.');
+   rows.push({ticketId:ticket.id,jobId:job.id,agent:job.agent,name,repo,title,phase,reportedAt:at||null,statement,priority:Number(job.queue_priority||0),evidence:note});
+  }
+ }
+ const order={working:4,queued:3,blocked:2,completed:1};
+ rows.sort((a,b)=>(order[b.phase]||0)-(order[a.phase]||0)||b.priority-a.priority||(b.reportedAt||0)-(a.reportedAt||0));
+ return rows.slice(0,10);
+}
+function brainReportText(rows,now=Date.now()){
+ const count=rows.length;
+ const header='Robot Brain report · '+new Date(now).toISOString().slice(0,16).replace('T',' ')+' UTC';
+ if(!count)return header+'\nNo executable color-bot tasks were returned by the authenticated Brain. This is not evidence that workers are running.';
+ const working=rows.filter(x=>x.phase==='working').length,queued=rows.filter(x=>x.phase==='queued').length;
+ return header+'\nThese are the '+count+' highest-ranked recorded tasks. '+working+' have recent execution evidence; '+queued+' are queued. Cloudflare and scheduled GitHub workers operate independently of your open browser tab.\n\n'+rows.map((x,i)=>(i+1)+'. '+x.statement).join('\n\n');
+}
+
+if(typeof module!=='undefined')module.exports={normalize,ROLES,ROLE_TOOLS,SITE_CREWS,fallbackJobs,topBrainTasks,brainReportText};
 if(typeof document==='undefined')return;
 const root=document.getElementById('robotDirections');if(!root)return;
 
