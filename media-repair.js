@@ -189,6 +189,7 @@
     const query=String(event?.detail?.query||q()).trim();
     ++mediaRun;
     const choice=mediaIntent(query);
+    if(choice&&focusedSearch?.query===query&&focusedSearch.kind===choice.kind&&focusedPromise){prioritize(choice.kind,choice.subject);return}
     focusedSearch=choice?{...choice,query}:null;
     focusedPromise=null;
     prioritize(choice?.kind,choice?.subject);
@@ -196,6 +197,20 @@
     focusedPromise=choice.kind==='video'?videos({subject:choice.subject,scroll:false}):images({subject:choice.subject,scroll:false});
   }
   window.addEventListener('quantaphi:search-start',onSearchStart);
+  // Capture a deliberate Search click/Enter before asynchronous token creation.
+  // A slow wallet must not delay media discovery. Later search-start reuses it.
+  function preflightSearch(event){
+    if(event.type==='click'){
+      const go=document.getElementById('go');
+      if(event.target!==go&&!go?.contains?.(event.target))return;
+    }else if(event.type==='keydown'){
+      if(event.key!=='Enter'||event.target!==document.getElementById('q'))return;
+    }else return;
+    const query=q();
+    if(mediaIntent(query))onSearchStart({detail:{query}});
+  }
+  document.addEventListener?.('click',preflightSearch,true);
+  document.addEventListener?.('keydown',preflightSearch,true);
   const originalElementIdentity=window.elementIdentity;
   if(typeof originalElementIdentity==='function'){
     window.elementIdentity=function(query){
