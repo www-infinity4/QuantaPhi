@@ -257,8 +257,12 @@ function isOwnerWorkRequest(text){
  return verb.test(request)&&target.test(request)&&(direct.test(request)||directive.test(request)||followup.test(request));
 }
 async function sendMessage(text){
- const request=String(text||'').trim();if(busy||!request)return;
- busy=true;send.disabled=true;display(request,'you');input.value='';setOrbState('thinking');
+ const spoken=String(text||'').trim();if(busy||!spoken)return;
+ // An explicit "continue" resumes only the most recent OWNER work request;
+ // model-written suggestions and unrelated old chat cannot trigger bot jobs.
+ const continued=!embedded?brainTools?.resolveFollowupRequest?.(spoken,messages):'';
+ const request=continued||spoken;
+ busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
  const role=ROLES[config.role]||ROLES.assistant;
  const history=messages.slice(-10).map(m=>m.role+': '+m.text.slice(0,650)).join('\n');
  messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
@@ -266,7 +270,7 @@ async function sendMessage(text){
  let workEvidence='';
  if(!embedded&&isOwnerWorkRequest(request)){
   workText.value=request;tools.open=true;
-  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence='Robot Brain receipt: ticket '+ticket.id+' is '+ticket.status+'. '+(ticket.deduplicated?'This job was already recorded; no duplicate created.':'The jobs are saved for the authenticated runner.')+' No repair or deployment is verified complete.'}
+  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence=(continued?'Resumed your last specific work request. ':'')+'Robot Brain receipt: ticket '+ticket.id+' is '+ticket.status+'. '+(ticket.deduplicated?'This job was already recorded; no duplicate created.':'The jobs are saved for the authenticated runner.')+' No repair or deployment is verified complete.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='report'){
   try{workEvidence=await readBrainReport()}
@@ -283,6 +287,7 @@ async function sendMessage(text){
  }
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger inside QuantaPhi.','Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
+ 'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
  'You have NO independent GitHub write authorization or access to ChatGPT/Claude subscriptions. Only confirmed owner-submitted Robot Brain tickets count as queued; never claim a repository change occurred without tool evidence.',
  'Actual authorized work result:\n'+workEvidence,'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Speak in calm, natural British English. Keep spoken answers concise and conversational. For a task, explain the actual result and next step; distinguish completed, queued and blocked work. Reply directly in plain text.'].join('\n\n');
  try{
