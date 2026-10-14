@@ -1,0 +1,40 @@
+name: Robot Brain top ten reports and automatic earnings
+on:
+  pull_request:
+    paths:
+      - 'robot-directions.js'
+      - 'robot-directions.css'
+      - 'workers/unified-wallet/bot-work-credit.mjs'
+      - 'test/brain-owner-report.test.cjs'
+      - 'test/bot-work-credit.test.mjs'
+      - 'test/bot-earnings-auto.test.mjs'
+      - '.github/workflows/brain-owner-live-report.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'robot-directions.js'
+      - 'robot-directions.css'
+      - 'workers/unified-wallet/bot-work-credit.mjs'
+      - 'test/brain-owner-report.test.cjs'
+      - 'test/bot-work-credit.test.mjs'
+      - 'test/bot-earnings-auto.test.mjs'
+      - '.github/workflows/brain-owner-live-report.yml'
+permissions:
+  contents: read
+jobs:
+  verified-report-and-credit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse owner UI and wallet worker
+        run: |
+          node --check robot-directions.js
+          node --check workers/unified-wallet/bot-work-credit.mjs
+      - name: Verify top-ten task evidence and real D1 mint provenance
+        run: node --test test/brain-owner-report.test.cjs test/robot-brain-owner.test.cjs test/bot-earnings-auto.test.mjs test/bot-work-credit.test.mjs
