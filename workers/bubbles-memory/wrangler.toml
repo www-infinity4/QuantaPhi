@@ -1,0 +1,12 @@
+name = "bubbles-memory"
+main = "worker.mjs"
+compatibility_date = "2026-10-14"
+[[d1_databases]]
+binding = "MEMORY_DB"
+database_name = "bubbles-memory"
+database_id = "REPLACE_WITH_ACTUAL_D1_ID"
+[[services]]
+binding = "BOT_WALLET"
+service = "unified-wallet"
+environment = "production"
+entrypoint = "BrainModels"
