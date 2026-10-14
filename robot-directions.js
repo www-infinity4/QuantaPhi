@@ -126,7 +126,7 @@ async function verifyBrainOwner(){
 // transient failures, so a missing key or slow network never deletes the Brain.
 const brainHeaders=await (window.QuantaBrainOwner?window.QuantaBrainOwner.ready:verifyBrainOwner());if(!brainHeaders){root.remove();return;}root.dataset.ownerVerified='1';root.hidden=false;
 const earningsButton=document.createElement('button'),earningsStatus=document.createElement('p');
-earningsButton.type='button';earningsButton.textContent='Retry bot earnings settlement';earningsStatus.setAttribute('role','status');root.append(earningsButton,earningsStatus);
+earningsButton.type='button';earningsButton.hidden=true;earningsStatus.hidden=true;earningsStatus.setAttribute('role','status');root.append(earningsStatus);
 let earningsConnecting=false,earningsConnected=false;
 async function connectBotEarnings(){
  if(earningsConnecting)return;
@@ -149,9 +149,9 @@ earningsButton.addEventListener('click',connectBotEarnings);window.addEventListe
 // Owner authentication above and the wallet service handshake determine the destination.
 // Tokens are sent only to the authenticated brain; they are never recorded as earnings data.
 connectBotEarnings();
-const earningsRetry=setInterval(()=>{if(earningsConnected){clearInterval(earningsRetry);return;}if(document.visibilityState==='visible')connectBotEarnings();},30000);
+const earningsRetry=setInterval(()=>{if(document.visibilityState==='visible')connectBotEarnings();},120000);
 const auditButton=document.createElement('button'),auditStatus=document.createElement('p');
-auditButton.type='button';auditButton.textContent='Check bot commit earnings';auditStatus.setAttribute('role','status');root.append(auditButton,auditStatus);
+auditButton.type='button';auditButton.hidden=true;auditStatus.hidden=true;auditStatus.setAttribute('role','status');
 auditButton.addEventListener('click',async()=>{
  auditButton.disabled=true;auditStatus.textContent='Checking verified job receipts and wallet settlement…';
  try{
@@ -166,7 +166,16 @@ auditButton.addEventListener('click',async()=>{
  finally{auditButton.disabled=false}
 });
 const input=root.querySelector('textarea'),send=root.querySelector('[data-send]'),status=root.querySelector('[role=status]'),list=root.querySelector('[data-jobs]');
-const history=document.createElement('div');list.before(history);
+const history=document.createElement('div');history.hidden=true;list.before(history);
+ const reportPanel=document.createElement('section');reportPanel.className='brain-owner-report';reportPanel.setAttribute('aria-label','Verified Robot Brain work report');
+ const reportHeading=node('h4','Top 10 bot jobs · live report');
+ const reportStatus=node('small','Checking the authenticated work queue…');
+ const reportBody=node('div','');reportBody.className='brain-english-report';reportBody.setAttribute('aria-live','polite');
+ reportPanel.append(reportHeading,reportStatus,reportBody);
+ const caption=root.querySelector('h3');if(caption)caption.after(reportPanel);else root.prepend(reportPanel);
+ const reportButton=root.querySelector('[data-refresh]');if(reportButton){reportButton.textContent='Top 10 · GPT report';reportButton.dataset.brainReport='1'}
+ const geminiButton=root.querySelector('[data-gemini]');if(geminiButton)geminiButton.hidden=true;
+ const savedJobs=root.querySelector('details');if(savedJobs)savedJobs.querySelector('summary').textContent='All saved job details';
 const OWNER='infinity-work-ticket-owner-v1',DRAFT='quantaphi-robot-directions-draft-v1';
 const API='https://infinity-brain-clock.marvaseater.workers.dev';
 const node=(tag,text)=>{const n=document.createElement(tag);n.textContent=text;return n};
@@ -189,7 +198,7 @@ function owner(){return ownerTokenMemory}
 async function saveOwner(value){await storage(OWNER,value);ownerTokenMemory=value}
 
 async function post(path,data,timeout=30000){const route=path.replace('/v1/tickets/','/work/tickets/'),payload={...data};delete payload.owner_token;const r=await fetch(API+route,{method:'POST',headers:{...brainHeaders,'Content-Type':'application/json'},body:JSON.stringify(payload),signal:AbortSignal.timeout(timeout)});const d=await r.json();if(!r.ok||!d.ok)throw Error(d.message||d.error||'Robot Brain owner tickets unavailable');return d}
-const runNext=node('button','Run next queued job');runNext.type='button';root.append(runNext);
+const runNext=node('button','Internal runner request');runNext.type='button';runNext.hidden=true;
 async function requestNext(ticketId,jobId){runNext.disabled=true;try{const r=await fetch(API+'/work/run-next',{method:'POST',headers:{...brainHeaders,'Content-Type':'application/json'},body:JSON.stringify({ticketId,jobId}),signal:AbortSignal.timeout(15000)}),d=await r.json();if(!r.ok||!d.ok)throw Error(d.error||'Runner request unavailable');status.textContent=d.status==='no_pending_jobs'?'No pending jobs. Existing commits remain available in the viewer.':'Queued '+d.ticketId+'/'+d.jobId+' for the next runner cycle. Progress refreshes automatically.';await refresh();}catch(e){status.textContent=e.message}finally{runNext.disabled=false}}
 runNext.addEventListener('click',()=>requestNext());
 function show(ticket){
@@ -198,7 +207,8 @@ function show(ticket){
  for(const job of ticket.context?.color_jobs||[]){
   const card=node('article','');card.className='robot-job robot-'+job.color;
   card.append(node('strong',job.agent+' · '+job.title),node('small','Team: '+(job.team||[job.agent]).join(' → ')),node('p',job.instructions),node('small',job.repository+' · '+(job.status||'queued')));
-  if(job.status==='blocked'||job.status==='queued'){const retry=node('button',job.status==='blocked'?'Retry this job':'Run this job next');retry.type='button';retry.addEventListener('click',()=>requestNext(ticket.id,job.id));card.append(retry);}
+
+   // Scheduled runner claims jobs without requiring a button tap.
   if(job.progress){card.append(node('p',job.progress.summary||''),node('small',job.progress.next||job.progress.blocker||''));}
   const ul=document.createElement('ul');for(const test of job.acceptance)ul.append(node('li',test));card.append(ul);list.append(card);
  }
@@ -291,7 +301,7 @@ for(const [color,tools] of Object.entries(ROLE_TOOLS)){
  card.append(node('strong',color[0].toUpperCase()+color.slice(1)+' team'),node('small',(roster[color]||[]).join(' · ')));
  const ul=document.createElement('ul');for(const tool of tools)ul.append(node('li',tool));card.append(ul);toolbox.append(card);
 }
-root.querySelector('details').before(crewBox,toolbox);
+// Site care is scheduled, not launched by dozens of crew buttons.
 root.querySelector('[data-gemini]').addEventListener('click',async()=>{try{const r=await fetch('/docs/gemini-card-expansion-directions.txt',{cache:'no-store'});if(!r.ok)throw Error('Bundle unavailable');input.value=await r.text();input.dispatchEvent(new Event('input'));status.textContent='Gemini bundle loaded. Send it to GPT to create persistent color-bot jobs.';}catch(e){status.textContent=e.message}});
 root.querySelector('[data-refresh]').addEventListener('click',refresh);refresh();
 setInterval(()=>{if(!document.hidden&&!send.disabled)refresh()},15000);
