@@ -1,3 +1,23 @@
+async function reconcileMusicCredits(env,user,wallet){
+  const now=Date.now();
+  await env.DB.prepare("INSERT OR IGNORE INTO unified_wallet_state(user_id,created_at,updated_at) VALUES(?,?,?)").bind(user,now,now).run();
+  // Only positive legacy imports establish a covered-through timestamp. Repeated
+  // zero-value imports must not swallow newly earned receipts.
+  const floor=await env.DB.prepare("SELECT COALESCE(MAX(created_at),0) cutoff FROM unified_wallet_events WHERE user_id=? AND asset_code='MUSIC_QUANT' AND event_type='IMPORT' AND amount>0").bind(user).first();
+  const rows=await env.DB.prepare("SELECT quant_id,payload_json FROM music_quants WHERE owner_wallet_id=? AND status='active' AND NOT EXISTS(SELECT 1 FROM unified_wallet_events e WHERE e.idempotency_key='music-receipt:'||?||':'||music_quants.quant_id) ORDER BY created_at,quant_id LIMIT 500").bind(wallet,user).all();
+  for(const row of rows.results||[]){
+    const payload=JSON.parse(row.payload_json),created=Date.parse(payload.createdAt);
+    const amount=Number.isFinite(created)&&created>Number(floor.cutoff)?1:0;
+    const key='music-receipt:'+user+':'+row.quant_id;
+    const metadata=JSON.stringify({source:'Infinity Radio',kind:payload.kind,reason:amount?'music_receipt_credit':'covered_by_legacy_music_floor'});
+    // D1 batch is atomic: a concurrent sync cannot increment the same receipt twice.
+    await env.DB.batch([
+      env.DB.prepare("UPDATE unified_wallet_state SET music_quant_balance=music_quant_balance+?,updated_at=? WHERE user_id=? AND NOT EXISTS(SELECT 1 FROM unified_wallet_events WHERE idempotency_key=?)").bind(amount,now,user,key),
+      env.DB.prepare("INSERT OR IGNORE INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) SELECT ?,?,?,'MUSIC_QUANT','MINT',?,music_quant_balance,?,?,? FROM unified_wallet_state WHERE user_id=?").bind('uwe_'+crypto.randomUUID(),key,user,amount,row.quant_id,metadata,now,user)
+    ]);
+  }
+}
+
 async function ensurePublishedPages(env){
  await env.DB.batch([
   env.DB.prepare("CREATE TABLE IF NOT EXISTS quanta_published_pages(slug TEXT PRIMARY KEY,owner_user_id TEXT NOT NULL,revision_id TEXT NOT NULL,source_token TEXT NOT NULL,title TEXT NOT NULL,html TEXT NOT NULL,created_at INTEGER NOT NULL,updated_at INTEGER NOT NULL,UNIQUE(owner_user_id,revision_id))"),
@@ -690,11 +710,13 @@ export default {
             .bind(quantId, wallet).first();
           if (owned) accepted.push(quantId);
         }
+        await reconcileMusicCredits(env,identity.user_id,wallet);
         const countRow = await env.DB.prepare("SELECT COUNT(*) AS count FROM music_quants WHERE owner_wallet_id=? AND status='active'").bind(wallet).first();
         return json({ ok: true, accepted, balance: Number(countRow?.count || 0) });
       }
 
       if (url.pathname === "/v1/music-quants/state" && request.method === "GET") {
+        await reconcileMusicCredits(env,identity.user_id,wallet);
         // Count ALL active Music Quants. A 500-row history page must never cap a wallet balance.
         const offset = Math.max(0, Math.min(100000, Number.parseInt(url.searchParams.get("offset") || "0", 10) || 0));
         const [rows, total] = await Promise.all([
