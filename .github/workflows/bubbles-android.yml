@@ -8,6 +8,7 @@ on:
       - 'test/bubbles-floating-window.test.cjs'
       - 'test/bubbles-native-site-parity.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
+      - 'test/bubbles-native-gpt-screen-story.test.cjs'
       - '.github/workflows/bubbles-android.yml'
   push:
     branches: [main]
@@ -49,6 +50,8 @@ jobs:
         run: node --test test/bubbles-continuous-native.test.cjs
       - name: Verify ChatGPT OAuth permission and response contract
         run: node --test test/bubbles-chatgpt-native.test.cjs
+      - name: Verify ChatGPT sign-in handoff, visual reader and story opt-in
+        run: node --test test/bubbles-native-gpt-screen-story.test.cjs
       - name: Verify native / QuantaPhi site parity and spoken notes
         run: node --test test/bubbles-native-site-parity.test.cjs
       - name: Verify Oracle chat interruption and text conversation
