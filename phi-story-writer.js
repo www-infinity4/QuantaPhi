@@ -49,13 +49,13 @@ function ui(){
    const candidates=[];
    const seen=new Set();
    for(const turn of turns.slice().reverse()){
-    const raw=turn.text.replace(/https?:\\/\\/\\S+/g,'').replace(/\\s+/g,' ').trim();
-    if(/\\b(password|passphrase|pin number|credit card|bank account|bearer token|api key|secret key|social security)\\b/i.test(raw))continue;
-    const idea=raw.split(/[.!?]/)[0].replace(/^(please|can you|i want|i need|tell me about|find|search for|explain|what is|make|create|build|fix|repair)\\s+/i,'').slice(0,110).trim();
-    if(idea.length<15||idea.length>110)continue;
-    const normalized=idea.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+    const raw=turn.text.replace(/https?:\/\/\S+/g,'').replace(/\s+/g,' ').trim();
+    if(/\b(password|passphrase|pin number|credit card|bank account|bearer token|api key|secret key|social security)\b/i.test(raw))continue;
+    const sourceTopic=raw.split(/[.!?]/)[0].replace(/^(please|can you|i want|i need|tell me about|find|search for|explain|what is|make|create|build|fix|repair)\s+/i,'').slice(0,110).trim();
+    if(sourceTopic.length<15||sourceTopic.length>110)continue;
+    const normalized=sourceTopic.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
     if(!normalized||seen.has(normalized))continue;
-    seen.add(normalized);candidates.push(idea);
+    seen.add(normalized);candidates.push(sourceTopic);
     if(candidates.length===4)break;
    }
    if(!candidates.length){personalIdeas.append(make('p','sw-muted','No suitable saved Bubbles topics yet. You can still write a story without history.'));return}
