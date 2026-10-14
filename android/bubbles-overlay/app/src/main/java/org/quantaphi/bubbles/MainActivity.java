@@ -139,6 +139,23 @@ public final class MainActivity extends Activity {
                 + "GPT image generation and GPT Live voice are not included with this connection.");
         chatgptNotice.setTextColor(Color.rgb(101, 83, 111));
         layout.addView(chatgptNotice);
+        // Android's Speech Engine is replaceable without a proprietary plugin.
+        // HayaiTTS provides optional on-device Kokoro/Piper neural voices.
+        Button naturalVoice = new Button(this);
+        naturalVoice.setText("Natural voice options (open-source neural voices)");
+        naturalVoice.setOnClickListener(v -> {
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        android.net.Uri.parse("https://github.com/HayaiApp/HayaiTTS/releases")));
+            } catch (Exception error) {
+                state.setText("Could not open the voice engine repository.");
+            }
+        });
+        layout.addView(naturalVoice);
+        TextView voiceNotice = new TextView(this);
+        voiceNotice.setText("Optional: install a neural Android speech engine, then select it as your system text-to-speech engine. Bubbles uses that selection. This is not an official ChatGPT voice.");
+        voiceNotice.setTextColor(Color.rgb(101, 83, 111));
+        layout.addView(voiceNotice);
 
         message = new EditText(this);
         message.setHint("Type a message or work request to Bubbles…");
