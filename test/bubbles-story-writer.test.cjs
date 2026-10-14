@@ -59,7 +59,8 @@ test('Bubbles never impersonates account sign-in or grants unverified repository
  assert.match(code,/account access require separate provider authorization/);
  assert.match(code,/You have NO independent GitHub write authorization/);
  assert.match(code,/const headers=window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready:null/);
- assert.match(code,/if\(!headers\)return/);
+ assert.match(code,/if\(!headers\?\.Authorization\)return/);
+ assert.match(code,/if\(embedded\)throw Error\('Guest embed bubbles cannot access the owner Robot Brain\.'\)/);
  assert.match(code,/ownerHeaders=headers;ownerReady=true;workButton\.hidden=false/);
  assert.match(code,/workButton\.addEventListener\('click'/);
  assert.match(code,/context:\{kind:'robot-directions'/);
@@ -125,7 +126,8 @@ test('multiple Bubbles embeds isolate notes and never inherit owner authorizatio
  assert.match(code,/const bubbleId=embedded/);
  assert.match(code,/const NOTES='quantaphi:bubbles:notes:v1'\+\(bubbleId\?':'\+bubbleId:''\)/);
  assert.match(code,/const CONFIG='quantaphi:bubbles:config:v1'\+\(bubbleId\?':'\+bubbleId:''\)/);
- assert.match(code,/if\(embedded\)return;\s*const headers=window\.QuantaBrainOwner/);
+ assert.match(code,/async function connectOwner\(\)\{\s*if\(embedded\)return/);
+ assert.match(code,/if\(embedded\)throw Error\('Guest embed bubbles cannot access the owner Robot Brain\.'\)/);
  assert.match(code,/window\.parent\.postMessage\(\{type:'quantaphi:bubbles:size',open:showing\},'\*'\)/);
  assert.match(code,/const markup='<script async src="https:\/\/quantaphi\.org\/bubbles-embed\.js"/);
  assert.match(code,/function xmlAttr\(value\)/);
@@ -210,7 +212,7 @@ test('reply actions take notes and prepare work without sending unapproved robot
  assert.equal(notes[0].text,'Here is a practical plan to update the README and run tests.');
  const draft=get('button','Make work draft');
  draft.handlers.click();
- const work=nodes.find(e=>e.tag==='textarea'&&e.placeholder?.startsWith('A specific GitHub'));
+ const work=nodes.find(e=>e.tag==='textarea'&&e.placeholder?.startsWith('Say fix a card'));
  assert.equal(work.value,notes[0].text);
  const submit=get('button','Send approved request to Robot Brain');
  assert.equal(submit.hidden,true);
