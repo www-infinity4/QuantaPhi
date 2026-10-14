@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="robots" content="noindex">
-  <title>Bubbles AI · QuantaPhi</title>
+  <meta name="robots" content="index,follow">
+  <title>Bubbles AI — Voice Assistant for Research and Tasks | QuantaPhi</title>
   <meta name="description" content="Program your own Bubbles AI specialist and speak with your floating voice assistant.">
   <link rel="canonical" href="https://quantaphi.org/bubbles/">
-  <link rel="stylesheet" href="/bubbles-ai.css?v=20261011-voice1">
+  <link rel="stylesheet" href="/bubbles-ai.css?v=20261013-oracle-voice2">
   <style>
-    html{min-height:100%;background:#150f26}
-    body{margin:0;min-height:100dvh;padding:15px 15px 100px;box-sizing:border-box;background:radial-gradient(circle at 80% 10%,#493083,#150f26 60%);font:15px/1.5 system-ui,sans-serif;color:#fff}
+    html{min-height:100%;background:#f7f4f0}
+    body{margin:0;min-height:100dvh;padding:15px 15px 100px;box-sizing:border-box;background:#f7f4f0;font:16px/1.55 system-ui,sans-serif;color:#312722}
     .bubbles-page{max-width:720px;margin:auto}
-    .bubbles-page>a{display:inline-block;color:#d2f1ff;margin:0 0 13px}
+    .bubbles-page>a{display:inline-block;color:#563086;margin:0 0 13px}
     body.bubbles-embedded{background:transparent!important;padding:0!important;margin:0!important;height:100dvh!important;overflow:hidden}
     body.bubbles-embedded .bubbles-page{display:none!important}
     body.bubbles-embedded .ba-launcher{right:3px!important;bottom:3px!important}
@@ -27,8 +27,13 @@
       if(document.documentElement.classList.contains('bubble-iframe'))document.body.classList.add('bubbles-embedded');
     });
   </script>
-  <script defer src="/bubbles-voice-gate.js?v=20261013-resume1"></script>
-<script defer src="/bubbles-ai.js?v=20261013-followup2"></script>
+  <!-- Standalone Bubbles reuses same-origin wallet/owner verification. No wallet bounce. -->
+  <script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script>
+  <script defer src="/cloud-wallet-client.js?v=20261013-brain-bridge1"></script>
+  <script defer src="/robot-brain-owner.js?v=20261013-brain-bridge1"></script>
+  <script defer src="/bubbles-voice-gate.js?v=20261012-brain2"></script>
+  <script defer src="/bubbles-brain-actions.js?v=20261014-jobs1"></script>
+  <script defer src="/bubbles-ai.js?v=20261014-receipt-gpt1"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1"></head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
@@ -54,8 +59,11 @@
       <p>This is the film’s planned workflow. Banking, ad placement and orders require connected services and the owner’s authorization.</p>
       <div class="bubbles-actions"><a href="/quant-ai-storyboard.html">View the production storyboard</a><a href="/#robotDirections">Open Robot Brain production crew</a></div>
     </section>
+    <div id="robotBrainOwner" aria-live="polite"></div>
     <div id="bubblesAICard"></div>
+    <p><a href="/bubbles-commercial.html">Open Bubbles Commercial Studio · preview and export video</a></p>
     <p>Bubbles uses the QuantaPhi Oracle AI service. Speech recognition and local notes depend on your browser permissions and storage settings.</p>
   </main>
 </body>
 </html>
+
