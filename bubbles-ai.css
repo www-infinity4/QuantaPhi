@@ -109,3 +109,50 @@
 .ba-tool-rail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:8px 0}
 .ba-panel .ba-tool-link{display:flex;align-items:center;justify-content:center;min-height:43px;text-align:center;padding:5px;border:1px solid #d9dedf;border-radius:10px;background:#fff;color:#286484;text-decoration:none;font-size:11px;font-weight:800}
 @media(max-width:340px){.ba-tool-rail{grid-template-columns:1fr}}
+
+/* Oracle Octaves voice companion: warm daylight surfaces; preserve the living
+   glass orb, voice states, existing StarQuest controls and card color meaning. */
+#bubblesAICard,.ba-panel{
+ --ba-oracle-paper:#f7f4f0;--ba-oracle-ink:#312722;--ba-oracle-muted:#736a64;
+ --ba-oracle-line:#e5ddd6;--ba-oracle-red:#b83b32;
+ font-family:system-ui,sans-serif;color:var(--ba-oracle-ink);
+}
+#bubblesAICard{font-size:16px;line-height:1.55}
+#bubblesAICard .ba-studio-card,.ba-panel{
+ background:#fff;color:var(--ba-oracle-ink);
+ border:1px solid var(--ba-oracle-line);border-radius:18px;
+ box-shadow:0 12px 30px rgb(49 39 34 / 9%);
+}
+#bubblesAICard h2,#bubblesAICard label,#bubblesAICard .ba-publish strong,
+.ba-panel .ba-header strong,.ba-panel .ba-privacy-label{
+ color:var(--ba-oracle-ink);
+}
+#bubblesAICard .ba-copy,#bubblesAICard .ba-muted,.ba-panel .ba-muted,
+.ba-panel .ba-status,#bubblesAICard .ba-eyebrow{color:var(--ba-oracle-muted)}
+#bubblesAICard .ba-field,.ba-panel .ba-field{
+ color:var(--ba-oracle-ink);border-color:#cdbfb5;border-radius:10px;
+ font-size:16px;min-height:44px;
+}
+#bubblesAICard .ba-control,.ba-panel button{
+ color:var(--ba-oracle-ink);border-color:var(--ba-oracle-line);border-radius:12px;
+ font-size:14px;min-height:44px;
+}
+#bubblesAICard .ba-primary,.ba-panel .ba-send{
+ background:var(--ba-oracle-red);border-color:var(--ba-oracle-red);color:#fff;
+}
+.ba-panel .ba-miniaction,.ba-panel .ba-remove,.ba-panel .ba-privacy .ba-control,
+.ba-panel .ba-close,.ba-panel .ba-program .ba-settings button,
+.ba-panel .ba-tool-link,.ba-panel .ba-tools summary,.ba-panel .ba-program summary{min-height:44px}
+.ba-panel .ba-miniaction,.ba-panel .ba-remove{font-size:13px}
+.ba-panel .ba-message{font-size:15px;line-height:1.55}
+.ba-panel .ba-assistant{background:var(--ba-oracle-paper);color:var(--ba-oracle-ink)}
+.ba-panel .ba-you{background:#eef8f0;color:#244630}
+.ba-panel .ba-tools,.ba-panel .ba-header{border-color:var(--ba-oracle-line)}
+.ba-panel :focus-visible,#bubblesAICard :focus-visible{outline:3px solid #236b83;outline-offset:3px}
+@media(max-width:390px){
+ #bubblesAICard .ba-settings,.ba-program .ba-settings{grid-template-columns:1fr}
+ #bubblesAICard .ba-settings>*,
+ .ba-program .ba-settings>*{grid-column:1/-1!important}
+ .ba-panel .ba-actions{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .ba-panel .ba-actions button{font-size:12px;padding:8px 4px}
+}
