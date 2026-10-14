@@ -15,7 +15,7 @@ function fixture(){
  const document={getElementById:id=>nodes[id],createComment:()=>({nodeType:8})};
  let json=async()=>({results:[]});
  const fetch=(url)=>{const u=new URL(String(url));calls.push(u);return Promise.resolve({ok:true,json:()=>json(u)})};
- const window={addEventListener:(name,fn)=>listeners.set(name,fn),dispatchEvent:e=>(listeners.get(e.type)||[]).forEach(fn=>fn(e))};
+ const window={addEventListener:(name,fn)=>listeners.set(name,[...(listeners.get(name)||[]),fn]),dispatchEvent:e=>(listeners.get(e.type)||[]).forEach(fn=>fn(e))};
  const context={window,document,URL,URLSearchParams,AbortController,fetch,setTimeout,clearTimeout,console};
  vm.createContext(context);vm.runInContext(source,context);
  const search=q=>{nodes.q.value=q;(listeners.get('quantaphi:search-start')||[]).forEach(fn=>fn({detail:{query:q,run:calls.length+1}}))};
