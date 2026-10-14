@@ -21,6 +21,9 @@ public final class ScreenCaptureService extends Service {
     private ImageReader images;
     private File file;
     private boolean finished, recordingStarted;
+    private File sequenceDirectory;
+    private int captureCount;
+    private long lastCaptureAt, sequenceIntervalMs;
 
     @Override public int onStartCommand(Intent intent, int flags, int id) {
         if (intent == null || STOP.equals(intent.getAction())) { finishCapture(); return START_NOT_STICKY; }
@@ -49,27 +52,62 @@ public final class ScreenCaptureService extends Service {
             int height = Math.max(2, (metrics.heightPixels / 2) * 2);
             File directory = new File(getFilesDir(), "captures"); directory.mkdirs();
             boolean screenshot = intent.getBooleanExtra("screenshot", false);
+            int intervalSeconds = intent.getIntExtra("interval_seconds", 0);
+            int durationSeconds = intent.getIntExtra("duration_seconds", 0);
+            final boolean sequence = screenshot && intervalSeconds > 0 && durationSeconds > 0;
             if (screenshot) {
-                file = new File(directory, "screen-" + System.currentTimeMillis() + ".png");
+                if (sequence) {
+                    intervalSeconds = Math.max(2, Math.min(60, intervalSeconds));
+                    durationSeconds = Math.max(10, Math.min(300, durationSeconds));
+                    sequenceIntervalMs = 1000L * intervalSeconds;
+                    sequenceDirectory = new File(directory, "screen-series-" + System.currentTimeMillis());
+                    if (!sequenceDirectory.mkdirs()) throw new IOException("Could not create capture folder");
+                } else {
+                    file = new File(directory, "screen-" + System.currentTimeMillis() + ".png");
+                }
                 images = ImageReader.newInstance(width, height, PixelFormat.RGBA_8888, 2);
                 images.setOnImageAvailableListener(reader -> {
                     if (finished) return;
                     try (Image image = reader.acquireLatestImage()) {
                         if (image == null) return;
+                        long now = SystemClock.elapsedRealtime();
+                        if (sequence && captureCount > 0 && now - lastCaptureAt < sequenceIntervalMs) return;
+                        if (sequence && captureCount >= 60) { main.post(this::finishCapture); return; }
                         Image.Plane plane = image.getPlanes()[0];
                         int paddedWidth = plane.getRowStride() / plane.getPixelStride();
                         Bitmap padded = Bitmap.createBitmap(paddedWidth, image.getHeight(), Bitmap.Config.ARGB_8888);
                         padded.copyPixelsFromBuffer(plane.getBuffer());
                         Bitmap bitmap = Bitmap.createBitmap(padded, 0, 0, image.getWidth(), image.getHeight());
-                        try (FileOutputStream output = new FileOutputStream(file)) { bitmap.compress(Bitmap.CompressFormat.PNG, 100, output); }
+                        if (sequence) {
+                            int targetWidth = Math.min(720, bitmap.getWidth());
+                            int targetHeight = Math.max(1, Math.round(bitmap.getHeight() * targetWidth / (float)bitmap.getWidth()));
+                            Bitmap small = Bitmap.createScaledBitmap(bitmap, targetWidth, targetHeight, true);
+                            file = new File(sequenceDirectory, String.format(java.util.Locale.ROOT, "screen-%03d.jpg", captureCount + 1));
+                            try (FileOutputStream output = new FileOutputStream(file)) {
+                                if (!small.compress(Bitmap.CompressFormat.JPEG, 75, output))
+                                    throw new IOException("Could not encode screenshot");
+                            }
+                            if (small != bitmap) small.recycle();
+                            lastCaptureAt = now;
+                            captureCount++;
+                            savePath("image/jpeg");
+                            BrainNotes.prefs(this).edit().putString("capture_series_dir", sequenceDirectory.getAbsolutePath())
+                                .putInt("capture_count", captureCount)
+                                .putString("capture_state", "Screen series: " + captureCount + " saved locally").apply();
+                        } else {
+                            try (FileOutputStream output = new FileOutputStream(file)) { bitmap.compress(Bitmap.CompressFormat.PNG, 100, output); }
+                            savePath("image/png");
+                        }
                         if (bitmap != padded) bitmap.recycle(); padded.recycle();
-                        savePath("image/png");
-                        main.post(this::finishCapture);
+                        if (!sequence || captureCount >= 60) main.post(this::finishCapture);
                     } catch (Exception error) { fail(error); }
                 }, main);
                 display = projection.createVirtualDisplay("Bubbles screenshot", width, height, metrics.densityDpi,
                         DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, images.getSurface(), null, main);
-                main.postDelayed(this::finishCapture, 15000);
+                BrainNotes.prefs(this).edit().putString("capture_state",
+                    sequence ? "Capturing screenshots every " + intervalSeconds + " seconds for up to "
+                        + durationSeconds + " seconds · one approved session" : "Taking screenshot…").apply();
+                main.postDelayed(this::finishCapture, sequence ? durationSeconds * 1000L : 15000L);
             } else {
                 // Downscale recordings on the Moto G Pure rather than encode full-resolution frames.
                 float scale = Math.min(1f, 720f / width);
@@ -106,6 +144,10 @@ public final class ScreenCaptureService extends Service {
         if (finished) return;
         finished = true;
         main.removeCallbacksAndMessages(null);
+        if (sequenceDirectory != null) {
+            BrainNotes.prefs(this).edit().putString("capture_state", "Screen series finished: "
+                + captureCount + " screenshots saved locally").apply();
+        }
         if (recorder != null) {
             boolean valid = false;
             if (recordingStarted) {
