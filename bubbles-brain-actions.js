@@ -18,6 +18,11 @@ function classify(utterance){
  const ask=/\b(?:show|give|read|tell|check|list|summari[sz]e|what|how|which|report)\b/i;
  const target=/\b(?:bots?|robot\s*brain|brain|jobs?|tasks?|pink\s*panther|color\s*bots?|agents?|work\s*report)\b/i;
  if(report.test(text)&&ask.test(text)&&target.test(text))return 'report';
+ const explicitJob=/\b(?:make|create|start|queue|submit)\b.{0,80}\b(?:job|task|ticket)\b.{0,80}\b(?:robot|bot)\s*brain\b/i;
+ if(explicitJob.test(text)&&!/^(?:how|why|what|when|where|who|do not|don't|never|stop)\b/i.test(text)){
+  const specific=text.match(/\b(?:robot|bot)\s*brain\b.{0,12}\b(?:to|for|about|that)\s+(.+)$/i)?.[1]?.trim()||'';
+  return specific.split(/\s+/).filter(Boolean).length>=2?'queue':'needs-details';
+ }
  const dispatch=/\b(?:send|assign|instruct|dispatch|queue|start|launch|submit)\b.{0,100}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther|jobs?|tasks?)\b/i;
  const dispatchByName=/\b(?:tell|ask|have|give)\b.{0,70}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,90}\b(?:to\s+)?(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
  const dispatchReverse=/\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,80}\b(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
