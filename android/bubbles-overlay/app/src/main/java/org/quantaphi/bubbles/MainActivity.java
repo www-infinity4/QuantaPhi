@@ -400,6 +400,14 @@ public final class MainActivity extends Activity {
 
     @Override protected void onResume() {
         super.onResume();
+        // Only the user's explicit first-party Bubbles button can request this flow.
+        // Tokens are encrypted in Android Keystore and never passed to WebView.
+        if(getIntent().getBooleanExtra("open_chatgpt_signin",false)){
+            getIntent().removeExtra("open_chatgpt_signin");
+            if(state!=null)state.setText("Opening ChatGPT authorization in your browser…");
+            ChatGPTSignIn.start(this,result -> {if(state!=null)
+                state.setText(ChatGPTSignIn.status(this)+"\n"+result);});
+        }
         if (refreshStatus != null) { ui.removeCallbacks(refreshStatus); refreshStatus.run(); }
         String voiceCapture = getIntent().getStringExtra("voice_capture");
         if (voiceCapture != null) {
