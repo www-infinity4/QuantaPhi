@@ -91,6 +91,20 @@ public final class MainActivity extends Activity {
                 BrainNotes.prefs(this).edit().remove("notes").apply()).show());
         layout.addView(review);
 
+        TextView voiceStatus = new TextView(this);
+        voiceStatus.setTextColor(Color.rgb(48, 36, 62));
+        voiceStatus.setTextSize(16);
+        Runnable refreshVoice = () -> voiceStatus.setText("Voice: " + BrainNotes.prefs(this).getString("voice_state", "not started")
+                + "\nHeard: " + BrainNotes.prefs(this).getString("last_heard", "No recognized words yet")
+                + "\nReply: " + BrainNotes.prefs(this).getString("last_reply", "No AI reply yet")
+                + "\nLast problem: " + BrainNotes.prefs(this).getString("last_error", "None recorded"));
+        refreshVoice.run();
+        Button diagnostics = new Button(this);
+        diagnostics.setText("Refresh voice status");
+        diagnostics.setOnClickListener(v -> refreshVoice.run());
+        layout.addView(voiceStatus);
+        layout.addView(diagnostics);
+
         Button connect = new Button(this);
         connect.setText("Enable the floating Bubbles assistant");
         connect.setOnClickListener(view -> checkAndStart());
@@ -153,7 +167,7 @@ public final class MainActivity extends Activity {
             Intent intent = new Intent(this, BubblesService.class);
             if (Build.VERSION.SDK_INT >= 26) startForegroundService(intent);
             else startService(intent);
-            state.setText("Bubbles started. Say “Bubbles” and your request. The bubble remains visible above other apps.");
+            state.setText("Bubbles started. Just speak your request. The bubble remains visible above other apps.");
         } catch (Exception error) {
             state.setText("Android could not start the microphone service: " + error.getClass().getSimpleName());
         }
