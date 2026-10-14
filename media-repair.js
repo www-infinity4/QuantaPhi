@@ -13,6 +13,50 @@
   const menu=()=>document.getElementById('qmenu');
   const clean=(v,max=1200)=>String(v||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().slice(0,max);
   const esc=v=>clean(v,4000).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  // Classify explicit feed searches, not topical phrases such as "video games"
+  // or "image recognition". Preserve the user's full query for the overview.
+  function mediaIntent(raw){
+    const query=clean(raw,240);
+    if(!query||/^(?:how|why|what|when|who|explain|history of|compare|research|definition of)\b/i.test(query))return null;
+    const kinds=[
+      {kind:'image',prefix:/^(?:(?:please|show me|show|find|browse|search for|search|see|get|open|load)\s+)*(?:(?:some|a|an|the)\s+)?(?:image feed|photo feed|picture gallery|image gallery|images?|photos?|pictures?|wallpapers?)\b(?:\s+(?:of|for|about|from|on))?\s*/i,suffix:/\s+(?:images?|photos?|pictures?|wallpapers?)(?:\s+(?:feed|gallery|results|collection))?\s*$/i},
+      {kind:'video',prefix:/^(?:(?:please|show me|show|find|browse|search for|search|watch|play|see|get|open|load)\s+)*(?:(?:some|a|an|the)\s+)?(?:video feed|video gallery|video results|videos?|movies?|films?|clips?)\b(?:\s+(?:of|for|about|from|on))?\s*/i,suffix:/\s+(?:videos?|movies?|films?|clips?)(?:\s+(?:feed|gallery|results|collection))?\s*$/i}
+    ];
+    const found=[];
+    for(const item of kinds){
+      const first=query.match(item.prefix);
+      const last=query.match(item.suffix);
+      if(!first&&!last)continue;
+      if(first&&/^(?:videos?|images?|photos?)\s+(?:games?|gaming|generator|generation|recognition|editing|processing|quality|technology|algorithm|ai)\b/i.test(query))continue;
+      const subject=clean(first?query.slice(first[0].length):query.replace(item.suffix,''),180)
+        .replace(/^(?:of|for|about|from|on)\s+/i,'').trim();
+      if(!subject||/^(?:feed|gallery|results|collection|of|for|about|from|on)$/i.test(subject))continue;
+      found.push({kind:item.kind,subject,query});
+    }
+    return found.length===1?found[0]:null;
+  }
+
+  const mediaOrigin=()=>document.getElementById('media');
+  const mediaTarget=()=>document.getElementById('status');
+  const originalMediaMarker=(()=>{const m=mediaOrigin();if(!m||!m.parentNode||!document.createComment)return null;
+    const marker=document.createComment('Original QuantaPhi media position');m.parentNode.insertBefore(marker,m);return marker})();
+  const originalMediaHeading=mediaOrigin()?.querySelector('h2')?.textContent||'Media extensions';
+  let focusedSearch=null,focusedPromise=null;
+  function prioritize(kind,subject){
+    const m=mediaOrigin(),top=mediaTarget();
+    if(!m)return;
+    if(kind&&top?.parentNode){
+      top.parentNode.insertBefore(m,top.nextSibling||document.getElementById('webSearchResults')||null);
+      m.classList.add('media-intent-first');m.hidden=false;
+      m.dataset.searchFocus=kind;
+      const heading=m.querySelector('h2');if(heading)heading.textContent=(kind==='image'?'Images':'Videos')+' for '+subject;
+    }else{
+      m.classList.remove('media-intent-first');delete m.dataset.searchFocus;
+      if(originalMediaMarker?.parentNode)originalMediaMarker.parentNode.insertBefore(m,originalMediaMarker.nextSibling);
+      const heading=m.querySelector('h2');if(heading)heading.textContent=originalMediaHeading;
+    }
+  }
+
   const show=(message,scroll=true)=>{const m=media(),g=grid();if(m)m.hidden=false;if(menu())menu().hidden=true;if(g)g.innerHTML=message||'';if(scroll)m?.scrollIntoView({behavior:'smooth',block:'start'})};
   const json=async(url,timeout=9000)=>{
     const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),timeout);
@@ -97,23 +141,26 @@
   let mediaRun=0;
   async function images(options={}){
     const ticket=++mediaRun;
-    const query=q();if(!query)return;
+    const original=q(),query=options.subject||original;if(!original||!query)return;
     show('<small>Loading resilient image feed…</small>',options.scroll!==false);
     const rows=await searchImages(query);
-    if(ticket!==mediaRun||q()!==query)return;
+    if(ticket!==mediaRun||q()!==original)return;
     const g=grid();if(g)g.innerHTML=rows.length?rows.map(imageCard).join(''):'<p class="err">No image results were returned. Try a more specific search.</p>';
   }
-  async function videos(){
-    const query=q();if(!query)return;
-    show('<small>Loading Internet Archive video players…</small>');
-    try{const rows=await iaRows(query,'video'),g=grid();if(g)g.innerHTML=rows.length?rows.map(videoCard).join(''):'<p class="err">No Internet Archive video items found for this search.</p>'}
-    catch(_){const g=grid();if(g)g.innerHTML='<p class="err">Video feed could not load. Internet Archive may be temporarily unavailable.</p>'}
+  async function videos(options={}){
+    const ticket=++mediaRun,original=q(),query=options.subject||original;if(!original||!query)return;
+    show('<small>Finding playable archive videos…</small>',options.scroll!==false);
+    try{
+      const rows=await iaRows(query,'video');
+      if(ticket!==mediaRun||q()!==original)return;
+      const g=grid();if(g)g.innerHTML=rows.length?rows.map(videoCard).join(''):'<p class="err">No playable Internet Archive videos matched this topic. Try a more specific name.</p>';
+    }catch(_){if(ticket!==mediaRun||q()!==original)return;const g=grid();if(g)g.innerHTML='<p class="err">Video feed could not load. Internet Archive may be temporarily unavailable.</p>'}
   }
-  async function sounds(){
-    const query=q();if(!query)return;
-    show('<small>Loading Internet Archive audio players…</small>');
-    try{const rows=await iaRows(query,'audio'),g=grid();if(g)g.innerHTML=rows.length?rows.map(soundCard).join(''):'<p class="err">No Internet Archive audio items found for this search.</p>'}
-    catch(_){const g=grid();if(g)g.innerHTML='<p class="err">Audio feed could not load. Internet Archive may be temporarily unavailable.</p>'}
+  async function sounds(options={}){
+    const ticket=++mediaRun,original=q(),query=options.subject||original;if(!original||!query)return;
+    show('<small>Loading Internet Archive audio players…</small>',options.scroll!==false);
+    try{const rows=await iaRows(query,'audio');if(ticket!==mediaRun||q()!==original)return;const g=grid();if(g)g.innerHTML=rows.length?rows.map(soundCard).join(''):'<p class="err">No Internet Archive audio items found for this search.</p>'}
+    catch(_){if(ticket!==mediaRun||q()!==original)return;const g=grid();if(g)g.innerHTML='<p class="err">Audio feed could not load. Internet Archive may be temporarily unavailable.</p>'}
   }
 
   function replaceButton(id,handler){
@@ -121,15 +168,49 @@
     const fresh=old.cloneNode(true);old.replaceWith(fresh);
     fresh.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();handler()});
   }
-  replaceButton('qImagesBtn',images);
-  replaceButton('qVideoBtn',videos);
-  replaceButton('qSoundBtn',sounds);
+  replaceButton('qImagesBtn',()=>{prioritize('image',q());return images()});
+  replaceButton('qVideoBtn',()=>{prioritize('video',q());return videos()});
+  replaceButton('qSoundBtn',()=>{prioritize(null);return sounds()});
 
   // The original page's automatic media loader depended on one search backend.
   // Keep initial search media useful even when that backend is unavailable.
+  // The overview and media are independently loaded. A visual-feed request
+  // never waits for AI text; later overview completion cannot replace the feed.
   window.loadMedia = async function(query) {
+    if(focusedSearch?.query===q()&&focusedPromise)return focusedPromise;
+    const choice=mediaIntent(query||q());
+    if(choice){prioritize(choice.kind,choice.subject);focusedSearch={...choice,query:q()};
+      focusedPromise=choice.kind==='video'?videos({subject:choice.subject,scroll:false}):images({subject:choice.subject,scroll:false});
+      return focusedPromise;
+    }
     return images({scroll:false,automatic:true});
   };
+  function onSearchStart(event){
+    const query=String(event?.detail?.query||q()).trim();
+    ++mediaRun;
+    const choice=mediaIntent(query);
+    if(choice&&focusedSearch?.query===query&&focusedSearch.kind===choice.kind&&focusedPromise){prioritize(choice.kind,choice.subject);return}
+    focusedSearch=choice?{...choice,query}:null;
+    focusedPromise=null;
+    prioritize(choice?.kind,choice?.subject);
+    if(!choice){const m=media();if(m)m.hidden=true;return;}
+    focusedPromise=choice.kind==='video'?videos({subject:choice.subject,scroll:false}):images({subject:choice.subject,scroll:false});
+  }
+  window.addEventListener('quantaphi:search-start',onSearchStart);
+  // Capture a deliberate Search click/Enter before asynchronous token creation.
+  // A slow wallet must not delay media discovery. Later search-start reuses it.
+  function preflightSearch(event){
+    if(event.type==='click'){
+      const go=document.getElementById('go');
+      if(event.target!==go&&!go?.contains?.(event.target))return;
+    }else if(event.type==='keydown'){
+      if(event.key!=='Enter'||event.target!==document.getElementById('q'))return;
+    }else return;
+    const query=q();
+    if(mediaIntent(query))onSearchStart({detail:{query}});
+  }
+  document.addEventListener?.('click',preflightSearch,true);
+  document.addEventListener?.('keydown',preflightSearch,true);
   const originalElementIdentity=window.elementIdentity;
   if(typeof originalElementIdentity==='function'){
     window.elementIdentity=function(query){
@@ -167,5 +248,5 @@
   }
   window.addEventListener('quantaphi:search-start',scheduleOverviewWatchdog);
 
-  window.QuantaMediaRepair={images,videos,sounds,commonsImages,iaRows,contract:'quanta-overview-first-v2'};
+  window.QuantaMediaRepair={images,videos,sounds,commonsImages,iaRows,mediaIntent,prioritize,contract:'quanta-intent-first-v3'};
 })();

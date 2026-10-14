@@ -1,0 +1,30 @@
+name: QuantaPhi image and video feed-first acceptance
+on:
+  pull_request:
+    paths:
+      - 'media-repair.js'
+      - 'test/media-intent-priority.test.cjs'
+      - '.github/workflows/media-feed-first.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'media-repair.js'
+      - 'test/media-intent-priority.test.cjs'
+      - '.github/workflows/media-feed-first.yml'
+permissions:
+  contents: read
+jobs:
+  media-intent-routing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify media router syntax and ranked feeds
+        run: |
+          node --check media-repair.js
+          node --test test/media-intent-priority.test.cjs test/search-isolation.test.cjs
