@@ -225,6 +225,13 @@ public final class BubblesService extends Service {
             bubbleLayout.x = 14; bubbleLayout.y = 240;
             manager.addView(orb, bubbleLayout);
             connected = true;
+            // Keep the real QuantaPhi website assistant available while the
+            // user is in Twitter or another app, even with the panel collapsed.
+            // The WebView has its own first-party wallet session; no cookie copying.
+            oracleWindow = new FloatingOracleWindow(this, manager);
+            if (oracleWindow.show()) oracleWindow.hide();
+            else BrainNotes.prefs(this).edit().putString("last_error",
+                "Full website assistant unavailable. Native Oracle fallback is active.").apply();
             pendingAudioRecording = intent != null && ACTION_RECORD.equals(intent.getAction());
             muted = false;
             beginListening();
