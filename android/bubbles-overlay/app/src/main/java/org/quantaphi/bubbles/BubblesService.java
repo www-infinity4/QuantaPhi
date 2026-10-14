@@ -155,7 +155,7 @@ public final class BubblesService extends Service {
         return new Notification.Builder(this, CHANNEL)
                 .setSmallIcon(android.R.drawable.ic_btn_speak_now)
                 .setContentTitle(BrainNotes.prefs(this).getString("name","Brain")+" · Bubbles AI")
-                .setContentText("Say "+BrainNotes.prefs(this).getString("name","Brain")+" to talk · long-press to mute")
+                .setContentText("Listening to your speech · long-press to mute")
                 .setOngoing(true)
                 .setContentIntent(open)
                 .addAction(android.R.drawable.ic_delete, "Stop and release microphone", stop)
@@ -289,7 +289,7 @@ public final class BubblesService extends Service {
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
         Matcher matcher = namedWake.matcher(text);
         boolean directed = matcher.find();
-        if (!directed && now > activeUntil) return;
+        // The user-started listening session accepts ordinary speech without a wake word.
         String addressed = directed ? text.substring(matcher.end()).replaceFirst("^[\\s,:.!?\\-]+", "").trim() : text;
         if (MUTE.matcher(addressed).matches()) {
             muteSession();
@@ -440,9 +440,9 @@ public final class BubblesService extends Service {
                             Toast.makeText(BubblesService.this,"Bubbles muted. Tap to reconnect.",Toast.LENGTH_SHORT).show();
                         } else if(muted) {
                             resumeSession();
-                            Toast.makeText(BubblesService.this,"Bubbles listening. Say Bubbles.",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(BubblesService.this,"Bubbles listening. Just speak.",Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(BubblesService.this,"Listening. Say Bubbles and your request.",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(BubblesService.this,"Listening. Just speak your request.",Toast.LENGTH_SHORT).show();
                         }
                     }
                     return true;
