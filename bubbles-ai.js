@@ -137,9 +137,14 @@ const tools=create('details','ba-tools');const summary=create('summary','','Note
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
 const historyToggle=create('input','');historyToggle.type='checkbox';historyToggle.checked=keepChat;
-privacyLabel.append(historyToggle,create('span','','Keep recent chat on this device (optional)'));
-const clearChat=create('button','ba-control','Clear chat');clearChat.type='button';
-privacy.append(privacyLabel,clearChat);
+privacyLabel.append(historyToggle,create('span','','Remember my entire Bubbles conversation on this device'));
+const cloudLabel=create('label','ba-privacy-label'),cloudToggle=create('input');
+cloudToggle.type='checkbox';cloudToggle.checked=cloudChat;cloudToggle.disabled=!keepChat;
+cloudLabel.append(cloudToggle,create('span','','Sync website and Android history with my verified Unified Wallet'));
+const clearChat=create('button','ba-control','Clear local chat');clearChat.type='button';
+const eraseCloud=create('button','ba-control','Erase synced memory');eraseCloud.type='button';
+eraseCloud.hidden=!cloudChat;
+privacy.append(privacyLabel,cloudLabel,clearChat,eraseCloud);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
@@ -211,9 +216,12 @@ function noteCommand(spoken){
 function addNote(value){
  const text=String(value||'').trim().slice(0,3000);
  if(!text)return false;
- const next=[{id:crypto.randomUUID?.()||String(Date.now()),text},...notes].slice(0,30);
+ const entry={id:crypto.randomUUID?.()||String(Date.now()),text};
+ const next=[entry,...notes].slice(0,30);
  if(!save(NOTES,next))return false;
- notes=next;renderNotes();return true;
+ notes=next;renderNotes();
+ if(keepChat)void longMemory?.append({id:'note_'+entry.id.replace(/[^A-Za-z0-9_-]/g,''),at:Date.now(),role:'note',text});
+ return true;
 }
 function speakText(value){
  if(typeof speechSynthesis==='undefined'||typeof SpeechSynthesisUtterance==='undefined'){
@@ -262,20 +270,58 @@ function display(text,who,greeting=false){
  conversation.append(line);conversation.scrollTop=conversation.scrollHeight;
 }
 for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
+function renderMemory(events){
+ const pending=messages.filter(m=>m.role==='user'||m.role==='assistant');
+ const seen=new Map();
+ for(const m of [...events,...pending])if(m?.id&&['user','assistant'].includes(m.role))seen.set(m.id,m);
+ messages=[...seen.values()].sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id)).slice(-30);
+ conversation.replaceChildren();for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
+}
+longMemory?.onUpdate((events,error)=>{
+ if(error){status.textContent='Cloud memory paused: '+error+'. Local memory still works.';return}
+ if(Array.isArray(events))renderMemory(events);
+});
+if(keepChat&&longMemory){
+ void (async()=>{
+  await longMemory.appendAll(messages);
+  renderMemory(await longMemory.recent(30));
+  if(cloudChat)try{await longMemory.connect();status.textContent='Bubbles history synchronized with your verified wallet.'}
+   catch(error){cloudChat=false;cloudToggle.checked=false;eraseCloud.hidden=true;save(CLOUD_MEMORY_KEY,false);
+    status.textContent='Local history restored. Cloud sync unavailable: '+String(error.message||error)}
+ })();
+}
 historyToggle.addEventListener('change',()=>{
  keepChat=historyToggle.checked;
- save(KEEP_HISTORY,keepChat);
- if(keepChat){
-  status.textContent=persistChat()?'Recent conversation saved locally on this device.':'Could not save chat history to this browser.';
- }else{
+ save(KEEP_HISTORY,keepChat);longMemory?.setEnabled(keepChat);cloudToggle.disabled=!keepChat;
+ if(keepChat){status.textContent=persistChat()?'Full transcript memory enabled.':'Browser memory could not be saved.';}
+ else{cloudChat=false;cloudToggle.checked=false;eraseCloud.hidden=true;save(CLOUD_MEMORY_KEY,false);
   try{localStorage.removeItem(HISTORY)}catch{}
-  status.textContent='Chat history will not be saved to device storage. Current messages remain until cleared or reloaded.';
- }
+  status.textContent='Memory recording stopped. Existing saved history remains until explicitly erased.';}
 });
-clearChat.addEventListener('click',()=>{
+cloudToggle.addEventListener('change',async()=>{
+ if(!cloudToggle.checked){cloudChat=false;save(CLOUD_MEMORY_KEY,false);eraseCloud.hidden=true;
+  longMemory?.setEnabled(false);longMemory?.setEnabled(keepChat);
+  status.textContent='Cloud sync disconnected. Local history remains.';return}
+ if(!keepChat||!longMemory){cloudToggle.checked=false;return}
+ status.textContent='Verifying your wallet for private history sync…';
+ try{await longMemory.connect();cloudChat=true;eraseCloud.hidden=false;save(CLOUD_MEMORY_KEY,true);
+  renderMemory(await longMemory.recent(30));
+  status.textContent='Shared memory connected. Android must verify the same wallet inside its own window.'}
+ catch(error){cloudToggle.checked=false;cloudChat=false;save(CLOUD_MEMORY_KEY,false);
+  status.textContent='Cloud memory not connected: '+String(error.message||error)}
+});
+clearChat.addEventListener('click',async()=>{
  messages=[];conversation.replaceChildren();greeted=false;
  try{localStorage.removeItem(HISTORY)}catch{}
- status.textContent='Local chat cleared. Private notes remain until you delete them separately.';
+ await longMemory?.clear({cloudToo:false});
+ status.textContent='Local chat erased. Synced history, if any, remains with your wallet.';
+});
+eraseCloud.addEventListener('click',async()=>{
+ if(!cloudChat||!confirm('Permanently erase all Bubbles messages attached to this verified wallet and browser?'))return;
+ try{await longMemory?.clear({cloudToo:true});messages=[];conversation.replaceChildren();
+  try{localStorage.removeItem(HISTORY)}catch{}
+  status.textContent='Your wallet-synced Bubbles memory was erased.'}
+ catch(error){status.textContent='Deletion failed: '+String(error.message||error)}
 });
 function toggle(open){
  showing=Boolean(open);panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
