@@ -1,0 +1,34 @@
+name: Brain Clock immutable source-window and SHA-256 review gate
+on:
+  pull_request:
+    paths:
+      - 'workers/infinity-brain-clock/arbitration-evidence.mjs'
+      - 'workers/infinity-brain-clock/arbitration-evidence.test.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
+      - '.github/workflows/brain-window-review.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/infinity-brain-clock/arbitration-evidence.mjs'
+      - 'workers/infinity-brain-clock/arbitration-evidence.test.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
+      - '.github/workflows/brain-window-review.yml'
+permissions:
+  contents: read
+jobs:
+  bounded-verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse Worker and bounded review implementation
+        run: |
+          node --check workers/infinity-brain-clock/worker.js
+          node --check workers/infinity-brain-clock/arbitration-evidence.mjs
+      - name: Test exact-source hash and unsafe-window rejection
+        run: node --test workers/infinity-brain-clock/arbitration-evidence.test.mjs workers/infinity-brain-clock/job-quant.test.mjs
