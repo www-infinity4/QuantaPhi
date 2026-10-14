@@ -7,6 +7,7 @@ const WINDOW=read('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbl
 const MAIN=read('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/MainActivity.java');
 const VOICE=read('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BubblesService.java');
 const ACCESS=read('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BrainLearningService.java');
+const ACCESS_XML=read('android/bubbles-overlay/app/src/main/res/xml/brain_learning.xml');
 const STORY=read('phi-story-writer.js');
 test('Android first-party Bubbles uses per-user native OAuth inference without a WebView token bridge',()=>{
  assert.match(WEB,/nativeChatGPT\(prompt\)/);
@@ -25,6 +26,8 @@ test('Android screen text requires an explicit command and an installed accessib
  assert.match(ACCESS,/node\.isPassword\(\) \|\| node\.isEditable\(\)/);
  assert.match(ACCESS,/app\.equals\("com\.android\.systemui"\)/);
  assert.match(VOICE,/Screen text:/);
+ assert.doesNotMatch(ACCESS_XML,/android:packageNames=/);
+ assert.match(ACCESS,/LearningPolicy\.key\(app\)/);
 });
 test('story personalization needs opt-in and avoids pretending ChatGPT sign-in shares history',()=>{
  assert.match(STORY,/quantaPhi:storyWriter:personalize:v1/);
