@@ -1,0 +1,51 @@
+name: Bubbles public live and owner-boundary smoke
+on:
+  pull_request:
+    paths:
+      - 'scripts/bubbles-live-smoke.mjs'
+      - 'test/bubbles-live-smoke.test.mjs'
+      - '.github/workflows/bubbles-live-smoke.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-brain-actions.js'
+      - 'workers/bubbles-tools/**'
+      - 'scripts/bubbles-live-smoke.mjs'
+      - 'test/bubbles-live-smoke.test.mjs'
+      - '.github/workflows/bubbles-live-smoke.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '23 7,19 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: bubbles-live-smoke-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify test itself without network
+        run: node --test test/bubbles-live-smoke.test.mjs
+      - name: Check public Bubbles health, CORS and private owner boundary
+        env:
+          # A PR only tests public security boundaries, not production GPT billable inference.
+          # On main, verify the actual served page, installed adapter and a single GPT reply.
+          BUBBLES_LIVE_FULL: ${{ github.event_name != 'pull_request' && '1' || '0' }}
+        run: node scripts/bubbles-live-smoke.mjs
+      - name: Retain exact observed status and blockers
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bubbles-public-live-smoke
+          path: repository-receipts/bubbles-live-smoke.json
+          if-no-files-found: warn
+          retention-days: 14
