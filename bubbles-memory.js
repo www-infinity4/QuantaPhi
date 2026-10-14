@@ -38,6 +38,8 @@
    if(!enabled)return false;
    const e=normalize(msg);if(!e)return false;
    const db=await dbPromise;if(!db)return false;
+   const existing=await request(db,'one',false,s=>s.get(e.id));
+   if(existing)return true; // Never downgrade a previously synced entry.
    const ok=await record(db,{...e,synced:remote===true});
    if(ok&&!remote&&cloud)void sync();return ok;
   }
