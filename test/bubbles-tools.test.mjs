@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker,{chooseTool,parseHeadlines,reasoningFor,isGenericBuildReply,hasUnverifiedActionClaim} from '../workers/bubbles-tools/worker.mjs';
+import worker,{chooseTool,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim} from '../workers/bubbles-tools/worker.mjs';
 test('spoken commands select actual tools, ordinary conversation remains chat',()=>{
  assert.equal(chooseTool('Check Google News and tell me the headlines'),'news.headlines');
  assert.equal(chooseTool('Create a GitHub repo called Rain'),'github.create_repository');
@@ -11,6 +11,12 @@ test('reasoning level comes from the actual spoken request, not injected persona
  assert.equal(reasoningFor('How are you today?'),'medium');
  assert.equal(reasoningFor('Please debug my website microphone and update its voice interface'),'high');
  assert.equal(reasoningFor('Analyze the repository build architecture'),'high');
+});
+test('short voice turns conserve tokens but explicit detail is available',()=>{
+ assert.equal(replyBudgetFor('hello'),650);
+ assert.equal(replyBudgetFor('fix the microphone in my website'),1600);
+ assert.equal(replyBudgetFor('explain this architecture in detail'),2500);
+ assert.equal(replyBudgetFor('please give me a long answer about this plan'),2500);
 });
 test('headlines require dated current Google News links, deduplicate and reject invented destinations',()=>{
  const now=Date.parse('2026-10-12T02:00:00Z');
@@ -30,7 +36,7 @@ test('foreign website origins cannot invoke assistant tools',async()=>{
 });
 test('ordinary conversation uses GPT OSS and reports the actual model',async()=>{
  let used=false;
- const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{AI:{run:async(model,options)=>{used=true;assert.equal(model,'@cf/openai/gpt-oss-120b');assert.equal(options.reasoning_effort,'medium');assert.equal(options.max_tokens,1800);assert.match(options.messages[0].content,/Installed tool inventory/);assert.match(options.messages[0].content,/receipts automatically/);assert.match(options.messages[1].content,/hello/);return {response:'Hello'};}}});
+ const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{AI:{run:async(model,options)=>{used=true;assert.equal(model,'@cf/openai/gpt-oss-120b');assert.equal(options.reasoning_effort,'medium');assert.equal(options.max_tokens,650);assert.match(options.messages[0].content,/Installed tool inventory/);assert.match(options.messages[0].content,/receipts automatically/);assert.match(options.messages[1].content,/hello/);return {response:'Hello'};}}});
  const body=await r.json();assert.equal(used,true);assert.equal(body.output,'Hello');assert.equal(body.model,'@cf/openai/gpt-oss-120b');
 });
 test('website repair requests get high reasoning and a larger output budget',async()=>{
@@ -41,7 +47,7 @@ test('website repair requests get high reasoning and a larger output budget',asy
  const result=await worker.fetch(req,{AI:{run:async(model,options)=>{
    assert.equal(model,'@cf/openai/gpt-oss-120b');
    assert.equal(options.reasoning_effort,'high');
-   assert.equal(options.max_tokens,3000);
+   assert.equal(options.max_tokens,1600);
    assert.match(options.messages[0].content,/only verified tool receipts/);
    assert.ok(options.messages[0].content.includes('test/bubbles-brain-actions.test.cjs'));
    assert.ok(options.messages[0].content.includes('workers/infinity-brain-clock/worker.js'));

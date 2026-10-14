@@ -35,6 +35,17 @@ function onMessage(event){
  if(event.origin!==ORIGIN||event.source!==iframe.contentWindow)return;
  if(!event.data)return;
  if(event.data.type==='quantaphi:bubbles:size'&&typeof event.data.open==='boolean'){resize(event.data.open);return}
+ if(event.data.type==='quantaphi:bubbles:site-draft'){
+  if(event.data.id!==id||typeof event.data.request!=='string')return;
+  const request=event.data.request.trim().slice(0,2000);
+  if(!request)return;
+  // Independent site owners must implement their own authenticated work
+  // adapter. This event is untrusted user text, NOT authorization to run it.
+  window.dispatchEvent(new CustomEvent('bubbles:work-draft',{detail:{
+   bubbleId:id,request,executed:false,source:'bubbles-embed'
+  }}));
+  return;
+ }
  if(event.data.type==='quantaphi:bubbles:move'&&!expanded){
   const dx=Number(event.data.dx),dy=Number(event.data.dy);
   if(!Number.isFinite(dx)||!Number.isFinite(dy)||Math.abs(dx)>200||Math.abs(dy)>200)return;
