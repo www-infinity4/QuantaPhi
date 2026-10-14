@@ -72,7 +72,8 @@ function wire(){
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',wire,{once:true});else wire();
 })(window);
-\n/* Small deterministic, testable suggestions; GPT is never claimed unless invoked. */
+
+/* Small deterministic, testable suggestions; GPT is never claimed unless invoked. */
 (function(root){
 'use strict';
 const modes=[
