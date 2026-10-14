@@ -301,6 +301,12 @@ async function sendMessage(text){
   const answer=extract(json);if(!answer)throw Error('The AI returned no spoken or written reply');
   messages.push({role:'assistant',text:answer});messages=messages.slice(-20);persistChat();
   display(answer,'ai');status.textContent=config.alias+' · response received';
+  if(json.receipt?.tool?.startsWith('resonance.')&&json.url==='https://quantaphi.org/resonance.html'){
+   const row=create('div','ba-message-actions');
+   const link=create('a','ba-link','Open Resonance Calculator ↗');
+   link.href=json.url;link.target='_blank';link.rel='noopener noreferrer';
+   row.append(link);conversation.append(row);
+  }
   if(Array.isArray(json.sources)){
    const row=create('div','ba-message-actions');
    for(const source of json.sources.slice(0,5)){
@@ -310,7 +316,7 @@ async function sendMessage(text){
    }
    conversation.append(row);
   }
-  if(json.receipt)status.textContent=json.receipt.repositoryActionsVerified===false?config.alias+' · AI answer only · no bot work verified':config.alias+' · '+json.receipt.tool+' · '+json.receipt.status;
+  if(json.receipt)status.textContent=json.receipt.tool?.startsWith('resonance.')?'Resonance Engine · '+json.receipt.status+' · no robot job created':json.receipt.repositoryActionsVerified===false?config.alias+' · AI answer only · no bot work verified':config.alias+' · '+json.receipt.tool+' · '+json.receipt.status;
   if(config.voice)speakText(answer);
  }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message}
  finally{busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
