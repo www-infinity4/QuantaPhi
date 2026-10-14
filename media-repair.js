@@ -13,6 +13,51 @@
   const menu=()=>document.getElementById('qmenu');
   const clean=(v,max=1200)=>String(v||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().slice(0,max);
   const esc=v=>clean(v,4000).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  // Classify explicit feed searches, not topical phrases such as "video games"
+  // or "image recognition". Preserve the user's full query for the overview.
+  function mediaIntent(raw){
+    const query=clean(raw,240),value=query.toLowerCase();
+    if(!query||/^(?:how|why|what|when|who|explain|history of|compare|research|definition of)\\b/i.test(query))return null;
+    const neg=/(?:image|video|photo)\\s+(?:generator|generation|recognition|editing|editor|processing|compression|algorithm|models?|quality|technology|games?|gaming|ai)\\b/i;
+    const kinds=[
+      {kind:'image',prefix:/^(?:(?:please|show me|show|find|browse|search for|search|see|get|open|load)\\s+)*(?:(?:some|a|an|the)\\s+)?(?:images?|photos?|pictures?|wallpapers?|image feed|photo feed|picture gallery|image gallery)\\b(?:\\s+(?:of|for|about|from|on))?\\s*/i,suffix:/\\s+(?:images?|photos?|pictures?|wallpapers?)(?:\\s+(?:feed|gallery|results|collection))?\\s*$/i},
+      {kind:'video',prefix:/^(?:(?:please|show me|show|find|browse|search for|search|watch|play|see|get|open|load)\\s+)*(?:(?:some|a|an|the)\\s+)?(?:videos?|movies?|films?|clips?|video feed|video gallery|video results)\\b(?:\\s+(?:of|for|about|from|on))?\\s*/i,suffix:/\\s+(?:videos?|movies?|films?|clips?)(?:\\s+(?:feed|gallery|results|collection))?\\s*$/i}
+    ];
+    const found=[];
+    for(const item of kinds){
+      const first=query.match(item.prefix);
+      const last=query.match(item.suffix);
+      if(!first&&!last)continue;
+      if(first&&neg.test(query.slice(first[0].length-7).trim())&&/^(?:video|image|photo)/i.test(query))continue;
+      const subject=clean(first?query.slice(first[0].length):query.replace(item.suffix,''),180)
+        .replace(/^(?:of|for|about|from|on)\\s+/i,'').trim();
+      if(!subject||/^(?:feed|gallery|results|collection|of|for|about|from|on)$/i.test(subject))continue;
+      found.push({kind:item.kind,subject,query});
+    }
+    return found.length===1?found[0]:null;
+  }
+
+  const mediaOrigin=()=>document.getElementById('media');
+  const mediaTarget=()=>document.getElementById('status');
+  const originalMediaMarker=(()=>{const m=mediaOrigin();if(!m||!m.parentNode||!document.createComment)return null;
+    const marker=document.createComment('Original QuantaPhi media position');m.parentNode.insertBefore(marker,m);return marker})();
+  const originalMediaHeading=mediaOrigin()?.querySelector('h2')?.textContent||'Media extensions';
+  let focusedSearch=null,focusedPromise=null;
+  function prioritize(kind,subject){
+    const m=mediaOrigin(),top=mediaTarget();
+    if(!m)return;
+    if(kind&&top?.parentNode){
+      top.parentNode.insertBefore(m,top.nextSibling);
+      m.classList.add('media-intent-first');m.hidden=false;
+      m.dataset.searchFocus=kind;
+      const heading=m.querySelector('h2');if(heading)heading.textContent=(kind==='image'?'Images':'Videos')+' for '+subject;
+    }else{
+      m.classList.remove('media-intent-first');delete m.dataset.searchFocus;
+      if(originalMediaMarker?.parentNode)originalMediaMarker.parentNode.insertBefore(m,originalMediaMarker.nextSibling);
+      const heading=m.querySelector('h2');if(heading)heading.textContent=originalMediaHeading;
+    }
+  }
+
   const show=(message,scroll=true)=>{const m=media(),g=grid();if(m)m.hidden=false;if(menu())menu().hidden=true;if(g)g.innerHTML=message||'';if(scroll)m?.scrollIntoView({behavior:'smooth',block:'start'})};
   const json=async(url,timeout=9000)=>{
     const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),timeout);
