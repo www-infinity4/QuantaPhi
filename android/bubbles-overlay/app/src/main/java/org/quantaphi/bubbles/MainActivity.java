@@ -285,9 +285,10 @@ public final class MainActivity extends Activity {
         }
         if (requestCode == CAMERA_REQUEST) {
             if (resultCode != RESULT_OK || data == null || data.getData() == null) {
-                state.setText("Camera recording cancelled. Enable Bubbles to resume listening."); return;
+                state.setText("Camera recording cancelled."); if (canTalk()) checkAndStart(); return;
             }
             Uri source = data.getData();
+            if (canTalk()) checkAndStart();
             state.setText("Saving camera recording locally…");
             mediaWork.execute(() -> {
                 java.io.File target = new java.io.File(getFilesDir(), "captures/camera-" + System.currentTimeMillis() + ".mp4");
@@ -302,7 +303,7 @@ public final class MainActivity extends Activity {
                     }
                     BrainNotes.prefs(this).edit().putString("capture_path", target.getAbsolutePath())
                             .putString("capture_type", "video/mp4").putString("capture_state", "Saved camera video with its audio").apply();
-                    ui.post(() -> state.setText("Camera video saved. Enable Bubbles to resume listening."));
+                    ui.post(() -> state.setText("Camera video saved. Bubbles listening resumed."));
                 } catch (Exception error) { target.delete(); ui.post(() -> state.setText("Could not save camera recording.")); }
             }); return;
         }
