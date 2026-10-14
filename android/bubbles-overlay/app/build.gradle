@@ -8,17 +8,17 @@ android {
         applicationId 'org.quantaphi.bubbles'
         minSdk 26
         targetSdk 35
-        versionCode 8
-        versionName '0.8.0'
+        versionCode 9
+        versionName '0.9.0'
     }
     // Debug APK deliberately installs BESIDE the existing Bubbles app.
     // CI runners use different debug certificates and cannot update the old
     // org.quantaphi.bubbles package without its original signing key.
     buildTypes {
         debug {
-            applicationIdSuffix '.preview3'
+            applicationIdSuffix '.preview4'
             versionNameSuffix '-preview'
-            manifestPlaceholders = [appTitle: 'Bubbles Preview 3']
+            manifestPlaceholders = [appTitle: 'Bubbles Preview 4']
             // Phone-only preview: exclude x86 emulator libraries from the download.
             ndk { abiFilters 'armeabi-v7a', 'arm64-v8a' }
         }
