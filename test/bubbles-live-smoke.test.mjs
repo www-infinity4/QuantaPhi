@@ -15,7 +15,7 @@ function stub({authorizedLeak=false,chatAnswer='The smallest next step is to run
    if(path==='/bubbles.html')return new Response('<script src="/bubbles-ai.js?v=new"></script><script src="/bubbles-brain-actions.js?v=new"></script>',{status:200});
    if(path==='/bubbles-brain-actions.js')return new Response(staleAdapter?'outdated':'resolveFollowupRequest makeJobs',{status:200});
    if(path==='/v1/assist'&&options.headers?.Origin?.includes('untrusted'))return Response.json({ok:false,error:'origin_not_allowed'},{status:403});
-   if(path==='/v1/assist')return Response.json({ok:true,model:'@cf/openai/gpt-oss-120b',output:chatAnswer,receipt:{status:'complete',minted:false}});
+   if(path==='/v1/assist')return Response.json({ok:true,model:'@cf/openai/gpt-oss-120b',output:chatAnswer,receipt:{status:'complete',minted:false,repositoryActionsVerified:false}});
    throw Error('Unexpected '+path);
   }
  };
@@ -51,4 +51,11 @@ test('generic GPT reply or stale live owner adapter is a detectable regression',
   const result=await runSmoke({fetcher:mock.fetcher,full:true});
   assert.equal(result.status,'failed');
  }
+});
+
+test('live smoke fails on invented completion even with HTTP 200 and GPT model',async()=>{
+ const fake=stub({chatAnswer:'**Completed ✅** The owner job adapter has been added to the codebase and merged into main.'});
+ const result=await runSmoke({fetcher:fake.fetcher,full:true});
+ assert.equal(result.status,'failed');
+ assert.match(result.error,/claimed repository edits/);
 });
