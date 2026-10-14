@@ -11,6 +11,7 @@ on:
     paths:
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-chatgpt-native.test.cjs'
+      - 'test/bubbles-apk-preview.test.cjs'
       - '.github/workflows/bubbles-android.yml'
 permissions:
   contents: read
@@ -64,9 +65,47 @@ jobs:
       - name: Compile Bubbles Android application
         working-directory: android/bubbles-overlay
         run: gradle --no-daemon assembleDebug
+      - name: Verify signed APK and supported Android package
+        run: |
+          set -euo pipefail
+          APK=android/bubbles-overlay/app/build/outputs/apk/debug/app-debug.apk
+          SDK="${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}"
+          test -s "$APK"
+          "$SDK/build-tools/35.0.0/apksigner" verify --verbose --print-certs "$APK"
+          "$SDK/build-tools/35.0.0/aapt" dump badging "$APK" | tee /tmp/bubbles-apk-badging.txt
+          grep -q "name='org.quantaphi.bubbles.preview2'" /tmp/bubbles-apk-badging.txt
+          grep -q "sdkVersion:'26'" /tmp/bubbles-apk-badging.txt
+          sha256sum "$APK"
       - name: Upload separately installable Bubbles Preview APK
         uses: actions/upload-artifact@v4
         with:
           name: bubbles-preview-android12-apk
           path: android/bubbles-overlay/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
+
+  # GitHub workflow artifacts are ZIP files, not directly installable APKs.
+  # Publish an actual APK on the main branch so Android users can tap to install.
+  publish-preview:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: android
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: bubbles-preview-android12-apk
+          path: dist
+      - name: Publish directly installable Android APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          mv dist/app-debug.apk dist/Bubbles-Preview-Android12.apk
+          (cd dist && sha256sum Bubbles-Preview-Android12.apk > Bubbles-Preview-Android12.apk.sha256)
+          if gh release view bubbles-preview-current --repo "$GH_REPO" >/dev/null 2>&1; then
+            gh release upload bubbles-preview-current dist/Bubbles-Preview-Android12.apk dist/Bubbles-Preview-Android12.apk.sha256 --clobber --repo "$GH_REPO"
+          else
+            gh release create bubbles-preview-current dist/Bubbles-Preview-Android12.apk dist/Bubbles-Preview-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Bubbles Preview 2 installs alongside previous Bubbles versions; this is a test-signed preview, not a production release."
+          fi
