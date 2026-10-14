@@ -167,3 +167,52 @@ cases. GitHub CI can confirm compilation but not perceived quality or
 always-listening battery/microphone performance. This branch does not change
 Robot Brain job submission, radio playback, wallet transfers, or Android
 screen-recording permissions.
+
+## 0.9.0 — Bubbles Preview 4: live QuantaPhi assistant in the floating window
+
+**Tap the floating orb while Twitter or another app is open.** The window now
+loads the actual first-party `https://quantaphi.org/bubbles.html?nativeOverlay=1`
+Bubbles app instead of approximating its prompt in a second Android-only chat.
+The web application handles its familiar message composer, private webpage notes,
+owner-verification boundary, Brain tickets, status and source links. The Android
+foreground service handles microphone transcription and selected Android TTS
+playback, passing addressed voice **text** into the loaded site. This avoids
+opening the website's microphone or playing two voices simultaneously.
+
+- **Type without talking:** tap the orb, tap **Mic off**, then type in the same
+  Bubbles website composer. The native microphone closes while muted, but typing
+  and normal webpage AI conversation continue. Tap **Mic on** to resume after
+  Android permits the foreground mic.
+- **Just say "take notes"** to start dictating local notes; "write down ..."
+  writes a single note and "stop taking notes" ends note mode. The native
+  fallback also keeps private spoken notes. Native-fallback notes are separate
+  from the website's origin-local notes, not silently synchronized.
+- The website UI also runs while the floating panel is collapsed: the overlay
+  keeps an existing WebView session until Bubbles is stopped. If the first-party
+  page has not deployed the `window.QuantaBubbles.isNativeOverlay` bridge or
+  becomes unavailable, the native Oracle chat remains the fallback. No owner
+  GitHub or Robot Brain write is inferred from a text reply.
+- The embedded WebView has its **own** QuantaPhi wallet / owner verification;
+  Android cannot silently reuse Chrome's cookies, site history or login. Verify
+  the owner's existing session in this native QuantaPhi window if needed.
+- Only https://quantaphi.org opens internally. External HTTPS links use the
+  system browser. No JavaScript-to-Java native bridge, raw ChatGPT tokens,
+  microphone/camera WebView grants or unlocked Android system access.
+- The spoken voice is the currently selected Android TTS voice, with British
+  English preferred. Similar speech character to the website is possible, but
+  identical Chrome SpeechSynthesis timbre cannot be guaranteed by Android TTS.
+
+Preview 4 is intentionally a different install package:
+`org.quantaphi.bubbles.preview4` with version 0.9.0 (versionCode 9) so it
+can coexist with the older debug-signed previews. Stop the older Bubbles
+microphone before starting Preview 4. The exact signature of a specific
+debug build can still vary, so never uninstall an existing app merely to
+replace it. Check Android 12 permission prompts, Twitter overlay keyboard,
+voice notes, owner Brain receipts, background speech, link handling,
+and the fallback with no network on a real Motorola.
+
+**Publishing:** successful GitHub CI can build/sign a Preview APK, but neither
+CI nor a merged GitHub commit proves the live Cloudflare site has deployed these
+new JS/HTML assets. Confirm the first-party web bridge is live and owner-auth
+works before calling the on-device behavior verified. The HTML/CSS interface
+is site-provided, not a screenshot imitation.
