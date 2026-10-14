@@ -131,6 +131,7 @@ const clearChat=create('button','ba-control','Clear chat');clearChat.type='butto
 privacy.append(privacyLabel,clearChat);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
+if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
 const noteList=create('div','ba-notes');
 const workText=create('textarea','ba-field');workText.rows=2;workText.maxLength=4000;workText.placeholder='Say fix a card, queue a bot job, or report the top ten tasks. Verified owners may also submit a draft here.';workText.setAttribute('aria-label','Work request for Robot Brain');
 const workButton=create('button','ba-control','Send approved request to Robot Brain');workButton.type='button';workButton.hidden=true;
