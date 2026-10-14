@@ -537,7 +537,7 @@ function showLevel(){
  if(!busy&&!speaking)setOrbState(hearing?'hearing':'listening');
  meterFrame=window.requestAnimationFrame?.(showLevel)||0;
 }
-document.addEventListener('visibilitychange',()=>{
+document.addEventListener?.('visibilitychange',()=>{
  if(!nativeOverlay&&document.hidden&&voiceEnabled)stopVoice('Website mic released while Android Bubbles keeps listening.');
 });
 function heardTranscript(transcript){
