@@ -141,6 +141,21 @@ public final class MainActivity extends Activity {
         layout.addView(chatgptNotice);
         // Android's Speech Engine is replaceable without a proprietary plugin.
         // HayaiTTS provides optional on-device Kokoro/Piper neural voices.
+        // Genuine GPT-Live-1 uses a separate billed API project, not ChatGPT OAuth.
+        // Release Vosk microphone/overlay first: browser WebRTC needs its own mic.
+        Button liveVoice = new Button(this);
+        liveVoice.setText("GPT-Live voice · genuine model (API setup required)");
+        liveVoice.setAllCaps(false);
+        liveVoice.setOnClickListener(v -> {
+            try {
+                startService(new Intent(this, BubblesService.class).setAction(BubblesService.ACTION_STOP));
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://quantaphi.org/bubbles-gpt-live.html")));
+            } catch (Exception error) {
+                state.setText("Could not open the GPT-Live setup page.");
+            }
+        });
+        layout.addView(liveVoice);
         Button naturalVoice = new Button(this);
         naturalVoice.setText("Natural voice options (open-source neural voices)");
         naturalVoice.setOnClickListener(v -> {
