@@ -157,18 +157,32 @@ public final class MainActivity extends Activity {
         });
         layout.addView(liveVoice);
         Button naturalVoice = new Button(this);
-        naturalVoice.setText("Natural voice options (open-source neural voices)");
-        naturalVoice.setOnClickListener(v -> {
+        naturalVoice.setText("Choose and test Bubbles voice");
+        naturalVoice.setOnClickListener(v -> BubblesVoicePicker.show(this, state::setText));
+        layout.addView(naturalVoice);
+        Button androidTts = new Button(this);
+        androidTts.setText("Change Android speech engine");
+        androidTts.setOnClickListener(v -> {
+            try {
+                startActivity(new Intent("com.android.settings.TTS_SETTINGS"));
+            } catch (Exception error) {
+                state.setText("Open Android Settings → Accessibility → Text-to-speech output to select a voice engine.");
+            }
+        });
+        layout.addView(androidTts);
+        Button installNeural = new Button(this);
+        installNeural.setText("Optional: install open-source neural voices");
+        installNeural.setOnClickListener(v -> {
             try {
                 startActivity(new Intent(Intent.ACTION_VIEW,
                         android.net.Uri.parse("https://github.com/HayaiApp/HayaiTTS/releases")));
             } catch (Exception error) {
-                state.setText("Could not open the voice engine repository.");
+                state.setText("Could not open the open-source voice engine repository.");
             }
         });
-        layout.addView(naturalVoice);
+        layout.addView(installNeural);
         TextView voiceNotice = new TextView(this);
-        voiceNotice.setText("Optional: install a neural Android speech engine, then select it as your system text-to-speech engine. Bubbles uses that selection. This is not an official ChatGPT voice.");
+        voiceNotice.setText("Choose an installed speech voice, hear a sample, and use it for Bubbles. Change the Android engine first to add HayaiTTS voices. These are not licensed ChatGPT Live voices.");
         voiceNotice.setTextColor(Color.rgb(101, 83, 111));
         layout.addView(voiceNotice);
 
