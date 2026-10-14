@@ -57,6 +57,12 @@ import java.util.regex.Pattern;
  * Raw audio stays on-device. Only addressed transcripts go to the Oracle API.
  */
 public final class BubblesService extends Service {
+    public static final String ACTION_TEXT = "org.quantaphi.bubbles.TEXT";
+    public static final String ACTION_RECORD = "org.quantaphi.bubbles.RECORD_AUDIO";
+    public static final String ACTION_SAVE_AUDIO = "org.quantaphi.bubbles.SAVE_AUDIO";
+    private final VoiceRecording recording = new VoiceRecording();
+    private String recordedWords = "";
+    private boolean pendingAudioRecording = false;
     public static final String ACTION_STOP = "org.quantaphi.bubbles.STOP";
     private static final int NOTIFY_ID = 511;
     private static final String CHANNEL = "bubbles_voice";
@@ -116,7 +122,22 @@ public final class BubblesService extends Service {
             stopSelf();
             return START_NOT_STICKY;
         }
-        if (connected) return START_NOT_STICKY;
+        if (!connected && intent != null && ACTION_SAVE_AUDIO.equals(intent.getAction())) { stopSelf(); return START_NOT_STICKY; }
+        if (connected) {
+            if (intent != null && ACTION_TEXT.equals(intent.getAction())) {
+                String text = intent.getStringExtra("text");
+                if (text != null && !text.trim().isEmpty() && text.length() <= 1800) {
+                    if (busy) queued = text.trim(); else askOracle(text.trim());
+                }
+            } else if (intent != null && ACTION_RECORD.equals(intent.getAction())) {
+                if (muted) resumeSession();
+                pendingAudioRecording = true;
+                if (captureRunning) beginAudioRecording(); else beginListening();
+            } else if (intent != null && ACTION_SAVE_AUDIO.equals(intent.getAction())) {
+                saveAudio();
+            }
+            return START_NOT_STICKY;
+        }
         if (checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED
                 || !Settings.canDrawOverlays(this)) {
             stopSelf();
@@ -138,9 +159,15 @@ public final class BubblesService extends Service {
             bubbleLayout.x = 14; bubbleLayout.y = 240;
             manager.addView(orb, bubbleLayout);
             connected = true;
+            pendingAudioRecording = intent != null && ACTION_RECORD.equals(intent.getAction());
             muted = false;
             beginListening();
+            if (intent != null && ACTION_TEXT.equals(intent.getAction())) {
+                String text = intent.getStringExtra("text");
+                if (text != null && !text.trim().isEmpty() && text.length() <= 1800) askOracle(text.trim());
+            }
         } catch (Exception error) {
+            BrainNotes.prefs(this).edit().putString("last_error", "Overlay startup failed: " + error.getClass().getSimpleName()).apply();
             stopSelf();
         }
         return START_NOT_STICKY;
@@ -200,6 +227,7 @@ public final class BubblesService extends Service {
             final Recognizer decoder = new Recognizer(voiceModel, 16000f);
             input.startRecording();
             captureRunning = true;
+            if (pendingAudioRecording) beginAudioRecording();
             state("listening", .12f);
             audioThread = new Thread(() -> {
                 short[] samples = new short[1600];
@@ -208,6 +236,8 @@ public final class BubblesService extends Service {
                     while (captureRunning && connected && !muted) {
                         int count = input.read(samples, 0, samples.length);
                         if (count <= 0) throw new IllegalStateException("Microphone read failed: " + count);
+                        try { recording.append(samples, count); }
+                        catch (Exception error) { main.post(this::saveAudio); }
                         double sum = 0;
                         for (int i = 0; i < count; i++) sum += (double) samples[i] * samples[i];
                         final float level = Math.min(1f, (float) Math.sqrt(sum / count) / 6000f);
@@ -246,8 +276,29 @@ public final class BubblesService extends Service {
         }
     }
 
+    private void beginAudioRecording() {
+        pendingAudioRecording = false;
+        try {
+            recording.start(new java.io.File(getFilesDir(), "captures"));
+            recordedWords = "";
+            BrainNotes.prefs(this).edit().putString("audio_state", "Recording microphone sound").apply();
+        } catch (Exception error) { Toast.makeText(this, error.getMessage(), Toast.LENGTH_LONG).show(); }
+    }
+    private void saveAudio() {
+        pendingAudioRecording = false;
+        try {
+            java.io.File file = recording.finish();
+            if (file != null) BrainNotes.prefs(this).edit()
+                    .putString("audio_path", file.getAbsolutePath())
+                    .putString("audio_transcript", recordedWords)
+                    .putString("audio_state", "Saved " + file.getName()).apply();
+        } catch (Exception error) {
+            BrainNotes.prefs(this).edit().putString("audio_state", "Audio could not be finalized").apply();
+        }
+    }
     private void stopRecognition() {
         captureRunning = false;
+        saveAudio();
         if (microphone != null) {
             try { microphone.stop(); } catch (Exception ignored) {}
         }
@@ -289,6 +340,12 @@ public final class BubblesService extends Service {
         String text = raw == null ? "" : raw.replaceAll("\\s+", " ").trim();
         if (text.isEmpty() || text.length() > 1800 || muted) return;
         BrainNotes.prefs(this).edit().putString("last_heard", text).apply();
+        if (recording.active()) {
+            recordedWords = (recordedWords + " " + text).trim();
+            if (recordedWords.length() > 7000) recordedWords = recordedWords.substring(recordedWords.length() - 7000);
+            // Save sound/transcript without making every recorded sentence an AI command.
+            return;
+        }
         long now = SystemClock.elapsedRealtime();
         String alias=BrainNotes.prefs(this).getString("name","Brain");
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
@@ -408,6 +465,7 @@ public final class BubblesService extends Service {
     @Override public IBinder onBind(Intent intent) {return null;}
     @Override public void onDestroy() {
         connected=false;muted=true;
+        main.removeCallbacksAndMessages(null);
         stopRecognition();
         if (voiceModel != null && audioThread == null) {voiceModel.close();voiceModel=null;}
         if (tts != null) {tts.stop();tts.shutdown();tts=null;}
@@ -468,7 +526,11 @@ public final class BubblesService extends Service {
                             resumeSession();
                             Toast.makeText(BubblesService.this,"Bubbles listening. Just speak.",Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(BubblesService.this,"Listening. Just speak your request.",Toast.LENGTH_SHORT).show();
+                            Intent conversation = new Intent(BubblesService.this, MainActivity.class);
+                            conversation.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                            conversation.putExtra("open_chat", true);
+                            try { startActivity(conversation); }
+                            catch (Exception error) { Toast.makeText(BubblesService.this, "Open Bubbles from its notification to type.", Toast.LENGTH_LONG).show(); }
                         }
                     }
                     return true;
