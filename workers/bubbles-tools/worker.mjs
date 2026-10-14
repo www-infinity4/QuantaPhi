@@ -52,6 +52,21 @@ export function isGenericBuildReply(userRequest, answer) {
  const soft=/\b(?:I can certainly help|I would be happy to help|growth usually happens step.by.step)\b/i;
  return vague.test(reply)||soft.test(reply)&&/\b(?:focus|areas?|choose|let me know|would you like)\b/i.test(reply);
 }
+// GPT conversation is not a repository writer. Detect claims of completed
+// implementation that require real GitHub, owner Brain or deployment receipts.
+export function hasUnverifiedActionClaim(userRequest,answer){
+ const request=clean(userRequest,4000),text=clean(answer,8000);
+ if(!/\\b(?:build|repair|fix|continue|implement|upgrade|integrat|expand|develop|website|code|repository|project|robot brain|bot|app|video generator)\\b/i.test(request))return false;
+ if(/^\\s*(?:#{1,4}\\s*|\\*\\*|[-*]\\s*)*(?:completed|done|fixed|merged|deployed)\\s*(?:[✅✔✓:!]|\\*\\*|\\s*[-—])/im.test(text))return true;
+ if(/\\b(?:I|we|our (?:bots?|agents?)|the (?:bots?|agents?|robot brain))\\s+(?:(?:have|has|already|just|now|successfully)\\s+){0,3}(?:created|edited|implemented|merged|deployed|fixed|built|committed|uploaded|provisioned)\\b/i.test(text))return true;
+ if(/\\b(?:codebase|repository|pull request|branch|source file|website|page|app|site|adapter|implementation)\\b.{0,120}\\b(?:has been|have been|was|were|is now)\\s+(?:already\\s+|successfully\\s+)?(?:merged|deployed|implemented|added|fixed|committed|built)\\b/i.test(text))return true;
+ if(/\\b(?:merged into (?:the )?main|deployed to (?:production|your site)|pushed to main)\\b/i.test(text)&&/\\b(?:we|I|our|code|repository|branch|adapter|changes)\\b/i.test(text))return true;
+ return false;
+}
+function groundedWorkFallback(request){
+ const target=/video/i.test(request)?'video generator':/wallet|quant|coin/i.test(request)?'wallet ledger':/image/i.test(request)?'image generator':/radio|music/i.test(request)?'radio player':/robot brain|bot/i.test(request)?'Robot Brain':/bubbles|voice|microphone/i.test(request)?'Bubbles voice and job bridge':'requested repository component';
+ return 'This conversation has not verified a code edit, deployment or Robot Brain job. To continue the '+target+' work, inspect its current source and focused tests, then submit the specific repair through the authenticated owner Brain. A real ticket, commit or deployment receipt—not a chat answer—must confirm each completed action.';
+}
 function decode(text){return text.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g,'$1').replace(/<[^>]+>/g,'').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&apos;|&#39;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Math.min(0x10ffff,Number(n)))).trim();}
 export function parseHeadlines(xml,now=Date.now()){
  const items=[],seen=new Set();
@@ -108,17 +123,22 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
  ],max_tokens:reasoningEffort==='high'?3000:1800,reasoning_effort:reasoningEffort});
  let output=result?.response||result?.choices?.[0]?.message?.content;
  if(typeof output!=='string'||!output.trim())throw Error('empty_gpt_response');
- // One bounded correction, not an unbounded LLM loop. This is text-only:
- // it never starts an external job or creates a completion receipt.
- if(isGenericBuildReply(userRequest,output)){
-  const corrected=await env.AI.run(model,{messages:[
-   {role:'system',content:'Rewrite this evasive response into one useful, concrete answer. Do not ask the user which area to focus on, offer a list of vague options, or invent tools/actions. Rely only on project facts in the supplied context. If no authorized tool ran, explicitly say no code was changed, and give the smallest next implementation step. No claims of completion or wallet activity.'},
-   {role:'user',content:'Current request: '+clean(userRequest,3500)+'\\nProject context: '+clean(input,9000)+'\\nGeneric response to replace: '+output.slice(0,3500)}
-  ],max_tokens:1200,reasoning_effort:'medium'});
-  const rewritten=corrected?.response||corrected?.choices?.[0]?.message?.content;
-  if(typeof rewritten==='string'&&rewritten.trim()&&!isGenericBuildReply(userRequest,rewritten))output=rewritten;
+ // One bounded correction; never fabricate a repository edit or execute a job.
+ const dubious=()=>isGenericBuildReply(userRequest,output)||hasUnverifiedActionClaim(userRequest,output);
+ if(dubious()){
+  try{
+   const corrected=await env.AI.run(model,{messages:[
+    {role:'system',content:'Give one concrete next engineering step. This is a chat-only interface: no GitHub, Robot Brain ticket or deployment tool was run in THIS response. Never say completed, fixed, merged, deployed, added to the codebase or invent filenames/classes. Refer to any user-provided past state as unverified context. Do not offer a menu of options or ask the user which area to focus on. State the precise next test or source-inspection action and the need for an authenticated real receipt.'},
+    {role:'user',content:'Request: '+clean(userRequest,3500)+'\\nContext: '+clean(input,7000)+'\\nUnverified answer to correct: '+String(output).slice(0,2500)}
+   ],max_tokens:1200,reasoning_effort:'medium'});
+   const revised=corrected?.response||corrected?.choices?.[0]?.message?.content;
+   if(typeof revised==='string'&&revised.trim())output=revised;
+  }catch{/* Preserve service availability with a truthful local fallback. */}
  }
- return response(request,{...(evidence||{}),ok:true,output:output.trim(),output_text:output.trim(),provider:'cloudflare-workers-ai',model,receipt:{...receipt,status:evidence?.receipt?.status||'complete'}});
+ if(dubious())output=groundedWorkFallback(userRequest);
+ return response(request,{...(evidence||{}),ok:true,output:output.trim(),output_text:output.trim(),
+  provider:'cloudflare-workers-ai',model,
+  receipt:{...receipt,status:evidence?.receipt?.status||'complete',repositoryActionsVerified:false}});
 
 }
 export default {async fetch(request,env){
