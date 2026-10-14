@@ -104,7 +104,10 @@ test('capability and private preview publish without a repair lease and preserve
  const request=(step,body)=>new Request('https://clock/runner/'+step,{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/QuantaPhi',...body})});
  const preview={repository:'www-infinity4/QuantaPhi',baseSha:'a'.repeat(40),commitSha:'b'.repeat(40),paths:['robot-directions.js'],summary:'Clear draft',status:'deployed_verified',before:'data:image/jpeg;base64,/9j/AA==',after:'data:image/jpeg;base64,/9j/AA=='};
  try{
-  assert.equal((await (await clock.runner(request('capability',{runnerRepository:'www-infinity4/Moltnook',status:'credential_missing'}))).json()).ok,true);
+  const capability=(await (await clock.runner(request('capability',{runnerRepository:'www-infinity4/Moltnook',status:'credential_missing'}))).json());
+  assert.equal(capability.ok,true);
+  assert.equal(capability.sourceWindowsV2,true);
+  assert.equal(capability.arbitrationDigestValidation,true);
   assert.equal(memory.get('engine-capability').status,'credential_missing');
   globalThis.fetch=async(url,options)=>{assert.ok(url.endsWith(preview.commitSha));assert.equal(options.headers.Authorization,'Bearer fixture-token');return Response.json({parents:[{sha:preview.baseSha}],commit:{author:{name:'infinity-brain[bot]'},message:'Repair ticket/TASK-1 after GPT review and tests'},files:[{filename:'robot-directions.js'}]});};
   const result=await (await clock.runner(request('preview',{preview,verificationToken:'fixture-token'}))).json();
