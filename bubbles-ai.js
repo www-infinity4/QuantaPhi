@@ -212,6 +212,13 @@ for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi
 }
 tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
 panel.append(header,status,memoryHint,conversation,composer,tools);
+if(nativeOverlay){
+ // Native OAuth and model inference live on the device, not in this WebView.
+ // Expose the entry point above conversation; don't bury it in hidden settings.
+ const providerRow=create('div','ba-native-provider');
+ providerRow.append(gptConnect,gptStatus);
+ panel.insertBefore(providerRow,conversation);
+}
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
  panel.insertBefore(program,composer);
