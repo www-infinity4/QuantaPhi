@@ -1,0 +1,33 @@
+name: Bubbles shared-memory checks
+on:
+  pull_request:
+    paths:
+      - "bubbles-memory.js"
+      - "bubbles-ai.js"
+      - "workers/bubbles-memory/**"
+      - "test/bubbles-memory.test.mjs"
+      - ".github/workflows/bubbles-memory-check.yml"
+  push:
+    branches: [main]
+    paths:
+      - "bubbles-memory.js"
+      - "bubbles-ai.js"
+      - "workers/bubbles-memory/**"
+      - "test/bubbles-memory.test.mjs"
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate Bubbles JS modules and browser code
+        run: |
+          node --check bubbles-memory.js
+          node --check bubbles-ai.js
+          node --check workers/bubbles-memory/worker.mjs
+      - name: Verify wallet-scoped event retention, deletion and replay policy
+        run: node --test test/bubbles-memory.test.mjs

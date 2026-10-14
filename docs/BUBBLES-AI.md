@@ -66,3 +66,24 @@ ongoing stop notification, and calls the existing Oracle chat endpoint.
 This native project is an initial test build, not a completed production app
 or a replica of a proprietary GPT model. Provider access and tools require
 proper credentials and separately authorized adapters.
+
+
+## Full local and verified-wallet Bubbles memory (October 14, 2026)
+
+Bubbles now offers optional append-only transcript retention in IndexedDB and
+a separate, explicitly enabled Unified Wallet-scoped sync to the
+`bubbles-memory` Cloudflare Worker backed by private D1. The same
+`bubbles.html` UI, memory client, notes, context retrieval and owner Brain
+boundaries are used in Chrome and in the Preview 4 Android floating WebView.
+Messages and voice-dictated note commands are recorded if retention is enabled.
+A vocabulary index retrieves relevant previous turns and notes alongside recent
+messages; this supplements rather than overrides normal context-window limits.
+Individual users can erase their verified wallet's synced history.
+
+Neither ChatGPT sign-in nor ordinary Android microphone permission can reveal
+past ChatGPT messages, unseen speech, other applications' histories, or browser
+cookies from another app. Users must connect the same verified Unified Wallet
+separately in each first-party browser/WebView. Sync does not merge owner Robot
+Brain credentials or grant visitors repository writes. Native fallback transcripts
+from a WebView outage still live in the Android app's private storage and are not
+automatically imported by this release. Real-device verification is required.
