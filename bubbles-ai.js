@@ -129,13 +129,22 @@ const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 const noteList=create('div','ba-notes');
 const workText=create('textarea','ba-field');workText.rows=2;workText.maxLength=4000;workText.placeholder='Say fix a card, queue a bot job, or report the top ten tasks. Verified owners may also submit a draft here.';workText.setAttribute('aria-label','Work request for Robot Brain');
 const workButton=create('button','ba-control','Send approved request to Robot Brain');workButton.type='button';workButton.hidden=true;
-const workStatus=create('p','ba-muted','Bubbles queues real bot jobs from spoken instructions after owner-wallet verification. Only actual Brain receipts count.');
+const siteDraftButton=create('button','ba-control','Share draft with this website');siteDraftButton.type='button';siteDraftButton.hidden=!embedded;
+siteDraftButton.addEventListener('click',()=>{
+ const request=workText.value.trim().slice(0,2000);
+ if(!request){workStatus.textContent='Describe a website task first.';return;}
+ // Explicit user gesture only. The host can listen for bubbles:work-draft,
+ // but no job is executed and no owner token is present in this message.
+ window.parent.postMessage({type:'quantaphi:bubbles:site-draft',id:bubbleId,request},'*');
+ workStatus.textContent='Draft offered to this website. No bot job or wallet transaction was executed.';
+});
+const workStatus=create('p','ba-muted',embedded?'This is your website’s independent work draft. It has no access to QuantaPhi owner jobs. Your own verified site adapter must run any requested work.':'Bubbles queues real bot jobs from spoken instructions after owner-wallet verification. Only actual Brain receipts count.');
 workStatus.setAttribute('role','status');
 const toolRail=create('nav','ba-tool-rail');toolRail.setAttribute('aria-label','Infinity builder workspaces');
 for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi','/infinity-phi/'],['Code · Omni Phi','/omni-phi/']]){
  const link=create('a','ba-tool-link',label);link.href=path;link.rel='noopener';toolRail.append(link);
 }
-tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','','Approved work request'),workText,workButton,workStatus);
+tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
 panel.append(header,status,conversation,composer,tools);
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
@@ -264,7 +273,7 @@ async function sendMessage(text){
  const request=continued||spoken;
  busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
  const role=ROLES[config.role]||ROLES.assistant;
- const history=messages.slice(-10).map(m=>m.role+': '+m.text.slice(0,650)).join('\n');
+ const history=messages.slice(-6).map(m=>m.role+': '+m.text.slice(0,420)).join('\n');
  messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
@@ -279,11 +288,11 @@ async function sendMessage(text){
  // Show the authoritative receipt immediately, then let GPT explain it.
  // Model latency or failure cannot change whether the Brain job was recorded.
  if(workEvidence){display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240)}
- const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger inside QuantaPhi.','Your selected role: '+role.name+'. '+role.prompt,
+ const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
  'You have NO independent GitHub write authorization or access to ChatGPT/Claude subscriptions. Only confirmed owner-submitted Robot Brain tickets count as queued; never claim a repository change occurred without tool evidence.',
- 'Actual authorized work result:\n'+workEvidence,'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Speak in calm, natural British English. Keep spoken answers concise and conversational. For a task, explain the actual result and next step; distinguish completed, queued and blocked work. Reply directly in plain text.'].join('\n\n');
+ 'Actual authorized work result:\n'+workEvidence,'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Speak in calm, natural British English. Default to one or two short sentences (20–50 words). No greeting or repeated summary. Elaborate when requested or needed for a safe, useful explanation. For a task, report the verified outcome and next step; distinguish completed, queued and blocked. Plain text.'].join('\n\n');
  try{
   const detailed=isOwnerWorkRequest(request)||/\b(?:analy[sz]e|diagnose|architecture|debug|design|research|thorough|compare|deeply|repository)\b/i.test(request);
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),detailed?60000:38000);
