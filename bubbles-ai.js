@@ -357,6 +357,8 @@ async function sendMessage(text){
  const noteResult=noteCommand(spoken);
  if(noteResult){
   display(spoken,'you');display(noteResult,'ai');status.textContent=noteResult;
+  messages.push({role:'user',text:spoken},{role:'assistant',text:noteResult});
+  messages=messages.slice(-30);persistChat();
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=noteResult;
   else if(config.voice&&!nativeOverlay)speakText(noteResult);
   nativeSpeechPending=false;
@@ -437,7 +439,8 @@ async function sendMessage(text){
     if(nativeSpeechPending)nativeSpeechReply=answer;
     nativeSpeechPending=false;
    }else if(config.voice)speakText(answer);
- }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message}
+ }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message;
+   messages.push({role:'assistant',text:message});messages=messages.slice(-30);persistChat();}
  finally{if(nativeOverlay&&nativeSpeechPending){
      nativeSpeechReply=workEvidence||'The assistant could not complete that request.';
      nativeSpeechPending=false;
