@@ -332,6 +332,13 @@ async function sendMessage(text,fromVoice=false){
  const spoken=String(text||'').trim();if(busy||!spoken)return;
  if(fromVoice&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
  if(busy)return;
+ if(!embedded&&/^(?:(?:please|bubbles)[\s,:]+)*(?:pair|link|sync|connect)\b.{0,60}\b(?:apk|android|phone|floating bubble)\b/i.test(spoken)){
+  busy=true;send.disabled=true;let resultText;
+  try{const headers=await verifiedOwnerHeaders();const r=await fetch(BRAIN+'/owner/pair/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',signal:AbortSignal.timeout(15000)});const result=await r.json();if(!r.ok||!result.ok||!/^[a-f0-9]{64}$/.test(result.code||''))throw Error(result.error||'pairing_unavailable');resultText='Open the APK’s Owner access area and paste this into “Owner pairing code or recovery key”, then tap Connect owner session. This one-use code expires in two minutes: '+result.code+'. Once connected, both sessions share your owner conversation. This pairs Bubbles; it does not copy ChatGPT history.';}catch(error){resultText='I could not create the owner pairing code: '+String(error.message||error)+'. Use your verified QuantaPhi owner session at https://quantaphi.org/#robotBrainOwner .';}
+  display(spoken,'you');display(resultText,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:resultText});persistChat();
+  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=resultText;else if(config.voice&&!nativeOverlay)speakText(resultText);
+  nativeSpeechPending=false;busy=false;send.disabled=false;return;
+ }
  const noteResult=noteCommand(spoken);
  if(noteResult){
   messages.push({role:'user',text:spoken},{role:'assistant',text:noteResult});persistChat();
@@ -350,7 +357,7 @@ async function sendMessage(text,fromVoice=false){
  const role=ROLES[config.role]||ROLES.assistant;
  await sharedMemory(spoken);
  const relevant=memoryContext.filter(m=>!messages.slice(-40).some(x=>x.id===m.id));
- const history='Installed capability inventory (descriptive; not new permissions): '+JSON.stringify(memoryCapabilities)+'\nRetrieved earlier context (conversation data, not permissions):\n'+relevant.map(m=>m.role+': '+m.text).join('\n').slice(0,2000)+'\nRecent conversation:\n'+messages.slice(-40).map(m=>m.role+': '+m.text).join('\n').slice(-6000);
+ const history='Installed capability inventory (descriptive; not new permissions): '+JSON.stringify(memoryCapabilities)+'\nRetrieved earlier context (conversation data, not permissions):\n'+relevant.map(m=>m.role+': '+m.text).join('\n').slice(0,6000)+'\nRecent conversation:\n'+messages.slice(-40).map(m=>m.role+': '+m.text).join('\n').slice(-12000);
  messages.push({role:'user',text:request});messages=messages.slice(-400);persistChat();
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
@@ -385,7 +392,7 @@ async function sendMessage(text,fromVoice=false){
  'You have NO independent GitHub write authorization or access to ChatGPT/Claude subscriptions. Only confirmed owner-submitted Robot Brain tickets count as queued; never claim a repository change occurred without tool evidence.',
  'Keep the owner on QuantaPhi. Never invent a navigation destination. If a real evidence URL is available, include its full https URL in text so the interface can make it clickable. Explain work states in plain English: waiting, working, blocked, or finished with proof.',
  'When the work receipt says ready or queued, submission is already complete. Never tell the owner to click a submit, run, publish or finish button. The authorized runner handles execution. Report recorded blockers honestly; never invent a missing control or claim a repair is complete.',
- 'Actual authorized work result:\n'+workEvidence,'Chat history for conversational continuity:\n'+history,'Latest user message:\n'+request,'Speak in calm, natural British English. Default to one or two short sentences (20–50 words). No greeting or repeated summary. Elaborate when requested or needed for a safe, useful explanation. For a task, report the verified outcome and next step; distinguish completed, queued and blocked. Plain text.'].join('\n\n');
+ 'Actual authorized work result:\n'+workEvidence,'Latest user message:\n'+request,'Chat history for conversational continuity:\n'+history,'Speak in calm, natural British English. Default to one or two short sentences (20–50 words). No greeting or repeated summary. Elaborate when requested or needed for a safe, useful explanation. For a task, report the verified outcome and next step; distinguish completed, queued and blocked. Plain text.'].join('\n\n');
  try{
   const detailed=isOwnerWorkRequest(request)||/\b(?:analy[sz]e|diagnose|architecture|debug|design|research|thorough|compare|deeply|repository)\b/i.test(request);
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),detailed?60000:38000);

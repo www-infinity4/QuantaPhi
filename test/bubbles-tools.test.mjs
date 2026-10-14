@@ -131,3 +131,12 @@ test('even repeated invented accomplishments become a deterministic no-write ans
  assert.doesNotMatch(body.output,/We have deployed/);
  assert.equal(body.receipt.repositoryActionsVerified,false);
 });
+
+
+test('long indexed conversation context reaches the model without the old 16k truncation',async()=>{
+ const input='Earlier conversation: '+ 'a'.repeat(23000)+' IMPORTANT_REMEMBERED_DETAIL';let observed='';
+ const response=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},body:JSON.stringify({request:'What do you remember?',input})}),{AI:{run:async(model,options)=>{observed=options.messages[1].content;return {response:'I have the provided earlier conversation.'};}}});
+ assert.equal(response.status,200);assert.match(observed,/IMPORTANT_REMEMBERED_DETAIL/);
+ const tooLarge=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello',input:'a'.repeat(71000)})}),{});
+ assert.equal(tooLarge.status,413);
+});

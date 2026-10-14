@@ -306,10 +306,29 @@ export class BrainClock extends DurableObject{
    await this.ctx.storage.put('brain-owner-session-index',[...keep,{key,expiresAt}]);
    return Response.json({ok:true,token,expiresAt});
   }
+  if(new URL(request.url).pathname==='/owner/pair-create'){
+   const code=crypto.randomUUID().replaceAll('-','')+crypto.randomUUID().replaceAll('-','');
+   const recipient=await this.ctx.storage.get('bot-work-recipient');
+   if(!recipient?.userId)return Response.json({ok:false,error:'owner_wallet_not_bound'},{status:409});
+   const previous=await this.ctx.storage.get('brain-pair-latest');if(previous)await this.ctx.storage.delete(previous);
+   const key='brain-pair:'+await digest(code);await this.ctx.storage.put(key,{userId:recipient.userId,expiresAt:Date.now()+120000});await this.ctx.storage.put('brain-pair-latest',key);
+   return Response.json({ok:true,code,expiresInSeconds:120});
+  }
+  if(new URL(request.url).pathname==='/owner/pair-redeem'){
+   const {code}=await request.json();if(!/^[a-f0-9]{64}$/.test(code||''))return Response.json({ok:false},{status:404});
+   const key='brain-pair:'+await digest(code);
+   // Atomic consumption prevents two concurrent redemptions of the same code.
+   const pair=await this.ctx.storage.transaction(async tx=>{const value=await tx.get(key);await tx.delete(key);return value});
+   const recipient=await this.ctx.storage.get('bot-work-recipient');
+   if(!pair||pair.expiresAt<=Date.now()||pair.userId!==recipient?.userId)return Response.json({ok:false,error:'pairing_expired_or_used'},{status:404});
+   const token='rd_'+crypto.randomUUID().replaceAll('-','')+crypto.randomUUID().replaceAll('-',''),expiresAt=Date.now()+30*86400000;
+   await this.ctx.storage.put('brain-owner-device:'+await digest(token),{userId:pair.userId,expiresAt});
+   return Response.json({ok:true,token,expiresAt});
+  }
   if(new URL(request.url).pathname==='/owner/session-check'){
    const {token}=await request.json();
-   if(!/^rb_[a-f0-9]{64}$/.test(token||''))return Response.json({ok:false},{status:404});
-   const session=await this.ctx.storage.get('brain-owner-session:'+await digest(token));
+   if(!/^r[bd]_[a-f0-9]{64}$/.test(token||''))return Response.json({ok:false},{status:404});
+   const session=await this.ctx.storage.get((token.startsWith('rd_')?'brain-owner-device:':'brain-owner-session:')+await digest(token));
    const recipient=await this.ctx.storage.get('bot-work-recipient');
    const valid=!!(session?.expiresAt>Date.now()&&recipient?.userId&&recipient.userId===session.userId);
    return Response.json({ok:valid},{status:valid?200:404});
@@ -542,7 +561,7 @@ export async function ownerTickets(env,path,body){
 async function ownerAuthorized(env,token){
  if(!token)return false;
  if(env.WRITER_OWNER_HASH&&await digest(token)===env.WRITER_OWNER_HASH)return true;
- if(!/^rb_[a-f0-9]{64}$/.test(token))return false;
+ if(!/^r[bd]_[a-f0-9]{64}$/.test(token))return false;
  const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
  const response=await clock.fetch('https://clock.internal/owner/session-check',{method:'POST',body:JSON.stringify({token})});
  return response.ok&&(await response.json()).ok===true;
@@ -590,6 +609,14 @@ export default{
     const response=await clock.fetch('https://clock.internal/owner/session-create',{method:'POST',body:JSON.stringify({userId:state.user.id})});
     return output(request,await response.json(),response.ok?200:404);
    }catch{return output(request,{ok:false,error:'wallet_service_unreachable'},503)}
+  }
+  if(['/owner/pair/create','/owner/pair/redeem'].includes(path)&&request.method==='POST'){
+   const origin=request.headers.get('Origin');if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   if(path.endsWith('/create')){const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);}
+   try{const raw=await request.text();if(raw.length>1024)return output(request,{ok:false,error:'request_too_large'},413);
+    const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/owner/'+(path.endsWith('/create')?'pair-create':'pair-redeem'),{method:'POST',body:raw||'{}'});
+    return output(request,await response.json(),response.status);
+   }catch{return output(request,{ok:false,error:'pairing_unavailable'},503)}
   }
   if(path==='/owner/conversation'&&request.method==='POST'){
    const origin=request.headers.get('Origin');
