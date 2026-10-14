@@ -3,11 +3,37 @@ package org.quantaphi.bubbles;
 import android.accessibilityservice.AccessibilityService;
 import android.os.Handler;
 import android.os.Looper;
+import java.lang.ref.WeakReference;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
 /** Read-only learning from explicitly selected app windows, never typed drafts. */
 public final class BrainLearningService extends AccessibilityService {
+    private static WeakReference<BrainLearningService> active = new WeakReference<>(null);
+    @Override protected void onServiceConnected() {
+        super.onServiceConnected();
+        active=new WeakReference<>(this);
+    }
+    /**
+     * An explicit spoken "read this screen" request only. Accessibility can
+     * supply visible text, NOT invisible page content or screenshot pixels.
+     * Never collect input fields, passwords or unseen application windows.
+     */
+    static String currentVisibleText() {
+        BrainLearningService service=active.get();
+        if(service==null)return "";
+        AccessibilityNodeInfo root=service.getRootInActiveWindow();
+        if(root==null)return "";
+        try {
+            String app=String.valueOf(root.getPackageName());
+            if(app.startsWith("org.quantaphi.bubbles") ||
+              app.equals("com.android.systemui") || app.equals("com.android.settings"))return "";
+            StringBuilder result=new StringBuilder();
+            service.collect(root,result,new int[]{0},0);
+            return result.toString().trim();
+        }catch(RuntimeException ignored){return "";}
+        finally{root.recycle();}
+    }
     private final Handler main = new Handler(Looper.getMainLooper());
     private String pendingApp = "";
     private final Runnable capture = () -> {
@@ -41,5 +67,9 @@ public final class BrainLearningService extends AccessibilityService {
         }
     }
     @Override public void onInterrupt() {main.removeCallbacks(capture);}
-    @Override public void onDestroy() {main.removeCallbacks(capture);super.onDestroy();}
+    @Override public void onDestroy() {
+        main.removeCallbacks(capture);
+        if(active.get()==this)active.clear();
+        super.onDestroy();
+    }
 }
