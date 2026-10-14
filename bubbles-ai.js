@@ -47,9 +47,15 @@ if(embedded&&!previousConfig){
 }
 let notes=data(NOTES,[]);if(!Array.isArray(notes))notes=[];
 let keepChat=data(KEEP_HISTORY,false)===true;
-let messages=keepChat?data(HISTORY,[]):[];
-if(!Array.isArray(messages))messages=[];
-messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)}));
+ const CLOUD_MEMORY_KEY='quantaphi:bubbles:cloud-memory:v1'+(bubbleId?':'+bubbleId:'');
+ let cloudChat=data(CLOUD_MEMORY_KEY,false)===true;
+ const longMemory=window.BubblesMemory||null;
+ longMemory?.setEnabled(keepChat);
+ let messages=keepChat?data(HISTORY,[]):[];
+ if(!Array.isArray(messages))messages=[];
+ messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string')
+  .slice(-30).map(item=>({id:item.id||crypto.randomUUID?.()||'msg'+Date.now()+Math.random().toString(36).slice(2),
+   at:Number.isSafeInteger(item.at)?item.at:Date.now(),role:item.role,text:item.text.slice(0,6000)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
@@ -57,9 +63,14 @@ let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDraggi
 const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias,requireWakeName:false})||null;
 
 function persistChat(){
- if(!keepChat)return false;
- return save(HISTORY,messages.slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)})));
-}
+  if(!keepChat)return false;
+  for(const item of messages){
+   if(!item.id)item.id=crypto.randomUUID?.()||'msg'+Date.now()+Math.random().toString(36).slice(2);
+   if(!item.at)item.at=Date.now();
+  }
+  void longMemory?.appendAll(messages);
+  return save(HISTORY,messages.slice(-30).map(({id,at,role,text})=>({id,at,role,text})));
+ }
 const card=create('section','ba-card ba-studio-card');
 card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','Tap Bubbles once to enable continuous listening. It glows when it hears sound. Just speak naturally—no wake name needed. Speech clips go to Cloudflare for transcription; silence stays on your device. Mute releases the microphone.'));
 const studioToggle=create('button','ba-control ba-studio-toggle','Customize Bubbles');studioToggle.type='button';studioToggle.setAttribute('aria-expanded','false');
@@ -312,8 +323,10 @@ async function sendMessage(text){
  const request=continued||contextualRepair||spoken;
  busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
  const role=ROLES[config.role]||ROLES.assistant;
- const history=messages.slice(-6).map(m=>m.role+': '+m.text.slice(0,420)).join('\n');
- messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
+ const history=keepChat&&longMemory?(await longMemory.context(request))||
+   messages.slice(-8).map(m=>m.role+': '+m.text.slice(0,700)).join('\\n'):
+   messages.slice(-8).map(m=>m.role+': '+m.text.slice(0,700)).join('\\n');
+ messages.push({role:'user',text:request});messages=messages.slice(-30);persistChat();
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
  if(!embedded&&isOwnerWorkRequest(request)){
@@ -330,7 +343,7 @@ async function sendMessage(text){
   // The authenticated tool result is final; a second chat-only service cannot
   // contradict it or invent another submit step.
   display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240);
-  messages.push({role:'assistant',text:workEvidence});messages=messages.slice(-20);persistChat();
+  messages.push({role:'assistant',text:workEvidence});messages=messages.slice(-30);persistChat();
   try{
    if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=workEvidence;
    else if(config.voice&&!nativeOverlay)speakText(workEvidence);
@@ -354,7 +367,7 @@ async function sendMessage(text){
   let response,json;try{if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.error||'Oracle conversation failed'));
   const answer=extract(json);if(!answer)throw Error('The AI returned no spoken or written reply');
-  messages.push({role:'assistant',text:answer});messages=messages.slice(-20);persistChat();
+  messages.push({role:'assistant',text:answer});messages=messages.slice(-30);persistChat();
   display(answer,'ai');status.textContent=config.alias+' · response received';
   if(json.receipt?.tool?.startsWith('resonance.')&&json.url==='https://quantaphi.org/resonance.html'){
    const row=create('div','ba-message-actions');
@@ -431,6 +444,8 @@ function showLevel(){
  if(!busy&&!speaking)setOrbState(hearing?'hearing':'listening');
  meterFrame=window.requestAnimationFrame?.(showLevel)||0;
 }
+document.addEventListener('visibilitychange',()=>{if(!nativeOverlay&&document.hidden&&voiceEnabled)
+ stopVoice('Website mic released in background; Android Bubbles can keep listening.');});
 function heardTranscript(transcript){
  if(!voiceEnabled||speaking||!voiceGate)return;
  heardUntil=Date.now()+750;setOrbState('hearing');launcher.style.setProperty('--ba-energy','1');
