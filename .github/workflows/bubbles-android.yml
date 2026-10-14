@@ -4,6 +4,7 @@ on:
     paths:
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-chatgpt-native.test.cjs'
+      - 'test/bubbles-oracle-chat-native.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
       - '.github/workflows/bubbles-android.yml'
   push:
@@ -11,6 +12,7 @@ on:
     paths:
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-chatgpt-native.test.cjs'
+      - 'test/bubbles-oracle-chat-native.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
       - '.github/workflows/bubbles-android.yml'
 permissions:
@@ -44,6 +46,8 @@ jobs:
         run: node --test test/bubbles-continuous-native.test.cjs
       - name: Verify ChatGPT OAuth permission and response contract
         run: node --test test/bubbles-chatgpt-native.test.cjs
+      - name: Verify Oracle chat interruption and text conversation
+        run: node --test test/bubbles-oracle-chat-native.test.cjs
       - name: Verify Brain learning policy
         run: |
           mkdir -p /tmp/brain-policy

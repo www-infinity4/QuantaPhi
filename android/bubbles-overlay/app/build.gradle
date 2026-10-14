@@ -8,8 +8,8 @@ android {
         applicationId 'org.quantaphi.bubbles'
         minSdk 26
         targetSdk 35
-        versionCode 5
-        versionName '0.5.0'
+        versionCode 6
+        versionName '0.6.0'
     }
     // Debug APK deliberately installs BESIDE the existing Bubbles app.
     // CI runners use different debug certificates and cannot update the old

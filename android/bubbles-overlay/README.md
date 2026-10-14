@@ -119,3 +119,19 @@ but GitHub cache is not a permanent signing identity. A true update to an
 existing non-preview package requires its ORIGINAL signing key and a higher
 version code; a new key cannot transparently preserve installed app data.
 A protected release signing key should be provisioned outside source control.
+
+
+## Oracle conversation and natural speech — 0.6.0 (October 14, 2026)
+
+- **Tap the movable orb** to stop a spoken reply immediately (when talking) and open a dedicated dark **ORACLE / BUBBLES** text window. This does not stop the foreground microphone. **Long-press** mutes the microphone. The chat has **Stop talking** and **Resume listening** controls.
+- A typed prompt is shown with its reply **without** forced speech. The latest 30 message entries remain in the app's local private preferences (not uploaded just for displaying the conversation). The activity polls new replies, so it also shows the spoken conversation.
+- Local Vosk continuous recognition now exposes partial words in `last_partial` for better live diagnostics. This is **not a new recognizer**; acoustic recognition still uses the bundled English Vosk model. For a future genuine recognition-engine upgrade, evaluate the actively maintained `k2-fsa/sherpa-onnx` streaming Zipformer Android implementation against phone CPU, memory, latency and battery budgets. Do not describe it as installed until compiled and tested.
+- The app uses Android's system `TextToSpeech` interface, at natural pitch 1.0. For a better **on-device neural voice**, the app links to open-source `HayaiApp/HayaiTTS` (Kokoro and Piper options) which can be selected as Android's default speech engine **after separately installing it**. This can sound more natural but **is not a licensed ChatGPT Live voice**. A direct ChatGPT/GPT-Live voice requires supported authentication and a real-time API integration; the local ChatGPT-plan OAuth preview does not grant Realtime voice usage.
+- Android `Continue with ChatGPT` already requests user-authorized, device-local Responses API usage. The ChatGPT-plan OAuth preview does **not** support GPT image generation, hosted tools, audio transcription or live voice, and cannot be sent to QuantaPhi's shared backend to service other users. ChatGPT account identity is **not** wallet-transfer authority: require the verified QuantaPhi wallet session and signed ledger transfer/receipt separately.
+- Preview package remains `org.quantaphi.bubbles.preview2` with Android `versionCode 6` / `0.6.0-preview`. The preview-only debug key may not match manually installed builds; a version bump alone cannot solve a different signing certificate. CI assembles an APK but cannot confirm installation or microphone operation on your Motorola.
+
+Verified reference docs:
+- https://developers.openai.com/siwc/token-sharing-open-source/preview-limitations
+- https://developers.openai.com/api/docs/guides/voice-webrtc
+- https://github.com/k2-fsa/sherpa-onnx
+- https://github.com/HayaiApp/HayaiTTS
