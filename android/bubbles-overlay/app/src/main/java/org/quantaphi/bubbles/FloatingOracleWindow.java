@@ -116,7 +116,10 @@ final class FloatingOracleWindow {
         return b;
     }
     boolean show() {
-        if (root != null) return true;
+        if (root != null) {
+            root.setVisibility(View.VISIBLE);
+            return true;
+        }
         LinearLayout page = new LinearLayout(service);
         page.setOrientation(LinearLayout.VERTICAL);
         page.setPadding(dp(16), dp(14), dp(16), dp(14));
@@ -137,7 +140,7 @@ final class FloatingOracleWindow {
         header.addView(muteButton);
         Button close = button("✕", false);
         close.setContentDescription("Close floating Oracle conversation");
-        close.setOnClickListener(v -> close());
+        close.setOnClickListener(v -> hide());
         header.addView(close);
         page.addView(header);
 
@@ -332,6 +335,13 @@ final class FloatingOracleWindow {
                         service.speakWebsiteReply(((String) value).substring(0, Math.min(2200, ((String) value).length())));
                 } catch (Exception ignored) {}
             });
+    }
+
+    /** Collapsing the overlay preserves the first-party chat and bot session.
+     * Only service shutdown destroys the WebView and releases resources.
+     */
+    void hide() {
+        if (root != null) root.setVisibility(View.GONE);
     }
 
     void close() {
