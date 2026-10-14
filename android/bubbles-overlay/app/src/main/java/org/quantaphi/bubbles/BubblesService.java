@@ -98,6 +98,7 @@ public final class BubblesService extends Service {
     private String lastTranscript = "", queued = "";
     private int retries = 0;
     private long speechGeneration = 0L;
+    private long lastPartialAt = 0L;
 
     @Override public void onCreate() {
         super.onCreate();
@@ -108,12 +109,13 @@ public final class BubblesService extends Service {
         tts = new TextToSpeech(this, result -> {
             if (result == TextToSpeech.SUCCESS && tts != null) {
                 ttsReady = true;
-                // Use a lower-pitched on-device English voice by default.
-                // This is Android TTS, not the proprietary ChatGPT Live voice.
+                // Honor the phone's selected Android speech engine, including
+                // compatible installed on-device neural TTS engines.
+                // This is NOT the proprietary ChatGPT Live voice.
                 int language = tts.setLanguage(Locale.US);
                 if (language == TextToSpeech.LANG_MISSING_DATA || language == TextToSpeech.LANG_NOT_SUPPORTED)
                     tts.setLanguage(Locale.ENGLISH);
-                tts.setPitch(0.84f);
+                tts.setPitch(1.0f); // Preserve the natural timbre of the chosen voice.
                 tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
                     @Override public void onStart(String id) { main.post(() -> state("speaking", 0.6f)); }
                     @Override public void onDone(String id) { main.post(() -> finishSpeaking()); }
@@ -271,6 +273,14 @@ public final class BubblesService extends Service {
                             if (connected && !muted && !speaking) state(level > .08f ? "hearing" : "listening", level);
                         });
                         boolean complete = speech.acceptWaveForm(samples, count);
+                        if (!complete && SystemClock.elapsedRealtime() - lastPartialAt > 550L) {
+                            lastPartialAt = SystemClock.elapsedRealtime();
+                            final String partial = new JSONObject(speech.getPartialResult()).optString("partial", "");
+                            if (!partial.isEmpty()) main.post(() -> {
+                                if (connected && !muted && !speaking)
+                                    BrainNotes.prefs(this).edit().putString("last_partial", partial).apply();
+                            });
+                        }
                         if (complete) {
                             final String transcript = new JSONObject(speech.getResult()).optString("text", "");
                             main.post(() -> { if (connected && !muted && !speaking) heard(transcript); });
@@ -367,7 +377,7 @@ public final class BubblesService extends Service {
     private void heard(String raw) {
         String text = raw == null ? "" : raw.replaceAll("\\s+", " ").trim();
         if (text.isEmpty() || text.length() > 1800 || muted) return;
-        BrainNotes.prefs(this).edit().putString("last_heard", text).apply();
+        BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
         long now = SystemClock.elapsedRealtime();
         String alias=BrainNotes.prefs(this).getString("name","Brain");
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
