@@ -222,3 +222,39 @@ body.oracle-quanta #phiImageBuilder.oracle-image-studio :is(.pi-primary,.pi-mode
  color:#fff!important;box-shadow:0 5px 16px #14579945!important
 }
 #phiImageBuilder.oracle-image-studio .pi-steps .pi-step{background:#eef8ff;color:#184978;border-color:#94b8dc}
+
+/* Oracle Octaves · the clean blue Image Generator build picker and intelligent context. */
+#phiImageBuilder.oracle-image-studio .pi-build-type{
+ box-sizing:border-box;display:block;width:100%;max-width:100%;min-height:48px;
+ padding:11px 15px;background:#fff;color:#173c63;border:2px solid #7da8d1;
+ border-radius:15px;font:inherit;font-size:16px;font-weight:800;
+}
+#phiImageBuilder.oracle-image-studio .pi-build-type:focus-visible{
+ outline:3px solid #175a9e!important;outline-offset:3px;
+}
+#phiImageBuilder.oracle-image-studio .pi-context-line{
+ display:flex;align-items:center;justify-content:space-between;gap:8px;
+ margin:11px 0 7px;color:#244c70;min-width:0;flex-wrap:wrap;
+}
+#phiImageBuilder.oracle-image-studio .pi-context-label{
+ flex:1 1 150px;min-width:0;overflow-wrap:anywhere;font-size:13px;
+ line-height:1.5;font-weight:750;
+}
+#phiImageBuilder.oracle-image-studio .pi-context-clear{
+ flex:0 0 auto;min-height:44px!important;padding:8px 12px!important;
+ background:#fff!important;border:1px solid #8caecb!important;
+ border-radius:12px!important;color:#204b70!important;font-size:12px!important;
+}
+#phiImageBuilder.oracle-image-studio .pi-smart-suggestions{
+ display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 3px;
+}
+body.oracle-quanta #phiImageBuilder.oracle-image-studio .pi-suggestion-chip,
+#phiImageBuilder.oracle-image-studio .pi-suggestion-chip{
+ min-height:44px!important;padding:9px 12px!important;
+ background:#fff!important;color:#164b7f!important;border:1px solid #87b5dc!important;
+ border-radius:999px!important;font:inherit;font-size:12px!important;
+ font-weight:750!important;box-shadow:none!important;
+}
+#phiImageBuilder.oracle-image-studio .pi-suggestion-chip:focus-visible{
+ outline:3px solid #175a9e!important;outline-offset:3px;
+}
