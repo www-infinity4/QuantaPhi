@@ -427,7 +427,9 @@ export class BrainClock extends DurableObject{
      const fresh=await this.env.WORK_DB.prepare('SELECT context_json FROM work_tickets WHERE id=?').bind(ticket.id).first();
      const current=JSON.parse(fresh.context_json||'{}');
      const index=(current.color_jobs||[]).findIndex(j=>j.id===job.id);
-     if(index>=0 && current.color_jobs[index].status!=='complete' && JSON.stringify(current.color_jobs[index].instructions)===JSON.stringify(job.instructions)){
+     // Source-only observation must not replace an authenticated execution receipt.
+     const hasRunnerReceipt=index>=0 && /^https:\/\/github\.com\/www-infinity4\/[\w.-]+\/actions\/runs\/\d+$/.test(current.color_jobs[index].progress?.runUrl||'') && !!current.color_jobs[index].progress?.attemptedAt;
+     if(index>=0 && !hasRunnerReceipt && current.color_jobs[index].status!=='complete' && JSON.stringify(current.color_jobs[index].instructions)===JSON.stringify(job.instructions)){
       current.color_jobs[index]={...current.color_jobs[index],status:receipt.status,last_inspected_at:receipt.when,
        progress:{summary:review.summary.slice(0,350),next:review.next.slice(0,350),blocker:receipt.blocker,receipt_key:key}};
       const serialized=JSON.stringify(current);

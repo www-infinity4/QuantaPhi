@@ -230,3 +230,21 @@ test('untouched queued work advances ahead of an earlier blocked job, and owner 
  const first=await(await clock.runner(request())).json();assert.equal(first.lease.jobId,'TASK-2');
  memory.clear();memory.set('requested-next-job',{ticketId:'ticket',jobId:'TASK-1'});const next=await(await clock.runner(request())).json();assert.equal(next.lease.jobId,'TASK-1');assert.equal(memory.has('requested-next-job'),false);
 });
+
+
+test('source inspection cannot overwrite a runner result arriving during the review',async()=>{
+ const originalFetch=globalThis.fetch,memory=new Map();let writes=0;
+ const job={id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'Repair the player',acceptance:['Player works'],status:'queued'};
+ const initial=JSON.stringify({kind:'robot-directions',color_jobs:[job]});
+ const result={...job,status:'blocked',progress:{attemptedAt:new Date().toISOString(),runUrl:'https://github.com/www-infinity4/Moltnook/actions/runs/1234',summary:'Deployment credential missing',blocker:'blocked'}};
+ const fresh=JSON.stringify({kind:'robot-directions',color_jobs:[result]});
+ const db={prepare:()=>({bind(){return this},all:async()=>({results:[{id:'IW-race',context_json:initial,request:'Repair the player'}]}),first:async()=>({context_json:fresh}),run:async()=>{writes++;return {success:true}}})};
+ const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),getAlarm:async()=>null,setAlarm:async()=>{}};
+ globalThis.fetch=async()=>new Response('source evidence');
+ try{
+  const clock=new BrainClock({storage},{WORK_DB:db,MODELS:{plan:async()=>{throw Error('quota')},review:async()=>({model:'fixture',review:{approved:false,summary:'Static source cannot prove execution',next:'Wait for runner'}})}});
+  await clock.alarm();
+  assert.equal(writes,0,'Source observer must preserve actual runner blocker and run link');
+  assert.ok([...memory.keys()].some(k=>k.startsWith('receipt:')),'Read-only inspection receipt is still retained');
+ }finally{globalThis.fetch=originalFetch}
+});
