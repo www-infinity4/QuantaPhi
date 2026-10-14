@@ -84,6 +84,7 @@ public final class BubblesService extends Service {
     private WindowManager manager;
     private WindowManager.LayoutParams bubbleLayout;
     private OrbView orb;
+    private FloatingOracleWindow oracleWindow;
     private AudioRecord microphone;
     private Thread audioThread;
     private Model voiceModel;
@@ -581,6 +582,7 @@ public final class BubblesService extends Service {
         stopRecognition();
         if (voiceModel != null && audioThread == null) {voiceModel.close();voiceModel=null;}
         if (tts != null) {tts.stop();tts.shutdown();tts=null;}
+        if (oracleWindow != null) {oracleWindow.close();oracleWindow = null;}
         if (orb != null && manager != null) {
             try {manager.removeView(orb);}catch(Exception ignored){}
         }
@@ -636,10 +638,14 @@ public final class BubblesService extends Service {
                             Toast.makeText(BubblesService.this,"Bubbles muted. Tap to reconnect.",Toast.LENGTH_SHORT).show();
                         } else {
                             if (speaking) silenceReply();
-                            Intent conversation = new Intent(BubblesService.this, OracleChatActivity.class);
-                            conversation.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                            try { startActivity(conversation); }
-                            catch (Exception error) { Toast.makeText(BubblesService.this, "Open Bubbles from its notification to type.", Toast.LENGTH_LONG).show(); }
+                            // A foreground service cannot reliably start an Activity
+                            // over another app. Display a focusable overlay directly.
+                            if (oracleWindow == null) oracleWindow = new FloatingOracleWindow(BubblesService.this, manager);
+                            if (!oracleWindow.show()) {
+                                BrainNotes.prefs(BubblesService.this).edit()
+                                        .putString("last_error", "Could not open Oracle floating conversation").apply();
+                                Toast.makeText(BubblesService.this, "Open Oracle from the Bubbles notification.", Toast.LENGTH_LONG).show();
+                            }
                         }
                     }
                     return true;
