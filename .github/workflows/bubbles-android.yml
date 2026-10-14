@@ -6,6 +6,7 @@ on:
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
       - 'test/bubbles-floating-window.test.cjs'
+      - 'test/bubbles-native-site-parity.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
       - '.github/workflows/bubbles-android.yml'
   push:
@@ -48,6 +49,8 @@ jobs:
         run: node --test test/bubbles-continuous-native.test.cjs
       - name: Verify ChatGPT OAuth permission and response contract
         run: node --test test/bubbles-chatgpt-native.test.cjs
+      - name: Verify native / QuantaPhi site parity and spoken notes
+        run: node --test test/bubbles-native-site-parity.test.cjs
       - name: Verify Oracle chat interruption and text conversation
         run: node --test test/bubbles-oracle-chat-native.test.cjs
       - name: Verify native floating Oracle window and transcript
@@ -83,7 +86,7 @@ jobs:
           test -s "$APK"
           "$SDK/build-tools/35.0.0/apksigner" verify --verbose --print-certs "$APK"
           "$SDK/build-tools/35.0.0/aapt" dump badging "$APK" | tee /tmp/bubbles-apk-badging.txt
-          grep -q "name='org.quantaphi.bubbles.preview3'" /tmp/bubbles-apk-badging.txt
+          grep -q "name='org.quantaphi.bubbles.preview4'" /tmp/bubbles-apk-badging.txt
           grep -q "sdkVersion:'26'" /tmp/bubbles-apk-badging.txt
           sha256sum "$APK"
       - name: Upload separately installable Bubbles Preview APK
@@ -117,5 +120,5 @@ jobs:
           if gh release view bubbles-preview-current --repo "$GH_REPO" >/dev/null 2>&1; then
             gh release upload bubbles-preview-current dist/Bubbles-Preview-Android12.apk dist/Bubbles-Preview-Android12.apk.sha256 --clobber --repo "$GH_REPO"
           else
-            gh release create bubbles-preview-current dist/Bubbles-Preview-Android12.apk dist/Bubbles-Preview-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Bubbles Preview 3 installs alongside previous Bubbles versions; this is a test-signed preview, not a production release."
+            gh release create bubbles-preview-current dist/Bubbles-Preview-Android12.apk dist/Bubbles-Preview-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Bubbles Preview 4 installs alongside previous Bubbles versions; this is a test-signed preview, not a production release."
           fi
