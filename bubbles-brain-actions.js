@@ -25,13 +25,14 @@ function classify(utterance){
  const dispatchReverse=/\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,80}\b(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
  const change=/\b(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct|implement|investigate|verify|check)\b/i;
  const subject=/\b(?:quantaphi|quanta\s*phi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone|app|code\s*phi|infinity\s*phi|omni\s*phi|moltnook)\b/i;
- const imperative=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct|implement|investigate|verify|check|start|queue|assign|dispatch|send|tell|ask|have|launch)\b/i;
+ const imperative=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct|implement|investigate|verify|check|start|queue|assign|dispatch|send|tell|ask|have|launch|search|scan|inspect|combine|pull together|edit)\b/i;
  const directive=/^(?:(?:bubbles)[\s,:]+)?(?:please\s+)?(?:i\s+(?:need|want)\s+(?:you\s+)?to|you\s+(?:need|have)\s+to|can\s+you|could\s+you|would\s+you|we\s+need\s+to)\b/i;
  const makeJob=/\b(?:make|create|add)\s+(?:(?:a|an|the|new)\s+)*(?:job|task)\b.{0,70}\b(?:in|for|to|on)\s+(?:(?:my|the)\s+)?(?:robot\s*brain|brain)\b/i;
  const makeDirective=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:make|create|add)\b/i;
  if(makeJob.test(text)&&(makeDirective.test(text)||directive.test(text))&&!/\b(?:do\s+not|don't|never|not\s+to)\b/i.test(text))return 'queue';
  if(/^(?:explain|describe|how\s+(?:do|does|did|can|could|would)|why\s+(?:do|does|did)|what\s+(?:is|are|would))\b/i.test(addressed))return 'chat';
  if(dispatch.test(text)||dispatchByName.test(text)||dispatchReverse.test(text))return 'queue';
+ if((imperative.test(text)||directive.test(text))&&/\b(?:create|start|build|edit|update|search|scan|inspect|combine|pull together)\b/i.test(text)&&/\b(?:repos?|repositories|repository)\b/i.test(text))return 'queue';
  if(change.test(text)&&subject.test(text)&&(imperative.test(text)||directive.test(text)))return 'queue';
  return 'chat';
 }
@@ -92,10 +93,14 @@ function describeTickets(tickets,limit=10){
  const entries=[];
  for(const ticket of tickets){
   if(!ticket||ticket.context?.kind!=='robot-directions')continue;
+  const created=Number(ticket.created_at)||Date.parse(ticket.created_at||'')||0;
+  const freshRequest=created>0&&Date.now()-created<24*60*60*1000;
   const jobs=Array.isArray(ticket.context.color_jobs)?ticket.context.color_jobs:[];
   for(const job of jobs){
    const status=String(job.status||ticket.status||'unknown').slice(0,40);
    const progress=job.progress&&typeof job.progress==='object'?job.progress:{};
+   const attempted=Date.parse(progress.attemptedAt||'')||0;
+   if(!freshRequest&&!(attempted>0&&Date.now()-attempted<30*60000&&['working','running','leased'].includes(status)))continue;
    entries.push({updated:Number(ticket.updated_at)||0,description:
     String(job.agent||'Bot').replace(/-/g,' ')+' — '+String(job.title||'Untitled').slice(0,140)+
     ' ('+String(job.repository||'unassigned').slice(0,90)+'): '+status+
@@ -105,7 +110,7 @@ function describeTickets(tickets,limit=10){
   }
  }
  entries.sort((a,b)=>b.updated-a.updated);
- if(!entries.length)return 'Robot Brain has no verified color-bot jobs in the current owner ticket list. No activity was invented.';
+ if(!entries.length)return 'No recent work is running or waiting. Tell me what you want done.';
  const selected=entries.slice(0,Math.max(1,Math.min(10,Number(limit)||10)));
  return 'Robot Brain report from '+tickets.length+' saved owner tickets; '+selected.length+' job updates. Queued is not running and no payment is implied.\n'+selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
 }
