@@ -30,9 +30,12 @@ public final class BubblesTileService extends TileService {
 
     @SuppressWarnings("deprecation")
     private void openAssistant() {
+        String request = java.util.UUID.randomUUID().toString();
+        getSharedPreferences("bubbles-tile", MODE_PRIVATE).edit()
+                .putString("pending-start", request).commit();
         Intent intent = new Intent(this, MainActivity.class)
                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP)
-                .putExtra(EXTRA_START, true);
+                .putExtra(EXTRA_START, request);
         if (Build.VERSION.SDK_INT >= 34) {
             PendingIntent launch = PendingIntent.getActivity(this, 511, intent,
                     PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
