@@ -13,6 +13,11 @@ const TICKETS='https://infinity-brain-clock.marvaseater.workers.dev';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
 const params=new URLSearchParams(location.search);
 const embedded=params.get('embed')==='1'&&window.parent!==window;
+const nativeOverlay=!embedded&&params.get('nativeOverlay')==='1';
+// Native Android uses the identical QuantaPhi website assistant and owner-wallet
+// gates. It must not copy Chrome cookies or obtain owner rights from a query string.
+let nativeSpeechReply='',nativeSpeechPending=false,noteTaking=false;
+if(nativeOverlay)document.documentElement.classList.add('bubbles-native-overlay');
 const bubbleId=embedded?(String(params.get('id')||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,48)||'embedded'):'';
 const NOTES='quantaphi:bubbles:notes:v1'+(bubbleId?':'+bubbleId:'');
 const CONFIG='quantaphi:bubbles:config:v1'+(bubbleId?':'+bubbleId:'');
@@ -177,6 +182,20 @@ publish.addEventListener('click',async()=>{
  }
 });
 
+function noteCommand(spoken){
+ const text=String(spoken||'').trim();
+ if(/^(?:please\s+)?(?:stop|finish|end)\s+(?:taking|writing|recording)\s+notes?[.!?]*$/i.test(text)){
+  noteTaking=false;return 'Note-taking stopped. Your saved notes remain on this device.';
+ }
+ const start=text.match(/^(?:(?:please\s+)?(?:start|begin)\s+)?(?:taking|take|write|make|record)\s+notes?(?:\s+now)?[.!?]*$/i);
+ if(start){noteTaking=true;return 'I am taking notes. Tell me what to write down. Say stop taking notes when finished.';}
+ const dictated=text.match(/^(?:(?:please\s+)?(?:take|make|save|write|record)\s+(?:a\s+)?note(?:\s+that|\s+of)?|(?:please\s+)?write\s+down|remember\s+that)\s*[:,-]?\s+(.+)$/i);
+ const content=dictated?dictated[1]:(noteTaking?text:'');
+ if(!content)return '';
+ if(!addNote(content))return 'I could not save that note. Check device storage.';
+ renderNotes();
+ return 'Saved note: '+content.slice(0,150)+(content.length>150?'…':'');
+}
 function addNote(value){
  const text=String(value||'').trim().slice(0,3000);
  if(!text)return false;
@@ -267,6 +286,14 @@ function isOwnerWorkRequest(text){
 }
 async function sendMessage(text){
  const spoken=String(text||'').trim();if(busy||!spoken)return;
+ const noteResult=noteCommand(spoken);
+ if(noteResult){
+  display(spoken,'you');display(noteResult,'ai');status.textContent=noteResult;
+  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=noteResult;
+  else if(config.voice&&!nativeOverlay)speakText(noteResult);
+  nativeSpeechPending=false;
+  return;
+ }
  // An explicit "continue" resumes only the most recent OWNER work request;
  // model-written suggestions and unrelated old chat cannot trigger bot jobs.
  const continued=!embedded?brainTools?.resolveFollowupRequest?.(spoken,messages):'';
@@ -317,9 +344,18 @@ async function sendMessage(text){
    conversation.append(row);
   }
   if(json.receipt)status.textContent=json.receipt.tool?.startsWith('resonance.')?'Resonance Engine · '+json.receipt.status+' · no robot job created':json.receipt.repositoryActionsVerified===false?config.alias+' · AI answer only · no bot work verified':config.alias+' · '+json.receipt.tool+' · '+json.receipt.status;
-  if(config.voice)speakText(answer);
+  if(nativeOverlay){
+    // The Android foreground service handles speech output; typed messages
+    // deliberately stay silent when the user is listening to another app.
+    if(nativeSpeechPending)nativeSpeechReply=answer;
+    nativeSpeechPending=false;
+   }else if(config.voice)speakText(answer);
  }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message}
- finally{busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+ finally{if(nativeOverlay&&nativeSpeechPending){
+     nativeSpeechReply=workEvidence||'The assistant could not complete that request.';
+     nativeSpeechPending=false;
+   }
+   busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
     if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
   }
 }
@@ -522,7 +558,34 @@ if(!embedded&&incomingWork&&incomingWork.length<=1800){
  workStatus.textContent='Android work draft received. Verify your owner wallet and press Send approved request to Robot Brain. No ticket has been submitted.';
  history.replaceState(null,'',location.pathname);
 }
-window.QuantaBubbles={open:()=>toggle(true),close:()=>toggle(false)};
+window.QuantaBubbles={
+ open:()=>toggle(true),close:()=>toggle(false),
+ isNativeOverlay:nativeOverlay,
+ // Called only by Bubbles' Android WebView after verifying the first-party
+ // HTTPS URL. Reuse real site chat, real owner verification and job receipts.
+ sendNativeSpeech:(message)=>{
+  if(!nativeOverlay||busy)return false;
+  const value=String(message||'').slice(0,1800).trim();
+  if(!value)return false;
+  nativeSpeechReply='';nativeSpeechPending=true;
+  void sendMessage(value);
+  return true;
+ },
+ drainNativeReply:()=>{
+  if(!nativeOverlay)return '';
+  const value=nativeSpeechReply;nativeSpeechReply='';return value;
+ }
+};
+if(nativeOverlay){
+ // Same composer, source links, notes, bot status and instructions as QuantaPhi.
+ // The native service owns the microphone and spoken audio to prevent echoes.
+ toggle(true);
+ mic.hidden=true;
+ speak.hidden=true;
+ launchCard.hidden=true;
+ launcher.hidden=true;
+ status.textContent='Bubbles website assistant · native microphone · owner wallet verification required for Brain jobs';
+}
 if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 
