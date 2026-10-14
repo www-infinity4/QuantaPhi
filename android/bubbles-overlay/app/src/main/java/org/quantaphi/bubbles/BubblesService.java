@@ -61,6 +61,7 @@ public final class BubblesService extends Service {
     public static final String ACTION_STOP_SPEAKING = "org.quantaphi.bubbles.STOP_SPEAKING";
     public static final String ACTION_REFRESH_VOICE = "org.quantaphi.bubbles.REFRESH_VOICE";
     public static final String ACTION_RESUME = "org.quantaphi.bubbles.RESUME";
+    public static final String ACTION_MUTE = "org.quantaphi.bubbles.MUTE";
     public static final String ACTION_RECORD = "org.quantaphi.bubbles.RECORD_AUDIO";
     public static final String ACTION_SAVE_AUDIO = "org.quantaphi.bubbles.SAVE_AUDIO";
     private final VoiceRecording recording = new VoiceRecording();
@@ -137,7 +138,12 @@ public final class BubblesService extends Service {
                 } catch (Exception ignored) { /* Restore default voice. */ }
             }
             if (!selected) {
-                int language = tts.setLanguage(Locale.US);
+                // Match the website's British-English voice preference whenever
+                // the selected Android neural TTS engine provides that locale.
+                int language = tts.setLanguage(Locale.UK);
+                if (language == TextToSpeech.LANG_MISSING_DATA
+                        || language == TextToSpeech.LANG_NOT_SUPPORTED)
+                    language = tts.setLanguage(Locale.US);
                 if (language == TextToSpeech.LANG_MISSING_DATA
                         || language == TextToSpeech.LANG_NOT_SUPPORTED)
                     tts.setLanguage(Locale.ENGLISH);
@@ -160,6 +166,11 @@ public final class BubblesService extends Service {
         }
         if (intent != null && ACTION_RESUME.equals(intent.getAction()) && connected) {
             resumeSession();
+            return START_NOT_STICKY;
+        }
+        if (intent != null && ACTION_MUTE.equals(intent.getAction())) {
+            if (connected) muteSession();
+            else stopSelf(); // A mute command cannot start a microphone session.
             return START_NOT_STICKY;
         }
         if (intent != null && ACTION_STOP.equals(intent.getAction())) {
