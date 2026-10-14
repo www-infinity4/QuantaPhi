@@ -470,8 +470,8 @@ final class ChatGPTSignIn {
     private static String safeError(Exception ex) {
         // Never expose raw tokens or upstream OAuth URLs in a visible error.
         String m = ex.getMessage();
-        return m == null ? ex.getClass().getSimpleName() :
-                m.replaceAll("(?i)(access_token|refresh_token|id_token)=[^\\s&]+", "$1=[redacted]")
-                        .substring(0, Math.min(160, m.length()));
+        if (m == null) return ex.getClass().getSimpleName();
+        String safe = m.replaceAll("(?i)(access_token|refresh_token|id_token)=[^\\\\s&]+", "$1=[redacted]");
+        return safe.substring(0, Math.min(160, safe.length()));
     }
 }
