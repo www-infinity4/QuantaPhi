@@ -211,6 +211,7 @@ public final class BubblesService extends Service {
                 modelLoading = false;
                 muteSession();
                 state("error", 0);
+                BrainNotes.prefs(this).edit().putString("last_error", "Offline voice model failed to load").apply();
                 Toast.makeText(this, "Offline voice model could not load. Reopen Bubbles to retry.", Toast.LENGTH_LONG).show();
             });
             return;
@@ -272,6 +273,7 @@ public final class BubblesService extends Service {
             stopRecognition();
             muted = true;
             state("error", 0);
+            BrainNotes.prefs(this).edit().putString("last_error", "Microphone start failed: " + ex.getClass().getSimpleName()).apply();
             Toast.makeText(this, "Cannot open microphone. Check its permission and other recording apps.", Toast.LENGTH_LONG).show();
         }
     }
@@ -384,8 +386,13 @@ public final class BubblesService extends Service {
             String answer;
             try {answer = replyFromOracle(userRequest);}
             catch (Exception error) {
-                main.post(() -> BrainNotes.prefs(this).edit().putString("last_error", error.getClass().getSimpleName()).apply());
-                answer = "I heard you, but the AI request failed. Open Bubbles to see its status and try again.";
+                // Preserve an actionable status (such as HTTP 429/500 or a timeout),
+                // not just an unhelpful exception class. Never include credentials.
+                String detail = error.getMessage();
+                if (detail == null || detail.trim().isEmpty()) detail = error.getClass().getSimpleName();
+                final String problem = detail.substring(0, Math.min(160, detail.length()));
+                main.post(() -> BrainNotes.prefs(this).edit().putString("last_error", problem).apply());
+                answer = "I heard you, but the AI connection failed. Open Bubbles; the Last problem line shows why.";
             }
             final String result = answer;
             main.post(() -> {
