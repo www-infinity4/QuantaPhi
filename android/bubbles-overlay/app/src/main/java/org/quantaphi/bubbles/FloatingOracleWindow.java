@@ -327,8 +327,14 @@ final class FloatingOracleWindow {
             });
     }
 
+    void claimMicrophone() {
+        if (websiteReady && website != null) website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.claimNativeVoice()", null);
+    }
     private void pollWebsiteReply() {
         if (!websiteReady || website == null) return;
+        website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.voiceConflict())", value -> {
+            if ("true".equals(value)) service.pauseSharedMicrophone();
+        });
         website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.drainNativeReply()",
             raw -> {
                 if (!websiteReady || raw == null || "null".equals(raw)) return;
