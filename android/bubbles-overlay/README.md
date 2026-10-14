@@ -216,3 +216,32 @@ CI nor a merged GitHub commit proves the live Cloudflare site has deployed these
 new JS/HTML assets. Confirm the first-party web bridge is live and owner-auth
 works before calling the on-device behavior verified. The HTML/CSS interface
 is site-provided, not a screenshot imitation.
+
+
+## Website/APK shared long memory (October 14 follow-up)
+
+Preview 4's floating WebView opens the exact QuantaPhi Bubbles page and now
+loads the same `bubbles-memory.js` client as the website. There are no parallel
+Android-only AI prompts while the first-party page is available. The normal
+website microphone releases when Chrome goes into the background, leaving the
+foreground APK microphone to continue listening. Android still permits only
+what its OS microphone permissions and audio concurrency allow.
+
+To retain a complete Bubbles transcript instead of just a small recent buffer,
+open the Bubbles conversation, check **Remember my entire Bubbles conversation
+on this device**, then check **Sync website and Android history with my verified
+Unified Wallet**. Verify the *same* wallet separately in Chrome and the Android
+floating WebView; Android never copies Chrome session cookies. This private
+Cloudflare D1 sync is per verified wallet with idempotent event IDs and indexed
+local retrieval of earlier conversation and notes. It does not access
+conversations in the ChatGPT app, hidden messages from other applications,
+or pre-installation audio that was never recorded in Bubbles. A small
+relevant-context excerpt is used per model request; it cannot fit every past
+word into one model context window. Guest embeds remain independent.
+
+Cloud history is voluntary and stored on QuantaPhi's Cloudflare infrastructure,
+not end-to-end encrypted. **Clear local chat** only deletes this profile's local
+IndexedDB history; **Erase synced memory** (confirmation required) deletes the
+verified wallet's remote transcript as well. Work tickets, media and wallet
+transactions are separate from chat transcripts. Tests prove source-level
+authorization and event-deduplication behavior, not real Motorola mic concurrency.
