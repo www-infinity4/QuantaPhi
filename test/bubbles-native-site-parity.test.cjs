@@ -65,3 +65,14 @@ test('Preview 4 installs separately from previous debug signatures', () => {
   assert.match(gradle,/versionName '0\.9\.0'/);
   assert.match(gradle,/applicationIdSuffix '\.preview4'/);
 });
+
+
+test('loading the shared assistant holds speech instead of using the old manual-submit fallback',()=>{
+ const method=window.slice(window.indexOf('boolean sendSpoken(String text)'),window.indexOf('private void showWebsite'));
+ assert.match(method,/if \(website == null\) return false/);
+ assert.doesNotMatch(method,/if \(!websiteReady \|\| website == null\) return false/);
+ assert.match(method,/pendingSpeech =/);
+ assert.match(window,/if \(!pendingSpeech.isEmpty\(\)\) deliverQueuedSpeech\(\)/);
+ assert.match(site,/submission is already complete/);
+ assert.match(site,/Never tell the owner to click a submit, run, publish or finish button/);
+});
