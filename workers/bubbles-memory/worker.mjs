@@ -38,6 +38,12 @@ export async function handle(req,env){
  try{owner=await identify(req,env)}catch{return reply(origin,{ok:false,error:'wallet_validation_unavailable'},503)}
  if(!owner)return reply(origin,{ok:false,error:'verified_wallet_required'},401);
  try{
+  if(req.method==='GET'&&u.pathname==='/v1/profile'){
+   // Non-secret stable scope for partitioning local IndexedDB by wallet.
+   const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('bubbles:'+owner));
+   const profile=Array.from(new Uint8Array(digest),n=>n.toString(16).padStart(2,'0')).join('');
+   return reply(origin,{ok:true,profile});
+  }
   if(req.method==='GET'&&u.pathname==='/v1/history'){
    const after=Math.max(0,Number.parseInt(u.searchParams.get('after')||'0',10)||0);
    const limit=Math.min(100,Math.max(1,Number.parseInt(u.searchParams.get('limit')||'100',10)||100));
