@@ -118,7 +118,7 @@ export class BrainClock extends DurableObject{
   if(path==='/runner/capability'){
    if(!engine)throw Error('repository_engine_identity_required');
    const capability={when:new Date().toISOString(),runUrl,status:body.status==='credential_configured'?'credential_configured':'credential_missing',repositoriesVisible:Number.isInteger(body.repositoriesVisible)?Math.max(0,body.repositoriesVisible):null,note:'Repository writes are proven by commits, not account role permissions.'};
-   await this.ctx.storage.put('engine-capability',capability);return Response.json({ok:true});
+   await this.ctx.storage.put('engine-capability',capability);return Response.json({ok:true,sourceWindowsV2:true,arbitrationDigestValidation:true});
   }
   if(path==='/runner/screenshots'){
    const lease=await this.ctx.storage.get(String(body.key||''));
