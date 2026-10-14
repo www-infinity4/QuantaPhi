@@ -17,11 +17,11 @@
   // or "image recognition". Preserve the user's full query for the overview.
   function mediaIntent(raw){
     const query=clean(raw,240),value=query.toLowerCase();
-    if(!query||/^(?:how|why|what|when|who|explain|history of|compare|research|definition of)\\b/i.test(query))return null;
-    const neg=/(?:image|video|photo)\\s+(?:generator|generation|recognition|editing|editor|processing|compression|algorithm|models?|quality|technology|games?|gaming|ai)\\b/i;
+    if(!query||/^(?:how|why|what|when|who|explain|history of|compare|research|definition of)\b/i.test(query))return null;
+    const neg=/(?:image|video|photo)\s+(?:generator|generation|recognition|editing|editor|processing|compression|algorithm|models?|quality|technology|games?|gaming|ai)\b/i;
     const kinds=[
-      {kind:'image',prefix:/^(?:(?:please|show me|show|find|browse|search for|search|see|get|open|load)\\s+)*(?:(?:some|a|an|the)\\s+)?(?:images?|photos?|pictures?|wallpapers?|image feed|photo feed|picture gallery|image gallery)\\b(?:\\s+(?:of|for|about|from|on))?\\s*/i,suffix:/\\s+(?:images?|photos?|pictures?|wallpapers?)(?:\\s+(?:feed|gallery|results|collection))?\\s*$/i},
-      {kind:'video',prefix:/^(?:(?:please|show me|show|find|browse|search for|search|watch|play|see|get|open|load)\\s+)*(?:(?:some|a|an|the)\\s+)?(?:videos?|movies?|films?|clips?|video feed|video gallery|video results)\\b(?:\\s+(?:of|for|about|from|on))?\\s*/i,suffix:/\\s+(?:videos?|movies?|films?|clips?)(?:\\s+(?:feed|gallery|results|collection))?\\s*$/i}
+      {kind:'image',prefix:/^(?:(?:please|show me|show|find|browse|search for|search|see|get|open|load)\s+)*(?:(?:some|a|an|the)\s+)?(?:images?|photos?|pictures?|wallpapers?|image feed|photo feed|picture gallery|image gallery)\b(?:\s+(?:of|for|about|from|on))?\s*/i,suffix:/\s+(?:images?|photos?|pictures?|wallpapers?)(?:\s+(?:feed|gallery|results|collection))?\s*$/i},
+      {kind:'video',prefix:/^(?:(?:please|show me|show|find|browse|search for|search|watch|play|see|get|open|load)\s+)*(?:(?:some|a|an|the)\s+)?(?:videos?|movies?|films?|clips?|video feed|video gallery|video results)\b(?:\s+(?:of|for|about|from|on))?\s*/i,suffix:/\s+(?:videos?|movies?|films?|clips?)(?:\s+(?:feed|gallery|results|collection))?\s*$/i}
     ];
     const found=[];
     for(const item of kinds){
@@ -30,7 +30,7 @@
       if(!first&&!last)continue;
       if(first&&neg.test(query.slice(first[0].length-7).trim())&&/^(?:video|image|photo)/i.test(query))continue;
       const subject=clean(first?query.slice(first[0].length):query.replace(item.suffix,''),180)
-        .replace(/^(?:of|for|about|from|on)\\s+/i,'').trim();
+        .replace(/^(?:of|for|about|from|on)\s+/i,'').trim();
       if(!subject||/^(?:feed|gallery|results|collection|of|for|about|from|on)$/i.test(subject))continue;
       found.push({kind:item.kind,subject,query});
     }
