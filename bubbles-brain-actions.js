@@ -29,6 +29,20 @@ function classify(utterance){
  if(change.test(text)&&subject.test(text)&&(imperative.test(text)||directive.test(text)))return 'queue';
  return 'chat';
 }
+// Continue an OWNER'S last explicit work command, not an assistant suggestion.
+ // No older browsing context or model-authored instruction can create a job.
+function resolveFollowupRequest(utterance, history=[]){
+ const latest=String(utterance||'').trim().toLowerCase();
+ if(!/^(?:\*|continue(?: (?:building|working|the build|that|where you left off))?|keep (?:going|building|working)(?: on (?:it|that))?|go ahead|go on|carry on|proceed|yes[, ]*(?:do it|go ahead|continue)|finish (?:it|that|the build)|pick up (?:the work|where you left off))\s*[.!*]*$/.test(latest))return '';
+ if(!Array.isArray(history))return '';
+ // Only the *most recent* user command is eligible. Earlier, unrelated requests
+ // cannot be revived by a one-word "continue" after an intervening topic.
+ const last=[...history].reverse().find(item=>item?.role==='user'&&typeof item.text==='string');
+ if(!last)return '';
+ const previous=last.text.trim().slice(0,4000);
+ if(previous.length<12||classify(previous)!=='queue')return '';
+ return previous;
+}
 function repositoryFor(text){
  const source=String(text||'').toLowerCase();
  for(const [name,repo] of Object.entries(OWNER_REPOS)){
@@ -79,7 +93,7 @@ function describeTickets(tickets,limit=10){
  const selected=entries.slice(0,Math.max(1,Math.min(10,Number(limit)||10)));
  return 'Robot Brain report from '+tickets.length+' saved owner tickets; '+selected.length+' job updates. Queued is not running and no payment is implied.\n'+selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
 }
-const api={classify,repositoryFor,makeJobs,describeTickets};
+const api={classify,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);
