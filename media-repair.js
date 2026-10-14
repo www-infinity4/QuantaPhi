@@ -18,7 +18,6 @@
   function mediaIntent(raw){
     const query=clean(raw,240);
     if(!query||/^(?:how|why|what|when|who|explain|history of|compare|research|definition of)\b/i.test(query))return null;
-    const neg=/(?:image|video|photo)\s+(?:generator|generation|recognition|editing|editor|processing|compression|algorithm|models?|quality|technology|games?|gaming|ai)\b/i;
     const kinds=[
       {kind:'image',prefix:/^(?:(?:please|show me|show|find|browse|search for|search|see|get|open|load)\s+)*(?:(?:some|a|an|the)\s+)?(?:image feed|photo feed|picture gallery|image gallery|images?|photos?|pictures?|wallpapers?)\b(?:\s+(?:of|for|about|from|on))?\s*/i,suffix:/\s+(?:images?|photos?|pictures?|wallpapers?)(?:\s+(?:feed|gallery|results|collection))?\s*$/i},
       {kind:'video',prefix:/^(?:(?:please|show me|show|find|browse|search for|search|watch|play|see|get|open|load)\s+)*(?:(?:some|a|an|the)\s+)?(?:video feed|video gallery|video results|videos?|movies?|films?|clips?)\b(?:\s+(?:of|for|about|from|on))?\s*/i,suffix:/\s+(?:videos?|movies?|films?|clips?)(?:\s+(?:feed|gallery|results|collection))?\s*$/i}
@@ -28,7 +27,7 @@
       const first=query.match(item.prefix);
       const last=query.match(item.suffix);
       if(!first&&!last)continue;
-      if(first&&neg.test(query.slice(first[0].length-7).trim())&&/^(?:video|image|photo)/i.test(query))continue;
+      if(first&&/^(?:videos?|images?|photos?)\s+(?:games?|gaming|generator|generation|recognition|editing|processing|quality|technology|algorithm|ai)\b/i.test(query))continue;
       const subject=clean(first?query.slice(first[0].length):query.replace(item.suffix,''),180)
         .replace(/^(?:of|for|about|from|on)\s+/i,'').trim();
       if(!subject||/^(?:feed|gallery|results|collection|of|for|about|from|on)$/i.test(subject))continue;
