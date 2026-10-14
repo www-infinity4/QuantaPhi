@@ -53,6 +53,34 @@ public final class MainActivity extends Activity {
         copy.setPadding(0, 25, 0, 25);
         layout.addView(copy);
 
+        TextView accountState = new TextView(this);
+        accountState.setTextSize(15);
+        accountState.setTextColor(Color.rgb(48, 36, 62));
+        accountState.setText(ChatGPTSignIn.status(this));
+        layout.addView(accountState);
+        Button chatgptLogin = new Button(this);
+        chatgptLogin.setText("Continue with ChatGPT");
+        chatgptLogin.setOnClickListener(v -> {
+            chatgptLogin.setEnabled(false);
+            accountState.setText("Opening ChatGPT in your browser for permission…");
+            ChatGPTSignIn.start(this, outcome -> {
+                chatgptLogin.setEnabled(true);
+                accountState.setText(ChatGPTSignIn.status(this) + "\\n" + outcome);
+            });
+        });
+        layout.addView(chatgptLogin);
+        Button chatgptLogout = new Button(this);
+        chatgptLogout.setText("Disconnect ChatGPT");
+        chatgptLogout.setOnClickListener(v -> ChatGPTSignIn.signOut(this, outcome ->
+                accountState.setText(ChatGPTSignIn.status(this) + "\\n" + outcome)));
+        layout.addView(chatgptLogout);
+        TextView chatgptNotice = new TextView(this);
+        chatgptNotice.setText("Optional. This connects ChatGPT plan inference only after your approval. "
+                + "Your ChatGPT conversations, memories and ChatGPT voice are not shared. "
+                + "Your sign-in tokens remain encrypted on this phone; Oracle remains available otherwise.");
+        chatgptNotice.setTextColor(Color.rgb(101, 83, 111));
+        layout.addView(chatgptNotice);
+
         message = new EditText(this);
         message.setHint("Type a message or work request to Bubbles…");
         message.setTextColor(Color.rgb(48, 36, 62));

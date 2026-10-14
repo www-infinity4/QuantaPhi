@@ -397,15 +397,6 @@ public final class BubblesService extends Service {
         });
     }
     private String replyFromOracle(String question) throws Exception {
-        URL url = new URL(AI_URL);
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setRequestMethod("POST");
-        conn.setConnectTimeout(6000);
-        conn.setReadTimeout(90000);
-        conn.setDoOutput(true);
-        conn.setRequestProperty("Content-Type", "application/json");
-        conn.setRequestProperty("Accept", "application/json");
-        conn.setRequestProperty("Origin", "https://quantaphi.org");
         JSONObject context = new JSONObject().put("application", "Bubbles Android overlay")
                 .put("task", "bubbles-user-voice-chat").put("persona", "assistant").put("requireCloudflare", true);
         String alias=BrainNotes.prefs(this).getString("name","Brain");
@@ -419,6 +410,20 @@ public final class BubblesService extends Service {
                 + "You see only selected visible app text; never claim complete history or device control. "
                 + "\nRecent notes (included only by user setting):\n"+notes
                 + "\nThe person said: " + question;
+        if (ChatGPTSignIn.hasPlan(this)) {
+            // ChatGPT OAuth credentials never leave this device or visit our Worker.
+            // An inference error is reported instead of silently switching providers.
+            return ChatGPTSignIn.ask(this, prompt);
+        }
+        URL url = new URL(AI_URL);
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("POST");
+        conn.setConnectTimeout(6000);
+        conn.setReadTimeout(90000);
+        conn.setDoOutput(true);
+        conn.setRequestProperty("Content-Type", "application/json");
+        conn.setRequestProperty("Accept", "application/json");
+        conn.setRequestProperty("Origin", "https://quantaphi.org");
         JSONObject request = new JSONObject().put("request",question).put("input", prompt).put("context", context);
         try {
             byte[] bytes = request.toString().getBytes(StandardCharsets.UTF_8);
