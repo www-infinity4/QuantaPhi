@@ -87,26 +87,33 @@
       const data=await response.json();
       paymentsReady=Boolean(response.ok&&data.ok&&data.paymentsReady);
     }catch(_){paymentsReady=false;}
-    if(!paymentsReady)message="Media Star purchases are paused until the owner's StarCoin payout wallet is connected. No StarCoin will be charged.";
+    if(!paymentsReady)message="Fred's verified creator payout wallet is not connected. No StarCoin will be charged.";
     render();
   }
   async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;isPlatformOwner=!!d.isPlatformOwner;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
+  function payoutCaption(data){
+    if(data.ownerPreview)return "Owner preview — no StarCoin deducted. ";
+    if(data.charged===1)return data.creatorPaid===true&&data.recipient==="fred-krueger"&&data.receiptReference
+      ?"1 StarCoin credited to Fred's verified wallet; linked debit/credit receipt confirmed. "
+      :"Payment discrepancy: 1 StarCoin was charged, but Fred's credit receipt was NOT verified. Report this transaction; do not retry payment. ";
+    return "Already unlocked; no new charge. ";
+  }
   function rememberEpisode(e){const seen=new Set(load(seenKey,[]));seen.add(active.id);active=e;seen.add(e.id);const available=episodes.filter(isReplayLink);
     if(available.length&&available.every(x=>seen.has(x.id))) {save("phi:fred-spaces-previous-round:v1",[...seen]);seen.clear();seen.add(e.id);}
     save(seenKey,[...seen]);save(currentKey,e.id);}
   async function more(){
     if(busy||catalogLoading)return;
-    if(!paymentsReady){note("Media Star payments are paused until the owner payout wallet is verified. No StarCoin was charged.");return;}
+    if(!paymentsReady){note("Media Star payments are paused until Fred's own payout wallet is verified. No StarCoin was charged.");return;}
     const next=pickNext();if(!next){note("No additional indexed episodes are available.");return;}
     // The fee is for curated discovery of a direct X replay link, not streaming rights.
     // The source may require X sign-in or disappear. Display this before every new debit.
-    if(next.id!==FIRST&&!isPlatformOwner&&!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the curated episode: "+next.title+"? The replay opens on X, not inside QuantaPhi. X may require sign-in or may not offer playback. The StarCoin pays for curation, not guaranteed audio. Continue?"))return;
+    if(next.id!==FIRST&&!isPlatformOwner&&!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the curated episode: "+next.title+"? The replay opens on X, not inside QuantaPhi. X may require sign-in or may not offer playback. The StarCoin goes to Fred's verified account for this curated link, not guaranteed playback. Continue?"))return;
     busy=true;render();
     try{
       const data=next.id===FIRST?{ok:true,charged:0,starCoins:balance}:await ledger("/v1/spaces/unlock","POST",{episodeId:next.id});
       if(!data.ok)throw new Error("Unlock was not confirmed.");
       balance=data.starCoins;unlocked.add(next.id);rememberEpisode(next);
-      message=(data.ownerPreview?"Owner preview — no StarCoin deducted. ":data.charged===1?"1 StarCoin paid to the QuantaPhi Media Star platform. ":"Already unlocked; no new charge. ")+"Use the play button to open the original replay on X."
+      message=payoutCaption(data)+"Use the play button to open the original replay on X."
       window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));
     }catch(error){message=error.message||"No StarCoin was charged. Please retry.";}
     finally{busy=false;render();}
@@ -122,7 +129,7 @@
     if(busy)return;
     if(target.id!==FIRST&&!isPlatformOwner&&!unlocked.has(target.id)){
       if(!paymentsReady){note("Wallet payments are unavailable; no StarCoin was charged.");return}
-      if(!window.confirm("Spend 1 full StarCoin to reveal this Fred episode: "+target.title+"? Audio comes from the original X recording, which might require sign-in or be unavailable."))return;
+      if(!window.confirm("Pay Fred 1 full StarCoin to reveal this curated episode: "+target.title+"? Audio comes from the original X recording, which might require sign-in or be unavailable."))return;
     }
     busy=true;render();
     try{
@@ -132,7 +139,7 @@
       unlocked.add(target.id);
       if(data.starCoins!==undefined)balance=data.starCoins;
       rememberEpisode(target);
-      message=(data.ownerPreview?"Owner preview · no StarCoin deducted. ":data.charged===1?"One StarCoin paid and receipt confirmed. ":"Already available in your library. ")+"Open the original X Space using the player.";
+      message=payoutCaption(data)+"Open the original X Space using the player.";
       window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));
     }catch(e){message=e?.message||"Fred episode selection failed; check the wallet receipt before retrying."}
     finally{busy=false;render()}
