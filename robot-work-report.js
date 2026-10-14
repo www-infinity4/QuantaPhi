@@ -12,6 +12,8 @@
  const stamp=make('small','Waiting for verified task records.');
  const prose=make('div','');prose.className='robot-work-prose';prose.setAttribute('aria-live','polite');
  panel.append(bar,stamp,prose);
+ const help=make('p','Tell Bubbles what needs fixing. You can read the latest progress here without pressing any buttons.');
+ panel.prepend(help);
  const spareJobs=root.querySelector('[data-refresh]'),spareGemini=root.querySelector('[data-gemini]');
  if(spareJobs)spareJobs.hidden=true;
  if(spareGemini)spareGemini.hidden=true;
