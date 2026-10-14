@@ -1,4 +1,5 @@
 import {sortCandidates} from './queue-order.mjs';
+import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
 import { evidenceBucket } from './evidence-db.mjs';
 import { DurableObject } from 'cloudflare:workers';
 import { authenticate, supported } from './runner-auth.mjs';
@@ -552,6 +553,25 @@ export default{
  },
  async fetch(request,env){
   const path=new URL(request.url).pathname;
+  // Read-only scientific tool. Owner sessions or authenticated repository runners
+  // may call this directly; no job is queued and no coins are minted.
+  if(path==='/tools/resonance'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   let permitted=await ownerAuthorized(env,token);
+   if(!permitted){try{await authenticate(request);permitted=true;}catch{/* An unauthenticated request cannot use owner Brain endpoints. */}}
+   if(!permitted)return output(request,{ok:false,error:'owner_or_runner_authorization_required'},401);
+   if(Number(request.headers.get('Content-Length')||0)>4096)return output(request,{ok:false,error:'body_too_large'},413);
+   try{
+    const raw=await request.text();
+    if(raw.length>4096)return output(request,{ok:false,error:'body_too_large'},413);
+    const body=JSON.parse(raw),args=body.args??parseResonanceSpeech(body.request);
+    if(!args)return output(request,{ok:false,error:'inductance_and_capacitance_required'},400);
+    const result=calculateResonance(args);
+    return output(request,{ok:true,tool:'resonance.calculate',result,sourceUrl:CALCULATOR_SOURCE,queued:false,minted:false});
+   }catch(error){return output(request,{ok:false,error:String(error?.message||'invalid_calculation').slice(0,120)},400)}
+  }
   if(path==='/owner/session'&&request.method==='POST'){
    // This endpoint cannot enroll an owner. It only recognizes a previously
    // owner-approved earnings wallet, using the existing private wallet service.
