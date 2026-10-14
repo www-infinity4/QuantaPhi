@@ -68,6 +68,8 @@ export async function runSmoke({fetcher=fetch,full=false}={}) {
     'Bubbles GPT response unavailable: HTTP '+chat.status+' '+String(answer.error||''));
    check(answer.model==='@cf/openai/gpt-oss-120b','Bubbles model did not match deployed source');
    check(answer.output.length>35,'Bubbles output too short for useful engineering guidance');
+   check(!(answer.output.includes('src/ticket_adapter.py')||answer.output.includes('tests/test_owner_ticket_adapter.py')),
+    'Bubbles proposed a fabricated Python module instead of existing JavaScript owner adapter tests');
    check(!hasUnverifiedActionClaim('Continue building QuantaPhi robot brain.',answer.output),
     'Bubbles claimed repository edits/deployment without an authenticated action receipt');
    check(answer.receipt?.repositoryActionsVerified===false,
