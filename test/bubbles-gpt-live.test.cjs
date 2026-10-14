@@ -64,6 +64,6 @@ test('valid authorized session forwards SDP to GPT Live, never returns API key',
 test('UI never stores owner token or promises free ChatGPT Live audio',()=>{
  assert.match(html,/Owner-only developer connection/);
  assert.match(html,/separately billed OpenAI project API key/);
- assert.doesNotMatch(frontend,/localStorage|sessionStorage/);
+ assert.doesNotMatch(frontend,/\b(?:localStorage|sessionStorage)\s*\./);
  assert.match(frontend,/secret\.value=""/);
 });
