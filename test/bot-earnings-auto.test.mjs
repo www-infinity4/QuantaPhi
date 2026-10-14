@@ -18,7 +18,7 @@ test('authenticated owner automatically connects the actual wallet token without
  assert.equal(JSON.parse(r.calls[0].options.body).walletToken,token);
  assert.equal(r.calls[0].options.headers.Authorization,'Bearer OWNER_TEST');
  assert.match(r.elements[1].textContent,/1 Quant/);
- r.timers[0]();await Promise.resolve();assert.equal(r.calls.length,1);
+ r.timers[0]();for(let n=0;n<8;n++)await Promise.resolve();assert.equal(r.calls.length,2,'authenticated bot settlement is retried automatically for new verified receipts');
 });
 test('missing wallet identity cannot choose a destination or issue a credit request',async()=>{
  const r=await run('');
