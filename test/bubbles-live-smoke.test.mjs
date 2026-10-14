@@ -59,3 +59,10 @@ test('live smoke fails on invented completion even with HTTP 200 and GPT model',
  assert.equal(result.status,'failed');
  assert.match(result.error,/claimed repository edits/);
 });
+
+test('live Bubbles must not suggest invented Python owner-adapter modules',async()=>{
+ const mock=stub({chatAnswer:'The next step is to create tests/test_owner_ticket_adapter.py with pytest and run that suite.'});
+ const result=await runSmoke({fetcher:mock.fetcher,full:true});
+ assert.equal(result.status,'failed');
+ assert.match(result.error,/fabricated Python module/);
+});
