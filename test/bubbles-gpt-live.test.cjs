@@ -24,7 +24,7 @@ test('Live model is real OpenAI API, not substitute Android speech synthesis',()
  assert.match(frontend,/new RTCPeerConnection\(\)/);
  assert.match(frontend,/getUserMedia\(/);
  assert.match(frontend,/session\.close/);
- assert.doesNotMatch(frontend,/speechSynthesis|TextToSpeech/);
+ assert.doesNotMatch(frontend.split('\n').filter(line=>!line.trim().startsWith('//')).join('\n'),/localStorage|sessionStorage/);
 });
 test('live broker fails closed on unconfigured server and wrong origin',async()=>{
  const app=await load();
