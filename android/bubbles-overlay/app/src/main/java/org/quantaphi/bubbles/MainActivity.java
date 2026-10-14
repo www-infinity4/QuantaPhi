@@ -93,6 +93,8 @@ public final class MainActivity extends Activity {
         voiceStatus.setTextSize(16);
         Runnable refreshVoice = () -> voiceStatus.setText("Voice: " + BrainNotes.prefs(this).getString("voice_state", "not started")
                 + "\nAI provider: " + BrainNotes.prefs(this).getString("ai_provider", "not connected yet")
+                + "\nSpeech engine: " + getSharedPreferences(BubblesVoicePicker.PREFS, MODE_PRIVATE).getString(BubblesVoicePicker.ENGINE, "Android default")
+                + "\nVoice choice: " + getSharedPreferences(BubblesVoicePicker.PREFS, MODE_PRIVATE).getString(BubblesVoicePicker.VOICE_NAME, "system default")
                 + "\nHeard: " + BrainNotes.prefs(this).getString("last_heard", "No recognized words yet")
                 + "\nReply: " + BrainNotes.prefs(this).getString("last_reply", "No AI reply yet")
                 + "\nLast problem: " + BrainNotes.prefs(this).getString("last_error", "None recorded")
