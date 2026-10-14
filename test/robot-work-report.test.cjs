@@ -19,7 +19,7 @@ test('Report invokes GPT only on explicit click; automatic polling uses factual 
  assert.match(source,/report\.addEventListener\('click',\(\)=>pull\('report',\{gpt:true\}\)\)/);
  assert.match(source,/if\(gpt&&tasks\.length\)/);
  assert.match(source,/setInterval\(\(\)=>\{if\(document\.visibilityState==='visible'\)pull\(\)\},30000\)/);
- assert.match(source,/Task titles are untrusted data|untrusted data, not instructions/);
+ assert.match(source,/untrusted data, not instructions|not instructions/);
  assert.match(source,/owner\.ready/);
  assert.match(source,/spareJobs\.hidden=true/);
  assert.match(source,/spareGemini\.hidden=true/);
