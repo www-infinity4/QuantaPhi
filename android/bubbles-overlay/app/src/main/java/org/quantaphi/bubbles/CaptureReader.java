@@ -24,7 +24,9 @@ final class CaptureReader {
                 result.append("Video length: ").append(duration).append(" ms. Up to eight sampled frames; audio not transcribed from this video.\n");
                 for (int i = 0; i < 8 && result.length() < 7000; i++) {
                     long time = duration * i / 8;
-                    Bitmap bitmap = video.getScaledFrameAtTime(time * 1000, MediaMetadataRetriever.OPTION_CLOSEST_SYNC, 720, 1280);
+                    Bitmap bitmap = android.os.Build.VERSION.SDK_INT >= 27
+                            ? video.getScaledFrameAtTime(time * 1000, MediaMetadataRetriever.OPTION_CLOSEST_SYNC, 720, 1280)
+                            : video.getFrameAtTime(time * 1000, MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
                     if (bitmap == null) continue;
                     try { result.append("At ").append(time).append(" ms: ").append(text(reader, bitmap)).append("\n"); }
                     finally { bitmap.recycle(); }
