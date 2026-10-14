@@ -8,6 +8,7 @@ if(!host)return;
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
 const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261013-stream1');
 let streamVoice=null,voiceGeneration=0;
+const brainTools=window.BubblesBrainActions||null;
 const TICKETS='https://infinity-brain-clock.marvaseater.workers.dev';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
 const params=new URLSearchParams(location.search);
@@ -126,9 +127,9 @@ privacy.append(privacyLabel,clearChat);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 const noteList=create('div','ba-notes');
-const workText=create('textarea','ba-field');workText.rows=2;workText.maxLength=4000;workText.placeholder='A specific GitHub/repository task for Robot Brain. Sent only when you approve.';workText.setAttribute('aria-label','Work request for Robot Brain');
+const workText=create('textarea','ba-field');workText.rows=2;workText.maxLength=4000;workText.placeholder='Say fix a card, queue a bot job, or report the top ten tasks. Verified owners may also submit a draft here.';workText.setAttribute('aria-label','Work request for Robot Brain');
 const workButton=create('button','ba-control','Send approved request to Robot Brain');workButton.type='button';workButton.hidden=true;
-const workStatus=create('p','ba-muted','Repository writes require your authorized GitHub integration. Only verified platform owners can submit to the existing Robot Brain inbox here.');
+const workStatus=create('p','ba-muted','Bubbles queues real bot jobs from spoken instructions after owner-wallet verification. Only actual Brain receipts count.');
 workStatus.setAttribute('role','status');
 const toolRail=create('nav','ba-tool-rail');toolRail.setAttribute('aria-label','Infinity builder workspaces');
 for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi','/infinity-phi/'],['Code · Omni Phi','/omni-phi/']]){
@@ -245,6 +246,7 @@ function extract(reply){
  return String(value||'').trim();
 }
 function isOwnerWorkRequest(text){
+ if(brainTools?.classify(text)==='queue')return true;
  const request=String(text||'').trim();
  if(!request||request.length>4000)return false;
  const verb=/\b(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct)\b/i;
@@ -266,6 +268,18 @@ async function sendMessage(text){
   workText.value=request;tools.open=true;
   try{const ticket=await submitWork(request,'explicit-user-command');workEvidence='Robot Brain receipt: ticket '+ticket+' is ready for the authenticated build runner. Queued only; no repair is verified complete.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
+ }else if(!embedded&&brainTools?.classify(request)==='report'){
+  try{workEvidence=await readBrainReport()}
+  catch(error){workEvidence='Robot Brain report unavailable: '+String(error.message||error)+'. No bot activity was assumed.'}
+ }
+ // The Brain receipt is authoritative; never wait for a chat model to confirm it.
+ if(workEvidence){
+  messages.push({role:'assistant',text:workEvidence});messages=messages.slice(-20);persistChat();
+  display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240);
+  if(config.voice)speakText(workEvidence);
+  busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+  if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
+  return;
  }
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger inside QuantaPhi.','Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
@@ -429,32 +443,59 @@ async function getOwnerToken(){
   return token||sessionStorage.getItem('infinity-work-ticket-owner-v1')||localStorage.getItem('infinity-work-ticket-owner-v1')||'';
  }catch{return ''}
 }
+async function verifiedOwnerHeaders(){
+ if(embedded)throw Error('Guest embed bubbles cannot access the owner Robot Brain.');
+ if(ownerReady&&ownerHeaders)return ownerHeaders;
+ if(!window.QuantaBrainOwner?.ready)throw Error('Robot Brain owner verification is unavailable on this page.');
+ const headers=await Promise.race([window.QuantaBrainOwner.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
+ if(!headers?.Authorization)throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.');
+ ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
+ workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
+ return headers;
+}
 async function connectOwner(){
  if(embedded)return;
+ // Late wallet verification must unlock Bubbles without any manual Brain button.
  const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
- if(!headers)return;
- ownerHeaders=headers;ownerReady=true;workButton.hidden=false;workStatus.textContent='Robot Brain connected to your verified owner session. Tap to queue a work request.';
+ if(!headers?.Authorization)return;
+ ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
+ workStatus.textContent='Robot Brain connected. Say “Bubbles, fix the video generator” or “Report the top ten bot jobs.”';
+}
+async function readBrainReport(){
+ const headers=await verifiedOwnerHeaders();
+ const response=await fetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store',signal:AbortSignal.timeout(20000)});
+ const result=await response.json().catch(()=>({}));
+ if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error(String(result.error||'Owner ticket list unavailable'));
+ return brainTools?.describeTickets(result.tickets,10)||'Robot Brain reporting helpers are unavailable.';
 }
 void connectOwner();
 // Home loads the owner helper after this script. Deferred scripts finish before
 // DOMContentLoaded; attach to its real verification promise after load order settles.
 document.addEventListener?.('DOMContentLoaded',()=>void connectOwner(),{once:true});
 async function submitWork(request,approval='explicit-click'){
- if(!ownerReady||!ownerHeaders)throw Error('Robot Brain needs your verified owner connection.');
+ const headers=await verifiedOwnerHeaders();
+ if(!brainTools)throw Error('Bubbles Brain tool helpers are not loaded.');
  if(workButton.disabled)throw Error('A work request is already being submitted.');
  if(!request)throw Error('Describe the repository work first.');
  workButton.disabled=true;workStatus.textContent='Sending your approved task to the owner inbox…';
  try{
-  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(request));
+  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(new Date().toISOString().slice(0,10)+'|'+request.toLowerCase().replace(/\s+/g,' ').trim()));
   const submission=[...new Uint8Array(digest)].map(n=>n.toString(16).padStart(2,'0')).join('');
-  const response=await fetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},signal:AbortSignal.timeout(30000),body:JSON.stringify({source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,context:{kind:'robot-directions',submission_id:submission,requested_role:config.role,approval,repository_writes:'require-github-authorization'}})});
+  const response=await fetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},signal:AbortSignal.timeout(30000),body:JSON.stringify({source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,context:{kind:'robot-directions',submission_id:submission,requested_role:config.role,approval,repository_writes:'require-github-authorization'}})});
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||result.message||'No confirmed ticket'));
-  const job={id:'TASK-1',agent:'greenbeans',color:'green',team:['greenbeans','pink-panther','purple-pearl'],repository:'www-infinity4/QuantaPhi',status:'queued',title:request.slice(0,180),instructions:request,acceptance:['Implement the requested source behavior and pass focused regression checks. Report missing runtime verification separately.'],dependencies:[]};
-  const updated=await fetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},signal:AbortSignal.timeout(20000),body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify([job]),context:{...result.ticket.context,color_jobs:[job]}})});
-  const ready=await updated.json();if(!updated.ok||!ready.ok)throw Error(ready.error||'Ticket saved but not ready; open Robot Brain to finish routing.');
-  workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs:[job]}}));
-  workStatus.textContent='Work ticket '+result.ticket.id+' is ready for the authenticated build runner. Follow its real progress in Robot Brain.';return result.ticket.id;
+  const existingJobs=result.ticket.context?.color_jobs;
+  if(result.deduplicated&&Array.isArray(existingJobs)&&existingJobs.length){
+   workText.value='';
+   workStatus.textContent='Robot Brain ticket '+result.ticket.id+' already exists ('+result.ticket.status+'). No duplicate jobs created.';
+   return result.ticket.id;
+  }
+  if(!['draft','ready','blocked'].includes(result.ticket.status))throw Error('Existing ticket '+result.ticket.id+' is '+result.ticket.status+'; inspect progress in Robot Brain.');
+  const jobs=brainTools.makeJobs(request);
+  const updated=await fetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...headers,'Content-Type':'application/json'},signal:AbortSignal.timeout(20000),body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify(jobs),context:{...result.ticket.context,color_jobs:jobs}})});
+  const ready=await updated.json().catch(()=>({}));if(!updated.ok||!ready.ok)throw Error(ready.error||'Ticket saved as a draft but not ready; check Robot Brain.');
+  workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs}}));
+  workStatus.textContent='Robot Brain ticket '+result.ticket.id+' confirmed ready with '+jobs.length+' queued jobs. No execution is claimed yet.';return result.ticket.id;
  }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145);throw error}
  finally{workButton.disabled=false}
 }
