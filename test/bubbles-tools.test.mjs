@@ -1,10 +1,16 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker,{chooseTool,parseHeadlines} from '../workers/bubbles-tools/worker.mjs';
+import worker,{chooseTool,parseHeadlines,reasoningFor} from '../workers/bubbles-tools/worker.mjs';
 test('spoken commands select actual tools, ordinary conversation remains chat',()=>{
  assert.equal(chooseTool('Check Google News and tell me the headlines'),'news.headlines');
  assert.equal(chooseTool('Create a GitHub repo called Rain'),'github.create_repository');
  assert.equal(chooseTool('Explain this design'),'oracle.chat');
+});
+test('reasoning level comes from the actual spoken request, not injected persona text',()=>{
+ assert.equal(reasoningFor('Hello, what is your name?'),'medium');
+ assert.equal(reasoningFor('How are you today?'),'medium');
+ assert.equal(reasoningFor('Please debug my website microphone and update its voice interface'),'high');
+ assert.equal(reasoningFor('Analyze the repository build architecture'),'high');
 });
 test('headlines require dated current Google News links, deduplicate and reject invented destinations',()=>{
  const now=Date.parse('2026-10-12T02:00:00Z');
@@ -24,8 +30,28 @@ test('foreign website origins cannot invoke assistant tools',async()=>{
 });
 test('ordinary conversation uses GPT OSS and reports the actual model',async()=>{
  let used=false;
- const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{AI:{run:async(model,options)=>{used=true;assert.equal(model,'@cf/openai/gpt-oss-120b');assert.match(options.messages[1].content,/hello/);return {response:'Hello'};}}});
+ const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{AI:{run:async(model,options)=>{used=true;assert.equal(model,'@cf/openai/gpt-oss-120b');assert.equal(options.reasoning_effort,'medium');assert.equal(options.max_tokens,1800);assert.match(options.messages[1].content,/hello/);return {response:'Hello'};}}});
  const body=await r.json();assert.equal(used,true);assert.equal(body.output,'Hello');assert.equal(body.model,'@cf/openai/gpt-oss-120b');
+});
+test('website repair requests get high reasoning and a larger output budget',async()=>{
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({
+   request:'Please debug my website microphone and fix the voice interface',
+   input:'Persona instructions contain no actual user request; this is a difficult technical issue.'
+ })});
+ const result=await worker.fetch(req,{AI:{run:async(model,options)=>{
+   assert.equal(model,'@cf/openai/gpt-oss-120b');
+   assert.equal(options.reasoning_effort,'high');
+   assert.equal(options.max_tokens,3000);
+   assert.match(options.messages[0].content,/only verified tool receipts/);
+   return {response:'The request needs a verified repository repair.'};
+ }}});
+ assert.equal(result.status,200);assert.match((await result.json()).output,/verified repository repair/);
+});
+test('health reports actual GPT availability, not an unrelated Oracle binding',async()=>{
+ const one=await worker.fetch(new Request('https://tools/health'),{ORACLE:{}});
+ assert.equal((await one.json()).tools.chat,false);
+ const two=await worker.fetch(new Request('https://tools/health'),{AI:{run(){}}});
+ assert.equal((await two.json()).tools.chat,true);
 });
 test('missing GPT binding fails without falling back to canned conversation',async()=>{
  const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{});
