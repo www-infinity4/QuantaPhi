@@ -223,7 +223,7 @@ test('reply actions take notes and prepare work without sending unapproved robot
  const history=JSON.parse(values.get('quantaphi:bubbles:history:v1:work-cards'));
  assert.equal(history.length,2);
  assert.equal(history[0].role,'user');
- get('button','Clear chat').handlers.click();
+ get('button','Clear this view').handlers.click();
  assert.equal(values.has('quantaphi:bubbles:history:v1:work-cards'),false);
  assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'clearing chat never destroys notes');
 });

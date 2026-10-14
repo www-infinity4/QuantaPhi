@@ -1,3 +1,4 @@
+import {conversationMemory} from './conversation-memory.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
 import { evidenceBucket } from './evidence-db.mjs';
@@ -589,6 +590,16 @@ export default{
     const response=await clock.fetch('https://clock.internal/owner/session-create',{method:'POST',body:JSON.stringify({userId:state.user.id})});
     return output(request,await response.json(),response.ok?200:404);
    }catch{return output(request,{ok:false,error:'wallet_service_unreachable'},503)}
+  }
+  if(path==='/owner/conversation'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
+   try{
+    const raw=await request.text();if(raw.length>128000)return output(request,{ok:false,error:'request_too_large'},413);
+    return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
+   }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
   }
   if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/memory/status'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');

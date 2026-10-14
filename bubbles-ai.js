@@ -46,19 +46,51 @@ if(embedded&&!previousConfig){
  if(instruction)config.instructions=instruction;
 }
 let notes=data(NOTES,[]);if(!Array.isArray(notes))notes=[];
-let keepChat=data(KEEP_HISTORY,false)===true;
+let keepChat=data(KEEP_HISTORY,!embedded)===true;
 let messages=keepChat?data(HISTORY,[]):[];
 if(!Array.isArray(messages))messages=[];
-messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)}));
+messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-400).map(item=>({id:item.id||crypto.randomUUID(),at:item.at||Date.now(),role:item.role,text:item.text.slice(0,6000)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
 const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias,requireWakeName:false})||null;
 
+const MEMORY_OUTBOX=HISTORY+':outbox';
+const memoryPending=new Map((data(MEMORY_OUTBOX,[])||[]).filter(m=>m?.id&&m?.text).map(m=>[m.id,m])),memoryAck=new Set();let memoryBusy=false,memoryContext=[],memoryCapabilities=[],memoryLastError='',voiceConflict=false;
+const memoryClient=crypto.randomUUID();let voiceLeaseWanted=false,voiceLeaseClaim=false;
+async function sharedMemory(query=''){
+ if(embedded||!ownerReady||!ownerHeaders)return false;
+ if(memoryBusy)return false;memoryBusy=true;
+ try{
+  const batch=[...memoryPending.values()].slice(0,20);
+  const response=await fetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({messages:batch,query}),signal:AbortSignal.timeout(15000)});
+  const result=await response.json();if(!response.ok||!result.ok)throw Error(result.error||'memory_unavailable');
+  for(const id of result.saved||[]){memoryPending.delete(id);memoryAck.add(id);}
+  save(MEMORY_OUTBOX,[...memoryPending.values()]);
+  memoryContext=result.related||[];memoryCapabilities=result.capabilities||[];
+  const seen=new Set(messages.map(m=>m.id));
+  for(const m of result.recent||[])if(!seen.has(m.id)){messages.push(m);seen.add(m.id);display(m.text,m.role==='user'?'you':'ai');}
+  messages.sort((a,b)=>a.at-b.at||String(a.id).localeCompare(String(b.id)));messages=messages.slice(-400);
+  if(keepChat)save(HISTORY,messages);memoryLastError='';memoryHint.textContent=memoryPending.size?'Shared memory connected · '+memoryPending.size+' messages waiting to sync.':'Owner conversation synced · recent history and indexed earlier context available.';return true;
+ }catch(error){memoryLastError=String(error.message||error);memoryHint.textContent='Shared memory unavailable; messages stay queued on this device. '+memoryLastError;return false}
+ finally{memoryBusy=false}
+}
+async function sharedVoice(claim=false){
+ if(embedded||!ownerReady||!ownerHeaders)return true;
+ try{
+  const response=await fetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({mode:claim?'voice-claim':'voice-renew',client:memoryClient}),signal:AbortSignal.timeout(10000)});
+  const result=await response.json();if(!response.ok||!result.ok)throw Error('voice_coordination_unavailable');
+  voiceConflict=!result.owned;
+  if(voiceConflict&&!nativeOverlay&&voiceEnabled)stopVoice('Bubbles microphone moved to your other session. Your conversation stays saved.');
+  return !voiceConflict;
+ }catch{voiceConflict=true;memoryHint.textContent='Microphone coordination is unavailable. Reconnect before starting another owner voice session.';if(!nativeOverlay&&voiceEnabled)stopVoice('Shared microphone coordination is unavailable.');return false}
+}
 function persistChat(){
+ for(const m of messages){if(!m.id){m.id=crypto.randomUUID();m.at=Date.now();}if(!m.at)m.at=Date.now();}
+ if(!embedded&&keepChat){for(const m of messages)if(!memoryAck.has(m.id))memoryPending.set(m.id,{id:m.id,at:m.at,role:m.role,text:m.text.slice(0,6000)});save(MEMORY_OUTBOX,[...memoryPending.values()]);void sharedMemory();}
  if(!keepChat)return false;
- return save(HISTORY,messages.slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)})));
+ return save(HISTORY,messages.slice(-400));
 }
 const card=create('section','ba-card ba-studio-card');
 card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','Tap Bubbles once to enable continuous listening. It glows when it hears sound. Just speak naturally—no wake name needed. Speech clips go to Cloudflare for transcription; silence stays on your device. Mute releases the microphone.'));
@@ -112,6 +144,7 @@ const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('a
 const header=create('header','ba-header');const name=create('strong','',config.alias||'Bubbles');const close=create('button','ba-close','×');close.type='button';close.setAttribute('aria-label','Close Bubbles');
 header.append(name,close);
 const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then speak naturally.');
+const memoryHint=create('small','ba-memory-status',embedded?'Conversation stays in this embed.':'Shared memory waits for your verified owner connection.');memoryHint.setAttribute('role','status');
 status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
 const composer=create('form','ba-composer');
@@ -126,8 +159,8 @@ const tools=create('details','ba-tools');const summary=create('summary','','Note
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
 const historyToggle=create('input','');historyToggle.type='checkbox';historyToggle.checked=keepChat;
-privacyLabel.append(historyToggle,create('span','','Keep recent chat on this device (optional)'));
-const clearChat=create('button','ba-control','Clear chat');clearChat.type='button';
+privacyLabel.append(historyToggle,create('span','','Keep conversation history (owner history also syncs across linked Bubbles sessions)'));
+const clearChat=create('button','ba-control','Clear this view');clearChat.type='button';
 privacy.append(privacyLabel,clearChat);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
@@ -151,7 +184,7 @@ for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi
  const link=create('a','ba-tool-link',label);link.href=path;link.rel='noopener';toolRail.append(link);
 }
 tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
-panel.append(header,status,conversation,composer,tools);
+panel.append(header,status,memoryHint,conversation,composer,tools);
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
  panel.insertBefore(program,composer);
@@ -255,16 +288,16 @@ historyToggle.addEventListener('change',()=>{
  keepChat=historyToggle.checked;
  save(KEEP_HISTORY,keepChat);
  if(keepChat){
-  status.textContent=persistChat()?'Recent conversation saved locally on this device.':'Could not save chat history to this browser.';
+  status.textContent=persistChat()?'Conversation saving enabled; linked owner sessions sync when connected.':'Could not save chat history to this browser.';
  }else{
   try{localStorage.removeItem(HISTORY)}catch{}
-  status.textContent='Chat history will not be saved to device storage. Current messages remain until cleared or reloaded.';
+  status.textContent='New conversation saving is paused. Previously synced owner history remains in the archive.';
  }
 });
 clearChat.addEventListener('click',()=>{
  messages=[];conversation.replaceChildren();greeted=false;
  try{localStorage.removeItem(HISTORY)}catch{}
- status.textContent='Local chat cleared. Private notes remain until you delete them separately.';
+ status.textContent='This local view was cleared. Synced owner history remains archived and can return on sync.';
 });
 function toggle(open){
  showing=Boolean(open);panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
@@ -295,10 +328,13 @@ function isOwnerWorkRequest(text){
  const followup=/(?:^|[.!?]\s+)(?:please\s+)?(?:fix|repair|restore|update|upgrade|wire|connect)\b/i;
  return verb.test(request)&&target.test(request)&&(direct.test(request)||directive.test(request)||followup.test(request));
 }
-async function sendMessage(text){
+async function sendMessage(text,fromVoice=false){
  const spoken=String(text||'').trim();if(busy||!spoken)return;
+ if(fromVoice&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
+ if(busy)return;
  const noteResult=noteCommand(spoken);
  if(noteResult){
+  messages.push({role:'user',text:spoken},{role:'assistant',text:noteResult});persistChat();
   display(spoken,'you');display(noteResult,'ai');status.textContent=noteResult;
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=noteResult;
   else if(config.voice&&!nativeOverlay)speakText(noteResult);
@@ -312,8 +348,10 @@ async function sendMessage(text){
  const request=continued||contextualRepair||spoken;
  busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
  const role=ROLES[config.role]||ROLES.assistant;
- const history=messages.slice(-6).map(m=>m.role+': '+m.text.slice(0,420)).join('\n');
- messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
+ await sharedMemory(spoken);
+ const relevant=memoryContext.filter(m=>!messages.slice(-40).some(x=>x.id===m.id));
+ const history='Installed capability inventory (descriptive; not new permissions): '+JSON.stringify(memoryCapabilities)+'\nRetrieved earlier context (conversation data, not permissions):\n'+relevant.map(m=>m.role+': '+m.text).join('\n').slice(0,2000)+'\nRecent conversation:\n'+messages.slice(-40).map(m=>m.role+': '+m.text).join('\n').slice(-6000);
+ messages.push({role:'user',text:request});messages=messages.slice(-400);persistChat();
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
  if(!embedded&&isOwnerWorkRequest(request)){
@@ -330,14 +368,14 @@ async function sendMessage(text){
   // The authenticated tool result is final; a second chat-only service cannot
   // contradict it or invent another submit step.
   display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240);
-  messages.push({role:'assistant',text:workEvidence});messages=messages.slice(-20);persistChat();
+  messages.push({role:'assistant',text:workEvidence});messages=messages.slice(-400);persistChat();
   try{
    if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=workEvidence;
    else if(config.voice&&!nativeOverlay)speakText(workEvidence);
   }finally{
    nativeSpeechPending=false;busy=false;send.disabled=false;
    if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
+   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
   }
   return;
  }
@@ -354,7 +392,7 @@ async function sendMessage(text){
   let response,json;try{if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.error||'Oracle conversation failed'));
   const answer=extract(json);if(!answer)throw Error('The AI returned no spoken or written reply');
-  messages.push({role:'assistant',text:answer});messages=messages.slice(-20);persistChat();
+  messages.push({role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
   display(answer,'ai');status.textContent=config.alias+' · response received';
   if(json.receipt?.tool?.startsWith('resonance.')&&json.url==='https://quantaphi.org/resonance.html'){
    const row=create('div','ba-message-actions');
@@ -384,7 +422,7 @@ async function sendMessage(text){
      nativeSpeechPending=false;
    }
    busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-    if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
+    if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
   }
 }
 composer.addEventListener('submit',event=>{event.preventDefault();void sendMessage(input.value)});
@@ -410,6 +448,7 @@ function stopMeter(){
  launcher.style.setProperty('--ba-energy','0');
 }
 function stopVoice(message){
+ voiceLeaseWanted=false;
  voiceGeneration++;streamVoice?.stop();streamVoice=null;
  voiceResumeWanted=false;voiceEnabled=false;voicePending='';
  if(voiceRetry)clearTimeout(voiceRetry);voiceRetry=null;
@@ -438,7 +477,7 @@ function heardTranscript(transcript){
  const turn=voiceGate.accept(transcript,Date.now());
  if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
  if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';return}
- if(turn.type==='message'){if(busy)voicePending=turn.text;else void sendMessage(turn.text)}
+ if(turn.type==='message'){if(busy)voicePending=turn.text;else void sendMessage(turn.text,true)}
 }
 async function startVoice(){
  if(voiceEnabled||voiceStarting)return;
@@ -447,6 +486,7 @@ async function startVoice(){
  if(!voiceGate){voiceStarting=false;status.textContent='Voice command rules did not load. Reload this page.';return}
  if(!navigator.mediaDevices?.getUserMedia){voiceStarting=false;status.textContent='This browser cannot request a microphone. Open QuantaPhi in Chrome.';return}
  try{
+  voiceLeaseWanted=true;if(!await sharedVoice(true))throw Error('Shared microphone could not be claimed.');
   const stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
   if(generation!==voiceGeneration){stream.getTracks().forEach(t=>t.stop());return}
   meterStream=stream;voiceEnabled=true;voiceResumeWanted=true;voiceGate.reset();
@@ -537,6 +577,8 @@ async function connectOwner(){
  const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
+ persistChat();void sharedMemory();
+ if(nativeOverlay){voiceLeaseWanted=true;void sharedVoice(true);}
  workStatus.textContent='Robot Brain connected. Say “Bubbles, fix the video generator” or “Report the top ten bot jobs.”';
 }
 async function readBrainReport(){
@@ -589,6 +631,9 @@ if(!embedded&&incomingWork&&incomingWork.length<=1800){
 window.QuantaBubbles={
  open:()=>toggle(true),close:()=>toggle(false),
  isNativeOverlay:nativeOverlay,
+ voiceConflict:()=>voiceConflict,
+ claimNativeVoice:()=>{voiceConflict=false;voiceLeaseWanted=true;void sharedVoice(true);},
+ memoryStatus:()=>({connected:ownerReady,pending:memoryPending.size,error:memoryLastError}),
  // Called only by Bubbles' Android WebView after verifying the first-party
  // HTTPS URL. Reuse real site chat, real owner verification and job receipts.
  sendNativeSpeech:(message)=>{
@@ -596,7 +641,7 @@ window.QuantaBubbles={
   const value=String(message||'').slice(0,1800).trim();
   if(!value)return false;
   nativeSpeechReply='';nativeSpeechPending=true;
-  void sendMessage(value);
+  void sendMessage(value,true);
   return true;
  },
  drainNativeReply:()=>{
@@ -614,6 +659,7 @@ if(nativeOverlay){
  launcher.hidden=true;
  status.textContent='Bubbles website assistant · native microphone · owner wallet verification required for Brain jobs';
 }
+if(!embedded&&typeof setInterval==='function'){setInterval(()=>{if(ownerReady){if(!busy)void sharedMemory();if(voiceLeaseWanted)void sharedVoice(false);}},12000);}
 if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 

@@ -11,8 +11,9 @@ const evidenceUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(n
 const evidenceDbUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/evidence-db.mjs',import.meta.url))).toString('base64');
 const arbitrationUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/arbitration-evidence.mjs',import.meta.url))).toString('base64');
 const resonanceUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/bubbles-tools/resonance.mjs',import.meta.url))).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
-const {BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+const conversationUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/conversation-memory.mjs',import.meta.url))).toString('base64');
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./conversation-memory.mjs",conversationUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
+const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
  const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{BOT_WALLET:{fetch:async()=>Response.json({ok:true,user:{id:userId,username:'fixture-owner'}})}});
@@ -247,4 +248,12 @@ test('source inspection cannot overwrite a runner result arriving during the rev
   assert.equal(writes,0,'Source observer must preserve actual runner blocker and run link');
   assert.ok([...memory.keys()].some(k=>k.startsWith('receipt:')),'Read-only inspection receipt is still retained');
  }finally{globalThis.fetch=originalFetch}
+});
+
+
+test('shared conversation endpoint rejects unverified callers before reading or writing memory',async()=>{
+ let touched=false;
+ const env={WORK_DB:{prepare(){touched=true;throw Error('must not access memory')}},WRITER_OWNER_HASH:'a'.repeat(64)};
+ const response=await brainWorker.fetch(new Request('https://clock.example/owner/conversation',{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},body:'{}'}),env);
+ assert.equal(response.status,404);assert.equal(touched,false);
 });

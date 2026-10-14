@@ -409,9 +409,13 @@ public final class BubblesService extends Service {
         stopRecognition();
         state("muted", 0);
     }
+    void pauseSharedMicrophone() {
+        if (!muted) { silenceReply(); muteSession(); }
+    }
     private void resumeSession() {
         if (!connected) return;
         muted = false;
+        if (oracleWindow != null) oracleWindow.claimMicrophone();
         activeUntil = 0L;
         lastTranscript = ""; retries = 0;
         beginListening();
