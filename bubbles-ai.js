@@ -17,6 +17,17 @@ const nativeOverlay=!embedded&&params.get('nativeOverlay')==='1';
 // Native Android uses the identical QuantaPhi website assistant and owner-wallet
 // gates. It must not copy Chrome cookies or obtain owner rights from a query string.
 let nativeSpeechReply='',nativeSpeechPending=false,noteTaking=false;
+let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=null;
+function nativeChatGPT(prompt){
+ if(!nativeOverlay||!nativeGPTAvailable)return Promise.reject(Error('Android ChatGPT plan is not connected'));
+ if(nativeGPTRequest)return Promise.reject(Error('Another ChatGPT response is in progress'));
+ return new Promise((resolve,reject)=>{
+  const id=crypto.randomUUID();
+  const timeout=setTimeout(()=>{if(nativeGPTRequest?.id===id){nativeGPTRequest=null;reject(Error('Android ChatGPT response timed out'))}},90000);
+  nativeGPTRequest={id,prompt:String(prompt).slice(0,18000),resolve(value){clearTimeout(timeout);resolve(value)},
+   reject(error){clearTimeout(timeout);reject(error)},taken:false};
+ });
+}
 if(nativeOverlay)document.documentElement.classList.add('bubbles-native-overlay');
 const bubbleId=embedded?(String(params.get('id')||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,48)||'embedded'):'';
 const NOTES='quantaphi:bubbles:notes:v1'+(bubbleId?':'+bubbleId:'');
@@ -130,7 +141,14 @@ const provider=create('p','ba-muted','Live now: Oracle Cloudflare AI. ChatGPT an
 const openai=create('a','ba-link','ChatGPT sign-in requirements ↗');openai.href='https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt';openai.target='_blank';openai.rel='noopener noreferrer';
 const claude=create('a','ba-link','Claude third-party API requirements ↗');claude.href='https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account';claude.target='_blank';claude.rel='noopener noreferrer';
 const github=create('a','ba-link','GitHub App permission model ↗');github.href='https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps';github.target='_blank';github.rel='noopener noreferrer';
-connections.append(provider,openai,claude,github);
+const gptConnect=create('button','ba-control ba-chatgpt-login','Continue with ChatGPT');
+gptConnect.type='button';gptConnect.hidden=embedded;
+const gptStatus=create('p','ba-muted','ChatGPT identity is separate from QuantaPhi wallet and does not share past ChatGPT conversations or memory.');
+gptConnect.addEventListener('click',()=>{
+ if(nativeOverlay){nativeGPTSignInRequested=true;gptStatus.textContent='Opening the native Android ChatGPT permission flow. The website never receives your sign-in tokens.'}
+ else{gptStatus.textContent='ChatGPT website sign-in requires an approved OpenAI OAuth client ID for QuantaPhi. Until registered, Bubbles uses Oracle; Android Bubbles has its own supported device-local sign-in.';}
+});
+connections.append(provider,gptConnect,gptStatus,openai,claude,github);
 card.append(edit,connections);
 const publishing=create('div','ba-publish');
 publishing.append(create('strong','','Publish your bubble'));
@@ -456,7 +474,12 @@ async function sendMessage(text,fromVoice=false){
  try{
   const detailed=isOwnerWorkRequest(request)||/\b(?:analy[sz]e|diagnose|architecture|debug|design|research|thorough|compare|deeply|repository)\b/i.test(request);
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),detailed?60000:38000);
-  let response,json;try{if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}
+  let response,json;try{
+  if(nativeOverlay&&nativeGPTAvailable&&!config.privateContext){
+   try{const output=await nativeChatGPT(prompt);response={ok:true};json={ok:true,output,provider:'Android ChatGPT plan'};gptStatus.textContent='Response generated using the authorized ChatGPT plan on this phone.'}
+   catch(error){nativeGPTAvailable=false;gptStatus.textContent='Android ChatGPT unavailable; using Oracle: '+String(error.message||error).slice(0,90);
+    response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}
+  }else if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.error||'Oracle conversation failed'));
   const answer=extract(json);if(!answer)throw Error('The AI returned no spoken or written reply');
   messages.push({role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
@@ -700,6 +723,24 @@ if(!embedded&&incomingWork&&incomingWork.length<=1800){
 }
 window.QuantaBubbles={
  open:()=>toggle(true),close:()=>toggle(false),
+ setNativeGPTAvailable:(available)=>{
+  if(!nativeOverlay)return false;
+  nativeGPTAvailable=available===true;
+  gptStatus.textContent=nativeGPTAvailable?'ChatGPT plan connected in this Android app · local inference available.':'ChatGPT is not connected on this Android device. Tap Continue with ChatGPT to authorize.';
+  return true;
+ },
+ takeNativeGPTLogin:()=>{if(!nativeOverlay||!nativeGPTSignInRequested)return false;nativeGPTSignInRequested=false;return true;},
+ drainNativeGPTRequest:()=>{
+  if(!nativeOverlay||!nativeGPTRequest||nativeGPTRequest.taken)return '';
+  nativeGPTRequest.taken=true;return JSON.stringify({id:nativeGPTRequest.id,prompt:nativeGPTRequest.prompt});
+ },
+ finishNativeGPTRequest:(id,output,error)=>{
+  if(!nativeOverlay||!nativeGPTRequest||nativeGPTRequest.id!==id)return false;
+  const request=nativeGPTRequest;nativeGPTRequest=null;
+  if(error)request.reject(Error(String(error).slice(0,150)));
+  else request.resolve(String(output||'').slice(0,16000));
+  return true;
+ },
  isNativeOverlay:nativeOverlay,
  voiceConflict:()=>voiceConflict,
  claimNativeVoice:()=>{voiceConflict=false;voiceLeaseWanted=true;void sharedVoice(true);},
