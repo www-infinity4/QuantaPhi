@@ -287,7 +287,10 @@ final class FloatingOracleWindow {
         }
     }
     boolean sendSpoken(String text) {
-        if (!websiteReady || website == null) return false;
+        if (website == null) return false;
+        // Keep speech on the shared assistant while its first-party page loads.
+        // Falling back here previously sent owners to an unrelated submit button.
+        if (!websiteReady) status.setText("Connecting to QuantaPhi Bubbles; holding your request…");
         pendingSpeech = String.valueOf(text).trim().substring(0, Math.min(1800, text.trim().length()));
         pendingSince = android.os.SystemClock.elapsedRealtime();
         deliverQueuedSpeech();
