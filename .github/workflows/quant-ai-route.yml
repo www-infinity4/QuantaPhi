@@ -4,6 +4,7 @@ on:
     paths:
       - workers/quantaphi-site/worker.js
       - test/quant-ai-routing.test.cjs
+      - test/site-source-release.test.cjs
       - .github/workflows/quant-ai-route.yml
   push:
     branches: [main]
@@ -22,4 +23,4 @@ jobs:
         with:
           node-version: '22'
       - run: node --check workers/quantaphi-site/worker.js
-      - run: node --test test/quant-ai-routing.test.cjs test/suite-routing.test.cjs test/shoplc-embed.test.cjs
+      - run: node --test test/quant-ai-routing.test.cjs test/suite-routing.test.cjs test/shoplc-embed.test.cjs test/site-source-release.test.cjs
