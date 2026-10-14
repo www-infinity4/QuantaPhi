@@ -62,6 +62,7 @@ public final class BubblesService extends Service {
     public static final String ACTION_SAVE_AUDIO = "org.quantaphi.bubbles.SAVE_AUDIO";
     private final VoiceRecording recording = new VoiceRecording();
     private String recordedWords = "";
+    private boolean pendingAudioRecording = false;
     public static final String ACTION_STOP = "org.quantaphi.bubbles.STOP";
     private static final int NOTIFY_ID = 511;
     private static final String CHANNEL = "bubbles_voice";
@@ -130,15 +131,8 @@ public final class BubblesService extends Service {
                 }
             } else if (intent != null && ACTION_RECORD.equals(intent.getAction())) {
                 if (muted) resumeSession();
-                if (!captureRunning) {
-                    Toast.makeText(this, "Wait until Bubbles shows listening, then press Record sound again.", Toast.LENGTH_LONG).show();
-                    return START_NOT_STICKY;
-                }
-                try {
-                    recording.start(new java.io.File(getFilesDir(), "captures"));
-                    recordedWords = "";
-                    BrainNotes.prefs(this).edit().putString("audio_state", "Recording microphone sound").apply();
-                } catch (Exception error) { Toast.makeText(this, error.getMessage(), Toast.LENGTH_LONG).show(); }
+                pendingAudioRecording = true;
+                if (captureRunning) beginAudioRecording(); else beginListening();
             } else if (intent != null && ACTION_SAVE_AUDIO.equals(intent.getAction())) {
                 saveAudio();
             }
@@ -165,6 +159,7 @@ public final class BubblesService extends Service {
             bubbleLayout.x = 14; bubbleLayout.y = 240;
             manager.addView(orb, bubbleLayout);
             connected = true;
+            pendingAudioRecording = intent != null && ACTION_RECORD.equals(intent.getAction());
             muted = false;
             beginListening();
             if (intent != null && ACTION_TEXT.equals(intent.getAction())) {
@@ -232,6 +227,7 @@ public final class BubblesService extends Service {
             final Recognizer decoder = new Recognizer(voiceModel, 16000f);
             input.startRecording();
             captureRunning = true;
+            if (pendingAudioRecording) beginAudioRecording();
             state("listening", .12f);
             audioThread = new Thread(() -> {
                 short[] samples = new short[1600];
@@ -280,7 +276,16 @@ public final class BubblesService extends Service {
         }
     }
 
+    private void beginAudioRecording() {
+        pendingAudioRecording = false;
+        try {
+            recording.start(new java.io.File(getFilesDir(), "captures"));
+            recordedWords = "";
+            BrainNotes.prefs(this).edit().putString("audio_state", "Recording microphone sound").apply();
+        } catch (Exception error) { Toast.makeText(this, error.getMessage(), Toast.LENGTH_LONG).show(); }
+    }
     private void saveAudio() {
+        pendingAudioRecording = false;
         try {
             java.io.File file = recording.finish();
             if (file != null) BrainNotes.prefs(this).edit()
