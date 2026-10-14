@@ -410,7 +410,13 @@ public final class BubblesService extends Service {
                 + "You see only selected visible app text; never claim complete history or device control. "
                 + "\nRecent notes (included only by user setting):\n"+notes
                 + "\nThe person said: " + question;
-        if (ChatGPTSignIn.hasPlan(this)) {
+        // Even when a user has ChatGPT plan access, deterministic local tools
+        // must go to the Bubbles tool gateway, not be guessed by a chat model.
+        String normalized = question.toLowerCase(java.util.Locale.ROOT);
+        boolean scientificTool = (normalized.contains("resonance") || normalized.contains("resonator")
+                || normalized.contains("resonant frequency") || normalized.contains("lc tank"))
+                && normalized.matches("(?s).*\\b(calculate|compute|find|solve|open|show|launch|pull up|bring up|what is|what's)\\b.*");
+        if (ChatGPTSignIn.hasPlan(this) && !scientificTool) {
             // ChatGPT OAuth credentials never leave this device or visit our Worker.
             // An inference error is reported instead of silently switching providers.
             return ChatGPTSignIn.ask(this, prompt);
