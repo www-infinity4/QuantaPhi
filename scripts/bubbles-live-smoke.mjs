@@ -3,6 +3,7 @@
  */
 import {mkdir,writeFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
+import {hasUnverifiedActionClaim} from '../workers/bubbles-tools/worker.mjs';
 
 const TOOLS='https://bubbles-tools.marvaseater.workers.dev';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
@@ -67,6 +68,10 @@ export async function runSmoke({fetcher=fetch,full=false}={}) {
     'Bubbles GPT response unavailable: HTTP '+chat.status+' '+String(answer.error||''));
    check(answer.model==='@cf/openai/gpt-oss-120b','Bubbles model did not match deployed source');
    check(answer.output.length>35,'Bubbles output too short for useful engineering guidance');
+   check(!hasUnverifiedActionClaim('Continue building QuantaPhi robot brain.',answer.output),
+    'Bubbles claimed repository edits/deployment without an authenticated action receipt');
+   check(answer.receipt?.repositoryActionsVerified===false,
+    'Bubbles public chat receipt must clearly exclude verified repository actions');
    check(!/where should (?:we|i) focus|let me know which areas?|which areas? would you like/i.test(answer.output),
     'Bubbles returned a generic choose-a-focus menu');
    check(answer.receipt?.minted===false,'Public chat unexpectedly claims a token mint');

@@ -301,7 +301,7 @@ async function sendMessage(text){
    }
    conversation.append(row);
   }
-  if(json.receipt)status.textContent=config.alias+' · '+json.receipt.tool+' · '+json.receipt.status;
+  if(json.receipt)status.textContent=json.receipt.repositoryActionsVerified===false?config.alias+' · AI answer only · no bot work verified':config.alias+' · '+json.receipt.tool+' · '+json.receipt.status;
   if(config.voice)speakText(answer);
  }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message}
  finally{busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');

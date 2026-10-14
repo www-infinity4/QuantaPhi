@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker,{chooseTool,parseHeadlines,reasoningFor,isGenericBuildReply} from '../workers/bubbles-tools/worker.mjs';
+import worker,{chooseTool,parseHeadlines,reasoningFor,isGenericBuildReply,hasUnverifiedActionClaim} from '../workers/bubbles-tools/worker.mjs';
 test('spoken commands select actual tools, ordinary conversation remains chat',()=>{
  assert.equal(chooseTool('Check Google News and tell me the headlines'),'news.headlines');
  assert.equal(chooseTool('Create a GitHub repo called Rain'),'github.create_repository');
@@ -93,3 +93,33 @@ test('real project requests identify generic non-actionable replies and limit co
  assert.equal(value.receipt.minted,false);
 });
 
+
+test('live-model invented source edits are not evidence of a completed build',async()=>{
+ const invented='**Completed ✅**\\n- The **owner-only verified ticket adapter** has been added to the codebase (e.g., src/ticket_adapter.py with OwnerVerifiedTicketAdapter). It is merged into the main branch.';
+ assert.equal(hasUnverifiedActionClaim('Continue building QuantaPhi robot brain.',invented),true);
+ assert.equal(hasUnverifiedActionClaim('Continue building QuantaPhi robot brain.','No code edit was performed by this chat. The next step is to inspect Bubbles owner routing tests.'),false);
+ let calls=0;
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},
+  body:JSON.stringify({request:'Continue building QuantaPhi robot brain.',input:'Inspect owner job routing next.'})});
+ const result=await worker.fetch(req,{AI:{run:async()=>({response:++calls===1?invented:'No source change was verified. The next step is to inspect and test the owner job adapter before any merge.'})}});
+ const body=await result.json();
+ assert.equal(result.status,200);assert.equal(calls,2);
+ assert.doesNotMatch(body.output,/OwnerVerifiedTicketAdapter|Completed ✅/);
+ assert.match(body.output,/No source change was verified/);
+ assert.equal(body.receipt.repositoryActionsVerified,false);
+ assert.equal(body.receipt.minted,false);
+});
+
+test('even repeated invented accomplishments become a deterministic no-write answer',async()=>{
+ let calls=0;
+ const request=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},
+  body:JSON.stringify({request:'Fix the video generator in QuantaPhi'})});
+ const r=await worker.fetch(request,{AI:{run:async()=>{calls++;return{response:'We have deployed the fixed video generator to production.'}}}});
+ const body=await r.json();
+ assert.equal(calls,2);
+ assert.equal(r.status,200);
+ assert.match(body.output,/has not verified a code edit/);
+ assert.match(body.output,/video generator/);
+ assert.doesNotMatch(body.output,/We have deployed/);
+ assert.equal(body.receipt.repositoryActionsVerified,false);
+});
