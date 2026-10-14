@@ -14,7 +14,9 @@ const OWNER_REPOS={
 function classify(utterance){
  const text=String(utterance||'').trim().slice(0,4001);
  if(!text||text.length>4000)return 'chat';
- const report=/\b(?:status|report|progress|activity|top\s*(?:ten|10)|running\s+(?:jobs|tasks)|queued\s+(?:jobs|tasks)|what(?:'s| is| are)\s+(?:the\s+)?(?:bots?|robot brain|pink panther|agents?))\b/i;
+ const addressed=text.replace(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)+/i,'');
+ if(/^(?:do\s+not|don['’]t|never|i\s+(?:do\s+not|don['’]t)\s+(?:want|need)|i\s+(?:want|need)\s+(?:you\s+)?not\s+to)\b/i.test(addressed))return 'chat';
+ const report=/\b(?:status|report|progress(?:ing)?|activity|top\s*(?:ten|10)|running\s+(?:jobs|tasks)|queued\s+(?:jobs|tasks)|what(?:'s| is| are)\s+(?:the\s+)?(?:bots?|robot brain|pink panther|agents?))\b/i;
  const ask=/\b(?:show|give|read|tell|check|list|summari[sz]e|what|how|which|report)\b/i;
  const target=/\b(?:bots?|robot\s*brain|brain|jobs?|tasks?|pink\s*panther|color\s*bots?|agents?|work\s*report)\b/i;
  if(report.test(text)&&ask.test(text)&&target.test(text))return 'report';
@@ -28,6 +30,7 @@ function classify(utterance){
  const makeJob=/\b(?:make|create|add)\s+(?:(?:a|an|the|new)\s+)*(?:job|task)\b.{0,70}\b(?:in|for|to|on)\s+(?:(?:my|the)\s+)?(?:robot\s*brain|brain)\b/i;
  const makeDirective=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:make|create|add)\b/i;
  if(makeJob.test(text)&&(makeDirective.test(text)||directive.test(text))&&!/\b(?:do\s+not|don't|never|not\s+to)\b/i.test(text))return 'queue';
+ if(/^(?:explain|describe|how\s+(?:do|does|did|can|could|would)|why\s+(?:do|does|did)|what\s+(?:is|are|would))\b/i.test(addressed))return 'chat';
  if(dispatch.test(text)||dispatchByName.test(text)||dispatchReverse.test(text))return 'queue';
  if(change.test(text)&&subject.test(text)&&(imperative.test(text)||directive.test(text)))return 'queue';
  return 'chat';
