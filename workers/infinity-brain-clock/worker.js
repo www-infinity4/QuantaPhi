@@ -7,6 +7,7 @@ import { validatePreview } from './preview-contract.mjs';
 import { jobQuant } from './job-quant.mjs';
 import { verifyWindowArbitration } from './arbitration-evidence.mjs';
 import { earnedWork } from './bot-work-policy.mjs';
+import { readAudience } from './audience-report.mjs';
 import { rememberOutcome, recallOutcomes, retryPendingEmbeddings } from './brain-rag-memory.mjs';
 const PERIOD=30000,VERSION='20261010-repository-engine1';
 const REPOS={has:repo=>/^[\w.-]+$/.test(repo)};
@@ -567,6 +568,22 @@ export default{
     const response=await clock.fetch('https://clock.internal/owner/session-create',{method:'POST',body:JSON.stringify({userId:state.user.id})});
     return output(request,await response.json(),response.ok?200:404);
    }catch{return output(request,{ok:false,error:'wallet_service_unreachable'},503)}
+  }
+  if(path==='/owner/audience'&&request.method==='GET'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
+   // No Cloudflare API token or wallet credential is sent to the browser.
+   // This route reads only aggregated snapshots preloaded into existing WORK_DB.
+   try{
+    const q=new URL(request.url).searchParams;
+    const days=Number(q.get('days')||7);
+    const snapshot=await readAudience(env.WORK_DB,{days:Number.isInteger(days)?days:7});
+    return output(request,snapshot);
+   }catch{
+    return output(request,{ok:false,error:'audience_snapshot_unavailable'},503);
+   }
   }
   if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/memory/status'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
