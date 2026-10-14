@@ -225,10 +225,10 @@ function display(text,who,greeting=false){
   bubble.textContent='';let cursor=0;const value=String(text);
   for(const match of value.matchAll(/https?:\/\/[^\s<>"']+/g)){
    const url=match[0].replace(/[),.;!?]+$/,'');
-   bubble.append(document.createTextNode(value.slice(cursor,match.index)));
+   bubble.append(value.slice(cursor,match.index));
    const link=create('a','ba-reply-link',url);link.href=url;link.target='_blank';link.rel='noopener noreferrer';bubble.append(link);cursor=match.index+url.length;
   }
-  bubble.append(document.createTextNode(value.slice(cursor)));
+  bubble.append(value.slice(cursor));
  }
  line.append(bubble);
  if(who!=='you'&&!greeting){
