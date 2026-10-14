@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker,{chooseTool,parseHeadlines,reasoningFor} from '../workers/bubbles-tools/worker.mjs';
+import worker,{chooseTool,parseHeadlines,reasoningFor,isGenericBuildReply} from '../workers/bubbles-tools/worker.mjs';
 test('spoken commands select actual tools, ordinary conversation remains chat',()=>{
  assert.equal(chooseTool('Check Google News and tell me the headlines'),'news.headlines');
  assert.equal(chooseTool('Create a GitHub repo called Rain'),'github.create_repository');
@@ -70,4 +70,25 @@ test('Google failure uses explicitly labelled current source fallback, excluding
   assert.match(body.output,/Google News is unavailable/);assert.match(body.output,/News Phi/);
   assert.equal(body.receipt.provider,'News Phi');
  } finally {globalThis.fetch=original;}
+});
+
+test('real project requests identify generic non-actionable replies and limit correction to one pass',async()=>{
+ const original="I can certainly help you expand the project's code structure. Growth happens step-by-step. Where should we focus our attention next? We could draft more tests. Let me know which areas.";
+ assert.equal(isGenericBuildReply('Continue building out the QuantaPhi robot brain',original),true);
+ assert.equal(isGenericBuildReply('How is the weather today?',original),false);
+ assert.equal(isGenericBuildReply('Repair Bubbles on QuantaPhi','I created no ticket. The minimum change is to update the Bubbles router and verify the owner session.'),false);
+ let calls=0;
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({
+   request:'Continue building out QuantaPhi',input:'Prior approved work was the Bubbles owner action adapter.'
+ })});
+ const resp=await worker.fetch(req,{AI:{run:async()=>{
+   calls++;
+   return {response:calls===1?original:'No repository edit was made by this chat. The next concrete action is to test the owner Bubbles Brain adapter before submitting a verified ticket.'};
+ }}});
+ const value=await resp.json();
+ assert.equal(resp.status,200);
+ assert.equal(calls,2);
+ assert.match(value.output,/test the owner Bubbles Brain adapter/);
+ assert.doesNotMatch(value.output,/Where should we focus/);
+ assert.equal(value.receipt.minted,false);
 });

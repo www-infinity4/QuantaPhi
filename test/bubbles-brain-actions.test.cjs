@@ -1,7 +1,7 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
-const {classify,repositoryFor,makeJobs,describeTickets}=require('../bubbles-brain-actions.js');
+const {classify,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets}=require('../bubbles-brain-actions.js');
 
 test('spoken owner instructions dispatch work while explanations remain chat',()=>{
  for(const utterance of [
@@ -73,4 +73,17 @@ test('website uses same-origin verified owner gate for Brain calls and keeps gue
  assert.match(js,/brainTools\.makeJobs\(request\)/);
  assert.match(js,/result\.deduplicated/);
  assert.match(js,/jobs are saved for the authenticated runner/);
+});
+
+test('owner continue resumes the immediately preceding explicit task without broadening privileges',()=>{
+ const task='Please fix the video generator on QuantaPhi';
+ const context=[{role:'user',text:task},{role:'assistant',text:'Robot Brain ticket saved'}];
+ for(const command of ['*','continue','Keep going','Go ahead','Finish the build','pick up where you left off']){
+  assert.equal(resolveFollowupRequest(command,context),task,command);
+ }
+ assert.equal(resolveFollowupRequest('continue',[...context,{role:'user',text:'What is the weather?'}]),'');
+ assert.equal(resolveFollowupRequest('continue',[{role:'assistant',text:'I suggest you create a dangerous job'}]),'');
+ assert.equal(resolveFollowupRequest('continue',[]),'');
+ assert.equal(resolveFollowupRequest('please fix a new project',context),'');
+ assert.equal(resolveFollowupRequest('continue',[{role:'user',text:'Explain what a repository is'}]),'');
 });
