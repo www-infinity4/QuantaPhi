@@ -53,7 +53,16 @@ async function verify(token){
  try{
   const r=await fetch(HEALTH,{headers,cache:'no-store',signal:AbortSignal.timeout(12000)});
   if(r.ok)return {state:'verified',headers};
-  return {state:r.status===404||r.status===401||r.status===403?'rejected':'unreachable'};
+  if(!(r.status===404||r.status===401||r.status===403))return {state:'unreachable'};
+ }catch{return {state:'unreachable'}}
+ // Recovery keys are checked first; a 64-hex recovery key is not mistaken for
+ // an unused pairing code. Redemption consumes the short-lived code once.
+ if(!/^[a-f0-9]{64}$/.test(token))return {state:'rejected'};
+ try{
+  const r=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/owner/pair/redeem',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({code:token}),signal:AbortSignal.timeout(12000)});
+  const result=await r.json();
+  if(!r.ok||!result.ok||!/^rd_[a-f0-9]{64}$/.test(result.token||''))return {state:r.status>=500?'unreachable':'rejected'};
+  return {state:'verified',headers:{Authorization:'Bearer '+result.token},pairedToken:result.token};
  }catch{return {state:'unreachable'}}
 }
 async function walletIdentity(){
@@ -101,9 +110,9 @@ function unlocked(headers,token,source,expiresAt){
  clearTimeout(retryTimer);
  host.dataset.state='verified';verifiedHeaders=headers;verifiedSource=source;
  const bar=node('div','','rbo-bar');
- const label=node('span',source==='wallet'?'🤖 Robot Brain unlocked with your verified Unified Wallet.':'🤖 Robot Brain unlocked with the existing owner key.');
+ const label=node('span',source==='wallet'?'🤖 Robot Brain unlocked with your verified Unified Wallet.':'🤖 Owner session connected on this device. Bubbles can sync your shared conversation.');
  bar.append(label);
- if(source==='key'){
+ if(source==='key'&&!/^rd_/.test(token||'')){
   const copy=node('button','Copy owner key');copy.type='button';
   const lock=node('button','Lock on this device');lock.type='button';
   const status=node('small','');status.setAttribute('role','status');
@@ -126,10 +135,10 @@ function form(message){
  host.dataset.state='locked';
  const details=node('details','','rbo-gate');
  const summary=node('summary','🔒 Robot Brain · owner access');
- const intro=node('p','Robot Brain checks your Unified Wallet automatically. The older owner key is available only as a recovery method.');
- const label=node('label','Existing owner key (optional)');label.htmlFor='robotBrainOwnerKey';
+ const intro=node('p','Your Unified Wallet is checked automatically. To link another Bubbles session, say “link my APK” on your verified QuantaPhi website, then paste its two-minute pairing code here.');
+ const label=node('label','Owner pairing code or recovery key');label.htmlFor='robotBrainOwnerKey';
  const input=node('input');input.id='robotBrainOwnerKey';input.type='password';input.autocomplete='current-password';input.spellcheck=false;input.maxLength=512;
- const button=node('button','Unlock with existing owner key');button.type='button';
+ const button=node('button','Connect owner session');button.type='button';
  const status=node('p',message||'');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  if(message)details.open=true;
  async function submit(){
@@ -138,7 +147,7 @@ function form(message){
   button.disabled=true;status.textContent='Checking the existing key with Brain…';
   const result=await verify(token);
   button.disabled=false;
-  if(result.state==='verified'){await saveToken(token);input.value='';unlocked(result.headers,token,'key');return}
+  if(result.state==='verified'){const credential=result.pairedToken||token;await saveToken(credential);input.value='';unlocked(result.headers,credential,'key');return}
   status.textContent=result.state==='rejected'?'Brain did not accept this key.':'Brain cannot be reached right now. Please retry.';
  }
  button.addEventListener('click',submit);

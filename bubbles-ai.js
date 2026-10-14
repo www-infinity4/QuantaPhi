@@ -332,6 +332,13 @@ async function sendMessage(text,fromVoice=false){
  const spoken=String(text||'').trim();if(busy||!spoken)return;
  if(fromVoice&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
  if(busy)return;
+ if(!embedded&&/^(?:(?:please|bubbles)[\s,:]+)*(?:pair|link|sync|connect)\b.{0,60}\b(?:apk|android|phone|floating bubble)\b/i.test(spoken)){
+  busy=true;send.disabled=true;let resultText;
+  try{const headers=await verifiedOwnerHeaders();const r=await fetch(BRAIN+'/owner/pair/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',signal:AbortSignal.timeout(15000)});const result=await r.json();if(!r.ok||!result.ok||!/^[a-f0-9]{64}$/.test(result.code||''))throw Error(result.error||'pairing_unavailable');resultText='Open the APK’s Owner access area and paste this into “Owner pairing code or recovery key”, then tap Connect owner session. This one-use code expires in two minutes: '+result.code+'. Once connected, both sessions share your owner conversation. This pairs Bubbles; it does not copy ChatGPT history.';}catch(error){resultText='I could not create the owner pairing code: '+String(error.message||error)+'. Use your verified QuantaPhi owner session at https://quantaphi.org/#robotBrainOwner .';}
+  display(spoken,'you');display(resultText,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:resultText});persistChat();
+  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=resultText;else if(config.voice&&!nativeOverlay)speakText(resultText);
+  nativeSpeechPending=false;busy=false;send.disabled=false;return;
+ }
  const noteResult=noteCommand(spoken);
  if(noteResult){
   messages.push({role:'user',text:spoken},{role:'assistant',text:noteResult});persistChat();

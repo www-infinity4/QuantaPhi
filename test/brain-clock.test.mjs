@@ -257,3 +257,22 @@ test('shared conversation endpoint rejects unverified callers before reading or 
  const response=await brainWorker.fetch(new Request('https://clock.example/owner/conversation',{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},body:'{}'}),env);
  assert.equal(response.status,404);assert.equal(touched,false);
 });
+
+
+test('pairing is single-use, time-limited and remains bound to the verified owner',async()=>{
+ const memory=new Map([['bot-work-recipient',{userId:'owner-one'}]]);let txQueue=Promise.resolve();
+ const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)};
+ storage.transaction=fn=>{const task=txQueue.then(()=>fn(storage));txQueue=task.catch(()=>{});return task;};
+ const clock=new BrainClock({storage},{});
+ const send=(route,body={})=>clock.fetch(new Request('https://clock.internal/owner/'+route,{method:'POST',body:JSON.stringify(body)}));
+ const created=await (await send('pair-create')).json();assert.match(created.code,/^[a-f0-9]{64}$/);
+ const attempts=await Promise.all([send('pair-redeem',{code:created.code}),send('pair-redeem',{code:created.code})]);
+ assert.deepEqual(attempts.map(r=>r.status).sort(),[200,404]);
+ const device=await attempts.find(r=>r.ok).json();assert.match(device.token,/^rd_/);
+ assert.equal((await send('session-check',{token:device.token})).status,200);
+ memory.set('bot-work-recipient',{userId:'other-owner'});
+ assert.equal((await send('session-check',{token:device.token})).status,404);
+ const expired=await (await send('pair-create')).json();
+ const key=memory.get('brain-pair-latest');memory.set(key,{...memory.get(key),expiresAt:Date.now()-1});
+ assert.equal((await send('pair-redeem',{code:expired.code})).status,404);
+});
