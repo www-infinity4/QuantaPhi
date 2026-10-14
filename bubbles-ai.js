@@ -318,7 +318,7 @@ async function sendMessage(text){
  let workEvidence='';
  if(!embedded&&isOwnerWorkRequest(request)){
   workText.value=request;tools.open=true;
-  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence=(continued?'Resumed your last specific work request. ':'')+'Robot Brain receipt: ticket '+ticket.id+' is '+ticket.status+'. '+(ticket.deduplicated?'This job was already recorded; no duplicate created.':'Your request is saved and waiting for the repair runner; you do not need to press another button.')+' Progress: https://quantaphi.org/#robotDirections . No repair or deployment is verified complete.'}
+  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence=(continued?'Continuing your last request. ':'')+(ticket.deduplicated?'This request is already saved. Its recorded status is '+ticket.status+'.':'Your request is saved and waiting for the repair runner; you do not need to press another button.')+' Follow progress here: https://quantaphi.org/#robotDirections . Reference: '+ticket.id+'. The repair is not yet verified finished.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='report'){
   try{workEvidence=await readBrainReport()}
