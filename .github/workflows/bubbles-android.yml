@@ -3,11 +3,13 @@ on:
   pull_request:
     paths:
       - 'android/bubbles-overlay/**'
+      - 'test/bubbles-chatgpt-native.test.cjs'
       - '.github/workflows/bubbles-android.yml'
   push:
     branches: [main]
     paths:
       - 'android/bubbles-overlay/**'
+      - 'test/bubbles-chatgpt-native.test.cjs'
       - '.github/workflows/bubbles-android.yml'
 permissions:
   contents: read
@@ -36,6 +38,8 @@ jobs:
           node-version: '22'
       - name: Verify continuous native microphone contract
         run: node --test test/bubbles-continuous-native.test.cjs
+      - name: Verify ChatGPT OAuth permission and response contract
+        run: node --test test/bubbles-chatgpt-native.test.cjs
       - name: Verify Brain learning policy
         run: |
           mkdir -p /tmp/brain-policy
