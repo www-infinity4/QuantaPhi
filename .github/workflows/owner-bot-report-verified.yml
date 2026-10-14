@@ -1,0 +1,36 @@
+name: Owner Bot Report and Mint Provenance Verification
+on:
+  pull_request:
+    paths:
+      - 'robot-work-report.js'
+      - 'workers/unified-wallet/bot-work-credit.mjs'
+      - 'test/robot-work-report.test.cjs'
+      - 'test/bot-work-credit.test.mjs'
+      - '.github/workflows/owner-bot-report-verified.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'robot-work-report.js'
+      - 'workers/unified-wallet/bot-work-credit.mjs'
+      - 'test/robot-work-report.test.cjs'
+      - 'test/bot-work-credit.test.mjs'
+      - '.github/workflows/owner-bot-report-verified.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse source
+        run: |
+          node --check robot-work-report.js
+          node --check workers/unified-wallet/bot-work-credit.mjs
+      - name: Test source-backed bot reports and actual SQLite mint trigger
+        run: node --test test/robot-work-report.test.cjs test/bot-work-credit.test.mjs test/bot-work-earnings-status.test.mjs test/robot-brain-owner.test.cjs
