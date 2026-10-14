@@ -30,7 +30,7 @@ async function transcribe(request,env) {
   return response(request,{ok:true,text:clean(result.text,2500),provider:'cloudflare-workers-ai',stored:false});
  }catch(error){return response(request,{ok:false,error:error?.message==='invalid_audio'?'invalid_audio':'speech_transcription_failed'},error?.message==='invalid_audio'?400:502)}
 }
-import {calculateResonance,parseResonanceSpeech,describeResonance,CALCULATOR_SOURCE} from './resonance.mjs';
+import {calculateResonance,parseResonanceSpeech,describeResonance,CALCULATOR_SOURCE,CALCULATOR_UI} from './resonance.mjs';
 export function chooseTool(text){
  const request=clean(text).toLowerCase();
  if(/\b(?:open|show|launch|pull\s+up|bring\s+up)\b/.test(request)&&/\b(?:resonator|resonance\s+calculator|resonance\s+engine)\b/.test(request))return 'resonance.open';
@@ -96,15 +96,15 @@ async function execute(request,env,body){
  const question=clean(body.request);if(!question)return response(request,{ok:false,error:'request_required'},400);
  const tool=body.tool==='resonance.calculate'?'resonance.calculate':chooseTool(question),id=crypto.randomUUID();
  const receipt={id,tool,status:'started',createdAt:new Date().toISOString(),kind:'bubbles-tool-result',minted:false};
- if(tool==='resonance.open')return response(request,{ok:true,output:'Open the Infinity Resonance Calculator v3 at '+CALCULATOR_SOURCE+'. Say “calculate resonance at 10 microhenries and 22 picofarads” to run the mathematical tool here.',url:CALCULATOR_SOURCE,receipt:{...receipt,status:'complete',calculatorOpened:false}});
+ if(tool==='resonance.open')return response(request,{ok:true,output:'Open the Infinity Resonance Calculator v3 at '+CALCULATOR_UI+'. Say “calculate resonance at 10 microhenries and 22 picofarads” to run the mathematical tool here.',url:CALCULATOR_UI,receipt:{...receipt,status:'complete',calculatorOpened:false}});
  if(tool==='resonance.calculate'){
   const args=body.args&&typeof body.args==='object'&&!Array.isArray(body.args)?body.args:parseResonanceSpeech(question);
-  if(!args)return response(request,{ok:true,output:'For the resonance calculation, tell me both inductance and capacitance, for example: 10 microhenries and 22 picofarads.',url:CALCULATOR_SOURCE,receipt:{...receipt,status:'needs_input',reason:'inductance_and_capacitance_required'}});
+  if(!args)return response(request,{ok:true,output:'For the resonance calculation, tell me both inductance and capacitance, for example: 10 microhenries and 22 picofarads.',url:CALCULATOR_UI,receipt:{...receipt,status:'needs_input',reason:'inductance_and_capacitance_required'}});
   try{
    const result=calculateResonance(args);
-   return response(request,{ok:true,output:describeResonance(result),url:CALCULATOR_SOURCE,result,receipt:{...receipt,status:'complete',provider:'local-deterministic-engine',repositoryActionsVerified:false}});
+   return response(request,{ok:true,output:describeResonance(result),url:CALCULATOR_UI,result,receipt:{...receipt,status:'complete',provider:'local-deterministic-engine',repositoryActionsVerified:false}});
   }catch(error){
-   return response(request,{ok:true,output:'I could not calculate resonance: '+clean(error?.message,120)+'. Please give positive component values with explicit units.',url:CALCULATOR_SOURCE,receipt:{...receipt,status:'invalid_input',reason:clean(error?.message,120)}});
+   return response(request,{ok:true,output:'I could not calculate resonance: '+clean(error?.message,120)+'. Please give positive component values with explicit units.',url:CALCULATOR_UI,receipt:{...receipt,status:'invalid_input',reason:clean(error?.message,120)}});
   }
  }
  if(tool==='github.create_repository')return response(request,{ok:true,output:'I cannot create that GitHub repository yet. This bubble has no authenticated repository-creation connection. No repository was created or queued.',receipt:{...receipt,status:'blocked',reason:'github_creation_connection_required'}});
