@@ -9,7 +9,7 @@ export const TARGETS=[
 ];
 const SITE='https://quantaphi.org';
 const meaningful=s=>String(s||'').trim().length>0;
-const attr=(tag,name)=>tag.match(new RegExp('\\b'+name+'\\s*=\\s*["\\\']([^"\\\']+)["\\\']','i'))?.[1]||'';
+const attr=(tag,name)=>tag.match(new RegExp("\\b"+name+"\\s*=\\s*([\"'])(.*?)\\1","i"))?.[2]||'';
 const tags=(html,type)=>[...String(html).matchAll(new RegExp('<'+type+'\\b[^>]*>','gi'))].map(x=>x[0]);
 export function inspectPage({html,status,url}){
   const findings=[];const add=(code,detail)=>findings.push({code,detail});
