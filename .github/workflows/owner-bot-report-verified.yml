@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'robot-work-report.js'
+      - 'test/owner-audience-report.test.mjs'
+      - 'workers/infinity-brain-clock/audience-report.mjs'
       - 'workers/unified-wallet/bot-work-credit.mjs'
       - 'test/robot-work-report.test.cjs'
       - 'test/bot-work-credit.test.mjs'
@@ -33,4 +35,4 @@ jobs:
           node --check robot-work-report.js
           node --check workers/unified-wallet/bot-work-credit.mjs
       - name: Test source-backed bot reports and actual SQLite mint trigger
-        run: node --test test/robot-work-report.test.cjs test/bot-work-credit.test.mjs test/bot-work-earnings-status.test.mjs test/robot-brain-owner.test.cjs
+        run: node --test test/robot-work-report.test.cjs test/owner-audience-report.test.mjs test/bot-work-credit.test.mjs test/bot-work-earnings-status.test.mjs test/robot-brain-owner.test.cjs
