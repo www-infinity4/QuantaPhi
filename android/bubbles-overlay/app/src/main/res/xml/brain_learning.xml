@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
     android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged|typeViewScrolled"
-    android:packageNames="com.openai.chatgpt,com.twitter.android,com.google.android.apps.bard"
+    <!-- Events may arrive from any foreground app only while user explicitly
+         enables the service. Automatic learning remains code-allowlisted and
+         opt-in per app; one-shot "read this screen" is user-commanded only. -->
     android:accessibilityFeedbackType="feedbackGeneric"
     android:notificationTimeout="500"
     android:canRetrieveWindowContent="true"
