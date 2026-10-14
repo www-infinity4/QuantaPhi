@@ -28,6 +28,7 @@ const path=require('node:path');
   };
  });
  await page.addScriptTag({path:path.resolve(__dirname,'../phi-image-language.js')});
+ await page.addScriptTag({path:path.resolve(__dirname,'../phi-image-learning.js')});
  await page.addScriptTag({path:path.resolve(__dirname,'../phi-image-builder.js')});
  assert.equal(await page.locator('#pi-exact-text').isVisible(),false);
  assert.equal(await page.locator('.pi-exact-optional').isVisible(),true);
@@ -86,10 +87,10 @@ const path=require('node:path');
   background:getComputedStyle(document.querySelector('.pi-panel')).backgroundImage,
   height:document.querySelector('.pi-mode').getBoundingClientRect().height,
   radius:getComputedStyle(document.querySelector('.pi-mode')).borderRadius,
-  grid:getComputedStyle(document.querySelector('.pi-modes')).display
+  pickerHeight:document.querySelector('#pi-build-type').getBoundingClientRect().height
  }));
  assert.equal(mobile.overflow,false);assert.ok(mobile.height>=44);
- assert.equal(mobile.radius,'999px');assert.equal(mobile.grid,'grid');
+ assert.equal(mobile.radius,'999px');assert.ok(mobile.pickerHeight>=44);
  assert.match(mobile.background,/247, 252, 255/,'The user-facing composer must use the blue palette');
  const primary=await page.locator('[data-pi-action="build"]').evaluate(el=>getComputedStyle(el).backgroundImage);
  assert.match(primary,/23, 105, 182/,'Main button should be blue rather than purple');
@@ -97,7 +98,7 @@ const path=require('node:path');
  // the two requested lines directly from the one description field.
  await page.locator('#pi-text-mode').selectOption('auto');
  await page.locator('.pi-exact-optional summary').click();
- await page.locator('[data-pi-mode="Poster"]').click();
+ await page.locator('#pi-build-type').selectOption('Poster');
  await page.locator('#pi-prompt').fill('Design a mosaic poster for Oracle AI Studio - Mosaic with the phrase "The Intelligence Architecture Solution".');
  await page.locator('[data-pi-action="build"]').click();
  await page.waitForFunction(()=>document.querySelector('#phiImageBuilder').dataset.stage==='finished' && !window.PhiImageBuilder.get().busy);
