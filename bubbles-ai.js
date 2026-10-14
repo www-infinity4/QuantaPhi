@@ -326,7 +326,21 @@ async function sendMessage(text){
  }
  // Show the authoritative receipt immediately, then let GPT explain it.
  // Model latency or failure cannot change whether the Brain job was recorded.
- if(workEvidence){display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240)}
+ if(workEvidence){
+  // The authenticated tool result is final; a second chat-only service cannot
+  // contradict it or invent another submit step.
+  display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240);
+  messages.push({role:'assistant',text:workEvidence});messages=messages.slice(-20);persistChat();
+  try{
+   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=workEvidence;
+   else if(config.voice&&!nativeOverlay)speakText(workEvidence);
+  }finally{
+   nativeSpeechPending=false;busy=false;send.disabled=false;
+   if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
+  }
+  return;
+ }
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',

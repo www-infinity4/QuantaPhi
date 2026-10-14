@@ -120,3 +120,14 @@ test('explicit repository requests route to owner work without turning explanati
  for(const text of ['Start a repo for my new widget','Create a repository called widget-tools','Edit the repo player','Search all my repos and pull together radio widgets'])assert.equal(classify(text),'queue',text);
  for(const text of ['Explain how to start a repo','Do not search my repos'])assert.equal(classify(text),'chat',text);
 });
+
+
+test('owner job receipts finish before the chat-only service can contradict them',()=>{
+ const js=fs.readFileSync('bubbles-ai.js','utf8');
+ const branch=js.slice(js.indexOf('if(workEvidence){'),js.indexOf('const prompt='));
+ assert.match(branch,/nativeSpeechReply=workEvidence/);
+ assert.match(branch,/messages.push\(\{role:'assistant',text:workEvidence\}\)/);
+ assert.match(branch,/busy=false;send.disabled=false/);
+ assert.match(branch,/return;/);
+ assert.match(js,/https:\/\/quantaphi.org\/#robotDirections/);
+});
