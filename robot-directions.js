@@ -62,7 +62,49 @@ function normalize(value){
    executor:j.executor==='repository-engine'?'repository-engine':undefined,queue_priority:Number.isFinite(j.queue_priority)?Math.max(-100,Math.min(100,j.queue_priority)):0,design:'Oracle Octaves · Android first',verification:'Tests and deployed mobile browser evidence required'};
  });
 }
-if(typeof module!=='undefined')module.exports={normalize,ROLES,ROLE_TOOLS,SITE_CREWS,fallbackJobs};
+
+/* Source-backed English briefing. An agent is not described as working unless
+   the individual job has a verified working status; a ticket status alone is
+   not execution evidence. Never report imagined messages or earned coins. */
+function robotJobRows(tickets,limit=10){
+ const rows=[];
+ for(const ticket of Array.isArray(tickets)?tickets:[]){
+  if(ticket?.context?.kind!=='robot-directions')continue;
+  for(const job of ticket.context.color_jobs||[]){
+   if(!job||typeof job!=='object')continue;
+   const status=String(job.status||'queued').toLowerCase();
+   const progress=job.progress&&typeof job.progress==='object'?job.progress:{};
+   const priority=Number.isFinite(job.queue_priority)?job.queue_priority:0;
+   const when=Date.parse(progress.attemptedAt||progress.last_inspected_at||job.last_inspected_at||'')||Number(ticket.updated_at)||0;
+   const rank=['working','running','leased'].includes(status)?0:['queued','ready'].includes(status)?1:status==='blocked'?2:['committed_unverified','deployed_verified','complete'].includes(status)?3:4;
+   rows.push({id:String(ticket.id||'')+'/'+String(job.id||''),title:String(job.title||'Untitled task').slice(0,170),agent:String(job.agent||'unassigned').slice(0,60),repository:String(job.repository||'repository unresolved').slice(0,100),status,rank,priority,when,blocker:String(progress.blocker||'').slice(0,170),summary:String(progress.summary||'').slice(0,330),next:String(progress.next||'').slice(0,200)});
+  }
+ }
+ return rows.sort((a,b)=>a.rank-b.rank||b.priority-a.priority||b.when-a.when||a.id.localeCompare(b.id)).slice(0,Math.min(10,Math.max(1,limit)));
+}
+function robotEnglishReport(rows,earnings={},checkedAt=Date.now(),mode='report'){
+ const human={working:'working',running:'running',leased:'claimed by a runner',ready:'waiting in the queue',queued:'queued for a runner',blocked:'blocked',complete:'finished in the recorded ticket',deployed_verified:'deployed and verified',committed_unverified:'committed but not live-verified'};
+ const names={'pink-panther':'Pink Panther','purple-pearl':'Purple Pearl','gpt-purple':'GPT Purple',blueberry:'Blueberry',greenbeans:'Greenbeans','purple-reign':'Purple Reign'};
+ const stamp=new Date(checkedAt).toLocaleString('en-US',{dateStyle:'medium',timeStyle:'short'});
+ const active=rows.filter(r=>['working','running','leased'].includes(r.status)).length;
+ const intro='Robot Brain '+(mode==='top'?'top ten task log':'activity report')+' — checked '+stamp+'. '+active+' of these '+rows.length+' listed tasks have a recorded active status; queued tasks are not proof that a bot is running.';
+ const lines=rows.map((row,index)=>{
+  const who=names[row.agent]||row.agent.replace(/-/g,' ').replace(/\b\w/g,x=>x.toUpperCase());
+  const action=human[row.status]||row.status.replace(/_/g,' ');
+  const progress=row.summary?(' Recorded update: '+row.summary):' No verified progress details are available yet.';
+  const blocker=row.blocker?(' Blocker: '+row.blocker+'.'):'';
+  const next=row.next&&!row.blocker?(' Next: '+row.next):'';
+  return (index+1)+'. '+who+' — '+action+' on '+row.title+' in '+row.repository+'.'+progress+blocker+next+' Job '+row.id+'.';
+ });
+ if(!rows.length)lines.push('There are no source-backed owner tasks to report yet. This does not mean the bots are running.');
+ if(earnings&&earnings.ok){
+  const counts=earnings.counts||{};
+  lines.push('Verified job rewards: '+Number(counts.paid||0)+' receipts paid, '+Number(counts.eligibleUnpaid||0)+' eligible but not yet paid, '+Number(counts.unverified||0)+' not verified or blocked, and '+Number(counts.failedRetry||0)+' delayed retries. The wallet pays only after server-side receipt verification, not when a button is pressed.');
+  if(earnings.lastError?.error)lines.push('Latest settlement blocker: '+String(earnings.lastError.error).slice(0,150)+'.');
+ }else lines.push('Reward settlement status is unavailable. No payment was assumed.');
+ return [intro,...lines].join('\n\n');
+}
+if(typeof module!=='undefined')module.exports={normalize,ROLES,ROLE_TOOLS,SITE_CREWS,fallbackJobs,robotJobRows,robotEnglishReport};
 if(typeof document==='undefined')return;
 const root=document.getElementById('robotDirections');if(!root)return;
 
