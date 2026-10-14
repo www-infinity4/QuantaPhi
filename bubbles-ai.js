@@ -276,15 +276,9 @@ async function sendMessage(text){
   try{workEvidence=await readBrainReport()}
   catch(error){workEvidence='Robot Brain report unavailable: '+String(error.message||error)+'. No bot activity was assumed.'}
  }
- // The Brain receipt is authoritative; never wait for a chat model to confirm it.
- if(workEvidence){
-  messages.push({role:'assistant',text:workEvidence});messages=messages.slice(-20);persistChat();
-  display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240);
-  if(config.voice)speakText(workEvidence);
-  busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-  if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
-  return;
- }
+ // Show the authoritative receipt immediately, then let GPT explain it.
+ // Model latency or failure cannot change whether the Brain job was recorded.
+ if(workEvidence){display(workEvidence,'ai');status.textContent=workEvidence.slice(0,240)}
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger inside QuantaPhi.','Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
@@ -309,7 +303,7 @@ async function sendMessage(text){
   }
   if(json.receipt)status.textContent=config.alias+' · '+json.receipt.tool+' · '+json.receipt.status;
   if(config.voice)speakText(answer);
- }catch(error){const message='I could not complete the response: '+String(error?.message||error).slice(0,150);display(message,'ai');status.textContent=message}
+ }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message}
  finally{busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
     if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
   }
