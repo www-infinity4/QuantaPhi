@@ -3,6 +3,7 @@
  * Source: https://github.com/www-infinity4/Resonance-calculator
  * Keep conceptual material roles separate from idealized RF engineering. */
 export const CALCULATOR_SOURCE='https://github.com/www-infinity4/Resonance-calculator';
+export const CALCULATOR_UI='https://quantaphi.org/resonance.html';
 export const ELEMENTS=Object.freeze([
   { z:3,  sym:"Li", name:"Lithium",       mass:6.941,   cat:"Alkali metal",         elec:"Conductor",                  rho:9.28e-8,  role:"Lightest metallic signal carrier — alkali primary emitter" },
   { z:10, sym:"Ne", name:"Neon",          mass:20.180,  cat:"Noble gas",             elec:"Gas / non-RF conductor",     rho:null,     role:"Luminescent discharge medium — photonic excitation reference" },
