@@ -33,6 +33,8 @@
   return words.reduce((score,w)=>score+(str.includes(w)?1:0),0);}
  function make(){
   let dbPromise=database(),enabled=false,cloud=false,token='',cursor=0,clock=null;
+  const PROFILE_KEY='quantaphi:bubbles:active-memory-profile:v1';
+  let scope='guest';try{scope=localStorage.getItem(PROFILE_KEY)||'guest'}catch{}
   let onChange=()=>{},syncing=false;
   async function append(msg,{remote=false}={}){
    if(!enabled)return false;
@@ -40,14 +42,15 @@
    const db=await dbPromise;if(!db)return false;
    const existing=await request(db,'one',false,s=>s.get(e.id));
    if(existing)return true; // Never downgrade a previously synced entry.
-   const ok=await record(db,{...e,synced:remote===true});
+   const ok=await record(db,{...e,scope,synced:remote===true});
    if(ok&&!remote&&cloud)void sync();return ok;
   }
   async function appendAll(items,{remote=false}={}){
    if(!Array.isArray(items))return;
    for(const m of items)await append(m,{remote});
   }
-  async function all(){const db=await dbPromise;return (await list(db)).sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id))}
+  async function all(){const db=await dbPromise;return (await list(db))
+   .filter(e=>(e.scope||'guest')===scope).sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id))}
   async function recent(limit=30){return (await all()).slice(-limit)}
   async function search(q,limit=8){
    const xs=(await all()).map(e=>({...e,score:matches(e,q)})).filter(e=>e.score>0);
@@ -73,8 +76,16 @@
    if(!connection?.resolveDeviceToken)throw Error('Connect your QuantaPhi Unified Wallet in this window to enable private sync.');
    token=await connection.resolveDeviceToken();
    if(!token)throw Error('Verified Unified Wallet is not connected in this browser or Android panel.');
-   // Validate before enabling uploads.
-   await remoteFetch('/v1/history?after=0&limit=1');
+   // Do not upload a prior account's IndexedDB records under a new wallet.
+   const identity=await remoteFetch('/v1/profile');
+   if(!/^[a-f0-9]{64}$/.test(identity.profile||''))throw Error('wallet_profile_unavailable');
+   const db=await dbPromise;
+   if(scope==='guest'&&db){
+    const guests=(await list(db)).filter(e=>(e.scope||'guest')==='guest');
+    for(const e of guests)await record(db,{...e,scope:identity.profile,synced:false});
+   }
+   if(scope!==identity.profile)cursor=0;
+   scope=identity.profile;try{localStorage.setItem(PROFILE_KEY,scope)}catch{}
    cloud=true;await sync();
    clearInterval(clock);clock=setInterval(()=>{if(!document.hidden)void sync()},12000);
    return true;
@@ -109,7 +120,12 @@
   async function clear({cloudToo=false}={}){
    if(cloudToo&&cloud)await remoteFetch('/v1/history',{method:'DELETE'});
    const db=await dbPromise;if(db)await new Promise(resolve=>{
-    const tx=db.transaction('turns','readwrite');tx.objectStore('turns').clear();tx.oncomplete=tx.onerror=tx.onabort=()=>resolve();
+    const tx=db.transaction('turns','readwrite'),store=tx.objectStore('turns');
+    const cursorRequest=store.openCursor();
+    cursorRequest.onsuccess=()=>{const row=cursorRequest.result;if(row){
+     if((row.value.scope||'guest')===scope)row.delete();row.continue();
+    }};
+    tx.oncomplete=tx.onerror=tx.onabort=()=>resolve();
    });
    cursor=0;
   }
