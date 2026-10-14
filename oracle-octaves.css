@@ -34,3 +34,6 @@ body.oracle-octaves-home #infinityConcepts .icp-serial{color:#79571b!important}
 body.oracle-octaves-page [hidden],body.oracle-octaves-home [hidden]{display:none!important}
 @media(max-width:430px){body.oracle-octaves-page :is(.panel,.toolbar,.story-card){padding:17px}body.oracle-octaves-home :is(.ib-story,.sw-card,.fs-card,.mp-card,.fsr-card){padding:17px!important}}
 
+
+/* Preserve white surfaces over older ID-scoped story and radio rules. */
+body.oracle-octaves-home #infiniteBook .ib-story,body.oracle-octaves-home #fredSpacesRadio .fs-card{background:#fff!important;color:#30243e!important;box-shadow:0 8px 24px #38144716!important}
