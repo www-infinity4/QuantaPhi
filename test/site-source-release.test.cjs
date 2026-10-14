@@ -8,7 +8,7 @@ test('QuantaPhi gateway serves current main Oracle styling and video studio asse
  const calls=[];
  const context={URL,Request,Response,Headers,AbortController,setTimeout,clearTimeout,
   fetch:async target=>{
-   calls.push(String(target));
+   calls.push(target instanceof Request ? target.url : String(target));
    return new Response('/* latest source */',{status:200,headers:{'Content-Type':'text/css'}});
   }
  };
