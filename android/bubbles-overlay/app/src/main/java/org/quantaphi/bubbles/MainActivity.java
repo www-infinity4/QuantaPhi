@@ -29,29 +29,29 @@ public final class MainActivity extends Activity {
         LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
         layout.setPadding(38, 48, 38, 28);
-        layout.setBackgroundColor(Color.rgb(17, 31, 57));
+        layout.setBackgroundColor(Color.rgb(248, 243, 252));
 
         TextView title = new TextView(this);
         title.setText("Bubbles AI");
-        title.setTextColor(Color.WHITE);
+        title.setTextColor(Color.rgb(48, 36, 62));
         title.setTypeface(null, Typeface.BOLD);
         title.setTextSize(31);
         layout.addView(title);
 
         TextView copy = new TextView(this);
         copy.setText("A floating voice companion, available while other apps are open.\n\nAllow the microphone and Android overlay permission once, then enable Bubbles. The microphone stays open during your session; speech is recognized offline. Drag the orb to move it over other apps.\n\nYou will see an ongoing microphone notification. Say “Bubbles go quiet” or long-press the orb to mute. Tap it to resume, or use Stop to release the microphone. While Bubbles speaks, audio still reaches the local microphone meter but transcripts are discarded to avoid speaker echo.");
-        copy.setTextColor(Color.rgb(202, 242, 235));
+        copy.setTextColor(Color.rgb(101, 83, 111));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
         layout.addView(copy);
 
         EditText name = new EditText(this);
-        name.setTextColor(Color.WHITE);
+        name.setTextColor(Color.rgb(48, 36, 62));
         name.setHint("Bubble name");
         name.setText(BrainNotes.prefs(this).getString("name","Brain"));
         layout.addView(name);
         EditText job = new EditText(this);
-        job.setTextColor(Color.WHITE);
+        job.setTextColor(Color.rgb(48, 36, 62));
         job.setHint("What should Brain learn and help build?");
         job.setText(BrainNotes.prefs(this).getString("instructions","Learn my Infinity build workflow from my notes. Suggest the next concrete fix, update or build; explain the evidence."));
         layout.addView(job);
@@ -66,12 +66,12 @@ public final class MainActivity extends Activity {
         });
         layout.addView(save);
         TextView learning=new TextView(this);
-        learning.setTextColor(Color.WHITE);
+        learning.setTextColor(Color.rgb(48, 36, 62));
         learning.setText("Optional workflow learning: select apps, then enable Brain in Android Accessibility Settings. It saves visible text locally while you use those apps. It does not read hidden history or browser tabs. Uncheck an app to pause it.");
         layout.addView(learning);
         for(String[] app:new String[][]{{"ChatGPT","learn_chatgpt"},{"X / Twitter","learn_x"},{"Gemini","learn_gemini"}}) {
             CheckBox choice=new CheckBox(this);
-            choice.setTextColor(Color.WHITE);choice.setText("Learn from "+app[0]);
+            choice.setTextColor(Color.rgb(48, 36, 62));choice.setText("Learn from "+app[0]);
             choice.setChecked(BrainNotes.prefs(this).getBoolean(app[1],false));
             choice.setOnCheckedChangeListener((button,checked)->BrainNotes.prefs(this).edit().putBoolean(app[1],checked).apply());
             layout.addView(choice);
@@ -79,7 +79,7 @@ public final class MainActivity extends Activity {
         Button access=new Button(this);access.setText("Open Android learning permission");
         access.setOnClickListener(v->startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)));
         layout.addView(access);
-        CheckBox useNotes=new CheckBox(this);useNotes.setTextColor(Color.WHITE);
+        CheckBox useNotes=new CheckBox(this);useNotes.setTextColor(Color.rgb(48, 36, 62));
         useNotes.setText("Include my recent notes in requests to Oracle Cloudflare AI when I talk to Brain");
         useNotes.setChecked(BrainNotes.prefs(this).getBoolean("use_notes",false));
         useNotes.setOnCheckedChangeListener((button,checked)->BrainNotes.prefs(this).edit().putBoolean("use_notes",checked).apply());
@@ -107,7 +107,7 @@ public final class MainActivity extends Activity {
         layout.addView(stop);
 
         state = new TextView(this);
-        state.setTextColor(Color.WHITE);
+        state.setTextColor(Color.rgb(48, 36, 62));
         state.setTextSize(14);
         state.setGravity(Gravity.START);
         state.setPadding(0, 20, 0, 0);
@@ -115,6 +115,16 @@ public final class MainActivity extends Activity {
         layout.addView(state);
 
         ScrollView scroll=new ScrollView(this);scroll.addView(layout);setContentView(scroll);
+    }
+
+    @Override protected void onResume() {
+        super.onResume();
+        // Only a user tap on our Quick Settings tile requests startup.
+        // Consume the request so returning from Settings cannot trigger a second session.
+        if (getIntent().getBooleanExtra(BubblesTileService.EXTRA_START, false)) {
+            getIntent().removeExtra(BubblesTileService.EXTRA_START);
+            checkAndStart();
+        }
     }
 
     private void checkAndStart() {
