@@ -10,7 +10,7 @@ const make=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.class
 const $=selector=>host.querySelector(selector);
 const emit=(type,detail)=>window.dispatchEvent(new CustomEvent('phi:image:'+type,{detail}));
 const id=()=>crypto?.randomUUID?.()||('phi-'+Date.now()+'-'+Math.random().toString(36).slice(2));
-let mode='Image',buildType='Image',promptEdited=false,autoPrefill=false,source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',lastManualText='',lastTextMode='auto',preparingReference=false,lastRenderPlan=null,storyWriterId='';
+let mode='Image',buildType='Image',promptEdited=false,autoPrefill=false,ignoredTopic='',source=null,design=null,urls=[],result=null,rawResult=null,artifact=null,busy=false,lastInstruction='',lastExactText='',lastManualText='',lastTextMode='auto',preparingReference=false,lastRenderPlan=null,storyWriterId='';
 function state(value){host.dataset.stage=value;host.setAttribute('aria-busy',value==='progress'?'true':'false')}
 function section(title,copy){const box=make('section','pi-section');box.append(make('h3','',title));if(copy)box.append(make('p','pi-sub',copy));return box}
 function letteringMode(){const field=$('#pi-exact-text');const enabled=$('#pi-text-mode').value==='exact';field.disabled=!enabled;field.hidden=!enabled}
@@ -92,9 +92,11 @@ function layout(){
 }
 function currentContext(){
  const snapshot=window.PhiCardContext?.getSnapshot?.();
- if(snapshot?.topic)return snapshot;
  const q=String(document.getElementById('q')?.value||'').trim().slice(0,140);
- return q?{topic:q,sourceCard:'search'}:null;
+ const topic=snapshot?.topic||q;
+ if(ignoredTopic&&topic===ignoredTopic)return null;
+ if(topic&&topic!==ignoredTopic)ignoredTopic='';
+ return snapshot?.topic?snapshot:(q?{topic:q,sourceCard:'search'}:null);
 }
 function applyTopicPrompt(force=false){
  const context=currentContext(),prompt=$('#pi-prompt'),suggest=window.PhiImageSuggestions;
@@ -258,7 +260,7 @@ host.addEventListener('click',event=>{
  const choice=event.target.closest('[data-pi-suggest-type]');
  if(choice){buildType=choice.dataset.piSuggestType;mode=window.PhiImageSuggestions?.renderMode(buildType)||buildType;$('#pi-build-type').value=buildType;applyTopicPrompt(true);return}
  const action=event.target.closest('[data-pi-action]')?.dataset.piAction;
- if(action==='clear-context'){window.PhiCardContext?.clear();if(!promptEdited&&autoPrefill){$('#pi-prompt').value='';autoPrefill=false}refreshSuggestions();return}
+ if(action==='clear-context'){ignoredTopic=currentContext()?.topic||'';window.PhiCardContext?.clear();if(!promptEdited&&autoPrefill){$('#pi-prompt').value='';autoPrefill=false}refreshSuggestions();return}
  if(action==='build')void build();
  if(action==='retry-render'&&!busy)void build({retryRender:true});
  if(action==='remove-source'||action==='remove-design'){
