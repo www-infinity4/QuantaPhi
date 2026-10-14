@@ -188,7 +188,11 @@ cloudToggle.type='checkbox';cloudToggle.checked=cloudChat;cloudToggle.disabled=!
 cloudLabel.append(cloudToggle,create('span','','Sync full Bubbles history between browser and Android with my Unified Wallet'));
 const cloudDelete=create('button','ba-control','Erase wallet-synced Bubbles memory');cloudDelete.type='button';cloudDelete.hidden=!cloudChat;
 const clearChat=create('button','ba-control','Clear this view');clearChat.type='button';
-privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete);
+const importLabel=create('label','ba-privacy-label','Import my ChatGPT export (optional)');
+const importGPT=create('input','ba-field');importGPT.type='file';importGPT.accept='.json,application/json';
+importGPT.setAttribute('aria-label','Import conversations.json from your ChatGPT data export');
+const importStatus=create('p','ba-muted','ChatGPT sign-in does not share old chats. Import a conversations.json file you choose to reuse selected conversation ideas locally.');
+privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
@@ -323,6 +327,41 @@ function display(text,who,greeting=false){
 for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
 // Native WebView and Chrome use the same first-party UI but have independent
 // cookies. This IndexedDB archive supplements the existing owner Brain archive.
+// One-time explicit user-selected import; no ChatGPT passwords, cookies or
+// hidden account data are accessed. Existing cloud sync settings still apply.
+importGPT.addEventListener('change',async()=>{
+ const file=importGPT.files?.[0];if(!file)return;
+ if(!keepChat||!longMemory){importStatus.textContent='Enable conversation memory in Bubbles first.';importGPT.value='';return}
+ if(file.size>40*1024*1024){importStatus.textContent='This JSON is over 40 MB; split your export before importing on this phone.';importGPT.value='';return}
+ try{
+  const parsed=JSON.parse(await file.text());
+  if(!Array.isArray(parsed))throw Error('Choose the conversations.json file extracted from your ChatGPT export');
+  const records=[];
+  for(const thread of parsed){
+   if(!thread?.mapping||typeof thread.mapping!=='object')continue;
+   for(const [nodeId,node] of Object.entries(thread.mapping)){
+    const m=node?.message,role=m?.author?.role;
+    if(role!=='user'&&role!=='assistant')continue;
+    const parts=m.content?.parts;
+    const written=Array.isArray(parts)?parts.filter(x=>typeof x==='string').join(' '):
+     typeof m.content?.text==='string'?m.content.text:'';
+    if(!written.trim())continue;
+    const at=Math.round((Number(m.create_time)||Number(thread.create_time)||Date.now()/1000)*1000);
+    records.push({id:'gpt_'+String(thread.id||'thread').replace(/[^a-z0-9_-]/gi,'').slice(0,28)+'_'+String(nodeId).replace(/[^a-z0-9_-]/gi,'').slice(0,35),
+      role,text:written.slice(0,6000),at:Math.max(946684800000,Math.min(Date.now(),at))});
+    if(records.length>=12000)break;
+   }
+   if(records.length>=12000)break;
+  }
+  if(!records.length)throw Error('No readable messages in this export');
+  const upload=longMemory.cloudConnected?' This will also sync imported messages to your verified QuantaPhi wallet.':' These messages will remain in this browser unless you explicitly enable wallet cloud sync.';
+  if(!confirm('Import '+records.length+' ChatGPT messages into your Bubbles memory?'+upload)){importStatus.textContent='Import cancelled.';return}
+  importStatus.textContent='Importing '+records.length+' messages to your private Bubbles history…';
+  for(let i=0;i<records.length;i+=50)await longMemory.appendAll(records.slice(i,i+50));
+  importStatus.textContent='Imported '+records.length+' ChatGPT export messages into Bubbles memory. Original exported JSON remains yours. This is not an automatic ChatGPT connection.';
+ }catch(error){importStatus.textContent='History import failed: '+String(error.message||error).slice(0,160)}
+ finally{importGPT.value=''}
+});
 longMemory?.onUpdate((events,error)=>{
  if(error){memoryHint.textContent='Private archive sync paused: '+error+'. Owner Brain memory is unchanged.';return}
  if(Array.isArray(events)&&events.length){
