@@ -34,5 +34,5 @@ test('Brain controls favor a real report and automatic payments over check butto
  assert.match(js,/connectBotEarnings\(\)/);
  assert.match(js,/auditButton\.hidden=true/);
  assert.match(js,/earningsButton\.hidden=true/);
- assert.match(js,/\[data-clear\]/);
+ assert.match(js,/clearButton\.dataset\.clear/);
 });
