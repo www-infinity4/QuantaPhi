@@ -10,7 +10,7 @@ const gradle = fs.readFileSync(path.join(root, '../../../../../../', 'build.grad
 
 test('tap interrupts TTS immediately then opens a dedicated Oracle text window', () => {
   assert.match(service, /if \(speaking\) silenceReply\(\);/);
-  assert.match(service, /new Intent\(BubblesService\.this, OracleChatActivity\.class\)/);
+  assert.match(service, /new FloatingOracleWindow\(BubblesService\.this, manager\)/);
   assert.match(service, /private void silenceReply\(\)/);
   assert.match(service, /tts\.stop\(\)/);
   assert.match(service, /ACTION_STOP_SPEAKING/);
@@ -30,7 +30,7 @@ test('text chat stores bounded local history and typed responses stay silent', (
 });
 
 test('preview increments version without changing the installed package', () => {
-  assert.match(gradle, /versionCode 6/);
+  assert.match(gradle, /versionCode 7/);
   assert.match(gradle, /versionName '0\.6\.0'/);
-  assert.match(gradle, /applicationIdSuffix '\.preview2'/);
+  assert.match(gradle, /applicationIdSuffix '\.preview3'/);
 });
