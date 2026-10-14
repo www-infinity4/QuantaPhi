@@ -52,3 +52,20 @@ test('TTS callback loss has a bounded recovery and diagnostics preserve replies'
   assert.match(source, /putString\("last_heard", text\)/);
   assert.match(source, /putString\("last_reply", result\)/);
 });
+
+test('Bubbles exposes listening first and hides optional recording controls until requested', () => {
+  if (local) return;
+  const ui = fs.readFileSync(path.join(root, 'app/src/main/java/org/quantaphi/bubbles/MainActivity.java'), 'utf8');
+  assert.ok(ui.indexOf('Button connect =') < ui.indexOf('Button chatgptLogin ='));
+  assert.ok(ui.indexOf('TextView voiceStatus =') < ui.indexOf('Button advancedToggle ='));
+  assert.match(ui, /advancedCapture\.setVisibility\(View\.GONE\)/);
+  assert.match(ui, /brainSettings\.setVisibility\(View\.GONE\)/);
+  assert.match(ui, /More: recording, camera and screen tools/);
+  assert.match(ui, /Listening is not the same as saving an audio recording/);
+});
+test('AI and voice failure status captures a useful reason rather than only an exception type', () => {
+  assert.match(source, /Oracle response status/);
+  assert.match(source, /putString\("last_error", problem\)/);
+  assert.match(source, /Offline voice model failed to load/);
+  assert.match(source, /Microphone start failed:/);
+});

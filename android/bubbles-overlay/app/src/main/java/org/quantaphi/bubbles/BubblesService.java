@@ -105,9 +105,12 @@ public final class BubblesService extends Service {
         tts = new TextToSpeech(this, result -> {
             if (result == TextToSpeech.SUCCESS && tts != null) {
                 ttsReady = true;
-                int language = tts.setLanguage(Locale.UK);
+                // Use a lower-pitched on-device English voice by default.
+                // This is Android TTS, not the proprietary ChatGPT Live voice.
+                int language = tts.setLanguage(Locale.US);
                 if (language == TextToSpeech.LANG_MISSING_DATA || language == TextToSpeech.LANG_NOT_SUPPORTED)
                     tts.setLanguage(Locale.ENGLISH);
+                tts.setPitch(0.84f);
                 tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
                     @Override public void onStart(String id) { main.post(() -> state("speaking", 0.6f)); }
                     @Override public void onDone(String id) { main.post(() -> finishSpeaking()); }
@@ -211,6 +214,7 @@ public final class BubblesService extends Service {
                 modelLoading = false;
                 muteSession();
                 state("error", 0);
+                BrainNotes.prefs(this).edit().putString("last_error", "Offline voice model failed to load").apply();
                 Toast.makeText(this, "Offline voice model could not load. Reopen Bubbles to retry.", Toast.LENGTH_LONG).show();
             });
             return;
@@ -272,6 +276,7 @@ public final class BubblesService extends Service {
             stopRecognition();
             muted = true;
             state("error", 0);
+            BrainNotes.prefs(this).edit().putString("last_error", "Microphone start failed: " + ex.getClass().getSimpleName()).apply();
             Toast.makeText(this, "Cannot open microphone. Check its permission and other recording apps.", Toast.LENGTH_LONG).show();
         }
     }
@@ -340,12 +345,6 @@ public final class BubblesService extends Service {
         String text = raw == null ? "" : raw.replaceAll("\\s+", " ").trim();
         if (text.isEmpty() || text.length() > 1800 || muted) return;
         BrainNotes.prefs(this).edit().putString("last_heard", text).apply();
-        if (recording.active()) {
-            recordedWords = (recordedWords + " " + text).trim();
-            if (recordedWords.length() > 7000) recordedWords = recordedWords.substring(recordedWords.length() - 7000);
-            // Save sound/transcript without making every recorded sentence an AI command.
-            return;
-        }
         long now = SystemClock.elapsedRealtime();
         String alias=BrainNotes.prefs(this).getString("name","Brain");
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
@@ -353,6 +352,49 @@ public final class BubblesService extends Service {
         boolean directed = matcher.find();
         // The user-started listening session accepts ordinary speech without a wake word.
         String addressed = directed ? text.substring(matcher.end()).replaceFirst("^[\\s,:.!?\\-]+", "").trim() : text;
+        VoiceCaptureCommands.Command command = VoiceCaptureCommands.parse(addressed);
+        if (command != null) {
+            switch (command.action) {
+                case "sound_start":
+                    if (recording.active()) speak("Sound is already recording.");
+                    else { pendingAudioRecording = true; if (captureRunning) beginAudioRecording(); else beginListening(); speak("Sound recording started. Say stop recording to save."); }
+                    break;
+                case "sound_stop":
+                    if (recording.active()) { saveAudio(); speak("Sound saved on this phone."); }
+                    else speak("There is no sound recording running.");
+                    break;
+                case "screen_stop":
+                    startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
+                    speak("Stopping screen capture.");
+                    break;
+                case "screen_image":
+                case "screen_sequence":
+                case "screen_video":
+                case "camera_video":
+                    Intent capture = new Intent(this, MainActivity.class)
+                        .putExtra("voice_capture", command.action)
+                        .putExtra("interval_seconds", command.intervalSeconds)
+                        .putExtra("duration_seconds", command.durationSeconds)
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    try {
+                        startActivity(capture);
+                        speak(command.action.equals("camera_video") ? "Opening the camera recorder." :
+                            "Android will ask permission to share your screen. Capture starts after you approve.");
+                    } catch (Exception error) {
+                        BrainNotes.prefs(this).edit().putString("last_error", "Open capture controls: " + error.getClass().getSimpleName()).apply();
+                        speak("Open Bubbles to approve screen capture. Nothing has been recorded.");
+                    }
+                    break;
+                default: break;
+            }
+            return;
+        }
+        if (recording.active()) {
+            recordedWords = (recordedWords + " " + text).trim();
+            if (recordedWords.length() > 7000) recordedWords = recordedWords.substring(recordedWords.length() - 7000);
+            // Recording is distinct from a normal AI chat command.
+            return;
+        }
         if (MUTE.matcher(addressed).matches()) {
             muteSession();
             Toast.makeText(this, "Bubbles muted. Tap the orb to reconnect.", Toast.LENGTH_SHORT).show();
@@ -384,8 +426,13 @@ public final class BubblesService extends Service {
             String answer;
             try {answer = replyFromOracle(userRequest);}
             catch (Exception error) {
-                main.post(() -> BrainNotes.prefs(this).edit().putString("last_error", error.getClass().getSimpleName()).apply());
-                answer = "I heard you, but the AI request failed. Open Bubbles to see its status and try again.";
+                // Preserve an actionable status (such as HTTP 429/500 or a timeout),
+                // not just an unhelpful exception class. Never include credentials.
+                String detail = error.getMessage();
+                if (detail == null || detail.trim().isEmpty()) detail = error.getClass().getSimpleName();
+                final String problem = detail.substring(0, Math.min(160, detail.length()));
+                main.post(() -> BrainNotes.prefs(this).edit().putString("last_error", problem).apply());
+                answer = "I heard you, but the AI connection failed. Open Bubbles; the Last problem line shows why.";
             }
             final String result = answer;
             main.post(() -> {
@@ -419,7 +466,20 @@ public final class BubblesService extends Service {
         if (ChatGPTSignIn.hasPlan(this) && !scientificTool) {
             // ChatGPT OAuth credentials never leave this device or visit our Worker.
             // An inference error is reported instead of silently switching providers.
-            return ChatGPTSignIn.ask(this, prompt);
+            try {
+                String answer = ChatGPTSignIn.ask(this, prompt);
+                BrainNotes.prefs(this).edit().putString("ai_provider", "ChatGPT")
+                    .remove("last_error").apply();
+                return answer;
+            } catch (Exception error) {
+                // Direct ChatGPT access is not guaranteed by an identity sign-in.
+                // Keep the native assistant usable if that path fails.
+                String why = error.getMessage();
+                if (why == null) why = error.getClass().getSimpleName();
+                BrainNotes.prefs(this).edit().putString("last_error",
+                    "ChatGPT unavailable: " + why.substring(0, Math.min(110, why.length()))
+                    + " · trying Oracle").apply();
+            }
         }
         URL url = new URL(AI_URL);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -446,7 +506,10 @@ public final class BubblesService extends Service {
             if (json.optBoolean("ok", true) == false) throw new IllegalStateException("Oracle reported an error");
             for (String key : new String[]{"output_text", "output", "response", "answer", "content", "message"}) {
                 String value = json.optString(key, "").trim();
-                if (!value.isEmpty() && !value.equals("null")) return value.length()>2200?value.substring(0,2200):value;
+                if (!value.isEmpty() && !value.equals("null")) {
+                    BrainNotes.prefs(this).edit().putString("ai_provider", "Oracle Cloudflare").apply();
+                    return value.length()>2200?value.substring(0,2200):value;
+                }
             }
             throw new IllegalStateException("Empty Oracle response");
         } finally {conn.disconnect();}

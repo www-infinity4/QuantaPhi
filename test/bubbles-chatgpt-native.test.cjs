@@ -30,7 +30,9 @@ test('inference streams directly to approved Responses API, never to owner worke
  assert.ok(auth.includes('response.incomplete'));
  assert.ok(auth.includes('if (!completed || result.toString().trim().isEmpty())'));
  assert.ok(service.includes('ChatGPTSignIn.hasPlan(this)'));
- assert.ok(service.includes('return ChatGPTSignIn.ask(this, prompt);'));
+ assert.match(service, /ChatGPTSignIn\.ask\(this, prompt\)/);
+ assert.ok(service.includes('trying Oracle'), 'ChatGPT failure should fall back with an explicit status');
+ assert.ok(service.includes('putString("ai_provider", "Oracle Cloudflare")'), 'Fallback provider should be identified');
  assert.ok(!auth.includes('bubbles-tools.marvaseater.workers.dev'));
 });
 test('login needs explicit action, has signout, and no web token bridge',()=>{
