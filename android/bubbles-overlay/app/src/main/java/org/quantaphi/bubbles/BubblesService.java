@@ -88,6 +88,7 @@ public final class BubblesService extends Service {
     private long activeUntil = 0L, lastAt = 0L;
     private String lastTranscript = "", queued = "";
     private int retries = 0;
+    private long speechGeneration = 0L;
 
     @Override public void onCreate() {
         super.onCreate();
@@ -164,6 +165,8 @@ public final class BubblesService extends Service {
 
     private void state(String newState, float energy) {
         if (orb != null) orb.setState(newState, energy);
+        if (!newState.equals(BrainNotes.prefs(this).getString("voice_state", "")))
+            BrainNotes.prefs(this).edit().putString("voice_state", newState).apply();
     }
 
     private void beginListening() {
@@ -278,12 +281,14 @@ public final class BubblesService extends Service {
     }
     private void finishSpeaking() {
         speaking = false;
+        speechGeneration++;
         if (connected && !muted) state("listening", .1f);
     }
 
     private void heard(String raw) {
         String text = raw == null ? "" : raw.replaceAll("\\s+", " ").trim();
         if (text.isEmpty() || text.length() > 1800 || muted) return;
+        BrainNotes.prefs(this).edit().putString("last_heard", text).apply();
         long now = SystemClock.elapsedRealtime();
         String alias=BrainNotes.prefs(this).getString("name","Brain");
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
@@ -304,6 +309,14 @@ public final class BubblesService extends Service {
         if (normalized.equals(lastTranscript) && now - lastAt < 2500) return;
         lastTranscript = normalized;lastAt = now;activeUntil = now + 30000L;
         if (busy) {queued = addressed;return;}
+        if (addressed.matches("(?i)^(?:please\\s+)?(?:create|make|submit|queue|start)\\s+(?:a\\s+)?(?:work\\s+)?ticket\\b.*")) {
+            Intent handoff = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://quantaphi.org/bubbles.html")
+                    .buildUpon().appendQueryParameter("workRequest", addressed).build());
+            handoff.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            try { startActivity(handoff); speak("Your work request is ready on QuantaPhi. Use the verified owner submit button. No ticket has been saved yet."); }
+            catch (Exception error) { speak("I could not open QuantaPhi. No ticket was submitted."); }
+            return;
+        }
         askOracle(addressed);
     }
 
@@ -313,10 +326,14 @@ public final class BubblesService extends Service {
         network.execute(() -> {
             String answer;
             try {answer = replyFromOracle(userRequest);}
-            catch (Exception error) {answer = "The Oracle service is not available right now. Please try again.";}
+            catch (Exception error) {
+                main.post(() -> BrainNotes.prefs(this).edit().putString("last_error", error.getClass().getSimpleName()).apply());
+                answer = "I heard you, but the AI request failed. Open Bubbles to see its status and try again.";
+            }
             final String result = answer;
             main.post(() -> {
                 busy = false;
+                BrainNotes.prefs(this).edit().putString("last_reply", result).apply();
                 speak(result);
                 if (!queued.isEmpty()) {String next = queued;queued = "";main.postDelayed(() -> askOracle(next), 250);}
             });
@@ -327,7 +344,7 @@ public final class BubblesService extends Service {
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("POST");
         conn.setConnectTimeout(6000);
-        conn.setReadTimeout(18000);
+        conn.setReadTimeout(90000);
         conn.setDoOutput(true);
         conn.setRequestProperty("Content-Type", "application/json");
         conn.setRequestProperty("Accept", "application/json");
@@ -374,6 +391,15 @@ public final class BubblesService extends Service {
             return;
         }
         speaking = true;
+        final long generation = ++speechGeneration;
+        // Some device TTS engines never send onDone/onError; do not suppress recognition forever.
+        main.postDelayed(() -> {
+            if (speaking && generation == speechGeneration) {
+                tts.stop();
+                finishSpeaking();
+                BrainNotes.prefs(this).edit().putString("last_error", "Speech playback timed out; listening resumed").apply();
+            }
+        }, 90000);
         state("speaking", .4f);
         int result = tts.speak(response, TextToSpeech.QUEUE_FLUSH, null, "bubbles-" + SystemClock.elapsedRealtime());
         if (result == TextToSpeech.ERROR) finishSpeaking();
