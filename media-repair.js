@@ -46,7 +46,7 @@
     const m=mediaOrigin(),top=mediaTarget();
     if(!m)return;
     if(kind&&top?.parentNode){
-      top.parentNode.insertBefore(m,top.nextSibling);
+      top.parentNode.insertBefore(m,top.nextSibling||document.getElementById('webSearchResults')||null);
       m.classList.add('media-intent-first');m.hidden=false;
       m.dataset.searchFocus=kind;
       const heading=m.querySelector('h2');if(heading)heading.textContent=(kind==='image'?'Images':'Videos')+' for '+subject;
