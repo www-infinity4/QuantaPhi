@@ -7,11 +7,12 @@
  panel.className='robot-work-report';panel.setAttribute('aria-label','Verified bot work report');
  const bar=document.createElement('div');bar.className='robot-work-actions';
  const make=(tag,label)=>{const e=document.createElement(tag);e.textContent=label;return e};
- const report=make('button','Report'),top=make('button','Top 10 tasks');
- report.type='button';top.type='button';bar.append(report,top);
+ const report=make('button','Report'),top=make('button','Top 10 tasks'),traffic=make('button','Cloudflare traffic');
+ report.type='button';top.type='button';traffic.type='button';bar.append(report,top,traffic);
  const stamp=make('small','Waiting for verified task records.');
  const prose=make('div','');prose.className='robot-work-prose';prose.setAttribute('aria-live','polite');
- panel.append(bar,stamp,prose);
+ const audience=make('section','');audience.className='robot-audience-prose';audience.setAttribute('aria-label','Owner-only Cloudflare traffic evidence');audience.setAttribute('aria-live','polite');
+ panel.append(bar,stamp,prose,audience);
  const spareJobs=root.querySelector('[data-refresh]'),spareGemini=root.querySelector('[data-gemini]');
  if(spareJobs)spareJobs.hidden=true;
  if(spareGemini)spareGemini.hidden=true;
@@ -87,10 +88,46 @@
   }catch(e){stamp.textContent='Last report could not be verified.';prose.replaceChildren(make('p',clean(e.message,130)+'. Previously saved jobs are not deleted.'))}
   finally{busy=false}
  }
- report.addEventListener('click',()=>pull('report',{gpt:true}));
+ let audienceBusy=false,lastAudienceFetch=0;
+ async function pullTraffic({force=false}={}){
+  if(audienceBusy||!enabled||!force&&Date.now()-lastAudienceFetch<5*60*1000)return;
+  audienceBusy=true;
+  try{
+   const headers=await window.QuantaBrainOwner?.ready;
+   if(!headers)throw Error('Owner wallet session is not verified');
+   const response=await fetch(API+'/owner/audience?days=7',{headers,cache:'no-store',signal:AbortSignal.timeout(15000)});
+   const data=await response.json().catch(()=>null);
+   if(!response.ok||!data?.ok)throw Error(data?.error==='audience_snapshot_unavailable'?'Cloudflare traffic snapshot database is not ready':'Authenticated Cloudflare traffic report unavailable');
+   const fmt=value=>new Intl.NumberFormat().format(Number(value)||0);
+   const end=data.period?.through||'unknown';
+   audience.replaceChildren();
+   audience.append(make('h4','Cloudflare traffic — owner report'));
+   if(data.dataState==='not_connected'){
+    audience.append(make('p','No private daily Cloudflare summary is stored yet. This is not evidence of zero traffic.'));
+   }else{
+    const totals=data.totals||{};
+    const freshness=data.observedAt?new Date(data.observedAt).toLocaleString():'Unknown';
+    const messages=[
+      'UTC days: '+data.period.from+' through '+end+' · '+data.period.daysAvailable+' daily records. Last retrieved: '+freshness+'.',
+      'HTTP requests: '+fmt(totals.http_requests)+'. These include scripts, assets, bots and tests — not individual people.',
+      'Page views: '+fmt(totals.page_views)+'. This includes automated browser activity and does not equal customers.',
+      'Real User Monitoring page loads classified NOT bot: '+fmt(totals.browser_loads_not_bot)+'. Classified bot: '+fmt(totals.browser_loads_bot)+'. These are page loads, not unique humans.',
+      'Cloudflare daily unique-client estimates summed across days: '+fmt(totals.unique_clients)+'. This sum is NOT a seven-day unique-user count.',
+      data.dataState==='stale'?'The latest completed day has no fresh snapshot. Counts may be behind.':'Search Console traffic and Twitter referrals must be measured separately.'
+    ];
+    for(const line of messages)audience.append(make('p',line));
+   }
+   lastAudienceFetch=Date.now();
+  }catch(err){
+   audience.replaceChildren(make('p','Cloudflare traffic unavailable: '+clean(err.message,120)+'. No visitor totals have been invented.'));
+  }finally{audienceBusy=false}
+ }
+ report.addEventListener('click',()=>{void pullTraffic();void pull('report',{gpt:true})});
+ traffic.addEventListener('click',()=>pullTraffic({force:true}));
  top.addEventListener('click',()=>pull('top'));
  window.addEventListener('quantaphi:robot-directions',()=>pull());
  window.addEventListener('pagehide',()=>{enabled=false});
  setInterval(()=>{if(document.visibilityState==='visible')pull()},30000);
  void pull();
+ void pullTraffic();
 })();
