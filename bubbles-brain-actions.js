@@ -18,13 +18,14 @@ function classify(utterance){
  const ask=/\b(?:show|give|read|tell|check|list|summari[sz]e|what|how|which|report)\b/i;
  const target=/\b(?:bots?|robot\s*brain|brain|jobs?|tasks?|pink\s*panther|color\s*bots?|agents?|work\s*report)\b/i;
  if(report.test(text)&&ask.test(text)&&target.test(text))return 'report';
- const dispatch=/\b(?:tell|ask|have|send|assign|instruct|dispatch|queue|start|launch|submit|give)\b.{0,100}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther|jobs?|tasks?)\b/i;
+ const dispatch=/\b(?:send|assign|instruct|dispatch|queue|start|launch|submit)\b.{0,100}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther|jobs?|tasks?)\b/i;
+ const dispatchByName=/\b(?:tell|ask|have|give)\b.{0,70}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,90}\b(?:to\s+)?(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
  const dispatchReverse=/\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,80}\b(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
  const change=/\b(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct|implement|investigate|verify|check)\b/i;
  const subject=/\b(?:quantaphi|quanta\s*phi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone|app|code\s*phi|infinity\s*phi|omni\s*phi|moltnook)\b/i;
  const imperative=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct|implement|investigate|verify|check|start|queue|assign|dispatch|send|tell|ask|have|launch)\b/i;
  const directive=/^(?:(?:bubbles)[\s,:]+)?(?:please\s+)?(?:i\s+(?:need|want)\s+(?:you\s+)?to|you\s+(?:need|have)\s+to|can\s+you|could\s+you|would\s+you|we\s+need\s+to)\b/i;
- if(dispatch.test(text)||dispatchReverse.test(text))return 'queue';
+ if(dispatch.test(text)||dispatchByName.test(text)||dispatchReverse.test(text))return 'queue';
  if(change.test(text)&&subject.test(text)&&(imperative.test(text)||directive.test(text)))return 'queue';
  return 'chat';
 }
