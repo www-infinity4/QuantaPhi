@@ -14,7 +14,7 @@ test('continuous microphone replaces restart-driven platform recognition', () =>
 });
 test('speaking does not stop microphone capture; echo is discarded locally', () => {
   const speak = source.slice(source.indexOf('private void speak('), source.indexOf('@Override public IBinder'));
-  assert.doesNotMatch(speak, /stopRecognition\(|\.stop\(|\.release\(/);
+  assert.doesNotMatch(speak, /stopRecognition\(|microphone\.(?:stop|release)\(/);
   assert.match(source, /if \(speaking\) \{[\s\S]*?speech\.reset\(\);[\s\S]*?continue;/);
 });
 test('explicit mute and service stop release microphone', () => {
@@ -34,4 +34,21 @@ test('movement uses full drag distance and clamps to screen', () => {
   assert.match(source, /startX\+Math.round\(dx\)/);
   assert.match(source, /screen.widthPixels-getWidth\(\)/);
   assert.match(source, /if\(!moved\)/);
+});
+
+test('ticket handoff matches explicit commands and does not embed credentials', () => {
+  const literal = source.match(/addressed\.matches\(("(?:[^"\\]|\\.)*")\)/)[1];
+  const javaPattern = JSON.parse(literal);
+  const pattern = new RegExp(javaPattern.replace('(?i)', ''), 'i');
+  for (const command of ['create a work ticket to publish the APK', 'please make a ticket for Bubbles', 'submit ticket to fix voice']) assert.ok(pattern.test(command), command);
+  for (const phrase of ['what is a work ticket', 'do not create a work ticket', 'hello']) assert.ok(!pattern.test(phrase), phrase);
+  const handoff = source.slice(source.indexOf('if (addressed.matches'), source.indexOf('askOracle(addressed);'));
+  assert.match(handoff, /appendQueryParameter\("workRequest", addressed\)/);
+  assert.doesNotMatch(handoff, /Authorization|ownerToken|work\/tickets\/create/);
+});
+test('TTS callback loss has a bounded recovery and diagnostics preserve replies', () => {
+  assert.match(source, /generation == speechGeneration/);
+  assert.match(source, /tts\.stop\(\);\s*finishSpeaking\(\)/);
+  assert.match(source, /putString\("last_heard", text\)/);
+  assert.match(source, /putString\("last_reply", result\)/);
 });
