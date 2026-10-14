@@ -66,3 +66,7 @@ ongoing stop notification, and calls the existing Oracle chat endpoint.
 This native project is an initial test build, not a completed production app
 or a replica of a proprietary GPT model. Provider access and tools require
 proper credentials and separately authorized adapters.
+
+## Owner-only spoken jobs
+
+Only the verified platform owner may create Robot Brain jobs. Public Bubbles embeds cannot use the owner's session. Spoken jobs receive server-confirmed ticket receipts; a queued job is not a completed repair.
