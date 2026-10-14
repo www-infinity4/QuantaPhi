@@ -1,10 +1,10 @@
 name: Bubbles real tool results
 on:
   pull_request:
-    paths: ['workers/bubbles-tools/**', 'test/bubbles-tools.test.mjs', 'test/bubbles-stream-voice.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', 'bubbles.html', 'index.html', 'bubbles-stream-voice.js', '.github/workflows/bubbles-tools.yml']
+    paths: ['workers/bubbles-tools/**', 'test/bubbles-tools.test.mjs', 'test/bubbles-resonance.test.mjs', 'test/bubbles-stream-voice.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', 'bubbles.html', 'index.html', 'bubbles-stream-voice.js', '.github/workflows/bubbles-tools.yml']
   push:
     branches: [main]
-    paths: ['workers/bubbles-tools/**', 'test/bubbles-tools.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', '.github/workflows/bubbles-tools.yml']
+    paths: ['workers/bubbles-tools/**', 'test/bubbles-tools.test.mjs', 'test/bubbles-resonance.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', '.github/workflows/bubbles-tools.yml']
 permissions:
   contents: read
 jobs:
@@ -15,4 +15,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --check bubbles-ai.js && node --check bubbles-brain-actions.js && node --test test/bubbles-tools.test.mjs test/bubbles-stream-voice.test.mjs test/bubbles-brain-bridge.test.cjs test/bubbles-brain-actions.test.cjs
+      - run: node --check bubbles-ai.js && node --check bubbles-brain-actions.js && node --test test/bubbles-resonance.test.mjs test/bubbles-tools.test.mjs test/bubbles-stream-voice.test.mjs test/bubbles-brain-bridge.test.cjs test/bubbles-brain-actions.test.cjs
