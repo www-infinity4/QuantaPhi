@@ -121,7 +121,10 @@ public final class MainActivity extends Activity {
         super.onResume();
         // Only a user tap on our Quick Settings tile requests startup.
         // Consume the request so returning from Settings cannot trigger a second session.
-        if (getIntent().getBooleanExtra(BubblesTileService.EXTRA_START, false)) {
+        String request = getIntent().getStringExtra(BubblesTileService.EXTRA_START);
+        android.content.SharedPreferences tile = getSharedPreferences("bubbles-tile", MODE_PRIVATE);
+        if (request != null && request.equals(tile.getString("pending-start", null))) {
+            tile.edit().remove("pending-start").commit();
             getIntent().removeExtra(BubblesTileService.EXTRA_START);
             checkAndStart();
         }
