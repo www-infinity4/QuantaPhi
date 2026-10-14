@@ -1,6 +1,15 @@
 package org.quantaphi.bubbles;
 
 import android.content.Context;
+import android.net.Uri;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceError;
+import android.webkit.WebSettings;
+import android.webkit.WebChromeClient;
+import org.json.JSONTokener;
+import org.json.JSONObject;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -36,10 +45,23 @@ final class FloatingOracleWindow {
     private TextView conversation, status, hearing;
     private ScrollView scroll;
     private EditText input;
+    private View controls, hearingNative, composerNative;
+    private WebView website;
+    private boolean websiteReady = false;
+    private String pendingSpeech = "";
+    private boolean dispatchInFlight = false;
+    private Button muteButton;
+    private long pendingSince = 0L;
+    private static final String SITE_URL = "https://quantaphi.org/bubbles.html?nativeOverlay=1";
+    private static final String SITE_HOST = "quantaphi.org";
     private String lastHistory = "";
     private final Runnable update = new Runnable() {
         @Override public void run() {
             if (root == null) return;
+            if (websiteReady) {
+                deliverQueuedSpeech();
+                pollWebsiteReply();
+            }
             String history = OracleChatActivity.renderHistory(service);
             if (!lastHistory.equals(history)) {
                 lastHistory = history;
@@ -47,6 +69,7 @@ final class FloatingOracleWindow {
                 scroll.post(() -> scroll.fullScroll(View.FOCUS_DOWN));
             }
             String voice = BrainNotes.prefs(service).getString("voice_state", "starting");
+            if (muteButton != null) muteButton.setText("muted".equals(voice) ? "Mic on" : "Mic off");
             String provider = BrainNotes.prefs(service).getString("ai_provider", "Oracle");
             status.setText("● " + voice + "   •   " + provider);
             String partial = BrainNotes.prefs(service).getString("last_partial", "");
@@ -93,7 +116,10 @@ final class FloatingOracleWindow {
         return b;
     }
     boolean show() {
-        if (root != null) return true;
+        if (root != null) {
+            root.setVisibility(View.VISIBLE);
+            return true;
+        }
         LinearLayout page = new LinearLayout(service);
         page.setOrientation(LinearLayout.VERTICAL);
         page.setPadding(dp(16), dp(14), dp(16), dp(14));
@@ -104,9 +130,17 @@ final class FloatingOracleWindow {
         TextView title = text("ORACLE  /  BUBBLES", 21, LIGHT);
         title.setTypeface(null, Typeface.BOLD);
         header.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
+        muteButton = button("Mic off", false);
+        muteButton.setContentDescription("Mute or resume Bubbles microphone; text chat still works");
+        muteButton.setOnClickListener(v -> {
+            boolean muted = "muted".equals(BrainNotes.prefs(service).getString("voice_state", ""));
+            service.startService(new Intent(service, BubblesService.class)
+                .setAction(muted ? BubblesService.ACTION_RESUME : BubblesService.ACTION_MUTE));
+        });
+        header.addView(muteButton);
         Button close = button("✕", false);
         close.setContentDescription("Close floating Oracle conversation");
-        close.setOnClickListener(v -> close());
+        close.setOnClickListener(v -> hide());
         header.addView(close);
         page.addView(header);
 
@@ -118,6 +152,8 @@ final class FloatingOracleWindow {
         page.addView(hearing);
 
         LinearLayout controls = new LinearLayout(service);
+        this.controls = controls;
+        this.hearingNative = hearing;
         controls.setPadding(0, dp(12), 0, dp(9));
         Button stop = button("Stop speaking", true);
         stop.setOnClickListener(v -> service.startService(
@@ -141,6 +177,7 @@ final class FloatingOracleWindow {
         page.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
 
         LinearLayout composer = new LinearLayout(service);
+        this.composerNative = composer;
         composer.setGravity(Gravity.CENTER_VERTICAL);
         composer.setPadding(0, dp(10), 0, 0);
         input = new EditText(service);
@@ -172,6 +209,62 @@ final class FloatingOracleWindow {
         });
         composer.addView(send, sp);
         page.addView(composer);
+        // Prefer the real QuantaPhi Bubbles application: its AI request builder,
+        // owner-wallet authorization, Robot Brain tickets, message actions and
+        // notes are identical to the site. Keep native chat as offline fallback.
+        try {
+            website = new WebView(service);
+            website.setVisibility(View.GONE);
+            website.setBackgroundColor(Color.rgb(247, 244, 251));
+            WebSettings settings = website.getSettings();
+            settings.setJavaScriptEnabled(true);
+            settings.setDomStorageEnabled(true);
+            settings.setAllowFileAccess(false);
+            settings.setAllowContentAccess(false);
+            settings.setJavaScriptCanOpenWindowsAutomatically(false);
+            settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
+            website.setWebChromeClient(new WebChromeClient()); // no microphone or camera grants
+            website.setWebViewClient(new WebViewClient() {
+                @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                    if (!request.isForMainFrame()) return false;
+                    Uri target = request.getUrl();
+                    if ("https".equals(target.getScheme()) && SITE_HOST.equals(target.getHost()))
+                        return false;
+                    // No intent:, file:, content: or javascript: navigation inside the overlay.
+                    if ("https".equals(target.getScheme())) {
+                        try {service.startActivity(new Intent(Intent.ACTION_VIEW, target)
+                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));}
+                        catch (RuntimeException ignored) {}
+                    }
+                    return true;
+                }
+                @Override public void onPageFinished(WebView view, String url) {
+                    Uri location = Uri.parse(url);
+                    if (!"https".equals(location.getScheme()) || !SITE_HOST.equals(location.getHost())
+                            || !"/bubbles.html".equals(location.getPath())) {
+                        showWebsite(false);
+                        return;
+                    }
+                    // Old live deployments are not treated as capable. Never send a
+                    // work command to a guessed JS endpoint.
+                    view.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.isNativeOverlay)",
+                        result -> showWebsite("true".equals(result)));
+                }
+                @Override public void onReceivedError(WebView view, WebResourceRequest request,
+                                                       WebResourceError error) {
+                    if (request.isForMainFrame()) {
+                        showWebsite(false);
+                        status.setText("QuantaPhi unavailable · local Oracle chat is still ready");
+                    }
+                }
+            });
+            page.addView(website, new LinearLayout.LayoutParams(-1, 0, 1));
+            website.loadUrl(SITE_URL);
+        } catch (RuntimeException error) {
+            // WebView might be unavailable or outdated; native capture and chat work.
+            website = null;
+            status.setText("Website chat unavailable · local Oracle chat ready");
+        }
 
         int width = Math.min(service.getResources().getDisplayMetrics().widthPixels - dp(24), dp(550));
         int height = Math.min((int)(service.getResources().getDisplayMetrics().heightPixels * .74f), dp(680));
@@ -193,11 +286,78 @@ final class FloatingOracleWindow {
             return false;
         }
     }
+    boolean sendSpoken(String text) {
+        if (!websiteReady || website == null) return false;
+        pendingSpeech = String.valueOf(text).trim().substring(0, Math.min(1800, text.trim().length()));
+        pendingSince = android.os.SystemClock.elapsedRealtime();
+        deliverQueuedSpeech();
+        return true;
+    }
+
+    private void showWebsite(boolean ready) {
+        websiteReady = ready && root != null && website != null;
+        if (website != null) website.setVisibility(websiteReady ? View.VISIBLE : View.GONE);
+        if (scroll != null) scroll.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
+        if (composerNative != null) composerNative.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
+        if (controls != null) controls.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
+        if (hearingNative != null) hearingNative.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
+        if (websiteReady) {
+            status.setText("● QuantaPhi Bubbles · full website brain, notes & chat");
+            if (!pendingSpeech.isEmpty()) deliverQueuedSpeech();
+        }
+    }
+
+    private void deliverQueuedSpeech() {
+        if (!websiteReady || website == null || pendingSpeech.isEmpty() || dispatchInFlight) return;
+        if (android.os.SystemClock.elapsedRealtime() - pendingSince > 20000L) {
+            pendingSpeech = "";
+            status.setText("Speech request timed out; nothing was submitted.");
+            return;
+        }
+        final String spoken = pendingSpeech;
+        dispatchInFlight = true;
+        // JSON quoting prevents recognized speech from becoming executable JS.
+        website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.sendNativeSpeech("
+            + JSONObject.quote(spoken) + "))", result -> {
+                dispatchInFlight = false;
+                if ("true".equals(result) && spoken.equals(pendingSpeech)) pendingSpeech = "";
+            });
+    }
+
+    private void pollWebsiteReply() {
+        if (!websiteReady || website == null) return;
+        website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.drainNativeReply()",
+            raw -> {
+                if (!websiteReady || raw == null || "null".equals(raw)) return;
+                try {
+                    Object value = new JSONTokener(raw).nextValue();
+                    if (value instanceof String && !((String) value).isEmpty())
+                        service.speakWebsiteReply(((String) value).substring(0, Math.min(2200, ((String) value).length())));
+                } catch (Exception ignored) {}
+            });
+    }
+
+    /** Collapsing the overlay preserves the first-party chat and bot session.
+     * Only service shutdown destroys the WebView and releases resources.
+     */
+    void hide() {
+        if (root != null) root.setVisibility(View.GONE);
+    }
+
     void close() {
         ui.removeCallbacks(update);
+        websiteReady = false;
+        pendingSpeech = "";
+        dispatchInFlight = false;
         if (root != null) {
             try { manager.removeView(root); } catch (RuntimeException ignored) {}
             root = null;
+        }
+        if (website != null) {
+            website.stopLoading();
+            website.loadUrl("about:blank");
+            website.destroy();
+            website = null;
         }
     }
 }

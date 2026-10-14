@@ -61,6 +61,7 @@ public final class BubblesService extends Service {
     public static final String ACTION_STOP_SPEAKING = "org.quantaphi.bubbles.STOP_SPEAKING";
     public static final String ACTION_REFRESH_VOICE = "org.quantaphi.bubbles.REFRESH_VOICE";
     public static final String ACTION_RESUME = "org.quantaphi.bubbles.RESUME";
+    public static final String ACTION_MUTE = "org.quantaphi.bubbles.MUTE";
     public static final String ACTION_RECORD = "org.quantaphi.bubbles.RECORD_AUDIO";
     public static final String ACTION_SAVE_AUDIO = "org.quantaphi.bubbles.SAVE_AUDIO";
     private final VoiceRecording recording = new VoiceRecording();
@@ -137,7 +138,12 @@ public final class BubblesService extends Service {
                 } catch (Exception ignored) { /* Restore default voice. */ }
             }
             if (!selected) {
-                int language = tts.setLanguage(Locale.US);
+                // Match the website's British-English voice preference whenever
+                // the selected Android neural TTS engine provides that locale.
+                int language = tts.setLanguage(Locale.UK);
+                if (language == TextToSpeech.LANG_MISSING_DATA
+                        || language == TextToSpeech.LANG_NOT_SUPPORTED)
+                    language = tts.setLanguage(Locale.US);
                 if (language == TextToSpeech.LANG_MISSING_DATA
                         || language == TextToSpeech.LANG_NOT_SUPPORTED)
                     tts.setLanguage(Locale.ENGLISH);
@@ -160,6 +166,11 @@ public final class BubblesService extends Service {
         }
         if (intent != null && ACTION_RESUME.equals(intent.getAction()) && connected) {
             resumeSession();
+            return START_NOT_STICKY;
+        }
+        if (intent != null && ACTION_MUTE.equals(intent.getAction())) {
+            if (connected) muteSession();
+            else stopSelf(); // A mute command cannot start a microphone session.
             return START_NOT_STICKY;
         }
         if (intent != null && ACTION_STOP.equals(intent.getAction())) {
@@ -214,6 +225,13 @@ public final class BubblesService extends Service {
             bubbleLayout.x = 14; bubbleLayout.y = 240;
             manager.addView(orb, bubbleLayout);
             connected = true;
+            // Keep the real QuantaPhi website assistant available while the
+            // user is in Twitter or another app, even with the panel collapsed.
+            // The WebView has its own first-party wallet session; no cookie copying.
+            oracleWindow = new FloatingOracleWindow(this, manager);
+            if (oracleWindow.show()) oracleWindow.hide();
+            else BrainNotes.prefs(this).edit().putString("last_error",
+                "Full website assistant unavailable. Native Oracle fallback is active.").apply();
             pendingAudioRecording = intent != null && ACTION_RECORD.equals(intent.getAction());
             muted = false;
             beginListening();
@@ -478,6 +496,18 @@ public final class BubblesService extends Service {
         String normalized = addressed.toLowerCase(Locale.ROOT).replaceAll("[\\s,.!?]+", " ").trim();
         if (normalized.equals(lastTranscript) && now - lastAt < 2500) return;
         lastTranscript = normalized;lastAt = now;activeUntil = now + 30000L;
+        // Use the SAME QuantaPhi website assistant, owner-wallet verification,
+        // Robot Brain job receipts, notes and typed conversation when available.
+        // The floating WebView never receives ChatGPT OAuth credentials.
+        if (oracleWindow != null && oracleWindow.sendSpoken(addressed)) return;
+        // Offline/native fallback: voice commands still take notes locally.
+        String noteReply = VoiceNotes.consume(this, addressed);
+        if (noteReply != null) {
+            OracleChatActivity.append(this, "You", addressed);
+            OracleChatActivity.append(this, "Oracle", noteReply);
+            speak(noteReply);
+            return;
+        }
         if (busy) {queued = addressed;return;}
         speechSuppressed = false; // A new spoken request can receive spoken output.
         if (addressed.matches("(?i)^(?:please\\s+)?(?:create|make|submit|queue|start)\\s+(?:a\\s+)?(?:work\\s+)?ticket\\b.*")) {
@@ -590,6 +620,12 @@ public final class BubblesService extends Service {
             throw new IllegalStateException("Empty Oracle response");
         } finally {conn.disconnect();}
     }
+    /** Only results from the first-party QuantaPhi site voice request are spoken. */
+    void speakWebsiteReply(String response) {
+        if (response == null || response.trim().isEmpty()) return;
+        if (connected && !muted) speak(response);
+    }
+
     private void speak(String response) {
         if (!connected || muted) return;
         if (tts == null || !ttsReady) {

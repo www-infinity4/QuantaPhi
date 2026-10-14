@@ -6,8 +6,8 @@ test('Android debug build uses separate, installable package to avoid old signat
  const manifest=fs.readFileSync('android/bubbles-overlay/app/src/main/AndroidManifest.xml','utf8');
  const workflow=fs.readFileSync('.github/workflows/bubbles-android.yml','utf8');
  assert.match(gradle,/applicationId 'org\.quantaphi\.bubbles'/);
- assert.match(gradle,/debug\s*\{[^}]*applicationIdSuffix '\.preview3'/);
- assert.match(gradle,/manifestPlaceholders = \[appTitle: 'Bubbles Preview 3'\]/);
+ assert.match(gradle,/debug\s*\{[^}]*applicationIdSuffix '\.preview4'/);
+ assert.match(gradle,/manifestPlaceholders = \[appTitle: 'Bubbles Preview 4'\]/);
  assert.match(gradle,/release\s*\{[^}]*manifestPlaceholders = \[appTitle: 'Bubbles AI'\]/);
  assert.match(manifest,/android:label="\$\{appTitle\}"/);
  assert.match(workflow,/bubbles-preview-android12-apk/);
