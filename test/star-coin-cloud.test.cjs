@@ -10,7 +10,7 @@ async function ledger(){
  const hash=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(TOKEN))).toString('hex');
  identity.exec(`CREATE TABLE accounts(id TEXT PRIMARY KEY);CREATE TABLE account_devices(account_id TEXT,token_hash TEXT);INSERT INTO accounts VALUES('user_test');INSERT INTO account_devices VALUES('user_test','${hash}');`);
  const context={crypto,TextEncoder,Response,URL,console};vm.createContext(context);
- vm.runInContext(fs.readFileSync('workers/quanta-phi-ledger/worker.js','utf8').replace('export default {','const worker = {')+'\nglobalThis.worker=worker;',context);
+ vm.runInContext(fs.readFileSync('workers/quanta-phi-ledger/worker.js','utf8').replace("import {handleCollectorRequest,serveCollectorArt} from './collector-cards.mjs';",'').replace('export default {','const worker = {')+'\nglobalThis.worker=worker;',context);
  const env={DB:d1(sqlite),IDENTITY_DB:d1(identity)};
  const call=(method,body)=>context.worker.fetch(new Request('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/star-coins',{method,headers:{origin:'https://quantaphi.org',authorization:'Bearer '+TOKEN,'content-type':'application/json'},body:body&&JSON.stringify(body)}),env,{});
  return {sqlite,call};

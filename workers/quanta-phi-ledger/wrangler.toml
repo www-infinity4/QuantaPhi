@@ -14,3 +14,10 @@ database_id = "a1a973b2-a37c-4e1c-b68e-a73803238206"
 
 [triggers]
 crons = ["* * * * *"]
+
+# Required to store each unique original design once. R2 must be enabled and
+# the bucket created before deploying this branch. No customer charges before
+# the matching art is durably stored.
+[[r2_buckets]]
+binding = "COLLECTOR_ART"
+bucket_name = "quantaphi-collector-art"

@@ -1,0 +1,43 @@
+name: Infinity collector museum
+on:
+  pull_request:
+    paths:
+      - 'collector-cards.*'
+      - 'collector-museum.*'
+      - 'card-museum/**'
+      - 'cloud-wallet-client.js'
+      - 'workers/quanta-phi-ledger/**'
+      - 'index.html'
+      - 'test/collector-museum.test.mjs'
+      - '.github/workflows/collector-museum.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'collector-cards.*'
+      - 'collector-museum.*'
+      - 'card-museum/**'
+      - 'cloud-wallet-client.js'
+      - 'workers/quanta-phi-ledger/**'
+      - 'index.html'
+      - 'test/collector-museum.test.mjs'
+      - '.github/workflows/collector-museum.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check browser and Worker syntax
+        run: |
+          node --check collector-cards.js
+          node --check collector-museum.js
+          node --check cloud-wallet-client.js
+          node --check workers/quanta-phi-ledger/collector-cards.mjs
+          node --check workers/quanta-phi-ledger/worker.js
+      - name: Verify museum release, serial and wallet contracts
+        run: node --test test/collector-museum.test.mjs

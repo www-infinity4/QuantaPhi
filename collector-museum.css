@@ -1,0 +1,29 @@
+/* Oracle Octaves collector museum, comfortable Android tap targets */
+.ic-museum{width:100%;max-width:700px;margin:20px auto;padding:20px;background:#fffcf8;border:1px solid #ddcfb7;border-radius:22px;box-shadow:0 5px 24px #25142511;color:#282132}
+.ic-museum .ic-kicker{display:block;color:#755b16;letter-spacing:.08em;font-size:12px;font-weight:900}
+.ic-museum h2{font-size:clamp(23px,6vw,32px);line-height:1.15;margin:8px 0}
+.ic-museum .ic-intro{font-size:16px;line-height:1.6}
+.ic-museum-tools{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.ic-museum button,.ic-museum a.ic-museum-link,.ic-museum-tools a{min-height:46px;padding:10px 16px;display:inline-flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;border-radius:13px;border:1px solid #886fc6;background:#fff;color:#4d2c8d;text-decoration:none;cursor:pointer}
+.ic-museum button.ic-primary{background:#6430a4;color:white;border-color:#6430a4}
+.ic-museum button:disabled{opacity:.55;cursor:not-allowed}
+.ic-series-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+.ic-series{border:1px solid #dbcdba;padding:16px;border-radius:18px;background:#fff}
+.ic-series h3{font-size:22px;margin:4px 0 8px;color:#492877}
+.ic-series p{line-height:1.5}
+.ic-series>small{display:block;margin:10px 0;color:#695b6b}
+.ic-empty-slot{min-height:130px;border:2px dashed #beadcf;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border-radius:14px;background:repeating-linear-gradient(-45deg,#f7f3fa,#f7f3fa 10px,#fff 10px,#fff 20px);padding:16px;gap:9px}
+.ic-empty-slot strong{font-size:18px}
+.ic-empty-slot span{font-size:14px}
+.ic-museum-item{display:grid;grid-template-columns:minmax(0,110px) minmax(0,1fr);gap:12px;padding:16px 0;border-top:1px solid #e6dce8}
+.ic-museum-art{min-height:140px;aspect-ratio:3/4;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#251d38;border:2px solid #d5b86e;border-radius:10px;overflow:hidden;color:#f8dd95}
+.ic-museum-art strong{font-family:Georgia,serif;font-size:58px;color:#e8c873}
+.ic-museum-art small{font-size:10px;letter-spacing:.1em}
+.ic-museum-art img{display:block;width:100%;height:100%;object-fit:contain}
+.ic-museum-details strong{font-size:17px}.ic-museum-details p{font-size:14px;margin:8px 0}
+.ic-museum-details small{display:block;font-size:12px;color:#665b75}
+.ic-museum-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.ic-museum-controls button{font-size:14px;min-height:42px}
+.ic-museum .ic-status{font-size:13px;overflow-wrap:anywhere;color:#655576;line-height:1.55}
+@media(min-width:700px){.ic-series-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:360px){.ic-museum{padding:12px}.ic-museum-item{grid-template-columns:minmax(0,1fr)}.ic-museum-art{width:135px}}

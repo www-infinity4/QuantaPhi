@@ -146,10 +146,10 @@ global.QuantaCloudConnection={ready,status:connectionStatus,hasCredential:()=>Bo
  if(!findDeviceToken())await ready;
  if(!findDeviceToken())await recoverAccountProfileFromDevice();
  const url=new URL(target);
- const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&(url.pathname.startsWith('/v1/quants/')||url.pathname.startsWith('/v1/music-quants/')));
+ const allowed=(url.origin===ENDPOINT&&['/v1/wallet/state','/v1/tokens/mint'].includes(url.pathname))||(url.origin==='https://quanta-phi-ledger.marvaseater.workers.dev'&&(url.pathname.startsWith('/v1/quants/')||url.pathname.startsWith('/v1/music-quants/')||url.pathname.startsWith('/v1/collector/')));
  if(!allowed)throw new Error('unsupported_wallet_target');
  const bridge=global.StarQuestCloudLedger;
- if(bridge?.authenticatedFetch){try{return await bridge.authenticatedFetch(target,options)}catch(error){if(error.message!=='ledger_not_connected')throw error}}
+ if(!url.pathname.startsWith('/v1/collector/')&&bridge?.authenticatedFetch){try{return await bridge.authenticatedFetch(target,options)}catch(error){if(error.message!=='ledger_not_connected')throw error}}
  const token=findDeviceToken()||await resolveDeviceToken();if(!token)throw new Error('ledger_not_connected');
  const body=options.body&&typeof options.body==='object'?JSON.stringify(options.body):options.body;
  return fetch(target,{...options,body,headers:{...(options.headers||{}),'content-type':'application/json',authorization:'Bearer '+token}});

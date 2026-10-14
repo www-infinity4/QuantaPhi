@@ -1,0 +1,26 @@
+/* Oracle Octaves typography for verified Infinity 2026 collector cards. */
+#collectorCheckout,#collectorShelf{width:100%;max-width:610px;margin:14px auto;background:#fffcf7;border:1px solid #c6ae73;border-radius:21px;padding:17px;color:#28212b;box-shadow:0 9px 24px #1a163016;}
+#collectorCheckout h3,#collectorShelf h3{margin:0 0 8px;font-size:20px;letter-spacing:.01em}
+#collectorCheckout .ic-explainer{font-size:15px;line-height:1.5}
+#collectorCheckout .ic-actions{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+#collectorCheckout button,#collectorShelf button,#collectorCheckout .ic-download{min-height:48px;flex:1 1 190px;padding:11px 13px;border-radius:13px;border:1px solid #8467a5;background:#fff;color:#48216e;font-size:16px;line-height:1.3;font-weight:800;text-align:center;cursor:pointer}
+#collectorCheckout .ic-primary{background:#51288b;color:#fff}
+#collectorCheckout button:disabled,#collectorShelf button:disabled{opacity:.55;cursor:not-allowed}
+#collectorCheckout :is(button,a):focus-visible,#collectorShelf button:focus-visible{outline:3px solid #d1a026;outline-offset:3px}
+#collectorCheckout .ic-status,#collectorShelf .ic-status{font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+#collectorCheckout .ic-outcome{padding:12px;background:#f7f0dd;border:1px solid #d9bc78;border-radius:14px}
+#collectorCheckout .ic-outcome img{display:block;width:100%;max-width:450px;height:auto;margin:0 auto 12px}
+#collectorCheckout .ic-receipt{display:grid;gap:6px;font-size:13px;overflow-wrap:anywhere}
+#collectorCheckout .ic-download{display:block;width:max-content;max-width:100%;margin-top:12px;text-decoration:none}
+#collectorShelf .ic-shelf-rows{display:grid;gap:12px}
+#collectorShelf .ic-owned{display:flex;gap:12px;padding:12px;border-radius:12px;border:1px solid #e4d6b2;background:#fff;min-width:0;overflow-wrap:anywhere}
+#collectorShelf .ic-owned img{width:85px;height:110px;object-fit:contain;border-radius:5px}
+#collectorShelf .ic-owned p{margin:6px 0}
+#collectorShelf .ic-owned small{display:block;overflow-wrap:anywhere}
+@media(max-width:480px){#collectorCheckout,#collectorShelf{padding:13px}#collectorCheckout .ic-actions button{flex-basis:100%}}
+#collectorCheckout [hidden],#collectorShelf [hidden]{display:none!important}
+
+#collectorShelf .ic-owned-art{position:relative;flex:0 0 85px;min-width:0}
+#collectorShelf .ic-owned-art img{display:block;max-width:100%}
+#collectorShelf .ic-gold-number{position:absolute;bottom:7px;right:3px;font-family:Georgia,serif;font-size:15px;font-weight:900;color:#f7d36e;-webkit-text-stroke:.45px #2b1805;text-shadow:1px 2px 4px #17100d}
+#collectorShelf .ic-save-owned{font-size:13px;min-height:42px;margin-top:7px}
