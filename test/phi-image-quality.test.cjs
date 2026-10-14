@@ -33,7 +33,7 @@ test('only explicit endorsement becomes preference; download request is not veri
  const data=new Map();
  const storage={getItem:key=>data.get(key)||null,setItem:(key,value)=>data.set(key,value)};
  const window={};
- vm.runInNewContext(source('phi-image-learning.js'),{window,localStorage:storage});
+ vm.runInNewContext(source('phi-image-learning.js'),{window,localStorage:storage,document:{readyState:'loading',addEventListener(){}}});
  const learning=window.PhiImageLearning;
  const artifact={id:'one',mode:'Image',prompt:'19th-century side-wheel steamboat'};
  assert.equal(learning.record(artifact,'save_requested'),true);
