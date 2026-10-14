@@ -41,6 +41,11 @@ jobs:
           mkdir -p /tmp/brain-policy
           javac -d /tmp/brain-policy android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LearningPolicy.java android/bubbles-overlay/checks/LearningPolicyCheck.java
           java -cp /tmp/brain-policy LearningPolicyCheck
+      - name: Verify sound recording bytes and limits
+        run: |
+          mkdir -p /tmp/bubbles-wav
+          javac -d /tmp/bubbles-wav android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/VoiceRecording.java android/bubbles-overlay/checks/VoiceRecordingCheck.java
+          java -cp /tmp/bubbles-wav org.quantaphi.bubbles.VoiceRecordingCheck
       - name: Compile Bubbles Android application
         working-directory: android/bubbles-overlay
         run: gradle --no-daemon assembleDebug
