@@ -44,6 +44,8 @@ final class FloatingOracleWindow {
     private final BubblesService service;
     private final WindowManager manager;
     private final Handler ui = new Handler(Looper.getMainLooper());
+    private final java.util.concurrent.ExecutorService gptWork=java.util.concurrent.Executors.newSingleThreadExecutor();
+    private boolean gptBusy=false;
     private LinearLayout root;
     private TextView conversation, status, hearing;
     private ScrollView scroll;
@@ -335,6 +337,48 @@ final class FloatingOracleWindow {
     }
     private void pollWebsiteReply() {
         if (!websiteReady || website == null) return;
+        website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.setNativeGPTAvailable("
+                + (ChatGPTSignIn.hasPlan(service) ? "true" : "false") + ")", null);
+        website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.takeNativeGPTLogin())", result -> {
+            if(!websiteReady || !"true".equals(result))return;
+            Intent open = new Intent(service, MainActivity.class).putExtra("open_chatgpt_signin",true)
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            try{service.startActivity(open);}catch(Exception error){
+                status.setText("Could not open ChatGPT sign-in settings.");
+            }
+        });
+        if(!gptBusy)website.evaluateJavascript(
+            "window.QuantaBubbles && window.QuantaBubbles.drainNativeGPTRequest()", payload -> {
+                if(!websiteReady || gptBusy || payload==null || "null".equals(payload))return;
+                try {
+                    Object decoded=new JSONTokener(payload).nextValue();
+                    if(!(decoded instanceof String) || ((String)decoded).isEmpty())return;
+                    JSONObject task=new JSONObject((String)decoded);
+                    String id=task.optString("id","");
+                    String prompt=task.optString("prompt","");
+                    if(!id.matches("[0-9a-fA-F-]{36}") || prompt.isEmpty() || prompt.length()>18000)return;
+                    gptBusy=true;
+                    gptWork.execute(() -> {
+                        String answer="",error="";
+                        try {
+                            if(!ChatGPTSignIn.hasPlan(service))throw new IllegalStateException("ChatGPT plan not authorized");
+                            answer=ChatGPTSignIn.ask(service,prompt);
+                        }catch(Exception problem){
+                            error=String.valueOf(problem.getMessage());
+                            if(error.length()>140)error=error.substring(0,140);
+                        }
+                        final String result=answer,problem=error;
+                        ui.post(() -> {
+                            gptBusy=false;
+                            if(websiteReady&&website!=null){
+                                website.evaluateJavascript(
+                                  "Boolean(window.QuantaBubbles&&window.QuantaBubbles.finishNativeGPTRequest("
+                                  +JSONObject.quote(id)+","+JSONObject.quote(result)+","+JSONObject.quote(problem)+"))",null);
+                            }
+                        });
+                    });
+                }catch(Exception ignored){}
+            });
         website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.voiceConflict())", value -> {
             if ("true".equals(value)) service.pauseSharedMicrophone();
         });
@@ -358,6 +402,7 @@ final class FloatingOracleWindow {
 
     void close() {
         ui.removeCallbacks(update);
+        gptWork.shutdownNow();
         websiteReady = false;
         pendingSpeech = "";
         dispatchInFlight = false;
