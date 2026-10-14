@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bubbles · Genuine GPT-Live Voice | QuantaPhi</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{color-scheme:dark;font:16px/1.5 system-ui,sans-serif}
+body{background:#141026;color:#f7f2ff;margin:0;padding:18px}
+main{max-width:680px;margin:0 auto}
+h1{font-size:27px;margin:10px 0}
+small,.muted{color:#cbb9ea}
+section{background:#241c3b;border:1px solid #5e468b;padding:16px;border-radius:20px;margin:14px 0}
+button{font:600 15px system-ui;color:white;background:#7145be;padding:13px;border:0;border-radius:13px;margin:5px;min-height:46px}
+button:disabled{opacity:.45}
+input{box-sizing:border-box;color:white;background:#392d55;border:1px solid #9177c0;border-radius:13px;padding:13px;width:100%;font:16px system-ui}
+#liveStatus{color:#b1ffdf;min-height:28px}
+#liveTranscript{overflow:auto;max-height:36vh;min-height:15vh;border-radius:13px;padding:12px;background:#1c1630}
+a{color:#dbc3ff}audio{width:100%}
+</style></head><body><main>
+<a href="/bubbles.html">← Bubbles AI</a>
+<h1>GPT-Live Voice · Bubbles</h1>
+<p>Genuine GPT-Live 1 audio, with two-way conversation and interruptions. This is the official API model, not Android text-to-speech.</p>
+<section><p><strong>Owner-only developer connection.</strong> Requires a separately billed OpenAI project API key configured in the Cloudflare gateway and its private owner authorization token. ChatGPT sign-in alone does not authorize audio.</p>
+<label for="liveOwner">Private owner authorization (this session only)</label>
+<input id="liveOwner" type="password" autocomplete="off" spellcheck="false" placeholder="Owner token">
+<p><small>Do not paste a ChatGPT login token or OpenAI API key here.</small></p>
+<button id="liveStart">Start genuine GPT-Live</button>
+<button id="liveStop" disabled>End conversation</button>
+<button id="liveInterrupt" disabled>Stop session now</button>
+<p id="liveStatus" role="status" aria-live="polite">Not connected. Microphone off.</p>
+<audio id="liveAudio" autoplay controls playsinline></audio>
+</section><section><h2>Conversation</h2><div id="liveTranscript" aria-live="polite"></div></section>
+<p class="muted">GPT-Live sessions cost $0.05 per minute, billed per second; delegated backend/tool work is additional. Speech is AI-generated. You must explicitly start a paid session; closing it releases the microphone.</p>
+</main><script type="module" src="/bubbles-gpt-live.js"></script></body></html>
