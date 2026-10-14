@@ -11,7 +11,7 @@ let streamVoice=null,voiceGeneration=0;
 const TICKETS='https://infinity-brain-clock.marvaseater.workers.dev';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
 const params=new URLSearchParams(location.search);
-const embedded=params.get('embed')==='1'&&window.parent!==window;
+const embedded=window.parent!==window; // Iframes never receive owner tools, even without ?embed=1.
 const bubbleId=embedded?(String(params.get('id')||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,48)||'embedded'):'';
 const NOTES='quantaphi:bubbles:notes:v1'+(bubbleId?':'+bubbleId:'');
 const CONFIG='quantaphi:bubbles:config:v1'+(bubbleId?':'+bubbleId:'');
@@ -45,6 +45,7 @@ let messages=keepChat?data(HISTORY,[]):[];
 if(!Array.isArray(messages))messages=[];
 messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-12).map(item=>({role:item.role,text:item.text.slice(0,1800)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
+let awaitingBrainInstructions=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
@@ -244,15 +245,41 @@ function extract(reply){
  if(value&&typeof value==='object')value=value.text||value.content||'';
  return String(value||'').trim();
 }
+function isBrainJobIntent(text){
+ const request=String(text||'').trim();
+ if(!request||request.length>4000||/^(?:why|how|what|when|where|who|whether|did|does|do|is|are|don't|never|stop)\b/i.test(request))return false;
+ const directive=/^(?:(?:hey|okay|ok)\s+)?(?:bubbles(?:\s+ai)?[,!:\s]+)?(?:please\s+)?(?:make|create|start|queue|submit|send|add|open|put|tell|ask|instruct|direct|have|i\s+(?:need|want)\s+(?:(?:you|it|bubbles)\s+)?to|(?:can|could|would|will)\s+you)\b/i;
+ if(!directive.test(request))return false;
+ const brain=/\b(?:robot|bot)\s+brain\b/i;
+ return brain.test(request)&&(
+  (/\b(?:job|task|ticket|work\s+request)\b/i.test(request)&&/\b(?:make|create|start|queue|submit|send|add|open|put)\b/i.test(request))||
+  /\b(?:tell|ask|instruct|direct|have|send)\b.{0,65}\b(?:robot|bot)\s+brain\s+to\b/i.test(request)
+ );
+}
+function brainJobDetail(text){
+ const request=String(text||'').trim();
+ // Creating a blank ticket does not give the bots actionable instructions.
+ const suffix=request.match(/\b(?:robot|bot)\s+brain\b\s*(?:to|for|about|that)\s+(.+)$/i)?.[1]||
+              request.match(/\b(?:job|task|ticket)\b.{0,65}\b(?:to|for|about)\s+(.+)$/i)?.[1]||'';
+ const detail=suffix.replace(/[.!?]+$/,'').trim();
+ return detail.split(/\s+/).length>=2?detail:'';
+}
 function isOwnerWorkRequest(text){
  const request=String(text||'').trim();
  if(!request||request.length>4000)return false;
+ if(isBrainJobIntent(request))return true;
  const verb=/\b(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct)\b/i;
  const target=/\b(?:quantaphi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone)\b/i;
  const direct=/^(?:(?:please|hey bubbles|bubbles)\s+)*(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct)\b/i;
  const directive=/^(?:please\s+)?(?:i\s+(?:need|want)\s+(?:you\s+)?to|you\s+(?:need|have)\s+to|can\s+you|could\s+you|would\s+you|please|we\s+need\s+to)\b/i;
  const followup=/(?:^|[.!?]\s+)(?:please\s+)?(?:fix|repair|restore|update|upgrade|wire|connect)\b/i;
  return verb.test(request)&&target.test(request)&&(direct.test(request)||directive.test(request)||followup.test(request));
+}
+function showBrainAnswer(answer){
+ messages.push({role:'assistant',text:answer});messages=messages.slice(-20);persistChat();
+ display(answer,'ai');status.textContent=answer;if(config.voice)speakText(answer);
+ busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+ if(voicePending){const next=voicePending;voicePending='';void sendMessage(next)}
 }
 async function sendMessage(text){
  const request=String(text||'').trim();if(busy||!request)return;
@@ -261,10 +288,35 @@ async function sendMessage(text){
  const history=messages.slice(-10).map(m=>m.role+': '+m.text.slice(0,650)).join('\n');
  messages.push({role:'user',text:request});messages=messages.slice(-20);persistChat();
  status.textContent=config.alias+' is thinking…';
+ const explicitBrainJob=isBrainJobIntent(request);
+ const brainFollowUp=awaitingBrainInstructions&&!explicitBrainJob;
+ if(explicitBrainJob||brainFollowUp){
+  if(embedded||!ownerReady||!ownerHeaders){
+   awaitingBrainInstructions=false;
+   showBrainAnswer('Robot Brain is private. I can create jobs only in your verified owner session. No job was submitted. Other users need their own separately connected brain.');
+   return;
+  }
+  const instruction=explicitBrainJob?brainJobDetail(request):request;
+  if(!instruction||instruction.length<8){
+   awaitingBrainInstructions=true;
+   showBrainAnswer('What specific work should I give Robot Brain? Tell me the job in your next sentence.');
+   return;
+  }
+  awaitingBrainInstructions=false;workText.value=instruction;tools.open=true;
+  try{
+   const ticket=await submitWork(instruction,'explicit-voice-or-text-command');
+   const state=ticket.deduplicated?'already recorded as '+ticket.status:'queued';
+   showBrainAnswer('Robot Brain ticket '+ticket.id+' is '+state+'. The authenticated runner can now process it. This is a job receipt, not a claim that the repair is finished.');
+  }catch(error){
+   const failure='I could not confirm a Robot Brain job: '+String(error.message||error).slice(0,140)+'. No new job is confirmed. The instruction remains in the work field.';
+   workStatus.textContent=failure;showBrainAnswer(failure);
+  }
+  return;
+ }
  let workEvidence='';
  if(!embedded&&isOwnerWorkRequest(request)){
   workText.value=request;tools.open=true;
-  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence='Robot Brain receipt: ticket '+ticket+' is ready for the authenticated build runner. Queued only; no repair is verified complete.'}
+  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence='Robot Brain receipt: ticket '+ticket.id+' is '+(ticket.deduplicated?'already '+ticket.status:'ready')+' for the authenticated build runner. A job receipt is not a verified repair.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
  }
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger inside QuantaPhi.','Your selected role: '+role.name+'. '+role.prompt,
@@ -433,7 +485,7 @@ async function connectOwner(){
  if(embedded)return;
  const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
  if(!headers)return;
- ownerHeaders=headers;ownerReady=true;workButton.hidden=false;workStatus.textContent='Robot Brain connected to your verified owner session. Tap to queue a work request.';
+ ownerHeaders=headers;ownerReady=true;workButton.hidden=false;workStatus.textContent='Verified owner mode · speak a Robot Brain command or submit a written work request.';
 }
 void connectOwner();
 // Home loads the owner helper after this script. Deferred scripts finish before
@@ -450,11 +502,15 @@ async function submitWork(request,approval='explicit-click'){
   const response=await fetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},signal:AbortSignal.timeout(30000),body:JSON.stringify({source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,context:{kind:'robot-directions',submission_id:submission,requested_role:config.role,approval,repository_writes:'require-github-authorization'}})});
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||result.message||'No confirmed ticket'));
+  if(result.deduplicated&&result.ticket.status!=='draft'){
+   workStatus.textContent='Existing Robot Brain ticket '+result.ticket.id+' is '+result.ticket.status+'; no duplicate created.';
+   return {id:result.ticket.id,status:result.ticket.status,deduplicated:true};
+  }
   const job={id:'TASK-1',agent:'greenbeans',color:'green',team:['greenbeans','pink-panther','purple-pearl'],repository:'www-infinity4/QuantaPhi',status:'queued',title:request.slice(0,180),instructions:request,acceptance:['Implement the requested source behavior and pass focused regression checks. Report missing runtime verification separately.'],dependencies:[]};
   const updated=await fetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},signal:AbortSignal.timeout(20000),body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify([job]),context:{...result.ticket.context,color_jobs:[job]}})});
   const ready=await updated.json();if(!updated.ok||!ready.ok)throw Error(ready.error||'Ticket saved but not ready; open Robot Brain to finish routing.');
   workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs:[job]}}));
-  workStatus.textContent='Work ticket '+result.ticket.id+' is ready for the authenticated build runner. Follow its real progress in Robot Brain.';return result.ticket.id;
+  workStatus.textContent='Work ticket '+result.ticket.id+' is ready for the authenticated build runner. Follow its real progress in Robot Brain.';return {id:result.ticket.id,status:'ready',deduplicated:false};
  }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145);throw error}
  finally{workButton.disabled=false}
 }
