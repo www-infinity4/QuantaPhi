@@ -10,10 +10,10 @@ test('silence never creates an upload, speech ends after silence without stoppin
  for(let i=0;i<30;i++)segments.push(quiet);
  assert.equal(clips.length,0);
  for(let i=0;i<8;i++)segments.push(voice);
- for(let i=0;i<8;i++)segments.push(quiet);
+ for(let i=0;i<15;i++)segments.push(quiet);
  assert.equal(clips.length,1);
  for(let i=0;i<8;i++)segments.push(voice);
- for(let i=0;i<8;i++)segments.push(quiet);
+ for(let i=0;i<15;i++)segments.push(quiet);
  assert.equal(clips.length,2);
 });
 test('TTS audio never becomes a speech clip',()=>{
@@ -56,11 +56,24 @@ test('stream remains connected over multiple utterances, stop aborts transcripti
  const capture=await startContinuousVoice({stream:{},Context,url:'https://tools/v1/transcribe',onLevel(){},onStatus(){},onTranscript:t=>texts.push(t),isSpeaking:()=>false,
   fetcher:async(url,opts)=>{calls.push(opts);return{ok:true,json:async()=>({ok:true,text:'Bubbles hello'})}}});
  const push=value=>processor.onaudioprocess({inputBuffer:{getChannelData:()=>new Float32Array(1600).fill(value)}});
- for(let i=0;i<8;i++)push(.1);for(let i=0;i<8;i++)push(0);
+ for(let i=0;i<8;i++)push(.1);for(let i=0;i<15;i++)push(0);
  await new Promise(r=>setImmediate(r));
- for(let i=0;i<8;i++)push(.1);for(let i=0;i<8;i++)push(0);
+ for(let i=0;i<8;i++)push(.1);for(let i=0;i<15;i++)push(0);
  await new Promise(r=>setImmediate(r));
  assert.equal(calls.length,2);assert.equal(texts.length,2);
  assert.equal(connections,3);assert.equal(disconnects,0);
  capture.stop();assert.equal(disconnects,3);assert.equal(processor.onaudioprocess,null);
+});
+
+test('long speech reaches Bubbles as a complete thought, not two interruptions',async()=>{
+ const captured=[];
+ const segments=createSpeechSegments({sampleRate:16000,onClip:(clip,continues)=>captured.push({clip,continues})});
+ const voice=new Float32Array(1600).fill(.1),quiet=new Float32Array(1600);
+ for(let i=0;i<125;i++)segments.push(voice);
+ assert.equal(captured.length,1,'12-second service limit triggers one continuation chunk');
+ assert.equal(captured[0].continues,true,'the first chunk is NOT a finished speech turn');
+ for(let i=0;i<8;i++)segments.push(voice);
+ for(let i=0;i<15;i++)segments.push(quiet);
+ assert.equal(captured.length,2);
+ assert.equal(captured[1].continues,false,'only the sustained end-of-speech ends the turn');
 });
