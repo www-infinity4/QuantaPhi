@@ -111,8 +111,12 @@ public final class BubblesService extends Service {
     // Combine adjacent phrases until the owner has finished speaking.
     private static final long END_OF_TURN_MS = 1650L;
     private final Runnable deliverVoiceTurn = () -> {
-        if (!connected || muted || speaking || SystemClock.elapsedRealtime() < echoQuietUntil) {
-            turnBuffer.clear();return;
+        if (!connected || muted) { turnBuffer.clear(); return; }
+        if (speaking || SystemClock.elapsedRealtime() < echoQuietUntil) {
+            // A second spoken instruction may already be buffered when a reply
+            // starts. Never discard it just because TTS or its echo guard is on.
+            if (turnBuffer.hasPending()) main.postDelayed(deliverVoiceTurn, 400L);
+            return;
         }
         final String complete = turnBuffer.take();
         if (!complete.isEmpty()) heard(complete);
@@ -389,10 +393,26 @@ public final class BubblesService extends Service {
                     }
                 } catch (Exception error) {
                     main.post(() -> {
-                        if (connected && !muted) {
+                        if (!connected || muted) return;
+                        BrainNotes.prefs(this).edit().putString("last_error",
+                            "Mic stream interrupted: " + error.getClass().getSimpleName()).apply();
+                        // A Vosk/AudioRecord failure is not a user mute request.
+                        // Release the failed stream and retry a bounded number
+                        // of times while the foreground session is still active.
+                        stopRecognition();
+                        if (retries < 3
+                                && checkSelfPermission(Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED) {
+                            long delay = 1500L << retries++;
+                            state("reconnecting", .1f);
+                            main.postDelayed(() -> {
+                                if (connected && !muted && !captureRunning) beginListening();
+                            }, delay);
+                        } else {
                             muteSession();
                             state("error", 0);
-                            Toast.makeText(this, "Microphone capture stopped. Tap Bubbles to retry.", Toast.LENGTH_LONG).show();
+                            Toast.makeText(this,
+                                "Bubbles microphone could not reconnect. Tap the bubble to retry.",
+                                Toast.LENGTH_LONG).show();
                         }
                     });
                 }
