@@ -10,6 +10,8 @@ import android.media.projection.*;
 import android.os.*;
 import java.io.*;
 import java.nio.ByteBuffer;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /** A separate, visibly foregrounded capture session started after Android consent. */
 public final class ScreenCaptureService extends Service {
@@ -21,13 +23,15 @@ public final class ScreenCaptureService extends Service {
     private ImageReader images;
     private File file;
     private boolean finished, recordingStarted;
+    private int pendingPublications = 0;
+    private final ExecutorService mediaExport = Executors.newSingleThreadExecutor();
     private File sequenceDirectory;
     private int captureCount;
     private long lastCaptureAt, sequenceIntervalMs;
 
     @Override public int onStartCommand(Intent intent, int flags, int id) {
         if (intent == null || STOP.equals(intent.getAction())) { finishCapture(); return START_NOT_STICKY; }
-        if (projection != null) return START_NOT_STICKY;
+        if (projection != null || finished) return START_NOT_STICKY;
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         nm.createNotificationChannel(new NotificationChannel("bubbles_capture", "Bubbles screen capture", NotificationManager.IMPORTANCE_LOW));
         PendingIntent stop = PendingIntent.getService(this, 12, new Intent(this, ScreenCaptureService.class).setAction(STOP),
@@ -43,6 +47,8 @@ public final class ScreenCaptureService extends Service {
             if (consent == null || intent.getIntExtra("result", 0) != Activity.RESULT_OK) throw new IllegalStateException("Screen sharing was not approved");
             projection = ((MediaProjectionManager) getSystemService(MEDIA_PROJECTION_SERVICE))
                     .getMediaProjection(Activity.RESULT_OK, consent);
+            BrainNotes.prefs(this).edit().putBoolean("capture_active", true)
+                    .putString("capture_state", "Screen capture authorized; starting").apply();
             projection.registerCallback(new MediaProjection.Callback() {
                 @Override public void onStop() { finishCapture(); }
             }, main);
@@ -132,9 +138,42 @@ public final class ScreenCaptureService extends Service {
         } catch (Exception error) { fail(error); }
         return START_NOT_STICKY;
     }
+    /** Publish in the Android media library before stopping the foreground service.
+     * A private app directory alone is invisible to Gallery/Files on Android 12.
+     */
     private void savePath(String type) {
-        BrainNotes.prefs(this).edit().putString("capture_path", file.getAbsolutePath())
-                .putString("capture_type", type).putString("capture_state", "Saved " + file.getName()).apply();
+        final File completed = file;
+        if (completed == null || !completed.isFile()) return;
+        pendingPublications++;
+        BrainNotes.prefs(this).edit().putString("capture_path", completed.getAbsolutePath())
+            .putString("capture_type", type).putString("capture_state", "Saving " + completed.getName()
+                + " to phone library…").apply();
+        mediaExport.execute(() -> {
+            final String outcome;
+            try {
+                android.net.Uri saved = CapturePublisher.publish(this, completed, type);
+                String library = type.startsWith("video/") ? "Movies" : "Pictures";
+                BrainNotes.prefs(this).edit().putString("capture_uri", saved.toString()).apply();
+                outcome = "Saved " + completed.getName() + " to " + library + "/Bubbles";
+            } catch (Exception error) {
+                outcome = "Gallery export failed (" + error.getClass().getSimpleName()
+                    + "); original remains in Bubbles private storage";
+                BrainNotes.prefs(this).edit().putString("capture_export_error",
+                    error.getMessage() == null ? error.getClass().getSimpleName() : error.getMessage()).apply();
+            }
+            // Preserve the user's definitive save/failure status for each capture.
+            BrainNotes.prefs(this).edit().putString("capture_state", outcome).apply();
+            main.post(() -> {
+                pendingPublications--;
+                stopIfPublished();
+            });
+        });
+    }
+    private void stopIfPublished() {
+        if (!finished || pendingPublications > 0) return;
+        stopForeground(STOP_FOREGROUND_REMOVE);
+        stopSelf();
+        mediaExport.shutdown();
     }
     private void fail(Exception error) {
         BrainNotes.prefs(this).edit().putString("capture_state", "Capture failed: " + error.getClass().getSimpleName()).apply();
@@ -143,6 +182,7 @@ public final class ScreenCaptureService extends Service {
     private void finishCapture() {
         if (finished) return;
         finished = true;
+        BrainNotes.prefs(this).edit().putBoolean("capture_active", false).apply();
         main.removeCallbacksAndMessages(null);
         if (sequenceDirectory != null) {
             BrainNotes.prefs(this).edit().putString("capture_state", "Screen series finished: "
@@ -161,8 +201,14 @@ public final class ScreenCaptureService extends Service {
         if (projection != null) { projection.stop(); projection = null; }
         try { startService(new Intent(this, BubblesService.class).setAction(BubblesService.ACTION_SAVE_AUDIO)); }
         catch (Exception ignored) {}
-        stopForeground(STOP_FOREGROUND_REMOVE); stopSelf();
+        // MediaStore copies can take longer than stopping MediaRecorder.
+        // Keep the capture service alive until Gallery publication completes.
+        stopIfPublished();
     }
     @Override public IBinder onBind(Intent intent) { return null; }
-    @Override public void onDestroy() { finishCapture(); super.onDestroy(); }
+    @Override public void onDestroy() {
+        if (!finished) finishCapture();
+        mediaExport.shutdown();
+        super.onDestroy();
+    }
 }
