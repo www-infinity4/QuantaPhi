@@ -30,7 +30,7 @@ test('text chat stores bounded local history and typed responses stay silent', (
 });
 
 test('preview increments version without changing the installed package', () => {
-  assert.match(gradle, /versionCode 11/);
+  assert.match(gradle, /versionCode 12/);
   assert.match(gradle, /versionName '0\.11\.0'/);
   assert.match(gradle, /applicationIdSuffix '\.preview4'/);
 });
