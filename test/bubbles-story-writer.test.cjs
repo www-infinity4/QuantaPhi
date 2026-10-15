@@ -61,7 +61,7 @@ test('Bubbles never impersonates account sign-in or grants unverified repository
  assert.match(code,/const headers=window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready:null/);
  assert.match(code,/if\(!headers\?\.Authorization\)return/);
  assert.match(code,/if\(embedded\)throw Error\('Guest embed bubbles cannot access the owner Robot Brain\.'\)/);
- assert.match(code,/ownerHeaders=headers;ownerReady=true;workButton\.hidden=false/);
+ assert.match(code,/ownerHeaders=headers;ownerReady=true;workButton\.hidden=nativeOverlay/);
  assert.match(code,/workButton\.addEventListener\('click'/);
  assert.match(code,/context:\{kind:'robot-directions'/);
  assert.match(code,/approval='explicit-click'/);
