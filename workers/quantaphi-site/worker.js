@@ -96,6 +96,7 @@ const routeFor = incoming => {
  if (path === '/platinum') return { redirect: '/platinum/' + incoming.search };
  if (path === '/platinum/' || path === '/platinum/index.html') return { repo: 'QuantaPhi', sourcePath: '/platinum/index.html', publicPath: '/platinum/' };
  if (path === '/phone') return { redirect: '/phone/' + incoming.search };
+ if (/^\/phone\/n\/[1-9][0-9]{7,14}\/?$/.test(path)) return { repo: 'QuantaPhi', sourcePath: '/phone/index.html', publicPath: path };
  if (/^\/phone\/[a-z][a-z0-9-]{2,25}\/?$/.test(path) || path === '/phone/' || path === '/phone/index.html') return { repo: 'QuantaPhi', sourcePath: '/phone/index.html', publicPath: path };
  if (path === '/page') return { redirect: '/page/' + incoming.search };
  if (path === '/page/' || path === '/page/index.html') return { repo: 'QuantaPhi', sourcePath: '/page/index.html', publicPath: '/page/' };
