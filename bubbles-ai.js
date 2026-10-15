@@ -1201,8 +1201,8 @@ async function submitWork(request,approval='explicit-click'){
   workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs}}));
   let runner='not_started';
    try{const request=await requestRunner(result.ticket.id,jobs[0]?.id||'');runner=request.status;}
-   catch(error){runner='runner_request_failed';workStatus.textContent='Saved ticket '+result.ticket.id+' but the runner request failed: '+String(error.message||error).slice(0,100);}
-   if(runner==='queued_for_runner')workStatus.textContent='Robot Brain ticket '+result.ticket.id+' saved. Greenbeans runner cycle requested; Pink Panther verification is a dependent job. Execution and deployment are not yet proven.';
+   catch(error){runner='runner_request_failed';workStatus.textContent='Work ticket saved, but runner dispatch failed: '+String(error.message||error).slice(0,100);}
+   if(runner==='queued_for_runner')workStatus.textContent='Robot Brain ticket saved. Greenbeans runner requested; Pink Panther verification is a dependent job. Execution and deployment are not yet proven.';
    return {id:result.ticket.id,status:'ready',deduplicated:false,runner};
  }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145);throw error}
  finally{workButton.disabled=false}
