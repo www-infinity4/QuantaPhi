@@ -50,3 +50,37 @@ html.bubbles-native-overlay .ba-panel .ba-owner-status {
   font-size:14px; margin:0; border:0; border-radius:0;
 }
 html.bubbles-native-overlay [hidden] { display:none!important; }
+
+/* Preview 5 accessibility repair: options remain within one scrolling chat. */
+html.bubbles-native-overlay .ba-panel .ba-tools {
+  display:block; position:relative; flex:none; z-index:2;
+  border:1px solid #cabcd2; border-radius:12px;
+  padding:9px; background:#fff;
+  pointer-events:auto; touch-action:pan-y;
+}
+html.bubbles-native-overlay .ba-tools > summary {
+  display:flex; align-items:center; min-height:54px;
+  padding:10px 14px; background:#f6f0fa; border-radius:10px;
+  color:#3b205a; font-size:17px; cursor:pointer;
+  touch-action:manipulation; pointer-events:auto;
+}
+html.bubbles-native-overlay .ba-tools[open] > summary {margin-bottom:8px}
+html.bubbles-native-overlay .ba-tools button,
+html.bubbles-native-overlay .ba-tools a,
+html.bubbles-native-overlay .ba-tools input,
+html.bubbles-native-overlay .ba-tools select,
+html.bubbles-native-overlay .ba-tools textarea,
+html.bubbles-native-overlay .ba-link-bubbles,
+html.bubbles-native-overlay .ba-pairing-card button {
+  position:relative; z-index:3; pointer-events:auto;
+  min-height:48px; touch-action:manipulation;
+}
+html.bubbles-native-overlay .ba-tools .ba-privacy-label {
+  min-height:48px; padding:8px 4px; font-size:14px;
+}
+html.bubbles-native-overlay .ba-panel .ba-link-bubbles {width:100%; margin:5px 0;}
+html.bubbles-native-overlay .ba-panel .ba-photo-upload {display:block; min-width:0;}
+html.bubbles-native-overlay .ba-panel .ba-photo-file {
+  width:100%; min-height:48px; max-width:100%;
+  font-size:14px; padding:8px; touch-action:manipulation;
+}
