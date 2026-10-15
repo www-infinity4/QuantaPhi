@@ -68,6 +68,7 @@ messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&t
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
+let playbackVersion=0,voiceEchoUntil=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
 const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias,requireWakeName:false})||null;
 
@@ -298,14 +299,21 @@ function speakText(value){
  if(typeof speechSynthesis==='undefined'||typeof SpeechSynthesisUtterance==='undefined'){
   status.textContent='Speech playback is not supported on this browser.';return;
  }
- try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
+ if(speaking)return; // Avoid cutting off a response for another result.
+  const version=++playbackVersion;
+  speaking=true;setOrbState('speaking');
+  try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
    const voices=speechSynthesis.getVoices?.()||[];
    utterance.voice=voices.find(v=>v.voiceURI===config.voiceURI)||voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
-   utterance.onstart=()=>{speaking=true;setOrbState('speaking')};
-   const finished=()=>{speaking=false;if(voiceEnabled){setOrbState('listening');void streamVoice?.resume()}else setOrbState('idle')};
+   utterance.onstart=()=>{if(version===playbackVersion)setOrbState('speaking')};
+   const finished=()=>{
+    if(version!==playbackVersion)return;
+    speaking=false;voiceEchoUntil=Date.now()+900;
+    if(voiceEnabled){setOrbState('listening');void streamVoice?.resume()}else setOrbState('idle');
+   };
    utterance.onend=finished;utterance.onerror=finished;speechSynthesis.speak(utterance)
   }
- catch(error){status.textContent='Speech playback could not start: '+String(error?.message||error).slice(0,120)}
+ catch(error){if(version===playbackVersion){speaking=false;voiceEchoUntil=Date.now()+900}status.textContent='Speech playback could not start: '+String(error?.message||error).slice(0,120)}
 }
 function display(text,who,greeting=false){
  const line=create('div','ba-line '+(who==='you'?'ba-line-you':'ba-line-ai'));
@@ -677,8 +685,8 @@ function stopVoice(message){
  voiceResumeWanted=false;voiceEnabled=false;voicePending='';
  if(voiceRetry)clearTimeout(voiceRetry);voiceRetry=null;
  pauseRecognition();stopMeter();
- try{speechSynthesis.cancel()}catch{}
- speaking=false;setOrbState('idle');mic.textContent='🎙 Enable listening';
+ playbackVersion++;try{speechSynthesis.cancel()}catch{}
+ speaking=false;voiceEchoUntil=Date.now()+900;setOrbState('idle');mic.textContent='🎙 Enable listening';
  mic.setAttribute('aria-pressed','false');
  status.textContent=message||'Microphone muted. Touch Bubbles to reconnect.';
 }
@@ -698,7 +706,7 @@ document.addEventListener?.('visibilitychange',()=>{
  if(!nativeOverlay&&document.hidden&&voiceEnabled)stopVoice('Website mic released while Android Bubbles keeps listening.');
 });
 function heardTranscript(transcript){
- if(!voiceEnabled||speaking||!voiceGate)return;
+ if(!voiceEnabled||speaking||Date.now()<voiceEchoUntil||!voiceGate)return;
  heardUntil=Date.now()+750;setOrbState('hearing');launcher.style.setProperty('--ba-energy','1');
  status.textContent='Heard: '+transcript;launcher.dataset.words=String(transcript.split(/\s+/).length);
  const turn=voiceGate.accept(transcript,Date.now());
