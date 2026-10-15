@@ -194,12 +194,13 @@
 .ba-panel .ba-chatgpt-login[hidden],
 .ba-panel .ba-close[hidden]{display:none!important}
 
-/* Android pairing stays under the title, visible before the chat transcript. */
-.ba-native-owner{flex:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:5px;padding:8px 10px;border:2px solid #7544a0;background:#fff;border-radius:12px}
-.ba-native-owner .ba-field,.ba-native-owner .ba-muted{grid-column:1/-1}
-.ba-native-owner .ba-owner-paste{background:#f3ecfa;color:#30214b}
-.ba-native-owner .ba-muted{overflow-wrap:anywhere}
-.ba-native-owner[hidden]{display:none!important}
-.ba-native-owner .ba-field{min-height:38px}
-.ba-native-owner .ba-muted{margin:0;font-size:12px;line-height:1.4}
-.ba-native-owner button{min-height:38px}
+/* One mobile-first composer replaces developer pairing forms and buttons. */
+html.bubbles-native-overlay .ba-composer{
+ flex:none;padding:9px 7px;border:2px solid #7140a0;border-radius:13px;background:#fbf9ff;
+}
+html.bubbles-native-overlay .ba-composer textarea{
+ min-height:58px;font-size:16px;resize:none;outline-offset:1px;
+}
+html.bubbles-native-overlay .ba-composer .ba-send{min-height:46px}
+html.bubbles-native-overlay .ba-panel .ba-messages{min-height:90px}
+html.bubbles-native-overlay .ba-panel .ba-owner-status{margin:1px 3px;padding:5px 8px}
