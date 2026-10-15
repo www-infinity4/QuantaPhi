@@ -53,7 +53,7 @@ public final class MainActivity extends Activity {
         layout.addView(title);
 
         TextView copy = new TextView(this);
-        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link the website from your APK first, say 'sync my website' and copy the one-time owner code. Drag the floating orb anywhere.\\n\\nSay 'record', 'stop', 'turn on video', 'record my screen', 'take a screenshot', or 'take a screenshot every five seconds for five minutes'. Bubbles handles the controls; Android asks you to approve screen capture. Captures stay on your phone.");
+        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link Robot Brain, get the one-time code on verified QuantaPhi, paste it directly into the floating chat message box, then Send. There is no separate pairing button. Drag the floating orb anywhere.\\n\\nSay 'record', 'stop', 'turn on video', 'record my screen', 'take a screenshot', or 'take a screenshot every five seconds for five minutes'. Bubbles handles the controls; Android asks you to approve screen capture. Captures stay on your phone.");
         copy.setTextColor(Color.rgb(101, 83, 111));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
