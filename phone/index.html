@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#edf0f4"><title>Infinity Platinum Phone | Web Address Calling</title>
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
 <meta name="description" content="Your own web-address phone line, reached from Infinity Platinum. Internet calls without a traditional phone number.">
 <link rel="stylesheet" href="/phone/phone.css?v=20261015-phone1"></head>
 <body><main class="phone-shell">
@@ -24,7 +25,11 @@
 <section class="panel" aria-labelledby="dial-title"><h2 id="dial-title">Infinity Switchboard</h2>
 <form id="dial-form"><label for="dial">Web phone address, name, or ordinary phone number</label>
 <div class="field-combo dial"><input id="dial" inputmode="text" autocapitalize="off" autocomplete="off" placeholder="mary or quantaphi.org/phone/mary" required><button id="dial-start" class="primary" type="submit">Call</button></div></form>
-<div class="actions"><label class="checkbox"><input id="video" type="checkbox"> Include video</label><button type="button" id="check-address">Look up address</button></div>
+<div class="actions"><label class="checkbox"><input id="video" type="checkbox"> Include video</label><button type="button" id="check-address">Look up address</button><button type="button" id="number-page">Create web dial page</button><button type="button" id="call-with-carrier">Call ordinary number via carrier</button></div>
+<div id="number-page-panel" hidden class="number-page">
+<p><strong>On-demand web dial page</strong> (not a registered person's page)</p><a id="number-page-link" rel="noreferrer"></a>
+<p class="small">This is a dial route, not an actual destination address owned by the phone subscriber. A compatible carrier/SIP gateway and legal emergency service capability are needed to ring ordinary phones.</p>
+</div>
 <p class="small">Web-to-web calls work only between registered Platinum addresses. Numbers saved in your PRIVATE forwarding plans can be dialed as shortcuts to their associated Platinum web addresses. Ordinary phone numbers require owner verification and a licensed telephone gateway; entering a number here will never assign it to another person or silently initiate a PSTN call.</p></section>
 <section id="incoming" class="panel alert" hidden><h2>Incoming Infinity call</h2><p id="incoming-info">Someone is calling.</p>
 <div class="actions"><button type="button" class="primary" id="answer">Answer</button><button type="button" id="decline">Decline</button></div></section>
