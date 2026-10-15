@@ -96,8 +96,8 @@ jobs:
           set -euo pipefail
           KEY=android/bubbles-overlay/preview-debug.keystore
           if [ ! -s "$KEY" ]; then
-            keytool -genkeypair -noprompt -keystore "$KEY" -storepass android \\
-              -keypass android -alias androiddebugkey -keyalg RSA -keysize 3072 \\
+            keytool -genkeypair -noprompt -keystore "$KEY" -storepass android \
+              -keypass android -alias androiddebugkey -keyalg RSA -keysize 3072 \
               -validity 10000 -dname "CN=Bubbles Preview Test,O=QuantaPhi,C=US"
           fi
           keytool -list -keystore "$KEY" -storepass android -alias androiddebugkey
