@@ -65,6 +65,9 @@ public final class BubblesService extends Service {
     public static final String ACTION_RECORD = "org.quantaphi.bubbles.RECORD_AUDIO";
     public static final String ACTION_SAVE_AUDIO = "org.quantaphi.bubbles.SAVE_AUDIO";
     private final VoiceRecording recording = new VoiceRecording();
+    private final ExecutorService mediaPublish = Executors.newSingleThreadExecutor();
+    private static final int CAPTURE_APPROVAL_ID = 513;
+    private static final String CAPTURE_APPROVAL_CHANNEL = "bubbles_capture_approval";
     private String recordedWords = "";
     private boolean pendingAudioRecording = false;
     public static final String ACTION_STOP = "org.quantaphi.bubbles.STOP";
@@ -122,6 +125,8 @@ public final class BubblesService extends Service {
         if (Build.VERSION.SDK_INT >= 26)
             notificationManager.createNotificationChannel(
                     new NotificationChannel(CHANNEL, "Bubbles voice microphone", NotificationManager.IMPORTANCE_LOW));
+        notificationManager.createNotificationChannel(new NotificationChannel(
+                    CAPTURE_APPROVAL_CHANNEL, "Bubbles capture approvals", NotificationManager.IMPORTANCE_HIGH));
         reloadSpeechEngine();
     }
 
@@ -271,14 +276,21 @@ public final class BubblesService extends Service {
         Intent app = new Intent(this, OracleChatActivity.class);
         PendingIntent open = PendingIntent.getActivity(this, 2, app,
                 PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
-        return new Notification.Builder(this, CHANNEL)
+        Notification.Builder builder = new Notification.Builder(this, CHANNEL)
                 .setSmallIcon(android.R.drawable.ic_btn_speak_now)
                 .setContentTitle(BrainNotes.prefs(this).getString("name","Brain")+" · Bubbles AI")
-                .setContentText("Tap bubble to type or interrupt · long-press to mute")
+                .setContentText(recording.active() ? "Recording microphone · tap Stop & save" :
+                    "Tap bubble to type or interrupt · long-press to mute")
                 .setOngoing(true)
-                .setContentIntent(open)
-                .addAction(android.R.drawable.ic_delete, "Stop and release microphone", stop)
-                .build();
+                .setContentIntent(open);
+        if (recording.active()) {
+            PendingIntent save = PendingIntent.getService(this, 3,
+                new Intent(this, BubblesService.class).setAction(ACTION_SAVE_AUDIO),
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+            builder.addAction(android.R.drawable.ic_menu_save, "Stop & save recording", save);
+        }
+        builder.addAction(android.R.drawable.ic_delete, "Stop Bubbles", stop);
+        return builder.build();
     }
 
     private void state(String newState, float energy) {
@@ -357,6 +369,16 @@ public final class BubblesService extends Service {
                             final String transcript = new JSONObject(speech.getResult()).optString("text", "");
                             main.post(() -> {
                                 if (!connected || muted || speaking || SystemClock.elapsedRealtime() < echoQuietUntil) return;
+                                // Do not wait another 1.65 seconds to stop recording.
+                                // Vosk has already finalized the command at the speech pause.
+                                VoiceCaptureCommands.Command command = VoiceCaptureCommands.parse(transcript);
+                                if (command != null && (command.action.equals("capture_stop")
+                                        || command.action.equals("sound_stop") || command.action.equals("screen_stop"))) {
+                                    main.removeCallbacks(deliverVoiceTurn);
+                                    turnBuffer.clear();
+                                    heard(transcript);
+                                    return;
+                                }
                                 turnBuffer.append(transcript);
                                 if (turnBuffer.hasPending()) {
                                     main.removeCallbacks(deliverVoiceTurn);
@@ -391,19 +413,40 @@ public final class BubblesService extends Service {
             recording.start(new java.io.File(getFilesDir(), "captures"));
             recordedWords = "";
             BrainNotes.prefs(this).edit().putString("audio_state", "Recording microphone sound").apply();
+            ((NotificationManager)getSystemService(NOTIFICATION_SERVICE)).notify(NOTIFY_ID, notification());
         } catch (Exception error) { Toast.makeText(this, error.getMessage(), Toast.LENGTH_LONG).show(); }
     }
     private void saveAudio() {
         pendingAudioRecording = false;
+        final java.io.File completed;
         try {
-            java.io.File file = recording.finish();
-            if (file != null) BrainNotes.prefs(this).edit()
-                    .putString("audio_path", file.getAbsolutePath())
-                    .putString("audio_transcript", recordedWords)
-                    .putString("audio_state", "Saved " + file.getName()).apply();
+            completed = recording.finish();
+            if (completed == null) return; // No sound bytes; do not report a fake save.
+            final String transcript = recordedWords;
+            BrainNotes.prefs(this).edit()
+                .putString("audio_path", completed.getAbsolutePath())
+                .putString("audio_transcript", transcript)
+                .putString("audio_state", "Saving " + completed.getName() + " to Music/Bubbles…").apply();
+            if (connected) ((NotificationManager)getSystemService(NOTIFICATION_SERVICE))
+                .notify(NOTIFY_ID, notification());
         } catch (Exception error) {
-            BrainNotes.prefs(this).edit().putString("audio_state", "Audio could not be finalized").apply();
+            BrainNotes.prefs(this).edit().putString("audio_state",
+                "Recording could not be finalized: " + error.getClass().getSimpleName()).apply();
+            return;
         }
+        // MediaStore IO must not block the speech loop / user interface.
+        mediaPublish.execute(() -> {
+            try {
+                android.net.Uri uri = CapturePublisher.publish(this, completed, "audio/wav");
+                BrainNotes.prefs(this).edit().putString("audio_uri", uri.toString())
+                    .putString("audio_state", "Saved " + completed.getName() + " to Music/Bubbles").apply();
+            } catch (Exception error) {
+                BrainNotes.prefs(this).edit().putString("audio_state",
+                    "Phone media save failed; recording remains in Bubbles private storage")
+                    .putString("audio_export_error", error.getMessage() == null
+                        ? error.getClass().getSimpleName() : error.getMessage()).apply();
+            }
+        });
     }
     private void stopRecognition() {
         main.removeCallbacks(deliverVoiceTurn);
@@ -483,34 +526,42 @@ public final class BubblesService extends Service {
         if (command != null) {
             switch (command.action) {
                 case "sound_start":
-                    if (recording.active()) speak("Sound is already recording.");
-                    else { pendingAudioRecording = true; if (captureRunning) beginAudioRecording(); else beginListening(); speak("Sound recording started. Say stop recording to save."); }
+                    if (recording.active()) {
+                        BrainNotes.prefs(this).edit().putString("audio_state", "Microphone is already recording").apply();
+                    } else {
+                        pendingAudioRecording = true;
+                        if (captureRunning) beginAudioRecording(); else beginListening();
+                        // Do not speak over the active microphone, hiding 'stop'.
+                        Toast.makeText(this, "Recording sound · say stop, or use notification", Toast.LENGTH_SHORT).show();
+                    }
                     break;
                 case "sound_stop":
-                    if (recording.active()) { saveAudio(); speak("Sound saved on this phone."); }
-                    else speak("There is no sound recording running.");
+                    if (recording.active()) saveAudio();
+                    else BrainNotes.prefs(this).edit().putString("audio_state", "No active sound recording").apply();
                     break;
+                case "capture_stop": {
+                    boolean screenActive = BrainNotes.prefs(this).getBoolean("capture_active", false);
+                    if (recording.active()) saveAudio();
+                    if (screenActive) {
+                        startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
+                        BrainNotes.prefs(this).edit().putString("capture_state", "Finishing and saving screen capture…").apply();
+                    }
+                    if (!screenActive && !recording.active() && speaking) silenceReply();
+                    if (!screenActive && !recording.active())
+                        Toast.makeText(this, "No capture active · Bubbles is listening", Toast.LENGTH_SHORT).show();
+                    break;
+                }
                 case "screen_stop":
-                    startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
-                    speak("Stopping screen capture.");
+                    if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
+                        startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
+                        BrainNotes.prefs(this).edit().putString("capture_state", "Finishing screen capture…").apply();
+                    }
                     break;
                 case "screen_image":
                 case "screen_sequence":
                 case "screen_video":
                 case "camera_video":
-                    Intent capture = new Intent(this, MainActivity.class)
-                        .putExtra("voice_capture", command.action)
-                        .putExtra("interval_seconds", command.intervalSeconds)
-                        .putExtra("duration_seconds", command.durationSeconds)
-                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                    try {
-                        startActivity(capture);
-                        speak(command.action.equals("camera_video") ? "Opening the camera recorder." :
-                            "Android will ask permission to share your screen. Capture starts after you approve.");
-                    } catch (Exception error) {
-                        BrainNotes.prefs(this).edit().putString("last_error", "Open capture controls: " + error.getClass().getSimpleName()).apply();
-                        speak("Open Bubbles to approve screen capture. Nothing has been recorded.");
-                    }
+                    offerCaptureApproval(command);
                     break;
                 default: break;
             }
@@ -569,8 +620,40 @@ public final class BubblesService extends Service {
 
 
     /** Typed and spoken requests use identical screen access and owner session. */
+    /** Android owns camera/screen permissions. A spoken request creates a visible
+     * notification the user can tap; web AI cannot silently open the camera.
+     */
+    private void offerCaptureApproval(VoiceCaptureCommands.Command command) {
+        Intent intent = new Intent(this, MainActivity.class)
+            .putExtra("voice_capture", command.action)
+            .putExtra("interval_seconds", command.intervalSeconds)
+            .putExtra("duration_seconds", command.durationSeconds)
+            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        PendingIntent approve = PendingIntent.getActivity(this, CAPTURE_APPROVAL_ID, intent,
+            PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+        boolean camera = "camera_video".equals(command.action);
+        Notification notification = new Notification.Builder(this, CAPTURE_APPROVAL_CHANNEL)
+            .setSmallIcon(android.R.drawable.ic_menu_camera)
+            .setContentTitle(camera ? "Bubbles · open camera" : "Bubbles · approve screen capture")
+            .setContentText(camera ? "Tap to open Android camera and record video" :
+                "Tap to approve this capture in Android's system dialog")
+            .setContentIntent(approve).setAutoCancel(true).build();
+        ((NotificationManager)getSystemService(NOTIFICATION_SERVICE))
+            .notify(CAPTURE_APPROVAL_ID, notification);
+        BrainNotes.prefs(this).edit().putString("capture_state",
+            camera ? "Camera recording requested · tap Bubbles capture notification"
+                : "Screen capture requested · tap notification and approve Android dialog").apply();
+        Toast.makeText(this, "Tap Bubbles capture notification to continue", Toast.LENGTH_LONG).show();
+    }
+
     private void handleTypedRequest(String text) {
         BrainNotes.prefs(this).edit().putString("last_heard", text).apply();
+        VoiceCaptureCommands.Command capture = VoiceCaptureCommands.parse(text);
+        if (capture != null) {
+            // Native typed fallback has the same capture abilities as native speech.
+            heard(text);
+            return;
+        }
         if (ScreenAwareness.refersToScreen(text)) {
             speechSuppressed = true;
             handleScreenRequest(text, true);
@@ -761,6 +844,8 @@ public final class BubblesService extends Service {
             try {manager.removeView(orb);}catch(Exception ignored){}
         }
         network.shutdownNow();
+        // Let a media export already queued by 'stop' finish writing to the phone.
+        mediaPublish.shutdown();
         super.onDestroy();
     }
 
