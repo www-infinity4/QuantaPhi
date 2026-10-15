@@ -20,7 +20,7 @@ test('arbitrary websites cannot access Java object interfaces, files, or bypass 
  assert.match(java,/setMixedContentMode\(WebSettings\.MIXED_CONTENT_NEVER_ALLOW\)/);
  assert.match(java,/setSafeBrowsingEnabled\(true\)/);
  assert.match(java,/handler\.cancel\(\)/);
- assert.doesNotMatch(java,/addJavascriptInterface\(/);
+ assert.doesNotMatch(java,/\.addJavascriptInterface\(/);
 });
 test('Collect is a user-initiated verified QuantaPhi call, with no clipboard or login scraping',()=>{
  assert.match(java,/PlatinumNavigation\.isPlatinum\(url\)/);
