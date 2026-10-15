@@ -18,6 +18,7 @@ const nativeOverlay=!embedded&&params.get('nativeOverlay')==='1';
 // gates. It must not copy Chrome cookies or obtain owner rights from a query string.
 let nativeSpeechReply='',nativeSpeechPending=false,noteTaking=false;
 let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=null;
+let nativeCaptureRequest=''; // First-party Android WebView polls this; browser pages cannot perform OS capture.
 function nativeChatGPT(prompt){
  if(!nativeOverlay||!nativeGPTAvailable)return Promise.reject(Error('Android ChatGPT plan is not connected'));
  if(nativeGPTRequest)return Promise.reject(Error('Another ChatGPT response is in progress'));
@@ -539,6 +540,26 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const screenEvidence=nativeOverlay?String(androidScreenEvidence||'').slice(0,1200):'';if(busy||!spoken)return;
  if(fromVoice&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
  if(busy)return;
+ // A typed message inside the Android floating web chat must reach the
+ // native recorder, never a chat model that has no Android capture tools.
+ // Speech is already intercepted in BubblesService before reaching this page.
+ const nativeDirective=spoken.toLowerCase()
+  .replace(/^(?:(?:hey|hi|hello|okay|ok)\s+)?(?:bubbles(?:\s+ai)?)[\s,:]+/,'')
+  .replace(/^please\s+/,'')
+  .replace(/^(?:(?:can|could|would|will) you\s+(?:please\s+)?|i (?:need|want|would like) (?:you )?to\s+|i (?:want|need) (?:a |the )?)/,'')
+  .replace(/^please\s+/,'');
+ const nativeCaptureTarget=/\b(?:screen(?:\s+recorder|\s+recording|\s+capture|\s+video)?|screenshots?|screen\s*shot)\b/i.test(nativeDirective);
+ const nativeCaptureVerb=/^(?:record|film|start|begin|turn on|switch on|enable|activate|open|launch|use|run|make|capture|take|grab|save|stop|end|finish|cancel|turn off|switch off|screen record)\b/i.test(nativeDirective);
+ if(nativeOverlay&&!fromVoice&&nativeCaptureTarget&&nativeCaptureVerb){
+  const stopping=/^(?:stop|end|finish|cancel|turn off|switch off|save)\b/i.test(nativeDirective);
+  const response=stopping
+   ?'I have sent your stop request to Android. Check Movies/Bubbles after the recording finishes saving.'
+   :'I have passed your request to Android Bubbles. Tap the capture approval notification and accept the Android screen-sharing dialog. Recording has not started yet.';
+  nativeCaptureRequest=spoken;
+  display(spoken,'you');display(response,'ai');
+  messages.push({role:'user',text:spoken},{role:'assistant',text:response});messages=messages.slice(-400);persistChat();
+  status.textContent=response;nativeSpeechPending=false;return;
+ }
  if(/^(?:(?:please|bubbles)[\s,:]+)*(?:what tools (?:do you have|can you use)|what can you do|list (?:your|available) tools)[.!?]*$/i.test(spoken)){
   const local='Available Bubbles tools: Oracle conversation, news research, resonance calculator, personal notes, saved Bubbles memory and user-approved story suggestions.';
   const owner=embedded?'This embedded visitor assistant cannot control the QuantaPhi Robot Brain.':
@@ -575,7 +596,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(nativeSpeechPending)nativeSpeechReply=response;else if(config.voice&&!nativeOverlay)speakText(response);
   nativeSpeechPending=false;busy=false;send.disabled=false;return;
  }
- if(!embedded&&/^(?:(?:hey )?bubbles[, ]+)?(?:connect|check|enable|unlock|verify|show)(?: my| the)?(?: owner| robot brain| brain)?(?: tools| access| mode| connection| status)(?: now)?[.!?]*$/i.test(spoken)){
+ if(!embedded&&(/^(?:(?:hey )?bubbles[, ]+)?(?:connect|check|enable|unlock|verify|show)(?: my| the)?(?: owner| robot brain| brain)?(?: tools| access| mode| connection| status)(?: now)?[.!?]*$/i.test(spoken)
+   || /^(?:(?:hey )?bubbles[, ]+)?(?:(?:please )?(?:talk|speak|communicate|connect|link)(?: to| with) (?:my|the) robot brain)(?: now)?[.!?]*$/i.test(spoken))){
   busy=true;send.disabled=true;
   let reply;
   try{
@@ -976,6 +998,11 @@ window.QuantaBubbles={
   return true;
  },
  takeNativeGPTLogin:()=>{if(!nativeOverlay||!nativeGPTSignInRequested)return false;nativeGPTSignInRequested=false;return true;},
+ drainNativeCaptureRequest:()=>{
+  if(!nativeOverlay)return '';
+  const request=nativeCaptureRequest;nativeCaptureRequest='';
+  return request?JSON.stringify({text:request}):'';
+ },
  drainNativeGPTRequest:()=>{
   if(!nativeOverlay||!nativeGPTRequest||nativeGPTRequest.taken)return '';
   nativeGPTRequest.taken=true;return JSON.stringify({id:nativeGPTRequest.id,prompt:nativeGPTRequest.prompt});
