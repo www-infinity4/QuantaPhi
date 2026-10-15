@@ -130,6 +130,24 @@ function unlocked(headers,token,source,expiresAt){
   clearTimeout(renewTimer);renewTimer=setTimeout(renewWallet,delay);
  }
 }
+// The Android WebView cannot silently inherit Chrome's authenticated cookies.
+// Let its first-party chat redeem an explicitly supplied, short-lived owner
+// pairing code without showing the separate desktop owner panel.
+window.QuantaBrainOwner.connectWithCode=async function(raw){
+ const code=String(raw||'').trim();
+ if(!validToken(code))return {state:'rejected'};
+ if(verifiedHeaders)return {state:'verified'};
+ if(busy)return {state:'busy'};
+ busy=true;
+ try{
+  const result=await verify(code);
+  if(result.state!=='verified')return {state:result.state};
+  const credential=result.pairedToken||code;
+  await saveToken(credential);
+  unlocked(result.headers,credential,'key');
+  return {state:'verified'};
+ }finally{busy=false}
+};
 function form(message){
  if(host.dataset.state==='verified')return;
  host.dataset.state='locked';
