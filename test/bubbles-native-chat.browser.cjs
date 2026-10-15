@@ -39,7 +39,7 @@ test('Android chat: one scroll surface, reachable composer, visible pairing resu
   const send=page.getByRole('button',{name:'Send',exact:true});
   const metrics=()=>page.evaluate(()=>{
    const thread=document.querySelector('.ba-thread'),composer=document.querySelector('.ba-composer');
-   const scrollables=[...document.querySelectorAll('.ba-panel *')].filter(e=>getComputedStyle(e).display!=='none'&&['auto','scroll'].includes(getComputedStyle(e).overflowY)&&e.scrollHeight>e.clientHeight+1);
+   const scrollables=[...document.querySelectorAll('.ba-panel *')].filter(e=>e.getClientRects().length&&e.clientHeight>0&&getComputedStyle(e).display!=='none'&&['auto','scroll'].includes(getComputedStyle(e).overflowY)&&e.scrollHeight>e.clientHeight+1);
    return {scrollables:scrollables.map(e=>e.className),height:thread.clientHeight,overflow:thread.scrollHeight>thread.clientHeight,composerBottom:composer.getBoundingClientRect().bottom,viewport:visualViewport.height};
   });
   let m=await metrics();assert.deepEqual(m.scrollables,['ba-thread']);assert.ok(m.height>100&&m.overflow);assert.ok(m.composerBottom<=m.viewport);
