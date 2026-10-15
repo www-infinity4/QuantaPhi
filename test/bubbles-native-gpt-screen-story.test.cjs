@@ -20,12 +20,23 @@ test('Android first-party Bubbles uses per-user native OAuth inference without a
  assert.doesNotMatch(WINDOW,/addJavascriptInterface\(/);
  assert.match(WINDOW,/SITE_HOST\.equals\(location\.getHost\(\)\)/);
 });
-test('Android screen text requires an explicit command and an installed accessibility service',()=>{
- assert.match(VOICE,/BrainLearningService\.currentVisibleText\(\)/);
+test('Android screen context requires explicit request and owner-enabled Accessibility',()=>{
+ const SCREEN=read('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenAwareness.java');
+ const READER=read('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/CaptureReader.java');
+ assert.match(VOICE,/ScreenAwareness\.refersToScreen\(addressed\)/);
+ assert.match(VOICE,/BrainLearningService\.inspectNow\(observation/);
+ assert.match(VOICE,/BrainLearningService\.performRequestedAction\(question\)/);
+ assert.match(VOICE,/Settings\.ACTION_ACCESSIBILITY_SETTINGS/);
+ assert.match(VOICE,/handleTypedRequest\(text\.trim\(\)\)/);
+ assert.match(MAIN,/Enable Bubbles screen reading & controls/);
  assert.match(ACCESS,/getRootInActiveWindow\(\)/);
  assert.match(ACCESS,/node\.isPassword\(\) \|\| node\.isEditable\(\)/);
- assert.match(ACCESS,/app\.equals\("com\.android\.systemui"\)/);
- assert.match(VOICE,/Screen text:/);
+ assert.match(ACCESS,/pkg\.equals\("com\.android\.systemui"\)/);
+ assert.match(ACCESS_XML,/android:canTakeScreenshot="true"/);
+ assert.match(ACCESS_XML,/flagRetrieveInteractiveWindows/);
+ assert.match(ACCESS,/CaptureReader\.readBitmap\(pixels\)/);
+ assert.match(READER,/static String readBitmap\(Bitmap bitmap\)/);
+ assert.match(SCREEN,/ON-SCREEN OBSERVATION/);
  assert.doesNotMatch(ACCESS_XML,/android:packageNames=/);
  assert.match(ACCESS,/LearningPolicy\.key\(app\)/);
 });

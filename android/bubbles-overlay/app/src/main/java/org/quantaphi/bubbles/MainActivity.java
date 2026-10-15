@@ -29,6 +29,7 @@ public final class MainActivity extends Activity {
     private EditText message;
     private final android.os.Handler ui = new android.os.Handler(android.os.Looper.getMainLooper());
     private Runnable refreshStatus;
+    private Runnable refreshScreenPermission;
     private final java.util.concurrent.ExecutorService mediaWork = java.util.concurrent.Executors.newSingleThreadExecutor();
     private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64;
     private boolean screenshot;
@@ -60,6 +61,26 @@ public final class MainActivity extends Activity {
         connect.setText("Enable the floating Bubbles assistant");
         connect.setOnClickListener(view -> checkAndStart());
         layout.addView(connect);
+
+        // Screen access is a separate Android switch, never implied by mic/overlay.
+        TextView screenPermission = new TextView(this);
+        screenPermission.setTextColor(Color.rgb(48, 36, 62));
+        screenPermission.setTextSize(16);
+        Runnable updateScreenPermission = () -> screenPermission.setText(
+            BrainLearningService.isConnected()
+                ? "Screen access: ON. Say 'read this screen', 'tap Search' or 'scroll down' in another app."
+                : "Screen access: OFF. Bubbles cannot inspect another app until Android Accessibility is enabled.");
+        refreshScreenPermission = updateScreenPermission;
+        updateScreenPermission.run();
+        layout.addView(screenPermission);
+        Button screenAccess = new Button(this);
+        screenAccess.setText("Enable Bubbles screen reading & controls");
+        screenAccess.setOnClickListener(v -> {
+            updateScreenPermission.run();
+            startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
+            state.setText("In Accessibility settings, enable Brain workflow learning for Bubbles Preview. Android asks you to approve it once.");
+        });
+        layout.addView(screenAccess);
 
         Button chat = new Button(this);
         chat.setText("Open Oracle chat");
@@ -98,6 +119,8 @@ public final class MainActivity extends Activity {
                 + "\nHeard: " + BrainNotes.prefs(this).getString("last_heard", "No recognized words yet")
                 + "\nReply: " + BrainNotes.prefs(this).getString("last_reply", "No AI reply yet")
                 + "\nLast problem: " + BrainNotes.prefs(this).getString("last_error", "None recorded")
+                + "\nScreen access: " + (BrainLearningService.isConnected() ? "ON" : "OFF — tap Enable Bubbles screen reading above")
+                + "\nLast screen result: " + BrainNotes.prefs(this).getString("screen_state", "No screen read yet")
                 + "\nCapture: " + BrainNotes.prefs(this).getString("capture_state", "None")
                 + "\nSound: " + BrainNotes.prefs(this).getString("audio_state", "None"));
         refreshStatus = new Runnable() { public void run() { refreshVoice.run(); ui.postDelayed(this, 1000); } };
@@ -410,6 +433,7 @@ public final class MainActivity extends Activity {
             ChatGPTSignIn.start(this,result -> {if(state!=null)
                 state.setText(ChatGPTSignIn.status(this)+"\n"+result);});
         }
+        if (refreshScreenPermission != null) refreshScreenPermission.run();
         if (refreshStatus != null) { ui.removeCallbacks(refreshStatus); refreshStatus.run(); }
         String voiceCapture = getIntent().getStringExtra("voice_capture");
         if (voiceCapture != null) {

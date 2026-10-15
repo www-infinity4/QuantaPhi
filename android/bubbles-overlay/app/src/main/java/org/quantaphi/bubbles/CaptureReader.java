@@ -44,6 +44,11 @@ final class CaptureReader {
             return result.substring(0, Math.min(7000, result.length()));
         } finally { reader.close(); if (video != null) video.release(); }
     }
+    /** One user-requested Accessibility screenshot; no image is stored on disk. */
+    static String readBitmap(Bitmap bitmap) throws Exception {
+        TextRecognizer reader = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
+        try { return text(reader, bitmap); } finally { reader.close(); }
+    }
     private static String text(TextRecognizer reader, Bitmap bitmap) throws Exception {
         String value = Tasks.await(reader.process(InputImage.fromBitmap(bitmap, 0)), 20, TimeUnit.SECONDS).getText();
         return value.isEmpty() ? "[No readable text found]" : value;

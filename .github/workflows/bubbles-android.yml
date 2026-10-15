@@ -68,6 +68,11 @@ jobs:
         run: node --test test/bubbles-floating-window.test.cjs
       - name: Verify official GPT-Live voice gateway contract
         run: node --test test/bubbles-gpt-live.test.cjs
+      - name: Verify screen intent and safe one-step actions
+        run: |
+          mkdir -p /tmp/bubbles-screen
+          javac -d /tmp/bubbles-screen android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenAwareness.java android/bubbles-overlay/checks/ScreenAwarenessCheck.java
+          java -cp /tmp/bubbles-screen org.quantaphi.bubbles.ScreenAwarenessCheck
       - name: Verify Brain learning policy
         run: |
           mkdir -p /tmp/brain-policy

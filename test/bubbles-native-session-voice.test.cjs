@@ -14,7 +14,9 @@ test('native speech is buffered until a full utterance; echoes are suppressed af
  assert.match(native,/speechGeneration/);
 });
 test('typed text uses same website robot brain and history as spoken text',()=>{
- assert.match(native,/oracleWindow\.sendTyped\(text\.trim\(\)\)/);
+ assert.match(native,/handleTypedRequest\(text\.trim\(\)\)/);
+ assert.match(native,/oracleWindow\.sendTyped\(text\)/);
+ assert.match(native,/ScreenAwareness\.refersToScreen\(text\)/);
  assert.match(floating,/Boolean\(window\.QuantaBubbles && window\.QuantaBubbles\.sendNativeText/);
  assert.match(site,/sendNativeText:\(message\)=>/);
  assert.match(site,/void sendMessage\(value,false\)/);
