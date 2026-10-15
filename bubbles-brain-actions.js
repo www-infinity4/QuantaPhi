@@ -90,29 +90,27 @@ function makeJobs(request){
 }
 function describeTickets(tickets,limit=10){
  if(!Array.isArray(tickets))return 'Robot Brain returned no verifiable ticket list.';
+ const totals={};
  const entries=[];
  for(const ticket of tickets){
-  if(!ticket||ticket.context?.kind!=='robot-directions')continue;
-  const created=Number(ticket.created_at)||Date.parse(ticket.created_at||'')||0;
-  const freshRequest=created>0&&Date.now()-created<24*60*60*1000;
-  const jobs=Array.isArray(ticket.context.color_jobs)?ticket.context.color_jobs:[];
-  for(const job of jobs){
-   const status=String(job.status||ticket.status||'unknown').slice(0,40);
-   const progress=job.progress&&typeof job.progress==='object'?job.progress:{};
-   const attempted=Date.parse(progress.attemptedAt||'')||0;
-   if(!freshRequest&&!(attempted>0&&Date.now()-attempted<30*60000&&['working','running','leased'].includes(status)))continue;
-   entries.push({updated:Number(ticket.updated_at)||0,description:
-    String(job.agent||'Bot').replace(/-/g,' ')+' — '+String(job.title||'Untitled').slice(0,140)+
-    ' ('+String(job.repository||'unassigned').slice(0,90)+'): '+status+
-    (progress.summary?'. Evidence: '+String(progress.summary).slice(0,230):'. No verified progress yet')+
-    (progress.blocker?'. Blocker: '+String(progress.blocker).slice(0,180):'')+
-    '. Receipt '+String(ticket.id||'unknown').slice(0,50)+'/'+String(job.id||'').slice(0,20)});
-  }
+  if(!ticket||typeof ticket!=='object')continue;
+  const status=String(ticket.status||'unknown').slice(0,36);
+  totals[status]=(totals[status]||0)+1;
+  const updated=Number(ticket.updated_at)||Date.parse(ticket.updated_at||'')||0;
+  const title=String(ticket.title||ticket.request||'Unnamed task').replace(/\s+/g,' ').slice(0,125);
+  const jobs=Array.isArray(ticket.context?.color_jobs)?ticket.context.color_jobs:[];
+  const jobInfo=jobs.length?' Team: '+jobs.slice(0,5).map(j=>String(j.agent||'bot').replace(/-/g,' ')+': '+String(j.status||'queued')+' [receipt '+String(ticket.id||'?')+'/'+String(j.id||'?')+']'+(j.progress?.blocker?' Blocker: '+String(j.progress.blocker).slice(0,140):'')).join('; ')+'.':'';
+  const receipt=String(ticket.result_summary||'').trim().slice(0,185);
+  const outcome=receipt?' Recorded result: '+receipt+'.':' No verified progress yet; no authenticated code or deployment receipt recorded here.';
+  entries.push({updated,description:title+' — '+status+'.'+jobInfo+outcome+' Ref '+String(ticket.id||'?').slice(0,50)});
  }
  entries.sort((a,b)=>b.updated-a.updated);
- if(!entries.length)return 'No recent work is running or waiting. Tell me what you want done.';
+ const total=Object.values(totals).reduce((a,b)=>a+b,0);
+ const statuses=Object.entries(totals).sort((a,b)=>b[1]-a[1]).map(([status,count])=>count+' '+status).join(', ');
+ if(!total)return 'Robot Brain has no saved owner tickets yet. No jobs are claimed running.';
  const selected=entries.slice(0,Math.max(1,Math.min(10,Number(limit)||10)));
- return 'Robot Brain report from '+tickets.length+' saved owner tickets; '+selected.length+' job updates. Queued is not running and no payment is implied.\n'+selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
+ return 'Robot Brain: '+total+' saved owner tickets ('+statuses+'). Showing '+selected.length+' most recently updated. Queued is not running; status “working” does not prove a bot is actively executing; only authenticated commits, tests and live receipts prove delivery.\n'
+  +selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
 }
 const api={classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;

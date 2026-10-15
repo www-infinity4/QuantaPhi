@@ -131,3 +131,24 @@ test('owner job receipts finish before the chat-only service can contradict them
  assert.match(branch,/return;/);
  assert.match(js,/https:\/\/quantaphi.org\/#robotDirections/);
 });
+
+test('reports include old and new owner jobs and avoid calling inbox status active execution',()=>{
+ const {describeTickets}=require('../bubbles-brain-actions.js');
+ const now=Date.now();
+ const actual=describeTickets([
+  {id:'legacy-1',status:'working',title:'Repair radio viewer',updated_at:now,context:{kind:'maintenance'}},
+  {id:'color-2',status:'ready',title:'Fix search page',updated_at:now-1000,context:{kind:'robot-directions',color_jobs:[{id:'TASK-1',agent:'greenbeans',status:'queued'}]}},
+  {id:'completed-3',status:'complete',title:'Deploy home',updated_at:now-2000,result_summary:'PR merged and smoke verified',context:{}},
+ ],10);
+ assert.match(actual,/3 saved owner tickets/);
+ assert.match(actual,/1 working/);
+ assert.match(actual,/1 ready/);
+ assert.match(actual,/1 complete/);
+ assert.match(actual,/Repair radio viewer/);
+ assert.match(actual,/Fix search page/);
+ assert.match(actual,/greenbeans: queued/);
+ assert.match(actual,/PR merged and smoke verified/);
+ assert.match(actual,/does not prove a bot is actively executing/);
+ assert.doesNotMatch(actual,/No recent work is running or waiting/);
+ assert.equal(describeTickets([],10),'Robot Brain has no saved owner tickets yet. No jobs are claimed running.');
+});
