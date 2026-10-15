@@ -12,6 +12,15 @@ const HEALTH='https://infinity-brain-clock.marvaseater.workers.dev/health';
 const SESSION='https://infinity-brain-clock.marvaseater.workers.dev/owner/session';
 const RETRY_MS=[5000,15000,30000,60000,120000];
 
+// Android 12 can run a WebView without AbortSignal.timeout. Build the
+// timeout from AbortController so verification still reaches the server.
+async function ownerFetch(url,options={},timeoutMs=12000){
+ const controller=new AbortController();
+ const timer=setTimeout(()=>controller.abort(),timeoutMs);
+ try{return await fetch(url,{...options,signal:controller.signal})}
+ finally{clearTimeout(timer)}
+}
+
 function openInbox(){
  return new Promise((resolve,reject)=>{
   try{const r=indexedDB.open('quantaphi-robot-inbox',1);r.onupgradeneeded=()=>{if(!r.result.objectStoreNames.contains('settings'))r.result.createObjectStore('settings')};r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);r.onblocked=()=>reject(Error('Inbox storage blocked'))}
@@ -51,7 +60,7 @@ async function verify(token){
  if(!validToken(token))return {state:'rejected'};
  const headers={Authorization:'Bearer '+token};
  try{
-  const r=await fetch(HEALTH,{headers,cache:'no-store',signal:AbortSignal.timeout(12000)});
+  const r=await ownerFetch(HEALTH,{headers,cache:'no-store'});
   if(r.ok)return {state:'verified',headers};
   if(!(r.status===404||r.status===401||r.status===403))return {state:'unreachable'};
  }catch{return {state:'unreachable'}}
@@ -59,7 +68,7 @@ async function verify(token){
  // an unused pairing code. Redemption consumes the short-lived code once.
  if(!/^[a-f0-9]{64}$/.test(token))return {state:'rejected'};
  try{
-  const r=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/owner/pair/redeem',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({code:token}),signal:AbortSignal.timeout(12000)});
+  const r=await ownerFetch('https://infinity-brain-clock.marvaseater.workers.dev/owner/pair/redeem',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({code:token})});
   const result=await r.json();
   if(!r.ok||!result.ok||!/^rd_[a-f0-9]{64}$/.test(result.token||''))return {state:r.status>=500?'unreachable':'rejected'};
   return {state:'verified',headers:{Authorization:'Bearer '+result.token},pairedToken:result.token};
@@ -73,7 +82,7 @@ async function walletIdentity(){
   if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token||''))return {state:'no-wallet'};
   // A device credential is presented only to this first-party Brain endpoint.
   // The server confirms the session against the private Unified Wallet service.
-  const response=await fetch(SESSION,{method:'POST',headers:{Authorization:'Bearer '+token},cache:'no-store',signal:AbortSignal.timeout(15000)});
+  const response=await ownerFetch(SESSION,{method:'POST',headers:{Authorization:'Bearer '+token},cache:'no-store'},15000);
   if(response.status===404||response.status===401||response.status===403)return {state:'not-linked'};
   if(!response.ok)return {state:'unreachable'};
   const body=await response.json();

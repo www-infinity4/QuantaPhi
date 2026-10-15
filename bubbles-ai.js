@@ -549,9 +549,9 @@ function isOwnerWorkRequest(text){
 }
 // Pairing codes must never appear in transcripts, model prompts or speech.
 async function consumeOwnerCodeFromChat(message,fromVoice){
- if(!nativeOverlay||fromVoice)return false;
+ if(embedded||fromVoice)return false;
  const raw=String(message||'').trim();
- const payload=raw.replace(/^(?:(?:owner|pairing|robot brain)(?:\s+pairing)?\s+code)\s*[:=]\s*/i,'').replace(/[\s-]/g,'');
+ const payload=raw.replace(/^(?:(?:owner|pairing|robot brain)(?:\s+pairing)?\s+code)\s*[:=]\s*/i,'').replace(/[\s-]/g,'').toLowerCase();
  const attempted=/^[a-f0-9]{64}$/i.test(payload)||
    /^[a-f0-9\s-]{48,180}$/i.test(raw)||
    /^(?:(?:owner|pairing|robot brain)(?:\s+pairing)?\s+code)\s*[:=]/i.test(raw);
