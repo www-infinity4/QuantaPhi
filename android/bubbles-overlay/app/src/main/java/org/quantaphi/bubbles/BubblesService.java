@@ -93,6 +93,39 @@ public final class BubblesService extends Service {
     private WindowManager.LayoutParams bubbleLayout;
     private OrbView orb;
     private FloatingOracleWindow oracleWindow;
+    private static volatile BubblesService activeImageService;
+    private android.webkit.ValueCallback<android.net.Uri[]> imagePickerCallback;
+    private final java.util.ArrayDeque<String> pendingWebsiteSpeech = new java.util.ArrayDeque<>();
+    /** The same WebView that renders the site receives the selected content URI. */
+    boolean openImagePicker(android.webkit.ValueCallback<android.net.Uri[]> callback) {
+        if (!connected || imagePickerCallback != null) {
+            callback.onReceiveValue(null); return true;
+        }
+        imagePickerCallback = callback;
+        try {
+            startActivity(new Intent(this, MainActivity.class)
+                .putExtra("pick_bubbles_image", true)
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP));
+        } catch (RuntimeException error) {
+            imagePickerCallback = null; callback.onReceiveValue(null);
+            BrainNotes.prefs(this).edit().putString("last_error", "Android image picker unavailable").apply();
+        }
+        return true;
+    }
+    static void completeImagePicker(android.net.Uri selected) {
+        BubblesService service = activeImageService;
+        if (service == null) return;
+        service.main.post(() -> {
+            android.webkit.ValueCallback<android.net.Uri[]> callback = service.imagePickerCallback;
+            service.imagePickerCallback = null;
+            if (callback != null) callback.onReceiveValue(selected == null ? null : new android.net.Uri[]{selected});
+        });
+    }
+    private void drainWebsiteSpeech() {
+        if (!connected || muted || speaking || !ttsReady || tts == null) return;
+        String next = pendingWebsiteSpeech.pollFirst();
+        if (next != null && !next.trim().isEmpty()) speak(next);
+    }
     private AudioRecord microphone;
     private Thread audioThread;
     private Model voiceModel;
@@ -185,6 +218,7 @@ public final class BubblesService extends Service {
                 @Override public void onError(String id) { main.post(() -> finishSpeaking(id)); }
             });
             ttsReady = true;
+            main.post(this::drainWebsiteSpeech);
         }));
     }
 
@@ -263,6 +297,7 @@ public final class BubblesService extends Service {
             bubbleLayout.x = 14; bubbleLayout.y = 240;
             manager.addView(orb, bubbleLayout);
             connected = true;
+            activeImageService = this;
             sessionRunning = true;
             // Keep the real QuantaPhi website assistant available while the
             // user is in Twitter or another app, even with the panel collapsed.
@@ -530,6 +565,7 @@ public final class BubblesService extends Service {
         // Stop a response without stopping the microphone. Old TTS callbacks
         // MUST NOT end a later response started on the same engine.
         speechSuppressed = true;
+        pendingWebsiteSpeech.clear();
         speechGeneration++;
         activeUtteranceId = "";
         speaking = false;
@@ -547,6 +583,7 @@ public final class BubblesService extends Service {
         // Hardware speaker echo and TTS audio buffers may outlast onDone.
         echoQuietUntil = SystemClock.elapsedRealtime() + 850L;
         if (connected && !muted) state("listening", .1f);
+        main.postDelayed(this::drainWebsiteSpeech,250L);
     }
 
     private void heard(String raw) {
@@ -858,8 +895,13 @@ public final class BubblesService extends Service {
     }
     /** Only results from the first-party QuantaPhi site voice request are spoken. */
     void speakWebsiteReply(String response) {
-        if (response == null || response.trim().isEmpty()) return;
-        if (connected && !muted) speak(response);
+        if (response == null || response.trim().isEmpty() || !connected || muted) return;
+        if (pendingWebsiteSpeech.size() >= 8) {
+            BrainNotes.prefs(this).edit().putString("last_error", "Speech read-aloud queue is full").apply();
+            return;
+        }
+        pendingWebsiteSpeech.addLast(response.substring(0, Math.min(2200, response.length())));
+        drainWebsiteSpeech();
     }
 
     private void speak(String response) {
@@ -892,6 +934,9 @@ public final class BubblesService extends Service {
     @Override public IBinder onBind(Intent intent) {return null;}
     @Override public void onDestroy() {
         sessionRunning = false;
+        if(activeImageService == this) activeImageService = null;
+        if(imagePickerCallback != null){imagePickerCallback.onReceiveValue(null);imagePickerCallback=null;}
+        pendingWebsiteSpeech.clear();
         connected=false;muted=true;
         main.removeCallbacksAndMessages(null);
         stopRecognition();
