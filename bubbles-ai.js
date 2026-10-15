@@ -245,7 +245,7 @@ for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi
 tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
 const pairingCard=create('section','ba-pairing-card');
  pairingCard.hidden=true;
- const pairingInstructions=create('p','','Website pairing code. Copy it and paste it into QuantaPhi Bubbles → Robot Brain owner access. Expires in two minutes; use it once.');
+ const pairingInstructions=create('p','',nativeOverlay?'Website pairing code. Copy it into the website’s verified owner access. Expires in two minutes; use it once.':'APK pairing code. Copy it into the floating Bubbles chat → Connect Robot Brain. Expires in two minutes; use it once.');
  const pairingCode=create('input','ba-field');
  pairingCode.readOnly=true;pairingCode.autocomplete='off';pairingCode.spellcheck=false;
  pairingCode.setAttribute('aria-label','One-time website pairing code');
