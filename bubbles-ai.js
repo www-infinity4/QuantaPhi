@@ -274,16 +274,32 @@ if(nativeOverlay){
  // The native WebView has isolated account storage. Pair its real shared
  // Bubbles chat using a one-time owner code, not a duplicate login screen.
  nativeOwnerRow=create('form','ba-native-owner');
- const ownerHelp=create('p','ba-muted','Connect Robot Brain once: on your verified QuantaPhi website, tell Bubbles “link my APK”, then paste its one-time code here. The owner session and shared memory reconnect automatically afterward.');
+ const ownerHelp=create('p','ba-muted','Connect Robot Brain · Paste the one-time code from QuantaPhi below. If the code expired, say “link my APK” on the verified website to get a fresh one.');
  const nativeOwnerInput=create('input','ba-field');
  nativeOwnerInput.type='password';nativeOwnerInput.autocomplete='off';nativeOwnerInput.spellcheck=false;
- nativeOwnerInput.maxLength=512;nativeOwnerInput.placeholder='One-time owner pairing code';
+ nativeOwnerInput.maxLength=512;nativeOwnerInput.placeholder='Paste 64-character owner code';
+ nativeOwnerInput.autocapitalize='off';nativeOwnerInput.setAttribute('autocorrect','off');
+ nativeOwnerInput.setAttribute('enterkeyhint','go');
  nativeOwnerInput.setAttribute('aria-label','Owner pairing code');
+ const nativeOwnerPaste=create('button','ba-control ba-owner-paste','Paste code');
+ nativeOwnerPaste.type='button';
+ nativeOwnerPaste.addEventListener('click',async()=>{
+  try{
+   if(!navigator.clipboard?.readText)throw Error('Clipboard unavailable');
+   const copied=(await navigator.clipboard.readText()).trim();
+   if(!/^[a-f0-9]{64}$/i.test(copied)){nativeOwnerStatus.textContent='The clipboard does not contain a 64-character pairing code.';return}
+   nativeOwnerInput.value=copied;nativeOwnerInput.focus();
+   nativeOwnerStatus.textContent='Code pasted. Tap Connect Robot Brain.';
+  }catch{
+   nativeOwnerInput.focus();
+   nativeOwnerStatus.textContent='Tap and hold the code field, then choose Paste.';
+  }
+ });
  const nativeOwnerButton=create('button','ba-control','Connect Robot Brain');
  nativeOwnerButton.type='submit';
  const nativeOwnerStatus=create('p','ba-muted','Only an owner-authorized code can unlock jobs.');
  nativeOwnerStatus.setAttribute('role','status');
- nativeOwnerRow.append(ownerHelp,nativeOwnerInput,nativeOwnerButton,nativeOwnerStatus);
+ nativeOwnerRow.append(ownerHelp,nativeOwnerInput,nativeOwnerPaste,nativeOwnerButton,nativeOwnerStatus);
  nativeOwnerRow.addEventListener('submit',async event=>{
   event.preventDefault();
   if(nativeOwnerButton.disabled)return;
@@ -299,7 +315,9 @@ if(nativeOverlay){
    nativeOwnerStatus.textContent='Owner connection was not completed: '+String(error.message||error).slice(0,120);
   }finally{nativeOwnerButton.disabled=false}
  });
- panel.insertBefore(nativeOwnerRow,conversation);
+ // Keep the secure pairing field directly under the Bubbles title.
+ // Android's small floating window must never bury this behind messages or settings.
+ panel.insertBefore(nativeOwnerRow,status);
 
  // Native OAuth and model inference live on the device, not in this WebView.
  // Expose the entry point above conversation; don't bury it in hidden settings.
