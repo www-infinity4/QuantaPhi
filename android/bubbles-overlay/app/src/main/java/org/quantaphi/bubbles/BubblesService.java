@@ -434,12 +434,15 @@ public final class BubblesService extends Service {
         try {
             recording.start(new java.io.File(getFilesDir(), "captures"));
             recordedWords = "";
-            BrainNotes.prefs(this).edit().putString("audio_state", "Recording microphone sound").apply();
+            BrainNotes.prefs(this).edit().putBoolean("audio_active", true).putString("audio_state", "Recording microphone sound").apply();
             ((NotificationManager)getSystemService(NOTIFICATION_SERVICE)).notify(NOTIFY_ID, notification());
-        } catch (Exception error) { Toast.makeText(this, error.getMessage(), Toast.LENGTH_LONG).show(); }
+        } catch (Exception error) { BrainNotes.prefs(this).edit().putBoolean("audio_active", false)
+                .putString("audio_state", "Sound recording failed to start: " + error.getClass().getSimpleName()).apply();
+            Toast.makeText(this, "Sound recording could not start", Toast.LENGTH_LONG).show(); }
     }
     private void saveAudio() {
         pendingAudioRecording = false;
+        BrainNotes.prefs(this).edit().putBoolean("audio_active", false).apply();
         final java.io.File completed;
         try {
             completed = recording.finish();
