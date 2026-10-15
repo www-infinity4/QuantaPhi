@@ -218,7 +218,7 @@ recorderStop.addEventListener('click',()=>{
 const memoryHint=create('small','ba-memory-status',embedded?'Conversation stays in this embed.':'Shared memory waits for your verified owner connection.');memoryHint.setAttribute('role','status');
 status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
-const chatScroll=nativeOverlay?create('div','ba-thread'):conversation;
+const chatScroll=!embedded?create('div','ba-thread'):conversation;
 const composer=create('form','ba-composer');
 const input=create('textarea','ba-field');input.rows=2;input.maxLength=2500;input.placeholder=nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
 const actions=create('div','ba-actions');
@@ -309,6 +309,12 @@ if(nativeOverlay){
  window.visualViewport?.addEventListener('scroll',resizeChat);
  window.addEventListener('resize',resizeChat);
  resizeChat();
+}
+if(!nativeOverlay&&!embedded){
+ // Website and APK share one message/options scroll owner and a reachable composer.
+ panel.insertBefore(chatScroll,conversation);
+ chatScroll.append(ownerMode,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,tools);
+ composer.prepend(status);
 }
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
@@ -702,7 +708,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=reply;else if(config.voice&&!nativeOverlay)speakText(reply);
   nativeSpeechPending=false;busy=false;send.disabled=false;return;
  }
- if(!embedded&&/^(?:(?:please|bubbles)[\s,:]+)*(?:pair|link|sync|connect)\b.{0,60}\b(?:apk|android|phone|floating bubble)\b/i.test(spoken)){
+ if(!embedded&&(/^(?:(?:please|bubbles)[\s,:]+)*(?:pair|link|sync|connect)\b.{0,60}\b(?:apk|android|phone|floating bubble)\b/i.test(spoken)
+   || /^(?:(?:please|bubbles)[\s,:]+)*(?:(?:give|show|create|generate|request)(?: me)?(?: a| the| my)?\s+)?(?:one[ -]?time|pairing|brain(?: link)?)\s+(?:code|link)(?:\s+(?:brain|link|code|apk|android|phone|please))*[.!?]*$/i.test(spoken))){
   busy=true;send.disabled=true;let resultText;
   try{
    const headers=await verifiedOwnerHeaders();

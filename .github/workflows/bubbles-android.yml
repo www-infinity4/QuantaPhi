@@ -5,6 +5,7 @@ on:
       - 'android/bubbles-overlay/**'
       - 'bubbles-native-chat.css'
       - 'test/bubbles-native-chat.browser.cjs'
+      - 'test/bubbles-web-chat.browser.cjs'
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
       - 'test/bubbles-floating-window.test.cjs'
@@ -24,6 +25,7 @@ on:
       - 'android/bubbles-overlay/**'
       - 'bubbles-native-chat.css'
       - 'test/bubbles-native-chat.browser.cjs'
+      - 'test/bubbles-web-chat.browser.cjs'
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
       - 'test/bubbles-floating-window.test.cjs'
@@ -58,7 +60,7 @@ jobs:
         run: |
           npm install --no-save --package-lock=false playwright@1.51.1
           npx playwright install --with-deps chromium
-          node --test test/bubbles-native-chat.browser.cjs
+          node --test test/bubbles-native-chat.browser.cjs test/bubbles-web-chat.browser.cjs
       - name: Verify isolated Android preview install contract
         run: node --test test/bubbles-apk-preview.test.cjs
       - name: Verify continuous native microphone contract

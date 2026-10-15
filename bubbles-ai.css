@@ -193,3 +193,12 @@
 .ba-panel .ba-native-provider[hidden],
 .ba-panel .ba-chatgpt-login[hidden],
 .ba-panel .ba-close[hidden]{display:none!important}
+
+/* Keep website chat messages and expanded controls in one scrolling thread. */
+.ba-panel{overflow:hidden;min-height:0;max-height:calc(100dvh - 20px)}
+.ba-panel > .ba-header,.ba-panel > .ba-composer{flex:none}
+.ba-panel > .ba-thread{flex:1 1 0;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;touch-action:pan-y;-webkit-overflow-scrolling:touch}
+.ba-panel .ba-thread .ba-messages{flex:none;min-height:0;overflow:visible}
+.ba-panel .ba-thread .ba-tools,.ba-panel .ba-thread .ba-notes{max-height:none;overflow:visible}
+.ba-panel .ba-thread .ba-line{flex:none}
+.ba-panel .ba-status{overflow-wrap:anywhere}
