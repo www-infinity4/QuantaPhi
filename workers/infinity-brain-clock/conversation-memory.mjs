@@ -34,7 +34,7 @@ export async function conversationMemory(db,owner,body){
   const androidClient=body.client.startsWith('android_');
   const androidActive=current?.client.startsWith('android_');
   if(body.mode==='voice-claim'&&(!current||androidClient||!androidActive||current.client===body.client)){
-   await db.prepare('INSERT INTO bubbles_voice(owner,client,expires) VALUES (?,?,?) ON CONFLICT(owner) DO UPDATE SET client=excluded.client,expires=excluded.expires').bind(owner,body.client,expires).run();
+   await db.prepare('INSERT INTO bubbles_voice(owner,client,expires) VALUES (?,?,?) ON CONFLICT(owner) DO UPDATE SET client=excluded.client,expires=excluded.expires WHERE bubbles_voice.expires<=? OR substr(bubbles_voice.client,1,8)<>\'android_\' OR substr(excluded.client,1,8)=\'android_\' OR bubbles_voice.client=excluded.client').bind(owner,body.client,expires,now).run();
   }else if(body.mode==='voice-renew'&&current?.client===body.client){
    await db.prepare('UPDATE bubbles_voice SET expires=? WHERE owner=? AND client=? AND expires>?').bind(expires,owner,body.client,now).run();
   }else if(body.mode==='voice-release'&&current?.client===body.client){
