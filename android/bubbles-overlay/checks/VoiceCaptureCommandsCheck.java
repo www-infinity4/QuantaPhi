@@ -1,0 +1,37 @@
+package org.quantaphi.bubbles;
+
+/** Plain JVM checks for the exact speech intents used on Android. */
+public final class VoiceCaptureCommandsCheck {
+    private static void expect(String spoken, String action) {
+        VoiceCaptureCommands.Command c = VoiceCaptureCommands.parse(spoken);
+        if (c == null || !action.equals(c.action))
+            throw new AssertionError(spoken + ": expected " + action + ", got " +
+                (c == null ? "chat" : c.action));
+    }
+    private static void noCapture(String spoken) {
+        if (VoiceCaptureCommands.parse(spoken) != null)
+            throw new AssertionError("Normal speech must not start recording: " + spoken);
+    }
+    public static void main(String[] args) {
+        expect("record", "sound_start");
+        expect("please record my voice", "sound_start");
+        expect("record audio", "sound_start");
+        expect("stop", "capture_stop");
+        expect("stop it", "capture_stop");
+        expect("stop recording", "capture_stop");
+        expect("please stop sound recording", "sound_stop");
+        expect("stop the screen recording", "screen_stop");
+        expect("record my screen", "screen_video");
+        expect("can you record my screen", "screen_video");
+        expect("start screen recording", "screen_video");
+        expect("turn on video", "camera_video");
+        expect("record a video", "camera_video");
+        expect("film this", "camera_video");
+        expect("take a screenshot", "screen_image");
+        expect("take screenshots every five seconds for five minutes", "screen_sequence");
+        noCapture("can you explain the video to me");
+        noCapture("what happened to the camera");
+        noCapture("stop listening"); // separate deliberate microphone mute intent
+        System.out.println("Bubbles voice capture intent checks passed");
+    }
+}
