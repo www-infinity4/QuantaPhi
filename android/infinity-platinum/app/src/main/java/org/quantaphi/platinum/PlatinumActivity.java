@@ -288,7 +288,7 @@ public final class PlatinumActivity extends Activity {
  private void note(String message){status.setText(message);}
  private void options(){
   new AlertDialog.Builder(this).setTitle("Infinity Platinum")
-    .setItems(new String[]{"Close current tab","Resume last website","Choose Platinum as default browser","Privacy and limitations"},
+    .setItems(new String[]{"Close current tab","Resume last website","Choose Platinum as default browser","Inspect SIM & cellular radio","Open Android network settings","Infinity Cellular project","Privacy and limitations"},
      (dialog,which)->{
       if(which==0)closeTab();
       if(which==1){
@@ -305,9 +305,26 @@ public final class PlatinumActivity extends Activity {
         }else note("This Android device does not offer a browser role picker.");
        }else note("Choose Platinum using Android Settings → Default apps.");
       }
-      if(which==3)new AlertDialog.Builder(this).setTitle("Private by design")
+      if(which==3)new AlertDialog.Builder(this).setTitle("Motorola / existing SIM (local inspection)")
+       .setMessage(CellularInspector.capture(this))
+       .setNegativeButton("Done",null)
+       .setPositiveButton("Android network settings",(d,w)->openNetworkSettings()).show();
+      if(which==4)openNetworkSettings();
+      if(which==5)navigate("https://quantaphi.org/cellular/");
+      if(which==6)new AlertDialog.Builder(this).setTitle("Private by design")
        .setMessage("Platinum uses the Android System WebView engine, not an independent Chromium build. Your web cookies belong to this app, not Chrome. Website tiles and Phi projects stay in this app's local WebView storage, unless you explicitly use an authenticated QuantaPhi sync. The app does not import Chrome passwords or copy another app's login. Some sites block embedded browser logins or unsupported popups.").setPositiveButton("OK",null).show();
      }).show();
+ }
+ private void openNetworkSettings(){
+  // This only opens Android's user-controlled operator selection UI.
+  // A website/app cannot silently rewrite a carrier's SIM or switch to its own LTE tower.
+  try{
+   Intent settings=new Intent(android.provider.Settings.ACTION_NETWORK_OPERATOR_SETTINGS);
+   startActivity(settings);
+  }catch(Exception noOperatorScreen){
+   try{startActivity(new Intent(android.provider.Settings.ACTION_WIRELESS_SETTINGS));}
+   catch(Exception unavailable){note("This device has no accessible operator settings panel.");}
+  }
  }
  @Override protected void onNewIntent(Intent intent){
   super.onNewIntent(intent);setIntent(intent);

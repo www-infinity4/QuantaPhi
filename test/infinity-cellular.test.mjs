@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {DEFAULT_PILOT,PILOT_FIELDS,normalizePilot,readiness,manifest} from '../cellular/network-plan.mjs';
+import {MOTOROLA_VARIANTS,COMMON_CANDIDATES,evaluateBand} from '../cellular/lte-compatibility.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 
@@ -68,4 +69,38 @@ test('Motorola Moto G Pure compatibility is flagged before buying CBRS radio gea
  assert.match(html,/LTE modem\/router/);
  assert.match(hardware,/list LTE Band 48/);
  assert.match(hardware,/SIM tray/);
+});
+
+test('Use a listed Motorola LTE band but never authorize transmission from band compatibility alone',()=>{
+ assert.deepEqual(COMMON_CANDIDATES,[2,4,5,12,66]);
+ assert.ok(MOTOROLA_VARIANTS['XT2163-4'].includes(2));
+ assert.ok(MOTOROLA_VARIANTS['XT2163-6'].includes(2));
+ assert.equal(evaluateBand({variant:'XT2163-4',band:48}).bandSupportedInPublishedSpecification,false);
+ assert.equal(evaluateBand({variant:'XT2163-6',band:48}).proposalEligibleForLicensedPilot,false);
+ const direct=evaluateBand({variant:'XT2163-6',band:2});
+ assert.equal(direct.proposalEligibleForLicensedPilot,true);
+ assert.equal(direct.serviceActive,false);
+ assert.equal(direct.existingSimCanBeUsedWithoutReplacement,false);
+ assert.ok(direct.blockers.some(x=>/SIM issuer/i.test(x)));
+ const authorised=evaluateBand({variant:'XT2163-6',band:2,rightsGranted:true,simOperatorAgreement:true,coreAuthorized:true,backhaulVerified:true});
+ assert.equal(authorised.operatorAssertionsCompleteUnverified,true);
+ assert.equal(authorised.serviceActive,false);
+ assert.equal(authorised.publicInternetValidated,false);
+});
+test('Android Moto G Pure diagnostic reads only non-identifying telephony status',()=>{
+ const java=read('android/infinity-platinum/app/src/main/java/org/quantaphi/platinum/CellularInspector.java');
+ const activity=read('android/infinity-platinum/app/src/main/java/org/quantaphi/platinum/PlatinumActivity.java');
+ const manifest=read('android/infinity-platinum/app/src/main/AndroidManifest.xml');
+ assert.ok(java.includes('hasIccCard()'));
+ assert.ok(java.includes('getSimOperatorName()'));
+ assert.ok(java.includes('hasTransport('));
+ assert.match(java,/XT2163-4/);
+ assert.match(java,/XT2163-6/);
+ assert.ok(activity.includes('CellularInspector.capture(this)'));
+ assert.match(activity,/ACTION_NETWORK_OPERATOR_SETTINGS/);
+ assert.match(manifest,/android.permission.ACCESS_NETWORK_STATE/);
+ for(const file of [java,activity,manifest]){
+  assert.doesNotMatch(file,/(getSubscriberId|getSimSerialNumber|getImei|getDeviceId|getLine1Number|getCellLocation|getAllCellInfo|READ_PRIVILEGED_PHONE_STATE|READ_PHONE_STATE|ACCESS_FINE_LOCATION)/);
+ }
+
 });
