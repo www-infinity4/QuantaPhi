@@ -97,7 +97,42 @@ export default{
   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:allow});
   let response;
   const url=new URL(request.url);
-  if(url.pathname==='/health')response=json({ok:true,service:'infinity-platinum-switchboard',version:1,pstn:false,emergency:false});
+  if(url.pathname==='/v1/carrier/prepare'&&request.method==='POST'){
+   // The internet switchboard never invents or acquires a subscriber's phone number.
+   // A carrier connection needs a separately bound, licensed provider service.
+   try{
+    const data=await body(request);
+    const caller=String(data.caller||''),to=String(data.to||'');
+    const owner=ownerKey(request);
+    if(!ALIAS.test(caller)||RESERVED.has(caller)||!validSecret(owner))response=fail('registered_caller_required',403);
+    else if(!/^\+[1-9][0-9]{7,14}$/.test(to))response=fail('invalid_international_number',400);
+    else{
+     const proof=await env.PLATINUM_LINES.get(env.PLATINUM_LINES.idFromName(caller))
+       .fetch(new Request('https://internal/auth',{headers:{'x-platinum-owner':owner}}));
+     const checked=await proof.json();
+     if(!checked.ok)response=fail('registered_caller_required',403);
+     else if(!env.CARRIER_BRIDGE||env.PSTN_ENABLED!=='true'||env.PSTN_EMERGENCY_READY!=='true')
+      response=fail('licensed_carrier_gateway_not_connected',503);
+     else{
+      const upstream=await env.CARRIER_BRIDGE.fetch(new Request('https://carrier.internal/outbound',{
+       method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({caller,to}),
+      }));
+      // The bridge must return an actual provider call-leg identifier. A queued
+      // job or generated landing page is never proof that a telephone rang.
+      let receipt={};try{receipt=await upstream.json()}catch{}
+      if(upstream.ok&&receipt?.ok&&/^[A-Za-z0-9_-]{10,100}$/.test(receipt.callId||''))
+       response=json({ok:true,status:'carrier_leg_created',callId:receipt.callId});
+      else response=fail('carrier_did_not_confirm_call_leg',502);
+     }
+    }
+   }catch{response=fail('malformed_carrier_request',400)}
+  }
+  else if(url.pathname==='/v1/carrier/status'&&request.method==='GET'){
+   response=json({ok:true,enabled:env.PSTN_ENABLED==='true'&&env.PSTN_EMERGENCY_READY==='true'&&!!env.CARRIER_BRIDGE,
+    webPages:true,pstn:env.PSTN_ENABLED==='true'&&env.PSTN_EMERGENCY_READY==='true'&&!!env.CARRIER_BRIDGE,
+    explanation:'A web route never replaces licensed PSTN interconnection.'});
+  }
+  else if(url.pathname==='/health')response=json({ok:true,service:'infinity-platinum-switchboard',version:1,pstn:false,emergency:false});
   else{
    const found=url.pathname.match(/^\/v1\/line\/([a-z0-9-]+)(?:\/(register|ping|inbox|call|signal|status))?\/?$/);
    if(!found||!ALIAS.test(found[1])||RESERVED.has(found[1]))response=fail('invalid_address',404);

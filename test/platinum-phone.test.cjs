@@ -28,7 +28,14 @@ function setup(){
   }),env);
   return {status:response.status,body:await response.json()};
  }
- return {req};
+ async function carrier(method,payload,headers={}){
+  const response=await main.fetch(new Request('https://worker.example/v1/carrier/'+(method==='GET'?'status':'prepare'),{
+   method,headers:payload?{'Content-Type':'application/json',...headers}:headers,
+   body:payload?JSON.stringify(payload):undefined
+  }),env);
+  return {status:response.status,body:await response.json()};
+ }
+ return {req,carrier};
 }
 test('opt-in Platinum identity cannot be claimed or impersonated by another phone',async()=>{
  const {req}=setup(),alice='1'.repeat(64),bob='2'.repeat(64);
@@ -77,4 +84,29 @@ test('Phone page is routed from real Platinum, provides independent internet cal
  assert.match(ui,/getUserMedia/);
  assert.match(ui,/stun\.cloudflare\.com:3478/);
  assert.doesNotMatch(ui,/navigator\.serviceWorker\.register|document\.cookie/);
+});
+
+test('Web number route is generated on demand; unknown PSTN destinations are never claimed',()=>{
+ const route=fs.readFileSync(path.join(__dirname,'../workers/quantaphi-site/worker.js'),'utf8');
+ const html=fs.readFileSync(path.join(__dirname,'../phone/index.html'),'utf8');
+ const ui=fs.readFileSync(path.join(__dirname,'../phone/phone.js'),'utf8');
+ assert.ok(route.includes('sourcePath: \'/phone/index.html\'') && route.includes('phone\\/n\\/'), 'number dial pages must use the phone template');
+ assert.match(html,/id="number-page-link"/);
+ assert.match(html,/noindex,nofollow/);
+ assert.ok(ui.includes('function numberAddress(raw)'));
+ assert.ok(ui.includes('function showNumberPage()'));
+ assert.ok(ui.includes('function numberUrl(raw)'));
+ assert.match(ui,/kind:'pstn'/);
+});
+test('Carrier requests require an authenticated owner and a configured licensed bridge',async()=>{
+ const {req,carrier}=setup();
+ const owner='1'.repeat(64),foreign='2'.repeat(64);
+ await req('alice','/register','POST',{name:'Alice'},{'x-platinum-owner':owner});
+ const status=await carrier('GET');
+ assert.equal(status.body.enabled,false);
+ assert.equal((await carrier('POST',{caller:'alice',to:'+14155550123'},{'x-platinum-owner':foreign})).status,403);
+ assert.equal((await carrier('POST',{caller:'alice',to:'911'},{'x-platinum-owner':owner})).status,400);
+ const denied=await carrier('POST',{caller:'alice',to:'+14155550123'},{'x-platinum-owner':owner});
+ assert.equal(denied.status,503);
+ assert.equal(denied.body.error,'licensed_carrier_gateway_not_connected');
 });
