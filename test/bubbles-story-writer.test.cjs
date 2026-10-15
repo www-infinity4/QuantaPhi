@@ -56,7 +56,7 @@ test('Bubbles has real AI chat and opt-in browser speech rather than simulated r
 
 test('Bubbles never impersonates account sign-in or grants unverified repository rights',()=>{
  const code=source('bubbles-ai.js');
- assert.match(code,/account access require separate provider authorization/);
+ assert.match(code,/Official website ChatGPT sign-in requires partner registration/);
  assert.match(code,/You have NO independent GitHub write authorization/);
  assert.match(code,/const headers=window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready:null/);
  assert.match(code,/if\(!headers\?\.Authorization\)return/);
