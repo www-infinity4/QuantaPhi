@@ -82,15 +82,6 @@ public final class MainActivity extends Activity {
             state.setText("In Accessibility settings, enable Brain workflow learning for Bubbles Preview. Android asks you to approve it once.");
         });
         layout.addView(screenAccess);
-        // On-demand Android Accessibility stays active, but screen text only
-        // travels with a conversation when the owner explicitly opts in.
-        CheckBox screenContext = new CheckBox(this);
-        screenContext.setText("Use visible screen text to understand my conversation (optional)");
-        screenContext.setChecked(BrainNotes.prefs(this).getBoolean("screen_context_on_chat", false));
-        screenContext.setOnCheckedChangeListener((button, enabled) ->
-                BrainNotes.prefs(this).edit().putBoolean("screen_context_on_chat", enabled).apply());
-        layout.addView(screenContext);
-
         Button chat = new Button(this);
         chat.setText("Open Oracle chat");
         chat.setOnClickListener(view -> startActivity(new Intent(this, OracleChatActivity.class)));
