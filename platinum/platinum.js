@@ -9,6 +9,11 @@ const $=id=>document.getElementById(id),node=(tag,cls,content)=>{
 const status=$('pl-status'),tiles=$('pl-tiles'),empty=$('pl-empty');
 const editor=$('pl-edit'),editForm=$('pl-edit-form'),address=$('pl-address');
 let editing='',currentPreview='';
+const addressDraftKey='infinity-platinum:address-draft:v1',noteDraftKey='infinity-platinum:note-draft:v1';
+try{const saved=localStorage.getItem(addressDraftKey);if(saved)address.value=saved}catch{}
+address.addEventListener('input',()=>{try{localStorage.setItem(addressDraftKey,address.value)}catch{}});
+$('pl-note').addEventListener('input',()=>{if(!editing)try{localStorage.setItem(noteDraftKey,$('pl-note').value)}catch{}});
+
 if(!core){status.textContent='Infinity Platinum could not load the URL validator; links are disabled.';return}
 function say(text){status.textContent=String(text)}
 function launch(url,title){
@@ -79,7 +84,7 @@ function openEditor(item=null){
  $('pl-edit-title').textContent=item?'Edit this website':'Save a website preview';
  $('pl-title').value=item?.title||'';
  $('pl-url').value=item?.url||core.validUrl(address.value)||'';
- $('pl-note').value=item?.note||'';
+ $('pl-note').value=item?.note||(!item?(localStorage.getItem(noteDraftKey)||''):'');
  $('pl-image').value='';
  editor.hidden=false;
  $('pl-title').focus();
@@ -159,6 +164,7 @@ editForm.addEventListener('submit',async event=>{
   const result=core.save({id:editing||undefined,url,title:$('pl-title').value,
    note:$('pl-note').value,preview});
   if(!result.ok){say(result.reason);return}
+  if(!editing)try{localStorage.removeItem(noteDraftKey)}catch{}
   closeEditor();say('Website preview saved locally: '+result.item.title+'.');refresh();
  }catch(e){say('Could not save preview: '+String(e.message||e))}
  finally{submit.disabled=false}

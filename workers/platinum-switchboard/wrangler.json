@@ -1,0 +1,10 @@
+{
+ "$schema":"https://json.schemastore.org/wrangler.json",
+ "name":"infinity-switchboard",
+ "main":"index.js",
+ "compatibility_date":"2026-10-15",
+ "workers_dev":true,
+ "durable_objects":{"bindings":[{"name":"PLATINUM_LINES","class_name":"PlatinumLine"}]},
+ "exports":{"PlatinumLine":{"type":"durable-object","storage":"sqlite"}},
+ "observability":{"enabled":true}
+}

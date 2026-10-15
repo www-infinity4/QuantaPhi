@@ -29,6 +29,7 @@ public final class PlatinumNavigation {
   String value=raw==null?"":raw.trim();
   String address=web(value);
   if(!address.isEmpty())return address;
+  if(value.matches("^\\+?[0-9 ().-]{7,30}$"))return "https://quantaphi.org/phone/?dial="+URLEncoder.encode(value,StandardCharsets.UTF_8);
   if(value.isEmpty()||value.length()>300||value.matches("(?i)^[a-z][a-z0-9+.-]*:.*"))return "";
   return "https://quantaphi.org/?q="+URLEncoder.encode(value,StandardCharsets.UTF_8);
  }
