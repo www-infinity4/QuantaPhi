@@ -211,8 +211,9 @@ recorderStop.addEventListener('click',()=>{
 const memoryHint=create('small','ba-memory-status',embedded?'Conversation stays in this embed.':'Shared memory waits for your verified owner connection.');memoryHint.setAttribute('role','status');
 status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
+const chatScroll=nativeOverlay?create('div','ba-thread'):conversation;
 const composer=create('form','ba-composer');
-const input=create('textarea','ba-field');input.rows=2;input.maxLength=2500;input.placeholder=nativeOverlay?'Message Bubbles or paste your 64-character Robot Brain code here…':'Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
+const input=create('textarea','ba-field');input.rows=2;input.maxLength=2500;input.placeholder=nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
 const actions=create('div','ba-actions');
 const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mic.setAttribute('aria-pressed','false');
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
@@ -282,8 +283,25 @@ if(nativeOverlay){
  tools.insertBefore(nativeProviderRow,summary.nextSibling);
  tools.append(privateLabel);
  summary.textContent='⋯';summary.setAttribute('aria-label','Bubbles options');
- // Keep options collapsible and the message composer at the bottom.
- panel.insertBefore(tools,composer);
+ // One scrolling surface owns messages, pairing output and expanded options.
+ // The composer and its visible feedback remain reachable at every scroll position.
+ panel.insertBefore(chatScroll,header);
+ chatScroll.append(ownerMode,recorderStatus,recorderStop,pairingCard,conversation,tools);
+ composer.prepend(status);
+ header.hidden=true;
+ memoryHint.hidden=true;
+ summary.textContent='Options';
+ workText.hidden=true;
+ for(const label of tools.querySelectorAll(':scope > label'))label.hidden=true;
+ const resizeChat=()=>{
+  const viewport=window.visualViewport;
+  panel.style.height=(viewport?viewport.height:window.innerHeight)+'px';
+  panel.style.top=(viewport?viewport.offsetTop:0)+'px';
+ };
+ window.visualViewport?.addEventListener('resize',resizeChat);
+ window.visualViewport?.addEventListener('scroll',resizeChat);
+ window.addEventListener('resize',resizeChat);
+ resizeChat();
 }
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
@@ -394,12 +412,12 @@ function display(text,who,greeting=false){
    });
   row.append(remember,task,say);line.append(row);
  }
- const wasNearBottom=conversation.scrollHeight-conversation.scrollTop-conversation.clientHeight<96;
+ const wasNearBottom=chatScroll.scrollHeight-chatScroll.scrollTop-chatScroll.clientHeight<96;
  conversation.append(line);
  // New replies follow the bottom; reading older messages doesn't jump away.
  if(wasNearBottom||who==='you'||greeting){
-  conversation.scrollTop=conversation.scrollHeight;
-  if(typeof requestAnimationFrame==='function')requestAnimationFrame(()=>{conversation.scrollTop=conversation.scrollHeight;});
+  chatScroll.scrollTop=chatScroll.scrollHeight;
+  if(typeof requestAnimationFrame==='function')requestAnimationFrame(()=>{chatScroll.scrollTop=chatScroll.scrollHeight;});
  }
 }
 for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
@@ -538,8 +556,8 @@ async function consumeOwnerCodeFromChat(message,fromVoice){
    /^[a-f0-9\s-]{48,180}$/i.test(raw)||
    /^(?:(?:owner|pairing|robot brain)(?:\s+pairing)?\s+code)\s*[:=]/i.test(raw);
  if(!attempted)return false;
+ if(busy){status.textContent='Finishing a response. Your code is still in the message box; send it when ready.';return true;}
  input.value='';
- if(busy){status.textContent='Bubbles is finishing a response. Paste the code again when ready.';return true;}
  if(!/^[a-f0-9]{64}$/i.test(payload)){
   status.textContent='Pairing code must contain exactly 64 hexadecimal characters. Nothing was sent to AI.';
   return true;
@@ -949,7 +967,7 @@ async function verifiedOwnerHeaders(){
  if(!window.QuantaBrainOwner?.ready)throw Error('Robot Brain owner verification is unavailable on this page.');
  const headers=await Promise.race([window.QuantaBrainOwner.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
  if(!headers?.Authorization){ownerMode.textContent='Owner tools: not yet verified · say “connect owner tools” for details.';throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.')}
- ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
+ ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  // Pairing is handled in the same chat composer.
  workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
@@ -960,7 +978,7 @@ async function connectOwner(){
  // Late wallet verification must unlock Bubbles without any manual Brain button.
  const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
  if(!headers?.Authorization)return;
- ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
+ ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  // Pairing is handled in the same chat composer.
  persistChat();void sharedMemory();

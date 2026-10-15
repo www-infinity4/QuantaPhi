@@ -19,45 +19,6 @@
     body.bubbles-embedded .ba-panel{right:4px!important;bottom:4px!important;width:calc(100% - 8px)!important;height:calc(100% - 8px)!important;max-height:none;min-height:0!important}
     body.bubbles-embedded .ba-tools{max-height:35%}
 
-    /* Only the explicit native Android floating WebView receives this layout.
-       The normal QuantaPhi Bubbles page and embeds remain unchanged. */
-    html.bubbles-native-overlay,html.bubbles-native-overlay body{
-      height:100%!important;min-height:0!important;overflow:hidden!important;
-      margin:0!important;padding:0!important;background:#f7f4fb!important;
-    }
-    html.bubbles-native-overlay .bubbles-page{max-width:none!important;margin:0!important}
-    html.bubbles-native-overlay .bubbles-page>a,
-    html.bubbles-native-overlay .bubbles-intro,
-    html.bubbles-native-overlay .bubbles-video,
-    html.bubbles-native-overlay .bubbles-production,
-    html.bubbles-native-overlay .bubbles-page>p{display:none!important}
-    /* Owner authorization remains available to the scripts, but its separate
-       desktop dashboard must not paint across the Android chat window. */
-    html.bubbles-native-overlay #robotBrainOwner{display:none!important}
-    html.bubbles-native-overlay #bubblesAICard{height:0!important;overflow:hidden!important;margin:0!important}
-    html.bubbles-native-overlay .ba-panel{z-index:2147483640!important;overflow:hidden!important}
-    html.bubbles-native-overlay .ba-panel .ba-messages{min-height:0!important;overflow-y:auto!important;flex:1 1 0!important;overscroll-behavior-y:contain!important;-webkit-overflow-scrolling:touch!important;touch-action:pan-y!important}
-    html.bubbles-native-overlay .ba-panel .ba-composer{flex-shrink:0!important;flex-grow:0!important}
-    html.bubbles-native-overlay .ba-panel .ba-tools{flex-shrink:0!important;max-height:35%!important;overflow-y:auto!important}
-    html.bubbles-native-overlay .ba-panel .ba-tools:not([open]){max-height:48px!important}
-    html.bubbles-native-overlay .ba-panel .ba-status,
-    html.bubbles-native-overlay .ba-panel .ba-memory-status{display:none!important}
-    html.bubbles-native-overlay .ba-panel .ba-actions{grid-template-columns:1fr!important}
-    html.bubbles-native-overlay .ba-panel .ba-mic,
-    html.bubbles-native-overlay .ba-panel .ba-speak{display:none!important}
-    html.bubbles-native-overlay .ba-panel .ba-owner-status{font-size:14px!important;margin:0 2px!important;padding:3px 8px!important}
-    html.bubbles-native-overlay .ba-panel .ba-composer textarea{font-size:17px!important;min-height:54px!important;max-height:120px!important;overflow-y:auto!important}
-    html.bubbles-native-overlay .ba-launcher{display:none!important}
-    html.bubbles-native-overlay .ba-panel{
-      position:fixed!important;inset:0!important;width:100%!important;height:100dvh!important;
-      max-height:none!important;min-height:0!important;border-radius:0!important;
-      transform:none!important;box-sizing:border-box!important;display:flex!important;
-      z-index:40!important
-    }
-    html.bubbles-native-overlay .ba-panel[hidden]{display:none!important}
-    html.bubbles-native-overlay .ba-note-form{display:none!important}
-    html.bubbles-native-overlay .ba-composer{padding-bottom:max(8px,env(safe-area-inset-bottom))!important}
-    html.bubbles-native-overlay .ba-field{font-size:16px!important}
  
   </style>
   <link rel="stylesheet" href="/bubbles-introduction.css?v=20261013-intro1">
@@ -84,8 +45,9 @@
   <script defer src="/bubbles-voice-gate.js?v=20261012-brain2"></script>
   <script defer src="/bubbles-brain-actions.js?v=20261014-all-ticket-reports5"></script>
   <script defer src="/bubbles-memory.js?v=20261014-memory2"></script>
-  <script defer src="/bubbles-ai.js?v=20261015-chat-scroll19"></script>
-<link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1"></head>
+  <script defer src="/bubbles-ai.js?v=20261015-single-chat20"></script>
+<link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1">
+<link rel="stylesheet" href="/bubbles-native-chat.css?v=20261015-single-chat20"></head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
     <a href="https://quantaphi.org/">← QuantaPhi</a>
