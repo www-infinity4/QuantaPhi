@@ -436,13 +436,23 @@ public final class MainActivity extends Activity {
 
     @Override protected void onResume() {
         super.onResume();
+        // Browser return is navigation only. It never provides credentials,
+        // starts microphone capture, or triggers a second OAuth attempt.
+        Uri deepLink = getIntent() == null ? null : getIntent().getData();
+        if (deepLink != null && "quantaphi-bubbles".equals(deepLink.getScheme())
+                && "return".equals(deepLink.getHost())) {
+            getIntent().setData(null);
+            if (state != null) state.setText("Welcome back to Bubbles. Your secure sign-in is finishing; the account status will update when verified.");
+        }
         // Only the user's explicit first-party Bubbles button can request this flow.
         // Tokens are encrypted in Android Keystore and never passed to WebView.
         if(getIntent().getBooleanExtra("open_chatgpt_signin",false)){
             getIntent().removeExtra("open_chatgpt_signin");
             if(state!=null)state.setText("Opening ChatGPT authorization in your browser…");
-            ChatGPTSignIn.start(this,result -> {if(state!=null)
-                state.setText(ChatGPTSignIn.status(this)+"\n"+result);});
+            ChatGPTSignIn.start(this,result -> {
+                if (refreshChatGPTStatus != null) refreshChatGPTStatus.run();
+                if (state != null) state.setText(ChatGPTSignIn.status(this)+"\n"+result);
+            });
         }
         if (refreshChatGPTStatus != null) refreshChatGPTStatus.run();
         if (refreshScreenPermission != null) refreshScreenPermission.run();
