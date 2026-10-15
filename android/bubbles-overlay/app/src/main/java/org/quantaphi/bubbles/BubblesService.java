@@ -102,12 +102,14 @@ public final class BubblesService extends Service {
             callback.onReceiveValue(null); return true;
         }
         imagePickerCallback = callback;
+        if (oracleWindow != null) oracleWindow.hide(); // Avoid covering Android's image picker.
         try {
             startActivity(new Intent(this, MainActivity.class)
                 .putExtra("pick_bubbles_image", true)
                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP));
         } catch (RuntimeException error) {
             imagePickerCallback = null; callback.onReceiveValue(null);
+            if (oracleWindow != null) oracleWindow.show();
             BrainNotes.prefs(this).edit().putString("last_error", "Android image picker unavailable").apply();
         }
         return true;
@@ -119,6 +121,7 @@ public final class BubblesService extends Service {
             android.webkit.ValueCallback<android.net.Uri[]> callback = service.imagePickerCallback;
             service.imagePickerCallback = null;
             if (callback != null) callback.onReceiveValue(selected == null ? null : new android.net.Uri[]{selected});
+            if (service.connected && service.oracleWindow != null) service.oracleWindow.show();
         });
     }
     private void drainWebsiteSpeech() {
