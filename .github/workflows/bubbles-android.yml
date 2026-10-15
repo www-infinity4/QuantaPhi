@@ -6,6 +6,7 @@ on:
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
       - 'test/bubbles-floating-window.test.cjs'
+      - 'test/bubbles-native-visibility.test.cjs'
       - 'test/bubbles-native-site-parity.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
       - 'test/bubbles-native-gpt-screen-story.test.cjs'
@@ -64,6 +65,8 @@ jobs:
         run: node --test test/bubbles-native-site-parity.test.cjs
       - name: Verify Oracle chat interruption and text conversation
         run: node --test test/bubbles-oracle-chat-native.test.cjs
+      - name: Verify native overlay layout and screenshot fallback
+        run: node --test test/bubbles-native-visibility.test.cjs
       - name: Verify native floating Oracle window and transcript
         run: node --test test/bubbles-floating-window.test.cjs
       - name: Verify official GPT-Live voice gateway contract
