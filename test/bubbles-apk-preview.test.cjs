@@ -20,3 +20,10 @@ test('Android debug build uses separate, installable package to avoid old signat
  assert.match(gradle,/signingConfig signingConfigs\.preview/);
  assert.match(workflow,/app\/build\/outputs\/apk\/debug\/app-debug\.apk/);
 });
+
+test('Bubbles Preview 5 scrolling chat is a signed APK upgrade, not a second package',()=>{
+ const gradle=fs.readFileSync('android/bubbles-overlay/app/build.gradle','utf8');
+ assert.match(gradle,/versionCode 18/);
+ assert.match(gradle,/versionName '0\.18\.0'/);
+ assert.match(gradle,/applicationIdSuffix '\.preview5'/);
+});
