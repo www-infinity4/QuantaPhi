@@ -95,7 +95,7 @@ const routeFor = incoming => {
  if (path === '/story/' || path === '/story/index.html') return { repo: 'QuantaPhi', sourcePath: '/story/index.html', publicPath: '/story/' };
  if (path === '/platinum') return { redirect: '/platinum/' + incoming.search };
  if (path === '/platinum/' || path === '/platinum/index.html') return { repo: 'QuantaPhi', sourcePath: '/platinum/index.html', publicPath: '/platinum/' };
- if (path === '/page') return { redirect: '/page/' + incoming.search };
+ if (path === '/phone') return { redirect: '/phone/' + incoming.search };\n if (/^\\/phone\\/[a-z][a-z0-9-]{2,25}\\/?$/.test(path) || path === '/phone/' || path === '/phone/index.html') return { repo: 'QuantaPhi', sourcePath: '/phone/index.html', publicPath: path };\n if (path === '/page') return { redirect: '/page/' + incoming.search };
  if (path === '/page/' || path === '/page/index.html') return { repo: 'QuantaPhi', sourcePath: '/page/index.html', publicPath: '/page/' };
  if (path === '/learn') return { redirect: '/learn/' };
  if (path.startsWith('/learn/')) return { repo: 'QuantaPhi', sourcePath: path.endsWith('/') ? path + 'index.html' : path, publicPath: path };
