@@ -541,13 +541,14 @@ public final class BubblesService extends Service {
                     break;
                 case "capture_stop": {
                     boolean screenActive = BrainNotes.prefs(this).getBoolean("capture_active", false);
-                    if (recording.active()) saveAudio();
+                    boolean soundActive = recording.active();
+                    if (soundActive) saveAudio();
                     if (screenActive) {
                         startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing and saving screen capture…").apply();
                     }
-                    if (!screenActive && !recording.active() && speaking) silenceReply();
-                    if (!screenActive && !recording.active())
+                    if (!screenActive && !soundActive && speaking) silenceReply();
+                    if (!screenActive && !soundActive)
                         Toast.makeText(this, "No capture active · Bubbles is listening", Toast.LENGTH_SHORT).show();
                     break;
                 }
