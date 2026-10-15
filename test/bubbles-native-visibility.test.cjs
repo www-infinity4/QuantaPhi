@@ -41,3 +41,7 @@ test('one native composer pairs privately without extra buttons or code leaking 
   assert.match(site, /panel\.insertBefore\(tools,composer\)/);
   assert.match(site, /if\(who!=='you'&&!greeting&&!nativeOverlay\)/);
 });
+
+test('new APK loads fresh WebView chat files instead of cached broken page', () => {
+  assert.match(window, /settings\.setCacheMode\(WebSettings\.LOAD_NO_CACHE\)/);
+});
