@@ -24,6 +24,12 @@ public final class VoiceCaptureCommandsCheck {
         expect("record my screen", "screen_video");
         expect("can you record my screen", "screen_video");
         expect("start screen recording", "screen_video");
+        expect("turn on my screen recorder", "screen_video");
+        expect("Bubbles can you please start the screen recorder", "screen_video");
+        expect("I need you to record what's on my phone screen", "screen_video");
+        expect("please screen record", "screen_video");
+        expect("stop my screen recorder", "screen_stop");
+        expect("please turn off the screen recorder", "screen_stop");
         expect("turn on video", "camera_video");
         expect("record a video", "camera_video");
         expect("film this", "camera_video");
@@ -31,6 +37,8 @@ public final class VoiceCaptureCommandsCheck {
         expect("take screenshots every five seconds for five minutes", "screen_sequence");
         noCapture("can you explain the video to me");
         noCapture("what happened to the camera");
+        noCapture("how do I record my screen?");
+        noCapture("talk to my robot brain");
         noCapture("stop listening"); // separate deliberate microphone mute intent
         System.out.println("Bubbles voice capture intent checks passed");
     }
