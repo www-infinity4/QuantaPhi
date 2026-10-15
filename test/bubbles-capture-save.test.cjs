@@ -49,3 +49,15 @@ test('natural spoken commands use real OS capture tools and consent instead of a
   assert.match(commands, /"screen_video"/);
   assert.match(commands, /"camera_video"/);
 });
+
+test('floating QuantaPhi website composer passes screen capture to native Android instead of model', () => {
+  const site = fs.readFileSync('bubbles-ai.js', 'utf8');
+  const bridge = source('FloatingOracleWindow.java');
+  assert.match(site, /nativeCaptureRequest=spoken/);
+  assert.match(site, /drainNativeCaptureRequest/);
+  assert.match(site, /Recording has not started yet/);
+  assert.match(bridge, /VoiceCaptureCommands\.parse\(command\)/);
+  assert.match(bridge, /BubblesService\.ACTION_TEXT/);
+  assert.match(bridge, /drainNativeCaptureRequest/);
+  assert.match(site, /(?:talk\|speak\|communicate\|connect\|link)/);
+});
