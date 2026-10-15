@@ -91,12 +91,12 @@ test('Android Moto G Pure diagnostic reads only non-identifying telephony status
  const java=read('android/infinity-platinum/app/src/main/java/org/quantaphi/platinum/CellularInspector.java');
  const activity=read('android/infinity-platinum/app/src/main/java/org/quantaphi/platinum/PlatinumActivity.java');
  const manifest=read('android/infinity-platinum/app/src/main/AndroidManifest.xml');
- assert.match(java,/hasIccCard\\(\\)/);
- assert.match(java,/getSimOperatorName\\(\\)/);
- assert.match(java,/hasTransport\\(/);
+ assert.ok(java.includes('hasIccCard()'));
+ assert.ok(java.includes('getSimOperatorName()'));
+ assert.ok(java.includes('hasTransport('));
  assert.match(java,/XT2163-4/);
  assert.match(java,/XT2163-6/);
- assert.match(activity,/CellularInspector\\.capture\\(this\\)/);
+ assert.ok(activity.includes('CellularInspector.capture(this)'));
  assert.match(activity,/ACTION_NETWORK_OPERATOR_SETTINGS/);
  assert.match(manifest,/android.permission.ACCESS_NETWORK_STATE/);
  for(const file of [java,activity,manifest]){
