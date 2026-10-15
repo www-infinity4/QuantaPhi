@@ -101,7 +101,7 @@ function describeTickets(tickets,limit=10){
   const jobs=Array.isArray(ticket.context?.color_jobs)?ticket.context.color_jobs:[];
   const jobInfo=jobs.length?' Team: '+jobs.slice(0,3).map(j=>String(j.agent||'bot').replace(/-/g,' ')+': '+String(j.status||'queued')).join('; ')+'.':'';
   const receipt=String(ticket.result_summary||'').trim().slice(0,185);
-  const outcome=receipt?' Recorded result: '+receipt+'.':' No verified code or deployment receipt recorded here.';
+  const outcome=receipt?' Recorded result: '+receipt+'.':' No verified progress yet; no authenticated code or deployment receipt recorded here.';
   entries.push({updated,description:title+' — '+status+'.'+jobInfo+outcome+' Ref '+String(ticket.id||'?').slice(0,50)});
  }
  entries.sort((a,b)=>b.updated-a.updated);
