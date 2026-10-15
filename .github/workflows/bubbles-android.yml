@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'android/bubbles-overlay/**'
+      - 'bubbles-native-chat.css'
+      - 'test/bubbles-native-chat.browser.cjs'
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
       - 'test/bubbles-floating-window.test.cjs'
@@ -20,6 +22,8 @@ on:
     branches: [main]
     paths:
       - 'android/bubbles-overlay/**'
+      - 'bubbles-native-chat.css'
+      - 'test/bubbles-native-chat.browser.cjs'
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
       - 'test/bubbles-floating-window.test.cjs'
@@ -50,6 +54,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify scrolling and pairing in a mobile browser
+        run: |
+          npm install --no-save --package-lock=false playwright@1.51.1
+          npx playwright install --with-deps chromium
+          node --test test/bubbles-native-chat.browser.cjs
       - name: Verify isolated Android preview install contract
         run: node --test test/bubbles-apk-preview.test.cjs
       - name: Verify continuous native microphone contract
