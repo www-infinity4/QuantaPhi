@@ -13,7 +13,8 @@ public final class VoiceCaptureCommandsCheck {
             throw new AssertionError("Normal speech must not start recording: " + spoken);
     }
     public static void main(String[] args) {
-        expect("record", "sound_start");
+        expect("record", "screen_video");
+        expect("start recording", "screen_video");
         expect("please record my voice", "sound_start");
         expect("record audio", "sound_start");
         expect("stop", "capture_stop");
@@ -35,7 +36,7 @@ public final class VoiceCaptureCommandsCheck {
         expect("stop my screen recorder", "screen_stop");
         expect("please turn off the screen recorder", "screen_stop");
         expect("turn on video", "camera_video");
-        expect("record a video", "camera_video");
+        expect("record a video", "screen_video");
         expect("film this", "camera_video");
         expect("take a screenshot", "screen_image");
         expect("take screenshots every five seconds for five minutes", "screen_sequence");
