@@ -213,3 +213,17 @@
 .ba-panel .ba-photo-preview img {width:60px;height:60px;object-fit:cover;border-radius:8px}
 .ba-panel .ba-photo-preview span {flex:1;min-width:100px;overflow-wrap:anywhere}
 .ba-panel .ba-photo-preview button {min-height:42px}
+
+/* File control sits beside Send instead of consuming a separate chat row. */
+.ba-panel .ba-actions {grid-template-columns:repeat(4,minmax(0,1fr))}
+.ba-panel .ba-actions .ba-photo-upload {
+  display:flex;position:relative;align-items:center;justify-content:center;
+  min-height:48px;width:100%;max-width:100%;overflow:hidden;border:1px solid #bbaac9;
+  border-radius:12px;background:#f4eff8;touch-action:manipulation
+}
+.ba-panel .ba-actions .ba-photo-label {color:#3f2650;font-size:13px;font-weight:800;white-space:nowrap;pointer-events:none;margin:0}
+.ba-panel .ba-actions .ba-photo-file {
+  position:absolute;inset:0;width:100%;height:100%;min-height:0;max-width:none;
+  opacity:0;cursor:pointer;padding:0;margin:0;z-index:4;touch-action:manipulation
+}
+@media(max-width:390px){.ba-panel .ba-actions{grid-template-columns:repeat(4,minmax(0,1fr))}}
