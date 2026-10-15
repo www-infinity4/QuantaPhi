@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Infinity Platinum | Browse · Collect · Create</title>
+<meta name="theme-color" content="#eeeef0">
+<meta name="description" content="Infinity Platinum turns cluttered browsing into saved visual destinations and Code Phi projects.">
+<link rel="canonical" href="https://quantaphi.org/platinum/">
+<link rel="stylesheet" href="/platinum/platinum.css?v=20261014-platinum1">
+</head>
+<body><main class="pl-shell">
+<header class="pl-top"><a href="/" class="pl-back">← QuantaPhi</a><div class="pl-brand"><span aria-hidden="true" class="pl-mark">Pt</span><div><p class="pl-eyebrow">INFINITY 2026® · ORACLE OCTAVES</p><h1>Infinity <span>Platinum</span></h1></div></div></header>
+<p class="pl-lead">Browse. Collect. Create. <span>Keep what matters; leave the clutter behind.</span></p>
+<section class="pl-find" aria-label="Open a site or search">
+ <form id="pl-open-form" autocomplete="off"><label for="pl-address">Open a website or search QuantaPhi</label>
+ <div class="pl-bar"><input id="pl-address" name="address" type="text" inputmode="url" placeholder="Website address or search…" maxlength="2048" autocapitalize="off" spellcheck="false" required>
+ <button type="submit" class="pl-main">Go ↗</button></div></form>
+ <p class="pl-note">A website opens in a normal browser tab for now. Sites that block embedding still work. The separately installable Platinum browser is the next stage.</p>
+</section>
+<section id="pl-resume" class="pl-resume" hidden><div><span class="pl-overline">PICK UP WHERE YOU LEFT OFF</span><h2 id="pl-resume-title"></h2><p id="pl-resume-url"></p></div><button id="pl-resume-button" type="button">Resume ↗</button></section>
+<section class="pl-library" aria-labelledby="pl-library-title">
+<div class="pl-section-heading"><div><p class="pl-overline">YOUR PERSONAL START PAGE</p><h2 id="pl-library-title">Website previews</h2></div><button id="pl-new" type="button" class="pl-secondary">＋ Save website</button></div>
+<p id="pl-status" class="pl-status" role="status" aria-live="polite">Saved here on this device, not in a cloud account. No advertising tracking or fake screenshots.</p>
+<div id="pl-tiles" class="pl-grid"></div>
+<p id="pl-empty" class="pl-empty">Your Platinum shelf is empty. Add a website to see its recognizable icon, title and exact link. You can optionally add your own image as its preview.</p>
+</section>
+<section class="pl-workspace" aria-labelledby="pl-workspace-title"><span class="pl-overline">CONNECTED CREATION</span><h2 id="pl-workspace-title">Collected → Code Phi</h2>
+<p>Collect a site into a real local Phi project. Build opens the existing Code Phi / Create Phi editor seeded with the project's collected links. Nothing is published or minted merely by clicking these controls.</p>
+<div class="pl-actions"><button id="pl-project" type="button">＋ New local project</button><a href="/project-workspace/">Open Project Workspace ↗</a></div><p id="pl-active-project" role="status">Checking local project connection…</p></section>
+<section id="pl-edit" class="pl-editor" hidden aria-labelledby="pl-edit-title"><form id="pl-edit-form">
+<header><h2 id="pl-edit-title">Save a website preview</h2><button type="button" id="pl-close" class="pl-close" aria-label="Close editor">✕</button></header>
+<label for="pl-title">Website title</label><input id="pl-title" maxlength="140" placeholder="Give this tile a name">
+<label for="pl-url">Exact website URL</label><input id="pl-url" inputmode="url" maxlength="2048" autocapitalize="off" spellcheck="false" placeholder="https://example.org" required>
+<label for="pl-note">Your note (optional)</label><textarea id="pl-note" maxlength="420" rows="2" placeholder="Why you kept this page…"></textarea>
+<label for="pl-image">Optional page preview image (from your device)</label><input id="pl-image" type="file" accept="image/jpeg,image/png,image/webp"><p class="pl-note">Your chosen image is resized and saved locally. Platinum does not scrape private pages or invent previews.</p>
+<div class="pl-actions"><button type="submit" class="pl-main">Save tile</button><button id="pl-cancel" type="button" class="pl-secondary">Cancel</button></div></form></section>
+<footer class="pl-footer">Infinity Platinum · Browse / Collect / Create · Private local shelf · Powered by your existing QuantaPhi tools</footer>
+</main>
+<script src="/phi-project-package.js?v=20261012-action1"></script>
+<script src="/platinum/core.js?v=20261014-platinum1"></script>
+<script src="/platinum/platinum.js?v=20261014-platinum1"></script>
+</body></html>

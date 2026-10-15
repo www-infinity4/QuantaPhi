@@ -1,0 +1,34 @@
+name: Infinity Platinum browser start page
+on:
+  pull_request:
+    paths:
+      - 'platinum/**'
+      - 'phi-project-package.js'
+      - 'index.html'
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/infinity-platinum.test.cjs'
+      - '.github/workflows/infinity-platinum.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'platinum/**'
+      - 'phi-project-package.js'
+      - 'index.html'
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/infinity-platinum.test.cjs'
+      - '.github/workflows/infinity-platinum.yml'
+permissions:
+  contents: read
+jobs:
+  platinum-start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify browser source and URL/storage/Code Phi safety
+        run: |
+          node --check platinum/core.js
+          node --check platinum/platinum.js
+          node --test test/infinity-platinum.test.cjs
