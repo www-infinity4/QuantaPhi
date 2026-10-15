@@ -11,8 +11,23 @@ const random=()=>Array.from(crypto.getRandomValues(new Uint8Array(32)),b=>b.toSt
 const getJson=(name,fallback)=>{try{return JSON.parse(localStorage.getItem(name)||'null')||fallback}catch{return fallback}};
 let me=getJson(STORAGE,null),call=null,incoming=null,ownerTimer=null,statusTimer=null;
 const remoteAudio=$('remote-audio'),remoteVideo=$('remote-video'),localVideo=$('local-video');
+// These phone-number pages never publish private number-to-name assignments.
 function say(s,error=false){$('app-message').textContent=s;$('app-message').classList.toggle('error',error)}
 function link(alias){return location.origin+'/phone/'+alias}
+// One virtual dial page is generated on demand for any valid international number.
+// Creating the page does not assign the number, reveal an owner or connect to a carrier.
+function numberAddress(raw){
+ const s=String(raw||'').trim();
+ if(!/^\\+?[0-9 ().-]{7,30}$/.test(s))return '';
+ let digits=s.replace(/\\D/g,'');
+ if(!s.startsWith('+')&&digits.length===10)digits='1'+digits;
+ if(!/^[1-9][0-9]{7,14}$/.test(digits))return '';
+ return digits;
+}
+function numberUrl(raw){
+ const digits=numberAddress(raw);
+ return digits?location.origin+'/phone/n/'+digits:'';
+}
 function targetFromInput(raw){
  let s=String(raw||'').trim().toLowerCase();
 
@@ -94,6 +109,30 @@ $('download-owner').onclick=()=>{
  setTimeout(()=>URL.revokeObjectURL(url),3000);
  say('Owner key backup requested. Keep it private: anyone holding this key could control your line.');
 };
+function showNumberPage(){
+ const u=numberUrl($('dial').value);
+ if(!u){say('Enter a telephone number with a valid country code (or ten US digits).',true);return}
+ $('number-page-link').href=u;
+ $('number-page-link').textContent=u;
+ $('number-page-panel').hidden=false;
+ say('A web dial page is ready. A conventional phone will ring only after a carrier gateway is connected.');
+}
+$('number-page').addEventListener('click',showNumberPage);
+$('call-with-carrier').addEventListener('click',async()=>{
+ const digits=numberAddress($('dial').value);
+ if(!digits){say('Enter a complete telephone number first.',true);return}
+ if(!me){say('Register your own Infinity address before carrier calls.',true);return}
+ try{
+  const r=await fetch(BASE+'/v1/carrier/prepare',{
+   method:'POST',headers:{'Content-Type':'application/json','x-platinum-owner':me.secret},
+   body:JSON.stringify({caller:me.alias,to:'+'+digits}),cache:'no-store'
+  });
+  const outcome=await r.json();
+  if(!r.ok||!outcome.ok){say('Carrier call not placed: '+String(outcome.error||'gateway_unavailable').replace(/_/g,' ')+'.',true);return}
+  // Do not report a ring until the carrier returns verifiable call-leg evidence.
+  say('Carrier gateway accepted a request, awaiting live confirmation. No phone ring verified.');
+ }catch(e){say('Carrier gateway unavailable: '+e.message,true)}
+});
 function profileLookup(){
  const t=targetFromInput($('dial').value);
  if(!t){say('Enter a Platinum address such as mary or quantaphi.org/phone/mary.',true);return null}
@@ -243,8 +282,10 @@ $('legacy-form').addEventListener('submit',e=>{
  try{localStorage.setItem(FORWARDS,JSON.stringify(plans.slice(0,20)));say('Private forwarding plan saved on this device. It is NOT live routing.');legacyRender()}
  catch{say('Cannot save number on this device.',true)}
 });
+const numberPath=location.pathname.match(/^\\/phone\\/n\\/([1-9][0-9]{7,14})\\/?$/);
 const path=location.pathname.match(/^\/phone\/([a-z0-9-]+)\/?$/);
-draftInit();if(path){$('dial').value=path[1];$('dial').dispatchEvent(new Event('input'))}
+draftInit();if(numberPath){$('dial').value='+'+numberPath[1];$('dial').dispatchEvent(new Event('input'));showNumberPage();}
+else if(path){$('dial').value=path[1];$('dial').dispatchEvent(new Event('input'))}
 else{const phone=new URL(location.href).searchParams.get('dial');if(phone&&phone.length<=30){$('dial').value=phone;$('dial').dispatchEvent(new Event('input'))}}
 if(me&&(!validAlias(me.alias)||!/^[a-f0-9]{64}$/.test(me.secret)))me=null;
 updateIdentity();legacyRender();checkHealth();startWatch();
