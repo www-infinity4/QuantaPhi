@@ -10,6 +10,7 @@ const validAlias=s=>/^[a-z][a-z0-9-]{2,25}$/.test(s);
 const random=()=>Array.from(crypto.getRandomValues(new Uint8Array(32)),b=>b.toString(16).padStart(2,'0')).join('');
 const getJson=(name,fallback)=>{try{return JSON.parse(localStorage.getItem(name)||'null')||fallback}catch{return fallback}};
 let me=getJson(STORAGE,null),call=null,incoming=null,ownerTimer=null,statusTimer=null;
+const quickDial=window.InfinityQuickDial||null;
 const remoteAudio=$('remote-audio'),remoteVideo=$('remote-video'),localVideo=$('local-video');
 // These phone-number pages never publish private number-to-name assignments.
 function say(s,error=false){$('app-message').textContent=s;$('app-message').classList.toggle('error',error)}
@@ -53,6 +54,9 @@ function draftInit(){
  });}
 }
 function updateIdentity(){
+ $('web-key-status').textContent=me
+  ?'Registered web-line owner key on this device: '+link(me.alias)
+  :'No personal web line registered yet; public Infinity services are available.';
  $('register-panel').hidden=!!me;$('my-panel').hidden=!me;
  if(!me)return;
  $('my-link').href=link(me.alias);$('my-link').textContent=link(me.alias);
@@ -198,6 +202,13 @@ $('mute').onclick=()=>{
 $('unmute-play').onclick=()=>Promise.all([remoteAudio.play().catch(()=>{}),remoteVideo.play().catch(()=>{})]);
 $('dial-form').addEventListener('submit',async e=>{
  e.preventDefault();
+ // Internal Infinity codes route to first-party services and do not send private
+ // owner keys to search pages, other sites or unauthenticated robot endpoints.
+ const service=quickDial?.resolve($('dial').value);
+ if(service){
+  const path=quickDial.internalPath(service);
+  if(path){location.assign(path);return;}
+ }
  if(!me){say('Create your own Platinum address first, so the receiver knows who is calling.',true);return}
  if(call){say('Finish your current call before starting another.',true);return}
  const to=profileLookup();if(!to)return;
@@ -284,6 +295,26 @@ $('legacy-form').addEventListener('submit',e=>{
 });
 const numberPath=location.pathname.match(/^\/phone\/n\/([1-9][0-9]{7,14})\/?$/);
 const path=location.pathname.match(/^\/phone\/([a-z0-9-]+)\/?$/);
+function renderQuickDial(){
+ const container=$('quickdial-grid');
+ if(!container||!quickDial)return;
+ container.replaceChildren();
+ for(const service of quickDial.entries){
+  const button=document.createElement('button');
+  button.type='button';button.className='quickdial-item';
+  const code=document.createElement('strong');code.textContent=service.code;
+  const name=document.createElement('span');name.textContent=service.label;
+  const desc=document.createElement('small');desc.textContent=service.description;
+  button.append(code,name,desc);
+  button.addEventListener('click',()=>{
+   // Service routing never causes an ordinary phone call or SIM provisioning.
+   const path=quickDial.internalPath(service);
+   if(path)location.assign(path);
+  });
+  container.append(button);
+ }
+}
+renderQuickDial();
 draftInit();if(numberPath){$('dial').value='+'+numberPath[1];$('dial').dispatchEvent(new Event('input'));showNumberPage();}
 else if(path){$('dial').value=path[1];$('dial').dispatchEvent(new Event('input'))}
 else{const phone=new URL(location.href).searchParams.get('dial');if(phone&&phone.length<=30){$('dial').value=phone;$('dial').dispatchEvent(new Event('input'))}}
