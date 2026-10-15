@@ -29,6 +29,7 @@ public final class MainActivity extends Activity {
     private EditText message;
     private final android.os.Handler ui = new android.os.Handler(android.os.Looper.getMainLooper());
     private Runnable refreshStatus;
+    private Runnable refreshScreenPermission;
     private final java.util.concurrent.ExecutorService mediaWork = java.util.concurrent.Executors.newSingleThreadExecutor();
     private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64;
     private boolean screenshot;
@@ -69,6 +70,7 @@ public final class MainActivity extends Activity {
             BrainLearningService.isConnected()
                 ? "Screen access: ON. Say 'read this screen', 'tap Search' or 'scroll down' in another app."
                 : "Screen access: OFF. Bubbles cannot inspect another app until Android Accessibility is enabled.");
+        refreshScreenPermission = updateScreenPermission;
         updateScreenPermission.run();
         layout.addView(screenPermission);
         Button screenAccess = new Button(this);
@@ -431,6 +433,7 @@ public final class MainActivity extends Activity {
             ChatGPTSignIn.start(this,result -> {if(state!=null)
                 state.setText(ChatGPTSignIn.status(this)+"\n"+result);});
         }
+        if (refreshScreenPermission != null) refreshScreenPermission.run();
         if (refreshStatus != null) { ui.removeCallbacks(refreshStatus); refreshStatus.run(); }
         String voiceCapture = getIntent().getStringExtra("voice_capture");
         if (voiceCapture != null) {
