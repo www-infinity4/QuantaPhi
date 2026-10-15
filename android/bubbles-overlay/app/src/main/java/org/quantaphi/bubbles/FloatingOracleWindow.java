@@ -54,6 +54,7 @@ final class FloatingOracleWindow {
     private WebView website;
     private boolean websiteReady = false;
     private String pendingSpeech = "";
+    private String pendingTyped = "";
     private boolean dispatchInFlight = false;
     private Button muteButton;
     private long pendingSince = 0L;
@@ -65,6 +66,7 @@ final class FloatingOracleWindow {
             if (root == null) return;
             if (websiteReady) {
                 deliverQueuedSpeech();
+                deliverQueuedText();
                 pollWebsiteReply();
             }
             String history = OracleChatActivity.renderHistory(service);
@@ -312,6 +314,7 @@ final class FloatingOracleWindow {
         if (websiteReady) {
             status.setText("● QuantaPhi Bubbles · full website brain, notes & chat");
             if (!pendingSpeech.isEmpty()) deliverQueuedSpeech();
+            if (!pendingTyped.isEmpty()) deliverQueuedText();
         }
     }
 
@@ -332,6 +335,21 @@ final class FloatingOracleWindow {
             });
     }
 
+    boolean sendTyped(String text) {
+        if (website == null || text == null || text.trim().isEmpty()) return false;
+        pendingTyped = text.trim().substring(0, Math.min(1800, text.trim().length()));
+        deliverQueuedText();
+        return true;
+    }
+    private void deliverQueuedText() {
+        if (!websiteReady || website == null || pendingTyped.isEmpty()) return;
+        final String message = pendingTyped;
+        website.evaluateJavascript(
+            "Boolean(window.QuantaBubbles && window.QuantaBubbles.sendNativeText("
+                + JSONObject.quote(message) + "))", result -> {
+                if ("true".equals(result) && message.equals(pendingTyped)) pendingTyped = "";
+            });
+    }
     void claimMicrophone() {
         if (websiteReady && website != null) website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.claimNativeVoice()", null);
     }
@@ -405,6 +423,7 @@ final class FloatingOracleWindow {
         gptWork.shutdownNow();
         websiteReady = false;
         pendingSpeech = "";
+        pendingTyped = "";
         dispatchInFlight = false;
         if (root != null) {
             try { manager.removeView(root); } catch (RuntimeException ignored) {}
