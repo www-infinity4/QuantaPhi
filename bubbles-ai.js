@@ -218,7 +218,20 @@ for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi
  const link=create('a','ba-tool-link',label);link.href=path;link.rel='noopener';toolRail.append(link);
 }
 tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
-panel.append(header,status,ownerMode,memoryHint,conversation,composer,tools);
+const pairingCard=create('section','ba-pairing-card');
+ pairingCard.hidden=true;
+ const pairingInstructions=create('p','','Website pairing code. Copy it and paste it into QuantaPhi Bubbles → Robot Brain owner access. Expires in two minutes; use it once.');
+ const pairingCode=create('input','ba-field');
+ pairingCode.readOnly=true;pairingCode.autocomplete='off';pairingCode.spellcheck=false;
+ pairingCode.setAttribute('aria-label','One-time website pairing code');
+ const pairingCopy=create('button','ba-control','Copy one-time code');
+ pairingCopy.type='button';
+ pairingCopy.addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(pairingCode.value);status.textContent='One-time site pairing code copied.'}
+  catch{pairingCode.select();status.textContent='Select and copy the code manually.'}
+ });
+ pairingCard.append(pairingInstructions,pairingCode,pairingCopy);
+ panel.append(header,status,ownerMode,memoryHint,pairingCard,conversation,composer,tools);
 if(nativeOverlay){
  // Native OAuth and model inference live on the device, not in this WebView.
  // Expose the entry point above conversation; don't bury it in hidden settings.
@@ -470,6 +483,29 @@ async function sendMessage(text,fromVoice=false){
   messages=messages.slice(-400);persistChat();
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=response;else if(config.voice&&!nativeOverlay)speakText(response);
   nativeSpeechPending=false;return;
+ }
+ // App-first owner pairing: code is displayed in this first-party panel, never
+ // read aloud, sent to an AI model, or retained in conversation history.
+ if(nativeOverlay&&/^(?:(?:please|hey bubbles|bubbles)[\\s,:]+)*(?:(?:sync|pair|link|connect)(?: my| the)?(?: quantaphi)?(?: website| site| browser)|(?:sync|pair) my website)(?: now)?[.!?]*$/i.test(spoken)){
+  busy=true;send.disabled=true;
+  let response;
+  try{
+   const headers=await verifiedOwnerHeaders();
+   const r=await fetch(BRAIN+'/owner/pair/create',{method:'POST',
+    headers:{...headers,'Content-Type':'application/json'},body:'{}',signal:AbortSignal.timeout(15000)});
+   const result=await r.json().catch(()=>({}));
+   if(!r.ok||!result.ok||!/^[a-f0-9]{64}$/.test(result.code||''))throw Error(result.error||'pairing_unavailable');
+   pairingCode.value=result.code;
+   pairingCard.hidden=false;toggle(true);
+   setTimeout(()=>{if(pairingCode.value===result.code){pairingCode.value='';pairingCard.hidden=true}},120000);
+   response='I generated a secure one-time website pairing code above. Tap Copy one-time code, then paste it into Robot Brain owner access on the QuantaPhi site. Once paired, website and APK automatically share your owner conversation and jobs. No separate ChatGPT account is required.';
+  }catch(error){
+   response='I cannot pair the website yet because this APK is not verified as the QuantaPhi owner. '+String(error.message||error).slice(0,125)+'. Link your Unified Wallet or an existing owner recovery key inside the APK first.';
+  }
+  display(spoken,'you');display(response,'ai');
+  messages.push({role:'user',text:spoken},{role:'assistant',text:response});persistChat();
+  if(nativeSpeechPending)nativeSpeechReply=response;else if(config.voice&&!nativeOverlay)speakText(response);
+  nativeSpeechPending=false;busy=false;send.disabled=false;return;
  }
  if(!embedded&&/^(?:(?:hey )?bubbles[, ]+)?(?:connect|check|enable|unlock|verify|show)(?: my| the)?(?: owner| robot brain| brain)?(?: tools| access| mode| connection| status)(?: now)?[.!?]*$/i.test(spoken)){
   busy=true;send.disabled=true;
