@@ -74,7 +74,8 @@ const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.al
 
 const MEMORY_OUTBOX=HISTORY+':outbox';
 const memoryPending=new Map((data(MEMORY_OUTBOX,[])||[]).filter(m=>m?.id&&m?.text).map(m=>[m.id,m])),memoryAck=new Set();let memoryBusy=false,memoryContext=[],memoryCapabilities=[],memoryLastError='',voiceConflict=false;
-const memoryClient=crypto.randomUUID();let voiceLeaseWanted=false,voiceLeaseClaim=false;
+const memoryClient=(nativeOverlay?'android_':'web_')+crypto.randomUUID();let voiceLeaseWanted=false,voiceLeaseClaim=false;
+let sharedVoiceStatusBusy=false,androidCompanionListening=false;
 async function sharedMemory(query=''){
  if(embedded||!ownerReady||!ownerHeaders)return false;
  if(memoryBusy)return false;memoryBusy=true;
@@ -98,9 +99,30 @@ async function sharedVoice(claim=false){
   const response=await fetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({mode:claim?'voice-claim':'voice-renew',client:memoryClient}),signal:AbortSignal.timeout(10000)});
   const result=await response.json();if(!response.ok||!result.ok)throw Error('voice_coordination_unavailable');
   voiceConflict=!result.owned;
+  if(result.active==='android'&&!nativeOverlay){androidCompanionListening=true;mic.disabled=true;}
   if(voiceConflict&&!nativeOverlay&&voiceEnabled)stopVoice('Bubbles microphone moved to your other session. Your conversation stays saved.');
   return !voiceConflict;
  }catch{voiceConflict=true;memoryHint.textContent='Microphone coordination is unavailable. Reconnect before starting another owner voice session.';if(!nativeOverlay&&voiceEnabled)stopVoice('Shared microphone coordination is unavailable.');return false}
+}
+// Two browser sandboxes share only verified owner-scoped cloud state, not cookies.
+async function checkSharedVoiceStatus(){
+ if(embedded||nativeOverlay||!ownerReady||!ownerHeaders||sharedVoiceStatusBusy)return;
+ sharedVoiceStatusBusy=true;
+ try{
+  const r=await fetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({mode:'voice-status',client:memoryClient}),signal:AbortSignal.timeout(7000)});
+  const state=await r.json();if(!r.ok||!state.ok||!['android','website','none'].includes(state.active))return;
+  const wasConnected=androidCompanionListening;androidCompanionListening=state.active==='android';
+  if(androidCompanionListening){
+   if(voiceEnabled)stopVoice('Android Bubbles owns the microphone. This website shares its conversation and tools.');
+   mic.disabled=true;
+   mic.textContent='🎙 Listening in Android Bubbles';
+   if(!wasConnected)status.textContent='Bubbles APK is listening · website chat is synced.';
+  }else{
+   mic.disabled=false;
+   if(wasConnected){mic.textContent='🎙 Enable listening';status.textContent='Bubbles website chat is ready; APK voice session is no longer active.';}
+  }
+ }catch{ /* Keep text chat available when the owner-state service is offline. */ }
+ finally{sharedVoiceStatusBusy=false;}
 }
 function persistChat(){
  for(const m of messages){if(!m.id){m.id=crypto.randomUUID();m.at=Date.now();}if(!m.at)m.at=Date.now();}
@@ -726,6 +748,7 @@ function heardTranscript(transcript){
 }
 async function startVoice(){
  if(voiceEnabled||voiceStarting)return;
+ if(androidCompanionListening){status.textContent='Android Bubbles is already listening. Type here or use the APK microphone.';return;}
  voiceStarting=true;const generation=++voiceGeneration;
  toggle(true);
  if(!voiceGate){voiceStarting=false;status.textContent='Voice command rules did not load. Reload this page.';return}
@@ -826,6 +849,7 @@ async function connectOwner(){
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  persistChat();void sharedMemory();
  if(nativeOverlay){voiceLeaseWanted=true;void sharedVoice(true);}
+ else void checkSharedVoiceStatus();
  workStatus.textContent='Robot Brain connected. Say “Bubbles, fix the video generator” or “Report the top ten bot jobs.”';
 }
 async function readBrainReport(){
@@ -958,7 +982,14 @@ if(nativeOverlay){
  launcher.hidden=true;
  status.textContent='Bubbles website assistant · native microphone · owner wallet verification required for Brain jobs';
 }
-if(!embedded&&typeof setInterval==='function'){setInterval(()=>{if(ownerReady){if(!busy)void sharedMemory();if(voiceLeaseWanted)void sharedVoice(false);}},12000);}
+if(!embedded&&typeof setInterval==='function'){
+ // A short owner-scoped sync loop stops competing microphones and mirrors chat.
+ setInterval(()=>{if(ownerReady){
+  if(!busy)void sharedMemory();
+  if(voiceLeaseWanted)void sharedVoice(false);
+  if(!nativeOverlay)void checkSharedVoiceStatus();
+ }},3000);
+}
 if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 
