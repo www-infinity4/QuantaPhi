@@ -194,13 +194,3 @@
 .ba-panel .ba-chatgpt-login[hidden],
 .ba-panel .ba-close[hidden]{display:none!important}
 
-/* One mobile-first composer replaces developer pairing forms and buttons. */
-html.bubbles-native-overlay .ba-composer{
- flex:none;padding:9px 7px;border:2px solid #7140a0;border-radius:13px;background:#fbf9ff;
-}
-html.bubbles-native-overlay .ba-composer textarea{
- min-height:58px;font-size:16px;resize:none;outline-offset:1px;
-}
-html.bubbles-native-overlay .ba-composer .ba-send{min-height:46px}
-html.bubbles-native-overlay .ba-panel .ba-messages{min-height:90px}
-html.bubbles-native-overlay .ba-panel .ba-owner-status{margin:1px 3px;padding:5px 8px}
