@@ -486,7 +486,7 @@ async function sendMessage(text,fromVoice=false){
  }
  // App-first owner pairing: code is displayed in this first-party panel, never
  // read aloud, sent to an AI model, or retained in conversation history.
- if(nativeOverlay&&/^(?:(?:please|hey bubbles|bubbles)[\\s,:]+)*(?:(?:sync|pair|link|connect)(?: my| the)?(?: quantaphi)?(?: website| site| browser)|(?:sync|pair) my website)(?: now)?[.!?]*$/i.test(spoken)){
+ if(nativeOverlay&&/^(?:(?:please|hey bubbles|bubbles)[\s,:]+)*(?:(?:sync|pair|link|connect)(?: my| the)?(?: quantaphi)?(?: website| site| browser)|(?:sync|pair) my website)(?: now)?[.!?]*$/i.test(spoken)){
   busy=true;send.disabled=true;
   let response;
   try{
