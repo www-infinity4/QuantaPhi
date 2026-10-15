@@ -69,7 +69,7 @@ const SUPPORT_REPOS=[
  {prefix:"/SeekSync/",repo:"SeekSync"}
 ];
 const RAW_TYPES = {
- html: 'text/html; charset=utf-8', js: 'application/javascript; charset=utf-8',
+ html: 'text/html; charset=utf-8', js: 'application/javascript; charset=utf-8', mjs: 'application/javascript; charset=utf-8',
  css: 'text/css; charset=utf-8', json: 'application/json; charset=utf-8',
  svg: 'image/svg+xml', png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg',
  webp: 'image/webp', ico: 'image/x-icon', txt: 'text/plain; charset=utf-8', xml: 'application/xml; charset=utf-8',
@@ -95,6 +95,8 @@ const routeFor = incoming => {
  if (path === '/story/' || path === '/story/index.html') return { repo: 'QuantaPhi', sourcePath: '/story/index.html', publicPath: '/story/' };
  if (path === '/platinum') return { redirect: '/platinum/' + incoming.search };
  if (path === '/platinum/' || path === '/platinum/index.html') return { repo: 'QuantaPhi', sourcePath: '/platinum/index.html', publicPath: '/platinum/' };
+ if (path === '/cellular') return { redirect: '/cellular/' + incoming.search };
+ if (path === '/cellular/' || path === '/cellular/index.html') return { repo: 'QuantaPhi', sourcePath: '/cellular/index.html', publicPath: '/cellular/' };
  if (path === '/phone') return { redirect: '/phone/' + incoming.search };
  if (/^\/phone\/n\/[1-9][0-9]{7,14}\/?$/.test(path)) return { repo: 'QuantaPhi', sourcePath: '/phone/index.html', publicPath: path };
  if (/^\/phone\/[a-z][a-z0-9-]{2,25}\/?$/.test(path) || path === '/phone/' || path === '/phone/index.html') return { repo: 'QuantaPhi', sourcePath: '/phone/index.html', publicPath: path };
@@ -316,7 +318,7 @@ export default {
   const origin = new URL('https://www-infinity4.github.io' + repoPath);
   origin.search = incoming.search;
   const extension = route.sourcePath.split('.').pop().toLowerCase();
-  const textual = ['html','js','css','json','xml','txt'].includes(extension);
+  const textual = ['html','js','mjs','css','json','xml','txt'].includes(extension);
   if (textual) origin.searchParams.set('__qpedge', EDGE_VERSION);
   const headers = new Headers(request.headers);
   for (const name of ['Host', 'Cookie', 'Authorization']) headers.delete(name);

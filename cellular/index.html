@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f3f5f7"><title>Infinity Cellular | Build Our Own Internet Access</title>
+<meta name="description" content="Infinity Cellular private LTE engineering and network verification center. Network software does not replace cellular radio hardware or Internet backhaul.">
+<link rel="stylesheet" href="/cellular/cellular.css?v=20261015-radio1"></head>
+<body><main class="shell">
+<header><a class="back" href="/phone/">← Infinity Platinum Phone</a><span class="eyebrow">INFINITY 2026® · CELLULAR NETWORK</span></header>
+<section class="hero"><p class="tag">Independent radio access project</p><h1>Infinity Cellular</h1><p class="lead">A real cellular connection starts with a base station and a working Internet uplink. QuantaPhi is the phone interface and control center, not a substitute for the physical network.</p>
+<div class="important" role="note"><strong>Current status: engineering pilot—not live cellular service.</strong> A website cannot transmit LTE radio signals, issue a usable SIM, or create upstream Internet bandwidth by itself. The goal is <strong>free access for subscribers</strong>, with transparently funded radio equipment and backhaul.</div></section>
+<section class="card"><h2>How Infinity provides an actual data connection</h2>
+<div class="flow" aria-label="Network data path"><div><strong>Infinity phone</strong><small>LTE B48-capable handset + test SIM</small></div><span aria-hidden="true">→</span><div><strong>Infinity cell site</strong><small>FCC-authorized CBRS radio, SAS-coordinated</small></div><span aria-hidden="true">→</span><div><strong>Infinity network core</strong><small>Open5GS and IP routing</small></div><span aria-hidden="true">→</span><div><strong>Real ISP uplink</strong><small>Fiber, fixed wireless or lawful backhaul</small></div><span aria-hidden="true">→</span><div><strong>Live Internet</strong><small>QuantaPhi + all permitted websites and apps</small></div></div>
+<p class="fine">In a one-site pilot, subscribers would connect to a local radio instead of paying for individual LTE subscriptions. The radio network operator still needs to fund its uplink. A private CBRS LTE deployment does not automatically provide nationwide coverage, roaming, SMS, emergency calling or regular phone-number service.</p>
+</section>
+<section class="card"><h2>What works online right now</h2><p>These checks confirm only that this browser can reach the existing QuantaPhi services through its <em>current</em> connection. They do not prove an Infinity cellular tower exists.</p>
+<div class="status" aria-live="polite"><div><span>QuantaPhi website</span><strong id="site-health">Not checked</strong></div><div><span>Infinity Switchboard</span><strong id="switch-health">Not checked</strong></div><div><span>Private Infinity cellular radio</span><strong class="pending">No verified hardware connected</strong></div></div>
+<button id="check-connections" type="button">Check live web services</button><p class="fine" id="diag-notes"></p></section>
+<section class="card"><h2>First real cellular pilot · readiness board</h2><p>Build one legal CBRS radio cell with a Linux-based Open5GS core and an independent uplink, then prove an actual phone can load a public website using <strong>only the Infinity SIM and radio path</strong>. All checks below are operator notes—not independently verified evidence.</p>
+<form id="pilot-form">
+<label for="backhaul">How will the first radio site reach the Internet?</label><select id="backhaul">
+<option value="none">No backhaul contracted yet</option>
+<option value="fiber-isp">Independently paid fiber / wired ISP uplink</option>
+<option value="licensed-fixed">Authorized fixed-wireless / microwave uplink</option>
+<option value="existing-cellular">Another provider's cellular backhaul (not independent)</option>
+<option value="other-legal">Other legally provisioned Internet uplink</option>
+</select>
+<label for="pilot-site">Proposed pilot location description (optional; do not enter your home address)</label>
+<input id="pilot-site" maxlength="150" placeholder="Example: one indoor workshop test site" autocomplete="off">
+<fieldset><legend>Engineering requirements</legend><div id="checks"></div></fieldset>
+<label for="notes">Hardware and network notes</label><textarea id="notes" rows="4" maxlength="1200" placeholder="Radio model, band support, backhaul provider, lab equipment, test findings…"></textarea>
+<div class="meter" role="status" aria-live="polite" id="progress">0 of 8 prerequisites marked</div><div id="outstanding" class="missing"></div>
+<div class="buttons"><button type="button" id="save">Save this pilot plan</button><button type="button" id="export">Get engineering plan JSON</button></div>
+<p class="fine">Saved locally to this browser only. It does not register spectrum, activate a radio, program a SIM, or start transmission.</p>
+</form></section>
+<section class="card"><h2>Infinity vs. a cellular carrier</h2><p><strong>The difference:</strong> the website supplies user registration, web calling, Bubbles, network management and access policies. Infinity Cellular must additionally supply legally usable <strong>radio spectrum, base stations, authentication, routing, power and an upstream Internet connection</strong>. These are separate physical services.</p>
+<p>Use the existing <a href="/phone/">Infinity Phone switchboard</a> for web calling once the phone has data. Until the private network is verified, retain existing emergency calling and data service.</p>
+<p class="fine">Technical references: <a href="https://www.nist.gov/programs-projects/citizens-broadband-radio-service" rel="noopener noreferrer" target="_blank">NIST CBRS band</a> · <a href="https://open5gs.org/open5gs/docs/guide/01-quickstart/" rel="noopener noreferrer" target="_blank">Open5GS LTE core</a>. Deployment requires appropriate regulatory and safety review.</p></section>
+<footer>Infinity Cellular · engineering dashboard · no radio or telecom service activated by this page</footer>
+</main><script type="module" src="/cellular/cellular.js?v=20261015-radio1"></script></body></html>
