@@ -385,18 +385,18 @@ final class FloatingOracleWindow {
         // The native foreground services are the authority for capture state.
         // Send only short state labels/booleans; never expose local media paths,
         // Android permissions, or owner credentials to the hosted page.
-        org.json.JSONObject capture = new org.json.JSONObject();
+        org.json.JSONObject captureState = new org.json.JSONObject();
         android.content.SharedPreferences prefs = BrainNotes.prefs(service);
         try {
-            capture.put("screenActive", prefs.getBoolean("capture_active", false));
-            capture.put("screenRecording", prefs.getBoolean("capture_recording", false));
-            capture.put("soundActive", prefs.getBoolean("audio_active", false));
-            capture.put("screenState", prefs.getString("capture_state", "").substring(0,
-                Math.min(160, prefs.getString("capture_state", "").length())));
-            capture.put("soundState", prefs.getString("audio_state", "").substring(0,
+            captureState.put("screenActive", prefs.getBoolean("captureState_active", false));
+            captureState.put("screenRecording", prefs.getBoolean("captureState_recording", false));
+            captureState.put("soundActive", prefs.getBoolean("audio_active", false));
+            captureState.put("screenState", prefs.getString("captureState_state", "").substring(0,
+                Math.min(160, prefs.getString("captureState_state", "").length())));
+            captureState.put("soundState", prefs.getString("audio_state", "").substring(0,
                 Math.min(160, prefs.getString("audio_state", "").length())));
         } catch (org.json.JSONException ignored) {}
-        String snapshot = capture.toString();
+        String snapshot = captureState.toString();
         if (!snapshot.equals(lastCaptureSnapshot)) {
             lastCaptureSnapshot = snapshot;
             website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.syncNativeCaptureStatus("
