@@ -179,10 +179,16 @@ final class FloatingOracleWindow {
             settings.setJavaScriptCanOpenWindowsAutomatically(false);
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
             website.setWebChromeClient(new WebChromeClient() {
-                // System image picker is an explicit user gesture, not a web microphone/camera grant.
+                // Respect the WEBSITE file input's accept type. The old
+                // image-only override prevented selecting ChatGPT/Gemini JSON.
                 @Override public boolean onShowFileChooser(WebView webView,
                         android.webkit.ValueCallback<Uri[]> callback, FileChooserParams params) {
-                    return service.openImagePicker(callback);
+                    boolean historyJson = false;
+                    for (String type : params.getAcceptTypes()) {
+                        if (type != null && (type.contains("json") || type.contains(".json")))
+                            historyJson = true;
+                    }
+                    return service.openFilePicker(callback, historyJson);
                 }
             });
             website.setWebViewClient(new WebViewClient() {
