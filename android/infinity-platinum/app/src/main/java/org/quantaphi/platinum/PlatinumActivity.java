@@ -12,6 +12,8 @@ import android.os.Message;
 import android.view.Gravity;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.webkit.PermissionRequest;
+import android.content.pm.PackageManager;
 import android.webkit.CookieManager;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
@@ -48,6 +50,8 @@ import java.util.ArrayList;
  */
 public final class PlatinumActivity extends Activity {
  private static final int FILE_PICKER=301;
+ private static final int PHONE_MEDIA_PERMISSION=302;
+ private PermissionRequest pendingPhoneMedia;
  private static final String PREFS="platinum-device";
  private static final int MAX_TABS=3;
  private static final int SILVER=Color.rgb(237,239,243),INK=Color.rgb(44,53,69),STEEL=Color.rgb(76,91,116);
@@ -172,6 +176,38 @@ public final class PlatinumActivity extends Activity {
    @Override public void onReceivedTitle(WebView view,String title){
     if(view==active()&&title!=null)status.setContentDescription(title);
    }
+   @Override public void onPermissionRequest(PermissionRequest request){
+    runOnUiThread(()->{
+     Uri origin=request.getOrigin();
+     Uri page=Uri.parse(web.getUrl()==null?"":web.getUrl());
+     // Only this user's foreground Infinity Phone page may ask for call media.
+     if(web!=active()||!"https".equals(origin.getScheme())||
+       !"quantaphi.org".equalsIgnoreCase(origin.getHost())||
+       !"quantaphi.org".equalsIgnoreCase(page.getHost())||
+       page.getPath()==null||!page.getPath().startsWith("/phone/")){
+      request.deny();return;
+     }
+     java.util.ArrayList<String> grants=new java.util.ArrayList<>();
+     java.util.ArrayList<String> missing=new java.util.ArrayList<>();
+     for(String resource:request.getResources()){
+      String permission=null;
+      if(PermissionRequest.RESOURCE_AUDIO_CAPTURE.equals(resource))permission="android.permission.RECORD_AUDIO";
+      else if(PermissionRequest.RESOURCE_VIDEO_CAPTURE.equals(resource))permission="android.permission.CAMERA";
+      else{request.deny();note("Unsupported media permission blocked.");return;}
+      grants.add(resource);
+      if(checkSelfPermission(permission)!=PackageManager.PERMISSION_GRANTED)missing.add(permission);
+     }
+     if(grants.isEmpty()){request.deny();return;}
+     if(!missing.isEmpty()){
+      if(pendingPhoneMedia!=null)pendingPhoneMedia.deny();
+      pendingPhoneMedia=request;
+      requestPermissions(missing.toArray(new String[0]),PHONE_MEDIA_PERMISSION);
+     }else request.grant(grants.toArray(new String[0]));
+    });
+   }
+   @Override public void onPermissionRequestCanceled(PermissionRequest request){
+    runOnUiThread(()->{if(pendingPhoneMedia==request)pendingPhoneMedia=null;});
+   }
    @Override public boolean onShowFileChooser(WebView view,ValueCallback<Uri[]> callback,FileChooserParams params){
     if(pendingFiles!=null)pendingFiles.onReceiveValue(null);
     pendingFiles=callback;
@@ -286,6 +322,20 @@ public final class PlatinumActivity extends Activity {
    pendingFiles.onReceiveValue(WebChromeClient.FileChooserParams.parseResult(resultCode,data));pendingFiles=null;
   }
  }
+ @Override public void onRequestPermissionsResult(int requestCode,String[] permissions,int[] grantResults){
+  super.onRequestPermissionsResult(requestCode,permissions,grantResults);
+  if(requestCode!=PHONE_MEDIA_PERMISSION||pendingPhoneMedia==null)return;
+  PermissionRequest request=pendingPhoneMedia;pendingPhoneMedia=null;
+  boolean permitted=grantResults.length>0;
+  for(int result:grantResults)if(result!=PackageManager.PERMISSION_GRANTED)permitted=false;
+  if(permitted){
+   WebView view=active();
+   Uri page=Uri.parse(view==null?"":view.getUrl());
+   if(!"quantaphi.org".equalsIgnoreCase(page.getHost())||page.getPath()==null||!page.getPath().startsWith("/phone/"))permitted=false;
+  }
+  if(permitted)request.grant(request.getResources());
+  else{request.deny();note("Microphone/camera permission denied. No call media was captured.");}
+ }
  @Override public void onBackPressed(){
   WebView w=active();
   if(w!=null&&w.canGoBack()){w.goBack();return;}
@@ -293,6 +343,7 @@ public final class PlatinumActivity extends Activity {
   home();
  }
  @Override protected void onDestroy(){
+  if(pendingPhoneMedia!=null){pendingPhoneMedia.deny();pendingPhoneMedia=null;}
   if(pendingFiles!=null){pendingFiles.onReceiveValue(null);pendingFiles=null;}
   for(WebView w:tabs){w.stopLoading();if(w.getParent()!=null)((android.view.ViewGroup)w.getParent()).removeView(w);w.destroy();}
   tabs.clear();super.onDestroy();
