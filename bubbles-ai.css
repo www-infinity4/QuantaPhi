@@ -180,3 +180,11 @@
  color:#563e31;font:700 12px/1.45 system-ui,sans-serif;
 }
 .ba-panel .ba-owner-status[hidden]{display:none!important}
+
+/* Ephemeral APK-to-website owner pairing. Code is only visible in app memory. */
+.ba-panel .ba-pairing-card{margin:8px 0;padding:13px;background:#fffdf7;
+ border:2px solid #b83b32;border-radius:16px;display:grid;gap:8px}
+.ba-panel .ba-pairing-card[hidden]{display:none!important}
+.ba-panel .ba-pairing-card p{margin:0;font-size:13px;line-height:1.4;color:#382c29}
+.ba-panel .ba-pairing-card .ba-field{width:100%;font-size:13px;letter-spacing:.05em}
+.ba-panel .ba-pairing-card .ba-control{background:#b83b32;color:#fff;font-weight:800;border-radius:22px}
