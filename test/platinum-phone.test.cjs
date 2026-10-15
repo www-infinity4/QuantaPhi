@@ -93,9 +93,9 @@ test('Web number route is generated on demand; unknown PSTN destinations are nev
  assert.ok(route.includes('sourcePath: \'/phone/index.html\'') && route.includes('phone\\/n\\/'), 'number dial pages must use the phone template');
  assert.match(html,/id="number-page-link"/);
  assert.match(html,/noindex,nofollow/);
- assert.match(ui,/function numberAddress\\(raw\\)/);
- assert.match(ui,/function showNumberPage\\(\\)/);
- assert.match(ui,/function numberUrl\\(raw\\)/);
+ assert.ok(ui.includes('function numberAddress(raw)'));
+ assert.ok(ui.includes('function showNumberPage()'));
+ assert.ok(ui.includes('function numberUrl(raw)'));
  assert.match(ui,/kind:'pstn'/);
 });
 test('Carrier requests require an authenticated owner and a configured licensed bridge',async()=>{
