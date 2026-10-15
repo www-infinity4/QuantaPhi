@@ -164,13 +164,15 @@ final class ChatGPTSignIn {
                 callback = Uri.parse("http://127.0.0.1:" + server.getLocalPort() + requestPath);
                 boolean valid = "/auth/callback".equals(callback.getPath())
                         && state.equals(callback.getQueryParameter("state"));
-                String html = valid ? "<h2>Return to Bubbles AI</h2><p>You may close this tab.</p>"
-                        : "<h2>Invalid Bubbles sign-in callback</h2>";
-                byte[] payload = ("<!doctype html><meta name=viewport content='width=device-width'>"
-                        + html).getBytes(StandardCharsets.UTF_8);
+                // The return page does not display the callback URL or OAuth data.
+                // Only the code exchange below can confirm a connected account.
+                byte[] payload = BubblesAuthReturnPage.render(valid, activity.getPackageName())
+                        .getBytes(StandardCharsets.UTF_8);
                 OutputStream output = socket.getOutputStream();
                 output.write(("HTTP/1.1 " + (valid ? "200 OK" : "400 Bad Request")
                         + "\r\nContent-Type: text/html; charset=utf-8\r\nCache-Control: no-store"
+                        + "\r\nReferrer-Policy: no-referrer\r\nX-Content-Type-Options: nosniff"
+                        + "\r\nContent-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"
                         + "\r\nContent-Length: " + payload.length + "\r\nConnection: close\r\n\r\n")
                         .getBytes(StandardCharsets.US_ASCII));
                 output.write(payload);
