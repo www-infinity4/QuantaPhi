@@ -271,59 +271,19 @@ const pairingCard=create('section','ba-pairing-card');
  pairingCard.append(pairingInstructions,pairingCode,pairingCopy);
  panel.append(header,status,ownerMode,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
 if(nativeOverlay){
- // The native WebView has isolated account storage. Pair its real shared
- // Bubbles chat using a one-time owner code, not a duplicate login screen.
- nativeOwnerRow=create('form','ba-native-owner');
- const ownerHelp=create('p','ba-muted','Connect Robot Brain · Paste the one-time code from QuantaPhi below. If the code expired, say “link my APK” on the verified website to get a fresh one.');
- const nativeOwnerInput=create('input','ba-field');
- nativeOwnerInput.type='password';nativeOwnerInput.autocomplete='off';nativeOwnerInput.spellcheck=false;
- nativeOwnerInput.maxLength=512;nativeOwnerInput.placeholder='Paste 64-character owner code';
- nativeOwnerInput.autocapitalize='off';nativeOwnerInput.setAttribute('autocorrect','off');
- nativeOwnerInput.setAttribute('enterkeyhint','go');
- nativeOwnerInput.setAttribute('aria-label','Owner pairing code');
- const nativeOwnerPaste=create('button','ba-control ba-owner-paste','Paste code');
- nativeOwnerPaste.type='button';
- nativeOwnerPaste.addEventListener('click',async()=>{
-  try{
-   if(!navigator.clipboard?.readText)throw Error('Clipboard unavailable');
-   const copied=(await navigator.clipboard.readText()).trim();
-   if(!/^[a-f0-9]{64}$/i.test(copied)){nativeOwnerStatus.textContent='The clipboard does not contain a 64-character pairing code.';return}
-   nativeOwnerInput.value=copied;nativeOwnerInput.focus();
-   nativeOwnerStatus.textContent='Code pasted. Tap Connect Robot Brain.';
-  }catch{
-   nativeOwnerInput.focus();
-   nativeOwnerStatus.textContent='Tap and hold the code field, then choose Paste.';
-  }
- });
- const nativeOwnerButton=create('button','ba-control','Connect Robot Brain');
- nativeOwnerButton.type='submit';
- const nativeOwnerStatus=create('p','ba-muted','Only an owner-authorized code can unlock jobs.');
- nativeOwnerStatus.setAttribute('role','status');
- nativeOwnerRow.append(ownerHelp,nativeOwnerInput,nativeOwnerPaste,nativeOwnerButton,nativeOwnerStatus);
- nativeOwnerRow.addEventListener('submit',async event=>{
-  event.preventDefault();
-  if(nativeOwnerButton.disabled)return;
-  const code=nativeOwnerInput.value.trim();nativeOwnerInput.value='';
-  if(!code){nativeOwnerStatus.textContent='Paste the one-time code from your verified QuantaPhi account.';return}
-  nativeOwnerButton.disabled=true;nativeOwnerStatus.textContent='Verifying owner session…';
-  try{
-   const result=await window.QuantaBrainOwner?.connectWithCode?.(code);
-   if(result?.state!=='verified')throw Error(result?.state==='unreachable'?'Robot Brain is not responding.':'Code was not accepted or has expired.');
-   await connectOwner();
-   nativeOwnerStatus.textContent='Robot Brain connected. Shared conversation is syncing.';
-  }catch(error){
-   nativeOwnerStatus.textContent='Owner connection was not completed: '+String(error.message||error).slice(0,120);
-  }finally{nativeOwnerButton.disabled=false}
- });
- // Keep the secure pairing field directly under the Bubbles title.
- // Android's small floating window must never bury this behind messages or settings.
- panel.insertBefore(nativeOwnerRow,status);
-
- // Native OAuth and model inference live on the device, not in this WebView.
- // Expose the entry point above conversation; don't bury it in hidden settings.
+ // One text composer accepts ordinary chat and a pasted owner code.
+ // No second code input field, copy/paste control, or pairing button.
+ input.placeholder='Message Bubbles or paste owner code…';
+ input.autocapitalize='off';input.setAttribute('autocorrect','off');
+ input.setAttribute('enterkeyhint','send');
+ summary.textContent='⋯';
+ summary.setAttribute('aria-label','Bubbles options');
+ tools.append(privateLabel);
  nativeProviderRow=create('div','ba-native-provider');
  nativeProviderRow.append(gptConnect,gptStatus);
- panel.insertBefore(nativeProviderRow,conversation);
+ tools.insertBefore(nativeProviderRow,summary.nextSibling);
+ // Keep transcript scrolling independently and composer at panel bottom.
+ panel.insertBefore(tools,composer);
 }
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
@@ -414,7 +374,7 @@ function display(text,who,greeting=false){
   bubble.append(value.slice(cursor));
  }
  line.append(bubble);
- if(who!=='you'&&!greeting){
+ if(who!=='you'&&!greeting&&!nativeOverlay){
   const row=create('div','ba-message-actions');
   const remember=create('button','ba-miniaction','Save note');remember.type='button';
   remember.addEventListener('click',()=>{
@@ -434,7 +394,10 @@ function display(text,who,greeting=false){
    });
   row.append(remember,task,say);line.append(row);
  }
- conversation.append(line);conversation.scrollTop=conversation.scrollHeight;
+ const wasNearBottom=conversation.scrollHeight-conversation.scrollTop-conversation.clientHeight<96;
+ conversation.append(line);
+ // Do not steal scroll position while reading history; follow new conversation.
+ if(wasNearBottom||who==='you'||greeting)requestAnimationFrame(()=>{conversation.scrollTop=conversation.scrollHeight;});
 }
 for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
 // Native WebView and Chrome use the same first-party UI but have independent
@@ -563,11 +526,36 @@ function isOwnerWorkRequest(text){
  const followup=/(?:^|[.!?]\s+)(?:please\s+)?(?:fix|repair|restore|update|upgrade|wire|connect)\b/i;
  return verb.test(request)&&target.test(request)&&(direct.test(request)||directive.test(request)||followup.test(request));
 }
+async function redeemNativeOwnerCode(code){
+ // Exact one-time 64-character codes never enter chat history, the model,
+ // spoken output, local notes, or bot job requests.
+ input.value='';
+ busy=true;send.disabled=true;
+ ownerMode.textContent='Robot Brain: connecting…';
+ try{
+  const result=await window.QuantaBrainOwner?.connectWithCode?.(code);
+  if(result?.state!=='verified')throw Error('Pairing could not be verified');
+  await connectOwner();
+  if(!ownerReady||!ownerHeaders?.Authorization)throw Error('Owner authorization unavailable');
+  ownerMode.textContent='Robot Brain: connected';
+  display('Robot Brain connected.','ai',true);
+ }catch{
+  ownerMode.textContent='Robot Brain: not linked';
+  display('Code expired or not accepted. Get a fresh code from your verified QuantaPhi website.','ai',true);
+ }finally{busy=false;send.disabled=false;}
+}
 async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const spoken=String(text||'').trim();
  // Observation is delivered separately so its untrusted words can never be
  // classified as an owner job, local tool command, navigation, or approval.
- const screenEvidence=nativeOverlay?String(androidScreenEvidence||'').slice(0,1200):'';if(busy||!spoken)return;
+ const screenEvidence=nativeOverlay?String(androidScreenEvidence||'').slice(0,1200):'';
+ if(!spoken)return;
+ if(nativeOverlay&&!fromVoice&&/^[a-f0-9]{64}$/i.test(spoken)){
+  if(busy)return; // Leave code in composer until current reply ends.
+  await redeemNativeOwnerCode(spoken);
+  return;
+ }
+ if(busy)return;
  // Android's user-started foreground microphone is the authoritative capture
  // session. An unreachable Robot Brain voice lease is not a reason to discard
  // its second/third commands; only browser-owned microphones need this gate.
