@@ -1,0 +1,28 @@
+name: Infinity Platinum Phone web switchboard
+on:
+  pull_request:
+    paths:
+      - "phone/**"
+      - "workers/platinum-switchboard/**"
+      - "workers/quantaphi-site/worker.js"
+      - "platinum/**"
+      - "test/platinum-phone.test.cjs"
+      - ".github/workflows/platinum-phone.yml"
+  push:
+    branches: [main]
+    paths:
+      - "phone/**"
+      - "workers/platinum-switchboard/**"
+      - "workers/quantaphi-site/worker.js"
+      - "platinum/**"
+      - "test/platinum-phone.test.cjs"
+      - ".github/workflows/platinum-phone.yml"
+jobs:
+  switchboard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --test test/platinum-phone.test.cjs
