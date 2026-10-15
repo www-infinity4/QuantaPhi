@@ -10,7 +10,7 @@ const accessibility = fs.readFileSync('android/bubbles-overlay/app/src/main/java
 test('native Android WebView never paints the owner desktop widget on top of chat', () => {
   assert.match(page, /html\.bubbles-native-overlay #robotBrainOwner\{display:none!important\}/);
   assert.match(page, /html\.bubbles-native-overlay \.ba-panel\{z-index:2147483640!important/);
-  assert.match(page, /html\.bubbles-native-overlay \.ba-panel \.ba-messages\{min-height:0!important;overflow-y:auto!important\}/);
+  assert.match(page, /html\.bubbles-native-overlay \.ba-panel \.ba-messages\{min-height:0!important;overflow-y:auto!important;/);
 });
 test('single-line native overlay header leaves screen space for the full site chat', () => {
   assert.match(window, /TextView title = text\("Bubbles", 21, INK\)/);
