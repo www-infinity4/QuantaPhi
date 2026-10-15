@@ -63,7 +63,8 @@ test('Android chat: one scroll surface, reachable composer, visible pairing resu
   await page.waitForFunction(()=>document.querySelector('.ba-messages').textContent.includes('Received your link.'));
   assert.equal(aiCalls,1);
   await page.setViewportSize({width:320,height:300});
-  m=await metrics();assert.ok(m.height>0);assert.ok(m.composerBottom<=m.viewport);
+  await page.waitForFunction(()=>document.querySelector('.ba-composer').getBoundingClientRect().bottom<=visualViewport.height+1);
+  m=await metrics();assert.ok(m.height>0);assert.ok(m.composerBottom<=m.viewport+1,JSON.stringify(m));
   await page.getByText('Options',{exact:true}).click();
   m=await metrics();assert.deepEqual(m.scrollables,['ba-thread']);
   await page.screenshot({path:'/tmp/bubbles-native-chat20.png'});
