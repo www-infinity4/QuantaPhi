@@ -66,6 +66,18 @@ $('register-form').addEventListener('submit',async e=>{
  }catch(e){say('Address could not be registered: '+e.message+'. No line was created on this device.',true)}
  finally{button.disabled=false}
 });
+$('restore-owner').addEventListener('change',async e=>{
+ const file=e.target.files?.[0];if(!file)return;
+ try{
+  if(file.size>10000)throw Error('backup_too_large');
+  const backup=JSON.parse(await file.text());
+  if(backup.kind!=='infinity-platinum-phone-owner-backup'||!validAlias(backup.alias)||!/^[a-f0-9]{64}$/.test(backup.secret))throw Error('invalid_owner_backup');
+  await api(backup.alias,'/ping','POST',{}, {owner:backup.secret});
+  me={alias:backup.alias,secret:backup.secret};localStorage.setItem(STORAGE,JSON.stringify(me));
+  updateIdentity();startWatch();say('Original Platinum address restored on this device.');
+ }catch(err){say('Could not restore that owner key: '+err.message,true)}
+ finally{e.target.value=''}
+});
 $('copy-link').onclick=async()=>{try{await navigator.clipboard.writeText(link(me.alias));say('Web phone address copied.')}catch{say('Copy unavailable. Select the address above to copy it.',true)}};
 $('share-link').onclick=async()=>{if(navigator.share){try{await navigator.share({title:'Infinity Platinum Phone',url:link(me.alias)})}catch{}}else $('copy-link').click()};
 $('download-owner').onclick=()=>{
