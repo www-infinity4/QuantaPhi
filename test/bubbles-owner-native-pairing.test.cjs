@@ -2,7 +2,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
 const owner=fs.readFileSync('robot-brain-owner.js','utf8');
 const site=fs.readFileSync('bubbles-ai.js','utf8');
-const html=fs.readFileSync('bubbles.html','utf8');
+const nativeCss=fs.readFileSync('bubbles-native-chat.css','utf8');
 const native=fs.readFileSync('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BubblesService.java','utf8');
 
 test('native panel connects owner through normal chat, without separate pairing UI',()=>{
@@ -10,7 +10,7 @@ test('native panel connects owner through normal chat, without separate pairing 
  assert.match(site,/const result=await window.QuantaBrainOwner\?\.connectWithCode\?\.\(payload\)/);
  assert.match(site,/await connectOwner\(\)/);
  assert.doesNotMatch(site,/nativeOwnerRow|nativeOwnerInput|nativeOwnerPaste|nativeOwnerButton/);
- assert.match(html,/html\.bubbles-native-overlay #robotBrainOwner\{display:none!important\}/);
+ assert.match(nativeCss,/html\.bubbles-native-overlay \.bubbles-page/);
  assert.match(native,/A pasted pairing secret is NOT a conversation/);
  assert.match(native,/oracleWindow == null \|\| !oracleWindow\.sendTyped\(text\)/);
 });
