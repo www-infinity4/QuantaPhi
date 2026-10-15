@@ -11,6 +11,13 @@ let streamVoice=null,voiceGeneration=0;
 const brainTools=window.BubblesBrainActions||null;
 const TICKETS='https://infinity-brain-clock.marvaseater.workers.dev';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
+// Android 12 WebViews may lack AbortSignal.timeout even after owner pairing succeeds.
+async function bubblesFetch(url,options={},timeoutMs=15000){
+ const controller=new AbortController();
+ const timer=setTimeout(()=>controller.abort(),timeoutMs);
+ try{return await fetch(url,{...options,signal:controller.signal})}
+ finally{clearTimeout(timer)}
+}
 const params=new URLSearchParams(location.search);
 const embedded=params.get('embed')==='1'&&window.parent!==window;
 const nativeOverlay=!embedded&&params.get('nativeOverlay')==='1';
@@ -83,7 +90,7 @@ async function sharedMemory(query=''){
  if(memoryBusy)return false;memoryBusy=true;
  try{
   const batch=[...memoryPending.values()].slice(0,20);
-  const response=await fetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({messages:batch,query}),signal:AbortSignal.timeout(15000)});
+  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({messages:batch,query})},15000);
   const result=await response.json();if(!response.ok||!result.ok)throw Error(result.error||'memory_unavailable');
   for(const id of result.saved||[]){memoryPending.delete(id);memoryAck.add(id);}
   save(MEMORY_OUTBOX,[...memoryPending.values()]);
@@ -98,7 +105,7 @@ async function sharedMemory(query=''){
 async function sharedVoice(claim=false){
  if(embedded||!ownerReady||!ownerHeaders)return true;
  try{
-  const response=await fetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({mode:claim?'voice-claim':'voice-renew',client:memoryClient}),signal:AbortSignal.timeout(10000)});
+  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({mode:claim?'voice-claim':'voice-renew',client:memoryClient})},10000);
   const result=await response.json();if(!response.ok||!result.ok)throw Error('voice_coordination_unavailable');
   voiceConflict=!result.owned;
   if(result.active==='android'&&!nativeOverlay){androidCompanionListening=true;mic.disabled=true;}
@@ -111,7 +118,7 @@ async function checkSharedVoiceStatus(){
  if(embedded||nativeOverlay||!ownerReady||!ownerHeaders||sharedVoiceStatusBusy)return;
  sharedVoiceStatusBusy=true;
  try{
-  const r=await fetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({mode:'voice-status',client:memoryClient}),signal:AbortSignal.timeout(7000)});
+  const r=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({mode:'voice-status',client:memoryClient})},7000);
   const state=await r.json();if(!r.ok||!state.ok||!['android','website','none'].includes(state.active))return;
   const wasConnected=androidCompanionListening;androidCompanionListening=state.active==='android';
   if(androidCompanionListening){
@@ -638,8 +645,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   let response;
   try{
    const headers=await verifiedOwnerHeaders();
-   const r=await fetch(BRAIN+'/owner/pair/create',{method:'POST',
-    headers:{...headers,'Content-Type':'application/json'},body:'{}',signal:AbortSignal.timeout(15000)});
+   const r=await bubblesFetch(BRAIN+'/owner/pair/create',{method:'POST',
+    headers:{...headers,'Content-Type':'application/json'},body:'{}'},15000);
    const result=await r.json().catch(()=>({}));
    if(!r.ok||!result.ok||!/^[a-f0-9]{64}$/.test(result.code||''))throw Error(result.error||'pairing_unavailable');
    pairingCode.value=result.code;
@@ -662,9 +669,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const headers=await verifiedOwnerHeaders();
    // Owner pairing is not proof that the work API accepts a real request.
    // Check the read-only ticket endpoint before telling the user it works.
-   const response=await fetch(BRAIN+'/work/tickets/list',{method:'POST',
+   const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',
     headers:{...headers,'Content-Type':'application/json'},body:'{}',
-    cache:'no-store',signal:AbortSignal.timeout(15000)});
+    cache:'no-store'},15000);
    const check=await response.json().catch(()=>({}));
    if(!response.ok||!check.ok||!Array.isArray(check.tickets))
     throw Error(String(check.error||'Authenticated ticket service did not confirm the connection'));
@@ -699,7 +706,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   busy=true;send.disabled=true;let resultText;
   try{
    const headers=await verifiedOwnerHeaders();
-   const r=await fetch(BRAIN+'/owner/pair/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',signal:AbortSignal.timeout(15000)});
+   const r=await bubblesFetch(BRAIN+'/owner/pair/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}'},15000);
    const result=await r.json();
    if(!r.ok||!result.ok||!/^[a-f0-9]{64}$/.test(result.code||''))throw Error(result.error||'pairing_unavailable');
    pairingCode.value=result.code;
@@ -748,6 +755,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      'Work ticket saved, but the runner could not be confirmed: '+ticket.runner+'.')+
     ' Your request is saved; you do not need to press another button. Track real results at https://quantaphi.org/#robotDirections . Job reference: '+ticket.id+'. No successful code change, merge or deployment has been verified by this receipt.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
+ }else if(!embedded&&brainTools?.classify(request)==='connection'){
+  try{workEvidence='Robot Brain connection verified. I can submit a work ticket when you describe the repair. No new ticket was created by this connection check.\n'+await readBrainReport()}
+  catch(error){workEvidence='Robot Brain connection check failed: '+String(error.message||error)+'. No new ticket was created.'}
  }else if(!embedded&&brainTools?.classify(request)==='report'){
   try{workEvidence=await readBrainReport()}
   catch(error){workEvidence='Robot Brain report unavailable: '+String(error.message||error)+'. No bot activity was assumed.'}
@@ -988,7 +998,7 @@ async function connectOwner(){
 }
 async function readBrainReport(){
  const headers=await verifiedOwnerHeaders();
- const response=await fetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store',signal:AbortSignal.timeout(20000)});
+ const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},20000);
  const result=await response.json().catch(()=>({}));
  if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error(String(result.error||'Owner ticket list unavailable'));
  return brainTools?.describeTickets(result.tickets,10)||'Robot Brain reporting helpers are unavailable.';
@@ -1000,8 +1010,8 @@ document.addEventListener?.('DOMContentLoaded',()=>void connectOwner(),{once:tru
 async function requestRunner(ticketId='',jobId=''){
  const headers=await verifiedOwnerHeaders();
  const body={};if(ticketId)body.ticketId=ticketId;if(jobId)body.jobId=jobId;
- const response=await fetch(BRAIN+'/work/run-next',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
-  body:JSON.stringify(body),signal:AbortSignal.timeout(20000)});
+ const response=await bubblesFetch(BRAIN+'/work/run-next',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
+  body:JSON.stringify(body)},20000);
  const result=await response.json().catch(()=>({}));
  if(!response.ok||!result.ok)throw Error(String(result.error||'Runner request was not acknowledged'));
  if(!['queued_for_runner','no_pending_jobs'].includes(result.status))throw Error('Unexpected runner result');
@@ -1016,7 +1026,7 @@ async function submitWork(request,approval='explicit-click'){
  try{
   const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(new Date().toISOString().slice(0,10)+'|'+request.toLowerCase().replace(/\s+/g,' ').trim()));
   const submission=[...new Uint8Array(digest)].map(n=>n.toString(16).padStart(2,'0')).join('');
-  const response=await fetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},signal:AbortSignal.timeout(30000),body:JSON.stringify({source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,context:{kind:'robot-directions',submission_id:submission,requested_role:config.role,approval,repository_writes:'require-github-authorization'}})});
+  const response=await bubblesFetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,context:{kind:'robot-directions',submission_id:submission,requested_role:config.role,approval,repository_writes:'require-github-authorization'}})},30000);
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||result.message||'No confirmed ticket'));
   const existingJobs=result.ticket.context?.color_jobs;
@@ -1027,7 +1037,7 @@ async function submitWork(request,approval='explicit-click'){
   }
   if(!['draft','ready','blocked'].includes(result.ticket.status))throw Error('Existing ticket '+result.ticket.id+' is '+result.ticket.status+'; inspect progress in Robot Brain.');
   const jobs=brainTools.makeJobs(request);
-  const updated=await fetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...headers,'Content-Type':'application/json'},signal:AbortSignal.timeout(20000),body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify(jobs),context:{...result.ticket.context,color_jobs:jobs}})});
+  const updated=await bubblesFetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify(jobs),context:{...result.ticket.context,color_jobs:jobs}})},20000);
   const ready=await updated.json().catch(()=>({}));if(!updated.ok||!ready.ok)throw Error(ready.error||'Ticket saved as a draft but not ready; check Robot Brain.');
   workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs}}));
   let runner='not_started';
