@@ -22,7 +22,7 @@ test('owner code is validated server-side and saved only after verification',()=
  assert.match(method,/unlocked\(result.headers,credential,'key'\)/);
 });
 test('website-issued one-time pairing code is not spoken or inserted into memory',()=>{
- const from=site.indexOf("if(!embedded&&/^(?:(?:please|bubbles)[\\s,:]+)*(?:pair|link|sync|connect)");
+ const from=site.indexOf("if(!embedded&&(/^(?:(?:please|bubbles)[\\s,:]+)*(?:pair|link|sync|connect)");
  const to=site.indexOf("const noteResult=noteCommand(spoken)",from);
  assert.ok(from>0&&to>from);
  const phrase=site.slice(from,to);
