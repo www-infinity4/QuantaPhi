@@ -9,6 +9,7 @@ on:
       - 'test/bubbles-native-visibility.test.cjs'
       - 'test/bubbles-native-site-parity.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
+      - 'test/bubbles-capture-save.test.cjs'
       - 'test/bubbles-native-gpt-screen-story.test.cjs'
       - 'test/bubbles-native-session-voice.test.cjs'
       - '.github/workflows/bubbles-android.yml'
@@ -81,6 +82,13 @@ jobs:
           mkdir -p /tmp/brain-policy
           javac -d /tmp/brain-policy android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LearningPolicy.java android/bubbles-overlay/checks/LearningPolicyCheck.java
           java -cp /tmp/brain-policy LearningPolicyCheck
+      - name: Verify natural media commands do not confuse audio, video and stop
+        run: |
+          mkdir -p /tmp/bubbles-capture
+          javac -d /tmp/bubbles-capture android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/VoiceCaptureCommands.java android/bubbles-overlay/checks/VoiceCaptureCommandsCheck.java
+          java -cp /tmp/bubbles-capture org.quantaphi.bubbles.VoiceCaptureCommandsCheck
+      - name: Verify actual Android media library exports and user consent
+        run: node --test test/bubbles-capture-save.test.cjs
       - name: Verify sound recording bytes and limits
         run: |
           mkdir -p /tmp/bubbles-wav
