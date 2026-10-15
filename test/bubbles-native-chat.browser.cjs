@@ -7,7 +7,7 @@ const {chromium}=require('playwright');
 test('Android chat: one scroll surface, reachable composer, visible pairing results and ordinary links',async()=>{
  const server=http.createServer((req,res)=>{
   const pathname=new URL(req.url,'http://localhost').pathname;
-  const allowed=['/bubbles.html','/bubbles-ai.js','/bubbles-ai.css','/bubbles-native-chat.css','/oracle-octaves.css','/bubbles-introduction.css'];
+  const allowed=['/robot-brain-owner.js','/bubbles.html','/bubbles-ai.js','/bubbles-ai.css','/bubbles-native-chat.css','/oracle-octaves.css','/bubbles-introduction.css'];
   if(!allowed.includes(pathname)){res.writeHead(404);return res.end();}
   res.setHeader('Content-Type',pathname.endsWith('.js')?'text/javascript':pathname.endsWith('.css')?'text/css':'text/html');
   res.end(fs.readFileSync('.'+pathname));
@@ -18,20 +18,21 @@ test('Android chat: one scroll surface, reachable composer, visible pairing resu
   browser=await chromium.launch({headless:true});
   const page=await browser.newPage({viewport:{width:336,height:480},isMobile:true,hasTouch:true});
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
-  let aiCalls=0;
+  let aiCalls=0;const redeemed=[];
   await page.route('https://**/*',async route=>{
    const url=route.request().url();
+   if(url.endsWith('/health'))return route.fulfill({status:404,json:{ok:false}});
+   if(url.endsWith('/owner/pair/redeem')){
+    const code=route.request().postDataJSON().code;redeemed.push(code);
+    if(code==='f'.repeat(64))return route.fulfill({status:503,json:{ok:false}});
+    return route.fulfill({json:{ok:true,token:'rd_'+'b'.repeat(64)}});
+   }
    if(url.includes('/v1/assist')){aiCalls++;return route.fulfill({json:{ok:true,output:'Received your link.'}});}
    return route.fulfill({json:{ok:true,messages:[],capabilities:[],active:'android'}});
   });
   await page.addInitScript(()=>{
    localStorage.setItem('quantaphi:bubbles:history:v1',JSON.stringify(Array.from({length:45},(_,i)=>({role:i%2?'user':'assistant',text:'Message '+i+' '+('Readable conversation. '.repeat(12))}))));
-   window.QuantaBrainOwner={ready:Promise.resolve(null),connectWithCode:async code=>{
-    window.pairedCode=code;
-    if(code==='f'.repeat(64))return {state:'unreachable'};
-    window.QuantaBrainOwner.ready=Promise.resolve({Authorization:'Bearer fixture-owner'});
-    return {state:'verified'};
-   }};
+   AbortSignal.timeout=undefined; // Older Android WebViews must still reach verification.
   });
   await page.goto(`http://127.0.0.1:${server.address().port}/bubbles.html?nativeOverlay=1`);
   await page.waitForFunction(()=>window.QuantaBubbles?.isNativeOverlay);
@@ -53,9 +54,10 @@ test('Android chat: one scroll surface, reachable composer, visible pairing resu
   await field.fill('f'.repeat(64));await send.click();
   await page.waitForFunction(()=>document.querySelector('.ba-status').textContent.includes('Pairing not completed'));
   assert.equal(await page.locator('.ba-status').isVisible(),true);
-  const code='a1'.repeat(32);await field.fill(code);await send.click();
+  const code='a1'.repeat(32);await field.fill(code.toUpperCase());await send.click();
   await page.waitForFunction(()=>document.querySelector('.ba-messages').textContent.includes('Robot Brain connected'));
-  assert.equal(await page.evaluate(()=>window.pairedCode),code);
+  assert.deepEqual(redeemed,['f'.repeat(64),code]);
+  assert.equal(await page.evaluate(()=>localStorage.getItem('infinity-work-ticket-owner-v1')),'rd_'+'b'.repeat(64));
   assert.equal(await page.locator('.ba-messages').innerText().then(s=>s.includes(code)),false);
   assert.equal(await page.evaluate(c=>JSON.stringify(localStorage).includes(c),code),false);
   assert.equal(aiCalls,0);
