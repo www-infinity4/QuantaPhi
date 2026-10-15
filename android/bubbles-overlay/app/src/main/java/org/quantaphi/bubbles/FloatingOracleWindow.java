@@ -366,6 +366,29 @@ final class FloatingOracleWindow {
                 status.setText("Could not open ChatGPT sign-in settings.");
             }
         });
+        // First-party website composer does not possess Android MediaProjection.
+        // Drain only declared local capture intents and run the SAME native command
+        // parser used by microphone speech; Android consent is never bypassed.
+        website.evaluateJavascript(
+            "window.QuantaBubbles && window.QuantaBubbles.drainNativeCaptureRequest()", payload -> {
+                if (!websiteReady || payload == null || "null".equals(payload)) return;
+                try {
+                    Object raw = new JSONTokener(payload).nextValue();
+                    if (!(raw instanceof String) || ((String) raw).isEmpty()) return;
+                    String command = new JSONObject((String) raw).optString("text", "");
+                    if (command.isEmpty() || command.length() > 1800) return;
+                    VoiceCaptureCommands.Command capture = VoiceCaptureCommands.parse(command);
+                    if (capture == null || !(capture.action.startsWith("screen_")
+                            || capture.action.equals("capture_stop"))) {
+                        status.setText("Android could not recognize a screen capture command.");
+                        return;
+                    }
+                    service.startService(new Intent(service, BubblesService.class)
+                        .setAction(BubblesService.ACTION_TEXT).putExtra("text", command));
+                } catch (Exception error) {
+                    status.setText("Android capture request failed: " + error.getClass().getSimpleName());
+                }
+            });
         if(!gptBusy)website.evaluateJavascript(
             "window.QuantaBubbles && window.QuantaBubbles.drainNativeGPTRequest()", payload -> {
                 if(!websiteReady || gptBusy || payload==null || "null".equals(payload))return;

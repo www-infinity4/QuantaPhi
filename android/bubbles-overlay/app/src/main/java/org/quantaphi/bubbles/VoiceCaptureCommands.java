@@ -22,8 +22,12 @@ final class VoiceCaptureCommands {
     static Command parse(String text) {
         if (text == null) return null;
         String q = text.toLowerCase(Locale.ROOT).replaceAll("[,.!?]+", " ").replaceAll("\\s+", " ").trim();
+        // Strip natural conversational introductions before inspecting an action.
+        // Voice commands must be handled locally, not forwarded to a text AI
+        // which cannot grant Android screen capture permissions.
+        q = q.replaceFirst("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:bubbles(?:\\s+ai)?|bubble\\s+ai)[\\s,:]+", "");
         q = q.replaceFirst("^(?:please\\s+)?", "");
-        q = q.replaceFirst("^(?:(?:can|could|would) you |(?:i want you to |i need you to ))", "");
+        q = q.replaceFirst("^(?:(?:can|could|would|will) you\\s+(?:please\\s+)?|i (?:want|need|would like) (?:you )?to\\s+|i (?:want|need) (?:a |the )?|you (?:need|have) to\\s+)", "");
         q = q.replaceFirst("^(?:please\\s+)?", "");
         // Simple 'stop' applies to whatever media capture is actually running.
         // The service checks active sessions; this command does not mute Bubbles.
@@ -31,10 +35,16 @@ final class VoiceCaptureCommands {
             return new Command("capture_stop", 0, 0);
         if (q.matches("^(?:stop|end|finish|cancel)\\s+(?:the\\s+)?(?:screen\\s+)?(?:capture|recording|screenshots?|video)(?:\\s+now)?$")
                 && q.contains("screen")) return new Command("screen_stop", 0, 0);
+        if (q.matches("^(?:(?:stop|end|finish|cancel|turn off|switch off)\\s+(?:(?:the|my)\\s+)?(?:screen\\s+recorder|screen\\s+recording|recording\\s+(?:of\\s+)?(?:the|my)\\s+screen))(?:\\s+now)?$"))
+            return new Command("screen_stop", 0, 0);
+        if (q.matches("^(?:(?:turn|switch)\\s+on|open|launch|enable|activate|use|run|start|begin)\\s+(?:(?:the|my|a)\\s+)?(?:screen\\s+recorder|screen\\s+recording)(?:\\s+now)?$")
+                || q.matches("^(?:screen\\s+record|record\\s+(?:what(?:'s| is)\\s+on\\s+)?(?:my|the|this)\\s+(?:phone\\s+)?(?:screen|display)|start\\s+recording\\s+(?:what(?:'s| is)\\s+)?(?:on\\s+)?(?:my|the)\\s+(?:phone\\s+)?(?:screen|display))(?:\\b.*)?$")
+                || q.matches("^(?:start|begin|make|capture)\\s+(?:a\\s+)?video\\s+(?:of\\s+)?(?:my|the|this)\\s+screen(?:\\b.*)?$"))
+            return new Command("screen_video", 0, 300);
         if (q.matches("^(?:stop|end|finish|save)\\s+(?:the\\s+)?(?:audio|sound|microphone|voice)?\\s*recording(?:\\s+now)?$")
                 || q.matches("^(?:stop|end|finish|save)\\s+(?:audio|sound|microphone)(?:\\s+now)?$"))
             return new Command("sound_stop", 0, 0);
-        if (q.matches("^(?:record|start recording|record sound|record audio|start audio recording|start sound recording|record my voice|start recording sound|record this conversation)$"))
+        if (q.matches("^(?:record|start recording|record sound|record audio|start audio recording|start sound recording|start microphone recording|record microphone|record my voice|start recording sound|record this conversation)$"))
             return new Command("sound_start", 0, 0);
         if (q.matches("^(?:record|start|take|capture|make|shoot)\\s+(?:a\\s+)?(?:camera|selfie)\\s*(?:video|recording)?(?:\\s+.*)?$")
                 || q.matches("^(?:turn on|start|record|shoot|make|capture)\\s+(?:the |my |a )?(?:camera|video|video camera)(?: recording| recorder)?$")
