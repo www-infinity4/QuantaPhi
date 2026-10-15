@@ -99,7 +99,7 @@ function describeTickets(tickets,limit=10){
   const updated=Number(ticket.updated_at)||Date.parse(ticket.updated_at||'')||0;
   const title=String(ticket.title||ticket.request||'Unnamed task').replace(/\s+/g,' ').slice(0,125);
   const jobs=Array.isArray(ticket.context?.color_jobs)?ticket.context.color_jobs:[];
-  const jobInfo=jobs.length?' Team: '+jobs.slice(0,3).map(j=>String(j.agent||'bot').replace(/-/g,' ')+': '+String(j.status||'queued')).join('; ')+'.':'';
+  const jobInfo=jobs.length?' Team: '+jobs.slice(0,5).map(j=>String(j.agent||'bot').replace(/-/g,' ')+': '+String(j.status||'queued')+' [receipt '+String(ticket.id||'?')+'/'+String(j.id||'?')+']'+(j.progress?.blocker?' Blocker: '+String(j.progress.blocker).slice(0,140):'')).join('; ')+'.':'';
   const receipt=String(ticket.result_summary||'').trim().slice(0,185);
   const outcome=receipt?' Recorded result: '+receipt+'.':' No verified progress yet; no authenticated code or deployment receipt recorded here.';
   entries.push({updated,description:title+' — '+status+'.'+jobInfo+outcome+' Ref '+String(ticket.id||'?').slice(0,50)});
@@ -109,7 +109,7 @@ function describeTickets(tickets,limit=10){
  const statuses=Object.entries(totals).sort((a,b)=>b[1]-a[1]).map(([status,count])=>count+' '+status).join(', ');
  if(!total)return 'Robot Brain has no saved owner tickets yet. No jobs are claimed running.';
  const selected=entries.slice(0,Math.max(1,Math.min(10,Number(limit)||10)));
- return 'Robot Brain: '+total+' saved owner tickets ('+statuses+'). Showing '+selected.length+' most recently updated. Status “working” does not prove a bot is actively executing; only authenticated commits, tests and live receipts prove delivery.\n'
+ return 'Robot Brain: '+total+' saved owner tickets ('+statuses+'). Showing '+selected.length+' most recently updated. Queued is not running; status “working” does not prove a bot is actively executing; only authenticated commits, tests and live receipts prove delivery.\n'
   +selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
 }
 const api={classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets};
