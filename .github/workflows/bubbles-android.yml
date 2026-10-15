@@ -9,6 +9,7 @@ on:
       - 'test/bubbles-native-site-parity.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
       - 'test/bubbles-native-gpt-screen-story.test.cjs'
+      - 'test/bubbles-native-session-voice.test.cjs'
       - '.github/workflows/bubbles-android.yml'
   push:
     branches: [main]
@@ -52,6 +53,13 @@ jobs:
         run: node --test test/bubbles-chatgpt-native.test.cjs
       - name: Verify ChatGPT sign-in handoff, visual reader and story opt-in
         run: node --test test/bubbles-native-gpt-screen-story.test.cjs
+      - name: Verify shared session, Android speech-turn timing and ownership pairing
+        run: node --test test/bubbles-native-session-voice.test.cjs
+      - name: Check full speech-turn accumulator and interruption reset
+        run: |
+          mkdir -p /tmp/bubbles-turns
+          javac -d /tmp/bubbles-turns android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SpeechTurnBuffer.java android/bubbles-overlay/checks/SpeechTurnBufferCheck.java
+          java -cp /tmp/bubbles-turns org.quantaphi.bubbles.SpeechTurnBufferCheck
       - name: Verify native / QuantaPhi site parity and spoken notes
         run: node --test test/bubbles-native-site-parity.test.cjs
       - name: Verify Oracle chat interruption and text conversation
