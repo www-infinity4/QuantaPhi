@@ -448,9 +448,12 @@ public final class MainActivity extends Activity {
                 if (state != null) state.setText(ChatGPTSignIn.status(this)+"\n"+result);
             });
         }
-        if (getIntent().getBooleanExtra("pick_bubbles_image",false)) {
+        if (getIntent().getBooleanExtra("pick_bubbles_image",false)
+                || getIntent().getBooleanExtra("pick_bubbles_history",false)) {
+            boolean history = getIntent().getBooleanExtra("pick_bubbles_history",false);
             getIntent().removeExtra("pick_bubbles_image");
-            openBubblesImagePicker();
+            getIntent().removeExtra("pick_bubbles_history");
+            openBubblesDocumentPicker(history);
         }
         if (refreshChatGPTStatus != null) refreshChatGPTStatus.run();
         if (refreshScreenPermission != null) refreshScreenPermission.run();
@@ -486,9 +489,12 @@ public final class MainActivity extends Activity {
         // A notification tap can reach an ALREADY RESUMED singleTop activity.
         // onResume is not guaranteed to run a second time in that case, so
         // the Android screen-sharing permission dialog must be opened here too.
-        if (intent != null && intent.getBooleanExtra("pick_bubbles_image",false)) {
+        if (intent != null && (intent.getBooleanExtra("pick_bubbles_image",false)
+                || intent.getBooleanExtra("pick_bubbles_history",false))) {
+            boolean history = intent.getBooleanExtra("pick_bubbles_history",false);
             intent.removeExtra("pick_bubbles_image");
-            openBubblesImagePicker();
+            intent.removeExtra("pick_bubbles_history");
+            openBubblesDocumentPicker(history);
         }
         if (intent != null && intent.hasExtra("voice_capture")) {
             String action = intent.getStringExtra("voice_capture");
@@ -499,16 +505,23 @@ public final class MainActivity extends Activity {
             ui.post(() -> handleVoiceCapture(action, seconds, duration));
         }
     }
-    private void openBubblesImagePicker() {
-        // Android owns file selection; no media permission or background photo access.
+    private void openBubblesDocumentPicker(boolean historyJson) {
+        // Explicit Android SAF selection; no background access to account data.
+        // JSON and image picks share the same verified WebView callback.
         Intent picker = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         picker.addCategory(Intent.CATEGORY_OPENABLE);
-        picker.setType("image/*");
+        if (historyJson) {
+            picker.setType("*/*");
+            picker.putExtra(Intent.EXTRA_MIME_TYPES,
+                    new String[]{"application/json", "text/plain", "application/octet-stream"});
+        } else picker.setType("image/*");
         picker.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         try { startActivityForResult(picker, IMAGE_REQUEST); }
         catch (RuntimeException error) {
             BubblesService.completeImagePicker(null);
-            if (state != null) state.setText("Android could not open the picture selector.");
+            if (state != null) state.setText(historyJson
+                    ? "Android could not open the JSON history selector."
+                    : "Android could not open the picture selector.");
         }
     }
     private void handleVoiceCapture(String action, int seconds, int duration) {
