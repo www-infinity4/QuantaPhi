@@ -314,7 +314,7 @@ if(!nativeOverlay&&!embedded){
  // Website and APK share one message/options scroll owner and a reachable composer.
  panel.insertBefore(chatScroll,conversation);
  chatScroll.append(ownerMode,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,tools);
- composer.prepend(status);
+ composer.insertBefore(status,input);
 }
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
