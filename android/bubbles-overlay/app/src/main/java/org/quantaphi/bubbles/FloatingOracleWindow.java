@@ -242,6 +242,9 @@ final class FloatingOracleWindow {
             settings.setAllowContentAccess(false);
             settings.setJavaScriptCanOpenWindowsAutomatically(false);
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
+            // Always load the latest first-party chat UI after an APK update.
+            // Pairing tokens remain in isolated WebView storage; only HTTP cache is bypassed.
+            settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
             website.setWebChromeClient(new WebChromeClient()); // no microphone or camera grants
             website.setWebViewClient(new WebViewClient() {
                 @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
