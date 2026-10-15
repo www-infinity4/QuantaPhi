@@ -272,14 +272,18 @@ const pairingCard=create('section','ba-pairing-card');
  panel.append(header,status,ownerMode,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
 if(nativeOverlay){
  // Owner pairing uses the same chat composer, never a separate paste form.
- ownerMode.textContent='Robot Brain not linked · paste your owner code in the message box and Send';
+ ownerMode.textContent='Robot Brain not linked';
  input.setAttribute('autocomplete','off');
  input.setAttribute('autocapitalize','off');
  input.setAttribute('autocorrect','off');
  input.spellcheck=false;
  nativeProviderRow=create('div','ba-native-provider');
  nativeProviderRow.append(gptConnect,gptStatus);
- panel.insertBefore(nativeProviderRow,conversation);
+ tools.insertBefore(nativeProviderRow,summary.nextSibling);
+ tools.append(privateLabel);
+ summary.textContent='⋯';summary.setAttribute('aria-label','Bubbles options');
+ // Keep options collapsible and the message composer at the bottom.
+ panel.insertBefore(tools,composer);
 }
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
@@ -370,7 +374,7 @@ function display(text,who,greeting=false){
   bubble.append(value.slice(cursor));
  }
  line.append(bubble);
- if(who!=='you'&&!greeting){
+ if(who!=='you'&&!greeting&&!nativeOverlay){
   const row=create('div','ba-message-actions');
   const remember=create('button','ba-miniaction','Save note');remember.type='button';
   remember.addEventListener('click',()=>{
@@ -390,7 +394,13 @@ function display(text,who,greeting=false){
    });
   row.append(remember,task,say);line.append(row);
  }
- conversation.append(line);conversation.scrollTop=conversation.scrollHeight;
+ const wasNearBottom=conversation.scrollHeight-conversation.scrollTop-conversation.clientHeight<96;
+ conversation.append(line);
+ // New replies follow the bottom; reading older messages doesn't jump away.
+ if(wasNearBottom||who==='you'||greeting){
+  conversation.scrollTop=conversation.scrollHeight;
+  if(typeof requestAnimationFrame==='function')requestAnimationFrame(()=>{conversation.scrollTop=conversation.scrollHeight;});
+ }
 }
 for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
 // Native WebView and Chrome use the same first-party UI but have independent
