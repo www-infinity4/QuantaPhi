@@ -281,7 +281,7 @@ final class FloatingOracleWindow {
                 }
             });
             page.addView(website, new LinearLayout.LayoutParams(-1, 0, 1));
-            website.loadUrl(SITE_URL + "&v=20-single-chat");
+            website.loadUrl(SITE_URL + "&v=21-pairing");
         } catch (RuntimeException error) {
             // WebView might be unavailable or outdated; native capture and chat work.
             website = null;
