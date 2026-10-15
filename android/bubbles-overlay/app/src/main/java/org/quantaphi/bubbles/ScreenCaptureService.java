@@ -149,7 +149,7 @@ public final class ScreenCaptureService extends Service {
             .putString("capture_type", type).putString("capture_state", "Saving " + completed.getName()
                 + " to phone library…").apply();
         mediaExport.execute(() -> {
-            final String outcome;
+            String outcome;
             try {
                 android.net.Uri saved = CapturePublisher.publish(this, completed, type);
                 String library = type.startsWith("video/") ? "Movies" : "Pictures";
