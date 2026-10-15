@@ -550,6 +550,28 @@ public final class BubblesService extends Service {
         VoiceCaptureCommands.Command command = VoiceCaptureCommands.parse(addressed);
         if (command != null) {
             switch (command.action) {
+                case "capture_status": {
+                    android.content.SharedPreferences capturePrefs = BrainNotes.prefs(this);
+                    boolean screenActive = capturePrefs.getBoolean("capture_active", false);
+                    boolean screenStarted = capturePrefs.getBoolean("capture_recording", false);
+                    boolean soundActive = recording.active();
+                    String screenState = capturePrefs.getString("capture_state", "");
+                    String audioState = capturePrefs.getString("audio_state", "");
+                    String result = screenActive ? (screenStarted ? "Screen capture is ON. " : "Screen capture is starting. ")
+                        : soundActive ? "Microphone recording is ON. " : "No recording is active. ";
+                    // Saved/failed means the native MediaStore exporter reported
+                    // a result, not that Bubbles guesses where the file went.
+                    if (!screenActive && !soundActive) {
+                        if (screenState.startsWith("Saved ") || screenState.startsWith("Gallery export failed"))
+                            result += screenState;
+                        else if (audioState.startsWith("Saved ") || audioState.startsWith("Phone media save failed"))
+                            result += audioState;
+                        else if (screenState.contains("approval") || screenState.contains("requested"))
+                            result += "Screen capture is waiting for your Android approval.";
+                    }
+                    speak(result);
+                    break;
+                }
                 case "sound_start":
                     if (recording.active()) {
                         BrainNotes.prefs(this).edit().putString("audio_state", "Microphone is already recording").apply();
