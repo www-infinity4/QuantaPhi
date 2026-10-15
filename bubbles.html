@@ -7,7 +7,7 @@
   <title>Bubbles AI — Voice Assistant for Research and Tasks | QuantaPhi</title>
   <meta name="description" content="Program your own Bubbles AI specialist and speak with your floating voice assistant.">
   <link rel="canonical" href="https://quantaphi.org/bubbles.html">
-  <link rel="stylesheet" href="/bubbles-ai.css?v=20261014-one-brain-v11">
+  <link rel="stylesheet" href="/bubbles-ai.css?v=20261014-one-brain-v12">
   <style>
     html{min-height:100%;background:#f7f4f0}
     body{margin:0;min-height:100dvh;padding:15px 15px 100px;box-sizing:border-box;background:#f7f4f0;font:16px/1.55 system-ui,sans-serif;color:#312722}
@@ -31,7 +31,14 @@
     html.bubbles-native-overlay .bubbles-video,
     html.bubbles-native-overlay .bubbles-production,
     html.bubbles-native-overlay .bubbles-page>p{display:none!important}
-    html.bubbles-native-overlay #robotBrainOwner{position:relative;z-index:50;max-height:26dvh;overflow:auto}
+    /* Owner authorization remains available to the scripts, but its separate
+       desktop dashboard must not paint across the Android chat window. */
+    html.bubbles-native-overlay #robotBrainOwner{display:none!important}
+    html.bubbles-native-overlay #bubblesAICard{height:0!important;overflow:hidden!important;margin:0!important}
+    html.bubbles-native-overlay .ba-panel{z-index:2147483640!important;overflow:hidden!important}
+    html.bubbles-native-overlay .ba-panel .ba-messages{min-height:0!important;overflow-y:auto!important}
+    html.bubbles-native-overlay .ba-panel .ba-composer{flex-shrink:0!important}
+    html.bubbles-native-overlay .ba-panel .ba-tools{flex-shrink:0!important}
     html.bubbles-native-overlay .ba-launcher{display:none!important}
     html.bubbles-native-overlay .ba-panel{
       position:fixed!important;inset:0!important;width:100%!important;height:100dvh!important;
