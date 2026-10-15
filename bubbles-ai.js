@@ -397,7 +397,10 @@ function display(text,who,greeting=false){
  const wasNearBottom=conversation.scrollHeight-conversation.scrollTop-conversation.clientHeight<96;
  conversation.append(line);
  // Do not steal scroll position while reading history; follow new conversation.
- if(wasNearBottom||who==='you'||greeting)requestAnimationFrame(()=>{conversation.scrollTop=conversation.scrollHeight;});
+ if(wasNearBottom||who==='you'||greeting){
+  conversation.scrollTop=conversation.scrollHeight;
+  if(typeof requestAnimationFrame==='function')requestAnimationFrame(()=>{conversation.scrollTop=conversation.scrollHeight;});
+ }
 }
 for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
 // Native WebView and Chrome use the same first-party UI but have independent
