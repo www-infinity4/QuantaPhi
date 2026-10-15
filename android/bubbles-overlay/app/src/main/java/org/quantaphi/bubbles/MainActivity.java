@@ -30,6 +30,7 @@ public final class MainActivity extends Activity {
     private final android.os.Handler ui = new android.os.Handler(android.os.Looper.getMainLooper());
     private Runnable refreshStatus;
     private Runnable refreshScreenPermission;
+    private Runnable refreshChatGPTStatus;
     private final java.util.concurrent.ExecutorService mediaWork = java.util.concurrent.Executors.newSingleThreadExecutor();
     private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64;
     private boolean screenshot;
@@ -81,6 +82,14 @@ public final class MainActivity extends Activity {
             state.setText("In Accessibility settings, enable Brain workflow learning for Bubbles Preview. Android asks you to approve it once.");
         });
         layout.addView(screenAccess);
+        // On-demand Android Accessibility stays active, but screen text only
+        // travels with a conversation when the owner explicitly opts in.
+        CheckBox screenContext = new CheckBox(this);
+        screenContext.setText("Use visible screen text to understand my conversation (optional)");
+        screenContext.setChecked(BrainNotes.prefs(this).getBoolean("screen_context_on_chat", false));
+        screenContext.setOnCheckedChangeListener((button, enabled) ->
+                BrainNotes.prefs(this).edit().putBoolean("screen_context_on_chat", enabled).apply());
+        layout.addView(screenContext);
 
         Button chat = new Button(this);
         chat.setText("Open Oracle chat");
@@ -145,19 +154,30 @@ public final class MainActivity extends Activity {
         Button chatgptLogin = new Button(this);
         chatgptLogin.setText("Continue with ChatGPT");
         chatgptLogin.setOnClickListener(v -> {
+            if (ChatGPTSignIn.hasPlan(this)) { refreshChatGPTStatus.run(); return; }
             chatgptLogin.setEnabled(false);
             accountState.setText("Opening ChatGPT in your browser for permission…");
             ChatGPTSignIn.start(this, outcome -> {
                 chatgptLogin.setEnabled(true);
+                refreshChatGPTStatus.run();
                 accountState.setText(ChatGPTSignIn.status(this) + "\\n" + outcome);
             });
         });
         layout.addView(chatgptLogin);
         Button chatgptLogout = new Button(this);
         chatgptLogout.setText("Disconnect ChatGPT");
-        chatgptLogout.setOnClickListener(v -> ChatGPTSignIn.signOut(this, outcome ->
-                accountState.setText(ChatGPTSignIn.status(this) + "\\n" + outcome)));
+        chatgptLogout.setOnClickListener(v -> ChatGPTSignIn.signOut(this, outcome -> {
+            refreshChatGPTStatus.run();
+            accountState.setText(ChatGPTSignIn.status(this) + "\\n" + outcome);
+        }));
         layout.addView(chatgptLogout);
+        refreshChatGPTStatus = () -> {
+            boolean connected = ChatGPTSignIn.hasPlan(this);
+            chatgptLogin.setVisibility(connected ? View.GONE : View.VISIBLE);
+            chatgptLogout.setVisibility(connected ? View.VISIBLE : View.GONE);
+            accountState.setText(ChatGPTSignIn.status(this));
+        };
+        refreshChatGPTStatus.run();
         TextView chatgptNotice = new TextView(this);
         chatgptNotice.setText("Optional. This connects ChatGPT plan inference only after your approval. "
                 + "Your ChatGPT conversations, memories and ChatGPT voice are not shared. "
@@ -433,6 +453,7 @@ public final class MainActivity extends Activity {
             ChatGPTSignIn.start(this,result -> {if(state!=null)
                 state.setText(ChatGPTSignIn.status(this)+"\n"+result);});
         }
+        if (refreshChatGPTStatus != null) refreshChatGPTStatus.run();
         if (refreshScreenPermission != null) refreshScreenPermission.run();
         if (refreshStatus != null) { ui.removeCallbacks(refreshStatus); refreshStatus.run(); }
         String voiceCapture = getIntent().getStringExtra("voice_capture");
