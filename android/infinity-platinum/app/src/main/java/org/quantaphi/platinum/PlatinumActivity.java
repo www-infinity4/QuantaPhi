@@ -87,7 +87,7 @@ public final class PlatinumActivity extends Activity {
   address.setTextSize(14);address.setInputType(android.text.InputType.TYPE_CLASS_TEXT|android.text.InputType.TYPE_TEXT_VARIATION_URI);
   address.setImeOptions(EditorInfo.IME_ACTION_GO);address.setHint("Website or search…");address.setSelectAllOnFocus(true);
   address.setBackgroundTintList(android.content.res.ColorStateList.valueOf(STEEL));
-  address.setOnEditorActionListener((v,action,event)->{if(action==EditorInfo.IME_ACTION_GO){navigate(address.getText().toString());return true}return false;});
+  address.setOnEditorActionListener((v,action,event)->{if(action==EditorInfo.IME_ACTION_GO){navigate(address.getText().toString());return true;}return false;});
   navigation.addView(address,new LinearLayout.LayoutParams(0,px(45),1));
   Button go=button("Go");go.setOnClickListener(v->navigate(address.getText().toString()));navigation.addView(go);
   shell.addView(navigation);
