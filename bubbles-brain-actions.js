@@ -23,7 +23,7 @@ function classify(utterance){
  // "Contact Robot Brain and ask it to give Bubbles the missing abilities"
  // is an explicit engineering instruction, not a verified permission grant.
  // Only an authenticated owner session can create the work ticket.
- const repairMissingTools=/\\b(?:contact|talk to|speak to|communicate with|connect to|reach out to|ask|tell)\\b.{0,90}\\b(?:robot\\s*brain|brain|bots?)\\b.{0,180}\\b(?:tell|ask|give|provide|grant|install|wire|build|fix|repair|add|restore|enable)\\b.{0,150}\\b(?:tools?|abilities|capabilit(?:y|ies)|connections?|integrations?|permissions?|access|functions?|features?)\\b/i;
+ const repairMissingTools=/\b(?:contact|talk to|speak to|communicate with|connect to|reach out to|ask|tell)\b.{0,90}\b(?:robot\s*brain|brain|bots?)\b.{0,180}\b(?:tell|ask|give|provide|grant|install|wire|build|fix|repair|add|restore|enable)\b.{0,150}\b(?:tools?|abilities|capabilit(?:y|ies)|connections?|integrations?|permissions?|access|functions?|features?)\b/i;
  if(repairMissingTools.test(text))return 'queue';
  const dispatch=/\b(?:send|assign|instruct|dispatch|queue|start|launch|submit)\b.{0,100}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther|jobs?|tasks?)\b/i;
  const dispatchByName=/\b(?:tell|ask|have|give)\b.{0,70}\b(?:bots?|robot\s*brain|brain|agents?|pink\s*panther)\b.{0,90}\b(?:to\s+)?(?:fix|repair|build|create|start|run|update|upgrade|investigate|verify|implement)\b/i;
