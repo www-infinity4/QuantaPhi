@@ -167,6 +167,9 @@ const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('a
 const header=create('header','ba-header');const name=create('strong','',config.alias||'Bubbles');const close=create('button','ba-close','×');close.type='button';close.setAttribute('aria-label','Close Bubbles');
 header.append(name,close);
 const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then speak naturally.');
+const ownerMode=create('small','ba-owner-status',embedded?'Independent visitor assistant':'Owner tools: checking Unified Wallet…');
+ownerMode.hidden=embedded;
+ownerMode.setAttribute('role','status');
 const memoryHint=create('small','ba-memory-status',embedded?'Conversation stays in this embed.':'Shared memory waits for your verified owner connection.');memoryHint.setAttribute('role','status');
 status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
@@ -215,7 +218,7 @@ for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi
  const link=create('a','ba-tool-link',label);link.href=path;link.rel='noopener';toolRail.append(link);
 }
 tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
-panel.append(header,status,memoryHint,conversation,composer,tools);
+panel.append(header,status,ownerMode,memoryHint,conversation,composer,tools);
 if(nativeOverlay){
  // Native OAuth and model inference live on the device, not in this WebView.
  // Expose the entry point above conversation; don't bury it in hidden settings.
@@ -754,8 +757,9 @@ async function verifiedOwnerHeaders(){
  if(ownerReady&&ownerHeaders)return ownerHeaders;
  if(!window.QuantaBrainOwner?.ready)throw Error('Robot Brain owner verification is unavailable on this page.');
  const headers=await Promise.race([window.QuantaBrainOwner.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
- if(!headers?.Authorization)throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.');
+ if(!headers?.Authorization){ownerMode.textContent='Owner tools: not yet verified · say “connect owner tools” for details.';throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.')}
  ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
+ ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
  return headers;
 }
@@ -765,6 +769,7 @@ async function connectOwner(){
  const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
+ ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  persistChat();void sharedMemory();
  if(nativeOverlay){voiceLeaseWanted=true;void sharedVoice(true);}
  workStatus.textContent='Robot Brain connected. Say “Bubbles, fix the video generator” or “Report the top ten bot jobs.”';
