@@ -18,7 +18,7 @@ test('owner gate loads before the Brain scripts and never deletes the Brain on a
 
 test('owner gate resolves only for a key the brain clock accepts',async()=>{
  const calls=[];const window={};const good=['Bearer','good-owner-key-0123'].join(' ');
- const ctx={window,AbortSignal,fetch:async(url,opts)=>{calls.push(opts.headers.Authorization);return {ok:opts.headers.Authorization===good,status:opts.headers.Authorization===good?200:404}}};
+ const ctx={window,AbortSignal,AbortController,setTimeout,clearTimeout,fetch:async(url,opts)=>{calls.push(opts.headers.Authorization);return {ok:opts.headers.Authorization===good,status:opts.headers.Authorization===good?200:404}}};
  require('node:vm').runInNewContext(gate,ctx);
  assert.equal((await window.QuantaBrainOwner.verify('short')).state,'rejected');
  assert.equal((await window.QuantaBrainOwner.verify('wrong-owner-key-0123')).state,'rejected');
@@ -46,7 +46,7 @@ test('every bot gets a toolbox and site-care crews release structured jobs witho
 test('Unified Wallet login uses a server-matched owner session, not a visible balance or a copied owner key',async()=>{
  const calls=[],walletToken='sq_'+'a'.repeat(40),brainToken='rb_'+'b'.repeat(64);
  const window={QuantaCloudConnection:{ready:Promise.resolve(),resolveDeviceToken:async()=>walletToken}};
- const context={window,document:{title:'QuantaPhi',getElementById:()=>null},AbortSignal,
+ const context={window,document:{title:'QuantaPhi',getElementById:()=>null},AbortSignal,AbortController,setTimeout,clearTimeout,
   fetch:async(url,options)=>{
    calls.push({url,method:options.method,auth:options.headers.Authorization});
    if(url.endsWith('/owner/session'))return {ok:true,status:200,json:async()=>({ok:true,token:brainToken,expiresAt:Date.now()+600000})};
@@ -61,4 +61,25 @@ test('Unified Wallet login uses a server-matched owner session, not a visible ba
  assert.doesNotMatch(gate,/localStorage\.setItem\([^\n]*walletToken/);
  assert.match(gate,/result\.state==='no-wallet'\|\|result\.state==='not-linked'/,'logout must lock the Brain');
  assert.match(gate,/verifiedHeaders\.Authorization=result\.headers\.Authorization/,'refresh keeps existing Brain components authenticated');
+});
+
+test('one-time code redemption works without AbortSignal.timeout on older Android WebViews',async()=>{
+ const code='a1'.repeat(32),token='rd_'+'b'.repeat(64),calls=[];
+ const window={};
+ require('node:vm').runInNewContext(gate,{
+  window,AbortSignal:{},AbortController,setTimeout,clearTimeout,
+  fetch:async(url,options)=>{
+   calls.push({url,options});
+   assert.ok(options.signal instanceof AbortSignal);
+   if(url.endsWith('/health'))return {ok:false,status:404};
+   assert.ok(url.endsWith('/owner/pair/redeem'));
+   assert.deepEqual(JSON.parse(options.body),{code});
+   return {ok:true,status:200,json:async()=>({ok:true,token})};
+  }
+ });
+ const result=await window.QuantaBrainOwner.verify(code);
+ assert.equal(result.state,'verified');
+ assert.equal(result.headers.Authorization,'Bearer '+token);
+ assert.equal(result.pairedToken,token);
+ assert.equal(calls.length,2);
 });
