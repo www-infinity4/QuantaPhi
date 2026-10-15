@@ -124,7 +124,7 @@ export default{
      const headers=new Headers(request.headers);
      headers.delete('cookie');headers.delete('authorization');
      const stub=env.PLATINUM_LINES.get(env.PLATINUM_LINES.idFromName(alias));
-     const req=new Request(upstream,{method:request.method,headers,body:request.method==='POST'?request.body:undefined});
+     const req=new Request(upstream,{method:request.method,headers,body:request.method==='POST'?request.body:undefined,duplex:'half'});
      if(action==='register'){
       // Identity labels are derived from the URL, never trusted from a request body.
       try{const data=await body(req);response=await stub.fetch(new Request(upstream,{method:'POST',headers,body:JSON.stringify({...data,alias})}));}
