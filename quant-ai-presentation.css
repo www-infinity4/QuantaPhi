@@ -1,0 +1,79 @@
+@import url("/oracle-octaves.css");
+
+.oracle-octaves-page {
+  background: #ffffff;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.character {
+  width: 120px;
+  height: 120px;
+  background: #e0e0e0;
+  margin: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.share-collect button,
+.navigation button {
+  min-height: 44px;
+  padding: 0 16px;
+  margin: 5px;
+  border: 2px solid #555;
+  border-radius: 8px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+.share-collect button:focus-visible,
+.navigation button:focus-visible {
+  outline: 3px solid #0066ff;
+}
+
+.commerce input {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.platinum {
+  margin: 15px 0;
+  padding: 10px;
+  border: 2px dashed #999;
+  border-radius: 8px;
+}
+
+.scene-card {
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  padding: 16px;
+  margin-top: 20px;
+  background: #fafafa;
+}
+.scene-action {
+  margin: 0;
+  font-size: 1.2em;
+}
+.scene-lyric {
+  margin: 8px 0 0;
+  color: #555;
+}
+
+.visual-beat {
+  margin: 10px 0;
+  padding: 8px;
+  background: #dde;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+.quants ul,
+.inventory ul {
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 20px;
+}

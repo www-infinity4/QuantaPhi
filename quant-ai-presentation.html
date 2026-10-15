@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quant AI – Automated Banking & Business Agent</title>
+  <link rel="stylesheet" href="quant-ai-presentation.css">
+</head>
+<body class="oracle-octaves-page">
+  <section id="quantAiPresentation" class="oracle-octaves-page">
+    <header>
+      <h1>Quant AI – Automated Banking & Business Agent</h1>
+    </header>
+
+    <!-- Character blocks -->
+    <div id="leadHumanoid" class="character lead">Humanoid Lead</div>
+    <div id="partnerCompact" class="character partner">Compact Partner</div>
+    <div id="bubblesSpecialists" class="character bubbles">Bubbles Specialists</div>
+
+    <!-- Share / Collect -->
+    <div class="share-collect">
+      <button id="shareBtn">Share</button>
+      <button id="collectBtn">Collect</button>
+    </div>
+
+    <!-- Commerce fields -->
+    <div class="commerce">
+      <input id="price" placeholder="Price" />
+      <input id="quantity" placeholder="Quantity" />
+    </div>
+
+    <!-- Infinity Platinum concept -->
+    <div id="platinumConcept" class="platinum">Infinity Platinum Concept</div>
+
+    <!-- Distinct individual quants -->
+    <section id="quantsList" class="quants">
+      <h2>Individual Quants</h2>
+      <ul>
+        <li>Quant Alpha</li>
+        <li>Quant Beta</li>
+        <li>Quant Gamma</li>
+      </ul>
+    </section>
+
+    <!-- New inventory proposals -->
+    <section id="inventoryProposals" class="inventory">
+      <h2>New Inventory Proposals</h2>
+      <ul>
+        <li>Proposal A</li>
+        <li>Proposal B</li>
+      </ul>
+    </section>
+
+    <!-- Visual beat placeholders -->
+    <div class="visual-beat" data-beat="REM">R.E.M. visual beat placeholder</div>
+    <div class="visual-beat" data-beat="Kris">Kris visual beat placeholder</div>
+
+    <!-- Scene container -->
+    <div id="sceneContainer" class="scene-container"></div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+      <button id="prevBtn">← Prev</button>
+      <button id="nextBtn">Next →</button>
+    </div>
+  </section>
+
+  <script src="quant-ai-presentation.js"></script>
+  <script>
+    const container = document.getElementById('sceneContainer');
+    if (window.quantAiPresentation) {
+      window.quantAiPresentation.init(container);
+    }
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      window.quantAiPresentation.prev();
+    });
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      window.quantAiPresentation.next();
+    });
+  </script>
+</body>
+</html>
