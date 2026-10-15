@@ -16,7 +16,7 @@ test('Android debug build uses separate, installable package to avoid old signat
  assert.match(workflow,/publish-preview:/);
  assert.match(workflow,/apksigner/);
  assert.match(workflow,/bubbles-preview5-signing-v1/);
- assert.match(workflow,/preview-debug\\.keystore/);
- assert.match(gradle,/signingConfig signingConfigs\\.preview/);
+ assert.match(workflow,/preview-debug\.keystore/);
+ assert.match(gradle,/signingConfig signingConfigs\.preview/);
  assert.match(workflow,/app\/build\/outputs\/apk\/debug\/app-debug\.apk/);
 });
