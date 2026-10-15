@@ -923,21 +923,21 @@ window.QuantaBubbles={
  memoryStatus:()=>({connected:ownerReady,pending:memoryPending.size,error:memoryLastError}),
  // Called only by Bubbles' Android WebView after verifying the first-party
  // HTTPS URL. Reuse real site chat, real owner verification and job receipts.
- sendNativeText:(message,evidence='')=>{
+ sendNativeText:(message)=>{
   if(!nativeOverlay||busy)return false;
   const value=String(message||'').slice(0,1800).trim();
   if(!value)return false;
   // Typed queries are ordinary messages, not calls to Android TTS.
   nativeSpeechPending=false;
-  void sendMessage(value,false,evidence);
+  void sendMessage(value,false);
   return true;
  },
- sendNativeSpeech:(message,evidence='')=>{
+ sendNativeSpeech:(message)=>{
   if(!nativeOverlay||busy)return false;
   const value=String(message||'').slice(0,1800).trim();
   if(!value)return false;
   nativeSpeechReply='';nativeSpeechPending=true;
-  void sendMessage(value,true,evidence);
+  void sendMessage(value,true);
   return true;
  },
  drainNativeReply:()=>{
