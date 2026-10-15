@@ -695,6 +695,18 @@ public final class BubblesService extends Service {
     }
 
     private void handleTypedRequest(String text) {
+        // A pasted pairing secret is NOT a conversation, a voice transcript,
+        // an error log or an AI prompt. It goes only to the verified WebView.
+        String candidate = text.trim().replaceFirst(
+            "(?i)^(?:owner|pairing|robot brain)(?:\\s+pairing)?\\s+code\\s*[:=]\\s*", "");
+        if (candidate.replaceAll("[\\s-]", "").matches("(?i)[0-9a-f]{64}")
+                || text.matches("(?is)^[0-9a-f\\s-]{48,180}$")) {
+            if (oracleWindow == null || !oracleWindow.sendTyped(text)) {
+                BrainNotes.prefs(this).edit().putString("last_error",
+                    "Pairing code waits for the connected Bubbles website chat. No secret sent to AI.").apply();
+            }
+            return;
+        }
         BrainNotes.prefs(this).edit().putString("last_heard", text).apply();
         VoiceCaptureCommands.Command capture = VoiceCaptureCommands.parse(text);
         if (capture != null) {
