@@ -15,7 +15,13 @@ function say(s,error=false){$('app-message').textContent=s;$('app-message').clas
 function link(alias){return location.origin+'/phone/'+alias}
 function targetFromInput(raw){
  let s=String(raw||'').trim().toLowerCase();
- if(/^\+?[\d ().-]{7,30}$/.test(s))return {kind:'pstn'};
+
+ if(/^\+?[\d ().-]{7,30}$/.test(s)){
+  const digits=s.replace(/\D/g,'');
+  const mapped=getJson(FORWARDS,[]).find(x=>String(x.number).replace(/\D/g,'')===digits);
+  // This is the user's PRIVATE dial book, never a claim of public telephone-number ownership.
+  return mapped&&validAlias(mapped.alias)?{kind:'web',alias:mapped.alias,privateNumber:s}:{kind:'pstn'};
+ }
  if(/^https?:\/\//.test(s)){
   try{const u=new URL(s);if(u.hostname!=='quantaphi.org'&&u.hostname!=='www.quantaphi.org')return null;
    const match=u.pathname.match(/^\/phone\/([a-z0-9-]+)\/?$/);s=match?.[1]||'';}catch{return null}
@@ -239,6 +245,7 @@ $('legacy-form').addEventListener('submit',e=>{
 });
 const path=location.pathname.match(/^\/phone\/([a-z0-9-]+)\/?$/);
 draftInit();if(path){$('dial').value=path[1];$('dial').dispatchEvent(new Event('input'))}
+else{const phone=new URL(location.href).searchParams.get('dial');if(phone&&phone.length<=30){$('dial').value=phone;$('dial').dispatchEvent(new Event('input'))}}
 if(me&&(!validAlias(me.alias)||!/^[a-f0-9]{64}$/.test(me.secret)))me=null;
 updateIdentity();legacyRender();checkHealth();startWatch();
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&me)watch()});
