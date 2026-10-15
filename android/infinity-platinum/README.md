@@ -14,7 +14,7 @@ must be tested on-device.
   access is disabled. Mixed HTTPS/HTTP subresources are blocked. Plain HTTP
   navigation is allowed for explicitly selected legacy sites, with an
   insecure-site indicator.
-- Website start page at `https://quantaphi.org/platinum/` with visual
+- Website start page at `https://quantaphi.org/platinum/index.html` with visual
   saved tiles, editable titles/links/notes, optional manually picked previews,
   same-device Resume and Code Phi / Create Phi project collection.
 - Collect and Build from any visited website open the first-party Platinum
