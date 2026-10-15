@@ -31,7 +31,7 @@ test('Site is the single assistant for native-voice commands and typed chat', ()
   assert.match(service, /void speakWebsiteReply\(String response\)/);
   assert.match(site, /nativeOverlay=!embedded&&params\.get\('nativeOverlay'\)==='1'/);
   assert.match(site, /if\(!nativeOverlay\|\|busy\)return false/);
-  assert.match(site, /nativeSpeechPending=true/);
+  assert.match(site, /nativeSpeechPending=fromVoice/);
   assert.match(site, /if\(fromVoice&&!nativeOverlay&&!await sharedVoice\(false\)\)/);
   assert.match(site, /if\(nativeSpeechPending\)nativeSpeechReply=answer/);
   assert.match(site, /mic\.hidden=true/);
@@ -62,8 +62,8 @@ test('Voice notes work without a manual notes form', () => {
 });
 test('Preview 5 installs separately from previous debug signatures', () => {
   const gradle=source('android/bubbles-overlay/app/build.gradle');
-  assert.match(gradle,/versionCode 21/);
-  assert.match(gradle,/versionName '0\.21\.0'/);
+  assert.match(gradle,/versionCode 22/);
+  assert.match(gradle,/versionName '0\.22\.0'/);
   assert.match(gradle,/applicationIdSuffix '\.preview5'/);
 });
 

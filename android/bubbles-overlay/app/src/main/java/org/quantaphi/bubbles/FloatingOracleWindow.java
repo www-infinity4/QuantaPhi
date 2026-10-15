@@ -11,7 +11,6 @@ import android.webkit.WebChromeClient;
 import org.json.JSONTokener;
 import org.json.JSONObject;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
@@ -20,11 +19,8 @@ import android.os.Looper;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 /**
@@ -47,10 +43,8 @@ final class FloatingOracleWindow {
     private final java.util.concurrent.ExecutorService gptWork=java.util.concurrent.Executors.newSingleThreadExecutor();
     private boolean gptBusy=false;
     private LinearLayout root;
-    private TextView conversation, status, hearing;
-    private ScrollView scroll;
-    private EditText input;
-    private View controls, hearingNative, composerNative;
+    private TextView status;
+    private Button retryButton;
     private WebView website;
     private boolean websiteReady = false;
     private boolean robotOwnerConnected = false;
@@ -58,14 +52,22 @@ final class FloatingOracleWindow {
     private String lastCaptureSnapshot = "";
     // Keep follow-ups in order while the web assistant is loading or busy.
     // One slot silently replaced the first instruction with the second.
-    private final java.util.ArrayDeque<String> pendingSpeech = new java.util.ArrayDeque<>();
-    private final java.util.ArrayDeque<String> pendingTyped = new java.util.ArrayDeque<>();
+    private static final class QueuedMessage {
+        final String text;
+        final String evidence;
+        final String id = java.util.UUID.randomUUID().toString();
+        QueuedMessage(String text) { this(text, ""); }
+        QueuedMessage(String text, String evidence) { this.text = text; this.evidence = evidence; }
+    }
+    private int loadGeneration = 0;
+    private final java.util.ArrayDeque<QueuedMessage> pendingSpeech = new java.util.ArrayDeque<>();
+    private final java.util.ArrayDeque<QueuedMessage> pendingTyped = new java.util.ArrayDeque<>();
     private boolean dispatchInFlight = false, typedDispatchInFlight = false;
     private long speechDispatchAt = 0L, typedDispatchAt = 0L;
     private Button muteButton;
     private static final String SITE_URL = "https://quantaphi.org/bubbles.html?nativeOverlay=1"; // paired through ordinary chat input
     private static final String SITE_HOST = "quantaphi.org";
-    private String lastHistory = "";
+
     private final Runnable update = new Runnable() {
         @Override public void run() {
             if (root == null) return;
@@ -79,23 +81,8 @@ final class FloatingOracleWindow {
                 deliverQueuedText();
                 pollWebsiteReply();
             }
-            String history = OracleChatActivity.renderHistory(service);
-            if (!lastHistory.equals(history)) {
-                boolean followLatest = !scroll.canScrollVertically(1);
-                lastHistory = history;
-                conversation.setText(history);
-                if (followLatest) scroll.post(() -> scroll.fullScroll(View.FOCUS_DOWN));
-            }
             String voice = BrainNotes.prefs(service).getString("voice_state", "starting");
             if (muteButton != null) muteButton.setText("muted".equals(voice) ? "Mic on" : "Mic off");
-            String provider = BrainNotes.prefs(service).getString("ai_provider", "Oracle");
-            status.setText("● " + voice + "   •   " + provider + "   •   Robot Brain: "
-                + (websiteReady && robotOwnerConnected ? "owner linked" : "not linked"));
-            String partial = BrainNotes.prefs(service).getString("last_partial", "");
-            String heard = BrainNotes.prefs(service).getString("last_heard", "");
-            hearing.setText(partial.isEmpty()
-                    ? (heard.isEmpty() ? "Listening. Speak naturally; typing is optional." : "Heard: " + heard)
-                    : "Hearing: " + partial);
             ui.postDelayed(this, 400);
         }
     };
@@ -167,71 +154,17 @@ final class FloatingOracleWindow {
         status = text("● Listening", 13, Color.rgb(51, 112, 85));
         status.setPadding(0, dp(8), 0, dp(5));
         page.addView(status);
-        hearing = text("Listening. Speak naturally; typing is optional.", 13, MUTED);
-        hearing.setMaxLines(3);
-        page.addView(hearing);
-
-        LinearLayout controls = new LinearLayout(service);
-        this.controls = controls;
-        this.hearingNative = hearing;
-        controls.setPadding(0, dp(12), 0, dp(9));
-        Button stop = button("Stop speaking", true);
-        stop.setOnClickListener(v -> service.startService(
-                new Intent(service, BubblesService.class).setAction(BubblesService.ACTION_STOP_SPEAKING)));
-        controls.addView(stop, new LinearLayout.LayoutParams(0, -2, 1));
-        Button resume = button("Listen", false);
-        LinearLayout.LayoutParams rp = new LinearLayout.LayoutParams(0, -2, 1);
-        rp.leftMargin = dp(8);
-        resume.setOnClickListener(v -> service.startService(
-                new Intent(service, BubblesService.class).setAction(BubblesService.ACTION_RESUME)));
-        controls.addView(resume, rp);
-        page.addView(controls);
-
-        scroll = new ScrollView(service);
-        scroll.setFillViewport(true);
-        scroll.setBackground(shape(LIGHT, 16, LINE));
-        conversation = text("Your conversation appears here.", 16, INK);
-        conversation.setPadding(dp(12), dp(12), dp(12), dp(12));
-        conversation.setTextIsSelectable(true);
-        scroll.addView(conversation);
-        page.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
-
-        LinearLayout composer = new LinearLayout(service);
-        this.composerNative = composer;
-        composer.setGravity(Gravity.CENTER_VERTICAL);
-        composer.setPadding(0, dp(10), 0, 0);
-        input = new EditText(service);
-        input.setSingleLine(false);
-        input.setMinLines(1);
-        input.setMaxLines(3);
-        input.setTextColor(INK);
-        input.setHintTextColor(MUTED);
-        input.setTextSize(15);
-        input.setHint("Optional typed message…");
-        input.setBackground(shape(LIGHT, 15, LINE));
-        input.setPadding(dp(12), dp(9), dp(12), dp(9));
-        composer.addView(input, new LinearLayout.LayoutParams(0, -2, 1));
-        Button send = button("Send", true);
-        LinearLayout.LayoutParams sp = new LinearLayout.LayoutParams(-2, -2);
-        sp.leftMargin = dp(8);
-        send.setOnClickListener(v -> {
-            String message = input.getText().toString().trim();
-            if (message.isEmpty()) return;
-            if (message.length() > 1800) {
-                hearing.setText("Please use fewer than 1,800 characters.");
-                return;
+        retryButton = button("Retry website connection", false);
+        retryButton.setOnClickListener(v -> {
+            if (website != null) {
+                showWebsite(false);
+                status.setText("Connecting to QuantaPhi Bubbles… Your queued messages are retained.");
+                website.loadUrl(SITE_URL + "&v=22-single-chat");
             }
-            service.startService(new Intent(service, BubblesService.class)
-                    .setAction(BubblesService.ACTION_TEXT).putExtra("text", message));
-            input.setText("");
-            InputMethodManager keyboard = (InputMethodManager) service.getSystemService(Context.INPUT_METHOD_SERVICE);
-            if (keyboard != null) keyboard.hideSoftInputFromWindow(input.getWindowToken(), 0);
         });
-        composer.addView(send, sp);
-        page.addView(composer);
-        // Prefer the real QuantaPhi Bubbles application: its AI request builder,
-        // owner-wallet authorization, Robot Brain tickets, message actions and
-        // notes are identical to the site. Keep native chat as offline fallback.
+        page.addView(retryButton);
+        // The website owns the only composer and conversation. Never substitute
+        // a second local chat when loading, offline, or owner sync is unavailable.
         try {
             website = new WebView(service);
             website.setVisibility(View.GONE);
@@ -260,6 +193,12 @@ final class FloatingOracleWindow {
                     }
                     return true;
                 }
+                @Override public void onPageStarted(WebView view, String url, android.graphics.Bitmap favicon) {
+                    loadGeneration++;
+                    dispatchInFlight = false;
+                    typedDispatchInFlight = false;
+                    showWebsite(false);
+                }
                 @Override public void onPageFinished(WebView view, String url) {
                     Uri location = Uri.parse(url);
                     if (!"https".equals(location.getScheme()) || !SITE_HOST.equals(location.getHost())
@@ -269,23 +208,23 @@ final class FloatingOracleWindow {
                     }
                     // Old live deployments are not treated as capable. Never send a
                     // work command to a guessed JS endpoint.
-                    view.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.isNativeOverlay)",
-                        result -> showWebsite("true".equals(result)));
+                    pollBridgeReady(view, loadGeneration, 0);
                 }
                 @Override public void onReceivedError(WebView view, WebResourceRequest request,
                                                        WebResourceError error) {
                     if (request.isForMainFrame()) {
                         showWebsite(false);
-                        status.setText("QuantaPhi unavailable · local Oracle chat is still ready");
+                        status.setText("QuantaPhi Bubbles could not load. Check your connection and tap Retry. Your queued messages are retained.");
                     }
                 }
             });
             page.addView(website, new LinearLayout.LayoutParams(-1, 0, 1));
-            website.loadUrl(SITE_URL + "&v=21-pairing");
+            website.loadUrl(SITE_URL + "&v=22-single-chat");
         } catch (RuntimeException error) {
-            // WebView might be unavailable or outdated; native capture and chat work.
+            // Keep the failure visible; never open a different assistant.
             website = null;
-            status.setText("Website chat unavailable · local Oracle chat ready");
+            status.setText("Android WebView could not open Bubbles. Update Android System WebView and reopen Bubbles.");
+            retryButton.setEnabled(false);
         }
 
         int width = Math.min(service.getResources().getDisplayMetrics().widthPixels - dp(24), dp(550));
@@ -300,7 +239,6 @@ final class FloatingOracleWindow {
         try {
             manager.addView(page, params);
             root = page;
-            lastHistory = "";
             ui.post(update);
             return true;
         } catch (RuntimeException ex) {
@@ -308,6 +246,27 @@ final class FloatingOracleWindow {
             return false;
         }
     }
+    private boolean trustedChat(WebView view) {
+        if (view == null || view != website || root == null) return false;
+        Uri location = Uri.parse(String.valueOf(view.getUrl()));
+        return "https".equals(location.getScheme()) && SITE_HOST.equals(location.getHost())
+            && "/bubbles.html".equals(location.getPath());
+    }
+    private void pollBridgeReady(WebView view, int generation, int attempt) {
+        if (generation != loadGeneration || !trustedChat(view)) return;
+        view.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.isNativeOverlay"
+            + " && typeof window.QuantaBubbles.sendNativeSpeech==='function'"
+            + " && typeof window.QuantaBubbles.sendNativeText==='function')", result -> {
+                if (generation != loadGeneration || !trustedChat(view)) return;
+                if ("true".equals(result)) showWebsite(true);
+                else if (attempt < 20) ui.postDelayed(() -> pollBridgeReady(view, generation, attempt + 1), 250);
+                else {
+                    showWebsite(false);
+                    status.setText("Bubbles website loaded but its chat connection is not ready. Tap Retry; queued messages are retained.");
+                }
+            });
+    }
+
     boolean sendSpoken(String text) {
         if (website == null || text == null || text.trim().isEmpty()) return false;
         if (pendingSpeech.size() >= 24) {
@@ -315,7 +274,7 @@ final class FloatingOracleWindow {
             return false;
         }
         // Queue every complete turn. A busy first reply must not erase the next.
-        pendingSpeech.addLast(text.trim().substring(0, Math.min(1800, text.trim().length())));
+        pendingSpeech.addLast(new QueuedMessage(text.trim().substring(0, Math.min(1800, text.trim().length()))));
         if (!websiteReady) status.setText("Connecting to QuantaPhi Bubbles; holding your requests…");
         deliverQueuedSpeech();
         return true;
@@ -325,11 +284,11 @@ final class FloatingOracleWindow {
         websiteReady = ready && root != null && website != null;
         if (!websiteReady) { robotOwnerConnected = false; lastCaptureSnapshot = ""; }
         if (website != null) website.setVisibility(websiteReady ? View.VISIBLE : View.GONE);
-        if (scroll != null) scroll.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
-        if (composerNative != null) composerNative.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
-        if (controls != null) controls.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
-        if (hearingNative != null) hearingNative.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
-        if (status != null) status.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
+        if (retryButton != null) retryButton.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
+        if (status != null) {
+            status.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
+            if (!websiteReady) status.setText("Connecting to QuantaPhi Bubbles… If it does not load, tap Retry.");
+        }
         if (websiteReady) {
             status.setText("● QuantaPhi Bubbles · full website brain, notes & chat");
             if (!pendingSpeech.isEmpty()) deliverQueuedSpeech();
@@ -342,14 +301,17 @@ final class FloatingOracleWindow {
 
     private void deliverQueuedSpeech() {
         if (!websiteReady || website == null || pendingSpeech.isEmpty() || dispatchInFlight) return;
-        final String spoken = pendingSpeech.peekFirst();
+        final QueuedMessage item = pendingSpeech.peekFirst();
+        final String spoken = item.text;
+        final int generation = loadGeneration;
         dispatchInFlight = true;
         speechDispatchAt = android.os.SystemClock.elapsedRealtime();
         // JSON quoting prevents recognized speech from becoming executable JS.
         website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.sendNativeSpeech("
-            + JSONObject.quote(spoken) + "))", result -> {
+            + JSONObject.quote(spoken) + "," + JSONObject.quote(item.id) + "," + JSONObject.quote(item.evidence) + "))", result -> {
+                if (generation != loadGeneration || !trustedChat(website)) return;
                 dispatchInFlight = false;
-                if ("true".equals(result) && spoken.equals(pendingSpeech.peekFirst())) {
+                if ("true".equals(result) && item == pendingSpeech.peekFirst()) {
                     pendingSpeech.pollFirst();
                     if (!pendingSpeech.isEmpty()) ui.post(this::deliverQueuedSpeech);
                 }
@@ -362,20 +324,35 @@ final class FloatingOracleWindow {
             status.setText("Bubbles has 24 unprocessed text requests. Please check the connection.");
             return false;
         }
-        pendingTyped.addLast(text.trim().substring(0, Math.min(1800, text.trim().length())));
+        pendingTyped.addLast(new QueuedMessage(text.trim().substring(0, Math.min(1800, text.trim().length()))));
         deliverQueuedText();
         return true;
     }
+    boolean sendScreenEvidence(String question, String observation, boolean typed) {
+        if (website == null || question == null || question.trim().isEmpty()) return false;
+        java.util.ArrayDeque<QueuedMessage> queue = typed ? pendingTyped : pendingSpeech;
+        if (queue.size() >= 24) return false;
+        String evidence = observation == null || observation.trim().isEmpty()
+            ? "Android returned no readable screen text." : observation;
+        queue.addLast(new QueuedMessage(question.substring(0, Math.min(1800, question.length())),
+            evidence.substring(0, Math.min(1200, evidence.length()))));
+        if (typed) deliverQueuedText(); else deliverQueuedSpeech();
+        return true;
+    }
+
     private void deliverQueuedText() {
         if (!websiteReady || website == null || pendingTyped.isEmpty() || typedDispatchInFlight) return;
-        final String message = pendingTyped.peekFirst();
+        final QueuedMessage item = pendingTyped.peekFirst();
+        final String message = item.text;
+        final int generation = loadGeneration;
         typedDispatchInFlight = true;
         typedDispatchAt = android.os.SystemClock.elapsedRealtime();
         website.evaluateJavascript(
             "Boolean(window.QuantaBubbles && window.QuantaBubbles.sendNativeText("
-                + JSONObject.quote(message) + "))", result -> {
+                + JSONObject.quote(message) + "," + JSONObject.quote(item.id) + "," + JSONObject.quote(item.evidence) + "))", result -> {
+                if (generation != loadGeneration || !trustedChat(website)) return;
                 typedDispatchInFlight = false;
-                if ("true".equals(result) && message.equals(pendingTyped.peekFirst())) {
+                if ("true".equals(result) && item == pendingTyped.peekFirst()) {
                     pendingTyped.pollFirst();
                     if (!pendingTyped.isEmpty()) ui.post(this::deliverQueuedText);
                 }
@@ -395,6 +372,8 @@ final class FloatingOracleWindow {
             captureState.put("screenActive", prefs.getBoolean("capture_active", false));
             captureState.put("screenRecording", prefs.getBoolean("capture_recording", false));
             captureState.put("soundActive", prefs.getBoolean("audio_active", false));
+            String readState = prefs.getString("screen_state", "");
+            captureState.put("readState", readState.substring(0, Math.min(600, readState.length())));
             captureState.put("screenState", prefs.getString("capture_state", "").substring(0,
                 Math.min(160, prefs.getString("capture_state", "").length())));
             captureState.put("soundState", prefs.getString("audio_state", "").substring(0,
@@ -444,6 +423,19 @@ final class FloatingOracleWindow {
                     status.setText("Android capture request failed: " + error.getClass().getSimpleName());
                 }
             });
+        website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.drainNativeScreenRequest()", payload -> {
+            if (!websiteReady || payload == null || "null".equals(payload)) return;
+            try {
+                Object decoded = new JSONTokener(payload).nextValue();
+                if (!(decoded instanceof String) || ((String)decoded).isEmpty()) return;
+                String question = new JSONObject((String)decoded).optString("text", "");
+                if (question.isEmpty() || question.length() > 1800 || !ScreenAwareness.refersToScreen(question)) return;
+                service.startService(new Intent(service, BubblesService.class)
+                    .setAction(BubblesService.ACTION_TEXT).putExtra("text", question));
+            } catch (Exception error) {
+                status.setText("Android could not read the requested screen.");
+            }
+        });
         if(!gptBusy)website.evaluateJavascript(
             "window.QuantaBubbles && window.QuantaBubbles.drainNativeGPTRequest()", payload -> {
                 if(!websiteReady || gptBusy || payload==null || "null".equals(payload))return;
@@ -503,6 +495,7 @@ final class FloatingOracleWindow {
     }
 
     void close() {
+        loadGeneration++;
         ui.removeCallbacks(update);
         gptWork.shutdownNow();
         websiteReady = false;

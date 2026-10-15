@@ -13,14 +13,14 @@ test('tap opens focusable floating conversation directly without a blocked activ
  assert.doesNotMatch(panel,/FLAG_NOT_FOCUSABLE/);
  assert.doesNotMatch(service.slice(service.indexOf('case MotionEvent.ACTION_UP:')),/startActivity\(conversation\)/);
 });
-test('voice input continues; both live partials and full conversation refresh on screen', () => {
- assert.match(panel,/getString\("last_partial"/);
- assert.match(panel,/getString\("last_heard"/);
- assert.match(panel,/OracleChatActivity\.renderHistory\(service\)/);
+test('only the website renders a composer; failures retain queues and offer retry', () => {
+ assert.doesNotMatch(panel,/new EditText|new ScrollView|OracleChatActivity\.renderHistory/);
+ assert.match(panel,/Retry website connection/);
+ assert.match(panel,/website\.loadUrl\(SITE_URL/);
  assert.match(panel,/ui\.postDelayed\(this, 400\)/);
- assert.match(panel,/ACTION_STOP_SPEAKING/);
- assert.match(panel,/ACTION_RESUME/);
- assert.match(panel,/ACTION_TEXT/);
+ assert.match(panel,/pendingSpeech\.addLast/);
+ assert.match(panel,/pendingTyped\.addLast/);
+ assert.match(panel,/setDomStorageEnabled\(true\)/);
 });
 test('overlay detaches and stops refresh when service is destroyed', () => {
  assert.match(service,/oracleWindow\.close\(\)/);

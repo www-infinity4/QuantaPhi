@@ -24,9 +24,26 @@ const nativeOverlay=!embedded&&params.get('nativeOverlay')==='1';
 // Native Android uses the identical QuantaPhi website assistant and owner-wallet
 // gates. It must not copy Chrome cookies or obtain owner rights from a query string.
 let nativeSpeechReply='',nativeSpeechPending=false,noteTaking=false;
+// A retry after a lost evaluateJavascript callback must not re-submit a turn.
+// IDs only: no transcript, owner code or credentials are stored in this set.
+const nativeAcceptedIds=new Set();let nativeBridgeBusy=false;
+function rememberNativeId(id){
+ if(!id)return;
+ nativeAcceptedIds.add(id);
+ if(nativeAcceptedIds.size>256)nativeAcceptedIds.delete(nativeAcceptedIds.values().next().value);
+}
+function startNativeTurn(value,fromVoice,id,evidence=''){
+ nativeBridgeBusy=true;rememberNativeId(id);
+ nativeSpeechPending=fromVoice;
+ if(fromVoice)nativeSpeechReply='';
+ Promise.resolve(sendMessage(value,fromVoice,evidence)).catch(()=>{
+  status.textContent='Bubbles could not complete this message. Check the connection before retrying.';
+ }).finally(()=>{nativeBridgeBusy=false;});
+}
 let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=null;
+const nativeScreenRequests=[];
 const nativeCaptureRequests=[]; // FIFO: Android polls requests; never replace a subsequent stop/start command.
-let nativeRecordingActive=false;
+let nativeRecordingActive=false,nativeScreenStatus='';
 function nativeChatGPT(prompt){
  if(!nativeOverlay||!nativeGPTAvailable)return Promise.reject(Error('Android ChatGPT plan is not connected'));
  if(nativeGPTRequest)return Promise.reject(Error('Another ChatGPT response is in progress'));
@@ -622,6 +639,17 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // A typed message inside the Android floating web chat must reach the
  // native recorder, never a chat model that has no Android capture tools.
  // Speech is already intercepted in BubblesService before reaching this page.
+ // Route explicit screen questions and low-risk controls to Android only.
+ // Returned observations are passed separately and never re-enter this route.
+ const screenQuestion=/^(?:(?:please|bubbles)[, ]+)*(?:read|explain|describe|look at|what(?:'s| is)|tap|click|press|select|scroll)\b/i.test(spoken)
+  && /\b(?:screen|screenshot|page|display|phone|this app|button|link|window)\b/i.test(spoken)
+  || /^(?:please\s+)?(?:tap|click|press|select|scroll)\b/i.test(spoken);
+ if(nativeOverlay&&!fromVoice&&!screenEvidence&&screenQuestion){
+  if(nativeScreenRequests.length>=24){status.textContent='Android screen request queue is full. Check Bubbles.';return;}
+  nativeScreenRequests.push(spoken);input.value='';
+  status.textContent='Screen request passed to Android; waiting for its observation or action result.';
+  return;
+ }
  const nativeDirective=spoken.toLowerCase()
   .replace(/^(?:(?:hey|hi|hello|okay|ok)\s+)?(?:bubbles(?:\s+ai)?)[\s,:]+/,'')
   .replace(/^please\s+/,'')
@@ -1100,6 +1128,8 @@ window.QuantaBubbles={
   const lastReceipt=!nativeRecordingActive&&(/saved|failed|finished|error/i.test(screen+' '+sound))
    ?' · Last result: '+(/saved|failed|finished|error/i.test(screen)?screen:sound):'';
   recorderStatus.textContent=mode+' · '+soundMode+lastReceipt;
+  const readState=String(capture.readState||'').slice(0,600);
+  if(readState&&readState!==nativeScreenStatus){nativeScreenStatus=readState;status.textContent=readState;}
   return true;
  },
  setNativeGPTAvailable:(available)=>{
@@ -1117,6 +1147,11 @@ window.QuantaBubbles={
   return true;
  },
  takeNativeGPTLogin:()=>{if(!nativeOverlay||!nativeGPTSignInRequested)return false;nativeGPTSignInRequested=false;return true;},
+ drainNativeScreenRequest:()=>{
+  if(!nativeOverlay)return '';
+  const request=nativeScreenRequests.shift()||'';
+  return request?JSON.stringify({text:request}):'';
+ },
  drainNativeCaptureRequest:()=>{
   if(!nativeOverlay)return '';
   const request=nativeCaptureRequests.shift()||'';
@@ -1139,21 +1174,24 @@ window.QuantaBubbles={
  memoryStatus:()=>({connected:ownerReady,pending:memoryPending.size,error:memoryLastError}),
  // Called only by Bubbles' Android WebView after verifying the first-party
  // HTTPS URL. Reuse real site chat, real owner verification and job receipts.
- sendNativeText:(message)=>{
+ sendNativeText:(message,messageId='',evidence='')=>{
+  if(nativeOverlay&&messageId&&nativeAcceptedIds.has(messageId))return true;
   if(!nativeOverlay||busy)return false;
+  if(nativeBridgeBusy)return false;
+  if(messageId&&!/^[0-9a-f-]{36}$/i.test(messageId))return false;
   const value=String(message||'').slice(0,1800).trim();
   if(!value)return false;
-  // Typed queries are ordinary messages, not calls to Android TTS.
-  nativeSpeechPending=false;
-  void sendMessage(value,false);
+  startNativeTurn(value,false,messageId,evidence);
   return true;
  },
- sendNativeSpeech:(message)=>{
+ sendNativeSpeech:(message,messageId='',evidence='')=>{
+  if(nativeOverlay&&messageId&&nativeAcceptedIds.has(messageId))return true;
   if(!nativeOverlay||busy)return false;
+  if(nativeBridgeBusy)return false;
+  if(messageId&&!/^[0-9a-f-]{36}$/i.test(messageId))return false;
   const value=String(message||'').slice(0,1800).trim();
   if(!value)return false;
-  nativeSpeechReply='';nativeSpeechPending=true;
-  void sendMessage(value,true);
+  startNativeTurn(value,true,messageId,evidence);
   return true;
  },
  drainNativeReply:()=>{

@@ -1,3 +1,26 @@
+## 0.22.0 — one website conversation
+
+Gemini reviewed the bridge source and the recovered project requirements. This
+build adds UUID-based acknowledgement deduplication within the current page,
+async preflight backpressure, bounded bridge readiness polling and navigation
+generations. Typed screen questions in the website composer route to Android's
+existing Accessibility tools; the observation returns separately from command
+intent. Recorder state, owner-job routing, ChatGPT inference and native voice
+handlers remain connected. Full page/process restart is not an exactly-once
+submission guarantee; work outcomes still require real runner receipts.
+
+
+The floating orb and notification now open the same retained QuantaPhi Bubbles
+WebView. There is no separate Android composer or local transcript interface.
+If the website fails to load, the window shows an error and Retry; ordinary
+messages do not silently switch to a different native AI. Collapsing the window
+keeps the website session and queues alive. The linked website owner session
+continues to supply shared history; embedding a page alone does not pair Chrome
+and Android's separate storage. Existing local history is preserved.
+
+This source change needs a successful signed Android build and real-device
+verification. It does not update an installed APK by itself.
+
 
 ## Bubbles Preview 5 — 0.17.0 (October 15, 2026)
 

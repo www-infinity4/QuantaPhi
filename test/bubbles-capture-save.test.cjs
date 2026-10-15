@@ -90,6 +90,7 @@ test('native-to-web recorder state is authoritative and the stop control is cont
   assert.match(site, /recorderStop\.hidden=!nativeRecordingActive/);
   assert.match(site, /nativeCaptureRequests\.push\('stop recording'\)/);
   assert.match(site, /ownerToolConnected:/);
-  assert.match(floating, /Robot Brain: /);
+  assert.match(floating, /window\.QuantaBubbles\.ownerToolConnected/);
+  assert.match(site, /Owner mode connected · Robot Brain commands active/);
   assert.doesNotMatch(floating, /performGlobalAction/);
 });

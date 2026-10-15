@@ -18,8 +18,8 @@ test('typed text uses same website robot brain and history as spoken text',()=>{
  assert.match(native,/oracleWindow\.sendTyped\(text\)/);
  assert.match(native,/ScreenAwareness\.refersToScreen\(text\)/);
  assert.match(floating,/Boolean\(window\.QuantaBubbles && window\.QuantaBubbles\.sendNativeText/);
- assert.match(site,/sendNativeText:\(message\)=>/);
- assert.match(site,/void sendMessage\(value,false\)/);
+ assert.match(site,/sendNativeText:\(message,messageId='',evidence=''\)=>/);
+ assert.match(site,/startNativeTurn\(value,false,messageId,evidence\)/);
  assert.match(floating,/SITE_URL = "https:\/\/quantaphi.org\/bubbles.html\?nativeOverlay=1"/);
 });
 test('APK-first site pairing is explicit, short-lived, owner authorized and not sent to model',()=>{

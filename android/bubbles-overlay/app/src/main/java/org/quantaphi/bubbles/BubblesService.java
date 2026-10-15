@@ -57,6 +57,9 @@ import java.util.regex.Pattern;
  * Raw audio stays on-device. Only addressed transcripts go to the Oracle API.
  */
 public final class BubblesService extends Service {
+    private static volatile boolean sessionRunning = false;
+    static boolean isSessionRunning() { return sessionRunning; }
+    public static final String ACTION_OPEN_CHAT = "org.quantaphi.bubbles.OPEN_CHAT";
     public static final String ACTION_TEXT = "org.quantaphi.bubbles.TEXT";
     public static final String ACTION_STOP_SPEAKING = "org.quantaphi.bubbles.STOP_SPEAKING";
     public static final String ACTION_REFRESH_VOICE = "org.quantaphi.bubbles.REFRESH_VOICE";
@@ -186,6 +189,15 @@ public final class BubblesService extends Service {
     }
 
     @Override public int onStartCommand(Intent intent, int flags, int startId) {
+        if (intent != null && ACTION_OPEN_CHAT.equals(intent.getAction())) {
+            if (connected && oracleWindow != null) {
+                silenceReply();
+                oracleWindow.show();
+            } else {
+                stopSelf();
+            }
+            return START_NOT_STICKY;
+        }
         if (intent != null && ACTION_STOP_SPEAKING.equals(intent.getAction())) {
             silenceReply();
             return START_NOT_STICKY;
@@ -251,13 +263,14 @@ public final class BubblesService extends Service {
             bubbleLayout.x = 14; bubbleLayout.y = 240;
             manager.addView(orb, bubbleLayout);
             connected = true;
+            sessionRunning = true;
             // Keep the real QuantaPhi website assistant available while the
             // user is in Twitter or another app, even with the panel collapsed.
             // The WebView has its own first-party wallet session; no cookie copying.
             oracleWindow = new FloatingOracleWindow(this, manager);
             if (oracleWindow.show()) oracleWindow.hide();
             else BrainNotes.prefs(this).edit().putString("last_error",
-                "Full website assistant unavailable. Native Oracle fallback is active.").apply();
+                "QuantaPhi Bubbles could not open. No alternate chat was started.").apply();
             pendingAudioRecording = intent != null && ACTION_RECORD.equals(intent.getAction());
             muted = false;
             beginListening();
@@ -645,25 +658,9 @@ public final class BubblesService extends Service {
         // Robot Brain job receipts, notes and typed conversation when available.
         // The floating WebView never receives ChatGPT OAuth credentials.
         if (oracleWindow != null && oracleWindow.sendSpoken(addressed)) return;
-        // Offline/native fallback: voice commands still take notes locally.
-        String noteReply = VoiceNotes.consume(this, addressed);
-        if (noteReply != null) {
-            OracleChatActivity.append(this, "You", addressed);
-            OracleChatActivity.append(this, "Oracle", noteReply);
-            speak(noteReply);
-            return;
-        }
-        if (busy) {queued = addressed;return;}
-        speechSuppressed = false; // A new spoken request can receive spoken output.
-        if (addressed.matches("(?i)^(?:please\\s+)?(?:create|make|submit|queue|start)\\s+(?:a\\s+)?(?:work\\s+)?ticket\\b.*")) {
-            Intent handoff = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://quantaphi.org/bubbles.html")
-                    .buildUpon().appendQueryParameter("workRequest", addressed).build());
-            handoff.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            try { startActivity(handoff); speak("Your work request is ready on QuantaPhi. Use the verified owner submit button. No ticket has been saved yet."); }
-            catch (Exception error) { speak("I could not open QuantaPhi. No ticket was submitted."); }
-            return;
-        }
-        askOracle(addressed);
+        BrainNotes.prefs(this).edit().putString("last_error",
+            "Bubbles website is unavailable or its queue is full. Open the floating chat and retry; no alternate AI was used.").apply();
+        Toast.makeText(this, "Open Bubbles chat to check the website connection.", Toast.LENGTH_LONG).show();
     }
 
 
@@ -719,8 +716,10 @@ public final class BubblesService extends Service {
             handleScreenRequest(text, true);
         } else if (oracleWindow != null && oracleWindow.sendTyped(text)) {
             // The QuantaPhi page owns the authenticated assistant and Brain jobs.
-        } else if (busy) queued = text;
-        else askOracle(text);
+        } else {
+            BrainNotes.prefs(this).edit().putString("last_error",
+                "Bubbles website is unavailable or its queue is full. No alternate AI was used.").apply();
+        }
     }
     private void screenStatus(String response, boolean typed) {
         BrainNotes.prefs(this).edit().putString("last_reply", response)
@@ -744,19 +743,17 @@ public final class BubblesService extends Service {
         String action = BrainLearningService.performRequestedAction(question);
         if (action != null) { screenStatus(action, typed); return; }
         BrainLearningService.inspectNow(observation -> main.post(() -> {
-            if (!connected || muted) return;
+            if (!connected || (!typed && muted)) return;
             if (observation.startsWith("SCREEN_")) {
                 screenStatus(observation.replace("SCREEN_NOT_AVAILABLE:", "The current screen cannot be read.")
                     .replace("SCREEN_ACCESS_OFF", "Screen access was disabled. Re-enable Bubbles in Android Accessibility settings."), typed);
                 return;
             }
-            String enriched = ScreenAwareness.attach(question, observation);
             BrainNotes.prefs(this).edit().putString("screen_state", "Read current screen for the latest request").apply();
-            if (oracleWindow != null && (typed ? oracleWindow.sendTyped(enriched) : oracleWindow.sendSpoken(enriched)))
-                return;
-            if (busy) { queued = enriched; return; }
-            speechSuppressed = typed;
-            askOracle(enriched);
+            // Observation travels as evidence, never as an owner tool instruction.
+            if (oracleWindow != null && oracleWindow.sendScreenEvidence(question, observation, typed)) return;
+            BrainNotes.prefs(this).edit().putString("last_error",
+                "The Bubbles website could not accept this screen request. No alternate AI was used.").apply();
         }));
     }
 
@@ -894,6 +891,7 @@ public final class BubblesService extends Service {
 
     @Override public IBinder onBind(Intent intent) {return null;}
     @Override public void onDestroy() {
+        sessionRunning = false;
         connected=false;muted=true;
         main.removeCallbacksAndMessages(null);
         stopRecognition();

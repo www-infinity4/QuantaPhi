@@ -18,11 +18,12 @@ test('tap interrupts TTS immediately then opens a dedicated Oracle text window',
   assert.match(manifest, /android:name="\.OracleChatActivity" android:exported="false"/);
 });
 
-test('text chat stores bounded local history and typed responses stay silent', () => {
-  assert.match(chat, /new EditText\(this\)/);
+test('legacy entry opens the same website window and preserves prior local history', () => {
+  assert.doesNotMatch(chat, /new EditText|setContentView/);
+  assert.match(chat, /ACTION_OPEN_CHAT/);
   assert.match(chat, /oracle_chat_history/);
   assert.match(chat, /Math\.max\(0, history\.length\(\) - 30\)/);
-  assert.match(chat, /ACTION_TEXT/);
+  assert.match(chat, /BubblesService.isSessionRunning/);
   assert.match(service, /speechSuppressed = true; \/\/ Typed questions/);
   assert.match(service, /OracleChatActivity\.append\(this, "You", userRequest\)/);
   assert.match(service, /OracleChatActivity\.append\(this, "Oracle", result\)/);
@@ -30,7 +31,7 @@ test('text chat stores bounded local history and typed responses stay silent', (
 });
 
 test('preview five installs separately when old package signer changed', () => {
-  assert.match(gradle, /versionCode 21/);
-  assert.match(gradle, /versionName '0\.21\.0'/);
+  assert.match(gradle, /versionCode 22/);
+  assert.match(gradle, /versionName '0\.22\.0'/);
   assert.match(gradle, /applicationIdSuffix '\.preview5'/);
 });
