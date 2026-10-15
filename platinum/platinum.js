@@ -2,6 +2,7 @@
 (function(){
 'use strict';
 const core=window.InfinityPlatinumCore,packageApi=window.PhiProjectPackage;
+const nativePlatinum=/InfinityPlatinumMobile\//i.test(navigator.userAgent||'');
 const $=id=>document.getElementById(id),node=(tag,cls,content)=>{
  const el=document.createElement(tag);if(cls)el.className=cls;if(content!==undefined)el.textContent=content;return el;
 };
@@ -15,6 +16,7 @@ function launch(url,title){
  if(!normalized){say('Blocked: invalid or unsupported URL. Only real HTTP(S) pages can open.');return false}
  core.remember(normalized,title);
  showResume();
+ if(nativePlatinum){location.assign(normalized);return true}
  const a=node('a');a.href=normalized;a.target='_blank';a.rel='noopener noreferrer';
  a.hidden=true;document.body.append(a);a.click();a.remove();
  say('Opening the exact destination in a browser tab: '+normalized);
@@ -93,7 +95,7 @@ function refresh(){
   if(t.note)body.append(node('p','pl-tile-note',t.note));
   const actions=node('div','pl-tile-buttons');
   const open=node('a','pl-open','Open ↗');
-  open.href=t.url;open.target='_blank';open.rel='noopener noreferrer';
+  open.href=t.url;open.target=nativePlatinum?'_self':'_blank';open.rel='noopener noreferrer';
   open.addEventListener('click',()=>{core.remember(t.url,t.title);showResume()});
   actions.append(open);
   button(actions,'Collect',()=>collect(t));
@@ -169,6 +171,34 @@ $('pl-project').addEventListener('click',()=>{
 });
 window.addEventListener('storage',e=>{if([core.KEY,core.RESUME,'quantaphi:asset-projects:v1','quantaphi:active-asset-project:v1'].includes(e.key))refresh()});
 window.addEventListener('phi-projects:changed',projectStatus);
+// Exposed to the native Android shell only after it verifies the HTTPS first-party
+// origin. It is never registered as a JavaScript interface on third-party sites.
+window.InfinityPlatinumApp=Object.freeze({
+ collectFromNative:(raw,title,build=false)=>{
+  if(!nativePlatinum)return {ok:false,reason:'Native Platinum browser required.'};
+  const url=core.validUrl(raw);
+  if(!url)return {ok:false,reason:'Unsafe source URL rejected.'};
+  const item={url,title:String(title||new URL(url).hostname).slice(0,140)};
+  const tile=core.read().find(t=>t.url===url);
+  if(!tile){
+   const saved=core.save(item);
+   if(!saved.ok)return {ok:false,reason:saved.reason};
+  }
+  const receipt=capture({...item,note:'Collected from the Android Platinum browser'});
+  if(!receipt?.ok)return {ok:false,reason:receipt?.reason||'Project collection failed'};
+  if(build){
+   const link=packageApi?.seed?.('code');
+   if(!link)return {ok:false,reason:'Collected locally; Code Phi editor not connected.'};
+   setTimeout(()=>location.assign(link),160);
+  }
+  refresh();
+  return {ok:true,collected:true,builder:build===true,duplicate:receipt.duplicate===true};
+ }
+});
+if(nativePlatinum){
+ const hint=document.querySelector('.pl-find .pl-note');
+ if(hint)hint.textContent='You are browsing inside Infinity Platinum for Android. Collected pages stay in this app’s first-party project workspace; no Chrome passwords or history are copied.';
+}
 const incoming=new URLSearchParams(location.search),collected=incoming.get('collect');
 if(collected&&collected.length<2050&&core.validUrl(collected)){
  address.value=collected;

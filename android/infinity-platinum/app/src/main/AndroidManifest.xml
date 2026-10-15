@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+ <uses-permission android:name="android.permission.INTERNET"/>
+ <application android:theme="@android:style/Theme.Material.Light.NoActionBar" android:usesCleartextTraffic="true"
+   android:label="Infinity Platinum" android:allowBackup="false" android:supportsRtl="true"
+   android:icon="@android:drawable/ic_menu_compass">
+  <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+  <activity android:name=".PlatinumActivity" android:exported="true"
+    android:configChanges="keyboardHidden|orientation|screenSize">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+   <!-- Explicit opt-in support for opening web links in Platinum. Does not silently set browser default. -->
+   <intent-filter>
+    <action android:name="android.intent.action.VIEW"/>
+    <category android:name="android.intent.category.DEFAULT"/>
+    <category android:name="android.intent.category.BROWSABLE"/>
+    <data android:scheme="http"/>
+    <data android:scheme="https"/>
+   </intent-filter>
+  </activity>
+ </application>
+</manifest>
