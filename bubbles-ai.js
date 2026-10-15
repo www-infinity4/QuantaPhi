@@ -237,14 +237,45 @@ status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
 const chatScroll=!embedded?create('div','ba-thread'):conversation;
 const composer=create('form','ba-composer');
+let pendingImage=null;
+const photoInput=create('input','ba-field ba-photo-file');photoInput.type='file';photoInput.accept='image/jpeg,image/png,image/webp';photoInput.setAttribute('aria-label','Add image or screenshot');
+const photoRow=create('div','ba-photo-upload');
+const photoLabel=create('label','ba-photo-label','Attach photo or screenshot');photoRow.append(photoLabel,photoInput);
+const photoPreview=create('div','ba-photo-preview');photoPreview.hidden=true;
+const photoThumb=create('img');photoThumb.alt='Selected image preview';
+const photoStatus=create('span','','');
+const removePhoto=create('button','ba-control','Remove image');removePhoto.type='button';
+removePhoto.addEventListener('click',()=>{pendingImage=null;photoInput.value='';photoPreview.hidden=true;status.textContent='Image removed before sending.';});
+photoPreview.append(photoThumb,photoStatus,removePhoto);
+photoInput.addEventListener('change',async()=>{
+ const file=photoInput.files?.[0];if(!file)return;
+ if(!/^image\/(?:jpeg|png|webp)$/.test(file.type)||file.size>8*1024*1024){photoInput.value='';status.textContent='Choose a JPEG, PNG or WebP image smaller than 8 MB.';return;}
+ status.textContent='Preparing image privately on your phone…';
+ const objectUrl=URL.createObjectURL(file);
+ try{
+  const bitmap=await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(Error('Image cannot be decoded'));img.src=objectUrl;});
+  const canvas=document.createElement('canvas');const scale=Math.min(1,960/Math.max(bitmap.naturalWidth,bitmap.naturalHeight));
+  canvas.width=Math.max(1,Math.round(bitmap.naturalWidth*scale));canvas.height=Math.max(1,Math.round(bitmap.naturalHeight*scale));
+  const context=canvas.getContext('2d');if(!context)throw Error('Canvas is unavailable');
+  context.fillStyle='#fff';context.fillRect(0,0,canvas.width,canvas.height);context.drawImage(bitmap,0,0,canvas.width,canvas.height);
+  let encoded=canvas.toDataURL('image/jpeg',0.7);
+  if(encoded.length>440000){const scale2=Math.min(1,640/Math.max(canvas.width,canvas.height));const reduced=document.createElement('canvas');reduced.width=Math.max(1,Math.round(canvas.width*scale2));reduced.height=Math.max(1,Math.round(canvas.height*scale2));const ctx=reduced.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,reduced.width,reduced.height);ctx.drawImage(canvas,0,0,reduced.width,reduced.height);encoded=reduced.toDataURL('image/jpeg',0.5);}
+  if(encoded.length>440000)throw Error('Image cannot be safely reduced');
+  pendingImage={data:encoded,name:String(file.name||'photo').slice(0,100)};
+  photoThumb.src=encoded;photoStatus.textContent=pendingImage.name+' · ready to send';photoPreview.hidden=false;
+  status.textContent='Image attached. Ask Bubbles about it and tap Send. Nothing uploaded yet.';
+ }catch(error){pendingImage=null;photoInput.value='';photoPreview.hidden=true;status.textContent='Image unavailable: '+String(error.message||error).slice(0,110);}
+ finally{URL.revokeObjectURL(objectUrl);}
+});
 const input=create('textarea','ba-field');input.rows=2;input.maxLength=2500;input.placeholder=nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
 const actions=create('div','ba-actions');
 const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mic.setAttribute('aria-pressed','false');
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
 const send=create('button','ba-send','Send');send.type='submit';
-actions.append(mic,speak,send);composer.append(input,actions);
+actions.append(mic,speak,send);composer.append(input,photoRow,photoPreview,actions);
 const privateLabel=create('label','ba-muted'),privateContext=create('input');privateContext.type='checkbox';privateContext.checked=config.privateContext===true;privateLabel.append(privateContext,create('span','',' Use my private Quant-AI selling defaults'));privateContext.addEventListener('change',()=>{config.privateContext=privateContext.checked;save(CONFIG,config)});composer.append(privateLabel);
 const tools=create('details','ba-tools');const summary=create('summary','','Notes & authorized work');tools.append(summary);
+tools.addEventListener('toggle',()=>{if(tools.open&&typeof requestAnimationFrame==='function')requestAnimationFrame(()=>tools.scrollIntoView({block:'start'}));});
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
 const historyToggle=create('input','');historyToggle.type='checkbox';historyToggle.checked=keepChat;
@@ -291,6 +322,7 @@ const pairingCard=create('section','ba-pairing-card');
  const pairingCode=create('input','ba-field');
  pairingCode.readOnly=true;pairingCode.autocomplete='off';pairingCode.spellcheck=false;
  pairingCode.setAttribute('aria-label','One-time website pairing code');
+pairingCode.addEventListener('click',()=>pairingCode.select());
  const pairingCopy=create('button','ba-control','Copy one-time code');
  pairingCopy.type='button';
  pairingCopy.addEventListener('click',async()=>{
@@ -315,6 +347,8 @@ if(nativeOverlay){
  // The composer and its visible feedback remain reachable at every scroll position.
  panel.insertBefore(chatScroll,header);
  chatScroll.append(ownerMode,linkBubbles,linkStatus,recorderStatus,recorderStop,pairingCard,conversation,tools);
+ // Keep options accessible above long transcripts, within the same scroll surface.
+ chatScroll.insertBefore(tools,conversation);
  composer.prepend(status);
  header.hidden=true;
  memoryHint.hidden=true;
@@ -426,7 +460,7 @@ function display(text,who,greeting=false){
   bubble.append(value.slice(cursor));
  }
  line.append(bubble);
- if(who!=='you'&&!greeting&&!nativeOverlay){
+ if(who!=='you'&&!greeting){
   const row=create('div','ba-message-actions');
   const remember=create('button','ba-miniaction','Save note');remember.type='button';
   remember.addEventListener('click',()=>{
@@ -444,7 +478,9 @@ function display(text,who,greeting=false){
     if(nativeOverlay)nativeSpeechReply=String(text).slice(0,2200);
     else speakText(text);
    });
-  row.append(remember,task,say);line.append(row);
+  if(nativeOverlay)row.append(say);
+   else row.append(remember,task,say);
+   line.append(row);
  }
  const wasNearBottom=chatScroll.scrollHeight-chatScroll.scrollTop-chatScroll.clientHeight<96;
  conversation.append(line);
@@ -527,6 +563,7 @@ historyToggle.addEventListener('change',()=>{
  }
 });
 linkBubbles.addEventListener('click',async()=>{
+ if(nativeOverlay&&ownerReady){linkStatus.textContent='Already connected. One-time pairing is saved; history syncs automatically.';void sharedMemory();return;}
  if(busy){linkStatus.textContent='A reply is still running. Try Connect / sync Bubbles when it finishes.';return;}
  linkBubbles.disabled=true;
  linkStatus.textContent='Checking owner access and requesting your one-time pairing code…';
@@ -609,13 +646,15 @@ async function consumeOwnerCodeFromChat(message,fromVoice){
  busy=true;send.disabled=true;
  status.textContent='Verifying Robot Brain owner connection…';
  try{
-  if(ownerReady){status.textContent='Robot Brain is already linked on this phone.';return true;}
+  if(ownerReady){status.textContent='Robot Brain already connected. No new code needed.';return true;}
   const result=await window.QuantaBrainOwner?.connectWithCode?.(payload);
   if(result?.state!=='verified')throw Error(result?.state==='unreachable'?'Brain verifier unavailable.':'Code expired or was not accepted.');
   await connectOwner();
   if(!ownerReady)throw Error('Verification did not establish an owner session.');
   ownerMode.textContent='Owner mode connected · Robot Brain commands active';
   status.textContent='Robot Brain connected. Your normal conversation and tasks are ready.';
+  linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing accepted. Shared history syncs automatically.';
+  void sharedMemory();
   display('Robot Brain connected. You can speak or type your next request.','ai');
  }catch(error){
   status.textContent='Pairing not completed: '+String(error?.message||error).slice(0,125)+'. Get a fresh code on your verified QuantaPhi website.';
@@ -627,9 +666,30 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Observation is delivered separately so its untrusted words can never be
  // classified as an owner job, local tool command, navigation, or approval.
  const screenEvidence=nativeOverlay?String(androidScreenEvidence||'').slice(0,1200):'';
- if(!spoken)return;
- if(await consumeOwnerCodeFromChat(spoken,fromVoice))return;
+ if(!spoken&&!pendingImage)return;
+ if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ // User-selected image is untrusted evidence and never grants owner work permissions.
+ if(pendingImage&&!fromVoice){
+  const selected=pendingImage,question=spoken||'Describe this image and its important visible details.';
+  busy=true;send.disabled=true;status.textContent='Analyzing the selected image with Cloudflare Vision…';
+  try{
+   const response=await bubblesFetch(AI,{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({request:question,image:selected.data})},60000);
+   const result=await response.json();
+   if(!response.ok||result.ok===false)throw Error(result.error||'Image analysis unavailable');
+   const answer=extract(result);if(!answer)throw Error('No image analysis was returned');
+   const visible='[Image: '+selected.name+'] '+question;
+   display(visible,'you');display(answer,'ai');
+   messages.push({role:'user',text:visible},{role:'assistant',text:answer});
+   messages=messages.slice(-400);persistChat();
+   pendingImage=null;photoInput.value='';photoPreview.hidden=true;input.value='';
+   status.textContent='Image analyzed. No image bytes were saved in chat history.';
+  }catch(error){status.textContent='Image analysis failed: '+String(error.message||error).slice(0,145)+'. The image stays attached for retry.';}
+  finally{busy=false;send.disabled=false;nativeSpeechPending=false;}
+  return;
+ }
+ if(!spoken)return;
  // Android's user-started foreground microphone is the authoritative capture
  // session. An unreachable Robot Brain voice lease is not a reason to discard
  // its second/third commands; only browser-owned microphones need this gate.
@@ -1039,6 +1099,7 @@ async function connectOwner(){
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+ if(nativeOverlay){linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing saved · history syncs automatically.';}
  // Pairing is handled in the same chat composer.
  persistChat();void sharedMemory();
  if(nativeOverlay){voiceLeaseWanted=true;void sharedVoice(true);}
