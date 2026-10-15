@@ -53,7 +53,7 @@ public final class MainActivity extends Activity {
         layout.addView(title);
 
         TextView copy = new TextView(this);
-        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link the website from your APK first, say 'sync my website' and copy the one-time owner code. Drag the floating orb anywhere.\\n\\nSay 'record', 'stop recording', 'take a screenshot', or 'take a screenshot every five seconds for five minutes'. Bubbles handles the controls; Android asks you to approve screen capture. Captures stay on your phone.");
+        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link the website from your APK first, say 'sync my website' and copy the one-time owner code. Drag the floating orb anywhere.\\n\\nSay 'record', 'stop', 'turn on video', 'record my screen', 'take a screenshot', or 'take a screenshot every five seconds for five minutes'. Bubbles handles the controls; Android asks you to approve screen capture. Captures stay on your phone.");
         copy.setTextColor(Color.rgb(101, 83, 111));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
@@ -459,6 +459,7 @@ public final class MainActivity extends Activity {
         if (refreshStatus != null) { ui.removeCallbacks(refreshStatus); refreshStatus.run(); }
         String voiceCapture = getIntent().getStringExtra("voice_capture");
         if (voiceCapture != null) {
+            ((android.app.NotificationManager)getSystemService(NOTIFICATION_SERVICE)).cancel(513);
             int seconds = getIntent().getIntExtra("interval_seconds", 5);
             int duration = getIntent().getIntExtra("duration_seconds", 300);
             getIntent().removeExtra("voice_capture");
@@ -577,8 +578,20 @@ public final class MainActivity extends Activity {
                         output.write(bytes, 0, count);
                     }
                     BrainNotes.prefs(this).edit().putString("capture_path", target.getAbsolutePath())
-                            .putString("capture_type", "video/mp4").putString("capture_state", "Saved camera video with its audio").apply();
-                    ui.post(() -> state.setText("Camera video saved. Bubbles listening resumed."));
+                            .putString("capture_type", "video/mp4")
+                            .putString("capture_state", "Saving camera recording to Movies/Bubbles…").apply();
+                    try {
+                        Uri published = CapturePublisher.publish(this, target, "video/mp4");
+                        BrainNotes.prefs(this).edit().putString("capture_uri", published.toString())
+                            .putString("capture_state", "Camera video saved to Movies/Bubbles").apply();
+                        ui.post(() -> state.setText("Camera video saved to Movies/Bubbles. Bubbles listening resumed."));
+                    } catch (Exception exportError) {
+                        BrainNotes.prefs(this).edit().putString("capture_state",
+                            "Gallery export failed; camera video remains in Bubbles private storage")
+                            .putString("capture_export_error", exportError.getMessage() == null ?
+                                exportError.getClass().getSimpleName() : exportError.getMessage()).apply();
+                        ui.post(() -> state.setText("Camera recording saved privately, but could not be added to Gallery."));
+                    }
                 } catch (Exception error) { target.delete(); ui.post(() -> state.setText("Could not save camera recording.")); }
             }); return;
         }

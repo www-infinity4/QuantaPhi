@@ -23,17 +23,29 @@ final class VoiceCaptureCommands {
         if (text == null) return null;
         String q = text.toLowerCase(Locale.ROOT).replaceAll("[,.!?]+", " ").replaceAll("\\s+", " ").trim();
         q = q.replaceFirst("^(?:please\\s+)?", "");
+        q = q.replaceFirst("^(?:(?:can|could|would) you |(?:i want you to |i need you to ))", "");
+        q = q.replaceFirst("^(?:please\\s+)?", "");
+        // Simple 'stop' applies to whatever media capture is actually running.
+        // The service checks active sessions; this command does not mute Bubbles.
+        if (q.matches("^(?:stop|end|finish|save)(?: now| it| that| recording| the recording| the video| video)?$"))
+            return new Command("capture_stop", 0, 0);
         if (q.matches("^(?:stop|end|finish|cancel)\\s+(?:the\\s+)?(?:screen\\s+)?(?:capture|recording|screenshots?|video)(?:\\s+now)?$")
                 && q.contains("screen")) return new Command("screen_stop", 0, 0);
         if (q.matches("^(?:stop|end|finish|save)\\s+(?:the\\s+)?(?:audio|sound|microphone|voice)?\\s*recording(?:\\s+now)?$")
                 || q.matches("^(?:stop|end|finish|save)\\s+(?:audio|sound|microphone)(?:\\s+now)?$"))
             return new Command("sound_stop", 0, 0);
-        if (q.matches("^(?:record|start recording|record sound|record audio|start audio recording|start sound recording|record my voice)$"))
+        if (q.matches("^(?:record|start recording|record sound|record audio|start audio recording|start sound recording|record my voice|start recording sound|record this conversation)$"))
             return new Command("sound_start", 0, 0);
-        if (q.matches("^(?:record|start|take|capture|make|shoot)\\s+(?:a\\s+)?(?:camera|selfie)\\s*(?:video|recording)?(?:\\s+.*)?$"))
+        if (q.matches("^(?:record|start|take|capture|make|shoot)\\s+(?:a\\s+)?(?:camera|selfie)\\s*(?:video|recording)?(?:\\s+.*)?$")
+                || q.matches("^(?:turn on|start|record|shoot|make|capture)\\s+(?:the |my |a )?(?:camera|video|video camera)(?: recording| recorder)?$")
+                || q.matches("^(?:film|videotape)\\s+(?:me|this|that|with my camera)$"))
             return new Command("camera_video", 0, 0);
         if (q.matches("^(?:stop|end|finish|cancel)\\s+(?:the\\s+)?(?:screen\\s+)?(?:video|capture|screenshots?)(?:\\s+now)?$"))
             return new Command("screen_stop", 0, 0);
+        // Recording the screen is video, even when the word 'video' is omitted.
+        if (q.matches("^(?:record|film|start recording|make a recording of|capture video of)\\s+(?:my |the |this )?screen(?:\\b.*)?$")
+                || q.matches("^(?:start|make|capture|record)\\s+(?:a |the )?screen\\s+(?:recording|video)(?:\\b.*)?$"))
+            return new Command("screen_video", 0, 300);
         boolean screen = q.matches("^(?:take|capture|make|start|record|grab|save)\\s+(?:a\\s+)?(?:the\\s+)?(?:screen|screenshot|screen\\s*shot)(?:\\b.*)?$")
             || q.matches("^(?:take|capture|make|start|record|grab|save)\\s+(?:a\\s+)?(?:screen\\s+)?(?:capture|screenshots?)(?:\\b.*)?$");
         if (!screen) return null;
