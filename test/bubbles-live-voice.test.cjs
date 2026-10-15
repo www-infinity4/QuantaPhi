@@ -8,6 +8,7 @@ const appSource=fs.readFileSync('bubbles-ai.js','utf8');
 const brainSource=fs.readFileSync('bubbles-brain-actions.js','utf8');
 
 function harness(owner=false,speech=false){
+ const clock={now:Date.now()};const FakeDate=class extends Date{static now(){return clock.now}};
  const utterances=[],memoryRequests=[];let ownsVoice=true;const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
  const node=(tag)=>{
   const n={tag,className:'',dataset:{},style:{setProperty(){}},children:[],handlers:{},hidden:false,value:'',
@@ -33,13 +34,13 @@ function harness(owner=false,speech=false){
  const localStorage={getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)};
  const fetch=async(url,opts)=>{if(url.endsWith('/owner/conversation')){memoryRequests.push({url,opts});return {ok:true,json:async()=>({ok:true,owned:ownsVoice,saved:JSON.parse(opts.body).messages?.map(m=>m.id)||[],recent:[],related:[]})};}requests.push({url,opts});return{ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',status:'draft',context:{kind:'robot-directions'}}}:url.endsWith('/work/run-next')?{ok:true,status:'queued_for_runner',ticketId:'fixture-ticket',jobId:'TASK-1'}:{ok:true,output:'Bubbles response from Oracle'}}};
  const context={window,document,navigator,localStorage,location:{href:'https://quantaphi.org/',search:'',origin:'https://quantaphi.org',pathname:'/'},
-  URL,URLSearchParams,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
+  URL,URLSearchParams,Date:FakeDate,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
  if(speech){context.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};context.speechSynthesis={cancel(){},getVoices:()=>[],speak(u){utterances.push(u);u.onstart?.()}};}
  vm.runInNewContext(gateSource,context);
  vm.runInNewContext(brainSource,context);
  vm.runInNewContext(appSource,context);
  const orb=nodes.find(n=>n.className==='ba-launcher');
- return {window,document,nodes,orb,requests,recognized,track,utterances,memoryRequests,setVoiceOwned:value=>{ownsVoice=value}};
+ return {window,document,nodes,orb,requests,recognized,track,utterances,memoryRequests,advance:ms=>{clock.now+=ms},setVoiceOwned:value=>{ownsVoice=value}};
 }
 const flush=async()=>{for(let i=0;i<40;i++)await Promise.resolve()};
 const result=s=>Object.assign([{transcript:s}],{isFinal:true});
@@ -111,7 +112,7 @@ test('owner repair command creates and readies one real ticket with receipt',asy
 test('spoken replies keep the same microphone and recognizer active',async()=>{
  const h=harness(false,true);h.orb.handlers.click();await flush();
  assert.equal(h.recognized.length,1);assert.equal(h.track.stopped,false);
- h.utterances[0].onend();
+ h.utterances[0].onend();h.advance(950);
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles hello')]});await flush();
  assert.equal(h.requests.length,1);assert.equal(h.recognized[0].stopped,undefined);assert.equal(h.track.stopped,false);
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles response from Oracle')]});await flush();
