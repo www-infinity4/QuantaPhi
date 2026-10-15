@@ -16,9 +16,12 @@ function classify(utterance){
  if(!text||text.length>4000)return 'chat';
  const addressed=text.replace(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)+/i,'');
  if(/^(?:do\s+not|don['’]t|never|i\s+(?:do\s+not|don['’]t)\s+(?:want|need)|i\s+(?:want|need)\s+(?:you\s+)?not\s+to)\b/i.test(addressed))return 'chat';
+ // Capability questions verify the actual owner endpoint without inventing a job.
+ if(/^(?:can|could) you (?:actually )?(?:start|create|submit|queue) (?:new |a |the )?(?:work )?tickets?[?.!]*$/i.test(addressed))return 'connection';
+ if(/^(?:(?:can|could|would) you |please )?(?:start|create|submit|queue|add) (?:new |a |the )?(?:work )?tickets? (?:to|for|about) .+/i.test(addressed))return 'queue';
  const report=/\b(?:status|report|progress(?:ing)?|activity|top\s*(?:ten|10)|running\s+(?:jobs|tasks)|queued\s+(?:jobs|tasks)|what(?:'s| is| are)\s+(?:the\s+)?(?:bots?|robot brain|pink panther|agents?))\b/i;
  const ask=/\b(?:show|give|read|tell|check|list|summari[sz]e|what|how|which|report)\b/i;
- const target=/\b(?:bots?|robot\s*brain|brain|jobs?|tasks?|pink\s*panther|color\s*bots?|agents?|work\s*report)\b/i;
+ const target=/\b(?:bots?|robot\s*brain|brain|jobs?|tasks?|tickets?|pink\s*panther|color\s*bots?|agents?|work\s*report)\b/i;
  if(report.test(text)&&ask.test(text)&&target.test(text))return 'report';
  // "Contact Robot Brain and ask it to give Bubbles the missing abilities"
  // is an explicit engineering instruction, not a verified permission grant.
