@@ -134,7 +134,8 @@ final class FloatingOracleWindow {
 
         LinearLayout header = new LinearLayout(service);
         header.setGravity(Gravity.CENTER_VERTICAL);
-        TextView title = text("ORACLE OCTAVES  /  BUBBLES", 21, INK);
+        TextView title = text("Bubbles", 21, INK);
+        title.setSingleLine(true);
         title.setTypeface(null, Typeface.BOLD);
         header.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
         muteButton = button("Mic off", false);

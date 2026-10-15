@@ -73,18 +73,25 @@ public final class BrainLearningService extends AccessibilityService {
         service.inspect(callback);
     }
     private void inspect(Consumer<String> callback) {
+        // A WebView or our own Bubbles screen can have no exposed text tree.
+        // Do not misdiagnose that as missing permission; still try the Android
+        // Accessibility screenshot API already approved by the user.
         AccessibilityNodeInfo root = currentRoot();
-        if (root == null) { callback.accept("SCREEN_NOT_AVAILABLE: Open the target app under the floating bubble."); return; }
-        String app;
-        String visible;
-        try {
-            app = String.valueOf(root.getPackageName());
-            StringBuilder text = new StringBuilder();
-            collect(root, text, new int[]{0}, 0);
-            visible = text.toString().trim();
-        } finally { root.recycle(); }
-        final String textObservation = "Foreground app: " + app + "\nVisible accessible text: "
-            + (visible.isEmpty() ? "[none exposed]" : visible.substring(0, Math.min(2100, visible.length())));
+        final String textObservation;
+        if (root == null) {
+            textObservation = "Screen access connected. Text tree unavailable; checking screenshot.";
+        } else {
+            String app;
+            String visible;
+            try {
+                app = String.valueOf(root.getPackageName());
+                StringBuilder text = new StringBuilder();
+                collect(root, text, new int[]{0}, 0);
+                visible = text.toString().trim();
+            } finally { root.recycle(); }
+            textObservation = "Foreground app: " + app + "\nVisible accessible text: "
+                + (visible.isEmpty() ? "[none exposed]" : visible.substring(0, Math.min(2100, visible.length())));
+        }
         if (Build.VERSION.SDK_INT < 30) { callback.accept(textObservation); return; }
         try {
             takeScreenshot(Display.DEFAULT_DISPLAY, getMainExecutor(), new TakeScreenshotCallback() {
