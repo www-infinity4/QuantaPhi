@@ -59,7 +59,7 @@ test('Collect is wired to existing PhiProjectPackage.capture and Build seeds act
 });
 test('Platinum is linked in QuantaPhi, and route serves current repo path',async()=>{
  const html=source('index.html');
- assert.match(html,/href="\/platinum\/"[^>]*>Infinity Platinum/);
+ assert.match(html,/href="\/platinum\/index\.html"[^>]*>Infinity Platinum/);
  const worker=source('workers/quantaphi-site/worker.js');
  assert.match(worker,/path === '\/platinum\/' \|\| path === '\/platinum\/index.html'/);
  const urls=[];
