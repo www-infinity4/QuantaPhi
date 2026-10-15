@@ -5,15 +5,14 @@ const site=fs.readFileSync('bubbles-ai.js','utf8');
 const html=fs.readFileSync('bubbles.html','utf8');
 const css=fs.readFileSync('bubbles-ai.css','utf8');
 
-test('native panel has an owner pairing field, not an invisible dashboard gate',()=>{
- assert.match(site,/nativeOwnerRow=create\('form','ba-native-owner'\)/);
- assert.match(site,/nativeOwnerInput.type='password'/);
- assert.match(site,/nativeOwnerInput.value=''/);
- assert.match(site,/window.QuantaBrainOwner\?\.connectWithCode\?\.\(code\)/);
+test('native panel uses the main chat composer for private owner pairing',()=>{
+ assert.match(site,/input\.placeholder='Message Bubbles or paste owner code/);
+ assert.match(site,/if\(nativeOverlay&&!fromVoice&&\/\^\[a-f0-9\]\{64\}\$\/i\.test\(spoken\)\)/);
+ assert.match(site,/await redeemNativeOwnerCode\(spoken\)/);
+ assert.match(site,/window\.QuantaBrainOwner\?\.connectWithCode\?\.\(code\)/);
  assert.match(site,/await connectOwner\(\)/);
- assert.match(site,/if\(nativeOwnerRow\)nativeOwnerRow.hidden=true/);
+ assert.doesNotMatch(site,/nativeOwnerInput=create/);
  assert.match(html,/html\.bubbles-native-overlay #robotBrainOwner\{display:none!important\}/);
- assert.match(css,/\.ba-native-owner\[hidden\]\{display:none!important\}/);
 });
 test('the owner code is validated server-side and saved only after verified',()=>{
  const method=owner.slice(owner.indexOf('window.QuantaBrainOwner.connectWithCode='),owner.indexOf('function form(message)'));
