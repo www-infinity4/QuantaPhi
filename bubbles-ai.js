@@ -213,7 +213,7 @@ status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
 const chatScroll=nativeOverlay?create('div','ba-thread'):conversation;
 const composer=create('form','ba-composer');
-const input=create('textarea','ba-field');input.rows=2;input.maxLength=2500;input.placeholder=nativeOverlay?'Message Bubbles or paste your 64-character Robot Brain code here…':'Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
+const input=create('textarea','ba-field');input.rows=2;input.maxLength=2500;input.placeholder=nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
 const actions=create('div','ba-actions');
 const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mic.setAttribute('aria-pressed','false');
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
