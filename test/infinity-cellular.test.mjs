@@ -51,9 +51,9 @@ test('QuantaPhi routes the cellular network page and JavaScript modules to first
  assert.match(worker,/path === '\/cellular\/'/);
  assert.match(worker,/sourcePath: '\/cellular\/index.html'/);
  assert.match(worker,/mjs: 'application\/javascript/);
- assert.match(html,//cellular/cellular.js/);
+ assert.ok(html.includes('/cellular/cellular.js'));
  assert.match(js,/network-plan.mjs/);
- assert.match(js,//health/);
+ assert.ok(js.includes('/health'));
  assert.match(js,/infinity-switchboard/);
  assert.match(phone,/href="\/cellular\/"/);
  assert.match(html,/not live cellular service/);
