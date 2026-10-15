@@ -175,7 +175,9 @@ final class FloatingOracleWindow {
             // Do not reuse a stale owner-code form from an earlier deployment.
             settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
             settings.setAllowFileAccess(false);
-            settings.setAllowContentAccess(false);
+            // SAF grants read access only to documents the user explicitly
+            // picks. WebView needs content:// reads for File.text() history import.
+            settings.setAllowContentAccess(true);
             settings.setJavaScriptCanOpenWindowsAutomatically(false);
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
             website.setWebChromeClient(new WebChromeClient() {
@@ -184,7 +186,9 @@ final class FloatingOracleWindow {
                 @Override public boolean onShowFileChooser(WebView webView,
                         android.webkit.ValueCallback<Uri[]> callback, FileChooserParams params) {
                     boolean historyJson = false;
-                    for (String type : params.getAcceptTypes()) {
+                    String[] accepts = params.getAcceptTypes();
+                    if (accepts == null) accepts = new String[0];
+                    for (String type : accepts) {
                         if (type != null && (type.contains("json") || type.contains(".json")))
                             historyJson = true;
                     }
