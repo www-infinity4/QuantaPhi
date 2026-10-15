@@ -15,7 +15,7 @@ test('continuous microphone replaces restart-driven platform recognition', () =>
 test('speaking does not stop microphone capture; echo is discarded locally', () => {
   const speak = source.slice(source.indexOf('private void speak('), source.indexOf('@Override public IBinder'));
   assert.doesNotMatch(speak, /stopRecognition\(|microphone\.(?:stop|release)\(/);
-  assert.match(source, /if \(speaking\) \{[\s\S]*?speech\.reset\(\);[\s\S]*?continue;/);
+  assert.match(source, /if \(speaking \|\| SystemClock\.elapsedRealtime\(\) < echoQuietUntil\) \{[\s\S]*?speech\.reset\(\);[\s\S]*?continue;/);
 });
 test('explicit mute and service stop release microphone', () => {
   assert.match(source, /private void muteSession\(\) \{[\s\S]*?stopRecognition\(\)/);
@@ -48,7 +48,8 @@ test('ticket handoff matches explicit commands and does not embed credentials', 
 });
 test('TTS callback loss has a bounded recovery and diagnostics preserve replies', () => {
   assert.match(source, /generation == speechGeneration/);
-  assert.match(source, /tts\.stop\(\);\s*finishSpeaking\(\)/);
+  assert.match(source, /tts\.stop\(\);\s*finishSpeaking\(utterance\)/);
+  assert.match(source, /!id\.equals\(activeUtteranceId\)/);
   assert.match(source, /putString\("last_heard", text\)/);
   assert.match(source, /putString\("last_reply", result\)/);
 });
