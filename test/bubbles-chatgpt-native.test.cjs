@@ -42,3 +42,19 @@ test('login needs explicit action, has signout, and no web token bridge',()=>{
  assert.ok(!auth.includes('WebView'));
  assert.ok(!auth.includes('window.postMessage'));
 });
+
+test('OAuth browser return is branded, app-linkable, and does not claim completed authorization',()=>{
+ const html=fs.readFileSync(path.join(root,'BubblesAuthReturnPage.java'),'utf8');
+ const manifest=fs.readFileSync(path.join(__dirname,'../android/bubbles-overlay/app/src/main/AndroidManifest.xml'),'utf8');
+ assert.match(auth,/BubblesAuthReturnPage\.render\(valid, activity\.getPackageName\(\)\)/);
+ assert.match(auth,/Referrer-Policy: no-referrer/);
+ assert.match(auth,/Content-Security-Policy/);
+ assert.match(html,/Head back to Bubbles/);
+ assert.match(html,/Return to Bubbles app/);
+ assert.match(html,/Open QuantaPhi Bubbles/);
+ assert.match(html,/intent:\/\/return#Intent;scheme=quantaphi-bubbles;package=/);
+ assert.match(html,/finishing the secure connection/);
+ assert.doesNotMatch(html,/You may close this tab/);
+ assert.match(manifest,/android:scheme="quantaphi-bubbles" android:host="return"/);
+ assert.match(activity,/getIntent\(\)\.setData\(null\)/);
+});

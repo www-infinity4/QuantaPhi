@@ -23,13 +23,26 @@ export function normalizeMessages(messages){
 export function searchTerms(query){return [...new Set(String(query||'').toLowerCase().match(/[a-z0-9]{3,32}/g)||[])].slice(0,12).map(x=>'"'+x+'"').join(' OR ');}
 export async function conversationMemory(db,owner,body){
  if(!initialized.has(db)){for(const sql of schema)await db.prepare(sql).run();initialized.add(db);}
- if(body.mode==='voice-claim'||body.mode==='voice-renew'){
+ if(['voice-claim','voice-renew','voice-status','voice-release'].includes(body.mode)){
   if(!/^[a-zA-Z0-9_-]{8,100}$/.test(body.client||''))throw Error('voice_client_invalid');
-  const expires=Date.now()+35000;
-  if(body.mode==='voice-claim')await db.prepare('INSERT INTO bubbles_voice(owner,client,expires) VALUES (?,?,?) ON CONFLICT(owner) DO UPDATE SET client=excluded.client,expires=excluded.expires').bind(owner,body.client,expires).run();
-  else await db.prepare('UPDATE bubbles_voice SET expires=? WHERE owner=? AND client=? AND expires>?').bind(expires,owner,body.client,Date.now()).run();
+  const now=Date.now(),expires=now+35000;
+  const previous=await db.prepare('SELECT client,expires FROM bubbles_voice WHERE owner=?').bind(owner).first();
+  const current=previous?.expires>now?previous:null;
+  // A connected Android companion owns the single active microphone when the
+  // website and APK are paired to the same verified owner. Website chat remains
+  // fully usable; an owner-authenticated web page cannot steal Android's mic.
+  const androidClient=body.client.startsWith('android_');
+  const androidActive=current?.client.startsWith('android_');
+  if(body.mode==='voice-claim'&&(!current||androidClient||!androidActive||current.client===body.client)){
+   await db.prepare('INSERT INTO bubbles_voice(owner,client,expires) VALUES (?,?,?) ON CONFLICT(owner) DO UPDATE SET client=excluded.client,expires=excluded.expires WHERE bubbles_voice.expires<=? OR substr(bubbles_voice.client,1,8)<>\'android_\' OR substr(excluded.client,1,8)=\'android_\' OR bubbles_voice.client=excluded.client').bind(owner,body.client,expires,now).run();
+  }else if(body.mode==='voice-renew'&&current?.client===body.client){
+   await db.prepare('UPDATE bubbles_voice SET expires=? WHERE owner=? AND client=? AND expires>?').bind(expires,owner,body.client,now).run();
+  }else if(body.mode==='voice-release'&&current?.client===body.client){
+   await db.prepare('DELETE FROM bubbles_voice WHERE owner=? AND client=?').bind(owner,body.client).run();
+  }
   const lease=await db.prepare('SELECT client,expires FROM bubbles_voice WHERE owner=?').bind(owner).first();
-  return {ok:true,owned:lease?.client===body.client&&lease.expires>Date.now(),expiresAt:lease?.expires||0};
+  const active=lease?.expires>now?lease:null;
+  return {ok:true,owned:!!active&&active.client===body.client,active:active?(active.client.startsWith('android_')?'android':'website'):'none',expiresAt:active?.expires||0};
  }
  const messages=normalizeMessages(body.messages||[]);
  if(messages.length){
