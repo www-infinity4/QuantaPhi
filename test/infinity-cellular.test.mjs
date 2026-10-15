@@ -59,3 +59,13 @@ test('QuantaPhi routes the cellular network page and JavaScript modules to first
  assert.match(html,/not live cellular service/);
  assert.doesNotMatch(js,/getUserMedia\(|writeFile\(|navigator\.serial/);
 });
+
+test('Motorola Moto G Pure compatibility is flagged before buying CBRS radio gear',()=>{
+ const html=read('cellular/index.html');
+ const hardware=read('hardware/infinity-cellular/README.md');
+ assert.match(html,/Moto G Pure/);
+ assert.match(html,/Band 48/);
+ assert.match(html,/LTE modem\/router/);
+ assert.match(hardware,/list LTE Band 48/);
+ assert.match(hardware,/SIM tray/);
+});

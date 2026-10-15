@@ -19,6 +19,15 @@ Infinity Platinum site + Infinity Switchboard over that data link
 
 The **first proof** is an ordinary user device with its non-Infinity cellular connection disabled, joined to the authorized Infinity test radio/SIM, receiving a private network IP address, resolving DNS and loading `https://quantaphi.org/cellular/` and unrelated public websites. Record packet counters on the gateway, effective throughput, signal conditions, handover behavior (if more than one site), and uptime. Website fetches using the existing phone carrier are not proof of the private LTE connection.
 
+
+## Motorola Moto G Pure compatibility finding (October 2026)
+
+The Motorola Moto G Pure has a **physical nano-SIM** slot and LTE/Wi-Fi capability, but published specifications for Moto G Pure models do **not** list LTE Band 48 (the U.S. CBRS band used in this pilot). Carrier variants can differ, so confirm the exact XT2163 model before purchasing radios. A casing coating, SIM tray, app, bootloader change or web identity key does not add a missing LTE RF band. The SIM authenticates a subscriber to a network; it does not provide a base station or the global Internet connection.
+
+A compatible external **Band 48 LTE router/gateway**, linked to the Moto G Pure over its existing Wi-Fi radio, is a possible first demonstration while retaining the Motorola handset. This remains a cellular access network at the gateway, not a direct Band 48 LTE connection from the Moto G Pure. Alternatively, choose a future Infinity phone or modem with verified CBRS support. Other Moto LTE bands may require separately licensed spectrum; they are not free-to-transmit merely because the phone can tune them.
+
+Motorola's model-specific SIM instructions: https://en-us.support.motorola.com/app/answers/detail/a_id/162282/ . Published LTE bands: https://www.videotron.com/en/support/mobile/devices/moto-g-pure and AT&T XT2163-6: https://www.att.com/device-support/article/wireless/KM1476048/Motorola/MotorolaXT21636/ . No access to the user's actual modem, SIM authentication material or coating was performed in this software assessment.
+
 ## Radio and spectrum
 
 - In the United States, pursue **CBRS General Authorized Access** in 3550–3700 MHz, subject to current FCC Part 96 conditions and SAS management, certified CBSD hardware, and any professional installation or registration requirements. GAA does **not** grant exclusive or guaranteed coverage. Never transmit before authorization, coordination and technical compliance.
