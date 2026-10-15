@@ -1,0 +1,36 @@
+name: Infinity Cellular readiness and radio honesty checks
+on:
+  pull_request:
+    paths:
+      - "cellular/**"
+      - "hardware/infinity-cellular/**"
+      - "phone/index.html"
+      - "phone/phone.css"
+      - "workers/quantaphi-site/worker.js"
+      - "test/infinity-cellular.test.mjs"
+      - ".github/workflows/infinity-cellular.yml"
+  push:
+    branches: [main]
+    paths:
+      - "cellular/**"
+      - "hardware/infinity-cellular/**"
+      - "phone/index.html"
+      - "phone/phone.css"
+      - "workers/quantaphi-site/worker.js"
+      - "test/infinity-cellular.test.mjs"
+      - ".github/workflows/infinity-cellular.yml"
+jobs:
+  verified-readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate network planning UI and safety constraints
+        run: |
+          node --check cellular/network-plan.mjs
+          node --check cellular/cellular.js
+          node --test test/infinity-cellular.test.mjs
+      - name: Verify existing Infinity Phone stays functional
+        run: node --test test/platinum-phone.test.cjs
