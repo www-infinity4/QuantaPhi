@@ -63,7 +63,7 @@ final class FloatingOracleWindow {
     private boolean dispatchInFlight = false, typedDispatchInFlight = false;
     private long speechDispatchAt = 0L, typedDispatchAt = 0L;
     private Button muteButton;
-    private static final String SITE_URL = "https://quantaphi.org/bubbles.html?nativeOverlay=1";
+    private static final String SITE_URL = "https://quantaphi.org/bubbles.html?nativeOverlay=1"; // paired through ordinary chat input
     private static final String SITE_HOST = "quantaphi.org";
     private String lastHistory = "";
     private final Runnable update = new Runnable() {
@@ -238,6 +238,8 @@ final class FloatingOracleWindow {
             WebSettings settings = website.getSettings();
             settings.setJavaScriptEnabled(true);
             settings.setDomStorageEnabled(true);
+            // Do not reuse a stale owner-code form from an earlier deployment.
+            settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
             settings.setAllowFileAccess(false);
             settings.setAllowContentAccess(false);
             settings.setJavaScriptCanOpenWindowsAutomatically(false);
@@ -278,7 +280,7 @@ final class FloatingOracleWindow {
                 }
             });
             page.addView(website, new LinearLayout.LayoutParams(-1, 0, 1));
-            website.loadUrl(SITE_URL);
+            website.loadUrl(SITE_URL + "&v=18-chat-pairing");
         } catch (RuntimeException error) {
             // WebView might be unavailable or outdated; native capture and chat work.
             website = null;
