@@ -69,10 +69,24 @@ test('Preview 5 installs separately from previous debug signatures', () => {
 
 test('loading the shared assistant holds speech instead of using the old manual-submit fallback',()=>{
  const method=window.slice(window.indexOf('boolean sendSpoken(String text)'),window.indexOf('private void showWebsite'));
- assert.match(method,/if \(website == null\) return false/);
+  assert.match(method,/website == null \|\| text == null/);
  assert.doesNotMatch(method,/if \(!websiteReady \|\| website == null\) return false/);
- assert.match(method,/pendingSpeech =/);
+  assert.match(method,/pendingSpeech\.addLast\(/);
  assert.match(window,/if \(!pendingSpeech.isEmpty\(\)\) deliverQueuedSpeech\(\)/);
  assert.match(site,/submission is already complete/);
  assert.match(site,/Never tell the owner to click a submit, run, publish or finish button/);
+});
+
+test('consecutive spoken turns are FIFO, not overwritten or muted by a website voice-lease failure',()=>{
+  assert.match(window,/new java\.util\.ArrayDeque<>\(\)/);
+  assert.match(window,/pendingSpeech\.addLast\(/);
+  assert.match(window,/pendingSpeech\.peekFirst\(\)/);
+  assert.match(window,/pendingSpeech\.pollFirst\(\)/);
+  assert.match(window,/if \(!pendingSpeech\.isEmpty\(\)\) ui\.post\(this::deliverQueuedSpeech\)/);
+  assert.match(window,/typedDispatchInFlight/);
+  assert.match(window,/speechDispatchAt > 15000L/);
+  assert.doesNotMatch(window,/if \("true"\.equals\(value\)\) service\.pauseSharedMicrophone\(\)/);
+  assert.match(window,/claimMicrophone\(\)/);
+  assert.match(service,/if \(turnBuffer\.hasPending\(\)\) main\.postDelayed\(this, 400L\)/);
+  assert.match(service,/if \(retries < 3/);
 });
