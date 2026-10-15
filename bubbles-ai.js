@@ -144,7 +144,9 @@ const claude=create('a','ba-link','Claude third-party API requirements ↗');cla
 const github=create('a','ba-link','GitHub App permission model ↗');github.href='https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps';github.target='_blank';github.rel='noopener noreferrer';
 const gptConnect=create('button','ba-control ba-chatgpt-login','Continue with ChatGPT');
 gptConnect.type='button';gptConnect.hidden=!nativeOverlay;
-const gptStatus=create('p','ba-muted',nativeOverlay?'Continue with ChatGPT on your Android device. QuantaPhi never sees those sign-in tokens.':'You can command your Robot Brain without ChatGPT OAuth. Official website ChatGPT sign-in requires partner registration, which is not connected.');
+const gptStatus=create('p','ba-muted',nativeOverlay?'Checking ChatGPT connection on this phone…':'You can command your Robot Brain without ChatGPT OAuth. Official website ChatGPT sign-in requires partner registration, which is not connected.');
+let nativeProviderRow=null;
+let lastNativeGPTStatus=null;
 gptConnect.addEventListener('click',()=>{
  if(nativeOverlay){nativeGPTSignInRequested=true;gptStatus.textContent='Opening the native Android ChatGPT permission flow. The website never receives your sign-in tokens.'}
  else{gptStatus.textContent='ChatGPT website sign-in requires an approved OpenAI OAuth client ID for QuantaPhi. Until registered, Bubbles uses Oracle; Android Bubbles has its own supported device-local sign-in.';}
@@ -236,9 +238,9 @@ const pairingCard=create('section','ba-pairing-card');
 if(nativeOverlay){
  // Native OAuth and model inference live on the device, not in this WebView.
  // Expose the entry point above conversation; don't bury it in hidden settings.
- const providerRow=create('div','ba-native-provider');
- providerRow.append(gptConnect,gptStatus);
- panel.insertBefore(providerRow,conversation);
+ nativeProviderRow=create('div','ba-native-provider');
+ nativeProviderRow.append(gptConnect,gptStatus);
+ panel.insertBefore(nativeProviderRow,conversation);
 }
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
@@ -884,7 +886,15 @@ window.QuantaBubbles={
  setNativeGPTAvailable:(available)=>{
   if(!nativeOverlay)return false;
   nativeGPTAvailable=available===true;
-  gptStatus.textContent=nativeGPTAvailable?'ChatGPT plan connected in this Android app · local inference available.':'ChatGPT is not connected on this Android device. Tap Continue with ChatGPT to authorize.';
+  // Android polls this state. Leave a connected owner in the ordinary chat,
+  // rather than repeatedly showing a sign-in wall or resetting its status.
+  if(lastNativeGPTStatus!==nativeGPTAvailable){
+   lastNativeGPTStatus=nativeGPTAvailable;
+   gptConnect.hidden=nativeGPTAvailable;
+   gptStatus.hidden=nativeGPTAvailable;
+   if(nativeProviderRow)nativeProviderRow.hidden=nativeGPTAvailable;
+   if(!nativeGPTAvailable)gptStatus.textContent='ChatGPT is not connected on this phone. You can still chat using Oracle, or connect in Bubbles settings.';
+  }
   return true;
  },
  takeNativeGPTLogin:()=>{if(!nativeOverlay||!nativeGPTSignInRequested)return false;nativeGPTSignInRequested=false;return true;},
@@ -928,6 +938,9 @@ window.QuantaBubbles={
  }
 };
 if(nativeOverlay){
+ // The native window already has a working collapse control. Hiding the inner
+ // web panel with its X used to leave an empty floating Android window.
+ close.hidden=true;
  // Same composer, source links, notes, bot status and instructions as QuantaPhi.
  // The native service owns the microphone and spoken audio to prevent echoes.
  toggle(true);
