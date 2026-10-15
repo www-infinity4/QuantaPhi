@@ -26,3 +26,18 @@ jobs:
         with:
           node-version: "22"
       - run: node --test test/platinum-phone.test.cjs
+      - name: Verify deployed switchboard health and Durable Object binding
+        shell: bash
+        run: |
+          node - <<'NODE'
+          (async () => {
+            const base = 'https://infinity-switchboard.marvaseater.workers.dev';
+            const health = await fetch(base+'/health');
+            const h = await health.json();
+            if (!health.ok || h.service !== 'infinity-platinum-switchboard') throw Error('Switchboard health failed: '+JSON.stringify(h));
+            const profile = await fetch(base+'/v1/line/infinityhealthcheckonly');
+            const p = await profile.json();
+            if (!profile.ok || p.registered !== false) throw Error('Durable Object profile failed: '+JSON.stringify(p));
+            console.log('Live switchboard health and directory binding verified');
+          })().catch(e=>{console.error(e);process.exitCode=1});
+          NODE
