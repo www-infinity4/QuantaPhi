@@ -83,14 +83,24 @@ jobs:
           mkdir -p /tmp/bubbles-wav
           javac -d /tmp/bubbles-wav android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/VoiceRecording.java android/bubbles-overlay/checks/VoiceRecordingCheck.java
           java -cp /tmp/bubbles-wav org.quantaphi.bubbles.VoiceRecordingCheck
-      # GitHub runners do not retain debug signing certificates by default.
-      # Restore a main-branch test signing cache where available. This is ONLY
-      # for the isolated Bubbles Preview package, never a release signer.
-      - name: Reuse test-only preview signing key
+      # Preview APKs must keep one signing identity across published updates.
+      # This cache contains ONLY a throwaway preview signer, never a production key.
+      # GitHub's normal ~/.android/debug.keystore location was not preserved.
+      - name: Restore preview-5 test signing key
         uses: actions/cache@v4
         with:
-          path: ~/.android/debug.keystore
-          key: bubbles-preview-debug-keystore-v1
+          path: android/bubbles-overlay/preview-debug.keystore
+          key: bubbles-preview5-signing-v1
+      - name: Create preview-5 test signing key on first build
+        run: |
+          set -euo pipefail
+          KEY=android/bubbles-overlay/preview-debug.keystore
+          if [ ! -s "$KEY" ]; then
+            keytool -genkeypair -noprompt -keystore "$KEY" -storepass android \
+              -keypass android -alias androiddebugkey -keyalg RSA -keysize 3072 \
+              -validity 10000 -dname "CN=Bubbles Preview Test,O=QuantaPhi,C=US"
+          fi
+          keytool -list -keystore "$KEY" -storepass android -alias androiddebugkey
       - name: Compile Bubbles Android application
         working-directory: android/bubbles-overlay
         run: gradle --no-daemon assembleDebug
@@ -102,7 +112,7 @@ jobs:
           test -s "$APK"
           "$SDK/build-tools/35.0.0/apksigner" verify --verbose --print-certs "$APK"
           "$SDK/build-tools/35.0.0/aapt" dump badging "$APK" | tee /tmp/bubbles-apk-badging.txt
-          grep -q "name='org.quantaphi.bubbles.preview4'" /tmp/bubbles-apk-badging.txt
+          grep -q "name='org.quantaphi.bubbles.preview5'" /tmp/bubbles-apk-badging.txt
           grep -q "sdkVersion:'26'" /tmp/bubbles-apk-badging.txt
           sha256sum "$APK"
       - name: Upload separately installable Bubbles Preview APK
@@ -131,10 +141,10 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
-          mv dist/app-debug.apk dist/Bubbles-Preview-Android12.apk
-          (cd dist && sha256sum Bubbles-Preview-Android12.apk > Bubbles-Preview-Android12.apk.sha256)
+          mv dist/app-debug.apk dist/Bubbles-Preview5-Android12.apk
+          (cd dist && sha256sum Bubbles-Preview5-Android12.apk > Bubbles-Preview5-Android12.apk.sha256)
           if gh release view bubbles-preview-current --repo "$GH_REPO" >/dev/null 2>&1; then
-            gh release upload bubbles-preview-current dist/Bubbles-Preview-Android12.apk dist/Bubbles-Preview-Android12.apk.sha256 --clobber --repo "$GH_REPO"
+            gh release upload bubbles-preview-current dist/Bubbles-Preview5-Android12.apk dist/Bubbles-Preview5-Android12.apk.sha256 --clobber --repo "$GH_REPO"
           else
-            gh release create bubbles-preview-current dist/Bubbles-Preview-Android12.apk dist/Bubbles-Preview-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Bubbles Preview 4 installs alongside previous Bubbles versions; this is a test-signed preview, not a production release."
+            gh release create bubbles-preview-current dist/Bubbles-Preview5-Android12.apk dist/Bubbles-Preview5-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Bubbles Preview 5 installs alongside previous Bubbles versions and avoids signature conflicts from earlier previews; this is a test-signed preview, not a production release."
           fi
