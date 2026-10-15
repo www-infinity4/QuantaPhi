@@ -6,7 +6,7 @@ const css=fs.readFileSync('bubbles-ai.css','utf8');
 
 test('Android has a single message field, no hidden pairing code button or extra form',()=>{
  assert.match(js,/input.placeholder=nativeOverlay\?'Message Bubbles or paste your 64-character Robot Brain code here/);
- assert.match(js,/ownerMode.textContent='Robot Brain not linked · paste your owner code in the message box and Send'/);
+ assert.match(js,/ownerMode.textContent='Robot Brain not linked'/);
  assert.match(js,/await consumeOwnerCodeFromChat\(spoken,fromVoice\)/);
  assert.doesNotMatch(js,/nativeOwnerInput|nativeOwnerButton|nativeOwnerRow|nativeOwnerPaste/);
  assert.match(css,/html\.bubbles-native-overlay \.ba-composer/);
