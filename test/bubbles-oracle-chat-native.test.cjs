@@ -30,7 +30,7 @@ test('text chat stores bounded local history and typed responses stay silent', (
 });
 
 test('preview five installs separately when old package signer changed', () => {
-  assert.match(gradle, /versionCode 13/);
-  assert.match(gradle, /versionName '0\.13\.0'/);
+  assert.match(gradle, /versionCode 14/);
+  assert.match(gradle, /versionName '0\.14\.0'/);
   assert.match(gradle, /applicationIdSuffix '\.preview5'/);
 });
