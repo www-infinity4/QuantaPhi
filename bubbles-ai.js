@@ -563,8 +563,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(noteResult){
   messages.push({role:'user',text:spoken},{role:'assistant',text:noteResult});persistChat();
   display(spoken,'you');display(noteResult,'ai');status.textContent=noteResult;
-  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=noteResult;
-  else if(config.voice&&!nativeOverlay)speakText(noteResult);
+  // During continuous dictation, do not interrupt the next sentence with
+  // a spoken "saved note" confirmation. The visible chat and storage receipt
+  // still acknowledge every note; start/stop confirmations remain audible.
+  const quietNote=fromVoice&&noteTaking&&noteResult.startsWith('Saved note:');
+  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=quietNote?'':noteResult;
+  else if(config.voice&&!nativeOverlay&&!quietNote)speakText(noteResult);
   nativeSpeechPending=false;
   return;
  }
