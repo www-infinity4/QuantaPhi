@@ -29,11 +29,52 @@ function ui(){
  const upload=make('input','sw-field');upload.type='file';upload.id='sw-source-image';upload.accept='image/jpeg,image/png,image/webp';upload.setAttribute('aria-label','Upload a picture to inspire the story');
  const photo=make('img','sw-source-preview');photo.id='sw-source-preview';photo.alt='Selected story source picture';photo.hidden=true;
  const photoNote=make('p','sw-muted','Optional: upload a picture and Oracle will inspect visible details before writing. No filename guessing. PNG, JPG or WebP, up to 10 MB.');photoNote.id='sw-source-note';
+ // Optional suggestions use this user's own retained Bubbles messages.
+ // No ChatGPT conversation content is inferred from a ChatGPT sign-in.
+ const personalRow=make('section','sw-personal-row');personalRow.id='sw-personal-ideas';
+ const personalize=make('input','');personalize.type='checkbox';personalize.id='sw-personalize';
+ personalize.checked=read('quantaPhi:storyWriter:personalize:v1',false)===true;
+ const personalizeLabel=make('label','sw-personal-label');
+ personalizeLabel.append(personalize,make('span','','Use my Bubbles conversation to suggest story openings'));
+ const personalIdeas=make('div','sw-personal-choices');personalIdeas.setAttribute('aria-live','polite');
+ const privacyNote=make('p','sw-muted','Off unless you choose it. Suggestions stay in this browser; your ChatGPT sign-in does not reveal ChatGPT history.');
+ personalRow.append(personalizeLabel,personalIdeas,privacyNote);
+ async function refreshPersonalIdeas(){
+  personalIdeas.replaceChildren();
+  if(!personalize.checked)return;
+  const memory=window.BubblesMemory;
+  if(!memory?.enabled){personalIdeas.append(make('p','sw-muted','Enable Remember my conversation inside Bubbles to use your previous topics.'));return}
+  try{
+   const turns=(await memory.recent(160)).filter(m=>m.role==='user'&&m.text.length>=16);
+   const candidates=[];
+   const seen=new Set();
+   for(const turn of turns.slice().reverse()){
+    const raw=turn.text.replace(/https?:\/\/\S+/g,'').replace(/\s+/g,' ').trim();
+    if(/\b(password|passphrase|pin number|credit card|bank account|bearer token|api key|secret key|social security)\b/i.test(raw))continue;
+    const sourceTopic=raw.split(/[.!?]/)[0].replace(/^(please|can you|i want|i need|tell me about|find|search for|explain|what is|make|create|build|fix|repair)\s+/i,'').slice(0,110).trim();
+    if(sourceTopic.length<15||sourceTopic.length>110)continue;
+    const normalized=sourceTopic.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+    if(!normalized||seen.has(normalized))continue;
+    seen.add(normalized);candidates.push(sourceTopic);
+    if(candidates.length===4)break;
+   }
+   if(!candidates.length){personalIdeas.append(make('p','sw-muted','No suitable saved Bubbles topics yet. You can still write a story without history.'));return}
+   for(const [index,topic] of candidates.entries()){
+    const genre=['Mystery','Science fiction','Adventure','Ghost story'][index%4];
+    const prompt='Write an original '+genre.toLowerCase()+' story inspired by this topic: '+topic+'. Surprise me with an imaginative plot.';
+    const button=make('button','sw-personal-idea',topic);
+    button.type='button';button.setAttribute('aria-label','Start a '+genre+' story from '+topic);
+    button.addEventListener('click',()=>{idea.value=prompt;type.value=genre;idea.focus()});
+    personalIdeas.append(button);
+   }
+  }catch{personalIdeas.append(make('p','sw-muted','History is unavailable on this device. Your manual story inputs still work.'))}
+ }
+ personalize.addEventListener('change',()=>{store('quantaPhi:storyWriter:personalize:v1',personalize.checked);void refreshPersonalIdeas()});
  const go=make('button','sw-primary','Write story + create image');go.type='button';go.id='sw-write';
  const viewStories=make('button','sw-view-stories','View Stories');viewStories.type='button';viewStories.id='sw-view-stories';
  viewStories.setAttribute('aria-controls','sw-saved-library');viewStories.setAttribute('aria-expanded','false');
  const notice=make('p','sw-notice','');notice.id='sw-notice';notice.setAttribute('role','status');
- form.append(make('label','sw-label','Describe your story'),idea,make('label','sw-label','Keywords (optional)'),keys,make('label','sw-label','Picture to write about (optional)'),upload,photo,photoNote,options,go,viewStories,notice);
+ form.append(make('label','sw-label','Describe your story'),idea,personalRow,make('label','sw-label','Keywords (optional)'),keys,make('label','sw-label','Picture to write about (optional)'),upload,photo,photoNote,options,go,viewStories,notice);
  const section=make('section','sw-card sw-output');section.id='sw-output';section.hidden=true;
  const header=make('div','sw-result-head');header.append(make('span','sw-eyebrow','YOUR ORIGINAL STORY'),make('h3','sw-title',''));
  const sourceArt=make('img','sw-art sw-original-photo');sourceArt.id='sw-original-photo';sourceArt.alt='Original picture submitted by the storyteller';sourceArt.hidden=true;
@@ -55,6 +96,7 @@ function ui(){
  history.append(picker,library,exportBtn,historyState);
  section.append(header,sourceArt,sourceCaption,art,artStatus,body,controls,rewardStatus);
  root.append(form,section,history);
+ void refreshPersonalIdeas();
  $('#sw-write').addEventListener('click',()=>void writeStory());
  upload.addEventListener('change',previewSource);
  $('#sw-star').addEventListener('click',star);

@@ -17,6 +17,17 @@ const nativeOverlay=!embedded&&params.get('nativeOverlay')==='1';
 // Native Android uses the identical QuantaPhi website assistant and owner-wallet
 // gates. It must not copy Chrome cookies or obtain owner rights from a query string.
 let nativeSpeechReply='',nativeSpeechPending=false,noteTaking=false;
+let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=null;
+function nativeChatGPT(prompt){
+ if(!nativeOverlay||!nativeGPTAvailable)return Promise.reject(Error('Android ChatGPT plan is not connected'));
+ if(nativeGPTRequest)return Promise.reject(Error('Another ChatGPT response is in progress'));
+ return new Promise((resolve,reject)=>{
+  const id=crypto.randomUUID();
+  const timeout=setTimeout(()=>{if(nativeGPTRequest?.id===id){nativeGPTRequest=null;reject(Error('Android ChatGPT response timed out'))}},90000);
+  nativeGPTRequest={id,prompt:String(prompt).slice(0,18000),resolve(value){clearTimeout(timeout);resolve(value)},
+   reject(error){clearTimeout(timeout);reject(error)},taken:false};
+ });
+}
 if(nativeOverlay)document.documentElement.classList.add('bubbles-native-overlay');
 const bubbleId=embedded?(String(params.get('id')||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,48)||'embedded'):'';
 const NOTES='quantaphi:bubbles:notes:v1'+(bubbleId?':'+bubbleId:'');
@@ -130,7 +141,14 @@ const provider=create('p','ba-muted','Live now: Oracle Cloudflare AI. ChatGPT an
 const openai=create('a','ba-link','ChatGPT sign-in requirements ↗');openai.href='https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt';openai.target='_blank';openai.rel='noopener noreferrer';
 const claude=create('a','ba-link','Claude third-party API requirements ↗');claude.href='https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account';claude.target='_blank';claude.rel='noopener noreferrer';
 const github=create('a','ba-link','GitHub App permission model ↗');github.href='https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps';github.target='_blank';github.rel='noopener noreferrer';
-connections.append(provider,openai,claude,github);
+const gptConnect=create('button','ba-control ba-chatgpt-login','Continue with ChatGPT');
+gptConnect.type='button';gptConnect.hidden=embedded;
+const gptStatus=create('p','ba-muted','ChatGPT identity is separate from QuantaPhi wallet and does not share past ChatGPT conversations or memory.');
+gptConnect.addEventListener('click',()=>{
+ if(nativeOverlay){nativeGPTSignInRequested=true;gptStatus.textContent='Opening the native Android ChatGPT permission flow. The website never receives your sign-in tokens.'}
+ else{gptStatus.textContent='ChatGPT website sign-in requires an approved OpenAI OAuth client ID for QuantaPhi. Until registered, Bubbles uses Oracle; Android Bubbles has its own supported device-local sign-in.';}
+});
+connections.append(provider,gptConnect,gptStatus,openai,claude,github);
 card.append(edit,connections);
 const publishing=create('div','ba-publish');
 publishing.append(create('strong','','Publish your bubble'));
@@ -170,7 +188,11 @@ cloudToggle.type='checkbox';cloudToggle.checked=cloudChat;cloudToggle.disabled=!
 cloudLabel.append(cloudToggle,create('span','','Sync full Bubbles history between browser and Android with my Unified Wallet'));
 const cloudDelete=create('button','ba-control','Erase wallet-synced Bubbles memory');cloudDelete.type='button';cloudDelete.hidden=!cloudChat;
 const clearChat=create('button','ba-control','Clear this view');clearChat.type='button';
-privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete);
+const importLabel=create('label','ba-privacy-label','Import my ChatGPT export (optional)');
+const importGPT=create('input','ba-field');importGPT.type='file';importGPT.accept='.json,application/json';
+importGPT.setAttribute('aria-label','Import conversations.json from your ChatGPT data export');
+const importStatus=create('p','ba-muted','ChatGPT sign-in does not share old chats. Import a conversations.json file you choose to reuse selected conversation ideas locally.');
+privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
@@ -194,6 +216,13 @@ for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi
 }
 tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
 panel.append(header,status,memoryHint,conversation,composer,tools);
+if(nativeOverlay){
+ // Native OAuth and model inference live on the device, not in this WebView.
+ // Expose the entry point above conversation; don't bury it in hidden settings.
+ const providerRow=create('div','ba-native-provider');
+ providerRow.append(gptConnect,gptStatus);
+ panel.insertBefore(providerRow,conversation);
+}
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
  panel.insertBefore(program,composer);
@@ -298,6 +327,41 @@ function display(text,who,greeting=false){
 for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
 // Native WebView and Chrome use the same first-party UI but have independent
 // cookies. This IndexedDB archive supplements the existing owner Brain archive.
+// One-time explicit user-selected import; no ChatGPT passwords, cookies or
+// hidden account data are accessed. Existing cloud sync settings still apply.
+importGPT.addEventListener('change',async()=>{
+ const file=importGPT.files?.[0];if(!file)return;
+ if(!keepChat||!longMemory){importStatus.textContent='Enable conversation memory in Bubbles first.';importGPT.value='';return}
+ if(file.size>40*1024*1024){importStatus.textContent='This JSON is over 40 MB; split your export before importing on this phone.';importGPT.value='';return}
+ try{
+  const parsed=JSON.parse(await file.text());
+  if(!Array.isArray(parsed))throw Error('Choose the conversations.json file extracted from your ChatGPT export');
+  const records=[];
+  for(const thread of parsed){
+   if(!thread?.mapping||typeof thread.mapping!=='object')continue;
+   for(const [nodeId,node] of Object.entries(thread.mapping)){
+    const m=node?.message,role=m?.author?.role;
+    if(role!=='user'&&role!=='assistant')continue;
+    const parts=m.content?.parts;
+    const written=Array.isArray(parts)?parts.filter(x=>typeof x==='string').join(' '):
+     typeof m.content?.text==='string'?m.content.text:'';
+    if(!written.trim())continue;
+    const at=Math.round((Number(m.create_time)||Number(thread.create_time)||Date.now()/1000)*1000);
+    records.push({id:'gpt_'+String(thread.id||'thread').replace(/[^a-z0-9_-]/gi,'').slice(0,28)+'_'+String(nodeId).replace(/[^a-z0-9_-]/gi,'').slice(0,35),
+      role,text:written.slice(0,6000),at:Math.max(946684800000,Math.min(Date.now(),at))});
+    if(records.length>=12000)break;
+   }
+   if(records.length>=12000)break;
+  }
+  if(!records.length)throw Error('No readable messages in this export');
+  const upload=longMemory.cloudConnected?' This will also sync imported messages to your verified QuantaPhi wallet.':' These messages will remain in this browser unless you explicitly enable wallet cloud sync.';
+  if(!confirm('Import '+records.length+' ChatGPT messages into your Bubbles memory?'+upload)){importStatus.textContent='Import cancelled.';return}
+  importStatus.textContent='Importing '+records.length+' messages to your private Bubbles history…';
+  for(let i=0;i<records.length;i+=50)await longMemory.appendAll(records.slice(i,i+50));
+  importStatus.textContent='Imported '+records.length+' ChatGPT export messages into Bubbles memory. Original exported JSON remains yours. This is not an automatic ChatGPT connection.';
+ }catch(error){importStatus.textContent='History import failed: '+String(error.message||error).slice(0,160)}
+ finally{importGPT.value=''}
+});
 longMemory?.onUpdate((events,error)=>{
  if(error){memoryHint.textContent='Private archive sync paused: '+error+'. Owner Brain memory is unchanged.';return}
  if(Array.isArray(events)&&events.length){
@@ -391,6 +455,19 @@ async function sendMessage(text,fromVoice=false){
  const spoken=String(text||'').trim();if(busy||!spoken)return;
  if(fromVoice&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
  if(busy)return;
+ if(/^(?:(?:please|bubbles)[\\s,:]+)*(?:what tools (?:do you have|can you use)|what can you do|list (?:your|available) tools)[.!?]*$/i.test(spoken)){
+  const local='Available Bubbles tools: Oracle conversation, news research, resonance calculator, personal notes, saved Bubbles memory and user-approved story suggestions.';
+  const owner=embedded?'This embedded visitor assistant cannot control the QuantaPhi Robot Brain.':
+   'With a verified owner wallet I can submit Robot Brain tickets and read receipts; Greenbeans and Pink Panther still need runner authorization, source tests and verified merge results.';
+  const android=nativeOverlay?'The Android app can record sound and request screen capture, and read visible screen text when Accessibility permission is enabled. Images require Android screen permission. ChatGPT plan inference runs only if connected in this APK.':
+   'Full Android screenshot and microphone controls only work in the separately installed Bubbles APK with Android permissions.';
+  const response=[local,owner,android,'I cannot silently read ChatGPT history, create a GitHub repository without credentials, or bypass Android permissions.'].join(' ');
+  display(spoken,'you');display(response,'ai');
+  messages.push({role:'user',text:spoken},{role:'assistant',text:response});
+  messages=messages.slice(-400);persistChat();
+  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=response;else if(config.voice&&!nativeOverlay)speakText(response);
+  nativeSpeechPending=false;return;
+ }
  if(!embedded&&/^(?:(?:please|bubbles)[\s,:]+)*(?:pair|link|sync|connect)\b.{0,60}\b(?:apk|android|phone|floating bubble)\b/i.test(spoken)){
   busy=true;send.disabled=true;let resultText;
   try{const headers=await verifiedOwnerHeaders();const r=await fetch(BRAIN+'/owner/pair/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',signal:AbortSignal.timeout(15000)});const result=await r.json();if(!r.ok||!result.ok||!/^[a-f0-9]{64}$/.test(result.code||''))throw Error(result.error||'pairing_unavailable');resultText='Open the APK’s Owner access area and paste this into “Owner pairing code or recovery key”, then tap Connect owner session. This one-use code expires in two minutes: '+result.code+'. Once connected, both sessions share your owner conversation. This pairs Bubbles; it does not copy ChatGPT history.';}catch(error){resultText='I could not create the owner pairing code: '+String(error.message||error)+'. Use your verified QuantaPhi owner session at https://quantaphi.org/#robotBrainOwner .';}
@@ -456,7 +533,12 @@ async function sendMessage(text,fromVoice=false){
  try{
   const detailed=isOwnerWorkRequest(request)||/\b(?:analy[sz]e|diagnose|architecture|debug|design|research|thorough|compare|deeply|repository)\b/i.test(request);
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),detailed?60000:38000);
-  let response,json;try{if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}
+  let response,json;try{
+  if(nativeOverlay&&nativeGPTAvailable&&!config.privateContext){
+   try{const output=await nativeChatGPT(prompt);response={ok:true};json={ok:true,output,provider:'Android ChatGPT plan'};gptStatus.textContent='Response generated using the authorized ChatGPT plan on this phone.'}
+   catch(error){nativeGPTAvailable=false;gptStatus.textContent='Android ChatGPT unavailable; using Oracle: '+String(error.message||error).slice(0,90);
+    response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}
+  }else if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.error||'Oracle conversation failed'));
   const answer=extract(json);if(!answer)throw Error('The AI returned no spoken or written reply');
   messages.push({role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
@@ -700,6 +782,24 @@ if(!embedded&&incomingWork&&incomingWork.length<=1800){
 }
 window.QuantaBubbles={
  open:()=>toggle(true),close:()=>toggle(false),
+ setNativeGPTAvailable:(available)=>{
+  if(!nativeOverlay)return false;
+  nativeGPTAvailable=available===true;
+  gptStatus.textContent=nativeGPTAvailable?'ChatGPT plan connected in this Android app · local inference available.':'ChatGPT is not connected on this Android device. Tap Continue with ChatGPT to authorize.';
+  return true;
+ },
+ takeNativeGPTLogin:()=>{if(!nativeOverlay||!nativeGPTSignInRequested)return false;nativeGPTSignInRequested=false;return true;},
+ drainNativeGPTRequest:()=>{
+  if(!nativeOverlay||!nativeGPTRequest||nativeGPTRequest.taken)return '';
+  nativeGPTRequest.taken=true;return JSON.stringify({id:nativeGPTRequest.id,prompt:nativeGPTRequest.prompt});
+ },
+ finishNativeGPTRequest:(id,output,error)=>{
+  if(!nativeOverlay||!nativeGPTRequest||nativeGPTRequest.id!==id)return false;
+  const request=nativeGPTRequest;nativeGPTRequest=null;
+  if(error)request.reject(Error(String(error).slice(0,150)));
+  else request.resolve(String(output||'').slice(0,16000));
+  return true;
+ },
  isNativeOverlay:nativeOverlay,
  voiceConflict:()=>voiceConflict,
  claimNativeVoice:()=>{voiceConflict=false;voiceLeaseWanted=true;void sharedVoice(true);},

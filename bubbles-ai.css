@@ -156,3 +156,18 @@
  .ba-panel .ba-actions{grid-template-columns:repeat(3,minmax(0,1fr))}
  .ba-panel .ba-actions button{font-size:12px;padding:8px 4px}
 }
+
+
+/* Shared first-party ChatGPT authorization surface. The APK owns its login
+   secrets and emits only a boolean, never a bearer token, into this WebView. */
+.ba-panel .ba-native-provider{
+ display:grid;gap:4px;padding:9px 12px;background:#fffaf3;
+ border:1px solid #e4d9cd;border-radius:16px;margin:6px 0;
+}
+.ba-panel .ba-native-provider .ba-chatgpt-login,
+#bubblesAICard .ba-chatgpt-login{
+ min-height:46px;background:#b83b32;color:#fff;border:1px solid #b83b32;
+ border-radius:999px;font-size:15px;font-weight:800;
+}
+.ba-panel .ba-native-provider .ba-muted{font-size:12px;line-height:1.35}
+.ba-panel .ba-privacy input[type=file]{font-size:13px;max-width:100%;overflow-wrap:anywhere}

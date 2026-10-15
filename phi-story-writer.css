@@ -43,3 +43,16 @@
 #phiStoryWriter .sw-library-item h4{font-size:16px;color:#0a3257;margin:0 0 5px;line-height:1.25;overflow-wrap:anywhere}
 #phiStoryWriter .sw-library-teaser{font-size:13px;color:#214a70;line-height:1.5;overflow-wrap:anywhere}
 #phiStoryWriter .sw-library-open{min-height:44px;border:1px solid #0e3d70;border-radius:10px;background:#164c89;color:white;padding:8px 14px;font-weight:850}
+
+
+/* Personal prompts stay local until a visitor actively chooses an idea. */
+#phiStoryWriter .sw-personal-row{
+ margin:12px 0 14px;padding:14px;border-radius:17px;border:1px solid #b8cde5;
+ background:#fff;color:#312722;
+}
+#phiStoryWriter .sw-personal-label{display:flex;align-items:center;gap:10px;font-size:14px;color:#312722;font-weight:800}
+#phiStoryWriter .sw-personal-label input{width:22px;height:22px;accent-color:#b83b32}
+#phiStoryWriter .sw-personal-choices{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+#phiStoryWriter .sw-personal-idea{border-radius:999px;background:#eff4fb;color:#123f79;
+ border:1px solid #a9c6e7;min-height:44px;padding:8px 14px;font:750 13px/1.35 system-ui,sans-serif}
+#phiStoryWriter .sw-personal-idea:hover{background:#e5eefe}

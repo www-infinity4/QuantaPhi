@@ -34,13 +34,18 @@ import android.widget.TextView;
  * Recognition continues while the panel is open; typing is optional.
  */
 final class FloatingOracleWindow {
-    private static final int BACKGROUND = Color.rgb(22, 18, 36);
-    private static final int PURPLE = Color.rgb(108, 75, 178);
-    private static final int LIGHT = Color.rgb(249, 246, 255);
-    private static final int MUTED = Color.rgb(196, 180, 219);
+    // Oracle Octaves visual tokens (light fallback; the actual site supplies its CSS).
+    private static final int BACKGROUND = Color.rgb(251, 247, 238);
+    private static final int PRIMARY = Color.rgb(181, 48, 39);
+    private static final int LIGHT = Color.rgb(255, 255, 255);
+    private static final int INK = Color.rgb(49, 37, 41);
+    private static final int MUTED = Color.rgb(101, 85, 102);
+    private static final int LINE = Color.rgb(222, 208, 197);
     private final BubblesService service;
     private final WindowManager manager;
     private final Handler ui = new Handler(Looper.getMainLooper());
+    private final java.util.concurrent.ExecutorService gptWork=java.util.concurrent.Executors.newSingleThreadExecutor();
+    private boolean gptBusy=false;
     private LinearLayout root;
     private TextView conversation, status, hearing;
     private ScrollView scroll;
@@ -110,8 +115,8 @@ final class FloatingOracleWindow {
         b.setMinHeight(0);
         b.setMinimumHeight(0);
         b.setPadding(dp(9), dp(8), dp(9), dp(8));
-        b.setTextColor(LIGHT);
-        b.setBackground(shape(primary ? PURPLE : Color.rgb(55, 45, 79), 14, 0));
+        b.setTextColor(primary ? LIGHT : INK);
+        b.setBackground(shape(primary ? PRIMARY : LIGHT, 20, primary ? 0 : LINE));
         b.setElevation(dp(2));
         return b;
     }
@@ -123,11 +128,11 @@ final class FloatingOracleWindow {
         LinearLayout page = new LinearLayout(service);
         page.setOrientation(LinearLayout.VERTICAL);
         page.setPadding(dp(16), dp(14), dp(16), dp(14));
-        page.setBackground(shape(BACKGROUND, 22, Color.rgb(103, 75, 161)));
+        page.setBackground(shape(BACKGROUND, 22, LINE));
 
         LinearLayout header = new LinearLayout(service);
         header.setGravity(Gravity.CENTER_VERTICAL);
-        TextView title = text("ORACLE  /  BUBBLES", 21, LIGHT);
+        TextView title = text("ORACLE OCTAVES  /  BUBBLES", 21, INK);
         title.setTypeface(null, Typeface.BOLD);
         header.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
         muteButton = button("Mic off", false);
@@ -144,7 +149,7 @@ final class FloatingOracleWindow {
         header.addView(close);
         page.addView(header);
 
-        status = text("● Listening", 13, Color.rgb(170, 248, 215));
+        status = text("● Listening", 13, Color.rgb(51, 112, 85));
         status.setPadding(0, dp(8), 0, dp(5));
         page.addView(status);
         hearing = text("Listening. Speak naturally; typing is optional.", 13, MUTED);
@@ -169,8 +174,8 @@ final class FloatingOracleWindow {
 
         scroll = new ScrollView(service);
         scroll.setFillViewport(true);
-        scroll.setBackground(shape(Color.rgb(32, 26, 52), 12, 0));
-        conversation = text("Your conversation appears here.", 16, LIGHT);
+        scroll.setBackground(shape(LIGHT, 16, LINE));
+        conversation = text("Your conversation appears here.", 16, INK);
         conversation.setPadding(dp(12), dp(12), dp(12), dp(12));
         conversation.setTextIsSelectable(true);
         scroll.addView(conversation);
@@ -184,11 +189,11 @@ final class FloatingOracleWindow {
         input.setSingleLine(false);
         input.setMinLines(1);
         input.setMaxLines(3);
-        input.setTextColor(LIGHT);
+        input.setTextColor(INK);
         input.setHintTextColor(MUTED);
         input.setTextSize(15);
         input.setHint("Optional typed message…");
-        input.setBackground(shape(Color.rgb(49, 39, 72), 15, Color.rgb(97, 76, 128)));
+        input.setBackground(shape(LIGHT, 15, LINE));
         input.setPadding(dp(12), dp(9), dp(12), dp(9));
         composer.addView(input, new LinearLayout.LayoutParams(0, -2, 1));
         Button send = button("Send", true);
@@ -215,7 +220,7 @@ final class FloatingOracleWindow {
         try {
             website = new WebView(service);
             website.setVisibility(View.GONE);
-            website.setBackgroundColor(Color.rgb(247, 244, 251));
+            website.setBackgroundColor(BACKGROUND);
             WebSettings settings = website.getSettings();
             settings.setJavaScriptEnabled(true);
             settings.setDomStorageEnabled(true);
@@ -332,6 +337,48 @@ final class FloatingOracleWindow {
     }
     private void pollWebsiteReply() {
         if (!websiteReady || website == null) return;
+        website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.setNativeGPTAvailable("
+                + (ChatGPTSignIn.hasPlan(service) ? "true" : "false") + ")", null);
+        website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.takeNativeGPTLogin())", result -> {
+            if(!websiteReady || !"true".equals(result))return;
+            Intent open = new Intent(service, MainActivity.class).putExtra("open_chatgpt_signin",true)
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            try{service.startActivity(open);}catch(Exception error){
+                status.setText("Could not open ChatGPT sign-in settings.");
+            }
+        });
+        if(!gptBusy)website.evaluateJavascript(
+            "window.QuantaBubbles && window.QuantaBubbles.drainNativeGPTRequest()", payload -> {
+                if(!websiteReady || gptBusy || payload==null || "null".equals(payload))return;
+                try {
+                    Object decoded=new JSONTokener(payload).nextValue();
+                    if(!(decoded instanceof String) || ((String)decoded).isEmpty())return;
+                    JSONObject task=new JSONObject((String)decoded);
+                    String id=task.optString("id","");
+                    String prompt=task.optString("prompt","");
+                    if(!id.matches("[0-9a-fA-F-]{36}") || prompt.isEmpty() || prompt.length()>18000)return;
+                    gptBusy=true;
+                    gptWork.execute(() -> {
+                        String answer="",error="";
+                        try {
+                            if(!ChatGPTSignIn.hasPlan(service))throw new IllegalStateException("ChatGPT plan not authorized");
+                            answer=ChatGPTSignIn.ask(service,prompt);
+                        }catch(Exception problem){
+                            error=String.valueOf(problem.getMessage());
+                            if(error.length()>140)error=error.substring(0,140);
+                        }
+                        final String result=answer,problem=error;
+                        ui.post(() -> {
+                            gptBusy=false;
+                            if(websiteReady&&website!=null){
+                                website.evaluateJavascript(
+                                  "Boolean(window.QuantaBubbles&&window.QuantaBubbles.finishNativeGPTRequest("
+                                  +JSONObject.quote(id)+","+JSONObject.quote(result)+","+JSONObject.quote(problem)+"))",null);
+                            }
+                        });
+                    });
+                }catch(Exception ignored){}
+            });
         website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.voiceConflict())", value -> {
             if ("true".equals(value)) service.pauseSharedMicrophone();
         });
@@ -355,6 +402,7 @@ final class FloatingOracleWindow {
 
     void close() {
         ui.removeCallbacks(update);
+        gptWork.shutdownNow();
         websiteReady = false;
         pendingSpeech = "";
         dispatchInFlight = false;
