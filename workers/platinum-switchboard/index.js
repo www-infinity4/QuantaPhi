@@ -53,8 +53,12 @@ export class PlatinumLine{
     if(!ALIAS.test(from))return fail('caller_identity_required',400);
     const existing=await this.current();
     if(existing)return fail('line_busy',409);
-    const call={id:random(),callerHash:await sha(random()),from,createdAt:Date.now(),status:'ringing',offer:null,answer:null};
-    const rawTicket=random();call.callerHash=await sha(rawTicket);
+    // Per-destination abuse brake; incoming calls never create public number records.
+    const now=Date.now(),attempts=(await this.state.storage.get('attempts')||[]).filter(t=>now-t<600000);
+    if(attempts.length>=12)return fail('temporarily_rate_limited',429);
+    attempts.push(now);await this.state.storage.put('attempts',attempts);
+    const rawTicket=random();
+    const call={id:random(),callerHash:await sha(rawTicket),from,createdAt:now,status:'ringing',offer:null,answer:null};
     await this.state.storage.put('call',call);
     return json({ok:true,id:call.id,ticket:rawTicket,status:'ringing',to:p.alias});
    }
