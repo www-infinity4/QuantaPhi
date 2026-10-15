@@ -245,3 +245,32 @@ IndexedDB history; **Erase synced memory** (confirmation required) deletes the
 verified wallet's remote transcript as well. Work tickets, media and wallet
 transactions are separate from chat transcripts. Tests prove source-level
 authorization and event-deduplication behavior, not real Motorola mic concurrency.
+
+## Consecutive voice turns, native screen capture and Robot Brain work (0.16.0)
+
+- Android Bubbles keeps its foreground microphone even if the *website's*
+  optional owner voice lease is unavailable. A website sync failure must not
+  silently mute the next spoken command.
+- Recognized turns and typed commands wait in bounded FIFO queues when the
+  shared QuantaPhi chat is loading or busy. The first request is not overwritten
+  by a second instruction. A failed WebView callback is retried; callers should
+  check the visible connection status and actual work receipts.
+- Interrupted AudioRecord streams retry at most three times while Bubbles is
+  still started and microphone permission remains granted; permission denial,
+  intentional mute and app shutdown are never silently overridden.
+- Say **"record my screen"**. Android may require two taps: first the Bubbles
+  notification (to open the foreground activity), then Android's protected
+  "Start now" screen-sharing consent. **Bubbles cannot press the system consent
+  button for you.** After consent, Android starts Bubbles' recorder directly;
+  there is no second Bubbles recording button. Say **"stop recording"** or
+  **"stop screen recording"** afterwards; the native capture service saves the
+  file to **Movies/Bubbles** and exposes a Stop notification as a fallback.
+- **"Contact Robot Brain and ask it to add your missing tools"** is classified
+  as an explicit engineering task, not an assertion that new permissions have
+  already been granted. Only a verified owner session can save the ticket and
+  request the authorized runner; a queued ticket is not evidence of a code
+  edit, signed APK, merged PR or installed repair.
+- Preview 5 retains its same package ID but increments versionCode to 16.
+  Updates require the identical signing certificate as the installed Preview 5.
+  Signing caches are not a permanent release key, and real-phone installation
+  and continuous spoken stop/save remain to be verified.

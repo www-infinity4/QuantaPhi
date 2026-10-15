@@ -18,7 +18,7 @@ const nativeOverlay=!embedded&&params.get('nativeOverlay')==='1';
 // gates. It must not copy Chrome cookies or obtain owner rights from a query string.
 let nativeSpeechReply='',nativeSpeechPending=false,noteTaking=false;
 let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=null;
-let nativeCaptureRequest=''; // First-party Android WebView polls this; browser pages cannot perform OS capture.
+const nativeCaptureRequests=[]; // FIFO: Android polls requests; never replace a subsequent stop/start command.
 function nativeChatGPT(prompt){
  if(!nativeOverlay||!nativeGPTAvailable)return Promise.reject(Error('Android ChatGPT plan is not connected'));
  if(nativeGPTRequest)return Promise.reject(Error('Another ChatGPT response is in progress'));
@@ -538,7 +538,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Observation is delivered separately so its untrusted words can never be
  // classified as an owner job, local tool command, navigation, or approval.
  const screenEvidence=nativeOverlay?String(androidScreenEvidence||'').slice(0,1200):'';if(busy||!spoken)return;
- if(fromVoice&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
+ // Android's user-started foreground microphone is the authoritative capture
+ // session. An unreachable Robot Brain voice lease is not a reason to discard
+ // its second/third commands; only browser-owned microphones need this gate.
+ if(fromVoice&&!nativeOverlay&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
+ if(fromVoice&&nativeOverlay&&ownerReady)void sharedVoice(false);
  if(busy)return;
  // A typed message inside the Android floating web chat must reach the
  // native recorder, never a chat model that has no Android capture tools.
@@ -555,7 +559,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const response=stopping
    ?'I have sent your stop request to Android. Check Movies/Bubbles after the recording finishes saving.'
    :'I have passed your request to Android Bubbles. Tap the capture approval notification and accept the Android screen-sharing dialog. Recording has not started yet.';
-  nativeCaptureRequest=spoken;
+  if(nativeCaptureRequests.length>=24){
+    status.textContent='Android has 24 unprocessed capture commands. Check the Bubbles connection.';
+    nativeSpeechPending=false;return;
+   }
+   nativeCaptureRequests.push(spoken);
   display(spoken,'you');display(response,'ai');
   messages.push({role:'user',text:spoken},{role:'assistant',text:response});messages=messages.slice(-400);persistChat();
   status.textContent=response;nativeSpeechPending=false;return;
@@ -1000,7 +1008,7 @@ window.QuantaBubbles={
  takeNativeGPTLogin:()=>{if(!nativeOverlay||!nativeGPTSignInRequested)return false;nativeGPTSignInRequested=false;return true;},
  drainNativeCaptureRequest:()=>{
   if(!nativeOverlay)return '';
-  const request=nativeCaptureRequest;nativeCaptureRequest='';
+  const request=nativeCaptureRequests.shift()||'';
   return request?JSON.stringify({text:request}):'';
  },
  drainNativeGPTRequest:()=>{

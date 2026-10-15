@@ -53,11 +53,24 @@ test('natural spoken commands use real OS capture tools and consent instead of a
 test('floating QuantaPhi website composer passes screen capture to native Android instead of model', () => {
   const site = fs.readFileSync('bubbles-ai.js', 'utf8');
   const bridge = source('FloatingOracleWindow.java');
-  assert.match(site, /nativeCaptureRequest=spoken/);
+  assert.match(site, /nativeCaptureRequests\.push\(spoken\)/);
+  assert.match(site, /nativeCaptureRequests\.shift\(\)/);
   assert.match(site, /drainNativeCaptureRequest/);
   assert.match(site, /Recording has not started yet/);
   assert.match(bridge, /VoiceCaptureCommands\.parse\(command\)/);
   assert.match(bridge, /BubblesService\.ACTION_TEXT/);
   assert.match(bridge, /drainNativeCaptureRequest/);
   assert.match(site, /(?:talk\|speak\|communicate\|connect\|link)/);
+});
+
+test('Android consent must be approved by the person, then the native app starts and stops itself',()=>{
+  const activity=source('MainActivity.java');
+  const service=source('BubblesService.java');
+  assert.match(activity,/projection\.createScreenCaptureIntent\(\)/);
+  assert.match(activity,/requestCode == SCREEN_REQUEST/);
+  assert.match(activity,/if \(resultCode != RESULT_OK \|\| data == null\)/);
+  assert.match(activity,/startForegroundService\(capture\)/);
+  assert.match(service,/ScreenCaptureService\.STOP/);
+  // Do not synthesize clicks on Android's protected MediaProjection consent.
+  assert.doesNotMatch(service,/performGlobalAction\(.*(?:APPROVE|ALLOW)/);
 });
