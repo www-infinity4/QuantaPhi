@@ -29,8 +29,8 @@ test('text chat stores bounded local history and typed responses stay silent', (
   assert.match(service, /if \(!speechSuppressed && !quietRequest\) speak\(result\);/);
 });
 
-test('preview increments version without changing the installed package', () => {
-  assert.match(gradle, /versionCode 12/);
-  assert.match(gradle, /versionName '0\.12\.0'/);
-  assert.match(gradle, /applicationIdSuffix '\.preview4'/);
+test('preview five installs separately when old package signer changed', () => {
+  assert.match(gradle, /versionCode 13/);
+  assert.match(gradle, /versionName '0\.13\.0'/);
+  assert.match(gradle, /applicationIdSuffix '\.preview5'/);
 });
