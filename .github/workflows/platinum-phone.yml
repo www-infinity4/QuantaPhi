@@ -7,6 +7,7 @@ on:
       - "workers/quantaphi-site/worker.js"
       - "platinum/**"
       - "test/platinum-phone.test.cjs"
+      - "test/infinity-quickdial.test.cjs"
       - ".github/workflows/platinum-phone.yml"
   push:
     branches: [main]
@@ -16,6 +17,7 @@ on:
       - "workers/quantaphi-site/worker.js"
       - "platinum/**"
       - "test/platinum-phone.test.cjs"
+      - "test/infinity-quickdial.test.cjs"
       - ".github/workflows/platinum-phone.yml"
 jobs:
   switchboard:
@@ -25,7 +27,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - run: node --test test/platinum-phone.test.cjs
+      - run: node --test test/platinum-phone.test.cjs test/infinity-quickdial.test.cjs
+      - run: node --check phone/quickdial.js && node --check phone/phone.js
       - name: Verify deployed switchboard health and Durable Object binding
         shell: bash
         run: |
