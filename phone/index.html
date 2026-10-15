@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#edf0f4"><title>Infinity Platinum Phone | Web Address Calling</title>
+<meta name="description" content="Your own web-address phone line, reached from Infinity Platinum. Internet calls without a traditional phone number.">
+<link rel="stylesheet" href="/phone/phone.css?v=20261015-phone1"></head>
+<body><main class="phone-shell">
+<header class="phone-top"><a href="/platinum/">← Infinity Platinum</a><span class="brand">Pt · INFINITY PLATINUM PHONE</span></header>
+<h1>Your website.<br><span>Your phone line.</span></h1>
+<p class="lead">People call your web address. Infinity Switchboard rings the website you own. Voice and optional video travel over your current Wi-Fi or mobile data connection.</p>
+<div id="app-message" class="message" role="status" aria-live="polite">Checking the Infinity Switchboard connection…</div>
+<section id="register-panel" class="panel" aria-labelledby="register-title"><h2 id="register-title">Create your web phone address</h2>
+<p>Choose a unique address. Keep the owner key on this device: it is the proof needed to answer this line.</p>
+<form id="register-form"><label for="alias">Your phone address name</label>
+<div class="field-combo"><span>quantaphi.org/phone/</span><input id="alias" autocomplete="off" required minlength="3" maxlength="26" pattern="[a-z][a-z0-9-]{2,25}" placeholder="mary" autocapitalize="off"></div>
+<label for="display-name">Display name (optional)</label><input id="display-name" maxlength="48" placeholder="Mary">
+<button type="submit" class="primary">Create my web line</button></form>
+<p class="small">Beta web identities are first-come-first-served. Name ownership and account recovery need a separate verified-account system before a public-scale launch.</p></section>
+<section id="my-panel" class="panel" hidden><h2>Your live Infinity number</h2>
+<p class="your-link"><a id="my-link" target="_self" rel="noopener">—</a></p>
+<div class="actions"><button type="button" id="copy-link">Copy my address</button><button type="button" id="share-link">Share</button><button type="button" id="download-owner">Back up owner key</button></div>
+<p class="small">This is an internet address, not an assigned PSTN telephone number. To ring, leave this page open until Android incoming-call support is added.</p>
+<p id="presence" class="presence">Not connected</p></section>
+<section class="panel" aria-labelledby="dial-title"><h2 id="dial-title">Infinity Switchboard</h2>
+<form id="dial-form"><label for="dial">Web phone address, name, or ordinary phone number</label>
+<div class="field-combo dial"><input id="dial" inputmode="text" autocapitalize="off" autocomplete="off" placeholder="mary or quantaphi.org/phone/mary" required><button id="dial-start" class="primary" type="submit">Call</button></div></form>
+<div class="actions"><label class="checkbox"><input id="video" type="checkbox"> Include video</label><button type="button" id="check-address">Look up address</button></div>
+<p class="small">Web-to-web calls work only between registered Platinum addresses. Ordinary phone numbers require owner verification and a licensed telephone gateway; entering a number here will never assign it to another person or silently initiate a PSTN call.</p></section>
+<section id="incoming" class="panel alert" hidden><h2>Incoming Infinity call</h2><p id="incoming-info">Someone is calling.</p>
+<div class="actions"><button type="button" class="primary" id="answer">Answer</button><button type="button" id="decline">Decline</button></div></section>
+<section id="active" class="panel" hidden><h2 id="call-heading">Connecting…</h2><p id="call-status">Starting a private connection.</p>
+<div class="video-grid"><video id="remote-video" autoplay playsinline hidden></video><video id="local-video" autoplay playsinline muted hidden></video></div>
+<audio id="remote-audio" autoplay playsinline></audio>
+<div class="actions"><button type="button" id="unmute-play">Play incoming audio</button><button type="button" id="mute">Mute microphone</button><button type="button" id="hangup" class="danger">Hang up</button></div></section>
+<section class="panel"><h2>Your existing phone numbers</h2><p>Keep a private reminder of a number and the Platinum address it should eventually reach. This <strong>does not</strong> activate number forwarding, prove that you own the number, or change anyone's phone service.</p>
+<form id="legacy-form"><label for="legacy-number">Your existing number</label><input id="legacy-number" type="tel" placeholder="Your number" maxlength="24" autocomplete="off">
+<label for="legacy-alias">Point to Platinum web address</label><input id="legacy-alias" placeholder="mary" maxlength="26" autocomplete="off">
+<button type="submit">Save private forwarding plan</button></form><div id="legacy-list"></div>
+<p class="small">To make this forwarding live, we must first verify ownership of each number and connect the required carrier/SIP routing. No calls to 911 or ordinary phones are provided by this beta.</p></section>
+<section class="panel"><h2>Don't lose your words</h2><p>Anything you type below is restored locally if you switch websites or return to Platinum. It is not sent to the switchboard or another user.</p>
+<label for="phone-draft">Your ideas / notes</label><textarea id="phone-draft" rows="6" maxlength="100000" placeholder="Write your ideas here…"></textarea><p id="draft-state" class="small">Stored on this device only.</p></section>
+<footer>Infinity 2026® · Infinity Platinum Phone · Internet calling preview · Requires existing internet access · Not an emergency telephone service</footer>
+</main><script src="/phone/phone.js?v=20261015-phone1"></script></body></html>
