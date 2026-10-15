@@ -78,6 +78,8 @@ jobs:
           mkdir -p /tmp/bubbles-turns
           javac -d /tmp/bubbles-turns android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SpeechTurnBuffer.java android/bubbles-overlay/checks/SpeechTurnBufferCheck.java
           java -cp /tmp/bubbles-turns org.quantaphi.bubbles.SpeechTurnBufferCheck
+      - name: Verify retry-safe native message acknowledgements
+        run: node --test test/bubbles-native-message-ack.test.cjs
       - name: Verify native / QuantaPhi site parity and spoken notes
         run: node --test test/bubbles-native-site-parity.test.cjs
       - name: Verify Oracle chat interruption and text conversation

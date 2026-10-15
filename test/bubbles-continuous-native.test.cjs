@@ -36,15 +36,11 @@ test('movement uses full drag distance and clamps to screen', () => {
   assert.match(source, /if\(!moved\)/);
 });
 
-test('ticket handoff matches explicit commands and does not embed credentials', () => {
-  const literal = source.match(/addressed\.matches\(("(?:[^"\\]|\\.)*")\)/)[1];
-  const javaPattern = JSON.parse(literal);
-  const pattern = new RegExp(javaPattern.replace('(?i)', ''), 'i');
-  for (const command of ['create a work ticket to publish the APK', 'please make a ticket for Bubbles', 'submit ticket to fix voice']) assert.ok(pattern.test(command), command);
-  for (const phrase of ['what is a work ticket', 'do not create a work ticket', 'hello']) assert.ok(!pattern.test(phrase), phrase);
-  const handoff = source.slice(source.indexOf('if (addressed.matches'), source.indexOf('askOracle(addressed);'));
-  assert.match(handoff, /appendQueryParameter\("workRequest", addressed\)/);
-  assert.doesNotMatch(handoff, /Authorization|ownerToken|work\/tickets\/create/);
+test('ordinary spoken work uses the shared website without a native ticket handoff', () => {
+  assert.match(source, /oracleWindow != null && oracleWindow\.sendSpoken\(addressed\)/);
+  assert.doesNotMatch(source, /appendQueryParameter\("workRequest", addressed\)/);
+  const route=source.slice(source.indexOf('// Use the SAME QuantaPhi website assistant'),source.indexOf('private void offerCaptureApproval'));
+  assert.doesNotMatch(route, /askOracle\(addressed\)/);
 });
 test('TTS callback loss has a bounded recovery and diagnostics preserve replies', () => {
   assert.match(source, /generation == speechGeneration/);
