@@ -289,10 +289,10 @@ linkStatus.setAttribute('role','status');
 linkBubbles.hidden=embedded;linkStatus.hidden=embedded;
 const cloudDelete=create('button','ba-control','Erase wallet-synced Bubbles memory');cloudDelete.type='button';cloudDelete.hidden=!cloudChat;
 const clearChat=create('button','ba-control','Clear this view');clearChat.type='button';
-const importLabel=create('label','ba-privacy-label','Import my ChatGPT export (optional)');
+const importLabel=create('label','ba-privacy-label','Import ChatGPT or Gemini history (choose exported JSON)');
 const importGPT=create('input','ba-field');importGPT.type='file';importGPT.accept='.json,application/json';
-importGPT.setAttribute('aria-label','Import conversations.json from your ChatGPT data export');
-const importStatus=create('p','ba-muted','ChatGPT sign-in does not share old chats. Import a conversations.json file you choose to reuse selected conversation ideas locally.');
+importGPT.setAttribute('aria-label','Import ChatGPT conversations.json or Gemini Apps MyActivity.json from Google Takeout');
+const importStatus=create('p','ba-muted','Sign-in does not grant access to earlier account chats. Choose each ChatGPT conversations.json or Google Takeout Gemini Apps MyActivity.json file. Bubbles indexes only the records actually present in that export.');
 privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
@@ -501,30 +501,79 @@ importGPT.addEventListener('change',async()=>{
  if(file.size>40*1024*1024){importStatus.textContent='This JSON is over 40 MB; split your export before importing on this phone.';importGPT.value='';return}
  try{
   const parsed=JSON.parse(await file.text());
-  if(!Array.isArray(parsed))throw Error('Choose the conversations.json file extracted from your ChatGPT export');
   const records=[];
-  for(const thread of parsed){
-   if(!thread?.mapping||typeof thread.mapping!=='object')continue;
-   for(const [nodeId,node] of Object.entries(thread.mapping)){
-    const m=node?.message,role=m?.author?.role;
-    if(role!=='user'&&role!=='assistant')continue;
-    const parts=m.content?.parts;
-    const written=Array.isArray(parts)?parts.filter(x=>typeof x==='string').join(' '):
-     typeof m.content?.text==='string'?m.content.text:'';
-    if(!written.trim())continue;
-    const at=Math.round((Number(m.create_time)||Number(thread.create_time)||Date.now()/1000)*1000);
-    records.push({id:'gpt_'+String(thread.id||'thread').replace(/[^a-z0-9_-]/gi,'').slice(0,28)+'_'+String(nodeId).replace(/[^a-z0-9_-]/gi,'').slice(0,35),
-      role,text:written.slice(0,6000),at:Math.max(946684800000,Math.min(Date.now(),at))});
-    if(records.length>=12000)break;
+  const limit=12000;let truncated=false,source='';
+  const stableId=(value)=>{let hash=2166136261;for(let i=0;i<value.length;i++){hash=Math.imul(hash^value.charCodeAt(i),16777619)}return (hash>>>0).toString(16)};
+  const atTime=(value)=>{
+   const n=Number(value);
+   const timestamp=Number.isFinite(n)&&n>0?(n<10000000000?n*1000:n):Date.parse(String(value||''));
+   return Number.isFinite(timestamp)?Math.max(946684800000,Math.min(Date.now(),Math.round(timestamp))):Date.now();
+  };
+  const add=(role,value,at,id)=>{
+   if(records.length>=limit){truncated=true;return}
+   if(role!=='user'&&role!=='assistant')return;
+   const text=String(value||'').replace(/\\s+/g,' ').trim().slice(0,6000);
+   if(!text)return;
+   const time=atTime(at);
+   records.push({id:'import_'+source+'_'+stableId(String(id||'')+'|'+role+'|'+time+'|'+text),
+     role,text,at:time});
+  };
+  const threads=Array.isArray(parsed)?parsed:Array.isArray(parsed?.conversations)?parsed.conversations:[];
+  const chatGPT=threads.some(thread=>thread?.mapping&&typeof thread.mapping==='object');
+  if(chatGPT){
+   source='gpt';
+   for(const thread of threads){
+    if(!thread?.mapping||typeof thread.mapping!=='object')continue;
+    for(const [nodeId,node] of Object.entries(thread.mapping)){
+     const m=node?.message,role=m?.author?.role;
+     const parts=m?.content?.parts;
+     const written=Array.isArray(parts)?parts.filter(x=>typeof x==='string').join(' '):
+       typeof m?.content?.text==='string'?m.content.text:'';
+     add(role,written,m?.create_time||thread.create_time,thread.id+'_'+nodeId);
+    }
    }
-   if(records.length>=12000)break;
+  }else{
+   // Takeout My Activity contains user activity. Some exports also include
+   // paired conversation turns. Never fabricate Gemini replies that are absent.
+   source='gemini';
+   const activity=Array.isArray(parsed)?parsed:Array.isArray(parsed?.items)?parsed.items:
+    Array.isArray(parsed?.activities)?parsed.activities:
+    Array.isArray(parsed?.conversations)?parsed.conversations:
+    Array.isArray(parsed?.events)?parsed.events:[];
+   for(const [index,entry] of activity.entries()){
+    if(!entry||typeof entry!=='object')continue;
+    const turns=Array.isArray(entry.messages)?entry.messages:
+     Array.isArray(entry.entries)?entry.entries:Array.isArray(entry.turns)?entry.turns:[];
+    if(turns.length){
+     for(const [turnIndex,turn] of turns.entries()){
+      const rawRole=String(turn?.role||turn?.author?.role||turn?.speaker||'user').toLowerCase();
+      const role=['model','gemini','assistant'].includes(rawRole)?'assistant':
+       ['human','user'].includes(rawRole)?'user':'';
+      const content=typeof turn?.text==='string'?turn.text:
+       typeof turn?.content==='string'?turn.content:
+       typeof turn?.prompt==='string'?turn.prompt:
+       typeof turn?.response==='string'?turn.response:'';
+      add(role,content,turn?.create_time||turn?.timestamp||turn?.time||entry?.time,
+       String(entry.id||index)+':'+turnIndex);
+     }
+    }else{
+     const title=String(entry.title||'');
+     const description=typeof entry.description==='string'?entry.description:
+      typeof entry.subtitle==='string'?entry.subtitle:
+      typeof entry.prompt==='string'?entry.prompt:'';
+     const text=description||title;
+     if(text) add('user',text,entry.time||entry.timestamp||entry.createdTime||entry.create_time,
+      String(entry.id||index));
+    }
+   }
   }
+  if(truncated)throw Error('This export exceeds 12,000 text messages. Import the numbered/smaller JSON files separately to avoid losing the rest.');
   if(!records.length)throw Error('No readable messages in this export');
   const upload=longMemory.cloudConnected?' This will also sync imported messages to your verified QuantaPhi wallet.':' These messages will remain in this browser unless you explicitly enable wallet cloud sync.';
-  if(!confirm('Import '+records.length+' ChatGPT messages into your Bubbles memory?'+upload)){importStatus.textContent='Import cancelled.';return}
+  if(!confirm('Import '+records.length+' '+(source==='gpt'?'ChatGPT':'Gemini')+' text records into Bubbles memory?'+upload)){importStatus.textContent='Import cancelled.';return}
   importStatus.textContent='Importing '+records.length+' messages to your private Bubbles history…';
   for(let i=0;i<records.length;i+=50)await longMemory.appendAll(records.slice(i,i+50));
-  importStatus.textContent='Imported '+records.length+' ChatGPT export messages into Bubbles memory. Original exported JSON remains yours. This is not an automatic ChatGPT connection.';
+  importStatus.textContent='Imported '+records.length+' '+(source==='gpt'?'ChatGPT':'Gemini')+' text records. Imported material is searchable context, not a live provider connection; media and unavailable replies were not recreated.';
  }catch(error){importStatus.textContent='History import failed: '+String(error.message||error).slice(0,160)}
  finally{importGPT.value=''}
 });
@@ -802,7 +851,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   busy=true;send.disabled=true;let reply;
   try{
    const result=await requestRunner();
-   reply=result.status==='queued_for_runner'?'Robot Brain has requested its next authenticated job: '+result.ticketId+'/'+result.jobId+'. A runner request is NOT proof that code was edited or deployed.':
+   reply=result.status==='queued_for_runner'?'Robot Brain requested the next eligible job. It is waiting for a verified runner result; queued does not mean code was edited or deployed.':
     result.status==='no_pending_jobs'?'Robot Brain has no eligible queued jobs to request. Ask for a bot report to inspect recorded work.':
     'Robot Brain replied: '+String(result.status||'unknown').slice(0,100);
   }catch(error){reply='Robot Brain did not start a new job. '+String(error.message||error).slice(0,160)}
@@ -862,7 +911,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     (ticket.deduplicated?'Existing work ticket found ('+ticket.status+').':
      ticket.runner==='queued_for_runner'?'Work ticket saved; I asked the authorized Greenbeans runner to pick it up. Pink Panther must independently verify it.':
      'Work ticket saved, but the runner could not be confirmed: '+ticket.runner+'.')+
-    ' Your request is saved; you do not need to press another button. Track real results at https://quantaphi.org/#robotDirections . Job reference: '+ticket.id+'. No successful code change, merge or deployment has been verified by this receipt.'}
+    ' Your request is saved; you do not need to press another button. Track real results in the Robot Brain report at https://quantaphi.org/#robotDirections . No successful code change, merge or deployment has been verified by this receipt.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='connection'){
   try{workEvidence='Robot Brain connection verified. I can submit a work ticket when you describe the repair. No new ticket was created by this connection check.\n'+await readBrainReport()}
