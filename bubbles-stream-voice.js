@@ -21,9 +21,9 @@ export function encodeSpeechWav(chunks, inputRate) {
 }
 // Whisper can hallucinate text for background noise or a trailing silent clip.
 export function plausibleSpeechText(raw) {
- const text=String(raw||'').replace(/\\s+/g,' ').trim();
+ const text=String(raw||'').replace(/\s+/g,' ').trim();
  if(!text||text.length>1800||/(?:[0-9a-f]{32,}|[0-9]{12,})/i.test(text))return false;
- const words=text.toLowerCase().split(' ').map(word=>word.replace(/[^\\p{L}\\p{N}]/gu,'')).filter(Boolean);
+ const words=text.toLowerCase().split(' ').map(word=>word.replace(/[^\p{L}\p{N}]/gu,'')).filter(Boolean);
  let previous='',repeats=0;
  for(const word of words){
   repeats=word===previous?repeats+1:1;previous=word;
