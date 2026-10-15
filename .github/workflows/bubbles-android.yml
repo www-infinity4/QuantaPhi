@@ -5,6 +5,8 @@ on:
       - 'android/bubbles-overlay/**'
       - 'bubbles-native-chat.css'
       - 'test/bubbles-native-chat.browser.cjs'
+      - 'test/bubbles-image-options.test.mjs'
+      - 'workers/bubbles-tools/**'
       - 'test/bubbles-web-chat.browser.cjs'
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
@@ -25,6 +27,8 @@ on:
       - 'android/bubbles-overlay/**'
       - 'bubbles-native-chat.css'
       - 'test/bubbles-native-chat.browser.cjs'
+      - 'test/bubbles-image-options.test.mjs'
+      - 'workers/bubbles-tools/**'
       - 'test/bubbles-web-chat.browser.cjs'
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
@@ -56,6 +60,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify unified Bubbles photo and voice read-aloud contracts
+        run: |
+          node --check bubbles-ai.js
+          node --check workers/bubbles-tools/worker.mjs
+          node --test test/bubbles-image-options.test.mjs
       - name: Verify scrolling and pairing in a mobile browser
         run: |
           npm install --no-save --package-lock=false playwright@1.51.1

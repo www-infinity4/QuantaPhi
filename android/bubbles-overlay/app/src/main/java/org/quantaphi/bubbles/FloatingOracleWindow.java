@@ -178,7 +178,13 @@ final class FloatingOracleWindow {
             settings.setAllowContentAccess(false);
             settings.setJavaScriptCanOpenWindowsAutomatically(false);
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
-            website.setWebChromeClient(new WebChromeClient()); // no microphone or camera grants
+            website.setWebChromeClient(new WebChromeClient() {
+                // System image picker is an explicit user gesture, not a web microphone/camera grant.
+                @Override public boolean onShowFileChooser(WebView webView,
+                        android.webkit.ValueCallback<Uri[]> callback, FileChooserParams params) {
+                    return service.openImagePicker(callback);
+                }
+            });
             website.setWebViewClient(new WebViewClient() {
                 @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                     if (!request.isForMainFrame()) return false;

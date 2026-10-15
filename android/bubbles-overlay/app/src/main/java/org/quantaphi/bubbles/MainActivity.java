@@ -32,7 +32,7 @@ public final class MainActivity extends Activity {
     private Runnable refreshScreenPermission;
     private Runnable refreshChatGPTStatus;
     private final java.util.concurrent.ExecutorService mediaWork = java.util.concurrent.Executors.newSingleThreadExecutor();
-    private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64;
+    private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64, IMAGE_REQUEST = 65;
     private boolean screenshot;
     private int screenIntervalSeconds, screenDurationSeconds;
     private boolean includeScreenAudio;
@@ -454,6 +454,10 @@ public final class MainActivity extends Activity {
                 if (state != null) state.setText(ChatGPTSignIn.status(this)+"\n"+result);
             });
         }
+        if (getIntent().getBooleanExtra("pick_bubbles_image",false)) {
+            getIntent().removeExtra("pick_bubbles_image");
+            openBubblesImagePicker();
+        }
         if (refreshChatGPTStatus != null) refreshChatGPTStatus.run();
         if (refreshScreenPermission != null) refreshScreenPermission.run();
         if (refreshStatus != null) { ui.removeCallbacks(refreshStatus); refreshStatus.run(); }
@@ -488,6 +492,10 @@ public final class MainActivity extends Activity {
         // A notification tap can reach an ALREADY RESUMED singleTop activity.
         // onResume is not guaranteed to run a second time in that case, so
         // the Android screen-sharing permission dialog must be opened here too.
+        if (intent != null && intent.getBooleanExtra("pick_bubbles_image",false)) {
+            intent.removeExtra("pick_bubbles_image");
+            openBubblesImagePicker();
+        }
         if (intent != null && intent.hasExtra("voice_capture")) {
             String action = intent.getStringExtra("voice_capture");
             int seconds = intent.getIntExtra("interval_seconds", 5);
@@ -495,6 +503,18 @@ public final class MainActivity extends Activity {
             intent.removeExtra("voice_capture"); // Consume once; no duplicate permission dialog.
             ((android.app.NotificationManager)getSystemService(NOTIFICATION_SERVICE)).cancel(513);
             ui.post(() -> handleVoiceCapture(action, seconds, duration));
+        }
+    }
+    private void openBubblesImagePicker() {
+        // Android owns file selection; no media permission or background photo access.
+        Intent picker = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        picker.addCategory(Intent.CATEGORY_OPENABLE);
+        picker.setType("image/*");
+        picker.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        try { startActivityForResult(picker, IMAGE_REQUEST); }
+        catch (RuntimeException error) {
+            BubblesService.completeImagePicker(null);
+            if (state != null) state.setText("Android could not open the picture selector.");
         }
     }
     private void handleVoiceCapture(String action, int seconds, int duration) {
@@ -558,6 +578,11 @@ public final class MainActivity extends Activity {
 
     @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == IMAGE_REQUEST) {
+            BubblesService.completeImagePicker(resultCode == RESULT_OK && data != null ? data.getData() : null);
+            moveTaskToBack(true);
+            return;
+        }
         if (requestCode == SCREEN_REQUEST) {
             if (resultCode != RESULT_OK || data == null) { state.setText("Screen capture cancelled; nothing was recorded."); return; }
             Intent capture = new Intent(this, ScreenCaptureService.class).putExtra("consent", data)
