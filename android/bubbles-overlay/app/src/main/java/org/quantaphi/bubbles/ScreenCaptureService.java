@@ -120,9 +120,20 @@ public final class ScreenCaptureService extends Service {
                 width = Math.max(2, ((int) (width * scale) / 2) * 2);
                 height = Math.max(2, ((int) (height * scale) / 2) * 2);
                 file = new File(directory, "screen-" + System.currentTimeMillis() + ".mp4");
+                // A screen recording is one MP4 with microphone sound, not a
+                // silent MP4 plus a separate WAV hidden in Music. Android owns
+                // the screen permission; microphone permission is checked here.
+                if (checkSelfPermission(android.Manifest.permission.RECORD_AUDIO)
+                        != android.content.pm.PackageManager.PERMISSION_GRANTED)
+                    throw new SecurityException("Microphone permission required for screen video");
                 recorder = new MediaRecorder();
+                recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
                 recorder.setVideoSource(MediaRecorder.VideoSource.SURFACE);
                 recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+                recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+                recorder.setAudioChannels(1);
+                recorder.setAudioSamplingRate(44100);
+                recorder.setAudioEncodingBitRate(96000);
                 recorder.setVideoEncoder(MediaRecorder.VideoEncoder.H264);
                 recorder.setVideoSize(width, height);
                 recorder.setVideoFrameRate(24); recorder.setVideoEncodingBitRate(2500000);
@@ -133,7 +144,7 @@ public final class ScreenCaptureService extends Service {
                         DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, recorder.getSurface(), null, main);
                 recorder.start(); recordingStarted = true;
                 BrainNotes.prefs(this).edit().putBoolean("capture_recording", true)
-                    .putString("capture_state", "Screen video recording; microphone audio is a separate WAV when enabled").apply();
+                    .putString("capture_state", "Recording screen + microphone into one MP4; Stop saves to Movies/Bubbles").apply();
                 main.postDelayed(this::finishCapture, 300000);
             }
         } catch (Exception error) { fail(error); }
@@ -195,13 +206,18 @@ public final class ScreenCaptureService extends Service {
                 try { recorder.stop(); valid = true; } catch (Exception ignored) {}
             }
             recorder.release(); recorder = null;
-            if (valid) savePath("video/mp4"); else if (file != null) file.delete();
+            if (valid) savePath("video/mp4");
+            else {
+                if (file != null) file.delete();
+                BrainNotes.prefs(this).edit().putString("capture_state",
+                    "Screen recording did not finalize; no video was saved").apply();
+            }
         }
         if (display != null) { display.release(); display = null; }
         if (images != null) { images.close(); images = null; }
         if (projection != null) { projection.stop(); projection = null; }
-        try { startService(new Intent(this, BubblesService.class).setAction(BubblesService.ACTION_SAVE_AUDIO)); }
-        catch (Exception ignored) {}
+        // The MP4 owns its audio track. Do not unexpectedly stop and save a
+        // separate microphone recording the user may have started independently.
         // MediaStore copies can take longer than stopping MediaRecorder.
         // Keep the capture service alive until Gallery publication completes.
         stopIfPublished();
