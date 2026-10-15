@@ -8,17 +8,28 @@ android {
         applicationId 'org.quantaphi.bubbles'
         minSdk 26
         targetSdk 35
-        versionCode 12
-        versionName '0.12.0'
+        versionCode 13
+        versionName '0.13.0'
     }
-    // Debug APK deliberately installs BESIDE the existing Bubbles app.
-    // CI runners use different debug certificates and cannot update the old
-    // org.quantaphi.bubbles package without its original signing key.
+    // Preview 5 is a new installable package because past preview-4 builds had
+    // inconsistent certificates. CI supplies a cached preview-only keystore;
+    // production packages must use a protected release signing key.
+    signingConfigs {
+        preview {
+            storeFile rootProject.file('preview-debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
     buildTypes {
         debug {
-            applicationIdSuffix '.preview4'
+            if (rootProject.file('preview-debug.keystore').isFile()) {
+                signingConfig signingConfigs.preview
+            }
+            applicationIdSuffix '.preview5'
             versionNameSuffix '-preview'
-            manifestPlaceholders = [appTitle: 'Bubbles Preview 4']
+            manifestPlaceholders = [appTitle: 'Bubbles Preview 5']
             // Phone-only preview: exclude x86 emulator libraries from the download.
             ndk { abiFilters 'armeabi-v7a', 'arm64-v8a' }
         }
