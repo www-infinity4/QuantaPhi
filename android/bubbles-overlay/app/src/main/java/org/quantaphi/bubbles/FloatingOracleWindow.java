@@ -175,9 +175,9 @@ final class FloatingOracleWindow {
             // Do not reuse a stale owner-code form from an earlier deployment.
             settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
             settings.setAllowFileAccess(false);
-            // SAF grants read access only to documents the user explicitly
-            // picks. WebView needs content:// reads for File.text() history import.
-            settings.setAllowContentAccess(true);
+            // Keep arbitrary content:// navigation disabled. Android's SAF
+            // chooser explicitly grants the user-selected file to the web input.
+            settings.setAllowContentAccess(false);
             settings.setJavaScriptCanOpenWindowsAutomatically(false);
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
             website.setWebChromeClient(new WebChromeClient() {
