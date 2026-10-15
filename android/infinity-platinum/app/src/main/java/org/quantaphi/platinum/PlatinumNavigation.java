@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 
 /** URL parsing that never interprets script/data/file/intent input as websites. */
 public final class PlatinumNavigation {
- public static final String START = "https://quantaphi.org/platinum/";
+ public static final String START = "https://quantaphi.org/platinum/index.html";
  private PlatinumNavigation(){}
  public static String web(String raw) {
   if(raw==null)return "";
