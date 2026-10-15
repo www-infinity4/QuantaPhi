@@ -188,3 +188,8 @@
 .ba-panel .ba-pairing-card p{margin:0;font-size:13px;line-height:1.4;color:#382c29}
 .ba-panel .ba-pairing-card .ba-field{width:100%;font-size:13px;letter-spacing:.05em}
 .ba-panel .ba-pairing-card .ba-control{background:#b83b32;color:#fff;font-weight:800;border-radius:22px}
+
+/* Android-native window owns closing the overlay; connected sessions show chat only. */
+.ba-panel .ba-native-provider[hidden],
+.ba-panel .ba-chatgpt-login[hidden],
+.ba-panel .ba-close[hidden]{display:none!important}
