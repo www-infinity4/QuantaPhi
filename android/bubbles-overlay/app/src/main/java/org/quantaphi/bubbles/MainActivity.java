@@ -485,6 +485,17 @@ public final class MainActivity extends Activity {
     @Override protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
+        // A notification tap can reach an ALREADY RESUMED singleTop activity.
+        // onResume is not guaranteed to run a second time in that case, so
+        // the Android screen-sharing permission dialog must be opened here too.
+        if (intent != null && intent.hasExtra("voice_capture")) {
+            String action = intent.getStringExtra("voice_capture");
+            int seconds = intent.getIntExtra("interval_seconds", 5);
+            int duration = intent.getIntExtra("duration_seconds", 300);
+            intent.removeExtra("voice_capture"); // Consume once; no duplicate permission dialog.
+            ((android.app.NotificationManager)getSystemService(NOTIFICATION_SERVICE)).cancel(513);
+            ui.post(() -> handleVoiceCapture(action, seconds, duration));
+        }
     }
     private void handleVoiceCapture(String action, int seconds, int duration) {
         if ("screen_image".equals(action)) {
