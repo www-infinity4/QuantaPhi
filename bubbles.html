@@ -36,9 +36,17 @@
     html.bubbles-native-overlay #robotBrainOwner{display:none!important}
     html.bubbles-native-overlay #bubblesAICard{height:0!important;overflow:hidden!important;margin:0!important}
     html.bubbles-native-overlay .ba-panel{z-index:2147483640!important;overflow:hidden!important}
-    html.bubbles-native-overlay .ba-panel .ba-messages{min-height:0!important;overflow-y:auto!important}
-    html.bubbles-native-overlay .ba-panel .ba-composer{flex-shrink:0!important}
-    html.bubbles-native-overlay .ba-panel .ba-tools{flex-shrink:0!important}
+    html.bubbles-native-overlay .ba-panel .ba-messages{min-height:0!important;overflow-y:auto!important;flex:1 1 0!important;overscroll-behavior-y:contain!important;-webkit-overflow-scrolling:touch!important;touch-action:pan-y!important}
+    html.bubbles-native-overlay .ba-panel .ba-composer{flex-shrink:0!important;flex-grow:0!important}
+    html.bubbles-native-overlay .ba-panel .ba-tools{flex-shrink:0!important;max-height:35%!important;overflow-y:auto!important}
+    html.bubbles-native-overlay .ba-panel .ba-tools:not([open]){max-height:48px!important}
+    html.bubbles-native-overlay .ba-panel .ba-status,
+    html.bubbles-native-overlay .ba-panel .ba-memory-status{display:none!important}
+    html.bubbles-native-overlay .ba-panel .ba-actions{grid-template-columns:1fr!important}
+    html.bubbles-native-overlay .ba-panel .ba-mic,
+    html.bubbles-native-overlay .ba-panel .ba-speak{display:none!important}
+    html.bubbles-native-overlay .ba-panel .ba-owner-status{font-size:14px!important;margin:0 2px!important;padding:3px 8px!important}
+    html.bubbles-native-overlay .ba-panel .ba-composer textarea{font-size:17px!important;min-height:54px!important;max-height:120px!important;overflow-y:auto!important}
     html.bubbles-native-overlay .ba-launcher{display:none!important}
     html.bubbles-native-overlay .ba-panel{
       position:fixed!important;inset:0!important;width:100%!important;height:100dvh!important;
@@ -76,7 +84,7 @@
   <script defer src="/bubbles-voice-gate.js?v=20261012-brain2"></script>
   <script defer src="/bubbles-brain-actions.js?v=20261014-all-ticket-reports5"></script>
   <script defer src="/bubbles-memory.js?v=20261014-memory2"></script>
-  <script defer src="/bubbles-ai.js?v=20261015-chat-pair18"></script>
+  <script defer src="/bubbles-ai.js?v=20261015-chat-scroll19"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1"></head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
