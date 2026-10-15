@@ -53,11 +53,13 @@ final class FloatingOracleWindow {
     private View controls, hearingNative, composerNative;
     private WebView website;
     private boolean websiteReady = false;
-    private String pendingSpeech = "";
-    private String pendingTyped = "";
-    private boolean dispatchInFlight = false;
+    // Keep follow-ups in order while the web assistant is loading or busy.
+    // One slot silently replaced the first instruction with the second.
+    private final java.util.ArrayDeque<String> pendingSpeech = new java.util.ArrayDeque<>();
+    private final java.util.ArrayDeque<String> pendingTyped = new java.util.ArrayDeque<>();
+    private boolean dispatchInFlight = false, typedDispatchInFlight = false;
+    private long speechDispatchAt = 0L, typedDispatchAt = 0L;
     private Button muteButton;
-    private long pendingSince = 0L;
     private static final String SITE_URL = "https://quantaphi.org/bubbles.html?nativeOverlay=1";
     private static final String SITE_HOST = "quantaphi.org";
     private String lastHistory = "";
@@ -65,6 +67,11 @@ final class FloatingOracleWindow {
         @Override public void run() {
             if (root == null) return;
             if (websiteReady) {
+                // A WebView navigation can lose an evaluateJavascript callback.
+                // Retry the queued turn instead of permanently blocking Bubbles.
+                long now = android.os.SystemClock.elapsedRealtime();
+                if (dispatchInFlight && now - speechDispatchAt > 15000L) dispatchInFlight = false;
+                if (typedDispatchInFlight && now - typedDispatchAt > 15000L) typedDispatchInFlight = false;
                 deliverQueuedSpeech();
                 deliverQueuedText();
                 pollWebsiteReply();
@@ -295,12 +302,14 @@ final class FloatingOracleWindow {
         }
     }
     boolean sendSpoken(String text) {
-        if (website == null) return false;
-        // Keep speech on the shared assistant while its first-party page loads.
-        // Falling back here previously sent owners to an unrelated submit button.
-        if (!websiteReady) status.setText("Connecting to QuantaPhi Bubbles; holding your request…");
-        pendingSpeech = String.valueOf(text).trim().substring(0, Math.min(1800, text.trim().length()));
-        pendingSince = android.os.SystemClock.elapsedRealtime();
+        if (website == null || text == null || text.trim().isEmpty()) return false;
+        if (pendingSpeech.size() >= 24) {
+            status.setText("Bubbles has 24 unprocessed voice requests. Please open chat to check the connection.");
+            return false;
+        }
+        // Queue every complete turn. A busy first reply must not erase the next.
+        pendingSpeech.addLast(text.trim().substring(0, Math.min(1800, text.trim().length())));
+        if (!websiteReady) status.setText("Connecting to QuantaPhi Bubbles; holding your requests…");
         deliverQueuedSpeech();
         return true;
     }
@@ -316,39 +325,51 @@ final class FloatingOracleWindow {
             status.setText("● QuantaPhi Bubbles · full website brain, notes & chat");
             if (!pendingSpeech.isEmpty()) deliverQueuedSpeech();
             if (!pendingTyped.isEmpty()) deliverQueuedText();
+            // The visible Android foreground service owns recognition; the
+            // website only coordinates an owner-scoped lease, never mutes it.
+            claimMicrophone();
         }
     }
 
     private void deliverQueuedSpeech() {
         if (!websiteReady || website == null || pendingSpeech.isEmpty() || dispatchInFlight) return;
-        if (android.os.SystemClock.elapsedRealtime() - pendingSince > 20000L) {
-            pendingSpeech = "";
-            status.setText("Speech request timed out; nothing was submitted.");
-            return;
-        }
-        final String spoken = pendingSpeech;
+        final String spoken = pendingSpeech.peekFirst();
         dispatchInFlight = true;
+        speechDispatchAt = android.os.SystemClock.elapsedRealtime();
         // JSON quoting prevents recognized speech from becoming executable JS.
         website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.sendNativeSpeech("
             + JSONObject.quote(spoken) + "))", result -> {
                 dispatchInFlight = false;
-                if ("true".equals(result) && spoken.equals(pendingSpeech)) pendingSpeech = "";
+                if ("true".equals(result) && spoken.equals(pendingSpeech.peekFirst())) {
+                    pendingSpeech.pollFirst();
+                    if (!pendingSpeech.isEmpty()) ui.post(this::deliverQueuedSpeech);
+                }
             });
     }
 
     boolean sendTyped(String text) {
         if (website == null || text == null || text.trim().isEmpty()) return false;
-        pendingTyped = text.trim().substring(0, Math.min(1800, text.trim().length()));
+        if (pendingTyped.size() >= 24) {
+            status.setText("Bubbles has 24 unprocessed text requests. Please check the connection.");
+            return false;
+        }
+        pendingTyped.addLast(text.trim().substring(0, Math.min(1800, text.trim().length())));
         deliverQueuedText();
         return true;
     }
     private void deliverQueuedText() {
-        if (!websiteReady || website == null || pendingTyped.isEmpty()) return;
-        final String message = pendingTyped;
+        if (!websiteReady || website == null || pendingTyped.isEmpty() || typedDispatchInFlight) return;
+        final String message = pendingTyped.peekFirst();
+        typedDispatchInFlight = true;
+        typedDispatchAt = android.os.SystemClock.elapsedRealtime();
         website.evaluateJavascript(
             "Boolean(window.QuantaBubbles && window.QuantaBubbles.sendNativeText("
                 + JSONObject.quote(message) + "))", result -> {
-                if ("true".equals(result) && message.equals(pendingTyped)) pendingTyped = "";
+                typedDispatchInFlight = false;
+                if ("true".equals(result) && message.equals(pendingTyped.peekFirst())) {
+                    pendingTyped.pollFirst();
+                    if (!pendingTyped.isEmpty()) ui.post(this::deliverQueuedText);
+                }
             });
     }
     void claimMicrophone() {
@@ -421,8 +442,13 @@ final class FloatingOracleWindow {
                     });
                 }catch(Exception ignored){}
             });
+        // A transient website owner-lease/network failure is NOT permission to
+        // stop Android's foreground microphone. That silenced every follow-up
+        // after the first instruction and made spoken "stop recording" unusable.
+        // Keep the native microphone running until the user explicitly mutes it.
         website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.voiceConflict())", value -> {
-            if ("true".equals(value)) service.pauseSharedMicrophone();
+            if ("true".equals(value)) status.setText(
+                "Robot Brain voice sync unavailable · Android listening remains active");
         });
         website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.drainNativeReply()",
             raw -> {
@@ -446,9 +472,10 @@ final class FloatingOracleWindow {
         ui.removeCallbacks(update);
         gptWork.shutdownNow();
         websiteReady = false;
-        pendingSpeech = "";
-        pendingTyped = "";
+        pendingSpeech.clear();
+        pendingTyped.clear();
         dispatchInFlight = false;
+        typedDispatchInFlight = false;
         if (root != null) {
             try { manager.removeView(root); } catch (RuntimeException ignored) {}
             root = null;
