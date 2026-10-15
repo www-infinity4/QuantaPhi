@@ -19,6 +19,14 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+            <!-- User-tapped return link from the local OAuth callback page.
+                 Contains no credentials and never starts sign-in by itself. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="quantaphi-bubbles" android:host="return"/>
+            </intent-filter>
         </activity>
         <service android:name=".BubblesTileService" android:exported="true"
             android:label="${appTitle}" android:icon="@android:drawable/ic_btn_speak_now"
