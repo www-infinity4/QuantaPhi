@@ -539,7 +539,7 @@ async function sendMessage(text,fromVoice=false){
     (ticket.deduplicated?'Existing work ticket found ('+ticket.status+').':
      ticket.runner==='queued_for_runner'?'Work ticket saved; I asked the authorized Greenbeans runner to pick it up. Pink Panther must independently verify it.':
      'Work ticket saved, but the runner could not be confirmed: '+ticket.runner+'.')+
-    ' Track real results at https://quantaphi.org/#robotDirections . Job reference: '+ticket.id+'. No successful code change, merge or deployment has been verified by this receipt.'}
+    ' You do not need to press another button; you do not need to press another button. Track real results at https://quantaphi.org/#robotDirections . Job reference: '+ticket.id+'. No successful code change, merge or deployment has been verified by this receipt.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='report'){
   try{workEvidence=await readBrainReport()}
