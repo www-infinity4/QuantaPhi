@@ -81,9 +81,10 @@ final class FloatingOracleWindow {
             }
             String history = OracleChatActivity.renderHistory(service);
             if (!lastHistory.equals(history)) {
+                boolean followLatest = !scroll.canScrollVertically(1);
                 lastHistory = history;
                 conversation.setText(history);
-                scroll.post(() -> scroll.fullScroll(View.FOCUS_DOWN));
+                if (followLatest) scroll.post(() -> scroll.fullScroll(View.FOCUS_DOWN));
             }
             String voice = BrainNotes.prefs(service).getString("voice_state", "starting");
             if (muteButton != null) muteButton.setText("muted".equals(voice) ? "Mic on" : "Mic off");
@@ -280,7 +281,7 @@ final class FloatingOracleWindow {
                 }
             });
             page.addView(website, new LinearLayout.LayoutParams(-1, 0, 1));
-            website.loadUrl(SITE_URL + "&v=18-chat-pairing");
+            website.loadUrl(SITE_URL + "&v=20-single-chat");
         } catch (RuntimeException error) {
             // WebView might be unavailable or outdated; native capture and chat work.
             website = null;
@@ -328,6 +329,7 @@ final class FloatingOracleWindow {
         if (composerNative != null) composerNative.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
         if (controls != null) controls.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
         if (hearingNative != null) hearingNative.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
+        if (status != null) status.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
         if (websiteReady) {
             status.setText("● QuantaPhi Bubbles · full website brain, notes & chat");
             if (!pendingSpeech.isEmpty()) deliverQueuedSpeech();
