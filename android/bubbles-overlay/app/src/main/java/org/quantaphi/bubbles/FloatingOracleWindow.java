@@ -53,6 +53,9 @@ final class FloatingOracleWindow {
     private View controls, hearingNative, composerNative;
     private WebView website;
     private boolean websiteReady = false;
+    private boolean robotOwnerConnected = false;
+    private long lastRobotStatusAt = 0L;
+    private String lastCaptureSnapshot = "";
     // Keep follow-ups in order while the web assistant is loading or busy.
     // One slot silently replaced the first instruction with the second.
     private final java.util.ArrayDeque<String> pendingSpeech = new java.util.ArrayDeque<>();
@@ -85,7 +88,8 @@ final class FloatingOracleWindow {
             String voice = BrainNotes.prefs(service).getString("voice_state", "starting");
             if (muteButton != null) muteButton.setText("muted".equals(voice) ? "Mic on" : "Mic off");
             String provider = BrainNotes.prefs(service).getString("ai_provider", "Oracle");
-            status.setText("● " + voice + "   •   " + provider);
+            status.setText("● " + voice + "   •   " + provider + "   •   Robot Brain: "
+                + (websiteReady && robotOwnerConnected ? "owner linked" : "not linked"));
             String partial = BrainNotes.prefs(service).getString("last_partial", "");
             String heard = BrainNotes.prefs(service).getString("last_heard", "");
             hearing.setText(partial.isEmpty()
@@ -316,6 +320,7 @@ final class FloatingOracleWindow {
 
     private void showWebsite(boolean ready) {
         websiteReady = ready && root != null && website != null;
+        if (!websiteReady) { robotOwnerConnected = false; lastCaptureSnapshot = ""; }
         if (website != null) website.setVisibility(websiteReady ? View.VISIBLE : View.GONE);
         if (scroll != null) scroll.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
         if (composerNative != null) composerNative.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
@@ -377,6 +382,32 @@ final class FloatingOracleWindow {
     }
     private void pollWebsiteReply() {
         if (!websiteReady || website == null) return;
+        // The native foreground services are the authority for capture state.
+        // Send only short state labels/booleans; never expose local media paths,
+        // Android permissions, or owner credentials to the hosted page.
+        org.json.JSONObject capture = new org.json.JSONObject();
+        android.content.SharedPreferences prefs = BrainNotes.prefs(service);
+        try {
+            capture.put("screenActive", prefs.getBoolean("capture_active", false));
+            capture.put("screenRecording", prefs.getBoolean("capture_recording", false));
+            capture.put("soundActive", prefs.getBoolean("audio_active", false));
+            capture.put("screenState", prefs.getString("capture_state", "").substring(0,
+                Math.min(160, prefs.getString("capture_state", "").length())));
+            capture.put("soundState", prefs.getString("audio_state", "").substring(0,
+                Math.min(160, prefs.getString("audio_state", "").length())));
+        } catch (org.json.JSONException ignored) {}
+        String snapshot = capture.toString();
+        if (!snapshot.equals(lastCaptureSnapshot)) {
+            lastCaptureSnapshot = snapshot;
+            website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.syncNativeCaptureStatus("
+                + snapshot + "))", null);
+        }
+        long now = android.os.SystemClock.elapsedRealtime();
+        if (now - lastRobotStatusAt > 2000L) {
+            lastRobotStatusAt = now;
+            website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.ownerToolConnected())",
+                value -> robotOwnerConnected = "true".equals(value));
+        }
         website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.setNativeGPTAvailable("
                 + (ChatGPTSignIn.hasPlan(service) ? "true" : "false") + ")", null);
         website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.takeNativeGPTLogin())", result -> {
@@ -399,9 +430,8 @@ final class FloatingOracleWindow {
                     String command = new JSONObject((String) raw).optString("text", "");
                     if (command.isEmpty() || command.length() > 1800) return;
                     VoiceCaptureCommands.Command capture = VoiceCaptureCommands.parse(command);
-                    if (capture == null || !(capture.action.startsWith("screen_")
-                            || capture.action.equals("capture_stop"))) {
-                        status.setText("Android could not recognize a screen capture command.");
+                    if (capture == null) {
+                        status.setText("Android could not recognize a recording command.");
                         return;
                     }
                     service.startService(new Intent(service, BubblesService.class)
