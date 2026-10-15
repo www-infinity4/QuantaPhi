@@ -245,7 +245,7 @@ const importLabel=create('label','ba-privacy-label','Import my ChatGPT export (o
 const importGPT=create('input','ba-field');importGPT.type='file';importGPT.accept='.json,application/json';
 importGPT.setAttribute('aria-label','Import conversations.json from your ChatGPT data export');
 const importStatus=create('p','ba-muted','ChatGPT sign-in does not share old chats. Import a conversations.json file you choose to reuse selected conversation ideas locally.');
-privacy.append(linkBubbles,linkStatus,privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
+privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
@@ -297,7 +297,7 @@ if(nativeOverlay){
  // One scrolling surface owns messages, pairing output and expanded options.
  // The composer and its visible feedback remain reachable at every scroll position.
  panel.insertBefore(chatScroll,header);
- chatScroll.append(ownerMode,recorderStatus,recorderStop,pairingCard,conversation,tools);
+ chatScroll.append(ownerMode,linkBubbles,linkStatus,recorderStatus,recorderStop,pairingCard,conversation,tools);
  composer.prepend(status);
  header.hidden=true;
  memoryHint.hidden=true;
@@ -317,7 +317,7 @@ if(nativeOverlay){
 if(!nativeOverlay&&!embedded){
  // Website and APK share one message/options scroll owner and a reachable composer.
  panel.insertBefore(chatScroll,conversation);
- chatScroll.append(ownerMode,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,tools);
+ chatScroll.append(ownerMode,linkBubbles,linkStatus,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,tools);
  composer.insertBefore(status,input);
 }
 if(embedded){
