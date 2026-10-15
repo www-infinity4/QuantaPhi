@@ -35,6 +35,15 @@ Motorola's model-specific SIM instructions: https://en-us.support.motorola.com/a
 - Use vendor-certified CBRS radio firmware; avoid unapproved SDR transmitters on licensed or shared bands.
 - Test SIMs and authenticated operator-issued subscriber credentials are necessary. An ordinary public website login does not register an LTE modem to the network; a user-entered web “key” is **not** a replacement for USIM authentication. Keep IMSI, K, OPc and other secrets off public webpages.
 
+
+## Motorola software integration: existing SIM + licensed band candidate
+
+The new Android Infinity Platinum **Inspect SIM & cellular radio** screen reads non-identifying Android operating-system diagnostics locally: handset model, nano-SIM presence, carrier network name, whether the present IP connection uses mobile data or Wi-Fi, and whether Android reports carrier-controlled app privileges. It does **not** read or store a subscriber's phone number, IMSI/ICCID/IMEI, SIM authentication key, tower location or privileged modem settings. It can open Android's own network operator selection screen for the phone's owner.
+
+Motorola publishes **LTE Band 2** as supported in both Moto G Pure XT2163-4 and XT2163-6 specifications. Bands 4, 5, 12 and 66 are also common to these published lists. Those bands use licensed spectrum in the U.S.; choosing them in software is a **conditional engineering design**, not authorization to transmit or to change a third party's base station. The `cellular/lte-compatibility.mjs` matrix validates the published-band candidate, operator rights, authorized SIM issuer/roaming agreement, core and backhaul as **separate** requirements, all explicitly unverified until physically tested.
+
+The installed SIM could remain in the Motorola **if the current SIM operator permits the intended network** (for example under roaming or operator-sponsored arrangements). The phone number is not the SIM authentication credential; merely entering it into a web form cannot authenticate the phone onto a different LTE network. We will not modify proprietary Motorola baseband firmware or instruct the app to override SIM carrier security. A compliant private LTE pilot can use a certified CBRS B48 cellular gateway over Wi-Fi, or seek appropriately authorized access to LTE B2 with an operator partnership.
+
 ## Core network
 
 - Use a provisioned Linux server running a current Open5GS 4G EPC for an isolated lab. Open5GS can manage LTE subscriber sessions but its published feature list includes **no emergency calling**, so it cannot be sold or advertised as a complete emergency-capable phone service without additional compliant components.
