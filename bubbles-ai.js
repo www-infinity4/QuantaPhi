@@ -538,7 +538,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Observation is delivered separately so its untrusted words can never be
  // classified as an owner job, local tool command, navigation, or approval.
  const screenEvidence=nativeOverlay?String(androidScreenEvidence||'').slice(0,1200):'';if(busy||!spoken)return;
- if(fromVoice&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
+ // Android's user-started foreground microphone is the authoritative capture
+ // session. An unreachable Robot Brain voice lease is not a reason to discard
+ // its second/third commands; only browser-owned microphones need this gate.
+ if(fromVoice&&!nativeOverlay&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
+ if(fromVoice&&nativeOverlay&&ownerReady)void sharedVoice(false);
  if(busy)return;
  // A typed message inside the Android floating web chat must reach the
  // native recorder, never a chat model that has no Android capture tools.
