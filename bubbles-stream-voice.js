@@ -22,7 +22,9 @@ export function encodeSpeechWav(chunks, inputRate) {
 export function createSpeechSegments({sampleRate,onClip}) {
  let lead=[],chunks=[],duration=0,quiet=0,voiced=0;
  const reset=()=>{lead=[];chunks=[];duration=0;quiet=0;voiced=0};
- const flush=()=>{const ready=chunks;const valid=voiced>=.25;reset();if(valid)onClip(ready)};
+ // A 12-second upload limit is not a conversational turn boundary.
+ // Continue collecting transcribed segments until the speaker actually pauses.
+ const flush=(continues=false)=>{const ready=chunks;const valid=voiced>=.25;reset();if(valid)onClip(ready,continues)};
  return {
   reset,
   push(input,suppressed=false){
@@ -36,7 +38,8 @@ export function createSpeechSegments({sampleRate,onClip}) {
     chunks=lead;lead=[];duration=chunks.reduce((n,c)=>n+c.length/sampleRate,0);
    }else{chunks.push(copy);duration+=seconds}
    if(speech){voiced+=seconds;quiet=0}else quiet+=seconds;
-   if(quiet>=.75||duration>=12)flush();
+   if(quiet>=1.35)flush(false);
+   else if(duration>=12)flush(true);
    return level;
   }
  };
@@ -47,10 +50,10 @@ export async function startContinuousVoice({stream,onLevel,onTranscript,onStatus
  const context=new Ctx(),source=context.createMediaStreamSource(stream);
  const processor=context.createScriptProcessor(4096,1,1),silent=context.createGain();
  silent.gain.value=0;
- let stopped=false,inFlight=false,pending=null,controller=null,generation=0;
- const submit=async chunks=>{
-  if(stopped)return;
-  if(inFlight){pending=chunks;return}
+ let stopped=false,inFlight=false,pending=[],controller=null,generation=0,transcriptParts=[];
+ const submit=async ({chunks,continues,epoch})=>{
+  if(stopped||epoch!==generation)return;
+  if(inFlight){if(pending.length<8)pending.push({chunks,continues,epoch});else onStatus('Speech queue full; briefly pause and repeat the last thought.');return}
   inFlight=true;const current=generation;controller=new AbortController();
   const timer=setTimeout(()=>controller?.abort(),20000);
   try{
@@ -63,16 +66,23 @@ export async function startContinuousVoice({stream,onLevel,onTranscript,onStatus
    if(!response.ok||!result.ok)throw Error(result.error||'Speech service unavailable');
    if(!stopped&&current===generation&&!isSpeaking()){
     const text=String(result.text||'').trim();
-    if(text)onTranscript(text);else onStatus('Listening · no clear words in that clip.');
+    if(text)transcriptParts.push(text);
+    if(!continues){
+      const thought=transcriptParts.join(' ').replace(/\s+/g,' ').trim();
+      transcriptParts=[];
+      if(thought)onTranscript(thought);
+      else onStatus('Listening · no clear words in that clip.');
+    }
    }
-  }catch(error){if(!stopped)onStatus('Speech connection: '+String(error.message||error).slice(0,100)+'. Microphone remains on.')}
-  finally{clearTimeout(timer);controller=null;inFlight=false;if(pending&&!stopped){const next=pending;pending=null;void submit(next)}}
+  }catch(error){transcriptParts=[];if(!stopped)onStatus('Speech connection: '+String(error.message||error).slice(0,100)+'. Microphone remains on.')}
+  finally{clearTimeout(timer);controller=null;inFlight=false;if(pending.length&&!stopped){const next=pending.shift();void submit(next)}}
  };
- const segments=createSpeechSegments({sampleRate:context.sampleRate,onClip:chunks=>void submit(chunks)});
+ const segments=createSpeechSegments({sampleRate:context.sampleRate,
+  onClip:(chunks,continues)=>void submit({chunks,continues,epoch:generation})});
  processor.onaudioprocess=event=>{
   if(stopped)return;
   const suppressed=isSpeaking();
-  if(suppressed){generation++;pending=null}
+  if(suppressed){generation++;pending=[];transcriptParts=[];controller?.abort()}
   const level=segments.push(event.inputBuffer.getChannelData(0),suppressed);
   onLevel(level);
  };
@@ -80,7 +90,7 @@ export async function startContinuousVoice({stream,onLevel,onTranscript,onStatus
  try{await context.resume()}catch(error){source.disconnect();processor.disconnect();silent.disconnect();await context.close();throw error}
  return {
   resume:()=>context.resume(),
-  stop(){if(stopped)return;stopped=true;generation++;pending=null;controller?.abort();segments.reset();
+  stop(){if(stopped)return;stopped=true;generation++;pending=[];transcriptParts=[];controller?.abort();segments.reset();
    processor.onaudioprocess=null;source.disconnect();processor.disconnect();silent.disconnect();void context.close();}
  };
 }

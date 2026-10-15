@@ -6,7 +6,7 @@ const host=document.getElementById('bubblesAICard');
 if(!host)return;
 // The tool gateway delegates ordinary chat to Oracle /v1/chat.
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
-const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261013-stream1');
+const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261014-turn-buf1');
 let streamVoice=null,voiceGeneration=0;
 const brainTools=window.BubblesBrainActions||null;
 const TICKETS='https://infinity-brain-clock.marvaseater.workers.dev';
@@ -68,6 +68,7 @@ messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&t
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
+let playbackVersion=0,voiceEchoUntil=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
 const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias,requireWakeName:false})||null;
 
@@ -218,7 +219,20 @@ for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi
  const link=create('a','ba-tool-link',label);link.href=path;link.rel='noopener';toolRail.append(link);
 }
 tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
-panel.append(header,status,ownerMode,memoryHint,conversation,composer,tools);
+const pairingCard=create('section','ba-pairing-card');
+ pairingCard.hidden=true;
+ const pairingInstructions=create('p','','Website pairing code. Copy it and paste it into QuantaPhi Bubbles → Robot Brain owner access. Expires in two minutes; use it once.');
+ const pairingCode=create('input','ba-field');
+ pairingCode.readOnly=true;pairingCode.autocomplete='off';pairingCode.spellcheck=false;
+ pairingCode.setAttribute('aria-label','One-time website pairing code');
+ const pairingCopy=create('button','ba-control','Copy one-time code');
+ pairingCopy.type='button';
+ pairingCopy.addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(pairingCode.value);status.textContent='One-time site pairing code copied.'}
+  catch{pairingCode.select();status.textContent='Select and copy the code manually.'}
+ });
+ pairingCard.append(pairingInstructions,pairingCode,pairingCopy);
+ panel.append(header,status,ownerMode,memoryHint,pairingCard,conversation,composer,tools);
 if(nativeOverlay){
  // Native OAuth and model inference live on the device, not in this WebView.
  // Expose the entry point above conversation; don't bury it in hidden settings.
@@ -285,14 +299,21 @@ function speakText(value){
  if(typeof speechSynthesis==='undefined'||typeof SpeechSynthesisUtterance==='undefined'){
   status.textContent='Speech playback is not supported on this browser.';return;
  }
- try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
+ if(speaking)return; // Avoid cutting off a response for another result.
+  const version=++playbackVersion;
+  speaking=true;setOrbState('speaking');
+  try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
    const voices=speechSynthesis.getVoices?.()||[];
    utterance.voice=voices.find(v=>v.voiceURI===config.voiceURI)||voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
-   utterance.onstart=()=>{speaking=true;setOrbState('speaking')};
-   const finished=()=>{speaking=false;if(voiceEnabled){setOrbState('listening');void streamVoice?.resume()}else setOrbState('idle')};
+   utterance.onstart=()=>{if(version===playbackVersion)setOrbState('speaking')};
+   const finished=()=>{
+    if(version!==playbackVersion)return;
+    speaking=false;voiceEchoUntil=Date.now()+900;
+    if(voiceEnabled){setOrbState('listening');void streamVoice?.resume()}else setOrbState('idle');
+   };
    utterance.onend=finished;utterance.onerror=finished;speechSynthesis.speak(utterance)
   }
- catch(error){status.textContent='Speech playback could not start: '+String(error?.message||error).slice(0,120)}
+ catch(error){if(version===playbackVersion){speaking=false;voiceEchoUntil=Date.now()+900}status.textContent='Speech playback could not start: '+String(error?.message||error).slice(0,120)}
 }
 function display(text,who,greeting=false){
  const line=create('div','ba-line '+(who==='you'?'ba-line-you':'ba-line-ai'));
@@ -471,6 +492,29 @@ async function sendMessage(text,fromVoice=false){
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=response;else if(config.voice&&!nativeOverlay)speakText(response);
   nativeSpeechPending=false;return;
  }
+ // App-first owner pairing: code is displayed in this first-party panel, never
+ // read aloud, sent to an AI model, or retained in conversation history.
+ if(nativeOverlay&&/^(?:(?:please|hey bubbles|bubbles)[\s,:]+)*(?:(?:sync|pair|link|connect)(?: my| the)?(?: quantaphi)?(?: website| site| browser)|(?:sync|pair) my website)(?: now)?[.!?]*$/i.test(spoken)){
+  busy=true;send.disabled=true;
+  let response;
+  try{
+   const headers=await verifiedOwnerHeaders();
+   const r=await fetch(BRAIN+'/owner/pair/create',{method:'POST',
+    headers:{...headers,'Content-Type':'application/json'},body:'{}',signal:AbortSignal.timeout(15000)});
+   const result=await r.json().catch(()=>({}));
+   if(!r.ok||!result.ok||!/^[a-f0-9]{64}$/.test(result.code||''))throw Error(result.error||'pairing_unavailable');
+   pairingCode.value=result.code;
+   pairingCard.hidden=false;toggle(true);
+   setTimeout(()=>{if(pairingCode.value===result.code){pairingCode.value='';pairingCard.hidden=true}},120000);
+   response='I generated a secure one-time website pairing code above. Tap Copy one-time code, then paste it into Robot Brain owner access on the QuantaPhi site. Once paired, website and APK automatically share your owner conversation and jobs. No separate ChatGPT account is required.';
+  }catch(error){
+   response='I cannot pair the website yet because this APK is not verified as the QuantaPhi owner. '+String(error.message||error).slice(0,125)+'. Link your Unified Wallet or an existing owner recovery key inside the APK first.';
+  }
+  display(spoken,'you');display(response,'ai');
+  messages.push({role:'user',text:spoken},{role:'assistant',text:response});persistChat();
+  if(nativeSpeechPending)nativeSpeechReply=response;else if(config.voice&&!nativeOverlay)speakText(response);
+  nativeSpeechPending=false;busy=false;send.disabled=false;return;
+ }
  if(!embedded&&/^(?:(?:hey )?bubbles[, ]+)?(?:connect|check|enable|unlock|verify|show)(?: my| the)?(?: owner| robot brain| brain)?(?: tools| access| mode| connection| status)(?: now)?[.!?]*$/i.test(spoken)){
   busy=true;send.disabled=true;
   let reply;
@@ -641,8 +685,8 @@ function stopVoice(message){
  voiceResumeWanted=false;voiceEnabled=false;voicePending='';
  if(voiceRetry)clearTimeout(voiceRetry);voiceRetry=null;
  pauseRecognition();stopMeter();
- try{speechSynthesis.cancel()}catch{}
- speaking=false;setOrbState('idle');mic.textContent='🎙 Enable listening';
+ playbackVersion++;try{speechSynthesis.cancel()}catch{}
+ speaking=false;voiceEchoUntil=Date.now()+900;setOrbState('idle');mic.textContent='🎙 Enable listening';
  mic.setAttribute('aria-pressed','false');
  status.textContent=message||'Microphone muted. Touch Bubbles to reconnect.';
 }
@@ -662,7 +706,7 @@ document.addEventListener?.('visibilitychange',()=>{
  if(!nativeOverlay&&document.hidden&&voiceEnabled)stopVoice('Website mic released while Android Bubbles keeps listening.');
 });
 function heardTranscript(transcript){
- if(!voiceEnabled||speaking||!voiceGate)return;
+ if(!voiceEnabled||speaking||Date.now()<voiceEchoUntil||!voiceGate)return;
  heardUntil=Date.now()+750;setOrbState('hearing');launcher.style.setProperty('--ba-energy','1');
  status.textContent='Heard: '+transcript;launcher.dataset.words=String(transcript.split(/\s+/).length);
  const turn=voiceGate.accept(transcript,Date.now());
@@ -861,6 +905,15 @@ window.QuantaBubbles={
  memoryStatus:()=>({connected:ownerReady,pending:memoryPending.size,error:memoryLastError}),
  // Called only by Bubbles' Android WebView after verifying the first-party
  // HTTPS URL. Reuse real site chat, real owner verification and job receipts.
+ sendNativeText:(message)=>{
+  if(!nativeOverlay||busy)return false;
+  const value=String(message||'').slice(0,1800).trim();
+  if(!value)return false;
+  // Typed queries are ordinary messages, not calls to Android TTS.
+  nativeSpeechPending=false;
+  void sendMessage(value,false);
+  return true;
+ },
  sendNativeSpeech:(message)=>{
   if(!nativeOverlay||busy)return false;
   const value=String(message||'').slice(0,1800).trim();
