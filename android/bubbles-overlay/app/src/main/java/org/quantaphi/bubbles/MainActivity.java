@@ -35,7 +35,6 @@ public final class MainActivity extends Activity {
     private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64, IMAGE_REQUEST = 65;
     private boolean screenshot;
     private int screenIntervalSeconds, screenDurationSeconds;
-    private boolean includeScreenAudio;
     private String extracted = "";
 
     @Override public void onCreate(Bundle savedInstanceState) {
@@ -259,7 +258,7 @@ public final class MainActivity extends Activity {
         layout.addView(advancedCapture);
         TextView captureInfo = new TextView(this);
         captureInfo.setText("Listening is not the same as saving an audio recording. Just speak to Bubbles. "
-                + "Use these optional buttons only if you prefer to. Screen capture always requires Android approval. "
+                + "Screen videos automatically include microphone audio in one MP4. Screen capture requires Android approval. "
                 + "Saved files remain on this phone.");
         captureInfo.setTextColor(Color.rgb(101, 83, 111));
         advancedCapture.addView(captureInfo);
@@ -274,10 +273,6 @@ public final class MainActivity extends Activity {
         saveSound.setText("Stop and save sound");
         saveSound.setOnClickListener(v -> startService(new Intent(this, BubblesService.class).setAction(BubblesService.ACTION_SAVE_AUDIO)));
         advancedCapture.addView(saveSound);
-        CheckBox recordAudio = new CheckBox(this);
-        recordAudio.setText("Record microphone alongside screen video (separate WAV)");
-        recordAudio.setOnCheckedChangeListener((v, checked) -> includeScreenAudio = checked);
-        advancedCapture.addView(recordAudio);
         Button screenVideo = new Button(this);
         screenVideo.setText("Record screen video");
         screenVideo.setOnClickListener(v -> beginScreen(false));
@@ -290,7 +285,6 @@ public final class MainActivity extends Activity {
         stopScreen.setText("Stop screen capture");
         stopScreen.setOnClickListener(v -> {
             startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
-            startService(new Intent(this, BubblesService.class).setAction(BubblesService.ACTION_SAVE_AUDIO));
         });
         advancedCapture.addView(stopScreen);
         Button camera = new Button(this);
@@ -454,9 +448,12 @@ public final class MainActivity extends Activity {
                 if (state != null) state.setText(ChatGPTSignIn.status(this)+"\n"+result);
             });
         }
-        if (getIntent().getBooleanExtra("pick_bubbles_image",false)) {
+        if (getIntent().getBooleanExtra("pick_bubbles_image",false)
+                || getIntent().getBooleanExtra("pick_bubbles_history",false)) {
+            boolean history = getIntent().getBooleanExtra("pick_bubbles_history",false);
             getIntent().removeExtra("pick_bubbles_image");
-            openBubblesImagePicker();
+            getIntent().removeExtra("pick_bubbles_history");
+            openBubblesDocumentPicker(history);
         }
         if (refreshChatGPTStatus != null) refreshChatGPTStatus.run();
         if (refreshScreenPermission != null) refreshScreenPermission.run();
@@ -492,9 +489,12 @@ public final class MainActivity extends Activity {
         // A notification tap can reach an ALREADY RESUMED singleTop activity.
         // onResume is not guaranteed to run a second time in that case, so
         // the Android screen-sharing permission dialog must be opened here too.
-        if (intent != null && intent.getBooleanExtra("pick_bubbles_image",false)) {
+        if (intent != null && (intent.getBooleanExtra("pick_bubbles_image",false)
+                || intent.getBooleanExtra("pick_bubbles_history",false))) {
+            boolean history = intent.getBooleanExtra("pick_bubbles_history",false);
             intent.removeExtra("pick_bubbles_image");
-            openBubblesImagePicker();
+            intent.removeExtra("pick_bubbles_history");
+            openBubblesDocumentPicker(history);
         }
         if (intent != null && intent.hasExtra("voice_capture")) {
             String action = intent.getStringExtra("voice_capture");
@@ -505,16 +505,23 @@ public final class MainActivity extends Activity {
             ui.post(() -> handleVoiceCapture(action, seconds, duration));
         }
     }
-    private void openBubblesImagePicker() {
-        // Android owns file selection; no media permission or background photo access.
+    private void openBubblesDocumentPicker(boolean historyJson) {
+        // Explicit Android SAF selection; no background access to account data.
+        // JSON and image picks share the same verified WebView callback.
         Intent picker = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         picker.addCategory(Intent.CATEGORY_OPENABLE);
-        picker.setType("image/*");
+        if (historyJson) {
+            picker.setType("*/*");
+            picker.putExtra(Intent.EXTRA_MIME_TYPES,
+                    new String[]{"application/json", "text/plain", "application/octet-stream"});
+        } else picker.setType("image/*");
         picker.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         try { startActivityForResult(picker, IMAGE_REQUEST); }
         catch (RuntimeException error) {
             BubblesService.completeImagePicker(null);
-            if (state != null) state.setText("Android could not open the picture selector.");
+            if (state != null) state.setText(historyJson
+                    ? "Android could not open the JSON history selector."
+                    : "Android could not open the picture selector.");
         }
     }
     private void handleVoiceCapture(String action, int seconds, int duration) {
@@ -542,7 +549,10 @@ public final class MainActivity extends Activity {
         return Settings.canDrawOverlays(this) && checkSelfPermission(Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED;
     }
     private void beginScreen(boolean image) {
-        if (includeScreenAudio && !image && !canTalk()) { checkAndStart(); return; }
+        if (!image && checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            state.setText("Screen video includes your microphone. Approve microphone access first.");
+            checkAndStart(); return;
+        }
         screenshot = image;
         android.media.projection.MediaProjectionManager projection = (android.media.projection.MediaProjectionManager) getSystemService(MEDIA_PROJECTION_SERVICE);
         startActivityForResult(projection.createScreenCaptureIntent(), SCREEN_REQUEST);
@@ -590,8 +600,6 @@ public final class MainActivity extends Activity {
                     .putExtra("interval_seconds", screenIntervalSeconds)
                     .putExtra("duration_seconds", screenDurationSeconds);
             startForegroundService(capture);
-            if (includeScreenAudio && !screenshot)
-                startForegroundService(new Intent(this, BubblesService.class).setAction(BubblesService.ACTION_RECORD));
             moveTaskToBack(true);
             return;
         }

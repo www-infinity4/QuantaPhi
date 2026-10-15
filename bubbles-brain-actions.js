@@ -96,6 +96,11 @@ function makeJobs(request){
   dependencies:['TASK-1'],design:'Oracle Octaves · Android first'
  }];
 }
+function readableReport(text) {
+ return String(text||'').replace(/\\b[0-9a-f]{8}-[0-9a-f-]{27,}\\b/gi,'[internal reference]')
+  .replace(/\\b[0-9a-f]{32,}\\b/gi,'[internal reference]')
+  .replace(/\\b[A-Za-z0-9+/_=-]{48,}\\b/g,'[internal reference]');
+}
 function describeTickets(tickets,limit=10){
  if(!Array.isArray(tickets))return 'Robot Brain returned no verifiable ticket list.';
  const totals={};
@@ -107,10 +112,10 @@ function describeTickets(tickets,limit=10){
   const updated=Number(ticket.updated_at)||Date.parse(ticket.updated_at||'')||0;
   const title=String(ticket.title||ticket.request||'Unnamed task').replace(/\s+/g,' ').slice(0,125);
   const jobs=Array.isArray(ticket.context?.color_jobs)?ticket.context.color_jobs:[];
-  const jobInfo=jobs.length?' Team: '+jobs.slice(0,5).map(j=>String(j.agent||'bot').replace(/-/g,' ')+': '+String(j.status||'queued')+' [receipt '+String(ticket.id||'?')+'/'+String(j.id||'?')+']'+(j.progress?.blocker?' Blocker: '+String(j.progress.blocker).slice(0,140):'')).join('; ')+'.':'';
-  const receipt=String(ticket.result_summary||'').trim().slice(0,185);
+  const jobInfo=jobs.length?' Team: '+jobs.slice(0,5).map(j=>String(j.agent||'bot').replace(/-/g,' ')+': '+String(j.status||'queued')+(j.progress?.blocker?' Blocker: '+readableReport(j.progress.blocker).slice(0,140):'')).join('; ')+'.':'';
+  const receipt=readableReport(ticket.result_summary).trim().slice(0,185);
   const outcome=receipt?' Recorded result: '+receipt+'.':' No verified progress yet; no authenticated code or deployment receipt recorded here.';
-  entries.push({updated,description:title+' — '+status+'.'+jobInfo+outcome+' Ref '+String(ticket.id||'?').slice(0,50)});
+  entries.push({updated,description:readableReport(title+' — '+status+'.'+jobInfo+outcome)});
  }
  entries.sort((a,b)=>b.updated-a.updated);
  const total=Object.values(totals).reduce((a,b)=>a+b,0);

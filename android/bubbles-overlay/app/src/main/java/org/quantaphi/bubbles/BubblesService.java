@@ -96,21 +96,23 @@ public final class BubblesService extends Service {
     private static volatile BubblesService activeImageService;
     private android.webkit.ValueCallback<android.net.Uri[]> imagePickerCallback;
     private final java.util.ArrayDeque<String> pendingWebsiteSpeech = new java.util.ArrayDeque<>();
-    /** The same WebView that renders the site receives the selected content URI. */
-    boolean openImagePicker(android.webkit.ValueCallback<android.net.Uri[]> callback) {
+    /** One website file chooser for images AND explicit history JSON imports.
+     * The former image-only callback made the ChatGPT import button unusable.
+     */
+    boolean openFilePicker(android.webkit.ValueCallback<android.net.Uri[]> callback, boolean historyJson) {
         if (!connected || imagePickerCallback != null) {
             callback.onReceiveValue(null); return true;
         }
         imagePickerCallback = callback;
-        if (oracleWindow != null) oracleWindow.hide(); // Avoid covering Android's image picker.
+        if (oracleWindow != null) oracleWindow.hide();
         try {
             startActivity(new Intent(this, MainActivity.class)
-                .putExtra("pick_bubbles_image", true)
+                .putExtra(historyJson ? "pick_bubbles_history" : "pick_bubbles_image", true)
                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP));
         } catch (RuntimeException error) {
             imagePickerCallback = null; callback.onReceiveValue(null);
             if (oracleWindow != null) oracleWindow.show();
-            BrainNotes.prefs(this).edit().putString("last_error", "Android image picker unavailable").apply();
+            BrainNotes.prefs(this).edit().putString("last_error", "Android document picker unavailable").apply();
         }
         return true;
     }
@@ -393,6 +395,7 @@ public final class BubblesService extends Service {
             audioThread = new Thread(() -> {
                 short[] samples = new short[1600];
                 boolean suppressingReply = false;
+                long voicedSamples = 0L;
                 try (Recognizer speech = decoder) {
                     while (captureRunning && connected && !muted) {
                         int count = input.read(samples, 0, samples.length);
@@ -402,13 +405,16 @@ public final class BubblesService extends Service {
                         double sum = 0;
                         for (int i = 0; i < count; i++) sum += (double) samples[i] * samples[i];
                         final float level = Math.min(1f, (float) Math.sqrt(sum / count) / 6000f);
-                        // Keep capture active during TTS; discard speaker echo instead of closing the microphone.
+                        // Require microphone evidence for every final recognition.
+                        // Silence/room noise can otherwise emit invented Vosk text.
                         if (speaking || SystemClock.elapsedRealtime() < echoQuietUntil) {
                             suppressingReply = true;
+                            voicedSamples = 0L;
                             speech.reset();
                             continue;
                         }
-                        if (suppressingReply) { speech.reset(); suppressingReply = false; }
+                        if (level > .05f) voicedSamples = Math.min(16000L * 30L, voicedSamples + count);
+                        if (suppressingReply) { speech.reset(); suppressingReply = false; voicedSamples = 0L; }
                         main.post(() -> {
                             if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
                                 state(level > .08f ? "hearing" : "listening", level);
@@ -424,6 +430,9 @@ public final class BubblesService extends Service {
                         }
                         if (complete) {
                             final String transcript = new JSONObject(speech.getResult()).optString("text", "");
+                            final long voicedMillis = voicedSamples * 1000L / 16000L;
+                            voicedSamples = 0L;
+                            if (!SpeechTranscriptGate.plausible(transcript, voicedMillis)) continue;
                             main.post(() -> {
                                 if (!connected || muted || speaking || SystemClock.elapsedRealtime() < echoQuietUntil) return;
                                 // Do not wait another 1.65 seconds to stop recording.

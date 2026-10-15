@@ -19,6 +19,18 @@ export function encodeSpeechWav(chunks, inputRate) {
  }
  return buffer;
 }
+// Whisper can hallucinate text for background noise or a trailing silent clip.
+export function plausibleSpeechText(raw) {
+ const text=String(raw||'').replace(/\s+/g,' ').trim();
+ if(!text||text.length>1800||/(?:[0-9a-f]{32,}|[0-9]{12,})/i.test(text))return false;
+ const words=text.toLowerCase().split(' ').map(word=>word.replace(/[^\p{L}\p{N}]/gu,'')).filter(Boolean);
+ let previous='',repeats=0;
+ for(const word of words){
+  repeats=word===previous?repeats+1:1;previous=word;
+  if(repeats>=4)return false;
+ }
+ return true;
+}
 export function createSpeechSegments({sampleRate,onClip}) {
  let lead=[],chunks=[],duration=0,quiet=0,voiced=0;
  const reset=()=>{lead=[];chunks=[];duration=0;quiet=0;voiced=0};
@@ -66,7 +78,8 @@ export async function startContinuousVoice({stream,onLevel,onTranscript,onStatus
    if(!response.ok||!result.ok)throw Error(result.error||'Speech service unavailable');
    if(!stopped&&current===generation&&!isSpeaking()){
     const text=String(result.text||'').trim();
-    if(text)transcriptParts.push(text);
+    if(plausibleSpeechText(text))transcriptParts.push(text);
+    else if(text)onStatus('Ignored uncertain speech; still listening.');
     if(!continues){
       const thought=transcriptParts.join(' ').replace(/\s+/g,' ').trim();
       transcriptParts=[];

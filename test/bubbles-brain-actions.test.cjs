@@ -55,7 +55,7 @@ test('report uses recorded job status and blocker, never invents progress',()=>{
  assert.match(report,/queued/);
  assert.match(report,/No verified progress yet/);
  assert.match(report,/no GPU host/);
- assert.match(report,/IW-20261013-AABBCCDD\/TASK-2/);
+ assert.doesNotMatch(report,/IW-20261013-AABBCCDD|TASK-2/); // Internal IDs aren't spoken as long strings.
  assert.match(report,/Queued is not running/);
  assert.doesNotMatch(report,/deployed and verified/i);
 });
