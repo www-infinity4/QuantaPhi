@@ -2,14 +2,14 @@ const test=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const js=fs.readFileSync('bubbles-ai.js','utf8');
-const css=fs.readFileSync('bubbles-ai.css','utf8');
+const css=fs.readFileSync('bubbles-native-chat.css','utf8');
 
 test('Android has a single message field, no hidden pairing code button or extra form',()=>{
  assert.match(js,/input.placeholder=nativeOverlay\?'Message Bubbles or paste your 64-character Robot Brain code here/);
  assert.match(js,/ownerMode.textContent='Robot Brain not linked'/);
  assert.match(js,/await consumeOwnerCodeFromChat\(spoken,fromVoice\)/);
  assert.doesNotMatch(js,/nativeOwnerInput|nativeOwnerButton|nativeOwnerRow|nativeOwnerPaste/);
- assert.match(css,/html\.bubbles-native-overlay \.ba-composer/);
+ assert.match(css,/html\.bubbles-native-overlay \.ba-panel \.ba-composer/);
 });
 test('64-digit owner codes bypass history, speech and AI even if invalid',()=>{
  const handler=js.slice(js.indexOf('async function consumeOwnerCodeFromChat('),js.indexOf('async function sendMessage(',js.indexOf('async function consumeOwnerCodeFromChat(')));
