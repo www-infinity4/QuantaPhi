@@ -6,7 +6,7 @@ const host=document.getElementById('bubblesAICard');
 if(!host)return;
 // The tool gateway delegates ordinary chat to Oracle /v1/chat.
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
-const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261013-stream1');
+const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261014-turn-buf1');
 let streamVoice=null,voiceGeneration=0;
 const brainTools=window.BubblesBrainActions||null;
 const TICKETS='https://infinity-brain-clock.marvaseater.workers.dev';
