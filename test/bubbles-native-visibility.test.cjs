@@ -3,6 +3,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const page = fs.readFileSync('bubbles.html', 'utf8');
+const site = fs.readFileSync('bubbles-ai.js', 'utf8');
 const window = fs.readFileSync('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/FloatingOracleWindow.java', 'utf8');
 const accessibility = fs.readFileSync('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BrainLearningService.java', 'utf8');
 
@@ -22,4 +23,21 @@ test('authorized Android screenshot can run even without an accessibility text r
   assert.match(inspect, /takeScreenshot\(Display\.DEFAULT_DISPLAY/);
   assert.match(inspect, /CaptureReader\.readBitmap\(pixels\)/);
   assert.match(accessibility, /if \(service == null\) \{ callback\.accept\(ACCESS_OFF\)/);
+});
+
+test('native floating chat scrolls by touch while composer stays anchored', () => {
+  assert.match(page, /html\.bubbles-native-overlay \.ba-panel \.ba-messages\{min-height:0!important;overflow-y:auto!important;flex:1 1 0!important/);
+  assert.match(page, /touch-action:pan-y!important/);
+  assert.match(page, /overscroll-behavior-y:contain!important/);
+  assert.match(page, /\.ba-composer\{flex-shrink:0!important;flex-grow:0!important/);
+  assert.match(site, /conversation\.scrollHeight-conversation\.scrollTop-conversation\.clientHeight<96/);
+  assert.match(site, /requestAnimationFrame\(\(\)=>\{conversation\.scrollTop=conversation\.scrollHeight/);
+});
+test('one native composer pairs privately without extra buttons or code leaking to chat', () => {
+  assert.match(site, /if\(nativeOverlay&&!fromVoice&&\/\^\[a-f0-9\]\{64\}\$\/i\.test\(spoken\)\)/);
+  assert.match(site, /await redeemNativeOwnerCode\(spoken\)/);
+  assert.match(site, /await window\.QuantaBrainOwner\?\.connectWithCode\?\.\(code\)/);
+  assert.doesNotMatch(site, /nativeOwnerInput=create/);
+  assert.match(site, /panel\.insertBefore\(tools,composer\)/);
+  assert.match(site, /if\(who!=='you'&&!greeting&&!nativeOverlay\)/);
 });
