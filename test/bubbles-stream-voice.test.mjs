@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 const source=fs.readFileSync('bubbles-stream-voice.js','utf8');
-const {encodeSpeechWav,createSpeechSegments,startContinuousVoice}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+const {encodeSpeechWav,createSpeechSegments,startContinuousVoice,plausibleSpeechText}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 import worker,{validateSpeechAudio} from '../workers/bubbles-tools/worker.mjs';
 test('silence never creates an upload, speech ends after silence without stopping capture',()=>{
  const clips=[],segments=createSpeechSegments({sampleRate:16000,onClip:c=>clips.push(c)});
@@ -76,4 +76,12 @@ test('long speech reaches Bubbles as a complete thought, not two interruptions',
  for(let i=0;i<15;i++)segments.push(quiet);
  assert.equal(captured.length,2);
  assert.equal(captured[1].continues,false,'only the sustained end-of-speech ends the turn');
+});
+
+test('Whisper phantom speech is dropped; useful short spoken commands remain', () => {
+ assert.equal(plausibleSpeechText('who who who who who who'),false);
+ assert.equal(plausibleSpeechText('602a71466cd143c19e3d6435d47799c7a8f2f4e46f7648c4a5b5e17238b6e570'),false);
+ assert.equal(plausibleSpeechText(''),false);
+ assert.equal(plausibleSpeechText('stop recording'),true);
+ assert.equal(plausibleSpeechText('What is the status of the queued jobs?'),true);
 });
