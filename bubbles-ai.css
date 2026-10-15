@@ -171,3 +171,12 @@
 }
 .ba-panel .ba-native-provider .ba-muted{font-size:12px;line-height:1.35}
 .ba-panel .ba-privacy input[type=file]{font-size:13px;max-width:100%;overflow-wrap:anywhere}
+
+
+/* State is evidence-backed by the verified owner wallet, never an AI guess. */
+.ba-panel .ba-owner-status{
+ display:block;margin:2px 8px 6px;padding:7px 12px;
+ border:1px solid #d7c8b8;border-radius:999px;background:#fffaf3;
+ color:#563e31;font:700 12px/1.45 system-ui,sans-serif;
+}
+.ba-panel .ba-owner-status[hidden]{display:none!important}

@@ -137,13 +137,13 @@ if(typeof speechSynthesis!=='undefined')speechSynthesis.addEventListener?.('voic
 loadVoices();
 const connections=create('div','ba-connect');
 connections.append(create('strong','','Connections'));
-const provider=create('p','ba-muted','Live now: Oracle Cloudflare AI. ChatGPT and Claude account access require separate provider authorization; a normal sign-in tab does not connect their accounts or subscriptions.');
+const provider=create('p','ba-muted','Live now: Oracle Cloudflare AI. Owner Bot tools use your verified QuantaPhi Unified Wallet, not a separate ChatGPT login. Existing Android Bubbles can optionally authorize eligible ChatGPT plan responses.');
 const openai=create('a','ba-link','ChatGPT sign-in requirements ↗');openai.href='https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt';openai.target='_blank';openai.rel='noopener noreferrer';
 const claude=create('a','ba-link','Claude third-party API requirements ↗');claude.href='https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account';claude.target='_blank';claude.rel='noopener noreferrer';
 const github=create('a','ba-link','GitHub App permission model ↗');github.href='https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps';github.target='_blank';github.rel='noopener noreferrer';
 const gptConnect=create('button','ba-control ba-chatgpt-login','Continue with ChatGPT');
-gptConnect.type='button';gptConnect.hidden=embedded;
-const gptStatus=create('p','ba-muted','ChatGPT identity is separate from QuantaPhi wallet and does not share past ChatGPT conversations or memory.');
+gptConnect.type='button';gptConnect.hidden=!nativeOverlay;
+const gptStatus=create('p','ba-muted',nativeOverlay?'Continue with ChatGPT on your Android device. QuantaPhi never sees those sign-in tokens.':'You can command your Robot Brain without ChatGPT OAuth. Official website ChatGPT sign-in requires partner registration, which is not connected.');
 gptConnect.addEventListener('click',()=>{
  if(nativeOverlay){nativeGPTSignInRequested=true;gptStatus.textContent='Opening the native Android ChatGPT permission flow. The website never receives your sign-in tokens.'}
  else{gptStatus.textContent='ChatGPT website sign-in requires an approved OpenAI OAuth client ID for QuantaPhi. Until registered, Bubbles uses Oracle; Android Bubbles has its own supported device-local sign-in.';}
@@ -167,6 +167,9 @@ const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('a
 const header=create('header','ba-header');const name=create('strong','',config.alias||'Bubbles');const close=create('button','ba-close','×');close.type='button';close.setAttribute('aria-label','Close Bubbles');
 header.append(name,close);
 const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then speak naturally.');
+const ownerMode=create('small','ba-owner-status',embedded?'Independent visitor assistant':'Owner tools: checking Unified Wallet…');
+ownerMode.hidden=embedded;
+ownerMode.setAttribute('role','status');
 const memoryHint=create('small','ba-memory-status',embedded?'Conversation stays in this embed.':'Shared memory waits for your verified owner connection.');memoryHint.setAttribute('role','status');
 status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
@@ -215,7 +218,7 @@ for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi
  const link=create('a','ba-tool-link',label);link.href=path;link.rel='noopener';toolRail.append(link);
 }
 tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
-panel.append(header,status,memoryHint,conversation,composer,tools);
+panel.append(header,status,ownerMode,memoryHint,conversation,composer,tools);
 if(nativeOverlay){
  // Native OAuth and model inference live on the device, not in this WebView.
  // Expose the entry point above conversation; don't bury it in hidden settings.
@@ -455,7 +458,7 @@ async function sendMessage(text,fromVoice=false){
  const spoken=String(text||'').trim();if(busy||!spoken)return;
  if(fromVoice&&!await sharedVoice(false)){nativeSpeechPending=false;return;}
  if(busy)return;
- if(/^(?:(?:please|bubbles)[\\s,:]+)*(?:what tools (?:do you have|can you use)|what can you do|list (?:your|available) tools)[.!?]*$/i.test(spoken)){
+ if(/^(?:(?:please|bubbles)[\s,:]+)*(?:what tools (?:do you have|can you use)|what can you do|list (?:your|available) tools)[.!?]*$/i.test(spoken)){
   const local='Available Bubbles tools: Oracle conversation, news research, resonance calculator, personal notes, saved Bubbles memory and user-approved story suggestions.';
   const owner=embedded?'This embedded visitor assistant cannot control the QuantaPhi Robot Brain.':
    'With a verified owner wallet I can submit Robot Brain tickets and read receipts; Greenbeans and Pink Panther still need runner authorization, source tests and verified merge results.';
@@ -467,6 +470,38 @@ async function sendMessage(text,fromVoice=false){
   messages=messages.slice(-400);persistChat();
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=response;else if(config.voice&&!nativeOverlay)speakText(response);
   nativeSpeechPending=false;return;
+ }
+ if(!embedded&&/^(?:(?:hey )?bubbles[, ]+)?(?:connect|check|enable|unlock|verify|show)(?: my| the)?(?: owner| robot brain| brain)?(?: tools| access| mode| connection| status)(?: now)?[.!?]*$/i.test(spoken)){
+  busy=true;send.disabled=true;
+  let reply;
+  try{
+   await verifiedOwnerHeaders();
+   reply='Your QuantaPhi owner Robot Brain is verified. Tell me what to fix or build; I will save an authenticated ticket and request the next runner cycle. You do not need ChatGPT OAuth for these tools.';
+  }catch(error){
+   let state='unreachable';
+   try{state=(await window.QuantaBrainOwner?.walletIdentity?.())?.state||'unreachable'}catch{}
+   const hints={
+    'no-wallet':'QuantaPhi has not detected your Unified Wallet in this browser. Open QuantaPhi in the same browser and connect your wallet; the Robot Brain will retry automatically.',
+    'not-linked':'Your Unified Wallet exists but is not linked to Robot Brain ownership. Your existing owner recovery key or paired owner session is required; I cannot assign owner rights to an unverified wallet.',
+    'unreachable':'The wallet or Brain verifier is not responding. Your request has NOT been sent. Try again after the site reconnects.'
+   };
+   reply='Owner tools are not connected. '+(hints[state]||hints.unreachable)+' Detail: '+String(error.message||error).slice(0,130);
+  }
+  display(spoken,'you');display(reply,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:reply});persistChat();
+  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=reply;else if(config.voice&&!nativeOverlay)speakText(reply);
+  nativeSpeechPending=false;busy=false;send.disabled=false;return;
+ }
+ if(!embedded&&/^(?:(?:hey )?bubbles[, ]+)?(?:run|start|retry|resume|dispatch)(?: my| the)?(?: next)?(?: queued| pending)?(?: robot| brain| bot)?(?: job| task| jobs| bots| runner)(?: now)?[.!?]*$/i.test(spoken)){
+  busy=true;send.disabled=true;let reply;
+  try{
+   const result=await requestRunner();
+   reply=result.status==='queued_for_runner'?'Robot Brain has requested its next authenticated job: '+result.ticketId+'/'+result.jobId+'. A runner request is NOT proof that code was edited or deployed.':
+    result.status==='no_pending_jobs'?'Robot Brain has no eligible queued jobs to request. Ask for a bot report to inspect recorded work.':
+    'Robot Brain replied: '+String(result.status||'unknown').slice(0,100);
+  }catch(error){reply='Robot Brain did not start a new job. '+String(error.message||error).slice(0,160)}
+  display(spoken,'you');display(reply,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:reply});persistChat();
+  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=reply;else if(config.voice&&!nativeOverlay)speakText(reply);
+  nativeSpeechPending=false;busy=false;send.disabled=false;return;
  }
  if(!embedded&&/^(?:(?:please|bubbles)[\s,:]+)*(?:pair|link|sync|connect)\b.{0,60}\b(?:apk|android|phone|floating bubble)\b/i.test(spoken)){
   busy=true;send.disabled=true;let resultText;
@@ -500,7 +535,11 @@ async function sendMessage(text,fromVoice=false){
  let workEvidence='';
  if(!embedded&&isOwnerWorkRequest(request)){
   workText.value=request;tools.open=true;
-  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence=(continued?'Continuing your last request. ':'')+(ticket.deduplicated?'This request is already saved. Its recorded status is '+ticket.status+'.':'Your request is saved and waiting for the repair runner; you do not need to press another button.')+' Follow progress here: https://quantaphi.org/#robotDirections . Reference: '+ticket.id+'. The repair is not yet verified finished.'}
+  try{const ticket=await submitWork(request,'explicit-user-command');workEvidence=(continued?'Continuing your last request. ':'')+
+    (ticket.deduplicated?'Existing work ticket found ('+ticket.status+').':
+     ticket.runner==='queued_for_runner'?'Work ticket saved; I asked the authorized Greenbeans runner to pick it up. Pink Panther must independently verify it.':
+     'Work ticket saved, but the runner could not be confirmed: '+ticket.runner+'.')+
+    ' Your request is saved; you do not need to press another button. Track real results at https://quantaphi.org/#robotDirections . Job reference: '+ticket.id+'. No successful code change, merge or deployment has been verified by this receipt.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='report'){
   try{workEvidence=await readBrainReport()}
@@ -718,8 +757,9 @@ async function verifiedOwnerHeaders(){
  if(ownerReady&&ownerHeaders)return ownerHeaders;
  if(!window.QuantaBrainOwner?.ready)throw Error('Robot Brain owner verification is unavailable on this page.');
  const headers=await Promise.race([window.QuantaBrainOwner.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
- if(!headers?.Authorization)throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.');
+ if(!headers?.Authorization){ownerMode.textContent='Owner tools: not yet verified · say “connect owner tools” for details.';throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.')}
  ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
+ ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
  return headers;
 }
@@ -729,6 +769,7 @@ async function connectOwner(){
  const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
+ ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  persistChat();void sharedMemory();
  if(nativeOverlay){voiceLeaseWanted=true;void sharedVoice(true);}
  workStatus.textContent='Robot Brain connected. Say “Bubbles, fix the video generator” or “Report the top ten bot jobs.”';
@@ -744,6 +785,16 @@ void connectOwner();
 // Home loads the owner helper after this script. Deferred scripts finish before
 // DOMContentLoaded; attach to its real verification promise after load order settles.
 document.addEventListener?.('DOMContentLoaded',()=>void connectOwner(),{once:true});
+async function requestRunner(ticketId='',jobId=''){
+ const headers=await verifiedOwnerHeaders();
+ const body={};if(ticketId)body.ticketId=ticketId;if(jobId)body.jobId=jobId;
+ const response=await fetch(BRAIN+'/work/run-next',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
+  body:JSON.stringify(body),signal:AbortSignal.timeout(20000)});
+ const result=await response.json().catch(()=>({}));
+ if(!response.ok||!result.ok)throw Error(String(result.error||'Runner request was not acknowledged'));
+ if(!['queued_for_runner','no_pending_jobs'].includes(result.status))throw Error('Unexpected runner result');
+ return result;
+}
 async function submitWork(request,approval='explicit-click'){
  const headers=await verifiedOwnerHeaders();
  if(!brainTools)throw Error('Bubbles Brain tool helpers are not loaded.');
@@ -767,7 +818,11 @@ async function submitWork(request,approval='explicit-click'){
   const updated=await fetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...headers,'Content-Type':'application/json'},signal:AbortSignal.timeout(20000),body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify(jobs),context:{...result.ticket.context,color_jobs:jobs}})});
   const ready=await updated.json().catch(()=>({}));if(!updated.ok||!ready.ok)throw Error(ready.error||'Ticket saved as a draft but not ready; check Robot Brain.');
   workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs}}));
-  workStatus.textContent='Robot Brain ticket '+result.ticket.id+' confirmed ready with '+jobs.length+' queued jobs. No execution is claimed yet.';return {id:result.ticket.id,status:'ready',deduplicated:false};
+  let runner='not_started';
+   try{const request=await requestRunner(result.ticket.id,jobs[0]?.id||'');runner=request.status;}
+   catch(error){runner='runner_request_failed';workStatus.textContent='Saved ticket '+result.ticket.id+' but the runner request failed: '+String(error.message||error).slice(0,100);}
+   if(runner==='queued_for_runner')workStatus.textContent='Robot Brain ticket '+result.ticket.id+' saved. Greenbeans runner cycle requested; Pink Panther verification is a dependent job. Execution and deployment are not yet proven.';
+   return {id:result.ticket.id,status:'ready',deduplicated:false,runner};
  }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145);throw error}
  finally{workButton.disabled=false}
 }
