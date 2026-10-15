@@ -330,7 +330,8 @@ public final class PlatinumActivity extends Activity {
   for(int result:grantResults)if(result!=PackageManager.PERMISSION_GRANTED)permitted=false;
   if(permitted){
    WebView view=active();
-   Uri page=Uri.parse(view==null?"":view.getUrl());
+   String activeUrl=view==null?"":view.getUrl();
+   Uri page=Uri.parse(activeUrl==null?"":activeUrl);
    if(!"quantaphi.org".equalsIgnoreCase(page.getHost())||page.getPath()==null||!page.getPath().startsWith("/phone/"))permitted=false;
   }
   if(permitted)request.grant(request.getResources());
