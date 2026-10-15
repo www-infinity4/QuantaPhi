@@ -152,3 +152,19 @@ test('reports include old and new owner jobs and avoid calling inbox status acti
  assert.doesNotMatch(actual,/No recent work is running or waiting/);
  assert.equal(describeTickets([],10),'Robot Brain has no saved owner tickets yet. No jobs are claimed running.');
 });
+
+test('explicit request for Robot Brain to repair missing Bubbles capabilities becomes owner work',()=>{
+ for(const command of [
+  'Contact the robot brain and tell it to give you the actual abilities that you are needing',
+  'Bubbles, talk to my robot brain and ask it to provide you with the missing tools',
+  'Connect to robot brain and tell it to repair the missing integrations in Bubbles'
+ ])assert.equal(classify(command),'queue',command);
+ // Asking about a capability, connecting for a read-only status, or declining
+ // permission escalation must not submit an engineering ticket.
+ for(const command of [
+  'How would we give Bubbles the ability to connect to Robot Brain?',
+  'Talk to my robot brain',
+  "Don't contact robot brain and ask it to grant access",
+  'What permissions does robot brain have?'
+ ])assert.notEqual(classify(command),'queue',command);
+});
