@@ -1,25 +1,27 @@
+'use strict';
 const test=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
+const js=fs.readFileSync('bubbles-ai.js','utf8');
+const html=fs.readFileSync('bubbles.html','utf8');
 
-test('Android Bubbles places its owner pairing field above the transcript and composer',()=>{
- const js=fs.readFileSync('bubbles-ai.js','utf8');
- const css=fs.readFileSync('bubbles-ai.css','utf8');
- assert.match(js,/nativeOwnerInput\.type='password'/);
- assert.match(js,/nativeOwnerInput\.placeholder='Paste 64-character owner code'/);
- assert.match(js,/nativeOwnerRow\.append\(ownerHelp,nativeOwnerInput,nativeOwnerPaste,nativeOwnerButton,nativeOwnerStatus\)/);
- assert.match(js,/panel\.insertBefore\(nativeOwnerRow,status\)/);
- assert.doesNotMatch(js,/panel\.insertBefore\(nativeOwnerRow,conversation\)/);
+test('Android Bubbles uses the main message box for pairing, not a hidden code field',()=>{
+ assert.match(js,/input\.placeholder='Message Bubbles or paste owner code/);
+ assert.match(js,/panel\.insertBefore\(tools,composer\)/);
+ assert.doesNotMatch(js,/nativeOwnerRow=create/);
+ assert.doesNotMatch(js,/nativeOwnerPaste=create/);
  assert.match(js,/window\.QuantaBrainOwner\?\.connectWithCode\?\.\(code\)/);
- assert.match(js,/if\(!\/\^\[a-f0-9\]\{64\}\$\/i\.test\(copied\)\)/);
- assert.match(css,/\.ba-native-owner\{flex:none;display:grid/);
- assert.match(css,/\.ba-native-owner \.ba-field,\.ba-native-owner \.ba-muted\{grid-column:1\/-1\}/);
+ assert.match(js,/if\(nativeOverlay&&!fromVoice&&\/\^\[a-f0-9\]\{64\}\$\/i\.test\(spoken\)\)/);
+ assert.match(html,/touch-action:pan-y!important/);
 });
 
-test('Pairing secrets are not sent through normal chat messages',()=>{
- const js=fs.readFileSync('bubbles-ai.js','utf8');
- const block=js.slice(js.indexOf('nativeOwnerRow.addEventListener(\'submit\''),js.indexOf('panel.insertBefore(nativeOwnerRow,status)'));
- assert.ok(block.length>0);
- assert.doesNotMatch(block,/sendNativeText|sendNativeSpeech|messages\.push\(/);
- assert.match(block,/nativeOwnerInput\.value=''/);
+test('Owner pairing secrets bypass AI prompts, voice output and chat history',()=>{
+ const start=js.indexOf('async function redeemNativeOwnerCode(code)');
+ const end=js.indexOf('async function sendMessage(',start);
+ assert.ok(start>=0&&end>start);
+ const block=js.slice(start,end);
+ assert.match(block,/input\.value=''/);
+ assert.match(block,/await window\.QuantaBrainOwner\?\.connectWithCode\?\.\(code\)/);
+ assert.doesNotMatch(block,/messages\.push|sendNativeText|sendNativeSpeech|nativeSpeechReply|speakText|localStorage/);
+ assert.match(js,/await redeemNativeOwnerCode\(spoken\);\s*return;/);
 });
