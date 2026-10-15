@@ -388,11 +388,11 @@ final class FloatingOracleWindow {
         org.json.JSONObject captureState = new org.json.JSONObject();
         android.content.SharedPreferences prefs = BrainNotes.prefs(service);
         try {
-            captureState.put("screenActive", prefs.getBoolean("captureState_active", false));
-            captureState.put("screenRecording", prefs.getBoolean("captureState_recording", false));
+            captureState.put("screenActive", prefs.getBoolean("capture_active", false));
+            captureState.put("screenRecording", prefs.getBoolean("capture_recording", false));
             captureState.put("soundActive", prefs.getBoolean("audio_active", false));
-            captureState.put("screenState", prefs.getString("captureState_state", "").substring(0,
-                Math.min(160, prefs.getString("captureState_state", "").length())));
+            captureState.put("screenState", prefs.getString("capture_state", "").substring(0,
+                Math.min(160, prefs.getString("capture_state", "").length())));
             captureState.put("soundState", prefs.getString("audio_state", "").substring(0,
                 Math.min(160, prefs.getString("audio_state", "").length())));
         } catch (org.json.JSONException ignored) {}
