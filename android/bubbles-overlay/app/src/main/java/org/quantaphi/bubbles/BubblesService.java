@@ -96,21 +96,23 @@ public final class BubblesService extends Service {
     private static volatile BubblesService activeImageService;
     private android.webkit.ValueCallback<android.net.Uri[]> imagePickerCallback;
     private final java.util.ArrayDeque<String> pendingWebsiteSpeech = new java.util.ArrayDeque<>();
-    /** The same WebView that renders the site receives the selected content URI. */
-    boolean openImagePicker(android.webkit.ValueCallback<android.net.Uri[]> callback) {
+    /** One website file chooser for images AND explicit history JSON imports.
+     * The former image-only callback made the ChatGPT import button unusable.
+     */
+    boolean openFilePicker(android.webkit.ValueCallback<android.net.Uri[]> callback, boolean historyJson) {
         if (!connected || imagePickerCallback != null) {
             callback.onReceiveValue(null); return true;
         }
         imagePickerCallback = callback;
-        if (oracleWindow != null) oracleWindow.hide(); // Avoid covering Android's image picker.
+        if (oracleWindow != null) oracleWindow.hide();
         try {
             startActivity(new Intent(this, MainActivity.class)
-                .putExtra("pick_bubbles_image", true)
+                .putExtra(historyJson ? "pick_bubbles_history" : "pick_bubbles_image", true)
                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP));
         } catch (RuntimeException error) {
             imagePickerCallback = null; callback.onReceiveValue(null);
             if (oracleWindow != null) oracleWindow.show();
-            BrainNotes.prefs(this).edit().putString("last_error", "Android image picker unavailable").apply();
+            BrainNotes.prefs(this).edit().putString("last_error", "Android document picker unavailable").apply();
         }
         return true;
     }
