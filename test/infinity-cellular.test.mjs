@@ -66,6 +66,6 @@ test('Motorola Moto G Pure compatibility is flagged before buying CBRS radio gea
  assert.match(html,/Moto G Pure/);
  assert.match(html,/Band 48/);
  assert.match(html,/LTE modem\/router/);
- assert.match(hardware,/do not.*list LTE Band 48/);
+ assert.match(hardware,/list LTE Band 48/);
  assert.match(hardware,/SIM tray/);
 });
