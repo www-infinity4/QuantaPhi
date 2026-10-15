@@ -234,14 +234,18 @@ const historyToggle=create('input','');historyToggle.type='checkbox';historyTogg
 privacyLabel.append(historyToggle,create('span','','Keep conversation history (owner history also syncs across linked Bubbles sessions)'));
 const cloudLabel=create('label','ba-privacy-label'),cloudToggle=create('input','');
 cloudToggle.type='checkbox';cloudToggle.checked=cloudChat;cloudToggle.disabled=!keepChat;
-cloudLabel.append(cloudToggle,create('span','','Sync full Bubbles history between browser and Android with my Unified Wallet'));
+cloudLabel.append(cloudToggle,create('span','','Optional extra wallet transcript backup (separate from APK pairing)'));
+const linkBubbles=create('button','ba-control ba-link-bubbles','Connect / sync Bubbles');linkBubbles.type='button';
+const linkStatus=create('p','ba-muted','Connect this Bubbles session and show a one-time code for your other session.');
+linkStatus.setAttribute('role','status');
+linkBubbles.hidden=embedded;linkStatus.hidden=embedded;
 const cloudDelete=create('button','ba-control','Erase wallet-synced Bubbles memory');cloudDelete.type='button';cloudDelete.hidden=!cloudChat;
 const clearChat=create('button','ba-control','Clear this view');clearChat.type='button';
 const importLabel=create('label','ba-privacy-label','Import my ChatGPT export (optional)');
 const importGPT=create('input','ba-field');importGPT.type='file';importGPT.accept='.json,application/json';
 importGPT.setAttribute('aria-label','Import conversations.json from your ChatGPT data export');
 const importStatus=create('p','ba-muted','ChatGPT sign-in does not share old chats. Import a conversations.json file you choose to reuse selected conversation ideas locally.');
-privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
+privacy.append(linkBubbles,linkStatus,privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
@@ -504,6 +508,16 @@ historyToggle.addEventListener('change',()=>{
   try{localStorage.removeItem(HISTORY)}catch{}
   status.textContent='New history retention paused. Existing owner archive is unchanged.';
  }
+});
+linkBubbles.addEventListener('click',async()=>{
+ if(busy){linkStatus.textContent='A reply is still running. Try Connect / sync Bubbles when it finishes.';return;}
+ linkBubbles.disabled=true;
+ linkStatus.textContent='Checking owner access and requesting your one-time pairing code…';
+ try{
+  await sendMessage(nativeOverlay?'sync my website':'link my APK',false);
+  linkStatus.textContent=pairingCard.hidden?'Connection was not confirmed. Read the connection result in the chat above.':'One-time code ready above. Copy it into the other Bubbles session within two minutes.';
+ }catch(error){linkStatus.textContent='Bubbles could not connect: '+String(error.message||error);}
+ finally{linkBubbles.disabled=false;}
 });
 cloudToggle.addEventListener('change',async()=>{
  if(!cloudToggle.checked){
