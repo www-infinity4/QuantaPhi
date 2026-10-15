@@ -101,6 +101,19 @@ public final class BubblesService extends Service {
     private String lastTranscript = "", queued = "";
     private int retries = 0;
     private long speechGeneration = 0L;
+    private String activeUtteranceId = "";
+    private volatile long echoQuietUntil = 0L;
+    private final SpeechTurnBuffer turnBuffer = new SpeechTurnBuffer();
+    // Vosk ends recognition at a brief pause, not necessarily at a thought.
+    // Combine adjacent phrases until the owner has finished speaking.
+    private static final long END_OF_TURN_MS = 1650L;
+    private final Runnable deliverVoiceTurn = () -> {
+        if (!connected || muted || speaking || SystemClock.elapsedRealtime() < echoQuietUntil) {
+            turnBuffer.clear();return;
+        }
+        final String complete = turnBuffer.take();
+        if (!complete.isEmpty()) heard(complete);
+    };
     private long lastPartialAt = 0L;
 
     @Override public void onCreate() {
@@ -151,9 +164,11 @@ public final class BubblesService extends Service {
             tts.setPitch(1f);
             tts.setSpeechRate(1f);
             tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
-                @Override public void onStart(String id) { main.post(() -> state("speaking", 0.6f)); }
-                @Override public void onDone(String id) { main.post(() -> finishSpeaking()); }
-                @Override public void onError(String id) { main.post(() -> finishSpeaking()); }
+                @Override public void onStart(String id) {
+                    main.post(() -> {if(id != null && id.equals(activeUtteranceId)) state("speaking", 0.6f);});
+                }
+                @Override public void onDone(String id) { main.post(() -> finishSpeaking(id)); }
+                @Override public void onError(String id) { main.post(() -> finishSpeaking(id)); }
             });
             ttsReady = true;
         }));
@@ -319,27 +334,35 @@ public final class BubblesService extends Service {
                         for (int i = 0; i < count; i++) sum += (double) samples[i] * samples[i];
                         final float level = Math.min(1f, (float) Math.sqrt(sum / count) / 6000f);
                         // Keep capture active during TTS; discard speaker echo instead of closing the microphone.
-                        if (speaking) {
+                        if (speaking || SystemClock.elapsedRealtime() < echoQuietUntil) {
                             suppressingReply = true;
                             speech.reset();
                             continue;
                         }
                         if (suppressingReply) { speech.reset(); suppressingReply = false; }
                         main.post(() -> {
-                            if (connected && !muted && !speaking) state(level > .08f ? "hearing" : "listening", level);
+                            if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
+                                state(level > .08f ? "hearing" : "listening", level);
                         });
                         boolean complete = speech.acceptWaveForm(samples, count);
                         if (!complete && SystemClock.elapsedRealtime() - lastPartialAt > 550L) {
                             lastPartialAt = SystemClock.elapsedRealtime();
                             final String partial = new JSONObject(speech.getPartialResult()).optString("partial", "");
                             if (!partial.isEmpty()) main.post(() -> {
-                                if (connected && !muted && !speaking)
+                                if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
                                     BrainNotes.prefs(this).edit().putString("last_partial", partial).apply();
                             });
                         }
                         if (complete) {
                             final String transcript = new JSONObject(speech.getResult()).optString("text", "");
-                            main.post(() -> { if (connected && !muted && !speaking) heard(transcript); });
+                            main.post(() -> {
+                                if (!connected || muted || speaking || SystemClock.elapsedRealtime() < echoQuietUntil) return;
+                                turnBuffer.append(transcript);
+                                if (turnBuffer.hasPending()) {
+                                    main.removeCallbacks(deliverVoiceTurn);
+                                    main.postDelayed(deliverVoiceTurn, END_OF_TURN_MS);
+                                }
+                            });
                         }
                     }
                 } catch (Exception error) {
@@ -383,6 +406,8 @@ public final class BubblesService extends Service {
         }
     }
     private void stopRecognition() {
+        main.removeCallbacks(deliverVoiceTurn);
+        turnBuffer.clear();
         captureRunning = false;
         saveAudio();
         if (microphone != null) {
@@ -421,16 +446,25 @@ public final class BubblesService extends Service {
         beginListening();
     }
     private void silenceReply() {
-        // Immediate playback interrupt does not turn off the always-on microphone.
+        // Stop a response without stopping the microphone. Old TTS callbacks
+        // MUST NOT end a later response started on the same engine.
         speechSuppressed = true;
         speechGeneration++;
+        activeUtteranceId = "";
         speaking = false;
+        main.removeCallbacks(deliverVoiceTurn);
+        turnBuffer.clear();
+        echoQuietUntil = SystemClock.elapsedRealtime() + 850L;
         if (tts != null) tts.stop();
         if (connected && !muted) state("listening", .1f);
     }
-    private void finishSpeaking() {
+    private void finishSpeaking(String id) {
+        if (id == null || !id.equals(activeUtteranceId)) return;
+        activeUtteranceId = "";
         speaking = false;
         speechGeneration++;
+        // Hardware speaker echo and TTS audio buffers may outlast onDone.
+        echoQuietUntil = SystemClock.elapsedRealtime() + 850L;
         if (connected && !muted) state("listening", .1f);
     }
 
@@ -652,19 +686,24 @@ public final class BubblesService extends Service {
             Toast.makeText(this, response, Toast.LENGTH_LONG).show();
             return;
         }
+        // Do not flush an active answer because an overlapping tool response arrives.
+        if (speaking) return;
+        main.removeCallbacks(deliverVoiceTurn);
+        turnBuffer.clear();
         speaking = true;
         final long generation = ++speechGeneration;
-        // Some device TTS engines never send onDone/onError; do not suppress recognition forever.
+        final String utterance = "bubbles-" + generation + "-" + SystemClock.elapsedRealtime();
+        activeUtteranceId = utterance;
         main.postDelayed(() -> {
-            if (speaking && generation == speechGeneration) {
+            if (speaking && generation == speechGeneration && utterance.equals(activeUtteranceId)) {
                 tts.stop();
-                finishSpeaking();
+                finishSpeaking(utterance);
                 BrainNotes.prefs(this).edit().putString("last_error", "Speech playback timed out; listening resumed").apply();
             }
         }, 90000);
         state("speaking", .4f);
-        int result = tts.speak(response, TextToSpeech.QUEUE_FLUSH, null, "bubbles-" + SystemClock.elapsedRealtime());
-        if (result == TextToSpeech.ERROR) finishSpeaking();
+        int result = tts.speak(response, TextToSpeech.QUEUE_FLUSH, null, utterance);
+        if (result == TextToSpeech.ERROR) finishSpeaking(utterance);
     }
 
     @Override public IBinder onBind(Intent intent) {return null;}
