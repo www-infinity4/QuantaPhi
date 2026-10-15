@@ -193,3 +193,10 @@
 .ba-panel .ba-native-provider[hidden],
 .ba-panel .ba-chatgpt-login[hidden],
 .ba-panel .ba-close[hidden]{display:none!important}
+
+/* First-party Bubbles APK: one-use owner pairing in the conversation itself. */
+.ba-native-owner{flex:none;display:grid;gap:4px;padding:8px 10px;border:1px solid #d9dedf;background:#fff;border-radius:12px}
+.ba-native-owner[hidden]{display:none!important}
+.ba-native-owner .ba-field{min-height:38px}
+.ba-native-owner .ba-muted{margin:0;font-size:12px;line-height:1.4}
+.ba-native-owner button{min-height:38px}
