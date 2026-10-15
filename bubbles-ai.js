@@ -167,7 +167,7 @@ const github=create('a','ba-link','GitHub App permission model ↗');github.href
 const gptConnect=create('button','ba-control ba-chatgpt-login','Continue with ChatGPT');
 gptConnect.type='button';gptConnect.hidden=!nativeOverlay;
 const gptStatus=create('p','ba-muted',nativeOverlay?'Checking ChatGPT connection on this phone…':'You can command your Robot Brain without ChatGPT OAuth. Official website ChatGPT sign-in requires partner registration, which is not connected.');
-let nativeProviderRow=null;
+let nativeProviderRow=null, nativeOwnerRow=null;
 let lastNativeGPTStatus=null;
 gptConnect.addEventListener('click',()=>{
  if(nativeOverlay){nativeGPTSignInRequested=true;gptStatus.textContent='Opening the native Android ChatGPT permission flow. The website never receives your sign-in tokens.'}
@@ -258,6 +258,36 @@ const pairingCard=create('section','ba-pairing-card');
  pairingCard.append(pairingInstructions,pairingCode,pairingCopy);
  panel.append(header,status,ownerMode,memoryHint,pairingCard,conversation,composer,tools);
 if(nativeOverlay){
+ // The native WebView has isolated account storage. Pair its real shared
+ // Bubbles chat using a one-time owner code, not a duplicate login screen.
+ nativeOwnerRow=create('form','ba-native-owner');
+ const ownerHelp=create('p','ba-muted','Connect Robot Brain once: on your verified QuantaPhi website, tell Bubbles “link my APK”, then paste its one-time code here. The owner session and shared memory reconnect automatically afterward.');
+ const nativeOwnerInput=create('input','ba-field');
+ nativeOwnerInput.type='password';nativeOwnerInput.autocomplete='off';nativeOwnerInput.spellcheck=false;
+ nativeOwnerInput.maxLength=512;nativeOwnerInput.placeholder='One-time owner pairing code';
+ nativeOwnerInput.setAttribute('aria-label','Owner pairing code');
+ const nativeOwnerButton=create('button','ba-control','Connect Robot Brain');
+ nativeOwnerButton.type='submit';
+ const nativeOwnerStatus=create('p','ba-muted','Only an owner-authorized code can unlock jobs.');
+ nativeOwnerStatus.setAttribute('role','status');
+ nativeOwnerRow.append(ownerHelp,nativeOwnerInput,nativeOwnerButton,nativeOwnerStatus);
+ nativeOwnerRow.addEventListener('submit',async event=>{
+  event.preventDefault();
+  if(nativeOwnerButton.disabled)return;
+  const code=nativeOwnerInput.value.trim();nativeOwnerInput.value='';
+  if(!code){nativeOwnerStatus.textContent='Paste the one-time code from your verified QuantaPhi account.';return}
+  nativeOwnerButton.disabled=true;nativeOwnerStatus.textContent='Verifying owner session…';
+  try{
+   const result=await window.QuantaBrainOwner?.connectWithCode?.(code);
+   if(result?.state!=='verified')throw Error(result?.state==='unreachable'?'Robot Brain is not responding.':'Code was not accepted or has expired.');
+   await connectOwner();
+   nativeOwnerStatus.textContent='Robot Brain connected. Shared conversation is syncing.';
+  }catch(error){
+   nativeOwnerStatus.textContent='Owner connection was not completed: '+String(error.message||error).slice(0,120);
+  }finally{nativeOwnerButton.disabled=false}
+ });
+ panel.insertBefore(nativeOwnerRow,conversation);
+
  // Native OAuth and model inference live on the device, not in this WebView.
  // Expose the entry point above conversation; don't bury it in hidden settings.
  nativeProviderRow=create('div','ba-native-provider');
@@ -367,7 +397,10 @@ function display(text,who,greeting=false){
    workStatus.textContent=ownerReady?'Task draft prepared. Review it and press the approved Robot Brain button to send.':'Task draft prepared locally. Robot Brain submission requires a verified owner session; no work was sent.';
   });
   const say=create('button','ba-miniaction','Read aloud');say.type='button';
-  say.addEventListener('click',()=>speakText(text));
+  say.addEventListener('click',()=>{
+    if(nativeOverlay)nativeSpeechReply=String(text).slice(0,2200);
+    else speakText(text);
+   });
   row.append(remember,task,say);line.append(row);
  }
  conversation.append(line);conversation.scrollTop=conversation.scrollHeight;
@@ -576,7 +609,18 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }
  if(!embedded&&/^(?:(?:please|bubbles)[\s,:]+)*(?:pair|link|sync|connect)\b.{0,60}\b(?:apk|android|phone|floating bubble)\b/i.test(spoken)){
   busy=true;send.disabled=true;let resultText;
-  try{const headers=await verifiedOwnerHeaders();const r=await fetch(BRAIN+'/owner/pair/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',signal:AbortSignal.timeout(15000)});const result=await r.json();if(!r.ok||!result.ok||!/^[a-f0-9]{64}$/.test(result.code||''))throw Error(result.error||'pairing_unavailable');resultText='Open the APK’s Owner access area and paste this into “Owner pairing code or recovery key”, then tap Connect owner session. This one-use code expires in two minutes: '+result.code+'. Once connected, both sessions share your owner conversation. This pairs Bubbles; it does not copy ChatGPT history.';}catch(error){resultText='I could not create the owner pairing code: '+String(error.message||error)+'. Use your verified QuantaPhi owner session at https://quantaphi.org/#robotBrainOwner .';}
+  try{
+   const headers=await verifiedOwnerHeaders();
+   const r=await fetch(BRAIN+'/owner/pair/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',signal:AbortSignal.timeout(15000)});
+   const result=await r.json();
+   if(!r.ok||!result.ok||!/^[a-f0-9]{64}$/.test(result.code||''))throw Error(result.error||'pairing_unavailable');
+   pairingCode.value=result.code;
+   pairingCard.hidden=false;toggle(true);
+   setTimeout(()=>{if(pairingCode.value===result.code){pairingCode.value='';pairingCard.hidden=true}},120000);
+   resultText='Your one-time APK pairing code is above. Tap Copy one-time code, open the Bubbles floating chat and paste it into Connect Robot Brain. The code expires in two minutes. Once verified, both sessions sync owner jobs and conversation. I will not put your code into chat history or say it aloud.';
+  }catch(error){
+   resultText='I could not create the pairing code: '+String(error.message||error).slice(0,140)+'. Your owner session must be verified first.';
+  }
   display(spoken,'you');display(resultText,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:resultText});persistChat();
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=resultText;else if(config.voice&&!nativeOverlay)speakText(resultText);
   nativeSpeechPending=false;busy=false;send.disabled=false;return;
@@ -837,6 +881,7 @@ async function verifiedOwnerHeaders(){
  if(!headers?.Authorization){ownerMode.textContent='Owner tools: not yet verified · say “connect owner tools” for details.';throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.')}
  ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+ if(nativeOwnerRow)nativeOwnerRow.hidden=true;
  workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
  return headers;
 }
@@ -847,6 +892,7 @@ async function connectOwner(){
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=false;
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
+ if(nativeOwnerRow)nativeOwnerRow.hidden=true;
  persistChat();void sharedMemory();
  if(nativeOverlay){voiceLeaseWanted=true;void sharedVoice(true);}
  else void checkSharedVoiceStatus();
