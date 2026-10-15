@@ -208,7 +208,9 @@ public final class BubblesService extends Service {
                 String text = intent.getStringExtra("text");
                 if (text != null && !text.trim().isEmpty() && text.length() <= 1800) {
                     speechSuppressed = true; // Typed questions get quiet, visible replies.
-                    if (busy) queued = text.trim(); else askOracle(text.trim());
+                    if (oracleWindow != null && oracleWindow.sendTyped(text.trim())) {
+                        BrainNotes.prefs(this).edit().putString("last_heard", text.trim()).apply();
+                    } else if (busy) queued = text.trim(); else askOracle(text.trim());
                 }
             } else if (intent != null && ACTION_RECORD.equals(intent.getAction())) {
                 if (muted) resumeSession();
@@ -254,7 +256,8 @@ public final class BubblesService extends Service {
                 String text = intent.getStringExtra("text");
                 if (text != null && !text.trim().isEmpty() && text.length() <= 1800) {
                     speechSuppressed = true;
-                    askOracle(text.trim());
+                    if (oracleWindow == null || !oracleWindow.sendTyped(text.trim()))
+                        askOracle(text.trim());
                 }
             }
         } catch (Exception error) {
