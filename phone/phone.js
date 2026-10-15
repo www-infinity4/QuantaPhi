@@ -18,8 +18,8 @@ function link(alias){return location.origin+'/phone/'+alias}
 // Creating the page does not assign the number, reveal an owner or connect to a carrier.
 function numberAddress(raw){
  const s=String(raw||'').trim();
- if(!/^\\+?[0-9 ().-]{7,30}$/.test(s))return '';
- let digits=s.replace(/\\D/g,'');
+ if(!/^\+?[0-9 ().-]{7,30}$/.test(s))return '';
+ let digits=s.replace(/\D/g,'');
  if(!s.startsWith('+')&&digits.length===10)digits='1'+digits;
  if(!/^[1-9][0-9]{7,14}$/.test(digits))return '';
  return digits;
@@ -282,7 +282,7 @@ $('legacy-form').addEventListener('submit',e=>{
  try{localStorage.setItem(FORWARDS,JSON.stringify(plans.slice(0,20)));say('Private forwarding plan saved on this device. It is NOT live routing.');legacyRender()}
  catch{say('Cannot save number on this device.',true)}
 });
-const numberPath=location.pathname.match(/^\\/phone\\/n\\/([1-9][0-9]{7,14})\\/?$/);
+const numberPath=location.pathname.match(/^\/phone\/n\/([1-9][0-9]{7,14})\/?$/);
 const path=location.pathname.match(/^\/phone\/([a-z0-9-]+)\/?$/);
 draftInit();if(numberPath){$('dial').value='+'+numberPath[1];$('dial').dispatchEvent(new Event('input'));showNumberPage();}
 else if(path){$('dial').value=path[1];$('dial').dispatchEvent(new Event('input'))}
