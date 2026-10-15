@@ -90,7 +90,7 @@ test('Web number route is generated on demand; unknown PSTN destinations are nev
  const route=fs.readFileSync(path.join(__dirname,'../workers/quantaphi-site/worker.js'),'utf8');
  const html=fs.readFileSync(path.join(__dirname,'../phone/index.html'),'utf8');
  const ui=fs.readFileSync(path.join(__dirname,'../phone/phone.js'),'utf8');
- assert.match(route,/phone\\\\\/n\\\\\//);
+ assert.ok(route.includes('sourcePath: \'/phone/index.html\'') && route.includes('phone\\/n\\/'), 'number dial pages must use the phone template');
  assert.match(html,/id="number-page-link"/);
  assert.match(html,/noindex,nofollow/);
  assert.match(ui,/function numberAddress\\(raw\\)/);
