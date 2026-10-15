@@ -59,11 +59,11 @@ test('Voice notes work without a manual notes form', () => {
   assert.equal(vm.runInContext('noteCommand("What time is it?")',sandbox),'');
   assert.match(source(app+'VoiceNotes.java'), /VoiceNotes/);
 });
-test('Preview 4 installs separately from previous debug signatures', () => {
+test('Preview 5 installs separately from previous debug signatures', () => {
   const gradle=source('android/bubbles-overlay/app/build.gradle');
-  assert.match(gradle,/versionCode 12/);
+  assert.match(gradle,/versionCode 13/);
   assert.match(gradle,/versionName '0\.12\.0'/);
-  assert.match(gradle,/applicationIdSuffix '\.preview4'/);
+  assert.match(gradle,/applicationIdSuffix '\.preview5'/);
 });
 
 
