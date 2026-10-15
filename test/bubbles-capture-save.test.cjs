@@ -94,3 +94,29 @@ test('native-to-web recorder state is authoritative and the stop control is cont
   assert.match(site, /Owner mode connected · Robot Brain commands active/);
   assert.doesNotMatch(floating, /performGlobalAction/);
 });
+
+test('one screen MP4 includes microphone audio automatically and publishes to Movies/Bubbles', () => {
+  const screen = source('ScreenCaptureService.java');
+  const activity = source('MainActivity.java');
+  assert.match(screen, /MediaRecorder\\.AudioSource\\.MIC/);
+  assert.match(screen, /MediaRecorder\\.AudioEncoder\\.AAC/);
+  assert.match(screen, /setAudioChannels\\(1\\)/);
+  assert.match(screen, /setVideoSource\\(MediaRecorder\\.VideoSource\\.SURFACE\\)/);
+  assert.match(screen, /savePath\\("video\\/mp4"\\)/);
+  assert.match(screen, /CapturePublisher\\.publish\\(this, completed, type\\)/);
+  assert.doesNotMatch(screen, /microphone audio is a separate WAV/);
+  assert.doesNotMatch(activity, /includeScreenAudio|Record microphone alongside screen video/);
+  assert.doesNotMatch(screen, /BubblesService\\.ACTION_SAVE_AUDIO/);
+});
+
+test('JSON history import uses the Android document picker, never the photo-only chooser', () => {
+  const service = source('BubblesService.java');
+  const activity = source('MainActivity.java');
+  const overlay = source('FloatingOracleWindow.java');
+  assert.match(overlay, /getAcceptTypes\\(\\)/);
+  assert.match(overlay, /service\\.openFilePicker\\(callback, historyJson\\)/);
+  assert.match(service, /pick_bubbles_history/);
+  assert.match(activity, /Intent\\.ACTION_OPEN_DOCUMENT/);
+  assert.match(activity, /"application\\/json"/);
+  assert.match(activity, /openBubblesDocumentPicker\\(history\\)/);
+});
