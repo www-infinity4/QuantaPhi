@@ -23,7 +23,7 @@ public final class PlatinumNavigation {
    if(!("https".equalsIgnoreCase(scheme)||"http".equalsIgnoreCase(scheme))
      ||host==null||host.isBlank()||url.getRawUserInfo()!=null)return "";
    return url.toASCIIString();
-  }catch(Exception e){return ""}
+  }catch(Exception e){return "";}
  }
  public static String openOrSearch(String raw) {
   String value=raw==null?"":raw.trim();
@@ -36,6 +36,6 @@ public final class PlatinumNavigation {
   try{
    URI u=new URI(raw);return "https".equalsIgnoreCase(u.getScheme())&&"quantaphi.org".equalsIgnoreCase(u.getHost())
       &&(u.getPath().equals("/platinum/")||u.getPath().equals("/platinum/index.html"));
-  }catch(Exception e){return false}
+  }catch(Exception e){return false;}
  }
 }
