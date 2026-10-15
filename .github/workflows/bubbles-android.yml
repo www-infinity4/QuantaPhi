@@ -9,6 +9,8 @@ on:
       - 'test/bubbles-native-visibility.test.cjs'
       - 'test/bubbles-native-site-parity.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
+      - 'test/bubbles-owner-native-pairing.test.cjs'
+      - 'test/bubbles-owner-pairing-visibility.test.cjs'
       - 'test/bubbles-capture-save.test.cjs'
       - 'test/bubbles-native-gpt-screen-story.test.cjs'
       - 'test/bubbles-native-session-voice.test.cjs'
@@ -55,6 +57,8 @@ jobs:
         run: node --test test/bubbles-chatgpt-native.test.cjs
       - name: Verify ChatGPT sign-in handoff, visual reader and story opt-in
         run: node --test test/bubbles-native-gpt-screen-story.test.cjs
+      - name: Verify no extra owner-code buttons and secure in-chat Android pairing
+        run: node --test test/bubbles-owner-native-pairing.test.cjs test/bubbles-owner-pairing-visibility.test.cjs
       - name: Verify shared session, Android speech-turn timing and ownership pairing
         run: node --test test/bubbles-native-session-voice.test.cjs
       - name: Check full speech-turn accumulator and interruption reset
