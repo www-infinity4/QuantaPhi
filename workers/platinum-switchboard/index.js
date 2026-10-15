@@ -105,7 +105,7 @@ export default{
     const caller=String(data.caller||''),to=String(data.to||'');
     const owner=ownerKey(request);
     if(!ALIAS.test(caller)||RESERVED.has(caller)||!validSecret(owner))response=fail('registered_caller_required',403);
-    else if(!/^\\+[1-9][0-9]{7,14}$/.test(to))response=fail('invalid_international_number',400);
+    else if(!/^\+[1-9][0-9]{7,14}$/.test(to))response=fail('invalid_international_number',400);
     else{
      const proof=await env.PLATINUM_LINES.get(env.PLATINUM_LINES.idFromName(caller))
        .fetch(new Request('https://internal/auth',{headers:{'x-platinum-owner':owner}}));
@@ -120,7 +120,7 @@ export default{
       // The bridge must return an actual provider call-leg identifier. A queued
       // job or generated landing page is never proof that a telephone rang.
       let receipt={};try{receipt=await upstream.json()}catch{}
-      if(upstream.ok&&receipt?.ok&&/^[-\\w]{10,100}$/.test(receipt.callId||''))
+      if(upstream.ok&&receipt?.ok&&/^[A-Za-z0-9_-]{10,100}$/.test(receipt.callId||''))
        response=json({ok:true,status:'carrier_leg_created',callId:receipt.callId});
       else response=fail('carrier_did_not_confirm_call_leg',502);
      }
