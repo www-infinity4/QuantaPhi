@@ -618,13 +618,21 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(nativeSpeechPending)nativeSpeechReply=response;else if(config.voice&&!nativeOverlay)speakText(response);
   nativeSpeechPending=false;busy=false;send.disabled=false;return;
  }
- if(!embedded&&(/^(?:(?:hey )?bubbles[, ]+)?(?:connect|check|enable|unlock|verify|show)(?: my| the)?(?: owner| robot brain| brain)?(?: tools| access| mode| connection| status)(?: now)?[.!?]*$/i.test(spoken)
+ if(!embedded&&(/^(?:(?:hey )?bubbles[, ]+)?(?:connect|check|test|ping|enable|unlock|verify|show)(?: my| the)?(?: owner| robot brain| brain)?(?: tools| access| mode| connection| status)(?: now)?[.!?]*$/i.test(spoken)
    || /^(?:(?:hey )?bubbles[, ]+)?(?:(?:please )?(?:talk|speak|communicate|connect|link)(?: to| with) (?:my|the) robot brain)(?: now)?[.!?]*$/i.test(spoken))){
   busy=true;send.disabled=true;
   let reply;
   try{
-   await verifiedOwnerHeaders();
-   reply='Your QuantaPhi owner Robot Brain is verified. Tell me what to fix or build; I will save an authenticated ticket and request the next runner cycle. You do not need ChatGPT OAuth for these tools.';
+   const headers=await verifiedOwnerHeaders();
+   // Owner pairing is not proof that the work API accepts a real request.
+   // Check the read-only ticket endpoint before telling the user it works.
+   const response=await fetch(BRAIN+'/work/tickets/list',{method:'POST',
+    headers:{...headers,'Content-Type':'application/json'},body:'{}',
+    cache:'no-store',signal:AbortSignal.timeout(15000)});
+   const check=await response.json().catch(()=>({}));
+   if(!response.ok||!check.ok||!Array.isArray(check.tickets))
+    throw Error(String(check.error||'Authenticated ticket service did not confirm the connection'));
+   reply='Robot Brain accepted my authenticated work-tool check. The submission tool is reachable. I can accept your fix/build command and return a real ticket reference; bot implementation still needs independent runner and code receipts.';
   }catch(error){
    let state='unreachable';
    try{state=(await window.QuantaBrainOwner?.walletIdentity?.())?.state||'unreachable'}catch{}
