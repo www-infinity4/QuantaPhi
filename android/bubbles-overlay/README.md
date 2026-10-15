@@ -1,5 +1,12 @@
 
-## Bubbles Preview 5 — 0.17.0 (October 15, 2026)
+## Bubbles Preview 5 — 0.18.0 (October 15, 2026)
+
+- Floating website chat keeps the composer visible while the message history scrolls by touch.
+- Owner pairing uses a single pasted 64-character code in the ordinary chat box. The code is redeemed through the private verified owner API, never sent into the model or transcript.
+- The Android WebView bypasses stale HTTP cache for the first-party chat UI. The existing preview signer and package name remain unchanged for compatible updates.
+- A successful CI build cannot prove scroll behavior on the physical Motorola or that the website assets have been deployed.
+
+## Previous 0.17.0 changes
 
 - The floating Android chat reports **Robot Brain: owner linked/not linked**. Linked means the first-party WebView has an owner credential, not that a job ran. Say **"check robot brain tools"** to call the authenticated read-only tickets API; a failed check must not be presented as connected.
 - Spoken owner build instructions use the existing owner-authenticated `/work/tickets/create`, `/work/tickets/update`, and `/work/run-next` pipeline. These API requests require a verified owner wallet or a one-time pairing code; no ChatGPT sign-in grants Robot Brain permissions. A work ticket is not evidence of a completed repair.
