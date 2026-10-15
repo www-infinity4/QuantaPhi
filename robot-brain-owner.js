@@ -88,7 +88,7 @@ window.QuantaBrainOwner={ready,verify,walletIdentity};
 if(typeof document==='undefined')return;
 const host=document.getElementById('robotBrainOwner');
 const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n};
-let busy=false,retryTimer=null,renewTimer=null,verifiedHeaders=null,verifiedSource='';
+let busy=false,pairingInFlight=false,retryTimer=null,renewTimer=null,verifiedHeaders=null,verifiedSource='';
 const later=(fn,ms)=>{clearTimeout(retryTimer);retryTimer=setTimeout(fn,ms)};
 
 async function renewWallet(){
@@ -137,8 +137,8 @@ window.QuantaBrainOwner.connectWithCode=async function(raw){
  const code=String(raw||'').trim();
  if(!validToken(code))return {state:'rejected'};
  if(verifiedHeaders)return {state:'verified'};
- if(busy)return {state:'busy'};
- busy=true;
+ if(pairingInFlight)return {state:'busy'};
+ pairingInFlight=true;
  try{
   const result=await verify(code);
   if(result.state!=='verified')return {state:result.state};
@@ -146,7 +146,7 @@ window.QuantaBrainOwner.connectWithCode=async function(raw){
   await saveToken(credential);
   unlocked(result.headers,credential,'key');
   return {state:'verified'};
- }finally{busy=false}
+ }finally{pairingInFlight=false}
 };
 function form(message){
  if(host.dataset.state==='verified')return;
