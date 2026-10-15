@@ -47,7 +47,7 @@ public final class ScreenCaptureService extends Service {
             if (consent == null || intent.getIntExtra("result", 0) != Activity.RESULT_OK) throw new IllegalStateException("Screen sharing was not approved");
             projection = ((MediaProjectionManager) getSystemService(MEDIA_PROJECTION_SERVICE))
                     .getMediaProjection(Activity.RESULT_OK, consent);
-            BrainNotes.prefs(this).edit().putBoolean("capture_active", true)
+            BrainNotes.prefs(this).edit().putBoolean("capture_active", true).putBoolean("capture_recording", false)
                     .putString("capture_state", "Screen capture authorized; starting").apply();
             projection.registerCallback(new MediaProjection.Callback() {
                 @Override public void onStop() { finishCapture(); }
@@ -110,7 +110,7 @@ public final class ScreenCaptureService extends Service {
                 }, main);
                 display = projection.createVirtualDisplay("Bubbles screenshot", width, height, metrics.densityDpi,
                         DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, images.getSurface(), null, main);
-                BrainNotes.prefs(this).edit().putString("capture_state",
+                BrainNotes.prefs(this).edit().putBoolean("capture_recording", true).putString("capture_state",
                     sequence ? "Capturing screenshots every " + intervalSeconds + " seconds for up to "
                         + durationSeconds + " seconds · one approved session" : "Taking screenshot…").apply();
                 main.postDelayed(this::finishCapture, sequence ? durationSeconds * 1000L : 15000L);
@@ -132,7 +132,8 @@ public final class ScreenCaptureService extends Service {
                 display = projection.createVirtualDisplay("Bubbles recording", width, height, metrics.densityDpi,
                         DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, recorder.getSurface(), null, main);
                 recorder.start(); recordingStarted = true;
-                BrainNotes.prefs(this).edit().putString("capture_state", "Screen video recording; microphone audio is a separate WAV when enabled").apply();
+                BrainNotes.prefs(this).edit().putBoolean("capture_recording", true)
+                    .putString("capture_state", "Screen video recording; microphone audio is a separate WAV when enabled").apply();
                 main.postDelayed(this::finishCapture, 300000);
             }
         } catch (Exception error) { fail(error); }
@@ -182,7 +183,7 @@ public final class ScreenCaptureService extends Service {
     private void finishCapture() {
         if (finished) return;
         finished = true;
-        BrainNotes.prefs(this).edit().putBoolean("capture_active", false).apply();
+        BrainNotes.prefs(this).edit().putBoolean("capture_active", false).putBoolean("capture_recording", false).apply();
         main.removeCallbacksAndMessages(null);
         if (sequenceDirectory != null) {
             BrainNotes.prefs(this).edit().putString("capture_state", "Screen series finished: "

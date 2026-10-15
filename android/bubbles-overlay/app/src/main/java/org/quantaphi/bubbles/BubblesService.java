@@ -434,12 +434,15 @@ public final class BubblesService extends Service {
         try {
             recording.start(new java.io.File(getFilesDir(), "captures"));
             recordedWords = "";
-            BrainNotes.prefs(this).edit().putString("audio_state", "Recording microphone sound").apply();
+            BrainNotes.prefs(this).edit().putBoolean("audio_active", true).putString("audio_state", "Recording microphone sound").apply();
             ((NotificationManager)getSystemService(NOTIFICATION_SERVICE)).notify(NOTIFY_ID, notification());
-        } catch (Exception error) { Toast.makeText(this, error.getMessage(), Toast.LENGTH_LONG).show(); }
+        } catch (Exception error) { BrainNotes.prefs(this).edit().putBoolean("audio_active", false)
+                .putString("audio_state", "Sound recording failed to start: " + error.getClass().getSimpleName()).apply();
+            Toast.makeText(this, "Sound recording could not start", Toast.LENGTH_LONG).show(); }
     }
     private void saveAudio() {
         pendingAudioRecording = false;
+        BrainNotes.prefs(this).edit().putBoolean("audio_active", false).apply();
         final java.io.File completed;
         try {
             completed = recording.finish();
@@ -547,6 +550,28 @@ public final class BubblesService extends Service {
         VoiceCaptureCommands.Command command = VoiceCaptureCommands.parse(addressed);
         if (command != null) {
             switch (command.action) {
+                case "capture_status": {
+                    android.content.SharedPreferences capturePrefs = BrainNotes.prefs(this);
+                    boolean screenActive = capturePrefs.getBoolean("capture_active", false);
+                    boolean screenStarted = capturePrefs.getBoolean("capture_recording", false);
+                    boolean soundActive = recording.active();
+                    String screenState = capturePrefs.getString("capture_state", "");
+                    String audioState = capturePrefs.getString("audio_state", "");
+                    String result = screenActive ? (screenStarted ? "Screen capture is ON. " : "Screen capture is starting. ")
+                        : soundActive ? "Microphone recording is ON. " : "No recording is active. ";
+                    // Saved/failed means the native MediaStore exporter reported
+                    // a result, not that Bubbles guesses where the file went.
+                    if (!screenActive && !soundActive) {
+                        if (screenState.startsWith("Saved ") || screenState.startsWith("Gallery export failed"))
+                            result += screenState;
+                        else if (audioState.startsWith("Saved ") || audioState.startsWith("Phone media save failed"))
+                            result += audioState;
+                        else if (screenState.contains("approval") || screenState.contains("requested"))
+                            result += "Screen capture is waiting for your Android approval.";
+                    }
+                    speak(result);
+                    break;
+                }
                 case "sound_start":
                     if (recording.active()) {
                         BrainNotes.prefs(this).edit().putString("audio_state", "Microphone is already recording").apply();

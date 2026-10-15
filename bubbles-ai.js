@@ -19,6 +19,7 @@ const nativeOverlay=!embedded&&params.get('nativeOverlay')==='1';
 let nativeSpeechReply='',nativeSpeechPending=false,noteTaking=false;
 let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=null;
 const nativeCaptureRequests=[]; // FIFO: Android polls requests; never replace a subsequent stop/start command.
+let nativeRecordingActive=false;
 function nativeChatGPT(prompt){
  if(!nativeOverlay||!nativeGPTAvailable)return Promise.reject(Error('Android ChatGPT plan is not connected'));
  if(nativeGPTRequest)return Promise.reject(Error('Another ChatGPT response is in progress'));
@@ -196,6 +197,17 @@ const status=create('p','ba-status','Microphone off. Touch the bubble to connect
 const ownerMode=create('small','ba-owner-status',embedded?'Independent visitor assistant':'Owner tools: checking Unified Wallet…');
 ownerMode.hidden=embedded;
 ownerMode.setAttribute('role','status');
+const recorderStatus=create('p','ba-muted','Android recorder: OFF · no saved capture in this session.');
+recorderStatus.hidden=!nativeOverlay;recorderStatus.setAttribute('role','status');
+const recorderStop=create('button','ba-control','Stop & save recording');
+recorderStop.type='button';recorderStop.hidden=true;
+recorderStop.addEventListener('click',()=>{
+ if(!nativeOverlay||!nativeRecordingActive)return;
+ if(nativeCaptureRequests.length>=24){recorderStatus.textContent='Android recorder queue is full; use the foreground notification.';return;}
+ nativeCaptureRequests.push('stop recording');
+ recorderStatus.textContent='Stop request sent to Android; waiting for save confirmation…';
+ recorderStop.disabled=true;
+});
 const memoryHint=create('small','ba-memory-status',embedded?'Conversation stays in this embed.':'Shared memory waits for your verified owner connection.');memoryHint.setAttribute('role','status');
 status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
@@ -257,7 +269,7 @@ const pairingCard=create('section','ba-pairing-card');
   catch{pairingCode.select();status.textContent='Select and copy the code manually.'}
  });
  pairingCard.append(pairingInstructions,pairingCode,pairingCopy);
- panel.append(header,status,ownerMode,memoryHint,pairingCard,conversation,composer,tools);
+ panel.append(header,status,ownerMode,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
 if(nativeOverlay){
  // The native WebView has isolated account storage. Pair its real shared
  // Bubbles chat using a one-time owner code, not a duplicate login screen.
@@ -552,13 +564,15 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   .replace(/^please\s+/,'')
   .replace(/^(?:(?:can|could|would|will) you\s+(?:please\s+)?|i (?:need|want|would like) (?:you )?to\s+|i (?:want|need) (?:a |the )?)/,'')
   .replace(/^please\s+/,'');
- const nativeCaptureTarget=/\b(?:screen(?:\s+recorder|\s+recording|\s+capture|\s+video)?|screenshots?|screen\s*shot)\b/i.test(nativeDirective);
+ const nativeCaptureTarget=/\b(?:screen(?:\s+recorder|\s+recording|\s+capture|\s+video)?|screenshots?|screen\s*shot)\b/i.test(nativeDirective)
+  || /^(?:record|record (?:sound|audio|my voice)|start (?:recording|sound recording|audio recording)|stop (?:recording|audio|sound|microphone)|save (?:recording|audio|sound)|(?:turn|switch) (?:on|off) (?:the |my )?(?:voice|audio|sound|microphone) recorder)$/i.test(nativeDirective)
+  || (nativeRecordingActive&&/^(?:stop|end|finish|save)(?: now| it| that| recording| the recording)?$/i.test(nativeDirective));
  const nativeCaptureVerb=/^(?:record|film|start|begin|turn on|switch on|enable|activate|open|launch|use|run|make|capture|take|grab|save|stop|end|finish|cancel|turn off|switch off|screen record)\b/i.test(nativeDirective);
  if(nativeOverlay&&!fromVoice&&nativeCaptureTarget&&nativeCaptureVerb){
   const stopping=/^(?:stop|end|finish|cancel|turn off|switch off|save)\b/i.test(nativeDirective);
   const response=stopping
-   ?'I have sent your stop request to Android. Check Movies/Bubbles after the recording finishes saving.'
-   :'I have passed your request to Android Bubbles. Tap the capture approval notification and accept the Android screen-sharing dialog. Recording has not started yet.';
+   ?'I passed the stop request to Android. Watch the recorder status for saving and the final phone-library receipt.'
+   :'I passed the recording request to Android. For screen capture, approve Android’s system permission dialog. Recording is NOT confirmed until the recorder status says ON.';
   if(nativeCaptureRequests.length>=24){
     status.textContent='Android has 24 unprocessed capture commands. Check the Bubbles connection.';
     nativeSpeechPending=false;return;
@@ -604,13 +618,21 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(nativeSpeechPending)nativeSpeechReply=response;else if(config.voice&&!nativeOverlay)speakText(response);
   nativeSpeechPending=false;busy=false;send.disabled=false;return;
  }
- if(!embedded&&(/^(?:(?:hey )?bubbles[, ]+)?(?:connect|check|enable|unlock|verify|show)(?: my| the)?(?: owner| robot brain| brain)?(?: tools| access| mode| connection| status)(?: now)?[.!?]*$/i.test(spoken)
+ if(!embedded&&(/^(?:(?:hey )?bubbles[, ]+)?(?:connect|check|test|ping|enable|unlock|verify|show)(?: my| the)?(?: owner| robot brain| brain)?(?: tools| access| mode| connection| status)(?: now)?[.!?]*$/i.test(spoken)
    || /^(?:(?:hey )?bubbles[, ]+)?(?:(?:please )?(?:talk|speak|communicate|connect|link)(?: to| with) (?:my|the) robot brain)(?: now)?[.!?]*$/i.test(spoken))){
   busy=true;send.disabled=true;
   let reply;
   try{
-   await verifiedOwnerHeaders();
-   reply='Your QuantaPhi owner Robot Brain is verified. Tell me what to fix or build; I will save an authenticated ticket and request the next runner cycle. You do not need ChatGPT OAuth for these tools.';
+   const headers=await verifiedOwnerHeaders();
+   // Owner pairing is not proof that the work API accepts a real request.
+   // Check the read-only ticket endpoint before telling the user it works.
+   const response=await fetch(BRAIN+'/work/tickets/list',{method:'POST',
+    headers:{...headers,'Content-Type':'application/json'},body:'{}',
+    cache:'no-store',signal:AbortSignal.timeout(15000)});
+   const check=await response.json().catch(()=>({}));
+   if(!response.ok||!check.ok||!Array.isArray(check.tickets))
+    throw Error(String(check.error||'Authenticated ticket service did not confirm the connection'));
+   reply='Robot Brain accepted my authenticated work-tool check. The submission tool is reachable. I can accept your fix/build command and return a real ticket reference; bot implementation still needs independent runner and code receipts.';
   }catch(error){
    let state='unreachable';
    try{state=(await window.QuantaBrainOwner?.walletIdentity?.())?.state||'unreachable'}catch{}
@@ -991,6 +1013,28 @@ if(!embedded&&incomingWork&&incomingWork.length<=1800){
 }
 window.QuantaBubbles={
  open:()=>toggle(true),close:()=>toggle(false),
+ // Owner pairing is not itself proof of an executed job. The Brain API
+ // authenticates every submission and returns a separate ticket receipt.
+ ownerToolConnected:()=>Boolean(nativeOverlay&&ownerReady&&ownerHeaders?.Authorization),
+ syncNativeCaptureStatus:(capture)=>{
+  if(!nativeOverlay||!capture||typeof capture!=='object')return false;
+  const screenActive=capture.screenActive===true,started=capture.screenRecording===true;
+  const soundActive=capture.soundActive===true;
+  nativeRecordingActive=screenActive||soundActive;
+  recorderStop.hidden=!nativeRecordingActive;
+  recorderStop.disabled=false;
+  const screen=String(capture.screenState||'').slice(0,160);
+  const sound=String(capture.soundState||'').slice(0,160);
+  const mode=started?'Screen capture ON':screenActive?'Screen capture starting':
+   /approval|approve|requested/i.test(screen)?'Waiting for Android screen approval':
+   /saving|finishing/i.test(screen)?'Screen capture saving':'Screen capture OFF';
+  const soundMode=soundActive?'Sound recording ON':
+   /saving|finishing/i.test(sound)?'Sound saving':'Sound recorder OFF';
+  const lastReceipt=!nativeRecordingActive&&(/saved|failed|finished|error/i.test(screen+' '+sound))
+   ?' · Last result: '+(/saved|failed|finished|error/i.test(screen)?screen:sound):'';
+  recorderStatus.textContent=mode+' · '+soundMode+lastReceipt;
+  return true;
+ },
  setNativeGPTAvailable:(available)=>{
   if(!nativeOverlay)return false;
   nativeGPTAvailable=available===true;

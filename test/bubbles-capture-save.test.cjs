@@ -56,7 +56,7 @@ test('floating QuantaPhi website composer passes screen capture to native Androi
   assert.match(site, /nativeCaptureRequests\.push\(spoken\)/);
   assert.match(site, /nativeCaptureRequests\.shift\(\)/);
   assert.match(site, /drainNativeCaptureRequest/);
-  assert.match(site, /Recording has not started yet/);
+  assert.match(site, /Recording is NOT confirmed until the recorder status says ON/);
   assert.match(bridge, /VoiceCaptureCommands\.parse\(command\)/);
   assert.match(bridge, /BubblesService\.ACTION_TEXT/);
   assert.match(bridge, /drainNativeCaptureRequest/);
@@ -73,4 +73,23 @@ test('Android consent must be approved by the person, then the native app starts
   assert.match(service,/ScreenCaptureService\.STOP/);
   // Do not synthesize clicks on Android's protected MediaProjection consent.
   assert.doesNotMatch(service,/performGlobalAction\(.*(?:APPROVE|ALLOW)/);
+});
+
+test('native-to-web recorder state is authoritative and the stop control is contextual', () => {
+  const site = fs.readFileSync('bubbles-ai.js', 'utf8');
+  const floating = source('FloatingOracleWindow.java');
+  const audio = source('BubblesService.java');
+  const screen = source('ScreenCaptureService.java');
+  assert.match(audio, /putBoolean\("audio_active", true\)/);
+  assert.match(audio, /putBoolean\("audio_active", false\)/);
+  assert.match(screen, /putBoolean\("capture_recording", true\)/);
+  assert.match(screen, /putBoolean\("capture_recording", false\)/);
+  assert.match(floating, /syncNativeCaptureStatus/);
+  assert.match(floating, /getBoolean\("capture_active", false\)/);
+  assert.match(floating, /getBoolean\("audio_active", false\)/);
+  assert.match(site, /recorderStop\.hidden=!nativeRecordingActive/);
+  assert.match(site, /nativeCaptureRequests\.push\('stop recording'\)/);
+  assert.match(site, /ownerToolConnected:/);
+  assert.match(floating, /Robot Brain: /);
+  assert.doesNotMatch(floating, /performGlobalAction/);
 });

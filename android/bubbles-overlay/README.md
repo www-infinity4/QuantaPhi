@@ -1,3 +1,12 @@
+
+## Bubbles Preview 5 — 0.17.0 (October 15, 2026)
+
+- The floating Android chat reports **Robot Brain: owner linked/not linked**. Linked means the first-party WebView has an owner credential, not that a job ran. Say **"check robot brain tools"** to call the authenticated read-only tickets API; a failed check must not be presented as connected.
+- Spoken owner build instructions use the existing owner-authenticated `/work/tickets/create`, `/work/tickets/update`, and `/work/run-next` pipeline. These API requests require a verified owner wallet or a one-time pairing code; no ChatGPT sign-in grants Robot Brain permissions. A work ticket is not evidence of a completed repair.
+- The website panel inside the Android orb now receives an Android-originated recorder state. It shows **waiting for Android approval**, **screen/sound ON**, **saving**, and the MediaStore save/failure result. Its **Stop & save recording** action appears only for an active session. Spoken **"is the recorder on?"** and **"did the recording save?"** read the native status, not the model's guess.
+- Voice and typed screen/sound recording instructions route to the Android foreground services. Android's protected MediaProjection consent still needs a person's approval, and the first launch may need a notification tap to display that system dialog. The app should start capture after consent rather than asking for a separate app-side Start tap.
+- This is a compiled-code preview until GitHub's Android build succeeds and the APK is actually tested on a Motorola. The package still uses Preview 5's test signer; an earlier app with a different certificate will *not* install as an in-place upgrade regardless of versionCode.
+
 # Bubbles AI — native Android companion
 
 This Android app is the **cross-app layer** of QuantaPhi Bubbles AI. Unlike a
