@@ -512,7 +512,7 @@ importGPT.addEventListener('change',async()=>{
   const add=(role,value,at,id)=>{
    if(records.length>=limit){truncated=true;return}
    if(role!=='user'&&role!=='assistant')return;
-   const text=String(value||'').replace(/\\s+/g,' ').trim().slice(0,6000);
+   const text=String(value||'').replace(/\s+/g,' ').trim().slice(0,6000);
    if(!text)return;
    const time=atTime(at);
    records.push({id:'import_'+source+'_'+stableId(String(id||'')+'|'+role+'|'+time+'|'+text),
