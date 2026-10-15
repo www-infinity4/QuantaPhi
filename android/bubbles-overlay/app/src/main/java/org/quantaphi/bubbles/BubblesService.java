@@ -110,16 +110,18 @@ public final class BubblesService extends Service {
     // Vosk ends recognition at a brief pause, not necessarily at a thought.
     // Combine adjacent phrases until the owner has finished speaking.
     private static final long END_OF_TURN_MS = 1650L;
-    private final Runnable deliverVoiceTurn = () -> {
-        if (!connected || muted) { turnBuffer.clear(); return; }
-        if (speaking || SystemClock.elapsedRealtime() < echoQuietUntil) {
-            // A second spoken instruction may already be buffered when a reply
-            // starts. Never discard it just because TTS or its echo guard is on.
-            if (turnBuffer.hasPending()) main.postDelayed(deliverVoiceTurn, 400L);
-            return;
+    private final Runnable deliverVoiceTurn = new Runnable() {
+        @Override public void run() {
+            if (!connected || muted) { turnBuffer.clear(); return; }
+            if (speaking || SystemClock.elapsedRealtime() < echoQuietUntil) {
+                // A second instruction can already be buffered when the reply
+                // begins; defer it rather than treating TTS as a new command.
+                if (turnBuffer.hasPending()) main.postDelayed(this, 400L);
+                return;
+            }
+            final String complete = turnBuffer.take();
+            if (!complete.isEmpty()) heard(complete);
         }
-        final String complete = turnBuffer.take();
-        if (!complete.isEmpty()) heard(complete);
     };
     private long lastPartialAt = 0L;
 
