@@ -24,12 +24,12 @@ android {
     }
     buildTypes {
         debug {
-            if (rootProject.file('preview-debug.keystore').isFile()) {
-                signingConfig signingConfigs.preview
-            }
             applicationIdSuffix '.preview5'
             versionNameSuffix '-preview'
             manifestPlaceholders = [appTitle: 'Bubbles Preview 5']
+            if (rootProject.file('preview-debug.keystore').isFile()) {
+                signingConfig signingConfigs.preview
+            }
             // Phone-only preview: exclude x86 emulator libraries from the download.
             ndk { abiFilters 'armeabi-v7a', 'arm64-v8a' }
         }
