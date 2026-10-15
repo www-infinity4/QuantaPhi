@@ -68,7 +68,7 @@ export async function startContinuousVoice({stream,onLevel,onTranscript,onStatus
     const text=String(result.text||'').trim();
     if(text)transcriptParts.push(text);
     if(!continues){
-      const thought=transcriptParts.join(' ').replace(/\\s+/g,' ').trim();
+      const thought=transcriptParts.join(' ').replace(/\s+/g,' ').trim();
       transcriptParts=[];
       if(thought)onTranscript(thought);
       else onStatus('Listening · no clear words in that clip.');
