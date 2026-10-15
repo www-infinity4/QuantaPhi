@@ -66,3 +66,13 @@ test('AI and voice failure status captures a useful reason rather than only an e
   assert.match(source, /Offline voice model failed to load/);
   assert.match(source, /Microphone start failed:/);
 });
+
+test('offline speech requires microphone energy and drops long code-like loops', () => {
+  if (local) return;
+  const gate=fs.readFileSync(path.join(root,'app/src/main/java/org/quantaphi/bubbles/SpeechTranscriptGate.java'),'utf8');
+  assert.match(gate,/voicedMillis < 160L/);
+  assert.match(gate,/repeats >= 4/);
+  assert.match(gate,/\[0-9a-f\]\{32,\}/);
+  assert.match(source,/SpeechTranscriptGate\.plausible\(transcript, voicedMillis\)/);
+  assert.match(source,/voicedSamples = 0L/);
+});
