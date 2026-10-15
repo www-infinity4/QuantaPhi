@@ -292,7 +292,7 @@ const clearChat=create('button','ba-control','Clear this view');clearChat.type='
 const importLabel=create('label','ba-privacy-label','Import ChatGPT or Gemini history (choose exported JSON)');
 const importGPT=create('input','ba-field');importGPT.type='file';importGPT.accept='.json,application/json';
 importGPT.setAttribute('aria-label','Import ChatGPT conversations.json or Gemini Apps MyActivity.json from Google Takeout');
-const importStatus=create('p','ba-muted','Sign-in does not grant access to earlier account chats. Choose each ChatGPT conversations.json or Google Takeout Gemini Apps MyActivity.json file. Bubbles indexes only the records actually present in that export.');
+const importStatus=create('p','ba-muted','ChatGPT sign-in does not share old chats. Choose each ChatGPT conversations.json or Google Takeout Gemini Apps MyActivity.json file. Bubbles indexes only the records actually present in that export.');
 privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
