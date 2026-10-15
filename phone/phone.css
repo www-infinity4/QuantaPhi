@@ -16,3 +16,15 @@ footer{font-size:12px;color:#596779;text-align:center;margin:22px 0}[hidden]{dis
 
 .cellular-link{display:inline-flex;min-height:46px;align-items:center;padding:11px 17px;border-radius:12px;border:1px solid #3a587c;background:#405a7c;color:#fff;text-decoration:none;font-weight:750}
 .cellular-link:focus-visible{outline:3px solid #2b71b7;outline-offset:3px}
+
+/* Same Infinity line identity; QuickDial service directory is navigation, not PSTN. */
+.access-meter{display:grid;gap:10px;margin:12px 0}
+.access-meter>div{display:flex;flex-direction:column;gap:4px;padding:12px 14px;border:1px solid #d4e0ed;background:#f5f9fd;border-radius:13px;overflow-wrap:anywhere}
+.access-meter strong{font-size:13px;color:#314f73}
+.access-meter span{font-size:13px;color:#52667c}
+.quickdial-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:16px}
+button.quickdial-item{min-height:110px;display:flex;align-items:flex-start;justify-content:center;flex-direction:column;gap:3px;padding:12px;border:1px solid #b7c8da;background:#f8fbff;text-align:left}
+.quickdial-item strong{font-size:19px;line-height:1;color:#27588b}
+.quickdial-item span{font-weight:800;color:#294762}
+.quickdial-item small{font-size:11px;color:#5b7189;line-height:1.2}
+@media(max-width:390px){.quickdial-grid{grid-template-columns:1fr}button.quickdial-item{min-height:83px}}
