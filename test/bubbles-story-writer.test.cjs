@@ -66,7 +66,7 @@ test('Bubbles never impersonates account sign-in or grants unverified repository
  assert.match(code,/context:\{kind:'robot-directions'/);
  assert.match(code,/approval='explicit-click'/);
  assert.match(code,/No confirmed ticket/);
- assert.match(code,/Only confirmed owner-submitted Robot Brain tickets count as queued/);
+ assert.match(code,/Only real tool receipts prove repository creation/);
  assert.doesNotMatch(code,/github\.com\/login\/oauth\/authorize\?/);
  assert.doesNotMatch(code,/https:\/\/api\.github\.com\/repos\/.*\/contents/);
  assert.doesNotMatch(code,/ANTHROPIC_API_KEY|OPENAI_API_KEY|ghp_/);
