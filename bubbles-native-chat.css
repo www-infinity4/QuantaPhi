@@ -108,7 +108,7 @@ body .ba-panel button:disabled {opacity:.8}
 @media(max-width:600px){
  html:not(.bubbles-native-overlay) .ba-panel {
   width:calc(100vw - 24px);max-width:390px;right:12px;bottom:80px;
-  height:min(62dvh,500px);max-height:calc(100dvh - 96px);min-height:0;padding:8px;gap:6px;
+  height:min(64dvh,500px);max-height:calc(100dvh - 96px);min-height:0;padding:8px;gap:6px;
  }
  body .ba-panel .ba-message {max-width:100%;padding:9px 10px}
  body .ba-panel .ba-composer textarea {min-height:48px;height:64px;max-height:80px;font-size:16px}
@@ -118,4 +118,3 @@ html.bubbles-native-overlay .ba-panel .ba-composer {padding:6px}
 html.bubbles-native-overlay .ba-panel .ba-composer textarea {min-height:48px;height:64px;max-height:80px}
 
 body .ba-panel .ba-composer textarea {padding:6px 8px;line-height:1.35}
-

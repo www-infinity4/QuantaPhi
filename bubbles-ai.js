@@ -274,7 +274,7 @@ const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';spe
 const send=create('button','ba-send','Send');send.type='submit';
 actions.append(photoRow,mic,speak,send);composer.append(input,photoPreview,actions);
 const privateLabel=create('label','ba-muted'),privateContext=create('input');privateContext.type='checkbox';privateContext.checked=config.privateContext===true;privateLabel.append(privateContext,create('span','',' Use my private Quant-AI selling defaults'));privateContext.addEventListener('change',()=>{config.privateContext=privateContext.checked;save(CONFIG,config)});composer.append(privateLabel);
-const tools=create('details','ba-tools');const summary=create('summary','','Notes & authorized work');tools.append(summary);
+const tools=create('details','ba-tools');const summary=create('summary','','Notes & authorized work');tools.append(summary,privateLabel);
 tools.addEventListener('toggle',()=>{if(tools.open&&typeof requestAnimationFrame==='function')requestAnimationFrame(()=>tools.scrollIntoView({block:'start'}));});
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
