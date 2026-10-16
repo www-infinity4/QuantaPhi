@@ -574,12 +574,22 @@ function speakText(value){
    const voices=speechSynthesis.getVoices?.()||[];
    utterance.voice=voices.find(v=>v.voiceURI===config.voiceURI)||voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
    utterance.onstart=()=>{if(version===playbackVersion)setOrbState('speaking')};
+   let watchdog=null,completed=false;
    const finished=()=>{
+    if(completed)return;
+    completed=true;clearTimeout(watchdog);
     if(version!==playbackVersion)return;
     speaking=false;voiceEchoUntil=Date.now()+900;
     if(voiceEnabled){setOrbState('listening');void streamVoice?.resume()}else setOrbState('idle');
    };
-   utterance.onend=finished;utterance.onerror=finished;speechSynthesis.speak(utterance)
+   utterance.onend=finished;utterance.onerror=finished;
+   // Some Android WebViews never deliver speech end/error. Release this
+   // playback only; a late callback must not disturb a later utterance.
+   watchdog=setTimeout(()=>{
+    if(completed||version!==playbackVersion)return;
+    try{speechSynthesis.cancel()}finally{finished()}
+   },Math.min(240000,6000+utterance.text.length*95));
+   speechSynthesis.speak(utterance)
   }
  catch(error){if(version===playbackVersion){speaking=false;voiceEchoUntil=Date.now()+900}status.textContent='Speech playback could not start: '+String(error?.message||error).slice(0,120)}
 }
