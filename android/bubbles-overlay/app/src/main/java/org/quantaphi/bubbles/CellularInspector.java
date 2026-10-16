@@ -40,7 +40,7 @@ public final class CellularInspector {
    try{b.append("SIM card installed: ").append(tm.hasIccCard()?"yes":"no").append("\n");}
    catch(SecurityException|UnsupportedOperationException e){b.append("SIM card: Android restricted access\n");}
    try{String name=tm.getSimOperatorName();
-    b.append("Current SIM network name: ").append(name==null||name.isBlank()?"not reported":name).append("\n");
+    b.append("Current SIM network name: ").append(name==null||name.trim().isEmpty()?"not reported":name).append("\n");
    }catch(SecurityException|UnsupportedOperationException e){b.append("SIM network name: not available\n");}
    try{b.append("Infinity app has carrier privileges for this SIM: ").append(tm.hasCarrierPrivileges()?"yes":"no").append("\n");}
    catch(SecurityException|UnsupportedOperationException e){b.append("SIM administrative permissions: unavailable\n");}
@@ -64,3 +64,4 @@ public final class CellularInspector {
   return b.toString();
  }
 }
+
