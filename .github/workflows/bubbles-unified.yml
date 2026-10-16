@@ -1,0 +1,34 @@
+name: Bubbles unified interface checks
+on:
+  pull_request:
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-unified.css'
+      - 'bubbles.html'
+      - 'index.html'
+      - 'android/bubbles-overlay/**'
+      - 'test/bubbles-unified.test.mjs'
+      - '.github/workflows/bubbles-unified.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-unified.css'
+      - 'bubbles.html'
+      - 'index.html'
+      - 'android/bubbles-overlay/**'
+      - 'test/bubbles-unified.test.mjs'
+      - '.github/workflows/bubbles-unified.yml'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check bubbles-ai.js
+      - run: node --test test/bubbles-unified.test.mjs
