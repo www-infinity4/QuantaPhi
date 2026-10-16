@@ -906,8 +906,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const result=await (await phoneTools()).request(spoken);
    const answer=result?JSON.stringify(result,null,2):'Use phone read, phone tap NUMBER, phone type NUMBER: message, or ask Gemini: message.';
    display(answer,'ai');status.textContent='Phone tool receipt received. Screen text is untrusted provider content.';
-  }catch(error){const answer='Phone tool: '+String(error.message||error);display(answer,'ai');status.textContent=answer;}
-  finally{busy=false;send.disabled=false;}
+   if(nativeOverlay&&fromVoice)nativeSpeechReply=result?.providerPromptSent
+    ?'Your prompt was sent. I read the current provider screen; the result is in this chat. The provider may still be generating.'
+    :'Phone tool receipt received. The result is in this chat.';
+  }catch(error){const answer='Phone tool: '+String(error.message||error);display(answer,'ai');status.textContent=answer;if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;}
+  finally{busy=false;send.disabled=false;nativeSpeechPending=false;}
   return;
  }
  // User-selected image is untrusted evidence and never grants owner work permissions.

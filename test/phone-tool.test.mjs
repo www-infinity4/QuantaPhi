@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {phoneTool,validatePhoneCommand} from '../workers/infinity-brain-clock/phone-tool.mjs';
-import {parseRequest} from '../bubbles-phone-tool.mjs';
+import {parseRequest,configure,request} from '../bubbles-phone-tool.mjs';
 const generation='11111111-1111-4111-8111-111111111111';
 const id='22222222-2222-4222-8222-222222222222';
 const storage=()=>{const map=new Map();return {get:async k=>structuredClone(map.get(k)),put:async(k,v)=>{map.set(k,structuredClone(v));},delete:async k=>map.delete(k)};};
@@ -59,4 +59,29 @@ test('phone text is preserved exactly, and quoted provider text is not parsed as
  assert.deepEqual(parseRequest('phone type 4: hello\nworld'),{action:'type',target:4,text:'hello\nworld'});
  assert.equal(parseRequest('The page says phone tap 4'),null);
  assert.equal(parseRequest('phone tap 2; delete account'),null);
+});
+test('provider conversation reads fresh targets before typing and sending, then reads the reply',async()=>{
+ const original=globalThis.fetch,actions=[];let latest=null,observation;
+ configure(async()=>({Authorization:'Bearer owner'}),()=>{});
+ globalThis.fetch=async(url,options)=>{
+  const body=JSON.parse(options.body);assert.equal(options.headers.Authorization,'Bearer owner');
+  if(url.endsWith('/status'))return Response.json({ok:true,sessionId:generation,receipt:latest});
+  assert.ok(url.endsWith('/command'));actions.push(body);
+  if(body.action==='read'){
+   observation=crypto.randomUUID();
+   latest={id:body.id,ok:true,result:{page:'gemini.google.com/app',observation,untrusted:true,
+    nodes:[{target:0,label:'Message',type:true},{target:1,label:'Send message',tap:true},{target:2,label:'Provider response',type:false,tap:false}]}};
+  }else{
+   assert.equal(body.observation,observation);
+   latest={id:body.id,ok:true,result:{androidAccepted:true,verifiedNextScreen:false}};
+  }
+  return Response.json({ok:true,commandId:body.id});
+ };
+ try{
+  const result=await request('ask Gemini: Explain the current build problem.');
+  assert.deepEqual(actions.map(a=>a.action),['read','type','read','tap','read']);
+  assert.equal(actions[1].text,'Explain the current build problem.');
+  assert.equal(actions[3].target,1);
+  assert.equal(result.providerPromptSent,true);assert.equal(result.responseCompleteVerified,false);
+ }finally{globalThis.fetch=original;}
 });
