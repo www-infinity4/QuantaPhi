@@ -9,10 +9,10 @@ const PREFIX='infinity-platinum-shell-';
 const SHELL='/platinum/index.html';
 const STATIC=[
  SHELL,
- '/platinum/platinum.css?v=20261014-platinum1',
+ '/platinum/platinum.css?v=20261015-offline1',
  '/phi-project-package.js?v=20261012-action1',
  '/platinum/core.js?v=20261014-platinum1',
- '/platinum/platinum.js?v=20261014-platinum1'
+ '/platinum/platinum.js?v=20261015-offline1'
 ];
 const base=self.location.origin;
 const whitelist=new Set(STATIC.map(u=>new URL(u,base).href));
