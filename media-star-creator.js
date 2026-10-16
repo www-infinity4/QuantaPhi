@@ -110,9 +110,30 @@
   const feedback=el("p","ms-creator-status");feedback.setAttribute("role","status");
   const data=()=>({title:title.value,url:link.value,description:description.value,
     creator:creator.value,creditEvidence:creditEvidence.value,credits:contributors.value});
+  let registeredContentId='';
+  async function registerBuiltCard(){
+    const item=data(),source=safeSource(item.url),api=window.StarQuestCloudLedger;
+    if(!source||!item.title.trim()||typeof api?.registerProduction!=='function'){
+      feedback.textContent='Card generated. Server attribution requires an original source and a verified creator account.';
+      return;
+    }
+    try{
+      const bytes=new TextEncoder().encode(source+'|'+item.title.trim().toLowerCase());
+      const digest=new Uint8Array(await crypto.subtle.digest('SHA-256',bytes));
+      const id='creator-'+[...digest.slice(0,16)].map(x=>x.toString(16).padStart(2,'0')).join('');
+      const result=await api.registerProduction({platform:'media-star',sourceId:id,title:item.title,sourceUrl:source,
+        credits:creditManifest(item)});
+      if(result?.ok&&result.contentId){registeredContentId=result.contentId;
+        feedback.textContent='Production credits recorded for owner review. StarCoin payouts are UNFUNDED, not spendable.';}
+      else feedback.textContent='Production credit registry unavailable. The portable card still contains its credits.';
+    }catch(error){
+      feedback.textContent='Card is ready, but production credits were not saved to the server. Verified owner wallet and ledger deployment required.';
+    }
+  }
   createBtn("Preview card","ms-creator-button",()=>{
     try{ const html=exportHtml(data());preview.innerHTML=html.replace(/<script>[\s\S]*?<\/script>/gi,"");
       feedback.textContent=link.value.trim()?"Preview ready.":"Blank card ready. Add your own media URL before publishing to all visitors.";
+      if(link.value.trim())void registerBuiltCard();
     }catch(e){feedback.textContent=e.message;}
   });
   createBtn("Copy my Media Star","ms-creator-button ms-primary",async()=>{
@@ -120,6 +141,7 @@
       if(!navigator.clipboard?.writeText)throw Error("Clipboard is unavailable in this browser.");
       await navigator.clipboard.writeText(html);
       feedback.textContent="Your independent Media Star HTML is copied. No Fred content, Phi wallet, Cloudflare binding or payment keys are included.";
+      if(link.value.trim())void registerBuiltCard();
     }catch(e){feedback.textContent=e.message;}
   });
   const build=which=>{
