@@ -21,6 +21,7 @@ test('tapping a show window starts one in-card Omni TV remote; next tap stops ol
   addEventListener(k,fn){this.handlers[k]=fn}
   click(){this.handlers.click?.()}
   replaceChildren(){this.children=[]}
+  removeChild(child){this.children=this.children.filter(v=>v!==child);return child}
   insertBefore(v,before){this.children.splice(this.children.indexOf(before),0,v)}
   focus(){this.focused=true}
  }
@@ -45,6 +46,10 @@ test('tapping a show window starts one in-card Omni TV remote; next tap stops ol
  assert.equal(all(shop).find(x=>x.className==='channelphi-screen').hidden,false);
  all(star).filter(x=>x.tagName==='button').at(-1).click();
  assert.equal(all(root).filter(x=>x.tagName==='iframe').length,0);
+ // Stopping must preserve the controls so this exact card can be opened again.
+ all(star).find(x=>x.className==='channelphi-screen').click();
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
+ assert.equal(all(star).filter(x=>x.className==='channelphi-stop').length,1);
 });
 test('Terra and Petra movie playback remains unchanged',()=>{
  const player=fs.readFileSync('halloween-phi.js','utf8');
