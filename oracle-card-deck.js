@@ -44,7 +44,10 @@ function order(){return entries.filter(available).sort((a,b)=>b.count-a.count||e
 function returnActive(){
  if(!active)return;
  const {node,marker}=active;
- if(marker?.parentNode){marker.parentNode.insertBefore(node,marker);marker.remove()}
+ // Story generation may reparent Asteroid into the research card while a
+ // search begins. Never pull it back out of that authoritative context.
+ if(node.parentNode===stage&&marker?.parentNode)marker.parentNode.insertBefore(node,marker);
+ marker?.remove();
  active.marker=null;active=null;
  stage.replaceChildren();
 }
@@ -76,7 +79,7 @@ scroll.addEventListener('click',()=>{
    scroll.textContent='↑ Return to top interactive viewer';
    now.textContent='All interactive cards below';
    status.textContent='All cards are open for scrolling. The original controls and state are preserved.';
-   document.getElementById('infiniteBook')?.scrollIntoView?.({block:'start',behavior:'smooth'});
+   document.getElementById('phiChannelCards')?.scrollIntoView?.({block:'start',behavior:'smooth'});
  }else{
    scroll.textContent='↓ Scroll interactive cards / widgets';
    show(order()[0]);
@@ -92,7 +95,23 @@ document.body.classList.add('oracle-card-deck-active');
 function start(){if(!active&&!expanded){const first=order()[0];if(first)show(first);else status.textContent='Loading original interactive cards…';}}
 start();
 const observe=new MutationObserver(()=>{if(!active)start();});
-for(const entry of entries)observe.observe(entry.node,{childList:true,subtree:false});
+for(const entry of entries)observe.observe(entry.node,{childList:true,subtree:false,attributes:entry.id==='result',attributeFilter:entry.id==='result'?['hidden']:undefined});
+// Reads & Realms can relocate itself on an async home/search cycle. Keep
+// exactly one live DOM node and never fight the search-mode owner.
+new MutationObserver(()=>{
+ if(!active||stage.contains(active.node))return;
+ const moved=active,oldMarker=moved.marker;
+ if(moved.id==='infiniteBook'&&moved.node.dataset.context==='search'){
+   oldMarker?.remove();active=null;stage.replaceChildren();
+   if(!expanded){const result=entries.find(x=>x.id==='result');if(available(result))show(result);else start();}
+   return;
+ }
+ if(moved.node.parentNode){
+   const marker=document.createComment('Oracle card returned home: '+moved.id);
+   moved.node.parentNode.insertBefore(marker,moved.node);
+   oldMarker?.remove();moved.marker=marker;stage.append(moved.node);
+ }
+}).observe(stage,{childList:true});
 document.addEventListener('visibilitychange',()=>{
  // Explicit content/recording is never restarted automatically on resume.
  if(!document.hidden)start();
