@@ -17,7 +17,7 @@ test('same website composer accepts an opt-in image, no second Android transcrip
  assert.match(ui,/composer\.append\(input,photoPreview,actions\)/);
  assert.match(ui,/chatScroll\.insertBefore\(tools,conversation\)/);
  assert.match(ui,/if\(nativeOverlay\)row\.append\(say\)/);
- assert.match(ui,/if\(nativeOverlay&&ownerReady\)/);
+ assert.match(ui,/Create one-time owner code/);
  assert.match(ui,/void sharedMemory\(\)/);
  assert.match(panel,/onShowFileChooser/);
  assert.match(panel,/service\.openFilePicker\(callback, historyJson\)/);
