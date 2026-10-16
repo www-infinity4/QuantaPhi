@@ -12,7 +12,7 @@ final class SpeechTranscriptGate {
     private SpeechTranscriptGate() {}
 
     static boolean plausible(String raw, long voicedMillis) {
-        if (raw == null || voicedMillis < 160L) return false;
+        if (raw == null || voicedMillis < 320L) return false;
         String value = raw.trim().replaceAll("\\s+", " ");
         if (value.isEmpty() || value.length() > 1800) return false;
         // The user can paste tokens/codes in the composer, but a long random
