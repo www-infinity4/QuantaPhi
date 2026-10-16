@@ -22,10 +22,10 @@
     if(result&&root.parentElement!==result)result.append(root);
     root.dataset.context='search';
     const name=root.querySelector('.ib-head strong'),next=root.querySelector('.ib-next');
-    if(name)name.textContent='ASTEROID · STORIES WITH IMPACT';
+    if(name)name.textContent='ASTEROID · EVIDENCE INTO STORY · IMPACT';
     if(next)next.textContent='Another secret · +1 ★';
     const label=root.querySelector('.ib-asteroid-label');
-    if(label)label.textContent='ASTEROID · YOUR SEARCH, A POWERFUL TRUE STORY';
+    if(label)label.textContent='ASTEROID · ORIGINAL SOURCED STORY · IMPACT EDITION';
     const card=root.querySelector('.ib-story');
     if(card?.dataset.ready==='false'){
       root.querySelector('.ib-title').textContent='Researching your Asteroid story';
