@@ -25,8 +25,8 @@ test('Infinity handoff requires the exact iframe, origin and packet ID',async()=
  const values=new Map(),listeners=new Map(),sent=[],frameWindow={};let frame;
  const view={location:{origin:'https://quantaphi.org'},addEventListener:(key,fn)=>listeners.set(key,fn),removeEventListener:key=>listeners.delete(key)};
  const packet={ok:true,id:'1ed9d126-f0eb-4fc6-ab00-a4d4585ac65f',query:'RadioShack history',sources:[{title:'Archive',url:'https://example.org/',excerpt:'RadioShack'}]};
- const doc={createElement:tag=>tag==='iframe'?(frame={style:{},contentWindow:frameWindow}):{append(){}},getElementById:()=>null,querySelector:()=>({append(){queueMicrotask(()=>{
-  const receive=listeners.get('message'),data={type:'infinity:bubbles-research-result',id:packet.id,tokenId:'phi-real',websiteStatus:'requested'};
+ const doc={createElement:tag=>tag==='iframe'?(frame={style:{},contentWindow:frameWindow}):{style:{},append(){}},getElementById:()=>null,querySelector:()=>({append(){queueMicrotask(()=>{
+  const receive=listeners.get('message'),data={type:'infinity:bubbles-research-result',id:packet.id,tokenId:'phi-real',websiteStatus:'requested',websiteUrl:'https://quantaphi.org/infinity-phi/studio/build/?id=phi-real'};
   receive({origin:'https://evil.test',source:frameWindow,data:{...data,tokenId:'fake'}});
   receive({origin:view.location.origin,source:{},data:{...data,tokenId:'fake'}});
   receive({origin:view.location.origin,source:frameWindow,data});

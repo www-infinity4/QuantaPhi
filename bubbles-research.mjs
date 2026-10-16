@@ -10,7 +10,7 @@ export function articleObservation(doc,view){
  const paragraphs=[...root.querySelectorAll('h1,h2,h3,p,blockquote')].filter(el=>!el.closest('#bubblesAICard,nav,header,footer,form,[hidden]')).map(el=>String(el.innerText||'').trim()).filter(Boolean);
  return {title,url:view.location.href,text:paragraphs.join('\n').slice(0,6500),observedAt:new Date().toISOString()};
 }
-export async function runArticleResearch({request,article,fetcher=fetch,storage=sessionStorage,document:doc=document,view=window,onStatus=()=>{}}){
+export async function runArticleResearch({request,article,fetcher=fetch,storage=localStorage,document:doc=document,view=window,onStatus=()=>{}}){
  onStatus('Reading the article and finding related stories…');
  const response=await fetcher('https://bubbles-tools.marvaseater.workers.dev/v1/research',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({request,article}),signal:AbortSignal.timeout(60000)});
  const packet=await response.json();if(!response.ok||!packet.ok||!packet.id||!Array.isArray(packet.sources)||!packet.sources.length)throw Error(packet.error||'research_failed');
@@ -19,7 +19,7 @@ export async function runArticleResearch({request,article,fetcher=fetch,storage=
  // The packet is local, and no article text or wallet key goes in a URL.
  const url=new URL('/infinity-phi/bubbles-research/',view.location.origin);url.searchParams.set('id',packet.id);
  const frame=doc.createElement('iframe');frame.title='Infinity Phi article research and website';frame.src=url.href;
- frame.style.cssText='display:block;width:100%;height:420px;border:1px solid #d8cfc4;border-radius:18px;background:white';
+ frame.style.cssText='display:block;width:100%;height:1px;border:0;background:white';
  const receipt=await new Promise((resolve,reject)=>{
   const timer=setTimeout(()=>{cleanup();reject(Error('infinity_handoff_not_confirmed'));},60000);
   const cleanup=()=>{clearTimeout(timer);view.removeEventListener('message',receive);};
@@ -28,5 +28,12 @@ export async function runArticleResearch({request,article,fetcher=fetch,storage=
   const container=doc.createElement('div');container.id='ba-research-results';container.append(frame);
   const target=doc.querySelector('.ba-panel .ba-conversation,.ba-panel .ba-messages')||doc.getElementById('bubblesAICard');if(!target){cleanup();reject(Error('research_view_unavailable'));return;}target.append(container);
  });
+ const website=new URL(receipt.websiteUrl,view.location.origin);
+ if(website.origin!==view.location.origin||!website.pathname.startsWith('/infinity-phi/studio/build/'))throw Error('invalid_infinity_website_receipt');
+ const result=doc.getElementById('ba-research-results');
+ for(const source of packet.sources.slice(0,6)){
+  const link=doc.createElement('a');link.textContent=String(source.title||'Related story').slice(0,300);link.href=source.url;link.target='_blank';link.rel='noopener noreferrer';link.style.cssText='display:block;padding:10px;color:#583277';result?.append(link);
+ }
+ frame.title='Infinity Phi research website';frame.src=website.href;frame.style.height='420px';
  return {packet,receipt,url:url.href};
 }
