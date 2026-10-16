@@ -136,8 +136,17 @@ const brainHeaders=await (window.QuantaBrainOwner?window.QuantaBrainOwner.ready:
 
 
  // Display each source-backed event at most once, and only after this visit began.
- let brainPlaylist=[],brainReady=false;
- const brainStartedAt=Date.now(),brainSeen=new Set();
+ const {NotificationDeck}=await import('/brain-notifications.mjs?v=20261016-owner-notifications1');
+ const notifications=new NotificationDeck();
+ const notificationNav=ui('div','qai-notification-nav');
+ const previousNotification=ui('button','','←'),nextNotification=ui('button','','→'),notificationCount=ui('span','','No notifications');
+ previousNotification.type=nextNotification.type='button';
+ previousNotification.setAttribute('aria-label','Previous notification');nextNotification.setAttribute('aria-label','Next notification');
+ for(const button of [previousNotification,nextNotification]){button.style.minHeight='44px';button.style.minWidth='44px';}
+ notificationNav.style.cssText='display:flex;align-items:center;justify-content:space-between;gap:12px';
+ notificationNav.append(previousNotification,notificationCount,nextNotification);$('#qai-brain-status').before(notificationNav);
+ previousNotification.addEventListener('click',()=>{notifications.move(-1);renderBrainNotification()});
+ nextNotification.addEventListener('click',()=>{notifications.move(1);renderBrainNotification()});
  function verifiedCommit(item){
    const url=safeUrl(item?.url);
    if(!url||item?.kind!=='commit'||!item?.title||!item?.when)return null;
@@ -181,31 +190,18 @@ const brainHeaders=await (window.QuantaBrainOwner?window.QuantaBrainOwner.ready:
      makeLink('View real evidence ↗',entry.url));
    wrap.append(foot);return wrap;
  }
- function speakNext(){
-   if(document.hidden)return;
-   const log=$('#qai-brain-log'),status=$('#qai-brain-status');
-   if(!brainPlaylist.length){
-     if(!brainReady)status.textContent='Checking GitHub evidence. No speech is invented while the source is unavailable.';
-     else status.textContent='No verified project messages are available. Checking again automatically.';
-     return;
-   }
-   const entry=brainPlaylist.shift();
-   if(log.querySelector('.qai-brain-empty'))log.replaceChildren();
-   log.append(paintBrainEvent(entry,false));
-   while(log.children.length>3)log.firstElementChild.remove();
-   status.textContent=brainPlaylist.length?'Fresh verified activity · '+brainPlaylist.length+' new messages waiting.':'Watching for new verified activity. No replay.';
+ function renderBrainNotification(){
+   const log=$('#qai-brain-log'),status=$('#qai-brain-status'),entry=notifications.current;
+   if(entry)log.replaceChildren(paintBrainEvent(entry,false));
+   else log.replaceChildren(ui('p','qai-brain-empty','No recorded notifications yet. Send an order below.'));
+   notificationCount.textContent=entry?(notifications.index+1)+' of '+notifications.entries.length:'No notifications';
+   previousNotification.disabled=notifications.index<=0;
+   nextNotification.disabled=notifications.index<0||notifications.index>=notifications.entries.length-1;
+   status.textContent='One notification at a time. Use the arrows to read more; new receipts do not move your selection.';
  }
  function updateBrain(feedItems){
-   const next=assembleBrain(feedItems).filter(entry=>{
-     const when=Date.parse(entry.when||'');
-     const id=String(entry.id||entry.url+'|'+entry.message);
-     if(!Number.isFinite(when)||when<brainStartedAt||when>Date.now()+60000||brainSeen.has(id))return false;
-     brainSeen.add(id);return true;
-   }).sort((a,b)=>Date.parse(a.when)-Date.parse(b.when));
-   brainPlaylist.push(...next);
-   brainReady=true;
-   if(next.length)speakNext();
-   else if(!brainPlaylist.length)$('#qai-brain-status').textContent='Watching for new verified activity. No replay.';
+   notifications.add(assembleBrain(feedItems).filter(entry=>Date.parse(entry.when||'')<=Date.now()+60000));
+   renderBrainNotification();
  }
 
 
@@ -388,8 +384,7 @@ const brainHeaders=await (window.QuantaBrainOwner?window.QuantaBrainOwner.ready:
  });
  $('#qai-refresh').addEventListener('click',pull);
  render();pull();
- setInterval(speakNext,10000);
+
  setInterval(()=>{if(!document.hidden)pull()},10000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)pull()});
 })();
-

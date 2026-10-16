@@ -62,3 +62,12 @@ test('direct agent checkpoints real operation receipts before its final explanat
  const result=await directGithubAgent(env,{repository,request:'Inspect GitHub runs',mode:'read'},async url=>Response.json(url.includes('/actions/runs')?{workflow_runs:[]}:{default_branch:'main'}),async r=>saved.push(r));
  assert.equal(saved.length,1);assert.equal(result.testsVerified,false);assert.equal(result.receipts.length,1);
 });
+test('repository creation uses the owner account API and provisions Python/Node Actions without exposing the key',async()=>{
+ const calls=[];
+ const network=async(url,options)=>{calls.push({url,options});if(url.endsWith('/user'))return Response.json({login:'www-infinity4'});if(url.endsWith('/user/repos'))return Response.json({full_name:'www-infinity4/New-App',html_url:'https://github.com/www-infinity4/New-App',default_branch:'main',private:false},{status:201});return Response.json({commit:{sha:next}},{status:201});};
+ const result=await githubOperation({GITHUB_TOKEN:'fixture-token'}, {repository:'www-infinity4/New-App',action:'create_repository'},network);
+ assert.equal(result.status,'repository_created');assert.equal(result.environment.status,'configured');assert.equal(result.testsPassed,false);
+ assert.equal(JSON.parse(calls[1].options.body).name,'New-App');
+ const workflow=Buffer.from(JSON.parse(calls[2].options.body).content,'base64').toString('utf8');
+ assert.match(workflow,/setup-python/);assert.match(workflow,/node-version: '22'/);assert.ok(!workflow.includes('fixture-token'));
+});

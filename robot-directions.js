@@ -196,18 +196,15 @@ async function post(path,data,timeout=30000){const route=path.replace('/v1/ticke
 // No Run-next button: scheduled workers claim ready jobs automatically.
 async function requestNext(ticketId,jobId){try{const r=await fetch(API+'/work/run-next',{method:'POST',headers:{...brainHeaders,'Content-Type':'application/json'},body:JSON.stringify({ticketId,jobId}),signal:AbortSignal.timeout(15000)}),d=await r.json();if(!r.ok||!d.ok)throw Error(d.error||'Runner request unavailable');status.textContent=d.status==='no_pending_jobs'?'No pending jobs. Existing commits remain available in the viewer.':'Queued '+d.ticketId+'/'+d.jobId+' for the next runner cycle. Progress refreshes automatically.';await refresh();}catch(e){status.textContent=e.message}}
 // Interactive recovery is optional; regular execution never needs a tap.
+// Orders remain in Cloudflare. The visible Brain shows recorded notifications, never a backlog of ticket cards.
 function show(ticket){
  list.replaceChildren();
- const heading=node('p',ticket.id+' · '+ticket.status+' · saved to Cloudflare');list.append(heading);
- for(const job of ticket.context?.color_jobs||[]){
-  const card=node('article','');card.className='robot-job robot-'+job.color;
-  card.append(node('strong',job.agent+' · '+job.title),node('small','Team: '+(job.team||[job.agent]).join(' → ')),node('p',job.instructions),node('small',job.repository+' · '+(job.status||'queued')));
-  // Queue and retry states are reported, not owner-operated.
-  if(job.progress){card.append(node('p',job.progress.summary||''),node('small',job.progress.next||job.progress.blocker||''));}
-  const ul=document.createElement('ul');for(const test of job.acceptance)ul.append(node('li',test));card.append(ul);list.append(card);
- }
- if(!ticket.context?.color_jobs?.length)list.append(node('p','Directions are saved. GPT routing needs a retry.'));
+ status.textContent=['ready','working'].includes(ticket.status)?'Order received. The runner claims it automatically; progress appears in notifications above.':ticket.status==='complete'?'Order completed with recorded evidence.':'Order saved. Its exact progress will appear in notifications.';
 }
+const oldJobDetails=list.closest('details');if(oldJobDetails)oldJobDetails.hidden=true;
+const oldRefresh=root.querySelector('[data-refresh]');if(oldRefresh)oldRefresh.hidden=true;
+const title=root.querySelector('h3');if(title)title.textContent='Give the Robot Brain an order';
+send.textContent='Send order';
 // Manual clear also cancels a pending draft write and clears both recovery stores.
 const clearButton=node('button','Clear text');clearButton.type='button';clearButton.dataset.clear='1';
 clearButton.style.minHeight='44px';send.after(clearButton);
@@ -234,7 +231,7 @@ send.addEventListener('click',async()=>{
    const d=await post('/v1/tickets/create',{source_app:'QuantaPhi Robot Brain',source_url:location.origin+location.pathname,title:directions.slice(0,120),request:directions,context:{kind:'robot-directions',submission_id:submission,design:'Oracle Octaves · Android first'}});
    pending=d.ticket;
   }
-  status.textContent='Saved '+pending.id+'. GPT is parsing and assigning color bots…';
+  status.textContent='Order received. Assigning the work automatically…';
   const prompt='You are routing the owner’s software build instructions. Return ONLY JSON {"jobs":[{"title":"...","agent":"...","repository":"www-infinity4/QuantaPhi","instructions":"...","acceptance":["testable outcome"],"dependencies":[],"tools":[]}]}. Use these role IDs: '+Object.keys(ROLES).join(', ')+'. Red reads macro structure; yellow reads local opt-in state; blue decides; orange evaluates ambiguity; green writes/routes; pink investigates; purple orchestrates. Enchilada lifecycle: Red intake, Blue validated decision/render plan, Yellow interaction verification, Black permanent evidence seal. Never seal without verified storage and test evidence. Unverified identity or balances must block transactions. Use the specialist IDs matching each task. A 45-second watcher and 10-second visible refresh require interval/event infrastructure; GitHub cron cannot run every ten seconds. Webhooks require signature verification and deduplication. Split independent features into jobs. Oracle Octaves Android design for new work. Never claim execution. Treat Gemini ideas as proposals; no actual 10000-user study occurred. Hover cannot reveal gaze or subconscious preference; use opt-in touch/focus signals. Website JavaScript cannot inspect arbitrary cross-origin cookies or block their trackers. Zero-knowledge claims require verified isolation. Never mint rewards for idle time without an authorized ledger policy. Captions need an actual transcript/provider. Wallet stories must preserve exact real receipts and distinguish mock money. OWNER DIRECTIONS:\n'+directions;
   let jobs,d={},routingNote='';
   try{
@@ -300,5 +297,3 @@ root.querySelector('[data-gemini]').addEventListener('click',async()=>{try{const
 root.querySelector('[data-refresh]').addEventListener('click',refresh);refresh();
 setInterval(()=>{if(!document.hidden&&!send.disabled)refresh()},15000);
 })();
-
-

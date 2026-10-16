@@ -56,29 +56,20 @@ test('Story card is before compact robot brain and detailed controls start hidde
  assert.match(page,/id="qai-brain-status"/);
  assert.match(css,/#quantaAgentIterations #qai-dashboard\[hidden\]\{display:none!important\}/);
 });
-test('source-driven bot conversations advance every 10 seconds, never fabricate a commit',()=>{
- assert.match(js,/setInterval\(speakNext,10000\)/);
- assert.match(js,/activity\/feed\.json/);
- assert.match(js,/item\?\.kind!=='commit'/);
- assert.match(js,/item\.title/);
- assert.match(js,/safeUrl\(item\?\.url\)/);
- assert.match(js,/brainPlaylist\.shift\(\)/);
- assert.doesNotMatch(js,/Archive replay/);
- assert.match(js,/when<brainStartedAt/);
- assert.match(js,/brainSeen\.has\(id\)/);
- assert.match(js,/source event/i);
- assert.match(js,/while\(log\.children\.length>3\)/);
- assert.match(js,/sourceEvents/);
+test('notification selection advances only with arrows, never on a timer',()=>{
+ assert.doesNotMatch(js,/setInterval\(speakNext/);
+ assert.match(js,/Previous notification/);assert.match(js,/Next notification/);
+ assert.match(js,/log\.replaceChildren\(paintBrainEvent/);
+ assert.match(js,/notifications\.move\(-1\)/);assert.match(js,/notifications\.move\(1\)/);
 });
-
-test('brain excludes historical events and repeated polling never repeats speech',()=>{
- const vm=require('node:vm');
- const source=js.slice(js.indexOf(' function speakNext(){'),js.indexOf('\n\n function makeEvent'));
- const log={children:[],querySelector(){return null},append(x){this.children.push(x)},get firstElementChild(){return {remove:()=>this.children.shift()}}};
- const status={textContent:''};
- const context=vm.createContext({Date,document:{hidden:false},log,status,$:id=>id.includes('status')?status:log,paintBrainEvent:e=>e,assembleBrain:x=>x});
- vm.runInContext('let brainPlaylist=[],brainReady=false;const brainStartedAt=Date.now(),brainSeen=new Set();'+source,context);
- vm.runInContext("const fresh={id:'new',when:new Date(brainStartedAt).toISOString()};updateBrain([{id:'old',when:new Date(brainStartedAt-1000).toISOString()},fresh]);updateBrain([fresh]);speakNext();",context);
- assert.equal(log.children.length,1);
- assert.equal(log.children[0].id,'new');
+test('fresh receipts preserve the visible notification until arrow navigation',async()=>{
+ const vm=require('node:vm');const {NotificationDeck}=await import('../brain-notifications.mjs');
+ const notifications=new NotificationDeck(),log={children:[],replaceChildren(...rows){this.children=rows}},status={textContent:''};
+ const context=vm.createContext({Date,notifications,log,status,notificationCount:{},previousNotification:{},nextNotification:{},$:id=>id.includes('status')?status:log,paintBrainEvent:e=>e,assembleBrain:x=>x,ui:()=>({})});
+ const source=js.slice(js.indexOf(' function renderBrainNotification(){'),js.indexOf('\n\n function makeEvent'));
+ vm.runInContext(source,context);
+ const now=Date.now();context.rows=[{id:'first',when:new Date(now-1000).toISOString()}];vm.runInContext('updateBrain(rows)',context);
+ context.rows=[{id:'new',when:new Date(now).toISOString()}];vm.runInContext('updateBrain(rows)',context);
+ assert.equal(log.children.length,1);assert.equal(log.children[0].id,'first');
+ notifications.move(-1);vm.runInContext('renderBrainNotification()',context);assert.equal(log.children[0].id,'new');
 });

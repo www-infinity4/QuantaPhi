@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
+const credentialUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/github-credential.mjs',import.meta.url))).toString('base64');
+const mergeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/merge-receipt.mjs',import.meta.url))).toString('base64');
 const directGithubUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/direct-github.mjs',import.meta.url))).toString('base64');
 const queueUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/queue-order.mjs',import.meta.url))).toString('base64');
 const authUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-auth.mjs',import.meta.url))).toString('base64');
@@ -14,7 +16,7 @@ const arbitrationUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFil
 const resonanceUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/bubbles-tools/resonance.mjs',import.meta.url))).toString('base64');
 const conversationUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/conversation-memory.mjs',import.meta.url))).toString('base64');
 const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./conversation-memory.mjs",conversationUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
-const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl)).toString('base64'));
+const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
  const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{BOT_WALLET:{fetch:async()=>Response.json({ok:true,user:{id:userId,username:'fixture-owner'}})}});
@@ -77,7 +79,7 @@ test('repository engine claims any owner repository while honoring leases and jo
   {id:'outside',repository:'other/Project401',instructions:'Build',status:'queued'}
  ]};
  const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)};
- const clock=new BrainClock({storage},{WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Build my project',context_json:JSON.stringify(context)}]})})}});
+ const clock=new BrainClock({storage},{WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Build my project',context_json:JSON.stringify(context)}]}),run:async()=>({meta:{changes:1}})})}});
  const request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
  const first=await (await clock.runner(request())).json();assert.equal(first.lease.jobId,'base');assert.equal(first.lease.job.ownerRequest,'Build my project');
  const second=await (await clock.runner(request())).json();assert.equal(second.lease,null);
@@ -227,7 +229,7 @@ test('the owner ticket router is authentication gated and the browser never gene
 test('untouched queued work advances ahead of an earlier blocked job, and owner selection is honored',async()=>{
  const memory=new Map(),jobs=[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'Old repair',status:'blocked',dependencies:[]},{id:'TASK-2',repository:'www-infinity4/QuantaPhi',instructions:'New repair',status:'queued',dependencies:[]}];
  const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)};
- const env={WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Fix my cards',context_json:JSON.stringify({color_jobs:jobs})}]})})}};
+ const env={WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Fix my cards',context_json:JSON.stringify({color_jobs:jobs})}]}),run:async()=>({meta:{changes:1}})})}};
  const clock=new BrainClock({storage},env),request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
  const first=await(await clock.runner(request())).json();assert.equal(first.lease.jobId,'TASK-2');
  memory.clear();memory.set('requested-next-job',{ticketId:'ticket',jobId:'TASK-1'});const next=await(await clock.runner(request())).json();assert.equal(next.lease.jobId,'TASK-1');assert.equal(memory.has('requested-next-job'),false);
