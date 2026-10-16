@@ -29,7 +29,7 @@ public final class PlatinumNavigation {
   String value=raw==null?"":raw.trim();
   // This is a local app-navigation mnemonic only, never an LTE activation
   // or interception of the system phone dialer's outgoing calls.
-  if(value.toLowerCase(Locale.ROOT).matches("4[- ]?333[- ]?3333\\\\s*#"))
+  if(value.toLowerCase(Locale.ROOT).matches("4[- ]?333[- ]?3333\\s*#"))
    return "https://quantaphi.org/";
   String address=web(value);
   if(!address.isEmpty())return address;
