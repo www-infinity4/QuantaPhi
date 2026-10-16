@@ -5,7 +5,7 @@ const html=fs.readFileSync('index.html','utf8');
 test('Media Star carries independent per-person source/role credits without inheriting Fred wallet',()=>{
  assert.match(builder,/data-production-credits/);
  assert.match(builder,/creditManifest\(data\)/);
- assert.match(builder,/role.*guest/);
+ assert.match(builder,/ROLES=new Set\(\['host','guest'/);
  assert.match(builder,/source_and_identity_pending/);
  assert.match(builder,/data-payment-mode="off"/);
  assert.match(builder,/searchProductionCredits/);
