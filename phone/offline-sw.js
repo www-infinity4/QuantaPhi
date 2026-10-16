@@ -9,7 +9,7 @@ const PREFIX='infinity-phone-shell-';
 const SHELL='/phone/index.html';
 const STATIC=[
  SHELL,
- '/phone/phone.css?v=20261015-infinitysignal1',
+ '/phone/phone.css?v=20261015-offline1',
  '/phone/quickdial.js?v=20261015-infinitysignal1',
  '/phone/phone.js?v=20261015-infinitysignal1'
 ];
