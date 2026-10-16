@@ -1,19 +1,30 @@
-/* QuantaPhi Oracle Octaves channel cards. Uses the existing in-page site viewer. */
+/* Oracle Octaves: one inline Omni TV remote in each tapped channel window.
+ * Never pre-loads media; only one channel can stream at a time. */
 (function(){
 'use strict';
 const host=document.getElementById('phiChannelCards');if(!host)return;
 const channels=[
- {name:'StarQuest',eyebrow:'INFINITY TV · CHANNEL HUB',description:'Your StarQuest television guide, viewing room and station choices.',path:'/TV-Database/',label:'Enter StarQuest',icon:'SQ',tone:'starquest'},
- {name:'HBO',eyebrow:'MOVIE CHANNEL · VIEWING ROOM',description:'Open the independent HBO channel guide and watch available original-host videos.',path:'/HBO/',label:'Enter HBO',icon:'H',tone:'hbo'},
- {name:'Chiller',eyebrow:'1980s SUSPENSE · CHANNEL',description:'Alfred Hitchcock Presents and The Twilight Zone 1980s revival scheduling, with source-host playback.',path:'/Chiller/',label:'Watch Chiller',icon:'C',tone:'chiller'},
- {name:'ShopLC',eyebrow:'LIVE SHOPPING · CHANNEL',description:'Watch the Shop LC live companion and browse the original merchant’s offers and auctions.',path:'/shoplc/',label:'Watch ShopLC',icon:'LC',tone:'shoplc'}
+ {name:'StarQuest',eyebrow:'CLASSIC TV · STARQUEST',description:'Classic shows and the StarQuest guide in the shared TV remote.',tune:'TV-Database',poster:'/TV-Database/assets/starquest-share-card.jpg',icon:'SQ',tone:'starquest'},
+ {name:'Omni TV',eyebrow:'ALL CHANNELS · ONE REMOTE',description:'Surf the entire network here with channel up and down controls.',tune:'ShopLC',poster:'/omni-tv/preview.png',icon:'TV',tone:'omni'},
+ {name:'Chiller',eyebrow:'1980s SUSPENSE · ON AIR',description:'The Hitchcock and Twilight Zone channel, tuned to its current program.',tune:'Chiller',poster:'https://i.ytimg.com/vi/YD5xBeGeX5w/hqdefault.jpg',icon:'C',tone:'chiller'},
+ {name:'ShopLC',eyebrow:'SHOPPING TV · LIVE FEED',description:'Tap the show window to watch the live shopping channel in place.',tune:'ShopLC',poster:'https://i.ytimg.com/vi/eqpG55UKM8M/hqdefault.jpg',icon:'LC',tone:'shoplc'}
 ];
 const el=(tag,className,text)=>{const n=document.createElement(tag);if(className)n.className=className;if(text!==undefined)n.textContent=text;return n;};
-const head=host.appendChild(el('div','channelphi-heading'));
-head.append(el('span','channelphi-kicker','INFINITY 2026® · ORACLE OCTAVES'));
-head.append(el('h2',null,'StarQuest · TV Channels'));
-head.append(el('p',null,'Four channel cards are now on QuantaPhi. Open them in the built-in viewer without leaving your search.'));
+const heading=host.appendChild(el('div','channelphi-heading'));
+heading.append(el('span','channelphi-kicker','INFINITY 2026® · ORACLE OCTAVES'),el('h2',null,'Watch · Infinity Channels'),el('p',null,'Tap a show window to tune it here. All four use the Omni TV remote; CH− and CH+ change stations without opening another viewer.'));
 const grid=host.appendChild(el('div','channelphi-grid'));
+let active=null;
+function stop(){
+ if(!active)return;
+ // Removing the iframe stops video and audio before a new station starts.
+ active.viewer.replaceChildren();
+ active.viewer.hidden=true;
+ active.screen.hidden=false;
+ active.screen.setAttribute('aria-expanded','false');
+ active.card.classList.remove('channelphi-playing');
+ active.status.textContent='Ready to tune';
+ active=null;
+}
 for(const c of channels){
  const card=grid.appendChild(el('article','channelphi-card channelphi-'+c.tone));
  card.setAttribute('aria-label',c.name+' channel');
@@ -22,12 +33,33 @@ for(const c of channels){
  const title=mast.appendChild(el('div','channelphi-name'));
  title.append(el('span','channelphi-kicker',c.eyebrow),el('h3',null,c.name));
  card.append(el('p','channelphi-description',c.description));
- const actions=card.appendChild(el('div','channelphi-actions'));
- const inside=actions.appendChild(el('a','channelphi-enter inPageSite',c.label+' ▶'));
- inside.href=c.path;inside.dataset.siteUrl=c.path;inside.dataset.siteTitle=c.name+' Channel';
- inside.setAttribute('aria-label','Open '+c.name+' inside QuantaPhi');
- const outside=actions.appendChild(el('a','channelphi-external','Full page ↗'));
- outside.href=c.path;outside.target='_blank';outside.rel='noopener noreferrer';outside.setAttribute('aria-label','Open '+c.name+' in a new tab');
+ const screen=card.appendChild(el('button','channelphi-screen'));
+ screen.type='button';screen.setAttribute('aria-label','Play '+c.name+' in this card');
+ screen.setAttribute('aria-expanded','false');
+ const image=screen.appendChild(el('img','channelphi-art'));image.src=c.poster;image.alt='';image.loading='lazy';
+ const shade=screen.appendChild(el('span','channelphi-screen-label'));
+ shade.append(el('span','channelphi-play-icon','▶'),el('strong',null,'Tap to watch '+c.name));
+ const viewer=card.appendChild(el('div','channelphi-viewer'));viewer.hidden=true;
+ const status=viewer.appendChild(el('p','channelphi-status','Ready to tune'));status.setAttribute('role','status');
+ const controls=viewer.appendChild(el('div','channelphi-controls'));
+ const close=controls.appendChild(el('button','channelphi-stop','■ Stop and close player'));close.type='button';
+ const hint=controls.appendChild(el('span','channelphi-hint','Use CH− / CH+ inside the player to surf. Tap again for sound if required.'));
+ screen.addEventListener('click',()=>{
+   stop();
+   screen.hidden=true;screen.setAttribute('aria-expanded','true');
+   viewer.hidden=false;card.classList.add('channelphi-playing');
+   const frame=el('iframe','channelphi-frame');
+   frame.title='Omni TV player — '+c.name;
+   frame.loading='eager';frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+   frame.allowFullscreen=true;
+   frame.referrerPolicy='strict-origin-when-cross-origin';
+   frame.src='/omni-tv/?embedded=1#'+encodeURIComponent(c.tune);
+   viewer.insertBefore(frame,status);
+   status.textContent='Tuning '+c.name+' using the Omni TV remote…';
+   active={card,screen,viewer,status};
+ });
+ close.addEventListener('click',()=>{stop();screen.focus()});
 }
-host.append(el('p','channelphi-foot','Channel playback comes from each source’s authorized player. If a provider blocks an embedded video, use Full page to open its original viewing room. These are independent channel interfaces, not official premium-service subscriptions.'));
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
+host.append(el('p','channelphi-foot','Only a tapped station is loaded. Live programs and sound depend on each original source and browser autoplay permissions; some stations ask for one more play tap. No premium subscription access is implied.'));
 })();
