@@ -198,6 +198,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 <style>#quantaAgentIterations[hidden],#robotDirections[hidden]{display:none!important}</style>
 <link rel="stylesheet" href="/halloween-phi.css?v=20261013-cinema5">
 <link rel="stylesheet" href="/phi-channel-cards.css?v=20261015-inline1">
+<link rel="stylesheet" href="/oracle-card-deck.css?v=20261015-stage1">
 <link rel="stylesheet" href="/phi-project-cards.css?v=20261012-action1">
 <link rel="stylesheet" href="/shop-ad-phi.css?v=20261013-cards2">
 <style id="regular-search-repair">.search{flex-wrap:wrap}.search #q{flex:1 1 180px;min-width:0;font-size:16px;min-height:48px}.search #go{flex:0 0 auto;min-height:48px}.search>.public-card-count{flex-basis:100%;width:100%;margin:0}.web-search-item{padding:12px 0;border-bottom:1px solid #e6dfeb}.web-search-item a{color:#5f259f;font-weight:800;overflow-wrap:anywhere}.web-search-item p{line-height:1.5;color:#62596a}</style>
@@ -214,6 +215,19 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
 <div class="search" role="search" aria-label="QuantaPhi search"><input id="q" type="search" enterkeyhint="search" aria-label="Search anything" autocomplete="off" placeholder="Search anything…"><button id="go" type="button">Search</button></div>
 <div class="qrefine" id="qrefineWrap" hidden><input id="qrefine" autocomplete="off" placeholder="Refine this entity…"><button id="qrefineBtn" type="button">Refine</button></div>
 <div id="status" role="status" aria-live="polite"></div>
+<section id="oracleCardDeck" class="oracle-card-deck" aria-label="Interactive Oracle widget viewer">
+  <div class="oracle-card-deck-head"><span class="oracle-card-deck-kicker">INFINITY 2026® · ORACLE INTERACTIVE</span><h2>Choose what happens next</h2>
+    <p>Watch a channel, read a true story, write one of your own, or work with Bubbles. Every card remains interactive.</p>
+  </div>
+  <div class="oracle-card-deck-nav" role="group" aria-label="Flip interactive widgets">
+    <button id="oracleCardPrevious" type="button">◀ Previous</button>
+    <strong id="oracleCardNow" aria-live="polite">Finding your next card…</strong>
+    <button id="oracleCardNext" type="button">Next most active ▶</button>
+  </div>
+  <div class="oracle-card-deck-stage" id="oracleCardStage" aria-live="off"></div>
+  <button id="oracleCardScroll" type="button" class="oracle-card-scroll" aria-expanded="false">↓ Scroll interactive cards / widgets</button>
+  <p id="oracleCardStatus" class="oracle-card-deck-status" role="status" aria-live="polite"></p>
+</section>
 <section class="card" id="webSearchResults" aria-label="Web search results" aria-live="polite" hidden></section>
 <section class="card" id="publicCardTrends" aria-label="Live activity and trending cards"></section>
 <section id="phiChannelCards" aria-label="StarQuest Omni TV Chiller ShopLC television cards"></section>
@@ -1665,6 +1679,7 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
  <script defer src="/cinema-reel-editor.js?v=20261013-cinema4"></script>
  <script defer src="/halloween-phi.js?v=20261013-projectpicker15"></script>
 <script defer src="/phi-channel-cards.js?v=20261015-inline1"></script>
+<script defer src="/oracle-card-deck.js?v=20261015-stage1"></script>
 <script defer src="/phi-image-language.js?v=20261011-natural-copy1"></script>
 <script defer src="/phi-visual-render.js?v=20261011-exact-type1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
