@@ -50,6 +50,7 @@ function screenSharingCommand(value){
  if(/^(?:please )?(?:stop|end|disable|turn off) (?:live )?screen (?:sharing|view|viewing|watching)$/i.test(q))return -1;
  return /^(?:please )?(?:(?:start|enable|turn on) (?:live )?screen (?:sharing|view|viewing)|(?:watch|share|keep watching) (?:my |the )?screen(?: live)?)$/i.test(q)?1:0;
 }
+function articleNeedsScreen(value){return /\b(?:this|that|current|looking at|reading|on (?:my |the )?screen)\b/i.test(String(value||''));}
 function readCurrentPage(){
  const pieces=[],seen=new Set();
  // Read the viewport at request time, rather than the beginning of body text.
@@ -900,7 +901,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   nativeSpeechPending=false;return;
  }
  const articleResearch=/\b(?:research|investigate|find (?:the )?(?:best|related|connected)|look into)\b/i.test(spoken)&&/\b(?:article|story|stories|reading|looking at|this idea|this topic|infinity phi)\b/i.test(spoken)&&!/^\s*(?:fix|implement|debug|repair|upgrade)\b/i.test(spoken);
- const screenQuestion=articleResearch||/^(?:(?:please|bubbles)[, ]+)*(?:read|explain|describe|look at|what(?:'s| is)|tap|click|press|select|scroll)\b/i.test(spoken)
+ const articleResearchCurrent=articleResearch&&articleNeedsScreen(spoken);
+ const screenQuestion=articleResearchCurrent||/^(?:(?:please|bubbles)[, ]+)*(?:read|explain|describe|look at|what(?:'s| is)|tap|click|press|select|scroll)\b/i.test(spoken)
   && /\b(?:screen|screenshot|page|display|phone|this app|button|link|window)\b/i.test(spoken)
   || /^(?:please\s+)?(?:tap|click|press|select|scroll)\b/i.test(spoken);
  const sharing=screenSharingCommand(spoken);
@@ -912,7 +914,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   display(spoken,'you');display(answer,'ai');input.value='';status.textContent=answer;return;
  }
  if(!nativeOverlay&&(pageScreenSharing||screenQuestion))screenEvidence=readCurrentPage();
- if(nativeOverlay&&!fromVoice&&!screenEvidence&&(screenQuestion||sharing||nativeScreenSharing)){
+ if(nativeOverlay&&!fromVoice&&!screenEvidence&&(screenQuestion||sharing||nativeScreenSharing)&&(!articleResearch||articleResearchCurrent)){
   if(nativeScreenRequests.length>=24){status.textContent='Android screen request queue is full. Check Bubbles.';return;}
   nativeScreenRequests.push(spoken);input.value='';
   status.textContent='Screen request passed to Android; waiting for its observation or action result.';
@@ -1072,7 +1074,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   try{
    const module=await import('/bubbles-research.mjs?v=20261016-article1');
    const article=nativeOverlay?{title:'',url:'',text:screenEvidence}:module.articleObservation(document,window);
-   if(nativeOverlay&&!article.text)throw Error('Current Android article observation is unavailable. Share the screen or paste the article URL.');
+   if(nativeOverlay&&articleResearchCurrent&&!article.text)throw Error('Current Android article observation is unavailable. Share the screen or paste the article URL.');
    const result=await module.runArticleResearch({request,article,onStatus:text=>{status.textContent=text;}});
    workEvidence='Article research completed with '+result.packet.sources.length+' ranked sources. Infinity Phi confirmed search token '+result.receipt.tokenId+'. Website builder: '+result.receipt.websiteStatus+'. Wallet credit requires its own ledger receipt.\n'+result.url+'\n'+result.receipt.websiteUrl;
   }catch(error){workEvidence='Article research did not confirm the complete Infinity Phi handoff: '+String(error.message||error).slice(0,220)+'. No website or wallet credit is being claimed.';}

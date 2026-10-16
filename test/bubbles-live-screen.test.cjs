@@ -21,3 +21,10 @@ test('page observation changes after scrolling, includes bottom content, and exc
  viewport=1000;c.scrollY=1000;
  const bottom=c.readCurrentPage();assert.match(bottom,/Bottom card/);assert.match(bottom,/scrollY=1000/);assert.doesNotMatch(bottom,/Top card|Secret input/);
 });
+
+test('only current-article research requires Android screen evidence',()=>{
+ const c={};vm.createContext(c);vm.runInContext(functions,c);
+ assert.equal(c.articleNeedsScreen("Research the story I'm looking at"),true);
+ assert.equal(c.articleNeedsScreen("Research this article"),true);
+ assert.equal(c.articleNeedsScreen("Research the RadioShack history article"),false);
+});
