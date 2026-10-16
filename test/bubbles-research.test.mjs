@@ -23,7 +23,7 @@ test('ranking removes irrelevant and duplicate stories and records relevance',()
  assert.equal(rows.length,1);assert.match(rows[0].selectionReason,/radioshack/);
 });
 test('research uses the existing Infinity search broker and preserves actual source excerpts',async()=>{
- const calls=[];const request=async url=>{calls.push(url);assert.ok(url.startsWith('https://orange-brook-a2ac.marvaseater.workers.dev/search?'));return Response.json({results:[1,2,3,4].map(n=>({title:'RadioShack history '+n,url:'https://source'+n+'.example/article',content:'RadioShack archive evidence '+n,engine:'source search'}))});};
+ const calls=[];const request=async(url,options)=>{calls.push(url);assert.equal(options.redirect,'manual','Cloudflare subrequests support manual or follow');assert.ok(url.startsWith('https://orange-brook-a2ac.marvaseater.workers.dev/search?'));return Response.json({results:[1,2,3,4].map(n=>({title:'RadioShack history '+n,url:'https://source'+n+'.example/article',content:'RadioShack archive evidence '+n,engine:'source search'}))});};
  const result=await researchArticle({request:'research the RadioShack history article',article:{title:'Other website'}},{},{request});
  assert.equal(calls.length,1);assert.equal(result.sources.length,4);assert.match(result.sources[0].provider,/Infinity Phi search/);assert.match(result.sources[0].excerpt,/archive evidence/);assert.equal(result.title,'RadioShack history');
 });

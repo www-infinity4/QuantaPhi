@@ -60,28 +60,28 @@ export async function researchArticle(body,env,{request=fetch}={}){
  // Reuse the existing Infinity/QuantaPhi search broker before optional feeds.
  try{
   const endpoint='https://orange-brook-a2ac.marvaseater.workers.dev/search?'+new URLSearchParams({q:query,format:'json',categories:'general',safesearch:'1'});
-  const result=await request(endpoint,{headers:{Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(8000)});
+  const result=await request(endpoint,{headers:{Accept:'application/json'},redirect:'manual',signal:AbortSignal.timeout(8000)});
   const data=JSON.parse(await boundedText(result));
   for(const row of (Array.isArray(data.results)?data.results:[]).slice(0,24)){
    const title=clean(row.title,300),excerpt=clean(row.content||row.description,2000),url=clean(row.url,1800);
    if(title&&/^https:\/\//.test(url))candidates.push({title,url,excerpt,provider:'Infinity Phi search · '+clean(row.engine||'public web',80),readScope:'Search result excerpt; full publisher article not fetched'});
   }
- }catch{errors.push('infinity_search_unavailable');}
+ }catch(error){errors.push('infinity_search_'+String(error.message||'unavailable').slice(0,60));}
  if(!rankStories(query,candidates.filter(x=>x.url)).length)try{
   const endpoint='https://en.wikipedia.org/w/api.php?'+new URLSearchParams({action:'query',format:'json',generator:'search',gsrsearch:query,gsrlimit:'5',prop:'extracts|info',exintro:'1',explaintext:'1',inprop:'url'});
-  const result=await request(endpoint,{headers:{Accept:'application/json','User-Agent':'BubblesResearch/1.0 (quantaphi.org)'},redirect:'error',signal:AbortSignal.timeout(8000)});
+  const result=await request(endpoint,{headers:{Accept:'application/json','User-Agent':'BubblesResearch/1.0 (quantaphi.org)'},redirect:'manual',signal:AbortSignal.timeout(8000)});
   const data=JSON.parse(await boundedText(result));
   for(const row of Object.values(data.query?.pages||{}))if(row.title&&row.fullurl&&row.extract)candidates.push({title:clean(row.title,300),url:clean(row.fullurl,1800),excerpt:clean(row.extract,4000),provider:'Wikipedia · article introduction',readScope:'Fetched encyclopedia introduction'});
- }catch{errors.push('encyclopedia_search_unavailable');}
+ }catch(error){errors.push('encyclopedia_search_'+String(error.message||'unavailable').slice(0,60));}
  if(rankStories(query,candidates.filter(x=>x.url)).length<4)try{
-  const feed=await request('https://news.google.com/rss/search?'+new URLSearchParams({q:query,hl:'en-US',gl:'US',ceid:'US:en'}),{headers:{Accept:'application/rss+xml'},redirect:'error',signal:AbortSignal.timeout(12000)});
+  const feed=await request('https://news.google.com/rss/search?'+new URLSearchParams({q:query,hl:'en-US',gl:'US',ceid:'US:en'}),{headers:{Accept:'application/rss+xml'},redirect:'manual',signal:AbortSignal.timeout(12000)});
   const xml=await boundedText(feed);
   for(const m of xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)){
    const field=name=>decode(m[1].match(new RegExp('<'+name+'(?:\\s[^>]*)?>([\\s\\S]*?)<\\/'+name+'>','i'))?.[1]||'');
    const url=field('link'),published=Date.parse(field('pubDate'));if(!url.startsWith('https://news.google.com/')||!Number.isFinite(published)||published>Date.now()+300000)continue;
    candidates.push({title:clean(field('title'),300),url,excerpt:clean(field('description').replace(/<[^>]+>/g,' '),1200),provider:clean(field('source'),120)||'Google News',publishedAt:new Date(published).toISOString(),readScope:'Search listing; full publisher article not fetched'});if(candidates.length>=45)break;
   }
- }catch(error){errors.push('related_search_unavailable');}
+ }catch(error){errors.push('related_search_'+String(error.message||'unavailable').slice(0,60));}
  const sources=rankStories(query,candidates.filter(x=>x.url));
  if(!sources.length)throw Error('no_verified_related_sources');
  return {ok:true,id:crypto.randomUUID(),query,title:explicit||clean(context.title,300)||query,overview:articleMatches&&excerpt?excerpt:clean('Source-backed research for '+query+'. '+sources.map(s=>s.title+': '+s.excerpt).join('\n'),6000),sources,visited,errors,createdAt:new Date().toISOString(),receipt:{tool:'bubbles.article_research',status:errors.length?'partial':'complete',pagesRead:visited.length,tokenCreated:false,websiteBuilt:false,walletCreditVerified:false}};
