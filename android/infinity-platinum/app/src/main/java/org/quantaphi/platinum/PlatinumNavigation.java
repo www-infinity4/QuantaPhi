@@ -27,6 +27,10 @@ public final class PlatinumNavigation {
  }
  public static String openOrSearch(String raw) {
   String value=raw==null?"":raw.trim();
+  // This is a local app-navigation mnemonic only, never an LTE activation
+  // or interception of the system phone dialer's outgoing calls.
+  if(value.toLowerCase(Locale.ROOT).matches("4[- ]?333[- ]?3333\\s*#"))
+   return "https://quantaphi.org/";
   String address=web(value);
   if(!address.isEmpty())return address;
   if(value.matches("^\\+?[0-9 ().-]{7,30}$"))return "https://quantaphi.org/phone/?dial="+URLEncoder.encode(value,StandardCharsets.UTF_8);

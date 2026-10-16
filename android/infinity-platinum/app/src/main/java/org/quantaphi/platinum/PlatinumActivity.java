@@ -6,6 +6,9 @@ import android.app.role.RoleManager;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkCapabilities;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Message;
@@ -58,7 +61,9 @@ public final class PlatinumActivity extends Activity {
  private final ArrayList<WebView> tabs=new ArrayList<>();
  private FrameLayout frame;
  private EditText address;
- private TextView status,tabCount;
+ private TextView status,tabCount,connectionBadge;
+ private ConnectivityManager networkManager;
+ private ConnectivityManager.NetworkCallback networkCallback;
  private int current=-1;
  private ValueCallback<Uri[]> pendingFiles;
  private String collectUrl="",collectTitle="";
@@ -79,6 +84,20 @@ public final class PlatinumActivity extends Activity {
   Button options=button("⋮");
   options.setContentDescription("Platinum browser options");
   options.setOnClickListener(v->options());
+  connectionBadge=new TextView(this);
+  connectionBadge.setText("INFINITY · checking");
+  connectionBadge.setTextColor(STEEL);
+  connectionBadge.setTextSize(11);
+  connectionBadge.setTypeface(null,1);
+  connectionBadge.setPadding(px(5),px(8),px(5),px(8));
+  connectionBadge.setContentDescription("Infinity portal connectivity, not a carrier network name");
+  connectionBadge.setOnClickListener(v->
+   new AlertDialog.Builder(this)
+    .setTitle("Infinity connection")
+    .setMessage(CellularInspector.capture(this)+"\n\nThe Infinity web portal uses the existing verified Internet link. A QuantaPhi app code does not turn on an LTE service or replace the Android system LTE icon.")
+    .setPositiveButton("Open Infinity Phone",(d,w)->navigate("https://quantaphi.org/phone/"))
+    .setNegativeButton("Close",null).show());
+  first.addView(connectionBadge);
   first.addView(options);shell.addView(first);
 
   LinearLayout navigation=row();
@@ -110,6 +129,7 @@ public final class PlatinumActivity extends Activity {
   shell.addView(status);
   frame=new FrameLayout(this);shell.addView(frame,new LinearLayout.LayoutParams(-1,0,1));
   setContentView(shell);
+  startNetworkBadge();
 
   String entry=PlatinumNavigation.START;
   Intent launched=getIntent();
@@ -119,6 +139,39 @@ public final class PlatinumActivity extends Activity {
   }
   newTab(entry);
  }
+ private String internetBadgeText(){
+  if(networkManager==null)return "INFINITY · Offline";
+  try{
+   Network activeNetwork=networkManager.getActiveNetwork();
+   NetworkCapabilities caps=activeNetwork==null?null:networkManager.getNetworkCapabilities(activeNetwork);
+   if(caps==null||!caps.hasCapability(NetworkCapabilities.NET_CAPABILITY_VALIDATED))
+    return "INFINITY · Offline";
+   if(caps.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR))return "INFINITY · Cellular";
+   if(caps.hasTransport(NetworkCapabilities.TRANSPORT_WIFI))return "INFINITY · Wi-Fi";
+   return "INFINITY · Online";
+  }catch(SecurityException e){return "INFINITY · Unknown";}
+ }
+ private void refreshNetworkBadge(){
+  if(connectionBadge==null)return;
+  String state=internetBadgeText();connectionBadge.setText(state);
+  connectionBadge.setTextColor(state.contains("Offline")||state.contains("Unknown")?STEEL:Color.rgb(21,99,67));
+  // Internet via cellular is NOT evidence that an Infinity-operated LTE tower is connected.
+ }
+ private void startNetworkBadge(){
+  networkManager=(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+  refreshNetworkBadge();
+  if(networkManager==null)return;
+  networkCallback=new ConnectivityManager.NetworkCallback(){
+   @Override public void onAvailable(Network network){runOnUiThread(()->refreshNetworkBadge());}
+   @Override public void onLost(Network network){runOnUiThread(()->refreshNetworkBadge());}
+   @Override public void onCapabilitiesChanged(Network network,NetworkCapabilities capabilities){
+    runOnUiThread(()->refreshNetworkBadge());
+   }
+  };
+  try{networkManager.registerDefaultNetworkCallback(networkCallback);}
+  catch(Exception e){networkCallback=null;refreshNetworkBadge();}
+ }
+ @Override protected void onResume(){super.onResume();refreshNetworkBadge();}
  private int px(int size){return Math.round(size*getResources().getDisplayMetrics().density);}
  private LinearLayout row(){LinearLayout l=new LinearLayout(this);l.setOrientation(LinearLayout.HORIZONTAL);l.setGravity(Gravity.CENTER_VERTICAL);return l;}
  private Button button(String title){
@@ -361,6 +414,10 @@ public final class PlatinumActivity extends Activity {
   home();
  }
  @Override protected void onDestroy(){
+  if(networkManager!=null&&networkCallback!=null){
+   try{networkManager.unregisterNetworkCallback(networkCallback);}catch(Exception ignored){}
+   networkCallback=null;
+  }
   if(pendingPhoneMedia!=null){pendingPhoneMedia.deny();pendingPhoneMedia=null;}
   if(pendingFiles!=null){pendingFiles.onReceiveValue(null);pendingFiles=null;}
   for(WebView w:tabs){w.stopLoading();if(w.getParent()!=null)((android.view.ViewGroup)w.getParent()).removeView(w);w.destroy();}

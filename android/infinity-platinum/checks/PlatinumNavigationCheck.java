@@ -7,6 +7,9 @@ public final class PlatinumNavigationCheck {
    if(!PlatinumNavigation.web(bad).isEmpty())throw new AssertionError("unsafe URL: "+bad);
   if(!PlatinumNavigation.openOrSearch("platinum elements").contains("?q=platinum+elements"))throw new AssertionError("search");
   if(!PlatinumNavigation.openOrSearch("641-555-0198").startsWith("https://quantaphi.org/phone/?dial="))throw new AssertionError("private number dialer");
+  if(!"https://quantaphi.org/".equals(PlatinumNavigation.openOrSearch("4-333-3333#")))throw new AssertionError("Infinity local access code");
+  if(!"https://quantaphi.org/".equals(PlatinumNavigation.openOrSearch("4 333 3333 #")))throw new AssertionError("Infinity spaced code");
+  if("https://quantaphi.org/".equals(PlatinumNavigation.openOrSearch("4-333-3333")))throw new AssertionError("Never intercept ordinary phone digits");
   if(!PlatinumNavigation.isPlatinum("https://quantaphi.org/platinum/"))throw new AssertionError("first party");
   if(PlatinumNavigation.isPlatinum("https://evil.example/platinum/"))throw new AssertionError("forged first party");
   System.out.println("PlatinumNavigation checks passed");

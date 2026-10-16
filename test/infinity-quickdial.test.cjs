@@ -10,6 +10,9 @@ test('Infinity service calls route only to explicit first-party destinations',()
  assert.equal(service.entries.length,6);
  assert.deepEqual(service.entries.map(x=>x.code),['*100','*101','*102','*103','*104','*105']);
  assert.equal(service.resolve('*100')?.url,'/');
+ assert.equal(service.resolve('4-333-3333#')?.url,'/');
+ assert.equal(service.resolve('4 333 3333 #')?.url,'/');
+ assert.equal(service.resolve('4-333-3333')?.url,undefined);
  assert.equal(service.resolve('*101')?.url,'/platinum/');
  assert.equal(service.resolve('*102')?.url,'/#bubblesAICard');
  assert.equal(service.resolve('*103')?.url,'/#robotBrainOwner');
@@ -39,4 +42,14 @@ test('The dialer uses the same web identity and does not confuse it with an LTE 
  assert.match(quick,/not assigned telephone numbers/i);
  assert.doesNotMatch(quick,/fetch\(|XMLHttpRequest|sendBeacon|document\.cookie/);
  assert.doesNotMatch(js,/sim-key-status'\)\.textContent\s*=\s*['"]connected/i);
+});
+
+test('Infinity reachability badge checks real switchboard response, not raw LTE text',()=>{
+ const html=read('phone/index.html');
+ const js=read('phone/phone.js');
+ assert.match(html,/id="infinity-signal"/);
+ assert.match(html,/existing Internet connection/);
+ assert.match(js,/health\.service!=='infinity-platinum-switchboard'/);
+ assert.match(js,/renderInfinitySignal\(false\)/);
+ assert.match(html,/4-333-3333#/);
 });
