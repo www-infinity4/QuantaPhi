@@ -230,9 +230,46 @@ const clearNotes=create('button','ba-control ba-macro-action','Clear local Bubbl
 clearNotes.type='button';
 clearNotes.addEventListener('click',()=>{
  if(!window.confirm('Delete only the device-local Bubbles notes? This will not delete your phone storage, wallet or Cloudflare history.'))return;
- try{localStorage.removeItem(NOTES);macroInfo.textContent='Device-local Bubbles notes cleared. Cloud wallet and Android files are unchanged.'}
+ try{localStorage.removeItem(NOTES);notes=[];renderNotes();macroInfo.textContent='Device-local Bubbles notes cleared. Cloud wallet and Android files are unchanged.'}
  catch(error){macroInfo.textContent='Notes could not be cleared: '+String(error.message||error).slice(0,110)}
 });
+// Complete macro map: jump to the original real setting; never duplicate it.
+const settingsMap=[
+ ['Bubble role',()=>persona],
+ ['Bubble name',()=>alias],
+ ['Bubble instructions',()=>instructions],
+ ['Speaking voice',()=>voiceChoice],
+ ['Conversation memory',()=>historyToggle],
+ ['Wallet history backup',()=>cloudToggle],
+ ['ChatGPT / Gemini JSON import',()=>importGPT],
+ ['Local note editor',()=>noteText],
+ ['Robot Brain work request',()=>workText],
+ ['Image upload',()=>photoInput]
+];
+for(const [label,locate] of settingsMap){
+ const btn=create('button','ba-control ba-macro-action','⚙ '+label);
+ btn.type='button';btn.addEventListener('click',()=>{
+  const original=locate();
+  if(!original||!original.isConnected){macroInfo.textContent='This setting is not available in the current Bubbles session.';return;}
+  if(original.closest('.ba-settings')&&card.dataset.expanded!=='true'&&!original.closest('.ba-program'))studioToggle.click();
+  const nested=original.closest('details');
+  if(nested)nested.open=true;
+  if(!original.hidden&&!original.disabled){original.scrollIntoView?.({block:'center',behavior:'smooth'});original.focus?.();macroInfo.textContent='Opened the original '+label+' control.'}
+  else macroInfo.textContent=label+' needs the authorized app or a different privacy setting.';
+ });
+ macroContent.append(btn);
+}
+// Switching the main Bubble's role reuses its saved agent profile; it does NOT
+// falsely claim that isolated assistants communicate without a backend bridge.
+const roleJump=create('select','ba-field ba-macro-role');
+roleJump.setAttribute('aria-label','Switch the main Bubbles role');
+for(const [id,value] of Object.entries(ROLES)){const option=create('option','',value.name);option.value=id;roleJump.append(option)}
+roleJump.value=config.role;
+roleJump.addEventListener('change',()=>{
+ persona.value=roleJump.value;updateRole();
+ macroInfo.textContent='Main Bubbles switched to '+ROLES[roleJump.value].name+'. This changes its job profile, not Android permissions.';
+});
+macroContent.insertBefore(roleJump,macroInfo);
 macroContent.append(clearNotes,macroInfo);
 edit.append(macroBox);
 card.append(edit,connections);
