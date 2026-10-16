@@ -71,11 +71,29 @@ function resolveRepairRequest(utterance, history=[]){
  return 'Repair the problems in this owner message: '+context;
 }
 function repositoryFor(text){
- const source=String(text||'').toLowerCase();
- for(const [name,repo] of Object.entries(OWNER_REPOS)){
-  if(new RegExp('\\b'+name.replace(/ /g,'\\s+')+'\\b').test(source))return repo;
- }
- return 'www-infinity4/QuantaPhi';
+  const source=String(text||'');
+  // 1️⃣ Detect an explicit www‑infinity4/Owner/Repo token.
+  const explicitMatch = /www-infinity4\/[A-Za-z0-9_-]+/i.exec(source);
+  if (explicitMatch) {
+    const token = explicitMatch[0];
+    // Normalise for case‑insensitive comparison against the allow‑list values.
+    const allowed = Object.values(OWNER_REPOS).map(v => v.toLowerCase());
+    if (allowed.includes(token.toLowerCase())) {
+      // Exact allowed repository – precedence over any incidental aliases.
+      return token;
+    }
+    // Explicit token present but not on the allow‑list → reject.
+    const err = new Error('unsupported_repository');
+    err.code = 'unsupported_repository';
+    throw err;
+  }
+  // 2️⃣ No explicit token – fall back to the historic alias‑scanning logic.
+  const lowered = source.toLowerCase();
+  for (const [name, repo] of Object.entries(OWNER_REPOS)) {
+    if (new RegExp('\\b' + name.replace(/ /g, '\\s+') + '\\b').test(lowered)) return repo;
+  }
+  // Default repository when nothing matches.
+  return 'www-infinity4/QuantaPhi';
 }
 function makeJobs(request){
  const message=String(request||'').trim().slice(0,4000);
