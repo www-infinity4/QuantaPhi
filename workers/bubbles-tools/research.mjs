@@ -57,7 +57,23 @@ export async function researchArticle(body,env,{request=fetch}={}){
   const reads=await Promise.allSettled(related.map(x=>readWebsite(x.url,request)));
   for(const result of reads)if(result.status==='fulfilled'){const p=result.value;visited.push({url:p.url,readAt:p.readAt});candidates.push({title:p.title,url:p.url,excerpt:p.text,provider:'Your website · fetched related page'});}
  }catch(error){errors.push(String(error.message));}}
+ // Reuse the existing Infinity/QuantaPhi search broker before optional feeds.
  try{
+  const endpoint='https://orange-brook-a2ac.marvaseater.workers.dev/search?'+new URLSearchParams({q:query,format:'json',categories:'general',safesearch:'1'});
+  const result=await request(endpoint,{headers:{Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(8000)});
+  const data=JSON.parse(await boundedText(result));
+  for(const row of (Array.isArray(data.results)?data.results:[]).slice(0,24)){
+   const title=clean(row.title,300),excerpt=clean(row.content||row.description,2000),url=clean(row.url,1800);
+   if(title&&/^https:\/\//.test(url))candidates.push({title,url,excerpt,provider:'Infinity Phi search · '+clean(row.engine||'public web',80),readScope:'Search result excerpt; full publisher article not fetched'});
+  }
+ }catch{errors.push('infinity_search_unavailable');}
+ if(!rankStories(query,candidates.filter(x=>x.url)).length)try{
+  const endpoint='https://en.wikipedia.org/w/api.php?'+new URLSearchParams({action:'query',format:'json',generator:'search',gsrsearch:query,gsrlimit:'5',prop:'extracts|info',exintro:'1',explaintext:'1',inprop:'url'});
+  const result=await request(endpoint,{headers:{Accept:'application/json','User-Agent':'BubblesResearch/1.0 (quantaphi.org)'},redirect:'error',signal:AbortSignal.timeout(8000)});
+  const data=JSON.parse(await boundedText(result));
+  for(const row of Object.values(data.query?.pages||{}))if(row.title&&row.fullurl&&row.extract)candidates.push({title:clean(row.title,300),url:clean(row.fullurl,1800),excerpt:clean(row.extract,4000),provider:'Wikipedia · article introduction',readScope:'Fetched encyclopedia introduction'});
+ }catch{errors.push('encyclopedia_search_unavailable');}
+ if(rankStories(query,candidates.filter(x=>x.url)).length<4)try{
   const feed=await request('https://news.google.com/rss/search?'+new URLSearchParams({q:query,hl:'en-US',gl:'US',ceid:'US:en'}),{headers:{Accept:'application/rss+xml'},redirect:'error',signal:AbortSignal.timeout(12000)});
   const xml=await boundedText(feed);
   for(const m of xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)){
