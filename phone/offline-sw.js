@@ -18,7 +18,7 @@ const whitelist=new Set(STATIC.map(u=>new URL(u,base).href));
 self.addEventListener('install',event=>{
  event.waitUntil((async()=>{
   const cache=await caches.open(CACHE);
-  try{await cache.addAll(STATIC.map(u=>new Request(u,{cache:'reload',credentials:'omit'})))}
+  try{await cache.addAll(STATIC.map(u=>new Request(new URL(u,base).href,{cache:'reload',credentials:'omit'})))}
   catch(e){await caches.delete(CACHE);throw e}
   await self.skipWaiting();
  })());
