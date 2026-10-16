@@ -162,9 +162,9 @@ const APK_RELEASES={
 async function publishedApk(kind){
  const config=APK_RELEASES[kind];
  const response=await fetch('https://api.github.com/repos/www-infinity4/QuantaPhi/releases/tags/'+config.tag,{
-  headers:{Accept:'application/vnd.github+json','User-Agent':'QuantaPhi-APK-Downloads'},signal:AbortSignal.timeout(10000)
+  headers:{Accept:'application/vnd.github+json','User-Agent':'QuantaPhi-APK-Downloads'},cf:{cacheTtl:60,cacheEverything:true},signal:AbortSignal.timeout(10000)
  });
- if(!response.ok)throw Error('release_unavailable');
+ if(!response.ok)throw Error('release_unavailable_'+response.status);
  const release=await response.json();
  if(release.draft)throw Error('release_unpublished');
  const asset=release.assets?.find(item=>item.name===config.asset&&item.state==='uploaded'&&item.size>0);
@@ -178,7 +178,7 @@ async function apkRoute(request,incoming){
  if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
  if(incoming.pathname==='/api/apk-releases'){
   const result={};
-  await Promise.all(Object.keys(APK_RELEASES).map(async kind=>{try{result[kind]=await publishedApk(kind)}catch{result[kind]={available:false}}}));
+  await Promise.all(Object.keys(APK_RELEASES).map(async kind=>{try{result[kind]=await publishedApk(kind)}catch(error){result[kind]={available:false,error:String(error.message||'release_unavailable')}}}));
   return Response.json(result,{headers:{'Cache-Control':'no-store'}});
  }
  const kind=incoming.pathname==='/downloads/bubbles.apk'?'bubbles':'site';
