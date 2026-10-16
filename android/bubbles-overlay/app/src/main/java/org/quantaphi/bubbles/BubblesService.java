@@ -447,7 +447,7 @@ public final class BubblesService extends Service {
                 short[] samples = new short[1600];
                 boolean suppressingReply = false;
                 int interruptionFrames = 0;
-                long voicedSamples = 0L;
+                final SpeechEnergyWindow energyEvidence = new SpeechEnergyWindow();
                 try (Recognizer speech = decoder) {
                     while (captureRunning && connected && !muted) {
                         int count = input.read(samples, 0, samples.length);
@@ -475,19 +475,21 @@ public final class BubblesService extends Service {
                                 });
                             }
                             suppressingReply = true;
-                            voicedSamples = 0L;
+                            energyEvidence.reset();
                             speech.reset();
                             continue;
                         }
                         interruptionFrames = 0;
                         if (SystemClock.elapsedRealtime() < echoQuietUntil) {
                             suppressingReply = true;
-                            voicedSamples = 0L;
+                            energyEvidence.reset();
                             speech.reset();
                             continue;
                         }
-                        if (level > .08f) voicedSamples = Math.min(16000L * 30L, voicedSamples + count);
-                        if (suppressingReply) { speech.reset(); suppressingReply = false; voicedSamples = 0L; }
+                        // Reset speaker echo before counting the first fresh mic frame.
+                        if (suppressingReply) { speech.reset(); suppressingReply = false; energyEvidence.reset(); }
+                        // Avoid making a whole turn out of isolated room noises hours apart.
+                        energyEvidence.observe(level, count);
                         main.post(() -> {
                             if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
                                 state(level > .08f ? "hearing" : turnBuffer.hasPending() ? "gathering" : "listening", level);
@@ -503,8 +505,7 @@ public final class BubblesService extends Service {
                         }
                         if (complete) {
                             final String transcript = new JSONObject(speech.getResult()).optString("text", "");
-                            final long voicedMillis = voicedSamples * 1000L / 16000L;
-                            voicedSamples = 0L;
+                            final long voicedMillis = energyEvidence.takeVoicedMillis();
                             if (!SpeechTranscriptGate.plausible(transcript, voicedMillis)) continue;
                             main.post(() -> {
                                 if (!connected || muted || speaking || SystemClock.elapsedRealtime() < echoQuietUntil) return;

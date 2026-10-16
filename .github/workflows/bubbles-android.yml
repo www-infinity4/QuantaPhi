@@ -79,6 +79,11 @@ jobs:
           mkdir -p /tmp/bubbles-sim
           javac -d /tmp/bubbles-sim android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SimNetworkCommands.java android/bubbles-overlay/checks/SimNetworkCommandsCheck.java
           java -cp /tmp/bubbles-sim org.quantaphi.bubbles.SimNetworkCommandsCheck
+      - name: Verify fresh voice evidence and quiet-room reset
+        run: |
+          mkdir -p /tmp/bubbles-energy
+          javac -d /tmp/bubbles-energy android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SpeechEnergyWindow.java android/bubbles-overlay/checks/SpeechEnergyWindowCheck.java
+          java -cp /tmp/bubbles-energy org.quantaphi.bubbles.SpeechEnergyWindowCheck
       - name: Verify continuous native microphone contract
         run: node --test test/bubbles-continuous-native.test.cjs
       - name: Verify ChatGPT OAuth permission and response contract
