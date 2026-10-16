@@ -486,9 +486,10 @@ public final class BubblesService extends Service {
                             speech.reset();
                             continue;
                         }
+                        // Reset speaker echo before counting the first fresh mic frame.
+                        if (suppressingReply) { speech.reset(); suppressingReply = false; energyEvidence.reset(); }
                         // Avoid making a whole turn out of isolated room noises hours apart.
                         energyEvidence.observe(level, count);
-                        if (suppressingReply) { speech.reset(); suppressingReply = false; energyEvidence.reset(); }
                         main.post(() -> {
                             if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
                                 state(level > .08f ? "hearing" : turnBuffer.hasPending() ? "gathering" : "listening", level);
@@ -505,7 +506,6 @@ public final class BubblesService extends Service {
                         if (complete) {
                             final String transcript = new JSONObject(speech.getResult()).optString("text", "");
                             final long voicedMillis = energyEvidence.takeVoicedMillis();
-                            energyEvidence.reset();
                             if (!SpeechTranscriptGate.plausible(transcript, voicedMillis)) continue;
                             main.post(() -> {
                                 if (!connected || muted || speaking || SystemClock.elapsedRealtime() < echoQuietUntil) return;
