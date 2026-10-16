@@ -37,11 +37,38 @@
     }
     return '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer" style="display:inline-flex;margin-top:12px;padding:12px 17px;background:#2c2045;color:#fff;text-decoration:none;border-radius:999px;font-weight:800">▶ Open my media ↗</a>';
   };
+  // Attribution is drafted into every exported card; a person named in
+  // credits has no verified wallet claim or funded royalty by name alone.
+  const ROLES=new Set(['host','guest','creator','actor','director','producer','writer','composer','performer','editor','crew']);
+  function creditManifest(data){
+    const entries=[],add=(name,role,url)=>{
+      const title=String(name||'').trim().slice(0,120);
+      if(title.length<2||!ROLES.has(role))return;
+      let source='';
+      try{const u=new URL(String(url||''));if(u.protocol==='https:'&&!u.username&&!u.password)source=u.href}catch{}
+      entries.push({name:title,role,evidenceUrl:source,status:'source_and_identity_pending'});
+    };
+    add(data.creator,'creator',data.creditEvidence);
+    for(const row of String(data.credits||'').split(/\r?\n/).slice(0,39)){
+      const parts=row.split('|').map(x=>x.trim());
+      if(parts.length>=2)add(parts[1],parts[0].toLowerCase(),parts[2]);
+    }
+    return [...new Map(entries.map(x=>[x.role+':'+x.name.toLowerCase(),x])).values()].slice(0,40);
+  }
   function exportHtml(data) {
     const title = esc(data.title.trim() || "My Media Star");
     const description = esc(data.description.trim() || "Creator-selected original media");
     const source = safeSource(data.url);
-    const card = '<article data-media-star="creator-v3" data-payment-mode="off" aria-label="Media Star creator card" style="position:relative;isolation:isolate;overflow:hidden;max-width:720px;padding:22px;border:2px solid #f3ca52;border-radius:24px;background:linear-gradient(135deg,#fff8cd,#e4af31);color:#33220c;font:16px/1.5 system-ui,sans-serif;box-shadow:0 8px 25px #7d541d3d">' +
+    const productionCredits=creditManifest(data);
+    const productionManifest=esc(JSON.stringify({version:1,sourceUrl:source,
+      title:data.title,credits:productionCredits,mediaStarOwnedByPublisher:true,
+      attributionState:'research_pending',settledMilliStarCoins:0}));
+    const creditList=productionCredits.length
+      ?productionCredits.map(x=>'<li>'+esc(x.role)+' · '+esc(x.name)+
+        (x.evidenceUrl?' · <a target="_blank" rel="noopener noreferrer" href="'+esc(x.evidenceUrl)+'">Source ↗</a>':' · source pending')+'</li>').join('')
+      :'<li>No people credited yet. Production research still required.</li>';
+
+    const card = '<article data-production-credits="'+productionManifest+'" data-ledger-status="research-pending" data-media-star="creator-v3" data-payment-mode="off" aria-label="Media Star creator card" style="position:relative;isolation:isolate;overflow:hidden;max-width:720px;padding:22px;border:2px solid #f3ca52;border-radius:24px;background:linear-gradient(135deg,#fff8cd,#e4af31);color:#33220c;font:16px/1.5 system-ui,sans-serif;box-shadow:0 8px 25px #7d541d3d">' +
       '<span aria-hidden="true" style="position:absolute;right:-54px;top:-68px;width:295px;height:295px;clip-path:polygon(50% 0%,62% 34%,98% 35%,69% 57%,80% 91%,50% 72%,20% 91%,31% 57%,2% 35%,38% 34%);background:linear-gradient(150deg,#fff2a7,#edb028);opacity:.56;z-index:-1"></span>' +
       '<div style="position:relative"><strong style="letter-spacing:.06em;font-size:22px">⭐ MEDIA STAR</strong>' +
       '<p style="font-size:12px;font-weight:800;letter-spacing:.07em;margin:5px 0">CREATOR MEDIA</p>' +
@@ -49,7 +76,7 @@
       '<p style="margin:11px 0">' + description + '</p>' +
       '<div data-media-star-player>' + (source ? playable(source) :
       '<form data-media-star-setup style="padding:12px;border:1px dashed #856728;border-radius:12px;background:#fff6d1"><label style="display:block;font-weight:700">Add your own media link <input type="url" name="media" required placeholder="https://your-site.example/your-episode.mp3" style="display:block;width:100%;box-sizing:border-box;padding:11px;border-radius:8px;border:1px solid #8c702a;margin:9px 0"></label><button type="submit" style="padding:10px 15px;border:0;border-radius:15px;background:#39204e;color:white;font-weight:800">Preview my media</button><p style="font-size:12px">This is a local preview. To publish for everyone, add the link in the website builder and copy the completed card.</p></form>') +
-      '</div><p style="font-size:12px;margin:12px 0 0">Media supplied by this card creator. Optional paid access requires the creator’s separately configured wallet and server; payments are off by default.</p></div></article>';
+      '</div><details style="margin-top:12px;padding:12px;background:#fff7d6;border-radius:12px;border:1px solid #ac873b"><summary style="font-weight:900">Production credits · researched ledger</summary><ol>'+creditList+'</ol><p style="font-size:12px">These public credits need evidence, identity verification and a funded payout contract. No spendable StarCoins or cash are created by this card.</p></details><p style="font-size:12px;margin:12px 0 0">Creator-owned source. Independent wallet and server required for any paid access; no Phi or Fred entitlements are copied.</p></div></article>';
     if (source) return card;
     // No backend operations. In blank embeds the media-link form works locally,
     // and instructs the creator to publish the link into their actual site.
@@ -72,11 +99,17 @@
   const title=field("title","Card title","My original episode");
   const link=field("url","Link to your own content (HTTP or HTTPS)","https://your-site.example/episode.mp3");
   const description=field("description","Episode description","Tell viewers about your content","textarea");
+  const creator=field("creator","Creator or main host to research","Creator / host name");
+  const creditEvidence=field("creditEvidence","Official production credits source URL","https://example.org/credits");
+  const contributors=field("credits","Actors, guests and crew · one per line","guest | Person Name | https://source.example/credits","textarea");
+  form.append(el("p","ms-creator-intro","Each exported card includes a production credits manifest. Review researched names and sources; no automatic wallet payout is authorized."));
+
   const actions=el("div","ms-creator-actions");
   const createBtn=(label,css,cb)=>{const b=el("button",css,label);b.type="button";b.addEventListener("click",cb);actions.append(b);return b;};
   const preview=el("div","ms-creator-preview");preview.setAttribute("aria-live","polite");
   const feedback=el("p","ms-creator-status");feedback.setAttribute("role","status");
-  const data=()=>({title:title.value,url:link.value,description:description.value});
+  const data=()=>({title:title.value,url:link.value,description:description.value,
+    creator:creator.value,creditEvidence:creditEvidence.value,credits:contributors.value});
   createBtn("Preview card","ms-creator-button",()=>{
     try{ const html=exportHtml(data());preview.innerHTML=html.replace(/<script>[\s\S]*?<\/script>/gi,"");
       feedback.textContent=link.value.trim()?"Preview ready.":"Blank card ready. Add your own media URL before publishing to all visitors.";
@@ -110,7 +143,7 @@
   host.append(panel);
   window.PhiMediaStarAsset=Object.freeze({
     html: options=>exportHtml(options&&typeof options==="object"?{
-      title:String(options.title||""),url:String(options.url||""),description:String(options.description||"")
+      title:String(options.title||""),url:String(options.url||""),description:String(options.description||""),creator:String(options.creator||""),creditEvidence:String(options.creditEvidence||""),credits:String(options.credits||"")
     }:{title:"",url:"",description:""})
   });
 })();
