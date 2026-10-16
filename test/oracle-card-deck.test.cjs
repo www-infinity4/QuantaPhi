@@ -1,0 +1,11 @@
+'use strict';const assert=require('node:assert/strict'),fs=require('node:fs');
+const html=fs.readFileSync('index.html','utf8'),deck=fs.readFileSync('oracle-card-deck.js','utf8'),css=fs.readFileSync('oracle-card-deck.css','utf8');
+assert.match(html,/id="oracleCardStage"/);assert.match(html,/id="oracleCardNext"/);
+assert.match(html,/Scroll interactive cards \/ widgets/);
+assert.match(deck,/document\.createComment/);assert.match(deck,/marker\.parentNode\.insertBefore\(node,marker\)/);
+assert.match(deck,/stage\.append\(entry\.node\)/);assert.doesNotMatch(deck,/cloneNode/);
+for(const id of ['phiChannelCards','infiniteBook','bubblesAICard','phiStoryWriter','phiMediaBuilder'])assert.ok(deck.includes(id));
+assert.match(css,/oracle-card-deck-active:not\(\.oracle-shelf-open\)/);
+assert.doesNotMatch(css,/#sponsorBoard|#bitcoinCrusherShoe|#shoplcShirtButton/);
+assert.doesNotThrow(()=>new Function(deck));
+console.log('Original-card spotlight, flip and accessible shelf contracts passed');
