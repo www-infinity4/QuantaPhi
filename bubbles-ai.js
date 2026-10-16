@@ -269,7 +269,7 @@ roleJump.addEventListener('change',()=>{
  persona.value=roleJump.value;updateRole();
  macroInfo.textContent='Main Bubbles switched to '+ROLES[roleJump.value].name+'. This changes its job profile, not Android permissions.';
 });
-macroContent.insertBefore(roleJump,macroInfo);
+macroContent.append(roleJump);
 macroContent.append(clearNotes,macroInfo);
 edit.append(macroBox);
 card.append(edit,connections);
