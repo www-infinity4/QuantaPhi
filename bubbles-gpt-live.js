@@ -8,6 +8,22 @@ const start=$("liveStart"),stop=$("liveStop"),cancel=$("liveInterrupt"),
       speaker=$("liveAudio");
 let pc=null,channel=null,mic=null,ready=false,endTimer=null;
 let lastAppend="";
+let attempt=0, requestController=null;
+const mute=document.createElement("button");
+mute.textContent="Mute microphone";mute.disabled=true;
+mute.setAttribute("aria-pressed","false");stop.after(mute);
+mute.addEventListener("click",()=>{
+ const tracks=mic?.getAudioTracks()||[];
+ const muted=mute.getAttribute("aria-pressed")!=="true";
+ tracks.forEach(track=>{track.enabled=!muted});
+ mute.setAttribute("aria-pressed",String(muted));
+ mute.textContent=muted?"Unmute microphone":"Mute microphone";
+});
+function connected(){
+ if(!ready||pc?.connectionState!=="connected")return;
+ show("Bubbles call connected · speak naturally");mute.disabled=false;
+ stop.disabled=false;cancel.disabled=false;
+}
 function show(value){status.textContent=value;}
 function line(role,message) {
  const t=String(message||"").trim();
@@ -19,16 +35,18 @@ function line(role,message) {
  transcript.append(p);transcript.scrollTop=transcript.scrollHeight;
 }
 function cleanup(){
+ ++attempt;requestController?.abort();requestController=null;
  clearTimeout(endTimer);
  mic?.getTracks().forEach(track=>track.stop());
  mic=null;try{channel?.close()}catch{}
  try{pc?.close()}catch{}
  channel=null;pc=null;speaker.srcObject=null;ready=false;
+ mute.disabled=true;mute.textContent="Mute microphone";mute.setAttribute("aria-pressed","false");
  start.disabled=false;stop.disabled=true;cancel.disabled=true;
 }
 function update(event) {
  if(event.type==="session.started"){
-   ready=true;show("GPT-Live connected · speak naturally");
+   ready=true;connected();
    stop.disabled=false;cancel.disabled=false;
  } else if(event.type==="session.closed"){
    show("GPT-Live conversation ended");
@@ -57,14 +75,26 @@ start.addEventListener("click",async()=>{
  if(pc)return;
  const credential=secret.value.trim();
  if(credential.length<32){show("Owner authorization must be configured on the gateway.");return;}
- start.disabled=true;show("Requesting microphone permission…");
+ const generation=++attempt;
+ requestController=new AbortController();
+ const signal=requestController.signal;
+ start.disabled=true;stop.disabled=false;cancel.disabled=false;show("Requesting microphone permission…");
  try{
    pc=new RTCPeerConnection();
+   const peer=pc;
+   peer.addEventListener("connectionstatechange",()=>{
+     if(pc!==peer)return;
+     if(peer.connectionState==="connected")connected();
+     else if(peer.connectionState==="disconnected"){mute.disabled=true;show("Bubbles call connection interrupted");}
+     else if(peer.connectionState==="failed"){show("Bubbles call failed. Please reconnect.");cleanup();}
+   });
    pc.addEventListener("track",e=>{
      speaker.srcObject=e.streams[0]||new MediaStream([e.track]);
      speaker.play().catch(()=>show("Tap the audio player to hear GPT-Live."));
    });
-   mic=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
+   const stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
+   if(generation!==attempt){stream.getTracks().forEach(track=>track.stop());return;}
+   mic=stream;
    mic.getAudioTracks().forEach(track=>pc.addTrack(track,mic));
    channel=pc.createDataChannel("oai-events");
    channel.addEventListener("message", e=>{
@@ -73,21 +103,27 @@ start.addEventListener("click",async()=>{
    channel.addEventListener("close",()=>{
      if(pc){show("Voice connection ended.");cleanup();}
    });
-   const offer=await pc.createOffer();
-   await pc.setLocalDescription(offer);await iceReady(pc);
+   const offer=await peer.createOffer();
+   if(generation!==attempt)return;
+   await peer.setLocalDescription(offer);
+   if(generation!==attempt)return;
+   await iceReady(peer);
+   if(generation!==attempt)return;
    show("Establishing genuine GPT-Live session…");
    const response=await fetch(gateway,{
-     method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+credential},
+     signal,method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+credential},
      body:JSON.stringify({sdp:pc.localDescription.sdp})
    });
    // Never store or log the secret, not even in localStorage.
    secret.value="";
    const result=await response.json();
+   if(generation!==attempt)return;
    if(!response.ok)throw Error(result.error||"GPT-Live session creation failed");
    if(typeof result?.transport?.sdp!=="string")throw Error("Missing SDP answer");
    await pc.setRemoteDescription({type:"answer",sdp:result.transport.sdp});
    show("Connecting to GPT-Live audio…");
  }catch(error){
+   if(generation!==attempt)return;
    show(String(error.message||error).slice(0,220));cleanup();
  }
 });
