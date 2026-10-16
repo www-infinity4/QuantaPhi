@@ -390,7 +390,11 @@ public final class BubblesService extends Service {
     }
 
     private void state(String newState, float energy) {
-        if (orb != null) orb.setState(newState, energy);
+        // Vosk invokes state transitions from its microphone worker thread.
+        // All View mutations (including content description and invalidate)
+        // must run on the Android main thread to avoid intermittent freezes.
+        final OrbView target = orb;
+        if (target != null) target.post(() -> target.setState(newState, energy));
         if (!newState.equals(BrainNotes.prefs(this).getString("voice_state", "")))
             BrainNotes.prefs(this).edit().putString("voice_state", newState).apply();
     }
