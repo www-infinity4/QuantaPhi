@@ -9,3 +9,5 @@ assert.match(css,/oracle-card-deck-active:not\(\.oracle-shelf-open\)/);
 assert.doesNotMatch(css,/#sponsorBoard|#bitcoinCrusherShoe|#shoplcShirtButton/);
 assert.doesNotThrow(()=>new Function(deck));
 console.log('Original-card spotlight, flip and accessible shelf contracts passed');
+assert.match(deck,/watcher\.observe\(entry\.node/);
+assert.match(deck,/if\(available\(entry\)\)/);

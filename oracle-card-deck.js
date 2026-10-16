@@ -117,8 +117,17 @@ document.addEventListener('visibilitychange',()=>{
  if(!document.hidden)start();
 });
 window.addEventListener('quantaphi:search-start',()=>{
- // Search can reparent the original Asteroid card. Keep its own placement
- // authority instead of competing with the live result renderer.
+ // Search owns the current Asteroid story. When the new overview arrives,
+ // spotlight the ORIGINAL live result card without needing a long scroll.
  if(active?.id==='infiniteBook')returnActive();
+ const entry=entries.find(x=>x.id==='result');
+ if(!entry||expanded)return;
+ const watcher=new MutationObserver(()=>{
+  if(expanded)return watcher.disconnect();
+  if(available(entry)){watcher.disconnect();show(entry)}
+ });
+ watcher.observe(entry.node,{attributes:true,attributeFilter:['hidden'],childList:true,subtree:false});
+ if(available(entry)){watcher.disconnect();show(entry)}
+ setTimeout(()=>watcher.disconnect(),60000);
 });
 })();
