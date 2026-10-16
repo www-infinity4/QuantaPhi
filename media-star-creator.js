@@ -202,7 +202,7 @@
   host.append(panel);
   window.PhiMediaStarAsset=Object.freeze({
     html: options=>exportHtml(options&&typeof options==="object"?{
-      title:String(options.title||""),url:String(options.url||""),description:String(options.description||""),creator:String(options.creator||""),creditEvidence:String(options.creditEvidence||""),credits:String(options.credits||""),creator:String(options.creator||""),creditEvidence:String(options.creditEvidence||""),credits:String(options.credits||"")
+      title:String(options.title||""),url:String(options.url||""),description:String(options.description||""),creator:String(options.creator||""),creditEvidence:String(options.creditEvidence||""),credits:String(options.credits||"")
     }:{title:"",url:"",description:""})
   });
 })();
