@@ -48,6 +48,7 @@ function stop(){
  generation++;
  if(!active)return;
  const playback=active;active=null;
+ if(playback.productionTimer)clearTimeout(playback.productionTimer);
  if(playback.hls){try{playback.hls.destroy()}catch(_){}}
  if(playback.yt){try{playback.yt.stopVideo();playback.yt.destroy()}catch(_){}}
  if(playback.video){try{playback.video.pause();playback.video.removeAttribute('src');playback.video.load()}catch(_){}}
@@ -60,11 +61,42 @@ function stop(){
 }
 function resetMedia(){
  if(!active)return;
+ if(active.productionTimer)clearTimeout(active.productionTimer);
  if(active.hls){try{active.hls.destroy()}catch(_){}active.hls=null}
  if(active.yt){try{active.yt.stopVideo();active.yt.destroy()}catch(_){}active.yt=null}
  if(active.video){try{active.video.pause();active.video.removeAttribute('src');active.video.load()}catch(_){}active.video=null}
  if(active.frame)active.frame.src='about:blank';
  active.frame=null;active.screenSlot.replaceChildren();
+}
+// Production receipt is not a creator payout: this user-scoped, 30-second
+// listening observation merely starts the research and claim ledger.
+function recordProductionAfterPlayback(playback,token){
+ if(active!==playback||token!==generation||document.hidden)return;
+ if(playback.productionTimer)clearTimeout(playback.productionTimer);
+ const source=playback.channel==='shoplc'?'shoplc':'youtube',program=playback.program;
+ const sourceId=source==='shoplc'?'live':program?.videoId;
+ if(!sourceId)return;
+ const now=Date.now();
+ playback.productionTimer=setTimeout(async()=>{
+  playback.productionTimer=null;
+  if(active!==playback||generation!==token||document.hidden)return;
+  if(playback.productionLogged===source+':'+sourceId)return;
+  if(source==='youtube'&&playback.yt?.getPlayerState&&playback.yt.getPlayerState()!==1)return;
+  if(source==='shoplc'&&playback.video?.paused)return;
+  const ledger=window.StarQuestCloudLedger;
+  if(typeof ledger?.recordProductionPlay!=='function')return;
+  try{
+   const result=await ledger.recordProductionPlay({platform:source,sourceId,title:program?.title||'Shop LC live',observedSeconds:30});
+   if(active!==playback||generation!==token)return;
+   playback.productionLogged=source+':'+sourceId;
+   playback.status.textContent=result.duplicate?'Play already recorded today. No duplicate credit.':
+    'Production-view receipt saved; contributor credits require evidence and funding.';
+  }catch(error){
+   // A missing API deployment, unlinked wallet or failed receipt never
+   // interrupts audio, changes balances or silently creates a fake payment.
+   console.warn('Production ledger receipt could not be verified',error);
+  }
+ },30000);
 }
 function programFor(playback){
  return catalog.now(playback.channel,new Date());
@@ -90,6 +122,7 @@ function showProgram(playback,program,token){
  if(active!==playback||token!==generation)return;
  if(!program){playback.status.textContent='No verified video is available for this channel.';return}
  playback.program=program;
+ playback.productionLogged=null;
  playback.title.textContent=program.title+(program.year?' · '+program.year:'');
  playback.status.textContent='Preparing '+program.title+'…';
  if(playback.channel==='shoplc'){void playShopLC(playback,token,0);return}
@@ -124,8 +157,11 @@ function showProgram(playback,program,token){
        else playback.status.textContent='The source blocked playback. Choose another program using CH+.';
       }
      },
-     onStateChange:event=>{if(active===playback&&token===generation&&event?.data===1)
-       playback.status.textContent=program.title+' · Playing. Volume is controlled inside the TV.'}
+     onStateChange:event=>{if(active!==playback||token!==generation)return;
+      if(event?.data===1){playback.status.textContent=program.title+' · Playing. Volume is controlled inside the TV.';
+       recordProductionAfterPlayback(playback,token);}
+      else if(playback.productionTimer){clearTimeout(playback.productionTimer);playback.productionTimer=null;}
+     }
     }
    });
   }catch(_){playback.status.textContent='Use the video Play button to start the sound.'}
@@ -179,7 +215,8 @@ async function playShopLC(playback,token,index){
   hls.on(window.Hls.Events.MANIFEST_PARSED,()=>{if(active===playback&&token===generation){setSound(playback);playback.status.textContent='Shop LC is live.'}});
   hls.on(window.Hls.Events.ERROR,(_,detail)=>{if(detail?.fatal)fallback()});
  }
- video.onplaying=()=>{if(active===playback&&token===generation)playback.status.textContent='Shop LC · live broadcast with sound controls'};
+ video.onplaying=()=>{if(active===playback&&token===generation){playback.status.textContent='Shop LC · live broadcast with sound controls';recordProductionAfterPlayback(playback,token)}};
+ video.onpause=()=>{if(playback.productionTimer){clearTimeout(playback.productionTimer);playback.productionTimer=null}};
  await feed();
 }
 function open(playback){
