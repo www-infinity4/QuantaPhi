@@ -3,13 +3,14 @@ plugins { id 'com.android.application' }
 android {
     namespace 'org.quantaphi.bubbles'
     compileSdk 35
+    buildFeatures { buildConfig true }
 
     defaultConfig {
         applicationId 'org.quantaphi.bubbles'
         minSdk 26
         targetSdk 35
-        versionCode 24
-        versionName '0.24.0'
+        versionCode 25
+        versionName '0.25.0'
     }
     // Preview 5 is a new installable package because past preview-4 builds had
     // inconsistent certificates. CI supplies a cached preview-only keystore;

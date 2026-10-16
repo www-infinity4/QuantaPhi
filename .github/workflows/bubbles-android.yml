@@ -175,6 +175,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: bubbles-preview-android12-apk
@@ -185,10 +186,12 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
+          VERSION=$(sed -n "s/.*versionName '\([^']*\)'.*/\1/p" android/bubbles-overlay/app/build.gradle)
+          test -n "$VERSION"
           mv dist/app-debug.apk dist/Bubbles-Preview5-Android12.apk
           (cd dist && sha256sum Bubbles-Preview5-Android12.apk > Bubbles-Preview5-Android12.apk.sha256)
           if gh release view bubbles-preview-current --repo "$GH_REPO" >/dev/null 2>&1; then
-            gh release upload bubbles-preview-current dist/Bubbles-Preview5-Android12.apk dist/Bubbles-Preview5-Android12.apk.sha256 --clobber --repo "$GH_REPO"
+            gh release upload bubbles-preview-current "dist/Bubbles-Preview5-Android12.apk#Bubbles v${VERSION}-preview" dist/Bubbles-Preview5-Android12.apk.sha256 --clobber --repo "$GH_REPO"
           else
-            gh release create bubbles-preview-current dist/Bubbles-Preview5-Android12.apk dist/Bubbles-Preview5-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Bubbles Preview 5 installs alongside previous Bubbles versions and avoids signature conflicts from earlier previews; this is a test-signed preview, not a production release."
+            gh release create bubbles-preview-current "dist/Bubbles-Preview5-Android12.apk#Bubbles v${VERSION}-preview" dist/Bubbles-Preview5-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Bubbles Preview 5 installs alongside previous Bubbles versions and avoids signature conflicts from earlier previews; this is a test-signed preview, not a production release."
           fi
