@@ -200,6 +200,41 @@ gptConnect.addEventListener('click',()=>{
  else{gptStatus.textContent='ChatGPT website sign-in requires an approved OpenAI OAuth client ID for QuantaPhi. Until registered, Bubbles uses Oracle; Android Bubbles has its own supported device-local sign-in.';}
 });
 connections.append(provider,gptConnect,gptStatus,openai,claude,github);
+
+/* Concept credit: DJ Vertigo · Macro Zoom.
+ * One owner-facing settings scope; existing first-party Bubbles handlers remain
+ * authoritative. No button invents operating-system, wallet or bot privileges. */
+const macroBox=create('section','ba-macro-zoom');
+macroBox.append(create('strong','ba-macro-title','DJ Vertigo · Macro Zoom'),create('p','ba-muted','The red full-scope view: see every Bubbles control together before zooming into one setting. Concept credit: DJ Vertigo.'));
+const macroToggle=create('button','ba-control ba-macro-toggle','See all Bubbles controls');
+macroToggle.type='button';macroToggle.setAttribute('aria-expanded','false');
+const macroContent=create('div','ba-macro-actions');macroContent.hidden=true;
+macroToggle.addEventListener('click',()=>{macroContent.hidden=!macroContent.hidden;macroToggle.setAttribute('aria-expanded',String(!macroContent.hidden))});
+macroBox.append(macroToggle,macroContent);
+const macroInfo=create('p','ba-muted','Web controls operate this Bubbles session. Android system actions need the installed Bubbles service, user permissions and actual results.');
+const macroButtons=[
+ ['Customize bubble','Open Bubbles role and voice settings',()=>{studioToggle.click();edit.scrollIntoView?.({block:'nearest',behavior:'smooth'})}],
+ ['Record screen','Request Android screen video with microphone',()=>void sendMessage('record screen')],
+ ['Recorder status','Read actual native capture status',()=>void sendMessage('is the recorder on?')],
+ ['Stop and save','Ask Android to save the current recording',()=>void sendMessage('stop recording')],
+ ['SIM and network','Inspect connection from Android, without claiming carrier control',()=>void sendMessage('check my SIM')],
+ ['Robot Brain tools','Check verified owner work tools',()=>void sendMessage('check robot brain tools')],
+ ['Voice','Preview the currently selected speaking voice',()=>previewVoice.click()],
+ ['ChatGPT','Use Android-first permissioned sign-in',()=>gptConnect.click()]
+];
+for(const [label,description,fn] of macroButtons){
+ const btn=create('button','ba-control ba-macro-action',label);btn.type='button';btn.title=description;
+ btn.addEventListener('click',fn);macroContent.append(btn);
+}
+const clearNotes=create('button','ba-control ba-macro-action','Clear local Bubbles notes');
+clearNotes.type='button';
+clearNotes.addEventListener('click',()=>{
+ if(!window.confirm('Delete only the device-local Bubbles notes? This will not delete your phone storage, wallet or Cloudflare history.'))return;
+ try{localStorage.removeItem(NOTES);macroInfo.textContent='Device-local Bubbles notes cleared. Cloud wallet and Android files are unchanged.'}
+ catch(error){macroInfo.textContent='Notes could not be cleared: '+String(error.message||error).slice(0,110)}
+});
+macroContent.append(clearNotes,macroInfo);
+edit.append(macroBox);
 card.append(edit,connections);
 const publishing=create('div','ba-publish');
 publishing.append(create('strong','','Publish your bubble'));

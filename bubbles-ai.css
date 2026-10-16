@@ -227,3 +227,13 @@
   opacity:0;cursor:pointer;padding:0;margin:0;z-index:4;touch-action:manipulation
 }
 @media(max-width:390px){.ba-panel .ba-actions{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+/* DJ Vertigo Macro Zoom · red full-scope navigator, no duplicated settings. */
+#bubblesAICard .ba-macro-zoom{grid-column:1/-1;display:grid;gap:9px;padding:13px;border:2px solid #c75643;border-radius:15px;background:linear-gradient(140deg,#fff9f7,#fff 72%)}
+#bubblesAICard .ba-macro-title{font-size:18px;color:#9f302b}
+#bubblesAICard .ba-macro-zoom .ba-muted{margin:0;font-size:13px;line-height:1.5}
+#bubblesAICard .ba-macro-toggle{background:#a52f2d;color:#fff;font-weight:900}
+#bubblesAICard .ba-macro-actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+#bubblesAICard .ba-macro-actions[hidden]{display:none!important}
+#bubblesAICard .ba-macro-action{padding:10px 8px;min-height:48px;white-space:normal;line-height:1.3;touch-action:manipulation}
+#bubblesAICard .ba-macro-actions>.ba-muted{grid-column:1/-1}
