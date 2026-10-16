@@ -26,6 +26,12 @@ function classify(utterance){
  // Capability questions verify the actual owner endpoint without inventing a job.
  if(/^(?:can|could) you (?:actually )?(?:start|create|submit|queue) (?:new |a |the )?(?:work )?tickets?[?.!]*$/i.test(addressed))return 'connection';
  if(/^(?:(?:can|could|would) you |please )?(?:start|create|submit|queue|add) (?:new |a |the )?(?:work )?tickets? (?:to|for|about) .+/i.test(addressed))return 'queue';
+ // A follow-up asking if an existing ticket is really running is a read-only
+ // status query, not a new work request or an AI-only conversational answer.
+ const ticketQuestion=/\b(?:tickets?|jobs?|tasks?)\b/i.test(addressed)
+  && /\b(?:check|show|tell|report|verify|confirm|look up|find out|make sure|whether|if|is|are|has|have|did|does|what|how)\b/i.test(addressed)
+  && /\b(?:doing|done|work(?:ing|ed)?|run(?:ning)?|start(?:ed)?|finish(?:ed)?|complet(?:e|ed)|progress|status|state|queued?|dispatch(?:ed)?|assigned|active|happened|result|receipt|actually|still)\b/i.test(addressed);
+ if(ticketQuestion)return 'report';
  const report=/\b(?:status|report|progress(?:ing)?|activity|top\s*(?:ten|10)|running\s+(?:jobs|tasks)|queued\s+(?:jobs|tasks)|what(?:'s| is| are)\s+(?:the\s+)?(?:bots?|robot brain|pink panther|agents?))\b/i;
  const ask=/\b(?:show|give|read|tell|check|list|summari[sz]e|what|how|which|report)\b/i;
  const target=/\b(?:bots?|robot\s*brain|brain|jobs?|tasks?|tickets?|pink\s*panther|color\s*bots?|agents?|work\s*report)\b/i;
@@ -150,7 +156,53 @@ function describeTickets(tickets,limit=10){
  return 'Robot Brain: '+total+' saved owner tickets ('+statuses+'). Showing '+selected.length+' most recently updated. Queued is not running; status “working” does not prove a bot is actively executing; only authenticated commits, tests and live receipts prove delivery.\n'
   +selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
 }
-const api={classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets};
+/**
+ * Answer a natural ticket follow-up from the authenticated owner's actual list.
+ * A stored status is a database observation, never proof that GitHub work ran.
+ * When a user does not identify a ticket, say which record was selected.
+ */
+function describeTicketCheck(tickets, request='') {
+ if(!Array.isArray(tickets))return 'Robot Brain did not return a verifiable ticket list.';
+ if(!tickets.length)return 'Robot Brain has no saved owner tickets. Nothing is confirmed running.';
+ const valid=tickets.filter(ticket=>ticket&&typeof ticket==='object')
+  .sort((a,b)=>{
+   const date=v=>Number(v?.updated_at)||Date.parse(v?.updated_at||'')||0;
+   return date(b)-date(a);
+  });
+ if(!valid.length)return 'Robot Brain returned no verifiable ticket records.';
+ const query=String(request||'');
+ const explicitId=query.match(/\bIW-[A-Z0-9-]{6,}\b/i)?.[0]||'';
+ let chosen=explicitId?valid.find(ticket=>String(ticket.id||'').toLowerCase()===explicitId.toLowerCase()):null;
+ if(explicitId&&!chosen)return 'Robot Brain returned '+valid.length+' tickets, but none matched the requested ticket reference. No active work can be confirmed for that reference.';
+ const testing=/\btest\s+(?:work\s+)?ticket\b/i.test(query);
+ if(!chosen&&testing)chosen=valid.find(ticket=>/\btest\b/i.test(String(ticket.title||ticket.request||'')));
+ const selection=chosen?'Matching ticket':'Most recently updated ticket (not necessarily the one you mean)';
+ chosen=chosen||valid[0];
+ const title=readableReport(String(chosen.title||chosen.request||'Unnamed task').replace(/\s+/g,' ').slice(0,160));
+ const id=String(chosen.id||'').slice(0,90);
+ const state=String(chosen.status||'unknown').slice(0,48);
+ const jobs=Array.isArray(chosen.context?.color_jobs)?chosen.context.color_jobs:[];
+ const recordedJobs=jobs.slice(0,5).map(j=>String(j.agent||'bot').replace(/-/g,' ')+': '+String(j.status||'queued')
+  +(j.progress?.blocker?' (blocked: '+readableReport(j.progress.blocker).slice(0,150)+')':'')).join('; ');
+ const result=readableReport(chosen.result_summary||'').trim().slice(0,260);
+ let verification='No independent code, test, merge or deployment receipt was returned in this ticket summary.';
+ if(result)verification='Recorded outcome (not independently verified by this check): '+result+'.';
+ const stateMeaning=/^(?:ready|draft|queued|pending|blocked)$/i.test(state)
+  ?'This does not confirm a runner has started.'
+  : /^(?:working|in_progress|running)$/i.test(state)
+  ?'This is a stored work label, not proof an agent is actively executing.'
+  : /^(?:complete|completed|done|deployed)$/i.test(state)
+  ?'Completion is recorded, but delivery still needs verifiable evidence.'
+  :'The stored state alone does not establish execution.';
+ const at=Number(chosen.updated_at)||Date.parse(chosen.updated_at||'')||0;
+ const updated=at&&Number.isFinite(at)?' Last updated: '+new Date(at).toISOString()+'.':'';
+ return selection+': '+title+'.'+(id?' Ticket reference: '+readableReport(id)+'.':'')
+  +' Stored status: '+state+'. '+stateMeaning+updated
+  +(recordedJobs?' Agent records: '+recordedJobs+'.':' No agent execution records in this ticket.')
+  +' '+verification;
+}
+
+const api={classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,describeTicketCheck};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);
