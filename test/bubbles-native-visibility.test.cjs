@@ -36,7 +36,7 @@ test('finger swipe scrolls native transcript while message composer stays anchor
 });
 test('Bubbles 0.18 pairing stays in chat and options remain collapsed',()=>{
  assert.match(site,/Message Bubbles or paste a code/);
- assert.match(site,/chatScroll\.append\(ownerMode,linkBubbles,linkStatus,recorderStatus,recorderStop,(?:memoryHint,)?pairingCard,conversation,tools\)/);
+ assert.match(site,/chatScroll\.append\(ownerMode,linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus,recorderStatus,recorderStop,(?:memoryHint,)?pairingCard,conversation,tools\)/);
  assert.match(site,/if\(who!=='you'&&!greeting\)/);
  assert.doesNotMatch(site,/nativeOwnerInput=create/);
  assert.match(nativeCss,/grid-template-columns:1fr/);
