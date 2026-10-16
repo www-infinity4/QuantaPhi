@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {checkClaims,supported,authenticate} from '../workers/infinity-brain-clock/runner-auth.mjs';
 import {applyEdits,clearButtonPatch} from '../scripts/brain-patch.mjs';
+import {ticketStatusFromJobs} from '../workers/infinity-brain-clock/ticket-status.mjs';
 test('runner identity restricts audience, exact repo, workflow, main and expiry',()=>{
  const c={iss:'https://token.actions.githubusercontent.com',aud:'infinity-brain-writer',repository:'www-infinity4/QuantaPhi',repository_id:'1380883643',ref:'refs/heads/main',workflow_ref:'www-infinity4/QuantaPhi/.github/workflows/brain-writer.yml@refs/heads/main',event_name:'schedule',run_id:'123',exp:200,nbf:0};
  assert.equal(checkClaims(c,100),c);
@@ -25,3 +26,14 @@ test('clear patch uniquely edits source and cannot mutate privileged files',asyn
 });
 
 test('explicit production executor cannot be claimed by the narrow interface writer',()=>{assert.equal(supported({repository:'www-infinity4/QuantaPhi',executor:'repository-engine',instructions:'Robot presentation reads source inputs and displays scene buttons',dependencies:[]}),false)});
+
+test('a blocked Greenbeans job and dependent queued Pink Panther ticket do not claim active work',()=>{
+ const blocked=[{id:'TASK-1',status:'blocked',dependencies:[]},{id:'TASK-2',status:'queued',dependencies:['TASK-1']}];
+ assert.equal(ticketStatusFromJobs(blocked),'blocked');
+ assert.equal(ticketStatusFromJobs([{id:'TASK-1',status:'working'},blocked[1]]),'working');
+ assert.equal(ticketStatusFromJobs([{id:'TASK-1',status:'committed_unverified'},blocked[1]]),'working');
+ assert.equal(ticketStatusFromJobs([{id:'TASK-1',status:'complete'},blocked[1]]),'ready');
+ assert.equal(ticketStatusFromJobs([{id:'TASK-1',status:'complete'},{id:'TASK-2',status:'complete'}]),'complete');
+ assert.equal(ticketStatusFromJobs([...blocked,{id:'TASK-3',status:'queued',dependencies:[]}]),'ready');
+ assert.equal(ticketStatusFromJobs([]),'draft');
+});
