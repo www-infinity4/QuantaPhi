@@ -27,6 +27,11 @@ test('research uses the existing Infinity search broker and preserves actual sou
  const result=await researchArticle({request:'research the RadioShack history article',article:{title:'Other website'}},{},{request});
  assert.equal(calls.length,1);assert.equal(result.sources.length,4);assert.match(result.sources[0].provider,/Infinity Phi search/);assert.match(result.sources[0].excerpt,/archive evidence/);assert.equal(result.title,'RadioShack history');
 });
+test('the story I am looking at resolves from the selected article title',async()=>{
+ const request=async()=>Response.json({results:[1,2,3,4].map(n=>({title:'RadioShack history '+n,url:'https://source'+n+'.example/article',content:'RadioShack history'}))});
+ const result=await researchArticle({request:"research article the story I'm looking at",article:{title:'RadioShack history'}},{},{request});
+ assert.equal(result.query,'RadioShack history');
+});
 test('research reads actual pages and related listings, never fabricates token/build receipts',async()=>{
  const calls=[];const request=async url=>{calls.push(url);if(url.startsWith('https://news.google.com/'))return new Response('<rss><item><title>RadioShack history archive</title><link>https://news.google.com/articles/abc</link><pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate><description>RadioShack stores and history</description><source>Archive</source></item></rss>');return new Response('<title>RadioShack history</title><main><p>RadioShack store history</p><a href="/learn/radioshack/">RadioShack history archive</a></main>',{headers:{'content-type':'text/html'}});};
  const r=await researchArticle({request:'research the RadioShack history article',article:{title:'An unrelated page title',url:'https://quantaphi.org/story/',text:'RadioShack store history'}},{},{request});

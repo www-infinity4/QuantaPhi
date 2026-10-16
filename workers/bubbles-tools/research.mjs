@@ -27,7 +27,7 @@ export async function readWebsite(value,request=fetch){
  }
  throw Error('too_many_redirects');
 }
-const stop=new Set('this that with from about story article research website token infinity bubbles looking current read create build related best find'.split(' '));
+const stop=new Set('the and for with from about this that story article research website token infinity bubbles looking current read create build related best find'.split(' '));
 const words=text=>[...new Set(clean(text).toLowerCase().match(/[a-z0-9]{3,}/g)||[])].filter(x=>!stop.has(x));
 export function rankStories(query,items,maximum=6){
  const terms=words(query),seen=new Set(),domains=new Map();
@@ -40,7 +40,7 @@ export function rankStories(query,items,maximum=6){
 export async function researchArticle(body,env,{request=fetch}={}){
  const context=body?.article||{},instruction=clean(body?.request,1500);
  const named=instruction.match(/\b(?:research|investigate|look into)\s+(?:the\s+|an?\s+)?(.{3,200}?)\s+(?:article|story)\b/i)?.[1]?.trim();
- const explicit=named&&!/^(?:this|that|current|screen|web|news|related|best|the)$/i.test(named)?named:'';
+ const explicit=named&&words(named).length&&!/\b(?:this|that|current|looking at|I am|I.m)\b/i.test(named)?named:'';
  let query=explicit||clean(context.title,240)||clean(instruction,240);
  const excerpt=clean(context.text,6500),visited=[],errors=[];
  if(env.AI&&!explicit){try{
