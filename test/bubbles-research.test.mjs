@@ -17,7 +17,8 @@ test('ranking removes irrelevant and duplicate stories and records relevance',()
 });
 test('research reads actual pages and related listings, never fabricates token/build receipts',async()=>{
  const calls=[];const request=async url=>{calls.push(url);if(url.startsWith('https://news.google.com/'))return new Response('<rss><item><title>RadioShack history archive</title><link>https://news.google.com/articles/abc</link><pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate><description>RadioShack stores and history</description><source>Archive</source></item></rss>');return new Response('<title>RadioShack history</title><main><p>RadioShack store history</p><a href="/learn/radioshack/">RadioShack history archive</a></main>',{headers:{'content-type':'text/html'}});};
- const r=await researchArticle({request:'research this story',article:{title:'RadioShack history',url:'https://quantaphi.org/story/',text:'RadioShack store history'}},{},{request});
+ const r=await researchArticle({request:'research the RadioShack history article',article:{title:'An unrelated page title',url:'https://quantaphi.org/story/',text:'RadioShack store history'}},{},{request});
+ assert.equal(r.query,'RadioShack history');
  assert.equal(r.ok,true);assert.ok(calls.some(x=>x.includes('/learn/radioshack/')));assert.ok(r.sources.length>=2);assert.equal(r.receipt.tokenCreated,false);assert.equal(r.receipt.websiteBuilt,false);assert.equal(r.receipt.walletCreditVerified,false);
 });
 test('Infinity handoff requires the exact iframe, origin and packet ID',async()=>{

@@ -26,7 +26,7 @@ export async function runArticleResearch({request,article,fetcher=fetch,storage=
   const receive=event=>{if(event.origin!==view.location.origin||event.source!==frame.contentWindow||event.data?.type!=='infinity:bubbles-research-result'||event.data?.id!==packet.id)return;cleanup();if(event.data.error)reject(Error(event.data.error));else resolve(event.data);};
   view.addEventListener('message',receive);doc.getElementById('ba-research-results')?.remove();
   const container=doc.createElement('div');container.id='ba-research-results';container.append(frame);
-  const target=doc.querySelector('#bubblesAICard .ba-messages')||doc.getElementById('bubblesAICard');if(!target){cleanup();reject(Error('research_view_unavailable'));return;}target.append(container);
+  const target=doc.querySelector('.ba-panel .ba-conversation,.ba-panel .ba-messages')||doc.getElementById('bubblesAICard');if(!target){cleanup();reject(Error('research_view_unavailable'));return;}target.append(container);
  });
  return {packet,receipt,url:url.href};
 }
