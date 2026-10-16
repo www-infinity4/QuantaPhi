@@ -535,7 +535,7 @@ export class BrainClock extends DurableObject{
       if(serialized.length>64000)throw Error('ticket_context_full_receipt_retained_in_clock');
       // Compare-and-swap protects simultaneous owner edits.
       await this.env.WORK_DB.prepare("UPDATE work_tickets SET context_json=?,claimed_by='Purple Pearl / Brain Clock',status=?,updated_at=? WHERE id=? AND context_json=?")
-       .bind(serialized,current.color_jobs.every(j=>j.status==='blocked')?'blocked':'working',Date.now(),ticket.id,fresh.context_json).run();
+       .bind(serialized,ticketStatusFromJobs(current.color_jobs),Date.now(),ticket.id,fresh.context_json).run();
      }
      await this.emit('purple-pearl','greenbeans','progress review','GPT-OSS inspected '+ticket.id+'/'+job.id+'. '+(writerEligible?'Queued for an authenticated repository executor. Credential, test and deployment adapters are checked by that runner; no completion claimed.':'This job needs its own repository/acceptance adapter. The connected brain-interface writer cannot implement this scope.'),'https://github.com/www-infinity4/'+repo);
     }
