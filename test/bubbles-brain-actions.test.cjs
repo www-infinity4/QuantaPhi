@@ -8,6 +8,9 @@ test('repository routing includes new owner repositories and respects explicit t
   assert.equal(repositoryFor('www-infinity4/Channel-Creatir'),'www-infinity4/Channel-Creatir');
   assert.equal(repositoryFor('www-infinity4/HBO'),'www-infinity4/HBO');
   assert.equal(repositoryFor('www-infinity4/TV-Database'),'www-infinity4/TV-Database');
+  assert.equal(repositoryFor('www-infinity4/WidgetPhi'),'www-infinity4/WidgetPhi');
+  assert.equal(repositoryFor('Repair WidgetPhi'),'www-infinity4/WidgetPhi');
+  assert.equal(repositoryFor('Repair Widget Phi'),'www-infinity4/WidgetPhi');
 
   // Explicit token that is NOT allow‑listed must be rejected.
   assert.throws(
@@ -22,6 +25,8 @@ test('repository routing includes new owner repositories and respects explicit t
   // Explicit token takes precedence over incidental aliases.
   const mixed = 'Fix www-infinity4/Channel-Creatir using QuantaPhi and HBO context';
   assert.equal(repositoryFor(mixed), 'www-infinity4/Channel-Creatir');
+  assert.equal(repositoryFor('Fix www-infinity4/WidgetPhi using QuantaPhi and Moltnook context'), 'www-infinity4/WidgetPhi');
+  assert.equal(classify('Fix WidgetPhi'), 'queue');
 });
 
 test('spoken owner instructions dispatch work while explanations remain chat',()=>{
