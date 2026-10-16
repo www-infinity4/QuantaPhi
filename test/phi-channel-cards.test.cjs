@@ -44,3 +44,47 @@ test('Chiller slot schedule and feature weekend are stable across page refresh',
  assert.equal(p.start,600);
  assert.deepEqual(programs.chillerSchedule(d).map(x=>x.videoId),programs.chillerSchedule(d).map(x=>x.videoId));
 });
+
+test('one active TV screen can be played and switched with genuine media elements',()=>{
+ class Element{
+  constructor(tag){this.tagName=tag;this.children=[];this.handlers={};this.attributes={};this.className='';this.hidden=false;this.textContent='';this.classList={add:x=>this.className+=' '+x,remove:x=>this.className=this.className.replace(' '+x,'')};}
+  appendChild(n){this.children.push(n);return n}append(...nodes){nodes.forEach(n=>this.appendChild(n))}
+  replaceChildren(){this.children=[]}setAttribute(k,v){this.attributes[k]=v}
+  removeAttribute(k){delete this.attributes[k]}addEventListener(t,f){this.handlers[t]=f}
+  click(){this.handlers.click?.()}focus(){this.focused=true}
+  load(){}pause(){}play(){return Promise.resolve()}canPlayType(){return 'maybe'}
+ }
+ const root=new Element('section'),listeners={};
+ const document={getElementById:id=>id==='phiChannelCards'?root:null,createElement:tag=>new Element(tag),
+  head:new Element('head'),addEventListener:(kind,callback)=>listeners[kind]=callback,hidden:false};
+ const window={PhiTVPrograms:programs,YT:{Player:class{stopVideo(){}destroy(){}unMute(){}setVolume(){}playVideo(){}}},
+  addEventListener:(kind,cb)=>listeners[kind]=cb};
+ const context={document,window,location:{origin:'https://quantaphi.org'},URL,setTimeout,clearTimeout};
+ vm.runInNewContext(code,context);
+ const all=n=>[n,...n.children.flatMap(all)];
+ const cards=all(root).filter(n=>n.tagName==='article');
+ assert.equal(cards.length,4);
+ const star=cards[0],omni=cards[1],chiller=cards[2],shop=cards[3];
+ const btn=(card,c)=>all(card).find(n=>n.className===c);
+ btn(star,'channelphi-screen').click();
+ const f1=all(root).filter(x=>x.tagName==='iframe');assert.equal(f1.length,1);
+ assert.match(f1[0].src,/youtube-nocookie.com\/embed\/[A-Za-z0-9_-]{11}/);
+ assert.doesNotMatch(f1[0].src,/\/omni-tv\/|\/TV-Database\/|\/Chiller\//);
+ btn(chiller,'channelphi-screen').click();
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
+ assert.equal(btn(star,'channelphi-screen').hidden,false);
+ btn(shop,'channelphi-screen').click();
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,0);
+ const videos=all(root).filter(x=>x.tagName==='video');assert.equal(videos.length,1);
+ assert.equal(videos[0].muted,false);assert.equal(videos[0].volume,1);
+ assert.match(videos[0].src,/master\.m3u8/);
+ btn(omni,'channelphi-screen').click();
+ btn(omni,'channelphi-next').click();
+ assert.match(btn(omni,'channelphi-now').textContent,/Unlocked Window|Night Caller|Revenge|Alfred Hitchcock|Little Peace|Nightcrawlers|Examination|Message from Charity|Blackmail/);
+ btn(omni,'channelphi-next').click();
+ assert.match(btn(omni,'channelphi-now').textContent,/Shop LC/);
+ btn(omni,'channelphi-next').click();
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
+ listeners['oracle:card-deactivated']({detail:{id:'phiChannelCards'}});
+ assert.equal(all(root).filter(x=>x.tagName==='iframe'||x.tagName==='video').length,0);
+});
