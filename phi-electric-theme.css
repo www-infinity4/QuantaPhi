@@ -219,3 +219,7 @@ body{background:radial-gradient(ellipse at 50% -6%,#c9a5ff3d,transparent 44%),li
 #result:has(> #infiniteBook) {overflow:visible}
 #infiniteBook[data-context="search"] .ib-head{margin-top:13px}
 @media(max-width:390px){#infiniteBook[data-context="home"] .ib-asteroid-hero,#infiniteBook[data-context="home"] .ib-asteroid-copy{min-height:150px}}
+
+/* Asteroid means a striking story, not an astronomy requirement or a rock poster. */
+#infiniteBook[data-context="search"] .ib-asteroid-rock{display:none!important}
+#infiniteBook[data-context="search"] .ib-asteroid-hero{background:linear-gradient(135deg,#3f164b,#a3323a 56%,#d47c2a)!important}
