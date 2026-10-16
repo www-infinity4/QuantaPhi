@@ -227,3 +227,15 @@ test('reply actions take notes and prepare work without sending unapproved robot
  assert.equal(values.has('quantaphi:bubbles:history:v1:work-cards'),false);
  assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'clearing chat never destroys notes');
 });
+
+test('Vertigo Macro Zoom maps actual controls without fake permission or local notes resurrection',()=>{
+ const js=source('bubbles-ai.js'),css=source('bubbles-ai.css');
+ assert.match(js,/DJ Vertigo · Macro Zoom/);
+ assert.match(js,/settingsMap=\[/);
+ assert.match(js,/locate\(\)/);
+ assert.match(js,/Switch the main Bubbles role/);
+ assert.match(js,/notes=\[\];renderNotes\(\)/);
+ assert.match(js,/window\.confirm\('Delete only the device-local Bubbles notes/);
+ assert.doesNotMatch(js,/Android settings successfully changed|phone storage cleared/);
+ assert.match(css,/\.ba-macro-role/);
+});
