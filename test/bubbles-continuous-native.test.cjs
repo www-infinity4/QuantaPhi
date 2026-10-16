@@ -91,7 +91,9 @@ test('offline speech requires microphone energy and drops long code-like loops',
   assert.match(gate,/repeats >= 4/);
   assert.match(gate,/\[0-9a-f\]\{32,\}/);
   assert.match(source,/SpeechTranscriptGate\.plausible\(transcript, voicedMillis\)/);
-  assert.match(source,/voicedSamples = 0L/);
+  assert.match(source,/energyEvidence\.reset\(\)/);
+  assert.match(source,/energyEvidence\.observe\(level, count\)/);
+  assert.match(source,/energyEvidence\.takeVoicedMillis\(\)/);
 });
 
 test('continuous foreground microphone accepts real speech without wake-word cutoff', () => {
