@@ -5,7 +5,7 @@ const site=source('bubbles-ai.js');
 const native=source('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BubblesService.java');
 const floating=source('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/FloatingOracleWindow.java');
 test('native speech is buffered until a full utterance; echoes are suppressed after reply',()=>{
- assert.match(native,/END_OF_TURN_MS = 1650L/);
+ assert.match(native,/END_OF_TURN_MS = 850L/);
  assert.match(native,/turnBuffer\.append\(transcript\)/);
  assert.match(native,/main\.postDelayed\(deliverVoiceTurn, END_OF_TURN_MS\)/);
  assert.match(native,/SystemClock\.elapsedRealtime\(\) < echoQuietUntil/);
