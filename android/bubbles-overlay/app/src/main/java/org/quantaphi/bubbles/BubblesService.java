@@ -138,6 +138,8 @@ public final class BubblesService extends Service {
     private boolean modelLoading = false;
     private boolean ttsReady = false;
     private TextToSpeech tts;
+    // Ignore asynchronous initialization from a replaced speech engine.
+    private long ttsEngineGeneration = 0L;
     private volatile boolean connected = false, muted = false, speaking = false;
     private boolean busy = false;
     private boolean screenSharing = false;
@@ -193,12 +195,23 @@ public final class BubblesService extends Service {
 
     /** Changing voices never changes microphone consent or the speech recognizer. */
     private void reloadSpeechEngine() {
+        final long engineGeneration = ++ttsEngineGeneration;
         ttsReady = false;
         TextToSpeech previous = tts;
         tts = null;
         if (previous != null) { previous.stop(); previous.shutdown(); }
         tts = new TextToSpeech(this, result -> main.post(() -> {
-            if (tts == null || result != TextToSpeech.SUCCESS) return;
+            // Android TTS may finish initializing after a newer engine was
+            // selected. The old callback must not configure the new engine.
+            if (engineGeneration != ttsEngineGeneration || tts == null) return;
+            if (result != TextToSpeech.SUCCESS) {
+                pendingWebsiteSpeech.clear(); // The text is still in website chat.
+                BrainNotes.prefs(this).edit().putString("last_error",
+                    "Android speech engine could not initialize; choose an installed voice").apply();
+                if (connected && !muted) state("error", 0);
+                return;
+            }
+            try {
             String savedName = getSharedPreferences(BubblesVoicePicker.PREFS, MODE_PRIVATE)
                 .getString(BubblesVoicePicker.VOICE_NAME, "");
             String savedEngine = getSharedPreferences(BubblesVoicePicker.PREFS, MODE_PRIVATE)
@@ -238,6 +251,13 @@ public final class BubblesService extends Service {
             });
             ttsReady = true;
             main.post(this::drainWebsiteSpeech);
+            } catch (RuntimeException error) {
+                ttsReady = false;
+                pendingWebsiteSpeech.clear();
+                BrainNotes.prefs(this).edit().putString("last_error",
+                    "Android speech setup failed: " + error.getClass().getSimpleName()).apply();
+                if (connected && !muted) state("error", 0);
+            }
         }));
     }
 
@@ -984,8 +1004,22 @@ public final class BubblesService extends Service {
             }
         }, 90000);
         state("speaking", .4f);
-        int result = tts.speak(response, TextToSpeech.QUEUE_FLUSH, null, utterance);
-        if (result == TextToSpeech.ERROR) finishSpeaking(utterance);
+        try {
+            int result = tts.speak(response, TextToSpeech.QUEUE_FLUSH, null, utterance);
+            if (result == TextToSpeech.ERROR) {
+                finishSpeaking(utterance);
+                BrainNotes.prefs(this).edit().putString("last_error",
+                    "Android speech engine rejected playback; text is still in chat").apply();
+                state("error", 0);
+            }
+        } catch (RuntimeException error) {
+            // Without this, the speaking flag blocks every later reply until
+            // the 90-second watchdog, even though the engine threw immediately.
+            finishSpeaking(utterance);
+            BrainNotes.prefs(this).edit().putString("last_error",
+                "Android speech playback failed: " + error.getClass().getSimpleName()).apply();
+            state("error", 0);
+        }
     }
 
     @Override public IBinder onBind(Intent intent) {return null;}
