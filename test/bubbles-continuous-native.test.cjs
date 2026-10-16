@@ -15,7 +15,8 @@ test('continuous microphone replaces restart-driven platform recognition', () =>
 test('speaking does not stop microphone capture; echo is discarded locally', () => {
   const speak = source.slice(source.indexOf('private void speak('), source.indexOf('@Override public IBinder'));
   assert.doesNotMatch(speak, /stopRecognition\(|microphone\.(?:stop|release)\(/);
-  assert.match(source, /if \(speaking \|\| SystemClock\.elapsedRealtime\(\) < echoQuietUntil\) \{[\s\S]*?speech\.reset\(\);[\s\S]*?continue;/);
+  assert.match(source, /if \(speaking\) \{[\s\S]*?speech\.reset\(\);[\s\S]*?continue;/);
+  assert.match(source, /if \(SystemClock\.elapsedRealtime\(\) < echoQuietUntil\) \{/);
 });
 test('explicit mute and service stop release microphone', () => {
   assert.match(source, /private void muteSession\(\) \{[\s\S]*?stopRecognition\(\)/);
@@ -93,18 +94,20 @@ test('offline speech requires microphone energy and drops long code-like loops',
   assert.match(source,/voicedSamples = 0L/);
 });
 
-test('idle speech never appears as a user turn without wake name or deliberate tap', () => {
+test('continuous foreground microphone accepts real speech without wake-word cutoff', () => {
   const start=source.indexOf('private void heard(String raw, boolean typed)');
   const end=source.indexOf('private void offerCaptureApproval',start);
   const heard=source.slice(start,end);
-  assert.match(heard,/if \(!typed\) \{/);
-  assert.match(heard,/if \(directed\)/);
-  assert.match(heard,/now >= activeUntil \|\| \+\+voiceFollowups > MAX_VOICE_FOLLOWUPS/);
-  assert.ok(heard.indexOf('voiceFollowups > MAX_VOICE_FOLLOWUPS') < heard.indexOf('putString("last_heard", text)'));
-  assert.match(source,/MAX_VOICE_FOLLOWUPS = 4/);
-  assert.match(source,/activeUntil = SystemClock\.elapsedRealtime\(\) \+ 30000L/);
+  assert.match(source,/SpeechTranscriptGate\.plausible\(transcript, voicedMillis\)/);
+  assert.doesNotMatch(heard,/voiceFollowups > MAX_VOICE_FOLLOWUPS/);
+  assert.doesNotMatch(heard,/now >= activeUntil/);
+  assert.match(heard,/putString\("last_heard", text\)/);
   assert.match(source,/heard\(text, true\)/);
-  assert.doesNotMatch(heard,/lastAt = now;activeUntil = now \+ 30000L/);
+});
+test('speech stops on sustained human interruption rather than a mic button', () => {
+  assert.match(source,/AcousticEchoCanceler\.isAvailable\(\)/);
+  assert.match(source,/if \(interruptionFrames >= 5\)/);
+  assert.match(source,/silenceReply\(\);[\s\S]*?echoQuietUntil = SystemClock\.elapsedRealtime\(\) \+ 120L/);
 });
 
 test('Android WebView cannot activate a second browser microphone', () => {
