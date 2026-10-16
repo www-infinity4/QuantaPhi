@@ -26,6 +26,8 @@ test('Asteroid search is entity-first and rejects stories not supported by its s
  assert.match(code,/storyKind==='asteroid' && roll\.quantFocus/);
  assert.match(code,/!matched\.some\(source=>mention\(source\.title/);
  assert.match(code,/Asteroid is a metaphor for investigating the current search/);
+ assert.match(code,/ASTEROID IMPACT EDITION/);
+ assert.match(code,/NEVER write about literal asteroids/);
 });
 test('reader static route has its own canonical path',()=>{
  const router=load('workers/quantaphi-site/worker.js');
