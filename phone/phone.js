@@ -73,10 +73,28 @@ async function api(alias,path,method='GET',data=null,credentials={}){
  if(!response.ok||!result.ok)throw Error(result.error||'switchboard_unavailable');
  return result;
 }
+function renderInfinitySignal(reachable){
+ const label=$('infinity-signal'),detail=$('infinity-link-details');
+ if(!label||!detail)return;
+ label.classList.toggle('reachable',reachable===true);
+ label.classList.toggle('unreachable',reachable===false);
+ label.textContent=reachable===true?'INFINITY · Portal connected':'INFINITY · Portal unreachable';
+ detail.textContent=reachable===true
+  ?'QuantaPhi is reachable over your current Internet connection; carrier LTE access is separate.'
+  :'This browser cannot reach the Infinity portal. Dial codes can still be entered, but live pages require an Internet path.';
+}
 async function checkHealth(){
- try{const r=await fetch(BASE+'/health',{cache:'no-store'});if(!r.ok)throw Error();
+ try{
+  const response=await fetch(BASE+'/health',{cache:'no-store',signal:AbortSignal.timeout(8000)});
+  if(!response.ok)throw Error('gateway_unavailable');
+  const health=await response.json();
+  if(!health.ok||health.service!=='infinity-platinum-switchboard')throw Error('invalid_gateway');
+  renderInfinitySignal(true);
   say(me?'Switchboard connected. Keep this page open to receive calls.':'Switchboard online. Create your Platinum web line to make or receive internet calls.');
- }catch{say('Switchboard is unavailable. Your drafts and saved address remain on this device.',true)}
+ }catch{
+  renderInfinitySignal(false);
+  say('Switchboard is unavailable. Your drafts and saved address remain on this device.',true);
+ }
 }
 $('register-form').addEventListener('submit',async e=>{
  e.preventDefault();const alias=$('alias').value.trim().toLowerCase();
@@ -320,5 +338,8 @@ else if(path){$('dial').value=path[1];$('dial').dispatchEvent(new Event('input')
 else{const phone=new URL(location.href).searchParams.get('dial');if(phone&&phone.length<=30){$('dial').value=phone;$('dial').dispatchEvent(new Event('input'))}}
 if(me&&(!validAlias(me.alias)||!/^[a-f0-9]{64}$/.test(me.secret)))me=null;
 updateIdentity();legacyRender();checkHealth();startWatch();
-document.addEventListener('visibilitychange',()=>{if(!document.hidden&&me)watch()});
+window.addEventListener('offline',()=>renderInfinitySignal(false));
+window.addEventListener('online',()=>{if(!document.hidden)checkHealth()});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden){checkHealth();if(me)watch()}});
+setInterval(()=>{if(!document.hidden)checkHealth()},30000);
 })();
