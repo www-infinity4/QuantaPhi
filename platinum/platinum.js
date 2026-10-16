@@ -142,10 +142,29 @@ function imagePreview(file){
   img.src=source;
  });
 }
+function searchLocalShelf(query){
+ const term=String(query||'').trim().toLowerCase();
+ let count=0;
+ for(const tile of tiles.querySelectorAll('article.pl-tile')){
+  const hit=!term||tile.textContent.toLowerCase().includes(term);
+  tile.hidden=!hit;
+  if(hit)count++;
+ }
+ empty.hidden=core.read().length>0;
+ say(count
+  ?('Offline local shelf: '+count+' saved website record'+(count===1?'':'s')+' match. Live websites and AI answers are unavailable without Internet.')
+  :'No saved Platinum tiles match locally. Live web search needs an Internet connection.');
+}
 $('pl-open-form').addEventListener('submit',event=>{
  event.preventDefault();
  const action=core.destination(address.value);
  if(!action){say('Enter a real web address or a search topic. Unsafe URL schemes are blocked.');return}
+ if(navigator.onLine===false){
+  if(action.type==='search')searchLocalShelf(action.query);
+  else say('That website is not cached. You can still edit saved tiles and projects while offline.');
+  return;
+ }
+ for(const tile of tiles.querySelectorAll('article.pl-tile'))tile.hidden=false;
  launch(action.url,action.query||action.url);
 });
 $('pl-new').addEventListener('click',()=>openEditor());
@@ -210,5 +229,7 @@ if(collected&&collected.length<2050&&core.validUrl(collected)){
  address.value=collected;
  say('Website link received. Select Save website or Collect to keep it; nothing has been collected automatically.');
 }
+window.addEventListener('online',()=>{for(const tile of tiles.querySelectorAll('article.pl-tile'))tile.hidden=false});
+window.addEventListener('offline',()=>say('Platinum offline: saved tiles, projects and notes remain available. Search the local shelf; live QuantaPhi/Bubbles and website content need a network.'));
 refresh();
 })();
