@@ -113,3 +113,10 @@ test('Android WebView cannot activate a second browser microphone', () => {
   assert.match(site,/async function startVoice\(\)\{[\s\S]*?if\(nativeOverlay\)\{/);
   assert.match(site,/function heardTranscript\(transcript\)\{[\s\S]*?if\(nativeOverlay\|\|!voiceEnabled/);
 });
+
+test('a short orb tap resumes recognition after long-press mute', () => {
+  const tap = source.slice(source.indexOf('@Override public boolean onTouchEvent(MotionEvent e)'));
+  assert.match(tap, /if\s*\(muted\)\s*resumeSession\(\);/);
+  assert.ok(tap.indexOf('if (muted) resumeSession();') < tap.indexOf('activeUntil = SystemClock.elapsedRealtime() + 30000L'));
+  assert.match(source, /private void resumeSession\(\)[\s\S]*?muted = false;[\s\S]*?beginListening\(\);/);
+});

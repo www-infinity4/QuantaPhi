@@ -1091,6 +1091,7 @@ public final class BubblesService extends Service {
                             muteSession();
                             Toast.makeText(BubblesService.this,"Bubbles muted. Tap to reconnect.",Toast.LENGTH_SHORT).show();
                         } else {
+                            if (muted) resumeSession();
                             if (speaking) silenceReply();
                             // A physical tap deliberately opens a short listening window.
                             activeUntil = SystemClock.elapsedRealtime() + 30000L;
