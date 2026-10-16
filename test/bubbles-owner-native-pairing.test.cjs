@@ -36,3 +36,21 @@ test('native read-aloud queues phone voice rather than browser voice',()=>{
  assert.match(site,/if\(nativeOverlay\)nativeSpeechReply=String\(text\)\.slice\(0,2200\)/);
  assert.match(site,/else speakText\(text\)/);
 });
+test('Omni verified-owner reply continuity overrides fabricated pairing-code requirements only',()=>{
+ const vm=require('node:vm');
+ const start=site.indexOf('function normalizeOwnerAssistantReply('),stop=site.indexOf('function isOwnerWorkRequest(',start);
+ assert.ok(start>0&&stop>start);
+ const normalize=vm.runInNewContext(site.slice(start,stop)+'\nnormalizeOwnerAssistantReply;',Object.create(null));
+ const falseBlock="I'm still blocked; I need the 64-character one-time pairing code from the Bubbles app. Please paste it.";
+ const corrected=normalize(falseBlock,'repair the site',true);
+ assert.match(corrected,/already connected/i);
+ assert.match(corrected,/do not need another pairing code/i);
+ assert.doesNotMatch(corrected,/still blocked|please paste it/i);
+ const normal='Owner tool is connected. No job has run yet.';
+ assert.equal(normalize(normal,'report status',true),normal);
+ assert.equal(normalize(falseBlock,'repair the site',false),falseBlock);
+ const deviceReply='To link another phone, paste its one-time pairing code.';
+ assert.equal(normalize(deviceReply,'Please pair another phone',true),deviceReply);
+ assert.match(site,/const answer=normalizeOwnerAssistantReply\(rawAnswer,request,ownerReady&&Boolean\(ownerHeaders\?\.Authorization\)\)/);
+ assert.ok(site.indexOf('if(workEvidence){')<site.indexOf('const rawAnswer=extract(json)'), 'authoritative work receipts return first');
+});
