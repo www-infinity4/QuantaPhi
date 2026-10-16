@@ -1,6 +1,7 @@
 const clean=(value,max=5000)=>String(value||'').replace(/\s+/g,' ').trim().slice(0,max);
 const decode=value=>String(value||'').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g,'$1').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&apos;/g,"'").replace(/&nbsp;/g,' ');
 export function websiteUrl(value,base='https://quantaphi.org/'){
+ if(typeof value!=='string'||!value.trim())return null;
  try{const u=new URL(value,base);if(u.protocol!=='https:'||!['quantaphi.org','www.quantaphi.org'].includes(u.hostname)||u.username||u.password||u.port||/\/(?:api|wallet|profile|owner|auth|downloads)(?:\/|$)/i.test(u.pathname)||[...u.searchParams.keys()].some(k=>/token|secret|password|authorization|code|session|key/i.test(k)))return null;u.hash='';return u.href;}catch{return null;}
 }
 async function boundedText(response){

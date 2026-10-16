@@ -8,7 +8,7 @@ test('article requests are actions while source repairs stay engineering orders'
  assert.equal(isArticleResearchRequest('fix the article research adapter'),false);
 });
 test('website reader restricts origins and validates every redirect',async()=>{
- for(const url of ['https://127.0.0.1/','https://quantaphi.org.evil.test/','http://quantaphi.org/','https://quantaphi.org/owner/key'])assert.equal(websiteUrl(url),null);
+ for(const url of ['',undefined,'https://127.0.0.1/','https://quantaphi.org.evil.test/','http://quantaphi.org/','https://quantaphi.org/owner/key','https://quantaphi.org/story/?token=private'])assert.equal(websiteUrl(url),null);
  await assert.rejects(()=>readWebsite('https://quantaphi.org/story/',async()=>new Response('',{status:302,headers:{location:'https://internal.test/'}})),/redirect_not_allowed/);
 });
 test('ranking removes irrelevant and duplicate stories and records relevance',()=>{
