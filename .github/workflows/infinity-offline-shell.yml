@@ -1,0 +1,32 @@
+name: Infinity offline shell and local shelf verification
+on:
+  pull_request:
+    paths:
+      - "platinum/**"
+      - "phone/**"
+      - "test/infinity-offline-shell.test.cjs"
+      - ".github/workflows/infinity-offline-shell.yml"
+  push:
+    branches: [main]
+    paths:
+      - "platinum/**"
+      - "phone/**"
+      - "test/infinity-offline-shell.test.cjs"
+      - ".github/workflows/infinity-offline-shell.yml"
+jobs:
+  safe-offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Syntax and installation policies
+        run: |
+          node --check platinum/offline-sw.js
+          node --check phone/offline-sw.js
+          node --check platinum/platinum.js
+          node --test test/infinity-offline-shell.test.cjs
+      - name: Regression checks for existing Platinum browser and Phone
+        run: |
+          node --test test/infinity-platinum.test.cjs test/infinity-quickdial.test.cjs test/platinum-phone.test.cjs
