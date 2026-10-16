@@ -1076,6 +1076,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const result=await module.runArticleResearch({request,article,onStatus:text=>{status.textContent=text;}});
    workEvidence='Article research completed with '+result.packet.sources.length+' ranked sources. Infinity Phi confirmed search token '+result.receipt.tokenId+'. Website builder: '+result.receipt.websiteStatus+'. Wallet credit requires its own ledger receipt.\n'+result.url+'\n'+result.receipt.websiteUrl;
   }catch(error){workEvidence='Article research did not confirm the complete Infinity Phi handoff: '+String(error.message||error).slice(0,220)+'. No website or wallet credit is being claimed.';}
+  display(workEvidence,'ai');messages.push({role:'assistant',text:workEvidence});persistChat();status.textContent=workEvidence;
+  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=workEvidence;else if(config.voice&&!nativeOverlay)speakText(workEvidence);
+  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');
+  if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
+  return;
  }
  else if(!embedded&&(directRequest||githubCheck||createRepository)){
   const named=request.match(/\bwww-infinity4\/[A-Za-z0-9_.-]+\b/);
