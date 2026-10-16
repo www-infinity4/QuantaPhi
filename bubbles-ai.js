@@ -1064,17 +1064,19 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  messages.push({role:'user',text:request});messages=messages.slice(-400);persistChat();
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
+ const createRepository=/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request);
  const directRequest=/^(?:please\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
  const githubCheck=/^(?:please\s+)?(?:check|show|inspect)\s+(?:my\s+)?github\s+(?:access|tools|permissions|connection)[.!?]*$/i.test(request);
- if(!embedded&&(directRequest||githubCheck)){
+ if(!embedded&&(directRequest||githubCheck||createRepository)){
   const named=request.match(/\bwww-infinity4\/[A-Za-z0-9_.-]+\b/);
-  const repository=named?.[0]||(/\b(?:bubbles|quantaphi)\b/i.test(request)||githubCheck?'www-infinity4/QuantaPhi':'');
+  const repoName=createRepository?request.match(/(?:repo(?:sitory)?\s+(?:called|named)\s+)([A-Za-z0-9_.-]+)/i)?.[1]:'';
+  const repository=named?.[0]||(repoName?'www-infinity4/'+repoName:!createRepository&&(/\b(?:bubbles|quantaphi)\b/i.test(request)||githubCheck)?'www-infinity4/QuantaPhi':'');
   if(!repository)workEvidence='Direct GitHub needs the repository name in this request, such as www-infinity4/QuantaPhi.';
   else try{
    status.textContent='Checking the direct GitHub connection. Actual receipts will also appear in the color-bot feed.';
    const mode=/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request)?'actions':/\b(?:fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
-   const result=await directGithubOperation({action:githubCheck?'capabilities':'assist',repository,request,mode});
-   workEvidence='Direct GitHub: '+(result.status||'unknown')+'. '+(result.error||result.summary||'')+(result.next?' '+result.next:'');
+   const result=await directGithubOperation({action:createRepository?'create_repository':githubCheck?'capabilities':'assist',repository,request,description:request,mode});
+   workEvidence='Direct GitHub: '+(result.status||'unknown')+'. '+(result.error||result.summary||'')+(result.next?' '+result.next:'')+(result.url?'\n'+result.url:'');
    for(const receipt of result.receipts||[])if(receipt.url)workEvidence+='\n'+receipt.status+': '+receipt.url;
    workEvidence+='\nRequest '+result.requestId+'. Testing, merge and deployment require their own verified receipts.';
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
@@ -1114,7 +1116,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
- 'You have NO independent GitHub write authorization or access to ChatGPT/Claude subscriptions. Only confirmed owner-submitted Robot Brain tickets count as queued; never claim a repository change occurred without tool evidence.',
+ 'GitHub work runs through the owner-authenticated direct adapter or color-bot runner using the existing owner key. Do not claim credentials are absent without a current tool result. Only real tool receipts prove repository creation, code writes, Actions, tests, merges or deployment; ChatGPT subscriptions do not grant GitHub access.',
  'Keep the owner on QuantaPhi. Never invent a navigation destination. If a real evidence URL is available, include its full https URL in text so the interface can make it clickable. Explain work states in plain English: waiting, working, blocked, or finished with proof.',
  'When the work receipt says ready or queued, submission is already complete. Never tell the owner to click a submit, run, publish or finish button. The authorized runner handles execution. Report recorded blockers honestly; never invent a missing control or claim a repair is complete.',
  'Actual authorized work result:\n'+workEvidence,'Latest user message:\n'+request,

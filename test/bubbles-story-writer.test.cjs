@@ -57,7 +57,7 @@ test('Bubbles has real AI chat and opt-in browser speech rather than simulated r
 test('Bubbles never impersonates account sign-in or grants unverified repository rights',()=>{
  const code=source('bubbles-ai.js');
  assert.match(code,/Official website ChatGPT sign-in requires partner registration/);
- assert.match(code,/You have NO independent GitHub write authorization/);
+ assert.match(code,/Only real tool receipts prove repository creation, code writes, Actions, tests, merges or deployment/);
  assert.match(code,/const headers=window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready:null/);
  assert.match(code,/if\(!headers\?\.Authorization\)return/);
  assert.match(code,/if\(embedded\)throw Error\('Guest embed bubbles cannot access the owner Robot Brain\.'\)/);
@@ -66,7 +66,7 @@ test('Bubbles never impersonates account sign-in or grants unverified repository
  assert.match(code,/context:\{kind:'robot-directions'/);
  assert.match(code,/approval='explicit-click'/);
  assert.match(code,/No confirmed ticket/);
- assert.match(code,/Only confirmed owner-submitted Robot Brain tickets count as queued/);
+ assert.match(code,/Only real tool receipts prove repository creation/);
  assert.doesNotMatch(code,/github\.com\/login\/oauth\/authorize\?/);
  assert.doesNotMatch(code,/https:\/\/api\.github\.com\/repos\/.*\/contents/);
  assert.doesNotMatch(code,/ANTHROPIC_API_KEY|OPENAI_API_KEY|ghp_/);
