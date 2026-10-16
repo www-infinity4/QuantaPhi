@@ -3,12 +3,16 @@
 <meta name="theme-color" content="#edf0f4"><title>Infinity Platinum Phone | Web Address Calling</title>
 <meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
 <meta name="description" content="Your own web-address phone line, reached from Infinity Platinum. Internet calls without a traditional phone number.">
-<link rel="stylesheet" href="/phone/phone.css?v=20261015-infinitysignal1"></head>
+<link rel="stylesheet" href="/phone/phone.css?v=20261015-offline1"></head>
 <body><main class="phone-shell">
 <header class="phone-top"><a href="/platinum/">← Infinity Platinum</a><span class="brand">Pt · INFINITY PLATINUM PHONE</span></header>
 <h1>Your website.<br><span>Your phone line.</span></h1>
 <p class="lead">People call your web address. Infinity Switchboard rings the website you own. Voice and optional video travel over your current Wi-Fi or mobile data connection.</p>
 <div id="app-message" class="message" role="status" aria-live="polite">Checking the Infinity Switchboard connection…</div>
+<div class="phone-offline-status" role="status" aria-live="polite">
+ <strong id="offline-shell-status">INFINITY · Preparing the offline interface</strong>
+ <span>After its first online installation, this phone interface and locally saved drafts can open offline. Live ringing, audio/video, Bubbles and Internet search still require a real data connection.</span>
+</div>
 <div class="infinity-status" role="status" aria-live="polite">
  <strong id="infinity-signal">INFINITY · Checking connection</strong>
  <span id="infinity-link-details">Checking QuantaPhi over the phone's existing Internet connection…</span>
@@ -66,4 +70,34 @@
 <section class="panel"><h2>Don't lose your words</h2><p>Anything you type below is restored locally if you switch websites or return to Platinum. It is not sent to the switchboard or another user.</p>
 <label for="phone-draft">Your ideas / notes</label><textarea id="phone-draft" rows="6" maxlength="100000" placeholder="Write your ideas here…"></textarea><p id="draft-state" class="small">Stored on this device only.</p></section>
 <footer>Infinity 2026® · Infinity Platinum Phone · Internet calling preview · Requires existing internet access · Not an emergency telephone service</footer>
-</main><script src="/phone/quickdial.js?v=20261015-infinitysignal1"></script><script src="/phone/phone.js?v=20261015-infinitysignal1"></script></body></html>
+</main><script src="/phone/quickdial.js?v=20261015-infinitysignal1"></script><script src="/phone/phone.js?v=20261015-infinitysignal1"></script>
+<script>
+(function(){
+ 'use strict';
+ const badge=document.getElementById('offline-shell-status');
+ if(!badge)return;
+ const scope="/phone/";
+ function present(stage){
+  const connected=navigator.onLine!==false;
+  badge.textContent=stage==='ready'
+   ?(connected?'INFINITY · Offline-ready shell saved on this device':'INFINITY · Offline shell · saved local tools only')
+   :(connected?'INFINITY · Preparing the offline interface':'INFINITY · No Internet; local shell may not be installed yet');
+ }
+ present('pending');
+ if(!('serviceWorker' in navigator)||!window.isSecureContext){
+  badge.textContent='Offline installation unavailable in this browser';
+  return;
+ }
+ // An already installed worker can boot the page with the radio off.
+ if(navigator.onLine===false && navigator.serviceWorker.controller){present('ready');return;}
+ navigator.serviceWorker.register(scope+'offline-sw.js',{scope}).then(async()=>{
+  await navigator.serviceWorker.ready;
+  present('ready');
+ }).catch(()=>{
+  badge.textContent='Offline shell not installed. Open this page online to retry.';
+ });
+ window.addEventListener('online',()=>present('ready'));
+ window.addEventListener('offline',()=>present('ready'));
+})();
+</script>
+</body></html>

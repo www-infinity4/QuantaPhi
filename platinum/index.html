@@ -5,11 +5,15 @@
 <meta name="theme-color" content="#eeeef0">
 <meta name="description" content="Infinity Platinum turns cluttered browsing into saved visual destinations and Code Phi projects.">
 <link rel="canonical" href="https://quantaphi.org/platinum/index.html">
-<link rel="stylesheet" href="/platinum/platinum.css?v=20261014-platinum1">
+<link rel="stylesheet" href="/platinum/platinum.css?v=20261015-offline1">
 </head>
 <body><main class="pl-shell">
 <header class="pl-top"><a href="/" class="pl-back">← QuantaPhi</a><div class="pl-brand"><span aria-hidden="true" class="pl-mark">Pt</span><div><p class="pl-eyebrow">INFINITY 2026® · ORACLE OCTAVES</p><h1>Infinity <span>Platinum</span></h1></div></div></header>
 <p class="pl-lead">Browse. Collect. Create. <span>Keep what matters; leave the clutter behind.</span></p>
+<div class="pl-offline-status" role="status" aria-live="polite">
+ <strong id="offline-shell-status">INFINITY · Preparing the offline interface</strong>
+ <p>Your saved Platinum tiles and local projects can work offline <em>after this interface is installed while online</em>. Live QuantaPhi, Bubbles AI, Robot Brain, calls and third-party sites still need Internet.</p>
+</div>
 <section class="pl-find" aria-label="Open a site or search">
  <form id="pl-open-form" autocomplete="off"><label for="pl-address">Open a website or search QuantaPhi</label>
  <div class="pl-bar"><input id="pl-address" name="address" type="text" inputmode="url" placeholder="Website address or search…" maxlength="2048" autocapitalize="off" spellcheck="false" required>
@@ -37,5 +41,35 @@
 </main>
 <script src="/phi-project-package.js?v=20261012-action1"></script>
 <script src="/platinum/core.js?v=20261014-platinum1"></script>
-<script src="/platinum/platinum.js?v=20261014-platinum1"></script>
+<script src="/platinum/platinum.js?v=20261015-offline1"></script>
+
+<script>
+(function(){
+ 'use strict';
+ const badge=document.getElementById('offline-shell-status');
+ if(!badge)return;
+ const scope="/platinum/";
+ function present(stage){
+  const connected=navigator.onLine!==false;
+  badge.textContent=stage==='ready'
+   ?(connected?'INFINITY · Offline-ready shell saved on this device':'INFINITY · Offline shell · saved local tools only')
+   :(connected?'INFINITY · Preparing the offline interface':'INFINITY · No Internet; local shell may not be installed yet');
+ }
+ present('pending');
+ if(!('serviceWorker' in navigator)||!window.isSecureContext){
+  badge.textContent='Offline installation unavailable in this browser';
+  return;
+ }
+ // An already installed worker can boot the page with the radio off.
+ if(navigator.onLine===false && navigator.serviceWorker.controller){present('ready');return;}
+ navigator.serviceWorker.register(scope+'offline-sw.js',{scope}).then(async()=>{
+  await navigator.serviceWorker.ready;
+  present('ready');
+ }).catch(()=>{
+  badge.textContent='Offline shell not installed. Open this page online to retry.';
+ });
+ window.addEventListener('online',()=>present('ready'));
+ window.addEventListener('offline',()=>present('ready'));
+})();
+</script>
 </body></html>
