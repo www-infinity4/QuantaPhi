@@ -67,6 +67,7 @@ test('queued owner job gets real inspection and Purple review once without fabri
   const clock=new BrainClock({storage},env);await clock.alarm();
   assert.equal(reviews,1);assert.ok(updated);
   assert.equal(JSON.parse(updated[0]).color_jobs[0].status,'queued');
+  assert.equal(updated[1],'ready','source inspection queues work; only an execution claim marks it working');
   assert.ok([...memory.keys()].some(k=>k.startsWith('receipt:')));
   await clock.alarm();assert.equal(reviews,1);
   assert.ok(!JSON.stringify(updated).includes('"status":"complete"'));
