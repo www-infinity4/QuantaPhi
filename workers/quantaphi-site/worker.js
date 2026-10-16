@@ -1,5 +1,5 @@
 import {videoAPI} from './video-api.mjs';
-const EDGE_VERSION = 'quantaphi-org-service-20261016-research4';
+const EDGE_VERSION = 'quantaphi-org-service-20261016-research5';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -361,7 +361,12 @@ export default {
   if (textual) origin.searchParams.set('__qpedge', EDGE_VERSION);
   const headers = new Headers(request.headers);
   for (const name of ['Host', 'Cookie', 'Authorization']) headers.delete(name);
-  if (textual) headers.set('Cache-Control', 'no-cache');
+  if (textual) {
+   headers.set('Cache-Control', 'no-cache');
+   // Rewritten text must be complete and decoded using the Worker runtime's
+   // supported encodings, not a browser's partial or conditional response.
+   for (const name of ['Accept-Encoding','Range','If-Range','If-None-Match','If-Modified-Since']) headers.delete(name);
+  }
   let upstream, raw = false;
   const readRequest = ['GET', 'HEAD'].includes(request.method);
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
