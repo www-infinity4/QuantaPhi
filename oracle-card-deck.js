@@ -44,6 +44,8 @@ function order(){return entries.filter(available).sort((a,b)=>b.count-a.count||e
 function returnActive(){
  if(!active)return;
  const {node,marker}=active;
+ // Playing TV must stop immediately before the viewer switches away.
+ if(active.id==='phiChannelCards')document.dispatchEvent(new CustomEvent('oracle:card-deactivated',{detail:{id:active.id}}));
  // Story generation may reparent Asteroid into the research card while a
  // search begins. Never pull it back out of that authoritative context.
  if(node.parentNode===stage&&marker?.parentNode)marker.parentNode.insertBefore(node,marker);

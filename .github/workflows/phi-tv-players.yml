@@ -1,0 +1,37 @@
+name: QuantaPhi Direct TV Players
+on:
+  pull_request:
+    paths:
+      - 'phi-tv-programs.js'
+      - 'phi-channel-cards.js'
+      - 'phi-channel-cards.css'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'test/phi-channel-cards.test.cjs'
+      - '.github/workflows/phi-tv-players.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'phi-tv-programs.js'
+      - 'phi-channel-cards.js'
+      - 'phi-channel-cards.css'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'test/phi-channel-cards.test.cjs'
+      - '.github/workflows/phi-tv-players.yml'
+permissions:
+  contents: read
+jobs:
+  tv-cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify direct media and sound handoff
+        run: |
+          node --check phi-tv-programs.js
+          node --check phi-channel-cards.js
+          node --check oracle-card-deck.js
+          node --test test/phi-channel-cards.test.cjs test/oracle-card-deck.test.cjs

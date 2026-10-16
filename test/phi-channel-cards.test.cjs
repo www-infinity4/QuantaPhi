@@ -1,60 +1,90 @@
 'use strict';
-const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
-const html=fs.readFileSync('index.html','utf8'),js=fs.readFileSync('phi-channel-cards.js','utf8'),css=fs.readFileSync('phi-channel-cards.css','utf8');
-test('four inline Oracle channel windows replace HBO with Omni TV',()=>{
- assert.match(html,/id="phiChannelCards"/);
- assert.match(html,/\/phi-channel-cards\.js\?v=/);
- assert.match(html,/\/phi-channel-cards\.css\?v=/);
- assert.match(html,/StarQuest Omni TV Chiller ShopLC television cards/);
- assert.doesNotMatch(js,/name:'HBO'/);
- assert.doesNotMatch(js,/inPageSite|siteViewerFrame|channelphi-external/);
- for(const name of ['StarQuest','Omni TV','Chiller','ShopLC'])assert.ok(js.includes("name:'"+name+"'"));
- for(const slug of ['TV-Database','Chiller','ShopLC'])assert.ok(js.includes("tune:'"+slug+"'"));
- assert.match(css,/channelphi-frame/);assert.doesNotThrow(()=>new Function(js));
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const html=fs.readFileSync('index.html','utf8'),code=fs.readFileSync('phi-channel-cards.js','utf8'),
+css=fs.readFileSync('phi-channel-cards.css','utf8'),programs=require('../phi-tv-programs.js');
+test('all four QuantaPhi cards display video-only players, not TV websites',()=>{
+ for(const name of ['StarQuest','Omni TV','Chiller','ShopLC'])assert.ok(code.includes("name:'"+name+"'"));
+ assert.match(html,/\/phi-tv-programs\.js\?v=/);
+ assert.ok(html.indexOf('phi-tv-programs.js?v=')<html.indexOf('phi-channel-cards.js?v='));
+ assert.match(code,/youtube-nocookie\.com\/embed\//);
+ assert.match(code,/createElement|el\('video','channelphi-video'\)/);
+ assert.match(code,/video\.controls=true/);
+ assert.doesNotMatch(code,/embedded=1|\/omni-tv\/\?|stationPage|siteViewerFrame|iframe\.src='\/TV-Database/);
+ assert.match(css,/channelphi-video-slot/);
+ assert.doesNotThrow(()=>new vm.Script(code));
 });
-test('tapping a show window starts one in-card Omni TV remote; next tap stops old playback',()=>{
- class Element {
-  constructor(tag){this.tagName=tag;this.children=[];this.attributes={};this.handlers={};this.hidden=false;this.className='';this.textContent='';this.classList={add:x=>this.className+=' '+x,remove:x=>this.className=this.className.replace(' '+x,'')};}
-  appendChild(v){this.children.push(v);return v}
-  append(...xs){xs.forEach(x=>this.appendChild(x))}
-  setAttribute(k,v){this.attributes[k]=v}
-  addEventListener(k,fn){this.handlers[k]=fn}
-  click(){this.handlers.click?.()}
-  replaceChildren(){this.children=[]}
-  removeChild(child){this.children=this.children.filter(v=>v!==child);return child}
-  insertBefore(v,before){this.children.splice(this.children.indexOf(before),0,v)}
-  focus(){this.focused=true}
+test('existing TV sources are exact media identifiers and live ShopLC HLS URLs',()=>{
+ assert.ok(programs.STARQUEST.length>=6);
+ assert.ok(programs.CHILLER.length>=8);
+ assert.equal(programs.SHOPLC_STREAMS.length,3);
+ for(const x of [...programs.STARQUEST,...programs.CHILLER,programs.CHILLER_FEATURE])assert.equal(programs.valid(x.videoId),true,x.title);
+ assert.ok(programs.SHOPLC_STREAMS.every(x=>x.startsWith('https://')&&x.endsWith('.m3u8')));
+ const now=programs.chillerNow(new Date(2026,9,15,12,45));
+ assert.ok(programs.valid(now.videoId));
+ assert.equal(now.slot,25);
+ assert.ok(now.start>=900&&now.start<=1800);
+ assert.equal(programs.now('shoplc').channel,'shoplc');
+ assert.notEqual(programs.next('chiller',now,1).videoId,now.videoId);
+});
+test('video and audio stop when navigating another Oracle card or changing station',()=>{
+ assert.match(code,/document\.addEventListener\('oracle:card-deactivated'/);
+ assert.match(code,/if\(document\.hidden\)stop\(\)/);
+ assert.match(code,/window\.addEventListener\('pagehide',stop\)/);
+ assert.match(code,/playback\.hls\.destroy\(\)/);
+ assert.match(code,/playback\.yt\.stopVideo\(\)/);
+ assert.match(code,/playback\.video\.pause\(\)/);
+ assert.match(code,/video\.muted=false;video\.volume=1/);
+ assert.match(code,/playback\.yt\.unMute\(\)/);
+ assert.match(code,/playback\.yt\.setVolume\(100\)/);
+});
+test('Chiller slot schedule and feature weekend are stable across page refresh',()=>{
+ const d=new Date(2026,9,17,22,10);
+ const p=programs.chillerNow(d);
+ assert.equal(p.title,'Blackmail');
+ assert.equal(p.start,600);
+ assert.deepEqual(programs.chillerSchedule(d).map(x=>x.videoId),programs.chillerSchedule(d).map(x=>x.videoId));
+});
+
+test('one active TV screen can be played and switched with genuine media elements',()=>{
+ class Element{
+  constructor(tag){this.tagName=tag;this.children=[];this.handlers={};this.attributes={};this.className='';this.hidden=false;this.textContent='';this.classList={add:x=>this.className+=' '+x,remove:x=>this.className=this.className.replace(' '+x,'')};}
+  appendChild(n){this.children.push(n);return n}append(...nodes){nodes.forEach(n=>this.appendChild(n))}
+  replaceChildren(){this.children=[]}setAttribute(k,v){this.attributes[k]=v}
+  removeAttribute(k){delete this.attributes[k]}addEventListener(t,f){this.handlers[t]=f}
+  click(){this.handlers.click?.()}focus(){this.focused=true}
+  load(){}pause(){}play(){return Promise.resolve()}canPlayType(){return 'maybe'}
  }
- const root=new Element('section'),document={
-  getElementById:id=>id==='phiChannelCards'?root:null,
-  createElement:tag=>new Element(tag),hidden:false,addEventListener:()=>{}
- };
- vm.runInNewContext(js,{document,console});
- const all=e=>[e,...e.children.flatMap(all)],cards=all(root).filter(x=>x.tagName==='article');
+ const root=new Element('section'),listeners={};
+ const document={getElementById:id=>id==='phiChannelCards'?root:null,createElement:tag=>new Element(tag),
+  head:new Element('head'),addEventListener:(kind,callback)=>listeners[kind]=callback,hidden:false};
+ const window={PhiTVPrograms:programs,YT:{Player:class{stopVideo(){}destroy(){}unMute(){}setVolume(){}playVideo(){}}},
+  addEventListener:(kind,cb)=>listeners[kind]=cb};
+ const context={document,window,location:{origin:'https://quantaphi.org'},URL,setTimeout,clearTimeout};
+ vm.runInNewContext(code,context);
+ const all=n=>[n,...n.children.flatMap(all)];
+ const cards=all(root).filter(n=>n.tagName==='article');
  assert.equal(cards.length,4);
- assert.equal(all(root).filter(x=>x.tagName==='iframe').length,0);
- const shop=cards.find(x=>x.attributes['aria-label']==='ShopLC channel');
- const star=cards.find(x=>x.attributes['aria-label']==='StarQuest channel');
- all(shop).find(x=>x.tagName==='button').click();
- let frames=all(root).filter(x=>x.tagName==='iframe');
- assert.equal(frames.length,1);
- assert.match(frames[0].src,/\/omni-tv\/\?embedded=1#ShopLC$/);
- all(star).find(x=>x.tagName==='button').click();
- frames=all(root).filter(x=>x.tagName==='iframe');
- assert.equal(frames.length,1);
- assert.match(frames[0].src,/#TV-Database$/);
- assert.equal(all(shop).find(x=>x.className==='channelphi-screen').hidden,false);
- all(star).filter(x=>x.tagName==='button').at(-1).click();
- assert.equal(all(root).filter(x=>x.tagName==='iframe').length,0);
- // Stopping must preserve the controls so this exact card can be opened again.
- all(star).find(x=>x.className==='channelphi-screen').click();
+ const star=cards[0],omni=cards[1],chiller=cards[2],shop=cards[3];
+ const btn=(card,c)=>all(card).find(n=>n.className===c);
+ btn(star,'channelphi-screen').click();
+ const f1=all(root).filter(x=>x.tagName==='iframe');assert.equal(f1.length,1);
+ assert.match(f1[0].src,/youtube-nocookie.com\/embed\/[A-Za-z0-9_-]{11}/);
+ assert.doesNotMatch(f1[0].src,/\/omni-tv\/|\/TV-Database\/|\/Chiller\//);
+ btn(chiller,'channelphi-screen').click();
  assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
- assert.equal(all(star).filter(x=>x.className==='channelphi-stop').length,1);
-});
-test('Terra and Petra movie playback remains unchanged',()=>{
- const player=fs.readFileSync('halloween-phi.js','utf8');
- assert.match(player,/originalMediaUrl/);
- assert.match(player,/playsInline/);
- assert.match(player,/Watch at source/);
- assert.doesNotThrow(()=>new Function(player));
+ assert.equal(btn(star,'channelphi-screen').hidden,false);
+ btn(shop,'channelphi-screen').click();
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,0);
+ const videos=all(root).filter(x=>x.tagName==='video');assert.equal(videos.length,1);
+ assert.equal(videos[0].muted,false);assert.equal(videos[0].volume,1);
+ assert.match(videos[0].src,/master\.m3u8/);
+ btn(omni,'channelphi-screen').click();
+ btn(omni,'channelphi-next').click();
+ assert.match(btn(omni,'channelphi-now').textContent,/Unlocked Window|Night Caller|Revenge|Alfred Hitchcock|Little Peace|Nightcrawlers|Examination|Message from Charity|Blackmail/);
+ btn(omni,'channelphi-next').click();
+ assert.match(btn(omni,'channelphi-now').textContent,/Shop LC/);
+ btn(omni,'channelphi-next').click();
+ assert.equal(all(root).filter(x=>x.tagName==='iframe').length,1);
+ listeners['oracle:card-deactivated']({detail:{id:'phiChannelCards'}});
+ assert.equal(all(root).filter(x=>x.tagName==='iframe'||x.tagName==='video').length,0);
 });
