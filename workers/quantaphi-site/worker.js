@@ -184,7 +184,8 @@ async function apkRoute(request,incoming){
  const kind=incoming.pathname==='/downloads/bubbles.apk'?'bubbles':'site';
  try{
   const release=await publishedApk(kind);
-  const upstream=await fetch(release.url,{method:request.method,signal:AbortSignal.timeout(20000)});
+  const downloadUrl=new URL(release.url);downloadUrl.searchParams.set('published',release.publishedAt);
+  const upstream=await fetch(downloadUrl.href,{method:request.method,signal:AbortSignal.timeout(20000)});
   if(!upstream.ok)throw Error('download_unavailable');
   const headers=new Headers({'Content-Type':'application/vnd.android.package-archive','Content-Disposition':'attachment; filename="'+APK_RELEASES[kind].asset+'"','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
   if(upstream.headers.get('Content-Length'))headers.set('Content-Length',upstream.headers.get('Content-Length'));
