@@ -3,6 +3,7 @@ import {githubOperation,directGithubAgent,validateRepository} from './direct-git
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
+import {ticketStatusFromJobs} from './ticket-status.mjs';
 import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
 import { evidenceBucket } from './evidence-db.mjs';
 import { DurableObject } from 'cloudflare:workers';
@@ -306,7 +307,7 @@ export class BrainClock extends DurableObject{
    const context=JSON.parse(fresh.context_json),job=(context.color_jobs||[]).find(j=>j.id===lease.jobId);
    if(job && await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}))===lease.revision){
     job.status=body.status==='deployed_verified'?'complete':body.status==='committed_unverified'?'committed_unverified':'blocked';job.progress={attemptedAt:receipt.when,summary:message,next:body.status==='deployed_verified'?'Verified in the deployed Android browser.':body.status==='committed_unverified'?'Source committed; deployed browser verification still required.':'Runner will retry after backoff.',blocker:body.status==='deployed_verified'?'':body.status,commitSha:receipt.commitSha,runUrl};
-    await this.env.WORK_DB.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND context_json=?').bind(JSON.stringify(context),context.color_jobs.every(j=>j.status==='complete')?'complete':'working',Date.now(),lease.ticketId,fresh.context_json).run();
+    await this.env.WORK_DB.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND context_json=?').bind(JSON.stringify(context),ticketStatusFromJobs(context.color_jobs),Date.now(),lease.ticketId,fresh.context_json).run();
    }
   }
   try{
