@@ -350,11 +350,12 @@ async function writeSecretStory(sources,plan,roll,storyKind='reads-realms'){
  const conciseSources=sources.slice(0,7).map(x=>({title:x.title,url:x.url,summary:String(x.summary||'').slice(0,195)}));
  const readablePages=pageEvidence.slice(0,2).map(x=>({url:x.url,title:x.title,excerpt:x.excerpt.slice(0,1100)}));
  const prompt=[
-  'You are the GPT author of the '+product+' nonfiction story. '+(storyKind==='asteroid'?'Asteroid is a metaphor for investigating the current search. Your story MUST explicitly concern the exact searched subject '+(roll.quantFocus||plan.focus)+', not an asteroid or a random substitute.':'This is the original Reads & Realms home-page opening story, written fresh for a page visit without requiring a user search; select the documented subject from the rolled word bank.')+' Write an ORIGINAL sourced narrative about a concrete evidence-supported incident, observation, discovery, process, demonstration or artifact. Never a general biography, film synopsis or fabricated movie.',
+  'You are the GPT author of the '+product+' nonfiction story. '+(storyKind==='asteroid'?'Asteroid is a metaphor for investigating the current search. Its impact must come from a surprising VERIFIED event about the exact searched subject, not from astronomy, asteroids or impact craters. Your story MUST explicitly concern the exact searched subject '+(roll.quantFocus||plan.focus)+', not an asteroid or a random substitute.':'This is the original Reads & Realms home-page opening story, written fresh for a page visit without requiring a user search; select the documented subject from the rolled word bank.')+' Write an ORIGINAL sourced narrative about a concrete evidence-supported incident, observation, discovery, process, demonstration or artifact. Never a general biography, film synopsis or fabricated movie.',
   EDITORIAL_BRIEF,
   'NARRATIVE MOOD: '+mood+'. Shape pacing, curiosity and tension around facts; mystery means an evidence-supported unknown, adventure means a documented journey/process, suspense means real stakes or uncertainty. Do not invent danger, dialogue, plot twists, witnesses, or cinematic scenes.',
   'Example of the required difference: "Nikola Tesla" is NOT a story; his 1898 radio-controlled boat demonstration IS the kind of precise event we want, but do not choose it unless the actual evidence here concerns that event.',
   'You are both evidence reviewer and storyteller: examine up to 20 independent search-result excerpts below, choose the MOST INTERESTING SPECIFIC incident actually corroborated by at least two distinct source websites, then narrate it as an engaging story, not an encyclopedia answer.',
+  storyKind==='asteroid'?'ASTEROID IMPACT EDITION: Begin with the documented turning point, arresting question, tangible consequence, or surprising result. Lead with what happened and why it mattered, then reveal the evidence. Write as compelling nonfiction rather than a generic description. NEVER write about literal asteroids unless that is what the visitor searched for.':'',
   'Search-result excerpts are NOT full source documents. Use two independent citations about the same selected subject or well documented process; do not merge unrelated incidents. If a concrete detail cannot be supported, return {"insufficient":true}.',
   'Find one specific verifiable observation, event, process, artifact or unexpected detail. The title must name the concrete subject and its nonfiction story, not merely the person. The headline need not say secret or mystery.',
   'The final direction is '+(plan.direction||'discovery')+'. It guides which supported story to select, not a license to fabricate. Future possibilities must be labeled as possibilities. For educational mathematics include a correct simple equation, SI units, a worked example with explicit assumptions, and a verified source for constants.',
@@ -380,7 +381,10 @@ async function writeSecretStory(sources,plan,roll,storyKind='reads-realms'){
     const words=clean(roll.quantFocus).toLowerCase().match(/[\p{L}\p{N}]{3,}/gu)||[];
     const normalized=text=>clean(text).toLowerCase().replace(/[^\p{L}\p{N}]+/gu,'');
     const mention=text=>words.length>0&&words.every(word=>normalized(text).includes(word));
-    if(!mention(obj.title+' '+obj.summary+' '+obj.full)||!matched.some(source=>mention(source.title+' '+source.summary)))return null;
+    const anchor=words.length?words[0]:'';
+    // Long multiword queries may have words absent from every snippet. Require
+    // the primary identifying term and preserve two independent sources.
+    if(!anchor||!normalized(obj.title+' '+obj.summary+' '+obj.full).includes(anchor)||!matched.some(source=>normalized(source.title+' '+source.summary).includes(anchor)))return null;
   }
  return {title:clean(obj.title).slice(0,180),summary:clean(obj.summary).slice(0,650),
   full:String(obj.full).trim().slice(0,4200),detail:clean(obj.detail).slice(0,240),
