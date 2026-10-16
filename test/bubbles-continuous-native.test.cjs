@@ -50,6 +50,22 @@ test('TTS callback loss has a bounded recovery and diagnostics preserve replies'
   assert.match(source, /putString\("last_reply", result\)/);
 });
 
+
+test('Android TTS engine callbacks cannot activate a replaced engine', () => {
+  assert.match(source, /final long engineGeneration = \\+\\+ttsEngineGeneration/);
+  assert.match(source, /engineGeneration != ttsEngineGeneration \\|\\| tts == null/);
+  assert.match(source, /result != TextToSpeech\\.SUCCESS/);
+  assert.match(source, /Android speech engine could not initialize/);
+  assert.match(source, /pendingWebsiteSpeech\\.clear\\(\\)/);
+});
+test('Android speech playback errors release busy and retain visible diagnostics', () => {
+  const speak = source.slice(source.indexOf('private void speak(String response)'), source.indexOf('@Override public IBinder'));
+  assert.match(speak, /try \\{[\\s\\S]*?tts\\.speak\\(response/);
+  assert.match(speak, /if \\(result == TextToSpeech\\.ERROR\\) \\{[\\s\\S]*?finishSpeaking\\(utterance\\)/);
+  assert.match(speak, /catch \\(RuntimeException error\\) \\{[\\s\\S]*?finishSpeaking\\(utterance\\)/);
+  assert.match(speak, /Android speech playback failed:/);
+});
+
 test('Bubbles exposes listening first and hides optional recording controls until requested', () => {
   if (local) return;
   const ui = fs.readFileSync(path.join(root, 'app/src/main/java/org/quantaphi/bubbles/MainActivity.java'), 'utf8');
