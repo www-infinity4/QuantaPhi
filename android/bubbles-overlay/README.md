@@ -1,3 +1,15 @@
+## Native voice-attribution safeguard (October 16, 2026)
+
+The Android microphone now forwards idle speech only after an explicit "Bubbles"
+address or tap on the orb. This opens a 30-second follow-up window with at most
+four unaddressed turns, so ambient recognition cannot renew its own window forever.
+Typed messages are unaffected. While the APK owns the microphone, its embedded
+website cannot open a competing mic stream. Partial results are not published
+while idle. Speech needs at least 320 ms of measurable input above the energy
+threshold; this reduces, but cannot eliminate, misrecognition of room noise.
+The notification's **Stop Bubbles** control still stops the service.
+This change is not installed until a signed APK is built and tested on device.
+
 ## 0.22.0 — one website conversation
 
 Gemini reviewed the bridge source and the recovered project requirements. This

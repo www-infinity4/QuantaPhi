@@ -1226,7 +1226,7 @@ document.addEventListener?.('visibilitychange',()=>{
  if(!nativeOverlay&&document.hidden&&voiceEnabled)stopVoice('Website mic released while Android Bubbles keeps listening.');
 });
 function heardTranscript(transcript){
- if(!voiceEnabled||speaking||Date.now()<voiceEchoUntil||!voiceGate)return;
+ if(nativeOverlay||!voiceEnabled||speaking||Date.now()<voiceEchoUntil||!voiceGate)return;
  heardUntil=Date.now()+750;setOrbState('hearing');launcher.style.setProperty('--ba-energy','1');
  status.textContent='Heard: '+transcript;launcher.dataset.words=String(transcript.split(/\s+/).length);
  const turn=voiceGate.accept(transcript,Date.now());
@@ -1235,6 +1235,9 @@ function heardTranscript(transcript){
  if(turn.type==='message'){if(busy)voicePending=turn.text;else void sendMessage(turn.text,true)}
 }
 async function startVoice(){
+ // Android's foreground service already owns voice recognition. A WebView
+ // microphone here competes with it and can double-submit fabricated words.
+ if(nativeOverlay){status.textContent='Android Bubbles owns the microphone. Speak to the orb or type here.';return;}
  if(voiceEnabled||voiceStarting)return;
  if(androidCompanionListening){status.textContent='Android Bubbles is already listening. Type here or use the APK microphone.';return;}
  voiceStarting=true;const generation=++voiceGeneration;

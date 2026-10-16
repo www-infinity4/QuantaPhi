@@ -153,6 +153,9 @@ public final class BubblesService extends Service {
     }
     private volatile boolean speechSuppressed = false;
     private long activeUntil = 0L, lastAt = 0L;
+    // Bound follow-up recognition so ambient noise cannot trigger an endless chat.
+    private int voiceFollowups = 0;
+    private static final int MAX_VOICE_FOLLOWUPS = 4;
     private String lastTranscript = "", queued = "";
     private int retries = 0;
     private long speechGeneration = 0L;
@@ -424,7 +427,7 @@ public final class BubblesService extends Service {
                             speech.reset();
                             continue;
                         }
-                        if (level > .05f) voicedSamples = Math.min(16000L * 30L, voicedSamples + count);
+                        if (level > .08f) voicedSamples = Math.min(16000L * 30L, voicedSamples + count);
                         if (suppressingReply) { speech.reset(); suppressingReply = false; voicedSamples = 0L; }
                         main.post(() -> {
                             if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
@@ -434,7 +437,7 @@ public final class BubblesService extends Service {
                         if (!complete && SystemClock.elapsedRealtime() - lastPartialAt > 550L) {
                             lastPartialAt = SystemClock.elapsedRealtime();
                             final String partial = new JSONObject(speech.getPartialResult()).optString("partial", "");
-                            if (!partial.isEmpty()) main.post(() -> {
+                            if (!partial.isEmpty() && SystemClock.elapsedRealtime() < activeUntil) main.post(() -> {
                                 if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
                                     BrainNotes.prefs(this).edit().putString("last_partial", partial).apply();
                             });
@@ -571,6 +574,7 @@ public final class BubblesService extends Service {
         screenSharing = false;
         muted = true;
         activeUntil = 0L;
+        voiceFollowups = 0;
         stopRecognition();
         state("muted", 0);
     }
@@ -582,6 +586,7 @@ public final class BubblesService extends Service {
         muted = false;
         if (oracleWindow != null) oracleWindow.claimMicrophone();
         activeUntil = 0L;
+        voiceFollowups = 0;
         lastTranscript = ""; retries = 0;
         beginListening();
     }
@@ -595,7 +600,7 @@ public final class BubblesService extends Service {
         speaking = false;
         main.removeCallbacks(deliverVoiceTurn);
         turnBuffer.clear();
-        echoQuietUntil = SystemClock.elapsedRealtime() + 850L;
+        echoQuietUntil = SystemClock.elapsedRealtime() + 1500L;
         if (tts != null) tts.stop();
         if (connected && !muted) state("listening", .1f);
     }
@@ -605,22 +610,36 @@ public final class BubblesService extends Service {
         speaking = false;
         speechGeneration++;
         // Hardware speaker echo and TTS audio buffers may outlast onDone.
-        echoQuietUntil = SystemClock.elapsedRealtime() + 850L;
+        echoQuietUntil = SystemClock.elapsedRealtime() + 1500L;
         if (connected && !muted) state("listening", .1f);
         main.postDelayed(this::drainWebsiteSpeech,250L);
     }
 
-    private void heard(String raw) {
+    private void heard(String raw) { heard(raw, false); }
+
+    private void heard(String raw, boolean typed) {
         String text = raw == null ? "" : raw.replaceAll("\\s+", " ").trim();
         if (text.isEmpty() || text.length() > 1800 || muted) return;
-        BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
         long now = SystemClock.elapsedRealtime();
         String alias=BrainNotes.prefs(this).getString("name","Brain");
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
         Matcher matcher = namedWake.matcher(text);
         boolean directed = matcher.find();
-        // The user-started listening session accepts ordinary speech without a wake word.
         String addressed = directed ? text.substring(matcher.end()).replaceFirst("^[\\s,:.!?\\-]+", "").trim() : text;
+        // Energy is not proof of speech intent: Vosk can fabricate words from noise.
+        // Only deliberate wake-name/tap windows may create visible user messages.
+        if (!typed) {
+            if (directed) {
+                activeUntil = now + 30000L;
+                voiceFollowups = 0;
+            } else if (now >= activeUntil || ++voiceFollowups > MAX_VOICE_FOLLOWUPS) {
+                activeUntil = 0L;
+                if (MUTE.matcher(addressed).matches()) muteSession();
+                state(muted ? "muted" : "listening", .1f);
+                return;
+            }
+        }
+        BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
         if (SimNetworkCommands.matches(addressed)) {
             screenStatus(CellularInspector.capture(this), false);
             return;
@@ -705,13 +724,12 @@ public final class BubblesService extends Service {
             Toast.makeText(this, "Bubbles muted. Tap the orb to reconnect.", Toast.LENGTH_SHORT).show();
             return;
         }
-        if (directed) activeUntil = now + 30000L;
         if (addressed.isEmpty() || WAKE_UP.matcher(addressed).matches()) {
             state("listening", .28f);return;
         }
         String normalized = addressed.toLowerCase(Locale.ROOT).replaceAll("[\\s,.!?]+", " ").trim();
         if (normalized.equals(lastTranscript) && now - lastAt < 2500) return;
-        lastTranscript = normalized;lastAt = now;activeUntil = now + 30000L;
+        lastTranscript = normalized;lastAt = now;
         // Owner explicitly refers to what's on their Android screen or requests
         // one visible action. Attach fresh Android evidence before asking the
         // shared QuantaPhi brain; ordinary conversations never send screen data.
@@ -779,7 +797,7 @@ public final class BubblesService extends Service {
         VoiceCaptureCommands.Command capture = VoiceCaptureCommands.parse(text);
         if (capture != null) {
             // Native typed fallback has the same capture abilities as native speech.
-            heard(text);
+            heard(text, true);
             return;
         }
         if (screenSharing || ScreenAwareness.refersToScreen(text)) {
@@ -1040,6 +1058,9 @@ public final class BubblesService extends Service {
                             Toast.makeText(BubblesService.this,"Bubbles muted. Tap to reconnect.",Toast.LENGTH_SHORT).show();
                         } else {
                             if (speaking) silenceReply();
+                            // A physical tap deliberately opens a short listening window.
+                            activeUntil = SystemClock.elapsedRealtime() + 30000L;
+                            voiceFollowups = 0;
                             // A foreground service cannot reliably start an Activity
                             // over another app. Display a focusable overlay directly.
                             if (oracleWindow == null) oracleWindow = new FloatingOracleWindow(BubblesService.this, manager);

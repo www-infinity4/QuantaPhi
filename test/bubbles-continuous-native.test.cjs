@@ -70,9 +70,30 @@ test('AI and voice failure status captures a useful reason rather than only an e
 test('offline speech requires microphone energy and drops long code-like loops', () => {
   if (local) return;
   const gate=fs.readFileSync(path.join(root,'app/src/main/java/org/quantaphi/bubbles/SpeechTranscriptGate.java'),'utf8');
-  assert.match(gate,/voicedMillis < 160L/);
+  assert.match(gate,/voicedMillis < 320L/);
   assert.match(gate,/repeats >= 4/);
   assert.match(gate,/\[0-9a-f\]\{32,\}/);
   assert.match(source,/SpeechTranscriptGate\.plausible\(transcript, voicedMillis\)/);
   assert.match(source,/voicedSamples = 0L/);
+});
+
+test('idle speech never appears as a user turn without wake name or deliberate tap', () => {
+  const start=source.indexOf('private void heard(String raw, boolean typed)');
+  const end=source.indexOf('private void offerCaptureApproval',start);
+  const heard=source.slice(start,end);
+  assert.match(heard,/if \(!typed\) \{/);
+  assert.match(heard,/if \(directed\)/);
+  assert.match(heard,/now >= activeUntil \|\| \+\+voiceFollowups > MAX_VOICE_FOLLOWUPS/);
+  assert.ok(heard.indexOf('voiceFollowups > MAX_VOICE_FOLLOWUPS') < heard.indexOf('putString("last_heard", text)'));
+  assert.match(source,/MAX_VOICE_FOLLOWUPS = 4/);
+  assert.match(source,/activeUntil = SystemClock\.elapsedRealtime\(\) \+ 30000L/);
+  assert.match(source,/heard\(text, true\)/);
+  assert.doesNotMatch(heard,/lastAt = now;activeUntil = now \+ 30000L/);
+});
+
+test('Android WebView cannot activate a second browser microphone', () => {
+  if(local)return;
+  const site=fs.readFileSync(path.join(root,'../../bubbles-ai.js'),'utf8');
+  assert.match(site,/async function startVoice\(\)\{[\s\S]*?if\(nativeOverlay\)\{/);
+  assert.match(site,/function heardTranscript\(transcript\)\{[\s\S]*?if\(nativeOverlay\|\|!voiceEnabled/);
 });
