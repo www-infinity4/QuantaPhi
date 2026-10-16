@@ -1,5 +1,5 @@
 import {videoAPI} from './video-api.mjs';
-const EDGE_VERSION = 'quantaphi-org-service-20261016-apk25';
+const EDGE_VERSION = 'quantaphi-org-service-20261016-apk25r2';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -184,7 +184,8 @@ async function apkRoute(request,incoming){
  const kind=incoming.pathname==='/downloads/bubbles.apk'?'bubbles':'site';
  try{
   const release=await publishedApk(kind);
-  const upstream=await fetch(release.url,{method:request.method,signal:AbortSignal.timeout(20000)});
+  const downloadUrl=new URL(release.url);downloadUrl.searchParams.set('published',release.publishedAt);
+  const upstream=await fetch(downloadUrl.href,{method:request.method,signal:AbortSignal.timeout(20000)});
   if(!upstream.ok)throw Error('download_unavailable');
   const headers=new Headers({'Content-Type':'application/vnd.android.package-archive','Content-Disposition':'attachment; filename="'+APK_RELEASES[kind].asset+'"','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
   if(upstream.headers.get('Content-Length'))headers.set('Content-Length',upstream.headers.get('Content-Length'));
@@ -352,7 +353,7 @@ export default {
   const repairRef = ['20261009-billboard-grid5','20261009-eight-subjects5'].includes(incoming.searchParams.get('v'));
   const newQuantaRelease = route.repo === 'QuantaPhi' && (route.sourcePath === '/index.html' || ['20261009-bright-star6','20261009-octaves-routing6'].includes(incoming.searchParams.get('v')));
   const newOctavesRelease = route.repo === 'Oracle-Octaves' && (route.sourcePath === '/index.html' || ['20261009-origin-timing2','20261009-resilient2'].includes(incoming.searchParams.get('v')));
-  const sourceRef = route.repo === 'QuantaPhi' && ['/bubbles-ai.js','/bubbles.html','/bubbles/index.html'].includes(route.sourcePath) ? 'main' : route.repo === 'Control-Phi' ? '08563cfd39d0ee692ba6b3c73b92da29736ddd23' : route.repo === 'Bitcoin-Crusher' ? 'a2899745962de6ef43be78e63f441fe8361e9b1f' : route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/') ? '5e53cc37bd36f40ee500bb7f21cbc836224e3b05' : newQuantaRelease ? 'main' : newOctavesRelease ? '60c9436507cc34cb674a7b9a766c335a399b8dec' : repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
+  const sourceRef = route.repo === 'QuantaPhi' && ['/index.html','/bubbles-ai.js','/apk-downloads.js'].includes(route.sourcePath) ? '6643d2727f5be56dd0f1b217f532099899833bca' : route.repo === 'QuantaPhi' && ['/bubbles-ai.js','/bubbles.html','/bubbles/index.html'].includes(route.sourcePath) ? 'main' : route.repo === 'Control-Phi' ? '08563cfd39d0ee692ba6b3c73b92da29736ddd23' : route.repo === 'Bitcoin-Crusher' ? 'a2899745962de6ef43be78e63f441fe8361e9b1f' : route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/') ? '5e53cc37bd36f40ee500bb7f21cbc836224e3b05' : newQuantaRelease ? 'main' : newOctavesRelease ? '60c9436507cc34cb674a7b9a766c335a399b8dec' : repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
   const origin = new URL('https://www-infinity4.github.io' + repoPath);
   origin.search = incoming.search;
   const extension = route.sourcePath.split('.').pop().toLowerCase();
