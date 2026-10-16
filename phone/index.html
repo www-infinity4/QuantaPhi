@@ -88,6 +88,8 @@
   badge.textContent='Offline installation unavailable in this browser';
   return;
  }
+ // An already installed worker can boot the page with the radio off.
+ if(navigator.onLine===false && navigator.serviceWorker.controller){present('ready');return;}
  navigator.serviceWorker.register(scope+'offline-sw.js',{scope}).then(async()=>{
   await navigator.serviceWorker.ready;
   present('ready');
