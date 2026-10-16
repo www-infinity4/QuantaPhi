@@ -284,6 +284,10 @@ const cloudLabel=create('label','ba-privacy-label'),cloudToggle=create('input','
 cloudToggle.type='checkbox';cloudToggle.checked=cloudChat;cloudToggle.disabled=!keepChat;
 cloudLabel.append(cloudToggle,create('span','','Optional extra wallet transcript backup (separate from APK pairing)'));
 const linkBubbles=create('button','ba-control ba-link-bubbles','Connect / sync Bubbles');linkBubbles.type='button';
+const createOwnerCode=create('button','ba-control','Create one-time owner code');createOwnerCode.type='button';
+const ownerCodeHelp=create('p','ba-muted','To connect another Bubbles session: use this button in the website or APK where Robot Brain is already connected, then tap Copy one-time code. In the other session, paste it into Message Bubbles and Send, or its secure owner connection field. It expires in two minutes. If neither session is connected, open Robot Brain owner access and use your existing owner recovery key or verified owner wallet first. Never post a recovery key in chat.');
+createOwnerCode.hidden=embedded;ownerCodeHelp.hidden=embedded;
+createOwnerCode.addEventListener('click',()=>linkBubbles.click());
 const linkStatus=create('p','ba-muted','Connect this Bubbles session and show a one-time code for your other session.');
 linkStatus.setAttribute('role','status');
 linkBubbles.hidden=embedded;linkStatus.hidden=embedded;
@@ -330,7 +334,7 @@ pairingCode.addEventListener('click',()=>pairingCode.select());
   catch{pairingCode.select();status.textContent='Select and copy the code manually.'}
  });
  pairingCard.append(pairingInstructions,pairingCode,pairingCopy);
- panel.append(header,status,ownerMode,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
+ panel.append(header,status,ownerMode,createOwnerCode,ownerCodeHelp,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
 if(nativeOverlay){
  // Owner pairing uses the same chat composer, never a separate paste form.
  ownerMode.textContent='Robot Brain not linked';
@@ -346,7 +350,7 @@ if(nativeOverlay){
  // One scrolling surface owns messages, pairing output and expanded options.
  // The composer and its visible feedback remain reachable at every scroll position.
  panel.insertBefore(chatScroll,header);
- chatScroll.append(ownerMode,linkBubbles,linkStatus,recorderStatus,recorderStop,pairingCard,conversation,tools);
+ chatScroll.append(ownerMode,linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus,recorderStatus,recorderStop,pairingCard,conversation,tools);
  // Keep options accessible above long transcripts, within the same scroll surface.
  chatScroll.insertBefore(tools,conversation);
  composer.prepend(status);
@@ -368,7 +372,7 @@ if(nativeOverlay){
 if(!nativeOverlay&&!embedded){
  // Website and APK share one message/options scroll owner and a reachable composer.
  panel.insertBefore(chatScroll,conversation);
- chatScroll.append(ownerMode,linkBubbles,linkStatus,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,tools);
+ chatScroll.append(ownerMode,linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,tools);
  composer.insertBefore(status,input);
 }
 if(embedded){
@@ -612,15 +616,15 @@ historyToggle.addEventListener('change',()=>{
  }
 });
 linkBubbles.addEventListener('click',async()=>{
- if(nativeOverlay&&ownerReady){linkStatus.textContent='Already connected. One-time pairing is saved; history syncs automatically.';void sharedMemory();return;}
  if(busy){linkStatus.textContent='A reply is still running. Try Connect / sync Bubbles when it finishes.';return;}
  linkBubbles.disabled=true;
+ createOwnerCode.disabled=true;
  linkStatus.textContent='Checking owner access and requesting your one-time pairing code…';
  try{
   await sendMessage(nativeOverlay?'sync my website':'link my APK',false);
   linkStatus.textContent=pairingCard.hidden?'Connection was not confirmed. Read the connection result in the chat above.':'One-time code ready above. Copy it into the other Bubbles session within two minutes.';
  }catch(error){linkStatus.textContent='Bubbles could not connect: '+String(error.message||error);}
- finally{linkBubbles.disabled=false;}
+ finally{linkBubbles.disabled=false;createOwnerCode.disabled=false;}
 });
 cloudToggle.addEventListener('change',async()=>{
  if(!cloudToggle.checked){
@@ -860,7 +864,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   nativeSpeechPending=false;busy=false;send.disabled=false;return;
  }
  if(!embedded&&(/^(?:(?:please|bubbles)[\s,:]+)*(?:pair|link|sync|connect)\b.{0,60}\b(?:apk|android|phone|floating bubble)\b/i.test(spoken)
-   || /^(?:(?:please|bubbles)[\s,:]+)*(?:(?:give|show|create|generate|request)(?: me)?(?: a| the| my)?\s+)?(?:one[ -]?time|pairing|brain(?: link)?)\s+(?:code|link)(?:\s+(?:brain|link|code|apk|android|phone|please))*[.!?]*$/i.test(spoken))){
+   || /^(?:(?:please|bubbles)[\s,:]+)*(?:(?:give|show|create|generate|request)(?: me)?(?: a| the| my)?\s+)?(?:one[ -]?time(?: owner)?|owner(?: pairing)?|pairing|brain(?: link)?)\s+(?:code|link)(?:\s+(?:brain|link|code|apk|android|phone|please))*[.!?]*$/i.test(spoken))){
   busy=true;send.disabled=true;let resultText;
   try{
    const headers=await verifiedOwnerHeaders();
@@ -872,7 +876,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    setTimeout(()=>{if(pairingCode.value===result.code){pairingCode.value='';pairingCard.hidden=true}},120000);
    resultText='Your one-time APK pairing code is above. Tap Copy one-time code, open the Bubbles floating chat and paste it into the normal message box and tap Send. The code expires in two minutes. Once verified, both sessions sync owner jobs and conversation. I will not put your code into chat history or say it aloud.';
   }catch(error){
-   resultText='I could not create the pairing code: '+String(error.message||error).slice(0,140)+'. Your owner session must be verified first.';
+   resultText='No code was created because this session is not verified or the pairing service could not be reached. Use Create one-time owner code in your already-connected website or APK. If neither is connected, open Robot Brain owner access and connect your existing owner recovery key or verified owner wallet first. A disconnected chat cannot create its own owner access. Detail: '+String(error.message||error).slice(0,140);
+   const gate=document.querySelector('#robotBrainOwner details');if(gate)gate.open=true;
   }
   display(spoken,'you');display(resultText,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:resultText});persistChat();
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=resultText;else if(config.voice&&!nativeOverlay)speakText(resultText);

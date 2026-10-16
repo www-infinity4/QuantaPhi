@@ -4,7 +4,7 @@ const start=source.indexOf("linkBubbles.addEventListener('click',async()=>{");
 const end=source.indexOf("cloudToggle.addEventListener",start);
 async function click({nativeOverlay=false,busy=false,hidden=false,reject=false}={}){
  let handler;const calls=[];
- const ctx={nativeOverlay,busy,linkBubbles:{disabled:false,addEventListener:(_,fn)=>handler=fn},linkStatus:{},pairingCard:{hidden},sendMessage:async(...args)=>{calls.push(args);if(reject)throw Error('offline')}};
+ const ctx={nativeOverlay,busy,linkBubbles:{disabled:false,addEventListener:(_,fn)=>handler=fn},createOwnerCode:{disabled:false},linkStatus:{},pairingCard:{hidden},sendMessage:async(...args)=>{calls.push(args);if(reject)throw Error('offline')}};
  vm.runInNewContext(source.slice(start,end),ctx);await handler();return {ctx,calls};
 }
 test('website and APK connect button use actual pairing commands independent of optional wallet checkbox',async()=>{
