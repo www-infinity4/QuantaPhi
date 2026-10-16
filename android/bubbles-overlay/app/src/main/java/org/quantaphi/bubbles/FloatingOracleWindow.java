@@ -159,7 +159,7 @@ final class FloatingOracleWindow {
             if (website != null) {
                 showWebsite(false);
                 status.setText("Connecting to QuantaPhi Bubbles… Your queued messages are retained.");
-                website.loadUrl(SITE_URL + "&v=22-single-chat");
+                website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
             }
         });
         page.addView(retryButton);
@@ -235,7 +235,7 @@ final class FloatingOracleWindow {
                 }
             });
             page.addView(website, new LinearLayout.LayoutParams(-1, 0, 1));
-            website.loadUrl(SITE_URL + "&v=22-single-chat");
+            website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
         } catch (RuntimeException error) {
             // Keep the failure visible; never open a different assistant.
             website = null;

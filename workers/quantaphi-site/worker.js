@@ -1,5 +1,5 @@
 import {videoAPI} from './video-api.mjs';
-const EDGE_VERSION = 'quantaphi-org-service-20261015-readable33';
+const EDGE_VERSION = 'quantaphi-org-service-20261016-apk25';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -155,6 +155,43 @@ async function readIbmPublicPage(request,incoming){
  return Response.json({ok:true,title,text,url:finalUrl.href},{headers:{'Cache-Control':'no-store','x-quantaphi-edge':EDGE_VERSION}});
 }
 
+const APK_RELEASES={
+ bubbles:{tag:'bubbles-preview-current',asset:'Bubbles-Preview5-Android12.apk',title:'Bubbles'},
+ site:{tag:'infinity-platinum-preview-current',asset:'Infinity-Platinum-Android12-Preview.apk',title:'Site / Infinity Platinum'}
+};
+async function publishedApk(kind){
+ const config=APK_RELEASES[kind];
+ const response=await fetch('https://api.github.com/repos/www-infinity4/QuantaPhi/releases/tags/'+config.tag,{
+  headers:{Accept:'application/vnd.github+json','User-Agent':'QuantaPhi-APK-Downloads'},signal:AbortSignal.timeout(10000)
+ });
+ if(!response.ok)throw Error('release_unavailable');
+ const release=await response.json();
+ if(release.draft)throw Error('release_unpublished');
+ const asset=release.assets?.find(item=>item.name===config.asset&&item.state==='uploaded'&&item.size>0);
+ if(!asset)throw Error('apk_not_published');
+ const url=new URL(asset.browser_download_url);
+ if(url.origin!=='https://github.com'||url.pathname!=='/www-infinity4/QuantaPhi/releases/download/'+config.tag+'/'+config.asset)throw Error('invalid_asset');
+ const version=String(asset.label||'').match(/\bv(\d+\.\d+(?:\.\d+)?(?:-[a-z0-9.-]+)?)/i)?.[1]||null;
+ return {available:true,name:config.title,version,size:asset.size,publishedAt:asset.updated_at||asset.created_at,url:url.href,sha256:asset.digest?.startsWith('sha256:')?asset.digest.slice(7):null};
+}
+async function apkRoute(request,incoming){
+ if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
+ if(incoming.pathname==='/api/apk-releases'){
+  const result={};
+  await Promise.all(Object.keys(APK_RELEASES).map(async kind=>{try{result[kind]=await publishedApk(kind)}catch{result[kind]={available:false}}}));
+  return Response.json(result,{headers:{'Cache-Control':'no-store'}});
+ }
+ const kind=incoming.pathname==='/downloads/bubbles.apk'?'bubbles':'site';
+ try{
+  const release=await publishedApk(kind);
+  const upstream=await fetch(release.url,{method:request.method,signal:AbortSignal.timeout(20000)});
+  if(!upstream.ok)throw Error('download_unavailable');
+  const headers=new Headers({'Content-Type':'application/vnd.android.package-archive','Content-Disposition':'attachment; filename="'+APK_RELEASES[kind].asset+'"','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
+  if(upstream.headers.get('Content-Length'))headers.set('Content-Length',upstream.headers.get('Content-Length'));
+  return new Response(request.method==='HEAD'?null:upstream.body,{headers});
+ }catch{return new Response('The latest APK is unavailable. Please retry shortly.',{status:503,headers:{'Cache-Control':'no-store','Retry-After':'30'}})}
+}
+
 async function getUpstream(url, request, headers) {
  const controller = new AbortController();
  const timer = setTimeout(() => controller.abort(), 10000);
@@ -255,6 +292,7 @@ const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><m
 export default {
  async fetch(request, env) {
   const incoming = new URL(request.url);
+  if(['/api/apk-releases','/downloads/bubbles.apk','/downloads/site.apk'].includes(incoming.pathname))return apkRoute(request,incoming);
   if(incoming.pathname.startsWith('/api/video/'))return videoAPI(request,env);
   if (/^(?:www\.)?quantaphi\.net$/.test(incoming.hostname) && incoming.pathname === '/__wallet-handoff') return new Response(LEGACY_HANDOFF_HTML, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'x-quantaphi-edge': EDGE_VERSION } });
   if (/^(?:www\.)?quantaphi\.org$/.test(incoming.hostname) && incoming.pathname === '/__wallet-handoff') return new Response(LEGACY_HANDOFF_HTML, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'x-quantaphi-edge': EDGE_VERSION } });

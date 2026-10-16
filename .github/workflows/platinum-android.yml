@@ -81,6 +81,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: infinity-platinum-android12-apk
@@ -91,10 +92,12 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
+          VERSION=$(sed -n "s/.*versionName '\([^']*\)'.*/\1/p" android/infinity-platinum/app/build.gradle)
+          test -n "$VERSION"
           mv dist/app-debug.apk dist/Infinity-Platinum-Android12-Preview.apk
           (cd dist && sha256sum Infinity-Platinum-Android12-Preview.apk > Infinity-Platinum-Android12-Preview.apk.sha256)
           if gh release view infinity-platinum-preview-current --repo "$GH_REPO" >/dev/null 2>&1; then
-            gh release upload infinity-platinum-preview-current dist/Infinity-Platinum-Android12-Preview.apk dist/Infinity-Platinum-Android12-Preview.apk.sha256 --clobber --repo "$GH_REPO"
+            gh release upload infinity-platinum-preview-current "dist/Infinity-Platinum-Android12-Preview.apk#Site APK v${VERSION}" dist/Infinity-Platinum-Android12-Preview.apk.sha256 --clobber --repo "$GH_REPO"
           else
-            gh release create infinity-platinum-preview-current dist/Infinity-Platinum-Android12-Preview.apk dist/Infinity-Platinum-Android12-Preview.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Infinity Platinum Android Preview" --notes "Android System WebView based Platinum browser preview; install separately from Chrome and Bubbles. Not a production browser replacement. Debug-signed for preview testing."
+            gh release create infinity-platinum-preview-current "dist/Infinity-Platinum-Android12-Preview.apk#Site APK v${VERSION}" dist/Infinity-Platinum-Android12-Preview.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Infinity Platinum Android Preview" --notes "Android System WebView based Platinum browser preview; install separately from Chrome and Bubbles. Not a production browser replacement. Debug-signed for preview testing."
           fi

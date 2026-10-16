@@ -45,7 +45,7 @@ public final class MainActivity extends Activity {
         layout.setBackgroundColor(Color.rgb(251, 247, 238));
 
         TextView title = new TextView(this);
-        title.setText("Bubbles AI");
+        title.setText("Bubbles AI · " + BuildConfig.VERSION_NAME);
         title.setTextColor(Color.rgb(48, 36, 62));
         title.setTypeface(null, Typeface.BOLD);
         title.setTextSize(31);

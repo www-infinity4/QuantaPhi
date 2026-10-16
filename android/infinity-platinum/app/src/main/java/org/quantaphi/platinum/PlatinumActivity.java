@@ -125,7 +125,7 @@ public final class PlatinumActivity extends Activity {
 
   status=new TextView(this);status.setTextColor(STEEL);status.setTextSize(11);
   status.setMaxLines(2);status.setPadding(px(8),px(4),px(8),px(5));
-  status.setText("Infinity Platinum · Safe Browsing on · Local collections");
+  status.setText("Infinity Platinum · " + BuildConfig.VERSION_NAME + " · Safe Browsing on");
   shell.addView(status);
   frame=new FrameLayout(this);shell.addView(frame,new LinearLayout.LayoutParams(-1,0,1));
   setContentView(shell);
@@ -197,7 +197,7 @@ public final class PlatinumActivity extends Activity {
   settings.setMediaPlaybackRequiresUserGesture(true);
   settings.setBuiltInZoomControls(true);settings.setDisplayZoomControls(false);
   // Only an identifiable user-agent suffix, never a login or owner token.
-  settings.setUserAgentString(settings.getUserAgentString()+" InfinityPlatinumMobile/0.1");
+  settings.setUserAgentString(settings.getUserAgentString()+" InfinityPlatinumMobile/" + BuildConfig.VERSION_NAME + "");
   CookieManager.getInstance().setAcceptCookie(true);
   web.setWebViewClient(new WebViewClient(){
    @Override public boolean shouldOverrideUrlLoading(WebView view,WebResourceRequest request){
