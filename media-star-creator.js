@@ -140,6 +140,43 @@
   createBtn("Build with Omni Phi","ms-creator-button",()=>build("Omni"));
   form.append(actions,feedback);
   panel.append(form,preview);
+  const lookup=el('section','ms-production-lookup');
+  lookup.append(el('h3','','Search the public production credits ledger'));
+  lookup.append(el('p','ms-creator-intro','Search a credited creator, actor or guest. All proposed tokens remain unfunded; a credit is not a bank account or verified ownership.'));
+  const searchInput=el('input','ms-creator-input');searchInput.type='search';
+  searchInput.placeholder='Actor, guest or creator name';searchInput.setAttribute('aria-label','Find your name in media credits');
+  const go=el('button','ms-creator-button','Find credits');go.type='button';
+  const results=el('div','ms-production-results');results.setAttribute('aria-live','polite');
+  go.addEventListener('click',async()=>{
+    if(searchInput.value.trim().length<2){results.textContent='Enter at least two letters.';return}
+    results.textContent='Checking source-backed production records…';
+    try{
+      const api=window.StarQuestCloudLedger;
+      if(typeof api?.searchProductionCredits!=='function')throw Error('production_api_pending');
+      const report=await api.searchProductionCredits(searchInput.value);
+      results.replaceChildren();
+      if(!report.results?.length){results.textContent='No matching credits are recorded yet.';return}
+      for(const item of report.results.slice(0,40)){
+        const row=el('article','ms-production-hit');
+        row.append(el('strong','',String(item.display_name||'')+' · '+String(item.role||'')),
+          el('small','',String(item.title||'')+' · '+String(item.qualified_plays||0)+' qualifying receipts · UNFUNDED'));
+        const source=String(item.evidence_url||'');
+        try{const u=new URL(source);if(u.protocol==='https:'){
+          const a=el('a','','Check source ↗');a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';row.append(a)
+        }}catch{}
+        const claim=el('button','ms-creator-button','Request credit review');claim.type='button';
+        claim.addEventListener('click',async()=>{
+          const proof=window.prompt('Provide a public official evidence URL for this credit. Do not upload private identity documents here.');
+          if(!proof)return;
+          try{
+            const out=await api.claimProductionCredit(String(item.credit_id),proof);
+            results.prepend(el('p','ms-creator-intro',out.submitted?'Claim submitted for identity/rights review. No StarCoins credited.':'Existing claim review is pending.'));
+          }catch{results.prepend(el('p','ms-creator-intro','Credit claim could not be verified. Connect your authorized StarQuest wallet and supply a source.'))}
+        });row.append(claim);results.append(row);
+      }
+    }catch{results.textContent='Public credit lookup is not yet operational on this backend. No payout was created.'}
+  });
+  lookup.append(searchInput,go,results);panel.append(lookup);
   host.append(panel);
   window.PhiMediaStarAsset=Object.freeze({
     html: options=>exportHtml(options&&typeof options==="object"?{
