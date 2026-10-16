@@ -132,6 +132,7 @@ public final class BubblesService extends Service {
         if (next != null && !next.trim().isEmpty()) speak(next);
     }
     private AudioRecord microphone;
+    private android.media.audiofx.AcousticEchoCanceler echoCanceler;
     private Thread audioThread;
     private Model voiceModel;
     private volatile boolean captureRunning = false;
@@ -166,7 +167,7 @@ public final class BubblesService extends Service {
     private final SpeechTurnBuffer turnBuffer = new SpeechTurnBuffer();
     // Vosk ends recognition at a brief pause, not necessarily at a thought.
     // Combine adjacent phrases until the owner has finished speaking.
-    private static final long END_OF_TURN_MS = 1650L;
+    private static final long END_OF_TURN_MS = 850L;
     private final Runnable deliverVoiceTurn = new Runnable() {
         @Override public void run() {
             if (!connected || muted) { turnBuffer.clear(); return; }
@@ -262,13 +263,12 @@ public final class BubblesService extends Service {
     }
 
     @Override public int onStartCommand(Intent intent, int flags, int startId) {
-        if (intent != null && ACTION_OPEN_CHAT.equals(intent.getAction())) {
-            if (connected && oracleWindow != null) {
-                silenceReply();
-                oracleWindow.show();
-            } else {
-                stopSelf();
-            }
+        // Open the first-party website overlay even on the first launch,
+        // without routing users into an unrelated native chat screen.
+        if (intent != null && ACTION_OPEN_CHAT.equals(intent.getAction())
+                && connected && oracleWindow != null) {
+            silenceReply();
+            oracleWindow.show();
             return START_NOT_STICKY;
         }
         if (intent != null && ACTION_STOP_SPEAKING.equals(intent.getAction())) {
@@ -342,7 +342,9 @@ public final class BubblesService extends Service {
             // user is in Twitter or another app, even with the panel collapsed.
             // The WebView has its own first-party wallet session; no cookie copying.
             oracleWindow = new FloatingOracleWindow(this, manager);
-            if (oracleWindow.show()) oracleWindow.hide();
+            if (oracleWindow.show()) {
+                if (intent == null || !ACTION_OPEN_CHAT.equals(intent.getAction())) oracleWindow.hide();
+            }
             else BrainNotes.prefs(this).edit().putString("last_error",
                 "QuantaPhi Bubbles could not open. No alternate chat was started.").apply();
             pendingAudioRecording = intent != null && ACTION_RECORD.equals(intent.getAction());
@@ -420,6 +422,14 @@ public final class BubblesService extends Service {
                     AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT, Math.max(minimum, 8192));
             if (microphone.getState() != AudioRecord.STATE_INITIALIZED)
                 throw new IllegalStateException("Microphone unavailable");
+            // Android acoustic echo cancellation reduces speaker feedback
+            // while the always-running microphone listens for interruptions.
+            try {
+                if (android.media.audiofx.AcousticEchoCanceler.isAvailable()) {
+                    echoCanceler = android.media.audiofx.AcousticEchoCanceler.create(microphone.getAudioSessionId());
+                    if (echoCanceler != null) echoCanceler.setEnabled(true);
+                }
+            } catch (RuntimeException ignored) { echoCanceler = null; }
             final AudioRecord input = microphone;
             final Recognizer decoder = new Recognizer(voiceModel, 16000f);
             input.startRecording();
@@ -429,6 +439,7 @@ public final class BubblesService extends Service {
             audioThread = new Thread(() -> {
                 short[] samples = new short[1600];
                 boolean suppressingReply = false;
+                int interruptionFrames = 0;
                 long voicedSamples = 0L;
                 try (Recognizer speech = decoder) {
                     while (captureRunning && connected && !muted) {
@@ -441,7 +452,28 @@ public final class BubblesService extends Service {
                         final float level = Math.min(1f, (float) Math.sqrt(sum / count) / 6000f);
                         // Require microphone evidence for every final recognition.
                         // Silence/room noise can otherwise emit invented Vosk text.
-                        if (speaking || SystemClock.elapsedRealtime() < echoQuietUntil) {
+                        if (speaking) {
+                            // A sustained near-field voice can interrupt a spoken
+                            // answer. Do not cut off a reply for one audio spike.
+                            float bargeLevel = (echoCanceler != null && echoCanceler.getEnabled())
+                                    ? .40f : .72f;
+                            interruptionFrames = level >= bargeLevel ? interruptionFrames + 1 : 0;
+                            if (interruptionFrames >= 5) {
+                                interruptionFrames = 0;
+                                main.post(() -> {
+                                    if (connected && !muted && speaking) {
+                                        silenceReply();
+                                        echoQuietUntil = SystemClock.elapsedRealtime() + 120L;
+                                    }
+                                });
+                            }
+                            suppressingReply = true;
+                            voicedSamples = 0L;
+                            speech.reset();
+                            continue;
+                        }
+                        interruptionFrames = 0;
+                        if (SystemClock.elapsedRealtime() < echoQuietUntil) {
                             suppressingReply = true;
                             voicedSamples = 0L;
                             speech.reset();
@@ -585,6 +617,10 @@ public final class BubblesService extends Service {
             }
             audioThread = null;
         }
+        if (echoCanceler != null) {
+            try { echoCanceler.release(); } catch (RuntimeException ignored) {}
+            echoCanceler = null;
+        }
         if (microphone != null) {
             microphone.release();
             microphone = null;
@@ -646,19 +682,9 @@ public final class BubblesService extends Service {
         Matcher matcher = namedWake.matcher(text);
         boolean directed = matcher.find();
         String addressed = directed ? text.substring(matcher.end()).replaceFirst("^[\\s,:.!?\\-]+", "").trim() : text;
-        // Energy is not proof of speech intent: Vosk can fabricate words from noise.
-        // Only deliberate wake-name/tap windows may create visible user messages.
-        if (!typed) {
-            if (directed) {
-                activeUntil = now + 30000L;
-                voiceFollowups = 0;
-            } else if (now >= activeUntil || ++voiceFollowups > MAX_VOICE_FOLLOWUPS) {
-                activeUntil = 0L;
-                if (MUTE.matcher(addressed).matches()) muteSession();
-                state(muted ? "muted" : "listening", .1f);
-                return;
-            }
-        }
+        // The microphone runs only after explicit Android permission and a
+        // visible foreground session. Real gated speech needs no wake word.
+        if (!typed && addressed.length() < 3) return;
         BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
         if (SimNetworkCommands.matches(addressed)) {
             screenStatus(CellularInspector.capture(this), false);

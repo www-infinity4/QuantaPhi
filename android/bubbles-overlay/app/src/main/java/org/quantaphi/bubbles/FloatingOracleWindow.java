@@ -64,7 +64,6 @@ final class FloatingOracleWindow {
     private final java.util.ArrayDeque<QueuedMessage> pendingTyped = new java.util.ArrayDeque<>();
     private boolean dispatchInFlight = false, typedDispatchInFlight = false;
     private long speechDispatchAt = 0L, typedDispatchAt = 0L;
-    private Button muteButton;
     private static final String SITE_URL = "https://quantaphi.org/bubbles.html?nativeOverlay=1"; // paired through ordinary chat input
     private static final String SITE_HOST = "quantaphi.org";
 
@@ -81,8 +80,6 @@ final class FloatingOracleWindow {
                 deliverQueuedText();
                 pollWebsiteReply();
             }
-            String voice = BrainNotes.prefs(service).getString("voice_state", "starting");
-            if (muteButton != null) muteButton.setText("muted".equals(voice) ? "Mic on" : "Mic off");
             ui.postDelayed(this, 400);
         }
     };
@@ -137,14 +134,6 @@ final class FloatingOracleWindow {
         title.setSingleLine(true);
         title.setTypeface(null, Typeface.BOLD);
         header.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
-        muteButton = button("Mic off", false);
-        muteButton.setContentDescription("Mute or resume Bubbles microphone; text chat still works");
-        muteButton.setOnClickListener(v -> {
-            boolean muted = "muted".equals(BrainNotes.prefs(service).getString("voice_state", ""));
-            service.startService(new Intent(service, BubblesService.class)
-                .setAction(muted ? BubblesService.ACTION_RESUME : BubblesService.ACTION_MUTE));
-        });
-        header.addView(muteButton);
         Button close = button("✕", false);
         close.setContentDescription("Close floating Oracle conversation");
         close.setOnClickListener(v -> hide());
