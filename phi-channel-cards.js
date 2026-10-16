@@ -17,7 +17,7 @@ let active=null;
 function stop(){
  if(!active)return;
  // Removing the iframe stops video and audio before a new station starts.
- active.viewer.replaceChildren();
+ active.viewer.removeChild(active.frame);
  active.viewer.hidden=true;
  active.screen.hidden=false;
  active.screen.setAttribute('aria-expanded','false');
@@ -56,7 +56,7 @@ for(const c of channels){
    frame.src='/omni-tv/?embedded=1#'+encodeURIComponent(c.tune);
    viewer.insertBefore(frame,status);
    status.textContent='Tuning '+c.name+' using the Omni TV remote…';
-   active={card,screen,viewer,status};
+   active={card,screen,viewer,status,frame};
  });
  close.addEventListener('click',()=>{stop();screen.focus()});
 }
