@@ -133,15 +133,16 @@ function showProgram(playback,program,token){
 }
 function changeProgram(playback,step){
  if(active!==playback)return;
- const channel=playback.channel==='omni'?'starquest':playback.channel;
- if(channel==='shoplc'){playback.streamIndex=(playback.streamIndex+1)%catalog.SHOPLC_STREAMS.length;resetMedia();const token=++generation;void playShopLC(playback,token,playback.streamIndex);return}
- if(playback.channel==='omni'){
+ // Omni's CH buttons always change CHANNEL, even when currently on ShopLC.
+ if(playback.key==='omni'){
   const i=remoteChannels.indexOf(playback.remoteChannel);
   playback.remoteChannel=remoteChannels[(i+step+remoteChannels.length)%remoteChannels.length];
   playback.channel=playback.remoteChannel;
   playback.fallbacks=0;resetMedia();const token=++generation;showProgram(playback,programFor(playback),token);
   return;
  }
+ const channel=playback.channel;
+ if(channel==='shoplc'){playback.streamIndex=(playback.streamIndex+1)%catalog.SHOPLC_STREAMS.length;resetMedia();const token=++generation;void playShopLC(playback,token,playback.streamIndex);return}
  const next=catalog.next(channel,playback.program,step);
  playback.fallbacks=playback.fallbacks||0;resetMedia();const token=++generation;showProgram(playback,next,token);
 }
