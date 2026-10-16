@@ -26,7 +26,12 @@ final class ScreenAwareness {
         if (utterance == null) return false;
         String q = utterance.toLowerCase(Locale.ROOT).trim();
         return TAP.matcher(q).matches() || SCROLL.matcher(q).matches()
+            || currentArticleReference(q)
             || q.matches("(?s).*\\b(?:screen|screenshot|on (?:my |the )?(?:phone|page|display)|this (?:page|app|screen|button|link|window)|visible (?:text|button)|what(?:'s| is) (?:on|showing on) (?:this|my|the) (?:page|screen)|what(?:'s| is) this|explain this|do this for me)\\b.*");
+    }
+    private static boolean currentArticleReference(String q) {
+        return q.matches("(?s).*\\b(?:article|story)\\b.*\\b(?:i['’]?m|i am)\\s+(?:looking\\s+at|reading)\\b.*")
+            || q.matches("(?s).*\\b(?:research|investigate|read|explain)\\b.*\\bwhat\\s+(?:i['’]?m|i am)\\s+reading\\b.*");
     }
     static String tapTarget(String utterance) {
         if (utterance == null) return null;
