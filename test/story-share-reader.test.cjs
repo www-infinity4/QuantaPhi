@@ -24,7 +24,7 @@ test('Asteroid search is entity-first and rejects stories not supported by its s
  const code=load('infinite-book-discovery.js');
  assert.match(code,/researchedTopic\+' documented history original source'/);
  assert.match(code,/storyKind==='asteroid' && roll\.quantFocus/);
- assert.match(code,/!matched\\.some\\(source=>normalized\\(source\\.title/);
+ assert.ok(code.includes('!matched.some(source=>normalized(source.title'));
  assert.match(code,/Asteroid is a metaphor for investigating the current search/);
  assert.match(code,/ASTEROID IMPACT EDITION/);
  assert.match(code,/NEVER write about literal asteroids/);
