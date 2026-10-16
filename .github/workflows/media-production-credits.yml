@@ -1,0 +1,29 @@
+name: Media Star production credit receipts
+on:
+  pull_request:
+    paths:
+      - 'phi-channel-cards.js'
+      - 'media-star-creator.js'
+      - 'index.html'
+      - 'test/media-production-credits.test.cjs'
+      - '.github/workflows/media-production-credits.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'phi-channel-cards.js'
+      - 'media-star-creator.js'
+      - 'index.html'
+      - 'test/media-production-credits.test.cjs'
+      - '.github/workflows/media-production-credits.yml'
+permissions: {contents: read}
+jobs:
+  receipts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '24'}
+      - run: |
+          node --check media-star-creator.js
+          node --check phi-channel-cards.js
+          node --test test/media-production-credits.test.cjs test/phi-channel-cards.test.cjs
