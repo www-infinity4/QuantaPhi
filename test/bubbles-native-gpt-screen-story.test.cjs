@@ -24,7 +24,7 @@ test('Android screen context requires explicit request and owner-enabled Accessi
  const SCREEN=read('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenAwareness.java');
  const READER=read('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/CaptureReader.java');
  assert.match(VOICE,/ScreenAwareness\.refersToScreen\(addressed\)/);
- assert.match(VOICE,/BrainLearningService\.inspectNow\(observation/);
+ assert.match(VOICE,/BrainLearningService\.inspectNow\(question/);
  assert.match(VOICE,/BrainLearningService\.performRequestedAction\(question\)/);
  assert.match(VOICE,/Settings\.ACTION_ACCESSIBILITY_SETTINGS/);
  assert.match(VOICE,/handleTypedRequest\(text\.trim\(\)\)/);

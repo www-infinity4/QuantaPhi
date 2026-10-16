@@ -351,7 +351,7 @@ final class FloatingOracleWindow {
         String evidence = observation == null || observation.trim().isEmpty()
             ? "Android returned no readable screen text." : observation;
         queue.addLast(new QueuedMessage(question.substring(0, Math.min(1800, question.length())),
-            evidence.substring(0, Math.min(1200, evidence.length()))));
+            evidence.substring(0, Math.min(ScreenAwareness.MAX_OBSERVATION, evidence.length()))));
         if (typed) deliverQueuedText(); else deliverQueuedSpeech();
         return true;
     }
@@ -390,6 +390,7 @@ final class FloatingOracleWindow {
             captureState.put("soundActive", prefs.getBoolean("audio_active", false));
             String readState = prefs.getString("screen_state", "");
             captureState.put("simInspection", true);
+            captureState.put("screenSharing", service.isScreenSharing());
             captureState.put("readState", readState.substring(0, Math.min(1800, readState.length())));
             captureState.put("screenState", prefs.getString("capture_state", "").substring(0,
                 Math.min(160, prefs.getString("capture_state", "").length())));
@@ -446,7 +447,7 @@ final class FloatingOracleWindow {
                 Object decoded = new JSONTokener(payload).nextValue();
                 if (!(decoded instanceof String) || ((String)decoded).isEmpty()) return;
                 String question = new JSONObject((String)decoded).optString("text", "");
-                if (question.isEmpty() || question.length() > 1800 || !(ScreenAwareness.refersToScreen(question) || SimNetworkCommands.matches(question))) return;
+                if (question.isEmpty() || question.length() > 1800 || !(service.isScreenSharing() || ScreenAwareness.sharingCommand(question) != 0 || ScreenAwareness.refersToScreen(question) || SimNetworkCommands.matches(question))) return;
                 service.startService(new Intent(service, BubblesService.class)
                     .setAction(BubblesService.ACTION_TEXT).putExtra("text", question));
             } catch (Exception error) {
@@ -509,6 +510,14 @@ final class FloatingOracleWindow {
      */
     void hide() {
         if (root != null) root.setVisibility(View.GONE);
+    }
+    boolean hideForScreenRead() {
+        boolean wasVisible = root != null && root.getVisibility() == View.VISIBLE;
+        hide();
+        return wasVisible;
+    }
+    void restoreAfterScreenRead(boolean wasVisible) {
+        if (wasVisible && root != null) root.setVisibility(View.VISIBLE);
     }
 
     void close() {

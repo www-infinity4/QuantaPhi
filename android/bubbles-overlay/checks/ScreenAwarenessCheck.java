@@ -5,6 +5,11 @@ public final class ScreenAwarenessCheck {
         if (!valid) throw new AssertionError(message);
     }
     public static void main(String[] args) {
+        check(ScreenAwareness.sharingCommand("start screen sharing") == 1, "start refreshed screen session");
+        check(ScreenAwareness.sharingCommand("watch my screen") == 1, "natural sharing command");
+        check(ScreenAwareness.sharingCommand("stop screen sharing") == -1, "end sharing");
+        check(ScreenAwareness.sharingCommand("tell me about a screen") == 0, "ordinary conversation is not sharing consent");
+        check(ScreenAwareness.attach("read", "x".repeat(6000)+"BOTTOM").contains("BOTTOM"), "retain lower-screen evidence beyond legacy cutoff");
         check(ScreenAwareness.refersToScreen("Can you see my screen?"), "screen reference");
         check(ScreenAwareness.refersToScreen("what's on this page?"), "page reference");
         check(ScreenAwareness.refersToScreen("Tap the Search button"), "tap request");

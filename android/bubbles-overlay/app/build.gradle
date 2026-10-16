@@ -9,8 +9,8 @@ android {
         applicationId 'org.quantaphi.bubbles'
         minSdk 26
         targetSdk 35
-        versionCode 25
-        versionName '0.25.0'
+        versionCode 26
+        versionName '0.26.0'
     }
     // Preview 5 is a new installable package because past preview-4 builds had
     // inconsistent certificates. CI supplies a cached preview-only keystore;
@@ -102,4 +102,3 @@ tasks.register('prepareOfflineVoice') {
     }
 }
 tasks.named('preBuild').configure { dependsOn('prepareOfflineVoice') }
-

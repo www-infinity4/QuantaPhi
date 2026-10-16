@@ -62,8 +62,8 @@ test('Voice notes work without a manual notes form', () => {
 });
 test('Preview 5 installs separately from previous debug signatures', () => {
   const gradle=source('android/bubbles-overlay/app/build.gradle');
-  assert.match(gradle,/versionCode 25/);
-  assert.match(gradle,/versionName '0\.25\.0'/);
+  assert.match(gradle,/versionCode 26/);
+  assert.match(gradle,/versionName '0\.26\.0'/);
   assert.match(gradle,/applicationIdSuffix '\.preview5'/);
 });
 

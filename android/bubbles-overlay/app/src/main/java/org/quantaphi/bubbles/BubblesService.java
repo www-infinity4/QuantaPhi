@@ -140,6 +140,17 @@ public final class BubblesService extends Service {
     private TextToSpeech tts;
     private volatile boolean connected = false, muted = false, speaking = false;
     private boolean busy = false;
+    private boolean screenSharing = false;
+    boolean isScreenSharing() { return screenSharing; }
+    private boolean screenSharingCommand(String question, boolean typed) {
+        int command = ScreenAwareness.sharingCommand(question);
+        if (command == 0) return false;
+        screenSharing = command > 0 && BrainLearningService.isConnected();
+        screenStatus(command < 0 ? "Screen sharing OFF." : screenSharing
+            ? "Screen sharing ON. I will read the current screen again with each message, including after you scroll. Say stop screen sharing to end it."
+            : "Screen sharing needs Bubbles enabled in Android Accessibility settings.", typed);
+        return true;
+    }
     private volatile boolean speechSuppressed = false;
     private long activeUntil = 0L, lastAt = 0L;
     private String lastTranscript = "", queued = "";
@@ -557,6 +568,7 @@ public final class BubblesService extends Service {
         }
     }
     private void muteSession() {
+        screenSharing = false;
         muted = true;
         activeUntil = 0L;
         stopRecognition();
@@ -613,6 +625,7 @@ public final class BubblesService extends Service {
             screenStatus(CellularInspector.capture(this), false);
             return;
         }
+        if (screenSharingCommand(addressed, false)) return;
         VoiceCaptureCommands.Command command = VoiceCaptureCommands.parse(addressed);
         if (command != null) {
             switch (command.action) {
@@ -702,7 +715,7 @@ public final class BubblesService extends Service {
         // Owner explicitly refers to what's on their Android screen or requests
         // one visible action. Attach fresh Android evidence before asking the
         // shared QuantaPhi brain; ordinary conversations never send screen data.
-        if (ScreenAwareness.refersToScreen(addressed)) {
+        if (screenSharing || ScreenAwareness.refersToScreen(addressed)) {
             speechSuppressed = false;
             handleScreenRequest(addressed, false);
             return;
@@ -762,13 +775,14 @@ public final class BubblesService extends Service {
             return;
         }
         BrainNotes.prefs(this).edit().putString("last_heard", text).apply();
+        if (screenSharingCommand(text, true)) return;
         VoiceCaptureCommands.Command capture = VoiceCaptureCommands.parse(text);
         if (capture != null) {
             // Native typed fallback has the same capture abilities as native speech.
             heard(text);
             return;
         }
-        if (ScreenAwareness.refersToScreen(text)) {
+        if (screenSharing || ScreenAwareness.refersToScreen(text)) {
             speechSuppressed = true;
             handleScreenRequest(text, true);
         } else if (oracleWindow != null && oracleWindow.sendTyped(text)) {
@@ -799,7 +813,12 @@ public final class BubblesService extends Service {
         }
         String action = BrainLearningService.performRequestedAction(question);
         if (action != null) { screenStatus(action, typed); return; }
-        BrainLearningService.inspectNow(observation -> main.post(() -> {
+        final boolean restorePanel = oracleWindow != null && oracleWindow.hideForScreenRead();
+        // Give the compositor a frame to remove our own chat from the screenshot.
+        main.postDelayed(() -> BrainLearningService.inspectNow(question, () -> {
+            if (oracleWindow != null) oracleWindow.restoreAfterScreenRead(restorePanel);
+        }, observation -> main.post(() -> {
+            if (oracleWindow != null) oracleWindow.restoreAfterScreenRead(restorePanel);
             if (!connected || (!typed && muted)) return;
             if (observation.startsWith("SCREEN_")) {
                 screenStatus(observation.replace("SCREEN_NOT_AVAILABLE:", "The current screen cannot be read.")
@@ -811,7 +830,7 @@ public final class BubblesService extends Service {
             if (oracleWindow != null && oracleWindow.sendScreenEvidence(question, observation, typed)) return;
             BrainNotes.prefs(this).edit().putString("last_error",
                 "The Bubbles website could not accept this screen request. No alternate AI was used.").apply();
-        }));
+        })), 160L);
     }
 
     private void askOracle(String userRequest) {
@@ -954,6 +973,7 @@ public final class BubblesService extends Service {
     @Override public IBinder onBind(Intent intent) {return null;}
     @Override public void onDestroy() {
         sessionRunning = false;
+        screenSharing = false;
         if(activeImageService == this) activeImageService = null;
         if(imagePickerCallback != null){imagePickerCallback.onReceiveValue(null);imagePickerCallback=null;}
         pendingWebsiteSpeech.clear();
@@ -1036,5 +1056,3 @@ public final class BubblesService extends Service {
         }
     }
 }
-
-

@@ -32,6 +32,10 @@ verification. It does not update an installed APK by itself.
 
 # Bubbles AI — native Android companion
 
+Version 0.26 adds **Share current screen**. Android reads a fresh frame for each message while sharing is enabled, including after scrolling. The floating chat hides for the screenshot and returns immediately after capture. The frame is sent to the existing Cloudflare image reader; images are not saved in chat or on disk. This is refreshed frame sharing, not continuous video streaming. Stop sharing or mute Bubbles to end the session. Website-only page view reads the current page viewport and cannot inspect other Android apps.
+
+Owner commands beginning **Direct GitHub** use the owner-authenticated Brain `/work/github` adapter. The Worker needs a server-side `GITHUB_TOKEN` credential with Contents, Pull requests and Actions write access on the selected repositories. Never put that credential into chat, frontend code or the APK. Missing credentials return `github_runtime_credential_missing`. Code changes go to a pinned `bubbles/` task branch and PR; commits, CI runs and deployments have separate receipts. Direct operations share repository leases and feed receipts to Purple and Black so they cooperate with the existing color bots.
+
 This Android app is the **cross-app layer** of QuantaPhi Bubbles AI. Unlike a
 website, a properly authorized Android foreground service can draw a draggable
 bubble over other apps while its visible microphone session is active.

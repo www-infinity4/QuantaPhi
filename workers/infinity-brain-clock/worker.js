@@ -1,4 +1,5 @@
 import {conversationMemory} from './conversation-memory.mjs';
+import {githubOperation,directGithubAgent,validateRepository} from './direct-github.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
 import { evidenceBucket } from './evidence-db.mjs';
@@ -292,7 +293,46 @@ export class BrainClock extends DurableObject{
   await this.emit('pink-panther','purple-pearl',body.status,message,receipt.commitSha?'https://github.com/'+lease.repository+'/commit/'+receipt.commitSha:runUrl);
   return Response.json({ok:true});
  }
+ async directGithub(body){
+  if(!/^[0-9a-f-]{36}$/i.test(body.requestId||''))return {ok:false,error:'request_id_required'};
+  const key='direct-github:'+body.requestId;
+  if(body.action==='receipt')return await this.ctx.storage.get(key)||{ok:false,error:'receipt_not_found'};
+  const repository=validateRepository(body.repository),leaseKey='repository-lease:'+repository;
+  const initial=await this.ctx.blockConcurrencyWhile(async()=>{
+   const prior=await this.ctx.storage.get(key);if(prior)return {existing:prior};
+   const lease=await this.ctx.storage.get(leaseKey);
+   if(lease?.leaseUntil>Date.now())return {existing:{ok:false,status:'blocked',error:'repository_job_running',repository}};
+   const record={ok:true,status:'working',repository,requestId:body.requestId,receipts:[],startedAt:new Date().toISOString()};
+   await this.ctx.storage.put(key,record);
+   await this.ctx.storage.put(leaseKey,{leaseUntil:Date.now()+10*60*1000,directRequestId:body.requestId,status:'direct_bubbles'});
+   return {record};
+  });
+  if(initial.existing)return initial.existing;
+  const record=initial.record;
+  const saveReceipt=async receipt=>{
+   const {content,...metadata}=receipt;
+   record.receipts.push(metadata);
+   await this.ctx.storage.put(key,record);
+   await this.emit('bubbles','purple-pearl','direct GitHub receipt',repository+' · '+(metadata.status||metadata.action||'source inspected'),metadata.url);
+  };
+  try{
+   const result=body.action==='assist'?await directGithubAgent(this.env,body,fetch,saveReceipt):await githubOperation(this.env,body);
+   if(body.action!=='assist')await saveReceipt(result);
+   const {receipts,...metadata}=result;
+   Object.assign(record,metadata,{status:metadata.status||(metadata.ok?'complete':'blocked'),finishedAt:new Date().toISOString()});
+   await this.ctx.storage.put(key,record);
+   await this.emit('bubbles','black-box','direct GitHub outcome',repository+' · '+record.status+'. GitHub receipts shared with color bots; no deployment inferred.');
+  }catch(error){
+   Object.assign(record,{ok:false,status:'blocked',error:String(error.message).slice(0,180),finishedAt:new Date().toISOString()});
+   await this.ctx.storage.put(key,record);
+  }finally{
+   const lease=await this.ctx.storage.get(leaseKey);
+   if(lease?.directRequestId===body.requestId)await this.ctx.storage.delete(leaseKey);
+  }
+  return record;
+ }
  async fetch(request){
+  if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
   if(new URL(request.url).pathname==='/owner/session-create'){
    const body=await request.json(),recipient=await this.ctx.storage.get('bot-work-recipient');
    // Never let the first wallet to visit a public website claim Robot Brain.
@@ -575,6 +615,18 @@ export default{
  },
  async fetch(request,env){
   const path=new URL(request.url).pathname;
+  if(path==='/work/github'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(Number(request.headers.get('Content-Length')||0)>160000)return output(request,{ok:false,error:'request_too_large'},413);
+   try{
+    const raw=await request.text();if(raw.length>160000)return output(request,{ok:false,error:'request_too_large'},413);
+    const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/github',{method:'POST',body:raw});
+    return output(request,await response.json(),response.status);
+   }catch{return output(request,{ok:false,error:'direct_github_unavailable'},503)}
+  }
   // Read-only scientific tool. Owner sessions or authenticated repository runners
   // may call this directly; no job is queued and no coins are minted.
   if(path==='/tools/resonance'&&request.method==='POST'){
@@ -681,4 +733,3 @@ export default{
   return output(request,await r.json());
  }
 };
-

@@ -31,7 +31,7 @@ test('legacy entry opens the same website window and preserves prior local histo
 });
 
 test('preview five installs separately when old package signer changed', () => {
-  assert.match(gradle, /versionCode 25/);
-  assert.match(gradle, /versionName '0\.25\.0'/);
+  assert.match(gradle, /versionCode 26/);
+  assert.match(gradle, /versionName '0\.26\.0'/);
   assert.match(gradle, /applicationIdSuffix '\.preview5'/);
 });
