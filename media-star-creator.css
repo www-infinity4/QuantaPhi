@@ -22,3 +22,10 @@
 #mediaStarCreator .ms-creator-preview:empty{display:none}
 #mediaStarCreator .ms-creator-preview>article{max-width:100%!important}
 @media (max-width:540px){#mediaStarCreator .ms-creator-actions{display:grid;grid-template-columns:1fr 1fr}#mediaStarCreator .ms-creator-button{padding:10px;font-size:12px}#mediaStarCreator .ms-creator-card{padding:15px}#mediaStarCreator .ms-creator-heading-copy{font-size:11px}}
+/* Each Media Star card carries a reviewed-contributor manifest, not counterfeit rewards. */
+#mediaStarCreator .ms-creator-disclaimer{font-size:12px;line-height:1.5;color:#59432e;margin:8px 2px}
+#mediaStarCreator .ms-credit-lookup{display:grid;gap:10px;background:#fff9e1;border:1px solid #b99651;border-radius:15px;margin-top:15px;padding:14px}
+#mediaStarCreator .ms-credit-lookup h3{margin:0;font-size:19px;color:#43235b}
+#mediaStarCreator .ms-credit-result{display:grid;gap:5px;background:#fff;border:1px solid #dcc18c;border-radius:12px;padding:12px;overflow-wrap:anywhere}
+#mediaStarCreator .ms-credit-result p{font-size:12px;margin:4px 0}
+#mediaStarCreator .ms-credit-result small{color:#775b35}
