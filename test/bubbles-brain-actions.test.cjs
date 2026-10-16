@@ -9,6 +9,11 @@ test('repository routing includes new owner repositories and respects explicit t
   assert.equal(repositoryFor('www-infinity4/HBO'),'www-infinity4/HBO');
   assert.equal(repositoryFor('www-infinity4/TV-Database'),'www-infinity4/TV-Database');
   assert.equal(repositoryFor('www-infinity4/WidgetPhi'),'www-infinity4/WidgetPhi');
+  assert.equal(repositoryFor('www-infinity4/Omni-TV'),'www-infinity4/Omni-TV');
+  assert.equal(repositoryFor('Repair Omni TV channel'),'www-infinity4/Omni-TV');
+  assert.equal(repositoryFor('Repair Omni-TV channel'),'www-infinity4/Omni-TV');
+  assert.equal(repositoryFor('Fix Omni TV in QuantaPhi'),'www-infinity4/Omni-TV');
+  assert.equal(classify('Fix Omni TV'),'queue');
   assert.equal(repositoryFor('Repair WidgetPhi'),'www-infinity4/WidgetPhi');
   assert.equal(repositoryFor('Repair Widget Phi'),'www-infinity4/WidgetPhi');
 
