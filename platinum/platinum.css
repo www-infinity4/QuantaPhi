@@ -30,3 +30,5 @@ button,input,textarea{font:inherit}button,a{touch-action:manipulation}button{cur
 [hidden]{display:none!important}:focus-visible{outline:3px solid #465b85;outline-offset:2px}
 @media(max-width:500px){.pl-brand{order:-1;width:100%}.pl-brand h1{font-size:34px}.pl-resume{align-items:flex-start;flex-direction:column}.pl-resume button{width:100%}.pl-bar button{padding:10px 14px}}
 @media(prefers-reduced-motion:no-preference){.pl-tile{transition:transform .15s,box-shadow .15s}.pl-tile:hover{transform:translateY(-2px);box-shadow:0 10px 24px #29395520}}
+
+.pl-offline-status{padding:13px 16px;margin:15px 0;border:1px solid #bfccd9;border-radius:13px;background:#fff;color:#253955}.pl-offline-status strong{font-size:14px;font-weight:900}.pl-offline-status p{font-size:13px;line-height:1.55;margin:6px 0 0;color:#4d6174}
