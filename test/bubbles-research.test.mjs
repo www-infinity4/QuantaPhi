@@ -1,11 +1,18 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {researchArticle,readWebsite,websiteUrl,rankStories} from '../workers/bubbles-tools/research.mjs';
-import {isArticleResearchRequest,runArticleResearch} from '../bubbles-research.mjs';
+import {isArticleResearchRequest,runArticleResearch,articleObservation} from '../bubbles-research.mjs';
 test('article requests are actions while source repairs stay engineering orders',()=>{
  assert.equal(isArticleResearchRequest('research the story I am looking at and use Infinity Phi to create a website token'),true);
  assert.equal(isArticleResearchRequest('find related stories about this idea'),true);
  assert.equal(isArticleResearchRequest('fix the article research adapter'),false);
+});
+test('page fallback reads the current viewport after scrolling, not the top of the document',()=>{
+ const paragraph=(text,top)=>({innerText:text,closest:()=>null,getBoundingClientRect:()=>({top,bottom:top+50,width:300,height:50})});
+ const root={querySelectorAll:()=>[paragraph('Old top-of-page text',-1000),paragraph('The story currently visible',100)]};
+ const doc={title:'Current website',body:root,querySelectorAll:()=>[],querySelector:()=>root};
+ const article=articleObservation(doc,{innerHeight:500,location:{href:'https://quantaphi.org/'}});
+ assert.match(article.text,/currently visible/);assert.doesNotMatch(article.text,/Old top/);
 });
 test('website reader restricts origins and validates every redirect',async()=>{
  for(const url of ['',undefined,'https://127.0.0.1/','https://quantaphi.org.evil.test/','http://quantaphi.org/','https://quantaphi.org/owner/key','https://quantaphi.org/story/?token=private'])assert.equal(websiteUrl(url),null);

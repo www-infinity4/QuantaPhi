@@ -3,11 +3,14 @@ export function isArticleResearchRequest(value){
  return /\b(?:research|investigate|find (?:the )?(?:best|related|connected)|look into)\b/i.test(text)&&/\b(?:article|story|stories|reading|looking at|this idea|this topic|infinity phi)\b/i.test(text)&&!/^\s*(?:fix|implement|debug|repair|upgrade)\b/i.test(text);
 }
 export function articleObservation(doc,view){
- const candidates=[...doc.querySelectorAll('article,[role="article"],main .story-card,main .reader-card')].filter(el=>!el.closest('#bubblesAICard'));
- const visible=candidates.map(el=>({el,rect:el.getBoundingClientRect()})).filter(x=>x.rect.bottom>0&&x.rect.top<view.innerHeight&&x.rect.width>0&&x.rect.height>0).sort((a,b)=>Math.min(b.rect.bottom,view.innerHeight)-Math.max(b.rect.top,0)-(Math.min(a.rect.bottom,view.innerHeight)-Math.max(a.rect.top,0)))[0]?.el;
+ const candidates=[...doc.querySelectorAll('article,[role="article"],section,.story-card,.reader-card')].filter(el=>!el.closest('#bubblesAICard,.ba-panel')&&el.querySelector('h1,h2,h3')&&el.querySelector('p,blockquote'));
+ const visible=candidates.map(el=>({el,rect:el.getBoundingClientRect()})).filter(x=>x.rect.bottom>0&&x.rect.top<view.innerHeight&&x.rect.width>0&&x.rect.height>0).sort((a,b)=>(Math.min(b.rect.bottom,view.innerHeight)-Math.max(b.rect.top,0))-(Math.min(a.rect.bottom,view.innerHeight)-Math.max(a.rect.top,0))||a.rect.height-b.rect.height)[0]?.el;
  const root=visible||doc.querySelector('main')||doc.body;
  const title=String(visible?.querySelector('h1,h2,h3')?.textContent||doc.title||'').replace(/\s+/g,' ').trim().slice(0,300);
- const paragraphs=[...root.querySelectorAll('h1,h2,h3,p,blockquote')].filter(el=>!el.closest('#bubblesAICard,nav,header,footer,form,[hidden]')).map(el=>String(el.innerText||'').trim()).filter(Boolean);
+ const paragraphs=[...root.querySelectorAll('h1,h2,h3,p,blockquote')].filter(el=>{
+  if(el.closest('#bubblesAICard,.ba-panel,nav,header,footer,form,[hidden]'))return false;
+  const rect=el.getBoundingClientRect();return rect.width>0&&rect.height>0&&(visible||rect.bottom>0&&rect.top<view.innerHeight);
+ }).map(el=>String(el.innerText||'').trim()).filter(Boolean);
  return {title,url:view.location.href,text:paragraphs.join('\n').slice(0,6500),observedAt:new Date().toISOString()};
 }
 export async function runArticleResearch({request,article,fetcher=fetch,storage=localStorage,document:doc=document,view=window,onStatus=()=>{}}){
