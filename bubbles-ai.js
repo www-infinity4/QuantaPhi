@@ -899,7 +899,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }
   nativeSpeechPending=false;return;
  }
- const screenQuestion=/^(?:(?:please|bubbles)[, ]+)*(?:read|explain|describe|look at|what(?:'s| is)|tap|click|press|select|scroll)\b/i.test(spoken)
+ const articleResearch=/\b(?:research|investigate|find (?:the )?(?:best|related|connected)|look into)\b/i.test(spoken)&&/\b(?:article|story|stories|reading|looking at|this idea|this topic|infinity phi)\b/i.test(spoken)&&!/^\s*(?:fix|implement|debug|repair|upgrade)\b/i.test(spoken);
+ const screenQuestion=articleResearch||/^(?:(?:please|bubbles)[, ]+)*(?:read|explain|describe|look at|what(?:'s| is)|tap|click|press|select|scroll)\b/i.test(spoken)
   && /\b(?:screen|screenshot|page|display|phone|this app|button|link|window)\b/i.test(spoken)
   || /^(?:please\s+)?(?:tap|click|press|select|scroll)\b/i.test(spoken);
  const sharing=screenSharingCommand(spoken);
@@ -1067,7 +1068,16 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const createRepository=/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request);
  const directRequest=/^(?:please\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
  const githubCheck=/^(?:please\s+)?(?:check|show|inspect)\s+(?:my\s+)?github\s+(?:access|tools|permissions|connection)[.!?]*$/i.test(request);
- if(!embedded&&(directRequest||githubCheck||createRepository)){
+ if(!embedded&&articleResearch){
+  try{
+   const module=await import('/bubbles-research.mjs?v=20261016-article1');
+   const article=nativeOverlay?{title:'',url:'',text:screenEvidence}:module.articleObservation(document,window);
+   if(nativeOverlay&&!article.text)throw Error('Current Android article observation is unavailable. Share the screen or paste the article URL.');
+   const result=await module.runArticleResearch({request,article,onStatus:text=>{status.textContent=text;}});
+   workEvidence='Article research completed with '+result.packet.sources.length+' ranked sources. Infinity Phi confirmed search token '+result.receipt.tokenId+'. Website builder: '+result.receipt.websiteStatus+'. Wallet credit requires its own ledger receipt.\n'+result.url+'\n'+result.receipt.websiteUrl;
+  }catch(error){workEvidence='Article research did not confirm the complete Infinity Phi handoff: '+String(error.message||error).slice(0,220)+'. No website or wallet credit is being claimed.';}
+ }
+ else if(!embedded&&(directRequest||githubCheck||createRepository)){
   const named=request.match(/\bwww-infinity4\/[A-Za-z0-9_.-]+\b/);
   const repoName=createRepository?request.match(/(?:repo(?:sitory)?\s+(?:called|named)\s+)([A-Za-z0-9_.-]+)/i)?.[1]:'';
   const repository=named?.[0]||(repoName?'www-infinity4/'+repoName:!createRepository&&(/\b(?:bubbles|quantaphi)\b/i.test(request)||githubCheck)?'www-infinity4/QuantaPhi':'');
@@ -1533,3 +1543,4 @@ if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 
 })();
+

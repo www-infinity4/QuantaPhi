@@ -1,3 +1,4 @@
+import {researchArticle} from './research.mjs';
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
 const VISION_MODEL='@cf/meta/llama-3.2-11b-vision-instruct';
@@ -193,6 +194,10 @@ export default {async fetch(request,env){
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
  if(request.method==='POST'&&url.pathname==='/v1/transcribe')return transcribe(request,env);
+ if(request.method==='POST'&&url.pathname==='/v1/research'){
+  try{const text=await request.text();if(text.length>16000)return response(request,{ok:false,error:'body_too_large'},413);return response(request,await researchArticle(JSON.parse(text),env));}
+  catch(error){return response(request,{ok:false,error:String(error.message||'research_failed').slice(0,120)},502);}
+ }
  if(request.method!=='POST'||url.pathname!=='/v1/assist')return response(request,{ok:false,error:'not_found'},404);
  if(Number(request.headers.get('Content-Length')||0)>500000)return response(request,{ok:false,error:'body_too_large'},413);
  try{
@@ -206,5 +211,6 @@ export default {async fetch(request,env){
   return await gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
  }catch{return response(request,{ok:false,error:'assistant_request_failed'},502);}
 }};
+
 
 
