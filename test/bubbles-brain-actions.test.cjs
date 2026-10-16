@@ -3,6 +3,14 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const {classify,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets}=require('../bubbles-brain-actions.js');
 
+test('repository routing includes new owner repositories',()=>{
+  assert.equal(repositoryFor('www-infinity4/Channel-Creatir'),'www-infinity4/Channel-Creatir');
+  assert.equal(repositoryFor('www-infinity4/HBO'),'www-infinity4/HBO');
+  assert.equal(repositoryFor('www-infinity4/TV-Database'),'www-infinity4/TV-Database');
+  assert.equal(repositoryFor('www-infinity4/UnknownRepo'),'www-infinity4/QuantaPhi');
+  assert.equal(repositoryFor('other-owner/SomeRepo'),'www-infinity4/QuantaPhi');
+});
+
 test('spoken owner instructions dispatch work while explanations remain chat',()=>{
  for(const utterance of [
   'Bubbles, fix the video generator',

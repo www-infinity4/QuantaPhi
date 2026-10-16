@@ -9,7 +9,10 @@ const OWNER_REPOS={
  'omni phi':'www-infinity4/Omni-Phi',
  'code phi':'www-infinity4/Code-Phi',
  'quanta phi':'www-infinity4/QuantaPhi',
- 'quantaphi':'www-infinity4/QuantaPhi'
+ 'quantaphi':'www-infinity4/QuantaPhi',
+ 'channel-creatir':'www-infinity4/Channel-Creatir',
+ 'hbo':'www-infinity4/HBO',
+ 'tv-database':'www-infinity4/TV-Database'
 };
 function classify(utterance){
  const text=String(utterance||'').trim().slice(0,4001);
