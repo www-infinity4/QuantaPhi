@@ -1426,7 +1426,7 @@ function announceBrainProgress(text){
  if(nativeOverlay){progressVoiceQueue.push(text);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
  else if(config.voice){progressVoiceQueue.push(text);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
 }
-setInterval(()=>{void pollBrainProgress();if(!nativeOverlay&&config.voice&&!busy&&!speaking&&progressVoiceQueue.length)speakText(progressVoiceQueue.shift());},15000);
+if(!embedded&&progressTracker&&typeof setInterval==='function')setInterval(()=>{void pollBrainProgress();if(!nativeOverlay&&config.voice&&!busy&&!speaking&&progressVoiceQueue.length)speakText(progressVoiceQueue.shift());},15000);
 void pollBrainProgress();
 async function readBrainReport(){
  const headers=await verifiedOwnerHeaders();
