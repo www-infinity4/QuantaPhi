@@ -10,7 +10,7 @@
 })(typeof globalThis!=='undefined'?globalThis:null,function(){
  'use strict';
  const ENTRIES=Object.freeze([
-  Object.freeze({code:'*100',label:'QuantaPhi live portal',url:'/',description:'Home, search and Infinity feed'}),
+  Object.freeze({code:'*100',label:'QuantaPhi live portal',url:'/',description:'Home, search and Infinity feed · 4-333-3333#'}),
   Object.freeze({code:'*101',label:'Infinity Platinum search',url:'/platinum/',description:'Browse, search and collect'}),
   Object.freeze({code:'*102',label:'Bubbles AI',url:'/#bubblesAICard',description:'One assistant on the QuantaPhi page'}),
   Object.freeze({code:'*103',label:'Robot Brain',url:'/#robotBrainOwner',description:'Owner-verified jobs and agent activity'}),
@@ -21,7 +21,10 @@
  function resolve(raw){
   const input=String(raw||'').trim().toLowerCase().replace(/\s+/g,' ');
   if(!input||input.length>40)return null;
-  const code=ALIASES[input]||input;
+  // A local Infinity access mnemonic. The trailing # prevents mistaking an
+  // ordinary phone number for an Infinity app command.
+  const localAccess=/^4[- ]?333[- ]?3333\s*#$/.test(input);
+  const code=localAccess?'*100':(ALIASES[input]||input);
   return ENTRIES.find(x=>x.code===code)||null;
  }
  function internalPath(entry){
