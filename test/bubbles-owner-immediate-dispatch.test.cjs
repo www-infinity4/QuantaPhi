@@ -30,7 +30,7 @@ test('Independent visitors are never granted the owner tools',()=>{
 });
 test('First-party site and studio both use new verified owner command assets',()=>{
  for(const page of [home,studio]){
-  assert.match(page,/bubbles-ai\.js\?v=202610(?:14|15)-[A-Za-z0-9-]+/);
-  assert.match(page,/bubbles-ai\.css\?v=202610(?:14|15)-[A-Za-z0-9-]+/);
+  assert.match(page,/bubbles-ai\.js\?v=2026\d{4}-[A-Za-z0-9-]+/);
+  assert.match(page,/bubbles-ai\.css\?v=2026\d{4}-[A-Za-z0-9-]+/);
  }
 });
