@@ -826,6 +826,19 @@ function extract(reply){
  if(value&&typeof value==='object')value=value.text||value.content||'';
  return String(value||'').trim();
 }
+// Omni continuity rule: a chat model cannot overturn the owner verification
+// already established by the first-party Brain gate. This only corrects freeform
+// model replies; real tool/HTTP auth errors and explicit device pairing are not hidden.
+function normalizeOwnerAssistantReply(reply,request,ownerVerified){
+ const answer=String(reply||'').trim();
+ if(!ownerVerified)return answer;
+ const ask=String(request||'');
+ if(/\b(?:pair|link|sync|connect)\b.{0,90}\b(?:another|other|second|new|apk|android|phone|device|browser|session)\b/i.test(ask))return answer;
+ const mentionsCode=/\b(?:64\s*[- ]?(?:character|characters|digit|digits|hex|hexadecimal)|pairing\s*(?:code|key)|one[- ]time\s*(?:pairing\s*)?(?:code|key))\b/i.test(answer);
+ const demandsCode=/\b(?:need|require|must|paste|enter|provide|send|give|supply|cannot|can't|blocked|without|not linked|not connected)\b/i.test(answer);
+ if(!mentionsCode||!demandsCode)return answer;
+ return 'Robot Brain owner access is already connected in this Bubbles session. You do not need another pairing code to continue here. I can check the authorized tools for your request; any actual job or repair needs its own verified receipt.';
+}
 function isOwnerWorkRequest(text){
  if(brainTools?.classify(text)==='queue')return true;
  const request=String(text||'').trim();
@@ -1172,7 +1185,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}
   }else if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.error||'Oracle conversation failed'));
-  const answer=extract(json);if(!answer)throw Error('The AI returned no spoken or written reply');
+  const rawAnswer=extract(json);if(!rawAnswer)throw Error('The AI returned no spoken or written reply');
+   const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
   messages.push({role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
   display(answer,'ai');status.textContent=config.alias+' · response received';
   if(json.receipt?.tool?.startsWith('resonance.')&&json.url==='https://quantaphi.org/resonance.html'){
