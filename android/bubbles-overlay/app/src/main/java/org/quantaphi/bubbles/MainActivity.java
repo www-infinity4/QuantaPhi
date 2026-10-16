@@ -80,6 +80,30 @@ public final class MainActivity extends Activity {
             state.setText("In Accessibility settings, enable Brain workflow learning for Bubbles Preview. Android asks you to approve it once.");
         });
         layout.addView(screenAccess);
+        Button phoneTool = new Button(this);
+        phoneTool.setText("Allow IBM / Gemini phone tool for 10 minutes");
+        phoneTool.setOnClickListener(v -> {
+            if (!BrainLearningService.isConnected()) {
+                state.setText("Enable Bubbles screen reading first, then return here to allow the phone tool.");
+                startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
+                return;
+            }
+            new AlertDialog.Builder(this).setTitle("Robot Brain and Bubbles phone tool")
+                .setMessage("For ten minutes your connected owner Robot Brain and Bubbles can read visible IBM/Gemini pages in Chrome, tap controls and type/send chat prompts. Visible page text and action receipts go to your existing Robot Brain service. Up to ten provider sends per session. Trial credits may be used when a prompt is sent. Password fields and account, payment and permission controls remain manual. Keep Chrome's address bar visible. Stop ends control immediately.")
+                .setNegativeButton("Cancel", null)
+                .setPositiveButton("Allow 10 minutes", (dialog, which) -> {
+                    PhoneToolController.start();
+                    if (canTalk()) checkAndStart();
+                    state.setText("Phone tool allowed for 10 minutes. Open the floating Bubbles chat to connect its verified owner session, then open IBM or Gemini in Chrome.");
+                }).show();
+        });
+        layout.addView(phoneTool);
+        Button stopPhoneTool = new Button(this);
+        stopPhoneTool.setText("Stop IBM / Gemini phone control");
+        stopPhoneTool.setOnClickListener(v -> {
+            PhoneToolController.stop(); state.setText("Phone control OFF. No further phone actions are permitted.");
+        });
+        layout.addView(stopPhoneTool);
         Button chat = new Button(this);
         chat.setText("Open QuantaPhi Bubbles chat");
         chat.setOnClickListener(view -> {

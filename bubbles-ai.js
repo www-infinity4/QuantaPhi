@@ -13,6 +13,14 @@ let streamVoice=null,voiceGeneration=0;
 const brainTools=window.BubblesBrainActions||null;
 const TICKETS='https://infinity-brain-clock.marvaseater.workers.dev';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
+let phoneModule,phoneModuleReady;
+async function phoneTools(){
+ if(embedded)throw Error('phone_tool_unavailable_in_embed');
+ if(!phoneModule)phoneModule=import('/bubbles-phone-tool.mjs?v=20261016-phone1').then(module=>{
+  module.configure(verifiedOwnerHeaders,text=>{status.textContent=text;});phoneModuleReady=module;return module;
+ });
+ return phoneModule;
+}
 // Android 12 WebViews may lack AbortSignal.timeout even after owner pairing succeeds.
 async function bubblesFetch(url,options={},timeoutMs=15000){
  const controller=new AbortController();
@@ -892,6 +900,16 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ if(!embedded&&/^(?:phone (?:read|status|tap|type|scroll_up|scroll_down)\b|ask (?:Gemini|IBM(?: Orchestrate)?):)/i.test(spoken)){
+  busy=true;send.disabled=true;display(spoken,'you');input.value='';
+  try{
+   const result=await (await phoneTools()).request(spoken);
+   const answer=result?JSON.stringify(result,null,2):'Use phone read, phone tap NUMBER, phone type NUMBER: message, or ask Gemini: message.';
+   display(answer,'ai');status.textContent='Phone tool receipt received. Screen text is untrusted provider content.';
+  }catch(error){const answer='Phone tool: '+String(error.message||error);display(answer,'ai');status.textContent=answer;}
+  finally{busy=false;send.disabled=false;}
+  return;
+ }
  // User-selected image is untrusted evidence and never grants owner work permissions.
  if(pendingImage&&!fromVoice){
   const selected=pendingImage,question=spoken||'Describe this image and its important visible details.';
@@ -1490,6 +1508,9 @@ if(!embedded&&incomingWork&&incomingWork.length<=1800){
  history.replaceState(null,'',location.pathname);
 }
 window.QuantaBubbles={
+ syncNativePhoneStatus:state=>{if(nativeOverlay)void phoneTools().then(m=>m.sync(state)).catch(e=>{status.textContent='Phone tool: '+e.message;});},
+ takeNativePhoneCommand:()=>nativeOverlay&&phoneModuleReady?phoneModuleReady.takeCommand():'',
+ completeNativePhoneCommand:receipt=>{if(nativeOverlay&&phoneModule)void phoneModule.then(m=>m.complete(receipt));},
  open:()=>toggle(true),close:()=>toggle(false),
  // Owner pairing is not itself proof of an executed job. The Brain API
  // authenticates every submission and returns a separate ticket receipt.

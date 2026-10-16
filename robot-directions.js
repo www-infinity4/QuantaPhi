@@ -15,6 +15,8 @@ const ROLE_TOOLS={
  purple:['GPT receipt review','Job sequencer and retries','Progress reporter','Owner acceptance gate'],
  black:['Permanent evidence seal','Deployed source verification']
 };
+// This is an actual shared adapter, available only during a phone-owner grant.
+for(const tools of Object.values(ROLE_TOOLS))tools.push('IBM / Gemini phone chat · scripts/brain-phone-tool.mjs · owner-enabled session required');
 const REPO='www-infinity4/QuantaPhi';
 const MOBILE='Verified in the Android Chromium browser on quantaphi.org with screenshots attached';
 // One-tap maintenance crews: saved straight to the work ticket as structured

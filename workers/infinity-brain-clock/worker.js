@@ -1,4 +1,5 @@
 import {conversationMemory} from './conversation-memory.mjs';
+import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
@@ -371,6 +372,12 @@ export class BrainClock extends DurableObject{
   return record;
  }
  async fetch(request){
+  if(new URL(request.url).pathname.startsWith('/phone/')){
+   const body=await request.json();
+   const result=await this.ctx.blockConcurrencyWhile(()=>phoneTool(this.ctx.storage,
+    new URL(request.url).pathname.slice(7),body,request.headers.get('X-Phone-Device')||''));
+   return Response.json(result.body,{status:result.status});
+  }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
   if(new URL(request.url).pathname==='/owner/session-create'){
    const body=await request.json(),recipient=await this.ctx.storage.get('bot-work-recipient');
@@ -654,6 +661,25 @@ export default{
  },
  async fetch(request,env){
   const path=new URL(request.url).pathname;
+  if(path.startsWith('/tools/phone/')&&request.method==='POST'){
+   const op=path.slice('/tools/phone/'.length),origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   if(!['open','close','status','command','next','result'].includes(op))return output(request,{ok:false,error:'unknown_phone_operation'},404);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1]||'';
+   if(!['next','result'].includes(op)){
+    let allowed=await ownerAuthorized(env,token);
+    if(!allowed&&['status','command'].includes(op))try{await authenticate(request);allowed=true;}catch{}
+    if(!allowed)return output(request,{ok:false,error:'owner_or_runner_authorization_required'},401);
+   }
+   try{
+    if(Number(request.headers.get('Content-Length')||0)>40000)return output(request,{ok:false,error:'phone_body_too_large'},413);
+    const raw=await request.text();if(raw.length>40000)return output(request,{ok:false,error:'phone_body_too_large'},413);
+    JSON.parse(raw||'{}');
+    const r=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/phone/'+op,
+     {method:'POST',headers:{'X-Phone-Device':['next','result'].includes(op)?token:''},body:raw||'{}'});
+    return output(request,await r.json(),r.status);
+   }catch{return output(request,{ok:false,error:'phone_tool_unavailable'},503);}
+  }
   if(path==='/work/github'&&request.method==='POST'){
    const origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);

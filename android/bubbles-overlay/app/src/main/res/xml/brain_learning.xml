@@ -7,6 +7,6 @@
     android:notificationTimeout="500"
     android:canRetrieveWindowContent="true"
     android:canTakeScreenshot="true"
-    android:accessibilityFlags="flagRetrieveInteractiveWindows"
+    android:accessibilityFlags="flagRetrieveInteractiveWindows|flagReportViewIds"
     android:description="@string/brain_learning_description"
     android:settingsActivity="org.quantaphi.bubbles.MainActivity"/>

@@ -41,7 +41,7 @@ public final class BrainLearningService extends AccessibilityService {
             && !pkg.equals("com.android.systemui") && !pkg.equals("com.android.settings");
     }
     /** Prefer the foreground app, but skip the Bubbles floating overlay. */
-    private AccessibilityNodeInfo currentRoot() {
+    AccessibilityNodeInfo currentRoot() {
         AccessibilityNodeInfo root = getRootInActiveWindow();
         if (allowed(root)) return root;
         if (root != null) root.recycle();
@@ -221,6 +221,9 @@ public final class BrainLearningService extends AccessibilityService {
         } finally { root.recycle(); }
     };
     @Override public void onAccessibilityEvent(AccessibilityEvent event) {
+        if (event.getEventType() == AccessibilityEvent.TYPE_VIEW_SCROLLED
+                && "com.android.chrome".contentEquals(event.getPackageName() == null ? "" : event.getPackageName()))
+            PhoneToolController.invalidate();
         main.removeCallbacks(capture);
         String app=String.valueOf(event.getPackageName());
         String key=LearningPolicy.key(app);
@@ -237,11 +240,20 @@ public final class BrainLearningService extends AccessibilityService {
             if(child!=null)try { collect(child,out,count,depth+1); } finally { child.recycle(); }
         }
     }
-    @Override public void onInterrupt() {main.removeCallbacks(capture);}
+    @Override public void onInterrupt() {main.removeCallbacks(capture); PhoneToolController.stop();}
     @Override public void onDestroy() {
+        PhoneToolController.stop();
         main.removeCallbacks(capture);
         screenWorker.shutdownNow();
         if(active.get()==this)active.clear();
         super.onDestroy();
+    }
+    static org.json.JSONObject runPhoneTool(org.json.JSONObject command, String generation) {
+        BrainLearningService service = active.get();
+        if (service != null) return PhoneToolController.execute(service, command, generation);
+        org.json.JSONObject receipt = new org.json.JSONObject();
+        try { receipt.put("id", command.optString("id")).put("ok", false).put("error", ACCESS_OFF); }
+        catch (Exception ignored) {}
+        return receipt;
     }
 }
