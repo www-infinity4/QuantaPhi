@@ -389,7 +389,8 @@ final class FloatingOracleWindow {
             captureState.put("screenRecording", prefs.getBoolean("capture_recording", false));
             captureState.put("soundActive", prefs.getBoolean("audio_active", false));
             String readState = prefs.getString("screen_state", "");
-            captureState.put("readState", readState.substring(0, Math.min(600, readState.length())));
+            captureState.put("simInspection", true);
+            captureState.put("readState", readState.substring(0, Math.min(1800, readState.length())));
             captureState.put("screenState", prefs.getString("capture_state", "").substring(0,
                 Math.min(160, prefs.getString("capture_state", "").length())));
             captureState.put("soundState", prefs.getString("audio_state", "").substring(0,
@@ -445,7 +446,7 @@ final class FloatingOracleWindow {
                 Object decoded = new JSONTokener(payload).nextValue();
                 if (!(decoded instanceof String) || ((String)decoded).isEmpty()) return;
                 String question = new JSONObject((String)decoded).optString("text", "");
-                if (question.isEmpty() || question.length() > 1800 || !ScreenAwareness.refersToScreen(question)) return;
+                if (question.isEmpty() || question.length() > 1800 || !(ScreenAwareness.refersToScreen(question) || SimNetworkCommands.matches(question))) return;
                 service.startService(new Intent(service, BubblesService.class)
                     .setAction(BubblesService.ACTION_TEXT).putExtra("text", question));
             } catch (Exception error) {

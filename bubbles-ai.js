@@ -23,7 +23,7 @@ const embedded=params.get('embed')==='1'&&window.parent!==window;
 const nativeOverlay=!embedded&&params.get('nativeOverlay')==='1';
 // Native Android uses the identical QuantaPhi website assistant and owner-wallet
 // gates. It must not copy Chrome cookies or obtain owner rights from a query string.
-let nativeSpeechReply='',nativeSpeechPending=false,noteTaking=false;
+let nativeSpeechReply='',nativeSpeechPending=false,noteTaking=false,nativeSimAvailable=false;
 // A retry after a lost evaluateJavascript callback must not re-submit a turn.
 // IDs only: no transcript, owner code or credentials are stored in this set.
 const nativeAcceptedIds=new Set();let nativeBridgeBusy=false;
@@ -285,7 +285,8 @@ cloudToggle.type='checkbox';cloudToggle.checked=cloudChat;cloudToggle.disabled=!
 cloudLabel.append(cloudToggle,create('span','','Optional extra wallet transcript backup (separate from APK pairing)'));
 const linkBubbles=create('button','ba-control ba-link-bubbles','Connect / sync Bubbles');linkBubbles.type='button';
 const createOwnerCode=create('button','ba-control','Create one-time owner code');createOwnerCode.type='button';
-const ownerCodeHelp=create('p','ba-muted','To connect another Bubbles session: use this button in the website or APK where Robot Brain is already connected, then tap Copy one-time code. In the other session, paste it into Message Bubbles and Send, or its secure owner connection field. It expires in two minutes. If neither session is connected, open Robot Brain owner access and use your existing owner recovery key or verified owner wallet first. Never post a recovery key in chat.');
+const ownerCodeHelp=create('details','ba-owner-help');
+ownerCodeHelp.append(create('summary','','Pairing directions'),create('p','','To connect another Bubbles session: use this button in the website or APK where Robot Brain is already connected, then tap Copy one-time code. In the other session, paste it into Message Bubbles and Send, or its secure owner connection field. It expires in two minutes. If neither session is connected, open Robot Brain owner access and use your existing owner recovery key or verified owner wallet first. Never post a recovery key in chat.'));
 createOwnerCode.hidden=embedded;ownerCodeHelp.hidden=embedded;
 createOwnerCode.addEventListener('click',()=>linkBubbles.click());
 const linkStatus=create('p','ba-muted','Connect this Bubbles session and show a one-time code for your other session.');
@@ -754,6 +755,19 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Speech is already intercepted in BubblesService before reaching this page.
  // Route explicit screen questions and low-risk controls to Android only.
  // Returned observations are passed separately and never re-enter this route.
+ const simQuestion=/^(?:(?:please|bubbles)[, ]+)*(?:check|inspect|show|read)(?: my| the)? (?:sim(?: card)?(?: status)?|cellular(?: connection)?|internet connection|network status)[.!?]*$/i.test(spoken);
+ if(simQuestion){
+  if(nativeOverlay){
+   if(!nativeSimAvailable){status.textContent='SIM inspection needs Bubbles Android 0.24 or later. This installed app has not advertised that tool.';nativeSpeechPending=false;return;}
+   if(nativeScreenRequests.length>=24){status.textContent='Android request queue is full. Try again after the current requests finish.';return;}
+   nativeScreenRequests.push(spoken);input.value='';
+   status.textContent='Checking this phone’s SIM and actual connection through Android. Waiting for device results…';
+  }else{
+   const reply='SIM inspection runs in the Bubbles Android app. Say “check my SIM” there. A website cannot read your SIM. The check reports SIM presence, network name and actual internet connection; it cannot activate free carrier data.';
+   display(reply,'ai');status.textContent=reply;
+  }
+  nativeSpeechPending=false;return;
+ }
  const screenQuestion=/^(?:(?:please|bubbles)[, ]+)*(?:read|explain|describe|look at|what(?:'s| is)|tap|click|press|select|scroll)\b/i.test(spoken)
   && /\b(?:screen|screenshot|page|display|phone|this app|button|link|window)\b/i.test(spoken)
   || /^(?:please\s+)?(?:tap|click|press|select|scroll)\b/i.test(spoken);
@@ -1228,6 +1242,7 @@ window.QuantaBubbles={
  ownerToolConnected:()=>Boolean(nativeOverlay&&ownerReady&&ownerHeaders?.Authorization),
  syncNativeCaptureStatus:(capture)=>{
   if(!nativeOverlay||!capture||typeof capture!=='object')return false;
+  nativeSimAvailable=capture.simInspection===true;
   const screenActive=capture.screenActive===true,started=capture.screenRecording===true;
   const soundActive=capture.soundActive===true;
   nativeRecordingActive=screenActive||soundActive;
@@ -1243,8 +1258,12 @@ window.QuantaBubbles={
   const lastReceipt=!nativeRecordingActive&&(/saved|failed|finished|error/i.test(screen+' '+sound))
    ?' · Last result: '+(/saved|failed|finished|error/i.test(screen)?screen:sound):'';
   recorderStatus.textContent=mode+' · '+soundMode+lastReceipt;
-  const readState=String(capture.readState||'').slice(0,600);
-  if(readState&&readState!==nativeScreenStatus){nativeScreenStatus=readState;status.textContent=readState;}
+  const readState=String(capture.readState||'').slice(0,1800);
+  if(readState&&readState!==nativeScreenStatus){
+   nativeScreenStatus=readState;
+   if(readState.startsWith('Hardware:')){display(readState,'ai');status.textContent='SIM and connection check complete. Device details are above; no carrier service was activated.';}
+   else status.textContent=readState;
+  }
   return true;
  },
  setNativeGPTAvailable:(available)=>{

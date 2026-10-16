@@ -72,6 +72,11 @@ jobs:
           node --test test/bubbles-native-chat.browser.cjs test/bubbles-web-chat.browser.cjs
       - name: Verify isolated Android preview install contract
         run: node --test test/bubbles-apk-preview.test.cjs
+      - name: Verify SIM inspection intent boundaries
+        run: |
+          mkdir -p /tmp/bubbles-sim
+          javac -d /tmp/bubbles-sim android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SimNetworkCommands.java android/bubbles-overlay/checks/SimNetworkCommandsCheck.java
+          java -cp /tmp/bubbles-sim org.quantaphi.bubbles.SimNetworkCommandsCheck
       - name: Verify continuous native microphone contract
         run: node --test test/bubbles-continuous-native.test.cjs
       - name: Verify ChatGPT OAuth permission and response contract

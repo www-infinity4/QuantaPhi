@@ -609,6 +609,10 @@ public final class BubblesService extends Service {
         boolean directed = matcher.find();
         // The user-started listening session accepts ordinary speech without a wake word.
         String addressed = directed ? text.substring(matcher.end()).replaceFirst("^[\\s,:.!?\\-]+", "").trim() : text;
+        if (SimNetworkCommands.matches(addressed)) {
+            screenStatus(CellularInspector.capture(this), false);
+            return;
+        }
         VoiceCaptureCommands.Command command = VoiceCaptureCommands.parse(addressed);
         if (command != null) {
             switch (command.action) {
@@ -751,6 +755,10 @@ public final class BubblesService extends Service {
                 BrainNotes.prefs(this).edit().putString("last_error",
                     "Pairing code waits for the connected Bubbles website chat. No secret sent to AI.").apply();
             }
+            return;
+        }
+        if (SimNetworkCommands.matches(text)) {
+            screenStatus(CellularInspector.capture(this), true);
             return;
         }
         BrainNotes.prefs(this).edit().putString("last_heard", text).apply();

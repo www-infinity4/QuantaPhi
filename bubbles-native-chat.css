@@ -90,3 +90,29 @@ html.bubbles-native-overlay .ba-panel .ba-actions{grid-template-columns:repeat(2
 html.bubbles-native-overlay .ba-panel .ba-actions .ba-photo-upload{min-height:48px;display:flex}
 html.bubbles-native-overlay .ba-panel .ba-actions .ba-photo-file{position:absolute;inset:0;opacity:0;min-height:0;height:100%;width:100%;z-index:5}
 html.bubbles-native-overlay .ba-panel .ba-actions .ba-send{width:100%}
+
+/* Keep assistant text readable even when the page theme mutes every paragraph. */
+body .ba-panel,
+body .ba-panel :is(.ba-message,.ba-muted,.ba-status,.ba-owner-status,.ba-privacy-label,.ba-owner-help) {
+ color:#17212b!important; opacity:1; text-shadow:none;
+}
+body .ba-panel .ba-message {font-size:16px;line-height:1.55;background:#f3f5f7}
+body .ba-panel .ba-you {background:#e5f3eb;color:#122b20!important}
+body .ba-panel :is(.ba-muted,.ba-status,.ba-owner-status) {font-size:14px;line-height:1.45}
+body .ba-panel .ba-owner-help {margin:4px 0;font-size:14px}
+body .ba-panel .ba-owner-help summary {min-height:44px;display:flex;align-items:center;font-weight:700;cursor:pointer}
+body .ba-panel .ba-owner-help p {color:#17212b!important;line-height:1.5}
+body .ba-panel textarea {color:#17212b!important;background:#fff!important;-webkit-text-fill-color:#17212b}
+body .ba-panel textarea::placeholder {color:#465462;opacity:1}
+body .ba-panel button:disabled {opacity:.8}
+@media(max-width:600px){
+ html:not(.bubbles-native-overlay) .ba-panel {
+  width:calc(100vw - 24px);max-width:390px;right:12px;bottom:80px;
+  height:min(68dvh,520px);max-height:calc(100dvh - 96px);min-height:0;padding:8px;gap:6px;
+ }
+ body .ba-panel .ba-message {max-width:100%;padding:9px 10px}
+ body .ba-panel .ba-composer textarea {min-height:48px;height:52px;max-height:80px;font-size:16px}
+}
+html.bubbles-native-overlay .ba-panel {padding:6px;gap:6px}
+html.bubbles-native-overlay .ba-panel .ba-composer {padding:6px}
+html.bubbles-native-overlay .ba-panel .ba-composer textarea {min-height:48px;height:52px;max-height:80px}
