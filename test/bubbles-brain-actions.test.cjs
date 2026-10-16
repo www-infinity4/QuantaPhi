@@ -3,12 +3,25 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const {classify,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets}=require('../bubbles-brain-actions.js');
 
-test('repository routing includes new owner repositories',()=>{
+test('repository routing includes new owner repositories and respects explicit token precedence',()=>{
+  // Allowed explicit tokens resolve directly.
   assert.equal(repositoryFor('www-infinity4/Channel-Creatir'),'www-infinity4/Channel-Creatir');
   assert.equal(repositoryFor('www-infinity4/HBO'),'www-infinity4/HBO');
   assert.equal(repositoryFor('www-infinity4/TV-Database'),'www-infinity4/TV-Database');
-  assert.equal(repositoryFor('www-infinity4/UnknownRepo'),'www-infinity4/QuantaPhi');
-  assert.equal(repositoryFor('other-owner/SomeRepo'),'www-infinity4/QuantaPhi');
+
+  // Explicit token that is NOT allow‑listed must be rejected.
+  assert.throws(
+    () => repositoryFor('www-infinity4/UnknownRepo'),
+    err => err && err.code === 'unsupported_repository'
+  );
+
+  // When no explicit token is present, historic alias scanning applies.
+  assert.equal(repositoryFor('Fix the QuantaPhi robot'), 'www-infinity4/QuantaPhi');
+  assert.equal(repositoryFor('other-owner/SomeRepo'), 'www-infinity4/QuantaPhi');
+
+  // Explicit token takes precedence over incidental aliases.
+  const mixed = 'Fix www-infinity4/Channel-Creatir using QuantaPhi and HBO context';
+  assert.equal(repositoryFor(mixed), 'www-infinity4/Channel-Creatir');
 });
 
 test('spoken owner instructions dispatch work while explanations remain chat',()=>{
