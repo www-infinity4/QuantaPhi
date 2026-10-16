@@ -178,7 +178,10 @@ public final class BubblesService extends Service {
                 return;
             }
             final String complete = turnBuffer.take();
-            if (!complete.isEmpty()) heard(complete);
+            if (!complete.isEmpty()) {
+                state("listening", .1f);
+                heard(complete);
+            }
         }
     };
     private long lastPartialAt = 0L;
@@ -389,7 +392,11 @@ public final class BubblesService extends Service {
     }
 
     private void state(String newState, float energy) {
-        if (orb != null) orb.setState(newState, energy);
+        // Vosk invokes state transitions from its microphone worker thread.
+        // All View mutations (including content description and invalidate)
+        // must run on the Android main thread to avoid intermittent freezes.
+        final OrbView target = orb;
+        if (target != null) target.post(() -> target.setState(newState, energy));
         if (!newState.equals(BrainNotes.prefs(this).getString("voice_state", "")))
             BrainNotes.prefs(this).edit().putString("voice_state", newState).apply();
     }
@@ -483,7 +490,7 @@ public final class BubblesService extends Service {
                         if (suppressingReply) { speech.reset(); suppressingReply = false; voicedSamples = 0L; }
                         main.post(() -> {
                             if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
-                                state(level > .08f ? "hearing" : "listening", level);
+                                state(level > .08f ? "hearing" : turnBuffer.hasPending() ? "gathering" : "listening", level);
                         });
                         boolean complete = speech.acceptWaveForm(samples, count);
                         if (!complete && SystemClock.elapsedRealtime() - lastPartialAt > 550L) {
@@ -513,6 +520,9 @@ public final class BubblesService extends Service {
                                 }
                                 turnBuffer.append(transcript);
                                 if (turnBuffer.hasPending()) {
+                                    // The pause is intentional: gather the rest of the thought
+                                    // before sending anything, and show the owner that status.
+                                    state("gathering", .22f);
                                     main.removeCallbacks(deliverVoiceTurn);
                                     main.postDelayed(deliverVoiceTurn, END_OF_TURN_MS);
                                 }
@@ -1078,22 +1088,69 @@ public final class BubblesService extends Service {
         private long downAt;
         private boolean moved=false;
         OrbView(Context context) {super(context);setContentDescription("Bubbles AI floating voice bubble");}
-        void setState(String name,float level) {currentState=name;energy=level;invalidate();}
+        void setState(String name,float level) {
+            if (!name.equals(currentState)) {
+                String description = "gathering".equals(name) ? "Gathering your words"
+                    : "hearing".equals(name) ? "Hearing your voice"
+                    : "thinking".equals(name) ? "Working on a reply"
+                    : "speaking".equals(name) ? "Speaking reply"
+                    : "muted".equals(name) ? "Microphone muted"
+                    : "error".equals(name) ? "Voice needs attention" : "Ready and listening";
+                setContentDescription("Bubbles AI. " + description);
+            }
+            currentState=name;energy=level;invalidate();
+        }
         @Override protected void onDraw(Canvas canvas) {
             float cx=getWidth()/2f,cy=getHeight()/2f,r=Math.min(cx,cy)-9;
-            int edge=("muted".equals(currentState)||"error".equals(currentState)) ? Color.rgb(112,118,139)
-                    : "thinking".equals(currentState)?Color.rgb(220,165,255):Color.rgb(120,255,232);
+            boolean gathering="gathering".equals(currentState);
+            boolean thinking="thinking".equals(currentState);
+            boolean hearing="hearing".equals(currentState);
+            boolean talking="speaking".equals(currentState);
+            // Distinguish "I am collecting the rest of your sentence" from
+            // listening, reasoning, and speaking. The cloudy phase ends only
+            // after SpeechTurnBuffer has delivered the complete turn.
+            float pulse=.5f+.5f*(float)Math.sin(SystemClock.uptimeMillis()/420.0);
+            int edge=("muted".equals(currentState)||"error".equals(currentState))
+                    ? Color.rgb(112,118,139)
+                    : gathering ? Color.rgb(158,197,221)
+                    : thinking ? Color.rgb(220,165,255)
+                    : Color.rgb(120,255,232);
+            paint.setStyle(Paint.Style.FILL);
+            // Soft glass body, with the same white-to-blue/lilac depth as the
+            // QuantaPhi website launcher rather than a flat green indicator.
             paint.setShader(new RadialGradient(cx-r*.3f,cy-r*.35f,r*1.6f,
-                    new int[]{Color.argb(245,245,255,255),Color.argb(245,110,200,255),Color.argb(222,104,70,211)},
+                    new int[]{Color.argb(250,252,255,255),
+                              Color.argb(245,197,233,255),
+                              Color.argb(225,112,83,204)},
                     null, Shader.TileMode.CLAMP));
             canvas.drawCircle(cx,cy,r,paint);
             paint.setShader(null);
-            paint.setColor(Color.argb(205,255,255,255));canvas.drawCircle(cx-r*.27f,cy-r*.42f,r*.18f,paint);
-            paint.setStyle(Paint.Style.STROKE);paint.setStrokeWidth(4f+energy*8f);
-            paint.setColor(edge);canvas.drawCircle(cx,cy,r+1f,paint);
+            if (gathering || thinking) {
+                // Cloudy = phrase still being assembled; violet cloud = thinking.
+                int cloudR=thinking?227:239,cloudG=thinking?212:245,cloudB=255;
+                paint.setShader(new RadialGradient(
+                        cx+r*.07f,cy-r*.04f,r*.96f,
+                        new int[]{Color.argb((int)(164+57*pulse),cloudR,cloudG,cloudB),
+                                  Color.argb((int)(102+46*pulse),195,211,242),
+                                  Color.argb(0,195,211,242)},
+                        null,Shader.TileMode.CLAMP));
+                canvas.drawCircle(cx,cy,r,paint);
+                paint.setShader(null);
+                paint.setColor(Color.argb((int)(60+38*pulse),255,255,255));
+                canvas.drawCircle(cx-r*.2f+r*.05f*pulse,cy+r*.06f,r*.4f,paint);
+            }
+            paint.setColor(Color.argb(205,255,255,255));
+            canvas.drawCircle(cx-r*.27f,cy-r*.42f,r*.18f,paint);
+            paint.setStyle(Paint.Style.STROKE);
+            paint.setStrokeWidth(gathering?3.5f+2.0f*pulse:4f+energy*8f);
+            paint.setColor(edge);
+            canvas.drawCircle(cx,cy,r+1f,paint);
             paint.setStyle(Paint.Style.FILL);
-            if ("hearing".equals(currentState)||"speaking".equals(currentState))
+            if (hearing || talking) {
+                paint.setColor(talking?Color.argb(175,226,255,252):Color.argb(165,127,255,231));
                 canvas.drawCircle(cx,cy,r*.2f+energy*r*.15f,paint);
+            }
+            if (gathering || thinking || talking) postInvalidateDelayed(90L);
         }
         @Override public boolean onTouchEvent(MotionEvent e) {
             switch(e.getActionMasked()) {
