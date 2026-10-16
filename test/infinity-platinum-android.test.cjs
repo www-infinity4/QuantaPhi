@@ -38,3 +38,14 @@ test('Browser preview exposes minimal real navigation, tabs, controlled download
  assert.match(java,/onShowFileChooser/);
  assert.match(java,/newTab\(PlatinumNavigation\.START\)/);
 });
+
+test('Infinity badge reports Android-validated current transport but does not modify system LTE indicators',()=>{
+ assert.match(java,/NET_CAPABILITY_VALIDATED/);
+ assert.match(java,/registerDefaultNetworkCallback/);
+ assert.match(java,/INFINITY · Cellular/);
+ assert.match(java,/INFINITY · Wi-Fi/);
+ assert.match(java,/INFINITY · Offline/);
+ assert.match(java,/CellularInspector\.capture\(this\)/);
+ assert.doesNotMatch(java,/status_bar|WRITE_SECURE_SETTINGS|MODIFY_PHONE_STATE|setOperatorNumeric|SystemUI/);
+ assert.match(manifest,/ACCESS_NETWORK_STATE/);
+});
