@@ -48,6 +48,7 @@ function stop(){
  generation++;
  if(!active)return;
  const playback=active;active=null;
+ if(playback.ledgerTimer){clearTimeout(playback.ledgerTimer);playback.ledgerTimer=null;}
  if(playback.hls){try{playback.hls.destroy()}catch(_){}}
  if(playback.yt){try{playback.yt.stopVideo();playback.yt.destroy()}catch(_){}}
  if(playback.video){try{playback.video.pause();playback.video.removeAttribute('src');playback.video.load()}catch(_){}}
@@ -60,11 +61,43 @@ function stop(){
 }
 function resetMedia(){
  if(!active)return;
+ if(active.ledgerTimer){clearTimeout(active.ledgerTimer);active.ledgerTimer=null}
  if(active.hls){try{active.hls.destroy()}catch(_){}active.hls=null}
  if(active.yt){try{active.yt.stopVideo();active.yt.destroy()}catch(_){}active.yt=null}
  if(active.video){try{active.video.pause();active.video.removeAttribute('src');active.video.load()}catch(_){}active.video=null}
  if(active.frame)active.frame.src='about:blank';
  active.frame=null;active.screenSlot.replaceChildren();
+}
+function trackProductionPlayback(playback,token){
+ if(active!==playback||token!==generation||document.hidden)return;
+ if(playback.ledgerTimer)clearTimeout(playback.ledgerTimer);
+ const program=playback.program;
+ if(!program)return;
+ const source=playback.channel==='shoplc'?{platform:'shoplc',sourceId:'live'}:
+   {platform:'youtube',sourceId:program.videoId};
+ if(source.platform==='youtube'&&!catalog.valid(source.sourceId))return;
+ const start=Date.now();
+ playback.ledgerTimer=setTimeout(async()=>{
+  playback.ledgerTimer=null;
+  if(active!==playback||token!==generation||document.hidden)return;
+  if(playback.ledgerRecordedFor===source.platform+':'+source.sourceId)return;
+  // YouTube may pause or reject embeds. Only count sustained active playback;
+  // the server marks the browser observation as UNVERIFIED for settlement.
+  if(source.platform==='youtube'&&playback.yt?.getPlayerState&&playback.yt.getPlayerState()!==1)return;
+  if(source.platform==='shoplc'&&playback.video?.paused)return;
+  if(Date.now()-start<29000)return;
+  const bridge=window.StarQuestCloudLedger;
+  if(!bridge?.recordProductionPlay){playback.status.textContent='Video playing; production ledger needs a connected StarQuest wallet.';return;}
+  try{
+   const receipt=await bridge.recordProductionPlay({...source,title:program.title,observedSeconds:30});
+   if(active!==playback||token!==generation)return;
+   playback.ledgerRecordedFor=source.platform+':'+source.sourceId;
+   playback.status.textContent=receipt?.duplicate?'Play already recorded for this day. No duplicate reward.':
+      'Viewing receipt saved for production research. Creator payout remains unfunded.';
+  }catch(error){
+   if(active===playback&&token===generation)playback.status.textContent='Playback continues. Production receipt not confirmed; account or ledger service unavailable.';
+  }
+ },30000);
 }
 function programFor(playback){
  return catalog.now(playback.channel,new Date());
@@ -90,6 +123,7 @@ function showProgram(playback,program,token){
  if(active!==playback||token!==generation)return;
  if(!program){playback.status.textContent='No verified video is available for this channel.';return}
  playback.program=program;
+ playback.ledgerRecordedFor=null;
  playback.title.textContent=program.title+(program.year?' · '+program.year:'');
  playback.status.textContent='Preparing '+program.title+'…';
  if(playback.channel==='shoplc'){void playShopLC(playback,token,0);return}
@@ -124,8 +158,11 @@ function showProgram(playback,program,token){
        else playback.status.textContent='The source blocked playback. Choose another program using CH+.';
       }
      },
-     onStateChange:event=>{if(active===playback&&token===generation&&event?.data===1)
-       playback.status.textContent=program.title+' · Playing. Volume is controlled inside the TV.'}
+     onStateChange:event=>{if(active!==playback||token!==generation)return;
+      if(event?.data===1){playback.status.textContent=program.title+' · Playing. Volume is controlled inside the TV.';
+       trackProductionPlayback(playback,token);}
+      else if(playback.ledgerTimer){clearTimeout(playback.ledgerTimer);playback.ledgerTimer=null;}
+     }
     }
    });
   }catch(_){playback.status.textContent='Use the video Play button to start the sound.'}
@@ -179,13 +216,15 @@ async function playShopLC(playback,token,index){
   hls.on(window.Hls.Events.MANIFEST_PARSED,()=>{if(active===playback&&token===generation){setSound(playback);playback.status.textContent='Shop LC is live.'}});
   hls.on(window.Hls.Events.ERROR,(_,detail)=>{if(detail?.fatal)fallback()});
  }
- video.onplaying=()=>{if(active===playback&&token===generation)playback.status.textContent='Shop LC · live broadcast with sound controls'};
+ video.onplaying=()=>{if(active===playback&&token===generation){playback.status.textContent='Shop LC · live broadcast with sound controls';trackProductionPlayback(playback,token)}};
+ video.onpause=()=>{if(playback.ledgerTimer){clearTimeout(playback.ledgerTimer);playback.ledgerTimer=null}};
  await feed();
 }
 function open(playback){
  stop();const token=generation;
  playback.screen.hidden=true;playback.screen.setAttribute('aria-expanded','true');
  playback.viewer.hidden=false;playback.card.classList.add('channelphi-playing');
+ playback.ledgerRecordedFor=null;
  playback.remoteChannel=playback.key==='omni'?'starquest':playback.key;
  playback.channel=playback.remoteChannel;playback.program=null;playback.fallbacks=0;playback.streamIndex=0;
  active=playback;showProgram(playback,programFor(playback),token);
