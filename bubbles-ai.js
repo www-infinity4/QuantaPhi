@@ -584,7 +584,7 @@ function speakText(value){
  if(speaking)return; // Avoid cutting off a response for another result.
   const version=++playbackVersion;
   speaking=true;setOrbState('speaking');
-  try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance((brainTools?.speechText(value)||String(value)).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
+  try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance((brainTools?.speechText?brainTools.speechText(value):String(value)).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
    const voices=speechSynthesis.getVoices?.()||[];
    utterance.voice=voices.find(v=>v.voiceURI===config.voiceURI)||voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
    utterance.onstart=()=>{if(version===playbackVersion)setOrbState('speaking')};
@@ -1587,7 +1587,7 @@ window.QuantaBubbles={
  },
  drainNativeReply:()=>{
   if(!nativeOverlay)return '';
-  const value=nativeSpeechReply||(!busy&&!nativeSpeechPending?progressVoiceQueue.shift()||'':'');nativeSpeechReply='';return brainTools?.speechText(value)||value;
+  const value=nativeSpeechReply||(!busy&&!nativeSpeechPending?progressVoiceQueue.shift()||'':'');nativeSpeechReply='';return brainTools?.speechText?brainTools.speechText(value):value;
  }
 };
 if(nativeOverlay){
