@@ -25,6 +25,7 @@ const embedded=params.get('embed')==='1'&&window.parent!==window;
 const nativeOverlay=!embedded&&params.get('nativeOverlay')==='1';
 // Native Android uses the identical QuantaPhi website assistant and owner-wallet
 // gates. It must not copy Chrome cookies or obtain owner rights from a query string.
+const progressVoiceQueue=[];
 let nativeSpeechReply='',nativeSpeechPending=false,noteTaking=false,nativeSimAvailable=false;
 // A retry after a lost evaluateJavascript callback must not re-submit a turn.
 // IDs only: no transcript, owner code or credentials are stored in this set.
@@ -583,7 +584,7 @@ function speakText(value){
  if(speaking)return; // Avoid cutting off a response for another result.
   const version=++playbackVersion;
   speaking=true;setOrbState('speaking');
-  try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(String(value).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
+  try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance((brainTools?.speechText?brainTools.speechText(value):String(value)).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
    const voices=speechSynthesis.getVoices?.()||[];
    utterance.voice=voices.find(v=>v.voiceURI===config.voiceURI)||voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
    utterance.onstart=()=>{if(version===playbackVersion)setOrbState('speaking')};
@@ -1171,6 +1172,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
  'GitHub work runs through the owner-authenticated direct adapter or color-bot runner using the existing owner key. Do not claim credentials are absent without a current tool result. Only real tool receipts prove repository creation, code writes, Actions, tests, merges or deployment; ChatGPT subscriptions do not grant GitHub access.',
  'Keep the owner on QuantaPhi. Never invent a navigation destination. If a real evidence URL is available, include its full https URL in text so the interface can make it clickable. Explain work states in plain English: waiting, working, blocked, or finished with proof.',
+ 'Give progress updates here in this conversation. Never read website addresses aloud or send the owner elsewhere to monitor jobs. Say I will check and update you here. A merge is not deployment.',
  'When the work receipt says ready or queued, submission is already complete. Never tell the owner to click a submit, run, publish or finish button. The authorized runner handles execution. Report recorded blockers honestly; never invent a missing control or claim a repair is complete.',
  'Actual authorized work result:\n'+workEvidence,'Latest user message:\n'+request,
  'Actual owner connection state for THIS chat: '+(ownerReady?'Verified and connected to Robot Brain. Do not demand another 64-character owner pairing code. Existing history synchronization operates through the owner memory API; ask for a new code ONLY if the user explicitly chooses to pair another device.':'Not verified in this specific browser session; this does not prove the APK or another browser session is disconnected. Do not claim missing owner access without a live check.'),
@@ -1401,6 +1403,31 @@ async function connectOwner(){
  else void checkSharedVoiceStatus();
  workStatus.textContent='Robot Brain connected. Say “Bubbles, fix the video generator” or “Report the top ten bot jobs.”';
 }
+const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker():null;
+let progressPolling=false,progressUnavailable=false;
+async function pollBrainProgress(){
+ if(embedded||!ownerReady||!progressTracker||progressPolling)return;
+ progressPolling=true;
+ try{
+  const headers=await verifiedOwnerHeaders();
+  const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},12000);
+  const result=await response.json();
+  if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
+  const updates=progressTracker.update(result.tickets);
+  if(progressUnavailable)updates.unshift('Robot Brain is reachable again. I am checking progress here.');
+  progressUnavailable=false;
+  if(updates.length)announceBrainProgress(updates.slice(-5).join(' '));
+ }catch{
+  if(!progressUnavailable){progressUnavailable=true;announceBrainProgress('Robot Brain is unreachable right now. I will keep checking and update you here when it reconnects.');}
+ }finally{progressPolling=false;}
+}
+function announceBrainProgress(text){
+ display(text,'ai');messages.push({role:'assistant',text});messages=messages.slice(-400);persistChat();
+ if(nativeOverlay){progressVoiceQueue.push(text);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
+ else if(config.voice){progressVoiceQueue.push(text);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
+}
+if(!embedded&&progressTracker&&typeof setInterval==='function')setInterval(()=>{void pollBrainProgress();if(!nativeOverlay&&config.voice&&!busy&&!speaking&&progressVoiceQueue.length)speakText(progressVoiceQueue.shift());},15000);
+void pollBrainProgress();
 async function readBrainReport(){
  const headers=await verifiedOwnerHeaders();
  const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},20000);
@@ -1560,7 +1587,7 @@ window.QuantaBubbles={
  },
  drainNativeReply:()=>{
   if(!nativeOverlay)return '';
-  const value=nativeSpeechReply;nativeSpeechReply='';return value;
+  const value=nativeSpeechReply||(!busy&&!nativeSpeechPending?progressVoiceQueue.shift()||'':'');nativeSpeechReply='';return brainTools?.speechText?brainTools.speechText(value):value;
  }
 };
 if(nativeOverlay){

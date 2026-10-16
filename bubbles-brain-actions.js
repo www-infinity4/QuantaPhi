@@ -150,7 +150,43 @@ function describeTickets(tickets,limit=10){
  return 'Robot Brain: '+total+' saved owner tickets ('+statuses+'). Showing '+selected.length+' most recently updated. Queued is not running; status “working” does not prove a bot is actively executing; only authenticated commits, tests and live receipts prove delivery.\n'
   +selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
 }
-const api={classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets};
+function speechText(value){
+ return String(value||'').replace(/\[([^\]]+)\]\(https?:\/\/[^)]+\)/gi,'$1').replace(/https?:\/\/\S+|www\.\S+/gi,'').replace(/\b[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:com|org|net|dev|app|io)(?:\/[^\s]*)?/gi,'').replace(/\s+/g,' ').trim();
+}
+function progressState(ticket){
+ const jobs=ticket.context?.color_jobs||[];
+ const completed=jobs.filter(j=>['complete','deployed_verified'].includes(j.status)&&j.progress?.commitSha&&j.progress?.runUrl);
+ const merged=jobs.filter(j=>j.status==='merged_verified'&&j.progress?.mergeSha);
+ const working=jobs.filter(j=>j.status==='working'&&j.progress?.runUrl&&j.progress?.attemptedAt);
+ const blocked=jobs.filter(j=>j.status==='blocked');
+ const committed=jobs.filter(j=>j.status==='committed_unverified'&&j.progress?.commitSha);
+ const label=speechText(ticket.title||'Your task').slice(0,90);
+ const signature=JSON.stringify(jobs.map(j=>[j.id,j.status,j.progress?.commitSha,j.progress?.mergeSha,j.progress?.summary]));
+ let text='';
+ if(completed.length)text=label+': '+completed.length+' job'+(completed.length===1?' is':'s are')+' verified complete.';
+ else if(merged.length)text=label+': '+merged.length+' job'+(merged.length===1?' has':'s have')+' merged after checks passed. Deployment is still separate.';
+ else if(committed.length)text=label+': the code is committed and awaiting merge verification.';
+ else if(working.length)text=label+': the runner is working on it.';
+ else if(blocked.length)text=label+': work is blocked. '+speechText(blocked[0].progress?.summary||'The runner has not reported a reason yet.').slice(0,220);
+ else if(['ready','working'].includes(ticket.status))text=label+': it is queued for the runner.';
+ return {signature,text};
+}
+class ProgressTracker{
+ constructor(){this.seen=new Map();this.initialized=false;}
+ update(tickets){
+  const updates=[];
+  for(const ticket of tickets||[]){const state=progressState(ticket);const prior=this.seen.get(ticket.id);
+   const jobs=ticket.context?.color_jobs||[];
+   const keys=new Map(jobs.map(j=>[j.id,JSON.stringify(j)]));
+   this.seen.set(ticket.id,{signature:state.signature,keys});
+   const changed=jobs.filter(j=>prior?.keys.get(j.id)!==keys.get(j.id));
+   const delta=progressState({...ticket,context:{...ticket.context,color_jobs:changed}});
+   if(this.initialized&&state.signature!==prior?.signature&&delta.text)updates.push(delta.text);
+  }
+  this.initialized=true;return updates.slice(-5);
+ }
+}
+const api={speechText,ProgressTracker,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);
