@@ -68,16 +68,23 @@ public final class BrainLearningService extends AccessibilityService {
     /** Android 12+ accessibility screenshots need no separate MediaProjection dialog.
      * Android may still redact protected windows and the user must enable Accessibility. */
     static void inspectNow(Consumer<String> callback) {
-        BrainLearningService service = active.get();
-        if (service == null) { callback.accept(ACCESS_OFF); return; }
-        service.inspect(callback);
+        inspectNow("", callback);
     }
-    private void inspect(Consumer<String> callback) {
+    static void inspectNow(String question, Consumer<String> callback) {
+        inspectNow(question, () -> {}, callback);
+    }
+    static void inspectNow(String question, Runnable frameCaptured, Consumer<String> callback) {
+        BrainLearningService service = active.get();
+        if (service == null) { frameCaptured.run(); callback.accept(ACCESS_OFF); return; }
+        service.inspect(question, frameCaptured, callback);
+    }
+    private void inspect(String question, Runnable frameCaptured, Consumer<String> callback) {
         // A WebView or our own Bubbles screen can have no exposed text tree.
         // Do not misdiagnose that as missing permission; still try the Android
         // Accessibility screenshot API already approved by the user.
         AccessibilityNodeInfo root = currentRoot();
         final String textObservation;
+        final String observedAt = java.time.Instant.now().toString();
         if (root == null) {
             textObservation = "Screen access connected. Text tree unavailable; checking screenshot.";
         } else {
@@ -89,13 +96,14 @@ public final class BrainLearningService extends AccessibilityService {
                 collect(root, text, new int[]{0}, 0);
                 visible = text.toString().trim();
             } finally { root.recycle(); }
-            textObservation = "Foreground app: " + app + "\nVisible accessible text: "
+            textObservation = "Fresh Android screen observation at " + observedAt + ". Current viewport only; refresh after scrolling.\nForeground app: " + app + "\nVisible accessible text: "
                 + (visible.isEmpty() ? "[none exposed]" : visible.substring(0, Math.min(2100, visible.length())));
         }
-        if (Build.VERSION.SDK_INT < 30) { callback.accept(textObservation); return; }
+        if (Build.VERSION.SDK_INT < 30) { frameCaptured.run(); callback.accept(textObservation); return; }
         try {
             takeScreenshot(Display.DEFAULT_DISPLAY, getMainExecutor(), new TakeScreenshotCallback() {
                 @Override public void onSuccess(ScreenshotResult result) {
+                    frameCaptured.run();
                     Bitmap copy = null;
                     HardwareBuffer buffer = result.getHardwareBuffer();
                     try {
@@ -110,19 +118,24 @@ public final class BrainLearningService extends AccessibilityService {
                     final Bitmap pixels = copy;
                     screenWorker.execute(() -> {
                         String ocr;
+                        String visual = "";
                         try { ocr = CaptureReader.readBitmap(pixels); }
                         catch (Exception error) { ocr = "[Screenshot OCR unavailable]"; }
+                        try { if (!question.isEmpty()) visual = ScreenVision.describe(pixels, question); }
                         finally { pixels.recycle(); }
                         final String extracted = ocr;
-                        main.post(() -> callback.accept(textObservation + "\nOn-screen screenshot OCR: "
-                            + extracted.substring(0, Math.min(1200, extracted.length()))));
+                        final String description = visual;
+                        main.post(() -> callback.accept("Frame captured at " + observedAt + "\nCurrent screen visual description: "
+                            + description + "\n" + textObservation + "\nOn-screen screenshot OCR: "
+                            + extracted.substring(0, Math.min(2400, extracted.length()))));
                     });
                 }
                 @Override public void onFailure(int code) {
+                    frameCaptured.run();
                     callback.accept(textObservation + "\nScreenshot OCR unavailable (Android code " + code + ").");
                 }
             });
-        } catch (RuntimeException error) { callback.accept(textObservation + "\nScreenshot access unavailable."); }
+        } catch (RuntimeException error) { frameCaptured.run(); callback.accept(textObservation + "\nScreenshot access unavailable."); }
     }
     /** Deterministic, single, explicitly voiced/typed tap. Never tap risky controls. */
     static String performRequestedAction(String phrase) {

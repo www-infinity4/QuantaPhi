@@ -65,6 +65,7 @@ jobs:
           node --check bubbles-ai.js
           node --check workers/bubbles-tools/worker.mjs
           node --test test/bubbles-image-options.test.mjs
+          node --test test/bubbles-live-screen.test.cjs test/bubbles-direct-github.test.mjs
       - name: Verify scrolling and pairing in a mobile browser
         run: |
           npm install --no-save --package-lock=false playwright@1.51.1
