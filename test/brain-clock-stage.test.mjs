@@ -15,7 +15,7 @@ test('no routine commit, scheduled trigger or unreviewed workflow action can dep
  assert.match(workflow,/^\s*--dry-run --outdir \/tmp\/brain-clock-staged-build$/m);
  assert.match(workflow,/wrangler@4 versions upload/);
  assert.doesNotMatch(workflow,/wrangler@4 versions deploy/);
- assert.equal((workflow.match(/wrangler@4 deploy\\b/g)||[]).length,1);
+ assert.equal((workflow.match(/wrangler@4 deploy\b/g)||[]).length,1);
  const safeBuild=workflow.slice(workflow.indexOf('npx --yes wrangler@4 deploy'),workflow.indexOf('Check existing production binding names'));
  assert.match(safeBuild,/--dry-run/);
  assert.match(workflow,/persist-credentials: false/);
