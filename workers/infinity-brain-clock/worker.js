@@ -380,6 +380,7 @@ export class BrainClock extends DurableObject{
    return Response.json(result.body,{status:result.status});
   }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
+  if(new URL(request.url).pathname==='/owner/red-sync')return Response.json(await redExchange(this.ctx.storage,await request.json()));
   if(new URL(request.url).pathname==='/owner/session-create'){
    const body=await request.json(),recipient=await this.ctx.storage.get('bot-work-recipient');
    // Never let the first wallet to visit a public website claim Robot Brain.
