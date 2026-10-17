@@ -737,7 +737,19 @@ export default{
     return output(request,await response.json(),response.status);
    }catch{return output(request,{ok:false,error:'pairing_unavailable'},503)}
   }
-  if(path==='/owner/conversation'&&request.method==='POST'){
+  if(path==='/owner/red/sync'&&request.method==='POST'){
+    const origin=request.headers.get('Origin');
+    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+    if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
+    try{
+     const raw=await request.text();
+     if(raw.length>1200)return output(request,{ok:false,error:'red_envelope_too_large'},413);
+     const result=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/owner/red-sync',{method:'POST',body:raw||'{}'});
+     return output(request,await result.json(),result.status);
+    }catch{return output(request,{ok:false,error:'red_bridge_unreachable'},503)}
+   }
+   if(path==='/owner/conversation'&&request.method==='POST'){
    const origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
