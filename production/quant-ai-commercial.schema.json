@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://quantaphi.org/production/quant-ai-commercial.schema.json",
+  "title": "Quant AI commercial visual-cue source v2",
+  "description": "Machine-readable cue contract for the existing ordered 44-scene Quant AI project. Scene cards can be built without owner input about cue fields. Real audio and portrait assets are separate optional production inputs.",
+  "type": "object",
+  "required": [
+    "schema",
+    "scenes"
+  ],
+  "properties": {
+    "schema": {
+      "const": "quant-ai-commercial/v2"
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 44,
+      "maxItems": 44,
+      "description": "Read the scene entries in saved array order; IDs are CUE-1 through CUE-44.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "lyric_marker",
+          "action",
+          "start_seconds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^CUE-[1-9][0-9]*$",
+            "description": "Unique sequential cue identifier."
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Visible readable cue title."
+          },
+          "lyric_marker": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Short editorial synchronization hint; do not display full copyrighted lyrics."
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Visual description; preserve named placeholders and intentional repeated motifs."
+          },
+          "start_seconds": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "default": null,
+            "description": "Null until authorized audio timing is measured. Once supplied, seconds from actual track metadata; never invent timestamps."
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}
