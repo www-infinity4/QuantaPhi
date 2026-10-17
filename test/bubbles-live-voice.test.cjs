@@ -119,7 +119,7 @@ test('owner repair command creates and readies one real ticket with receipt',asy
  assert.ok(h.nodes.some(n=>n.tag==='a'&&n.href==='https://quantaphi.org/#robotDirections'),'Receipt contains a clickable progress link');
  assert.ok(h.requests.every(r=>!r.url.includes('/v1/assist')),'No chat-only service can contradict the receipt');
  assert.equal(h.nodes.find(n=>n['aria-label']==='Work request for Robot Brain').value,'');
- assert.ok(h.nodes.some(n=>[n.textContent,...n.children.filter(c=>typeof c==='string')].join('').includes('Work ticket saved; Red-Brain acknowledged the runner request')));
+ assert.ok(h.nodes.some(n=>[n.textContent,...n.children.filter(c=>typeof c==='string')].join('').includes('Job saved. GitHub dispatch accepted; runner start is not yet verified')));
 });
 
 test('spoken replies keep the same microphone and recognizer active',async()=>{
