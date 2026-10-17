@@ -339,6 +339,9 @@ export class BrainClock extends DurableObject{
   // A Durable Object alarm can wake the repository dispatch without the Android
   // process running. The GitHub runner still owns authenticated code writes.
   const now=Date.now();
+  // Across ALL pending jobs, run at most one automatic GitHub dispatch per
+  // five minutes. Otherwise hundreds of blocked tickets could flood Actions.
+  if((await this.ctx.storage.get('alarm-global-next-at')||0)>now)return {state:'global_dispatch_cooldown'};
   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
   for(const row of rows.results||[]){
    let context;try{context=JSON.parse(row.context_json||'{}')}catch{continue}
@@ -356,6 +359,7 @@ export class BrainClock extends DurableObject{
     // termination cannot trigger a dispatch storm on the next wake.
     const attempting={...retry,attempts:Math.max(0,retry?.attempts||0)+1,lastAttemptAt:now,nextAt:now+5*60*1000,state:'dispatch_attempting'};
     await this.ctx.storage.put(retryKey,attempting);
+    await this.ctx.storage.put('alarm-global-next-at',now+5*60*1000);
     let dispatch;try{dispatch=await this.dispatchRunner()}catch(error){
      dispatch={status:'scheduled_fallback',error:String(error.message||error).slice(0,140)};
     }
