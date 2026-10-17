@@ -1161,7 +1161,14 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     let answer;
     try{const result=await workspace.handle(intent);answer=result.message;}
     catch(error){answer='Card action failed: '+String(error.message||error).slice(0,170);}
-    display(answer,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:answer});persistChat();
+    display(answer,'ai');
+    // The card belongs below this exchange, not above it where auto-scroll hides it.
+    // Reuse the existing workspace; moving its node preserves media, state and controls.
+    if(!workspace.container.hidden){
+     conversation.append(workspace.container);
+     workspace.container.scrollIntoView?.({block:'start'});
+    }
+    messages.push({role:'user',text:spoken},{role:'assistant',text:answer});persistChat();
     if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;else if(config.voice&&!nativeOverlay)speakText(answer);
     nativeSpeechPending=false;busy=false;send.disabled=false;return;
    }
