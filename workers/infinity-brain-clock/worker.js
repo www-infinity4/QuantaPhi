@@ -648,6 +648,43 @@ export async function ownerTickets(env,path,body){
   const rows=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100").bind(ownerHash).all();
   return {status:200,result:{ok:true,tickets:(rows.results||[]).map(publicTicket)}};
  }
+ if(path==='/work/tickets/approve'){
+  // Only a verified owner may approve an existing, runner-recorded UI decision.
+  // This endpoint is reached behind the same owner auth as ticket creation.
+  const id=String(body.id||''),jobId=String(body.jobId||'');
+  if(!/^IW-\d{8}-[0-9A-F-]{8}$/.test(id)||!/^TASK-\d+$/.test(jobId))return denied('invalid_approval_target');
+  const row=await db.prepare('SELECT * FROM work_tickets WHERE id=? AND owner_hash=?').bind(id,ownerHash).first();
+  if(!row)return denied('owner_ticket_not_found',404);
+  if(!['blocked','ready','working'].includes(row.status))return denied('ticket_not_waiting_for_owner',409);
+  let context;try{context=JSON.parse(row.context_json||'{}')}catch{return denied('invalid_saved_context',409)}
+  if(context.kind!=='robot-directions'||!Array.isArray(context.color_jobs))return denied('robot_context_required',409);
+  const job=context.color_jobs.find(j=>j?.id===jobId);
+  const blocker=String(job?.progress?.summary||'');
+  if(job?.status!=='blocked'||!/owner_input_required/i.test(blocker)||
+     !/\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(blocker))
+   return denied('ui_owner_approval_not_pending',409);
+  if(/\b(?:password|credential|secret|wallet|payment|security permission|authorization bypass)\b/i.test(blocker))
+   return denied('manual_security_review_required',409);
+  if((context.owner_approval_receipts||[]).filter(x=>x.jobId===jobId).length>=3)
+   return denied('approval_retry_limit_reached',409);
+  const decision='Use existing QuantaPhi styling and accessible Android-first controls. For enrollment, place the button in the existing owner settings area and label it Enroll. Explain what enrollment does in the dialog. Use IndexedDB for structured device-local records and localStorage only for small non-sensitive preferences; never store credentials or grant new privileges. Complete regular tests, review, merge and deployment verification. This approval applies only to the UI choices in this job.';
+  const when=new Date().toISOString();
+  const addition='\n\nVerified owner UI approval ('+when+'): '+decision;
+  if(String(job.instructions||'').length+addition.length>12000)return denied('job_instructions_limit',409);
+  job.instructions+=addition;
+  job.status='queued';
+  job.progress={ownerApprovedAt:when,summary:'Owner approved UI choices. Waiting for runner receipt.'};
+  const entry={jobId,at:when,decision,previousBlocker:blocker.slice(0,900)};
+  context.owner_approval_receipts=[...(context.owner_approval_receipts||[]),entry].slice(-12);
+  const updated=JSON.stringify(context);
+  if(updated.length>50000)return denied('ticket_context_too_large',413);
+  const now=Date.now(),status=ticketStatusFromJobs(context.color_jobs);
+  const changed=await db.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?')
+   .bind(updated,status,now,id,ownerHash,row.context_json).run();
+  if(changed?.meta?.changes===0)return denied('ticket_changed_retry',409);
+  const current=await db.prepare('SELECT * FROM work_tickets WHERE id=? AND owner_hash=?').bind(id,ownerHash).first();
+  return {status:200,result:{ok:true,ticket:publicTicket(current),approval:entry,runner_verified:false}};
+ }
  if(path==='/work/tickets/create'){
   const request=typeof body.request==='string'?body.request.trim().slice(0,12000):'';
   const title=typeof body.title==='string'?body.title.trim().slice(0,180):'';
@@ -803,7 +840,7 @@ export default{
     return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
   }
-  if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/memory/status'].includes(path)&&request.method==='POST'){
+  if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/tickets/approve','/work/memory/status'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
@@ -813,7 +850,7 @@ export default{
     if(text.length>70000)return output(request,{ok:false,error:'request_too_large'},413);
     const body=JSON.parse(text||'{}');
     const result=await ownerTickets(env,path,body);
-    if(path==='/work/tickets/update'&&result.result.ok&&body.status==='ready'){
+    if(result.result.ok&&((path==='/work/tickets/update'&&body.status==='ready')||path==='/work/tickets/approve')){
      try{const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));const started=await clock.fetch('https://clock.internal/run-next',{method:'POST',body:JSON.stringify({ticketId:body.id})});result.result.execution=await started.json();}catch{result.result.execution={status:'scheduled_fallback'};}
     }
     return output(request,result.result,result.status);
