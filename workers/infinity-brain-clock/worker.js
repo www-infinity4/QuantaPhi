@@ -533,13 +533,24 @@ export class BrainClock extends DurableObject{
       (body.ticketId!==undefined&&typeof body.ticketId!=='string')||
       (body.jobId!==undefined&&typeof body.jobId!=='string'))
     return Response.json({ok:false,error:'invalid_runner_request'},{status:400});
-   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+   // Explicit owner selection must also work when its ticket fell outside
+   // the default bounded 100-row scan.
+   if(body.ticketId&&!(rows.results||[]).some(t=>t.id===body.ticketId)){
+    const target=await this.env.WORK_DB.prepare("SELECT id,context_json,created_at FROM work_tickets WHERE id=? AND owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions'").bind(body.ticketId,this.env.WRITER_OWNER_HASH).first();
+    if(target)rows.results=[target,...(rows.results||[])];
+   }
+   const requested=body.ticketId?{ticketId:body.ticketId,jobId:body.jobId||undefined}:null;
+   const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json)}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
+   sortCandidates(candidates,requested);
+   const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
    let blockedReason='';
-   for(const t of rows.results||[]){
+   if(body.ticketId){
+    blockedReason=admission.deferred.find(x=>x.ticketId===body.ticketId&&(!body.jobId||x.jobId===body.jobId))?.reason||'';
+   }
+   for(const {ticket:t,jobs,job} of admission.allowed){
     if(body.ticketId&&body.ticketId!==t.id)continue;
-    let jobs;try{jobs=JSON.parse(t.context_json).color_jobs||[]}catch{continue}
-    for(const job of jobs){
-     if(body.jobId&&body.jobId!==job.id)continue;
+    if(body.jobId&&body.jobId!==job.id)continue;
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
      const key='writer:'+t.id+':'+job.id+':'+revision,retryKey='alarm-retry:'+t.id+':'+job.id+':'+revision;
      const [prior,active,retry]=await Promise.all([this.ctx.storage.get(key),this.ctx.storage.get('repository-lease:'+job.repository),this.ctx.storage.get(retryKey)]);
@@ -554,7 +565,6 @@ export class BrainClock extends DurableObject{
      const dispatch=await this.dispatchRunner(),receipt=runnerDispatchReceipt(dispatch);
      await recordRedBrain(this.ctx.storage,{kind:'runner_dispatch',state:receipt.status==='queued_for_runner'?'dispatched_unverified':receipt.status,ticketId:t.id,jobId:job.id,reason:receipt.reason});
      return Response.json({ok:true,status:receipt.status,reason:receipt.reason,ticketId:t.id,jobId:job.id,dispatch});
-    }
    }
    if(body.ticketId&&blockedReason)return Response.json({ok:true,status:'job_not_dispatchable',reason:blockedReason,ticketId:body.ticketId,jobId:body.jobId||''});
    return Response.json({ok:true,status:'no_pending_jobs'});
