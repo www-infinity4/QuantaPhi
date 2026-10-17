@@ -39,8 +39,14 @@ export function selectRepositories(request,catalog){
  if(!candidates.length){const home=entries.find(x=>x.repository.toLowerCase()==='www-infinity4/quantaphi');
   if(home)candidates=[{repository:home.repository,score:1,reason:'default Bubbles home; no strong project match'}];}
  const primary=candidates[0],second=candidates[1];
- const confidence=!primary?'none':primary.score>=100?'explicit':primary.score>=13&&(!second||primary.score-second.score>=6)?'high':primary.score>=6?'medium':'low';
- const auto=allTargets?[]:confidence==='explicit'?explicit.map(x=>x.repository):confidence==='high'?[primary.repository]:[];
+ const subjectMatches=SUBJECTS.filter(rule=>rule.words.test(query));
+ const distinctPrimary=[...new Set(subjectMatches.map(rule=>rule.targets[0]))];
+ const multiRequested=/\b(?:and|both|between|across)\b/i.test(query)&&distinctPrimary.length>=2;
+ const multiSelection=multiRequested?distinctPrimary.map(name=>candidates.find(entry=>entry.repository.split('/')[1].toLowerCase()===name.toLowerCase()))
+   .filter(entry=>entry?.score>=13).map(entry=>entry.repository):[];
+ const confidentMultiple=multiSelection.length>=2;
+ const confidence=!primary?'none':primary.score>=100?'explicit':confidentMultiple?'high':primary.score>=13&&(!second||primary.score-second.score>=6)?'high':primary.score>=6?'medium':'low';
+ const auto=allTargets?[]:confidence==='explicit'?explicit.map(x=>x.repository):confidentMultiple?multiSelection:confidence==='high'?[primary.repository]:[];
  return {candidates,selection:[...new Set(auto)],confidence,allTargets,requiresReview:allTargets||!auto.length,
   reason:allTargets?'All-repository edits require an explicit owner selection and approval.':
    confidence==='high'||confidence==='explicit'?'Strong match with repository names and owned project features.':
