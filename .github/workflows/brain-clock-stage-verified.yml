@@ -1,0 +1,102 @@
+name: Robot Brain safe staging (not production deployment)
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: "dry_run tests only, or stage a new Cloudflare Worker version without serving traffic"
+        type: choice
+        options:
+          - dry_run
+          - stage_version
+        required: true
+        default: dry_run
+
+permissions:
+  contents: read
+
+concurrency:
+  group: brain-clock-verified-staging
+  cancel-in-progress: false
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout exact main source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Brain auth, queue priority, source windows and owner boundaries
+        run: |
+          node --check workers/infinity-brain-clock/worker.js
+          node --check workers/infinity-brain-clock/ticket-selector.mjs
+          node --test \
+            test/brain-ticket-selector.test.mjs \
+            test/brain-queue-order.test.mjs \
+            test/brain-clock.test.mjs \
+            test/bubbles-runner-dispatch.test.mjs \
+            workers/infinity-brain-clock/arbitration-evidence.test.mjs
+      - name: Validate source-only bundle without publishing
+        run: |
+          npx --yes wrangler@4 deploy \
+            --config workers/infinity-brain-clock/wrangler.toml \
+            --dry-run --outdir /tmp/brain-clock-staged-build
+      - name: Check existing production binding names before optional staging
+        if: ${{ inputs.operation == 'stage_version' }}
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$CF_TOKEN" || -z "$CF_ACCOUNT_ID" ]]; then
+            echo "::error::Cloudflare API token or account ID is not configured; no upload attempted."
+            exit 1
+          fi
+          curl --fail --silent --show-error --retry 1 \
+            --header "Authorization: Bearer $CF_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/workers/scripts/infinity-brain-clock/settings" \
+            > /tmp/brain-clock-production-settings.json
+          node --input-type=module <<'NODE'
+          import {readFileSync} from 'node:fs';
+          const payload=JSON.parse(readFileSync('/tmp/brain-clock-production-settings.json','utf8'));
+          if(payload.success!==true)throw Error('production_brain_settings_unavailable');
+          const found=new Map((payload.result?.bindings||[]).map(x=>[x.name,x.type]));
+          const expected={
+            WORK_DB:'d1',CLOCK:'durable_object_namespace',
+            BOT_WALLET:'service',MODELS:'service',
+            WRITER_AI:'ai',BOT_WORK_SECRET:'secret_text',
+            WRITER_OWNER_HASH:'plain_text'
+          };
+          for(const [name,type] of Object.entries(expected))
+            if(found.get(name)!==type)throw Error('production_binding_missing_or_wrong_type: '+name);
+          console.log('Production Brain binding names/types verified. No secrets or owner identifiers printed.');
+          NODE
+      - name: Upload a NEW, undeployed version (zero percent traffic)
+        if: ${{ inputs.operation == 'stage_version' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@4 versions upload \
+            --config workers/infinity-brain-clock/wrangler.toml \
+            --message "Verified owner-priority ticket isolation (#547), staged for approval"
+      - name: Publish truthful staging result
+        if: always()
+        shell: bash
+        env:
+          OPERATION: ${{ inputs.operation }}
+        run: |
+          {
+            echo '## Robot Brain release gate'
+            echo "Operation requested: $OPERATION"
+            echo 'This workflow never deploys a Worker or changes traffic percentages.'
+            echo 'It cannot claim live Brain behavior, owner authentication or job execution success.'
+            echo 'Before promoting any staged version, independently compare required binding names/types, security controls and a signed owner job receipt.'
+          } >> "$GITHUB_STEP_SUMMARY"
