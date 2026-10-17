@@ -20,7 +20,7 @@ public final class PlatinumNavigation {
   try{
    URI url=new URI(input);
    String scheme=url.getScheme(),host=url.getHost();
-   if(!("https".equalsIgnoreCase(scheme)||"http".equalsIgnoreCase(scheme))
+   if(!"https".equalsIgnoreCase(scheme)
      ||host==null||host.isBlank()||url.getRawUserInfo()!=null)return "";
    return url.toASCIIString();
   }catch(Exception e){return "";}
