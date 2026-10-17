@@ -140,3 +140,23 @@ test('long indexed conversation context reaches the model without the old 16k tr
  const tooLarge=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello',input:'a'.repeat(71000)})}),{});
  assert.equal(tooLarge.status,413);
 });
+
+
+test('failed model requests keep an explicit readable error instead of a blank assistant result',async()=>{
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})});
+ const resp=await worker.fetch(req,{AI:{run:async()=>{throw Error('upstream failure')}}});
+ const body=await resp.json();
+ assert.equal(resp.status,502);
+ assert.equal(body.ok,false);
+ assert.equal(body.error,'assistant_request_failed');
+ assert.match(body.output,/could not complete the AI reply/);
+ assert.equal(body.receipt.status,'failed');
+});
+
+test('malformed request has a separate input error rather than an AI model failure',async()=>{
+ const resp=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:'{bad JSON'}),{});
+ const body=await resp.json();
+ assert.equal(resp.status,400);
+ assert.equal(body.error,'invalid_request_json');
+ assert.match(body.output,/resend/);
+});
