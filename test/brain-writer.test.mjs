@@ -31,7 +31,7 @@ test('a blocked Greenbeans job and dependent queued Pink Panther ticket do not c
  const blocked=[{id:'TASK-1',status:'blocked',dependencies:[]},{id:'TASK-2',status:'queued',dependencies:['TASK-1']}];
  assert.equal(ticketStatusFromJobs(blocked),'blocked');
  assert.equal(ticketStatusFromJobs([{id:'TASK-1',status:'working'},blocked[1]]),'working');
- assert.equal(ticketStatusFromJobs([{id:'TASK-1',status:'committed_unverified'},blocked[1]]),'working');
+ assert.equal(ticketStatusFromJobs([{id:'TASK-1',status:'committed_unverified'},blocked[1]]),'blocked');
  assert.equal(ticketStatusFromJobs([{id:'TASK-1',status:'complete'},blocked[1]]),'ready');
  assert.equal(ticketStatusFromJobs([{id:'TASK-1',status:'complete'},{id:'TASK-2',status:'complete'}]),'complete');
  assert.equal(ticketStatusFromJobs([...blocked,{id:'TASK-3',status:'queued',dependencies:[]}]),'ready');
