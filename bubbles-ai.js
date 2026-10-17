@@ -812,6 +812,36 @@ function speakText(value){
   }
  catch(error){if(version===playbackVersion){speaking=false;voiceEchoUntil=Date.now()+900}status.textContent='Speech playback could not start: '+String(error?.message||error).slice(0,120)}
 }
+// Copy works in Chrome and Android WebView. When the async Clipboard API is
+// denied, keep a visible text selection for Android's native Copy menu.
+async function copyBubblesMessage(value,messageNode,button){
+ const content=String(value??'');
+ let copied=false,selected=false;
+ try{
+  if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(content);copied=true}
+ }catch{}
+ if(!copied){
+  try{
+   const selection=window.getSelection?.();
+   if(selection&&document.createRange){
+    const range=document.createRange();
+    range.selectNodeContents(messageNode);
+    selection.removeAllRanges();selection.addRange(range);selected=true;
+    copied=Boolean(document.execCommand?.('copy'));
+    if(copied)selection.removeAllRanges();
+   }
+  }catch{}
+ }
+ if(copied){
+  button.textContent='Copied';
+  status.textContent='Message copied to clipboard.';
+  setTimeout(()=>{if(button.isConnected)button.textContent='Copy'},1500);
+ }else{
+  button.textContent=selected?'Text selected':'Copy';
+  status.textContent=selected?'Message selected. Use Copy from the Android selection menu.':'Clipboard unavailable. Long-press the message to select and copy.';
+ }
+ return copied;
+}
 function display(text,who,greeting=false){
  const line=create('div','ba-line '+(who==='you'?'ba-line-you':'ba-line-ai'));
  const bubble=create('p','ba-message '+(who==='you'?'ba-you':'ba-assistant'),text);
@@ -826,8 +856,12 @@ function display(text,who,greeting=false){
   bubble.append(value.slice(cursor));
  }
  line.append(bubble);
+ const row=create('div','ba-message-actions');
+ const copy=create('button','ba-miniaction ba-copy-message','Copy');copy.type='button';
+ copy.setAttribute('aria-label','Copy message');
+ copy.addEventListener('click',()=>{void copyBubblesMessage(text,bubble,copy)});
+ row.append(copy);
  if(who!=='you'&&!greeting){
-  const row=create('div','ba-message-actions');
   const remember=create('button','ba-miniaction','Save note');remember.type='button';
   remember.addEventListener('click',()=>{
    if(addNote(text)){tools.open=true;status.textContent='Reply saved as a private note on this device.'}
@@ -845,9 +879,9 @@ function display(text,who,greeting=false){
     else speakText(text);
    });
   if(nativeOverlay)row.append(say);
-   else row.append(remember,task,say);
-   line.append(row);
+  else row.append(remember,task,say);
  }
+ line.append(row);
  const wasNearBottom=chatScroll.scrollHeight-chatScroll.scrollTop-chatScroll.clientHeight<96;
  conversation.append(line);
  // New replies follow the bottom; reading older messages doesn't jump away.
