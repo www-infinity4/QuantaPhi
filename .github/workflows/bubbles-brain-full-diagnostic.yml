@@ -72,6 +72,7 @@ jobs:
             test/brain-merge-receipt.test.mjs \
             test/brain-queue-order.test.mjs \
             test/brain-ticket-selector.test.mjs \
+            test/brain-clock-stage.test.mjs \
             test/brain-ticket-status.test.cjs \
             test/work-ticket-bubbles-timed-job-controls.test.cjs
 

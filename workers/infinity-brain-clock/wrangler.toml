@@ -1,5 +1,8 @@
 name = "infinity-brain-clock"
 main = "worker.js"
+# Preserve the owner-hash variable configured on the existing production Worker.
+# Secrets and owner identity must survive a source-only staged upload.
+keep_vars = true
 compatibility_date = "2026-10-10"
 [[d1_databases]]
 binding = "WORK_DB"
@@ -35,3 +38,7 @@ binding = "WRITER_AI"
 # BOT_WORK_SECRET (secret_text) and WRITER_OWNER_HASH (plain_text) exist on the
 # deployed Worker; do not commit their values. Verify these bindings survive
 # deployment before enabling bot payouts or owner-authorized job access.
+
+# Refuse to stage an update if the existing payout secret is not configured.
+[secrets]
+required = ["BOT_WORK_SECRET"]
