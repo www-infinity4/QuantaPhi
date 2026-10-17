@@ -1,0 +1,35 @@
+name: Bubbles Coder contract tests
+on:
+  pull_request:
+    paths:
+      - 'bubbles-ai.js'
+      - '.github/workflows/bubbles-coder-sandbox.yml'
+      - '.github/workflows/bubbles-coder-contract.yml'
+      - 'test/bubbles-coder-sandbox.test.cjs'
+      - 'sandbox/**'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-ai.js'
+      - '.github/workflows/bubbles-coder-sandbox.yml'
+      - '.github/workflows/bubbles-coder-contract.yml'
+      - 'test/bubbles-coder-sandbox.test.cjs'
+      - 'sandbox/**'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify coder route and Linux script sandbox
+        run: |
+          node --check bubbles-ai.js
+          node --test test/bubbles-coder-sandbox.test.cjs
+          python3 -m py_compile sandbox/hello.py

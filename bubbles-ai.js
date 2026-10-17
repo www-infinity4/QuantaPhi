@@ -1198,6 +1198,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let workEvidence='';
  const createRepository=/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request);
  const directRequest=/^(?:please\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
+ // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
+ // without generating a Robot Brain ticket or relying on the writer model.
+ const coderRequest=/^(?:please\s+)?(?:bubbles[, ]+)?(?:run|execute|inspect|test|check|open|use|start)\b.{0,100}\b(?:bubbles\s+coder|coder\s+sandbox|python\s+sandbox|linux\s+sandbox|shell\s+sandbox)\b/i.test(request);
  const githubCheck=/^(?:please\s+)?(?:check|show|inspect)\s+(?:my\s+)?github\s+(?:access|tools|permissions|connection)[.!?]*$/i.test(request);
  if(!embedded&&articleResearch){
   try{
@@ -1213,15 +1216,31 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
   return;
  }
- else if(!embedded&&(directRequest||githubCheck||createRepository)){
+ else if(!embedded&&(directRequest||githubCheck||createRepository||coderRequest)){
   const named=request.match(/\bwww-infinity4\/[A-Za-z0-9_.-]+\b/);
   const repoName=createRepository?request.match(/(?:repo(?:sitory)?\s+(?:called|named)\s+)([A-Za-z0-9_.-]+)/i)?.[1]:'';
-  const repository=named?.[0]||(repoName?'www-infinity4/'+repoName:!createRepository&&(/\b(?:bubbles|quantaphi)\b/i.test(request)||githubCheck)?'www-infinity4/QuantaPhi':'');
+  const repository=named?.[0]||(repoName?'www-infinity4/'+repoName:!createRepository&&(/\b(?:bubbles|quantaphi)\b/i.test(request)||githubCheck||coderRequest)?'www-infinity4/QuantaPhi':'');
   if(!repository)workEvidence='Direct GitHub needs the repository name in this request, such as www-infinity4/QuantaPhi.';
   else try{
    status.textContent='Checking the direct GitHub connection. Actual receipts will also appear in the color-bot feed.';
-   const mode=/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request)?'actions':/\b(?:fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
-   const result=await directGithubOperation({action:createRepository?'create_repository':githubCheck?'capabilities':'assist',repository,request,description:request,mode});
+   const mode=coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request)?'actions':/\b(?:fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
+   let action=createRepository?'create_repository':githubCheck?'capabilities':'assist';
+   const args={action,repository,request,description:request,mode};
+   if(coderRequest){
+    const inspecting=/\b(?:check|show|inspect)\b.{0,40}\b(?:progress|status|runs|results)\b/i.test(request);
+    if(inspecting)args.action='list_runs';
+    else{
+     args.action='dispatch_workflow';
+     args.workflow='bubbles-coder-sandbox.yml';
+     // A request to inspect or run scripts maps to declared workflow inputs;
+     // never forward arbitrary shell text for execution.
+     const operation=/\b(?:python|\.py)\b/i.test(request)?'python':/\b(?:shell|bash|\.sh)\b/i.test(request)?'shell':/\b(?:tests|test suite)\b/i.test(request)?'tests':'inspect';
+     const scriptPath=request.match(/\bsandbox\/[A-Za-z0-9_/-]+\.(?:py|sh)\b/)?.[0];
+     args.ref='main';
+     args.inputs={operation,script_path:scriptPath||(operation==='python'?'sandbox/hello.py':'')};
+    }
+   }
+   const result=await directGithubOperation(args);
    workEvidence='Direct GitHub: '+(result.status||'unknown')+'. '+(result.error||result.summary||'')+(result.next?' '+result.next:'')+(result.url?'\n'+result.url:'');
    for(const receipt of result.receipts||[])if(receipt.url)workEvidence+='\n'+receipt.status+': '+receipt.url;
    workEvidence+='\nRequest '+result.requestId+'. Testing, merge and deployment require their own verified receipts.';

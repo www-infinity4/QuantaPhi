@@ -1,0 +1,94 @@
+name: Bubbles Coder Linux Sandbox
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: "Owner-directed operation in temporary Ubuntu workspace"
+        type: choice
+        options: [inspect, python, shell, tests]
+        required: true
+        default: inspect
+      script_path:
+        description: "Existing sandbox/ script for python or shell operation"
+        required: false
+        type: string
+        default: "sandbox/hello.py"
+permissions:
+  contents: read
+jobs:
+  coder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Fetch exact pinned repository revision (read only)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Prepare receipt header and runtime
+        env:
+          OPERATION: ${{ inputs.operation }}
+          REQUESTED_SCRIPT: ${{ inputs.script_path }}
+        run: |
+          set -euo pipefail
+          printf 'Bubbles Coder Sandbox\nRun: %s\nRepository: %s\nRevision: %s\nOperation: %s\nScript: %s\n' \
+            "$GITHUB_${{ github.run_id }}" "$GITHUB_REPOSITORY" "$GITHUB_SHA" "$OPERATION" "$REQUESTED_SCRIPT" \
+            > sandbox-receipt.txt
+          python3 --version | tee -a sandbox-receipt.txt
+          node --version | tee -a sandbox-receipt.txt
+          git --version | tee -a sandbox-receipt.txt
+      - name: Run bounded script or repository checks
+        env:
+          OPERATION: ${{ inputs.operation }}
+          REQUESTED_SCRIPT: ${{ inputs.script_path }}
+          BUBBLES_CODER_SANDBOX: "1"
+        run: |
+          set -euo pipefail
+          case "$OPERATION" in
+            inspect)
+              { git status --short; git log -1 --format='%H %s'; find sandbox -maxdepth 2 -type f 2>/dev/null | head -40 || true; } \
+                2>&1 | tee sandbox-output.txt
+              ;;
+            python|shell)
+              if [[ ! "$REQUESTED_SCRIPT" =~ ^sandbox/[A-Za-z0-9_-]+(/[A-Za-z0-9_-]+)*\.(py|sh)$ ]]; then
+                echo 'Blocked: only sandbox/NAME.py and sandbox/NAME.sh files are allowed' | tee sandbox-output.txt
+                exit 2
+              fi
+              if [[ "$OPERATION" == python && "$REQUESTED_SCRIPT" != *.py ]] || \
+                 [[ "$OPERATION" == shell && "$REQUESTED_SCRIPT" != *.sh ]]; then
+                echo 'Blocked: script extension does not match operation' | tee sandbox-output.txt
+                exit 2
+              fi
+              test -f "$REQUESTED_SCRIPT"
+              if [[ "$OPERATION" == python ]]; then
+                timeout --signal=TERM 180s python3 -I "$REQUESTED_SCRIPT" 2>&1 | tee sandbox-output.txt
+              else
+                timeout --signal=TERM 180s bash --noprofile --norc "$REQUESTED_SCRIPT" 2>&1 | tee sandbox-output.txt
+              fi
+              ;;
+            tests)
+              {
+                python3 -m compileall -q sandbox
+                if test -f package.json; then npm run test --if-present; fi
+                if test -d tests; then python3 -m unittest discover -s tests; fi
+              } 2>&1 | tee sandbox-output.txt
+              ;;
+            *)
+              echo 'Unsupported sandbox operation' | tee sandbox-output.txt
+              exit 2
+              ;;
+          esac
+      - name: Publish visible execution receipt even on failure
+        if: always()
+        run: |
+          printf 'Outcome: %s\n' "${{ job.status }}" >> sandbox-receipt.txt
+          test -f sandbox-output.txt || printf 'No script output\n' > sandbox-output.txt
+      - name: Keep short-lived logs available to owner tools
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bubbles-coder-${{ github.run_id }}
+          path: |
+            sandbox-receipt.txt
+            sandbox-output.txt
+          retention-days: 7
+          if-no-files-found: error
