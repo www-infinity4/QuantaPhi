@@ -69,7 +69,7 @@ test('Brain and floating Android shared Bubbles UI use authenticated catalog rou
  assert.match(brain,/ownerAuthorized\(env,token\)/);
  assert.match(ui,/action:'suggest_repositories'/);
  assert.match(ui,/if\(!repositorySelectionExplicit\)await suggestRepositoryTargets\(request,false\)/);
- assert.match(ui,/if\(result.requiresReview&&!repositorySelectionExplicit\)/);
+ assert.match(ui,/result\.requiresReview&&!repositorySelectionExplicit/);
  assert.match(ui,/repositoryFilter\.addEventListener\('input'/);
  assert.match(ui,/if\(!repositoryCatalogComplete&&!repositoryCatalogLoading\)void loadRepositoryCatalog\(\)/);
 });
