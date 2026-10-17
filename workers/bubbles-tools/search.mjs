@@ -90,12 +90,12 @@ export async function currentWeather(message,location=null,fetcher=fetch){
   const comma=place.indexOf(',');
   if(comma>0)searches.push(place.slice(0,comma));
   else if(place.split(/\s+/).length>=2)searches.push(place.replace(/\s+\S+$/,''));
-  let places=[];
+  let places=[],geocoderConnected=false;
   for(const term of [...new Set(searches)]){
    const endpoint='https://geocoding-api.open-meteo.com/v1/search?'+new URLSearchParams({name:term,count:'10',language:'en',format:'json'});
-   try{const data=await getJson(fetcher,endpoint);places=data.results||[];if(places.length)break;}catch{/* Try a narrower city query. */}
+   try{const data=await getJson(fetcher,endpoint);geocoderConnected=true;places=data.results||[];if(places.length)break;}catch{/* Try a narrower city query. */}
   }
-  if(!places.length)return {ok:false,output:'I could not identify '+place+' in the weather service. Please give a town and state or postal code.'};
+  if(!places.length)return {ok:false,output:geocoderConnected?'I could not identify '+place+' in the weather service. Please give a town and state or postal code.':'I could not reach the live weather service for '+place+'. I have no verified conditions to report.'};
   const lower=place.toLowerCase();
   const score=x=>{const city=trim(x.name,90).toLowerCase(),state=trim(x.admin1,90).toLowerCase(),country=trim(x.country,90).toLowerCase();
    return (lower===city?10:lower.startsWith(city+' ' )||lower.startsWith(city+',')?8:0)
