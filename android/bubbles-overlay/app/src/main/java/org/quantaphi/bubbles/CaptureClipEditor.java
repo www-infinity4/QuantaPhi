@@ -38,7 +38,7 @@ final class CaptureClipEditor {
         long finishUs = Math.min(durationMs * 1000L, untilSecond * 1000000L);
         MediaExtractor tracks = new MediaExtractor();
         MediaMuxer muxer = null;
-        boolean succeeded = false;
+        boolean succeeded = false, started = false;
         try {
             tracks.setDataSource(source.getAbsolutePath());
             int count = tracks.getTrackCount();
@@ -65,7 +65,7 @@ final class CaptureClipEditor {
                 muxer.setOrientationHint(orientation);
             selected[video] = muxer.addTrack(tracks.getTrackFormat(video));
             if (audio >= 0) selected[audio] = muxer.addTrack(tracks.getTrackFormat(audio));
-            muxer.start();
+            muxer.start(); started = true;
             int videoFrames = 0;
             for (int i = 0; i < count; i++) {
                 if (selected[i] < 0) continue;
@@ -93,6 +93,8 @@ final class CaptureClipEditor {
                 tracks.unselectTrack(i);
             }
             if (videoFrames == 0) throw new IOException("No video frames written");
+            muxer.stop(); started = false;
+            muxer.release(); muxer = null;
             succeeded = true;
             return output;
         } catch (RuntimeException error) {
@@ -100,7 +102,7 @@ final class CaptureClipEditor {
         } finally {
             tracks.release();
             if (muxer != null) {
-                try { muxer.stop(); } catch (RuntimeException ignored) { succeeded = false; }
+                if (started) try { muxer.stop(); } catch (RuntimeException ignored) { succeeded = false; }
                 muxer.release();
             }
             if (!succeeded) output.delete();
