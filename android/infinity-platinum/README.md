@@ -1,5 +1,10 @@
 # Infinity Platinum · Android browser preview
 
+> [!CAUTION]
+> **SECURITY HOLD — DO NOT INSTALL OR DISTRIBUTE THE PREVIEW APK (October 17, 2026).**
+> Avast flagged an installed preview build. Source review separately found globally enabled cleartext HTTP traffic. The actual cause of the antivirus detection is unverified. This is not proof of either a false positive or a trojan. The old GitHub Release asset may still be directly accessible; do not download or install it. Public website download and automatic release publishing are being disabled while binary inspection, multi-engine scanning, signing/provenance verification and on-device review are pending. Users who installed the preview should uninstall it and run Play Protect or antivirus scans.
+
+
 This is a separately installable Android application, **org.quantaphi.platinum.preview1**.
 It is a browser UI around the **Android System WebView**, not an independent
 Chromium binary and not a patched copy of Google Chrome. It requires an
@@ -11,9 +16,7 @@ must be tested on-device.
 - A mobile address bar, navigation back/forward/home, refresh using WebView,
   three selectable tabs and user-approved Android download handling.
 - Android's Safe Browsing and TLS verification remain enabled. File/content
-  access is disabled. Mixed HTTPS/HTTP subresources are blocked. Plain HTTP
-  navigation is allowed for explicitly selected legacy sites, with an
-  insecure-site indicator.
+  access is disabled. Mixed HTTPS/HTTP subresources are blocked. Plain HTTP navigation is disabled in the security-hardening source. No replacement APK is cleared for release.
 - Website start page at `https://quantaphi.org/platinum/index.html` with visual
   saved tiles, editable titles/links/notes, optional manually picked previews,
   same-device Resume and Code Phi / Create Phi project collection.
