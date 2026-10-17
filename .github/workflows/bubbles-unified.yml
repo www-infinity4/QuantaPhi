@@ -7,6 +7,10 @@ on:
       - 'bubbles-brain-actions.js'
       - 'test/bubbles-card-workspace.test.mjs'
       - 'test/bubbles-repository-targets.test.mjs'
+      - 'test/bubbles-smart-repository-routing.test.mjs'
+      - 'workers/infinity-brain-clock/repository-router.mjs'
+      - 'workers/infinity-brain-clock/direct-github.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
       - 'bubbles-unified.css'
       - 'bubbles.html'
       - 'index.html'
@@ -21,6 +25,10 @@ on:
       - 'bubbles-brain-actions.js'
       - 'test/bubbles-card-workspace.test.mjs'
       - 'test/bubbles-repository-targets.test.mjs'
+      - 'test/bubbles-smart-repository-routing.test.mjs'
+      - 'workers/infinity-brain-clock/repository-router.mjs'
+      - 'workers/infinity-brain-clock/direct-github.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
       - 'bubbles-unified.css'
       - 'bubbles.html'
       - 'index.html'
@@ -44,4 +52,4 @@ jobs:
         run: |
           node --check bubbles-card-workspace.mjs
           node --check bubbles-card-host.mjs
-          node --test test/bubbles-card-workspace.test.mjs test/bubbles-repository-targets.test.mjs test/bubbles-direct-github.test.mjs test/bubbles-technical-handoff.test.mjs
+          node --test test/bubbles-card-workspace.test.mjs test/bubbles-repository-targets.test.mjs test/bubbles-smart-repository-routing.test.mjs test/bubbles-direct-github.test.mjs test/bubbles-technical-handoff.test.mjs

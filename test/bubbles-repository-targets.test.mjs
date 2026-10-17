@@ -25,7 +25,7 @@ test('ticket creation stores its repository before jobs are attached',async()=>{
 });
 test('repository batches retain individual results and failures without retargeting',async()=>{
  const ui=readFileSync('bubbles-ai.js','utf8'),seen=[];
- const scope={activeCardEvidence:null,repositorySelection:new Set(['www-infinity4/WidgetPhi','www-infinity4/QuantaPhi']),repositoryPicker:{dataset:{}},workStatus:{},submitRepositoryWork:async(request,approval,repository)=>{seen.push(repository);if(repository.endsWith('WidgetPhi'))throw Error('fixture unavailable');return {id:'ticket-1',repository,status:'ready'};}};
+ const scope={activeCardEvidence:null,repositorySelectionExplicit:true,repositorySelection:new Set(['www-infinity4/WidgetPhi','www-infinity4/QuantaPhi']),repositoryPicker:{dataset:{}},workStatus:{},submitRepositoryWork:async(request,approval,repository)=>{seen.push(repository);if(repository.endsWith('WidgetPhi'))throw Error('fixture unavailable');return {id:'ticket-1',repository,status:'ready'};}};
  vm.createContext(scope);
  vm.runInContext(ui.slice(ui.indexOf('async function submitWork('),ui.indexOf('async function submitRepositoryWork(')),scope);
  const result=await scope.submitWork('Fix menu');
