@@ -8,10 +8,11 @@ export function ticketStatusFromJobs(jobs) {
  if (!Array.isArray(jobs) || jobs.length===0) return 'draft';
  const done = new Set(jobs.filter(j=>['complete','deployed_verified'].includes(j?.status)).map(j=>j.id));
  if (done.size===jobs.length) return 'complete';
- if (jobs.some(j=>['working','committed_unverified','merged_verified'].includes(j?.status))) return 'working';
+ if (jobs.some(j=>j?.status==='working')) return 'working';
+ const integrated=new Set(jobs.filter(j=>j?.status==='merged_verified').map(j=>j.id));
  const eligible=jobs.some(j=>['queued','ready'].includes(j?.status)
-  && (!Array.isArray(j.dependencies)||j.dependencies.every(id=>done.has(id))));
+  && (!Array.isArray(j.dependencies)||j.dependencies.every(id=>done.has(id)||integrated.has(id))));
  if (eligible) return 'ready';
- if (jobs.some(j=>j?.status==='blocked')) return 'blocked';
- return 'working';
+ // Committed/merged source is awaiting verification, not an active runner.
+ return 'blocked';
 }

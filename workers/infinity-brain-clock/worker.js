@@ -344,7 +344,7 @@ export class BrainClock extends DurableObject{
  }
  async reconcilePendingWork(){
   const now=Date.now(),summary={recovered:0,stale:0,conflicts:0};
-  const rows=await this.env.WORK_DB.prepare("SELECT id,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+  const rows=await this.env.WORK_DB.prepare("SELECT id,status,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
   for(const row of rows.results||[]){
    let context;try{context=JSON.parse(row.context_json)}catch{continue}
    let changed=false,recovered=0,stale=0;
@@ -366,6 +366,7 @@ export class BrainClock extends DurableObject{
     job.progress={...job.progress,summary:'Runner stopped reporting before a final receipt.',blocker:prior?.commitSha||job.progress?.commitSha?'commit_verification_required':job.progress?.blocker||'runner_lease_expired',next:prior?.commitSha||job.progress?.commitSha?'Verify the existing commit before any further write.':'Eligible for bounded retry after backoff.',recoveredAt:new Date(now).toISOString()};
     changed=true;stale++;
    }
+   if(typeof row.status==='string'&&row.status!==ticketStatusFromJobs(context.color_jobs))changed=true;
    if(!changed)continue;
    const result=await this.env.WORK_DB.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?').bind(JSON.stringify(context),ticketStatusFromJobs(context.color_jobs),now,row.id,this.env.WRITER_OWNER_HASH,row.context_json).run();
    if(result?.meta?.changes===0)summary.conflicts++;
