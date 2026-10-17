@@ -175,10 +175,13 @@ async function publishedApk(kind){
  return {available:true,name:config.title,version,size:asset.size,publishedAt:asset.updated_at||asset.created_at,url:url.href,sha256:asset.digest?.startsWith('sha256:')?asset.digest.slice(7):null};
 }
 async function apkRoute(request,incoming){
+ // Fail closed for Platinum regardless of the old GitHub release asset.
+ if(incoming.pathname==='/downloads/site.apk')return new Response('Infinity Platinum APK withdrawn pending security review. Do not install the old preview.',{status:410,headers:{'Content-Type':'text/plain; charset=utf-8','Cache-Control':'no-store'}});
  if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
  if(incoming.pathname==='/api/apk-releases'){
   const result={};
-  await Promise.all(Object.keys(APK_RELEASES).map(async kind=>{try{result[kind]=await publishedApk(kind)}catch(error){result[kind]={available:false,error:String(error.message||'release_unavailable')}}}));
+  result.site={available:false,error:'security_hold',message:'Infinity Platinum APK withdrawn pending security review; do not install.'};
+  await Promise.all(Object.keys(APK_RELEASES).filter(kind=>kind!=='site').map(async kind=>{try{result[kind]=await publishedApk(kind)}catch(error){result[kind]={available:false,error:String(error.message||'release_unavailable')}}}));
   return Response.json(result,{headers:{'Cache-Control':'no-store'}});
  }
  const kind=incoming.pathname==='/downloads/bubbles.apk'?'bubbles':'site';
@@ -415,7 +418,10 @@ export default {
    out.set('Expires','0');
   }
   if (request.method === 'GET' && upstream.ok && /text\/html|javascript|text\/css|application\/json/.test(contentType)) {
-   const rewritten = rewriteSuiteText(await upstream.text());
+   let bodyText=await upstream.text();
+   // Home page is read from a pinned older commit; remove its APK link during the hold.
+   if(route.repo==='QuantaPhi'&&route.sourcePath==='/index.html')bodyText=bodyText.replace(/<a href="\/downloads\/site\.apk" data-apk-download="site">[\s\S]*?<\/a>/,'<strong role="status" data-platinum-security-hold style="color:#a51c30">Infinity Platinum APK withdrawn pending security review — do not install the preview.</strong>');
+   const rewritten = rewriteSuiteText(bodyText);
    out.delete('Content-Length'); out.delete('Content-Encoding'); out.delete('ETag');
    return new Response(rewritten, { status: upstream.status, headers: out });
   }
