@@ -12,7 +12,7 @@ const mockForecast={current:{temperature_2m:63,apparent_temperature:61,weather_c
  wind_speed_10m:9,time:'2026-10-16T18:00'},daily:{temperature_2m_max:[68],temperature_2m_min:[47],precipitation_probability_max:[30]},
  timezone:'America/Chicago',timezone_abbreviation:'CDT'};
 const loc={results:[{name:'Albia',admin1:'Iowa',country:'United States',latitude:41.0267,longitude:-92.8053}]};
-const weatherFetch=async url=>Response.json(String(url).includes('/geocoding')?loc:mockForecast);
+const weatherFetch=async url=>Response.json(String(url).includes('geocoding-api.open-meteo.com')?loc:mockForecast);
 test('actual voice request, not persona history, selects the web and weather tools',()=>{
  assert.equal(chooseTool('What is the weather in Albia, Iowa?'),'weather.current');
  assert.equal(chooseTool('Search Google for ruthenium catalysts'),'web.search');
