@@ -131,6 +131,7 @@ public final class BubblesService extends Service {
         String next = pendingWebsiteSpeech.pollFirst();
         if (next != null && !next.trim().isEmpty()) speak(next);
     }
+    private PlaybackAwareness playbackAwareness;
     private AudioRecord microphone;
     private android.media.audiofx.AcousticEchoCanceler echoCanceler;
     private Thread audioThread;
@@ -194,6 +195,7 @@ public final class BubblesService extends Service {
                     new NotificationChannel(CHANNEL, "Bubbles voice microphone", NotificationManager.IMPORTANCE_LOW));
         notificationManager.createNotificationChannel(new NotificationChannel(
                     CAPTURE_APPROVAL_CHANNEL, "Bubbles capture approvals", NotificationManager.IMPORTANCE_HIGH));
+        playbackAwareness = new PlaybackAwareness(this, main);
         reloadSpeechEngine();
     }
 
@@ -692,6 +694,14 @@ public final class BubblesService extends Service {
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
         Matcher matcher = namedWake.matcher(text);
         boolean directed = matcher.find();
+        if (!SpeechSourceGate.mayDispatch(typed,
+                playbackAwareness != null && playbackAwareness.mediaPlaying(), directed)) {
+            // Background phone audio is not authorization to speak or run jobs.
+            BrainNotes.prefs(this).edit().putString("last_suppressed_source",
+                    "Phone playback active; say Bubbles to address the assistant").apply();
+            state("playback", .06f);
+            return;
+        }
         String addressed = directed ? text.substring(matcher.end()).replaceFirst("^[\\s,:.!?\\-]+", "").trim() : text;
         // The microphone runs only after explicit Android permission and a
         // visible foreground session. Real gated speech needs no wake word.
@@ -1084,6 +1094,7 @@ public final class BubblesService extends Service {
         if(imagePickerCallback != null){imagePickerCallback.onReceiveValue(null);imagePickerCallback=null;}
         pendingWebsiteSpeech.clear();
         connected=false;muted=true;
+        if (playbackAwareness != null) { playbackAwareness.close(); playbackAwareness = null; }
         main.removeCallbacksAndMessages(null);
         stopRecognition();
         if (voiceModel != null && audioThread == null) {voiceModel.close();voiceModel=null;}
@@ -1113,7 +1124,8 @@ public final class BubblesService extends Service {
                     : "thinking".equals(name) ? "Working on a reply"
                     : "speaking".equals(name) ? "Speaking reply"
                     : "muted".equals(name) ? "Microphone muted"
-                    : "error".equals(name) ? "Voice needs attention" : "Ready and listening";
+                    : "error".equals(name) ? "Voice needs attention"
+                    : "playback".equals(name) ? "Phone media playing; say Bubbles to speak" : "Ready and listening";
                 setContentDescription("Bubbles AI. " + description);
             }
             currentState=name;energy=level;invalidate();
