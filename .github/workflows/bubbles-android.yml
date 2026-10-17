@@ -11,6 +11,7 @@ on:
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
       - 'test/bubbles-floating-window.test.cjs'
+      - 'test/bubbles-webview-recovery.test.cjs'
       - 'test/bubbles-native-visibility.test.cjs'
       - 'test/bubbles-native-site-parity.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
@@ -33,6 +34,7 @@ on:
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
       - 'test/bubbles-floating-window.test.cjs'
+      - 'test/bubbles-webview-recovery.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
       - '.github/workflows/bubbles-android.yml'
 permissions:
@@ -115,6 +117,8 @@ jobs:
         run: node --test test/bubbles-native-visibility.test.cjs
       - name: Verify native floating Oracle window and transcript
         run: node --test test/bubbles-floating-window.test.cjs
+      - name: Verify Bubbles WebView renderer crash recovery
+        run: node --test test/bubbles-webview-recovery.test.cjs
       - name: Verify official GPT-Live voice gateway contract
         run: node --test test/bubbles-gpt-live.test.cjs
       - name: Verify screen intent and safe one-step actions
