@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '24'
       - run: node --check bubbles-ai.js && node --check robot-brain-owner.js && node --check bubbles-brain-actions.js && node --test test/bubbles-live-lookup.test.mjs test/bubbles-research.test.mjs test/bubbles-owner-native-pairing.test.cjs test/bubbles-resonance.test.mjs test/bubbles-tools.test.mjs test/bubbles-stream-voice.test.mjs test/bubbles-brain-bridge.test.cjs test/bubbles-brain-actions.test.cjs test/bubbles-owner-immediate-dispatch.test.cjs
