@@ -3,7 +3,7 @@ import {conversationMemory} from './conversation-memory.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
 import {phoneTool} from './phone-tool.mjs';
-import {githubOperation,directGithubAgent,validateRepository} from './direct-github.mjs';
+import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
@@ -380,9 +380,18 @@ export class BrainClock extends DurableObject{
   if(!/^[0-9a-f-]{36}$/i.test(body.requestId||''))return {ok:false,error:'request_id_required'};
   const key='direct-github:'+body.requestId;
   if(body.action==='receipt')return await this.ctx.storage.get(key)||{ok:false,error:'receipt_not_found'};
-  if(body.action==='list_repositories'){
+  if(['list_repositories','suggest_repositories'].includes(body.action)){
    const runtime=await githubEnvironment(this.env,this.ctx.storage);
-   return githubOperation(runtime,body);
+   const cacheKey='github-owner-catalog-v1';
+   let catalog=await this.ctx.storage.get(cacheKey);
+   if(!catalog||catalog.expiresAt<Date.now()){
+    const fetched=await githubOperation(runtime,{action:'list_repositories'});
+    if(!fetched.ok||!fetched.complete)return fetched;
+    catalog={repositories:fetched.repositories,expiresAt:Date.now()+5*60*1000};
+    await this.ctx.storage.put(cacheKey,catalog);
+   }
+   if(body.action==='list_repositories')return {ok:true,status:'repository_catalog_read',repositories:catalog.repositories,complete:true};
+   return suggestRepositories(runtime,body.request,catalog.repositories);
   }
   const repository=validateRepository(body.repository),leaseKey='repository-lease:'+repository;
   const initial=await this.ctx.blockConcurrencyWhile(async()=>{
