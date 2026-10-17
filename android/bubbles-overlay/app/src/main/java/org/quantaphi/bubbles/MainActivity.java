@@ -283,6 +283,51 @@ public final class MainActivity extends Activity {
             startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
         });
         advancedCapture.addView(stopScreen);
+        // Explicitly separate background room speech from the Bubbles owner chat.
+        // This uses the existing microphone; it does NOT silently open another.
+        TextView roomDescription = new TextView(this);
+        roomDescription.setText("Optional Room Notes bubble: unaddressed nearby speech is saved as local text only. Bubbles commands must begin with its name while this mode is on. No speaker identity is claimed; phone media is ignored. Obtain consent from anyone being recorded.");
+        advancedCapture.addView(roomDescription);
+        Button roomEnable = new Button(this);
+        roomEnable.setText("Start Room Notes bubble (consent required)");
+        roomEnable.setOnClickListener(v -> new AlertDialog.Builder(this)
+            .setTitle("Enable visible Room Notes?")
+            .setMessage("Bubbles will save up to 30 short transcribed phrases heard near your phone in private app storage. It does not identify people. Get appropriate permission from anyone whose speech may be recorded. No room transcripts are sent to Cloudflare or Robot Brain. Say Bubbles before commands to the main assistant.")
+            .setNegativeButton("Cancel", null)
+            .setPositiveButton("Enable Room Notes", (dialog, which) -> {
+                RoomNotes.setEnabled(this, true);
+                startService(new Intent(this, BubblesService.class)
+                    .setAction(BubblesService.ACTION_SYNC_ROOM));
+                state.setText("Room Notes is enabled. Brown ROOM NOTES bubble appears while Bubbles is running. Main chat requires its name before spoken commands.");
+            }).show());
+        advancedCapture.addView(roomEnable);
+        Button roomDisable = new Button(this);
+        roomDisable.setText("Stop Room Notes bubble");
+        roomDisable.setOnClickListener(v -> {
+            RoomNotes.setEnabled(this, false);
+            startService(new Intent(this, BubblesService.class)
+                .setAction(BubblesService.ACTION_SYNC_ROOM));
+            state.setText("Room Notes is OFF. Saved notes remain private until you clear them.");
+        });
+        advancedCapture.addView(roomDisable);
+        Button roomRead = new Button(this);
+        roomRead.setText("Review locally saved Room Notes");
+        roomRead.setOnClickListener(v -> new AlertDialog.Builder(this)
+            .setTitle("Room Notes (local only)")
+            .setMessage(RoomNotes.recent(this))
+            .setPositiveButton("Close", null)
+            .show());
+        advancedCapture.addView(roomRead);
+        Button roomClear = new Button(this);
+        roomClear.setText("Delete saved Room Notes");
+        roomClear.setOnClickListener(v -> new AlertDialog.Builder(this)
+            .setTitle("Delete all locally saved Room Notes?")
+            .setNegativeButton("Cancel", null)
+            .setPositiveButton("Delete Notes", (dialog, which) -> {
+                RoomNotes.clear(this);
+                state.setText("Saved Room Notes cleared.");
+            }).show());
+        advancedCapture.addView(roomClear);
         // Trim Bubbles' own MP4 rather than redirecting to an OEM screen recorder.
         EditText clipStart = new EditText(this);
         clipStart.setHint("Clip starts at second (0)");

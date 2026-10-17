@@ -92,6 +92,37 @@ public final class BubblesService extends Service {
     private WindowManager manager;
     private WindowManager.LayoutParams bubbleLayout;
     private OrbView orb;
+    private android.widget.TextView roomBubble;
+    public static final String ACTION_SYNC_ROOM = "org.quantaphi.bubbles.SYNC_ROOM_NOTES";
+    private void syncRoomBubble() {
+        if (manager == null || !connected) return;
+        boolean enabled = RoomNotes.enabled(this);
+        if (!enabled && roomBubble != null) {
+            try { manager.removeView(roomBubble); } catch (RuntimeException ignored) {}
+            roomBubble = null;
+        }
+        if (!enabled || roomBubble != null) return;
+        android.widget.TextView view = new android.widget.TextView(this);
+        view.setText("ROOM\nNOTES");
+        view.setTextColor(Color.WHITE);
+        view.setTextSize(12f);
+        view.setGravity(Gravity.CENTER);
+        view.setBackgroundColor(Color.rgb(115, 62, 23));
+        view.setContentDescription("Room notes bubble is active. Tap to review or stop room notes.");
+        view.setOnClickListener(v -> startActivity(new Intent(this, MainActivity.class)
+            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP)));
+        WindowManager.LayoutParams params = new WindowManager.LayoutParams(122, 110,
+            WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
+            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
+            PixelFormat.TRANSLUCENT);
+        params.gravity = Gravity.TOP | Gravity.RIGHT;
+        params.x = 16; params.y = 385;
+        try { manager.addView(view, params); roomBubble = view; }
+        catch (RuntimeException error) {
+            BrainNotes.prefs(this).edit().putString("room_notes_error",
+                "Room bubble unavailable: " + error.getClass().getSimpleName()).apply();
+        }
+    }
     private FloatingOracleWindow oracleWindow;
     private static volatile BubblesService activeImageService;
     private android.webkit.ValueCallback<android.net.Uri[]> imagePickerCallback;
@@ -276,6 +307,11 @@ public final class BubblesService extends Service {
             oracleWindow.show();
             return START_NOT_STICKY;
         }
+        if (intent != null && ACTION_SYNC_ROOM.equals(intent.getAction())) {
+            if (connected) syncRoomBubble();
+            else stopSelf();
+            return START_NOT_STICKY;
+        }
         if (intent != null && ACTION_STOP_SPEAKING.equals(intent.getAction())) {
             silenceReply();
             return START_NOT_STICKY;
@@ -341,6 +377,7 @@ public final class BubblesService extends Service {
             bubbleLayout.x = 14; bubbleLayout.y = 240;
             manager.addView(orb, bubbleLayout);
             connected = true;
+            syncRoomBubble();
             activeImageService = this;
             sessionRunning = true;
             // Keep the real QuantaPhi website assistant available while the
@@ -694,6 +731,15 @@ public final class BubblesService extends Service {
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
         Matcher matcher = namedWake.matcher(text);
         boolean directed = matcher.find();
+        // Room Notes is a separate opt-in listener. Unaddressed voices NEVER
+        // become AI commands or Robot Brain jobs while it is enabled.
+        // This does not identify a speaker; a wake-name remains required.
+        if (!typed && RoomNotes.enabled(this) && !directed) {
+            boolean phonePlayback = playbackAwareness != null && playbackAwareness.mediaPlaying();
+            if (!phonePlayback) RoomNotes.add(this, text);
+            state("room", .08f);
+            return;
+        }
         if (!SpeechSourceGate.mayDispatch(typed,
                 playbackAwareness != null && playbackAwareness.mediaPlaying(), directed)) {
             // Background phone audio is not authorization to speak or run jobs.
@@ -1100,6 +1146,10 @@ public final class BubblesService extends Service {
         if (voiceModel != null && audioThread == null) {voiceModel.close();voiceModel=null;}
         if (tts != null) {tts.stop();tts.shutdown();tts=null;}
         if (oracleWindow != null) {oracleWindow.close();oracleWindow = null;}
+        if (roomBubble != null && manager != null) {
+            try { manager.removeView(roomBubble); } catch (Exception ignored) {}
+            roomBubble = null;
+        }
         if (orb != null && manager != null) {
             try {manager.removeView(orb);}catch(Exception ignored){}
         }
@@ -1125,7 +1175,8 @@ public final class BubblesService extends Service {
                     : "speaking".equals(name) ? "Speaking reply"
                     : "muted".equals(name) ? "Microphone muted"
                     : "error".equals(name) ? "Voice needs attention"
-                    : "playback".equals(name) ? "Phone media playing; say Bubbles to speak" : "Ready and listening";
+                    : "playback".equals(name) ? "Phone media playing; say Bubbles to speak"
+                    : "room".equals(name) ? "Unaddressed speech routed to local Room Notes" : "Ready and listening";
                 setContentDescription("Bubbles AI. " + description);
             }
             currentState=name;energy=level;invalidate();
