@@ -751,7 +751,7 @@ export async function ownerTickets(env,path,body){
    return denied('manual_security_review_required',409);
   if((context.owner_approval_receipts||[]).filter(x=>x.jobId===jobId).length>=3)
    return denied('approval_retry_limit_reached',409);
-  const decision='Use existing QuantaPhi styling and accessible Android-first controls. For enrollment, place the button in the existing owner settings area and label it Enroll. Explain what enrollment does in the dialog. Use IndexedDB for structured device-local records and localStorage only for small non-sensitive preferences; never store credentials or grant new privileges. Complete regular tests, review, merge and deployment verification. This approval applies only to the UI choices in this job.';
+  const decision='Use existing QuantaPhi styling and accessible Android-first controls. Only when enrollment is part of the existing owner request, place its control in the existing owner settings and use a clear label. Explain the requested action in plain language; do not introduce unrelated enrollment. Use IndexedDB for structured device-local records and localStorage only for small non-sensitive preferences; never store credentials or grant new privileges. Complete regular tests, review, merge and deployment verification. This approval applies only to the UI choices in this job.';
   const when=new Date().toISOString();
   const addition='\n\nVerified owner UI approval ('+when+'): '+decision;
   if(String(job.instructions||'').length+addition.length>12000)return denied('job_instructions_limit',409);
