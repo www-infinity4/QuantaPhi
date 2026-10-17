@@ -98,9 +98,11 @@ test('native-to-web recorder state is authoritative and the stop control is cont
 test('one screen MP4 includes microphone audio automatically and publishes to Movies/Bubbles', () => {
   const screen = source('ScreenCaptureService.java');
   const activity = source('MainActivity.java');
-  assert.match(screen, /MediaRecorder\.AudioSource\.MIC/);
-  assert.match(screen, /MediaRecorder\.AudioEncoder\.AAC/);
-  assert.match(screen, /setAudioChannels\(1\)/);
+  assert.doesNotMatch(screen, /setAudioSource\(/);
+  assert.match(screen, /BubblesService\.beginScreenAudio/);
+  const muxer = source('SharedScreenAudioMuxer.java');
+  assert.match(muxer, /MediaFormat\.createAudioFormat\("audio\/mp4a-latm", 16000, 1\)/);
+  assert.match(muxer, /MediaMuxer/);
   assert.match(screen, /setVideoSource\(MediaRecorder\.VideoSource\.SURFACE\)/);
   assert.match(screen, /savePath\("video\/mp4"\)/);
   assert.match(screen, /CapturePublisher\.publish\(this, completed, type\)/);

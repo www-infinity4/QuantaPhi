@@ -12,7 +12,7 @@ function harness(owner=false,speech=false){
  const utterances=[],memoryRequests=[];let ownsVoice=true;const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
  const node=(tag)=>{
   const n={tag,className:'',dataset:{},style:{setProperty(){}},children:[],handlers:{},hidden:false,value:'',
-   append(...arr){this.children.push(...arr)},insertBefore(item,before){this.children.splice(this.children.indexOf(before),0,item)},
+   prepend(...items){this.children.unshift(...items)},before(){},append(...arr){this.children.push(...arr)},insertBefore(item,before){this.children.splice(this.children.indexOf(before),0,item)},
    addEventListener(name,callback){this.handlers[name]=callback},setAttribute(k,v){this[k]=v},
    getBoundingClientRect(){return{left:16,top:150}},replaceChildren(){this.children=[]},
    focus(){},select(){},removeAttribute(){}};

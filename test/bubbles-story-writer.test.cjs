@@ -143,7 +143,7 @@ test('embedded Bubbles programming persists user-chosen role instead of overwrit
   const nodes=[];
   const make=tag=>{
    const e={tag,children:[],dataset:{},style:{},hidden:false,handlers:{},value:'',
-    append(...items){for(const item of items){this.children.push(item);item.parent=this}},
+    prepend(...items){this.children.unshift(...items)},before(){},append(...items){for(const item of items){this.children.push(item);item.parent=this}},
     insertBefore(item,before){const at=this.children.indexOf(before);this.children.splice(at<0?this.children.length:at,0,item);item.parent=this},
     setAttribute(){},addEventListener(type,callback){this.handlers[type]=callback},focus(){},
     replaceChildren(...items){this.children=items},removeAttribute(){},select(){}};
@@ -182,7 +182,7 @@ test('reply actions take notes and prepare work without sending unapproved robot
  const code=source('bubbles-ai.js'),nodes=[],values=new Map(),calls=[];
  const make=tag=>{
   const e={tag,children:[],dataset:{},style:{},hidden:false,handlers:{},value:'',
-   append(...items){this.children.push(...items)},insertBefore(item,before){this.children.splice(this.children.indexOf(before),0,item)},
+   prepend(...items){this.children.unshift(...items)},before(){},append(...items){this.children.push(...items)},insertBefore(item,before){this.children.splice(this.children.indexOf(before),0,item)},
    setAttribute(){},addEventListener(type,fn){this.handlers[type]=fn},focus(){},replaceChildren(...items){this.children=items},removeAttribute(){},select(){}};
   nodes.push(e);return e;
  };

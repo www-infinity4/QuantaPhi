@@ -68,6 +68,17 @@ public final class BubblesService extends Service {
     public static final String ACTION_RECORD = "org.quantaphi.bubbles.RECORD_AUDIO";
     public static final String ACTION_SAVE_AUDIO = "org.quantaphi.bubbles.SAVE_AUDIO";
     private final VoiceRecording recording = new VoiceRecording();
+    // The screen recorder consumes the SAME PCM frames as Vosk. Android may
+    // silence one client when MediaRecorder opens a second microphone.
+    private final VoiceRecording screenAudio = new VoiceRecording();
+    static VoiceRecording beginScreenAudio() throws Exception {
+        BubblesService service = activeImageService;
+        if (service == null || !service.connected || service.muted || !service.captureRunning)
+            throw new IllegalStateException("Bubbles voice must be listening before recording");
+        service.screenAudio.start(new java.io.File(service.getFilesDir(), "captures"));
+        // Capture holds this session even if the voice service is destroyed/restarted.
+        return service.screenAudio;
+    }
     private final ExecutorService mediaPublish = Executors.newSingleThreadExecutor();
     private static final int CAPTURE_APPROVAL_ID = 513;
     private static final String CAPTURE_APPROVAL_CHANNEL = "bubbles_capture_approval";
@@ -491,6 +502,11 @@ public final class BubblesService extends Service {
                     while (captureRunning && connected && !muted) {
                         int count = input.read(samples, 0, samples.length);
                         if (count <= 0) throw new IllegalStateException("Microphone read failed: " + count);
+                        try { screenAudio.append(samples, count); }
+                        catch (Exception error) {
+                            main.post(() -> startService(new Intent(this, ScreenCaptureService.class)
+                                .setAction(ScreenCaptureService.STOP)));
+                        }
                         try { recording.append(samples, count); }
                         catch (Exception error) { main.post(this::saveAudio); }
                         double sum = 0;
@@ -653,6 +669,8 @@ public final class BubblesService extends Service {
         main.removeCallbacks(deliverVoiceTurn);
         turnBuffer.clear();
         captureRunning = false;
+        if (screenAudio.active()) startService(new Intent(this, ScreenCaptureService.class)
+            .setAction(ScreenCaptureService.STOP));
         saveAudio();
         if (microphone != null) {
             try { microphone.stop(); } catch (Exception ignored) {}
@@ -1136,6 +1154,9 @@ public final class BubblesService extends Service {
     @Override public void onDestroy() {
         sessionRunning = false;
         screenSharing = false;
+        if (screenAudio.active()) {
+            startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
+        }
         if(activeImageService == this) activeImageService = null;
         if(imagePickerCallback != null){imagePickerCallback.onReceiveValue(null);imagePickerCallback=null;}
         pendingWebsiteSpeech.clear();

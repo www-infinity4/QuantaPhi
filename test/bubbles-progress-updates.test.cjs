@@ -18,15 +18,15 @@ test('poll baseline does not replay old activity; actual claims and merges annou
 });
 test('unproven working labels cannot claim execution and failures stay readable',()=>{
  const p=new ProgressTracker();p.update([]);
- assert.match(p.update([ticket([job('working')])])[0],/queued/);
+ assert.deepEqual(p.update([ticket([job('working')])]),[]);
  const update=p.update([ticket([job('blocked',{summary:'Runner failed; details https://example.com/log'})])])[0];
- assert.match(update,/blocked/);assert.ok(!update.includes('https'));
+ assert.match(update,/technical issue/);assert.ok(!update.includes('https'));
 });
 test('actual poller reads authenticated tickets, narrates changes and reconnects without new tasks',async()=>{
  const fs=require('node:fs'),vm=require('node:vm');
  const source=fs.readFileSync('bubbles-ai.js','utf8');
  let tickets=[ticket([job('queued')])],failed=false,calls=0;const displayed=[],voice=[];
- const context={brainTools:{ProgressTracker},embedded:false,ownerReady:true,ownerHeaders:{Authorization:'Bearer fixture'},nativeOverlay:true,busy:false,speaking:false,config:{voice:true},messages:[],progressVoiceQueue:voice,BRAIN:'https://brain.invalid',verifiedOwnerHeaders:async()=>({Authorization:'Bearer fixture'}),bubblesFetch:async(url,options)=>{calls++;assert.equal(options.method,'POST');assert.ok(url.endsWith('/work/tickets/list'));if(failed)throw Error('offline');return {ok:true,json:async()=>({ok:true,tickets})}},display:text=>displayed.push(text),persistChat:()=>{},setInterval:()=>{},speakText:()=>{}};
+ const context={brainInboxInitialized:false,brainConnectionState:()=>{},recordBrainNotice:()=>{},showOwnerApprovalRequests:()=>{},brainTools:{ProgressTracker},embedded:false,ownerReady:true,ownerHeaders:{Authorization:'Bearer fixture'},nativeOverlay:true,busy:false,speaking:false,config:{voice:true},messages:[],progressVoiceQueue:voice,BRAIN:'https://brain.invalid',verifiedOwnerHeaders:async()=>({Authorization:'Bearer fixture'}),bubblesFetch:async(url,options)=>{calls++;assert.equal(options.method,'POST');assert.ok(url.endsWith('/work/tickets/list'));if(failed)throw Error('offline');return {ok:true,json:async()=>({ok:true,tickets})}},display:text=>displayed.push(text),persistChat:()=>{},setInterval:()=>{},speakText:()=>{}};
  vm.createContext(context);
  vm.runInContext(source.slice(source.indexOf('const progressTracker='),source.indexOf('async function readBrainReport(){')),context);
  await new Promise(r=>setImmediate(r));assert.equal(displayed.length,0);

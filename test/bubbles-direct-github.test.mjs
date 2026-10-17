@@ -87,3 +87,14 @@ test('repository creation uses the owner account API and provisions Python/Node 
  const workflow=Buffer.from(JSON.parse(calls[2].options.body).content,'base64').toString('utf8');
  assert.match(workflow,/setup-python/);assert.match(workflow,/node-version: '22'/);assert.ok(!workflow.includes('fixture-token'));
 });
+
+test('repository catalog follows every page and keeps owner scope without changing repositories',async()=>{
+ const calls=[];
+ const result=await githubOperation({GITHUB_TOKEN:'test'}, {action:'list_repositories'},async(url,options)=>{
+  calls.push(url);assert.equal(options.redirect,'manual');assert.equal(options.method,undefined);
+  return Response.json(calls.length===1?Array.from({length:100},(_,i)=>({full_name:'www-infinity4/Repo'+i,archived:false})):
+   [{full_name:'www-infinity4/QuantaPhi',archived:false},{full_name:'another-owner/Repo',archived:false}]);
+ });
+ assert.equal(result.complete,true);assert.equal(calls.length,2);assert.equal(result.repositories.length,101);
+ assert.ok(result.repositories.every(repo=>repo.repository.startsWith('www-infinity4/')));
+});

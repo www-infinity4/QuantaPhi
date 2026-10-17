@@ -76,7 +76,7 @@ test('UI calls the separately owner-authorized approval endpoint from the chat, 
  assert.match(chat,/function showOwnerApprovalRequests\(tickets\)/);
  assert.match(chat,/BRAIN\+'\/work\/tickets\/approve'/);
  assert.match(chat,/showOwnerApprovalRequests\(result.tickets\)/);
- assert.match(chat,/Ask AI to review/);
+ assert.match(chat,/Explain this choice/);
  assert.match(source,/if\(\['\/work\/tickets\/create'.*'\/work\/tickets\/approve'/);
  assert.match(source,/if\(!await ownerAuthorized\(env,token\)\)/);
 });

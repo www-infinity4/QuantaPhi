@@ -106,7 +106,7 @@ test('website uses same-origin verified owner gate for Brain calls and keeps gue
  assert.match(js,/if\(embedded\)throw Error\('Guest embed bubbles cannot access the owner Robot Brain\.'\)/);
  assert.match(js,/await verifiedOwnerHeaders\(\)/);
  assert.match(js,/BRAIN\+'\/work\/tickets\/list'/);
- assert.match(js,/brainTools\.makeJobs\(request\)/);
+ assert.match(js,/brainTools\.makeJobs\(request,repository\)/);
  assert.match(js,/result\.deduplicated/);
  assert.match(js,/you do not need to press another button/);
 });
@@ -221,4 +221,13 @@ test('Bubbles never displays or voices fabricated createTicket JSON from Android
  assert.match(normalizer,/createTicket/);
  assert.match(normalizer,/model-generated tool draft/);
  assert.ok(client.indexOf('normalizeOwnerAssistantReply(rawAnswer')<client.indexOf("messages.push({role:'assistant',text:answer})"));
+});
+
+test('selected repository pins both writer and verification jobs',()=>{
+ for(const repository of ['www-infinity4/QuantaPhi','www-infinity4/Story-Writer']){
+  const jobs=makeJobs('Fix Bubbles',repository);
+  assert.ok(jobs.every(job=>job.repository===repository));
+  assert.deepEqual(jobs[1].dependencies,[jobs[0].id]);
+ }
+ assert.throws(()=>makeJobs('Fix menu','another-owner/repo'),/explicit_owner_repository_required/);
 });

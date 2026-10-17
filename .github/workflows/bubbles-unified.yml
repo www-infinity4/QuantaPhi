@@ -3,6 +3,10 @@ on:
   pull_request:
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-card-*'
+      - 'bubbles-brain-actions.js'
+      - 'test/bubbles-card-workspace.test.mjs'
+      - 'test/bubbles-repository-targets.test.mjs'
       - 'bubbles-unified.css'
       - 'bubbles.html'
       - 'index.html'
@@ -13,6 +17,10 @@ on:
     branches: [main]
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-card-*'
+      - 'bubbles-brain-actions.js'
+      - 'test/bubbles-card-workspace.test.mjs'
+      - 'test/bubbles-repository-targets.test.mjs'
       - 'bubbles-unified.css'
       - 'bubbles.html'
       - 'index.html'
@@ -32,3 +40,8 @@ jobs:
           node-version: '22'
       - run: node --check bubbles-ai.js
       - run: node --test test/bubbles-unified.test.mjs
+      - name: Verify in-chat cards and repository ticket targets
+        run: |
+          node --check bubbles-card-workspace.mjs
+          node --check bubbles-card-host.mjs
+          node --test test/bubbles-card-workspace.test.mjs test/bubbles-repository-targets.test.mjs test/bubbles-direct-github.test.mjs test/bubbles-technical-handoff.test.mjs

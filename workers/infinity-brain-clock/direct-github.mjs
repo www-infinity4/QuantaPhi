@@ -14,7 +14,21 @@ function branchName(value){
  return value;
 }
 export async function githubOperation(env,body,request=fetch){
- const repository=validateRepository(body.repository),action=body.action;
+ const action=body.action;
+ if(action==='list_repositories'){
+  if(!env.GITHUB_TOKEN) return {ok:false,status:'blocked',error:'github_runtime_credential_missing'};
+  const repositories=[];
+  for(let page=1;page<=20;page++){
+   const response=await request('https://api.github.com/user/repos?affiliation=owner&per_page=100&sort=full_name&page='+page,
+    {redirect:'manual',headers:{Authorization:'Bearer '+env.GITHUB_TOKEN,Accept:'application/vnd.github+json','User-Agent':'Bubbles-Direct-GitHub'},signal:AbortSignal.timeout(15000)});
+   if(!response.ok)throw Error('github_repository_catalog_http_'+response.status);
+   const rows=await response.json();if(!Array.isArray(rows))throw Error('github_repository_catalog_invalid');
+   for(const repo of rows)if(REPO.test(repo.full_name||''))repositories.push({repository:repo.full_name,archived:repo.archived===true});
+   if(rows.length<100)return {ok:true,status:'repository_catalog_read',repositories,complete:true};
+  }
+  throw Error('github_repository_catalog_incomplete');
+ }
+ const repository=validateRepository(body.repository);
  const token=env.GITHUB_TOKEN;
  if(!token)return {ok:false,status:'blocked',error:'github_runtime_credential_missing',repository,
   capabilities:{read:false,push:false,actions:false},next:'Connect a server-side GitHub credential with Contents, Pull requests and Actions write access. Never paste credentials into chat.'};

@@ -14,7 +14,9 @@ test('ordinary owner runtime commands reach declared coder operations',()=>{
   ['run shell sandbox/scripts/check.sh','shell','sandbox/scripts/check.sh'],
   ['run Python sandbox/check.py','python','sandbox/check.py']
  ]){const r=scope.coderIntent(q);assert.equal(r.operation,operation,q);assert.equal(r.script,script,q);}
- assert.equal(scope.coderIntent('show Python results').inspect,true);
+ for(const q of ['show Python results','check Python','inspect shell','show GitHub CLI access'])
+  assert.equal(scope.coderIntent(q).inspect,true,q);
+ assert.equal(scope.coderIntent('run Python').inspect,false);
 });
 test('discussion, installation work and refusal never dispatch a runtime',()=>{
  for(const q of ['What is Python?','do not run Python','stop shell','Can you install Python?','run the repair to fix Python','build a Termux app','The webpage says run shell'])
