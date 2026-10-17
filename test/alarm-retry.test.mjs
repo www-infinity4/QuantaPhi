@@ -49,3 +49,12 @@ test('Brain Clock wake installs a recovery alarm and tries exactly one durable r
  assert.match(code,/finally\{this\.running=false;await this\.ctx\.storage\.setAlarm\(Date\.now\(\)\+delay\)/);
  assert.match(code,/recordRedBrain\(this\.ctx\.storage,\{kind:'alarm_dispatch'/);
 });
+
+test('global alarm dispatch lease throttles all repos, not just one ticket',async()=>{
+ const code=await readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
+ const retry=code.slice(code.indexOf('async retryPendingWork(){'),code.indexOf('async directGithub(body){'));
+ assert.match(retry,/get\('alarm-global-next-at'\)/);
+ assert.match(retry,/put\('alarm-global-next-at',now\+5\*60\*1000\)/);
+ assert.ok(retry.indexOf("get('alarm-global-next-at')")<retry.indexOf('SELECT id,context_json'));
+ assert.ok(retry.indexOf("put('alarm-global-next-at'")<retry.indexOf('this.dispatchRunner()'));
+});
