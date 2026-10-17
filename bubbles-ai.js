@@ -1299,10 +1299,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   busy=true;send.disabled=true;let reply;
   try{
    const result=await requestRunner();
-   reply=result.status==='queued_for_runner'&&result.dispatch?.status==='scheduled_fallback'?'Red-Brain accepted the request, but the repository runner could not start: '+String(result.dispatch.error||'runner_unavailable').slice(0,135)+'. No execution verified.':
-     result.status==='queued_for_runner'?'Red-Brain acknowledged the runner dispatch request. Waiting for an authenticated runner receipt; no code change or deployment verified.':
-    result.status==='no_pending_jobs'?'Robot Brain has no eligible queued jobs to request. Ask for a bot report to inspect recorded work.':
-    'Robot Brain replied: '+String(result.status||'unknown').slice(0,100);
+   reply=result.status==='queued_for_runner'?'Runner requested. Waiting for a verified GitHub start.':
+    result.status==='awaiting_repository_runner'?'Job saved. GitHub runner is unavailable: '+String(result.reason||'connection not confirmed').slice(0,100):
+    result.status==='runner_dispatch_failed'?'Runner dispatch failed: '+String(result.reason||'unknown').slice(0,100):
+    result.status==='runner_dispatch_unverified'?'Runner request recorded, but GitHub did not return a valid dispatch receipt.':
+    result.status==='job_not_dispatchable'?'Job remains blocked: '+String(result.reason||'not eligible').replaceAll('_',' ').slice(0,100):
+    result.status==='no_pending_jobs'?'No eligible jobs are ready to run.':'Runner status is unverified.';
   }catch(error){reply='Robot Brain did not start a new job. '+String(error.message||error).slice(0,160)}
   display(spoken,'you');display(reply,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:reply});persistChat();
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=reply;else if(config.voice&&!nativeOverlay)speakText(reply);
@@ -1418,8 +1420,10 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   workText.value=request;tools.open=true;
   try{const ticket=await submitWork(request,'explicit-user-command');workEvidence=(ticket.batchSummary?ticket.batchSummary+' ':'')+(continued?'Continuing your last request. ':'')+
     (ticket.deduplicated?'Existing work ticket found ('+ticket.status+').':
-     ticket.runner==='queued_for_runner'&&ticket.dispatch?.status==='scheduled_fallback'?'Work ticket saved, but Red-Brain could not dispatch the repository runner: '+String(ticket.dispatch.error||'runner unavailable').slice(0,110)+'. No code execution verified.':
-      ticket.runner==='queued_for_runner'?'Work ticket saved; Red-Brain acknowledged the runner request. Pink Panther must independently verify its execution.':
+     ticket.runner==='awaiting_repository_runner'?'Job saved. GitHub runner is unavailable; no execution verified.':
+      ticket.runner==='runner_dispatch_failed'||ticket.runner==='runner_dispatch_unverified'?'Job saved. GitHub dispatch is not verified.':
+      ticket.runner==='job_not_dispatchable'?'Job saved but blocked from running.':
+      ticket.runner==='queued_for_runner'?'Job saved. GitHub dispatch accepted; runner start is not yet verified.':
      'Work ticket saved, but the runner could not be confirmed: '+ticket.runner+'.')+
     ' Your request is saved; you do not need to press another button. Track real results in the Robot Brain report at https://quantaphi.org/#robotDirections . No successful code change, merge or deployment has been verified by this receipt.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
@@ -1918,7 +1922,7 @@ async function requestRunner(ticketId='',jobId=''){
   body:JSON.stringify(body)},20000);
  const result=await response.json().catch(()=>({}));
  if(!response.ok||!result.ok)throw Error(String(result.error||'Runner request was not acknowledged'));
- if(!['queued_for_runner','no_pending_jobs'].includes(result.status))throw Error('Unexpected runner result');
+ if(!['queued_for_runner','no_pending_jobs','awaiting_repository_runner','runner_dispatch_failed','runner_dispatch_unverified','job_not_dispatchable'].includes(result.status))throw Error('Unexpected runner result');
  return result;
 }
 async function submitWork(request,approval='explicit-click'){
@@ -1969,7 +1973,10 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
   let runner='not_started',runnerDispatch=null;
    try{const request=await requestRunner(result.ticket.id,jobs[0]?.id||'');runner=request.status;runnerDispatch=request.dispatch||null;}
    catch(error){runner='runner_request_failed';workStatus.textContent='Work ticket saved, but runner dispatch failed: '+String(error.message||error).slice(0,100);}
-   if(runner==='queued_for_runner')workStatus.textContent='Robot Brain ticket saved. Greenbeans runner requested; Pink Panther verification is a dependent job. Execution and deployment are not yet proven.';
+   if(runner==='queued_for_runner')workStatus.textContent='Ticket saved; GitHub dispatch accepted. Waiting for actual runner claim.';
+   else if(runner==='awaiting_repository_runner'||runner==='runner_dispatch_failed'||runner==='runner_dispatch_unverified')
+    workStatus.textContent='Ticket saved; runner not verified: '+String(runnerDispatch?.error||runner).slice(0,90);
+   else if(runner==='job_not_dispatchable')workStatus.textContent='Ticket saved; not runnable until its recorded blocker is resolved.';
    return {id:result.ticket.id,repository,status:'ready',deduplicated:false,runner,dispatch:runnerDispatch};
  }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145);throw error}
  finally{workButton.disabled=false}

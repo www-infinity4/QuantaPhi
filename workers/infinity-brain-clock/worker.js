@@ -2,6 +2,7 @@ import {attachTechnicalHandoff} from './technical-handoff.mjs';
 import {conversationMemory} from './conversation-memory.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
+import {checkOwnerRunnerRequest,runnerDispatchReceipt} from './runner-request.mjs';
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
@@ -518,19 +519,34 @@ export class BrainClock extends DurableObject{
   }
   if(new URL(request.url).pathname==='/run-next'){
    const body=await request.json();
+   if(body===null||typeof body!=='object'||Array.isArray(body)||
+      (body.ticketId!==undefined&&typeof body.ticketId!=='string')||
+      (body.jobId!==undefined&&typeof body.jobId!=='string'))
+    return Response.json({ok:false,error:'invalid_runner_request'},{status:400});
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
-   for(const t of rows.results||[]){if(body.ticketId&&body.ticketId!==t.id)continue;const jobs=JSON.parse(t.context_json).color_jobs||[];
-    for(const job of jobs){if(body.jobId&&body.jobId!==job.id||['complete','deployed_verified','committed_unverified','merged_verified'].includes(job.status))continue;
-     const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository})),key='writer:'+t.id+':'+job.id+':'+revision,prior=await this.ctx.storage.get(key),active=await this.ctx.storage.get('repository-lease:'+job.repository);
-     if(active?.leaseUntil>Date.now())return Response.json({ok:false,error:'repository_job_running',runUrl:active.runUrl||''},{status:409});
-     if(prior)await this.ctx.storage.put(key,{...prior,retryAt:0});
+   let blockedReason='';
+   for(const t of rows.results||[]){
+    if(body.ticketId&&body.ticketId!==t.id)continue;
+    let jobs;try{jobs=JSON.parse(t.context_json).color_jobs||[]}catch{continue}
+    for(const job of jobs){
+     if(body.jobId&&body.jobId!==job.id)continue;
+     const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
+     const key='writer:'+t.id+':'+job.id+':'+revision,retryKey='alarm-retry:'+t.id+':'+job.id+':'+revision;
+     const [prior,active,retry]=await Promise.all([this.ctx.storage.get(key),this.ctx.storage.get('repository-lease:'+job.repository),this.ctx.storage.get(retryKey)]);
+     const deps=(job.dependencies||[]).map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
+     const decision=checkOwnerRunnerRequest(job,{now:Date.now(),prior,lease:active,retry,deps});
+     if(!decision.eligible){
+      if(body.ticketId){blockedReason=decision.reason;if(body.jobId)break;}
+      continue;
+     }
      await this.ctx.storage.put('requested-next-job',{ticketId:t.id,jobId:job.id});
      await this.emit('purple-pearl','greenbeans','owner requested next job','Owner queued '+t.id+'/'+job.id+' for the next authenticated runner cycle. No completion claimed.');
-     const runnerDispatch=await this.dispatchRunner(),diagnosis=classifyDispatch(runnerDispatch);
-     await recordRedBrain(this.ctx.storage,{kind:'runner_dispatch',state:diagnosis.state,ticketId:t.id,jobId:job.id,reason:diagnosis.reason});
-     return Response.json({ok:true,status:'queued_for_runner',ticketId:t.id,jobId:job.id,dispatch:runnerDispatch});
+     const dispatch=await this.dispatchRunner(),receipt=runnerDispatchReceipt(dispatch);
+     await recordRedBrain(this.ctx.storage,{kind:'runner_dispatch',state:receipt.status==='queued_for_runner'?'dispatched_unverified':receipt.status,ticketId:t.id,jobId:job.id,reason:receipt.reason});
+     return Response.json({ok:true,status:receipt.status,reason:receipt.reason,ticketId:t.id,jobId:job.id,dispatch});
     }
    }
+   if(body.ticketId&&blockedReason)return Response.json({ok:true,status:'job_not_dispatchable',reason:blockedReason,ticketId:body.ticketId,jobId:body.jobId||''});
    return Response.json({ok:true,status:'no_pending_jobs'});
   }
   if(new URL(request.url).pathname==='/earnings-status')return Response.json(await this.earningsStatus());
