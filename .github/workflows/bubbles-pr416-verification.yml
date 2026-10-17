@@ -1,36 +1,46 @@
-name: Bubbles PR 416 Post‑Merge Verification
+name: Bubbles PR 416 source verification
 
 on:
+  pull_request:
+    paths:
+      - 'bubbles-**'
+      - 'src/**'
+      - 'test/**'
+      - 'scripts/verify-bubbles-pr416.mjs'
+      - '.github/workflows/bubbles-pr416-verification.yml'
   push:
     branches: [main]
-    # Trigger when any files that could affect Bubbles are changed.
     paths:
-      - "bubbles-**"
-      - "src/**"
-      - "test/**"
-      - "scripts/verify-bubbles-pr416.mjs"
+      - 'bubbles-**'
+      - 'src/**'
+      - 'test/**'
+      - 'scripts/verify-bubbles-pr416.mjs'
+      - '.github/workflows/bubbles-pr416-verification.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 6
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
+        with:
+          persist-credentials: false
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run verification script
+          node-version: '22'
+      - name: Verify actual Bubbles source and authenticated Brain contracts
         run: node scripts/verify-bubbles-pr416.mjs
-
-      - name: Upload test results
+      - name: Upload honest source-test receipt
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: bubbles-pr416-verification-results
-          path: "test-results/**"
+          path: test-results/bubbles-pr416-verification.json
+          if-no-files-found: warn
+          retention-days: 14
