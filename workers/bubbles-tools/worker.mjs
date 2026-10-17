@@ -98,6 +98,18 @@ export function hasUnverifiedActionClaim(userRequest,answer){
  if(/\b(?:merged into (?:the )?main|deployed to (?:production|your site)|pushed to main)\b/i.test(text)&&/\b(?:we|I|our|code|repository|branch|adapter|changes)\b/i.test(text))return true;
  return false;
 }
+// Model text is not a tool invocation. Workers AI chat can emit planning
+// prose or fabricated createTicket JSON instead of a user-facing reply.
+// Reject the draft before it reaches the floating bubble or Android TTS.
+export function hasModelToolLeak(answer){
+ const text=String(answer||'').slice(0,12000);
+ const fakeCall=/["']?name["']?\s*:\s*["'](?:createTicket|submitWork|dispatchJob|runTool|invokeTool)["']/i.test(text)
+  && /["']?arguments["']?\s*:/i.test(text);
+ const internalPlan=/\b(?:we|i) need to\s+(?:send|write|compose|provide|respond with|say)\b[\s\S]{0,300}\b(?:invoke|call|execute) (?:the|a|this) tool\b/i.test(text);
+ const rawChannel=/<\|(?:im_start|im_sep|channel)[^>]*\|>|(?:^|\n)\s*(?:assistant|analysis)\s+to=\w+/i.test(text);
+ const falseSubmission=/(?:^|\n)\s*(?:I(?:'m| am)|We(?:'re| are))?\s*[Ss]ubmitting (?:a|the) (?:repair |work |Robot Brain )?ticket\b/i.test(text);
+ return fakeCall||internalPlan||rawChannel||falseSubmission;
+}
 function groundedWorkFallback(request){
  const target=/video/i.test(request)?'video generator':/wallet|quant|coin/i.test(request)?'wallet ledger':/image/i.test(request)?'image generator':/radio|music/i.test(request)?'radio player':/robot brain|bot/i.test(request)?'Robot Brain':/bubbles|voice|microphone/i.test(request)?'Bubbles voice and job bridge':'requested repository component';
  return 'This conversation has not verified a code edit, deployment or Robot Brain job. To continue the '+target+' work, inspect its current source and focused tests, then submit the specific repair through the authenticated owner Brain. A real ticket, commit or deployment receipt—not a chat answer—must confirm each completed action.';
@@ -179,7 +191,7 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
  let output=result?.response||result?.choices?.[0]?.message?.content;
  if(typeof output!=='string'||!output.trim())throw Error('empty_gpt_response');
  // One bounded correction; never fabricate a repository edit or execute a job.
- const dubious=()=>isGenericBuildReply(userRequest,output)||hasUnverifiedActionClaim(userRequest,output);
+ const dubious=()=>isGenericBuildReply(userRequest,output)||hasUnverifiedActionClaim(userRequest,output)||hasModelToolLeak(output);
  if(dubious()){
   try{
    const corrected=await env.AI.run(model,{messages:[
