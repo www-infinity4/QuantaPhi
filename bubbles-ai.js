@@ -1539,6 +1539,7 @@ async function pollBrainProgress(){
   if(progressUnavailable)updates.unshift('Robot Brain is reachable again. I am checking progress here.');
   progressUnavailable=false;
   if(updates.length)announceBrainProgress(updates.slice(-5).join(' '));
+   if(typeof syncRedSectors==='function')void syncRedSectors().catch(()=>{if(!redLinkFailed){redLinkFailed=true;recordBrainNotice('Red-Brain connection is not responding. Ticket polling continues.');}});
  }catch{
   brainConnectionState('Brain unreachable · latest notices retained', 'unreachable');
   if(!progressUnavailable){progressUnavailable=true;announceBrainProgress('Robot Brain is unreachable right now. I will keep checking and update you here when it reconnects.');}
