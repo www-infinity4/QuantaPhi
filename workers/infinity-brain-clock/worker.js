@@ -431,8 +431,9 @@ export class BrainClock extends DurableObject{
      if(prior)await this.ctx.storage.put(key,{...prior,retryAt:0});
      await this.ctx.storage.put('requested-next-job',{ticketId:t.id,jobId:job.id});
      await this.emit('purple-pearl','greenbeans','owner requested next job','Owner queued '+t.id+'/'+job.id+' for the next authenticated runner cycle. No completion claimed.');
-     await recordRedBrain(this.ctx.storage,{kind:'runner_dispatch',state:'queued_unverified',ticketId:t.id,jobId:job.id,reason:'Runner requested; awaiting receipt'});
-     return Response.json({ok:true,status:'queued_for_runner',ticketId:t.id,jobId:job.id,dispatch:await this.dispatchRunner()});
+     const runnerDispatch=await this.dispatchRunner(),diagnosis=classifyDispatch(runnerDispatch);
+     await recordRedBrain(this.ctx.storage,{kind:'runner_dispatch',state:diagnosis.state,ticketId:t.id,jobId:job.id,reason:diagnosis.reason});
+     return Response.json({ok:true,status:'queued_for_runner',ticketId:t.id,jobId:job.id,dispatch:runnerDispatch});
     }
    }
    return Response.json({ok:true,status:'no_pending_jobs'});
