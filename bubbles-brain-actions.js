@@ -214,6 +214,21 @@ function bulkRunPreview(tickets){
  }
  return {ready,ui,blocked,working,retryableWorking,total:ready+ui+retryableWorking};
 }
+// Yellow observes actual Android recorder status changes. Red narrates the
+// verified device report through the same website conversation and voice bridge.
+// Loading an old saved status must NOT announce a new recording result.
+function nativeCaptureNotice(previous,current){
+ if(!previous||!current||typeof previous!=='object'||typeof current!=='object')return '';
+ for(const [field,label] of [['screenState','screen recording'],['soundState','sound recording']]){
+  const before=String(previous[field]||'').trim();
+  const after=String(current[field]||'').trim();
+  if(!after||after===before)continue;
+  if(/^Saved\b/i.test(after))return 'Android reports the '+label+' was saved. Check the recorder status for the phone-library result.';
+  if(/^(?:Gallery export failed|Phone media save failed|Screen capture failed|Recording failed|Save failed|Error:)/i.test(after))
+   return 'Android reports that '+label+' failed. The recording was not verified saved. Check the recorder status in Bubbles.';
+ }
+ return '';
+}
 function speechText(value){
  // Spoken narration is a different representation from the visible chat.
  // Never read formatting symbols, code fences, URLs or markdown syntax aloud.
@@ -267,7 +282,7 @@ class ProgressTracker{
   this.initialized=true;return updates.slice(-5);
  }
 }
-const api={speechText,ProgressTracker,ownerApprovalRequests,bulkRunPreview,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief};
+const api={nativeCaptureNotice,speechText,ProgressTracker,ownerApprovalRequests,bulkRunPreview,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);
