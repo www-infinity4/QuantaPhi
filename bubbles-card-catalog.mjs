@@ -1,5 +1,5 @@
 // Repository-backed card definitions. Only these declared modules/routes may run in chat.
-const local=(id,title,mount,scripts,styles=[],aliases=[])=>({id,title,mount,scripts,styles,aliases,repository:'www-infinity4/QuantaPhi',url:'/bubbles-card-host.html?card='+id});
+const local=(id,title,mount,scripts,styles=[],aliases=[],extraMounts=[])=>({id,title,mount,scripts,styles,aliases,extraMounts,repository:'www-infinity4/QuantaPhi',url:'/bubbles-card-host.html?card='+id});
 const app=(id,title,path,repo,aliases=[],play='')=>({id,title,url:path,repository:'www-infinity4/'+repo,aliases,play});
 export const cards=Object.freeze([
  app('infinity-radio','Infinity Radio','/infinity-radio/','Alien-Radio',['radio','alien radio'],'#play-btn'),
@@ -10,7 +10,9 @@ export const cards=Object.freeze([
  local('fred-spaces','Fred Spaces','fredSpacesRadio',['fred-spaces-radio.js'],['fred-spaces-radio.css'],['fred radio','fred krueger']),
  local('magoo-spaces','Magoo Spaces','magooSpacesRadio',['magoo-spaces-radio.js'],['magoo-spaces-radio.css'],['magoo phd']),
  local('following-spaces','Following Spaces','followingSpacesRadio',['following-spaces-radio.js'],['following-spaces-radio.css'],['followed spaces']),
- local('media-star','Media Star','mediaStarCreator',['media-star-creator.js'],['media-star-creator.css'],['media star creator']),
+ // Player-first: Fred and the owner’s followed-person selector share the Media Star surface.
+ local('media-star','Media Star','fredSpacesRadio',['fred-spaces-radio.js','following-spaces-radio.js'],['fred-spaces-radio.css','following-spaces-radio.css'],['media star player','media star radio','media star podcasts','media star card'],['followingSpacesRadio']),
+ local('media-star-creator','Media Star Creator','mediaStarCreator',['media-star-creator.js'],['media-star-creator.css'],['media creator','build media star']),
  local('radio-clubhouse','Radio Clubhouse','radioClubhouse',['radio-clubhouse.js'],['radio-clubhouse.css']),
  local('concepts','Infinity Concepts','infinityConcepts',['infinity-concepts.js'],['infinity-concepts.css']),
  local('group-story','Group Story','groupStoryBuild',['group-story.js'],['group-story.css'],['group story build']),
@@ -31,14 +33,32 @@ export function findCard(name){
  const q=String(name||'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').trim();
  return cards.find(card=>[card.id,card.title,...card.aliases].some(alias=>alias.toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').trim()===q));
 }
+// Registered card requests are UI commands, not an invitation to hallucinate tool access.
 export function cardIntent(text){
- const q=String(text||'').trim().replace(/^(?:(?:hey|please|bubbles)[, ]+)+/i,'').replace(/^(?:can|could|would|will) you\s+/i,'').replace(/^(?:i want|i would like|i'd like)\s+(?:to\s+)?/i,'').replace(/[.!?]+$/,'');
- if(/^(?:do not|don't|never|cancel)\b/i.test(q))return null;
- if(/^(?:list|show|open)(?: me)? (?:the |your )?(?:card catalog|all cards|available cards)$/i.test(q))return {action:'catalog'};
+ let q=String(text||'').trim().replace(/[.!?]+$/,'').replace(/\s+/g,' ');
+ q=q.replace(/^(?:(?:hey|hi|hello|okay|ok)[,\s]+)?(?:bubbles(?: ai)?)[,\s:]+/i,'')
+    .replace(/^please[,\s]+/i,'').trim();
+ if(/^(?:do not|don't|never|cancel|stop|not now)\b/i.test(q))return null;
+ if(/^(?:list|show|open|bring up|pull up)(?: me)? (?:the |your )?(?:card catalog|all cards|available cards)$/i.test(q))return {action:'catalog'};
  if(/^(?:diagnose|inspect|check|test)(?: the| this| current| active| that)? card(?: functions| controls| status)?$/i.test(q))return {action:'diagnose'};
  if(/^(?:close|remove|dismiss)(?: the| this| current| active)? card$/i.test(q))return {action:'close'};
- const match=q.match(/^(open|show|bring in|bring up|pull in|load|play|hear|listen to)(?: me)?\s+(?:the\s+)?(.+?)(?:\s+card)?(?:\s+(?:in|into)(?: the)? chat)?$/i);
- if(!match)return null;
- const card=findCard(match[2]);if(!card)return null;
- return {action:/^(?:play|hear|listen to)$/i.test(match[1])?'play':'open',card};
+ for(let n=0;n<3;n++){
+  const previous=q;
+  q=q.replace(/^(?:can|could|would|will) you(?: please)?\s+/i,'')
+     .replace(/^(?:i(?: would|'d)? like|i want|i need|i wanna)\s+(?:you to\s+|to\s+)?/i,'')
+     .replace(/^(?:give me|let me (?:see|have)|can i (?:see|have))\s+/i,'')
+     .replace(/^please\s+/i,'');
+  if(q===previous)break;
+ }
+ const command=q.match(/^(?:(play|hear|listen to|start playing)|(open|show|display|see|bring(?: in| up)?|pull(?: in| up)?|load|launch|put|insert|find))(?: me)?\s+/i);
+ let play=false;
+ if(command){play=Boolean(command[1]);q=q.slice(command[0].length);}
+ q=q.replace(/^(?:(?:the|a|my|your)\s+)+/i,'')
+    .replace(/\s+(?:in|into|inside|on) (?:the |my )?(?:chat|conversation|screen|workspace)$/i,'')
+    .replace(/\s+please$/i,'')
+    .replace(/\s+(?:card|player|widget)$/i,'')
+    .trim();
+ const card=findCard(q);
+ if(!card)return null;
+ return {action:play?'play':'open',card};
 }
