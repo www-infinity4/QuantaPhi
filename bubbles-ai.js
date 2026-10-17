@@ -649,9 +649,21 @@ function speakText(value){
   status.textContent='Speech playback is not supported on this browser.';return;
  }
  if(speaking)return; // Avoid cutting off a response for another result.
-  const version=++playbackVersion;
-  speaking=true;setOrbState('speaking');
-  try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance((brainTools?.speechText?brainTools.speechText(value):String(value)).slice(0,2800));utterance.lang='en-GB';utterance.rate=1;
+ // Native TTS and website TTS must both hide spoken Markdown punctuation.
+ // Keep the original response unchanged in the on-screen conversation.
+ const rawSpeech=(typeof brainTools!=='undefined'&&brainTools?.speechText)
+  ?brainTools.speechText(value):String(value??'');
+ const cleanSpeech=rawSpeech
+  .replace(/\x60{3}[\s\S]*?\x60{3}/g,' ')
+  .replace(/!?\[([^\]]+)\]\(https?:\/\/[^)]+\)/gi,'$1')
+  .replace(/https?:\/\/\S+|www\.\S+/gi,' ')
+  .replace(/^\s*(?:[-+•]\s+|\d+[.)]\s+)/gm,' ')
+  .replace(/[*/\\_()\[\]{}<>\x60~|#^]+/g,' ')
+  .replace(/&/g,' and ').replace(/\s+/g,' ').trim().slice(0,2800);
+ if(!cleanSpeech)return;
+ const version=++playbackVersion;
+ speaking=true;setOrbState('speaking');
+ try{speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(cleanSpeech);utterance.lang='en-GB';utterance.rate=1;
    const voices=speechSynthesis.getVoices?.()||[];
    utterance.voice=voices.find(v=>v.voiceURI===config.voiceURI)||voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en[-_]GB/i.test(v.lang))||null;
    utterance.onstart=()=>{if(version===playbackVersion)setOrbState('speaking')};

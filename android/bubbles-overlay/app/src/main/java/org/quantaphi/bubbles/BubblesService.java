@@ -1040,6 +1040,10 @@ public final class BubblesService extends Service {
         }
         // Do not flush an active answer because an overlapping tool response arrives.
         if (speaking) return;
+        // Asterisks, slashes, parentheses and Markdown belong in the visible chat,
+        // not in Android's spoken reply. Normalize at the final TTS boundary.
+        response = SpokenReplyText.forSpeech(response);
+        if (response.isEmpty()) { main.post(this::drainWebsiteSpeech); return; }
         main.removeCallbacks(deliverVoiceTurn);
         turnBuffer.clear();
         speaking = true;
