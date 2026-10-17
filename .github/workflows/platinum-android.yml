@@ -69,7 +69,7 @@ jobs:
           grep -q "name='org.quantaphi.platinum.preview1'" /tmp/platinum-badging.txt
           grep -q "sdkVersion:'26'" /tmp/platinum-badging.txt
           sha256sum "$APK"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: infinity-platinum-android12-apk
           path: android/infinity-platinum/app/build/outputs/apk/debug/app-debug.apk
