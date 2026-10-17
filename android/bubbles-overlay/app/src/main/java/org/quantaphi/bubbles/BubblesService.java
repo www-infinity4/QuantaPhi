@@ -887,7 +887,19 @@ public final class BubblesService extends Service {
             return;
         }
         String action = BrainLearningService.performRequestedAction(question);
-        if (action != null) { screenStatus(action, typed); return; }
+        if (action != null) {
+            screenStatus(action, typed);
+            // Refresh after an accepted navigation action. Never re-run the action
+            // when delivering its observation to the shared website assistant.
+            if (action.startsWith("Tap sent to ") || action.startsWith("Scroll ")) {
+                final String receipt = action;
+                main.postDelayed(() -> inspectScreenRequest(question, typed, receipt), 500L);
+            }
+            return;
+        }
+        inspectScreenRequest(question, typed, "");
+    }
+    private void inspectScreenRequest(String question, boolean typed, String actionReceipt) {
         final boolean restorePanel = oracleWindow != null && oracleWindow.hideForScreenRead();
         // Give the compositor a frame to remove our own chat from the screenshot.
         main.postDelayed(() -> BrainLearningService.inspectNow(question, () -> {
@@ -902,7 +914,8 @@ public final class BubblesService extends Service {
             }
             BrainNotes.prefs(this).edit().putString("screen_state", "Read current screen for the latest request").apply();
             // Observation travels as evidence, never as an owner tool instruction.
-            if (oracleWindow != null && oracleWindow.sendScreenEvidence(question, observation, typed)) return;
+            if (oracleWindow != null && oracleWindow.sendScreenEvidence(question, actionReceipt.isEmpty() ? observation
+                : "Android action receipt: " + actionReceipt + "\nObservation after this action (a screen change is not proof of task completion):\n" + observation, typed)) return;
             BrainNotes.prefs(this).edit().putString("last_error",
                 "The Bubbles website could not accept this screen request. No alternate AI was used.").apply();
         })), 160L);

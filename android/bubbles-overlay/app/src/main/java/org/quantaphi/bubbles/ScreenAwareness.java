@@ -25,7 +25,7 @@ final class ScreenAwareness {
     static boolean refersToScreen(String utterance) {
         if (utterance == null) return false;
         String q = utterance.toLowerCase(Locale.ROOT).trim();
-        return TAP.matcher(q).matches() || SCROLL.matcher(q).matches()
+        return tapTarget(utterance) != null || scrollDirection(utterance) != null
             || currentArticleReference(q)
             || q.matches("(?s).*\\b(?:screen|screenshot|on (?:my |the )?(?:phone|page|display)|this (?:page|app|screen|button|link|window)|visible (?:text|button)|what(?:'s| is) (?:on|showing on) (?:this|my|the) (?:page|screen)|what(?:'s| is) this|explain this|do this for me)\\b.*");
     }
@@ -33,16 +33,20 @@ final class ScreenAwareness {
         return q.matches("(?s).*\\b(?:article|story)\\b.*\\b(?:i['’]?m|i am)\\s+(?:looking\\s+at|reading)\\b.*")
             || q.matches("(?s).*\\b(?:research|investigate|read|explain)\\b.*\\bwhat\\s+(?:i['’]?m|i am)\\s+reading\\b.*");
     }
+    private static String actionPhrase(String value) {
+        return value.trim().replaceFirst("(?i)^(?:(?:hey|please|bubbles)[, ]+)+", "")
+            .replaceFirst("(?i)^(?:can|could|would|will) you\\s+(?:please\\s+)?", "");
+    }
     static String tapTarget(String utterance) {
         if (utterance == null) return null;
-        Matcher m = TAP.matcher(utterance.trim());
+        Matcher m = TAP.matcher(actionPhrase(utterance));
         if (!m.matches()) return null;
         String target = m.group(1).trim();
         return target.isEmpty() || target.length() > 80 ? null : target;
     }
     static String scrollDirection(String utterance) {
         if (utterance == null) return null;
-        Matcher m = SCROLL.matcher(utterance.trim());
+        Matcher m = SCROLL.matcher(actionPhrase(utterance));
         return m.matches() ? m.group(1).toLowerCase(Locale.ROOT) : null;
     }
     static boolean sensitive(String label) {

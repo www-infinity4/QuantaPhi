@@ -20,6 +20,8 @@ public final class ScreenAwarenessCheck {
         check(ScreenAwareness.refersToScreen("Research what I'm reading"), "reading reference");
         check(!ScreenAwareness.refersToScreen("Research the RadioShack history article"), "named public research must not request the screen");
         check("Search".equals(ScreenAwareness.tapTarget("tap the Search button")), "exact target label");
+        check("Search".equals(ScreenAwareness.tapTarget("Can you tap the Search button?")), "conversational tap request");
+        check("down".equals(ScreenAwareness.scrollDirection("Could you please scroll down?")), "conversational scroll request");
         check("down".equals(ScreenAwareness.scrollDirection("scroll down")), "scroll direction");
         check(ScreenAwareness.sensitive("Buy"), "block purchases");
         check(ScreenAwareness.sensitive("Delete account"), "block deletion");

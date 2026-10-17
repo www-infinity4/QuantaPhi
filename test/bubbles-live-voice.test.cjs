@@ -19,7 +19,7 @@ function harness(owner=false,speech=false){
   nodes.push(n);return n;
  };
  const host=node('div'),body=node('body');
- const document={body,visibilityState:'visible',handlers:{},createElement:node,addEventListener(name,fn){this.handlers[name]=fn},getElementById:id=>id==='bubblesAICard'?host:null};
+ const document={body,createTreeWalker:()=>({nextNode:()=>null}),visibilityState:'visible',handlers:{},createElement:node,addEventListener(name,fn){this.handlers[name]=fn},getElementById:id=>id==='bubblesAICard'?host:null};
  class Recognition{
   constructor(){recognized.push(this)}
   start(){this.started=true}
@@ -34,7 +34,7 @@ function harness(owner=false,speech=false){
  const localStorage={getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)};
  const fetch=async(url,opts)=>{if(url.endsWith('/owner/conversation')){memoryRequests.push({url,opts});return {ok:true,json:async()=>({ok:true,owned:ownsVoice,saved:JSON.parse(opts.body).messages?.map(m=>m.id)||[],recent:[],related:[]})};}requests.push({url,opts});return{ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',status:'draft',context:{kind:'robot-directions'}}}:url.endsWith('/work/run-next')?{ok:true,status:'queued_for_runner',ticketId:'fixture-ticket',jobId:'TASK-1'}:{ok:true,output:'Bubbles response from Oracle'}}};
  const context={window,document,navigator,localStorage,location:{href:'https://quantaphi.org/',search:'',origin:'https://quantaphi.org',pathname:'/'},
-  URL,URLSearchParams,Date:FakeDate,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
+  NodeFilter:{SHOW_TEXT:4},scrollY:0,innerHeight:780,innerWidth:390,URL,URLSearchParams,Date:FakeDate,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
  if(speech){context.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};context.speechSynthesis={cancel(){},getVoices:()=>[],speak(u){utterances.push(u);u.onstart?.()}};}
  vm.runInNewContext(gateSource,context);
  vm.runInNewContext(brainSource,context);
