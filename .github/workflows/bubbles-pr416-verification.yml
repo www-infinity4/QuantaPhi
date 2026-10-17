@@ -1,0 +1,36 @@
+name: Bubbles PR 416 Post‑Merge Verification
+
+on:
+  push:
+    branches: [main]
+    # Trigger when any files that could affect Bubbles are changed.
+    paths:
+      - "bubbles-**"
+      - "src/**"
+      - "test/**"
+      - "scripts/verify-bubbles-pr416.mjs"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run verification script
+        run: node scripts/verify-bubbles-pr416.mjs
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bubbles-pr416-verification-results
+          path: "test-results/**"
