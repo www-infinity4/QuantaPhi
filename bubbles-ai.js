@@ -1938,7 +1938,7 @@ async function submitWork(request,approval='explicit-click'){
  if(activeCardEvidence)cardWorkspaceInstance?.diagnose();
  const cardEvidenceSnapshot=activeCardEvidence?JSON.parse(JSON.stringify(activeCardEvidence)):null;
  // Resolve the real target before creating tickets. A guess never silently fans out.
- if(!repositorySelectionExplicit)await suggestRepositoryTargets(request,false);
+ if(!repositorySelectionExplicit&&!activeCardEvidence)await suggestRepositoryTargets(request,false);
  const repositories=[...repositorySelection].sort();
  if(!repositories.length)throw Error('Select at least one repository before creating a ticket.');
  if(repositoryPicker.dataset.submitting==='true')throw Error('Repository tickets are already being submitted.');
