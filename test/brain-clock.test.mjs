@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
+const handoffUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/technical-handoff.mjs',import.meta.url))).toString('base64');
 const credentialUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/github-credential.mjs',import.meta.url))).toString('base64');
 const mergeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/merge-receipt.mjs',import.meta.url))).toString('base64');
 const directGithubUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/direct-github.mjs',import.meta.url))).toString('base64');
@@ -19,7 +20,7 @@ const conversationUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFi
 const phoneUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/phone-tool.mjs',import.meta.url))).toString('base64');
 const redUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/red-sectors.mjs',import.meta.url))).toString('base64');
 const alarmUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/alarm-retry.mjs',import.meta.url))).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./technical-handoff.mjs",handoffUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
 const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
@@ -189,10 +190,10 @@ test('verified Brain tickets share the writer owner partition instead of an anon
     rows.push({id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,
      status:'draft',claimed_by:'',created_at,updated_at,handoff_expires_at,result_summary:'',result_url:''});
    }else if(sql.startsWith('UPDATE')){
-    const [context_json,storyboard,status,updated_at,id,owner_hash,oldContext]=params;
+    const [context_json,storyboard,status,updated_at,repository,id,owner_hash,oldContext]=params;
     const row=rows.find(r=>r.id===id&&r.owner_hash===owner_hash&&r.context_json===oldContext);
     if(!row)return {meta:{changes:0}};
-    Object.assign(row,{context_json,storyboard,status,updated_at});
+    Object.assign(row,{context_json,storyboard,status,updated_at,repository});
    }
    return {meta:{changes:1}};
   }
