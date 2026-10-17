@@ -160,3 +160,19 @@ test('malformed request has a separate input error rather than an AI model failu
  assert.equal(body.error,'invalid_request_json');
  assert.match(body.output,/resend/);
 });
+
+
+test('transient Bubbles model failure gets one lower-cost retry with original conversation instructions',async()=>{
+ let calls=0;let firstPrompt;
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Please debug the site'})});
+ const resp=await worker.fetch(req,{AI:{run:async(model,options)=>{
+  calls++;
+  if(calls===1){firstPrompt=options.messages;assert.equal(options.reasoning_effort,'high');throw Error('temporary provider error');}
+  assert.equal(options.reasoning_effort,'medium');
+  assert.equal(options.max_tokens,650);
+  assert.deepEqual(options.messages,firstPrompt);
+  return {response:'The site needs a focused reproduction.'};
+ }}});
+ assert.equal(resp.status,200);assert.equal(calls,2);
+ assert.match((await resp.json()).output,/focused reproduction/);
+});
