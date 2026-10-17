@@ -503,21 +503,61 @@ const repositoryState=create('p','ba-muted','QuantaPhi selected. Bubbles current
 let repositorySelectionExplicit=false;
 const repositorySelection=new Set(['www-infinity4/QuantaPhi']);
 let repositoryCatalog=['www-infinity4/QuantaPhi'],repositoryCatalogComplete=false,repositoryCatalogLoading=false;
+let repositoryAdvice=null,repositorySuggestionSequence=0,repositorySearchTimer=null;
+const repositoryFilter=create('input','ba-repository-filter');repositoryFilter.type='search';
+repositoryFilter.placeholder='Search repositories or describe work…';
+repositoryFilter.setAttribute('aria-label','Filter owned repositories');
+const repositoryAdviceLine=create('p','ba-muted','Suggested targets appear here when you describe a repair.');
+const repositoryUseAuto=create('button','ba-control','Use smart matching');repositoryUseAuto.type='button';
+repositoryUseAuto.addEventListener('click',()=>{repositorySelectionExplicit=false;repositoryAdviceLine.textContent='Automatic matching is on. Your next work request will be routed by project.';void suggestRepositoryTargets(input?.value?.trim()||workText.value.trim(),true).catch(()=>{});});
 const repositoryAll=create('input');repositoryAll.type='checkbox';
 const allLabel=create('label','','All repositories');allLabel.prepend(repositoryAll);
 function renderRepositoryOptions(){
  repositoryOptions.replaceChildren();
- const entries=[['QuantaPhi','www-infinity4/QuantaPhi'],['Bubbles · in QuantaPhi','www-infinity4/QuantaPhi'],
-  ...repositoryCatalog.filter(repo=>repo!=='www-infinity4/QuantaPhi').sort().map(repo=>[repo.split('/')[1],repo])];
- for(const [label,repo] of entries){
+ const filter=repositoryFilter.value.trim().toLowerCase();
+ const featured=new Set((repositoryAdvice?.candidates||[]).map(row=>row.repository));
+ const entries=repositoryCatalog.filter(repo=>!filter||repo.toLowerCase().includes(filter))
+  .sort((a,b)=>Number(featured.has(b))-Number(featured.has(a))||
+   Number(b==='www-infinity4/QuantaPhi')-Number(a==='www-infinity4/QuantaPhi')||
+   a.localeCompare(b));
+ for(const repo of entries){
+  const label=repo==='www-infinity4/QuantaPhi'?'QuantaPhi · Bubbles AI':repo.split('/')[1];
   const row=create('label','ba-repository-choice',label),box=create('input');box.type='checkbox';box.checked=repositorySelection.has(repo);
+  if(featured.has(repo))row.classList.add('ba-repository-suggested');
   box.addEventListener('change',()=>{repositorySelectionExplicit=true;if(box.checked)repositorySelection.add(repo);else repositorySelection.delete(repo);renderRepositoryOptions();});
   row.prepend(box);repositoryOptions.append(row);
  }
+ if(!entries.length)repositoryOptions.append(create('p','ba-muted','No matching owned repositories. Refresh the catalog if you recently created one.'));
  repositoryAll.disabled=!repositoryCatalogComplete;
  repositoryAll.checked=repositoryCatalogComplete&&repositoryCatalog.every(repo=>repositorySelection.has(repo));
  repositoryAll.indeterminate=repositorySelection.size>0&&!repositoryAll.checked;
  repositorySummary.textContent='Repositories · '+(repositorySelection.size===1?[...repositorySelection][0].split('/')[1]:repositorySelection.size+' selected');
+}
+repositoryFilter.addEventListener('input',renderRepositoryOptions);
+async function suggestRepositoryTargets(request,preview=false){
+ if(embedded||!request||request.length<6||!isOwnerWorkRequest(request))return null;
+ const seq=++repositorySuggestionSequence;
+ const result=await directGithubOperation({action:'suggest_repositories',mode:'read',request});
+ if(!result.ok||!result.catalogComplete||!Array.isArray(result.candidates))throw Error(result.error||'Repository suggestions unavailable');
+ // A stale suggestion must never overwrite a newer typed request or a manual choice.
+ if(seq!==repositorySuggestionSequence)return null;
+ repositoryAdvice=result;
+ const authorized=new Set(repositoryCatalogComplete?repositoryCatalog:result.candidates.map(x=>x.repository));
+ const recommended=(result.selection||[]).filter(repo=>authorized.has(repo));
+ if(!repositorySelectionExplicit&&recommended.length&&!result.allTargets){
+  repositorySelection.clear();
+  for(const repo of recommended)repositorySelection.add(repo);
+ }
+ const names=result.candidates.slice(0,4).map(x=>x.repository.split('/')[1]).join(', ');
+ repositoryAdviceLine.textContent='Matches: '+(names||'none')+' · '+result.source+'. '+(repositorySelectionExplicit?'Manual selection kept.':result.reason);
+ if(result.requiresReview&&!repositorySelectionExplicit)repositoryState.textContent='Choose the matching repository before sending work. Nothing has been queued.';
+ else repositoryState.textContent='Repository target checked against the owner GitHub inventory. Tickets will keep the selected targets.';
+ renderRepositoryOptions();
+ if(!preview&&result.requiresReview&&!repositorySelectionExplicit){
+  repositoryPicker.open=true;
+  throw Error(result.allTargets?'Select All repositories in the dropdown to confirm this broad repair. No ticket was sent.':'Repository match is uncertain. Choose a suggested repository, or describe the project more precisely. No ticket was sent.');
+ }
+ return result;
 }
 async function loadRepositoryCatalog(){
  if(repositoryCatalogLoading||embedded)return;
@@ -533,7 +573,7 @@ async function loadRepositoryCatalog(){
 repositoryAll.addEventListener('change',()=>{if(!repositoryCatalogComplete)return;repositorySelectionExplicit=true;repositorySelection.clear();if(repositoryAll.checked)for(const repo of repositoryCatalog)repositorySelection.add(repo);renderRepositoryOptions();});
 const refreshRepositories=create('button','ba-control','Refresh repositories');refreshRepositories.type='button';refreshRepositories.addEventListener('click',()=>void loadRepositoryCatalog());
 repositoryPicker.addEventListener('toggle',()=>{if(repositoryPicker.open&&!repositoryCatalogComplete)void loadRepositoryCatalog();});
-repositoryPicker.append(repositorySummary,allLabel,repositoryOptions,refreshRepositories,repositoryState);renderRepositoryOptions();
+repositoryPicker.append(repositorySummary,repositoryFilter,repositoryAdviceLine,repositoryUseAuto,allLabel,repositoryOptions,refreshRepositories,repositoryState);renderRepositoryOptions();
 const siteDraftButton=create('button','ba-control','Share draft with this website');siteDraftButton.type='button';siteDraftButton.hidden=!embedded;
 siteDraftButton.addEventListener('click',()=>{
  const request=workText.value.trim().slice(0,2000);
@@ -1497,6 +1537,17 @@ async function directGithubOperation(operation){
  return {...result,requestId};
 }
 input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();void sendMessage(input.value)}});
+function queueRepositoryPreview(value){
+ if(repositorySearchTimer)clearTimeout(repositorySearchTimer);
+ if(embedded||!ownerReady||repositorySelectionExplicit||!isOwnerWorkRequest(value))return;
+ repositorySearchTimer=setTimeout(()=>{
+  void suggestRepositoryTargets(value.trim(),true).catch(error=>{
+   repositoryAdviceLine.textContent='Matching unavailable: '+String(error.message||error).slice(0,110)+'. Select a repository manually.';
+  });
+ },1100);
+}
+input.addEventListener('input',()=>queueRepositoryPreview(input.value));
+workText.addEventListener('input',()=>queueRepositoryPreview(workText.value));
 speak.addEventListener('click',()=>{config.voice=!config.voice;save(CONFIG,config);speak.textContent=config.voice?'🔊 Voice on':'🔇 Voice off';speak.setAttribute('aria-pressed',String(config.voice));if(!config.voice)try{speechSynthesis.cancel()}catch{}});
 speak.textContent=config.voice?'🔊 Voice on':'🔇 Voice off';speak.setAttribute('aria-pressed',String(Boolean(config.voice)));
 // Bubbles is already in-session when the microphone has been allowed. There is
@@ -1663,6 +1714,8 @@ async function connectOwner(){
  if(nativeOverlay){voiceLeaseWanted=true;void sharedVoice(true);}
  else void checkSharedVoiceStatus();
  workStatus.textContent='Robot Brain connected. Say “Bubbles, fix the video generator” or “Report the top ten bot jobs.”';
+ // Populate actual owner repositories without making the owner open another page.
+ if(!repositoryCatalogComplete&&!repositoryCatalogLoading)void loadRepositoryCatalog();
 }
 // Two Red macro sectors share an authenticated, purpose-scoped channel.
 // Red-Bubbles observes, acknowledges and delegates approved actions; Red-Brain
@@ -1884,6 +1937,8 @@ async function requestRunner(ticketId='',jobId=''){
 async function submitWork(request,approval='explicit-click'){
  if(activeCardEvidence)cardWorkspaceInstance?.diagnose();
  const cardEvidenceSnapshot=activeCardEvidence?JSON.parse(JSON.stringify(activeCardEvidence)):null;
+ // Resolve the real target before creating tickets. A guess never silently fans out.
+ if(!repositorySelectionExplicit)await suggestRepositoryTargets(request,false);
  const repositories=[...repositorySelection].sort();
  if(!repositories.length)throw Error('Select at least one repository before creating a ticket.');
  if(repositoryPicker.dataset.submitting==='true')throw Error('Repository tickets are already being submitted.');
