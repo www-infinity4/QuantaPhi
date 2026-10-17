@@ -47,7 +47,7 @@ test('unrecognized or low-confidence project never silently targets an unrelated
 });
 test('Cloudflare model can only select candidates returned from verified GitHub inventory',async()=>{
  const env={WRITER_AI:{async run(){return {response:JSON.stringify({repositories:['attacker/unknown','www-infinity4/Alien-Radio'],confidence:.95,reason:'Radio task'})}}}};
- const r=await suggestRepositories(env,'Repair the radio player and widgets',catalog);
+ const r=await suggestRepositories(env,'Repair the radio player widget',catalog);
  assert.equal(r.ok,true);
  assert.equal(r.source,'cloudflare-gpt-oss-120b');
  assert.ok(r.selection.every(n=>catalog.some(c=>c.repository===n)));
@@ -55,7 +55,7 @@ test('Cloudflare model can only select candidates returned from verified GitHub 
 });
 test('model failure never forges a selected repo or a job receipt',async()=>{
  const env={WRITER_AI:{async run(){throw Error('offline')}}};
- const r=await suggestRepositories(env,'Repair the radio player and widgets',catalog);
+ const r=await suggestRepositories(env,'Repair the radio player widget',catalog);
  assert.equal(r.ok,true);
  assert.equal(r.source,'repository-name-and-project-matching');
  assert.equal(r.status,'repository_suggestions');
