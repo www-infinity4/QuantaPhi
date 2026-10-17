@@ -1,5 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
+import { uploadImage } from '../../phi-image-builder.js';
 
 /**
  * Handles Quant AI routing requests.
@@ -33,5 +34,10 @@ export async function handle(request) {
     });
   }
 
-  return new Response('Not found', { status: 404 });
+  if (request.method === 'POST' && pathname.startsWith('/image/upload')) {
+    // Delegate to the UI module's upload handler
+    return uploadImage(request);
+  }
+
+return new Response('Not found', { status: 404 });
 }

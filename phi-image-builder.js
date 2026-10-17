@@ -71,8 +71,18 @@ function layout(){
  const textLabel=make('label','pi-label','Wording preference');textLabel.htmlFor='pi-text-mode';
  const policy=make('select','pi-exact-input');policy.id='pi-text-mode';for(const [value,label] of [['auto','Automatic from my description'],['exact','Override the exact words'],['off','No words on the image']]){const o=make('option','',label);o.value=value;policy.append(o)}
  const exact=make('input','pi-exact-input');exact.type='text';exact.id='pi-exact-text';exact.maxLength=120;exact.placeholder='Write the words exactly as you want them';exact.setAttribute('aria-label','Exact words on image');optional.append(textLabel,policy,exact);form.append(optional,make('p','pi-notice',''));
- const go=make('button','pi-primary','Create image');go.type='button';go.dataset.piAction='build';form.append(go);
- const progress=make('div','pi-progress pi-panel');progress.append(make('span','pi-eyebrow','ORACLE · CREATING'),make('h2','','Creating your image'),make('p','pi-sub','Your description and references are kept while the image is built.'));
+ const go=make('button','pi-primary','Upload Image');go.type='button';go.dataset.piAction='build';form.append(go);
+ export async function uploadImage(request) {
+  // Placeholder implementation: in a real deployment this would handle multipart/form-data
+  // and store the image, then return the public URL.
+  const dummyUrl = 'https://example.com/uploaded-image.png';
+  return new Response(JSON.stringify({ success: true, url: dummyUrl }), {
+    status: 200,
+    headers: { 'Content-Type': 'application/json' }
+  });
+}
+
+const progress=make('div','pi-progress pi-panel');progress.append(make('span','pi-eyebrow','ORACLE · CREATING'),make('h2','','Creating your image'),make('p','pi-sub','Your description and references are kept while the image is built.'));
  const steps=make('div','pi-steps');names.forEach((name,i)=>{const row=make('div','pi-step');row.dataset.piStep=i;row.dataset.state='waiting';row.append(make('span','',name),make('small','','Waiting'));steps.append(row)});progress.append(steps,make('p','pi-notice',''));
  for(const [key,label] of [['retry-render','Retry image render'],['back','Back to description']]){const button=make('button','pi-mode',label);button.type='button';button.dataset.piAction=key;button.hidden=key==='retry-render';progress.append(button)}
  const done=make('div','pi-finished pi-panel');done.append(make('span','pi-eyebrow','ORACLE · YOUR ARTWORK'),make('h2','','Your image'));const img=make('img','pi-result');img.alt='Generated image result';done.append(img,make('p','pi-notice',''));
