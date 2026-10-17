@@ -1265,7 +1265,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    catch(error){nativeGPTAvailable=false;gptStatus.textContent='Android ChatGPT unavailable; using Oracle: '+String(error.message||error).slice(0,90);
     response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}
   }else if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}
-  if(!response.ok||json.ok===false)throw Error(String(json.error||'Oracle conversation failed'));
+  if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
   const rawAnswer=extract(json);if(!rawAnswer)throw Error('The AI returned no spoken or written reply');
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
   messages.push({role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
