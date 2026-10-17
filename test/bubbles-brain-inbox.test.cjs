@@ -20,7 +20,7 @@ test('One authenticated Brain inbox is in the same website/Android conversation'
  for(const asset of ['js','css']){
   const refs=routes.map(html=>{
    const page=fs.readFileSync(html,'utf8');
-   const hits=[...page.matchAll(new RegExp('bubbles-ai\\\\.'+asset+'\\\\?v=([A-Za-z0-9._-]+)','g'))];
+   const hits=[...page.matchAll(new RegExp('bubbles-ai\\.'+asset+'\\?v=([A-Za-z0-9._-]+)','g'))];
    assert.equal(hits.length,1,html+' must include exactly one versioned Bubbles '+asset+' asset');
    return hits[0][1];
   });
