@@ -27,12 +27,12 @@ export async function redExchange(storage,body,now=Date.now()){
   return {ok:false,error:'invalid_red_sector_envelope'};
  // Bubbles can acknowledge observations but cannot impersonate Brain or submit a
  // worker command through the telemetry channel. The normal owner adapter writes jobs.
- const acknowledged=Math.max(0,Math.min(100000000,Number.isSafeInteger(body.ackRevision)?body.ackRevision:0));
+ const event=await storage.get('red-brain-event')||null;
+ const acknowledged=Math.max(0,Math.min(event?.revision||0,Number.isSafeInteger(body.ackRevision)?body.ackRevision:0));
  const previous=await storage.get('red-bubbles-sector')||{};
  const bubble={sector:'red-bubbles',clientId:body.clientId,seenAt:now,
   ackRevision:Math.max(previous.clientId===body.clientId?previous.ackRevision||0:0,acknowledged)};
  await storage.put('red-bubbles-sector',bubble);
- const event=await storage.get('red-brain-event')||null;
  const heartbeat=await storage.get('writerHeartbeat')||null;
  const request=await storage.get('requested-next-job')||null;
  const dispatch=await storage.get('last-owner-dispatch')||null;
@@ -42,7 +42,7 @@ export async function redExchange(storage,body,now=Date.now()){
   redBubbles:{sector:'red-bubbles',connected:true,ackRevision:bubble.ackRevision,seenAt:bubble.seenAt},
   redBrain:{sector:'red-brain',connected:true,revision:event?.revision||0,
    event:event&&event.revision>bubble.ackRevision?event:null,
-   pendingJob:request?{ticketId:clip(request.ticketId,80),jobId:clip(request.jobId,30)}:null,
+   lastRequestedJob:request?{ticketId:clip(request.ticketId,80),jobId:clip(request.jobId,30)}:null,
    lastDispatch:dispatch?{state:classifyDispatch(dispatch).state,
     reason:classifyDispatch(dispatch).reason,at:dispatch.when||0,ageMs:dispatchAge}:null,
    runner:{lastSeenAt:heartbeat?.when||null,ageMs:runnerAge,
