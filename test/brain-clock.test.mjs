@@ -362,3 +362,11 @@ assert c.execute('SELECT id FROM work_tickets WHERE owner_hash=? AND repository=
 `;
  execFileSync('python3',['-c',program,sql],{stdio:'pipe'});
 });
+
+test('reconciliation corrects aggregate-only Working drift without changing child evidence',async()=>{
+ const jobs=[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'repair',status:'blocked'},{id:'TASK-2',repository:'www-infinity4/QuantaPhi',instructions:'verify',status:'queued',dependencies:['TASK-1']}];
+ const original=JSON.stringify({color_jobs:jobs});let written;
+ const clock=new BrainClock({storage:{get:async()=>undefined,put:async()=>{}}},{WRITER_OWNER_HASH:'owner',WORK_DB:{prepare:()=>({bind(...params){return {all:async()=>({results:[{id:'ticket',status:'working',context_json:original}]}),run:async()=>{written=params;return {meta:{changes:1}}}}}})}});
+ await clock.reconcilePendingWork();
+ assert.equal(written[1],'blocked');assert.deepEqual(JSON.parse(written[0]).color_jobs,jobs);
+});
