@@ -1743,34 +1743,10 @@ async function syncRedSectors(){
  if(!response.ok||!state.ok||state.redBrain?.sector!=='red-brain')throw Error(String(state.error||'red_brain_unreachable'));
  const event=state.redBrain.event;
  if(event&&event.revision>redAckRevision){
-  const rawReason=String(event.reason||'').slice(0,150);
-  const reason=/Invalid redirect value/i.test(rawReason)
-   ?'The runner has a network redirect configuration error. This is a technical repair for the bots, not an owner approval request.'
-   :/owner_input_required/i.test(rawReason)
-    ?'The runner requested an owner choice. If it concerns UI design, an approval button appears in the chat.'
-    :rawReason;
-  let notice='';
-  if(redInitialized){
-   if(event.kind==='runner_dispatch'&&event.state==='awaiting_repository_runner')
-    notice='Red-Brain received the job request, but the repository runner did not start: '+reason+'. The ticket remains queued.';
-   else if(event.kind==='runner_dispatch'&&event.state==='runner_dispatch_failed')
-    notice='Red-Brain could not dispatch the repository runner: '+reason;
-   else if(event.kind==='alarm_dispatch'&&event.state==='dispatched_unverified')
-    notice='Robot Brain alarm retried the queued job. The GitHub workflow accepted dispatch; runner execution is still unverified.';
-   else if(event.kind==='alarm_dispatch'&&event.state==='awaiting_repository_runner')
-    notice='Robot Brain alarm tried again, but the repository runner remains unavailable: '+reason+'. The job is retained for a later attempt.';
-   else if(event.kind==='alarm_dispatch'&&event.state==='runner_dispatch_failed')
-    notice='Robot Brain alarm dispatch failed: '+reason+'. The retry schedule remains active.';
-   else if(event.kind==='runner_receipt'&&event.state==='blocked')
-    notice='Red-Brain received a runner failure receipt: '+reason;
-   else if(event.kind==='runner_receipt'&&event.state==='committed_unverified'&&event.commitSha&&event.testsPassed)
-    notice='Red-Brain received a tested code commit. Merge and live deployment are still unverified.';
-   else if(event.kind==='runner_receipt'&&event.state==='deployed_verified'&&event.commitSha&&event.testsPassed)
-    notice='Red-Brain received a runner deployment verification receipt. Checking merged work state.';
-  }
+  // Dispatch attempts, blocked retries and intermediate comments are ticket
+  // telemetry, not unsolicited chat. The authenticated ticket progress tracker
+  // announces each verified completion once, preventing duplicate narration.
   redAckRevision=event.revision;
-  if(notice&&event.kind==='runner_receipt'&&event.state==='deployed_verified')announceBrainProgress('Your update is verified complete.');
-  else if(notice)recordBrainNotice('The bot network recorded a work update. Details remain with the repair ticket.');
  }
  if(redLinkFailed){redLinkFailed=false;recordBrainNotice('Red-Bubbles and Red-Brain synchronization restored.');}
  redInitialized=true;
