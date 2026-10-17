@@ -9,7 +9,7 @@ const brainSource=fs.readFileSync('bubbles-brain-actions.js','utf8');
 
 function harness(owner=false,speech=false){
  const clock={now:Date.now()};const FakeDate=class extends Date{static now(){return clock.now}};
- const utterances=[],memoryRequests=[];let ownsVoice=true;const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
+ const utterances=[],memoryRequests=[],catalogCalls=[];let ownsVoice=true;const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
  const node=(tag)=>{
   const n={tag,className:'',dataset:{},style:{setProperty(){}},children:[],handlers:{},hidden:false,value:'',
    prepend(...items){this.children.unshift(...items)},before(){},append(...arr){this.children.push(...arr)},insertBefore(item,before){this.children.splice(this.children.indexOf(before),0,item)},
@@ -32,7 +32,19 @@ function harness(owner=false,speech=false){
  }},addEventListener(){},innerWidth:390,innerHeight:780, ...(owner?{QuantaBrainOwner:{ready:Promise.resolve({Authorization:'Bearer fixture-only'})}}:{})};
  const navigator={mediaDevices:{async getUserMedia(){return{getTracks:()=>[track]}}}};
  const localStorage={getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)};
- const fetch=async(url,opts)=>{if(url.endsWith('/owner/conversation')){memoryRequests.push({url,opts});return {ok:true,json:async()=>({ok:true,owned:ownsVoice,saved:JSON.parse(opts.body).messages?.map(m=>m.id)||[],recent:[],related:[]})};}requests.push({url,opts});return{ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',status:'draft',context:{kind:'robot-directions'}}}:url.endsWith('/work/run-next')?{ok:true,status:'queued_for_runner',ticketId:'fixture-ticket',jobId:'TASK-1'}:{ok:true,output:'Bubbles response from Oracle'}}};
+ const fetch=async(url,opts)=>{
+  if(url.endsWith('/owner/conversation')){
+   memoryRequests.push({url,opts});
+   return {ok:true,json:async()=>({ok:true,owned:ownsVoice,saved:JSON.parse(opts.body).messages?.map(m=>m.id)||[],recent:[],related:[]})};
+  }
+  if(url.endsWith('/work/github')){
+   const body=JSON.parse(opts.body);catalogCalls.push(body);
+   if(body.action==='list_repositories')return {ok:true,json:async()=>({ok:true,complete:true,repositories:[{repository:'www-infinity4/QuantaPhi',archived:false}]})};
+   if(body.action==='suggest_repositories')return {ok:true,json:async()=>({ok:true,source:'verified-test-catalog',catalogComplete:true,candidates:[{repository:'www-infinity4/QuantaPhi',score:20}],selection:['www-infinity4/QuantaPhi'],confidence:'high',requiresReview:false,reason:'fixture Bubbles source'})};
+  }
+  requests.push({url,opts});
+  return {ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',status:'draft',context:{kind:'robot-directions'}}}:url.endsWith('/work/run-next')?{ok:true,status:'queued_for_runner',ticketId:'fixture-ticket',jobId:'TASK-1'}:{ok:true,output:'Bubbles response from Oracle'}};
+ };
  const context={window,document,navigator,localStorage,location:{href:'https://quantaphi.org/',search:'',origin:'https://quantaphi.org',pathname:'/'},
   NodeFilter:{SHOW_TEXT:4},scrollY:0,innerHeight:780,innerWidth:390,URL,URLSearchParams,Date:FakeDate,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
  if(speech){context.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};context.speechSynthesis={cancel(){},getVoices:()=>[],speak(u){utterances.push(u);u.onstart?.()}};}
@@ -40,7 +52,7 @@ function harness(owner=false,speech=false){
  vm.runInNewContext(brainSource,context);
  vm.runInNewContext(appSource,context);
  const orb=nodes.find(n=>n.className==='ba-launcher');
- return {window,document,nodes,orb,requests,recognized,track,utterances,memoryRequests,advance:ms=>{clock.now+=ms},setVoiceOwned:value=>{ownsVoice=value}};
+ return {window,document,nodes,orb,requests,recognized,track,utterances,memoryRequests,catalogCalls,advance:ms=>{clock.now+=ms},setVoiceOwned:value=>{ownsVoice=value}};
 }
 const flush=async()=>{for(let i=0;i<40;i++)await Promise.resolve()};
 const result=s=>Object.assign([{transcript:s}],{isFinal:true});
@@ -103,6 +115,7 @@ test('owner repair command creates and readies one real ticket with receipt',asy
  await new Promise(resolve=>setTimeout(resolve,20));await flush();
  assert.equal(h.requests.length,3);assert.match(h.requests[0].url,/tickets\/create$/);assert.match(h.requests[1].url,/tickets\/update$/); assert.match(h.requests[2].url,/work\/run-next$/);
  assert.equal(JSON.parse(h.requests[0].opts.body).context.approval,'explicit-user-command');
+ assert.ok(h.catalogCalls.some(c=>c.action==='suggest_repositories'),'Owner voice task consulted the authenticated repository resolver');
  assert.ok(h.nodes.some(n=>n.tag==='a'&&n.href==='https://quantaphi.org/#robotDirections'),'Receipt contains a clickable progress link');
  assert.ok(h.requests.every(r=>!r.url.includes('/v1/assist')),'No chat-only service can contradict the receipt');
  assert.equal(h.nodes.find(n=>n['aria-label']==='Work request for Robot Brain').value,'');
