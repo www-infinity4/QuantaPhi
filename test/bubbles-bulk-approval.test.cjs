@@ -47,13 +47,14 @@ test('a single click approves eligible UI choices and leaves technical/security 
  ];
  const store=database(rows);
  const before=actions.bulkRunPreview(rows.map(r=>({id:r.id,status:r.status,context:JSON.parse(r.context_json)})));
- assert.equal(before.ready,2);assert.equal(before.ui,1);
+ assert.equal(before.ready,2);assert.equal(before.ui,1);assert.equal(before.retryableWorking,1);
  const r=await ownerTickets(env(store.db),'/work/tickets/approve-all',{});
  assert.equal(r.status,200);assert.equal(r.result.ok,true);
  assert.equal(r.result.summary.alreadyRunnable,2);
  assert.equal(r.result.summary.uiApproved,1);
  assert.equal(r.result.summary.stillBlocked,2);
  assert.equal(r.result.summary.alreadyWorking,1);
+ assert.equal(r.result.summary.retryableWorking,1);
  assert.equal(r.result.summary.changedTickets,1);
  assert.deepEqual(JSON.parse(JSON.stringify(r.result.runnerTarget)),{ticketId:rows[0].id,jobId:'TASK-1'});
  assert.equal(r.result.runner_verified,false);
@@ -67,6 +68,26 @@ test('a single click approves eligible UI choices and leaves technical/security 
  const again=await ownerTickets(env(store.db),'/work/tickets/approve-all',{});
  assert.equal(again.result.summary.uiApproved,0,'repeat must not double-approve');
  assert.equal(store.edits,1);
+});
+test('stale working jobs can receive a runner retry request without rewriting receipts',async()=>{
+ const rows=[ticket('11223344','working',[job('working','Last runner attempt timed out')])];
+ const before=rows[0].context_json,store=database(rows);
+ const r=await ownerTickets(env(store.db),'/work/tickets/approve-all',{});
+ assert.equal(r.status,200);
+ assert.equal(r.result.summary.retryableWorking,1);
+ assert.deepEqual(JSON.parse(JSON.stringify(r.result.runnerTarget)),{ticketId:rows[0].id,jobId:'TASK-1'});
+ assert.equal(r.result.summary.changedTickets,0);
+ assert.equal(rows[0].context_json,before);
+ assert.equal(store.edits,0);
+});
+test('recent verified runner attempt is left alone',async()=>{
+ const recent=new Date().toISOString();
+ const current=job('working','running now');current.progress={runUrl:'https://github.com/workflow',attemptedAt:recent};
+ const rows=[ticket('55667788','working',[current])];const store=database(rows);
+ const r=await ownerTickets(env(store.db),'/work/tickets/approve-all',{});
+ assert.equal(r.result.summary.retryableWorking,0);
+ assert.equal(r.result.runnerTarget,null);
+ assert.equal(r.result.summary.alreadyWorking,1);
 });
 test('failed CAS is not claimed as a saved bulk UI approval',async()=>{
  const rows=[ticket('FFFFFF66','blocked',[job('blocked',ui)])];
