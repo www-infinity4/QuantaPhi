@@ -243,42 +243,40 @@ function speechText(value){
   .replace(/&/g,' and ')
   .replace(/\s+/g,' ').trim();
 }
-function progressState(ticket){
- const jobs=ticket.context?.color_jobs||[];
- const completed=jobs.filter(j=>['complete','deployed_verified'].includes(j.status)&&j.progress?.commitSha&&j.progress?.runUrl);
- const merged=jobs.filter(j=>j.status==='merged_verified'&&j.progress?.mergeSha);
- const working=jobs.filter(j=>j.status==='working'&&j.progress?.runUrl&&j.progress?.attemptedAt);
- const blocked=jobs.filter(j=>j.status==='blocked');
- const committed=jobs.filter(j=>j.status==='committed_unverified'&&j.progress?.commitSha);
- const label=/\bui\b|interface|layout|button/i.test(ticket.title||'')?'UI update':'Your task';
- const signature=JSON.stringify(jobs.map(j=>[j.id,j.status,j.progress?.commitSha,j.progress?.mergeSha,j.progress?.summary]));
- let text='';
- if(completed.length)text=label+': '+completed.length+' job'+(completed.length===1?' is':'s are')+' verified complete.';
- else if(merged.length)text=label+': '+merged.length+' job'+(merged.length===1?' has':'s have')+' merged after checks passed. Deployment is still separate.';
- else if(committed.length)text='';
- else if(working.length)text=label+': the runner is working on it.';
- else if(blocked.length){
-  const reason=String(blocked[0].progress?.summary||'The runner has not reported a reason yet.');
-  if(/owner_input_required/i.test(reason)&&/\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(reason))
-   text=label+': an owner UI design choice is waiting. You can approve it directly in this chat.';
-  else text=label+': a technical issue is recorded for the repair bots.';
- }
- else if(['ready','working'].includes(ticket.status))text='';
- return {signature,text};
-}
+// Only a runner-backed state transition may produce unsolicited job speech.
+// Intermediate comments, D1 labels, merges and alarm dispatches remain in
+// the owner ticket detail instead of interrupting conversation.
+const runnerEvidence=job=>/^https:\/\/github\.com\/www-infinity4\/[\w.-]+\/actions\/runs\/\d+(?:[/?#]|$)/.test(String(job?.progress?.runUrl||''));
+const startEvidence=job=>job?.status==='working'&&runnerEvidence(job)&&Number.isFinite(Date.parse(job?.progress?.attemptedAt||''));
+const finishEvidence=job=>['complete','deployed_verified'].includes(job?.status)&&
+ /^[a-f0-9]{40}$/i.test(String(job?.progress?.commitSha||''))&&job?.progress?.testsPassed===true&&runnerEvidence(job);
+const jobSpeechLabel=ticket=>/\b(?:ui|interface|layout|button)\b/i.test(String(ticket?.title||''))?'UI job':'Job';
 class ProgressTracker{
  constructor(){this.seen=new Map();this.initialized=false;}
  update(tickets){
-  const updates=[];
-  for(const ticket of tickets||[]){const state=progressState(ticket);const prior=this.seen.get(ticket.id);
-   const jobs=ticket.context?.color_jobs||[];
-   const keys=new Map(jobs.map(j=>[j.id,JSON.stringify(j)]));
-   this.seen.set(ticket.id,{signature:state.signature,keys,text:state.text||prior?.text||''});
-   const changed=jobs.filter(j=>prior?.keys.get(j.id)!==keys.get(j.id));
-   const delta=progressState({...ticket,context:{...ticket.context,color_jobs:changed}});
-   if(this.initialized&&state.signature!==prior?.signature&&delta.text&&delta.text!==prior?.text)updates.push(delta.text);
+  const next=new Map(),finished=[],started=[];
+  let active=0;
+  for(const ticket of tickets||[]){
+   const previous=this.seen.get(ticket.id);
+   const current=new Map(),label=jobSpeechLabel(ticket);
+   for(const job of ticket.context?.color_jobs||[]){
+    if(!job?.id)continue;
+    const state={started:startEvidence(job),finished:finishEvidence(job)};
+    current.set(job.id,state);
+    if(state.started)active++;
+    const prior=previous?.get(job.id);
+    // First sighting of a ticket/job is baseline, never replay old work.
+    if(!this.initialized||!prior)continue;
+    if(state.finished&&!prior.finished)finished.push(label+' finished.');
+    else if(state.started&&!prior.started)started.push(label+' started.');
+   }
+   next.set(ticket.id,current);
   }
-  this.initialized=true;return updates.slice(-5);
+  this.seen=next;
+  if(!this.initialized){this.initialized=true;return [];}
+  // One active job may announce its start. Bulk runs only announce verified
+  // completions, even if individual claims arrive in separate poll cycles.
+  return (finished.length?finished:active===1&&started.length===1?started:[]).slice(-5);
  }
 }
 const api={nativeCaptureNotice,speechText,ProgressTracker,ownerApprovalRequests,bulkRunPreview,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief};
