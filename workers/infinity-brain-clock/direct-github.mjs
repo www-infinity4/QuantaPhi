@@ -84,7 +84,7 @@ jobs:
   // A sandbox dispatch is not a run receipt. Retrieve actual run metadata,
   // rather than reporting "working" from a successfully queued dispatch.
   const workflow=action==='list_workflow_runs'?body.workflow:null;
-  if(workflow&&!/^[A-Za-z0-9_.-]+\\.ya?ml$/.test(workflow))throw Error('invalid_workflow_name');
+  if(workflow&&!/^[A-Za-z0-9_.-]+\.ya?ml$/.test(workflow))throw Error('invalid_workflow_name');
   const endpoint=workflow?'/actions/workflows/'+encodeURIComponent(workflow)+'/runs?per_page=10':'/actions/runs?per_page=10';
   const result=await api(endpoint);
   return {ok:true,repository,status:'runs_read_only',workflow:workflow||null,
