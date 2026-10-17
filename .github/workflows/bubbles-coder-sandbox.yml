@@ -5,7 +5,7 @@ on:
       operation:
         description: "Owner-directed operation in temporary Ubuntu workspace"
         type: choice
-        options: [inspect, python, shell, tests]
+        options: [inspect, python, shell, tests, github_cli]
         required: true
         default: inspect
       script_path:
@@ -31,11 +31,12 @@ jobs:
         run: |
           set -euo pipefail
           printf 'Bubbles Coder Sandbox\nRun: %s\nRepository: %s\nRevision: %s\nOperation: %s\nScript: %s\n' \
-            "$GITHUB_${{ github.run_id }}" "$GITHUB_REPOSITORY" "$GITHUB_SHA" "$OPERATION" "$REQUESTED_SCRIPT" \
+            "$GITHUB_RUN_ID" "$GITHUB_REPOSITORY" "$GITHUB_SHA" "$OPERATION" "$REQUESTED_SCRIPT" \
             > sandbox-receipt.txt
           python3 --version | tee -a sandbox-receipt.txt
           node --version | tee -a sandbox-receipt.txt
           git --version | tee -a sandbox-receipt.txt
+          gh --version | head -1 | tee -a sandbox-receipt.txt
       - name: Run bounded script or repository checks
         env:
           OPERATION: ${{ inputs.operation }}
@@ -64,6 +65,10 @@ jobs:
               else
                 timeout --signal=TERM 180s bash --noprofile --norc "$REQUESTED_SCRIPT" 2>&1 | tee sandbox-output.txt
               fi
+              ;;
+            github_cli)
+              # Only this fixed read operation receives the scoped Actions token.
+              GH_TOKEN="${{ github.token }}" gh api "repos/$GITHUB_REPOSITORY" --jq '{repository: .full_name, defaultBranch: .default_branch}' 2>&1 | tee sandbox-output.txt
               ;;
             tests)
               {

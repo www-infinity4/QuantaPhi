@@ -68,6 +68,23 @@ function requestsScreen(value){
  return /^(?:(?:can|could|would|will|do) you\s+)?(?:see|read|explain|describe|look at|show|check|inspect|watch|tell me|what(?:'s| is))\b[\s\S]*\b(?:screen|screenshot|page|display|phone|this app|button|link|window)\b/i.test(q)
   || /^(?:(?:can|could|would|will) you\s+)?(?:tap|click|press|select|scroll)\b/i.test(q);
 }
+// Resolve owner runtime requests before a chat-only model or ticket classifier.
+// Keep shell text as data: execution still uses the bounded workflow inputs below.
+function coderIntent(value){
+ const q=String(value||'').trim().replace(/^(?:(?:hey|please|bubbles)[, ]+)+/i,'')
+  .replace(/^(?:can|could|would|will) you\s+(?:please\s+)?/i,'');
+ if(/^(?:do not|don't|never|stop|cancel)\b/i.test(q))return null;
+ const runtime=/\b(?:bubbles\s+coder|coder\s+sandbox|python|termux|linux|shell|bash|github\s+cli|gh\s+cli)\b/i.test(q);
+ if(!runtime||!/^(?:run|execute|inspect|test|check|show|open|use|start)\b/i.test(q))return null;
+ // Building/installing these tools is repository work, not a runtime dispatch.
+ if(/\b(?:install|implement|integrate|repair|fix|build|add)\b/i.test(q))return null;
+ const inspect=/\b(?:progress|status|runs|results)\b/i.test(q);
+ const script=q.match(/\bsandbox\/[A-Za-z0-9_/-]+\.(?:py|sh)\b/)?.[0];
+ const operation=/\b(?:github\s+cli|gh\s+cli)\b/i.test(q)?'github_cli':
+  /\bpython\b|\.py\b/i.test(q)?'python':/\b(?:shell|bash)\b|\.sh\b/i.test(q)?'shell':
+  /\b(?:tests|test suite)\b/i.test(q)?'tests':'inspect';
+ return {inspect,operation,script:script||(operation==='python'?'sandbox/hello.py':operation==='shell'?'sandbox/hello.sh':'')};
+}
 function articleNeedsScreen(value){return /\b(?:this|that|current|looking at|reading|on (?:my |the )?screen)\b/i.test(String(value||''));}
 function readCurrentPage(){
  const pieces=[],seen=new Set();
@@ -1085,8 +1102,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(/^(?:(?:please|bubbles)[\s,:]+)*(?:what tools (?:do you have|can you use)|what can you do|list (?:your|available) tools)[.!?]*$/i.test(spoken)){
   const local='Available Bubbles tools: Oracle conversation, live Infinity Phi web search, town-level weather, Google-engine lookup when available, news research, resonance calculator, personal notes, saved Bubbles memory and user-approved story suggestions.';
   const owner=embedded?'This embedded visitor assistant cannot control the QuantaPhi Robot Brain.':
-   'With a verified owner wallet I can submit Robot Brain tickets and read receipts; Greenbeans and Pink Panther still need runner authorization, source tests and verified merge results.';
-  const android=nativeOverlay?'The Android app can record sound and request screen capture, and read visible screen text when Accessibility permission is enabled. Images require Android screen permission. ChatGPT plan inference runs only if connected in this APK.':
+   'With verified owner access I can call direct GitHub repository tools, submit Robot Brain jobs, and read actual run receipts. Bubbles Coder provides a temporary Linux workspace with Python, Bash, Node, Git and GitHub CLI. Say run Python, run shell, use GitHub CLI, or check coder sandbox results. This is a remote runtime, not an installed Termux app.';
+  const android=nativeOverlay?'The Android app has a native screen-and-microphone MP4 recorder with stop/save and clip editing, plus sound-only recording. Say record screen, stop recording, or recorder status. Actual availability depends on the installed APK and Android permissions. Accessibility provides visible screen text.':
    'Full Android screenshot and microphone controls only work in the separately installed Bubbles APK with Android permissions.';
   const response=[local,owner,android,'Repository actions require a current authenticated GitHub operation and receipt, not a claim from the conversational model. Android capture always requires its system permissions.'].join(' ');
   display(spoken,'you');display(response,'ai');
@@ -1215,7 +1232,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const directRequest=/^(?:please\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
  // without generating a Robot Brain ticket or relying on the writer model.
- const coderRequest=/^(?:please\s+)?(?:bubbles[, ]+)?(?:run|execute|inspect|test|check|open|use|start)\b.{0,100}\b(?:bubbles\s+coder|coder\s+sandbox|python\s+sandbox|linux\s+sandbox|shell\s+sandbox)\b/i.test(request);
+ const coderRequest=coderIntent(request);
  const githubCheck=/^(?:please\s+)?(?:check|show|inspect)\s+(?:my\s+)?github\s+(?:access|tools|permissions|connection)[.!?]*$/i.test(request);
  if(!embedded&&articleResearch){
   try{
@@ -1242,17 +1259,15 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    let action=createRepository?'create_repository':githubCheck?'capabilities':'assist';
    const args={action,repository,request,description:request,mode};
    if(coderRequest){
-    const inspecting=/\b(?:check|show|inspect)\b.{0,40}\b(?:progress|status|runs|results)\b/i.test(request);
+    const inspecting=coderRequest.inspect;
     if(inspecting){args.action='list_workflow_runs';args.workflow='bubbles-coder-sandbox.yml';}
     else{
      args.action='dispatch_workflow';
      args.workflow='bubbles-coder-sandbox.yml';
      // A request to inspect or run scripts maps to declared workflow inputs;
      // never forward arbitrary shell text for execution.
-     const operation=/\b(?:python|\.py)\b/i.test(request)?'python':/\b(?:shell|bash|\.sh)\b/i.test(request)?'shell':/\b(?:tests|test suite)\b/i.test(request)?'tests':'inspect';
-     const scriptPath=request.match(/\bsandbox\/[A-Za-z0-9_/-]+\.(?:py|sh)\b/)?.[0];
      args.ref='main';
-     args.inputs={operation,script_path:scriptPath||(operation==='python'?'sandbox/hello.py':'')};
+     args.inputs={operation:coderRequest.operation,script_path:coderRequest.script};
     }
    }
    const result=await directGithubOperation(args);
