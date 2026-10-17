@@ -321,6 +321,7 @@ export class BrainClock extends DurableObject{
     await this.ctx.storage.put('last-episodic-memory',{when:Date.now(),status:'blocked_schema_or_binding',jobId:lease.jobId});
   }
   await this.emit('pink-panther','purple-pearl',body.status,message,receipt.commitSha?'https://github.com/'+lease.repository+'/commit/'+receipt.commitSha:runUrl);
+  await recordRedBrain(this.ctx.storage,{kind:'runner_receipt',state:body.status,ticketId:lease.ticketId,jobId:lease.jobId,runUrl,commitSha:receipt.commitSha,testsPassed:receipt.testsPassed,reason:message});
   return Response.json({ok:true});
  }
  async dispatchRunner(){
