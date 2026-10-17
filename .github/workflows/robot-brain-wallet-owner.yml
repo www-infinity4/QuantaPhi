@@ -7,6 +7,7 @@ on:
       - 'test/robot-brain-owner.test.cjs'
       - 'test/brain-clock.test.mjs'
       - 'test/bubbles-owner-approval.test.cjs'
+      - 'test/bubbles-bulk-approval.test.cjs'
       - 'bubbles-brain-actions.js'
       - 'test/red-sectors.test.mjs'
       - 'test/alarm-retry.test.mjs'
@@ -35,5 +36,5 @@ jobs:
           node --check workers/infinity-brain-clock/worker.js
       - name: Verify private wallet-owner authorization
         run: |
-          node --test test/bubbles-owner-approval.test.cjs
+          node --test test/bubbles-bulk-approval.test.cjs test/bubbles-owner-approval.test.cjs
           node --test test/red-sectors.test.mjs test/alarm-retry.test.mjs test/robot-brain-owner.test.cjs test/brain-clock.test.mjs test/bubbles-conversation-memory.test.mjs workers/infinity-brain-clock/brain-rag-memory.test.mjs test/bubbles-github-credential.test.mjs test/brain-merge-receipt.test.mjs test/brain-notifications.test.mjs test/bubbles-direct-github.test.mjs test/agent-iteration-card.test.cjs
