@@ -1128,7 +1128,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   busy=true;send.disabled=true;let reply;
   try{
    const result=await requestRunner();
-   reply=result.status==='queued_for_runner'?'Robot Brain requested the next eligible job. It is waiting for a verified runner result; queued does not mean code was edited or deployed.':
+   reply=result.status==='queued_for_runner'&&result.dispatch?.status==='scheduled_fallback'?'Red-Brain accepted the request, but the repository runner could not start: '+String(result.dispatch.error||'runner_unavailable').slice(0,135)+'. No execution verified.':
+     result.status==='queued_for_runner'?'Red-Brain acknowledged the runner dispatch request. Waiting for an authenticated runner receipt; no code change or deployment verified.':
     result.status==='no_pending_jobs'?'Robot Brain has no eligible queued jobs to request. Ask for a bot report to inspect recorded work.':
     'Robot Brain replied: '+String(result.status||'unknown').slice(0,100);
   }catch(error){reply='Robot Brain did not start a new job. '+String(error.message||error).slice(0,160)}
@@ -1218,7 +1219,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   workText.value=request;tools.open=true;
   try{const ticket=await submitWork(request,'explicit-user-command');workEvidence=(continued?'Continuing your last request. ':'')+
     (ticket.deduplicated?'Existing work ticket found ('+ticket.status+').':
-     ticket.runner==='queued_for_runner'?'Work ticket saved; I asked the authorized Greenbeans runner to pick it up. Pink Panther must independently verify it.':
+     ticket.runner==='queued_for_runner'&&ticket.dispatch?.status==='scheduled_fallback'?'Work ticket saved, but Red-Brain could not dispatch the repository runner: '+String(ticket.dispatch.error||'runner unavailable').slice(0,110)+'. No code execution verified.':
+      ticket.runner==='queued_for_runner'?'Work ticket saved; Red-Brain acknowledged the runner request. Pink Panther must independently verify its execution.':
      'Work ticket saved, but the runner could not be confirmed: '+ticket.runner+'.')+
     ' Your request is saved; you do not need to press another button. Track real results in the Robot Brain report at https://quantaphi.org/#robotDirections . No successful code change, merge or deployment has been verified by this receipt.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
@@ -1483,6 +1485,42 @@ async function connectOwner(){
  else void checkSharedVoiceStatus();
  workStatus.textContent='Robot Brain connected. Say “Bubbles, fix the video generator” or “Report the top ten bot jobs.”';
 }
+// Two Red macro sectors share an authenticated, purpose-scoped channel.
+// Red-Bubbles observes, acknowledges and delegates approved actions; Red-Brain
+// records dispatch and signed runner receipts. Neither channel grants itself
+// new repository, wallet, phone or Android privileges.
+const redClientId='bubbles-'+(nativeOverlay?'android':'website')+'-'+crypto.randomUUID().replaceAll('-','');
+let redAckRevision=0,redInitialized=false,redLinkFailed=false;
+async function syncRedSectors(){
+ const headers=await verifiedOwnerHeaders();
+ const response=await bubblesFetch(BRAIN+'/owner/red/sync',{method:'POST',
+  headers:{...headers,'Content-Type':'application/json'},
+  body:JSON.stringify({protocol:1,sector:'red-bubbles',clientId:redClientId,ackRevision:redAckRevision})},9000);
+ const state=await response.json().catch(()=>({}));
+ if(!response.ok||!state.ok||state.redBrain?.sector!=='red-brain')throw Error(String(state.error||'red_brain_unreachable'));
+ const event=state.redBrain.event;
+ if(event&&event.revision>redAckRevision){
+  const reason=String(event.reason||'').slice(0,150);
+  let notice='';
+  if(redInitialized){
+   if(event.kind==='runner_dispatch'&&event.state==='awaiting_repository_runner')
+    notice='Red-Brain received the job request, but the repository runner did not start: '+reason+'. The ticket remains queued.';
+   else if(event.kind==='runner_dispatch'&&event.state==='runner_dispatch_failed')
+    notice='Red-Brain could not dispatch the repository runner: '+reason;
+   else if(event.kind==='runner_receipt'&&event.state==='blocked')
+    notice='Red-Brain received a runner failure receipt: '+reason;
+   else if(event.kind==='runner_receipt'&&event.state==='committed_unverified'&&event.commitSha&&event.testsPassed)
+    notice='Red-Brain received a tested code commit. Merge and live deployment are still unverified.';
+   else if(event.kind==='runner_receipt'&&event.state==='deployed_verified'&&event.commitSha&&event.testsPassed)
+    notice='Red-Brain received a runner deployment verification receipt. Checking merged work state.';
+  }
+  redAckRevision=event.revision;
+  if(notice)announceBrainProgress(notice);
+ }
+ if(redLinkFailed){redLinkFailed=false;recordBrainNotice('Red-Bubbles and Red-Brain synchronization restored.');}
+ redInitialized=true;
+ return state;
+}
 const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker():null;
 let progressPolling=false,progressUnavailable=false;
 async function pollBrainProgress(){
@@ -1503,6 +1541,7 @@ async function pollBrainProgress(){
   if(progressUnavailable)updates.unshift('Robot Brain is reachable again. I am checking progress here.');
   progressUnavailable=false;
   if(updates.length)announceBrainProgress(updates.slice(-5).join(' '));
+   if(typeof syncRedSectors==='function')void syncRedSectors().catch(()=>{if(!redLinkFailed){redLinkFailed=true;recordBrainNotice('Red-Brain connection is not responding. Ticket polling continues.');}});
  }catch{
   brainConnectionState('Brain unreachable · latest notices retained', 'unreachable');
   if(!progressUnavailable){progressUnavailable=true;announceBrainProgress('Robot Brain is unreachable right now. I will keep checking and update you here when it reconnects.');}
@@ -1521,7 +1560,13 @@ async function readBrainReport(){
  const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},20000);
  const result=await response.json().catch(()=>({}));
  if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error(String(result.error||'Owner ticket list unavailable'));
- return brainTools?.describeTickets(result.tickets,10)||'Robot Brain reporting helpers are unavailable.';
+ const report=brainTools?.describeTickets(result.tickets,10)||'Robot Brain reporting helpers are unavailable.';
+  try{
+   const bridge=await syncRedSectors(),red=bridge.redBrain;
+   return report+'\nRed-Bubbles ↔ Red-Brain: connected. Last requested job: '+
+    (red.lastRequestedJob?.ticketId?'recorded; execution unverified':'none recorded')+
+    '. Runner: '+red.runner.state+'.'+(red.event?' Latest Brain receipt: '+red.event.kind+' · '+red.event.state+'.':'');
+  }catch(error){return report+'\nRed-Bubbles ↔ Red-Brain handshake unavailable: '+String(error.message||error).slice(0,110)+'. Ticket records remain readable.';}
 }
 void connectOwner();
 // Home loads the owner helper after this script. Deferred scripts finish before
@@ -1560,11 +1605,11 @@ async function submitWork(request,approval='explicit-click'){
   const updated=await bubblesFetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify(jobs),context:{...result.ticket.context,color_jobs:jobs}})},20000);
   const ready=await updated.json().catch(()=>({}));if(!updated.ok||!ready.ok)throw Error(ready.error||'Ticket saved as a draft but not ready; check Robot Brain.');
   workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs}}));
-  let runner='not_started';
-   try{const request=await requestRunner(result.ticket.id,jobs[0]?.id||'');runner=request.status;}
+  let runner='not_started',runnerDispatch=null;
+   try{const request=await requestRunner(result.ticket.id,jobs[0]?.id||'');runner=request.status;runnerDispatch=request.dispatch||null;}
    catch(error){runner='runner_request_failed';workStatus.textContent='Work ticket saved, but runner dispatch failed: '+String(error.message||error).slice(0,100);}
    if(runner==='queued_for_runner')workStatus.textContent='Robot Brain ticket saved. Greenbeans runner requested; Pink Panther verification is a dependent job. Execution and deployment are not yet proven.';
-   return {id:result.ticket.id,status:'ready',deduplicated:false,runner};
+   return {id:result.ticket.id,status:'ready',deduplicated:false,runner,dispatch:runnerDispatch};
  }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145);throw error}
  finally{workButton.disabled=false}
 }

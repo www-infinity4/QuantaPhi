@@ -1,4 +1,5 @@
 import {conversationMemory} from './conversation-memory.mjs';
+import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
@@ -320,6 +321,7 @@ export class BrainClock extends DurableObject{
     await this.ctx.storage.put('last-episodic-memory',{when:Date.now(),status:'blocked_schema_or_binding',jobId:lease.jobId});
   }
   await this.emit('pink-panther','purple-pearl',body.status,message,receipt.commitSha?'https://github.com/'+lease.repository+'/commit/'+receipt.commitSha:runUrl);
+  await recordRedBrain(this.ctx.storage,{kind:'runner_receipt',state:body.status,ticketId:lease.ticketId,jobId:lease.jobId,runUrl,commitSha:receipt.commitSha,testsPassed:receipt.testsPassed,reason:message});
   return Response.json({ok:true});
  }
  async dispatchRunner(){
@@ -379,6 +381,7 @@ export class BrainClock extends DurableObject{
    return Response.json(result.body,{status:result.status});
   }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
+  if(new URL(request.url).pathname==='/owner/red-sync')return Response.json(await redExchange(this.ctx.storage,await request.json()));
   if(new URL(request.url).pathname==='/owner/session-create'){
    const body=await request.json(),recipient=await this.ctx.storage.get('bot-work-recipient');
    // Never let the first wallet to visit a public website claim Robot Brain.
@@ -429,7 +432,9 @@ export class BrainClock extends DurableObject{
      if(prior)await this.ctx.storage.put(key,{...prior,retryAt:0});
      await this.ctx.storage.put('requested-next-job',{ticketId:t.id,jobId:job.id});
      await this.emit('purple-pearl','greenbeans','owner requested next job','Owner queued '+t.id+'/'+job.id+' for the next authenticated runner cycle. No completion claimed.');
-     return Response.json({ok:true,status:'queued_for_runner',ticketId:t.id,jobId:job.id,dispatch:await this.dispatchRunner()});
+     const runnerDispatch=await this.dispatchRunner(),diagnosis=classifyDispatch(runnerDispatch);
+     await recordRedBrain(this.ctx.storage,{kind:'runner_dispatch',state:diagnosis.state,ticketId:t.id,jobId:job.id,reason:diagnosis.reason});
+     return Response.json({ok:true,status:'queued_for_runner',ticketId:t.id,jobId:job.id,dispatch:runnerDispatch});
     }
    }
    return Response.json({ok:true,status:'no_pending_jobs'});
@@ -735,7 +740,19 @@ export default{
     return output(request,await response.json(),response.status);
    }catch{return output(request,{ok:false,error:'pairing_unavailable'},503)}
   }
-  if(path==='/owner/conversation'&&request.method==='POST'){
+  if(path==='/owner/red/sync'&&request.method==='POST'){
+    const origin=request.headers.get('Origin');
+    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+    if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
+    try{
+     const raw=await request.text();
+     if(raw.length>1200)return output(request,{ok:false,error:'red_envelope_too_large'},413);
+     const result=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/owner/red-sync',{method:'POST',body:raw||'{}'});
+     return output(request,await result.json(),result.status);
+    }catch{return output(request,{ok:false,error:'red_bridge_unreachable'},503)}
+   }
+   if(path==='/owner/conversation'&&request.method==='POST'){
    const origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];

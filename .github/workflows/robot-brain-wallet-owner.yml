@@ -6,6 +6,7 @@ on:
       - 'workers/infinity-brain-clock/**'
       - 'test/robot-brain-owner.test.cjs'
       - 'test/brain-clock.test.mjs'
+      - 'test/red-sectors.test.mjs'
       - '.github/workflows/robot-brain-wallet-owner.yml'
   push:
     branches: [main]
@@ -31,4 +32,4 @@ jobs:
           node --check workers/infinity-brain-clock/worker.js
       - name: Verify private wallet-owner authorization
         run: |
-          node --test test/robot-brain-owner.test.cjs test/brain-clock.test.mjs test/bubbles-conversation-memory.test.mjs workers/infinity-brain-clock/brain-rag-memory.test.mjs test/bubbles-github-credential.test.mjs test/brain-merge-receipt.test.mjs test/brain-notifications.test.mjs test/bubbles-direct-github.test.mjs test/agent-iteration-card.test.cjs
+          node --test test/red-sectors.test.mjs test/robot-brain-owner.test.cjs test/brain-clock.test.mjs test/bubbles-conversation-memory.test.mjs workers/infinity-brain-clock/brain-rag-memory.test.mjs test/bubbles-github-credential.test.mjs test/brain-merge-receipt.test.mjs test/brain-notifications.test.mjs test/bubbles-direct-github.test.mjs test/agent-iteration-card.test.cjs
