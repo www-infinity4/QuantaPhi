@@ -199,3 +199,26 @@ test('explicit request for Robot Brain to repair missing Bubbles capabilities be
   'What permissions does robot brain have?'
  ])assert.notEqual(classify(command),'queue',command);
 });
+
+test('Omni Code import, Brain bindings and notification refresh are owner commands, not chat-only prompts',()=>{
+ for(const command of [
+  'Import Omni Code, bind Bubble & Brain scripts, verify Brain config, refresh notification centre',
+  'Please import the Omni Code skill into Robot Brain, integrate it with Bubbles, verify the Brain configuration, and refresh the notification center.',
+  'Bind the Bubbles scripts to Robot Brain',
+  'Refresh the Bubbles notification centre',
+  'Integrate Omni Code with my website'
+ ])assert.equal(classify(command),'queue',command);
+ for(const question of [
+  'Explain how an Omni Code import would work',
+  'Do not import Omni Code into Robot Brain',
+  'What is a notification centre?'
+ ])assert.equal(classify(question),'chat',question);
+});
+
+test('Bubbles never displays or voices fabricated createTicket JSON from Android chat',()=>{
+ const client=fs.readFileSync('bubbles-ai.js','utf8');
+ const normalizer=client.slice(client.indexOf('function normalizeOwnerAssistantReply('),client.indexOf('function isOwnerWorkRequest('));
+ assert.match(normalizer,/createTicket/);
+ assert.match(normalizer,/model-generated tool draft/);
+ assert.ok(client.indexOf('normalizeOwnerAssistantReply(rawAnswer')<client.indexOf("messages.push({role:'assistant',text:answer})"));
+});
