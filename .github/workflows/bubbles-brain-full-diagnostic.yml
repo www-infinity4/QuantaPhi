@@ -1,0 +1,196 @@
+name: Bubbles and Robot Brain full-system diagnostic
+
+on:
+  workflow_dispatch:
+    inputs:
+      live_ai_probe:
+        description: 'Also test public Bubbles AI inference (uses a small amount of Workers AI)'
+        type: boolean
+        required: false
+        default: false
+  pull_request:
+    paths:
+      - '.github/workflows/bubbles-brain-full-diagnostic.yml'
+      - 'docs/BUBBLES_BRAIN_FULL_SYSTEM_TEST.md'
+      - 'bubbles-ai.js'
+      - 'bubbles-brain-actions.js'
+      - 'robot-brain-owner.js'
+      - 'workers/infinity-brain-clock/**'
+      - 'workers/bubbles-tools/**'
+      - 'android/bubbles-overlay/**'
+      - 'test/bubbles-*.test.*'
+      - 'test/brain-*.test.*'
+      - 'scripts/bubbles-live-smoke.mjs'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/bubbles-brain-full-diagnostic.yml'
+      - 'bubbles-ai.js'
+      - 'bubbles-brain-actions.js'
+      - 'robot-brain-owner.js'
+      - 'workers/infinity-brain-clock/**'
+      - 'workers/bubbles-tools/**'
+      - 'android/bubbles-overlay/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bubbles-brain-diagnostic-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bubbles_brain_contracts:
+    name: Bubbles to authenticated Brain, queue and receipt contracts
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify routing, auth, multi-repo selection and real-receipt gating
+        run: |
+          node --check bubbles-ai.js
+          node --check bubbles-brain-actions.js
+          node --check robot-brain-owner.js
+          node --test \
+            test/bubbles-brain-bridge.test.cjs \
+            test/bubbles-brain-actions.test.cjs \
+            test/bubbles-runner-dispatch.test.mjs \
+            test/bubbles-owner-immediate-dispatch.test.cjs \
+            test/bubbles-bulk-approval.test.cjs \
+            test/bubbles-owner-approval.test.cjs \
+            test/bubbles-repository-targets.test.mjs \
+            test/bubbles-smart-repository-routing.test.mjs \
+            test/bubbles-technical-handoff.test.mjs \
+            test/bubbles-direct-github.test.mjs \
+            test/bubbles-tools.test.mjs \
+            test/brain-clock.test.mjs \
+            test/brain-merge-receipt.test.mjs \
+            test/brain-queue-order.test.mjs \
+            test/brain-ticket-status.test.cjs \
+            test/work-ticket-bubbles-timed-job-controls.test.cjs
+
+  android_voice_screen_contracts:
+    name: Android voice, screen, recording and speech safeguards
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Exercise native source and browser bridge contracts
+        run: |
+          node --test \
+            test/bubbles-apk-preview.test.cjs \
+            test/bubbles-continuous-native.test.cjs \
+            test/bubbles-live-voice.test.cjs \
+            test/bubbles-live-screen.test.cjs \
+            test/bubbles-native-session-voice.test.cjs \
+            test/bubbles-source-recording.test.cjs \
+            test/bubbles-speech-watchdog.test.cjs \
+            test/bubbles-tts-cleanup.test.cjs \
+            test/bubbles-voice-gate.test.cjs \
+            test/bubbles-floating-window.test.cjs \
+            test/bubbles-card-workspace.test.mjs
+      - name: State physical device limit in job summary
+        run: |
+          echo 'Native source tests are not an APK installation, microphone capture, MediaProjection or real Motorola device test.' >> "$GITHUB_STEP_SUMMARY"
+
+  robot_color_bots:
+    name: Moltnook Red Blue Yellow Orange Green Pink Purple Black
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: www-infinity4/Moltnook
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Record exact Moltnook commit tested
+        run: |
+          echo "Moltnook revision: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+      - name: Verify color routing, isolation, evidence, reviewer and release gates
+        run: |
+          node --check agent-room.js
+          node --test \
+            agents/tests/routing.test.mjs \
+            agents/tests/color-child-bots.test.mjs \
+            agents/repository-engine/credential-bridge.test.mjs \
+            agents/repository-engine/rollout-gate.test.mjs \
+            agents/repository-engine/workflow-evidence.test.mjs \
+            agents/repository-engine/dependency-context.test.mjs \
+            agents/repository-engine/scoped-capabilities.test.mjs \
+            agents/repository-engine/repair-feedback.test.mjs \
+            agents/repository-engine/auto-promote-reviewed.test.mjs \
+            agents/repository-engine/feature-manifest.test.mjs \
+            agents/repository-engine/pinned-review.test.mjs
+
+  public_live_boundaries:
+    name: Live public Workers, owner boundary and optional AI reply
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate public smoke itself with mock network
+        run: node --test test/bubbles-live-smoke.test.mjs
+      - name: Check real health, CORS and that unauthenticated owner APIs deny access
+        env:
+          BUBBLES_LIVE_FULL: ${{ github.event_name == 'workflow_dispatch' && inputs.live_ai_probe && '1' || '0' }}
+        run: node scripts/bubbles-live-smoke.mjs
+      - name: Preserve observed statuses without inventing authenticated tool receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bubbles-brain-public-diagnostic
+          path: repository-receipts/bubbles-live-smoke.json
+          if-no-files-found: warn
+          retention-days: 14
+
+  verdict:
+    name: Diagnostic verdict (device and authenticated job still manual)
+    if: always()
+    needs: [bubbles_brain_contracts, android_voice_screen_contracts, robot_color_bots, public_live_boundaries]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish truthful per-suite verdict
+        env:
+          CONTRACTS: ${{ needs.bubbles_brain_contracts.result }}
+          ANDROID: ${{ needs.android_voice_screen_contracts.result }}
+          COLORS: ${{ needs.robot_color_bots.result }}
+          LIVE: ${{ needs.public_live_boundaries.result }}
+        shell: bash
+        run: |
+          {
+            echo '## Bubbles / Robot Brain diagnostic'
+            echo
+            echo "| Suite | Result |"
+            echo "|---|---|"
+            echo "| Authenticated Brain and receipts (unit/contract) | $CONTRACTS |"
+            echo "| Android voice/screen/recording (source only) | $ANDROID |"
+            echo "| Color bot routing/review policy (unit/contract) | $COLORS |"
+            echo "| Real public endpoints and boundary | $LIVE |"
+            echo
+            echo '**Not certified by this workflow:** physical microphone and screen recording, installed APK security, paired owner session, actual production D1/DO runner claim, real GitHub write/merge receipt, and deployed release.'
+            echo 'These require the separate consented phone and sandbox job checklist in docs/BUBBLES_BRAIN_FULL_SYSTEM_TEST.md.'
+          } >> "$GITHUB_STEP_SUMMARY"
+          for status in "$CONTRACTS" "$ANDROID" "$COLORS" "$LIVE"; do
+            if [[ "$status" != 'success' ]]; then
+              echo "Diagnostic incomplete or failing: $status"
+              exit 1
+            fi
+          done
+          echo 'All selected automated checks passed. Real-device and authenticated-job verification remain unverified.'
