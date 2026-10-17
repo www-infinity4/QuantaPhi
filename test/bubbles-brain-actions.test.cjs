@@ -214,3 +214,11 @@ test('Omni Code import, Brain bindings and notification refresh are owner comman
   'What is a notification centre?'
  ])assert.equal(classify(question),'chat',question);
 });
+
+test('Bubbles never displays or voices fabricated createTicket JSON from Android chat',()=>{
+ const client=fs.readFileSync('bubbles-ai.js','utf8');
+ const normalizer=client.slice(client.indexOf('function normalizeOwnerAssistantReply('),client.indexOf('function isOwnerWorkRequest('));
+ assert.match(normalizer,/createTicket/);
+ assert.match(normalizer,/model-generated tool draft/);
+ assert.ok(client.indexOf('normalizeOwnerAssistantReply(rawAnswer')<client.indexOf("messages.push({role:'assistant',text:answer})"));
+});
