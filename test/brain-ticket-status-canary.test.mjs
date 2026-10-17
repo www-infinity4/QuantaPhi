@@ -53,3 +53,10 @@ test('ticketStatusFromJobs – complete scenario', () => {
   const status = ticketStatusFromJobs(jobs);
   assert.strictEqual(status, 'complete');
 });
+
+
+test('source receipts await verification and never masquerade as an executing runner',()=>{
+ for(const status of ['committed_unverified','merged_verified'])
+  assert.equal(ticketStatusFromJobs([job('TASK-1',status)]),'blocked');
+ assert.equal(ticketStatusFromJobs([job('TASK-1','merged_verified'),job('TASK-2','queued',['TASK-1'])]),'ready');
+});
