@@ -1,3 +1,6 @@
+> [!CAUTION]
+> **Infinity Platinum Android APK withdrawn (October 17, 2026).** Avast flagged a preview build, and source review found a cleartext HTTP configuration weakness. Binary verification is pending; infection has not been established. **Do not install the preview from GitHub Releases or mirrors.** The Platinum web start page is separate. [Security notice](android/infinity-platinum/README.md).
+
 # QuantaPhi
 
 QuantaPhi is Phi search engine experiment **#2**. Grammar Phi is preserved unchanged as Engine #1.
