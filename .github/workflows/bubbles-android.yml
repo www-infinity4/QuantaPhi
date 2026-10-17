@@ -62,6 +62,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify speech narration removes raw punctuation
+        run: |
+          node --test test/bubbles-tts-cleanup.test.cjs
+          mkdir -p /tmp/bubbles-speech
+          javac -d /tmp/bubbles-speech android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SpokenReplyText.java android/bubbles-overlay/checks/SpokenReplyTextCheck.java
+          java -cp /tmp/bubbles-speech org.quantaphi.bubbles.SpokenReplyTextCheck
       - name: Verify unified Bubbles photo and voice read-aloud contracts
         run: |
           node --check bubbles-ai.js
