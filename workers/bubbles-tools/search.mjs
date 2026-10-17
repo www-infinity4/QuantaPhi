@@ -11,6 +11,7 @@ const getJson=async(fetcher,url,options={})=>{
 };
 export function lookupKind(message){
  const s=trim(message,3000);
+ if(/\b(?:build|create|code|implement|repair|fix|develop|design)\b.{0,70}\b(?:weather|forecast)\b.{0,35}\b(?:app|widget|page|site|api)\b/i.test(s))return null;
  if(/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it)\b/i.test(s))return 'weather.current';
  if(/^\s*(?:google(?:\s+search|\s+it|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\b/i.test(s)
    ||/\b(?:search\s+(?:the\s+)?web|search\s+google|look\s+up\s+online|find\s+(?:it\s+)?online|latest\s+(?:information|updates)|what(?:'s| is)\s+the\s+latest)\b/i.test(s))return 'web.search';
