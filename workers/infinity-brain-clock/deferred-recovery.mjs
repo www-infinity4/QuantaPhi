@@ -27,6 +27,8 @@ export function sourceRecoveryEligibility(job,{now=Date.now()}={}){
  // A model escalation is not a signed owner refusal: allow read-only proof
  // gathering, but NEVER infer any owner consent from a recovered source.
  const last=Number(job.progress?.deferredRecovery?.lastCheckedAt)||0;
+ if(job.progress?.deferredRecovery?.status==='review_exhausted'&&last>now-24*60*60*1000)
+  return {eligible:false,reason:'recovery_budget_exhausted_until_daily_review'};
  if(last>now-DEFERRED_JOB_COOLDOWN_MS&&last<=now)
   return {eligible:false,reason:'recovery_cooldown'};
  if(job.progress?.commitSha||job.progress?.testsPassed||job.progress?.runUrl&&job.progress?.blocker==='commit_verification_required')
@@ -111,13 +113,14 @@ export function recoveryDecision(job,inspection,{now=Date.now()}={}){
   return {requeue:false,recovery:{...result,status:'review_exhausted',nextEligibleAt:now+DEFERRED_JOB_COOLDOWN_MS}};
  if(DANGER.test(statusText(job)))
   return {requeue:false,recovery:{...result,status:'owner_or_security_decision',nextEligibleAt:now+DEFERRED_JOB_COOLDOWN_MS}};
- const note='\n\nVerified deferred technical recovery (read-only GitHub at '+inspection.pinnedCommit+'): '+
+ const note='\n\n[Verified deferred recovery source]\nRead-only GitHub commit '+inspection.pinnedCommit+'): '+
   found.map(x=>x.path+' SHA-256 '+x.sha256).join('; ')+
   '. Inspect actual project source, exports, UI references and schema before editing. '+
   'Do not invent APIs, audio timing or assets, and preserve all owner/security and acceptance requirements.';
- if(String(job.instructions||'').length+note.length>12000)
+ const base=String(job.instructions||'').split('\n\n[Verified deferred recovery source]')[0];
+ if(base.length+note.length>12000)
   return {requeue:false,recovery:{...result,status:'instructions_limit',nextEligibleAt:now+DEFERRED_JOB_COOLDOWN_MS}};
- return {requeue:true,addendum:note,
+ return {requeue:true,instructions:base+note,
   recovery:{...result,status:'requeued_for_verified_source_build',verifiedAt:new Date(now).toISOString(),
    requeueCount:tries+1,nextEligibleAt:now+DEFERRED_JOB_COOLDOWN_MS,
    originalQueuePriority:Number.isFinite(previous.originalQueuePriority)?previous.originalQueuePriority:job.queue_priority||0}};
