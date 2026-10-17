@@ -218,10 +218,14 @@ jobs:
           set -euo pipefail
           VERSION=$(sed -n "s/.*versionName '\([^']*\)'.*/\1/p" android/bubbles-overlay/app/build.gradle)
           test -n "$VERSION"
-          mv dist/app-debug.apk dist/Bubbles-Preview5-Android12.apk
-          (cd dist && sha256sum Bubbles-Preview5-Android12.apk > Bubbles-Preview5-Android12.apk.sha256)
+          # Publish an immutable version-named APK in addition to the rolling alias.
+          # The unique filename defeats browser/CDN cache confusion between v31-v34.
+          VERSIONED="Bubbles-v${VERSION}-Preview5-Android12.apk"
+          mv dist/app-debug.apk "dist/$VERSIONED"
+          cp "dist/$VERSIONED" dist/Bubbles-Preview5-Android12.apk
+          (cd dist && sha256sum "$VERSIONED" > "$VERSIONED.sha256" && sha256sum Bubbles-Preview5-Android12.apk > Bubbles-Preview5-Android12.apk.sha256)
           if gh release view bubbles-preview-current --repo "$GH_REPO" >/dev/null 2>&1; then
-            gh release upload bubbles-preview-current "dist/Bubbles-Preview5-Android12.apk#Bubbles v${VERSION}-preview" dist/Bubbles-Preview5-Android12.apk.sha256 --clobber --repo "$GH_REPO"
+            gh release upload bubbles-preview-current "dist/$VERSIONED#Bubbles v${VERSION}-preview" "dist/$VERSIONED.sha256" "dist/Bubbles-Preview5-Android12.apk#Current Bubbles Preview" dist/Bubbles-Preview5-Android12.apk.sha256 --clobber --repo "$GH_REPO"
           else
-            gh release create bubbles-preview-current "dist/Bubbles-Preview5-Android12.apk#Bubbles v${VERSION}-preview" dist/Bubbles-Preview5-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Bubbles Preview 5 installs alongside previous Bubbles versions and avoids signature conflicts from earlier previews; this is a test-signed preview, not a production release."
+            gh release create bubbles-preview-current "dist/$VERSIONED#Bubbles v${VERSION}-preview" "dist/$VERSIONED.sha256" "dist/Bubbles-Preview5-Android12.apk#Current Bubbles Preview" dist/Bubbles-Preview5-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Every version also retains a uniquely named signed APK asset and SHA256 checksum, so download version identity is clear. Test-signed preview, not a production release."
           fi
