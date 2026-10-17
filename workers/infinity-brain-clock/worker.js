@@ -515,6 +515,7 @@ export class BrainClock extends DurableObject{
   try{
    try{await this.archiveOlderPreviews()}catch(e){await this.ctx.storage.put('evidence-archive-error',{when:Date.now(),error:String(e.message).slice(0,200)})}
    if(await this.ctx.storage.get('bot-work-recipient'))await this.settleWork();
+   try{await this.retryPendingWork()}catch(error){await this.ctx.storage.put('alarm-dispatch-error',{when:Date.now(),reason:String(error.message||error).slice(0,160)});}
    const page=await read('https://quantaphi.org/',150000);
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
    let selected=null;
