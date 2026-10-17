@@ -203,7 +203,7 @@ function bulkRunPreview(tickets){
        /owner_input_required/i.test(reason)&&
        /\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(reason)&&
        !/\b(?:excluded_path_required|unsupported_acceptance|password|credential|secret|wallet|payment|security|permission|authorization|biometric|fingerprint|speaker verification|verification algorithm)\b/i.test(reason)&&
-       !(ticket.context?.owner_approval_receipts||[]).filter(x=>x.jobId===job.id).length>=3)ui++;
+       (ticket.context?.owner_approval_receipts||[]).filter(x=>x.jobId===job.id).length<3)ui++;
     else blocked++;
    }else if(job?.status==='working')working++;
   }
