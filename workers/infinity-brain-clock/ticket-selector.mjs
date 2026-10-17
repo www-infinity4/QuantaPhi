@@ -37,7 +37,18 @@ export function ticketAdmission(candidate,{
  // A new authenticated owner approval revives an older ordinary job, but
  // attemptedAt/updated_at/claimedAt NEVER reset aging on failed retries.
  const freshOwnerApproval=Number.isFinite(approved)&&approved<=now&&approved>=cutoff;
- if(!selected&&Number.isFinite(born)&&born<cutoff&&!freshOwnerApproval){
+ // A blocked legacy ticket that was REBUILT from verified immutable source
+ // evidence may re-enter the queue, even if the original request is old.
+ // This is not owner approval and never bypasses dependency/security gates.
+ const recovered=job.progress?.deferredRecovery;
+ const verifiedAt=toMillis(recovered?.verifiedAt);
+ const sourceRecovered=job.status==='queued'&&
+  recovered?.status==='requeued_for_verified_source_build'&&
+  /^[a-f0-9]{40}$/.test(recovered?.pinnedCommit||'')&&
+  Array.isArray(recovered?.sourceReceipts)&&recovered.sourceReceipts.length>=2&&
+  recovered.sourceReceipts.every(x=>/^[a-f0-9]{64}$/.test(x.sha256||''))&&
+  Number.isFinite(verifiedAt)&&verifiedAt<=now&&verifiedAt>=cutoff;
+ if(!selected&&Number.isFinite(born)&&born<cutoff&&!freshOwnerApproval&&!sourceRecovered){
   return {eligible:false,reason:'background_ticket_aged_out',selected:false,ageDays:Math.floor((now-born)/DAY)};
  }
  return {eligible:true,reason:selected?'owner_selected':'background_eligible',selected};
