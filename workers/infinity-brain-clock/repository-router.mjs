@@ -27,7 +27,7 @@ export function selectRepositories(request,catalog){
   const name=row.repository.split('/')[1],tokens=normalizeWords(name),joined=tokens.join(' ');
   let score=0;const reasons=[];
   if(explicit.some(x=>x.repository.toLowerCase()===row.repository.toLowerCase())){score+=100;reasons.push('named directly');}
-  if(joined&&q.includes(' '+joined+' ')){score+=18;reasons.push('repository named');}
+  if(joined&&q.includes(' '+joined+' ')){score+=32;reasons.push('repository named');}
   for(const word of tokens)if(word.length>2&&!FILLER.has(word)&&words.includes(word))score+=6;
   const aliases=SUBJECTS.filter(rule=>rule.words.test(query));
   for(const rule of aliases){const idx=rule.targets.findIndex(t=>t.toLowerCase()===name.toLowerCase());if(idx>=0){score+=idx===0?13:5;reasons.push('matched project feature');}}
@@ -41,8 +41,11 @@ export function selectRepositories(request,catalog){
  const primary=candidates[0],second=candidates[1];
  const subjectMatches=SUBJECTS.filter(rule=>rule.words.test(query));
  const distinctPrimary=[...new Set(subjectMatches.map(rule=>rule.targets[0]))];
- const multiRequested=/\b(?:and|both|between|across)\b/i.test(query)&&distinctPrimary.length>=2;
- const multiSelection=multiRequested?distinctPrimary.map(name=>candidates.find(entry=>entry.repository.split('/')[1].toLowerCase()===name.toLowerCase()))
+ const namedProjects=candidates.filter(entry=>q.includes(' '+normalizeWords(entry.repository.split('/')[1]).join(' ')+' '))
+   .map(entry=>entry.repository.split('/')[1]);
+ const multiRequested=/\b(?:and|both|between|across)\b/i.test(query)&&new Set([...distinctPrimary,...namedProjects]).size>=2;
+ const multiSelection=multiRequested?[...new Set([...distinctPrimary,...namedProjects])]
+   .map(name=>candidates.find(entry=>entry.repository.split('/')[1].toLowerCase()===name.toLowerCase()))
    .filter(entry=>entry?.score>=13).map(entry=>entry.repository):[];
  const confidentMultiple=multiSelection.length>=2;
  const confidence=!primary?'none':primary.score>=100?'explicit':confidentMultiple?'high':primary.score>=13&&(!second||primary.score-second.score>=6)?'high':primary.score>=6?'medium':'low';
