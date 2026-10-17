@@ -70,7 +70,8 @@ test('Preview 5 installs separately from previous debug signatures', () => {
 
 test('loading the shared assistant holds speech instead of using the old manual-submit fallback',()=>{
  const method=window.slice(window.indexOf('boolean sendSpoken(String text)'),window.indexOf('private void showWebsite'));
-  assert.match(method,/website == null \|\| text == null/);
+  // A temporarily absent WebView must not discard a new spoken request.
+  assert.match(method,/root == null \|\| text == null/);
  assert.doesNotMatch(method,/if \(!websiteReady \|\| website == null\) return false/);
   assert.match(method,/pendingSpeech\.addLast\(/);
  assert.match(window,/if \(!pendingSpeech.isEmpty\(\)\) deliverQueuedSpeech\(\)/);
