@@ -67,3 +67,36 @@ test('UI never stores owner token or promises free ChatGPT Live audio',()=>{
  assert.doesNotMatch(frontend.split('\n').filter(line=>!line.trim().startsWith('//')).join('\n'),/localStorage|sessionStorage/);
  assert.match(frontend,/secret\.value=""/);
 });
+test('readiness is browser-readable only for trusted origin and rejects short owner secrets',async()=>{
+ const app=await load();
+ const health=origin=>new Request('https://bubbles-live.example/health',{headers:{Origin:origin}});
+ const good=await app.fetch(health('https://quantaphi.org'),configured);
+ assert.equal(good.headers.get('Access-Control-Allow-Origin'),'https://quantaphi.org');
+ assert.equal((await good.json()).configured,true);
+ const bad=await app.fetch(health('https://quantaphi.org'),{...configured,BUBBLES_LIVE_OWNER_TOKEN:'short'});
+ assert.equal((await bad.json()).configured,false);
+ const foreign=await app.fetch(health('https://evil.example'),configured);
+ assert.equal(foreign.headers.get('Access-Control-Allow-Origin'),null);
+});
+test('unconfigured gateway never opens microphone and cancellation cannot revive startup',async()=>{
+ const vm=require('node:vm');
+ async function scenario(cancel){
+  const nodes=new Map();
+  function node(id){if(!nodes.has(id))nodes.set(id,{value:id==='liveOwner'?'A'.repeat(40):'',handlers:{},addEventListener(k,fn){this.handlers[k]=fn},setAttribute(){},after(){}});return nodes.get(id)}
+  let captures=0,peers=0,resolveHealth;
+  const health=new Promise(resolve=>{resolveHealth=resolve});
+  const context={document:{getElementById:node,createElement:()=>node('mute')},window:{addEventListener(){}},
+   URL,AbortController,AbortSignal,setTimeout,clearTimeout,
+   fetch:()=>health,navigator:{mediaDevices:{getUserMedia(){captures++;throw Error('must not capture')}}},
+   RTCPeerConnection:class{constructor(){peers++}}};
+  vm.runInNewContext(frontend,context);
+  const pending=node('liveStart').handlers.click();
+  if(cancel)node('liveStop').handlers.click();
+  resolveHealth(new Response(JSON.stringify({ok:true,configured:cancel}),{status:200}));
+  await pending;
+  assert.equal(captures,0);assert.equal(peers,0);
+  assert.equal(node('liveStart').disabled,false);
+  if(!cancel)assert.match(node('liveStatus').textContent,/not configured/);
+ }
+ await scenario(false);await scenario(true);
+});

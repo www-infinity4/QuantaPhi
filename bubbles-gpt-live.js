@@ -72,14 +72,24 @@ function iceReady(peer){
  });
 }
 start.addEventListener("click",async()=>{
- if(pc)return;
+ if(pc||requestController)return;
  const credential=secret.value.trim();
  if(credential.length<32){show("Owner authorization must be configured on the gateway.");return;}
  const generation=++attempt;
  requestController=new AbortController();
  const signal=requestController.signal;
- start.disabled=true;stop.disabled=false;cancel.disabled=false;show("Requesting microphone permission…");
+ start.disabled=true;stop.disabled=false;cancel.disabled=false;show("Checking live voice connection…");
  try{
+   const health=await fetch(new URL('/health',gateway),{
+     signal:AbortSignal.any([signal,AbortSignal.timeout(10000)]),cache:'no-store'
+   });
+   if(generation!==attempt)return;
+   if(!health.ok)throw Error('Live voice gateway is unavailable. Microphone remains off.');
+   let availability;
+   try{availability=await health.json()}catch{throw Error('Live voice gateway returned an invalid readiness response. Microphone remains off.')}
+   if(availability.ok!==true||availability.configured!==true)
+     throw Error('Live voice is not configured on the gateway. Microphone remains off.');
+   show("Requesting microphone permission…");
    pc=new RTCPeerConnection();
    const peer=pc;
    peer.addEventListener("connectionstatechange",()=>{
@@ -111,7 +121,7 @@ start.addEventListener("click",async()=>{
    if(generation!==attempt)return;
    show("Establishing genuine GPT-Live session…");
    const response=await fetch(gateway,{
-     signal,method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+credential},
+     signal:AbortSignal.any([signal,AbortSignal.timeout(25000)]),method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+credential},
      body:JSON.stringify({sdp:pc.localDescription.sdp})
    });
    // Never store or log the secret, not even in localStorage.
