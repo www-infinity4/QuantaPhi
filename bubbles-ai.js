@@ -537,8 +537,19 @@ repositoryFilter.addEventListener('input',renderRepositoryOptions);
 async function suggestRepositoryTargets(request,preview=false){
  if(embedded||!request||request.length<6)return null;
  const seq=++repositorySuggestionSequence;
- const result=await directGithubOperation({action:'suggest_repositories',mode:'read',request});
- if(!result.ok||!result.catalogComplete||!Array.isArray(result.candidates))throw Error(result.error||'Repository suggestions unavailable');
+ let result;
+ try{
+  result=await directGithubOperation({action:'suggest_repositories',mode:'read',request});
+  if(!result.ok||!result.catalogComplete||!Array.isArray(result.candidates))throw Error(result.error||'Repository suggestions unavailable');
+ }catch(serverError){
+  // During independent Cloudflare Worker rollout, the existing GitHub inventory
+  // remains usable. Never guess repositories when the full owner catalog is absent.
+  if(!repositoryCatalogComplete)await loadRepositoryCatalog();
+  if(!repositoryCatalogComplete)throw serverError;
+  const {selectRepositories}=await import('/workers/infinity-brain-clock/repository-router.mjs?v=20261017-reporoute1');
+  result={ok:true,status:'repository_suggestions',source:'verified-GitHub-catalog-fallback',
+   catalogComplete:true,...selectRepositories(request,repositoryCatalog)};
+ }
  // A stale suggestion must never overwrite a newer typed request or a manual choice.
  if(seq!==repositorySuggestionSequence)return null;
  repositoryAdvice=result;
