@@ -316,7 +316,7 @@ final class FloatingOracleWindow {
     }
 
     boolean sendSpoken(String text) {
-        if (website == null || text == null || text.trim().isEmpty()) return false;
+        if (root == null || text == null || text.trim().isEmpty()) return false;
         if (pendingSpeech.size() >= 24) {
             status.setText("Bubbles has 24 unprocessed voice requests. Please open chat to check the connection.");
             return false;
@@ -367,7 +367,7 @@ final class FloatingOracleWindow {
     }
 
     boolean sendTyped(String text) {
-        if (website == null || text == null || text.trim().isEmpty()) return false;
+        if (root == null || text == null || text.trim().isEmpty()) return false;
         if (pendingTyped.size() >= 24) {
             status.setText("Bubbles has 24 unprocessed text requests. Please check the connection.");
             return false;
@@ -377,7 +377,7 @@ final class FloatingOracleWindow {
         return true;
     }
     boolean sendScreenEvidence(String question, String observation, boolean typed) {
-        if (website == null || question == null || question.trim().isEmpty()) return false;
+        if (root == null || question == null || question.trim().isEmpty()) return false;
         java.util.ArrayDeque<QueuedMessage> queue = typed ? pendingTyped : pendingSpeech;
         if (queue.size() >= 24) return false;
         String evidence = observation == null || observation.trim().isEmpty()
