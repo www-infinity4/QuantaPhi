@@ -20,7 +20,7 @@ test('actual voice request, not persona history, selects the web and weather too
  assert.equal(chooseTool('Hello Bubbles'),'oracle.chat');
  assert.equal(searchTerms('Search Google for ruthenium catalysts'),'ruthenium catalysts');
  assert.equal(weatherPlace('Tell me the weather today in Albia, Iowa'),'Albia, Iowa');
- assert.equal(lookupKind('Build a weather app'),'weather.current'); // explicitly named weather enters lookup on its own; owner UI dispatches builds.
+ assert.equal(lookupKind('Build a weather app'),null); // Engineering work is not a live weather lookup.
 });
 test('missing town asks once rather than inventing precise coordinates',async()=>{
  const r=await call({request:'How is the weather?'});
