@@ -169,6 +169,22 @@ function describeTickets(tickets,limit=10){
  return 'Robot Brain: '+total+' saved owner tickets ('+statuses+'). Showing '+selected.length+' most recently updated. Queued is not running; status “working” does not prove a bot is actively executing; only authenticated commits, tests and live receipts prove delivery.\n'
   +selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
 }
+// Surface only authenticated, specifically UI-related owner-input blockers.
+ // A general runner failure or an AI-authored message is NOT approval evidence.
+function ownerApprovalRequests(tickets){
+ const found=[];
+ for(const ticket of Array.isArray(tickets)?tickets:[]){
+  if(!ticket||!['blocked','ready','working'].includes(ticket.status))continue;
+  for(const job of Array.isArray(ticket.context?.color_jobs)?ticket.context.color_jobs:[]){
+   const reason=String(job?.progress?.summary||'');
+   if(job?.status!=='blocked'||!/^IW-\d{8}-[0-9A-F-]{8}$/.test(String(ticket.id||''))||
+      !/^TASK-\d+$/.test(String(job.id||''))||!/owner_input_required/i.test(reason)||
+      !/\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(reason))continue;
+   found.push({ticketId:ticket.id,jobId:job.id,title:String(ticket.title||'Owner work request').slice(0,120),reason:reason.slice(0,1500)});
+  }
+ }
+ return found.slice(0,10);
+}
 function speechText(value){
  // Spoken narration is a different representation from the visible chat.
  // Never read formatting symbols, code fences, URLs or markdown syntax aloud.
@@ -215,7 +231,7 @@ class ProgressTracker{
   this.initialized=true;return updates.slice(-5);
  }
 }
-const api={speechText,ProgressTracker,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief};
+const api={speechText,ProgressTracker,ownerApprovalRequests,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);
