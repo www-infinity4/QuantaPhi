@@ -19,7 +19,7 @@ export async function githubOperation(env,body,request=fetch){
  if(!token)return {ok:false,status:'blocked',error:'github_runtime_credential_missing',repository,
   capabilities:{read:false,push:false,actions:false},next:'Connect a server-side GitHub credential with Contents, Pull requests and Actions write access. Never paste credentials into chat.'};
  if(action==='create_repository'){
-  const options={redirect:'error',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','User-Agent':'Bubbles-Direct-GitHub','Content-Type':'application/json'},signal:AbortSignal.timeout(15000)};
+  const options={redirect:'manual',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','User-Agent':'Bubbles-Direct-GitHub','Content-Type':'application/json'},signal:AbortSignal.timeout(15000)};
   const identity=await request('https://api.github.com/user',options);
   if(!identity.ok||(await identity.json()).login?.toLowerCase()!=='www-infinity4')throw Error('github_repository_creation_owner_mismatch');
   const created=await request('https://api.github.com/user/repos',{...options,method:'POST',body:JSON.stringify({name:repository.split('/')[1],description:String(body.description||'').slice(0,350),private:body.private===true,auto_init:true})});
@@ -63,7 +63,7 @@ jobs:
  }
  const base='https://api.github.com/repos/'+repository;
  async function api(path,method='GET',data){
-  const r=await request(base+path,{method,redirect:'error',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'Bubbles-Direct-GitHub',...(data?{'Content-Type':'application/json'}:{})},body:data?JSON.stringify(data):undefined,signal:AbortSignal.timeout(15000)});
+  const r=await request(base+path,{method,redirect:'manual',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'Bubbles-Direct-GitHub',...(data?{'Content-Type':'application/json'}:{})},body:data?JSON.stringify(data):undefined,signal:AbortSignal.timeout(15000)});
   if(!r.ok)throw Error('github_http_'+r.status);
   return r.status===204?null:r.json();
  }

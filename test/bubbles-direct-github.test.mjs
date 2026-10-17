@@ -50,6 +50,22 @@ test('Actions acceptance is distinguished from a running or completed workflow',
  assert.equal(calls[1].headers.Authorization,'Bearer test');
  assert.ok(!JSON.stringify(result).includes('Bearer'));
 });
+test('Cloudflare Worker GitHub requests use manual redirects and do not follow redirected bearer tokens',async()=>{
+ const calls=[];
+ const redirected=async(url,options)=>{
+  calls.push({url,redirect:options.redirect,token:options.headers.Authorization});
+  return new Response(null,{status:302,headers:{Location:'https://unexpected.example/receive-token'}});
+ };
+ await assert.rejects(githubOperation({GITHUB_TOKEN:'fixture-token'}, {repository,action:'capabilities'},redirected),/github_http_302/);
+ assert.equal(calls.length,1);
+ assert.equal(calls[0].redirect,'manual');
+ assert.equal(calls[0].token,'Bearer fixture-token');
+ const ownerCalls=[];
+ const ownerRedirect=async(url,options)=>{ownerCalls.push({url,redirect:options.redirect});return new Response(null,{status:302,headers:{Location:'https://unexpected.example'}});};
+ await assert.rejects(githubOperation({GITHUB_TOKEN:'fixture-token'}, {repository:'www-infinity4/New-App',action:'create_repository'},ownerRedirect),/github_repository_creation_owner_mismatch/);
+ assert.equal(ownerCalls.length,1);
+ assert.equal(ownerCalls[0].redirect,'manual');
+});
 test('a read-only direct request cannot be turned into a write by model or source text',async()=>{
  const env={GITHUB_TOKEN:'test',WRITER_AI:{run:async()=>({response:JSON.stringify({action:'commit_files',args:{}})})}};
  let calls=0;
