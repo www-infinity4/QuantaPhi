@@ -42,3 +42,26 @@ test('native Android strips spoken markup only at playback, not from chat replie
   assert.match(gradle,/versionCode 34/);
   assert.match(gradle,/versionName '0\.34\.0'/);
 });
+
+test('Yellow Android capture evidence is delivered once to Red and never fabricated from baseline',()=>{
+ const {nativeCaptureNotice}=require('../bubbles-brain-actions.js');
+ const saved={screenState:'Saved to Movies/Bubbles',soundState:''};
+ assert.equal(nativeCaptureNotice(null,saved),'');
+ assert.equal(nativeCaptureNotice({screenState:'Screen capture saving',soundState:''},saved),
+   'Android reports the screen recording was saved. Check the recorder status for the phone-library result.');
+ assert.equal(nativeCaptureNotice(saved,saved),'');
+ assert.equal(nativeCaptureNotice({screenState:'',soundState:'Saving audio'},
+   {screenState:'',soundState:'Phone media save failed: permission denied'}),
+   'Android reports that sound recording failed. The recording was not verified saved. Check the recorder status in Bubbles.');
+ assert.equal(nativeCaptureNotice({screenState:'Active',soundState:''},
+   {screenState:'Recording in progress',soundState:''}),'');
+});
+
+test('native and owner evidence use the same Bubbles chat and Android TTS drain',()=>{
+ const js=fs.readFileSync('bubbles-ai.js','utf8');
+ assert.match(js,/nativeCaptureNotice\?\.\(lastNativeCaptureEvidence,capture\)/);
+ assert.match(js,/progressVoiceQueue\.push\(captureNotice\)/);
+ assert.match(js,/drainNativeReply:\(\)=>\{/);
+ assert.match(js,/const red=await syncRedSectors\(\)\.catch\(\(\)=>null\)/);
+ assert.match(js,/normalizeOwnerAssistantReply\(rawAnswer,request,ownerReady/);
+});
