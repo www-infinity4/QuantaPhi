@@ -14,9 +14,16 @@ test('One authenticated Brain inbox is in the same website/Android conversation'
  assert.match(js,/if\(!brainInboxInitialized\)/);
  assert.match(js,/Working is a label; a commit, test and deployment receipt are separate proof/);
  assert.match(css,/\.ba-brain-inbox/);
- for(const html of ['index.html','bubbles.html','bubbles/index.html']){
-  const page=fs.readFileSync(html,'utf8');
-  assert.match(page,/bubbles-ai\.js\?v=20261016-inbox32/);
-  assert.match(page,/bubbles-ai\.css\?v=20261016-inbox32/);
+ // Every entrypoint must load the same current assets; never pin a test to
+ // an obsolete cache-busting version after a legitimate source deployment.
+ const routes=['index.html','bubbles.html','bubbles/index.html'];
+ for(const asset of ['js','css']){
+  const refs=routes.map(html=>{
+   const page=fs.readFileSync(html,'utf8');
+   const hits=[...page.matchAll(new RegExp('bubbles-ai\\\\.'+asset+'\\\\?v=([A-Za-z0-9._-]+)','g'))];
+   assert.equal(hits.length,1,html+' must include exactly one versioned Bubbles '+asset+' asset');
+   return hits[0][1];
+  });
+  assert.equal(new Set(refs).size,1,'All entrypoints must use the same current Bubbles '+asset+' cache version');
  }
 });
