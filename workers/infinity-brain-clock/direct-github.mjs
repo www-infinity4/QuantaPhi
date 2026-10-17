@@ -1,4 +1,3 @@
-import {selectRepositories} from './repository-router.mjs';
 // Owner-authenticated caller only. Tokens stay in Worker secrets, never in prompts or receipts.
 const REPO=/^www-infinity4\/[A-Za-z0-9_.-]+$/;
 const SHA=/^[a-f0-9]{40}$/;
@@ -212,6 +211,7 @@ export async function directGithubAgent(env,body,request=fetch,onReceipt=async()
 export async function suggestRepositories(env,request,repositoryCatalog){
  const message=String(request||'').trim().slice(0,2500);
  if(!message)return {ok:false,error:'repository_request_required'};
+ const {selectRepositories}=await import('./repository-router.mjs');
  const base=selectRepositories(message,repositoryCatalog);
  let source='repository-name-and-project-matching',result=base;
  const candidates=base.candidates.map(entry=>({repository:entry.repository,score:entry.score}));
