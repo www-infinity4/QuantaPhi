@@ -180,6 +180,7 @@ test('verified Brain tickets share the writer owner partition instead of an anon
  const ownerHash='a'.repeat(64),otherHash='b'.repeat(64),rows=[];
  const db={prepare(sql){return{bind(...params){return{
   async first(){
+   if(sql.includes("$.request_fingerprint"))return rows.find(r=>r.owner_hash===params[0]&&r.repository===params[1]&&JSON.parse(r.context_json).request_fingerprint===params[2])||null;
    if(sql.includes("json_extract(context_json"))return rows.find(r=>r.owner_hash===params[0]&&JSON.parse(r.context_json).submission_id===params[1])||null;
    return rows.find(r=>r.id===params[0]&&r.owner_hash===params[1])||null;
   },
@@ -213,6 +214,8 @@ test('verified Brain tickets share the writer owner partition instead of an anon
  assert.equal(updated.result.ticket.context.color_jobs[0].repository,'www-infinity4/QuantaPhi');
  const deduped=await ownerTickets(env,'/work/tickets/create',{title:'duplicate',request,context});
  assert.equal(deduped.result.deduplicated,true);
+ const repeat=await ownerTickets(env,'/work/tickets/create',{request:'Repair   my existing image button',context:{kind:'robot-directions',submission_id:'new-transport-id'}});
+ assert.equal(repeat.result.ticket.id,id);assert.equal(repeat.result.deduplicated,true);
  assert.equal(rows.length,1);
  const visible=await ownerTickets(env,'/work/tickets/list',{});
  assert.equal(visible.result.tickets.length,1);
@@ -308,4 +311,54 @@ test('shared phone HTTP bridge separates owner commands from device delivery and
  assert.equal(reported.receipt.id,id);assert.equal(reported.deviceToken,undefined);
  assert.equal((await send('close',{sessionId:opened.sessionId},token)).status,200);
  assert.equal((await send('next',{generation},opened.deviceToken)).status,409);
+});
+
+test('reconciliation restores final receipts, releases stale Working, preserves active leases and CAS conflicts',async()=>{
+ const repo='www-infinity4/QuantaPhi',now=Date.now(),memory=new Map();
+ const jobs=['committed','deployed','stale','active','partial'].map(id=>({id,repository:repo,instructions:id,status:'working',progress:{attemptedAt:new Date(now-3600000).toISOString()}}));
+ const original=JSON.stringify({color_jobs:jobs});let saved;
+ for(const job of jobs){
+  const revision=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:repo})))).toString('hex');
+  memory.set('writer:ticket:'+job.id+':'+revision,job.id==='active'?{leaseUntil:now+60000}:job.id==='partial'?{leaseUntil:0,commitSha:'c'.repeat(40)}:job.id==='stale'?{leaseUntil:0}:{status:job.id==='committed'?'committed_unverified':'deployed_verified',testsPassed:true,commitSha:'a'.repeat(40)});
+ }
+ let conflict=false;
+ const db={prepare(sql){return{bind(...params){return{all:async()=>({results:[{id:'ticket',context_json:original}]}),run:async()=>{assert.equal(params[4],'owner');assert.equal(params[5],original);if(conflict)return {meta:{changes:0}};saved=JSON.parse(params[0]);return {meta:{changes:1}}}}}}}};
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WORK_DB:db,WRITER_OWNER_HASH:'owner'});
+ assert.deepEqual(await clock.reconcilePendingWork(),{recovered:2,stale:2,conflicts:0});
+ assert.deepEqual(saved.color_jobs.map(j=>j.status),['committed_unverified','complete','blocked','working','blocked']);
+ assert.equal(saved.color_jobs[2].progress.blocker,'runner_lease_expired');
+ assert.equal(saved.color_jobs[4].progress.blocker,'commit_verification_required');
+ conflict=true;assert.deepEqual(await clock.reconcilePendingWork(),{recovered:0,stale:0,conflicts:1});
+});
+
+test('claim skips a committed receipt even when D1 still says queued',async()=>{
+ const memory=new Map(),repo='www-infinity4/QuantaPhi',job={id:'TASK-1',repository:repo,instructions:'Done source',status:'queued'};
+ const revision=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:repo})))).toString('hex');
+ memory.set('writer:ticket:TASK-1:'+revision,{status:'committed_unverified',commitSha:'a'.repeat(40),leaseUntil:0,retryAt:0});
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',context_json:JSON.stringify({color_jobs:[job]})}]})})}});
+ const result=await (await clock.runner(new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})}))).json();
+ assert.equal(result.lease,null);
+});
+
+test('SQLite insertion atomically deduplicates the same fingerprint within owner and repository',async()=>{
+ const {execFileSync}=await import('node:child_process');
+ const worker=await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
+ const sql=worker.match(/const sql="(INSERT INTO work_tickets[^\n]+)";/)[1];
+ const program=`import sqlite3,json,sys
+sql=sys.argv[1]
+c=sqlite3.connect(':memory:')
+columns=sql.split('(',1)[1].split(')',1)[0]
+c.execute('CREATE TABLE work_tickets ('+columns+')')
+def insert(id,owner,repo):
+ context=json.dumps({'request_fingerprint':'fingerprint'})
+ p=[id,owner,'handoff','brain','https://example.com',repo,'title','request','',context,1,1,2,owner,repo,'fingerprint']
+ c.execute(sql,p)
+insert('first','owner','repo')
+insert('second','owner','repo')
+insert('other-owner','other','repo')
+insert('other-repo','owner','repo2')
+assert c.execute('SELECT COUNT(*) FROM work_tickets').fetchone()[0]==3
+assert c.execute('SELECT id FROM work_tickets WHERE owner_hash=? AND repository=?',('owner','repo')).fetchone()[0]=='first'
+`;
+ execFileSync('python3',['-c',program,sql],{stdio:'pipe'});
 });

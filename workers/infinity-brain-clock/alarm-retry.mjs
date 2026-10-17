@@ -13,6 +13,7 @@ export function eligibleForRetry(job,{now,prior={},lease={},retry={},deps=[]}={}
  // An authenticated branch commit or merge is not a reason to push the
  // same patch again. Pink/Moltnook verify integration and deployment separately.
  if(FINAL.has(prior?.status)||FINAL.has(job.status))return {eligible:false,reason:'awaiting_merge_or_complete'};
+ if((prior?.commitSha||job.progress?.commitSha)&&!FINAL.has(prior?.status))return {eligible:false,reason:'commit_verification_required'};
  if(lease?.leaseUntil>now)return {eligible:false,reason:'runner_lease_active'};
  if(prior?.leaseUntil>now)return {eligible:false,reason:'claimed_by_runner'};
  if(prior?.retryAt>now)return {eligible:false,reason:'runner_backoff'};

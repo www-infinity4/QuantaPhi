@@ -58,3 +58,8 @@ test('global alarm dispatch lease throttles all repos, not just one ticket',asyn
  assert.ok(retry.indexOf("get('alarm-global-next-at')")<retry.indexOf('SELECT id,context_json'));
  assert.ok(retry.indexOf("put('alarm-global-next-at'")<retry.indexOf('this.dispatchRunner()'));
 });
+
+test('unverified commit evidence pauses replay instead of writing the same patch again',()=>{
+ assert.equal(eligibleForRetry({...job('working'),progress:{commitSha:'a'.repeat(40)}},{now:t}).reason,'commit_verification_required');
+ assert.equal(eligibleForRetry(job(),{now:t,prior:{commitSha:'a'.repeat(40),status:'claimed',leaseUntil:0}}).eligible,false);
+});

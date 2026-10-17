@@ -195,7 +195,8 @@ export class BrainClock extends DurableObject{
      const previous=await this.ctx.storage.get(key);
      const repositoryLease=await this.ctx.storage.get('repository-lease:'+job.repository);
      if(repositoryLease?.leaseUntil>Date.now())continue;
-     if(previous?.adapterVersion===VERSION&&previous?.leaseUntil>Date.now()||previous?.status==='deployed_verified'||previous?.retryAt>Date.now())continue;
+     const deps=(job.dependencies||[]).map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
+     if(!eligibleForRetry(job,{now:Date.now(),prior:previous,lease:repositoryLease,deps}).eligible)continue;
      const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+(engine?40:20)*60*1000,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
      const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
      const memories=[];for(const item of quantIndex.filter(q=>q.repository===job.repository).slice(0,5)){const q=await this.ctx.storage.get(item.id);if(q)memories.push(q);}
@@ -231,6 +232,10 @@ export class BrainClock extends DurableObject{
   if(!lease||lease.runId!==runId||lease.leaseId!==body.leaseId||lease.leaseUntil<Date.now())return Response.json({ok:false,error:'writer_lease_rejected',adapter:VERSION,path},{status:409});
   const message=String(body.message||'').slice(0,390);
   if(path==='/runner/event'){
+   lease.heartbeatAt=Date.now();
+   lease.leaseUntil=lease.heartbeatAt+(lease.engine?40:20)*60*1000;
+   await this.ctx.storage.put(lease.key,lease);
+   await this.ctx.storage.put('repository-lease:'+lease.repository,lease);
    if(/^[a-f0-9]{40}$/.test(body.commitSha||'')){lease.commitSha=body.commitSha;await this.ctx.storage.put(lease.key,lease);}
    await this.emit(['gold-diggers-ink','blueberry','greenbeans','pink-panther','gpt-purple'].includes(body.agent)?body.agent:'greenbeans','gpt-purple','repair progress',lease.job.repository+' · '+message,runUrl);
    return Response.json({ok:true});
@@ -337,7 +342,40 @@ export class BrainClock extends DurableObject{
    const result={...receipt,when:Date.now()};await this.ctx.storage.put('last-owner-dispatch',result);return result;
   }catch(error){return {status:'scheduled_fallback',error:String(error.message).slice(0,150)};}
  }
+ async reconcilePendingWork(){
+  const now=Date.now(),summary={recovered:0,stale:0,conflicts:0};
+  const rows=await this.env.WORK_DB.prepare("SELECT id,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+  for(const row of rows.results||[]){
+   let context;try{context=JSON.parse(row.context_json)}catch{continue}
+   let changed=false,recovered=0,stale=0;
+   for(const job of context.color_jobs||[]){
+    if(!job?.id||!job.repository||!job.instructions||['complete','deployed_verified','merged_verified','committed_unverified'].includes(job.status))continue;
+    const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
+    const prior=await this.ctx.storage.get('writer:'+row.id+':'+job.id+':'+revision);
+    // Only trusted runner-result records can advance state; an event carrying a
+    // commit hash merely pauses replay until a runner verifies that commit.
+    if(['deployed_verified','committed_unverified'].includes(prior?.status)&&/^[a-f0-9]{40}$/.test(prior.commitSha||'')&&prior.testsPassed===true){
+     job.status=prior.status==='deployed_verified'?'complete':'committed_unverified';
+     job.progress={...job.progress,commitSha:prior.commitSha,runUrl:prior.runUrl,testsPassed:true,summary:prior.summary||'Recovered authenticated runner receipt.',blocker:prior.status==='deployed_verified'?'':'deployment_not_verified'};
+     changed=true;recovered++;continue;
+    }
+    if(job.status!=='working'||prior?.leaseUntil>now)continue;
+    const attempted=Date.parse(job.progress?.claimedAt||job.progress?.attemptedAt||'');
+    if(!prior&&Number.isFinite(attempted)&&attempted>now-40*60*1000)continue;
+    job.status='blocked';
+    job.progress={...job.progress,summary:'Runner stopped reporting before a final receipt.',blocker:prior?.commitSha||job.progress?.commitSha?'commit_verification_required':job.progress?.blocker||'runner_lease_expired',next:prior?.commitSha||job.progress?.commitSha?'Verify the existing commit before any further write.':'Eligible for bounded retry after backoff.',recoveredAt:new Date(now).toISOString()};
+    changed=true;stale++;
+   }
+   if(!changed)continue;
+   const result=await this.env.WORK_DB.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?').bind(JSON.stringify(context),ticketStatusFromJobs(context.color_jobs),now,row.id,this.env.WRITER_OWNER_HASH,row.context_json).run();
+   if(result?.meta?.changes===0)summary.conflicts++;
+   else{summary.recovered+=recovered;summary.stale+=stale;}
+  }
+  await this.ctx.storage.put('queue-reconciliation',{...summary,when:now});
+  return summary;
+ }
  async retryPendingWork(){
+  await this.reconcilePendingWork();
   // A Durable Object alarm can wake the repository dispatch without the Android
   // process running. The GitHub runner still owns authenticated code writes.
   const now=Date.now();
@@ -788,16 +826,33 @@ export async function ownerTickets(env,path,body){
   const submission=String(context.submission_id||'').slice(0,100);
   if(!request||context.kind!=='robot-directions')return denied('robot_directions_required');
   if(submission){
-   const old=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND json_extract(context_json,'$.submission_id')=? LIMIT 1").bind(ownerHash,submission).first();
+   const old=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND json_extract(context_json,'$.submission_id')=? AND repository=? LIMIT 1").bind(ownerHash,submission,repository).first();
    if(old)return {status:200,result:{ok:true,ticket:publicTicket(old),deduplicated:true}};
   }
+  const fingerprintContext={...context};delete fingerprintContext.submission_id;delete fingerprintContext.request_fingerprint;
+  const stable=value=>Array.isArray(value)?value.map(stable):value&&typeof value==='object'?Object.fromEntries(Object.keys(value).sort().map(key=>[key,stable(value[key])])):value;
+  const fingerprint=await digest(JSON.stringify({repository,request:request.replace(/\s+/g,' '),context:stable(fingerprintContext)}));
+  context.request_fingerprint=fingerprint;
+  // Older tickets predate fingerprints. Compare exact request text and every
+  // supplied scope field, ignoring generated job/progress fields absent from
+  // this submission. Similar wording alone never merges distinct requests.
+  const legacy=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND repository=? AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at DESC LIMIT 200").bind(ownerHash,repository).all();
+  for(const row of legacy.results||[]){
+   if(String(row.request||'').trim().replace(/\s+/g,' ')!==request.replace(/\s+/g,' '))continue;
+   let saved;try{saved=JSON.parse(row.context_json)}catch{continue}
+   if(Object.keys(fingerprintContext).every(key=>JSON.stringify(stable(saved[key]))===JSON.stringify(stable(fingerprintContext[key]))))
+    return {status:200,result:{ok:true,ticket:publicTicket(row),deduplicated:true,reason:'same_request_and_scope'}};
+  }
+
+  const existing=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND repository=? AND json_extract(context_json,'$.request_fingerprint')=? LIMIT 1").bind(ownerHash,repository,fingerprint).first();
+  if(existing)return {status:200,result:{ok:true,ticket:publicTicket(existing),deduplicated:true,reason:'same_request_and_scope'}};
   const id='IW-'+new Date().toISOString().slice(0,10).replaceAll('-','')+'-'+crypto.randomUUID().slice(0,8).toUpperCase();
   const now=Date.now(),handoffHash=await digest(crypto.randomUUID()+crypto.randomUUID());
-  const sql="INSERT INTO work_tickets (id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,status,claimed_by,created_at,updated_at,completed_at,handoff_expires_at,result_summary,result_url) VALUES (?,?,?,?,?,?,?,?,?,?,'draft','',?,?,NULL,?,'','')";
+  const sql="INSERT INTO work_tickets (id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,status,claimed_by,created_at,updated_at,completed_at,handoff_expires_at,result_summary,result_url) SELECT ?,?,?,?,?,?,?,?,?,?,'draft','',?,?,NULL,?,'','' WHERE NOT EXISTS (SELECT 1 FROM work_tickets WHERE owner_hash=? AND repository=? AND json_extract(context_json,'$.request_fingerprint')=?)";
   await db.prepare(sql).bind(id,ownerHash,handoffHash,'QuantaPhi Robot Brain','https://quantaphi.org/',repository,
-   title||request.slice(0,120),request,'',JSON.stringify(context),now,now,now+30*86400000).run();
-  const row=await db.prepare('SELECT * FROM work_tickets WHERE id=? AND owner_hash=?').bind(id,ownerHash).first();
-  return {status:200,result:{ok:true,ticket:publicTicket(row)}};
+   title||request.slice(0,120),request,'',JSON.stringify(context),now,now,now+30*86400000,ownerHash,repository,fingerprint).run();
+  const row=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND repository=? AND json_extract(context_json,'$.request_fingerprint')=? LIMIT 1").bind(ownerHash,repository,fingerprint).first();
+  return {status:200,result:{ok:true,ticket:publicTicket(row),deduplicated:row.id!==id}};
  }
  if(path==='/work/tickets/update'){
   const id=String(body.id||'').trim().slice(0,80);
@@ -814,6 +869,9 @@ export async function ownerTickets(env,path,body){
   const repository=row.repository||jobs[0].repository;
   if(jobs.some(job=>job.repository!==repository))return denied('ticket_repository_mismatch');
   context.repositories=[repository];
+  const originalContext=JSON.parse(row.context_json||'{}');
+  if(originalContext.request_fingerprint)context.request_fingerprint=originalContext.request_fingerprint;
+  else delete context.request_fingerprint;
   const serialized=JSON.stringify(context);
   if(serialized.length>50000)return denied('ticket_context_too_large',413);
   const now=Date.now(),status=body.status==='ready'?'ready':'draft';
