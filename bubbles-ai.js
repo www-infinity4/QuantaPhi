@@ -370,7 +370,12 @@ const launcher=create('button','ba-launcher','');launcher.type='button';launcher
 launcher.append(create('span','ba-orb-shine'),create('span','ba-orb-center'));launcher.dataset.state='idle';
 const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('aria-label','Bubbles AI messenger');
 const header=create('header','ba-header');const name=create('strong','',config.alias||'Bubbles');const close=create('button','ba-close','×');close.type='button';close.setAttribute('aria-label','Close Bubbles');
-header.append(name,close);
+const runAllButton=create('button','ba-run-all','Run All Eligible');
+runAllButton.type='button';
+runAllButton.hidden=true;
+runAllButton.disabled=true;
+runAllButton.setAttribute('aria-label','Approve and request all eligible Robot Brain jobs');
+header.append(name,runAllButton,close);
 const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then speak naturally.');
 const ownerMode=create('small','ba-owner-status',embedded?'Independent visitor assistant':'Owner tools: checking Unified Wallet…');
 ownerMode.hidden=embedded;
@@ -1666,6 +1671,45 @@ function showOwnerApprovalRequests(tickets){
  }
 }
 
+
+// Batch approval has a single owner control shared by Android and the website.
+// The server validates every job again; no model-authored text can grant permission.
+let lastBulkPreview=null,bulkRunBusy=false;
+function refreshBulkOwnerRun(tickets){
+ if(!runAllButton||embedded||!ownerReady||!brainTools?.bulkRunPreview)return;
+ lastBulkPreview=brainTools.bulkRunPreview(tickets);
+ runAllButton.hidden=false;
+ runAllButton.textContent='Run All ('+lastBulkPreview.total+')';
+ runAllButton.title=lastBulkPreview.ready+' queued and '+lastBulkPreview.ui+' ordinary UI owner choices eligible. '+lastBulkPreview.blocked+' blocked require repair or review; '+lastBulkPreview.working+' marked working remain unchanged.';
+ runAllButton.disabled=bulkRunBusy||lastBulkPreview.total===0;
+}
+runAllButton.addEventListener('click',async()=>{
+ if(embedded||!ownerReady||bulkRunBusy||!lastBulkPreview?.total)return;
+ bulkRunBusy=true;runAllButton.disabled=true;runAllButton.textContent='Requesting jobs…';
+ try{
+  const headers=await verifiedOwnerHeaders();
+  const response=await bubblesFetch(BRAIN+'/work/tickets/approve-all',{
+   method:'POST',headers:{...headers,'Content-Type':'application/json'},
+   body:'{}',cache:'no-store'},30000);
+  const outcome=await response.json().catch(()=>({}));
+  if(!response.ok||!outcome.ok||!outcome.batch)throw Error(String(outcome.error||'Bulk approval unavailable'));
+  const counts=outcome.summary||{};
+  const approved=Number(counts.uiApproved)||0,ready=Number(counts.alreadyRunnable)||0;
+  const dispatch=outcome.execution?.status||'not_requested';
+  let execution='Runner requested; awaiting authenticated claim and code receipts.';
+  if(dispatch==='scheduled_fallback'||dispatch==='runner_dispatch_failed')execution='Runner could not start; approved jobs remain saved for retry.';
+  else if(dispatch==='not_requested'||outcome.execution?.ok===false)
+   execution='Runner has not confirmed starting; jobs remain eligible and saved.';
+  const receipt='Bulk owner action recorded: '+approved+' UI decisions approved, '+ready+' existing jobs eligible. '+(Number(counts.stillBlocked)||0)+' still blocked for technical or sensitive decisions. '+(Number(counts.alreadyWorking)||0)+' already marked working, unchanged. '+execution+' No code, tests or deployment claimed.';
+  display(receipt,'ai');status.textContent='Bulk approval receipt received; checking next runner status.';
+  messages.push({role:'assistant',text:receipt});messages=messages.slice(-400);persistChat();
+  void pollBrainProgress();
+ }catch(error){
+  const failure='Run All did not finish: '+String(error.message||error).slice(0,180)+'. No new execution can be assumed.';
+  status.textContent=failure;display(failure,'ai');
+ }finally{bulkRunBusy=false;runAllButton.disabled=!lastBulkPreview?.total;runAllButton.textContent='Run All ('+(lastBulkPreview?.total||0)+')';}
+});
+
 const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker():null;
 let progressPolling=false,progressUnavailable=false;
 async function pollBrainProgress(){
@@ -1683,6 +1727,7 @@ async function pollBrainProgress(){
    recordBrainNotice('Robot Brain connected. '+result.tickets.length+' saved tickets: '+(counts.working||0)+' marked working, '+(counts.blocked||0)+' blocked, '+(counts.complete||0)+' complete. Working is a label; a commit, test and deployment receipt are separate proof.');
   }
   showOwnerApprovalRequests(result.tickets);
+  if(typeof refreshBulkOwnerRun==='function')refreshBulkOwnerRun(result.tickets);
   const updates=progressTracker.update(result.tickets);
   if(progressUnavailable)updates.unshift('Robot Brain is reachable again. I am checking progress here.');
   progressUnavailable=false;
