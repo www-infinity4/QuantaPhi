@@ -20,3 +20,16 @@ test('Android debug build uses separate, installable package to avoid old signat
  assert.match(gradle,/signingConfig signingConfigs\.preview/);
  assert.match(workflow,/app\/build\/outputs\/apk\/debug\/app-debug\.apk/);
 });
+
+test('published APK keeps immutable versioned filename plus rolling alias',()=>{
+ const workflow=fs.readFileSync('.github/workflows/bubbles-android.yml','utf8');
+ const gradle=fs.readFileSync('android/bubbles-overlay/app/build.gradle','utf8');
+ const version=gradle.match(/versionName '([^']+)'/)?.[1];
+ assert.ok(version);
+ assert.match(workflow,/VERSIONED="Bubbles-v\$\{VERSION\}-Preview5-Android12\.apk"/);
+ assert.match(workflow,/gh release upload bubbles-preview-current "dist\/\$VERSIONED/);
+ assert.match(workflow,/cp "dist\/\$VERSIONED" dist\/Bubbles-Preview5-Android12\.apk/);
+ assert.match(workflow,/sha256sum "\$VERSIONED" > "\$VERSIONED\.sha256"/);
+ assert.match(workflow,/Bubbles-Preview5-Android12\.apk\.sha256/);
+ assert.equal(version,'0.34.0');
+});
