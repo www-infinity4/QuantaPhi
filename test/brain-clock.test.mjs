@@ -6,6 +6,7 @@ const credentialUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile
 const mergeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/merge-receipt.mjs',import.meta.url))).toString('base64');
 const directGithubUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/direct-github.mjs',import.meta.url))).toString('base64');
 const queueUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/queue-order.mjs',import.meta.url))).toString('base64');
+const recoveryUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/deferred-recovery.mjs',import.meta.url))).toString('base64');
 const selectorUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/ticket-selector.mjs',import.meta.url))).toString('base64');
 const ticketStatusUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/ticket-status.mjs',import.meta.url))).toString('base64');
 const authUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-auth.mjs',import.meta.url))).toString('base64');
@@ -23,7 +24,7 @@ const redUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new UR
 const alarmUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/alarm-retry.mjs',import.meta.url))).toString('base64');
 const runnerRequestSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-request.mjs',import.meta.url),'utf8')).replace('./alarm-retry.mjs',alarmUrl);
 const runnerRequestUrl='data:text/javascript;base64,'+Buffer.from(runnerRequestSource).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./technical-handoff.mjs",handoffUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./technical-handoff.mjs",handoffUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
 const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
@@ -410,4 +411,79 @@ test('real BrainClock honors explicit owner selection for aged but eligible work
  const result=await response.json();assert.equal(result.lease.ticketId,stale.id);
  assert.equal(result.lease.jobId,'TASK-9');assert.ok(deleted.includes('requested-next-job'));
  assert.equal(memory.get('writer-queue-selector').deferred.length,0);
+});
+
+
+test('BrainClock automatically rescues a blocked Quant AI ticket using pinned technical source evidence',async()=>{
+ const oldFetch=globalThis.fetch,now=Date.now(),sha='a'.repeat(40),walletHash='f'.repeat(64);
+ const task={id:'TASK-4',status:'blocked',queue_priority:95,repository:'www-infinity4/QuantaPhi',
+  instructions:'Inspect cinema-reel-core.js and production/quant-ai-commercial.json for the 44-scene export workflow.',
+  dependencies:[],acceptance:['Keep 44 ordered cues and use the real API'],
+  progress:{summary:'Reader blocker: owner_input_required: Owner must specify exact exported functions, concrete UI files and full JSON schema from production/quant-ai-commercial.json.'}};
+ const context={kind:'robot-directions',color_jobs:[task],owner_approval_receipts:[]};
+ let row={id:'IW-20261013-C86DFEA8',status:'blocked',created_at:now-4*86400000,
+  request:'Quant AI production crew',context_json:JSON.stringify(context)};
+ const manifest={schema:'quant-ai-commercial/v2',cue_schema_path:'production/quant-ai-commercial.schema.json'};
+ const assets={
+  'cinema-reel-core.js':'root.PhiCinemaTimeline=Object.freeze({seconds,captions,matches,clip,finalizeWebM});',
+  'production/quant-ai-commercial.json':JSON.stringify(manifest),
+  'production/quant-ai-commercial.schema.json':JSON.stringify({properties:{scenes:{minItems:44,maxItems:44}}})
+ };
+ const storage=new Map();const readFiles=[];
+ globalThis.fetch=async(url,options={})=>{
+  const u=String(url);
+  assert.equal(options.redirect,'error');
+  if(u.endsWith('/commits/main'))return Response.json({sha});
+  const prefix='https://raw.githubusercontent.com/www-infinity4/QuantaPhi/'+sha+'/';
+  assert.ok(u.startsWith(prefix),u);
+  const path=u.slice(prefix.length);readFiles.push(path);
+  return Object.hasOwn(assets,path)?new Response(assets[path]):Response.json({error:'missing'},{status:404});
+ };
+ const db={prepare(sql){return{bind(...args){this.args=args;return this},
+  all:async()=>({results:[{...row}]}),
+  first:async()=>({...row}),
+  async run(){
+   assert.match(sql,/owner_hash=\? AND context_json=\?/);
+   assert.equal(this.args[4],walletHash);
+   assert.equal(this.args[5],row.context_json);
+   row={...row,context_json:this.args[0],status:this.args[1],updated_at:this.args[2]};
+   return {meta:{changes:1}};
+  }
+ }}};
+ const clock=new BrainClock({storage:{get:async k=>storage.get(k),put:async(k,v)=>storage.set(k,v),
+  delete:async k=>storage.delete(k)}},{WORK_DB:db,WRITER_OWNER_HASH:walletHash});
+ try{
+  const receipt=await clock.recoverDeferredWork();
+  assert.equal(receipt.state,'requeued_for_verified_source_build');
+  assert.equal(receipt.ticketId,row.id);
+  assert.deepEqual([...readFiles].sort(),Object.keys(assets).sort());
+  const next=JSON.parse(row.context_json);
+  assert.equal(next.color_jobs[0].status,'queued');
+  assert.equal(next.color_jobs[0].queue_priority,0);
+  assert.equal(next.color_jobs[0].acceptance[0],task.acceptance[0]);
+  assert.equal(next.owner_approval_receipts.length,0);
+  assert.equal(next.color_jobs[0].progress.deferredRecovery.requeueCount,1);
+  assert.match(next.color_jobs[0].instructions,/Read-only GitHub commit/);
+  assert.match(next.color_jobs[0].progress.deferredRecovery.originalBlocker,/owner_input_required/);
+  assert.ok(storage.get('deferred-recovery-status').verifiedPaths.length===3);
+  const second=await clock.recoverDeferredWork();
+  assert.equal(second.state,'recovery_cooldown');
+  assert.equal(next.color_jobs[0].status,'queued');
+ }finally{globalThis.fetch=oldFetch;}
+});
+test('BrainClock deferred recovery never overrides real owner/security refusal',async()=>{
+ const now=Date.now(),summary='security_hold: owner_authorization_required for password or wallet permission';
+ const ticket={id:'OWNER',status:'blocked',created_at:now-4*86400000,
+  context_json:JSON.stringify({kind:'robot-directions',color_jobs:[
+   {id:'TASK-1',status:'blocked',repository:'www-infinity4/QuantaPhi',
+    instructions:'Review cinema-reel-core.js and production/quant-ai-commercial.json',progress:{summary}}]})};
+ let writes=0,reads=0;const storage=new Map();
+ const db={prepare:()=>({bind(){return this},all:async()=>({results:[ticket]}),
+   run:async()=>{writes++;throw Error('forbidden write')},
+   first:async()=>{reads++;throw Error('forbidden owner read')}})};
+ const clock=new BrainClock({storage:{get:async k=>storage.get(k),put:async(k,v)=>storage.set(k,v)}},
+  {WORK_DB:db,WRITER_OWNER_HASH:'f'.repeat(64)});
+ const result=await clock.recoverDeferredWork();
+ assert.equal(result.state,'no_due_deferred_technical_work');
+ assert.equal(writes,0);assert.equal(reads,0);
 });
