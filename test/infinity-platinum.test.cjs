@@ -74,3 +74,21 @@ test('Platinum is linked in QuantaPhi, and route serves current repo path',async
  assert.equal(page.status,200);
  assert.ok(urls.some(u=>u.includes('platinum/index.html')));
 });
+
+test('Platinum APK is quarantined while Bubbles route remains available',async()=>{
+ const html=source('index.html');
+ assert.doesNotMatch(html,/href="\/downloads\/site\.apk"/);
+ assert.match(html,/APK withdrawn pending security review/);
+ const worker=source('workers/quantaphi-site/worker.js');
+ const context={URL,Request,Response,Headers,AbortController,setTimeout,clearTimeout,
+  fetch:async()=>new Response('{}',{status:200,headers:{'Content-Type':'application/json'}})};
+ const standalone=worker.replace(/^import \{videoAPI\} from '.\/video-api\.mjs';\s*/,'').replace('export default','globalThis.worker=');
+ vm.runInNewContext(standalone,context);
+ const blocked=await context.worker.fetch(new Request('https://quantaphi.org/downloads/site.apk'),{});
+ assert.equal(blocked.status,410);
+ assert.match(await blocked.text(),/withdrawn/);
+ const meta=await context.worker.fetch(new Request('https://quantaphi.org/api/apk-releases'),{});
+ const releases=await meta.json();
+ assert.equal(releases.site.available,false);
+ assert.equal(releases.site.error,'security_hold');
+});
