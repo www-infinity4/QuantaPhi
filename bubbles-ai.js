@@ -1483,6 +1483,42 @@ async function connectOwner(){
  else void checkSharedVoiceStatus();
  workStatus.textContent='Robot Brain connected. Say “Bubbles, fix the video generator” or “Report the top ten bot jobs.”';
 }
+// Two Red macro sectors share an authenticated, purpose-scoped channel.
+// Red-Bubbles observes, acknowledges and delegates approved actions; Red-Brain
+// records dispatch and signed runner receipts. Neither channel grants itself
+// new repository, wallet, phone or Android privileges.
+const redClientId='bubbles-'+(nativeOverlay?'android':'website')+'-'+crypto.randomUUID().replaceAll('-','');
+let redAckRevision=0,redInitialized=false,redLinkFailed=false;
+async function syncRedSectors(){
+ const headers=await verifiedOwnerHeaders();
+ const response=await bubblesFetch(BRAIN+'/owner/red/sync',{method:'POST',
+  headers:{...headers,'Content-Type':'application/json'},
+  body:JSON.stringify({protocol:1,sector:'red-bubbles',clientId:redClientId,ackRevision:redAckRevision})},9000);
+ const state=await response.json().catch(()=>({}));
+ if(!response.ok||!state.ok||state.redBrain?.sector!=='red-brain')throw Error(String(state.error||'red_brain_unreachable'));
+ const event=state.redBrain.event;
+ if(event&&event.revision>redAckRevision){
+  const reason=String(event.reason||'').slice(0,150);
+  let notice='';
+  if(redInitialized){
+   if(event.kind==='runner_dispatch'&&event.state==='awaiting_repository_runner')
+    notice='Red-Brain received the job request, but the repository runner did not start: '+reason+'. The ticket remains queued.';
+   else if(event.kind==='runner_dispatch'&&event.state==='runner_dispatch_failed')
+    notice='Red-Brain could not dispatch the repository runner: '+reason;
+   else if(event.kind==='runner_receipt'&&event.state==='blocked')
+    notice='Red-Brain received a runner failure receipt: '+reason;
+   else if(event.kind==='runner_receipt'&&event.state==='committed_unverified'&&event.commitSha&&event.testsPassed)
+    notice='Red-Brain received a tested code commit. Merge and live deployment are still unverified.';
+   else if(event.kind==='runner_receipt'&&event.state==='deployed_verified'&&event.commitSha&&event.testsPassed)
+    notice='Red-Brain received a runner deployment verification receipt. Checking merged work state.';
+  }
+  redAckRevision=event.revision;
+  if(notice)announceBrainProgress(notice);
+ }
+ if(redLinkFailed){redLinkFailed=false;recordBrainNotice('Red-Bubbles and Red-Brain synchronization restored.');}
+ redInitialized=true;
+ return state;
+}
 const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker():null;
 let progressPolling=false,progressUnavailable=false;
 async function pollBrainProgress(){
