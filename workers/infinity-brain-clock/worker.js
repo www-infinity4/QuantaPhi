@@ -664,11 +664,11 @@ export async function ownerTickets(env,path,body){
    const jobs=context.color_jobs;
    const done=new Set(jobs.filter(j=>['complete','deployed_verified'].includes(j?.status)).map(j=>j.id));
    const receipts=Array.isArray(context.owner_approval_receipts)?context.owner_approval_receipts:[];
-   let changed=false;
+   let changed=false,approvedInTicket=0;
    for(const job of jobs){
     if(!job?.id||!/^TASK-\d+$/.test(job.id)||!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(job.repository||''))continue;
     if(['queued','ready'].includes(job.status)){
-     if((job.dependencies||[]).every(id=>done.has(id))){
+     if((Array.isArray(job.dependencies)?job.dependencies:[]).every(id=>done.has(id))){
       summary.alreadyRunnable++;
       if(!runnerTarget)runnerTarget={ticketId:row.id,jobId:job.id};
      }
@@ -687,14 +687,14 @@ export async function ownerTickets(env,path,body){
     job.instructions+=addition;job.status='queued';
     job.progress={ownerApprovedAt:when,summary:'Owner bulk UI approval recorded. Waiting for authenticated runner.'};
     receipts.push({jobId:job.id,at:when,decision:genericDecision,previousBlocker:reason.slice(0,900),source:'bulk-owner-click'});
-    summary.uiApproved++;changed=true;
-    if((job.dependencies||[]).every(id=>done.has(id))&&!runnerTarget)runnerTarget={ticketId:row.id,jobId:job.id};
+    summary.uiApproved++;approvedInTicket++;changed=true;
+    if((Array.isArray(job.dependencies)?job.dependencies:[]).every(id=>done.has(id))&&!runnerTarget)runnerTarget={ticketId:row.id,jobId:job.id};
    }
    if(changed){
     context.owner_approval_receipts=receipts.slice(-24);
     const updated=JSON.stringify(context);
     if(updated.length>50000){summary.errors++;continue}
-    pending.push({row,updated,status:ticketStatusFromJobs(jobs)});
+    pending.push({row,updated,status:ticketStatusFromJobs(jobs),approvedInTicket});
    }
   }
   // Each CAS update is tied to the original authenticated owner partition.
@@ -706,6 +706,8 @@ export async function ownerTickets(env,path,body){
    }catch{return false}
   }));
   summary.changedTickets=results.filter(Boolean).length;
+  const failedApprovalCount=pending.reduce((count,p,i)=>count+(results[i]?0:p.approvedInTicket),0);
+  summary.uiApproved-=failedApprovalCount;
   summary.errors+=results.filter(x=>!x).length;
   // A race must not dispatch a newly approved job until its CAS was recorded.
   if(runnerTarget&&pending.some((p,i)=>p.row.id===runnerTarget.ticketId&&!results[i]))
