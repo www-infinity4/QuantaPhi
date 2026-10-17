@@ -169,6 +169,23 @@ function describeTickets(tickets,limit=10){
  return 'Robot Brain: '+total+' saved owner tickets ('+statuses+'). Showing '+selected.length+' most recently updated. Queued is not running; status “working” does not prove a bot is actively executing; only authenticated commits, tests and live receipts prove delivery.\n'
   +selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
 }
+// Surface only authenticated, specifically UI-related owner-input blockers.
+ // A general runner failure or an AI-authored message is NOT approval evidence.
+function ownerApprovalRequests(tickets){
+ const found=[];
+ for(const ticket of Array.isArray(tickets)?tickets:[]){
+  if(!ticket||!['blocked','ready','working'].includes(ticket.status))continue;
+  for(const job of Array.isArray(ticket.context?.color_jobs)?ticket.context.color_jobs:[]){
+   const reason=String(job?.progress?.summary||'');
+   if(job?.status!=='blocked'||!/^IW-\d{8}-[0-9A-F-]{8}$/.test(String(ticket.id||''))||
+      !/^TASK-\d+$/.test(String(job.id||''))||!/owner_input_required/i.test(reason)||
+      !/\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(reason)||
+      /\b(?:password|credential|secret|wallet|payment|security permission|authorization bypass)\b/i.test(reason))continue;
+   found.push({ticketId:ticket.id,jobId:job.id,title:String(ticket.title||'Owner work request').slice(0,120),reason:reason.slice(0,1500)});
+  }
+ }
+ return found.slice(0,10);
+}
 function speechText(value){
  // Spoken narration is a different representation from the visible chat.
  // Never read formatting symbols, code fences, URLs or markdown syntax aloud.
@@ -196,7 +213,14 @@ function progressState(ticket){
  else if(merged.length)text=label+': '+merged.length+' job'+(merged.length===1?' has':'s have')+' merged after checks passed. Deployment is still separate.';
  else if(committed.length)text=label+': the code is committed and awaiting merge verification.';
  else if(working.length)text=label+': the runner is working on it.';
- else if(blocked.length)text=label+': work is blocked. '+speechText(blocked[0].progress?.summary||'The runner has not reported a reason yet.').slice(0,220);
+ else if(blocked.length){
+  const reason=String(blocked[0].progress?.summary||'The runner has not reported a reason yet.');
+  if(/owner_input_required/i.test(reason)&&/\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(reason))
+   text=label+': an owner UI design choice is waiting. You can approve it directly in this chat.';
+  else if(/Invalid redirect value/i.test(reason))
+   text=label+': the repository runner has a network configuration error. The bots need to repair this; owner approval is not required.';
+  else text=label+': work is blocked. '+speechText(reason).slice(0,190);
+ }
  else if(['ready','working'].includes(ticket.status))text=label+': it is queued for the runner.';
  return {signature,text};
 }
@@ -215,7 +239,7 @@ class ProgressTracker{
   this.initialized=true;return updates.slice(-5);
  }
 }
-const api={speechText,ProgressTracker,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief};
+const api={speechText,ProgressTracker,ownerApprovalRequests,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);
