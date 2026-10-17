@@ -351,6 +351,11 @@ export default {
   const repoPath = '/' + route.repo + route.sourcePath;
   // Versioned repair assets read the exact published commit, avoiding stale main responses.
   const repairRef = ['20261009-billboard-grid5','20261009-eight-subjects5'].includes(incoming.searchParams.get('v'));
+  const url = new URL(request.url);
+  if (url.pathname.startsWith('/quant-ai/')) {
+    const { handle } = await import('./quant-ai-routing.js');
+    return handle(request);
+  }
   const newQuantaRelease = route.repo === 'QuantaPhi' && (route.sourcePath === '/index.html' || ['20261009-bright-star6','20261009-octaves-routing6'].includes(incoming.searchParams.get('v')));
   const newOctavesRelease = route.repo === 'Oracle-Octaves' && (route.sourcePath === '/index.html' || ['20261009-origin-timing2','20261009-resilient2'].includes(incoming.searchParams.get('v')));
   const sourceRef = route.repo === 'QuantaPhi' && ['/index.html','/apk-downloads.js'].includes(route.sourcePath) ? '6643d2727f5be56dd0f1b217f532099899833bca' : route.repo === 'QuantaPhi' && ['/bubbles-ai.js','/bubbles.html','/bubbles/index.html'].includes(route.sourcePath) ? 'main' : route.repo === 'Control-Phi' ? '08563cfd39d0ee692ba6b3c73b92da29736ddd23' : route.repo === 'Bitcoin-Crusher' ? 'a2899745962de6ef43be78e63f441fe8361e9b1f' : route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/') ? '5e53cc37bd36f40ee500bb7f21cbc836224e3b05' : newQuantaRelease ? 'main' : newOctavesRelease ? '60c9436507cc34cb674a7b9a766c335a399b8dec' : repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
