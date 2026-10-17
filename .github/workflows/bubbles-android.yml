@@ -62,6 +62,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify phone playback isolation and native recorder clip contracts
+        run: |
+          node --test test/bubbles-source-recording.test.cjs
+          mkdir -p /tmp/bubbles-source
+          javac -d /tmp/bubbles-source android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SpeechSourceGate.java android/bubbles-overlay/checks/SpeechSourceGateCheck.java
+          java -cp /tmp/bubbles-source org.quantaphi.bubbles.SpeechSourceGateCheck
       - name: Verify speech narration removes raw punctuation
         run: |
           node --test test/bubbles-tts-cleanup.test.cjs

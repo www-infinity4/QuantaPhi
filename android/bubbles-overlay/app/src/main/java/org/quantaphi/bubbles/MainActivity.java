@@ -283,6 +283,63 @@ public final class MainActivity extends Activity {
             startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
         });
         advancedCapture.addView(stopScreen);
+        // Trim Bubbles' own MP4 rather than redirecting to an OEM screen recorder.
+        EditText clipStart = new EditText(this);
+        clipStart.setHint("Clip starts at second (0)");
+        clipStart.setSingleLine(true);
+        clipStart.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+        clipStart.setText("0");
+        advancedCapture.addView(clipStart);
+        EditText clipEnd = new EditText(this);
+        clipEnd.setHint("Clip ends at second (20)");
+        clipEnd.setSingleLine(true);
+        clipEnd.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+        clipEnd.setText("20");
+        advancedCapture.addView(clipEnd);
+        Button trimClip = new Button(this);
+        trimClip.setText("Make clip from last screen video");
+        trimClip.setOnClickListener(v -> {
+            final int from, until;
+            try {
+                from = Integer.parseInt(clipStart.getText().toString().trim());
+                until = Integer.parseInt(clipEnd.getText().toString().trim());
+                if (from < 0 || until <= from || until - from > 300)
+                    throw new IllegalArgumentException("Invalid clip range");
+            } catch (Exception error) {
+                state.setText("Enter clip start/end seconds, up to five minutes.");
+                return;
+            }
+            final String path = BrainNotes.prefs(this).getString("capture_path", "");
+            if (!"video/mp4".equals(BrainNotes.prefs(this).getString("capture_type", "")) || path.isEmpty()) {
+                state.setText("First use Record screen video, then Stop screen capture to save an MP4.");
+                return;
+            }
+            trimClip.setEnabled(false);
+            state.setText("Making a separate clip; original screen video remains unchanged.");
+            mediaWork.execute(() -> {
+                try {
+                    java.io.File directory = new java.io.File(getFilesDir(), "captures");
+                    java.io.File source = new java.io.File(path);
+                    String prefix = directory.getCanonicalPath() + java.io.File.separator;
+                    if (!source.getCanonicalPath().startsWith(prefix))
+                        throw new java.io.IOException("Recording is outside Bubbles private capture storage");
+                    java.io.File clip = new java.io.File(directory, "bubbles-clip-" + System.currentTimeMillis() + ".mp4");
+                    CaptureClipEditor.trim(source, clip, from, until);
+                    android.net.Uri result = CapturePublisher.publish(this, clip, "video/mp4");
+                    BrainNotes.prefs(this).edit().putString("clip_uri", result.toString()).apply();
+                    ui.post(() -> {
+                        state.setText("Screen-and-sound clip saved to Movies/Bubbles. Original recording is preserved.");
+                        trimClip.setEnabled(true);
+                    });
+                } catch (Exception error) {
+                    ui.post(() -> {
+                        state.setText("Clip not saved: " + error.getMessage());
+                        trimClip.setEnabled(true);
+                    });
+                }
+            });
+        });
+        advancedCapture.addView(trimClip);
         Button camera = new Button(this);
         camera.setText("Record camera video and sound");
         camera.setOnClickListener(v -> handleVoiceCapture("camera_video", 0, 0));
