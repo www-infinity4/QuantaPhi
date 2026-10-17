@@ -209,7 +209,10 @@ export default {async fetch(request,env){
   const data=await result.clone().json();
   if(data.model||data.receipt?.tool?.startsWith('resonance.'))return result;
   return await gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
- }catch{return response(request,{ok:false,error:'assistant_request_failed'},502);}
+ }catch(error){
+  const invalid=error instanceof SyntaxError;
+  return response(request,{ok:false,error:invalid?'invalid_request_json':'assistant_request_failed',output:invalid?'Bubbles could not read your message. Please resend it.':'Bubbles could not complete the AI reply. Your request was not completed; please try again.',receipt:{status:'failed'}},invalid?400:502);
+ }
 }};
 
 
