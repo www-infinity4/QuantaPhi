@@ -8,6 +8,7 @@ import {githubOperation,directGithubAgent,validateRepository,suggestRepositories
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
+import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
 import {ticketStatusFromJobs} from './ticket-status.mjs';
 import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
 import { evidenceBucket } from './evidence-db.mjs';
@@ -183,11 +184,19 @@ export class BrainClock extends DurableObject{
    return Response.json({ok:true,status:preview.status});
   }
   if(path==='/runner/claim'){
-   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at DESC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
    const requested=await this.ctx.storage.get('requested-next-job');
-   const candidates=(rows.results||[]).flatMap(ticket=>{const context=JSON.parse(ticket.context_json);return (context.color_jobs||[]).map(job=>({ticket,jobs:context.color_jobs,job}))});
+   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at DESC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+   // The owner-selected ticket can be older than the bounded 100-row scan.
+   // Add it read-only by exact owner partition; never silently lose priority.
+   if(requested?.ticketId&&!(rows.results||[]).some(t=>t.id===requested.ticketId)){
+    const target=await this.env.WORK_DB.prepare("SELECT id,context_json,request,created_at FROM work_tickets WHERE id=? AND owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions'").bind(requested.ticketId,this.env.WRITER_OWNER_HASH).first();
+    if(target)rows.results=[target,...(rows.results||[])];
+   }
+   const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json)}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
    sortCandidates(candidates,requested);
-   for(const {ticket,jobs,job} of candidates){
+   const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
+   await this.ctx.storage.put('writer-queue-selector',{when:Date.now(),examined:admission.examined,deferred:admission.deferred.slice(0,40)});
+   for(const {ticket,jobs,job} of admission.allowed){
     {
      if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified','merged_verified'].includes(job.status))continue;
      if(engine&&(job.dependencies||[]).some(id=>jobs.some(j=>j.id===id&&!['complete','deployed_verified','merged_verified'].includes(j.status))))continue;
@@ -197,7 +206,7 @@ export class BrainClock extends DurableObject{
      const repositoryLease=await this.ctx.storage.get('repository-lease:'+job.repository);
      if(repositoryLease?.leaseUntil>Date.now())continue;
      const deps=(job.dependencies||[]).map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
-     if(!eligibleForRetry(job,{now:Date.now(),prior:previous,lease:repositoryLease,deps}).eligible)continue;
+     if(!checkOwnerRunnerRequest(job,{now:Date.now(),prior:previous,lease:repositoryLease,deps}).eligible)continue;
      const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+(engine?40:20)*60*1000,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
      const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
      const memories=[];for(const item of quantIndex.filter(q=>q.repository===job.repository).slice(0,5)){const q=await this.ctx.storage.get(item.id);if(q)memories.push(q);}
@@ -384,18 +393,20 @@ export class BrainClock extends DurableObject{
   // Across ALL pending jobs, run at most one automatic GitHub dispatch per
   // five minutes. Otherwise hundreds of blocked tickets could flood Actions.
   if((await this.ctx.storage.get('alarm-global-next-at')||0)>now)return {state:'global_dispatch_cooldown'};
-  const rows=await this.env.WORK_DB.prepare("SELECT id,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
-  for(const row of rows.results||[]){
-   let context;try{context=JSON.parse(row.context_json||'{}')}catch{continue}
-   const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];
-   for(const job of jobs){
+  const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+  const requested=await this.ctx.storage.get('requested-next-job');
+  const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json||'{}')}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
+  sortCandidates(candidates,requested);
+  const admission=filterActiveTickets(candidates,{requested,now});
+  await this.ctx.storage.put('alarm-queue-selector',{when:now,examined:admission.examined,deferred:admission.deferred.slice(0,40)});
+  for(const {ticket:row,jobs,job} of admission.allowed){
     if(!job?.id||!job?.repository||!job?.instructions)continue;
     const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
     const writerKey='writer:'+row.id+':'+job.id+':'+revision;
     const retryKey='alarm-retry:'+row.id+':'+job.id+':'+revision;
     const [prior,lease,retry]=await Promise.all([this.ctx.storage.get(writerKey),this.ctx.storage.get('repository-lease:'+job.repository),this.ctx.storage.get(retryKey)]);
     const deps=(job.dependencies||[]).map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
-    const decision=eligibleForRetry(job,{now,prior,lease,retry,deps});
+    const decision=checkOwnerRunnerRequest(job,{now,prior,lease,retry,deps});
     if(!decision.eligible)continue;
     // Persist a lease-like cooldown *before* the network call. Unexpected
     // termination cannot trigger a dispatch storm on the next wake.
@@ -412,7 +423,6 @@ export class BrainClock extends DurableObject{
     await recordRedBrain(this.ctx.storage,{kind:'alarm_dispatch',state:outcome.state,ticketId:row.id,jobId:job.id,reason:outcome.reason});
     await this.emit('purple-pearl','red-bubbles','alarm runner retry',row.id+'/'+job.id+': '+outcome.state+'. '+outcome.reason);
     return report;
-   }
   }
   return {state:'idle_no_eligible_work'};
  }
@@ -523,13 +533,24 @@ export class BrainClock extends DurableObject{
       (body.ticketId!==undefined&&typeof body.ticketId!=='string')||
       (body.jobId!==undefined&&typeof body.jobId!=='string'))
     return Response.json({ok:false,error:'invalid_runner_request'},{status:400});
-   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+   // Explicit owner selection must also work when its ticket fell outside
+   // the default bounded 100-row scan.
+   if(body.ticketId&&!(rows.results||[]).some(t=>t.id===body.ticketId)){
+    const target=await this.env.WORK_DB.prepare("SELECT id,context_json,created_at FROM work_tickets WHERE id=? AND owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions'").bind(body.ticketId,this.env.WRITER_OWNER_HASH).first();
+    if(target)rows.results=[target,...(rows.results||[])];
+   }
+   const requested=body.ticketId?{ticketId:body.ticketId,jobId:body.jobId||undefined}:null;
+   const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json)}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
+   sortCandidates(candidates,requested);
+   const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
    let blockedReason='';
-   for(const t of rows.results||[]){
+   if(body.ticketId){
+    blockedReason=admission.deferred.find(x=>x.ticketId===body.ticketId&&(!body.jobId||x.jobId===body.jobId))?.reason||'';
+   }
+   for(const {ticket:t,jobs,job} of admission.allowed){
     if(body.ticketId&&body.ticketId!==t.id)continue;
-    let jobs;try{jobs=JSON.parse(t.context_json).color_jobs||[]}catch{continue}
-    for(const job of jobs){
-     if(body.jobId&&body.jobId!==job.id)continue;
+    if(body.jobId&&body.jobId!==job.id)continue;
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
      const key='writer:'+t.id+':'+job.id+':'+revision,retryKey='alarm-retry:'+t.id+':'+job.id+':'+revision;
      const [prior,active,retry]=await Promise.all([this.ctx.storage.get(key),this.ctx.storage.get('repository-lease:'+job.repository),this.ctx.storage.get(retryKey)]);
@@ -544,7 +565,6 @@ export class BrainClock extends DurableObject{
      const dispatch=await this.dispatchRunner(),receipt=runnerDispatchReceipt(dispatch);
      await recordRedBrain(this.ctx.storage,{kind:'runner_dispatch',state:receipt.status==='queued_for_runner'?'dispatched_unverified':receipt.status,ticketId:t.id,jobId:job.id,reason:receipt.reason});
      return Response.json({ok:true,status:receipt.status,reason:receipt.reason,ticketId:t.id,jobId:job.id,dispatch});
-    }
    }
    if(body.ticketId&&blockedReason)return Response.json({ok:true,status:'job_not_dispatchable',reason:blockedReason,ticketId:body.ticketId,jobId:body.jobId||''});
    return Response.json({ok:true,status:'no_pending_jobs'});
