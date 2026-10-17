@@ -535,7 +535,7 @@ function renderRepositoryOptions(){
 }
 repositoryFilter.addEventListener('input',renderRepositoryOptions);
 async function suggestRepositoryTargets(request,preview=false){
- if(embedded||!request||request.length<6||!isOwnerWorkRequest(request))return null;
+ if(embedded||!request||request.length<6)return null;
  const seq=++repositorySuggestionSequence;
  const result=await directGithubOperation({action:'suggest_repositories',mode:'read',request});
  if(!result.ok||!result.catalogComplete||!Array.isArray(result.candidates))throw Error(result.error||'Repository suggestions unavailable');
