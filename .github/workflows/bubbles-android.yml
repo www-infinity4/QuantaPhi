@@ -188,7 +188,7 @@ jobs:
           grep -q "sdkVersion:'26'" /tmp/bubbles-apk-badging.txt
           sha256sum "$APK"
       - name: Upload separately installable Bubbles Preview APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: bubbles-preview-android12-apk
           path: android/bubbles-overlay/app/build/outputs/apk/debug/app-debug.apk
