@@ -22,7 +22,7 @@ test('Bubbles Coder direct dispatch is not a Robot Brain ticket',()=>{
  assert.match(site,/directRequest\|\|githubCheck\|\|createRepository\|\|coderRequest/);
  assert.match(site,/args\.workflow='bubbles-coder-sandbox\.yml'/);
  assert.match(site,/args\.action='dispatch_workflow'/);
- assert.match(site,/args\.action='list_runs'/);
+ assert.match(site,/args\.action='list_workflow_runs'/);
  assert.match(site,/directGithubOperation\(args\)/);
  assert.match(site,/const args=\{action,repository,request,description:request,mode\}/);
 });
