@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker,{chooseTool,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim} from '../workers/bubbles-tools/worker.mjs';
+import worker,{chooseTool,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim,hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
 test('spoken commands select actual tools, ordinary conversation remains chat',()=>{
  assert.equal(chooseTool('Check Google News and tell me the headlines'),'news.headlines');
  assert.equal(chooseTool('Create a GitHub repo called Rain'),'github.create_repository');
@@ -175,4 +175,24 @@ test('transient Bubbles model failure gets one lower-cost retry with original co
  }}});
  assert.equal(resp.status,200);assert.equal(calls,2);
  assert.match((await resp.json()).output,/focused reproduction/);
+});
+
+test('internal planning and fabricated createTicket JSON never become Bubbles speech or a receipt',async()=>{
+ const leaked=['We need to send a concise message indicating we are submitting the ticket, then invoke the tool.\nSubmitting a repair ticket to import Omni Code.\n{\n "name": "createTicket",\n "arguments": {"title": "Import Omni Code"}\n}',
+  '{"name":"createTicket","arguments":{"title":"Repair Bubbles"}}',
+  'We need to write a concise reply and then call the tool.',
+  '<|im_start|>assistant to=createTicket'];
+ for(const value of leaked)assert.equal(hasModelToolLeak(value),true,value);
+ assert.equal(hasModelToolLeak('No Robot Brain ticket was created; check the authenticated adapter.'),false);
+ assert.equal(hasModelToolLeak('{"message":"This is ordinary JSON, not a tool call"}'),false);
+ let calls=0;
+ const req=()=>new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Import Omni Code into Robot Brain',input:'Owner requested import and binding.'})});
+ const first=await (await worker.fetch(req(),{AI:{run:async()=>({response:++calls===1?leaked[0]:'No job was submitted by this chat response. The authenticated owner adapter must confirm any ticket.'})}})).json();
+ assert.equal(calls,2);
+ assert.doesNotMatch(first.output,/createTicket|We need to send|Submitting a repair ticket/);
+ assert.equal(first.receipt.repositoryActionsVerified,false);
+ const second=await (await worker.fetch(req(),{AI:{run:async()=>({response:leaked[1]})}})).json();
+ assert.match(second.output,/has not verified a code edit/);
+ assert.doesNotMatch(second.output,/createTicket/);
+ assert.equal(second.receipt.repositoryActionsVerified,false);
 });
