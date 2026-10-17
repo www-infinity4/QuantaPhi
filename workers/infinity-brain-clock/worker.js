@@ -652,10 +652,10 @@ export async function ownerTickets(env,path,body){
   // One verified owner click authorizes a bounded BATCH, not 50 GitHub dispatches.
   // Running jobs, payment/security choices and real technical blockers stay untouched.
   const rows=await db.prepare("SELECT id,title,status,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(ownerHash).all();
-  const summary={scanned:0,alreadyRunnable:0,uiApproved:0,stillBlocked:0,alreadyWorking:0,changedTickets:0,errors:0};
+  const summary={scanned:0,alreadyRunnable:0,uiApproved:0,stillBlocked:0,alreadyWorking:0,retryableWorking:0,changedTickets:0,errors:0};
   const when=new Date().toISOString();
   const genericDecision='Owner approves ordinary interface layout, labels, placement and non-sensitive local data storage choices using existing QuantaPhi patterns. Use accessible Android-first controls, IndexedDB for structured non-sensitive web records and localStorage only for small preferences. Do not bypass credentials, payment, privacy, permissions, speaker verification or security review. Independently test and verify code, merge and deployment.';
-  let runnerTarget=null;
+  let runnerTarget=null,retryTarget=null;
   const pending=[];
   for(const row of rows.results||[]){
    summary.scanned++;
@@ -674,7 +674,16 @@ export async function ownerTickets(env,path,body){
      }
      continue;
     }
-    if(job.status==='working'){summary.alreadyWorking++;continue}
+    if(job.status==='working'){
+     summary.alreadyWorking++;
+     const attempted=Date.parse(job.progress?.attemptedAt||'');
+     if((Array.isArray(job.dependencies)?job.dependencies:[]).every(id=>done.has(id))&&
+        !(job.progress?.runUrl&&Number.isFinite(attempted)&&attempted>Date.now()-40*60*1000)){
+      summary.retryableWorking++;
+      if(!retryTarget)retryTarget={ticketId:row.id,jobId:job.id};
+     }
+     continue;
+    }
     if(job.status!=='blocked')continue;
     const reason=String(job.progress?.summary||'');
     const eligible=/^IW-\d{8}-[0-9A-F-]{8}$/.test(row.id)&&
@@ -712,8 +721,8 @@ export async function ownerTickets(env,path,body){
   // A race must not dispatch a newly approved job until its CAS was recorded.
   if(runnerTarget&&pending.some((p,i)=>p.row.id===runnerTarget.ticketId&&!results[i]))
    runnerTarget=null;
-  const runnable=summary.alreadyRunnable+summary.uiApproved;
-  return {status:200,result:{ok:true,batch:true,summary,runnerTarget:runnable?runnerTarget:null,
+  const runnable=summary.alreadyRunnable+summary.uiApproved+summary.retryableWorking;
+  return {status:200,result:{ok:true,batch:true,summary,runnerTarget:runnable?(runnerTarget||retryTarget):null,
    runner_verified:false,deployments_verified:false,
    note:'Approval authorizes eligible work only. The runner dispatch and code/deployment receipts are separately verified.'}};
  }
