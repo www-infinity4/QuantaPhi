@@ -49,3 +49,11 @@ test('Infinity badge reports Android-validated current transport but does not mo
  assert.doesNotMatch(java,/status_bar|WRITE_SECURE_SETTINGS|MODIFY_PHONE_STATE|setOperatorNumeric|SystemUI/);
  assert.match(manifest,/ACCESS_NETWORK_STATE/);
 });
+
+test('Platinum native preview blocks cleartext HTTP at both layers',()=>{
+ assert.match(manifest,/android:usesCleartextTraffic="false"/);
+ assert.doesNotMatch(manifest,/android:usesCleartextTraffic="true"/);
+ const navigation=read('android/infinity-platinum/app/src/main/java/org/quantaphi/platinum/PlatinumNavigation.java');
+ assert.match(navigation,/!"https"\.equalsIgnoreCase\(scheme\)/);
+ assert.doesNotMatch(navigation,/"http"\.equalsIgnoreCase\(scheme\)/);
+});
