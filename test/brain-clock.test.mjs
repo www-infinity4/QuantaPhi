@@ -6,6 +6,7 @@ const credentialUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile
 const mergeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/merge-receipt.mjs',import.meta.url))).toString('base64');
 const directGithubUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/direct-github.mjs',import.meta.url))).toString('base64');
 const queueUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/queue-order.mjs',import.meta.url))).toString('base64');
+const selectorUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/ticket-selector.mjs',import.meta.url))).toString('base64');
 const ticketStatusUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/ticket-status.mjs',import.meta.url))).toString('base64');
 const authUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-auth.mjs',import.meta.url))).toString('base64');
 const previewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/preview-contract.mjs',import.meta.url))).toString('base64');
@@ -22,7 +23,7 @@ const redUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new UR
 const alarmUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/alarm-retry.mjs',import.meta.url))).toString('base64');
 const runnerRequestSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-request.mjs',import.meta.url),'utf8')).replace('./alarm-retry.mjs',alarmUrl);
 const runnerRequestUrl='data:text/javascript;base64,'+Buffer.from(runnerRequestSource).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./technical-handoff.mjs",handoffUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./technical-handoff.mjs",handoffUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
 const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
@@ -371,4 +372,42 @@ test('reconciliation corrects aggregate-only Working drift without changing chil
  const clock=new BrainClock({storage:{get:async()=>undefined,put:async()=>{}}},{WRITER_OWNER_HASH:'owner',WORK_DB:{prepare:()=>({bind(...params){return {all:async()=>({results:[{id:'ticket',status:'working',context_json:original}]}),run:async()=>{written=params;return {meta:{changes:1}}}}}})}});
  await clock.reconcilePendingWork();
  assert.equal(written[1],'blocked');assert.deepEqual(JSON.parse(written[0]).color_jobs,jobs);
+});
+
+
+test('real BrainClock runner skips the stale blocked Quant AI job and claims the next approved work',async()=>{
+ const now=Date.now(),old={id:'IW-20261013-C86DFEA8',created_at:now-4*86400000,request:'Quant AI production crew'};
+ const modern={id:'IW-ACTIONABLE',created_at:now-86400000,request:'Fix copy button'};
+ old.context_json=JSON.stringify({kind:'robot-directions',color_jobs:[{id:'TASK-4',repository:'www-infinity4/QuantaPhi',status:'blocked',queue_priority:95,instructions:'Quant AI presentation export',progress:{summary:'Reader blocker: owner_input_required: Owner must specify exact files, exported signatures and full JSON schema.'}}]});
+ modern.context_json=JSON.stringify({kind:'robot-directions',color_jobs:[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',status:'queued',queue_priority:10,instructions:'Fix the verified chat copy button',dependencies:[]}]});
+ const memory=new Map();const deleted=[];
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>{deleted.push(k);memory.delete(k)}}},{WRITER_OWNER_HASH:'owner',WORK_DB:{
+  prepare(sql){return{bind(...args){this.args=args;return this},all:async()=>({results:[old,modern]}),
+   first:async()=>null,run:async()=>({meta:{changes:1}})}}
+ }});
+ const response=await clock.runner(new Request('https://brain.internal/runner/claim',{
+  method:'POST',body:JSON.stringify({runId:'101',runnerRepository:'www-infinity4/Moltnook'})}));
+ assert.equal(response.status,200);
+ const result=await response.json();assert.equal(result.lease.ticketId,'IW-ACTIONABLE');
+ assert.equal(result.lease.jobId,'TASK-1');
+ const selector=memory.get('writer-queue-selector');
+ assert.equal(selector.deferred[0].ticketId,'IW-20261013-C86DFEA8');
+ assert.equal(selector.deferred[0].reason,'owner_decision_required');
+ assert.equal(deleted.length,0);
+ assert.match(old.context_json,/owner_input_required/,'never delete the legacy blocker');
+});
+test('real BrainClock honors explicit owner selection for aged but eligible work outside top-100 scan',async()=>{
+ const now=Date.now(),stale={id:'OLD-OWNER-APPROVED',created_at:now-28*86400000,request:'Old explicit user task'};
+ stale.context_json=JSON.stringify({kind:'robot-directions',color_jobs:[{id:'TASK-9',repository:'www-infinity4/Moltnook',status:'queued',queue_priority:0,instructions:'Implement safe local UI source change',dependencies:[]}]});
+ const memory=new Map([['requested-next-job',{ticketId:stale.id,jobId:'TASK-9'}]]);
+ const deleted=[];
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>{deleted.push(k);memory.delete(k)}}},{WRITER_OWNER_HASH:'owner',WORK_DB:{
+  prepare(sql){return{bind(...args){this.args=args;return this},all:async()=>({results:[]}),
+   first:async()=>stale,run:async()=>({meta:{changes:1}})}}
+ }});
+ const response=await clock.runner(new Request('https://brain.internal/runner/claim',{
+  method:'POST',body:JSON.stringify({runId:'102',runnerRepository:'www-infinity4/Moltnook'})}));
+ const result=await response.json();assert.equal(result.lease.ticketId,stale.id);
+ assert.equal(result.lease.jobId,'TASK-9');assert.ok(deleted.includes('requested-next-job'));
+ assert.equal(memory.get('writer-queue-selector').deferred.length,0);
 });
