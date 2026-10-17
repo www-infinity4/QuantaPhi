@@ -15,7 +15,9 @@ test('no routine commit, scheduled trigger or unreviewed workflow action can dep
  assert.match(workflow,/^\s*--dry-run --outdir \/tmp\/brain-clock-staged-build$/m);
  assert.match(workflow,/wrangler@4 versions upload/);
  assert.doesNotMatch(workflow,/wrangler@4 versions deploy/);
- assert.doesNotMatch(workflow,/wrangler@4 deploy\b(?![^\n]*--dry-run)/);
+ assert.equal((workflow.match(/wrangler@4 deploy\\b/g)||[]).length,1);
+ const safeBuild=workflow.slice(workflow.indexOf('npx --yes wrangler@4 deploy'),workflow.indexOf('Check existing production binding names'));
+ assert.match(safeBuild,/--dry-run/);
  assert.match(workflow,/persist-credentials: false/);
  assert.match(workflow,/CF_TOKEN: \${{ secrets\.CLOUDFLARE_API_TOKEN }}/);
  assert.match(workflow,/if: \${{ inputs\.operation == 'stage_version' }}/);
