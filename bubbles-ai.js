@@ -1568,7 +1568,12 @@ async function syncRedSectors(){
  if(!response.ok||!state.ok||state.redBrain?.sector!=='red-brain')throw Error(String(state.error||'red_brain_unreachable'));
  const event=state.redBrain.event;
  if(event&&event.revision>redAckRevision){
-  const reason=String(event.reason||'').slice(0,150);
+  const rawReason=String(event.reason||'').slice(0,150);
+  const reason=/Invalid redirect value/i.test(rawReason)
+   ?'The runner has a network redirect configuration error. This is a technical repair for the bots, not an owner approval request.'
+   :/owner_input_required/i.test(rawReason)
+    ?'The runner requested an owner choice. If it concerns UI design, an approval button appears in the chat.'
+    :rawReason;
   let notice='';
   if(redInitialized){
    if(event.kind==='runner_dispatch'&&event.state==='awaiting_repository_runner')
