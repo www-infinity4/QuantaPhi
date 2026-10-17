@@ -1507,6 +1507,12 @@ async function syncRedSectors(){
     notice='Red-Brain received the job request, but the repository runner did not start: '+reason+'. The ticket remains queued.';
    else if(event.kind==='runner_dispatch'&&event.state==='runner_dispatch_failed')
     notice='Red-Brain could not dispatch the repository runner: '+reason;
+   else if(event.kind==='alarm_dispatch'&&event.state==='dispatched_unverified')
+    notice='Robot Brain alarm retried the queued job. The GitHub workflow accepted dispatch; runner execution is still unverified.';
+   else if(event.kind==='alarm_dispatch'&&event.state==='awaiting_repository_runner')
+    notice='Robot Brain alarm tried again, but the repository runner remains unavailable: '+reason+'. The job is retained for a later attempt.';
+   else if(event.kind==='alarm_dispatch'&&event.state==='runner_dispatch_failed')
+    notice='Robot Brain alarm dispatch failed: '+reason+'. The retry schedule remains active.';
    else if(event.kind==='runner_receipt'&&event.state==='blocked')
     notice='Red-Brain received a runner failure receipt: '+reason;
    else if(event.kind==='runner_receipt'&&event.state==='committed_unverified'&&event.commitSha&&event.testsPassed)
@@ -1565,7 +1571,8 @@ async function readBrainReport(){
    const bridge=await syncRedSectors(),red=bridge.redBrain;
    return report+'\nRed-Bubbles ↔ Red-Brain: connected. Last requested job: '+
     (red.lastRequestedJob?.ticketId?'recorded; execution unverified':'none recorded')+
-    '. Runner: '+red.runner.state+'.'+(red.event?' Latest Brain receipt: '+red.event.kind+' · '+red.event.state+'.':'');
+    '. Runner: '+red.runner.state+'.'+(red.event?' Latest Brain receipt: '+red.event.kind+' · '+red.event.state+'.':'')+
+    (red.alarmRetry?' Alarm retry: '+red.alarmRetry.state+'; attempt '+red.alarmRetry.attempts+'. '+red.alarmRetry.reason+'.':'');
   }catch(error){return report+'\nRed-Bubbles ↔ Red-Brain handshake unavailable: '+String(error.message||error).slice(0,110)+'. Ticket records remain readable.';}
 }
 void connectOwner();
