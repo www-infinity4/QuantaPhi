@@ -1,11 +1,15 @@
 // Owner-only conversation archive. Kept separate from verified engineering outcomes.
 const initialized=new WeakSet();
 export const capabilities=[
+ {name:'in-chat card catalog and diagnostics',source:'bubbles-card-catalog.mjs',status:'registered cards open in the shared chat workspace; Infinity Radio has a declared Play control; observe media state before claiming playback'},
  {name:'conversation memory',source:'owner/conversation',status:'owner-authenticated archive and indexed retrieval'},
  {name:'repair jobs and reports',source:'bubbles-brain-actions.js',status:'owner-authenticated submission; execution requires runner receipts'},
  {name:'voice transcription',source:'workers/bubbles-tools/worker.mjs',status:'Cloudflare transcription; Android also has native capture'},
  {name:'news and resonance calculator',source:'workers/bubbles-tools/worker.mjs',status:'connected tools'},
- {name:'repository creation',source:'workers/bubbles-tools/worker.mjs',status:'not connected; never claim a repository was created'}
+ {name:'direct GitHub repository tools',source:'work/github',status:'owner-authenticated adapter for repository read/create/write and Actions; verify live capabilities and each receipt'},
+ {name:'Python, Bash, Node, Git and GitHub CLI',source:'.github/workflows/bubbles-coder-sandbox.yml',status:'remote Linux workflow; dispatch acceptance is not execution; inspect run receipts'},
+ {name:'Android screen recorder and clips',source:'QuantaBubbles.drainNativeCaptureRequest',status:'native overlay bridge with Android consent; inspect current capture state; unavailable to a plain browser'},
+ {name:'web search and weather',source:'workers/bubbles-tools/search.mjs',status:'network lookup through the shared chat gateway'}
 ];
 export const schema=[
  'CREATE TABLE IF NOT EXISTS bubbles_messages (owner TEXT NOT NULL,id TEXT NOT NULL,role TEXT NOT NULL,text TEXT NOT NULL,at INTEGER NOT NULL,PRIMARY KEY(owner,id))',

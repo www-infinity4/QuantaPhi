@@ -21,7 +21,11 @@ test('native Bubbles screen capture retains microphone sound and MP4 editor',()=
  const screen=read('ScreenCaptureService.java');
  const editor=read('CaptureClipEditor.java');
  const ui=read('MainActivity.java');
- assert.match(screen,/recorder\.setAudioSource\(MediaRecorder\.AudioSource\.MIC\)/);
+ assert.doesNotMatch(screen,/setAudioSource\(/);
+ assert.match(screen,/BubblesService\.beginScreenAudio\(\)/);
+ assert.match(screen,/SharedScreenAudioMuxer\.combine\(completed, audio\)/);
+ assert.match(read('BubblesService.java'),/screenAudio\.append\(samples, count\)/);
+ assert.match(read('SharedScreenAudioMuxer.java'),/MediaCodec\.createEncoderByType/);
  assert.match(screen,/recorder\.setVideoSource\(MediaRecorder\.VideoSource\.SURFACE\)/);
  assert.match(screen,/CapturePublisher\.publish\(this, completed, type\)/);
  assert.match(editor,/MediaExtractor/);

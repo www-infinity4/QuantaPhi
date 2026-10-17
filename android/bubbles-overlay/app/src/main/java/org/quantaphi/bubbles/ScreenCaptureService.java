@@ -22,6 +22,8 @@ public final class ScreenCaptureService extends Service {
     private MediaRecorder recorder;
     private ImageReader images;
     private File file;
+    private VoiceRecording sharedAudio;
+    private File capturedAudio;
     private boolean finished, recordingStarted;
     private int pendingPublications = 0;
     private final ExecutorService mediaExport = Executors.newSingleThreadExecutor();
@@ -127,13 +129,10 @@ public final class ScreenCaptureService extends Service {
                         != android.content.pm.PackageManager.PERMISSION_GRANTED)
                     throw new SecurityException("Microphone permission required for screen video");
                 recorder = new MediaRecorder();
-                recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+                // Vosk remains the only microphone client throughout recording.
+                // Encode its shared PCM after capture, then publish one MP4.
                 recorder.setVideoSource(MediaRecorder.VideoSource.SURFACE);
                 recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
-                recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
-                recorder.setAudioChannels(1);
-                recorder.setAudioSamplingRate(44100);
-                recorder.setAudioEncodingBitRate(96000);
                 recorder.setVideoEncoder(MediaRecorder.VideoEncoder.H264);
                 recorder.setVideoSize(width, height);
                 recorder.setVideoFrameRate(24); recorder.setVideoEncodingBitRate(2500000);
@@ -142,6 +141,7 @@ public final class ScreenCaptureService extends Service {
                 recorder.setOutputFile(file.getAbsolutePath()); recorder.prepare();
                 display = projection.createVirtualDisplay("Bubbles recording", width, height, metrics.densityDpi,
                         DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, recorder.getSurface(), null, main);
+                sharedAudio = BubblesService.beginScreenAudio();
                 recorder.start(); recordingStarted = true;
                 BrainNotes.prefs(this).edit().putBoolean("capture_recording", true)
                     .putString("capture_state", "Recording screen + microphone into one MP4; Stop saves to Movies/Bubbles").apply();
@@ -160,10 +160,16 @@ public final class ScreenCaptureService extends Service {
         BrainNotes.prefs(this).edit().putString("capture_path", completed.getAbsolutePath())
             .putString("capture_type", type).putString("capture_state", "Saving " + completed.getName()
                 + " to phone library…").apply();
+        final File audio = type.startsWith("video/") ? capturedAudio : null;
         mediaExport.execute(() -> {
             String outcome;
             try {
+                if (type.startsWith("video/")) {
+                    if (audio == null) throw new IOException("Shared microphone audio was unavailable; video retained privately");
+                    SharedScreenAudioMuxer.combine(completed, audio);
+                }
                 android.net.Uri saved = CapturePublisher.publish(this, completed, type);
+                if (audio != null) audio.delete();
                 String library = type.startsWith("video/") ? "Movies" : "Pictures";
                 BrainNotes.prefs(this).edit().putString("capture_uri", saved.toString()).apply();
                 outcome = "Saved " + completed.getName() + " to " + library + "/Bubbles";
@@ -199,6 +205,13 @@ public final class ScreenCaptureService extends Service {
         if (sequenceDirectory != null) {
             BrainNotes.prefs(this).edit().putString("capture_state", "Screen series finished: "
                 + captureCount + " screenshots saved locally").apply();
+        }
+        if (sharedAudio != null) {
+            try { capturedAudio = sharedAudio.finish(); }
+            catch (Exception error) {
+                BrainNotes.prefs(this).edit().putString("capture_export_error", "Shared microphone finalization failed").apply();
+            }
+            sharedAudio = null;
         }
         if (recorder != null) {
             boolean valid = false;

@@ -197,6 +197,8 @@ final class FloatingOracleWindow {
             settings.setDomStorageEnabled(true);
             // Do not reuse a stale owner-code form from an earlier deployment.
             settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
+            // Owner voice commands may start the registered in-chat radio player.
+            settings.setMediaPlaybackRequiresUserGesture(false);
             settings.setAllowFileAccess(false);
             // Keep arbitrary content:// navigation disabled. Android's SAF
             // chooser explicitly grants the user-selected file to the web input.

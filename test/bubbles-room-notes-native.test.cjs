@@ -35,6 +35,7 @@ test('room recorder is text-only local, bounded and explicitly consented to',()=
 test('app stays one native microphone and preserves the original screen+sound recorder',()=>{
  const capture=fs.readFileSync(root+'ScreenCaptureService.java','utf8');
  assert.match(service,/new AudioRecord\(MediaRecorder\.AudioSource\.VOICE_RECOGNITION/);
- assert.match(capture,/recorder\.setAudioSource\(MediaRecorder\.AudioSource\.MIC\)/);
+ assert.doesNotMatch(capture,/setAudioSource\(/);
+ assert.match(capture,/BubblesService\.beginScreenAudio\(\)/);
  assert.match(capture,/recorder\.setVideoSource\(MediaRecorder\.VideoSource\.SURFACE\)/);
 });
