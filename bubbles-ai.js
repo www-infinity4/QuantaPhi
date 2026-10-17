@@ -1219,7 +1219,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   workText.value=request;tools.open=true;
   try{const ticket=await submitWork(request,'explicit-user-command');workEvidence=(continued?'Continuing your last request. ':'')+
     (ticket.deduplicated?'Existing work ticket found ('+ticket.status+').':
-     ticket.runner==='queued_for_runner'?'Work ticket saved; I asked the authorized Greenbeans runner to pick it up. Pink Panther must independently verify it.':
+     ticket.runner==='queued_for_runner'&&ticket.dispatch?.status==='scheduled_fallback'?'Work ticket saved, but Red-Brain could not dispatch the repository runner: '+String(ticket.dispatch.error||'runner unavailable').slice(0,110)+'. No code execution verified.':
+      ticket.runner==='queued_for_runner'?'Work ticket saved; Red-Brain acknowledged the runner request. Pink Panther must independently verify its execution.':
      'Work ticket saved, but the runner could not be confirmed: '+ticket.runner+'.')+
     ' Your request is saved; you do not need to press another button. Track real results in the Robot Brain report at https://quantaphi.org/#robotDirections . No successful code change, merge or deployment has been verified by this receipt.'}
   catch(error){workEvidence='Robot Brain submission failed: '+String(error.message||error)+'. No job was confirmed queued. Request remains in Notes & authorized work.';workStatus.textContent=workEvidence}
@@ -1604,11 +1605,11 @@ async function submitWork(request,approval='explicit-click'){
   const updated=await bubblesFetch(TICKETS+'/work/tickets/update',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({id:result.ticket.id,status:'ready',storyboard:JSON.stringify(jobs),context:{...result.ticket.context,color_jobs:jobs}})},20000);
   const ready=await updated.json().catch(()=>({}));if(!updated.ok||!ready.ok)throw Error(ready.error||'Ticket saved as a draft but not ready; check Robot Brain.');
   workText.value='';window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:result.ticket.id,jobs}}));
-  let runner='not_started';
-   try{const request=await requestRunner(result.ticket.id,jobs[0]?.id||'');runner=request.status;}
+  let runner='not_started',runnerDispatch=null;
+   try{const request=await requestRunner(result.ticket.id,jobs[0]?.id||'');runner=request.status;runnerDispatch=request.dispatch||null;}
    catch(error){runner='runner_request_failed';workStatus.textContent='Work ticket saved, but runner dispatch failed: '+String(error.message||error).slice(0,100);}
    if(runner==='queued_for_runner')workStatus.textContent='Robot Brain ticket saved. Greenbeans runner requested; Pink Panther verification is a dependent job. Execution and deployment are not yet proven.';
-   return {id:result.ticket.id,status:'ready',deduplicated:false,runner};
+   return {id:result.ticket.id,status:'ready',deduplicated:false,runner,dispatch:runnerDispatch};
  }catch(error){workStatus.textContent='Ticket could not be confirmed: '+String(error?.message||error).slice(0,145);throw error}
  finally{workButton.disabled=false}
 }
