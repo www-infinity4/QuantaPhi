@@ -6,6 +6,7 @@ on:
     paths:
       - 'workers/infinity-brain-clock/**'
       - '.github/workflows/brain-clock-stage-verified.yml'
+      - 'scripts/verify-brain-stage.mjs'
   workflow_dispatch:
     inputs:
       operation:
@@ -41,6 +42,9 @@ jobs:
         run: |
           node --check workers/infinity-brain-clock/worker.js
           node --check workers/infinity-brain-clock/ticket-selector.mjs
+          node --check workers/infinity-brain-clock/deferred-recovery.mjs
+          node --check scripts/verify-brain-stage.mjs
+          node --test test/brain-clock-stage.test.mjs
           node --test \
             test/brain-ticket-selector.test.mjs \
             test/brain-deferred-recovery.test.mjs \
