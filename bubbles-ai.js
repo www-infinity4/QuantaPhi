@@ -1128,7 +1128,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   busy=true;send.disabled=true;let reply;
   try{
    const result=await requestRunner();
-   reply=result.status==='queued_for_runner'?'Robot Brain requested the next eligible job. It is waiting for a verified runner result; queued does not mean code was edited or deployed.':
+   reply=result.status==='queued_for_runner'&&result.dispatch?.status==='scheduled_fallback'?'Red-Brain accepted the request, but the repository runner could not start: '+String(result.dispatch.error||'runner_unavailable').slice(0,135)+'. No execution verified.':
+     result.status==='queued_for_runner'?'Red-Brain acknowledged the runner dispatch request. Waiting for an authenticated runner receipt; no code change or deployment verified.':
     result.status==='no_pending_jobs'?'Robot Brain has no eligible queued jobs to request. Ask for a bot report to inspect recorded work.':
     'Robot Brain replied: '+String(result.status||'unknown').slice(0,100);
   }catch(error){reply='Robot Brain did not start a new job. '+String(error.message||error).slice(0,160)}
