@@ -80,9 +80,16 @@ jobs:
   const content=new TextDecoder().decode(Uint8Array.from(atob(file.content.replace(/\s/g,'')),c=>c.charCodeAt(0)));
   return {ok:true,repository,path:body.path,ref:body.ref,sha:file.sha,content};
  }
- if(action==='list_runs'){
-  const result=await api('/actions/runs?per_page=10');
-  return {ok:true,repository,runs:result.workflow_runs.map(r=>({id:r.id,name:r.name,status:r.status,conclusion:r.conclusion,commitSha:r.head_sha,url:r.html_url}))};
+ if(action==='list_runs'||action==='list_workflow_runs'){
+  // A sandbox dispatch is not a run receipt. Retrieve actual run metadata,
+  // rather than reporting "working" from a successfully queued dispatch.
+  const workflow=action==='list_workflow_runs'?body.workflow:null;
+  if(workflow&&!/^[A-Za-z0-9_.-]+\\.ya?ml$/.test(workflow))throw Error('invalid_workflow_name');
+  const endpoint=workflow?'/actions/workflows/'+encodeURIComponent(workflow)+'/runs?per_page=10':'/actions/runs?per_page=10';
+  const result=await api(endpoint);
+  return {ok:true,repository,status:'runs_read_only',workflow:workflow||null,
+    runs:result.workflow_runs.map(r=>({id:r.id,name:r.name,status:r.status,conclusion:r.conclusion,
+      createdAt:r.created_at,updatedAt:r.updated_at,event:r.event,commitSha:r.head_sha,url:r.html_url}))};
  }
  if(action==='list_workflows'){
   const result=await api('/actions/workflows?per_page=100');
