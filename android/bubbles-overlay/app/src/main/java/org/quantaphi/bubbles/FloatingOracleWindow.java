@@ -50,6 +50,8 @@ final class FloatingOracleWindow {
     private boolean robotOwnerConnected = false;
     private long lastRobotStatusAt = 0L;
     private String lastCaptureSnapshot = "";
+    private long lastPhonePollAt;
+    private boolean phoneCommandRunning;
     // Keep follow-ups in order while the web assistant is loading or busy.
     // One slot silently replaced the first instruction with the second.
     private static final class QueuedMessage {
@@ -287,7 +289,7 @@ final class FloatingOracleWindow {
 
     private void showWebsite(boolean ready) {
         websiteReady = ready && root != null && website != null;
-        if (!websiteReady) { robotOwnerConnected = false; lastCaptureSnapshot = ""; }
+        if (!websiteReady) { robotOwnerConnected = false; lastCaptureSnapshot = ""; phoneCommandRunning = false; }
         if (website != null) website.setVisibility(websiteReady ? View.VISIBLE : View.GONE);
         if (retryButton != null) retryButton.setVisibility(websiteReady ? View.GONE : View.VISIBLE);
         if (status != null) {
@@ -368,6 +370,34 @@ final class FloatingOracleWindow {
     }
     private void pollWebsiteReply() {
         if (!websiteReady || website == null) return;
+        if (trustedChat(website) && android.os.SystemClock.elapsedRealtime() - lastPhonePollAt > 800L) {
+            lastPhonePollAt = android.os.SystemClock.elapsedRealtime();
+            website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.syncNativePhoneStatus("
+                + PhoneToolController.status().toString() + ")", null);
+            if (!phoneCommandRunning) {
+                phoneCommandRunning = true;
+                final int generation = loadGeneration;
+                website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.takeNativePhoneCommand()", payload -> {
+                    if (generation != loadGeneration || !trustedChat(website)) { phoneCommandRunning = false; return; }
+                    try {
+                        Object raw = new JSONTokener(payload == null ? "null" : payload).nextValue();
+                        if (!(raw instanceof String) || ((String)raw).isEmpty()) { phoneCommandRunning = false; return; }
+                        JSONObject task = new JSONObject((String)raw);
+                        JSONObject command = task.getJSONObject("command");
+                        String localGeneration = task.getString("generation");
+                        boolean restore = hideForScreenRead();
+                        ui.postDelayed(() -> {
+                            JSONObject receipt = BrainLearningService.runPhoneTool(command, localGeneration);
+                            restoreAfterScreenRead(restore);
+                            phoneCommandRunning = false;
+                            if (generation != loadGeneration || !trustedChat(website)) return;
+                            website.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.completeNativePhoneCommand("
+                                + receipt.toString() + ")", null);
+                        }, 160L);
+                    } catch (Exception error) { phoneCommandRunning = false; }
+                });
+            }
+        }
         // The native foreground services are the authority for capture state.
         // Send only short state labels/booleans; never expose local media paths,
         // Android permissions, or owner credentials to the hosted page.
@@ -510,6 +540,7 @@ final class FloatingOracleWindow {
     }
 
     void close() {
+        PhoneToolController.stop();
         loadGeneration++;
         ui.removeCallbacks(update);
         gptWork.shutdownNow();

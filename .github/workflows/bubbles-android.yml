@@ -66,6 +66,12 @@ jobs:
           node --check workers/bubbles-tools/worker.mjs
           node --test test/bubbles-image-options.test.mjs
           node --test test/bubbles-live-screen.test.cjs test/bubbles-direct-github.test.mjs
+      - name: Verify shared IBM and Gemini phone tool
+        run: |
+          node --test test/phone-tool.test.mjs
+          mkdir -p /tmp/bubbles-phone
+          javac -d /tmp/bubbles-phone android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenAwareness.java android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/PhoneToolPolicy.java android/bubbles-overlay/checks/PhoneToolPolicyCheck.java
+          java -cp /tmp/bubbles-phone org.quantaphi.bubbles.PhoneToolPolicyCheck
       - name: Verify scrolling and pairing in a mobile browser
         run: |
           npm install --no-save --package-lock=false playwright@1.51.1

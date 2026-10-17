@@ -16,7 +16,8 @@ const evidenceDbUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile
 const arbitrationUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/arbitration-evidence.mjs',import.meta.url))).toString('base64');
 const resonanceUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/bubbles-tools/resonance.mjs',import.meta.url))).toString('base64');
 const conversationUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/conversation-memory.mjs',import.meta.url))).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./conversation-memory.mjs",conversationUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
+const phoneUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/phone-tool.mjs',import.meta.url))).toString('base64');
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
 const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
@@ -280,4 +281,28 @@ test('pairing is single-use, time-limited and remains bound to the verified owne
  const expired=await (await send('pair-create')).json();
  const key=memory.get('brain-pair-latest');memory.set(key,{...memory.get(key),expiresAt:Date.now()-1});
  assert.equal((await send('pair-redeem',{code:expired.code})).status,404);
+});
+
+test('shared phone HTTP bridge separates owner commands from device delivery and receipts',async()=>{
+ const token='owner-phone-test-credential';
+ const ownerHash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(token))),b=>b.toString(16).padStart(2,'0')).join('');
+ const map=new Map(),storage={get:async k=>structuredClone(map.get(k)),put:async(k,v)=>map.set(k,structuredClone(v)),delete:async k=>map.delete(k)};
+ const clock=new BrainClock({storage,blockConcurrencyWhile:fn=>fn()},{});
+ const env={WRITER_OWNER_HASH:ownerHash,CLOCK:{idFromName:()=>0,get:()=>({fetch:(url,init)=>clock.fetch(new Request(url,init))})}};
+ const send=(op,body={},credential='')=>brainWorker.fetch(new Request('https://brain/tools/phone/'+op,{method:'POST',headers:{Origin:'https://quantaphi.org',...(credential?{Authorization:'Bearer '+credential}:{})},body:JSON.stringify(body)}),env);
+ const generation=crypto.randomUUID();
+ assert.equal((await send('open',{generation})).status,401);
+ const opened=await (await send('open',{generation},token)).json();
+ assert.equal(opened.ok,true);
+ const id=crypto.randomUUID();
+ assert.equal((await send('command',{sessionId:opened.sessionId,id,action:'read'},token)).status,200);
+ assert.equal((await send('next',{generation},token)).status,401);
+ const delivered=await (await send('next',{generation},opened.deviceToken)).json();
+ assert.equal(delivered.command.id,id);
+ assert.equal((await send('command',{sessionId:opened.sessionId,id:crypto.randomUUID(),action:'read'},opened.deviceToken)).status,401);
+ assert.equal((await send('result',{generation,receipt:{id,ok:true,result:{nodes:[],untrusted:true}}},opened.deviceToken)).status,200);
+ const reported=await (await send('status',{},token)).json();
+ assert.equal(reported.receipt.id,id);assert.equal(reported.deviceToken,undefined);
+ assert.equal((await send('close',{sessionId:opened.sessionId},token)).status,200);
+ assert.equal((await send('next',{generation},opened.deviceToken)).status,409);
 });
