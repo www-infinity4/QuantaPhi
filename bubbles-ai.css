@@ -240,3 +240,15 @@
 
 #bubblesAICard .ba-macro-role{grid-column:1/-1;min-height:48px;background:#fff;border:2px solid #c75643;color:#301a2d}
 #bubblesAICard .ba-macro-zoom .ba-control:focus-visible{outline:3px solid #873c98;outline-offset:3px}
+
+
+/* Verified, read-only inbox lives inside the same QuantaPhi Bubbles chat. */
+.ba-panel .ba-brain-inbox{margin:9px 0;padding:10px 12px;border:1px solid #c8c0d1;border-radius:14px;background:#f8f7fc;color:#241b31;flex:none}
+.ba-panel .ba-brain-inbox>summary{font-weight:800;cursor:pointer;min-height:38px;display:list-item;align-content:center}
+.ba-panel .ba-brain-inbox-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:7px;font-size:12px;margin:5px 0}
+.ba-panel .ba-brain-state[data-connection="connected"]{color:#126d3d;font-weight:800}
+.ba-panel .ba-brain-state[data-connection="unreachable"]{color:#666;background:#e7e7e7;border-radius:6px;padding:2px 5px}
+.ba-panel .ba-brain-notice-row{display:flex;align-items:center;gap:7px}
+.ba-panel .ba-brain-notice-row .ba-control{min-width:70px;min-height:44px;padding:6px 8px;font-size:12px}
+.ba-panel .ba-brain-notice{flex:1;min-width:0;margin:0;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+.ba-panel .ba-brain-notice-row button:disabled{opacity:.45}
