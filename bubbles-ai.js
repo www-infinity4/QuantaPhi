@@ -1680,7 +1680,7 @@ function refreshBulkOwnerRun(tickets){
  lastBulkPreview=brainTools.bulkRunPreview(tickets);
  runAllButton.hidden=false;
  runAllButton.textContent='Run All ('+lastBulkPreview.total+')';
- runAllButton.title=lastBulkPreview.ready+' queued and '+lastBulkPreview.ui+' ordinary UI owner choices eligible. '+lastBulkPreview.blocked+' blocked require repair or review; '+lastBulkPreview.working+' marked working remain unchanged.';
+ runAllButton.title=lastBulkPreview.ready+' queued, '+lastBulkPreview.retryableWorking+' stale working, and '+lastBulkPreview.ui+' ordinary UI owner choices eligible. '+lastBulkPreview.blocked+' blocked require repair or review; '+lastBulkPreview.working+' marked working remain unchanged.';
  runAllButton.disabled=bulkRunBusy||lastBulkPreview.total===0;
 }
 runAllButton.addEventListener('click',async()=>{
@@ -1694,13 +1694,13 @@ runAllButton.addEventListener('click',async()=>{
   const outcome=await response.json().catch(()=>({}));
   if(!response.ok||!outcome.ok||!outcome.batch)throw Error(String(outcome.error||'Bulk approval unavailable'));
   const counts=outcome.summary||{};
-  const approved=Number(counts.uiApproved)||0,ready=Number(counts.alreadyRunnable)||0;
-  const dispatch=outcome.execution?.status||'not_requested';
+  const approved=Number(counts.uiApproved)||0,ready=Number(counts.alreadyRunnable)||0,resume=Number(counts.retryableWorking)||0;
+  const dispatch=outcome.execution?.dispatch?.status||outcome.execution?.status||'not_requested';
   let execution='Runner requested; awaiting authenticated claim and code receipts.';
   if(dispatch==='scheduled_fallback'||dispatch==='runner_dispatch_failed')execution='Runner could not start; approved jobs remain saved for retry.';
   else if(dispatch==='not_requested'||outcome.execution?.ok===false)
    execution='Runner has not confirmed starting; jobs remain eligible and saved.';
-  const receipt='Bulk owner action recorded: '+approved+' UI decisions approved, '+ready+' existing jobs eligible. '+(Number(counts.stillBlocked)||0)+' still blocked for technical or sensitive decisions. '+(Number(counts.alreadyWorking)||0)+' already marked working, unchanged. '+execution+' No code, tests or deployment claimed.';
+  const receipt='Bulk owner action recorded: '+approved+' UI decisions approved, '+ready+' existing queued jobs eligible, '+resume+' stale working jobs eligible for runner retry. '+(Number(counts.stillBlocked)||0)+' still blocked for technical or sensitive decisions. '+(Number(counts.alreadyWorking)||0)+' marked working in total, unchanged until authenticated runner receipts. '+execution+' No code, tests or deployment claimed.';
   display(receipt,'ai');status.textContent='Bulk approval receipt received; checking next runner status.';
   messages.push({role:'assistant',text:receipt});messages=messages.slice(-400);persistChat();
   void pollBrainProgress();
