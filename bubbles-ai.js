@@ -1558,7 +1558,13 @@ async function readBrainReport(){
  const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},20000);
  const result=await response.json().catch(()=>({}));
  if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error(String(result.error||'Owner ticket list unavailable'));
- return brainTools?.describeTickets(result.tickets,10)||'Robot Brain reporting helpers are unavailable.';
+ const report=brainTools?.describeTickets(result.tickets,10)||'Robot Brain reporting helpers are unavailable.';
+  try{
+   const bridge=await syncRedSectors(),red=bridge.redBrain;
+   return report+'\nRed-Bubbles ↔ Red-Brain: connected. Last requested job: '+
+    (red.lastRequestedJob?.ticketId?'recorded; execution unverified':'none recorded')+
+    '. Runner: '+red.runner.state+'.'+(red.event?' Latest Brain receipt: '+red.event.kind+' · '+red.event.state+'.':'');
+  }catch(error){return report+'\nRed-Bubbles ↔ Red-Brain handshake unavailable: '+String(error.message||error).slice(0,110)+'. Ticket records remain readable.';}
 }
 void connectOwner();
 // Home loads the owner helper after this script. Deferred scripts finish before
