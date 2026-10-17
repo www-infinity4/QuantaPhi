@@ -1,38 +1,70 @@
-const {test}=require('node:test');const assert=require('node:assert/strict');
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
 const {speechText,ProgressTracker}=require('../bubbles-brain-actions.js');
-const ticket=(jobs)=>({id:'ticket',title:'Repair Bubbles',status:'working',context:{color_jobs:jobs}});
-const job=(status,progress={})=>({id:'TASK-1',status,progress});
-test('voice retains link label but never reads web addresses',()=>{
+const runUrl='https://github.com/www-infinity4/QuantaPhi/actions/runs/123';
+const sha='a'.repeat(40);
+const ticket=(jobs,title='Repair Bubbles UI')=>({id:'ticket',title,status:'working',context:{color_jobs:jobs}});
+const job=(status,progress={},id='TASK-1')=>({id,status,progress});
+const started=()=>job('working',{runUrl,attemptedAt:'2026-10-17T19:00:00Z'});
+const merged=()=>job('merged_verified',{mergeSha:sha});
+const finished=()=>job('deployed_verified',{runUrl,commitSha:sha,testsPassed:true});
+
+test('voice retains link label but never reads web addresses or markup',()=>{
  assert.equal(speechText('Check [its page](https://quantaphi.org/bubbles.html) or www.example.com/path and example.org/test for updates.'),'Check its page or and for updates.');
+ assert.equal(speechText('*UI job* finished.'),'UI job finished.');
 });
-test('poll baseline does not replay old activity; actual claims and merges announce once',()=>{
- const p=new ProgressTracker();const queued=ticket([job('queued')]);
- assert.deepEqual(p.update([queued]),[]);
- const working=ticket([job('working',{runUrl:'https://github.com/owner/repo/actions/runs/1',attemptedAt:'now'})]);
- assert.match(p.update([working])[0],/runner is working/);assert.deepEqual(p.update([working]),[]);
- const merged=job('merged_verified',{mergeSha:'a'.repeat(40)});
- assert.match(p.update([ticket([merged])])[0],/merged after checks passed/);
- assert.deepEqual(p.update([ticket([merged])]),[]);
- const next={...job('working',{runUrl:'https://github.com/owner/repo/actions/runs/2',attemptedAt:'now'}),id:'TASK-2'};
- const update=p.update([ticket([merged,next])])[0];assert.match(update,/runner is working/);assert.ok(!update.includes('merged'));
+test('single job speaks one authenticated start and one verified completion',()=>{
+ const p=new ProgressTracker();
+ assert.deepEqual(p.update([ticket([job('queued')])]),[]);
+ assert.deepEqual(p.update([ticket([started()])]),['UI job started.']);
+ assert.deepEqual(p.update([ticket([started()])]),[]);
+ assert.deepEqual(p.update([ticket([merged()])]),[]);
+ assert.deepEqual(p.update([ticket([finished()])]),['UI job finished.']);
+ assert.deepEqual(p.update([ticket([finished()])]),[]);
 });
-test('unproven working labels cannot claim execution and failures stay readable',()=>{
- const p=new ProgressTracker();p.update([]);
- assert.deepEqual(p.update([ticket([job('working')])]),[]);
- const update=p.update([ticket([job('blocked',{summary:'Runner failed; details https://example.com/log'})])])[0];
- assert.match(update,/technical issue/);assert.ok(!update.includes('https'));
+test('already completed and claimed jobs never replay on first poll',()=>{
+ const p=new ProgressTracker();
+ assert.deepEqual(p.update([ticket([finished()])]),[]);
+ assert.deepEqual(p.update([ticket([finished()])]),[]);
+ const q=new ProgressTracker();
+ assert.deepEqual(q.update([ticket([started()])]),[]);
 });
-test('actual poller reads authenticated tickets, narrates changes and reconnects without new tasks',async()=>{
+test('unverified completion cannot claim a finished job',()=>{
+ const p=new ProgressTracker();p.update([ticket([job('queued')])]);
+ assert.deepEqual(p.update([ticket([job('complete',{runUrl,commitSha:sha})])]),[]);
+ assert.deepEqual(p.update([ticket([job('complete',{runUrl,commitSha:sha,testsPassed:false})])]),[]);
+ assert.deepEqual(p.update([ticket([job('complete',{runUrl,commitSha:sha,testsPassed:true})])]),['UI job finished.']);
+});
+test('multiple claimed jobs are quiet until each completion receipt arrives',()=>{
+ const p=new ProgressTracker();
+ p.update([ticket([job('queued',{},'J1'),job('queued',{},'J2')])]);
+ assert.deepEqual(p.update([ticket([started(),{...started(),id:'J2'}])]),[]);
+ assert.deepEqual(p.update([ticket([finished(),{...started(),id:'J2'}])]),['UI job finished.']);
+ assert.deepEqual(p.update([ticket([finished(),{...finished(),id:'J2'}])]),['UI job finished.']);
+});
+test('source telemetry does not speak routine alarm and dispatch retries',()=>{
+ const fs=require('node:fs');
+ const source=fs.readFileSync('bubbles-ai.js','utf8');
+ const region=source.slice(source.indexOf('async function syncRedSectors(){'),source.indexOf('const ownerApprovalCards='));
+ assert.ok(region.includes('redAckRevision=event.revision'));
+ assert.ok(!region.includes('The bot network recorded a work update'));
+ assert.ok(!region.includes('Robot Brain alarm retried the queued job'));
+});
+test('actual poller announces verified completions and one outage transition',async()=>{
  const fs=require('node:fs'),vm=require('node:vm');
  const source=fs.readFileSync('bubbles-ai.js','utf8');
- let tickets=[ticket([job('queued')])],failed=false,calls=0;const displayed=[],voice=[];
- const context={brainInboxInitialized:false,brainConnectionState:()=>{},recordBrainNotice:()=>{},showOwnerApprovalRequests:()=>{},brainTools:{ProgressTracker},embedded:false,ownerReady:true,ownerHeaders:{Authorization:'Bearer fixture'},nativeOverlay:true,busy:false,speaking:false,config:{voice:true},messages:[],progressVoiceQueue:voice,BRAIN:'https://brain.invalid',verifiedOwnerHeaders:async()=>({Authorization:'Bearer fixture'}),bubblesFetch:async(url,options)=>{calls++;assert.equal(options.method,'POST');assert.ok(url.endsWith('/work/tickets/list'));if(failed)throw Error('offline');return {ok:true,json:async()=>({ok:true,tickets})}},display:text=>displayed.push(text),persistChat:()=>{},setInterval:()=>{},speakText:()=>{}};
+ let tickets=[ticket([job('queued')])],failed=false,calls=0;
+ const displayed=[],voice=[];
+ const context={brainInboxInitialized:false,brainConnectionState:()=>{},recordBrainNotice:()=>{},showOwnerApprovalRequests:()=>{},refreshBulkOwnerRun:()=>{},brainTools:{ProgressTracker},embedded:false,ownerReady:true,ownerHeaders:{Authorization:'Bearer fixture'},nativeOverlay:true,busy:false,speaking:false,config:{voice:true},messages:[],progressVoiceQueue:voice,BRAIN:'https://brain.invalid',verifiedOwnerHeaders:async()=>({Authorization:'Bearer fixture'}),bubblesFetch:async(url,options)=>{calls++;assert.equal(options.method,'POST');assert.ok(url.endsWith('/work/tickets/list'));if(failed)throw Error('offline');return {ok:true,json:async()=>({ok:true,tickets})}},display:text=>displayed.push(text),persistChat:()=>{},setInterval:()=>{},speakText:()=>{}};
  vm.createContext(context);
  vm.runInContext(source.slice(source.indexOf('const progressTracker='),source.indexOf('async function readBrainReport(){')),context);
  await new Promise(r=>setImmediate(r));assert.equal(displayed.length,0);
- tickets=[ticket([job('merged_verified',{mergeSha:'a'.repeat(40)})])];
- await context.pollBrainProgress();assert.match(displayed[0],/merged after checks passed/);assert.equal(voice.length,1);
+ tickets=[ticket([merged()])];
+ await context.pollBrainProgress();assert.equal(displayed.length,0);
+ tickets=[ticket([finished()])];
+ await context.pollBrainProgress();assert.equal(displayed[0],'UI job finished.');assert.equal(voice.length,1);
  await context.pollBrainProgress();assert.equal(displayed.length,1);
- failed=true;await context.pollBrainProgress();await context.pollBrainProgress();assert.equal(displayed.length,2);assert.match(displayed[1],/unreachable/);
+ failed=true;await context.pollBrainProgress();await context.pollBrainProgress();
+ assert.equal(displayed.length,2);assert.match(displayed[1],/unreachable/);
  failed=false;await context.pollBrainProgress();assert.equal(displayed.length,3);assert.match(displayed[2],/reachable again/);assert.ok(calls>=6);
 });
