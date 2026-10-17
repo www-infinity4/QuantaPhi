@@ -648,6 +648,84 @@ export async function ownerTickets(env,path,body){
   const rows=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100").bind(ownerHash).all();
   return {status:200,result:{ok:true,tickets:(rows.results||[]).map(publicTicket)}};
  }
+ if(path==='/work/tickets/approve-all'){
+  // One verified owner click authorizes a bounded BATCH, not 50 GitHub dispatches.
+  // Running jobs, payment/security choices and real technical blockers stay untouched.
+  const rows=await db.prepare("SELECT id,title,status,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(ownerHash).all();
+  const summary={scanned:0,alreadyRunnable:0,uiApproved:0,stillBlocked:0,alreadyWorking:0,retryableWorking:0,changedTickets:0,errors:0};
+  const when=new Date().toISOString();
+  const genericDecision='Owner approves ordinary interface layout, labels, placement and non-sensitive local data storage choices using existing QuantaPhi patterns. Use accessible Android-first controls, IndexedDB for structured non-sensitive web records and localStorage only for small preferences. Do not bypass credentials, payment, privacy, permissions, speaker verification or security review. Independently test and verify code, merge and deployment.';
+  let runnerTarget=null,retryTarget=null;
+  const pending=[];
+  for(const row of rows.results||[]){
+   summary.scanned++;
+   let context;try{context=JSON.parse(row.context_json||'{}')}catch{summary.errors++;continue}
+   if(context.kind!=='robot-directions'||!Array.isArray(context.color_jobs))continue;
+   const jobs=context.color_jobs;
+   const done=new Set(jobs.filter(j=>['complete','deployed_verified'].includes(j?.status)).map(j=>j.id));
+   const receipts=Array.isArray(context.owner_approval_receipts)?context.owner_approval_receipts:[];
+   let changed=false,approvedInTicket=0;
+   for(const job of jobs){
+    if(!job?.id||!/^TASK-\d+$/.test(job.id)||!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(job.repository||''))continue;
+    if(['queued','ready'].includes(job.status)){
+     if((Array.isArray(job.dependencies)?job.dependencies:[]).every(id=>done.has(id))){
+      summary.alreadyRunnable++;
+      if(!runnerTarget)runnerTarget={ticketId:row.id,jobId:job.id};
+     }
+     continue;
+    }
+    if(job.status==='working'){
+     summary.alreadyWorking++;
+     const attempted=Date.parse(job.progress?.attemptedAt||'');
+     if((Array.isArray(job.dependencies)?job.dependencies:[]).every(id=>done.has(id))&&
+        !(job.progress?.runUrl&&Number.isFinite(attempted)&&attempted>Date.now()-40*60*1000)){
+      summary.retryableWorking++;
+      if(!retryTarget)retryTarget={ticketId:row.id,jobId:job.id};
+     }
+     continue;
+    }
+    if(job.status!=='blocked')continue;
+    const reason=String(job.progress?.summary||'');
+    const eligible=/^IW-\d{8}-[0-9A-F-]{8}$/.test(row.id)&&
+      /owner_input_required/i.test(reason)&&
+      /\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(reason)&&
+      !/\b(?:excluded_path_required|unsupported_acceptance|password|credential|secret|wallet|payment|security|permission|authorization|biometric|fingerprint|speaker verification|verification algorithm)\b/i.test(reason)&&
+      receipts.filter(x=>x.jobId===job.id).length<3&&summary.uiApproved<50;
+    const addition='\n\nVerified owner bulk UI decision ('+when+'): '+genericDecision;
+    if(!eligible||String(job.instructions||'').length+addition.length>12000){summary.stillBlocked++;continue}
+    job.instructions+=addition;job.status='queued';
+    job.progress={ownerApprovedAt:when,summary:'Owner bulk UI approval recorded. Waiting for authenticated runner.'};
+    receipts.push({jobId:job.id,at:when,decision:genericDecision,previousBlocker:reason.slice(0,900),source:'bulk-owner-click'});
+    summary.uiApproved++;approvedInTicket++;changed=true;
+    if((Array.isArray(job.dependencies)?job.dependencies:[]).every(id=>done.has(id))&&!runnerTarget)runnerTarget={ticketId:row.id,jobId:job.id};
+   }
+   if(changed){
+    context.owner_approval_receipts=receipts.slice(-24);
+    const updated=JSON.stringify(context);
+    if(updated.length>50000){summary.errors++;continue}
+    pending.push({row,updated,status:ticketStatusFromJobs(jobs),approvedInTicket});
+   }
+  }
+  // Each CAS update is tied to the original authenticated owner partition.
+  const results=await Promise.all(pending.map(async item=>{
+   try{
+    const changed=await db.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?')
+     .bind(item.updated,item.status,Date.now(),item.row.id,ownerHash,item.row.context_json).run();
+    return changed?.meta?.changes===1;
+   }catch{return false}
+  }));
+  summary.changedTickets=results.filter(Boolean).length;
+  const failedApprovalCount=pending.reduce((count,p,i)=>count+(results[i]?0:p.approvedInTicket),0);
+  summary.uiApproved-=failedApprovalCount;
+  summary.errors+=results.filter(x=>!x).length;
+  // A race must not dispatch a newly approved job until its CAS was recorded.
+  if(runnerTarget&&pending.some((p,i)=>p.row.id===runnerTarget.ticketId&&!results[i]))
+   runnerTarget=null;
+  const runnable=summary.alreadyRunnable+summary.uiApproved+summary.retryableWorking;
+  return {status:200,result:{ok:true,batch:true,summary,runnerTarget:runnable?(runnerTarget||retryTarget):null,
+   runner_verified:false,deployments_verified:false,
+   note:'Approval authorizes eligible work only. The runner dispatch and code/deployment receipts are separately verified.'}};
+ }
  if(path==='/work/tickets/approve'){
   // Only a verified owner may approve an existing, runner-recorded UI decision.
   // This endpoint is reached behind the same owner auth as ticket creation.
@@ -840,7 +918,7 @@ export default{
     return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
   }
-  if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/tickets/approve','/work/memory/status'].includes(path)&&request.method==='POST'){
+  if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/tickets/approve','/work/tickets/approve-all','/work/memory/status'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
@@ -850,8 +928,8 @@ export default{
     if(text.length>70000)return output(request,{ok:false,error:'request_too_large'},413);
     const body=JSON.parse(text||'{}');
     const result=await ownerTickets(env,path,body);
-    if(result.result.ok&&((path==='/work/tickets/update'&&body.status==='ready')||path==='/work/tickets/approve')){
-     try{const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));const started=await clock.fetch('https://clock.internal/run-next',{method:'POST',body:JSON.stringify({ticketId:body.id})});result.result.execution=await started.json();}catch{result.result.execution={status:'scheduled_fallback'};}
+    if(result.result.ok&&((path==='/work/tickets/update'&&body.status==='ready')||path==='/work/tickets/approve'||(path==='/work/tickets/approve-all'&&result.result.runnerTarget))){
+     try{const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));const started=await clock.fetch('https://clock.internal/run-next',{method:'POST',body:JSON.stringify(result.result.runnerTarget||{ticketId:body.id})});result.result.execution=await started.json();}catch{result.result.execution={status:'scheduled_fallback'};}
     }
     return output(request,result.result,result.status);
    }catch(error){return output(request,{ok:false,error:'owner_ticket_request_failed'},500)}

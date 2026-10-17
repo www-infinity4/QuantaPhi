@@ -186,6 +186,34 @@ function ownerApprovalRequests(tickets){
  }
  return found.slice(0,10);
 }
+// Estimate the owner's batch from authenticated ticket state, not chat text.
+// This is a preview only; the Worker validates each candidate again on click.
+function bulkRunPreview(tickets){
+ let ready=0,ui=0,blocked=0,working=0,retryableWorking=0;
+ for(const ticket of Array.isArray(tickets)?tickets:[]){
+  if(!['ready','working','blocked'].includes(ticket?.status))continue;
+  const jobs=Array.isArray(ticket.context?.color_jobs)?ticket.context.color_jobs:[];
+  const done=new Set(jobs.filter(j=>['complete','deployed_verified'].includes(j?.status)).map(j=>j.id));
+  for(const job of jobs){
+   if(['queued','ready'].includes(job?.status)&&
+      (job.dependencies||[]).every(id=>done.has(id)))ready++;
+   else if(job?.status==='blocked'){
+    const reason=String(job.progress?.summary||'');
+    if(/^IW-\d{8}-[0-9A-F-]{8}$/.test(String(ticket.id||''))&&/^TASK-\d+$/.test(String(job.id||''))&&
+       /owner_input_required/i.test(reason)&&
+       /\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(reason)&&
+       !/\b(?:excluded_path_required|unsupported_acceptance|password|credential|secret|wallet|payment|security|permission|authorization|biometric|fingerprint|speaker verification|verification algorithm)\b/i.test(reason)&&
+       (ticket.context?.owner_approval_receipts||[]).filter(x=>x.jobId===job.id).length<3)ui++;
+    else blocked++;
+   }else if(job?.status==='working'){
+    working++;
+    const attempted=Date.parse(job.progress?.attemptedAt||'');
+    if((job.dependencies||[]).every(id=>done.has(id))&&!(job.progress?.runUrl&&Number.isFinite(attempted)&&attempted>Date.now()-40*60*1000))retryableWorking++;
+   }
+  }
+ }
+ return {ready,ui,blocked,working,retryableWorking,total:ready+ui+retryableWorking};
+}
 function speechText(value){
  // Spoken narration is a different representation from the visible chat.
  // Never read formatting symbols, code fences, URLs or markdown syntax aloud.
@@ -239,7 +267,7 @@ class ProgressTracker{
   this.initialized=true;return updates.slice(-5);
  }
 }
-const api={speechText,ProgressTracker,ownerApprovalRequests,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief};
+const api={speechText,ProgressTracker,ownerApprovalRequests,bulkRunPreview,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);
