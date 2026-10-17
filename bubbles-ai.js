@@ -1595,6 +1595,72 @@ async function syncRedSectors(){
  redInitialized=true;
  return state;
 }
+
+const ownerApprovalCards=new Map();
+// Approval cards are tied to saved, authenticated Brain tickets, never to AI
+// message content or an unverified "owner" sentence.
+function showOwnerApprovalRequests(tickets){
+ if(embedded||!ownerReady||!brainTools?.ownerApprovalRequests)return;
+ const pending=brainTools.ownerApprovalRequests(tickets);
+ const active=new Set();
+ for(const item of pending){
+  const key=item.ticketId+':'+item.jobId;active.add(key);
+  if(ownerApprovalCards.has(key))continue;
+  const line=create('div','ba-line ba-line-ai ba-owner-approval-line');
+  const card=create('section','ba-owner-approval');
+  card.setAttribute('aria-label','Owner approval needed');
+  card.append(create('strong','','Owner decision requested'));
+  card.append(create('p','ba-owner-approval-title',item.title));
+  card.append(create('p','ba-owner-approval-copy','Robot Brain needs approval for a UI design choice. This does not grant permissions or skip testing.'));
+  card.append(create('p','ba-owner-approval-choice','Approve: use the existing QuantaPhi styling; place enrollment in owner settings with an Enroll button; use IndexedDB for structured local records and localStorage only for small non-sensitive preferences.'));
+  const details=create('details','ba-owner-approval-details');
+  details.append(create('summary','','Why did the runner stop?'));
+  details.append(create('p','',item.reason));
+  card.append(details);
+  const actions=create('div','ba-owner-approval-actions');
+  const approve=create('button','ba-owner-approve','Approve UI changes');
+  approve.type='button';
+  const review=create('button','ba-owner-review','Ask AI to review');
+  review.type='button';
+  actions.append(approve,review);card.append(actions);line.append(card);
+  const result=create('p','ba-owner-approval-result','');
+  result.setAttribute('role','status');card.append(result);
+  approve.addEventListener('click',async()=>{
+   approve.disabled=true;review.disabled=true;result.textContent='Checking the latest owner ticket and recording your choice…';
+   try{
+    const headers=await verifiedOwnerHeaders();
+    const response=await bubblesFetch(BRAIN+'/work/tickets/approve',{
+     method:'POST',headers:{...headers,'Content-Type':'application/json'},
+     body:JSON.stringify({id:item.ticketId,jobId:item.jobId}),cache:'no-store'},20000);
+    const body=await response.json().catch(()=>({}));
+    if(!response.ok||!body.ok||body.approval?.jobId!==item.jobId)
+     throw Error(String(body.error||'Owner approval not accepted'));
+    const dispatch=body.execution?.status;
+    const receipt=dispatch==='queued_for_runner'
+     ?'UI approval saved for '+item.title+'. The runner was requested; code changes and deployment are not yet verified.'
+     : 'UI approval saved for '+item.title+'. The job is eligible for a retry; runner start is not yet confirmed.';
+    result.textContent=receipt;
+    display(receipt,'ai');
+    messages.push({role:'assistant',text:receipt});messages=messages.slice(-400);persistChat();
+    // Poll obtains the new authoritative state and removes obsolete cards.
+    void pollBrainProgress();
+   }catch(error){
+    result.textContent='Approval was not recorded: '+String(error.message||error).slice(0,160)+'. Please retry or ask AI to explain.';
+    approve.disabled=false;review.disabled=false;
+   }
+  });
+  review.addEventListener('click',()=>{
+   const prompt='Explain in plain language whether this is genuinely an owner-only UI choice. State what I would approve, identify any technical error the bots should fix themselves, and do not submit or approve anything. Runner report: '+item.reason.slice(0,850);
+   void sendMessage(prompt,false);
+  });
+  conversation.append(line);ownerApprovalCards.set(key,line);
+  if(showing)chatScroll.scrollTop=chatScroll.scrollHeight;
+ }
+ for(const [key,line] of ownerApprovalCards){
+  if(!active.has(key)){line.remove();ownerApprovalCards.delete(key);}
+ }
+}
+
 const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker():null;
 let progressPolling=false,progressUnavailable=false;
 async function pollBrainProgress(){
@@ -1611,6 +1677,7 @@ async function pollBrainProgress(){
    brainInboxInitialized=true;
    recordBrainNotice('Robot Brain connected. '+result.tickets.length+' saved tickets: '+(counts.working||0)+' marked working, '+(counts.blocked||0)+' blocked, '+(counts.complete||0)+' complete. Working is a label; a commit, test and deployment receipt are separate proof.');
   }
+  showOwnerApprovalRequests(result.tickets);
   const updates=progressTracker.update(result.tickets);
   if(progressUnavailable)updates.unshift('Robot Brain is reachable again. I am checking progress here.');
   progressUnavailable=false;
