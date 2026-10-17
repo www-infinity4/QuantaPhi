@@ -899,6 +899,7 @@ function extract(reply){
 // model replies; real tool/HTTP auth errors and explicit device pairing are not hidden.
 function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  const answer=String(reply||'').trim();
+ if(/\"name\"\s*:\s*\"createTicket\"[\s\S]*\"arguments\"\s*:/.test(answer))return 'Bubbles received a model-generated tool draft. No authenticated ticket or code change was verified by that answer.';
  if(!ownerVerified)return answer;
  const ask=String(request||'');
  if(/\b(?:pair|link|sync|connect)\b.{0,90}\b(?:another|other|second|new|apk|android|phone|device|browser|session)\b/i.test(ask))return answer;
