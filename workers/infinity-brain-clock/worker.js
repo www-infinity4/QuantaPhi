@@ -1,4 +1,5 @@
 import {conversationMemory} from './conversation-memory.mjs';
+import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
