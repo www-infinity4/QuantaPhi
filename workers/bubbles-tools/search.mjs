@@ -1,0 +1,126 @@
+// Public, read-only lookup tools for Bubbles. No user-provided network destination is fetched.
+const trim=(v,n=260)=>String(v??'').replace(/\s+/g,' ').trim().slice(0,n);
+const SAFE_HOST=/^(?!localhost$)(?!.*\.localhost$)(?!.*\.local$)(?!127\.)(?!10\.)(?!192\.168\.)(?!169\.254\.)(?!172\.(?:1[6-9]|2\d|3[01])\.)(?!0\.)(?!\[)(?!.*\.internal$)[a-z0-9.-]+$/i;
+const safeUrl=value=>{try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&SAFE_HOST.test(u.hostname)?u.href:null;}catch{return null;}};
+const getJson=async(fetcher,url,options={})=>{
+ const result=await fetcher(url,{redirect:'error',signal:AbortSignal.timeout(9000),headers:{Accept:'application/json'},...options});
+ if(!result.ok)throw Error('upstream_http_'+result.status);
+ const body=await result.text();
+ if(body.length>650000)throw Error('upstream_too_large');
+ return JSON.parse(body);
+};
+export function lookupKind(message){
+ const s=trim(message,3000);
+ if(/\b(?:build|create|code|implement|repair|fix|develop|design)\b.{0,70}\b(?:weather|forecast)\b.{0,35}\b(?:app|widget|page|site|api)\b/i.test(s))return null;
+ if(/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it)\b/i.test(s))return 'weather.current';
+ if(/^\s*(?:google(?:\s+search|\s+it|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\b/i.test(s)
+   ||/\b(?:search\s+(?:the\s+)?web|search\s+google|look\s+up\s+online|find\s+(?:it\s+)?online|latest\s+(?:information|updates)|what(?:'s| is)\s+the\s+latest)\b/i.test(s))return 'web.search';
+ return null;
+}
+export function searchTerms(utterance){
+ return trim(utterance,1200)
+  .replace(/^\s*(?:please\s+|bubbles[,:]?\s+|could you\s+|can you\s+|i want you to\s+|tell me\s+)?/i,'')
+  .replace(/^(?:google(?:\s+search|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\s*/i,'')
+  .replace(/^\s*(?:for|about)\s+/i,'').replace(/[?.\s]+$/,'').slice(0,350);
+}
+const googleRequested=s=>/\bgoogle\b/i.test(s)&&/\b(?:search|look\s+up|find|google\s+it)\b/i.test(s);
+export async function webSearch(message,env={},fetcher=fetch){
+ const query=searchTerms(message);
+ if(!query||query.length<2)return {ok:false,reason:'query_required',query};
+ const googleIntent=googleRequested(message);
+ const googleSearchUrl='https://www.google.com/search?'+new URLSearchParams({q:query});
+ const attempts=[];
+ let results=[],provider='';
+ // Google Custom Search JSON API can work only for entitled legacy API customers.
+ // Never expose the key to the Android app, webpage or response.
+ if(env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX){
+  try{
+   const endpoint='https://www.googleapis.com/customsearch/v1?'+new URLSearchParams({key:env.GOOGLE_SEARCH_API_KEY,cx:env.GOOGLE_SEARCH_CX,q:query,num:'7',safe:'active'});
+   const raw=await getJson(fetcher,endpoint);
+   results=(raw.items||[]).map(x=>({title:trim(x.title,220),url:safeUrl(x.link),snippet:trim(x.snippet,600),engine:'google'})).filter(x=>x.title&&x.url).slice(0,7);
+   if(results.length)provider='Google Programmable Search';
+  }catch{attempts.push('google_api_unavailable');}
+ }
+ // The owner's existing Infinity Phi / QuantaPhi SearXNG broker is the default.
+ // An explicitly requested Google search first asks SearXNG for its Google engine.
+ // Only rows attributed by the broker to Google are labeled Google results.
+ const broker='https://orange-brook-a2ac.marvaseater.workers.dev/search';
+ const brokerQuery=async(engineOnly)=>{
+  const url=broker+'?'+new URLSearchParams({q:query,format:'json',categories:'general',safesearch:'1',...(engineOnly?{engines:'google'}:{})});
+  const data=await getJson(fetcher,url);
+  const raw=Array.isArray(data.results)?data.results:[];
+  return raw.map(x=>({title:trim(x.title,220),url:safeUrl(x.url),snippet:trim(x.content||x.description,600),
+   engine:trim(x.engine||((Array.isArray(x.engines)&&x.engines.includes('google'))?'google':'web'),45)}))
+   .filter(x=>x.title&&x.url).filter((x,i,all)=>all.findIndex(y=>y.url===x.url)===i).slice(0,7);
+ };
+ if(!results.length&&googleIntent){
+  try{const googleRows=(await brokerQuery(true)).filter(x=>x.engine.toLowerCase()==='google');if(googleRows.length){results=googleRows;provider='Google via Infinity SearXNG';}}
+  catch{attempts.push('searxng_google_unavailable');}
+ }
+ if(!results.length){
+  try{results=await brokerQuery(false);provider='Infinity Phi / QuantaPhi search';}
+  catch{attempts.push('infinity_search_unavailable');}
+ }
+ return {ok:results.length>0,query,results,provider:results.length?provider:'unavailable',googleSearchUrl,
+  googleVerified:results.length>0&&/google/i.test(provider),requestedGoogle:googleIntent,attempts};
+}
+export function weatherPlace(message,location){
+ if(typeof location==='string'&&trim(location,100))return trim(location,100);
+ if(location&&typeof location==='object'&&trim(location.city,80))return trim(location.city+' '+trim(location.state||location.region,60),110);
+ const s=trim(message,400);
+ let match=s.match(/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b[\s\S]*?\b(?:in|for|at|near)\s+([a-z0-9][a-z0-9 ,.'-]{1,110})/i);
+ if(!match)match=s.match(/\b(?:in|at|near)\s+([a-z0-9][a-z0-9 ,.'-]{1,110})\s+(?:weather|forecast)\b/i);
+ return trim((match?.[1]||'').replace(/\b(?:right now|today|tomorrow|this evening|this afternoon|this morning|please|currently)\b.*$/i,''),110);
+}
+const descriptions={
+ 0:'clear',1:'mostly clear',2:'partly cloudy',3:'overcast',45:'foggy',48:'freezing fog',
+ 51:'light drizzle',53:'drizzle',55:'heavy drizzle',56:'freezing drizzle',57:'heavy freezing drizzle',
+ 61:'light rain',63:'rain',65:'heavy rain',66:'freezing rain',67:'heavy freezing rain',
+ 71:'light snow',73:'snow',75:'heavy snow',77:'snow grains',80:'light rain showers',
+ 81:'rain showers',82:'heavy rain showers',85:'snow showers',86:'heavy snow showers',
+ 95:'thunderstorms',96:'thunderstorms with hail',99:'thunderstorms with heavy hail'
+};
+const num=v=>typeof v==='number'&&Number.isFinite(v)?Math.round(v):null;
+export async function currentWeather(message,location=null,fetcher=fetch){
+ const place=weatherPlace(message,location);
+ if(!place)return {ok:false,needsLocation:true,output:'Which town and state should I use for your weather? Tell me once, for example, Albia, Iowa.'};
+ try{
+  const searches=[place];
+  // Geocoder may reject "City State"; try the city portion while matching state.
+  const comma=place.indexOf(',');
+  if(comma>0)searches.push(place.slice(0,comma));
+  else if(place.split(/\s+/).length>=2)searches.push(place.replace(/\s+\S+$/,''));
+  let places=[],geocoderConnected=false;
+  for(const term of [...new Set(searches)]){
+   const endpoint='https://geocoding-api.open-meteo.com/v1/search?'+new URLSearchParams({name:term,count:'10',language:'en',format:'json'});
+   try{const data=await getJson(fetcher,endpoint);geocoderConnected=true;places=data.results||[];if(places.length)break;}catch{/* Try a narrower city query. */}
+  }
+  if(!places.length)return {ok:false,output:geocoderConnected?'I could not identify '+place+' in the weather service. Please give a town and state or postal code.':'I could not reach the live weather service for '+place+'. I have no verified conditions to report.'};
+  const lower=place.toLowerCase();
+  const score=x=>{const city=trim(x.name,90).toLowerCase(),state=trim(x.admin1,90).toLowerCase(),country=trim(x.country,90).toLowerCase();
+   return (lower===city?10:lower.startsWith(city+' ' )||lower.startsWith(city+',')?8:0)
+    +(lower.includes(state)&&state.length>=3?5:0)+(lower.includes(country)&&country.length>=3?2:0);};
+  places.sort((a,b)=>score(b)-score(a));
+  const target=places[0];
+  if(!Number.isFinite(target.latitude)||!Number.isFinite(target.longitude))throw Error('coordinates_missing');
+  const url='https://api.open-meteo.com/v1/forecast?'+new URLSearchParams({
+   latitude:String(target.latitude),longitude:String(target.longitude),
+   current:'temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m',
+   daily:'temperature_2m_max,temperature_2m_min,precipitation_probability_max',
+   temperature_unit:'fahrenheit',wind_speed_unit:'mph',timezone:'auto',forecast_days:'2'});
+  const data=await getJson(fetcher,url),c=data.current,d=data.daily;
+  const temperature=num(c?.temperature_2m),feels=num(c?.apparent_temperature);
+  if(temperature===null||!c?.time)throw Error('observations_missing');
+  const locationLabel=[target.name,target.admin1,target.country].filter(Boolean).join(', ');
+  const text=['For '+locationLabel+', the latest reported temperature is '+temperature+' degrees Fahrenheit',
+   (descriptions[c.weather_code]||'weather conditions unavailable')+'.'];
+  if(feels!==null)text.push('Feels like '+feels+' degrees.');
+  if(num(c.wind_speed_10m)!==null)text.push('Wind '+num(c.wind_speed_10m)+' miles per hour.');
+  if(num(d?.temperature_2m_max?.[0])!==null&&num(d?.temperature_2m_min?.[0])!==null)
+   text.push('Today’s high is '+num(d.temperature_2m_max[0])+' and low '+num(d.temperature_2m_min[0])+' degrees.');
+  if(num(d?.precipitation_probability_max?.[0])!==null)text.push('Today’s peak precipitation chance is '+num(d.precipitation_probability_max[0])+' percent.');
+  text.push('Updated '+c.time+' '+trim(data.timezone_abbreviation||data.timezone,50)+'.');
+  return {ok:true,output:text.join(' '),location:locationLabel,observedAt:c.time,timeZone:data.timezone,
+   provider:'Open-Meteo',sourceUrl:'https://open-meteo.com/en/docs',temperatureF:temperature};
+ }catch{return {ok:false,output:'I could not reach the live weather service for '+place+'. I have no verified conditions to report.'};}
+}

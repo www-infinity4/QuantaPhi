@@ -1072,7 +1072,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   status.textContent=response;nativeSpeechPending=false;return;
  }
  if(/^(?:(?:please|bubbles)[\s,:]+)*(?:what tools (?:do you have|can you use)|what can you do|list (?:your|available) tools)[.!?]*$/i.test(spoken)){
-  const local='Available Bubbles tools: Oracle conversation, news research, resonance calculator, personal notes, saved Bubbles memory and user-approved story suggestions.';
+  const local='Available Bubbles tools: Oracle conversation, live Infinity Phi web search, town-level weather, Google-engine lookup when available, news research, resonance calculator, personal notes, saved Bubbles memory and user-approved story suggestions.';
   const owner=embedded?'This embedded visitor assistant cannot control the QuantaPhi Robot Brain.':
    'With a verified owner wallet I can submit Robot Brain tickets and read receipts; Greenbeans and Pink Panther still need runner authorization, source tests and verified merge results.';
   const android=nativeOverlay?'The Android app can record sound and request screen capture, and read visible screen text when Accessibility permission is enabled. Images require Android screen permission. ChatGPT plan inference runs only if connected in this APK.':
@@ -1289,6 +1289,18 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }
   return;
  }
+ // Search and weather always use real network data instead of expecting a chat model to invent it.
+ // If Bubbles asked for a town, the next town-only answer is a weather continuation.
+ const lastAssistant=messages.slice(-4).reverse().find(item=>item.role==='assistant')?.text||'';
+ const townFollowup=/Which town and state should I use for your weather/i.test(lastAssistant)&&/^[a-z0-9 ,.'-]{2,75}$/i.test(request);
+ const lookupRequest=townFollowup?'weather in '+request:request;
+ const liveLookup=/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it)\b/i.test(lookupRequest)
+  ||/^\s*(?:(?:please|bubbles[, ]+|can you |could you )\s*)?(?:google|search|look up|find online|browse the web)\b/i.test(lookupRequest)
+  ||/\b(?:search the web|search google|look up online|find it online|latest information|latest updates|what(?:'s| is) the latest)\b/i.test(lookupRequest);
+ let savedWeatherTown='';
+ const explicitWeatherTown=/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b.{0,85}\b(?:in|for|at|near)\s+[a-z0-9]/i.test(lookupRequest);
+ try{if(liveLookup&&!explicitWeatherTown&&/\b(?:weather|forecast|temperature|rain|snow)\b/i.test(lookupRequest))savedWeatherTown=localStorage.getItem('bubbles-weather-town')||'';}catch{}
+ const lookupPayload=()=>({request:lookupRequest,input:prompt,location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
@@ -1304,16 +1316,31 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const detailed=isOwnerWorkRequest(request)||/\b(?:analy[sz]e|diagnose|architecture|debug|design|research|thorough|compare|deeply|repository)\b/i.test(request);
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),detailed?60000:38000);
   let response,json;try{
-  if(nativeOverlay&&nativeGPTAvailable&&!config.privateContext){
+  if(nativeOverlay&&nativeGPTAvailable&&!config.privateContext&&!liveLookup){
    try{const output=await nativeChatGPT(prompt);response={ok:true};json={ok:true,output,provider:'Android ChatGPT plan'};gptStatus.textContent='Response generated using the authorized ChatGPT plan on this phone.'}
    catch(error){nativeGPTAvailable=false;gptStatus.textContent='Android ChatGPT unavailable; using Oracle: '+String(error.message||error).slice(0,90);
-    response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}
-  }else if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify({request,input:prompt,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}})});json=await response.json()}}finally{clearTimeout(timer)}
+    response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}
+  }else if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}}finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
   const rawAnswer=extract(json);if(!rawAnswer)throw Error('The AI returned no spoken or written reply');
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
+   if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
   messages.push({role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
   display(answer,'ai');status.textContent=config.alias+' · response received';
+  // Search sources remain tappable in this same Bubbles chat; voice never reads raw URLs.
+  if(json.receipt?.tool==='web.search'){
+   const row=create('div','ba-message-actions ba-search-sources');
+   for(const item of (Array.isArray(json.sources)?json.sources:[]).slice(0,6)){
+    try{const url=new URL(item.url);if(url.protocol!=='https:')continue;
+     const link=create('a','ba-miniaction',String(item.title||url.hostname).slice(0,80));
+     link.href=url.href;link.rel='noopener noreferrer';link.target='_blank';row.append(link);
+    }catch{}
+   }
+   if(json.googleSearchUrl){try{const url=new URL(json.googleSearchUrl);if(url.protocol==='https:'&&url.hostname==='www.google.com'){
+    const link=create('a','ba-miniaction','Google results ↗');link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';row.append(link);
+   }}catch{}}
+   if(row.childElementCount)conversation.lastElementChild?.append(row);
+  }
   if(json.receipt?.tool?.startsWith('resonance.')&&json.url==='https://quantaphi.org/resonance.html'){
    const row=create('div','ba-message-actions');
    const link=create('a','ba-link','Open Resonance Calculator ↗');
