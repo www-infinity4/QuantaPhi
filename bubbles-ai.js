@@ -1298,7 +1298,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   ||/^\s*(?:(?:please|bubbles[, ]+|can you |could you )\s*)?(?:google|search|look up|find online|browse the web)\b/i.test(lookupRequest)
   ||/\b(?:search the web|search google|look up online|find it online|latest information|latest updates|what(?:'s| is) the latest)\b/i.test(lookupRequest);
  let savedWeatherTown='';
- try{if(liveLookup&&/\b(?:weather|forecast|temperature|rain|snow)\b/i.test(lookupRequest))savedWeatherTown=localStorage.getItem('bubbles-weather-town')||'';}catch{}
+ const explicitWeatherTown=/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b.{0,85}\b(?:in|for|at|near)\s+[a-z0-9]/i.test(lookupRequest);
+ try{if(liveLookup&&!explicitWeatherTown&&/\b(?:weather|forecast|temperature|rain|snow)\b/i.test(lookupRequest))savedWeatherTown=localStorage.getItem('bubbles-weather-town')||'';}catch{}
  const lookupPayload=()=>({request:lookupRequest,input:prompt,location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
