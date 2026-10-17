@@ -5,6 +5,12 @@ const errors=[];window.addEventListener('error',event=>{errors.push(String(event
 window.BubblesCardDiagnostics=()=>({id:card?.id,loaded:status.hidden,errors:errors.slice(-8)});
 if(!card){status.textContent='This card is not registered.';}else{
  const mount=document.createElement('section');mount.id=card.mount;document.body.append(mount);
+ // Multi-part catalog cards (Media Star's person picker and Fred player) need both roots
+ // in place before the registered scripts execute. Never load undeclared remote scripts.
+ for(const id of card.extraMounts||[]){
+  if(id===card.mount)continue;
+  const extra=document.createElement('section');extra.id=id;document.body.append(extra);
+ }
  for(const path of card.styles){const link=document.createElement('link');link.rel='stylesheet';link.href='/'+path;document.head.append(link);}
  try{
   for(const path of ['cloud-wallet-client.js',...card.scripts])await new Promise((resolve,reject)=>{

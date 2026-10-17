@@ -61,3 +61,43 @@ test('radio opens in chat, invokes its actual play control and reports observed 
   assert.equal(workspace.stage.children.length,1);
  }finally{delete globalThis.document;delete globalThis.location;}
 });
+
+test('Media Star commands resolve to the real player and person picker, not the blank creator',()=>{
+ const player=findCard('Media Star');
+ assert.equal(player.id,'media-star');
+ assert.equal(player.mount,'fredSpacesRadio');
+ assert.deepEqual(player.extraMounts,['followingSpacesRadio']);
+ assert.ok(player.scripts.includes('fred-spaces-radio.js'));
+ assert.ok(player.scripts.includes('following-spaces-radio.js'));
+ assert.equal(findCard('Media Star Creator').mount,'mediaStarCreator');
+ const open=[
+  'Media Star card',
+  'Media Star',
+  'I want the Media Star card',
+  'Bubbles, show me Media Star card in chat',
+  'Can you bring up the Media Star card?',
+  'Bring in the Media Star card into chat',
+  'Pull up Media Star',
+  'Show me the Media Star player',
+  'Give me Media Star, please',
+  'Please open Media Star card'
+ ];
+ for(const phrase of open){
+  const intent=cardIntent(phrase);
+  assert.equal(intent?.action,'open',phrase);
+  assert.equal(intent.card.id,'media-star',phrase);
+ }
+ for(const phrase of ['Play the Media Star card','I want to hear Infinity Radio','Can you listen to Infinity Radio?']){
+  assert.equal(cardIntent(phrase)?.action,'play',phrase);
+ }
+ for(const phrase of [
+  'Do not open Media Star',
+  'Fix the Media Star card',
+  'Can you repair Media Star?',
+  'What is Media Star?',
+  'Build a Media Star app',
+  'Explain the Media Star card'
+ ]){
+  assert.equal(cardIntent(phrase),null,phrase);
+ }
+});
