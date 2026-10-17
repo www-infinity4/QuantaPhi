@@ -28,3 +28,10 @@ test('only current-article research requires Android screen evidence',()=>{
  assert.equal(c.articleNeedsScreen("Research this article"),true);
  assert.equal(c.articleNeedsScreen("Research the RadioShack history article"),false);
 });
+
+// These phrases previously bypassed Android and received a text-only response.
+test('conversational screen questions and actions request Android evidence',()=>{
+ const c={};vm.createContext(c);vm.runInContext(functions,c);
+ for(const q of ['Can you see my screen?', 'Could you read this page?', 'Please look at my screen', 'Can you tap the Search button?', 'scroll down']) assert.equal(c.requestsScreen(q),true,q);
+ for(const q of ['Tell me about Mozart','I bought a new phone','Research the RadioShack history article']) assert.equal(c.requestsScreen(q),false,q);
+});
