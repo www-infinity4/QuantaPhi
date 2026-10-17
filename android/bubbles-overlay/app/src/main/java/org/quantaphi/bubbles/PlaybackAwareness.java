@@ -22,7 +22,8 @@ final class PlaybackAwareness {
             @Override public void onPlaybackConfigChanged(List<AudioPlaybackConfiguration> configs) {
                 boolean active = false;
                 if (configs != null) for (AudioPlaybackConfiguration config : configs) {
-                    if (!config.isActive()) continue;
+                    // getActivePlaybackConfigurations() contains active sessions;
+                    // isActive() itself is hidden from ordinary Android apps.
                     int usage = config.getAudioAttributes().getUsage();
                     if (usage == AudioAttributes.USAGE_MEDIA || usage == AudioAttributes.USAGE_GAME) {
                         active = true;
