@@ -286,3 +286,9 @@
 .ba-card-workspace p {font-size:13px;line-height:1.4;}
 .ba-card-catalog {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;max-height:320px;overflow:auto;}
 .ba-card-catalog button {min-height:44px;border:1px solid #c8b7d9;border-radius:10px;background:#f7f2fc;color:#37244b;padding:8px;}
+
+/* Intelligent repository chooser: keep suggestions readable in the Android overlay. */
+.ba-repository-picker .ba-repository-filter{box-sizing:border-box;display:block;width:100%;min-height:44px;margin:10px 0 5px;padding:8px 12px;border:1px solid #a89bc6;border-radius:10px;background:#fff;color:#291d3b;font:inherit;}
+.ba-repository-picker .ba-repository-suggested{border-left:4px solid #7453bf;background:#f4edfd;padding-left:6px;border-radius:6px;}
+.ba-repository-picker .ba-muted{line-height:1.45;overflow-wrap:anywhere;}
+.ba-repository-picker .ba-control{width:100%;margin:6px 0;padding:8px 10px;min-height:42px;}
