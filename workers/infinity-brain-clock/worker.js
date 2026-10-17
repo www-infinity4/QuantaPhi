@@ -9,6 +9,7 @@ import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from '
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
+import {DEFERRED_REVIEW_INTERVAL_MS,sourceRecoveryEligibility,inspectDeferredSources,recoveryDecision} from './deferred-recovery.mjs';
 import {ticketStatusFromJobs} from './ticket-status.mjs';
 import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
 import { evidenceBucket } from './evidence-db.mjs';
@@ -325,7 +326,7 @@ export class BrainClock extends DurableObject{
   if(fresh){
    const context=JSON.parse(fresh.context_json),job=(context.color_jobs||[]).find(j=>j.id===lease.jobId);
    if(job && await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}))===lease.revision){
-    job.status=body.status==='deployed_verified'?'complete':body.status==='committed_unverified'?'committed_unverified':'blocked';job.progress={attemptedAt:receipt.when,summary:message,next:body.status==='deployed_verified'?'Verified in the deployed Android browser.':body.status==='committed_unverified'?'Source committed; deployed browser verification still required.':'Runner will retry after backoff.',blocker:body.status==='deployed_verified'?'':body.status,commitSha:receipt.commitSha,runUrl};
+    job.status=body.status==='deployed_verified'?'complete':body.status==='committed_unverified'?'committed_unverified':'blocked';job.progress={...job.progress,attemptedAt:receipt.when,summary:message,next:body.status==='deployed_verified'?'Verified in the deployed Android browser.':body.status==='committed_unverified'?'Source committed; deployed browser verification still required.':'Runner will retry after backoff.',blocker:body.status==='deployed_verified'?'':body.status,commitSha:receipt.commitSha,runUrl};
     if(body.status==='blocked')attachTechnicalHandoff(context,job,receipt);
     await this.env.WORK_DB.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND context_json=?').bind(JSON.stringify(context),ticketStatusFromJobs(context.color_jobs),Date.now(),lease.ticketId,fresh.context_json).run();
    }
@@ -384,6 +385,78 @@ export class BrainClock extends DurableObject{
   }
   await this.ctx.storage.put('queue-reconciliation',{...summary,when:now});
   return summary;
+ }
+ async recoverDeferredWork(){
+  // Never let speculative background work monopolize the authenticated
+  // queue. Probe at most ONE deferred technical ticket per hour, source-only.
+  const now=Date.now();
+  if(Number(await this.ctx.storage.get('deferred-recovery-next-at')||0)>now)
+   return {state:'recovery_cooldown'};
+  await this.ctx.storage.put('deferred-recovery-next-at',now+DEFERRED_REVIEW_INTERVAL_MS);
+  const rows=await this.env.WORK_DB.prepare(
+   "SELECT id,created_at,status,request,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100"
+  ).bind(this.env.WRITER_OWNER_HASH).all();
+  for(const row of rows.results||[]){
+   let context;try{context=JSON.parse(row.context_json)}catch{continue}
+   for(const job of context.color_jobs||[]){
+    const allowed=sourceRecoveryEligibility(job,{now});
+    if(!allowed.eligible)continue;
+    const inspection=await inspectDeferredSources(job,{now});
+    const decision=recoveryDecision(job,inspection,{now});
+    const recovery=decision.recovery;
+    // Re-read and compare the immutable original ticket before any
+    // modification. An owner approval, lease or concurrent result wins.
+    const latest=await this.env.WORK_DB.prepare(
+     'SELECT id,context_json FROM work_tickets WHERE id=? AND owner_hash=?'
+    ).bind(row.id,this.env.WRITER_OWNER_HASH).first();
+    if(!latest||latest.context_json!==row.context_json)continue;
+    const updated=JSON.parse(latest.context_json);
+    const target=(updated.color_jobs||[]).find(j=>j.id===job.id);
+    if(!target||target.status!=='blocked'||target.instructions!==job.instructions)continue;
+    const priorReceipt=target.progress?.commitSha||target.progress?.testsPassed===true;
+    if(priorReceipt)continue;
+    if(decision.requeue){
+     // Only a VERIFIED technical source is remediated. Never declare owner
+     // approval or overwrite acceptance, deps, permissions or wallet state.
+     target.instructions=decision.instructions;
+     target.status='queued';
+     target.queue_priority=Math.min(0,Number.isFinite(target.queue_priority)?target.queue_priority:0);
+     target.progress={...target.progress,
+      summary:'Previously deferred technical sources were verified against a pinned GitHub commit; queued for authenticated implementation.',
+      blocker:'',
+      next:'Blue and Green must inspect the verified source contract and run real tests. Owner/security decisions remain separately gated.',
+      deferredRecovery:recovery};
+    }else{
+     target.progress={...target.progress,deferredRecovery:recovery,
+      next:recovery.status==='review_exhausted'?
+       'Verified-source retries exhausted; Blue should identify the remaining specific technical input, without repeating a speculative repair.':
+       'Source discovery is retained for a bounded follow-up; any missing owner-only choice must be requested explicitly.'};
+    }
+    const json=JSON.stringify(updated);
+    if(json.length>64000){
+     await this.ctx.storage.put('deferred-recovery-status',{
+      at:now,ticketId:row.id,jobId:job.id,state:'context_limit',reviewAfter:now+DEFERRED_REVIEW_INTERVAL_MS});
+     return {state:'context_limit',ticketId:row.id,jobId:job.id};
+    }
+    const nextStatus=ticketStatusFromJobs(updated.color_jobs);
+    const write=await this.env.WORK_DB.prepare(
+     "UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?"
+    ).bind(json,nextStatus,now,row.id,this.env.WRITER_OWNER_HASH,row.context_json).run();
+    if(write?.meta?.changes!==1)continue;
+    const receipt={at:now,ticketId:row.id,jobId:job.id,
+     state:decision.requeue?'requeued_for_verified_source_build':recovery.status,
+     verifiedPaths:recovery.sourceReceipts?.map(s=>s.path)||[],
+     sourceCommit:inspection.pinnedCommit||'',reviewAfter:recovery.nextEligibleAt};
+    await this.ctx.storage.put('deferred-recovery-status',receipt);
+    await this.emit('blueberry','purple-pearl','deferred recovery',
+     row.id+'/'+job.id+': '+receipt.state+'. Source evidence '+receipt.verifiedPaths.length+
+     ' verified. Original owner request and safety gates retained.');
+    return receipt;
+   }
+  }
+  const outcome={at:now,state:'no_due_deferred_technical_work'};
+  await this.ctx.storage.put('deferred-recovery-status',outcome);
+  return outcome;
  }
  async retryPendingWork(){
   await this.reconcilePendingWork();
@@ -588,7 +661,7 @@ export class BrainClock extends DurableObject{
   }
   if(new URL(request.url).pathname==='/preview'){const sha=new URL(request.url).searchParams.get('sha');const preview=/^[a-f0-9]{40}$/.test(sha||'')?await this.ctx.storage.get('preview:'+sha):null;return preview?Response.json({ok:true,preview}):Response.json({ok:false,error:'preview_not_found'},{status:404});}
   const state=await this.ctx.storage.get('state')||{status:'starting'};
-  if(new URL(request.url).pathname==='/feed')return Response.json({schemaVersion:1,items:await this.ctx.storage.get('events')||[],previews:await this.ctx.storage.get('previews')||[],engine:await this.ctx.storage.get('engine-capability')||null,state});
+  if(new URL(request.url).pathname==='/feed')return Response.json({schemaVersion:1,items:await this.ctx.storage.get('events')||[],previews:await this.ctx.storage.get('previews')||[],engine:await this.ctx.storage.get('engine-capability')||null,deferredRecovery:await this.ctx.storage.get('deferred-recovery-status')||null,state});
   return Response.json({ok:true,...state,periodMs:PERIOD,nextAlarm:await this.ctx.storage.getAlarm(),executor:'authenticated GitHub writer for brain-interface jobs',writer:await this.ctx.storage.get('writerHeartbeat')||null});
  }
  async archiveOlderPreviews(){
@@ -609,6 +682,7 @@ export class BrainClock extends DurableObject{
   try{
    try{await this.archiveOlderPreviews()}catch(e){await this.ctx.storage.put('evidence-archive-error',{when:Date.now(),error:String(e.message).slice(0,200)})}
    if(await this.ctx.storage.get('bot-work-recipient'))await this.settleWork();
+   try{await this.recoverDeferredWork()}catch(error){await this.ctx.storage.put('deferred-recovery-status',{at:Date.now(),state:'recovery_error',reason:String(error.message||error).slice(0,160)});}
    try{await this.retryPendingWork()}catch(error){await this.ctx.storage.put('alarm-dispatch-error',{when:Date.now(),reason:String(error.message||error).slice(0,160)});}
    const page=await read('https://quantaphi.org/',150000);
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();

@@ -5,6 +5,8 @@ on:
       - 'workers/infinity-brain-clock/arbitration-evidence.mjs'
       - 'workers/infinity-brain-clock/arbitration-evidence.test.mjs'
       - 'workers/infinity-brain-clock/worker.js'
+      - 'workers/infinity-brain-clock/deferred-recovery.mjs'
+      - 'test/brain-deferred-recovery.test.mjs'
       - '.github/workflows/brain-window-review.yml'
   push:
     branches: [main]
@@ -29,6 +31,8 @@ jobs:
       - name: Parse Worker and bounded review implementation
         run: |
           node --check workers/infinity-brain-clock/worker.js
+          node --check workers/infinity-brain-clock/deferred-recovery.mjs
+          node --test test/brain-deferred-recovery.test.mjs
           node --check workers/infinity-brain-clock/arbitration-evidence.mjs
       - name: Test exact-source hash and unsafe-window rejection
         run: node --test workers/infinity-brain-clock/arbitration-evidence.test.mjs workers/infinity-brain-clock/job-quant.test.mjs
