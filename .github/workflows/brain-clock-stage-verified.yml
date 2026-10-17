@@ -38,6 +38,7 @@ jobs:
           node --check workers/infinity-brain-clock/ticket-selector.mjs
           node --test \
             test/brain-ticket-selector.test.mjs \
+            test/brain-deferred-recovery.test.mjs \
             test/brain-queue-order.test.mjs \
             test/brain-clock.test.mjs \
             test/bubbles-runner-dispatch.test.mjs \
