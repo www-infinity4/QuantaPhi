@@ -170,7 +170,17 @@ function describeTickets(tickets,limit=10){
   +selected.map((e,i)=>(i+1)+'. '+e.description).join('\n');
 }
 function speechText(value){
- return String(value||'').replace(/\[([^\]]+)\]\(https?:\/\/[^)]+\)/gi,'$1').replace(/https?:\/\/\S+|www\.\S+/gi,'').replace(/\b[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:com|org|net|dev|app|io)(?:\/[^\s]*)?/gi,'').replace(/\s+/g,' ').trim();
+ // Spoken narration is a different representation from the visible chat.
+ // Never read formatting symbols, code fences, URLs or markdown syntax aloud.
+ return String(value||'')
+  .replace(/\x60{3}[\s\S]*?\x60{3}/g,' ')
+  .replace(/!?\[([^\]]+)\]\(https?:\/\/[^)]+\)/gi,'$1')
+  .replace(/https?:\/\/\S+|www\.\S+/gi,' ')
+  .replace(/\b[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:com|org|net|dev|app|io)(?:\/[^\s]*)?/gi,' ')
+  .replace(/^\s*(?:[-+•]\s+|\d+[.)]\s+)/gm,' ')
+  .replace(/[*/\\_()\[\]{}<>\x60~|#^]+/g,' ')
+  .replace(/&/g,' and ')
+  .replace(/\s+/g,' ').trim();
 }
 function progressState(ticket){
  const jobs=ticket.context?.color_jobs||[];
