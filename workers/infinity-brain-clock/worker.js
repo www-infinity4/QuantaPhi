@@ -8,6 +8,7 @@ import {githubOperation,directGithubAgent,validateRepository,suggestRepositories
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
+import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
 import {ticketStatusFromJobs} from './ticket-status.mjs';
 import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
 import { evidenceBucket } from './evidence-db.mjs';
@@ -183,11 +184,19 @@ export class BrainClock extends DurableObject{
    return Response.json({ok:true,status:preview.status});
   }
   if(path==='/runner/claim'){
-   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at DESC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
    const requested=await this.ctx.storage.get('requested-next-job');
-   const candidates=(rows.results||[]).flatMap(ticket=>{const context=JSON.parse(ticket.context_json);return (context.color_jobs||[]).map(job=>({ticket,jobs:context.color_jobs,job}))});
+   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at DESC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+   // The owner-selected ticket can be older than the bounded 100-row scan.
+   // Add it read-only by exact owner partition; never silently lose priority.
+   if(requested?.ticketId&&!(rows.results||[]).some(t=>t.id===requested.ticketId)){
+    const target=await this.env.WORK_DB.prepare("SELECT id,context_json,request,created_at FROM work_tickets WHERE id=? AND owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions'").bind(requested.ticketId,this.env.WRITER_OWNER_HASH).first();
+    if(target)rows.results=[target,...(rows.results||[])];
+   }
+   const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json)}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
    sortCandidates(candidates,requested);
-   for(const {ticket,jobs,job} of candidates){
+   const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
+   await this.ctx.storage.put('writer-queue-selector',{when:Date.now(),examined:admission.examined,deferred:admission.deferred.slice(0,40)});
+   for(const {ticket,jobs,job} of admission.allowed){
     {
      if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified','merged_verified'].includes(job.status))continue;
      if(engine&&(job.dependencies||[]).some(id=>jobs.some(j=>j.id===id&&!['complete','deployed_verified','merged_verified'].includes(j.status))))continue;
@@ -197,7 +206,7 @@ export class BrainClock extends DurableObject{
      const repositoryLease=await this.ctx.storage.get('repository-lease:'+job.repository);
      if(repositoryLease?.leaseUntil>Date.now())continue;
      const deps=(job.dependencies||[]).map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
-     if(!eligibleForRetry(job,{now:Date.now(),prior:previous,lease:repositoryLease,deps}).eligible)continue;
+     if(!checkOwnerRunnerRequest(job,{now:Date.now(),prior:previous,lease:repositoryLease,deps}).eligible)continue;
      const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+(engine?40:20)*60*1000,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
      const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
      const memories=[];for(const item of quantIndex.filter(q=>q.repository===job.repository).slice(0,5)){const q=await this.ctx.storage.get(item.id);if(q)memories.push(q);}
