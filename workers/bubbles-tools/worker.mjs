@@ -146,7 +146,7 @@ async function execute(request,env,body){
  }
  if(tool==='weather.current'){
   const result=await currentWeather(question,body.location||body.context?.location);
-  return response(request,{ok:true,...result,receipt:{...receipt,status:result.ok?'complete':result.needsLocation?'needs_input':'failed',provider:result.provider||'Open-Meteo',observedAt:result.observedAt||null}});
+  return response(request,{...result,ok:true,receipt:{...receipt,status:result.ok?'complete':result.needsLocation?'needs_input':'failed',provider:result.provider||'Open-Meteo',observedAt:result.observedAt||null}});
  }
  if(tool==='web.search'){
   const result=await webSearch(question,env);
