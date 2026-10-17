@@ -38,9 +38,9 @@ test('unverified completion cannot claim a finished job',()=>{
 test('multiple claimed jobs are quiet until each completion receipt arrives',()=>{
  const p=new ProgressTracker();
  p.update([ticket([job('queued',{},'J1'),job('queued',{},'J2')])]);
- assert.deepEqual(p.update([ticket([started(),{...started(),id:'J2'}])]),[]);
- assert.deepEqual(p.update([ticket([finished(),{...started(),id:'J2'}])]),['UI job finished.']);
- assert.deepEqual(p.update([ticket([finished(),{...finished(),id:'J2'}])]),['UI job finished.']);
+ assert.deepEqual(p.update([ticket([{...started(),id:'J1'},{...started(),id:'J2'}])]),[]);
+ assert.deepEqual(p.update([ticket([{...finished(),id:'J1'},{...started(),id:'J2'}])]),['UI job finished.']);
+ assert.deepEqual(p.update([ticket([{...finished(),id:'J1'},{...finished(),id:'J2'}])]),['UI job finished.']);
 });
 test('source telemetry does not speak routine alarm and dispatch retries',()=>{
  const fs=require('node:fs');
