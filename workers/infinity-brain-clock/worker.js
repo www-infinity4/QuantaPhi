@@ -393,18 +393,20 @@ export class BrainClock extends DurableObject{
   // Across ALL pending jobs, run at most one automatic GitHub dispatch per
   // five minutes. Otherwise hundreds of blocked tickets could flood Actions.
   if((await this.ctx.storage.get('alarm-global-next-at')||0)>now)return {state:'global_dispatch_cooldown'};
-  const rows=await this.env.WORK_DB.prepare("SELECT id,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
-  for(const row of rows.results||[]){
-   let context;try{context=JSON.parse(row.context_json||'{}')}catch{continue}
-   const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];
-   for(const job of jobs){
+  const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+  const requested=await this.ctx.storage.get('requested-next-job');
+  const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json||'{}')}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
+  sortCandidates(candidates,requested);
+  const admission=filterActiveTickets(candidates,{requested,now});
+  await this.ctx.storage.put('alarm-queue-selector',{when:now,examined:admission.examined,deferred:admission.deferred.slice(0,40)});
+  for(const {ticket:row,jobs,job} of admission.allowed){
     if(!job?.id||!job?.repository||!job?.instructions)continue;
     const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
     const writerKey='writer:'+row.id+':'+job.id+':'+revision;
     const retryKey='alarm-retry:'+row.id+':'+job.id+':'+revision;
     const [prior,lease,retry]=await Promise.all([this.ctx.storage.get(writerKey),this.ctx.storage.get('repository-lease:'+job.repository),this.ctx.storage.get(retryKey)]);
     const deps=(job.dependencies||[]).map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
-    const decision=eligibleForRetry(job,{now,prior,lease,retry,deps});
+    const decision=checkOwnerRunnerRequest(job,{now,prior,lease,retry,deps});
     if(!decision.eligible)continue;
     // Persist a lease-like cooldown *before* the network call. Unexpected
     // termination cannot trigger a dispatch storm on the next wake.
@@ -421,7 +423,6 @@ export class BrainClock extends DurableObject{
     await recordRedBrain(this.ctx.storage,{kind:'alarm_dispatch',state:outcome.state,ticketId:row.id,jobId:job.id,reason:outcome.reason});
     await this.emit('purple-pearl','red-bubbles','alarm runner retry',row.id+'/'+job.id+': '+outcome.state+'. '+outcome.reason);
     return report;
-   }
   }
   return {state:'idle_no_eligible_work'};
  }
