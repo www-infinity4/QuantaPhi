@@ -1,0 +1,5 @@
+name = "bubbles-live"
+main = "index.js"
+compatibility_date = "2026-10-17"
+# Configure OPENAI_API_KEY and BUBBLES_LIVE_OWNER_TOKEN as Worker secrets.
+# Do not place credentials here. Deployment does not verify a paid voice session.
