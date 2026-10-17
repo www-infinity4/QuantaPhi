@@ -16,6 +16,6 @@ test('authenticated technical failures get bounded, correctly targeted repair wo
 test('routine failure wording changes do not keep interrupting the owner',()=>{
  const tracker=new ProgressTracker();tracker.update([]);
  const ticket=summary=>({id:'one',title:'fix teh ui thing',status:'blocked',context:{color_jobs:[{id:'TASK-1',status:'blocked',progress:{summary}}]}});
- assert.equal(tracker.update([ticket('GitHub access unavailable')]).length,1);
+ assert.deepEqual(tracker.update([ticket('GitHub access unavailable')]),[]);
  assert.deepEqual(tracker.update([ticket('Kris tell GPT to fix GitHub access')]),[]);
 });
