@@ -18,7 +18,7 @@ export function ticketAdmission(candidate,{
 }={}){
  const ticket=candidate?.ticket,job=candidate?.job;
  if(!ticket?.id||!job?.id)return {eligible:false,reason:'invalid_ticket_candidate'};
- const selected=ticket.id===requested?.ticketId&&job.id===requested?.jobId;
+ const selected=ticket.id===requested?.ticketId&&(!requested?.jobId||job.id===requested.jobId);
  const summary=[job.progress?.summary,job.progress?.blocker,job.progress?.next]
   .filter(v=>typeof v==='string').join(' ');
  // An owner-selected job may jump the aging queue, but an owner decision
