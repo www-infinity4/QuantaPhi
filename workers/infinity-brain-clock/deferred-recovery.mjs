@@ -113,7 +113,7 @@ export function recoveryDecision(job,inspection,{now=Date.now()}={}){
   return {requeue:false,recovery:{...result,status:'review_exhausted',nextEligibleAt:now+DEFERRED_JOB_COOLDOWN_MS}};
  if(DANGER.test(statusText(job)))
   return {requeue:false,recovery:{...result,status:'owner_or_security_decision',nextEligibleAt:now+DEFERRED_JOB_COOLDOWN_MS}};
- const note='\n\n[Verified deferred recovery source]\nRead-only GitHub commit '+inspection.pinnedCommit+'): '+
+ const note='\n\n[Verified deferred recovery source]\nRead-only GitHub commit '+inspection.pinnedCommit+': '+
   found.map(x=>x.path+' SHA-256 '+x.sha256).join('; ')+
   '. Inspect actual project source, exports, UI references and schema before editing. '+
   'Do not invent APIs, audio timing or assets, and preserve all owner/security and acceptance requirements.';
