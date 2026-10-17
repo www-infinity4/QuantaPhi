@@ -1,5 +1,6 @@
 import {conversationMemory} from './conversation-memory.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
+import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
@@ -334,6 +335,41 @@ export class BrainClock extends DurableObject{
    const result={...receipt,when:Date.now()};await this.ctx.storage.put('last-owner-dispatch',result);return result;
   }catch(error){return {status:'scheduled_fallback',error:String(error.message).slice(0,150)};}
  }
+ async retryPendingWork(){
+  // A Durable Object alarm can wake the repository dispatch without the Android
+  // process running. The GitHub runner still owns authenticated code writes.
+  const now=Date.now();
+  const rows=await this.env.WORK_DB.prepare("SELECT id,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+  for(const row of rows.results||[]){
+   let context;try{context=JSON.parse(row.context_json||'{}')}catch{continue}
+   const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];
+   for(const job of jobs){
+    if(!job?.id||!job?.repository||!job?.instructions)continue;
+    const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
+    const writerKey='writer:'+row.id+':'+job.id+':'+revision;
+    const retryKey='alarm-retry:'+row.id+':'+job.id+':'+revision;
+    const [prior,lease,retry]=await Promise.all([this.ctx.storage.get(writerKey),this.ctx.storage.get('repository-lease:'+job.repository),this.ctx.storage.get(retryKey)]);
+    const deps=(job.dependencies||[]).map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
+    const decision=eligibleForRetry(job,{now,prior,lease,retry,deps});
+    if(!decision.eligible)continue;
+    // Persist a lease-like cooldown *before* the network call. Unexpected
+    // termination cannot trigger a dispatch storm on the next wake.
+    const attempting={...retry,attempts:Math.max(0,retry?.attempts||0)+1,lastAttemptAt:now,nextAt:now+5*60*1000,state:'dispatch_attempting'};
+    await this.ctx.storage.put(retryKey,attempting);
+    let dispatch;try{dispatch=await this.dispatchRunner()}catch(error){
+     dispatch={status:'scheduled_fallback',error:String(error.message||error).slice(0,140)};
+    }
+    const outcome=nextRetryState({...retry,attempts:Math.max(0,retry?.attempts||0)},dispatch,now);
+    await this.ctx.storage.put(retryKey,outcome);
+    const report={...outcome,ticketId:row.id,jobId:job.id,repository:job.repository};
+    await this.ctx.storage.put('alarm-dispatch-state',report);
+    await recordRedBrain(this.ctx.storage,{kind:'alarm_dispatch',state:outcome.state,ticketId:row.id,jobId:job.id,reason:outcome.reason});
+    await this.emit('purple-pearl','red-bubbles','alarm runner retry',row.id+'/'+job.id+': '+outcome.state+'. '+outcome.reason);
+    return report;
+   }
+  }
+  return {state:'idle_no_eligible_work'};
+ }
  async directGithub(body){
   if(!/^[0-9a-f-]{36}$/i.test(body.requestId||''))return {ok:false,error:'request_id_required'};
   const key='direct-github:'+body.requestId;
@@ -479,6 +515,7 @@ export class BrainClock extends DurableObject{
   try{
    try{await this.archiveOlderPreviews()}catch(e){await this.ctx.storage.put('evidence-archive-error',{when:Date.now(),error:String(e.message).slice(0,200)})}
    if(await this.ctx.storage.get('bot-work-recipient'))await this.settleWork();
+   try{await this.retryPendingWork()}catch(error){await this.ctx.storage.put('alarm-dispatch-error',{when:Date.now(),reason:String(error.message||error).slice(0,160)});}
    const page=await read('https://quantaphi.org/',150000);
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
    let selected=null;

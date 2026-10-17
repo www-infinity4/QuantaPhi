@@ -7,7 +7,7 @@ const clip=(value,n=160)=>String(value||'').slice(0,n);
 const safeStatus=value=>/^[a-z_]{1,42}$/.test(String(value||''))?String(value):'unknown';
 export function classifyDispatch(dispatch){
  if(dispatch?.status==='scheduled_fallback')return {state:'awaiting_repository_runner',reason:clip(dispatch.error||'runner_not_dispatched')};
- if(dispatch?.status==='workflow_dispatched'||dispatch?.status==='dispatched'||dispatch?.status==='queued')return {state:'dispatched_unverified',reason:'Awaiting authenticated runner receipt'};
+ if(dispatch?.status==='dispatch_accepted'||dispatch?.status==='workflow_dispatched'||dispatch?.status==='dispatched'||dispatch?.status==='queued')return {state:'dispatched_unverified',reason:'Awaiting authenticated runner receipt'};
  if(dispatch?.status==='failed'||dispatch?.ok===false)return {state:'runner_dispatch_failed',reason:clip(dispatch.error||'runner_dispatch_failed')};
  return {state:'queued_unverified',reason:'No runner execution receipt'};
 }
@@ -36,6 +36,7 @@ export async function redExchange(storage,body,now=Date.now()){
  const heartbeat=await storage.get('writerHeartbeat')||null;
  const request=await storage.get('requested-next-job')||null;
  const dispatch=await storage.get('last-owner-dispatch')||null;
+ const alarmRetry=await storage.get('alarm-dispatch-state')||null;
  const runnerAge=typeof heartbeat?.when==='number'?Math.max(0,now-heartbeat.when):null;
  const dispatchAge=typeof dispatch?.when==='number'?Math.max(0,now-dispatch.when):null;
  return {ok:true,protocol:RED_PROTOCOL,serverAt:now,
@@ -43,6 +44,7 @@ export async function redExchange(storage,body,now=Date.now()){
   redBrain:{sector:'red-brain',connected:true,revision:event?.revision||0,
    event:event&&event.revision>bubble.ackRevision?event:null,
    lastRequestedJob:request?{ticketId:clip(request.ticketId,80),jobId:clip(request.jobId,30)}:null,
+   alarmRetry:alarmRetry?{state:alarmRetry.state,attempts:alarmRetry.attempts,lastAttemptAt:alarmRetry.lastAttemptAt,nextAt:alarmRetry.nextAt,reason:alarmRetry.reason,ticketId:alarmRetry.ticketId,jobId:alarmRetry.jobId}:null,
    lastDispatch:dispatch?{state:classifyDispatch(dispatch).state,
     reason:classifyDispatch(dispatch).reason,at:dispatch.when||0,ageMs:dispatchAge}:null,
    runner:{lastSeenAt:heartbeat?.when||null,ageMs:runnerAge,
