@@ -62,6 +62,9 @@ final class FloatingOracleWindow {
         QueuedMessage(String text, String evidence) { this.text = text; this.evidence = evidence; }
     }
     private int loadGeneration = 0;
+    // Bound automatic recovery if Android kills the WebView renderer.
+    private int rendererFailures = 0;
+    private long lastRendererFailureAt = 0L;
     private final java.util.ArrayDeque<QueuedMessage> pendingSpeech = new java.util.ArrayDeque<>();
     private final java.util.ArrayDeque<QueuedMessage> pendingTyped = new java.util.ArrayDeque<>();
     private boolean dispatchInFlight = false, typedDispatchInFlight = false;
@@ -147,7 +150,11 @@ final class FloatingOracleWindow {
         page.addView(status);
         retryButton = button("Retry website connection", false);
         retryButton.setOnClickListener(v -> {
-            if (website != null) {
+            if (website == null) {
+                // A crashed WebView cannot be loaded again; create a new one.
+                rendererFailures = 0;
+                createWebsite(page);
+            } else {
                 showWebsite(false);
                 status.setText("Connecting to QuantaPhi Bubbles… Your queued messages are retained.");
                 website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
@@ -156,6 +163,31 @@ final class FloatingOracleWindow {
         page.addView(retryButton);
         // The website owns the only composer and conversation. Never substitute
         // a second local chat when loading, offline, or owner sync is unavailable.
+        createWebsite(page);
+
+        int width = Math.min(service.getResources().getDisplayMetrics().widthPixels - dp(24), dp(550));
+        int height = Math.min((int)(service.getResources().getDisplayMetrics().heightPixels * .74f), dp(680));
+        WindowManager.LayoutParams params = new WindowManager.LayoutParams(
+                width, height, WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
+                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
+                        | WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL,
+                android.graphics.PixelFormat.TRANSLUCENT);
+        params.gravity = Gravity.CENTER;
+        params.softInputMode = WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE;
+        try {
+            manager.addView(page, params);
+            root = page;
+            ui.post(update);
+            return true;
+        } catch (RuntimeException ex) {
+            root = null;
+            return false;
+        }
+    }
+    /** The website remains the only chat UI. Reuse this setup after a
+     * renderer crash without resetting queued speech, typed messages or IDs.
+     * A remote page update does not confer new native Android permissions. */
+    private void createWebsite(LinearLayout page) {
         try {
             website = new WebView(service);
             website.setVisibility(View.GONE);
@@ -224,6 +256,33 @@ final class FloatingOracleWindow {
                         status.setText("QuantaPhi Bubbles could not load. Check your connection and tap Retry. Your queued messages are retained.");
                     }
                 }
+
+                @Override public boolean onRenderProcessGone(WebView view,
+                        android.webkit.RenderProcessGoneDetail detail) {
+                    // Android may terminate the shared WebView renderer while the
+                    // foreground microphone/orb are healthy. This callback MUST
+                    // consume the crash or Android terminates Bubbles entirely.
+                    if (view != website) return true;
+                    loadGeneration++;
+                    showWebsite(false);
+                    dispatchInFlight = false;
+                    typedDispatchInFlight = false;
+                    if (root != null) root.removeView(view);
+                    website = null;
+                    view.destroy();
+                    final long now = android.os.SystemClock.elapsedRealtime();
+                    if (now - lastRendererFailureAt > 60000L) rendererFailures = 0;
+                    lastRendererFailureAt = now;
+                    if (++rendererFailures <= 3) {
+                        status.setText("Bubbles display stopped; reconnecting. Your messages are retained.");
+                        ui.postDelayed(() -> {
+                            if (root != null && website == null) createWebsite(root);
+                        }, Math.min(4000L, rendererFailures * 750L));
+                    } else {
+                        status.setText("Bubbles display repeatedly stopped. Tap Retry to reopen it.");
+                    }
+                    return true;
+                }
             });
             page.addView(website, new LinearLayout.LayoutParams(-1, 0, 1));
             website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
@@ -233,26 +292,8 @@ final class FloatingOracleWindow {
             status.setText("Android WebView could not open Bubbles. Update Android System WebView and reopen Bubbles.");
             retryButton.setEnabled(false);
         }
-
-        int width = Math.min(service.getResources().getDisplayMetrics().widthPixels - dp(24), dp(550));
-        int height = Math.min((int)(service.getResources().getDisplayMetrics().heightPixels * .74f), dp(680));
-        WindowManager.LayoutParams params = new WindowManager.LayoutParams(
-                width, height, WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
-                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
-                        | WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL,
-                android.graphics.PixelFormat.TRANSLUCENT);
-        params.gravity = Gravity.CENTER;
-        params.softInputMode = WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE;
-        try {
-            manager.addView(page, params);
-            root = page;
-            ui.post(update);
-            return true;
-        } catch (RuntimeException ex) {
-            root = null;
-            return false;
-        }
     }
+
     private boolean trustedChat(WebView view) {
         if (view == null || view != website || root == null) return false;
         Uri location = Uri.parse(String.valueOf(view.getUrl()));
