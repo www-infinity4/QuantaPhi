@@ -541,6 +541,59 @@ if(!embedded){
  tools.append(create('h3','ba-section-heading','Connections & pairing'),linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus);
 }
 document.body.append(launcher,panel);
+
+/* A single in-conversation Brain notification center. This supersedes
+   opening a separate bot dashboard just to see work progress. It is
+   read-only and only displays owner-authenticated ticket receipts. */
+const brainInbox=!embedded?create('details','ba-brain-inbox'):null;
+const brainNotices=[];
+let brainNoticeIndex=0,brainInboxInitialized=false;
+let brainNoticeText=null,brainNoticeCount=null,brainNoticePrevious=null,brainNoticeNext=null,brainInboxState=null;
+if(brainInbox){
+ brainInbox.append(create('summary','','Robot Brain notifications'));
+ const head=create('div','ba-brain-inbox-head');
+ brainInboxState=create('span','ba-brain-state','Brain connection pending');
+ brainInboxState.dataset.connection='pending';
+ brainNoticeCount=create('span','ba-brain-count','No notices');
+ head.append(brainInboxState,brainNoticeCount);
+ const row=create('div','ba-brain-notice-row');
+ brainNoticePrevious=create('button','ba-control','← Earlier');
+ brainNoticeNext=create('button','ba-control','Later →');
+ brainNoticePrevious.type=brainNoticeNext.type='button';
+ brainNoticePrevious.disabled=brainNoticeNext.disabled=true;
+ brainNoticeText=create('p','ba-brain-notice','Verified Brain notifications will appear here. Queued work is not a completed repair.');
+ brainNoticeText.setAttribute('role','status');
+ row.append(brainNoticePrevious,brainNoticeText,brainNoticeNext);
+ brainInbox.append(head,row);
+ chatScroll.insertBefore(brainInbox,conversation);
+ brainNoticePrevious.addEventListener('click',()=>{brainNoticeIndex=Math.min(brainNotices.length-1,brainNoticeIndex+1);renderBrainInbox()});
+ brainNoticeNext.addEventListener('click',()=>{brainNoticeIndex=Math.max(0,brainNoticeIndex-1);renderBrainInbox()});
+}
+function renderBrainInbox(){
+ if(!brainInbox)return;
+ const notice=brainNotices[brainNoticeIndex];
+ if(notice)brainNoticeText.textContent=notice.text;
+ brainNoticeCount.textContent=brainNotices.length?(brainNoticeIndex+1)+' of '+brainNotices.length:'No notices';
+ brainNoticePrevious.disabled=brainNoticeIndex>=brainNotices.length-1;
+ brainNoticeNext.disabled=brainNoticeIndex<=0;
+}
+function recordBrainNotice(message){
+ if(!brainInbox)return;
+ const text=String(message||'').replace(/\s+/g,' ').trim().slice(0,480);
+ if(!text||brainNotices[0]?.text===text)return;
+ const viewingOlder=brainNoticeIndex>0;
+ brainNotices.unshift({text,at:Date.now()});
+ if(brainNotices.length>60)brainNotices.length=60;
+ if(viewingOlder)brainNoticeIndex=Math.min(brainNotices.length-1,brainNoticeIndex+1);
+ else brainNoticeIndex=0;
+ renderBrainInbox();
+}
+function brainConnectionState(label,state){
+ if(!brainInboxState)return;
+ brainInboxState.textContent=label;
+ brainInboxState.dataset.connection=state;
+}
+
 function updateRole(){
  config={...config,role:persona.value,alias:alias.value.trim().slice(0,38)||'Bubbles',instructions:instructions.value.trim().slice(0,1200),voice:Boolean(config.voice),voiceURI:config.voiceURI||''};
  save(CONFIG,config);name.textContent=config.alias;status.textContent=ROLES[config.role].name+' · Oracle Cloudflare AI · account access not implied';
@@ -1439,15 +1492,23 @@ async function pollBrainProgress(){
   const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},12000);
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
+  const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
+  brainConnectionState('Connected · '+result.tickets.length+' tickets · '+(counts.working||0)+' marked working', 'connected');
+  if(!brainInboxInitialized){
+   brainInboxInitialized=true;
+   recordBrainNotice('Robot Brain connected. '+result.tickets.length+' saved tickets: '+(counts.working||0)+' marked working, '+(counts.blocked||0)+' blocked, '+(counts.complete||0)+' complete. Working is a label; a commit, test and deployment receipt are separate proof.');
+  }
   const updates=progressTracker.update(result.tickets);
   if(progressUnavailable)updates.unshift('Robot Brain is reachable again. I am checking progress here.');
   progressUnavailable=false;
   if(updates.length)announceBrainProgress(updates.slice(-5).join(' '));
  }catch{
+  brainConnectionState('Brain unreachable · latest notices retained', 'unreachable');
   if(!progressUnavailable){progressUnavailable=true;announceBrainProgress('Robot Brain is unreachable right now. I will keep checking and update you here when it reconnects.');}
  }finally{progressPolling=false;}
 }
 function announceBrainProgress(text){
+ recordBrainNotice(text);
  display(text,'ai');messages.push({role:'assistant',text});messages=messages.slice(-400);persistChat();
  if(nativeOverlay){progressVoiceQueue.push(text);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
  else if(config.voice){progressVoiceQueue.push(text);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
