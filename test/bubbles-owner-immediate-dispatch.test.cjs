@@ -21,7 +21,7 @@ test('Brain action dispatch is server-authorized and only enqueues a runner cycl
  assert.match(segment,/ownerAuthorized\(env,token\)/);
  assert.match(segment,/\/run-next/);
  assert.match(segment,/origin_not_allowed/);
- assert.match(bubbles,/Execution and deployment are not yet proven/);
+ assert.match(bubbles,/GitHub dispatch accepted; runner start is not yet verified/);
 });
 test('Independent visitors are never granted the owner tools',()=>{
  assert.match(bubbles,/if\(embedded\)throw Error\('Guest embed bubbles cannot access the owner Robot Brain/);

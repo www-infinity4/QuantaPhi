@@ -12,7 +12,7 @@ test('capability question checks connection; concrete work ticket requests dispa
 });
 test('ticket create, update and runner calls work without AbortSignal.timeout',async()=>{
  const calls=[],ticket={id:'test-receipt',status:'draft',context:{}};
- const ctx={activeCardEvidence:null,repositorySelection:new Set(['www-infinity4/QuantaPhi']),repositoryPicker:{dataset:{}},AbortSignal:{},AbortController,setTimeout,clearTimeout,crypto:webcrypto,TextEncoder,brainTools,
+ const ctx={activeCardEvidence:null,repositorySelectionExplicit:true,repositorySelection:new Set(['www-infinity4/QuantaPhi']),repositoryPicker:{dataset:{}},AbortSignal:{},AbortController,setTimeout,clearTimeout,crypto:webcrypto,TextEncoder,brainTools,
   verifiedOwnerHeaders:async()=>({Authorization:'Bearer test-fixture-only'}),
   BRAIN:'https://brain.test',TICKETS:'https://brain.test',workButton:{disabled:false},workStatus:{},workText:{},location:{origin:'https://quantaphi.org',pathname:'/bubbles.html'},config:{role:'assistant'},
   window:{dispatchEvent:()=>{}},CustomEvent:class{},
