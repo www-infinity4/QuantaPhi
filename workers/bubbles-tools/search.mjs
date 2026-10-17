@@ -3,7 +3,7 @@ const trim=(v,n=260)=>String(v??'').replace(/\s+/g,' ').trim().slice(0,n);
 const SAFE_HOST=/^(?!localhost$)(?!.*\.localhost$)(?!.*\.local$)(?!127\.)(?!10\.)(?!192\.168\.)(?!169\.254\.)(?!172\.(?:1[6-9]|2\d|3[01])\.)(?!0\.)(?!\[)(?!.*\.internal$)[a-z0-9.-]+$/i;
 const safeUrl=value=>{try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&SAFE_HOST.test(u.hostname)?u.href:null;}catch{return null;}};
 const getJson=async(fetcher,url,options={})=>{
- const result=await fetcher(url,{redirect:'error',signal:AbortSignal.timeout(9000),headers:{Accept:'application/json'},...options});
+ const result=await fetcher(url,{signal:AbortSignal.timeout(9000),headers:{Accept:'application/json'},...options,redirect:'manual'});
  if(!result.ok)throw Error('upstream_http_'+result.status);
  const body=await result.text();
  if(body.length>650000)throw Error('upstream_too_large');

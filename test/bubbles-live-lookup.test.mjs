@@ -90,3 +90,28 @@ test('same Android Bubbles conversation bypasses model-only chat for live lookup
  assert.match(source,/ba-search-sources/);
  assert.match(source,/body:JSON.stringify\(lookupPayload\(\)\)/);
 });
+
+test('Cloudflare lookup fetch uses supported manual redirects and never follows an upstream 302',async()=>{
+ let count=0;
+ const fetcher=async (url,options)=>{
+  count++;
+  assert.equal(options.redirect,'manual');
+  return new Response(null,{status:302,headers:{Location:'https://example.com/redirected'}});
+ };
+ const result=await webSearch('Search Google for cloudflare weather',{},fetcher);
+ assert.equal(result.ok,false);
+ assert.equal(result.results.length,0);
+ assert.equal(count,2); // Google SearXNG attempt and owner-broker fallback; neither follows redirects.
+ assert.deepEqual(result.attempts,['searxng_google_unavailable','infinity_search_unavailable']);
+});
+test('weather uses supported redirect mode for both live geocoding and forecast',async()=>{
+ const requests=[];
+ const fetcher=async(url,options)=>{
+  requests.push({url:String(url),redirect:options.redirect});
+  return Response.json(String(url).includes('geocoding-api.open-meteo.com')?loc:mockForecast);
+ };
+ const result=await currentWeather('weather in Albia, Iowa',null,fetcher);
+ assert.equal(result.ok,true);
+ assert.equal(requests.length,2);
+ assert.ok(requests.every(r=>r.redirect==='manual'));
+});
