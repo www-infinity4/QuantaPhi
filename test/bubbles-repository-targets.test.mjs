@@ -11,7 +11,7 @@ function environment(){
    if(sql.startsWith('INSERT INTO work_tickets'))row={id:values[0],repository:values[5],title:values[6],request:values[7],context_json:values[9],status:'draft'};
    if(sql.startsWith('UPDATE work_tickets SET context_json=?,storyboard='))Object.assign(row,{context_json:values[0],storyboard:values[1],status:values[2],repository:values[4]});
    return {meta:{changes:1}};
-  },async first(){return row;}
+  },async first(){return row;},async all(){return {results:row?[row]:[]};}
  };}}}};
  return {WRITER_OWNER_HASH:'a'.repeat(64),WORK_DB:db};
 }
