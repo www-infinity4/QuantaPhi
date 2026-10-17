@@ -1150,7 +1150,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   finally{busy=false;send.disabled=false;nativeSpeechPending=false;}
   return;
  }
- if(!embedded&&!pendingImage&&/\b(?:open|show|bring|pull|load|play|hear|listen|diagnose|inspect|check|test|close|remove|dismiss|list)\b/i.test(spoken)){
+ // Resolve every spoken/typed turn against known cards first, including "Media Star card".
+ // Card opening is read-only; owner-only Robot Brain and payment controls keep their own gates.
+ if(!pendingImage){
   try{
    const {module,workspace}=await chatCardWorkspace();
    const intent=module.cardIntent(spoken);
@@ -1163,7 +1165,17 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;else if(config.voice&&!nativeOverlay)speakText(answer);
     nativeSpeechPending=false;busy=false;send.disabled=false;return;
    }
-  }catch(error){status.textContent='Card catalog unavailable: '+String(error.message||error).slice(0,120);}
+  }catch(error){
+   const detail='Card catalog could not load: '+String(error.message||error).slice(0,120);
+   status.textContent=detail;
+   // Do not let the model claim a registered card-opening tool is nonexistent.
+   if(/\b(?:card|catalog|media star|infinity radio|fred spaces|magoo spaces|following spaces)\b/i.test(spoken)){
+    busy=true;send.disabled=true;display(spoken,'you');input.value='';
+    display(detail,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:detail});persistChat();
+    if(nativeOverlay&&fromVoice)nativeSpeechReply=detail;else if(config.voice&&!nativeOverlay)speakText(detail);
+    nativeSpeechPending=false;busy=false;send.disabled=false;return;
+   }
+  }
  }
  // User-selected image is untrusted evidence and never grants owner work permissions.
  if(pendingImage&&!fromVoice){
@@ -1252,7 +1264,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   status.textContent=response;nativeSpeechPending=false;return;
  }
  if(/^(?:(?:please|bubbles)[\s,:]+)*(?:what tools (?:do you have|can you use)|what can you do|list (?:your|available) tools)[.!?]*$/i.test(spoken)){
-  const local='Available Bubbles tools: Oracle conversation, live Infinity Phi web search, town-level weather, Google-engine lookup when available, news research, resonance calculator, personal notes, saved Bubbles memory and user-approved story suggestions.';
+  const local='Available Bubbles tools: in-chat Card Catalog including Media Star and Infinity Radio with card controls and diagnostics, Oracle conversation, live Infinity Phi web search, town-level weather, Google-engine lookup when available, news research, resonance calculator, personal notes, saved Bubbles memory and user-approved story suggestions.';
   const owner=embedded?'This embedded visitor assistant cannot control the QuantaPhi Robot Brain.':
    'With verified owner access I can call direct GitHub repository tools, submit Robot Brain jobs, and read actual run receipts. Bubbles Coder provides a temporary Linux workspace with Python, Bash, Node, Git and GitHub CLI. Say run Python, run shell, use GitHub CLI, or check coder sandbox results. This is a remote runtime, not an installed Termux app.';
   const android=nativeOverlay?'The Android app has a native screen-and-microphone MP4 recorder with stop/save and clip editing, plus sound-only recording. Say record screen, stop recording, or recorder status. Actual availability depends on the installed APK and Android permissions. Accessibility provides visible screen text.':
