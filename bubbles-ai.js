@@ -1228,7 +1228,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const args={action,repository,request,description:request,mode};
    if(coderRequest){
     const inspecting=/\b(?:check|show|inspect)\b.{0,40}\b(?:progress|status|runs|results)\b/i.test(request);
-    if(inspecting)args.action='list_runs';
+    if(inspecting){args.action='list_workflow_runs';args.workflow='bubbles-coder-sandbox.yml';}
     else{
      args.action='dispatch_workflow';
      args.workflow='bubbles-coder-sandbox.yml';
@@ -1243,6 +1243,16 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const result=await directGithubOperation(args);
    workEvidence='Direct GitHub: '+(result.status||'unknown')+'. '+(result.error||result.summary||'')+(result.next?' '+result.next:'')+(result.url?'\n'+result.url:'');
    for(const receipt of result.receipts||[])if(receipt.url)workEvidence+='\n'+receipt.status+': '+receipt.url;
+   if(Array.isArray(result.runs)){
+    const recent=result.runs.slice(0,5);
+    workEvidence+='\nBubbles Coder Linux runs: '+(recent.length?recent.map(run=>{
+     const state=run.status==='completed'?(run.conclusion||'completed'):run.status||'unknown';
+     return 'Run '+run.id+': '+state+(run.createdAt?' (created '+run.createdAt+')':'');
+    }).join('; '):'No workflow runs recorded yet.');
+    workEvidence+='\nOnly a completed successful run confirms that the script ran. See the run receipt for output.';
+   }
+   if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted')
+    workEvidence+='\nLinux job requested. This is an acceptance receipt, not an execution result. Ask me to check coder sandbox runs for actual status.';
    workEvidence+='\nRequest '+result.requestId+'. Testing, merge and deployment require their own verified receipts.';
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
  }

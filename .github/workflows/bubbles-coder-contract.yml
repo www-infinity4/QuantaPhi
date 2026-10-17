@@ -6,6 +6,8 @@ on:
       - '.github/workflows/bubbles-coder-sandbox.yml'
       - '.github/workflows/bubbles-coder-contract.yml'
       - 'test/bubbles-coder-sandbox.test.cjs'
+      - 'test/bubbles-coder-run-receipts.test.mjs'
+      - 'workers/infinity-brain-clock/direct-github.mjs'
       - 'sandbox/**'
   push:
     branches: [main]
@@ -14,6 +16,8 @@ on:
       - '.github/workflows/bubbles-coder-sandbox.yml'
       - '.github/workflows/bubbles-coder-contract.yml'
       - 'test/bubbles-coder-sandbox.test.cjs'
+      - 'test/bubbles-coder-run-receipts.test.mjs'
+      - 'workers/infinity-brain-clock/direct-github.mjs'
       - 'sandbox/**'
 permissions:
   contents: read
@@ -31,5 +35,7 @@ jobs:
       - name: Verify coder route and Linux script sandbox
         run: |
           node --check bubbles-ai.js
-          node --test test/bubbles-coder-sandbox.test.cjs
+          node --test test/bubbles-coder-sandbox.test.cjs test/bubbles-coder-run-receipts.test.mjs
           python3 -m py_compile sandbox/hello.py
+          python3 -I sandbox/hello.py
+          bash --noprofile --norc sandbox/hello.sh
