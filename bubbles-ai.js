@@ -55,6 +55,7 @@ let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=nul
 const nativeScreenRequests=[];
 const nativeCaptureRequests=[]; // FIFO: Android polls requests; never replace a subsequent stop/start command.
 let nativeRecordingActive=false,nativeScreenStatus='';
+let lastNativeCaptureEvidence=null;
 let nativeScreenSharing=false,pageScreenSharing=false;
 function screenSharingCommand(value){
  const q=String(value||'').trim().replace(/[.!?]+$/,'');
@@ -922,6 +923,11 @@ function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  if(/\b(?:pair|link|sync|connect)\b.{0,90}\b(?:another|other|second|new|apk|android|phone|device|browser|session)\b/i.test(ask))return answer;
  const mentionsCode=/\b(?:64\s*[- ]?(?:character|characters|digit|digits|hex|hexadecimal)|pairing\s*(?:code|key)|one[- ]time\s*(?:pairing\s*)?(?:code|key))\b/i.test(answer);
  const demandsCode=/\b(?:need|require|must|paste|enter|provide|send|give|supply|cannot|can't|blocked|without|not linked|not connected)\b/i.test(answer);
+ // The conversational model is not the tool dispatcher. A model-only answer
+ // must not be mistaken for a verdict that the authenticated Bubbles bridge
+ // lacks tools. No runner or recording is claimed from this text correction.
+ if(/\bno callable (?:inspection )?tools?\b.{0,80}\b(?:exposed|available)\b/i.test(answer))
+  return 'This AI text reply did not call a tool. Bubbles has a separate authenticated Robot Brain adapter for submitting work and reading verified status. Android recording is controlled by the phone, not this text model. I can check the tool connection, but an action requires its own receipt.';
  if(!mentionsCode||!demandsCode)return answer;
  return 'Robot Brain owner access is already connected in this Bubbles session. You do not need another pairing code to continue here. I can check the authorized tools for your request; any actual job or repair needs its own verified receipt.';
 }
@@ -1082,7 +1088,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    'With a verified owner wallet I can submit Robot Brain tickets and read receipts; Greenbeans and Pink Panther still need runner authorization, source tests and verified merge results.';
   const android=nativeOverlay?'The Android app can record sound and request screen capture, and read visible screen text when Accessibility permission is enabled. Images require Android screen permission. ChatGPT plan inference runs only if connected in this APK.':
    'Full Android screenshot and microphone controls only work in the separately installed Bubbles APK with Android permissions.';
-  const response=[local,owner,android,'I cannot silently read ChatGPT history, create a GitHub repository without credentials, or bypass Android permissions.'].join(' ');
+  const response=[local,owner,android,'Repository actions require a current authenticated GitHub operation and receipt, not a claim from the conversational model. Android capture always requires its system permissions.'].join(' ');
   display(spoken,'you');display(response,'ai');
   messages.push({role:'user',text:spoken},{role:'assistant',text:response});
   messages=messages.slice(-400);persistChat();
@@ -1126,7 +1132,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const check=await response.json().catch(()=>({}));
    if(!response.ok||!check.ok||!Array.isArray(check.tickets))
     throw Error(String(check.error||'Authenticated ticket service did not confirm the connection'));
-   reply='Robot Brain accepted my authenticated work-tool check. The submission tool is reachable. I can accept your fix/build command and return a real ticket reference; bot implementation still needs independent runner and code receipts.';
+   const red=await syncRedSectors().catch(()=>null);
+   const runner=red?.redBrain?.runner;
+   const runnerState=runner?.state==='recent_heartbeat_not_execution_proof'?'a recent runner heartbeat, not a completed job':runner?.state==='stale_runner_heartbeat'?'a stale runner heartbeat':runner?.state==='no_runner_heartbeat'?'no recorded runner heartbeat':'runner state not verified';
+   const dispatchState=red?.redBrain?.lastDispatch?.state||'no verified recent dispatch';
+   reply='Robot Brain accepted my authenticated work-tool check. Red and the ticket service are connected. Yellow evidence reports '+runnerState+'; last dispatch: '+dispatchState+'. Bubbles can submit owner tickets and read receipts. GitHub writes, recording and speech use separate authenticated GitHub or Android tools; no completed work is claimed from this check.';
   }catch(error){
    let state='unreachable';
    try{state=(await window.QuantaBrainOwner?.walletIdentity?.())?.state||'unreachable'}catch{}
@@ -1848,6 +1858,16 @@ window.QuantaBubbles={
    nativeScreenStatus=readState;
    if(readState.startsWith('Hardware:')){display(readState,'ai');status.textContent='SIM and connection check complete. Device details are above; no carrier service was activated.';}
    else status.textContent=readState;
+  }
+  // Native capture bypasses the model. Yellow's actual Android result goes to
+  // the SAME shared chat and speech stream as Red's Robot Brain receipts.
+  const captureNotice=brainTools?.nativeCaptureNotice?.(lastNativeCaptureEvidence,capture)||'';
+  lastNativeCaptureEvidence={screenState:screen,soundState:sound};
+  if(captureNotice){
+   display(captureNotice,'ai');messages.push({role:'assistant',text:captureNotice});
+   messages=messages.slice(-400);persistChat();
+   progressVoiceQueue.push(captureNotice);
+   if(progressVoiceQueue.length>5)progressVoiceQueue.shift();
   }
   return true;
  },
