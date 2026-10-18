@@ -8,9 +8,6 @@ on:
       - 'index.html'
       - 'workers/quantaphi-site/worker.js'
       - 'test/bubbles-home-account-link.test.mjs'
-      - 'index.html'
-      - 'workers/quantaphi-site/worker.js'
-      - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
   push:
@@ -18,6 +15,9 @@ on:
     paths:
       - 'workers/bubbles-connections/**'
       - 'bubbles-connections.mjs'
+      - 'index.html'
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
 
