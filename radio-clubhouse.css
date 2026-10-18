@@ -1,47 +1,198 @@
-/* Radio Clubhouse · Oracle Octaves · Android-first, isolated from other Phi cards */
-#radioClubhouse{margin:14px auto 18px;max-width:900px;color:#2b1e33;font-family:system-ui,-apple-system,Roboto,sans-serif}
-#radioClubhouse *{box-sizing:border-box}
-#radioClubhouse .rc-shell{overflow:hidden;position:relative;border:1px solid #ceb5e6;border-radius:24px;padding:clamp(15px,4vw,26px);background:linear-gradient(145deg,#fffdf8 0%,#f6effd 54%,#fffbef 100%);box-shadow:0 11px 32px #38144720,inset 0 0 0 1px #ffffffbb}
-#radioClubhouse .rc-shell:before{content:"";position:absolute;right:-75px;top:-110px;width:260px;height:260px;border:2px solid #c7a1eb50;border-radius:50%;box-shadow:0 0 0 18px #c7a1eb12,0 0 0 36px #dca95b17;pointer-events:none}
-#radioClubhouse .rc-header{position:relative;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:13px;padding-bottom:13px;border-bottom:1px solid #e3d6ec}
-#radioClubhouse .rc-heading{min-width:0;flex:1 1 230px}
-#radioClubhouse .rc-eyebrow{display:block;color:#5b2d84;font-size:10px;font-weight:950;letter-spacing:.11em;line-height:1.5}
-#radioClubhouse .rc-title{font-size:clamp(22px,5vw,30px);font-weight:950;line-height:1.2;margin:8px 0 6px;letter-spacing:-.04em;color:#3d1f5d}
-#radioClubhouse .rc-subtitle{font-size:13px;line-height:1.55;color:#6c547b;margin:0;max-width:520px}
-#radioClubhouse .rc-refresh{background:#492277;color:white;border:1px solid #714ba0;border-radius:999px;min-height:44px;padding:8px 16px;font-size:12px;font-weight:850;box-shadow:0 4px 13px #4a278f30;cursor:pointer}
-#radioClubhouse .rc-refresh:disabled{opacity:.65;cursor:wait}
-#radioClubhouse .rc-status{font-size:12px;color:#674e74;line-height:1.5;margin:12px 0 15px}
-#radioClubhouse .rc-feed{display:grid;gap:13px}
-#radioClubhouse .rc-topic{background:#fff;border:1px solid #dcc7ea;border-radius:18px;padding:16px;box-shadow:0 5px 16px #351c4f0d;min-width:0}
-#radioClubhouse .rc-topic:first-child{border:2px solid #b68ddb;background:linear-gradient(145deg,#fff,#fffcf3)}
-#radioClubhouse .rc-topic-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
-#radioClubhouse .rc-topic-index{font-size:10px;color:#694681;letter-spacing:.10em;font-weight:950}
-#radioClubhouse .rc-new{font-size:10px;font-weight:950;letter-spacing:.08em;border:1px solid #9970bd;color:#54207f;background:#f5e7ff;padding:5px 8px;border-radius:999px}
-#radioClubhouse .rc-archive{font-size:10px;font-weight:950;letter-spacing:.08em;border:1px solid #b59b55;color:#654c16;background:#fff6cc;padding:5px 8px;border-radius:999px}
-#radioClubhouse .rc-topic h3{color:#30203d;font-size:18px;line-height:1.33;font-weight:900;letter-spacing:-.02em;margin:10px 0 7px;overflow-wrap:anywhere}
-#radioClubhouse .rc-excerpt{font-size:14px;line-height:1.5;color:#4c4355;margin:4px 0 9px;overflow-wrap:anywhere}
-#radioClubhouse .rc-meta{font-size:11px;line-height:1.5;color:#73617e;margin:4px 0 12px}
-#radioClubhouse .rc-actions{display:flex;gap:8px;flex-wrap:wrap}
-#radioClubhouse .rc-actions .rc-button{min-height:44px;border-radius:999px;border:1px solid #ab91c6;padding:10px 13px;display:inline-flex;align-items:center;justify-content:center;text-align:center;font:800 12px/1.25 system-ui,-apple-system,Roboto,sans-serif;text-decoration:none;white-space:normal;cursor:pointer;background:#f2e8fa;color:#452366;box-shadow:none;margin:0;max-width:100%}
-#radioClubhouse .rc-actions .rc-reader{background:#492277;border-color:#492277;color:white}
-#radioClubhouse .rc-actions .rc-original{background:#fff8de;border-color:#dfbf65;color:#51370d}
-#radioClubhouse .rc-actions .rc-secondary{background:#fff;color:#5b377b}
-#radioClubhouse .rc-actions .rc-button:focus-visible,#radioClubhouse .rc-refresh:focus-visible{outline:3px solid #6b33bc;outline-offset:3px}
-#radioClubhouse .rc-actions .rc-button:active{transform:translateY(1px)}
-#radioClubhouse .rc-notice{font-size:11px;color:#4c3a5b;line-height:1.4;margin:9px 0 0}
-#radioClubhouse .rc-notice:empty{display:none}
-#radioClubhouse .rc-empty{background:#fff;border:1px dashed #c7acdc;border-radius:17px;padding:17px;color:#533963;font-size:14px;line-height:1.5}
-#radioClubhouse .rc-empty p{margin:6px 0 0}
-#radioClubhouse .rc-footer{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;font-size:11px;line-height:1.5;color:#766080;margin-top:17px}
-#radioClubhouse .rc-footer a{font-weight:900;color:#502184;text-decoration:underline}
-@media(max-width:540px){
- #radioClubhouse .rc-shell{border-radius:21px;padding:14px}
- #radioClubhouse .rc-topic{padding:13px;border-radius:16px}
- #radioClubhouse .rc-actions .rc-reader{flex:1 1 100%}
- #radioClubhouse .rc-actions .rc-original{flex:1 1 100%}
- #radioClubhouse .rc-actions .rc-secondary{flex:1 1 auto}
- #radioClubhouse .rc-topic h3{font-size:17px}
+/* Radio Clubhouse – Oracle Octaves Android‑first design */
+:root {
+  /* Oracle Octaves colour palette for Android‑first white theme */
+  --oo-paper: #fff;   /* background */
+  --oo-ink:   #312722;/* text */
+  --oo-line:  #e5ddd6;/* borders / dividers */
 }
-@media(prefers-reduced-motion:reduce){#radioClubhouse .rc-actions .rc-button{transition:none}}
 
-#radioClubhouse [hidden]{display:none!important}#radioClubhouse .rc-topic-body{margin-top:10px}#radioClubhouse .rc-actions button{min-height:44px;border-radius:999px}
+#radioClubhouse {
+  margin: 14px auto 18px;
+  max-width: 900px;
+  color: var(--oo-ink);
+  font-family: system-ui, -apple-system, Roboto, sans-serif;
+}
+#radioClubhouse * { box-sizing: border-box; }
+
+/* Shell – white background, line border, rounded corners */
+#radioClubhouse .rc-shell {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid var(--oo-line);
+  border-radius: 18px;
+  padding: clamp(15px, 4vw, 26px);
+  background: var(--oo-paper);
+  box-shadow: 0 11px 32px rgba(0,0,0,0.1), inset 0 0 0 1px #ffffffbb;
+}
+#radioClubhouse .rc-shell:before {
+  content: "";
+  position: absolute;
+  right: -75px;
+  top: -110px;
+  width: 260px;
+  height: 260px;
+  border: 2px solid rgba(199,161,235,0.31);
+  border-radius: 50%;
+  box-shadow: 0 0 0 18px rgba(199,161,235,0.07), 0 0 0 36px rgba(220,169,91,0.09);
+  pointer-events: none;
+}
+
+#radioClubhouse .rc-header {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 13px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid var(--oo-line);
+}
+
+#radioClubhouse .rc-heading { min-width: 0; flex: 1 1 230px; }
+#radioClubhouse .rc-eyebrow {
+  display: block;
+  color: var(--oo-ink);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: .11em;
+  line-height: 1.5;
+}
+#radioClubhouse .rc-title {
+  font-size: clamp(22px,5vw,30px);
+  font-weight: 950;
+  line-height: 1.2;
+  margin: 8px 0 6px;
+  letter-spacing: -.04em;
+  color: var(--oo-ink);
+}
+#radioClubhouse .rc-subtitle {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--oo-ink);
+  margin: 0;
+  max-width: 520px;
+}
+
+/* Refresh button – respects minimum touch target */
+#radioClubhouse .rc-refresh {
+  background: var(--oo-ink);
+  color: var(--oo-paper);
+  border: 1px solid var(--oo-ink);
+  border-radius: 999px;
+  min-height: 44px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 850;
+  box-shadow: 0 4px 13px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+#radioClubhouse .rc-refresh:disabled { opacity: .65; cursor: wait; }
+
+#radioClubhouse .rc-status {
+  font-size: 12px;
+  color: var(--oo-ink);
+  line-height: 1.5;
+  margin: 12px 0 15px;
+}
+
+#radioClubhouse .rc-feed { display: grid; gap: 13px; }
+
+/* Topic cards – white background, line border, rounded corners */
+#radioClubhouse .rc-topic {
+  background: var(--oo-paper);
+  border: 1px solid var(--oo-line);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 5px 16px rgba(0,0,0,0.06);
+  min-width: 0;
+}
+#radioClubhouse .rc-topic:first-child {
+  border: 2px solid var(--oo-ink);
+  background: linear-gradient(145deg, var(--oo-paper), #fffcf3);
+}
+
+#radioClubhouse .rc-topic-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+#radioClubhouse .rc-topic-index { font-size: 10px; color: var(--oo-ink); letter-spacing: .10em; font-weight: 950; }
+#radioClubhouse .rc-new, #radioClubhouse .rc-archive {
+  font-size: 10px; font-weight: 950; letter-spacing: .08em; border-radius: 999px; padding: 5px 8px;
+}
+#radioClubhouse .rc-new { border: 1px solid var(--oo-ink); color: var(--oo-ink); background: #f5e7ff; }
+#radioClubhouse .rc-archive { border: 1px solid var(--oo-ink); color: var(--oo-ink); background: #fff6cc; }
+
+#radioClubhouse .rc-topic h3 {
+  color: var(--oo-ink);
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 900;
+  letter-spacing: -.02em;
+  margin: 10px 0 7px;
+  overflow-wrap: anywhere;
+}
+#radioClubhouse .rc-excerpt, #radioClubhouse .rc-meta {
+  color: var(--oo-ink);
+}
+#radioClubhouse .rc-excerpt { font-size: 14px; line-height: 1.5; margin: 4px 0 9px; }
+#radioClubhouse .rc-meta { font-size: 11px; line-height: 1.5; margin: 4px 0 12px; }
+
+/* Action buttons – white background, ink text, line border, rounded */
+#radioClubhouse .rc-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+#radioClubhouse .rc-actions .rc-button {
+  min-height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--oo-line);
+  padding: 10px 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font: 800 12px/1.25 system-ui, -apple-system, Roboto, sans-serif;
+  text-decoration: none;
+  white-space: normal;
+  cursor: pointer;
+  background: var(--oo-paper);
+  color: var(--oo-ink);
+  box-shadow: none;
+  margin: 0;
+  max-width: 100%;
+}
+#radioClubhouse .rc-actions .rc-reader { background: var(--oo-ink); border-color: var(--oo-ink); color: var(--oo-paper); }
+#radioClubhouse .rc-actions .rc-original { background: var(--oo-paper); border-color: var(--oo-line); color: var(--oo-ink); }
+#radioClubhouse .rc-actions .rc-secondary { background: var(--oo-paper); border-color: var(--oo-line); color: var(--oo-ink); }
+#radioClubhouse .rc-actions .rc-button:focus-visible, #radioClubhouse .rc-refresh:focus-visible {
+  outline: 3px solid var(--oo-ink);
+  outline-offset: 3px;
+}
+#radioClubhouse .rc-actions .rc-button:active { transform: translateY(1px); }
+
+#radioClubhouse .rc-notice { font-size: 11px; color: var(--oo-ink); line-height: 1.4; margin: 9px 0 0; }
+#radioClubhouse .rc-notice:empty { display: none; }
+
+#radioClubhouse .rc-empty {
+  background: var(--oo-paper);
+  border: 1px dashed var(--oo-line);
+  border-radius: 17px;
+  padding: 17px;
+  color: var(--oo-ink);
+  font-size: 14px;
+  line-height: 1.5;
+}
+#radioClubhouse .rc-empty p { margin: 6px 0 0; }
+
+#radioClubhouse .rc-footer { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; font-size: 11px; line-height: 1.5; color: var(--oo-ink); margin-top: 17px; }
+#radioClubhouse .rc-footer a { font-weight: 900; color: var(--oo-ink); text-decoration: underline; }
+
+@media (max-width:540px) {
+  #radioClubhouse .rc-shell { border-radius: 18px; padding: 14px; }
+  #radioClubhouse .rc-topic { padding: 13px; border-radius: 16px; }
+  #radioClubhouse .rc-actions .rc-reader,
+  #radioClubhouse .rc-actions .rc-original { flex: 1 1 100%; }
+  #radioClubhouse .rc-actions .rc-secondary { flex: 1 1 auto; }
+  #radioClubhouse .rc-topic h3 { font-size: 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #radioClubhouse .rc-actions .rc-button { transition: none; }
+}
+
+#radioClubhouse [hidden] { display: none !important; }
+#radioClubhouse .rc-topic-body { margin-top: 10px; }
+#radioClubhouse .rc-actions button { min-height: 44px; border-radius: 999px; }
