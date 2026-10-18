@@ -246,6 +246,8 @@ test('Bubbles retains short spoken preferences without converting ordinary quest
  assert.deepEqual(voicePreferenceCommand("Bubbles, please remember don't say ticket IDs"),{hideTicketNumbers:true});
  assert.deepEqual(voicePreferenceCommand("keep your replies short"),{briefSpeech:true});
  assert.deepEqual(voicePreferenceCommand("give me full spoken replies"),{briefSpeech:false});
+ assert.deepEqual(voicePreferenceCommand('Remember that you should not repeat long introductions'),{learnedVoiceInstruction:'you should not repeat long introductions'});
+ assert.equal(voicePreferenceCommand('Remember my API token is abcd'),null,'secrets are never stored in speech-style preferences');
  assert.equal(voicePreferenceCommand('Explain what ticket IW-20261013-AABBCCDD means'),null);
  const answer='Ticket IW-20261013-AABBCCDD is queued; TASK-1 passed PR #629. Open https://github.com/owner/repo';
  const spoken=speechText(answer,{hideTicketNumbers:true,brief:true});
