@@ -61,7 +61,7 @@
    }else if(action==='verify'){
     proof.textContent='';status.textContent='Account verified for '+data.tag+'. You may scan this account for your hashtag.';
    }else if(action==='scan'){
-    status.textContent='Checked '+data.matched+' posts, recorded '+data.created+' new suggestions. No jobs or edits executed.';
+    status.textContent='Checked '+data.matched+' posts, recorded '+data.created+' new suggestions. GPT reviewed up to '+(data.modelReviewed||0)+' new proposals. No jobs or edits executed.';
    }else if(action==='inbox'){
     items.replaceChildren();
     const rows=Array.isArray(data.commands)?data.commands:[];
@@ -69,7 +69,9 @@
     for(const row of rows){
      const item=document.createElement('article'),p=document.createElement('p'),small=document.createElement('small');
      p.textContent=String(row.suggestion||'').slice(0,2200);
-     small.textContent=String(row.status||'new')+' · '+String(row.command_tag||'');
+     small.textContent=String(row.status||'new')+' · '+String(row.command_tag||'')+
+      ' · GPT: '+String(row.gpt_status||'needs_review')+
+      ' · Placement: '+String(row.proposed_placement||'community-review');
      item.append(p,small);
      if(/^https:\/\/x\.com\/i\/status\/[0-9]{1,24}$/.test(row.source_url||'')){
       const source=document.createElement('a');source.href=row.source_url;source.target='_blank';
