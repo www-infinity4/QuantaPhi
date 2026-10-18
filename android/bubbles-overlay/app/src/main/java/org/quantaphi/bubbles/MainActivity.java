@@ -253,9 +253,9 @@ public final class MainActivity extends Activity {
         });
         layout.addView(advancedCapture);
         TextView captureInfo = new TextView(this);
-        captureInfo.setText("Listening is not the same as saving an audio recording. Just speak to Bubbles. "
-                + "Screen videos automatically include microphone audio in one MP4. Screen capture requires Android approval. "
-                + "Saved files remain on this phone.");
+        captureInfo.setText("Listening is separate from recording. Screen video now opens the installed original DU Recorder, "
+                + "using its floating control for Start/Stop. Bubbles does not share Android screen-capture permission with DU. "
+                + "Screenshot capture and sound-only recording remain native.");
         captureInfo.setTextColor(Color.rgb(101, 83, 111));
         advancedCapture.addView(captureInfo);
         Button sound = new Button(this);
@@ -270,17 +270,19 @@ public final class MainActivity extends Activity {
         saveSound.setOnClickListener(v -> startService(new Intent(this, BubblesService.class).setAction(BubblesService.ACTION_SAVE_AUDIO)));
         advancedCapture.addView(saveSound);
         Button screenVideo = new Button(this);
-        screenVideo.setText("Record screen video");
-        screenVideo.setOnClickListener(v -> beginScreen(false));
+        screenVideo.setText("Open DU Recorder / start screen video");
+        screenVideo.setOnClickListener(v -> DuRecorderBridge.request(this, "start", ui));
         advancedCapture.addView(screenVideo);
         Button screenImage = new Button(this);
         screenImage.setText("Take screenshot");
         screenImage.setOnClickListener(v -> beginScreen(true));
         advancedCapture.addView(screenImage);
         Button stopScreen = new Button(this);
-        stopScreen.setText("Stop screen capture");
+        stopScreen.setText("Stop DU recording or Bubbles screenshot");
         stopScreen.setOnClickListener(v -> {
-            startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
+            if (BrainNotes.prefs(this).getBoolean("capture_active", false))
+                startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
+            else DuRecorderBridge.request(this, "stop", ui);
         });
         advancedCapture.addView(stopScreen);
         // Explicitly separate background room speech from the Bubbles owner chat.
@@ -692,7 +694,7 @@ public final class MainActivity extends Activity {
             screenDurationSeconds = Math.max(10, Math.min(300, duration));
             beginScreen(true);
         } else if ("screen_video".equals(action)) {
-            screenIntervalSeconds = 0; screenDurationSeconds = 0; beginScreen(false);
+            DuRecorderBridge.request(this, "start", ui);
         } else if ("camera_video".equals(action)) {
             stopService(new Intent(this, BubblesService.class));
             try {
@@ -738,6 +740,7 @@ public final class MainActivity extends Activity {
     }
 
     private void beginScreen(boolean image) {
+        if (!image) { DuRecorderBridge.request(this, "start", ui); return; }
         if (!image && checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
             state.setText("Screen video includes your microphone. Approve microphone access first.");
             checkAndStart(); return;
