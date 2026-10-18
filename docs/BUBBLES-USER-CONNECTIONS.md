@@ -84,3 +84,9 @@ eBay bidding requires approved Offer API access and separate buyer authorization
 - https://developers.google.com/identity/protocols/oauth2/web-server
 - https://developer.ebay.com/api-docs/buy/offer/static/overview.html
 - https://developer.walmart.com/
+
+## Connector browser pairing
+
+The wallet-bearing phone can create a random single-use, two-minute code under Customize → Connect your accounts → Connect this browser using your phone. Another browser redeems the code for a 15-minute connector-only session stored in sessionStorage. The wallet token stays on the phone. Pair creation requires direct wallet verification; paired sessions cannot create more pairings or authenticate to Wallet/Brain. Replacing a code invalidates its predecessor, redemption is transactional, and End this browser connection revokes the session. Code/session hashes and verified identity are stored in the pairing Durable Object, with alarm cleanup. Provider consent is still separately required. Never send codes through chat or URLs.
+
+Fixed the account panel's wallet constructor to InfinityCloudWallet, which is the runtime export. Browser pairing does not imply repository permissions, execution, deployment, or owner access.

@@ -11,6 +11,10 @@ function json(origin,value,status = 200) {
 export async function walletIdentity(request,env) {
   const authorization = request.headers.get('Authorization') || '';
   if (!/^Bearer [A-Za-z0-9._~-]{16,2048}$/.test(authorization)) throw Error('verified_wallet_required');
+  if(authorization.startsWith('Bearer bc_')){
+    if(!env.CONNECTIONS)throw Error('verified_wallet_required');
+    return env.CONNECTIONS.get(env.CONNECTIONS.idFromName('connector-pairing-v1')).pairIdentity({token:authorization.slice(7)});
+  }
   if (!env.BOT_WALLET?.fetch) throw Error('wallet_validation_unavailable');
   const response = await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/state',{
     headers:{Authorization:authorization},signal:AbortSignal.timeout(9000)});
@@ -43,7 +47,23 @@ export async function handleConnections(request,env,resolveService) {
   if (request.method === 'OPTIONS') return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':origin,
     'Access-Control-Allow-Headers':'Authorization, Content-Type','Access-Control-Allow-Methods':'GET, POST, OPTIONS','Vary':'Origin'}});
   try {
+    if(url.pathname===PREFIX+'/pair/redeem'&&request.method==='POST'){
+      if(!request.headers.get('Content-Type')?.startsWith('application/json'))return json(origin,{ok:false,error:'json_required'},415);
+      const raw=await request.text();if(raw.length>256)return json(origin,{ok:false,error:'too_large'},413);
+      const body=JSON.parse(raw),pair=env.CONNECTIONS.get(env.CONNECTIONS.idFromName('connector-pairing-v1'));
+      return json(origin,{ok:true,...await pair.redeemPair({code:body.code})});
+    }
     const identity = await walletIdentity(request,env);
+    if(url.pathname===PREFIX+'/pair/create'&&request.method==='POST'){
+      if(request.headers.get('Authorization')?.startsWith('Bearer bc_'))throw Error('verified_wallet_required');
+      const pair=env.CONNECTIONS.get(env.CONNECTIONS.idFromName('connector-pairing-v1'));
+      return json(origin,{ok:true,...await pair.createPair(identity)});
+    }
+    if(url.pathname===PREFIX+'/pair/end'&&request.method==='POST'){
+      const token=request.headers.get('Authorization')?.slice(7)||'';
+      if(!token.startsWith('bc_'))throw Error('verified_wallet_required');
+      return json(origin,await env.CONNECTIONS.get(env.CONNECTIONS.idFromName('connector-pairing-v1')).endPair({token}));
+    }
     if (request.method === 'GET' && url.pathname === PREFIX+'/catalog') {
       const ready = env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true';
       return json(origin,{ok:true,providers:Object.keys(PROVIDERS).map(id=>({id,actions:PROVIDERS[id].actions,
@@ -68,7 +88,7 @@ export async function handleConnections(request,env,resolveService) {
     if (url.pathname === PREFIX+'/select-resource') return json(origin,await service.selectResource({userId:identity.userId,id:body.id,kind:body.kind,resourceId:body.resourceId}));
     return json(origin,{ok:false,error:'not_found'},404);
   } catch (error) {
-    const expected = /^(?:verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+)$/;
+    const expected = /^(?:pairing_invalid_or_expired|verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+)$/;
     const message = expected.test(error.message) ? error.message : 'connection_operation_failed';
     const status = message === 'verified_wallet_required' ? 401 : message === 'too_many_requests' ? 429 : /unavailable|not_configured|operation_failed/.test(message) ? 503 : 400;
     return json(origin,{ok:false,error:message},status);
