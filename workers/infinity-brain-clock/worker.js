@@ -118,6 +118,24 @@ export class BrainClock extends DurableObject{
    url:url||'https://infinity-brain-clock.marvaseater.workers.dev/activity/feed.json'});
   await this.ctx.storage.put('events',entries.slice(-1000));
  }
+ async deferSourceReviewLease({lease,runUrl,fresh,context}){
+  const job=(context.color_jobs||[]).find(j=>j.id===lease.jobId);
+  if(!job||job.status!=='working'||job.progress?.runUrl!==runUrl||
+    await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}))!==lease.revision)
+   throw Error('source_review_dependency_changed');
+  const now=Date.now();
+  job.status='blocked';
+  job.progress={...job.progress,summary:'Pink source verification deferred because its associated Green repair takes precedence.',
+   blocker:'source_review_waiting_for_repair',next:'The signed queue selector will reconsider this review after the repair settles.',deferredAt:new Date(now).toISOString()};
+  const result=await this.env.WORK_DB.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?')
+   .bind(JSON.stringify(context),ticketStatusFromJobs(context.color_jobs),now,lease.ticketId,this.env.WRITER_OWNER_HASH,fresh.context_json).run();
+  if(result?.meta?.changes!==1)throw Error('source_review_dependency_changed');
+  // Release this exact Pink lease only. A newer Green claim must survive.
+  for(const key of [lease.key,'repository-lease:'+lease.repository]){
+   const active=await this.ctx.storage.get(key);
+   if(active?.leaseId===lease.leaseId)await this.ctx.storage.put(key,{...active,status:'deferred_active_repair',leaseUntil:0,retryAt:now+5*60*1000});
+  }
+ }
  async acceptSourceReview({lease,body,runUrl,engine}){
   // This path is OIDC-authenticated by the outer Worker and never authorizes
   // a GitHub write, payout, new credential, owner approval or production claim.
@@ -136,7 +154,10 @@ export class BrainClock extends DurableObject{
     current.prNumber!==pinned.prNumber||
     JSON.stringify(current.repairIds)!==JSON.stringify(pinned.repairIds)||
     current.repository!==lease.repository)throw Error('source_review_dependency_changed');
-  if(pinkReviewHasActiveRepair(context,current))throw Error('source_review_repair_still_executing_or_finished');
+  if(pinkReviewHasActiveRepair(context,current)){
+   await this.deferSourceReviewLease({lease,runUrl,fresh,context});
+   throw Error('source_review_repair_still_executing_or_finished');
+  }
 
   const token=typeof body.verificationToken==='string'&&body.verificationToken?body.verificationToken:'';
   const headers={Accept:'application/vnd.github+json','User-Agent':'Infinity-Pink-Source-Review',...(token?{Authorization:'Bearer '+token}:{})};

@@ -31,6 +31,23 @@ const colorCoreUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(
 const assignedJobScopeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/assigned-job-scope.mjs',import.meta.url))).toString('base64');
 const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./color-core.mjs",colorCoreUrl).replace("./assigned-job-scope.mjs",assignedJobScopeUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
 const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
+test('deferred Pink result releases only its own lease and never leaves a stopped runner working',async()=>{
+ const repository='www-infinity4/QuantaPhi',runUrl='https://github.com/www-infinity4/Moltnook/actions/runs/42';
+ const job={id:'TASK-2',repository,instructions:'Verify source',acceptance:['Tests'],status:'working',progress:{runUrl}};
+ const revision=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository})))),b=>b.toString(16).padStart(2,'0')).join('');
+ const lease={key:'writer:test',leaseId:'pink-lease',repository,revision,ticketId:'ticket',jobId:'TASK-2'};
+ const memory=new Map([[lease.key,{...lease,leaseUntil:Date.now()+60000}],['repository-lease:'+repository,{leaseId:'new-green-lease',leaseUntil:Date.now()+60000}]]);
+ let saved;
+ const db={prepare:()=>({bind(...values){this.values=values;return this;},async run(){saved=this.values;return {meta:{changes:1}};}})};
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WORK_DB:db,WRITER_OWNER_HASH:'owner'});
+ const context={color_jobs:[job]},fresh={context_json:JSON.stringify(context)};
+ await clock.deferSourceReviewLease({lease,runUrl,fresh,context});
+ const recorded=JSON.parse(saved[0]).color_jobs[0];assert.equal(recorded.status,'blocked');assert.equal(recorded.progress.blocker,'source_review_waiting_for_repair');
+ assert.equal(memory.get(lease.key).leaseUntil,0);assert.equal(memory.get('repository-lease:'+repository).leaseId,'new-green-lease');
+ assert.ok(![...memory.keys()].some(k=>k.includes('quant')));assert.ok(!JSON.stringify(saved).includes('source_verified'));
+ const wrong=structuredClone(fresh);const changed={color_jobs:[{...job,status:'working',progress:{runUrl:'different'}}]};
+ await assert.rejects(clock.deferSourceReviewLease({lease,runUrl,fresh:wrong,context:changed}),/source_review_dependency_changed/);
+});
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
  const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{BOT_WALLET:{fetch:async()=>Response.json({ok:true,user:{id:userId,username:'fixture-owner'}})}});
