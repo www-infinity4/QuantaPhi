@@ -340,7 +340,7 @@ public final class MainActivity extends Activity {
                 return;
             }
             new AlertDialog.Builder(this)
-                .setTitle("Share selected room context with Bubbles?")
+                .setTitle("Share selected background context with Bubbles?")
                 .setMessage("Only when a spoken question is relevant, the bridge may attach up to two recent room transcripts as untrusted evidence to the QuantaPhi chat service. Other speakers could be included. These transcripts will never authorize actions. Enable?")
                 .setNegativeButton("Cancel", null)
                 .setPositiveButton("Enable Room Context Bridge", (dialog, which) -> {
