@@ -850,7 +850,7 @@ if(brainInbox){
  communityButton.type='button';
  const publicScanButton=create('button','ba-control','Scan public #bubbles on X');
  publicScanButton.type='button';
- const ownerHashtagScan=create('button','ba-control','Scan my #bubbles on X');
+ const ownerHashtagScan=create('button','ba-control','Scan #bubbles on X');
  ownerHashtagScan.type='button';
  ownerHashtagScan.setAttribute('aria-label','Scan the verified QuantaPhi owner account for hashtag review drafts');
  communityActions.append(communityButton,publicScanButton,ownerHashtagScan);
@@ -870,7 +870,7 @@ if(brainInbox){
     ' new draft tickets. Review and authorize drafts in Robot Brain; no runner started.');
    void pollBrainProgress();
   }catch(error){recordBrainNotice('Owner #bubbles scan could not complete: '+String(error.message||error).slice(0,170))}
-  finally{ownerHashtagScan.disabled=false;ownerHashtagScan.textContent='Scan my #bubbles on X'}
+  finally{ownerHashtagScan.disabled=false;ownerHashtagScan.textContent='Scan #bubbles on X'}
  });
  publicScanButton.addEventListener('click',async()=>{
   if(!ownerReady){recordBrainNotice('Connect the owner Robot Brain before scanning public #bubbles proposals.');return}
