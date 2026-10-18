@@ -848,7 +848,24 @@ if(brainInbox){
  const communityActions=create('div','ba-brain-notice-row');
  const communityButton=create('button','ba-control','Review community upgrades');
  communityButton.type='button';
- communityActions.append(communityButton);
+ const publicScanButton=create('button','ba-control','Scan public #bubbles on X');
+ publicScanButton.type='button';
+ communityActions.append(communityButton,publicScanButton);
+ publicScanButton.addEventListener('click',async()=>{
+  if(!ownerReady){recordBrainNotice('Connect the owner Robot Brain before scanning public #bubbles proposals.');return}
+  publicScanButton.disabled=true;publicScanButton.textContent='Scanning public posts…';
+  try{
+   const headers=await verifiedOwnerHeaders();
+   const response=await bubblesFetch(BRAIN+'/work/community/x/scan',{
+    method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'
+   },30000);
+   const report=await response.json().catch(()=>({}));
+   if(!response.ok||!report.ok)throw Error(report.error||'X discovery unavailable');
+   recordBrainNotice('Public #bubbles scan: '+report.found+' posts inspected, '+report.imported+
+    ' relevant proposals recorded, '+report.rejected+' rejected. No jobs automatically dispatched.');
+  }catch(error){recordBrainNotice('Public #bubbles discovery not completed: '+String(error.message||error).slice(0,150))}
+  finally{publicScanButton.disabled=false;publicScanButton.textContent='Scan public #bubbles on X'}
+ });
  const communityResults=create('div','ba-community-results');
  communityResults.setAttribute('role','region');
  communityResults.setAttribute('aria-label','Community suggestions awaiting owner review');
