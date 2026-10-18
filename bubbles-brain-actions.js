@@ -277,8 +277,13 @@ function voicePreferenceCommand(value){
   return {hideTicketNumbers:true};
  if(/^(?:(?:remember(?: that)?|from now on|always)\s+)?(?:keep (?:it|your (?:answers|responses|replies)) short|be (?:more )?brief|speak less|stop (?:rambling|talking so much)|short(?:er)? spoken (?:replies|answers|responses))$/.test(command))
   return {briefSpeech:true};
- if(/^(?:give (?:me )?(?:longer|full|detailed) spoken (?:answers|responses|replies)|read (?:the )?full (?:response|answer) aloud)$/.test(command))
-  return {briefSpeech:false};
+ // Other explicit feedback can become a *speaking style* memory without
+ // turning the assistant into a finite list of predefined work categories.
+ // This never grants tools, changes owner auth, or learns ambient speech.
+ const correction=command.match(/^(?:remember(?: that)?|from now on|when you (?:answer|reply|speak)|i (?:said|told you))[, :]+(.{5,180})$/);
+ if(correction && /\b(?:speak|speech|reply|replies|answer|answers|read|reading|say|saying|mention|announce|voice|tone|brief|short|verbose|repeat|word|name|ticket|job|pronounc)\b/i.test(correction[1])
+   && !/\b(?:password|secret|token|credential|api key|wallet|payment|transfer|approve|install|execute|permission)\b/i.test(correction[1]))
+  return {learnedVoiceInstruction:correction[1]};
  return null;
 }
 function speechText(value,options={}){
