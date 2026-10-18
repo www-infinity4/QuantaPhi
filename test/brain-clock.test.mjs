@@ -27,7 +27,8 @@ const redUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new UR
 const alarmUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/alarm-retry.mjs',import.meta.url))).toString('base64');
 const runnerRequestSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-request.mjs',import.meta.url),'utf8')).replace('./alarm-retry.mjs',alarmUrl);
 const runnerRequestUrl='data:text/javascript;base64,'+Buffer.from(runnerRequestSource).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
+const colorCoreUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/color-core.mjs',import.meta.url))).toString('base64');
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./color-core.mjs",colorCoreUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
 const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
@@ -590,4 +591,50 @@ test('signed Pink review of merged source finishes without a new PR, payout, or 
   assert.equal(readback.coinsMinted,false);
   assert.equal(readback.testsPassed,true);
  }finally{globalThis.fetch=previousFetch;}
+});
+
+
+test('every Robot Brain color invokes the same real authenticated GPT model with its complete composite and no direct tools',async()=>{
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,
+  jobId:'TASK-COLOR',repository:'www-infinity4/QuantaPhi',job:{instructions:'Check my work'}};
+ const memory=new Map([['key',lease]]);
+ const observed=[];
+ const clock=new BrainClock({storage:{get:async key=>memory.get(key),put:async(key,value)=>memory.set(key,value)}},{
+  WRITER_AI:{run:async(model,input)=>{
+   observed.push({model,input});
+   return {response:JSON.stringify({finding:'Source review pending',nextAction:'Inspect pinned evidence',
+    blockers:[],toolRequests:[]})};
+  }}
+ });
+ const request=(color,extra={})=>new Request('https://clock/runner/color-think',{
+  method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',
+   key:'key',leaseId:'lease',color,task:'Inspect source carefully',evidence:{sourceSha:'a'.repeat(40)},...extra})
+ });
+ const expected={red:['red'],yellow:['yellow'],blue:['blue'],orange:['red','yellow'],
+  purple:['purple','blue','red'],green:['green','yellow','blue','pink','red','white'],
+  pink:['pink'],white:['white'],black:['black','pink','white']};
+ for(const [color,layers]of Object.entries(expected)){
+  const r=await clock.runner(request(color));
+  assert.equal(r.status,200);
+  const body=await r.json();
+  assert.equal(body.ok,true);
+  assert.equal(body.status,'model_inference_completed');
+  assert.equal(body.color,color);
+  assert.deepEqual(body.layers,layers);
+  assert.equal(body.model,'@cf/openai/gpt-oss-120b');
+  assert.equal(body.toolRequestsAreNotExecution,true);
+  assert.equal(body.authorizedOperationsPerformed,false);
+ }
+ assert.equal(observed.length,9,'every color made its own genuine model request');
+ for(const call of observed){
+  assert.equal(call.model,'@cf/openai/gpt-oss-120b');
+  assert.match(call.input.messages[0].content,/shared GPT reasoning core/);
+  assert.match(call.input.messages[0].content,/Do not execute tools/);
+  assert.match(call.input.messages[0].content,/Do not expose secrets/);
+ }
+ assert.equal(memory.has('engine-review:key'),false,'color advice cannot become an approval receipt');
+ await assert.rejects(clock.runner(request('ultraviolet')),/unknown_color_core/);
+ await assert.rejects(clock.runner(request('green',{task:'x'.repeat(3000)})),/color_task_invalid/);
+ assert.equal((await clock.runner(request('blue',{leaseId:'wrong'}))).status,409);
+ assert.equal(observed.length,9,'invalid or unauthenticated requests never reach GPT');
 });
