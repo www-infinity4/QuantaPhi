@@ -1,4 +1,5 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
+import {discoverBubblesXOrders} from './bubbles-social-orders.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
 import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
@@ -1264,6 +1265,39 @@ export default{
     const raw=await request.text();if(raw.length>128000)return output(request,{ok:false,error:'request_too_large'},413);
     return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
+  }
+  if(path==='/work/social/bubbles/scan'&&request.method==='POST'){
+    const origin=request.headers.get('Origin');
+    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+    if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+    if(Number(request.headers.get('Content-Length')||0)>100)return output(request,{ok:false,error:'request_too_large'},413);
+    const scan=await discoverBubblesXOrders({
+      bearerToken:env.X_API_BEARER_TOKEN,ownerUserId:env.X_OWNER_USER_ID
+    });
+    if(!scan.ok)return output(request,scan,503);
+    const drafts=[];
+    // Do not infer a website command from a hashtag posted by anybody else.
+    // These are OWNER REVIEW drafts, not runnable jobs or a dispatch receipt.
+    for(const order of scan.orders){
+      const result=await ownerTickets(env,'/work/tickets/create',{
+        title:order.command.slice(0,180),request:order.command,
+        repository:'www-infinity4/QuantaPhi',
+        context:{
+          kind:'robot-directions',submission_id:'bubbles-'+order.sourceId.replace(':','-'),
+          repositories:['www-infinity4/QuantaPhi'],social_source:'x',
+          social_post_url:order.sourceUrl,social_author_id:order.authorId,
+          social_published_at:order.publishedAt,
+          social_review_required:true,repository_writes:'require-github-authorization'
+        }
+      });
+      if(!result.result.ok)return output(request,{ok:false,error:'social_draft_insert_failed',drafts},503);
+      drafts.push({ticketId:result.result.ticket?.id,sourceUrl:order.sourceUrl,
+        deduplicated:result.result.deduplicated===true,status:'draft'});
+    }
+    return output(request,{ok:true,source:scan.source,found:scan.orders.length,
+      drafts,allJobsDraft:true,ownerApprovalRequired:true,runnerStarted:false,
+      pagesScanned:scan.pagesScanned,searchExhaustive:scan.searchExhaustive});
   }
   if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/tickets/approve','/work/tickets/approve-all','/work/memory/status'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
