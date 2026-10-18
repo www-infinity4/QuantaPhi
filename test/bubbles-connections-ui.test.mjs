@@ -41,3 +41,17 @@ test('non-JSON connection responses produce a stable diagnostic',async()=>{
  const client=new AccountConnections({token:()=> 'device-token',root:{},request:async()=>new Response('<html>Bad Gateway</html>',{status:502})});
  await assert.rejects(client.call('/pair/create',{}),/connection_response_invalid/);
 });
+
+test('default browser fetch is called without the connection client as receiver',async()=>{
+ const original=globalThis.fetch;
+ globalThis.fetch=async function(url,options){
+  assert.equal(this,undefined);
+  assert.equal(url,'/api/bubbles/connections/pair/create');
+  assert.equal(options.headers.Authorization,'Bearer device-token');
+  return Response.json({ok:true,code:'test-code'});
+ };
+ try{
+  const client=new AccountConnections({token:()=> 'device-token',root:{}});
+  assert.equal((await client.call('/pair/create',{})).code,'test-code');
+ }finally{globalThis.fetch=original;}
+});
