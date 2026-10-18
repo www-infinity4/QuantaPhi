@@ -1,42 +1,53 @@
 package org.quantaphi.bubbles;
 
-/** In-memory, explicitly started, bounded screen-text watch. No network,
- * disk, projection-token caching or autonomous AI/tool requests.
- * Mutated on the native Bubbles main thread.
+/** Running-owner-session screen context. There is deliberately NO duration cap.
+ * The native Bubbles service stops it on owner stop, permission loss or shutdown.
+ * Only current filtered text and the latest short visual model description
+ * are retained in RAM; not frames, credentials, or an expanding transcript.
  */
 final class ScreenWatchSession {
-    static final long MAX_DURATION_MS = 300_000L;
-    static final long SAMPLE_INTERVAL_MS = 2_000L;
-    private long startedAt, lastSampleAt;
+    static final long SAMPLE_INTERVAL_MS = 1_000L;
+    static final long VISUAL_INTERVAL_MS = 3_000L;
     private boolean active;
-    private String latest = "";
+    private long lastSampleAt, lastVisualAttemptAt, lastVisualAt;
+    private String latest = "", visual = "";
 
     void start(long now) {
         active = true;
-        startedAt = now;
         lastSampleAt = now - SAMPLE_INTERVAL_MS;
+        lastVisualAttemptAt = now - VISUAL_INTERVAL_MS;
+        lastVisualAt = 0;
         latest = "";
+        visual = "";
     }
-    boolean isActive(long now) {
-        return active && now >= startedAt && now - startedAt < MAX_DURATION_MS;
-    }
+    boolean isActive(long now) { return active; }
     boolean needsSample(long now) {
-        return isActive(now) && now - lastSampleAt >= SAMPLE_INTERVAL_MS;
+        return active && now - lastSampleAt >= SAMPLE_INTERVAL_MS;
     }
     void observe(long now, String visibleText) {
         if (!needsSample(now)) return;
         lastSampleAt = now;
-        String bounded = visibleText == null ? "" : visibleText.trim();
-        // A single changing viewport excerpt, not a transcript or screen log.
-        latest = bounded.substring(0, Math.min(1600, bounded.length()));
+        String value = visibleText == null ? "" : visibleText.trim();
+        latest = value.substring(0, Math.min(2200, value.length()));
     }
-    String recent(long now) {
-        return isActive(now) && now - lastSampleAt <= 8_000L ? latest : "";
+    boolean needsVisual(long now) {
+        return active && now - lastVisualAttemptAt >= VISUAL_INTERVAL_MS;
+    }
+    void visualStarted(long now) { lastVisualAttemptAt = now; }
+    void observeVisual(long now, String description) {
+        if (!active || description == null || description.trim().isEmpty()) return;
+        visual = description.trim().substring(0, Math.min(2200, description.trim().length()));
+        lastVisualAt = now;
+    }
+    String recent(long now) { return active ? latest : ""; }
+    String recentVisual(long now) {
+        return active && !visual.isEmpty()
+            ? "Last processed visual frame at elapsed " + lastVisualAt + " ms: " + visual : "";
     }
     void stop() {
         active = false;
         latest = "";
-        startedAt = 0L;
-        lastSampleAt = 0L;
+        visual = "";
+        lastSampleAt = lastVisualAttemptAt = lastVisualAt = 0L;
     }
 }
