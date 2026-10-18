@@ -46,7 +46,9 @@ function element(tag,text,className='') {
   const node=document.createElement(tag);node.textContent=text;if(className)node.className=className;return node;
 }
 export function mountConnections(container,{token}) {
-  const client=new AccountConnections({token}),section=element('section',''),status=element('p','Choose an account service.','ba-muted');
+  const sessionKey='bubbles:connector-session:v1';
+  const paired=()=>{try{const value=JSON.parse(sessionStorage.getItem(sessionKey)||'null');return value?.expiresAt>Date.now()?value.token:'';}catch{return '';}};
+  const client=new AccountConnections({token:()=>{const session=paired();if(session)return session;try{return token();}catch{return '';}}}),section=element('section',''),status=element('p','Choose an account service.','ba-muted');
   const refresh=element('button','Check connected accounts','ba-control'),catalog=element('div',''),accounts=element('div','');
   refresh.type='button';status.setAttribute('role','status');
   const scopes=element('fieldset',''),legend=element('legend','Google access');scopes.append(legend);
@@ -55,6 +57,15 @@ export function mountConnections(container,{token}) {
     const label=element('label',''),check=document.createElement('input');check.type='checkbox';check.value=action;label.append(check,document.createTextNode(' '+name+' '));scopes.append(label);selections.push(check);
   }
   section.append(element('strong','Your connected accounts'),status,scopes,refresh,catalog,accounts);container.append(section);
+  const pairing=element('details','');pairing.append(element('summary','Connect this browser using your phone'));
+  pairing.append(element('p','On your phone, open Bubbles on quantaphi.org in the browser with your existing wallet. Open these account settings and create a two-minute code. Enter it here. This grants account-connector access for 15 minutes, without transferring your wallet token. Keep the code private.'));
+  const create=element('button','Create connection code on this device','ba-control'),redeem=element('button','Connect this browser','ba-control'),end=element('button','End this browser connection','ba-control'),code=document.createElement('input'),output=element('p','');
+  code.type='password';code.autocomplete='off';code.maxLength=43;code.setAttribute('aria-label','Two-minute connector pairing code');
+  for(const button of [create,redeem,end])button.type='button';
+  create.addEventListener('click',async()=>{try{const data=await client.call('/pair/create',{});output.textContent='Private code (expires in two minutes): '+data.code;setTimeout(()=>{output.textContent='Code expired. Create another if needed.';},data.expiresIn*1000);}catch{output.textContent='Use the phone browser where your existing wallet is connected to create this code.';}});
+  redeem.addEventListener('click',async()=>{redeem.disabled=true;try{const data=await client.call('/pair/redeem',{code:code.value.trim()});sessionStorage.setItem(sessionKey,JSON.stringify({token:data.token,expiresAt:data.expiresAt}));code.value='';output.textContent='This browser is connected for 15 minutes.';await load();}catch{output.textContent='Connection failed. Use a fresh code from your verified phone.';}finally{redeem.disabled=false;}});
+  end.addEventListener('click',async()=>{try{if(paired())await client.call('/pair/end',{});sessionStorage.removeItem(sessionKey);output.textContent='Browser connection ended.';await load();}catch{output.textContent='Could not end the server session. Try again; it expires automatically after 15 minutes.';}});
+  pairing.append(create,output,code,redeem,end);section.prepend(pairing);
   async function load() {
     refresh.disabled=true;catalog.replaceChildren();accounts.replaceChildren();
     try {
