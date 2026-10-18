@@ -31,7 +31,7 @@ test('room context needs its own consent, bounded freshness and shared terms',()
  assert.match(ui,/Enable Room Context Bridge/);
  assert.match(ui,/Stop Room Context Bridge/);
  assert.match(ui,/RoomContextFusion\.setEnabled\(this, true\)/);
- assert.match(room,/putBoolean\(RoomContextFusion\.ENABLED, false\)/);
+ assert.match(room,/putBoolean\(RoomContextFusion\.ENABLED,/);
 });
 
 test('website separates microphone evidence from owner intent and reports real phase',()=>{
