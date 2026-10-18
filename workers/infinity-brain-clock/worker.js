@@ -1,4 +1,5 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
+import {classifyCommunitySuggestion,reviewCommunityWithGPT} from './community-upgrades.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
 import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
@@ -1264,6 +1265,95 @@ export default{
     const raw=await request.text();if(raw.length>128000)return output(request,{ok:false,error:'request_too_large'},413);
     return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
+  }
+  if(path==='/community/upgrade'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(!origins.has(origin))return output(request,{ok:false,error:'site_origin_required'},403);
+   if(!env.COMMUNITY_SUBMISSION_SALT||!env.WORK_DB)return output(request,{ok:false,error:'community_intake_not_configured'},503);
+   if(Number(request.headers.get('Content-Length')||0)>3000)return output(request,{ok:false,error:'proposal_too_large'},413);
+   const ip=request.headers.get('CF-Connecting-IP');
+   if(!ip||ip.length>100)return output(request,{ok:false,error:'rate_limit_identity_unavailable'},429);
+   let body,raw;
+   try{raw=await request.text();if(raw.length>3000)throw Error('too_large');body=JSON.parse(raw)}
+   catch{return output(request,{ok:false,error:'invalid_proposal'},400)}
+   if(body?.website_field)return output(request,{ok:true,status:'received',note:'Submission received for review'});
+   if(!body||typeof body.suggestion!=='string')return output(request,{ok:false,error:'suggestion_required'},400);
+   const recommendation=classifyCommunitySuggestion(body.suggestion);
+   if(!recommendation.accepted)return output(request,{ok:false,error:recommendation.error},400);
+   const normalized=body.suggestion.trim().replace(/\\s+/g,' ');
+   const author=typeof body.name==='string'?body.name.trim().slice(0,40):'';
+   const now=Date.now(),day=new Date().toISOString().slice(0,10);
+   const clientHash=await digest(day+'|'+ip+'|'+env.COMMUNITY_SUBMISSION_SALT);
+   const contentHash=await digest(normalized.toLowerCase());
+   try{
+    const existing=await env.WORK_DB.prepare(
+     'SELECT id FROM community_upgrade_proposals WHERE content_hash=?'
+    ).bind(contentHash).first();
+    if(existing)return output(request,{ok:true,status:'duplicate',id:existing.id,payout:false,jobQueued:false});
+    const count=await env.WORK_DB.prepare(
+     'SELECT COUNT(*) as total, MAX(submitted_at) as latest FROM community_upgrade_proposals WHERE client_hash=? AND submitted_at>?'
+    ).bind(clientHash,now-3600000).first();
+    if(Number(count?.total||0)>=6||now-Number(count?.latest||0)<60000)
+     return output(request,{ok:false,error:'submission_rate_limit'},429);
+    const review=await reviewCommunityWithGPT(normalized,recommendation,{
+      apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-4.1-mini'
+    });
+    const id='CU-'+crypto.randomUUID(),status=String(review.status||'needs_review');
+    await env.WORK_DB.prepare(
+     'INSERT OR IGNORE INTO community_upgrade_proposals(id,client_hash,content_hash,submitted_at,author_name,suggestion,category,placement,gpt_status,gpt_summary,gpt_risk) VALUES(?,?,?,?,?,?,?,?,?,?,?)'
+    ).bind(id,clientHash,contentHash,now,author,normalized,
+     String(review.category||recommendation.category),recommendation.placement,
+     status,String(review.summary||'').slice(0,240),String(review.risk||'high')).run();
+    const saved=await env.WORK_DB.prepare(
+     'SELECT id,gpt_status FROM community_upgrade_proposals WHERE content_hash=?'
+    ).bind(contentHash).first();
+    return output(request,{ok:true,status:'received',id:saved?.id||id,
+      review:saved?.gpt_status||'needs_review',suggestedPlacement:recommendation.placement,
+      jobQueued:false,automaticPayout:false});
+   }catch{return output(request,{ok:false,error:'community_storage_unavailable'},503)}
+  }
+  if(path==='/work/community/upgrades'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   try{
+    const rows=await env.WORK_DB.prepare(
+      'SELECT id,submitted_at,author_name,suggestion,category,placement,gpt_status,gpt_summary,gpt_risk,review_state,ticket_id FROM community_upgrade_proposals ORDER BY submitted_at DESC LIMIT 50'
+    ).all();
+    return output(request,{ok:true,proposals:rows.results||[],viewOnly:true});
+   }catch{return output(request,{ok:false,error:'community_storage_unavailable'},503)}
+  }
+  if(path==='/work/community/promote'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   let body;try{const raw=await request.text();if(raw.length>250)throw Error();body=JSON.parse(raw)}
+   catch{return output(request,{ok:false,error:'invalid_proposal_id'},400)}
+   if(!/^CU-[0-9a-f-]{36}$/.test(String(body?.id||'')))return output(request,{ok:false,error:'invalid_proposal_id'},400);
+   try{
+    const row=await env.WORK_DB.prepare(
+     'SELECT * FROM community_upgrade_proposals WHERE id=?'
+    ).bind(body.id).first();
+    if(!row)return output(request,{ok:false,error:'proposal_not_found'},404);
+    if(row.gpt_status==='reject')return output(request,{ok:false,error:'proposal_rejected'},409);
+    const requestText='Investigate this untrusted community suggestion and propose a scoped, tested repair if justified; do not execute outside authorized owner review: '+row.suggestion;
+    const submitted=await ownerTickets(env,'/work/tickets/create',{
+      title:'Review community idea: '+row.suggestion.slice(0,90),
+      request:requestText,
+      repository:'www-infinity4/QuantaPhi',
+      context:{kind:'robot-directions',submission_id:'community-'+row.id,
+       repositories:['www-infinity4/QuantaPhi'],community_id:row.id,
+       community_untrusted:true,approval:'owner-review-required'}
+    });
+    if(!submitted.result?.ok)return output(request,{ok:false,error:'draft_ticket_unavailable'},503);
+    await env.WORK_DB.prepare(
+     "UPDATE community_upgrade_proposals SET review_state='draft_promoted',ticket_id=? WHERE id=?"
+    ).bind(submitted.result.ticket.id,row.id).run();
+    return output(request,{ok:true,ticketId:submitted.result.ticket.id,
+      draft:true,runnerStarted:false,ownerApprovalRequired:true});
+   }catch{return output(request,{ok:false,error:'community_promotion_failed'},503)}
   }
   if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/tickets/approve','/work/tickets/approve-all','/work/memory/status'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
