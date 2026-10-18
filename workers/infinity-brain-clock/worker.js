@@ -116,6 +116,75 @@ export class BrainClock extends DurableObject{
    url:url||'https://infinity-brain-clock.marvaseater.workers.dev/activity/feed.json'});
   await this.ctx.storage.put('events',entries.slice(-1000));
  }
+ async acceptSourceReview({lease,body,runUrl,engine}){
+  // This path is OIDC-authenticated by the outer Worker and never authorizes
+  // a GitHub write, payout, new credential, owner approval or production claim.
+  if(!engine||!lease.engine||lease.job?.sourceReview?.kind!=='source_review_only')
+   throw Error('source_review_runner_identity_required');
+  const pinned=lease.job.sourceReview;
+  const tentative=validatePinkSourceReceipt({review:pinned,job:lease.job,body});
+  const fresh=await this.env.WORK_DB.prepare(
+   'SELECT context_json FROM work_tickets WHERE id=? AND owner_hash=?'
+  ).bind(lease.ticketId,this.env.WRITER_OWNER_HASH).first();
+  if(!fresh?.context_json)throw Error('source_review_ticket_not_found');
+  const context=JSON.parse(fresh.context_json);
+  const job=(context.color_jobs||[]).find(j=>j.id===lease.jobId);
+  const current=pinnedPinkReview(context,job);
+  if(!current||current.mergeSha!==pinned.mergeSha||
+    current.prNumber!==pinned.prNumber||
+    JSON.stringify(current.repairIds)!==JSON.stringify(pinned.repairIds)||
+    current.repository!==lease.repository)throw Error('source_review_dependency_changed');
+  if(current.repairIds.some(id=>{
+    const repair=context.color_jobs.find(j=>j.id===id);
+    return repair&&['working','committed_unverified','merged_verified','complete'].includes(repair.status);
+  }))throw Error('source_review_repair_still_executing_or_finished');
+
+  const token=typeof body.verificationToken==='string'&&body.verificationToken?body.verificationToken:'';
+  const headers={Accept:'application/vnd.github+json','User-Agent':'Infinity-Pink-Source-Review',...(token?{Authorization:'Bearer '+token}:{})};
+  async function verifiedGithub(path){
+   const r=await fetch('https://api.github.com/'+path,{headers,signal:AbortSignal.timeout(15000)});
+   if(!r.ok)throw Error('source_review_github_read_failed_'+r.status);
+   return r.json();
+  }
+  const repo=current.repository;
+  const [pr,head,comparison,files]=await Promise.all([
+   verifiedGithub('repos/'+repo+'/pulls/'+current.prNumber),
+   verifiedGithub('repos/'+repo+'/branches/main'),
+   verifiedGithub('repos/'+repo+'/compare/'+current.mergeSha+'...'+tentative.sourceSha),
+   verifiedGithub('repos/'+repo+'/pulls/'+current.prNumber+'/files?per_page=100')
+  ]);
+  if(pr.merged!==true||pr.merge_commit_sha!==current.mergeSha||
+    pr.base?.repo?.full_name!==repo||pr.base?.ref!=='main'||
+    !String(pr.title||'').includes(lease.ticketId+'/'+current.primaryId)||
+    head.commit?.sha!==tentative.sourceSha||
+    !['ahead','identical'].includes(comparison.status)||
+    !Array.isArray(files)||files.length>=100||
+    !files.some(f=>tentative.testPaths.includes(f.filename)&&
+      /\.(?:test|spec)\.(?:js|mjs|cjs)$/.test(f.filename)))
+   throw Error('source_review_pinned_merge_not_current_or_unrelated_tests');
+  // Independently exercised native test commands run in Moltnook's isolated
+  // checkout, not in this service; OIDC and the exact source SHA pin that claim.
+  const when=new Date().toISOString();
+  const updated=completePinkReviewInContext(context,lease.jobId,tentative,when,runUrl);
+  const row=await this.env.WORK_DB.prepare(
+   'UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?'
+  ).bind(JSON.stringify(updated),ticketStatusFromJobs(updated.color_jobs),Date.now(),
+    lease.ticketId,this.env.WRITER_OWNER_HASH,fresh.context_json).run();
+  if(row?.meta?.changes!==1)throw Error('source_review_owner_partition_compare_and_swap_failed');
+  const receipt={status:'source_verified',repository:repo,jobId:lease.jobId,ticketId:lease.ticketId,
+   mergeSha:tentative.mergeSha,commitSha:tentative.sourceSha,prNumber:tentative.prNumber,
+   testPaths:tentative.testPaths,testsPassed:true,productionVerified:false,
+   newSourceCommitted:false,coinsMinted:false,noWalletAction:true,runUrl,when};
+  await this.ctx.storage.put(lease.key,{...lease,status:'source_verified',leaseUntil:0,
+   when,summary:'Read-only Pink review confirmed existing merged source and focused tests. Production not verified.'});
+  await this.ctx.storage.put('source-review-receipt:'+lease.key,receipt);
+  await this.ctx.storage.put('repository-lease:'+lease.repository,{...lease,leaseUntil:0,status:'source_verified'});
+  await this.emit('pink-panther','black-box','source verification finished',
+   repo+' · PR '+tentative.prNumber+' source and tests independently verified. No new commit, deployment or payout.',current.prUrl);
+  return Response.json({ok:true,status:'source_verified',sourceOnly:true,
+   productionVerified:false,coinsMinted:false,commitSha:tentative.sourceSha,
+   mergeSha:tentative.mergeSha,testCount:tentative.testPaths.length});
+ }
  async runner(request){
   const body=await request.json(),runId=body.runId;
   const engine=body.runnerRepository==='www-infinity4/Moltnook';
@@ -238,6 +307,16 @@ export class BrainClock extends DurableObject{
    return Response.json({ok:true,lease:null});
   }
   const lease=await this.ctx.storage.get(String(body.key||''));
+  if(path==='/runner/source-review-receipt'){
+   if(!lease||!engine||!lease.engine||lease.runId!==runId||lease.leaseId!==body.leaseId)
+    throw Error('source_review_receipt_identity_rejected');
+   const receipt=await this.ctx.storage.get('source-review-receipt:'+lease.key);
+   if(receipt?.status!=='source_verified'||receipt.jobId!==lease.jobId||
+      receipt.repository!==lease.repository||receipt.runUrl!==runUrl||
+      receipt.coinsMinted!==false||receipt.productionVerified!==false)
+    throw Error('source_review_durable_readback_missing');
+   return Response.json({ok:true,...receipt,durableReadback:true});
+  }
   if(path==='/runner/quant-receipt'){
    if(!lease||lease.runId!==runId||lease.leaseId!==body.leaseId)throw Error('quant_receipt_identity_rejected');
    const id='job-quant:'+lease.revision+':'+lease.ticketId+':'+lease.jobId;
@@ -1177,7 +1256,7 @@ export default{
    return output(request,await r.json());
   }
   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':origins.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Access-Control-Allow-Methods':'GET, POST, OPTIONS','Access-Control-Allow-Headers':'Authorization, Content-Type','Vary':'Origin'}});
-  if(request.method==='POST' && ['/runner/claim','/runner/event','/runner/result','/runner/quant-receipt','/runner/quant-audit','/runner/propose','/runner/review','/runner/preview','/runner/screenshots','/runner/plan','/runner/build','/runner/engine-review','/runner/arbitrate','/runner/capability','/runner/github-credential','/runner/merge-result','/runner/merge-candidates'].includes(path)){
+  if(request.method==='POST' && ['/runner/claim','/runner/event','/runner/result','/runner/quant-receipt','/runner/source-review-receipt','/runner/quant-audit','/runner/propose','/runner/review','/runner/preview','/runner/screenshots','/runner/plan','/runner/build','/runner/engine-review','/runner/arbitrate','/runner/capability','/runner/github-credential','/runner/merge-result','/runner/merge-candidates'].includes(path)){
    try{
     const identity=await authenticate(request);
     const text=await readRunnerBody(request,path);
