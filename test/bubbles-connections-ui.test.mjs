@@ -1,6 +1,17 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {AccountConnections} from '../bubbles-connections.mjs';
+import {AccountConnections,resolveConnectorWalletToken} from '../bubbles-connections.mjs';
+test('connector waits for device bridge and supports both wallet runtime exports',async()=>{
+  let ready=false;const token='sq_'+'a'.repeat(40);
+  assert.equal(await resolveConnectorWalletToken({QuantaCloudConnection:{ready:Promise.resolve().then(()=>ready=true),resolveDeviceToken:async()=>{assert.ok(ready);return token;}}}),token);
+  assert.equal(await resolveConnectorWalletToken({InfinityUnifiedWallet:class{token(){return token;}}}),token);
+  await assert.rejects(resolveConnectorWalletToken({}),/verified_wallet_required/);
+  await assert.rejects(resolveConnectorWalletToken({QuantaCloudConnection:{resolveDeviceToken:async()=>''},InfinityUnifiedWallet:class{token(){return token;}}}),/verified_wallet_required/);
+});
+test('redeeming a pairing does not require an existing wallet in the destination browser',async()=>{
+  const client=new AccountConnections({token:()=>assert.fail('destination has no wallet'),root:{},request:async(url,options)=>{assert.ok(!options.headers.Authorization);return Response.json({ok:true});}});
+  assert.equal((await client.call('/pair/redeem',{code:'example'})).ok,true);
+});
 test('OAuth return checks exact popup, callback origin, provider and state before code exchange',async()=>{
   const listeners=new Map(),calls=[],popup={location:{},close(){this.closed=true;}};
   const root={location:{origin:'https://quantaphi.org'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener:(key,value)=>listeners.set(key,value),removeEventListener:key=>listeners.delete(key)};

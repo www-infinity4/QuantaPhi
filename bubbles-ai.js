@@ -320,11 +320,8 @@ let accountConnectionsUI=null;
 connectedAccounts.addEventListener('toggle',async()=>{
  if(!connectedAccounts.open||accountConnectionsUI)return;
  try{
-  const module=await import('/bubbles-connections.mjs?v=20261018-pairing1');
-  accountConnectionsUI=module.mountConnections(connectedAccounts,{token:()=>{
-   if(!window.InfinityCloudWallet)throw Error('Connect your Unified Wallet first.');
-   return new window.InfinityCloudWallet().token();
-  }});
+  const module=await import('/bubbles-connections.mjs?v=20261018-direct2');
+  accountConnectionsUI=module.mountConnections(connectedAccounts,{token:()=>module.resolveConnectorWalletToken(window)});
   await accountConnectionsUI.refresh();
  }catch{connectedAccounts.append(create('p','ba-muted','Account connections could not load. Try again after reconnecting your wallet.'));}
 });
