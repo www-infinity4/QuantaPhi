@@ -201,7 +201,7 @@ if(!Array.isArray(messages))messages=[];
 messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-400).map(item=>({id:item.id||crypto.randomUUID(),at:item.at||Date.now(),role:item.role,text:item.text.slice(0,6000)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
-let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
+let voiceEnabled=false,recognition=null,voicePending=[],speaking=false,voiceRetry=null,tries=0;
 let playbackVersion=0,voiceEchoUntil=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
 const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias,requireWakeName:false})||null;
@@ -932,7 +932,7 @@ function speakText(value){
  // Native TTS and website TTS must both hide spoken Markdown punctuation.
  // Keep the original response unchanged in the on-screen conversation.
  const rawSpeech=(typeof brainTools!=='undefined'&&brainTools?.speechText)
-  ?brainTools.speechText(value):String(value??'');
+  ?brainTools.speechText(value,{hideTicketNumbers:config.hideTicketNumbers!==false,brief:config.briefSpeech!==false}):String(value??'');
  const cleanSpeech=rawSpeech
   .replace(/\x60{3}[\s\S]*?\x60{3}/g,' ')
   .replace(/!?\[([^\]]+)\]\(https?:\/\/[^)]+\)/gi,'$1')
@@ -1291,6 +1291,32 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ // This is an owner-controlled style preference, not a work ticket or a
+ // magic keyword limiting general AI conversation. Store it across reloads
+ // before passing unrelated questions to the real assistant model.
+ const speechPreference=brainTools?.voicePreferenceCommand?.(spoken);
+ if(speechPreference){
+  busy=true;send.disabled=true;display(spoken,'you');input.value='';
+  const updated={...config,...speechPreference};
+  if(speechPreference.learnedVoiceInstruction){
+   const preferenceText=speechPreference.learnedVoiceInstruction.slice(0,180);
+   const previous=Array.isArray(config.learnedVoiceInstructions)?config.learnedVoiceInstructions.filter(s=>typeof s==='string').slice(-9):[];
+   updated.learnedVoiceInstructions=[...previous.filter(s=>s!==preferenceText),preferenceText].slice(-10);
+   delete updated.learnedVoiceInstruction;
+  }
+  const saved=save(CONFIG,updated);
+  if(saved)config=updated;
+  const answer=!saved?'I could not save that preference on this device.':
+   speechPreference.hideTicketNumbers===true?'Remembered. I will keep ticket references on screen but not read them aloud.':
+   speechPreference.learnedVoiceInstruction?'Saved your speaking preference for future conversations.':
+   'Remembered. Brief spoken replies, with the full answer in chat.';
+  display(answer,'ai');
+  messages.push({role:'user',text:spoken},{role:'assistant',text:answer});
+  messages=messages.slice(-400);persistChat();
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;
+  else if(fromVoice||config.voice&&!nativeOverlay)speakText(answer);
+  nativeSpeechPending=false;busy=false;send.disabled=false;return;
+ }
  const preference=!embedded&&!pendingImage?brainTools?.notificationPreference?.(spoken):null;
  if(preference){
   busy=true;send.disabled=true;display(spoken,'you');input.value='';
@@ -1599,7 +1625,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   display(workEvidence,'ai');messages.push({role:'assistant',text:workEvidence});persistChat();status.textContent=workEvidence;
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=workEvidence;else if(config.voice&&!nativeOverlay)speakText(workEvidence);
   nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');
-  if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
+  if(voicePending.length){const next=voicePending.shift();void sendMessage(next,true)}
   return;
  }
  else if(!embedded&&(directRequest||githubCheck||createRepository||coderRequest)){
@@ -1671,7 +1697,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }finally{
    nativeSpeechPending=false;busy=false;send.disabled=false;
    if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
+   if(voicePending.length){const next=voicePending.shift();void sendMessage(next,true)}
   }
   return;
  }
@@ -1689,6 +1715,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const lookupPayload=()=>({request:lookupRequest,input:prompt,location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
+ 'Saved owner speaking preferences: '+(config.hideTicketNumbers!==false?'Do not read ticket/job reference identifiers aloud; keep them in written results. ':'')+(config.briefSpeech!==false?'Keep spoken answers brief without withholding the full written answer.':'Full spoken answers requested.')+'.',
+ 'Additional owner-authorized speaking-style corrections (not permissions or action requests): '+(Array.isArray(config.learnedVoiceInstructions)?config.learnedVoiceInstructions.filter(x=>typeof x==='string').slice(-10).join('; ').slice(0,1200):'[none]')+'.',
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
  'GitHub work runs through the owner-authenticated direct adapter or color-bot runner using the existing owner key. Do not claim credentials are absent without a current tool result. Only real tool receipts prove repository creation, code writes, Actions, tests, merges or deployment; ChatGPT subscriptions do not grant GitHub access.',
  'Keep the owner on QuantaPhi. Never invent a navigation destination. If a real evidence URL is available, include its full https URL in text so the interface can make it clickable. Explain work states in plain English: waiting, working, blocked, or finished with proof.',
@@ -1749,13 +1777,20 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     if(nativeSpeechPending)nativeSpeechReply=answer;
     nativeSpeechPending=false;
    }else if(config.voice)speakText(answer);
- }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message}
+ }catch(error){
+  const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));
+  display(message,'ai');status.textContent=message;
+  // Every accepted spoken question gets either an answer or an audible failure.
+  // No invented answer or execution receipt is substituted after a timeout.
+  if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false;}
+  else if(fromVoice&&!nativeOverlay)speakText(message);
+ }
  finally{if(nativeOverlay&&nativeSpeechPending){
      nativeSpeechReply=workEvidence||'The assistant could not complete that request.';
      nativeSpeechPending=false;
    }
    busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-    if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
+    if(voicePending.length){const next=voicePending.shift();void sendMessage(next,true)}
   }
 }
 composer.before(repositoryPicker);
@@ -1810,7 +1845,7 @@ function stopMeter(){
 function stopVoice(message){
  voiceLeaseWanted=false;
  voiceGeneration++;streamVoice?.stop();streamVoice=null;
- voiceResumeWanted=false;voiceEnabled=false;voicePending='';
+ voiceResumeWanted=false;voiceEnabled=false;voicePending.length=0;
  if(voiceRetry)clearTimeout(voiceRetry);voiceRetry=null;
  pauseRecognition();stopMeter();
  playbackVersion++;try{speechSynthesis.cancel()}catch{}
@@ -1840,7 +1875,13 @@ function heardTranscript(transcript){
  const turn=voiceGate.accept(transcript,Date.now());
  if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
  if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';return}
- if(turn.type==='message'){if(busy)voicePending=turn.text;else void sendMessage(turn.text,true)}
+ if(turn.type==='message'){
+  if(busy){
+   // FIFO, not latest-only: a second spoken instruction cannot erase the first.
+   if(voicePending.length<8)voicePending.push(turn.text);
+   else status.textContent='Voice queue has eight requests. Please pause and repeat the last one.';
+  }else void sendMessage(turn.text,true);
+ }
 }
 async function startVoice(){
  // Android's foreground service already owns voice recognition. A WebView

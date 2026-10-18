@@ -69,7 +69,9 @@ export function chooseTool(text){
 // voice dialogue responsive and avoid silently escalating every prompt.
 export function reasoningFor(text){
  const utterance=clean(text,4000);
- return /\b(?:fix|repair|debug|diagnos(?:e|is)|refactor|architecture|architect|integrat(?:e|ion)|deploy|implement|build|code|coding|repository|website|robot brain|thorough|deeply|analy[sz]e|compare)\b/i.test(utterance)?'high':'medium';
+ // Low effort starts everyday dialogue sooner. Keep deep reasoning for real
+ // architecture/repair queries; never downgrade an explicit complex request.
+ return /\b(?:fix|repair|debug|diagnos(?:e|is)|refactor|architecture|architect|integrat(?:e|ion)|deploy|implement|build|code|coding|repository|website|robot brain|thorough|deeply|analy[sz]e|compare)\b/i.test(utterance)?'high':'low';
 }
 // Short spoken turns conserve plan/Workers AI usage. Detail is available on request,
 // while technical repairs still receive enough room for a useful, evidence-based answer.

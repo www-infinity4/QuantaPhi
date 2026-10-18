@@ -239,3 +239,33 @@ test('selected repository pins both writer and verification jobs',()=>{
  }
  assert.throws(()=>makeJobs('Fix menu','another-owner/repo'),/explicit_owner_repository_required/);
 });
+
+test('Bubbles retains short spoken preferences without converting ordinary questions into commands',()=>{
+ const {voicePreferenceCommand,speechText}=require('../bubbles-brain-actions.js');
+ assert.deepEqual(voicePreferenceCommand("don't read ticket numbers"),{hideTicketNumbers:true});
+ assert.deepEqual(voicePreferenceCommand("Bubbles, please remember don't say ticket IDs"),{hideTicketNumbers:true});
+ assert.deepEqual(voicePreferenceCommand("keep your replies short"),{briefSpeech:true});
+ assert.deepEqual(voicePreferenceCommand('Remember that you should not repeat long introductions'),{learnedVoiceInstruction:'you should not repeat long introductions'});
+ assert.equal(voicePreferenceCommand('Remember my API token is abcd'),null,'secrets are never stored in speech-style preferences');
+ assert.equal(voicePreferenceCommand('Explain what ticket IW-20261013-AABBCCDD means'),null);
+ const answer='Ticket IW-20261013-AABBCCDD is queued; TASK-1 passed PR #629. Open https://github.com/owner/repo';
+ const spoken=speechText(answer,{hideTicketNumbers:true,brief:true});
+ assert.ok(!/IW-|TASK-1|#629|github\\.com/i.test(spoken),spoken);
+ assert.match(spoken,/queued/i);
+ assert.ok(answer.includes('IW-20261013-AABBCCDD'),'original written receipt remains intact');
+ const long='This is a complete answer. '+Array.from({length:100},(_,i)=>'word'+i).join(' ');
+ const concise=speechText(long,{brief:true});
+ assert.ok(concise.split(/\\s+/).length<=78,concise);
+ assert.match(concise,/More details are in the chat/);
+ assert.equal(speechText(long,{brief:false}),long,'full written answer is not truncated');
+});
+
+test('spoken browser follow-ups are a bounded FIFO and failures become visible replies',()=>{
+ const site=fs.readFileSync(require.resolve('../bubbles-ai.js'),'utf8');
+ assert.match(site,/voicePending=\[\]/);
+ assert.match(site,/voicePending\.push\(turn\.text\)/);
+ assert.match(site,/voicePending\.shift\(\)/);
+ assert.doesNotMatch(site,/voicePending=turn\.text/);
+ assert.match(site,/if\(nativeOverlay&&nativeSpeechPending\)\{nativeSpeechReply=message;nativeSpeechPending=false;/);
+ assert.match(site,/learnedVoiceInstructions/);
+});
