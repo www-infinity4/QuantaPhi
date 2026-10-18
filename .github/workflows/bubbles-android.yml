@@ -141,6 +141,12 @@ jobs:
           node --test test/bubbles-live-native-microphone.test.cjs
       - name: Verify official GPT-Live voice gateway contract
         run: node --test test/bubbles-gpt-live.test.cjs test/bubbles-live-tools.test.cjs
+      - name: Verify persistent screen-context session
+        run: |
+          node --test test/bubbles-screen-watch.test.cjs
+          mkdir -p /tmp/screen-context
+          javac -d /tmp/screen-context android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenWatchSession.java android/bubbles-overlay/checks/ScreenWatchSessionCheck.java
+          java -cp /tmp/screen-context org.quantaphi.bubbles.ScreenWatchSessionCheck
       - name: Verify screen intent and safe one-step actions
         run: |
           mkdir -p /tmp/bubbles-screen
