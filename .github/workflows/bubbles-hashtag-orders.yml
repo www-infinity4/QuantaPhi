@@ -5,6 +5,8 @@ on:
       - 'workers/infinity-brain-clock/bubbles-social-orders.mjs'
       - 'workers/infinity-brain-clock/worker.js'
       - 'test/bubbles-social-orders.test.mjs'
+      - 'bubbles-ai.js'
+      - 'docs/BUBBLES-HASHTAG-ORDERS.md'
       - '.github/workflows/bubbles-hashtag-orders.yml'
   push:
     branches: [main]
@@ -12,6 +14,8 @@ on:
       - 'workers/infinity-brain-clock/bubbles-social-orders.mjs'
       - 'workers/infinity-brain-clock/worker.js'
       - 'test/bubbles-social-orders.test.mjs'
+      - 'bubbles-ai.js'
+      - 'docs/BUBBLES-HASHTAG-ORDERS.md'
       - '.github/workflows/bubbles-hashtag-orders.yml'
 permissions:
   contents: read
