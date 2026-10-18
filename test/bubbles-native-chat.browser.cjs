@@ -4,7 +4,7 @@ const fs=require('node:fs');
 const http=require('node:http');
 const {chromium}=require('playwright');
 
-test('Android chat: one scroll surface, reachable composer, visible pairing results and ordinary links',async()=>{
+test('Android chat: reachable conversation and compact composer, visible pairing results and ordinary links',async()=>{
  const server=http.createServer((req,res)=>{
   const pathname=new URL(req.url,'http://localhost').pathname;
   const allowed=['/robot-brain-owner.js','/bubbles.html','/bubbles-ai.js','/bubbles-ai.css','/bubbles-native-chat.css','/oracle-octaves.css','/bubbles-introduction.css'];
@@ -72,7 +72,10 @@ test('Android chat: one scroll surface, reachable composer, visible pairing resu
   await page.waitForFunction(()=>document.querySelector('.ba-composer').getBoundingClientRect().bottom<=visualViewport.height+1);
   m=await metrics();assert.ok(m.height>0);assert.ok(m.composerBottom<=m.viewport+1,JSON.stringify(m));
   await page.getByText('Options',{exact:true}).click();
-  m=await metrics();assert.deepEqual(m.scrollables,['ba-thread']);
+  m=await metrics();assert.ok(m.height>=64);assert.ok(m.scrollables.includes('ba-thread'));
+  assert.ok(m.scrollables.every(name=>['ba-thread','ba-composer'].includes(name)));
+  await send.scrollIntoViewIfNeeded();assert.equal(await send.isVisible(),true);
+  assert.ok((await send.boundingBox()).y+(await send.boundingBox()).height<=m.viewport+1);
   await page.screenshot({path:'/tmp/bubbles-native-chat20.png'});
   assert.deepEqual(errors,[]);
  }finally{await browser?.close();await new Promise(r=>server.close(r));}
