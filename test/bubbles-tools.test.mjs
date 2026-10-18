@@ -7,8 +7,8 @@ test('spoken commands select actual tools, ordinary conversation remains chat',(
  assert.equal(chooseTool('Explain this design'),'oracle.chat');
 });
 test('reasoning level comes from the actual spoken request, not injected persona text',()=>{
- assert.equal(reasoningFor('Hello, what is your name?'),'medium');
- assert.equal(reasoningFor('How are you today?'),'medium');
+ assert.equal(reasoningFor('Hello, what is your name?'),'low');
+ assert.equal(reasoningFor('How are you today?'),'low');
  assert.equal(reasoningFor('Please debug my website microphone and update its voice interface'),'high');
  assert.equal(reasoningFor('Analyze the repository build architecture'),'high');
 });
@@ -36,7 +36,7 @@ test('foreign website origins cannot invoke assistant tools',async()=>{
 });
 test('ordinary conversation uses GPT OSS and reports the actual model',async()=>{
  let used=false;
- const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{AI:{run:async(model,options)=>{used=true;assert.equal(model,'@cf/openai/gpt-oss-120b');assert.equal(options.reasoning_effort,'medium');assert.equal(options.max_tokens,650);assert.match(options.messages[0].content,/Installed tool inventory/);assert.match(options.messages[0].content,/receipts automatically/);assert.match(options.messages[1].content,/hello/);return {response:'Hello'};}}});
+ const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{AI:{run:async(model,options)=>{used=true;assert.equal(model,'@cf/openai/gpt-oss-120b');assert.equal(options.reasoning_effort,'low');assert.equal(options.max_tokens,650);assert.match(options.messages[0].content,/Installed tool inventory/);assert.match(options.messages[0].content,/receipts automatically/);assert.match(options.messages[1].content,/hello/);return {response:'Hello'};}}});
  const body=await r.json();assert.equal(used,true);assert.equal(body.output,'Hello');assert.equal(body.model,'@cf/openai/gpt-oss-120b');
 });
 test('website repair requests get high reasoning and a larger output budget',async()=>{
@@ -195,4 +195,10 @@ test('internal planning and fabricated createTicket JSON never become Bubbles sp
  assert.match(second.output,/has not verified a code edit/);
  assert.doesNotMatch(second.output,/createTicket/);
  assert.equal(second.receipt.repositoryActionsVerified,false);
+});
+
+test('short ordinary questions keep the full general AI path but use faster low effort',()=>{
+ assert.equal(reasoningFor('What is photosynthesis?'),'low');
+ assert.equal(replyBudgetFor('What is photosynthesis?'),650);
+ assert.equal(reasoningFor('Analyze the repository build architecture'),'high');
 });
