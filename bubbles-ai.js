@@ -850,7 +850,28 @@ if(brainInbox){
  communityButton.type='button';
  const publicScanButton=create('button','ba-control','Scan public #bubbles on X');
  publicScanButton.type='button';
- communityActions.append(communityButton,publicScanButton);
+ const ownerHashtagScan=create('button','ba-control','Scan my #bubbles on X');
+ ownerHashtagScan.type='button';
+ ownerHashtagScan.setAttribute('aria-label','Scan the verified QuantaPhi owner account for hashtag review drafts');
+ communityActions.append(communityButton,publicScanButton,ownerHashtagScan);
+ ownerHashtagScan.addEventListener('click',async()=>{
+  if(!ownerReady){recordBrainNotice('Connect your verified Robot Brain owner session before scanning #bubbles posts.');return}
+  ownerHashtagScan.disabled=true;ownerHashtagScan.textContent='Scanning owner posts…';
+  try{
+   const headers=await verifiedOwnerHeaders();
+   const response=await bubblesFetch(BRAIN+'/work/social/bubbles/scan',{
+    method:'POST',headers:{...headers,'Content-Type':'application/json'},
+    body:'{}',cache:'no-store'
+   },30000);
+   const result=await response.json().catch(()=>({}));
+   if(!response.ok||!result.ok)throw Error(result.error||'X owner scan unavailable');
+   const drafted=(result.drafts||[]).filter(item=>!item.deduplicated).length;
+   recordBrainNotice('Verified owner #bubbles scan: '+result.found+' matching posts, '+drafted+
+    ' new draft tickets. Review and authorize drafts in Robot Brain; no runner started.');
+   void pollBrainProgress();
+  }catch(error){recordBrainNotice('Owner #bubbles scan could not complete: '+String(error.message||error).slice(0,170))}
+  finally{ownerHashtagScan.disabled=false;ownerHashtagScan.textContent='Scan my #bubbles on X'}
+ });
  publicScanButton.addEventListener('click',async()=>{
   if(!ownerReady){recordBrainNotice('Connect the owner Robot Brain before scanning public #bubbles proposals.');return}
   publicScanButton.disabled=true;publicScanButton.textContent='Scanning public posts…';
