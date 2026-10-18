@@ -73,7 +73,8 @@ export function googleAdapter(config, request = (...args)=>globalThis.fetch(...a
   };
 }
 
-export function githubAdapter(config, request = (...args)=>globalThis.fetch(...args)) {
+async function githubRequest(url,options){const response=await globalThis.fetch(url,{...options,redirect:'manual'});if(response.status>=300&&response.status<400){let kind='missing';try{const target=new URL(response.headers.get('Location'),url);kind=target.origin!=='https://github.com'?'external':target.pathname==='/login/oauth/access_token'?'token':target.pathname.startsWith('/login')?'login':'other';}catch{}throw TypeError('github_token_redirect_'+kind);}return response;}
+export function githubAdapter(config, request = githubRequest) {
   const redirectUri = callback(config);
   return {
     id:'github',
@@ -88,7 +89,7 @@ export function githubAdapter(config, request = (...args)=>globalThis.fetch(...a
     },
     async refresh({refreshToken, actions}) {
       const value = await jsonResponse(await request('https://github.com/login/oauth/access_token', {
-        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000), headers:{Accept:'application/json'},
+        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000), headers:{Accept:'application/json','User-Agent':'Bubbles-User-Connections'},
         body:new URLSearchParams({client_id:config.clientId, client_secret:config.clientSecret,
           grant_type:'refresh_token', refresh_token:refreshToken})
       }), 'github_refresh');
@@ -107,7 +108,7 @@ export function githubAdapter(config, request = (...args)=>globalThis.fetch(...a
     },
     async exchange({code, verifier}) {
       const value = await jsonResponse(await request('https://github.com/login/oauth/access_token', {
-        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000), headers:{Accept:'application/json'},
+        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000), headers:{Accept:'application/json','User-Agent':'Bubbles-User-Connections'},
         body:new URLSearchParams({client_id:config.clientId, client_secret:config.clientSecret, redirect_uri:redirectUri, code, code_verifier:verifier})
       }), 'github_exchange');
       const tokens = tokenFields(value);
