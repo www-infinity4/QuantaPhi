@@ -9,6 +9,11 @@ const start=$("liveStart"),stop=$("liveStop"),cancel=$("liveInterrupt"),
 let pc=null,channel=null,mic=null,ready=false,endTimer=null;
 let lastAppend="";
 let attempt=0, requestController=null;
+const liveTools=window.BubblesLiveTools?.create({
+ send:event=>{if(channel?.readyState==="open")channel.send(JSON.stringify(event));},
+ report:text=>line("Tools",text)
+});
+$("liveBrainStatus")?.addEventListener("click",()=>void liveTools?.report());
 const mute=document.createElement("button");
 mute.textContent="Mute microphone";mute.disabled=true;
 mute.setAttribute("aria-pressed","false");stop.after(mute);
@@ -35,6 +40,7 @@ function line(role,message) {
  transcript.append(p);transcript.scrollTop=transcript.scrollHeight;
 }
 function cleanup(){
+ liveTools?.reset();
  ++attempt;requestController?.abort();requestController=null;
  clearTimeout(endTimer);
  mic?.getTracks().forEach(track=>track.stop());
@@ -45,6 +51,9 @@ function cleanup(){
  start.disabled=false;stop.disabled=true;cancel.disabled=true;
 }
 function update(event) {
+ void liveTools?.receive(event)?.catch(()=>show("Live tool result could not be delivered. Check Brain status or retry."));
+ if(event.type==="session.input_transcript.delta")line("You",event.delta);
+ else if(event.type==="session.output_transcript.delta")line("Bubbles",event.delta);
  if(event.type==="session.started"){
    ready=true;connected();
    stop.disabled=false;cancel.disabled=false;
