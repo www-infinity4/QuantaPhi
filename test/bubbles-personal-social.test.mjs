@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {bubbleTag,parsePersonalPost,fetchOwnedXPosts,resolveXAccount,verificationTokenFromPost} from '../workers/infinity-brain-clock/personal-social-tags.mjs';
+import {bubbleTag,parsePersonalPost,fetchOwnedXPosts,resolveXAccount,verificationTokenFromPost,parseCommunityBubblesPost,searchPublicBubblesX} from '../workers/infinity-brain-clock/personal-social-tags.mjs';
 import {classifyCommunitySuggestion,validateGPTVerdict,reviewCommunityWithGPT} from '../workers/infinity-brain-clock/community-upgrades.mjs';
 const xOwner='111222333444555',profile={provider:'x',verified:1,command_tag:'#albert',social_account_id:xOwner};
 function post(text,author_id=xOwner,id='999888777666555'){return {id,author_id,text,created_at:new Date().toISOString()};}
@@ -108,4 +108,42 @@ test('web control is honest about real account verification and optional Faceboo
  assert.match(ui,/starquest_ledger_device_v1/);
  assert.match(bubble,/bubbles:personal-name-request/);
  assert.match(bubble,/bubbles:name-updated/);
+});
+
+test('public #bubbles feed accepts valid external suggestions but never grants account authority',()=>{
+ const candidate=parseCommunityBubblesPost(post('#bubbles make the words readable on QuantaPhi', '777888999000111'));
+ assert.equal(candidate?.suggestion,'make the words readable on QuantaPhi');
+ assert.equal(candidate?.ownerPrivilege,false);
+ assert.equal(candidate?.execute,false);
+ assert.equal(parseCommunityBubblesPost(post('#bubblesfake repair button')),null);
+ assert.equal(parseCommunityBubblesPost(post('https://example.org/#bubbles repair button')),null);
+ assert.equal(parseCommunityBubblesPost({...post('#bubbles repair button'),referenced_tweets:[{type:'retweeted'}]}),null);
+});
+test('public X search is bounded to official recent search and returns no owner authority',async()=>{
+ let called=0;
+ const result=await searchPublicBubblesX({token:'test-secret-token',fetchImpl:async(url,opts)=>{
+  called++;const api=new URL(url);
+  assert.equal(api.origin,'https://api.x.com');
+  assert.equal(api.pathname,'/2/tweets/search/recent');
+  assert.match(api.searchParams.get('query'),/^#bubbles/);
+  assert.equal(opts.redirect,'error');
+  return Response.json({data:[post('#bubbles research iodine','555555555555555','999888777666555')],meta:{}});
+ }});
+ assert.equal(result.ok,true);assert.equal(called,1);
+ assert.equal(result.posts.length,1);assert.equal(result.posts[0].ownerPrivilege,false);
+ const missing=await searchPublicBubblesX({token:''});
+ assert.equal(missing.ok,false);
+});
+test('public scan endpoint is owner-authenticated, imports drafts and does not dispatch',()=>{
+ const worker=readFileSync('workers/infinity-brain-clock/worker.js','utf8');
+ const a=worker.indexOf("if(path==='/work/community/x/scan'&&request.method==='POST')");
+ const b=worker.indexOf("if(path==='/community/upgrade'&&request.method==='POST')");
+ const source=worker.slice(a,b);
+ assert.ok(a>0&&b>a);
+ assert.match(source,/ownerAuthorized\(env,token\)/);
+ assert.match(source,/searchPublicBubblesX/);
+ assert.match(source,/community_x_sources/);
+ assert.match(source,/runnerStarted:false/);
+ assert.doesNotMatch(source,/\/run-next|status:'ready'|makeJobs\(/);
+ assert.match(readFileSync('bubbles-ai.js','utf8'),/Scan public #bubbles on X/);
 });
