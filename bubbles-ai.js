@@ -313,6 +313,21 @@ gptConnect.addEventListener('click',()=>{
  else{gptStatus.textContent='ChatGPT website sign-in requires an approved OpenAI OAuth client ID for QuantaPhi. Until registered, Bubbles uses Oracle; Android Bubbles has its own supported device-local sign-in.';}
 });
 connections.append(provider,gptConnect,gptStatus,openai,claude,github);
+const connectedAccounts=create('details','ba-account-connections');
+connectedAccounts.append(create('summary','','Connect your accounts'));
+connections.append(connectedAccounts);
+let accountConnectionsUI=null;
+connectedAccounts.addEventListener('toggle',async()=>{
+ if(!connectedAccounts.open||accountConnectionsUI)return;
+ try{
+  const module=await import('/bubbles-connections.mjs?v=20261018-accounts2');
+  accountConnectionsUI=module.mountConnections(connectedAccounts,{token:()=>{
+   if(!window.InfinityUnifiedWallet)throw Error('Connect your Unified Wallet first.');
+   return new window.InfinityUnifiedWallet().token();
+  }});
+  await accountConnectionsUI.refresh();
+ }catch{connectedAccounts.append(create('p','ba-muted','Account connections could not load. Try again after reconnecting your wallet.'));}
+});
 
 /* Concept credit: DJ Vertigo · Macro Zoom.
  * One owner-facing settings scope; existing first-party Bubbles handlers remain

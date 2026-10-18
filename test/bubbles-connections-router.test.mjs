@@ -1,0 +1,35 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {handleConnections,PREFIX} from '../workers/bubbles-connections/router.mjs';
+const bearer='Bearer sq_'+ 'a'.repeat(40);
+function request(path,{method='GET',origin='https://quantaphi.org',authorization=bearer,body}={}) {
+  return new Request('https://quantaphi.org'+PREFIX+path,{method,headers:{Origin:origin,Authorization:authorization,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})});
+}
+const env={CONNECTIONS_READY:true,BOT_WALLET:{fetch:async(url,options)=>{assert.equal(url,'https://wallet.internal/v1/wallet/state');assert.equal(options.headers.Authorization,bearer);return Response.json({ok:true,user:{id:'verified-alice'}});}}};
+test('router rejects foreign origins and unauthenticated callers before resolving storage',async()=>{
+  const resolve=()=>assert.fail('must not resolve a service');
+  assert.equal((await handleConnections(request('/accounts',{origin:'https://evil.test'}),env,resolve)).status,403);
+  assert.equal((await handleConnections(request('/accounts',{authorization:''}),env,resolve)).status,401);
+});
+test('caller supplied identities cannot replace verified wallet identity or device session',async()=>{
+  let received;
+  const response=await handleConnections(request('/start',{method:'POST',body:{userId:'victim',sessionId:'attacker',provider:'google',actions:['drive.read']}}),env,async id=>{
+    assert.equal(id,'verified-alice');return {start:async input=>{received=input;return {authorizationUrl:'https://accounts.google.com/'};}};
+  });assert.equal(response.status,200);assert.equal(received.userId,'verified-alice');assert.notEqual(received.sessionId,'attacker');assert.ok(!received.sessionId.includes('sq_'));
+});
+test('unconfigured service exposes catalog status without claiming accounts are connected',async()=>{
+  const e={...env,CONNECTIONS_READY:false};
+  const response=await handleConnections(request('/catalog'),e,()=>assert.fail());
+  assert.ok((await response.json()).providers.every(p=>p.configured===false));
+  assert.equal((await handleConnections(request('/accounts'),e,()=>assert.fail())).status,503);
+});
+test('callback has no-store, referrer protection, fixed target origins and code removal',async()=>{
+  const response=await handleConnections(request('/google/callback?code=private-code'),{},()=>assert.fail());
+  const html=await response.text();assert.equal(response.status,200);assert.equal(response.headers.get('Referrer-Policy'),'no-referrer');
+  assert.ok(html.includes('history.replaceState'));assert.ok(response.headers.get('Content-Security-Policy').includes("frame-ancestors 'none'"));
+  assert.ok(!html.includes('private-code'));assert.ok(!html.includes("postMessage(message,'*')"));
+});
+test('unexpected provider error text is redacted and no token appears in response',async()=>{
+  const response=await handleConnections(request('/refresh',{method:'POST',body:{id:'id'}}),env,()=>({refresh:async()=>{throw Error('secret-token-would-be-leaked');}}));
+  assert.equal(response.status,503);assert.equal((await response.json()).error,'connection_operation_failed');
+});

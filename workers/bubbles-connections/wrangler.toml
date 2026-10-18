@@ -1,0 +1,24 @@
+name = "bubbles-connections"
+main = "worker.mjs"
+compatibility_date = "2026-10-10"
+keep_vars = true
+
+[vars]
+# Enable only after client registration, keyring provisioning and staging checks.
+CONNECTIONS_READY = "false"
+
+[[services]]
+binding = "BOT_WALLET"
+service = "unified-wallet"
+
+[[durable_objects.bindings]]
+name = "CONNECTIONS"
+class_name = "UserConnections"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["UserConnections"]
+
+# Server-only secrets: CONNECTION_KEYRING (JSON keyId -> 32-byte base64url key),
+# CONNECTION_ACTIVE_KEY, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET,
+# GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET. Never reuse the owner's GHP token.
