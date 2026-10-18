@@ -1,5 +1,6 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
 import {classifyCommunitySuggestion,reviewCommunityWithGPT} from './community-upgrades.mjs';
+import {bubbleTag,parsePersonalPost,fetchOwnedXPosts,verificationTokenFromPost} from './personal-social-tags.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
 import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
@@ -1265,6 +1266,103 @@ export default{
     const raw=await request.text();if(raw.length>128000)return output(request,{ok:false,error:'request_too_large'},413);
     return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
+  }
+  if(path==='/bubble/personal-social'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(!origins.has(origin))return output(request,{ok:false,error:'site_origin_required'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (sq_[A-Za-z0-9_-]{32,})$/)?.[1];
+   if(!token)return output(request,{ok:false,error:'wallet_authentication_required'},401);
+   if(!env.BOT_WALLET||!env.WORK_DB)return output(request,{ok:false,error:'personal_social_unavailable'},503);
+   let userId;
+   try{
+    const check=await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/state',{
+     headers:{Authorization:'Bearer '+token},signal:AbortSignal.timeout(12000)});
+    const identity=await check.json();
+    if(!check.ok||!identity.ok||typeof identity.user?.id!=='string'||identity.user.id.length>128)
+     return output(request,{ok:false,error:'wallet_authentication_required'},401);
+    userId=identity.user.id;
+   }catch{return output(request,{ok:false,error:'wallet_unreachable'},503);}
+   let body;
+   try{const raw=await request.text();if(raw.length>800)throw Error('body_too_large');body=JSON.parse(raw||'{}')}
+   catch{return output(request,{ok:false,error:'invalid_social_request'},400)}
+   const action=String(body.action||'status');
+   if(!['status','connect','verify','scan','inbox','dismiss'].includes(action))
+    return output(request,{ok:false,error:'unsupported_social_action'},400);
+   try{
+    const db=env.WORK_DB;
+    const profile=await db.prepare('SELECT * FROM bubble_social_profiles WHERE user_id=?').bind(userId).first();
+    if(action==='status')return output(request,{ok:true,profile:profile?{
+      name:profile.bubble_name,tag:profile.command_tag,provider:profile.provider,
+      accountId:profile.social_account_id,verified:profile.verified===1,
+      challengeExpiresAt:profile.verified?null:profile.challenge_expires_at
+    }:null});
+    if(action==='connect'){
+     const name=String(body.name||'').trim().slice(0,38),tag=bubbleTag(name),provider=String(body.provider||'x');
+     const accountId=String(body.accountId||'');
+     if(!tag||!['x','facebook_page'].includes(provider)||!/^[0-9]{1,24}$/.test(accountId))
+      return output(request,{ok:false,error:'invalid_name_provider_or_account'},400);
+     const now=Date.now(),challenge=crypto.randomUUID().replaceAll('-','');
+     const challengeHash=await digest(challenge);
+     // Editing a verified binding is an intentional new enrollment and invalidates its proof.
+     await db.prepare('INSERT INTO bubble_social_profiles(user_id,bubble_name,command_tag,provider,social_account_id,verified,challenge_hash,challenge_issued_at,challenge_expires_at,created_at,updated_at) VALUES(?,?,?,?,?,0,?,?,?,?,?) ON CONFLICT(user_id) DO UPDATE SET bubble_name=excluded.bubble_name,command_tag=excluded.command_tag,provider=excluded.provider,social_account_id=excluded.social_account_id,verified=0,challenge_hash=excluded.challenge_hash,challenge_issued_at=excluded.challenge_issued_at,challenge_expires_at=excluded.challenge_expires_at,updated_at=excluded.updated_at')
+      .bind(userId,name,tag,provider,accountId,challengeHash,now,now+600000,now,now).run();
+     if(provider==='facebook_page')return output(request,{ok:true,status:'pending_meta_page_authorization',tag,verified:false,
+      note:'Facebook Page permissions and owner proof must be configured before scans. Never scan private profiles.'});
+     return output(request,{ok:true,status:'awaiting_proof_post',tag,verified:false,
+      verifyText:tag+' verify '+challenge,expiresAt:now+600000,
+      note:'Post exactly this from the X account you control, then select Verify.'});
+    }
+    if(!profile)return output(request,{ok:false,error:'personal_social_not_connected'},409);
+    if(action==='verify'){
+     if(profile.provider!=='x')return output(request,{ok:false,error:'facebook_page_verification_not_connected'},503);
+     if(profile.verified===1)return output(request,{ok:true,verified:true,tag:profile.command_tag});
+     if(!profile.challenge_hash||profile.challenge_expires_at<Date.now())
+      return output(request,{ok:false,error:'proof_challenge_expired'},409);
+     const scan=await fetchOwnedXPosts({accountId:profile.social_account_id,token:env.X_API_BEARER_TOKEN,maxPages:2});
+     if(!scan.ok)return output(request,{ok:false,error:scan.error},503);
+     let verified=false;
+     for(const post of scan.posts){
+      const proof=verificationTokenFromPost(post,profile.command_tag,profile.social_account_id,profile.challenge_issued_at);
+      if(proof&&await digest(proof)===profile.challenge_hash){verified=true;break}
+     }
+     if(!verified)return output(request,{ok:false,error:'proof_post_not_found'},409);
+     // DB's partial unique index prevents two wallet users from claiming the same social identity.
+     const updated=await db.prepare("UPDATE bubble_social_profiles SET verified=1,challenge_hash='',challenge_issued_at=0,challenge_expires_at=0,updated_at=? WHERE user_id=? AND verified=0 AND challenge_hash=?")
+      .bind(Date.now(),userId,profile.challenge_hash).run();
+     if(updated?.meta?.changes!==1)return output(request,{ok:false,error:'social_identity_changed'},409);
+     return output(request,{ok:true,verified:true,tag:profile.command_tag});
+    }
+    if(action==='scan'){
+     if(profile.verified!==1)return output(request,{ok:false,error:'social_identity_not_verified'},403);
+     if(profile.provider!=='x')return output(request,{ok:false,error:'provider_scan_not_connected'},503);
+     const read=await fetchOwnedXPosts({accountId:profile.social_account_id,token:env.X_API_BEARER_TOKEN,maxPages:2});
+     if(!read.ok)return output(request,{ok:false,error:read.error},503);
+     let created=0,matched=0;
+     for(const post of read.posts){
+      const cmd=parsePersonalPost(post,profile);if(!cmd)continue;
+      matched++;
+      const saved=await db.prepare('INSERT OR IGNORE INTO bubble_social_inbox(user_id,source_id,provider,source_url,command_tag,suggestion,status,added_at) VALUES(?,?,?,?,?,?,?,?)')
+       .bind(userId,cmd.sourceId,'x',cmd.sourceUrl,cmd.tag,cmd.command,'new',Date.now()).run();
+      created+=Number(saved?.meta?.changes||0);
+     }
+     return output(request,{ok:true,tag:profile.command_tag,matched,created,
+      readOnly:true,autoExecuted:0,writePermissionGranted:false});
+    }
+    if(action==='dismiss'){
+     const sourceId=String(body.sourceId||'');
+     if(!/^(x|facebook_page):[0-9]{1,24}$/.test(sourceId))return output(request,{ok:false,error:'invalid_source_id'},400);
+     await db.prepare("UPDATE bubble_social_inbox SET status='dismissed' WHERE user_id=? AND source_id=?")
+      .bind(userId,sourceId).run();
+     return output(request,{ok:true});
+    }
+    const rows=await db.prepare('SELECT source_id,source_url,command_tag,suggestion,status,added_at FROM bubble_social_inbox WHERE user_id=? ORDER BY added_at DESC LIMIT 30')
+     .bind(userId).all();
+    return output(request,{ok:true,tag:profile.command_tag,commands:rows.results||[],
+      note:'Verified owner posts are suggestions. No repository-write consent or deployment is implied.'});
+   }catch(error){
+    const conflict=String(error?.message||'').includes('UNIQUE');
+    return output(request,{ok:false,error:conflict?'social_account_already_claimed':'personal_social_storage_unavailable'},conflict?409:503);
+   }
   }
   if(path==='/community/upgrade'&&request.method==='POST'){
    const origin=request.headers.get('Origin');
