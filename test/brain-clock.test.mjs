@@ -640,7 +640,7 @@ test('every Robot Brain color invokes the same real authenticated GPT model with
 });
 
 
-test('signed runner claim defers stale Pink verification while a linked Green repair is executing',async()=>{
+test('signed runner claim defers stale Pink verification when a linked Green repair is complete',async()=>{
  const repo='www-infinity4/QuantaPhi';
  const jobs=[
   {id:'TASK-1',agent:'greenbeans',repository:repo,status:'merged_verified',
@@ -649,7 +649,7 @@ test('signed runner claim defers stale Pink verification while a linked Green re
   {id:'TASK-2',agent:'pink-panther',repository:repo,status:'blocked',
    dependencies:['TASK-1','TASK-3'],
    instructions:'After TASK-1, independently verify the requested work: Fix Bubbles routing.'},
-  {id:'TASK-3',agent:'greenbeans',repository:repo,status:'working',
+  {id:'TASK-3',agent:'greenbeans',repository:repo,status:'complete',
    title:'Repair source-routing',
    instructions:'Diagnose and repair the authenticated source-routing failure preventing the existing owner job TASK-2.'}
  ];
@@ -665,7 +665,7 @@ test('signed runner claim defers stale Pink verification while a linked Green re
   method:'POST',body:JSON.stringify({runId:'567',runnerRepository:'www-infinity4/Moltnook'})
  }))).json();
  assert.equal(result.ok,true);
- assert.equal(result.lease,null,'do not preclaim Pink while Green is active');
- assert.equal(updates,0,'no D1 ticket change, no Pink completion, no lost Green repair');
+ assert.equal(result.lease,null,'do not preclaim Pink while sibling Green repair already finished');
+ assert.equal(updates,0,'no D1 ticket change, no Pink completion, no lost completed Green repair');
  assert.equal([...data.keys()].some(k=>k.startsWith('writer:')),false,'no empty lease issued');
 });
