@@ -1,6 +1,6 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
 import {classifyCommunitySuggestion,reviewCommunityWithGPT} from './community-upgrades.mjs';
-import {bubbleTag,parsePersonalPost,fetchOwnedXPosts,resolveXAccount,verificationTokenFromPost} from './personal-social-tags.mjs';
+import {bubbleTag,parsePersonalPost,fetchOwnedXPosts,resolveXAccount,verificationTokenFromPost,searchPublicBubblesX} from './personal-social-tags.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
 import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
@@ -1388,6 +1388,52 @@ export default{
     const conflict=String(error?.message||'').includes('UNIQUE');
     return output(request,{ok:false,error:conflict?'social_account_already_claimed':'personal_social_storage_unavailable'},conflict?409:503);
    }
+  }
+  if(path==='/work/community/x/scan'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(!env.WORK_DB)return output(request,{ok:false,error:'community_db_unavailable'},503);
+   const search=await searchPublicBubblesX({token:env.X_API_BEARER_TOKEN});
+   if(!search.ok)return output(request,search,503);
+   let imported=0,rejected=0,duplicate=0,modelReviewed=0;
+   try{
+    for(const found of search.posts.slice(0,20)){
+     const prior=await env.WORK_DB.prepare('SELECT source_id FROM community_x_sources WHERE source_id=?').bind(found.sourceId).first();
+     if(prior){duplicate++;continue}
+     const classification=classifyCommunitySuggestion(found.suggestion);
+     let proposalId='',decision={status:'reject',category:'other',placement:'community-review',summary:classification.error||'Rejected',risk:'high'};
+     if(classification.accepted){
+      if(modelReviewed<3){modelReviewed++;decision=await reviewCommunityWithGPT(found.suggestion,classification,{
+       apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1'
+      })}else decision={status:'needs_review',category:classification.category,placement:classification.placement,
+       summary:'Queued for owner/GPT assessment due to bounded scan budget',risk:'high'};
+      const contentHash=await digest(found.suggestion.trim().replace(/\\s+/g,' ').toLowerCase());
+      const existing=await env.WORK_DB.prepare('SELECT id FROM community_upgrade_proposals WHERE content_hash=?')
+       .bind(contentHash).first();
+      if(existing)proposalId=existing.id;
+      else{
+       const id='CU-'+crypto.randomUUID(),when=Date.now();
+       await env.WORK_DB.prepare('INSERT OR IGNORE INTO community_upgrade_proposals(id,client_hash,content_hash,submitted_at,author_name,suggestion,category,placement,gpt_status,gpt_summary,gpt_risk) VALUES(?,?,?,?,?,?,?,?,?,?,?)')
+        .bind(id,'public-x:'+await digest(found.authorId),contentHash,when,'',
+          found.suggestion,String(decision.category||classification.category),
+          String(decision.placement||classification.placement),
+          String(decision.status||'needs_review'),String(decision.summary||'').slice(0,240),
+          String(decision.risk||'high')).run();
+       const row=await env.WORK_DB.prepare('SELECT id FROM community_upgrade_proposals WHERE content_hash=?')
+        .bind(contentHash).first();
+       proposalId=row?.id||'';
+      }
+      if(proposalId)imported++;
+     }else rejected++;
+     await env.WORK_DB.prepare('INSERT OR IGNORE INTO community_x_sources(source_id,author_id,source_url,community_proposal_id,reviewed_status,seen_at) VALUES(?,?,?,?,?,?)')
+      .bind(found.sourceId,found.authorId,found.sourceUrl,proposalId,String(decision.status),Date.now()).run();
+    }
+    return output(request,{ok:true,found:search.posts.length,imported,rejected,duplicate,modelReviewed,
+     source:'x_recent_public_hashtag',thirdPartyHasNoOwnerAuthority:true,
+     runnerStarted:false,automaticPayout:false,searchExhaustive:false});
+   }catch{return output(request,{ok:false,error:'community_source_import_failed'},503)}
   }
   if(path==='/community/upgrade'&&request.method==='POST'){
    const origin=request.headers.get('Origin');
