@@ -1526,6 +1526,28 @@ $('#go').onclick=search;
        const actionId='collect:'+key+':'+existing.collectedAt;
        return fetch('https://monitor-phi.marvaseater.workers.dev/p/quants/signal',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({topic:searchTopic,signal:'collect',actionId})});
      }).catch(err=>console.warn('Monitor Quant sync deferred',err));
+    }
+  } catch (e) {
+    console.error('Collect operation failed', e);
+  } finally {
+    b.disabled = false;
+    b.textContent = original;
+  }
+}
+
+<!-- Demo button for spawning a bot -->
+<button id="spawn-demo-btn" style="margin:10px;">Spawn Demo Bot</button>
+<script src="./src/bot-spawn.js"></script>
+<script>
+  document.getElementById('spawn-demo-btn').addEventListener('click', () => {
+    try {
+      const bot = window.botSpawn.spawnBot({ task: 'Demo task', color: 'green' });
+      console.log('Demo bot spawned:', bot);
+    } catch (err) {
+      console.error('Failed to spawn demo bot:', err);
+    }
+  });
+</script>
     }catch(monitorError){console.warn('Monitor Quant sync deferred',monitorError)}
    }
    b.dataset.collected='1';b.textContent='Collected ✓ +0.1 ★';b.disabled=true;const ub=card.querySelector('.cardUncollect');if(ub)ub.hidden=false;
