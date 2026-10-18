@@ -26,6 +26,21 @@ export function parsePersonalPost(post,profile){
  return {provider,sourceId:provider+':'+id,sourceUrl:provider==='x'?'https://x.com/i/status/'+id:'https://www.facebook.com/'+id,
    authorId:owner,command,tag,verifiedSource:true,privileged:false,automaticExecution:false};
 }
+export async function resolveXAccount(username,{token,fetchImpl=fetch}={}){
+ const name=String(username||'').replace(/^@/,'').trim();
+ if(!/^[a-zA-Z0-9_]{1,15}$/.test(name)||typeof token!=='string'||token.length<12)
+  return {ok:false,error:'x_username_or_api_unavailable'};
+ let result;try{
+  result=await fetchImpl('https://api.x.com/2/users/by/username/'+encodeURIComponent(name),{
+   method:'GET',redirect:'error',headers:{Authorization:'Bearer '+token,Accept:'application/json'},
+   signal:AbortSignal.timeout(12000)
+  });
+ }catch{return {ok:false,error:'x_lookup_unreachable'}}
+ if(!result.ok)return {ok:false,error:'x_lookup_http_'+result.status};
+ let data;try{data=await result.json()}catch{return {ok:false,error:'x_lookup_bad_response'}}
+ if(!ID.test(String(data?.data?.id||'')))return {ok:false,error:'x_account_not_found'};
+ return {ok:true,accountId:String(data.data.id),username:String(data.data.username||name)};
+}
 export async function fetchOwnedXPosts({accountId,token,fetchImpl=fetch,maxPages=2}){
  if(!ID.test(String(accountId||''))||typeof token!=='string'||token.length<12||/[\r\n]/.test(token))
   return {ok:false,error:'x_api_not_configured',posts:[]};
