@@ -69,6 +69,21 @@ export class ConsentService {
     }));
     return publicConnection(connection);
   }
+  async githubRepositories({userId,id}) {
+    const prefix=await this.namespace(userId);
+    if(typeof id!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(id))throw Error('connection_invalid');
+    const key=prefix+'connection:'+id;
+    let record=await this.storage.get(key);
+    if(record?.userId!==userId||record.provider!=='github'||record.status!=='connected')throw Error('connection_not_verified');
+    if(record.expiresAt<=this.now()+30000){await this.refresh({userId,id});record=await this.storage.get(key);}
+    if(!record?.credentialRef||!this.adapters.github?.repositories)throw Error('provider_not_configured');
+    const encrypted=await this.storage.get(record.credentialRef);if(!encrypted)throw Error('credential_unavailable');
+    const credential=await this.vault.open(encrypted,record.credentialRef);
+    const result=await this.adapters.github.repositories({accessToken:credential.accessToken});
+    const current=await this.storage.get(key);
+    if(current?.status!=='connected'||current.revision!==record.revision)throw Error('connection_cancelled');
+    return result;
+  }
   async disconnect({userId, id}) {
     const prefix = await this.namespace(userId);
     if (typeof id !== 'string' || !/^[A-Za-z0-9_-]{43}$/.test(id)) throw Error('connection_invalid');
