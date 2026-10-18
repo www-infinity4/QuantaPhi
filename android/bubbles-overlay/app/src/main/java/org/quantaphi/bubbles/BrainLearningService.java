@@ -137,6 +137,78 @@ public final class BrainLearningService extends AccessibilityService {
             });
         } catch (RuntimeException error) { frameCaptured.run(); callback.accept(textObservation + "\nScreenshot access unavailable."); }
     }
+    /**
+     * One explicit owner-requested click in DU Recorder only.
+     * Never click Android system consent, a WebView, a wallet control or another
+     * app. This API returns a SENT action rather than claiming video is saved.
+     */
+    static String tapDuRecorderControl(String action) {
+        BrainLearningService service = active.get();
+        if (service == null) return "DU button unavailable: Bubbles screen access is not enabled.";
+        if (!"start".equals(action) && !"stop".equals(action) && !"toggle".equals(action))
+            return "Unsupported DU action.";
+        try {
+            java.util.List<AccessibilityWindowInfo> windows = service.getWindows();
+            if (windows == null) return "DU window not visible.";
+            ArrayList<AccessibilityNodeInfo> matches = new ArrayList<>();
+            try {
+                // Each matched window, including DU's floating control, must
+                // itself report DU's package on its root Accessibility node.
+                for (AccessibilityWindowInfo window : windows) {
+                    AccessibilityNodeInfo root = window.getRoot();
+                    if (root == null) continue;
+                    try {
+                        if (!DuRecorderBridge.PACKAGE.contentEquals(root.getPackageName())) continue;
+                        service.findDuControls(root, action, matches, 0);
+                    } finally { root.recycle(); }
+                }
+                if (matches.size() != 1) return matches.isEmpty()
+                    ? "DU start/stop control not exposed by Accessibility."
+                    : "DU has multiple matching controls; manual selection required.";
+                AccessibilityNodeInfo node = AccessibilityNodeInfo.obtain(matches.get(0));
+                try {
+                    for (int depth = 0; node != null && depth < 7; depth++) {
+                        if (node.isClickable() && node.isEnabled() && node.isVisibleToUser()) {
+                            boolean sent = node.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                            return sent ? "DU tap sent: " + action + " (recording state not yet verified)."
+                                : "DU refused the control tap.";
+                        }
+                        AccessibilityNodeInfo parent = node.getParent();
+                        node.recycle(); node = parent;
+                    }
+                    return "DU control has no accessible clickable button.";
+                } finally { if (node != null) node.recycle(); }
+            } finally { for (AccessibilityNodeInfo n : matches) n.recycle(); }
+        } catch (RuntimeException error) {
+            return "DU control unavailable: " + error.getClass().getSimpleName();
+        }
+    }
+
+    private void findDuControls(AccessibilityNodeInfo node, String action,
+            ArrayList<AccessibilityNodeInfo> matches, int depth) {
+        if (node == null || depth > 20 || !node.isVisibleToUser() || node.isPassword()) return;
+        String packageName = String.valueOf(node.getPackageName());
+        if (!DuRecorderBridge.PACKAGE.equals(packageName)) return;
+        String label = String.valueOf(node.getText() == null ? "" : node.getText()).trim().toLowerCase(Locale.ROOT);
+        String desc = String.valueOf(node.getContentDescription() == null
+            ? "" : node.getContentDescription()).trim().toLowerCase(Locale.ROOT);
+        // Only explicit recording labels, no guessing from anonymous ImageViews,
+        // coordinates or generic 'allow', 'ok', 'confirm', 'start now' dialogs.
+        boolean startLabel = label.matches("record|start recording|start record|rec")
+            || desc.matches("record|start recording|start record|rec");
+        boolean stopLabel = label.matches("stop recording|stop record|stop")
+            || desc.matches("stop recording|stop record|stop");
+        boolean exact = "start".equals(action) ? startLabel : "stop".equals(action)
+            ? stopLabel : startLabel || stopLabel;
+        if (exact) matches.add(AccessibilityNodeInfo.obtain(node));
+        for (int i = 0; i < node.getChildCount(); i++) {
+            AccessibilityNodeInfo child = node.getChild(i);
+            if (child == null) continue;
+            try { findDuControls(child, action, matches, depth + 1); }
+            finally { child.recycle(); }
+        }
+    }
+
     /** Deterministic, single, explicitly voiced/typed tap. Never tap risky controls. */
     static String performRequestedAction(String phrase) {
         BrainLearningService service = active.get();
