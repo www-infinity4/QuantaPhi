@@ -292,7 +292,7 @@ public final class MainActivity extends Activity {
         roomEnable.setText("Start Room Notes bubble (consent required)");
         roomEnable.setOnClickListener(v -> new AlertDialog.Builder(this)
             .setTitle("Enable visible Room Notes?")
-            .setMessage("Bubbles will save up to 30 short transcribed phrases heard near your phone in private app storage. It does not identify people. Get appropriate permission from anyone whose speech may be recorded. No room transcripts are sent to Cloudflare or Robot Brain. Say Bubbles before commands to the main assistant.")
+            .setMessage("Bubbles will save up to 30 short transcribed phrases heard near your phone in private app storage. It does not identify people. Get appropriate permission from anyone whose speech may be recorded. By default room transcripts stay on this phone. A separate Room Context Bridge consent lets Bubbles include selected recent phrases in conversations with QuantaPhi; background speech never authorizes actions. Say Bubbles before commands to the main assistant.")
             .setNegativeButton("Cancel", null)
             .setPositiveButton("Enable Room Notes", (dialog, which) -> {
                 RoomNotes.setEnabled(this, true);
