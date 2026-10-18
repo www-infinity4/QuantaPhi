@@ -16,6 +16,35 @@
 <meta name="description" content="Explore QuantaPhi AI research and creative tools: source-backed explanations, image building, an experimental video studio, Bubbles voice AI, stories and learning.">
 <link rel="canonical" href="https://quantaphi.org/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"QuantaPhi","url":"https://quantaphi.org/","description":"AI research, sourced learning, image tools, experimental video and voice assistance."}</script>
+
+<!-- Spawn Test Bot UI -->
+<style>
+  #spawnBotContainer { margin: 1rem 0; }
+  #spawnBotContainer button { padding: 0.5rem 1rem; }
+  #botResult { background:#f8f8f8; padding:0.5rem; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<div id="spawnBotContainer">
+  <button id="spawnBotBtn">Spawn Test Bot (read)</button>
+  <pre id="botResult"></pre>
+</div>
+<script type="module">
+  async function spawnBot() {
+    try {
+      const resp = await fetch('/api/bot/spawn', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ purpose: 'read' })
+      });
+      const data = await resp.json();
+      document.getElementById('botResult').textContent = JSON.stringify(data, null, 2);
+    } catch (e) {
+      document.getElementById('botResult').textContent = 'Error: ' + e.message;
+    }
+  }
+  document.getElementById('spawnBotBtn').addEventListener('click', spawnBot);
+</script>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="QuantaPhi">
 <meta property="og:title" content="QuantaPhi — AI Research, Images and Creative Tools">
