@@ -430,14 +430,18 @@ final class FloatingOracleWindow {
             });
     }
 
-    boolean sendSpoken(String text) {
+    boolean sendSpoken(String text) { return sendSpoken(text, ""); }
+
+    boolean sendSpoken(String text, String evidence) {
         if (root == null || text == null || text.trim().isEmpty()) return false;
         if (pendingSpeech.size() >= 24) {
             status.setText("Bubbles has 24 unprocessed voice requests. Please open chat to check the connection.");
             return false;
         }
         // Queue every complete turn. A busy first reply must not erase the next.
-        pendingSpeech.addLast(new QueuedMessage(text.trim().substring(0, Math.min(1800, text.trim().length()))));
+        String safeText = text.trim().substring(0, Math.min(1800, text.trim().length()));
+        String safeEvidence = evidence == null ? "" : evidence.substring(0, Math.min(900, evidence.length()));
+        pendingSpeech.addLast(new QueuedMessage(safeText, safeEvidence));
         if (!websiteReady) status.setText("Connecting to QuantaPhi Bubbles; holding your requests…");
         deliverQueuedSpeech();
         return true;

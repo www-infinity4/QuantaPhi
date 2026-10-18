@@ -27,7 +27,8 @@ test('Site is the single assistant for native-voice commands and typed chat', ()
   assert.match(window, /JSONObject\.quote\(spoken\)/);
   assert.match(window, /window\.QuantaBubbles\.sendNativeSpeech/);
   assert.match(window, /window\.QuantaBubbles\.drainNativeReply/);
-  assert.match(service, /oracleWindow != null && oracleWindow\.sendSpoken\(addressed\)/);
+  assert.match(service, /oracleWindow != null && oracleWindow\.sendSpoken\(addressed, ambientContext\)/);
+  assert.match(service, /RoomContextFusion\.forTurn\(this, addressed\)/);
   assert.match(service, /void speakWebsiteReply\(String response\)/);
   assert.match(site, /nativeOverlay=!embedded&&params\.get\('nativeOverlay'\)==='1'/);
   assert.match(site, /if\(!nativeOverlay\|\|busy\)return false/);
