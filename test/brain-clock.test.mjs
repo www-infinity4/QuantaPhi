@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-const handoffUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/technical-handoff.mjs',import.meta.url))).toString('base64');
+const sourceReviewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/source-review.mjs',import.meta.url))).toString('base64');
+const handoffSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/technical-handoff.mjs',import.meta.url),'utf8')).replace('./source-review.mjs',sourceReviewUrl);
+const handoffUrl='data:text/javascript;base64,'+Buffer.from(handoffSource).toString('base64');
 const credentialUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/github-credential.mjs',import.meta.url))).toString('base64');
 const cloudflareBrokerUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/cloudflare-token-broker.mjs',import.meta.url))).toString('base64');
 const mergeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/merge-receipt.mjs',import.meta.url))).toString('base64');
@@ -25,7 +27,7 @@ const redUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new UR
 const alarmUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/alarm-retry.mjs',import.meta.url))).toString('base64');
 const runnerRequestSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-request.mjs',import.meta.url),'utf8')).replace('./alarm-retry.mjs',alarmUrl);
 const runnerRequestUrl='data:text/javascript;base64,'+Buffer.from(runnerRequestSource).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./technical-handoff.mjs",handoffUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
 const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
@@ -522,4 +524,70 @@ test('public Cloudflare token endpoints reject absent owner sessions before any 
   assert.equal((await response.json()).error,'owner_authorization_required');
  }
  assert.equal(readSecret,0);
+});
+
+test('signed Pink review of merged source finishes without a new PR, payout, or synthetic repair replay',async()=>{
+ const previousFetch=globalThis.fetch;
+ const repo='www-infinity4/QuantaPhi',mergeSha='a'.repeat(40),headSha='c'.repeat(40),sourceSha='b'.repeat(40);
+ const original={kind:'robot-directions',color_jobs:[
+  {id:'TASK-1',agent:'greenbeans',repository:repo,status:'merged_verified',
+   progress:{mergeSha,commitSha:sourceSha,testsPassed:true,prUrl:'https://github.com/www-infinity4/QuantaPhi/pull/418'}},
+  {id:'TASK-2',agent:'pink-panther',repository:repo,status:'blocked',dependencies:['TASK-1','TASK-3'],
+   instructions:'After TASK-1, independently verify the requested work: Fix Bubbles routing.'},
+  {id:'TASK-3',agent:'greenbeans',repository:repo,status:'blocked',title:'Repair source-routing',
+   instructions:'Diagnose and repair the authenticated source-routing failure preventing the existing owner job TASK-2.'}
+ ],technical_handoffs:[{sourceJobId:'TASK-2',repairJobId:'TASK-3',category:'source-routing'}]};
+ const url='https://github.com/www-infinity4/Moltnook/actions/runs/39090790690';
+ const review={kind:'source_review_only',primaryId:'TASK-1',repository:repo,
+  mergeSha,sourceCommitSha:sourceSha,prNumber:418,
+  prUrl:'https://github.com/www-infinity4/QuantaPhi/pull/418',
+  repairIds:['TASK-3'],testsPreviouslyPassed:true,
+  sourceDeployedVerified:false,mayWrite:false};
+ let updated,updatedStatus;
+ const db={prepare(sql){
+  return {bind(...args){this.args=args;return this;},
+   async first(){return {context_json:JSON.stringify(original)};},
+   async run(){updated=JSON.parse(this.args[0]);updatedStatus=this.args[1];return {meta:{changes:1}};}};
+ }};
+ const memory=new Map(),storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)};
+ const lease={key:'writer:pink',leaseId:'pink-review-id',runId:'200',engine:true,
+  leaseUntil:Date.now()+120000,ticketId:'IW-20261016-706B1494',jobId:'TASK-2',
+  repository:repo,job:{...original.color_jobs[1],sourceReview:review}};
+ memory.set(lease.key,lease);
+ const calls=[];
+ globalThis.fetch=async input=>{
+  const target=String(input);calls.push(target);
+  if(target.includes('/pulls/418/files?'))return Response.json([
+   {filename:'bubbles-brain-actions.js'},{filename:'test/bubbles-brain-actions.test.cjs'}]);
+  if(target.endsWith('/pulls/418'))return Response.json({
+   merged:true,merge_commit_sha:mergeSha,
+   title:'Robot review: IW-20261016-706B1494/TASK-1',
+   base:{ref:'main',repo:{full_name:repo}}});
+  if(target.includes('/branches/main'))return Response.json({commit:{sha:headSha}});
+  if(target.includes('/compare/'))return Response.json({status:'ahead'});
+  throw Error('unexpected Github URL '+target);
+ };
+ try{
+  const clock=new BrainClock({storage},{WORK_DB:db,WRITER_OWNER_HASH:'test-private-owner-hash'});
+  const request=step=>new Request('https://clock.internal/runner/'+step,{method:'POST',
+   body:JSON.stringify({runId:'200',runnerRepository:'www-infinity4/Moltnook',
+    key:lease.key,leaseId:lease.leaseId,status:'source_verified',testsPassed:true,
+    reviewedMergeSha:mergeSha,commitSha:headSha,
+    testPaths:['test/bubbles-brain-actions.test.cjs'],productionVerified:false})});
+  const completion=await (await clock.runner(request('result'))).json();
+  assert.equal(completion.status,'source_verified');
+  assert.equal(completion.coinsMinted,false);
+  assert.equal(completion.productionVerified,false);
+  assert.equal(updated.color_jobs[1].status,'complete');
+  assert.equal(updated.color_jobs[1].progress.resultKind,'source_verified');
+  assert.equal(updated.color_jobs[2].status,'superseded');
+  assert.equal(updated.color_jobs[0].status,'merged_verified');
+  assert.equal(updatedStatus,'blocked','whole ticket must not claim deployment');
+  assert.equal(memory.get('job-quant-index'),undefined,'review never mints');
+  assert.equal(calls.length,4);
+  const readback=await (await clock.runner(request('source-review-receipt'))).json();
+  assert.equal(readback.durableReadback,true);
+  assert.equal(readback.coinsMinted,false);
+  assert.equal(readback.testsPassed,true);
+ }finally{globalThis.fetch=previousFetch;}
 });

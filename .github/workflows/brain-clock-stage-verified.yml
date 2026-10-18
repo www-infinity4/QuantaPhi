@@ -43,6 +43,8 @@ jobs:
           node --check workers/infinity-brain-clock/worker.js
           node --check workers/infinity-brain-clock/ticket-selector.mjs
           node --check workers/infinity-brain-clock/deferred-recovery.mjs
+          node --check workers/infinity-brain-clock/source-review.mjs
+          node --test test/brain-pink-source-review.test.mjs
           node --check scripts/verify-brain-stage.mjs
           node --test test/brain-clock-stage.test.mjs \
             test/brain-clock-binding-parity.test.mjs

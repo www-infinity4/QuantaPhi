@@ -1,3 +1,4 @@
+import {pinnedPinkReview} from './source-review.mjs';
 // Called only after an authenticated runner failure receipt has been accepted.
 export function technicalCategory(reason){
  const text=String(reason||'');
@@ -10,6 +11,9 @@ export function technicalCategory(reason){
  return null;
 }
 export function attachTechnicalHandoff(context,sourceJob,receipt){
+ // Source-only Pink verification with a validated merged parent never needs
+ // a new Green code-writing ticket. Keep the earlier failure history intact.
+ if(pinnedPinkReview(context,sourceJob))return {queued:false,reason:'merged_source_requires_read_only_pink_verification'};
  const category=technicalCategory(receipt.summary);
  if(!category)return {queued:false,reason:'owner-choice-or-unclassified'};
  const jobs=context.color_jobs||[],key=sourceJob.id+':'+category;
