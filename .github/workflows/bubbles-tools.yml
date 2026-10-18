@@ -1,10 +1,10 @@
 name: Bubbles real tool results
 on:
   pull_request:
-    paths: ['workers/bubbles-tools/**', 'bubbles-research.mjs', 'test/bubbles-research.test.mjs', 'test/bubbles-tools.test.mjs', 'test/bubbles-live-lookup.test.mjs', 'test/bubbles-resonance.test.mjs', 'test/bubbles-stream-voice.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'test/bubbles-owner-immediate-dispatch.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', 'robot-brain-owner.js', 'bubbles.html', 'bubbles-ai.css', 'test/bubbles-owner-native-pairing.test.cjs', 'index.html', 'bubbles-stream-voice.js', '.github/workflows/bubbles-tools.yml']
+    paths: ['workers/bubbles-tools/**', 'bubbles-research.mjs', 'test/bubbles-research.test.mjs', 'test/bubbles-tools.test.mjs', 'test/bubbles-live-lookup.test.mjs', 'test/bubbles-resonance.test.mjs', 'test/bubbles-stream-voice.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'test/bubbles-progress-updates.test.cjs', 'test/bubbles-owner-immediate-dispatch.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', 'robot-brain-owner.js', 'bubbles.html', 'bubbles-ai.css', 'test/bubbles-owner-native-pairing.test.cjs', 'index.html', 'bubbles-stream-voice.js', '.github/workflows/bubbles-tools.yml']
   push:
     branches: [main]
-    paths: ['workers/bubbles-tools/**', 'bubbles-research.mjs', 'test/bubbles-research.test.mjs', 'test/bubbles-tools.test.mjs', 'test/bubbles-live-lookup.test.mjs', 'test/bubbles-resonance.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'test/bubbles-owner-immediate-dispatch.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', 'robot-brain-owner.js', 'bubbles.html', 'bubbles-ai.css', 'test/bubbles-owner-native-pairing.test.cjs', '.github/workflows/bubbles-tools.yml']
+    paths: ['workers/bubbles-tools/**', 'bubbles-research.mjs', 'test/bubbles-research.test.mjs', 'test/bubbles-tools.test.mjs', 'test/bubbles-live-lookup.test.mjs', 'test/bubbles-resonance.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'test/bubbles-progress-updates.test.cjs', 'test/bubbles-owner-immediate-dispatch.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', 'robot-brain-owner.js', 'bubbles.html', 'bubbles-ai.css', 'test/bubbles-owner-native-pairing.test.cjs', '.github/workflows/bubbles-tools.yml']
 permissions:
   contents: read
 jobs:
@@ -15,4 +15,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --check bubbles-ai.js && node --check robot-brain-owner.js && node --check bubbles-brain-actions.js && node --test test/bubbles-live-lookup.test.mjs test/bubbles-research.test.mjs test/bubbles-owner-native-pairing.test.cjs test/bubbles-resonance.test.mjs test/bubbles-tools.test.mjs test/bubbles-stream-voice.test.mjs test/bubbles-brain-bridge.test.cjs test/bubbles-brain-actions.test.cjs test/bubbles-owner-immediate-dispatch.test.cjs
+      - run: node --check bubbles-ai.js && node --check robot-brain-owner.js && node --check bubbles-brain-actions.js && node --test test/bubbles-live-lookup.test.mjs test/bubbles-research.test.mjs test/bubbles-owner-native-pairing.test.cjs test/bubbles-resonance.test.mjs test/bubbles-tools.test.mjs test/bubbles-stream-voice.test.mjs test/bubbles-brain-bridge.test.cjs test/bubbles-brain-actions.test.cjs test/bubbles-progress-updates.test.cjs test/bubbles-owner-immediate-dispatch.test.cjs

@@ -244,6 +244,7 @@ test('verified Brain tickets share the writer owner partition instead of an anon
  assert.equal(repeat.result.ticket.id,id);assert.equal(repeat.result.deduplicated,true);
  assert.equal(rows.length,1);
  const visible=await ownerTickets(env,'/work/tickets/list',{});
+ assert.equal(visible.result.notificationScope,env.WRITER_OWNER_HASH);
  assert.equal(visible.result.tickets.length,1);
  assert.equal((await ownerTickets({...env,WRITER_OWNER_HASH:otherHash},'/work/tickets/list',{})).result.tickets.length,0);
  const forbidden=await ownerTickets(env,'/work/tickets/update',{id,status:'ready',context:{...context,color_jobs:[{id:'TASK-1',repository:'other/private',instructions:'wrong'}]}});

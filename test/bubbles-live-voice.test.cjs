@@ -19,7 +19,7 @@ function harness(owner=false,speech=false){
   nodes.push(n);return n;
  };
  const host=node('div'),body=node('body');
- const document={body,createTreeWalker:()=>({nextNode:()=>null}),visibilityState:'visible',handlers:{},createElement:node,addEventListener(name,fn){this.handlers[name]=fn},getElementById:id=>id==='bubblesAICard'?host:null};
+ const document={body,head:node('head'),createTreeWalker:()=>({nextNode:()=>null}),visibilityState:'visible',handlers:{},createElement:node,addEventListener(name,fn){this.handlers[name]=fn},getElementById:id=>id==='bubblesAICard'?host:null};
  class Recognition{
   constructor(){recognized.push(this)}
   start(){this.started=true}
@@ -112,7 +112,7 @@ test('explicit repair command is kept as work rather than a fabricated chat repa
 test('owner repair command creates and readies one real ticket with receipt',async()=>{
  const h=harness(true);await flush();h.orb.handlers.click();await flush();
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles repair the video generator')]});
- await new Promise(resolve=>setTimeout(resolve,20));await flush();
+ for(let attempt=0;attempt<100&&h.requests.length<3;attempt++){await new Promise(resolve=>setTimeout(resolve,10));await flush();}
  assert.equal(h.requests.length,3);assert.match(h.requests[0].url,/tickets\/create$/);assert.match(h.requests[1].url,/tickets\/update$/); assert.match(h.requests[2].url,/work\/run-next$/);
  assert.equal(JSON.parse(h.requests[0].opts.body).context.approval,'explicit-user-command');
  assert.ok(h.catalogCalls.some(c=>c.action==='suggest_repositories'),'Owner voice task consulted the authenticated repository resolver');
@@ -138,7 +138,7 @@ test('owner helper loaded after Bubbles is connected after deferred scripts fini
  assert.equal(h.nodes.find(n=>n.textContent==='Send approved request to Robot Brain').hidden,false);
  h.orb.handlers.click();await flush();
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles repair the upload')]});
- await new Promise(resolve=>setTimeout(resolve,20));await flush();
+ for(let attempt=0;attempt<100&&h.requests.length<3;attempt++){await new Promise(resolve=>setTimeout(resolve,10));await flush();}
  assert.equal(h.requests.length,3);
 });
 

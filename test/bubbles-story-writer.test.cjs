@@ -142,7 +142,7 @@ test('embedded Bubbles programming persists user-chosen role instead of overwrit
  function execute(map){
   const nodes=[];
   const make=tag=>{
-   const e={tag,children:[],dataset:{},style:{},hidden:false,handlers:{},value:'',
+   const e={tag,children:[],dataset:{},style:{setProperty(){}},hidden:false,handlers:{},value:'',
     prepend(...items){this.children.unshift(...items)},before(){},append(...items){for(const item of items){this.children.push(item);item.parent=this}},
     insertBefore(item,before){const at=this.children.indexOf(before);this.children.splice(at<0?this.children.length:at,0,item);item.parent=this},
     setAttribute(){},addEventListener(type,callback){this.handlers[type]=callback},focus(){},
@@ -150,8 +150,8 @@ test('embedded Bubbles programming persists user-chosen role instead of overwrit
    nodes.push(e);return e;
   };
   const host=make('host'),body=make('body'),parentMessages=[];
-  const document={getElementById:id=>id==='bubblesAICard'?host:null,createElement:make,body};
-  const window={parent:{postMessage:msg=>parentMessages.push(msg)}};
+  const document={getElementById:id=>id==='bubblesAICard'?host:null,createElement:make,body,head:make('head')};
+  const window={parent:{postMessage:msg=>parentMessages.push(msg)},addEventListener(){},innerHeight:780};
   const localStorage={getItem:key=>map.get(key)||null,setItem:(key,value)=>map.set(key,value),removeItem:key=>map.delete(key)};
   const context={document,window,localStorage,location:{search:'?embed=1&id=alice&role=singer&name=Songbird',origin:'https://quantaphi.org',pathname:'/bubbles.html'},URLSearchParams,crypto:{randomUUID:()=> 'test-note-id'},navigator:{},setTimeout:fn=>fn()};
   vm.runInNewContext(code,context,{timeout:1500});
@@ -181,14 +181,14 @@ test('embedded Bubbles programming persists user-chosen role instead of overwrit
 test('reply actions take notes and prepare work without sending unapproved robot tickets',async()=>{
  const code=source('bubbles-ai.js'),nodes=[],values=new Map(),calls=[];
  const make=tag=>{
-  const e={tag,children:[],dataset:{},style:{},hidden:false,handlers:{},value:'',
+  const e={tag,children:[],dataset:{},style:{setProperty(){}},hidden:false,handlers:{},value:'',
    prepend(...items){this.children.unshift(...items)},before(){},append(...items){this.children.push(...items)},insertBefore(item,before){this.children.splice(this.children.indexOf(before),0,item)},
    setAttribute(){},addEventListener(type,fn){this.handlers[type]=fn},focus(){},replaceChildren(...items){this.children=items},removeAttribute(){},select(){}};
   nodes.push(e);return e;
  };
  const document={createElement:make,getElementById:id=>id==='bubblesAICard'?host:null};
- const host=make('div');document.body=make('body');
- const window={parent:{postMessage(){}},SpeechRecognition:null,webkitSpeechRecognition:null};
+ const host=make('div');document.body=make('body');document.head=make('head');
+ const window={parent:{postMessage(){}},addEventListener(){},innerHeight:780,SpeechRecognition:null,webkitSpeechRecognition:null};
  const localStorage={getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v),removeItem:k=>values.delete(k)};
  const fetch=async(url)=>{
   calls.push(url);
