@@ -1,5 +1,5 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
-import {pinnedPinkReview,validatePinkSourceReceipt,completePinkReviewInContext} from './source-review.mjs';
+import {pinnedPinkReview,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
 import {conversationMemory} from './conversation-memory.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
@@ -268,7 +268,7 @@ export class BrainClock extends DurableObject{
    sortCandidates(candidates,requested);
    const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
    await this.ctx.storage.put('writer-queue-selector',{when:Date.now(),examined:admission.examined,deferred:admission.deferred.slice(0,40)});
-   for(const {ticket,jobs,job,context} of admission.allowed){
+   for(const {ticket,jobs,job,context} of prioritizeReadOnlyPinkReviews(admission.allowed,{requested})){
     {
      if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified','merged_verified','superseded'].includes(job.status))continue;
      // A signed Pink review of already merged code may ignore only bot-generated
