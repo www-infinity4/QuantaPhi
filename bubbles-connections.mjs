@@ -12,6 +12,21 @@ export async function resolveConnectorWalletToken(root=window){
   }
   throw Error('verified_wallet_required');
 }
+export function connectionCodeMessage(error) {
+  const messages={
+    verified_wallet_required:'This browser has no verified wallet session. Open Account Connections in the browser that holds your existing wallet.',
+    too_many_requests:'Wait ten seconds before creating another code.',
+    wallet_validation_unavailable:'The connection service cannot reach the wallet verification service. Code creation is blocked until that connection is restored.',
+    origin_not_allowed:'The connection request was rejected because its website origin was not accepted. Open Account Connections on https://quantaphi.org.',
+    connection_operation_failed:'The server failed while verifying the wallet or creating the code (connection_operation_failed). This needs a service repair.',
+    connections_not_configured:'The account connection service setup is incomplete (connections_not_configured).',
+    connection_response_invalid:'The connection endpoint returned an unreadable response (connection_response_invalid).',
+    TimeoutError:'The connection request timed out. Check your connection and try once more.',
+    AbortError:'The connection request was interrupted. Try once more.',
+    TypeError:'The connection request could not reach the service. Check your connection and try once more.'
+  };
+  return messages[error?.message]||messages[error?.name]||'Code creation failed (account_connection_unavailable). The service needs further diagnosis.';
+}
 export class AccountConnections {
   constructor({token,request = fetch,root = window}) {this.token=token;this.request=request;this.root=root;this.pending=null;}
   async call(path,body) {
@@ -19,7 +34,8 @@ export class AccountConnections {
     const response=await this.request(API+path,{method:body?'POST':'GET',cache:'no-store',
       headers:{...(credential?{Authorization:'Bearer '+credential}:{}),...(body?{'Content-Type':'application/json'}:{})},
       ...(body?{body:JSON.stringify(body)}:{})});
-    const data=await response.json();
+    let data;
+    try {data=await response.json();} catch {throw Error('connection_response_invalid');}
     if(!response.ok||!data.ok)throw Error(data.error||'account_connection_unavailable');
     return data;
   }
@@ -75,7 +91,7 @@ export function mountConnections(container,{token}) {
   const create=element('button','Create connection code on this device','ba-control'),redeem=element('button','Connect this browser','ba-control'),end=element('button','End this browser connection','ba-control'),code=document.createElement('input'),output=element('p','');
   code.type='password';code.autocomplete='off';code.maxLength=43;code.setAttribute('aria-label','Two-minute connector pairing code');
   for(const button of [create,redeem,end])button.type='button';
-  create.addEventListener('click',async()=>{create.disabled=true;output.textContent='Checking this device’s wallet…';try{const data=await client.call('/pair/create',{});output.textContent='Private code (expires in two minutes): '+data.code;setTimeout(()=>{output.textContent='Code expired. Create another if needed.';},data.expiresIn*1000);}catch(error){output.textContent=error.message==='verified_wallet_required'?'No verified wallet session was found in this browser. Open this page in the phone browser that already holds your wallet. The floating APK, Chrome and this cloud browser have separate storage.':error.message==='too_many_requests'?'Wait ten seconds before creating another code.':'The connection service could not create a code. Try again shortly.';}finally{create.disabled=false;}});
+  create.addEventListener('click',async()=>{create.disabled=true;output.textContent='Checking this device’s wallet…';try{const data=await client.call('/pair/create',{});output.textContent='Private code (expires in two minutes): '+data.code;setTimeout(()=>{output.textContent='Code expired. Create another if needed.';},data.expiresIn*1000);}catch(error){output.textContent=connectionCodeMessage(error);}finally{create.disabled=false;}});
   redeem.addEventListener('click',async()=>{redeem.disabled=true;try{const data=await client.call('/pair/redeem',{code:code.value.trim()});sessionStorage.setItem(sessionKey,JSON.stringify({token:data.token,expiresAt:data.expiresAt}));code.value='';output.textContent='This browser is connected for 15 minutes.';await load();}catch{output.textContent='Connection failed. Use a fresh code from your verified phone.';}finally{redeem.disabled=false;}});
   end.addEventListener('click',async()=>{try{if(paired())await client.call('/pair/end',{});sessionStorage.removeItem(sessionKey);output.textContent='Browser connection ended.';await load();}catch{output.textContent='Could not end the server session. Try again; it expires automatically after 15 minutes.';}});
   pairing.append(create,output,code,redeem,end);section.prepend(pairing);

@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {AccountConnections,resolveConnectorWalletToken} from '../bubbles-connections.mjs';
+import {AccountConnections,resolveConnectorWalletToken,connectionCodeMessage} from '../bubbles-connections.mjs';
 test('connector waits for device bridge and supports both wallet runtime exports',async()=>{
   let ready=false;const token='sq_'+'a'.repeat(40);
   assert.equal(await resolveConnectorWalletToken({QuantaCloudConnection:{ready:Promise.resolve().then(()=>ready=true),resolveDeviceToken:async()=>{assert.ok(ready);return token;}}}),token);
@@ -30,4 +30,14 @@ test('unsafe authorization URL closes the popup without navigating to it',async(
   const client=new AccountConnections({token:()=> 'device-token',root,request:async()=>Response.json({ok:true,authorizationUrl:'https://evil.test/?state=state'})});
   await assert.rejects(client.connect('google',['drive.read'],()=>{}),/address rejected/);
   assert.equal(popup.location.href,undefined);assert.equal(popup.closed,true);
+});
+
+test('pairing reports bounded service errors without exposing raw server details',()=>{
+ for(const message of ['wallet_validation_unavailable','origin_not_allowed','connection_operation_failed','connections_not_configured','connection_response_invalid'])assert.ok(connectionCodeMessage(Error(message)).length>30);
+ assert.match(connectionCodeMessage(Error('connection_operation_failed')),/service repair/);
+ assert.ok(!connectionCodeMessage(Error('secret-provider-token')).includes('secret-provider-token'));
+});
+test('non-JSON connection responses produce a stable diagnostic',async()=>{
+ const client=new AccountConnections({token:()=> 'device-token',root:{},request:async()=>new Response('<html>Bad Gateway</html>',{status:502})});
+ await assert.rejects(client.call('/pair/create',{}),/connection_response_invalid/);
 });
