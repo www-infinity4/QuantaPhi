@@ -23,7 +23,7 @@ test('authorized Android screenshot can run even without an accessibility text r
   assert.match(inspect, /if \(root == null\)/);
   assert.match(inspect, /takeScreenshot\(Display\.DEFAULT_DISPLAY/);
   assert.match(inspect, /CaptureReader\.readBitmap\(pixels\)/);
-  assert.match(accessibility, /if \(service == null\) \{ frameCaptured\.run\(\); callback\.accept\(ACCESS_OFF\)/);
+  assert.match(accessibility, /if \(service == null \|\| !isConnected\(\)\) \{ frameCaptured\.run\(\); callback\.accept\(ACCESS_OFF\)/);
 });
 
 test('finger swipe scrolls native transcript while message composer stays anchored',()=>{
