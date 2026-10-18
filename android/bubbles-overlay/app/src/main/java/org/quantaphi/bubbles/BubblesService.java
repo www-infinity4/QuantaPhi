@@ -226,6 +226,7 @@ public final class BubblesService extends Service {
         watchEpoch++;
         watchVisionInFlight = false;
         screenWatch.start(SystemClock.elapsedRealtime());
+        BrainLearningService.resetWatchVision();
         main.removeCallbacks(screenWatchPoll);
         main.post(screenWatchPoll);
         refreshVoiceNotice();
@@ -494,7 +495,7 @@ public final class BubblesService extends Service {
                 .setSmallIcon(android.R.drawable.ic_btn_speak_now)
                 .setContentTitle(BrainNotes.prefs(this).getString("name","Brain")+" · Bubbles AI")
                 .setContentText(screenSharing && screenWatch.isActive(SystemClock.elapsedRealtime())
-                    ? "Screen text watch ON · Stop watch from here or by voice"
+                    ? "Continuous screen vision ON · Stop watching from here or by voice"
                     : recording.active() ? "Recording microphone · tap Stop & save" :
                     "Tap bubble to type or interrupt · long-press to mute")
                 .setOngoing(true)
