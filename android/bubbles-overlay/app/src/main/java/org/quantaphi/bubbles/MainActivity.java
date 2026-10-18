@@ -328,6 +328,34 @@ public final class MainActivity extends Activity {
                 state.setText("Saved Room Notes cleared.");
             }).show());
         advancedCapture.addView(roomClear);
+        // Separate consent: Room Notes can remain strictly local, even when active.
+        TextView contextDescription = new TextView(this);
+        contextDescription.setText("Optional third processor: with your permission, Bubbles may attach up to two relevant Room Notes from the last two minutes to your addressed conversation. These are labelled unverified background observations, never commands. This may send selected transcribed words to the QuantaPhi assistant. Turn it off independently at any time.");
+        advancedCapture.addView(contextDescription);
+        Button contextEnable = new Button(this);
+        contextEnable.setText("Enable Room Context Bridge");
+        contextEnable.setOnClickListener(v -> {
+            if (!RoomNotes.enabled(this)) {
+                state.setText("First enable visible Room Notes and obtain appropriate recording consent.");
+                return;
+            }
+            new AlertDialog.Builder(this)
+                .setTitle("Share selected room context with Bubbles?")
+                .setMessage("Only when a spoken question is relevant, the bridge may attach up to two recent room transcripts as untrusted evidence to the QuantaPhi chat service. Other speakers could be included. These transcripts will never authorize actions. Enable?")
+                .setNegativeButton("Cancel", null)
+                .setPositiveButton("Enable Room Context Bridge", (dialog, which) -> {
+                    RoomContextFusion.setEnabled(this, true);
+                    state.setText("Room Context Bridge ON · relevant recent transcripts can inform Bubbles, never command it.");
+                }).show();
+        });
+        advancedCapture.addView(contextEnable);
+        Button contextDisable = new Button(this);
+        contextDisable.setText("Stop Room Context Bridge");
+        contextDisable.setOnClickListener(v -> {
+            RoomContextFusion.setEnabled(this, false);
+            state.setText("Room Context Bridge OFF · Room Notes remain local unless you separately clear them.");
+        });
+        advancedCapture.addView(contextDisable);
         // Trim Bubbles' own MP4 rather than redirecting to an OEM screen recorder.
         EditText clipStart = new EditText(this);
         clipStart.setHint("Clip starts at second (0)");
