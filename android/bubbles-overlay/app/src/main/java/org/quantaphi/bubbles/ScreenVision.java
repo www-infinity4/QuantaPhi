@@ -15,12 +15,22 @@ final class ScreenVision {
         HttpURLConnection connection = null;
         Bitmap scaled = null;
         try {
-            float scale = Math.min(1f, 1280f / Math.max(original.getWidth(), original.getHeight()));
-            scaled = Bitmap.createScaledBitmap(original, Math.max(1, Math.round(original.getWidth()*scale)),
-                Math.max(1, Math.round(original.getHeight()*scale)), true);
+            // Preserve full-screen composition while fitting the vision endpoint
+            // on a low-memory Android device. Retry smaller JPEGs rather than
+            // discarding a dense screen, so continuous viewing keeps working.
+            float scale = Math.min(1f, 960f / Math.max(original.getWidth(), original.getHeight()));
             ByteArrayOutputStream pixels = new ByteArrayOutputStream();
-            scaled.compress(Bitmap.CompressFormat.JPEG, 65, pixels);
-            if (pixels.size() > 300000) return "[Visual frame exceeds size limit; text follows]";
+            for (int attempt = 0; attempt < 4; attempt++) {
+                if (scaled != null && scaled != original) scaled.recycle();
+                scaled = Bitmap.createScaledBitmap(original,
+                    Math.max(1, Math.round(original.getWidth()*scale)),
+                    Math.max(1, Math.round(original.getHeight()*scale)), true);
+                pixels.reset();
+                scaled.compress(Bitmap.CompressFormat.JPEG, attempt == 0 ? 58 : 48, pixels);
+                if (pixels.size() <= 300000) break;
+                scale *= 0.70f;
+            }
+            if (pixels.size() > 300000) return "[Visual frame could not be compressed within limit]";
             String image = "data:image/jpeg;base64," + Base64.encodeToString(pixels.toByteArray(), Base64.NO_WRAP);
             JSONObject body = new JSONObject().put("request", "Describe the current Android screen for this request: "
                 + question.substring(0, Math.min(1800, question.length()))
