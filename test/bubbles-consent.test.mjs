@@ -237,3 +237,9 @@ test('repository inspection cannot use another tenant or a non-GitHub connection
  await assert.rejects(f.service.githubRepositories({userId:'bob',id:account.id}),/connection_not_verified/);
  await assert.rejects(f.service.githubRepositories({userId:'alice',id:account.id}),/connection_not_verified/);
 });
+
+test('connection test never writes without verified installed-repository write permission',async()=>{
+ const adapter=githubAdapter({clientId:'test',clientSecret:'test',redirectUri:'https://example.test/callback'},()=>assert.fail('no write request allowed'));
+ adapter.repositories=async()=>({repositories:[{name:'www-infinity4/QuantaPhi',permissions:{write:false}}]});
+ await assert.rejects(adapter.connectionTest({accessToken:'test'}),/repository_write_not_verified/);
+});
