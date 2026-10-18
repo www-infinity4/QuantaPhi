@@ -104,6 +104,33 @@ public final class BubblesService extends Service {
     private WindowManager.LayoutParams bubbleLayout;
     private OrbView orb;
     private android.widget.TextView roomBubble;
+    private android.widget.TextView duRecorderButton;
+    private void attachDuRecorderButton() {
+        if (manager == null || duRecorderButton != null || !connected) return;
+        android.widget.TextView button = new android.widget.TextView(this);
+        button.setText("DU\\nREC".replace("\\n", "\n"));
+        button.setTextColor(Color.WHITE);
+        button.setTextSize(12f);
+        button.setGravity(Gravity.CENTER);
+        button.setBackgroundColor(Color.rgb(46, 78, 150));
+        button.setContentDescription("DU Recorder floating control. Tap to use DU's start or stop button. Long press to stop.");
+        button.setOnClickListener(v -> DuRecorderBridge.request(this, "toggle", main));
+        button.setOnLongClickListener(v -> {
+            DuRecorderBridge.request(this, "stop", main);
+            return true;
+        });
+        WindowManager.LayoutParams layout = new WindowManager.LayoutParams(114, 110,
+            WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
+            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
+            PixelFormat.TRANSLUCENT);
+        layout.gravity = Gravity.TOP | Gravity.RIGHT;
+        layout.x = 16; layout.y = 510;
+        try { manager.addView(button, layout); duRecorderButton = button; }
+        catch (RuntimeException error) {
+            BrainNotes.prefs(this).edit().putString("du_recorder_state",
+                "DU floating control could not open: " + error.getClass().getSimpleName()).apply();
+        }
+    }
     public static final String ACTION_SYNC_ROOM = "org.quantaphi.bubbles.SYNC_ROOM_NOTES";
     private void syncRoomBubble() {
         if (manager == null || !connected) return;
@@ -413,6 +440,7 @@ public final class BubblesService extends Service {
             manager.addView(orb, bubbleLayout);
             connected = true;
             syncRoomBubble();
+            attachDuRecorderButton();
             activeImageService = this;
             sessionRunning = true;
             // Keep the real QuantaPhi website assistant available while the
@@ -841,6 +869,9 @@ public final class BubblesService extends Service {
                         else if (screenState.contains("approval") || screenState.contains("requested"))
                             result += "Screen capture is waiting for your Android approval.";
                     }
+                    String external = BrainNotes.prefs(this).getString("du_recorder_state", "");
+                    if (!external.isEmpty()) result += " DU Recorder: " + external
+                        + " Bubbles cannot prove DU is recording until DU reports it.";
                     speak(result);
                     break;
                 }
@@ -866,20 +897,22 @@ public final class BubblesService extends Service {
                         startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing and saving screen capture…").apply();
                     }
-                    if (!screenActive && !soundActive && speaking) silenceReply();
                     if (!screenActive && !soundActive)
-                        Toast.makeText(this, "No capture active · Bubbles is listening", Toast.LENGTH_SHORT).show();
+                        DuRecorderBridge.request(this, "stop", main);
+                    if (!screenActive && !soundActive && speaking) silenceReply();
                     break;
                 }
                 case "screen_stop":
                     if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
                         startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing screen capture…").apply();
-                    }
+                    } else DuRecorderBridge.request(this, "stop", main);
+                    break;
+                case "screen_video":
+                    DuRecorderBridge.request(this, "start", main);
                     break;
                 case "screen_image":
                 case "screen_sequence":
-                case "screen_video":
                 case "camera_video":
                     offerCaptureApproval(command);
                     break;
@@ -1221,6 +1254,10 @@ public final class BubblesService extends Service {
         }
         if (tts != null) {tts.stop();tts.shutdown();tts=null;}
         if (oracleWindow != null) {oracleWindow.close();oracleWindow = null;}
+        if (duRecorderButton != null && manager != null) {
+            try { manager.removeView(duRecorderButton); } catch (RuntimeException ignored) {}
+            duRecorderButton = null;
+        }
         if (roomBubble != null && manager != null) {
             try { manager.removeView(roomBubble); } catch (Exception ignored) {}
             roomBubble = null;
