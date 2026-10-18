@@ -12,13 +12,15 @@ database_id = "4aa6a463-02c6-48c3-854f-a87c0ca5f41c"
 binding = "MODELS"
 service = "infinity-rogers"
 environment = "production"
+# Verified active production version: the models service exports BrainModels.
+entrypoint = "BrainModels"
 
 # Preserve the existing authenticated bot-wallet settlement service on redeploy.
+# It is a default service entrypoint, not BrainModels.
 [[services]]
 binding = "BOT_WALLET"
 service = "unified-wallet"
 environment = "production"
-entrypoint = "BrainModels"
 [[durable_objects.bindings]]
 name = "CLOCK"
 class_name = "BrainClock"
@@ -28,9 +30,10 @@ new_sqlite_classes = ["BrainClock"]
 [triggers]
 crons = ["* * * * *"]
 
-[[vectorize]]
-binding = "BRAIN_MEMORY"
-index_name = "infinity-brain-memory"
+# The current 100% production Worker has no BRAIN_MEMORY binding.
+# Keep this incremental rollout binding-identical to the verified stable
+# Worker. Memory indexing remains optional in source; a later migration
+# may opt into Vectorize after separate binding/permissions validation.
 
 [ai]
 binding = "WRITER_AI"
