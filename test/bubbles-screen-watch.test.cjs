@@ -24,7 +24,8 @@ test('screen watching is explicit, bounded, local, and not an RTSP claim',()=>{
 test('vision snapshots are sent to model only for explicit questions and not continuously',()=>{
  const native=read('BubblesService.java');
  const service=read('BrainLearningService.java');
- assert.match(native,/screenSharing \|\| ScreenAwareness\.refersToScreen\(addressed\)/);
+ assert.match(native,/if \(ScreenAwareness\.refersToScreen\(addressed\)\)/);
+ assert.doesNotMatch(native,/if \(screenSharing \|\| ScreenAwareness\.refersToScreen\(addressed\)\)/);
  assert.match(native,/sendScreenEvidence\(question, evidence, typed\)/);
  assert.match(service,/if \(!question\.isEmpty\(\)\) visual = ScreenVision\.describe\(pixels, question\)/);
 });
