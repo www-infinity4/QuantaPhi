@@ -1,6 +1,6 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
 import {classifyCommunitySuggestion,reviewCommunityWithGPT} from './community-upgrades.mjs';
-import {bubbleTag,parsePersonalPost,fetchOwnedXPosts,verificationTokenFromPost} from './personal-social-tags.mjs';
+import {bubbleTag,parsePersonalPost,fetchOwnedXPosts,resolveXAccount,verificationTokenFromPost} from './personal-social-tags.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
 import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
@@ -1298,7 +1298,12 @@ export default{
     }:null});
     if(action==='connect'){
      const name=String(body.name||'').trim().slice(0,38),tag=bubbleTag(name),provider=String(body.provider||'x');
-     const accountId=String(body.accountId||'');
+     let accountId=String(body.accountId||''),verifiedHandle='';
+     if(provider==='x'&&!/^[0-9]{1,24}$/.test(accountId)){
+      const resolved=await resolveXAccount(accountId,{token:env.X_API_BEARER_TOKEN});
+      if(!resolved.ok)return output(request,{ok:false,error:resolved.error},503);
+      accountId=resolved.accountId;verifiedHandle=resolved.username;
+     }
      if(!tag||!['x','facebook_page'].includes(provider)||!/^[0-9]{1,24}$/.test(accountId))
       return output(request,{ok:false,error:'invalid_name_provider_or_account'},400);
      const now=Date.now(),challenge=crypto.randomUUID().replaceAll('-','');
@@ -1309,7 +1314,7 @@ export default{
      if(provider==='facebook_page')return output(request,{ok:true,status:'pending_meta_page_authorization',tag,verified:false,
       note:'Facebook Page permissions and owner proof must be configured before scans. Never scan private profiles.'});
      return output(request,{ok:true,status:'awaiting_proof_post',tag,verified:false,
-      verifyText:tag+' verify '+challenge,expiresAt:now+600000,
+      accountId,username:verifiedHandle||null,verifyText:tag+' verify '+challenge,expiresAt:now+600000,
       note:'Post exactly this from the X account you control, then select Verify.'});
     }
     if(!profile)return output(request,{ok:false,error:'personal_social_not_connected'},409);
