@@ -12,3 +12,8 @@ body #controlPhiWalletPanel input{background:#fff!important;color:var(--qp-ink)!
 #qResearchTrail a{display:block;margin-top:10px;color:var(--qp-purple)}
 
 body #controlPhiWalletPanel .cp-wallet-asset strong span{color:#21172b!important;font-size:18px!important}
+
+/* Color Purpose section styling */
+#colorPurpose{margin:2rem 0;}
+#colorPurpose ul{list-style:none;padding:0;}
+#colorPurpose li{margin:0.5rem 0;}
