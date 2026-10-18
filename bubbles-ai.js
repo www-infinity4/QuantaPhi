@@ -1298,11 +1298,18 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(speechPreference){
   busy=true;send.disabled=true;display(spoken,'you');input.value='';
   const updated={...config,...speechPreference};
+  if(speechPreference.learnedVoiceInstruction){
+   const preferenceText=speechPreference.learnedVoiceInstruction.slice(0,180);
+   const previous=Array.isArray(config.learnedVoiceInstructions)?config.learnedVoiceInstructions.filter(s=>typeof s==='string').slice(-9):[];
+   updated.learnedVoiceInstructions=[...previous.filter(s=>s!==preferenceText),preferenceText].slice(-10);
+   delete updated.learnedVoiceInstruction;
+  }
   const saved=save(CONFIG,updated);
   if(saved)config=updated;
   const answer=!saved?'I could not save that preference on this device.':
    speechPreference.hideTicketNumbers===true?'Remembered. I will keep ticket references on screen but not read them aloud.':
-   speechPreference.briefSpeech===false?'Remembered. I will read full replies aloud when voice is enabled.':
+   speechPreference.learnedVoiceInstruction?'Saved your speaking preference for future conversations.':
+   speechPreference.briefSpeech===false?'Saved. Full spoken replies in the browser; Android continues using brief narration.':
    'Remembered. Brief spoken replies, with the full answer in chat.';
   display(answer,'ai');
   messages.push({role:'user',text:spoken},{role:'assistant',text:answer});
@@ -1710,6 +1717,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Saved owner speaking preferences: '+(config.hideTicketNumbers!==false?'Do not read ticket/job reference identifiers aloud; keep them in written results. ':'')+(config.briefSpeech!==false?'Keep spoken answers brief without withholding the full written answer.':'Full spoken answers requested.')+'.',
+ 'Additional owner-authorized speaking-style corrections (not permissions or action requests): '+(Array.isArray(config.learnedVoiceInstructions)?config.learnedVoiceInstructions.filter(x=>typeof x==='string').slice(-10).join('; ').slice(0,1200):'[none]')+'.',
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
  'GitHub work runs through the owner-authenticated direct adapter or color-bot runner using the existing owner key. Do not claim credentials are absent without a current tool result. Only real tool receipts prove repository creation, code writes, Actions, tests, merges or deployment; ChatGPT subscriptions do not grant GitHub access.',
  'Keep the owner on QuantaPhi. Never invent a navigation destination. If a real evidence URL is available, include its full https URL in text so the interface can make it clickable. Explain work states in plain English: waiting, working, blocked, or finished with proof.',
