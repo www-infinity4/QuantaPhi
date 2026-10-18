@@ -638,3 +638,34 @@ test('every Robot Brain color invokes the same real authenticated GPT model with
  assert.equal((await clock.runner(request('blue',{leaseId:'wrong'}))).status,409);
  assert.equal(observed.length,9,'invalid or unauthenticated requests never reach GPT');
 });
+
+
+test('signed runner claim defers stale Pink verification while a linked Green repair is executing',async()=>{
+ const repo='www-infinity4/QuantaPhi';
+ const jobs=[
+  {id:'TASK-1',agent:'greenbeans',repository:repo,status:'merged_verified',
+   progress:{testsPassed:true,mergeSha:'a'.repeat(40),commitSha:'b'.repeat(40),
+    prUrl:'https://github.com/www-infinity4/QuantaPhi/pull/418'}},
+  {id:'TASK-2',agent:'pink-panther',repository:repo,status:'blocked',
+   dependencies:['TASK-1','TASK-3'],
+   instructions:'After TASK-1, independently verify the requested work: Fix Bubbles routing.'},
+  {id:'TASK-3',agent:'greenbeans',repository:repo,status:'working',
+   title:'Repair source-routing',
+   instructions:'Diagnose and repair the authenticated source-routing failure preventing the existing owner job TASK-2.'}
+ ];
+ const context={color_jobs:jobs,technical_handoffs:[
+  {sourceJobId:'TASK-2',repairJobId:'TASK-3',category:'source-routing'}]};
+ let updates=0;
+ const ticket={id:'synthetic-owner-job',context_json:JSON.stringify(context),request:'Fix Bubbles routing'};
+ const db={prepare:()=>({bind(){return this},all:async()=>({results:[ticket]}),
+  run:async()=>{updates++;return{meta:{changes:1}}}})};
+ const data=new Map();
+ const clock=new BrainClock({storage:{get:async k=>data.get(k),put:async(k,v)=>data.set(k,v)}},{WORK_DB:db});
+ const result=await (await clock.runner(new Request('https://clock/runner/claim',{
+  method:'POST',body:JSON.stringify({runId:'567',runnerRepository:'www-infinity4/Moltnook'})
+ }))).json();
+ assert.equal(result.ok,true);
+ assert.equal(result.lease,null,'do not preclaim Pink while Green is active');
+ assert.equal(updates,0,'no D1 ticket change, no Pink completion, no lost Green repair');
+ assert.equal([...data.keys()].some(k=>k.startsWith('writer:')),false,'no empty lease issued');
+});
