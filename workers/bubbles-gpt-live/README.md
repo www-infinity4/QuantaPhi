@@ -46,13 +46,18 @@ As of 2026-10-14 the official `gpt-live-1` rate is $0.05/session-minute,
 billed by second, with separate charges for backend reasoning and tools.
 ChatGPT Plus/Pro subscription sign-in does **not** pay for this voice API.
 OpenAI's official Live WebRTC documentation covers session creation.
-https://developers.openai.com/api/docs/guides/voice-webrtc
+https://developers.openai.com/api/docs/guides/live-delegation
 https://developers.openai.com/api/docs/models/gpt-live-1
 
 ## Remaining limitations
 - Not yet authenticated to an actual OpenAI voice project: no secret key
   was provisioned and no paid Live session was invoked.
-- Brain/tool delegation needs a separately permissioned and receipted server
-  adapter. Current session is voice-only, with no authority to create jobs.
+- Client delegation now supports read-only Brain status through the existing
+  first-party wallet/owner helper. Timestamped transcript deltas supply context;
+  delegation metadata is not treated as a command. Only bounded counts with
+  receipt checks reach the voice provider. The Check Brain status button works
+  without starting paid audio. Other tools and job creation remain in Chat.
+- Session reset cancels pending status requests and suppresses late results.
+  Repeated delegation IDs are deduplicated within a session.
 - This first browser client is intended for owner testing, not an always-on
   Android overlay, and does not yet track paid multiuser entitlement.
