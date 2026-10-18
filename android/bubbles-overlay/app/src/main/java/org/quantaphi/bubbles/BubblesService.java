@@ -959,7 +959,9 @@ public final class BubblesService extends Service {
         // Owner explicitly refers to what's on their Android screen or requests
         // one visible action. Attach fresh Android evidence before asking the
         // shared QuantaPhi brain; ordinary conversations never send screen data.
-        if (screenSharing || ScreenAwareness.refersToScreen(addressed)) {
+        // Local screen watching does NOT authorize uploading every ordinary
+        // chat turn as a screenshot. Visual inference needs an explicit query.
+        if (ScreenAwareness.refersToScreen(addressed)) {
             speechSuppressed = false;
             handleScreenRequest(addressed, false);
             return;
@@ -1026,7 +1028,7 @@ public final class BubblesService extends Service {
             heard(text, true);
             return;
         }
-        if (screenSharing || ScreenAwareness.refersToScreen(text)) {
+        if (ScreenAwareness.refersToScreen(text)) {
             speechSuppressed = true;
             handleScreenRequest(text, true);
         } else if (oracleWindow != null && oracleWindow.sendTyped(text)) {
