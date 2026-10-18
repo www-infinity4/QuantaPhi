@@ -1435,8 +1435,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(nativeOverlay&&!fromVoice&&nativeCaptureTarget&&nativeCaptureVerb){
   const stopping=/^(?:stop|end|finish|cancel|turn off|switch off|save)\b/i.test(nativeDirective);
   const response=stopping
-   ?'I passed the stop request to Android. Watch the recorder status for saving and the final phone-library receipt.'
-   :'I passed the recording request to Android. For screen capture, approve Android’s system permission dialog. Recording is NOT confirmed until the recorder status says ON.';
+   ?'Stopping.'
+   :'Starting.';
   if(nativeCaptureRequests.length>=24){
     status.textContent='Android has 24 unprocessed capture commands. Check the Bubbles connection.';
     nativeSpeechPending=false;return;
@@ -2252,7 +2252,9 @@ window.QuantaBubbles={
   nativeSimAvailable=capture.simInspection===true;
   const screenActive=capture.screenActive===true,started=capture.screenRecording===true;
   const soundActive=capture.soundActive===true;
-  nativeRecordingActive=screenActive||soundActive;
+  const duActive=capture.duRecording===true;
+  const duPhase=String(capture.duPhase||'');
+  nativeRecordingActive=screenActive||soundActive||duActive;
   recorderStop.hidden=!nativeRecordingActive;
   recorderStop.disabled=false;
   const screen=String(capture.screenState||'').slice(0,160);
@@ -2264,7 +2266,8 @@ window.QuantaBubbles={
    /saving|finishing/i.test(sound)?'Sound saving':'Sound recorder OFF';
   const lastReceipt=!nativeRecordingActive&&(/saved|failed|finished|error/i.test(screen+' '+sound))
    ?' · Last result: '+(/saved|failed|finished|error/i.test(screen)?screen:sound):'';
-  recorderStatus.textContent=mode+' · '+soundMode+lastReceipt;
+  recorderStatus.textContent=duActive?'Recording':duPhase==='starting'?'Starting…':
+   duPhase==='needs_tap'?'Tap DU to record':mode+' · '+soundMode+lastReceipt;
   const readState=String(capture.readState||'').slice(0,1800);
   nativeScreenSharing=capture.screenSharing===true;
   screenShareButton.setAttribute('aria-pressed',String(nativeScreenSharing));
