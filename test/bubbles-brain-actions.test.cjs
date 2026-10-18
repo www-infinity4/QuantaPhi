@@ -3,6 +3,14 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const {classify,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets}=require('../bubbles-brain-actions.js');
 
+test('owner repository alias table never repeats keys in robot-generated patches',()=>{
+ const source=fs.readFileSync(require.resolve('../bubbles-brain-actions.js'),'utf8');
+ const block=source.match(/const OWNER_REPOS=\{([\s\S]*?)\n\};/);
+ assert.ok(block,'owner repository aliases exist');
+ const aliases=[...block[1].matchAll(/^\s*'([^']+)'\s*:/gm)].map(m=>m[1]);
+ assert.equal(new Set(aliases).size,aliases.length,'no duplicate aliases may be merged');
+});
+
 test('repository routing includes new owner repositories and respects explicit token precedence',()=>{
   // Allowed explicit tokens resolve directly.
   assert.equal(repositoryFor('www-infinity4/Channel-Creatir'),'www-infinity4/Channel-Creatir');

@@ -15,8 +15,6 @@ const OWNER_REPOS={
  'channel-creatir':'www-infinity4/Channel-Creatir',
  'hbo':'www-infinity4/HBO',
  'tv-database':'www-infinity4/TV-Database',
- 'hbo':'www-infinity4/HBO',
- 'tv-database':'www-infinity4/TV-Database',
  'widgetphi':'www-infinity4/WidgetPhi',
  'widget phi':'www-infinity4/WidgetPhi'
 };
