@@ -761,6 +761,30 @@ document.body.append(launcher,panel);
 // Fit the visible phone viewport, including the space remaining above its keyboard.
 const chatFitStyle=create('style');
 chatFitStyle.textContent=`
+/* Readable controls across the website and Android chat, including disabled states. */
+body .ba-panel :is(button,summary),#bubblesAICard :is(button,summary){
+ color:#17212b!important;-webkit-text-fill-color:#17212b!important;
+ background:#ffffff!important;background-image:none!important;
+ border:1px solid #8493a3!important;opacity:1!important;
+ font-family:system-ui,sans-serif!important;font-size:16px!important;font-weight:700!important;
+ line-height:1.4!important;min-height:48px!important;text-shadow:none!important;
+ white-space:normal!important;overflow-wrap:anywhere!important;letter-spacing:normal!important;
+}
+body .ba-panel button:disabled,#bubblesAICard button:disabled{
+ color:#465462!important;-webkit-text-fill-color:#465462!important;
+ background:#edf0f3!important;border-style:dashed!important;cursor:not-allowed!important;
+}
+body .ba-panel .ba-send,#bubblesAICard .ba-primary{
+ color:#fff!important;-webkit-text-fill-color:#fff!important;
+ background:#173f69!important;border-color:#173f69!important;
+}
+body .ba-panel .ba-connector-code{background:#e8f1fc!important;border:2px solid #173f69!important}
+body .ba-panel .ba-actions{gap:6px!important}
+body .ba-panel .ba-actions button{font-size:14px!important;padding:7px 5px!important}
+body .ba-panel .ba-close{font-size:24px!important}
+body .ba-panel :is(input,textarea){font-size:16px!important;color:#17212b!important;-webkit-text-fill-color:#17212b!important}
+body .ba-panel :is(button,summary):focus-visible{outline:3px solid #005fcc!important;outline-offset:2px!important}
+
 .ba-panel .ba-composer{min-height:0;max-height:65%;overflow-y:auto;overscroll-behavior:contain}
 .ba-panel .ba-connector-code-output[hidden],.ba-panel .ba-composer [hidden]{display:none!important}
 .ba-panel .ba-connector-code-output{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:6px;min-width:0}
