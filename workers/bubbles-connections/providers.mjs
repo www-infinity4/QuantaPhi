@@ -78,6 +78,23 @@ export function githubAdapter(config, request = githubRequest) {
   const redirectUri = callback(config);
   return {
     id:'github',
+    async repositories({accessToken}) {
+      const headers={Authorization:'Bearer '+accessToken,Accept:'application/vnd.github+json','User-Agent':'Bubbles-User-Connections','X-GitHub-Api-Version':'2022-11-28'};
+      const read=async path=>jsonResponse(await request('https://api.github.com'+path,{headers,redirect:'error',signal:AbortSignal.timeout(15000)}),'github_repositories');
+      const catalog=await read('/user/installations?per_page=100');
+      if(!Array.isArray(catalog.installations))throw Error('provider_response_invalid');
+      const repositories=[];
+      for(const installation of catalog.installations.slice(0,20)){
+        if(!Number.isSafeInteger(installation.id)||installation.id<=0)continue;
+        const data=await read('/user/installations/'+installation.id+'/repositories?per_page=100');
+        if(!Array.isArray(data.repositories))throw Error('provider_response_invalid');
+        for(const repo of data.repositories){
+          if(!Number.isSafeInteger(repo.id)||!/^[-A-Za-z0-9_.]+\/[-A-Za-z0-9_.]+$/.test(repo.full_name||''))continue;
+          repositories.push({id:repo.id,name:repo.full_name,installationId:installation.id,private:repo.private===true,permissions:{read:repo.permissions?.pull===true,write:repo.permissions?.push===true,admin:repo.permissions?.admin===true}});
+        }
+      }
+      return {repositories,truncated:Number(catalog.total_count)>20||Number(catalog.total_count)>catalog.installations.length};
+    },
     authorization({state, challenge, actions}) {
       if (actions.some(a => !['repository.read','repository.fork','repository.write'].includes(a))) throw Error('unsupported_action');
       const url = new URL('https://github.com/login/oauth/authorize');
