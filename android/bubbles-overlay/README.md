@@ -1,3 +1,34 @@
+## Always-on owner-enabled screen vision (October 18, 2026)
+
+**There is no screen-watch timer.** Once the owner says **"turn on
+continuous screen vision"** or **"always watch everything on my phone"**,
+Bubbles saves that preference and continues observing while its visible Android
+foreground service runs. It resumes automatically on subsequent Bubbles
+starts, provided its owner-enabled Accessibility screen capability is active.
+**"stop screen watching"** or **Stop screen watch** in Bubbles' visible
+notification disables the feature and clears volatile visual context.
+
+Bubbles samples the currently visible accessibility text at roughly 1-second
+intervals. It additionally captures **actual display screenshots**, detects
+changes locally, and analyzes changed frames with its existing visual AI
+provider. Frames are discarded after processing; only the latest bounded
+text and visual description are kept in RAM. Processing is asynchronous and
+one visual request remains in flight at a time to avoid freezing speech,
+overlay input or the phone. Every conversational request can use the most
+recent visual summary, even without saying "take a screenshot." No manual
+image-capture button is required for each observation.
+
+**Connectivity and consent:** enabling continuous vision opts in to recurring
+image analysis by Bubbles' configured cloud vision endpoint. It can consume
+mobile data and provider inference capacity. It never enables Accessibility
+or screen projection on its own; Android can redact secure/password-protected
+windows. If Android stops the service, the Accessibility permission is
+revoked, or protected screen content is unavailable, the observation cannot
+continue until the OS allows it. This does not install a hidden stream server,
+and does not promise access to protected/system-inaccessible pixels. Normal
+MediaProjection video recording has separate Android consent and MP4 size
+limits; those limits do **not** impose an expiration on screen awareness.
+
 ## Precise voice-controlled screen recording (October 18, 2026)
 
 The existing `ScreenCaptureService` is the foreground recording owner; there is
