@@ -925,7 +925,13 @@ function updateRole(){
  config={...config,role:persona.value,alias:alias.value.trim().slice(0,38)||'Bubbles',instructions:instructions.value.trim().slice(0,1200),voice:Boolean(config.voice),voiceURI:config.voiceURI||''};
  save(CONFIG,config);name.textContent=config.alias;status.textContent=ROLES[config.role].name+' · Oracle Cloudflare AI · account access not implied';
  voiceGate?.setName(config.alias);
+ window.dispatchEvent(new CustomEvent('bubbles:name-updated',{detail:{alias:config.alias}}));
 }
+window.addEventListener('bubbles:personal-name-request',event=>{
+ const requested=String(event.detail?.alias||'').trim().slice(0,38);
+ if(requested.length<2)return;
+ alias.value=requested;updateRole();
+});
 saveRole.addEventListener('click',()=>{updateRole();saveRole.textContent='Role saved ✓';setTimeout(()=>saveRole.textContent='Save bubble role',1300)});
 persona.addEventListener('change',updateRole);
 
