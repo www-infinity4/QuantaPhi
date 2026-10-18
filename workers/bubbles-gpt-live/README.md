@@ -26,8 +26,13 @@ It uses the official `gpt-live-1` voice model, not system TTS or a third-party v
    HTTPS, enter owner gate token (never an API key), and tap Start.
 5. Monitor model session receipts and provider billing. Do not launch
    open public access or claim any funds/token credits without separate ledgers.
-6. Before embedding in a native Android overlay, add tested WebView microphone
-   permission handling and prevent dual microphone capture with Bubbles Vosk.
+6. Preview v0.36 adds native WebView microphone permission handling for the exact
+   first-party Live page. It requires a visible page, existing Android microphone
+   permission and a native confirmation, and refuses while an audio/screen-audio
+   recording is active. Vosk and native TTS pause before granting audio capture.
+   Closing/collapsing the live view stops local media; returning to chat does not
+   automatically restart listening. This source/build contract is not a real
+   phone-call or provider-session verification.
 
 ## Voice fidelity
 The API uses the same documented `gpt-live-1` **model family** powering

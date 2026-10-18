@@ -793,7 +793,7 @@ body .ba-panel :is(button,summary):focus-visible{outline:3px solid #005fcc!impor
 .ba-panel .ba-connector-code-output textarea{height:68px!important;min-height:68px!important;max-height:68px!important;padding:6px!important}
 .ba-panel .ba-connector-code-output button{min-height:48px;max-width:110px;white-space:normal}
 .ba-panel .ba-connector-code{width:100%;min-height:44px;margin:0}
-.ba-panel .ba-composer>.ba-muted{margin:0;font-size:12px;max-height:3em;overflow-y:auto}
+.ba-panel .ba-composer>.ba-muted{margin:0;font-size:12px;max-height:none;overflow:visible}
 @media(max-width:600px){
  body .ba-panel:not([hidden]),html.bubbles-native-overlay .ba-panel:not([hidden]){
  position:fixed!important;inset:auto!important;left:0!important;right:0!important;
@@ -801,8 +801,8 @@ body .ba-panel :is(button,summary):focus-visible{outline:3px solid #005fcc!impor
  width:100%!important;height:var(--ba-visible-height,100dvh)!important;
  max-height:var(--ba-visible-height,100dvh)!important;min-height:0!important;
  padding:0!important;gap:0!important;border-radius:0!important;overflow:hidden!important}
- body .ba-panel .ba-thread{flex:1 1 0!important;min-height:0!important;overflow-y:auto!important}
- body .ba-panel .ba-composer{flex:0 1 auto!important;min-height:0!important;max-height:calc(100% - 48px)!important;overflow-y:auto!important;padding:6px 8px max(6px,env(safe-area-inset-bottom))!important;gap:5px!important}
+ body .ba-panel .ba-thread{flex:1 1 0!important;min-height:64px!important;overflow-y:auto!important}
+ body .ba-panel .ba-composer{flex:0 1 auto!important;min-height:0!important;max-height:calc(100% - 112px)!important;overflow-y:auto!important;padding:6px 8px max(6px,env(safe-area-inset-bottom))!important;gap:5px!important}
  body .ba-panel .ba-composer textarea:not(.ba-connector-code-output textarea){height:52px;min-height:44px;max-height:72px}
  body .ba-panel .ba-header{min-height:48px;padding:4px 10px}
 }

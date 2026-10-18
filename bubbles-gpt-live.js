@@ -144,3 +144,10 @@ window.addEventListener("pagehide",()=>{
  }
  cleanup();
 });
+
+// Read-only lifecycle observation plus explicit Stop for the trusted native host.
+// No owner credential or provider key is exposed through this object.
+window.BubblesLiveVoice={inCall:()=>pc!==null,stop:()=>{
+ if(ready&&channel?.readyState==="open")try{channel.send(JSON.stringify({type:"session.close"}))}catch{}
+ cleanup();show("Live audio disconnected. Tap Bubbles to resume ordinary listening.");
+}};

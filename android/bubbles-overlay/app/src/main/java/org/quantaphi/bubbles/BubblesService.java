@@ -179,6 +179,7 @@ public final class BubblesService extends Service {
     private Thread audioThread;
     private Model voiceModel;
     private volatile boolean captureRunning = false;
+    private boolean liveMicrophoneOwned = false;
     private boolean modelLoading = false;
     private boolean ttsReady = false;
     private TextToSpeech tts;
@@ -452,7 +453,7 @@ public final class BubblesService extends Service {
     }
 
     private void beginListening() {
-        if (!connected || muted || captureRunning || modelLoading
+        if (!connected || muted || liveMicrophoneOwned || captureRunning || modelLoading
                 || (audioThread != null && audioThread.isAlive())) return;
         if (voiceModel == null) {
             modelLoading = true;
@@ -622,6 +623,7 @@ public final class BubblesService extends Service {
     }
 
     private void beginAudioRecording() {
+        if (liveMicrophoneOwned) { pendingAudioRecording = false; return; }
         pendingAudioRecording = false;
         try {
             recording.start(new java.io.File(getFilesDir(), "captures"));
@@ -695,6 +697,7 @@ public final class BubblesService extends Service {
         }
     }
     private void muteSession() {
+        if (liveMicrophoneOwned && oracleWindow != null) oracleWindow.stopLiveCall();
         screenSharing = false;
         muted = true;
         activeUntil = 0L;
@@ -705,8 +708,25 @@ public final class BubblesService extends Service {
     void pauseSharedMicrophone() {
         if (!muted) { silenceReply(); muteSession(); }
     }
+    boolean prepareLiveMicrophone() {
+        // Never silently finalize or discard a recording to start a call.
+        if (liveMicrophoneOwned || recording.active() || screenAudio.active() || pendingAudioRecording)
+            return false;
+        pauseSharedMicrophone();
+        if (microphone != null || (audioThread != null && audioThread.isAlive())) return false;
+        liveMicrophoneOwned = true;
+        return true;
+    }
+    void releaseLiveMicrophone() {
+        // Ending a call does not restart listening without a new owner action.
+        liveMicrophoneOwned = false;
+    }
     private void resumeSession() {
         if (!connected) return;
+        if (liveMicrophoneOwned) {
+            Toast.makeText(this, "End the live call before resuming Bubbles listening", Toast.LENGTH_SHORT).show();
+            return;
+        }
         muted = false;
         if (oracleWindow != null) oracleWindow.claimMicrophone();
         activeUntil = 0L;
