@@ -37,6 +37,7 @@
             </intent-filter>
         </service>
         <service android:name=".ScreenCaptureService" android:exported="false" android:foregroundServiceType="mediaProjection"/>
+        <service android:name=".PhonePlaybackService" android:exported="false" android:foregroundServiceType="mediaProjection"/>
         <service android:name=".BubblesService" android:exported="false"
             android:foregroundServiceType="microphone"/>
         <service android:name=".BrainLearningService" android:exported="true"
