@@ -326,6 +326,21 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
  <small>This lightweight browser animation is not a rendered AI video; the AI video provider must be connected separately.</small>
 </section>
 <section id="bubblesAICard" aria-label="Bubbles AI card"></section>
+<section class="bubblePersonalSocial" id="bubblePersonalSocial" aria-labelledby="bubblePersonalTitle">
+ <h2 id="bubblePersonalTitle">Your own Bubbles hashtag</h2>
+ <p>Customize your bubble name and connect the X account you control. For example, name it Albert, verify your own X account, then scan only your <strong>#albert</strong> posts. Other people's posts cannot become commands for your site.</p>
+ <div class="bps-fields">
+  <label>Bubble name<input id="bubblePersonalName" maxlength="38" autocomplete="off" value="Bubbles"></label>
+  <label>Social provider<select id="bubblePersonalProvider"><option value="x">X (Twitter)</option><option value="facebook_page">Facebook Page (connection pending)</option></select></label>
+  <label>Account<input id="bubblePersonalAccount" maxlength="32" autocomplete="off" placeholder="@YourXhandle"></label>
+ </div>
+ <p>Your personal command hashtag: <strong id="bubblePersonalTag">#bubbles</strong></p>
+ <div class="bps-actions"><button type="button" data-bubble-operation="connect">Connect and get verification post</button><button type="button" data-bubble-operation="verify">Verify account</button><button type="button" data-bubble-operation="scan">Scan my hashtag</button><button type="button" data-bubble-operation="inbox">Show my orders</button></div>
+ <pre id="bubblePersonalProof" aria-label="Social verification text"></pre>
+ <p id="bubblePersonalStatus" role="status" aria-live="polite">A verified Unified Wallet session and official X read access are needed. Instructions are suggestions until site-specific authorization is provided.</p>
+ <div id="bubblePersonalInbox" aria-live="polite"></div>
+ </section>
+
 <section class="communityUpgrade" id="communityUpgrade" aria-labelledby="communityUpgradeTitle">
   <h2 id="communityUpgradeTitle">Suggest an upgrade to Bubbles or QuantaPhi</h2>
   <p>Report a broken button, propose a better swipe or layout, suggest video features, or recommend advertising placement. Relevant ideas can be reviewed by GPT and the Robot Brain team. Public suggestions do not grant access to the owner's accounts.</p>
@@ -1721,6 +1736,8 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script defer src="/bubbles-orbit-preview.js?v=20261018-motion1"></script>
 <link rel="stylesheet" href="/bubbles-community-upgrades.css?v=20261018-community1">
 <script defer src="/bubbles-community-upgrades.js?v=20261018-community1"></script>
+<link rel="stylesheet" href="/bubbles-personal-social.css?v=20261018-tags1">
+<script defer src="/bubbles-personal-social.js?v=20261018-tags1"></script>
 <script defer src="/fred-spaces-radio.js?v=20261011-targeted-fred2"></script>
 <script defer src="/magoo-spaces-radio.js?v=20261010-magoo2"></script>
 <script defer src="/following-spaces-radio.js?v=20261011-single-person4"></script>
