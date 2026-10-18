@@ -16,6 +16,8 @@ import java.util.concurrent.Executors;
 /** A separate, visibly foregrounded capture session started after Android consent. */
 public final class ScreenCaptureService extends Service {
     static final String STOP = "org.quantaphi.bubbles.CAPTURE_STOP";
+    static final String PAUSE = "org.quantaphi.bubbles.CAPTURE_PAUSE";
+    static final String RESUME = "org.quantaphi.bubbles.CAPTURE_RESUME";
     private final Handler main = new Handler(Looper.getMainLooper());
     private MediaProjection projection;
     private VirtualDisplay display;
@@ -24,7 +26,7 @@ public final class ScreenCaptureService extends Service {
     private File file;
     private VoiceRecording sharedAudio;
     private File capturedAudio;
-    private boolean finished, recordingStarted;
+    private boolean finished, recordingStarted, capturePaused;
     private int pendingPublications = 0;
     private final ExecutorService mediaExport = Executors.newSingleThreadExecutor();
     private File sequenceDirectory;
@@ -33,15 +35,14 @@ public final class ScreenCaptureService extends Service {
 
     @Override public int onStartCommand(Intent intent, int flags, int id) {
         if (intent == null || STOP.equals(intent.getAction())) { finishCapture(); return START_NOT_STICKY; }
+        // A paused MediaRecorder belongs to this SAME approved projection and
+        // VirtualDisplay. No new token, getMediaProjection or display is created.
+        if (PAUSE.equals(intent.getAction())) { changePauseState(true); return START_NOT_STICKY; }
+        if (RESUME.equals(intent.getAction())) { changePauseState(false); return START_NOT_STICKY; }
         if (projection != null || finished) return START_NOT_STICKY;
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         nm.createNotificationChannel(new NotificationChannel("bubbles_capture", "Bubbles screen capture", NotificationManager.IMPORTANCE_LOW));
-        PendingIntent stop = PendingIntent.getService(this, 12, new Intent(this, ScreenCaptureService.class).setAction(STOP),
-                PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
-        Notification notification = new Notification.Builder(this, "bubbles_capture")
-                .setSmallIcon(android.R.drawable.ic_menu_camera).setContentTitle("Bubbles screen capture")
-                .setContentText("Capture active · tap Stop to save").setOngoing(true)
-                .addAction(android.R.drawable.ic_delete, "Stop capture", stop).build();
+        Notification notification = captureNotification(false);
         try {
             if (Build.VERSION.SDK_INT >= 29) startForeground(512, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION);
             else startForeground(512, notification);
@@ -50,6 +51,7 @@ public final class ScreenCaptureService extends Service {
             projection = ((MediaProjectionManager) getSystemService(MEDIA_PROJECTION_SERVICE))
                     .getMediaProjection(Activity.RESULT_OK, consent);
             BrainNotes.prefs(this).edit().putBoolean("capture_active", true).putBoolean("capture_recording", false)
+                    .putBoolean("capture_paused", false)
                     .putString("capture_state", "Screen capture authorized; starting").apply();
             projection.registerCallback(new MediaProjection.Callback() {
                 @Override public void onStop() { finishCapture(); }
@@ -142,7 +144,7 @@ public final class ScreenCaptureService extends Service {
                 display = projection.createVirtualDisplay("Bubbles recording", width, height, metrics.densityDpi,
                         DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, recorder.getSurface(), null, main);
                 sharedAudio = BubblesService.beginScreenAudio();
-                recorder.start(); recordingStarted = true;
+                recorder.start(); recordingStarted = true; capturePaused = false;
                 BrainNotes.prefs(this).edit().putBoolean("capture_recording", true)
                     .putString("capture_state", "Recording screen + microphone into one MP4; Stop saves to Movies/Bubbles").apply();
                 main.postDelayed(this::finishCapture, 300000);
@@ -150,6 +152,54 @@ public final class ScreenCaptureService extends Service {
         } catch (Exception error) { fail(error); }
         return START_NOT_STICKY;
     }
+    /** Only accepts pause/resume while this foreground service owns a live
+     * video recorder. A new recording after Stop needs new system consent.
+     */
+    private void changePauseState(boolean pause) {
+        if (finished || !recordingStarted || recorder == null || display == null
+                || projection == null || capturePaused == pause) return;
+        try {
+            if (pause) recorder.pause();
+            else recorder.resume();
+            // This recorder uses the SAME Vosk PCM microphone, multiplexed into
+            // MP4 later. Pause the PCM writer too, or audio/video drift apart.
+            if (sharedAudio != null) {
+                if (pause) sharedAudio.pause(); else sharedAudio.resume();
+            }
+            capturePaused = pause;
+            BrainNotes.prefs(this).edit().putBoolean("capture_paused", pause)
+                .putString("capture_state", pause
+                    ? "Screen recording paused · say resume recording, or stop to save"
+                    : "Screen recording resumed · same approved session").apply();
+            ((NotificationManager) getSystemService(NOTIFICATION_SERVICE))
+                .notify(512, captureNotification(pause));
+        } catch (RuntimeException failure) {
+            BrainNotes.prefs(this).edit().putString("capture_state",
+                "Recording pause/resume failed; capture state unchanged").apply();
+        }
+    }
+
+    private Notification captureNotification(boolean paused) {
+        int code = paused ? 14 : 13;
+        Intent toggle = new Intent(this, ScreenCaptureService.class)
+            .setAction(paused ? RESUME : PAUSE);
+        PendingIntent change = PendingIntent.getService(this, code, toggle,
+            PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent stop = PendingIntent.getService(this, 12,
+            new Intent(this, ScreenCaptureService.class).setAction(STOP),
+            PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
+        return new Notification.Builder(this, "bubbles_capture")
+            .setSmallIcon(android.R.drawable.ic_menu_camera)
+            .setContentTitle("Bubbles screen recording")
+            .setContentText(paused ? "Recording paused · Resume or Stop & save"
+                : "Recording active · Pause or Stop & save")
+            .setOngoing(true)
+            .addAction(android.R.drawable.ic_media_pause,
+                paused ? "Resume" : "Pause", change)
+            .addAction(android.R.drawable.ic_delete, "Stop & save", stop)
+            .build();
+    }
+
     /** Publish in the Android media library before stopping the foreground service.
      * A private app directory alone is invisible to Gallery/Files on Android 12.
      */
@@ -200,7 +250,8 @@ public final class ScreenCaptureService extends Service {
     private void finishCapture() {
         if (finished) return;
         finished = true;
-        BrainNotes.prefs(this).edit().putBoolean("capture_active", false).putBoolean("capture_recording", false).apply();
+        BrainNotes.prefs(this).edit().putBoolean("capture_active", false).putBoolean("capture_recording", false)
+            .putBoolean("capture_paused", false).apply();
         main.removeCallbacksAndMessages(null);
         if (sequenceDirectory != null) {
             BrainNotes.prefs(this).edit().putString("capture_state", "Screen series finished: "
