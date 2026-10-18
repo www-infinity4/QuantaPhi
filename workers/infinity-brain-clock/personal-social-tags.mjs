@@ -76,7 +76,7 @@ export function parseCommunityBubblesPost(post){
  const id=String(post?.id||''),authorId=String(post?.author_id||'');
  if(!ID.test(id)||!ID.test(authorId)||typeof post.text!=='string'||post.text.length>2200)return null;
  if(Array.isArray(post.referenced_tweets)&&post.referenced_tweets.some(x=>x?.type==='retweeted'))return null;
- const pattern=/(^|[\\s([{])#bubbles(?=$|[\\s\\])}:,.!?;])/i;
+ const pattern=/(^|[\s([{])#bubbles(?=$|[\s\])}:,.!?;])/i;
  if(!pattern.test(post.text))return null;
  const suggestion=post.text.replace(pattern,(_,prefix)=>prefix).trim();
  if(suggestion.length<8)return null;
@@ -84,7 +84,7 @@ export function parseCommunityBubblesPost(post){
    suggestion,verifiedOwner:false,ownerPrivilege:false,execute:false};
 }
 export async function searchPublicBubblesX({token,fetchImpl=fetch}={}){
- if(typeof token!=='string'||token.length<12||/[\\r\\n]/.test(token))
+ if(typeof token!=='string'||token.length<12||/[\r\n]/.test(token))
   return {ok:false,error:'x_public_search_not_configured',posts:[]};
  const url=new URL('https://api.x.com/2/tweets/search/recent');
  url.searchParams.set('query','#bubbles -is:retweet');
