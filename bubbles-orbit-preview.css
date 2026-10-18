@@ -1,0 +1,10 @@
+/* Bubbles motion preview: decorative demo, not an ad or AI-rendered clip. */
+.bubblesOrbit{max-width:980px;margin:18px auto 26px;padding:18px;border:1px solid #bda5d6;border-radius:22px;background:linear-gradient(145deg,#fff,#f5eefe);box-shadow:0 9px 26px #38144716;color:#30243e}
+.bubblesOrbit h2{font-size:clamp(19px,3vw,27px);margin:0 0 5px}
+.bubblesOrbit p{margin:0 0 12px;line-height:1.5}
+.bubblesOrbit canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:15px;border:1px solid #774b9c;background:#23103f}
+.bubblesOrbit-controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;align-items:center}
+.bubblesOrbit-controls a,.bubblesOrbit-controls button{appearance:none;border:1px solid #75508e;background:#fff;border-radius:12px;padding:10px 13px;font:700 14px/1.4 system-ui,sans-serif;color:#492277;min-height:44px;text-decoration:none;cursor:pointer}
+.bubblesOrbit-controls :focus-visible{outline:3px solid #492277;outline-offset:2px}
+.bubblesOrbit small{display:block;color:#665574;margin-top:10px;line-height:1.5}
+@media(prefers-reduced-motion:reduce){.bubblesOrbit canvas{scroll-behavior:auto}}
