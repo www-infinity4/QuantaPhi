@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 const handoffUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/technical-handoff.mjs',import.meta.url))).toString('base64');
 const credentialUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/github-credential.mjs',import.meta.url))).toString('base64');
+const cloudflareBrokerUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/cloudflare-token-broker.mjs',import.meta.url))).toString('base64');
 const mergeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/merge-receipt.mjs',import.meta.url))).toString('base64');
 const directGithubUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/direct-github.mjs',import.meta.url))).toString('base64');
 const queueUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/queue-order.mjs',import.meta.url))).toString('base64');
@@ -25,7 +26,7 @@ const alarmUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new 
 const runnerRequestSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-request.mjs',import.meta.url),'utf8')).replace('./alarm-retry.mjs',alarmUrl);
 const runnerRequestUrl='data:text/javascript;base64,'+Buffer.from(runnerRequestSource).toString('base64');
 const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./technical-handoff.mjs",handoffUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
-const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
+const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
  const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{BOT_WALLET:{fetch:async()=>Response.json({ok:true,user:{id:userId,username:'fixture-owner'}})}});
@@ -486,4 +487,39 @@ test('BrainClock deferred recovery never overrides real owner/security refusal',
  const result=await clock.recoverDeferredWork();
  assert.equal(result.state,'no_due_deferred_technical_work');
  assert.equal(writes,0);assert.equal(reads,0);
+});
+
+
+test('BrainClock accepts explicit token plan, but cannot mint Cloudflare credentials without separate server secret',async()=>{
+ const memory=new Map(),storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),
+  transaction:async fn=>fn({get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)})};
+ const clock=new BrainClock({storage},{BOT_WORK_SECRET:'x'.repeat(40),WRITER_OWNER_HASH:'f'.repeat(64)});
+ const p=await clock.fetch(new Request('https://clock.internal/owner/cloudflare-token-plan',{
+  method:'POST',body:JSON.stringify({capability:'workers-script-edit',
+   durationHours:24,purpose:'Prepare approved Bubbles site version uploads'})}));
+ const plan=await p.json();assert.equal(plan.ok,true);
+ assert.equal(plan.managerConfigured,false);
+ assert.equal(plan.requiresExplicitOwnerAction,true);
+ assert.equal(plan.tokenValueWillBeSentToApp,false);
+ const response=await clock.fetch(new Request('https://clock.internal/owner/cloudflare-token-confirm',{
+  method:'POST',body:JSON.stringify({requestId:plan.requestId})}));
+ const result=await response.json();
+ assert.equal(result.ok,false);
+ assert.equal(result.error,'cloudflare_token_manager_not_configured');
+ assert.equal(memory.get('cloudflare-token-plan:'+plan.requestId).status,'owner_approval_required');
+ assert.equal([...memory.keys()].some(k=>k.startsWith('cloudflare-token-vault:')),false);
+});
+test('public Cloudflare token endpoints reject absent owner sessions before any token lookup',async()=>{
+ const tokenEndpoints=['/work/cloudflare/token-plan','/work/cloudflare/token-confirm'];
+ let readSecret=0;
+ const env={WRITER_OWNER_HASH:'f'.repeat(64),CLOCK:{
+  idFromName:()=>{readSecret++;throw Error('No unauthenticated Cloudflare broker calls allowed');}
+ }};
+ for(const path of tokenEndpoints){
+  const response=await brainWorker.fetch(new Request('https://brain.local'+path,{
+   method:'POST',body:JSON.stringify({purpose:'Unapproved worker deployment'})}),env);
+  assert.equal(response.status,401);
+  assert.equal((await response.json()).error,'owner_authorization_required');
+ }
+ assert.equal(readSecret,0);
 });

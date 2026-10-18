@@ -49,6 +49,7 @@ jobs:
           node --test \
             test/brain-ticket-selector.test.mjs \
             test/brain-deferred-recovery.test.mjs \
+            test/brain-cloudflare-token-broker.test.mjs \
             test/brain-queue-order.test.mjs \
             test/brain-clock.test.mjs \
             test/bubbles-runner-dispatch.test.mjs \

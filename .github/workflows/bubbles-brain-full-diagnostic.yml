@@ -73,6 +73,7 @@ jobs:
             test/brain-queue-order.test.mjs \
             test/brain-ticket-selector.test.mjs \
             test/brain-deferred-recovery.test.mjs \
+            test/brain-cloudflare-token-broker.test.mjs \
             test/brain-clock-stage.test.mjs \
             test/brain-clock-binding-parity.test.mjs \
             test/brain-ticket-status.test.cjs \

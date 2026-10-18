@@ -7,6 +7,7 @@ import {mkdirSync,writeFileSync} from 'node:fs';
 const tests=[
  'test/bubbles-pr416-verification.test.cjs',
  'test/bubbles-oracle-site-build.test.cjs',
+ 'test/bubbles-cloudflare-token-manager.test.cjs',
  'test/bubbles-brain-bridge.test.cjs',
  'test/bubbles-progress-updates.test.cjs',
  'test/bubbles-owner-approval.test.cjs',
