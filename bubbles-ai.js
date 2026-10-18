@@ -845,7 +845,53 @@ if(brainInbox){
  brainNoticeText=create('p','ba-brain-notice','Verified Brain notifications will appear here. Queued work is not a completed repair.');
  brainNoticeText.setAttribute('role','status');
  row.append(brainNoticePrevious,brainNoticeText,brainNoticeNext);
- brainInbox.append(head,row);
+ const communityActions=create('div','ba-brain-notice-row');
+ const communityButton=create('button','ba-control','Review community upgrades');
+ communityButton.type='button';
+ communityActions.append(communityButton);
+ const communityResults=create('div','ba-community-results');
+ communityResults.setAttribute('role','region');
+ communityResults.setAttribute('aria-label','Community suggestions awaiting owner review');
+ brainInbox.append(head,row,communityActions,communityResults);
+ communityButton.addEventListener('click',async()=>{
+  if(!ownerReady){recordBrainNotice('Connect Robot Brain owner session to review community suggestions.');return}
+  communityButton.disabled=true;communityResults.textContent='Loading latest suggestions…';
+  try{
+   const headers=await verifiedOwnerHeaders();
+   const r=await bubblesFetch(BRAIN+'/work/community/upgrades',{method:'POST',
+    headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},18000);
+   const response=await r.json().catch(()=>({}));
+   if(!r.ok||!response.ok||!Array.isArray(response.proposals))throw Error(response.error||'review list unavailable');
+   communityResults.replaceChildren();
+   const suggestions=response.proposals.slice(0,20);
+   if(!suggestions.length)communityResults.textContent='No community suggestions are recorded yet.';
+   for(const proposal of suggestions){
+    const entry=create('div','ba-community-entry');
+    const summary=create('p','',String(proposal.suggestion||'').slice(0,650));
+    const details=create('small','',String(proposal.category||'feature')+' · '+String(proposal.placement||'review')+' · GPT: '+String(proposal.gpt_status||'needs_review'));
+    entry.append(summary,details);
+    if(proposal.gpt_status!=='reject'){
+     const action=create('button','ba-control',proposal.ticket_id?'Draft ticket already recorded':'Make review draft');
+     action.type='button';action.disabled=Boolean(proposal.ticket_id);
+     action.addEventListener('click',async()=>{
+      action.disabled=true;
+      try{
+       const auth=await verifiedOwnerHeaders();
+       const res=await bubblesFetch(BRAIN+'/work/community/promote',{method:'POST',
+        headers:{...auth,'Content-Type':'application/json'},body:JSON.stringify({id:proposal.id})},20000);
+       const receipt=await res.json().catch(()=>({}));
+       if(!res.ok||!receipt.ok)throw Error(receipt.error||'Promotion not accepted');
+       action.textContent='Review draft '+receipt.ticketId;
+       recordBrainNotice('Community proposal saved as owner-review draft '+receipt.ticketId+'. No code execution started.');
+      }catch(error){action.disabled=false;recordBrainNotice('Unable to draft suggestion: '+String(error.message||error).slice(0,120))}
+     });
+     entry.append(action);
+    }
+    communityResults.append(entry);
+   }
+  }catch(error){communityResults.textContent='Suggestions could not be retrieved: '+String(error.message||error).slice(0,150)}
+  finally{communityButton.disabled=false}
+ });
  chatScroll.insertBefore(brainInbox,conversation);
  brainNoticePrevious.addEventListener('click',()=>{brainNoticeIndex=Math.min(brainNotices.length-1,brainNoticeIndex+1);renderBrainInbox()});
  brainNoticeNext.addEventListener('click',()=>{brainNoticeIndex=Math.max(0,brainNoticeIndex-1);renderBrainInbox()});
