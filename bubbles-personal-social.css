@@ -1,0 +1,13 @@
+.bubblePersonalSocial{max-width:980px;margin:14px auto 26px;padding:18px;border:1px solid #cbb4e2;border-radius:22px;background:#fff;color:#30243e;box-shadow:0 7px 20px #2a154119}
+.bubblePersonalSocial h2{font-size:clamp(20px,3vw,25px);margin:0 0 6px}
+.bubblePersonalSocial p{margin:4px 0 12px;line-height:1.5}
+.bubblePersonalSocial .bps-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px}
+.bubblePersonalSocial label{font-size:14px;font-weight:750;display:grid;gap:6px}
+.bubblePersonalSocial input,.bubblePersonalSocial select{width:100%;min-height:44px;padding:10px 12px;border:1px solid #ac92c2;border-radius:12px;background:#fff;color:#271b34;font:16px system-ui}
+.bubblePersonalSocial .bps-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.bubblePersonalSocial button{border:1px solid #674090;background:#532879;color:#fff;border-radius:12px;font:700 14px system-ui;padding:10px 14px;min-height:44px}
+.bubblePersonalSocial button:disabled{opacity:.6}
+.bubblePersonalSocial pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f2edf7;color:#321947;border-radius:10px;padding:10px;font-size:13px;min-height:30px}
+.bubblePersonalSocial article{border-top:1px solid #d9c8e6;padding:10px 0;overflow-wrap:anywhere}
+.bubblePersonalSocial article a{display:inline-block;margin-top:6px;color:#563086}
+.bubblePersonalSocial :focus-visible{outline:3px solid #492277;outline-offset:2px}
