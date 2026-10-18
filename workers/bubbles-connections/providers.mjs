@@ -38,6 +38,22 @@ export function googleAdapter(config, request = fetch) {
         prompt:'consent select_account', include_granted_scopes:'true'}).toString();
       return url.href;
     },
+    async refresh({refreshToken, actions}) {
+      const value = await jsonResponse(await request('https://oauth2.googleapis.com/token', {
+        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000),
+        body:new URLSearchParams({client_id:config.clientId, client_secret:config.clientSecret,
+          grant_type:'refresh_token', refresh_token:refreshToken})
+      }), 'google_refresh');
+      const scopes = typeof value.scope === 'string' ? new Set(value.scope.split(/\s+/)) : null;
+      return {...tokenFields(value), grantedActions:actions.filter(a => !scopes || scopes.has(GOOGLE_SCOPES[a]))};
+    },
+    async revoke({refreshToken, accessToken}) {
+      const response = await request('https://oauth2.googleapis.com/revoke', {
+        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000),
+        body:new URLSearchParams({token:refreshToken || accessToken})
+      });
+      if (!response.ok) throw Error('google_revoke_failed');
+    },
     async exchange({code, verifier, actions}) {
       const value = await jsonResponse(await request('https://oauth2.googleapis.com/token', {
         method:'POST', redirect:'error', signal:AbortSignal.timeout(15000),
@@ -69,6 +85,25 @@ export function githubAdapter(config, request = fetch) {
       url.search = new URLSearchParams({client_id:config.clientId, redirect_uri:redirectUri, state,
         code_challenge:challenge, code_challenge_method:'S256'}).toString();
       return url.href;
+    },
+    async refresh({refreshToken, actions}) {
+      const value = await jsonResponse(await request('https://github.com/login/oauth/access_token', {
+        method:'POST', redirect:'error', signal:AbortSignal.timeout(15000), headers:{Accept:'application/json'},
+        body:new URLSearchParams({client_id:config.clientId, client_secret:config.clientSecret,
+          grant_type:'refresh_token', refresh_token:refreshToken})
+      }), 'github_refresh');
+      const tokens = tokenFields(value);
+      if (!tokens.refreshToken) throw Error('github_rotation_incomplete');
+      return {...tokens, grantedActions:[...actions]};
+    },
+    async revoke({accessToken}) {
+      const response = await request('https://api.github.com/applications/'+encodeURIComponent(config.clientId)+'/token', {
+        method:'DELETE', redirect:'error', signal:AbortSignal.timeout(15000),
+        headers:{Authorization:'Basic '+btoa(config.clientId+':'+config.clientSecret),
+          Accept:'application/vnd.github+json', 'Content-Type':'application/json', 'User-Agent':'Bubbles-User-Connections'},
+        body:JSON.stringify({access_token:accessToken})
+      });
+      if (!response.ok && response.status !== 404) throw Error('github_revoke_failed');
     },
     async exchange({code, verifier}) {
       const value = await jsonResponse(await request('https://github.com/login/oauth/access_token', {

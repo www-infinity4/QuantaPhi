@@ -53,6 +53,8 @@ jobs:
             test/brain-deferred-recovery.test.mjs \
             test/brain-cloudflare-token-broker.test.mjs \
             test/brain-queue-order.test.mjs \
+            test/brain-assigned-job-scope.test.mjs \
+            test/brain-color-core.test.mjs \
             test/brain-clock.test.mjs \
             test/bubbles-runner-dispatch.test.mjs \
             workers/infinity-brain-clock/arbitration-evidence.test.mjs

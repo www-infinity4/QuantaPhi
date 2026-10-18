@@ -4,28 +4,44 @@ Requested October 17, 2026. Product goal: embed a Bubbles card, connect accounts
 
 ## Implementation status
 
-This patch implements a tested, server-only authorization contract, OAuth consent coordinator, encrypted token vault and Google/GitHub authorization adapters. It is not deployed, has no public HTTP router, and is not wired into Bubbles sessions or the owner-only Brain executor. All provider catalog entries deliberately remain `not_configured` until the live integration is verified.
+This patch implements the account-connection UI, wallet-authenticated HTTP router, per-user Durable Object service, OAuth coordinator, encrypted token vault, refresh/revoke lifecycle and Google read tools. Provider activation remains off (`CONNECTIONS_READY=false`) until the applications and keyring are provisioned and live consent is verified. This does not replace the owner-only Brain executor or claim all requested project/shopping tools are finished.
 
 | Component | Implemented behavior | Remaining integration |
 | --- | --- | --- |
-| Consent coordinator | User/session/provider-bound five-minute state, PKCE, transactional single-use callback consumption | Verified Bubbles visitor sessions, public router, CSRF checks, rate limits and expired-state cleanup |
+| Consent coordinator | Wallet-verified identity/device-session binding, five-minute PKCE/state, transactional single-use callbacks, consent rate limiting and expired-state cleanup | Register provider clients and verify actual browser consent/return |
 | Token vault | AES-GCM with record/tenant context, key IDs and old-key decryption | Provision separately managed keyring, rotation/re-encryption operations |
-| Google adapter | System-browser authorization URL, code exchange, stable subject lookup, requested/granted scope intersection for Drive, Sheets and Calendar | Register application, verification as required, API action executors and resource controls |
+| Google adapter | Authorization URL, code exchange, stable subject lookup, partial scope consent, Drive file search, selected Sheets values and Calendar event reads | Register application, verification as required, test real accounts; write actions remain unavailable |
 | GitHub App adapter | PKCE, expiring user-token exchange, verified numeric user ID | Register App, verify installation/repository permissions, authorize explicit resource selection, fork/build execution |
-| Disconnect | Delete encrypted local credentials, mark connection disconnected, cancel outstanding provider consent flows | Provider-side revoke, queued-action cancellation, revocation notifications |
-| Refresh | Expired connections fail closed | Refresh lock, rotated-token persistence, re-consent on revoked grants |
+| Disconnect | Delete local credentials before provider revoke, cancel pending callbacks, invalidate in-flight reads/refresh, report revoke failure explicitly | Provider revocation webhooks and cancellation of future job executor queues |
+| Refresh | Per-connection transactional lease, atomic rotated-token storage, revision checks, no scope expansion, reconnect on ambiguous failure | Verify real provider rotation and quota behavior |
+| Website UI | Connect-account section, Google service selection, account listing/disconnect, explicit resource read controls and exact popup callback checks | Native system-browser callback fallback when the original opener is unavailable |
 
 Implementation modules are `workers/bubbles-connections/{authorization,consent,providers,vault}.mjs`. `ConsentService` accepts trusted storage, keyring and adapter instances; its user/session arguments must come from the host's authentication layer, never unverified request JSON. Public responses omit tokens and internal vault references. No ID token is used for authentication; Google identity is read from the fixed HTTPS UserInfo endpoint using the newly exchanged token. This does not replace the user's Bubbles session.
 
 GitHub intentionally grants **zero repository actions** from account identity alone. The adapter requires expiring GitHub App user tokens; it does not fall back to broad OAuth-App `repo` scopes or the owner's token. Google `drive.write` requests `drive.file`, which covers files the app is permitted to use, not arbitrary Drive access. Provider access remains subject to actual scopes and resource checks.
 
-Validation: `node --test test/bubbles-connections.test.mjs test/bubbles-consent.test.mjs` — 17 passing tests, including callback replay/concurrency, cross-user/provider/session rejection, partial consent, encrypted storage context, key rotation, provider exchange failure and disconnect during an in-flight callback. Provider HTTP responses are simulated; no live user OAuth consent or deployment is claimed.
+Validation: `node --test test/bubbles-connections.test.mjs test/bubbles-consent.test.mjs test/bubbles-connections-router.test.mjs test/bubbles-connections-ui.test.mjs` — 34 passing tests, including callback replay/concurrency, verified identity overriding supplied user IDs, partial consent, key rotation, disconnect/refresh races, ambiguous refresh failure, fixed tool endpoints, selected-resource checks and popup origin/source/state validation. Provider responses are simulated; this is not proof of real OAuth or a completed repository deployment.
+
+## Activation checklist
+
+Deploy `workers/bubbles-connections/wrangler.toml`; bind `BUBBLES_CONNECTIONS` on the site Worker to that service. The site route passes only the `/api/bubbles/connections/` prefix to it. `/health` is public; `/catalog` requires a verified wallet and reports configuration; account and tool routes remain gated by `CONNECTIONS_READY`.
+
+Provision `CONNECTION_KEYRING` as JSON mapping a key ID to a random 32-byte base64url key, plus `CONNECTION_ACTIVE_KEY`. Register a Google web OAuth application and GitHub App with these exact callbacks:
+
+- `https://quantaphi.org/api/bubbles/connections/google/callback`
+- `https://quantaphi.org/api/bubbles/connections/github/callback`
+
+Store `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GITHUB_CLIENT_ID`, and `GITHUB_CLIENT_SECRET` as server-only bindings. Enable expiring GitHub user access tokens. Configure Google API access and consent review appropriate to the selected scopes. The existing Gemini API key is not a Google OAuth client and the owner's GHP is not a visitor connection. Only then enable the readiness flag and verify two real isolated accounts before advertising availability.
+
+The callback page has no third-party assets, removes code/state from the address bar, disallows framing and restricts scripts with CSP. Disable query-string logging on the edge and connector Worker. The initiating popup must remain available; if provider or native browser isolation removes `window.opener`, the page instructs the user to restart and never claims a connection. No tokens are posted between windows.
 
 ## Gemini consultation
 
 The owner requested a Gemini review. The existing Brain Gemini API returned HTTP 429. Gemini was then consulted through the cloud browser on October 17, 2026, and recommended retaining a shared adapter core, implementing Google services before GitHub project actions, and treating refresh/revoke and repository permissions as separate requirements. Its response is advice, not validation of the code or proof of vendor access. In particular, its broad statement about buyer APIs is qualified by eBay's official documentation: an Offer API exists but requires approval. Google verification requirements depend on the exact scopes and deployment.
 
 Browser review: https://gemini.google.com/app/3b608140698beb6d (unsigned-in conversation; may not remain accessible). Screenshot: `gemini-connector-review.jpg`.
+
+October 18 follow-up: automatic review rejected a project-specific security prompt. A general OAuth checklist was submitted instead, without project details. Gemini recommended concurrency checks, permission-limited reads and idempotent cleanup. Its token-family advice describes authorization-server behavior; Bubbles is a client and cannot control Google/GitHub token-family policies. We implemented client-side locking/version checks rather than claiming authority over provider-issued tokens. Review: https://gemini.google.com/app/86862eb7272bcbc6 ; screenshot `gemini-oauth-review-v2.jpg`.
 
 The existing `workers/infinity-brain-clock/github-credential.mjs` is hard-coded to `www-infinity4`. Keep that owner credential separate; never fall back to it for visitor jobs.
 

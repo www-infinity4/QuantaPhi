@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {pinnedPinkReview,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from '../workers/infinity-brain-clock/source-review.mjs';
+import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from '../workers/infinity-brain-clock/source-review.mjs';
 const sha='1'.repeat(40),head='2'.repeat(40);
 const repo='www-infinity4/QuantaPhi';
 const generated=(id)=>({id,agent:'greenbeans',repository:repo,title:'Repair source-routing',
@@ -81,4 +81,19 @@ test('read-only Pink verification moves ahead of bot-generated repair churn but 
  // A source review cannot evade the original policy when its merge receipt vanishes.
  ctx.color_jobs[0].status='blocked';
  assert.deepEqual(prioritizeReadOnlyPinkReviews(jobs).map(x=>x.job.id),['TASK-3','TASK-1','TASK-2']);
+});
+
+test('Pink review cannot race a technical repair that already started, committed or finished',()=>{
+ const ctx=makeContext(),review=pinnedPinkReview(ctx,ctx.color_jobs[1]);
+ assert.equal(pinkReviewHasActiveRepair(ctx,review),false,'blocked repair can be superseded only after verified source');
+ for(const status of ['working','committed_unverified','merged_verified','complete']){
+  const clone=structuredClone(ctx);clone.color_jobs[3].status=status;
+  assert.equal(pinkReviewHasActiveRepair(clone,review),true,status+' repair must not be superseded');
+ }
+ for(const status of ['blocked','queued','superseded']){
+  const clone=structuredClone(ctx);clone.color_jobs[2].status=status;
+  assert.equal(pinkReviewHasActiveRepair(clone,review),false);
+ }
+ assert.equal(pinkReviewHasActiveRepair(ctx,null),false);
+ assert.equal(pinkReviewHasActiveRepair({color_jobs:[]},review),false);
 });

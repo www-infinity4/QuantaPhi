@@ -27,7 +27,9 @@ const redUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new UR
 const alarmUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/alarm-retry.mjs',import.meta.url))).toString('base64');
 const runnerRequestSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-request.mjs',import.meta.url),'utf8')).replace('./alarm-retry.mjs',alarmUrl);
 const runnerRequestUrl='data:text/javascript;base64,'+Buffer.from(runnerRequestSource).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
+const colorCoreUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/color-core.mjs',import.meta.url))).toString('base64');
+const assignedJobScopeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/assigned-job-scope.mjs',import.meta.url))).toString('base64');
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./color-core.mjs",colorCoreUrl).replace("./assigned-job-scope.mjs",assignedJobScopeUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
 const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('owner wallet connection stores verified identity but never a device token and cannot switch recipients',async()=>{
  const memory=new Map(),token='sq_'+'a'.repeat(40);let userId='owner';
@@ -590,4 +592,102 @@ test('signed Pink review of merged source finishes without a new PR, payout, or 
   assert.equal(readback.coinsMinted,false);
   assert.equal(readback.testsPassed,true);
  }finally{globalThis.fetch=previousFetch;}
+});
+
+
+test('every Robot Brain color invokes the same real authenticated GPT model with its complete composite and no direct tools',async()=>{
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,
+  jobId:'TASK-COLOR',repository:'www-infinity4/QuantaPhi',job:{instructions:'Check my work'}};
+ const memory=new Map([['key',lease]]);
+ const observed=[];
+ const clock=new BrainClock({storage:{get:async key=>memory.get(key),put:async(key,value)=>memory.set(key,value)}},{
+  WRITER_AI:{run:async(model,input)=>{
+   observed.push({model,input});
+   return {response:JSON.stringify({finding:'Source review pending',nextAction:'Inspect pinned evidence',
+    blockers:[],toolRequests:[]})};
+  }}
+ });
+ const request=(color,extra={})=>new Request('https://clock/runner/color-think',{
+  method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',
+   key:'key',leaseId:'lease',color,task:'Inspect source carefully',evidence:{sourceSha:'a'.repeat(40)},...extra})
+ });
+ const expected={red:['red'],yellow:['yellow'],blue:['blue'],orange:['red','yellow'],
+  purple:['purple','blue','red'],green:['green','yellow','blue','pink','red','white'],
+  pink:['pink'],white:['white'],black:['black','pink','white']};
+ for(const [color,layers]of Object.entries(expected)){
+  const r=await clock.runner(request(color));
+  assert.equal(r.status,200);
+  const body=await r.json();
+  assert.equal(body.ok,true);
+  assert.equal(body.status,'model_inference_completed');
+  assert.equal(body.color,color);
+  assert.deepEqual(body.layers,layers);
+  assert.equal(body.model,'@cf/openai/gpt-oss-120b');
+  assert.equal(body.toolRequestsAreNotExecution,true);
+  assert.equal(body.authorizedOperationsPerformed,false);
+ }
+ assert.equal(observed.length,9,'every color made its own genuine model request');
+ for(const call of observed){
+  assert.equal(call.model,'@cf/openai/gpt-oss-120b');
+  assert.match(call.input.messages[0].content,/shared GPT reasoning core/);
+  assert.match(call.input.messages[0].content,/Do not execute tools/);
+  assert.match(call.input.messages[0].content,/Do not expose secrets/);
+ }
+ assert.equal(memory.has('engine-review:key'),false,'color advice cannot become an approval receipt');
+ await assert.rejects(clock.runner(request('ultraviolet')),/unknown_color_core/);
+ await assert.rejects(clock.runner(request('green',{task:'x'.repeat(3000)})),/color_task_invalid/);
+ assert.equal((await clock.runner(request('blue',{leaseId:'wrong'}))).status,409);
+ assert.equal(observed.length,9,'invalid or unauthenticated requests never reach GPT');
+});
+
+
+test('signed runner claim defers stale Pink verification when a linked Green repair is complete',async()=>{
+ const repo='www-infinity4/QuantaPhi';
+ const jobs=[
+  {id:'TASK-1',agent:'greenbeans',repository:repo,status:'merged_verified',
+   progress:{testsPassed:true,mergeSha:'a'.repeat(40),commitSha:'b'.repeat(40),
+    prUrl:'https://github.com/www-infinity4/QuantaPhi/pull/418'}},
+  {id:'TASK-2',agent:'pink-panther',repository:repo,status:'blocked',
+   dependencies:['TASK-1','TASK-3'],
+   instructions:'After TASK-1, independently verify the requested work: Fix Bubbles routing.'},
+  {id:'TASK-3',agent:'greenbeans',repository:repo,status:'complete',
+   title:'Repair source-routing',
+   instructions:'Diagnose and repair the authenticated source-routing failure preventing the existing owner job TASK-2.'}
+ ];
+ const context={color_jobs:jobs,technical_handoffs:[
+  {sourceJobId:'TASK-2',repairJobId:'TASK-3',category:'source-routing'}]};
+ let updates=0;
+ const ticket={id:'synthetic-owner-job',context_json:JSON.stringify(context),request:'Fix Bubbles routing'};
+ const db={prepare:()=>({bind(){return this},all:async()=>({results:[ticket]}),
+  run:async()=>{updates++;return{meta:{changes:1}}}})};
+ const data=new Map();
+ const clock=new BrainClock({storage:{get:async k=>data.get(k),put:async(k,v)=>data.set(k,v)}},{WORK_DB:db});
+ const result=await (await clock.runner(new Request('https://clock/runner/claim',{
+  method:'POST',body:JSON.stringify({runId:'567',runnerRepository:'www-infinity4/Moltnook'})
+ }))).json();
+ assert.equal(result.ok,true);
+ assert.equal(result.lease,null,'do not preclaim Pink while sibling Green repair already finished');
+ assert.equal(updates,0,'no D1 ticket change, no Pink completion, no lost completed Green repair');
+ assert.equal([...data.keys()].some(k=>k.startsWith('writer:')),false,'no empty lease issued');
+});
+
+
+test('GPT review stages evaluate one webhook job independently of another card job',async()=>{
+ const job={id:'TASK-2',title:'Webhooks',instructions:'Validate signed webhooks and deduplicate incoming events',acceptance:['webhook verification','deduplication setup'],ownerRequest:'Design physics trading cards for each buyer'};
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,jobId:'TASK-2',ticketId:'TICKET',repository:'www-infinity4/QuantaPhi',job};
+ const memory=new Map([['key',lease]]),calls=[];
+ const clock=new BrainClock({storage:{get:async x=>memory.get(x),put:async(x,v)=>memory.set(x,v)}},{WRITER_AI:{run:async(model,request)=>{calls.push(request.messages);return {response:JSON.stringify({summary:'Scoped webhooks',files:['x.js'],subtasks:[],blockers:[],approved:false,decision:'reject',reason:'reviewed'})};}}});
+ for(const name of ['plan','build','engine-review','arbitrate']){
+  const result=await clock.runner(new Request('https://clock/runner/'+name,{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{}})}));
+  assert.equal(result.status,200);
+ }
+ assert.equal(calls.length,4);
+ for(const pair of calls){
+  const payload=JSON.parse(pair[1].content);
+  assert.deepEqual(payload.job.acceptance,job.acceptance);
+  assert.equal(payload.job.ownerContextRelated,false);
+  assert.equal('ownerRequest' in payload.job,false);
+  assert.match(pair[0].content,/assigned job is the unit of work/);
+ }
+ assert.equal(memory.has('engine-review:key'),false);
 });

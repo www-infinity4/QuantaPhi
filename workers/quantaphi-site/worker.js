@@ -296,6 +296,10 @@ const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><m
 export default {
  async fetch(request, env) {
   const incoming = new URL(request.url);
+  if(incoming.pathname.startsWith('/api/bubbles/connections/')){
+   if(!env.BUBBLES_CONNECTIONS)return Response.json({ok:false,error:'connections_not_configured'},{status:503,headers:{'Cache-Control':'no-store'}});
+   return env.BUBBLES_CONNECTIONS.fetch(request);
+  }
   if(['/api/apk-releases','/downloads/bubbles.apk','/downloads/site.apk'].includes(incoming.pathname))return apkRoute(request,incoming);
   if(incoming.pathname.startsWith('/api/video/'))return videoAPI(request,env);
   if (/^(?:www\.)?quantaphi\.net$/.test(incoming.hostname) && incoming.pathname === '/__wallet-handoff') return new Response(LEGACY_HANDOFF_HTML, { headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'x-quantaphi-edge': EDGE_VERSION } });
