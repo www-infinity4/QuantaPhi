@@ -136,6 +136,29 @@ public final class BubblesService extends Service {
     }
     private FloatingOracleWindow oracleWindow;
     private static volatile BubblesService activeImageService;
+    // Shared offline model allows two INDEPENDENT recognizers without loading a
+    // second large model on a low-memory Android phone. The lease prevents
+    // use-after-close when Bubbles exits while phone playback is stopping.
+    private static final Object MODEL_LEASE_LOCK = new Object();
+    private static int playbackModelLeases = 0;
+    private static Model deferredVoiceModel = null;
+    static Model borrowVoiceModel() {
+        synchronized (MODEL_LEASE_LOCK) {
+            BubblesService owner = activeImageService;
+            if (owner == null || !owner.connected || !owner.captureRunning || owner.voiceModel == null) return null;
+            playbackModelLeases++;
+            return owner.voiceModel;
+        }
+    }
+    static void releaseVoiceModel(Model model) {
+        synchronized (MODEL_LEASE_LOCK) {
+            if (playbackModelLeases > 0) playbackModelLeases--;
+            if (playbackModelLeases == 0 && deferredVoiceModel == model) {
+                deferredVoiceModel = null;
+                model.close();
+            }
+        }
+    }
     private android.webkit.ValueCallback<android.net.Uri[]> imagePickerCallback;
     private final java.util.ArrayDeque<String> pendingWebsiteSpeech = new java.util.ArrayDeque<>();
     /** One website file chooser for images AND explicit history JSON imports.
@@ -1177,6 +1200,8 @@ public final class BubblesService extends Service {
     @Override public void onDestroy() {
         sessionRunning = false;
         screenSharing = false;
+        // Android playback capture cannot outlive this user's Bubbles foreground session.
+        stopService(new Intent(this, PhonePlaybackService.class));
         if (screenAudio.active()) {
             startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
         }
@@ -1187,7 +1212,13 @@ public final class BubblesService extends Service {
         if (playbackAwareness != null) { playbackAwareness.close(); playbackAwareness = null; }
         main.removeCallbacksAndMessages(null);
         stopRecognition();
-        if (voiceModel != null && audioThread == null) {voiceModel.close();voiceModel=null;}
+        if (voiceModel != null && audioThread == null) {
+            synchronized (MODEL_LEASE_LOCK) {
+                if (playbackModelLeases > 0) deferredVoiceModel = voiceModel;
+                else voiceModel.close();
+                voiceModel = null;
+            }
+        }
         if (tts != null) {tts.stop();tts.shutdown();tts=null;}
         if (oracleWindow != null) {oracleWindow.close();oracleWindow = null;}
         if (roomBubble != null && manager != null) {
