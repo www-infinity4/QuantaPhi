@@ -43,7 +43,12 @@ export async function handleConnections(request,env,resolveService) {
   if (request.method === 'GET' && url.pathname === PREFIX+'/health') return json(origin,{ok:true,service:'bubbles-connections',version:2});
   const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github)\/callback$/);
   if (callback && request.method === 'GET') return callbackPage(callback[1]);
-  if (!ORIGINS.has(origin)) return json(origin,{ok:false,error:'origin_not_allowed'},403);
+  // Browsers normally omit Origin for same-origin GET fetches. Accept only
+  // their Fetch Metadata-confirmed same-origin reads, never originless writes
+  // or cross-site reads. A bearer token is still required on protected routes.
+  const browserSameOriginRead = request.method === 'GET' && !request.headers.has('Origin')
+    && ORIGINS.has(url.origin) && request.headers.get('Sec-Fetch-Site') === 'same-origin';
+  if (!ORIGINS.has(origin) && !browserSameOriginRead) return json(origin,{ok:false,error:'origin_not_allowed'},403);
   if (request.method === 'OPTIONS') return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':origin,
     'Access-Control-Allow-Headers':'Authorization, Content-Type','Access-Control-Allow-Methods':'GET, POST, OPTIONS','Vary':'Origin'}});
   try {
