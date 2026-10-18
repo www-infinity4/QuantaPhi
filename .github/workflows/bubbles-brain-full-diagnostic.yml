@@ -76,6 +76,7 @@ jobs:
             test/brain-cloudflare-token-broker.test.mjs \
             test/brain-clock-stage.test.mjs \
             test/brain-clock-binding-parity.test.mjs \
+            test/brain-pink-source-review.test.mjs \
             test/brain-ticket-status.test.cjs \
             test/work-ticket-bubbles-timed-job-controls.test.cjs
 
