@@ -11,7 +11,7 @@ const GOOGLE_SCOPES = Object.freeze({
 async function jsonResponse(response, code) {
   if (!response.ok) throw Error(code + '_' + response.status);
   const value = await response.json();
-  if (value.error) {const safe=['incorrect_client_credentials','bad_verification_code','redirect_uri_mismatch','application_suspended','expired_token','unsupported_grant_type'].includes(value.error)?value.error:'rejected';throw Error(code+'_'+safe);}
+  if (value.error) throw Error(code + '_rejected');
   return value;
 }
 function tokenFields(value) {

@@ -1,6 +1,9 @@
 import {digest, randomToken} from './vault.mjs';
 import {PROVIDERS, authorizeConnection} from './authorization.mjs';
 
+async function completionStep(stage,operation){
+ try{return await operation();}catch(error){if(error&&typeof error==='object')error.connectionStage=stage;throw error;}
+}
 // Storage must implement Durable Object transactional get/put/delete. This
 // service is called only after a host authenticates its user and session.
 // No public fetch router is exported until that host integration is verified.
@@ -40,7 +43,7 @@ export class ConsentService {
     const prefix = await this.namespace(userId), sessionHash = await this.session(sessionId);
     if (typeof state !== 'string' || !/^[A-Za-z0-9_-]{43}$/.test(state) || typeof code !== 'string' || !code || code.length > 4096) throw Error('callback_invalid');
     const key = prefix + 'state:' + await digest(state);
-    const record = await this.storage.transaction(async tx => {
+    const record = await completionStep('state',()=>this.storage.transaction(async tx => {
       const encrypted = await tx.get(key);
       if (!encrypted) throw Error('state_invalid_or_used');
       const pending = await this.vault.open(encrypted, key);
@@ -48,22 +51,22 @@ export class ConsentService {
       if (pending.expiresAt <= this.now()) { await tx.delete(key); return null; }
       await tx.delete(key); // Atomic consume before any provider network call.
       return pending;
-    });
+    }));
     if (!record) throw Error('state_expired');
     const adapter = Object.hasOwn(this.adapters, provider) && this.adapters[provider];
     if (!adapter) throw Error('provider_not_configured');
-    const value = await adapter.exchange({code, verifier:record.verifier, actions:record.actions});
+    const value = await completionStep('exchange',()=>adapter.exchange({code, verifier:record.verifier, actions:record.actions}));
     if (!value.subject || !value.accessToken || !Number.isFinite(value.expiresIn) || value.expiresIn <= 0 || !Array.isArray(value.grantedActions)) throw Error('provider_response_invalid');
     const id = await digest(provider + ':' + value.subject), connectionKey = prefix + 'connection:' + id;
     const credentialKey = prefix + 'credential:' + id;
     const connection = {id, userId, provider, providerSubject:value.subject, label:String(value.label || value.subject),
       credentialRef:credentialKey, status:'connected', expiresAt:this.now()+value.expiresIn*1000,
       grantedActions:value.grantedActions.filter(a => record.actions.includes(a)), revision:randomToken(), updatedAt:this.now()};
-    const ciphertext = await this.vault.seal({accessToken:value.accessToken, refreshToken:value.refreshToken || null}, credentialKey);
-    await this.storage.transaction(async tx => {
+    const ciphertext = await completionStep('seal',()=>this.vault.seal({accessToken:value.accessToken, refreshToken:value.refreshToken || null}, credentialKey));
+    await completionStep('store',()=>this.storage.transaction(async tx => {
       if ((await tx.get(prefix + 'generation:' + provider) || 0) !== record.generation) throw Error('connection_cancelled');
       await tx.put(connectionKey, connection); await tx.put(credentialKey, ciphertext);
-    });
+    }));
     return publicConnection(connection);
   }
   async disconnect({userId, id}) {
