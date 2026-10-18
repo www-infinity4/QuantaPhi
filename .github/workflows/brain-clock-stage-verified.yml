@@ -1,6 +1,12 @@
 name: Robot Brain safe staging (not production deployment)
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'workers/infinity-brain-clock/**'
+      - '.github/workflows/brain-clock-stage-verified.yml'
+      - 'scripts/verify-brain-stage.mjs'
   workflow_dispatch:
     inputs:
       operation:
@@ -36,6 +42,9 @@ jobs:
         run: |
           node --check workers/infinity-brain-clock/worker.js
           node --check workers/infinity-brain-clock/ticket-selector.mjs
+          node --check workers/infinity-brain-clock/deferred-recovery.mjs
+          node --check scripts/verify-brain-stage.mjs
+          node --test test/brain-clock-stage.test.mjs
           node --test \
             test/brain-ticket-selector.test.mjs \
             test/brain-deferred-recovery.test.mjs \
@@ -48,51 +57,40 @@ jobs:
           npx --yes wrangler@4 deploy \
             --config workers/infinity-brain-clock/wrangler.toml \
             --dry-run --outdir /tmp/brain-clock-staged-build
-      - name: Check existing production binding names before optional staging
-        if: ${{ inputs.operation == 'stage_version' }}
-        env:
-          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CF_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          if [[ -z "$CF_TOKEN" || -z "$CF_ACCOUNT_ID" ]]; then
-            echo "::error::Cloudflare API token or account ID is not configured; no upload attempted."
-            exit 1
-          fi
-          curl --fail --silent --show-error --retry 1 \
-            --header "Authorization: Bearer $CF_TOKEN" \
-            "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/workers/scripts/infinity-brain-clock/settings" \
-            > /tmp/brain-clock-production-settings.json
-          node --input-type=module <<'NODE'
-          import {readFileSync} from 'node:fs';
-          const payload=JSON.parse(readFileSync('/tmp/brain-clock-production-settings.json','utf8'));
-          if(payload.success!==true)throw Error('production_brain_settings_unavailable');
-          const found=new Map((payload.result?.bindings||[]).map(x=>[x.name,x.type]));
-          const expected={
-            WORK_DB:'d1',CLOCK:'durable_object_namespace',
-            BOT_WALLET:'service',MODELS:'service',
-            WRITER_AI:'ai',BOT_WORK_SECRET:'secret_text',
-            WRITER_OWNER_HASH:'plain_text'
-          };
-          for(const [name,type] of Object.entries(expected))
-            if(found.get(name)!==type)throw Error('production_binding_missing_or_wrong_type: '+name);
-          console.log('Production Brain binding names/types verified. No secrets or owner identifiers printed.');
-          NODE
-      - name: Upload a NEW, undeployed version (zero percent traffic)
-        if: ${{ inputs.operation == 'stage_version' }}
+      - name: Verify original live version, binding identities and owner safety
+        if: ${{ github.event_name == 'push' || inputs.operation == 'stage_version' }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: node scripts/verify-brain-stage.mjs before
+      - name: Upload immutable version without deployment (0% traffic)
+        if: ${{ github.event_name == 'push' || inputs.operation == 'stage_version' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           npx --yes wrangler@4 versions upload \
             --config workers/infinity-brain-clock/wrangler.toml \
-            --message "Verified owner-priority ticket isolation (#547), staged for approval"
+            --message "Verified deferred recovery and owner priority, commit $GITHUB_SHA"
+      - name: Prove staged version has the same bindings and live traffic is unchanged
+        if: ${{ github.event_name == 'push' || inputs.operation == 'stage_version' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: node scripts/verify-brain-stage.mjs after
+      - name: Upload signed source version verification receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: brain-clock-staging-verification
+          path: repository-receipts/brain-clock-staged-version.json
+          if-no-files-found: warn
+          retention-days: 14
       - name: Publish truthful staging result
         if: always()
         shell: bash
         env:
-          OPERATION: ${{ inputs.operation }}
+          OPERATION: ${{ github.event_name == 'push' && 'stage_version' || inputs.operation }}
         run: |
           {
             echo '## Robot Brain release gate'
