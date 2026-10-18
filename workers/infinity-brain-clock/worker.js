@@ -1409,7 +1409,7 @@ export default{
        apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1'
       })}else decision={status:'needs_review',category:classification.category,placement:classification.placement,
        summary:'Queued for owner/GPT assessment due to bounded scan budget',risk:'high'};
-      const contentHash=await digest(found.suggestion.trim().replace(/\\s+/g,' ').toLowerCase());
+      const contentHash=await digest(found.suggestion.trim().replace(/\s+/g,' ').toLowerCase());
       const existing=await env.WORK_DB.prepare('SELECT id FROM community_upgrade_proposals WHERE content_hash=?')
        .bind(contentHash).first();
       if(existing)proposalId=existing.id;
