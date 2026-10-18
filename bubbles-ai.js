@@ -776,7 +776,7 @@ chatFitStyle.textContent=`
  max-height:var(--ba-visible-height,100dvh)!important;min-height:0!important;
  padding:0!important;gap:0!important;border-radius:0!important;overflow:hidden!important}
  body .ba-panel .ba-thread{flex:1 1 0!important;min-height:0!important;overflow-y:auto!important}
- body .ba-panel .ba-composer{flex:0 1 auto!important;min-height:0!important;max-height:70%!important;overflow-y:auto!important;padding:6px 8px max(6px,env(safe-area-inset-bottom))!important;gap:5px!important}
+ body .ba-panel .ba-composer{flex:0 1 auto!important;min-height:0!important;max-height:calc(100% - 48px)!important;overflow-y:auto!important;padding:6px 8px max(6px,env(safe-area-inset-bottom))!important;gap:5px!important}
  body .ba-panel .ba-composer textarea:not(.ba-connector-code-output textarea){height:52px;min-height:44px;max-height:72px}
  body .ba-panel .ba-header{min-height:48px;padding:4px 10px}
 }
