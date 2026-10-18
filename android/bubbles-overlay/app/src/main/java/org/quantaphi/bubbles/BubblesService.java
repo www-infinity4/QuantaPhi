@@ -569,7 +569,9 @@ public final class BubblesService extends Service {
                                 // Vosk has already finalized the command at the speech pause.
                                 VoiceCaptureCommands.Command command = VoiceCaptureCommands.parse(transcript);
                                 if (command != null && (command.action.equals("capture_stop")
-                                        || command.action.equals("sound_stop") || command.action.equals("screen_stop"))) {
+                                        || command.action.equals("sound_stop") || command.action.equals("screen_stop")
+                                        || command.action.equals("screen_pause")
+                                        || command.action.equals("screen_resume"))) {
                                     main.removeCallbacks(deliverVoiceTurn);
                                     turnBuffer.clear();
                                     heard(transcript);
