@@ -1694,7 +1694,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let savedWeatherTown='';
  const explicitWeatherTown=/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b.{0,85}\b(?:in|for|at|near)\s+[a-z0-9]/i.test(lookupRequest);
  try{if(liveLookup&&!explicitWeatherTown&&/\b(?:weather|forecast|temperature|rain|snow)\b/i.test(lookupRequest))savedWeatherTown=localStorage.getItem('bubbles-weather-town')||'';}catch{}
- const lookupPayload=()=>({request:lookupRequest,input:prompt,location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
+ // Opt in to bounded, read-only MCP model tool selection. The MCP bearer key is never present in this WebView.
+ const lookupPayload=()=>({request:lookupRequest,input:prompt,mcp:true,location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
