@@ -195,3 +195,17 @@ test('explicit resource selection requires provider permission before saving a g
   const result=await executeGoogleRead(f.service,{userId:'alice',id:account.id,operation:'sheets.values',args:{spreadsheetId:'sheet1',range:'A1'}},async()=>Response.json({values:[['hello']]}));
   assert.equal(result.data.values[0][0],'hello');
 });
+
+
+test('default provider fetch keeps the global receiver required by Web APIs',async()=>{
+ const original=globalThis.fetch;let calls=0;
+ globalThis.fetch=async function(){
+  assert.equal(this,globalThis,'fetch must retain its global receiver');
+  calls++;return Response.json(calls===1?{access_token:'test-access',token_type:'bearer',expires_in:28800}:{id:123,login:'test-user'});
+ };
+ try{
+  const adapter=githubAdapter({clientId:'test-client',clientSecret:'test-secret',redirectUri:'https://example.test/callback'});
+  const result=await adapter.exchange({code:'test-code',verifier:'test-verifier'});
+  assert.equal(result.subject,'123');assert.equal(calls,2);
+ }finally{globalThis.fetch=original;}
+});

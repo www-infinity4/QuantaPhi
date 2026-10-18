@@ -25,7 +25,7 @@ function callback(config) {
   if (!config.clientId || !config.clientSecret) throw Error('provider_not_configured');
   return url.href;
 }
-export function googleAdapter(config, request = fetch) {
+export function googleAdapter(config, request = (...args)=>globalThis.fetch(...args)) {
   const redirectUri = callback(config);
   return {
     id:'google',
@@ -73,7 +73,7 @@ export function googleAdapter(config, request = fetch) {
   };
 }
 
-export function githubAdapter(config, request = fetch) {
+export function githubAdapter(config, request = (...args)=>globalThis.fetch(...args)) {
   const redirectUri = callback(config);
   return {
     id:'github',
