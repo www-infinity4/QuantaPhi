@@ -30,6 +30,14 @@ Examples:
 | `#bubbles add my AI to Fred's Media Star card` | Reroute; third-party card insertion not authorized | AI Sources / Explore |
 | `#bubbles add Bitcoin advertising near Fred's Media Star` | Review disclosed, contextual advertising | Adjacent sponsor spot, not inside Fred's editorial card |
 
+## Owner-triggered public `#bubbles` discovery
+
+An authorized QuantaPhi owner can select **Scan public #bubbles on X** in the existing Bubbles Brain notifications. This uses official `GET /2/tweets/search/recent` (only if the X API plan enables it) to inspect a bounded recent page of up to 25 public posts. Posts are deduplicated in `community_x_sources`. Only a maximum of three new relevant posts per scan call consume GPT-review attempts; subsequent posts remain pending review. The result records counts and provenance in D1, **not new work orders or trusted instructions**. Ad placement candidates and UI reports go into the community review queue, where the owner can inspect and decide whether to promote a draft.
+
+This does not claim to find every X post, older content, private posts, Facebook comments, or all websites. More providers require their own authorized connectors; quotas, spend controls and live test receipts are mandatory before unattended scheduling.
+
+Personal `#albert` posts are also assessed by GPT when configured, with a cap of three new GPT reviews per scan. Remaining posts are stored for later review. No reader sees another person's wallet-scoped inbox, and **the model is never a substitute for site-specific repository authority**.
+
 ## GPT and inspection
 
 The server only calls the official OpenAI Responses API when a server-side `OPENAI_API_KEY` is configured. Default model is `gpt-5.1` with `reasoning.effort=high`; a different compatible model may be selected by `COMMUNITY_GPT_MODEL`. Budget and rate limits are required. Missing provider access means `needs_review`, never a fabricated AI verdict. Model assessment can improve placement, but may not override the deterministic card-owner / sensitive-access restrictions. Every code change still needs verified repository authorization and tests.
@@ -38,7 +46,7 @@ The server only calls the official OpenAI Responses API when a server-side `OPEN
 
 1. Review and apply `schema-bubble-personal-social.sql` to the **existing** authorized `WORK_DB` after backup. This is additive; do not reset any wallet, ledger, or previous tickets.
 2. Preserve and verify existing `BOT_WALLET` service binding for validating signed-in users through `/v1/wallet/state`.
-3. Configure `X_API_BEARER_TOKEN` as a Cloudflare Worker secret. The X provider plan must permit `GET /2/users/by/username/{username}` and `GET /2/users/{id}/tweets`. Server reads are bounded and fail closed when unavailable. No need to put API keys in browsers or GitHub.
+3. Configure `X_API_BEARER_TOKEN` as a Cloudflare Worker secret. The X provider plan must permit `GET /2/users/by/username/{username}`, `GET /2/users/{id}/tweets`, and separately `GET /2/tweets/search/recent` for the public community feed. Server reads are bounded and fail closed when unavailable. No need to put API keys in browsers or GitHub.
 4. Keep `COMMUNITY_SUBMISSION_SALT`, `OPENAI_API_KEY`, and existing `WORK_DB`, `WRITER_OWNER_HASH`, `CLOCK`, `MODELS` unchanged and protected; verify all bindings before any deploy.
 5. Run `node --test test/bubbles-personal-social.test.mjs test/bubbles-community-upgrades.test.mjs`, plus existing Brain owner tests and device-width UI checks.
 6. Confirm two different wallet users cannot claim the same verified X ID, cannot see each other's inbox, and cannot dispatch to a site without permission. Review actual D1 write receipts and live service logs.
