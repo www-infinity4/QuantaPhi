@@ -18,7 +18,8 @@ final class RoomNotes {
     }
 
     static void setEnabled(Context context, boolean on) {
-        BrainNotes.prefs(context).edit().putBoolean(ENABLED, on).apply();
+        BrainNotes.prefs(context).edit().putBoolean(ENABLED, on)
+            .putBoolean(RoomContextFusion.ENABLED, on && BrainNotes.prefs(context).getBoolean(RoomContextFusion.ENABLED, false)).apply();
     }
 
     static synchronized void add(Context context, String transcript) {
@@ -54,6 +55,23 @@ final class RoomNotes {
             }
         } catch (Exception ignored) { return "Room notes cannot be read."; }
         return out.length() == 0 ? "No room transcripts saved." : out.toString();
+    }
+
+    /** Only fresh entries are candidates for the optional third context lane. */
+    static synchronized java.util.List<String> freshCandidateTexts(Context context, long nowMs, long maxAgeMs) {
+        java.util.ArrayList<String> fresh = new java.util.ArrayList<>();
+        try {
+            JSONArray arr = new JSONArray(BrainNotes.prefs(context).getString(LOG, "[]"));
+            for (int i = 0; i < arr.length(); i++) {
+                JSONObject item = arr.optJSONObject(i);
+                if (item == null) continue;
+                long age = nowMs - item.optLong("at", 0L);
+                if (age < 0 || age > maxAgeMs) continue;
+                String words = item.optString("text", "").trim();
+                if (!words.isEmpty()) fresh.add(words);
+            }
+        } catch (Exception ignored) { /* Corrupt local notes grant no context. */ }
+        return fresh;
     }
 
     static void clear(Context context) {
