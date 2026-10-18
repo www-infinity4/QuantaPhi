@@ -165,6 +165,8 @@ test('explicit screen watch stays on-device, expires and never creates a stream 
   assert.match(native,/ACTION_STOP_SCREEN_WATCH/);
   assert.match(native,/BrainLearningService\.currentVisibleText\(\)/);
   assert.match(native,/sendScreenEvidence\(question, evidence, typed\)/);
+  assert.match(native,/if \(ScreenAwareness\.refersToScreen\(addressed\)\)/);
+  assert.doesNotMatch(native,/if \(screenSharing \|\| ScreenAwareness\.refersToScreen\(addressed\)\)/);
   assert.match(watch,/MAX_DURATION_MS = 300_000L/);
   assert.match(watch,/SAMPLE_INTERVAL_MS = 2_000L/);
   assert.doesNotMatch(watch,/Socket|RTSP|MediaProjection|HttpURLConnection|FileOutputStream/);
