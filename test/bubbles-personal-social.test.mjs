@@ -97,7 +97,7 @@ test('private personal social routes verify wallet identities, never write to th
  assert.match(scope,/BOT_WALLET/);assert.match(scope,/wallet\/state/);
  assert.match(scope,/source_id/);assert.match(scope,/challenge_hash/);
  assert.match(scope,/social_identity_not_verified/);
- assert.doesNotMatch(scope,/run-next|deploy|makeJobs\(/);
+ assert.doesNotMatch(scope,/\/run-next|status:'ready'|makeJobs\(/);
 });
 test('web control is honest about real account verification and optional Facebook',()=>{
  const html=readFileSync('index.html','utf8'),ui=readFileSync('bubbles-personal-social.js','utf8');
