@@ -6,6 +6,7 @@ import {checkOwnerRunnerRequest,runnerDispatchReceipt} from './runner-request.mj
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
+import {planCloudflareToken,confirmCloudflareToken} from './cloudflare-token-broker.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
@@ -559,6 +560,14 @@ export class BrainClock extends DurableObject{
    return Response.json(result.body,{status:result.status});
   }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
+  if(new URL(request.url).pathname==='/owner/cloudflare-token-plan')
+   return Response.json(await planCloudflareToken(this.ctx.storage,await request.json(),this.env));
+  if(new URL(request.url).pathname==='/owner/cloudflare-token-confirm'){
+   const result=await confirmCloudflareToken(this.ctx.storage,await request.json(),this.env);
+   if(result.ok)await this.emit('purple-pearl','bubbles','cloudflare credential approved',
+    'Owner-approved '+result.capability+' token provisioned and stored encrypted on Brain. No secret value sent to chat.');
+   return Response.json(result,{status:result.httpStatus||200});
+  }
   if(new URL(request.url).pathname==='/owner/red-sync')return Response.json(await redExchange(this.ctx.storage,await request.json()));
   if(new URL(request.url).pathname==='/owner/session-create'){
    const body=await request.json(),recipient=await this.ctx.storage.get('bot-work-recipient');
@@ -1042,6 +1051,22 @@ export default{
     const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/github',{method:'POST',body:raw});
     return output(request,await response.json(),response.status);
    }catch{return output(request,{ok:false,error:'direct_github_unavailable'},503)}
+  }
+  if(['/work/cloudflare/token-plan','/work/cloudflare/token-confirm'].includes(path)&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   const raw=await request.text();
+   if(raw.length>3000)return output(request,{ok:false,error:'request_too_large'},413);
+   try{
+    const body=JSON.parse(raw||'{}');
+    const subpath=path.endsWith('/token-plan')?'/owner/cloudflare-token-plan':'/owner/cloudflare-token-confirm';
+    const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal'+subpath,{
+     method:'POST',body:JSON.stringify(body)});
+    const result=await response.json();
+    return output(request,result,response.status);
+   }catch{return output(request,{ok:false,error:'cloudflare_token_broker_unavailable'},503);}
   }
   // Read-only scientific tool. Owner sessions or authenticated repository runners
   // may call this directly; no job is queued and no coins are minted.
