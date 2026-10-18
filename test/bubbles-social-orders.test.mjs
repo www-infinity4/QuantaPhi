@@ -63,3 +63,11 @@ test('new social endpoint is behind owner token and only writes review drafts',(
   assert.match(segment,/runnerStarted:false/);
   assert.doesNotMatch(segment,/\/run-next|status:'ready'/);
 });
+
+test('Bubbles UI exposes authenticated owner scan, not an auto-run button',()=>{
+ const ui=readFileSync('bubbles-ai.js','utf8');
+ assert.match(ui,/Scan #bubbles on X/);
+ assert.match(ui,/verifiedOwnerHeaders\(\)/);
+ assert.match(ui,/\/work\/social\/bubbles\/scan/);
+ assert.match(ui,/new draft tickets/);
+});
