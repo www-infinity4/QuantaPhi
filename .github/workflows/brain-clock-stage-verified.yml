@@ -44,7 +44,8 @@ jobs:
           node --check workers/infinity-brain-clock/ticket-selector.mjs
           node --check workers/infinity-brain-clock/deferred-recovery.mjs
           node --check scripts/verify-brain-stage.mjs
-          node --test test/brain-clock-stage.test.mjs
+          node --test test/brain-clock-stage.test.mjs \
+            test/brain-clock-binding-parity.test.mjs
           node --test \
             test/brain-ticket-selector.test.mjs \
             test/brain-deferred-recovery.test.mjs \
