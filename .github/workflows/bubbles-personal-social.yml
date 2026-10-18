@@ -1,0 +1,35 @@
+name: Bubbles personal hashtags and intelligent community placement
+on:
+  pull_request:
+    paths:
+      - 'workers/infinity-brain-clock/personal-social-tags.mjs'
+      - 'workers/infinity-brain-clock/community-upgrades.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
+      - 'workers/infinity-brain-clock/schema-bubble-personal-social.sql'
+      - 'bubbles-personal-social.js'
+      - 'bubbles-personal-social.css'
+      - 'bubbles-ai.js'
+      - 'index.html'
+      - 'test/bubbles-personal-social.test.mjs'
+      - 'test/brain-clock.test.mjs'
+      - '.github/workflows/bubbles-personal-social.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/infinity-brain-clock/personal-social-tags.mjs'
+      - 'workers/infinity-brain-clock/community-upgrades.mjs'
+      - 'test/bubbles-personal-social.test.mjs'
+permissions:
+  contents: read
+jobs:
+  rules-and-authority:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test test/bubbles-personal-social.test.mjs test/bubbles-community-upgrades.test.mjs
+      - run: node --check workers/infinity-brain-clock/worker.js
+      - run: node --check bubbles-personal-social.js
+      - run: node --check bubbles-ai.js
