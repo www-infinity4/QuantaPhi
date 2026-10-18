@@ -1770,7 +1770,14 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     if(nativeSpeechPending)nativeSpeechReply=answer;
     nativeSpeechPending=false;
    }else if(config.voice)speakText(answer);
- }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message}
+ }catch(error){
+  const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));
+  display(message,'ai');status.textContent=message;
+  // Every accepted spoken question gets either an answer or an audible failure.
+  // No invented answer or execution receipt is substituted after a timeout.
+  if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false;}
+  else if(fromVoice&&!nativeOverlay)speakText(message);
+ }
  finally{if(nativeOverlay&&nativeSpeechPending){
      nativeSpeechReply=workEvidence||'The assistant could not complete that request.';
      nativeSpeechPending=false;
