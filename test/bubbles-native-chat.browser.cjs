@@ -73,7 +73,7 @@ test('Android chat: reachable conversation and compact composer, visible pairing
   m=await metrics();assert.ok(m.height>0);assert.ok(m.composerBottom<=m.viewport+1,JSON.stringify(m));
   await page.getByText('Options',{exact:true}).click();
   m=await metrics();assert.ok(m.height>=64);assert.ok(m.scrollables.includes('ba-thread'));
-  assert.ok(m.scrollables.every(name=>['ba-thread','ba-composer'].includes(name)));
+  assert.ok(m.scrollables.every(name=>['ba-thread','ba-composer'].includes(name)),JSON.stringify(m));
   await send.scrollIntoViewIfNeeded();assert.equal(await send.isVisible(),true);
   assert.ok((await send.boundingBox()).y+(await send.boundingBox()).height<=m.viewport+1);
   await page.screenshot({path:'/tmp/bubbles-native-chat20.png'});
