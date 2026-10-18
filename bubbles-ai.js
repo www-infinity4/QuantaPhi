@@ -1430,13 +1430,13 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   .replace(/^please\s+/,'');
  const nativeCaptureTarget=/\b(?:screen(?:\s+recorder|\s+recording|\s+capture|\s+video)?|screenshots?|screen\s*shot)\b/i.test(nativeDirective)
   || /^(?:record|record (?:sound|audio|my voice)|start (?:recording|sound recording|audio recording)|stop (?:recording|audio|sound|microphone)|save (?:recording|audio|sound)|(?:turn|switch) (?:on|off) (?:the |my )?(?:voice|audio|sound|microphone) recorder)$/i.test(nativeDirective)
+  || /^(?:open|launch|edit|trim|cut|extract|separate|get|remove)\b.*\b(?:cap\s*cut|video|clip|recording|audio|sound)\b/i.test(nativeDirective)
   || (nativeRecordingActive&&/^(?:stop|end|finish|save)(?: now| it| that| recording| the recording)?$/i.test(nativeDirective));
- const nativeCaptureVerb=/^(?:record|film|start|begin|turn on|switch on|enable|activate|open|launch|use|run|make|capture|take|grab|save|stop|end|finish|cancel|turn off|switch off|screen record)\b/i.test(nativeDirective);
+ const nativeCaptureVerb=/^(?:record|film|start|begin|turn on|switch on|enable|activate|open|launch|edit|trim|cut|extract|separate|remove|get|use|run|make|capture|take|grab|save|stop|end|finish|cancel|turn off|switch off|screen record)\b/i.test(nativeDirective);
  if(nativeOverlay&&!fromVoice&&nativeCaptureTarget&&nativeCaptureVerb){
   const stopping=/^(?:stop|end|finish|cancel|turn off|switch off|save)\b/i.test(nativeDirective);
-  const response=stopping
-   ?'Stopping.'
-   :'Starting.';
+  const editing=/^(?:open|launch|edit|trim|cut|extract|separate|remove|get)\b/.test(nativeDirective);
+  const response=editing?'Opening editor.':stopping?'Stopping.':'Starting.';
   if(nativeCaptureRequests.length>=24){
     status.textContent='Android has 24 unprocessed capture commands. Check the Bubbles connection.';
     nativeSpeechPending=false;return;
@@ -1450,7 +1450,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const local='Available Bubbles tools: in-chat Card Catalog including Media Star and Infinity Radio with card controls and diagnostics, Oracle conversation, live Infinity Phi web search, town-level weather, Google-engine lookup when available, news research, resonance calculator, personal notes, saved Bubbles memory and user-approved story suggestions.';
   const owner=embedded?'This embedded visitor assistant cannot control the QuantaPhi Robot Brain.':
    'With verified owner access I can call direct GitHub repository tools, submit Robot Brain jobs, and read actual run receipts. Bubbles Coder provides a temporary Linux workspace with Python, Bash, Node, Git and GitHub CLI. Say run Python, run shell, use GitHub CLI, or check coder sandbox results. This is a remote runtime, not an installed Termux app.';
-  const android=nativeOverlay?'The Android app has a native screen-and-microphone MP4 recorder with stop/save and clip editing, plus sound-only recording. Say record screen, stop recording, or recorder status. Actual availability depends on the installed APK and Android permissions. Accessibility provides visible screen text.':
+  const android=nativeOverlay?'The Android app starts installed DU Recorder for video, keeps separate sound-only capture, and opens owner-selected clips in CapCut to edit or extract audio. Say record, stop, or open CapCut. Android permissions remain under the owner’s control.':
    'Full Android screenshot and microphone controls only work in the separately installed Bubbles APK with Android permissions.';
   let live='';
   if(!embedded){
