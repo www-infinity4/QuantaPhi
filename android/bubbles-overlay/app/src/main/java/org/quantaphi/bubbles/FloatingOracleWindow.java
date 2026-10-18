@@ -8,6 +8,10 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceError;
 import android.webkit.WebSettings;
 import android.webkit.WebChromeClient;
+import android.webkit.PermissionRequest;
+import android.app.AlertDialog;
+import android.content.pm.PackageManager;
+import android.Manifest;
 import org.json.JSONTokener;
 import org.json.JSONObject;
 import android.content.Intent;
@@ -45,6 +49,10 @@ final class FloatingOracleWindow {
     private LinearLayout root;
     private TextView status;
     private Button retryButton;
+    private Button liveBack;
+    private boolean livePage;
+    private PermissionRequest livePermission;
+    private AlertDialog livePermissionDialog;
     private WebView website;
     private boolean websiteReady = false;
     private boolean robotOwnerConnected = false;
@@ -75,7 +83,13 @@ final class FloatingOracleWindow {
     private final Runnable update = new Runnable() {
         @Override public void run() {
             if (root == null) return;
-            if (websiteReady) {
+            if (livePage && trustedLive(website)) {
+                final int generation = loadGeneration;
+                website.evaluateJavascript("Boolean(window.BubblesLiveVoice && window.BubblesLiveVoice.inCall())", result -> {
+                    if (generation == loadGeneration && livePage && trustedLive(website)
+                            && "false".equals(result)) service.releaseLiveMicrophone();
+                });
+            } else if (websiteReady) {
                 // A WebView navigation can lose an evaluateJavascript callback.
                 // Retry the queued turn instead of permanently blocking Bubbles.
                 long now = android.os.SystemClock.elapsedRealtime();
@@ -139,6 +153,15 @@ final class FloatingOracleWindow {
         title.setSingleLine(true);
         title.setTypeface(null, Typeface.BOLD);
         header.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
+        liveBack = button("Chat", false);
+        liveBack.setMinHeight(dp(44));
+        liveBack.setContentDescription("End live call and return to Bubbles chat");
+        liveBack.setVisibility(View.GONE);
+        liveBack.setOnClickListener(v -> {
+            stopLiveCall();
+            if (website != null) website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+        });
+        header.addView(liveBack);
         Button close = button("✕", false);
         close.setContentDescription("Close floating Oracle conversation");
         close.setOnClickListener(v -> hide());
@@ -206,6 +229,41 @@ final class FloatingOracleWindow {
             settings.setJavaScriptCanOpenWindowsAutomatically(false);
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
             website.setWebChromeClient(new WebChromeClient() {
+                @Override public void onPermissionRequest(PermissionRequest request) {
+                    if (!allowLiveMicrophone(request)) { request.deny(); return; }
+                    denyLivePermission();
+                    livePermission = request;
+                    try {
+                        livePermissionDialog = new AlertDialog.Builder(service,
+                                android.R.style.Theme_Material_Light_Dialog_Alert)
+                            .setTitle("GPT-Live microphone")
+                            .setMessage("Use the microphone for this live call? Ordinary Bubbles listening will pause. Existing audio and screen recordings must be stopped first.")
+                            .setNegativeButton("Cancel", (dialog, which) -> denyLivePermission())
+                            .setPositiveButton("Use microphone", (dialog, which) -> {
+                                if (livePermission != request) return;
+                                if (!allowLiveMicrophone(request) || !service.prepareLiveMicrophone()) {
+                                    denyLivePermission();
+                                    android.widget.Toast.makeText(service,
+                                        "Stop active recordings before starting a live call", android.widget.Toast.LENGTH_LONG).show();
+                                    return;
+                                }
+                                livePermission = null;
+                                livePermissionDialog = null;
+                                try { request.grant(new String[]{PermissionRequest.RESOURCE_AUDIO_CAPTURE}); }
+                                catch (RuntimeException error) { service.releaseLiveMicrophone(); request.deny(); }
+                            }).create();
+                        livePermissionDialog.setOnCancelListener(dialog -> denyLivePermission());
+                        livePermissionDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY);
+                        livePermissionDialog.show();
+                    } catch (RuntimeException error) { denyLivePermission(); }
+                }
+                @Override public void onPermissionRequestCanceled(PermissionRequest request) {
+                    if (livePermission == request) {
+                        livePermission = null;
+                        if (livePermissionDialog != null) livePermissionDialog.dismiss();
+                        livePermissionDialog = null;
+                    }
+                }
                 // Respect the WEBSITE file input's accept type. The old
                 // image-only override prevented selecting ChatGPT/Gemini JSON.
                 @Override public boolean onShowFileChooser(WebView webView,
@@ -235,6 +293,10 @@ final class FloatingOracleWindow {
                     return true;
                 }
                 @Override public void onPageStarted(WebView view, String url, android.graphics.Bitmap favicon) {
+                    denyLivePermission();
+                    service.releaseLiveMicrophone();
+                    livePage = false;
+                    if (liveBack != null) liveBack.setVisibility(View.GONE);
                     loadGeneration++;
                     dispatchInFlight = false;
                     typedDispatchInFlight = false;
@@ -242,6 +304,15 @@ final class FloatingOracleWindow {
                 }
                 @Override public void onPageFinished(WebView view, String url) {
                     Uri location = Uri.parse(url);
+                    if (trustedLive(view)) {
+                        livePage = true;
+                        websiteReady = false;
+                        view.setVisibility(View.VISIBLE);
+                        status.setVisibility(View.GONE);
+                        retryButton.setVisibility(View.GONE);
+                        liveBack.setVisibility(View.VISIBLE);
+                        return;
+                    }
                     if (!"https".equals(location.getScheme()) || !SITE_HOST.equals(location.getHost())
                             || !"/bubbles.html".equals(location.getPath())) {
                         showWebsite(false);
@@ -261,6 +332,9 @@ final class FloatingOracleWindow {
 
                 @Override public boolean onRenderProcessGone(WebView view,
                         android.webkit.RenderProcessGoneDetail detail) {
+                    denyLivePermission();
+                    service.releaseLiveMicrophone();
+                    livePage = false;
                     // Android may terminate the shared WebView renderer while the
                     // foreground microphone/orb are healthy. This callback MUST
                     // consume the crash or Android terminates Bubbles entirely.
@@ -296,6 +370,42 @@ final class FloatingOracleWindow {
         }
     }
 
+    private boolean trustedLive(WebView view) {
+        return view != null && view == website && LiveMicrophonePolicy.allows(
+            "https://quantaphi.org", String.valueOf(view.getUrl()),
+            new String[]{PermissionRequest.RESOURCE_AUDIO_CAPTURE}, true, true);
+    }
+    private boolean allowLiveMicrophone(PermissionRequest request) {
+        return root != null && website != null && LiveMicrophonePolicy.allows(
+            String.valueOf(request.getOrigin()), String.valueOf(website.getUrl()), request.getResources(),
+            root.isShown() && livePage,
+            service.checkSelfPermission(Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED);
+    }
+    private void denyLivePermission() {
+        PermissionRequest request = livePermission;
+        livePermission = null;
+        if (livePermissionDialog != null) livePermissionDialog.dismiss();
+        livePermissionDialog = null;
+        if (request != null) request.deny();
+    }
+    void stopLiveCall() {
+        denyLivePermission();
+        if (trustedLive(website)) {
+            final WebView view = website;
+            final int generation = loadGeneration;
+            try {
+                view.evaluateJavascript("Boolean(window.BubblesLiveVoice && (window.BubblesLiveVoice.stop(), true))", result -> {
+                    if (view != website || generation != loadGeneration) return;
+                    if ("true".equals(result)) service.releaseLiveMicrophone();
+                    else view.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+                });
+            } catch (RuntimeException error) {
+                // Navigation/destruction releases WebView media even when an
+                // older page has no lifecycle helper. Never resume Vosk here.
+                view.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+            }
+        } else service.releaseLiveMicrophone();
+    }
     private boolean trustedChat(WebView view) {
         if (view == null || view != website || root == null) return false;
         Uri location = Uri.parse(String.valueOf(view.getUrl()));
@@ -571,6 +681,7 @@ final class FloatingOracleWindow {
      * Only service shutdown destroys the WebView and releases resources.
      */
     void hide() {
+        stopLiveCall();
         if (root != null) root.setVisibility(View.GONE);
     }
     boolean hideForScreenRead() {
@@ -583,6 +694,7 @@ final class FloatingOracleWindow {
     }
 
     void close() {
+        stopLiveCall();
         PhoneToolController.stop();
         loadGeneration++;
         ui.removeCallbacks(update);

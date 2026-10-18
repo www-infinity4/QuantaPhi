@@ -133,6 +133,12 @@ jobs:
         run: node --test test/bubbles-floating-window.test.cjs
       - name: Verify Bubbles WebView renderer crash recovery
         run: node --test test/bubbles-webview-recovery.test.cjs
+      - name: Verify native Live microphone permission boundaries
+        run: |
+          mkdir -p /tmp/bubbles-live-microphone
+          javac -d /tmp/bubbles-live-microphone android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LiveMicrophonePolicy.java android/bubbles-overlay/checks/LiveMicrophonePolicyCheck.java
+          java -cp /tmp/bubbles-live-microphone org.quantaphi.bubbles.LiveMicrophonePolicyCheck
+          node --test test/bubbles-live-native-microphone.test.cjs
       - name: Verify official GPT-Live voice gateway contract
         run: node --test test/bubbles-gpt-live.test.cjs
       - name: Verify screen intent and safe one-step actions
