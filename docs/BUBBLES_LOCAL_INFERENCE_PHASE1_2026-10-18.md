@@ -9,9 +9,10 @@
 ## Added in this phase
 - `LocalBrainPort`: a network-free on-device generation contract, compatible with a JNI/llama.cpp or Kotlin adapter.
 - `LocalBrainSession`: a single-request async boundary with ordered text fragments, maximum input/output lengths, cancellation, no implicit cloud fallback, and explicit `MODEL_UNAVAILABLE`.
-- A plain-Java fake-engine test requiring neither Android nor an AI model.
+- `LocalVoiceBridge`: converts actual session fragments to streamed UI text and coherent sentence/phrase callbacks for a TTS engine. It is deliberately network-free, side-effect-free, and leaves Android recorder permissions and the floating UI in their current classes.
+- Plain-Java fake-engine tests requiring neither Android nor an AI model, including grouped speech output and unavailable-model refusal.
 
-**No GGUF model, Android native library, model downloader, speech recognizer swap, WebView routing switch, or APK is installed by this PR.** Do not say Bubbles can answer questions offline yet.
+**No GGUF model, Android native library, model downloader, speech recognizer swap, WebView routing switch, real TTS playback connection, or APK is installed by this PR.** Do not say Bubbles can answer questions offline yet.
 
 ## Next steps required for a usable on-device assistant
 1. Select a **source-reviewed** llama.cpp Android implementation and pinned build. The official `ggml-org/llama.cpp/examples/llama.android` project is a reference. The third-party `ffmpegkit-maintained/llama-android` free package currently advertises synchronous completion only; its streaming Flow is a paid feature. Do not assume its license, artifact or safety without checking the actual binary and transitive dependencies.
@@ -41,6 +42,16 @@ mkdir -p /tmp/bubbles-local-test
 javac -d /tmp/bubbles-local-test \
   android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LocalBrainPort.java \
   android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LocalBrainSession.java \
-  test/java/LocalBrainSessionTest.java
+  android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LocalVoiceBridge.java \
+  test/java/LocalBrainSessionTest.java \
+  test/java/LocalVoiceBridgeTest.java
 java -cp /tmp/bubbles-local-test LocalBrainSessionTest
+java -cp /tmp/bubbles-local-test LocalVoiceBridgeTest
 ```
+
+
+## Recorder trigger is native Android, not a desktop executable
+
+On this repository, spoken commands already pass through `BubblesService.heard()` and `VoiceCaptureCommands.parse()`. After Android's per-session MediaProjection consent screen, `MainActivity` starts `ScreenCaptureService` directly. It shares the existing microphone PCM and publishes the MP4 through `CapturePublisher` to Movies/Bubbles. WebView capture requests are drained by `FloatingOracleWindow` and forwarded to the same native command path; do not add subprocess, PATH, fake taps, admin permission, or an invented external recorder.
+
+The physical device's recording/save behavior remains to be verified independently from repository-source tests.
