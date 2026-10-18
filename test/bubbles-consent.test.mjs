@@ -223,3 +223,17 @@ test('default GitHub request blocks token redirects before forwarding credential
   assert.equal(calls,1);
  }finally{globalThis.fetch=original;}
 });
+
+test('GitHub repository inspection uses installed-repository endpoints and returns bounded metadata',async()=>{
+ const calls=[],replies=[{total_count:1,installations:[{id:7}]},{repositories:[{id:8,full_name:'test-owner/test-repo',private:true,permissions:{pull:true,push:true}},{id:9,full_name:'../../bad'}]}];
+ const adapter=githubAdapter({clientId:'test',clientSecret:'test',redirectUri:'https://example.test/callback'},async(url,options)=>{calls.push({url,options});return Response.json(replies.shift());});
+ const result=await adapter.repositories({accessToken:'private-test-access'});
+ assert.equal(result.repositories.length,1);assert.equal(result.repositories[0].permissions.write,true);
+ assert.deepEqual(calls.map(x=>x.url),['https://api.github.com/user/installations?per_page=100','https://api.github.com/user/installations/7/repositories?per_page=100']);
+ assert.ok(!JSON.stringify(result).includes('private-test-access'));
+});
+test('repository inspection cannot use another tenant or a non-GitHub connection',async()=>{
+ const f=fixture(),account=await f.finish(await f.begin());
+ await assert.rejects(f.service.githubRepositories({userId:'bob',id:account.id}),/connection_not_verified/);
+ await assert.rejects(f.service.githubRepositories({userId:'alice',id:account.id}),/connection_not_verified/);
+});
