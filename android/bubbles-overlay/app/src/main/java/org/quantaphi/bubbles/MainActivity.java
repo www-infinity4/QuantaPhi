@@ -613,6 +613,11 @@ public final class MainActivity extends Activity {
                 if (state != null) state.setText(ChatGPTSignIn.status(this)+"\n"+result);
             });
         }
+        if (getIntent().hasExtra("capcut_action")) {
+            getIntent().removeExtra("capcut_action");
+            ((android.app.NotificationManager)getSystemService(NOTIFICATION_SERVICE)).cancel(517);
+            ui.post(this::chooseCapCutMedia);
+        }
         if (getIntent().getBooleanExtra("pick_bubbles_image",false)
                 || getIntent().getBooleanExtra("pick_bubbles_history",false)) {
             boolean history = getIntent().getBooleanExtra("pick_bubbles_history",false);
@@ -662,6 +667,11 @@ public final class MainActivity extends Activity {
             intent.removeExtra("pick_bubbles_image");
             intent.removeExtra("pick_bubbles_history");
             openBubblesDocumentPicker(history);
+        }
+        if (intent != null && intent.hasExtra("capcut_action")) {
+            intent.removeExtra("capcut_action");
+            ((android.app.NotificationManager)getSystemService(NOTIFICATION_SERVICE)).cancel(517);
+            ui.post(this::chooseCapCutMedia);
         }
         if (intent != null && intent.hasExtra("voice_capture")) {
             String action = intent.getStringExtra("voice_capture");
