@@ -525,3 +525,69 @@ test('public Cloudflare token endpoints reject absent owner sessions before any 
  }
  assert.equal(readSecret,0);
 });
+
+test('signed Pink review of merged source finishes without a new PR, payout, or synthetic repair replay',async()=>{
+ const previousFetch=globalThis.fetch;
+ const repo='www-infinity4/QuantaPhi',mergeSha='a'.repeat(40),headSha='c'.repeat(40),sourceSha='b'.repeat(40);
+ const original={kind:'robot-directions',color_jobs:[
+  {id:'TASK-1',agent:'greenbeans',repository:repo,status:'merged_verified',
+   progress:{mergeSha,commitSha:sourceSha,testsPassed:true,prUrl:'https://github.com/www-infinity4/QuantaPhi/pull/418'}},
+  {id:'TASK-2',agent:'pink-panther',repository:repo,status:'blocked',dependencies:['TASK-1','TASK-3'],
+   instructions:'After TASK-1, independently verify the requested work: Fix Bubbles routing.'},
+  {id:'TASK-3',agent:'greenbeans',repository:repo,status:'blocked',title:'Repair source-routing',
+   instructions:'Diagnose and repair the authenticated source-routing failure preventing the existing owner job TASK-2.'}
+ ],technical_handoffs:[{sourceJobId:'TASK-2',repairJobId:'TASK-3',category:'source-routing'}]};
+ const url='https://github.com/www-infinity4/Moltnook/actions/runs/39090790690';
+ const review={kind:'source_review_only',primaryId:'TASK-1',repository:repo,
+  mergeSha,sourceCommitSha:sourceSha,prNumber:418,
+  prUrl:'https://github.com/www-infinity4/QuantaPhi/pull/418',
+  repairIds:['TASK-3'],testsPreviouslyPassed:true,
+  sourceDeployedVerified:false,mayWrite:false};
+ let updated,updatedStatus;
+ const db={prepare(sql){
+  return {bind(...args){this.args=args;return this;},
+   async first(){return {context_json:JSON.stringify(original)};},
+   async run(){updated=JSON.parse(this.args[0]);updatedStatus=this.args[1];return {meta:{changes:1}};}};
+ }};
+ const memory=new Map(),storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)};
+ const lease={key:'writer:pink',leaseId:'pink-review-id',runId:'200',engine:true,
+  leaseUntil:Date.now()+120000,ticketId:'IW-20261016-706B1494',jobId:'TASK-2',
+  repository:repo,job:{...original.color_jobs[1],sourceReview:review}};
+ memory.set(lease.key,lease);
+ const calls=[];
+ globalThis.fetch=async input=>{
+  const target=String(input);calls.push(target);
+  if(target.includes('/pulls/418/files?'))return Response.json([
+   {filename:'bubbles-brain-actions.js'},{filename:'test/bubbles-brain-actions.test.cjs'}]);
+  if(target.endsWith('/pulls/418'))return Response.json({
+   merged:true,merge_commit_sha:mergeSha,
+   title:'Robot review: IW-20261016-706B1494/TASK-1',
+   base:{ref:'main',repo:{full_name:repo}}});
+  if(target.includes('/branches/main'))return Response.json({commit:{sha:headSha}});
+  if(target.includes('/compare/'))return Response.json({status:'ahead'});
+  throw Error('unexpected Github URL '+target);
+ };
+ try{
+  const clock=new BrainClock({storage},{WORK_DB:db,WRITER_OWNER_HASH:'test-private-owner-hash'});
+  const request=step=>new Request('https://clock.internal/runner/'+step,{method:'POST',
+   body:JSON.stringify({runId:'200',runnerRepository:'www-infinity4/Moltnook',
+    key:lease.key,leaseId:lease.leaseId,status:'source_verified',testsPassed:true,
+    reviewedMergeSha:mergeSha,commitSha:headSha,
+    testPaths:['test/bubbles-brain-actions.test.cjs'],productionVerified:false})});
+  const completion=await (await clock.runner(request('result'))).json();
+  assert.equal(completion.status,'source_verified');
+  assert.equal(completion.coinsMinted,false);
+  assert.equal(completion.productionVerified,false);
+  assert.equal(updated.color_jobs[1].status,'complete');
+  assert.equal(updated.color_jobs[1].progress.resultKind,'source_verified');
+  assert.equal(updated.color_jobs[2].status,'superseded');
+  assert.equal(updated.color_jobs[0].status,'merged_verified');
+  assert.equal(updatedStatus,'blocked','whole ticket must not claim deployment');
+  assert.equal(memory.get('job-quant-index'),undefined,'review never mints');
+  assert.equal(calls.length,4);
+  const readback=await (await clock.runner(request('source-review-receipt'))).json();
+  assert.equal(readback.durableReadback,true);
+  assert.equal(readback.coinsMinted,false);
+  assert.equal(readback.testsPassed,true);
+ }finally{globalThis.fetch=previousFetch;}
+});
