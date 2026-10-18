@@ -2244,13 +2244,14 @@ window.QuantaBubbles={
   if(!nativeOverlay||!capture||typeof capture!=='object')return false;
   nativeSimAvailable=capture.simInspection===true;
   const screenActive=capture.screenActive===true,started=capture.screenRecording===true;
+  const paused=screenActive&&capture.screenPaused===true;
   const soundActive=capture.soundActive===true;
   nativeRecordingActive=screenActive||soundActive;
   recorderStop.hidden=!nativeRecordingActive;
   recorderStop.disabled=false;
   const screen=String(capture.screenState||'').slice(0,160);
   const sound=String(capture.soundState||'').slice(0,160);
-  const mode=started?'Screen capture ON':screenActive?'Screen capture starting':
+  const mode=paused?'Screen recording PAUSED':started?'Screen capture ON':screenActive?'Screen capture starting':
    /approval|approve|requested/i.test(screen)?'Waiting for Android screen approval':
    /saving|finishing/i.test(screen)?'Screen capture saving':'Screen capture OFF';
   const soundMode=soundActive?'Sound recording ON':
