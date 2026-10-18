@@ -827,7 +827,7 @@ public final class BubblesService extends Service {
                     // The running foreground recorder, not an AI model, owns
                     // this transition and its real notification/receipt.
                     boolean screenActive = BrainNotes.prefs(this).getBoolean("capture_active", false);
-                    boolean screenVideo = BrainNotes.prefs(this).getBoolean("capture_recording", false);
+                    boolean screenVideo = BrainNotes.prefs(this).getBoolean("capture_video", false);
                     if (screenActive && screenVideo) {
                         startService(new Intent(this, ScreenCaptureService.class)
                             .setAction("screen_pause".equals(command.action)
