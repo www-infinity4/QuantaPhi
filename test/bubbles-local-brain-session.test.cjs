@@ -23,6 +23,8 @@ test('local LLM adapter compiles and runs its offline, fail-closed contract', t 
     const compile = spawnSync('javac', ['-d', dir,
       path.join(source, 'LocalBrainPort.java'),
       path.join(source, 'LocalBrainSession.java'),
+      path.join(source, 'LocalVoiceBridge.java'),
+      path.join(root, 'test/java/LocalVoiceBridgeTest.java'),
       path.join(root, 'test/java/LocalBrainSessionTest.java')
     ], { cwd: root, encoding: 'utf8', timeout: 60000 });
     assert.equal(compile.status, 0, compile.stderr || compile.error?.message || 'javac failed');
@@ -31,6 +33,11 @@ test('local LLM adapter compiles and runs its offline, fail-closed contract', t 
       { cwd: root, encoding: 'utf8', timeout: 60000 });
     assert.equal(run.status, 0, run.stderr || run.error?.message || 'java test failed');
     assert.match(run.stdout, /8 assertions passed/);
+
+    const voice = spawnSync('java', ['-cp', dir, 'LocalVoiceBridgeTest'],
+      { cwd: root, encoding: 'utf8', timeout: 60000 });
+    assert.equal(voice.status, 0, voice.stderr || voice.error?.message || 'voice test failed');
+    assert.match(voice.stdout, /13 assertions passed/);
   } finally {
     fs.rmSync(dir, { recursive: true, force: true });
   }
