@@ -266,18 +266,49 @@ function nativeCaptureNotice(previous,current){
  }
  return '';
 }
-function speechText(value){
+// Speech preferences change presentation only, not permissions, tool routing
+// or the words preserved in the on-screen conversation.
+function voicePreferenceCommand(value){
+ const command=String(value||'').trim().toLowerCase()
+  .replace(/^(?:hey |hi |hello )?bubbles[,:\\s]+/,'')
+  .replace(/^please\\s+/,'')
+  .replace(/[.!?]+$/,'').trim();
+ if(/^(?:(?:remember(?: that)?|from now on|always)\\s+)?(?:don't|do not|never|stop)\\s+(?:read|reading|say|saying|speak|speaking|announce|announcing)\\s+(?:out\\s+)?(?:the\\s+)?(?:ticket|job|task|pr|issue)\\s+(?:numbers?|ids?|references?)(?:\\s+(?:aloud|out loud|again|anymore))?$/.test(command))
+  return {hideTicketNumbers:true};
+ if(/^(?:(?:remember(?: that)?|from now on|always)\\s+)?(?:keep (?:it|your (?:answers|responses|replies)) short|be (?:more )?brief|speak less|stop (?:rambling|talking so much)|short(?:er)? spoken (?:replies|answers|responses))$/.test(command))
+  return {briefSpeech:true};
+ if(/^(?:give (?:me )?(?:longer|full|detailed) spoken (?:answers|responses|replies)|read (?:the )?full (?:response|answer) aloud)$/.test(command))
+  return {briefSpeech:false};
+ return null;
+}
+function speechText(value,options={}){
  // Spoken narration is a different representation from the visible chat.
- // Never read formatting symbols, code fences, URLs or markdown syntax aloud.
- return String(value||'')
-  .replace(/\x60{3}[\s\S]*?\x60{3}/g,' ')
-  .replace(/!?\[([^\]]+)\]\(https?:\/\/[^)]+\)/gi,'$1')
-  .replace(/https?:\/\/\S+|www\.\S+/gi,' ')
-  .replace(/\b[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:com|org|net|dev|app|io)(?:\/[^\s]*)?/gi,' ')
-  .replace(/^\s*(?:[-+•]\s+|\d+[.)]\s+)/gm,' ')
-  .replace(/[*/\\_()\[\]{}<>\x60~|#^]+/g,' ')
-  .replace(/&/g,' and ')
-  .replace(/\s+/g,' ').trim();
+ // Never read code, addresses, URLs or formatting markers aloud.
+ let speech=String(value||'')
+  .replace(/\\x60{3}[\\s\\S]*?\\x60{3}/g,' ')
+  .replace(/!?\\[([^\\]]+)\\]\\(https?:\\/\\/[^)]+\\)/gi,'$1')
+  .replace(/https?:\\/\\/\\S+|www\\.\\S+/gi,' ')
+  .replace(/\\b[a-z0-9-]+(?:\\.[a-z0-9-]+)*\\.(?:com|org|net|dev|app|io)(?:\\/[^\\s]*)?/gi,' ');
+ if(options.hideTicketNumbers!==false){
+  speech=speech
+   .replace(/\\bIW-\\d{8}-[A-Z0-9-]+\\b/gi,' ')
+   .replace(/\\bTASK-\\d+\\b/gi,' ')
+   .replace(/\\b(?:PR|pull request|issue|ticket|job)\\s*(?:number\\s*|no\\.?\\s*|#\\s*)\\d+[A-Z0-9-]*\\b/gi,' ');
+ }
+ speech=speech.replace(/^\\s*(?:[-+•]\\s+|\\d+[.)]\\s+)/gm,' ')
+  .replace(/[*/\\\\_()\\[\\]{}<>\\x60~|#^]+/g,' ')
+  .replace(/&/g,' and ').replace(/\\s+/g,' ').trim();
+ // A detailed written result remains in chat. Only spoken playback is capped.
+ if(options.brief===true){
+  const words=speech.split(/\\s+/).filter(Boolean);
+  if(words.length>65){
+   const first=words.slice(0,65).join(' ');
+   const boundary=Math.max(first.lastIndexOf('. '),first.lastIndexOf('? '),first.lastIndexOf('! '));
+   speech=(boundary>45?first.slice(0,boundary+1):first).replace(/[,.\\s]+$/,'')+
+    '. More details are in the chat.';
+  }
+ }
+ return speech;
 }
 // Only a runner-backed state transition may produce unsolicited job speech.
 // Intermediate comments, D1 labels, merges and alarm dispatches remain in
@@ -343,7 +374,7 @@ class ProgressTracker{
   return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
-const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief};
+const api={nativeCaptureNotice,speechText,voicePreferenceCommand,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);
