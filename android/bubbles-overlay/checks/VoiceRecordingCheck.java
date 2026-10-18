@@ -11,6 +11,11 @@ public final class VoiceRecordingCheck {
         try { writer.start(dir); throw new AssertionError("Concurrent recording accepted"); }
         catch (IllegalStateException expected) {}
         writer.append(new short[]{0, 32767, -32768, -1}, 4);
+        writer.pause();
+        if (!writer.isPaused()) throw new AssertionError("Recorder did not pause");
+        writer.append(new short[]{101, 202}, 2); // Pause must not add frames.
+        writer.resume();
+        if (writer.isPaused()) throw new AssertionError("Recorder did not resume");
         File file = writer.finish();
         byte[] data = Files.readAllBytes(file.toPath());
         ByteBuffer header = ByteBuffer.wrap(data).order(ByteOrder.LITTLE_ENDIAN);
