@@ -525,13 +525,14 @@ const connectorCodeButton=create('button','ba-control ba-connector-code','Create
 connectorCodeButton.type='button';
 const connectorCodeStatus=create('p','ba-muted','');connectorCodeStatus.setAttribute('role','status');connectorCodeStatus.hidden=true;
 const connectorCodeOutput=create('div','ba-connector-code-output');connectorCodeOutput.hidden=true;
-const connectorCodeValue=create('input','ba-field');connectorCodeValue.type='password';connectorCodeValue.readOnly=true;connectorCodeValue.autocomplete='off';connectorCodeValue.setAttribute('aria-label','Private one-time account connection code');
+const connectorCodeValue=create('textarea','ba-field');connectorCodeValue.rows=2;connectorCodeValue.spellcheck=false;connectorCodeValue.style.cssText='font:16px/1.5 ui-monospace,monospace;overflow-wrap:anywhere;word-break:break-all;resize:none;';connectorCodeValue.readOnly=true;connectorCodeValue.autocomplete='off';connectorCodeValue.setAttribute('aria-label','Private one-time account connection code');
 const connectorCodeCopy=create('button','ba-control','Copy connection code');connectorCodeCopy.type='button';
 connectorCodeCopy.addEventListener('click',async()=>{
  if(!connectorCodeValue.value)return;
  try{await navigator.clipboard.writeText(connectorCodeValue.value);connectorCodeStatus.textContent='Connection code copied. Use it within two minutes.';}
- catch{connectorCodeValue.type='text';connectorCodeValue.select();connectorCodeStatus.textContent='Select and copy this private code.';}
+ catch{connectorCodeValue.focus();connectorCodeValue.select();connectorCodeStatus.textContent='Select and copy this private code.';}
 });
+connectorCodeValue.addEventListener('click',()=>connectorCodeValue.select());
 connectorCodeOutput.append(connectorCodeValue,connectorCodeCopy);
 let connectorCodeTimer=null;
 connectorCodeButton.addEventListener('click',async()=>{
@@ -543,13 +544,13 @@ connectorCodeButton.addEventListener('click',async()=>{
   const client=new module.AccountConnections({token:()=>module.resolveConnectorWalletToken(window)});
   const result=await client.call('/pair/create',{});
   if(!/^[A-Za-z0-9_-]{16,64}$/.test(result.code||'')||!Number.isFinite(result.expiresIn)||result.expiresIn<=0)throw Error('connection_response_invalid');
-  connectorCodeValue.type='password';connectorCodeValue.value=result.code;connectorCodeOutput.hidden=false;
+  connectorCodeValue.value=result.code;connectorCodeOutput.hidden=false;
   connectorCodeStatus.textContent='Code ready. Copy it to Account Connections in the other browser. It expires in two minutes and grants connector access for 15 minutes.';
   connectorCodeTimer=setTimeout(()=>{connectorCodeValue.value='';connectorCodeOutput.hidden=true;connectorCodeStatus.textContent='Connection code expired. Tap the button for a new one.';},Math.min(result.expiresIn,120)*1000);
  }catch(error){connectorCodeStatus.textContent=module?module.connectionCodeMessage(error):'The connection controls could not load. Try again.';}
  finally{connectorCodeButton.disabled=false;}
 });
-if(!embedded)composer.append(connectorCodeButton,connectorCodeStatus,connectorCodeOutput);
+if(!embedded)composer.prepend(connectorCodeButton,connectorCodeOutput,connectorCodeStatus);
 
 
 
@@ -757,6 +758,43 @@ if(!embedded){
  tools.append(create('h3','ba-section-heading','Connections & pairing'),linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus);
 }
 document.body.append(launcher,panel);
+// Fit the visible phone viewport, including the space remaining above its keyboard.
+const chatFitStyle=create('style');
+chatFitStyle.textContent=`
+.ba-panel .ba-composer{min-height:0;max-height:65%;overflow-y:auto;overscroll-behavior:contain}
+.ba-panel .ba-connector-code-output[hidden],.ba-panel .ba-composer [hidden]{display:none!important}
+.ba-panel .ba-connector-code-output{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:6px;min-width:0}
+.ba-panel .ba-connector-code-output textarea{height:68px!important;min-height:68px!important;max-height:68px!important;padding:6px!important}
+.ba-panel .ba-connector-code-output button{min-height:48px;max-width:110px;white-space:normal}
+.ba-panel .ba-connector-code{width:100%;min-height:44px;margin:0}
+.ba-panel .ba-composer>.ba-muted{margin:0;font-size:12px;max-height:3em;overflow-y:auto}
+@media(max-width:600px){
+ body .ba-panel:not([hidden]),html.bubbles-native-overlay .ba-panel:not([hidden]){
+ position:fixed!important;inset:auto!important;left:0!important;right:0!important;
+ top:var(--ba-visible-top,0px)!important;bottom:auto!important;
+ width:100%!important;height:var(--ba-visible-height,100dvh)!important;
+ max-height:var(--ba-visible-height,100dvh)!important;min-height:0!important;
+ padding:0!important;gap:0!important;border-radius:0!important;overflow:hidden!important}
+ body .ba-panel .ba-thread{flex:1 1 0!important;min-height:0!important;overflow-y:auto!important}
+ body .ba-panel .ba-composer{flex:0 1 auto!important;min-height:0!important;max-height:calc(100% - 48px)!important;overflow-y:auto!important;padding:6px 8px max(6px,env(safe-area-inset-bottom))!important;gap:5px!important}
+ body .ba-panel .ba-composer textarea:not(.ba-connector-code-output textarea){height:52px;min-height:44px;max-height:72px}
+ body .ba-panel .ba-header{min-height:48px;padding:4px 10px}
+}
+`;
+document.head.append(chatFitStyle);
+function fitChatViewport(){
+ const viewport=window.visualViewport;
+ panel.style.setProperty('--ba-visible-height',Math.max(1,viewport?.height||window.innerHeight)+'px');
+ panel.style.setProperty('--ba-visible-top',(viewport?.offsetTop||0)+'px');
+}
+window.visualViewport?.addEventListener('resize',fitChatViewport);
+window.visualViewport?.addEventListener('scroll',fitChatViewport);
+window.addEventListener('resize',fitChatViewport);
+fitChatViewport();
+
+
+
+
 
 /* A single in-conversation Brain notification center. This supersedes
    opening a separate bot dashboard just to see work progress. It is
