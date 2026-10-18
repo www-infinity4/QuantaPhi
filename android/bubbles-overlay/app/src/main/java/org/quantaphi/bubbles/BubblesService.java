@@ -892,7 +892,10 @@ public final class BubblesService extends Service {
         // Use the SAME QuantaPhi website assistant, owner-wallet verification,
         // Robot Brain job receipts, notes and typed conversation when available.
         // The floating WebView never receives ChatGPT OAuth credentials.
-        if (oracleWindow != null && oracleWindow.sendSpoken(addressed)) return;
+        // Third context lane: background speech is never an owner command.
+        // The separate bridge must have explicit permission and a topical match.
+        String ambientContext = RoomContextFusion.forTurn(this, addressed);
+        if (oracleWindow != null && oracleWindow.sendSpoken(addressed, ambientContext)) return;
         BrainNotes.prefs(this).edit().putString("last_error",
             "Bubbles website is unavailable or its queue is full. Open the floating chat and retry; no alternate AI was used.").apply();
         Toast.makeText(this, "Open Bubbles chat to check the website connection.", Toast.LENGTH_LONG).show();
