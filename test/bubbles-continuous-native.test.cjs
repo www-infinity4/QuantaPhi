@@ -38,7 +38,8 @@ test('movement uses full drag distance and clamps to screen', () => {
 });
 
 test('ordinary spoken work uses the shared website without a native ticket handoff', () => {
-  assert.match(source, /oracleWindow != null && oracleWindow\.sendSpoken\(addressed\)/);
+  assert.match(source, /oracleWindow != null && oracleWindow\.sendSpoken\(addressed, ambientContext\)/);
+  assert.match(source, /RoomContextFusion\.forTurn\(this, addressed\)/);
   assert.doesNotMatch(source, /appendQueryParameter\("workRequest", addressed\)/);
   const route=source.slice(source.indexOf('// Use the SAME QuantaPhi website assistant'),source.indexOf('private void offerCaptureApproval'));
   assert.doesNotMatch(route, /askOracle\(addressed\)/);
