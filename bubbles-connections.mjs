@@ -28,7 +28,7 @@ export function connectionCodeMessage(error) {
   return messages[error?.message]||messages[error?.name]||'Code creation failed (account_connection_unavailable). The service needs further diagnosis.';
 }
 export class AccountConnections {
-  constructor({token,request = fetch,root = window}) {this.token=token;this.request=request;this.root=root;this.pending=null;}
+  constructor({token,request = (...args)=>fetch(...args),root = window}) {this.token=token;this.request=request;this.root=root;this.pending=null;}
   async call(path,body) {
     const credential=path==='/pair/redeem'?'':await this.token();
     const response=await this.request(API+path,{method:body?'POST':'GET',cache:'no-store',
