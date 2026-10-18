@@ -325,6 +325,50 @@ const macroContent=create('div','ba-macro-actions');macroContent.hidden=true;
 macroToggle.addEventListener('click',()=>{macroContent.hidden=!macroContent.hidden;macroToggle.setAttribute('aria-expanded',String(!macroContent.hidden))});
 macroBox.append(macroToggle,macroContent);
 const macroInfo=create('p','ba-muted','Web controls operate this Bubbles session. Android system actions need the installed Bubbles service, user permissions and actual results.');
+// Cloudflare's token admin permission lives in a SERVER secret, not the
+// Android APK. This owner-facing two-tap card never displays minted tokens.
+async function proposeCloudflareWorkerToken(){
+ if(embedded||!ownerReady){status.textContent='Connect the verified owner wallet before requesting Cloudflare token management.';return;}
+ let headers;
+ try{headers=await verifiedOwnerHeaders();}
+ catch{status.textContent='Owner verification is required for Cloudflare token management.';return;}
+ const purpose='Prepare scoped Worker deployment access for approved Bubbles website and Robot Brain builds';
+ try{
+  const r=await bubblesFetch(BRAIN+'/work/cloudflare/token-plan',{
+   method:'POST',headers:{...headers,'Content-Type':'application/json'},
+   body:JSON.stringify({capability:'workers-script-edit',purpose,durationHours:24}),cache:'no-store'
+  },15000);
+  const plan=await r.json().catch(()=>({}));
+  if(!r.ok||!plan.ok)throw Error(String(plan.error||'Cloudflare token planning is unavailable'));
+  const card=create('div','ba-cloudflare-approval');
+  const explain=create('p','ba-muted',
+   'Cloudflare credential proposal: '+plan.permission+
+   ' for one account, expiring in 24 hours. This grants Worker-edit access, not full administration. No token will be placed in the APK, chat, or website source.');
+  const state=create('p','ba-muted',plan.managerConfigured?
+   'Owner approval required before a token is created.':
+   'The server-side CLOUDFLARE_TOKEN_MANAGER secret is not connected. No token can be created yet.');
+  const approve=create('button','ba-control','Approve scoped Cloudflare token');
+  const cancel=create('button','ba-control','Cancel');
+  approve.type='button';cancel.type='button';approve.disabled=!plan.managerConfigured;
+  cancel.addEventListener('click',()=>{approve.disabled=true;cancel.disabled=true;state.textContent='Credential request cancelled. No token was created.';});
+  approve.addEventListener('click',async()=>{
+   approve.disabled=true;cancel.disabled=true;state.textContent='Checking owner approval with Cloudflare…';
+   try{
+    const auth=await verifiedOwnerHeaders();
+    const sent=await bubblesFetch(BRAIN+'/work/cloudflare/token-confirm',{
+     method:'POST',headers:{...auth,'Content-Type':'application/json'},
+     body:JSON.stringify({requestId:plan.requestId}),cache:'no-store'
+    },30000);
+    const result=await sent.json().catch(()=>({}));
+    if(!sent.ok||!result.ok)throw Error(String(result.error||'Cloudflare did not verify token creation'));
+    state.textContent='Cloudflare token created and sealed on the Brain server. Expires '+new Date(result.expiresAt).toLocaleString()+'. No token was returned to Bubbles. This is not a deployment receipt.';
+   }catch(error){state.textContent='Token creation not verified: '+String(error.message||error).slice(0,140)+'. No access should be assumed.';}
+  });
+  card.append(explain,state,approve,cancel);
+  conversation.append(card);if(showing)chatScroll.scrollTop=chatScroll.scrollHeight;
+  status.textContent=plan.managerConfigured?'Review the Cloudflare scope and approve if you want this token.':'Cloudflare credential manager needs its separate server-side connection.';
+ }catch(error){status.textContent='Cloudflare token planning unavailable: '+String(error.message||error).slice(0,160);}
+}
 const macroButtons=[
  ['Customize bubble','Open Bubbles role and voice settings',()=>{studioToggle.click();edit.scrollIntoView?.({block:'nearest',behavior:'smooth'})}],
  ['Record screen','Request Android screen video with microphone',()=>void sendMessage('record screen')],
@@ -332,6 +376,7 @@ const macroButtons=[
  ['Stop and save','Ask Android to save the current recording',()=>void sendMessage('stop recording')],
  ['SIM and network','Inspect connection from Android, without claiming carrier control',()=>void sendMessage('check my SIM')],
  ['Robot Brain tools','Check verified owner work tools',()=>void sendMessage('check robot brain tools')],
+ ['Cloudflare token manager','Review and explicitly approve short-lived Cloudflare Worker access without sharing API keys with the APK',()=>void proposeCloudflareWorkerToken()],
  ['Voice','Preview the currently selected speaking voice',()=>previewVoice.click()],
  ['ChatGPT','Use Android-first permissioned sign-in',()=>gptConnect.click()]
 ];
