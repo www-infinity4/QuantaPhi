@@ -926,6 +926,22 @@ public final class BubblesService extends Service {
                         if ("recording".equals(feedback) && !typed) speakWebsiteReply("Recording.");
                     });
                     break;
+                case "capcut_edit":
+                case "capcut_extract": {
+                    Intent edit = new Intent(this, MainActivity.class)
+                        .putExtra("capcut_action", command.action)
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    PendingIntent pending = PendingIntent.getActivity(this, 517, edit,
+                        PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+                    Notification notice = new Notification.Builder(this, CAPTURE_APPROVAL_CHANNEL)
+                        .setSmallIcon(android.R.drawable.ic_menu_edit)
+                        .setContentTitle("Bubbles · CapCut")
+                        .setContentText("Tap to choose a clip for editing.")
+                        .setContentIntent(pending).setAutoCancel(true).build();
+                    ((NotificationManager) getSystemService(NOTIFICATION_SERVICE)).notify(517, notice);
+                    if (!typed) speak("Opening editor.");
+                    break;
+                }
                 case "screen_image":
                 case "screen_sequence":
                 case "camera_video":
