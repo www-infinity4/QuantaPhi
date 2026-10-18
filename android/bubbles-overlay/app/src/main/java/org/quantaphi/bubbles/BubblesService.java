@@ -261,7 +261,11 @@ public final class BubblesService extends Service {
     private final SpeechTurnBuffer turnBuffer = new SpeechTurnBuffer();
     // Vosk ends recognition at a brief pause, not necessarily at a thought.
     // Combine adjacent phrases until the owner has finished speaking.
-    private static final long END_OF_TURN_MS = 850L;
+    private static final long END_OF_TURN_MS = 950L;
+    private void scheduleVoiceTurn(long waitMs) {
+        main.removeCallbacks(deliverVoiceTurn);
+        main.postDelayed(deliverVoiceTurn, Math.max(0L, waitMs));
+    }
     private final Runnable deliverVoiceTurn = new Runnable() {
         @Override public void run() {
             if (!connected || muted) { turnBuffer.clear(); return; }
@@ -605,9 +609,12 @@ public final class BubblesService extends Service {
                         if (!complete && SystemClock.elapsedRealtime() - lastPartialAt > 550L) {
                             lastPartialAt = SystemClock.elapsedRealtime();
                             final String partial = new JSONObject(speech.getPartialResult()).optString("partial", "");
-                            if (!partial.isEmpty() && SystemClock.elapsedRealtime() < activeUntil) main.post(() -> {
-                                if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
+                            if (!partial.isEmpty()) main.post(() -> {
+                                if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil) {
                                     BrainNotes.prefs(this).edit().putString("last_partial", partial).apply();
+                                    if (turnBuffer.hasPending())
+                                        scheduleVoiceTurn(TurnCompletionPolicy.onNewPartial(turnBuffer.peek(), partial));
+                                }
                             });
                         }
                         if (complete) {
@@ -626,13 +633,17 @@ public final class BubblesService extends Service {
                                     heard(transcript);
                                     return;
                                 }
+                                // Unambiguous recording starts without a fixed end-of-turn delay.
+                                if (!turnBuffer.hasPending() && command != null
+                                        && (command.action.equals("screen_video")
+                                            || command.action.equals("sound_start"))) {
+                                    heard(transcript);
+                                    return;
+                                }
                                 turnBuffer.append(transcript);
                                 if (turnBuffer.hasPending()) {
-                                    // The pause is intentional: gather the rest of the thought
-                                    // before sending anything, and show the owner that status.
                                     state("gathering", .22f);
-                                    main.removeCallbacks(deliverVoiceTurn);
-                                    main.postDelayed(deliverVoiceTurn, END_OF_TURN_MS);
+                                    scheduleVoiceTurn(TurnCompletionPolicy.waitMillis(turnBuffer.peek()));
                                 }
                             });
                         }
