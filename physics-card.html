@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Physics Card Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Submit Physics Card Design</h1>
+  <form id="physics-card-form">
+    <label>
+      Title:
+      <input type="text" name="title" required />
+    </label><br/>
+    <label>
+      Description:
+      <textarea name="description" required></textarea>
+    </label><br/>
+    <label>
+      Image URL:
+      <input type="url" name="imageUrl" required />
+    </label><br/>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="buyer-count">Verified buyers: 0</p>
+
+  <script src="physics-card.js"></script>
+</body>
+</html>
