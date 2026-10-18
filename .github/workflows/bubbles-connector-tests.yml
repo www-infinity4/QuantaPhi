@@ -1,0 +1,37 @@
+name: Bubbles account connection regressions
+
+on:
+  pull_request:
+    paths:
+      - 'workers/bubbles-connections/**'
+      - 'bubbles-connections.mjs'
+      - 'test/bubbles-connections*.test.mjs'
+      - '.github/workflows/bubbles-connector-tests.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/bubbles-connections/**'
+      - 'bubbles-connections.mjs'
+      - 'test/bubbles-connections*.test.mjs'
+      - '.github/workflows/bubbles-connector-tests.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  account-connections:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify wallet, OAuth, pairing, same-origin browser reads and isolation
+        run: |
+          node --test \
+            test/bubbles-connections.test.mjs \
+            test/bubbles-consent.test.mjs \
+            test/bubbles-connections-router.test.mjs \
+            test/bubbles-connections-ui.test.mjs \
+            test/bubbles-connector-pairing.test.mjs
