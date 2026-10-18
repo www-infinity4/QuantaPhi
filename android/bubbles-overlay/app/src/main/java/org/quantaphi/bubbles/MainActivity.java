@@ -31,7 +31,8 @@ public final class MainActivity extends Activity {
     private Runnable refreshScreenPermission;
     private Runnable refreshChatGPTStatus;
     private final java.util.concurrent.ExecutorService mediaWork = java.util.concurrent.Executors.newSingleThreadExecutor();
-    private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64, IMAGE_REQUEST = 65, PHONE_AUDIO_REQUEST = 66;
+    private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64, IMAGE_REQUEST = 65,
+        PHONE_AUDIO_REQUEST = 66, CAPCUT_MEDIA_REQUEST = 67;
     private boolean screenshot;
     private int screenIntervalSeconds, screenDurationSeconds;
     private String extracted = "";
@@ -51,7 +52,7 @@ public final class MainActivity extends Activity {
         layout.addView(title);
 
         TextView copy = new TextView(this);
-        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link Robot Brain, get the one-time code on verified QuantaPhi, paste it directly into the floating chat message box, then Send. There is no separate pairing button. Drag the floating orb anywhere.\\n\\nSay 'record', 'stop', 'turn on video', 'record my screen', 'take a screenshot', or 'take a screenshot every five seconds for five minutes'. Bubbles handles the controls; Android asks you to approve screen capture. Captures stay on your phone.");
+        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link Robot Brain, get the one-time code on verified QuantaPhi, paste it directly into the floating chat message box, then Send. There is no separate pairing button. Drag the floating orb anywhere.\\n\\nSay record or stop. DU Recorder handles video; CapCut edits saved video or extracts sound. Android asks you for capture permission when needed. Bubbles listens while you find your words.");
         copy.setTextColor(Color.rgb(101, 83, 111));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
@@ -285,6 +286,10 @@ public final class MainActivity extends Activity {
             else DuRecorderBridge.request(this, "stop", ui);
         });
         advancedCapture.addView(stopScreen);
+        Button capcut = new Button(this);
+        capcut.setText("Edit / extract sound from a clip in CapCut");
+        capcut.setOnClickListener(v -> chooseCapCutMedia());
+        advancedCapture.addView(capcut);
         // Explicitly separate background room speech from the Bubbles owner chat.
         // This uses the existing microphone; it does NOT silently open another.
         TextView roomDescription = new TextView(this);
@@ -778,8 +783,27 @@ public final class MainActivity extends Activity {
         }
     }
 
+    private void chooseCapCutMedia() {
+        try {
+            Intent picker = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+            picker.addCategory(Intent.CATEGORY_OPENABLE);
+            picker.setType("*/*");
+            picker.putExtra(Intent.EXTRA_MIME_TYPES, new String[]{"video/*", "audio/*"});
+            startActivityForResult(picker, CAPCUT_MEDIA_REQUEST);
+        } catch (RuntimeException error) {
+            state.setText("Could not open the clip picker.");
+        }
+    }
+
     @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == CAPCUT_MEDIA_REQUEST) {
+            if (resultCode == RESULT_OK && data != null && data.getData() != null) {
+                CapCutBridge.openSelected(this, data.getData(),
+                    getContentResolver().getType(data.getData()), state);
+            } else state.setText("No clip selected.");
+            return;
+        }
         if (requestCode == IMAGE_REQUEST) {
             BubblesService.completeImagePicker(resultCode == RESULT_OK && data != null ? data.getData() : null);
             moveTaskToBack(true);
