@@ -5,6 +5,12 @@ on:
     paths:
       - 'workers/bubbles-connections/**'
       - 'bubbles-connections.mjs'
+      - 'index.html'
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/bubbles-home-account-link.test.mjs'
+      - 'index.html'
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
   push:
@@ -34,4 +40,5 @@ jobs:
             test/bubbles-consent.test.mjs \
             test/bubbles-connections-router.test.mjs \
             test/bubbles-connections-ui.test.mjs \
-            test/bubbles-connector-pairing.test.mjs
+            test/bubbles-connector-pairing.test.mjs \
+            test/bubbles-home-account-link.test.mjs
