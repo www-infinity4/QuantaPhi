@@ -24,6 +24,16 @@ import java.util.function.Consumer;
  */
 public final class BrainLearningService extends AccessibilityService {
     static final String ACCESS_OFF = "SCREEN_ACCESS_OFF";
+    static final String SCREEN_CONSENT = "screen_access_owner_disclosure_v1";
+    static boolean hasOwnerConsent(android.content.Context context) {
+        return BrainNotes.prefs(context).getBoolean(SCREEN_CONSENT, false);
+    }
+    static void revokeOwnerConsent(android.content.Context context) {
+        BrainNotes.prefs(context).edit().putBoolean(SCREEN_CONSENT, false).apply();
+        PhoneToolController.stop();
+        BrainLearningService service = active.get();
+        if (service != null) service.main.removeCallbacks(service.capture);
+    }
     private static WeakReference<BrainLearningService> active = new WeakReference<>(null);
     private final Handler main = new Handler(Looper.getMainLooper());
     private final ExecutorService screenWorker = Executors.newSingleThreadExecutor();
@@ -32,7 +42,12 @@ public final class BrainLearningService extends AccessibilityService {
         super.onServiceConnected();
         active = new WeakReference<>(this);
     }
-    static boolean isConnected() { return active.get() != null; }
+    // Android's Accessibility grant alone is not Bubbles' app-level consent.
+    // If the owner revokes permission here, leave the system service inert.
+    static boolean isConnected() {
+        BrainLearningService service = active.get();
+        return service != null && hasOwnerConsent(service);
+    }
     private static boolean allowed(AccessibilityNodeInfo node) {
         if (node == null) return false;
         CharSequence name = node.getPackageName();
@@ -42,6 +57,7 @@ public final class BrainLearningService extends AccessibilityService {
     }
     /** Prefer the foreground app, but skip the Bubbles floating overlay. */
     AccessibilityNodeInfo currentRoot() {
+        if (!hasOwnerConsent(this)) return null;
         AccessibilityNodeInfo root = getRootInActiveWindow();
         if (allowed(root)) return root;
         if (root != null) root.recycle();
@@ -55,7 +71,7 @@ public final class BrainLearningService extends AccessibilityService {
     }
     static String currentVisibleText() {
         BrainLearningService service = active.get();
-        if (service == null) return "";
+        if (service == null || !isConnected()) return "";
         AccessibilityNodeInfo root = service.currentRoot();
         if (root == null) return "";
         try {
@@ -75,7 +91,7 @@ public final class BrainLearningService extends AccessibilityService {
     }
     static void inspectNow(String question, Runnable frameCaptured, Consumer<String> callback) {
         BrainLearningService service = active.get();
-        if (service == null) { frameCaptured.run(); callback.accept(ACCESS_OFF); return; }
+        if (service == null || !isConnected()) { frameCaptured.run(); callback.accept(ACCESS_OFF); return; }
         service.inspect(question, frameCaptured, callback);
     }
     private void inspect(String question, Runnable frameCaptured, Consumer<String> callback) {
@@ -140,7 +156,7 @@ public final class BrainLearningService extends AccessibilityService {
     /** Deterministic, single, explicitly voiced/typed tap. Never tap risky controls. */
     static String performRequestedAction(String phrase) {
         BrainLearningService service = active.get();
-        if (service == null) return ACCESS_OFF;
+        if (service == null || !isConnected()) return ACCESS_OFF;
         String direction = ScreenAwareness.scrollDirection(phrase);
         String target = ScreenAwareness.tapTarget(phrase);
         if (direction == null && target == null) return null;
@@ -209,6 +225,7 @@ public final class BrainLearningService extends AccessibilityService {
     }
     private String pendingApp = "";
     private final Runnable capture = () -> {
+        if (!hasOwnerConsent(this)) return;
         String key=LearningPolicy.key(pendingApp);
         if(key==null || !BrainNotes.prefs(this).getBoolean(key,false))return;
         AccessibilityNodeInfo root=currentRoot();
@@ -221,6 +238,7 @@ public final class BrainLearningService extends AccessibilityService {
         } finally { root.recycle(); }
     };
     @Override public void onAccessibilityEvent(AccessibilityEvent event) {
+        if (!hasOwnerConsent(this)) { main.removeCallbacks(capture); return; }
         if (event.getEventType() == AccessibilityEvent.TYPE_VIEW_SCROLLED
                 && "com.android.chrome".contentEquals(event.getPackageName() == null ? "" : event.getPackageName()))
             PhoneToolController.invalidate();
@@ -250,7 +268,7 @@ public final class BrainLearningService extends AccessibilityService {
     }
     static org.json.JSONObject runPhoneTool(org.json.JSONObject command, String generation) {
         BrainLearningService service = active.get();
-        if (service != null) return PhoneToolController.execute(service, command, generation);
+        if (service != null && isConnected()) return PhoneToolController.execute(service, command, generation);
         org.json.JSONObject receipt = new org.json.JSONObject();
         try { receipt.put("id", command.optString("id")).put("ok", false).put("error", ACCESS_OFF); }
         catch (Exception ignored) {}
