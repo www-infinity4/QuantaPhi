@@ -66,6 +66,12 @@ jobs:
         run: node --test test/bubbles-room-notes-native.test.cjs test/bubbles-three-lane-voice.test.cjs test/bubbles-phone-playback-lane.test.cjs
       - name: Verify DU Recorder controls never restart native screen video
         run: node --test test/bubbles-du-recorder-handoff.test.cjs
+      - name: Verify adaptive voice pause and CapCut media handoff
+        run: |
+          node --test test/bubbles-adaptive-voice-capcut.test.cjs
+          mkdir -p /tmp/bubbles-adaptive
+          javac -d /tmp/bubbles-adaptive android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/VoiceCaptureCommands.java android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/TurnCompletionPolicy.java android/bubbles-overlay/checks/TurnCompletionPolicyCheck.java
+          java -cp /tmp/bubbles-adaptive org.quantaphi.bubbles.TurnCompletionPolicyCheck
       - name: Verify phone playback isolation and native recorder clip contracts
         run: |
           node --test test/bubbles-source-recording.test.cjs
