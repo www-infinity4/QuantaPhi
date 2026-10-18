@@ -28,6 +28,10 @@ public final class BrainLearningService extends AccessibilityService {
     private final Handler main = new Handler(Looper.getMainLooper());
     private final ExecutorService screenWorker = Executors.newSingleThreadExecutor();
     private long lastWatchFingerprint = Long.MIN_VALUE;
+    static void resetWatchVision() {
+        BrainLearningService service = active.get();
+        if (service != null) service.lastWatchFingerprint = Long.MIN_VALUE;
+    }
     /** Repeating owner-approved full visual frame capture. The Accessibility
      * screenshot is inspected off the UI thread, and discarded immediately.
      * No RTSP service, hidden capture token or disk-based frame archive.
