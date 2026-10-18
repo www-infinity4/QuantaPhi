@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {pinnedPinkReview,validatePinkSourceReceipt,completePinkReviewInContext} from '../workers/infinity-brain-clock/source-review.mjs';
+import {pinnedPinkReview,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from '../workers/infinity-brain-clock/source-review.mjs';
 const sha='1'.repeat(40),head='2'.repeat(40);
 const repo='www-infinity4/QuantaPhi';
 const generated=(id)=>({id,agent:'greenbeans',repository:repo,title:'Repair source-routing',
@@ -70,4 +70,15 @@ test('no forged generated repair is silently retired',()=>{
  const good=makeContext();
  good.color_jobs[1].dependencies.push('TASK-9');
  assert.equal(pinnedPinkReview(good,good.color_jobs[1]),null);
+});
+
+test('read-only Pink verification moves ahead of bot-generated repair churn but never overrules owner selection',()=>{
+ const ctx=makeContext();const candidate=id=>({context:ctx,job:ctx.color_jobs.find(j=>j.id===id),ticket:{id:'owner-ticket'}});
+ const jobs=[candidate('TASK-3'),candidate('TASK-1'),candidate('TASK-2')];
+ assert.deepEqual(prioritizeReadOnlyPinkReviews(jobs).map(x=>x.job.id),['TASK-2','TASK-3','TASK-1']);
+ assert.deepEqual(prioritizeReadOnlyPinkReviews(jobs,{requested:{ticketId:'owner-ticket',jobId:'TASK-3'}}).map(x=>x.job.id),
+  ['TASK-3','TASK-1','TASK-2']);
+ // A source review cannot evade the original policy when its merge receipt vanishes.
+ ctx.color_jobs[0].status='blocked';
+ assert.deepEqual(prioritizeReadOnlyPinkReviews(jobs).map(x=>x.job.id),['TASK-3','TASK-1','TASK-2']);
 });
