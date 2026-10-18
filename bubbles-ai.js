@@ -210,6 +210,7 @@ const MEMORY_OUTBOX=HISTORY+':outbox';
 const memoryPending=new Map((data(MEMORY_OUTBOX,[])||[]).filter(m=>m?.id&&m?.text).map(m=>[m.id,m])),memoryAck=new Set();let memoryBusy=false,memoryContext=[],memoryCapabilities=[],memoryLastError='',voiceConflict=false;
 const memoryClient=(nativeOverlay?'android_':'web_')+crypto.randomUUID();let voiceLeaseWanted=false,voiceLeaseClaim=false;
 let sharedVoiceStatusBusy=false,androidCompanionListening=false;
+let notificationPreferences={mode:'brief'};
 async function sharedMemory(query=''){
  if(embedded||!ownerReady||!ownerHeaders)return false;
  if(memoryBusy)return false;memoryBusy=true;
@@ -220,6 +221,7 @@ async function sharedMemory(query=''){
   for(const id of result.saved||[]){memoryPending.delete(id);memoryAck.add(id);}
   save(MEMORY_OUTBOX,[...memoryPending.values()]);
   memoryContext=result.related||[];memoryCapabilities=result.capabilities||[];
+  if(['brief','finished','detailed'].includes(result.notificationPreferences?.mode)){notificationPreferences=result.notificationPreferences;if(notificationPreferences.mode==='finished')progressVoiceQueue.splice(0,progressVoiceQueue.length,...progressVoiceQueue.filter(text=>/finished/.test(text)));}
   const seen=new Set(messages.map(m=>m.id));
   for(const m of result.recent||[])if(!seen.has(m.id)){messages.push(m);seen.add(m.id);display(m.text,m.role==='user'?'you':'ai');}
   messages.sort((a,b)=>a.at-b.at||String(a.id).localeCompare(String(b.id)));messages=messages.slice(-400);
@@ -1289,6 +1291,23 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ const preference=!embedded&&!pendingImage?brainTools?.notificationPreference?.(spoken):null;
+ if(preference){
+  busy=true;send.disabled=true;display(spoken,'you');input.value='';
+  let answer;
+  try{
+   const headers=await verifiedOwnerHeaders();
+   const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({mode:'notification-preferences',preference})},12000);
+   const result=await response.json();
+   if(!response.ok||!result.ok||result.preferences?.mode!==preference)throw Error('preference_not_confirmed');
+   notificationPreferences=result.preferences;
+   if(preference==='finished')progressVoiceQueue.splice(0,progressVoiceQueue.length,...progressVoiceQueue.filter(text=>/finished/.test(text)));
+   answer=preference==='finished'?'Saved. Only verified job completions.':preference==='brief'?'Saved. Brief job updates.':'Saved. A little more detail with verified results.';
+  }catch{answer='Your notification preference was not saved. Owner connection is needed.';}
+  display(answer,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:answer});persistChat();
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;else if(fromVoice)speakText(answer);
+  busy=false;send.disabled=false;nativeSpeechPending=false;return;
+ }
  if(!embedded&&/^(?:phone (?:read|status|tap|type|scroll_up|scroll_down)\b|ask (?:Gemini|IBM(?: Orchestrate)?):)/i.test(spoken)){
   busy=true;send.disabled=true;display(spoken,'you');input.value='';
   try{
@@ -2086,7 +2105,19 @@ async function pollBrainProgress(){
   showOwnerApprovalRequests(result.tickets);
   if(typeof refreshBulkOwnerRun==='function')refreshBulkOwnerRun(result.tickets);
   progressTracker.setScope?.(result.notificationScope);
-  const updates=progressTracker.update(result.tickets);
+  let updates=progressTracker.update(result.tickets);
+  if(result.notificationScope&&(nativeOverlay||config.voice)){
+   // Reserve speech with the server's actual voice owner and job receipts.
+   // A network failure stays quiet; a reservation never proves audio playback.
+   const events=progressTracker.events||[];
+   updates=[];
+   if(events.length&&(nativeOverlay||config.voice)){
+    const claim=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({mode:'notification-claim',client:memoryClient,events})},12000);
+    const receipt=await claim.json();
+    if(!claim.ok||!receipt.ok||!Array.isArray(receipt.notices))throw Error('notification_reservation_unavailable');
+    notificationPreferences=receipt.preferences||notificationPreferences;updates=receipt.notices;
+   }
+  }else if(notificationPreferences.mode==='finished')updates=updates.filter(text=>/finished/.test(text));
   if(progressUnavailable)recordBrainNotice('Robot Brain is reachable again.');
   progressUnavailable=false;
   if(updates.length)announceBrainProgress(updates.slice(-5).join(' '));

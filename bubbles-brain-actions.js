@@ -289,6 +289,10 @@ const finishEvidence=job=>['complete','deployed_verified'].includes(job?.status)
  job?.progress?.browserPassed===true&&job?.progress?.deployedFilesMatched===true&&
  job?.progress?.reviewApproved===true&&runnerEvidence(job);
 const jobSpeechLabel=ticket=>/\b(?:ui|interface|layout|button)\b/i.test(String(ticket?.title||''))?'UI job':'Job';
+function notificationPreference(text){
+ const command=String(text||'').trim().toLowerCase().replace(/^bubbles[, :]+/,'').replace(/[.!]$/,'').trim();
+ return {'less detail':'brief','only tell me when finished':'finished','more detail':'detailed'}[command]||null;
+}
 class ProgressTracker{
  constructor({storage}={}){
   this.storage=storage;this.scope='';this.seen=new Map();this.initialized=false;
@@ -305,7 +309,7 @@ class ProgressTracker{
   }catch{} // Storage failure never becomes spoken progress.
  }
  update(tickets){
-  const finished=[],started=[];let pending=0;
+  const finished=[],started=[],events=[];this.events=[];let pending=0;
   for(const ticket of tickets||[]){
    if(!ticket?.id)continue;
    const label=jobSpeechLabel(ticket);
@@ -318,8 +322,8 @@ class ProgressTracker{
     // New historical rows establish a silent baseline. Sticky checkpoints
     // survive retries, disappearing list rows, and owner-scoped reloads.
     if(this.initialized&&prior){
-     if(state.finished&&!prior.finished)finished.push(label);
-     else if(state.started&&!prior.started&&!prior.finished)started.push(label);
+     if(state.finished&&!prior.finished){finished.push(label);events.push({ticketId:ticket.id,jobId:job.id,transition:'finished'});}
+     else if(state.started&&!prior.started&&!prior.finished){started.push(label);events.push({ticketId:ticket.id,jobId:job.id,transition:'started'});}
     }
     this.seen.delete(key);
     this.seen.set(key,{started:state.started||prior?.started===true,finished:state.finished||prior?.finished===true});
@@ -328,6 +332,7 @@ class ProgressTracker{
   while(this.seen.size>2000)this.seen.delete(this.seen.keys().next().value);
   if(this.scope)try{this.storage?.setItem('bubbles-job-notices-v1:'+this.scope,JSON.stringify([...this.seen]));}catch{}
   if(!this.initialized){this.initialized=true;return [];}
+  this.events=events.filter(e=>e.transition==='finished'||(!finished.length&&pending===1&&started.length===1));
   if(finished.length){
    return ['UI job','Job'].flatMap(label=>{
     const count=finished.filter(x=>x===label).length;
@@ -338,7 +343,7 @@ class ProgressTracker{
   return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
-const api={nativeCaptureNotice,speechText,ProgressTracker,ownerApprovalRequests,bulkRunPreview,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief};
+const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);

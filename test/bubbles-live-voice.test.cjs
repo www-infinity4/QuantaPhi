@@ -35,6 +35,7 @@ function harness(owner=false,speech=false){
  const fetch=async(url,opts)=>{
   if(url.endsWith('/owner/conversation')){
    memoryRequests.push({url,opts});
+   const body=JSON.parse(opts.body);if(body.mode==='notification-preferences')return {ok:true,json:async()=>({ok:true,preferences:{mode:body.preference}})};
    return {ok:true,json:async()=>({ok:true,owned:ownsVoice,saved:JSON.parse(opts.body).messages?.map(m=>m.id)||[],recent:[],related:[]})};
   }
   if(url.endsWith('/work/github')){
@@ -151,4 +152,13 @@ test('a microphone takeover prevents the previous session from submitting a spok
  await new Promise(resolve=>setTimeout(resolve,20));await flush();
  assert.equal(h.requests.length,0,'A stale voice session cannot submit jobs or chat requests');
  assert.ok(h.memoryRequests.some(r=>JSON.parse(r.opts.body).mode==='voice-renew'));
+});
+
+test('spoken explicit notification correction saves only the setting through owner auth',async()=>{
+ const h=harness(true);await flush();h.orb.handlers.click();await flush();
+ h.recognized[0].onresult({resultIndex:0,results:[result('only tell me when finished')]});await flush();
+ const settings=h.memoryRequests.map(r=>JSON.parse(r.opts.body)).filter(b=>b.mode==='notification-preferences');
+ assert.deepEqual(settings,[{mode:'notification-preferences',preference:'finished'}]);
+ assert.equal(h.requests.length,0,'no job or chat-only provider request is created');
+ assert.ok(h.nodes.some(n=>[n.textContent,...n.children.filter(c=>typeof c==='string')].join('').includes('Saved. Only verified job completions.')));
 });
