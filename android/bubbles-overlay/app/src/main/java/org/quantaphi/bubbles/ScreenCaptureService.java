@@ -34,6 +34,14 @@ public final class ScreenCaptureService extends Service {
     @Override public int onStartCommand(Intent intent, int flags, int id) {
         if (intent == null || STOP.equals(intent.getAction())) { finishCapture(); return START_NOT_STICKY; }
         if (projection != null || finished) return START_NOT_STICKY;
+        // Video recording belongs to DU Recorder. Do not run the old Bubbles
+        // video/PCM muxer, which competed for audio and could crash the app.
+        if (!intent.getBooleanExtra("screenshot", false)) {
+            BrainNotes.prefs(this).edit().putString("capture_state",
+                "Bubbles native screen video is disabled; use DU Recorder's floating control.").apply();
+            stopSelf();
+            return START_NOT_STICKY;
+        }
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         nm.createNotificationChannel(new NotificationChannel("bubbles_capture", "Bubbles screen capture", NotificationManager.IMPORTANCE_LOW));
         PendingIntent stop = PendingIntent.getService(this, 12, new Intent(this, ScreenCaptureService.class).setAction(STOP),
