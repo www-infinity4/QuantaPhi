@@ -120,7 +120,19 @@ export function mountConnections(container,{token}) {
             const result=await client.call('/disconnect',{id:account.id});await load();
             status.textContent=result.providerRevocation==='failed'?'Disconnected in Bubbles. Provider revocation failed; remove Bubbles access in that service’s account settings.':'Account disconnected.';
           }catch(error){status.textContent=error.message;button.disabled=false;}});row.append(button);
-        }accounts.append(row);
+        }
+        if(account.provider==='github'&&account.status==='connected'){
+          const inspect=element('button','Check GitHub repositories','ba-control');inspect.type='button';
+          const result=element('div','');result.setAttribute('role','status');
+          inspect.addEventListener('click',async()=>{inspect.disabled=true;result.textContent='Checking installed repositories with GitHub…';try{
+            const data=await client.call('/github/repositories',{id:account.id});
+            result.replaceChildren(element('p',data.repositories.length+' repositories verified by GitHub.'));
+            for(const repo of data.repositories)result.append(element('p',repo.name+' · '+(repo.permissions.write?'write available':repo.permissions.read?'read available':'permissions unconfirmed')));
+            if(data.truncated)result.append(element('p','More repositories may exist beyond this bounded check.'));
+          }catch{result.textContent='GitHub repository verification failed. No repository action was performed.';}finally{inspect.disabled=false;}});
+          row.append(inspect,result);
+        }
+        accounts.append(row);
         if(account.provider==='google'&&account.status==='connected') {
           const tools=element('details','');tools.append(element('summary','Use this Google account'));
           const output=element('pre','');output.style.whiteSpace='pre-wrap';output.style.maxHeight='22rem';output.style.overflow='auto';
