@@ -1,0 +1,11 @@
+.communityUpgrade{max-width:980px;margin:14px auto 24px;padding:18px;border:1px solid #d4bfe4;border-radius:22px;background:#fff;color:#2f2440;box-shadow:0 6px 20px #2d174019}
+.communityUpgrade h2{font-size:clamp(20px,3vw,25px);margin:0 0 6px}
+.communityUpgrade p{line-height:1.5;margin:0 0 12px}
+.communityUpgrade form{display:grid;gap:10px}
+.communityUpgrade label{font-weight:750;font-size:14px;display:grid;gap:6px}
+.communityUpgrade textarea,.communityUpgrade input{font:16px/1.4 system-ui,sans-serif;min-width:0;width:100%;border:1px solid #ab98ba;border-radius:11px;padding:12px;color:#281936;background:#fff}
+.communityUpgrade textarea{min-height:100px;resize:vertical}
+.communityUpgrade button{justify-self:start;border:1px solid #44256b;background:#492277;color:#fff;padding:11px 16px;font:700 15px system-ui;border-radius:12px;min-height:44px}
+.communityUpgrade button:disabled{opacity:.6}
+.communityUpgrade :focus-visible{outline:3px solid #492277;outline-offset:2px}
+.communityUpgrade small{display:block;color:#685a75;line-height:1.5}
