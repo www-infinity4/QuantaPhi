@@ -1,0 +1,31 @@
+name: Bubbles Android security consent checks
+
+on:
+  pull_request:
+    paths:
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/MainActivity.java'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BrainLearningService.java'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenVision.java'
+      - 'test/bubbles-accessibility-consent.test.cjs'
+      - '.github/workflows/bubbles-android-security.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/MainActivity.java'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BrainLearningService.java'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenVision.java'
+      - 'test/bubbles-accessibility-consent.test.cjs'
+      - '.github/workflows/bubbles-android-security.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  consent-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test test/bubbles-accessibility-consent.test.cjs
