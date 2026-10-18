@@ -5,6 +5,7 @@ export async function resolveConnectorWalletToken(root=window){
   if(bridge?.ready)await bridge.ready;
   const resolved=await bridge?.resolveDeviceToken?.();
   if(/^sq_[A-Za-z0-9_-]{32,}$/.test(resolved||''))return resolved;
+  if(bridge?.resolveDeviceToken)throw Error('verified_wallet_required');
   for(const Wallet of [root.InfinityCloudWallet,root.InfinityUnifiedWallet]){
     if(!Wallet)continue;
     try{return new Wallet().token();}catch{}

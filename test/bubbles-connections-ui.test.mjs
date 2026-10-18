@@ -6,6 +6,7 @@ test('connector waits for device bridge and supports both wallet runtime exports
   assert.equal(await resolveConnectorWalletToken({QuantaCloudConnection:{ready:Promise.resolve().then(()=>ready=true),resolveDeviceToken:async()=>{assert.ok(ready);return token;}}}),token);
   assert.equal(await resolveConnectorWalletToken({InfinityUnifiedWallet:class{token(){return token;}}}),token);
   await assert.rejects(resolveConnectorWalletToken({}),/verified_wallet_required/);
+  await assert.rejects(resolveConnectorWalletToken({QuantaCloudConnection:{resolveDeviceToken:async()=>''},InfinityUnifiedWallet:class{token(){return token;}}}),/verified_wallet_required/);
 });
 test('redeeming a pairing does not require an existing wallet in the destination browser',async()=>{
   const client=new AccountConnections({token:()=>assert.fail('destination has no wallet'),root:{},request:async(url,options)=>{assert.ok(!options.headers.Authorization);return Response.json({ok:true});}});
