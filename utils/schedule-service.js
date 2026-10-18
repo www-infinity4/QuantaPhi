@@ -8,7 +8,7 @@ const store = new Map();
  * @param {string} key
  * @param {*} value
  */
-export function set(key, value) {
+function set(key, value) {
   store.set(key, value);
 }
 
@@ -17,7 +17,7 @@ export function set(key, value) {
  * @param {string} key
  * @returns {*}
  */
-export function get(key) {
+function get(key) {
   return store.get(key);
 }
 
@@ -25,6 +25,8 @@ export function get(key) {
  * Delete a schedule entry.
  * @param {string} key
  */
-export function del(key) {
+function del(key) {
   store.delete(key);
 }
+
+module.exports = { set, get, del };
