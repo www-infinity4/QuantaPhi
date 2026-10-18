@@ -40,6 +40,20 @@ export function pinnedPinkReview(context,job){
   prNumber:Number(link[2]),prUrl:proof.prUrl,repairIds:[...repaired].sort(),
   testsPreviouslyPassed:true,sourceDeployedVerified:false,mayWrite:false};
 }
+// A generated technical repair that has started or already produced source
+// cannot be silently superseded by a parallel Pink source-only verification.
+// Return a pure admission decision before a lease is claimed. The receipt
+// endpoint still re-checks this under the current D1 ticket state to prevent
+// races; no status, credential or owner permission is changed here.
+export function pinkReviewHasActiveRepair(context,review){
+ if(review?.kind!=='source_review_only'||!Array.isArray(review.repairIds))return false;
+ const jobs=Array.isArray(context?.color_jobs)?context.color_jobs:[];
+ return review.repairIds.some(id=>{
+  const repair=jobs.find(job=>job?.id===id);
+  return repair&&['working','committed_unverified','merged_verified','complete'].includes(repair.status);
+ });
+}
+
 export function validatePinkSourceReceipt({review,job,body}){
  if(review?.kind!=='source_review_only'||review?.mayWrite!==false||
   job?.agent!=='pink-panther'||!REPO.test(review.repository||'')||

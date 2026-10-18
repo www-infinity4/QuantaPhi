@@ -1,6 +1,6 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
-import {pinnedPinkReview,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
+import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
 import {conversationMemory} from './conversation-memory.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
@@ -135,10 +135,7 @@ export class BrainClock extends DurableObject{
     current.prNumber!==pinned.prNumber||
     JSON.stringify(current.repairIds)!==JSON.stringify(pinned.repairIds)||
     current.repository!==lease.repository)throw Error('source_review_dependency_changed');
-  if(current.repairIds.some(id=>{
-    const repair=context.color_jobs.find(j=>j.id===id);
-    return repair&&['working','committed_unverified','merged_verified','complete'].includes(repair.status);
-  }))throw Error('source_review_repair_still_executing_or_finished');
+  if(pinkReviewHasActiveRepair(context,current))throw Error('source_review_repair_still_executing_or_finished');
 
   const token=typeof body.verificationToken==='string'&&body.verificationToken?body.verificationToken:'';
   const headers={Accept:'application/vnd.github+json','User-Agent':'Infinity-Pink-Source-Review',...(token?{Authorization:'Bearer '+token}:{})};
@@ -275,6 +272,10 @@ export class BrainClock extends DurableObject{
      // A signed Pink review of already merged code may ignore only bot-generated
      // repair dependencies, not new user requirements or security decisions.
      const sourceReview=engine?pinnedPinkReview(context,job):null;
+     // Never claim a read-only Pink verification while an associated Green
+     // technical repair is running, committed or finished. Claiming it would
+     // later fail the D1 receipt guard and churn the ticket without progress.
+     if(sourceReview&&pinkReviewHasActiveRepair(context,sourceReview))continue;
      const effectiveDependencies=sourceReview?[sourceReview.primaryId]:(job.dependencies||[]);
      if(engine&&effectiveDependencies.some(id=>jobs.some(j=>j.id===id&&!['complete','deployed_verified','merged_verified'].includes(j.status))))continue;
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
