@@ -259,3 +259,13 @@ test('Bubbles retains short spoken preferences without converting ordinary quest
  assert.match(concise,/More details are in the chat/);
  assert.equal(speechText(long,{brief:false}),long,'full written answer is not truncated');
 });
+
+test('spoken browser follow-ups are a bounded FIFO and failures become visible replies',()=>{
+ const site=fs.readFileSync(require.resolve('../bubbles-ai.js'),'utf8');
+ assert.match(site,/voicePending=\[\]/);
+ assert.match(site,/voicePending\.push\(turn\.text\)/);
+ assert.match(site,/voicePending\.shift\(\)/);
+ assert.doesNotMatch(site,/voicePending=turn\.text/);
+ assert.match(site,/if\(nativeOverlay&&nativeSpeechPending\)\{nativeSpeechReply=message;nativeSpeechPending=false;/);
+ assert.match(site,/learnedVoiceInstructions/);
+});
