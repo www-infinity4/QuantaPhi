@@ -4,6 +4,7 @@ import { handle as walletHandle } from "./wallet.mjs";
 import { handle as hboHandle } from "../../channels/HBO/channel-reader.js";
 import { sourceReview } from "../infinity-brain-clock/source-review.mjs";
 import { fetchAuthenticated } from "../infinity-brain-clock/direct-github.mjs";
+import { emit } from "./eventEmitter.mjs";
 
 /**
  * Dispatches a job to the appropriate handler based on its `type` field.
@@ -29,22 +30,38 @@ export async function routeJob(job) {
     return { error: "auth", message: e.message };
   }
 
+  // Emit claim event as soon as the job is received.
+  await emit('bubblesJobClaimed', { jobId: job?.id ?? job?.jobId ?? null });
+
   if (!job || typeof job.type !== "string") {
+    // Emit finished event for early exit.
+    await emit('bubblesJobFinished', { jobId: job?.id ?? job?.jobId ?? null });
     return { status: "error", reason: "invalid_job", job };
   }
+
+  let result;
   switch (job.type) {
     case "search":
-      return await searchHandle(job);
+      result = await searchHandle(job);
+      break;
     case "media":
-      return await mediaHandle(job);
+      result = await mediaHandle(job);
+      break;
     case "wallet":
-      return await walletHandle(job);
+      result = await walletHandle(job);
+      break;
     case "channel":
       if (job.channel === "HBO") {
-        return await hboHandle(job);
+        result = await hboHandle(job);
+      } else {
+        result = { status: "error", reason: "unknown_channel", channel: job.channel };
       }
-      return { status: "error", reason: "unknown_channel", channel: job.channel };
+      break;
     default:
-      return { status: "error", reason: "unknown_type", type: job.type };
+      result = { status: "error", reason: "unknown_type", type: job.type };
   }
+
+  // Emit finished event after handling.
+  await emit('bubblesJobFinished', { jobId: job?.id ?? job?.jobId ?? null });
+  return result;
 }
