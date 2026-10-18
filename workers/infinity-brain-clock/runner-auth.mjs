@@ -30,3 +30,53 @@ export function supported(job){
  return job.repository===REPO && /clear\s+(?:text|input)|(?:brain|robot).*(?:input|button|readab|message|display)/i.test(job.instructions||'') && !(job.dependencies||[]).length;
 }
 
+/**
+ * Obtain a short‑lived OIDC token for the runner.
+ * Uses the `GITHUB_TOKEN` environment variable for authentication.
+ * Retries up to three times with exponential back‑off for transient failures.
+ */
+export async function getRunnerToken(){
+ const envToken = process.env.GITHUB_TOKEN;
+ if(!envToken){
+   throw new Error('GITHUB_TOKEN_missing');
+ }
+ const url = 'https://api.github.com/actions/id-token';
+ const maxAttempts = 3;
+ const baseDelay = 500; // ms
+ for(let attempt = 1; attempt <= maxAttempts; attempt++){
+   try{
+     const resp = await fetch(url, {
+       method: 'GET',
+       headers: {
+         'Authorization': `Bearer ${envToken}`,
+         'Accept': 'application/json'
+       },
+       signal: AbortSignal.timeout(10000)
+     });
+     if(!resp.ok){
+       // Retry on server errors (5xx)
+       if(resp.status >= 500 && attempt < maxAttempts){
+         await new Promise(r => setTimeout(r, baseDelay * Math.pow(2, attempt-1)));
+         continue;
+       }
+       const txt = await resp.text();
+       throw new Error(`oidc_token_request_failed: ${resp.status} ${txt}`);
+     }
+     const data = await resp.json();
+     if(!data || typeof data.value !== 'string'){
+       throw new Error('oidc_token_missing');
+     }
+     return data.value;
+   }catch(e){
+     // Network or abort errors – retry if attempts remain
+     if(attempt >= maxAttempts) throw e;
+     if(e.name === 'AbortError' || e.message.includes('network')){
+       await new Promise(r => setTimeout(r, baseDelay * Math.pow(2, attempt-1)));
+       continue;
+     }
+     throw e;
+   }
+ }
+ // Should never reach here
+ throw new Error('oidc_token_unavailable');
+}
