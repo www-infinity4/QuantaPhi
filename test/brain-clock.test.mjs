@@ -488,3 +488,38 @@ test('BrainClock deferred recovery never overrides real owner/security refusal',
  assert.equal(result.state,'no_due_deferred_technical_work');
  assert.equal(writes,0);assert.equal(reads,0);
 });
+
+
+test('BrainClock accepts explicit token plan, but cannot mint Cloudflare credentials without separate server secret',async()=>{
+ const memory=new Map(),storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),
+  transaction:async fn=>fn({get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)})};
+ const clock=new BrainClock({storage},{BOT_WORK_SECRET:'x'.repeat(40),WRITER_OWNER_HASH:'f'.repeat(64)});
+ const p=await clock.fetch(new Request('https://clock.internal/owner/cloudflare-token-plan',{
+  method:'POST',body:JSON.stringify({capability:'workers-script-edit',
+   durationHours:24,purpose:'Prepare approved Bubbles site version uploads'})}));
+ const plan=await p.json();assert.equal(plan.ok,true);
+ assert.equal(plan.managerConfigured,false);
+ assert.equal(plan.requiresExplicitOwnerAction,true);
+ assert.equal(plan.tokenValueWillBeSentToApp,false);
+ const response=await clock.fetch(new Request('https://clock.internal/owner/cloudflare-token-confirm',{
+  method:'POST',body:JSON.stringify({requestId:plan.requestId})}));
+ const result=await response.json();
+ assert.equal(result.ok,false);
+ assert.equal(result.error,'cloudflare_token_manager_not_configured');
+ assert.equal(memory.get('cloudflare-token-plan:'+plan.requestId).status,'owner_approval_required');
+ assert.equal([...memory.keys()].some(k=>k.startsWith('cloudflare-token-vault:')),false);
+});
+test('public Cloudflare token endpoints reject absent owner sessions before any token lookup',async()=>{
+ const tokenEndpoints=['/work/cloudflare/token-plan','/work/cloudflare/token-confirm'];
+ let readSecret=0;
+ const env={WRITER_OWNER_HASH:'f'.repeat(64),CLOCK:{
+  idFromName:()=>{readSecret++;throw Error('No unauthenticated Cloudflare broker calls allowed');}
+ }};
+ for(const path of tokenEndpoints){
+  const response=await brainWorker.fetch(new Request('https://brain.local'+path,{
+   method:'POST',body:JSON.stringify({purpose:'Unapproved worker deployment'})}),env);
+  assert.equal(response.status,401);
+  assert.equal((await response.json()).error,'owner_authorization_required');
+ }
+ assert.equal(readSecret,0);
+});
