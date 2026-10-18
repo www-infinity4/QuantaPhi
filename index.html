@@ -326,6 +326,18 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
  <small>This lightweight browser animation is not a rendered AI video; the AI video provider must be connected separately.</small>
 </section>
 <section id="bubblesAICard" aria-label="Bubbles AI card"></section>
+<section class="communityUpgrade" id="communityUpgrade" aria-labelledby="communityUpgradeTitle">
+  <h2 id="communityUpgradeTitle">Suggest an upgrade to Bubbles or QuantaPhi</h2>
+  <p>Report a broken button, propose a better swipe or layout, suggest video features, or recommend advertising placement. Relevant ideas can be reviewed by GPT and the Robot Brain team. Public suggestions do not grant access to the owner's accounts.</p>
+  <form id="communityUpgradeForm">
+   <label>Your display name (optional)<input id="communityUpgradeName" maxlength="40" autocomplete="nickname" placeholder="What should Bubbles call you?"></label>
+   <label>What should we improve?<textarea id="communityUpgradeIdea" maxlength="2200" required minlength="15" placeholder="For example: #bubbles The Video tab isn't visible on my Android phone. Please investigate the responsive layout."></textarea></label>
+   <button type="submit">Send upgrade suggestion</button>
+   <p role="status" aria-live="polite" id="communityUpgradeStatus">Ideas are reviewed before becoming work. No automatic payouts or advertising clicks are awarded.</p>
+  </form>
+  <small>Don't include passwords, phone contacts, account numbers, or private information. Advertising and rewards require separate terms and verification.</small>
+ </section>
+
  <section id="phiProjectActions" aria-label="Code Phi and Create Phi Oracle action cards"></section>
  <section id="halloweenPhi" aria-label="Terra Phi and Petra Phi cinema and image collections"></section>
 <section class="media" id="media" hidden><h2>Media extensions</h2><div class="mediaGrid" id="mediaGrid"></div></section>
@@ -1707,6 +1719,8 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
   <script defer src="/bubbles-ai.js?v=20261018-readable3"></script>
 <link rel="stylesheet" href="/bubbles-orbit-preview.css?v=20261018-motion1">
 <script defer src="/bubbles-orbit-preview.js?v=20261018-motion1"></script>
+<link rel="stylesheet" href="/bubbles-community-upgrades.css?v=20261018-community1">
+<script defer src="/bubbles-community-upgrades.js?v=20261018-community1"></script>
 <script defer src="/fred-spaces-radio.js?v=20261011-targeted-fred2"></script>
 <script defer src="/magoo-spaces-radio.js?v=20261010-magoo2"></script>
 <script defer src="/following-spaces-radio.js?v=20261011-single-person4"></script>
