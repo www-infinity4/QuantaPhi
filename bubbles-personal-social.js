@@ -49,7 +49,7 @@
    if(action==='connect'){
     if(name.value.trim().length<2)throw Error('Enter a bubble name first.');
     // Sync the editable Bubbles name without inventing a separate persona identity.
-    window.dispatchEvent(new CustomEvent('bubbles:personal-name-request',{detail:{alias:name.value.trim().slice(0,38)}}));
+    if(typeof window.CustomEvent==='function')window.dispatchEvent(new window.CustomEvent('bubbles:personal-name-request',{detail:{alias:name.value.trim().slice(0,38)}}));
    }
    const data=await invoke(action,action==='connect'?{
     name:name.value.trim(),provider:provider.value,accountId:account.value.trim()
