@@ -1,0 +1,9 @@
+name = "cloudflare-webhook"
+main = "./workers/cloudflare-webhook/handler.mjs"
+compatibility_date = "2024-10-01"
+
+# Placeholder KV namespace – replace with a real binding when deploying.
+[[kv_namespaces]]
+binding = "WEBHOOK_DEDUP_KV"
+# The ID below is a dummy value; the actual KV namespace ID must be supplied during deployment.
+id = "00000000000000000000000000000000"
