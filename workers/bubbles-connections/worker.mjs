@@ -17,7 +17,7 @@ export class UserConnections extends DurableObject {
   }
   async list(input) {return this.service.list(input);}
   async start(input) {return this.service.start(input);}
-  async complete(input) {return this.service.complete(input);}
+  async complete(input) {try{return await this.service.complete(input);}catch(error){const allowed=/^(expiring_token_required|provider_token_invalid|provider_response_invalid|provider_identity_invalid|github_exchange_rejected|github_exchange_\d+|github_identity_rejected|github_identity_\d+|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled)$/;return {connectionError:allowed.test(error.message)?error.message:'connection_operation_failed'};}}
   async disconnect(input) {return this.service.disconnect(input);}
   async refresh(input) {return this.service.refresh(input);}
   async read(input) {return executeGoogleRead(this.service,input);}
