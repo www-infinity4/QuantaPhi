@@ -42,7 +42,7 @@ public final class ScreenCaptureService extends Service {
         if (projection != null || finished) return START_NOT_STICKY;
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         nm.createNotificationChannel(new NotificationChannel("bubbles_capture", "Bubbles screen capture", NotificationManager.IMPORTANCE_LOW));
-        Notification notification = captureNotification(false);
+        Notification notification = captureNotification(false, !intent.getBooleanExtra("screenshot", false));
         try {
             if (Build.VERSION.SDK_INT >= 29) startForeground(512, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION);
             else startForeground(512, notification);
@@ -172,14 +172,14 @@ public final class ScreenCaptureService extends Service {
                     ? "Screen recording paused · say resume recording, or stop to save"
                     : "Screen recording resumed · same approved session").apply();
             ((NotificationManager) getSystemService(NOTIFICATION_SERVICE))
-                .notify(512, captureNotification(pause));
+                .notify(512, captureNotification(pause, true));
         } catch (RuntimeException failure) {
             BrainNotes.prefs(this).edit().putString("capture_state",
                 "Recording pause/resume failed; capture state unchanged").apply();
         }
     }
 
-    private Notification captureNotification(boolean paused) {
+    private Notification captureNotification(boolean paused, boolean video) {
         int code = paused ? 14 : 13;
         Intent toggle = new Intent(this, ScreenCaptureService.class)
             .setAction(paused ? RESUME : PAUSE);
@@ -188,16 +188,17 @@ public final class ScreenCaptureService extends Service {
         PendingIntent stop = PendingIntent.getService(this, 12,
             new Intent(this, ScreenCaptureService.class).setAction(STOP),
             PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
-        return new Notification.Builder(this, "bubbles_capture")
+        Notification.Builder builder = new Notification.Builder(this, "bubbles_capture")
             .setSmallIcon(android.R.drawable.ic_menu_camera)
-            .setContentTitle("Bubbles screen recording")
-            .setContentText(paused ? "Recording paused · Resume or Stop & save"
-                : "Recording active · Pause or Stop & save")
-            .setOngoing(true)
-            .addAction(android.R.drawable.ic_media_pause,
-                paused ? "Resume" : "Pause", change)
-            .addAction(android.R.drawable.ic_delete, "Stop & save", stop)
-            .build();
+            .setContentTitle(video ? "Bubbles screen recording" : "Bubbles screenshots")
+            .setContentText(video
+                ? (paused ? "Recording paused · Resume or Stop & save"
+                    : "Recording active · Pause or Stop & save")
+                : "Screen capture active · Stop to finish")
+            .setOngoing(true);
+        if (video) builder.addAction(paused ? android.R.drawable.ic_media_play
+                : android.R.drawable.ic_media_pause, paused ? "Resume" : "Pause", change);
+        return builder.addAction(android.R.drawable.ic_delete, "Stop & save", stop).build();
     }
 
     /** Publish in the Android media library before stopping the foreground service.
