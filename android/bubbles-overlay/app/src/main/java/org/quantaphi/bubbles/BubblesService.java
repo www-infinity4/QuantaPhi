@@ -902,6 +902,7 @@ public final class BubblesService extends Service {
                     else BrainNotes.prefs(this).edit().putString("audio_state", "No active sound recording").apply();
                     break;
                 case "capture_stop": {
+                    if (!typed) speak("Stopping.");
                     boolean screenActive = BrainNotes.prefs(this).getBoolean("capture_active", false);
                     boolean soundActive = recording.active();
                     if (soundActive) saveAudio();
@@ -910,15 +911,20 @@ public final class BubblesService extends Service {
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing and saving screen capture…").apply();
                     }
                     if (!screenActive && !soundActive)
-                        DuRecorderBridge.request(this, "stop", main);
+                        DuRecorderBridge.request(this, "stop", main, feedback -> {
+                            if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
+                        });
                     if (!screenActive && !soundActive && speaking) silenceReply();
                     break;
                 }
                 case "screen_stop":
+                    if (!typed) speak("Stopping.");
                     if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
                         startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing screen capture…").apply();
-                    } else DuRecorderBridge.request(this, "stop", main);
+                    } else DuRecorderBridge.request(this, "stop", main, feedback -> {
+                        if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
+                    });
                     break;
                 case "screen_video":
                     if (!typed) speak("Starting.");
