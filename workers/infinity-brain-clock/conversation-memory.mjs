@@ -1,3 +1,4 @@
+import {notificationSettings} from './notification-settings.mjs';
 // Owner-only conversation archive. Kept separate from verified engineering outcomes.
 const initialized=new WeakSet();
 export const capabilities=[
@@ -27,6 +28,7 @@ export function normalizeMessages(messages){
 export function searchTerms(query){return [...new Set(String(query||'').toLowerCase().match(/[a-z0-9]{3,32}/g)||[])].slice(0,12).map(x=>'"'+x+'"').join(' OR ');}
 export async function conversationMemory(db,owner,body){
  if(!initialized.has(db)){for(const sql of schema)await db.prepare(sql).run();initialized.add(db);}
+ if(['notification-preferences','notification-claim'].includes(body.mode))return notificationSettings(db,owner,body);
  if(['voice-claim','voice-renew','voice-status','voice-release'].includes(body.mode)){
   if(!/^[a-zA-Z0-9_-]{8,100}$/.test(body.client||''))throw Error('voice_client_invalid');
   const now=Date.now(),expires=now+35000;
@@ -60,5 +62,6 @@ export async function conversationMemory(db,owner,body){
  const recent=await db.prepare('SELECT id,role,text,at FROM bubbles_messages WHERE owner=? ORDER BY at DESC,id DESC LIMIT 64').bind(owner).all();
  const query=searchTerms(body.query);let related=[];
  if(query){const rows=await db.prepare('SELECT m.id,m.role,m.text,m.at FROM bubbles_message_index JOIN bubbles_messages m ON m.owner=bubbles_message_index.owner AND m.id=bubbles_message_index.id WHERE bubbles_message_index MATCH ? AND m.owner=? ORDER BY rank LIMIT 16').bind(query,owner).all();related=rows.results||[];}
- return {ok:true,capabilities,saved:messages.map(m=>m.id),recent:(recent.results||[]).reverse(),related,retention:'archive',retrieval:'recent64-and-indexed16'};
+ const notificationPreferences=(await notificationSettings(db,owner,{mode:'notification-preferences'})).preferences;
+ return {ok:true,notificationPreferences,capabilities,saved:messages.map(m=>m.id),recent:(recent.results||[]).reverse(),related,retention:'archive',retrieval:'recent64-and-indexed16'};
 }
