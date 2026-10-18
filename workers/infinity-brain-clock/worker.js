@@ -1342,15 +1342,35 @@ export default{
      if(profile.provider!=='x')return output(request,{ok:false,error:'provider_scan_not_connected'},503);
      const read=await fetchOwnedXPosts({accountId:profile.social_account_id,token:env.X_API_BEARER_TOKEN,maxPages:2});
      if(!read.ok)return output(request,{ok:false,error:read.error},503);
-     let created=0,matched=0;
+     let created=0,matched=0,rejected=0,modelReviewed=0;
      for(const post of read.posts){
       const cmd=parsePersonalPost(post,profile);if(!cmd)continue;
       matched++;
-      const saved=await db.prepare('INSERT OR IGNORE INTO bubble_social_inbox(user_id,source_id,provider,source_url,command_tag,suggestion,status,added_at) VALUES(?,?,?,?,?,?,?,?)')
-       .bind(userId,cmd.sourceId,'x',cmd.sourceUrl,cmd.tag,cmd.command,'new',Date.now()).run();
+      const previous=await db.prepare('SELECT source_id FROM bubble_social_inbox WHERE user_id=? AND source_id=?')
+       .bind(userId,cmd.sourceId).first();
+      if(previous)continue;
+      const proposed=classifyCommunitySuggestion(cmd.command);
+      let decision={status:'needs_review',summary:'GPT review not available',risk:'high'};
+      if(!proposed.accepted){
+       rejected++;decision={status:'reject',category:'other',placement:'community-review',
+        summary:'Rejected at intake: '+proposed.error,risk:'high'};
+      }else if(modelReviewed<3){
+       modelReviewed++;
+       decision=await reviewCommunityWithGPT(cmd.command,proposed,{
+        apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1'
+       });
+      }
+      const saveText=proposed.accepted?cmd.command:'[rejected sensitive or unsuitable request]';
+      const saved=await db.prepare('INSERT OR IGNORE INTO bubble_social_inbox(user_id,source_id,provider,source_url,command_tag,suggestion,category,proposed_placement,gpt_status,gpt_summary,risk,status,added_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)')
+       .bind(userId,cmd.sourceId,'x',cmd.sourceUrl,cmd.tag,saveText,
+         String(decision.category||proposed.category||'other'),
+         String(decision.placement||proposed.placement||'community-review'),
+         String(decision.status||'needs_review'),
+         String(decision.summary||'').slice(0,240),
+         String(decision.risk||'high'),'new',Date.now()).run();
       created+=Number(saved?.meta?.changes||0);
      }
-     return output(request,{ok:true,tag:profile.command_tag,matched,created,
+     return output(request,{ok:true,tag:profile.command_tag,matched,created,rejected,modelReviewed,
       readOnly:true,autoExecuted:0,writePermissionGranted:false});
     }
     if(action==='dismiss'){
@@ -1360,7 +1380,7 @@ export default{
       .bind(userId,sourceId).run();
      return output(request,{ok:true});
     }
-    const rows=await db.prepare('SELECT source_id,source_url,command_tag,suggestion,status,added_at FROM bubble_social_inbox WHERE user_id=? ORDER BY added_at DESC LIMIT 30')
+    const rows=await db.prepare('SELECT source_id,source_url,command_tag,suggestion,category,proposed_placement,gpt_status,gpt_summary,risk,status,added_at FROM bubble_social_inbox WHERE user_id=? ORDER BY added_at DESC LIMIT 30')
      .bind(userId).all();
     return output(request,{ok:true,tag:profile.command_tag,commands:rows.results||[],
       note:'Verified owner posts are suggestions. No repository-write consent or deployment is implied.'});
