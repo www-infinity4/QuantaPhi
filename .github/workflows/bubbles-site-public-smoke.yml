@@ -1,0 +1,31 @@
+name: Bubbles live release public smoke
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/bubbles-site-public-smoke.yml'
+      - 'scripts/verify-bubbles-live-site.mjs'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/bubbles-site-public-smoke.yml'
+      - 'scripts/verify-bubbles-live-site.mjs'
+      - 'index.html'
+      - 'workers/quantaphi-site/worker.js'
+      - 'workers/bubbles-connections/router.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-release-health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify live site, connector, Bubbles navigation and Platinum security hold
+        run: node scripts/verify-bubbles-live-site.mjs
