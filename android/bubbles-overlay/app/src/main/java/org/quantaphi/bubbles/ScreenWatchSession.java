@@ -42,7 +42,7 @@ final class ScreenWatchSession {
     String recent(long now) { return active ? latest : ""; }
     String recentVisual(long now) {
         return active && !visual.isEmpty()
-            ? "Last processed visual frame at elapsed " + lastVisualAt + " ms: " + visual : "";
+            ? "Visual analysis from " + Math.max(0L, now-lastVisualAt)/1000L + " seconds ago: " + visual : "";
     }
     void stop() {
         active = false;
