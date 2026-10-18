@@ -283,36 +283,59 @@ function speechText(value){
 // Intermediate comments, D1 labels, merges and alarm dispatches remain in
 // the owner ticket detail instead of interrupting conversation.
 const runnerEvidence=job=>/^https:\/\/github\.com\/www-infinity4\/[\w.-]+\/actions\/runs\/\d+(?:[/?#]|$)/.test(String(job?.progress?.runUrl||''));
-const startEvidence=job=>job?.status==='working'&&runnerEvidence(job)&&Number.isFinite(Date.parse(job?.progress?.attemptedAt||''));
+const startEvidence=job=>job?.status==='working'&&runnerEvidence(job)&&Number.isFinite(Date.parse(job?.progress?.claimedAt||''));
 const finishEvidence=job=>['complete','deployed_verified'].includes(job?.status)&&
- /^[a-f0-9]{40}$/i.test(String(job?.progress?.commitSha||''))&&job?.progress?.testsPassed===true&&runnerEvidence(job);
+ /^[a-f0-9]{40}$/i.test(String(job?.progress?.commitSha||''))&&job?.progress?.testsPassed===true&&
+ job?.progress?.browserPassed===true&&job?.progress?.deployedFilesMatched===true&&
+ job?.progress?.reviewApproved===true&&runnerEvidence(job);
 const jobSpeechLabel=ticket=>/\b(?:ui|interface|layout|button)\b/i.test(String(ticket?.title||''))?'UI job':'Job';
 class ProgressTracker{
- constructor(){this.seen=new Map();this.initialized=false;}
+ constructor({storage}={}){
+  this.storage=storage;this.scope='';this.seen=new Map();this.initialized=false;
+ }
+ setScope(scope){
+  if(!/^[a-f0-9]{64}$/.test(String(scope||''))||scope===this.scope)return;
+  this.scope=scope;this.seen=new Map();this.initialized=false;
+  try{
+   const entries=JSON.parse(this.storage?.getItem('bubbles-job-notices-v1:'+scope)||'[]');
+   if(Array.isArray(entries))for(const row of entries.slice(-2000)){
+    if(Array.isArray(row)&&typeof row[0]==='string'&&row[0].length<240&&row[1]&&typeof row[1]==='object')
+     this.seen.set(row[0],{started:row[1].started===true,finished:row[1].finished===true});
+   }
+  }catch{} // Storage failure never becomes spoken progress.
+ }
  update(tickets){
-  const next=new Map(),finished=[],started=[];
-  let active=0;
+  const finished=[],started=[];let pending=0;
   for(const ticket of tickets||[]){
-   const previous=this.seen.get(ticket.id);
-   const current=new Map(),label=jobSpeechLabel(ticket);
+   if(!ticket?.id)continue;
+   const label=jobSpeechLabel(ticket);
    for(const job of ticket.context?.color_jobs||[]){
     if(!job?.id)continue;
+    const key=JSON.stringify([ticket.id,job.id]);
+    const prior=this.seen.get(key);
     const state={started:startEvidence(job),finished:finishEvidence(job)};
-    current.set(job.id,state);
-    if(state.started)active++;
-    const prior=previous?.get(job.id);
-    // First sighting of a ticket/job is baseline, never replay old work.
-    if(!this.initialized||!prior)continue;
-    if(state.finished&&!prior.finished)finished.push(label+' finished.');
-    else if(state.started&&!prior.started)started.push(label+' started.');
+    if(['queued','working'].includes(job.status))pending++;
+    // New historical rows establish a silent baseline. Sticky checkpoints
+    // survive retries, disappearing list rows, and owner-scoped reloads.
+    if(this.initialized&&prior){
+     if(state.finished&&!prior.finished)finished.push(label);
+     else if(state.started&&!prior.started&&!prior.finished)started.push(label);
+    }
+    this.seen.delete(key);
+    this.seen.set(key,{started:state.started||prior?.started===true,finished:state.finished||prior?.finished===true});
    }
-   next.set(ticket.id,current);
   }
-  this.seen=next;
+  while(this.seen.size>2000)this.seen.delete(this.seen.keys().next().value);
+  if(this.scope)try{this.storage?.setItem('bubbles-job-notices-v1:'+this.scope,JSON.stringify([...this.seen]));}catch{}
   if(!this.initialized){this.initialized=true;return [];}
-  // One active job may announce its start. Bulk runs only announce verified
-  // completions, even if individual claims arrive in separate poll cycles.
-  return (finished.length?finished:active===1&&started.length===1?started:[]).slice(-5);
+  if(finished.length){
+   return ['UI job','Job'].flatMap(label=>{
+    const count=finished.filter(x=>x===label).length;
+    return count?[count===1?label+' finished.':count+' '+(label==='UI job'?'UI jobs':'jobs')+' finished.']:[];
+   });
+  }
+  // Count queued siblings too: bulk claims can arrive in separate polls.
+  return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
 const api={nativeCaptureNotice,speechText,ProgressTracker,ownerApprovalRequests,bulkRunPreview,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief};
