@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const config=readFileSync(new URL('../workers/infinity-brain-clock/wrangler.toml',import.meta.url),'utf8');
-const serviceEntries=[...config.matchAll(/^\[\[services\]\]\s*\n([\s\S]*?)(?=^\[\[|^\[|$)/gm)].map(m=>m[1]);
+const serviceEntries=[...config.matchAll(/\[\[services\]\]([\s\S]*?)(?=\[\[|\n\[|$)/g)].map(m=>m[1]);
 const field=(body,key)=>body.split('\n').filter(l=>!l.trim().startsWith('#'))
  .map(l=>l.match(new RegExp('^\\s*'+key+'\\s*=\\s*"([^"]+)"\\s*$')))
  .find(Boolean)?.[1]||null;
