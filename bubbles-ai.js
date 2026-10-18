@@ -520,6 +520,39 @@ const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mi
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
 const send=create('button','ba-send','Send');send.type='submit';
 actions.append(photoRow,mic,speak,send);composer.append(input,photoPreview,actions);
+// Account connector pairing stays beside the message box in website and APK chat.
+const connectorCodeButton=create('button','ba-control ba-connector-code','Create one-time connection code');
+connectorCodeButton.type='button';
+const connectorCodeStatus=create('p','ba-muted','');connectorCodeStatus.setAttribute('role','status');connectorCodeStatus.hidden=true;
+const connectorCodeOutput=create('div','ba-connector-code-output');connectorCodeOutput.hidden=true;
+const connectorCodeValue=create('input','ba-field');connectorCodeValue.type='password';connectorCodeValue.readOnly=true;connectorCodeValue.autocomplete='off';connectorCodeValue.setAttribute('aria-label','Private one-time account connection code');
+const connectorCodeCopy=create('button','ba-control','Copy connection code');connectorCodeCopy.type='button';
+connectorCodeCopy.addEventListener('click',async()=>{
+ if(!connectorCodeValue.value)return;
+ try{await navigator.clipboard.writeText(connectorCodeValue.value);connectorCodeStatus.textContent='Connection code copied. Use it within two minutes.';}
+ catch{connectorCodeValue.type='text';connectorCodeValue.select();connectorCodeStatus.textContent='Select and copy this private code.';}
+});
+connectorCodeOutput.append(connectorCodeValue,connectorCodeCopy);
+let connectorCodeTimer=null;
+connectorCodeButton.addEventListener('click',async()=>{
+ connectorCodeButton.disabled=true;connectorCodeStatus.hidden=false;connectorCodeStatus.textContent='Creating your one-time connection code…';
+ connectorCodeOutput.hidden=true;connectorCodeValue.value='';clearTimeout(connectorCodeTimer);
+ let module;
+ try{
+  module=await import('/bubbles-connections.mjs?v=20261018-direct2');
+  const client=new module.AccountConnections({token:()=>module.resolveConnectorWalletToken(window)});
+  const result=await client.call('/pair/create',{});
+  if(!/^[A-Za-z0-9_-]{16,64}$/.test(result.code||'')||!Number.isFinite(result.expiresIn)||result.expiresIn<=0)throw Error('connection_response_invalid');
+  connectorCodeValue.type='password';connectorCodeValue.value=result.code;connectorCodeOutput.hidden=false;
+  connectorCodeStatus.textContent='Code ready. Copy it to Account Connections in the other browser. It expires in two minutes and grants connector access for 15 minutes.';
+  connectorCodeTimer=setTimeout(()=>{connectorCodeValue.value='';connectorCodeOutput.hidden=true;connectorCodeStatus.textContent='Connection code expired. Tap the button for a new one.';},Math.min(result.expiresIn,120)*1000);
+ }catch(error){connectorCodeStatus.textContent=module?module.connectionCodeMessage(error):'The connection controls could not load. Try again.';}
+ finally{connectorCodeButton.disabled=false;}
+});
+if(!embedded)composer.append(connectorCodeButton,connectorCodeStatus,connectorCodeOutput);
+
+
+
 const privateLabel=create('label','ba-muted'),privateContext=create('input');privateContext.type='checkbox';privateContext.checked=config.privateContext===true;privateLabel.append(privateContext,create('span','',' Use my private Quant-AI selling defaults'));privateContext.addEventListener('change',()=>{config.privateContext=privateContext.checked;save(CONFIG,config)});composer.append(privateLabel);
 const tools=create('details','ba-tools');const summary=create('summary','','Notes & authorized work');tools.append(summary,privateLabel);
 tools.addEventListener('toggle',()=>{if(tools.open&&typeof requestAnimationFrame==='function')requestAnimationFrame(()=>tools.scrollIntoView({block:'start'}));});
