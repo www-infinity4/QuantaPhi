@@ -880,9 +880,10 @@ public final class BubblesService extends Service {
                         else if (screenState.contains("approval") || screenState.contains("requested"))
                             result += "Screen capture is waiting for your Android approval.";
                     }
-                    String external = BrainNotes.prefs(this).getString("du_recorder_state", "");
-                    if (!external.isEmpty()) result += " DU Recorder: " + external
-                        + " Bubbles cannot prove DU is recording until DU reports it.";
+                    if (DuRecorderBridge.recordingVerified(this)) result = "Recording.";
+                    else if ("starting".equals(BrainNotes.prefs(this).getString("du_recorder_phase", ""))) result = "Starting.";
+                    else if (soundActive) result = "Recording.";
+                    else result = "Not recording.";
                     speak(result);
                     break;
                 }
@@ -920,7 +921,10 @@ public final class BubblesService extends Service {
                     } else DuRecorderBridge.request(this, "stop", main);
                     break;
                 case "screen_video":
-                    DuRecorderBridge.request(this, "start", main);
+                    if (!typed) speak("Starting.");
+                    DuRecorderBridge.request(this, "start", main, feedback -> {
+                        if ("recording".equals(feedback) && !typed) speakWebsiteReply("Recording.");
+                    });
                     break;
                 case "screen_image":
                 case "screen_sequence":
