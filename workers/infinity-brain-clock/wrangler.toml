@@ -45,3 +45,8 @@ binding = "WRITER_AI"
 # Refuse to stage an update if the existing payout secret is not configured.
 [secrets]
 required = ["BOT_WORK_SECRET"]
+
+# KV namespace for webhook deduplication (placeholder ID – replace on deployment)
+kv_namespaces = [
+  { binding = "WEBHOOK_DEDUP_KV", id = "<placeholder-id>" }
+]
