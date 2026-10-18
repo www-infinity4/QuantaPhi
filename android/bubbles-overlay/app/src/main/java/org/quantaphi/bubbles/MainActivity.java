@@ -51,7 +51,7 @@ public final class MainActivity extends Activity {
         layout.addView(title);
 
         TextView copy = new TextView(this);
-        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link Robot Brain, get the one-time code on verified QuantaPhi, paste it directly into the floating chat message box, then Send. There is no separate pairing button. Drag the floating orb anywhere.\\n\\nSay 'record', 'stop', 'turn on video', 'record my screen', 'take a screenshot', or 'take a screenshot every five seconds for five minutes'. Bubbles handles the controls; Android asks you to approve screen capture. Captures stay on your phone.");
+        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link Robot Brain, get the one-time code on verified QuantaPhi, paste it directly into the floating chat message box, then Send. There is no separate pairing button. Drag the floating orb anywhere.\\n\\nSay 'record', 'stop', 'turn on video', 'record my screen', 'take a screenshot', or 'take a screenshot every five seconds for five minutes'. Bubbles handles the controls; Android asks you to approve screen capture. Saved recordings stay on your phone. When you explicitly request screen analysis, Bubbles may send a fresh screenshot to QuantaPhi Cloudflare AI. Screen access requires separate consent.");
         copy.setTextColor(Color.rgb(101, 83, 111));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
@@ -68,24 +68,30 @@ public final class MainActivity extends Activity {
         Runnable updateScreenPermission = () -> screenPermission.setText(
             BrainLearningService.isConnected()
                 ? "Screen access: ON. Say 'read this screen', 'tap Search' or 'scroll down' in another app."
-                : "Screen access: OFF. Bubbles cannot inspect another app until Android Accessibility is enabled.");
+                : BrainLearningService.hasOwnerConsent(this)
+                    ? "Screen access: waiting for Android Accessibility permission."
+                    : "Screen access: OFF. Optional screen reading and phone control have no Bubbles consent.");
         refreshScreenPermission = updateScreenPermission;
         updateScreenPermission.run();
         layout.addView(screenPermission);
         Button screenAccess = new Button(this);
         screenAccess.setText("Enable Bubbles screen reading & controls");
-        screenAccess.setOnClickListener(v -> {
-            updateScreenPermission.run();
-            startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
-            state.setText("In Accessibility settings, enable Brain workflow learning for Bubbles Preview. Android asks you to approve it once.");
-        });
+        screenAccess.setOnClickListener(v -> requestScreenAccessConsent());
         layout.addView(screenAccess);
+        Button revokeScreenAccess = new Button(this);
+        revokeScreenAccess.setText("Stop Bubbles screen reading and phone control");
+        revokeScreenAccess.setOnClickListener(v -> {
+            BrainLearningService.revokeOwnerConsent(this);
+            updateScreenPermission.run();
+            state.setText("Bubbles screen access OFF. To remove the Android system grant too, disable Brain workflow learning in Accessibility Settings.");
+        });
+        layout.addView(revokeScreenAccess);
         Button phoneTool = new Button(this);
         phoneTool.setText("Allow IBM / Gemini phone tool for 10 minutes");
         phoneTool.setOnClickListener(v -> {
             if (!BrainLearningService.isConnected()) {
-                state.setText("Enable Bubbles screen reading first, then return here to allow the phone tool.");
-                startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
+                state.setText("Screen reading requires a separate optional disclosure and Android permission.");
+                requestScreenAccessConsent();
                 return;
             }
             new AlertDialog.Builder(this).setTitle("Robot Brain and Bubbles phone tool")
@@ -466,7 +472,7 @@ public final class MainActivity extends Activity {
             brainSettings.addView(choice);
         }
         Button access=new Button(this);access.setText("Open Android learning permission");
-        access.setOnClickListener(v->startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)));
+        access.setOnClickListener(v->requestScreenAccessConsent());
         brainSettings.addView(access);
         CheckBox useNotes=new CheckBox(this);useNotes.setTextColor(Color.rgb(48, 36, 62));
         useNotes.setText("Include my recent notes in requests to Oracle Cloudflare AI when I talk to Brain");
@@ -488,6 +494,25 @@ public final class MainActivity extends Activity {
         ScrollView scroll=new ScrollView(this);
         scroll.setBackgroundColor(Color.rgb(251, 247, 238));
         scroll.addView(layout);setContentView(scroll);
+    }
+
+    /**
+     * Google's Android Accessibility permission does not replace clear consent
+     * inside the app. All screen operations remain inert until both are present.
+     * Ordinary Bubbles microphone and text chat do not require this capability.
+     */
+    private void requestScreenAccessConsent() {
+        new AlertDialog.Builder(this)
+            .setTitle("Optional Bubbles screen access")
+            .setMessage("If enabled, Bubbles can read visible text, take an Android Accessibility screenshot, tap controls and scroll in other apps when you ask it to. Selected app learning can store up to 30 visible-text snapshots locally. When you explicitly ask for screen analysis, an image of the current screen may be sent to QuantaPhi's Cloudflare AI service. If you separately allow the ten-minute phone tool, visible page text and tool receipts may go to your owner-linked Robot Brain.\\n\\nThis can expose private information visible in other apps. Do not use it on banking, password or sensitive screens. Android shows a separate permission screen. You can stop Bubbles' screen access here or revoke the system permission in Android Settings. Voice and normal chat work without screen access.")
+            .setNegativeButton("Not now", null)
+            .setPositiveButton("Agree and open Android Settings", (dialog, which) -> {
+                BrainNotes.prefs(this).edit()
+                    .putBoolean(BrainLearningService.SCREEN_CONSENT, true).apply();
+                if (refreshScreenPermission != null) refreshScreenPermission.run();
+                startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
+                state.setText("Android Accessibility is separate. Enable Brain workflow learning only if you want Bubbles to read and control screens.");
+            }).show();
     }
 
     // Style the entire native fallback in the same visual language as Oracle Octaves.
