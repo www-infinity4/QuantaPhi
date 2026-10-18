@@ -62,8 +62,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verify opt-in Room Notes bubble and no accidental bot instructions
-        run: node --test test/bubbles-room-notes-native.test.cjs
+      - name: Verify three-lane room and internal playback isolation
+        run: node --test test/bubbles-room-notes-native.test.cjs test/bubbles-three-lane-voice.test.cjs test/bubbles-phone-playback-lane.test.cjs
       - name: Verify phone playback isolation and native recorder clip contracts
         run: |
           node --test test/bubbles-source-recording.test.cjs

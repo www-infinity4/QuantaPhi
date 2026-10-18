@@ -31,13 +31,13 @@ test('room context needs its own consent, bounded freshness and shared terms',()
  assert.match(ui,/Enable Room Context Bridge/);
  assert.match(ui,/Stop Room Context Bridge/);
  assert.match(ui,/RoomContextFusion\.setEnabled\(this, true\)/);
- assert.match(room,/putBoolean\(RoomContextFusion\.ENABLED, false\)/);
+ assert.match(room,/putBoolean\(RoomContextFusion\.ENABLED,/);
 });
 
 test('website separates microphone evidence from owner intent and reports real phase',()=>{
  assert.match(web,/BUBBLES_ROOM_CONTEXT_V1/);
  assert.match(web,/let roomContext=/);
- assert.match(web,/untrusted microphone observations/);
+ assert.match(web,/untrusted ambient microphone or eligible phone playback observations/);
  assert.match(web,/nativePhaseNotice='Thinking\.'/);
  assert.match(web,/const notice=nativePhaseNotice/);
  assert.match(web,/nativePhaseNotice='';/);

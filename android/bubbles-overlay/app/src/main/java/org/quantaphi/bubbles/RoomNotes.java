@@ -19,7 +19,8 @@ final class RoomNotes {
 
     static void setEnabled(Context context, boolean on) {
         BrainNotes.prefs(context).edit().putBoolean(ENABLED, on)
-            .putBoolean(RoomContextFusion.ENABLED, on && BrainNotes.prefs(context).getBoolean(RoomContextFusion.ENABLED, false)).apply();
+            .putBoolean(RoomContextFusion.ENABLED, (on || MediaNotes.available(context))
+                && BrainNotes.prefs(context).getBoolean(RoomContextFusion.ENABLED, false)).apply();
     }
 
     static synchronized void add(Context context, String transcript) {
