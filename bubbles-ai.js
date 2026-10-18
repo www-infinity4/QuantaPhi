@@ -2066,7 +2066,8 @@ runAllButton.addEventListener('click',async()=>{
  }finally{bulkRunBusy=false;runAllButton.disabled=!lastBulkPreview?.total;runAllButton.textContent='Run All ('+(lastBulkPreview?.total||0)+')';}
 });
 
-const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker():null;
+let progressStorage;try{progressStorage=localStorage;}catch{}
+const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker({storage:progressStorage}):null;
 let progressPolling=false,progressUnavailable=false;
 async function pollBrainProgress(){
  if(embedded||!ownerReady||!progressTracker||progressPolling)return;
@@ -2084,14 +2085,15 @@ async function pollBrainProgress(){
   }
   showOwnerApprovalRequests(result.tickets);
   if(typeof refreshBulkOwnerRun==='function')refreshBulkOwnerRun(result.tickets);
+  progressTracker.setScope?.(result.notificationScope);
   const updates=progressTracker.update(result.tickets);
-  if(progressUnavailable)updates.unshift('Robot Brain is reachable again. I am checking progress here.');
+  if(progressUnavailable)recordBrainNotice('Robot Brain is reachable again.');
   progressUnavailable=false;
   if(updates.length)announceBrainProgress(updates.slice(-5).join(' '));
    if(typeof syncRedSectors==='function')void syncRedSectors().catch(()=>{if(!redLinkFailed){redLinkFailed=true;recordBrainNotice('Red-Brain connection is not responding. Ticket polling continues.');}});
  }catch{
   brainConnectionState('Brain unreachable · latest notices retained', 'unreachable');
-  if(!progressUnavailable){progressUnavailable=true;announceBrainProgress('Robot Brain is unreachable right now. I will keep checking and update you here when it reconnects.');}
+  if(!progressUnavailable){progressUnavailable=true;recordBrainNotice('Robot Brain is unreachable. Retrying quietly; saved notices remain available.');}
  }finally{progressPolling=false;}
 }
 function announceBrainProgress(text){
