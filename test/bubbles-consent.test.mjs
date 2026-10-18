@@ -209,3 +209,17 @@ test('default provider fetch keeps the global receiver required by Web APIs',asy
   assert.equal(result.subject,'123');assert.equal(calls,2);
  }finally{globalThis.fetch=original;}
 });
+
+test('default GitHub request blocks token redirects before forwarding credentials',async()=>{
+ const original=globalThis.fetch;let calls=0;
+ globalThis.fetch=async function(url,options){
+  calls++;assert.equal(options.redirect,'manual');
+  assert.equal(options.headers['User-Agent'],'Bubbles-User-Connections');
+  return new Response(null,{status:302,headers:{Location:'https://untrusted.example/token'}});
+ };
+ try{
+  const adapter=githubAdapter({clientId:'test-client',clientSecret:'test-secret',redirectUri:'https://example.test/callback'});
+  await assert.rejects(adapter.exchange({code:'test-code',verifier:'test-verifier'}),/github_token_redirect_external/);
+  assert.equal(calls,1);
+ }finally{globalThis.fetch=original;}
+});
