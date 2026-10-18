@@ -1309,7 +1309,6 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const answer=!saved?'I could not save that preference on this device.':
    speechPreference.hideTicketNumbers===true?'Remembered. I will keep ticket references on screen but not read them aloud.':
    speechPreference.learnedVoiceInstruction?'Saved your speaking preference for future conversations.':
-   speechPreference.briefSpeech===false?'Saved. Full spoken replies in the browser; Android continues using brief narration.':
    'Remembered. Brief spoken replies, with the full answer in chat.';
   display(answer,'ai');
   messages.push({role:'user',text:spoken},{role:'assistant',text:answer});
