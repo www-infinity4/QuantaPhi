@@ -1425,13 +1425,17 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   .replace(/^please\s+/,'');
  const nativeCaptureTarget=/\b(?:screen(?:\s+recorder|\s+recording|\s+capture|\s+video)?|screenshots?|screen\s*shot)\b/i.test(nativeDirective)
   || /^(?:record|record (?:sound|audio|my voice)|start (?:recording|sound recording|audio recording)|stop (?:recording|audio|sound|microphone)|save (?:recording|audio|sound)|(?:turn|switch) (?:on|off) (?:the |my )?(?:voice|audio|sound|microphone) recorder)$/i.test(nativeDirective)
+  || /^(?:pause|resume|continue|unpause|hold)\s+(?:the |my )?(?:screen |video )?(?:recorder|recording|capture)$/i.test(nativeDirective)
   || (nativeRecordingActive&&/^(?:stop|end|finish|save)(?: now| it| that| recording| the recording)?$/i.test(nativeDirective));
- const nativeCaptureVerb=/^(?:record|film|start|begin|turn on|switch on|enable|activate|open|launch|use|run|make|capture|take|grab|save|stop|end|finish|cancel|turn off|switch off|screen record)\b/i.test(nativeDirective);
+ const nativeCaptureVerb=/^(?:record|film|start|begin|turn on|switch on|enable|activate|open|launch|use|run|make|capture|take|grab|save|stop|end|finish|cancel|turn off|switch off|pause|hold|resume|continue|unpause|screen record)\b/i.test(nativeDirective);
  if(nativeOverlay&&!fromVoice&&nativeCaptureTarget&&nativeCaptureVerb){
   const stopping=/^(?:stop|end|finish|cancel|turn off|switch off|save)\b/i.test(nativeDirective);
-  const response=stopping
-   ?'I passed the stop request to Android. Watch the recorder status for saving and the final phone-library receipt.'
-   :'I passed the recording request to Android. For screen capture, approve Android’s system permission dialog. Recording is NOT confirmed until the recorder status says ON.';
+  const pausing=/^(?:pause|hold)\b/i.test(nativeDirective);
+  const resuming=/^(?:resume|continue|unpause)\b/i.test(nativeDirective);
+  const response=pausing?'Pause requested from the active Android recorder. Waiting for device status…':
+   resuming?'Resume requested for the same approved recording session. Waiting for device status…':
+   stopping?'I passed the stop request to Android. Watch the recorder status for saving and the final phone-library receipt.':
+   'I passed the recording request to Android. For screen capture, approve Android’s system permission dialog. Recording is NOT confirmed until the recorder status says ON.';
   if(nativeCaptureRequests.length>=24){
     status.textContent='Android has 24 unprocessed capture commands. Check the Bubbles connection.';
     nativeSpeechPending=false;return;
@@ -2240,13 +2244,14 @@ window.QuantaBubbles={
   if(!nativeOverlay||!capture||typeof capture!=='object')return false;
   nativeSimAvailable=capture.simInspection===true;
   const screenActive=capture.screenActive===true,started=capture.screenRecording===true;
+  const paused=screenActive&&capture.screenPaused===true;
   const soundActive=capture.soundActive===true;
   nativeRecordingActive=screenActive||soundActive;
   recorderStop.hidden=!nativeRecordingActive;
   recorderStop.disabled=false;
   const screen=String(capture.screenState||'').slice(0,160);
   const sound=String(capture.soundState||'').slice(0,160);
-  const mode=started?'Screen capture ON':screenActive?'Screen capture starting':
+  const mode=paused?'Screen recording PAUSED':started?'Screen capture ON':screenActive?'Screen capture starting':
    /approval|approve|requested/i.test(screen)?'Waiting for Android screen approval':
    /saving|finishing/i.test(screen)?'Screen capture saving':'Screen capture OFF';
   const soundMode=soundActive?'Sound recording ON':

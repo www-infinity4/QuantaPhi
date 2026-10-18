@@ -8,6 +8,10 @@ public final class ScreenAwarenessCheck {
         check(ScreenAwareness.sharingCommand("start screen sharing") == 1, "start refreshed screen session");
         check(ScreenAwareness.sharingCommand("watch my screen") == 1, "natural sharing command");
         check(ScreenAwareness.sharingCommand("stop screen sharing") == -1, "end sharing");
+        check(ScreenAwareness.sharingCommand("always watch everything on my phone") == 1, "owner continuous vision");
+        check(ScreenAwareness.sharingCommand("turn on continuous screen vision") == 1, "persistent vision");
+        check(ScreenAwareness.sharingCommand("stop screen watching") == -1, "stop vision");
+        check(ScreenAwareness.sharingCommand("turn off screen vision") == -1, "explicit disable");
         check(ScreenAwareness.sharingCommand("tell me about a screen") == 0, "ordinary conversation is not sharing consent");
         check(ScreenAwareness.attach("read", "x".repeat(6000)+"BOTTOM").contains("BOTTOM"), "retain lower-screen evidence beyond legacy cutoff");
         check(ScreenAwareness.refersToScreen("Can you see my screen?"), "screen reference");

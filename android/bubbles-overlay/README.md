@@ -1,3 +1,62 @@
+## Always-on owner-enabled screen vision (October 18, 2026)
+
+**There is no screen-watch timer.** Once the owner says **"turn on
+continuous screen vision"** or **"always watch everything on my phone"**,
+Bubbles saves that preference and continues observing while its visible Android
+foreground service runs. It resumes automatically on subsequent Bubbles
+starts, provided its owner-enabled Accessibility screen capability is active.
+**"stop screen watching"** or **Stop screen watch** in Bubbles' visible
+notification disables the feature and clears volatile visual context.
+
+Bubbles samples the currently visible accessibility text at roughly 1-second
+intervals. It additionally captures **actual display screenshots**, detects
+changes locally, and analyzes changed frames with its existing visual AI
+provider. Frames are discarded after processing; only the latest bounded
+text and visual description are kept in RAM. Processing is asynchronous and
+one visual request remains in flight at a time to avoid freezing speech,
+overlay input or the phone. Every conversational request can use the most
+recent visual summary, even without saying "take a screenshot." No manual
+image-capture button is required for each observation.
+
+**Connectivity and consent:** enabling continuous vision opts in to recurring
+image analysis by Bubbles' configured cloud vision endpoint. It can consume
+mobile data and provider inference capacity. It never enables Accessibility
+or screen projection on its own; Android can redact secure/password-protected
+windows. If Android stops the service, the Accessibility permission is
+revoked, or protected screen content is unavailable, the observation cannot
+continue until the OS allows it. This does not install a hidden stream server,
+and does not promise access to protected/system-inaccessible pixels. Normal
+MediaProjection video recording has separate Android consent and MP4 size
+limits; those limits do **not** impose an expiration on screen awareness.
+
+## Precise voice-controlled screen recording (October 18, 2026)
+
+The existing `ScreenCaptureService` is the foreground recording owner; there is
+no second competing recorder or persistent reusable projection token.
+
+- Say **"record my screen"**: Android's standard MediaProjection approval is
+  still required for each **new** session. Bubbles must not touch that dialog.
+- Say **"pause recording"**: pause `MediaRecorder` and the shared Vosk PCM WAV
+  writer together, in the **same** active session.
+- Say **"resume recording"**: continue the **same** video and microphone tracks
+  without another permission prompt. Resume never initializes a new projection.
+- Say **"stop recording"**: finalize, mux and publish to Movies/Bubbles, then
+  release the projection. A subsequent new capture needs fresh Android consent.
+- The active recorder notification exposes Pause/Resume and Stop & save.
+  Screenshot sequences have Stop only. The text chat routes typed pause/resume
+  through the native Android bridge; the model cannot grant or invent recording.
+- Native Vosk dispatches pause/resume immediately after recognizing a complete
+  command, bypassing the normal end-of-turn accumulation wait.
+- An active screenshot is not a video and cannot be paused. Capture is bounded
+  to the existing five-minute session/recording limit; a long pause does not
+  extend the session timeout. The phone's actual pause/resume and MP4 audio/video
+  alignment need physical-device verification.
+
+On Android 14+ (`targetSdk 35`), reusing a consent intent or invoking
+`createVirtualDisplay` twice with a previously used `MediaProjection` is
+prohibited. This implementation calls `createVirtualDisplay` only at initial
+session creation and does not retain consent for later sessions.
+
 ## Native voice-attribution safeguard (October 16, 2026)
 
 The Android microphone now forwards idle speech only after an explicit "Bubbles"

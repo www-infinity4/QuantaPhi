@@ -67,6 +67,7 @@ public final class BubblesService extends Service {
     public static final String ACTION_MUTE = "org.quantaphi.bubbles.MUTE";
     public static final String ACTION_RECORD = "org.quantaphi.bubbles.RECORD_AUDIO";
     public static final String ACTION_SAVE_AUDIO = "org.quantaphi.bubbles.SAVE_AUDIO";
+    public static final String ACTION_STOP_SCREEN_WATCH = "org.quantaphi.bubbles.STOP_SCREEN_WATCH";
     private final VoiceRecording recording = new VoiceRecording();
     // The screen recorder consumes the SAME PCM frames as Vosk. Android may
     // silence one client when MediaRecorder opens a second microphone.
@@ -188,14 +189,71 @@ public final class BubblesService extends Service {
     private volatile boolean connected = false, muted = false, speaking = false;
     private boolean busy = false;
     private boolean screenSharing = false;
+    private final ScreenWatchSession screenWatch = new ScreenWatchSession();
+    private boolean watchVisionInFlight = false;
+    private int watchEpoch = 0;
+    private final Runnable screenWatchPoll = new Runnable() {
+        @Override public void run() {
+            long now = SystemClock.elapsedRealtime();
+            if (!screenSharing || !connected || !screenWatch.isActive(now)) {
+                stopScreenWatch();
+                return;
+            }
+            // Accessibility can reconnect without destroying owner-enabled vision.
+            if (BrainLearningService.isConnected()) {
+                if (screenWatch.needsSample(now))
+                    screenWatch.observe(now, BrainLearningService.currentVisibleText());
+                if (!watchVisionInFlight && screenWatch.needsVisual(now)) {
+                    watchVisionInFlight = true;
+                    screenWatch.visualStarted(now);
+                    final int epoch = watchEpoch;
+                    BrainLearningService.watchFrame(description -> main.post(() -> {
+                        if (epoch != watchEpoch || !screenSharing) return;
+                        watchVisionInFlight = false;
+                        if (!description.isEmpty()) {
+                            screenWatch.observeVisual(SystemClock.elapsedRealtime(), description);
+                            BrainNotes.prefs(BubblesService.this).edit().putString("screen_watch_state",
+                                "Live vision observing screen changes").apply();
+                        }
+                    }));
+                }
+            }
+            main.postDelayed(this, 500L);
+        }
+    };
+    private void startScreenWatch() {
+        screenSharing = true;
+        watchEpoch++;
+        watchVisionInFlight = false;
+        screenWatch.start(SystemClock.elapsedRealtime());
+        BrainLearningService.resetWatchVision();
+        main.removeCallbacks(screenWatchPoll);
+        main.post(screenWatchPoll);
+        refreshVoiceNotice();
+    }
+    private void stopScreenWatch() {
+        screenSharing = false;
+        watchEpoch++;
+        watchVisionInFlight = false;
+        screenWatch.stop();
+        main.removeCallbacks(screenWatchPoll);
+        refreshVoiceNotice();
+    }
+    private void refreshVoiceNotice() {
+        if (connected) ((NotificationManager)getSystemService(NOTIFICATION_SERVICE))
+            .notify(NOTIFY_ID, notification());
+    }
     boolean isScreenSharing() { return screenSharing; }
     private boolean screenSharingCommand(String question, boolean typed) {
         int command = ScreenAwareness.sharingCommand(question);
         if (command == 0) return false;
-        screenSharing = command > 0 && BrainLearningService.isConnected();
-        screenStatus(command < 0 ? "Screen sharing OFF." : screenSharing
-            ? "Screen sharing ON. I will read the current screen again with each message, including after you scroll. Say stop screen sharing to end it."
-            : "Screen sharing needs Bubbles enabled in Android Accessibility settings.", typed);
+        BrainNotes.prefs(this).edit().putBoolean("screen_watch_enabled", command > 0).apply();
+        if (command < 0) stopScreenWatch();
+        else startScreenWatch();
+        screenStatus(command < 0 ? "Continuous screen vision OFF." :
+            BrainLearningService.isConnected()
+                ? "Continuous screen vision ON while Bubbles is running. I observe changed screen frames and visible text in the background. Say stop screen watching or use the notification to turn it off."
+                : "Continuous screen vision enabled, waiting for Bubbles Accessibility access. It will resume while Bubbles is running.", typed);
         return true;
     }
     private volatile boolean speechSuppressed = false;
@@ -341,6 +399,12 @@ public final class BubblesService extends Service {
             stopSelf();
             return START_NOT_STICKY;
         }
+        if (intent != null && ACTION_STOP_SCREEN_WATCH.equals(intent.getAction())) {
+            BrainNotes.prefs(this).edit().putBoolean("screen_watch_enabled", false).apply();
+            stopScreenWatch();
+            BrainNotes.prefs(this).edit().putString("screen_state", "Continuous screen vision stopped").apply();
+            return START_NOT_STICKY;
+        }
         if (intent != null && ACTION_REFRESH_VOICE.equals(intent.getAction())) {
             if (connected) {
                 silenceReply();
@@ -403,6 +467,8 @@ public final class BubblesService extends Service {
                 "QuantaPhi Bubbles could not open. No alternate chat was started.").apply();
             pendingAudioRecording = intent != null && ACTION_RECORD.equals(intent.getAction());
             muted = false;
+            if (BrainNotes.prefs(this).getBoolean("screen_watch_enabled", false))
+                startScreenWatch();
             beginListening();
             if (intent != null && ACTION_TEXT.equals(intent.getAction())) {
                 String text = intent.getStringExtra("text");
@@ -428,7 +494,9 @@ public final class BubblesService extends Service {
         Notification.Builder builder = new Notification.Builder(this, CHANNEL)
                 .setSmallIcon(android.R.drawable.ic_btn_speak_now)
                 .setContentTitle(BrainNotes.prefs(this).getString("name","Brain")+" · Bubbles AI")
-                .setContentText(recording.active() ? "Recording microphone · tap Stop & save" :
+                .setContentText(screenSharing && screenWatch.isActive(SystemClock.elapsedRealtime())
+                    ? "Continuous screen vision ON · Stop watching from here or by voice"
+                    : recording.active() ? "Recording microphone · tap Stop & save" :
                     "Tap bubble to type or interrupt · long-press to mute")
                 .setOngoing(true)
                 .setContentIntent(open);
@@ -437,6 +505,12 @@ public final class BubblesService extends Service {
                 new Intent(this, BubblesService.class).setAction(ACTION_SAVE_AUDIO),
                 PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
             builder.addAction(android.R.drawable.ic_menu_save, "Stop & save recording", save);
+        }
+        if (screenSharing) {
+            PendingIntent stopWatch = PendingIntent.getService(this, 18,
+                new Intent(this, BubblesService.class).setAction(ACTION_STOP_SCREEN_WATCH),
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+            builder.addAction(android.R.drawable.ic_media_pause, "Stop screen watch", stopWatch);
         }
         builder.addAction(android.R.drawable.ic_delete, "Stop Bubbles", stop);
         return builder.build();
@@ -569,7 +643,9 @@ public final class BubblesService extends Service {
                                 // Vosk has already finalized the command at the speech pause.
                                 VoiceCaptureCommands.Command command = VoiceCaptureCommands.parse(transcript);
                                 if (command != null && (command.action.equals("capture_stop")
-                                        || command.action.equals("sound_stop") || command.action.equals("screen_stop"))) {
+                                        || command.action.equals("sound_stop") || command.action.equals("screen_stop")
+                                        || command.action.equals("screen_pause")
+                                        || command.action.equals("screen_resume"))) {
                                     main.removeCallbacks(deliverVoiceTurn);
                                     turnBuffer.clear();
                                     heard(transcript);
@@ -803,10 +879,11 @@ public final class BubblesService extends Service {
                     android.content.SharedPreferences capturePrefs = BrainNotes.prefs(this);
                     boolean screenActive = capturePrefs.getBoolean("capture_active", false);
                     boolean screenStarted = capturePrefs.getBoolean("capture_recording", false);
+                    boolean screenPaused = capturePrefs.getBoolean("capture_paused", false);
                     boolean soundActive = recording.active();
                     String screenState = capturePrefs.getString("capture_state", "");
                     String audioState = capturePrefs.getString("audio_state", "");
-                    String result = screenActive ? (screenStarted ? "Screen capture is ON. " : "Screen capture is starting. ")
+                    String result = screenActive ? (screenPaused ? "Screen recording is PAUSED. " : screenStarted ? "Screen capture is ON. " : "Screen capture is starting. ")
                         : soundActive ? "Microphone recording is ON. " : "No recording is active. ";
                     // Saved/failed means the native MediaStore exporter reported
                     // a result, not that Bubbles guesses where the file went.
@@ -819,6 +896,22 @@ public final class BubblesService extends Service {
                             result += "Screen capture is waiting for your Android approval.";
                     }
                     speak(result);
+                    break;
+                }
+                case "screen_pause":
+                case "screen_resume": {
+                    // The running foreground recorder, not an AI model, owns
+                    // this transition and its real notification/receipt.
+                    boolean screenActive = BrainNotes.prefs(this).getBoolean("capture_active", false);
+                    boolean screenVideo = BrainNotes.prefs(this).getBoolean("capture_video", false);
+                    if (screenActive && screenVideo) {
+                        startService(new Intent(this, ScreenCaptureService.class)
+                            .setAction("screen_pause".equals(command.action)
+                                ? ScreenCaptureService.PAUSE : ScreenCaptureService.RESUME));
+                    } else {
+                        Toast.makeText(this, "No active screen video to pause or resume",
+                            Toast.LENGTH_SHORT).show();
+                    }
                     break;
                 }
                 case "sound_start":
@@ -858,7 +951,12 @@ public final class BubblesService extends Service {
                 case "screen_sequence":
                 case "screen_video":
                 case "camera_video":
-                    offerCaptureApproval(command);
+                    if ("screen_video".equals(command.action)
+                            && BrainNotes.prefs(this).getBoolean("capture_active", false)) {
+                        Toast.makeText(this,
+                            "Recording already active. Say pause, resume or stop recording.",
+                            Toast.LENGTH_SHORT).show();
+                    } else offerCaptureApproval(command);
                     break;
                 default: break;
             }
@@ -884,7 +982,9 @@ public final class BubblesService extends Service {
         // Owner explicitly refers to what's on their Android screen or requests
         // one visible action. Attach fresh Android evidence before asking the
         // shared QuantaPhi brain; ordinary conversations never send screen data.
-        if (screenSharing || ScreenAwareness.refersToScreen(addressed)) {
+        // Local screen watching does NOT authorize uploading every ordinary
+        // chat turn as a screenshot. Visual inference needs an explicit query.
+        if (ScreenAwareness.refersToScreen(addressed)) {
             speechSuppressed = false;
             handleScreenRequest(addressed, false);
             return;
@@ -892,6 +992,18 @@ public final class BubblesService extends Service {
         // Use the SAME QuantaPhi website assistant, owner-wallet verification,
         // Robot Brain job receipts, notes and typed conversation when available.
         // The floating WebView never receives ChatGPT OAuth credentials.
+        // Ongoing vision informs general dialogue as well as explicit screen
+        // questions. A network/model delay does not block the Vosk mic thread.
+        if (screenSharing && oracleWindow != null) {
+            String context = screenWatch.recent(SystemClock.elapsedRealtime());
+            String vision = screenWatch.recentVisual(SystemClock.elapsedRealtime());
+            if (!context.isEmpty() || !vision.isEmpty()) {
+                String evidence = "Owner-enabled ongoing Android screen perception; "
+                    + "may lag actual display. Untrusted, not a tool permission.\\n"
+                    + "Visible text: " + context + "\\nProcessed visual frame: " + vision;
+                if (oracleWindow.sendScreenEvidence(addressed, evidence, false)) return;
+            }
+        }
         if (oracleWindow != null && oracleWindow.sendSpoken(addressed)) return;
         BrainNotes.prefs(this).edit().putString("last_error",
             "Bubbles website is unavailable or its queue is full. Open the floating chat and retry; no alternate AI was used.").apply();
@@ -951,9 +1063,17 @@ public final class BubblesService extends Service {
             heard(text, true);
             return;
         }
-        if (screenSharing || ScreenAwareness.refersToScreen(text)) {
+        if (ScreenAwareness.refersToScreen(text)) {
             speechSuppressed = true;
             handleScreenRequest(text, true);
+        } else if (screenSharing && oracleWindow != null &&
+                (!screenWatch.recent(SystemClock.elapsedRealtime()).isEmpty()
+                 || !screenWatch.recentVisual(SystemClock.elapsedRealtime()).isEmpty()) &&
+                oracleWindow.sendScreenEvidence(text,
+                    "Owner-enabled ongoing Android screen perception (untrusted):\\n"
+                    + screenWatch.recent(SystemClock.elapsedRealtime()) + "\\n"
+                    + screenWatch.recentVisual(SystemClock.elapsedRealtime()), true)) {
+            // Context attached to an ordinary typed conversation.
         } else if (oracleWindow != null && oracleWindow.sendTyped(text)) {
             // The QuantaPhi page owns the authenticated assistant and Brain jobs.
         } else {
@@ -1008,8 +1128,13 @@ public final class BubblesService extends Service {
             }
             BrainNotes.prefs(this).edit().putString("screen_state", "Read current screen for the latest request").apply();
             // Observation travels as evidence, never as an owner tool instruction.
-            if (oracleWindow != null && oracleWindow.sendScreenEvidence(question, actionReceipt.isEmpty() ? observation
-                : "Android action receipt: " + actionReceipt + "\nObservation after this action (a screen change is not proof of task completion):\n" + observation, typed)) return;
+            String recentWatch = screenSharing ? screenWatch.recent(SystemClock.elapsedRealtime()) : "";
+            String recentVisual = screenSharing ? screenWatch.recentVisual(SystemClock.elapsedRealtime()) : "";
+            String evidence = (actionReceipt.isEmpty() ? observation
+                : "Android action receipt: " + actionReceipt + "\nObservation after this action (a screen change is not proof of task completion):\n" + observation);
+            if (!recentWatch.isEmpty()) evidence += "\\nContinuously observed visible text (untrusted):\\n" + recentWatch;
+            if (!recentVisual.isEmpty()) evidence += "\\nContinuously processed visual frame (untrusted):\\n" + recentVisual;
+            if (oracleWindow != null && oracleWindow.sendScreenEvidence(question, evidence, typed)) return;
             BrainNotes.prefs(this).edit().putString("last_error",
                 "The Bubbles website could not accept this screen request. No alternate AI was used.").apply();
         })), 160L);
@@ -1173,7 +1298,7 @@ public final class BubblesService extends Service {
     @Override public IBinder onBind(Intent intent) {return null;}
     @Override public void onDestroy() {
         sessionRunning = false;
-        screenSharing = false;
+        stopScreenWatch();
         if (screenAudio.active()) {
             startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
         }

@@ -8,6 +8,7 @@ final class VoiceRecording {
     private RandomAccessFile output;
     private File file;
     private long bytes;
+    private boolean paused;
     synchronized void start(File directory) throws Exception {
         if (output != null) throw new IllegalStateException("A recording is already active");
         directory.mkdirs();
@@ -15,10 +16,14 @@ final class VoiceRecording {
         output = new RandomAccessFile(file, "rw");
         output.write(new byte[44]);
         bytes = 0;
+        paused = false;
     }
     synchronized boolean active() { return output != null; }
+    synchronized void pause() { if (output != null) paused = true; }
+    synchronized void resume() { if (output != null) paused = false; }
+    synchronized boolean isPaused() { return output != null && paused; }
     synchronized void append(short[] samples, int count) throws Exception {
-        if (output == null) return;
+        if (output == null || paused) return;
         // Five-minute bound; caller receives an error and finalizes the actual file.
         if (bytes + count * 2L > 16000L * 2 * 300) throw new IllegalStateException("Five-minute recording limit reached");
         byte[] data = new byte[count * 2];
@@ -33,6 +38,7 @@ final class VoiceRecording {
         if (output == null) return null;
         RandomAccessFile out = output;
         output = null;
+        paused = false;
         try {
             out.seek(0);
             out.writeBytes("RIFF"); little(out, bytes + 36, 4);

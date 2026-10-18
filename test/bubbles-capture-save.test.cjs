@@ -16,6 +16,31 @@ test('recorded sound is exported into Music and has a visible stop/save control'
   assert.match(service, /if \(completed == null\) return/); // Never report a phantom save.
 });
 
+test('pause and resume reuse the current approved screen session and preserve microphone timing', () => {
+  const screen = source('ScreenCaptureService.java');
+  const audio = source('VoiceRecording.java');
+  const native = source('BubblesService.java');
+  const commands = source('VoiceCaptureCommands.java');
+  assert.match(screen, /static final String PAUSE/);
+  assert.match(screen, /static final String RESUME/);
+  assert.match(screen, /recorder\.pause\(\)/);
+  assert.match(screen, /recorder\.resume\(\)/);
+  assert.match(screen, /sharedAudio\.pause\(\)/);
+  assert.match(screen, /sharedAudio\.resume\(\)/);
+  assert.match(audio, /if \(output == null \|\| paused\) return/);
+  assert.match(screen, /capture_paused/);
+  assert.match(native, /ScreenCaptureService\.PAUSE/);
+  assert.match(native, /ScreenCaptureService\.RESUME/);
+  assert.match(commands, /"screen_pause"/);
+  assert.match(commands, /"screen_resume"/);
+  assert.match(screen, /captureNotification\(pause, true\)/);
+  assert.match(source('MainActivity.java'), /projection\.createScreenCaptureIntent\(\)/);
+  const control = screen.split('private void changePauseState(boolean pause)')[1].split('private Notification captureNotification')[0];
+  assert.doesNotMatch(control, /getMediaProjection|createVirtualDisplay|startForegroundService|createScreenCaptureIntent/);
+  const site = fs.readFileSync('bubbles-ai.js', 'utf8');
+  assert.match(site, /pause\|hold\|resume\|continue\|unpause/);
+});
+
 test('screen capture is saved before foreground service shutdown', () => {
   const screen = source('ScreenCaptureService.java');
   assert.match(screen, /CapturePublisher\.publish\(this, completed, type\)/);
@@ -130,4 +155,23 @@ test('spoken record without qualifier selects screen + microphone, sound-only re
   assert.match(commands, /record sound\|record audio\|start audio recording/);
   const service = source('BubblesService.java');
   assert.match(service, /offerCaptureApproval\(command\)/);
+});
+
+test('continuous screen vision remains enabled for the Bubbles service lifetime',()=>{
+  const native=source('BubblesService.java');
+  const watch=source('ScreenWatchSession.java');
+  const bridge=source('BrainLearningService.java');
+  assert.match(native,/startScreenWatch\(\)/);
+  assert.match(native,/stopScreenWatch\(\)/);
+  assert.match(native,/screen_watch_enabled/);
+  assert.match(native,/BrainLearningService\.watchFrame\(/);
+  assert.match(native,/screenWatch\.recentVisual/);
+  assert.match(native,/ACTION_STOP_SCREEN_WATCH/);
+  assert.match(native,/oracleWindow\.sendScreenEvidence\(addressed, evidence, false\)/);
+  assert.match(watch,/VISUAL_INTERVAL_MS/);
+  assert.match(watch,/boolean isActive\(long now\) \{ return active; \}/);
+  assert.doesNotMatch(watch,/MAX_DURATION_MS|startedAt/);
+  assert.match(bridge,/ScreenVision\.describe\(pixels,/);
+  assert.match(bridge,/takeScreenshot\(Display\.DEFAULT_DISPLAY/);
+  assert.doesNotMatch(watch,/Socket|RTSP|MediaProjection|HttpURLConnection/);
 });

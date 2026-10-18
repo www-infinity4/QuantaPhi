@@ -10,8 +10,13 @@ final class ScreenAwareness {
     static int sharingCommand(String value) {
         if (value == null) return 0;
         String q = value.toLowerCase(Locale.ROOT).trim().replaceAll("[.!?]+$", "");
-        if (q.matches("(?:please )?(?:stop|end|disable|turn off) (?:live )?screen (?:sharing|view|viewing|watching)")) return -1;
-        if (q.matches("(?:please )?(?:(?:start|enable|turn on) (?:live )?screen (?:sharing|view|viewing)|(?:watch|share|keep watching) (?:my |the )?screen(?: live)?)")) return 1;
+        if (q.matches("(?:please )?(?:stop|end|disable|turn off) (?:live )?screen (?:sharing|view|viewing|watching|watch)")) return -1;
+        if (q.matches("(?:please )?(?:stop|end) (?:watching|monitoring) (?:my |the )?screen")) return -1;
+        if (q.matches("(?:please )?(?:turn off|disable|stop) (?:continuous |always on |live )?(?:screen vision|visual awareness|visual screen access|screen watch)")) return -1;
+        if (q.matches("(?:please )?(?:turn on|enable|start|keep) (?:continuous |always on |live )?(?:screen vision|visual awareness|visual screen access|screen watch)")) return 1;
+        if (q.matches("(?:please )?(?:always|continually|continuously) (?:watch|see|observe) (?:everything on )?(?:my |the )?(?:phone|screen)")) return 1;
+        if (q.matches("(?:please )?(?:see|watch|observe) (?:my |the )?(?:phone|screen) (?:all the time|constantly|continuously)")) return 1;
+        if (q.matches("(?:please )?(?:(?:start|enable|turn on) (?:live )?screen (?:sharing|view|viewing|watching|watch)|(?:watch|share|keep watching) (?:my |the )?screen(?: live| continuously)?)")) return 1;
         return 0;
     }
     private static final Pattern TAP = Pattern.compile(
