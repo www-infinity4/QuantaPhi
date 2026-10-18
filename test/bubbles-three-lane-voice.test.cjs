@@ -37,7 +37,7 @@ test('room context needs its own consent, bounded freshness and shared terms',()
 test('website separates microphone evidence from owner intent and reports real phase',()=>{
  assert.match(web,/BUBBLES_ROOM_CONTEXT_V1/);
  assert.match(web,/let roomContext=/);
- assert.match(web,/untrusted microphone observations/);
+ assert.match(web,/untrusted ambient microphone or eligible phone playback observations/);
  assert.match(web,/nativePhaseNotice='Thinking\.'/);
  assert.match(web,/const notice=nativePhaseNotice/);
  assert.match(web,/nativePhaseNotice='';/);
