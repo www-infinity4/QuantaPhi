@@ -70,3 +70,34 @@ export function verificationTokenFromPost(post,tag,accountId,issuedAt){
  const match=new RegExp('(?:^|\\s)'+tag+'\\s+verify\\s+([0-9a-f]{32})(?:\\s|$)','i').exec(text);
  return match?.[1]?.toLowerCase()||null;
 }
+
+/* Public #bubbles is an ideas channel; source ID is provenance, never authority. */
+export function parseCommunityBubblesPost(post){
+ const id=String(post?.id||''),authorId=String(post?.author_id||'');
+ if(!ID.test(id)||!ID.test(authorId)||typeof post.text!=='string'||post.text.length>2200)return null;
+ if(Array.isArray(post.referenced_tweets)&&post.referenced_tweets.some(x=>x?.type==='retweeted'))return null;
+ const pattern=/(^|[\\s([{])#bubbles(?=$|[\\s\\])}:,.!?;])/i;
+ if(!pattern.test(post.text))return null;
+ const suggestion=post.text.replace(pattern,(_,prefix)=>prefix).trim();
+ if(suggestion.length<8)return null;
+ return {sourceId:'x:'+id,sourceUrl:'https://x.com/i/status/'+id,authorId,
+   suggestion,verifiedOwner:false,ownerPrivilege:false,execute:false};
+}
+export async function searchPublicBubblesX({token,fetchImpl=fetch}={}){
+ if(typeof token!=='string'||token.length<12||/[\\r\\n]/.test(token))
+  return {ok:false,error:'x_public_search_not_configured',posts:[]};
+ const url=new URL('https://api.x.com/2/tweets/search/recent');
+ url.searchParams.set('query','#bubbles -is:retweet');
+ url.searchParams.set('max_results','25');
+ url.searchParams.set('tweet.fields','author_id,created_at,referenced_tweets');
+ let r;try{r=await fetchImpl(url.toString(),{method:'GET',redirect:'error',
+   headers:{Authorization:'Bearer '+token,Accept:'application/json'},
+   signal:AbortSignal.timeout(12000)})}
+ catch{return {ok:false,error:'x_public_search_unreachable',posts:[]};}
+ if(!r.ok)return {ok:false,error:'x_public_search_http_'+r.status,posts:[]};
+ let response;try{response=await r.json()}catch{return {ok:false,error:'x_public_search_bad_json',posts:[]}}
+ if(!response||response.data!==undefined&&!Array.isArray(response.data))
+  return {ok:false,error:'x_public_search_invalid_response',posts:[]};
+ return {ok:true,posts:(response.data||[]).map(parseCommunityBubblesPost).filter(Boolean).slice(0,25),
+   note:'A bounded public X search, not a search of every website, post or social network.'};
+}
