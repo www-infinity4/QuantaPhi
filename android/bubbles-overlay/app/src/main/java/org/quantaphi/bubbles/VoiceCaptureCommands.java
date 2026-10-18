@@ -33,6 +33,12 @@ final class VoiceCaptureCommands {
         // capture or pretend that an Android consent button was pressed.
         if (q.matches("^(?:is (?:the |my )?(?:screen |sound |audio |microphone )?(?:recorder |recording )(?:on|active|running)|is it recording|are you recording|did (?:it|that) record|did (?:the )?recording save|(?:check|show|tell me) (?:the |my )?(?:recording|recorder|capture) status|(?:recording|recorder|capture) status)$"))
             return new Command("capture_status", 0, 0);
+        // Precise recording controls never create a new projection or invoke
+        // Android's approval dialog. Resume requires an already paused session.
+        if (q.matches("^(?:(?:pause|hold|temporarily stop)\\\\s+(?:the |my )?(?:screen |video )?(?:recorder|recording|capture)|pause (?:the |my )?screen|pause video)(?: now)?$"))
+            return new Command("screen_pause", 0, 0);
+        if (q.matches("^(?:(?:resume|unpause|continue)\\\\s+(?:the |my )?(?:screen |video )?(?:recorder|recording|capture)|resume (?:the |my )?screen|resume video)(?: now)?$"))
+            return new Command("screen_resume", 0, 0);
         // Simple 'stop' applies to whatever media capture is actually running.
         // The service checks active sessions; this command does not mute Bubbles.
         if (q.matches("^(?:stop|end|finish|save)(?: now| it| that| recording| the recording| the video| video)?$"))
