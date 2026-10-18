@@ -793,7 +793,7 @@ body .ba-panel :is(button,summary):focus-visible{outline:3px solid #005fcc!impor
 .ba-panel .ba-connector-code-output textarea{height:68px!important;min-height:68px!important;max-height:68px!important;padding:6px!important}
 .ba-panel .ba-connector-code-output button{min-height:48px;max-width:110px;white-space:normal}
 .ba-panel .ba-connector-code{width:100%;min-height:44px;margin:0}
-.ba-panel .ba-composer>.ba-muted{margin:0;font-size:12px;max-height:3em;overflow-y:auto}
+.ba-panel .ba-composer>.ba-muted{margin:0;font-size:12px;max-height:none;overflow:visible}
 @media(max-width:600px){
  body .ba-panel:not([hidden]),html.bubbles-native-overlay .ba-panel:not([hidden]){
  position:fixed!important;inset:auto!important;left:0!important;right:0!important;
