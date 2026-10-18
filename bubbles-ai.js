@@ -391,6 +391,7 @@ const macroButtons=[
  ['Stop and save','Ask Android to save the current recording',()=>void sendMessage('stop recording')],
  ['SIM and network','Inspect connection from Android, without claiming carrier control',()=>void sendMessage('check my SIM')],
  ['Robot Brain tools','Check verified owner work tools',()=>void sendMessage('check robot brain tools')],
+ ['MCP LLM tools','List Bubbles connected read-only MCP tools',()=>void sendMessage('Show the MCP tools connected to Bubbles')],
  ['Cloudflare token manager','Review and explicitly approve short-lived Cloudflare Worker access without sharing API keys with the APK',()=>void proposeCloudflareWorkerToken()],
  ['Voice','Preview the currently selected speaking voice',()=>previewVoice.click()],
  ['ChatGPT','Use Android-first permissioned sign-in',()=>gptConnect.click()]
