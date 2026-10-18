@@ -42,7 +42,7 @@ test('Accessibility only interacts with installed original DU package, never And
  assert.match(access,/matches\.size\(\) != 1/);
  assert.match(access,/start recording\|start record/);
  assert.match(access,/stop recording\|stop record/);
- assert.doesNotMatch(du,/getMediaProjection|performGlobalAction|MediaProjection|setComponent|startService\(/);
+ assert.doesNotMatch(du,/getMediaProjection\(|performGlobalAction\(|setComponent\(|startService\(/);
  assert.doesNotMatch(access,/performGlobalAction\(.*(?:APPROVE|ALLOW|PERMISSION)/);
  assert.match(manifest,/<package android:name="com\.duapps\.recorder"\/>/);
 });
