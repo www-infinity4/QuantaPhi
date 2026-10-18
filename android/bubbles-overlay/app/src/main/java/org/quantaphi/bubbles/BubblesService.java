@@ -803,10 +803,11 @@ public final class BubblesService extends Service {
                     android.content.SharedPreferences capturePrefs = BrainNotes.prefs(this);
                     boolean screenActive = capturePrefs.getBoolean("capture_active", false);
                     boolean screenStarted = capturePrefs.getBoolean("capture_recording", false);
+                    boolean screenPaused = capturePrefs.getBoolean("capture_paused", false);
                     boolean soundActive = recording.active();
                     String screenState = capturePrefs.getString("capture_state", "");
                     String audioState = capturePrefs.getString("audio_state", "");
-                    String result = screenActive ? (screenStarted ? "Screen capture is ON. " : "Screen capture is starting. ")
+                    String result = screenActive ? (screenPaused ? "Screen recording is PAUSED. " : screenStarted ? "Screen capture is ON. " : "Screen capture is starting. ")
                         : soundActive ? "Microphone recording is ON. " : "No recording is active. ";
                     // Saved/failed means the native MediaStore exporter reported
                     // a result, not that Bubbles guesses where the file went.
@@ -819,6 +820,22 @@ public final class BubblesService extends Service {
                             result += "Screen capture is waiting for your Android approval.";
                     }
                     speak(result);
+                    break;
+                }
+                case "screen_pause":
+                case "screen_resume": {
+                    // The running foreground recorder, not an AI model, owns
+                    // this transition and its real notification/receipt.
+                    boolean screenActive = BrainNotes.prefs(this).getBoolean("capture_active", false);
+                    boolean screenVideo = BrainNotes.prefs(this).getBoolean("capture_recording", false);
+                    if (screenActive && screenVideo) {
+                        startService(new Intent(this, ScreenCaptureService.class)
+                            .setAction("screen_pause".equals(command.action)
+                                ? ScreenCaptureService.PAUSE : ScreenCaptureService.RESUME));
+                    } else {
+                        Toast.makeText(this, "No active screen video to pause or resume",
+                            Toast.LENGTH_SHORT).show();
+                    }
                     break;
                 }
                 case "sound_start":
@@ -858,7 +875,12 @@ public final class BubblesService extends Service {
                 case "screen_sequence":
                 case "screen_video":
                 case "camera_video":
-                    offerCaptureApproval(command);
+                    if ("screen_video".equals(command.action)
+                            && BrainNotes.prefs(this).getBoolean("capture_active", false)) {
+                        Toast.makeText(this,
+                            "Recording already active. Say pause, resume or stop recording.",
+                            Toast.LENGTH_SHORT).show();
+                    } else offerCaptureApproval(command);
                     break;
                 default: break;
             }
