@@ -1399,13 +1399,13 @@ export default{
     if(Number(count?.total||0)>=6||now-Number(count?.latest||0)<60000)
      return output(request,{ok:false,error:'submission_rate_limit'},429);
     const review=await reviewCommunityWithGPT(normalized,recommendation,{
-      apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-4.1-mini'
+      apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1'
     });
     const id='CU-'+crypto.randomUUID(),status=String(review.status||'needs_review');
     await env.WORK_DB.prepare(
      'INSERT OR IGNORE INTO community_upgrade_proposals(id,client_hash,content_hash,submitted_at,author_name,suggestion,category,placement,gpt_status,gpt_summary,gpt_risk) VALUES(?,?,?,?,?,?,?,?,?,?,?)'
     ).bind(id,clientHash,contentHash,now,author,normalized,
-     String(review.category||recommendation.category),recommendation.placement,
+     String(review.category||recommendation.category),String(review.placement||recommendation.placement),
      status,String(review.summary||'').slice(0,240),String(review.risk||'high')).run();
     const saved=await env.WORK_DB.prepare(
      'SELECT id,gpt_status FROM community_upgrade_proposals WHERE content_hash=?'
