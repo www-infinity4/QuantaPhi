@@ -19,7 +19,7 @@ a{color:#dbc3ff}audio{width:100%}
 <a href="/bubbles.html">← Bubbles AI</a>
 <h1>GPT-Live Voice · Bubbles</h1>
 <p>Genuine GPT-Live 1 audio, with two-way conversation and interruptions. This is the official API model, not Android text-to-speech.</p>
-<section><h2>Robot Brain tools</h2><div id="robotBrainOwner"></div><button id="liveBrainStatus">Check Brain status</button><p>Uses your existing verified owner session. Status checks do not start jobs. Live voice can request the same report during a call.</p></section>
+<section><h2>Robot Brain tools</h2><div id="robotBrainOwner"></div><button id="liveBrainStatus">Check Brain status</button><p id="liveToolStatus" role="status" aria-live="polite">Ready to check your owner session.</p><p>Uses your existing verified owner session. Status checks do not start jobs. Live voice can request the same report during a call.</p></section>
 <section><p><strong>Owner-only developer connection.</strong> Requires a separately billed OpenAI project API key configured in the Cloudflare gateway and its private owner authorization token. ChatGPT sign-in alone does not authorize audio.</p>
 <label for="liveOwner">Private owner authorization (this session only)</label>
 <input id="liveOwner" type="password" autocomplete="off" spellcheck="false" placeholder="Owner token">
