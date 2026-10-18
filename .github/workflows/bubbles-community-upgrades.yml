@@ -1,0 +1,36 @@
+name: Bubbles community upgrades and motion preview
+on:
+  pull_request:
+    paths:
+      - 'workers/infinity-brain-clock/community-upgrades.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
+      - 'workers/infinity-brain-clock/schema-community-upgrades.sql'
+      - 'bubbles-ai.js'
+      - 'bubbles-community-upgrades.js'
+      - 'bubbles-community-upgrades.css'
+      - 'bubbles-orbit-preview.js'
+      - 'bubbles-orbit-preview.css'
+      - 'index.html'
+      - 'video-studio.html'
+      - 'test/bubbles-community-upgrades.test.mjs'
+      - '.github/workflows/bubbles-community-upgrades.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/infinity-brain-clock/community-upgrades.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
+      - 'test/bubbles-community-upgrades.test.mjs'
+permissions:
+  contents: read
+jobs:
+  source-and-policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test test/bubbles-community-upgrades.test.mjs
+      - run: node --check bubbles-community-upgrades.js
+      - run: node --check bubbles-orbit-preview.js
+      - run: node --check bubbles-ai.js
