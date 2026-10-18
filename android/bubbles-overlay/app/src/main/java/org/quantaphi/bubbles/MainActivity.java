@@ -31,7 +31,7 @@ public final class MainActivity extends Activity {
     private Runnable refreshScreenPermission;
     private Runnable refreshChatGPTStatus;
     private final java.util.concurrent.ExecutorService mediaWork = java.util.concurrent.Executors.newSingleThreadExecutor();
-    private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64, IMAGE_REQUEST = 65;
+    private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64, IMAGE_REQUEST = 65, PHONE_AUDIO_REQUEST = 66;
     private boolean screenshot;
     private int screenIntervalSeconds, screenDurationSeconds;
     private String extracted = "";
@@ -335,8 +335,8 @@ public final class MainActivity extends Activity {
         Button contextEnable = new Button(this);
         contextEnable.setText("Enable Room Context Bridge");
         contextEnable.setOnClickListener(v -> {
-            if (!RoomNotes.enabled(this)) {
-                state.setText("First enable visible Room Notes and obtain appropriate recording consent.");
+            if (!RoomNotes.enabled(this) && !MediaNotes.available(this)) {
+                state.setText("First enable Room Notes or consent to internal phone playback listening.");
                 return;
             }
             new AlertDialog.Builder(this)
@@ -356,6 +356,35 @@ public final class MainActivity extends Activity {
             state.setText("Room Context Bridge OFF · Room Notes remain local unless you separately clear them.");
         });
         advancedCapture.addView(contextDisable);
+        // True phone playback is NOT the microphone. Android owns the separate
+        // consent prompt and permits only eligible apps that allow capture.
+        TextView phoneAudioExplanation = new TextView(this);
+        phoneAudioExplanation.setText("Optional internal phone audio: with Android playback-capture approval, listen to eligible Twitter/video/game sound locally, independently of your Bubbles microphone. Protected or non-participating apps cannot be captured. No fixed five-minute timer while the permission session remains active. A persistent notification stops the listener.");
+        advancedCapture.addView(phoneAudioExplanation);
+        Button phoneAudioEnable = new Button(this);
+        phoneAudioEnable.setText("Listen to phone app audio");
+        phoneAudioEnable.setOnClickListener(v -> beginPhoneAudio());
+        advancedCapture.addView(phoneAudioEnable);
+        Button phoneAudioStop = new Button(this);
+        phoneAudioStop.setText("Stop phone app audio");
+        phoneAudioStop.setOnClickListener(v -> {
+            startService(new Intent(this, PhonePlaybackService.class).setAction(PhonePlaybackService.STOP));
+            state.setText("Requesting phone playback listener stop.");
+        });
+        advancedCapture.addView(phoneAudioStop);
+        Button phoneAudioRead = new Button(this);
+        phoneAudioRead.setText("Review phone audio transcripts");
+        phoneAudioRead.setOnClickListener(v -> new AlertDialog.Builder(this)
+            .setTitle("Phone playback notes · local only")
+            .setMessage(MediaNotes.recent(this)).setPositiveButton("Close", null).show());
+        advancedCapture.addView(phoneAudioRead);
+        Button phoneAudioClear = new Button(this);
+        phoneAudioClear.setText("Delete phone playback transcripts");
+        phoneAudioClear.setOnClickListener(v -> {
+            MediaNotes.clear(this);
+            state.setText("Local phone playback transcripts cleared.");
+        });
+        advancedCapture.addView(phoneAudioClear);
         // Trim Bubbles' own MP4 rather than redirecting to an OEM screen recorder.
         EditText clipStart = new EditText(this);
         clipStart.setHint("Clip starts at second (0)");
@@ -679,6 +708,35 @@ public final class MainActivity extends Activity {
     private boolean canTalk() {
         return Settings.canDrawOverlays(this) && checkSelfPermission(Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED;
     }
+    private void beginPhoneAudio() {
+        if (Build.VERSION.SDK_INT < 29) {
+            state.setText("Phone playback listening requires Android 10 or later.");
+            return;
+        }
+        if (checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            state.setText("Approve microphone/audio recording permission in Android before playback capture.");
+            requestPermissions(new String[]{Manifest.permission.RECORD_AUDIO}, PERMISSIONS_REQUEST);
+            return;
+        }
+        if (!BubblesService.isSessionRunning()) {
+            state.setText("Enable Bubbles listening first; then start the separate phone audio listener.");
+            return;
+        }
+        if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
+            state.setText("Stop the separate screen capture before starting app playback listening.");
+            return;
+        }
+        new AlertDialog.Builder(this)
+            .setTitle("Listen to internal app playback?")
+            .setMessage("Android will ask to share/capture your screen audio. This listens only to sound from apps that permit recording, stores up to 30 local short transcripts, and stops from a persistent notification. Your Bubbles microphone remains separate. You can turn on the optional context bridge to include relevant transcripts in an addressed question.")
+            .setNegativeButton("Cancel", null)
+            .setPositiveButton("Ask Android", (dialog, which) -> {
+                android.media.projection.MediaProjectionManager p =
+                    (android.media.projection.MediaProjectionManager) getSystemService(MEDIA_PROJECTION_SERVICE);
+                startActivityForResult(p.createScreenCaptureIntent(), PHONE_AUDIO_REQUEST);
+            }).show();
+    }
+
     private void beginScreen(boolean image) {
         if (!image && checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
             state.setText("Screen video includes your microphone. Approve microphone access first.");
@@ -721,6 +779,18 @@ public final class MainActivity extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == IMAGE_REQUEST) {
             BubblesService.completeImagePicker(resultCode == RESULT_OK && data != null ? data.getData() : null);
+            moveTaskToBack(true);
+            return;
+        }
+        if (requestCode == PHONE_AUDIO_REQUEST) {
+            if (resultCode != RESULT_OK || data == null) {
+                state.setText("Phone playback permission declined; internal audio is not being captured.");
+                return;
+            }
+            Intent listen = new Intent(this, PhonePlaybackService.class)
+                .putExtra("consent", data).putExtra("result", resultCode);
+            startForegroundService(listen);
+            state.setText("Starting eligible-app playback listener. Android's notification can stop it.");
             moveTaskToBack(true);
             return;
         }
