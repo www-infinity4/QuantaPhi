@@ -62,6 +62,7 @@ public final class ScreenCaptureService extends Service {
             int height = Math.max(2, (metrics.heightPixels / 2) * 2);
             File directory = new File(getFilesDir(), "captures"); directory.mkdirs();
             boolean screenshot = intent.getBooleanExtra("screenshot", false);
+            BrainNotes.prefs(this).edit().putBoolean("capture_video", !screenshot).apply();
             int intervalSeconds = intent.getIntExtra("interval_seconds", 0);
             int durationSeconds = intent.getIntExtra("duration_seconds", 0);
             final boolean sequence = screenshot && intervalSeconds > 0 && durationSeconds > 0;
@@ -252,7 +253,7 @@ public final class ScreenCaptureService extends Service {
         if (finished) return;
         finished = true;
         BrainNotes.prefs(this).edit().putBoolean("capture_active", false).putBoolean("capture_recording", false)
-            .putBoolean("capture_paused", false).apply();
+            .putBoolean("capture_paused", false).putBoolean("capture_video", false).apply();
         main.removeCallbacksAndMessages(null);
         if (sequenceDirectory != null) {
             BrainNotes.prefs(this).edit().putString("capture_state", "Screen series finished: "
