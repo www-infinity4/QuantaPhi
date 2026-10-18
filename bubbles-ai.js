@@ -201,7 +201,7 @@ if(!Array.isArray(messages))messages=[];
 messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-400).map(item=>({id:item.id||crypto.randomUUID(),at:item.at||Date.now(),role:item.role,text:item.text.slice(0,6000)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
-let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
+let voiceEnabled=false,recognition=null,voicePending=[],speaking=false,voiceRetry=null,tries=0;
 let playbackVersion=0,voiceEchoUntil=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
 const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias,requireWakeName:false})||null;
@@ -1619,7 +1619,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   display(workEvidence,'ai');messages.push({role:'assistant',text:workEvidence});persistChat();status.textContent=workEvidence;
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=workEvidence;else if(config.voice&&!nativeOverlay)speakText(workEvidence);
   nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');
-  if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
+  if(voicePending.length){const next=voicePending.shift();void sendMessage(next,true)}
   return;
  }
  else if(!embedded&&(directRequest||githubCheck||createRepository||coderRequest)){
@@ -1691,7 +1691,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }finally{
    nativeSpeechPending=false;busy=false;send.disabled=false;
    if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
+   if(voicePending.length){const next=voicePending.shift();void sendMessage(next,true)}
   }
   return;
  }
@@ -1776,7 +1776,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      nativeSpeechPending=false;
    }
    busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-    if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
+    if(voicePending.length){const next=voicePending.shift();void sendMessage(next,true)}
   }
 }
 composer.before(repositoryPicker);
@@ -1831,7 +1831,7 @@ function stopMeter(){
 function stopVoice(message){
  voiceLeaseWanted=false;
  voiceGeneration++;streamVoice?.stop();streamVoice=null;
- voiceResumeWanted=false;voiceEnabled=false;voicePending='';
+ voiceResumeWanted=false;voiceEnabled=false;voicePending.length=0;
  if(voiceRetry)clearTimeout(voiceRetry);voiceRetry=null;
  pauseRecognition();stopMeter();
  playbackVersion++;try{speechSynthesis.cancel()}catch{}
@@ -1861,7 +1861,13 @@ function heardTranscript(transcript){
  const turn=voiceGate.accept(transcript,Date.now());
  if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
  if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';return}
- if(turn.type==='message'){if(busy)voicePending=turn.text;else void sendMessage(turn.text,true)}
+ if(turn.type==='message'){
+  if(busy){
+   // FIFO, not latest-only: a second spoken instruction cannot erase the first.
+   if(voicePending.length<8)voicePending.push(turn.text);
+   else status.textContent='Voice queue has eight requests. Please pause and repeat the last one.';
+  }else void sendMessage(turn.text,true);
+ }
 }
 async function startVoice(){
  // Android's foreground service already owns voice recognition. A WebView
