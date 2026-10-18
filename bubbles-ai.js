@@ -932,7 +932,7 @@ function speakText(value){
  // Native TTS and website TTS must both hide spoken Markdown punctuation.
  // Keep the original response unchanged in the on-screen conversation.
  const rawSpeech=(typeof brainTools!=='undefined'&&brainTools?.speechText)
-  ?brainTools.speechText(value):String(value??'');
+  ?brainTools.speechText(value,{hideTicketNumbers:config.hideTicketNumbers!==false,brief:config.briefSpeech!==false}):String(value??'');
  const cleanSpeech=rawSpeech
   .replace(/\x60{3}[\s\S]*?\x60{3}/g,' ')
   .replace(/!?\[([^\]]+)\]\(https?:\/\/[^)]+\)/gi,'$1')
@@ -1291,6 +1291,26 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ // This is an owner-controlled style preference, not a work ticket or a
+ // magic keyword limiting general AI conversation. Store it across reloads
+ // before passing unrelated questions to the real assistant model.
+ const speechPreference=brainTools?.voicePreferenceCommand?.(spoken);
+ if(speechPreference){
+  busy=true;send.disabled=true;display(spoken,'you');input.value='';
+  const updated={...config,...speechPreference};
+  const saved=save(CONFIG,updated);
+  if(saved)config=updated;
+  const answer=!saved?'I could not save that preference on this device.':
+   speechPreference.hideTicketNumbers===true?'Remembered. I will keep ticket references on screen but not read them aloud.':
+   speechPreference.briefSpeech===false?'Remembered. I will read full replies aloud when voice is enabled.':
+   'Remembered. Brief spoken replies, with the full answer in chat.';
+  display(answer,'ai');
+  messages.push({role:'user',text:spoken},{role:'assistant',text:answer});
+  messages=messages.slice(-400);persistChat();
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;
+  else if(fromVoice||config.voice&&!nativeOverlay)speakText(answer);
+  nativeSpeechPending=false;busy=false;send.disabled=false;return;
+ }
  const preference=!embedded&&!pendingImage?brainTools?.notificationPreference?.(spoken):null;
  if(preference){
   busy=true;send.disabled=true;display(spoken,'you');input.value='';
@@ -1689,6 +1709,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const lookupPayload=()=>({request:lookupRequest,input:prompt,location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
+ 'Saved owner speaking preferences: '+(config.hideTicketNumbers!==false?'Do not read ticket/job reference identifiers aloud; keep them in written results. ':'')+(config.briefSpeech!==false?'Keep spoken answers brief without withholding the full written answer.':'Full spoken answers requested.')+'.',
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
  'GitHub work runs through the owner-authenticated direct adapter or color-bot runner using the existing owner key. Do not claim credentials are absent without a current tool result. Only real tool receipts prove repository creation, code writes, Actions, tests, merges or deployment; ChatGPT subscriptions do not grant GitHub access.',
  'Keep the owner on QuantaPhi. Never invent a navigation destination. If a real evidence URL is available, include its full https URL in text so the interface can make it clickable. Explain work states in plain English: waiting, working, blocked, or finished with proof.',
