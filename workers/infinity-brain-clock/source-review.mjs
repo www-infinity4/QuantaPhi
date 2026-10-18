@@ -77,3 +77,14 @@ export function completePinkReviewInContext(context,jobId,verification,when,runU
  }
  return clone;
 }
+
+/* Scheduling preference only; admission, source ACL, dependencies and signed
+ * receipt gates still run afterward. Explicit owner selection keeps priority. */
+export function prioritizeReadOnlyPinkReviews(allowed,{requested=null}={}){
+ if(!Array.isArray(allowed))return [];
+ if(requested?.ticketId)return [...allowed];
+ const readOnly=[],other=[];
+ for(const candidate of allowed)
+  (pinnedPinkReview(candidate?.context,candidate?.job)?readOnly:other).push(candidate);
+ return [...readOnly,...other];
+}
