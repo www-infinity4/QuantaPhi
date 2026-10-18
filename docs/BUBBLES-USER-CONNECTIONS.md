@@ -4,7 +4,28 @@ Requested October 17, 2026. Product goal: embed a Bubbles card, connect accounts
 
 ## Implementation status
 
-This patch adds a tested, server-only authorization contract. It is NOT an OAuth server, token vault, live provider integration or buying tool. It is not wired into the owner-only Brain executor. All provider catalog entries deliberately remain `not_configured`.
+This patch implements a tested, server-only authorization contract, OAuth consent coordinator, encrypted token vault and Google/GitHub authorization adapters. It is not deployed, has no public HTTP router, and is not wired into Bubbles sessions or the owner-only Brain executor. All provider catalog entries deliberately remain `not_configured` until the live integration is verified.
+
+| Component | Implemented behavior | Remaining integration |
+| --- | --- | --- |
+| Consent coordinator | User/session/provider-bound five-minute state, PKCE, transactional single-use callback consumption | Verified Bubbles visitor sessions, public router, CSRF checks, rate limits and expired-state cleanup |
+| Token vault | AES-GCM with record/tenant context, key IDs and old-key decryption | Provision separately managed keyring, rotation/re-encryption operations |
+| Google adapter | System-browser authorization URL, code exchange, stable subject lookup, requested/granted scope intersection for Drive, Sheets and Calendar | Register application, verification as required, API action executors and resource controls |
+| GitHub App adapter | PKCE, expiring user-token exchange, verified numeric user ID | Register App, verify installation/repository permissions, authorize explicit resource selection, fork/build execution |
+| Disconnect | Delete encrypted local credentials, mark connection disconnected, cancel outstanding provider consent flows | Provider-side revoke, queued-action cancellation, revocation notifications |
+| Refresh | Expired connections fail closed | Refresh lock, rotated-token persistence, re-consent on revoked grants |
+
+Implementation modules are `workers/bubbles-connections/{authorization,consent,providers,vault}.mjs`. `ConsentService` accepts trusted storage, keyring and adapter instances; its user/session arguments must come from the host's authentication layer, never unverified request JSON. Public responses omit tokens and internal vault references. No ID token is used for authentication; Google identity is read from the fixed HTTPS UserInfo endpoint using the newly exchanged token. This does not replace the user's Bubbles session.
+
+GitHub intentionally grants **zero repository actions** from account identity alone. The adapter requires expiring GitHub App user tokens; it does not fall back to broad OAuth-App `repo` scopes or the owner's token. Google `drive.write` requests `drive.file`, which covers files the app is permitted to use, not arbitrary Drive access. Provider access remains subject to actual scopes and resource checks.
+
+Validation: `node --test test/bubbles-connections.test.mjs test/bubbles-consent.test.mjs` — 17 passing tests, including callback replay/concurrency, cross-user/provider/session rejection, partial consent, encrypted storage context, key rotation, provider exchange failure and disconnect during an in-flight callback. Provider HTTP responses are simulated; no live user OAuth consent or deployment is claimed.
+
+## Gemini consultation
+
+The owner requested a Gemini review. The existing Brain Gemini API returned HTTP 429. Gemini was then consulted through the cloud browser on October 17, 2026, and recommended retaining a shared adapter core, implementing Google services before GitHub project actions, and treating refresh/revoke and repository permissions as separate requirements. Its response is advice, not validation of the code or proof of vendor access. In particular, its broad statement about buyer APIs is qualified by eBay's official documentation: an Offer API exists but requires approval. Google verification requirements depend on the exact scopes and deployment.
+
+Browser review: https://gemini.google.com/app/3b608140698beb6d (unsigned-in conversation; may not remain accessible). Screenshot: `gemini-connector-review.jpg`.
 
 The existing `workers/infinity-brain-clock/github-credential.mjs` is hard-coded to `www-infinity4`. Keep that owner credential separate; never fall back to it for visitor jobs.
 
