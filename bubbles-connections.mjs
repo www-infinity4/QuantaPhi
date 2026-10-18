@@ -130,7 +130,9 @@ export function mountConnections(container,{token}) {
             for(const repo of data.repositories)result.append(element('p',repo.name+' · '+(repo.permissions.write?'write available':repo.permissions.read?'read available':'permissions unconfirmed')));
             if(data.truncated)result.append(element('p','More repositories may exist beyond this bounded check.'));
           }catch{result.textContent='GitHub repository verification failed. No repository action was performed.';}finally{inspect.disabled=false;}});
-          row.append(inspect,result);
+          const test=element('button','Run GitHub connection test','ba-control');test.type='button';
+          test.addEventListener('click',async()=>{test.disabled=true;result.textContent='Creating an isolated test branch and receipt…';try{const receipt=await client.call('/github/test',{id:account.id});result.replaceChildren(element('p','Verified commit: '+receipt.commit),element('p','Test branch: '+receipt.branch));const link=element('a','Open verified GitHub commit');link.href=receipt.url;link.target='_blank';link.rel='noopener noreferrer';result.append(link);}catch{result.textContent='Test did not return a verified commit. Check GitHub before retrying.';}finally{test.disabled=false;}});
+          row.append(inspect,test,result);
         }
         accounts.append(row);
         if(account.provider==='google'&&account.status==='connected') {

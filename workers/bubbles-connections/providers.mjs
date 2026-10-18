@@ -78,6 +78,22 @@ export function githubAdapter(config, request = githubRequest) {
   const redirectUri = callback(config);
   return {
     id:'github',
+    async connectionTest({accessToken}) {
+      const verified=await this.repositories({accessToken});
+      const repository='www-infinity4/QuantaPhi';
+      if(!verified.repositories.some(r=>r.name===repository&&r.permissions.write))throw Error('repository_write_not_verified');
+      const headers={Authorization:'Bearer '+accessToken,Accept:'application/vnd.github+json','Content-Type':'application/json','User-Agent':'Bubbles-User-Connections','X-GitHub-Api-Version':'2022-11-28'};
+      const call=async(path,body)=>jsonResponse(await request('https://api.github.com/repos/'+repository+path,{method:body?'POST':'GET',headers,redirect:'error',signal:AbortSignal.timeout(15000),...(body?{body:JSON.stringify(body)}:{})}),'github_test');
+      const repo=await call(''),base=await call('/git/ref/heads/'+encodeURIComponent(repo.default_branch));
+      if(!/^[a-f0-9]{40}$/.test(base.object?.sha||''))throw Error('provider_response_invalid');
+      const branch='bubbles-connection-test-'+crypto.randomUUID();
+      await call('/git/refs',{ref:'refs/heads/'+branch,sha:base.object.sha});
+      const content=btoa('# Bubbles GitHub connection test\n\nVerified an authenticated write from the Bubbles account connector.\nGenerated at '+new Date().toISOString()+'\n');
+      const response=await request('https://api.github.com/repos/'+repository+'/contents/test-receipt.md',{method:'PUT',headers,redirect:'error',signal:AbortSignal.timeout(15000),body:JSON.stringify({message:'Record Bubbles authenticated connection test',branch,content})});
+      const receipt=await jsonResponse(response,'github_test');
+      if(!/^[a-f0-9]{40}$/.test(receipt.commit?.sha||''))throw Error('provider_response_invalid');
+      return {repository,branch,commit:receipt.commit.sha,url:'https://github.com/'+repository+'/commit/'+receipt.commit.sha,status:'commit_verified'};
+    },
     async repositories({accessToken}) {
       const headers={Authorization:'Bearer '+accessToken,Accept:'application/vnd.github+json','User-Agent':'Bubbles-User-Connections','X-GitHub-Api-Version':'2022-11-28'};
       const read=async path=>jsonResponse(await request('https://api.github.com'+path,{headers,redirect:'error',signal:AbortSignal.timeout(15000)}),'github_repositories');

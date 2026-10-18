@@ -85,6 +85,7 @@ export async function handleConnections(request,env,resolveService) {
     let body; try {body = JSON.parse(raw);} catch {return json(origin,{ok:false,error:'invalid_json'},400);}
     if (!body || typeof body !== 'object' || Array.isArray(body)) return json(origin,{ok:false,error:'invalid_json'},400);
     // Explicit field selection prevents supplied userId/sessionId from winning.
+    if (url.pathname === PREFIX+'/github/test') return json(origin,{ok:true,...await service.githubConnectionTest({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/github/repositories') return json(origin,{ok:true,...await service.githubRepositories({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/start') return json(origin,{ok:true,...await service.start({...identity,provider:body.provider,actions:body.actions})});
     if (url.pathname === PREFIX+'/complete') {const account=await service.complete({...identity,provider:body.provider,state:body.state,code:body.code});if(account?.connectionError)throw Error(account.connectionError);return json(origin,{ok:true,account});}
