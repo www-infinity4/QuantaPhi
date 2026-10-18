@@ -1,4 +1,5 @@
 import {researchArticle} from './research.mjs';
+import {handleMcp,mcpTools,selectMcpTool} from './mcp.mjs';
 import {lookupKind,webSearch,currentWeather} from './search.mjs';
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
@@ -131,8 +132,9 @@ export function parseHeadlines(xml,now=Date.now()){
 }
 async function execute(request,env,body){
  const question=clean(body.request);if(!question)return response(request,{ok:false,error:'request_required'},400);
- const tool=body.tool==='resonance.calculate'?'resonance.calculate':chooseTool(question),id=crypto.randomUUID();
+ const tool=['resonance.calculate','web.search','weather.current','news.headlines'].includes(body.tool)?body.tool:chooseTool(question),id=crypto.randomUUID();
  const receipt={id,tool,status:'started',createdAt:new Date().toISOString(),kind:'bubbles-tool-result',minted:false};
+ if(/^(?:show|list|check|what are)\b/i.test(question)&&/\bmcp\b/i.test(question)&&/\btools?\b/i.test(question))return response(request,{ok:true,output:'MCP tools available through Bubbles: '+mcpTools.map(t=>t.name).join(', ')+'. These are read-only. Robot Brain owner jobs and GitHub edits still require their separately verified authorization.',receipt:{...receipt,tool:'mcp.catalog',status:'complete',repositoryActionsVerified:false}});
  if(tool==='resonance.open')return response(request,{ok:true,output:'Open the Infinity Resonance Calculator v3 at '+CALCULATOR_UI+'. Say “calculate resonance at 10 microhenries and 22 picofarads” to run the mathematical tool here.',url:CALCULATOR_UI,receipt:{...receipt,status:'complete',calculatorOpened:false}});
  if(tool==='resonance.calculate'){
   const args=body.args&&typeof body.args==='object'&&!Array.isArray(body.args)?body.args:parseResonanceSpeech(question);
@@ -182,7 +184,23 @@ async function execute(request,env,body){
    }catch{return response(request,{ok:true,output:'I could not retrieve current headlines. I have not substituted remembered headlines.',receipt:{...receipt,status:'failed',reason:'news_sources_unavailable'}});}
   }
  }
+ if(body.mcp===true&&/\b(?:mcp|use (?:the )?(?:available )?tools?|tools? interface)\b/i.test(question)){
+  const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command));
+  if(found)return response(request,{...found,receipt:{...found.receipt,interface:'MCP',selection:'structured_function_call',repositoryActionsVerified:false}});
+ }
  return gptReply(request,env,clean(body.input,32000)||question,receipt,null,question);
+}
+async function runMcpRead(request,env,command){
+ // Never accept an arbitrary URL, tool name or authorizing role from a model.
+ const cases={
+  web_search:()=>({request:command.query,tool:'web.search'}),
+  weather_current:()=>({request:'What is the current weather in '+command.location,location:command.location,tool:'weather.current'}),
+  resonance_calculate:()=>({request:'Calculate resonance',tool:'resonance.calculate',args:{l:command.l,lUnit:command.lUnit,c:command.c,cUnit:command.cUnit}}),
+  news_headlines:()=>({request:'Latest current headlines',tool:'news.headlines'})
+ };
+ if(!Object.prototype.hasOwnProperty.call(cases,command.name))throw Error('unsupported_mcp_tool');
+ const result=await execute(request,env,cases[command.name]());
+ return result.json();
 }
 async function runChatModel(env,model,options){
  try{return await env.AI.run(model,options)}
@@ -223,7 +241,9 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
 }
 export default {async fetch(request,env){
  const url=new URL(request.url);
- if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',tools:{news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubCreate:'not_connected'}});
+ // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
+ if(url.pathname==='/mcp')return handleMcp(request,env,command=>runMcpRead(request,env,command));
+ if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',tools:{news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubCreate:'not_connected',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
  if(request.method==='POST'&&url.pathname==='/v1/transcribe')return transcribe(request,env);
@@ -240,7 +260,7 @@ export default {async fetch(request,env){
   if(text.length>70000)return response(request,{ok:false,error:'body_too_large'},413);
   const result=await execute(request,env,body);if(!result.ok)return result;
   const data=await result.clone().json();
-  if(data.model||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
+  if(data.model||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
   return await gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
  }catch(error){
   const invalid=error instanceof SyntaxError;
