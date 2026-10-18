@@ -20,3 +20,23 @@ export function runnerDispatchReceipt(dispatch){
  // Never call an unexpected transport reply a successful dispatch.
  return {status:'runner_dispatch_unverified',reason:'runner_dispatch_receipt_missing'};
 }
+
+/**
+ * Helper to perform authenticated GitHub API requests.
+ * Reads the GITHUB_TOKEN from the environment and attaches it as a Bearer token.
+ * If the token is missing, logs an error but still proceeds with the request
+ * (allowing downstream handling of unauthenticated failures).
+ */
+export async function makeGitHubRequest(url, options = {}) {
+  const token = process.env.GITHUB_TOKEN;
+  if (!token) {
+    console.error('GITHUB_TOKEN is missing; GitHub requests may fail authentication.');
+  }
+  const headers = {
+    ...(options.headers || {}),
+    Authorization: token ? `Bearer ${token}` : undefined,
+  };
+  // Remove undefined Authorization header if token missing
+  if (!token) delete headers.Authorization;
+  return fetch(url, { ...options, headers });
+}
