@@ -157,17 +157,21 @@ test('spoken record without qualifier selects screen + microphone, sound-only re
   assert.match(service, /offerCaptureApproval\(command\)/);
 });
 
-test('explicit screen watch stays on-device, expires and never creates a stream server',()=>{
+test('continuous screen vision remains enabled for the Bubbles service lifetime',()=>{
   const native=source('BubblesService.java');
   const watch=source('ScreenWatchSession.java');
+  const bridge=source('BrainLearningService.java');
   assert.match(native,/startScreenWatch\(\)/);
   assert.match(native,/stopScreenWatch\(\)/);
+  assert.match(native,/screen_watch_enabled/);
+  assert.match(native,/BrainLearningService\.watchFrame\(/);
+  assert.match(native,/screenWatch\.recentVisual/);
   assert.match(native,/ACTION_STOP_SCREEN_WATCH/);
-  assert.match(native,/BrainLearningService\.currentVisibleText\(\)/);
-  assert.match(native,/sendScreenEvidence\(question, evidence, typed\)/);
-  assert.match(native,/if \(ScreenAwareness\.refersToScreen\(addressed\)\)/);
-  assert.doesNotMatch(native,/if \(screenSharing \|\| ScreenAwareness\.refersToScreen\(addressed\)\)/);
-  assert.match(watch,/MAX_DURATION_MS = 300_000L/);
-  assert.match(watch,/SAMPLE_INTERVAL_MS = 2_000L/);
-  assert.doesNotMatch(watch,/Socket|RTSP|MediaProjection|HttpURLConnection|FileOutputStream/);
+  assert.match(native,/oracleWindow\.sendScreenEvidence\(addressed, evidence, false\)/);
+  assert.match(watch,/VISUAL_INTERVAL_MS/);
+  assert.match(watch,/boolean isActive\(long now\) \{ return active; \}/);
+  assert.doesNotMatch(watch,/MAX_DURATION_MS|startedAt/);
+  assert.match(bridge,/ScreenVision\.describe\(pixels,/);
+  assert.match(bridge,/takeScreenshot\(Display\.DEFAULT_DISPLAY/);
+  assert.doesNotMatch(watch,/Socket|RTSP|MediaProjection|HttpURLConnection/);
 });
