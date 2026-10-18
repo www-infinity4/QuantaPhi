@@ -35,3 +35,14 @@ CREATE TABLE IF NOT EXISTS bubble_social_inbox(
 );
 CREATE INDEX IF NOT EXISTS bubble_social_inbox_by_owner
  ON bubble_social_inbox(user_id,added_at DESC);
+
+-- Public social provenance is separate from per-wallet personal orders.
+CREATE TABLE IF NOT EXISTS community_x_sources(
+ source_id TEXT PRIMARY KEY,
+ author_id TEXT NOT NULL,
+ source_url TEXT NOT NULL,
+ community_proposal_id TEXT NOT NULL DEFAULT '',
+ reviewed_status TEXT NOT NULL DEFAULT 'needs_review',
+ seen_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS community_x_sources_recent ON community_x_sources(seen_at DESC);
