@@ -10,8 +10,9 @@ final class ScreenAwareness {
     static int sharingCommand(String value) {
         if (value == null) return 0;
         String q = value.toLowerCase(Locale.ROOT).trim().replaceAll("[.!?]+$", "");
-        if (q.matches("(?:please )?(?:stop|end|disable|turn off) (?:live )?screen (?:sharing|view|viewing|watching)")) return -1;
-        if (q.matches("(?:please )?(?:(?:start|enable|turn on) (?:live )?screen (?:sharing|view|viewing)|(?:watch|share|keep watching) (?:my |the )?screen(?: live)?)")) return 1;
+        if (q.matches("(?:please )?(?:stop|end|disable|turn off) (?:live )?screen (?:sharing|view|viewing|watching|watch)")) return -1;
+        if (q.matches("(?:please )?(?:stop|end) (?:watching|monitoring) (?:my |the )?screen")) return -1;
+        if (q.matches("(?:please )?(?:(?:start|enable|turn on) (?:live )?screen (?:sharing|view|viewing|watching|watch)|(?:watch|share|keep watching) (?:my |the )?screen(?: live| continuously)?)")) return 1;
         return 0;
     }
     private static final Pattern TAP = Pattern.compile(
