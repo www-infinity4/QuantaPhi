@@ -33,6 +33,10 @@
     const stamp=Date.parse(progress.attemptedAt||progress.last_inspected_at||job.last_inspected_at||'')||0;
     const status=['working','running','leased'].includes(rawStatus)&&(!stamp||Date.now()-stamp>30*60000)?'unverified':rawStatus;
     if(!freshRequest&&!(stamp>0&&Date.now()-stamp<30*60000&&['working','running','leased'].includes(rawStatus)))continue;
+    // Exclude jobs that are marked as done
+    if (job.done === true) continue;
+    // Exclude jobs older than 7 days
+    if (stamp && Date.now() - stamp > 7*24*60*60*1000) continue;
     const tier=['working','running','leased'].includes(status)?0:['ready','queued','unverified'].includes(status)?1:status==='blocked'?2:3;
     rows.push({id:clean(ticket.id,80)+'/'+clean(job.id,45),title:clean(job.title,150),agent:clean(job.agent||'unassigned',65),repository:clean(job.repository||'unresolved repository',100),status,tier,priority:Number(job.queue_priority)||0,summary:clean(progress.summary,320),next:clean(progress.next,200),blocker:clean(progress.blocker,200),when:Date.parse(progress.attemptedAt||job.last_inspected_at||'')||Number(ticket.updated_at)||0});
    }
