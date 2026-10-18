@@ -1,4 +1,5 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
+import {pinnedPinkReview,validatePinkSourceReceipt,completePinkReviewInContext} from './source-review.mjs';
 import {conversationMemory} from './conversation-memory.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
@@ -152,7 +153,7 @@ export class BrainClock extends DurableObject{
   if(path==='/runner/capability'){
    if(!engine)throw Error('repository_engine_identity_required');
    const capability={when:new Date().toISOString(),runUrl,status:body.status==='credential_configured'?'credential_configured':'credential_missing',repositoriesVisible:Number.isInteger(body.repositoriesVisible)?Math.max(0,body.repositoriesVisible):null,note:'Repository writes are proven by commits, not account role permissions.'};
-   await this.ctx.storage.put('engine-capability',capability);return Response.json({ok:true,sourceWindowsV2:true,arbitrationDigestValidation:true});
+   await this.ctx.storage.put('engine-capability',capability);return Response.json({ok:true,sourceWindowsV2:true,arbitrationDigestValidation:true,sourceReviewV1:true});
   }
   if(path==='/runner/screenshots'){
    const lease=await this.ctx.storage.get(String(body.key||''));
@@ -194,20 +195,24 @@ export class BrainClock extends DurableObject{
     const target=await this.env.WORK_DB.prepare("SELECT id,context_json,request,created_at FROM work_tickets WHERE id=? AND owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions'").bind(requested.ticketId,this.env.WRITER_OWNER_HASH).first();
     if(target)rows.results=[target,...(rows.results||[])];
    }
-   const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json)}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
+   const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json)}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job,context}))});
    sortCandidates(candidates,requested);
    const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
    await this.ctx.storage.put('writer-queue-selector',{when:Date.now(),examined:admission.examined,deferred:admission.deferred.slice(0,40)});
-   for(const {ticket,jobs,job} of admission.allowed){
+   for(const {ticket,jobs,job,context} of admission.allowed){
     {
-     if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified','merged_verified'].includes(job.status))continue;
-     if(engine&&(job.dependencies||[]).some(id=>jobs.some(j=>j.id===id&&!['complete','deployed_verified','merged_verified'].includes(j.status))))continue;
+     if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified','merged_verified','superseded'].includes(job.status))continue;
+     // A signed Pink review of already merged code may ignore only bot-generated
+     // repair dependencies, not new user requirements or security decisions.
+     const sourceReview=engine?pinnedPinkReview(context,job):null;
+     const effectiveDependencies=sourceReview?[sourceReview.primaryId]:(job.dependencies||[]);
+     if(engine&&effectiveDependencies.some(id=>jobs.some(j=>j.id===id&&!['complete','deployed_verified','merged_verified'].includes(j.status))))continue;
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
      const key='writer:'+ticket.id+':'+job.id+':'+revision;
      const previous=await this.ctx.storage.get(key);
      const repositoryLease=await this.ctx.storage.get('repository-lease:'+job.repository);
      if(repositoryLease?.leaseUntil>Date.now())continue;
-     const deps=(job.dependencies||[]).map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
+     const deps=effectiveDependencies.map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
      if(!checkOwnerRunnerRequest(job,{now:Date.now(),prior:previous,lease:repositoryLease,deps}).eligible)continue;
      const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+(engine?40:20)*60*1000,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
      const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
@@ -217,7 +222,7 @@ export class BrainClock extends DurableObject{
        experientialMemory=await recallOutcomes(this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
          repository:job.repository,query:ticket.request+' '+job.instructions,limit:6});
      }catch{/* A missing memory schema must not block existing jobs. */}
-     lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories,...(engine?{experientialMemory}:{})};
+     lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories,...(engine?{experientialMemory}:{}),...(sourceReview?{sourceReview}:{})};
      if(requested?.ticketId===ticket.id&&requested?.jobId===job.id)await this.ctx.storage.delete('requested-next-job');
      await this.ctx.storage.put(key,lease);
      await this.ctx.storage.put('repository-lease:'+job.repository,lease);
@@ -226,7 +231,7 @@ export class BrainClock extends DurableObject{
      claimedJob.status='working';claimedJob.progress={...claimedJob.progress,attemptedAt:new Date().toISOString(),claimedAt:new Date().toISOString(),summary:'The authenticated runner claimed this order and is inspecting the repository.',blocker:'',next:'Implementation and test receipts will follow automatically.',runUrl};
      const claimed=await this.env.WORK_DB.prepare("UPDATE work_tickets SET context_json=?,status='working',updated_at=? WHERE id=? AND context_json=?").bind(JSON.stringify(claimedContext),Date.now(),ticket.id,ticket.context_json).run();
      if(claimed?.meta?.changes===0){await this.ctx.storage.put(key,{...lease,leaseUntil:0,status:'superseded'});await this.ctx.storage.put('repository-lease:'+job.repository,{...lease,leaseUntil:0});continue;}
-     await this.emit('greenbeans','pink-panther','writer claimed','Authenticated repository runner claimed '+ticket.id+'/'+job.id+'. It will inspect its credential, target repository and acceptance adapters before any write.',runUrl);
+     await this.emit(sourceReview?'pink-panther':'greenbeans','pink-panther','writer claimed','Authenticated repository runner claimed '+ticket.id+'/'+job.id+(sourceReview?' for read-only source verification. No new code write is authorized.':'. It will inspect its credential, target repository and acceptance adapters before any write.'),runUrl);
      return Response.json({ok:true,lease});
     }
    }
@@ -242,6 +247,7 @@ export class BrainClock extends DurableObject{
    return Response.json({ok:true,quantId:id,status:quant.status,durableReadback:true,latestFiveContains:true,attemptCount:quant.attempts.length,repository:quant.repository,runUrl});
   }
   if(!lease||lease.runId!==runId||lease.leaseId!==body.leaseId||lease.leaseUntil<Date.now())return Response.json({ok:false,error:'writer_lease_rejected',adapter:VERSION,path},{status:409});
+  if(path==='/runner/result'&&body.status==='source_verified')return this.acceptSourceReview({lease,body,runUrl,engine});
   const message=String(body.message||'').slice(0,390);
   if(path==='/runner/event'){
    lease.heartbeatAt=Date.now();
@@ -361,7 +367,7 @@ export class BrainClock extends DurableObject{
    let context;try{context=JSON.parse(row.context_json)}catch{continue}
    let changed=false,recovered=0,stale=0;
    for(const job of context.color_jobs||[]){
-    if(!job?.id||!job.repository||!job.instructions||['complete','deployed_verified','merged_verified','committed_unverified'].includes(job.status))continue;
+    if(!job?.id||!job.repository||!job.instructions||['complete','deployed_verified','merged_verified','committed_unverified','superseded'].includes(job.status))continue;
     const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
     const prior=await this.ctx.storage.get('writer:'+row.id+':'+job.id+':'+revision);
     // Only trusted runner-result records can advance state; an event carrying a
@@ -699,7 +705,7 @@ export class BrainClock extends DurableObject{
    for(const ticket of rows.results||[]){
     let context;try{context=JSON.parse(ticket.context_json);}catch{continue;}
     for(const job of context.color_jobs||[]){
-     if(['complete','committed_unverified','deployed_verified','merged_verified'].includes(job.status))continue;
+     if(['complete','committed_unverified','deployed_verified','merged_verified','superseded'].includes(job.status))continue;
      const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
      const key='receipt:'+ticket.id+':'+job.id+':'+revision;
      if(!await this.ctx.storage.get(key)){selected={ticket,context,job,key};break;}
