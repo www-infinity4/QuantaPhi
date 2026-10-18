@@ -11,9 +11,14 @@ let lastAppend="";
 let attempt=0, requestController=null;
 const liveTools=window.BubblesLiveTools?.create({
  send:event=>{if(channel?.readyState==="open")channel.send(JSON.stringify(event));},
- report:text=>line("Tools",text)
+ report:text=>{if($("liveToolStatus"))$("liveToolStatus").textContent=text;line("Tools",text)}
 });
-$("liveBrainStatus")?.addEventListener("click",()=>void liveTools?.report());
+$("liveBrainStatus")?.addEventListener("click",async()=>{
+ const button=$("liveBrainStatus");button.disabled=true;
+ if($("liveToolStatus"))$("liveToolStatus").textContent="Checking your verified owner session and Brain receipts…";
+ try{if(liveTools)await liveTools.report();else if($("liveToolStatus"))$("liveToolStatus").textContent="Tools did not load. Reload this page and retry.";}
+ finally{button.disabled=false;}
+});
 const mute=document.createElement("button");
 mute.textContent="Mute microphone";mute.disabled=true;
 mute.setAttribute("aria-pressed","false");stop.after(mute);
