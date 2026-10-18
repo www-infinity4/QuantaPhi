@@ -11,6 +11,22 @@ test('router rejects foreign origins and unauthenticated callers before resolvin
   assert.equal((await handleConnections(request('/accounts',{origin:'https://evil.test'}),env,resolve)).status,403);
   assert.equal((await handleConnections(request('/accounts',{authorization:''}),env,resolve)).status,401);
 });
+test('same-origin browser GET works without Origin while cross-site and unsafe requests stay blocked',async()=>{
+  const headers={Authorization:bearer,'Sec-Fetch-Site':'same-origin'};
+  const url='https://quantaphi.org'+PREFIX+'/catalog';
+  const accepted=await handleConnections(new Request(url,{headers}),env,()=>assert.fail('catalog must not resolve user storage'));
+  assert.equal(accepted.status,200);
+  assert.equal((await accepted.json()).ok,true);
+  for(const site of ['cross-site','same-site','none']){
+    const denied=await handleConnections(new Request(url,{headers:{Authorization:bearer,'Sec-Fetch-Site':site}}),env,()=>assert.fail());
+    assert.equal(denied.status,403);
+  }
+  const absent=await handleConnections(new Request(url,{headers:{Authorization:bearer}}),env,()=>assert.fail());
+  assert.equal(absent.status,403);
+  const unsafe=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/pair/redeem',{
+    method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}'}),env,()=>assert.fail());
+  assert.equal(unsafe.status,403);
+});
 test('caller supplied identities cannot replace verified wallet identity or device session',async()=>{
   let received;
   const response=await handleConnections(request('/start',{method:'POST',body:{userId:'victim',sessionId:'attacker',provider:'google',actions:['drive.read']}}),env,async id=>{
