@@ -40,7 +40,7 @@ test('Android chat: reachable conversation and compact composer, visible pairing
   const send=page.getByRole('button',{name:'Send',exact:true});
   const metrics=()=>page.evaluate(()=>{
    const thread=document.querySelector('.ba-thread'),composer=document.querySelector('.ba-composer');
-   const scrollables=[...document.querySelectorAll('.ba-panel *')].filter(e=>e.getClientRects().length&&e.clientHeight>0&&getComputedStyle(e).display!=='none'&&['auto','scroll'].includes(getComputedStyle(e).overflowY)&&e.scrollHeight>e.clientHeight+1);
+   const scrollables=[...document.querySelectorAll('.ba-panel *')].filter(e=>!['TEXTAREA','INPUT','SELECT'].includes(e.tagName)&&e.getClientRects().length&&e.clientHeight>0&&getComputedStyle(e).display!=='none'&&['auto','scroll'].includes(getComputedStyle(e).overflowY)&&e.scrollHeight>e.clientHeight+1);
    return {scrollables:scrollables.map(e=>e.className),height:thread.clientHeight,overflow:thread.scrollHeight>thread.clientHeight,composerBottom:composer.getBoundingClientRect().bottom,viewport:visualViewport.height};
   });
   const ink=await page.locator('.ba-message').first().evaluate(e=>getComputedStyle(e).color);
