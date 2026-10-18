@@ -5,6 +5,8 @@ on:
     paths:
       - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LocalBrain*.java'
       - 'test/java/LocalBrainSessionTest.java'
+      - 'test/java/LocalVoiceBridgeTest.java'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LocalVoiceBridge.java'
       - 'test/bubbles-local-brain-session.test.cjs'
       - '.github/workflows/bubbles-local-brain.yml'
   push:
@@ -12,6 +14,8 @@ on:
     paths:
       - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LocalBrain*.java'
       - 'test/java/LocalBrainSessionTest.java'
+      - 'test/java/LocalVoiceBridgeTest.java'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/LocalVoiceBridge.java'
       - 'test/bubbles-local-brain-session.test.cjs'
       - '.github/workflows/bubbles-local-brain.yml'
 
