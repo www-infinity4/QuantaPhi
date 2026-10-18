@@ -153,13 +153,15 @@ final class FloatingOracleWindow {
         title.setSingleLine(true);
         title.setTypeface(null, Typeface.BOLD);
         header.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
-        liveBack = button("Chat", false);
+        liveBack = button("Live voice", false);
         liveBack.setMinHeight(dp(44));
-        liveBack.setContentDescription("End live call and return to Bubbles chat");
-        liveBack.setVisibility(View.GONE);
+        liveBack.setContentDescription("Open GPT-Live owner setup");
         liveBack.setOnClickListener(v -> {
-            stopLiveCall();
-            if (website != null) website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+            if (website == null) return;
+            if (livePage) {
+                stopLiveCall();
+                website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+            } else website.loadUrl("https://quantaphi.org/bubbles-gpt-live.html?v=" + BuildConfig.VERSION_NAME);
         });
         header.addView(liveBack);
         Button close = button("✕", false);
@@ -296,7 +298,7 @@ final class FloatingOracleWindow {
                     denyLivePermission();
                     service.releaseLiveMicrophone();
                     livePage = false;
-                    if (liveBack != null) liveBack.setVisibility(View.GONE);
+                    if (liveBack != null) { liveBack.setText("Live voice"); liveBack.setContentDescription("Open GPT-Live owner setup"); }
                     loadGeneration++;
                     dispatchInFlight = false;
                     typedDispatchInFlight = false;
@@ -310,7 +312,8 @@ final class FloatingOracleWindow {
                         view.setVisibility(View.VISIBLE);
                         status.setVisibility(View.GONE);
                         retryButton.setVisibility(View.GONE);
-                        liveBack.setVisibility(View.VISIBLE);
+                        liveBack.setText("Chat");
+                        liveBack.setContentDescription("End live call and return to Bubbles chat");
                         return;
                     }
                     if (!"https".equals(location.getScheme()) || !SITE_HOST.equals(location.getHost())
