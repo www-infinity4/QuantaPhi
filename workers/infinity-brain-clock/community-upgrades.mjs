@@ -5,14 +5,14 @@ const UI=/(?:\b(?:bug|broken|fix|repair|button|swipe|scroll|layout|hide|show|bri
 const VIDEO=/(?:\b(?:video|animate|render|film|clip|swirling)\b)/i;
 const SPONSOR=/(?:\b(?:advertis(?:e|ing)|sponsor|promotion|brand|campaign|billboard)\b)/i;
 const MEDIA=/(?:\b(?:fred|krueger|spaces|radio|podcast|media star)\b)/i;
-const ADULT_VANDALISM=/\\b(?:draw|paint|show|post|put|publish|make|add)\\b.{0,65}\\b(?:dicks?|penises|genitals|porn|nudes?)\\b/i;
-const READABILITY=/\\b(?:readability|readable|legible|legibility|text.?size|font.?size|contrast|words?\\s+(?:more\\s+)?(?:clear|visible))\\b/i;
-const RESEARCH=/\\b(?:research|investigate|learn|explain|study|iodine|atomic\\s+number)\\b/i;
-const AI=/\\b(?:a\\.?i\\.?|assistant|chatbot|xavior|model)\\b/i;
-const FOREIGN_CARD=/\\b(?:my|our|mine|another|somebody.s|third.party)\\b.{0,65}\\b(?:ai|bot|brand|app|sponsor)\\b.{0,100}\\b(?:fred|media\\s*star)\\b|\\b(?:fred|media\\s*star)\\b.{0,100}\\b(?:my|our|mine)\\b.{0,25}\\b(?:ai|bot|brand|app)/i;
+const ADULT_VANDALISM=/\b(?:draw|paint|show|post|put|publish|make|add)\b.{0,65}\b(?:dicks?|penises|genitals|porn|nudes?)\b/i;
+const READABILITY=/\b(?:readability|readable|legible|legibility|text.?size|font.?size|contrast|words?\s+(?:more\s+)?(?:clear|visible))\b/i;
+const RESEARCH=/\b(?:research|investigate|learn|explain|study|iodine|atomic\s+number)\b/i;
+const AI=/\b(?:a\.?i\.?|assistant|chatbot|xavior|model)\b/i;
+const FOREIGN_CARD=/\b(?:my|our|mine|another|somebody.s|third.party)\b.{0,65}\b(?:ai|bot|brand|app|sponsor)\b.{0,100}\b(?:fred|media\s*star)\b|\b(?:fred|media\s*star)\b.{0,100}\b(?:my|our|mine)\b.{0,25}\b(?:ai|bot|brand|app)/i;
 const PLACEMENTS=new Set(['media-star-adjacent','sponsor-board','ai-sources','research-learn','readability','affected-card','video-studio','community-review']);
 export function classifyCommunitySuggestion(text){
- const input=String(text||'').trim().replace(/\\s+/g,' ');
+ const input=String(text||'').trim().replace(/\s+/g,' ');
  if(input.length<15||input.length>2200)return {accepted:false,error:'suggestion_length_invalid'};
  if(PRIVATE.test(input))return {accepted:false,error:'sensitive_or_unauthorized_request'};
  if(ADULT_VANDALISM.test(input))return {accepted:false,error:'public_page_vandalism'};
@@ -37,7 +37,7 @@ export function classifyCommunitySuggestion(text){
  }
  return {accepted:true,category,placement,route,priority:category==='ui'?'inspect-soon':'review',
    privileged:false,execute:false,automaticPayout:false,
-   reason:unrelatedTarget?'Cannot insert a third-party AI into Fred\\'s media card without card-owner authorization; offer the AI sources page instead.':null};
+   reason:unrelatedTarget?'Cannot insert a third-party AI into Fred\'s media card without card-owner authorization; offer the AI sources page instead.':null};
 }
 export function validateGPTVerdict(value,proposal){
  if(!value||typeof value!=='object'||Array.isArray(value))return {status:'needs_review',reason:'invalid_ai_response'};
@@ -46,7 +46,7 @@ export function validateGPTVerdict(value,proposal){
  const summary=typeof value.summary==='string'?value.summary.trim().slice(0,240):'';
  const risk=['low','medium','high'].includes(value.risk)?value.risk:'high';
  const requested=String(value.placement||'');
- const forcedSensitive=proposal.category==='sponsor'||category==='sponsor'||/\\b(?:payment|payout|wallet|adsense|advert|permissions|security|sign(?: |-)?in)\\b/i.test(summary);
+ const forcedSensitive=proposal.category==='sponsor'||category==='sponsor'||/\b(?:payment|payout|wallet|adsense|advert|permissions|security|sign(?: |-)?in)\b/i.test(summary);
  const placement=proposal.route==='reroute'?'ai-sources':
    PLACEMENTS.has(requested)?requested:proposal.placement;
  const status=decision==='relevant'?(proposal.route==='reroute'?'rerouted':'triaged'):
@@ -65,7 +65,7 @@ export async function reviewCommunityWithGPT(suggestion,proposal,{apiKey,model='
   response=await fetchImpl('https://api.openai.com/v1/responses',{
    method:'POST',redirect:'error',
    headers:{Authorization:'Bearer '+apiKey,'Content-Type':'application/json'},
-   body:JSON.stringify({model,input:[{role:'system',content:system},{role:'user',content:'Community suggestion to classify:\n'+suggestion}],max_output_tokens:1200,store:false,...(/^gpt-5(?:\\.|-|$)/i.test(model)?{reasoning:{effort:'high'}}:{})}),
+   body:JSON.stringify({model,input:[{role:'system',content:system},{role:'user',content:'Community suggestion to classify:\n'+suggestion}],max_output_tokens:1200,store:false,...(/^gpt-5(?:\.|-|$)/i.test(model)?{reasoning:{effort:'high'}}:{})}),
    signal:AbortSignal.timeout(15000)
   });
  }catch{return {status:'needs_review',reason:'gpt_unreachable'};}
