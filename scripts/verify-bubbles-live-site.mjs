@@ -41,7 +41,7 @@ record('homepage links and security warning', home.status);
 
 const blocked = await get('/downloads/site.apk');
 assert.ok([403,410].includes(blocked.status), 'withdrawn Platinum APK must be blocked by WAF (403) or Worker (410)');
-assert.doesNotMatch(blocked.contentType, /android\\.package-archive|application\\/octet-stream/i, 'blocked response must not be an APK');
+assert.ok(!blocked.contentType.includes('android.package-archive') && !blocked.contentType.includes('application/octet-stream'), 'blocked response must not be an APK');
 record('Platinum APK blocked', blocked.status);
 
 const protectedRead = await get('/api/bubbles/connections/catalog');
