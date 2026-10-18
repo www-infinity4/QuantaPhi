@@ -459,7 +459,7 @@ export class BrainClock extends DurableObject{
   if(fresh){
    const context=JSON.parse(fresh.context_json),job=(context.color_jobs||[]).find(j=>j.id===lease.jobId);
    if(job && await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}))===lease.revision){
-    job.status=body.status==='deployed_verified'?'complete':body.status==='committed_unverified'?'committed_unverified':'blocked';job.progress={...job.progress,attemptedAt:receipt.when,summary:message,next:body.status==='deployed_verified'?'Verified in the deployed Android browser.':body.status==='committed_unverified'?'Source committed; deployed browser verification still required.':'Runner will retry after backoff.',blocker:body.status==='deployed_verified'?'':body.status,commitSha:receipt.commitSha,runUrl};
+    job.status=body.status==='deployed_verified'?'complete':body.status==='committed_unverified'?'committed_unverified':'blocked';job.progress={...job.progress,attemptedAt:receipt.when,summary:message,next:body.status==='deployed_verified'?'Verified in the deployed Android browser.':body.status==='committed_unverified'?'Source committed; deployed browser verification still required.':'Runner will retry after backoff.',blocker:body.status==='deployed_verified'?'':body.status,commitSha:receipt.commitSha,runUrl,testsPassed:receipt.testsPassed,browserPassed:receipt.browserPassed,deployedFilesMatched:body.deployedFilesMatched===true,reviewApproved:body.reviewApproved===true};
     if(body.status==='blocked')attachTechnicalHandoff(context,job,receipt);
     await this.env.WORK_DB.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND context_json=?').bind(JSON.stringify(context),ticketStatusFromJobs(context.color_jobs),Date.now(),lease.ticketId,fresh.context_json).run();
    }
@@ -951,7 +951,7 @@ export async function ownerTickets(env,path,body){
  }
  if(path==='/work/tickets/list'){
   const rows=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100").bind(ownerHash).all();
-  return {status:200,result:{ok:true,tickets:(rows.results||[]).map(publicTicket)}};
+  return {status:200,result:{ok:true,notificationScope:ownerHash,tickets:(rows.results||[]).map(publicTicket)}};
  }
  if(path==='/work/tickets/approve-all'){
   // One verified owner click authorizes a bounded BATCH, not 50 GitHub dispatches.
