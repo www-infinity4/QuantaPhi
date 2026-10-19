@@ -261,7 +261,11 @@ public final class BubblesService extends Service {
     private final SpeechTurnBuffer turnBuffer = new SpeechTurnBuffer();
     // Vosk ends recognition at a brief pause, not necessarily at a thought.
     // Combine adjacent phrases until the owner has finished speaking.
-    private static final long END_OF_TURN_MS = 850L;
+    private static final long END_OF_TURN_MS = 950L;
+    private void scheduleVoiceTurn(long waitMs) {
+        main.removeCallbacks(deliverVoiceTurn);
+        main.postDelayed(deliverVoiceTurn, Math.max(0L, waitMs));
+    }
     private final Runnable deliverVoiceTurn = new Runnable() {
         @Override public void run() {
             if (!connected || muted) { turnBuffer.clear(); return; }
@@ -605,9 +609,12 @@ public final class BubblesService extends Service {
                         if (!complete && SystemClock.elapsedRealtime() - lastPartialAt > 550L) {
                             lastPartialAt = SystemClock.elapsedRealtime();
                             final String partial = new JSONObject(speech.getPartialResult()).optString("partial", "");
-                            if (!partial.isEmpty() && SystemClock.elapsedRealtime() < activeUntil) main.post(() -> {
-                                if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
+                            if (!partial.isEmpty()) main.post(() -> {
+                                if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil) {
                                     BrainNotes.prefs(this).edit().putString("last_partial", partial).apply();
+                                    if (turnBuffer.hasPending())
+                                        scheduleVoiceTurn(TurnCompletionPolicy.onNewPartial(turnBuffer.peek(), partial));
+                                }
                             });
                         }
                         if (complete) {
@@ -626,13 +633,17 @@ public final class BubblesService extends Service {
                                     heard(transcript);
                                     return;
                                 }
+                                // Unambiguous recording starts without a fixed end-of-turn delay.
+                                if (!turnBuffer.hasPending() && command != null
+                                        && (command.action.equals("screen_video")
+                                            || command.action.equals("sound_start"))) {
+                                    heard(transcript);
+                                    return;
+                                }
                                 turnBuffer.append(transcript);
                                 if (turnBuffer.hasPending()) {
-                                    // The pause is intentional: gather the rest of the thought
-                                    // before sending anything, and show the owner that status.
                                     state("gathering", .22f);
-                                    main.removeCallbacks(deliverVoiceTurn);
-                                    main.postDelayed(deliverVoiceTurn, END_OF_TURN_MS);
+                                    scheduleVoiceTurn(TurnCompletionPolicy.waitMillis(turnBuffer.peek()));
                                 }
                             });
                         }
@@ -869,9 +880,10 @@ public final class BubblesService extends Service {
                         else if (screenState.contains("approval") || screenState.contains("requested"))
                             result += "Screen capture is waiting for your Android approval.";
                     }
-                    String external = BrainNotes.prefs(this).getString("du_recorder_state", "");
-                    if (!external.isEmpty()) result += " DU Recorder: " + external
-                        + " Bubbles cannot prove DU is recording until DU reports it.";
+                    if (DuRecorderBridge.recordingVerified(this)) result = "Recording.";
+                    else if ("starting".equals(BrainNotes.prefs(this).getString("du_recorder_phase", ""))) result = "Starting.";
+                    else if (soundActive) result = "Recording.";
+                    else result = "Not recording.";
                     speak(result);
                     break;
                 }
@@ -890,6 +902,7 @@ public final class BubblesService extends Service {
                     else BrainNotes.prefs(this).edit().putString("audio_state", "No active sound recording").apply();
                     break;
                 case "capture_stop": {
+                    if (!typed) speak("Stopping.");
                     boolean screenActive = BrainNotes.prefs(this).getBoolean("capture_active", false);
                     boolean soundActive = recording.active();
                     if (soundActive) saveAudio();
@@ -898,19 +911,43 @@ public final class BubblesService extends Service {
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing and saving screen capture…").apply();
                     }
                     if (!screenActive && !soundActive)
-                        DuRecorderBridge.request(this, "stop", main);
+                        DuRecorderBridge.request(this, "stop", main, feedback -> {
+                            if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
+                        });
                     if (!screenActive && !soundActive && speaking) silenceReply();
                     break;
                 }
                 case "screen_stop":
+                    if (!typed) speak("Stopping.");
                     if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
                         startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing screen capture…").apply();
-                    } else DuRecorderBridge.request(this, "stop", main);
+                    } else DuRecorderBridge.request(this, "stop", main, feedback -> {
+                        if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
+                    });
                     break;
                 case "screen_video":
-                    DuRecorderBridge.request(this, "start", main);
+                    if (!typed) speak("Starting.");
+                    DuRecorderBridge.request(this, "start", main, feedback -> {
+                        if ("recording".equals(feedback) && !typed) speakWebsiteReply("Recording.");
+                    });
                     break;
+                case "capcut_edit":
+                case "capcut_extract": {
+                    Intent edit = new Intent(this, MainActivity.class)
+                        .putExtra("capcut_action", command.action)
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    PendingIntent pending = PendingIntent.getActivity(this, 517, edit,
+                        PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+                    Notification notice = new Notification.Builder(this, CAPTURE_APPROVAL_CHANNEL)
+                        .setSmallIcon(android.R.drawable.ic_menu_edit)
+                        .setContentTitle("Bubbles · CapCut")
+                        .setContentText("Tap to choose a clip for editing.")
+                        .setContentIntent(pending).setAutoCancel(true).build();
+                    ((NotificationManager) getSystemService(NOTIFICATION_SERVICE)).notify(517, notice);
+                    if (!typed) speak("Opening editor.");
+                    break;
+                }
                 case "screen_image":
                 case "screen_sequence":
                 case "camera_video":
@@ -951,7 +988,13 @@ public final class BubblesService extends Service {
         // Third context lane: background speech is never an owner command.
         // The separate bridge must have explicit permission and a topical match.
         String ambientContext = RoomContextFusion.forTurn(this, addressed);
-        if (oracleWindow != null && oracleWindow.sendSpoken(addressed, ambientContext)) return;
+        if (oracleWindow != null && oracleWindow.sendSpoken(addressed, ambientContext)) {
+            // Real work has been accepted by the local WebView queue. Give a
+            // short audible acknowledgement immediately, without claiming a
+            // search or tool finished before a verified result exists.
+            if (!typed) speak("Thinking.");
+            return;
+        }
         BrainNotes.prefs(this).edit().putString("last_error",
             "Bubbles website is unavailable or its queue is full. Open the floating chat and retry; no alternate AI was used.").apply();
         Toast.makeText(this, "Open Bubbles chat to check the website connection.", Toast.LENGTH_LONG).show();

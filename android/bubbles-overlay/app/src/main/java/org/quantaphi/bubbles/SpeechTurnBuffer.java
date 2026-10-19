@@ -16,6 +16,7 @@ final class SpeechTurnBuffer {
         text.append(next, 0, Math.min(next.length(), Math.max(0, 1800 - text.length())));
     }
     boolean hasPending() {return text.length() > 0;}
+    String peek() {return text.toString().trim();}
     String take() {
         String result = text.toString().trim();
         text.setLength(0);

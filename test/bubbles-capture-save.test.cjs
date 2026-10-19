@@ -56,7 +56,7 @@ test('floating QuantaPhi website composer passes screen capture to native Androi
   assert.match(site, /nativeCaptureRequests\.push\(spoken\)/);
   assert.match(site, /nativeCaptureRequests\.shift\(\)/);
   assert.match(site, /drainNativeCaptureRequest/);
-  assert.match(site, /Recording is NOT confirmed until the recorder status says ON/);
+  assert.match(site, /const duActive=capture.duRecording===true/);
   assert.match(bridge, /VoiceCaptureCommands\.parse\(command\)/);
   assert.match(bridge, /BubblesService\.ACTION_TEXT/);
   assert.match(bridge, /drainNativeCaptureRequest/);
@@ -125,9 +125,9 @@ test('JSON history import uses the Android document picker, never the photo-only
 
 test('spoken record without qualifier selects screen + microphone, sound-only remains explicit', () => {
   const commands = source('VoiceCaptureCommands.java');
-  assert.match(commands, /Owner default: saying only "record" means SCREEN/);
+  assert.match(commands, /Bare "record" uses DU Recorder/);
   assert.match(commands, /record\|start recording\|begin recording/);
   assert.match(commands, /record sound\|record audio\|start audio recording/);
   const service = source('BubblesService.java');
-  assert.match(service, /offerCaptureApproval\(command\)/);
+  assert.match(service, /DuRecorderBridge\.request\(this, "start", main, feedback/);
 });

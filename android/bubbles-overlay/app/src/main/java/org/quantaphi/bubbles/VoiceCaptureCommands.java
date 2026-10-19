@@ -41,9 +41,8 @@ final class VoiceCaptureCommands {
                 && q.contains("screen")) return new Command("screen_stop", 0, 0);
         if (q.matches("^(?:(?:stop|end|finish|cancel|turn off|switch off)\\s+(?:(?:the|my)\\s+)?(?:screen\\s+recorder|screen\\s+recording|recording\\s+(?:of\\s+)?(?:the|my)\\s+screen))(?:\\s+now)?$"))
             return new Command("screen_stop", 0, 0);
-        // Owner default: saying only "record" means SCREEN + MICROPHONE,
-        // one MP4 in Movies/Bubbles, after required Android projection consent.
-        // Microphone-only capture remains explicit ("record sound/audio").
+        // Bare "record" uses DU Recorder with its existing owner-selected
+        // capture settings. Sound-only capture remains separate.
         if (q.matches("^(?:record|start recording|begin recording|record a video|record video)$")
                 || q.matches("^(?:(?:turn|switch)\\s+on|open|launch|enable|activate|use|run|start|begin)\\s+(?:(?:the|my|a)\\s+)?(?:screen\\s+recorder|screen\\s+recording)(?:\\s+now)?$")
                 || q.matches("^(?:screen\\s+record|record\\s+(?:what(?:'s| is)\\s+on\\s+)?(?:my|the|this)\\s+(?:phone\\s+)?(?:screen|display)|start\\s+recording\\s+(?:what(?:'s| is)\\s+)?(?:on\\s+)?(?:my|the)\\s+(?:phone\\s+)?(?:screen|display))(?:\\b.*)?$")
@@ -54,6 +53,11 @@ final class VoiceCaptureCommands {
             return new Command("sound_stop", 0, 0);
         if (q.matches("^(?:record sound|record audio|start audio recording|start sound recording|start microphone recording|record microphone|record my voice|start recording sound|record this conversation)$"))
             return new Command("sound_start", 0, 0);
+        if (q.matches("^(?:open|edit|trim|cut)\\s+(?:(?:a|the|my|this|last)\\s+)?(?:(?:recorded|saved)\\s+)?(?:video|clip|recording)(?:\\s+(?:in|with|using)\\s+cap\\s*cut)?$")
+                || q.matches("^(?:open|start|launch)\\s+cap\\s*cut$"))
+            return new Command("capcut_edit", 0, 0);
+        if (q.matches("^(?:extract|separate|remove|save|get)\\s+(?:(?:the|just)\\s+)?(?:audio|sound|music|voice)\\s+(?:from|out of)\\s+(?:(?:the|my|this|last)\\s+)?(?:video|clip|recording)(?:\\s+(?:with|using|in)\\s+cap\\s*cut)?$"))
+            return new Command("capcut_extract", 0, 0);
         if (q.matches("^(?:record|start|take|capture|make|shoot)\\s+(?:a\\s+)?(?:camera|selfie)\\s*(?:video|recording)?(?:\\s+.*)?$")
                 || q.matches("^(?:turn on|start|record|shoot|make|capture)\\s+(?:the |my |a )?(?:camera|video|video camera)(?: recording| recorder)?$")
                 || q.matches("^(?:film|videotape)\\s+(?:me|this|that|with my camera)$"))

@@ -184,6 +184,28 @@ public final class BrainLearningService extends AccessibilityService {
         }
     }
 
+    /** State evidence: visible DU-owned Stop control after pressing Record. */
+    static boolean duControlVisible(String action) {
+        BrainLearningService service = active.get();
+        if (service == null || (!"start".equals(action) && !"stop".equals(action))) return false;
+        try {
+            java.util.List<AccessibilityWindowInfo> windows = service.getWindows();
+            if (windows == null) return false;
+            ArrayList<AccessibilityNodeInfo> matches = new ArrayList<>();
+            try {
+                for (AccessibilityWindowInfo window : windows) {
+                    AccessibilityNodeInfo root = window.getRoot();
+                    if (root == null) continue;
+                    try {
+                        if (DuRecorderBridge.PACKAGE.contentEquals(root.getPackageName()))
+                            service.findDuControls(root, action, matches, 0);
+                    } finally { root.recycle(); }
+                }
+                return matches.size() == 1;
+            } finally { for (AccessibilityNodeInfo node : matches) node.recycle(); }
+        } catch (RuntimeException error) { return false; }
+    }
+
     private void findDuControls(AccessibilityNodeInfo node, String action,
             ArrayList<AccessibilityNodeInfo> matches, int depth) {
         if (node == null || depth > 20 || !node.isVisibleToUser() || node.isPassword()) return;

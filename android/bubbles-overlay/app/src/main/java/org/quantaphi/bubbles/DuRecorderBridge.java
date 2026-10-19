@@ -4,72 +4,90 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.widget.Toast;
+import java.util.function.Consumer;
 
-/**
- * User-facing handoff to the already-installed original DU Recorder.
- * DU has no verified public recording-control API; no invented broadcasts,
- * binder calls, package-private permissions or reusable MediaProjection grants.
- * Accessible controls are tapped only in verified DU windows if Android
- * Accessibility has been explicitly enabled by the owner.
- */
+/** Controls the installed DU Recorder without faking Android permission or recording state. */
 final class DuRecorderBridge {
     static final String PACKAGE = "com.duapps.recorder";
     private DuRecorderBridge() {}
-
     static boolean installed(Context context) {
         return context.getPackageManager().getLaunchIntentForPackage(PACKAGE) != null;
     }
-
+    static boolean recordingVerified(Context context) {
+        return BrainNotes.prefs(context).getBoolean("du_recorder_verified", false);
+    }
     static void request(Context context, String action, Handler main) {
+        request(context, action, main, null);
+    }
+    static void request(Context context, String action, Handler main, Consumer<String> feedback) {
         if (!"start".equals(action) && !"stop".equals(action) && !"toggle".equals(action))
             throw new IllegalArgumentException("Unsupported DU control");
         if (!installed(context)) {
-            report(context, "Original DU Recorder is not installed/visible to Bubbles. No recording started.");
+            update(context, "unavailable", "DU Recorder is not installed.", false);
             return;
         }
-        if (("start".equals(action) || "toggle".equals(action))
-                && BrainNotes.prefs(context).getBoolean("capture_active", false)) {
-            report(context, "Bubbles capture is already active. Stop and save that session before opening DU Recorder.");
+        if (!"stop".equals(action) && BrainNotes.prefs(context).getBoolean("capture_active", false)) {
+            update(context, "blocked", "Finish current screen capture first.", false);
             return;
         }
-        // Android does not support sharing a projection approval with a different
-        // recorder. Avoid simultaneous projection sessions disrupting both apps.
         if (!"stop".equals(action) && MediaNotes.active(context)) {
-            report(context, "Stop Bubbles phone-audio listening before starting DU Recorder; Android capture sessions can conflict.");
+            update(context, "blocked", "Stop phone audio capture before recording.", false);
             return;
         }
-        String current = BrainLearningService.tapDuRecorderControl(action);
-        if (current.startsWith("DU tap sent:")) {
-            report(context, current);
+        if ("start".equals(action) && recordingVerified(context)) {
+            if (feedback != null) feedback.accept("recording");
             return;
         }
-        if ("stop".equals(action)) {
-            report(context, "DU stop button not accessible. Open DU Recorder's floating control to stop; Bubbles did not stop it.");
+        if ("toggle".equals(action)) action = recordingVerified(context) ? "stop" : "start";
+        final String wanted = action;
+        update(context, wanted.equals("start") ? "starting" : "stopping",
+            wanted.equals("start") ? "Starting…" : "Stopping…", false);
+        String tapped = BrainLearningService.tapDuRecorderControl(wanted);
+        if (tapped.startsWith("DU tap sent:")) {
+            verify(context, wanted, main, feedback, 0);
+            return;
+        }
+        if ("stop".equals(wanted)) {
+            update(context, "needs_tap", "Tap DU's Stop control.", false);
             return;
         }
         Intent launch = context.getPackageManager().getLaunchIntentForPackage(PACKAGE);
         if (launch == null) {
-            report(context, "DU Recorder launch activity unavailable; no recording started.");
+            update(context, "unavailable", "DU isn't ready.", false);
             return;
         }
         try {
             context.startActivity(launch.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                 | Intent.FLAG_ACTIVITY_SINGLE_TOP));
-            report(context, "DU Recorder opened; looking for its visible recording control.");
             main.postDelayed(() -> {
-                String after = BrainLearningService.tapDuRecorderControl(action);
-                report(context, after.startsWith("DU tap sent:")
-                    ? after : "DU Recorder opened. Its floating Start/Stop button is still needed; automatic control was not verified.");
-            }, 700L);
+                String result = BrainLearningService.tapDuRecorderControl(wanted);
+                if (result.startsWith("DU tap sent:")) verify(context, wanted, main, feedback, 0);
+                else update(context, "needs_tap", "Tap DU to record.", false);
+            }, 650L);
         } catch (RuntimeException error) {
-            report(context, "Could not open DU Recorder: " + error.getClass().getSimpleName());
+            update(context, "unavailable", "DU couldn't open.", false);
         }
     }
-
-    static void report(Context context, String text) {
+    private static void verify(Context context, String wanted, Handler main, Consumer<String> feedback, int attempt) {
+        main.postDelayed(() -> {
+            boolean visible = BrainLearningService.duControlVisible("start".equals(wanted) ? "stop" : "start");
+            if (visible) {
+                boolean recording = "start".equals(wanted);
+                update(context, recording ? "recording" : "stopped",
+                    recording ? "Recording." : "Stopped.", recording);
+                if (feedback != null) feedback.accept(recording ? "recording" : "stopped");
+            } else if (attempt < 5) {
+                verify(context, wanted, main, feedback, attempt + 1);
+            } else update(context, "needs_tap",
+                "start".equals(wanted) ? "Check DU's recording control." : "Check DU's Stop control.", false);
+        }, 400L);
+    }
+    private static void update(Context context, String phase, String message, boolean verified) {
         BrainNotes.prefs(context).edit()
-            .putString("du_recorder_state", text)
-            .putString("capture_state", text).apply();
-        Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+            .putString("du_recorder_phase", phase)
+            .putString("du_recorder_state", message)
+            .putBoolean("du_recorder_verified", verified).apply();
+        if ("blocked".equals(phase) || "unavailable".equals(phase))
+            Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }
 }

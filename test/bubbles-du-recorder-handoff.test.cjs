@@ -12,7 +12,7 @@ const access=read('BrainLearningService.java');
 const manifest=fs.readFileSync('android/bubbles-overlay/app/src/main/AndroidManifest.xml','utf8');
 
 test('DU is selected for screen video commands; old recorder is blocked, screenshots remain',()=>{
- assert.match(native,/case "screen_video":\s+DuRecorderBridge\.request\(this, "start", main\)/);
+ assert.match(native,/case "screen_video":[\s\S]*?DuRecorderBridge\.request\(this, "start", main, feedback/);
  assert.match(native,/case "screen_stop":/);
  assert.match(native,/DuRecorderBridge\.request\(this, "stop", main\)/);
  assert.match(main,/screenVideo\.setOnClickListener\(v -> DuRecorderBridge\.request\(this, "start", ui\)\)/);
@@ -35,8 +35,8 @@ test('DU controls are available in one extra floating button with short and long
 test('Accessibility only interacts with installed original DU package, never Android consent',()=>{
  assert.match(du,/com\.duapps\.recorder/);
  assert.match(du,/getLaunchIntentForPackage\(PACKAGE\)/);
- assert.match(du,/BrainLearningService\.tapDuRecorderControl\(action\)/);
- assert.match(du,/recording state not yet verified|automatic control was not verified/);
+ assert.match(du,/BrainLearningService\.tapDuRecorderControl\(wanted\)/);
+ assert.match(du,/du_recorder_verified/);
  assert.match(access,/PACKAGE\.contentEquals\(root\.getPackageName\(\)\)/);
  assert.match(access,/node\.performAction\(AccessibilityNodeInfo\.ACTION_CLICK\)/);
  assert.match(access,/matches\.size\(\) != 1/);
@@ -50,8 +50,9 @@ test('Accessibility only interacts with installed original DU package, never And
 test('DU cannot silently compete with active Bubbles media projection or assume outcome',()=>{
  assert.match(du,/getBoolean\("capture_active", false\)/);
  assert.match(du,/MediaNotes\.active\(context\)/);
- assert.match(du,/DU stop button not accessible/);
- assert.match(du,/DU Recorder opened/);
- assert.match(du,/No recording started|no recording started/);
- assert.match(native,/Bubbles cannot prove DU is recording/);
+ assert.match(du,/Tap DU's Stop control/);
+ assert.match(du,/DU couldn't open/);
+ assert.match(du,/recordingVerified\(Context context\)/);
+ assert.match(du,/duControlVisible/);
+ assert.match(native,/DuRecorderBridge\.recordingVerified\(this\)/);
 });
