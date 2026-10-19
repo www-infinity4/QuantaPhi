@@ -40,7 +40,7 @@ test('native Android strips spoken markup only at playback, not from chat replie
   assert.match(source,/tts\.speak\(response,/);
   const gradle=fs.readFileSync('android/bubbles-overlay/app/build.gradle','utf8');
   assert.match(gradle,/versionCode 37/);
-  assert.match(gradle,/versionName '0\.36\.0'/);
+  assert.match(gradle,/versionName '0\.37\.0'/);
 });
 
 test('Yellow Android capture evidence is delivered once to Red and never fabricated from baseline',()=>{
