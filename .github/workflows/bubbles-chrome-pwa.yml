@@ -3,6 +3,11 @@ on:
   pull_request:
     paths:
       - 'bubbles.html'
+      - 'bubbles/index.html'
+      - 'bubbles-product.css'
+      - 'index.html'
+      - 'workers/quantaphi-site/worker.js'
+      - 'test/bubbles-product-first.test.cjs'
       - 'bubbles.webmanifest'
       - 'bubbles-manifest.json'
       - 'bubbles-chrome.html'
@@ -32,7 +37,7 @@ jobs:
         run: |
           node --check bubbles-pwa.js
           node --check bubbles-pwa-sw.js
-          node --test test/bubbles-chrome-pwa.test.cjs
+          node --test test/bubbles-chrome-pwa.test.cjs test/bubbles-product-first.test.cjs
       - name: Validate spoken Chrome actions without screen guessing
         run: |
           mkdir -p /tmp/bubbles-chrome
