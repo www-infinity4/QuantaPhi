@@ -9,3 +9,15 @@ test('Phi-owned ShopLC HTML can embed only on the same origin',async()=>{
 });
 test('existing Crusher same-origin embedding is preserved',async()=>{assert.equal((await request('/bitcoin-crusher/')).headers.get('X-Frame-Options'),'SAMEORIGIN');});
 test('unrelated HTML and ShopLC scripts keep their upstream frame restriction',async()=>{assert.equal((await request('/learn/')).headers.get('X-Frame-Options'),'DENY');assert.equal((await request('/shoplc/player.js','application/javascript')).headers.get('X-Frame-Options'),'DENY');});
+
+test('every registered public chat card can embed on this origin',async()=>{
+ const {cards}=await import('../bubbles-card-catalog.mjs');
+ for(const card of cards){
+  const r=await request(card.url);
+  assert.equal(r.headers.get('X-Frame-Options'),'SAMEORIGIN',card.title+' '+card.url);
+ }
+});
+test('owner, connection and unrelated pages retain upstream frame protection',async()=>{
+ for(const path of ['/bubbles-accounts.html','/bubbles-connections.mjs','/learn/','/index.html'])
+  assert.equal((await request(path,path.endsWith('.mjs')?'application/javascript':'text/html')).headers.get('X-Frame-Options'),'DENY',path);
+});
