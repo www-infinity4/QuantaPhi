@@ -33,6 +33,18 @@ public final class BrainLearningService extends AccessibilityService {
         active = new WeakReference<>(this);
     }
     static boolean isConnected() { return active.get() != null; }
+
+    /** Must verify Chrome is the active, visible app before a Chrome-only command. */
+    static boolean isChromeForeground() {
+        BrainLearningService service = active.get();
+        if (service == null) return false;
+        AccessibilityNodeInfo root = service.currentRoot();
+        if (root == null) return false;
+        try {
+            return "com.android.chrome".contentEquals(
+                root.getPackageName() == null ? "" : root.getPackageName());
+        } finally { root.recycle(); }
+    }
     private static boolean allowed(AccessibilityNodeInfo node) {
         if (node == null) return false;
         CharSequence name = node.getPackageName();
