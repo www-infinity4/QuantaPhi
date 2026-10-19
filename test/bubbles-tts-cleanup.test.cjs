@@ -39,8 +39,8 @@ test('native Android strips spoken markup only at playback, not from chat replie
   assert.match(source,/response = SpokenReplyText\.forSpeech\(response\);/);
   assert.match(source,/tts\.speak\(response,/);
   const gradle=fs.readFileSync('android/bubbles-overlay/app/build.gradle','utf8');
-  const code=Number(gradle.match(/versionCode\\s+(\\d+)/)?.[1]);
-  const name=gradle.match(/versionName\\s+'0\\.(\\d+)\\.0'/)?.[1];
+  const code=Number(gradle.match(/versionCode\s+(\d+)/)?.[1]);
+  const name=gradle.match(/versionName\s+'0\.(\d+)\.0'/)?.[1];
   assert.ok(Number.isInteger(code)&&code>=44);
   assert.equal(Number(name),code,'Android versionCode and release name must agree');
 });
