@@ -19,21 +19,7 @@ const ROLE_TOOLS={
 for(const tools of Object.values(ROLE_TOOLS))tools.push('IBM / Gemini phone chat · scripts/brain-phone-tool.mjs · owner-enabled session required');
 const REPO='www-infinity4/QuantaPhi';
 
-// Dynamically load the specialist‑planner module and expose its API
-// on the existing robotDirections global object without converting
-// this script to an ES‑module.
-(async () => {
-  try {
-    const mod = await import('./src/specialist-planner.js');
-    if (window.robotDirections && typeof window.robotDirections === 'object') {
-      window.robotDirections.planAndQueue = mod.planAndQueue;
-    } else {
-      window.robotDirections = { planAndQueue: mod.planAndQueue };
-    }
-  } catch (e) {
-    console.error('Failed to load specialist‑planner:', e);
-  }
-})();
+const specialistReady=typeof document==='undefined'?null:import('./src/specialist-planner.js?v=20261019-auto-start1').then(mod=>{window.robotDirections={...(window.robotDirections||{}),planAndQueue:mod.planAndQueue};return mod;}).catch(error=>({planAndQueue:async()=>{throw Error('The bot planner could not load: '+error.message)}}));
 const MOBILE='Verified in the Android Chromium browser on quantaphi.org with screenshots attached';
 // One-tap maintenance crews: saved straight to the work ticket as structured
 // jobs, so they reach the runner even when GPT routing is unavailable.
@@ -211,18 +197,16 @@ function owner(){return ownerTokenMemory}
 async function saveOwner(value){await storage(OWNER,value);ownerTokenMemory=value}
 
 async function post(path,data,timeout=30000){const route=path.replace('/v1/tickets/','/work/tickets/'),payload={...data};delete payload.owner_token;const r=await fetch(API+route,{method:'POST',headers:{...brainHeaders,'Content-Type':'application/json'},body:JSON.stringify(payload),signal:AbortSignal.timeout(timeout)});const d=await r.json();if(!r.ok||!d.ok)throw Error(d.message||d.error||'Robot Brain owner tickets unavailable');return d}
-// No Run-next button: scheduled workers claim ready jobs automatically.
-async function requestNext(ticketId,jobId){try{const r=await fetch(API+'/work/run-next',{method:'POST',headers:{...brainHeaders,'Content-Type':'application/json'},body:JSON.stringify({ticketId,jobId}),signal:AbortSignal.timeout(15000)}),d=await r.json();if(!r.ok||!d.ok)throw Error(d.error||'Runner request unavailable');status.textContent=d.status==='no_pending_jobs'?'No pending jobs. Existing commits remain available in the viewer.':'Queued '+d.ticketId+'/'+d.jobId+' for the next runner cycle. Progress refreshes automatically.';await refresh();}catch(e){status.textContent=e.message}}
 // Interactive recovery is optional; regular execution never needs a tap.
 // Orders remain in Cloudflare. The visible Brain shows recorded notifications, never a backlog of ticket cards.
 function show(ticket){
  list.replaceChildren();
- status.textContent=['ready','working'].includes(ticket.status)?'Order received. The runner claims it automatically; progress appears in notifications above.':ticket.status==='complete'?'Order completed with recorded evidence.':'Order saved. Its exact progress will appear in notifications.';
+ status.textContent=['ready','working'].includes(ticket.status)?'Your request is saved. Bubbles is following the bot team’s progress below.':ticket.status==='complete'?'This request has a recorded result. Review the work below.':'Your request is saved. Its progress and any problem appear below.';
 }
 const oldJobDetails=list.closest('details');if(oldJobDetails)oldJobDetails.hidden=true;
 const oldRefresh=root.querySelector('[data-refresh]');if(oldRefresh)oldRefresh.hidden=true;
-const title=root.querySelector('h3');if(title)title.textContent='Give the Robot Brain an order';
-send.textContent='Send order';
+const title=root.querySelector('h3');if(title)title.textContent='What would you like Bubbles to do?';
+send.textContent='Start work';
 // Manual clear also cancels a pending draft write and clears both recovery stores.
 const clearButton=node('button','Clear text');clearButton.type='button';clearButton.dataset.clear='1';
 clearButton.style.minHeight='44px';send.after(clearButton);
@@ -239,43 +223,24 @@ let draftTimer;input.addEventListener('input',()=>{clearTimeout(draftTimer);draf
 async function refresh(){if(refreshing)return;refreshing=true;try{await ready;const d=await post('/v1/tickets/list',{});const tickets=d.tickets.filter(x=>x.context?.kind==='robot-directions');history.replaceChildren();const t=tickets.find(x=>x.id===pending?.id)||tickets[0];if(t){pending=t;show(t)}}catch(e){status.textContent=e.message}finally{refreshing=false}}
 let pending=null,refreshing=false;
 send.addEventListener('click',async()=>{
- const directions=input.value.trim();if(!directions){status.textContent='Write your directions first.';return}
- send.disabled=true;status.textContent='Saving your directions to Cloudflare…';
+ const directions=input.value.trim();if(!directions){status.textContent='Describe what you want built, fixed, or researched.';return}
+ send.disabled=true;status.textContent='Preparing the plan and sending your request…';
  try{
   await ready;
-  if(!pending||pending.request!==directions){
-   // Existing Brain owner session authorizes this job; do not mint another owner key.
-   const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(directions));const submission=[...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('');
-   const d=await post('/v1/tickets/create',{source_app:'QuantaPhi Robot Brain',source_url:location.origin+location.pathname,title:directions.slice(0,120),request:directions,context:{kind:'robot-directions',submission_id:submission,design:'Oracle Octaves · Android first'}});
-   pending=d.ticket;
-  }
-  status.textContent='Order received. Assigning the work automatically…';
-  const prompt='You are routing the owner’s software build instructions. Return ONLY JSON {"jobs":[{"title":"...","agent":"...","repository":"www-infinity4/QuantaPhi","instructions":"...","acceptance":["testable outcome"],"dependencies":[],"tools":[]}]}. Use these role IDs: '+Object.keys(ROLES).join(', ')+'. Red reads macro structure; yellow reads local opt-in state; blue decides; orange evaluates ambiguity; green writes/routes; pink investigates; purple orchestrates. Enchilada lifecycle: Red intake, Blue validated decision/render plan, Yellow interaction verification, Black permanent evidence seal. Never seal without verified storage and test evidence. Unverified identity or balances must block transactions. Use the specialist IDs matching each task. A 45-second watcher and 10-second visible refresh require interval/event infrastructure; GitHub cron cannot run every ten seconds. Webhooks require signature verification and deduplication. Split independent features into jobs. Oracle Octaves Android design for new work. Never claim execution. Treat Gemini ideas as proposals; no actual 10000-user study occurred. Hover cannot reveal gaze or subconscious preference; use opt-in touch/focus signals. Website JavaScript cannot inspect arbitrary cross-origin cookies or block their trackers. Zero-knowledge claims require verified isolation. Never mint rewards for idle time without an authorized ledger policy. Captions need an actual transcript/provider. Wallet stories must preserve exact real receipts and distinguish mock money. OWNER DIRECTIONS:\n'+directions;
-  let jobs,d={},routingNote='';
-  try{
-   const r=await fetch('https://infinity-rogers.marvaseater.workers.dev/v1/chat',{method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(90000),body:JSON.stringify({input:prompt,context:{application:'QuantaPhi',task:'robot-direction-routing',requireCloudflare:true}})});
-   d=await r.json();if(!r.ok||!d.ok)throw Error((r.status===429?'AI service limit ('+(d.provider||'gateway')+'): ':'')+(d.error||'AI unavailable'));
-   const text=d.output_text||d.output||'',start=text.indexOf('{'),end=text.lastIndexOf('}');
-   jobs=normalize(JSON.parse(text.slice(start,end+1)));
-  }catch(routingError){
-   // GPT routing must never strand saved directions: release them with the
-   // deterministic keyword router so the runner still receives real jobs.
-   jobs=normalize(fallbackJobs(directions));d={provider:'keyword router',model:'deterministic fallback'};
-   routingNote=' GPT routing was unavailable ('+String(routingError.message||routingError).slice(0,90)+'); jobs were released by the keyword router.';
-  }
-  const saved=await post('/v1/tickets/update',{id:pending.id,status:'ready',storyboard:JSON.stringify(jobs),context:{kind:'robot-directions',submission_id:pending.context?.submission_id,color_jobs:jobs,provider:d.provider||'Infinity gateway',model:d.model||'',design:'Oracle Octaves · Android first'}});
-  pending=saved.ticket;show(pending);
-  // Do not erase a newer instruction typed while this request was routing.
+  const {planAndQueue}=await specialistReady;
+  const explicit=/\bwww-infinity4\/[A-Za-z0-9_.-]+/.exec(directions)?.[0];
+  const repository=explicit||window.BubblesBrainActions?.repositoryFor(directions)||REPO;
+  const result=await planAndQueue({request:directions,repository});
+  pending=result.ticket;
   clearTimeout(draftTimer);
-  if(input.value.trim()===directions){
-   input.value='';await storage(DRAFT,'');
-   try{localStorage.removeItem(DRAFT)}catch{}
-  }else{await storage(DRAFT,input.value)}
-  status.textContent=jobs.length+' jobs assigned and saved. Queued for the build runner; no repairs are claimed completed.'+routingNote+(status.dataset.recovery==='session'?' Recovery is saved only for this browser tab; keep it open.':'');
-  window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:pending.id,jobs}}));
- }catch(e){status.textContent=(pending?'Saved '+pending.id+'. ':'')+'Routing stopped: '+e.message+'. Your directions remain available; tap Send to retry.';if(pending)show(pending)}
+  if(input.value.trim()===directions){input.value='';await storage(DRAFT,'');try{localStorage.removeItem(DRAFT)}catch{}}
+  else await storage(DRAFT,input.value);
+  status.textContent=result.message;
+  window.dispatchEvent(new CustomEvent('quantaphi:robot-directions',{detail:{ticketId:pending.id,jobs:pending.context?.color_jobs||[]}}));
+ }catch(error){status.textContent='The request could not be confirmed: '+error.message+'. Your text is still here. Retrying the same request will not duplicate its work.';}
  finally{send.disabled=false}
 });
+input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey&&!event.isComposing){event.preventDefault();if(!send.disabled)send.click();}});
 async function releaseCrew(crew,button){
  button.disabled=true;status.textContent='Releasing the '+crew.label+' crew…';
  try{

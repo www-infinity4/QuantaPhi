@@ -116,7 +116,7 @@ test('website uses same-origin verified owner gate for Brain calls and keeps gue
  assert.match(js,/BRAIN\+'\/work\/tickets\/list'/);
  assert.match(js,/brainTools\.makeJobs\(request,repository\)/);
  assert.match(js,/result\.deduplicated/);
- assert.match(js,/you do not need to press another button/);
+ assert.match(js,/start_immediately:true/);
 });
 
 test('owner continue resumes the immediately preceding explicit task without broadening privileges',()=>{

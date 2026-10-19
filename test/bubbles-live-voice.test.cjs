@@ -44,7 +44,7 @@ function harness(owner=false,speech=false){
    if(body.action==='suggest_repositories')return {ok:true,json:async()=>({ok:true,source:'verified-test-catalog',catalogComplete:true,candidates:[{repository:'www-infinity4/QuantaPhi',score:20}],selection:['www-infinity4/QuantaPhi'],confidence:'high',requiresReview:false,reason:'fixture Bubbles source'})};
   }
   requests.push({url,opts});
-  return {ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',status:'draft',context:{kind:'robot-directions'}}}:url.endsWith('/work/run-next')?{ok:true,status:'queued_for_runner',ticketId:'fixture-ticket',jobId:'TASK-1'}:{ok:true,output:'Bubbles response from Oracle'}};
+  return {ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',status:'ready',context:{kind:'robot-directions'}},execution:{status:'queued_for_runner'}}:url.endsWith('/work/run-next')?{ok:true,status:'queued_for_runner',ticketId:'fixture-ticket',jobId:'TASK-1'}:{ok:true,output:'Bubbles response from Oracle'}};
  };
  const context={window,document,navigator,localStorage,location:{href:'https://quantaphi.org/',search:'',origin:'https://quantaphi.org',pathname:'/'},
   NodeFilter:{SHOW_TEXT:4},scrollY:0,innerHeight:780,innerWidth:390,URL,URLSearchParams,Response,Date:FakeDate,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch:async(...args)=>{
@@ -110,20 +110,20 @@ test('explicit repair command is kept as work rather than a fabricated chat repa
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles fix the image upload')]});await flush();
  assert.equal(h.requests.length,0,'Blocked owner submission reports its actual result without a second chat request');
  assert.equal(h.nodes.find(n=>n['aria-label']==='Work request for Robot Brain').value,'fix the image upload');
- assert.ok(h.nodes.some(n=>String(n.textContent||'').includes('No job was confirmed queued')));
+ assert.ok(h.nodes.some(n=>String(n.textContent||'').includes('I could not confirm that Robot Brain received this request')));
 });
 
 test('owner repair command creates and readies one real ticket with receipt',async()=>{
  const h=harness(true);await flush();h.orb.handlers.click();await flush();
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles repair the video generator')]});
- for(let attempt=0;attempt<100&&h.requests.length<3;attempt++){await new Promise(resolve=>setTimeout(resolve,10));await flush();}
- assert.equal(h.requests.length,3);assert.match(h.requests[0].url,/tickets\/create$/);assert.match(h.requests[1].url,/tickets\/update$/); assert.match(h.requests[2].url,/work\/run-next$/);
+ for(let attempt=0;attempt<100&&!h.requests.some(r=>r.url.endsWith('/work/tickets/create'));attempt++){await new Promise(resolve=>setTimeout(resolve,10));await flush();}
+ assert.equal(h.requests.filter(r=>r.url.endsWith('/work/tickets/create')).length,1);assert.match(h.requests[0].url,/tickets\/create$/);assert.ok(!h.requests.some(r=>r.url.endsWith('/work/run-next')||r.url.endsWith('/work/tickets/update')));
  assert.equal(JSON.parse(h.requests[0].opts.body).context.approval,'explicit-user-command');
  assert.ok(h.catalogCalls.some(c=>c.action==='suggest_repositories'),'Owner voice task consulted the authenticated repository resolver');
  assert.ok(h.nodes.some(n=>n.tag==='a'&&n.href==='https://quantaphi.org/#robotDirections'),'Receipt contains a clickable progress link');
  assert.ok(h.requests.every(r=>!r.url.includes('/v1/assist')),'No chat-only service can contradict the receipt');
  assert.equal(h.nodes.find(n=>n['aria-label']==='Work request for Robot Brain').value,'');
- assert.ok(h.nodes.some(n=>[n.textContent,...n.children.filter(c=>typeof c==='string')].join('').includes('Job saved. GitHub dispatch accepted; runner start is not yet verified')));
+ assert.ok(h.nodes.some(n=>[n.textContent,...n.children.filter(c=>typeof c==='string')].join('').includes('build runner has been requested')));
 });
 
 test('spoken replies keep the same microphone and recognizer active',async()=>{
@@ -142,11 +142,11 @@ test('owner helper loaded after Bubbles is connected after deferred scripts fini
  const h=harness();await flush();
  h.window.QuantaBrainOwner={ready:Promise.resolve({Authorization:'Bearer fixture-only'})};
  h.document.handlers.DOMContentLoaded();await flush();
- assert.equal(h.nodes.find(n=>n.textContent==='Send approved request to Robot Brain').hidden,false);
+ assert.equal(h.nodes.find(n=>n.textContent==='Start work').hidden,false);
  h.orb.handlers.click();await flush();
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles repair the upload')]});
- for(let attempt=0;attempt<100&&h.requests.length<3;attempt++){await new Promise(resolve=>setTimeout(resolve,10));await flush();}
- assert.equal(h.requests.length,3);
+ for(let attempt=0;attempt<100&&!h.requests.some(r=>r.url.endsWith('/work/tickets/create'));attempt++){await new Promise(resolve=>setTimeout(resolve,10));await flush();}
+ assert.equal(h.requests.filter(r=>r.url.endsWith('/work/tickets/create')).length,1);
 });
 
 

@@ -26,16 +26,15 @@ test('blocked job cards explain fixes in plain English and retain original evide
  assert.match(report,/Verification missing/);
  assert.match(report,/View GitHub runner evidence/);
  assert.match(style,/robot-work-ticket h4/);
- assert.match(card,/Tell Bubbles what needs to be fixed/);
+ assert.match(card,/Bubbles plans the work, assigns the bots/);
  assert.doesNotMatch(card,/Tell Bubbles what needs fixing/);
 });
-test('Run All accurately distinguishes a dispatch from actual work receipts',()=>{
- assert.match(chat,/One GitHub runner launch was accepted/);
- assert.match(chat,/No runner was launched/);
- assert.match(chat,/Other eligible jobs remain in the queue/);
- assert.match(chat,/No code, tests or deployment claimed/);
- assert.match(chat,/runnerTarget/);
- assert.match(card,/bubbles-ai\.js\?v=20261019-bulk-truth1/);
+test('new requests start automatically without a Run All control',()=>{
+ assert.doesNotMatch(chat,/runAllButton/);
+ assert.match(chat,/start_immediately:true/);
+ assert.match(report,/function writeRequests/);
+ assert.match(report,/Bot steps and recorded progress/);
+ assert.match(card,/bubbles-ai\.js\?v=20261019-auto-start1/);
 });
 
 test('blocked job history can be paged without losing older upgrades',()=>{
@@ -45,5 +44,5 @@ test('blocked job history can be paged without losing older upgrades',()=>{
  assert.match(report,/blockedOffset-10/);
  assert.match(report,/candidates\.slice\(offset,offset\+10\)/);
  assert.match(report,/Blocked jobs /);
- assert.match(card,/robot-work-report\.js\?v=20261019-blocked-pages1/);
+ assert.match(card,/robot-work-report\.js\?v=20261019-auto-start1/);
 });

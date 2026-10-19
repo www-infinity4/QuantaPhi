@@ -65,7 +65,7 @@ test('Bubbles never impersonates account sign-in or grants unverified repository
  assert.match(code,/workButton\.addEventListener\('click'/);
  assert.match(code,/context:\{kind:'robot-directions'/);
  assert.match(code,/approval='explicit-click'/);
- assert.match(code,/No confirmed ticket/);
+ assert.match(code,/No confirmed request/);
  assert.match(code,/Only real tool receipts prove repository creation/);
  assert.doesNotMatch(code,/github\.com\/login\/oauth\/authorize\?/);
  assert.doesNotMatch(code,/https:\/\/api\.github\.com\/repos\/.*\/contents/);
@@ -175,7 +175,7 @@ test('embedded Bubbles programming persists user-chosen role instead of overwrit
  const b=execute(storage);
  assert.equal(b.nodes.find(x=>x.id==='ba-role').value,'specialist','previous user choice must override the embed URL default');
  assert.equal(b.nodes.find(x=>x.id==='ba-alias').value,'Expert visitor');
- assert.equal(b.nodes.some(x=>x.textContent==='Send approved request to Robot Brain'&&x.hidden===false),false,'external iframe has no owner controls');
+ assert.equal(b.nodes.some(x=>x.textContent==='Start work'&&x.hidden===false),false,'external iframe has no owner controls');
 });
 
 test('reply actions take notes and prepare work without sending unapproved robot tickets',async()=>{
@@ -214,7 +214,7 @@ test('reply actions take notes and prepare work without sending unapproved robot
  draft.handlers.click();
  const work=nodes.find(e=>e.tag==='textarea'&&e.placeholder?.startsWith('Ordinary GitHub repairs'));
  assert.equal(work.value,notes[0].text);
- const submit=get('button','Send approved request to Robot Brain');
+ const submit=get('button','Start work');
  assert.equal(submit.hidden,true);
  assert.equal(calls.length,1,'copying a work draft does not submit it');
  const saveHistory=nodes.find(e=>e.tag==='input'&&e.type==='checkbox'&&e.handlers.change?.toString().includes('keepChat'));

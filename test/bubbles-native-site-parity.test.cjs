@@ -39,7 +39,7 @@ test('Site is the single assistant for native-voice commands and typed chat', ()
   assert.match(site, /speak\.hidden=true/);
   assert.match(site, /const headers=await verifiedOwnerHeaders\(\)/);
   assert.match(site, /\/work\/tickets\/create/);
-  assert.match(site, /\/work\/tickets\/update/);
+  assert.match(site, /start_immediately:true/);
 });
 test('Voice notes work without a manual notes form', () => {
   assert.match(site, /if\(nativeOverlay\)\{noteText\.hidden=true;saveNote\.hidden=true;\}/);

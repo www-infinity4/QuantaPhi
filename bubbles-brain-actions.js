@@ -151,16 +151,35 @@ function sitePackageBrief(request,repository){
   'DO NOT request routine file paths, exported functions or schemas from the owner before scanning the authorized repositories. Ask only for a genuinely missing owner-only choice or security authorization.'
  ].join('\n');
 }
+function requestPlan(request,repository){
+ const apk=/\bapk\b|android.*(?:package|builder)/i.test(String(request));
+ return {version:1,kind:apk?'website-to-apk':'repository-work',repository,
+  summary:apk?'Build a website-to-APK tool with an Oracle-style URL form and verified app downloads.':String(request).trim().slice(0,250),
+  stages:[
+   {role:'Red and Yellow',title:apk?'Research Android packaging and extract the website requirements':'Inspect the request, source files and relevant documentation',status:'planned'},
+   {role:'Blue and Purple',title:'Save the implementation plan and dependencies before changing files',status:'planned'},
+   {role:'Green',title:apk?'Build the URL form and remote APK packaging files':'Build the requested files and run focused checks',status:'planned'},
+   {role:'Pink',title:'Independently review the code and test results',status:'planned'},
+   {role:'Black',title:apk?'Verify the APK signature, file hash and download before reporting finished':'Verify the delivery and report the result',status:'planned'}],
+  execution:'The existing runner carries out these stages. Planned roles do not mean separate bots have started; progress requires runner receipts.'};
+}
+function executionMessage(execution={},deduplicated=false,status='ready'){
+ if(deduplicated&&!execution.status)return ['complete','deployed_verified'].includes(status)?'This request already has a saved result. Open its progress to review it.':'This request is already saved. Following its progress without creating duplicate work.';
+ if(execution.status==='queued_for_runner')return 'Your request is saved and the build runner has been requested. Progress will appear here as it starts.';
+ if(execution.status==='job_not_dispatchable')return 'Your request is saved. The runner is waiting for a prerequisite; its progress will explain what is needed.';
+ if(execution.status==='no_pending_jobs')return 'Your request is saved. Checking whether its jobs have already been claimed.';
+ return 'Your request is saved, but the runner has not confirmed a launch. Robot Brain will retry automatically; you do not need to press Run.';
+}
 function makeJobs(request,selectedRepository){
  const message=String(request||'').trim().slice(0,4000);
  if(!message)throw Error('request_required');
  const repository=selectedRepository||repositoryFor(message),title=message.slice(0,180);
  if(!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(repository))throw Error('explicit_owner_repository_required');
- const omniSkill=omniCodeBrief(message),siteSkill=sitePackageBrief(message,repository);
+ const omniSkill=omniCodeBrief(message),siteSkill=sitePackageBrief(message,repository),plan=requestPlan(message,repository);
  return [{
   id:'TASK-1',agent:'greenbeans',color:'green',team:['yellow-jacket','blueberry','greenbeans','purple-pearl'],
   repository,executor:'repository-engine',queue_priority:80,status:'queued',
-  title,instructions:message+(omniSkill?'\n\nApproved Omni Code reference skill:\n'+omniSkill:'')+(siteSkill?'\n\nApproved autonomous website package plan:\n'+siteSkill:''),
+  title,instructions:message+'\n\nExecution plan (planned stages, not completed work):\n'+JSON.stringify(plan)+'\nResearch verified documentation and actual repository source first. Save a structured plan with dependencies before implementation. Independent source inspections may run concurrently; writes must keep the existing repository lease and review gates. Never ask the owner for routine file paths or reversible styling choices.'+(omniSkill?'\n\nApproved Omni Code reference skill:\n'+omniSkill:'')+(siteSkill?'\n\nApproved autonomous website package plan:\n'+siteSkill:''),
   acceptance:['Inspect actual repository implementation and implement this owner request; never fabricate source changes.',
    'Run focused tests and record commit/PR evidence, noting missing credentials or services.',
    'Carry the tested repair through the authorized review, merge and deployment pipeline. Record the actual live result; stop and report blockers when authorization or checks are missing.',
@@ -343,7 +362,7 @@ class ProgressTracker{
   return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
-const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief};
+const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);

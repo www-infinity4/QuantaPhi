@@ -14,8 +14,9 @@
  bar.append(report,top,blockedButton,previousBlocked,nextBlocked);
  const stamp=make('small','Waiting for verified task records.');
  const prose=make('div','');prose.className='robot-work-prose';prose.setAttribute('aria-live','polite');
- panel.append(stamp,prose);
- const help=make('p','Tell Bubbles what needs to be fixed. This report explains what each saved job is waiting for, using verified records.');
+ const archive=make('details','');archive.append(make('summary','Earlier requests and job details'),bar);
+ panel.append(stamp,prose,archive);
+ const help=make('p','Ask once. Bubbles plans the work, assigns the bots, and follows their progress. New requests start automatically; no Run All step is needed.');
  panel.prepend(help);
  const spareJobs=root.querySelector('[data-refresh]'),spareGemini=root.querySelector('[data-gemini]');
  if(spareJobs)spareJobs.hidden=true;
@@ -33,13 +34,14 @@
     if(!job||typeof job!=='object')continue;
     const rawStatus=clean(job.status||'queued',35),progress=job.progress||{};
     const attempted=Date.parse(progress.attemptedAt||progress.last_inspected_at||job.last_inspected_at||'')||0;
-    const status=['working','running','leased'].includes(rawStatus)&&(!attempted||Date.now()-attempted>30*60000)?'unverified':rawStatus;
+    const runUrl=/^https:\/\/github\.com\/www-infinity4\/[A-Za-z0-9_.-]+\/actions\/runs\/[0-9]+$/.test(String(progress.runUrl||''))?progress.runUrl:'';
+    const status=['working','running','leased'].includes(rawStatus)&&(!runUrl||!attempted||Date.now()-attempted>30*60000)?'unverified':rawStatus;
     const tier=['working','running','leased'].includes(status)?0:status==='blocked'?1:['queued','ready','unverified'].includes(status)?2:3;
-    rows.push({id:clean(ticket.id,80)+'/'+clean(job.id,45),title:clean(job.title||ticket.title||'Untitled job',150),
+    rows.push({ticketId:clean(ticket.id,80),requestTitle:clean(ticket.title||ticket.request||'Your request',220),createdAt:Number(ticket.created_at)||Date.parse(ticket.created_at||'')||0,plan:ticket.context.plan,id:clean(ticket.id,80)+'/'+clean(job.id,45),title:clean(job.title||ticket.title||'Untitled job',150),
      agent:clean(job.agent||'unassigned',65),repository:clean(job.repository||'unresolved repository',100),
      status,tier,priority:Number(job.queue_priority)||0,summary:clean(progress.summary,850),
      next:clean(progress.next,300),blocker:clean(progress.blocker,600),
-     runUrl:/^https:\/\/github\.com\/www-infinity4\/[A-Za-z0-9_.-]+\/actions\/runs\/[0-9]+$/.test(String(progress.runUrl||''))?progress.runUrl:'',
+     runUrl,
      when:attempted||Number(ticket.updated_at)||Date.parse(ticket.updated_at||'')||0});
    }
   }
@@ -48,7 +50,7 @@
  function reasonGroup(row){
   const reason=(row.blocker+' '+row.summary).toLowerCase();
   if(/security_hold|permission_denied|credential|secret|wallet|payment|authorization bypass|biometric/.test(reason))
-   return {label:'Security or account permission',why:'A protected account or security decision needs separate authorization. Run All cannot bypass it.'};
+   return {label:'Security or account permission',why:'A protected account or security decision needs separate authorization. Bubbles will ask only for the specific permission it needs.'};
   if(/owner_input_required/.test(reason)){
    if(/exact (?:source|file|path|code|schema)|source window|read.only snapshot|snippet|repository path|localstorage key|json schema|endpoint/.test(reason))
     return {label:'Source details to investigate',why:'The bot asked for technical details it should first look for in the repository. It needs a new source inspection, not a guess from you.'};
@@ -75,6 +77,40 @@
    else counts.other++;
   }
   return {counts,reasons,total:rows.length};
+ }
+ function writeRequests(rows){
+  prose.replaceChildren();
+  const groups=new Map();
+  for(const row of rows){if(!groups.has(row.ticketId))groups.set(row.ticketId,[]);groups.get(row.ticketId).push(row);}
+  if(!groups.size){prose.append(make('p','No requests yet. Describe what you want below and press Enter to start.'));return;}
+  for(const jobs of groups.values()){
+   const first=jobs[0],card=make('section','');card.className='robot-work-ticket';
+   card.append(make('h4',first.requestTitle));
+   const active=jobs.some(j=>['working','running','leased'].includes(j.status)&&j.runUrl);
+   const blocked=jobs.filter(j=>j.status==='blocked');
+   const delivered=jobs.every(j=>j.status==='deployed_verified');
+   const source=jobs.every(j=>['complete','deployed_verified','merged_verified','committed_unverified'].includes(j.status));
+   const headline=delivered?'Delivery verified.':active?'The runner has reported activity.':blocked.length?'The bots hit a problem.':source?'Work result recorded; checking delivery.':'Request saved. Waiting for the runner to start.';
+   card.append(make('p',headline));
+   if(blocked.length){
+    const group=reasonGroup(blocked[0]);card.append(make('p',group.why));
+    if(!/Security or account permission|Needs a decision/.test(group.label))card.append(make('p','This is a technical problem for the bots to investigate. You do not need to run every job or supply code details.'));
+   }
+   const detail=make('details','');detail.append(make('summary','Bot steps and recorded progress'));
+   if(first.plan?.stages?.length){
+    detail.append(make('p','Planned workflow: '+first.plan.stages.map(s=>s.role+': '+s.title).join(' → ')+'. These are planned stages, not proof they have run.'));
+   }
+   for(const job of jobs){
+    const row=make('article','');
+    const labels={queued:'Waiting for the runner',ready:'Waiting for the runner',working:'Runner activity reported',unverified:'No recent runner update',blocked:'Stopped for investigation',committed_unverified:'Code committed; delivery not verified',merged_verified:'Code merged; delivery not verified',complete:'Result recorded',deployed_verified:'Delivery verified'};
+    row.append(make('h5',job.title),make('p',(labels[job.status]||job.status.replaceAll('_',' '))+'.'));
+    const technical=make('details','');technical.append(make('summary','Recorded details'),make('p',job.summary||job.blocker||'Waiting for the first runner receipt.'));
+    if(job.runUrl){const link=make('a','View the runner result');link.href=job.runUrl;link.target='_blank';link.rel='noopener noreferrer';technical.append(link);}
+    technical.append(make('small',job.id+' · '+job.repository));row.append(technical);detail.append(row);
+   }
+   card.append(detail);prose.append(card);
+  }
+  stamp.textContent='Your latest requests · checked '+new Date().toLocaleTimeString()+'.';
  }
  function write(rows,earnings,summary,filter){
   const when=new Date().toLocaleString(),counts=summary.counts;
@@ -132,8 +168,11 @@
     previousBlocked.disabled=blockedOffset===0;nextBlocked.disabled=blockedOffset+10>=candidates.length;
    }else{previousBlocked.hidden=true;nextBlocked.hidden=true;}
    const offset=requested==='blocked'?blockedOffset:0;
-   const tasks=candidates.slice(offset,offset+10);
-   write(tasks,earnings,summary,requested);
+   let tasks=candidates.slice(offset,offset+10);
+   if(requested==='report'){
+    const ids=[...new Map([...all].sort((a,b)=>b.createdAt-a.createdAt).map(r=>[r.ticketId,r])).keys()].slice(0,5);
+    tasks=ids.flatMap(id=>all.filter(row=>row.ticketId===id));writeRequests(tasks);
+   }else write(tasks,earnings,summary,requested);
    if(requested==='blocked')prose.prepend(make('p',candidates.length?('Blocked jobs '+(offset+1)+'–'+(offset+tasks.length)+' of '+candidates.length+'. Use Next 10 to see older entries.'):'There are no blocked jobs in this snapshot.'));
    if(gpt&&tasks.length){
     stamp.textContent='Generating a GPT explanation of the verified activity…';
