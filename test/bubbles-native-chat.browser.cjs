@@ -7,9 +7,9 @@ const {chromium}=require('playwright');
 test('Android chat: reachable conversation and compact composer, visible pairing results and ordinary links',async()=>{
  const server=http.createServer((req,res)=>{
   const pathname=new URL(req.url,'http://localhost').pathname;
-  const allowed=['/robot-brain-owner.js','/bubbles.html','/bubbles-ai.js','/bubbles-ai.css','/bubbles-native-chat.css','/oracle-octaves.css','/bubbles-introduction.css'];
+  const allowed=['/robot-brain-owner.js','/bubbles.html','/bubbles-ai.js','/bubbles-github-auth.mjs','/bubbles-ai.css','/bubbles-native-chat.css','/bubbles-unified.css','/oracle-octaves.css','/bubbles-introduction.css'];
   if(!allowed.includes(pathname)){res.writeHead(404);return res.end();}
-  res.setHeader('Content-Type',pathname.endsWith('.js')?'text/javascript':pathname.endsWith('.css')?'text/css':'text/html');
+  res.setHeader('Content-Type',/\.(?:m?js)$/.test(pathname)?'text/javascript':pathname.endsWith('.css')?'text/css':'text/html');
   res.end(fs.readFileSync('.'+pathname));
  });
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
