@@ -11,27 +11,22 @@ const du=read('XRecorderBridge.java');
 const access=read('BrainLearningService.java');
 const manifest=fs.readFileSync('android/bubbles-overlay/app/src/main/AndroidManifest.xml','utf8');
 
-test('XRecorder is selected for screen video commands; old recorder is blocked, screenshots remain',()=>{
- assert.match(native,/case "screen_video":[\s\S]*?XRecorderBridge\.request\(this, "start", main, feedback/);
- assert.match(native,/case "screen_stop":/);
- assert.match(native,/XRecorderBridge\.request\(this, "stop", main\)/);
- assert.match(main,/screenVideo\.setOnClickListener\(v -> XRecorderBridge\.request\(this, "start", ui\)\)/);
- assert.match(main,/if \(!image\) \{ XRecorderBridge\.request\(this, "start", ui\); return; \}/);
- assert.match(main,/else if \("screen_video"\.equals\(action\)\) \{\s+XRecorderBridge\.request\(this, "start", ui\)/);
- assert.match(legacy,/if \(!intent\.getBooleanExtra\("screenshot", false\)\)/);
- assert.match(legacy,/Bubbles native screen video is disabled/);
+test('Bubbles records native screen video after Android consent and retains voice',()=>{
+ assert.match(native,/case "screen_video":[\s\S]*?offerCaptureApproval\(command\)/);
+ assert.match(native,/ScreenCaptureService\.STOP/);
+ assert.doesNotMatch(native,/case "screen_video":[\s\S]*?XRecorderBridge\.request\(this, "start"/);
+ assert.match(main,/screenVideo\.setOnClickListener\(v -> beginScreen\(false\)\)/);
+ assert.match(main,/else if \("screen_video"\.equals\(action\)\) \{\s+beginScreen\(false\)/);
+ assert.match(main,/projection\.createScreenCaptureIntent\(\)/);
+ assert.match(legacy,/recorder\.start\(\); recordingStarted = true/);
+ assert.match(legacy,/savePath\("video\/mp4"\)/);
  assert.match(main,/beginScreen\(true\)/);
 });
-
-test('XRecorder controls are available in one extra floating button with short and long press',()=>{
- assert.match(native,/xRecorderButton/);
- assert.match(native,/attachXRecorderButton\(\)/);
- assert.match(native,/TYPE_APPLICATION_OVERLAY/);
- assert.match(native,/XRecorderBridge\.request\(this, "toggle", main\)/);
- assert.match(native,/XRecorderBridge\.request\(this, "stop", main\)/);
- assert.match(native,/removeView\(xRecorderButton\)/);
+test('the old separate XREC overlay is not attached to the Bubbles window',()=>{
+ assert.doesNotMatch(native,/\n\s*attachXRecorderButton\(\);/);
+ assert.match(native,/Recording controls live in the Bubbles chat/);
+ assert.match(native,/XRecorderBridge\.request\(this, "stop", main/);
 });
-
 test('Accessibility only interacts with installed original XRecorder package, never Android consent',()=>{
  assert.match(du,/videoeditor\.videorecorder\.screenrecorder/);
  assert.match(du,/getLaunchIntentForPackage\(PACKAGE\)/);
