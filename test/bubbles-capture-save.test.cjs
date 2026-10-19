@@ -125,9 +125,9 @@ test('JSON history import uses the Android document picker, never the photo-only
 
 test('spoken record without qualifier selects screen + microphone, sound-only remains explicit', () => {
   const commands = source('VoiceCaptureCommands.java');
-  assert.match(commands, /Bare "record" uses DU Recorder/);
+  assert.match(commands, /Bare "record" uses XRecorder/);
   assert.match(commands, /record\|start recording\|begin recording/);
   assert.match(commands, /record sound\|record audio\|start audio recording/);
   const service = source('BubblesService.java');
-  assert.match(service, /DuRecorderBridge\.request\(this, "start", main, feedback/);
+  assert.match(service, /XRecorderBridge\.request\(this, "start", main, feedback/);
 });
