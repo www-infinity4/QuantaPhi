@@ -36,7 +36,7 @@
      agent:clean(job.agent||'unassigned',65),repository:clean(job.repository||'unresolved repository',100),
      status,tier,priority:Number(job.queue_priority)||0,summary:clean(progress.summary,850),
      next:clean(progress.next,300),blocker:clean(progress.blocker,600),
-     runUrl:/^https:\/\/github\.com\/www-infinity4\/[\\w.-]+\/actions\/runs\/\\d+$/.test(String(progress.runUrl||''))?progress.runUrl:'',
+     runUrl:/^https:\/\/github\.com\/www-infinity4\/[A-Za-z0-9_.-]+\/actions\/runs\/[0-9]+$/.test(String(progress.runUrl||''))?progress.runUrl:'',
      when:attempted||Number(ticket.updated_at)||Date.parse(ticket.updated_at||'')||0});
    }
   }
