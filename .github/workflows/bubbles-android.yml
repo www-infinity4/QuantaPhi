@@ -63,6 +63,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify Bubbles direct GitHub routing and playback crash guards
+        run: node --test test/bubbles-direct-route-playback-stability.test.cjs
       - name: Verify three-lane room and internal playback isolation
         run: node --test test/bubbles-room-notes-native.test.cjs test/bubbles-three-lane-voice.test.cjs test/bubbles-phone-playback-lane.test.cjs
       - name: Verify XRecorder controls never restart native screen video
