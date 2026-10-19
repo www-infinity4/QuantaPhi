@@ -593,11 +593,11 @@ const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
 const noteList=create('div','ba-notes');
-const workText=create('textarea','ba-field');workText.rows=2;workText.maxLength=4000;workText.placeholder='Say fix a card, queue a bot job, or report the top ten tasks. Verified owners may also submit a draft here.';workText.setAttribute('aria-label','Work request for Robot Brain');
+const workText=create('textarea','ba-field');workText.rows=2;workText.maxLength=4000;workText.placeholder='Ordinary GitHub repairs run directly in Bubbles. Use this Robot Brain box when you want multiple color agents to coordinate.';workText.setAttribute('aria-label','Work request for Robot Brain');
 const workButton=create('button','ba-control','Send approved request to Robot Brain');workButton.type='button';workButton.hidden=true;
 // Visible repository targets apply to typed AND spoken work requests.
 const repositoryPicker=create('details','ba-repository-picker');repositoryPicker.hidden=embedded;
-const repositorySummary=create('summary','','Repositories · QuantaPhi');
+const repositorySummary=create('summary','','GitHub targets · QuantaPhi');
 const repositoryOptions=create('div','ba-repository-options');
 const repositoryState=create('p','ba-muted','QuantaPhi selected. Bubbles currently lives in this repository.');
 let repositorySelectionExplicit=false;
@@ -631,7 +631,7 @@ function renderRepositoryOptions(){
  repositoryAll.disabled=!repositoryCatalogComplete;
  repositoryAll.checked=repositoryCatalogComplete&&repositoryCatalog.every(repo=>repositorySelection.has(repo));
  repositoryAll.indeterminate=repositorySelection.size>0&&!repositoryAll.checked;
- repositorySummary.textContent='Repositories · '+(repositorySelection.size===1?[...repositorySelection][0].split('/')[1]:repositorySelection.size+' selected');
+ repositorySummary.textContent='GitHub targets · '+(repositorySelection.size===1?[...repositorySelection][0].split('/')[1]:repositorySelection.size+' selected');
 }
 repositoryFilter.addEventListener('input',renderRepositoryOptions);
 async function suggestRepositoryTargets(request,preview=false){
@@ -662,7 +662,7 @@ async function suggestRepositoryTargets(request,preview=false){
  const names=result.candidates.slice(0,4).map(x=>x.repository.split('/')[1]).join(', ');
  repositoryAdviceLine.textContent='Matches: '+(names||'none')+' · '+result.source+'. '+(repositorySelectionExplicit?'Manual selection kept.':result.reason);
  if(result.requiresReview&&!repositorySelectionExplicit)repositoryState.textContent='Choose the matching repository before sending work. Nothing has been queued.';
- else repositoryState.textContent='Repository target checked against the owner GitHub inventory. Tickets will keep the selected targets.';
+ else repositoryState.textContent='Repository target checked against the owner GitHub inventory. Ordinary one-repository changes use Bubbles direct GitHub; multi-agent requests use Robot Brain.';
  renderRepositoryOptions();
  if(!preview&&result.requiresReview&&!repositorySelectionExplicit){
   repositoryPicker.open=true;
@@ -1599,8 +1599,14 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  messages.push({role:'user',text:request});messages=messages.slice(-400);persistChat();
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
- const createRepository=/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request);
+ const createRepository=/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request)
+  || /\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*[A-Za-z][\w.-]*\s+(?:github\s+)?(?:repo|repository)\b/i.test(request);
  const directRequest=/^(?:(?:hey|please|bubbles)[, ]+)*(?:(?:can|could|would|will) you\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
+ // Ordinary one-repository changes belong to Bubbles direct GitHub. Only a
+ // clear request for multiple cooperating color agents enters Robot Brain.
+ const requestsAgents=/\b(?:robot\s*brain|moltnook|multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request);
+ const codeTask=/\b(?:edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|test|run)\b[\s\S]{0,180}\b(?:github|repository|repo|code|source|file|readme|script|worker|website|page|card|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr)\b/i.test(request);
+ const directCoding=!requestsAgents&&codeTask;
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
  // without generating a Robot Brain ticket or relying on the writer model.
  const coderRequest=coderIntent(request);
@@ -1619,17 +1625,39 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
   return;
  }
- else if(!embedded&&(directRequest||githubCheck||createRepository||coderRequest)){
+ else if(!embedded&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){
   const named=request.match(/\bwww-infinity4\/[A-Za-z0-9_.-]+\b/);
   const repoName=createRepository?(request.match(/\brepo(?:sitory)?\s+(?:(?:to\s+be\s+)?(?:called|named)|with\s+the\s+name)\s+([A-Za-z0-9_.-]+)/i)?.[1]
-   ||request.match(/\brepo(?:sitory)?\s+([A-Za-z0-9_.-]+)\s*[.!?]*$/i)?.[1]):'';
-  const repository=named?.[0]||(repoName?'www-infinity4/'+repoName:!createRepository&&(/\b(?:bubbles|quantaphi)\b/i.test(request)||githubCheck||coderRequest)?'www-infinity4/QuantaPhi':'');
-  if(!repository)workEvidence='Direct GitHub needs the repository name in this request, such as www-infinity4/QuantaPhi.';
+   ||request.match(/\brepo(?:sitory)?\s+([A-Za-z0-9_.-]+)\s*[.!?]*$/i)?.[1]
+   ||request.match(/\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*([A-Za-z][\w.-]*)\s+(?:github\s+)?repo(?:sitory)?\b/i)?.[1]):'';
+  let repository=named?.[0]||(repoName?'www-infinity4/'+repoName:'');
+  // Never silently route the owner's instruction to QuantaPhi when a different
+  // repository was selected or the project identity is genuinely uncertain.
+  if(!repository&&!createRepository){
+   if(githubCheck||coderRequest)repository='www-infinity4/QuantaPhi';
+   else {
+    if(!repositorySelectionExplicit)await suggestRepositoryTargets(request,false);
+    const targets=[...repositorySelection];
+    if(targets.length===1)repository=targets[0];
+   }
+  }
+  if(!repository)workEvidence=createRepository
+   ?'Tell Bubbles the repository name, for example: create a repository named StoryPhi.'
+   :'Select one repository in the GitHub targets menu. Nothing was changed.';
   else try{
    status.textContent='Checking the direct GitHub connection. Actual receipts will also appear in the color-bot feed.';
    const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
-   let action=createRepository?'create_repository':githubCheck?'capabilities':'assist';
+   const namedWorkflow=request.match(/\b([a-z0-9][a-z0-9_.-]*\.ya?ml)\b/i)?.[1]||'';
+   const workflowIntent=/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
+   const workflowDispatch=workflowIntent&&/\b(?:run|start|trigger|dispatch|rerun|execute)\b/i.test(request);
+   let action=createRepository?'create_repository':githubCheck?'capabilities':
+     workflowIntent?(namedWorkflow&&workflowDispatch?'dispatch_workflow':'list_workflows'):'assist';
    const args={action,repository,request,description:request,mode};
+   if(action==='dispatch_workflow'){
+    args.workflow=namedWorkflow;
+    args.ref=request.match(/\b(?:on|from|at)\s+(?:branch\s+)?([A-Za-z0-9_./-]+)\s+branch\b/i)?.[1]||'main';
+    args.inputs={};
+   }
    if(coderRequest){
     const inspecting=coderRequest.inspect;
     if(inspecting){args.action='list_workflow_runs';args.workflow='bubbles-coder-sandbox.yml';}
@@ -1644,10 +1672,19 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }
    const result=await directGithubOperation(args);
    const githubDetail=result.error==='github_runtime_credential_missing'
-    ?'Robot Brain has no server-side GitHub credential. GitHub cannot execute this request until its Worker credential is connected.'
+    ?'Bubbles direct GitHub is not connected to a server-side write credential. No action occurred; connect the owner GitHub account with appropriate repository permissions.'
     :(result.error||result.summary||'');
    workEvidence='Direct GitHub: '+(result.status||'unknown')+'. '+githubDetail+(result.next?' '+result.next:'')+(result.url?'\n'+result.url:'');
    for(const receipt of result.receipts||[])if(receipt.url)workEvidence+='\n'+receipt.status+': '+receipt.url;
+   if(Array.isArray(result.workflows)){
+    workEvidence+='\nGitHub Actions workflows: '+(result.workflows.length
+     ?result.workflows.slice(0,15).map(w=>w.path+' ('+w.state+')').join('; '):'None returned by GitHub.');
+   }
+   if(result.status==='credential_verified_read')
+    workEvidence+='\nRepository push permission: '+String(result.push)+'. Actions access requires an actual list or dispatch receipt.';
+   if(result.status==='repository_created'&&result.environment)
+    workEvidence+='\nPython/Node workflow: '+result.environment.status
+     +(result.environment.error?' ('+result.environment.error+')':'')+'.';
    if(Array.isArray(result.runs)){
     const recent=result.runs.slice(0,5);
     workEvidence+='\nBubbles Coder Linux runs: '+(recent.length?recent.map(run=>{
@@ -1657,7 +1694,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     workEvidence+='\nOnly a completed successful run confirms that the script ran. See the run receipt for output.';
    }
    if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted')
-    workEvidence+='\nLinux job requested. This is an acceptance receipt, not an execution result. Ask me to check coder sandbox runs for actual status.';
+    workEvidence+='\nGitHub accepted the workflow dispatch. This is not an execution result; check Actions runs for the actual status.';
    workEvidence+='\nRequest '+result.requestId+'. Testing, merge and deployment require their own verified receipts.';
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
  }

@@ -69,6 +69,8 @@ jobs:
           mkdir -p /tmp/bubbles-workflows
           javac -d /tmp/bubbles-workflows android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenAwareness.java android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SpokenWorkflowPlan.java android/bubbles-overlay/checks/SpokenWorkflowPlanCheck.java
           java -cp /tmp/bubbles-workflows org.quantaphi.bubbles.SpokenWorkflowPlanCheck
+      - name: Verify Bubbles direct GitHub routing and playback crash guards
+        run: node --test test/bubbles-direct-route-playback-stability.test.cjs
       - name: Verify three-lane room and internal playback isolation
         run: node --test test/bubbles-room-notes-native.test.cjs test/bubbles-three-lane-voice.test.cjs test/bubbles-phone-playback-lane.test.cjs
       - name: Verify XRecorder controls never restart native screen video
