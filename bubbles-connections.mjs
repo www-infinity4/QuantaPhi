@@ -142,7 +142,7 @@ export function mountConnections(container,{token}) {
           const backup=element('button','Back up StarCoins','ba-control');
           const compare=element('button','Verify StarCoin backup','ba-control');
           const createPrivate=element('button','Create private StarCoin repository','ba-control');
-          const backupStatus=element('p','GitHub backups do not restore coins automatically.','ba-muted');
+          const backupStatus=element('p','This backs up only the StarCoin account currently verified in Cloudflare. If your usual coins are missing, recover the original wallet before choosing a repository. GitHub cannot restore or award credits.','ba-muted');
           backupStatus.setAttribute('role','status');
           for(const b of [backup,compare,createPrivate])b.type='button';
           backup.disabled=true;compare.disabled=true;
