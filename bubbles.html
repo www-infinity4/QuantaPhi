@@ -23,6 +23,24 @@
     body.bubbles-embedded .ba-panel{right:4px!important;bottom:4px!important;width:calc(100% - 8px)!important;height:calc(100% - 8px)!important;max-height:none;min-height:0!important}
     body.bubbles-embedded .ba-tools{max-height:35%}
 
+    .bubbles-wallet{margin:16px 0 22px;padding:16px;border:1px solid #d7c3e8;border-radius:18px;background:#fff;box-shadow:0 3px 15px #371f5712}
+    .bubbles-wallet-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .bubbles-wallet h2{font-size:20px;margin:0;color:#4c2178}
+    .bubbles-wallet h3{font-size:16px;margin:16px 0 8px}
+    .bubbles-wallet-head button{background:#5f259f;color:white;border:0;border-radius:12px;padding:10px 14px;font:700 14px system-ui;min-height:44px;cursor:pointer}
+    .bubbles-wallet-head button:disabled{opacity:.6}
+    .bubbles-wallet-balances{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}
+    .bubbles-wallet-asset{padding:10px;border-radius:12px;background:#f5eefc;min-width:0}
+    .bubbles-wallet-asset small,.bubbles-wallet-asset strong{display:block;color:#3f2857}
+    .bubbles-wallet-asset strong{font-size:22px;font-variant-numeric:tabular-nums}
+    .bubbles-wallet details{border-top:1px solid #ebdef7;margin-top:10px;padding-top:10px}
+    .bubbles-wallet summary{cursor:pointer;font-weight:750}
+    .bubbles-wallet-receipts{max-height:350px;overflow-y:auto;overflow-wrap:anywhere;padding-left:28px}
+    .bubbles-wallet-receipts li{padding:6px 0;border-bottom:1px solid #eee5f4;font-size:13px}
+    .bubbles-wallet p{margin:10px 0;line-height:1.5;font-size:14px}
+    .bubbles-wallet a{color:#5f259f;font-weight:750}
+
+
  
   </style>
   <link rel="stylesheet" href="/bubbles-introduction.css?v=20261019-product1">
@@ -46,6 +64,7 @@
   <script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script>
   <script defer src="/cloud-wallet-client.js?v=20261013-brain-bridge1"></script>
   <script defer src="/robot-brain-owner.js?v=20261015-owner-webview21"></script>
+  <script defer src="/bubbles-cloud-wallet.js?v=20261019-cloud-history1"></script>
   <script defer src="/bubbles-voice-gate.js?v=20261012-brain2"></script>
   <script defer src="/bubbles-brain-actions.js?v=20261019-chat-repair1"></script>
   <script defer src="/bubbles-memory.js?v=20261014-memory2"></script>
@@ -82,6 +101,13 @@
         <div><span class="bubbles-eyebrow">WORKSPACE</span><h2>Talk to Bubbles</h2><p>The assistant and verified job receipts belong here, not behind a video advertisement.</p></div>
         <a href="/#robotDirections">Open Robot Brain →</a>
       </div>
+      <section class="bubbles-wallet" aria-labelledby="bubblesWalletTitle">
+        <div class="bubbles-wallet-head"><h2 id="bubblesWalletTitle">Unified Wallet</h2><button type="button" id="bubblesWalletRefresh">Refresh wallet</button></div>
+        <p role="status" aria-live="polite" id="bubblesWalletConnection">Checking the existing Cloudflare wallet…</p>
+        <div class="bubbles-wallet-balances" id="bubblesWalletBalances" hidden></div>
+        <details id="bubblesWalletHistory" hidden><summary>View original Infinity history and receipts</summary><div id="bubblesWalletReceipts"></div></details>
+        <p><a href="/wallet-recovery.html">Find Cloud Tokens / Reconnect existing wallet</a> · <a href="https://www-infinity4.github.io/TV-Database/">StarQuest wallet</a></p>
+      </section>
       <div id="robotBrainOwner" aria-live="polite"></div>
       <div id="bubblesAICard"></div>
     </section>
