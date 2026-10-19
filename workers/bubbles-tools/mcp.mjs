@@ -5,7 +5,7 @@ export const MCP_VERSION='2025-06-18';
 const tools=[
  {name:'web_search',title:'Bubbles Web Search',description:'Read search-result excerpts, not full pages. No browser, writes or logins.',inputSchema:{type:'object',properties:{query:{type:'string',description:'Search words (max 1500 characters)'}},required:['query'],additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:true}},
  {name:'weather_current',title:'Current Weather',description:'Read town-level weather forecast from the existing Open-Meteo adapter.',inputSchema:{type:'object',properties:{location:{type:'string',description:'Town or city (max 150 characters)'}},required:['location'],additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:true}},
- {name:'resonance_calculate',title:'LC Resonance Calculator',description:'Calculate ideal LC resonant frequency from explicit inductance and capacitance units.',inputSchema:{type:'object',properties:{l:{type:'number'},lUnit:{type:'string'},c:{type:'number'},cUnit:{type:'string'}},required:['l','lUnit','c','cUnit'],additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false}},
+ {name:'resonance_calculate',title:'LC Resonance Calculator',description:'Calculate ideal LC resonant frequency from explicit inductance and capacitance units.',inputSchema:{type:'object',properties:{l:{type:'number'},lUnit:{type:'string',enum:['H','mH','uH'],description:'H, mH, or uH only'},c:{type:'number'},cUnit:{type:'string',enum:['F','uF','nF','pF'],description:'F, uF, nF, or pF only'}},required:['l','lUnit','c','cUnit'],additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false}},
  {name:'news_headlines',title:'Dated News Headlines',description:'Read dated news headlines or an explicitly labeled fallback. Not remembered headlines.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:true}}
 ];
 export const mcpTools=Object.freeze(tools);
@@ -22,6 +22,23 @@ function rpc(id,key,value,status=200){
  return new Response(JSON.stringify({jsonrpc:'2.0',id,[key]:value}),{status,headers:{'Content-Type':'application/json','Cache-Control':'no-store','Vary':'Origin'}});
 }
 function rpcError(id,code,message,status=400){return rpc(id,'error',{code,message},status)}
+// LLMs sometimes return spoken unit words even when their function schema asks for symbols.
+// Normalize exact known synonyms, never guess the scale or silently replace an unknown unit.
+function canonicalUnit(raw,kind){
+ const text=String(raw||'').trim().replace(/\s+/g,'').replace(/[µμ]/g,'u').toLowerCase();
+ const units=kind==='inductance'?{
+  h:'H',henry:'H',henries:'H',
+  mh:'mH',millihenry:'mH',millihenries:'mH',
+  uh:'uH',microhenry:'uH',microhenries:'uH'
+ }:{
+  f:'F',farad:'F',farads:'F',
+  uf:'uF',microfarad:'uF',microfarads:'uF',
+  nf:'nF',nanofarad:'nF',nanofarads:'nF',
+  pf:'pF',picofarad:'pF',picofarads:'pF'
+ };
+ if(!Object.hasOwn(units,text))throw Error('invalid_arguments');
+ return units[text];
+}
 export function validateCall(name,args){
  if(!tools.some(t=>t.name===name))throw Error('unknown_tool');
  if(!args||typeof args!=='object'||Array.isArray(args))throw Error('invalid_arguments');
@@ -30,7 +47,7 @@ export function validateCall(name,args){
  if(name==='weather_current')return {name,location:clean(args.location,150)};
  if(name==='news_headlines')return {name};
  if(!Number.isFinite(args.l)||!Number.isFinite(args.c)||args.l<=0||args.c<=0||args.l>1e15||args.c>1e15||typeof args.lUnit!=='string'||typeof args.cUnit!=='string'||args.lUnit.length>24||args.cUnit.length>24)throw Error('invalid_arguments');
- return {name,l:args.l,lUnit:args.lUnit,c:args.c,cUnit:args.cUnit};
+ return {name,l:args.l,lUnit:canonicalUnit(args.lUnit,'inductance'),c:args.c,cUnit:canonicalUnit(args.cUnit,'capacitance')};
 }
 export async function handleMcp(request,env,invoke){
  if(request.method!=='POST')return new Response('Use POST',{status:405,headers:{Allow:'POST','Cache-Control':'no-store'}});
