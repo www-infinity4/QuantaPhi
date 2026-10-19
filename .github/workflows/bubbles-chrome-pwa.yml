@@ -1,0 +1,38 @@
+name: Bubbles Chrome app and Android page-control contracts
+on:
+  pull_request:
+    paths:
+      - 'bubbles.html'
+      - 'bubbles.webmanifest'
+      - 'bubbles-pwa*'
+      - 'assets/bubbles-pwa-*.png'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/**'
+      - 'android/bubbles-overlay/app/src/main/AndroidManifest.xml'
+      - 'android/bubbles-overlay/checks/ChromeControlPolicyCheck.java'
+      - 'test/bubbles-chrome-pwa.test.cjs'
+      - '.github/workflows/bubbles-chrome-pwa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-chrome-pwa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Validate Chrome installation manifest, PNG icons and private shell
+        run: |
+          node --check bubbles-pwa.js
+          node --check bubbles-pwa-sw.js
+          node --test test/bubbles-chrome-pwa.test.cjs
+      - name: Validate spoken Chrome actions without screen guessing
+        run: |
+          mkdir -p /tmp/bubbles-chrome
+          javac -d /tmp/bubbles-chrome android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ChromeControlPolicy.java android/bubbles-overlay/checks/ChromeControlPolicyCheck.java
+          java -cp /tmp/bubbles-chrome org.quantaphi.bubbles.ChromeControlPolicyCheck
