@@ -661,6 +661,13 @@ export class BrainClock extends DurableObject{
   });
   if(initial.existing)return initial.existing;
   const record=initial.record;
+  // Respond with the durable request ID immediately; keep processing in the Durable Object.
+  // The same ID is used to inspect results after a phone/network timeout.
+  this.ctx.waitUntil(this.completeDirectGithub(body,record,key,leaseKey));
+  return record;
+ }
+ async completeDirectGithub(body,record,key,leaseKey){
+  const repository=record.repository;
   const saveReceipt=async receipt=>{
    const {content,...metadata}=receipt;
    record.receipts.push(metadata);

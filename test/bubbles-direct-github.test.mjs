@@ -98,3 +98,6 @@ test('repository catalog follows every page and keeps owner scope without changi
  assert.equal(result.complete,true);assert.equal(calls.length,2);assert.equal(result.repositories.length,101);
  assert.ok(result.repositories.every(repo=>repo.repository.startsWith('www-infinity4/')));
 });
+
+// Include the Durable Object timeout/idempotency regression in existing CI suites.
+import './bubbles-github-timeout.test.mjs';
