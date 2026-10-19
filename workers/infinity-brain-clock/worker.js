@@ -1,4 +1,5 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
+import {discoverBubblesXOrders} from './bubbles-social-orders.mjs';
 import {classifyCommunitySuggestion,reviewCommunityWithGPT} from './community-upgrades.mjs';
 import {bubbleTag,parsePersonalPost,fetchOwnedXPosts,resolveXAccount,verificationTokenFromPost,searchPublicBubblesX} from './personal-social-tags.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
@@ -1357,7 +1358,7 @@ export default{
       }else if(modelReviewed<3){
        modelReviewed++;
        decision=await reviewCommunityWithGPT(cmd.command,proposed,{
-        apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1'
+        apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1',workersAI:env.WRITER_AI
        });
       }
       const saveText=proposed.accepted?cmd.command:'[rejected sensitive or unsuitable request]';
@@ -1406,7 +1407,7 @@ export default{
      let proposalId='',decision={status:'reject',category:'other',placement:'community-review',summary:classification.error||'Rejected',risk:'high'};
      if(classification.accepted){
       if(modelReviewed<3){modelReviewed++;decision=await reviewCommunityWithGPT(found.suggestion,classification,{
-       apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1'
+       apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1',workersAI:env.WRITER_AI
       })}else decision={status:'needs_review',category:classification.category,placement:classification.placement,
        summary:'Queued for owner/GPT assessment due to bounded scan budget',risk:'high'};
       const contentHash=await digest(found.suggestion.trim().replace(/\s+/g,' ').toLowerCase());
@@ -1465,7 +1466,7 @@ export default{
     if(Number(count?.total||0)>=6||now-Number(count?.latest||0)<60000)
      return output(request,{ok:false,error:'submission_rate_limit'},429);
     const review=await reviewCommunityWithGPT(normalized,recommendation,{
-      apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1'
+      apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1',workersAI:env.WRITER_AI
     });
     const id='CU-'+crypto.randomUUID(),status=String(review.status||'needs_review');
     await env.WORK_DB.prepare(
@@ -1523,6 +1524,39 @@ export default{
     return output(request,{ok:true,ticketId:submitted.result.ticket.id,
       draft:true,runnerStarted:false,ownerApprovalRequired:true});
    }catch{return output(request,{ok:false,error:'community_promotion_failed'},503)}
+  }
+  if(path==='/work/social/bubbles/scan'&&request.method==='POST'){
+    const origin=request.headers.get('Origin');
+    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+    if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+    if(Number(request.headers.get('Content-Length')||0)>100)return output(request,{ok:false,error:'request_too_large'},413);
+    const scan=await discoverBubblesXOrders({
+      bearerToken:env.X_API_BEARER_TOKEN,ownerUserId:env.X_OWNER_USER_ID
+    });
+    if(!scan.ok)return output(request,scan,503);
+    const drafts=[];
+    // Do not infer a website command from a hashtag posted by anybody else.
+    // These are OWNER REVIEW drafts, not runnable jobs or a dispatch receipt.
+    for(const order of scan.orders){
+      const result=await ownerTickets(env,'/work/tickets/create',{
+        title:order.command.slice(0,180),request:order.command,
+        repository:'www-infinity4/QuantaPhi',
+        context:{
+          kind:'robot-directions',submission_id:'bubbles-'+order.sourceId.replace(':','-'),
+          repositories:['www-infinity4/QuantaPhi'],social_source:'x',
+          social_post_url:order.sourceUrl,social_author_id:order.authorId,
+          social_published_at:order.publishedAt,
+          social_review_required:true,repository_writes:'require-github-authorization'
+        }
+      });
+      if(!result.result.ok)return output(request,{ok:false,error:'social_draft_insert_failed',drafts},503);
+      drafts.push({ticketId:result.result.ticket?.id,sourceUrl:order.sourceUrl,
+        deduplicated:result.result.deduplicated===true,status:'draft'});
+    }
+    return output(request,{ok:true,source:scan.source,found:scan.orders.length,
+      drafts,allJobsDraft:true,ownerApprovalRequired:true,runnerStarted:false,
+      pagesScanned:scan.pagesScanned,searchExhaustive:scan.searchExhaustive});
   }
   if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/tickets/approve','/work/tickets/approve-all','/work/memory/status'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');

@@ -50,6 +50,30 @@ test('GPT provider missing fails closed and a successful mock is parsed',async()
  assert.equal(result.status,'triaged');
  assert.equal(result.automaticExecution,false);
 });
+test('high-reasoning Cloudflare GPT-OSS fallback works without OpenAI key but never approves execution',async()=>{
+ const proposal=classifyCommunitySuggestion('Please make QuantaPhi button labels more readable on Android');
+ let request;
+ const workersAI={run:async(model,options)=>{
+  request={model,options};
+  return {choices:[{message:{content:JSON.stringify({
+   decision:'relevant',category:'ui',placement:'readability',
+   summary:'Inspect font size and contrast',risk:'low'
+  })}}]};
+ }};
+ const result=await reviewCommunityWithGPT('Please make QuantaPhi button labels more readable on Android',proposal,{workersAI});
+ assert.equal(request.model,'@cf/openai/gpt-oss-120b');
+ assert.equal(request.options.reasoning_effort,'high');
+ assert.equal(result.provider,'cloudflare-workers-ai');
+ assert.equal(result.status,'triaged');
+ assert.equal(result.placement,'readability');
+ assert.equal(result.automaticExecution,false);
+ assert.equal(result.ownerPermissionsGranted,false);
+ const noOutput=await reviewCommunityWithGPT('Please make QuantaPhi button labels more readable on Android',proposal,{
+  workersAI:{run:async()=>({choices:[{message:{content:null}}]})}
+ });
+ assert.equal(noOutput.status,'needs_review');
+ assert.equal(noOutput.reason,'workers_ai_no_output');
+});
 test('public API has bounded intake, dedicated owner review and never auto-dispatches imported text',()=>{
  const source=readFileSync('workers/infinity-brain-clock/worker.js','utf8');
  const a=source.indexOf("if(path==='/community/upgrade'&&request.method==='POST')");
