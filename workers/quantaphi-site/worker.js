@@ -168,12 +168,20 @@ async function publishedApk(kind){
  if(!response.ok)throw Error('release_unavailable_'+response.status);
  const release=await response.json();
  if(release.draft)throw Error('release_unpublished');
- const asset=release.assets?.find(item=>item.name===config.asset&&item.state==='uploaded'&&item.size>0);
+ // Prefer an immutable versioned build: the rolling alias is reused and its
+ // label says "Current", so its release metadata cannot identify version 46.
+ const ready=(release.assets||[]).filter(item=>item.state==='uploaded'&&item.size>0);
+ const versioned=kind==='bubbles'?ready.filter(item=>/^Bubbles-v\d+\.\d+\.\d+-Preview5-Android12\.apk$/.test(item.name)).sort((a,b)=>{
+  const av=a.name.match(/Bubbles-v(\d+)\.(\d+)\.(\d+)-/).slice(1).map(Number);
+  const bv=b.name.match(/Bubbles-v(\d+)\.(\d+)\.(\d+)-/).slice(1).map(Number);
+  return bv[0]-av[0]||bv[1]-av[1]||bv[2]-av[2];
+ }):[];
+ const asset=versioned[0]||ready.find(item=>item.name===config.asset);
  if(!asset)throw Error('apk_not_published');
  const url=new URL(asset.browser_download_url);
- if(url.origin!=='https://github.com'||url.pathname!=='/www-infinity4/QuantaPhi/releases/download/'+config.tag+'/'+config.asset)throw Error('invalid_asset');
- const version=String(asset.label||'').match(/\bv(\d+\.\d+(?:\.\d+)?(?:-[a-z0-9.-]+)?)/i)?.[1]||null;
- return {available:true,name:config.title,version,size:asset.size,publishedAt:asset.updated_at||asset.created_at,url:url.href,sha256:asset.digest?.startsWith('sha256:')?asset.digest.slice(7):null};
+ if(url.origin!=='https://github.com'||url.pathname!=='/www-infinity4/QuantaPhi/releases/download/'+config.tag+'/'+asset.name)throw Error('invalid_asset');
+ const version=asset.name.match(/^Bubbles-v(\d+\.\d+\.\d+)-Preview5-Android12\.apk$/)?.[1]||String(asset.label||'').match(/\bv(\d+\.\d+(?:\.\d+)?(?:-[a-z0-9.-]+)?)/i)?.[1]||null;
+ return {available:true,name:config.title,filename:asset.name,version,size:asset.size,publishedAt:asset.updated_at||asset.created_at,url:url.href,sha256:asset.digest?.startsWith('sha256:')?asset.digest.slice(7):null};
 }
 async function apkRoute(request,incoming){
  // Fail closed for Platinum regardless of the old GitHub release asset.
@@ -191,7 +199,7 @@ async function apkRoute(request,incoming){
   const downloadUrl=new URL(release.url);downloadUrl.searchParams.set('published',release.publishedAt);
   const upstream=await fetch(downloadUrl.href,{method:request.method,signal:AbortSignal.timeout(20000)});
   if(!upstream.ok)throw Error('download_unavailable');
-  const headers=new Headers({'Content-Type':'application/vnd.android.package-archive','Content-Disposition':'attachment; filename="'+APK_RELEASES[kind].asset+'"','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
+  const headers=new Headers({'Content-Type':'application/vnd.android.package-archive','Content-Disposition':'attachment; filename="'+(release.filename||APK_RELEASES[kind].asset)+'"','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
   if(upstream.headers.get('Content-Length'))headers.set('Content-Length',upstream.headers.get('Content-Length'));
   return new Response(request.method==='HEAD'?null:upstream.body,{headers});
  }catch{return new Response('The latest APK is unavailable. Please retry shortly.',{status:503,headers:{'Cache-Control':'no-store','Retry-After':'30'}})}
