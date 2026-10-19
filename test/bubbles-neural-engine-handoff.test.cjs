@@ -25,7 +25,7 @@ test('Bubbles binds to selected TTS engine without overwriting Android system de
  assert.match(service,/new TextToSpeech\(this, onInit\)/);
  assert.match(service,/NeuralSpeechEngine\.useAndroidDefault\(this\)/);
  assert.match(service,/reloadSpeechEngine\(\)/);
- assert.match(service,/savedEngine\.equals\(tts\.getCurrentEngine\(\)\)/);
+ assert.match(service,/savedEngine\.equals\(selectedEngine == null \? tts\.getDefaultEngine\(\) : selectedEngine\)/);
  assert.match(policy,/getSharedPreferences\(BubblesVoicePicker\.PREFS/);
  assert.match(policy,/\.putString\(BubblesVoicePicker\.ENGINE, engine\)/);
  assert.doesNotMatch(policy,/Settings\.Secure\.put|Settings\.System\.put|setDefaultEngine/);
@@ -39,6 +39,7 @@ test('one native voice button offers free engine setup with honest fallback',()=
  assert.match(picker,/NeuralSpeechEngine\.hayaiAvailable\(activity\)/);
  assert.match(picker,/new TextToSpeech\(activity, init, NeuralSpeechEngine\.HAYAI_PACKAGE\)/);
  assert.match(picker,/NeuralSpeechEngine\.useEngine\(activity, NeuralSpeechEngine\.HAYAI_PACKAGE\)/);
+ assert.doesNotMatch(picker,/getCurrentEngine/);
  assert.match(picker,/Install an offline English voice inside HayaiTTS first/);
  assert.match(picker,/new Intent\(activity, BubblesService\.class\)/);
  assert.match(picker,/https:\/\/github\.com\/HayaiApp\/HayaiTTS\/releases/);
