@@ -63,6 +63,7 @@ public final class BubblesService extends Service {
     private static volatile boolean sessionRunning = false;
     static boolean isSessionRunning() { return sessionRunning; }
     public static final String ACTION_OPEN_CHAT = "org.quantaphi.bubbles.OPEN_CHAT";
+    public static final String ACTION_SCREEN_FOLLOW_ON = "org.quantaphi.bubbles.SCREEN_FOLLOW_ON";
     public static final String ACTION_TEXT = "org.quantaphi.bubbles.TEXT";
     public static final String ACTION_STOP_SPEAKING = "org.quantaphi.bubbles.STOP_SPEAKING";
     public static final String ACTION_REFRESH_VOICE = "org.quantaphi.bubbles.REFRESH_VOICE";
@@ -421,6 +422,15 @@ public final class BubblesService extends Service {
                 && connected && oracleWindow != null) {
             silenceReply();
             oracleWindow.show();
+            return START_NOT_STICKY;
+        }
+        if (intent != null && ACTION_SCREEN_FOLLOW_ON.equals(intent.getAction()) && connected) {
+            // Accessibility approval is separate from voice/overlay permission.
+            // Only a fresh, explicitly spoken turn may transmit a screen snapshot.
+            screenSharing = BrainLearningService.isConnected();
+            BrainNotes.prefs(this).edit().putString("screen_follow_state",
+                screenSharing ? "ON · current screen read on each user turn" : "OFF · enable Android Accessibility").apply();
+            if (oracleWindow != null) oracleWindow.show();
             return START_NOT_STICKY;
         }
         if (intent != null && ACTION_SYNC_ROOM.equals(intent.getAction())) {
