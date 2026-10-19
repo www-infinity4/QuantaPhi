@@ -85,7 +85,7 @@ test('QuantaPhi home exposes Bubbles page and Chrome install routes in both nav 
     assert.doesNotMatch(page, /id="bubblesInstallChrome"[^>]*\bhidden\b/);
     assert.match(page, /Chrome menu|Chrome.*Install app/);
   }
-  assert.match(html, /href="\/bubbles\.html"[^>]*>[^<]*QuantaPhi<\/a>/);
+  assert.match(html, /href="\/bubbles\.html"[^>]*>[^<]*Bubbles page<\/a>/);
 });
 
 test('Chrome install button is actionable without an installation-prompt event', async () => {
