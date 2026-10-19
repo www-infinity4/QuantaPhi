@@ -38,7 +38,11 @@ final class MediaNotes {
             entry.put("text", text);
         } catch (Exception ignored) { return; }
         next.put(entry);
-        prefs.edit().putString(LOG, next.toString()).apply();
+        // Save the latest received phrase independently of the full bounded
+        // transcript history so it remains readable after a playback restart.
+        prefs.edit().putString(LOG, next.toString())
+            .putString("phone_media_last_received", text)
+            .putLong("phone_media_last_received_at", System.currentTimeMillis()).apply();
     }
     static synchronized List<String> freshCandidateTexts(Context context, long now, long windowMs) {
         ArrayList<String> matches = new ArrayList<>();
@@ -63,6 +67,7 @@ final class MediaNotes {
         return all.isEmpty() ? "No recent app playback transcripts." : String.join("\n", all);
     }
     static void clear(Context context) {
-        BrainNotes.prefs(context).edit().remove(LOG).apply();
+        BrainNotes.prefs(context).edit().remove(LOG)
+            .remove("phone_media_last_received").remove("phone_media_last_received_at").apply();
     }
 }
