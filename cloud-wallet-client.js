@@ -196,4 +196,21 @@ class InfinityUnifiedWallet{
  subscribe(listener){this.listeners.add(listener);if(this.state)listener(this.state);return()=>this.listeners.delete(listener)}
 }
 global.InfinityCloudWallet=InfinityUnifiedWallet;
+
+/* A permanent recovery entry point: deleting browser history must not strand D1 wallet records. */
+function installCloudWalletRecoveryLink(){
+ if(!['/','/index.html','/QuantaPhi/','/QuantaPhi/index.html'].includes(location.pathname))return;
+ if(document.getElementById('qpCloudRecoveryLink'))return;
+ const target=document.querySelector('.qbalances')||document.querySelector('.qtop');
+ if(!target)return;
+ const link=document.createElement('a');
+ link.id='qpCloudRecoveryLink';
+ link.href='/wallet-recovery.html';
+ link.textContent='Find Cloud Tokens';
+ link.setAttribute('aria-label','Find StarCoins, Quants and Infinity records in Cloudflare');
+ Object.assign(link.style,{display:'inline-flex',alignItems:'center',justifyContent:'center',borderRadius:'999px',border:'1px solid #bba0df',background:'#f0e3fc',color:'#4a207f',padding:'8px 12px',minHeight:'40px',fontSize:'13px',fontWeight:'800',textDecoration:'none',whiteSpace:'nowrap'});
+ target.appendChild(link);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',installCloudWalletRecoveryLink,{once:true});
+else installCloudWalletRecoveryLink();
 })(window);
