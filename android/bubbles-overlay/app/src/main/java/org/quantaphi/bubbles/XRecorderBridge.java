@@ -74,7 +74,7 @@ final class XRecorderBridge {
                 tapAfterLaunch(context, wanted, main, feedback, attempt + 1);
             } else {
                 update(context, "needs_tap", "stop".equals(wanted)
-                    ? "Tap XRecorder\'s Stop control." : "Tap XRecorder to record.", false);
+                    ? "Tap XRecorder's Stop control." : "Tap XRecorder to record.", false);
             }
         }, attempt == 0 ? 450L : 350L);
     }
