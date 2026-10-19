@@ -15,21 +15,21 @@
   "prefer_related_applications": false,
   "icons": [
     {
+      "src": "/apps/icons/story-writer-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apps/icons/story-writer-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
       "src": "/apps/icons/story-writer.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any"
-    },
-    {
-      "src": "/assets/bubbles-pwa-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/assets/bubbles-pwa-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
       "purpose": "any"
     }
   ],
