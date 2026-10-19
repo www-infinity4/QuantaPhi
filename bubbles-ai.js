@@ -64,11 +64,14 @@ function startNativeTurn(value,fromVoice,id,evidence=''){
  Promise.resolve(sendMessage(value,fromVoice,evidence)).catch(error=>{
   const message='Bubbles stopped before returning the result: '+String(error?.message||error||'unknown error').slice(0,130);
   status.textContent=message;
-  display(message,'ai');
+  // Keep the bridge recoverable even while Android is rebuilding its chat UI.
+  if(typeof display==='function')display(message,'ai');
   if(fromVoice)nativeSpeechReply=message;
   nativeSpeechPending=false;
-  busy=false;send.disabled=false;
-  if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+  busy=false;
+  if(typeof send!=='undefined')send.disabled=false;
+  if(typeof setOrbState==='function' && typeof speaking!=='undefined' && !speaking)
+   setOrbState(voiceEnabled?'listening':'idle');
  }).finally(()=>{nativeBridgeBusy=false;});
 }
 let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=null;
