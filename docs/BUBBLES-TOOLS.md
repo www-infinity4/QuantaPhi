@@ -11,11 +11,24 @@ to the Worker, so the explicit fallback is the existing News Phi source feed.
 Brain announces the substitution; source links and publication dates are returned.
 No remembered or undated headline is presented as current news.
 
-Repository creation is **blocked**, not queued: the current deployment has no
-authenticated GitHub repository-creation adapter. The existing owner repair
-runner is not a generic create-repository API. Native account pairing, per-owner
-GitHub capabilities and a creation adapter must be connected before this tool
-can perform the write. Never reuse a public page's Origin header as GitHub auth.
+The **public chat-only** `bubbles-tools` gateway cannot create repositories:
+it has no owner authorization or GitHub write credential. That restriction is
+intentional. A separate owner-authenticated `infinity-brain-clock`
+`POST /work/github` adapter implements `create_repository`, `read_file`,
+`commit_files`, `create_pr`, `list_workflows` and `dispatch_workflow`.
+Ordinary single-repository Bubbles chat commands use that direct adapter,
+not a Robot Brain ticket. Requests explicitly naming Robot Brain or multiple
+color agents still use the multi-agent queue. Repository selection must be
+unambiguous; writes require the existing verified owner session plus a
+server-side GitHub credential with suitable GitHub permission. A configured
+GitHub workflow or merely accepted dispatch is not proof the job ran.
+
+Cloudflare's `infinity-brain-clock` Worker has no `GITHUB_TOKEN` secret
+binding listed as of October 18, 2026; the engine may instead use an encrypted
+owner credential stored through the separately authenticated Moltnook runner.
+Only a successful GitHub capability/action receipt proves that credential
+works. Never infer write authority from a ChatGPT session, page Origin header,
+model text, repository selection, or a queued Robot Brain job.
 
 Every result includes a receipt ID, tool, status and source/failure information.
 The Android app stores up to 30 local receipts including the original request,
