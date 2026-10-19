@@ -34,6 +34,7 @@ public final class MainActivity extends Activity {
     private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64, IMAGE_REQUEST = 65,
         PHONE_AUDIO_REQUEST = 66, CAPCUT_MEDIA_REQUEST = 67;
     private boolean screenshot;
+    private boolean pendingNativeScreenVideo;
     private int screenIntervalSeconds, screenDurationSeconds;
     private String extracted = "";
 
@@ -759,15 +760,29 @@ public final class MainActivity extends Activity {
     }
 
     private void beginScreen(boolean image) {
+        if (!image && !BubblesService.isSessionRunning()) {
+            // The built-in recorder borrows Bubbles' single active voice stream,
+            // not a competing microphone connection that can silence speech.
+            pendingNativeScreenVideo = true;
+            checkAndStart();
+            ui.postDelayed(() -> {
+                if (!pendingNativeScreenVideo) return;
+                if (BubblesService.isSessionRunning()) beginScreen(false);
+                else state.setText("Start Bubbles listening before recording video.");
+            }, 900L);
+            return;
+        }
         if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
             state.setText("Screen recording is already active; say stop to save.");
             return;
         }
         if (!image && checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
-            state.setText("Screen video includes your microphone. Approve microphone access first.");
+            pendingNativeScreenVideo = true;
+            state.setText("Approve microphone access before recording.");
             requestPermissions(new String[]{Manifest.permission.RECORD_AUDIO}, PERMISSIONS_REQUEST);
             return;
         }
+        pendingNativeScreenVideo = false;
         screenshot = image;
         android.media.projection.MediaProjectionManager projection = (android.media.projection.MediaProjectionManager) getSystemService(MEDIA_PROJECTION_SERVICE);
         startActivityForResult(projection.createScreenCaptureIntent(), SCREEN_REQUEST);
@@ -901,6 +916,12 @@ public final class MainActivity extends Activity {
             }
         }
         checkAndStart();
+        if (pendingNativeScreenVideo) {
+            ui.postDelayed(() -> {
+                if (pendingNativeScreenVideo && BubblesService.isSessionRunning())
+                    beginScreen(false);
+            }, 900L);
+        }
     }
 }
 
