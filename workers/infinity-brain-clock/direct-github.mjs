@@ -34,6 +34,11 @@ export async function githubOperation(env,body,request=fetch){
  if(!token)return {ok:false,status:'blocked',error:'github_runtime_credential_missing',repository,
   capabilities:{read:false,push:false,actions:false},next:'Connect a server-side GitHub credential with Contents, Pull requests and Actions write access. Never paste credentials into chat.'};
  if(action==='create_repository'){
+  // A one-letter or article-only name is likely a partial voice transcription.
+  // Reject it before contacting GitHub, even if a client supplies it explicitly.
+  const proposedName=repository.split('/')[1]||'';
+  if(proposedName.length<2||/^(?:a|an|the|new|repo|repository)$/i.test(proposedName))
+   return {ok:false,status:'blocked',error:'ambiguous_repository_name',repository,testsPassed:false,deployed:false};
   const options={redirect:'manual',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','User-Agent':'Bubbles-Direct-GitHub','Content-Type':'application/json'},signal:AbortSignal.timeout(15000)};
   const identity=await request('https://api.github.com/user',options);
   if(!identity.ok||(await identity.json()).login?.toLowerCase()!=='www-infinity4')throw Error('github_repository_creation_owner_mismatch');
