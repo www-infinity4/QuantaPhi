@@ -1,3 +1,36 @@
+## APK 38 requested feature pass — Android source 0.40.0 (October 18, 2026)
+
+This feature branch starts from source version 0.39.0; source version numbers
+must increase, so the next test package uses versionCode 40/versionName 0.40.0.
+A PR or source change is **not** a signed installable APK or real-phone test.
+
+- Bubbles is the only visible draggable orb; the separately overlaid X REC button
+  was removed. The orb is 44 dp at rest and expands to 68 dp while speaking.
+  Voice capture and typed "record" now open a visible Android MediaProjection
+  approval via the Bubbles notification, then Bubbles' own screen MP4 encoder
+  starts immediately after consent. Speak "stop recording" to finalize. This
+  re-enables the native video path previously disabled after crashes; verify
+  actual phone recording and media export before production.
+- The same existing Vosk PCM stream is used for recording audio; the app does
+  not acquire a second microphone. The MP4 mux runs off the UI thread.
+  Android's cooperative AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK asks other audio apps
+  to reduce playback volume while Bubbles speaks, then releases focus. Apps
+  may decline to duck. Existing media recordings are not deliberately deleted.
+- Android WebView persists its own first-party QuantaPhi site cookies and DOM
+  storage across app launches. A user's **already authenticated** session inside
+  this WebView can reopen without manual re-pairing while server credentials
+  remain valid. It cannot access Chrome's cookies or automatically identify
+  a new install; first login/authorized device handoff still needs a secure
+  identity mechanism. Wallet/account ownership must be validated server-side.
+- Third-party XRecorder/DU bridges remain in source only as compatibility tools,
+  but no separate X REC floating button is created by Bubbles.
+
+**Build gate:** GitHub Actions Android PR job must compile, produce signed
+preview artifact, and supply an actual receipt; Motorola installation,
+screen-capture permission, play+record+speech, and saved A/V remain
+device-specific acceptance tests. Private Chrome cookies and wallet keys are
+never compiled into an APK.
+
 ## Native voice-attribution safeguard (October 16, 2026)
 
 The Android microphone now forwards idle speech only after an explicit "Bubbles"
