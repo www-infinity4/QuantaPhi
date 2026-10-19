@@ -71,6 +71,8 @@ jobs:
           java -cp /tmp/bubbles-workflows org.quantaphi.bubbles.SpokenWorkflowPlanCheck
       - name: Verify Bubbles direct GitHub routing and playback crash guards
         run: node --test test/bubbles-direct-route-playback-stability.test.cjs
+      - name: Verify recommended setup and wake-only floating activation
+        run: node --test test/bubbles-recommended-setup.test.cjs
       - name: Verify native final speech recovery after phase acknowledgement
         run: node --test test/bubbles-native-reply-recovery.test.cjs
       - name: Verify three-lane room and internal playback isolation
