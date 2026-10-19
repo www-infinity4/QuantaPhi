@@ -259,9 +259,8 @@ public final class MainActivity extends Activity {
         });
         layout.addView(advancedCapture);
         TextView captureInfo = new TextView(this);
-        captureInfo.setText("Listening is separate from recording. Screen video now opens the installed original XRecorder, "
-                + "using its floating control for Start/Stop. Bubbles does not share Android screen-capture permission with XRecorder. "
-                + "Screenshot capture and sound-only recording remain native.");
+        captureInfo.setText("Bubbles has its own native screen recorder: say 'Bubbles, record' to request Android screen permission, then say 'stop' to save to Movies/Bubbles. "
+                + "No XRecorder or DU Recorder installation is needed. The microphone voice stream is shared for recording.");
         captureInfo.setTextColor(Color.rgb(101, 83, 111));
         advancedCapture.addView(captureInfo);
         Button sound = new Button(this);
@@ -276,19 +275,19 @@ public final class MainActivity extends Activity {
         saveSound.setOnClickListener(v -> startService(new Intent(this, BubblesService.class).setAction(BubblesService.ACTION_SAVE_AUDIO)));
         advancedCapture.addView(saveSound);
         Button screenVideo = new Button(this);
-        screenVideo.setText("Open XRecorder / start screen video");
-        screenVideo.setOnClickListener(v -> XRecorderBridge.request(this, "start", ui));
+        screenVideo.setText("Record screen video in Bubbles");
+        screenVideo.setOnClickListener(v -> beginScreen(false));
         advancedCapture.addView(screenVideo);
         Button screenImage = new Button(this);
         screenImage.setText("Take screenshot");
         screenImage.setOnClickListener(v -> beginScreen(true));
         advancedCapture.addView(screenImage);
         Button stopScreen = new Button(this);
-        stopScreen.setText("Stop XRecorder recording or Bubbles screenshot");
+        stopScreen.setText("Stop and save Bubbles screen recording");
         stopScreen.setOnClickListener(v -> {
             if (BrainNotes.prefs(this).getBoolean("capture_active", false))
                 startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
-            else XRecorderBridge.request(this, "stop", ui);
+            else state.setText("No native Bubbles screen recording is active.");
         });
         advancedCapture.addView(stopScreen);
         Button capcut = new Button(this);
@@ -714,7 +713,7 @@ public final class MainActivity extends Activity {
             screenDurationSeconds = Math.max(10, Math.min(300, duration));
             beginScreen(true);
         } else if ("screen_video".equals(action)) {
-            XRecorderBridge.request(this, "start", ui);
+            screenIntervalSeconds = 0; screenDurationSeconds = 0; beginScreen(false);
         } else if ("camera_video".equals(action)) {
             stopService(new Intent(this, BubblesService.class));
             try {
@@ -760,10 +759,14 @@ public final class MainActivity extends Activity {
     }
 
     private void beginScreen(boolean image) {
-        if (!image) { XRecorderBridge.request(this, "start", ui); return; }
+        if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
+            state.setText("Screen recording is already active; say stop to save.");
+            return;
+        }
         if (!image && checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
             state.setText("Screen video includes your microphone. Approve microphone access first.");
-            checkAndStart(); return;
+            requestPermissions(new String[]{Manifest.permission.RECORD_AUDIO}, PERMISSIONS_REQUEST);
+            return;
         }
         screenshot = image;
         android.media.projection.MediaProjectionManager projection = (android.media.projection.MediaProjectionManager) getSystemService(MEDIA_PROJECTION_SERVICE);
