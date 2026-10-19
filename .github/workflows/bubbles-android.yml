@@ -16,6 +16,7 @@ on:
       - 'test/bubbles-native-site-parity.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
       - 'test/bubbles-owner-native-pairing.test.cjs'
+      - 'test/bubbles-native-wallet-vault.test.cjs'
       - 'test/bubbles-owner-pairing-visibility.test.cjs'
       - 'test/bubbles-capture-save.test.cjs'
       - 'test/bubbles-xrecorder-app-control.test.cjs'
@@ -73,6 +74,8 @@ jobs:
         run: node --test test/bubbles-direct-route-playback-stability.test.cjs
       - name: Verify recommended setup and wake-only floating activation
         run: node --test test/bubbles-recommended-setup.test.cjs
+      - name: Verify AndroidKeyStore wallet backup and safe recovery boundary
+        run: node --test test/bubbles-native-wallet-vault.test.cjs
       - name: Verify native final speech recovery after phase acknowledgement
         run: node --test test/bubbles-native-reply-recovery.test.cjs
       - name: Verify three-lane room and internal playback isolation
