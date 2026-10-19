@@ -153,9 +153,9 @@ export function mountConnections(container,{token}) {
               const choice=document.createElement('option');choice.value=repo.name;
               choice.textContent=repo.name;walletRepo.append(choice);
             }
-            backup.disabled=walletRepo.options.length<=1;
-            compare.disabled=backup.disabled;
-            if(backup.disabled)backupStatus.textContent='Install Bubbles GitHub App with Contents write access to one private repository.';
+            backup.disabled=!walletRepo.value;
+            compare.disabled=!walletRepo.value;
+            if(walletRepo.options.length<=1)backupStatus.textContent='Install Bubbles GitHub App with Contents write access to one private repository.';
           }
           walletRepo.addEventListener('change',()=>{
             const ready=!!walletRepo.value;backup.disabled=!ready;compare.disabled=!ready;
