@@ -214,6 +214,10 @@ final class FloatingOracleWindow {
      * A remote page update does not confer new native Android permissions. */
     private void createWebsite(LinearLayout page) {
         try {
+            // First-party cookies and DOM storage stay in this app's WebView
+            // profile across launches. They cannot be copied from Chrome or
+            // preloaded from another person's credentials.
+            android.webkit.CookieManager.getInstance().setAcceptCookie(true);
             website = new WebView(service);
             website.setVisibility(View.GONE);
             website.setBackgroundColor(BACKGROUND);
@@ -306,6 +310,8 @@ final class FloatingOracleWindow {
                 }
                 @Override public void onPageFinished(WebView view, String url) {
                     Uri location = Uri.parse(url);
+                    if ("https".equals(location.getScheme()) && SITE_HOST.equals(location.getHost()))
+                        android.webkit.CookieManager.getInstance().flush();
                     if (trustedLive(view)) {
                         livePage = true;
                         websiteReady = false;
