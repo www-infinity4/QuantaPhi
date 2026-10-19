@@ -1063,7 +1063,7 @@ public final class BubblesService extends Service {
         // Owner explicitly refers to what's on their Android screen or requests
         // one visible action. Attach fresh Android evidence before asking the
         // shared QuantaPhi brain; ordinary conversations never send screen data.
-        if (screenSharing || ScreenAwareness.refersToScreen(addressed)) {
+        if (screenSharing || ScreenAwareness.refersToScreen(addressed) || ChromeControlPolicy.isChromeRequest(addressed)) {
             speechSuppressed = false;
             handleScreenRequest(addressed, false);
             return;
@@ -1128,6 +1128,8 @@ public final class BubblesService extends Service {
             return;
         }
         if (handleWorkflowRequest(text, true)) return;
+        String localLaunch = AppControlBridge.tryLaunch(this, text);
+        if (localLaunch != null) { screenStatus(localLaunch, true); return; }
         if (SimNetworkCommands.matches(text)) {
             screenStatus(CellularInspector.capture(this), true);
             return;
@@ -1140,7 +1142,7 @@ public final class BubblesService extends Service {
             heard(text, true);
             return;
         }
-        if (screenSharing || ScreenAwareness.refersToScreen(text)) {
+        if (screenSharing || ScreenAwareness.refersToScreen(text) || ChromeControlPolicy.isChromeRequest(text)) {
             speechSuppressed = true;
             handleScreenRequest(text, true);
         } else if (oracleWindow != null && oracleWindow.sendTyped(text)) {
@@ -1169,7 +1171,15 @@ public final class BubblesService extends Service {
             }
             return;
         }
-        String action = BrainLearningService.performRequestedAction(question);
+        // Chrome-specific instructions must never act in another foreground
+        // app merely because a previously read screen happened to be Chrome.
+        boolean chromeOnly = ChromeControlPolicy.isChromeRequest(question);
+        if (chromeOnly && !BrainLearningService.isChromeForeground()) {
+            screenStatus("Open Chrome on the phone first. No Chrome action was attempted.", typed);
+            return;
+        }
+        String action = BrainLearningService.performRequestedAction(
+            chromeOnly ? ChromeControlPolicy.screenPhrase(question) : question);
         if (action != null) {
             screenStatus(action, typed);
             // Refresh after an accepted navigation action. Never re-run the action
