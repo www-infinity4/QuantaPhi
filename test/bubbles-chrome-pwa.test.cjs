@@ -67,8 +67,8 @@ test('Android can launch signed-in Chrome website without importing native walle
 
 test('Chrome launcher is unpinned on current GitHub main and served as JSON', () => {
  const worker=fs.readFileSync('workers/quantaphi-site/worker.js','utf8');
- assert.match(worker,/json: 'application\\/json/);
- assert.doesNotMatch(worker,/sourcePath === '\\/bubbles-chrome\\.html'/);
- assert.doesNotMatch(worker,/route\\.sourcePath === '\\/bubbles-chrome\\.html'/);
- assert.match(html,/rel="manifest" href="\\/bubbles-manifest\\.json"/);
+ assert.match(worker,/json: 'application\/json/);
+ assert.doesNotMatch(worker,/sourcePath === '\/bubbles-chrome\.html'/);
+ assert.doesNotMatch(worker,/route\.sourcePath === '\/bubbles-chrome\.html'/);
+ assert.match(html,/rel="manifest" href="\/bubbles-manifest\.json"/);
 });
