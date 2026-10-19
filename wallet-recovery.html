@@ -77,7 +77,7 @@ async function finishBrainRecovery(deviceToken){
     const res=await fetch(BRAIN+'/owner/session',{method:'POST',headers:{Authorization:'Bearer '+deviceToken},cache:'no-store',signal:AbortSignal.timeout(15000)});
     const data=await res.json().catch(()=>({}));
     if(!res.ok||!data.ok||!/^rb_[a-f0-9]{64}$/.test(data.token||'')){
-      msg('Your existing wallet is connected, but Robot Brain did not confirm its owner link. No wallet or ownership records were changed.',true);
+      msg('This StarQuest login is valid, but Robot Brain is linked to a different verified wallet identity. The APK cannot claim ownership using the SIM alone. No wallet or ownership records were changed.',true);
       return;
     }
     location.assign('/#robotDirections');
@@ -146,6 +146,9 @@ async function scan(username,token){
     stat('Music Quants',v.balances?.MUSIC_QUANT);
     detail('Unified token records returned: '+(Array.isArray(v.tokens)?v.tokens.length:0)+' (latest 500 maximum).');
     detail('Recent unified wallet transactions returned: '+(Array.isArray(v.history)?v.history.length:0)+' (latest 500 maximum).');
+    if(!Number(v.balances?.INFINITY||0)&&!Number(v.balances?.QUANT||0)&&!Number(v.balances?.MUSIC_QUANT||0)&&!(v.tokens||[]).length){
+      detail('This signed-in account has no recorded unified token activity. The search does not prove that tokens attached to a previously used device account were deleted. Other accounts are NOT silently merged. A verified owner/account linking procedure is required.');
+    }
     if(v.updatedAt)detail('Wallet state last updated: '+new Date(v.updatedAt).toLocaleString()+'.');
     const counts={};for(const item of (v.tokens||[]))counts[item.token_type]=(counts[item.token_type]||0)+1;
     if(Object.keys(counts).length)detail('Token types: '+Object.entries(counts).map(([k,n])=>k+': '+fmt(n)).join('; ')+'.');

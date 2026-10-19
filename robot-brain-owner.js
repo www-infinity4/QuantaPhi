@@ -181,13 +181,11 @@ function form(message){
  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submit()}});
  details.append(summary,intro,label,input,button,status);
  const actions=node('div','','rbo-recovery-actions');
- const recognize=node('button','Recognize this device');recognize.type='button';recognize.className='rbo-retry';
- recognize.addEventListener('click',()=>{if(!busy)void start(0)});
  const recover=node('a','Recover existing account','rbo-recover');
  recover.href='/wallet-recovery.html?return=robot-brain';
  recover.style.cssText='display:inline-block;text-align:center;background:#5e2795;color:#fff;padding:12px 16px;min-height:44px;box-sizing:border-box;border-radius:12px;font-weight:700;text-decoration:none';
- actions.append(recognize,recover);
- const explanation=node('p','Already signed in? Tap Recognize this device. If Chrome removed your sign-in, tap Recover existing account and verify the original StarQuest account once. No new wallet is created.');
+ actions.append(recover);
+ const explanation=node('p','Your existing wallet is checked automatically when the page opens. If the browser credential was deleted, recover the original account; a native Bubbles APK may retain a previously verified wallet separately. No new wallet is created.');
  explanation.className='rbo-recovery-help';
  host.replaceChildren(actions,explanation,details);
 }
