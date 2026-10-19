@@ -132,6 +132,9 @@ export function mountConnections(container,{token}) {
           }catch{result.textContent='GitHub repository verification failed. No repository action was performed.';}finally{inspect.disabled=false;}});
           const test=element('button','Run GitHub connection test','ba-control');test.type='button';
           test.addEventListener('click',async()=>{test.disabled=true;result.textContent='Creating an isolated test branch and receipt…';try{const receipt=await client.call('/github/test',{id:account.id});result.replaceChildren(element('p','Verified commit: '+receipt.commit),element('p','Test branch: '+receipt.branch));const link=element('a','Open verified GitHub commit');link.href=receipt.url;link.target='_blank';link.rel='noopener noreferrer';result.append(link);}catch{result.textContent='Test did not return a verified commit. Check GitHub before retrying.';}finally{test.disabled=false;}});
+          if(data.starcoinBackupEnabled!==true){
+            row.append(inspect,test,result);
+          }else{
           // One private GitHub repository per Cloudflare wallet, StarCoins only.
           // GitHub identity never authorizes wallet credits or Robot Brain.
           const walletRepo=document.createElement('select');
@@ -201,6 +204,7 @@ export function mountConnections(container,{token}) {
           });
           row.append(inspect,test,result,walletRepo,backup,compare,createPrivate,backupStatus);
           void loadPrivateRepositories().catch(()=>{backupStatus.textContent='GitHub repository list is unavailable. No backup was written.';});
+          }
         }
         accounts.append(row);
         if(account.provider==='google'&&account.status==='connected') {
