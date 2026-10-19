@@ -1,9 +1,9 @@
 # Bubbles in Chrome and as an Android overlay
 
 ## Install the Chrome app
-Open https://quantaphi.org/bubbles.html in **Google Chrome** and use **Install Bubbles in Chrome** if Chrome offers the prompt, or **Chrome ⋮ → Install app / Add to Home screen**. Chrome shows Bubbles as a standalone installed web app with its own icon. The app launches the QuantaPhi Bubbles website on the same origin, so a valid Chrome website session is available without manually copying wallet tokens. It is **not** a shared Android-WebView or ChatGPT session, and server-side login expiry still applies.
+Open https://quantaphi.org/bubbles-chrome.html in **Google Chrome** and use **Install Bubbles in Chrome** if Chrome offers the prompt, or **Chrome ⋮ → Install app / Add to Home screen**. Chrome shows Bubbles as a standalone installed web app with its own icon. The app launches the QuantaPhi Bubbles website on the same origin, so a valid Chrome website session is available without manually copying wallet tokens. It is **not** a shared Android-WebView or ChatGPT session, and server-side login expiry still applies.
 
-The manifest identity is pinned to `/bubbles.html`, with real 192px and 512px icons. The service worker caches **only** the public, unauthenticated offline landing page and app icons, not personal chat, wallet state, authentication endpoints or private pages. Offline Bubbles cannot perform online tasks or access a cached wallet.
+The manifest identity is pinned to `/bubbles-chrome.html`, with real 192px and 512px icons. The service worker caches **only** the public, unauthenticated offline landing page and app icons, not personal chat, wallet state, authentication endpoints or private pages. Offline Bubbles cannot perform online tasks or access a cached wallet.
 
 ## Let Bubbles operate Chrome on Android
 Open the **Bubbles Preview 5 APK** (v0.42.0 or higher), tap Recommended setup and approve microphone/overlay permissions, then enable **Brain workflow learning** under Android Accessibility. Open the Chrome app using the Bubbles settings shortcut or say **“Bubbles, open Bubbles in Chrome.”** The command requests the URL in Chrome; it does not assert Chrome actually opened until the foreground view verifies it.
