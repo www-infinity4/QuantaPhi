@@ -67,6 +67,25 @@ const UNIFIED='https://unified-wallet.marvaseater.workers.dev';
 const QUANT='https://quanta-phi-ledger.marvaseater.workers.dev';
 const $=id=>document.getElementById(id);
 const prefix='starquest_ledger_device_v1:';
+const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
+const RETURN_TO_BRAIN=new URLSearchParams(location.search).get('return')==='robot-brain';
+if(RETURN_TO_BRAIN){$('back').textContent='Open Robot Brain';document.querySelector('header a').href='/#robotDirections';}
+async function finishBrainRecovery(deviceToken){
+  if(!RETURN_TO_BRAIN)return;
+  msg('Wallet restored. Verifying Robot Brain ownership…');
+  try{
+    const res=await fetch(BRAIN+'/owner/session',{method:'POST',headers:{Authorization:'Bearer '+deviceToken},cache:'no-store',signal:AbortSignal.timeout(15000)});
+    const data=await res.json().catch(()=>({}));
+    if(!res.ok||!data.ok||!/^rb_[a-f0-9]{64}$/.test(data.token||'')){
+      msg('Your existing wallet is connected, but Robot Brain did not confirm its owner link. No wallet or ownership records were changed.',true);
+      return;
+    }
+    location.assign('/#robotDirections');
+  }catch(_){
+    msg('Your wallet is connected. Robot Brain could not be reached; tap Open Robot Brain to retry.',true);
+  }
+}
+
 let working=false;
 const msg=(value,bad=false)=>{const e=$('message');e.textContent=value;e.className=bad?'warning':'good'};
 const fmt=n=>Number.isFinite(Number(n))?new Intl.NumberFormat().format(Number(n)):'Unavailable';
@@ -154,7 +173,7 @@ async function run(){
 }
 $('scan').addEventListener('click',run);
 $('rescan').addEventListener('click',run);
-$('back').addEventListener('click',()=>{location.assign('/')});
+$('back').addEventListener('click',()=>{location.assign(RETURN_TO_BRAIN?'/#robotDirections':'/')});
 $('showSignin').addEventListener('click',()=>{$('signin').hidden=false;$('username').focus()});
 $('signin').addEventListener('submit',async event=>{
  event.preventDefault();if(working)return;working=true;$('restore').disabled=true;$('results').hidden=true;
@@ -180,6 +199,7 @@ $('signin').addEventListener('submit',async event=>{
   localStorage.setItem(prefix+username,deviceToken);
   $('password').value='';$('signin').hidden=true;
   await scan(username,deviceToken);
+  await finishBrainRecovery(deviceToken);
  }catch(e){msg(String(e.message||e)+' Existing records were not reassigned.',true)}
  finally{working=false;$('restore').disabled=false}
 });
