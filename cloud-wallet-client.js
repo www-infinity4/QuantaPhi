@@ -211,6 +211,8 @@ function installCloudWalletRecoveryLink(){
  Object.assign(link.style,{display:'inline-flex',alignItems:'center',justifyContent:'center',borderRadius:'999px',border:'1px solid #bba0df',background:'#f0e3fc',color:'#4a207f',padding:'8px 12px',minHeight:'40px',fontSize:'13px',fontWeight:'800',textDecoration:'none',whiteSpace:'nowrap'});
  target.appendChild(link);
 }
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',installCloudWalletRecoveryLink,{once:true});
-else installCloudWalletRecoveryLink();
+if(typeof document!=='undefined'){
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',installCloudWalletRecoveryLink,{once:true});
+ else installCloudWalletRecoveryLink();
+}
 })(window);
