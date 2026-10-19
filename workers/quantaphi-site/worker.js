@@ -14,7 +14,7 @@ const APPS = [
  { slug: '/oracle-octaves/', aliases: ['/octaves/'], repo: 'Oracle-Octaves' },
  { slug: '/mckee-coins/', aliases: ['/coins/', '/McKeeCoins/'], repo: 'Mckee-Coins-Inc' },
  { slug: '/shoplc/', aliases: ['/shop/'], repo: 'ShopLC' },
- { slug: '/starquest/', aliases: ['/StarQuest/', '/StarQuest/mlb-watch/'], repo: 'StarQuest', sourceRoot: '/mlb-watch' }
+ { slug: '/starquest/', aliases: ['/StarQuest/'], repo: 'StarQuest', sourceRoot: '/mlb-watch' }
 ];
 const SUPPORT_REPOS=[
  {prefix:'/TV-Database/',repo:'TV-Database'},
@@ -81,6 +81,8 @@ const OMNI_SUBROUTES=['build','overview','images','video','audio','structured','
 const INFINITY_SUBROUTES=['wallet','profile','history','business','research','phi'];
 const routeFor = incoming => {
  let path = incoming.pathname;
+ if (path.startsWith('/StarQuest/mlb-watch/')) return {redirect: '/starquest/' + path.slice('/StarQuest/mlb-watch/'.length) + incoming.search};
+ if (path.startsWith('/starquest/mlb-watch/')) return {redirect: '/starquest/' + path.slice('/starquest/mlb-watch/'.length) + incoming.search};
  const first=path.split('/').filter(Boolean)[0]||'';
  if(OMNI_SUBROUTES.includes(first)){
   return {redirect:'/omni-phi'+path+(path==='/' + first?'/':'')+incoming.search};
