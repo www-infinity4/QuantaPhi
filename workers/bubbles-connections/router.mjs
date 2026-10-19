@@ -1,3 +1,4 @@
+import {cloudStarCoinBackup} from './starcoin-backup.mjs';
 import {digest} from './vault.mjs';
 import {PROVIDERS} from './authorization.mjs';
 import {CONNECTOR_REQUIREMENTS} from './providers.mjs';
