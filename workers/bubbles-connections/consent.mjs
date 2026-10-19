@@ -110,6 +110,14 @@ export class ConsentService {
     if(!eligible)throw Error('github_private_write_not_verified');
     // Repository authority comes from GitHub's installation, not the model,
     // a typed URL, a provider login alone, or the platform owner's token.
+    const leaseKey=prefix+'starcoin:backup-lease',lease=randomToken();
+    if(mode==='write')await this.storage.transaction(async tx=>{
+      const active=await tx.get(leaseKey),bound=await tx.get(accountKey);
+      if(bound&&bound.repository!==repository)throw Error('backup_repository_already_selected');
+      if(active?.expiresAt>this.now())throw Error('backup_in_progress');
+      await tx.put(leaseKey,{lease,repository,expiresAt:this.now()+90000});
+    });
+    try {
     const result=await githubStarCoinBackup({token:credential.accessToken,repository,snapshot,mode});
     const current=await this.storage.get(key);
     if(current?.status!=='connected'||current.revision!==record.revision)
@@ -122,6 +130,11 @@ export class ConsentService {
       });
     }
     return result;
+    }finally{
+      if(mode==='write')await this.storage.transaction(async tx=>{
+        if((await tx.get(leaseKey))?.lease===lease)await tx.delete(leaseKey);
+      });
+    }
   }
   async createStarCoinRepository({userId,id}) {
     const prefix=await this.namespace(userId),key=prefix+'connection:'+id;
