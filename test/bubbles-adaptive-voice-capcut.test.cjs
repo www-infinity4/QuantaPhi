@@ -8,16 +8,16 @@ test('incomplete speech is buffered rather than submitted by an 850ms timer',()=
  const b=read('BubblesService.java'),policy=read('TurnCompletionPolicy.java');
  assert.match(b,/TurnCompletionPolicy\.waitMillis\(turnBuffer\.peek\(\)\)/);
  assert.match(b,/TurnCompletionPolicy\.onNewPartial\(turnBuffer\.peek\(\), partial\)/);
- assert.match(b,/case "screen_video":[\s\S]*?speak\("Starting\."\)/);
- assert.match(b,/speakWebsiteReply\("Recording\."\)/);
+ assert.match(b,/case "screen_video":[\s\S]*?offerCaptureApproval\(command\)/);
+ assert.match(b,/speak\("Approve screen sharing\."\)/);
  assert.match(policy,/11000L/);
  assert.match(policy,/8500L/);
  assert.match(policy,/950L/);
  assert.doesNotMatch(b,/postDelayed\(deliverVoiceTurn, END_OF_TURN_MS\)/);
 });
-test('XRecorder recording state is verified before telling owner it started',()=>{
+test('native recording uses verified capture state; the external XRecorder bridge remains optional',()=>{
  const b=read('BubblesService.java'),du=read('XRecorderBridge.java'),access=read('BrainLearningService.java');
- assert.match(b,/XRecorderBridge\.recordingVerified\(this\)/);
+ assert.match(b,/getBoolean\("capture_active", false\)/);
  assert.match(du,/BrainLearningService\.xControlVisible/);
  assert.match(du,/if \(visible\)/);
  assert.match(du,/putBoolean\("x_recorder_verified", verified\)/);
