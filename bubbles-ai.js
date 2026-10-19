@@ -1853,12 +1853,54 @@ const screenShareButton=create('button','ba-control','Share current screen');scr
 screenShareButton.setAttribute('aria-pressed','false');
 screenShareButton.addEventListener('click',()=>void sendMessage((nativeOverlay?nativeScreenSharing:pageScreenSharing)?'stop screen sharing':'start screen sharing'));
 tools.append(screenShareButton);
+const pendingGithubReceipts=new Set();
+async function githubReceipt(requestId){
+ const headers=await verifiedOwnerHeaders();
+ const r=await bubblesFetch(BRAIN+'/work/github',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
+  body:JSON.stringify({action:'receipt',requestId})},12000);
+ if(!r.ok)throw Error('github_receipt_http_'+r.status);
+ return r.json();
+}
+function watchDirectGithubReceipt(requestId){
+ if(pendingGithubReceipts.has(requestId))return;
+ pendingGithubReceipts.add(requestId);
+ void (async()=>{
+  try{
+   for(let i=0;i<120;i++){
+    await new Promise(resolve=>setTimeout(resolve,i<8?2000:5000));
+    let result;
+    try{result=await githubReceipt(requestId);}catch{continue;}
+    if(result.status==='working'||result.error==='receipt_not_found')continue;
+    const newline=String.fromCharCode(10);
+    const links=(result.receipts||[]).filter(x=>x.url).map(x=>x.status+': '+x.url).slice(-6).join(newline);
+    const report='Direct GitHub request '+requestId+': '+(result.status||'unconfirmed')+
+      (result.error?' — '+result.error:'')+(result.summary?' — '+result.summary:'')+
+      (result.url?newline+result.url:'')+(links?newline+links:'')+
+      '. Testing, merge and deployment require separate verified receipts.';
+    display(report,'ai');
+    messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
+    return;
+   }
+  }finally{pendingGithubReceipts.delete(requestId);}
+ })();
+}
 async function directGithubOperation(operation){
  if(embedded)throw Error('owner_tools_unavailable_in_embed');
- const headers=await verifiedOwnerHeaders(),requestId=crypto.randomUUID();
- const response=await bubblesFetch(BRAIN+'/work/github',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({...operation,requestId})},180000);
- const result=await response.json();
- if(!response.ok)throw Error(result.error||'direct_github_unavailable');
+ const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
+ let result;
+ try{
+  const response=await bubblesFetch(BRAIN+'/work/github',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
+   body:JSON.stringify({...operation,requestId})},18000);
+  result=await response.json();
+  if(!response.ok)throw Error(result.error||'direct_github_unavailable');
+ }catch(error){
+  // A timeout only means the client missed the response. Look up the original ID.
+  result={ok:true,status:'unconfirmed',requestId,error:'response_missing_or_timed_out',detail:String(error.message||error).slice(0,100)};
+ }
+ if(result.status==='working'||result.status==='unconfirmed'){
+  watchDirectGithubReceipt(requestId);
+  return {...result,requestId,next:'Checking the durable receipt using this request ID. Tests, merge and deployment remain unverified.'};
+ }
  return {...result,requestId};
 }
 input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();void sendMessage(input.value)}});
