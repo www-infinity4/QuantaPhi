@@ -13,7 +13,8 @@ const APPS = [
  { slug: '/bitcoin-crusher/', aliases: ['/crusher/', '/BitcoinCrusher/'], repo: 'Bitcoin-Crusher' },
  { slug: '/oracle-octaves/', aliases: ['/octaves/'], repo: 'Oracle-Octaves' },
  { slug: '/mckee-coins/', aliases: ['/coins/', '/McKeeCoins/'], repo: 'Mckee-Coins-Inc' },
- { slug: '/shoplc/', aliases: ['/shop/'], repo: 'ShopLC' }
+ { slug: '/shoplc/', aliases: ['/shop/'], repo: 'ShopLC' },
+ { slug: '/starquest/', aliases: ['/StarQuest/', '/StarQuest/mlb-watch/'], repo: 'StarQuest', sourceRoot: '/mlb-watch' }
 ];
 const SUPPORT_REPOS=[
  {prefix:'/TV-Database/',repo:'TV-Database'},
@@ -113,7 +114,7 @@ const routeFor = incoming => {
   if (path === matched.slice(0, -1)) return { redirect: app.slug };
   let suffix = path.slice(matched.length);
   if (!suffix || suffix.endsWith('/')) suffix += 'index.html';
-  return { repo: app.repo, sourcePath: '/' + suffix, publicPath: app.slug + suffix.replace(/index\.html$/, '') };
+  return { repo: app.repo, sourcePath: (app.sourceRoot || '') + '/' + suffix, publicPath: app.slug + suffix.replace(/index\.html$/, '') };
  }
  const legacy = APPS.find(item => path === '/' + item.repo || path.startsWith('/' + item.repo + '/'));
  if (legacy) {
@@ -394,7 +395,7 @@ export default {
   const readRequest = ['GET', 'HEAD'].includes(request.method);
   // QuantaPhi itself follows current main first. GitHub Pages can be healthy but
   // briefly stale after a commit, which must never keep an old wallet/search script live.
-  if (((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || route.repo === 'Alien-Radio' || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && textual && readRequest) {
+  if (((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || route.repo === 'Alien-Radio' || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || route.repo === 'StarQuest' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && textual && readRequest) {
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/' + sourceRef + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers); raw = true; } catch {}
