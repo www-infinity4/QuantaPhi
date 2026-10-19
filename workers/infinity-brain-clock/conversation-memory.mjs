@@ -62,6 +62,10 @@ export async function conversationMemory(db,owner,body){
  const recent=await db.prepare('SELECT id,role,text,at FROM bubbles_messages WHERE owner=? ORDER BY at DESC,id DESC LIMIT 64').bind(owner).all();
  const query=searchTerms(body.query);let related=[];
  if(query){const rows=await db.prepare('SELECT m.id,m.role,m.text,m.at FROM bubbles_message_index JOIN bubbles_messages m ON m.owner=bubbles_message_index.owner AND m.id=bubbles_message_index.id WHERE bubbles_message_index MATCH ? AND m.owner=? ORDER BY rank LIMIT 16').bind(query,owner).all();related=rows.results||[];}
+ // Preferences are retrieved independently of the current topic and recent window.
+ // Read immutable archived USER rows only: assistant replies cannot teach owner rules.
+ const candidates=await db.prepare("SELECT id,role,text,at FROM bubbles_messages WHERE owner=? AND role='user' AND (lower(text) LIKE '%don%t%' OR lower(text) LIKE '%do not%' OR lower(text) LIKE '%never%' OR lower(text) LIKE '%stop %' OR lower(text) LIKE '%remember%' OR lower(text) LIKE '%prefer%') ORDER BY at DESC,id DESC LIMIT 64").bind(owner).all();
+ const userInstructions=(candidates.results||[]).filter(m=>/\b(?:don['’]t|do not|never|stop|remember|prefer)\b/i.test(m.text)).slice(0,32).reverse().map(m=>({...m,text:m.text.slice(0,1000)}));
  const notificationPreferences=(await notificationSettings(db,owner,{mode:'notification-preferences'})).preferences;
- return {ok:true,notificationPreferences,capabilities,saved:messages.map(m=>m.id),recent:(recent.results||[]).reverse(),related,retention:'archive',retrieval:'recent64-and-indexed16'};
+ return {ok:true,notificationPreferences,userInstructions,capabilities,saved:messages.map(m=>m.id),recent:(recent.results||[]).reverse(),related,retention:'archive',retrieval:'recent64-and-indexed16'};
 }

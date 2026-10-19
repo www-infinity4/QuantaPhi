@@ -292,3 +292,12 @@
 .ba-repository-picker .ba-repository-suggested{border-left:4px solid #7453bf;background:#f4edfd;padding-left:6px;border-radius:6px;}
 .ba-repository-picker .ba-muted{line-height:1.45;overflow-wrap:anywhere;}
 .ba-repository-picker .ba-control{width:100%;margin:6px 0;padding:8px 10px;min-height:42px;}
+
+/* Expanded workspaces share the thread's scroll budget; composer stays reachable. */
+.ba-panel .ba-repository-picker{flex:none;min-height:0;max-width:100%;}
+.ba-panel .ba-repository-options{max-height:min(32dvh,260px);overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;}
+.ba-panel .ba-back-to-chat,.ba-card-toolbar{position:sticky;top:0;z-index:2;background:#fff;}
+.ba-card-toolbar{display:flex;flex-wrap:wrap;gap:6px;padding:6px 0;}
+.ba-card-workspace{flex:none;min-height:0;max-width:100%;}
+.ba-card-catalog{overscroll-behavior:contain;touch-action:pan-y;}
+.ba-panel > .ba-composer{max-height:45dvh;overflow-y:auto;}
