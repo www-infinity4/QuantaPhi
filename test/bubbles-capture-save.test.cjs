@@ -95,13 +95,12 @@ test('native-to-web recorder state is authoritative and the stop control is cont
   assert.doesNotMatch(floating, /performGlobalAction/);
 });
 
-test('one screen MP4 includes microphone audio automatically and publishes to Movies/Bubbles', () => {
+test('one screen MP4 publishes to Movies/Bubbles without taking Bubbles microphone', () => {
   const screen = source('ScreenCaptureService.java');
   const activity = source('MainActivity.java');
   assert.doesNotMatch(screen, /setAudioSource\(/);
   assert.match(screen, /BubblesService\.beginScreenAudio/);
   const muxer = source('SharedScreenAudioMuxer.java');
-  assert.match(muxer, /MediaFormat\.createAudioFormat\("audio\/mp4a-latm", 16000, 1\)/);
   assert.match(muxer, /MediaMuxer/);
   assert.match(screen, /setVideoSource\(MediaRecorder\.VideoSource\.SURFACE\)/);
   assert.match(screen, /savePath\("video\/mp4"\)/);
@@ -123,9 +122,9 @@ test('JSON history import uses the Android document picker, never the photo-only
   assert.match(activity, /openBubblesDocumentPicker\(history\)/);
 });
 
-test('spoken record without qualifier selects screen + microphone, sound-only remains explicit', () => {
+test('spoken record without qualifier selects native screen video, sound-only remains explicit', () => {
   const commands = source('VoiceCaptureCommands.java');
-  assert.match(commands, /Bare "record" uses XRecorder/);
+  assert.match(commands, /Bare "record" uses the native Bubbles screen recorder/);
   assert.match(commands, /record\|start recording\|begin recording/);
   assert.match(commands, /record sound\|record audio\|start audio recording/);
   const service = source('BubblesService.java');

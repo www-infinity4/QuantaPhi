@@ -14,17 +14,15 @@ const manifest=fs.readFileSync('android/bubbles-overlay/app/src/main/AndroidMani
 const web=fs.readFileSync('bubbles-ai.js','utf8');
 const floating=read('FloatingOracleWindow.java');
 
-test('spoken record Bubbles and floating record button use XRecorder',()=>{
+test('spoken record, app and floating chat use Bubbles native recorder',()=>{
  assert.match(voice,/record\|start recording\|stop recording\|stop\|save\) bubbles/);
- assert.match(service,/case "screen_video":[\s\S]*?XRecorderBridge\.request\(this, "start", main, feedback/);
- assert.match(service,/XRecorderBridge\.request\(this, "toggle", main\)/);
- assert.match(service,/attachXRecorderButton\(\)/);
- assert.match(activity,/screenVideo\.setOnClickListener\(v -> XRecorderBridge\.request/);
- assert.match(floating,/captureState\.put\("xRecording", XRecorderBridge\.recordingVerified/);
- assert.match(web,/capture\.xRecording===true/);
- assert.match(web,/Tap XRecorder to record/);
+ assert.match(service,/case "screen_video":[\s\S]*?offerCaptureApproval\(command\)/);
+ assert.match(activity,/screenVideo\.setOnClickListener\(v -> beginScreen\(false\)\)/);
+ assert.match(web,/Record screen/);
+ assert.match(web,/Stop & save/);
+ assert.match(floating,/captureState\.put\("screenRecording"/);
+ assert.doesNotMatch(service,/\n\s*attachXRecorderButton\(\);/);
 });
-
 test('only XRecorder owned, unambiguous labeled accessibility controls are tapped',()=>{
  assert.match(recorder,/videoeditor\.videorecorder\.screenrecorder/);
  assert.match(recorder,/BrainLearningService\.tapXRecorderControl\(wanted\)/);
