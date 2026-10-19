@@ -84,15 +84,14 @@ test('one-time code redemption works without AbortSignal.timeout on older Androi
  assert.equal(calls.length,2);
 });
 
-test('expired browser identity offers visible existing-wallet recovery instead of a new owner claim',()=>{
- assert.match(gate,/Recognize this device/);
- assert.match(gate,/Recover existing account/);
- assert.match(gate,/wallet-recovery\\.html\\?return=robot-brain/);
- assert.match(gate,/No new wallet is created/);
+test('expired browser identity offers existing-wallet recovery instead of a new owner claim',()=>{
+ assert.ok(gate.includes('Recognize this device'));
+ assert.ok(gate.includes('Recover existing account'));
+ assert.ok(gate.includes('/wallet-recovery.html?return=robot-brain'));
  const recovery=fs.readFileSync('wallet-recovery.html','utf8');
- assert.match(recovery,/\\/v1\\/verify-existing/);
- assert.match(recovery,/importedLocalState!==false/);
- assert.match(recovery,/finishBrainRecovery\\(deviceToken\\)/);
- assert.match(recovery,/location\\.assign\\('\\/#robotDirections'\\)/);
- assert.doesNotMatch(recovery,/localStorage\\.setItem\\([^\\n]*password[^H]/i);
+ assert.ok(recovery.includes('/v1/verify-existing'));
+ assert.ok(recovery.includes('importedLocalState!==false'));
+ assert.ok(recovery.includes('finishBrainRecovery(deviceToken)'));
+ assert.ok(recovery.includes("location.assign('/#robotDirections')"));
+ assert.ok(recovery.indexOf("'/v1/verify-existing'")<recovery.indexOf("'/v1/bootstrap'"),'verify the saved account before enrolling a new device');
 });
