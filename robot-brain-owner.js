@@ -181,7 +181,7 @@ function form(message){
  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submit()}});
  details.append(summary,intro,label,input,button,status);
  const actions=node('div','','rbo-recovery-actions');
- const recover=node('a','Open Cloudflare wallet verification','rbo-recover');
+ const recover=node('a','Recover existing account — Cloudflare verification','rbo-recover');
  recover.href='/wallet-recovery.html?return=robot-brain&verify=1';
  recover.style.cssText='display:inline-block;text-align:center;background:#5e2795;color:#fff;padding:12px 16px;min-height:44px;box-sizing:border-box;border-radius:12px;font-weight:700;text-decoration:none';
  actions.append(recover);
