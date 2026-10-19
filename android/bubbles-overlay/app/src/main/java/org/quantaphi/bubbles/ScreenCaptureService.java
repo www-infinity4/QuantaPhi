@@ -134,7 +134,7 @@ public final class ScreenCaptureService extends Service {
                 recorder.setVideoEncoder(MediaRecorder.VideoEncoder.H264);
                 recorder.setVideoSize(width, height);
                 recorder.setVideoFrameRate(24); recorder.setVideoEncodingBitRate(2500000);
-                recorder.setMaxDuration(300000); recorder.setMaxFileSize(100 * 1024 * 1024);
+                recorder.setMaxDuration(3600000); recorder.setMaxFileSize(1024L * 1024 * 1024);
                 recorder.setOnInfoListener((r, what, extra) -> main.post(this::finishCapture));
                 recorder.setOutputFile(file.getAbsolutePath()); recorder.prepare();
                 display = projection.createVirtualDisplay("Bubbles recording", width, height, metrics.densityDpi,
@@ -142,7 +142,7 @@ public final class ScreenCaptureService extends Service {
                 recorder.start(); recordingStarted = true;
                 BrainNotes.prefs(this).edit().putBoolean("capture_recording", true)
                     .putString("capture_state", "Recording screen; Bubbles voice remains active. Stop saves MP4 to Movies/Bubbles").apply();
-                main.postDelayed(this::finishCapture, 300000);
+                main.postDelayed(this::finishCapture, 3600000L);
             }
         } catch (Exception error) { fail(error); }
         return START_NOT_STICKY;
