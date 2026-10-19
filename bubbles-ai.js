@@ -1892,7 +1892,7 @@ async function directGithubOperation(operation){
   const response=await bubblesFetch(BRAIN+'/work/github',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
    body:JSON.stringify({...operation,requestId})},18000);
   result=await response.json();
-  if(!response.ok)throw Error(result.error||'direct_github_unavailable');
+  if(!response.ok)return {...result,requestId};
  }catch(error){
   // A timeout only means the client missed the response. Look up the original ID.
   result={ok:true,status:'unconfirmed',requestId,error:'response_missing_or_timed_out',detail:String(error.message||error).slice(0,100)};
