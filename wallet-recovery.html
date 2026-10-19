@@ -78,12 +78,18 @@ const prefix='starquest_ledger_device_v1:';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
 const RETURN_TO_BRAIN=new URLSearchParams(location.search).get('return')==='robot-brain';
 if(RETURN_TO_BRAIN){$('back').textContent='Open Robot Brain';document.querySelector('header a').href='/#robotDirections';}
+async function timedJson(url,options,timeoutMs){
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeoutMs);
+  try{
+    const response=await fetch(url,{...options,signal:controller.signal});
+    return {response,payload:await response.json().catch(()=>({}))};
+  }finally{clearTimeout(timer)}
+}
 async function finishBrainRecovery(deviceToken){
   if(!RETURN_TO_BRAIN)return;
   msg('Wallet restored. Verifying Robot Brain ownership…');
   try{
-    const res=await fetch(BRAIN+'/owner/session',{method:'POST',headers:{Authorization:'Bearer '+deviceToken},cache:'no-store',signal:AbortSignal.timeout(15000)});
-    const data=await res.json().catch(()=>({}));
+    const {response:res,payload:data}=await timedJson(BRAIN+'/owner/session',{method:'POST',headers:{Authorization:'Bearer '+deviceToken},cache:'no-store'},15000);
     if(!res.ok||!data.ok||!/^rb_[a-f0-9]{64}$/.test(data.token||'')){
       msg('This StarQuest login is valid, but Robot Brain is linked to a different verified wallet identity. The APK cannot claim ownership using the SIM alone. No wallet or ownership records were changed.',true);
       return;
@@ -119,8 +125,7 @@ function savedCredentials(){
   }catch(_){return null}
 }
 async function api(origin,path,token,body){
-  const response=await fetch(origin+path,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:{Authorization:'Bearer '+token},body:body?JSON.stringify(body):undefined,cache:'no-store',signal:AbortSignal.timeout(14000)});
-  const payload=await response.json().catch(()=>({}));
+  const {response,payload}=await timedJson(origin+path,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:{Authorization:'Bearer '+token},body:body?JSON.stringify(body):undefined,cache:'no-store'},14000);
   if(!response.ok||payload.ok===false)throw Error(payload.message||payload.error||'Cloud request failed ('+response.status+')');
   return payload;
 }

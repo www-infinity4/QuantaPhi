@@ -26,3 +26,10 @@ test('web and APK recovery preserves other accounts and proves new enrollment be
  assert.match(page,/history\.replaceState\(history\.state/);
  assert.doesNotMatch(page,/localStorage\.clear\(\)/);
 });
+
+test('recovery uses Android 12 compatible AbortController with response-body timeout',()=>{
+ assert.match(page,/async function timedJson\(url,options,timeoutMs\)/);
+ assert.match(page,/new AbortController\(\)/);
+ assert.match(page,/await response\.json\(\)\.catch/);
+ assert.doesNotMatch(page,/AbortSignal\.timeout\(/);
+});
