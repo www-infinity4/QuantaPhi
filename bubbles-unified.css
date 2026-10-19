@@ -120,7 +120,7 @@ html.bubbles-native-overlay .ba-panel .ba-messages{flex:none;overflow:visible;pa
 html.bubbles-native-overlay .ba-panel .ba-composer{
  flex:none;max-height:42dvh;overflow-y:auto;padding:7px 9px max(9px,env(safe-area-inset-bottom))}
 html.bubbles-native-overlay .ba-panel .ba-composer textarea{height:61px;min-height:54px;max-height:86px;resize:none}
-html.bubbles-native-overlay .ba-panel .ba-actions{grid-template-columns:1fr 1.25fr}
+html.bubbles-native-overlay .ba-panel .ba-actions{grid-template-columns:repeat(4,minmax(0,1fr))}
 html.bubbles-native-overlay .ba-panel .ba-actions .ba-mic,
 html.bubbles-native-overlay .ba-panel .ba-actions .ba-speak{display:none!important}
 html.bubbles-native-overlay .ba-panel .ba-actions .ba-photo-upload{display:flex!important}
