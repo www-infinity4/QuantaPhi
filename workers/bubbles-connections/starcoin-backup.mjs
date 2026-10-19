@@ -115,8 +115,8 @@ export async function githubStarCoinBackup({token,repository,snapshot,mode='writ
         +'<input id="file" type="file" accept=".json,application/json"><pre id="out">Choose latest.json from the private repository.</pre>'
         +'<script>document.getElementById("file").addEventListener("change",async e=>{const out=document.getElementById("out");'
         +'try{const r=JSON.parse(await e.target.files[0].text());if(r.data?.schema!=="infinity-starcoin-backup-v1")throw Error("Invalid format");'
-        +'out.textContent="StarCoins: "+(r.data.balanceTenths/10)+"\nReceipts in this file: "+r.data.receipts.length'
-        +'+"\nSHA-256 claim: "+r.hash+"\nLocal copy only; verify against live Cloudflare before relying on this data.";'
+        +'out.textContent="StarCoins: "+(r.data.balanceTenths/10)+"\\nReceipts in this file: "+r.data.receipts.length'
+        +'+"\\nSHA-256 claim: "+r.hash+"\\nLocal copy only; verify against live Cloudflare before relying on this data.";'
         +'}catch{out.textContent="Could not read a StarCoin backup JSON file."}});</script></main></html>';
       const created=await api(viewerPath,{method:'PUT',
         body:{message:'Add private offline StarCoin wallet HTML viewer',content:encode(viewer)}});
