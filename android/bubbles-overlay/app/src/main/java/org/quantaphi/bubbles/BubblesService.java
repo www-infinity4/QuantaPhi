@@ -104,19 +104,19 @@ public final class BubblesService extends Service {
     private WindowManager.LayoutParams bubbleLayout;
     private OrbView orb;
     private android.widget.TextView roomBubble;
-    private android.widget.TextView duRecorderButton;
-    private void attachDuRecorderButton() {
-        if (manager == null || duRecorderButton != null || !connected) return;
+    private android.widget.TextView xRecorderButton;
+    private void attachXRecorderButton() {
+        if (manager == null || xRecorderButton != null || !connected) return;
         android.widget.TextView button = new android.widget.TextView(this);
-        button.setText("DU\\nREC".replace("\\n", "\n"));
+        button.setText("X\\nREC".replace("\\n", "\n"));
         button.setTextColor(Color.WHITE);
         button.setTextSize(12f);
         button.setGravity(Gravity.CENTER);
         button.setBackgroundColor(Color.rgb(46, 78, 150));
-        button.setContentDescription("DU Recorder floating control. Tap to use DU's start or stop button. Long press to stop.");
-        button.setOnClickListener(v -> DuRecorderBridge.request(this, "toggle", main));
+        button.setContentDescription("XRecorder floating control. Tap to use XRecorder's start or stop button. Long press to stop.");
+        button.setOnClickListener(v -> XRecorderBridge.request(this, "toggle", main));
         button.setOnLongClickListener(v -> {
-            DuRecorderBridge.request(this, "stop", main);
+            XRecorderBridge.request(this, "stop", main);
             return true;
         });
         WindowManager.LayoutParams layout = new WindowManager.LayoutParams(114, 110,
@@ -125,9 +125,9 @@ public final class BubblesService extends Service {
             PixelFormat.TRANSLUCENT);
         layout.gravity = Gravity.TOP | Gravity.RIGHT;
         layout.x = 16; layout.y = 510;
-        try { manager.addView(button, layout); duRecorderButton = button; }
+        try { manager.addView(button, layout); xRecorderButton = button; }
         catch (RuntimeException error) {
-            BrainNotes.prefs(this).edit().putString("du_recorder_state",
+            BrainNotes.prefs(this).edit().putString("x_recorder_state",
                 "DU floating control could not open: " + error.getClass().getSimpleName()).apply();
         }
     }
@@ -444,7 +444,7 @@ public final class BubblesService extends Service {
             manager.addView(orb, bubbleLayout);
             connected = true;
             syncRoomBubble();
-            attachDuRecorderButton();
+            attachXRecorderButton();
             activeImageService = this;
             sessionRunning = true;
             // Keep the real QuantaPhi website assistant available while the
@@ -880,8 +880,8 @@ public final class BubblesService extends Service {
                         else if (screenState.contains("approval") || screenState.contains("requested"))
                             result += "Screen capture is waiting for your Android approval.";
                     }
-                    if (DuRecorderBridge.recordingVerified(this)) result = "Recording.";
-                    else if ("starting".equals(BrainNotes.prefs(this).getString("du_recorder_phase", ""))) result = "Starting.";
+                    if (XRecorderBridge.recordingVerified(this)) result = "Recording.";
+                    else if ("starting".equals(BrainNotes.prefs(this).getString("x_recorder_phase", ""))) result = "Starting.";
                     else if (soundActive) result = "Recording.";
                     else result = "Not recording.";
                     speak(result);
@@ -911,7 +911,7 @@ public final class BubblesService extends Service {
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing and saving screen capture…").apply();
                     }
                     if (!screenActive && !soundActive)
-                        DuRecorderBridge.request(this, "stop", main, feedback -> {
+                        XRecorderBridge.request(this, "stop", main, feedback -> {
                             if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
                         });
                     if (!screenActive && !soundActive && speaking) silenceReply();
@@ -922,13 +922,13 @@ public final class BubblesService extends Service {
                     if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
                         startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing screen capture…").apply();
-                    } else DuRecorderBridge.request(this, "stop", main, feedback -> {
+                    } else XRecorderBridge.request(this, "stop", main, feedback -> {
                         if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
                     });
                     break;
                 case "screen_video":
                     if (!typed) speak("Starting.");
-                    DuRecorderBridge.request(this, "start", main, feedback -> {
+                    XRecorderBridge.request(this, "start", main, feedback -> {
                         if ("recording".equals(feedback) && !typed) speakWebsiteReply("Recording.");
                     });
                     break;
@@ -955,6 +955,13 @@ public final class BubblesService extends Service {
                     break;
                 default: break;
             }
+            return;
+        }
+        // Opening an installed app is a local, explicit command; no cloud model
+        // can silently add app permissions or click unrelated controls.
+        String appLaunch = AppControlBridge.tryLaunch(this, addressed);
+        if (appLaunch != null) {
+            screenStatus(appLaunch, typed);
             return;
         }
         if (recording.active()) {
@@ -1297,9 +1304,9 @@ public final class BubblesService extends Service {
         }
         if (tts != null) {tts.stop();tts.shutdown();tts=null;}
         if (oracleWindow != null) {oracleWindow.close();oracleWindow = null;}
-        if (duRecorderButton != null && manager != null) {
-            try { manager.removeView(duRecorderButton); } catch (RuntimeException ignored) {}
-            duRecorderButton = null;
+        if (xRecorderButton != null && manager != null) {
+            try { manager.removeView(xRecorderButton); } catch (RuntimeException ignored) {}
+            xRecorderButton = null;
         }
         if (roomBubble != null && manager != null) {
             try { manager.removeView(roomBubble); } catch (Exception ignored) {}
