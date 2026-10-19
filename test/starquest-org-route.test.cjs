@@ -8,7 +8,7 @@ async function request(path) {
  const scope={
   URL,Request,Response,Headers,AbortController,AbortSignal,setTimeout,clearTimeout,
   fetch:async input=>{
-   urls.push(String(input));
+   urls.push(input instanceof Request ? input.url : String(input));
    return new Response('<!doctype html><html><body>StarQuest</body></html>',{
     status:200,headers:{'Content-Type':'text/html'}
    });
