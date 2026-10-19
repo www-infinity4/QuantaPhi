@@ -137,33 +137,6 @@ public final class BubblesService extends Service {
     private WindowManager.LayoutParams bubbleLayout;
     private OrbView orb;
     private android.widget.TextView roomBubble;
-    private android.widget.TextView xRecorderButton;
-    private void attachXRecorderButton() {
-        if (manager == null || xRecorderButton != null || !connected) return;
-        android.widget.TextView button = new android.widget.TextView(this);
-        button.setText("X\\nREC".replace("\\n", "\n"));
-        button.setTextColor(Color.WHITE);
-        button.setTextSize(12f);
-        button.setGravity(Gravity.CENTER);
-        button.setBackgroundColor(Color.rgb(46, 78, 150));
-        button.setContentDescription("XRecorder floating control. Tap to use XRecorder's start or stop button. Long press to stop.");
-        button.setOnClickListener(v -> XRecorderBridge.request(this, "toggle", main));
-        button.setOnLongClickListener(v -> {
-            XRecorderBridge.request(this, "stop", main);
-            return true;
-        });
-        WindowManager.LayoutParams layout = new WindowManager.LayoutParams(114, 110,
-            WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
-            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
-            PixelFormat.TRANSLUCENT);
-        layout.gravity = Gravity.TOP | Gravity.RIGHT;
-        layout.x = 16; layout.y = 510;
-        try { manager.addView(button, layout); xRecorderButton = button; }
-        catch (RuntimeException error) {
-            BrainNotes.prefs(this).edit().putString("x_recorder_state",
-                "XRecorder floating control could not open: " + error.getClass().getSimpleName()).apply();
-        }
-    }
     public static final String ACTION_SYNC_ROOM = "org.quantaphi.bubbles.SYNC_ROOM_NOTES";
     private void syncRoomBubble() {
         if (manager == null || !connected) return;
@@ -469,7 +442,7 @@ public final class BubblesService extends Service {
             manager = (WindowManager) getSystemService(WINDOW_SERVICE);
             orb = new OrbView(this);
             bubbleLayout = new WindowManager.LayoutParams(
-                    156, 156, WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
+                    orbSizePx(false), orbSizePx(false), WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
                     WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
                     PixelFormat.TRANSLUCENT);
             bubbleLayout.gravity = Gravity.TOP | Gravity.LEFT;
@@ -477,7 +450,6 @@ public final class BubblesService extends Service {
             manager.addView(orb, bubbleLayout);
             connected = true;
             syncRoomBubble();
-            attachXRecorderButton();
             activeImageService = this;
             sessionRunning = true;
             // Keep the real QuantaPhi website assistant available while the
@@ -530,12 +502,29 @@ public final class BubblesService extends Service {
         return builder.build();
     }
 
+    private int orbSizePx(boolean speakingNow) {
+        // Device-independent XRecorder-like footprint. Only the active voice orb
+        // expands; no second recording control occupies the screen.
+        return Math.round(getResources().getDisplayMetrics().density * (speakingNow ? 68 : 44));
+    }
     private void state(String newState, float energy) {
         // Vosk invokes state transitions from its microphone worker thread.
         // All View mutations (including content description and invalidate)
         // must run on the Android main thread to avoid intermittent freezes.
         final OrbView target = orb;
-        if (target != null) target.post(() -> target.setState(newState, energy));
+        if (target != null) target.post(() -> {
+            if (target != orb) return;
+            target.setState(newState, energy);
+            if (bubbleLayout != null && manager != null) {
+                int size = orbSizePx("speaking".equals(newState));
+                if (bubbleLayout.width != size || bubbleLayout.height != size) {
+                    bubbleLayout.width = size;
+                    bubbleLayout.height = size;
+                    try { manager.updateViewLayout(target, bubbleLayout); }
+                    catch (RuntimeException ignored) { /* Overlay may be closing. */ }
+                }
+            }
+        });
         if (!newState.equals(BrainNotes.prefs(this).getString("voice_state", "")))
             BrainNotes.prefs(this).edit().putString("voice_state", newState).apply();
     }
@@ -842,12 +831,14 @@ public final class BubblesService extends Service {
         turnBuffer.clear();
         echoQuietUntil = SystemClock.elapsedRealtime() + 1500L;
         if (tts != null) tts.stop();
+        restoreBackgroundAudio();
         if (connected && !muted) state("listening", .1f);
     }
     private void finishSpeaking(String id) {
         if (id == null || !id.equals(activeUtteranceId)) return;
         activeUtteranceId = "";
         speaking = false;
+        restoreBackgroundAudio();
         speechGeneration++;
         // Hardware speaker echo and TTS audio buffers may outlast onDone.
         echoQuietUntil = SystemClock.elapsedRealtime() + 1500L;
@@ -919,13 +910,6 @@ public final class BubblesService extends Service {
                         else if (screenState.contains("approval") || screenState.contains("requested"))
                             result += "Screen capture is waiting for your Android approval.";
                     }
-                    if (XRecorderBridge.recordingVerified(this)) result = "Recording.";
-                    else if ("starting".equals(BrainNotes.prefs(this).getString("x_recorder_phase", ""))) result = "Starting.";
-                    else if (screenActive) result = "Screen capture active.";
-                    else if (soundActive) result = "Recording.";
-                    else if ("needs_tap".equals(BrainNotes.prefs(this).getString("x_recorder_phase", "")))
-                        result = "XRecorder is ready for its Record button.";
-                    else result = "No recording is verified.";
                     speak(result);
                     break;
                 }
@@ -952,10 +936,6 @@ public final class BubblesService extends Service {
                         startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing and saving screen capture…").apply();
                     }
-                    if (!screenActive && !soundActive)
-                        XRecorderBridge.request(this, "stop", main, feedback -> {
-                            if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
-                        });
                     if (!screenActive && !soundActive && speaking) silenceReply();
                     break;
                 }
@@ -964,15 +944,11 @@ public final class BubblesService extends Service {
                     if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
                         startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing screen capture…").apply();
-                    } else XRecorderBridge.request(this, "stop", main, feedback -> {
-                        if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
-                    });
+                    } else if (!typed) speakWebsiteReply("No screen recording is active.");
                     break;
                 case "screen_video":
-                    if (!typed) speak("Starting.");
-                    XRecorderBridge.request(this, "start", main, feedback -> {
-                        if ("recording".equals(feedback) && !typed) speakWebsiteReply("Recording.");
-                    });
+                    offerCaptureApproval(command);
+                    if (!typed) speak("Approve screen sharing.");
                     break;
                 case "capcut_edit":
                 case "capcut_extract": {
@@ -1277,6 +1253,31 @@ public final class BubblesService extends Service {
         drainWebsiteSpeech();
     }
 
+    private android.media.AudioFocusRequest temporarySpeechFocus;
+    private android.media.AudioManager speechAudio;
+    private void duckDuringSpeech() {
+        if (temporarySpeechFocus != null) return;
+        try {
+            speechAudio = (android.media.AudioManager) getSystemService(AUDIO_SERVICE);
+            android.media.AudioAttributes attrs = new android.media.AudioAttributes.Builder()
+                .setUsage(android.media.AudioAttributes.USAGE_ASSISTANT)
+                .setContentType(android.media.AudioAttributes.CONTENT_TYPE_SPEECH).build();
+            android.media.AudioFocusRequest request = new android.media.AudioFocusRequest.Builder(
+                android.media.AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK)
+                .setAudioAttributes(attrs).build();
+            if (speechAudio != null
+                    && speechAudio.requestAudioFocus(request) == android.media.AudioManager.AUDIOFOCUS_REQUEST_GRANTED)
+                temporarySpeechFocus = request;
+        } catch (RuntimeException ignored) { /* Do not block spoken replies. */ }
+    }
+    private void restoreBackgroundAudio() {
+        if (speechAudio != null && temporarySpeechFocus != null) {
+            try { speechAudio.abandonAudioFocusRequest(temporarySpeechFocus); }
+            catch (RuntimeException ignored) {}
+        }
+        temporarySpeechFocus = null;
+    }
+
     private void speak(String response) {
         if (!connected || muted) return;
         if (tts == null || !ttsReady) {
@@ -1304,6 +1305,7 @@ public final class BubblesService extends Service {
             }
         }, 90000);
         state("speaking", .4f);
+        duckDuringSpeech();
         try {
             int result = tts.speak(response, TextToSpeech.QUEUE_FLUSH, null, utterance);
             if (result == TextToSpeech.ERROR) {
@@ -1346,12 +1348,9 @@ public final class BubblesService extends Service {
                 voiceModel = null;
             }
         }
+        restoreBackgroundAudio();
         if (tts != null) {tts.stop();tts.shutdown();tts=null;}
         if (oracleWindow != null) {oracleWindow.close();oracleWindow = null;}
-        if (xRecorderButton != null && manager != null) {
-            try { manager.removeView(xRecorderButton); } catch (RuntimeException ignored) {}
-            xRecorderButton = null;
-        }
         if (roomBubble != null && manager != null) {
             try { manager.removeView(roomBubble); } catch (Exception ignored) {}
             roomBubble = null;
