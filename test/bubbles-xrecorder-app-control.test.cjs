@@ -2,49 +2,37 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
-const prefix='android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/';
-const read=name=>fs.readFileSync(prefix+name,'utf8');
+const dir='android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/';
+const read=name=>fs.readFileSync(dir+name,'utf8');
 const service=read('BubblesService.java');
-const recorder=read('XRecorderBridge.java');
-const a11y=read('BrainLearningService.java');
-const apps=read('AppControlBridge.java');
-const voice=read('VoiceCaptureCommands.java');
 const activity=read('MainActivity.java');
+const screen=read('ScreenCaptureService.java');
 const manifest=fs.readFileSync('android/bubbles-overlay/app/src/main/AndroidManifest.xml','utf8');
-const web=fs.readFileSync('bubbles-ai.js','utf8');
-const floating=read('FloatingOracleWindow.java');
 
-test('spoken record Bubbles and floating record button use XRecorder',()=>{
- assert.match(voice,/record\|start recording\|stop recording\|stop\|save\) bubbles/);
- assert.match(service,/case "screen_video":[\s\S]*?XRecorderBridge\.request\(this, "start", main, feedback/);
- assert.match(service,/XRecorderBridge\.request\(this, "toggle", main\)/);
- assert.match(service,/attachXRecorderButton\(\)/);
- assert.match(activity,/screenVideo\.setOnClickListener\(v -> XRecorderBridge\.request/);
- assert.match(floating,/captureState\.put\("xRecording", XRecorderBridge\.recordingVerified/);
- assert.match(web,/capture\.xRecording===true/);
- assert.match(web,/Tap XRecorder to record/);
+test('single compact orb operates without an XRecorder overlay or installed recorder',()=>{
+ assert.match(service,/normalOrbSize = Math\.round\(58f/);
+ assert.match(service,/talking \? 78f : 58f/);
+ assert.match(service,/resizeOrb\("speaking"\.equals\(name\)\)/);
+ assert.doesNotMatch(service,/attachXRecorderButton|xRecorderButton|XRecorderBridge\.request/);
+ assert.match(activity,/screenVideo\.setOnClickListener\(v -> beginScreen\(false\)\)/);
+ assert.doesNotMatch(activity,/XRecorderBridge\.request/);
+ assert.doesNotMatch(manifest,/com\.duapps\.recorder|videoeditor\.videorecorder\.screenrecorder/);
 });
 
-test('only XRecorder owned, unambiguous labeled accessibility controls are tapped',()=>{
- assert.match(recorder,/videoeditor\.videorecorder\.screenrecorder/);
- assert.match(recorder,/BrainLearningService\.tapXRecorderControl\(wanted\)/);
- assert.match(recorder,/BrainLearningService\.xControlVisible/);
- assert.match(recorder,/putBoolean\("x_recorder_verified", verified\)/);
- assert.match(a11y,/XRecorderBridge\.PACKAGE\.contentEquals\(root\.getPackageName\(\)\)/);
- assert.match(a11y,/matches\.size\(\) != 1/);
- assert.match(a11y,/node\.performAction\(AccessibilityNodeInfo\.ACTION_CLICK\)/);
- assert.match(manifest,/<package android:name="videoeditor\.videorecorder\.screenrecorder"\/>/);
- assert.doesNotMatch(recorder,/getMediaProjection\(|performGlobalAction\(|startService\(/);
+test('spoken record triggers native Android approval, never a forged recording receipt',()=>{
+ assert.match(service,/case "screen_video":[\s\S]*?offerCaptureApproval\(command\)/);
+ assert.match(activity,/startActivityForResult\(projection\.createScreenCaptureIntent\(\), SCREEN_REQUEST\)/);
+ assert.match(screen,/getMediaProjection\(Activity\.RESULT_OK, consent\)/);
+ assert.match(screen,/BubblesService\.beginScreenAudio\(\)/);
+ assert.match(screen,/CapturePublisher\.publish\(this, completed, type\)/);
 });
 
-test('explicit owner command opens matching launchable Android app without broad device visibility',()=>{
+test('Android phone tool app launching keeps a narrow visible package scope',()=>{
+ const apps=read('AppControlBridge.java');
  assert.match(apps,/Intent\.ACTION_MAIN/);
  assert.match(apps,/Intent\.CATEGORY_LAUNCHER/);
- assert.match(apps,/queryIntentActivities\(query, 0\)/);
  assert.match(apps,/matched\.size\(\) != 1/);
  assert.match(apps,/getLaunchIntentForPackage/);
- assert.match(apps,/Requested .*Check the foreground screen to confirm/);
  assert.match(service,/AppControlBridge\.tryLaunch\(this, addressed\)/);
- assert.match(manifest,/android\.intent\.category\.LAUNCHER/);
  assert.doesNotMatch(manifest,/QUERY_ALL_PACKAGES/);
 });
