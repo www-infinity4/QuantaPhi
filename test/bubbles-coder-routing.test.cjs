@@ -53,7 +53,7 @@ test('tool buttons invoke actual owner-gated GitHub routes instead of a model cl
  assert.match(source,/\['Check GitHub executor',[^\n]*sendMessage\('check GitHub access'\)/);
  assert.match(source,/\['Run Python sandbox',[^\n]*sendMessage\('run Python'\)/);
  assert.match(source,/\['Check coder runs',[^\n]*sendMessage\('check coder sandbox results'\)/);
- assert.match(source,/action:createRepository\?'create_repository'/);
+ assert.match(source,/let action=createRepository\?'create_repository'/);
  assert.match(source,/result\.error==='github_runtime_credential_missing'/);
  assert.match(source,/Robot Brain has no server-side GitHub credential/);
 });
