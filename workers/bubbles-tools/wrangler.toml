@@ -16,3 +16,7 @@ binding = "AI"
 [[services]]
 binding = "BRAIN"
 service = "infinity-brain-clock"
+
+[[services]]
+binding = "SEARCH"
+service = "orange-brook-a2ac"
