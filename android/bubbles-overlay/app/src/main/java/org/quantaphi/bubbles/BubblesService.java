@@ -128,7 +128,7 @@ public final class BubblesService extends Service {
         try { manager.addView(button, layout); xRecorderButton = button; }
         catch (RuntimeException error) {
             BrainNotes.prefs(this).edit().putString("x_recorder_state",
-                "DU floating control could not open: " + error.getClass().getSimpleName()).apply();
+                "XRecorder floating control could not open: " + error.getClass().getSimpleName()).apply();
         }
     }
     public static final String ACTION_SYNC_ROOM = "org.quantaphi.bubbles.SYNC_ROOM_NOTES";
@@ -882,8 +882,11 @@ public final class BubblesService extends Service {
                     }
                     if (XRecorderBridge.recordingVerified(this)) result = "Recording.";
                     else if ("starting".equals(BrainNotes.prefs(this).getString("x_recorder_phase", ""))) result = "Starting.";
+                    else if (screenActive) result = "Screen capture active.";
                     else if (soundActive) result = "Recording.";
-                    else result = "Not recording.";
+                    else if ("needs_tap".equals(BrainNotes.prefs(this).getString("x_recorder_phase", "")))
+                        result = "XRecorder is ready for its Record button.";
+                    else result = "No recording is verified.";
                     speak(result);
                     break;
                 }
