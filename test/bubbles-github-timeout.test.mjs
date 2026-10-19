@@ -14,7 +14,7 @@ test('direct GitHub creates one durable receipt and responds before a slow opera
   'return class Harness {'+methods+'}');
  let finish,executions=0;
  const gate=new Promise(resolve=>{finish=resolve;});
- const Harness=factory(value=>{assert.match(value,/^www-infinity4\\//);return value;},
+ const Harness=factory(value=>{assert.equal(value,'www-infinity4/QuantaPhi');return value;},
   async env=>env,async()=>{executions++;return gate;},async()=>{throw Error('unexpected agent');});
  const data=new Map(),waited=[];
  const app=new Harness();
@@ -42,9 +42,9 @@ test('direct GitHub creates one durable receipt and responds before a slow opera
 });
 
 test('the website preserves and polls the original request ID; no false merge or deployment claim',()=>{
- assert.match(client,/body:JSON\\.stringify\\(\\{action:'receipt',requestId\\}\\)/);
- assert.match(client,/watchDirectGithubReceipt\\(requestId\\)/);
- assert.match(client,/operation\\.requestId\\|\\|crypto\\.randomUUID\\(\\)/);
- assert.match(client,/Testing, merge and deployment require separate verified receipts/);
- assert.match(worker,/this\\.ctx\\.waitUntil\\(this\\.completeDirectGithub\\(/);
+ assert.ok(client.includes("body:JSON.stringify({action:'receipt',requestId})"));
+ assert.ok(client.includes('watchDirectGithubReceipt(requestId)'));
+ assert.ok(client.includes('operation.requestId||crypto.randomUUID()'));
+ assert.ok(client.includes('Testing, merge and deployment require separate verified receipts'));
+ assert.ok(worker.includes('this.ctx.waitUntil(this.completeDirectGithub('));
 });
