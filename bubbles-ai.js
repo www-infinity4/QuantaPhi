@@ -1647,8 +1647,17 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   else try{
    status.textContent='Checking the direct GitHub connection. Actual receipts will also appear in the color-bot feed.';
    const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
-   let action=createRepository?'create_repository':githubCheck?'capabilities':'assist';
+   const namedWorkflow=request.match(/\b([a-z0-9][a-z0-9_.-]*\.ya?ml)\b/i)?.[1]||'';
+   const workflowIntent=/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
+   const workflowDispatch=workflowIntent&&/\b(?:run|start|trigger|dispatch|rerun|execute)\b/i.test(request);
+   let action=createRepository?'create_repository':githubCheck?'capabilities':
+     workflowIntent?(namedWorkflow&&workflowDispatch?'dispatch_workflow':'list_workflows'):'assist';
    const args={action,repository,request,description:request,mode};
+   if(action==='dispatch_workflow'){
+    args.workflow=namedWorkflow;
+    args.ref=request.match(/\b(?:on|from|at)\s+(?:branch\s+)?([A-Za-z0-9_./-]+)\s+branch\b/i)?.[1]||'main';
+    args.inputs={};
+   }
    if(coderRequest){
     const inspecting=coderRequest.inspect;
     if(inspecting){args.action='list_workflow_runs';args.workflow='bubbles-coder-sandbox.yml';}
@@ -1667,6 +1676,15 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     :(result.error||result.summary||'');
    workEvidence='Direct GitHub: '+(result.status||'unknown')+'. '+githubDetail+(result.next?' '+result.next:'')+(result.url?'\n'+result.url:'');
    for(const receipt of result.receipts||[])if(receipt.url)workEvidence+='\n'+receipt.status+': '+receipt.url;
+   if(Array.isArray(result.workflows)){
+    workEvidence+='\nGitHub Actions workflows: '+(result.workflows.length
+     ?result.workflows.slice(0,15).map(w=>w.path+' ('+w.state+')').join('; '):'None returned by GitHub.');
+   }
+   if(result.status==='credential_verified_read')
+    workEvidence+='\nRepository push permission: '+String(result.push)+'. Actions access requires an actual list or dispatch receipt.';
+   if(result.status==='repository_created'&&result.environment)
+    workEvidence+='\nPython/Node workflow: '+result.environment.status
+     +(result.environment.error?' ('+result.environment.error+')':'')+'.';
    if(Array.isArray(result.runs)){
     const recent=result.runs.slice(0,5);
     workEvidence+='\nBubbles Coder Linux runs: '+(recent.length?recent.map(run=>{
@@ -1676,7 +1694,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     workEvidence+='\nOnly a completed successful run confirms that the script ran. See the run receipt for output.';
    }
    if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted')
-    workEvidence+='\nLinux job requested. This is an acceptance receipt, not an execution result. Ask me to check coder sandbox runs for actual status.';
+    workEvidence+='\nGitHub accepted the workflow dispatch. This is not an execution result; check Actions runs for the actual status.';
    workEvidence+='\nRequest '+result.requestId+'. Testing, merge and deployment require their own verified receipts.';
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
  }
