@@ -113,7 +113,7 @@ public final class MainActivity extends Activity {
         Button chromeSite = new Button(this);
         chromeSite.setText("Chrome · install or open Bubbles website");
         chromeSite.setOnClickListener(v -> state.setText(AppControlBridge.openChromeSite(
-            this, "https://quantaphi.org/bubbles.html", "Bubbles website in Chrome")));
+            this, "https://quantaphi.org/bubbles-chrome.html", "Bubbles website in Chrome")));
         layout.addView(chromeSite);
         Button phoneTool = new Button(this);
         phoneTool.setText("Allow IBM / Gemini phone tool for 10 minutes");
