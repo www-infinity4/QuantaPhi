@@ -29,6 +29,7 @@ final class BubblesVoicePicker {
     private final Activity activity;
     private final Consumer<String> status;
     private TextToSpeech preview;
+    private String selectedEnginePackage;
 
     private BubblesVoicePicker(Activity activity, Consumer<String> status) {
         this.activity = activity;
@@ -39,17 +40,93 @@ final class BubblesVoicePicker {
         new BubblesVoicePicker(activity, status).load();
     }
 
+    /**
+     * Select the installed HayaiTTS neural engine for Bubbles alone.
+     * If absent, offer the verified open-source installer page on a user tap.
+     */
+    static void enableFreeNeural(Activity activity, Consumer<String> status) {
+        if (!NeuralSpeechEngine.hayaiAvailable(activity)) {
+            new AlertDialog.Builder(activity)
+                .setTitle("Free offline neural voice")
+                .setMessage("HayaiTTS supplies local Piper neural speech. Install its signed APK from the official GitHub releases, then return and tap Enable again. No account or paid API is required.")
+                .setPositiveButton("Open GitHub releases", (dialog, which) -> {
+                    try {
+                        activity.startActivity(new Intent(Intent.ACTION_VIEW,
+                            android.net.Uri.parse("https://github.com/HayaiApp/HayaiTTS/releases")));
+                    } catch (Exception error) {
+                        status.accept("Could not open the HayaiTTS release page.");
+                    }
+                })
+                .setNegativeButton("Not now", null).show();
+            return;
+        }
+        status.accept("Checking local neural voice before selecting it…");
+        final TextToSpeech[] candidate = new TextToSpeech[1];
+        TextToSpeech.OnInitListener init = result -> new Handler(Looper.getMainLooper()).post(() -> {
+            TextToSpeech engine = candidate[0];
+            if (engine == null) return;
+            if (result != TextToSpeech.SUCCESS
+                || !NeuralSpeechEngine.hayaiAvailable(activity)) {
+                status.accept("HayaiTTS is installed but did not start. Your original voice remains selected.");
+                engine.shutdown();
+                return;
+            }
+            boolean english = false;
+            try {
+                Set<Voice> voices = engine.getVoices();
+                if (voices != null) for (Voice v : voices) {
+                    if (v != null && v.getLocale() != null
+                        && "en".equals(v.getLocale().getLanguage())
+                        && !v.isNetworkConnectionRequired()
+                        && engine.setVoice(v) == TextToSpeech.SUCCESS) {
+                        english = true;
+                        break;
+                    }
+                }
+            } catch (RuntimeException ignored) { /* Do not change saved choice. */ }
+            if (!english) {
+                status.accept("Install an offline English voice inside HayaiTTS first. Original voice preserved.");
+                engine.shutdown();
+                return;
+            }
+            if (!NeuralSpeechEngine.useEngine(activity, NeuralSpeechEngine.HAYAI_PACKAGE)) {
+                status.accept("Could not save the voice engine; original voice preserved.");
+                engine.shutdown();
+                return;
+            }
+            engine.setPitch(1f);
+            engine.setSpeechRate(1f);
+            int spoken=engine.speak("Hello. I am Bubbles, using a local neural voice.",
+                TextToSpeech.QUEUE_FLUSH, null, "bubbles-neural-preview");
+            status.accept(spoken == TextToSpeech.SUCCESS
+                ? "Neural voice selected for Bubbles only. Preview playing."
+                : "Neural voice selected, but preview playback could not start.");
+            try {
+                activity.startService(new Intent(activity, BubblesService.class)
+                    .setAction(BubblesService.ACTION_REFRESH_VOICE));
+            } catch (Exception error) {
+                status.accept("Neural voice saved. Restart Bubbles to apply it.");
+            }
+            new Handler(Looper.getMainLooper()).postDelayed(engine::shutdown, 4500);
+        });
+        candidate[0] = new TextToSpeech(activity, init, NeuralSpeechEngine.HAYAI_PACKAGE);
+    }
+
     private void load() {
         status.accept("Loading voices installed on this phone…");
-        preview = new TextToSpeech(activity, result -> new Handler(Looper.getMainLooper()).post(() -> {
+        String engine = NeuralSpeechEngine.preferredEngine(activity);
+        selectedEnginePackage = engine;
+        TextToSpeech.OnInitListener listener = result -> new Handler(Looper.getMainLooper()).post(() -> {
             if (preview == null) return;
             if (result != TextToSpeech.SUCCESS) {
-                status.accept("Android's speech engine did not initialize. Try another installed TTS engine.");
+                status.accept("Selected voice engine could not initialize. Bubbles will use Android's default.");
                 close();
                 return;
             }
             showVoices();
-        }));
+        });
+        preview = engine == null ? new TextToSpeech(activity, listener)
+                : new TextToSpeech(activity, listener, engine);
     }
 
     private void showVoices() {
@@ -82,7 +159,7 @@ final class BubblesVoicePicker {
             labels[i + 1] = (selected.equals(v.getName()) ? "✓ " : "") + label;
         }
         new AlertDialog.Builder(activity)
-            .setTitle("Choose Bubbles voice · " + preview.getDefaultEngine())
+            .setTitle("Choose Bubbles voice · " + (selectedEnginePackage == null ? preview.getDefaultEngine() : selectedEnginePackage))
             .setItems(labels, (dialog, index) -> select(index == 0 ? null : voices.get(index - 1)))
             .setNegativeButton("Cancel", (dialog, which) -> close())
             .setOnCancelListener(dialog -> close())

@@ -37,3 +37,16 @@ Model choice must be independent of tool privileges. An LLM choosing “call too
 - A future on-device model is **only supported** after a verified installed model file, license, Android ABI, memory tests, and a real Motorola playback/recognition receipt.
 
 References: https://github.com/k2-fsa/sherpa-onnx and https://k2-fsa.github.io/sherpa/onnx/tts/
+
+## v0.47: first real native neural engine handoff
+
+Bubbles' Android APK can now use the installed `HayaiApp/HayaiTTS` offline neural TTS provider **directly without modifying the Android-wide default TTS setting**.
+
+- Tap **Enable free neural voice** in Bubbles settings. The app checks Android's actual `android.intent.action.TTS_SERVICE` registration for `dev.ahmedmohamed.hayaitts`.
+- If HayaiTTS is not installed, a confirmation dialog offers its official GitHub release page. Install the separately signed app deliberately, then return to Bubbles and tap the same button.
+- If installed, Bubbles starts the engine, selects a locally available English voice, saves its engine package to Bubbles-only preferences, previews a sample, and refreshes the running Bubbles service.
+- Native `BubblesService` now initializes `TextToSpeech` with the saved explicit engine package rather than implicitly using the global system default. Existing chosen voice metadata remains engine-scoped, and the existing Bubbles **Choose and test Bubbles voice** control lists the selected engine's voices.
+- If the selected engine disappears or initialization fails, Bubbles reverts to Android's default TTS engine. Voice recognition (offline Vosk), foreground microphone, voice turns, and Robot Brain tools do not change.
+- No neural models are copied into QuantaPhi, no GPL third-party code is bundled, no payment token is introduced, and no personal voice samples are uploaded by this integration. Each open-source provider retains its own package and license.
+
+This is real **neural TTS integration**, conditional on the separately installed engine. It is not yet a built-in Bubbles neural synthesizer, a low-latency streaming speech-to-speech model, or proof of actual Motorola playback. Measure latency, interruptions, and memory on a physical device before claiming GPT-Live-like speech quality. Do not uninstall an older Bubbles APK or clear its data to test.

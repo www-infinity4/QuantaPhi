@@ -354,11 +354,21 @@ public final class BubblesService extends Service {
         TextToSpeech previous = tts;
         tts = null;
         if (previous != null) { previous.stop(); previous.shutdown(); }
-        tts = new TextToSpeech(this, result -> main.post(() -> {
+        final String selectedEngine = NeuralSpeechEngine.preferredEngine(this);
+        TextToSpeech.OnInitListener onInit = result -> main.post(() -> {
             // Android TTS may finish initializing after a newer engine was
             // selected. The old callback must not configure the new engine.
             if (engineGeneration != ttsEngineGeneration || tts == null) return;
             if (result != TextToSpeech.SUCCESS) {
+                if (selectedEngine != null) {
+                    // Neural engine may have been installed but become unusable.
+                    // Never take down listening; fall back to the default voice.
+                    NeuralSpeechEngine.useAndroidDefault(this);
+                    BrainNotes.prefs(this).edit().putString("last_error",
+                            "Selected neural voice unavailable; reverted to Android voice").apply();
+                    reloadSpeechEngine();
+                    return;
+                }
                 pendingWebsiteSpeech.clear(); // The text is still in website chat.
                 BrainNotes.prefs(this).edit().putString("last_error",
                     "Android speech engine could not initialize; choose an installed voice").apply();
@@ -371,7 +381,7 @@ public final class BubblesService extends Service {
             String savedEngine = getSharedPreferences(BubblesVoicePicker.PREFS, MODE_PRIVATE)
                 .getString(BubblesVoicePicker.ENGINE, "");
             boolean selected = false;
-            if (!savedName.isEmpty() && savedEngine.equals(tts.getDefaultEngine())) {
+            if (!savedName.isEmpty() && savedEngine.equals(selectedEngine == null ? tts.getDefaultEngine() : selectedEngine)) {
                 try {
                     java.util.Set<android.speech.tts.Voice> available = tts.getVoices();
                     if (available != null) for (android.speech.tts.Voice voice : available) {
@@ -419,7 +429,9 @@ public final class BubblesService extends Service {
                     "Android speech setup failed: " + error.getClass().getSimpleName()).apply();
                 if (connected && !muted) state("error", 0);
             }
-        }));
+        });
+        tts = selectedEngine == null ? new TextToSpeech(this, onInit)
+                : new TextToSpeech(this, onInit, selectedEngine);
     }
 
     @Override public int onStartCommand(Intent intent, int flags, int startId) {
