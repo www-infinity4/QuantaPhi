@@ -8,6 +8,7 @@ const chat=source('bubbles-ai.js');
 const ui=source('bubbles-unified.css');
 const home=source('index.html');
 const studio=source('bubbles.html');
+const chrome=source('bubbles-chrome.html');
 const overlay=source('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/FloatingOracleWindow.java');
 
 test('site, standalone and floating APK share ONE QuantaPhi chat code path',()=>{
@@ -19,13 +20,27 @@ test('site, standalone and floating APK share ONE QuantaPhi chat code path',()=>
 });
 
 test('one stylesheet is last on both site entry points, including the APK WebView',()=>{
-  for(const html of [home,studio]){
-    assert.match(html,/href="\/bubbles-unified\.css\?v=20261016-overhaul1"/);
+  for(const html of [home,studio,chrome]){
+    assert.match(html,/href="\/bubbles-unified\.css\?v=20261019-blueorb1"/);
     assert.ok(html.indexOf('bubbles-native-chat.css') < html.indexOf('bubbles-unified.css'));
   }
   assert.match(ui,/html\.bubbles-native-overlay \.ba-panel:not\(\[hidden\]\)/);
   assert.match(ui,/html\.bubbles-native-overlay \.ba-panel \.ba-thread/);
   assert.match(ui,/overflow-y:auto;overflow-x:hidden/);
+});
+
+test('blue glass orb survives Oracle button themes and animated voice states remain',()=>{
+  const orb=source('bubbles-ai.css');
+  for(const selector of ['body.oracle-octaves-page button.ba-launcher','body.oracle-octaves-home button.ba-launcher']){
+    assert.ok(ui.includes(selector),'Missing higher-specificity blue orb protection: '+selector);
+  }
+  assert.match(ui,/--bu-orb-blue:radial-gradient/);
+  assert.match(ui,/background:var\(--bu-orb-blue\)/);
+  for(const state of ['thinking','hearing']) assert.ok(ui.includes('.ba-launcher[data-state="'+state+'"]'));
+  for(const state of ['listening','speaking']) assert.ok(orb.includes('[data-state="'+state+'"]'));
+  assert.match(orb,/animation:ba-breathe/);
+  assert.match(orb,/animation:ba-think/);
+  assert.match(chat,/launcher\.dataset\.state=state/);
 });
 
 test('paired phone voice yields website orb without adding a second chat view',()=>{
