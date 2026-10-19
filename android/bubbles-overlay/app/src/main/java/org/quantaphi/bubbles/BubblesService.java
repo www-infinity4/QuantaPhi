@@ -381,7 +381,7 @@ public final class BubblesService extends Service {
             String savedEngine = getSharedPreferences(BubblesVoicePicker.PREFS, MODE_PRIVATE)
                 .getString(BubblesVoicePicker.ENGINE, "");
             boolean selected = false;
-            if (!savedName.isEmpty() && savedEngine.equals(tts.getCurrentEngine())) {
+            if (!savedName.isEmpty() && savedEngine.equals(selectedEngine == null ? tts.getDefaultEngine() : selectedEngine)) {
                 try {
                     java.util.Set<android.speech.tts.Voice> available = tts.getVoices();
                     if (available != null) for (android.speech.tts.Voice voice : available) {
