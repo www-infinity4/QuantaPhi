@@ -1,0 +1,43 @@
+name: Bubbles live MCP smoke
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/bubbles-live-mcp-smoke.yml'
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify deployed Bubbles Worker and MCP read tools
+        shell: bash
+        run: |
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          const host='https://bubbles-tools.marvaseater.workers.dev';
+          const headers={Origin:'https://quantaphi.org','Content-Type':'application/json'};
+          const get=async(path)=>{const res=await fetch(host+path,{signal:AbortSignal.timeout(15000)});return {status:res.status,data:await res.json()}};
+          const post=async(path,body,extra={})=>{const res=await fetch(host+path,{method:'POST',headers:{...headers,...extra},body:JSON.stringify(body),signal:AbortSignal.timeout(30000)});return {status:res.status,data:await res.json()}};
+          const h=await get('/health');
+          console.log('HEALTH',h.status,h.data.service,h.data.tools?.mcp);
+          assert.equal(h.status,200);
+          assert.equal(h.data.service,'bubbles-tools');
+          assert.match(h.data.tools?.mcp||'',/read-only/);
+          const l=await post('/v1/assist',{request:'Show the MCP tools connected to Bubbles'});
+          console.log('CATALOG',l.status,l.data.receipt?.tool,l.data.receipt?.status);
+          assert.equal(l.status,200);
+          assert.equal(l.data.receipt?.tool,'mcp.catalog');
+          assert.match(l.data.output,/resonance_calculate/);
+          const r=await post('/v1/assist',{request:'Calculate resonance',tool:'resonance.calculate',args:{l:10,lUnit:'uH',c:22,cUnit:'pF'}});
+          console.log('RESONANCE',r.status,r.data.receipt?.tool,r.data.receipt?.status);
+          assert.equal(r.status,200);
+          assert.equal(r.data.receipt?.tool,'resonance.calculate');
+          assert.equal(r.data.receipt?.status,'complete');
+          assert.equal(r.data.receipt?.repositoryActionsVerified,false);
+          const denied=await post('/mcp',{jsonrpc:'2.0',id:1,method:'tools/list'},{Accept:'application/json, text/event-stream','MCP-Protocol-Version':'2025-06-18'});
+          console.log('MCP AUTH GATE',denied.status,denied.data.error?.message);
+          assert.ok([401,503].includes(denied.status));
+          console.log('PASS live gateway, MCP catalog, deterministic tool receipt, authorization');
+          JS
