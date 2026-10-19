@@ -87,3 +87,37 @@ separately in each first-party browser/WebView. Sync does not merge owner Robot
 Brain credentials or grant visitors repository writes. Native fallback transcripts
 from a WebView outage still live in the Android app's private storage and are not
 automatically imported by this release. Real-device verification is required.
+
+
+## Android recorder and owner GitHub sign-in (staged October 18, 2026)
+
+The shared Bubbles chat includes **Record** and **Save** controls in its Android
+floating interface. A spoken "Bubbles, record" follows the same native action:
+the foreground Bubbles service requests Android MediaProjection consent and,
+after user approval, records an MP4 with MediaRecorder. It attempts to open
+the OS consent screen directly when the overlay permission permits; otherwise
+it shows a real notification that the user can tap. The system consent dialog
+is never auto-clicked or bypassed. "Stop recording" stops that session and
+exports the MP4 through MediaStore to **Movies/Bubbles**. Recording has a visible
+notification/stop action. This staged video-only path deliberately does not
+acquire the microphone, allowing the Vosk assistant to continue listening.
+Microphone audio inside the MP4 is NOT yet supported, and device behavior
+remains unverified until an actual install/device test.
+
+The owner's **Sign in to GitHub** control is inside the same website/APK chat
+Connections section. It calls the separately authenticated Robot Brain route
+`POST /owner/github/auth` with `start`, `poll`, `status` or `disconnect`.
+The server starts GitHub App device authorization; only the one-time code
+reaches the WebView. Once GitHub verifies the `www-infinity4` account, the
+Worker stores the resulting user token encrypted and time-bounded. This does
+NOT grant arbitrary app, Cloudflare, wallet or Android authority. GitHub
+installations and individual repository/Actions scopes still apply.
+
+**Production blockers:** this sign-in requires `GITHUB_OAUTH_CLIENT_ID` bound
+to the Brain Worker and a GitHub App with device authorization enabled.
+Bubbles' existing verified Robot Brain owner session is also required to call
+the authorization route. Cloudflare binding inspection on October 18 showed
+that `GITHUB_OAUTH_CLIENT_ID` was NOT configured. Do not report the button
+as a working production login until that is corrected and a real connection
+and repository-operation receipt are recorded. The preview APK's separate
+security hold still applies; passing source CI does not lift that hold.
