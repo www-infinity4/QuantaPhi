@@ -256,29 +256,12 @@ public final class MainActivity extends Activity {
         naturalVoice.setText("Choose and test Bubbles voice");
         naturalVoice.setOnClickListener(v -> BubblesVoicePicker.show(this, state::setText));
         layout.addView(naturalVoice);
-        Button androidTts = new Button(this);
-        androidTts.setText("Change Android speech engine");
-        androidTts.setOnClickListener(v -> {
-            try {
-                startActivity(new Intent("com.android.settings.TTS_SETTINGS"));
-            } catch (Exception error) {
-                state.setText("Open Android Settings → Accessibility → Text-to-speech output to select a voice engine.");
-            }
-        });
-        layout.addView(androidTts);
-        Button installNeural = new Button(this);
-        installNeural.setText("Optional: install open-source neural voices");
-        installNeural.setOnClickListener(v -> {
-            try {
-                startActivity(new Intent(Intent.ACTION_VIEW,
-                        android.net.Uri.parse("https://github.com/HayaiApp/HayaiTTS/releases")));
-            } catch (Exception error) {
-                state.setText("Could not open the open-source voice engine repository.");
-            }
-        });
-        layout.addView(installNeural);
+        Button neuralVoice = new Button(this);
+        neuralVoice.setText("Enable free neural voice");
+        neuralVoice.setOnClickListener(v -> BubblesVoicePicker.enableFreeNeural(this, state::setText));
+        layout.addView(neuralVoice);
         TextView voiceNotice = new TextView(this);
-        voiceNotice.setText("Choose an installed speech voice, hear a sample, and use it for Bubbles. Change the Android engine first to add HayaiTTS voices. These are not licensed ChatGPT Live voices.");
+        voiceNotice.setText("Bubbles can speak through a free offline neural engine without changing Android's default voice. Install HayaiTTS if prompted; Bubbles keeps its original voice if unavailable.");
         voiceNotice.setTextColor(Color.rgb(101, 83, 111));
         layout.addView(voiceNotice);
 
