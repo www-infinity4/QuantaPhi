@@ -255,7 +255,7 @@ public final class MainActivity extends Activity {
         layout.addView(advancedCapture);
         TextView captureInfo = new TextView(this);
         captureInfo.setText("Listening is separate from recording. Screen video now opens the installed original XRecorder, "
-                + "using its floating control for Start/Stop. Bubbles does not share Android screen-capture permission with DU. "
+                + "using its floating control for Start/Stop. Bubbles does not share Android screen-capture permission with XRecorder. "
                 + "Screenshot capture and sound-only recording remain native.");
         captureInfo.setTextColor(Color.rgb(101, 83, 111));
         advancedCapture.addView(captureInfo);
