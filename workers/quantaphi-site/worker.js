@@ -1,5 +1,5 @@
 import {videoAPI} from './video-api.mjs';
-const EDGE_VERSION = 'quantaphi-org-service-20261019-chat-repair-v2';
+const EDGE_VERSION = 'quantaphi-org-service-20261019-chat-repair-v3';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -92,6 +92,7 @@ const routeFor = incoming => {
  if (path === '/QuantaPhi' || path === '/QuantaPhi/' || path === '/QuantaPhi/index.html') return { redirect: '/' + incoming.search };
  if (path === '/' || path === '/index.html') return { repo: 'QuantaPhi', sourcePath: '/index.html', publicPath: '/' };
  if (path === '/story') return { redirect: '/story/' + incoming.search };
+ if (path === '/storybook/' || path === '/storybook/index.html') return { repo: 'QuantaPhi', sourcePath: '/storybook/index.html', publicPath: '/storybook/' };
  if (path === '/story/' || path === '/story/index.html') return { repo: 'QuantaPhi', sourcePath: '/story/index.html', publicPath: '/story/' };
  if (path === '/platinum') return { redirect: '/platinum/' + incoming.search };
  if (path === '/platinum/' || path === '/platinum/index.html') return { repo: 'QuantaPhi', sourcePath: '/platinum/index.html', publicPath: '/platinum/' };
@@ -411,7 +412,9 @@ export default {
   if (raw && upstream.ok && RAW_TYPES[extension]) out.set('Content-Type', RAW_TYPES[extension]);
   if (raw) { out.delete('Content-Security-Policy'); out.delete('Content-Disposition'); }
   // Upstream GitHub headers prohibit even our own embedded suite pages.
-  if (['Bitcoin-Crusher','ShopLC','Alien-Radio'].includes(route.repo) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
+  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html'].includes(route.sourcePath))
+   || (['Oracle-Octaves','C13b0','Omni-Phi','News-Phi','Mckee-Coins-Inc','Omni-TV','Builder-Reserve'].includes(route.repo) && route.sourcePath === '/index.html');
+  if ((registeredChatCard || ['Bitcoin-Crusher','ShopLC','Alien-Radio'].includes(route.repo)) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
   if (textual || !upstream.ok) out.set('Cache-Control', 'no-cache, max-age=0, must-revalidate');
   const contentType = out.get('Content-Type') || '';
   const infinityHtml = route.repo === 'C13b0' && /text\/html/i.test(contentType);

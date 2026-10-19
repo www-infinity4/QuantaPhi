@@ -45,7 +45,7 @@ test('existing account, download and live-GPT source pins are preserved',()=>{
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-connections.mjs'},url),'5314715a3a403b548f54440dd7975c7dd7972390');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/apk-downloads.js'},url),'6643d2727f5be56dd0f1b217f532099899833bca');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-gpt-live.js'},url),'40dc5b89ec8ae53804daa7fae6184a904b73fab0');
- assert.match(source,/quantaphi-org-service-20261019-chat-repair-v2/);
+ assert.match(source,/quantaphi-org-service-20261019-chat-repair-v3/);
 });
 
 test('versioned chat repair assets use one tested immutable commit, while future main stays current',()=>{
