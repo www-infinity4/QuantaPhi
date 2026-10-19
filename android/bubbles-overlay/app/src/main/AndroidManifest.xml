@@ -13,6 +13,8 @@
         <package android:name="com.lemon.lvoverseas"/>
         <package android:name="com.android.chrome"/>
         <intent><action android:name="android.speech.RecognitionService"/></intent>
+        <intent><action android:name="android.intent.action.TTS_SERVICE"/></intent>
+        <package android:name="dev.ahmedmohamed.hayaitts"/>
         <intent><action android:name="android.media.action.VIDEO_CAPTURE"/></intent>
     </queries>
     <application android:label="${appTitle}" android:theme="@android:style/Theme.Material.Light.NoActionBar"
