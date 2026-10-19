@@ -73,7 +73,8 @@ public final class MainActivity extends Activity {
             }
             if (!BubblesService.isSessionRunning()) checkAndStart();
             else startForegroundService(new Intent(this, BubblesService.class)
-                .setAction(BubblesService.ACTION_OPEN_CHAT));
+                .setAction(BubblesService.ACTION_SCREEN_FOLLOW_ON));
+            state.setText("Screen follow uses Accessibility to read the fresh screen with each Bubbles request. Say 'stop screen sharing' to turn it off.");
         });
         refreshRecommendedSetup = () -> recommended.setText(!canTalk()
             ? "Recommended setup · enable Bubbles voice"
