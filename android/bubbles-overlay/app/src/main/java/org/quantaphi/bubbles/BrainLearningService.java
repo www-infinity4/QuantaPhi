@@ -370,6 +370,117 @@ public final class BrainLearningService extends AccessibilityService {
             return "The Android screen action failed; no success was confirmed.";
         } finally { root.recycle(); }
     }
+
+    /** Only the currently foreground, owner-visible app may be controlled. */
+    static String workflowForegroundPackage() {
+        BrainLearningService service = active.get();
+        if (service == null) return "";
+        AccessibilityNodeInfo root = service.currentRoot();
+        if (root == null) return "";
+        try { return String.valueOf(root.getPackageName()); }
+        finally { root.recycle(); }
+    }
+
+    /** Deterministic label matching, never screen coordinates or model guesses. */
+    private void workflowMatches(AccessibilityNodeInfo node, String target,
+            ArrayList<AccessibilityNodeInfo> out, boolean editableOnly, int depth) {
+        if (node == null || depth > 26 || out.size() > 2 || !node.isVisibleToUser()
+                || node.isPassword()) return;
+        if (node.isEnabled() && (!editableOnly || node.isEditable())) {
+            String needle = target.trim().toLowerCase(Locale.ROOT);
+            CharSequence text = editableOnly ? null : node.getText();
+            CharSequence hint = node.getHintText();
+            CharSequence desc = node.getContentDescription();
+            String[] labels = new String[] {
+                text == null ? "" : text.toString().trim().toLowerCase(Locale.ROOT),
+                hint == null ? "" : hint.toString().trim().toLowerCase(Locale.ROOT),
+                desc == null ? "" : desc.toString().trim().toLowerCase(Locale.ROOT)
+            };
+            for (String label : labels) {
+                if (!label.isEmpty() && (needle.equals(label) || label.startsWith(needle + " "))) {
+                    out.add(AccessibilityNodeInfo.obtain(node));
+                    break;
+                }
+            }
+        }
+        for (int i = 0; i < node.getChildCount() && out.size() <= 2; i++) {
+            AccessibilityNodeInfo child = node.getChild(i);
+            if (child != null) try { workflowMatches(child, target, out, editableOnly, depth + 1); }
+            finally { child.recycle(); }
+        }
+    }
+
+    static boolean workflowLabelVisible(String target) {
+        BrainLearningService service = active.get();
+        if (service == null || ScreenAwareness.sensitive(target)) return false;
+        AccessibilityNodeInfo root = service.currentRoot();
+        if (root == null) return false;
+        ArrayList<AccessibilityNodeInfo> matches = new ArrayList<>();
+        try {
+            service.workflowMatches(root, target, matches, false, 0);
+            return matches.size() == 1;
+        } finally {
+            for (AccessibilityNodeInfo item : matches) item.recycle();
+            root.recycle();
+        }
+    }
+
+    /** Poll post-action text without sending a second keystroke. */
+    static boolean workflowTypedValueVisible(String target, String expected) {
+        BrainLearningService service = active.get();
+        if (service == null || ScreenAwareness.sensitive(target)) return false;
+        AccessibilityNodeInfo root = service.currentRoot();
+        if (root == null) return false;
+        ArrayList<AccessibilityNodeInfo> matches = new ArrayList<>();
+        try {
+            service.workflowMatches(root, target, matches, true, 0);
+            return matches.size() == 1 && matches.get(0).getText() != null
+                && expected.contentEquals(matches.get(0).getText());
+        } finally {
+            for (AccessibilityNodeInfo item : matches) item.recycle();
+            root.recycle();
+        }
+    }
+
+    static String workflowType(String target, String value) {
+        BrainLearningService service = active.get();
+        if (service == null) return "ACCESS_OFF";
+        if (ScreenAwareness.sensitive(target) || value == null || value.trim().isEmpty()
+                || value.length() > 160) return "FIELD_BLOCKED";
+        AccessibilityNodeInfo root = service.currentRoot();
+        if (root == null) return "FIELD_NOT_FOUND";
+        ArrayList<AccessibilityNodeInfo> matches = new ArrayList<>();
+        try {
+            service.workflowMatches(root, target, matches, true, 0);
+            if (matches.isEmpty()) return "FIELD_NOT_FOUND";
+            if (matches.size() != 1) return "FIELD_AMBIGUOUS";
+            AccessibilityNodeInfo item = matches.get(0);
+            int inputType = item.getInputType();
+            int typeClass = inputType & android.text.InputType.TYPE_MASK_CLASS;
+            int variation = inputType & android.text.InputType.TYPE_MASK_VARIATION;
+            if (item.isPassword()
+                    || (typeClass == android.text.InputType.TYPE_CLASS_TEXT
+                        && (variation == android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
+                            || variation == android.text.InputType.TYPE_TEXT_VARIATION_WEB_PASSWORD
+                            || variation == android.text.InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD))
+                    || (typeClass == android.text.InputType.TYPE_CLASS_NUMBER
+                        && variation == android.text.InputType.TYPE_NUMBER_VARIATION_PASSWORD))
+                return "FIELD_BLOCKED";
+            android.os.Bundle data = new android.os.Bundle();
+            data.putCharSequence(AccessibilityNodeInfo.ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE, value);
+            boolean sent = item.performAction(AccessibilityNodeInfo.ACTION_SET_TEXT, data);
+            if (!sent) return "TYPE_REFUSED";
+            // Confirmation is local; do not include typed contents in receipts.
+            if (item.refresh() && item.getText() != null && value.contentEquals(item.getText()))
+                return "TYPE_VERIFIED";
+            return "TYPE_UNVERIFIED";
+        } catch (RuntimeException error) { return "TYPE_REFUSED"; }
+        finally {
+            for (AccessibilityNodeInfo item : matches) item.recycle();
+            root.recycle();
+        }
+    }
+
     private AccessibilityNodeInfo findScrollable(AccessibilityNodeInfo node, int depth) {
         if (node == null || depth > 25 || !node.isVisibleToUser() || node.isPassword()) return null;
         if (node.isScrollable()) return AccessibilityNodeInfo.obtain(node);

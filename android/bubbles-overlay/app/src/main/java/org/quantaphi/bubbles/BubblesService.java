@@ -99,6 +99,39 @@ public final class BubblesService extends Service {
             Pattern.CASE_INSENSITIVE);
 
     private final Handler main = new Handler(Looper.getMainLooper());
+    private SpokenWorkflowRunner workflowRunner;
+    private boolean workflowTyped;
+    private boolean handleWorkflowRequest(String addressed, boolean typed) {
+        if (SpokenWorkflowPlan.stopCommand(addressed)) {
+            if (workflowRunner != null) workflowRunner.cancel();
+            else screenStatus("No UI job is running.", typed);
+            return true;
+        }
+        if (SpokenWorkflowPlan.statusCommand(addressed)) {
+            screenStatus(workflowRunner == null ? "No UI job started." : workflowRunner.status(), typed);
+            return true;
+        }
+        SpokenWorkflowPlan plan = SpokenWorkflowPlan.parse(addressed);
+        if (plan == null) {
+            // Do not forward malformed phone-control scripts for an AI to guess.
+            if (SpokenWorkflowPlan.looksLikeSequence(addressed)
+                && addressed.matches("(?is)^(?:open|launch|tap|click|press|type|enter|scroll|wait)\\b.*")) {
+                screenStatus("I couldn't read each step. Say: open Chrome then tap Search then type cats into Search.", typed);
+                return true;
+            }
+            return false;
+        }
+        workflowTyped = typed;
+        if (workflowRunner == null) workflowRunner = new SpokenWorkflowRunner(this, main, (message, terminal) -> {
+            OracleChatActivity.append(this, "Oracle", message);
+            BrainNotes.prefs(this).edit().putString("last_reply", message).apply();
+            if (!workflowTyped && connected && !muted
+                    && (terminal || message.startsWith("UI job started."))) speak(message);
+        });
+        workflowRunner.start(plan);
+        return true;
+    }
+
     private final ExecutorService network = Executors.newSingleThreadExecutor();
     private WindowManager manager;
     private WindowManager.LayoutParams bubbleLayout;
@@ -759,6 +792,7 @@ public final class BubblesService extends Service {
         }
     }
     private void muteSession() {
+        if (workflowRunner != null && workflowRunner.isRunning()) workflowRunner.cancel();
         if (liveMicrophoneOwned && oracleWindow != null) oracleWindow.stopLiveCall();
         screenSharing = false;
         muted = true;
@@ -857,6 +891,7 @@ public final class BubblesService extends Service {
         // visible foreground session. Real gated speech needs no wake word.
         if (!typed && addressed.length() < 3) return;
         BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
+        if (directed && handleWorkflowRequest(addressed, false)) return;
         if (SimNetworkCommands.matches(addressed)) {
             screenStatus(CellularInspector.capture(this), false);
             return;
@@ -1055,6 +1090,7 @@ public final class BubblesService extends Service {
             }
             return;
         }
+        if (handleWorkflowRequest(text, true)) return;
         if (SimNetworkCommands.matches(text)) {
             screenStatus(CellularInspector.capture(this), true);
             return;
@@ -1288,6 +1324,7 @@ public final class BubblesService extends Service {
 
     @Override public IBinder onBind(Intent intent) {return null;}
     @Override public void onDestroy() {
+        if (workflowRunner != null && workflowRunner.isRunning()) workflowRunner.cancel();
         sessionRunning = false;
         screenSharing = false;
         // Android playback capture cannot outlive this user's Bubbles foreground session.
