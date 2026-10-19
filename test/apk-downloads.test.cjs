@@ -35,3 +35,27 @@ test('select newest immutable versioned Bubbles APK rather than stale rolling al
  assert.equal(download.status,200);
  assert.match(download.headers.get('Content-Disposition'),/Bubbles-v0\.46\.0-Preview5-Android12\.apk/);
 });
+
+test('homepage download button uses the exact verified immutable APK instead of the streaming proxy',async()=>{
+ const script=fs.readFileSync('apk-downloads.js','utf8');
+ const apk='https://github.com/www-infinity4/QuantaPhi/releases/download/bubbles-preview-current/Bubbles-v0.46.0-Preview5-Android12.apk';
+ const link={href:'/downloads/bubbles.apk',title:'',removeAttribute(name){delete this[name]},setAttribute(name,value){this[name]=value}};
+ const label={textContent:''};
+ const document={querySelectorAll(selector){return selector==='[data-apk-download="bubbles"]'?[link]:selector==='[data-apk-version="bubbles"]'?[label]:[]}};
+ const fetch=async()=>({ok:true,json:async()=>({bubbles:{available:true,name:'Bubbles',version:'0.46.0',publishedAt:'2026-10-19T21:03:11Z',size:85221500,url:apk}})});
+ vm.runInNewContext(script,{document,fetch,URL});
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(link.href,apk);
+ assert.match(label.textContent,/v0\.46\.0/);
+ assert.match(link.title,/v0\.46\.0/);
+});
+
+test('homepage download refuses a foreign APK link and retains first-party proxy fallback',async()=>{
+ const script=fs.readFileSync('apk-downloads.js','utf8');
+ const link={href:'',removeAttribute(name){delete this[name]},setAttribute(name,value){this[name]=value}};
+ const document={querySelectorAll(selector){return selector==='[data-apk-download="bubbles"]'?[link]:[]}};
+ const fetch=async()=>({ok:true,json:async()=>({bubbles:{available:true,name:'Bubbles',version:'0.46.0',publishedAt:'2026-10-19T21:03:11Z',size:85221500,url:'https://example.com/malicious.apk'}})});
+ vm.runInNewContext(script,{document,fetch,URL});
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(link.href,'/downloads/bubbles.apk');
+});
