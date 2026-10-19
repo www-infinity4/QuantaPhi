@@ -65,3 +65,28 @@ test('unstructured model text is never run as a tool',async()=>{
  const json=await res.json();assert.equal(json.receipt.tool,'oracle.chat');
  assert.equal(json.receipt.interface,undefined);
 });
+
+
+test('LLM tool aliases normalize exactly and reject ambiguous units',async()=>{
+ const canonical=validateCall('resonance_calculate',{l:10,lUnit:'microhenries',c:22,cUnit:'picofarads'});
+ assert.equal(canonical.lUnit,'uH');
+ assert.equal(canonical.cUnit,'pF');
+ const alternate=validateCall('resonance_calculate',{l:10,lUnit:'µH',c:22,cUnit:'pF'});
+ assert.equal(alternate.lUnit,'uH');
+ assert.equal(alternate.cUnit,'pF');
+ assert.throws(()=>validateCall('resonance_calculate',{l:10,lUnit:'nanohenries',c:22,cUnit:'pF'}),/invalid_arguments/);
+ const schema=mcpTools.find(t=>t.name==='resonance_calculate').inputSchema;
+ assert.deepEqual(schema.properties.lUnit.enum,['H','mH','uH']);
+ assert.deepEqual(schema.properties.cUnit.enum,['F','uF','nF','pF']);
+});
+test('real structured model tool call with spoken units produces a completed calculation receipt',async()=>{
+ let calls=0;
+ const req=new Request('https://bubbles-tools.marvaseater.workers.dev/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},body:JSON.stringify({request:'Use MCP tools to calculate oscillation speed from 10 microhenries and 22 picofarads',mcp:true})});
+ const result=await worker.fetch(req,{AI:{run:async()=>{calls++;return {choices:[{message:{tool_calls:[{type:'function',function:{name:'resonance_calculate',arguments:JSON.stringify({l:10,lUnit:'microhenries',c:22,cUnit:'picofarads'})}}]}}]}}}});
+ const body=await result.json();
+ assert.equal(result.status,200);
+ assert.equal(calls,1);
+ assert.equal(body.receipt.status,'complete');
+ assert.equal(body.receipt.interface,'MCP');
+ assert.match(body.output,/10\.730 MHz/);
+});
