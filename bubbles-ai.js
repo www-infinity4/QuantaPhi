@@ -61,8 +61,12 @@ function startNativeTurn(value,fromVoice,id,evidence=''){
  nativeBridgeBusy=true;rememberNativeId(id);
  nativeSpeechPending=fromVoice;
  if(fromVoice)nativeSpeechReply='';
- Promise.resolve(sendMessage(value,fromVoice,evidence)).catch(()=>{
-  status.textContent='Bubbles could not complete this message. Check the connection before retrying.';
+ Promise.resolve(sendMessage(value,fromVoice,evidence)).catch(error=>{
+  const reply='Bubbles could not complete this request: '+String(error?.message||error||'unexpected error').slice(0,130);
+  status.textContent=reply;display(reply,'ai');
+  if(fromVoice)nativeSpeechReply=reply;
+  nativeSpeechPending=false;busy=false;send.disabled=false;
+  if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
  }).finally(()=>{nativeBridgeBusy=false;});
 }
 let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=null;
@@ -1658,7 +1662,13 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(!repository&&!createRepository){
    if(githubCheck||coderRequest)repository='www-infinity4/QuantaPhi';
    else {
-    if(!repositorySelectionExplicit)await suggestRepositoryTargets(request,false);
+    if(!repositorySelectionExplicit){
+     try{await suggestRepositoryTargets(request,false);}
+     catch(error){
+      // GitHub catalog outages are a failed suggestion, not a frozen chat.
+      repositoryAdviceLine.textContent='GitHub target lookup unavailable: '+String(error?.message||error).slice(0,120);
+     }
+    }
     const targets=[...repositorySelection];
     if(targets.length===1)repository=targets[0];
    }
@@ -1844,7 +1854,14 @@ composer.before(repositoryPicker);
 const openCardCatalog=create('button','ba-control','Card catalog');openCardCatalog.type='button';openCardCatalog.hidden=embedded;
 openCardCatalog.addEventListener('click',()=>void sendMessage('show card catalog'));
 repositoryPicker.append(openCardCatalog);
-composer.addEventListener('submit',event=>{event.preventDefault();void sendMessage(input.value)});
+function dispatchTypedTurn(value){
+ void sendMessage(value).catch(error=>{
+  const message='Bubbles request failed: '+String(error?.message||error).slice(0,150);
+  display(message,'ai');status.textContent=message;busy=false;send.disabled=false;
+  nativeSpeechPending=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+ });
+}
+composer.addEventListener('submit',event=>{event.preventDefault();dispatchTypedTurn(input.value)});
 const screenShareButton=create('button','ba-control','Share current screen');screenShareButton.type='button';
 screenShareButton.setAttribute('aria-pressed','false');
 screenShareButton.addEventListener('click',()=>void sendMessage((nativeOverlay?nativeScreenSharing:pageScreenSharing)?'stop screen sharing':'start screen sharing'));
@@ -1857,7 +1874,7 @@ async function directGithubOperation(operation){
  if(!response.ok)throw Error(result.error||'direct_github_unavailable');
  return {...result,requestId};
 }
-input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();void sendMessage(input.value)}});
+input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();dispatchTypedTurn(input.value)}});
 function queueRepositoryPreview(value){
  if(repositorySearchTimer)clearTimeout(repositorySearchTimer);
  if(embedded||!ownerReady||repositorySelectionExplicit||!isOwnerWorkRequest(value))return;
