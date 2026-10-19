@@ -69,6 +69,39 @@ async function infinityHistory(env,account,url){
   return {ok:true,kind,items,next:hasMore&&last?{beforeAt:last.created_at,beforeId:last[key]}:null};
 }
 
+
+/**
+ * One-time operator-issued restoration of a previously enrolled StarQuest
+ * wallet. Cloudflare account administration inserts hashed, short-lived grant
+ * rows directly into StarQuest D1; there is deliberately no public grant
+ * creation route. The code is not derived from an IP, browser fingerprint,
+ * username or displayed balance. Redemption enrolls a new device hash into
+ * the EXISTING account without editing any balance or ledger event.
+ */
+async function redeemRecovery(request,env){
+  const origin=request.headers.get('Origin')||'';
+  if(!ALLOWED_ORIGINS.has(origin))throw Object.assign(new Error('origin_not_allowed'),{status:403});
+  const input=await body(request),claim=clean(input.recoveryCode,120),token=clean(input.deviceToken,180);
+  if(!/^wrc_[A-Za-z0-9_-]{43}$/.test(claim)||!/^sq_[A-Za-z0-9_-]{43}$/.test(token))
+    throw Object.assign(new Error('invalid_recovery_request'),{status:400});
+  const claimHash=await digest(claim),tokenHash=await digest(token),now=Date.now();
+  // UPDATE RETURNING atomically consumes the grant even under racing requests.
+  const consumed=await env.IDENTITY_DB.prepare(
+    'UPDATE wallet_recovery_grants SET consumed_at=?1 WHERE claim_hash=?2 AND consumed_at IS NULL AND expires_at>?1 RETURNING account_id'
+  ).bind(now,claimHash).first();
+  if(!consumed?.account_id)throw Object.assign(new Error('recovery_expired_or_used'),{status:410});
+  const account=await env.IDENTITY_DB.prepare('SELECT id,username FROM accounts WHERE id=?1').bind(consumed.account_id).first();
+  if(!account?.id)throw Object.assign(new Error('recovery_account_unavailable'),{status:409});
+  // No username, IP address or client-supplied account ID is trusted here.
+  await env.IDENTITY_DB.prepare(
+    'INSERT INTO account_devices(token_hash,account_id,created_at,last_seen_at) VALUES(?1,?2,?3,?3)'
+  ).bind(tokenHash,account.id,now).run();
+  await env.IDENTITY_DB.prepare(
+    'INSERT INTO wallet_recovery_audit(claim_hash,account_id,token_hash,redeemed_at) VALUES(?1,?2,?3,?4)'
+  ).bind(claimHash,account.id,tokenHash,now).run();
+  return {ok:true,username:account.username,accountId:account.id,recovered:true};
+}
+
 async function importLegacy(request,env,account){
   const input=await body(request),importKey=clean(input.importKey,120); if(!/^[A-Za-z0-9:_-]{8,120}$/.test(importKey)) throw Object.assign(new Error('invalid_import_key'),{status:400});
   const prior=await env.DB.prepare('SELECT imported_json,created_at FROM unified_imports WHERE user_id=?1 AND import_key=?2').bind(account.id,importKey).first(); if(prior) return {ok:true,replayed:true,imported:JSON.parse(prior.imported_json)};
@@ -123,5 +156,5 @@ async function spend(request,env,account){
   const row=await env.DB.prepare('SELECT infinity_balance FROM unified_wallet_state WHERE user_id=?1').bind(account.id).first(); const balance=Number(row?.infinity_balance||0); if(balance<amount)throw Object.assign(new Error('insufficient_balance'),{status:409}); const next=balance-amount;
   await env.DB.batch([env.DB.prepare('UPDATE unified_wallet_state SET infinity_balance=?2,updated_at=?3 WHERE user_id=?1').bind(account.id,next,now),env.DB.prepare("INSERT INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) VALUES(?1,?2,?3,'INFINITY','SPEND',?4,?5,?6,?7,?8)").bind('uwe_'+crypto.randomUUID(),key,account.id,-amount,next,clean(input.referenceId,160),JSON.stringify(input.metadata||{}),now)]); return {ok:true,replayed:false,balance:next};
 }
-export default {async fetch(request,env){ if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(request)}); const url=new URL(request.url); if(url.pathname==='/health')return json(request,{ok:true,service:'unified-wallet',version:1}); if(url.pathname==='/unified-wallet.js')return new Response(CLIENT_SCRIPT,{headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'public, max-age=300','X-Content-Type-Options':'nosniff',...cors(request)}}); try{if(url.pathname==='/internal/bot-work-credit'&&request.method==='POST'){const key=request.headers.get('X-Bot-Work-Key')||'';if(!env.BOT_WORK_SECRET||await digest(key)!==await digest(env.BOT_WORK_SECRET))return json(request,{ok:false,error:'bot_work_authorization_required'},401);const raw=await request.text();if(raw.length>8000)return json(request,{ok:false,error:'credit_payload_too_large'},413);return json(request,await payBotWork(env,JSON.parse(raw)));}const account=await identity(request,env); if(url.pathname==='/v1/wallet/state'&&request.method==='GET')return json(request,await state(env,account)); if(url.pathname==='/v1/wallet/infinity-history'&&request.method==='GET')return json(request,await infinityHistory(env,account,url)); if(url.pathname==='/v1/wallet/import'&&request.method==='POST')return json(request,await importLegacy(request,env,account)); if(url.pathname==='/v1/tokens/mint'&&request.method==='POST')return json(request,await mintToken(request,env,account),201); if(url.pathname==='/v1/wallet/spend'&&request.method==='POST')return json(request,await spend(request,env,account)); return json(request,{error:'not_found'},404)}catch(error){return json(request,{error:error.message||'internal_error'},error.status||500)}}};
+export default {async fetch(request,env){ if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(request)}); const url=new URL(request.url); if(url.pathname==='/health')return json(request,{ok:true,service:'unified-wallet',version:1}); if(url.pathname==='/unified-wallet.js')return new Response(CLIENT_SCRIPT,{headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'public, max-age=300','X-Content-Type-Options':'nosniff',...cors(request)}}); try{if(url.pathname==='/internal/bot-work-credit'&&request.method==='POST'){const key=request.headers.get('X-Bot-Work-Key')||'';if(!env.BOT_WORK_SECRET||await digest(key)!==await digest(env.BOT_WORK_SECRET))return json(request,{ok:false,error:'bot_work_authorization_required'},401);const raw=await request.text();if(raw.length>8000)return json(request,{ok:false,error:'credit_payload_too_large'},413);return json(request,await payBotWork(env,JSON.parse(raw)));}if(url.pathname==='/v1/wallet/redeem-recovery'&&request.method==='POST')return json(request,await redeemRecovery(request,env)); const account=await identity(request,env); if(url.pathname==='/v1/wallet/state'&&request.method==='GET')return json(request,await state(env,account)); if(url.pathname==='/v1/wallet/infinity-history'&&request.method==='GET')return json(request,await infinityHistory(env,account,url)); if(url.pathname==='/v1/wallet/import'&&request.method==='POST')return json(request,await importLegacy(request,env,account)); if(url.pathname==='/v1/tokens/mint'&&request.method==='POST')return json(request,await mintToken(request,env,account),201); if(url.pathname==='/v1/wallet/spend'&&request.method==='POST')return json(request,await spend(request,env,account)); return json(request,{error:'not_found'},404)}catch(error){return json(request,{error:error.message||'internal_error'},error.status||500)}}};
 
