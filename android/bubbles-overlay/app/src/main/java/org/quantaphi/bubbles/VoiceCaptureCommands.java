@@ -22,6 +22,9 @@ final class VoiceCaptureCommands {
     static Command parse(String text) {
         if (text == null) return null;
         String q = text.toLowerCase(Locale.ROOT).replaceAll("[,.!?]+", " ").replaceAll("\\s+", " ").trim();
+        // The owner may say "record Bubbles" as well as "Bubbles, record".
+        if (q.matches("^(?:record|start recording|stop recording|stop|save) bubbles$"))
+            q = q.substring(0, q.length() - " bubbles".length());
         // Strip natural conversational introductions before inspecting an action.
         // Voice commands must be handled locally, not forwarded to a text AI
         // which cannot grant Android screen capture permissions.
@@ -41,7 +44,7 @@ final class VoiceCaptureCommands {
                 && q.contains("screen")) return new Command("screen_stop", 0, 0);
         if (q.matches("^(?:(?:stop|end|finish|cancel|turn off|switch off)\\s+(?:(?:the|my)\\s+)?(?:screen\\s+recorder|screen\\s+recording|recording\\s+(?:of\\s+)?(?:the|my)\\s+screen))(?:\\s+now)?$"))
             return new Command("screen_stop", 0, 0);
-        // Bare "record" uses DU Recorder with its existing owner-selected
+        // Bare "record" uses XRecorder with its existing owner-selected
         // capture settings. Sound-only capture remains separate.
         if (q.matches("^(?:record|start recording|begin recording|record a video|record video)$")
                 || q.matches("^(?:(?:turn|switch)\\s+on|open|launch|enable|activate|use|run|start|begin)\\s+(?:(?:the|my|a)\\s+)?(?:screen\\s+recorder|screen\\s+recording)(?:\\s+now)?$")
