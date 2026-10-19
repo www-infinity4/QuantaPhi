@@ -19,3 +19,27 @@
 #robotDirections .robot-work-prose p{font-size:18px;line-height:1.7}
 #robotDirections .robot-work-report small,#robotDirections [role=status]{font-size:16px}
 #robotDirections>details,#robotDirections [data-refresh],#robotDirections [data-gemini],#qai-more,#qai-dashboard,.qai-brain{display:none!important}
+
+
+/* Readable owner job explanations: one task per card, not raw log dumps. */
+#robotDirections .robot-work-ticket{
+ margin:12px 0;padding:15px 16px;border:1px solid #dcd2e4;
+ border-left:4px solid #6f42ad;border-radius:14px;background:#fff;
+ overflow-wrap:anywhere;
+}
+#robotDirections .robot-work-ticket h4{
+ margin:0 0 8px;color:#342348;font-size:18px;line-height:1.4;
+}
+#robotDirections .robot-work-prose .robot-work-ticket p{
+ margin:6px 0;background:transparent;border:0;border-radius:0;padding:0;
+ font-size:15px;line-height:1.6;color:#332a37;
+}
+#robotDirections .robot-work-ticket details{
+ margin:10px 0 7px;padding:8px 10px;background:#f8f5fb;
+ border:1px solid #ddd1e8;border-radius:10px;
+}
+#robotDirections .robot-work-ticket summary{display:list-item;cursor:pointer;font-size:14px;font-weight:800;color:#49286b}
+#robotDirections .robot-work-ticket a{display:inline-block;margin:8px 0;color:#452780;font-weight:800}
+#robotDirections .robot-work-ticket small{display:block;font-size:12px;color:#685e70;margin-top:8px}
+#robotDirections .robot-work-actions button{flex:1 1 155px;white-space:normal}
+@media(max-width:420px){#robotDirections .robot-work-ticket{padding:12px}}

@@ -1,9 +1,9 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const source=fs.readFileSync('robot-work-report.js','utf8');
-const start=source.indexOf(' function ordered(tickets)'),end=source.indexOf(' async function explainWithGPT',start);
+const start=source.indexOf(' function allJobs(tickets)'),end=source.indexOf(' async function explainWithGPT',start);
 if(start<0||end<0)throw Error('Missing evidence-constrained owner reporter');
 const context={Date,clean:(v,n=240)=>String(v||'').replace(/[<>]/g,' ').slice(0,n)};
-vm.createContext(context);vm.runInContext(source.slice(start,end)+'\nglobalThis.getTasks=ordered;',context);
+vm.createContext(context);vm.runInContext(source.slice(start,end)+'\nglobalThis.getTasks=allJobs;',context);
 test('owner status feed never describes stale Pink Panther work as an active lease',()=>{
  const recent=new Date(Date.now()-4000).toISOString();
  const tickets=[{id:'IW-real',created_at:Date.now(),updated_at:Date.now(),context:{kind:'robot-directions',color_jobs:[
@@ -26,11 +26,13 @@ test('Report invokes GPT only on explicit click; automatic polling uses factual 
 });
 
 
-test('old queue updates never make historical work look fresh',()=>{
+test('older jobs stay reviewable without being falsely described as running',()=>{
  const stale={id:'old',created_at:Date.now()-10*86400000,updated_at:Date.now(),context:{kind:'robot-directions',color_jobs:[{id:'TASK-1',status:'queued',title:'Old job',last_inspected_at:new Date().toISOString()}]}};
- assert.equal(context.getTasks([stale]).length,0);
- const fresh={...stale,id:'new',created_at:Date.now()};
- assert.equal(context.getTasks([fresh]).length,1);
- const running={...stale,context:{kind:'robot-directions',color_jobs:[{id:'TASK-1',status:'working',progress:{attemptedAt:new Date().toISOString()}}]}};
- assert.equal(context.getTasks([running]).length,1);
+ const list=context.getTasks([stale]);
+ assert.equal(list.length,1);
+ assert.equal(list[0].status,'queued');
+ const staleRunner={...stale,context:{kind:'robot-directions',color_jobs:[{id:'TASK-1',status:'working',progress:{attemptedAt:new Date(Date.now()-2*3600000).toISOString()}}]}};
+ assert.equal(context.getTasks([staleRunner])[0].status,'unverified');
+ const currentRunner={...stale,context:{kind:'robot-directions',color_jobs:[{id:'TASK-1',status:'working',progress:{attemptedAt:new Date().toISOString()}}]}};
+ assert.equal(context.getTasks([currentRunner])[0].status,'working');
 });

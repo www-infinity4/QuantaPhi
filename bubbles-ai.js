@@ -2200,7 +2200,7 @@ function refreshBulkOwnerRun(tickets){
  lastBulkPreview=brainTools.bulkRunPreview(tickets);
  runAllButton.hidden=false;
  runAllButton.textContent='Run All ('+lastBulkPreview.total+')';
- runAllButton.title=lastBulkPreview.ready+' queued, '+lastBulkPreview.retryableWorking+' stale working, and '+lastBulkPreview.ui+' ordinary UI owner choices eligible. '+lastBulkPreview.blocked+' blocked require repair or review; '+lastBulkPreview.working+' marked working remain unchanged.';
+ runAllButton.title='Requests the next available GitHub runner cycle; it does not run all jobs simultaneously. '+lastBulkPreview.ready+' queued, '+lastBulkPreview.retryableWorking+' possible retries, '+lastBulkPreview.ui+' ordinary interface decisions. '+lastBulkPreview.blocked+' jobs need review. Open the job report for plain-English reasons.';
  runAllButton.disabled=bulkRunBusy||lastBulkPreview.total===0;
 }
 runAllButton.addEventListener('click',async()=>{
@@ -2215,12 +2215,20 @@ runAllButton.addEventListener('click',async()=>{
   if(!response.ok||!outcome.ok||!outcome.batch)throw Error(String(outcome.error||'Bulk approval unavailable'));
   const counts=outcome.summary||{};
   const approved=Number(counts.uiApproved)||0,ready=Number(counts.alreadyRunnable)||0,resume=Number(counts.retryableWorking)||0;
-  const dispatch=outcome.execution?.dispatch?.status||outcome.execution?.status||'not_requested';
-  let execution='Runner requested; awaiting authenticated claim and code receipts.';
-  if(dispatch==='scheduled_fallback'||dispatch==='runner_dispatch_failed')execution='Runner could not start; approved jobs remain saved for retry.';
-  else if(dispatch==='not_requested'||outcome.execution?.ok===false)
-   execution='Runner has not confirmed starting; jobs remain eligible and saved.';
-  const receipt='Bulk owner action recorded: '+approved+' UI decisions approved, '+ready+' existing queued jobs eligible, '+resume+' stale working jobs eligible for runner retry. '+(Number(counts.stillBlocked)||0)+' still blocked for technical or sensitive decisions. '+(Number(counts.alreadyWorking)||0)+' marked working in total, unchanged until authenticated runner receipts. '+execution+' No code, tests or deployment claimed.';
+  const dispatch=outcome.execution?.status||outcome.execution?.dispatch?.status||'not_requested';
+  const target=outcome.runnerTarget;
+  const jobLabel=target?.ticketId&&target?.jobId?' ('+String(target.ticketId).slice(0,48)+' / '+String(target.jobId).slice(0,24)+')':'';
+  let execution;
+  if(dispatch==='queued_for_runner'||dispatch==='dispatch_accepted'||dispatch==='workflow_dispatched')
+   execution='One GitHub runner launch was accepted'+jobLabel+'. Other eligible jobs remain in the queue for later cycles. Execution and completion are not yet verified.';
+  else if(dispatch==='awaiting_repository_runner'||dispatch==='scheduled_fallback')
+   execution='No runner launch was confirmed'+jobLabel+'. The server reported '+String(outcome.execution?.reason||outcome.execution?.dispatch?.error||'runner unavailable').replaceAll('_',' ').slice(0,140)+'.';
+  else if(dispatch==='job_not_dispatchable')
+   execution='No runner launched: '+String(outcome.execution?.reason||'the selected job is not eligible').replaceAll('_',' ').slice(0,140)+'.';
+  else if(dispatch==='no_pending_jobs'||dispatch==='not_requested')
+   execution='No runner was launched. There is no confirmed executable job in this request; the ticket preview needs refreshed eligibility checks.';
+  else execution='Runner launch not confirmed ('+String(dispatch).replaceAll('_',' ').slice(0,80)+').';
+  const receipt='Run All report: '+approved+' interface decisions approved, '+ready+' already queued jobs, and '+resume+' possible retries. '+(Number(counts.stillBlocked)||0)+' still blocked for review or technical repair. '+(Number(counts.alreadyWorking)||0)+' marked working; this is not proof a bot ran. '+execution+' No code, tests or deployment claimed.';
   display(receipt,'ai');status.textContent='Bulk approval receipt received; checking next runner status.';
   messages.push({role:'assistant',text:receipt});messages=messages.slice(-400);persistChat();
   void pollBrainProgress();
