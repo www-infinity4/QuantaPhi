@@ -81,6 +81,13 @@ const descriptions={
  95:'thunderstorms',96:'thunderstorms with hail',99:'thunderstorms with heavy hail'
 };
 const num=v=>typeof v==='number'&&Number.isFinite(v)?Math.round(v):null;
+export function forecastDate(message,timeZone,now=new Date()){
+ const parts=new Intl.DateTimeFormat('en-US',{timeZone,year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now);
+ const value=type=>parts.find(p=>p.type===type).value;
+ const date=new Date(value('year')+'-'+value('month')+'-'+value('day')+'T12:00:00Z');
+ date.setUTCDate(date.getUTCDate()+(/\btomorrow\b/i.test(message)?1:0));
+ return date.toISOString().slice(0,10);
+}
 export async function currentWeather(message,location=null,fetcher=fetch){
  const place=weatherPlace(message,location);
  if(!place)return {ok:false,needsLocation:true,output:'Which town and state should I use for your weather? Tell me once, for example, Albia, Iowa.'};
@@ -109,9 +116,18 @@ export async function currentWeather(message,location=null,fetcher=fetch){
    daily:'temperature_2m_max,temperature_2m_min,precipitation_probability_max',
    temperature_unit:'fahrenheit',wind_speed_unit:'mph',timezone:'auto',forecast_days:'2'});
   const data=await getJson(fetcher,url),c=data.current,d=data.daily;
+  const locationLabel=[target.name,target.admin1,target.country].filter(Boolean).join(', ');
+  if(/\btomorrow\b/i.test(message)){
+   const date=forecastDate(message,data.timezone),index=d?.time?.indexOf(date)??-1;
+   const high=index>=0?num(d?.temperature_2m_max?.[index]):null;
+   const low=index>=0?num(d?.temperature_2m_min?.[index]):null;
+   if(high===null||low===null)return {ok:false,location:locationLabel,output:'The weather service did not return a complete forecast for '+date+' in '+locationLabel+'.'};
+   const rain=num(d?.precipitation_probability_max?.[index]);
+   return {ok:true,location:locationLabel,forecastDate:date,timeZone:data.timezone,provider:'Open-Meteo',sourceUrl:'https://open-meteo.com/en/docs',
+    output:'For '+locationLabel+', tomorrow ('+date+') has a forecast high of '+high+' and low of '+low+' degrees Fahrenheit.'+(rain===null?'':' Peak precipitation chance is '+rain+' percent.')};
+  }
   const temperature=num(c?.temperature_2m),feels=num(c?.apparent_temperature);
   if(temperature===null||!c?.time)throw Error('observations_missing');
-  const locationLabel=[target.name,target.admin1,target.country].filter(Boolean).join(', ');
   const text=['For '+locationLabel+', the latest reported temperature is '+temperature+' degrees Fahrenheit',
    (descriptions[c.weather_code]||'weather conditions unavailable')+'.'];
   if(feels!==null)text.push('Feels like '+feels+' degrees.');
@@ -124,3 +140,4 @@ export async function currentWeather(message,location=null,fetcher=fetch){
    provider:'Open-Meteo',sourceUrl:'https://open-meteo.com/en/docs',temperatureF:temperature};
  }catch{return {ok:false,output:'I could not reach the live weather service for '+place+'. I have no verified conditions to report.'};}
 }
+
