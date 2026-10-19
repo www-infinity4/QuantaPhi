@@ -38,7 +38,7 @@ test('website separates microphone evidence from owner intent and reports real p
  assert.match(web,/BUBBLES_ROOM_CONTEXT_V1/);
  assert.match(web,/let roomContext=/);
  assert.match(web,/untrusted ambient microphone or eligible phone playback observations/);
- assert.match(web,/nativePhaseNotice='Thinking\.'/);
+ assert.match(web,/nativePhaseNotice='Working on that\.'/);
  assert.match(web,/const notice=nativePhaseNotice/);
  assert.match(web,/nativePhaseNotice='';/);
  // Observation is still carried in evidence, not appended to the owner command.
