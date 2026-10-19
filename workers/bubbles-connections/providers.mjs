@@ -94,6 +94,30 @@ export function githubAdapter(config, request = githubRequest) {
       if(!/^[a-f0-9]{40}$/.test(receipt.commit?.sha||''))throw Error('provider_response_invalid');
       return {repository,branch,commit:receipt.commit.sha,url:'https://github.com/'+repository+'/commit/'+receipt.commit.sha,status:'commit_verified'};
     },
+    async createPrivateBackupRepository({accessToken}) {
+      // This method is invoked only after a real user explicitly requests one
+      // repository on their own GitHub account. It may require GitHub App
+      // Repository creation permission and repository installation access.
+      const headers={Authorization:'Bearer '+accessToken,Accept:'application/vnd.github+json',
+        'Content-Type':'application/json','User-Agent':'Bubbles-User-Connections',
+        'X-GitHub-Api-Version':'2022-11-28'};
+      const response=await request('https://api.github.com/user/repos',{
+        method:'POST',headers,redirect:'error',signal:AbortSignal.timeout(15000),
+        body:JSON.stringify({name:'infinity-starcoins-backup',private:true,auto_init:true,
+          description:'Private StarCoin history mirror, verified against QuantaPhi Cloudflare D1',has_issues:false,has_wiki:false})
+      });
+      if(response.status===403)throw Error('github_repository_creation_permission_required');
+      if(response.status===422)throw Error('github_repository_already_exists');
+      if(response.status!==201)throw Error('github_repository_creation_unavailable');
+      const created=await response.json();
+      if(created.private!==true||!/^[-A-Za-z0-9_.]+\/infinity-starcoins-backup$/.test(created.full_name||''))
+        throw Error('github_repository_creation_unverified');
+      const verified=await this.repositories({accessToken});
+      const installed=verified.repositories.some(repo=>repo.name===created.full_name&&repo.private&&repo.permissions.write);
+      return {repository:created.full_name,url:created.html_url,
+        status:installed?'ready_to_back_up':'needs_github_app_repository_installation',
+        private:true};
+    },
     async repositories({accessToken}) {
       const headers={Authorization:'Bearer '+accessToken,Accept:'application/vnd.github+json','User-Agent':'Bubbles-User-Connections','X-GitHub-Api-Version':'2022-11-28'};
       const read=async path=>jsonResponse(await request('https://api.github.com'+path,{headers,redirect:'error',signal:AbortSignal.timeout(15000)}),'github_repositories');
