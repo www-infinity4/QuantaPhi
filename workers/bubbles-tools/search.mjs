@@ -47,7 +47,9 @@ export async function webSearch(message,env={},fetcher=fetch){
  const broker='https://orange-brook-a2ac.marvaseater.workers.dev/search';
  const brokerQuery=async(engineOnly)=>{
   const url=broker+'?'+new URLSearchParams({q:query,format:'json',categories:'general',safesearch:'1',...(engineOnly?{engines:'google'}:{})});
-  const data=await getJson(fetcher,url);
+  // Preserve the binding receiver; public same-zone Worker fetches cannot route here.
+  const brokerFetch=typeof env.SEARCH?.fetch==='function'?(input,options)=>env.SEARCH.fetch(input,options):fetcher;
+  const data=await getJson(brokerFetch,url);
   const raw=Array.isArray(data.results)?data.results:[];
   return raw.map(x=>({title:trim(x.title,220),url:safeUrl(x.url),snippet:trim(x.content||x.description,600),
    engine:trim(x.engine||((Array.isArray(x.engines)&&x.engines.includes('google'))?'google':'web'),45)}))
