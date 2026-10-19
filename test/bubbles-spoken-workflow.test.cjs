@@ -1,0 +1,37 @@
+'use strict';
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const root='android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/';
+const read=name=>fs.readFileSync(root+name,'utf8');
+test('owner-spoken phone jobs execute in bounded local steps, never cloud-generated gestures',()=>{
+ const main=read('BubblesService.java'),runner=read('SpokenWorkflowRunner.java'),plan=read('SpokenWorkflowPlan.java');
+ assert.match(main,/directed && handleWorkflowRequest\(addressed, false\)/);
+ assert.match(main,/handleWorkflowRequest\(text, true\)/);
+ assert.match(main,/SpokenWorkflowPlan\.stopCommand/);
+ assert.match(main,/workflowRunner\.cancel\(\)/);
+ assert.match(runner,/STEP_TIMEOUT_MS = 12000L/);
+ assert.match(runner,/JOB_TIMEOUT_MS = 120000L/);
+ assert.match(runner,/KeyguardManager/);
+ assert.match(runner,/expectedPackage\.equals\(foreground\)/);
+ assert.match(runner,/workflowLabelVisible/);
+ assert.match(runner,/workflowType/);
+ assert.match(runner,/performRequestedAction\("tap "/);
+ assert.match(runner,/UI steps sent.*final screen result unverified/);
+ assert.match(plan,/Collections\.unmodifiableList/);
+ assert.doesNotMatch(runner,/performGlobalAction|dispatchGesture|HttpURLConnection|ChatGPTSignIn/);
+});
+test('Android Accessibility checks exact currently visible input and never types credentials',()=>{
+ const a=read('BrainLearningService.java');
+ assert.match(a,/workflowForegroundPackage/);
+ assert.match(a,/workflowMatches/);
+ assert.match(a,/node\.isPassword\(\)/);
+ assert.match(a,/TYPE_TEXT_VARIATION_PASSWORD/);
+ assert.match(a,/ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE/);
+ assert.match(a,/TYPE_VERIFIED/);
+ assert.match(a,/FIELD_AMBIGUOUS/);
+ assert.match(a,/ScreenAwareness\.sensitive\(target\)/);
+ const app=read('AppControlBridge.java');
+ assert.match(app,/packageForName/);
+ assert.match(app,/matching\.size\(\) == 1/);
+});
