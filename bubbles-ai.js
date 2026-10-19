@@ -1762,7 +1762,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // If Bubbles asked for a town, the next town-only answer is a weather continuation.
  const lastAssistant=messages.slice(-4).reverse().find(item=>item.role==='assistant')?.text||'';
  const townFollowup=/Which town and state should I use for your weather/i.test(lastAssistant)&&/^[a-z0-9 ,.'-]{2,75}$/i.test(request);
- const lookupRequest=townFollowup?'weather in '+request:request;
+ const weatherFollowup=/^(?:(?:and|what|how) (?:about )?)?tomorrow[?.! ]*$/i.test(request)&&/weather|forecast|temperature|precipitation/i.test(lastAssistant);
+ const lookupRequest=townFollowup?'weather in '+request:weatherFollowup?'weather tomorrow':request;
  const liveLookup=/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it)\b/i.test(lookupRequest)
   ||/^\s*(?:(?:please|bubbles[, ]+|can you |could you )\s*)?(?:google|search|look up|find online|browse the web)\b/i.test(lookupRequest)
   ||/\b(?:search the web|search google|look up online|find it online|latest information|latest updates|what(?:'s| is) the latest)\b/i.test(lookupRequest);
@@ -1795,6 +1796,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }else if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}}finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
   const rawAnswer=extract(json);if(!rawAnswer)throw Error('The AI returned no spoken or written reply');
+   if(/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
    if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
   messages.push({role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
@@ -1835,7 +1837,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     if(nativeSpeechPending)nativeSpeechReply=answer;
     nativeSpeechPending=false;
    }else if(config.voice)speakText(answer);
- }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message}
+ }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message;if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false}else if(fromVoice&&config.voice)speakText(message)}
  finally{if(nativeOverlay&&nativeSpeechPending){
      nativeSpeechReply=workEvidence||'The assistant could not complete that request.';
      nativeSpeechPending=false;
@@ -2505,4 +2507,5 @@ if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 
 })();
+
 
