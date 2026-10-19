@@ -37,7 +37,8 @@ test('a structured plan executes the real adapter and feeds its actual receipt i
 test('structured output cannot bypass task mode even when the provider ignores the offered tool list',async()=>{
  const env={GITHUB_TOKEN:'fixture-token',WRITER_AI:{run:async()=>({tool_calls:[{name:'commit_files',arguments:{}}]})}};
  let requests=0;
- await assert.rejects(directGithubAgent(env,{repository,request:'Inspect source',mode:'read'},async()=>{requests++;return Response.json({default_branch:'main'});}),/direct_write_not_requested/);
+ const blocked=await directGithubAgent(env,{repository,request:'Inspect source',mode:'read'},async()=>{requests++;return Response.json({default_branch:'main'});});
+ assert.equal(blocked.status,'blocked');assert.equal(blocked.error,'direct_write_not_requested');assert.equal(blocked.receipts.length,3);
  assert.equal(requests,1,'only the initial credential/read capability probe occurred');
 });
 test('direct GitHub HTTP endpoint requires the existing owner session before forwarding',async()=>{
@@ -106,7 +107,8 @@ test('Cloudflare Worker GitHub requests use manual redirects and do not follow r
 test('a read-only direct request cannot be turned into a write by model or source text',async()=>{
  const env={GITHUB_TOKEN:'test',WRITER_AI:{run:async()=>({response:JSON.stringify({action:'commit_files',args:{}})})}};
  let calls=0;
- await assert.rejects(directGithubAgent(env,{repository,request:'Inspect the menu',mode:'read'},async()=>{calls++;return Response.json({default_branch:'main'});}),/direct_write_not_requested/);
+ const blocked=await directGithubAgent(env,{repository,request:'Inspect the menu',mode:'read'},async()=>{calls++;return Response.json({default_branch:'main'});});
+ assert.equal(blocked.error,'direct_write_not_requested');assert.equal(blocked.status,'blocked');
  assert.equal(calls,1);
 });
 test('direct agent checkpoints real operation receipts before its final explanation',async()=>{
@@ -138,3 +140,38 @@ test('repository catalog follows every page and keeps owner scope without changi
 
 // Include the Durable Object timeout/idempotency regression in existing CI suites.
 import './bubbles-github-timeout.test.mjs';
+
+test('malformed path is corrected with a pinned read and no writes',async()=>{
+ const steps=[{action:'read_repository'},{action:'read_file',args:{path:'../secret',ref:sha}},{action:'read_file',args:{path:'README.md',ref:sha}},{action:'finish',summary:'Read source'}];
+ const calls=[],inputs=[],saved=[];
+ const env={GITHUB_TOKEN:'fixture-secret',WRITER_AI:{run:async(_,input)=>{inputs.push(structuredClone(input));return {response:JSON.stringify(steps.shift())}}}};
+ const result=await directGithubAgent(env,{repository,request:'Read README',mode:'read'},async(url,options)=>{
+  calls.push({url,method:options.method});
+  if(url.includes('/contents/'))return Response.json({type:'file',size:5,encoding:'base64',content:btoa('hello'),sha});
+  if(url.includes('/git/ref/'))return Response.json({object:{sha}});
+  return Response.json({default_branch:'main'});
+ },async r=>saved.push(r));
+ assert.equal(result.status,'inspected');assert.equal(saved[1].status,'validation_rejected');assert.equal(saved[1].mutationSubmitted,false);
+ assert.match(inputs[2].messages.at(-1).content,/invalid_repository_path/);
+ assert.equal(calls.filter(c=>c.url.includes('/contents/')).length,1);assert.ok(calls.every(c=>c.method==='GET'));
+ assert.ok(!JSON.stringify(saved).includes('fixture-secret'));
+});
+test('a rejected proposal followed by finish remains blocked',async()=>{
+ const steps=[{action:'shell',args:{}},{action:'finish',summary:'Done'}];
+ const result=await directGithubAgent({GITHUB_TOKEN:'test',WRITER_AI:{run:async()=>({response:JSON.stringify(steps.shift())})}},{repository,request:'Inspect',mode:'read'},async()=>Response.json({default_branch:'main'}));
+ assert.equal(result.ok,false);assert.equal(result.error,'unresolved_tool_validation');
+});
+test('ambiguous workflow write is submitted once and never enters correction loop',async()=>{
+ let models=0,posts=0;
+ const env={GITHUB_TOKEN:'test',WRITER_AI:{run:async()=>{models++;return {tool_calls:[{name:'dispatch_workflow',arguments:{workflow:'check.yml',ref:'main'}}]}}}};
+ await assert.rejects(directGithubAgent(env,{repository,request:'Run check.yml on main',mode:'actions'},async(url,options)=>{
+  if(options.method==='POST'){posts++;throw Error('inflight_timeout')}
+  return Response.json(url.includes('/actions/workflows/')?{state:'active'}:{default_branch:'main'});
+ }),/inflight_timeout/);
+ assert.equal(posts,1);assert.equal(models,1);
+});
+test('checkpoint failure cannot be converted into model correction or retried execution',async()=>{
+ let models=0;
+ await assert.rejects(directGithubAgent({GITHUB_TOKEN:'test',WRITER_AI:{run:async()=>{models++;return {response:JSON.stringify({action:'list_runs'})}}}},{repository,request:'Inspect',mode:'read'},async url=>Response.json(url.includes('/actions/runs')?{workflow_runs:[]}:{default_branch:'main'}),async()=>{throw Error('checkpoint_failed')}),/checkpoint_failed/);
+ assert.equal(models,1);
+});
