@@ -20,3 +20,18 @@ test('drafts and foreign download destinations are not advertised',async()=>{
  const worker=setup(async()=>new Response(JSON.stringify(release)));const r=await worker.fetch(new Request('https://quantaphi.org/api/apk-releases'),{});assert.equal((await r.json()).bubbles.available,false);
  }
 });
+
+test('select newest immutable versioned Bubbles APK rather than stale rolling alias',async()=>{
+ const older={...asset,name:'Bubbles-v0.45.0-Preview5-Android12.apk',label:'Bubbles v0.45.0-preview',browser_download_url:'https://github.com/www-infinity4/QuantaPhi/releases/download/bubbles-preview-current/Bubbles-v0.45.0-Preview5-Android12.apk'};
+ const newest={...asset,name:'Bubbles-v0.46.0-Preview5-Android12.apk',label:'Bubbles v0.46.0-preview',browser_download_url:'https://github.com/www-infinity4/QuantaPhi/releases/download/bubbles-preview-current/Bubbles-v0.46.0-Preview5-Android12.apk'};
+ const alias={...asset,label:'Current Bubbles Preview',updated_at:'2026-10-19T21:04:00Z'};
+ const worker=setup(async url=>String(url).includes('api.github.com')?new Response(JSON.stringify({assets:[older,alias,newest]})):new Response(new Uint8Array([80,75,3,4])));
+ const metadata=await worker.fetch(new Request('https://quantaphi.org/api/apk-releases'),{});
+ const data=await metadata.json();
+ assert.equal(data.bubbles.version,'0.46.0');
+ assert.equal(data.bubbles.filename,newest.name);
+ assert.equal(data.bubbles.url,newest.browser_download_url);
+ const download=await worker.fetch(new Request('https://quantaphi.org/downloads/bubbles.apk'),{});
+ assert.equal(download.status,200);
+ assert.match(download.headers.get('Content-Disposition'),/Bubbles-v0\.46\.0-Preview5-Android12\.apk/);
+});
