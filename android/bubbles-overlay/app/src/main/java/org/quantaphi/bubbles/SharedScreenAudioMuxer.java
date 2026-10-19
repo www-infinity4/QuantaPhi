@@ -21,7 +21,7 @@ final class SharedScreenAudioMuxer {
                 picture.selectTrack(v); sound.selectTrack(a);
                 int outV = mux.addTrack(picture.getTrackFormat(v)), outA = mux.addTrack(sound.getTrackFormat(a));
                 mux.start(); started = true;
-                copy(picture, mux, outV); copy(sound, mux, outA);
+                copy(picture, mux, v, outV); copy(sound, mux, a, outA);
                 mux.stop(); started = false;
             } finally {
                 picture.release(); sound.release();
@@ -41,9 +41,10 @@ final class SharedScreenAudioMuxer {
             if (input.getTrackFormat(i).getString(MediaFormat.KEY_MIME).startsWith(prefix)) return i;
         throw new IOException("Missing " + prefix + " track");
     }
-    private static void copy(MediaExtractor input, MediaMuxer output, int track) throws IOException {
-        // Screen encoder is bounded to 720 px; still honor advertised input size.
-        MediaFormat format = input.getTrackFormat(input.getSampleTrackIndex());
+    private static void copy(MediaExtractor input, MediaMuxer output, int sourceTrack, int track) throws IOException {
+        // Use the selected input track explicitly, even before the extractor has
+        // returned its first sample. getSampleTrackIndex() may be -1 here.
+        MediaFormat format = input.getTrackFormat(sourceTrack);
         int capacity = format.containsKey(MediaFormat.KEY_MAX_INPUT_SIZE)
             ? Math.max(4 * 1024 * 1024, format.getInteger(MediaFormat.KEY_MAX_INPUT_SIZE)) : 4 * 1024 * 1024;
         ByteBuffer buffer = ByteBuffer.allocate(capacity);
