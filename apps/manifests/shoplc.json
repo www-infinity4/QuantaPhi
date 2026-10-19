@@ -1,0 +1,43 @@
+{
+  "id": "/apps/id/shoplc",
+  "name": "ShopLC · Infinity 2026",
+  "short_name": "ShopLC",
+  "description": "Watch the existing ShopLC live channel.",
+  "start_url": "/apps/launch.html?app=shoplc",
+  "scope": "/apps/",
+  "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
+  "background_color": "#141322",
+  "theme_color": "#af3361",
+  "lang": "en-US",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/apps/icons/shoplc-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apps/icons/shoplc-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apps/icons/shoplc.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open ShopLC",
+      "short_name": "Open",
+      "url": "/apps/launch.html?app=shoplc"
+    }
+  ]
+}

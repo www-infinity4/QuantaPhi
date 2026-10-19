@@ -1,0 +1,43 @@
+{
+  "id": "/apps/id/news-phi",
+  "name": "News Phi · Infinity 2026",
+  "short_name": "News Phi",
+  "description": "Read and collect stories from News Phi.",
+  "start_url": "/apps/launch.html?app=news-phi",
+  "scope": "/apps/",
+  "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
+  "background_color": "#141322",
+  "theme_color": "#bd542f",
+  "lang": "en-US",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/apps/icons/news-phi-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apps/icons/news-phi-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apps/icons/news-phi.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open News Phi",
+      "short_name": "Open",
+      "url": "/apps/launch.html?app=news-phi"
+    }
+  ]
+}

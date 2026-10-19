@@ -1,0 +1,23 @@
+name: Infinity Chrome App Suite
+on:
+  push:
+    paths:
+      - 'apps/**'
+      - 'test/suite-pwa.test.cjs'
+      - '.github/workflows/suite-pwa.yml'
+  pull_request:
+    paths:
+      - 'apps/**'
+      - 'test/suite-pwa.test.cjs'
+      - '.github/workflows/suite-pwa.yml'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test test/suite-pwa.test.cjs
