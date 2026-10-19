@@ -2,7 +2,44 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {githubOperation,directGithubAgent} from '../workers/infinity-brain-clock/direct-github.mjs';
+import {directGithubTools,decodeGithubStep} from '../workers/infinity-brain-clock/github-tool-schema.mjs';
 const repository='www-infinity4/QuantaPhi',sha='a'.repeat(40),next='b'.repeat(40);
+test('the model receives only primitives appropriate to its authorized task mode',()=>{
+ const names=mode=>directGithubTools(mode).map(t=>t.function.name);
+ assert.ok(names('read').includes('read_file'));assert.ok(names('read').includes('finish'));
+ assert.ok(!names('read').includes('commit_files'));assert.ok(!names('read').includes('dispatch_workflow'));
+ assert.ok(names('write').includes('commit_files'));assert.ok(!names('write').includes('dispatch_workflow'));
+ assert.ok(names('actions').includes('dispatch_workflow'));assert.ok(!names('actions').includes('commit_files'));
+ assert.ok(!JSON.stringify(directGithubTools('write')).includes('GITHUB_TOKEN'));
+});
+test('structured tool output supports Workers AI, Chat Completions and Responses envelopes',()=>{
+ for(const answer of [
+  {tool_calls:[{name:'read_file',arguments:{path:'README.md',ref:sha}}]},
+  {choices:[{message:{tool_calls:[{function:{name:'read_file',arguments:JSON.stringify({path:'README.md',ref:sha})}}]}}]},
+  {output:[{type:'function_call',name:'read_file',arguments:JSON.stringify({path:'README.md',ref:sha})}]}
+ ])assert.deepEqual(decodeGithubStep(answer),{action:'read_file',args:{path:'README.md',ref:sha}});
+ assert.throws(()=>decodeGithubStep({tool_calls:[{name:'list_runs'},{name:'commit_files'}]}),/single_tool/);
+ assert.throws(()=>decodeGithubStep({tool_calls:[{name:'shell',arguments:{command:'anything'}}]}),/unknown_tool/);
+ assert.throws(()=>decodeGithubStep({tool_calls:[{name:'read_file',arguments:'[]'}]}),/invalid_arguments/);
+});
+test('a structured plan executes the real adapter and feeds its actual receipt into the next reasoning step',async()=>{
+ const modelInputs=[],receipts=[];
+ const outputs=[{tool_calls:[{name:'list_runs',arguments:{}}]},
+  {output:[{type:'function_call',name:'finish',arguments:JSON.stringify({summary:'Read actual workflow runs.'})}]}];
+ const env={GITHUB_TOKEN:'fixture-token',WRITER_AI:{run:async(model,input)=>{modelInputs.push(structuredClone(input));return outputs.shift();}}};
+ const result=await directGithubAgent(env,{repository,request:'Inspect actual workflow runs',mode:'read'},async url=>
+  Response.json(url.includes('/actions/runs')?{workflow_runs:[{id:71,status:'completed',conclusion:'failure',head_sha:sha}]}:{default_branch:'main'}),async r=>receipts.push(r));
+ assert.equal(result.status,'inspected');assert.equal(result.testsVerified,false);
+ assert.equal(receipts[0].runs[0].conclusion,'failure');
+ assert.equal(modelInputs[0].tool_choice,'auto');assert.ok(modelInputs[0].tools.length>0);
+ assert.match(modelInputs[1].messages.at(-1).content,/"conclusion":"failure"/);
+});
+test('structured output cannot bypass task mode even when the provider ignores the offered tool list',async()=>{
+ const env={GITHUB_TOKEN:'fixture-token',WRITER_AI:{run:async()=>({tool_calls:[{name:'commit_files',arguments:{}}]})}};
+ let requests=0;
+ await assert.rejects(directGithubAgent(env,{repository,request:'Inspect source',mode:'read'},async()=>{requests++;return Response.json({default_branch:'main'});}),/direct_write_not_requested/);
+ assert.equal(requests,1,'only the initial credential/read capability probe occurred');
+});
 test('direct GitHub HTTP endpoint requires the existing owner session before forwarding',async()=>{
  const source=readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')
   .replace(/^import .*;\n/gm,'').replace(/export (?=(?:async )?function|class)/g,'').replace('export default{','return {');
