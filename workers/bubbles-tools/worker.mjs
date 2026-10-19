@@ -25,7 +25,7 @@ export async function analyzePhoto(request,env,body){
  }catch{return response(request,{ok:false,error:'image_model_unavailable'},503);}
 }
 
-function headers(request){return {'Content-Type':'application/json','Cache-Control':'no-store','Access-Control-Allow-Origin':ORIGINS.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Vary':'Origin','Access-Control-Allow-Headers':'Content-Type','Access-Control-Allow-Methods':'POST,GET,OPTIONS'};}
+function headers(request){return {'Content-Type':'application/json','Cache-Control':'no-store','Access-Control-Allow-Origin':ORIGINS.has(request.headers.get('Origin'))?request.headers.get('Origin'):'https://quantaphi.org','Vary':'Origin','Access-Control-Allow-Headers':'Authorization, Content-Type','Access-Control-Allow-Methods':'POST,GET,OPTIONS'};}
 function response(request,body,status=200){return new Response(JSON.stringify(body),{status,headers:headers(request)});}
 export function validateSpeechAudio(audio) {
  if(typeof audio!=='string'||audio.length>520000||!audio.length||!/^[A-Za-z0-9+/]*={0,2}$/.test(audio))throw Error('invalid_audio');
@@ -130,6 +130,26 @@ export function parseHeadlines(xml,now=Date.now()){
  }
  return items;
 }
+// Forward only the user's concrete create command and existing owner session.
+// The Brain validates the session and uses its encrypted Moltnook credential.
+export async function createGithubRepository(request,env,body,receipt){
+ const blocked=(reason,output)=>response(request,{ok:true,output,receipt:{...receipt,status:'blocked',reason}});
+ const authorization=request.headers.get('Authorization')||'';
+ if(!/^Bearer [A-Za-z0-9._~-]{16,512}$/.test(authorization))return blocked('owner_authorization_required','Connect owner tools in Bubbles before creating a repository. No repository was created or queued.');
+ if(!env.BRAIN?.fetch)return blocked('github_executor_unavailable','The GitHub executor is unavailable. No repository was created or queued.');
+ const question=clean(body.request);
+ const name=question.match(/\b(?:named|called)\s+([A-Za-z0-9_.-]+)/i)?.[1];
+ const repository=body.repository||(name?'www-infinity4/'+name:'');
+ if(!/^www-infinity4\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99}$/.test(repository))return blocked('repository_name_required','Tell me the repository name, for example: create a repository named StoryPhi.');
+ const requestId=body.requestId;
+ if(!/^[0-9a-f-]{36}$/i.test(requestId||''))return blocked('request_id_required','The create request needs a stable request ID before it can run. No repository was created or queued.');
+ try{
+  const upstream=await env.BRAIN.fetch('https://brain.internal/work/github',{method:'POST',headers:{Authorization:authorization,Origin:request.headers.get('Origin'),'Content-Type':'application/json'},body:JSON.stringify({action:'create_repository',repository,requestId,description:clean(body.description,350),private:body.private===true}),signal:AbortSignal.timeout(90000)});
+  const result=await upstream.json();
+  const verified=upstream.ok&&result.ok===true&&result.status==='repository_created'&&result.repository===repository&&result.url==='https://github.com/'+repository;
+  return response(request,{ok:true,output:verified?'Created '+repository+'. '+result.url:'GitHub creation was not confirmed: '+clean(result.error||result.status||'executor_unavailable',150)+'. Check this request’s receipt before retrying.',...(verified?{url:result.url}:{}),result,receipt:{...receipt,status:verified?'complete':result.status==='working'?'working':'blocked',requestId,repository,provider:'owner-authenticated-brain',repositoryActionsVerified:verified}});
+ }catch{return response(request,{ok:true,output:'The GitHub executor did not return a final result. Check this request’s receipt before retrying.',receipt:{...receipt,status:'unconfirmed',requestId,repository,reason:'github_executor_response_missing',repositoryActionsVerified:false}});}
+}
 async function execute(request,env,body){
  const question=clean(body.request);if(!question)return response(request,{ok:false,error:'request_required'},400);
  const tool=['resonance.calculate','web.search','weather.current','news.headlines'].includes(body.tool)?body.tool:chooseTool(question),id=crypto.randomUUID();
@@ -157,7 +177,7 @@ async function execute(request,env,body){
   return response(request,{ok:true,output,query:result.query,sources,googleSearchUrl:result.googleSearchUrl,
    searchProvider:result.provider,googleVerified:result.googleVerified,receipt:{...receipt,status:result.ok?'complete':'failed',provider:result.provider,googleVerified:result.googleVerified}});
  }
- if(tool==='github.create_repository')return response(request,{ok:true,output:'I cannot create that GitHub repository yet. This bubble has no authenticated repository-creation connection. No repository was created or queued.',receipt:{...receipt,status:'blocked',reason:'github_creation_connection_required'}});
+ if(tool==='github.create_repository')return createGithubRepository(request,env,body,receipt);
  if(tool==='news.headlines'){
   try{
    const url='https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en';
@@ -243,7 +263,7 @@ export default {async fetch(request,env){
  const url=new URL(request.url);
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
  if(url.pathname==='/mcp')return handleMcp(request,env,command=>runMcpRead(request,env,command));
- if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',tools:{news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubCreate:'not_connected',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
+ if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',tools:{news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
  if(request.method==='POST'&&url.pathname==='/v1/transcribe')return transcribe(request,env);
@@ -260,7 +280,7 @@ export default {async fetch(request,env){
   if(text.length>70000)return response(request,{ok:false,error:'body_too_large'},413);
   const result=await execute(request,env,body);if(!result.ok)return result;
   const data=await result.clone().json();
-  if(data.model||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
+  if(data.model||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
   return await gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
  }catch(error){
   const invalid=error instanceof SyntaxError;

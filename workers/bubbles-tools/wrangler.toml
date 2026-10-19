@@ -12,3 +12,7 @@ environment = "production"
 
 [ai]
 binding = "AI"
+
+[[services]]
+binding = "BRAIN"
+service = "infinity-brain-clock"
