@@ -33,3 +33,14 @@ test('recovery uses Android 12 compatible AbortController with response-body tim
  assert.match(page,/await response\.json\(\)\.catch/);
  assert.doesNotMatch(page,/AbortSignal\.timeout\(/);
 });
+
+// Direct Bubbles recovery must reveal the verification panel without issuing grants.
+test('Bubbles opens the Cloudflare verification form directly',()=>{
+ const brain=fs.readFileSync('robot-brain-owner.js','utf8');
+ const bubbles=fs.readFileSync('bubbles.html','utf8');
+ assert.match(brain,/wallet-recovery\.html\?return=robot-brain&verify=1/);
+ assert.match(bubbles,/wallet-recovery\.html\?verify=1/);
+ assert.match(page,/OPEN_VERIFICATION/);
+ assert.match(page,/No new code was issued/);
+ assert.doesNotMatch(worker,/\/v1\/wallet\/create-recovery/);
+});
