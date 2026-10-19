@@ -79,6 +79,13 @@ export async function githubStarCoinBackup({token,repository,snapshot,mode='writ
     try {previous=JSON.parse(decode(prior.content));}
     catch {throw Error('backup_malformed_review_required');}
   }
+  // A GitHub author can edit a JSON file or even rewrite branch history.
+  // A matching text hash is not evidence unless it matches the file's data.
+  if(previous){
+    if(!/^[a-f0-9]{64}$/.test(previous.hash||'')||
+       await sha(JSON.stringify(previous.data))!==previous.hash)
+       throw Error('backup_mismatch_review_required');
+  }
   const consistency=compareStarCoinBackup(previous?.data||null,snapshot.data);
   if(mode==='verify')return {status:previous?.hash===snapshot.hash?'matched':previous?'cloud_advanced_review_needed':'backup_missing',
     consistency:consistency.status,repository,cloudHash:snapshot.hash,githubHash:previous?.hash||null};
