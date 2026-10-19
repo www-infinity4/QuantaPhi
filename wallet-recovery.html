@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Find My Cloud Wallet — QuantaPhi</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#291c38;background:#f7f4fb}
+*{box-sizing:border-box}body{margin:0;padding:18px}.wrap{max-width:690px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 0 18px}
+header strong{font-size:22px;color:#58238c}header a{color:#5b268b}
+main{background:white;border:1px solid #e7dcef;border-radius:21px;box-shadow:0 5px 25px #2b154714;padding:22px}
+h1{font-size:25px;margin:0 0 12px}h2{font-size:18px;margin:22px 0 12px}
+p{line-height:1.55}.note{background:#f4edfa;border-radius:13px;padding:12px;font-size:14px}
+label{display:block;font-size:14px;font-weight:700;margin:12px 0 5px}
+input{width:100%;padding:13px;border-radius:12px;border:1px solid #b7a3cf;font-size:16px}
+button{appearance:none;border:0;border-radius:14px;padding:13px 16px;font-weight:800;font-size:16px;background:#622b9b;color:white;cursor:pointer;min-height:48px}
+button:disabled{opacity:.55;cursor:wait}button.secondary{background:#f0e5fa;color:#482174;border:1px solid #c3a7dd}
+.actions{display:flex;flex-wrap:wrap;gap:10px}.actions>*{flex:1 1 180px}
+#message{min-height:24px;font-weight:650;line-height:1.5;margin:14px 0}
+#results[hidden],#signin[hidden]{display:none}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.stat{background:#f5f0fa;border:1px solid #e1d4ef;padding:15px;border-radius:14px}
+.stat strong{display:block;font-size:24px;color:#58238c}.stat small{font-size:12px;color:#665674}
+ul{line-height:1.65;padding-left:22px;overflow-wrap:anywhere}
+.warning{color:#8c3319}.good{color:#276b48}footer{font-size:12px;color:#6f617a;text-align:center;padding:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><strong>QuantaPhi</strong><a href="/">Return to search</a></header>
+<main>
+<h1>Find My Cloud Wallet</h1>
+<p>Search your existing Cloudflare wallet records for StarCoins, Quants, Infinity tokens and Music Quants. The scan is read-only and does not mint, transfer, or reset tokens.</p>
+<p class="note">Clearing Chrome data may remove the saved device connection, not the Cloudflare ledger. If your device is no longer recognized, verify your existing StarQuest account below to reconnect. Do not create a new wallet.</p>
+<div class="actions">
+<button id="scan" type="button">Search Cloudflare for My Tokens</button>
+<button id="showSignin" class="secondary" type="button">Reconnect Existing Account</button>
+</div>
+<div id="message" role="status" aria-live="polite"></div>
+<form id="signin" hidden autocomplete="on">
+<h2>Verify your existing StarQuest account</h2>
+<label for="username">StarQuest username</label>
+<input id="username" autocomplete="username" maxlength="48" required>
+<label for="password">Existing password</label>
+<input id="password" type="password" autocomplete="current-password" required>
+<p class="note">Your password is processed in this browser. An account proof is checked against Cloudflare; the password itself is not stored or sent. A new device connection is registered only after your existing account is verified.</p>
+<button id="restore" type="submit">Verify and Reconnect</button>
+</form>
+<section id="results" hidden aria-live="polite">
+<h2>Verified Cloudflare records</h2>
+<p id="account"></p><div id="stats" class="stats"></div>
+<h2>Inventory and recent history</h2><ul id="details"></ul>
+<p class="note">Balances are taken from the server. Token records and history may be limited to the latest 500 entries. Available balances are not the same as a list of individually unspent token IDs. Records belonging to another account will not be attached automatically.</p>
+<div class="actions"><button class="secondary" id="rescan" type="button">Search Again</button><button id="back" type="button">Return to QuantaPhi</button></div>
+</section>
+</main>
+<footer>Infinity 2026® · Cloudflare D1 recovery · Private account verification required</footer>
+</div>
+<script>
+(function(){
+'use strict';
+const STAR='https://starquest-ledger.marvaseater.workers.dev';
+const UNIFIED='https://unified-wallet.marvaseater.workers.dev';
+const QUANT='https://quanta-phi-ledger.marvaseater.workers.dev';
+const $=id=>document.getElementById(id);
+const prefix='starquest_ledger_device_v1:';
+let working=false;
+const msg=(value,bad=false)=>{const e=$('message');e.textContent=value;e.className=bad?'warning':'good'};
+const fmt=n=>Number.isFinite(Number(n))?new Intl.NumberFormat().format(Number(n)):'Unavailable';
+function el(tag,txt,cls){const e=document.createElement(tag);e.textContent=txt;if(cls)e.className=cls;return e}
+function tokenFor(username){
+  try{
+    const value=localStorage.getItem(prefix+String(username).toLowerCase());
+    if(/^sq_[A-Za-z0-9_-]{32,}$/.test(value||''))return value;
+  }catch(_){}
+  return '';
+}
+function savedCredentials(){
+  try{
+    const session=JSON.parse(localStorage.getItem('starquest_session')||'null');
+    const username=String(session?.username||session?.key||'').trim().toLowerCase();
+    if(username&&tokenFor(username))return {username,token:tokenFor(username)};
+    const found=[];
+    for(let i=0;i<localStorage.length;i++){
+      const key=localStorage.key(i)||'';
+      if(key.startsWith(prefix)&&tokenFor(key.slice(prefix.length)))found.push({username:key.slice(prefix.length),token:tokenFor(key.slice(prefix.length))});
+    }
+    return found.length===1?found[0]:null;
+  }catch(_){return null}
+}
+async function api(origin,path,token,body){
+  const response=await fetch(origin+path,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:{Authorization:'Bearer '+token},body:body?JSON.stringify(body):undefined,cache:'no-store',signal:AbortSignal.timeout(14000)});
+  const payload=await response.json().catch(()=>({}));
+  if(!response.ok||payload.ok===false)throw Error(payload.message||payload.error||'Cloud request failed ('+response.status+')');
+  return payload;
+}
+async function proof(password,username){
+  const bytes=new TextEncoder(),key=await crypto.subtle.importKey('raw',bytes.encode(password),'PBKDF2',false,['deriveBits']);
+  const bits=await crypto.subtle.deriveBits({name:'PBKDF2',hash:'SHA-256',salt:bytes.encode('starquest-v1-'+username),iterations:100000},key,256);
+  return Array.from(new Uint8Array(bits),b=>b.toString(16).padStart(2,'0')).join('');
+}
+function stat(label,value){
+  const e=el('div','','stat');e.append(el('strong',fmt(value)),el('small',label));$('stats').append(e);
+}
+function detail(text){$('details').append(el('li',text))}
+async function scan(username,token){
+  const [s,u,q]=await Promise.allSettled([
+    api(STAR,'/v1/state',token),
+    api(UNIFIED,'/v1/wallet/state',token),
+    api(QUANT,'/v1/quants/state',token)
+  ]);
+  if(s.status!=='fulfilled')throw Error('StarQuest device connection is missing or invalid. Reconnect your existing account.');
+  const star=s.value.state||{};
+  if(username&&String(star.username||'').toLowerCase()!==username.toLowerCase())throw Error('Account identity mismatch. No records were changed.');
+  $('results').hidden=false;$('stats').replaceChildren();$('details').replaceChildren();
+  $('account').textContent='Verified StarQuest account: '+star.username;
+  stat('Available StarCoins',Number(star.starCoins||0)+Number(star.pendingShareCredits||0)/10);
+  detail('StarQuest: '+(Array.isArray(star.ledger)?star.ledger.length:0)+' recent ledger events returned; '+fmt(star.shareCount||0)+' confirmed share actions recorded.');
+  if(u.status==='fulfilled'){
+    const v=u.value;
+    if(String(v.user?.username||'').toLowerCase()!==String(star.username||'').toLowerCase())throw Error('Unified wallet identity mismatch. No balances were changed.');
+    stat('Available Infinity',v.balances?.INFINITY);
+    stat('Available Quants',v.balances?.QUANT);
+    stat('Music Quants',v.balances?.MUSIC_QUANT);
+    detail('Unified token records returned: '+(Array.isArray(v.tokens)?v.tokens.length:0)+' (latest 500 maximum).');
+    detail('Recent unified wallet transactions returned: '+(Array.isArray(v.history)?v.history.length:0)+' (latest 500 maximum).');
+    if(v.updatedAt)detail('Wallet state last updated: '+new Date(v.updatedAt).toLocaleString()+'.');
+    const counts={};for(const item of (v.tokens||[]))counts[item.token_type]=(counts[item.token_type]||0)+1;
+    if(Object.keys(counts).length)detail('Token types: '+Object.entries(counts).map(([k,n])=>k+': '+fmt(n)).join('; ')+'.');
+    if(q.status==='fulfilled'){
+      if(v.user?.id&&q.value.user_id&&v.user.id!==q.value.user_id)throw Error('Quant account mismatch. No records were changed.');
+      detail('Independent Quant ledger reports '+fmt(q.value.balance)+' Quants.');
+      if(Number(q.value.balance)!==Number(v.balances?.QUANT))detail('Quant balance mismatch detected. No automatic adjustment was made.');
+    }else detail('The independent Quant ledger is unavailable or has no linked wallet. Existing unified records were not changed.');
+  }else{
+    detail('Infinity/Quant ledger could not be read: '+String(u.reason?.message||'unavailable')+'. Reconnect or request an owner review; no tokens were reset.');
+    if(q.status==='fulfilled'){stat('Quants from ledger',q.value.balance);stat('Infinity from ledger',q.value.infinity_balance)}
+  }
+  msg('Cloudflare search complete. Existing account balances were read without changing credits.');
+}
+async function run(){
+  if(working)return;working=true;$('scan').disabled=true;
+  $('results').hidden=true;
+  try{
+    const saved=savedCredentials();
+    if(!saved){$('signin').hidden=false;msg('Your browser no longer has a verified device connection. Enter your existing account credentials below.',true);return}
+    msg('Searching Cloudflare for your existing wallet records…');
+    await scan(saved.username,saved.token);
+  }catch(e){$('signin').hidden=false;msg(String(e.message||e),true)}
+  finally{working=false;$('scan').disabled=false}
+}
+$('scan').addEventListener('click',run);
+$('rescan').addEventListener('click',run);
+$('back').addEventListener('click',()=>{location.assign('/')});
+$('showSignin').addEventListener('click',()=>{$('signin').hidden=false;$('username').focus()});
+$('signin').addEventListener('submit',async event=>{
+ event.preventDefault();if(working)return;working=true;$('restore').disabled=true;$('results').hidden=true;
+ const username=$('username').value.trim().toLowerCase(),password=$('password').value;
+ try{
+  if(!/^[a-z0-9][a-z0-9._-]{2,47}$/.test(username))throw Error('Enter the exact original StarQuest username.');
+  msg('Verifying your existing account in Cloudflare…');
+  const credentialProof=await proof(password,username);
+  await api(STAR,'/v1/verify-existing','',{username,credentialProof});
+  const bytes=crypto.getRandomValues(new Uint8Array(32));
+  const deviceToken='sq_'+btoa(String.fromCharCode(...bytes)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+  const enrolled=await api(STAR,'/v1/bootstrap','',{username,deviceToken,credentialProof,localState:{}});
+  if(!enrolled.ok||enrolled.importedLocalState!==false||String(enrolled.state?.username||'').toLowerCase()!==username)throw Error('Cloud account was not confirmed. Nothing was imported.');
+  const star=enrolled.state,users=JSON.parse(localStorage.getItem('starquest_users')||'{}');
+  const local=(users&&typeof users==='object'&&!Array.isArray(users))?users:{};
+  local[username]={...local[username],key:username,username,passwordHash:credentialProof,
+   tokens:Number(star.starCoins||0),pendingShareCredits:Number(star.pendingShareCredits||0),
+   shareCount:Number(star.shareCount||0),ledger:Array.isArray(star.ledger)?star.ledger:[],
+   watchHistory:Array.isArray(star.watchHistory)?star.watchHistory:[],
+   joinedAt:Number(local[username]?.joinedAt||Date.now()),lastLoginAt:Date.now()};
+  localStorage.setItem('starquest_users',JSON.stringify(local));
+  localStorage.setItem('starquest_session',JSON.stringify({key:username,username,signedInAt:Date.now()}));
+  localStorage.setItem(prefix+username,deviceToken);
+  $('password').value='';$('signin').hidden=true;
+  await scan(username,deviceToken);
+ }catch(e){msg(String(e.message||e)+' Existing records were not reassigned.',true)}
+ finally{working=false;$('restore').disabled=false}
+});
+})();
+</script>
+</body></html>
