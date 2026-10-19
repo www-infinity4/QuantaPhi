@@ -20,7 +20,7 @@ button{appearance:none;border:0;border-radius:14px;padding:13px 16px;font-weight
 button:disabled{opacity:.55;cursor:wait}button.secondary{background:#f0e5fa;color:#482174;border:1px solid #c3a7dd}
 .actions{display:flex;flex-wrap:wrap;gap:10px}.actions>*{flex:1 1 180px}
 #message{min-height:24px;font-weight:650;line-height:1.5;margin:14px 0}
-#results[hidden],#signin[hidden]{display:none}
+#results[hidden],#signin[hidden],#ownerRecovery[hidden]{display:none}
 .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .stat{background:#f5f0fa;border:1px solid #e1d4ef;padding:15px;border-radius:14px}
 .stat strong{display:block;font-size:24px;color:#58238c}.stat small{font-size:12px;color:#665674}
@@ -38,6 +38,7 @@ ul{line-height:1.65;padding-left:22px;overflow-wrap:anywhere}
 <div class="actions">
 <button id="scan" type="button">Search Cloudflare for My Tokens</button>
 <button id="showSignin" class="secondary" type="button">Reconnect Existing Account</button>
+<button id="showOwnerRecovery" class="secondary" type="button">Use One-Time Recovery Code</button>
 </div>
 <div id="message" role="status" aria-live="polite"></div>
 <form id="signin" hidden autocomplete="on">
@@ -48,6 +49,13 @@ ul{line-height:1.65;padding-left:22px;overflow-wrap:anywhere}
 <input id="password" type="password" autocomplete="current-password" required>
 <p class="note">Your password is processed in this browser. An account proof is checked against Cloudflare; the password itself is not stored or sent. A new device connection is registered only after your existing account is verified.</p>
 <button id="restore" type="submit">Verify and Reconnect</button>
+</form>
+<form id="ownerRecovery" hidden autocomplete="off">
+<h2>Reconnect your original Cloudflare wallet</h2>
+<p class="note">This single-use code was authorized through Cloudflare account administration. No old password or IP address is needed. It reconnects this browser or APK without moving or recreating any tokens. Your other signed-in wallet is kept separately.</p>
+<label for="ownerRecoveryCode">One-time recovery code</label>
+<input id="ownerRecoveryCode" type="password" spellcheck="false" autocapitalize="off" autocomplete="off" maxlength="64" required>
+<button type="submit" id="redeemOwnerRecovery">Reconnect Original Wallet</button>
 </form>
 <section id="results" hidden aria-live="polite">
 <h2>Verified Cloudflare records</h2>
@@ -174,9 +182,51 @@ async function run(){
   }catch(e){$('signin').hidden=false;msg(String(e.message||e),true)}
   finally{working=false;$('scan').disabled=false}
 }
+
+let justRecovered=false;
+const sharedGrant=new URLSearchParams(location.hash.slice(1)).get('ownerRecovery')||'';
+if(sharedGrant){
+ history.replaceState(history.state,'',location.pathname+location.search);
+ $('ownerRecovery').hidden=false;$('ownerRecoveryCode').value=sharedGrant;
+ msg('One-time Cloudflare recovery is ready. Tap Reconnect Original Wallet to restore this device.');
+}
+$('showOwnerRecovery').addEventListener('click',()=>{$('ownerRecovery').hidden=false;$('ownerRecoveryCode').focus()});
+$('ownerRecovery').addEventListener('submit',async event=>{
+ event.preventDefault();if(working)return;
+ working=true;$('redeemOwnerRecovery').disabled=true;$('results').hidden=true;
+ const recoveryCode=$('ownerRecoveryCode').value.trim();
+ try{
+  if(!/^wrc_[A-Za-z0-9_-]{43}$/.test(recoveryCode))throw Error('A valid single-use Cloudflare recovery code is required.');
+  const bytes=crypto.getRandomValues(new Uint8Array(32));
+  const deviceToken='sq_'+btoa(String.fromCharCode(...bytes)).replaceAll('+','-').replaceAll('/','_').replace(/=+$/,'');
+  msg('Confirming the one-time Cloudflare wallet grant…');
+  const response=await api(UNIFIED,'/v1/wallet/redeem-recovery','',{recoveryCode,deviceToken});
+  const username=String(response.username||'').trim().toLowerCase();
+  if(!response.ok||!response.recovered||!username.startsWith('device_')||username.length>48)throw Error('Original device wallet could not be verified.');
+  const verified=await api(STAR,'/v1/state',deviceToken);
+  if(!verified.ok||String(verified.state?.username||'').toLowerCase()!==username)throw Error('Cloudflare has not confirmed the restored wallet.');
+  const star=verified.state,profiles=JSON.parse(localStorage.getItem('starquest_users')||'{}');
+  const users=profiles&&!Array.isArray(profiles)&&typeof profiles==='object'?profiles:{};
+  users[username]={...users[username],key:username,username,passwordHash:'',
+   tokens:Number(star.starCoins||0),pendingShareCredits:Number(star.pendingShareCredits||0),
+   shareCount:Number(star.shareCount||0),ledger:Array.isArray(star.ledger)?star.ledger:[],
+   watchHistory:Array.isArray(star.watchHistory)?star.watchHistory:[],
+   joinedAt:Number(users[username]?.joinedAt||Date.now()),lastLoginAt:Date.now()};
+  localStorage.setItem('starquest_users',JSON.stringify(users));
+  localStorage.setItem(prefix+username,deviceToken);
+  localStorage.setItem('starquest_session',JSON.stringify({key:username,username,signedInAt:Date.now()}));
+  $('ownerRecoveryCode').value='';$('ownerRecovery').hidden=true;justRecovered=true;
+  await scan(username,deviceToken);
+  $('back').textContent='Open Bubbles with restored wallet';
+  await finishBrainRecovery(deviceToken);
+  msg('Existing Cloudflare wallet restored on this device. No StarCoins, Quants or Infinity records were changed.');
+ }catch(error){msg(String(error.message||error)+' The original ledger was not changed.',true)}
+ finally{working=false;$('redeemOwnerRecovery').disabled=false;$('ownerRecoveryCode').value=''}
+});
+
 $('scan').addEventListener('click',run);
 $('rescan').addEventListener('click',run);
-$('back').addEventListener('click',()=>{location.assign(RETURN_TO_BRAIN?'/#robotDirections':'/')});
+$('back').addEventListener('click',()=>{location.assign(justRecovered?'/bubbles.html':RETURN_TO_BRAIN?'/#robotDirections':'/')});
 $('showSignin').addEventListener('click',()=>{$('signin').hidden=false;$('username').focus()});
 $('signin').addEventListener('submit',async event=>{
  event.preventDefault();if(working)return;working=true;$('restore').disabled=true;$('results').hidden=true;

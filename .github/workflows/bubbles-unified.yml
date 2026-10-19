@@ -5,6 +5,9 @@ on:
       - 'bubbles-ai.js'
       - 'bubbles-cloud-wallet.js'
       - 'test/bubbles-cloud-wallet-history.test.cjs'
+      - 'wallet-recovery.html'
+      - 'test/bubbles-owner-wallet-recovery.test.cjs'
+      - 'workers/unified-wallet/wallet-recovery-schema.sql'
       - 'workers/unified-wallet/worker.js'
       - 'bubbles-card-*'
       - 'bubbles-brain-actions.js'
@@ -55,7 +58,7 @@ jobs:
           node-version: '22'
       - run: node --check bubbles-ai.js
       - run: node --check bubbles-cloud-wallet.js
-      - run: node --test test/bubbles-cloud-wallet-history.test.cjs
+      - run: node --test test/bubbles-cloud-wallet-history.test.cjs test/bubbles-owner-wallet-recovery.test.cjs
       - run: node --test test/bubbles-unified.test.mjs
       - name: Verify in-chat cards and repository ticket targets
         run: |
