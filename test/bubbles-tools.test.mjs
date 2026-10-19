@@ -219,3 +219,17 @@ test('lost executor response remains unconfirmed and never retries creation',asy
  const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org',Authorization:'Bearer rb_'+'a'.repeat(64)},body:JSON.stringify({request:'create a repo named Rain',requestId:crypto.randomUUID()})}),{BRAIN:{fetch:async()=>{calls++;throw Error('timeout');}}});
  assert.equal(calls,1);const result=await r.json();assert.equal(result.receipt.status,'unconfirmed');assert.equal(result.receipt.repositoryActionsVerified,false);
 });
+
+test('single-letter or article-only repository names never reach GitHub from Bubbles Tools',async()=>{
+ const {createGithubRepository}=await import('../workers/bubbles-tools/worker.mjs');
+ let calls=0;
+ const request=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org',Authorization:'Bearer '+ 'x'.repeat(32)}});
+ const env={BRAIN:{fetch:async()=>{calls++;return Response.json({ok:true})}}};
+ for(const name of ['a','the','new']){
+  const reply=await createGithubRepository(request,env,{request:'Create a repository named '+name,repository:'www-infinity4/'+name,requestId:'550e8400-e29b-41d4-a716-446655440000'},{id:'test'});
+  const body=await reply.json();
+  assert.equal(body.receipt.status,'blocked');
+  assert.equal(body.receipt.reason,'repository_name_ambiguous');
+ }
+ assert.equal(calls,0);
+});

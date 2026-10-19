@@ -131,6 +131,9 @@ test('spoken replies keep the same microphone and recognizer active',async()=>{
  assert.equal(h.recognized.length,1);assert.equal(h.track.stopped,false);
  h.utterances[0].onend();h.advance(950);
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles hello')]});await flush();
+ assert.equal(h.requests.length,0,'early echo after spoken playback stays quarantined');
+ h.advance(1600);
+ h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles hello')]});await flush();
  assert.equal(h.requests.length,1);assert.equal(h.recognized[0].stopped,undefined);assert.equal(h.track.stopped,false);
  h.recognized[0].onresult({resultIndex:0,results:[result('Bubbles response from Oracle')]});await flush();
  assert.equal(h.requests.length,1,'synthesized speech is not sent back into AI');

@@ -981,7 +981,7 @@ function speakText(value){
     if(completed)return;
     completed=true;clearTimeout(watchdog);
     if(version!==playbackVersion)return;
-    speaking=false;voiceEchoUntil=Date.now()+900;
+    speaking=false;voiceEchoUntil=Date.now()+2500;
     if(voiceEnabled){setOrbState('listening');void streamVoice?.resume()}else setOrbState('idle');
    };
    utterance.onend=finished;utterance.onerror=finished;
@@ -1665,9 +1665,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }
  else if(!embedded&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){
   const named=request.match(/\bwww-infinity4\/[A-Za-z0-9_.-]+\b/);
+  // Repository names must be explicitly introduced by "named" or "called".
+  // Do not mistake the article "a" in "create a repo" for a repository name.
   const repoName=createRepository?(request.match(/\brepo(?:sitory)?\s+(?:(?:to\s+be\s+)?(?:called|named)|with\s+the\s+name)\s+([A-Za-z0-9_.-]+)/i)?.[1]
-   ||request.match(/\brepo(?:sitory)?\s+([A-Za-z0-9_.-]+)\s*[.!?]*$/i)?.[1]
-   ||request.match(/\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*([A-Za-z][\w.-]*)\s+(?:github\s+)?repo(?:sitory)?\b/i)?.[1]):'';
+   ||request.match(/\b(?:called|named)\s+(?:repo(?:sitory)?\s+)?([A-Za-z0-9_.-]+)/i)?.[1]
+   ||''):'';
   let repository=named?.[0]||(repoName?'www-infinity4/'+repoName:'');
   // Never silently route the owner's instruction to QuantaPhi when a different
   // repository was selected or the project identity is genuinely uncertain.
