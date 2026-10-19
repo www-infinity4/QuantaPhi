@@ -56,7 +56,8 @@ public final class MainActivity extends Activity {
         TextView copy = new TextView(this);
         copy.setText("Use Recommended setup, approve Android permissions, then say Bubbles to open the assistant. "
             + "Screen access stays under your Android control. Say 'Bubbles, record' to request screen-recording approval. "
-            + "Your Bubbles website session stays signed in on this phone while valid; Chrome logins are not imported automatically.");
+            + "Use Chrome to install the same Bubbles website as a home-screen app. Say 'open Bubbles in Chrome' or "
+            + "'tap Search in Chrome' for visible browser controls. Chrome logins are not imported automatically into the native overlay.");
         copy.setTextColor(Color.rgb(101, 83, 111));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
@@ -107,6 +108,13 @@ public final class MainActivity extends Activity {
             state.setText("In Accessibility settings, enable Brain workflow learning for Bubbles Preview. Android asks you to approve it once.");
         });
         layout.addView(screenAccess);
+        // Chrome app is the regular QuantaPhi website origin, so it can keep
+        // Chrome's valid site session. It is not an Android overlay replacement.
+        Button chromeSite = new Button(this);
+        chromeSite.setText("Chrome · install or open Bubbles website");
+        chromeSite.setOnClickListener(v -> state.setText(AppControlBridge.openChromeSite(
+            this, "https://quantaphi.org/bubbles.html", "Bubbles website in Chrome")));
+        layout.addView(chromeSite);
         Button phoneTool = new Button(this);
         phoneTool.setText("Allow IBM / Gemini phone tool for 10 minutes");
         phoneTool.setOnClickListener(v -> {
@@ -591,7 +599,7 @@ public final class MainActivity extends Activity {
         // Advanced diagnostics, recorder, IBM/Gemini and learning settings
         // are still present in their original order when expanded.
         java.util.List<View> essentials = java.util.Arrays.asList(
-            title, copy, recommended, screenPermission, screenAccess,
+            title, copy, recommended, screenPermission, screenAccess, chromeSite,
             accountState, chatgptLogin, chatgptLogout, githubAccess, chat, stop, state);
         LinearLayout advanced = new LinearLayout(this);
         advanced.setOrientation(LinearLayout.VERTICAL);

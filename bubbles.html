@@ -7,6 +7,10 @@
   <title>Bubbles AI — Voice Assistant for Research and Tasks | QuantaPhi</title>
   <meta name="description" content="Program your own Bubbles AI specialist and speak with your floating voice assistant.">
   <link rel="canonical" href="https://quantaphi.org/bubbles.html">
+  <link rel="manifest" href="/bubbles.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/bubbles-pwa-192.png">
+  <link rel="apple-touch-icon" href="/assets/bubbles-pwa-192.png">
+  <meta name="theme-color" content="#5f259f">
   <link rel="stylesheet" href="/bubbles-ai.css?v=20261017-reporoute1">
   <style>
     html{min-height:100%;background:#f7f4f0}
@@ -46,12 +50,19 @@
   <script defer src="/bubbles-brain-actions.js?v=20261017-verified-receipts1"></script>
   <script defer src="/bubbles-memory.js?v=20261014-memory2"></script>
   <script defer src="/bubbles-ai.js?v=20261018-readable3"></script>
+  <script defer src="/bubbles-pwa.js?v=20261019-chrome1"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1">
 <link rel="stylesheet" href="/bubbles-native-chat.css?v=20261015-readable29">
   <link rel="stylesheet" href="/bubbles-unified.css?v=20261016-overhaul1"></head>
 <body class="oracle-octaves-page">
 <p style="padding:12px"><a href="/bubbles-accounts.html">Connect accounts · GitHub and Google</a></p>
   <main class="bubbles-page">
+    <section aria-label="Install Bubbles in Chrome" style="background:#fff;border:1px solid #d9cbe7;border-radius:16px;padding:14px;margin:8px 0 16px">
+      <strong>Bubbles Chrome app</strong>
+      <p style="margin:5px 0 12px">Install Bubbles from Chrome to your Android home screen. It uses this browser's QuantaPhi website session. Phone-wide screen access still requires the Bubbles Android APK and Android Accessibility permission.</p>
+      <button id="bubblesInstallChrome" type="button" hidden style="border:0;background:#5f259f;color:#fff;padding:12px 18px;border-radius:12px;font-weight:800">Install Bubbles in Chrome</button>
+      <p id="bubblesInstallStatus" role="status" aria-live="polite" style="font-size:14px;margin:6px 0 0">Chrome menu → Install app or Add to Home screen.</p>
+    </section>
     <a href="https://quantaphi.org/">← QuantaPhi</a>
     <section class="bubbles-intro" aria-labelledby="bubbles-title">
       <div class="bubbles-art" role="img" aria-label="Bubbles in shades, surrounded by iridescent bubbles and a nuclear science card"></div>
