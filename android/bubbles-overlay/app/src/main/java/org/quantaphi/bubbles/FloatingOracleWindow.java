@@ -573,9 +573,7 @@ final class FloatingOracleWindow {
             captureState.put("screenActive", prefs.getBoolean("capture_active", false));
             captureState.put("screenRecording", prefs.getBoolean("capture_recording", false));
             captureState.put("soundActive", prefs.getBoolean("audio_active", false));
-            captureState.put("xRecording", XRecorderBridge.recordingVerified(service));
-            captureState.put("xPhase", prefs.getString("x_recorder_phase", ""));
-            String readState = prefs.getString("screen_state", "");
+            String readState = prefs.getString("capture_state", "");
             captureState.put("simInspection", true);
             captureState.put("screenSharing", service.isScreenSharing());
             captureState.put("readState", readState.substring(0, Math.min(1800, readState.length())));
