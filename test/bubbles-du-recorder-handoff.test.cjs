@@ -33,7 +33,7 @@ test('XRecorder controls are available in one extra floating button with short a
 });
 
 test('Accessibility only interacts with installed original XRecorder package, never Android consent',()=>{
- assert.match(du,/com\.duapps\.recorder/);
+ assert.match(du,/videoeditor\.videorecorder\.screenrecorder/);
  assert.match(du,/getLaunchIntentForPackage\(PACKAGE\)/);
  assert.match(du,/BrainLearningService\.tapXRecorderControl\(wanted\)/);
  assert.match(du,/x_recorder_verified/);
@@ -44,7 +44,7 @@ test('Accessibility only interacts with installed original XRecorder package, ne
  assert.match(access,/stop recording\|stop record/);
  assert.doesNotMatch(du,/getMediaProjection\(|performGlobalAction\(|setComponent\(|startService\(/);
  assert.doesNotMatch(access,/performGlobalAction\(.*(?:APPROVE|ALLOW|PERMISSION)/);
- assert.match(manifest,/<package android:name="com\.duapps\.recorder"\/>/);
+ assert.match(manifest,/<package android:name="videoeditor\.videorecorder\.screenrecorder"\/>/);
 });
 
 test('XRecorder cannot silently compete with active Bubbles media projection or assume outcome',()=>{
