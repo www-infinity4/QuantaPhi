@@ -83,3 +83,15 @@ test('one-time code redemption works without AbortSignal.timeout on older Androi
  assert.equal(result.pairedToken,token);
  assert.equal(calls.length,2);
 });
+
+test('expired browser identity offers existing-wallet recovery instead of a new owner claim',()=>{
+ assert.ok(gate.includes('Recognize this device'));
+ assert.ok(gate.includes('Recover existing account'));
+ assert.ok(gate.includes('/wallet-recovery.html?return=robot-brain'));
+ const recovery=fs.readFileSync('wallet-recovery.html','utf8');
+ assert.ok(recovery.includes('/v1/verify-existing'));
+ assert.ok(recovery.includes('importedLocalState!==false'));
+ assert.ok(recovery.includes('finishBrainRecovery(deviceToken)'));
+ assert.ok(recovery.includes("location.assign('/#robotDirections')"));
+ assert.ok(recovery.indexOf("'/v1/verify-existing'")<recovery.indexOf("'/v1/bootstrap'"),'verify the saved account before enrolling a new device');
+});

@@ -162,7 +162,7 @@ function form(message){
  host.dataset.state='locked';
  const details=node('details','','rbo-gate');
  const summary=node('summary','🔒 Robot Brain · owner access');
- const intro=node('p','Your Unified Wallet is checked automatically. To link another Bubbles session, say “link my APK” on your verified QuantaPhi website, then paste its two-minute pairing code here.');
+ const intro=node('p','Robot Brain checks your existing Unified Wallet automatically. If Chrome cleared this device connection, recover your existing cloud account; your saved tokens and Brain ownership must not be reset.');
  const label=node('label','Owner pairing code or recovery key');label.htmlFor='robotBrainOwnerKey';
  const input=node('input');input.id='robotBrainOwnerKey';input.type='password';input.autocomplete='current-password';input.spellcheck=false;input.maxLength=512;
  const button=node('button','Connect owner session');button.type='button';
@@ -179,7 +179,17 @@ function form(message){
  }
  button.addEventListener('click',submit);
  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submit()}});
- details.append(summary,intro,label,input,button,status);host.replaceChildren(details);
+ details.append(summary,intro,label,input,button,status);
+ const actions=node('div','','rbo-recovery-actions');
+ const recognize=node('button','Recognize this device');recognize.type='button';recognize.className='rbo-retry';
+ recognize.addEventListener('click',()=>{if(!busy)void start(0)});
+ const recover=node('a','Recover existing account','rbo-recover');
+ recover.href='/wallet-recovery.html?return=robot-brain';
+ recover.style.cssText='display:inline-block;text-align:center;background:#5e2795;color:#fff;padding:12px 16px;min-height:44px;box-sizing:border-box;border-radius:12px;font-weight:700;text-decoration:none';
+ actions.append(recognize,recover);
+ const explanation=node('p','Already signed in? Tap Recognize this device. If Chrome removed your sign-in, tap Recover existing account and verify the original StarQuest account once. No new wallet is created.');
+ explanation.className='rbo-recovery-help';
+ host.replaceChildren(actions,explanation,details);
 }
 async function start(attempt=0){
  if(!host||host.dataset.state==='verified'||busy)return;
