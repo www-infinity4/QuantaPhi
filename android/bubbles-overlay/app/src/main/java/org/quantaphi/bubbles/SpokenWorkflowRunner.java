@@ -36,7 +36,7 @@ final class SpokenWorkflowRunner {
     void start(SpokenWorkflowPlan next) {
         if (next == null) return;
         if (running) {
-            update("A UI job is already running. Say stop the task before starting another.", true);
+            notify.accept("A UI job is already running. Say stop the task before starting another.", true);
             return;
         }
         if (!BrainLearningService.isConnected()) {
@@ -86,7 +86,9 @@ final class SpokenWorkflowRunner {
         verifyingOpen = false;
         verifyingType = false;
         stepStart = SystemClock.elapsedRealtime();
+        latest = "UI job working. " + index + "/" + plan.steps.size() + " steps accepted.";
         BrainNotes.prefs(context).edit()
+            .putString("workflow_receipt", latest)
             .putInt("workflow_step", index).apply();
         if (index == plan.steps.size()) {
             running = false;
