@@ -1745,7 +1745,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const explicitWeatherTown=/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b.{0,85}\b(?:in|for|at|near)\s+[a-z0-9]/i.test(lookupRequest);
  try{if(liveLookup&&!explicitWeatherTown&&/\b(?:weather|forecast|temperature|rain|snow)\b/i.test(lookupRequest))savedWeatherTown=localStorage.getItem('bubbles-weather-town')||'';}catch{}
  // Opt in to bounded, read-only MCP model tool selection. The MCP bearer key is never present in this WebView.
- const lookupPayload=()=>({request:lookupRequest,input:prompt,mcp:true,location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
+ const toolRequestId=crypto.randomUUID();
+ const lookupPayload=()=>({request:lookupRequest,requestId:toolRequestId,input:prompt,mcp:true,location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
@@ -1765,8 +1766,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(nativeOverlay&&nativeGPTAvailable&&!config.privateContext&&!liveLookup){
    try{const output=await nativeChatGPT(prompt);response={ok:true};json={ok:true,output,provider:'Android ChatGPT plan'};gptStatus.textContent='Response generated using the authorized ChatGPT plan on this phone.'}
    catch(error){nativeGPTAvailable=false;gptStatus.textContent='Android ChatGPT unavailable; using Oracle: '+String(error.message||error).slice(0,90);
-    response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}
-  }else if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}}finally{clearTimeout(timer)}
+    response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}
+  }else if(config.privateContext){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}}finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
   const rawAnswer=extract(json);if(!rawAnswer)throw Error('The AI returned no spoken or written reply');
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));

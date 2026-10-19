@@ -196,3 +196,26 @@ test('internal planning and fabricated createTicket JSON never become Bubbles sp
  assert.doesNotMatch(second.output,/createTicket/);
  assert.equal(second.receipt.repositoryActionsVerified,false);
 });
+
+test('GitHub gateway forwards existing owner session to Brain and requires matching provider receipt',async()=>{
+ const requestId='12345678-1234-4234-8234-123456789abc';
+ const make=()=>new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org',Authorization:'Bearer rb_'+'a'.repeat(64)},body:JSON.stringify({request:'Create a repo named Rain',requestId})});
+ let calls=0;
+ const env={BRAIN:{fetch:async(url,options)=>{calls++;assert.equal(url,'https://brain.internal/work/github');assert.equal(options.headers.Authorization,'Bearer rb_'+'a'.repeat(64));assert.deepEqual(JSON.parse(options.body),{action:'create_repository',repository:'www-infinity4/Rain',requestId,description:'',private:false});return Response.json({ok:true,status:'repository_created',repository:'www-infinity4/Rain',url:'https://github.com/www-infinity4/Rain'});}}};
+ const result=await(await worker.fetch(make(),env)).json();
+ assert.equal(calls,1);assert.equal(result.receipt.repositoryActionsVerified,true);assert.equal(result.receipt.status,'complete');
+ env.BRAIN.fetch=async()=>Response.json({ok:true,status:'repository_created',repository:'someone/Other',url:'https://github.com/someone/Other'});
+ assert.equal((await(await worker.fetch(make(),env)).json()).receipt.repositoryActionsVerified,false);
+});
+test('GitHub gateway refuses missing session, foreign repository and missing stable ID before network',async()=>{
+ const env={BRAIN:{fetch:()=>assert.fail('invalid request must not reach executor')}};
+ for(const [auth,body] of [['',{request:'create a repo named Rain',requestId:crypto.randomUUID()}],['Bearer rb_'+'a'.repeat(64),{request:'create a repo named Rain',repository:'other/Rain',requestId:crypto.randomUUID()}],['Bearer rb_'+'a'.repeat(64),{request:'create a repo named Rain'}]]){
+ const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org',Authorization:auth},body:JSON.stringify(body)}),env);
+ assert.equal((await r.json()).receipt.status,'blocked');
+ }
+});
+test('lost executor response remains unconfirmed and never retries creation',async()=>{
+ let calls=0;
+ const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org',Authorization:'Bearer rb_'+'a'.repeat(64)},body:JSON.stringify({request:'create a repo named Rain',requestId:crypto.randomUUID()})}),{BRAIN:{fetch:async()=>{calls++;throw Error('timeout');}}});
+ assert.equal(calls,1);const result=await r.json();assert.equal(result.receipt.status,'unconfirmed');assert.equal(result.receipt.repositoryActionsVerified,false);
+});
