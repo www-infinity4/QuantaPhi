@@ -14,7 +14,8 @@ final class XRecorderBridge {
         return context.getPackageManager().getLaunchIntentForPackage(PACKAGE) != null;
     }
     static boolean recordingVerified(Context context) {
-        return BrainNotes.prefs(context).getBoolean("x_recorder_verified", false);
+        return BrainNotes.prefs(context).getBoolean("x_recorder_verified", false)
+            && BrainLearningService.xControlVisible("stop");
     }
     static void request(Context context, String action, Handler main) {
         request(context, action, main, null);
@@ -59,15 +60,27 @@ final class XRecorderBridge {
         try {
             context.startActivity(launch.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                 | Intent.FLAG_ACTIVITY_SINGLE_TOP));
-            main.postDelayed(() -> {
-                String result = BrainLearningService.tapXRecorderControl(wanted);
-                if (result.startsWith("XRecorder tap sent:")) verify(context, wanted, main, feedback, 0);
-                else update(context, "needs_tap", "Tap XRecorder to record.", false);
-            }, 650L);
+            tapAfterLaunch(context, wanted, main, feedback, 0);
         } catch (RuntimeException error) {
             update(context, "unavailable", "XRecorder couldn't open.", false);
         }
     }
+    // App UI can take longer than one animation frame; retry only the labeled
+    // control, never use fixed screen coordinates or Android consent buttons.
+    private static void tapAfterLaunch(Context context, String wanted, Handler main,
+            Consumer<String> feedback, int attempt) {
+        main.postDelayed(() -> {
+            String result = BrainLearningService.tapXRecorderControl(wanted);
+            if (result.startsWith("XRecorder tap sent:")) {
+                verify(context, wanted, main, feedback, 0);
+            } else if (attempt < 8) {
+                tapAfterLaunch(context, wanted, main, feedback, attempt + 1);
+            } else {
+                update(context, "needs_tap", "Tap XRecorder to record.", false);
+            }
+        }, attempt == 0 ? 450L : 350L);
+    }
+
     private static void verify(Context context, String wanted, Handler main, Consumer<String> feedback, int attempt) {
         main.postDelayed(() -> {
             boolean visible = BrainLearningService.xControlVisible("start".equals(wanted) ? "stop" : "start");
