@@ -74,3 +74,11 @@ between client cancellation and server execution. Tests cover a body that
 stalls after headers, subsequent request recovery, original-ID GitHub receipt
 watching with exactly one submission, HTTP 401 evidence, and bodyless 204.
 These are simulated transport checks, not Motorola network or runner tests.
+
+The complete Bubbles test glob subsequently reported 445 passes and zero
+failures. Three stale checks were first reproduced against the unchanged
+15d83dfa baseline, then repaired: the VM fixture now accounts explicitly for
+the video API import, the receipt test matches the current warning, and entry
+pages must load matching versioned scripts without pinning an obsolete date.
+The voice harness now supplies real Response objects, exercising the same
+body-consumption interface as a browser rather than a json-only fake.

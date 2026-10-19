@@ -22,9 +22,12 @@ test('Omni Code Phi source is carried into Bubbles and authenticated builder job
  assert.doesNotMatch(makeJobs('Repair the QuantaPhi player')[0].instructions,/Approved Omni Code reference skill/);
  const source=fs.readFileSync('bubbles-ai.js','utf8');
  assert.match(source,/brainTools\?\.omniCodeBrief\?\.\(request\)/);
+ let assets;
  for(const path of ['index.html','bubbles.html','bubbles/index.html']){
   const html=fs.readFileSync(path,'utf8');
-  assert.match(html,/bubbles-ai\.js\?v=20261016-omnicode33/);
-  assert.match(html,/bubbles-brain-actions\.js\?v=20261016-omnicode33/);
+  const current=[html.match(/bubbles-ai\.js\?v=([^"\s]+)/)?.[1],html.match(/bubbles-brain-actions\.js\?v=([^"\s]+)/)?.[1]];
+  assert.ok(current.every(Boolean),'both versioned scripts must be loaded');
+  if(assets)assert.deepEqual(current,assets,'entry pages must load the same versioned integrations');
+  assets=current;
  }
 });
