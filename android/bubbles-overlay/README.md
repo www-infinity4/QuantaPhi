@@ -322,3 +322,6 @@ authorization and event-deduplication behavior, not real Motorola mic concurrenc
   Updates require the identical signing certificate as the installed Preview 5.
   Signing caches are not a permanent release key, and real-phone installation
   and continuous spoken stop/save remain to be verified.
+
+## XRecorder app control (October 18, 2026)
+Bubbles now routes spoken **record**, **record Bubbles**, **Bubbles, record**, and the floating X REC button to the installed XRecorder package (`videoeditor.videorecorder.screenrecorder`). A separately enabled Accessibility service identifies a uniquely labeled XRecorder Start/Stop control, presses it when explicitly requested, and waits for the opposite labeled control before reporting Recording/Stopped. If XRecorder does not expose a control, Android consent appears, or a label is ambiguous, Bubbles reports the handoff rather than pretending it completed. Voice **Bubbles, open [installed app name]** resolves Android's visible launchable app labels; subsequent explicit screen taps and scrolling use the existing owner-enabled Accessibility bridge. Android permission dialogs must be approved by the device owner. New native features need an APK built, signed and installed; changing GitHub alone does not update the phone.
