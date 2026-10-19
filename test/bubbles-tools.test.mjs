@@ -36,8 +36,8 @@ test('foreign website origins cannot invoke assistant tools',async()=>{
 });
 test('ordinary conversation uses GPT OSS and reports the actual model',async()=>{
  let used=false;
- const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{AI:{run:async(model,options)=>{used=true;assert.equal(model,'@cf/openai/gpt-oss-120b');assert.equal(options.reasoning_effort,'medium');assert.equal(options.max_tokens,650);assert.match(options.messages[0].content,/Installed tool inventory/);assert.match(options.messages[0].content,/receipts automatically/);assert.match(options.messages[1].content,/hello/);return {response:'Hello'};}}});
- const body=await r.json();assert.equal(used,true);assert.equal(body.output,'Hello');assert.equal(body.model,'@cf/openai/gpt-oss-120b');
+ const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'hello'})}),{AI:{run:async(model,options)=>{used=true;assert.equal(model,'@cf/openai/gpt-oss-20b');assert.equal(options.reasoning_effort,'medium');assert.equal(options.max_tokens,650);assert.match(options.messages[0].content,/Installed tool inventory/);assert.match(options.messages[0].content,/receipts automatically/);assert.match(options.messages[1].content,/hello/);return {response:'Hello'};}}});
+ const body=await r.json();assert.equal(used,true);assert.equal(body.output,'Hello');assert.equal(body.model,'@cf/openai/gpt-oss-20b');
 });
 test('website repair requests get high reasoning and a larger output budget',async()=>{
  const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({
