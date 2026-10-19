@@ -456,12 +456,15 @@ public final class BrainLearningService extends AccessibilityService {
             if (matches.size() != 1) return "FIELD_AMBIGUOUS";
             AccessibilityNodeInfo item = matches.get(0);
             int inputType = item.getInputType();
+            int typeClass = inputType & android.text.InputType.TYPE_MASK_CLASS;
             int variation = inputType & android.text.InputType.TYPE_MASK_VARIATION;
             if (item.isPassword()
-                    || variation == android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
-                    || variation == android.text.InputType.TYPE_TEXT_VARIATION_WEB_PASSWORD
-                    || variation == android.text.InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
-                    || variation == android.text.InputType.TYPE_NUMBER_VARIATION_PASSWORD)
+                    || (typeClass == android.text.InputType.TYPE_CLASS_TEXT
+                        && (variation == android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
+                            || variation == android.text.InputType.TYPE_TEXT_VARIATION_WEB_PASSWORD
+                            || variation == android.text.InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD))
+                    || (typeClass == android.text.InputType.TYPE_CLASS_NUMBER
+                        && variation == android.text.InputType.TYPE_NUMBER_VARIATION_PASSWORD))
                 return "FIELD_BLOCKED";
             android.os.Bundle data = new android.os.Bundle();
             data.putCharSequence(AccessibilityNodeInfo.ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE, value);
