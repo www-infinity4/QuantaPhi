@@ -45,3 +45,9 @@ test('Android reports retained local background transcripts and memory pressure'
  assert.match(phone,/PhonePlaybackService\.this/);
  assert.doesNotMatch(phone,/TRIM_MEMORY_RUNNING_CRITICAL && !memoryStopped/);
 });
+
+test('spoken repository creation requires explicit naming and uses echo cooldown',()=>{
+ assert.match(site,/const repoName=createRepository\?\(request\.match/);
+ assert.doesNotMatch(site,/repo\(\?:sitory\)\?\\s\+\(\[A-Za-z0-9_\\.-\]\+\)/);
+ assert.match(site,/speaking=false;voiceEchoUntil=Date\.now\(\)\+2500/);
+});
