@@ -539,10 +539,10 @@ const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';spe
 const send=create('button','ba-send','Send');send.type='submit';
 actions.append(photoRow,mic,speak,send);
 if(nativeOverlay){
- const captureStart=create('button','ba-control','● Record screen');
- captureStart.type='button';captureStart.setAttribute('aria-label','Record video with Bubbles');
- const captureStop=create('button','ba-control','■ Stop & save');
- captureStop.type='button';
+ const captureStart=create('button','ba-control','● Record');
+ captureStart.type='button';captureStart.setAttribute('aria-label','Record screen video with Bubbles');
+ const captureStop=create('button','ba-control','■ Save');
+ captureStop.type='button';captureStop.setAttribute('aria-label','Stop & save screen video');
  captureStart.addEventListener('click',()=>void sendMessage('record'));
  captureStop.addEventListener('click',()=>void sendMessage('stop recording'));
  actions.prepend(captureStart,captureStop);
