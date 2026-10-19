@@ -425,6 +425,23 @@ public final class BrainLearningService extends AccessibilityService {
         }
     }
 
+    /** Poll post-action text without sending a second keystroke. */
+    static boolean workflowTypedValueVisible(String target, String expected) {
+        BrainLearningService service = active.get();
+        if (service == null || ScreenAwareness.sensitive(target)) return false;
+        AccessibilityNodeInfo root = service.currentRoot();
+        if (root == null) return false;
+        ArrayList<AccessibilityNodeInfo> matches = new ArrayList<>();
+        try {
+            service.workflowMatches(root, target, matches, true, 0);
+            return matches.size() == 1 && matches.get(0).getText() != null
+                && expected.contentEquals(matches.get(0).getText());
+        } finally {
+            for (AccessibilityNodeInfo item : matches) item.recycle();
+            root.recycle();
+        }
+    }
+
     static String workflowType(String target, String value) {
         BrainLearningService service = active.get();
         if (service == null) return "ACCESS_OFF";
