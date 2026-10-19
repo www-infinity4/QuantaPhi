@@ -1,3 +1,4 @@
+import {githubStarCoinBackup} from './starcoin-backup.mjs';
 import {digest, randomToken} from './vault.mjs';
 import {PROVIDERS, authorizeConnection} from './authorization.mjs';
 
@@ -80,6 +81,62 @@ export class ConsentService {
     const encrypted=await this.storage.get(record.credentialRef);if(!encrypted)throw Error('credential_unavailable');
     const credential=await this.vault.open(encrypted,record.credentialRef);
     const result=test?await this.adapters.github.connectionTest({accessToken:credential.accessToken}):await this.adapters.github.repositories({accessToken:credential.accessToken});
+    const current=await this.storage.get(key);
+    if(current?.status!=='connected'||current.revision!==record.revision)throw Error('connection_cancelled');
+    return result;
+  }
+  /* The only mutable backup destination per account is the verified first
+   * private GitHub repository explicitly chosen by that account. */
+  async starCoinBackup({userId,id,repository,snapshot,mode='write'}) {
+    const prefix=await this.namespace(userId);
+    if(typeof id!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(id))throw Error('connection_invalid');
+    if(typeof repository!=='string'||!/^[-A-Za-z0-9_.]+\/[-A-Za-z0-9_.]+$/.test(repository))
+      throw Error('backup_repository_invalid');
+    if(!snapshot||!snapshot.data||typeof snapshot.hash!=='string')throw Error('backup_invalid_request');
+    const accountKey=prefix+'starcoin:chosen-repository',key=prefix+'connection:'+id;
+    let record=await this.storage.get(key);
+    if(record?.userId!==userId||record.provider!=='github'||record.status!=='connected')
+      throw Error('connection_not_verified');
+    if(record.expiresAt<=this.now()+30000){await this.refresh({userId,id});record=await this.storage.get(key);}
+    if(!record.credentialRef||!this.adapters.github?.repositories)throw Error('provider_not_configured');
+    const selected=await this.storage.get(accountKey);
+    if(selected&&selected.repository!==repository)throw Error('backup_repository_already_selected');
+    if(mode==='verify'&&!selected)throw Error('backup_not_configured');
+    const encrypted=await this.storage.get(record.credentialRef);
+    if(!encrypted)throw Error('credential_unavailable');
+    const credential=await this.vault.open(encrypted,record.credentialRef);
+    const verified=await this.adapters.github.repositories({accessToken:credential.accessToken});
+    const eligible=verified.repositories?.find(repo=>repo.name===repository&&repo.private===true&&repo.permissions.write===true);
+    if(!eligible)throw Error('github_private_write_not_verified');
+    // Repository authority comes from GitHub's installation, not the model,
+    // a typed URL, a provider login alone, or the platform owner's token.
+    const result=await githubStarCoinBackup({token:credential.accessToken,repository,snapshot,mode});
+    const current=await this.storage.get(key);
+    if(current?.status!=='connected'||current.revision!==record.revision)
+      throw Error('connection_cancelled');
+    if(mode==='write'&&!selected){
+      await this.storage.transaction(async tx=>{
+        const exists=await tx.get(accountKey);
+        if(exists&&exists.repository!==repository)throw Error('backup_repository_already_selected');
+        if(!exists)await tx.put(accountKey,{repository,connectionId:id,createdAt:this.now()});
+      });
+    }
+    return result;
+  }
+  async createStarCoinRepository({userId,id}) {
+    const prefix=await this.namespace(userId),key=prefix+'connection:'+id;
+    if(typeof id!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(id))throw Error('connection_invalid');
+    if(await this.storage.get(prefix+'starcoin:chosen-repository'))
+      throw Error('backup_repository_already_selected');
+    let record=await this.storage.get(key);
+    if(record?.userId!==userId||record.provider!=='github'||record.status!=='connected')
+      throw Error('connection_not_verified');
+    if(record.expiresAt<=this.now()+30000){await this.refresh({userId,id});record=await this.storage.get(key);}
+    const encrypted=await this.storage.get(record.credentialRef);
+    if(!encrypted)throw Error('credential_unavailable');
+    const credential=await this.vault.open(encrypted,record.credentialRef);
+    if(!this.adapters.github?.createPrivateBackupRepository)throw Error('provider_not_configured');
+    const result=await this.adapters.github.createPrivateBackupRepository({accessToken:credential.accessToken});
     const current=await this.storage.get(key);
     if(current?.status!=='connected'||current.revision!==record.revision)throw Error('connection_cancelled');
     return result;
