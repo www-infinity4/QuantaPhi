@@ -34,14 +34,8 @@ public final class ScreenCaptureService extends Service {
     @Override public int onStartCommand(Intent intent, int flags, int id) {
         if (intent == null || STOP.equals(intent.getAction())) { finishCapture(); return START_NOT_STICKY; }
         if (projection != null || finished) return START_NOT_STICKY;
-        // Video recording belongs to DU Recorder. Do not run the old Bubbles
-        // video/PCM muxer, which competed for audio and could crash the app.
-        if (!intent.getBooleanExtra("screenshot", false)) {
-            BrainNotes.prefs(this).edit().putString("capture_state",
-                "Bubbles native screen video is disabled; use DU Recorder's floating control.").apply();
-            stopSelf();
-            return START_NOT_STICKY;
-        }
+        // Screen video is captured directly by Bubbles after Android consent.
+        // The assistant's speech recognizer remains the sole microphone client.
         NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         nm.createNotificationChannel(new NotificationChannel("bubbles_capture", "Bubbles screen capture", NotificationManager.IMPORTANCE_LOW));
         PendingIntent stop = PendingIntent.getService(this, 12, new Intent(this, ScreenCaptureService.class).setAction(STOP),
@@ -130,12 +124,8 @@ public final class ScreenCaptureService extends Service {
                 width = Math.max(2, ((int) (width * scale) / 2) * 2);
                 height = Math.max(2, ((int) (height * scale) / 2) * 2);
                 file = new File(directory, "screen-" + System.currentTimeMillis() + ".mp4");
-                // A screen recording is one MP4 with microphone sound, not a
-                // silent MP4 plus a separate WAV hidden in Music. Android owns
-                // the screen permission; microphone permission is checked here.
-                if (checkSelfPermission(android.Manifest.permission.RECORD_AUDIO)
-                        != android.content.pm.PackageManager.PERMISSION_GRANTED)
-                    throw new SecurityException("Microphone permission required for screen video");
+                // Video-only MediaRecorder avoids taking the microphone away from
+                // Vosk/voice commands. Audio mixing is not claimed for this build.
                 recorder = new MediaRecorder();
                 // Vosk remains the only microphone client throughout recording.
                 // Encode its shared PCM after capture, then publish one MP4.
@@ -149,10 +139,9 @@ public final class ScreenCaptureService extends Service {
                 recorder.setOutputFile(file.getAbsolutePath()); recorder.prepare();
                 display = projection.createVirtualDisplay("Bubbles recording", width, height, metrics.densityDpi,
                         DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, recorder.getSurface(), null, main);
-                sharedAudio = BubblesService.beginScreenAudio();
                 recorder.start(); recordingStarted = true;
                 BrainNotes.prefs(this).edit().putBoolean("capture_recording", true)
-                    .putString("capture_state", "Recording screen + microphone into one MP4; Stop saves to Movies/Bubbles").apply();
+                    .putString("capture_state", "Recording screen; Bubbles voice remains active. Stop saves MP4 to Movies/Bubbles").apply();
                 main.postDelayed(this::finishCapture, 300000);
             }
         } catch (Exception error) { fail(error); }
@@ -172,10 +161,6 @@ public final class ScreenCaptureService extends Service {
         mediaExport.execute(() -> {
             String outcome;
             try {
-                if (type.startsWith("video/")) {
-                    if (audio == null) throw new IOException("Shared microphone audio was unavailable; video retained privately");
-                    SharedScreenAudioMuxer.combine(completed, audio);
-                }
                 android.net.Uri saved = CapturePublisher.publish(this, completed, type);
                 if (audio != null) audio.delete();
                 String library = type.startsWith("video/") ? "Movies" : "Pictures";
