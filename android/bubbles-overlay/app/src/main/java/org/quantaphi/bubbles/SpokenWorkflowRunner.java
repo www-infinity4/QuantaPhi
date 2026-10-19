@@ -19,7 +19,7 @@ final class SpokenWorkflowRunner {
     private final Handler main;
     private final BiConsumer<String, Boolean> notify;
     private SpokenWorkflowPlan plan;
-    private boolean running, verifyingOpen;
+    private boolean running, verifyingOpen, verifyingType;
     private int index;
     private long stepStart, jobStart;
     private String expectedPackage = "", latest = "No UI job started.";
@@ -46,6 +46,7 @@ final class SpokenWorkflowRunner {
         this.plan = next;
         this.running = true;
         this.verifyingOpen = false;
+        this.verifyingType = false;
         this.index = 0;
         this.expectedPackage = "";
         this.lastActionVerified = false;
@@ -83,6 +84,7 @@ final class SpokenWorkflowRunner {
         lastActionVerified = verified;
         index++;
         verifyingOpen = false;
+        verifyingType = false;
         stepStart = SystemClock.elapsedRealtime();
         BrainNotes.prefs(context).edit()
             .putInt("workflow_step", index).apply();
@@ -145,8 +147,14 @@ final class SpokenWorkflowRunner {
                 break;
             }
             case TYPE: {
+                if (verifyingType) {
+                    if (BrainLearningService.workflowTypedValueVisible(step.target, step.value)) advance(true);
+                    else again(); // Do not submit duplicate keystrokes after Android accepted SET_TEXT.
+                    break;
+                }
                 String result = BrainLearningService.workflowType(step.target, step.value);
                 if ("TYPE_VERIFIED".equals(result)) advance(true);
+                else if ("TYPE_UNVERIFIED".equals(result)) { verifyingType = true; again(); }
                 else if ("FIELD_NOT_FOUND".equals(result)) again();
                 else fail("text was not verified in the requested field (" + result + ")");
                 break;
