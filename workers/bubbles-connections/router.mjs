@@ -1,3 +1,4 @@
+import {cloudStarCoinBackup} from './starcoin-backup.mjs';
 import {digest} from './vault.mjs';
 import {PROVIDERS} from './authorization.mjs';
 import {CONNECTOR_REQUIREMENTS} from './providers.mjs';
@@ -71,7 +72,7 @@ export async function handleConnections(request,env,resolveService) {
     }
     if (request.method === 'GET' && url.pathname === PREFIX+'/catalog') {
       const ready = env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true';
-      return json(origin,{ok:true,providers:Object.keys(PROVIDERS).map(id=>({id,actions:PROVIDERS[id].actions,
+      return json(origin,{ok:true,starcoinBackupEnabled:Boolean(ready&&env.STARQUEST_LEDGER?.fetch&&env.BOT_WALLET?.fetch),providers:Object.keys(PROVIDERS).map(id=>({id,actions:PROVIDERS[id].actions,
         configured:ready && ((id==='google' && !!env.GOOGLE_CLIENT_ID && !!env.GOOGLE_CLIENT_SECRET) ||
           (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET)),requirement:CONNECTOR_REQUIREMENTS[id]}))});
     }
@@ -84,6 +85,28 @@ export async function handleConnections(request,env,resolveService) {
     const raw = await request.text(); if (raw.length > 8192) return json(origin,{ok:false,error:'too_large'},413);
     let body; try {body = JSON.parse(raw);} catch {return json(origin,{ok:false,error:'invalid_json'},400);}
     if (!body || typeof body !== 'object' || Array.isArray(body)) return json(origin,{ok:false,error:'invalid_json'},400);
+    if (url.pathname === PREFIX+'/github/starcoins/create-repository')
+      return json(origin,{ok:true,...await service.createStarCoinRepository({userId:identity.userId,id:body.id})});
+    if(url.pathname===PREFIX+'/github/starcoins/backup'||url.pathname===PREFIX+'/github/starcoins/verify'){
+      const authorization=request.headers.get('Authorization')||'';
+      if(!/^Bearer sq_[A-Za-z0-9_-]{32,}$/.test(authorization))
+        throw Error('starcoin_verified_device_required');
+      if(!env.STARQUEST_LEDGER?.fetch||!env.BOT_WALLET?.fetch)
+        throw Error('starcoin_cloud_unavailable');
+      const [sr,wr]=await Promise.all([
+        env.STARQUEST_LEDGER.fetch('https://starquest.internal/v1/state',
+          {headers:{Authorization:authorization},signal:AbortSignal.timeout(12000)}),
+        env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/state',
+          {headers:{Authorization:authorization},signal:AbortSignal.timeout(12000)})
+      ]);
+      if(!sr.ok||!wr.ok)throw Error('starcoin_cloud_unavailable');
+      const [star,wallet]=await Promise.all([sr.json(),wr.json()]);
+      if(!star.ok||!wallet.ok)throw Error('starcoin_cloud_unavailable');
+      const snapshot=await cloudStarCoinBackup(identity.userId,wallet,star.state);
+      return json(origin,{ok:true,...await service.starCoinBackup({
+        userId:identity.userId,id:body.id,repository:body.repository,snapshot,
+        mode:url.pathname.endsWith('/verify')?'verify':'write'})});
+    }
     // Explicit field selection prevents supplied userId/sessionId from winning.
     if (url.pathname === PREFIX+'/github/test') return json(origin,{ok:true,...await service.githubConnectionTest({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/github/repositories') return json(origin,{ok:true,...await service.githubRepositories({userId:identity.userId,id:body.id})});
@@ -95,9 +118,9 @@ export async function handleConnections(request,env,resolveService) {
     if (url.pathname === PREFIX+'/select-resource') return json(origin,await service.selectResource({userId:identity.userId,id:body.id,kind:body.kind,resourceId:body.resourceId}));
     return json(origin,{ok:false,error:'not_found'},404);
   } catch (error) {
-    const expected = /^(?:connection_complete_(?:state|exchange|seal|store|unknown)_(?:timeout|type|internal)(?:_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown))?|pairing_invalid_or_expired|verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+)$/;
+    const expected = /^(?:starcoin_account_identity_mismatch|starcoin_state_invalid|starcoin_sources_disagree|starcoin_duplicate_receipt|starcoin_cloud_unavailable|starcoin_verified_device_required|github_private_write_not_verified|github_backup_http_\d+|backup_(?:account_mismatch_review_required|mismatch_review_required|malformed_review_required|commit_conflict_retry|commit_unverified|repository_invalid|repository_already_selected|not_configured|invalid_request)|connection_complete_(?:state|exchange|seal|store|unknown)_(?:timeout|type|internal)(?:_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown))?|pairing_invalid_or_expired|verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+)$/;
     const message = expected.test(error.message) ? error.message : 'connection_operation_failed';
-    const status = message === 'verified_wallet_required' ? 401 : message === 'too_many_requests' ? 429 : /unavailable|not_configured|operation_failed/.test(message) ? 503 : 400;
+    const status = ['verified_wallet_required','starcoin_verified_device_required'].includes(message) ? 401 : message === 'too_many_requests' ? 429 : /unavailable|not_configured|operation_failed/.test(message) ? 503 : 400;
     return json(origin,{ok:false,error:message},status);
   }
 }

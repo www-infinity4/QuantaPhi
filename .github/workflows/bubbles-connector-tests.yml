@@ -9,6 +9,7 @@ on:
       - 'workers/quantaphi-site/worker.js'
       - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
+      - 'test/starcoin-github-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
   push:
     branches: [main]
@@ -19,6 +20,7 @@ on:
       - 'workers/quantaphi-site/worker.js'
       - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
+      - 'test/starcoin-github-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
 
 permissions:
@@ -41,4 +43,5 @@ jobs:
             test/bubbles-connections-router.test.mjs \
             test/bubbles-connections-ui.test.mjs \
             test/bubbles-connector-pairing.test.mjs \
-            test/bubbles-home-account-link.test.mjs
+            test/bubbles-home-account-link.test.mjs \
+            test/starcoin-github-backup.test.mjs

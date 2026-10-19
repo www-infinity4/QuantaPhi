@@ -132,7 +132,79 @@ export function mountConnections(container,{token}) {
           }catch{result.textContent='GitHub repository verification failed. No repository action was performed.';}finally{inspect.disabled=false;}});
           const test=element('button','Run GitHub connection test','ba-control');test.type='button';
           test.addEventListener('click',async()=>{test.disabled=true;result.textContent='Creating an isolated test branch and receipt…';try{const receipt=await client.call('/github/test',{id:account.id});result.replaceChildren(element('p','Verified commit: '+receipt.commit),element('p','Test branch: '+receipt.branch));const link=element('a','Open verified GitHub commit');link.href=receipt.url;link.target='_blank';link.rel='noopener noreferrer';result.append(link);}catch{result.textContent='Test did not return a verified commit. Check GitHub before retrying.';}finally{test.disabled=false;}});
-          row.append(inspect,test,result);
+          if(data.starcoinBackupEnabled!==true){
+            row.append(inspect,test,result);
+          }else{
+          // One private GitHub repository per Cloudflare wallet, StarCoins only.
+          // GitHub identity never authorizes wallet credits or Robot Brain.
+          const walletRepo=document.createElement('select');
+          walletRepo.setAttribute('aria-label','Choose a private StarCoin backup repository');
+          walletRepo.className='ba-field';
+          const placeholder=document.createElement('option');
+          placeholder.value='';placeholder.textContent='Choose a private repository';walletRepo.append(placeholder);
+          const backup=element('button','Back up StarCoins','ba-control');
+          const compare=element('button','Verify StarCoin backup','ba-control');
+          const createPrivate=element('button','Create private StarCoin repository','ba-control');
+          const backupStatus=element('p','This backs up only the StarCoin account currently verified in Cloudflare. If your usual coins are missing, recover the original wallet before choosing a repository. GitHub cannot restore or award credits.','ba-muted');
+          backupStatus.setAttribute('role','status');
+          for(const b of [backup,compare,createPrivate])b.type='button';
+          backup.disabled=true;compare.disabled=true;
+          async function loadPrivateRepositories(){
+            const data=await client.call('/github/repositories',{id:account.id});
+            walletRepo.replaceChildren(placeholder);
+            for(const repo of data.repositories.filter(r=>r.private===true&&r.permissions.write)){
+              const choice=document.createElement('option');choice.value=repo.name;
+              choice.textContent=repo.name;walletRepo.append(choice);
+            }
+            backup.disabled=!walletRepo.value;
+            compare.disabled=!walletRepo.value;
+            if(walletRepo.options.length<=1)backupStatus.textContent='Install Bubbles GitHub App with Contents write access to one private repository.';
+          }
+          walletRepo.addEventListener('change',()=>{
+            const ready=!!walletRepo.value;backup.disabled=!ready;compare.disabled=!ready;
+          });
+          for(const [b,mode,path] of [[backup,'write','backup'],[compare,'verify','verify']]){
+            b.addEventListener('click',async()=>{
+              if(!walletRepo.value)return;
+              b.disabled=true;backupStatus.textContent=mode==='write'?'Checking Cloudflare and GitHub…':'Comparing GitHub with Cloudflare…';
+              try {
+                const receipt=await client.call('/github/starcoins/'+path,
+                  {id:account.id,repository:walletRepo.value});
+                backupStatus.replaceChildren(element('strong','StarCoin: '+receipt.status+' '),
+                  element('span',' · repository '+receipt.repository));
+                if(receipt.url){
+                  const link=element('a',' View verified commit');link.href=receipt.url;
+                  link.target='_blank';link.rel='noopener noreferrer';backupStatus.append(link);
+                }
+                if(receipt.status==='cloud_advanced_review_needed')
+                  backupStatus.append(element('span',' New Cloudflare activity needs a fresh backup; no balances changed.'));
+              }catch(error){
+                backupStatus.textContent='Backup not changed: '+error.message+'. No wallet balances were modified.';
+              }finally{b.disabled=false;}
+            });
+          }
+          createPrivate.addEventListener('click',async()=>{
+            createPrivate.disabled=true;
+            backupStatus.textContent='Requesting one private repository under your authorized GitHub account…';
+            try{
+              const result=await client.call('/github/starcoins/create-repository',{id:account.id});
+              backupStatus.textContent=result.status==='ready_to_back_up'
+                ?'Private repository created. Select it and back up StarCoins.'
+                :'Repository created; grant the Bubbles GitHub App access to that repository before backup.';
+              if(/^[-A-Za-z0-9_.]+\/[-A-Za-z0-9_.]+$/.test(result.repository||'')){
+                const link=element('a',' Open private GitHub repository');
+                link.href='https://github.com/'+result.repository;
+                link.target='_blank';link.rel='noopener noreferrer';backupStatus.append(link);
+              }
+              await loadPrivateRepositories();
+              walletRepo.value=result.repository;
+              backup.disabled=!walletRepo.value;compare.disabled=!walletRepo.value;
+            }catch(error){backupStatus.textContent='Private repository not created: '+error.message;}
+            finally{createPrivate.disabled=false;}
+          });
+          row.append(inspect,test,result,walletRepo,backup,compare,createPrivate,backupStatus);
+          void loadPrivateRepositories().catch(()=>{backupStatus.textContent='GitHub repository list is unavailable. No backup was written.';});
+          }
         }
         accounts.append(row);
         if(account.provider==='google'&&account.status==='connected') {
