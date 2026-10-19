@@ -8,7 +8,10 @@
  const bar=document.createElement('div');bar.className='robot-work-actions';
  const make=(tag,label)=>{const e=document.createElement(tag);e.textContent=label;return e};
  const report=make('button','Explain progress'),top=make('button','Top 10 jobs'),blockedButton=make('button','Review blocked jobs');
- report.type='button';top.type='button';blockedButton.type='button';bar.append(report,top,blockedButton);
+ const previousBlocked=make('button','← Previous 10'),nextBlocked=make('button','Next 10 →');
+ for(const button of [report,top,blockedButton,previousBlocked,nextBlocked])button.type='button';
+ previousBlocked.hidden=true;nextBlocked.hidden=true;
+ bar.append(report,top,blockedButton,previousBlocked,nextBlocked);
  const stamp=make('small','Waiting for verified task records.');
  const prose=make('div','');prose.className='robot-work-prose';prose.setAttribute('aria-live','polite');
  panel.append(stamp,prose);
@@ -20,7 +23,7 @@
  const form=root.querySelector('textarea');
  if(form)form.before(panel);else root.prepend(panel);
  const API='https://infinity-brain-clock.marvaseater.workers.dev';
- let mode='report',busy=false,enabled=true;
+ let mode='report',busy=false,enabled=true,blockedOffset=0;
  const clean=(value,limit=240)=>String(value||'').replace(/[\u0000-\u001f<>]/g,' ').replace(/\s+/g,' ').slice(0,limit);
  function allJobs(tickets){
   const rows=[];
@@ -78,7 +81,7 @@
   prose.replaceChildren();
   prose.append(make('p',summary.total+' saved jobs: '+counts.blocked+' blocked, '+counts.queued+' waiting or unverified, '+counts.working+' reporting recent activity, and '+counts.verified+' recorded complete or merged. A ticket count is not the same as a job count.'));
   if(counts.blocked)prose.append(make('p','Blocked-job review: '+Object.entries(summary.reasons).sort((a,b)=>b[1]-a[1]).map(([name,n])=>n+' '+name.toLowerCase()).join('; ')+'. These jobs are saved, not discarded.'));
-  prose.append(make('p',filter==='blocked'?'Showing up to ten blocked jobs, newest first.':'Showing up to ten jobs that need attention. “Working” is not proof of completion.'));
+  prose.append(make('p',filter==='blocked'?'Browse every blocked job in pages of ten, newest first. The job records remain saved.':'Showing up to ten jobs that need attention. “Working” is not proof of completion.'));
   const state={working:'Recently reported active',leased:'Runner lease reported',running:'Recently reported running',unverified:'No recent runner confirmation',queued:'Waiting for a runner',ready:'Ready to run',blocked:'Blocked — needs attention',complete:'Marked complete',committed_unverified:'Committed, awaiting verification',merged_verified:'Merged, further verification needed',deployed_verified:'Deployment verified',superseded:'Superseded by newer work'};
   for(const r of rows){
    const card=document.createElement('section');card.className='robot-work-ticket';
@@ -122,8 +125,16 @@
    const earnings=await fetch(API+'/work/earnings/status',{headers,cache:'no-store',signal:AbortSignal.timeout(12000)}).then(r=>r.ok?r.json():null).catch(()=>null);
    const all=allJobs(json.tickets),summary=summarize(all);
    const candidates=(requested==='blocked'?all.filter(row=>row.status==='blocked'):all);
-   const tasks=candidates.sort((a,b)=>requested==='blocked'?b.when-a.when:a.tier-b.tier||b.priority-a.priority||b.when-a.when).slice(0,10);
+   candidates.sort((a,b)=>requested==='blocked'?b.when-a.when:a.tier-b.tier||b.priority-a.priority||b.when-a.when);
+   if(requested==='blocked'){
+    blockedOffset=Math.min(blockedOffset,Math.max(0,Math.floor((candidates.length-1)/10)*10));
+    previousBlocked.hidden=false;nextBlocked.hidden=false;
+    previousBlocked.disabled=blockedOffset===0;nextBlocked.disabled=blockedOffset+10>=candidates.length;
+   }else{previousBlocked.hidden=true;nextBlocked.hidden=true;}
+   const offset=requested==='blocked'?blockedOffset:0;
+   const tasks=candidates.slice(offset,offset+10);
    write(tasks,earnings,summary,requested);
+   if(requested==='blocked')prose.prepend(make('p',candidates.length?('Blocked jobs '+(offset+1)+'–'+(offset+tasks.length)+' of '+candidates.length+'. Use Next 10 to see older entries.'):'There are no blocked jobs in this snapshot.'));
    if(gpt&&tasks.length){
     stamp.textContent='Generating a GPT explanation of the verified activity…';
     try{
@@ -141,7 +152,9 @@
  }
  report.addEventListener('click',()=>pull('report',{gpt:true}));
  top.addEventListener('click',()=>pull('top'));
- blockedButton.addEventListener('click',()=>pull('blocked'));
+ blockedButton.addEventListener('click',()=>{blockedOffset=0;void pull('blocked');});
+ previousBlocked.addEventListener('click',()=>{blockedOffset=Math.max(0,blockedOffset-10);void pull('blocked');});
+ nextBlocked.addEventListener('click',()=>{blockedOffset+=10;void pull('blocked');});
  window.addEventListener('quantaphi:robot-directions',()=>pull());
  window.addEventListener('pagehide',()=>{enabled=false});
  setInterval(()=>{if(document.visibilityState==='visible')pull()},30000);
