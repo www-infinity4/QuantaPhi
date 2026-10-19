@@ -1,0 +1,58 @@
+name: Bubbles Chrome live install routes
+on:
+  pull_request:
+    paths: ['.github/workflows/bubbles-chrome-live-smoke.yml']
+  push:
+    branches: [main]
+    paths: ['.github/workflows/bubbles-chrome-live-smoke.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-public-pwa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Read real Cloudflare-served Chrome app, manifest and icons
+        run: |
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          const origin = 'https://quantaphi.org';
+          async function resource(path) {
+            const res = await fetch(origin+path, {
+              redirect:'manual',signal:AbortSignal.timeout(15000),
+              headers:{'User-Agent':'Bubbles-Chrome-Install-Live-Smoke/1.0'}
+            });
+            const bytes = Buffer.from(await res.arrayBuffer());
+            console.log(path, 'HTTP',res.status,'type',res.headers.get('content-type'),'bytes',bytes.length);
+            assert.equal(res.status,200,path+' must be live and publicly served');
+            return {res,bytes,text:bytes.toString('utf8')};
+          }
+          const page = await resource('/bubbles-chrome.html');
+          assert.match(page.res.headers.get('content-type')||'',/text\/html/);
+          assert.match(page.text,/href="\/bubbles-manifest\.json"/);
+          assert.match(page.text,/id="bubblesInstallChrome"/);
+          const manifestResponse = await resource('/bubbles-manifest.json');
+          assert.match(manifestResponse.res.headers.get('content-type')||'',/application\/json/);
+          const manifest = JSON.parse(manifestResponse.text);
+          assert.equal(manifest.start_url,'/bubbles-chrome.html');
+          assert.equal(manifest.id,'/bubbles-chrome.html');
+          assert.equal(manifest.display,'standalone');
+          for(const n of [192,512]) {
+            const icon=await resource('/assets/bubbles-pwa-'+n+'.png');
+            assert.match(icon.res.headers.get('content-type')||'',/image\/png/);
+            assert.equal(icon.bytes.subarray(0,8).toString('hex'),'89504e470d0a1a0a');
+            assert.equal(icon.bytes.readUInt32BE(16),n);
+            assert.equal(icon.bytes.readUInt32BE(20),n);
+          }
+          const worker=await resource('/bubbles-pwa-sw.js');
+          assert.match(worker.res.headers.get('content-type')||'',/javascript/);
+          assert.match(worker.text,/bubbles-chrome\.html/);
+          const offline=await resource('/bubbles-pwa-offline.html');
+          assert.match(offline.text,/Bubbles is offline/);
+          console.log('LIVE_CHROME_INSTALL_ROUTES_PASS');
+          NODE
