@@ -169,7 +169,8 @@ public final class PhonePlaybackService extends Service {
 
     @Override public void onTrimMemory(int level) {
         super.onTrimMemory(level);
-        if (level >= ComponentCallbacks2.TRIM_MEMORY_RUNNING_CRITICAL && !memoryStopped) {
+        if ((level == ComponentCallbacks2.TRIM_MEMORY_RUNNING_CRITICAL
+                || level >= ComponentCallbacks2.TRIM_MEMORY_MODERATE) && !memoryStopped) {
             memoryStopped = true;
             BrainNotes.prefs(this).edit().putString("phone_media_state",
                 "Background audio paused because the phone needs memory; saved notes remain available").apply();
