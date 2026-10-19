@@ -7,7 +7,9 @@ const handoffUrl='data:text/javascript;base64,'+Buffer.from(handoffSource).toStr
 const credentialUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/github-credential.mjs',import.meta.url))).toString('base64');
 const cloudflareBrokerUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/cloudflare-token-broker.mjs',import.meta.url))).toString('base64');
 const mergeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/merge-receipt.mjs',import.meta.url))).toString('base64');
-const directGithubUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/direct-github.mjs',import.meta.url))).toString('base64');
+const directGithubSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/direct-github.mjs',import.meta.url),'utf8'))
+ .replace('./github-tool-schema.mjs',new URL('../workers/infinity-brain-clock/github-tool-schema.mjs',import.meta.url).href);
+const directGithubUrl='data:text/javascript;base64,'+Buffer.from(directGithubSource).toString('base64');
 const queueUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/queue-order.mjs',import.meta.url))).toString('base64');
 const recoveryUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/deferred-recovery.mjs',import.meta.url))).toString('base64');
 const selectorUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/ticket-selector.mjs',import.meta.url))).toString('base64');
