@@ -32,7 +32,7 @@ test('room recorder is text-only local, bounded and explicitly consented to',()=
  assert.match(page,/RoomNotes\.clear\(this\)/);
 });
 
-test('app stays one native microphone and preserves the original screen+sound recorder',()=>{
+test('app stays one native microphone and keeps the speech microphone while capturing video',()=>{
  const capture=fs.readFileSync(root+'ScreenCaptureService.java','utf8');
  assert.match(service,/new AudioRecord\(MediaRecorder\.AudioSource\.VOICE_RECOGNITION/);
  assert.doesNotMatch(capture,/setAudioSource\(/);
