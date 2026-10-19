@@ -141,6 +141,9 @@ export async function createGithubRepository(request,env,body,receipt){
  const name=question.match(/\b(?:named|called)\s+([A-Za-z0-9_.-]+)/i)?.[1];
  const repository=body.repository||(name?'www-infinity4/'+name:'');
  if(!/^www-infinity4\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99}$/.test(repository))return blocked('repository_name_required','Tell me the repository name, for example: create a repository named StoryPhi.');
+ const leaf=repository.split('/')[1]||'';
+ if(leaf.length<2||/^(?:a|an|the|new|repo|repository)$/i.test(leaf))
+  return blocked('repository_name_ambiguous','Repository name is unclear. Say the full name, for example: create a repository named APK. No repository was created or queued.');
  const requestId=body.requestId;
  if(!/^[0-9a-f-]{36}$/i.test(requestId||''))return blocked('request_id_required','The create request needs a stable request ID before it can run. No repository was created or queued.');
  try{
