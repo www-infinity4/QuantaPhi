@@ -72,7 +72,7 @@ export async function handleConnections(request,env,resolveService) {
     }
     if (request.method === 'GET' && url.pathname === PREFIX+'/catalog') {
       const ready = env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true';
-      return json(origin,{ok:true,providers:Object.keys(PROVIDERS).map(id=>({id,actions:PROVIDERS[id].actions,
+      return json(origin,{ok:true,starcoinBackupEnabled:Boolean(ready&&env.STARQUEST_LEDGER?.fetch&&env.BOT_WALLET?.fetch),providers:Object.keys(PROVIDERS).map(id=>({id,actions:PROVIDERS[id].actions,
         configured:ready && ((id==='google' && !!env.GOOGLE_CLIENT_ID && !!env.GOOGLE_CLIENT_SECRET) ||
           (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET)),requirement:CONNECTOR_REQUIREMENTS[id]}))});
     }
