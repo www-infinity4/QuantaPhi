@@ -50,6 +50,22 @@ final class AppControlBridge {
         return open(context, pm.getLaunchIntentForPackage(found.getKey()), found.getValue());
     }
 
+    /** Resolve one exact visible launcher label before starting a spoken sequence. */
+    static String packageForName(Context context, String name) {
+        String wanted = normalize(name);
+        if ("xrecorder".equals(wanted) || "x recorder".equals(wanted))
+            return context.getPackageManager().getLaunchIntentForPackage(XRecorderBridge.PACKAGE) == null
+                ? null : XRecorderBridge.PACKAGE;
+        PackageManager pm = context.getPackageManager();
+        Intent query = new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER);
+        Map<String, String> matching = new HashMap<>();
+        for (ResolveInfo item : pm.queryIntentActivities(query, 0)) {
+            if (item.activityInfo != null && wanted.equals(normalize(String.valueOf(item.loadLabel(pm)))))
+                matching.put(item.activityInfo.packageName, String.valueOf(item.loadLabel(pm)));
+        }
+        return matching.size() == 1 ? matching.keySet().iterator().next() : null;
+    }
+
     private static String open(Context context, Intent intent, String label) {
         if (intent == null) return label + " cannot be launched from Bubbles.";
         try {
