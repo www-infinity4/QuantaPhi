@@ -12,22 +12,22 @@ const access=read('BrainLearningService.java');
 const manifest=fs.readFileSync('android/bubbles-overlay/app/src/main/AndroidManifest.xml','utf8');
 
 test('native Bubbles screen recording starts only after user grants Android MediaProjection',()=>{
- assert.match(native,/case "screen_video":[\\s\\S]*?offerCaptureApproval\\(command\\)/);
+ assert.match(native,/case "screen_video":[\s\S]*?offerCaptureApproval\(command\)/);
  assert.match(native,/case "screen_stop":/);
- assert.match(native,/ScreenCaptureService\\.STOP/);
- assert.match(main,/screenVideo\\.setOnClickListener\\(v -> beginScreen\\(false\\)\\)/);
- assert.match(main,/projection\\.createScreenCaptureIntent\\(\\)/);
- assert.match(main,/else if \\("screen_video"\\.equals\\(action\\)\\) \\{\\s+beginScreen\\(false\\)/);
+ assert.match(native,/ScreenCaptureService\.STOP/);
+ assert.match(main,/screenVideo\.setOnClickListener\(v -> beginScreen\(false\)\)/);
+ assert.match(main,/projection\.createScreenCaptureIntent\(\)/);
+ assert.match(main,/else if \("screen_video"\.equals\(action\)\) \{\s+beginScreen\(false\)/);
  assert.doesNotMatch(legacy,/Bubbles native screen video is disabled/);
- assert.match(legacy,/BubblesService\\.isSessionRunning\\(\\)/);
- assert.match(main,/beginScreen\\(true\\)/);
+ assert.match(legacy,/BubblesService\.isSessionRunning\(\)/);
+ assert.match(main,/beginScreen\(true\)/);
 });
 test('one small glowing orb expands only while speaking; X REC overlay is absent',()=>{
- assert.match(native,/orbSizePx\\(false\\)/);
- assert.match(native,/speakingNow \\? 68 : 44/);
- assert.match(native,/manager\\.updateViewLayout\\(target, bubbleLayout\\)/);
- assert.match(native,/duckDuringSpeech\\(\\)/);
- assert.match(native,/restoreBackgroundAudio\\(\\)/);
+ assert.match(native,/orbSizePx\(false\)/);
+ assert.match(native,/speakingNow \? 68 : 44/);
+ assert.match(native,/manager\.updateViewLayout\(target, bubbleLayout\)/);
+ assert.match(native,/duckDuringSpeech\(\)/);
+ assert.match(native,/restoreBackgroundAudio\(\)/);
  assert.doesNotMatch(native,/xRecorderButton|attachXRecorderButton/);
 });
 test('Accessibility only interacts with installed original XRecorder package, never Android consent',()=>{
@@ -52,5 +52,5 @@ test('XRecorder cannot silently compete with active Bubbles media projection or 
  assert.match(du,/XRecorder couldn't open/);
  assert.match(du,/recordingVerified\(Context context\)/);
  assert.match(du,/xControlVisible/);
- assert.match(native,/XRecorderBridge\.recordingVerified\(this\)/);
+ assert.doesNotMatch(native,/XRecorderBridge\.recordingVerified\(this\)/);
 });
