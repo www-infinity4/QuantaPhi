@@ -17,8 +17,23 @@
     label.textContent=release?.version?'v'+release.version:release?.available?'— published '+release.publishedAt.slice(0,10):'— unavailable';
    }
    for(const link of document.querySelectorAll('[data-apk-download="'+kind+'"]')){
-    if(!release?.available){link.removeAttribute('href');link.setAttribute('aria-disabled','true');}
-    else link.title=release.name+' · '+release.size+' bytes · published '+release.publishedAt;
+    if(!release?.available){
+     link.removeAttribute('href');
+     link.setAttribute('aria-disabled','true');
+     continue;
+    }
+    // Link directly to the immutable, version-numbered GitHub APK.
+    // The Cloudflare streaming proxy can time out on an 85 MB phone download.
+    // Keep the same-origin proxy as a fallback for older verified releases.
+    let direct=null;
+    try{
+     const url=new URL(release.url);
+     if(url.origin==='https://github.com' &&
+       /^\/www-infinity4\/QuantaPhi\/releases\/download\/bubbles-preview-current\/Bubbles-v\d+\.\d+\.\d+-Preview5-Android12\.apk$/.test(url.pathname))direct=url.href;
+    }catch{}
+    link.href=direct||'/downloads/bubbles.apk';
+    link.removeAttribute('aria-disabled');
+    link.title='Download '+(release.version?'Bubbles v'+release.version:'Bubbles')+' · '+release.size+' bytes · published '+release.publishedAt;
    }
   }
  }catch{
