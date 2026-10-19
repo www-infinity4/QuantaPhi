@@ -35,3 +35,25 @@ test('sandbox receipt preparation survives strict undefined-variable handling',(
   assert.match(receipt,/Run: 724\n/);assert.match(receipt,/Operation: inspect/);
  }finally{fs.rmSync(tmp,{recursive:true,force:true});}
 });
+
+test('slow owner memory does not gate the Android or website work dispatcher',()=>{
+ const send=source.slice(source.indexOf('async function sendMessage('),source.indexOf('composer.before(repositoryPicker)'));
+ assert.match(send,/void sharedMemory\(spoken\)/);
+ assert.doesNotMatch(send,/^\s*await sharedMemory\(spoken\);/m);
+ assert.ok(send.indexOf('void sharedMemory(spoken)')<send.indexOf('directGithubOperation(args)'));
+});
+test('native ChatGPT fallback is bounded and the Android model prompt is smaller',()=>{
+ const bridge=source.slice(source.indexOf('function nativeChatGPT('),source.indexOf('if(nativeOverlay)document.documentElement'));
+ assert.match(bridge,/\},12000\);/);
+ assert.doesNotMatch(bridge,/90000/);
+ assert.match(source,/messages\.slice\(nativeOverlay\?-12:-40\)/);
+ assert.match(source,/slice\(nativeOverlay\?-5000:-12000\)/);
+});
+test('tool buttons invoke actual owner-gated GitHub routes instead of a model claim',()=>{
+ assert.match(source,/\['Check GitHub executor',[^\n]*sendMessage\('check GitHub access'\)/);
+ assert.match(source,/\['Run Python sandbox',[^\n]*sendMessage\('run Python'\)/);
+ assert.match(source,/\['Check coder runs',[^\n]*sendMessage\('check coder sandbox results'\)/);
+ assert.match(source,/action:createRepository\?'create_repository'/);
+ assert.match(source,/result\.error==='github_runtime_credential_missing'/);
+ assert.match(source,/Robot Brain has no server-side GitHub credential/);
+});
