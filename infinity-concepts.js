@@ -6,6 +6,14 @@
   const mount=document.getElementById('infinityConcepts');
   if(!mount) return;
   const BASE='https://raw.githubusercontent.com/www-infinity4/WidgetPhi/main/catalog/';
+  const CARD_ART=Object.freeze({
+    'physics-001':'/assets/julius-balloon-001.jpg',
+    'physics-002':'/assets/julius-physics-002.png',
+    'physics-003':'/assets/julius-physics-003.png',
+    'physics-004':'/assets/julius-physics-004.png',
+    'physics-005':'/assets/julius-physics-005.png',
+    'physics-006':'/assets/julius-physics-006.png'
+  });
   const FAVORITES='quantaPhi:infinityConceptStars:v1',COLLECTED='quantaPhiCollected';
   const read=(key,otherwise=[])=>{try{const value=JSON.parse(localStorage.getItem(key)||'null');return Array.isArray(value)?value:otherwise}catch{return otherwise}};
   const save=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}};
@@ -14,7 +22,7 @@
   const deepLink=e=>'https://quantaphi.org/#infinity-concept-'+slug(e.id);
   const cardData=e=>({
     key:conceptKey(e),type:'Physics Experiment',title:e.title,story:String(e.description||'')+'\n'+String(e.principle||''),
-    media:e.id==='physics-001'?'https://quantaphi.org/assets/julius-balloon-001.jpg':url(e.imageUrl),sourceUrl:url(e.sources?.[0]?.url),experimentId:String(e.id),number:e.number
+    media:absoluteArt(e),sourceUrl:url(e.sources?.[0]?.url),experimentId:String(e.id),number:e.number
   });
   const creditStatus=(receipt,action)=>receipt?.pending
     ?action+' action saved; +0.1 StarCoin awaits ledger confirmation.'
@@ -31,6 +39,8 @@
     try{const u=new URL(String(value||''));return u.protocol==='https:'&&!u.username&&!u.password?u.href:'';}
     catch{return'';}
   };
+  const artPath=entry=>CARD_ART[entry.id]||url(entry.imageUrl);
+  const absoluteArt=entry=>{const art=artPath(entry);return art.startsWith('/')?new URL(art,window.location.origin).href:art;};
   const link=(label,href)=>{
     const a=node('a','',label);a.href=href;a.target='_blank';a.rel='noopener noreferrer';return a;
   };
@@ -58,7 +68,7 @@
       current=(current+1)%entries.length;render();mount.scrollIntoView({block:'start',behavior:'auto'});
     });
     add(shell,node('h2','',e.title));
-    const art=e.id==='physics-001'?'/assets/julius-balloon-001.jpg':url(e.imageUrl);if(art){const image=add(shell,node('img','icp-art'));image.src=art;image.alt='Original Infinity Julius Miller illustration · '+e.title;image.loading='lazy';}
+    const art=artPath(e);if(art){const image=add(shell,node('img','icp-art'));image.src=art;image.alt='Original Infinity Julius Miller illustration · '+e.title;image.loading='lazy';image.addEventListener('error',()=>{image.remove();const warning=add(shell,node('p','icp-art-missing','This card image could not be loaded. Try Another experiment.'));warning.setAttribute('role','status');},{once:true});}
 
     const labels=add(shell,node('div','icp-labels'));
     add(labels,node('span','icp-tag','Physics experiment'));
