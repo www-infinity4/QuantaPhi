@@ -259,7 +259,7 @@ public final class MainActivity extends Activity {
         });
         layout.addView(advancedCapture);
         TextView captureInfo = new TextView(this);
-        captureInfo.setText("Bubbles records your screen directly after Android approves the capture session. "
+        captureInfo.setText("Listening is separate from recording. Bubbles records your screen after Android approves the capture session. "
                 + "Say record, then stop to save a video in Movies/Bubbles. The assistant keeps listening while video records. "
                 + "This video mode has no microphone audio track; sound-only recording remains a separate option.");
         captureInfo.setTextColor(Color.rgb(101, 83, 111));
