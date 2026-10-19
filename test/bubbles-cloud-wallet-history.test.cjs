@@ -12,7 +12,7 @@ test('website and Android Bubbles use exactly one authenticated wallet panel',()
  assert.match(page,/id="bubblesWalletHistory"/);
  assert.match(page,/bubbles-cloud-wallet\.js/);
  assert.match(chat,/if\(verifiedWallet\)tools\.append\(verifiedWallet\)/);
- assert.match(page,/href="\/wallet-recovery\.html"/);
+ assert.match(page,/href="\/wallet-recovery\.html\?verify=1"/);
 });
 test('wallet display uses server verified identity, never hard-coded user account or balance',()=>{
  assert.match(ui,/resolveDeviceToken/);
