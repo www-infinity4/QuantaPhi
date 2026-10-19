@@ -175,3 +175,46 @@ test('checkpoint failure cannot be converted into model correction or retried ex
  await assert.rejects(directGithubAgent({GITHUB_TOKEN:'test',WRITER_AI:{run:async()=>{models++;return {response:JSON.stringify({action:'list_runs'})}}}},{repository,request:'Inspect',mode:'read'},async url=>Response.json(url.includes('/actions/runs')?{workflow_runs:[]}:{default_branch:'main'}),async()=>{throw Error('checkpoint_failed')}),/checkpoint_failed/);
  assert.equal(models,1);
 });
+
+test('workflow run evidence preserves failed steps and in-progress state without claiming deployment',async()=>{
+ const calls=[];
+ const result=await githubOperation({GITHUB_TOKEN:'fixture-secret'},{repository,action:'read_run',runId:71},async(url,options)=>{
+  calls.push({url,...options});
+  return Response.json(url.includes('/jobs?')?{total_count:1,jobs:[{id:81,run_id:71,name:'Python checks',status:'in_progress',conclusion:null,steps:[{number:1,name:'Lint',status:'completed',conclusion:'failure'},{number:2,name:'Tests',status:'queued',conclusion:null}]}]}:{id:71,repository:{full_name:repository},head_sha:sha,status:'in_progress',conclusion:null,path:'.github/workflows/check.yml',run_attempt:2});
+ });
+ assert.equal(result.run.status,'in_progress');assert.equal(result.run.conclusion,null);assert.equal(result.run.headSha,sha);assert.equal(result.run.attempt,2);
+ assert.equal(result.jobs[0].steps[0].conclusion,'failure');assert.equal(result.jobs[0].steps[1].status,'queued');
+ assert.equal(result.jobsComplete,true);assert.equal(result.deploymentVerified,false);assert.equal(result.hardwareVerified,false);
+ assert.ok(calls.every(c=>c.method==='GET'&&c.redirect==='manual'));assert.ok(!JSON.stringify(result).includes('fixture-secret'));
+});
+test('run IDs and repository/run identities are checked before further reads',async()=>{
+ let calls=0;
+ for(const runId of [0,-1,'71',1.5,Number.MAX_SAFE_INTEGER+1])await assert.rejects(githubOperation({GITHUB_TOKEN:'test'},{repository,action:'read_run',runId},async()=>{calls++;throw Error('unexpected')}),/explicit_workflow_run_id/);
+ assert.equal(calls,0);
+ for(const run of [{id:72,repository:{full_name:repository},head_sha:sha},{id:71,repository:{full_name:'other/repo'},head_sha:sha},{id:71,repository:{full_name:repository},head_sha:'main'}]){
+  await assert.rejects(githubOperation({GITHUB_TOKEN:'test'},{repository,action:'read_run',runId:71},async()=>{calls++;return Response.json(run)}),/run_identity_mismatch/);
+ }
+ assert.equal(calls,3);
+});
+test('run job discovery follows pagination and fails closed on oversized, missing or duplicate evidence',async()=>{
+ const run={id:71,repository:{full_name:repository},head_sha:sha,run_attempt:1,status:'completed',conclusion:'success'};
+ const jobs=Array.from({length:100},(_,i)=>({id:i+1,run_id:71,steps:[],status:'completed',conclusion:'success'}));
+ const calls=[];
+ const result=await githubOperation({GITHUB_TOKEN:'test'},{repository,action:'read_run',runId:71},async url=>{calls.push(url);return Response.json(!url.includes('/jobs?')?run:{total_count:101,jobs:url.includes('page=2')?[{id:101,run_id:71,steps:[]}]:jobs})});
+ assert.equal(result.jobs.length,101);assert.equal(calls.length,3);assert.ok(calls[1].includes('/attempts/1/jobs?'));
+ for(const body of [{total_count:201,jobs:[]},{total_count:2,jobs:[jobs[0]]},{total_count:2,jobs:[jobs[0],jobs[0]]},{total_count:1,jobs:[{id:1,run_id:72,steps:[]}]}]){
+  await assert.rejects(githubOperation({GITHUB_TOKEN:'test'},{repository,action:'read_run',runId:71},async url=>Response.json(url.includes('/jobs?')?body:run)),/jobs_|job_identity/);
+ }
+});
+test('workflow discovery returns later pages and refuses an incomplete catalog',async()=>{
+ const rows=Array.from({length:100},(_,i)=>({id:i,name:'Workflow '+i,path:'.github/workflows/test'+i+'.yml',state:'active'}));
+ const result=await githubOperation({GITHUB_TOKEN:'test'},{repository,action:'list_workflows'},async url=>Response.json({total_count:101,workflows:url.includes('page=2')?[{id:101,name:'Python toolbox',path:'.github/workflows/python.yml',state:'active'}]:rows}));
+ assert.equal(result.complete,true);assert.equal(result.workflows.at(-1).id,101);
+ await assert.rejects(githubOperation({GITHUB_TOKEN:'test'},{repository,action:'list_workflows'},async()=>Response.json({total_count:2,workflows:[rows[0]]})),/catalog_incomplete/);
+});
+test('native run inspection feeds actual job failure back into model context',async()=>{
+ const steps=[{tool_calls:[{name:'read_run',arguments:{runId:71}}]},{tool_calls:[{name:'finish',arguments:{summary:'Lint failed.'}}]}],inputs=[];
+ const result=await directGithubAgent({GITHUB_TOKEN:'test',WRITER_AI:{run:async(_,input)=>{inputs.push(structuredClone(input));return steps.shift()}}},{repository,request:'Why did run 71 fail?',mode:'read'},async url=>Response.json(url.includes('/jobs?')?{total_count:1,jobs:[{id:81,run_id:71,steps:[{name:'Ruff',status:'completed',conclusion:'failure'}]}]}:url.includes('/actions/runs/')?{id:71,repository:{full_name:repository},head_sha:sha,run_attempt:1,status:'completed',conclusion:'failure'}:{default_branch:'main'}));
+ assert.equal(result.status,'inspected');assert.match(inputs[1].messages.at(-1).content,/"name":"Ruff"/);assert.match(inputs[1].messages.at(-1).content,/"conclusion":"failure"/);
+ for(const mode of ['read','write','actions'])assert.ok(directGithubTools(mode).some(t=>t.function.name==='read_run'));
+});

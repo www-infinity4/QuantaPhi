@@ -6,6 +6,7 @@ const definitions=[
  ['read_repository','Read the selected repository default branch and immutable head SHA.',object(),'read'],
  ['read_file','Read a file at the inspected immutable head SHA. Missing files return exists:false.',object({path:string(240,'Repository-relative file path'),ref:{type:'string',pattern:'^[a-f0-9]{40}$',description:'Head SHA returned by read_repository'}}),'read'],
  ['list_runs','Read actual recent workflow runs, including status and conclusion.',object(),'read'],
+ ['read_run','Read actual workflow run, job and step status at a discovered numeric run ID. CI success does not prove deployment or device behavior.',object({runId:{type:'integer',minimum:1,maximum:9007199254740991,description:'Exact run ID returned by list_runs'}}),'read'],
  ['list_workflows','Discover actual workflow filenames before a requested dispatch.',object(),'read'],
  ['commit_files','Stage reviewed complete files on the server-selected task branch. Does not prove tests, merge, or deployment.',object({baseSha:{type:'string',pattern:'^[a-f0-9]{40}$'},message:string(300,'Commit message'),files:{type:'array',minItems:1,maxItems:12,items:object({path:string(240,'Previously inspected repository-relative path'),content:{type:'string',maxLength:100000}})}}),'write'],
  ['create_pr','Open a pull request for the reviewed task branch so target CI can run.',object({base:string(140,'Inspected default branch'),title:string(180,'Pull request title'),body:{type:'string',maxLength:5000}},['base','title']),'write'],
