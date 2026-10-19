@@ -3,13 +3,19 @@
 :root{--bu-ink:#202635;--bu-purple:#5d2a9c;--bu-accent:#7237bc;--bu-paper:#fffcf9;--bu-muted:#536273;--bu-line:#ddd6e7}
 .ba-panel,.ba-panel *{box-sizing:border-box}
 .ba-launcher[hidden],.ba-panel[hidden]{display:none!important}
+:root{--bu-orb-blue:radial-gradient(circle at 32% 22%,#fff 0,#ffffffd9 8%,transparent 23%),radial-gradient(circle at 70% 78%,#3e55cb 0,#667dea 35%,transparent 68%),radial-gradient(circle at 25% 36%,#a9faff 1%,#50cce9 41%,#7155d8 82%)}
 .ba-launcher{
  width:72px;height:72px;border:2px solid #98faf7;border-radius:50%;
- background:radial-gradient(circle at 32% 22%,#fff 0,#ffffffd9 8%,transparent 23%),
- radial-gradient(circle at 70% 78%,#3e55cb 0,#667dea 35%,transparent 68%),
- radial-gradient(circle at 25% 36%,#a9faff 1%,#50cce9 41%,#7155d8 82%);
+ background:var(--bu-orb-blue);
  box-shadow:inset 4px 5px 14px #ffffffb8,inset -8px -10px 18px #3d259d9c,
  0 0 0 2px #d4ffff99,0 10px 28px #32227480;
+}
+/* Generic Oracle Octaves button styles otherwise paint Bubbles pale grey.
+   Restore only its blue glass surface; never override state-based glow/animation. */
+body.oracle-octaves-page button.ba-launcher,
+body.oracle-octaves-home button.ba-launcher{
+ background:var(--bu-orb-blue);border:2px solid #98faf7;border-radius:50%;
+ padding:0;color:#fff;
 }
 .ba-launcher .ba-orb-shine{top:12%;left:18%;height:30%;width:40%;background:radial-gradient(ellipse,#ffffffe8,#ffffff03 78%)}
 .ba-launcher[data-state="thinking"]{box-shadow:0 0 0 3px #9b80ed,0 0 35px #9872eaaa,inset -6px -8px 18px #362187}
