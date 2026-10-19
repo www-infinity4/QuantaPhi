@@ -56,7 +56,7 @@ test('floating QuantaPhi website composer passes screen capture to native Androi
   assert.match(site, /nativeCaptureRequests\.push\(spoken\)/);
   assert.match(site, /nativeCaptureRequests\.shift\(\)/);
   assert.match(site, /drainNativeCaptureRequest/);
-  assert.match(site, /const duActive=capture.duRecording===true/);
+  assert.match(site, /const xActive=capture.xRecording===true/);
   assert.match(bridge, /VoiceCaptureCommands\.parse\(command\)/);
   assert.match(bridge, /BubblesService\.ACTION_TEXT/);
   assert.match(bridge, /drainNativeCaptureRequest/);
