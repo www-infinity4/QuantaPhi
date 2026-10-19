@@ -129,7 +129,15 @@ export class ConsentService {
         if(!exists)await tx.put(accountKey,{repository,connectionId:id,createdAt:this.now()});
       });
     }
+    if(mode==='write')await this.storage.put(prefix+'starcoin:last-backup',{
+      repository,hash:snapshot.hash,commit:result.commit||null,status:result.status,at:this.now()});
     return result;
+    }catch(error){
+      if(['backup_mismatch_review_required','backup_account_mismatch_review_required',
+          'backup_malformed_review_required'].includes(error?.message))
+        await this.storage.put(prefix+'starcoin:review',{
+          repository,reason:error.message,at:this.now(),status:'owner_review_required'});
+      throw error;
     }finally{
       if(mode==='write')await this.storage.transaction(async tx=>{
         if((await tx.get(leaseKey))?.lease===lease)await tx.delete(leaseKey);
