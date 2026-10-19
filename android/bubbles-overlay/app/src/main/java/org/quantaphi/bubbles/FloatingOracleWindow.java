@@ -329,6 +329,12 @@ final class FloatingOracleWindow {
                     // Persist only the site's own Set-Cookie updates; do not clear
                     // the authenticated WebView profile when collapsing or reopening.
                     android.webkit.CookieManager.getInstance().flush();
+                    // The installed APK, not Chrome or the SIM, securely remembers
+                    // the last server-verified wallet in AndroidKeyStore. When the
+                    // WebView's own storage has been cleared it can restore that
+                    // same account without copying a browser cookie or minting a
+                    // replacement identity. Other selected accounts are untouched.
+                    NativeWalletVault.synchronize(service, view);
                     // Old live deployments are not treated as capable. Never send a
                     // work command to a guessed JS endpoint.
                     pollBridgeReady(view, loadGeneration, 0);
