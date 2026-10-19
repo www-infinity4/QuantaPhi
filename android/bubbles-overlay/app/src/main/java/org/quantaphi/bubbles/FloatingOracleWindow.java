@@ -217,6 +217,11 @@ final class FloatingOracleWindow {
             website = new WebView(service);
             website.setVisibility(View.GONE);
             website.setBackgroundColor(BACKGROUND);
+            // WebView owns a persistent first-party session (cookies and DOM storage).
+            // Chrome's separate wallet secrets are never copied or bundled in the APK.
+            android.webkit.CookieManager cookies = android.webkit.CookieManager.getInstance();
+            cookies.setAcceptCookie(true);
+            cookies.setAcceptThirdPartyCookies(website, false);
             WebSettings settings = website.getSettings();
             settings.setJavaScriptEnabled(true);
             settings.setDomStorageEnabled(true);
@@ -321,6 +326,9 @@ final class FloatingOracleWindow {
                         showWebsite(false);
                         return;
                     }
+                    // Persist only the site's own Set-Cookie updates; do not clear
+                    // the authenticated WebView profile when collapsing or reopening.
+                    android.webkit.CookieManager.getInstance().flush();
                     // Old live deployments are not treated as capable. Never send a
                     // work command to a guessed JS endpoint.
                     pollBridgeReady(view, loadGeneration, 0);
@@ -567,8 +575,7 @@ final class FloatingOracleWindow {
             captureState.put("screenActive", prefs.getBoolean("capture_active", false));
             captureState.put("screenRecording", prefs.getBoolean("capture_recording", false));
             captureState.put("soundActive", prefs.getBoolean("audio_active", false));
-            captureState.put("xRecording", XRecorderBridge.recordingVerified(service));
-            captureState.put("xPhase", prefs.getString("x_recorder_phase", ""));
+            captureState.put("nativeRecorder", true);
             String readState = prefs.getString("screen_state", "");
             captureState.put("simInspection", true);
             captureState.put("screenSharing", service.isScreenSharing());
@@ -718,6 +725,7 @@ final class FloatingOracleWindow {
             root = null;
         }
         if (website != null) {
+            android.webkit.CookieManager.getInstance().flush();
             website.stopLoading();
             website.loadUrl("about:blank");
             website.destroy();

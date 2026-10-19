@@ -76,7 +76,7 @@ test('Bubbles exposes listening first and hides optional recording controls unti
   assert.match(ui, /advancedCapture\.setVisibility\(View\.GONE\)/);
   assert.match(ui, /brainSettings\.setVisibility\(View\.GONE\)/);
   assert.match(ui, /More: recording, camera and screen tools/);
-  assert.match(ui, /Listening is separate from recording/);
+  assert.match(ui, /Bubbles has its own native screen recorder/);
 });
 test('AI and voice failure status captures a useful reason rather than only an exception type', () => {
   assert.match(source, /Oracle response status/);

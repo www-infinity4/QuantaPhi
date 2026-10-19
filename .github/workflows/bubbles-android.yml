@@ -75,7 +75,7 @@ jobs:
         run: node --test test/bubbles-native-reply-recovery.test.cjs
       - name: Verify three-lane room and internal playback isolation
         run: node --test test/bubbles-room-notes-native.test.cjs test/bubbles-three-lane-voice.test.cjs test/bubbles-phone-playback-lane.test.cjs
-      - name: Verify XRecorder controls never restart native screen video
+      - name: Verify native screen recorder and no external recorder controls
         run: node --test test/bubbles-du-recorder-handoff.test.cjs test/bubbles-xrecorder-app-control.test.cjs
       - name: Verify adaptive voice pause and CapCut media handoff
         run: |
