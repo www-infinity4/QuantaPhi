@@ -11,6 +11,10 @@ CONNECTIONS_READY = "false"
 binding = "BOT_WALLET"
 service = "unified-wallet"
 
+[[services]]
+binding = "STARQUEST_LEDGER"
+service = "starquest-ledger"
+
 [[durable_objects.bindings]]
 name = "CONNECTIONS"
 class_name = "UserConnections"
