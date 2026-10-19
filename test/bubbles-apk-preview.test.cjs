@@ -31,5 +31,5 @@ test('published APK keeps immutable versioned filename plus rolling alias',()=>{
  assert.match(workflow,/cp "dist\/\$VERSIONED" dist\/Bubbles-Preview5-Android12\.apk/);
  assert.match(workflow,/sha256sum "\$VERSIONED" > "\$VERSIONED\.sha256"/);
  assert.match(workflow,/Bubbles-Preview5-Android12\.apk\.sha256/);
- assert.equal(version,'0.40.0');
+ assert.equal(version,'0.41.0');
 });

@@ -30,6 +30,7 @@ public final class MainActivity extends Activity {
     private Runnable refreshStatus;
     private Runnable refreshScreenPermission;
     private Runnable refreshChatGPTStatus;
+    private Runnable refreshRecommendedSetup;
     private final java.util.concurrent.ExecutorService mediaWork = java.util.concurrent.Executors.newSingleThreadExecutor();
     private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64, IMAGE_REQUEST = 65,
         PHONE_AUDIO_REQUEST = 66, CAPCUT_MEDIA_REQUEST = 67;
@@ -53,17 +54,35 @@ public final class MainActivity extends Activity {
         layout.addView(title);
 
         TextView copy = new TextView(this);
-        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. "
-            + "Your small floating Bubbles orb uses the QuantaPhi Bubbles website. "
-            + "Once you sign in inside Bubbles, that first-party app session is retained across launches. "
-            + "Android does not automatically import Chrome wallet credentials. Owner actions remain verified by the website. "
-            + "Drag the orb wherever you like. It grows when speaking and gently dims other cooperating media apps. "
-            + "Say 'Bubbles, record' to request Android permission for Bubbles' own screen recorder; say 'stop' to save. "
-            + "CapCut may be used later for editing. No XRecorder or DU Recorder is required.");
+        copy.setText("Use Recommended setup, approve Android permissions, then say Bubbles to open the assistant. "
+            + "Screen access stays under your Android control. Say 'Bubbles, record' to request screen-recording approval. "
+            + "Your Bubbles website session stays signed in on this phone while valid; Chrome logins are not imported automatically.");
         copy.setTextColor(Color.rgb(101, 83, 111));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
         layout.addView(copy);
+        // First-run setup never grants Android permissions by itself.
+        Button recommended = new Button(this);
+        recommended.setText("Recommended setup");
+        recommended.setOnClickListener(view -> {
+            if (!canTalk()) { checkAndStart(); return; }
+            if (!BrainLearningService.isConnected()) {
+                state.setText("Enable Bubbles screen reading in Android Accessibility settings, then return here.");
+                startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
+                return;
+            }
+            if (!BubblesService.isSessionRunning()) checkAndStart();
+            else startForegroundService(new Intent(this, BubblesService.class)
+                .setAction(BubblesService.ACTION_SCREEN_FOLLOW_ON));
+            state.setText("Screen follow uses Accessibility to read the fresh screen with each Bubbles request. Say 'stop screen sharing' to turn it off.");
+        });
+        refreshRecommendedSetup = () -> recommended.setText(!canTalk()
+            ? "Recommended setup · enable Bubbles voice"
+            : !BrainLearningService.isConnected()
+                ? "Recommended setup · enable screen access"
+                : "Ready · open Bubbles chat");
+        refreshRecommendedSetup.run();
+        layout.addView(recommended);
         Button connect = new Button(this);
         connect.setText("Enable the floating Bubbles assistant");
         connect.setOnClickListener(view -> checkAndStart());
@@ -120,6 +139,15 @@ public final class MainActivity extends Activity {
                 .setAction(BubblesService.ACTION_OPEN_CHAT));
         });
         layout.addView(chat);
+        Button githubAccess = new Button(this);
+        githubAccess.setText("GitHub · check access in Bubbles");
+        githubAccess.setOnClickListener(view -> {
+            if (!canTalk()) { checkAndStart(); return; }
+            startForegroundService(new Intent(this, BubblesService.class)
+                .setAction(BubblesService.ACTION_OPEN_CHAT));
+            state.setText("In Bubbles chat say 'check GitHub access'. The owner connection must return a real receipt before any GitHub write.");
+        });
+        layout.addView(githubAccess);
         Button interrupt = new Button(this);
         interrupt.setText("Stop Bubbles talking (keep listening)");
         interrupt.setOnClickListener(view -> startService(new Intent(this, BubblesService.class)
@@ -559,6 +587,30 @@ public final class MainActivity extends Activity {
 
 
 
+        // Default to essential controls. Keep Stop permanently visible.
+        // Advanced diagnostics, recorder, IBM/Gemini and learning settings
+        // are still present in their original order when expanded.
+        java.util.List<View> essentials = java.util.Arrays.asList(
+            title, copy, recommended, screenPermission, screenAccess,
+            accountState, chatgptLogin, chatgptLogout, githubAccess, chat, stop, state);
+        LinearLayout advanced = new LinearLayout(this);
+        advanced.setOrientation(LinearLayout.VERTICAL);
+        advanced.setVisibility(View.GONE);
+        for (int i = layout.getChildCount() - 1; i >= 0; i--) {
+            View child = layout.getChildAt(i);
+            if (essentials.contains(child)) continue;
+            layout.removeViewAt(i);
+            advanced.addView(child, 0);
+        }
+        Button more = new Button(this);
+        more.setText("More settings and diagnostics");
+        more.setOnClickListener(view -> {
+            boolean show = advanced.getVisibility() != View.VISIBLE;
+            advanced.setVisibility(show ? View.VISIBLE : View.GONE);
+            more.setText(show ? "Hide advanced settings" : "More settings and diagnostics");
+        });
+        layout.addView(more);
+        layout.addView(advanced);
         styleOracleControls(layout);
         ScrollView scroll=new ScrollView(this);
         scroll.setBackgroundColor(Color.rgb(251, 247, 238));
@@ -638,6 +690,7 @@ public final class MainActivity extends Activity {
         }
         if (refreshChatGPTStatus != null) refreshChatGPTStatus.run();
         if (refreshScreenPermission != null) refreshScreenPermission.run();
+        if (refreshRecommendedSetup != null) refreshRecommendedSetup.run();
         if (refreshStatus != null) { ui.removeCallbacks(refreshStatus); refreshStatus.run(); }
         String voiceCapture = getIntent().getStringExtra("voice_capture");
         if (voiceCapture != null) {
