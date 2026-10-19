@@ -52,3 +52,33 @@ that server work stopped.
   failure against the current runner; retain actual commit/test/deploy receipts.
 - Capture revocation, network loss during a job, duplicate submission, and
   expired-lease recovery still need end-to-end evidence.
+
+## Second iteration: complete-response deadlines
+
+The 0.44.0 signed preview APK was subsequently published in the existing
+GitHub release. Next, inspection found that bubblesFetch cleared its timeout
+after headers arrived, before callers consumed the response body. A stalled
+JSON body could therefore leave authenticated tools waiting indefinitely.
+
+The helper now races one absolute deadline against both fetch and full body
+consumption, then returns a buffered Response preserving HTTP status and
+headers. It is for finite API responses, not media or event streaming. Timeout
+aborts the transport and explicitly leaves server completion unverified.
+The existing GitHub recovery path watches the original request ID rather than
+submitting a second mutation. Updated script query keys request the new code
+from the homepage and Bubbles entry pages without requiring an APK rebuild.
+
+Gemini reviewed the implementation description in the same consultation,
+highlighting finite payload scope, bodyless status codes, and the distinction
+between client cancellation and server execution. Tests cover a body that
+stalls after headers, subsequent request recovery, original-ID GitHub receipt
+watching with exactly one submission, HTTP 401 evidence, and bodyless 204.
+These are simulated transport checks, not Motorola network or runner tests.
+
+The complete Bubbles test glob subsequently reported 445 passes and zero
+failures. Three stale checks were first reproduced against the unchanged
+15d83dfa baseline, then repaired: the VM fixture now accounts explicitly for
+the video API import, the receipt test matches the current warning, and entry
+pages must load matching versioned scripts without pinning an obsolete date.
+The voice harness now supplies real Response objects, exercising the same
+body-consumption interface as a browser rather than a json-only fake.

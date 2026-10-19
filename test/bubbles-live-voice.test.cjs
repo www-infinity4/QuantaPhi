@@ -47,7 +47,10 @@ function harness(owner=false,speech=false){
   return {ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',status:'draft',context:{kind:'robot-directions'}}}:url.endsWith('/work/run-next')?{ok:true,status:'queued_for_runner',ticketId:'fixture-ticket',jobId:'TASK-1'}:{ok:true,output:'Bubbles response from Oracle'}};
  };
  const context={window,document,navigator,localStorage,location:{href:'https://quantaphi.org/',search:'',origin:'https://quantaphi.org',pathname:'/'},
-  NodeFilter:{SHOW_TEXT:4},scrollY:0,innerHeight:780,innerWidth:390,URL,URLSearchParams,Date:FakeDate,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch,AbortController,setTimeout:()=>1,clearTimeout(){}};
+  NodeFilter:{SHOW_TEXT:4},scrollY:0,innerHeight:780,innerWidth:390,URL,URLSearchParams,Response,Date:FakeDate,crypto:{randomUUID:()=> 'note-id',subtle:require('node:crypto').webcrypto.subtle},TextEncoder,AbortSignal,CustomEvent:class{constructor(type,opts){this.type=type;this.detail=opts.detail}},fetch:async(...args)=>{
+   const fixture=await fetch(...args);
+   return Response.json(await fixture.json(),{status:fixture.ok?200:500});
+  },AbortController,setTimeout:()=>1,clearTimeout(){}};
  if(speech){context.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};context.speechSynthesis={cancel(){},getVoices:()=>[],speak(u){utterances.push(u);u.onstart?.()}};}
  vm.runInNewContext(gateSource,context);
  vm.runInNewContext(brainSource,context);

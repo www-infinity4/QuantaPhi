@@ -19,5 +19,5 @@ test('ChatGPT and Google Takeout Gemini history share the same explicit import a
 test('robot ticket references stay internal, not read as long alphanumeric chat', () => {
   assert.doesNotMatch(site, /Job reference: '\+ticket\.id/);
   assert.doesNotMatch(site, /result\.ticketId\+'\/'\+result\.jobId/);
-  assert.match(site, /queued does not mean code was edited or deployed/);
+  assert.match(site, /No successful code change, merge or deployment has been verified by this receipt/);
 });
