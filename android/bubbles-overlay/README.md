@@ -1,3 +1,33 @@
+## APK 38 feature build (upgrade-safe preview 0.40.0)
+
+The APK 38 work targets a single 58dp Bubbles orb, growing to 78dp only during
+spoken replies. The separate XRecorder overlay and app-package dependency have
+been removed. Voice **record** asks for Android MediaProjection permission;
+one Bubbles screen service records video and the existing microphone PCM and
+attempts to publish an MP4 to Movies/Bubbles. **Stop** finalizes the native
+recording. Original private footage is preserved if gallery export/mux fails.
+Android media recording approval is required for every new screen-projection
+session. The on-device recorder is an original integration, not a copy/fork of
+the closed-source DU Recorder or XRecorder applications.
+
+When Bubbles speaks, it asks Android for transient `MAY_DUCK` audio focus,
+and restores focus on completion/interruption. Cooperating media players may
+lower their playback; Android cannot guarantee control of every app's output.
+The microphone PCM is not attenuated to avoid losing recorded speech.
+
+QuantaPhi is loaded into the app's persistent first-party Android WebView
+profile. Cookies and DOM storage are retained across service restarts and the
+webview's cookies are flushed when appropriate. This **does not** automatically
+import an existing Chrome login, wallet key or account tokens. Once a user signs
+in inside Bubbles, they should not need to re-pair on every launch while the
+session remains valid. For a zero-touch first-install website-to-APK login,
+server-side verified account handoff is still required. Credentials must never
+be bundled, read from Chrome storage or copied into another user's APK.
+
+**Build status:** source changed and subject to GitHub Actions compilation.
+No Motorola runtime crash-free or end-to-end account-handoff receipt is implied.
+The preview package continues to use the Preview 5 identity and test signer.
+
 ## Native voice-attribution safeguard (October 16, 2026)
 
 The Android microphone now forwards idle speech only after an explicit "Bubbles"
