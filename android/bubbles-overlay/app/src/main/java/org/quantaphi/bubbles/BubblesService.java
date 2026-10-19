@@ -22,6 +22,9 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.os.SystemClock;
 import android.provider.Settings;
+import android.media.AudioAttributes;
+import android.media.AudioFocusRequest;
+import android.media.AudioManager;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
@@ -137,32 +140,46 @@ public final class BubblesService extends Service {
     private WindowManager.LayoutParams bubbleLayout;
     private OrbView orb;
     private android.widget.TextView roomBubble;
-    private android.widget.TextView xRecorderButton;
-    private void attachXRecorderButton() {
-        if (manager == null || xRecorderButton != null || !connected) return;
-        android.widget.TextView button = new android.widget.TextView(this);
-        button.setText("X\\nREC".replace("\\n", "\n"));
-        button.setTextColor(Color.WHITE);
-        button.setTextSize(12f);
-        button.setGravity(Gravity.CENTER);
-        button.setBackgroundColor(Color.rgb(46, 78, 150));
-        button.setContentDescription("XRecorder floating control. Tap to use XRecorder's start or stop button. Long press to stop.");
-        button.setOnClickListener(v -> XRecorderBridge.request(this, "toggle", main));
-        button.setOnLongClickListener(v -> {
-            XRecorderBridge.request(this, "stop", main);
-            return true;
-        });
-        WindowManager.LayoutParams layout = new WindowManager.LayoutParams(114, 110,
-            WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
-            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
-            PixelFormat.TRANSLUCENT);
-        layout.gravity = Gravity.TOP | Gravity.RIGHT;
-        layout.x = 16; layout.y = 510;
-        try { manager.addView(button, layout); xRecorderButton = button; }
-        catch (RuntimeException error) {
-            BrainNotes.prefs(this).edit().putString("x_recorder_state",
-                "XRecorder floating control could not open: " + error.getClass().getSimpleName()).apply();
+    // One movable Bubbles orb, never a second XRecorder control.
+    private void resizeOrb(boolean talking) {
+        if (orb == null || bubbleLayout == null || manager == null) return;
+        int size = Math.round((talking ? 78f : 58f) * getResources().getDisplayMetrics().density);
+        if (bubbleLayout.width == size && bubbleLayout.height == size) return;
+        bubbleLayout.width = size;
+        bubbleLayout.height = size;
+        android.util.DisplayMetrics display = getResources().getDisplayMetrics();
+        bubbleLayout.x = Math.max(0, Math.min(display.widthPixels - size, bubbleLayout.x));
+        bubbleLayout.y = Math.max(0, Math.min(display.heightPixels - size, bubbleLayout.y));
+        try { manager.updateViewLayout(orb, bubbleLayout); }
+        catch (RuntimeException ignored) { /* Android may remove the overlay first. */ }
+    }
+    private AudioManager speechAudioManager;
+    private AudioFocusRequest speechFocus;
+    private boolean speechOwnsAudioFocus;
+    private void duckExternalPlayback() {
+        // Android's cooperative audio-focus ducking does not change microphone PCM.
+        if (speechAudioManager == null) {
+            speechAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
         }
+        if (speechAudioManager == null) return;
+        if (speechFocus == null) {
+            speechFocus = new AudioFocusRequest.Builder(AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK)
+                .setAudioAttributes(new AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_ASSISTANT)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH).build())
+                .setOnAudioFocusChangeListener(change -> {}).build();
+        }
+        try {
+            speechOwnsAudioFocus = speechAudioManager.requestAudioFocus(speechFocus)
+                == AudioManager.AUDIOFOCUS_REQUEST_GRANTED;
+        } catch (RuntimeException ignored) { speechOwnsAudioFocus = false; }
+    }
+    private void restoreExternalPlayback() {
+        if (speechOwnsAudioFocus && speechAudioManager != null && speechFocus != null) {
+            try { speechAudioManager.abandonAudioFocusRequest(speechFocus); }
+            catch (RuntimeException ignored) {}
+        }
+        speechOwnsAudioFocus = false;
     }
     public static final String ACTION_SYNC_ROOM = "org.quantaphi.bubbles.SYNC_ROOM_NOTES";
     private void syncRoomBubble() {
@@ -468,8 +485,9 @@ public final class BubblesService extends Service {
             else startForeground(NOTIFY_ID, notification);
             manager = (WindowManager) getSystemService(WINDOW_SERVICE);
             orb = new OrbView(this);
+            int normalOrbSize = Math.round(58f * getResources().getDisplayMetrics().density);
             bubbleLayout = new WindowManager.LayoutParams(
-                    156, 156, WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
+                    normalOrbSize, normalOrbSize, WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
                     WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
                     PixelFormat.TRANSLUCENT);
             bubbleLayout.gravity = Gravity.TOP | Gravity.LEFT;
@@ -477,7 +495,6 @@ public final class BubblesService extends Service {
             manager.addView(orb, bubbleLayout);
             connected = true;
             syncRoomBubble();
-            attachXRecorderButton();
             activeImageService = this;
             sessionRunning = true;
             // Keep the real QuantaPhi website assistant available while the
@@ -842,6 +859,7 @@ public final class BubblesService extends Service {
         turnBuffer.clear();
         echoQuietUntil = SystemClock.elapsedRealtime() + 1500L;
         if (tts != null) tts.stop();
+        restoreExternalPlayback();
         if (connected && !muted) state("listening", .1f);
     }
     private void finishSpeaking(String id) {
@@ -849,6 +867,7 @@ public final class BubblesService extends Service {
         activeUtteranceId = "";
         speaking = false;
         speechGeneration++;
+        restoreExternalPlayback();
         // Hardware speaker echo and TTS audio buffers may outlast onDone.
         echoQuietUntil = SystemClock.elapsedRealtime() + 1500L;
         if (connected && !muted) state("listening", .1f);
@@ -919,13 +938,14 @@ public final class BubblesService extends Service {
                         else if (screenState.contains("approval") || screenState.contains("requested"))
                             result += "Screen capture is waiting for your Android approval.";
                     }
-                    if (XRecorderBridge.recordingVerified(this)) result = "Recording.";
-                    else if ("starting".equals(BrainNotes.prefs(this).getString("x_recorder_phase", ""))) result = "Starting.";
-                    else if (screenActive) result = "Screen capture active.";
-                    else if (soundActive) result = "Recording.";
-                    else if ("needs_tap".equals(BrainNotes.prefs(this).getString("x_recorder_phase", "")))
-                        result = "XRecorder is ready for its Record button.";
-                    else result = "No recording is verified.";
+                    // Only Android's actual native capture state can report recording.
+                    if (!screenActive && !soundActive && !screenState.startsWith("Saved ")
+                            && !screenState.startsWith("Gallery export failed")
+                            && !audioState.startsWith("Saved ")) {
+                        result = screenState.contains("approval") || screenState.contains("requested")
+                            ? "Screen recording needs Android permission."
+                            : "No recording is active.";
+                    }
                     speak(result);
                     break;
                 }
@@ -953,9 +973,7 @@ public final class BubblesService extends Service {
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing and saving screen capture…").apply();
                     }
                     if (!screenActive && !soundActive)
-                        XRecorderBridge.request(this, "stop", main, feedback -> {
-                            if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
-                        });
+                        BrainNotes.prefs(this).edit().putString("capture_state", "No active recording").apply();
                     if (!screenActive && !soundActive && speaking) silenceReply();
                     break;
                 }
@@ -964,15 +982,16 @@ public final class BubblesService extends Service {
                     if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
                         startService(new Intent(this, ScreenCaptureService.class).setAction(ScreenCaptureService.STOP));
                         BrainNotes.prefs(this).edit().putString("capture_state", "Finishing screen capture…").apply();
-                    } else XRecorderBridge.request(this, "stop", main, feedback -> {
-                        if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
-                    });
+                    } else BrainNotes.prefs(this).edit()
+                        .putString("capture_state", "No active screen recording").apply();
                     break;
                 case "screen_video":
-                    if (!typed) speak("Starting.");
-                    XRecorderBridge.request(this, "start", main, feedback -> {
-                        if ("recording".equals(feedback) && !typed) speakWebsiteReply("Recording.");
-                    });
+                    if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
+                        if (!typed) speak("Recording.");
+                    } else {
+                        if (!typed) speak("Starting.");
+                        offerCaptureApproval(command);
+                    }
                     break;
                 case "capcut_edit":
                 case "capcut_extract": {
@@ -1293,6 +1312,7 @@ public final class BubblesService extends Service {
         main.removeCallbacks(deliverVoiceTurn);
         turnBuffer.clear();
         speaking = true;
+        duckExternalPlayback();
         final long generation = ++speechGeneration;
         final String utterance = "bubbles-" + generation + "-" + SystemClock.elapsedRealtime();
         activeUtteranceId = utterance;
@@ -1346,12 +1366,9 @@ public final class BubblesService extends Service {
                 voiceModel = null;
             }
         }
+        restoreExternalPlayback();
         if (tts != null) {tts.stop();tts.shutdown();tts=null;}
         if (oracleWindow != null) {oracleWindow.close();oracleWindow = null;}
-        if (xRecorderButton != null && manager != null) {
-            try { manager.removeView(xRecorderButton); } catch (RuntimeException ignored) {}
-            xRecorderButton = null;
-        }
         if (roomBubble != null && manager != null) {
             try { manager.removeView(roomBubble); } catch (Exception ignored) {}
             roomBubble = null;
@@ -1385,7 +1402,10 @@ public final class BubblesService extends Service {
                     : "room".equals(name) ? "Unaddressed speech routed to local Room Notes" : "Ready and listening";
                 setContentDescription("Bubbles AI. " + description);
             }
-            currentState=name;energy=level;invalidate();
+            boolean wasTalking = "speaking".equals(currentState);
+            currentState=name;energy=level;
+            if (wasTalking != "speaking".equals(name)) resizeOrb("speaking".equals(name));
+            invalidate();
         }
         @Override protected void onDraw(Canvas canvas) {
             float cx=getWidth()/2f,cy=getHeight()/2f,r=Math.min(cx,cy)-9;
@@ -1431,13 +1451,16 @@ public final class BubblesService extends Service {
             paint.setStyle(Paint.Style.STROKE);
             paint.setStrokeWidth(gathering?3.5f+2.0f*pulse:4f+energy*8f);
             paint.setColor(edge);
+            paint.setAlpha((int)(talking ? 220 + 35*pulse : 140 + 55*pulse));
             canvas.drawCircle(cx,cy,r+1f,paint);
+            paint.setAlpha(255);
             paint.setStyle(Paint.Style.FILL);
             if (hearing || talking) {
                 paint.setColor(talking?Color.argb(175,226,255,252):Color.argb(165,127,255,231));
                 canvas.drawCircle(cx,cy,r*.2f+energy*r*.15f,paint);
             }
-            if (gathering || thinking || talking) postInvalidateDelayed(90L);
+            // Idle warmth is subtle; speech and reasoning animate more quickly.
+            postInvalidateDelayed((gathering || thinking || talking) ? 90L : 360L);
         }
         @Override public boolean onTouchEvent(MotionEvent e) {
             switch(e.getActionMasked()) {
