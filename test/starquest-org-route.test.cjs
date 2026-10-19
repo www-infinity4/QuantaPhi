@@ -22,7 +22,7 @@ async function request(path) {
  return {response,urls};
 }
 test('StarQuest uses one canonical .org route backed by its actual mlb-watch files',async()=>{
- for(const path of ['/starquest/','/StarQuest/','/StarQuest/mlb-watch/']){
+ for(const path of ['/starquest/','/StarQuest/']){
   const {response,urls}=await request(path);
   assert.equal(response.status,200);
   assert.equal(response.headers.get('x-quantaphi-app'),'StarQuest');
@@ -36,4 +36,10 @@ test('StarQuest relative assets do not accidentally resolve to QuantaPhi or GitH
   assert.ok(urls.some(url=>url.includes('/StarQuest/main/mlb-watch/'+asset)),asset+' '+JSON.stringify(urls));
   assert.equal(urls.some(url=>url.includes('github.io')),false);
  }
+});
+
+test('legacy StarQuest development subfolder redirects to canonical .org page',async()=>{
+ const {response}=await request('/StarQuest/mlb-watch/');
+ assert.equal(response.status,308);
+ assert.equal(response.headers.get('Location'),'https://quantaphi.org/starquest/');
 });
