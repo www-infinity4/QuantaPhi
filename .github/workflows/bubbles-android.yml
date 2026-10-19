@@ -63,6 +63,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify spoken multi-step Android app control
+        run: |
+          node --test test/bubbles-spoken-workflow.test.cjs
+          mkdir -p /tmp/bubbles-workflows
+          javac -d /tmp/bubbles-workflows android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenAwareness.java android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SpokenWorkflowPlan.java android/bubbles-overlay/checks/SpokenWorkflowPlanCheck.java
+          java -cp /tmp/bubbles-workflows org.quantaphi.bubbles.SpokenWorkflowPlanCheck
       - name: Verify three-lane room and internal playback isolation
         run: node --test test/bubbles-room-notes-native.test.cjs test/bubbles-three-lane-voice.test.cjs test/bubbles-phone-playback-lane.test.cjs
       - name: Verify XRecorder controls never restart native screen video
