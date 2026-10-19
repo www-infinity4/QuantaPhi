@@ -10,6 +10,8 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
     <queries>
         <package android:name="com.duapps.recorder"/>
+        <package android:name="videoeditor.videorecorder.screenrecorder"/>
+        <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent>
         <package android:name="com.lemon.lvoverseas"/>
         <intent><action android:name="android.speech.RecognitionService"/></intent>
         <intent><action android:name="android.media.action.VIDEO_CAPTURE"/></intent>

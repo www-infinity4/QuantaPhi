@@ -8,7 +8,7 @@ const room=fs.readFileSync(root+'RoomNotes.java','utf8');
 
 test('room mic notes are opt-in and the main AI never receives unaddressed room speech',()=>{
  assert.match(service,/ACTION_SYNC_ROOM/);
- assert.match(service,/if \(!typed && RoomNotes\.enabled\(this\) && !directed\)/);
+ assert.match(service,/if \(!typed && RoomNotes\.enabled\(this\) && !directed && !suffixCapture\)/);
  const route=service.slice(service.indexOf('if (!typed && RoomNotes.enabled(this)'),service.indexOf('String addressed =',service.indexOf('if (!typed && RoomNotes.enabled(this)')));
  assert.match(route,/RoomNotes\.add\(this, text\)/);
  assert.match(route,/state\("room"/);
