@@ -65,13 +65,18 @@ export async function webSearch(message,env={},fetcher=fetch){
   googleVerified:results.length>0&&/google/i.test(provider),requestedGoogle:googleIntent,attempts};
 }
 export function weatherPlace(message,location){
- if(typeof location==='string'&&trim(location,100))return trim(location,100);
- if(location&&typeof location==='object'&&trim(location.city,80))return trim(location.city+' '+trim(location.state||location.region,60),110);
  const s=trim(message,400);
+ const zip=s.match(/\b\d{5}(?:-\d{4})?\b/);
+ if(zip)return zip[0];
  let match=s.match(/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b[\s\S]*?\b(?:in|for|at|near)\s+([a-z0-9][a-z0-9 ,.'-]{1,110})/i);
  if(!match)match=s.match(/\b(?:in|at|near)\s+([a-z0-9][a-z0-9 ,.'-]{1,110})\s+(?:weather|forecast)\b/i);
- return trim((match?.[1]||'').replace(/\b(?:right now|today|tomorrow|this evening|this afternoon|this morning|please|currently)\b.*$/i,''),110);
+ const explicit=trim((match?.[1]||'').replace(/\b(?:right now|today|tomorrow|this evening|this afternoon|this morning|please|currently)\b.*$/i,''),110);
+ if(explicit)return explicit;
+ if(typeof location==='string'&&trim(location,100))return trim(location,100);
+ if(location&&typeof location==='object'&&trim(location.city,80))return trim(location.city+' '+trim(location.state||location.region,60),110);
+ return '';
 }
+
 const descriptions={
  0:'clear',1:'mostly clear',2:'partly cloudy',3:'overcast',45:'foggy',48:'freezing fog',
  51:'light drizzle',53:'drizzle',55:'heavy drizzle',56:'freezing drizzle',57:'heavy freezing drizzle',
@@ -92,15 +97,16 @@ export async function currentWeather(message,location=null,fetcher=fetch){
  const place=weatherPlace(message,location);
  if(!place)return {ok:false,needsLocation:true,output:'Which town and state should I use for your weather? Tell me once, for example, Albia, Iowa.'};
  try{
-  const searches=[place];
+  const postal=/^\d{5}(?:-\d{4})?$/.test(place);
+  const searches=[postal?place.slice(0,5):place];
   // Geocoder may reject "City State"; try the city portion while matching state.
   const comma=place.indexOf(',');
   if(comma>0)searches.push(place.slice(0,comma));
   else if(place.split(/\s+/).length>=2)searches.push(place.replace(/\s+\S+$/,''));
   let places=[],geocoderConnected=false;
   for(const term of [...new Set(searches)]){
-   const endpoint='https://geocoding-api.open-meteo.com/v1/search?'+new URLSearchParams({name:term,count:'10',language:'en',format:'json'});
-   try{const data=await getJson(fetcher,endpoint);geocoderConnected=true;places=data.results||[];if(places.length)break;}catch{/* Try a narrower city query. */}
+   const endpoint='https://geocoding-api.open-meteo.com/v1/search?'+new URLSearchParams({name:term,count:'10',language:'en',format:'json',...(postal?{countryCode:'US'}:{})});
+   try{const data=await getJson(fetcher,endpoint);geocoderConnected=true;places=(data.results||[]).filter(x=>!postal||x.country_code==='US');if(places.length)break;}catch{/* Try a narrower city query. */}
   }
   if(!places.length)return {ok:false,output:geocoderConnected?'I could not identify '+place+' in the weather service. Please give a town and state or postal code.':'I could not reach the live weather service for '+place+'. I have no verified conditions to report.'};
   const lower=place.toLowerCase();
