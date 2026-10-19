@@ -921,8 +921,10 @@ public final class BubblesService extends Service {
                     }
                     if (XRecorderBridge.recordingVerified(this)) result = "Recording.";
                     else if ("starting".equals(BrainNotes.prefs(this).getString("x_recorder_phase", ""))) result = "Starting.";
-                    else if (screenActive) result = "Screen capture active.";
+                    else if (screenActive) result = "Recording.";
                     else if (soundActive) result = "Recording.";
+                    else if (screenState.startsWith("Saved ") || screenState.startsWith("Gallery export failed"))
+                        result = screenState;
                     else if ("needs_tap".equals(BrainNotes.prefs(this).getString("x_recorder_phase", "")))
                         result = "XRecorder is ready for its Record button.";
                     else result = "No recording is verified.";
@@ -1058,6 +1060,26 @@ public final class BubblesService extends Service {
      * notification the user can tap; web AI cannot silently open the camera.
      */
     private void offerCaptureApproval(VoiceCaptureCommands.Command command) {
+        // Android 12 permits a visible, user-enabled overlay service to launch
+        // its own activity. Try the direct consent path first: one system capture
+        // approval instead of a third-party recorder and multiple hidden controls.
+        if ("screen_video".equals(command.action)
+                && android.provider.Settings.canDrawOverlays(this)) {
+            try {
+                Intent direct = new Intent(this, MainActivity.class)
+                    .putExtra("voice_capture", command.action)
+                    .putExtra("interval_seconds", command.intervalSeconds)
+                    .putExtra("duration_seconds", command.durationSeconds)
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(direct);
+                BrainNotes.prefs(this).edit().putString("capture_state",
+                    "Screen capture requested; waiting for Android system approval").apply();
+                return;
+            } catch (RuntimeException denied) {
+                // Background activity launch may be denied by the OS or policy.
+                // In that case use a real owner-tapped notification.
+            }
+        }
         Intent intent = new Intent(this, MainActivity.class)
             .putExtra("voice_capture", command.action)
             .putExtra("interval_seconds", command.intervalSeconds)
