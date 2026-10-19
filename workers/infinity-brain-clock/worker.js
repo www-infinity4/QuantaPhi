@@ -9,6 +9,7 @@ import {checkOwnerRunnerRequest,runnerDispatchReceipt} from './runner-request.mj
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
+import {startGithubDevice,pollGithubDevice,githubDeviceStatus,disconnectGithubDevice} from './github-device-flow.mjs';
 import {planCloudflareToken,confirmCloudflareToken} from './cloudflare-token-broker.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
@@ -692,6 +693,20 @@ export class BrainClock extends DurableObject{
    return Response.json(result.body,{status:result.status});
   }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
+  if(new URL(request.url).pathname==='/github/auth'){
+   const body=await request.json();
+   try{
+    const action=body.action;
+    const result=action==='start'?await startGithubDevice(this.env,this.ctx.storage):
+      action==='poll'?await pollGithubDevice(this.env,this.ctx.storage):
+      action==='status'?await githubDeviceStatus(this.env,this.ctx.storage):
+      action==='disconnect'?await disconnectGithubDevice(this.ctx.storage):
+      {ok:false,status:'blocked',error:'unknown_github_auth_action'};
+    return Response.json(result,{headers:{'Cache-Control':'no-store'}});
+   }catch(error){
+    return Response.json({ok:false,status:'blocked',error:String(error.message||error).slice(0,120)},{status:503});
+   }
+  }
   if(new URL(request.url).pathname==='/owner/cloudflare-token-plan')
    return Response.json(await planCloudflareToken(this.ctx.storage,await request.json(),this.env));
   if(new URL(request.url).pathname==='/owner/cloudflare-token-confirm'){
@@ -1264,6 +1279,21 @@ export default{
     const raw=await request.text();if(raw.length>128000)return output(request,{ok:false,error:'request_too_large'},413);
     return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
+  }
+  if(path==='/owner/github/auth'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
+   try{
+    const raw=await request.text();
+    if(raw.length>1024)return output(request,{ok:false,error:'request_too_large'},413);
+    const body=JSON.parse(raw||'{}');
+    if(!['start','poll','status','disconnect'].includes(body.action))return output(request,{ok:false,error:'invalid_github_auth_action'},400);
+    const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main'))
+      .fetch('https://clock.internal/github/auth',{method:'POST',body:JSON.stringify({action:body.action})});
+    return output(request,await response.json(),response.status);
+   }catch{return output(request,{ok:false,error:'github_authorization_unavailable'},503);}
   }
   if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/tickets/approve','/work/tickets/approve-all','/work/memory/status'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
