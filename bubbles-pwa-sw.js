@@ -16,7 +16,7 @@ self.addEventListener('fetch', event => {
   if (req.method !== 'GET' || req.mode !== 'navigate') return;
   const url = new URL(req.url);
   // Scope worker technically lives at root but controls only the dedicated Bubbles launch path.
-  if (url.origin !== self.location.origin || url.pathname !== '/bubbles.html') return;
+  if (url.origin !== self.location.origin || url.pathname !== '/bubbles-chrome.html') return;
   event.respondWith(fetch(req).catch(async () => {
     const fallback = await caches.match('/bubbles-pwa-offline.html');
     return fallback || Response.error();
