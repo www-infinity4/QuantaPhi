@@ -2252,9 +2252,9 @@ window.QuantaBubbles={
   nativeSimAvailable=capture.simInspection===true;
   const screenActive=capture.screenActive===true,started=capture.screenRecording===true;
   const soundActive=capture.soundActive===true;
-  const duActive=capture.duRecording===true;
-  const duPhase=String(capture.duPhase||'');
-  nativeRecordingActive=screenActive||soundActive||duActive;
+  const xActive=capture.xRecording===true;
+  const xPhase=String(capture.xPhase||'');
+  nativeRecordingActive=screenActive||soundActive||xActive;
   recorderStop.hidden=!nativeRecordingActive;
   recorderStop.disabled=false;
   const screen=String(capture.screenState||'').slice(0,160);
@@ -2266,8 +2266,8 @@ window.QuantaBubbles={
    /saving|finishing/i.test(sound)?'Sound saving':'Sound recorder OFF';
   const lastReceipt=!nativeRecordingActive&&(/saved|failed|finished|error/i.test(screen+' '+sound))
    ?' · Last result: '+(/saved|failed|finished|error/i.test(screen)?screen:sound):'';
-  recorderStatus.textContent=duActive?'Recording':duPhase==='starting'?'Starting…':
-   duPhase==='needs_tap'?'Tap DU to record':mode+' · '+soundMode+lastReceipt;
+  recorderStatus.textContent=xActive?'Recording':xPhase==='starting'?'Starting…':
+   xPhase==='needs_tap'?'Tap XRecorder to record':mode+' · '+soundMode+lastReceipt;
   const readState=String(capture.readState||'').slice(0,1800);
   nativeScreenSharing=capture.screenSharing===true;
   screenShareButton.setAttribute('aria-pressed',String(nativeScreenSharing));
