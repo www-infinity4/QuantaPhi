@@ -48,4 +48,32 @@ const protectedRead = await get('/api/bubbles/connections/catalog');
 assert.equal(protectedRead.status, 403, 'originless nonbrowser catalog requests must be blocked');
 record('unverified catalog denied', protectedRead.status);
 
+// Exercise the real connection-code POST route without impersonating the owner.
+// A public 200 or leaked code here is a severe authorization failure. This cannot
+// prove that a verified wallet can issue a code; that requires a real owner session.
+const deniedPairResponse = await fetch(origin + '/api/bubbles/connections/pair/create', {
+  method:'POST', redirect:'manual', signal:AbortSignal.timeout(12000),
+  headers:{Origin:origin,'Content-Type':'application/json','User-Agent':'QuantaPhi-Bubbles-Release-Smoke/1.0'},
+  body:'{}'
+});
+const deniedPairText = await deniedPairResponse.text();
+assert.equal(deniedPairResponse.status,401,'pair creation without a verified wallet must be HTTP 401');
+const deniedPairJson=JSON.parse(deniedPairText);
+assert.equal(deniedPairJson.ok,false);
+assert.equal(deniedPairJson.error,'verified_wallet_required');
+assert.equal(deniedPairJson.code,undefined,'unverified response must never expose a pairing code');
+record('unverified pair creation denied',deniedPairResponse.status);
+
+// Confirm the Brain GitHub gateway is mounted while respecting owner authorization.
+// Runtime GitHub credential presence and owner writes require authenticated receipts.
+const brainGatewayResponse=await fetch('https://infinity-brain-clock.marvaseater.workers.dev/work/github',{
+  method:'POST',redirect:'manual',signal:AbortSignal.timeout(12000),
+  headers:{Origin:origin,'Content-Type':'application/json','User-Agent':'QuantaPhi-Bubbles-Release-Smoke/1.0'},
+  body:JSON.stringify({action:'capabilities',repository:'www-infinity4/QuantaPhi',requestId:crypto.randomUUID()})
+});
+assert.equal(brainGatewayResponse.status,401,'Brain GitHub gateway must deny unauthenticated commands');
+const brainGatewayJson=await brainGatewayResponse.json();
+assert.equal(brainGatewayJson.error,'owner_authorization_required');
+record('unverified GitHub execution denied',brainGatewayResponse.status);
+
 console.log(JSON.stringify({ok:true,checks:result},null,2));
