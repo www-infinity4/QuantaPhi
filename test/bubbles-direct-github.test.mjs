@@ -218,3 +218,14 @@ test('native run inspection feeds actual job failure back into model context',as
  assert.equal(result.status,'inspected');assert.match(inputs[1].messages.at(-1).content,/"name":"Ruff"/);assert.match(inputs[1].messages.at(-1).content,/"conclusion":"failure"/);
  for(const mode of ['read','write','actions'])assert.ok(directGithubTools(mode).some(t=>t.function.name==='read_run'));
 });
+
+test('Brain rejects truncated repository names before any GitHub API call',async()=>{
+ let calls=0;
+ const request=async()=>{calls++;return Response.json({})};
+ for(const name of ['a','the','new']){
+  const result=await githubOperation({GITHUB_TOKEN:'fixture-token'},{repository:'www-infinity4/'+name,action:'create_repository'},request);
+  assert.equal(result.status,'blocked');
+  assert.equal(result.error,'ambiguous_repository_name');
+ }
+ assert.equal(calls,0);
+});
