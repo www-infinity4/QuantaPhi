@@ -70,7 +70,7 @@ export async function pollGithubDevice(env,storage,request=fetch){
 }
 export async function githubDeviceStatus(env,storage){
  const [credential,flow]=await Promise.all([githubCredentialStatus(env,storage),storage.get(KEY)]);
- return {ok:true,status:credential.connected?'connected':flow?.expiresAt>now()?'awaiting_github_approval':'disconnected',
+ return {ok:true,status:credential.source==='Worker secret'?'runner_credential':credential.connected?'connected':flow?.expiresAt>now()?'awaiting_github_approval':'disconnected',
   login:credential.login,source:credential.source,verifiedAt:credential.verifiedAt,expiresAt:credential.expiresAt||null,
   needsConfiguration:!env.GITHUB_OAUTH_CLIENT_ID};
 }
