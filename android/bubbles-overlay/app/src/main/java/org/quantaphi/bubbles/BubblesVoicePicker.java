@@ -29,6 +29,7 @@ final class BubblesVoicePicker {
     private final Activity activity;
     private final Consumer<String> status;
     private TextToSpeech preview;
+    private String selectedEnginePackage;
 
     private BubblesVoicePicker(Activity activity, Consumer<String> status) {
         this.activity = activity;
@@ -65,7 +66,7 @@ final class BubblesVoicePicker {
             TextToSpeech engine = candidate[0];
             if (engine == null) return;
             if (result != TextToSpeech.SUCCESS
-                || !NeuralSpeechEngine.HAYAI_PACKAGE.equals(engine.getCurrentEngine())) {
+                || !NeuralSpeechEngine.hayaiAvailable(activity)) {
                 status.accept("HayaiTTS is installed but did not start. Your original voice remains selected.");
                 engine.shutdown();
                 return;
@@ -114,6 +115,7 @@ final class BubblesVoicePicker {
     private void load() {
         status.accept("Loading voices installed on this phone…");
         String engine = NeuralSpeechEngine.preferredEngine(activity);
+        selectedEnginePackage = engine;
         TextToSpeech.OnInitListener listener = result -> new Handler(Looper.getMainLooper()).post(() -> {
             if (preview == null) return;
             if (result != TextToSpeech.SUCCESS) {
@@ -157,7 +159,7 @@ final class BubblesVoicePicker {
             labels[i + 1] = (selected.equals(v.getName()) ? "✓ " : "") + label;
         }
         new AlertDialog.Builder(activity)
-            .setTitle("Choose Bubbles voice · " + preview.getCurrentEngine())
+            .setTitle("Choose Bubbles voice · " + (selectedEnginePackage == null ? preview.getDefaultEngine() : selectedEnginePackage))
             .setItems(labels, (dialog, index) -> select(index == 0 ? null : voices.get(index - 1)))
             .setNegativeButton("Cancel", (dialog, which) -> close())
             .setOnCancelListener(dialog -> close())
