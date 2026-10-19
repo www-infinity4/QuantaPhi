@@ -18,6 +18,22 @@ const ROLE_TOOLS={
 // This is an actual shared adapter, available only during a phone-owner grant.
 for(const tools of Object.values(ROLE_TOOLS))tools.push('IBM / Gemini phone chat · scripts/brain-phone-tool.mjs · owner-enabled session required');
 const REPO='www-infinity4/QuantaPhi';
+
+// Dynamically load the specialist‑planner module and expose its API
+// on the existing robotDirections global object without converting
+// this script to an ES‑module.
+(async () => {
+  try {
+    const mod = await import('./src/specialist-planner.js');
+    if (window.robotDirections && typeof window.robotDirections === 'object') {
+      window.robotDirections.planAndQueue = mod.planAndQueue;
+    } else {
+      window.robotDirections = { planAndQueue: mod.planAndQueue };
+    }
+  } catch (e) {
+    console.error('Failed to load specialist‑planner:', e);
+  }
+})();
 const MOBILE='Verified in the Android Chromium browser on quantaphi.org with screenshots attached';
 // One-tap maintenance crews: saved straight to the work ticket as structured
 // jobs, so they reach the runner even when GPT routing is unavailable.
