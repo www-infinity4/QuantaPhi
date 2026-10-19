@@ -103,6 +103,26 @@ export async function githubStarCoinBackup({token,repository,snapshot,mode='writ
   const manifest=await api(path,{method:'PUT',body:{message:'StarCoin: advance Cloudflare wallet mirror '+snapshot.hash.slice(0,12),
     ...(prior?.sha?{sha:prior.sha}:{}),content:encode(body)}});
   if(!/^[a-f0-9]{40}$/.test(manifest?.commit?.sha||''))throw Error('backup_commit_unverified');
+  // This HTML can be saved and opened offline. It is only a viewer; it is
+  // never an authentication token or a source for credits.
+  if(!prior){
+    const viewerPath='/contents/starcoins/wallet.html';
+    if(!await api(viewerPath)){
+      const viewer='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+        +'<title>Infinity StarCoin Backup Viewer</title><style>body{font:16px system-ui;max-width:600px;margin:2rem auto;padding:1rem;background:#faf7fe;color:#301e49}'
+        +'main{background:white;padding:1.5rem;border-radius:16px;border:1px solid #ddd}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style>'
+        +'<main><h1>Infinity StarCoin Backup</h1><p>Open your latest.json backup file here. This read-only viewer cannot sign in, link a wallet, transfer, or mint credits.</p>'
+        +'<input id="file" type="file" accept=".json,application/json"><pre id="out">Choose latest.json from the private repository.</pre>'
+        +'<script>document.getElementById("file").addEventListener("change",async e=>{const out=document.getElementById("out");'
+        +'try{const r=JSON.parse(await e.target.files[0].text());if(r.data?.schema!=="infinity-starcoin-backup-v1")throw Error("Invalid format");'
+        +'out.textContent="StarCoins: "+(r.data.balanceTenths/10)+"\nReceipts in this file: "+r.data.receipts.length'
+        +'+"\nSHA-256 claim: "+r.hash+"\nLocal copy only; verify against live Cloudflare before relying on this data.";'
+        +'}catch{out.textContent="Could not read a StarCoin backup JSON file."}});</script></main></html>';
+      const created=await api(viewerPath,{method:'PUT',
+        body:{message:'Add private offline StarCoin wallet HTML viewer',content:encode(viewer)}});
+      if(!/^[a-f0-9]{40}$/.test(created?.commit?.sha||''))throw Error('backup_commit_unverified');
+    }
+  }
   return {status:'committed',hash:snapshot.hash,repository,
     commit:manifest.commit.sha,url:'https://github.com/'+repository+'/commit/'+manifest.commit.sha,
     chain:previous?.hash||null};
