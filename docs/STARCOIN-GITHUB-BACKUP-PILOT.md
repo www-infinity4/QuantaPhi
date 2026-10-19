@@ -1,6 +1,6 @@
 # Bubbles StarCoin GitHub evidence backup (pilot)
 
-**Status:** Source integration; production publication requires deployment and a verified user's GitHub authorization. No existing wallet balances have been moved or merged.
+**Status (October 19, 2026):** Production `bubbles-connections` Worker deployed at 100% with `STARQUEST_LEDGER` service binding. GitHub App credentials, encryption keyring, Durable Object and unified-wallet service bindings were verified preserved. **First user-authorized private GitHub wallet commit is still pending. No existing wallet balances have been moved or merged.**
 
 ## One wallet, one private GitHub repository
 
@@ -18,7 +18,7 @@ Repo creation has an explicit button and is not automatic. Only one private back
 
 ## Remaining work
 
-1. Deploy the updated `bubbles-connections` Worker with its new `STARQUEST_LEDGER` service binding and perform a live test using an actual user-authorized private GitHub repository.
+1. **Worker deployment completed:** Cloudflare deployment `4292b204-7014-4214-b64c-2b1f5e2ce939` serves version `0ffd89b2-d84b-42e9-bd86-7c45e0e381e8` at 100% (deployed October 19, 2026). The API verified the new `STARQUEST_LEDGER` binding and inheritance of existing secrets. **Still required:** a real user-authorized private GitHub repository, a device-verified StarQuest session, and the first real backup commit receipt; an HTTP end-to-end response was not independently obtained.
 2. Verify repo-creation permission and app installation scope for each user. Authorization may legitimately fail; never borrow the platform owner's GitHub credential.
 3. Build APK hardware-backed, user-approved challenge signing (Android Keystore key) for same-device recognition, replacing insecure assumptions about SIM identity. The current APK vault preserves only an already verified device credential and does not provide browser-to-APK authentication across Chrome storage loss.
 4. Add future opt-in backup types: Infinity tokens, Quants, Music Quants, and selected Bubbles/Robot Brain history. Do not enable them until each ledger and account mapping is verifiable.
