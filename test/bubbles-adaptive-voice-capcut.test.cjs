@@ -9,20 +9,20 @@ test('incomplete speech is buffered rather than submitted by an 850ms timer',()=
  assert.match(b,/TurnCompletionPolicy\.waitMillis\(turnBuffer\.peek\(\)\)/);
  assert.match(b,/TurnCompletionPolicy\.onNewPartial\(turnBuffer\.peek\(\), partial\)/);
  assert.match(b,/case "screen_video":[\s\S]*?speak\("Starting\."\)/);
- assert.match(b,/speakWebsiteReply\("Recording\."\)/);
+ assert.match(b,/offerCaptureApproval\(command\)/);
  assert.match(policy,/11000L/);
  assert.match(policy,/8500L/);
  assert.match(policy,/950L/);
  assert.doesNotMatch(b,/postDelayed\(deliverVoiceTurn, END_OF_TURN_MS\)/);
 });
-test('XRecorder recording state is verified before telling owner it started',()=>{
- const b=read('BubblesService.java'),du=read('XRecorderBridge.java'),access=read('BrainLearningService.java');
- assert.match(b,/XRecorderBridge\.recordingVerified\(this\)/);
- assert.match(du,/BrainLearningService\.xControlVisible/);
- assert.match(du,/if \(visible\)/);
- assert.match(du,/putBoolean\("x_recorder_verified", verified\)/);
- assert.match(du,/Tap XRecorder to record/);
- assert.match(access,/XRecorderBridge\.PACKAGE\.contentEquals\(root\.getPackageName\(\)\)/);
+test('native screen recording state is verified before saying it is active',()=>{
+ const b=read('BubblesService.java'),screen=read('ScreenCaptureService.java');
+ assert.match(b,/getBoolean\("capture_active", false\)/);
+ assert.match(b,/getBoolean\("capture_recording", false\)/);
+ assert.match(screen,/projection = \(\(MediaProjectionManager\)/);
+ assert.match(screen,/putBoolean\("capture_recording", true\)/);
+ assert.match(screen,/putBoolean\("capture_recording", false\)/);
+ assert.doesNotMatch(b,/XRecorderBridge\.recordingVerified/);
 });
 test('CapCut uses owner-selected SAF clip, not hidden external recorder files',()=>{
  const c=read('CapCutBridge.java'),u=read('MainActivity.java'),m=fs.readFileSync('android/bubbles-overlay/app/src/main/AndroidManifest.xml','utf8');
