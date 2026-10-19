@@ -62,7 +62,7 @@ function startNativeTurn(value,fromVoice,id,evidence=''){
  nativeSpeechPending=fromVoice;
  // Do not erase a previous completed reply when another voice command begins.
  Promise.resolve(sendMessage(value,fromVoice,evidence)).catch(error=>{
-  const message='Bubbles stopped before returning the result: '+String(error?.message||error||'unknown error').slice(0,130);
+  const message='Bubbles could not complete this request: '+String(error?.message||error||'unknown error').slice(0,130);
   status.textContent=message;
   // Keep the bridge recoverable even while Android is rebuilding its chat UI.
   if(typeof display==='function')display(message,'ai');
