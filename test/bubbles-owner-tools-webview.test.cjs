@@ -10,20 +10,20 @@ test('capability question checks connection; concrete work ticket requests dispa
  assert.equal(brainTools.classify('Show the status of work tickets'),'report');
  assert.equal(brainTools.classify('Do not start work tickets to repair Bubbles'),'chat');
 });
-test('ticket create, update and runner calls work without AbortSignal.timeout',async()=>{
+test('atomic ticket submission works without AbortSignal.timeout and has no duplicate runner request',async()=>{
  const calls=[],ticket={id:'test-receipt',status:'draft',context:{}};
  const ctx={activeCardEvidence:null,repositorySelectionExplicit:true,repositorySelection:new Set(['www-infinity4/QuantaPhi']),repositoryPicker:{dataset:{}},Response,AbortSignal:{},AbortController,setTimeout,clearTimeout,crypto:webcrypto,TextEncoder,brainTools,
   verifiedOwnerHeaders:async()=>({Authorization:'Bearer test-fixture-only'}),
   BRAIN:'https://brain.test',TICKETS:'https://brain.test',workButton:{disabled:false},workStatus:{},workText:{},location:{origin:'https://quantaphi.org',pathname:'/bubbles.html'},config:{role:'assistant'},
-  window:{dispatchEvent:()=>{}},CustomEvent:class{},
+  window:{dispatchEvent:()=>{}},CustomEvent:class{},pollBrainProgress:async()=>{},
   fetch:async(url,options)=>{calls.push({url,options});assert.ok(options.signal instanceof AbortSignal);
-   const body=url.endsWith('/create')?{ok:true,ticket}:url.endsWith('/update')?{ok:true}:{ok:true,status:'queued_for_runner'};
+   const body=url.endsWith('/create')?{ok:true,ticket,execution:{status:'queued_for_runner'}}:url.endsWith('/update')?{ok:true}:{ok:true,status:'queued_for_runner'};
    return Response.json(body);}};
  vm.createContext(ctx);vm.runInContext(helper+cut('async function requestRunner(', '\nworkButton.addEventListener'),ctx);
  const receipt=await ctx.submitWork('Repair Bubbles screen recording','explicit-user-command');
  assert.equal(receipt.id,'test-receipt');assert.equal(receipt.runner,'queued_for_runner');
- assert.deepEqual(calls.map(c=>new URL(c.url).pathname),['/work/tickets/create','/work/tickets/update','/work/run-next']);
- const updated=JSON.parse(calls[1].options.body);assert.equal(updated.status,'ready');assert.equal(updated.context.color_jobs.length,2);
+ assert.deepEqual(calls.map(c=>new URL(c.url).pathname),['/work/tickets/create']);
+ const submitted=JSON.parse(calls[0].options.body);assert.equal(submitted.start_immediately,true);assert.equal(submitted.context.color_jobs.length,2);
  assert.equal(ctx.workButton.disabled,false);
 });
 test('bounded network timeout aborts and propagates a real failure',async()=>{
@@ -72,6 +72,6 @@ test('stalled GitHub response recovers by the original receipt ID without resubm
 });
 test('all Bubbles owner paths use the compatible helper',()=>{
  assert.doesNotMatch(site,/signal:AbortSignal\.timeout/);
- for(const endpoint of ['/work/tickets/list','/work/tickets/create','/work/tickets/update','/work/run-next','/owner/conversation','/owner/pair/create'])
+ for(const endpoint of ['/work/tickets/list','/work/tickets/create','/work/run-next','/owner/conversation','/owner/pair/create'])
   assert.ok(site.includes("bubblesFetch(BRAIN+'"+endpoint+"'")||site.includes("bubblesFetch(TICKETS+'"+endpoint+"'"),endpoint);
 });

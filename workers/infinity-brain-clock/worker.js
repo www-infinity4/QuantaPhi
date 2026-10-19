@@ -1082,13 +1082,45 @@ export async function ownerTickets(env,path,body){
   const repository=String(body.repository||context.repositories?.[0]||'www-infinity4/QuantaPhi');
   if(!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(repository))return denied('explicit_owner_repository_required');
   context.repositories=[repository];
+  const automatic=body.start_immediately===true;
+  if(automatic){
+   const jobs=context.color_jobs;
+   if(!Array.isArray(jobs)||!jobs.length||jobs.length>24)return denied('color_jobs_required');
+   const ids=new Set(jobs.map(j=>j?.id));
+   if(ids.size!==jobs.length||jobs.some(j=>!j||!/^TASK-\d+$/.test(j.id||'')||j.repository!==repository||
+    typeof j.instructions!=='string'||!j.instructions.trim()||j.instructions.length>12000||
+    !Array.isArray(j.dependencies)||j.dependencies.some(id=>id===j.id||!ids.has(id))||
+    !Array.isArray(j.acceptance)||!j.acceptance.length||j.acceptance.length>20||j.acceptance.some(a=>typeof a!=='string'||a.length>700)))return denied('invalid_color_jobs');
+   const done=new Set();
+   for(let pass=0;pass<jobs.length;pass++)for(const job of jobs)if(job.dependencies.every(id=>done.has(id)))done.add(job.id);
+   if(done.size!==jobs.length)return denied('cyclic_job_dependencies');
+   context.color_jobs=jobs.map(j=>{const clean={...j,status:'queued'};delete clean.progress;delete clean.last_inspected_at;return clean;});
+   context.execution_mode='automatic';
+   if(JSON.stringify(context).length>50000)return denied('ticket_context_too_large',413);
+  }
+  const existingResult=async row=>{
+   // A transport retry may finish only an unscheduled draft. Never overwrite
+   // a claimed job, revive a blocked job, or replace existing runner evidence.
+   if(automatic&&row.status==='draft'){
+    let saved={};try{saved=JSON.parse(row.context_json||'{}')}catch{}
+    if(!saved.color_jobs?.length){
+     const next={...saved,color_jobs:context.color_jobs,execution_mode:'automatic',...(context.plan?{plan:context.plan}:{})};
+     const changed=await db.prepare("UPDATE work_tickets SET context_json=?,storyboard=?,status=?,updated_at=?,repository=? WHERE id=? AND owner_hash=? AND context_json=? AND status='draft'")
+      .bind(JSON.stringify(next),JSON.stringify(context.color_jobs).slice(0,24000),'ready',Date.now(),repository,row.id,ownerHash,row.context_json).run();
+     if(changed?.meta?.changes===0)return denied('ticket_changed_retry',409);
+     row=await db.prepare('SELECT * FROM work_tickets WHERE id=? AND owner_hash=?').bind(row.id,ownerHash).first();
+     return {status:200,result:{ok:true,ticket:publicTicket(row),deduplicated:true,startRequested:true}};
+    }
+   }
+   return {status:200,result:{ok:true,ticket:publicTicket(row),deduplicated:true,startRequested:false}};
+  };
   const submission=String(context.submission_id||'').slice(0,100);
   if(!request||context.kind!=='robot-directions')return denied('robot_directions_required');
   if(submission){
    const old=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND json_extract(context_json,'$.submission_id')=? AND repository=? LIMIT 1").bind(ownerHash,submission,repository).first();
-   if(old)return {status:200,result:{ok:true,ticket:publicTicket(old),deduplicated:true}};
+   if(old)return existingResult(old);
   }
-  const fingerprintContext={...context};delete fingerprintContext.submission_id;delete fingerprintContext.request_fingerprint;
+  const fingerprintContext={...context};delete fingerprintContext.submission_id;delete fingerprintContext.request_fingerprint;delete fingerprintContext.color_jobs;delete fingerprintContext.execution_mode;delete fingerprintContext.plan;
   const stable=value=>Array.isArray(value)?value.map(stable):value&&typeof value==='object'?Object.fromEntries(Object.keys(value).sort().map(key=>[key,stable(value[key])])):value;
   const fingerprint=await digest(JSON.stringify({repository,request:request.replace(/\s+/g,' '),context:stable(fingerprintContext)}));
   context.request_fingerprint=fingerprint;
@@ -1100,18 +1132,18 @@ export async function ownerTickets(env,path,body){
    if(String(row.request||'').trim().replace(/\s+/g,' ')!==request.replace(/\s+/g,' '))continue;
    let saved;try{saved=JSON.parse(row.context_json)}catch{continue}
    if(Object.keys(fingerprintContext).every(key=>JSON.stringify(stable(saved[key]))===JSON.stringify(stable(fingerprintContext[key]))))
-    return {status:200,result:{ok:true,ticket:publicTicket(row),deduplicated:true,reason:'same_request_and_scope'}};
+    return existingResult(row);
   }
 
   const existing=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND repository=? AND json_extract(context_json,'$.request_fingerprint')=? LIMIT 1").bind(ownerHash,repository,fingerprint).first();
-  if(existing)return {status:200,result:{ok:true,ticket:publicTicket(existing),deduplicated:true,reason:'same_request_and_scope'}};
+  if(existing)return existingResult(existing);
   const id='IW-'+new Date().toISOString().slice(0,10).replaceAll('-','')+'-'+crypto.randomUUID().slice(0,8).toUpperCase();
   const now=Date.now(),handoffHash=await digest(crypto.randomUUID()+crypto.randomUUID());
-  const sql="INSERT INTO work_tickets (id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,status,claimed_by,created_at,updated_at,completed_at,handoff_expires_at,result_summary,result_url) SELECT ?,?,?,?,?,?,?,?,?,?,'draft','',?,?,NULL,?,'','' WHERE NOT EXISTS (SELECT 1 FROM work_tickets WHERE owner_hash=? AND repository=? AND json_extract(context_json,'$.request_fingerprint')=?)";
+  const sql="INSERT INTO work_tickets (id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,status,claimed_by,created_at,updated_at,completed_at,handoff_expires_at,result_summary,result_url) SELECT ?,?,?,?,?,?,?,?,?,?,?,'',?,?,NULL,?,'','' WHERE NOT EXISTS (SELECT 1 FROM work_tickets WHERE owner_hash=? AND repository=? AND json_extract(context_json,'$.request_fingerprint')=?)";
   await db.prepare(sql).bind(id,ownerHash,handoffHash,'QuantaPhi Robot Brain','https://quantaphi.org/',repository,
-   title||request.slice(0,120),request,'',JSON.stringify(context),now,now,now+30*86400000,ownerHash,repository,fingerprint).run();
+   title||request.slice(0,120),request,automatic?JSON.stringify(context.color_jobs).slice(0,24000):'',JSON.stringify(context),automatic?'ready':'draft',now,now,now+30*86400000,ownerHash,repository,fingerprint).run();
   const row=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND repository=? AND json_extract(context_json,'$.request_fingerprint')=? LIMIT 1").bind(ownerHash,repository,fingerprint).first();
-  return {status:200,result:{ok:true,ticket:publicTicket(row),deduplicated:row.id!==id}};
+  return {status:200,result:{ok:true,ticket:publicTicket(row),deduplicated:row.id!==id,startRequested:automatic&&row.id===id}};
  }
  if(path==='/work/tickets/update'){
   const id=String(body.id||'').trim().slice(0,80);
@@ -1282,8 +1314,8 @@ export default{
     if(text.length>70000)return output(request,{ok:false,error:'request_too_large'},413);
     const body=JSON.parse(text||'{}');
     const result=await ownerTickets(env,path,body);
-    if(result.result.ok&&((path==='/work/tickets/update'&&body.status==='ready')||path==='/work/tickets/approve'||(path==='/work/tickets/approve-all'&&result.result.runnerTarget))){
-     try{const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));const started=await clock.fetch('https://clock.internal/run-next',{method:'POST',body:JSON.stringify(result.result.runnerTarget||{ticketId:body.id})});result.result.execution=await started.json();}catch{result.result.execution={status:'scheduled_fallback'};}
+    if(result.result.ok&&((path==='/work/tickets/create'&&result.result.startRequested)||(path==='/work/tickets/update'&&body.status==='ready')||path==='/work/tickets/approve'||(path==='/work/tickets/approve-all'&&result.result.runnerTarget))){
+     try{const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));const started=await clock.fetch('https://clock.internal/run-next',{method:'POST',body:JSON.stringify(result.result.runnerTarget||{ticketId:result.result.ticket?.id||body.id})});result.result.execution=await started.json();}catch{result.result.execution={status:'scheduled_fallback'};}
     }
     return output(request,result.result,result.status);
    }catch(error){return output(request,{ok:false,error:'owner_ticket_request_failed'},500)}

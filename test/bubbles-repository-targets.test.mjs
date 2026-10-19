@@ -36,7 +36,7 @@ test('repository batches retain individual results and failures without retarget
 
 test('conversation-created ticket carries selected repository and active card evidence',async()=>{
  const ui=readFileSync('bubbles-ai.js','utf8');let payload;
- const scope={TICKETS:'https://brain.test',verifiedOwnerHeaders:async()=>({Authorization:'Bearer fixture'}),brainTools:{},workButton:{disabled:false},workStatus:{},workText:{},crypto,TextEncoder,
+ const scope={TICKETS:'https://brain.test',verifiedOwnerHeaders:async()=>({Authorization:'Bearer fixture'}),brainTools:{makeJobs:()=>[{id:'TASK-1',instructions:'repair',dependencies:[]}]},pollBrainProgress:async()=>{},window:{dispatchEvent(){}},CustomEvent:class{},workButton:{disabled:false},workStatus:{},workText:{},crypto,TextEncoder,
   activeCardEvidence:{cardId:'infinity-radio',repository:'www-infinity4/Alien-Radio',errors:['stream unavailable']},
   config:{role:'assistant'},location:{origin:'https://quantaphi.org',pathname:'/bubbles.html'},
   bubblesFetch:async(url,options)=>{payload=JSON.parse(options.body);return {ok:true,json:async()=>({ok:true,deduplicated:true,ticket:{id:'existing-ticket',status:'ready',context:{color_jobs:[{repository:payload.repository}]}}})};}};

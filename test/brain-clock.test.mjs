@@ -215,9 +215,9 @@ test('verified Brain tickets share the writer owner partition instead of an anon
   async all(){return {results:rows.filter(r=>r.owner_hash===params[0])}},
   async run(){
    if(sql.startsWith('INSERT')){
-    const [id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,created_at,updated_at,handoff_expires_at]=params;
+    const [id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,status,created_at,updated_at,handoff_expires_at]=params;
     rows.push({id,owner_hash,handoff_hash,source_app,source_url,repository,title,request,storyboard,context_json,
-     status:'draft',claimed_by:'',created_at,updated_at,handoff_expires_at,result_summary:'',result_url:''});
+     status,claimed_by:'',created_at,updated_at,handoff_expires_at,result_summary:'',result_url:''});
    }else if(sql.startsWith('UPDATE')){
     const [context_json,storyboard,status,updated_at,repository,id,owner_hash,oldContext]=params;
     const row=rows.find(r=>r.id===id&&r.owner_hash===owner_hash&&r.context_json===oldContext);
@@ -380,7 +380,7 @@ columns=sql.split('(',1)[1].split(')',1)[0]
 c.execute('CREATE TABLE work_tickets ('+columns+')')
 def insert(id,owner,repo):
  context=json.dumps({'request_fingerprint':'fingerprint'})
- p=[id,owner,'handoff','brain','https://example.com',repo,'title','request','',context,1,1,2,owner,repo,'fingerprint']
+ p=[id,owner,'handoff','brain','https://example.com',repo,'title','request','',context,'draft',1,1,2,owner,repo,'fingerprint']
  c.execute(sql,p)
 insert('first','owner','repo')
 insert('second','owner','repo')
@@ -710,4 +710,39 @@ test('GPT review stages evaluate one webhook job independently of another card j
   assert.match(pair[0].content,/assigned job is the unit of work/);
  }
  assert.equal(memory.has('engine-review:key'),false);
+});
+
+test('automatic submission atomically saves ready jobs and dispatches once across retries',async()=>{
+ const {execFileSync}=await import('node:child_process'),os=await import('node:os'),path=await import('node:path');
+ const dir=await fs.mkdtemp(path.join(os.tmpdir(),'brain-auto-')),file=path.join(dir,'tickets.sqlite');
+ const insert=source.match(/const sql="(INSERT INTO work_tickets[^\n]+)";/)[1];
+ const columns=insert.split('(',2)[1].split(')',1)[0];
+ const python="import sqlite3,json,sys\nc=sqlite3.connect(sys.argv[1]);c.row_factory=sqlite3.Row\nsql=sys.argv[2];p=json.loads(sys.argv[3]);r=c.execute(sql,p)\nif sql.lstrip().upper().startswith('SELECT'): print(json.dumps([dict(x) for x in r.fetchall()]))\nelse: c.commit();print(json.dumps({'meta':{'changes':r.rowcount}}))";
+ const query=(sql,params=[])=>JSON.parse(execFileSync('python3',['-c',python,file,sql,JSON.stringify(params)],{encoding:'utf8'}));
+ query('CREATE TABLE work_tickets ('+columns+')');
+ const db={prepare:sql=>({bind:(...params)=>({first:async()=>query(sql,params)[0]||null,all:async()=>({results:query(sql,params)}),run:async()=>query(sql,params)})})};
+ const token='owner-fixture-token',ownerHash=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(token))).toString('hex');
+ let dispatches=0,lastTarget;
+ const env={WORK_DB:db,WRITER_OWNER_HASH:ownerHash,CLOCK:{idFromName:()=>1,get:()=>({fetch:async(url,options)=>{dispatches++;lastTarget=JSON.parse(options.body);return Response.json({ok:true,status:'queued_for_runner',dispatch:{status:'dispatch_accepted'}})}})}};
+ const repository='www-infinity4/QuantaPhi';
+ const jobs=[{id:'TASK-1',repository,instructions:'Read source, plan and build',acceptance:['Focused checks pass'],dependencies:[],status:'complete',progress:{testsPassed:true}},{id:'TASK-2',repository,instructions:'Review the build',acceptance:['Review source'],dependencies:['TASK-1']}];
+ const payload={start_immediately:true,request:'Build the owner website tool',repository,context:{kind:'robot-directions',submission_id:'transport-1',color_jobs:jobs}};
+ const request=(body=payload,auth=token)=>new Request('https://brain.test/work/tickets/create',{method:'POST',headers:{Authorization:'Bearer '+auth,Origin:'https://quantaphi.org','Content-Type':'application/json'},body:JSON.stringify(body)});
+ try{
+  const first=await (await brainWorker.fetch(request(),env)).json();
+  assert.equal(first.ok,true);assert.equal(first.ticket.status,'ready');assert.equal(first.execution.status,'queued_for_runner');assert.equal(dispatches,1);assert.equal(lastTarget.ticketId,first.ticket.id);
+  assert.equal(first.ticket.context.color_jobs[0].status,'queued');assert.equal(first.ticket.context.color_jobs[0].progress,undefined,'client cannot fabricate completed work');
+  const second=await (await brainWorker.fetch(request(),env)).json();assert.equal(second.deduplicated,true);assert.equal(second.ticket.id,first.ticket.id);assert.equal(dispatches,1,'no second dispatch on a transport retry');
+  query("UPDATE work_tickets SET status='working' WHERE id=?",[first.ticket.id]);
+  const working=await (await brainWorker.fetch(request(),env)).json();assert.equal(working.ticket.status,'working');assert.equal(dispatches,1);
+  const graph={...payload,request:'A separate invalid request',context:{...payload.context,submission_id:'bad-graph',color_jobs:[{...jobs[0],dependencies:['TASK-2']},jobs[1]]}};
+  const rejected=await brainWorker.fetch(request(graph),env);assert.equal(rejected.status,400);assert.equal((await rejected.json()).error,'cyclic_job_dependencies');assert.equal(query('SELECT * FROM work_tickets').length,1);
+  assert.equal((await brainWorker.fetch(request(payload,'wrong-owner'),env)).status,404);assert.equal(dispatches,1);
+  const draftPayload={...payload,start_immediately:false,request:'Recover an interrupted draft',context:{kind:'robot-directions',submission_id:'draft-recovery'}};
+  const draft=await (await brainWorker.fetch(request(draftPayload),env)).json();assert.equal(draft.ticket.status,'draft');assert.equal(dispatches,1);
+  const recovered=await (await brainWorker.fetch(request({...draftPayload,start_immediately:true,context:{...draftPayload.context,color_jobs:jobs}}),env)).json();
+  assert.equal(recovered.ticket.id,draft.ticket.id);assert.equal(recovered.ticket.status,'ready');assert.equal(recovered.deduplicated,true);assert.equal(dispatches,2);
+  await brainWorker.fetch(request({...draftPayload,start_immediately:true,context:{...draftPayload.context,color_jobs:jobs}}),env);assert.equal(dispatches,2);
+
+ }finally{await fs.rm(dir,{recursive:true,force:true})}
 });

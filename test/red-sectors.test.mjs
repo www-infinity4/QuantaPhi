@@ -49,5 +49,5 @@ test('owner authentication precedes Red sectors, all actual writes remain owner 
  const client=await fs.readFile(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.match(client,/redClientId='bubbles-'/);
  assert.match(client,/syncRedSectors\(/);
- assert.match(client,/ticket\.runner==='awaiting_repository_runner'/);
+ assert.match(client,/brainTools.executionMessage/);
 });

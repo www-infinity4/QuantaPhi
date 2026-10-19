@@ -48,5 +48,5 @@ test('Android and web conversation share verified tools rather than letting GPT 
  assert.match(js,/async function requestRunner\(ticketId='',jobId=''\)/);
  assert.match(js,/await verifiedOwnerHeaders\(\)/);
  assert.match(js,/job_not_dispatchable/);
- assert.match(js,/GitHub dispatch accepted; runner start is not yet verified/);
+ assert.match(js,/brainTools.executionMessage/);
 });
