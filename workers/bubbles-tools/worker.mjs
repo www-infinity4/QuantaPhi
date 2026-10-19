@@ -259,6 +259,19 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
   receipt:{...receipt,status:evidence?.receipt?.status||'complete',repositoryActionsVerified:false}});
 
 }
+// Gemini-guided bounded summary: the completed search survives model failure.
+export async function finishSearchReply(original,summarize,timeoutMs=6000){
+ let timer;
+ try{
+  const summarized=await Promise.race([summarize(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('search_summary_timeout')),timeoutMs)})]);
+  if(!summarized.ok)return original;
+  const data=await summarized.clone().json();
+  const output=String(data.output||'').trim();
+  if(!output||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output))return original;
+  return summarized;
+ }catch{return original}
+ finally{clearTimeout(timer)}
+}
 export default {async fetch(request,env){
  const url=new URL(request.url);
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
@@ -281,12 +294,15 @@ export default {async fetch(request,env){
   const result=await execute(request,env,body);if(!result.ok)return result;
   const data=await result.clone().json();
   if(data.model||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
-  return await gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
+  const summarize=()=>gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
+  if(data.receipt?.tool==='web.search')return finishSearchReply(result,summarize);
+  return await summarize();
  }catch(error){
   const invalid=error instanceof SyntaxError;
   return response(request,{ok:false,error:invalid?'invalid_request_json':'assistant_request_failed',output:invalid?'Bubbles could not read your message. Please resend it.':'Bubbles could not complete the AI reply. Your request was not completed; please try again.',receipt:{status:'failed'}},invalid?400:502);
  }
 }};
+
 
 
 
