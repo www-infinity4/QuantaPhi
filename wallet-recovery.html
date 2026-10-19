@@ -76,7 +76,9 @@ const QUANT='https://quanta-phi-ledger.marvaseater.workers.dev';
 const $=id=>document.getElementById(id);
 const prefix='starquest_ledger_device_v1:';
 const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
-const RETURN_TO_BRAIN=new URLSearchParams(location.search).get('return')==='robot-brain';
+const RECOVERY_PARAMS=new URLSearchParams(location.search);
+const RETURN_TO_BRAIN=RECOVERY_PARAMS.get('return')==='robot-brain';
+const OPEN_VERIFICATION=RECOVERY_PARAMS.get('verify')==='1';
 if(RETURN_TO_BRAIN){$('back').textContent='Open Robot Brain';document.querySelector('header a').href='/#robotDirections';}
 async function timedJson(url,options,timeoutMs){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeoutMs);
@@ -194,6 +196,9 @@ if(sharedGrant){
  history.replaceState(history.state,'',location.pathname+location.search);
  $('ownerRecovery').hidden=false;$('ownerRecoveryCode').value=sharedGrant;
  msg('One-time Cloudflare recovery is ready. Tap Reconnect Original Wallet to restore this device.');
+}else if(OPEN_VERIFICATION){
+ $('ownerRecovery').hidden=false;
+ msg('Verification opened. No new code was issued: this form accepts a previously authorized, one-time Cloudflare wallet recovery code. An existing verified device credential can also be checked with Search Cloudflare for My Tokens.');
 }
 $('showOwnerRecovery').addEventListener('click',()=>{$('ownerRecovery').hidden=false;$('ownerRecoveryCode').focus()});
 $('ownerRecovery').addEventListener('submit',async event=>{
