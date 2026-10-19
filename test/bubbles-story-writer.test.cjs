@@ -212,7 +212,7 @@ test('reply actions take notes and prepare work without sending unapproved robot
  assert.equal(notes[0].text,'Here is a practical plan to update the README and run tests.');
  const draft=get('button','Make work draft');
  draft.handlers.click();
- const work=nodes.find(e=>e.tag==='textarea'&&e.placeholder?.startsWith('Say fix a card'));
+ const work=nodes.find(e=>e.tag==='textarea'&&e.placeholder?.startsWith('Ordinary GitHub repairs'));
  assert.equal(work.value,notes[0].text);
  const submit=get('button','Send approved request to Robot Brain');
  assert.equal(submit.hidden,true);
