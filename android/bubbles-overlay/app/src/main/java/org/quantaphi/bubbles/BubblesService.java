@@ -906,6 +906,14 @@ public final class BubblesService extends Service {
             return;
         }
         String addressed = directed ? text.substring(matcher.end()).replaceFirst("^[\\s,:.!?\\-]+", "").trim() : text;
+        // Saying only "Bubbles" opens the existing floating conversation.
+        // It does not dispatch a blank AI turn or invoke any screen tool.
+        if (!typed && directed && addressed.isEmpty()) {
+            BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
+            if (oracleWindow != null) oracleWindow.show();
+            state("listening", .28f);
+            return;
+        }
         // The microphone runs only after explicit Android permission and a
         // visible foreground session. Real gated speech needs no wake word.
         if (!typed && addressed.length() < 3) return;
