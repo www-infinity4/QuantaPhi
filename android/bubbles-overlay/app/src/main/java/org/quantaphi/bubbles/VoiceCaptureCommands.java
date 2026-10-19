@@ -44,8 +44,8 @@ final class VoiceCaptureCommands {
                 && q.contains("screen")) return new Command("screen_stop", 0, 0);
         if (q.matches("^(?:(?:stop|end|finish|cancel|turn off|switch off)\\s+(?:(?:the|my)\\s+)?(?:screen\\s+recorder|screen\\s+recording|recording\\s+(?:of\\s+)?(?:the|my)\\s+screen))(?:\\s+now)?$"))
             return new Command("screen_stop", 0, 0);
-        // Bare "record" uses XRecorder with its existing owner-selected
-        // capture settings. Sound-only capture remains separate.
+        // Bare "record" uses Bubbles native screen capture and Android consent.
+        // Sound-only capture remains separate.
         if (q.matches("^(?:record|start recording|begin recording|record a video|record video)$")
                 || q.matches("^(?:(?:turn|switch)\\s+on|open|launch|enable|activate|use|run|start|begin)\\s+(?:(?:the|my|a)\\s+)?(?:screen\\s+recorder|screen\\s+recording)(?:\\s+now)?$")
                 || q.matches("^(?:screen\\s+record|record\\s+(?:what(?:'s| is)\\s+on\\s+)?(?:my|the|this)\\s+(?:phone\\s+)?(?:screen|display)|start\\s+recording\\s+(?:what(?:'s| is)\\s+)?(?:on\\s+)?(?:my|the)\\s+(?:phone\\s+)?(?:screen|display))(?:\\b.*)?$")
