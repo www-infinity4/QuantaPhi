@@ -87,6 +87,26 @@ export async function handleConnections(request,env,resolveService) {
     if (!body || typeof body !== 'object' || Array.isArray(body)) return json(origin,{ok:false,error:'invalid_json'},400);
     if (url.pathname === PREFIX+'/github/starcoins/create-repository')
       return json(origin,{ok:true,...await service.createStarCoinRepository({userId:identity.userId,id:body.id})});
+    if(url.pathname===PREFIX+'/github/starcoins/backup'||url.pathname===PREFIX+'/github/starcoins/verify'){
+      const authorization=request.headers.get('Authorization')||'';
+      if(!/^Bearer sq_[A-Za-z0-9_-]{32,}$/.test(authorization))
+        throw Error('starcoin_verified_device_required');
+      if(!env.STARQUEST_LEDGER?.fetch||!env.BOT_WALLET?.fetch)
+        throw Error('starcoin_cloud_unavailable');
+      const [sr,wr]=await Promise.all([
+        env.STARQUEST_LEDGER.fetch('https://starquest.internal/v1/state',
+          {headers:{Authorization:authorization},signal:AbortSignal.timeout(12000)}),
+        env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/state',
+          {headers:{Authorization:authorization},signal:AbortSignal.timeout(12000)})
+      ]);
+      if(!sr.ok||!wr.ok)throw Error('starcoin_cloud_unavailable');
+      const [star,wallet]=await Promise.all([sr.json(),wr.json()]);
+      if(!star.ok||!wallet.ok)throw Error('starcoin_cloud_unavailable');
+      const snapshot=await cloudStarCoinBackup(identity.userId,wallet,star.state);
+      return json(origin,{ok:true,...await service.starCoinBackup({
+        userId:identity.userId,id:body.id,repository:body.repository,snapshot,
+        mode:url.pathname.endsWith('/verify')?'verify':'write'})});
+    }
     // Explicit field selection prevents supplied userId/sessionId from winning.
     if (url.pathname === PREFIX+'/github/test') return json(origin,{ok:true,...await service.githubConnectionTest({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/github/repositories') return json(origin,{ok:true,...await service.githubRepositories({userId:identity.userId,id:body.id})});
