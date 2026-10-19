@@ -1,5 +1,5 @@
 import {videoAPI} from './video-api.mjs';
-const EDGE_VERSION = 'quantaphi-org-service-20261019-music-v2';
+const EDGE_VERSION = 'quantaphi-org-service-20261019-auto-request-v1';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
@@ -365,7 +365,8 @@ export default {
   }
   const newQuantaRelease = route.repo === 'QuantaPhi' && (route.sourcePath === '/index.html' || ['20261009-bright-star6','20261009-octaves-routing6'].includes(incoming.searchParams.get('v')));
   const newOctavesRelease = route.repo === 'Oracle-Octaves' && (route.sourcePath === '/index.html' || ['20261009-origin-timing2','20261009-resilient2'].includes(incoming.searchParams.get('v')));
-  const sourceRef = route.repo === 'QuantaPhi' && route.sourcePath === '/bubbles-connections.mjs' ? '5314715a3a403b548f54440dd7975c7dd7972390' : route.repo === 'QuantaPhi' && route.sourcePath === '/apk-downloads.js' ? '6643d2727f5be56dd0f1b217f532099899833bca' : route.repo === 'Control-Phi' ? '08563cfd39d0ee692ba6b3c73b92da29736ddd23' : route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/') ? '5e53cc37bd36f40ee500bb7f21cbc836224e3b05' : newQuantaRelease ? 'main' : newOctavesRelease ? '60c9436507cc34cb674a7b9a766c335a399b8dec' : repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
+  const requestFlowRelease = route.repo === 'QuantaPhi' && ['/index.html','/bubbles.html','/bubbles/index.html','/bubbles-chrome.html','/bubbles-ai.js','/bubbles-brain-actions.js','/robot-directions.js','/robot-work-report.js','/src/specialist-planner.js'].includes(route.sourcePath);
+  const sourceRef = requestFlowRelease ? 'main' : route.repo === 'QuantaPhi' && route.sourcePath === '/bubbles-ai.js' ? 'main' : route.repo === 'QuantaPhi' && ['/bubbles-gpt-live.html','/bubbles-gpt-live.js','/bubbles-live-tools.js'].includes(route.sourcePath) ? '40dc5b89ec8ae53804daa7fae6184a904b73fab0' : route.repo === 'QuantaPhi' && route.sourcePath === '/bubbles-connections.mjs' ? '5314715a3a403b548f54440dd7975c7dd7972390' : route.repo === 'QuantaPhi' && route.sourcePath === '/apk-downloads.js' ? '6643d2727f5be56dd0f1b217f532099899833bca' : route.repo === 'QuantaPhi' && ['/bubbles-ai.js','/bubbles-brain-actions.js','/bubbles-gpt-live.js'].includes(route.sourcePath) ? '64a0d1e71197ef35730012647dcf0993d8631209' : route.repo === 'Control-Phi' ? '08563cfd39d0ee692ba6b3c73b92da29736ddd23' : route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/') ? '5e53cc37bd36f40ee500bb7f21cbc836224e3b05' : newQuantaRelease ? 'main' : newOctavesRelease ? '60c9436507cc34cb674a7b9a766c335a399b8dec' : repairRef && route.repo === 'QuantaPhi' ? 'f2a7ca87a3869397b201acd5d44990e23a47d947' : route.repo === 'QuantaPhi' && ['20261009-fresh-writer4','20261009-card-colors4'].includes(incoming.searchParams.get('v')) ? 'd0480d2f93007e10c73180097057fb05d2484971' : 'main';
   const origin = new URL('https://www-infinity4.github.io' + repoPath);
   origin.search = incoming.search;
   const extension = route.sourcePath.split('.').pop().toLowerCase();
