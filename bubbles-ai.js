@@ -37,8 +37,21 @@ async function phoneTools(){
 // Android 12 WebViews may lack AbortSignal.timeout even after owner pairing succeeds.
 async function bubblesFetch(url,options={},timeoutMs=15000){
  const controller=new AbortController();
- const timer=setTimeout(()=>controller.abort(),timeoutMs);
- try{return await fetch(url,{...options,signal:controller.signal})}
+ let timer;
+ const deadline=new Promise((_,reject)=>{timer=setTimeout(()=>{
+  controller.abort();
+  reject(Error('Bubbles request timed out; server completion is unverified.'));
+ },timeoutMs);});
+ try{return await Promise.race([deadline,(async()=>{
+  const response=await fetch(url,{...options,signal:controller.signal});
+  // These endpoints return finite JSON, never live audio or event streams.
+  // Headers alone do not complete a request: keep the deadline while reading
+  // the body so the caller's json() cannot leave Bubbles waiting forever.
+  const bytes=await response.arrayBuffer();
+  return new Response([204,205,304].includes(response.status)?null:bytes,{
+   status:response.status,statusText:response.statusText,headers:response.headers
+  });
+ })()]);}
  finally{clearTimeout(timer)}
 }
 const params=new URLSearchParams(location.search);
