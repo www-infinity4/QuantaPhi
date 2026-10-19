@@ -443,7 +443,7 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
   foot.setAttribute('aria-expanded',String(opening));
   foot.querySelector('.bodySlotMeta').textContent=opening?'▼ Open below':'▶ Play here';
   if(opening){
-   if(!frame.getAttribute('src'))frame.src='/bitcoin-crusher/?embed=quanta';
+   if(!frame.getAttribute('src'))frame.src='/bitcoin-crusher/?embed=quanta&jukebox=all3-v2';
    wrap.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
   }else{
    foot.focus({preventScroll:true});
