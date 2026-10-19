@@ -31,7 +31,7 @@ final class AppControlBridge {
         // separate native WebView cannot silently inherit those credentials.
         if ("bubbles in chrome".equals(wanted) || "bubbles website in chrome".equals(wanted)
                 || "quantaphi bubbles in chrome".equals(wanted)) {
-            return openChromeSite(context, "https://quantaphi.org/bubbles.html", "Bubbles in Chrome");
+            return openChromeSite(context, "https://quantaphi.org/bubbles-chrome.html", "Bubbles in Chrome");
         }
         if ("quantaphi in chrome".equals(wanted) || "quantaphi website in chrome".equals(wanted)) {
             return openChromeSite(context, "https://quantaphi.org/", "QuantaPhi in Chrome");
@@ -85,7 +85,7 @@ final class AppControlBridge {
 
     /** First-party website launch, explicit Chrome package; no cookie copying. */
     static String openChromeSite(Context context, String url, String label) {
-        if (!url.equals("https://quantaphi.org/bubbles.html") && !url.equals("https://quantaphi.org/"))
+        if (!url.equals("https://quantaphi.org/bubbles-chrome.html") && !url.equals("https://quantaphi.org/"))
             return "Unrecognized Bubbles Chrome destination.";
         if (context.getPackageManager().getLaunchIntentForPackage("com.android.chrome") == null)
             return "Google Chrome is not installed or visible to Android. Open Chrome manually.";

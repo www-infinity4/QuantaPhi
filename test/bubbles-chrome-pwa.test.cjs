@@ -3,8 +3,8 @@ const {test} = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const zlib = require('node:zlib');
-const manifest = JSON.parse(fs.readFileSync('bubbles.webmanifest','utf8'));
-const html = fs.readFileSync('bubbles.html','utf8');
+const manifest = JSON.parse(fs.readFileSync('bubbles-manifest.json','utf8'));
+const html = fs.readFileSync('bubbles-chrome.html','utf8');
 const installer = fs.readFileSync('bubbles-pwa.js','utf8');
 const sw = fs.readFileSync('bubbles-pwa-sw.js','utf8');
 const main = fs.readFileSync('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/MainActivity.java','utf8');
@@ -14,11 +14,11 @@ const learning = fs.readFileSync('android/bubbles-overlay/app/src/main/java/org/
 const service = fs.readFileSync('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BubblesService.java','utf8');
 
 test('Chrome app uses existing QuantaPhi origin with stable app identity', () => {
-  assert.equal(manifest.id,'/bubbles.html');
-  assert.equal(manifest.start_url,'/bubbles.html');
+  assert.equal(manifest.id,'/bubbles-chrome.html');
+  assert.equal(manifest.start_url,'/bubbles-chrome.html');
   assert.equal(manifest.display,'standalone');
   assert.equal(manifest.prefer_related_applications,false);
-  assert.match(html,/rel="manifest" href="\/bubbles.webmanifest"/);
+  assert.match(html,/rel="manifest" href="\/bubbles-manifest.json"/);
   assert.match(html,/id="bubblesInstallChrome"/);
   assert.match(html,/bubbles-pwa\.js/);
   assert.match(installer,/beforeinstallprompt/);
@@ -47,7 +47,7 @@ test('both Android Chrome icon sizes exist as genuine PNGs and decompress', () =
 
 test('offline shell caches only public resources, never auth or chat responses', () => {
  assert.match(sw,/CACHE = 'bubbles-public-shell-v1'/);
- assert.match(sw,/url\.pathname !== '\/bubbles\.html'/);
+ assert.match(sw,/url\.pathname !== '\/bubbles-chrome\.html'/);
  assert.match(sw,/req\.mode !== 'navigate'/);
  assert.doesNotMatch(sw,/caches\.put\(req|Authorization|localStorage|sessionStorage/);
  assert.doesNotMatch(sw,/\/api\//);
@@ -56,11 +56,19 @@ test('offline shell caches only public resources, never auth or chat responses',
 
 test('Android can launch signed-in Chrome website without importing native wallet credentials', () => {
  assert.match(manifestAndroid,/<package android:name="com\.android\.chrome"\/>/);
- assert.match(appBridge,/openChromeSite\(context, "https:\/\/quantaphi\.org\/bubbles\.html"/);
+ assert.match(appBridge,/openChromeSite\(context, "https:\/\/quantaphi\.org\/bubbles-chrome\.html"/);
  assert.match(appBridge,/\.setPackage\("com\.android\.chrome"\)/);
  assert.match(main,/Chrome · install or open Bubbles website/);
  assert.match(learning,/isChromeForeground\(\)/);
  assert.match(service,/ChromeControlPolicy\.isChromeRequest\(question\)/);
  assert.match(service,/!BrainLearningService\.isChromeForeground\(\)/);
  assert.doesNotMatch(appBridge,/CookieManager|WebStorage|JavascriptInterface/);
+});
+
+test('Chrome launcher is unpinned on current GitHub main and served as JSON', () => {
+ const worker=fs.readFileSync('workers/quantaphi-site/worker.js','utf8');
+ assert.match(worker,/json: 'application\/json/);
+ assert.doesNotMatch(worker,/sourcePath === '\/bubbles-chrome\.html'/);
+ assert.doesNotMatch(worker,/route\.sourcePath === '\/bubbles-chrome\.html'/);
+ assert.match(html,/rel="manifest" href="\/bubbles-manifest\.json"/);
 });

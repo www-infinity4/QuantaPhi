@@ -4,6 +4,8 @@ on:
     paths:
       - 'bubbles.html'
       - 'bubbles.webmanifest'
+      - 'bubbles-manifest.json'
+      - 'bubbles-chrome.html'
       - 'bubbles-pwa*'
       - 'assets/bubbles-pwa-*.png'
       - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/**'
