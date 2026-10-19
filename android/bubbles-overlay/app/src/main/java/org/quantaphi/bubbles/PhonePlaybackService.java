@@ -7,6 +7,8 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
+import android.app.ActivityManager;
+import android.content.ComponentCallbacks2;
 import android.content.pm.ServiceInfo;
 import android.media.AudioAttributes;
 import android.media.AudioFormat;
@@ -40,6 +42,7 @@ public final class PhonePlaybackService extends Service {
     private Thread worker;
     private volatile boolean running;
     private Model leasedModel;
+    private volatile boolean memoryStopped;
 
     @Override public int onStartCommand(Intent intent, int flags, int startId) {
         if (intent == null || STOP.equals(intent.getAction())) {
@@ -68,6 +71,18 @@ public final class PhonePlaybackService extends Service {
                 : intent.getParcelableExtra("consent");
             if (consent == null || intent.getIntExtra("result", 0) != Activity.RESULT_OK)
                 throw new SecurityException("Phone audio capture not authorized");
+            // On low-RAM phones the WebView, one Vosk recognizer, and a second
+            // playback recognizer can exceed the process memory budget. Keep
+            // the owner's main conversation alive instead of crashing the APK.
+            ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
+            if (am != null) {
+                ActivityManager.MemoryInfo info = new ActivityManager.MemoryInfo();
+                am.getMemoryInfo(info);
+                if (info.lowMemory) {
+                    memoryStopped = true;
+                    throw new IllegalStateException("Insufficient available RAM for playback transcription");
+                }
+            }
             leasedModel = BubblesService.borrowVoiceModel();
             if (leasedModel == null)
                 throw new IllegalStateException("Start Bubbles voice and let its offline model finish loading first");
@@ -125,11 +140,17 @@ public final class PhonePlaybackService extends Service {
                                 MediaNotes.add(this, text);
                         }
                     }
-                } catch (Exception error) {
+                } catch (Throwable error) {
+                    // A second native recognizer can exhaust Java/native heap
+                    // under memory pressure. Stop THIS optional lane, retain
+                    // saved text, and leave Bubbles' primary microphone alive.
                     if (running) {
-                        final String type = error.getClass().getSimpleName();
+                        final String reason = error instanceof OutOfMemoryError
+                            ? "Background audio stopped to protect memory"
+                            : "Phone audio listener failed: " + error.getClass().getSimpleName();
                         main.post(() -> BrainNotes.prefs(this).edit()
-                            .putString("phone_media_state", "Phone audio listening failed: " + type).apply());
+                            .putString("phone_media_state", reason)
+                            .putString("phone_media_last_failure", reason).apply());
                     }
                 } finally {
                     BubblesService.releaseVoiceModel(model);
@@ -144,6 +165,25 @@ public final class PhonePlaybackService extends Service {
             stopSelf();
         }
         return START_NOT_STICKY;
+    }
+
+    @Override public void onTrimMemory(int level) {
+        super.onTrimMemory(level);
+        if (level >= ComponentCallbacks2.TRIM_MEMORY_RUNNING_CRITICAL && !memoryStopped) {
+            memoryStopped = true;
+            BrainNotes.prefs(this).edit().putString("phone_media_state",
+                "Background audio paused because the phone needs memory; saved notes remain available").apply();
+            main.post(this::stopSelf);
+        }
+    }
+    @Override public void onLowMemory() {
+        super.onLowMemory();
+        if (!memoryStopped) {
+            memoryStopped = true;
+            BrainNotes.prefs(this).edit().putString("phone_media_state",
+                "Background audio stopped under low memory; saved notes remain available").apply();
+            main.post(this::stopSelf);
+        }
     }
 
     @Override public void onDestroy() {
