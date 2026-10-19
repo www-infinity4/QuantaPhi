@@ -672,7 +672,7 @@ public final class BubblesService extends Service {
                             if (!partial.isEmpty()) main.post(() -> {
                                 if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil) {
                                     BrainNotes.prefs(this).edit().putString("last_partial", partial).apply();
-                                    if (turnBuffer.hasPending())
+                                    if (turnBuffer.observePartial(partial) && turnBuffer.hasPending())
                                         scheduleVoiceTurn(TurnCompletionPolicy.onNewPartial(turnBuffer.peek(), partial));
                                 }
                             });
