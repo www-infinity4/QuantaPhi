@@ -278,7 +278,7 @@ public final class BrainLearningService extends AccessibilityService {
         }
     }
 
-    /** State evidence: visible DU-owned Stop control after pressing Record. */
+    /** State evidence: visible XRecorder-owned Stop control after pressing Record. */
     static boolean xControlVisible(String action) {
         BrainLearningService service = active.get();
         if (service == null || (!"start".equals(action) && !"stop".equals(action))) return false;
