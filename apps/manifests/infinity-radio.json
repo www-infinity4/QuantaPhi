@@ -1,0 +1,43 @@
+{
+  "id": "/apps/id/infinity-radio",
+  "name": "Infinity Radio · Infinity 2026",
+  "short_name": "Infinity Radio",
+  "description": "Listen through the existing Infinity Radio player.",
+  "start_url": "/apps/launch.html?app=infinity-radio",
+  "scope": "/apps/",
+  "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
+  "background_color": "#141322",
+  "theme_color": "#0d8d8a",
+  "lang": "en-US",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/apps/icons/infinity-radio.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/bubbles-pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/bubbles-pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open Infinity Radio",
+      "short_name": "Open",
+      "url": "/apps/launch.html?app=infinity-radio"
+    }
+  ]
+}

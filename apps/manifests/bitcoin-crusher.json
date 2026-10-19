@@ -1,0 +1,43 @@
+{
+  "id": "/apps/id/bitcoin-crusher",
+  "name": "Bitcoin Crusher · Infinity 2026",
+  "short_name": "BTC Crusher",
+  "description": "Open the original Bitcoin Crusher research game.",
+  "start_url": "/apps/launch.html?app=bitcoin-crusher",
+  "scope": "/apps/",
+  "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
+  "background_color": "#141322",
+  "theme_color": "#a05b1f",
+  "lang": "en-US",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/apps/icons/bitcoin-crusher.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/bubbles-pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/bubbles-pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open Bitcoin Crusher",
+      "short_name": "Open",
+      "url": "/apps/launch.html?app=bitcoin-crusher"
+    }
+  ]
+}

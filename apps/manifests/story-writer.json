@@ -1,0 +1,43 @@
+{
+  "id": "/apps/id/story-writer",
+  "name": "Story Writer · Infinity 2026",
+  "short_name": "Story Writer",
+  "description": "Write and illustrate stories in the existing studio.",
+  "start_url": "/apps/launch.html?app=story-writer",
+  "scope": "/apps/",
+  "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
+  "background_color": "#141322",
+  "theme_color": "#3267c0",
+  "lang": "en-US",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/apps/icons/story-writer.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/bubbles-pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/bubbles-pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open Story Writer",
+      "short_name": "Open",
+      "url": "/apps/launch.html?app=story-writer"
+    }
+  ]
+}
