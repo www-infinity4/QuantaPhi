@@ -477,7 +477,7 @@ public final class BubblesService extends Service {
             manager.addView(orb, bubbleLayout);
             connected = true;
             syncRoomBubble();
-            attachXRecorderButton();
+            // Recording controls live in the Bubbles chat, not a second XREC overlay.
             activeImageService = this;
             sessionRunning = true;
             // Keep the real QuantaPhi website assistant available while the
@@ -956,7 +956,6 @@ public final class BubblesService extends Service {
                         XRecorderBridge.request(this, "stop", main, feedback -> {
                             if ("stopped".equals(feedback) && !typed) speakWebsiteReply("Stopped.");
                         });
-                    if (!screenActive && !soundActive && speaking) silenceReply();
                     break;
                 }
                 case "screen_stop":
@@ -969,10 +968,14 @@ public final class BubblesService extends Service {
                     });
                     break;
                 case "screen_video":
-                    if (!typed) speak("Starting.");
-                    XRecorderBridge.request(this, "start", main, feedback -> {
-                        if ("recording".equals(feedback) && !typed) speakWebsiteReply("Recording.");
-                    });
+                    if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
+                        if (!typed) speak("Recording.");
+                    } else {
+                        // No XRecorder/DU Recorder popup chain. Android grants the
+                        // screen session once, then Bubbles owns Start, Stop and save.
+                        offerCaptureApproval(command);
+                        if (!typed) speak("Approve screen capture.");
+                    }
                     break;
                 case "capcut_edit":
                 case "capcut_extract": {
@@ -1041,7 +1044,7 @@ public final class BubblesService extends Service {
             // Real work has been accepted by the local WebView queue. Give a
             // short audible acknowledgement immediately, without claiming a
             // search or tool finished before a verified result exists.
-            if (!typed) speak("Thinking.");
+            if (!typed) state("thinking", .3f);
             return;
         }
         BrainNotes.prefs(this).edit().putString("last_error",
