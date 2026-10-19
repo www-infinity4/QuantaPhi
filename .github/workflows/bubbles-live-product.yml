@@ -1,0 +1,20 @@
+name: Bubbles live product release verification
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/bubbles-live-product.yml'
+      - 'test/bubbles-live-product.test.cjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-public-production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify production QuantaPhi and Bubbles are new, legible and product first
+        run: node --test test/bubbles-live-product.test.cjs
