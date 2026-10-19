@@ -42,7 +42,9 @@ final class RoomNotes {
         try { entry.put("at", System.currentTimeMillis()); entry.put("text", text); }
         catch (Exception ignored) { return; }
         next.put(entry);
-        prefs.edit().putString(LOG, next.toString()).apply();
+        prefs.edit().putString(LOG, next.toString())
+            .putString("room_notes_last_received", text)
+            .putLong("room_notes_last_received_at", System.currentTimeMillis()).apply();
     }
 
     static synchronized String recent(Context context) {
@@ -76,6 +78,7 @@ final class RoomNotes {
     }
 
     static void clear(Context context) {
-        BrainNotes.prefs(context).edit().remove(LOG).apply();
+        BrainNotes.prefs(context).edit().remove(LOG)
+            .remove("room_notes_last_received").remove("room_notes_last_received_at").apply();
     }
 }
