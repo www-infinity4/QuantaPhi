@@ -52,7 +52,7 @@ public final class MainActivity extends Activity {
         layout.addView(title);
 
         TextView copy = new TextView(this);
-        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link Robot Brain, get the one-time code on verified QuantaPhi, paste it directly into the floating chat message box, then Send. There is no separate pairing button. Drag the floating orb anywhere.\\n\\nSay record or stop. XRecorder handles video; CapCut edits saved video or extracts sound. Android asks you for capture permission when needed. Bubbles listens while you find your words.");
+        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link Robot Brain, get the one-time code on verified QuantaPhi, paste it directly into the floating chat message box, then Send. There is no separate pairing button. Drag the floating orb anywhere. Say Bubbles, open Chrome then tap Search then type cats into Search. The phone carries out the spoken steps; say Bubbles, stop the task to cancel.\\n\\nSay record or stop. XRecorder handles video; CapCut edits saved video or extracts sound. Android asks you for capture permission when needed. Bubbles listens while you find your words.");
         copy.setTextColor(Color.rgb(101, 83, 111));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
@@ -148,6 +148,7 @@ public final class MainActivity extends Activity {
                 + "\nLast problem: " + BrainNotes.prefs(this).getString("last_error", "None recorded")
                 + "\nScreen access: " + (BrainLearningService.isConnected() ? "ON" : "OFF — tap Enable Bubbles screen reading above")
                 + "\nLast screen result: " + BrainNotes.prefs(this).getString("screen_state", "No screen read yet")
+                + "\nUI job: " + BrainNotes.prefs(this).getString("workflow_receipt", "No UI job started")
                 + "\nCapture: " + BrainNotes.prefs(this).getString("capture_state", "None")
                 + "\nSound: " + BrainNotes.prefs(this).getString("audio_state", "None"));
         refreshStatus = new Runnable() { public void run() { refreshVoice.run(); ui.postDelayed(this, 1000); } };
