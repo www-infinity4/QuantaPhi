@@ -72,3 +72,54 @@ test('Chrome launcher is unpinned on current GitHub main and served as JSON', ()
  assert.doesNotMatch(worker,/route\.sourcePath === '\/bubbles-chrome\.html'/);
  assert.match(html,/rel="manifest" href="\/bubbles-manifest\.json"/);
 });
+
+test('QuantaPhi home exposes Bubbles page and Chrome install routes in both nav areas', () => {
+  const home = fs.readFileSync('index.html', 'utf8');
+  assert.match(home, /<a href="\/bubbles\.html">Bubbles page<\/a>/);
+  assert.match(home, /<a href="\/bubbles-chrome\.html">Install Bubbles Chrome app<\/a>/);
+  assert.match(home, /<a href="\/bubbles\.html" style="[^"]*">Bubbles page<\/a>/);
+  assert.match(home, /<a href="\/bubbles-chrome\.html" style="[^"]*">Install Bubbles Chrome app<\/a>/);
+  for (const file of ['bubbles.html', 'bubbles-chrome.html']) {
+    const page = fs.readFileSync(file, 'utf8');
+    assert.match(page, /<button id="bubblesInstallChrome" type="button" style="/);
+    assert.doesNotMatch(page, /id="bubblesInstallChrome"[^>]*\bhidden\b/);
+    assert.match(page, /Chrome menu|Chrome.*Install app/);
+  }
+  assert.match(html, /href="\/bubbles\.html"[^>]*>Open the Bubbles page<\/a>/);
+});
+
+test('Chrome install button is actionable without an installation-prompt event', async () => {
+  const vm = require('node:vm');
+  let onClick;
+  const button = { hidden: true, disabled: false, addEventListener(event, callback) {
+    if (event === 'click') onClick = callback;
+  } };
+  const status = { textContent: '' };
+  const listeners = new Map();
+  const chrome = {
+    isSecureContext: false,
+    navigator: { userAgent: 'Mozilla/5.0 Chrome/120.0' },
+    location: { search: '' },
+    URLSearchParams,
+    document: { querySelector(selector) {
+      return selector === '#bubblesInstallChrome' ? button : selector === '#bubblesInstallStatus' ? status : null;
+    } },
+    window: {
+      isSecureContext: false,
+      matchMedia: () => ({matches: false}),
+      addEventListener: (name, callback) => listeners.set(name, callback)
+    }
+  };
+  chrome.window.navigator = chrome.navigator;
+  vm.runInNewContext(installer, chrome);
+  assert.equal(button.hidden, false);
+  assert.equal(typeof onClick, 'function');
+  await onClick();
+  assert.match(status.textContent, /three dots.*Install app or Add to Home screen/);
+  const prompt = {preventDefault() {}, async prompt() {}, userChoice: Promise.resolve({outcome: 'accepted'})};
+  listeners.get('beforeinstallprompt')(prompt);
+  await onClick();
+  assert.match(status.textContent, /Chrome accepted the installation request/);
+  listeners.get('appinstalled')();
+  assert.equal(button.hidden, true);
+});
