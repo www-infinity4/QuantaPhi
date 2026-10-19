@@ -78,7 +78,7 @@ final class BubblesVoicePicker {
         for (int i = 0; i < voices.size(); i++) {
             Voice v = voices.get(i);
             String label = v.getLocale().getDisplayName(Locale.US) + " · " + v.getName()
-                + (v.isNetworkConnectionRequired() ? " · network" : " · on-device");
+                + " · " + InstalledVoicePolicy.description(v);
             labels[i + 1] = (selected.equals(v.getName()) ? "✓ " : "") + label;
         }
         new AlertDialog.Builder(activity)

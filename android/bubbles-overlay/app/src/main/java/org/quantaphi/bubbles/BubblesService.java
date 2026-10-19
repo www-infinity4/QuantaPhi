@@ -393,6 +393,13 @@ public final class BubblesService extends Service {
                 if (language == TextToSpeech.LANG_MISSING_DATA
                         || language == TextToSpeech.LANG_NOT_SUPPORTED)
                     tts.setLanguage(Locale.ENGLISH);
+                // Automatic preference only. Explicit user voice selection above
+                // always wins; never pretend a high-quality voice is guaranteed
+                // to be a separately installed neural synthesis model.
+                try {
+                    android.speech.tts.Voice offline = InstalledVoicePolicy.bestOfflineEnglish(tts.getVoices());
+                    if (offline != null) tts.setVoice(offline);
+                } catch (RuntimeException ignored) { /* Keep the system voice. */ }
             }
             tts.setPitch(1f);
             tts.setSpeechRate(1f);
