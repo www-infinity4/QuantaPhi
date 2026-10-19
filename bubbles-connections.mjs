@@ -188,6 +188,11 @@ export function mountConnections(container,{token}) {
               backupStatus.textContent=result.status==='ready_to_back_up'
                 ?'Private repository created. Select it and back up StarCoins.'
                 :'Repository created; grant the Bubbles GitHub App access to that repository before backup.';
+              if(/^[-A-Za-z0-9_.]+\/[-A-Za-z0-9_.]+$/.test(result.repository||'')){
+                const link=element('a',' Open private GitHub repository');
+                link.href='https://github.com/'+result.repository;
+                link.target='_blank';link.rel='noopener noreferrer';backupStatus.append(link);
+              }
               await loadPrivateRepositories();
               walletRepo.value=result.repository;
               backup.disabled=!walletRepo.value;compare.disabled=!walletRepo.value;
