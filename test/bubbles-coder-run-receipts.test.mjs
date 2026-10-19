@@ -38,5 +38,5 @@ test('Bubbles presents source run status and still calls GitHub directly',()=>{
  assert.match(app,/args\.action='list_workflow_runs'/);
  assert.match(app,/Bubbles Coder Linux runs:/);
  assert.match(app,/Only a completed successful run confirms that the script ran/);
- assert.match(app,/Linux job requested\. This is an acceptance receipt, not an execution result/);
+ assert.match(app,/GitHub accepted the workflow dispatch\. This is not an execution result/);
 });
