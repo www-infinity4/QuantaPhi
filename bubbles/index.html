@@ -26,7 +26,10 @@
       margin:0!important;padding:0!important;background:#f7f4fb!important;
     }
     html.bubbles-native-overlay .bubbles-page{max-width:none!important;margin:0!important}
-    html.bubbles-native-overlay .bubbles-page>a,
+    html.bubbles-native-overlay .bubbles-site-nav,
+    html.bubbles-native-overlay .bubbles-section-heading,
+    html.bubbles-native-overlay .bubbles-install,
+    html.bubbles-native-overlay .bubbles-development,
     html.bubbles-native-overlay .bubbles-intro,
     html.bubbles-native-overlay .bubbles-video,
     html.bubbles-native-overlay .bubbles-production,
@@ -45,7 +48,7 @@
     html.bubbles-native-overlay .ba-field{font-size:16px!important}
  
   </style>
-  <link rel="stylesheet" href="/bubbles-introduction.css?v=20261013-intro1">
+  <link rel="stylesheet" href="/bubbles-introduction.css?v=20261019-product1">
   <meta property="og:image" content="https://quantaphi.org/assets/bubbles-introduction.webp">
   <script>
     if(new URLSearchParams(location.search).get('embed')==='1')document.documentElement.classList.add('bubble-iframe');
@@ -61,36 +64,50 @@
   <script defer src="/bubbles-brain-actions.js?v=20261017-verified-receipts1"></script>
   <script defer src="/bubbles-ai.js?v=20261018-readable3"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1"><link rel="stylesheet" href="/bubbles-native-chat.css?v=20261015-readable29">
+  <link rel="stylesheet" href="/bubbles-product.css?v=20261019-product1">
 </head>
 <body class="oracle-octaves-page">
-<p style="padding:12px"><a href="/bubbles-accounts.html">Connect accounts · GitHub and Google</a></p>
   <main class="bubbles-page">
-    <a href="https://quantaphi.org/">← QuantaPhi</a>
+    <nav class="bubbles-site-nav" aria-label="Bubbles site navigation">
+      <a href="/">← QuantaPhi</a>
+      <span>Bubbles AI</span>
+      <a href="/bubbles-accounts.html">Account connections</a>
+    </nav>
+
     <section class="bubbles-intro" aria-labelledby="bubbles-title">
-      <div class="bubbles-art" role="img" aria-label="Bubbles in shades, surrounded by iridescent bubbles and a nuclear science card"></div>
+      <div class="bubbles-art" role="img" aria-label="Bubbles character with iridescent spheres, shown as an original concept illustration"></div>
       <div class="bubbles-copy">
-        <span class="bubbles-eyebrow">ORACLE AI STUDIO · CREATED BY MOSAIC</span>
+        <span class="bubbles-eyebrow">QUANTAPHI · AI ASSISTANT</span>
         <h1 id="bubbles-title">Bubbles</h1>
-        <p><strong>Automated Intelligence Assistant</strong></p>
-        <p><strong>The Intelligence Architecture Solution.</strong> One lead. A team of specialists. Turn your ideas into research, stories, media and useful work.</p>
-        <div class="bubbles-actions"><a href="#bubblesAICard">Meet your assistant</a><a href="/bubbles-commercial.html">Preview the commercial</a></div>
+        <p class="bubbles-lead">Research, talk, work with your cards and send approved jobs to Robot Brain — from one conversation.</p>
+        <div class="bubbles-actions">
+          <a class="bubbles-primary-action" href="#bubblesAICard">Open Bubbles chat</a>
+          <a href="/#robotDirections">Robot Brain</a>
+          <a href="/bubbles-accounts.html">Connect GitHub and other accounts</a>
+        </div>
       </div>
     </section>
-    <!-- Add the approved final video source here after production verification. -->
-    <video class="bubbles-video" controls playsinline preload="none" poster="/assets/bubbles-introduction.webp" hidden aria-label="Finished Bubbles commercial"></video>
-    <section class="bubbles-production" aria-labelledby="quant-ai-title">
-      <span class="bubbles-eyebrow">QUANT AI · PRODUCTION CONCEPT</span>
-      <h2 id="quant-ai-title">Automated Banking &amp; Business Agent</h2>
-      <p>A robot at the switchboard. Bubbles in motion. Quant AI’s film follows a humanoid business agent and its compact robot partner as they interpret indexed data, connect the right information and prepare useful business outputs.</p>
-      <p><strong>Music direction: Shiny Happy People · R.E.M.</strong> Individual quants gather, connect and laugh; Share and Collect carry useful information into commerce. The fields of a page become a garden of extracted data and new inventory, with Infinity Platinum shining through the connected-hands sequence.</p>
-      <ol><li>Read the data: hundreds of indexed words appear across a Cloudflare-inspired information wall.</li><li>Make the connections: the robots discuss meaning, then route information from A to B through a luminous switchboard.</li><li>Send Bubbles into action: specialist bubbles research, read and assemble customer-relevant advertising drafts.</li><li>Build the output: product cards, inventory proposals and order drafts appear for the business owner to review.</li></ol>
-      <p>This is the film’s planned workflow. Banking, ad placement and orders require connected services and the owner’s authorization.</p>
-      <div class="bubbles-actions"><a href="/quant-ai-storyboard.html">View the production storyboard</a><a href="/#robotDirections">Open Robot Brain production crew</a></div>
+
+    <section class="bubbles-workspace" aria-label="Bubbles assistant and jobs">
+      <div class="bubbles-section-heading">
+        <div><span class="bubbles-eyebrow">WORKSPACE</span><h2>Talk to Bubbles</h2><p>The assistant and verified job receipts belong here, not behind a video advertisement.</p></div>
+        <a href="/#robotDirections">Open Robot Brain →</a>
+      </div>
+      <div id="robotBrainOwner" aria-live="polite"></div>
+      <div id="bubblesAICard"></div>
     </section>
-    <div id="robotBrainOwner" aria-live="polite"></div>
-    <div id="bubblesAICard"></div>
-    <p><a href="/bubbles-commercial.html">Open Bubbles Commercial Studio · preview and export video</a></p>
-    <p>Bubbles uses the QuantaPhi Oracle AI service. Speech recognition and local notes depend on your browser permissions and storage settings.</p>
+
+    <section class="bubbles-install" aria-labelledby="bubbles-install-title">
+      <div><h2 id="bubbles-install-title">Add Bubbles to your phone</h2><p>Open the Bubbles Chrome installation page for a home-screen app. The floating assistant and phone screen controls require the separate Android APK and Android permissions.</p></div>
+      <a class="bubbles-install-link" href="/bubbles-chrome.html">Install with Chrome →</a>
+    </section>
+    <details class="bubbles-development">
+      <summary>Film and commercial development · not released</summary>
+      <p>The Bubbles commercial remains a concept in production, not a completed film or working product feature.</p>
+      <a href="/quant-ai-storyboard.html">View the concept storyboard</a>
+      <a href="/bubbles-commercial.html">Open the experimental commercial studio</a>
+    </details>
+    <p class="bubbles-page-note">Bubbles uses QuantaPhi services. Connected accounts and Android screen access each require your permission; a queued job is not a verified deployment.</p>
   </main>
 </body>
 </html>
