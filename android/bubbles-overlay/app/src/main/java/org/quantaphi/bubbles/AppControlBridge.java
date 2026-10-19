@@ -27,6 +27,18 @@ final class AppControlBridge {
         if (!match.matches()) return null;
         String wanted = normalize(match.group(1));
         if (wanted.isEmpty()) return "Tell me which installed app to open.";
+        // Chrome's QuantaPhi tab uses the user's existing Chrome cookies; the
+        // separate native WebView cannot silently inherit those credentials.
+        if ("bubbles in chrome".equals(wanted) || "bubbles website in chrome".equals(wanted)
+                || "quantaphi bubbles in chrome".equals(wanted)) {
+            return openChromeSite(context, "https://quantaphi.org/bubbles.html", "Bubbles in Chrome");
+        }
+        if ("quantaphi in chrome".equals(wanted) || "quantaphi website in chrome".equals(wanted)) {
+            return openChromeSite(context, "https://quantaphi.org/", "QuantaPhi in Chrome");
+        }
+        if ("chrome".equals(wanted) || "google chrome".equals(wanted)) {
+            return open(context, context.getPackageManager().getLaunchIntentForPackage("com.android.chrome"), "Chrome");
+        }
         // XRecorder is installed with a generic launcher label on some builds.
         if ("xrecorder".equals(wanted) || "x recorder".equals(wanted)) {
             Intent intent = context.getPackageManager()
@@ -53,6 +65,11 @@ final class AppControlBridge {
     /** Resolve one exact visible launcher label before starting a spoken sequence. */
     static String packageForName(Context context, String name) {
         String wanted = normalize(name);
+        if ("chrome".equals(wanted) || "google chrome".equals(wanted)
+                || "bubbles in chrome".equals(wanted) || "bubbles website in chrome".equals(wanted)
+                || "quantaphi bubbles in chrome".equals(wanted) || "quantaphi in chrome".equals(wanted))
+            return context.getPackageManager().getLaunchIntentForPackage("com.android.chrome") == null
+                ? null : "com.android.chrome";
         if ("xrecorder".equals(wanted) || "x recorder".equals(wanted))
             return context.getPackageManager().getLaunchIntentForPackage(XRecorderBridge.PACKAGE) == null
                 ? null : XRecorderBridge.PACKAGE;
@@ -64,6 +81,17 @@ final class AppControlBridge {
                 matching.put(item.activityInfo.packageName, String.valueOf(item.loadLabel(pm)));
         }
         return matching.size() == 1 ? matching.keySet().iterator().next() : null;
+    }
+
+    /** First-party website launch, explicit Chrome package; no cookie copying. */
+    static String openChromeSite(Context context, String url, String label) {
+        if (!url.equals("https://quantaphi.org/bubbles.html") && !url.equals("https://quantaphi.org/"))
+            return "Unrecognized Bubbles Chrome destination.";
+        if (context.getPackageManager().getLaunchIntentForPackage("com.android.chrome") == null)
+            return "Google Chrome is not installed or visible to Android. Open Chrome manually.";
+        Intent intent = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse(url))
+            .setPackage("com.android.chrome");
+        return open(context, intent, label);
     }
 
     private static String open(Context context, Intent intent, String label) {
