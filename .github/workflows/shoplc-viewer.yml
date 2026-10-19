@@ -1,10 +1,10 @@
 name: ShopLC same-origin viewer regression
 on:
   pull_request:
-    paths: ['workers/quantaphi-site/worker.js', 'test/shoplc-embed.test.cjs', '.github/workflows/shoplc-viewer.yml']
+    paths: ['workers/quantaphi-site/worker.js', 'test/shoplc-embed.test.cjs', 'test/starquest-org-route.test.cjs', '.github/workflows/shoplc-viewer.yml']
   push:
     branches: [main]
-    paths: ['workers/quantaphi-site/worker.js', 'test/shoplc-embed.test.cjs', '.github/workflows/shoplc-viewer.yml']
+    paths: ['workers/quantaphi-site/worker.js', 'test/shoplc-embed.test.cjs', 'test/starquest-org-route.test.cjs', '.github/workflows/shoplc-viewer.yml']
 permissions:
   contents: read
 jobs:
@@ -16,4 +16,4 @@ jobs:
         with:
           node-version: '22'
       - run: node --check workers/quantaphi-site/worker.js
-      - run: node --test test/shoplc-embed.test.cjs
+      - run: node --test test/shoplc-embed.test.cjs test/starquest-org-route.test.cjs
