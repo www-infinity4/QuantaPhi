@@ -39,17 +39,14 @@ final class XRecorderBridge {
             if (feedback != null) feedback.accept("recording");
             return;
         }
-        if ("toggle".equals(action)) action = recordingVerified(context) ? "stop" : "start";
+        if ("toggle".equals(action)) action = BrainNotes.prefs(context)
+            .getBoolean("x_recorder_verified", false) ? "stop" : "start";
         final String wanted = action;
         update(context, wanted.equals("start") ? "starting" : "stopping",
             wanted.equals("start") ? "Starting…" : "Stopping…", false);
         String tapped = BrainLearningService.tapXRecorderControl(wanted);
         if (tapped.startsWith("XRecorder tap sent:")) {
             verify(context, wanted, main, feedback, 0);
-            return;
-        }
-        if ("stop".equals(wanted)) {
-            update(context, "needs_tap", "Tap XRecorder's Stop control.", false);
             return;
         }
         Intent launch = context.getPackageManager().getLaunchIntentForPackage(PACKAGE);
@@ -76,7 +73,7 @@ final class XRecorderBridge {
             } else if (attempt < 8) {
                 tapAfterLaunch(context, wanted, main, feedback, attempt + 1);
             } else {
-                update(context, "needs_tap", "Tap XRecorder to record.", false);
+                update(context, "needs_tap", "Tap XRecorder to " + (wanted.equals("stop") ? "stop." : "record."), false);
             }
         }, attempt == 0 ? 450L : 350L);
     }
