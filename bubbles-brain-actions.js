@@ -197,9 +197,9 @@ function makeJobs(request,selectedRepository){
  }];
 }
 function readableReport(text) {
- return String(text||'').replace(/\\b[0-9a-f]{8}-[0-9a-f-]{27,}\\b/gi,'[internal reference]')
-  .replace(/\\b[0-9a-f]{32,}\\b/gi,'[internal reference]')
-  .replace(/\\b[A-Za-z0-9+/_=-]{48,}\\b/g,'[internal reference]');
+ return String(text||'').replace(/\b[0-9a-f]{8}-[0-9a-f-]{27,}\b/gi,'[internal reference]')
+  .replace(/\b[0-9a-f]{32,}\b/gi,'[internal reference]')
+  .replace(/\b[A-Za-z0-9+/_=-]{48,}\b/g,'[internal reference]');
 }
 function describeTickets(tickets,limit=10){
  if(!Array.isArray(tickets))return 'Robot Brain returned no verifiable ticket list.';
@@ -289,6 +289,9 @@ function speechText(value){
  // Spoken narration is a different representation from the visible chat.
  // Never read formatting symbols, code fences, URLs or markdown syntax aloud.
  return String(value||'')
+  .replace(/\b(?:IW-\d{8}-[A-Z0-9-]+|TASK-\d+|[a-f0-9]{8}-[a-f0-9-]{27,}|[a-f0-9]{32,})\b/gi,' ')
+  .replace(/\b(?:ticket|request|run|job|receipt)(?:\s+(?:id|number))?\s*[:#-]?\s*\d{4,}\b/gi,'the job')
+  .replace(/\b[A-Za-z0-9+/_=-]{48,}\b/g,' ')
   .replace(/\x60{3}[\s\S]*?\x60{3}/g,' ')
   .replace(/!?\[([^\]]+)\]\(https?:\/\/[^)]+\)/gi,'$1')
   .replace(/https?:\/\/\S+|www\.\S+/gi,' ')

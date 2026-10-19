@@ -1,18 +1,20 @@
 import {cards,cardIntent} from './bubbles-card-catalog.mjs';
 export {cardIntent};
 export class CardWorkspace{
- constructor(container,onEvidence=()=>{}){
-  this.container=container;this.onEvidence=onEvidence;this.frames=new Map();this.active=null;
+ constructor(container,onEvidence=()=>{},onClose=()=>{}){
+  this.container=container;this.onEvidence=onEvidence;this.onClose=onClose;this.frames=new Map();this.active=null;
   this.heading=document.createElement('h3');this.status=document.createElement('p');this.status.setAttribute('role','status');
-  this.stage=document.createElement('div');this.actions=document.createElement('div');
-  for(const [label,action] of [['Play',()=>this.play()],['Diagnose card',()=>this.diagnose()],['Close card',()=>this.close()]]){
+  this.stage=document.createElement('div');this.actions=document.createElement('div');this.actions.className='ba-card-toolbar';
+  this.escape=event=>{if(event.key==='Escape'&&!this.container.hidden){event.preventDefault();this.close();}};
+  container.addEventListener('keydown',this.escape);document.addEventListener?.('keydown',this.escape);
+  for(const [label,action] of [['Back to chat',()=>this.close()],['Play',()=>this.play()],['Diagnose card',()=>this.diagnose()],['Close card',()=>this.close()]]){
    const button=document.createElement('button');button.type='button';button.className='ba-miniaction';button.textContent=label;button.onclick=action;this.actions.append(button);
   }
   container.className='ba-card-workspace';container.hidden=true;container.append(this.heading,this.status,this.actions,this.stage);
  }
  async handle(intent){
   if(intent.action==='catalog'){
-   this.container.hidden=false;this.heading.textContent='Card catalog';
+   this.pause(this.active);this.stage.hidden=true;this.container.hidden=false;this.heading.textContent='Card catalog';
    let menu=this.container.querySelector('.ba-card-catalog');if(menu)menu.remove();
    menu=document.createElement('div');menu.className='ba-card-catalog';
    for(const card of cards){const button=document.createElement('button');button.type='button';button.textContent=card.title;button.onclick=()=>void this.open(card,false);menu.append(button);}
@@ -23,9 +25,9 @@ export class CardWorkspace{
   return this.open(intent.card,intent.action==='play');
  }
  pause(record){if(record)for(const media of record.media)try{media.pause();}catch{}}
- close(){this.pause(this.active);this.active=null;this.container.hidden=true;this.onEvidence(null);}
+ close(){this.pause(this.active);this.active=null;this.container.hidden=true;this.onEvidence(null);this.onClose();}
  async open(card,play){
-  this.pause(this.active);this.container.hidden=false;this.heading.textContent=card.title;this.status.textContent='Opening '+card.title+'…';
+  this.pause(this.active);this.stage.hidden=false;this.container.querySelector('.ba-card-catalog')?.remove();this.container.hidden=false;this.heading.textContent=card.title;this.status.textContent='Opening '+card.title+'…';
   let record=this.frames.get(card.id);
   if(!record){
    const frame=document.createElement('iframe');frame.title=card.title;frame.allow='autoplay; fullscreen';
@@ -39,6 +41,7 @@ export class CardWorkspace{
       // A catalog route must remain on our origin; redirected third-party pages are not controlled.
       if(frame.contentWindow.location.origin!==location.origin)throw Error('Card left the suite origin');
       const win=frame.contentWindow,proto=win.HTMLMediaElement.prototype,original=proto.play;
+      win.addEventListener('keydown',this.escape);
       proto.play=function(...args){
        record.media.add(this);
        this.addEventListener('playing',()=>{if(thisWorkspace.active===record)thisWorkspace.status.textContent=card.title+' · playback confirmed';},{once:true});

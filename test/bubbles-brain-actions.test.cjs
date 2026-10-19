@@ -239,3 +239,12 @@ test('selected repository pins both writer and verification jobs',()=>{
  }
  assert.throws(()=>makeJobs('Fix menu','another-owner/repo'),/explicit_owner_repository_required/);
 });
+
+test('speech omits internal IDs but preserves useful ordinary numbers',()=>{
+ const {speechText}=require('../bubbles-brain-actions.js');
+ const spoken=speechText('Ticket 39214848817 TASK-9921 IW-20261019-A1B2C3D4 12345678-abcd-1234-abcd-123456789abc '+ 'a'.repeat(40)+'. Build uses Android 35 and 2 files.');
+ assert.doesNotMatch(spoken,/39214848817|9921|A1B2C3D4|12345678|a{40}/);
+ assert.match(spoken,/Android 35 and 2 files/);
+ const visible=describeTickets([{title:'Repair',status:'working',result_summary:'Receipt '+ 'a'.repeat(40)}]);
+ assert.doesNotMatch(visible,/a{40}/);
+});

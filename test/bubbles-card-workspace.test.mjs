@@ -101,3 +101,17 @@ test('Media Star commands resolve to the real player and person picker, not the 
   assert.equal(cardIntent(phrase),null,phrase);
  }
 });
+
+test('Back to chat and Escape close the workspace and restore the composer callback',async()=>{
+ const {Node}=dom();let restored=0;
+ try{
+  const container=new Node('section'),workspace=new CardWorkspace(container,()=>{},()=>restored++);
+  await workspace.handle({action:'catalog'});
+  assert.equal(workspace.stage.hidden,true);
+  const back=workspace.actions.children.find(b=>b.textContent==='Back to chat');
+  assert.ok(back);back.onclick();assert.equal(container.hidden,true);assert.equal(restored,1);
+  await workspace.handle({action:'catalog'});
+  let prevented=false;container.listeners.keydown({key:'Escape',preventDefault(){prevented=true;}});
+  assert.equal(prevented,true);assert.equal(container.hidden,true);assert.equal(restored,2);
+ }finally{delete globalThis.document;delete globalThis.location;}
+});

@@ -33,10 +33,13 @@ test('Cloudflare vision receives bounded photo as evidence and produces an actua
  const image='data:image/jpeg;base64,'+'A'.repeat(200);
  const res=await analyzePhoto(req(),{AI:{run:async(model,args)=>{
   calls++;
-  assert.equal(model,'@cf/meta/llama-3.2-11b-vision-instruct');
-  assert.equal(args.image,image);
+  assert.equal(model,'@cf/google/gemma-4-26b-a4b-it');
+  assert.equal(args.image,undefined);
+  assert.equal(args.messages[1].content[1].image_url.url,image);
+  assert.equal(args.chat_template_kwargs.enable_thinking,false);
+  assert.ok(args.max_completion_tokens>=800);
   assert.match(args.messages[0].content,/untrusted data/);
-  return {response:'A yellow flower appears in this image.'};
+  return {choices:[{message:{content:'A yellow flower appears in this image.'}}]};
  }}},{request:'Describe this flower',image});
  const output=await res.json();
  assert.equal(res.status,200);
