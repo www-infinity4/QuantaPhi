@@ -17,7 +17,7 @@ test('phone media playback cannot silently become a Bubbles chat or code job',()
  assert.match(playback,/unregisterAudioPlaybackCallback/);
 });
 
-test('native Bubbles screen capture retains microphone sound and MP4 editor',()=>{
+test('native Bubbles screen capture keeps the speech microphone available and MP4 editor',()=>{
  const screen=read('ScreenCaptureService.java');
  const editor=read('CaptureClipEditor.java');
  const ui=read('MainActivity.java');
