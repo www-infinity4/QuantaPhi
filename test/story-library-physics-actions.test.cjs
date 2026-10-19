@@ -35,6 +35,7 @@ test('physics card has distinct Star Collect Share actions with Cloud receipt co
 
 test('entrypoint loads updated story/physics styles and scripts',()=>{
  const html=source('index.html');
- for(const path of ['phi-story-writer.css','phi-story-writer.js','infinity-concepts.css','infinity-concepts.js'])
+ for(const path of ['phi-story-writer.css','phi-story-writer.js','infinity-concepts.css'])
   assert.match(html,new RegExp(path.replaceAll('.','\\.')+'\\?v=20261011-'));
+ assert.match(html,/infinity-concepts\.js\?v=20261019-physics-images1/);
 });
