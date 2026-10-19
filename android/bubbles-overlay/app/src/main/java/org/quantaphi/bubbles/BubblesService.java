@@ -831,17 +831,21 @@ public final class BubblesService extends Service {
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
         Matcher matcher = namedWake.matcher(text);
         boolean directed = matcher.find();
+        // "Record Bubbles" is a deliberately addressed local capture command
+        // even when the optional Room Notes mode requires a wake name.
+        boolean suffixCapture = text.matches(
+            "(?i)^(?:record|start recording|stop recording|stop|save)\\s+bubbles$");
         // Room Notes is a separate opt-in listener. Unaddressed voices NEVER
         // become AI commands or Robot Brain jobs while it is enabled.
         // This does not identify a speaker; a wake-name remains required.
-        if (!typed && RoomNotes.enabled(this) && !directed) {
+        if (!typed && RoomNotes.enabled(this) && !directed && !suffixCapture) {
             boolean phonePlayback = playbackAwareness != null && playbackAwareness.mediaPlaying();
             if (!phonePlayback) RoomNotes.add(this, text);
             state("room", .08f);
             return;
         }
         if (!SpeechSourceGate.mayDispatch(typed,
-                playbackAwareness != null && playbackAwareness.mediaPlaying(), directed)) {
+                playbackAwareness != null && playbackAwareness.mediaPlaying(), directed || suffixCapture)) {
             // Background phone audio is not authorization to speak or run jobs.
             BrainNotes.prefs(this).edit().putString("last_suppressed_source",
                     "Phone playback active; say Bubbles to address the assistant").apply();
