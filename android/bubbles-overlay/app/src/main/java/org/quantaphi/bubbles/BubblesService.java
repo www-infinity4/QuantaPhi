@@ -1041,7 +1041,7 @@ public final class BubblesService extends Service {
             // Real work has been accepted by the local WebView queue. Give a
             // short audible acknowledgement immediately, without claiming a
             // search or tool finished before a verified result exists.
-            if (!typed) speak("Thinking.");
+            if (!typed) speak("On it.");
             return;
         }
         BrainNotes.prefs(this).edit().putString("last_error",
