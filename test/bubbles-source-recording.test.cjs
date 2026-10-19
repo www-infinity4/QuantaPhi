@@ -23,7 +23,7 @@ test('native Bubbles screen capture keeps the speech microphone available and MP
  const ui=read('MainActivity.java');
  assert.doesNotMatch(screen,/setAudioSource\(/);
  assert.match(screen,/BubblesService\.beginScreenAudio\(\)/);
- assert.match(screen,/SharedScreenAudioMuxer\.combine\(completed, audio\)/);
+ assert.doesNotMatch(screen,/SharedScreenAudioMuxer\.combine\(completed, audio\)/);
  assert.match(read('BubblesService.java'),/screenAudio\.append\(samples, count\)/);
  assert.match(read('SharedScreenAudioMuxer.java'),/MediaCodec\.createEncoderByType/);
  assert.match(screen,/recorder\.setVideoSource\(MediaRecorder\.VideoSource\.SURFACE\)/);
