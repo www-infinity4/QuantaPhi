@@ -53,7 +53,13 @@ public final class MainActivity extends Activity {
         layout.addView(title);
 
         TextView copy = new TextView(this);
-        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. Your floating APK uses the same QuantaPhi Bubbles page and Robot Brain. To link Robot Brain, get the one-time code on verified QuantaPhi, paste it directly into the floating chat message box, then Send. There is no separate pairing button. Drag the floating orb anywhere. Say Bubbles, open Chrome then tap Search then type cats into Search. The phone carries out the spoken steps; say Bubbles, stop the task to cancel.\\n\\nSay record or stop. XRecorder handles video; CapCut edits saved video or extracts sound. Android asks you for capture permission when needed. Bubbles listens while you find your words.");
+        copy.setText("Enable Bubbles once, approve Android microphone and overlay permissions, then just talk. "
+            + "Your small floating Bubbles orb uses the QuantaPhi Bubbles website. "
+            + "Once you sign in inside Bubbles, that first-party app session is retained across launches. "
+            + "Android does not automatically import Chrome wallet credentials. Owner actions remain verified by the website. "
+            + "Drag the orb wherever you like. It grows when speaking and gently dims other cooperating media apps. "
+            + "Say 'Bubbles, record' to request Android permission for Bubbles' own screen recorder; say 'stop' to save. "
+            + "CapCut may be used later for editing. No XRecorder or DU Recorder is required.");
         copy.setTextColor(Color.rgb(101, 83, 111));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
