@@ -37,3 +37,13 @@ test('Run All accurately distinguishes a dispatch from actual work receipts',()=
  assert.match(chat,/runnerTarget/);
  assert.match(card,/bubbles-ai\.js\?v=20261019-bulk-truth1/);
 });
+
+test('blocked job history can be paged without losing older upgrades',()=>{
+ assert.match(report,/previousBlocked=make\('button'/);
+ assert.match(report,/nextBlocked=make\('button'/);
+ assert.match(report,/blockedOffset\+=10/);
+ assert.match(report,/blockedOffset-10/);
+ assert.match(report,/candidates\.slice\(offset,offset\+10\)/);
+ assert.match(report,/Blocked jobs /);
+ assert.match(card,/robot-work-report\.js\?v=20261019-blocked-pages1/);
+});
