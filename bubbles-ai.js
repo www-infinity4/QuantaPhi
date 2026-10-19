@@ -744,6 +744,10 @@ if(nativeOverlay){
  nativeProviderRow.append(gptConnect,gptStatus);
  tools.insertBefore(nativeProviderRow,summary.nextSibling);
  tools.append(privateLabel);
+ // Android's full-screen Bubbles panel covers the underlying site; move the
+ // original wallet view into Options without duplicating IDs or credentials.
+ const verifiedWallet=document.querySelector('.bubbles-wallet');
+ if(verifiedWallet)tools.append(verifiedWallet);
  summary.textContent='⋯';summary.setAttribute('aria-label','Bubbles options');
  // One scrolling surface owns messages, pairing output and expanded options.
  // The composer and its visible feedback remain reachable at every scroll position.
