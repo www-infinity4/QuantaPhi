@@ -1,0 +1,53 @@
+name: Bubbles live SearXNG acceptance
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/bubbles-live-search-acceptance.yml'
+permissions:
+  contents: read
+jobs:
+  live-search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Verify live Bubbles-to-SearXNG results and receipt
+        env:
+          BUBBLES_URL: https://bubbles-tools.marvaseater.workers.dev/v1/assist
+        run: |
+          node --input-type=module <<'NODE'
+          const start=Date.now();
+          let response, body;
+          try {
+            response=await fetch(process.env.BUBBLES_URL,{
+              method:'POST',
+              headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+              body:JSON.stringify({request:'search Lovilia Iowa',tool:'web.search'}),
+              signal:AbortSignal.timeout(45000)
+            });
+            body=await response.json();
+          } catch (error) {
+            console.error('LIVE_SEARCH_TRANSPORT_FAIL',String(error?.message||error));
+            process.exit(1);
+          }
+          const sources=Array.isArray(body.sources)?body.sources:[];
+          const sample=sources.slice(0,3).map(({title,url,provider})=>({title,url,provider}));
+          console.log(JSON.stringify({
+            httpStatus:response.status,
+            durationMs:Date.now()-start,
+            service:process.env.BUBBLES_URL,
+            receiptStatus:body.receipt?.status,
+            receiptTool:body.receipt?.tool,
+            provider:body.searchProvider,
+            sourceCount:sources.length,
+            sample
+          },null,2));
+          if (!response.ok || !body.ok || body.receipt?.tool!=='web.search' ||
+              body.receipt?.status!=='complete' || sources.length===0 ||
+              !sources.every(x=>typeof x.title==='string'&&x.title.trim()&&
+                typeof x.url==='string'&&x.url.startsWith('https://'))) {
+            console.error('LIVE_SEARCH_ACCEPTANCE_FAIL: running production lookup did not return verified source excerpts');
+            process.exit(1);
+          }
+          console.log('LIVE_SEARCH_ACCEPTANCE_PASS: deployed Bubbles returned real search sources');
+          NODE
