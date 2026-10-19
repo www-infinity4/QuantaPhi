@@ -150,7 +150,11 @@ public final class MainActivity extends Activity {
                 + "\nLast screen result: " + BrainNotes.prefs(this).getString("screen_state", "No screen read yet")
                 + "\nUI job: " + BrainNotes.prefs(this).getString("workflow_receipt", "No UI job started")
                 + "\nCapture: " + BrainNotes.prefs(this).getString("capture_state", "None")
-                + "\nSound: " + BrainNotes.prefs(this).getString("audio_state", "None"));
+                + "\nSound: " + BrainNotes.prefs(this).getString("audio_state", "None")
+                + "\nBackground phone audio: " + BrainNotes.prefs(this).getString("phone_media_state", "Not enabled")
+                + "\nLast phone audio heard: " + BrainNotes.prefs(this).getString("phone_media_last_received", "Nothing transcribed")
+                + "\nLast room words heard: " + BrainNotes.prefs(this).getString("room_notes_last_received", "No room notes")
+                + "\nBackground issue: " + BrainNotes.prefs(this).getString("phone_media_last_failure", "None recorded"));
         refreshStatus = new Runnable() { public void run() { refreshVoice.run(); ui.postDelayed(this, 1000); } };
         refreshVoice.run();
         Button diagnostics = new Button(this);
