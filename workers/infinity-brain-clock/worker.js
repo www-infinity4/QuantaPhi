@@ -1358,7 +1358,7 @@ export default{
       }else if(modelReviewed<3){
        modelReviewed++;
        decision=await reviewCommunityWithGPT(cmd.command,proposed,{
-        apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1'
+        apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1',workersAI:env.WRITER_AI
        });
       }
       const saveText=proposed.accepted?cmd.command:'[rejected sensitive or unsuitable request]';
@@ -1407,7 +1407,7 @@ export default{
      let proposalId='',decision={status:'reject',category:'other',placement:'community-review',summary:classification.error||'Rejected',risk:'high'};
      if(classification.accepted){
       if(modelReviewed<3){modelReviewed++;decision=await reviewCommunityWithGPT(found.suggestion,classification,{
-       apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1'
+       apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1',workersAI:env.WRITER_AI
       })}else decision={status:'needs_review',category:classification.category,placement:classification.placement,
        summary:'Queued for owner/GPT assessment due to bounded scan budget',risk:'high'};
       const contentHash=await digest(found.suggestion.trim().replace(/\s+/g,' ').toLowerCase());
@@ -1466,7 +1466,7 @@ export default{
     if(Number(count?.total||0)>=6||now-Number(count?.latest||0)<60000)
      return output(request,{ok:false,error:'submission_rate_limit'},429);
     const review=await reviewCommunityWithGPT(normalized,recommendation,{
-      apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1'
+      apiKey:env.OPENAI_API_KEY,model:env.COMMUNITY_GPT_MODEL||'gpt-5.1',workersAI:env.WRITER_AI
     });
     const id='CU-'+crypto.randomUUID(),status=String(review.status||'needs_review');
     await env.WORK_DB.prepare(
