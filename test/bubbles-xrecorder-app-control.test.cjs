@@ -20,7 +20,7 @@ test('spoken record, app and floating chat use Bubbles native recorder',()=>{
  assert.match(activity,/screenVideo\.setOnClickListener\(v -> beginScreen\(false\)\)/);
  assert.match(web,/Record screen/);
  assert.match(web,/Stop & save/);
- assert.match(floating,/captureState\.put\("captureRecording"/);
+ assert.match(floating,/captureState\.put\("screenRecording"/);
  assert.doesNotMatch(service,/\n\s*attachXRecorderButton\(\);/);
 });
 test('only XRecorder owned, unambiguous labeled accessibility controls are tapped',()=>{
