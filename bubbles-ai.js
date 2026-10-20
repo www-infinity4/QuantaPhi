@@ -2470,6 +2470,40 @@ async function readBrainReport(){
  if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error(String(result.error||'Owner ticket list unavailable'));
  const report=(await humanReplies()).workSummary(result.tickets);
  return report;
+}
+void connectOwner();
+// Home loads the owner helper after this script. Deferred scripts finish before
+// DOMContentLoaded; attach to its real verification promise after load order settles.
+document.addEventListener?.('DOMContentLoaded',()=>void connectOwner(),{once:true});
+async function requestRunner(ticketId='',jobId=''){
+ const headers=await verifiedOwnerHeaders();
+ const body={};if(ticketId)body.ticketId=ticketId;if(jobId)body.jobId=jobId;
+ const response=await bubblesFetch(BRAIN+'/work/run-next',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
+  body:JSON.stringify(body)},20000);
+ const result=await response.json().catch(()=>({}));
+ if(!response.ok||!result.ok)throw Error(String(result.error||'Runner request was not acknowledged'));
+ if(!['queued_for_runner','no_pending_jobs','awaiting_repository_runner','runner_dispatch_failed','runner_dispatch_unverified','job_not_dispatchable'].includes(result.status))throw Error('Unexpected runner result');
+ return result;
+}
+async function submitWork(request,approval='explicit-click'){
+ if(activeCardEvidence)cardWorkspaceInstance?.diagnose();
+ const cardEvidenceSnapshot=activeCardEvidence?JSON.parse(JSON.stringify(activeCardEvidence)):null;
+ // Resolve the real target before creating tickets. A guess never silently fans out.
+ if(!repositorySelectionExplicit&&!activeCardEvidence)await suggestRepositoryTargets(request,false);
+ const repositories=[...repositorySelection].sort();
+ if(!repositories.length)throw Error('Select at least one repository before creating a ticket.');
+ if(repositoryPicker.dataset.submitting==='true')throw Error('Repository tickets are already being submitted.');
+ repositoryPicker.dataset.submitting='true';
+ const results=[],failures=[];
+ try{
+  for(const repository of repositories){
+   try{results.push(await submitRepositoryWork(request,approval,repository,cardEvidenceSnapshot));}
+   catch(error){failures.push(repository+': '+String(error.message||error));}
+  }
+  if(!results.length)throw Error(failures.join('; '));
+  const summary=results.length+' work request'+(results.length===1?'':'s')+' saved for '+results.map(result=>result.repository.split('/')[1]).join(', ')+'.'+(failures.length?' Failed: '+failures.join('; '):'');
+  workStatus.textContent=summary;
+  return {...results[0],repositories:results.map(result=>result.repository),tickets:results,batchSummary:summary};
  }finally{delete repositoryPicker.dataset.submitting;}
 }
 async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence){
