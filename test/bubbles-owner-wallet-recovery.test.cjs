@@ -44,3 +44,48 @@ test('Bubbles opens the Cloudflare verification form directly',()=>{
  assert.match(page,/No new code was issued/);
  assert.doesNotMatch(worker,/\/v1\/wallet\/create-recovery/);
 });
+
+
+test('Access issuer is fail-closed, bound to the configured original wallet, and uses existing grant schema', async()=>{
+ const vm=require('node:vm'),crypto=require('node:crypto').webcrypto;
+ const source=fs.readFileSync('workers/unified-wallet/worker.js','utf8');
+ const start=source.indexOf('async function issueOwnerRecovery(request,env,ctx){');
+ const end=source.indexOf('async function redeemRecovery(request,env){',start);
+ assert.ok(start>=0&&end>start);
+ const issuer=source.slice(start,end);
+ const inserts=[];
+ const db={prepare(sql){return {bind(...args){return {async first(){
+   if(sql.startsWith('SELECT id,username'))return {id:'original-123',username:'device_original'};
+   if(sql.startsWith('INSERT INTO wallet_recovery_grants')){inserts.push({sql,args});return {claim_hash:args[0]};}
+   throw Error('Unexpected query');
+  }}}}}};
+ const env={IDENTITY_DB:db,RECOVERY_ACCESS_AUD:'aud-test',RECOVERY_OWNER_EMAIL:'owner@example.test',RECOVERY_OWNER_ACCOUNT_ID:'original-123'};
+ const identity={aud:'aud-test',getIdentity:async()=>({email:'owner@example.test'})};
+ const digest=async code=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(code)))).map(x=>x.toString(16).padStart(2,'0')).join('');
+ const issue=require('node:vm').runInNewContext(issuer+';issueOwnerRecovery',{crypto,TextEncoder,Response,URL,btoa,digest});
+ const endpoint='https://unified-wallet.marvaseater.workers.dev/v1/wallet/issue-recovery';
+ const request=(method='GET',origin=endpoint)=>new Request(endpoint,{method,headers:method==='POST'?{Origin:new URL(origin).origin,'Sec-Fetch-Site':'same-origin'}:{}});
+ assert.equal((await issue(request(),env,{})).status,403);
+ assert.equal((await issue(new Request(endpoint,{headers:{'Cf-Access-Authenticated-User-Email':'owner@example.test'}}),env,{})).status,403);
+ assert.equal((await issue(request(),env,{access:{...identity,aud:'wrong'}})).status,403);
+ assert.equal((await issue(request(),env,{access:{...identity,getIdentity:async()=>({email:'other@example.test'})}})).status,403);
+ assert.equal((await issue(request(),env,{access:identity})).status,200);
+ assert.equal(inserts.length,0);
+ assert.equal((await issue(request('POST','https://evil.example'),env,{access:identity})).status,403);
+ assert.equal(inserts.length,0);
+ const result=await issue(request('POST'),env,{access:identity});
+ assert.equal(result.status,200);
+ assert.equal(result.headers.get('Referrer-Policy'),'no-referrer');
+ assert.equal(result.headers.get('Cache-Control'),'no-store, private');
+ const text=await result.text();
+ assert.match(text,/wrc_[A-Za-z0-9_-]{43}/);
+ assert.match(text,/quantaphi\.org\/wallet-recovery\.html#ownerRecovery=/);
+ assert.equal(inserts.length,1);
+ assert.equal(inserts[0].args[1],'original-123');
+ assert.equal(inserts[0].args[3]-inserts[0].args[2],15*60*1000);
+ assert.match(inserts[0].sql,/RETURNING claim_hash/);
+ assert.match(inserts[0].sql,/COUNT\(\*\).*created_at>\?5/);
+ assert.match(inserts[0].sql,/NOT EXISTS/);
+ assert.doesNotMatch(issuer,/input\.accountId|request\.json\(\)|Cf-Access-Authenticated-User-Email/);
+ assert.match(issuer,/ctx\.access\.getIdentity\(\)/);
+});
