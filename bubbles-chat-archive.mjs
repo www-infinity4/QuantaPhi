@@ -102,7 +102,7 @@ export async function readZip(file,selector){
  let pos=offset;const choices=[];
  for(let index=0;index<total;index++){
   check(pos+46<=buffer.byteLength&&u32(view,pos)===0x02014b50,'Invalid ZIP central directory.');
-  const flag=u16(view,pos+8),method=u16(view,pos+10),compressed=u32(view,pos+20),unpacked=u32(view,pos+24);
+  const flag=u16(view,pos+8),method=u16(view,pos+10),checksum=u32(view,pos+16),compressed=u32(view,pos+20),unpacked=u32(view,pos+24);
   const nameLen=u16(view,pos+28),extra=u16(view,pos+30),comment=u16(view,pos+32),local=u32(view,pos+42);
   check(compressed!==0xffffffff&&unpacked!==0xffffffff,'ZIP64 archives are not supported.');
   check(pos+46+nameLen+extra+comment<=buffer.byteLength,'Invalid ZIP filename.');
@@ -115,14 +115,16 @@ export async function readZip(file,selector){
    check(local+30<=buffer.byteLength&&u32(view,local)===0x04034b50,'Invalid ZIP data header.');
    const dataOffset=local+30+u16(view,local+26)+u16(view,local+28);
    check(dataOffset+compressed<=buffer.byteLength,'Truncated ZIP entry.');
-   choices.push({name,method,unpacked,bytes:new Uint8Array(buffer,dataOffset,compressed)});
+   choices.push({name,method,unpacked,checksum,bytes:new Uint8Array(buffer,dataOffset,compressed)});
   }
   pos+=46+nameLen+extra+comment;
  }
  check(choices.length>0,'No supported file was found in this ZIP.');
+ check(choices.length===1,'Multiple conversation archives were found. Extract the correct conversations.json and import it directly.');
  const chosen=choices[0];
  const bytes=chosen.method===0?chosen.bytes:await inflateRaw(chosen.bytes,MAX_TEXT);
  check(bytes.length===chosen.unpacked,'ZIP entry size does not match its index.');
+ check(crc32(bytes)===chosen.checksum,'ZIP conversation data failed its integrity check. Nothing was imported.');
  return {name:chosen.name,text:decoder.decode(bytes)};
 }
 export async function readConversationArchive(file){
