@@ -144,6 +144,98 @@ export class ConsentService {
       });
     }
   }
+  // Stage 3: one-time, account-owned private GitHub repository, created
+  // automatically only after BOTH GitHub and Cloudflare OAuth were approved.
+  // Do not confuse the GitHub account with authority to move wallet balances.
+  async autoStarCoinBootstrap({userId,snapshot}) {
+    const prefix=await this.namespace(userId),now=this.now();
+    if(!snapshot?.data||typeof snapshot.hash!=='string')throw Error('backup_invalid_request');
+    const accounts=await this.gateStatus({userId});
+    const valid=x=>x?.status==='connected'&&Number.isFinite(x.expiresAt)&&x.expiresAt>this.now()+30000;
+    const github=accounts.find(x=>x.provider==='github'&&valid(x));
+    const cloudflare=accounts.find(x=>x.provider==='cloudflare'&&valid(x)&&
+      ['account.read','projects.build','ledger.read'].every(a=>x.grantedActions?.includes(a)));
+    if(!github||!cloudflare)throw Error('backup_both_provider_authorizations_required');
+    const githubKey=prefix+'connection:'+github.id;
+    let record=await this.storage.get(githubKey);
+    if(record?.userId!==userId||record.providerSubject!==github.providerSubject||
+       record.status!=='connected'||!record.credentialRef||!valid(record))
+      throw Error('connection_not_verified');
+    const autoKey=prefix+'starcoin:auto-repository';
+    const selectedKey=prefix+'starcoin:chosen-repository';
+    let provisioned=await this.storage.get(autoKey);
+    const selected=await this.storage.get(selectedKey);
+    if(provisioned&&provisioned.githubSubject!==github.providerSubject)
+      throw Error('backup_account_mismatch_review_required');
+    if(provisioned&&selected&&provisioned.repository!==selected.repository)
+      throw Error('backup_repository_already_selected');
+    if(!provisioned&&selected){
+      provisioned={repository:selected.repository,githubSubject:github.providerSubject,
+        connectionId:github.id,createdAt:selected.createdAt||now,source:'existing_verified'};
+      // Existing repository still requires verification of installation write
+      // before any backup; do not invent a GitHub repo or adopt random names.
+      await this.storage.put(autoKey,provisioned);
+    }
+    if(!provisioned){
+      if(!this.adapters.github?.createOwnedPrivateLedgerRepository)
+        throw Error('provider_not_configured');
+      const leaseKey=prefix+'starcoin:auto-create-lease',lease=randomToken();
+      await this.storage.transaction(async tx=>{
+        const existing=await tx.get(autoKey),currentLease=await tx.get(leaseKey);
+        if(existing)throw Error('backup_in_progress');
+        if(currentLease?.expiresAt>this.now())throw Error('backup_in_progress');
+        await tx.put(leaseKey,{lease,expiresAt:this.now()+120000});
+      });
+      try{
+        // Derive a pseudonymous, stable name from verified internal account ID.
+        const repositoryName='infinity-wallet-backup-'+
+          (await digest('infinity-github-backup-v1:'+userId)).slice(0,16);
+        const ciphertext=await this.storage.get(record.credentialRef);
+        if(!ciphertext)throw Error('credential_unavailable');
+        const credential=await this.vault.open(ciphertext,record.credentialRef);
+        const created=await this.adapters.github.createOwnedPrivateLedgerRepository({
+          accessToken:credential.accessToken,expectedSubject:record.providerSubject,repositoryName});
+        const still=await this.storage.get(githubKey);
+        if(still?.status!=='connected'||still.revision!==record.revision)
+          throw Error('connection_cancelled');
+        provisioned={repository:created.repository,repositoryId:created.repositoryId,
+          githubSubject:record.providerSubject,connectionId:github.id,createdAt:this.now(),
+          source:'created_private'};
+        await this.storage.put(autoKey,provisioned);
+      }finally{
+        await this.storage.transaction(async tx=>{
+          if((await tx.get(leaseKey))?.lease===lease)await tx.delete(leaseKey);
+        });
+      }
+    }
+    const verification=await this.githubRepositories({userId,id:github.id});
+    const installed=verification.repositories?.find(x=>x.name===provisioned.repository&&
+      x.private===true&&x.permissions?.write===true);
+    if(!installed)return {status:'needs_github_app_repository_installation',
+      repository:provisioned.repository,private:true,coverage:'starcoins_pilot'};
+    const result=await this.starCoinBackup({
+      userId,id:github.id,repository:provisioned.repository,snapshot,mode:'write'});
+    const last=await this.storage.get(prefix+'starcoin:last-backup');
+    const commit=result.commit||((last?.hash===snapshot.hash)?last.commit:null);
+    return {status:result.status,repository:provisioned.repository,private:true,
+      hash:snapshot.hash,commit:commit||null,
+      coverage:'starcoins_pilot',receiptCount:snapshot.data.receipts.length};
+  }
+  async autoStarCoinStatus({userId}) {
+    const prefix=await this.namespace(userId);
+    const [repository,last,review]=await Promise.all([
+      this.storage.get(prefix+'starcoin:auto-repository'),
+      this.storage.get(prefix+'starcoin:last-backup'),
+      this.storage.get(prefix+'starcoin:review')]);
+    if(!repository)return {status:'not_created',coverage:'starcoins_pilot'};
+    if(review?.repository===repository.repository)
+      return {status:'owner_review_required',repository:repository.repository,
+        coverage:'starcoins_pilot'};
+    if(last?.repository!==repository.repository)
+      return {status:'repository_created',repository:repository.repository,coverage:'starcoins_pilot'};
+    return {status:last.status,repository:repository.repository,
+      commit:last.commit||null,hash:last.hash,at:last.at,coverage:'starcoins_pilot'};
+  }
   async createStarCoinRepository({userId,id}) {
     const prefix=await this.namespace(userId),key=prefix+'connection:'+id;
     if(typeof id!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(id))throw Error('connection_invalid');
