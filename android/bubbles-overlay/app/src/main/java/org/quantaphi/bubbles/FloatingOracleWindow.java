@@ -164,8 +164,10 @@ final class FloatingOracleWindow {
             } else website.loadUrl("https://quantaphi.org/bubbles-gpt-live.html?v=" + BuildConfig.VERSION_NAME);
         });
         header.addView(liveBack);
-        Button close = button("✕", false);
-        close.setContentDescription("Close floating Oracle conversation");
+        Button close = button("✕ Hide", false);
+        close.setMinWidth(dp(72));
+        close.setMinHeight(dp(48));
+        close.setContentDescription("Hide Bubbles chat and keep voice listening");
         close.setOnClickListener(v -> hide());
         header.addView(close);
         page.addView(header);

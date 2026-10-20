@@ -136,6 +136,12 @@ jobs:
           mkdir -p /tmp/bubbles-energy
           javac -d /tmp/bubbles-energy android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SpeechEnergyWindow.java android/bubbles-overlay/checks/SpeechEnergyWindowCheck.java
           java -cp /tmp/bubbles-energy org.quantaphi.bubbles.SpeechEnergyWindowCheck
+      - name: Verify Bubbles named wake and native hideaway commands
+        run: |
+          mkdir -p /tmp/bubbles-panel-commands
+          javac -d /tmp/bubbles-panel-commands android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BubblesPanelCommands.java android/bubbles-overlay/checks/BubblesPanelCommandsCheck.java
+          java -cp /tmp/bubbles-panel-commands org.quantaphi.bubbles.BubblesPanelCommandsCheck
+          node --test test/bubbles-native-panel-controls.test.cjs
       - name: Verify continuous native microphone contract
         run: node --test test/bubbles-continuous-native.test.cjs
       - name: Verify ChatGPT OAuth permission and response contract

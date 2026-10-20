@@ -708,9 +708,24 @@ public final class BubblesService extends Service {
                         if (complete) {
                             final String transcript = new JSONObject(speech.getResult()).optString("text", "");
                             final long voicedMillis = energyEvidence.takeVoicedMillis();
-                            if (!SpeechTranscriptGate.plausible(transcript, voicedMillis)) continue;
+                            // A short named wake or hide command often lasts less than
+                            // a full sentence. Keep ordinary phrases under the stricter
+                            // speech-energy gate while allowing explicit panel controls.
+                            final BubblesPanelCommands.Action panelAction = BubblesPanelCommands.parse(
+                                transcript, BrainNotes.prefs(this).getString("name", "Brain"));
+                            if (!SpeechTranscriptGate.plausible(transcript, voicedMillis)
+                                    && !(panelAction != BubblesPanelCommands.Action.NONE && voicedMillis >= 200L))
+                                continue;
                             main.post(() -> {
                                 if (!connected || muted || speaking || SystemClock.elapsedRealtime() < echoQuietUntil) return;
+                                // Show/hide are local UI actions, not conversations:
+                                // do not buffer a one-word "Bubbles" behind 950 ms.
+                                if (panelAction != BubblesPanelCommands.Action.NONE) {
+                                    main.removeCallbacks(deliverVoiceTurn);
+                                    turnBuffer.clear();
+                                    heard(transcript);
+                                    return;
+                                }
                                 // Do not wait another 1.65 seconds to stop recording.
                                 // Vosk has already finalized the command at the speech pause.
                                 VoiceCaptureCommands.Command command = VoiceCaptureCommands.parse(transcript);
@@ -912,6 +927,37 @@ public final class BubblesService extends Service {
         main.postDelayed(this::drainWebsiteSpeech,250L);
     }
 
+    // Native panel lifecycle commands must not wait for cloud AI or the website.
+    // A hidden panel keeps the foreground microphone and single orb running.
+    private boolean panelCommand(String text, boolean typed, long now) {
+        BubblesPanelCommands.Action action = BubblesPanelCommands.parse(
+            text, BrainNotes.prefs(this).getString("name", "Brain"));
+        if (action == BubblesPanelCommands.Action.NONE) return false;
+        if (!typed && BubblesPanelCommands.requiresWake(text) && now > activeUntil) {
+            BrainNotes.prefs(this).edit().putString("last_suppressed_source",
+                "Unaddressed hideaway ignored outside the active session").apply();
+            return true;
+        }
+        if (action == BubblesPanelCommands.Action.SHOW) {
+            if (oracleWindow == null && manager != null)
+                oracleWindow = new FloatingOracleWindow(this, manager);
+            if (oracleWindow != null && oracleWindow.show()) {
+                activeUntil = now + 30000L;
+                voiceFollowups = 0;
+                state("listening", .28f);
+            } else {
+                BrainNotes.prefs(this).edit().putString("last_error",
+                    "Floating Bubbles could not open; tap the orb or Retry").apply();
+            }
+        } else {
+            if (oracleWindow != null) oracleWindow.hide();
+            state("listening", .04f);
+        }
+        BrainNotes.prefs(this).edit().putString("last_panel_command",
+            action == BubblesPanelCommands.Action.SHOW ? "shown" : "hidden").apply();
+        return true;
+    }
+
     private void heard(String raw) { heard(raw, false); }
 
     private void heard(String raw, boolean typed) {
@@ -955,6 +1001,10 @@ public final class BubblesService extends Service {
             BrainNotes.prefs(this).edit().putString("last_suppressed_source",
                     "Phone playback active; say Bubbles to address the assistant").apply();
             state("playback", .06f);
+            return;
+        }
+        if (panelCommand(text, typed, now)) {
+            BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
             return;
         }
         String addressed = directed ? text.substring(matcher.end()).replaceFirst("^[\\s,:.!?\\-]+", "").trim() : text;
@@ -1180,6 +1230,7 @@ public final class BubblesService extends Service {
             }
             return;
         }
+        if (panelCommand(text, true, SystemClock.elapsedRealtime())) return;
         if (handleWorkflowRequest(text, true)) return;
         String localLaunch = AppControlBridge.tryLaunch(this, text);
         if (localLaunch != null) { screenStatus(localLaunch, true); return; }
