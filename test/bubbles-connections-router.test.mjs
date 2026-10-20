@@ -61,7 +61,7 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
    return [
     {provider:'github',status:'connected',label:'user-github',expiresAt:now+60000,grantedActions:[]},
     {provider:'cloudflare',status:'connected',label:'user-cloudflare',
-     expiresAt:now+60000,grantedActions:['account.read','projects.build','ledger.read']}
+     expiresAt:now+60000,grantedActions:['account.read','projects.build','ledger.read','projects.full']}
    ];
   }
  };
@@ -77,6 +77,18 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
  assert.equal(result.providers.cloudflare.permissionsApproved,true);
  assert.equal(result.providers.github.permissionsApproved,true);
  assert.ok(!JSON.stringify(result).includes('not-exposed'));
+});
+test('full Cloudflare project grant is required before reporting full access',async()=>{
+ const now=Date.now(),configured={...env,GITHUB_CLIENT_ID:'app',GITHUB_CLIENT_SECRET:'hidden',CLOUDFLARE_CLIENT_ID:'app',CLOUDFLARE_CLIENT_SECRET:'hidden'};
+ const service={gateStatus:async()=>[
+  {provider:'github',status:'connected',expiresAt:now+60000,grantedActions:[]},
+  {provider:'cloudflare',status:'connected',expiresAt:now+60000,
+   grantedActions:['account.read','projects.build','ledger.read']}
+ ]};
+ const value=await (await handleConnections(request('/gate/status'),configured,()=>service)).json();
+ assert.equal(value.ready,false);
+ assert.deepEqual(value.providers.cloudflare.missingActions,['projects.full']);
+ assert.equal(value.providers.cloudflare.permissionsApproved,false);
 });
 test('gate fails closed for missing Cloudflare setup, expired credentials and partial scopes',async()=>{
  const now=Date.now();
