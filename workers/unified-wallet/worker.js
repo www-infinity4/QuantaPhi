@@ -87,7 +87,13 @@ async function verifiedAccessEmail(request,env){
   try {
     const issuer=String(env.RECOVERY_ACCESS_ISSUER||'').replace(/\/$/,'');
     if(!/^https:\/\/[a-z0-9-]+\.cloudflareaccess\.com$/.test(issuer))return null;
-    const assertion=request.headers.get('Cf-Access-Jwt-Assertion')||'';
+    // Access normally forwards the signed assertion header, but some
+    // Workers routes arrive with only the app-scoped CF_Authorization cookie.
+    // Both are signed JWTs and go through identical RS256/JWKS validation.
+    const appCookie=String(request.headers.get('Cookie')||'').split(';')
+      .map(x=>x.trim()).find(x=>x.startsWith('CF_Authorization='))||'';
+    const cookieToken=appCookie?appCookie.slice('CF_Authorization='.length):'';
+    const assertion=request.headers.get('Cf-Access-Jwt-Assertion')||cookieToken;
     if(!/^[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+$/.test(assertion))return null;
     const parts=assertion.split('.');
     const decode=v=>Uint8Array.from(atob(v.replace(/-/g,'+').replace(/_/g,'/')+'='.repeat((4-v.length%4)%4)),c=>c.charCodeAt(0));
@@ -119,11 +125,22 @@ async function verifiedAccessEmail(request,env){
  * mapping, this route is disabled. It never accepts an account ID from a client.
  */
 async function issueOwnerRecovery(request,env,ctx){
-  const denied=()=>new Response('Cloudflare Access owner authorization is required.',{status:403,headers:{'Cache-Control':'no-store'}});
+  // Distinguish missing session from an invalid signed session without ever
+  // echoing tokens, identity claims, account IDs or Access keys to the client.
+  const denied=(reason='invalid')=>new Response(
+    reason==='missing'
+      ? 'Cloudflare Access session was not forwarded to the wallet service. Use the Access owner login in this browser.'
+      : 'Cloudflare Access owner authorization is required (signed session was not accepted).',
+    {status:403,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}}
+  );
   if(!env.RECOVERY_ACCESS_AUD || !env.RECOVERY_ACCESS_ISSUER ||
      !env.RECOVERY_OWNER_EMAIL || !env.RECOVERY_OWNER_ACCOUNT_ID || !env.IDENTITY_DB)return denied();
   const verifiedEmail=await verifiedAccessEmail(request,env);
-  if(!verifiedEmail || verifiedEmail.toLowerCase()!==String(env.RECOVERY_OWNER_EMAIL).trim().toLowerCase())return denied();
+  if(!verifiedEmail || verifiedEmail.toLowerCase()!==String(env.RECOVERY_OWNER_EMAIL).trim().toLowerCase()){
+    const noHeader=!request.headers.get('Cf-Access-Jwt-Assertion');
+    const noCookie=!String(request.headers.get('Cookie')||'').split(';').some(x=>x.trim().startsWith('CF_Authorization='));
+    return denied(noHeader&&noCookie?'missing':'invalid');
+  }
   if(!['GET','POST'].includes(request.method))return new Response('Method not allowed',{status:405});
   const secureHeaders={
     'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store, private',
