@@ -1,6 +1,16 @@
 /* Individual Chrome apps share QuantaPhi's live website origin and account cookies. */
 window.INFINITY_APPS=[
   {
+    "slug": "test-ground-ai",
+    "name": "Test Ground AI",
+    "short": "Test Ground AI",
+    "glyph": "TG",
+    "color": "#5f2c91",
+    "url": "/test-ground-ai/",
+    "focus": "",
+    "desc": "Actually test Bubbles chat, JSON, repositories, code and tool receipts."
+  },
+  {
     "slug": "quantaphi",
     "name": "QuantaPhi",
     "short": "QuantaPhi",
