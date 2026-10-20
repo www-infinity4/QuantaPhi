@@ -174,7 +174,7 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch){
   const meta=await root.json(),listing=await files.json();
   if(meta.full_name?.toLowerCase()!==repository.toLowerCase()||!Array.isArray(listing))
    throw Error('github_response_not_verified');
-  const contents=listing.filter(x=>typeof x.name==='string'&&x.type==='file'||x.type==='dir')
+  const contents=listing.filter(x=>typeof x.name==='string'&&(x.type==='file'||x.type==='dir'))
    .map(x=>({name:clean(x.name,110),type:x.type})); 
   const matched=contents.filter(x=>/bubbles|brain|worker|code|\.json$|index\.html$/i.test(x.name));
   const shown=[...matched.slice(0,18),...contents.filter(x=>!matched.includes(x)).slice(0,8)].slice(0,26);
@@ -337,7 +337,7 @@ export default {async fetch(request,env){
   if(text.length>70000)return response(request,{ok:false,error:'body_too_large'},413);
   const result=await execute(request,env,body);if(!result.ok)return result;
   const data=await result.clone().json();
-  if(data.model||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
+  if(data.model||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
   const summarize=()=>gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
   if(data.receipt?.tool==='web.search')return finishSearchReply(result,summarize);
   return await summarize();
