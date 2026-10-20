@@ -2452,19 +2452,20 @@ async function pollBrainProgress(){
   }else if(notificationPreferences.mode==='finished')updates=updates.filter(text=>/finished/.test(text));
   if(progressUnavailable)recordBrainNotice('Robot Brain is reachable again.');
   progressUnavailable=false;
-  if(updates.length)announceBrainProgress(updates.slice(-5).join(' '));
+  if(updates.length)void announceBrainProgress(updates.slice(-5).join(' '));
    if(typeof syncRedSectors==='function')void syncRedSectors().catch(()=>{if(!redLinkFailed){redLinkFailed=true;recordBrainNotice('Red-Brain connection is not responding. Ticket polling continues.');}});
  }catch{
   brainConnectionState('Brain unreachable · latest notices retained', 'unreachable');
   if(!progressUnavailable){progressUnavailable=true;recordBrainNotice('Robot Brain is unreachable. Retrying quietly; saved notices remain available.');}
  }finally{progressPolling=false;}
 }
-function announceBrainProgress(text){
+async function announceBrainProgress(text){
  recordBrainNotice(text);
- display(text,'ai');messages.push({role:'assistant',text});messages=messages.slice(-400);persistChat();
- if(nativeOverlay){progressVoiceQueue.push(text);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
- else if(config.voice){progressVoiceQueue.push(text);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
+ const reply=(await humanReplies()).progressReply(text);
+ display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+ if(nativeOverlay||config.voice){progressVoiceQueue.push(reply);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
 }
+
 if(!embedded&&progressTracker&&typeof setInterval==='function')setInterval(()=>{void pollBrainProgress();if(!nativeOverlay&&config.voice&&!busy&&!speaking&&progressVoiceQueue.length)speakText(progressVoiceQueue.shift());},15000);
 void pollBrainProgress();
 async function readBrainReport(){
@@ -2472,48 +2473,8 @@ async function readBrainReport(){
  const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},20000);
  const result=await response.json().catch(()=>({}));
  if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error(String(result.error||'Owner ticket list unavailable'));
- const report=brainTools?.describeTickets(result.tickets,10)||'Robot Brain reporting helpers are unavailable.';
-  try{
-   const bridge=await syncRedSectors(),red=bridge.redBrain;
-   return report+'\nRed-Bubbles ↔ Red-Brain: connected. Last requested job: '+
-    (red.lastRequestedJob?.ticketId?'recorded; execution unverified':'none recorded')+
-    '. Runner: '+red.runner.state+'.'+(red.event?' Latest Brain receipt: '+red.event.kind+' · '+red.event.state+'.':'')+
-    (red.alarmRetry?' Alarm retry: '+red.alarmRetry.state+'; attempt '+red.alarmRetry.attempts+'. '+red.alarmRetry.reason+'.':'');
-  }catch(error){return report+'\nRed-Bubbles ↔ Red-Brain handshake unavailable: '+String(error.message||error).slice(0,110)+'. Ticket records remain readable.';}
-}
-void connectOwner();
-// Home loads the owner helper after this script. Deferred scripts finish before
-// DOMContentLoaded; attach to its real verification promise after load order settles.
-document.addEventListener?.('DOMContentLoaded',()=>void connectOwner(),{once:true});
-async function requestRunner(ticketId='',jobId=''){
- const headers=await verifiedOwnerHeaders();
- const body={};if(ticketId)body.ticketId=ticketId;if(jobId)body.jobId=jobId;
- const response=await bubblesFetch(BRAIN+'/work/run-next',{method:'POST',headers:{...headers,'Content-Type':'application/json'},
-  body:JSON.stringify(body)},20000);
- const result=await response.json().catch(()=>({}));
- if(!response.ok||!result.ok)throw Error(String(result.error||'Runner request was not acknowledged'));
- if(!['queued_for_runner','no_pending_jobs','awaiting_repository_runner','runner_dispatch_failed','runner_dispatch_unverified','job_not_dispatchable'].includes(result.status))throw Error('Unexpected runner result');
- return result;
-}
-async function submitWork(request,approval='explicit-click'){
- if(activeCardEvidence)cardWorkspaceInstance?.diagnose();
- const cardEvidenceSnapshot=activeCardEvidence?JSON.parse(JSON.stringify(activeCardEvidence)):null;
- // Resolve the real target before creating tickets. A guess never silently fans out.
- if(!repositorySelectionExplicit&&!activeCardEvidence)await suggestRepositoryTargets(request,false);
- const repositories=[...repositorySelection].sort();
- if(!repositories.length)throw Error('Select at least one repository before creating a ticket.');
- if(repositoryPicker.dataset.submitting==='true')throw Error('Repository tickets are already being submitted.');
- repositoryPicker.dataset.submitting='true';
- const results=[],failures=[];
- try{
-  for(const repository of repositories){
-   try{results.push(await submitRepositoryWork(request,approval,repository,cardEvidenceSnapshot));}
-   catch(error){failures.push(repository+': '+String(error.message||error));}
-  }
-  if(!results.length)throw Error(failures.join('; '));
-  const summary=results.length+' work request'+(results.length===1?'':'s')+' saved for '+results.map(result=>result.repository.split('/')[1]).join(', ')+'.'+(failures.length?' Failed: '+failures.join('; '):'');
-  workStatus.textContent=summary;
-  return {...results[0],repositories:results.map(result=>result.repository),tickets:results,batchSummary:summary};
+ const report=(await humanReplies()).workSummary(result.tickets);
+ return report;
  }finally{delete repositoryPicker.dataset.submitting;}
 }
 async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence){
