@@ -2114,14 +2114,9 @@ function watchDirectGithubReceipt(requestId){
     let result;
     try{result=await githubReceipt(requestId);}catch{continue;}
     if(result.status==='working'||result.error==='receipt_not_found')continue;
-    const newline=String.fromCharCode(10);
-    const links=(result.receipts||[]).filter(x=>x.url).map(x=>x.status+': '+x.url).slice(-6).join(newline);
-    const report='Direct GitHub request '+requestId+': '+(result.status||'unconfirmed')+
-      (result.error?' — '+result.error:'')+(result.summary?' — '+result.summary:'')+
-      (result.url?newline+result.url:'')+(links?newline+links:'')+
-      '. Testing, merge and deployment require separate verified receipts.';
-    display(report,'ai');
-    messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
+    recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
+    const report=(await humanReplies()).githubReply(result);
+    display(report,'ai');messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
     return;
    }
   }finally{pendingGithubReceipts.delete(requestId);}
