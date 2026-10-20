@@ -26,7 +26,7 @@ export async function walletIdentity(request,env) {
   return {userId:String(id),sessionId:await digest(authorization)};
 }
 export function callbackPage(provider) {
-  if (!['google','github'].includes(provider)) return new Response('Unknown provider',{status:404});
+  if (!['google','github','cloudflare'].includes(provider)) return new Response('Unknown provider',{status:404});
   const nonce = crypto.randomUUID();
   const html = `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Return to Bubbles</title><body><h1>Return to Bubbles</h1><p id="status">Completing your account connection…</p><script nonce="${nonce}">
 const params=new URLSearchParams(location.search);history.replaceState(null,'',location.pathname);
@@ -42,7 +42,7 @@ else document.getElementById('status').textContent='The original Bubbles window 
 export async function handleConnections(request,env,resolveService) {
   const url = new URL(request.url), origin = request.headers.get('Origin') || '';
   if (request.method === 'GET' && url.pathname === PREFIX+'/health') return json(origin,{ok:true,service:'bubbles-connections',version:2});
-  const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github)\/callback$/);
+  const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/);
   if (callback && request.method === 'GET') return callbackPage(callback[1]);
   // Browsers normally omit Origin for same-origin GET fetches. Accept only
   // their Fetch Metadata-confirmed same-origin reads, never originless writes
@@ -74,7 +74,8 @@ export async function handleConnections(request,env,resolveService) {
       const ready = env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true';
       return json(origin,{ok:true,starcoinBackupEnabled:Boolean(ready&&env.STARQUEST_LEDGER?.fetch&&env.BOT_WALLET?.fetch),providers:Object.keys(PROVIDERS).map(id=>({id,actions:PROVIDERS[id].actions,
         configured:ready && ((id==='google' && !!env.GOOGLE_CLIENT_ID && !!env.GOOGLE_CLIENT_SECRET) ||
-          (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET)),requirement:CONNECTOR_REQUIREMENTS[id]}))});
+          (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET) ||
+          (id==='cloudflare' && !!env.CLOUDFLARE_CLIENT_ID && !!env.CLOUDFLARE_CLIENT_SECRET)),requirement:CONNECTOR_REQUIREMENTS[id]}))});
     }
     if (!(env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true')) return json(origin,{ok:false,error:'connections_not_configured'},503);
     const service = await resolveService(identity.userId);

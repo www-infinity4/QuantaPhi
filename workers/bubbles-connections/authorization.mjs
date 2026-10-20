@@ -2,6 +2,7 @@
 // Call with records loaded from trusted storage, never request-body grants.
 const capabilities = {
   github: ['repository.read', 'repository.fork', 'repository.write'],
+  cloudflare: ['account.read','projects.build','ledger.read'],
   google: ['drive.read', 'drive.write', 'sheets.read', 'sheets.write', 'calendar.read', 'calendar.write'],
   ebay: ['listing.read', 'bid.place'],
   walmart: ['product.read', 'order.place'],

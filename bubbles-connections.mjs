@@ -1,5 +1,5 @@
 const API = '/api/bubbles/connections';
-const NAMES = {google:'Google',github:'GitHub',ebay:'eBay',walmart:'Walmart',ibm:'IBM',anthropic:'Anthropic'};
+const NAMES = {cloudflare:'Cloudflare',google:'Google',github:'GitHub',ebay:'eBay',walmart:'Walmart',ibm:'IBM',anthropic:'Anthropic'};
 export async function resolveConnectorWalletToken(root=window){
   const bridge=root.QuantaCloudConnection;
   if(bridge?.ready)await bridge.ready;
@@ -48,7 +48,7 @@ export class AccountConnections {
     try {
       const result=await this.call('/start',{provider,actions});
       const authorization=new URL(result.authorizationUrl),state=authorization.searchParams.get('state');
-      const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':'';
+      const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':'';
       if(authorization.protocol!=='https:'||authorization.hostname!==expectedHost||authorization.port||!state)throw Error('Sign-in address rejected.');
       const origin='https://quantaphi.org'; // Registered callback's origin.
       const listener=async event=>{
@@ -103,7 +103,7 @@ export function mountConnections(container,{token}) {
         const button=element('button',(provider.configured?'Connect ':'Unavailable: ')+(NAMES[provider.id]||provider.id),'ba-control');button.type='button';button.disabled=!provider.configured;
         if(provider.configured)available=true;
         button.addEventListener('click',async()=>{
-          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):['repository.read'];
+          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):provider.id==='cloudflare'?['account.read','projects.build','ledger.read']:['repository.read'];
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';return;}
           try {await client.connect(provider.id,actions,(error,account)=>{
             status.textContent=error?error.message:'Connected '+account.label+'.';if(!error)void load();

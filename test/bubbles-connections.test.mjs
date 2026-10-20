@@ -28,3 +28,10 @@ test('planned providers do not claim a live connection or expose tokens', () => 
   assert.ok(Object.values(PROVIDERS).every(p => p.status === 'not_configured'));
   assert.equal(JSON.stringify(check()).includes('vault:'), false);
 });
+
+test('Cloudflare OAuth is a separate owner-approved provider, never an inferred wallet permission',()=>{
+ const record={...connection,provider:'cloudflare',providerSubject:'cf-subject',grantedActions:['account.read']};
+ assert.equal(authorizeConnection({userId:'alice',provider:'cloudflare',action:'account.read',connection:record,now:1000}).ok,true);
+ assert.equal(authorizeConnection({userId:'alice',provider:'cloudflare',action:'projects.build',connection:record,now:1000}).reason,'consent_required');
+ assert.equal(authorizeConnection({userId:'bob',provider:'cloudflare',action:'account.read',connection:record,now:1000}).reason,'connection_required');
+});
