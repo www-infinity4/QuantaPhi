@@ -188,6 +188,19 @@ export class ConsentService {
     const rows = await this.storage.list({prefix:prefix+'connection:', limit:100});
     return [...rows.values()].filter(r=>r.userId===userId).map(publicConnection);
   }
+  // Persistent connection check after reload: stored records are scoped to
+  // the verified wallet, and expired credentials are refreshed once server-side.
+  // Never return OAuth credentials or trust status cached in a browser.
+  async gateStatus({userId}) {
+    const accounts=await this.list({userId});
+    for(const record of accounts){
+      if(!['github','cloudflare'].includes(record.provider)||
+          record.status!=='connected'||record.expiresAt>this.now()+30000)continue;
+      try { await this.refresh({userId,id:record.id}); }
+      catch { /* A failed refresh remains visibly unverified. */ }
+    }
+    return this.list({userId});
+  }
   async refresh({userId, id}) {
     const prefix = await this.namespace(userId);
     if (typeof id !== 'string' || !/^[A-Za-z0-9_-]{43}$/.test(id)) throw Error('connection_invalid');
