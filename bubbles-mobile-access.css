@@ -1,0 +1,93 @@
+/* Bubbles Android-first approval layout, October 2026.
+   One visible grant button; the browser lives inside the ONE chat scroll.
+   No hidden overflow traps and no duplicate stacked work-ticket interface. */
+html:not(.bubbles-native-overlay),html:not(.bubbles-native-overlay) body.oracle-octaves-page{
+ min-height:100%;height:auto;overflow-x:hidden;overflow-y:auto;
+ -webkit-overflow-scrolling:touch;touch-action:pan-y;
+}
+body.oracle-octaves-page .bubbles-chatgpt-entry{
+ display:flex;flex-direction:column;gap:6px;align-items:stretch;
+ box-sizing:border-box;width:100%;max-width:100%;margin:0 0 12px;
+ padding:12px;background:#f6f0fb;border:1px solid #c6b4de;border-radius:14px;
+}
+body.oracle-octaves-page .bubbles-chatgpt-entry button{
+ display:block;box-sizing:border-box;width:100%;min-height:54px;padding:12px 16px;
+ border:1px solid #4f287d;border-radius:12px;background:#4f287d!important;
+ color:#fff!important;-webkit-text-fill-color:#fff!important;
+ font:800 16px/1.35 system-ui,sans-serif;white-space:normal;
+ touch-action:manipulation;cursor:pointer;
+}
+body.oracle-octaves-page .bubbles-chatgpt-entry p{
+ margin:0;font:500 12px/1.4 system-ui,sans-serif;color:#4e4560;
+}
+body .ba-panel .ba-chatgpt-quick{
+ flex:0 0 auto;display:flex;flex-direction:column;gap:4px;
+ box-sizing:border-box;padding:9px 12px;background:#f5eefc;
+ border-bottom:1px solid #c8b8df;max-width:100%;min-width:0;
+}
+body .ba-panel .ba-chatgpt-quick button.ba-chatgpt-quick-approve{
+ display:block;width:100%;min-height:50px!important;
+ padding:9px 12px!important;border:1px solid #4f287d!important;
+ border-radius:12px!important;background:#4f287d!important;
+ color:#fff!important;-webkit-text-fill-color:#fff!important;
+ font:800 15px/1.3 system-ui,sans-serif!important;
+ white-space:normal!important;touch-action:manipulation!important;
+}
+body .ba-panel .ba-chatgpt-quick button:disabled{opacity:.7!important}
+body .ba-panel .ba-chatgpt-quick-status{
+ margin:0;font:600 12px/1.35 system-ui,sans-serif!important;
+ color:#493265!important;overflow-wrap:anywhere;
+}
+body .ba-panel .ba-thread{
+ flex:1 1 0!important;min-height:0!important;
+ overflow-y:auto!important;overflow-x:hidden!important;
+ touch-action:pan-y!important;overscroll-behavior-y:contain;
+ -webkit-overflow-scrolling:touch;scrollbar-width:thin;
+}
+body .ba-panel .ba-browser-home{
+ display:block;box-sizing:border-box;width:100%;max-width:100%;
+ min-width:0;overflow:visible;touch-action:pan-y;
+}
+body .ba-panel .ba-cloud-browser-scrolling{
+ display:block;box-sizing:border-box;min-width:0;width:100%;
+ max-width:100%;overflow-wrap:anywhere;margin:4px 0 12px;
+}
+body .ba-panel .ba-cloud-browser-scrolling .ba-chatgpt-browser-bridge{
+ box-sizing:border-box;margin:0 0 8px!important;min-width:0;
+ max-width:100%;padding:10px!important;background:#f8f4ff;
+}
+body .ba-panel .ba-cloud-browser-scrolling .ba-chatgpt-browser-bridge button{
+ width:100%;min-height:48px!important;box-sizing:border-box;
+ margin:4px 0!important;white-space:normal;
+}
+body .ba-panel .ba-browser-advanced{
+ display:block;max-width:100%;min-width:0;margin:0;
+ padding:0;border:1px solid #d8cee7;border-radius:10px;
+ background:white;
+}
+body .ba-panel .ba-browser-advanced>summary{
+ display:block;cursor:pointer;min-height:48px!important;
+ padding:11px;border-radius:9px;line-height:1.3;
+}
+body .ba-panel .ba-browser-advanced[open]{padding:0 8px 10px}
+body .ba-panel .ba-browser-advanced :is(input,iframe){max-width:100%;box-sizing:border-box}
+body .ba-panel .ba-browser-advanced iframe{min-height:220px!important;max-height:56dvh!important}
+@media(max-width:620px){
+ body.oracle-octaves-page .bubbles-page{padding:0 10px 70px!important}
+ body.oracle-octaves-page .bubbles-site-nav{margin-bottom:9px}
+ body.oracle-octaves-page .bubbles-art{display:none!important}
+ body.oracle-octaves-page .bubbles-copy{padding:12px!important}
+ body.oracle-octaves-page .bubbles-intro{margin-bottom:12px}
+ body .ba-panel:not([hidden]) .ba-composer{flex:0 1 auto;min-height:0;max-height:46dvh}
+ body .ba-panel .ba-chatgpt-quick{padding:8px 10px}
+}
+html.bubbles-native-overlay .ba-panel .ba-chatgpt-quick{
+ position:relative;flex-shrink:0;padding:7px 10px;
+}
+html.bubbles-native-overlay .ba-panel .ba-thread{
+ min-height:0!important;overflow-y:auto!important;overflow-x:hidden!important;
+ touch-action:pan-y!important;-webkit-overflow-scrolling:touch;
+}
+@media(prefers-reduced-motion:reduce){
+ body .ba-panel .ba-browser-home,body .ba-panel .ba-thread{scroll-behavior:auto}
+}

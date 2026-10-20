@@ -119,11 +119,12 @@ export function mount({host,ownerHeaders}){
    bridgeStatus.textContent=chatgptApproved?
     'ChatGPT bridge approved until '+new Date(result.expiresAt).toLocaleString()+'. Bubbles will handle verified requests while this app is open.':
     'ChatGPT bridge access is off. No queued request can run.';
-  }catch(error){bridgeStatus.textContent='ChatGPT bridge not confirmed: '+String(error.message||error).slice(0,145)}
+   return result;
+  }catch(error){bridgeStatus.textContent='ChatGPT bridge not confirmed: '+String(error.message||error).slice(0,145);throw error}
   finally{approveBridge.disabled=false;revokeBridge.disabled=false}
  }
- approveBridge.addEventListener('click',()=>void bridgePermission('enable'));
- revokeBridge.addEventListener('click',()=>void bridgePermission('revoke'));
+ approveBridge.addEventListener('click',()=>void bridgePermission('enable').catch(()=>{}));
+ revokeBridge.addEventListener('click',()=>void bridgePermission('revoke').catch(()=>{}));
 
  async function permission(action){
   enable.disabled=true;revoke.disabled=true;
@@ -154,6 +155,20 @@ export function mount({host,ownerHeaders}){
  wrap.append(frame);
  const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. Phone website and Desktop website change the actual remote Chrome layout. To see your physical Android screen, Bubbles APK must share a fresh device frame with Android permission; this cloud browser cannot see it yet. Google, Gemini and Claude each control their own authentication. Sessions are temporary; Stop ends the remote browser.');
  note.style.cssText='font-size:12px;line-height:1.5;margin:10px 0 0';wrap.append(note);
+ // The approval is the FIRST visible item. Advanced Chrome controls remain
+ // reachable by expanding one native <details> inside the chat's scroll owner.
+ const advanced=element('details');
+ advanced.className='ba-browser-advanced';
+ advanced.append(element('summary','Cloud Browser controls · open / close'));
+ for(const child of [...wrap.children]){
+  if(child!==bridge)advanced.append(child);
+ }
+ wrap.append(bridge,advanced);
+ wrap.classList.add('ba-cloud-browser-scrolling');
+ wrap.approveChatGPT=()=>bridgePermission('enable');
+ wrap.revokeChatGPT=()=>bridgePermission('revoke');
+ wrap.checkChatGPT=()=>bridgePermission('status');
+ wrap.openBrowserControls=()=>{advanced.open=true;};
  host.append(wrap);panelInstance=wrap;
  let state=null,busy=false;
  async function call(action,extra={}){
@@ -228,7 +243,7 @@ export function mount({host,ownerHeaders}){
  }};
 
  async function pollChatGPT(){
-  if(bridgePolling||!chatgptApproved||document.hidden||wrap.hidden)return;
+  if(bridgePolling||!chatgptApproved||document.hidden)return;
   bridgePolling=true;
   try{
    const data=await bridgeCall('process',state?{sessionId:state.sessionId,proof:state.proof}:{});
