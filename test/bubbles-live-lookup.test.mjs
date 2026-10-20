@@ -15,6 +15,8 @@ const loc={results:[{name:'Albia',admin1:'Iowa',country:'United States',latitude
 const weatherFetch=async url=>Response.json(String(url).includes('geocoding-api.open-meteo.com')?loc:mockForecast);
 test('actual voice request, not persona history, selects the web and weather tools',()=>{
  assert.equal(chooseTool('What is the weather in Albia, Iowa?'),'weather.current');
+ assert.equal(chooseTool("What's it like outside?"),'weather.current');
+ assert.equal(chooseTool('Do I need an umbrella?'),'weather.current');
  assert.equal(chooseTool('Search Google for ruthenium catalysts'),'web.search');
  assert.equal(chooseTool('Look up the latest information about the eclipse'),'web.search');
  assert.equal(chooseTool('Hello Bubbles'),'oracle.chat');
@@ -87,6 +89,8 @@ test('same Android Bubbles conversation bypasses model-only chat for live lookup
  const source=fs.readFileSync('bubbles-ai.js','utf8');
  assert.match(source,/nativeGPTAvailable&&!config.privateContext&&!liveLookup/);
  assert.match(source,/bubbles-weather-town/);
+ assert.match(source,/do i need an umbrella/);
+ assert.match(source,/sourceTool\?/);
  assert.match(source,/ba-search-sources/);
  assert.match(source,/body:JSON.stringify\(lookupPayload\(\)\)/);
 });
