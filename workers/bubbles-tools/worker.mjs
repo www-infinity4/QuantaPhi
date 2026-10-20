@@ -247,9 +247,18 @@ async function execute(request,env,body){
    }catch{return response(request,{ok:true,output:'I could not retrieve current headlines. I have not substituted remembered headlines.',receipt:{...receipt,status:'failed',reason:'news_sources_unavailable'}});}
   }
  }
- if(body.mcp===true&&/\b(?:mcp|use (?:the )?(?:available )?tools?|tools? interface)\b/i.test(question)){
-  const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command));
-  if(found)return response(request,{...found,receipt:{...found.receipt,interface:'MCP',selection:'structured_function_call',repositoryActionsVerified:false}});
+ // Grammar Phi: ordinary language is eligible for bounded semantic tool choice.
+ // The model may choose one read-only registered tool, but never chooses a
+ // repository writer, phone action, permission grant or arbitrary URL.
+ // Deterministic requests above still take the fastest direct route.
+ if(body.mcp===true&&tool==='oracle.chat'){
+  const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command),
+   {location:body.location||body.context?.location||''});
+  if(found&&found.receipt?.tool){
+   return response(request,{...found,receipt:{...found.receipt,
+    interface:'MCP',selection:'semantic_structured_function_call',
+    repositoryActionsVerified:false}});
+  }
  }
  return gptReply(request,env,clean(body.input,32000)||question,receipt,null,question);
 }
