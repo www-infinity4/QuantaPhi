@@ -6,6 +6,7 @@ const base = 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/';
 const service = fs.readFileSync(base+'BubblesService.java','utf8');
 const panel = fs.readFileSync(base+'FloatingOracleWindow.java','utf8');
 const nativeCommands = fs.readFileSync(base+'BubblesPanelCommands.java','utf8');
+const home = fs.readFileSync(base+'MainActivity.java','utf8');
 
 test('short named wake is dispatched before normal speech accumulation and model calls',()=>{
  assert.match(service,/panelAction != BubblesPanelCommands\.Action\.NONE && voicedMillis >= 200L/);
@@ -29,4 +30,12 @@ test('a large top-right X Hide remains outside the website and restores on wake'
  assert.match(panel,/close\.setOnClickListener\(v -> hide\(\)\)/);
  assert.match(panel,/if \(root != null\) \{\s*root\.setVisibility\(View\.VISIBLE\)/);
  assert.match(panel,/header\.addView\(close\);\s*page\.addView\(header\)/);
+});
+
+test('visible Start or resume control can restart a previously muted foreground voice session',()=>{
+ assert.match(home,/connect\.setText\("Start or resume Bubbles voice"\)/);
+ assert.match(home,/recommended, connect, screenPermission/);
+ assert.match(home,/if \(BubblesService\.isSessionRunning\(\)\)\s*intent\.setAction\(BubblesService\.ACTION_RESUME\)/);
+ assert.match(service,/ACTION_RESUME\.equals\(intent\.getAction\(\)\) && connected/);
+ assert.match(service,/private void resumeSession\(\)/);
 });
