@@ -150,7 +150,7 @@ test('Grammar Phi routes three conversational weather phrasings to the same live
    const data=await response.json();
    assert.equal(selections,1);
    assert.equal(data.receipt.tool,'weather.current');
-   assert.equal(data.receipt.selection,'semantic_structured_function_call');
+   assert.equal(data.receipt.selection,'structured_function_call');
    assert.equal(data.receipt.status,'complete');
    assert.match(data.output,/42 degrees Fahrenheit/);
   }
