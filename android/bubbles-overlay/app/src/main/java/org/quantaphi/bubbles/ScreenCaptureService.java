@@ -16,6 +16,8 @@ import java.util.concurrent.Executors;
 /** A separate, visibly foregrounded capture session started after Android consent. */
 public final class ScreenCaptureService extends Service {
     static final String STOP = "org.quantaphi.bubbles.CAPTURE_STOP";
+    static final String PAUSE = "org.quantaphi.bubbles.CAPTURE_PAUSE";
+    static final String RESUME = "org.quantaphi.bubbles.CAPTURE_RESUME";
     private final Handler main = new Handler(Looper.getMainLooper());
     private MediaProjection projection;
     private VirtualDisplay display;
@@ -24,7 +26,7 @@ public final class ScreenCaptureService extends Service {
     private File file;
     private VoiceRecording sharedAudio;
     private File capturedAudio;
-    private boolean finished, recordingStarted;
+    private boolean finished, recordingStarted, recordingPaused;
     private int pendingPublications = 0;
     private final ExecutorService mediaExport = Executors.newSingleThreadExecutor();
     private File sequenceDirectory;
@@ -33,6 +35,31 @@ public final class ScreenCaptureService extends Service {
 
     @Override public int onStartCommand(Intent intent, int flags, int id) {
         if (intent == null || STOP.equals(intent.getAction())) { finishCapture(); return START_NOT_STICKY; }
+        if (PAUSE.equals(intent.getAction()) || RESUME.equals(intent.getAction())) {
+            boolean pause = PAUSE.equals(intent.getAction());
+            if (finished || recorder == null || !recordingStarted) {
+                BrainNotes.prefs(this).edit().putString("capture_state",
+                    "No screen video recording to " + (pause ? "pause" : "resume")).apply();
+                return START_NOT_STICKY;
+            }
+            if (pause == recordingPaused) return START_NOT_STICKY;
+            try {
+                if (pause) {
+                    recorder.pause();
+                    BubblesService.setScreenAudioPaused(true);
+                } else {
+                    recorder.resume();
+                    BubblesService.setScreenAudioPaused(false);
+                }
+                recordingPaused = pause;
+                BrainNotes.prefs(this).edit().putBoolean("capture_paused", pause)
+                    .putString("capture_state", pause ? "Screen recording paused" : "Screen recording resumed").apply();
+            } catch (RuntimeException error) {
+                BrainNotes.prefs(this).edit().putString("capture_state",
+                    "Could not " + (pause ? "pause" : "resume") + " screen video").apply();
+            }
+            return START_NOT_STICKY;
+        }
         if (projection != null || finished) return START_NOT_STICKY;
         // Own the screen/video path here. No third-party recorder or overlay
         // controls, and no second microphone AudioRecord: share Bubbles PCM.
@@ -59,7 +86,7 @@ public final class ScreenCaptureService extends Service {
             if (consent == null || intent.getIntExtra("result", 0) != Activity.RESULT_OK) throw new IllegalStateException("Screen sharing was not approved");
             projection = ((MediaProjectionManager) getSystemService(MEDIA_PROJECTION_SERVICE))
                     .getMediaProjection(Activity.RESULT_OK, consent);
-            BrainNotes.prefs(this).edit().putBoolean("capture_active", true).putBoolean("capture_recording", false)
+            BrainNotes.prefs(this).edit().putBoolean("capture_active", true).putBoolean("capture_recording", false).putBoolean("capture_paused", false)
                     .putString("capture_state", "Screen capture authorized; starting").apply();
             projection.registerCallback(new MediaProjection.Callback() {
                 @Override public void onStop() { finishCapture(); }
@@ -210,7 +237,8 @@ public final class ScreenCaptureService extends Service {
     private void finishCapture() {
         if (finished) return;
         finished = true;
-        BrainNotes.prefs(this).edit().putBoolean("capture_active", false).putBoolean("capture_recording", false).apply();
+        BubblesService.setScreenAudioPaused(false);
+        BrainNotes.prefs(this).edit().putBoolean("capture_active", false).putBoolean("capture_recording", false).putBoolean("capture_paused", false).apply();
         main.removeCallbacksAndMessages(null);
         if (sequenceDirectory != null) {
             BrainNotes.prefs(this).edit().putString("capture_state", "Screen series finished: "
@@ -226,7 +254,10 @@ public final class ScreenCaptureService extends Service {
         if (recorder != null) {
             boolean valid = false;
             if (recordingStarted) {
-                try { recorder.stop(); valid = true; } catch (Exception ignored) {}
+                try {
+                    if (recordingPaused) { recorder.resume(); recordingPaused = false; }
+                    recorder.stop(); valid = true;
+                } catch (Exception ignored) {}
             }
             recorder.release(); recorder = null;
             if (valid) savePath("video/mp4");
