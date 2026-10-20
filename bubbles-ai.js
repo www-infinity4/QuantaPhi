@@ -1436,8 +1436,13 @@ cloudToggle.addEventListener('change',async()=>{
  }catch(error){cloudChat=false;cloudToggle.checked=false;save(CLOUD_MEMORY_KEY,false);
   memoryHint.textContent='Sync not connected: '+String(error.message||error)}
 });
-clearChat.textContent='Start new chat';
-clearChat.addEventListener('click',()=>void startConversation());
+clearChat.textContent=embedded?'Clear this view':'Start new chat';
+clearChat.addEventListener('click',()=>{
+ if(embedded){messages=[];conversation.replaceChildren();greeted=false;
+  try{localStorage.removeItem(HISTORY)}catch{}
+  status.textContent='View cleared. Your notes and owner archive remain saved.';
+ }else void startConversation();
+});
 cloudDelete.addEventListener('click',async()=>{
  if(!cloudChat||!confirm('Erase the extra Bubbles transcript stored under your verified wallet? This will not erase the separate Robot Brain job records.'))return;
  try{await longMemory.clear({cloudToo:true});cloudChat=false;cloudToggle.checked=false;cloudDelete.hidden=true;
