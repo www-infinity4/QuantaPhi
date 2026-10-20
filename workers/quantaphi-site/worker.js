@@ -425,7 +425,8 @@ export default {
   if (raw && upstream.ok && RAW_TYPES[extension]) out.set('Content-Type', RAW_TYPES[extension]);
   if (raw) { out.delete('Content-Security-Policy'); out.delete('Content-Disposition'); }
   // Upstream GitHub headers prohibit even our own embedded suite pages.
-  const registeredChatCard = (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html'].includes(route.sourcePath))
+  const registeredChatCard = (incoming.pathname === '/' && route.repo === 'QuantaPhi')
+   || (route.repo === 'QuantaPhi' && ['/bubbles-card-host.html','/resonance.html','/storybook/index.html'].includes(route.sourcePath))
    || (['Oracle-Octaves','C13b0','Omni-Phi','News-Phi','Mckee-Coins-Inc','Omni-TV','Builder-Reserve'].includes(route.repo) && route.sourcePath === '/index.html');
   if ((registeredChatCard || ['Bitcoin-Crusher','ShopLC','Alien-Radio'].includes(route.repo)) && /text\/html/i.test(out.get('Content-Type') || '')) out.set('X-Frame-Options', 'SAMEORIGIN');
   if (textual || !upstream.ok) out.set('Cache-Control', 'no-cache, max-age=0, must-revalidate');
