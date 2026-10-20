@@ -10,6 +10,20 @@ function ticket(summary=blocker,status='blocked'){
   {id:'TASK-1',repository:'www-infinity4/QuantaPhi',status:'blocked',instructions:'Implement enrollment UI',progress:{summary}}
  ]}};
 }
+test('approval cards require a concrete scoped job, not just a UI-sounding flag',()=>{
+ const empty=ticket();delete empty.context.color_jobs[0].instructions;
+ assert.equal(ownerApprovalRequests([empty]).length,0);
+ const vague=ticket('owner_input_required: ui');
+ assert.equal(ownerApprovalRequests([vague]).length,0);
+ const unsourced=ticket();delete unsourced.context.kind;
+ assert.equal(ownerApprovalRequests([unsourced]).length,0);
+ const missingRepo=ticket();delete missingRepo.context.color_jobs[0].repository;
+ assert.equal(ownerApprovalRequests([missingRepo]).length,0);
+ const real=ownerApprovalRequests([ticket()]);
+ assert.equal(real[0].title,'Add enrollment UI');
+ assert.equal(real[0].task,'Implement enrollment UI');
+});
+
 test('only authenticated ticket-shaped, blocked UI requests get an approval button',()=>{
  assert.deepEqual(ownerApprovalRequests([ticket()]).map(x=>x.jobId),['TASK-1']);
  assert.equal(ownerApprovalRequests([ticket('Invalid redirect value: runner unavailable')]).length,0);
@@ -77,6 +91,9 @@ test('UI calls the separately owner-authorized approval endpoint from the chat, 
  assert.match(chat,/BRAIN\+'\/work\/tickets\/approve'/);
  assert.match(chat,/showOwnerApprovalRequests\(result.tickets\)/);
  assert.match(chat,/Explain this choice/);
+ assert.match(chat,/ba-owner-approval-title',item.title/);
+ assert.match(chat,/ba-owner-approval-copy',item.task/);
+ assert.doesNotMatch(chat,/Review interface changes/);
  assert.match(source,/if\(\['\/work\/tickets\/create'.*'\/work\/tickets\/approve'/);
  assert.match(source,/if\(!await ownerAuthorized\(env,token\)\)/);
 });

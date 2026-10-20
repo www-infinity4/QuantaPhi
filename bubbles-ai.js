@@ -921,7 +921,7 @@ if(!embedded){
  chatScroll.prepend(browserHome);
  panel.insertBefore(quick,chatScroll);
  const loadBrowser=async()=>{
-  const module=await import('/bubbles-cloud-browser.mjs?v=20261020-semantic3');
+  const module=await import('/bubbles-cloud-browser.mjs?v=20261020-provider1');
   return module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders});
  };
  const grantBridge=async()=>{
@@ -1876,10 +1876,10 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Explicit spoken/typed browser commands use the actual owner-gated Cloudflare
  // Browser Run service. A chat model's narration is never a browser receipt.
  if(!embedded&&(/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b|\bbrowser run\b/i.test(spoken)
-  ||/^(?:(?:hey|okay|please|bubbles)[,\s]+)*(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(spoken))){
+  ||/^(?:(?:hey|okay|please|bubbles)[,\s]+)*(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|chat\s?gpt|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(spoken))){
   let intent=null;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-semantic3');
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-provider1');
    intent=module.browserSpeechIntent(spoken);
    if(intent){
     busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
@@ -2494,15 +2494,15 @@ function showOwnerApprovalRequests(tickets){
   const card=create('section','ba-owner-approval');
   card.setAttribute('aria-label','Owner approval needed');
   card.append(create('strong','','Owner decision requested'));
-  card.append(create('p','ba-owner-approval-title','Review interface changes'));
-  card.append(create('p','ba-owner-approval-copy','Approve the interface update using the existing QuantaPhi style. The bots will handle the implementation.'));
-  card.append(create('p','ba-owner-approval-choice','Use readable buttons, clear wording and the existing settings layout. Keep current permissions and verify the result.'));
+  card.append(create('p','ba-owner-approval-title',item.title));
+  card.append(create('p','ba-owner-approval-copy',item.task));
+  card.append(create('p','ba-owner-approval-choice',item.reason));
   const details=create('details','ba-owner-approval-details');
-  details.append(create('summary','','Why did the runner stop?'));
-  details.append(create('p','',item.reason));
+  details.append(create('summary','','Job details'));
+  details.append(create('p','',item.repository));
   card.append(details);
   const actions=create('div','ba-owner-approval-actions');
-  const approve=create('button','ba-owner-approve','Approve interface update');
+  const approve=create('button','ba-owner-approve','Approve this job');
   approve.type='button';
   const review=create('button','ba-owner-review','Explain this choice');
   review.type='button';
@@ -2534,7 +2534,7 @@ function showOwnerApprovalRequests(tickets){
    }
   });
   review.addEventListener('click',()=>{
-   const prompt='Explain in plain language whether this is genuinely an owner-only UI choice. State what I would approve, identify any technical error the bots should fix themselves, and do not submit or approve anything. Runner report: '+item.reason.slice(0,850);
+   const prompt='Explain in plain language whether this is genuinely an owner-only UI choice. State what I would approve for '+item.title+', identify any technical error the bots should fix themselves, and do not submit or approve anything. Job: '+item.task.slice(0,350)+'; runner report: '+item.reason.slice(0,850);
    void sendMessage(prompt,false);
   });
   conversation.append(line);ownerApprovalCards.set(key,line);

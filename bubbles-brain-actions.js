@@ -264,14 +264,21 @@ function describeTickets(tickets,limit=10){
 function ownerApprovalRequests(tickets){
  const found=[];
  for(const ticket of Array.isArray(tickets)?tickets:[]){
-  if(!ticket||!['blocked','ready','working'].includes(ticket.status))continue;
+  if(!ticket||!['blocked','ready','working'].includes(ticket.status)||
+     ticket.context?.kind!=='robot-directions')continue;
   for(const job of Array.isArray(ticket.context?.color_jobs)?ticket.context.color_jobs:[]){
-   const reason=String(job?.progress?.summary||'');
+   const reason=String(job?.progress?.summary||'').trim();
+   const task=String(job?.instructions||'').trim();
+   const title=String(ticket.title||'').trim();
+   // A vague runner flag is not an owner decision. Require an actual job.
    if(job?.status!=='blocked'||!/^IW-\d{8}-[0-9A-F-]{8}$/.test(String(ticket.id||''))||
-      !/^TASK-\d+$/.test(String(job.id||''))||!/owner_input_required/i.test(reason)||
+      !/^TASK-\d+$/.test(String(job.id||''))||!/^www-infinity4\/[\w.-]+$/.test(String(job.repository||''))||
+      title.length<8||task.length<12||reason.length<55||
+      !/owner_input_required/i.test(reason)||
       !/\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(reason)||
       /\b(?:password|credential|secret|wallet|payment|security permission|authorization bypass)\b/i.test(reason))continue;
-   found.push({ticketId:ticket.id,jobId:job.id,title:String(ticket.title||'Owner work request').slice(0,120),reason:reason.slice(0,1500)});
+   found.push({ticketId:ticket.id,jobId:job.id,title:title.slice(0,120),
+     task:task.slice(0,320),repository:job.repository,reason:reason.slice(0,1500)});
   }
  }
  return found.slice(0,10);

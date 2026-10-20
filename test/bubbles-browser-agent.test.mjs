@@ -103,6 +103,6 @@ test('Browser automation never bypasses owner authentication or opens wallet and
 });
 test('website and Android chats dispatch named browser commands before model-only advice',()=>{
  const chat=fs.readFileSync('bubbles-ai.js','utf8');
- assert.match(chat,/\(\?:cloudflare\|gemini\|claude\|starquest\|bubbles/);
+ assert.match(chat,/\(\?:cloudflare\|chat\\s\?gpt\|gemini\|claude\|starquest\|bubbles/);
  assert.match(chat,/browserConversation\(spoken/);
 });
