@@ -935,7 +935,7 @@ if(!embedded){
 if(!embedded){
  const quick=create('section','ba-chatgpt-quick');
  quick.setAttribute('aria-label','ChatGPT Cloud Browser access');
- const quickButton=create('button','ba-chatgpt-quick-approve','Allow ChatGPT to use Bubbles · 5 days');
+ const quickButton=create('button','ba-chatgpt-quick-approve',nativeOverlay?'Allow ChatGPT · 5 days':'Allow ChatGPT to use Bubbles · 5 days');
  quickButton.type='button';
  const quickState=create('p','ba-chatgpt-quick-status','Approval status will be verified with Cloudflare.');
  quickState.setAttribute('role','status');quickState.setAttribute('aria-live','polite');
@@ -1006,6 +1006,10 @@ body .ba-panel .ba-connector-code{background:#e8f1fc!important;border:2px solid 
 body .ba-panel .ba-actions{gap:6px!important}
 body .ba-panel .ba-actions button{font-size:14px!important;padding:7px 5px!important}
 body .ba-panel .ba-close{font-size:24px!important}
+html.bubbles-native-overlay .ba-panel .ba-chatgpt-quick{gap:2px!important;padding:4px 8px!important}
+html.bubbles-native-overlay .ba-panel .ba-chatgpt-quick .ba-chatgpt-quick-approve{font-size:14px!important;line-height:1.2!important;min-height:44px!important;padding:5px 9px!important}
+html.bubbles-native-overlay .ba-panel .ba-chatgpt-quick-status{font-size:12px!important;line-height:1.2!important;max-height:1.3em!important;overflow:hidden!important;text-overflow:ellipsis;white-space:nowrap}
+
 body .ba-panel :is(input,textarea){font-size:16px!important;color:#17212b!important;-webkit-text-fill-color:#17212b!important}
 body .ba-panel :is(button,summary):focus-visible{outline:3px solid #005fcc!important;outline-offset:2px!important}
 
