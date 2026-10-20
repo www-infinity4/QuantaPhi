@@ -46,7 +46,7 @@ test('both Android Chrome icon sizes exist as genuine PNGs and decompress', () =
 });
 
 test('offline shell caches only public resources, never auth or chat responses', () => {
- assert.match(sw,/CACHE = 'bubbles-public-shell-v1'/);
+ assert.match(sw,/CACHE = 'bubbles-public-shell-v2'/);
  assert.match(sw,/url\.pathname !== '\/bubbles-chrome\.html'/);
  assert.match(sw,/req\.mode !== 'navigate'/);
  assert.doesNotMatch(sw,/caches\.put\(req|Authorization|localStorage|sessionStorage/);
