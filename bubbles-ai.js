@@ -1002,6 +1002,10 @@ if(brainInbox){
  brainNoticeText.setAttribute('role','status');
  row.append(brainNoticePrevious,brainNoticeText,brainNoticeNext);
  brainInbox.append(head,row);
+ const receiptLink=create('a','ba-tool-link','View work receipts');
+ receiptLink.href='https://quantaphi.org/#robotDirections';
+ receiptLink.rel='noopener noreferrer';
+ brainInbox.append(receiptLink);
  tools.append(brainInbox);
  brainNoticePrevious.addEventListener('click',()=>{brainNoticeIndex=Math.min(brainNotices.length-1,brainNoticeIndex+1);renderBrainInbox()});
  brainNoticeNext.addEventListener('click',()=>{brainNoticeIndex=Math.max(0,brainNoticeIndex-1);renderBrainInbox()});
