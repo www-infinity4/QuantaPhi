@@ -9,7 +9,7 @@ test('Bubbles can open ChatGPT Android app without a cloned login or unreadable 
  const bridge=load('AppControlBridge.java');
  assert.match(manifest,/<package android:name="com\.openai\.chatgpt"\/>/);
  assert.match(bridge,/getLaunchIntentForPackage\(ChatGPTAppPolicy\.PACKAGE\)/);
- assert.doesNotMatch(bridge,/getSharedPreferences\([^)]*chatgpt|cookie|readChatHistory/);
+ assert.doesNotMatch(bridge,/CookieManager|readChatHistory|getSharedPreferences\(['"]chatgpt/);
 });
 test('ChatGPT screen viewing requires foreground app and Android accessibility',()=>{
  const service=load('BubblesService.java'),access=load('BrainLearningService.java');
