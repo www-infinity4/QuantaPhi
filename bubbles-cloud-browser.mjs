@@ -8,6 +8,10 @@ export function browserSpeechIntent(input){
  const utterance=String(input||'').trim().replace(/^(?:hey |okay |please |bubbles[, ]+)+/i,'');
  if(!/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b/i.test(utterance))return null;
  const url=utterance.match(/https:\/\/[^\s"'<>]+/i)?.[0]||'';
+ // A request to connect the cloud browser starts the existing owner-scoped Chrome session.
+ // This does not grant any additional Robot Brain, GitHub, or ChatGPT permissions.
+ if(/\b(?:plug\s*(?:in|into)?|connect|start|activate|enable)\b/i.test(utterance))
+  return {action:'navigate',url:url||destinations.bubbles};
  if(/\b(?:open|go to|visit|navigate|launch|load)\b/i.test(utterance)){
   const name=Object.keys(destinations).find(k=>new RegExp('\\b'+k+'\\b','i').test(utterance));
   const target=url||destinations[name]||'';
