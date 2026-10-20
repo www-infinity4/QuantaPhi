@@ -1892,7 +1892,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }
  // Explicit spoken/typed browser commands use the actual owner-gated Cloudflare
  // Browser Run service. A chat model's narration is never a browser receipt.
- if(!embedded&&(/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b|\bbrowser run\b/i.test(spoken)\n  ||/^(?:(?:hey|okay|please|bubbles)[,\\s]+)*(?:open|launch|go to|visit)\\s+(?:(?:the|my)\\s+)?(?:cloudflare|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\\s+(?:website|page|app))?[.!?]*$/i.test(spoken))){
+ if(!embedded&&(/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b|\bbrowser run\b/i.test(spoken)
+  ||/^(?:(?:hey|okay|please|bubbles)[,\s]+)*(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(spoken))){
   let intent=null;
   try{
    const module=await import('/bubbles-cloud-browser.mjs?v=20261020-android-scroll1');
