@@ -113,15 +113,19 @@ export async function selectMcpTool(env,question,invoke,context={}){
  try{args=validateCall(name,parsed)}catch{return null}
  if(name==='web_search'&&!args.query)return null;
  if(name==='weather_current'){
-  // A city named by the model is not evidence that the user lives there.
-  // Accept only a place supplied in this request or the explicitly supplied
-  // Bubbles conversation context; otherwise ask rather than invent location.
+  // A model-selected city is not evidence of the user's location.
   const place=args.location.trim().toLowerCase();
   const contextPlace=clean(typeof context.location==='string'?context.location:context.location?.city,150).toLowerCase();
-  const query=question.toLowerCase();
   const city=place.split(',')[0].trim();
-  if(!place||!city||(contextPlace!==place&&!contextPlace.startsWith(city+',')&&
-     !(city.length>=3&&new RegExp('\\\\b'+city.replace(/[.*+?^$\{\}()|[\]\\\\]/g,'\\\\ if((name==='web_search'&&!args.query)||(name==='weather_current'&&!args.location))return null;
+  const words=question.toLowerCase().split(/[^a-z]+/).filter(Boolean);
+  const cityWords=city.split(/[^a-z]+/).filter(Boolean);
+  const mentioned=cityWords.length>0&&cityWords.every(word=>word.length>=3&&words.includes(word));
+  const contextual=contextPlace===place||(city.length>=3&&contextPlace.startsWith(city+','));
+  if(!place||!city||( !mentioned&&!contextual)){
+   return {ok:true,output:'Which town and state should I use for your weather?',
+    receipt:{tool:'weather.current',status:'needs_input',provider:'Open-Meteo',repositoryActionsVerified:false}};
+  }
+ }
  try{return await invoke(args)}catch{return null}')+'\\\\b','i').test(query)))){
    return {ok:true,output:'Which town and state should I use for your weather?',receipt:{
     tool:'weather.current',status:'needs_input',provider:'Open-Meteo',repositoryActionsVerified:false}};
