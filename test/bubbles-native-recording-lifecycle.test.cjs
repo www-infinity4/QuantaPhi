@@ -12,8 +12,9 @@ test('screen recording has no implicit five-minute end or 100 MB media cutoff', 
   assert.doesNotMatch(service, /recorder\.setMaxFileSize\s*\(/);
   assert.doesNotMatch(service, /postDelayed\(this::finishCapture,\s*300000\)/);
   assert.match(service, /main\.postDelayed\(storageGuard,\s*15000L\)/);
-  assert.match(service, /getUsableSpace\(\)\s*<\s*MIN_CAPTURE_FREE_BYTES/);
-  assert.match(service, /stopReason\("Recording stopped to protect phone storage\."/);
+  assert.match(service, /getUsableSpace\(\)\s*<\s*exportReserve/);
+  assert.match(service, /MIN_CAPTURE_FREE_BYTES \+ 2L \* \(file == null/);
+  assert.match(service, /stopReason\("Recording stopped to preserve space for saving the video\."/);
   assert.match(service, /@Override public void onStop\(\)\s*\{/);
   assert.match(service, /Android ended screen sharing/);
 });
