@@ -353,6 +353,7 @@ async function checkSharedVoiceStatus(){
 function saveThread(){
  if(!keepChat)return false;
  const saved=save(THREAD_PREFIX+activeThread,messages.slice(-160));
+ if(embedded)save(HISTORY,messages.slice(-400));
  if(!saved)return false;
  const row=threadIndex.find(t=>t.id===activeThread);
  const first=messages.find(m=>m.role==='user')?.text?.trim().replace(/\s+/g,' ').slice(0,65);
