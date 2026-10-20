@@ -1649,6 +1649,29 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=resultText;else if(config.voice&&!nativeOverlay)speakText(resultText);
   nativeSpeechPending=false;busy=false;send.disabled=false;return;
  }
+
+ // Explicit spoken/typed browser commands use the actual owner-gated Cloudflare
+ // Browser Run service. A chat model's narration is never a browser receipt.
+ if(!embedded&&/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b/i.test(spoken)){
+  let intent=null;
+  try{
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-agent1');
+   intent=module.browserSpeechIntent(spoken);
+   if(intent){
+    busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+    status.textContent='Bubbles is using the authenticated cloud browser…';
+    let reply;
+    try{reply=await module.browserConversation(spoken,{host:panel,ownerHeaders:verifiedOwnerHeaders});}
+    catch(error){reply='Cloud browser operation was not verified: '+String(error?.message||error).slice(0,160);}
+    display(reply,'ai');
+    messages.push({role:'user',text:spoken},{role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+    status.textContent=reply.slice(0,250);
+    if(nativeOverlay&&fromVoice)nativeSpeechReply=reply;else if(fromVoice&&config.voice&&!nativeOverlay)speakText(reply);
+    nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();
+    return;
+   }
+  }catch(error){status.textContent='Cloud browser connection unavailable: '+String(error?.message||error).slice(0,130);}
+ }
  const noteResult=noteCommand(spoken);
  if(noteResult){
   messages.push({role:'user',text:spoken},{role:'assistant',text:noteResult});persistChat();
