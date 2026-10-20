@@ -108,7 +108,7 @@ export function mount({host,ownerHeaders}){
  frame.setAttribute('allow','clipboard-read; clipboard-write; fullscreen');
  frame.style.cssText='display:none;width:100%;height:min(68vh,520px);min-height:320px;border-radius:10px;border:1px solid #c5badd';
  wrap.append(frame);
- const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. Phone website and Desktop website change the actual remote Chrome layout. To see your physical Android screen, Bubbles APK must share a fresh device frame with Android's permission; this cloud browser cannot see it yet. Google, Gemini and Claude each control their own authentication. Sessions are temporary; Stop ends the remote browser.');
+ const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. Phone website and Desktop website change the actual remote Chrome layout. To see your physical Android screen, Bubbles APK must share a fresh device frame with Android permission; this cloud browser cannot see it yet. Google, Gemini and Claude each control their own authentication. Sessions are temporary; Stop ends the remote browser.');
  note.style.cssText='font-size:12px;line-height:1.5;margin:10px 0 0';wrap.append(note);
  host.append(wrap);panelInstance=wrap;
  let state=null,busy=false;
