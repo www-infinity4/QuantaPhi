@@ -5,6 +5,8 @@ on:
       - 'test-ground-ai/**'
       - 'apps/**'
       - 'bubbles-card-catalog.mjs'
+      - 'workers/bubbles-tools/worker.mjs'
+      - 'test/bubbles-github-public-read.test.mjs'
       - 'test/mini-card-apps.test.mjs'
       - 'test/test-ground-ai.test.mjs'
       - 'scripts/test-ground-live.mjs'
@@ -15,6 +17,8 @@ on:
       - 'test-ground-ai/**'
       - 'apps/**'
       - 'bubbles-card-catalog.mjs'
+      - 'workers/bubbles-tools/worker.mjs'
+      - 'test/bubbles-github-public-read.test.mjs'
       - 'test/mini-card-apps.test.mjs'
       - 'test/test-ground-ai.test.mjs'
       - 'scripts/test-ground-live.mjs'
@@ -41,7 +45,7 @@ jobs:
           node --check apps/config.js
           node --check apps/launch.js
       - name: Verify all manifests, compact cards, Android layout and chat receipts
-        run: node --test test/mini-card-apps.test.mjs test/test-ground-ai.test.mjs test/bubbles-card-workspace.test.mjs
+        run: node --test test/mini-card-apps.test.mjs test/test-ground-ai.test.mjs test/bubbles-github-public-read.test.mjs test/bubbles-tools.test.mjs test/bubbles-card-workspace.test.mjs
   live-bubbles-chat:
     needs: source-and-mini-apps
     runs-on: ubuntu-latest
