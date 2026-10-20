@@ -209,7 +209,18 @@ async function execute(request,env,body){
   }
  }
  if(tool==='weather.current'){
-  const result=await currentWeather(question,body.location||body.context?.location);
+  const givenLocation=body.location||body.context?.location;
+  const result=await currentWeather(question,givenLocation);
+  // A named town may appear before the word "forecast". When the shallow
+  // extractor misses it, Grammar Phi may recover only an explicitly supplied
+  // place via its grounded, read-only structured tool selector.
+  if(result.needsLocation&&body.mcp===true&&env.AI){
+   const semantic=await selectMcpTool(env,question,
+    command=>runMcpRead(request,env,command),{location:givenLocation||''});
+   if(semantic?.receipt?.tool==='weather.current'&&semantic.receipt.status==='complete')
+    return response(request,{...semantic,receipt:{...semantic.receipt,
+     interpretation:'semantic_read_only',selection:'structured_function_call'}});
+  }
   return response(request,{...result,ok:true,receipt:{...receipt,status:result.ok?'complete':result.needsLocation?'needs_input':'failed',provider:result.provider||'Open-Meteo',observedAt:result.observedAt||null}});
  }
  if(tool==='web.search'){
