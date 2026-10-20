@@ -327,14 +327,16 @@ export default {
    return Response.redirect(new URL('/quant-ai/' + incoming.search, CANONICAL_ORIGIN).toString(), 308);
   }
   if (incoming.pathname.startsWith('/quant-ai/')) {
-   if (!env.QUANT_AI) return Response.json(
+   // QUANTAI was deployed before QUANT_AI; accept either private binding.
+   const quantService = env.QUANT_AI || env.QUANTAI;
+   if (!quantService || typeof quantService.fetch !== 'function') return Response.json(
     { ok: false, error: 'quant_ai_service_not_configured' },
     { status: 503, headers: { 'Cache-Control': 'no-store', 'x-quantaphi-edge': EDGE_VERSION } }
    );
    const upstreamUrl=new URL(request.url);
    upstreamUrl.pathname=incoming.pathname.slice('/quant-ai'.length);
    const forwarded=new Request(upstreamUrl.toString(),request);
-   const response=await env.QUANT_AI.fetch(forwarded);
+   const response=await quantService.fetch(forwarded);
    const headers=new Headers(response.headers);
    headers.set('Cache-Control','no-store');
    headers.set('x-quantaphi-edge',EDGE_VERSION);
