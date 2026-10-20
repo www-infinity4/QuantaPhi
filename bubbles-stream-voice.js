@@ -43,14 +43,14 @@ export function createSpeechSegments({sampleRate,onClip}) {
    if(suppressed){reset();return 0}
    const copy=new Float32Array(input),seconds=copy.length/sampleRate;
    let sum=0;for(const value of copy)sum+=value*value;
-   const level=Math.sqrt(sum/Math.max(1,copy.length)),speech=level>.015;
+   const level=Math.sqrt(sum/Math.max(1,copy.length)),speech=level>.011;
    if(!chunks.length){
-    lead.push(copy);while(lead.length>Math.ceil(.3/seconds))lead.shift();
+    lead.push(copy);while(lead.length>Math.ceil(.45/seconds))lead.shift();
     if(!speech)return level;
     chunks=lead;lead=[];duration=chunks.reduce((n,c)=>n+c.length/sampleRate,0);
    }else{chunks.push(copy);duration+=seconds}
    if(speech){voiced+=seconds;quiet=0}else quiet+=seconds;
-   if(quiet>=1.35)flush(false);
+   if(quiet>=1.8)flush(false);
    else if(duration>=12)flush(true);
    return level;
   }
@@ -65,7 +65,7 @@ export async function startContinuousVoice({stream,onLevel,onTranscript,onStatus
  let stopped=false,inFlight=false,pending=[],controller=null,generation=0,transcriptParts=[];
  const submit=async ({chunks,continues,epoch})=>{
   if(stopped||epoch!==generation)return;
-  if(inFlight){if(pending.length<8)pending.push({chunks,continues,epoch});else onStatus('Speech queue full; briefly pause and repeat the last thought.');return}
+  if(inFlight){if(pending.length<16)pending.push({chunks,continues,epoch});else onStatus('Speech backlog full; the latest clip could not be transcribed. Please repeat it.');return}
   inFlight=true;const current=generation;controller=new AbortController();
   const timer=setTimeout(()=>controller?.abort(),20000);
   try{
