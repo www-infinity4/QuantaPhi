@@ -1295,14 +1295,22 @@ async function conversationApi(mode,sessionId='',extra={}){
 }
 async function syncCloudFolder(id,items){
  if(!ownerReady||!keepChat||embedded||id==='legacy-history')return false;
- const clean=items.filter(m=>m&&['user','assistant'].includes(m.role)&&m.text).slice(-10)
+ // When the APK is first paired, backfill the entire retained thread, not
+ // just its last three turns. The server accepts ten messages per request.
+ const clean=items.filter(m=>m&&['user','assistant'].includes(m.role)&&m.text).slice(-160)
   .map(m=>({id:m.id,role:m.role,text:String(m.text).slice(0,6000),at:m.at}));
  if(!clean.length)return true;
- try{await conversationApi('sessions-save',id,{messages:clean});return true;}
- catch{return false;}
+ try{
+  for(let i=0;i<clean.length;i+=10)
+   await conversationApi('sessions-save',id,{messages:clean.slice(i,i+10)});
+  return true;
+ }catch{
+  chatsMessage.textContent='Some messages have not reached shared history. This device still has its copy.';
+  return false;
+ }
 }
 async function refreshConversationFolders(){
- if(!ownerReady){chatsMessage.textContent='Chats saved on this device. Connect your owner account for cloud history.';renderConversationFolders();return;}
+ if(!ownerReady){chatsMessage.textContent='Chats saved on this device. Connect your owner account for cloud history.';renderConversationFolders();return false;}
  try{
   const data=await conversationApi('sessions-list');
   if(!Array.isArray(data.sessions))throw Error('cloud_folders_not_deployed');
@@ -1313,8 +1321,9 @@ async function refreshConversationFolders(){
    else if(existing.title==='New conversation'&&item.title)existing.title=item.title;
   }
   save(THREAD_INDEX,threadIndex);chatsMessage.textContent='Your older conversations are ready to reopen.';
+  renderConversationFolders();return true;
  }catch{chatsMessage.textContent='Cloud chat history could not be reached. Your device history is still available.'}
- renderConversationFolders();
+ renderConversationFolders();return false;
 }
 async function openConversation(id){
  if(busy){chatsMessage.textContent='Finish the current reply before changing conversations.';return;}
@@ -2446,9 +2455,18 @@ async function connectOwner(){
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
- if(nativeOverlay){linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing saved · history syncs automatically.';}
+ if(nativeOverlay){linkBubbles.textContent='Owner verified';linkStatus.textContent='Checking shared chat history…';}
  // Pairing is handled in the same chat composer.
  persistChat();void sharedMemory();
+ // A valid Brain bearer token is not evidence that the folder service synced.
+ // Verify both backfill and retrieval before reporting cross-device parity.
+ void (async()=>{
+  const uploaded=await syncCloudFolder(activeThread,messages);
+  const retrieved=await refreshConversationFolders();
+  if(nativeOverlay)linkStatus.textContent=uploaded&&retrieved
+   ?'Owner verified · chat history synchronized.'
+   :'Owner verified · chat history still needs synchronization.';
+ })();
  if(nativeOverlay){voiceLeaseWanted=true;void sharedVoice(true);}
  else void checkSharedVoiceStatus();
  workStatus.textContent='Robot Brain connected. Say “Bubbles, fix the video generator” or “Report the top ten bot jobs.”';
