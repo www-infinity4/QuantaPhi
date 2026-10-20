@@ -85,7 +85,7 @@ public final class BubblesService extends Service {
         if (service == null || !service.connected || service.muted || !service.captureRunning)
             throw new IllegalStateException("Bubbles voice must be listening before recording");
         service.screenAudioPaused = false;
-        service.screenAudio.start(new java.io.File(service.getFilesDir(), "captures"));
+        service.screenAudio.start(new java.io.File(service.getFilesDir(), "captures"), false);
         // Capture holds this session even if the voice service is destroyed/restarted.
         return service.screenAudio;
     }
@@ -648,10 +648,11 @@ public final class BubblesService extends Service {
                         if (count <= 0) throw new IllegalStateException("Microphone read failed: " + count);
                         try { if (!screenAudioPaused) screenAudio.append(samples, count); }
                         catch (Exception error) {
-                            // A recording is no longer complete if shared audio fails.
-                            // Report why Android stopped rather than saying "blocked".
+                            // Send at most ONE stop request: the audio loop runs every 100 ms.
+                            // Flooding Android's main queue while the MP4 finalizes can freeze Bubbles.
+                            screenAudioPaused = true;
                             BrainNotes.prefs(this).edit().putString("capture_stop_reason",
-                                "Shared microphone sound failed; the recording was stopped to save available video.").apply();
+                                "Shared microphone sound failed; saving available screen video.").apply();
                             main.post(() -> startService(new Intent(this, ScreenCaptureService.class)
                                 .setAction(ScreenCaptureService.STOP)));
                         }
