@@ -1,0 +1,58 @@
+name: Deploy Bubbles semantic tools
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'workers/bubbles-tools/**'
+      - '.github/workflows/deploy-bubbles-semantic-tools.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: bubbles-semantic-tools-deploy
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test registered semantic tools and explicit receipts
+        run: |
+          node --check workers/bubbles-tools/worker.mjs
+          node --check workers/bubbles-tools/mcp.mjs
+          node --check workers/bubbles-tools/search.mjs
+          node --test test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-tools.test.mjs
+      - name: Check existing deployment authorization
+        id: deploy_auth
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Source checks passed, but this runner did not verify Cloudflare deployment credentials. No production deployment is claimed."
+          fi
+      - name: Deploy authenticated Bubbles tools Worker
+        if: steps.deploy_auth.outputs.available == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 deploy --config workers/bubbles-tools/wrangler.toml
+      - name: Verify live tool gateway health
+        if: steps.deploy_auth.outputs.available == 'true'
+        run: |
+          node --input-type=module <<'VERIFY'
+          const url='https://bubbles-tools.marvaseater.workers.dev/health';
+          const response=await fetch(url,{headers:{'Cache-Control':'no-cache'}});
+          const body=await response.json();
+          if(!response.ok||body.service!=='bubbles-tools'||!body.tools?.weather)
+            throw Error('Live Bubbles tool gateway health was not confirmed');
+          console.log('Bubbles gateway health checked; individual tool execution still requires receipts.');
+          VERIFY

@@ -119,3 +119,101 @@ test('weather uses supported redirect mode for both live geocoding and forecast'
  assert.equal(requests.length,2);
  assert.ok(requests.every(r=>r.redirect==='manual'));
 });
+
+test('Grammar Phi routes three conversational weather phrasings to the same live tool receipt',async()=>{
+ const examples=[
+  'How chilly does it feel around Albia, Iowa this afternoon?',
+  'I am heading outside in Albia Iowa; should I bring a jacket?',
+  'Can you find out what it feels like outdoors in Albia, Iowa?'
+ ];
+ const original=globalThis.fetch;
+ const calls=[];
+ globalThis.fetch=async url=>{
+  calls.push(String(url));
+  return Response.json(String(url).includes('geocoding-api')?
+   {results:[{name:'Albia',admin1:'Iowa',country:'United States',latitude:41.0267,longitude:-92.8053}]}:
+   {current:{temperature_2m:42,apparent_temperature:37,weather_code:2,wind_speed_10m:11,time:'2026-10-20T15:00'},
+    daily:{temperature_2m_max:[49],temperature_2m_min:[36],precipitation_probability_max:[15]},
+    timezone:'America/Chicago',timezone_abbreviation:'CDT'});
+ };
+ try{
+  for(const phrase of examples){
+   assert.equal(chooseTool(phrase),'oracle.chat','ordinary phrase should require semantic selection');
+   let selections=0;
+   const response=await call({request:phrase,mcp:true},{
+    AI:{run:async(_model,options)=>{
+     if(!options.tools)throw Error('tool selector should return the sourced reply directly');
+     selections++;
+     return {choices:[{message:{tool_calls:[{function:{name:'weather_current',arguments:JSON.stringify({location:'Albia, Iowa'})}}]}}]};
+    }}
+   });
+   const data=await response.json();
+   assert.equal(selections,1);
+   assert.equal(data.receipt.tool,'weather.current');
+   assert.equal(data.receipt.selection,'structured_function_call');
+   assert.equal(data.receipt.status,'complete');
+   assert.match(data.output,/42 degrees Fahrenheit/);
+  }
+  assert.equal(calls.length,6,'one geocode and one actual weather fetch per request');
+ }finally{globalThis.fetch=original}
+});
+test('ambiguous conversational weather cannot invent a city from the model',async()=>{
+ const original=globalThis.fetch;
+ let networkCalls=0;
+ globalThis.fetch=async()=>{networkCalls++;throw Error('must not fetch invented town')};
+ try{
+  const response=await call({request:'Should I wear a coat when I go outside?',mcp:true},{
+   AI:{run:async()=>({choices:[{message:{tool_calls:[{function:{name:'weather_current',arguments:'{"location":"Albia, Iowa"}'}}]}}]})}
+  });
+  const data=await response.json();
+  assert.equal(data.receipt.tool,'weather.current');
+  assert.equal(data.receipt.status,'needs_input');
+  assert.match(data.output,/Which town and state/i);
+  assert.equal(networkCalls,0);
+ }finally{globalThis.fetch=original}
+});
+test('model-suggested tools never turn a repository repair or greeting into a read-only action',async()=>{
+ let selections=0,chats=0;
+ const env={AI:{run:async(_model,options)=>{
+  if(options.tools){
+   selections++;
+   return {choices:[{message:{tool_calls:[]}}]};
+  }
+  chats++;
+  return {response:'No repository edit or live tool call was verified.'};
+ }}};
+ let r=await call({request:'Please repair my QuantaPhi repository',mcp:true},env);
+ let data=await r.json();
+ assert.equal(data.receipt.tool,'oracle.chat');
+ assert.equal(selections,0,'write intent is excluded from read-only tool selection');
+ assert.equal(chats,1);
+ r=await call({request:'Hello Bubbles',mcp:true},env);
+ data=await r.json();
+ assert.equal(data.receipt.tool,'oracle.chat');
+ assert.equal(selections,1);
+ assert.equal(chats,2);
+});
+
+test('shallow weather parser defers to grounded semantic selection for city named before forecast',async()=>{
+ const phrase='How chilly does it feel around Albia, Iowa this afternoon? Please verify the forecast.';
+ assert.equal(chooseTool(phrase),'weather.current');
+ const original=globalThis.fetch;
+ let network=0;
+ globalThis.fetch=async url=>{
+  network++;
+  return Response.json(String(url).includes('geocoding-api')?
+   {results:[{name:'Albia',admin1:'Iowa',country:'United States',latitude:41.0267,longitude:-92.8053}]}:
+   {current:{temperature_2m:42,apparent_temperature:37,weather_code:2,wind_speed_10m:8,time:'2026-10-20T15:00'},
+    daily:{temperature_2m_max:[49],temperature_2m_min:[36]},timezone:'America/Chicago'});
+ };
+ try{
+  const response=await call({request:phrase,mcp:true},{
+   AI:{run:async()=>({choices:[{message:{tool_calls:[{function:{name:'weather_current',arguments:'{"location":"Albia, Iowa"}'}}]}}]})}
+  });
+  const body=await response.json();
+  assert.equal(body.receipt.tool,'weather.current');
+  assert.equal(body.receipt.status,'complete');
+  assert.match(body.output,/42 degrees Fahrenheit/);
+  assert.equal(network,2);
+ }finally{globalThis.fetch=original}
+});

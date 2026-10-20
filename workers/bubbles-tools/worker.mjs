@@ -209,7 +209,18 @@ async function execute(request,env,body){
   }
  }
  if(tool==='weather.current'){
-  const result=await currentWeather(question,body.location||body.context?.location);
+  const givenLocation=body.location||body.context?.location;
+  const result=await currentWeather(question,givenLocation);
+  // A named town may appear before the word "forecast". When the shallow
+  // extractor misses it, Grammar Phi may recover only an explicitly supplied
+  // place via its grounded, read-only structured tool selector.
+  if(result.needsLocation&&body.mcp===true&&env.AI){
+   const semantic=await selectMcpTool(env,question,
+    command=>runMcpRead(request,env,command),{location:givenLocation||''});
+   if(semantic?.receipt?.tool==='weather.current'&&semantic.receipt.status==='complete')
+    return response(request,{...semantic,receipt:{...semantic.receipt,
+     interpretation:'semantic_read_only',selection:'structured_function_call'}});
+  }
   return response(request,{...result,ok:true,receipt:{...receipt,status:result.ok?'complete':result.needsLocation?'needs_input':'failed',provider:result.provider||'Open-Meteo',observedAt:result.observedAt||null}});
  }
  if(tool==='web.search'){
@@ -247,9 +258,18 @@ async function execute(request,env,body){
    }catch{return response(request,{ok:true,output:'I could not retrieve current headlines. I have not substituted remembered headlines.',receipt:{...receipt,status:'failed',reason:'news_sources_unavailable'}});}
   }
  }
- if(body.mcp===true&&/\b(?:mcp|use (?:the )?(?:available )?tools?|tools? interface)\b/i.test(question)){
-  const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command));
-  if(found)return response(request,{...found,receipt:{...found.receipt,interface:'MCP',selection:'structured_function_call',repositoryActionsVerified:false}});
+ // Grammar Phi: ordinary language is eligible for bounded semantic tool choice.
+ // The model may choose one read-only registered tool, but never chooses a
+ // repository writer, phone action, permission grant or arbitrary URL.
+ // Deterministic requests above still take the fastest direct route.
+ if(body.mcp===true&&tool==='oracle.chat'){
+  const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command),
+   {location:body.location||body.context?.location||''});
+  if(found&&found.receipt?.tool){
+   return response(request,{...found,receipt:{...found.receipt,
+    interface:'MCP',selection:'structured_function_call',interpretation:'semantic_read_only',
+    repositoryActionsVerified:false}});
+  }
  }
  return gptReply(request,env,clean(body.input,32000)||question,receipt,null,question);
 }
@@ -266,11 +286,22 @@ async function runMcpRead(request,env,command){
  return result.json();
 }
 async function runChatModel(env,model,options){
- try{return await env.AI.run(model,options)}
- catch(firstError){
-  // A single reduced-cost retry preserves the original system and user prompt.
-  // Network or inference failure must never be reported as a completed action.
-  return env.AI.run(model,{...options,reasoning_effort:'medium',max_tokens:Math.min(options.max_tokens||650,650)});
+ try{
+  const first=await env.AI.run(model,options);
+  return {...first,verifiedModel:model};
+ }catch{
+  try{
+   const retry=await env.AI.run(model,{...options,reasoning_effort:'medium',
+    max_tokens:Math.min(options.max_tokens||650,650)});
+   return {...retry,verifiedModel:model};
+  }catch{
+   // Use the smaller, documented Cloudflare Workers AI model rather than
+   // failing the entire conversation after one provider/model outage.
+   const fallbackModel='@cf/openai/gpt-oss-20b';
+   const fallback=await env.AI.run(fallbackModel,{...options,reasoning_effort:'low',
+    max_tokens:Math.min(options.max_tokens||650,650)});
+   return {...fallback,verifiedModel:fallbackModel};
+  }
  }
 }
 async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
@@ -298,7 +329,7 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
  }
  if(dubious())output=groundedWorkFallback(userRequest);
  return response(request,{...(evidence||{}),ok:true,output:output.trim(),output_text:output.trim(),
-  provider:'cloudflare-workers-ai',model,
+  provider:'cloudflare-workers-ai',model:result.verifiedModel||model,
   receipt:{...receipt,status:evidence?.receipt?.status||'complete',repositoryActionsVerified:false}});
 
 }
