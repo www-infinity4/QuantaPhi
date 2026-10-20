@@ -70,7 +70,7 @@ export async function browserTool(request, env) {
       await env.BROWSER.closeSession(body.sessionId);
       return json(origin,{ok:true,status:'closed'});
     }
-    if(['navigate','read','click','type'].includes(body.action)){
+    if(['navigate','read','click','type','viewport'].includes(body.action)){
       const action=body.action;
       const value=typeof body.value==='string'?body.value:'';
       const field=typeof body.field==='string'?body.field:'';
@@ -79,7 +79,7 @@ export async function browserTool(request, env) {
       const url=action==='navigate'?browserTarget(body.url):'';
       // These are explicit deterministic actions, not unrestricted shell or JS.
       const result=await browserAction(env,{sessionId:body.sessionId,action,
-       targetId,url,label,field,value});
+       targetId,url,label,field,value,mode:body.mode});
       return json(origin,{ok:Boolean(result.ok!==false),status:result.ok===false?'blocked':'verified',
         action,result:result.ok===false?result:{...result,text:typeof result.text==='string'?result.text.slice(0,8500):undefined}});
     }
