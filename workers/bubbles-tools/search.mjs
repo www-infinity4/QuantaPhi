@@ -10,17 +10,17 @@ const getJson=async(fetcher,url,options={})=>{
  return JSON.parse(body);
 };
 export function lookupKind(message){
- const s=trim(message,3000);
+ const s=trim(message,3000).replace(/^(?:(?:please|hey bubbles|bubbles)[,:]?\s+)*/i,'').replace(/^(?:can|could|would|will)\s+you\s+/i,'');
  if(/\b(?:build|create|code|implement|repair|fix|develop|design)\b.{0,70}\b(?:weather|forecast)\b.{0,35}\b(?:app|widget|page|site|api)\b/i.test(s))return null;
  if(/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it|what(?:'s| is) it like outside|conditions outside|do i need an umbrella)\b/i.test(s))return 'weather.current';
- if(/^\s*(?:google(?:\s+search|\s+it|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\b/i.test(s)
+ if(/^\s*(?:do\s+(?:a\s+)?(?:quick\s+)?search(?:\s+for)?|google(?:\s+search|\s+it|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\b/i.test(s)
    ||/\b(?:search\s+(?:the\s+)?web|search\s+google|look\s+up\s+online|find\s+(?:it\s+)?online|latest\s+(?:information|updates)|what(?:'s| is)\s+the\s+latest)\b/i.test(s))return 'web.search';
  return null;
 }
 export function searchTerms(utterance){
  return trim(utterance,1200)
-  .replace(/^\s*(?:please\s+|bubbles[,:]?\s+|could you\s+|can you\s+|i want you to\s+|tell me\s+)?/i,'')
-  .replace(/^(?:google(?:\s+search|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\s*/i,'')
+  .replace(/^\s*(?:(?:please|hey bubbles|bubbles)[,:]?\s+)*(?:(?:can|could|would|will) you\s+|i want you to\s+|tell me\s+)?/i,'')
+  .replace(/^(?:do\s+(?:a\s+)?(?:quick\s+)?search(?:\s+for)?|google(?:\s+search|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\s*/i,'')
   .replace(/^\s*(?:for|about)\s+/i,'').replace(/[?.\s]+$/,'').slice(0,350);
 }
 const googleRequested=s=>/\bgoogle\b/i.test(s)&&/\b(?:search|look\s+up|find|google\s+it)\b/i.test(s);
@@ -77,6 +77,41 @@ export function weatherPlace(message,location){
  if(typeof location==='string'&&trim(location,100))return trim(location,100);
  if(location&&typeof location==='object'&&trim(location.city,80))return trim(location.city+' '+trim(location.state||location.region,60),110);
  return '';
+}
+
+// A comparison is an explicit set of places, never one invented combined city.
+// At most four verified Open-Meteo lookups, with the same bounds as single weather.
+export function weatherLocations(message){
+ const q=trim(message,550);
+ const match=q.match(/\b(?:weather|forecast|temperatures?)\b[\s\S]*?\b(?:in|for|at|near)\s+(.+)$/i);
+ if(!match)return [];
+ const raw=match[1].replace(/[?!.\s]+$/g,'')
+  .replace(/\s+(?:right now|today|tomorrow|currently|this evening|this morning)\b.*$/i,'').trim();
+ let parts=raw.split(/\s*;\s*|\s*,?\s+\band\s+/i).map(s=>s.trim()).filter(Boolean);
+ // Also recognize explicit "City, State, City, State" pairs.
+ if(parts.length===1){
+  const names=raw.split(/\s*,\s*/).map(s=>s.trim()).filter(Boolean);
+  if(names.length>=4&&names.length%2===0)
+   parts=Array.from({length:names.length/2},(_,i)=>names[i*2]+', '+names[i*2+1]);
+ }
+ if(parts.length<2)return [];
+ const valid=parts.every(p=>/^[a-z][a-z .'-]*(?:,\s*[a-z][a-z .'-]*)?$/i.test(p)&&p.length<=110&&p.length>=3);
+ if(!valid)return [];
+ return [...new Set(parts.map(p=>p.replace(/\s+/g,' ')))];
+}
+
+export async function compareWeather(message,fetcher=fetch){
+ const locations=weatherLocations(message);
+ if(locations.length<2)return null;
+ if(locations.length>4)return {ok:false,needsLocation:true,output:'I can compare up to four named locations at a time. Please choose four or fewer.',locations:[]};
+ const observations=await Promise.all(locations.map(async location=>{
+  const result=await currentWeather(/\btomorrow\b/i.test(message)?'weather tomorrow':'weather now',location,fetcher);
+  return {requested:location,...result};
+ }));
+ const count=observations.filter(x=>x.ok).length;
+ return {ok:count===observations.length,partial:count>0&&count<observations.length,
+  locations:observations,provider:'Open-Meteo',
+  output:observations.map(x=>(x.ok?'✓ ':'Could not verify ')+x.requested+': '+x.output).join('\n\n')};
 }
 
 const descriptions={
