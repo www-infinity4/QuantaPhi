@@ -20,16 +20,17 @@ export function summarizeGate(payload){
  summary.state=summary.ready?'ready':'setup';
  return summary;
 }
-export function mountBubblesSigninGate({root=document,host=window}={}){
- const gate=root.getElementById('bubblesSigninGate');
+export function mountBubblesSigninGate({root=document,host=window,prefix=''}={}){
+ const get=id=>root.getElementById(prefix+id);
+ const gate=get('bubblesSigninGate');
  if(!gate)return null;
- const status=root.getElementById('bubblesSigninStatus');
- const actions={github:root.getElementById('bubblesGithubSignIn'),cloudflare:root.getElementById('bubblesCloudflareSignIn')};
- const labels={github:root.getElementById('bubblesGithubStatus'),cloudflare:root.getElementById('bubblesCloudflareStatus')};
- const cards={github:root.getElementById('bubblesGithubCard'),cloudflare:root.getElementById('bubblesCloudflareCard')};
- const chat=root.getElementById('bubblesAICard');
- const openChat=root.getElementById('bubblesOpenExistingChat');
- const retry=root.getElementById('bubblesRetrySignInCheck');
+ const status=get('bubblesSigninStatus');
+ const actions={github:get('bubblesGithubSignIn'),cloudflare:get('bubblesCloudflareSignIn')};
+ const labels={github:get('bubblesGithubStatus'),cloudflare:get('bubblesCloudflareStatus')};
+ const cards={github:get('bubblesGithubCard'),cloudflare:get('bubblesCloudflareCard')};
+ const chat=get('bubblesAICard');
+ const openChat=get('bubblesOpenExistingChat');
+ const retry=get('bubblesRetrySignInCheck');
  const client=new AccountConnections({token:()=>resolveConnectorWalletToken(host),root:host});
  let loading=false,oauthInProgress=false,latest=null,lastChecked=0;
  const setStatus=text=>{status.textContent=text;};
