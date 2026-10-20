@@ -636,6 +636,16 @@ export class BrainClock extends DurableObject{
   if(!/^[0-9a-f-]{36}$/i.test(body.requestId||''))return {ok:false,error:'request_id_required'};
   const key='direct-github:'+body.requestId;
   if(body.action==='receipt')return await this.ctx.storage.get(key)||{ok:false,error:'receipt_not_found'};
+  if(body.action==='search_github_code'){
+   // Read-only global code search is independent of the repository write lease.
+   // The /work/github ingress already verifies the current owner session.
+   const previous=await this.ctx.storage.get(key);if(previous)return previous;
+   const runtime=await githubEnvironment(this.env,this.ctx.storage);
+   const result=await githubOperation(runtime,{action:'search_github_code',query:body.query,scope:body.scope});
+   const receipt={...result,requestId:body.requestId};
+   await this.ctx.storage.put(key,receipt);
+   return receipt;
+  }
   if(['list_repositories','suggest_repositories'].includes(body.action)){
    const runtime=await githubEnvironment(this.env,this.ctx.storage);
    const cacheKey='github-owner-catalog-v1';
