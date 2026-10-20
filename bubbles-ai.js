@@ -2494,15 +2494,15 @@ function showOwnerApprovalRequests(tickets){
   const card=create('section','ba-owner-approval');
   card.setAttribute('aria-label','Owner approval needed');
   card.append(create('strong','','Owner decision requested'));
-  card.append(create('p','ba-owner-approval-title','Review interface changes'));
-  card.append(create('p','ba-owner-approval-copy','Approve the interface update using the existing QuantaPhi style. The bots will handle the implementation.'));
-  card.append(create('p','ba-owner-approval-choice','Use readable buttons, clear wording and the existing settings layout. Keep current permissions and verify the result.'));
+  card.append(create('p','ba-owner-approval-title',item.title));
+  card.append(create('p','ba-owner-approval-copy',item.task));
+  card.append(create('p','ba-owner-approval-choice',item.reason));
   const details=create('details','ba-owner-approval-details');
-  details.append(create('summary','','Why did the runner stop?'));
-  details.append(create('p','',item.reason));
+  details.append(create('summary','','Job details'));
+  details.append(create('p','',item.repository));
   card.append(details);
   const actions=create('div','ba-owner-approval-actions');
-  const approve=create('button','ba-owner-approve','Approve interface update');
+  const approve=create('button','ba-owner-approve','Approve this job');
   approve.type='button';
   const review=create('button','ba-owner-review','Explain this choice');
   review.type='button';
@@ -2534,7 +2534,7 @@ function showOwnerApprovalRequests(tickets){
    }
   });
   review.addEventListener('click',()=>{
-   const prompt='Explain in plain language whether this is genuinely an owner-only UI choice. State what I would approve, identify any technical error the bots should fix themselves, and do not submit or approve anything. Runner report: '+item.reason.slice(0,850);
+   const prompt='Explain in plain language whether this is genuinely an owner-only UI choice. State what I would approve for '+item.title+', identify any technical error the bots should fix themselves, and do not submit or approve anything. Job: '+item.task.slice(0,350)+'; runner report: '+item.reason.slice(0,850);
    void sendMessage(prompt,false);
   });
   conversation.append(line);ownerApprovalCards.set(key,line);
