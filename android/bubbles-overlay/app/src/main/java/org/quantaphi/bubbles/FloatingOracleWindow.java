@@ -580,6 +580,7 @@ final class FloatingOracleWindow {
         try {
             captureState.put("screenActive", prefs.getBoolean("capture_active", false));
             captureState.put("screenRecording", prefs.getBoolean("capture_recording", false));
+            captureState.put("screenPaused", prefs.getBoolean("capture_paused", false));
             captureState.put("soundActive", prefs.getBoolean("audio_active", false));
             captureState.put("nativeRecorder", true);
             String readState = prefs.getString("screen_state", "");
