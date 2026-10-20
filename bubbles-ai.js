@@ -228,9 +228,29 @@ const CLOUD_MEMORY_KEY='quantaphi:bubbles:cloud-memory:v1'+(bubbleId?':'+bubbleI
 let cloudChat=data(CLOUD_MEMORY_KEY,false)===true;
 const longMemory=embedded?null:window.BubblesMemory||null;
 longMemory?.setEnabled(keepChat);
-let messages=keepChat?data(HISTORY,[]):[];
-if(!Array.isArray(messages))messages=[];
-messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-400).map(item=>({id:item.id||crypto.randomUUID(),at:item.at||Date.now(),role:item.role,text:item.text.slice(0,6000)}));
+const THREAD_INDEX='quantaphi:bubbles:threads:v2'+(bubbleId?':'+bubbleId:'');
+const THREAD_PREFIX=THREAD_INDEX+':';
+const TAB_THREAD=THREAD_INDEX+':tab';
+let threadIndex=data(THREAD_INDEX,[]);
+if(!Array.isArray(threadIndex))threadIndex=[];
+const legacy=data(HISTORY,[]);
+if(keepChat&&legacy?.length&&!data(THREAD_INDEX+':migrated',false)){
+ if(save(THREAD_PREFIX+'legacy-history',legacy)){
+  threadIndex.push({id:'legacy-history',title:'Earlier Bubbles history',updated:Date.now()});
+  save(THREAD_INDEX,threadIndex);save(THREAD_INDEX+':migrated',true);
+ }
+}
+let lastTab='';try{lastTab=sessionStorage.getItem(TAB_THREAD)||''}catch{}
+const reloaded=performance.getEntriesByType?.('navigation')?.[0]?.type==='reload';
+let activeThread=reloaded&&threadIndex.some(t=>t.id===lastTab)?lastTab:'chat_'+crypto.randomUUID().replaceAll('-','');
+try{sessionStorage.setItem(TAB_THREAD,activeThread)}catch{}
+if(!threadIndex.some(t=>t.id===activeThread)){
+ threadIndex.unshift({id:activeThread,title:'New conversation',updated:Date.now()});
+ save(THREAD_INDEX,threadIndex);
+}
+const readThread=id=>(data(THREAD_PREFIX+id,[])||[]).filter(m=>m&&['user','assistant'].includes(m.role)&&typeof m.text==='string').slice(-400);
+let messages=keepChat?readThread(activeThread):[];
+messages=messages.map(m=>({...m,sessionId:activeThread,id:m.id||crypto.randomUUID(),at:m.at||Date.now(),text:m.text.slice(0,6000)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending=[],speaking=false,voiceRetry=null,tries=0;
