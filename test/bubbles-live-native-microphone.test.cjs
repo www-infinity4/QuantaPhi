@@ -15,7 +15,10 @@ test('native grant is confirmed, exact audio-only, foreground and recording-awar
  assert.match(service,/liveMicrophoneOwned \|\| recording.active\(\) \|\| screenAudio.active\(\) \|\| pendingAudioRecording/);
  assert.match(service,/muted \|\| liveMicrophoneOwned \|\| captureRunning/);
  const release=service.slice(service.indexOf('void releaseLiveMicrophone()'),service.indexOf('private void resumeSession()'));
- assert.doesNotMatch(release,/beginListening|resumeSession/);
+ assert.match(release,/boolean shouldResume = liveMicrophoneOwned && resumeAfterLiveCall/);
+ assert.match(release,/if \(shouldResume && connected\)/);
+ assert.match(release,/resumeSession\(\)/);
+ assert.match(service,/resumeAfterLiveCall = false; \/\/ Explicit mute beats automatic handback/);
 });
 test('actual web lifecycle stop closes every local media resource and requests provider hangup',async()=>{
  const nodes=new Map();
