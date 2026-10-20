@@ -753,6 +753,22 @@ const toolRail=create('nav','ba-tool-rail');toolRail.setAttribute('aria-label','
 for(const [label,path] of [['Research · QuantaPhi','/'],['Build · Infinity Phi','/infinity-phi/'],['Code · Omni Phi','/omni-phi/']]){
  const link=create('a','ba-tool-link',label);link.href=path;link.rel='noopener';toolRail.append(link);
 }
+if(!embedded){
+ const browserLaunch=create('button','ba-tool-link','Cloud browser · Live Chrome');
+ browserLaunch.type='button';
+ browserLaunch.setAttribute('aria-label','Open the real Cloudflare Chrome browser inside Bubbles');
+ toolRail.append(browserLaunch);
+ browserLaunch.addEventListener('click',async()=>{
+  browserLaunch.disabled=true;
+  try{
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261019-live-chrome1');
+   module.mount({host:panel,ownerHeaders:verifiedOwnerHeaders});
+   tools.open=true;
+   status.textContent='Cloud browser controls are available in this Bubbles panel. Sign-in stays inside your remote Chrome session.';
+  }catch(error){status.textContent='Cloud browser could not open: '+String(error?.message||error).slice(0,160)}
+  finally{browserLaunch.disabled=false}
+ });
+}
 tools.append(toolRail,privacy,create('label','','Private notes'),noteText,saveNote,noteList,create('label','',embedded?'Website work draft':'Approved work request'),workText,workButton,siteDraftButton,workStatus);
 const pairingCard=create('section','ba-pairing-card');
  pairingCard.hidden=true;

@@ -20,3 +20,7 @@ service = "infinity-brain-clock"
 [[services]]
 binding = "SEARCH"
 service = "orange-brook-a2ac"
+
+# Remote Chromium with authenticated, owner-scoped Live View sessions.
+[browser]
+binding = "BROWSER"
