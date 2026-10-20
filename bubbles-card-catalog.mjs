@@ -17,8 +17,10 @@ export const cards=Object.freeze([
  local('concepts','Infinity Concepts','infinityConcepts',['infinity-concepts.js'],['infinity-concepts.css']),
  local('group-story','Group Story','groupStoryBuild',['group-story.js'],['group-story.css'],['group story build']),
  local('channels','Television Cards','phiChannelCards',['phi-channel-cards.js'],['phi-channel-cards.css'],['channel cards']),
+ app('quantaphi','QuantaPhi','/','QuantaPhi',['quantaphi home','quantaphi website','quantaphi page']),
+ app('alien-coin','Alien Coin','/alien-coin/','Alien-Coin',['alien coin website']),
  app('resonance','Resonance Calculator','/resonance.html','QuantaPhi',['resonance engine']),
- app('bitcoin-crusher','Bitcoin Crusher','/bitcoin-crusher/','Bitcoin-Crusher'),
+ app('bitcoin-crusher','Bitcoin Crusher','/bitcoin-crusher/','Bitcoin-Crusher',['crusher','bitcoin crusher jukebox'],'#musicPlay'),
  app('oracle-octaves','Oracle Octaves','/oracle-octaves/','Oracle-Octaves',['piano']),
  app('infinity-phi','Infinity Phi','/infinity-phi/','C13b0'),
  app('omni-phi','Omni Phi','/omni-phi/','Omni-Phi',['code phi']),
@@ -42,6 +44,18 @@ export function cardIntent(text){
  if(/^(?:list|show|open|bring up|pull up)(?: me)? (?:the |your )?(?:card catalog|all cards|available cards)$/i.test(q))return {action:'catalog'};
  if(/^(?:diagnose|inspect|check|test)(?: the| this| current| active| that)? card(?: functions| controls| status)?$/i.test(q))return {action:'diagnose'};
  if(/^(?:close|remove|dismiss)(?: the| this| current| active)? card$/i.test(q))return {action:'close'};
+ if(/^(?:(?:push|press|tap|hit|start)\s+)?play(?:\s+(?:it|this|that|now|the\s+(?:song|radio|music|track|card)))?$/i.test(q))return {action:'play-active'};
+ if(/^(?:give me|suggest|show me|make)(?:\s+some)?\s+(?:10|ten)\s+(?:research\s+)?words(?:\s+for\s+(?:bitcoin\s+crusher|this\s+card))?$/i.test(q))return {action:'suggest-words'};
+ if(/^add\s+(?:these|those|the)\s+(?:10|ten)\s+(?:research\s+)?words$/i.test(q))return {action:'add-suggested-words'};
+ const add=q.match(/^(?:add|use|collect)\s+(?:these\s+|the\s+|my\s+)?(?:research\s+)?(?:words|terms)\s*[:,-]\s*(.+)$/i);
+ if(add)return {action:'add-words',words:add[1]};
+ const edit=q.match(/^(?:edit|work on|inspect|preview|open in editor|bring (?:up|in) to edit)\s+(?:the\s+|my\s+)?(.+?)(?:\s+(?:page|site|website|card))?$/i);
+ if(edit){
+  const name=edit[1].replace(/\s+(?:page|site|website|card)$/i,'').trim();
+  const card=findCard(name);
+  if(card)return {action:'edit',card};
+ }
+
  for(let n=0;n<3;n++){
   const previous=q;
   q=q.replace(/^(?:can|could|would|will) you(?: please)?\s+/i,'')
