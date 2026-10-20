@@ -327,12 +327,27 @@ async function checkSharedVoiceStatus(){
  }catch{ /* Keep text chat available when the owner-state service is offline. */ }
  finally{sharedVoiceStatusBusy=false;}
 }
+function saveThread(){
+ if(!keepChat)return false;
+ const saved=save(THREAD_PREFIX+activeThread,messages.slice(-160));
+ if(!saved)return false;
+ const row=threadIndex.find(t=>t.id===activeThread);
+ const first=messages.find(m=>m.role==='user')?.text?.trim().replace(/\s+/g,' ').slice(0,65);
+ if(row){row.updated=Date.now();if(row.title==='New conversation'&&first)row.title=first;}
+ threadIndex.sort((a,b)=>b.updated-a.updated);
+ save(THREAD_INDEX,threadIndex.slice(0,150));
+ return true;
+}
 function persistChat(){
- for(const m of messages){if(!m.id){m.id=crypto.randomUUID();m.at=Date.now();}if(!m.at)m.at=Date.now();}
- if(!embedded&&keepChat){for(const m of messages)if(!memoryAck.has(m.id))memoryPending.set(m.id,{id:m.id,at:m.at,role:m.role,text:m.text.slice(0,6000)});save(MEMORY_OUTBOX,[...memoryPending.values()]);void sharedMemory();}
+ for(const m of messages){if(!m.id)m.id=crypto.randomUUID();if(!m.at)m.at=Date.now();m.sessionId=activeThread;}
+ if(!embedded&&keepChat){
+  for(const m of messages)if(!memoryAck.has(m.id))
+   memoryPending.set(m.id,{id:m.id,at:m.at,role:m.role,text:m.text.slice(0,6000),sessionId:m.sessionId});
+  save(MEMORY_OUTBOX,[...memoryPending.values()]);void sharedMemory();
+ }
  if(!keepChat)return false;
  void longMemory?.appendAll(messages.slice(-3));
- return save(HISTORY,messages.slice(-400));
+ return saveThread();
 }
 const card=create('section','ba-card ba-studio-card');
 card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','Tap Bubbles once to enable continuous listening. It glows when it hears sound. Just speak naturally—no wake name needed. Speech clips go to Cloudflare for transcription; silence stays on your device. Mute releases the microphone.'));
