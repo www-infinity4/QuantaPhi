@@ -3,7 +3,7 @@
 // pretending to click cross-origin websites. Provider logins stay in Chrome.
 const SERVICE='https://bubbles-cloud-browser.marvaseater.workers.dev/v1/browser';
 let panelInstance=null, agent=null;
-const destinations={starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
+const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
 export function browserSpeechIntent(input){
  const utterance=String(input||'').trim().replace(/^(?:hey |okay |please |bubbles[, ]+)+/i,'');
  if(!/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b/i.test(utterance))return null;
@@ -56,7 +56,8 @@ export function mount({host,ownerHeaders}){
  const address=element('input');address.type='url';address.placeholder='https://example.com';address.value='https://quantaphi.org/';
  address.style.cssText='width:100%;box-sizing:border-box;min-height:44px;padding:10px;margin-top:8px;border:1px solid #ada4be;border-radius:10px';
  const add=element('button','Open new tab');
- for(const button of [start,refresh,stop,add]){button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';controls.append(button);}
+ const cloudflare=element('button','Open Cloudflare');
+ for(const button of [start,refresh,stop,add,cloudflare]){button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';controls.append(button);}
  wrap.append(controls,address);
  // Device-size inspection changes the remote Chrome viewport through CDP.
  // A web preview is not the native phone display; the APK's own screen sharing
@@ -123,7 +124,7 @@ export function mount({host,ownerHeaders}){
      return result;
    }finally{clearTimeout(timeout);}
  }
- const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,phonePreview,desktopPreview])b.disabled=value;};
+ const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,cloudflare,phonePreview,desktopPreview])b.disabled=value;};
  const show=(result)=>{
    if(result.sessionId)state={sessionId:result.sessionId,proof:result.proof||state?.proof};
    if(result.url){
@@ -160,6 +161,10 @@ export function mount({host,ownerHeaders}){
  phonePreview.addEventListener('click',()=>void setWebsiteViewport('phone'));
  desktopPreview.addEventListener('click',()=>void setWebsiteViewport('desktop'));
  start.addEventListener('click',()=>action('start',{url:address.value}));
+ cloudflare.addEventListener('click',()=>{
+  address.value=destinations.cloudflare;
+  void action(state?'tab':'start',{url:destinations.cloudflare});
+ });
  add.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('tab',{url:address.value})});
  refresh.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('view')});
  stop.addEventListener('click',()=>{if(state)void action('stop');else status.textContent='No live Chrome session to stop.'});
