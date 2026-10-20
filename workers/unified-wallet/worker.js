@@ -79,6 +79,40 @@ async function infinityHistory(env,account,url){
  * the EXISTING account without editing any balance or ledger event.
  */
 /**
+ * Verify the signed Access assertion: Workers execution context has no ctx.access
+ * identity API. Never trust Cf-Access-Authenticated-User-Email by itself.
+ * Fail closed when the JWT, audience, issuer, expiry, or RSA signature is wrong.
+ */
+async function verifiedAccessEmail(request,env){
+  try {
+    const issuer=String(env.RECOVERY_ACCESS_ISSUER||'').replace(/\/$/,'');
+    if(!/^https:\/\/[a-z0-9-]+\.cloudflareaccess\.com$/.test(issuer))return null;
+    const assertion=request.headers.get('Cf-Access-Jwt-Assertion')||'';
+    if(!/^[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+$/.test(assertion))return null;
+    const parts=assertion.split('.');
+    const decode=v=>Uint8Array.from(atob(v.replace(/-/g,'+').replace(/_/g,'/')+'='.repeat((4-v.length%4)%4)),c=>c.charCodeAt(0));
+    const header=JSON.parse(new TextDecoder().decode(decode(parts[0])));
+    const claims=JSON.parse(new TextDecoder().decode(decode(parts[1])));
+    if(header.alg!=='RS256' || !/^[A-Za-z0-9_-]{1,180}$/.test(header.kid||''))return null;
+    const aud=Array.isArray(claims.aud)?claims.aud:[claims.aud];
+    const now=Math.floor(Date.now()/1000);
+    if(claims.iss!==issuer || !aud.includes(env.RECOVERY_ACCESS_AUD) ||
+       typeof claims.exp!=='number' || claims.exp<=now ||
+       (typeof claims.nbf==='number' && claims.nbf>now+60) ||
+       (typeof claims.iat==='number' && claims.iat>now+60) ||
+       typeof claims.email!=='string' || claims.email.length>320)return null;
+    const res=await fetch(issuer+'/cdn-cgi/access/certs',{headers:{Accept:'application/json'},redirect:'error'});
+    if(!res.ok)return null;
+    const jwks=await res.json();
+    const key=(Array.isArray(jwks.keys)?jwks.keys:[]).find(k=>k.kid===header.kid && k.kty==='RSA' && k.n && k.e && (!k.alg || k.alg==='RS256'));
+    if(!key)return null;
+    const publicKey=await crypto.subtle.importKey('jwk',{kty:'RSA',n:key.n,e:key.e,alg:'RS256',ext:true}, {name:'RSASSA-PKCS1-v1_5',hash:'SHA-256'},false,['verify']);
+    const valid=await crypto.subtle.verify('RSASSA-PKCS1-v1_5',publicKey,decode(parts[2]),new TextEncoder().encode(parts[0]+'.'+parts[1]));
+    return valid ? claims.email.trim() : null;
+  }catch{return null}
+}
+
+/**
  * Cloudflare Access owner-only issuer for the existing hashed wrc_ grant schema.
  * Must be protected by a path-scoped Access application as well as these Worker
  * checks. Without an authenticated Access invocation and explicit owner
@@ -86,12 +120,10 @@ async function infinityHistory(env,account,url){
  */
 async function issueOwnerRecovery(request,env,ctx){
   const denied=()=>new Response('Cloudflare Access owner authorization is required.',{status:403,headers:{'Cache-Control':'no-store'}});
-  if(!ctx?.access || !env.RECOVERY_ACCESS_AUD ||
-     !env.RECOVERY_OWNER_EMAIL || !env.RECOVERY_OWNER_ACCOUNT_ID ||
-     ctx.access.aud!==env.RECOVERY_ACCESS_AUD || !env.IDENTITY_DB)return denied();
-  let verified;
-  try{verified=await ctx.access.getIdentity()}catch{return denied()}
-  if(!verified?.email || verified.email.trim().toLowerCase()!==String(env.RECOVERY_OWNER_EMAIL).trim().toLowerCase())return denied();
+  if(!env.RECOVERY_ACCESS_AUD || !env.RECOVERY_ACCESS_ISSUER ||
+     !env.RECOVERY_OWNER_EMAIL || !env.RECOVERY_OWNER_ACCOUNT_ID || !env.IDENTITY_DB)return denied();
+  const verifiedEmail=await verifiedAccessEmail(request,env);
+  if(!verifiedEmail || verifiedEmail.toLowerCase()!==String(env.RECOVERY_OWNER_EMAIL).trim().toLowerCase())return denied();
   if(!['GET','POST'].includes(request.method))return new Response('Method not allowed',{status:405});
   const secureHeaders={
     'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store, private',
