@@ -1031,6 +1031,15 @@ public final class BubblesService extends Service {
             state("listening", .28f);
             return;
         }
+        // Do not send clearly pet-directed chatter to the conversation or
+        // accidentally turn it into a recording, search or owner job.
+        // This deliberately conservative hint cannot determine the speaker.
+        if (SpeechAudienceGate.clearlyPetDirected(addressed, directed, typed)) {
+            BrainNotes.prefs(this).edit().putString("last_suppressed_source",
+                    "Likely pet-directed speech ignored locally").apply();
+            state("listening", .04f);
+            return;
+        }
         // The microphone runs only after explicit Android permission and a
         // visible foreground session. Real gated speech needs no wake word.
         if (!typed && addressed.length() < 3) return;
