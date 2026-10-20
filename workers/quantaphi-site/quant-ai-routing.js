@@ -44,13 +44,14 @@ export async function handle(request, env = {}) {
     pathname.endsWith('.js')
   ) {
     // Require the private Quant‑AI service binding
-    if (!env.QUANT_AI || typeof env.QUANT_AI.fetch !== 'function') {
+    const quantService = env.QUANT_AI || env.QUANTAI;
+    if (!quantService || typeof quantService.fetch !== 'function') {
       return new Response(JSON.stringify({ error: 'quant_ai_service_not_configured' }), {
         status: 503,
         headers: { 'cache-control': 'no-store' }
       });
     }
-    const upstream = await env.QUANT_AI.fetch(request);
+    const upstream = await quantService.fetch(request);
     const headers = new Headers(upstream.headers);
     headers.set('cache-control', 'no-store');
     headers.set('x-quantaphi-app', 'Quant-AI');
