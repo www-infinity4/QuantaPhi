@@ -1243,6 +1243,7 @@ async function refreshConversationFolders(){
  if(!ownerReady){chatsMessage.textContent='Chats saved on this device. Connect your owner account for cloud history.';renderConversationFolders();return;}
  try{
   const data=await conversationApi('sessions-list');
+  if(!Array.isArray(data.sessions))throw Error('cloud_folders_not_deployed');
   for(const item of data.sessions||[]){
    if(!/^[a-zA-Z0-9_-]{10,80}$/.test(item.id||''))continue;
    const existing=threadIndex.find(row=>row.id===item.id);
@@ -1261,6 +1262,7 @@ async function openConversation(id){
  if(ownerReady){
   try{
    const result=await conversationApi('sessions-get',id);
+   if(!Array.isArray(result.messages)||!result.session)throw Error('cloud_folders_not_deployed');
    if(result.session?.title){const entry=threadIndex.find(x=>x.id===id);if(entry)entry.title=result.session.title;}
    next=result.messages||next;
   }catch{chatsMessage.textContent='Showing the saved device copy. Cloud history was unavailable.'}
