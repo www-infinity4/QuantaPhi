@@ -624,6 +624,9 @@ const memoryHint=create('small','ba-memory-status',embedded?'Conversation stays 
 status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
 const chatScroll=!embedded?create('div','ba-thread'):conversation;
+// Browser tools live INSIDE the single touch-scroll surface, never as a
+// clipped sibling of the fixed-height Android chat panel.
+const browserHome=!embedded?create('div','ba-browser-home'):null;
 const composer=create('form','ba-composer');
 let pendingImage=null;
 const photoInput=create('input','ba-field ba-photo-file');photoInput.type='file';photoInput.accept='image/jpeg,image/png,image/webp';photoInput.setAttribute('aria-label','Add image or screenshot');
@@ -840,9 +843,11 @@ if(!embedded){
  browserLaunch.addEventListener('click',async()=>{
   browserLaunch.disabled=true;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-chatgpt-bridge2');
-   module.mount({host:panel,ownerHeaders:verifiedOwnerHeaders});
-   tools.open=true;
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-android-scroll1');
+   const view=module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders});
+   view.openBrowserControls?.();
+   toggle(true);
+   browserHome.scrollIntoView?.({block:'start',behavior:'auto'});
    status.textContent='Cloud browser controls are available in this Bubbles panel. Sign-in stays inside your remote Chrome session.';
   }catch(error){status.textContent='Cloud browser could not open: '+String(error?.message||error).slice(0,160)}
   finally{browserLaunch.disabled=false}
@@ -918,6 +923,47 @@ if(embedded){
 // Moving the original controls preserves the existing verified handlers.
 if(!embedded){
  tools.append(create('h3','ba-section-heading','Connections & pairing'),linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus);
+}
+// One big, visible button above the chat transcript on Android and mobile web.
+// It calls the real owner-authenticated five-day grant, not a fake UI toggle.
+if(!embedded){
+ const quick=create('section','ba-chatgpt-quick');
+ quick.setAttribute('aria-label','ChatGPT Cloud Browser access');
+ const quickButton=create('button','ba-chatgpt-quick-approve','Allow ChatGPT to use Bubbles · 5 days');
+ quickButton.type='button';
+ const quickState=create('p','ba-chatgpt-quick-status','Approval status will be verified with Cloudflare.');
+ quickState.setAttribute('role','status');quickState.setAttribute('aria-live','polite');
+ quick.append(quickButton,quickState);
+ // Fix the original bug: the Cloud Browser belongs inside this scroll owner.
+ chatScroll.prepend(browserHome);
+ panel.insertBefore(quick,chatScroll);
+ const loadBrowser=async()=>{
+  const module=await import('/bubbles-cloud-browser.mjs?v=20261020-android-scroll1');
+  return module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders});
+ };
+ const grantBridge=async()=>{
+  quickButton.disabled=true;quickState.textContent='Checking owner authorization and saving the five-day grant…';
+  try{
+   const view=await loadBrowser();
+   const proof=await view.approveChatGPT();
+   if(!proof?.enabled||!proof?.expiresAt)throw Error('cloudflare_approval_not_verified');
+   quickState.textContent='Approved through '+new Date(proof.expiresAt).toLocaleString()+'. Bubbles can now receive ChatGPT browser requests.';
+  }catch(error){
+   quickState.textContent='Not approved: '+String(error?.message||error).slice(0,150);
+  }finally{quickButton.disabled=false}
+ };
+ quickButton.addEventListener('click',()=>void grantBridge());
+ // The landing-page button uses this same real operation.
+ document.addEventListener('bubbles:chatgpt-approve',()=>{
+  toggle(true);void grantBridge();
+ });
+ // Mount once on first-party Bubbles so a previously approved bridge polls
+ // even when the owner has not opened advanced browser controls.
+ void loadBrowser().then(view=>view.checkChatGPT()).then(value=>{
+  if(value?.enabled&&value.expiresAt)
+   quickState.textContent='ChatGPT access active until '+new Date(value.expiresAt).toLocaleString();
+  else quickState.textContent='Tap to give ChatGPT five-day access.';
+ }).catch(()=>{quickState.textContent='Tap to check ChatGPT access with the verified owner session.';});
 }
 document.body.append(launcher,panel);
 // Fit the visible phone viewport, including the space remaining above its keyboard.
@@ -1827,13 +1873,13 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!embedded&&/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b/i.test(spoken)){
   let intent=null;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-chatgpt-bridge2');
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-android-scroll1');
    intent=module.browserSpeechIntent(spoken);
    if(intent){
     busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
     status.textContent='Bubbles is using the authenticated cloud browser…';
     let reply;
-    try{reply=await module.browserConversation(spoken,{host:panel,ownerHeaders:verifiedOwnerHeaders});}
+    try{reply=await module.browserConversation(spoken,{host:browserHome,ownerHeaders:verifiedOwnerHeaders});}
     catch(error){reply='Cloud browser operation was not verified: '+String(error?.message||error).slice(0,160);}
     display(reply,'ai');
     messages.push({role:'user',text:spoken},{role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
