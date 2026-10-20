@@ -10,17 +10,17 @@ const getJson=async(fetcher,url,options={})=>{
  return JSON.parse(body);
 };
 export function lookupKind(message){
- const s=trim(message,3000);
+ const s=trim(message,3000).replace(/^(?:(?:please|hey bubbles|bubbles)[,:]?\s+)*/i,'').replace(/^(?:can|could|would|will)\s+you\s+/i,'');
  if(/\b(?:build|create|code|implement|repair|fix|develop|design)\b.{0,70}\b(?:weather|forecast)\b.{0,35}\b(?:app|widget|page|site|api)\b/i.test(s))return null;
  if(/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it|what(?:'s| is) it like outside|conditions outside|do i need an umbrella)\b/i.test(s))return 'weather.current';
- if(/^\s*(?:google(?:\s+search|\s+it|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\b/i.test(s)
+ if(/^\s*(?:do\s+(?:a\s+)?(?:quick\s+)?search(?:\s+for)?|google(?:\s+search|\s+it|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\b/i.test(s)
    ||/\b(?:search\s+(?:the\s+)?web|search\s+google|look\s+up\s+online|find\s+(?:it\s+)?online|latest\s+(?:information|updates)|what(?:'s| is)\s+the\s+latest)\b/i.test(s))return 'web.search';
  return null;
 }
 export function searchTerms(utterance){
  return trim(utterance,1200)
-  .replace(/^\s*(?:please\s+|bubbles[,:]?\s+|could you\s+|can you\s+|i want you to\s+|tell me\s+)?/i,'')
-  .replace(/^(?:google(?:\s+search|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\s*/i,'')
+  .replace(/^\s*(?:(?:please|hey bubbles|bubbles)[,:]?\s+)*(?:(?:can|could|would|will) you\s+|i want you to\s+|tell me\s+)?/i,'')
+  .replace(/^(?:do\s+(?:a\s+)?(?:quick\s+)?search(?:\s+for)?|google(?:\s+search|\s+for)?|search(?:\s+(?:google|the web|online|for|on google|with google))?|look\s+up|find\s+(?:online|on the web)|browse(?:\s+the web)?)\s*/i,'')
   .replace(/^\s*(?:for|about)\s+/i,'').replace(/[?.\s]+$/,'').slice(0,350);
 }
 const googleRequested=s=>/\bgoogle\b/i.test(s)&&/\b(?:search|look\s+up|find|google\s+it)\b/i.test(s);
