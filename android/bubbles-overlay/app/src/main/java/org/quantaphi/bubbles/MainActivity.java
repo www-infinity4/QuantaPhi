@@ -750,13 +750,13 @@ public final class MainActivity extends Activity {
     }
     private void openBubblesDocumentPicker(boolean historyJson) {
         // Explicit Android SAF selection; no background access to account data.
-        // JSON and image picks share the same verified WebView callback.
+        // ZIP, JSON, text and image picks share the same verified WebView callback.
         Intent picker = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         picker.addCategory(Intent.CATEGORY_OPENABLE);
         if (historyJson) {
             picker.setType("*/*");
             picker.putExtra(Intent.EXTRA_MIME_TYPES,
-                    new String[]{"application/json", "text/plain", "application/octet-stream"});
+                    new String[]{"application/json", "application/zip", "application/x-zip-compressed", "text/plain", "text/markdown", "text/csv", "application/octet-stream"});
         } else picker.setType("image/*");
         picker.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         try { startActivityForResult(picker, IMAGE_REQUEST); }

@@ -13,8 +13,8 @@ const req=()=>new Request('https://bubbles-tools.marvaseater.workers.dev/v1/assi
 test('same website composer accepts an opt-in image, no second Android transcript, and makes options tappable',()=>{
  assert.match(ui,/photoInput\.type='file'/);
  assert.match(ui,/photoInput\.accept='image\/jpeg,image\/png,image\/webp'/);
- assert.match(ui,/actions\.append\(photoRow,mic,speak,send\)/);
- assert.match(ui,/composer\.append\(input,photoPreview,actions\)/);
+ assert.match(ui,/actions\.append\(photoRow,documentRow,mic,speak,send\)/);
+ assert.match(ui,/composer\.append\(input,photoPreview,documentStatus,actions\)/);
  assert.match(ui,/chatScroll\.insertBefore\(tools,conversation\)/);
  assert.match(ui,/if\(nativeOverlay\)row\.append\(say\)/);
  assert.match(ui,/Create one-time owner code/);

@@ -21,7 +21,8 @@ const tables=[
  'CREATE TABLE IF NOT EXISTS bubbles_sessions(owner TEXT NOT NULL,session_id TEXT NOT NULL,title TEXT NOT NULL,created INTEGER NOT NULL,updated INTEGER NOT NULL,PRIMARY KEY(owner,session_id))',
  'CREATE INDEX IF NOT EXISTS bubbles_sessions_recent ON bubbles_sessions(owner,updated DESC)',
  'CREATE TABLE IF NOT EXISTS bubbles_session_messages(owner TEXT NOT NULL,session_id TEXT NOT NULL,message_id TEXT NOT NULL,at INTEGER NOT NULL,PRIMARY KEY(owner,session_id,message_id))',
- 'CREATE INDEX IF NOT EXISTS bubbles_session_messages_recent ON bubbles_session_messages(owner,session_id,at DESC)'
+ 'CREATE INDEX IF NOT EXISTS bubbles_session_messages_recent ON bubbles_session_messages(owner,session_id,at DESC)',
+ 'CREATE TABLE IF NOT EXISTS bubbles_session_sources(owner TEXT NOT NULL,session_id TEXT NOT NULL,source TEXT NOT NULL,PRIMARY KEY(owner,session_id))'
 ];
 async function sessionHandler(env,body){
  for(const sql of tables)await env.WORK_DB.prepare(sql).run();
@@ -31,6 +32,8 @@ async function sessionHandler(env,body){
  if(Number(ownership?.count)!==1||typeof ownership.owner!=='string')throw Error('owner_archive_not_unique');
  const owner=ownership.owner,now=Date.now();
  const sessionId=typeof body.sessionId==='string'?body.sessionId:'';
+ const offset=Number.isSafeInteger(body.offset)&&body.offset>=0&&body.offset<=1000000?body.offset:0;
+ const batchLimit=100;
  if(body.mode==='sessions-list'){
   const old=await env.WORK_DB.prepare('SELECT COUNT(*) AS count,MIN(at) AS first,MAX(at) AS last FROM bubbles_messages m WHERE m.owner=? AND NOT EXISTS(SELECT 1 FROM bubbles_session_messages sm WHERE sm.owner=m.owner AND sm.message_id=m.id)').bind(owner).first();
   if(old?.count){
@@ -38,21 +41,31 @@ async function sessionHandler(env,body){
     .bind(owner,'legacy-history','Earlier Bubbles chats',old.first||now,old.last||now).run();
    await env.WORK_DB.prepare("INSERT OR IGNORE INTO bubbles_session_messages(owner,session_id,message_id,at) SELECT owner,'legacy-history',id,at FROM bubbles_messages m WHERE m.owner=? AND NOT EXISTS(SELECT 1 FROM bubbles_session_messages sm WHERE sm.owner=m.owner AND sm.message_id=m.id)").bind(owner).run();
   }
-  const list=await env.WORK_DB.prepare('SELECT session_id AS id,title,created,updated FROM bubbles_sessions WHERE owner=? ORDER BY updated DESC LIMIT 120').bind(owner).all();
-  return {ok:true,sessions:list.results||[]};
+  const list=await env.WORK_DB.prepare("SELECT s.session_id AS id,s.title,s.created,s.updated,COALESCE(src.source,'bubbles') AS source FROM bubbles_sessions s LEFT JOIN bubbles_session_sources src ON src.owner=s.owner AND src.session_id=s.session_id WHERE s.owner=? ORDER BY s.updated DESC,s.session_id DESC LIMIT ? OFFSET ?").bind(owner,batchLimit,offset).all();
+  const sessions=list.results||[];
+  return {ok:true,sessions,nextOffset:sessions.length===batchLimit?offset+sessions.length:null};
  }
  if(!SID.test(sessionId))return {ok:false,error:'invalid_chat_selection'};
  if(body.mode==='sessions-create'){
   const title=typeof body.title==='string'?body.title.slice(0,80).trim():'New conversation';
+  const source=body.source==='chatgpt'?'chatgpt':'bubbles';
+  // Imported history keeps its original chronological position. The source
+  // cannot supply an owner ID or authorization, only historical timestamps.
+  const safeTime=value=>Number.isSafeInteger(value)&&value>=946684800000&&value<=now+60000;
+  const created=source==='chatgpt'&&safeTime(body.created)?body.created:now;
+  const updated=source==='chatgpt'&&safeTime(body.updated)?body.updated:created;
   await env.WORK_DB.prepare('INSERT OR IGNORE INTO bubbles_sessions(owner,session_id,title,created,updated) VALUES (?,?,?,?,?)')
-    .bind(owner,sessionId,title||'New conversation',now,now).run();
+    .bind(owner,sessionId,title||'New conversation',created,updated).run();
+  if(body.source==='chatgpt')await env.WORK_DB.prepare("INSERT INTO bubbles_session_sources(owner,session_id,source) VALUES (?,?,'chatgpt') ON CONFLICT(owner,session_id) DO UPDATE SET source='chatgpt'").bind(owner,sessionId).run();
   return {ok:true,sessionId};
  }
  if(body.mode==='sessions-get'){
-  const session=await env.WORK_DB.prepare('SELECT session_id AS id,title,created,updated FROM bubbles_sessions WHERE owner=? AND session_id=?').bind(owner,sessionId).first();
+  const session=await env.WORK_DB.prepare("SELECT s.session_id AS id,s.title,s.created,s.updated,COALESCE(src.source,'bubbles') AS source FROM bubbles_sessions s LEFT JOIN bubbles_session_sources src ON src.owner=s.owner AND src.session_id=s.session_id WHERE s.owner=? AND s.session_id=?").bind(owner,sessionId).first();
   if(!session)return {ok:false,error:'conversation_not_found'};
-  const rows=await env.WORK_DB.prepare('SELECT m.id,m.role,m.text,m.at FROM bubbles_session_messages sm JOIN bubbles_messages m ON m.owner=sm.owner AND m.id=sm.message_id WHERE sm.owner=? AND sm.session_id=? ORDER BY sm.at DESC,m.id DESC LIMIT 400').bind(owner,sessionId).all();
-  return {ok:true,session,messages:(rows.results||[]).reverse().map(row=>({...row,sessionId}))};
+  const rows=await env.WORK_DB.prepare('SELECT m.id,m.role,m.text,m.at FROM bubbles_session_messages sm JOIN bubbles_messages m ON m.owner=sm.owner AND m.id=sm.message_id WHERE sm.owner=? AND sm.session_id=? ORDER BY sm.at ASC,m.id ASC LIMIT ? OFFSET ?').bind(owner,sessionId,batchLimit,offset).all();
+  const count=await env.WORK_DB.prepare('SELECT COUNT(*) AS total FROM bubbles_session_messages WHERE owner=? AND session_id=?').bind(owner,sessionId).first();
+  const messages=(rows.results||[]).map(row=>({...row,sessionId}));
+  return {ok:true,session,messages,total:Number(count?.total)||0,nextOffset:offset+messages.length<(Number(count?.total)||0)?offset+messages.length:null};
  }
  if(body.mode==='sessions-save'){
   if(sessionId==='legacy-history')return {ok:false,error:'legacy_read_only'};
