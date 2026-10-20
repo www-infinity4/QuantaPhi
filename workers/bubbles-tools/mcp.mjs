@@ -92,28 +92,25 @@ export async function handleMcp(request,env,invoke){
 }
 // Optional single-step model selection. Treat only structured function_call envelopes
 // as a call; raw LLM prose/JSON cannot initiate tool execution.
+// Single-step Grammar Phi semantic choice: model selects among already registered,
+// read-only capabilities. No model-generated text is ever executable authority.
 export async function selectMcpTool(env,question,invoke,context={}){
  if(!env.AI||!clean(question,2500))return null;
- // Destructive, privileged, or ambiguous engineering instructions must not
- // be reinterpreted as a read-only research action.
  if(/\b(?:delete|purchase|pay|transfer|approve|authorize|deploy|merge|commit|install|edit|modify|repair|fix|implement|build|create)\b/i.test(question))return null;
  const functions=tools.map(t=>({type:'function',function:{name:t.name,description:t.description,parameters:t.inputSchema}}));
  let result;
  try{result=await env.AI.run('@cf/openai/gpt-oss-120b',{
-  messages:[{role:'system',content:'You are a read-only MCP tool selector for Bubbles. Interpret the meaning of natural conversational requests, not memorized commands. Select exactly one appropriate read-only tool only when the user actually needs live search, current weather, dated headlines, or an ideal LC calculation; otherwise use no tool. Do not invent locations, units, factual observations, URLs, permissions or parameters. When the weather location is unspecified, use an empty location rather than guessing. Ordinary discussion, site builds, approvals and repository work are NOT eligible tools. Never attempt account, code, file, shell, GitHub or Robot Brain writes.'},{role:'user',content:clean(question,2500)}],
+  messages:[{role:'system',content:'Interpret natural conversational meaning, not memorized commands. Select one read-only tool only for a clear need for live web search, current weather, dated headlines, or LC calculations; otherwise select no tool. Never invent city, units, factual observations or permission. If no weather location was supplied, leave location empty. No account, browser-control, code, file, phone, GitHub or Robot Brain writes.'},{role:'user',content:clean(question,2500)}],
   tools:functions,tool_choice:'auto',reasoning_effort:'medium',max_tokens:350
  })}catch{return null}
  const calls=result?.choices?.[0]?.message?.tool_calls||result?.tool_calls||
   result?.output?.filter?.(item=>item.type==='function_call')||[];
  if(!Array.isArray(calls)||calls.length!==1)return null;
  const call=calls[0],name=call?.function?.name||call?.name,raw=call?.function?.arguments??call?.arguments;
- let parsed;
- try{parsed=typeof raw==='string'?JSON.parse(raw):raw}catch{return null}
- let args;
- try{args=validateCall(name,parsed)}catch{return null}
+ let parsed;try{parsed=typeof raw==='string'?JSON.parse(raw):raw}catch{return null}
+ let args;try{args=validateCall(name,parsed)}catch{return null}
  if(name==='web_search'&&!args.query)return null;
  if(name==='weather_current'){
-  // A model-selected city is not evidence of the user's location.
   const place=args.location.trim().toLowerCase();
   const contextPlace=clean(typeof context.location==='string'?context.location:context.location?.city,150).toLowerCase();
   const city=place.split(',')[0].trim();
@@ -121,14 +118,9 @@ export async function selectMcpTool(env,question,invoke,context={}){
   const cityWords=city.split(/[^a-z]+/).filter(Boolean);
   const mentioned=cityWords.length>0&&cityWords.every(word=>word.length>=3&&words.includes(word));
   const contextual=contextPlace===place||(city.length>=3&&contextPlace.startsWith(city+','));
-  if(!place||!city||( !mentioned&&!contextual)){
+  if(!place||!city||(!mentioned&&!contextual)){
    return {ok:true,output:'Which town and state should I use for your weather?',
     receipt:{tool:'weather.current',status:'needs_input',provider:'Open-Meteo',repositoryActionsVerified:false}};
-  }
- }
- try{return await invoke(args)}catch{return null}')+'\\\\b','i').test(query)))){
-   return {ok:true,output:'Which town and state should I use for your weather?',receipt:{
-    tool:'weather.current',status:'needs_input',provider:'Open-Meteo',repositoryActionsVerified:false}};
   }
  }
  try{return await invoke(args)}catch{return null}
