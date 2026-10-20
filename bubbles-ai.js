@@ -880,6 +880,9 @@ if(nativeOverlay){
  nativeProviderRow.append(gptConnect,gptStatus);
  tools.insertBefore(nativeProviderRow,summary.nextSibling);
  tools.append(privateLabel);
+ // Connection-code setup belongs inside scrollable Options; keeping its
+ // permanent button in the phone composer shrinks the transcript and traps it.
+ tools.append(connectorCodeButton,connectorCodeOutput,connectorCodeStatus);
  // Android's full-screen Bubbles panel covers the underlying site; move the
  // original wallet view into Options without duplicating IDs or credentials.
  const verifiedWallet=document.querySelector('.bubbles-wallet');
