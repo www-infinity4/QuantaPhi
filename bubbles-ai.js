@@ -953,6 +953,14 @@ if(!embedded){
   }finally{quickButton.disabled=false}
  };
  quickButton.addEventListener('click',()=>void grantBridge());
+ const topButton=document.getElementById('bubblesChatGPTTopAccess');
+ if(topButton){
+  topButton.addEventListener('click',()=>{
+   toggle(true);
+   // The original page button uses the real authenticated grant directly.
+   void grantBridge();
+  });
+ }
  // The landing-page button uses this same real operation.
  document.addEventListener('bubbles:chatgpt-approve',()=>{
   toggle(true);void grantBridge();
