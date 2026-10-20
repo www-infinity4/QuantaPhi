@@ -13,6 +13,11 @@ test('Bubbles routes actual spoken Chrome research commands',()=>{
  assert.deepEqual(browserSpeechIntent('read the page in the cloud browser'),{action:'read'});
  assert.deepEqual(browserSpeechIntent('click "Watch" in the cloud browser'),{action:'click',label:'Watch'});
  assert.deepEqual(browserSpeechIntent('type "Rocket" into Search in the cloud browser'),{action:'type',value:'Rocket',field:'Search'});
+ assert.deepEqual(browserSpeechIntent('open Gemini'),{action:'navigate',url:'https://gemini.google.com/'});
+ assert.deepEqual(browserSpeechIntent('open Cloudflare'),{action:'navigate',url:'https://dash.cloudflare.com/'});
+ assert.deepEqual(browserSpeechIntent('search for Android neural speech in the cloud browser'),{action:'navigate',url:'https://www.google.com/search?q=Android%20neural%20speech'});
+ assert.deepEqual(browserSpeechIntent('use the cloud browser to search for weather in Albia Iowa'),{action:'navigate',url:'https://www.google.com/search?q=weather%20in%20Albia%20Iowa'});
+ assert.equal(browserSpeechIntent('Why is Gemini useful?'),null);
  assert.equal(browserSpeechIntent('read my Github repository'),null);
 });
 
@@ -95,4 +100,9 @@ test('Browser automation never bypasses owner authentication or opens wallet and
  assert.match(worker,/browserTool\(request,env\)/);
  assert.match(ai,/browserConversation\(spoken/);
  assert.doesNotMatch(gateway,/bcb_|durable_object_namespace|GRANTS\.get/);
+});
+test('website and Android chats dispatch named browser commands before model-only advice',()=>{
+ const chat=fs.readFileSync('bubbles-ai.js','utf8');
+ assert.match(chat,/\(\?:cloudflare\|gemini\|claude\|starquest\|bubbles/);
+ assert.match(chat,/browserConversation\(spoken/);
 });
