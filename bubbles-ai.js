@@ -1486,9 +1486,9 @@ importArchive.addEventListener('change',async()=>{
    // must never cause a partially imported chat to be skipped.
    archiveStatus.textContent='Restoring chat '+(i+1)+' of '+archive.sessions.length+'…';
    // First persist the cloud session; a failed response stops further imports.
-   await conversationApi('sessions-create',id,{title:item.title,source:archive.source==='chatgpt'?'chatgpt':'bubbles'});
+   await conversationApi('sessions-create',id,{title:item.title,created:item.created,updated:item.updated,source:archive.source==='chatgpt'?'chatgpt':'bubbles'});
    const normalized=item.messages.map((m,j)=>({
-    id:'import_'+Array.from(new Uint8Array(new TextEncoder().encode(id+'_'+j))).reduce((h,n)=>Math.imul(h^n,16777619)>>>0,2166136261).toString(16)+'_'+String(j).padStart(6,'0'),
+    id:'im_'+id.slice(5,29)+'_'+String(j).padStart(8,'0'),
     role:m.role,text:m.text,at:m.at,sessionId:id
    }));
    for(let j=0;j<normalized.length;j+=10){
