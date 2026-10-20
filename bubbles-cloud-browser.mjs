@@ -58,6 +58,21 @@ export function mount({host,ownerHeaders}){
  const add=element('button','Open new tab');
  for(const button of [start,refresh,stop,add]){button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';controls.append(button);}
  wrap.append(controls,address);
+ // Device-size inspection changes the remote Chrome viewport through CDP.
+ // A web preview is not the native phone display; the APK's own screen sharing
+ // remains separately permissioned.
+ const previewControls=element('div');
+ previewControls.className='ba-browser-viewport';
+ previewControls.style.cssText='display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:10px';
+ const phonePreview=element('button','Phone website · 360px');
+ const desktopPreview=element('button','Desktop website · 1280px');
+ for(const button of [phonePreview,desktopPreview]){
+  button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';
+  previewControls.append(button);
+ }
+ const previewState=element('p','Choose a web viewport to inspect its actual layout. This does not show the physical Android screen.');
+ previewState.setAttribute('role','status');previewState.style.cssText='font-size:12px;margin:6px 0 10px';
+ wrap.append(previewControls,previewState);
 
  const access=document.createElement('div');access.className='ba-browser-permission';
  access.style.cssText='margin:10px 0;padding:10px;border:1px solid #cec3e5;border-radius:10px';
@@ -93,7 +108,7 @@ export function mount({host,ownerHeaders}){
  frame.setAttribute('allow','clipboard-read; clipboard-write; fullscreen');
  frame.style.cssText='display:none;width:100%;height:min(68vh,520px);min-height:320px;border-radius:10px;border:1px solid #c5badd';
  wrap.append(frame);
- const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. This is remote Cloudflare Chrome, not your Android screen. Google, Gemini and Claude each control their own authentication. Sessions are temporary; Stop ends the remote browser.');
+ const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. Phone website and Desktop website change the actual remote Chrome layout. To see your physical Android screen, Bubbles APK must share a fresh device frame with Android's permission; this cloud browser cannot see it yet. Google, Gemini and Claude each control their own authentication. Sessions are temporary; Stop ends the remote browser.');
  note.style.cssText='font-size:12px;line-height:1.5;margin:10px 0 0';wrap.append(note);
  host.append(wrap);panelInstance=wrap;
  let state=null,busy=false;
@@ -108,7 +123,7 @@ export function mount({host,ownerHeaders}){
      return result;
    }finally{clearTimeout(timeout);}
  }
- const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add])b.disabled=value;};
+ const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,phonePreview,desktopPreview])b.disabled=value;};
  const show=(result)=>{
    if(result.sessionId)state={sessionId:result.sessionId,proof:result.proof||state?.proof};
    if(result.url){
@@ -126,6 +141,24 @@ export function mount({host,ownerHeaders}){
    }catch(error){status.textContent='Browser action not confirmed: '+String(error.message||error).slice(0,150);}
    finally{loading(false);}
  }
+ async function setWebsiteViewport(mode){
+  if(busy)return;
+  loading(true);
+  try{
+   // One tap can open Chrome and switch its real responsive layout.
+   if(!state){const started=await call('start',{url:address.value});show(started);}
+   const result=await call('viewport',{mode});
+   const viewport=result.result;
+   if(!viewport?.ok||viewport?.physicalAndroidScreen!==false||!Number.isInteger(viewport.width))
+    throw Error('chrome_viewport_not_verified');
+   previewState.textContent=(mode==='phone'?'Phone website':'Desktop website')+' viewport verified at '+viewport.width+' × '+viewport.height+' CSS pixels. This is remote Chrome, not the Android device screen.';
+   status.textContent='Remote Chrome layout changed and confirmed by Chrome DevTools.';
+  }catch(error){
+   previewState.textContent='Web layout change not confirmed: '+String(error.message||error).slice(0,150);
+  }finally{loading(false);}
+ }
+ phonePreview.addEventListener('click',()=>void setWebsiteViewport('phone'));
+ desktopPreview.addEventListener('click',()=>void setWebsiteViewport('desktop'));
  start.addEventListener('click',()=>action('start',{url:address.value}));
  add.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('tab',{url:address.value})});
  refresh.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('view')});
