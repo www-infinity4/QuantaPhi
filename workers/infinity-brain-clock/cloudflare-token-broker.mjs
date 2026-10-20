@@ -5,8 +5,10 @@
  *
  * Only the signed owner-session Worker route may call the planner/confirm
  * methods. The optional parent credential lives in a Cloudflare Worker secret
- * CLOUDFLARE_TOKEN_MANAGER; it needs API Tokens Edit specifically. It is NOT
- * the GitHub GHP token and NOT the ordinary Workers deployment token.
+ * CLOUDFLARE_TOKEN_MANAGER; it needs User > API Tokens > Edit specifically.
+ * That creates USER-owned API tokens via /user/tokens. It is NOT the GitHub
+ * GHP token, the ordinary Workers deployment token, or an Account API Tokens
+ * Write credential for the distinct /accounts/{id}/tokens endpoint.
  *
  * Consent is per capability and token creation. This isn't a general admin
  * proxy and does not infer authorization from model-provided chat text.
@@ -59,7 +61,7 @@ function getValidPlan(plan,id,{now=Date.now()}={}){
  return {ok:true};
 }
 async function cloudflareJSON(path,token,{method='GET',body,request=fetch}={}){
- const res=await request('https://api.cloudflare.com/client/v4/accounts/'+TOKEN_MANAGER_ACCOUNT+path,{
+ const res=await request('https://api.cloudflare.com/client/v4'+path,{
   method,redirect:'manual',signal:AbortSignal.timeout(12000),
   headers:{Authorization:'Bearer '+token,Accept:'application/json',...(body?{'Content-Type':'application/json'}:{})},
   ...(body?{body:JSON.stringify(body)}:{})
@@ -86,13 +88,14 @@ export async function issueScopedCloudflareToken(plan,parent,{
  if(!CAPABILITIES[plan?.capability])throw Error('cloudflare_capability_not_allowed');
  if(plan.expiresAt<=now||plan.expiresAt>now+TOKEN_MAX_DURATION_HOURS*3600000)
   throw Error('cloudflare_token_expiry_invalid');
- const groups=await cloudflareJSON('/tokens/permission_groups',parent,{request});
+ // User > API Tokens > Edit authorizes /user/tokens, NOT /accounts/{id}/tokens.
+ const groups=await cloudflareJSON('/user/tokens/permission_groups',parent,{request});
  const groupId=selectPermissionGroup(groups,plan.capability);
  const body={name:'Bubbles '+plan.capability+' '+plan.requestId.slice(-12),
   expires_on:new Date(plan.expiresAt).toISOString(),
   policies:[{effect:'allow',permission_groups:[{id:groupId}],
    resources:{['com.cloudflare.api.account.'+TOKEN_MANAGER_ACCOUNT]:'*'}}]};
- const minted=await cloudflareJSON('/tokens',parent,{request,method:'POST',body});
+ const minted=await cloudflareJSON('/user/tokens',parent,{request,method:'POST',body});
  if(typeof minted?.id!=='string'||typeof minted?.value!=='string'||minted.value.length<20)
   throw Error('cloudflare_provisioning_receipt_incomplete');
  return {id:minted.id,secret:minted.value,scope:plan.capability,expiresAt:plan.expiresAt};
