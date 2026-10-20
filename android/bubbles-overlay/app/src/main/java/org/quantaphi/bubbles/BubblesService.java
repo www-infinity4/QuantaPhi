@@ -648,6 +648,10 @@ public final class BubblesService extends Service {
                         if (count <= 0) throw new IllegalStateException("Microphone read failed: " + count);
                         try { if (!screenAudioPaused) screenAudio.append(samples, count); }
                         catch (Exception error) {
+                            // A recording is no longer complete if shared audio fails.
+                            // Report why Android stopped rather than saying "blocked".
+                            BrainNotes.prefs(this).edit().putString("capture_stop_reason",
+                                "Shared microphone sound failed; the recording was stopped to save available video.").apply();
                             main.post(() -> startService(new Intent(this, ScreenCaptureService.class)
                                 .setAction(ScreenCaptureService.STOP)));
                         }
