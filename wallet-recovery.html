@@ -53,6 +53,8 @@ ul{line-height:1.65;padding-left:22px;overflow-wrap:anywhere}
 <form id="ownerRecovery" hidden autocomplete="off">
 <h2>Reconnect your original Cloudflare wallet</h2>
 <p class="note">This single-use code was authorized through Cloudflare account administration. No old password or IP address is needed. It reconnects this browser or APK without moving or recreating any tokens. Your other signed-in wallet is kept separately.</p>
+<p><a href="https://unified-wallet.marvaseater.workers.dev/v1/wallet/issue-recovery" target="_blank" rel="noopener noreferrer">Verify owner with Cloudflare Access and generate a code</a></p>
+<p class="note">Cloudflare Access must first be enabled for this exact issuer path by the wallet owner. Ordinary Cloudflare API tokens are not recovery codes.</p>
 <label for="ownerRecoveryCode">One-time recovery code</label>
 <input id="ownerRecoveryCode" type="password" spellcheck="false" autocapitalize="off" autocomplete="off" maxlength="64" required>
 <button type="submit" id="redeemOwnerRecovery">Reconnect Original Wallet</button>

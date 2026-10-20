@@ -78,6 +78,52 @@ async function infinityHistory(env,account,url){
  * username or displayed balance. Redemption enrolls a new device hash into
  * the EXISTING account without editing any balance or ledger event.
  */
+/**
+ * Cloudflare Access owner-only issuer for the existing hashed wrc_ grant schema.
+ * Must be protected by a path-scoped Access application as well as these Worker
+ * checks. Without an authenticated Access invocation and explicit owner
+ * mapping, this route is disabled. It never accepts an account ID from a client.
+ */
+async function issueOwnerRecovery(request,env,ctx){
+  const denied=()=>new Response('Cloudflare Access owner authorization is required.',{status:403,headers:{'Cache-Control':'no-store'}});
+  if(!ctx?.access || !env.RECOVERY_ACCESS_AUD ||
+     !env.RECOVERY_OWNER_EMAIL || !env.RECOVERY_OWNER_ACCOUNT_ID ||
+     ctx.access.aud!==env.RECOVERY_ACCESS_AUD || !env.IDENTITY_DB)return denied();
+  let verified;
+  try{verified=await ctx.access.getIdentity()}catch{return denied()}
+  if(!verified?.email || verified.email.trim().toLowerCase()!==String(env.RECOVERY_OWNER_EMAIL).trim().toLowerCase())return denied();
+  if(!['GET','POST'].includes(request.method))return new Response('Method not allowed',{status:405});
+  const secureHeaders={
+    'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store, private',
+    'Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff',
+    'X-Frame-Options':'DENY',
+    'Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'"
+  };
+  const page=(body,status=200)=>new Response('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cloudflare Wallet Recovery</title><style>body{max-width:600px;margin:3rem auto;padding:1rem;font:17px system-ui;color:#342445}main{padding:20px;border:1px solid #c9b5df;border-radius:16px}button,a{font:inherit;padding:12px;display:inline-block}button{background:#602b99;color:white;border:0;border-radius:10px}code{overflow-wrap:anywhere}</style></head><body><main><h1>Restore original Cloudflare wallet</h1>'+body+'</main></body></html>',{status,headers:secureHeaders});
+  if(request.method==='GET')return page('<p>Only the Cloudflare Access-verified owner may issue a one-time recovery code. No wallet balance will change.</p><form method="POST"><button type="submit">Generate one-time recovery code</button></form>');
+  const actualOrigin=new URL(request.url).origin;
+  if(request.headers.get('Origin')!==actualOrigin)return denied();
+  const site=request.headers.get('Sec-Fetch-Site');
+  if(site && site!=='same-origin' && site!=='none')return denied();
+  const account=await env.IDENTITY_DB.prepare('SELECT id,username FROM accounts WHERE id=?1')
+    .bind(env.RECOVERY_OWNER_ACCOUNT_ID).first();
+  if(!account?.id || !String(account.username).startsWith('device_'))
+    return page('<p>The original device account has not been configured or confirmed.</p>',409);
+  const bytes=crypto.getRandomValues(new Uint8Array(32));
+  const code='wrc_'+btoa(String.fromCharCode(...bytes)).replaceAll('+','-').replaceAll('/','_').replace(/=+$/,'');
+  const hash=await digest(code),now=Date.now(),expires=now+15*60*1000;
+  const recorded=await env.IDENTITY_DB.prepare(
+    'INSERT INTO wallet_recovery_grants (claim_hash,account_id,created_at,expires_at,consumed_at) '+
+    'SELECT ?1,?2,?3,?4,NULL WHERE '+
+    '(SELECT COUNT(*) FROM wallet_recovery_grants WHERE account_id=?2 AND created_at>?5)<3 '+
+    'AND NOT EXISTS (SELECT 1 FROM wallet_recovery_grants WHERE account_id=?2 AND created_at>?6) '+
+    'RETURNING claim_hash'
+  ).bind(hash,account.id,now,expires,now-60*60*1000,now-60*1000).first();
+  if(!recorded?.claim_hash)return page('<p>A recovery code was issued recently. For safety, please use it or retry later.</p>',429);
+  const destination='https://quantaphi.org/wallet-recovery.html#ownerRecovery='+code;
+  return page('<p>Code issued for your existing wallet. It expires in 15 minutes and can only be used once.</p><p><code>'+code+'</code></p><p><a href="'+destination+'">Open the wallet recovery screen with this code</a></p><p>If you are restoring the APK, use its recovery screen to enter this code instead. Keep it private.</p>');
+}
+
 async function redeemRecovery(request,env){
   const origin=request.headers.get('Origin')||'';
   if(!ALLOWED_ORIGINS.has(origin))throw Object.assign(new Error('origin_not_allowed'),{status:403});
@@ -156,5 +202,5 @@ async function spend(request,env,account){
   const row=await env.DB.prepare('SELECT infinity_balance FROM unified_wallet_state WHERE user_id=?1').bind(account.id).first(); const balance=Number(row?.infinity_balance||0); if(balance<amount)throw Object.assign(new Error('insufficient_balance'),{status:409}); const next=balance-amount;
   await env.DB.batch([env.DB.prepare('UPDATE unified_wallet_state SET infinity_balance=?2,updated_at=?3 WHERE user_id=?1').bind(account.id,next,now),env.DB.prepare("INSERT INTO unified_wallet_events(event_id,idempotency_key,user_id,asset_code,event_type,amount,balance_after,reference_id,metadata_json,created_at) VALUES(?1,?2,?3,'INFINITY','SPEND',?4,?5,?6,?7,?8)").bind('uwe_'+crypto.randomUUID(),key,account.id,-amount,next,clean(input.referenceId,160),JSON.stringify(input.metadata||{}),now)]); return {ok:true,replayed:false,balance:next};
 }
-export default {async fetch(request,env){ if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(request)}); const url=new URL(request.url); if(url.pathname==='/health')return json(request,{ok:true,service:'unified-wallet',version:1}); if(url.pathname==='/unified-wallet.js')return new Response(CLIENT_SCRIPT,{headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'public, max-age=300','X-Content-Type-Options':'nosniff',...cors(request)}}); try{if(url.pathname==='/internal/bot-work-credit'&&request.method==='POST'){const key=request.headers.get('X-Bot-Work-Key')||'';if(!env.BOT_WORK_SECRET||await digest(key)!==await digest(env.BOT_WORK_SECRET))return json(request,{ok:false,error:'bot_work_authorization_required'},401);const raw=await request.text();if(raw.length>8000)return json(request,{ok:false,error:'credit_payload_too_large'},413);return json(request,await payBotWork(env,JSON.parse(raw)));}if(url.pathname==='/v1/wallet/redeem-recovery'&&request.method==='POST')return json(request,await redeemRecovery(request,env)); const account=await identity(request,env); if(url.pathname==='/v1/wallet/state'&&request.method==='GET')return json(request,await state(env,account)); if(url.pathname==='/v1/wallet/infinity-history'&&request.method==='GET')return json(request,await infinityHistory(env,account,url)); if(url.pathname==='/v1/wallet/import'&&request.method==='POST')return json(request,await importLegacy(request,env,account)); if(url.pathname==='/v1/tokens/mint'&&request.method==='POST')return json(request,await mintToken(request,env,account),201); if(url.pathname==='/v1/wallet/spend'&&request.method==='POST')return json(request,await spend(request,env,account)); return json(request,{error:'not_found'},404)}catch(error){return json(request,{error:error.message||'internal_error'},error.status||500)}}};
+export default {async fetch(request,env,ctx){ if(request.method==='OPTIONS')return new Response(null,{status:204,headers:cors(request)}); const url=new URL(request.url); if(url.pathname==='/health')return json(request,{ok:true,service:'unified-wallet',version:1}); if(url.pathname==='/unified-wallet.js')return new Response(CLIENT_SCRIPT,{headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'public, max-age=300','X-Content-Type-Options':'nosniff',...cors(request)}}); try{if(url.pathname==='/internal/bot-work-credit'&&request.method==='POST'){const key=request.headers.get('X-Bot-Work-Key')||'';if(!env.BOT_WORK_SECRET||await digest(key)!==await digest(env.BOT_WORK_SECRET))return json(request,{ok:false,error:'bot_work_authorization_required'},401);const raw=await request.text();if(raw.length>8000)return json(request,{ok:false,error:'credit_payload_too_large'},413);return json(request,await payBotWork(env,JSON.parse(raw)));}if(url.pathname==='/v1/wallet/issue-recovery')return issueOwnerRecovery(request,env,ctx);if(url.pathname==='/v1/wallet/redeem-recovery'&&request.method==='POST')return json(request,await redeemRecovery(request,env)); const account=await identity(request,env); if(url.pathname==='/v1/wallet/state'&&request.method==='GET')return json(request,await state(env,account)); if(url.pathname==='/v1/wallet/infinity-history'&&request.method==='GET')return json(request,await infinityHistory(env,account,url)); if(url.pathname==='/v1/wallet/import'&&request.method==='POST')return json(request,await importLegacy(request,env,account)); if(url.pathname==='/v1/tokens/mint'&&request.method==='POST')return json(request,await mintToken(request,env,account),201); if(url.pathname==='/v1/wallet/spend'&&request.method==='POST')return json(request,await spend(request,env,account)); return json(request,{error:'not_found'},404)}catch(error){return json(request,{error:error.message||'internal_error'},error.status||500)}}};
 
