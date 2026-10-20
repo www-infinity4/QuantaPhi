@@ -187,7 +187,19 @@ export function githubAdapter(config, request = githubRequest) {
 const CLOUDFLARE_SCOPES=Object.freeze({
   'account.read':['user-details.read','memberships.read'],
   'projects.build':['workers-scripts.admin','d1.write','page.write'],
-  'ledger.read':['d1.read']
+  'ledger.read':['d1.read'],
+  // One owner-approved full PROJECT toolkit. Not billing, membership changes,
+  // API-token administration, or arbitrary account-level impersonation.
+  'projects.full':[
+    'workers-scripts.admin','workers-routes.read','workers-routes.write',
+    'd1.read','d1.write','page.read','page.write',
+    'workers-kv-storage.read','workers-kv-storage.write',
+    'workers-r2.read','workers-r2.write',
+    'queues.read','queues.write',
+    'ai.read','ai.write','browser-rendering.read','browser-rendering.write',
+    'containers.read','containers.write','workers-observability.read',
+    'dns.read','dns.write'
+  ]
 });
 const cfScopes=actions=>[...new Set(actions.flatMap(a=>{
   if(!Object.hasOwn(CLOUDFLARE_SCOPES,a))throw Error('unsupported_action');

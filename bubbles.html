@@ -132,7 +132,7 @@
           <h3>Cloudflare sign-in</h3>
           <p id="bubblesCloudflareStatus">Checking your project permissions…</p>
           <button id="bubblesCloudflareSignIn" type="button" disabled>Checking Cloudflare…</button>
-          <small>Approve Cloudflare account, D1 ledger and website-build permissions on Cloudflare's own consent screen. This is separate from wallet recovery.</small>
+          <details class="bubbles-permission-preview"><summary>Review full project access request</summary><p>Workers, Workers routes, Pages, D1, KV, R2, Queues, Workers AI, Browser Rendering, Containers, observability and DNS. Cloudflare itself must confirm the requested permissions. This does not grant billing, account-membership administration, or API-token creation.</p></details><small>One-time authorization, encrypted server-side with refresh/revoke. Bubbles cannot claim full access without Cloudflare's approval.</small>
         </article>
       </div>
       <div class="bubbles-signin-controls">
@@ -174,7 +174,7 @@
     <p class="bubbles-page-note">Bubbles uses QuantaPhi services. Connected accounts and Android screen access each require your permission; a queued job is not a verified deployment.</p>
   </main>
   <script type="module">
-    import {mountBubblesSigninGate} from '/bubbles-signin-gate.mjs?v=20261019-stage2';
+    import {mountBubblesSigninGate} from '/bubbles-signin-gate.mjs?v=20261020-full-project';
     mountBubblesSigninGate();
   </script>
 </body>

@@ -103,10 +103,10 @@ export function mountConnections(container,{token}) {
         const button=element('button',(provider.configured?'Connect ':'Unavailable: ')+(NAMES[provider.id]||provider.id),'ba-control');button.type='button';button.disabled=!provider.configured;
         if(provider.configured)available=true;
         button.addEventListener('click',async()=>{
-          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):provider.id==='cloudflare'?['account.read','projects.build','ledger.read']:['repository.read'];
+          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):provider.id==='cloudflare'?['account.read','projects.build','ledger.read','projects.full']:['repository.read'];
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';return;}
           try {await client.connect(provider.id,actions,(error,account)=>{
-            status.textContent=error?error.message:'Connected '+account.label+'.';if(!error)void load();
+            status.textContent=error?error.message:provider.id==='cloudflare'&&!account.grantedActions?.includes('projects.full')?'Cloudflare returned limited permission. Full project access is not yet approved.':'Connected '+account.label+'.';if(!error)void load();
           });status.textContent='Finish authorization in the sign-in window.';}catch(error){status.textContent=error.message;}
         });catalog.append(button);
       }
