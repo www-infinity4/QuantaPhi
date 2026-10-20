@@ -844,7 +844,7 @@ if(!embedded){
  browserLaunch.addEventListener('click',async()=>{
   browserLaunch.disabled=true;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-android-scroll1');
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-skill-routing2');
    const view=module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders});
    view.openBrowserControls?.();
    toggle(true);
@@ -938,7 +938,7 @@ if(!embedded){
  chatScroll.prepend(browserHome);
  panel.insertBefore(quick,chatScroll);
  const loadBrowser=async()=>{
-  const module=await import('/bubbles-cloud-browser.mjs?v=20261020-android-scroll1');
+  const module=await import('/bubbles-cloud-browser.mjs?v=20261020-skill-routing2');
   return module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders});
  };
  const grantBridge=async()=>{
@@ -1896,7 +1896,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   ||/^(?:(?:hey|okay|please|bubbles)[,\s]+)*(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(spoken))){
   let intent=null;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-android-scroll1');
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-skill-routing2');
    intent=module.browserSpeechIntent(spoken);
    if(intent){
     busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
@@ -2125,7 +2125,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const townFollowup=/Which town and state should I use for your weather/i.test(lastAssistant)&&/^[a-z0-9 ,.'-]{2,75}$/i.test(request);
  const weatherFollowup=/^(?:(?:and|what|how) (?:about )?)?tomorrow[?.! ]*$/i.test(request)&&/weather|forecast|temperature|precipitation/i.test(lastAssistant);
  const lookupRequest=townFollowup?'weather in '+request:weatherFollowup?'weather tomorrow':request;
- const liveLookup=/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it|what(?:'s| is) it like outside|conditions outside)\b/i.test(lookupRequest)
+ const liveLookup=/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it|what(?:'s| is) it like outside|conditions outside|do i need an umbrella)\b/i.test(lookupRequest)
   ||/^\s*(?:(?:please|bubbles[, ]+|can you |could you )\s*)?(?:google|search|research|investigate|look up|find online|browse the web)\b/i.test(lookupRequest)
   ||/\b(?:search the web|search google|look up online|find it online|latest information|latest updates|what(?:'s| is) the latest)\b/i.test(lookupRequest);
  let savedWeatherTown='';
