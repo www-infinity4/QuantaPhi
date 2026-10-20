@@ -2,7 +2,37 @@
 // The browser page is real hosted Chrome Live View, not an ordinary iframe
 // pretending to click cross-origin websites. Provider logins stay in Chrome.
 const SERVICE='https://bubbles-cloud-browser.marvaseater.workers.dev/v1/browser';
-let panelInstance=null;
+let panelInstance=null, agent=null;
+
+const destinations={starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
+export function browserSpeechIntent(input){
+ const utterance=String(input||'').trim().replace(/^(?:hey |okay |please |bubbles[, ]+)+/i,'');
+ if(!/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b/i.test(utterance))return null;
+ const url=utterance.match(/https:\/\/[^\s"'<>]+/i)?.[0]||'';
+ if(/\b(?:open|go to|visit|navigate|launch|load)\b/i.test(utterance)){
+  const name=Object.keys(destinations).find(k=>new RegExp('\\b'+k+'\\b','i').test(utterance));
+  const target=url||destinations[name]||'';
+  return target?{action:'navigate',url:target}:{action:'help'};
+ }
+ if(/\b(?:click|tap|press)\b/i.test(utterance)){
+  const found=utterance.match(/\b(?:click|tap|press)\s+(?:on\s+)?["'“]?(.+?)["'”]?\s+(?:in|on|with|using)\s+(?:the\s+)?(?:cloud|remote|chrome)?\s*browser\b/i);
+  return found?{action:'click',label:found[1].replace(/^["'“]|["'”]$/g,'').trim()}:{action:'help'};
+ }
+ if(/\b(?:type|enter|fill)\b/i.test(utterance)){
+  const found=utterance.match(/\b(?:type|enter|fill)\s+["'“](.+?)["'”]\s+(?:in|into)\s+(?:the\s+)?(.+?)\s+(?:in|on)\s+(?:the\s+)?(?:cloud|remote|chrome)?\s*browser\b/i);
+  return found?{action:'type',value:found[1],field:found[2]}:{action:'help'};
+ }
+ if(/\b(?:read|inspect|review|examine|summarize|see|what(?:'s| is) on)\b/i.test(utterance))return {action:'read'};
+ return {action:'help'};
+}
+export async function browserConversation(command,{host,ownerHeaders}){
+ const intent=browserSpeechIntent(command);if(!intent)return null;
+ if(intent.action==='help')return 'I can open pages, inspect their text, click safe navigation controls and type into ordinary text fields in my Cloudflare cloud browser. Try: open StarQuest in the cloud browser, or read the page in the cloud browser. Account approvals and payments must be done manually.';
+ mount({host,ownerHeaders});
+ if(!agent)throw Error('browser_control_not_ready');
+ return agent.run(intent);
+}
+
 const element=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
 export function mount({host,ownerHeaders}){
  if(panelInstance){panelInstance.hidden=false;return panelInstance;}
@@ -48,7 +78,7 @@ export function mount({host,ownerHeaders}){
  }
  const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add])b.disabled=value;};
  const show=(result)=>{
-   if(result.sessionId)state={sessionId:result.sessionId,proof:result.proof||state?.proof};
+   if(result.sessionId)state={sessionId:result.sessionId,proof:result.proof||state?.proof,targetId:result.targetId||state?.targetId};
    if(result.url){
      const u=new URL(result.url);
      if(u.protocol!=='https:'||u.hostname!=='live.browser.run')throw Error('unexpected_browser_view_host');
@@ -68,5 +98,20 @@ export function mount({host,ownerHeaders}){
  add.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('tab',{url:address.value})});
  refresh.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('view')});
  stop.addEventListener('click',()=>{if(state)void action('stop');else status.textContent='No live Chrome session to stop.'});
+ agent={async run(intent){
+  const requested=intent.action==='navigate'?{action:state?'navigate':'start',url:intent.url}:intent;
+  if(!state&&requested.action!=='start')return 'Start Cloud Chrome in Bubbles first, then ask me to read or interact with its current page.';
+  if(requested.action==='start'){
+   const result=await call('start',{url:requested.url});show(result);
+   return 'Cloud Chrome opened '+requested.url+'. Actual browser session created; you can inspect the live page in the Bubbles panel.';
+  }
+  const result=await call(requested.action,requested);
+  if(result.ok!==true||result.result?.ok===false)return 'Cloud browser action was not performed: '+String(result.result?.error||result.error||'not_verified');
+  if(requested.action==='navigate')return 'Cloud Chrome navigation requested for '+requested.url+'. Ask me to read the page to check the loaded result.';
+  if(requested.action==='read')return 'Cloud browser read: '+String(result.result?.title||'Untitled')+' · '+String(result.result?.url||'')+'\n'+String(result.result?.text||'').slice(0,7000);
+  if(requested.action==='click')return 'Cloud browser clicked '+String(result.result?.label||requested.label)+'. Ask me to read the page to verify the result.';
+  if(requested.action==='type')return 'Cloud browser typed '+result.result.characters+' characters in '+String(result.result.field||'the field')+'. I did not submit the form.';
+  return 'Browser action completed with a server receipt.';
+ }};
  return wrap;
 }
