@@ -163,7 +163,7 @@ export function mount({host,ownerHeaders,reveal=false}){
  frame.setAttribute('allow','clipboard-read; clipboard-write; fullscreen');
  frame.style.cssText='display:none;width:100%;height:min(68vh,520px);min-height:320px;border-radius:10px;border:1px solid #c5badd';
  wrap.append(frame);
- const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. Phone website and Desktop website change the actual remote Chrome layout. To see your physical Android screen, Bubbles APK must share a fresh device frame with Android permission; this cloud browser cannot see it yet. Sign into ChatGPT and Gemini interactively using your chosen account (different Google emails are allowed). A login does not automatically authorize Bubbles to read private chat history or use another provider's API. Sessions are temporary; Stop ends remote Chrome.');
+ const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. Phone website and Desktop website change the actual remote Chrome layout. To see your physical Android screen, Bubbles APK must share a fresh device frame with Android permission; this cloud browser cannot see it yet. Sign into ChatGPT and Gemini interactively using your chosen account (different Google emails are allowed). A login does not automatically authorize Bubbles to read private chat history or use another provider API. Sessions are temporary; Stop ends remote Chrome.');
  note.style.cssText='font-size:12px;line-height:1.5;margin:10px 0 0';wrap.append(note);
  // The approval is the FIRST visible item. Advanced Chrome controls remain
  // reachable by expanding one native <details> inside the chat's scroll owner.
