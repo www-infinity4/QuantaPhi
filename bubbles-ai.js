@@ -2070,7 +2070,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted'){
     recordBrainNotice('GitHub accepted the workflow dispatch. This is not an execution result.');
    }
-   workEvidence=(await humanReplies()).githubReply(result);
+   if(args.action==='list_workflows'&&result.ok===true&&result.complete===true&&Array.isArray(result.workflows)){
+    const names=result.workflows.filter(item=>item.state==='active').slice(0,12)
+     .map(item=>String(item.name||item.path||'').slice(0,90)).filter(Boolean);
+    workEvidence='GitHub Actions workflows: '+(names.length?names.join(', '):'No active workflows returned')+
+     '. This is a verified read-only listing. No workflow was run.';
+   }else workEvidence=(await humanReplies()).githubReply(result);
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
  }
  else if(!embedded&&isOwnerWorkRequest(request)){
