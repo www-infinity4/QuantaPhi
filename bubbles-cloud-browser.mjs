@@ -6,8 +6,20 @@ let panelInstance=null, agent=null;
 const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
 export function browserSpeechIntent(input){
  const utterance=String(input||'').trim().replace(/^(?:hey |okay |please |bubbles[, ]+)+/i,'');
- if(!/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b/i.test(utterance))return null;
+ const explicit=/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b|\bbrowser run\b/i.test(utterance);
+ // Short, explicit app-opening requests are browser actions even if the person
+ // does not say the magic words "cloud browser" each time.
+ const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
+ if(!explicit&&!namedOpen)return null;
  const url=utterance.match(/https:\/\/[^\s"'<>]+/i)?.[0]||'';
+ // Real research uses Chrome search results, not a model claiming a page was read.
+ // Preserve the user's query as typed; do not submit forms or approve accounts.
+ const search=explicit&&utterance.match(/\b(?:search(?:\s+(?:google|the web))?|look up|find)\s+(?:for\s+)?(.+)$/i);
+ if(search){
+  const query=search[1].replace(/\s+(?:in|using|with|on)\s+(?:the\s+)?(?:cloud|remote|chrome)\s+browser(?:\s+for\s+me)?[.!?]*$/i,'').replace(/[.!?]+$/,'').trim();
+  if(query&&query.length>1&&!/^(?:in|the|browser)$/i.test(query))
+   return {action:'navigate',url:'https://www.google.com/search?q='+encodeURIComponent(query.slice(0,350))};
+ }
  // A request to connect the cloud browser starts the existing owner-scoped Chrome session.
  // This does not grant any additional Robot Brain, GitHub, or ChatGPT permissions.
  if(/\b(?:plug\s*(?:in|into)?|connect|start|activate|enable)\b/i.test(utterance))
@@ -184,7 +196,7 @@ export function mount({host,ownerHeaders}){
  }
  const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,cloudflare,phonePreview,desktopPreview])b.disabled=value;};
  const show=(result)=>{
-   if(result.sessionId)state={sessionId:result.sessionId,proof:result.proof||state?.proof};
+   if(result.sessionId)state={sessionId:result.sessionId,proof:result.proof||state?.proof,targetId:result.targetId||state?.targetId};
    if(result.url){
      const u=new URL(result.url);
      if(u.protocol!=='https:'||u.hostname!=='live.browser.run')throw Error('unexpected_browser_view_host');
