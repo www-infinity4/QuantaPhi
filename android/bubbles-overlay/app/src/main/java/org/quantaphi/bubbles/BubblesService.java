@@ -75,10 +75,16 @@ public final class BubblesService extends Service {
     // The screen recorder consumes the SAME PCM frames as Vosk. Android may
     // silence one client when MediaRecorder opens a second microphone.
     private final VoiceRecording screenAudio = new VoiceRecording();
+    private volatile boolean screenAudioPaused = false;
+    static void setScreenAudioPaused(boolean paused) {
+        BubblesService service = activeImageService;
+        if (service != null) service.screenAudioPaused = paused;
+    }
     static VoiceRecording beginScreenAudio() throws Exception {
         BubblesService service = activeImageService;
         if (service == null || !service.connected || service.muted || !service.captureRunning)
             throw new IllegalStateException("Bubbles voice must be listening before recording");
+        service.screenAudioPaused = false;
         service.screenAudio.start(new java.io.File(service.getFilesDir(), "captures"));
         // Capture holds this session even if the voice service is destroyed/restarted.
         return service.screenAudio;
@@ -637,7 +643,7 @@ public final class BubblesService extends Service {
                     while (captureRunning && connected && !muted) {
                         int count = input.read(samples, 0, samples.length);
                         if (count <= 0) throw new IllegalStateException("Microphone read failed: " + count);
-                        try { screenAudio.append(samples, count); }
+                        try { if (!screenAudioPaused) screenAudio.append(samples, count); }
                         catch (Exception error) {
                             main.post(() -> startService(new Intent(this, ScreenCaptureService.class)
                                 .setAction(ScreenCaptureService.STOP)));
@@ -926,6 +932,20 @@ public final class BubblesService extends Service {
             state("room", .08f);
             return;
         }
+        // Tap-to-talk is deliberately short-lived. Ordinary room audio must not
+        // generate chat turns, recordings or phone actions indefinitely.
+        // The direct wake phrase renews this window; no voiceprint is claimed.
+        if (!typed) {
+            if (directed || suffixCapture) {
+                activeUntil = now + 30000L;
+                voiceFollowups = 0;
+            } else if (now > activeUntil || voiceFollowups >= MAX_VOICE_FOLLOWUPS) {
+                BrainNotes.prefs(this).edit().putString("last_suppressed_source",
+                    "Unaddressed audio ignored; say Bubbles or tap the orb").apply();
+                state("listening", .04f);
+                return;
+            } else voiceFollowups++;
+        }
         if (!SpeechSourceGate.mayDispatch(typed,
                 playbackAwareness != null && playbackAwareness.mediaPlaying(), directed || suffixCapture)) {
             // Background phone audio is not authorization to speak or run jobs.
@@ -984,6 +1004,17 @@ public final class BubblesService extends Service {
                             : "No recording is active.";
                     }
                     speak(result);
+                    break;
+                }
+                case "screen_pause":
+                case "screen_resume": {
+                    Intent control = new Intent(this, ScreenCaptureService.class)
+                        .setAction("screen_pause".equals(command.action)
+                            ? ScreenCaptureService.PAUSE : ScreenCaptureService.RESUME);
+                    if (BrainNotes.prefs(this).getBoolean("capture_active", false))
+                        startService(control);
+                    else BrainNotes.prefs(this).edit().putString("capture_state",
+                        "Screen recording is not active").apply();
                     break;
                 }
                 case "sound_start":
