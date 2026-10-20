@@ -38,7 +38,7 @@ function dom(){
   remove(){this.parentNode=null;}
  }
  const playButton={textContent:'Play',click(){new Media().play();}};
- const frameDoc={querySelector:selector=>selector==='#play-btn'?playButton:null,querySelectorAll:selector=>selector==='audio,video'?[]:[{textContent:'Play',getAttribute:()=>null,disabled:false}]};
+ const frameDoc={querySelector:selector=>['#play-btn','#musicPlay'].includes(selector)?playButton:null,querySelectorAll:selector=>selector==='audio,video'?[]:[{textContent:'Play',getAttribute:()=>null,disabled:false}]};
  globalThis.document={createElement:tag=>{const node=new Node(tag);if(tag==='iframe'){node.contentDocument=frameDoc;node.contentWindow={location:{origin:'https://quantaphi.org'},HTMLMediaElement:Media,document:frameDoc,addEventListener(){}};}return node;}};
  globalThis.location={origin:'https://quantaphi.org'};
  return {Node,media};
