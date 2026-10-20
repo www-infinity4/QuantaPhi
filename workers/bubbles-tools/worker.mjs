@@ -275,11 +275,22 @@ async function runMcpRead(request,env,command){
  return result.json();
 }
 async function runChatModel(env,model,options){
- try{return await env.AI.run(model,options)}
- catch(firstError){
-  // A single reduced-cost retry preserves the original system and user prompt.
-  // Network or inference failure must never be reported as a completed action.
-  return env.AI.run(model,{...options,reasoning_effort:'medium',max_tokens:Math.min(options.max_tokens||650,650)});
+ try{
+  const first=await env.AI.run(model,options);
+  return {...first,verifiedModel:model};
+ }catch{
+  try{
+   const retry=await env.AI.run(model,{...options,reasoning_effort:'medium',
+    max_tokens:Math.min(options.max_tokens||650,650)});
+   return {...retry,verifiedModel:model};
+  }catch{
+   // Use the smaller, documented Cloudflare Workers AI model rather than
+   // failing the entire conversation after one provider/model outage.
+   const fallbackModel='@cf/openai/gpt-oss-20b';
+   const fallback=await env.AI.run(fallbackModel,{...options,reasoning_effort:'low',
+    max_tokens:Math.min(options.max_tokens||650,650)});
+   return {...fallback,verifiedModel:fallbackModel};
+  }
  }
 }
 async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
@@ -307,7 +318,7 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
  }
  if(dubious())output=groundedWorkFallback(userRequest);
  return response(request,{...(evidence||{}),ok:true,output:output.trim(),output_text:output.trim(),
-  provider:'cloudflare-workers-ai',model,
+  provider:'cloudflare-workers-ai',model:result.verifiedModel||model,
   receipt:{...receipt,status:evidence?.receipt?.status||'complete',repositoryActionsVerified:false}});
 
 }
