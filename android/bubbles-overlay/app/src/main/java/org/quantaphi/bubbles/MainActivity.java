@@ -88,7 +88,7 @@ public final class MainActivity extends Activity {
         refreshRecommendedSetup.run();
         layout.addView(recommended);
         Button connect = new Button(this);
-        connect.setText("Enable the floating Bubbles assistant");
+        connect.setText("Start or resume Bubbles voice");
         connect.setOnClickListener(view -> checkAndStart());
         layout.addView(connect);
 
@@ -585,7 +585,7 @@ public final class MainActivity extends Activity {
         // Advanced diagnostics, recorder, IBM/Gemini and learning settings
         // are still present in their original order when expanded.
         java.util.List<View> essentials = java.util.Arrays.asList(
-            title, copy, recommended, screenPermission, screenAccess, chromeSite,
+            title, copy, recommended, connect, screenPermission, screenAccess, chromeSite,
             accountState, chatgptLogin, chatgptLogout, githubAccess, chat, stop, state);
         LinearLayout advanced = new LinearLayout(this);
         advanced.setOrientation(LinearLayout.VERTICAL);
@@ -617,7 +617,7 @@ public final class MainActivity extends Activity {
         if (view instanceof Button) {
             Button button=(Button)view;
             String label=button.getText().toString().toLowerCase(java.util.Locale.ROOT);
-            boolean primary=label.contains("enable the floating") ||
+            boolean primary=label.contains("start or resume bubbles voice") ||
                 label.equals("continue with chatgpt") || label.equals("send") ||
                 label.contains("save brain name");
             boolean warning=label.contains("stop bubbles and release");
@@ -861,9 +861,11 @@ public final class MainActivity extends Activity {
         }
         try {
             Intent intent = new Intent(this, BubblesService.class);
+            if (BubblesService.isSessionRunning())
+                intent.setAction(BubblesService.ACTION_RESUME);
             if (Build.VERSION.SDK_INT >= 26) startForegroundService(intent);
             else startService(intent);
-            state.setText("Bubbles started. Just speak your request. The bubble remains visible above other apps.");
+            state.setText("Requested Bubbles listening. When the orb is active, say Bubbles to show chat or Bubbles hideaway to hide it.");
         } catch (Exception error) {
             state.setText("Android could not start the microphone service: " + error.getClass().getSimpleName());
         }
