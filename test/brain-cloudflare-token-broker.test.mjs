@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {validateTokenIntent,planCloudflareToken,confirmCloudflareToken,
- issueScopedCloudflareToken,TOKEN_MANAGER_ACCOUNT} from '../workers/infinity-brain-clock/cloudflare-token-broker.mjs';
+ issueScopedCloudflareToken,TOKEN_MANAGER_ACCOUNT,parentTokenManager} from '../workers/infinity-brain-clock/cloudflare-token-broker.mjs';
 const now=Date.parse('2026-10-18T01:00:00Z');
 function mockStorage(){
  const map=new Map();
@@ -50,6 +50,27 @@ test('a five-minute token proposal needs an explicit owner approval and contains
  const expired=await confirmCloudflareToken(storage,{requestId:plan.requestId},env,{now:now+300001,
   request:async()=>assert.fail('must not access API')});
  assert.equal(expired.error,'cloudflare_token_approval_expired');
+});
+test('owner-installed mixed-case Worker secret is reusable without making another token',async()=>{
+ const configured={...env,CLOUDFLARE_TOKEN_MANAGER:undefined,
+  Cloudflare_token_manager:env.CLOUDFLARE_TOKEN_MANAGER};
+ assert.equal(parentTokenManager(configured),env.CLOUDFLARE_TOKEN_MANAGER);
+ const storage=mockStorage();
+ const plan=await planCloudflareToken(storage,{purpose:'Build verified QuantaPhi website',durationHours:2},
+  configured,{now});
+ assert.equal(plan.managerConfigured,true);
+ const calls=[];
+ const minted=await confirmCloudflareToken(storage,{requestId:plan.requestId},configured,
+  {now:now+1000,request:fakeCloudflare(calls)});
+ assert.equal(minted.status,'created_server_side');
+ assert.equal(calls.length,2);
+ assert.equal(calls[1].path,'/client/v4/user/tokens');
+ assert.equal(JSON.stringify(minted).includes(childSecret),false);
+ assert.equal(parentTokenManager({
+  CLOUDFLARE_TOKEN_MANAGER:'canonical-secret-with-enough-characters',
+  Cloudflare_token_manager:'secondary-secret-with-enough-characters'}),
+  'canonical-secret-with-enough-characters','canonical secret wins on future rotation');
+ assert.equal(parentTokenManager({Cloudflare_token_manager:'short'}),'');
 });
 test('actual Cloudflare POST only requests bounded scripts permissions for the one owner account',async()=>{
  const plan=validateTokenIntent({purpose:'Deploy verified Bubbles website',durationHours:24},{now});

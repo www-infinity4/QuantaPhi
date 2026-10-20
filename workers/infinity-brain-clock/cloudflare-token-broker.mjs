@@ -33,6 +33,13 @@ export const CAPABILITIES=Object.freeze({
 const HEX=/^[a-f0-9]{32}$/i;
 const ID=/^cft_[a-f0-9-]{36}$/;
 const encode=value=>new TextEncoder().encode(String(value));
+// Cloudflare Worker secret names are case-sensitive. Support the existing
+// owner-created secret without asking the owner to generate it again.
+// Prefer the documented canonical spelling if both are ever configured.
+export function parentTokenManager(env){
+ const value=env?.CLOUDFLARE_TOKEN_MANAGER || env?.Cloudflare_token_manager;
+ return typeof value==='string' && value.length>20 ? value : '';
+}
 function fail(code,status=400){return {ok:false,status:'blocked',error:code,httpStatus:status};}
 export function validateTokenIntent(body,{now=Date.now()}={}){
  const capability=body?.capability||'workers-script-edit';
@@ -118,7 +125,7 @@ export async function planCloudflareToken(storage,body,env,{now=Date.now()}={}){
  if(!result.ok)return result;
  const plan={...result,status:'owner_approval_required'};
  await storage.put('cloudflare-token-plan:'+result.requestId,plan);
- return {...result,managerConfigured:typeof env.CLOUDFLARE_TOKEN_MANAGER==='string'&&env.CLOUDFLARE_TOKEN_MANAGER.length>20};
+ return {...result,managerConfigured:!!parentTokenManager(env)};
 }
 export async function confirmCloudflareToken(storage,body,env,{
  now=Date.now(),request=fetch
@@ -129,7 +136,8 @@ export async function confirmCloudflareToken(storage,body,env,{
  const plan=await storage.get(key);
  const valid=getValidPlan(plan,id,{now});
  if(!valid.ok)return valid;
- if(!env.CLOUDFLARE_TOKEN_MANAGER)return fail('cloudflare_token_manager_not_configured',503);
+ const parent=parentTokenManager(env);
+ if(!parent)return fail('cloudflare_token_manager_not_configured',503);
  if(typeof env.BOT_WORK_SECRET!=='string'||env.BOT_WORK_SECRET.length<24)
   return fail('cloudflare_token_vault_secret_unavailable',503);
  // DO storage transaction first reserves the one-time approval. Concurrent
@@ -142,7 +150,7 @@ export async function confirmCloudflareToken(storage,body,env,{
  });
  if(!claimed)return fail('cloudflare_token_approval_already_processed',409);
  try{
-  const issued=await issueScopedCloudflareToken(plan,env.CLOUDFLARE_TOKEN_MANAGER,{request,now});
+  const issued=await issueScopedCloudflareToken(plan,parent,{request,now});
   // Always keep the minted token server-side and encrypted. No API endpoint
   // returns the value or permits arbitrary model/website access to it.
   const sealed=await encryptForVault(issued.secret,env);
