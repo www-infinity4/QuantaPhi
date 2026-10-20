@@ -31,6 +31,7 @@ public final class MainActivity extends Activity {
     private Runnable refreshScreenPermission;
     private Runnable refreshChatGPTStatus;
     private Runnable refreshRecommendedSetup;
+    private Runnable refreshPrimaryControls;
     private final java.util.concurrent.ExecutorService mediaWork = java.util.concurrent.Executors.newSingleThreadExecutor();
     private static final int SCREEN_REQUEST = 63, CAMERA_REQUEST = 64, IMAGE_REQUEST = 65,
         PHONE_AUDIO_REQUEST = 66, CAPCUT_MEDIA_REQUEST = 67;
@@ -54,13 +55,11 @@ public final class MainActivity extends Activity {
         layout.addView(title);
 
         TextView copy = new TextView(this);
-        copy.setText("Use Recommended setup, approve Android permissions, then say Bubbles to open the assistant. "
-            + "Screen access stays under your Android control. Say 'Bubbles, record' to request screen-recording approval. "
-            + "Say Bubbles to show the chat, Bubbles hideaway to tuck it back into the orb, or tap ✕ Hide. " 
-            + "Tap the orb for a 30-second conversation window; say Bubbles again to reopen it. " 
-            + "While recording, say Bubbles pause recording, resume recording or stop recording. " 
-            + "Use Chrome to install the same Bubbles website as a home-screen app. Say 'open Bubbles in Chrome' or "
-            + "'tap Search in Chrome' for visible browser controls. Chrome logins are not imported automatically into the native overlay.");
+        // The normal phone screen is a launcher, not a control dashboard.
+        // Opening the orb is sufficient; a wake phrase is never required.
+        copy.setText("Tap Start and allow Android microphone/overlay permission. "
+            + "Tap the Bubbles orb to open chat, and use Hide to tuck it away. "
+            + "Other tools and optional permissions are under More settings.");
         copy.setTextColor(Color.rgb(101, 83, 111));
         copy.setTextSize(16);
         copy.setPadding(0, 25, 0, 25);
@@ -185,7 +184,7 @@ public final class MainActivity extends Activity {
         TextView voiceStatus = new TextView(this);
         voiceStatus.setTextColor(Color.rgb(48, 36, 62));
         voiceStatus.setTextSize(16);
-        Runnable refreshVoice = () -> voiceStatus.setText("Voice: " + BrainNotes.prefs(this).getString("voice_state", "not started")
+        Runnable refreshVoice = () -> { if (refreshPrimaryControls != null) refreshPrimaryControls.run(); voiceStatus.setText("Voice: " + BrainNotes.prefs(this).getString("voice_state", "not started")
                 + "\nAI provider: " + BrainNotes.prefs(this).getString("ai_provider", "not connected yet")
                 + "\nSpeech engine: " + getSharedPreferences(BubblesVoicePicker.PREFS, MODE_PRIVATE).getString(BubblesVoicePicker.ENGINE, "Android default")
                 + "\nVoice choice: " + getSharedPreferences(BubblesVoicePicker.PREFS, MODE_PRIVATE).getString(BubblesVoicePicker.VOICE_NAME, "system default")
@@ -200,7 +199,7 @@ public final class MainActivity extends Activity {
                 + "\nBackground phone audio: " + BrainNotes.prefs(this).getString("phone_media_state", "Not enabled")
                 + "\nLast phone audio heard: " + BrainNotes.prefs(this).getString("phone_media_last_received", "Nothing transcribed")
                 + "\nLast room words heard: " + BrainNotes.prefs(this).getString("room_notes_last_received", "No room notes")
-                + "\nBackground issue: " + BrainNotes.prefs(this).getString("phone_media_last_failure", "None recorded"));
+                + "\nBackground issue: " + BrainNotes.prefs(this).getString("phone_media_last_failure", "None recorded")); };
         refreshStatus = new Runnable() { public void run() { refreshVoice.run(); ui.postDelayed(this, 1000); } };
         refreshVoice.run();
         Button diagnostics = new Button(this);
@@ -252,7 +251,8 @@ public final class MainActivity extends Activity {
                 + "Your ChatGPT conversations, memories and ChatGPT voice are not shared. "
                 + "Your sign-in tokens remain encrypted on this phone; Oracle remains available otherwise. "
                 + "ChatGPT sign-in does not authorize QuantaPhi wallet transfers; they need a separate verified wallet signature. "
-                + "GPT image generation and GPT Live voice are not included with this connection.");
+                + "GPT image generation and GPT Live voice are not included with this connection. "
+            + "Chrome logins are not imported automatically.");
         chatgptNotice.setTextColor(Color.rgb(101, 83, 111));
         layout.addView(chatgptNotice);
         Button naturalVoice = new Button(this);
@@ -581,12 +581,11 @@ public final class MainActivity extends Activity {
 
 
 
-        // Default to essential controls. Keep Stop permanently visible.
-        // Advanced diagnostics, recorder, IBM/Gemini and learning settings
-        // are still present in their original order when expanded.
+        // Only required, context-sensitive controls belong on the phone's first screen.
+        // All optional permissions, account links, recording and diagnostics stay intact
+        // and available on demand, but do not obscure Start / Chat / Stop.
         java.util.List<View> essentials = java.util.Arrays.asList(
-            title, copy, recommended, connect, screenPermission, screenAccess, chromeSite,
-            accountState, chatgptLogin, chatgptLogout, githubAccess, chat, stop, state);
+            title, copy, connect, chat, stop, state);
         LinearLayout advanced = new LinearLayout(this);
         advanced.setOrientation(LinearLayout.VERTICAL);
         advanced.setVisibility(View.GONE);
@@ -605,6 +604,15 @@ public final class MainActivity extends Activity {
         });
         layout.addView(more);
         layout.addView(advanced);
+        refreshPrimaryControls = () -> {
+            boolean running = BubblesService.isSessionRunning();
+            String voice = BrainNotes.prefs(this).getString("voice_state", "not started");
+            boolean needsStart = !running || "muted".equals(voice) || "error".equals(voice);
+            connect.setVisibility(needsStart ? View.VISIBLE : View.GONE);
+            chat.setVisibility(running ? View.VISIBLE : View.GONE);
+            stop.setVisibility(running ? View.VISIBLE : View.GONE);
+        };
+        refreshPrimaryControls.run();
         styleOracleControls(layout);
         ScrollView scroll=new ScrollView(this);
         scroll.setBackgroundColor(Color.rgb(251, 247, 238));
