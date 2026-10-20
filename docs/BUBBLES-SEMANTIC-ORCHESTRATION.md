@@ -89,9 +89,22 @@ repository writer or disabling its owner policy.
 The existing GPT-OSS conversational turn now advertises the **four existing
 read-only MCP tools**. A model can select one through a single structured
 function call without hearing literal "MCP" or "use the tools". Strict MCP
-schemas are applied before any call. If it selects a tool, a second tool-free
-model pass can explain the verified result. Ordinary conversation is still
-one model call. No permission escalation or new external tool is introduced.
+schemas are applied before any call. If it selects a tool, the existing deterministic adapter returns its
+natural-language result and actual receipt directly. This prevents a second
+model pass from inventing or altering a verified measurement. Ordinary
+conversation is still one model call. No permission escalation or new external tool is introduced.
+
+The compiler is in `workers/bubbles-tools/semantic-read-plan.mjs`.
+It verifies that numerical component values and units match the original
+utterance, that a weather place was actually named, and that a search topic
+has a source-grounded subject. If the request is unresolved, it returns
+`waiting` with a specific missing-value question and runs no tool. The
+response marks `finished` only from a returned `complete` tool receipt;
+other receipt states are labeled `blocked` or `waiting`. Four paraphrases
+of one resonance goal and six ambiguous/unsafe cases are exercised in
+`test/bubbles-semantic-tools.test.mjs`. This tests the **mocked structured
+model decision plus the real deterministic read adapter**. It is not a
+live-model paraphrase benchmark or a production phone test.
 
 This phase does **not** introduce multi-step execution into the public Bubbles gateway, semantic cross-repository
 writes, production deployment, new provider entitlements, owner approval
