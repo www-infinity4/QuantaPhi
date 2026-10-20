@@ -256,7 +256,7 @@ async function execute(request,env,body){
    {location:body.location||body.context?.location||''});
   if(found&&found.receipt?.tool){
    return response(request,{...found,receipt:{...found.receipt,
-    interface:'MCP',selection:'semantic_structured_function_call',
+    interface:'MCP',selection:'structured_function_call',interpretation:'semantic_read_only',
     repositoryActionsVerified:false}});
   }
  }
