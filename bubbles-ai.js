@@ -2447,16 +2447,18 @@ async function pollBrainProgress(){
   }else if(notificationPreferences.mode==='finished')updates=updates.filter(text=>/finished/.test(text));
   if(progressUnavailable)recordBrainNotice('Robot Brain is reachable again.');
   progressUnavailable=false;
-  if(updates.length)void announceBrainProgress(updates.slice(-5).join(' '));
+  if(updates.length)announceBrainProgress(updates.slice(-5).join(' '));
    if(typeof syncRedSectors==='function')void syncRedSectors().catch(()=>{if(!redLinkFailed){redLinkFailed=true;recordBrainNotice('Red-Brain connection is not responding. Ticket polling continues.');}});
  }catch{
   brainConnectionState('Brain unreachable · latest notices retained', 'unreachable');
   if(!progressUnavailable){progressUnavailable=true;recordBrainNotice('Robot Brain is unreachable. Retrying quietly; saved notices remain available.');}
  }finally{progressPolling=false;}
 }
-async function announceBrainProgress(text){
+function announceBrainProgress(text){
  recordBrainNotice(text);
- const reply=(await humanReplies()).progressReply(text);
+ // Preserve authenticated Brain wording and hide accidental internal identifiers.
+ const reply=/\b(?:request_id|ticket_id|run_id|IW-[0-9]{8})\b/i.test(String(text))
+  ?'There is a new work update. The details are in Work details.':String(text);
  display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
  if(nativeOverlay||config.voice){progressVoiceQueue.push(reply);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
 }
