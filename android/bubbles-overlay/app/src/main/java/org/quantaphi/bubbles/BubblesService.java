@@ -688,14 +688,17 @@ public final class BubblesService extends Service {
                         energyEvidence.observe(level, count);
                         main.post(() -> {
                             if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
-                                state(level > .08f ? "hearing" : turnBuffer.hasPending() ? "gathering" : "listening", level);
+                                state(SystemClock.elapsedRealtime() <= activeUntil && level > .08f ? "hearing"
+                                    : turnBuffer.hasPending() && SystemClock.elapsedRealtime() <= activeUntil ? "gathering" : "listening",
+                                    SystemClock.elapsedRealtime() <= activeUntil ? level : .04f);
                         });
                         boolean complete = speech.acceptWaveForm(samples, count);
                         if (!complete && SystemClock.elapsedRealtime() - lastPartialAt > 550L) {
                             lastPartialAt = SystemClock.elapsedRealtime();
                             final String partial = new JSONObject(speech.getPartialResult()).optString("partial", "");
                             if (!partial.isEmpty()) main.post(() -> {
-                                if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil) {
+                                if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil
+                                        && SystemClock.elapsedRealtime() <= activeUntil) {
                                     BrainNotes.prefs(this).edit().putString("last_partial", partial).apply();
                                     if (turnBuffer.observePartial(partial) && turnBuffer.hasPending())
                                         scheduleVoiceTurn(TurnCompletionPolicy.onNewPartial(turnBuffer.peek(), partial));
