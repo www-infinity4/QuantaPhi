@@ -1,4 +1,5 @@
 import {browserTool} from '../bubbles-tools/browser.mjs';
+import {processChatGPTJob,completeChatGPTMessage} from './chatgpt-bridge.mjs';
 export {BrowserConsentStore} from './consent.mjs';
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const respond=(origin,body,status=200)=>Response.json(body,{status,headers:{
@@ -29,6 +30,32 @@ export default {
    'Access-Control-Allow-Headers':'Authorization, Content-Type',
    'Access-Control-Allow-Methods':'POST, OPTIONS','Vary':'Origin'}});
   if(request.method!=='POST')return respond(origin,{ok:false,error:'method_not_allowed'},405);
+  if(path.startsWith('/v1/browser/chatgpt/')){
+   if(!(await owner(request,env)))return respond(origin,{ok:false,error:'owner_authorization_required'},403);
+   if(!env.CONSENT||!env.BRIDGE_DB)return respond(origin,{ok:false,error:'chatgpt_bridge_bindings_missing'},503);
+   let body={};try{const raw=await request.text();if(raw.length>4200)throw Error('large');
+    body=JSON.parse(raw||'{}')}catch{return respond(origin,{ok:false,error:'invalid_request'},400)}
+   const store=consentStore(env);
+   if(path==='/v1/browser/chatgpt/permission'){
+    if(body.action==='status')return respond(origin,await store.chatgptStatus());
+    if(body.action==='enable')return respond(origin,await store.enableChatGPT());
+    if(body.action==='revoke')return respond(origin,await store.revokeChatGPT());
+    return respond(origin,{ok:false,error:'unsupported_action'},400);
+   }
+   if(path==='/v1/browser/chatgpt/process'){
+    // The owner's ordinary browser-automation consent must also be active;
+    // a ChatGPT grant never silently reactivates an expired browser grant.
+    const browserConsent=await store.status();
+    if(!browserConsent.enabled)return respond(origin,{ok:false,error:'browser_consent_required'},403);
+    const result=await processChatGPTJob({db:env.BRIDGE_DB,store,request,env,body,browserTool});
+    return respond(origin,result,result.ok?200:result.status||403);
+   }
+   if(path==='/v1/browser/chatgpt/complete'){
+    const result=await completeChatGPTMessage({db:env.BRIDGE_DB,store,id:body.id,reply:body.reply});
+    return respond(origin,result,result.ok?200:result.status||403);
+   }
+   return respond(origin,{ok:false,error:'not_found'},404);
+  }
   if(path==='/v1/browser/permission'){
    if(!(await owner(request,env)))return respond(origin,{ok:false,error:'owner_authorization_required'},403);
    if(!env.CONSENT)return respond(origin,{ok:false,error:'consent_storage_unavailable'},503);
