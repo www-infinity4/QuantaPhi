@@ -126,3 +126,20 @@ test('a short orb tap resumes recognition after long-press mute', () => {
   assert.ok(tap.indexOf('if (muted) resumeSession();') < tap.indexOf('activeUntil = SystemClock.elapsedRealtime() + 30000L'));
   assert.match(source, /private void resumeSession\(\)[\s\S]*?muted = false;[\s\S]*?beginListening\(\);/);
 });
+
+test('hidden floating orb reports live microphone energy without a chat wake window', () => {
+  const audio = source.slice(source.indexOf('energyEvidence.observe(level, count);'),
+    source.indexOf('boolean complete = speech.acceptWaveForm(samples, count);'));
+  assert.match(audio, /state\(level > \.08f \? "hearing"/);
+  assert.doesNotMatch(audio, /activeUntil/);
+  const partial = source.slice(source.indexOf('final String partial ='), source.indexOf('if (complete) {',source.indexOf('final String partial =')));
+  assert.doesNotMatch(partial, /activeUntil/);
+});
+test('hidden chat accepts ordinary complete voice turns until user explicitly mutes or stops', () => {
+  const heard = source.slice(source.indexOf('private void heard(String raw, boolean typed)'), source.indexOf('private void offerCaptureApproval'));
+  assert.doesNotMatch(heard, /now > activeUntil \|\| voiceFollowups/);
+  assert.match(heard, /oracleWindow != null && oracleWindow\.sendSpoken\(addressed, ambientContext\)/);
+  assert.match(heard, /RoomNotes\.enabled\(this\)/);
+  assert.match(heard, /SpeechSourceGate\.mayDispatch\(/);
+  assert.match(source, /private void muteSession\(\)[\s\S]*?stopRecognition\(\)/);
+});
