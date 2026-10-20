@@ -24,6 +24,34 @@ export function mount({host,ownerHeaders}){
  const add=element('button','Open new tab');
  for(const button of [start,refresh,stop,add]){button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';controls.append(button);}
  wrap.append(controls,address);
+
+ const access=document.createElement('div');access.className='ba-browser-permission';
+ access.style.cssText='margin:10px 0;padding:10px;border:1px solid #cec3e5;border-radius:10px';
+ const accessState=element('p','Browser assistant: owner approval not checked.');accessState.setAttribute('role','status');accessState.style.cssText='font-size:13px;margin:0 0 8px';
+ const enable=element('button','Allow browser assistant · 5 days');
+ const revoke=element('button','Revoke browser assistant access');
+ for(const b of [enable,revoke]){b.type='button';b.style.cssText='min-height:44px;padding:8px 10px;margin:3px;border:1px solid #6d579b;border-radius:9px;background:#fff;color:#362657'}
+ access.append(accessState,enable,revoke);wrap.append(access);
+ async function permission(action){
+  enable.disabled=true;revoke.disabled=true;
+  try{
+   const headers=await ownerHeaders();
+   if(!headers?.Authorization)throw Error('Connect the verified owner session first.');
+   const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),12000);
+   let response;
+   try{response=await fetch(SERVICE.replace('/v1/browser','/v1/browser/permission'),{
+    method:'POST',headers:{'Content-Type':'application/json',...headers},
+    body:JSON.stringify({action}),signal:ctl.signal,cache:'no-store'});
+   }finally{clearTimeout(timer)}
+   const data=await response.json();
+   if(!response.ok||!data.ok)throw Error(data.error||'permission_not_confirmed');
+   accessState.textContent=data.enabled?'Browser helper approved until '+new Date(data.expiresAt).toLocaleString()+'. Browser sessions and owner verification still expire independently.':'Browser helper access is off. Manual Chrome viewing remains available.';
+  }catch(error){accessState.textContent='Permission not confirmed: '+String(error.message||error).slice(0,135);}
+  finally{enable.disabled=false;revoke.disabled=false;}
+ }
+ enable.onclick=()=>void permission('enable');
+ revoke.onclick=()=>void permission('revoke');
+
  const link=element('a','Open interactive browser in a new tab ↗');link.target='_blank';link.rel='noopener noreferrer';
  link.style.cssText='display:none;margin:8px 0;font-weight:700;color:#5430a4;word-break:break-word';
  wrap.append(link);
