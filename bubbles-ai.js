@@ -521,7 +521,7 @@ async function checkPanelGate(){
  if(!chatGate||chatGateMounted||chatGateLoading)return;
  chatGateLoading=true;
  try{
-  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261019-stage2');
+  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261019-stage3');
   chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
  }catch{
   const hint=document.getElementById('chatBubblesSigninStatus');
