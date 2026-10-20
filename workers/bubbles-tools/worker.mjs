@@ -1,3 +1,4 @@
+import {browserTool} from './browser.mjs';
 import {researchArticle} from './research.mjs';
 import {handleMcp,mcpTools,selectMcpTool} from './mcp.mjs';
 import {lookupKind,webSearch,currentWeather} from './search.mjs';
@@ -282,6 +283,7 @@ export default {async fetch(request,env){
  if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',tools:{news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
+ if(url.pathname==='/v1/browser')return browserTool(request,env);
  if(request.method==='POST'&&url.pathname==='/v1/transcribe')return transcribe(request,env);
  if(request.method==='POST'&&url.pathname==='/v1/research'){
   try{const text=await request.text();if(text.length>16000)return response(request,{ok:false,error:'body_too_large'},413);return response(request,await researchArticle(JSON.parse(text),env));}
