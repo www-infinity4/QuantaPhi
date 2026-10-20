@@ -11,7 +11,7 @@ test('Cloud chat folder health is read-only and never exposes owner tokens',asyn
  const body=await r.json();assert.equal(body.dbBound,true);assert.equal(body.brainBound,true);
  assert.equal(JSON.stringify(body).includes('owner'),false);
 });
-test('Owner's browser-only consent is not a wallet or Brain login',async()=>{
+test('Browser-only consent is not a wallet or Brain login',async()=>{
  const env={BRAIN:{fetch:async()=>({ok:true})},WORK_DB:{prepare:()=>assert.fail('unverified browser should not read private cloud chats')}};
  const bad=await worker.fetch(request('/v1/folders','https://quantaphi.org','Bearer bcb_'+ 'a'.repeat(43)),env);
  assert.equal(bad.status,403);
