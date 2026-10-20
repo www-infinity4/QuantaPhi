@@ -1,5 +1,6 @@
 // Owner-authenticated caller only. Tokens stay in Worker secrets, never in prompts or receipts.
 import {directGithubTools,decodeGithubStep} from './github-tool-schema.mjs';
+import {searchGithubCode} from './github-search.mjs';
 const REPO=/^www-infinity4\/[A-Za-z0-9_.-]+$/;
 const SHA=/^[a-f0-9]{40}$/;
 export function validateRepository(value){
@@ -16,6 +17,7 @@ function branchName(value){
 }
 export async function githubOperation(env,body,request=fetch){
  const action=body.action;
+ if(action==='search_github_code')return searchGithubCode(env,body,request);
  if(action==='list_repositories'){
   if(!env.GITHUB_TOKEN) return {ok:false,status:'blocked',error:'github_runtime_credential_missing'};
   const repositories=[];
