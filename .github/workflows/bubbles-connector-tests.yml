@@ -12,6 +12,7 @@ on:
       - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
       - 'test/starcoin-github-backup.test.mjs'
+      - 'test/bubbles-auto-starcoin-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
   push:
     branches: [main]
@@ -25,6 +26,7 @@ on:
       - 'test/bubbles-home-account-link.test.mjs'
       - 'test/bubbles-connections*.test.mjs'
       - 'test/starcoin-github-backup.test.mjs'
+      - 'test/bubbles-auto-starcoin-backup.test.mjs'
       - '.github/workflows/bubbles-connector-tests.yml'
 
 permissions:
@@ -49,4 +51,5 @@ jobs:
             test/bubbles-signin-gate.test.mjs \
             test/bubbles-connector-pairing.test.mjs \
             test/bubbles-home-account-link.test.mjs \
-            test/starcoin-github-backup.test.mjs
+            test/starcoin-github-backup.test.mjs \
+            test/bubbles-auto-starcoin-backup.test.mjs
