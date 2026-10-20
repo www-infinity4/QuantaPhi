@@ -691,17 +691,18 @@ public final class BubblesService extends Service {
                         energyEvidence.observe(level, count);
                         main.post(() -> {
                             if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil)
-                                state(SystemClock.elapsedRealtime() <= activeUntil && level > .08f ? "hearing"
-                                    : turnBuffer.hasPending() && SystemClock.elapsedRealtime() <= activeUntil ? "gathering" : "listening",
-                                    SystemClock.elapsedRealtime() <= activeUntil ? level : .04f);
+                                // The microphone and orb remain responsive with the chat hidden.
+                                // A wake/follow-up window controls UI shortcuts, not visible mic energy.
+                                state(level > .08f ? "hearing"
+                                    : turnBuffer.hasPending() ? "gathering" : "listening",
+                                    level > .08f ? level : .04f);
                         });
                         boolean complete = speech.acceptWaveForm(samples, count);
                         if (!complete && SystemClock.elapsedRealtime() - lastPartialAt > 550L) {
                             lastPartialAt = SystemClock.elapsedRealtime();
                             final String partial = new JSONObject(speech.getPartialResult()).optString("partial", "");
                             if (!partial.isEmpty()) main.post(() -> {
-                                if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil
-                                        && SystemClock.elapsedRealtime() <= activeUntil) {
+                                if (connected && !muted && !speaking && SystemClock.elapsedRealtime() >= echoQuietUntil) {
                                     BrainNotes.prefs(this).edit().putString("last_partial", partial).apply();
                                     if (turnBuffer.observePartial(partial) && turnBuffer.hasPending())
                                         scheduleVoiceTurn(TurnCompletionPolicy.onNewPartial(turnBuffer.peek(), partial));
@@ -1001,19 +1002,13 @@ public final class BubblesService extends Service {
             state("room", .08f);
             return;
         }
-        // Tap-to-talk is deliberately short-lived. Ordinary room audio must not
-        // generate chat turns, recordings or phone actions indefinitely.
-        // The direct wake phrase renews this window; no voiceprint is claimed.
-        if (!typed) {
-            if (directed || suffixCapture) {
-                activeUntil = now + 30000L;
-                voiceFollowups = 0;
-            } else if (now > activeUntil || voiceFollowups >= MAX_VOICE_FOLLOWUPS) {
-                BrainNotes.prefs(this).edit().putString("last_suppressed_source",
-                    "Unaddressed audio ignored; say Bubbles or tap the orb").apply();
-                state("listening", .04f);
-                return;
-            } else voiceFollowups++;
+        // Keep ordinary hands-free conversation active even with the chat hidden.
+        // The named wake remains available for showing the panel; Room Notes,
+        // speaker-playback rejection, transcript plausibility, and explicit
+        // user mute/Stop continue to protect unrelated audio and privacy.
+        if (!typed && (directed || suffixCapture)) {
+            activeUntil = now + 30000L;
+            voiceFollowups = 0;
         }
         if (!SpeechSourceGate.mayDispatch(typed,
                 playbackAwareness != null && playbackAwareness.mediaPlaying(), directed || suffixCapture)) {
