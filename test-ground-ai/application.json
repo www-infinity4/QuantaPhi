@@ -1,0 +1,24 @@
+{
+  "name": "Test Ground AI",
+  "version": 1,
+  "repository": "www-infinity4/QuantaPhi",
+  "branch": "feature/test-ground-ai-and-card-apps-20261020",
+  "source": "QuantaPhi Oracle Octaves",
+  "files": [
+    "test-ground-ai/index.html",
+    "test-ground-ai/engine.mjs",
+    "test-ground-ai/ui.mjs"
+  ],
+  "capabilities": [
+    "real-bubbles-chat-probes",
+    "repository-read-lookup",
+    "json-drafting",
+    "index-authoring",
+    "receipt-checks"
+  ],
+  "walletPolicy": {
+    "diagnosticClicksMint": false,
+    "verifiedLedgerRequired": true
+  },
+  "status": "sandbox-coded-not-yet-live-tested"
+}
