@@ -76,6 +76,18 @@
    const last=await recent(12),related=await search(q,8),ids=new Set(last.map(e=>e.id));
    const archived=related.filter(e=>!ids.has(e.id)).reverse();
    const items=[...archived,...last];let result='';
+   // Durable synapses are explicit saved owner notes, never model commands.
+   // Include provenance so a source hint isn't mistaken for a verified fact.
+   if(cloud){
+    try{
+     const found=await recall(q,5);
+     for(const note of found){
+      const line='Saved note ['+note.topic+', '+note.basis+', '+(note.repository||note.source)+
+       ', '+note.id+']: '+note.text.slice(0,420)+'\n';
+      if(result.length+line.length<2300)result+=line;
+     }
+    }catch{/* Local transcript retrieval still works offline. */}
+   }
    for(const e of items){const line=e.role+': '+e.text.slice(0,900)+'\n';
     if(result.length+line.length>7800)break;result+=line;}
    return result;
@@ -85,6 +97,24 @@
    let j={};try{j=await r.json()}catch{}
    if(!r.ok||!j.ok)throw Error(j.error||('memory_http_'+r.status));
    return j;
+  }
+  // Explicit, authenticated semantic memory: the website and APK share the
+  // same wallet owner partition. Passive ambient speech is never promoted.
+  async function remember(text,{repository='',topic='',source='owner_note',sessionId='',messageId='',relatedTo=[]}={}){
+   if(!enabled||!cloud)throw Error('Connect and enable private Bubbles memory before saving a durable note.');
+   const note={id:uid(),text:String(text||''),at:Date.now(),repository,topic,source,sessionId,messageId,relatedTo};
+   const result=await remoteFetch('/v1/synapses',{method:'POST',body:JSON.stringify({notes:[note]})});
+   if(result.accepted!==1)throw Error('Memory was not confirmed saved.');
+   return result.routed[0];
+  }
+  async function recall(query,limit=8){
+   if(!enabled||!cloud)return [];
+   const result=await remoteFetch('/v1/synapses?q='+encodeURIComponent(String(query||'').slice(0,200))+'&limit='+Math.max(1,Math.min(20,limit)));
+   return result.memories||[];
+  }
+  async function forgetSynapse(id){
+   if(!enabled||!cloud)throw Error('Private memory must be connected to delete a saved note.');
+   return remoteFetch('/v1/synapses',{method:'DELETE',body:JSON.stringify({id})});
   }
   async function connect(){
    const connection=global.QuantaCloudConnection;
@@ -150,7 +180,7 @@
   }
   function setEnabled(value){enabled=value===true;if(!enabled){cloud=false;token='';clearInterval(clock)}}
   function onUpdate(handler){onChange=typeof handler==='function'?handler:()=>{}}
-  return {setEnabled,onUpdate,append,appendAll,recent,search,context,connect,sync,clear,
+  return {setEnabled,onUpdate,append,appendAll,recent,search,context,remember,recall,forgetSynapse,connect,sync,clear,
     get cloudConnected(){return cloud},get enabled(){return enabled}};
  }
  global.BubblesMemory=create();
