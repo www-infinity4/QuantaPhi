@@ -20,7 +20,7 @@ test('screen capture is saved before foreground service shutdown', () => {
   const screen = source('ScreenCaptureService.java');
   assert.match(screen, /CapturePublisher\.publish\(this, completed, type\)/);
   assert.match(screen, /pendingPublications\+\+/);
-  assert.match(screen, /if \(!finished \|\| pendingPublications > 0\) return/);
+  assert.match(screen, /if \(!finished \|\| finalizingMedia \|\| pendingPublications > 0\) return/);
   assert.match(screen, /capture_active", false/);
   assert.match(screen, /stopIfPublished\(\)/);
 });

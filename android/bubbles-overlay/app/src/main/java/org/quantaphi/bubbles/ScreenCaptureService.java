@@ -28,6 +28,8 @@ public final class ScreenCaptureService extends Service {
     private File capturedAudio;
     private boolean finished, recordingStarted, recordingPaused;
     private int pendingPublications = 0;
+    // Do not tear down the service while MediaRecorder is still stopping on the worker.
+    private boolean finalizingMedia;
     private final ExecutorService mediaExport = Executors.newSingleThreadExecutor();
     private File sequenceDirectory;
     private int captureCount;
@@ -230,15 +232,27 @@ public final class ScreenCaptureService extends Service {
         mediaExport.execute(() -> {
             String outcome;
             try {
+                String soundWarning = "";
                 if (type.startsWith("video/")) {
-                    if (audio == null) throw new IOException("Shared microphone audio was unavailable; video retained privately");
-                    SharedScreenAudioMuxer.combine(completed, audio);
+                    if (audio == null) {
+                        soundWarning = " · video only; shared microphone audio unavailable";
+                    } else {
+                        try {
+                            SharedScreenAudioMuxer.combine(completed, audio);
+                        } catch (Exception soundError) {
+                            // Never lose an otherwise valid screen video just because
+                            // the phone's AAC encoder/muxer cannot process its audio.
+                            soundWarning = " · video only; microphone processing failed";
+                            BrainNotes.prefs(this).edit().putString("capture_export_error",
+                                "Sound processing: " + soundError.getClass().getSimpleName()).apply();
+                        }
+                    }
                 }
                 android.net.Uri saved = CapturePublisher.publish(this, completed, type);
-                if (audio != null) audio.delete();
+                if (audio != null && soundWarning.isEmpty()) audio.delete();
                 String library = type.startsWith("video/") ? "Movies" : "Pictures";
                 BrainNotes.prefs(this).edit().putString("capture_uri", saved.toString()).apply();
-                outcome = "Saved " + completed.getName() + " to " + library + "/Bubbles";
+                outcome = "Saved " + completed.getName() + " to " + library + "/Bubbles" + soundWarning;
             } catch (Exception error) {
                 outcome = "Gallery export failed (" + error.getClass().getSimpleName()
                     + "); original remains in Bubbles private storage";
@@ -256,7 +270,7 @@ public final class ScreenCaptureService extends Service {
         });
     }
     private void stopIfPublished() {
-        if (!finished || pendingPublications > 0) return;
+        if (!finished || finalizingMedia || pendingPublications > 0) return;
         stopForeground(STOP_FOREGROUND_REMOVE);
         stopSelf();
         mediaExport.shutdown();
@@ -268,46 +282,86 @@ public final class ScreenCaptureService extends Service {
         finishCapture();
     }
     private void finishCapture() {
+        // Android may deliver Stop from speech, the notification and the
+        // projection callback close together. Only the first owns cleanup.
         if (finished) return;
         finished = true;
-        BubblesService.setScreenAudioPaused(false);
-        BrainNotes.prefs(this).edit().putBoolean("capture_active", false).putBoolean("capture_recording", false).putBoolean("capture_paused", false).apply();
+        BrainNotes.prefs(this).edit().putBoolean("capture_active", false)
+            .putBoolean("capture_recording", false).putBoolean("capture_paused", false).apply();
         main.removeCallbacksAndMessages(null);
         if (sequenceDirectory != null) {
             BrainNotes.prefs(this).edit().putString("capture_state", "Screen series finished: "
                 + captureCount + " screenshots saved locally").apply();
         }
+        if (recorder != null) {
+            // MediaRecorder.stop(), AAC encoding and Gallery export are expensive
+            // on the Moto G Pure. They must NEVER block the Android main thread.
+            final MediaRecorder stoppingRecorder = recorder; recorder = null;
+            final VoiceRecording stoppingAudio = sharedAudio; sharedAudio = null;
+            final VirtualDisplay stoppingDisplay = display; display = null;
+            final MediaProjection stoppingProjection = projection; projection = null;
+            final boolean wasStarted = recordingStarted;
+            final boolean wasPaused = recordingPaused;
+            final File video = file;
+            finalizingMedia = true;
+            BrainNotes.prefs(this).edit().putString("capture_state",
+                "Stopping video and processing recording…").apply();
+            mediaExport.execute(() -> {
+                File sound = null;
+                boolean validVideo = false;
+                try {
+                    if (stoppingAudio != null) sound = stoppingAudio.finish();
+                } catch (Exception error) {
+                    BrainNotes.prefs(this).edit().putString("capture_export_error",
+                        "Shared microphone finalization: " + error.getClass().getSimpleName()).apply();
+                } finally {
+                    BubblesService.setScreenAudioPaused(false);
+                }
+                try {
+                    if (wasStarted) {
+                        if (wasPaused) stoppingRecorder.resume();
+                        stoppingRecorder.stop();
+                        validVideo = true;
+                    }
+                } catch (RuntimeException error) {
+                    stopReason("Android video finalization failed (" + error.getClass().getSimpleName() + ").");
+                } finally {
+                    try { stoppingRecorder.release(); } catch (RuntimeException ignored) {}
+                    try { if (stoppingDisplay != null) stoppingDisplay.release(); } catch (RuntimeException ignored) {}
+                    try { if (stoppingProjection != null) stoppingProjection.stop(); } catch (RuntimeException ignored) {}
+                }
+                if (validVideo) {
+                    capturedAudio = sound;
+                    savePath("video/mp4");
+                } else {
+                    // Don't destroy potentially recoverable raw footage.
+                    String reason = BrainNotes.prefs(this).getString("capture_stop_reason", "");
+                    BrainNotes.prefs(this).edit().putString("capture_state",
+                        "Video could not finalize; unfinished file kept in Bubbles private storage"
+                        + (reason.isEmpty() ? "" : " · " + reason)).apply();
+                }
+                main.post(() -> {
+                    finalizingMedia = false;
+                    stopIfPublished();
+                });
+            });
+            return;
+        }
+        // Screenshot mode and partially-started sessions need no video encoder.
+        BubblesService.setScreenAudioPaused(false);
         if (sharedAudio != null) {
-            try { capturedAudio = sharedAudio.finish(); }
-            catch (Exception error) {
-                BrainNotes.prefs(this).edit().putString("capture_export_error", "Shared microphone finalization failed").apply();
-            }
+            try { sharedAudio.finish(); } catch (Exception ignored) {}
             sharedAudio = null;
         }
-        if (recorder != null) {
-            boolean valid = false;
-            if (recordingStarted) {
-                try {
-                    if (recordingPaused) { recorder.resume(); recordingPaused = false; }
-                    recorder.stop(); valid = true;
-                } catch (Exception ignored) {}
-            }
-            recorder.release(); recorder = null;
-            if (valid) savePath("video/mp4");
-            else {
-                if (file != null) file.delete();
-                String reason = BrainNotes.prefs(this).getString("capture_stop_reason", "");
-                BrainNotes.prefs(this).edit().putString("capture_state",
-                    "Screen recording did not finalize; no video was saved" + (reason.isEmpty() ? "" : " · " + reason)).apply();
-            }
+        if (display != null) {
+            try { display.release(); } catch (RuntimeException ignored) {}
+            display = null;
         }
-        if (display != null) { display.release(); display = null; }
         if (images != null) { images.close(); images = null; }
-        if (projection != null) { projection.stop(); projection = null; }
-        // The MP4 owns its audio track. Do not unexpectedly stop and save a
-        // separate microphone recording the user may have started independently.
-        // MediaStore copies can take longer than stopping MediaRecorder.
-        // Keep the capture service alive until Gallery publication completes.
+        if (projection != null) {
+            try { projection.stop(); } catch (RuntimeException ignored) {}
+            projection = null;
+        }
         stopIfPublished();
     }
     @Override public IBinder onBind(Intent intent) { return null; }
