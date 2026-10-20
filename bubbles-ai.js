@@ -490,6 +490,42 @@ launcher.append(create('span','ba-orb-shine'),create('span','ba-orb-center'));la
 const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('aria-label','Bubbles AI messenger');
 const header=create('header','ba-header');const name=create('strong','',config.alias||'Bubbles');const close=create('button','ba-close','×');close.type='button';close.setAttribute('aria-label','Close Bubbles');
 header.append(name,close);
+// The same wallet-scoped two-account setup appears at the start of first-party
+// Bubbles chat (including the Android WebView). Preview never blocks chat.
+const chatGate=embedded?null:create('section','ba-inline-account-gate');
+let chatGateMounted=false,chatGateLoading=false;
+if(chatGate){
+ chatGate.id='chatBubblesSigninGate';
+ chatGate.setAttribute('aria-label','GitHub and Cloudflare account permissions');
+ const heading=create('strong','ba-inline-account-title','GitHub & Cloudflare sign-in');
+ const hint=create('p','ba-inline-account-hint','Checking your saved account permissions…');
+ hint.id='chatBubblesSigninStatus';hint.setAttribute('role','status');hint.setAttribute('aria-live','polite');
+ chatGate.append(heading,hint);
+ for(const [provider,label] of [['Github','GitHub'],['Cloudflare','Cloudflare']]){
+  const card=create('div','ba-inline-account-provider');
+  card.id='chatBubbles'+provider+'Card';
+  const title=create('strong','',label);
+  const state=create('small','','Checking saved authorization…');
+  state.id='chatBubbles'+provider+'Status';
+  const button=create('button','ba-control','Checking '+label+'…');
+  button.id='chatBubbles'+provider+'SignIn';button.type='button';button.disabled=true;
+  card.append(title,state,button);chatGate.append(card);
+ }
+ const retry=create('button','ba-control','Check sign-ins again');
+ retry.id='chatBubblesRetrySignInCheck';retry.type='button';
+ chatGate.append(retry);
+}
+async function checkPanelGate(){
+ if(!chatGate||chatGateMounted||chatGateLoading)return;
+ chatGateLoading=true;
+ try{
+  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261019-stage2');
+  chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
+ }catch{
+  const hint=document.getElementById('chatBubblesSigninStatus');
+  if(hint)hint.textContent='Account sign-ins are temporarily unavailable. Bubbles chat remains available.';
+ }finally{chatGateLoading=false;}
+}
 const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then speak naturally.');
 const ownerMode=create('small','ba-owner-status',embedded?'Independent visitor assistant':'Owner tools: checking Unified Wallet…');
 ownerMode.hidden=embedded;
@@ -732,7 +768,7 @@ pairingCode.addEventListener('click',()=>pairingCode.select());
   catch{pairingCode.select();status.textContent='Select and copy the code manually.'}
  });
  pairingCard.append(pairingInstructions,pairingCode,pairingCopy);
- panel.append(header,status,ownerMode,createOwnerCode,ownerCodeHelp,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
+ panel.append(header,...(chatGate?[chatGate]:[]),status,ownerMode,createOwnerCode,ownerCodeHelp,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,composer,tools);
 if(nativeOverlay){
  // Owner pairing uses the same chat composer, never a separate paste form.
  ownerMode.textContent='Robot Brain not linked';
@@ -753,6 +789,7 @@ if(nativeOverlay){
  // The composer and its visible feedback remain reachable at every scroll position.
  panel.insertBefore(chatScroll,header);
  chatScroll.append(ownerMode,linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus,recorderStatus,recorderStop,pairingCard,conversation,tools);
+ if(chatGate)chatScroll.insertBefore(chatGate,ownerMode);
  // Keep options accessible above long transcripts, within the same scroll surface.
  chatScroll.insertBefore(tools,conversation);
  composer.prepend(status);
@@ -1234,6 +1271,7 @@ function toggle(open){
  showing=Boolean(open);panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
  if(embedded)window.parent.postMessage({type:'quantaphi:bubbles:size',open:showing},'*');
  if(showing){
+  if(chatGate)void checkPanelGate();
   if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. Once connected, just speak naturally. Say stop listening to mute.','ai',true);greeted=true}
   input.focus();
  }
