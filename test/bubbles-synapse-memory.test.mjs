@@ -22,7 +22,9 @@ test('related notes only resolve within the rows belonging to that owner',()=>{
 });
 function fixture(){
  const rows=[];
- const db={prepare(sql){return{bind(...args){return{
+ const db={prepare(sql){return{
+ async run(){if(sql.startsWith('CREATE'))return {meta:{changes:0}};throw Error('Unexpected unbound SQL: '+sql)},
+ bind(...args){return{
   async run(){
    if(sql.startsWith('CREATE'))return {meta:{changes:0}};
    if(sql.startsWith('INSERT OR IGNORE INTO bubbles_synapses')){
