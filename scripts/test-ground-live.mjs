@@ -12,7 +12,7 @@ async function requestBubbles(t){
  const startedAt=new Date().toISOString();
  try{
   const response=await fetch(API+'/v1/assist',{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://quantaphi.org'},
-   body:JSON.stringify({request:t.request}),signal:AbortSignal.timeout(45000)});
+   body:JSON.stringify({request:t.request,mcp:t.mcp===true}),signal:AbortSignal.timeout(45000)});
   const body=await response.json();
   const judgement=auditReply(t,{...body,ok:response.ok&&body?.ok===true});
   const line={test:t.id,question:t.request,http:response.status,tool:body?.receipt?.tool||'none',
@@ -30,6 +30,21 @@ try{
  results.push({test:'github-http',state:res.ok&&json.full_name===SANDBOX_REPO?'passed':'unverified',http:res.status,repository:json.full_name||null});
 }catch(e){results.push({test:'github-http',state:'unverified',reason:String(e?.message||e)})}
 for(const t of TESTS)await requestBubbles(t);
+// Conversation first: these probes ask the deployed Bubbles AI in natural
+// language, not its local parser or an imitation model. Keep writes disabled.
+const SEMANTIC_DIALOGUES=[
+ {id:'semantic-starter',expectedTool:'semantic.intent',mcp:true,
+  request:'Bubbles, I want one shared meaning pipeline rather than memorized commands. Grammar Phi interprets language and uncertainty; QuantaPhi supplies memory and evidence; reasoning plans a permitted action; Code Phi and Robot Brain execute only with authenticated receipts; you explain completed, blocked or waiting states. Explain what you can actually verify in this conversation and what still requires a source or permission. Do not claim a code edit.'},
+ {id:'weather-jacket',expectedTool:'weather.current',mcp:true,
+  request:'I am heading outside in Albia Iowa; should I bring a jacket? Please check real conditions instead of guessing.'},
+ {id:'weather-chilly',expectedTool:'weather.current',mcp:true,
+  request:'How chilly does it feel around Albia, Iowa this afternoon? Please verify the forecast.'},
+ {id:'weather-outdoors',expectedTool:'weather.current',mcp:true,
+  request:'Could you find out what it feels like outdoors in Albia, Iowa and where the report came from?'},
+ {id:'weather-ambiguous',expectedTool:'weather.current',mcp:true,
+  request:'Is it cold where I am? I have not shared my location in this request; please do not invent a city.'}
+];
+for(const turn of SEMANTIC_DIALOGUES)await requestBubbles(turn);
 const summary={health,passed:results.filter(r=>r.state==='passed').length,
  unverified:results.filter(r=>r.state==='unverified').length,
  flagged:results.filter(r=>r.state==='flagged').length,
