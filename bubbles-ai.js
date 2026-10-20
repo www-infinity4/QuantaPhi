@@ -912,6 +912,9 @@ if(!nativeOverlay&&!embedded){
  // Website and APK share one message/options scroll owner and a reachable composer.
  panel.insertBefore(chatScroll,conversation);
  chatScroll.append(ownerMode,linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus,recorderStatus,recorderStop,memoryHint,pairingCard,conversation,tools);
+ // A full GitHub/Cloudflare sign-in card outside the thread can consume the
+ // entire phone viewport and clip the permanent five-day approval control.
+ if(chatGate)chatScroll.insertBefore(chatGate,ownerMode);
  composer.insertBefore(status,input);
 }
 if(embedded){
@@ -957,6 +960,8 @@ if(!embedded){
  if(topButton){
   topButton.addEventListener('click',()=>{
    toggle(true);
+   // The account-approval button must not pop the Android keyboard.
+   input.blur();
    // The original page button uses the real authenticated grant directly.
    void grantBridge();
   });
