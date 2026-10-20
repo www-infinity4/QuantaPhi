@@ -9,7 +9,7 @@ export function browserSpeechIntent(input){
  const browser=/\b(?:cloud|remote|chrome)\s+browser\b|\bbrowser run\b|\bin (?:the )?browser\b/i.test(utterance);
  const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
  if(!browser&&!namedOpen)return null;
- const show=/\b(?:show|display|bring up|pull up|see|watch)\b/i.test(utterance)||namedOpen;
+ const show=/^(?:show|display|bring up|pull up|see|watch)\b/i.test(utterance)||namedOpen;
  const url=utterance.match(/https:\/\/[^\s"'<>]+/i)?.[0]||'';
  // Search is requested by meaning; the caller can ask to see Chrome while
  // searching, or simply get a grounded text result without opening controls.
