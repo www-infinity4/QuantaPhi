@@ -32,6 +32,10 @@ final class VoiceCaptureCommands {
         q = q.replaceFirst("^(?:please\\s+)?", "");
         q = q.replaceFirst("^(?:(?:can|could|would|will) you\\s+(?:please\\s+)?|i (?:want|need|would like) (?:you )?to\\s+|i (?:want|need) (?:a |the )?|you (?:need|have) to\\s+)", "");
         q = q.replaceFirst("^(?:please\\s+)?", "");
+        if (q.matches("^(?:pause|hold)(?: (?:the |my )?(?:screen |video )?recording)?(?: now)?$"))
+            return new Command("screen_pause", 0, 0);
+        if (q.matches("^(?:resume|unpause|continue)(?: (?:the |my )?(?:screen |video )?recording)?(?: now)?$"))
+            return new Command("screen_resume", 0, 0);
         // Pure status requests read actual service state; they never start a
         // capture or pretend that an Android consent button was pressed.
         if (q.matches("^(?:is (?:the |my )?(?:screen |sound |audio |microphone )?(?:recorder |recording )(?:on|active|running)|is it recording|are you recording|did (?:it|that) record|did (?:the )?recording save|(?:check|show|tell me) (?:the |my )?(?:recording|recorder|capture) status|(?:recording|recorder|capture) status)$"))
