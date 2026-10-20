@@ -43,6 +43,7 @@ function harness(owner=false,speech=false){
    if(body.action==='list_repositories')return {ok:true,json:async()=>({ok:true,complete:true,repositories:[{repository:'www-infinity4/QuantaPhi',archived:false}]})};
    if(body.action==='suggest_repositories')return {ok:true,json:async()=>({ok:true,source:'verified-test-catalog',catalogComplete:true,candidates:[{repository:'www-infinity4/QuantaPhi',score:20}],selection:['www-infinity4/QuantaPhi'],confidence:'high',requiresReview:false,reason:'fixture Bubbles source'})};
   }
+  if(url.endsWith('/v1/folders'))return {ok:true,json:async()=>({ok:true,saved:0,sessions:[]})};
   requests.push({url,opts});
   return {ok:true,json:async()=>url.endsWith('/work/tickets/create')?{ok:true,ticket:{id:'fixture-ticket',status:'ready',context:{kind:'robot-directions'}},execution:{status:'queued_for_runner'}}:url.endsWith('/work/run-next')?{ok:true,status:'queued_for_runner',ticketId:'fixture-ticket',jobId:'TASK-1'}:{ok:true,output:'Bubbles response from Oracle'}};
  };
