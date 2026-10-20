@@ -63,5 +63,9 @@ test('Bubbles uses owner-gated gateway and the native Chrome Live View extension
  assert.doesNotMatch(bubble,/20261019-live-chrome1/);
  assert.match(page,/bubbles-ai\.js\?v=20261020-semantic3/);
  assert.match(extension,/live\.browser\.run/);
+ assert.match(extension,/ChatGPT · sign in/);
+ assert.match(extension,/Gemini · sign in/);
+ assert.match(extension,/chatgpt:'https:\/\/chatgpt\.com\//);
+ assert.match(extension,/chat\\s\?gpt/);
  assert.doesNotMatch(extension,/localStorage|persist.*token/i);
 });
