@@ -8,6 +8,7 @@ if(!host || window.__QuantaBubblesMounted)return;
 window.__QuantaBubblesMounted=true;
 // The tool gateway delegates ordinary chat to Oracle /v1/chat.
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
+const FOLDER_API='https://bubbles-chat-folders.marvaseater.workers.dev/v1/folders';
 const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261019-words1');
 let streamVoice=null,voiceGeneration=0;
 // Core job acknowledgements must work in Android WebView even if module imports fail.
@@ -1232,7 +1233,7 @@ function renderConversationFolders(){
 }
 async function conversationApi(mode,sessionId='',extra={}){
  const headers=await verifiedOwnerHeaders();
- const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',
+ const response=await bubblesFetch(FOLDER_API,{method:'POST',
   headers:{...headers,'Content-Type':'application/json'},
   body:JSON.stringify({mode,sessionId,...extra})},12000);
  const value=await response.json();
