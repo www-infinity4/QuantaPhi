@@ -29,6 +29,8 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  const labels={github:get('bubblesGithubStatus'),cloudflare:get('bubblesCloudflareStatus')};
  const cards={github:get('bubblesGithubCard'),cloudflare:get('bubblesCloudflareCard')};
  const chat=get('bubblesAICard');
+ const backupStatus=get('bubblesBackupStatus');
+ const backupNote=text=>{if(backupStatus)backupStatus.textContent=text;};
  const openChat=get('bubblesOpenExistingChat');
  const retry=get('bubblesRetrySignInCheck');
  const client=new AccountConnections({token:()=>resolveConnectorWalletToken(host),root:host});
@@ -59,6 +61,41 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   }else setStatus('Approve both sign-ins to connect your accounts. Chat stays available during this pilot.');
   return summary;
  };
+ const bootstrap=async()=>{
+  if(!latest?.ready)return;
+  // Website and in-chat gate share the same in-flight server operation.
+  // No credential, repo name or user ID is stored in browser persistence.
+  const now=Date.now();
+  if(host.__bubblesAutoBackupPromise){
+   backupNote('Confirming the private GitHub backup…');
+  }else if(now-(host.__bubblesAutoBackupAttemptAt||0)<4000)return;
+  else{
+   host.__bubblesAutoBackupAttemptAt=now;
+   host.__bubblesAutoBackupPromise=client.call('/github/starcoins/auto-bootstrap',{})
+    .finally(()=>{host.__bubblesAutoBackupPromise=null;});
+  }
+  backupNote('Checking your verified private GitHub backup…');
+  try{
+   const result=await host.__bubblesAutoBackupPromise;
+   const status=result?.status;
+   if(['committed','already_backed_up'].includes(status)&&result?.private===true){
+    backupNote('Private StarCoin backup verified on GitHub. Complete Infinity, Quant and Music history still awaits Stage 4.');
+   }else if(status==='needs_github_app_repository_installation'){
+    backupNote('Private repository created. GitHub still needs to grant Bubbles access to that repository before a backup can be written.');
+   }else backupNote('Backup status: '+String(status||'unverified').slice(0,80)+'. No wallet balances were changed.');
+  }catch(error){
+   const code=String(error?.message||'').slice(0,120);
+   const messages={
+    backup_both_provider_authorizations_required:'Both account permissions are required before backup.',
+    github_repository_creation_permission_required:'GitHub has not permitted Bubbles to create a private repository.',
+    github_repository_name_collision_review_required:'A repository with that name already exists. It was not overwritten; manual review is required.',
+    backup_in_progress:'A backup is already being prepared; please check again.',
+    github_private_write_not_verified:'GitHub has not granted repository write permission to Bubbles.',
+    starcoin_sources_disagree:'The original wallet sources disagree. Backup is paused until they match.'
+   };
+   backupNote(messages[code]||'Private GitHub backup could not be verified. No wallet balances were changed.');
+  }
+ };
  const refresh=async()=>{
   if(loading||oauthInProgress)return latest;
   loading=true;
@@ -67,7 +104,10 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   try {
    const data=await client.call('/gate/status');
    lastChecked=Date.now();
-   return render(data);
+   const summary=render(data);
+   if(summary?.ready)void bootstrap();
+   else backupNote('First private backup will start automatically after both authorizations are verified.');
+   return summary;
   } catch(error) {
    latest=null;gate.dataset.ready='false';
    const code=String(error?.message||'');
