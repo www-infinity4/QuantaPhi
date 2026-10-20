@@ -29,7 +29,7 @@ async function identify(req,env){
 }
 export async function handle(req,env){
  const u=new URL(req.url),origin=req.headers.get('Origin')||'';
- if(u.pathname==='/health'&&req.method==='GET')return reply(origin,{ok:true,service:'bubbles-memory',authenticatedHistory:true});
+ if(u.pathname==='/health'&&req.method==='GET')return reply(origin,{ok:true,service:'bubbles-memory',authenticatedHistory:true,synapseMemory:true});
  if(!ORIGINS.has(origin))return corsError(origin);
  if(req.method==='OPTIONS')return new Response(null,{status:204,headers:{
   'access-control-allow-origin':origin,'access-control-allow-headers':'authorization, content-type',
