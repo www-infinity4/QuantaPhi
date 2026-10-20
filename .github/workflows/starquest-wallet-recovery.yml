@@ -1,0 +1,20 @@
+name: Verify StarQuest wallet recovery return
+on:
+  pull_request:
+    paths:
+      - wallet-recovery.html
+      - test/wallet-recovery-starquest-return.test.cjs
+      - .github/workflows/starquest-wallet-recovery.yml
+  push:
+    branches: [main]
+    paths:
+      - wallet-recovery.html
+      - test/wallet-recovery-starquest-return.test.cjs
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node --test test/wallet-recovery-starquest-return.test.cjs

@@ -81,6 +81,9 @@ const BRAIN='https://infinity-brain-clock.marvaseater.workers.dev';
 const RECOVERY_PARAMS=new URLSearchParams(location.search);
 const RETURN_TO_BRAIN=RECOVERY_PARAMS.get('return')==='robot-brain';
 const OPEN_VERIFICATION=RECOVERY_PARAMS.get('verify')==='1';
+// Only a hardcoded same-site return path is allowed; do not accept arbitrary redirect URLs.
+const RETURN_TO_STARQUEST=RECOVERY_PARAMS.get('returnTo')==='/TV-Database/';
+if(RETURN_TO_STARQUEST&&!RETURN_TO_BRAIN){$('back').textContent='Return to StarQuest';const link=document.querySelector('header a');link.textContent='Return to StarQuest';link.href='/TV-Database/';}
 if(RETURN_TO_BRAIN){$('back').textContent='Open Robot Brain';document.querySelector('header a').href='/#robotDirections';}
 async function timedJson(url,options,timeoutMs){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeoutMs);
@@ -229,7 +232,7 @@ $('ownerRecovery').addEventListener('submit',async event=>{
   localStorage.setItem('starquest_session',JSON.stringify({key:username,username,signedInAt:Date.now()}));
   $('ownerRecoveryCode').value='';$('ownerRecovery').hidden=true;justRecovered=true;
   await scan(username,deviceToken);
-  $('back').textContent='Open Bubbles with restored wallet';
+  $('back').textContent=RETURN_TO_STARQUEST?'Return to StarQuest':'Open Bubbles with restored wallet';
   await finishBrainRecovery(deviceToken);
   msg('Existing Cloudflare wallet restored on this device. No StarCoins, Quants or Infinity records were changed.');
  }catch(error){msg(String(error.message||error)+' The original ledger was not changed.',true)}
@@ -238,7 +241,7 @@ $('ownerRecovery').addEventListener('submit',async event=>{
 
 $('scan').addEventListener('click',run);
 $('rescan').addEventListener('click',run);
-$('back').addEventListener('click',()=>{location.assign(justRecovered?'/bubbles.html':RETURN_TO_BRAIN?'/#robotDirections':'/')});
+$('back').addEventListener('click',()=>{location.assign(RETURN_TO_BRAIN?'/#robotDirections':RETURN_TO_STARQUEST?'/TV-Database/':justRecovered?'/bubbles.html':'/')});
 $('showSignin').addEventListener('click',()=>{$('signin').hidden=false;$('username').focus()});
 $('signin').addEventListener('submit',async event=>{
  event.preventDefault();if(working)return;working=true;$('restore').disabled=true;$('results').hidden=true;
