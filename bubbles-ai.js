@@ -8,7 +8,7 @@ if(!host || window.__QuantaBubblesMounted)return;
 window.__QuantaBubblesMounted=true;
 // The tool gateway delegates ordinary chat to Oracle /v1/chat.
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
-const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261014-turn-buf1');
+const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261019-words1');
 let streamVoice=null,voiceGeneration=0;
 const brainTools=window.BubblesBrainActions||null;
 let cardWorkspaceModule,cardWorkspaceInstance,activeCardEvidence=null;
