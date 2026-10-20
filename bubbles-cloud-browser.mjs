@@ -15,7 +15,7 @@ export function browserSpeechIntent(input){
  // Real research uses Chrome search results, not a model claiming a page was read.
  // Preserve the user's query as typed; do not submit forms or approve accounts.
  const search=explicit&&utterance.match(/\b(?:search(?:\s+(?:google|the web))?|look up|find)\s+(?:for\s+)?(.+)$/i);
- if(search){
+ if(search&&!/^(?:type|enter|fill|click|tap|press)\b/i.test(utterance)){
   const query=search[1].replace(/\s+(?:in|using|with|on)\s+(?:the\s+)?(?:cloud|remote|chrome)\s+browser(?:\s+for\s+me)?[.!?]*$/i,'').replace(/[.!?]+$/,'').trim();
   if(query&&query.length>1&&!/^(?:in|the|browser)$/i.test(query))
    return {action:'navigate',url:'https://www.google.com/search?q='+encodeURIComponent(query.slice(0,350))};
