@@ -90,6 +90,29 @@ test('Cloudflare OAuth uses its real consent endpoint and verifies scopes before
  assert.deepEqual(exchanged.grantedActions,['account.read','projects.build','ledger.read']);
  assert.equal(calls.length,2);
 });
+test('Bubbles full project grant requests real provider scopes and requires every scope',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ const all=['user-details.read','memberships.read','workers-scripts.admin','d1.write','page.write','d1.read',
+   'workers-routes.read','workers-routes.write','page.read','workers-kv-storage.read','workers-kv-storage.write',
+   'workers-r2.read','workers-r2.write','queues.read','queues.write','ai.read','ai.write',
+   'browser-rendering.read','browser-rendering.write','containers.read','containers.write','workers-observability.read',
+   'dns.read','dns.write'];
+ let providerScopes=all;
+ const adapter=cloudflareAdapter({clientId:'client-id',clientSecret:'server-side',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async url=>url.endsWith('/token')?
+   Response.json({access_token:'test-token',refresh_token:'refresh',token_type:'Bearer',expires_in:3600,scope:providerScopes.join(' ')}):
+   Response.json({sub:'cloudflare-owner',email:'owner@example.test'}));
+ const actions=['account.read','projects.build','ledger.read','projects.full'];
+ const url=new URL(adapter.authorization({state:'state',challenge:'challenge',actions}));
+ const requested=new Set(url.searchParams.get('scope').split(' '));
+ for(const scope of all)assert.ok(requested.has(scope),scope+' must be requested');
+ assert.equal(requested.size,all.length,'no unreviewed OAuth scopes');
+ assert.doesNotMatch(url.href,/server-side/);
+ const complete=await adapter.exchange({code:'code',verifier:'verifier',actions});
+ assert.deepEqual(complete.grantedActions,actions);
+ providerScopes=all.filter(scope=>scope!=='queues.write');
+ const partial=await adapter.exchange({code:'code',verifier:'verifier',actions});
+ assert.deepEqual(partial.grantedActions,['account.read','projects.build','ledger.read']);
+});
 test('Cloudflare OAuth never mistakes limited consent for project management permission',async()=>{
  const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
  const adapter=cloudflareAdapter({clientId:'cf-client',clientSecret:'secret',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url)=>{
