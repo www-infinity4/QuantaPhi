@@ -16,7 +16,7 @@ public final class BubblesPanelCommandsCheck {
             expected(words, "Brain", BubblesPanelCommands.Action.HIDE);
         expected("Hey Brain", "Brain", BubblesPanelCommands.Action.SHOW);
         expected("Brain hideaway", "Brain", BubblesPanelCommands.Action.HIDE);
-        expected("Brain.*", "Brain.*", BubblesPanelCommands.Action.SHOW);
+        expected("BrainXYZ", "Brain.*", BubblesPanelCommands.Action.NONE);
         for (String words : new String[]{"the bubbles are nice", "Bubblegum",
              "record bubbles", "Bubbles record", "Bubbles go find a file",
              "someone said bubbles in a song", "no bubbles here"})
