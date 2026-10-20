@@ -1,13 +1,13 @@
 import {cards,cardIntent} from './bubbles-card-catalog.mjs';
 export {cardIntent};
 export class CardWorkspace{
- constructor(container,onEvidence=()=>{},onClose=()=>{}){
-  this.container=container;this.onEvidence=onEvidence;this.onClose=onClose;this.frames=new Map();this.active=null;
+ constructor(container,onEvidence=()=>{},onClose=()=>{},onEdit=()=>{}){
+  this.container=container;this.onEvidence=onEvidence;this.onClose=onClose;this.onEdit=onEdit;this.frames=new Map();this.active=null;this.lastSuggestedWords=[];
   this.heading=document.createElement('h3');this.status=document.createElement('p');this.status.setAttribute('role','status');
   this.stage=document.createElement('div');this.actions=document.createElement('div');this.actions.className='ba-card-toolbar';
   this.escape=event=>{if(event.key==='Escape'&&!this.container.hidden){event.preventDefault();this.close();}};
   container.addEventListener('keydown',this.escape);document.addEventListener?.('keydown',this.escape);
-  for(const [label,action] of [['Back to chat',()=>this.close()],['Play',()=>this.play()],['Diagnose card',()=>this.diagnose()],['Close card',()=>this.close()]]){
+  for(const [label,action] of [['Back to chat',()=>this.close()],['Play',()=>this.play()],['Diagnose card',()=>this.diagnose()],['Draft edit',()=>this.draftEdit()],['Close card',()=>this.close()]]){
    const button=document.createElement('button');button.type='button';button.className='ba-miniaction';button.textContent=label;button.onclick=action;this.actions.append(button);
   }
   container.className='ba-card-workspace';container.hidden=true;container.append(this.heading,this.status,this.actions,this.stage);
@@ -22,6 +22,11 @@ export class CardWorkspace{
   }
   if(intent.action==='close'){this.close();return {message:'Card closed. Playback paused.'};}
   if(intent.action==='diagnose')return this.diagnose();
+  if(intent.action==='play-active')return this.play();
+  if(intent.action==='suggest-words')return this.suggestWords();
+  if(intent.action==='add-suggested-words')return this.addWords(this.lastSuggestedWords.join(', '));
+  if(intent.action==='add-words')return this.addWords(intent.words);
+  if(intent.action==='edit'){const opened=await this.open(intent.card,false);if(this.active?.loaded)this.draftEdit();return opened;}
   return this.open(intent.card,intent.action==='play');
  }
  pause(record){if(record)for(const media of record.media)try{media.pause();}catch{}}
@@ -60,7 +65,7 @@ export class CardWorkspace{
   }
   this.active=record;
   for(const entry of this.frames.values())entry.frame.hidden=entry!==record;
-  if(record.frame.parentNode!==this.stage)this.stage.append(record.frame);this.onEvidence({cardId:card.id,title:card.title,repository:card.repository,url:card.url,sourcePaths:card.scripts?[...card.scripts,...card.styles]:card.id==='infinity-radio'?['index.html','app.js']:['index.html']});
+  if(record.frame.parentNode!==this.stage)this.stage.append(record.frame);this.onEvidence(this.getEvidence(record));
   try{
    await record.ready;if(this.active!==record)return {message:'Card selection changed.'};
    this.status.textContent=card.title+' is open in chat.';
@@ -68,15 +73,50 @@ export class CardWorkspace{
    return {message:this.status.textContent};
   }catch(error){this.status.textContent='Card could not open: '+String(error.message||error);return {message:this.status.textContent};}
  }
+ getEvidence(record=this.active){
+  if(!record)return null;
+  const card=record.card;
+  return {cardId:card.id,title:card.title,repository:card.repository,url:card.url,
+   sourcePaths:card.scripts?[...card.scripts,...card.styles]:card.id==='infinity-radio'?['index.html','app.js']:['index.html']};
+ }
+ draftEdit(){
+  const evidence=this.getEvidence();
+  if(!evidence)return {message:'Open a project or card before drafting a change.'};
+  this.onEdit(evidence);
+  return {message:'Editable work draft prepared for '+evidence.title+'. The original page remains intact until an authenticated GitHub edit, test and deployment are verified.'};
+ }
+ suggestWords(){
+  if(this.active?.card.id!=='bitcoin-crusher')return {message:'Open Bitcoin Crusher first. Word suggestions belong to its research collector.'};
+  this.lastSuggestedWords=['bitcoin','mining','hashrate','difficulty','cryptography','blockchain','energy','consensus','transactions','wallets'];
+  return {message:'Here are 10 research terms: '+this.lastSuggestedWords.join(', ')+'. Say “add these 10 words” or give me your own comma-separated terms. I will not spin the StarCoin machine without a separate request.'};
+ }
+ addWords(raw){
+  if(this.active?.card.id!=='bitcoin-crusher')return {message:'Open Bitcoin Crusher before adding research words.'};
+  if(!this.active.loaded)return {message:'Bitcoin Crusher is not loaded yet.'};
+  const items=String(raw||'').split(/[,;\n]+/).map(x=>x.trim()).filter(Boolean);
+  if(!items.length||items.length>100||items.some(x=>x.length>90))
+   return {message:'Give 1–100 research terms separated with commas; each term can have up to 90 characters.'};
+  try{
+   const doc=this.active.frame.contentDocument;
+   const field=doc?.querySelector('#researchIdea'),button=doc?.querySelector('#addWords');
+   if(!field||!button||button.disabled)return {message:'The Bitcoin Crusher research word collector is unavailable. No words were added.'};
+   const setter=Object.getOwnPropertyDescriptor(this.active.frame.contentWindow.HTMLTextAreaElement.prototype,'value')?.set;
+   if(setter)setter.call(field,items.join(', '));else field.value=items.join(', ');
+   field.dispatchEvent(new this.active.frame.contentWindow.Event('input',{bubbles:true}));
+   button.click();
+   const status=(doc.querySelector('#researchIdeaStatus')?.textContent||'').trim();
+   return {message:'Sent '+items.length+' research terms to Bitcoin Crusher. '+status.slice(0,200)+' The machine has not been spun.'};
+  }catch(error){return {message:'Research collector could not be updated: '+String(error.message||error).slice(0,150)};}
+ }
  play(){
   const record=this.active;if(!record?.loaded)return {message:'Open a card before playback.'};
   const doc=record.frame.contentDocument;
   if(!doc)return {message:'Card moved outside the suite. Reopen it before playback.'};
-  // Never guess at Buy, Next, Collect or other potentially paid controls.
   const button=record.card.play?doc.querySelector(record.card.play):null;
-  if(button){if(![...record.media].some(media=>!media.paused&&!media.ended))button.click();}
-  else{const media=doc.querySelector('audio,video');if(!media)return {message:'This card has no registered playback control. Its controls are available in chat.'};record.media.add(media);const promise=media.play();if(promise?.catch)promise.catch(()=>{});}
-  const message='Playback requested for '+record.card.title+'.';this.status.textContent=message;return {message};
+  if(button&&!button.disabled){if(![...record.media].some(media=>!media.paused&&!media.ended))button.click();}
+  else{const media=doc.querySelector('audio,video');if(!media)return {message:'This card has no available registered playback control. Its controls are available in chat.'};record.media.add(media);const promise=media.play();if(promise?.catch)promise.catch(()=>{});}
+  const message='Playback requested for '+record.card.title+'. Use Diagnose card to check observed media state; a click does not prove audible sound.';
+  this.status.textContent=message;return {message};
  }
  diagnose(){
   const record=this.active;if(!record)return {message:'Open a card so I can inspect its controls and playback.'};
@@ -87,6 +127,18 @@ export class CardWorkspace{
     playback:[...record.media].map(media=>({paused:media.paused,ended:media.ended,currentTime:Math.round(media.currentTime||0),readyState:media.readyState,error:media.error?.code||null})),
     errors:[...record.errors,...(record.frame.contentWindow.BubblesCardDiagnostics?.().errors||[])].slice(-8)};
   }catch(error){snapshot.error=String(error.message||error).slice(0,140);}
+  if(record.card.id==='bitcoin-crusher'){
+   try{const doc=record.frame.contentDocument;
+    const jukebox=doc?.querySelector('#crusherMusicFrame');
+    snapshot.jukebox={iframePresent:Boolean(jukebox),sourceSelected:doc?.querySelector('#musicSelection')?.textContent?.slice(0,160)||'',
+      srcSet:Boolean(jukebox?.getAttribute('src')),notice:doc?.querySelector('#musicPlayerNotice')?.textContent?.slice(0,180)||''};
+   }catch{}
+  }
+  if(record.card.id==='infinity-radio'){
+   try{const doc=record.frame.contentDocument;
+    snapshot.radio={playButtonPresent:Boolean(doc?.querySelector('#play-btn')),nowPlaying:doc?.querySelector('#np-title')?.textContent?.slice(0,160)||''};
+   }catch{}
+  }
   this.onEvidence(snapshot);
   const message=record.card.title+': '+(snapshot.controls?.length||0)+' controls inspected; '+(snapshot.errors?.length||0)+' recorded errors. '+(snapshot.playback?.some(media=>!media.paused&&!media.ended)?'Playback is active.':'No active playback confirmed.');
   this.status.textContent=message;return {message,snapshot};
