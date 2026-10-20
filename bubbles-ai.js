@@ -10,8 +10,29 @@ window.__QuantaBubblesMounted=true;
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
 const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261019-words1');
 let streamVoice=null,voiceGeneration=0;
-let humanRepliesPromise;
-const humanReplies=()=>humanRepliesPromise||(humanRepliesPromise=import('/bubbles-human-replies.mjs?v=20261020-natural1'));
+// Core job acknowledgements must work in Android WebView even if module imports fail.
+const humanReplies=()=>({
+ githubReply(result){
+  if(result.error||!result.ok)return 'I could not confirm that GitHub finished the request. Nothing is being marked complete.';
+  if(result.status==='dispatch_accepted')return 'GitHub accepted the request, but the work has not finished.';
+  if(result.status==='repository_created')return 'The repository is created. We can open it and work on its pages.';
+  if(result.status==='credential_verified_read')return 'The GitHub connection is responding.';
+  if(result.status==='completed'||result.status==='deployed_verified')return 'The available completion checks passed. What should we work on next?';
+  return 'GitHub responded. I can check the detailed result before calling anything finished.';
+ },
+ workReply(ticket){
+  if(ticket.deduplicated)return 'That work request already exists. I will follow it without creating another.';
+  if(ticket.runner==='queued_for_runner')return 'Your request is saved and the build runner has been requested. Work has not finished yet.';
+  if(ticket.runner==='awaiting_repository_runner')return 'Your request is saved, but the build runner has not started yet.';
+  if(ticket.status==='deployed_verified'&&ticket.runner==='completed_verified')return 'The repair is finished and verified. What should we work on next?';
+  return 'Your request is saved. I have not confirmed that it started.';
+ },
+ workSummary(tickets){
+  const count=tickets.length,finished=tickets.filter(t=>t.status==='complete'||t.status==='deployed_verified').length,
+   waiting=tickets.filter(t=>t.status==='ready'||t.status==='queued').length;
+  return count?('Your work history is available. '+finished+' are marked complete and '+waiting+' are waiting. I can check any job before claiming it ran.'):'There are no saved work requests to report.';
+ }
+});
 const brainTools=window.BubblesBrainActions||null;
 let cardWorkspaceModule,cardWorkspaceInstance,activeCardEvidence=null;
 async function chatCardWorkspace(){
