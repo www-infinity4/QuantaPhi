@@ -14,9 +14,15 @@ function timestamp(value){
  const t=Number.isFinite(n)&&n>0?(n<10000000000?n*1000:n):Date.parse(String(value||''));
  return Number.isFinite(t)?Math.max(946684800000,Math.min(Date.now(),Math.round(t))):Date.now();
 }
+// Table-driven CRC keeps the integrity check responsive on low-memory phones.
+const CRC_TABLE=Uint32Array.from({length:256},(_,index)=>{
+ let crc=index;
+ for(let i=0;i<8;i++)crc=(crc>>>1)^((crc&1)?0xedb88320:0);
+ return crc>>>0;
+});
 function crc32(bytes){
  let crc=0xffffffff;
- for(const value of bytes){crc^=value;for(let i=0;i<8;i++)crc=(crc>>>1)^((crc&1)?0xedb88320:0);}
+ for(const value of bytes)crc=CRC_TABLE[(crc^value)&255]^(crc>>>8);
  return (crc^0xffffffff)>>>0;
 }
 function records(role,text,at,id){
