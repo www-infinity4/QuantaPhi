@@ -1969,6 +1969,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   try{
    const ticket=await submitWork(request,'explicit-user-command');
    workEvidence=(continued?'I picked up your earlier request. ':'')+(await humanReplies()).workReply(ticket);
+   recordBrainNotice('Open verified work details: https://quantaphi.org/#robotDirections');
   }catch(error){workEvidence='I could not confirm that Robot Brain received this request: '+String(error.message||error).slice(0,160)+'. Your request is still in the work box; retrying it will not create duplicate jobs.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='connection'){
   try{workEvidence='The work connection is available. '+await readBrainReport()}
@@ -2114,6 +2115,7 @@ function watchDirectGithubReceipt(requestId){
     let result;
     try{result=await githubReceipt(requestId);}catch{continue;}
     if(result.status==='working'||result.error==='receipt_not_found')continue;
+    // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
     const report=(await humanReplies()).githubReply(result);
     display(report,'ai');messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
