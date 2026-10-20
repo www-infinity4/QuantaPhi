@@ -90,12 +90,16 @@ export async function conversationMemory(db,owner,body){
   const statements=[];
   for(const m of messages){
    statements.push(db.prepare('INSERT OR IGNORE INTO bubbles_messages(owner,id,role,text,at) VALUES (?,?,?,?,?)').bind(owner,m.id,m.role,m.text,m.at));
-   const target=m.sessionId||sessionId;
+   const target=m.sessionId||(!sessionId?null:'legacy-history');
    if(target){
     // The owner is derived from verified Brain credentials, never client input.
     statements.push(db.prepare('INSERT OR IGNORE INTO bubbles_sessions(owner,session_id,title,created,updated) VALUES (?,?,?,?,?)').bind(owner,target,'New conversation',m.at,m.at));
     statements.push(db.prepare('INSERT OR IGNORE INTO bubbles_session_messages(owner,session_id,message_id,at) VALUES (?,?,?,?)').bind(owner,target,m.id,m.at));
     statements.push(db.prepare('UPDATE bubbles_sessions SET updated=MAX(updated,?) WHERE owner=? AND session_id=?').bind(m.at,owner,target));
+    if(m.role==='user'){
+     const firstTitle=m.text.trim().replace(/\\s+/g,' ').slice(0,65);
+     statements.push(db.prepare("UPDATE bubbles_sessions SET title=? WHERE owner=? AND session_id=? AND title='New conversation'").bind(firstTitle||'New conversation',owner,target));
+    }
    }
    statements.push(db.prepare('INSERT INTO bubbles_message_index(owner,id,text) SELECT owner,id,text FROM bubbles_messages WHERE owner=? AND id=? AND NOT EXISTS (SELECT 1 FROM bubbles_message_index WHERE owner=? AND id=?)').bind(owner,m.id,owner,m.id));
   }
