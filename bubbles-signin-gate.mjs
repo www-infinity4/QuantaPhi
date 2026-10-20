@@ -29,6 +29,7 @@ export function mountBubblesSigninGate({root=document,host=window}={}){
  const cards={github:root.getElementById('bubblesGithubCard'),cloudflare:root.getElementById('bubblesCloudflareCard')};
  const chat=root.getElementById('bubblesAICard');
  const openChat=root.getElementById('bubblesOpenExistingChat');
+ const retry=root.getElementById('bubblesRetrySignInCheck');
  const client=new AccountConnections({token:()=>resolveConnectorWalletToken(host),root:host});
  let loading=false,oauthInProgress=false,latest=null,lastChecked=0;
  const setStatus=text=>{status.textContent=text;};
@@ -103,6 +104,7 @@ export function mountBubblesSigninGate({root=document,host=window}={}){
    }
   });
  }
+ if(retry)retry.addEventListener('click',()=>void refresh());
  if(openChat)openChat.addEventListener('click',()=>{
   // Not an authentication bypass: production policy is not enforced until
   // provider setup, backup and lost-phone recovery are independently proven.
