@@ -1,0 +1,8 @@
+name = "bubbles-cloud-browser"
+main = "worker.mjs"
+compatibility_date = "2026-10-19"
+[[services]]
+binding = "BRAIN"
+service = "infinity-brain-clock"
+[browser]
+binding = "BROWSER"
