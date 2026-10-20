@@ -193,3 +193,27 @@ test('model-suggested tools never turn a repository repair or greeting into a re
  assert.equal(selections,1);
  assert.equal(chats,2);
 });
+
+test('shallow weather parser defers to grounded semantic selection for city named before forecast',async()=>{
+ const phrase='How chilly does it feel around Albia, Iowa this afternoon? Please verify the forecast.';
+ assert.equal(chooseTool(phrase),'weather.current');
+ const original=globalThis.fetch;
+ let network=0;
+ globalThis.fetch=async url=>{
+  network++;
+  return Response.json(String(url).includes('geocoding-api')?
+   {results:[{name:'Albia',admin1:'Iowa',country:'United States',latitude:41.0267,longitude:-92.8053}]}:
+   {current:{temperature_2m:42,apparent_temperature:37,weather_code:2,wind_speed_10m:8,time:'2026-10-20T15:00'},
+    daily:{temperature_2m_max:[49],temperature_2m_min:[36]},timezone:'America/Chicago'});
+ };
+ try{
+  const response=await call({request:phrase,mcp:true},{
+   AI:{run:async()=>({choices:[{message:{tool_calls:[{function:{name:'weather_current',arguments:'{"location":"Albia, Iowa"}'}}]}}]})}
+  });
+  const body=await response.json();
+  assert.equal(body.receipt.tool,'weather.current');
+  assert.equal(body.receipt.status,'complete');
+  assert.match(body.output,/42 degrees Fahrenheit/);
+  assert.equal(network,2);
+ }finally{globalThis.fetch=original}
+});
