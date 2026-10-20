@@ -59,6 +59,7 @@
     .bubbles-signin-gate[data-ready="true"]{border-color:#7fb9a2;background:#f5fcf7}
     .bubbles-signin-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:13px;margin-top:14px}
     .bubbles-signin-controls a{color:#51238a;font-weight:700}
+    .bubbles-signin-retry{border:1px solid #d0bedb;background:white;color:#4a237c;border-radius:10px;padding:9px 11px;min-height:40px;font:700 13px system-ui;cursor:pointer}
     @media(max-width:540px){.bubbles-signin-grid{grid-template-columns:1fr}}
   </style>
   <link rel="stylesheet" href="/bubbles-introduction.css?v=20261019-product1">
@@ -135,6 +136,7 @@
         </article>
       </div>
       <div class="bubbles-signin-controls">
+        <button id="bubblesRetrySignInCheck" type="button" class="bubbles-signin-retry">Check sign-ins again</button>
         <a id="bubblesOpenExistingChat" href="#bubblesAICard">Continue to existing chat while setup completes</a>
         <a href="/bubbles-accounts.html">Manage connections</a>
         <a href="/wallet-recovery.html?verify=1">Restore an existing wallet session</a>
