@@ -1764,11 +1764,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   || /^(?:record|record (?:sound|audio|my voice)|start (?:recording|sound recording|audio recording)|stop (?:recording|audio|sound|microphone)|save (?:recording|audio|sound)|(?:turn|switch) (?:on|off) (?:the |my )?(?:voice|audio|sound|microphone) recorder)$/i.test(nativeDirective)
   || /^(?:open|launch|edit|trim|cut|extract|separate|get|remove)\b.*\b(?:cap\s*cut|video|clip|recording|audio|sound)\b/i.test(nativeDirective)
   || (nativeRecordingActive&&/^(?:stop|end|finish|save)(?: now| it| that| recording| the recording)?$/i.test(nativeDirective));
- const nativeCaptureVerb=/^(?:record|film|start|begin|turn on|switch on|enable|activate|open|launch|edit|trim|cut|extract|separate|remove|get|use|run|make|capture|take|grab|save|stop|end|finish|cancel|turn off|switch off|screen record)\b/i.test(nativeDirective);
+ const nativeCaptureVerb=/^(?:press|tap|hit|click|push|select|record|film|start|begin|turn on|switch on|enable|activate|open|launch|edit|trim|cut|extract|separate|remove|get|use|run|make|capture|take|grab|save|stop|end|finish|cancel|turn off|switch off|screen record)\b/i.test(nativeDirective);
  if(nativeOverlay&&!fromVoice&&nativeCaptureTarget&&nativeCaptureVerb){
   const stopping=/^(?:stop|end|finish|cancel|turn off|switch off|save)\b/i.test(nativeDirective);
   const editing=/^(?:open|launch|edit|trim|cut|extract|separate|remove|get)\b/.test(nativeDirective);
-  const response=editing?'Opening editor.':stopping?'Stopping.':'Starting.';
+  const response=editing?'Requesting Android editor.':stopping?'Sending stop to Android recorder.':'Sending request to Android recorder.';
   if(nativeCaptureRequests.length>=24){
     status.textContent='Android has 24 unprocessed capture commands. Check the Bubbles connection.';
     nativeSpeechPending=false;return;
