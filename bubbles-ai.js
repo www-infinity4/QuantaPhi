@@ -2133,6 +2133,24 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     drainVoiceTurns()
   }
 }
+
+ // Owner approved ChatGPT bridge: a message arrives only after the Cloudflare
+ // browser Worker verifies the owner session and an active five-day grant.
+ // Existing per-action owner approvals inside sendMessage remain mandatory.
+ window.addEventListener('bubbles:chatgpt-bridge',event=>{
+  const detail=event.detail||{};
+  const respond=typeof detail.respond==='function'?detail.respond:()=>{};
+  const text=String(detail.text||'').slice(0,1800).trim();
+  if(embedded||nativeOverlay||busy||!text){respond({ok:false,error:'bubbles_chat_not_ready'});return}
+  const before=messages.length;
+  Promise.resolve(sendMessage(text,false)).then(()=>{
+   const replies=messages.slice(before).filter(x=>x.role==='assistant');
+   const answer=String(replies.at(-1)?.text||'');
+   if(answer)respond({ok:true,reply:answer.slice(0,8000)});
+   else respond({ok:false,error:'bubbles_did_not_return_a_confirmed_answer'});
+  }).catch(()=>respond({ok:false,error:'bubbles_chat_request_failed'}));
+ });
+
 if(!embedded)tools.append(repositoryPicker);
 else composer.before(repositoryPicker);
 const backToChat=()=>{repositoryPicker.open=false;input.focus();};
