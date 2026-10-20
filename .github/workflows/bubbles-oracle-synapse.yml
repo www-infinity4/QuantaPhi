@@ -1,0 +1,32 @@
+name: Bubbles Oracle Synapse and Session Sync
+on:
+  pull_request:
+    paths:
+      - 'workers/infinity-brain-clock/oracle-synapse-memory.mjs'
+      - 'workers/infinity-brain-clock/conversation-memory.mjs'
+      - 'bubbles-ai.js'
+      - 'test/bubbles-oracle-synapse-memory.test.mjs'
+      - '.github/workflows/bubbles-oracle-synapse.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/infinity-brain-clock/oracle-synapse-memory.mjs'
+      - 'workers/infinity-brain-clock/conversation-memory.mjs'
+      - 'bubbles-ai.js'
+      - 'test/bubbles-oracle-synapse-memory.test.mjs'
+  workflow_dispatch:
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and scoped owner-memory tests
+        run: |
+          node --check workers/infinity-brain-clock/oracle-synapse-memory.mjs
+          node --check workers/infinity-brain-clock/conversation-memory.mjs
+          node --check bubbles-ai.js
+          node --test test/bubbles-oracle-synapse-memory.test.mjs test/bubbles-conversation-memory.test.mjs
