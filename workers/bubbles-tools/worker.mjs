@@ -64,7 +64,7 @@ export function chooseTool(text){
    &&(/\b(?:calculate|compute|find|solve|run|what\s+is|what's)\b/.test(request)||parseResonanceSpeech(request)))return 'resonance.calculate';
  const lookup=lookupKind(text);if(lookup)return lookup;
  if(/\b(?:create|start|make|build)\b.{0,70}\b(?:github\s+)?(?:repo|repository)\b/.test(request))return 'github.create_repository';
- if(/\b(?:open|pull\s+up|inspect|show|read|list|look\s+up|fetch)\b.{0,100}\b(?:github\s+)?(?:repo|repository)\b/.test(request))return 'github.read_repository';
+ if(/\b(?:open|pull\s+up|inspect|show|read|list|look\s+up|fetch)\b.{0,100}\b(?:github\s+)?(?:repo|repository)\b/.test(request)&&(/\bgithub\b/.test(request)||/\b[a-z0-9_.-]+\/[a-z0-9_.-]+\b/.test(request)||/\bquantaphi\b/.test(request)))return 'github.read_repository';
  if(/\b(?:news|headlines)\b/.test(request)&&/\b(?:check|read|tell|show|find|latest|current|today|google|get|what|headlines)\b/.test(request))return 'news.headlines';
  return 'oracle.chat';
 }
