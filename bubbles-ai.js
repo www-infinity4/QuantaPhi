@@ -8,7 +8,7 @@ if(!host || window.__QuantaBubblesMounted)return;
 window.__QuantaBubblesMounted=true;
 // The tool gateway delegates ordinary chat to Oracle /v1/chat.
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
-const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261014-turn-buf1');
+const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261019-words1');
 let streamVoice=null,voiceGeneration=0;
 const brainTools=window.BubblesBrainActions||null;
 let cardWorkspaceModule,cardWorkspaceInstance,activeCardEvidence=null;
@@ -226,7 +226,17 @@ if(!Array.isArray(messages))messages=[];
 messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-400).map(item=>({id:item.id||crypto.randomUUID(),at:item.at||Date.now(),role:item.role,text:item.text.slice(0,6000)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
-let voiceEnabled=false,recognition=null,voicePending='',speaking=false,voiceRetry=null,tries=0;
+let voiceEnabled=false,recognition=null,voicePending=[],speaking=false,voiceRetry=null,tries=0;
+// Spoken turns must be FIFO; a second phrase must never overwrite the first.
+function enqueueVoiceTurn(text){
+ if(voicePending.length>=12){status.textContent='Speech backlog full. Repeat your last phrase when Bubbles finishes.';return false;}
+ voicePending.push(text);return true;
+}
+function drainVoiceTurns(){
+ if(busy||!voicePending.length)return;
+ const next=voicePending.shift();
+ Promise.resolve().then(()=>sendMessage(next,true));
+}
 let playbackVersion=0,voiceEchoUntil=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
 const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias,requireWakeName:false})||null;
@@ -1657,6 +1667,37 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const continued=!embedded?brainTools?.resolveFollowupRequest?.(spoken,messages):'';
  const contextualRepair=!embedded?brainTools?.resolveRepairRequest?.(spoken,messages):'';
  const request=continued||contextualRepair||spoken;
+ // Explicit code discovery is a read-only tool call, never a build ticket.
+ // "All of GitHub" searches public indexed code; "my repos" is owner scoped.
+ if(!embedded&&/\bgithub\b/i.test(request)){
+  const githubModule=await import('/bubbles-github-research.mjs?v=20261019-global1');
+  const intent=githubModule.githubResearchIntent(request);
+  if(intent){
+   busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+   status.textContent='Searching '+(intent.scope==='owner'?'your GitHub repositories':'public GitHub')+'…';
+   let answer;
+   try{
+    if(!ownerReady&&intent.scope==='public'){
+     const lookup=await bubblesFetch(AI,{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({request:'site:github.com '+intent.query,tool:'web.search'})},20000);
+     const data=await lookup.json();
+     if(!lookup.ok||!data.ok)throw Error(data.error||'public_search_unavailable');
+     answer='Public web-index results referring to GitHub (not a full GitHub code-file search):\n'+
+      (data.sources||[]).slice(0,10).map((source,i)=>(i+1)+'. '+source.title+' — '+source.excerpt+'\n'+source.url).join('\n')+
+      '\nSign in to Bubbles to search the GitHub code index through the authorized read-only adapter.';
+    }else{
+     const result=await directGithubOperation({action:'search_github_code',scope:intent.scope,query:intent.query,mode:'read'});
+     answer=githubModule.githubResearchReply(result,intent);
+    }
+   }catch(error){answer='GitHub research did not complete: '+String(error.message||error).slice(0,160)+'. No code was changed.';}
+   messages.push({role:'user',text:spoken},{role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
+   display(answer,'ai');status.textContent='GitHub research returned. Sources are in the chat.';
+   if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;else if(fromVoice&&config.voice)speakText(answer);
+   nativeSpeechPending=false;busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+   drainVoiceTurns();
+   return;
+  }
+ }
  busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
  // This acknowledgement describes the active processing phase, not a fabricated search,
  // completed tool call or owner action. It is drained before the verified answer.
@@ -1714,7 +1755,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   display(workEvidence,'ai');messages.push({role:'assistant',text:workEvidence});persistChat();status.textContent=workEvidence;
   if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=workEvidence;else if(config.voice&&!nativeOverlay)speakText(workEvidence);
   nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');
-  if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
+  drainVoiceTurns()
   return;
  }
  else if(!embedded&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){
@@ -1818,7 +1859,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }finally{
    nativeSpeechPending=false;busy=false;send.disabled=false;
    if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-   if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
+   drainVoiceTurns()
   }
   return;
  }
@@ -1829,14 +1870,14 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const weatherFollowup=/^(?:(?:and|what|how) (?:about )?)?tomorrow[?.! ]*$/i.test(request)&&/weather|forecast|temperature|precipitation/i.test(lastAssistant);
  const lookupRequest=townFollowup?'weather in '+request:weatherFollowup?'weather tomorrow':request;
  const liveLookup=/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it)\b/i.test(lookupRequest)
-  ||/^\s*(?:(?:please|bubbles[, ]+|can you |could you )\s*)?(?:google|search|look up|find online|browse the web)\b/i.test(lookupRequest)
+  ||/^\s*(?:(?:please|bubbles[, ]+|can you |could you )\s*)?(?:google|search|research|investigate|look up|find online|browse the web)\b/i.test(lookupRequest)
   ||/\b(?:search the web|search google|look up online|find it online|latest information|latest updates|what(?:'s| is) the latest)\b/i.test(lookupRequest);
  let savedWeatherTown='';
  const explicitWeatherTown=/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b.{0,85}\b(?:in|for|at|near)\s+[a-z0-9]/i.test(lookupRequest);
  try{if(liveLookup&&!explicitWeatherTown&&/\b(?:weather|forecast|temperature|rain|snow)\b/i.test(lookupRequest))savedWeatherTown=localStorage.getItem('bubbles-weather-town')||'';}catch{}
  // Opt in to bounded, read-only MCP model tool selection. The MCP bearer key is never present in this WebView.
  const toolRequestId=crypto.randomUUID();
- const lookupPayload=()=>({request:lookupRequest,requestId:toolRequestId,input:prompt,mcp:true,location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
+ const lookupPayload=()=>({request:lookupRequest,requestId:toolRequestId,input:prompt,mcp:true,...(/^(?:research|investigate)\b/i.test(lookupRequest.trim())?{tool:'web.search'}:{}),location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
@@ -1907,7 +1948,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      nativeSpeechPending=false;
    }
    busy=false;send.disabled=false;if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
-    if(voicePending){const next=voicePending;voicePending='';void sendMessage(next,true)}
+    drainVoiceTurns()
   }
 }
 if(!embedded)chatScroll.insertBefore(repositoryPicker,conversation);
@@ -2009,7 +2050,7 @@ function stopMeter(){
 function stopVoice(message){
  voiceLeaseWanted=false;
  voiceGeneration++;streamVoice?.stop();streamVoice=null;
- voiceResumeWanted=false;voiceEnabled=false;voicePending='';
+ voiceResumeWanted=false;voiceEnabled=false;voicePending=[];
  if(voiceRetry)clearTimeout(voiceRetry);voiceRetry=null;
  pauseRecognition();stopMeter();
  playbackVersion++;try{speechSynthesis.cancel()}catch{}
@@ -2039,7 +2080,7 @@ function heardTranscript(transcript){
  const turn=voiceGate.accept(transcript,Date.now());
  if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
  if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';return}
- if(turn.type==='message'){if(busy)voicePending=turn.text;else void sendMessage(turn.text,true)}
+ if(turn.type==='message'){if(busy)enqueueVoiceTurn(turn.text);else void sendMessage(turn.text,true)}
 }
 async function startVoice(){
  // Android's foreground service already owns voice recognition. A WebView

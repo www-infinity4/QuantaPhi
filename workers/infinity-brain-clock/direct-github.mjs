@@ -16,6 +16,7 @@ function branchName(value){
 }
 export async function githubOperation(env,body,request=fetch){
  const action=body.action;
+ if(action==='search_github_code')return (await import('./github-search.mjs')).searchGithubCode(env,body,request);
  if(action==='list_repositories'){
   if(!env.GITHUB_TOKEN) return {ok:false,status:'blocked',error:'github_runtime_credential_missing'};
   const repositories=[];
