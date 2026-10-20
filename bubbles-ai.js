@@ -880,6 +880,9 @@ if(nativeOverlay){
  nativeProviderRow.append(gptConnect,gptStatus);
  tools.insertBefore(nativeProviderRow,summary.nextSibling);
  tools.append(privateLabel);
+ // Connection-code setup belongs inside scrollable Options; keeping its
+ // permanent button in the phone composer shrinks the transcript and traps it.
+ tools.append(connectorCodeButton,connectorCodeOutput,connectorCodeStatus);
  // Android's full-screen Bubbles panel covers the underlying site; move the
  // original wallet view into Options without duplicating IDs or credentials.
  const verifiedWallet=document.querySelector('.bubbles-wallet');
@@ -925,7 +928,7 @@ if(!embedded){
 if(!embedded){
  const quick=create('section','ba-chatgpt-quick');
  quick.setAttribute('aria-label','ChatGPT Cloud Browser access');
- const quickButton=create('button','ba-chatgpt-quick-approve','Allow ChatGPT to use Bubbles · 5 days');
+ const quickButton=create('button','ba-chatgpt-quick-approve',nativeOverlay?'Allow ChatGPT · 5 days':'Allow ChatGPT to use Bubbles · 5 days');
  quickButton.type='button';
  const quickState=create('p','ba-chatgpt-quick-status','Approval status will be verified with Cloudflare.');
  quickState.setAttribute('role','status');quickState.setAttribute('aria-live','polite');
@@ -1004,6 +1007,10 @@ body .ba-panel .ba-connector-code{background:#f2eafa!important;border:2px solid 
 body .ba-panel .ba-actions{gap:6px!important}
 body .ba-panel .ba-actions button{font-size:14px!important;padding:7px 5px!important}
 body .ba-panel .ba-close{font-size:24px!important}
+html.bubbles-native-overlay .ba-panel .ba-chatgpt-quick{gap:2px!important;padding:4px 8px!important}
+html.bubbles-native-overlay .ba-panel .ba-chatgpt-quick .ba-chatgpt-quick-approve{font-size:14px!important;line-height:1.2!important;min-height:44px!important;padding:5px 9px!important}
+html.bubbles-native-overlay .ba-panel .ba-chatgpt-quick-status{font-size:12px!important;line-height:1.2!important;max-height:1.3em!important;overflow:hidden!important;text-overflow:ellipsis;white-space:nowrap}
+
 body .ba-panel :is(input,textarea){font-size:16px!important;color:#30243e!important;-webkit-text-fill-color:#30243e!important}
 body .ba-panel :is(button,summary):focus-visible{outline:3px solid #005fcc!important;outline-offset:2px!important}
 
@@ -2071,7 +2078,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted'){
     recordBrainNotice('GitHub accepted the workflow dispatch. This is not an execution result.');
    }
-   workEvidence=(await humanReplies()).githubReply(result);
+   if(args.action==='list_workflows'&&result.ok===true&&result.complete===true&&Array.isArray(result.workflows)){
+    const names=result.workflows.filter(item=>item.state==='active').slice(0,12)
+     .map(item=>String(item.name||item.path||'').slice(0,90)).filter(Boolean);
+    workEvidence='GitHub Actions workflows: '+(names.length?names.join(', '):'No active workflows returned')+
+     '. This is a verified read-only listing. No workflow was run.';
+   }else workEvidence=(await humanReplies()).githubReply(result);
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
  }
  else if(!embedded&&isOwnerWorkRequest(request)){

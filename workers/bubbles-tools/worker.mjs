@@ -63,7 +63,8 @@ export function chooseTool(text){
  if(/\b(?:resonance|resonator|resonant\s+frequency|lc\s+(?:tank|circuit|frequency))\b/.test(request)
    &&(/\b(?:calculate|compute|find|solve|run|what\s+is|what's)\b/.test(request)||parseResonanceSpeech(request)))return 'resonance.calculate';
  const lookup=lookupKind(text);if(lookup)return lookup;
- if(/\b(?:create|start|make|open|build)\b.{0,70}\b(?:github\s+)?(?:repo|repository)\b/.test(request))return 'github.create_repository';
+ if(/\b(?:create|start|make|build)\b.{0,70}\b(?:github\s+)?(?:repo|repository)\b/.test(request))return 'github.create_repository';
+ if(/\b(?:open|pull\s+up|inspect|show|read|list|look\s+up|fetch)\b.{0,100}\b(?:github\s+)?(?:repo|repository)\b/.test(request)&&(/\bgithub\b/.test(request)||/\b[a-z0-9_.-]+\/[a-z0-9_.-]+\b/.test(request)||/\bquantaphi\b/.test(request)))return 'github.read_repository';
  if(/\b(?:news|headlines)\b/.test(request)&&/\b(?:check|read|tell|show|find|latest|current|today|google|get|what|headlines)\b/.test(request))return 'news.headlines';
  return 'oracle.chat';
 }
@@ -154,6 +155,43 @@ export async function createGithubRepository(request,env,body,receipt){
   return response(request,{ok:true,output:verified?'Created '+repository+'. '+result.url:'GitHub creation was not confirmed: '+clean(result.error||result.status||'executor_unavailable',150)+'. Check this request’s receipt before retrying.',...(verified?{url:result.url}:{}),result,receipt:{...receipt,status:verified?'complete':result.status==='working'?'working':'blocked',requestId,repository,provider:'owner-authenticated-brain',repositoryActionsVerified:verified}});
  }catch{return response(request,{ok:true,output:'The GitHub executor did not return a final result. Check this request’s receipt before retrying.',receipt:{...receipt,status:'unconfirmed',requestId,repository,reason:'github_executor_response_missing',repositoryActionsVerified:false}});}
 }
+// Fixed GitHub host, public-read-only API. Reading a repo is NOT creating it.
+// A model's description of files never supplies an authenticated GitHub receipt.
+export async function readGithubRepository(request,body,receipt,fetcher=fetch){
+ const q=clean(body.request);
+ const match=q.match(/\b([A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/\w[A-Za-z0-9_.-]{0,99})\b/);
+ const repository=String(body.repository||match?.[1]||
+  (/\bquantaphi\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
+ if(!/^[A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99}$/.test(repository))
+  return response(request,{ok:true,output:'Give me the public repository owner/name to inspect, for example www-infinity4/QuantaPhi.',receipt:{...receipt,status:'needs_input',reason:'repository_name_required',repositoryActionsVerified:false}});
+ try{
+  const options={headers:{Accept:'application/vnd.github+json','User-Agent':'QuantaPhi-Bubbles-Reader'},signal:AbortSignal.timeout(12000)};
+  const [root,files]=await Promise.all([
+   fetcher('https://api.github.com/repos/'+repository,options),
+   fetcher('https://api.github.com/repos/'+repository+'/contents',options)
+  ]);
+  if(!root.ok||!files.ok)throw Error('github_public_read_http_'+(!root.ok?root.status:files.status));
+  const meta=await root.json(),listing=await files.json();
+  if(meta.full_name?.toLowerCase()!==repository.toLowerCase()||!Array.isArray(listing))
+   throw Error('github_response_not_verified');
+  const contents=listing.filter(x=>typeof x.name==='string'&&(x.type==='file'||x.type==='dir'))
+   .map(x=>({name:clean(x.name,110),type:x.type})); 
+  const matched=contents.filter(x=>/bubbles|brain|worker|code|\.json$|index\.html$/i.test(x.name));
+  const shown=[...matched.slice(0,18),...contents.filter(x=>!matched.includes(x)).slice(0,8)].slice(0,26);
+  const output='GitHub repository '+meta.full_name+' (public read verified). Default branch: '+
+   clean(meta.default_branch,60)+'. Root entries: '+contents.length+'. Relevant files: '+
+   shown.map(x=>x.name+(x.type==='dir'?'/':'')).join(', ')+
+   '. This is a read-only GitHub result. No file was edited or created.';
+  return response(request,{ok:true,output,repository:meta.full_name,contents:shown,
+   sourceUrl:'https://github.com/'+repository,
+   receipt:{...receipt,tool:'github.read_repository',status:'complete',provider:'github-rest-public',
+    sourceReadVerified:true,repositoryActionsVerified:false,minted:false}});
+ }catch(error){
+  return response(request,{ok:true,output:'GitHub repository read was not verified: '+
+   clean(error?.message,150)+'. No file was edited or created.',repository,
+   receipt:{...receipt,tool:'github.read_repository',status:'failed',reason:clean(error?.message,150),repositoryActionsVerified:false,minted:false}});
+ }
+}
 async function execute(request,env,body){
  const question=clean(body.request);if(!question)return response(request,{ok:false,error:'request_required'},400);
  const tool=['resonance.calculate','web.search','weather.current','news.headlines'].includes(body.tool)?body.tool:chooseTool(question),id=crypto.randomUUID();
@@ -181,6 +219,7 @@ async function execute(request,env,body){
   return response(request,{ok:true,output,query:result.query,sources,googleSearchUrl:result.googleSearchUrl,
    searchProvider:result.provider,googleVerified:result.googleVerified,receipt:{...receipt,status:result.ok?'complete':'failed',provider:result.provider,googleVerified:result.googleVerified}});
  }
+ if(tool==='github.read_repository')return readGithubRepository(request,body,receipt);
  if(tool==='github.create_repository')return createGithubRepository(request,env,body,receipt);
  if(tool==='news.headlines'){
   try{
@@ -280,7 +319,7 @@ export default {async fetch(request,env){
  const url=new URL(request.url);
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
  if(url.pathname==='/mcp')return handleMcp(request,env,command=>runMcpRead(request,env,command));
- if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',tools:{news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
+ if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',tools:{news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
  if(url.pathname==='/v1/browser')return browserTool(request,env);
@@ -298,7 +337,7 @@ export default {async fetch(request,env){
   if(text.length>70000)return response(request,{ok:false,error:'body_too_large'},413);
   const result=await execute(request,env,body);if(!result.ok)return result;
   const data=await result.clone().json();
-  if(data.model||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
+  if(data.model||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
   const summarize=()=>gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
   if(data.receipt?.tool==='web.search')return finishSearchReply(result,summarize);
   return await summarize();

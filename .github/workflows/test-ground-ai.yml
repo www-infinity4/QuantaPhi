@@ -1,0 +1,69 @@
+name: Test Ground AI · Bubbles chat and miniature Chrome apps
+on:
+  pull_request:
+    paths:
+      - 'test-ground-ai/**'
+      - 'apps/**'
+      - 'bubbles-card-catalog.mjs'
+      - 'workers/bubbles-tools/worker.mjs'
+      - 'test/bubbles-github-public-read.test.mjs'
+      - 'test/mini-card-apps.test.mjs'
+      - 'test/test-ground-ai.test.mjs'
+      - 'scripts/test-ground-live.mjs'
+      - '.github/workflows/test-ground-ai.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'test-ground-ai/**'
+      - 'apps/**'
+      - 'bubbles-card-catalog.mjs'
+      - 'workers/bubbles-tools/worker.mjs'
+      - 'test/bubbles-github-public-read.test.mjs'
+      - 'test/mini-card-apps.test.mjs'
+      - 'test/test-ground-ai.test.mjs'
+      - 'scripts/test-ground-live.mjs'
+      - '.github/workflows/test-ground-ai.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-mini-apps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check app and AI source
+        run: |
+          node --check test-ground-ai/engine.mjs
+          node --check test-ground-ai/ui.mjs
+          node --check scripts/test-ground-live.mjs
+          node --check apps/config.js
+          node --check apps/launch.js
+      - name: Verify all manifests, compact cards, Android layout and chat receipts
+        run: node --test test/mini-card-apps.test.mjs test/test-ground-ai.test.mjs test/bubbles-github-public-read.test.mjs test/bubbles-tools.test.mjs test/bubbles-card-workspace.test.mjs
+  live-bubbles-chat:
+    needs: source-and-mini-apps
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Ask Bubbles nine real read-only questions and record the actual receipts
+        run: node scripts/test-ground-live.mjs
+      - name: Preserve diagnostic evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-ground-ai-real-bubbles-answers
+          path: test-results/test-ground-bubbles-live.json
+          if-no-files-found: warn
+          retention-days: 14

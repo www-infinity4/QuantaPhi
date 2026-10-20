@@ -1,0 +1,40 @@
+{
+  "id": "/apps/id/tv-channels",
+  "name": "Infinity TV Channels · Infinity 2026",
+  "short_name": "Infinity TV",
+  "description": "One player surface for StarQuest, Omni TV, Chiller and ShopLC.",
+  "start_url": "/apps/launch.html?app=tv-channels",
+  "scope": "/apps/",
+  "display": "standalone",
+  "background_color": "#fffefa",
+  "theme_color": "#674096",
+  "lang": "en-US",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/apps/icons/tv-channels-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apps/icons/tv-channels-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apps/icons/tv-channels.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open Infinity TV Channels",
+      "short_name": "Open",
+      "url": "/apps/launch.html?app=tv-channels"
+    }
+  ]
+}

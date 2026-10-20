@@ -162,3 +162,14 @@ html.bubbles-native-overlay .ba-panel .ba-thread {
 @media(prefers-reduced-motion:reduce){
  .ba-panel * {scroll-behavior:auto!important;animation-duration:.001ms;}
 }
+
+
+/* On ordinary short Android displays, keep the message composer fully reachable
+   WITHOUT creating a second scroll owner beside the conversation. At extremely
+   short landscape heights, composer scrolling is allowed as a last resort. */
+@media (min-height:420px){
+ html.bubbles-native-overlay .ba-panel .ba-composer{
+  max-height:none!important;
+  overflow-y:visible!important;
+ }
+}
