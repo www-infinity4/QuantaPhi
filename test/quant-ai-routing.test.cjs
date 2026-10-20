@@ -49,6 +49,22 @@ test('Quant-AI static assets and authenticated API use the private service bindi
  assert.equal(received[4].body,'{"version":2}');
 });
 
+test('deployed QUANTAI alias still proxies the private Quant-AI service',async()=>{
+ const worker=(await app).default;
+ const forwarded=[];
+ const env={QUANTAI:{fetch:async request=>{
+  forwarded.push({pathname:new URL(request.url).pathname,authorization:request.headers.get('authorization')});
+  return Response.json({ok:true},{status:200});
+ }}};
+ for(const path of ['/quant-ai/','/quant-ai/api/packets']){
+  const response=await worker.fetch(new Request(origin+path,{headers:{authorization:'Bearer sq_'+'a'.repeat(40)}}),env);
+  assert.equal(response.status,200);
+  assert.equal(response.headers.get('cache-control'),'no-store');
+ }
+ assert.deepEqual(forwarded.map(x=>x.pathname),['/','/api/packets']);
+ assert.ok(forwarded.every(x=>x.authorization==='Bearer sq_'+'a'.repeat(40)));
+});
+
 test('without service binding Quant-AI fails closed rather than leaking tokens to GitHub',async()=>{
  const worker=(await app).default;
  const response=await worker.fetch(new Request(origin+'/quant-ai/api/quants/owned',{headers:{authorization:'Bearer sq_'+'b'.repeat(40)}}),{});
