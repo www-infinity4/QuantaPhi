@@ -62,26 +62,29 @@ window.INFINITY_APPS=[
   },
   {
     "slug": "media-star",
+    "card": "media-star",
     "name": "Media Star",
     "short": "Media Star",
     "glyph": "MS",
     "color": "#a87615",
     "url": "/",
     "focus": "followingSpacesRadio",
-    "desc": "Play and create Media Star cards."
+    "desc": "Play a Media Star card without the full homepage."
   },
   {
     "slug": "reads-realms",
-    "name": "Reads & Realms",
-    "short": "Reads Realm",
+    "name": "Readers Realm",
+    "short": "Readers Realm",
+    "card": "reads-realms",
     "glyph": "RR",
     "color": "#a44779",
     "url": "/",
     "focus": "infiniteBook",
-    "desc": "Read original stories from Reads & Realms."
+    "desc": "A simple story card with New Story when you want another."
   },
   {
     "slug": "story-writer",
+    "card": "story-writer",
     "name": "Story Writer",
     "short": "Story Writer",
     "glyph": "SW",
@@ -92,6 +95,7 @@ window.INFINITY_APPS=[
   },
   {
     "slug": "image-generator",
+    "card": "image-builder",
     "name": "Image Generator",
     "short": "Image Studio",
     "glyph": "IG",
@@ -102,16 +106,18 @@ window.INFINITY_APPS=[
   },
   {
     "slug": "physics-cards",
+    "card": "concepts",
     "name": "Physics Cards",
     "short": "Physics Cards",
     "glyph": "PC",
     "color": "#977514",
     "url": "/",
     "focus": "infinityConcepts",
-    "desc": "Explore the illustrated Infinity physics experiment cards."
+    "desc": "Browse the Infinity 2026 physics card collection."
   },
   {
     "slug": "bitcoin-crusher",
+    "miniUrl": "/bitcoin-crusher/?embed=quanta&jukebox=all3-v2",
     "name": "Bitcoin Crusher",
     "short": "BTC Crusher",
     "glyph": "BC",
@@ -129,6 +135,17 @@ window.INFINITY_APPS=[
     "url": "/alien-coin/",
     "focus": "",
     "desc": "Use the existing Alien Coin site."
+  },
+  {
+    "slug": "tv-channels",
+    "name": "Infinity TV Channels",
+    "short": "Infinity TV",
+    "glyph": "TV",
+    "color": "#674096",
+    "url": "/",
+    "card": "channels",
+    "focus": "phiChannelCards",
+    "desc": "StarQuest, Omni TV, Chiller and ShopLC in one remote."
   },
   {
     "slug": "shoplc",
