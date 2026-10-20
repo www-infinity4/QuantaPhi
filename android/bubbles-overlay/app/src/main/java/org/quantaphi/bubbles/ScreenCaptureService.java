@@ -38,8 +38,11 @@ public final class ScreenCaptureService extends Service {
     private final Runnable storageGuard = new Runnable() {
         @Override public void run() {
             if (finished || !recordingStarted) return;
-            if (getFilesDir().getUsableSpace() < MIN_CAPTURE_FREE_BYTES) {
-                stopReason("Recording stopped to protect phone storage.");
+            // Saving needs room for the joined audio/video MP4 AND its Gallery
+            // copy, in addition to the in-progress video and audio files.
+            long exportReserve = MIN_CAPTURE_FREE_BYTES + 2L * (file == null ? 0L : file.length());
+            if (getFilesDir().getUsableSpace() < exportReserve) {
+                stopReason("Recording stopped to preserve space for saving the video.");
                 finishCapture();
                 return;
             }
