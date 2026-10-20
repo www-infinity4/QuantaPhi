@@ -32,7 +32,7 @@ test('Bubbles reads intended meaning with a model-selected tool, without a magic
  assert.equal(body.receipt.status,'complete');
  assert.equal(body.receipt.repositoryActionsVerified,false);
  assert.equal(body.receipt.minted,false);
- assert.equal(body.result.inductanceH,1e-5);
+ assert.ok(Math.abs(body.result.engineering.inductanceHenries-1e-5)<1e-15);
 });
 
 test('model tools remain an exact read-only allowlist; fake prose and write actions are inert',()=>{
