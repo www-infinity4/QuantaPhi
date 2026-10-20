@@ -92,12 +92,15 @@ export async function handleMcp(request,env,invoke){
 }
 // Optional single-step model selection. Treat only structured function_call envelopes
 // as a call; raw LLM prose/JSON cannot initiate tool execution.
-export async function selectMcpTool(env,question,invoke){
+export async function selectMcpTool(env,question,invoke,context={}){
  if(!env.AI||!clean(question,2500))return null;
+ // Destructive, privileged, or ambiguous engineering instructions must not
+ // be reinterpreted as a read-only research action.
+ if(/\b(?:delete|purchase|pay|transfer|approve|authorize|deploy|merge|commit|install|edit|modify|repair|fix|implement|build|create)\b/i.test(question))return null;
  const functions=tools.map(t=>({type:'function',function:{name:t.name,description:t.description,parameters:t.inputSchema}}));
  let result;
  try{result=await env.AI.run('@cf/openai/gpt-oss-120b',{
-  messages:[{role:'system',content:'You are a read-only MCP tool selector for Bubbles. Choose a tool only when necessary and the user clearly requests current search/weather/news or an ideal LC resonance calculation. Do not invent parameters. Ordinary discussion, site builds, approvals and repository work are NOT eligible tools. Never attempt account, code, file, shell, GitHub or Robot Brain writes.'},{role:'user',content:clean(question,2500)}],
+  messages:[{role:'system',content:'You are a read-only MCP tool selector for Bubbles. Interpret the meaning of natural conversational requests, not memorized commands. Select exactly one appropriate read-only tool only when the user actually needs live search, current weather, dated headlines, or an ideal LC calculation; otherwise use no tool. Do not invent locations, units, factual observations, URLs, permissions or parameters. When the weather location is unspecified, use an empty location rather than guessing. Ordinary discussion, site builds, approvals and repository work are NOT eligible tools. Never attempt account, code, file, shell, GitHub or Robot Brain writes.'},{role:'user',content:clean(question,2500)}],
   tools:functions,tool_choice:'auto',reasoning_effort:'medium',max_tokens:350
  })}catch{return null}
  const calls=result?.choices?.[0]?.message?.tool_calls||result?.tool_calls||
@@ -108,6 +111,21 @@ export async function selectMcpTool(env,question,invoke){
  try{parsed=typeof raw==='string'?JSON.parse(raw):raw}catch{return null}
  let args;
  try{args=validateCall(name,parsed)}catch{return null}
- if((name==='web_search'&&!args.query)||(name==='weather_current'&&!args.location))return null;
+ if(name==='web_search'&&!args.query)return null;
+ if(name==='weather_current'){
+  // A city named by the model is not evidence that the user lives there.
+  // Accept only a place supplied in this request or the explicitly supplied
+  // Bubbles conversation context; otherwise ask rather than invent location.
+  const place=args.location.trim().toLowerCase();
+  const contextPlace=clean(typeof context.location==='string'?context.location:context.location?.city,150).toLowerCase();
+  const query=question.toLowerCase();
+  const city=place.split(',')[0].trim();
+  if(!place||!city||(contextPlace!==place&&!contextPlace.startsWith(city+',')&&
+     !(city.length>=3&&new RegExp('\\\\b'+city.replace(/[.*+?^$\{\}()|[\]\\\\]/g,'\\\\ if((name==='web_search'&&!args.query)||(name==='weather_current'&&!args.location))return null;
+ try{return await invoke(args)}catch{return null}')+'\\\\b','i').test(query)))){
+   return {ok:true,output:'Which town and state should I use for your weather?',receipt:{
+    tool:'weather.current',status:'needs_input',provider:'Open-Meteo',repositoryActionsVerified:false}};
+  }
+ }
  try{return await invoke(args)}catch{return null}
 }
