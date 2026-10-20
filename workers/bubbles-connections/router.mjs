@@ -78,6 +78,13 @@ export async function handleConnections(request,env,resolveService) {
           (id==='cloudflare' && !!env.CLOUDFLARE_CLIENT_ID && !!env.CLOUDFLARE_CLIENT_SECRET)),requirement:CONNECTOR_REQUIREMENTS[id]}))});
     }
     if (!(env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true')) return json(origin,{ok:false,error:'connections_not_configured'},503);
+    // Pairing tokens cannot even resolve wallet-backup storage operations.
+    if(request.method==='POST'&&[
+      PREFIX+'/github/starcoins/backup',PREFIX+'/github/starcoins/verify',
+      PREFIX+'/github/starcoins/auto-bootstrap'
+    ].includes(url.pathname)&&
+       !/^Bearer sq_[A-Za-z0-9_-]{32,}$/.test(request.headers.get('Authorization')||''))
+      throw Error('starcoin_verified_device_required');
     const service = await resolveService(identity.userId);
     // Stage 2 is a read-only pre-chat gate while live OAuth provisioning is
     // incomplete. Only records resolved from the verified StarQuest session
