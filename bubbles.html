@@ -42,6 +42,25 @@
 
 
  
+
+    .bubbles-signin-gate{border:1px solid #d9c3eb;border-radius:20px;background:#fff;padding:17px;margin:16px 0 22px;box-shadow:0 5px 20px #48275d14}
+    .bubbles-signin-gate[hidden]{display:none!important}
+    .bubbles-signin-gate h2{font-size:21px;color:#4a237c;margin:0}
+    .bubbles-signin-gate>p{margin:7px 0 12px}
+    .bubbles-signin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .bubbles-signin-provider{border:1px solid #e0d5e9;background:#fcfaff;border-radius:15px;padding:14px;min-width:0}
+    .bubbles-signin-provider[data-status="connected"]{border-color:#7fb9a2;background:#f3fbf7}
+    .bubbles-signin-provider[data-status="unavailable"]{opacity:.8}
+    .bubbles-signin-provider h3{font-size:18px;margin:0 0 6px;color:#382047}
+    .bubbles-signin-provider p{font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+    .bubbles-signin-provider button{width:100%;min-height:45px;background:#612991;color:white;border:0;border-radius:11px;font:700 14px system-ui;padding:10px;cursor:pointer}
+    .bubbles-signin-provider button:disabled{opacity:.6;cursor:default}
+    .bubbles-signin-provider small{display:block;line-height:1.5;color:#575069;margin-top:10px;font-size:12px}
+    .bubbles-signin-gate[data-ready="true"]{border-color:#7fb9a2;background:#f5fcf7}
+    .bubbles-signin-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:13px;margin-top:14px}
+    .bubbles-signin-controls a{color:#51238a;font-weight:700}
+    .bubbles-signin-retry{border:1px solid #d0bedb;background:white;color:#4a237c;border-radius:10px;padding:9px 11px;min-height:40px;font:700 13px system-ui;cursor:pointer}
+    @media(max-width:540px){.bubbles-signin-grid{grid-template-columns:1fr}}
   </style>
   <link rel="stylesheet" href="/bubbles-introduction.css?v=20261019-product1">
   <meta property="og:type" content="website">
@@ -68,11 +87,11 @@
   <script defer src="/bubbles-voice-gate.js?v=20261012-brain2"></script>
   <script defer src="/bubbles-brain-actions.js?v=20261019-chat-repair1"></script>
   <script defer src="/bubbles-memory.js?v=20261014-memory2"></script>
-  <script defer src="/bubbles-ai.js?v=20261019-chat-repair1"></script>
+  <script defer src="/bubbles-ai.js?v=20261019-signins2"></script>
   <script defer src="/bubbles-pwa.js?v=20261019-chrome1"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1">
 <link rel="stylesheet" href="/bubbles-native-chat.css?v=20261015-readable29">
-  <link rel="stylesheet" href="/bubbles-unified.css?v=20261019-blueorb1">  <link rel="stylesheet" href="/bubbles-product.css?v=20261019-product1">
+  <link rel="stylesheet" href="/bubbles-unified.css?v=20261019-signins2">  <link rel="stylesheet" href="/bubbles-product.css?v=20261019-product1">
 </head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
@@ -93,6 +112,34 @@
           <a href="/#robotDirections">Robot Brain</a>
           <a href="/bubbles-accounts.html">Connect GitHub and other accounts</a>
         </div>
+      </div>
+    </section>
+
+
+    <!-- Stage 2 preview: chat remains usable until both providers and backup
+         recovery are verified live; no client-side status authorizes tools. -->
+    <section class="bubbles-signin-gate" id="bubblesSigninGate" data-ready="false" aria-labelledby="bubblesSigninTitle">
+      <h2 id="bubblesSigninTitle">Connect Bubbles once</h2>
+      <p id="bubblesSigninStatus" role="status" aria-live="polite">Checking saved GitHub and Cloudflare permissions…</p>
+      <div class="bubbles-signin-grid">
+        <article class="bubbles-signin-provider" id="bubblesGithubCard">
+          <h3>GitHub sign-in</h3>
+          <p id="bubblesGithubStatus">Checking your private account connection…</p>
+          <button id="bubblesGithubSignIn" type="button" disabled>Checking GitHub…</button>
+          <small>Approve the official GitHub App permissions. Your private backup repository is created only after its write access is verified in Stage 3.</small>
+        </article>
+        <article class="bubbles-signin-provider" id="bubblesCloudflareCard">
+          <h3>Cloudflare sign-in</h3>
+          <p id="bubblesCloudflareStatus">Checking your project permissions…</p>
+          <button id="bubblesCloudflareSignIn" type="button" disabled>Checking Cloudflare…</button>
+          <small>Approve Cloudflare account, D1 ledger and website-build permissions on Cloudflare's own consent screen. This is separate from wallet recovery.</small>
+        </article>
+      </div>
+      <div class="bubbles-signin-controls">
+        <button id="bubblesRetrySignInCheck" type="button" class="bubbles-signin-retry">Check sign-ins again</button>
+        <a id="bubblesOpenExistingChat" href="#bubblesAICard">Continue to existing chat while setup completes</a>
+        <a href="/bubbles-accounts.html">Manage connections</a>
+        <a href="/wallet-recovery.html?verify=1">Restore an existing wallet session</a>
       </div>
     </section>
 
@@ -126,6 +173,10 @@
     </details>
     <p class="bubbles-page-note">Bubbles uses QuantaPhi services. Connected accounts and Android screen access each require your permission; a queued job is not a verified deployment.</p>
   </main>
+  <script type="module">
+    import {mountBubblesSigninGate} from '/bubbles-signin-gate.mjs?v=20261019-stage2';
+    mountBubblesSigninGate();
+  </script>
 </body>
 </html>
 

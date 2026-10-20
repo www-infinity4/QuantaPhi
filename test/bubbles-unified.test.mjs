@@ -20,10 +20,14 @@ test('site, standalone and floating APK share ONE QuantaPhi chat code path',()=>
 });
 
 test('one stylesheet is last on both site entry points, including the APK WebView',()=>{
+  const versions=[];
   for(const html of [home,studio,chrome]){
-    assert.match(html,/href="\/bubbles-unified\.css\?v=20261019-blueorb1"/);
+    const source=html.match(/href="(\/bubbles-unified\.css\?v=[A-Za-z0-9_-]+)"/);
+    assert.ok(source,"Shared Bubbles stylesheet must be cache-versioned");
+    versions.push(source[1]);
     assert.ok(html.indexOf('bubbles-native-chat.css') < html.indexOf('bubbles-unified.css'));
   }
+  assert.ok(versions.every(value=>value===versions[0]),"All entry points must use identical Bubbles styles");
   assert.match(ui,/html\.bubbles-native-overlay \.ba-panel:not\(\[hidden\]\)/);
   assert.match(ui,/html\.bubbles-native-overlay \.ba-panel \.ba-thread/);
   assert.match(ui,/overflow-y:auto;overflow-x:hidden/);

@@ -134,3 +134,23 @@ html.bubbles-native-overlay .ba-panel .ba-tools{display:block;max-height:none;ov
 html.bubbles-native-overlay .ba-panel .ba-owner-status{font-size:12px;margin-bottom:7px}
 html.bubbles-native-overlay .ba-panel .ba-composer .ba-status{font-size:12px}
 @media(prefers-reduced-motion:reduce){.ba-launcher,.ba-panel,.ba-thread{animation:none!important;transition:none!important}}
+
+/* Stage 2: compact first-party provider sign-ins above Bubbles conversation. */
+.ba-inline-account-gate{flex:none;display:grid;grid-template-columns:1fr 1fr;gap:8px;
+ padding:11px;margin:5px 8px 9px;border:1px solid #d4c3e5;border-radius:14px;background:#faf8ff;
+ color:#38254c;overflow-wrap:anywhere}
+.ba-inline-account-gate>.ba-inline-account-title,.ba-inline-account-gate>.ba-inline-account-hint{
+ grid-column:1 / -1;margin:0}
+.ba-inline-account-gate>.ba-inline-account-title{font-size:16px;line-height:1.4}
+.ba-inline-account-gate>.ba-inline-account-hint{font-size:12px}
+.ba-inline-account-provider{min-width:0;display:flex;flex-direction:column;gap:6px;
+ background:#fff;border:1px solid #e4dcef;border-radius:12px;padding:9px}
+.ba-inline-account-provider[data-status=connected]{border-color:#75b99b;background:#f5fbf7}
+.ba-inline-account-provider[data-status=unavailable]{opacity:.8}
+.ba-inline-account-provider strong{font-size:14px}
+.ba-inline-account-provider small{display:block;font-size:11px;line-height:1.45;overflow-wrap:anywhere}
+.ba-inline-account-provider .ba-control{min-height:43px;margin:0;font-size:12px;padding:7px}
+.ba-inline-account-gate>.ba-control{grid-column:1 / -1;margin:0;min-height:40px}
+.ba-inline-account-gate[data-ready=true]{background:#f4fbf7;border-color:#75b99b}
+@media(max-width:410px){.ba-inline-account-gate{grid-template-columns:1fr}}
+html.bubbles-native-overlay .ba-inline-account-gate{margin:7px 0}

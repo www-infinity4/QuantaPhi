@@ -17,6 +17,7 @@ export class UserConnections extends DurableObject {
     this.service = new ConsentService({storage:ctx.storage,vault:new TokenVault(JSON.parse(env.CONNECTION_KEYRING || '{}'),env.CONNECTION_ACTIVE_KEY),adapters});
   }
   async list(input) {return this.service.list(input);}
+  async gateStatus(input) {return this.service.gateStatus(input);}
   async githubRepositories(input) {return this.service.githubRepositories(input);}
   async githubConnectionTest(input) {return this.service.githubRepositories({...input,test:true});}
   async starCoinBackup(input) {return this.service.starCoinBackup(input);}
