@@ -5,55 +5,50 @@ const SERVICE='https://bubbles-cloud-browser.marvaseater.workers.dev/v1/browser'
 let panelInstance=null, agent=null;
 const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
 export function browserSpeechIntent(input){
- const utterance=String(input||'').trim().replace(/^(?:hey |okay |please |bubbles[, ]+)+/i,'');
- const explicit=/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b|\bbrowser run\b/i.test(utterance);
- // Short, explicit app-opening requests are browser actions even if the person
- // does not say the magic words "cloud browser" each time.
+ const utterance=String(input||'').trim().replace(/^(?:(?:hey|okay|please|bubbles)[,\s]+)+/i,'');
+ const browser=/\b(?:cloud|remote|chrome)\s+browser\b|\bbrowser run\b|\bin (?:the )?browser\b/i.test(utterance);
  const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
- if(!explicit&&!namedOpen)return null;
+ if(!browser&&!namedOpen)return null;
+ const show=/\b(?:show|display|bring up|pull up|see|watch)\b/i.test(utterance)||namedOpen;
  const url=utterance.match(/https:\/\/[^\s"'<>]+/i)?.[0]||'';
- // Real research uses Chrome search results, not a model claiming a page was read.
- // Preserve the user's query as typed; do not submit forms or approve accounts.
- const search=explicit&&utterance.match(/\b(?:search(?:\s+(?:google|the web))?|look up|find)\s+(?:for\s+)?(.+)$/i);
+ // Search is requested by meaning; the caller can ask to see Chrome while
+ // searching, or simply get a grounded text result without opening controls.
+ const search=/\b(?:search|look up|find)\b(?:\s+(?:google|the web|online|chrome))?(?:\s+for)?\s+(.+)$/i.exec(utterance);
  if(search&&!/^(?:type|enter|fill|click|tap|press)\b/i.test(utterance)){
   const query=search[1].replace(/\s+(?:in|using|with|on)\s+(?:the\s+)?(?:cloud|remote|chrome)\s+browser(?:\s+for\s+me)?[.!?]*$/i,'').replace(/[.!?]+$/,'').trim();
-  if(query&&query.length>1&&!/^(?:in|the|browser)$/i.test(query))
-   return {action:'navigate',url:'https://www.google.com/search?q='+encodeURIComponent(query.slice(0,350))};
- }
- // A request to connect the cloud browser starts the existing owner-scoped Chrome session.
- // This does not grant any additional Robot Brain, GitHub, or ChatGPT permissions.
- if(/\b(?:plug\s*(?:in|into)?|connect|start|activate|enable)\b/i.test(utterance))
-  return {action:'navigate',url:url||destinations.bubbles};
- if(/\b(?:open|go to|visit|navigate|launch|load)\b/i.test(utterance)){
-  const name=Object.keys(destinations).find(k=>new RegExp('\\b'+k+'\\b','i').test(utterance));
-  const target=url||destinations[name]||'';
-  return target?{action:'navigate',url:target}:{action:'help'};
+  if(query.length>1)return {action:'research',url:'https://www.google.com/search?q='+encodeURIComponent(query.slice(0,350)),show};
  }
  if(/\b(?:click|tap|press)\b/i.test(utterance)){
   const found=utterance.match(/\b(?:click|tap|press)\s+(?:on\s+)?["'“]?(.+?)["'”]?\s+(?:in|on|with|using)\s+(?:the\s+)?(?:cloud|remote|chrome)?\s*browser\b/i);
-  return found?{action:'click',label:found[1].replace(/^["'“]|["'”]$/g,'').trim()}:{action:'help'};
+  return found?{action:'click',label:found[1].replace(/^["'“]|["'”]$/g,'').trim(),show}:null;
  }
  if(/\b(?:type|enter|fill)\b/i.test(utterance)){
   const found=utterance.match(/\b(?:type|enter|fill)\s+["'“](.+?)["'”]\s+(?:in|into)\s+(?:the\s+)?(.+?)\s+(?:in|on)\s+(?:the\s+)?(?:cloud|remote|chrome)?\s*browser\b/i);
-  return found?{action:'type',value:found[1],field:found[2]}:{action:'help'};
+  return found?{action:'type',value:found[1],field:found[2],show}:null;
  }
- if(/\b(?:read|inspect|review|examine|summarize|see|what(?:'s| is) on)\b/i.test(utterance))return {action:'read'};
- return {action:'help'};
+ if(/\b(?:open|go to|visit|navigate|launch|load)\b/i.test(utterance)){
+  const name=Object.keys(destinations).find(k=>new RegExp('\\b'+k+'\\b','i').test(utterance));
+  const target=url||destinations[name]||'';
+  return target?{action:'navigate',url:target,show}:null;
+ }
+ if(/\b(?:read|inspect|review|examine|summarize|what(?:'s| is) on)\b/i.test(utterance))return {action:'read',show};
+ if(/\b(?:connect|start|activate|enable)\b/i.test(utterance))return {action:'navigate',url:url||destinations.bubbles,show};
+ if(show)return {action:'show',show:true};
+ return null;
 }
 export async function browserConversation(command,{host,ownerHeaders}){
  const intent=browserSpeechIntent(command);if(!intent)return null;
- if(intent.action==='help')return 'I can open pages, inspect their text, click safe navigation controls and type into ordinary text fields in my Cloudflare cloud browser. Try: open StarQuest in the cloud browser, or read the page in the cloud browser. Account approvals and payments must be done manually.';
- mount({host,ownerHeaders});
+ mount({host,ownerHeaders,reveal:intent.show});
  if(!agent)throw Error('browser_control_not_ready');
  return agent.run(intent);
 }
 
-
 const element=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
-export function mount({host,ownerHeaders}){
- if(panelInstance){panelInstance.hidden=false;return panelInstance;}
+export function mount({host,ownerHeaders,reveal=false}){
+ if(panelInstance){if(reveal)panelInstance.hidden=false;return panelInstance;}
  if(!host||typeof ownerHeaders!=='function')throw Error('browser_host_unavailable');
  const wrap=element('section');
+ wrap.hidden=!reveal;
  wrap.className='ba-cloud-browser';
  wrap.style.cssText='padding:12px;margin:10px 0;border:1px solid #8f80b7;border-radius:14px;background:#f8f6fc;color:#302544;max-width:100%;box-sizing:border-box';
  const head=element('div');head.style.cssText='display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap';
