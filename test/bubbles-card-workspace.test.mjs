@@ -38,7 +38,7 @@ function dom(){
   remove(){this.parentNode=null;}
  }
  const playButton={textContent:'Play',click(){new Media().play();}};
- const frameDoc={querySelector:selector=>selector==='#play-btn'?playButton:null,querySelectorAll:selector=>selector==='audio,video'?[]:[{textContent:'Play',getAttribute:()=>null,disabled:false}]};
+ const frameDoc={querySelector:selector=>['#play-btn','#musicPlay'].includes(selector)?playButton:null,querySelectorAll:selector=>selector==='audio,video'?[]:[{textContent:'Play',getAttribute:()=>null,disabled:false}]};
  globalThis.document={createElement:tag=>{const node=new Node(tag);if(tag==='iframe'){node.contentDocument=frameDoc;node.contentWindow={location:{origin:'https://quantaphi.org'},HTMLMediaElement:Media,document:frameDoc,addEventListener(){}};}return node;}};
  globalThis.location={origin:'https://quantaphi.org'};
  return {Node,media};
@@ -113,5 +113,32 @@ test('Back to chat and Escape close the workspace and restore the composer callb
   await workspace.handle({action:'catalog'});
   let prevented=false;container.listeners.keydown({key:'Escape',preventDefault(){prevented=true;}});
   assert.equal(prevented,true);assert.equal(container.hidden,true);assert.equal(restored,2);
+ }finally{delete globalThis.document;delete globalThis.location;}
+});
+
+
+test('Bitcoin Crusher playback, research vocabulary and existing website editors are recognized',()=>{
+ assert.equal(findCard('Bitcoin Crusher').play,'#musicPlay');
+ assert.equal(cardIntent('Bubbles I want to play Bitcoin Crusher')?.action,'play');
+ assert.equal(cardIntent('Bubbles push play')?.action,'play-active');
+ assert.equal(cardIntent('Bubbles give me 10 words')?.action,'suggest-words');
+ assert.equal(cardIntent('add these 10 words')?.action,'add-suggested-words');
+ assert.deepEqual(cardIntent('add words: hydrogen, portal, electron'),{action:'add-words',words:'hydrogen, portal, electron'});
+ assert.equal(cardIntent('edit QuantaPhi website')?.card.repository,'www-infinity4/QuantaPhi');
+ assert.equal(cardIntent('edit Alien Coin')?.card.repository,'www-infinity4/Alien-Coin');
+ assert.equal(cardIntent('spin bitcoin crusher'),null,'A coin-paying spin is not an implicit chat action');
+});
+test('an editable in-chat website opens the actual project before preparing a source-scoped work draft',async()=>{
+ const {Node}=dom();let draft;
+ try{
+  const workspace=new CardWorkspace(new Node('section'),()=>{},()=>{},value=>{draft=value});
+  await workspace.handle({action:'edit',card:findCard('QuantaPhi')});
+  assert.equal(draft.repository,'www-infinity4/QuantaPhi');
+  assert.equal(draft.url,'/');
+  await workspace.handle({action:'open',card:findCard('Bitcoin Crusher')});
+  const suggested=await workspace.handle({action:'suggest-words'});
+  assert.equal(suggested.message.includes('hashrate'),true);
+  assert.equal((await workspace.handle({action:'play-active'})).message.includes('Playback requested'),true);
+  assert.equal((await workspace.handle({action:'add-words',words:'a'.repeat(91)})).message.includes('1–100'),true);
  }finally{delete globalThis.document;delete globalThis.location;}
 });
