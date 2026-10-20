@@ -136,9 +136,9 @@ test('an editable in-chat website opens the actual project before preparing a so
   assert.equal(draft.repository,'www-infinity4/QuantaPhi');
   assert.equal(draft.url,'/');
   await workspace.handle({action:'open',card:findCard('Bitcoin Crusher')});
-  const suggested=workspace.handle({action:'suggest-words'});
+  const suggested=await workspace.handle({action:'suggest-words'});
   assert.equal(suggested.message.includes('hashrate'),true);
-  assert.equal(workspace.handle({action:'play-active'}).message.includes('Playback requested'),true);
-  assert.equal(workspace.handle({action:'add-words',words:'a'.repeat(91)}).message.includes('1–100'),true);
+  assert.equal((await workspace.handle({action:'play-active'})).message.includes('Playback requested'),true);
+  assert.equal((await workspace.handle({action:'add-words',words:'a'.repeat(91)})).message.includes('1–100'),true);
  }finally{delete globalThis.document;delete globalThis.location;}
 });
