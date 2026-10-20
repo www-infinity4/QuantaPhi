@@ -79,6 +79,32 @@ export async function handleConnections(request,env,resolveService) {
     }
     if (!(env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true')) return json(origin,{ok:false,error:'connections_not_configured'},503);
     const service = await resolveService(identity.userId);
+    // Stage 2 is a read-only pre-chat gate while live OAuth provisioning is
+    // incomplete. Only records resolved from the verified StarQuest session
+    // count, and the server refreshes expired provider credentials.
+    if (request.method === 'GET' && url.pathname === PREFIX+'/gate/status') {
+      const accounts=await service.gateStatus(identity);
+      const available=id=>id==='github'
+        ? Boolean(env.GITHUB_CLIENT_ID&&env.GITHUB_CLIENT_SECRET)
+        : Boolean(env.CLOUDFLARE_CLIENT_ID&&env.CLOUDFLARE_CLIENT_SECRET);
+      const required={github:[],cloudflare:['account.read','projects.build','ledger.read']};
+      const state=id=>{
+        const configured=available(id);
+        const candidates=accounts.filter(x=>x.provider===id);
+        const matching=candidates.find(x=>x.status==='connected' &&
+          Number.isFinite(x.expiresAt)&&x.expiresAt>Date.now()+30000);
+        const missingActions=required[id].filter(a=>!matching?.grantedActions?.includes(a));
+        return {configured,connected:Boolean(configured&&matching),
+          permissionsApproved:Boolean(configured&&matching&&missingActions.length===0),
+          label:configured&&matching?matching.label:null,
+          missingActions:matching?missingActions:[],
+          reconnectRequired:candidates.length>0&&!matching};
+      };
+      const github=state('github'),cloudflare=state('cloudflare');
+      return json(origin,{ok:true,mode:'preview',enforced:false,
+        ready:github.permissionsApproved&&cloudflare.permissionsApproved,
+        providers:{github,cloudflare}});
+    }
     if (request.method === 'GET' && url.pathname === PREFIX+'/accounts') return json(origin,{ok:true,accounts:await service.list(identity)});
     if (request.method !== 'POST') return json(origin,{ok:false,error:'not_found'},404);
     if (!request.headers.get('Content-Type')?.startsWith('application/json')) return json(origin,{ok:false,error:'json_required'},415);
