@@ -942,7 +942,30 @@ if(brainInbox){
  brainNoticeText=create('p','ba-brain-notice','Verified Brain notifications will appear here. Queued work is not a completed repair.');
  brainNoticeText.setAttribute('role','status');
  row.append(brainNoticePrevious,brainNoticeText,brainNoticeNext);
- brainInbox.append(head,row);
+ const hashtagRow=create('div','ba-brain-notice-row');
+ const hashtagScan=create('button','ba-control','Scan #bubbles on X');
+ hashtagScan.type='button';
+ hashtagScan.setAttribute('aria-label','Find verified owner hashtag posts and save draft Brain tickets');
+ hashtagRow.append(hashtagScan);
+ brainInbox.append(head,row,hashtagRow);
+ hashtagScan.addEventListener('click',async()=>{
+  if(!ownerReady){recordBrainNotice('Connect your verified Robot Brain owner session before scanning #bubbles posts.');return}
+  hashtagScan.disabled=true;hashtagScan.textContent='Scanning #bubbles…';
+  try{
+   const headers=await verifiedOwnerHeaders();
+   const response=await bubblesFetch(BRAIN+'/work/social/bubbles/scan',{
+    method:'POST',headers:{...headers,'Content-Type':'application/json'},
+    body:'{}',cache:'no-store'
+   },30000);
+   const result=await response.json().catch(()=>({}));
+   if(!response.ok||!result.ok)throw Error(result.error||'X discovery unavailable');
+   const drafted=(result.drafts||[]).filter(item=>!item.deduplicated).length;
+   recordBrainNotice('Verified #bubbles scan: '+result.found+' matching owner posts, '+drafted+
+    ' new draft tickets. Review and authorize drafts in Robot Brain; nothing started running.');
+   void pollBrainProgress();
+  }catch(error){recordBrainNotice('#bubbles scan could not complete: '+String(error.message||error).slice(0,170)+'. No live order import was verified.')}
+  finally{hashtagScan.disabled=false;hashtagScan.textContent='Scan #bubbles on X'}
+ });
  chatScroll.insertBefore(brainInbox,conversation);
  brainNoticePrevious.addEventListener('click',()=>{brainNoticeIndex=Math.min(brainNotices.length-1,brainNoticeIndex+1);renderBrainInbox()});
  brainNoticeNext.addEventListener('click',()=>{brainNoticeIndex=Math.max(0,brainNoticeIndex-1);renderBrainInbox()});
