@@ -19,10 +19,20 @@ function crc32(bytes){
  for(const value of bytes){crc^=value;for(let i=0;i<8;i++)crc=(crc>>>1)^((crc&1)?0xedb88320:0);}
  return (crc^0xffffffff)>>>0;
 }
-function record(role,text,at,id){
- if(!['user','assistant'].includes(role))return null;
- const value=clean(text);
- return value?{role,text:value,at:timestamp(at),id:clean(id,100)}:null;
+function records(role,text,at,id){
+ if(!['user','assistant'].includes(role)||typeof text!=='string')return [];
+ // A single ChatGPT response can exceed the existing D1 6000-character
+ // message bound. Preserve ALL of its text in deterministic continuation
+ // records instead of silently truncating the source conversation.
+ const value=text.replace(/\u0000/g,'').trim();
+ if(!value)return [];
+ const chunks=[];
+ for(let start=0;start<value.length;start+=5500){
+  const part=chunks.length;
+  chunks.push({role,text:value.slice(start,start+5500),at:timestamp(at),
+   id:clean(id,80)+(value.length>5500?'_part'+part:'')});
+ }
+ return chunks;
 }
 export function parseConversations(json){
  const input=Array.isArray(json)?json:Array.isArray(json?.conversations)?json.conversations:null;
@@ -34,7 +44,7 @@ export function parseConversations(json){
   if(!thread||typeof thread!=='object')continue;
   let items=[];
   if(source==='bubbles'){
-   items=Array.isArray(thread.messages)?thread.messages.map((m,i)=>record(m.role,m.text,m.at,m.id||'restore_'+i)).filter(Boolean):[];
+   items=Array.isArray(thread.messages)?thread.messages.flatMap((m,i)=>records(m.role,m.text,m.at,m.id||'restore_'+i)):[];
   }else{
    const mapping=thread.mapping;
    if(!mapping||typeof mapping!=='object')continue;
@@ -45,16 +55,16 @@ export function parseConversations(json){
     cursor=mapping[cursor]?.parent;
    }
    const nodes=chain.length?chain.reverse():Object.entries(mapping).sort((a,b)=>timestamp(a[1]?.message?.create_time)-timestamp(b[1]?.message?.create_time));
-   items=nodes.map(([id,node])=>{
+   if(cursor&&mapping[cursor]&&chain.length>=10000)throw Error('This conversation has more than 10000 mapped nodes and requires a larger-history reader.');
+   items=nodes.flatMap(([id,node])=>{
     const m=node?.message;const parts=m?.content?.parts;
     const value=Array.isArray(parts)?parts.filter(x=>typeof x==='string').join('\n'):m?.content?.text;
-    return record(m?.author?.role,value,m?.create_time||thread.create_time,'import_'+String(thread.id||index)+'_'+id);
-   }).filter(Boolean);
+    return records(m?.author?.role,value,m?.create_time||thread.create_time,'import_'+String(thread.id||index)+'_'+id);
+   });
   }
   if(!items.length)continue;
-  // A conversation can exceed the current on-screen/Worker 400-message window.
-  // Report that explicitly instead of pretending the original ZIP was restored in full.
-  if(items.length>400){skippedMessages+=items.length-400;items=items.slice(-400);}
+  // Page conversations through D1 on demand instead of dropping messages
+  // after the first 400. Their ordering and original timestamps are retained.
   sessions.push({sourceId:String(thread.id||index),id:source==='bubbles'&&SID.test(thread.id||'')?thread.id:'',
    title:clean(thread.title||'Imported conversation',80),created:timestamp(thread.create_time||thread.created||items[0].at),
    updated:timestamp(thread.update_time||thread.updated||items.at(-1).at),messages:items});
