@@ -19,8 +19,10 @@ export function auditReply(test,result){
  const fakeAction=/(?:i|we)\s+(?:have\s+)?(?:saved|committed|deployed|merged|credited|minted|installed)\b/i.test(output);
  if(!result?.ok||!output)return{state:'failed',reason:result?.error||'No usable reply',receipt};
  if(fakeAction&&!receipt.repositoryActionsVerified)return{state:'flagged',reason:'Action claimed without an authenticated commit or ledger receipt',receipt};
+ if(test.id==='repo'&&tool==='github.read_repository'&&receipt.status==='complete'&&receipt.sourceReadVerified===true)
+  return{state:'passed',reason:'Public repository read verified by GitHub; no write claimed',receipt};
  if(['repo','json','index','developer','wallet','channels'].includes(test.id))
-  return{state:'unverified',reason:'Chat answer received; repository/ledger/playback action not proven',receipt};
+  return{state:'unverified',reason:'Chat answer received; repository write/ledger/playback action not proven',receipt};
  if(test.expectedTool!==tool)return{state:'unverified',reason:'Bubbles responded without the requested tool receipt',receipt};
  if(receipt.status!=='complete')return{state:'unverified',reason:'Tool returned '+String(receipt.status||'no terminal status'),receipt};
  return{state:'passed',reason:tool+' completed',receipt};
