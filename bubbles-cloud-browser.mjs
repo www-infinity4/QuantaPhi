@@ -234,19 +234,50 @@ export function mount({host,ownerHeaders,reveal=false}){
  refresh.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('view')});
  stop.addEventListener('click',()=>{if(state)void action('stop');else status.textContent='No live Chrome session to stop.'});
  agent={async run(intent){
-  const requested=intent.action==='navigate'?{action:state?'navigate':'start',url:intent.url}:intent;
-  if(!state&&requested.action!=='start')return 'Start Cloud Chrome in Bubbles first, then ask me to read or interact with its current page.';
+  const actionName=intent.action;
+  if(actionName==='show'){
+   if(!state){
+    const opened=await call('start',{url:destinations.quantaphi});
+    show(opened);
+   }else show(await call('view'));
+   return 'Live Cloud Chrome is visible in this Bubbles chat. The browser is connected, but no search was requested.';
+  }
+  if(actionName==='research'){
+   if(!state){
+    const opened=await call('start',{url:intent.url});
+    show(opened);
+   }else{
+    const moved=await call('navigate',{url:intent.url});
+    if(moved.result?.navigationRequested!==true)throw Error('browser_navigation_unverified');
+   }
+   // Let Chrome finish its first paint before requesting bounded page text.
+   await new Promise(resolve=>setTimeout(resolve,550));
+   const read=await call('read');
+   if(read.result?.ok===false)throw Error(read.result.error||'browser_page_read_failed');
+   const page=read.result||{};
+   const report='Chrome research page: '+String(page.title||'Search results')+' · '+
+    String(page.url||intent.url)+'\n'+String(page.text||'No readable page text was returned.').slice(0,7000);
+   return report;
+  }
+  const requested=actionName==='navigate'?{action:state?'navigate':'start',url:intent.url}:intent;
+  if(!state&&requested.action!=='start'){
+   return 'Cloud Chrome has no active session. Ask me to open or show the browser, then try again.';
+  }
   if(requested.action==='start'){
-   const result=await call('start',{url:requested.url});show(result);
-   return 'Cloud Chrome opened '+requested.url+'. Actual browser session created; you can inspect the live page in the Bubbles panel.';
+   const started=await call('start',{url:requested.url});
+   show(started);
+   return 'Cloud Chrome opened '+requested.url+'. The live session was confirmed.';
   }
   const result=await call(requested.action,requested);
-  if(result.ok!==true||result.result?.ok===false)return 'Cloud browser action was not performed: '+String(result.result?.error||result.error||'not_verified');
-  if(requested.action==='navigate')return 'Cloud Chrome navigation requested for '+requested.url+'. Ask me to read the page to check the loaded result.';
-  if(requested.action==='read')return 'Cloud browser read: '+String(result.result?.title||'Untitled')+' · '+String(result.result?.url||'')+'\n'+String(result.result?.text||'').slice(0,7000);
-  if(requested.action==='click')return 'Cloud browser clicked '+String(result.result?.label||requested.label)+'. Ask me to read the page to verify the result.';
+  if(result.ok!==true||result.result?.ok===false)throw Error(result.result?.error||result.error||'browser_operation_unverified');
+  if(requested.action==='navigate')return result.result?.navigationRequested?
+   'Cloud Chrome requested navigation to '+requested.url+'. The loaded page has not yet been read.':
+   'Chrome did not confirm navigation.';
+  if(requested.action==='read')return 'Cloud browser read: '+String(result.result?.title||'Untitled')+' · '+
+   String(result.result?.url||'')+'\n'+String(result.result?.text||'').slice(0,7000);
+  if(requested.action==='click')return 'Cloud browser clicked '+String(result.result?.label||requested.label)+'. The changed page has not yet been read.';
   if(requested.action==='type')return 'Cloud browser typed '+result.result.characters+' characters in '+String(result.result.field||'the field')+'. I did not submit the form.';
-  return 'Browser action completed with a server receipt.';
+  return 'Browser action returned a verified server receipt.';
  }};
 
  async function pollChatGPT(){
