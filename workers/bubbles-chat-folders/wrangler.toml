@@ -1,0 +1,8 @@
+name = "bubbles-chat-folders"
+main = "worker.mjs"
+compatibility_date = "2026-10-19"
+keep_vars = true
+[[services]]
+binding = "BRAIN"
+service = "infinity-brain-clock"
+# WORK_DB is an owner-scoped D1 binding supplied from verified account deployment.

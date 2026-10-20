@@ -154,3 +154,21 @@ html.bubbles-native-overlay .ba-panel .ba-composer .ba-status{font-size:12px}
 .ba-inline-account-gate[data-ready=true]{background:#f4fbf7;border-color:#75b99b}
 @media(max-width:410px){.ba-inline-account-gate{grid-template-columns:1fr}}
 html.bubbles-native-overlay .ba-inline-account-gate{margin:7px 0}
+
+/* ChatGPT-style conversation history: one compact, owner-scoped, reopenable chat list. */
+.ba-panel .ba-conversation-folders{flex:none;margin:4px 6px 7px;border:1px solid #cfc4dc;
+ border-radius:13px;background:#fff;min-width:0;max-width:100%}
+.ba-panel .ba-conversation-folders>summary{list-style:none;cursor:pointer;min-height:46px;
+ display:flex;align-items:center;padding:10px 14px;font-weight:850;color:#46226c}
+.ba-panel .ba-conversation-folders>summary::before{content:'☰';margin-right:10px;font-size:16px;color:#6840a5}
+.ba-panel .ba-conversation-folders[open]{padding-bottom:10px}
+.ba-panel .ba-folder-actions{display:flex;gap:8px;flex-wrap:wrap;padding:0 10px 8px}
+.ba-panel .ba-folder-actions button{flex:1;min-width:110px;min-height:44px}
+.ba-panel .ba-folder-list{max-height:min(38dvh,300px);overflow-y:auto;padding:0 10px;display:grid;gap:5px}
+.ba-panel .ba-folder-entry{width:100%;text-align:left;padding:10px 12px;min-height:44px;
+ overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:#f7f4fb;border:1px solid #e4deeb;
+ border-radius:10px;font-size:14px;color:#342247;font-weight:650}
+.ba-panel .ba-folder-entry[aria-current='true']{background:#ede1fa;border-color:#9470bc}
+.ba-panel .ba-conversation-folders .ba-muted{padding:0 12px}
+html.bubbles-native-overlay .ba-panel .ba-conversation-folders{margin:2px 5px 6px}
+@media(max-width:430px){.ba-panel .ba-folder-list{max-height:32dvh}}

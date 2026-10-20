@@ -8,8 +8,32 @@ if(!host || window.__QuantaBubblesMounted)return;
 window.__QuantaBubblesMounted=true;
 // The tool gateway delegates ordinary chat to Oracle /v1/chat.
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
+const FOLDER_API='https://bubbles-chat-folders.marvaseater.workers.dev/v1/folders';
 const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261019-words1');
 let streamVoice=null,voiceGeneration=0;
+// Core job acknowledgements must work in Android WebView even if module imports fail.
+const humanReplies=()=>({
+ githubReply(result){
+  if(result.error||!result.ok)return 'I could not confirm that GitHub finished the request. Nothing is being marked complete.';
+  if(result.status==='dispatch_accepted')return 'GitHub accepted the request, but the work has not finished.';
+  if(result.status==='repository_created')return 'The repository is created. We can open it and work on its pages.';
+  if(result.status==='credential_verified_read')return 'The GitHub connection is responding.';
+  if(result.status==='completed'||result.status==='deployed_verified')return 'The available completion checks passed. What should we work on next?';
+  return 'GitHub responded. I can check the detailed result before calling anything finished.';
+ },
+ workReply(ticket){
+  if(ticket.deduplicated)return 'That work request already exists. I will follow it without creating another.';
+  if(ticket.runner==='queued_for_runner')return 'Your request is saved and the build runner has been requested. Work has not finished yet.';
+  if(ticket.runner==='awaiting_repository_runner')return 'Your request is saved, but the build runner has not started yet.';
+  if(ticket.status==='deployed_verified'&&ticket.runner==='completed_verified')return 'The repair is finished and verified. What should we work on next?';
+  return 'Your request is saved. I have not confirmed that it started.';
+ },
+ workSummary(tickets){
+  const count=tickets.length,finished=tickets.filter(t=>t.status==='complete'||t.status==='deployed_verified').length,
+   waiting=tickets.filter(t=>t.status==='ready'||t.status==='queued').length;
+  return count?('Your work history is available. '+finished+' are marked complete and '+waiting+' are waiting. I can check any job before claiming it ran.'):'There are no saved work requests to report.';
+ }
+});
 const brainTools=window.BubblesBrainActions||null;
 let cardWorkspaceModule,cardWorkspaceInstance,activeCardEvidence=null;
 async function chatCardWorkspace(){
@@ -228,9 +252,29 @@ const CLOUD_MEMORY_KEY='quantaphi:bubbles:cloud-memory:v1'+(bubbleId?':'+bubbleI
 let cloudChat=data(CLOUD_MEMORY_KEY,false)===true;
 const longMemory=embedded?null:window.BubblesMemory||null;
 longMemory?.setEnabled(keepChat);
-let messages=keepChat?data(HISTORY,[]):[];
-if(!Array.isArray(messages))messages=[];
-messages=messages.filter(item=>item&&['user','assistant'].includes(item.role)&&typeof item.text==='string').slice(-400).map(item=>({id:item.id||crypto.randomUUID(),at:item.at||Date.now(),role:item.role,text:item.text.slice(0,6000)}));
+const THREAD_INDEX='quantaphi:bubbles:threads:v2'+(bubbleId?':'+bubbleId:'');
+const THREAD_PREFIX=THREAD_INDEX+':';
+const TAB_THREAD=THREAD_INDEX+':tab';
+let threadIndex=data(THREAD_INDEX,[]);
+if(!Array.isArray(threadIndex))threadIndex=[];
+const legacy=data(HISTORY,[]);
+if(keepChat&&legacy?.length&&!data(THREAD_INDEX+':migrated',false)){
+ if(save(THREAD_PREFIX+'legacy-history',legacy)){
+  threadIndex.push({id:'legacy-history',title:'Earlier Bubbles history',updated:Date.now()});
+  save(THREAD_INDEX,threadIndex);save(THREAD_INDEX+':migrated',true);
+ }
+}
+let lastTab='';try{lastTab=sessionStorage.getItem(TAB_THREAD)||''}catch{}
+const reloaded=typeof performance!=='undefined'&&performance.getEntriesByType?.('navigation')?.[0]?.type==='reload';
+let activeThread=reloaded&&threadIndex.some(t=>t.id===lastTab)?lastTab:'chat_'+crypto.randomUUID().replaceAll('-','');
+try{sessionStorage.setItem(TAB_THREAD,activeThread)}catch{}
+if(!threadIndex.some(t=>t.id===activeThread)){
+ threadIndex.unshift({id:activeThread,title:'New conversation',updated:Date.now()});
+ save(THREAD_INDEX,threadIndex);
+}
+const readThread=id=>(data(THREAD_PREFIX+id,[])||[]).filter(m=>m&&['user','assistant'].includes(m.role)&&typeof m.text==='string').slice(-400);
+let messages=keepChat?readThread(activeThread):[];
+messages=messages.map(m=>({...m,sessionId:activeThread,id:m.id||crypto.randomUUID(),at:m.at||Date.now(),text:m.text.slice(0,6000)}));
 let greeted=messages.length>0,busy=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending=[],speaking=false,voiceRetry=null,tries=0;
@@ -258,16 +302,16 @@ async function sharedMemory(query=''){
  if(memoryBusy)return false;memoryBusy=true;
  try{
   const batch=[...memoryPending.values()].slice(0,20);
-  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({messages:batch,query})},15000);
+  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({messages:batch,query,sessionId:activeThread})},15000);
   const result=await response.json();if(!response.ok||!result.ok)throw Error(result.error||'memory_unavailable');
   for(const id of result.saved||[]){memoryPending.delete(id);memoryAck.add(id);}
   save(MEMORY_OUTBOX,[...memoryPending.values()]);
   memoryContext=result.related||[];memoryInstructions=result.userInstructions||[];memoryCapabilities=result.capabilities||[];
   if(['brief','finished','detailed'].includes(result.notificationPreferences?.mode)){notificationPreferences=result.notificationPreferences;if(notificationPreferences.mode==='finished')progressVoiceQueue.splice(0,progressVoiceQueue.length,...progressVoiceQueue.filter(text=>/finished/.test(text)));}
   const seen=new Set(messages.map(m=>m.id));
-  for(const m of result.recent||[])if(!seen.has(m.id)){messages.push(m);seen.add(m.id);display(m.text,m.role==='user'?'you':'ai');}
+  for(const m of result.recent||[])if(m.sessionId===activeThread&&!seen.has(m.id)){messages.push(m);seen.add(m.id);display(m.text,m.role==='user'?'you':'ai');}
   messages.sort((a,b)=>a.at-b.at||String(a.id).localeCompare(String(b.id)));messages=messages.slice(-400);
-  if(keepChat)save(HISTORY,messages);memoryLastError='';memoryHint.textContent=memoryPending.size?'Shared memory connected · '+memoryPending.size+' messages waiting to sync.':'Owner conversation synced · recent history and indexed earlier context available.';return true;
+  if(keepChat)saveThread();memoryLastError='';memoryHint.textContent=memoryPending.size?'Shared memory connected · '+memoryPending.size+' messages waiting to sync.':'Owner conversation synced · recent history and indexed earlier context available.';return true;
  }catch(error){memoryLastError=String(error.message||error);memoryHint.textContent='Shared memory unavailable; messages stay queued on this device. '+memoryLastError;return false}
  finally{memoryBusy=false}
 }
@@ -307,12 +351,30 @@ async function checkSharedVoiceStatus(){
  }catch{ /* Keep text chat available when the owner-state service is offline. */ }
  finally{sharedVoiceStatusBusy=false;}
 }
+function saveThread(){
+ if(!keepChat)return false;
+ const saved=save(THREAD_PREFIX+activeThread,messages.slice(-160));
+ if(embedded)save(HISTORY,messages.slice(-400));
+ if(!saved)return false;
+ const row=threadIndex.find(t=>t.id===activeThread);
+ const first=messages.find(m=>m.role==='user')?.text?.trim().replace(/\s+/g,' ').slice(0,65);
+ if(row){row.updated=Date.now();if(row.title==='New conversation'&&first)row.title=first;}
+ threadIndex.sort((a,b)=>b.updated-a.updated);
+ save(THREAD_INDEX,threadIndex.slice(0,150));
+ return true;
+}
 function persistChat(){
- for(const m of messages){if(!m.id){m.id=crypto.randomUUID();m.at=Date.now();}if(!m.at)m.at=Date.now();}
- if(!embedded&&keepChat){for(const m of messages)if(!memoryAck.has(m.id))memoryPending.set(m.id,{id:m.id,at:m.at,role:m.role,text:m.text.slice(0,6000)});save(MEMORY_OUTBOX,[...memoryPending.values()]);void sharedMemory();}
+ for(const m of messages){if(!m.id)m.id=crypto.randomUUID();if(!m.at)m.at=Date.now();m.sessionId=activeThread;}
+ if(!embedded&&keepChat){
+  for(const m of messages)if(!memoryAck.has(m.id))
+   memoryPending.set(m.id,{id:m.id,at:m.at,role:m.role,text:m.text.slice(0,6000),sessionId:m.sessionId});
+  save(MEMORY_OUTBOX,[...memoryPending.values()]);void sharedMemory();
+ }
  if(!keepChat)return false;
  void longMemory?.appendAll(messages.slice(-3));
- return save(HISTORY,messages.slice(-400));
+ const saved=saveThread();
+ if(saved&&!embedded&&ownerReady)void syncCloudFolder(activeThread,messages.slice(-3));
+ return saved;
 }
 const card=create('section','ba-card ba-studio-card');
 card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','Tap Bubbles once to enable continuous listening. It glows when it hears sound. Just speak naturally—no wake name needed. Speech clips go to Cloudflare for transcription; silence stays on your device. Mute releases the microphone.'));
@@ -928,7 +990,7 @@ const brainNotices=[];
 let brainNoticeIndex=0,brainInboxInitialized=false;
 let brainNoticeText=null,brainNoticeCount=null,brainNoticePrevious=null,brainNoticeNext=null,brainInboxState=null;
 if(brainInbox){
- brainInbox.append(create('summary','','Robot Brain notifications'));
+ brainInbox.append(create('summary','','Work details'));
  const head=create('div','ba-brain-inbox-head');
  brainInboxState=create('span','ba-brain-state','Brain connection pending');
  brainInboxState.dataset.connection='pending';
@@ -943,7 +1005,11 @@ if(brainInbox){
  brainNoticeText.setAttribute('role','status');
  row.append(brainNoticePrevious,brainNoticeText,brainNoticeNext);
  brainInbox.append(head,row);
- chatScroll.insertBefore(brainInbox,conversation);
+ const receiptLink=create('a','ba-tool-link','View work receipts');
+ receiptLink.href='https://quantaphi.org/#robotDirections';
+ receiptLink.rel='noopener noreferrer';
+ brainInbox.append(receiptLink);
+ tools.append(brainInbox);
  brainNoticePrevious.addEventListener('click',()=>{brainNoticeIndex=Math.min(brainNotices.length-1,brainNoticeIndex+1);renderBrainInbox()});
  brainNoticeNext.addEventListener('click',()=>{brainNoticeIndex=Math.max(0,brainNoticeIndex-1);renderBrainInbox()});
 }
@@ -1143,6 +1209,104 @@ function display(text,who,greeting=false){
  }
 }
 for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
+// Previous conversations are organized by visit. A new visit starts a new chat
+// without deleting the previous one. Older conversations load on demand.
+const chatsPanel=create('details','ba-conversation-folders');
+const chatsSummary=create('summary','','Chats');
+const chatsActions=create('div','ba-folder-actions');
+const newConversation=create('button','ba-control','New chat');newConversation.type='button';
+const reloadConversations=create('button','ba-control','Refresh chats');reloadConversations.type='button';
+const chatsList=create('div','ba-folder-list');chatsList.setAttribute('aria-label','Previous Bubbles conversations');
+const chatsMessage=create('p','ba-muted','Previous conversations are preserved.');
+chatsActions.append(newConversation,reloadConversations);
+chatsPanel.append(chatsSummary,chatsActions,chatsMessage,chatsList);
+chatScroll.insertBefore(chatsPanel,conversation);
+function renderConversationFolders(){
+ chatsList.replaceChildren();
+ for(const item of [...threadIndex].sort((a,b)=>(b.updated||0)-(a.updated||0)).slice(0,100)){
+  const row=create('button','ba-folder-entry',item.title||'Conversation');
+  row.type='button';row.dataset.sessionId=item.id;
+  const stamp=new Date(item.updated||Date.now()).toLocaleDateString(undefined,{month:'short',day:'numeric'});
+  row.textContent=(item.id===activeThread?'● ':'')+(item.title||'Conversation')+' · '+stamp;
+  row.setAttribute('aria-current',String(item.id===activeThread));
+  row.addEventListener('click',()=>void openConversation(item.id));
+  chatsList.append(row);
+ }
+}
+async function conversationApi(mode,sessionId='',extra={}){
+ const headers=await verifiedOwnerHeaders();
+ const response=await bubblesFetch(FOLDER_API,{method:'POST',
+  headers:{...headers,'Content-Type':'application/json'},
+  body:JSON.stringify({mode,sessionId,...extra})},12000);
+ const value=await response.json();
+ if(!response.ok||!value.ok)throw Error(value.error||'conversation_unavailable');
+ return value;
+}
+async function syncCloudFolder(id,items){
+ if(!ownerReady||!keepChat||embedded||id==='legacy-history')return false;
+ const clean=items.filter(m=>m&&['user','assistant'].includes(m.role)&&m.text).slice(-10)
+  .map(m=>({id:m.id,role:m.role,text:String(m.text).slice(0,6000),at:m.at}));
+ if(!clean.length)return true;
+ try{await conversationApi('sessions-save',id,{messages:clean});return true;}
+ catch{return false;}
+}
+async function refreshConversationFolders(){
+ if(!ownerReady){chatsMessage.textContent='Chats saved on this device. Connect your owner account for cloud history.';renderConversationFolders();return;}
+ try{
+  const data=await conversationApi('sessions-list');
+  if(!Array.isArray(data.sessions))throw Error('cloud_folders_not_deployed');
+  for(const item of data.sessions||[]){
+   if(!/^[a-zA-Z0-9_-]{10,80}$/.test(item.id||''))continue;
+   const existing=threadIndex.find(row=>row.id===item.id);
+   if(!existing)threadIndex.push({...item,updated:item.updated||Date.now()});
+   else if(existing.title==='New conversation'&&item.title)existing.title=item.title;
+  }
+  save(THREAD_INDEX,threadIndex);chatsMessage.textContent='Your older conversations are ready to reopen.';
+ }catch{chatsMessage.textContent='Cloud chat history could not be reached. Your device history is still available.'}
+ renderConversationFolders();
+}
+async function openConversation(id){
+ if(busy){chatsMessage.textContent='Finish the current reply before changing conversations.';return;}
+ if(!threadIndex.some(item=>item.id===id))return;
+ if(keepChat)saveThread();
+ let next=keepChat?readThread(id):[];
+ if(ownerReady){
+  try{
+   const result=await conversationApi('sessions-get',id);
+   if(!Array.isArray(result.messages)||!result.session)throw Error('cloud_folders_not_deployed');
+   if(result.session?.title){const entry=threadIndex.find(x=>x.id===id);if(entry)entry.title=result.session.title;}
+   next=result.messages||next;
+  }catch{chatsMessage.textContent='Showing the saved device copy. Cloud history was unavailable.'}
+ }
+ activeThread=id;
+ try{sessionStorage.setItem(TAB_THREAD,id)}catch{}
+ messages=next.map(m=>({...m,sessionId:id,id:m.id||crypto.randomUUID(),at:m.at||Date.now()}));
+ memoryContext=[];activeCardEvidence=null;cardWorkspaceInstance?.close();cardWorkspaceInstance=null;
+ conversation.replaceChildren();
+ for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
+ greeted=messages.length>0;
+ if(keepChat)saveThread();
+ chatsPanel.open=false;renderConversationFolders();
+ input.focus();
+}
+async function startConversation(){
+ if(busy){chatsMessage.textContent='Finish the current reply first.';return;}
+ if(keepChat)saveThread();
+ activeThread='chat_'+crypto.randomUUID().replaceAll('-','');
+ try{sessionStorage.setItem(TAB_THREAD,activeThread)}catch{}
+ threadIndex.unshift({id:activeThread,title:'New conversation',updated:Date.now()});
+ save(THREAD_INDEX,threadIndex);
+ messages=[];memoryContext=[];greeted=false;activeCardEvidence=null;
+ cardWorkspaceInstance?.close();cardWorkspaceInstance=null;conversation.replaceChildren();
+ if(ownerReady)void conversationApi('sessions-create',activeThread,{title:'New conversation'}).catch(()=>{});
+ renderConversationFolders();chatsPanel.open=false;status.textContent='New conversation ready. Your earlier chats are saved.';
+ input.focus();
+}
+newConversation.addEventListener('click',()=>void startConversation());
+reloadConversations.addEventListener('click',()=>void refreshConversationFolders());
+chatsPanel.addEventListener('toggle',()=>{if(chatsPanel.open)void refreshConversationFolders()});
+renderConversationFolders();
+
 // Native WebView and Chrome use the same first-party UI but have independent
 // cookies. This IndexedDB archive supplements the existing owner Brain archive.
 // One-time explicit user-selected import; no ChatGPT passwords, cookies or
@@ -1233,7 +1397,7 @@ longMemory?.onUpdate((events,error)=>{
  if(error){memoryHint.textContent='Private archive sync paused: '+error+'. Owner Brain memory is unchanged.';return}
  if(Array.isArray(events)&&events.length){
   const ids=new Set(messages.map(m=>m.id));
-  for(const m of events)if(['user','assistant'].includes(m.role)&&!ids.has(m.id)){messages.push(m);ids.add(m.id);}
+  for(const m of events)if(m.sessionId===activeThread&&['user','assistant'].includes(m.role)&&!ids.has(m.id)){messages.push(m);ids.add(m.id);}
   messages.sort((a,b)=>a.at-b.at||String(a.id).localeCompare(String(b.id)));
   messages=messages.slice(-400);
   conversation.replaceChildren();for(const m of messages)display(m.text,m.role==='user'?'you':'ai');
@@ -1244,7 +1408,7 @@ if(keepChat&&longMemory){
   await longMemory.appendAll(messages);
   const recent=await longMemory.recent(100);
   const seen=new Set(messages.map(m=>m.id));
-  for(const m of recent)if(['user','assistant'].includes(m.role)&&!seen.has(m.id)){messages.push(m);seen.add(m.id);}
+  for(const m of recent)if(m.sessionId===activeThread&&['user','assistant'].includes(m.role)&&!seen.has(m.id)){messages.push(m);seen.add(m.id);}
   messages.sort((a,b)=>a.at-b.at||String(a.id).localeCompare(String(b.id)));
   messages=messages.slice(-400);
   conversation.replaceChildren();for(const m of messages)display(m.text,m.role==='user'?'you':'ai');
@@ -1289,10 +1453,12 @@ cloudToggle.addEventListener('change',async()=>{
  }catch(error){cloudChat=false;cloudToggle.checked=false;save(CLOUD_MEMORY_KEY,false);
   memoryHint.textContent='Sync not connected: '+String(error.message||error)}
 });
+clearChat.textContent=embedded?'Clear this view':'Start new chat';
 clearChat.addEventListener('click',()=>{
- messages=[];conversation.replaceChildren();greeted=false;
- try{localStorage.removeItem(HISTORY)}catch{}
- status.textContent='View cleared. Your owner conversation remains archived.';
+ if(embedded){messages=[];conversation.replaceChildren();greeted=false;
+  try{localStorage.removeItem(HISTORY)}catch{}
+  status.textContent='View cleared. Your notes and owner archive remain saved.';
+ }else void startConversation();
 });
 cloudDelete.addEventListener('click',async()=>{
  if(!cloudChat||!confirm('Erase the extra Bubbles transcript stored under your verified wallet? This will not erase the separate Robot Brain job records.'))return;
@@ -1838,38 +2004,25 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const githubDetail=result.error==='github_runtime_credential_missing'
     ?'Bubbles direct GitHub is not connected to a server-side write credential. No action occurred; connect the owner GitHub account with appropriate repository permissions.'
     :(result.error||result.summary||'');
-   workEvidence='Direct GitHub: '+(result.status||'unknown')+'. '+githubDetail+(result.next?' '+result.next:'')+(result.url?'\n'+result.url:'');
-   for(const receipt of result.receipts||[])if(receipt.url)workEvidence+='\n'+receipt.status+': '+receipt.url;
-   if(Array.isArray(result.workflows)){
-    workEvidence+='\nGitHub Actions workflows: '+(result.workflows.length
-     ?result.workflows.slice(0,15).map(w=>w.path+' ('+w.state+')').join('; '):'None returned by GitHub.');
-   }
-   if(result.status==='credential_verified_read')
-    workEvidence+='\nRepository push permission: '+String(result.push)+'. Actions access requires an actual list or dispatch receipt.';
-   if(result.status==='repository_created'&&result.environment)
-    workEvidence+='\nPython/Node workflow: '+result.environment.status
-     +(result.environment.error?' ('+result.environment.error+')':'')+'.';
+   recordBrainNotice('GitHub verified state: '+(result.status||'unconfirmed')+'. '+githubDetail);
    if(Array.isArray(result.runs)){
-    const recent=result.runs.slice(0,5);
-    workEvidence+='\nBubbles Coder Linux runs: '+(recent.length?recent.map(run=>{
-     const state=run.status==='completed'?(run.conclusion||'completed'):run.status||'unknown';
-     return 'Run '+run.id+': '+state+(run.createdAt?' (created '+run.createdAt+')':'');
-    }).join('; '):'No workflow runs recorded yet.');
-    workEvidence+='\nOnly a completed successful run confirms that the script ran. See the run receipt for output.';
+    recordBrainNotice('Bubbles Coder Linux runs: '+result.runs.slice(0,5).map(run=>String(run.status||'unconfirmed')).join(', ')+'. Only a completed successful run confirms that the script ran.');
    }
-   if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted')
-    workEvidence+='\nGitHub accepted the workflow dispatch. This is not an execution result; check Actions runs for the actual status.';
-   workEvidence+='\nRequest '+result.requestId+'. Testing, merge and deployment require their own verified receipts.';
+   if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted'){
+    recordBrainNotice('GitHub accepted the workflow dispatch. This is not an execution result.');
+   }
+   workEvidence=(await humanReplies()).githubReply(result);
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
  }
  else if(!embedded&&isOwnerWorkRequest(request)){
   workText.value=request;tools.open=true;
   try{
    const ticket=await submitWork(request,'explicit-user-command');
-   workEvidence=(continued?'Continuing your last request. ':'')+(brainTools.executionMessage?.({status:ticket.runner==='existing_request'?undefined:ticket.runner},ticket.deduplicated,ticket.status)||'Your request is saved. Following the bot team’s progress.')+' You can follow the result at https://quantaphi.org/#robotDirections .';
+   workEvidence=(continued?'I picked up your earlier request. ':'')+(await humanReplies()).workReply(ticket);
+   recordBrainNotice('Open verified work details: https://quantaphi.org/#robotDirections');
   }catch(error){workEvidence='I could not confirm that Robot Brain received this request: '+String(error.message||error).slice(0,160)+'. Your request is still in the work box; retrying it will not create duplicate jobs.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='connection'){
-  try{workEvidence='Robot Brain connection verified. I can submit a work ticket when you describe the repair. No new ticket was created by this connection check.\n'+await readBrainReport()}
+  try{workEvidence='The work connection is available. '+await readBrainReport()}
   catch(error){workEvidence='Robot Brain connection check failed: '+String(error.message||error)+'. No new ticket was created.'}
  }else if(!embedded&&brainTools?.classify(request)==='report'){
   try{workEvidence=await readBrainReport()}
@@ -1980,7 +2133,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     drainVoiceTurns()
   }
 }
-if(!embedded)chatScroll.insertBefore(repositoryPicker,conversation);
+if(!embedded)tools.append(repositoryPicker);
 else composer.before(repositoryPicker);
 const backToChat=()=>{repositoryPicker.open=false;input.focus();};
 const repositoryBack=create('button','ba-control ba-back-to-chat','Back to chat');repositoryBack.type='button';
@@ -2012,14 +2165,10 @@ function watchDirectGithubReceipt(requestId){
     let result;
     try{result=await githubReceipt(requestId);}catch{continue;}
     if(result.status==='working'||result.error==='receipt_not_found')continue;
-    const newline=String.fromCharCode(10);
-    const links=(result.receipts||[]).filter(x=>x.url).map(x=>x.status+': '+x.url).slice(-6).join(newline);
-    const report='Direct GitHub request '+requestId+': '+(result.status||'unconfirmed')+
-      (result.error?' — '+result.error:'')+(result.summary?' — '+result.summary:'')+
-      (result.url?newline+result.url:'')+(links?newline+links:'')+
-      '. Testing, merge and deployment require separate verified receipts.';
-    display(report,'ai');
-    messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
+    // Testing, merge and deployment require separate verified receipts.
+    recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
+    const report=(await humanReplies()).githubReply(result);
+    display(report,'ai');messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
     return;
    }
   }finally{pendingGithubReceipts.delete(requestId);}
@@ -2328,10 +2477,10 @@ async function pollBrainProgress(){
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
   const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
-  brainConnectionState('Connected · '+result.tickets.length+' tickets · '+(counts.working||0)+' marked working', 'connected');
+  brainConnectionState('Connected · Work status available in Options', 'connected');
   if(!brainInboxInitialized){
    brainInboxInitialized=true;
-   recordBrainNotice('Robot Brain connected. '+result.tickets.length+' saved tickets: '+(counts.working||0)+' marked working, '+(counts.blocked||0)+' blocked, '+(counts.complete||0)+' complete. Working is a label; a commit, test and deployment receipt are separate proof.');
+   recordBrainNotice('Work history is connected. Detailed receipts are available here; waiting and running are not the same as finished.');
   }
   showOwnerApprovalRequests(result.tickets);
   progressTracker.setScope?.(result.notificationScope);
@@ -2359,10 +2508,13 @@ async function pollBrainProgress(){
 }
 function announceBrainProgress(text){
  recordBrainNotice(text);
- display(text,'ai');messages.push({role:'assistant',text});messages=messages.slice(-400);persistChat();
- if(nativeOverlay){progressVoiceQueue.push(text);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
- else if(config.voice){progressVoiceQueue.push(text);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
+ // Preserve authenticated Brain wording and hide accidental internal identifiers.
+ const reply=/\b(?:request_id|ticket_id|run_id|IW-[0-9]{8})\b/i.test(String(text))
+  ?'There is a new work update. The details are in Work details.':String(text);
+ display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+ if(nativeOverlay||config.voice){progressVoiceQueue.push(reply);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
 }
+
 if(!embedded&&progressTracker&&typeof setInterval==='function')setInterval(()=>{void pollBrainProgress();if(!nativeOverlay&&config.voice&&!busy&&!speaking&&progressVoiceQueue.length)speakText(progressVoiceQueue.shift());},15000);
 void pollBrainProgress();
 async function readBrainReport(){
@@ -2370,14 +2522,8 @@ async function readBrainReport(){
  const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},20000);
  const result=await response.json().catch(()=>({}));
  if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error(String(result.error||'Owner ticket list unavailable'));
- const report=brainTools?.describeTickets(result.tickets,10)||'Robot Brain reporting helpers are unavailable.';
-  try{
-   const bridge=await syncRedSectors(),red=bridge.redBrain;
-   return report+'\nRed-Bubbles ↔ Red-Brain: connected. Last requested job: '+
-    (red.lastRequestedJob?.ticketId?'recorded; execution unverified':'none recorded')+
-    '. Runner: '+red.runner.state+'.'+(red.event?' Latest Brain receipt: '+red.event.kind+' · '+red.event.state+'.':'')+
-    (red.alarmRetry?' Alarm retry: '+red.alarmRetry.state+'; attempt '+red.alarmRetry.attempts+'. '+red.alarmRetry.reason+'.':'');
-  }catch(error){return report+'\nRed-Bubbles ↔ Red-Brain handshake unavailable: '+String(error.message||error).slice(0,110)+'. Ticket records remain readable.';}
+ const report=(await humanReplies()).workSummary(result.tickets);
+ return report;
 }
 void connectOwner();
 // Home loads the owner helper after this script. Deferred scripts finish before

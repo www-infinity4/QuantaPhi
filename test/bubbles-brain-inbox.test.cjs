@@ -4,15 +4,16 @@ const js=fs.readFileSync('bubbles-ai.js','utf8');
 const css=fs.readFileSync('bubbles-ai.css','utf8');
 test('One authenticated Brain inbox is in the same website/Android conversation',()=>{
  assert.match(js,/const brainInbox=!embedded\?create\('details','ba-brain-inbox'\):null/);
- assert.match(js,/chatScroll\.insertBefore\(brainInbox,conversation\)/);
- assert.match(js,/Robot Brain notifications/);
+ assert.match(js,/tools\.append\(brainInbox\)/);
+ assert.match(js,/Work details/);
  assert.match(js,/function renderBrainInbox\(/);
  assert.match(js,/function recordBrainNotice\(/);
  assert.match(js,/brainInboxState\.dataset\.connection=state/);
  assert.match(js,/brainConnectionState\('Brain unreachable · latest notices retained', 'unreachable'\)/);
- assert.match(js,/recordBrainNotice\(text\);\s*display\(text,'ai'\)/);
+ assert.match(js,/recordBrainNotice\(text\)/);
+ assert.match(js,/display\(reply,'ai'\)/);
  assert.match(js,/if\(!brainInboxInitialized\)/);
- assert.match(js,/Working is a label; a commit, test and deployment receipt are separate proof/);
+ assert.match(js,/Work history is connected. Detailed receipts are available here/);
  assert.match(css,/\.ba-brain-inbox/);
  // Every entrypoint must load the same current assets; never pin a test to
  // an obsolete cache-busting version after a legitimate source deployment.

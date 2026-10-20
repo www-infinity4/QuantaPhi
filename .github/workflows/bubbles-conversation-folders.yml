@@ -1,0 +1,29 @@
+name: Bubbles Conversation Folders
+on:
+  pull_request:
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-human-replies.mjs'
+      - 'bubbles-unified.css'
+      - 'workers/infinity-brain-clock/conversation-memory.mjs'
+      - 'workers/bubbles-chat-folders/**'
+      - 'test/bubbles-conversation-folders.test.mjs'
+      - 'test/bubbles-chat-folder-api.test.mjs'
+      - 'test/bubbles-conversation-memory.test.mjs'
+      - '.github/workflows/bubbles-conversation-folders.yml'
+permissions:
+  contents: read
+jobs:
+  sessions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: |
+          node --check bubbles-ai.js
+          node --check bubbles-human-replies.mjs
+          node --check workers/infinity-brain-clock/conversation-memory.mjs
+          node --check workers/bubbles-chat-folders/worker.mjs
+          node --test test/bubbles-conversation-folders.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-chat-folder-api.test.mjs
