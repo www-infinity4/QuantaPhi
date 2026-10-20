@@ -1,3 +1,4 @@
+import {normalizeSynapse,recallSynapses} from './synapse-memory.mjs';
 // Private Bubbles history. Every read/write validates the caller's Unified Wallet
 // bearer against the wallet service. No browser-supplied owner/user IDs are trusted.
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org']);
@@ -38,6 +39,46 @@ export async function handle(req,env){
  try{owner=await identify(req,env)}catch{return reply(origin,{ok:false,error:'wallet_validation_unavailable'},503)}
  if(!owner)return reply(origin,{ok:false,error:'verified_wallet_required'},401);
  try{
+  // Explicit owner-authorized memories, not passive audio or imported chat.
+  if(u.pathname==='/v1/synapses'&&['GET','POST','DELETE'].includes(req.method)){
+   await env.MEMORY_DB.prepare(
+    'CREATE TABLE IF NOT EXISTS bubbles_synapses(owner TEXT NOT NULL,id TEXT NOT NULL,text TEXT NOT NULL,repository TEXT NOT NULL,source TEXT NOT NULL,session_id TEXT NOT NULL,message_id TEXT NOT NULL,topic TEXT NOT NULL,basis TEXT NOT NULL,related_ids TEXT NOT NULL,at INTEGER NOT NULL,PRIMARY KEY(owner,id))'
+   ).run();
+   await env.MEMORY_DB.prepare(
+    'CREATE INDEX IF NOT EXISTS bubbles_synapses_owner_time ON bubbles_synapses(owner,at DESC)'
+   ).run();
+   if(req.method==='GET'){
+    const q=(u.searchParams.get('q')||'').trim().slice(0,200);
+    const limit=Math.max(1,Math.min(20,Number(u.searchParams.get('limit'))||8));
+    const result=await env.MEMORY_DB.prepare(
+     'SELECT id,text,repository,source,session_id AS sessionId,message_id AS messageId,topic,basis,related_ids AS relatedIds,at FROM bubbles_synapses WHERE owner=? ORDER BY at DESC LIMIT 250'
+    ).bind(owner).all();
+    const rows=(result.results||[]).map(row=>({
+     ...row,relatedTo:(()=>{try{return JSON.parse(row.relatedIds||'[]')}catch{return []}})()
+    }));
+    const memories=recallSynapses(rows,q,limit).map(({relatedIds,...row})=>row);
+    return reply(origin,{ok:true,memories,scanned:rows.length,hasMore:rows.length===250});
+   }
+   if(req.method==='POST'){
+    if(Number(req.headers.get('content-length')||0)>35000)return reply(origin,{ok:false,error:'too_large'},413);
+    let body;try{body=await req.json()}catch{return reply(origin,{ok:false,error:'invalid_json'},400)}
+    if(!Array.isArray(body?.notes)||body.notes.length===0||body.notes.length>10)
+     return reply(origin,{ok:false,error:'invalid_memory_batch'},400);
+    let notes;try{notes=body.notes.map(note=>normalizeSynapse(note))}catch(e){
+     return reply(origin,{ok:false,error:String(e.message||'invalid_memory')},400);
+    }
+    const commands=notes.map(n=>env.MEMORY_DB.prepare(
+     'INSERT OR IGNORE INTO bubbles_synapses(owner,id,text,repository,source,session_id,message_id,topic,basis,related_ids,at) VALUES(?,?,?,?,?,?,?,?,?,?,?)'
+    ).bind(owner,n.id,n.text,n.repository,n.source,n.sessionId,n.messageId,n.topic,n.basis,JSON.stringify(n.relatedTo),n.at));
+    const result=await env.MEMORY_DB.batch(commands);
+    return reply(origin,{ok:true,accepted:result.reduce((sum,r)=>sum+(r.meta?.changes||0),0),
+     routed:notes.map(n=>({id:n.id,topic:n.topic,basis:n.basis}))});
+   }
+   let body;try{body=await req.json()}catch{return reply(origin,{ok:false,error:'invalid_json'},400)}
+   if(!/^[a-zA-Z0-9_-]{8,100}$/.test(body?.id||''))return reply(origin,{ok:false,error:'invalid_memory_id'},400);
+   const result=await env.MEMORY_DB.prepare('DELETE FROM bubbles_synapses WHERE owner=? AND id=?').bind(owner,body.id).run();
+   return reply(origin,{ok:true,deleted:result.meta?.changes||0});
+  }
   if(req.method==='GET'&&u.pathname==='/v1/profile'){
    // Non-secret stable scope for partitioning local IndexedDB by wallet.
    const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('bubbles:'+owner));
