@@ -1,6 +1,7 @@
 import {browserTool} from './browser.mjs';
 import {researchArticle} from './research.mjs';
-import {handleMcp,mcpTools,selectMcpTool,parseMcpFunctionCall} from './mcp.mjs';
+import {handleMcp,mcpTools,selectMcpTool} from './mcp.mjs';
+import {compileSemanticReadPlan} from './semantic-read-plan.mjs';
 import {lookupKind,webSearch,currentWeather} from './search.mjs';
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
@@ -289,21 +290,36 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
    name:t.name,description:t.description,parameters:t.inputSchema
   }})),tool_choice:'auto'})
  });
- // Only an actual structured function call passes the strict catalog/schema.
- // One verified read can be summarized in a second, tool-free model pass.
- // Freeform JSON or instructions in model prose never execute tools.
+ // Grammar Phi/QuantaPhi intent is proposed by the conversational model,
+ // but tool parameters must be grounded in the actual user's utterance.
+ // This typed plan is read-only; owner Brain and device tools remain separate.
  if(!evidence){
-  const plannedRead=parseMcpFunctionCall(result);
-  if(plannedRead){
-   const readResult=await runMcpRead(request,env,plannedRead);
-   try{
-    return await gptReply(request,env,input,
-     {...receipt,tool:plannedRead.name},readResult,userRequest);
-   }catch{
-    // Inference failure must not discard a real source-backed tool receipt.
-    return response(request,{...readResult,receipt:{...readResult.receipt,
-     selection:'semantic_function_call',interface:'MCP',repositoryActionsVerified:false}});
-   }
+  const plan=compileSemanticReadPlan(userRequest,result);
+  if(plan.status==='needs_input')return response(request,{
+   ok:true,output:plan.output,semantic:{pipeline:'bubbles-semantic-read-v1',
+    state:'waiting',reason:plan.reason},
+   receipt:{...receipt,tool:'semantic.plan',status:'needs_input',
+    reason:plan.reason,repositoryActionsVerified:false}
+  });
+  if(plan.status==='ready'){
+   let verified;
+   try{verified=await runMcpRead(request,env,plan.action)}
+   catch{return response(request,{
+    ok:true,output:'The tool could not complete this request. No result was verified.',
+    semantic:{pipeline:'bubbles-semantic-read-v1',state:'blocked',goal:plan.goal},
+    receipt:{...receipt,tool:plan.action.name,status:'failed',repositoryActionsVerified:false}
+   })}
+   const state=verified.receipt?.status==='complete'?'finished':
+    verified.receipt?.status==='needs_input'?'waiting':'blocked';
+   // The tool itself supplies natural-language output AND its genuine receipt.
+   // Do not ask a second language model to rewrite verified measurements or
+   // invent a summary: the actual tool result is the user-visible answer.
+   return response(request,{...verified,
+    semantic:{pipeline:'bubbles-semantic-read-v1',state,goal:plan.goal,
+     evidence:plan.proof.source},
+    receipt:{...verified.receipt,selection:'semantic_function_call',
+     repositoryActionsVerified:false,minted:false}
+   });
   }
  }
  let output=result?.response||result?.choices?.[0]?.message?.content;
@@ -361,7 +377,7 @@ export default {async fetch(request,env){
   if(text.length>70000)return response(request,{ok:false,error:'body_too_large'},413);
   const result=await execute(request,env,body);if(!result.ok)return result;
   const data=await result.clone().json();
-  if(data.model||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
+  if(data.semantic?.pipeline==='bubbles-semantic-read-v1'||data.model||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
   const summarize=()=>gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
   if(data.receipt?.tool==='web.search')return finishSearchReply(result,summarize);
   return await summarize();
