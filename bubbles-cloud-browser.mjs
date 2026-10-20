@@ -3,11 +3,11 @@
 // pretending to click cross-origin websites. Provider logins stay in Chrome.
 const SERVICE='https://bubbles-cloud-browser.marvaseater.workers.dev/v1/browser';
 let panelInstance=null, agent=null;
-const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
+const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',chatgpt:'https://chatgpt.com/',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
 export function browserSpeechIntent(input){
  const utterance=String(input||'').trim().replace(/^(?:(?:hey|okay|please|bubbles)[,\s]+)+/i,'');
  const browser=/\b(?:cloud|remote|chrome)\s+browser\b|\bbrowser run\b|\bin (?:the )?browser\b/i.test(utterance);
- const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
+ const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|chat\s?gpt|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
  if(!browser&&!namedOpen)return null;
  const show=/^(?:show|display|bring up|pull up|see|watch)\b/i.test(utterance)||namedOpen;
  const url=utterance.match(/https:\/\/[^\s"'<>]+/i)?.[0]||'';
@@ -27,7 +27,7 @@ export function browserSpeechIntent(input){
   return found?{action:'type',value:found[1],field:found[2],show}:null;
  }
  if(/\b(?:open|go to|visit|navigate|launch|load)\b/i.test(utterance)){
-  const name=Object.keys(destinations).find(k=>new RegExp('\\b'+k+'\\b','i').test(utterance));
+  const name=/\bchat\s?gpt\b/i.test(utterance)?'chatgpt':Object.keys(destinations).find(k=>new RegExp('\\b'+k+'\\b','i').test(utterance));
   const target=url||destinations[name]||'';
   return target?{action:'navigate',url:target,show}:null;
  }
@@ -64,7 +64,10 @@ export function mount({host,ownerHeaders,reveal=false}){
  address.style.cssText='width:100%;box-sizing:border-box;min-height:44px;padding:10px;margin-top:8px;border:1px solid #ada4be;border-radius:10px';
  const add=element('button','Open new tab');
  const cloudflare=element('button','Open Cloudflare');
- for(const button of [start,refresh,stop,add,cloudflare]){button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';controls.append(button);}
+ // Owner signs in interactively; no provider credentials stored in Bubbles.
+ const chatgpt=element('button','ChatGPT · sign in');
+ const gemini=element('button','Gemini · sign in');
+ for(const button of [start,refresh,stop,add,cloudflare,chatgpt,gemini]){button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';controls.append(button);}
  wrap.append(controls,address);
  // Device-size inspection changes the remote Chrome viewport through CDP.
  // A web preview is not the native phone display; the APK's own screen sharing
@@ -160,7 +163,7 @@ export function mount({host,ownerHeaders,reveal=false}){
  frame.setAttribute('allow','clipboard-read; clipboard-write; fullscreen');
  frame.style.cssText='display:none;width:100%;height:min(68vh,520px);min-height:320px;border-radius:10px;border:1px solid #c5badd';
  wrap.append(frame);
- const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. Phone website and Desktop website change the actual remote Chrome layout. To see your physical Android screen, Bubbles APK must share a fresh device frame with Android permission; this cloud browser cannot see it yet. Google, Gemini and Claude each control their own authentication. Sessions are temporary; Stop ends the remote browser.');
+ const note=element('p','Use the browser controls to click, type, navigate, and sign into your own sites. Phone website and Desktop website change the actual remote Chrome layout. To see your physical Android screen, Bubbles APK must share a fresh device frame with Android permission; this cloud browser cannot see it yet. Sign into ChatGPT and Gemini interactively using your chosen account (different Google emails are allowed). A login does not automatically authorize Bubbles to read private chat history or use another provider's API. Sessions are temporary; Stop ends remote Chrome.');
  note.style.cssText='font-size:12px;line-height:1.5;margin:10px 0 0';wrap.append(note);
  // The approval is the FIRST visible item. Advanced Chrome controls remain
  // reachable by expanding one native <details> inside the chat's scroll owner.
@@ -189,7 +192,7 @@ export function mount({host,ownerHeaders,reveal=false}){
      return result;
    }finally{clearTimeout(timeout);}
  }
- const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,cloudflare,phonePreview,desktopPreview])b.disabled=value;};
+ const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,cloudflare,chatgpt,gemini,phonePreview,desktopPreview])b.disabled=value;};
  const show=(result)=>{
    if(result.sessionId)state={sessionId:result.sessionId,proof:result.proof||state?.proof,targetId:result.targetId||state?.targetId};
    if(result.url){
@@ -230,6 +233,14 @@ export function mount({host,ownerHeaders,reveal=false}){
   address.value=destinations.cloudflare;
   void action(state?'tab':'start',{url:destinations.cloudflare});
  });
+ for(const [button,url] of [[chatgpt,destinations.chatgpt],[gemini,destinations.gemini]]){
+  button.addEventListener('click',()=>{
+   address.value=url;
+   // Tabs share one Chrome profile; owner selects the desired provider account.
+   // Interactive login does not grant the agent private chat API access.
+   void action(state?'tab':'start',{url});
+  });
+ }
  add.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('tab',{url:address.value})});
  refresh.addEventListener('click',()=>{if(!state){status.textContent='Start Chrome first.';return;}void action('view')});
  stop.addEventListener('click',()=>{if(state)void action('stop');else status.textContent='No live Chrome session to stop.'});
