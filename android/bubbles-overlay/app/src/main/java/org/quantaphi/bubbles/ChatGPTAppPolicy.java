@@ -22,7 +22,7 @@ final class ChatGPTAppPolicy {
     }
     private static final String APP = "(?:chat\\s*gpt)(?:\\s+app)?";
     private static final Pattern OPEN = Pattern.compile(
-        "^(?:open|launch|show|bring up|switch to|go to|pull up)\\s+(?:(?:the|my)\\s+)?"+APP+"[.!?]*$",
+        "^(?:open|launch|show|bring up|switch to|go to|pull up)\\s+(?:(?:me|the|my)\\s+)?"+APP+"[.!?]*$",
         Pattern.CASE_INSENSITIVE);
     private static final Pattern TYPE = Pattern.compile(
         "^(?:type|enter|put)\\s+[\\\"“](.{1,160})[\\\"”]\\s+(?:in|into)\\s+(?:the\\s+)?(.{1,80}?)\\s+(?:in|on|inside)\\s+(?:the\\s+)?"+APP+"[.!?]*$",
@@ -42,6 +42,9 @@ final class ChatGPTAppPolicy {
             .replaceFirst("(?i)^(?:can|could|would|will) you\\s+(?:please\\s+)?", "").trim();
         if (text.isEmpty() || !text.toLowerCase(Locale.ROOT)
             .replace(" ", "").contains("chatgpt")) return null;
+        // Never treat requests for unseen or unconsented app content as
+        // permission to activate Accessibility or a background reader.
+        if (text.matches("(?is).*\\b(?:background|hidden|silently|without\\s+(?:my\\s+)?permission)\\b.*")) return null;
         if (OPEN.matcher(text).matches()) return new Request(Kind.OPEN,"","","");
         // A phone viewport is not an archive. Never pretend to enumerate
         // private background threads by guessing from the currently open page.
