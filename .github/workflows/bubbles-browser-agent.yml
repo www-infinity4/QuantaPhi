@@ -1,0 +1,27 @@
+name: Bubbles Cloud Browser Agent
+on:
+  pull_request:
+    paths:
+      - 'workers/bubbles-tools/browser-cdp.mjs'
+      - 'workers/bubbles-tools/browser.mjs'
+      - 'bubbles-cloud-browser.mjs'
+      - 'bubbles-ai.js'
+      - 'test/bubbles-browser-agent.test.mjs'
+      - '.github/workflows/bubbles-browser-agent.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: |
+          node --check workers/bubbles-tools/browser-cdp.mjs
+          node --check workers/bubbles-tools/browser.mjs
+          node --check bubbles-cloud-browser.mjs
+          node --check bubbles-ai.js
+          node --test test/bubbles-browser-agent.test.mjs test/bubbles-cloud-browser.test.mjs
