@@ -840,7 +840,7 @@ if(!embedded){
  browserLaunch.addEventListener('click',async()=>{
   browserLaunch.disabled=true;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-chatgpt-bridge1');
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-chatgpt-bridge2');
    module.mount({host:panel,ownerHeaders:verifiedOwnerHeaders});
    tools.open=true;
    status.textContent='Cloud browser controls are available in this Bubbles panel. Sign-in stays inside your remote Chrome session.';
@@ -1827,7 +1827,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!embedded&&/\b(?:cloud|remote|chrome)\s+browser\b|\bin (?:the )?browser\b/i.test(spoken)){
   let intent=null;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-chatgpt-bridge1');
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-chatgpt-bridge2');
    intent=module.browserSpeechIntent(spoken);
    if(intent){
     busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
