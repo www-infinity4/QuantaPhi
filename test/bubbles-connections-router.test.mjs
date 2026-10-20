@@ -49,3 +49,59 @@ test('unexpected provider error text is redacted and no token appears in respons
   const response=await handleConnections(request('/refresh',{method:'POST',body:{id:'id'}}),env,()=>({refresh:async()=>{throw Error('secret-token-would-be-leaked');}}));
   assert.equal(response.status,503);assert.equal((await response.json()).error,'connection_operation_failed');
 });
+
+test('two-provider gate reuses tenant-scoped verified records and never gives chat permission itself',async()=>{
+ const now=Date.now();
+ const configured={...env,GITHUB_CLIENT_ID:'app-github',GITHUB_CLIENT_SECRET:'not-exposed',
+  CLOUDFLARE_CLIENT_ID:'app-cloudflare',CLOUDFLARE_CLIENT_SECRET:'not-exposed'};
+ let seen=null;
+ const service={
+  gateStatus:async input=>{
+   seen=input;
+   return [
+    {provider:'github',status:'connected',label:'user-github',expiresAt:now+60000,grantedActions:[]},
+    {provider:'cloudflare',status:'connected',label:'user-cloudflare',
+     expiresAt:now+60000,grantedActions:['account.read','projects.build','ledger.read']}
+   ];
+  }
+ };
+ const response=await handleConnections(request('/gate/status'),configured,async id=>{
+  assert.equal(id,'verified-alice');return service;
+ });
+ const result=await response.json();
+ assert.equal(response.status,200);
+ assert.equal(seen.userId,'verified-alice');
+ assert.equal(result.enforced,false);
+ assert.equal(result.mode,'preview');
+ assert.equal(result.ready,true);
+ assert.equal(result.providers.cloudflare.permissionsApproved,true);
+ assert.equal(result.providers.github.permissionsApproved,true);
+ assert.ok(!JSON.stringify(result).includes('not-exposed'));
+});
+test('gate fails closed for missing Cloudflare setup, expired credentials and partial scopes',async()=>{
+ const now=Date.now();
+ const e={...env,GITHUB_CLIENT_ID:'github',GITHUB_CLIENT_SECRET:'secret'};
+ const service={gateStatus:async()=>[
+  {provider:'github',status:'connected',expiresAt:now-5000,grantedActions:[]},
+  {provider:'cloudflare',status:'connected',expiresAt:now+60000,grantedActions:['account.read']}
+ ]};
+ const response=await handleConnections(request('/gate/status'),e,()=>service);
+ const result=await response.json();
+ assert.equal(result.ready,false);
+ assert.equal(result.enforced,false);
+ assert.equal(result.providers.cloudflare.configured,false);
+ assert.equal(result.providers.github.permissionsApproved,false);
+ assert.equal(result.providers.github.reconnectRequired,true);
+ assert.equal(result.providers.cloudflare.label,null);
+ assert.equal((await handleConnections(request('/gate/status',{authorization:''}),e,
+  ()=>assert.fail('must not resolve unauthenticated user'))).status,401);
+});
+test('Cloudflare OAuth callback is fixed-origin and removes incoming code from its HTML',async()=>{
+ const response=await handleConnections(request('/cloudflare/callback?code=private-code'),{},()=>assert.fail());
+ const html=await response.text();
+ assert.equal(response.status,200);
+ assert.match(html,/bubbles:oauth-return/);
+ assert.ok(html.includes("history.replaceState"));
+ assert.ok(!html.includes('private-code'));
+ assert.ok(response.headers.get('Content-Security-Policy').includes("frame-ancestors 'none'"));
+});
