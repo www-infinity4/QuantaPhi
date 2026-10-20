@@ -892,24 +892,14 @@ if(nativeOverlay){
  if(chatGate)chatScroll.insertBefore(chatGate,ownerMode);
  // Keep options accessible above long transcripts, within the same scroll surface.
  chatScroll.insertBefore(tools,conversation);
- // The one-time connection code lives under Options, not in the phone-size
- // message composer. Keep its existing event handlers and owner protections.
- tools.append(connectorCodeButton,connectorCodeOutput,connectorCodeStatus);
  composer.prepend(status);
  header.hidden=true;
  memoryHint.hidden=true;
  summary.textContent='Options';
  workText.hidden=true;
  for(const label of tools.querySelectorAll(':scope > label'))label.hidden=true;
- const resizeChat=()=>{
-  const viewport=window.visualViewport;
-  panel.style.height=(viewport?viewport.height:window.innerHeight)+'px';
-  panel.style.top=(viewport?viewport.offsetTop:0)+'px';
- };
- window.visualViewport?.addEventListener('resize',resizeChat);
- window.visualViewport?.addEventListener('scroll',resizeChat);
- window.addEventListener('resize',resizeChat);
- resizeChat();
+ // One visualViewport handler is attached below by fitChatViewport().
+ // A second inline height/top handler conflicts with Android keyboard resize.
 }
 if(!nativeOverlay&&!embedded){
  // Website and APK share one message/options scroll owner and a reachable composer.
@@ -953,7 +943,9 @@ if(!embedded){
    const view=await loadBrowser();
    const proof=await view.approveChatGPT();
    if(!proof?.enabled||!proof?.expiresAt)throw Error('cloudflare_approval_not_verified');
-   quickState.textContent='Approved through '+new Date(proof.expiresAt).toLocaleString()+'. Bubbles can now receive ChatGPT browser requests.';
+   quickButton.textContent='Renew ChatGPT access · 5 days';
+   quickButton.dataset.connected='true';
+   quickState.textContent='ChatGPT connected until '+new Date(proof.expiresAt).toLocaleString()+'.';
   }catch(error){
    quickState.textContent='Not approved: '+String(error?.message||error).slice(0,150);
   }finally{quickButton.disabled=false}
@@ -976,9 +968,15 @@ if(!embedded){
  // Mount once on first-party Bubbles so a previously approved bridge polls
  // even when the owner has not opened advanced browser controls.
  void loadBrowser().then(view=>view.checkChatGPT()).then(value=>{
-  if(value?.enabled&&value.expiresAt)
-   quickState.textContent='ChatGPT access active until '+new Date(value.expiresAt).toLocaleString();
-  else quickState.textContent='Tap to give ChatGPT five-day access.';
+  if(value?.enabled&&value.expiresAt){
+   quickButton.textContent='Renew ChatGPT access · 5 days';
+   quickButton.dataset.connected='true';
+   quickState.textContent='ChatGPT connected until '+new Date(value.expiresAt).toLocaleString()+'.';
+  }else{
+   quickButton.textContent='Allow ChatGPT to use Bubbles · 5 days';
+   quickButton.dataset.connected='false';
+   quickState.textContent='ChatGPT access is off. Tap to authorize it for five days.';
+  }
  }).catch(()=>{quickState.textContent='Tap to check ChatGPT access with the verified owner session.';});
 }
 document.body.append(launcher,panel);
@@ -987,22 +985,22 @@ const chatFitStyle=create('style');
 chatFitStyle.textContent=`
 /* Readable controls across the website and Android chat, including disabled states. */
 body .ba-panel :is(button,summary),#bubblesAICard :is(button,summary){
- color:#17212b!important;-webkit-text-fill-color:#17212b!important;
- background:#ffffff!important;background-image:none!important;
- border:1px solid #8493a3!important;opacity:1!important;
+ color:#4e267a!important;-webkit-text-fill-color:#4e267a!important;
+ background:#f7f1fb!important;background-image:none!important;
+ border:1px solid #bda2d3!important;
  font-family:system-ui,sans-serif!important;font-size:16px!important;font-weight:700!important;
  line-height:1.4!important;min-height:48px!important;text-shadow:none!important;
  white-space:normal!important;overflow-wrap:anywhere!important;letter-spacing:normal!important;
 }
 body .ba-panel button:disabled,#bubblesAICard button:disabled{
- color:#465462!important;-webkit-text-fill-color:#465462!important;
- background:#edf0f3!important;border-style:dashed!important;cursor:not-allowed!important;
+ color:#65536f!important;-webkit-text-fill-color:#65536f!important;
+ background:#f1eaf5!important;opacity:.58!important;cursor:not-allowed!important;
 }
 body .ba-panel .ba-send,#bubblesAICard .ba-primary{
  color:#fff!important;-webkit-text-fill-color:#fff!important;
- background:#173f69!important;border-color:#173f69!important;
+ background:#5f2c91!important;border-color:#5f2c91!important;
 }
-body .ba-panel .ba-connector-code{background:#e8f1fc!important;border:2px solid #173f69!important}
+body .ba-panel .ba-connector-code{background:#f2eafa!important;border:2px solid #5f2c91!important}
 body .ba-panel .ba-actions{gap:6px!important}
 body .ba-panel .ba-actions button{font-size:14px!important;padding:7px 5px!important}
 body .ba-panel .ba-close{font-size:24px!important}
@@ -1010,10 +1008,10 @@ html.bubbles-native-overlay .ba-panel .ba-chatgpt-quick{gap:2px!important;paddin
 html.bubbles-native-overlay .ba-panel .ba-chatgpt-quick .ba-chatgpt-quick-approve{font-size:14px!important;line-height:1.2!important;min-height:44px!important;padding:5px 9px!important}
 html.bubbles-native-overlay .ba-panel .ba-chatgpt-quick-status{font-size:12px!important;line-height:1.2!important;max-height:1.3em!important;overflow:hidden!important;text-overflow:ellipsis;white-space:nowrap}
 
-body .ba-panel :is(input,textarea){font-size:16px!important;color:#17212b!important;-webkit-text-fill-color:#17212b!important}
+body .ba-panel :is(input,textarea){font-size:16px!important;color:#30243e!important;-webkit-text-fill-color:#30243e!important}
 body .ba-panel :is(button,summary):focus-visible{outline:3px solid #005fcc!important;outline-offset:2px!important}
 
-.ba-panel .ba-composer{min-height:0;max-height:65%;overflow-y:auto;overscroll-behavior:contain}
+.ba-panel .ba-composer{min-height:0;max-height:min(43dvh,280px);overflow-y:auto;overscroll-behavior:contain}
 .ba-panel .ba-connector-code-output[hidden],.ba-panel .ba-composer [hidden]{display:none!important}
 .ba-panel .ba-connector-code-output{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:6px;min-width:0}
 .ba-panel .ba-connector-code-output textarea{height:68px!important;min-height:68px!important;max-height:68px!important;padding:6px!important}
@@ -1027,8 +1025,8 @@ body .ba-panel :is(button,summary):focus-visible{outline:3px solid #005fcc!impor
  width:100%!important;height:var(--ba-visible-height,100dvh)!important;
  max-height:var(--ba-visible-height,100dvh)!important;min-height:0!important;
  padding:0!important;gap:0!important;border-radius:0!important;overflow:hidden!important}
- body .ba-panel .ba-thread{flex:1 1 0!important;min-height:64px!important;overflow-y:auto!important}
- body .ba-panel .ba-composer{flex:0 1 auto!important;min-height:0!important;max-height:calc(100% - 112px)!important;overflow-y:auto!important;padding:6px 8px max(6px,env(safe-area-inset-bottom))!important;gap:5px!important}
+ body .ba-panel .ba-thread{flex:1 1 0!important;min-height:0!important;overflow-y:auto!important;overflow-x:hidden!important;touch-action:pan-y!important}
+ body .ba-panel .ba-composer{flex:0 1 auto!important;min-height:0!important;max-height:43dvh!important;overflow-y:auto!important;padding:6px 8px max(6px,env(safe-area-inset-bottom))!important;gap:5px!important}
  body .ba-panel .ba-composer textarea:not(.ba-connector-code-output textarea){height:52px;min-height:44px;max-height:72px}
  body .ba-panel .ba-header{min-height:48px;padding:4px 10px}
 }
@@ -1538,7 +1536,7 @@ function toggle(open){
  if(showing){
   if(chatGate)void checkPanelGate();
   if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. Once connected, just speak naturally. Say stop listening to mute.','ai',true);greeted=true}
-  input.focus();
+  if(!nativeOverlay && window.innerWidth>600)input.focus();
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
