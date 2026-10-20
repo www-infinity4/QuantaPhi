@@ -57,7 +57,7 @@ test('Bubbles uses owner-gated gateway and the native Chrome Live View extension
  assert.match(worker,/pathname==='\/v1\/browser'/);
  assert.match(wrangler,/\[browser\]\s*binding = "BROWSER"/);
  assert.match(bubble,/Cloud browser · Live Chrome/);
- assert.match(page,/bubbles-ai\.js\?v=20261019-live-chrome1/);
+ assert.match(page,/bubbles-ai\.js\?v=20261019-global-search-voice1/);
  assert.match(extension,/live\.browser\.run/);
  assert.doesNotMatch(extension,/localStorage|persist.*token/i);
 });
