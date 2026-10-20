@@ -32,19 +32,26 @@ jobs:
           node --check bubbles-cloud-browser.mjs
           node --check bubbles-ai.js
           node --test test/bubbles-chatgpt-bridge.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-browser-consent.test.mjs test/bubbles-browser-agent.test.mjs
-      - name: Verify Cloudflare credentials provided to deploy runner
+      - name: Check whether the GitHub runner has Cloudflare deploy credentials
+        id: deploy_auth
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          test -n "$CLOUDFLARE_API_TOKEN" || { echo "::error::Cloudflare deploy credential not configured; no deployment attempted"; exit 1; }
-          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo "::error::Cloudflare account ID missing; no deployment attempted"; exit 1; }
+          if [ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::GitHub runner has no Cloudflare deploy secret. Code checks passed; production deploy must use an explicitly authorized Cloudflare API connection."
+          fi
       - name: Deploy actual browser Worker with D1 bridge binding
+        if: steps.deploy_auth.outputs.available == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx --yes wrangler@4 deploy --config workers/bubbles-cloud-browser/wrangler.toml
       - name: Verify deployed Browser Run, owner gate, consent and D1
+        if: steps.deploy_auth.outputs.available == 'true'
         run: |
           node --input-type=module <<'VERIFY'
           const url='https://bubbles-cloud-browser.marvaseater.workers.dev';
