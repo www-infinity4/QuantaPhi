@@ -14,7 +14,8 @@ export async function processChatGPTJob({db,store,request,env,body,browserTool,n
  const record=await db.prepare("SELECT id,action,payload,created_ms,expires_ms FROM bubbles_chatgpt_bridge WHERE status='queued' ORDER BY created_ms LIMIT 1").first();
  if(!record)return {ok:true,queue:'empty'};
  if(typeof record.id!=='string'||record.id.length>80)return err('invalid_job_id',400);
- const expired=!Number.isFinite(Number(record.expires_ms))||Number(record.expires_ms)<now||\n  !Number.isFinite(Number(record.created_ms))||Number(record.created_ms)>now+30000||now-Number(record.created_ms)>MAX_AGE_MS;
+ const expired=!Number.isFinite(Number(record.expires_ms))||Number(record.expires_ms)<now||
+  !Number.isFinite(Number(record.created_ms))||Number(record.created_ms)>now+30000||now-Number(record.created_ms)>MAX_AGE_MS;
  const action=record.action;
  let args={};try{args=JSON.parse(record.payload||'{}')}catch{}
  if(!args||typeof args!=='object'||Array.isArray(args))args={};
