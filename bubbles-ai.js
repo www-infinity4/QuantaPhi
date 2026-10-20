@@ -13,14 +13,21 @@ let streamVoice=null,voiceGeneration=0;
 const brainTools=window.BubblesBrainActions||null;
 let cardWorkspaceModule,cardWorkspaceInstance,activeCardEvidence=null;
 async function chatCardWorkspace(){
- if(!cardWorkspaceModule)cardWorkspaceModule=import('/bubbles-card-workspace.mjs?v=20261019-chat-repair1');
+ if(!cardWorkspaceModule)cardWorkspaceModule=import('/bubbles-card-workspace.mjs?v=20261020-card-tools1');
  const module=await cardWorkspaceModule;
  if(!cardWorkspaceInstance){
   const mount=create('section');conversation.append(mount);
   cardWorkspaceInstance=new module.CardWorkspace(mount,evidence=>{
    activeCardEvidence=evidence;
    if(evidence&&!repositorySelectionExplicit){repositorySelection.clear();repositorySelection.add(evidence.repository);renderRepositoryOptions();}
-  },()=>input.focus());
+  },()=>input.focus(),evidence=>{
+   const paths=Array.isArray(evidence.sourcePaths)?evidence.sourcePaths.join(', '):'index.html';
+   workText.value='Inspect and propose this specific change for '+evidence.title+' ('+evidence.repository+'). Live page: '+location.origin+evidence.url+'. Source paths to inspect: '+paths+'. Requested UI change: ';
+   tools.open=true;
+   workStatus.textContent='Project and source selection prepared. Enter the desired change, then use the authenticated owner work action; no commit or deployment has been made.';
+   if(!repositorySelectionExplicit){repositorySelection.clear();repositorySelection.add(evidence.repository);renderRepositoryOptions();}
+   workText.focus();
+  });
  }
  return {module,workspace:cardWorkspaceInstance};
 }
