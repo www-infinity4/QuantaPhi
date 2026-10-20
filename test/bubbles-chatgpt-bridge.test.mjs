@@ -88,6 +88,9 @@ test('Android chat exposes approval above scroll while browser content stays ins
  }
  assert.ok(ai.includes('chatScroll.prepend(browserHome)'), 'Cloud Browser must mount inside the chat scroll area');
  assert.ok(ai.includes('panel.insertBefore(quick,chatScroll)'), 'the grant button must remain visible above the transcript');
+ assert.ok(ai.includes('if(chatGate)chatScroll.insertBefore(chatGate,ownerMode)'),
+  'both web and Android account sign-in gates must scroll instead of clipping the approval');
+ assert.ok(ai.includes('input.blur();'), 'opening approval must not force the Android keyboard');
  assert.ok(ai.includes('module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders})'));
  assert.ok(!ai.includes('module.mount({host:panel,ownerHeaders:verifiedOwnerHeaders})'));
  assert.match(browser,/wrap.append\(bridge,advanced\)/);
