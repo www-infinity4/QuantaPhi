@@ -74,3 +74,25 @@ test('UI has a distinct five-day ChatGPT control; browser worker enforces owner 
  assert.ok(ai.includes('if(embedded||busy||!text)'), 'Android owner overlay must accept the ChatGPT bridge');
  assert.doesNotMatch(ui,/localStorage\.setItem\(.*Authorization/);
 });
+
+test('Android chat exposes approval above scroll while browser content stays inside it',()=>{
+ const ai=fs.readFileSync('bubbles-ai.js','utf8');
+ const browser=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
+ const css=fs.readFileSync('bubbles-mobile-access.css','utf8');
+ for(const pageName of ['bubbles.html','bubbles/index.html','bubbles-chrome.html']){
+  const page=fs.readFileSync(pageName,'utf8');
+  assert.match(page,/id="bubblesChatGPTTopAccess"/);
+  assert.ok(page.indexOf('id="bubblesChatGPTTopAccess"')<page.indexOf('class="bubbles-intro"'),
+   pageName+' must show the owner approval before the big intro artwork');
+  assert.match(page,/bubbles-mobile-access.css/);
+ }
+ assert.ok(ai.includes('chatScroll.prepend(browserHome)'), 'Cloud Browser must mount inside the chat scroll area');
+ assert.ok(ai.includes('panel.insertBefore(quick,chatScroll)'), 'the grant button must remain visible above the transcript');
+ assert.ok(ai.includes('module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders})'));
+ assert.ok(!ai.includes('module.mount({host:panel,ownerHeaders:verifiedOwnerHeaders})'));
+ assert.match(browser,/wrap.append\(bridge,advanced\)/);
+ assert.match(browser,/wrap\.approveChatGPT=\(\)=>bridgePermission\('enable'\)/);
+ assert.match(css,/\.ba-thread\s*\{/);
+ assert.match(css,/overflow-y:auto!important/);
+ assert.match(css,/touch-action:pan-y!important/);
+});
