@@ -1,0 +1,35 @@
+name: Bubbles Oracle Octaves Android chat repair
+on:
+  pull_request:
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-octaves-chat.css'
+      - 'bubbles.html'
+      - 'bubbles/index.html'
+      - 'bubbles-chrome.html'
+      - 'index.html'
+      - 'test/bubbles-oracle-android-ui.test.mjs'
+      - 'test/bubbles-cloud-browser.test.mjs'
+      - '.github/workflows/bubbles-oracle-android-chat.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-octaves-chat.css'
+      - 'test/bubbles-oracle-android-ui.test.mjs'
+      - '.github/workflows/bubbles-oracle-android-chat.yml'
+permissions:
+  contents: read
+jobs:
+  android-octaves-chat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Bubbles JavaScript compiles
+        run: node --check bubbles-ai.js
+      - name: Verify mobile UI and browser regression contracts
+        run: node --test test/bubbles-oracle-android-ui.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-chatgpt-bridge.test.mjs
