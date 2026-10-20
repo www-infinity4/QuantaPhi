@@ -181,7 +181,72 @@ export function githubAdapter(config, request = githubRequest) {
   };
 }
 
+// Cloudflare OAuth is separate from Cloudflare Access and from a StarQuest
+// wallet credential. It grants only the permissions the account owner approves.
+// Server tokens are encrypted in the existing user-scoped Durable Object vault.
+const CLOUDFLARE_SCOPES=Object.freeze({
+  'account.read':['user-details.read','memberships.read'],
+  'projects.build':['workers-scripts.admin','d1.write','page.write'],
+  'ledger.read':['d1.read']
+});
+const cfScopes=actions=>[...new Set(actions.flatMap(a=>{
+  if(!Object.hasOwn(CLOUDFLARE_SCOPES,a))throw Error('unsupported_action');
+  return CLOUDFLARE_SCOPES[a];
+}))];
+const cfGranted=(actions,scope)=>actions.filter(a=>CLOUDFLARE_SCOPES[a]?.every(s=>scope.has(s)));
+export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...args)){
+  const redirectUri=callback(config);
+  const basic='Basic '+btoa(config.clientId+':'+config.clientSecret);
+  const form=fields=>({method:'POST',redirect:'error',signal:AbortSignal.timeout(15000),
+    headers:{Authorization:basic,'Content-Type':'application/x-www-form-urlencoded',Accept:'application/json'},
+    body:new URLSearchParams(fields)});
+  const tokens=async fields=>tokenFields(await jsonResponse(
+    await request('https://dash.cloudflare.com/oauth2/token',form(fields)),'cloudflare_exchange'));
+  const withScope=(token,value,actions)=>{
+    const scopes=new Set(String(value.scope||'').trim().split(/\s+/).filter(Boolean));
+    return {...token,grantedActions:cfGranted(actions,scopes)};
+  };
+  return {
+    id:'cloudflare',
+    authorization({state,challenge,actions}){
+      if(!actions.length)throw Error('unsupported_action');
+      const url=new URL('https://dash.cloudflare.com/oauth2/auth');
+      url.search=new URLSearchParams({response_type:'code',client_id:config.clientId,
+        redirect_uri:redirectUri,state,scope:cfScopes(actions).join(' '),
+        code_challenge:challenge,code_challenge_method:'S256'}).toString();
+      return url.href;
+    },
+    async exchange({code,verifier,actions}){
+      const raw=await jsonResponse(await request('https://dash.cloudflare.com/oauth2/token',
+        form({grant_type:'authorization_code',client_id:config.clientId,
+          redirect_uri:redirectUri,code,code_verifier:verifier})),'cloudflare_exchange');
+      const token=tokenFields(raw);
+      const identity=await jsonResponse(await request('https://dash.cloudflare.com/oauth2/userinfo',
+        {redirect:'error',signal:AbortSignal.timeout(15000),
+          headers:{Authorization:'Bearer '+token.accessToken,Accept:'application/json'}}),'cloudflare_identity');
+      if(typeof identity.sub!=='string'||!identity.sub||identity.sub.length>256)
+        throw Error('provider_identity_invalid');
+      return {...withScope(token,raw,actions),subject:identity.sub,
+        label:typeof identity.email==='string'&&identity.email.length<320?identity.email:'Cloudflare account'};
+    },
+    async refresh({refreshToken,actions}){
+      if(!refreshToken)throw Error('reconnect_required');
+      const raw=await jsonResponse(await request('https://dash.cloudflare.com/oauth2/token',
+        form({grant_type:'refresh_token',client_id:config.clientId,refresh_token:refreshToken})),'cloudflare_refresh');
+      const token=tokenFields(raw);
+      return {...withScope(token,raw,actions),refreshToken:token.refreshToken||refreshToken};
+    },
+    async revoke({accessToken,refreshToken}){
+      const token=refreshToken||accessToken;
+      const response=await request('https://dash.cloudflare.com/oauth2/revoke',
+        form({token,client_id:config.clientId}));
+      if(!response.ok)throw Error('cloudflare_revoke_failed');
+    }
+  };
+}
+
 export const CONNECTOR_REQUIREMENTS = Object.freeze({
+  cloudflare:'Public Cloudflare OAuth client, account-bound consent and scoped project permissions',
   github:'Registered GitHub App, expiring user tokens, installation and repository selection',
   google:'Registered Google OAuth client, configured APIs and required consent verification',
   ebay:'Registered eBay application; approved Offer API access before enabling buyer bids',
