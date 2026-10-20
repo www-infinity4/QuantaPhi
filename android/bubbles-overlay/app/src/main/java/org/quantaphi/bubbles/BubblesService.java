@@ -287,6 +287,9 @@ public final class BubblesService extends Service {
     private Model voiceModel;
     private volatile boolean captureRunning = false;
     private boolean liveMicrophoneOwned = false;
+    // Remember whether ordinary listening was active before an explicit Live call.
+    // A user mute or service shutdown must never restart the microphone.
+    private boolean resumeAfterLiveCall = false;
     private boolean modelLoading = false;
     private boolean ttsReady = false;
     private TextToSpeech tts;
@@ -863,7 +866,10 @@ public final class BubblesService extends Service {
     }
     private void muteSession() {
         if (workflowRunner != null && workflowRunner.isRunning()) workflowRunner.cancel();
-        if (liveMicrophoneOwned && oracleWindow != null) oracleWindow.stopLiveCall();
+        if (liveMicrophoneOwned) {
+            resumeAfterLiveCall = false; // Explicit mute beats automatic handback.
+            if (oracleWindow != null) oracleWindow.stopLiveCall();
+        }
         screenSharing = false;
         muted = true;
         activeUntil = 0L;
@@ -878,14 +884,28 @@ public final class BubblesService extends Service {
         // Never silently finalize or discard a recording to start a call.
         if (liveMicrophoneOwned || recording.active() || screenAudio.active() || pendingAudioRecording)
             return false;
+        boolean wasListening = connected && !muted;
         pauseSharedMicrophone();
-        if (microphone != null || (audioThread != null && audioThread.isAlive())) return false;
+        if (microphone != null || (audioThread != null && audioThread.isAlive())) {
+            if (wasListening && connected) resumeSession();
+            return false;
+        }
+        resumeAfterLiveCall = wasListening;
         liveMicrophoneOwned = true;
         return true;
     }
     void releaseLiveMicrophone() {
-        // Ending a call does not restart listening without a new owner action.
+        boolean shouldResume = liveMicrophoneOwned && resumeAfterLiveCall;
         liveMicrophoneOwned = false;
+        resumeAfterLiveCall = false;
+        if (shouldResume && connected) {
+            // WebRTC releases its audio tracks asynchronously. Don't race its
+            // getUserMedia teardown or restart on unrequested page navigation.
+            main.postDelayed(() -> {
+                if (connected && muted && !liveMicrophoneOwned && !captureRunning)
+                    resumeSession();
+            }, 500L);
+        }
     }
     private void resumeSession() {
         if (!connected) return;
@@ -1487,7 +1507,7 @@ public final class BubblesService extends Service {
         if(activeImageService == this) activeImageService = null;
         if(imagePickerCallback != null){imagePickerCallback.onReceiveValue(null);imagePickerCallback=null;}
         pendingWebsiteSpeech.clear();
-        connected=false;muted=true;
+        connected=false;muted=true;resumeAfterLiveCall=false;
         if (playbackAwareness != null) { playbackAwareness.close(); playbackAwareness = null; }
         main.removeCallbacksAndMessages(null);
         stopRecognition();
