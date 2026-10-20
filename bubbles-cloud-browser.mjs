@@ -82,6 +82,49 @@ export function mount({host,ownerHeaders}){
  const revoke=element('button','Revoke browser assistant access');
  for(const b of [enable,revoke]){b.type='button';b.style.cssText='min-height:44px;padding:8px 10px;margin:3px;border:1px solid #6d579b;border-radius:9px;background:#fff;color:#362657'}
  access.append(accessState,enable,revoke);wrap.append(access);
+ // ChatGPT's connected Cloudflare tools exchange job receipts via the owner's
+ // private D1 queue; only the signed Bubbles owner can approve this five-day grant.
+ // A separate ChatGPT account/browser token is never placed in the HTML.
+ const bridge=document.createElement('section');
+ bridge.className='ba-chatgpt-browser-bridge';
+ bridge.style.cssText='margin:10px 0;padding:12px;border:1px solid #9e89c4;border-radius:12px';
+ const bridgeTitle=element('strong','ChatGPT ↔ Bubbles · Cloud Browser');
+ const bridgeStatus=element('p','ChatGPT access is not yet verified.');
+ bridgeStatus.setAttribute('role','status');bridgeStatus.style.cssText='font-size:13px;line-height:1.5;margin:8px 0';
+ const approveBridge=element('button','Allow ChatGPT to use Bubbles · 5 days');
+ const revokeBridge=element('button','Revoke ChatGPT access');
+ for(const b of [approveBridge,revokeBridge]){b.type='button';b.style.cssText='min-height:44px;padding:8px 10px;margin:3px;border:1px solid #6d579b;border-radius:9px;background:#fff;color:#362657'}
+ const bridgeNote=element('p','Allows authenticated Cloudflare account tools to send browser requests and messages into this Bubbles session for five days. Bubbles must be open for tasks to run. Browser passwords, payments and permission confirmations still require you. Commands and text results are recorded in your private Cloudflare D1.');
+ bridgeNote.style.cssText='font-size:12px;line-height:1.5';
+ bridge.append(bridgeTitle,bridgeStatus,approveBridge,revokeBridge,bridgeNote);wrap.append(bridge);
+ let chatgptApproved=false,bridgePolling=false;
+ async function bridgeCall(endpoint,payload){
+  const headers=await ownerHeaders();
+  if(!headers?.Authorization)throw Error('Connect the verified Bubbles owner session first.');
+  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),25000);
+  try{
+   const res=await fetch(SERVICE+'/chatgpt/'+endpoint,{
+    method:'POST',headers:{'Content-Type':'application/json',...headers},
+    body:JSON.stringify(payload),signal:controller.signal,cache:'no-store'});
+   const data=await res.json();
+   if(!res.ok||!data.ok)throw Error(data.error||'bridge_operation_not_confirmed');
+   return data;
+  }finally{clearTimeout(timeout)}
+ }
+ async function bridgePermission(action){
+  approveBridge.disabled=true;revokeBridge.disabled=true;
+  try{
+   const result=await bridgeCall('permission',{action});
+   chatgptApproved=result.enabled===true;
+   bridgeStatus.textContent=chatgptApproved?
+    'ChatGPT bridge approved until '+new Date(result.expiresAt).toLocaleString()+'. Bubbles will handle verified requests while this app is open.':
+    'ChatGPT bridge access is off. No queued request can run.';
+  }catch(error){bridgeStatus.textContent='ChatGPT bridge not confirmed: '+String(error.message||error).slice(0,145)}
+  finally{approveBridge.disabled=false;revokeBridge.disabled=false}
+ }
+ approveBridge.addEventListener('click',()=>void bridgePermission('enable'));
+ revokeBridge.addEventListener('click',()=>void bridgePermission('revoke'));
+
  async function permission(action){
   enable.disabled=true;revoke.disabled=true;
   try{
@@ -184,5 +227,43 @@ export function mount({host,ownerHeaders}){
   return 'Browser action completed with a server receipt.';
  }};
 
+ async function pollChatGPT(){
+  if(bridgePolling||!chatgptApproved||document.hidden||wrap.hidden)return;
+  bridgePolling=true;
+  try{
+   const data=await bridgeCall('process',state?{sessionId:state.sessionId,proof:state.proof}:{});
+   if(data.view){show(data.view)}
+   if(data.status==='needs_bubbles_reply'&&data.jobId){
+    let reply;
+    try{
+     reply=await new Promise(resolve=>{
+      let done=false;
+      const finish=x=>{if(done)return;done=true;clearTimeout(timer);resolve(x)};
+      const timer=setTimeout(()=>finish({ok:false,error:'bubbles_reply_timeout'}),55000);
+      window.dispatchEvent(new CustomEvent('bubbles:chatgpt-bridge',{detail:{
+       text:data.message,respond:finish}}));
+     });
+    }catch{reply={ok:false,error:'bubbles_chat_not_available'}}
+    await bridgeCall('complete',{id:data.jobId,reply});
+    bridgeStatus.textContent=reply.ok?'Bubbles replied to ChatGPT. Receipt stored in Cloudflare.':
+     'Bubbles could not answer ChatGPT: '+String(reply.error||'unknown').slice(0,80);
+   }else if(data.jobId){
+    bridgeStatus.textContent=data.result?.ok?
+     'ChatGPT browser request completed. Verified result saved in Cloudflare.':
+     'ChatGPT browser request blocked: '+String(data.result?.error||'unverified').slice(0,100);
+   }
+  }catch(error){
+   const value=String(error.message||error);
+   if(value==='chatgpt_five_day_approval_required'){
+    chatgptApproved=false;bridgeStatus.textContent='ChatGPT five-day approval expired or was revoked.';
+   }else if(!/owner_authorization_required|browser_consent_required/.test(value)){
+    bridgeStatus.textContent='ChatGPT bridge check unavailable: '+value.slice(0,130);
+   }
+  }finally{bridgePolling=false}
+ }
+ // The session and owner token remain in this first-party page. Cloudflare
+ // D1 receives only a structured request/receipt, never browser credentials.
+ setInterval(()=>void pollChatGPT(),8000);
+ void bridgePermission('status');
  return wrap;
 }
