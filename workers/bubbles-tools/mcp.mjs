@@ -90,6 +90,20 @@ export async function handleMcp(request,env,invoke){
   return rpc(id,'result',{content:[{type:'text',text:'Tool execution failed; no write or deployment occurred.'}],isError:true});
  }
 }
+/** Parse one model-emitted structured read-tool call. Prose/JSON is never executable. */
+export function parseMcpFunctionCall(result){
+ const calls=result?.choices?.[0]?.message?.tool_calls||result?.tool_calls||
+  result?.output?.filter?.(item=>item.type==='function_call')||[];
+ if(!Array.isArray(calls)||calls.length!==1)return null;
+ const call=calls[0],name=call?.function?.name||call?.name,raw=call?.function?.arguments??call?.arguments;
+ let parsed;
+ try{parsed=typeof raw==='string'?JSON.parse(raw):raw}catch{return null}
+ let args;
+ try{args=validateCall(name,parsed)}catch{return null}
+ if((args.name==='web_search'&&!args.query)||(args.name==='weather_current'&&!args.location))return null;
+ return args;
+}
+
 // Optional single-step model selection. Treat only structured function_call envelopes
 // as a call; raw LLM prose/JSON cannot initiate tool execution.
 export async function selectMcpTool(env,question,invoke){
@@ -100,14 +114,7 @@ export async function selectMcpTool(env,question,invoke){
   messages:[{role:'system',content:'You are a read-only MCP tool selector for Bubbles. Choose a tool only when necessary and the user clearly requests current search/weather/news or an ideal LC resonance calculation. Do not invent parameters. Ordinary discussion, site builds, approvals and repository work are NOT eligible tools. Never attempt account, code, file, shell, GitHub or Robot Brain writes.'},{role:'user',content:clean(question,2500)}],
   tools:functions,tool_choice:'auto',reasoning_effort:'medium',max_tokens:350
  })}catch{return null}
- const calls=result?.choices?.[0]?.message?.tool_calls||result?.tool_calls||
-  result?.output?.filter?.(item=>item.type==='function_call')||[];
- if(!Array.isArray(calls)||calls.length!==1)return null;
- const call=calls[0],name=call?.function?.name||call?.name,raw=call?.function?.arguments??call?.arguments;
- let parsed;
- try{parsed=typeof raw==='string'?JSON.parse(raw):raw}catch{return null}
- let args;
- try{args=validateCall(name,parsed)}catch{return null}
- if((name==='web_search'&&!args.query)||(name==='weather_current'&&!args.location))return null;
+ const args=parseMcpFunctionCall(result);
+ if(!args)return null;
  try{return await invoke(args)}catch{return null}
 }
