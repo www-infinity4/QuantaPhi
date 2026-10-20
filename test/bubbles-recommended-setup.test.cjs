@@ -17,9 +17,14 @@ test('recommended setup is a single first-run path with real Android consent', (
   assert.match(activity, /if \(refreshRecommendedSetup != null\) refreshRecommendedSetup\.run\(\)/);
 });
 
-test('only essential controls appear by default; stop is always visible', () => {
+test('only contextual Start, Open chat and Stop controls appear by default', () => {
   assert.match(activity, /essentials = java\.util\.Arrays\.asList\(/);
-  assert.match(activity, /githubAccess, chat, stop, state/);
+  assert.match(activity, /title, copy, connect, chat, stop, state/);
+  assert.match(activity, /connect\.setVisibility\(needsStart \? View\.VISIBLE : View\.GONE\)/);
+  assert.match(activity, /chat\.setVisibility\(running \? View\.VISIBLE : View\.GONE\)/);
+  assert.match(activity, /stop\.setVisibility\(running \? View\.VISIBLE : View\.GONE\)/);
+  const defaults = activity.slice(activity.indexOf('java.util.List<View> essentials'), activity.indexOf('LinearLayout advanced ='));
+  assert.doesNotMatch(defaults, /recommended|chatgptLogin|chromeSite|githubAccess|screenPermission/);
   assert.match(activity, /advanced\.setVisibility\(View\.GONE\)/);
   assert.match(activity, /More settings and diagnostics/);
   assert.match(activity, /Continue with ChatGPT/);

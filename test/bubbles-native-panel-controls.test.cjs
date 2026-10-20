@@ -34,8 +34,15 @@ test('a large top-right X Hide remains outside the website and restores on wake'
 
 test('visible Start or resume control can restart a previously muted foreground voice session',()=>{
  assert.match(home,/connect\.setText\("Start or resume Bubbles voice"\)/);
- assert.match(home,/recommended, connect, screenPermission/);
+ assert.match(home,/title, copy, connect, chat, stop, state/);
  assert.match(home,/if \(BubblesService\.isSessionRunning\(\)\)\s*intent\.setAction\(BubblesService\.ACTION_RESUME\)/);
  assert.match(service,/ACTION_RESUME\.equals\(intent\.getAction\(\)\) && connected/);
  assert.match(service,/private void resumeSession\(\)/);
+});
+
+test('optional Live call control starts collapsed in narrow floating chat',()=>{
+ assert.match(panel,/liveBack\.setVisibility\(View\.GONE\)/);
+ assert.match(panel,/Button voiceOptions = button\("Options", false\)/);
+ assert.match(panel,/voiceOptions\.setOnClickListener\(v -> \{/);
+ assert.match(panel,/header\.addView\(voiceOptions\);\s*header\.addView\(liveBack\)/);
 });

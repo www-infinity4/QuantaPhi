@@ -163,6 +163,17 @@ final class FloatingOracleWindow {
                 website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
             } else website.loadUrl("https://quantaphi.org/bubbles-gpt-live.html?v=" + BuildConfig.VERSION_NAME);
         });
+        // Keep the normal chat header readable on a narrow Android screen.
+        // Live voice remains available only when the user opens voice options.
+        liveBack.setVisibility(View.GONE);
+        Button voiceOptions = button("Options", false);
+        voiceOptions.setContentDescription("Show or hide optional live voice control");
+        voiceOptions.setOnClickListener(v -> {
+            boolean showVoice = liveBack.getVisibility() != View.VISIBLE;
+            liveBack.setVisibility(showVoice ? View.VISIBLE : View.GONE);
+            voiceOptions.setText(showVoice ? "Less" : "Options");
+        });
+        header.addView(voiceOptions);
         header.addView(liveBack);
         Button close = button("✕ Hide", false);
         close.setMinWidth(dp(72));
