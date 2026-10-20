@@ -1,7 +1,7 @@
 // Bubbles owner-only interactive Cloudflare Browser Run panel.
 // The browser page is real hosted Chrome Live View, not an ordinary iframe
 // pretending to click cross-origin websites. Provider logins stay in Chrome.
-const SERVICE='https://bubbles-tools.marvaseater.workers.dev/v1/browser';
+const SERVICE='https://bubbles-cloud-browser.marvaseater.workers.dev/v1/browser';
 let panelInstance=null;
 const element=(tag,text)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;};
 export function mount({host,ownerHeaders}){
