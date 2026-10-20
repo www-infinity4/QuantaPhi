@@ -10,6 +10,8 @@ window.__QuantaBubblesMounted=true;
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
 const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261019-words1');
 let streamVoice=null,voiceGeneration=0;
+let humanRepliesPromise;
+const humanReplies=()=>humanRepliesPromise||(humanRepliesPromise=import('/bubbles-human-replies.mjs?v=20261020-natural1'));
 const brainTools=window.BubblesBrainActions||null;
 let cardWorkspaceModule,cardWorkspaceInstance,activeCardEvidence=null;
 async function chatCardWorkspace(){
@@ -1958,38 +1960,18 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const githubDetail=result.error==='github_runtime_credential_missing'
     ?'Bubbles direct GitHub is not connected to a server-side write credential. No action occurred; connect the owner GitHub account with appropriate repository permissions.'
     :(result.error||result.summary||'');
-   workEvidence='Direct GitHub: '+(result.status||'unknown')+'. '+githubDetail+(result.next?' '+result.next:'')+(result.url?'\n'+result.url:'');
-   for(const receipt of result.receipts||[])if(receipt.url)workEvidence+='\n'+receipt.status+': '+receipt.url;
-   if(Array.isArray(result.workflows)){
-    workEvidence+='\nGitHub Actions workflows: '+(result.workflows.length
-     ?result.workflows.slice(0,15).map(w=>w.path+' ('+w.state+')').join('; '):'None returned by GitHub.');
-   }
-   if(result.status==='credential_verified_read')
-    workEvidence+='\nRepository push permission: '+String(result.push)+'. Actions access requires an actual list or dispatch receipt.';
-   if(result.status==='repository_created'&&result.environment)
-    workEvidence+='\nPython/Node workflow: '+result.environment.status
-     +(result.environment.error?' ('+result.environment.error+')':'')+'.';
-   if(Array.isArray(result.runs)){
-    const recent=result.runs.slice(0,5);
-    workEvidence+='\nBubbles Coder Linux runs: '+(recent.length?recent.map(run=>{
-     const state=run.status==='completed'?(run.conclusion||'completed'):run.status||'unknown';
-     return 'Run '+run.id+': '+state+(run.createdAt?' (created '+run.createdAt+')':'');
-    }).join('; '):'No workflow runs recorded yet.');
-    workEvidence+='\nOnly a completed successful run confirms that the script ran. See the run receipt for output.';
-   }
-   if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted')
-    workEvidence+='\nGitHub accepted the workflow dispatch. This is not an execution result; check Actions runs for the actual status.';
-   workEvidence+='\nRequest '+result.requestId+'. Testing, merge and deployment require their own verified receipts.';
+   recordBrainNotice('GitHub verified state: '+(result.status||'unconfirmed')+'. '+githubDetail);
+   workEvidence=(await humanReplies()).githubReply(result);
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
  }
  else if(!embedded&&isOwnerWorkRequest(request)){
   workText.value=request;tools.open=true;
   try{
    const ticket=await submitWork(request,'explicit-user-command');
-   workEvidence=(continued?'Continuing your last request. ':'')+(brainTools.executionMessage?.({status:ticket.runner==='existing_request'?undefined:ticket.runner},ticket.deduplicated,ticket.status)||'Your request is saved. Following the bot team’s progress.')+' You can follow the result at https://quantaphi.org/#robotDirections .';
+   workEvidence=(continued?'I picked up your earlier request. ':'')+(await humanReplies()).workReply(ticket);
   }catch(error){workEvidence='I could not confirm that Robot Brain received this request: '+String(error.message||error).slice(0,160)+'. Your request is still in the work box; retrying it will not create duplicate jobs.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='connection'){
-  try{workEvidence='Robot Brain connection verified. I can submit a work ticket when you describe the repair. No new ticket was created by this connection check.\n'+await readBrainReport()}
+  try{workEvidence='The work connection is available. '+await readBrainReport()}
   catch(error){workEvidence='Robot Brain connection check failed: '+String(error.message||error)+'. No new ticket was created.'}
  }else if(!embedded&&brainTools?.classify(request)==='report'){
   try{workEvidence=await readBrainReport()}
