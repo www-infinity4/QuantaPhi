@@ -95,3 +95,30 @@ test('explicit owner instructions survive unrelated turns, restarts, and topic c
   assert.equal((await conversationMemory(db,'owner-a',{})).userInstructions[0].text,instruction.text);
  }finally{rmSync(dir,{recursive:true,force:true})}
 });
+
+
+test('cloud conversation folders reopen exact sessions without mixing another chat or account',async()=>{
+ const dir=mkdtempSync(path.join(tmpdir(),'bubbles-folder-')),db=database(path.join(dir,'test.sqlite'));
+ try{
+  const first='chat_first_session_00000001',second='chat_second_session_0000002';
+  await conversationMemory(db,'owner-x',{mode:'sessions-create',sessionId:first,title:'New conversation'});
+  await conversationMemory(db,'owner-x',{messages:[{id:'one-message-0001',role:'user',text:'Fix the red button',sessionId:first,at:1000}],sessionId:first});
+  await conversationMemory(db,'owner-x',{messages:[{id:'two-message-0002',role:'user',text:'Play Infinity Radio',sessionId:second,at:2000}],sessionId:second});
+  const list=await conversationMemory(db,'owner-x',{mode:'sessions-list'});
+  assert.ok(list.sessions.some(r=>r.id===first));
+  assert.ok(list.sessions.some(r=>r.id===second));
+  assert.equal(list.sessions.find(r=>r.id===first).title,'Fix the red button');
+  const firstMessages=await conversationMemory(db,'owner-x',{mode:'sessions-get',sessionId:first});
+  assert.deepEqual(firstMessages.messages.map(r=>r.text),['Fix the red button']);
+  const secondMessages=await conversationMemory(db,'owner-x',{mode:'sessions-get',sessionId:second});
+  assert.deepEqual(secondMessages.messages.map(r=>r.text),['Play Infinity Radio']);
+  assert.deepEqual((await conversationMemory(db,'owner-x',{messages:[],sessionId:first})).recent.map(m=>m.text),['Fix the red button']);
+  assert.equal((await conversationMemory(db,'owner-y',{mode:'sessions-get',sessionId:first})).ok,false);
+  assert.equal((await conversationMemory(db,'owner-y',{mode:'sessions-list'})).sessions.length,0);
+  await conversationMemory(db,'owner-x',{messages:[{id:'old-chat-000001',role:'user',text:'Earlier discussion',at:500}]});
+  const migrated=await conversationMemory(db,'owner-x',{mode:'sessions-list'});
+  assert.ok(migrated.sessions.some(r=>r.id==='legacy-history'));
+  const legacy=await conversationMemory(db,'owner-x',{mode:'sessions-get',sessionId:'legacy-history'});
+  assert.deepEqual(legacy.messages.map(m=>m.text),['Earlier discussion']);
+ }finally{rmSync(dir,{recursive:true,force:true})}
+});
