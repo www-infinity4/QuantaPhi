@@ -14,6 +14,11 @@ public final class VoiceCaptureCommandsCheck {
     }
     public static void main(String[] args) {
         expect("record", "screen_video");
+        expect("record screen", "screen_video");
+        expect("screen record", "screen_video");
+        expect("Bubbles, record screen!", "screen_video");
+        noCapture("do not record screen");
+        noCapture("record audio instead");
         expect("start recording", "screen_video");
         expect("please record my voice", "sound_start");
         expect("record audio", "sound_start");
