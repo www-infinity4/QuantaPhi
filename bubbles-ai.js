@@ -1178,6 +1178,94 @@ function display(text,who,greeting=false){
  }
 }
 for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
+// Previous conversations are organized by visit. A new visit starts a new chat
+// without deleting the previous one. Older conversations load on demand.
+const chatsPanel=create('details','ba-conversation-folders');
+const chatsSummary=create('summary','','Chats');
+const chatsActions=create('div','ba-folder-actions');
+const newConversation=create('button','ba-control','New chat');newConversation.type='button';
+const reloadConversations=create('button','ba-control','Refresh chats');reloadConversations.type='button';
+const chatsList=create('div','ba-folder-list');chatsList.setAttribute('aria-label','Previous Bubbles conversations');
+const chatsMessage=create('p','ba-muted','Previous conversations are preserved.');
+chatsActions.append(newConversation,reloadConversations);
+chatsPanel.append(chatsSummary,chatsActions,chatsMessage,chatsList);
+chatScroll.insertBefore(chatsPanel,conversation);
+function renderConversationFolders(){
+ chatsList.replaceChildren();
+ for(const item of [...threadIndex].sort((a,b)=>(b.updated||0)-(a.updated||0)).slice(0,100)){
+  const row=create('button','ba-folder-entry',item.title||'Conversation');
+  row.type='button';row.dataset.sessionId=item.id;
+  const stamp=new Date(item.updated||Date.now()).toLocaleDateString(undefined,{month:'short',day:'numeric'});
+  row.textContent=(item.id===activeThread?'● ':'')+(item.title||'Conversation')+' · '+stamp;
+  row.setAttribute('aria-current',String(item.id===activeThread));
+  row.addEventListener('click',()=>void openConversation(item.id));
+  chatsList.append(row);
+ }
+}
+async function conversationApi(mode,sessionId='',extra={}){
+ const headers=await verifiedOwnerHeaders();
+ const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',
+  headers:{...headers,'Content-Type':'application/json'},
+  body:JSON.stringify({mode,sessionId,...extra})},12000);
+ const value=await response.json();
+ if(!response.ok||!value.ok)throw Error(value.error||'conversation_unavailable');
+ return value;
+}
+async function refreshConversationFolders(){
+ if(!ownerReady){chatsMessage.textContent='Chats saved on this device. Connect your owner account for cloud history.';renderConversationFolders();return;}
+ try{
+  const data=await conversationApi('sessions-list');
+  for(const item of data.sessions||[]){
+   if(!/^[a-zA-Z0-9_-]{10,80}$/.test(item.id||''))continue;
+   const existing=threadIndex.find(row=>row.id===item.id);
+   if(!existing)threadIndex.push({...item,updated:item.updated||Date.now()});
+   else if(existing.title==='New conversation'&&item.title)existing.title=item.title;
+  }
+  save(THREAD_INDEX,threadIndex);chatsMessage.textContent='Your older conversations are ready to reopen.';
+ }catch{chatsMessage.textContent='Cloud chat history could not be reached. Your device history is still available.'}
+ renderConversationFolders();
+}
+async function openConversation(id){
+ if(busy){chatsMessage.textContent='Finish the current reply before changing conversations.';return;}
+ if(!threadIndex.some(item=>item.id===id))return;
+ if(keepChat)saveThread();
+ let next=keepChat?readThread(id):[];
+ if(ownerReady){
+  try{
+   const result=await conversationApi('sessions-get',id);
+   if(result.session?.title){const entry=threadIndex.find(x=>x.id===id);if(entry)entry.title=result.session.title;}
+   next=result.messages||next;
+  }catch{chatsMessage.textContent='Showing the saved device copy. Cloud history was unavailable.'}
+ }
+ activeThread=id;
+ try{sessionStorage.setItem(TAB_THREAD,id)}catch{}
+ messages=next.map(m=>({...m,sessionId:id,id:m.id||crypto.randomUUID(),at:m.at||Date.now()}));
+ memoryContext=[];activeCardEvidence=null;cardWorkspaceInstance?.close();cardWorkspaceInstance=null;
+ conversation.replaceChildren();
+ for(const item of messages)display(item.text,item.role==='user'?'you':'ai');
+ greeted=messages.length>0;
+ if(keepChat)saveThread();
+ chatsPanel.open=false;renderConversationFolders();
+ input.focus();
+}
+async function startConversation(){
+ if(busy){chatsMessage.textContent='Finish the current reply first.';return;}
+ if(keepChat)saveThread();
+ activeThread='chat_'+crypto.randomUUID().replaceAll('-','');
+ try{sessionStorage.setItem(TAB_THREAD,activeThread)}catch{}
+ threadIndex.unshift({id:activeThread,title:'New conversation',updated:Date.now()});
+ save(THREAD_INDEX,threadIndex);
+ messages=[];memoryContext=[];greeted=false;activeCardEvidence=null;
+ cardWorkspaceInstance?.close();cardWorkspaceInstance=null;conversation.replaceChildren();
+ if(ownerReady)void conversationApi('sessions-create',activeThread,{title:'New conversation'}).catch(()=>{});
+ renderConversationFolders();chatsPanel.open=false;status.textContent='New conversation ready. Your earlier chats are saved.';
+ input.focus();
+}
+newConversation.addEventListener('click',()=>void startConversation());
+reloadConversations.addEventListener('click',()=>void refreshConversationFolders());
+chatsPanel.addEventListener('toggle',()=>{if(chatsPanel.open)void refreshConversationFolders()});
+renderConversationFolders();
+
 // Native WebView and Chrome use the same first-party UI but have independent
 // cookies. This IndexedDB archive supplements the existing owner Brain archive.
 // One-time explicit user-selected import; no ChatGPT passwords, cookies or
