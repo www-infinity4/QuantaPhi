@@ -106,6 +106,8 @@ export async function handleConnections(request,env,resolveService) {
         providers:{github,cloudflare}});
     }
     if (request.method === 'GET' && url.pathname === PREFIX+'/accounts') return json(origin,{ok:true,accounts:await service.list(identity)});
+    if(request.method==='GET'&&url.pathname===PREFIX+'/github/starcoins/auto-status')
+      return json(origin,{ok:true,...await service.autoStarCoinStatus({userId:identity.userId})});
     if (request.method !== 'POST') return json(origin,{ok:false,error:'not_found'},404);
     if (!request.headers.get('Content-Type')?.startsWith('application/json')) return json(origin,{ok:false,error:'json_required'},415);
     if (Number(request.headers.get('Content-Length')) > 8192) return json(origin,{ok:false,error:'too_large'},413);
@@ -114,7 +116,8 @@ export async function handleConnections(request,env,resolveService) {
     if (!body || typeof body !== 'object' || Array.isArray(body)) return json(origin,{ok:false,error:'invalid_json'},400);
     if (url.pathname === PREFIX+'/github/starcoins/create-repository')
       return json(origin,{ok:true,...await service.createStarCoinRepository({userId:identity.userId,id:body.id})});
-    if(url.pathname===PREFIX+'/github/starcoins/backup'||url.pathname===PREFIX+'/github/starcoins/verify'){
+    if([PREFIX+'/github/starcoins/backup',PREFIX+'/github/starcoins/verify',
+        PREFIX+'/github/starcoins/auto-bootstrap'].includes(url.pathname)){
       const authorization=request.headers.get('Authorization')||'';
       if(!/^Bearer sq_[A-Za-z0-9_-]{32,}$/.test(authorization))
         throw Error('starcoin_verified_device_required');
@@ -130,6 +133,8 @@ export async function handleConnections(request,env,resolveService) {
       const [star,wallet]=await Promise.all([sr.json(),wr.json()]);
       if(!star.ok||!wallet.ok)throw Error('starcoin_cloud_unavailable');
       const snapshot=await cloudStarCoinBackup(identity.userId,wallet,star.state);
+      if(url.pathname===PREFIX+'/github/starcoins/auto-bootstrap')
+        return json(origin,{ok:true,...await service.autoStarCoinBootstrap({userId:identity.userId,snapshot})});
       return json(origin,{ok:true,...await service.starCoinBackup({
         userId:identity.userId,id:body.id,repository:body.repository,snapshot,
         mode:url.pathname.endsWith('/verify')?'verify':'write'})});
@@ -145,7 +150,7 @@ export async function handleConnections(request,env,resolveService) {
     if (url.pathname === PREFIX+'/select-resource') return json(origin,await service.selectResource({userId:identity.userId,id:body.id,kind:body.kind,resourceId:body.resourceId}));
     return json(origin,{ok:false,error:'not_found'},404);
   } catch (error) {
-    const expected = /^(?:starcoin_account_identity_mismatch|starcoin_state_invalid|starcoin_sources_disagree|starcoin_duplicate_receipt|starcoin_cloud_unavailable|starcoin_verified_device_required|github_private_write_not_verified|github_backup_http_\d+|backup_(?:account_mismatch_review_required|mismatch_review_required|malformed_review_required|commit_conflict_retry|commit_unverified|repository_invalid|repository_already_selected|not_configured|invalid_request)|connection_complete_(?:state|exchange|seal|store|unknown)_(?:timeout|type|internal)(?:_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown))?|pairing_invalid_or_expired|verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+)$/;
+    const expected = /^(?:starcoin_account_identity_mismatch|starcoin_state_invalid|starcoin_sources_disagree|starcoin_duplicate_receipt|starcoin_cloud_unavailable|starcoin_verified_device_required|github_private_write_not_verified|github_backup_http_\d+|github_(?:account_identity_mismatch|repository_name_collision_review_required|repository_creation_permission_required|repository_creation_unverified|repository_creation_unavailable)|backup_(?:both_provider_authorizations_required|in_progress|account_mismatch_review_required|mismatch_review_required|malformed_review_required|commit_conflict_retry|commit_unverified|repository_invalid|repository_already_selected|not_configured|invalid_request)|connection_complete_(?:state|exchange|seal|store|unknown)_(?:timeout|type|internal)(?:_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown))?|pairing_invalid_or_expired|verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+)$/;
     const message = expected.test(error.message) ? error.message : 'connection_operation_failed';
     const status = ['verified_wallet_required','starcoin_verified_device_required'].includes(message) ? 401 : message === 'too_many_requests' ? 429 : /unavailable|not_configured|operation_failed/.test(message) ? 503 : 400;
     return json(origin,{ok:false,error:message},status);
