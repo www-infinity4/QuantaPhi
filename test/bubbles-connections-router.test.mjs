@@ -105,3 +105,50 @@ test('Cloudflare OAuth callback is fixed-origin and removes incoming code from i
  assert.ok(!html.includes('private-code'));
  assert.ok(response.headers.get('Content-Security-Policy').includes("frame-ancestors 'none'"));
 });
+
+test('automatic first backup gets account and StarCoins from verified Cloudflare services, not request body',async()=>{
+ const e={...env,STARQUEST_LEDGER:{fetch:async(url,options)=>{
+  assert.equal(url,'https://starquest.internal/v1/state');
+  assert.equal(options.headers.Authorization,bearer);
+  return Response.json({ok:true,state:{username:'verified-user',starCoins:56,
+   pendingShareCredits:6,shareCount:4,ledger:[]}});
+ }},BOT_WALLET:{fetch:async(url,options)=>{
+  assert.equal(url,'https://wallet.internal/v1/wallet/state');
+  assert.equal(options.headers.Authorization,bearer);
+  return Response.json({ok:true,user:{id:'verified-alice',username:'verified-user'},
+   balances:{STARCOIN:56.6}});
+ }}};
+ let count=0;
+ const response=await handleConnections(request('/github/starcoins/auto-bootstrap',{
+  method:'POST',body:{userId:'victim',repository:'attacker/private',hash:'evil'}}),e,async id=>{
+   assert.equal(id,'verified-alice');
+   return {autoStarCoinBootstrap:async ({userId,snapshot})=>{
+    count++;assert.equal(userId,'verified-alice');assert.equal(snapshot.data.balanceTenths,566);
+    assert.equal(snapshot.data.schema,'infinity-starcoin-backup-v1');
+    assert.ok(!JSON.stringify(snapshot).includes('attacker/private'));
+    return {status:'committed',repository:'verified-user/private',private:true,
+     coverage:'starcoins_pilot',commit:'a'.repeat(40)};
+   }};
+ });
+ assert.equal(response.status,200);
+ const result=await response.json();
+ assert.equal(result.ok,true);assert.equal(result.status,'committed');assert.equal(count,1);
+});
+test('automatic GitHub backup requires a live device token, not a connector pairing token',async()=>{
+ const e={...env,STARQUEST_LEDGER:{fetch:()=>assert.fail('cannot fetch ledger')}};
+ const requestPair=new Request('https://quantaphi.org'+PREFIX+'/github/starcoins/auto-bootstrap',{
+  method:'POST',headers:{Origin:'https://quantaphi.org',Authorization:'Bearer bc_'+'a'.repeat(43),
+   'Content-Type':'application/json'},body:'{}'});
+ const envPair={...e,CONNECTIONS:{idFromName:x=>x,get:()=>({pairIdentity:async()=>({userId:'alice',sessionId:'pair'})})}};
+ const response=await handleConnections(requestPair,envPair,()=>assert.fail('must not access user storage'));
+ assert.equal(response.status,401);
+ assert.equal((await response.json()).error,'starcoin_verified_device_required');
+});
+test('automatic GitHub backup status returns only the verified account records',async()=>{
+ const response=await handleConnections(request('/github/starcoins/auto-status'),env,
+  async userId=>{assert.equal(userId,'verified-alice');return {autoStarCoinStatus:async({userId:id})=>{
+   assert.equal(id,'verified-alice');return {status:'not_created',coverage:'starcoins_pilot'};
+  }};});
+ assert.equal(response.status,200);
+ assert.equal((await response.json()).status,'not_created');
+});
