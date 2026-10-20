@@ -22,6 +22,8 @@ export class UserConnections extends DurableObject {
   async githubConnectionTest(input) {return this.service.githubRepositories({...input,test:true});}
   async starCoinBackup(input) {return this.service.starCoinBackup(input);}
   async createStarCoinRepository(input) {return this.service.createStarCoinRepository(input);}
+  async autoStarCoinBootstrap(input){return this.service.autoStarCoinBootstrap(input);}
+  async autoStarCoinStatus(input){return this.service.autoStarCoinStatus(input);}
   async start(input) {return this.service.start(input);}
   async complete(input) {try{return await this.service.complete(input);}catch(error){const stage=['state','exchange','seal','store'].includes(error?.connectionStage)?error.connectionStage:'unknown';const kind=error?.name==='TimeoutError'?'timeout':error?.name==='TypeError'?'type':'internal';const message=String(error?.message||'');const point=/github_token_redirect_token/.test(message)?'token_redirect':/github_token_redirect_login/.test(message)?'login_redirect':/github_token_redirect_external/.test(message)?'external_redirect':/github_token_redirect_other/.test(message)?'other_redirect':/Illegal invocation|receiver/i.test(message)?'receiver':/different request|request context/i.test(message)||message.includes('I/O')?'context':/redirect/i.test(message)?'redirect':/header|ByteString|character/i.test(message)?'headers':/URL|scheme/i.test(message)?'url':/timeout|AbortSignal/i.test(message)?'timeout':/fetch|network|connect/i.test(message)?'network':/not a function/i.test(message)?'function':'unknown';return {connectionError:'connection_complete_'+stage+'_'+kind+'_'+point};}}
   async disconnect(input) {return this.service.disconnect(input);}
