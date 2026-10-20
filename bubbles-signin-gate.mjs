@@ -2,7 +2,7 @@ import {AccountConnections,resolveConnectorWalletToken} from './bubbles-connecti
 
 const REQUIRED=Object.freeze({
  github:['repository.read'],
- cloudflare:['account.read','projects.build','ledger.read']
+ cloudflare:['account.read','projects.build','ledger.read','projects.full']
 });
 export function summarizeGate(payload){
  const summary={ready:false,providers:{},state:'unverified'};
@@ -41,10 +41,10 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    cards[id].dataset.status=value.approved?'connected':value.configured?'pending':'unavailable';
    actions[id].disabled=!value.configured||oauthInProgress||loading;
    actions[id].textContent=value.approved?'Connected — review permissions':
-     value.configured?'Sign in with '+(id==='github'?'GitHub':'Cloudflare'):'Awaiting provider setup';
+     value.configured?(id==='cloudflare'?'Approve full project access with Cloudflare':'Sign in with GitHub'):'Awaiting provider setup';
    labels[id].textContent=value.approved?
     'Verified'+(value.label?' · '+value.label:'')+' · authorization saved securely':
-    value.connected?'Signed in, but additional permissions must be approved':
+    value.connected?'Account connected, but full requested permissions have not been verified':
     !value.configured?'The provider application is not configured yet. No access is claimed.':
     value.reconnect?'Authorization expired or disconnected; sign in again.':
     'Not connected. Sign in once and approve the requested permissions.';
