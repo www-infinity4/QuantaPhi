@@ -6,3 +6,11 @@ binding = "BRAIN"
 service = "infinity-brain-clock"
 [browser]
 binding = "BROWSER"
+
+[[durable_objects.bindings]]
+name = "CONSENT"
+class_name = "BrowserConsentStore"
+
+[[migrations]]
+tag = "browser-consent-v1"
+new_sqlite_classes = ["BrowserConsentStore"]
