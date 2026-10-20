@@ -372,7 +372,9 @@ function persistChat(){
  }
  if(!keepChat)return false;
  void longMemory?.appendAll(messages.slice(-3));
- return saveThread();
+ const saved=saveThread();
+ if(saved&&!embedded&&ownerReady)void syncCloudFolder(activeThread,messages.slice(-3));
+ return saved;
 }
 const card=create('section','ba-card ba-studio-card');
 card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','Tap Bubbles once to enable continuous listening. It glows when it hears sound. Just speak naturally—no wake name needed. Speech clips go to Cloudflare for transcription; silence stays on your device. Mute releases the microphone.'));
