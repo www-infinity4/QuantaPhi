@@ -20,7 +20,7 @@ test('same semantic goal across differently worded requests executes the same re
  const paraphrases=[
   'If I have 10 microhenries of inductance with 22 picofarads, what natural frequency should I expect?',
   'With a 10 uH coil and 22 pF capacitor, find the oscillation rate.',
-  'My LC circuit uses 10 microhenry and 22 picofarad; how fast does it resonate?',
+  'My setup uses 10 microhenry and 22 picofarad; how fast does it oscillate?',
   'Could you work out the frequency for 22 picofarads coupled to 10 microhenries?'
  ];
  const outcomes=[];
