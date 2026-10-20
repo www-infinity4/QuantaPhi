@@ -278,16 +278,16 @@ async function sharedMemory(query=''){
  if(memoryBusy)return false;memoryBusy=true;
  try{
   const batch=[...memoryPending.values()].slice(0,20);
-  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({messages:batch,query})},15000);
+  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...ownerHeaders,'Content-Type':'application/json'},body:JSON.stringify({messages:batch,query,sessionId:activeThread})},15000);
   const result=await response.json();if(!response.ok||!result.ok)throw Error(result.error||'memory_unavailable');
   for(const id of result.saved||[]){memoryPending.delete(id);memoryAck.add(id);}
   save(MEMORY_OUTBOX,[...memoryPending.values()]);
   memoryContext=result.related||[];memoryInstructions=result.userInstructions||[];memoryCapabilities=result.capabilities||[];
   if(['brief','finished','detailed'].includes(result.notificationPreferences?.mode)){notificationPreferences=result.notificationPreferences;if(notificationPreferences.mode==='finished')progressVoiceQueue.splice(0,progressVoiceQueue.length,...progressVoiceQueue.filter(text=>/finished/.test(text)));}
   const seen=new Set(messages.map(m=>m.id));
-  for(const m of result.recent||[])if(!seen.has(m.id)){messages.push(m);seen.add(m.id);display(m.text,m.role==='user'?'you':'ai');}
+  for(const m of result.recent||[])if(m.sessionId===activeThread&&!seen.has(m.id)){messages.push(m);seen.add(m.id);display(m.text,m.role==='user'?'you':'ai');}
   messages.sort((a,b)=>a.at-b.at||String(a.id).localeCompare(String(b.id)));messages=messages.slice(-400);
-  if(keepChat)save(HISTORY,messages);memoryLastError='';memoryHint.textContent=memoryPending.size?'Shared memory connected · '+memoryPending.size+' messages waiting to sync.':'Owner conversation synced · recent history and indexed earlier context available.';return true;
+  if(keepChat)saveThread();memoryLastError='';memoryHint.textContent=memoryPending.size?'Shared memory connected · '+memoryPending.size+' messages waiting to sync.':'Owner conversation synced · recent history and indexed earlier context available.';return true;
  }catch(error){memoryLastError=String(error.message||error);memoryHint.textContent='Shared memory unavailable; messages stay queued on this device. '+memoryLastError;return false}
  finally{memoryBusy=false}
 }
