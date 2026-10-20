@@ -28,7 +28,7 @@ function classify(utterance){
  // real results; requested code modification still requires the write gate.
  const discovery=/\b(?:search|research|find|look\s+(?:up|for|into)|discover|scan|inspect|compare)\b/i.test(addressed);
  const github=/\b(?:github|repositories|repos|source\s+code|code\s+files)\b/i.test(addressed);
- const modification=/\b(?:fix|repair|upgrade|update|change|write|commit|push|implement|build|create|install|merge|deploy|replace)\b/i.test(addressed);
+ const modification=/\b(?:fix|repair|upgrade|update|change|write|commit|push|implement|build|create|install|merge|deploy|replace|assemble|integrate|combine|pull\s+together)\b/i.test(addressed);
  const directedBots=/\b(?:tell|ask|send|assign|dispatch|queue)\b.{0,80}\b(?:robot\s*brain|bots?|agents?)\b/i.test(addressed);
  if(discovery&&github&&!modification&&!directedBots)return 'chat';
  // Capability questions verify the actual owner endpoint without inventing a job.
