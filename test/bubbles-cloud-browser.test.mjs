@@ -8,7 +8,7 @@ const make=(action,extra={},auth='Bearer rb_'+ 'a'.repeat(64),origin=ORIGIN)=>
  body:JSON.stringify({action,...extra})});
 function fake(){
  let acquired=0,closed=0,tabs=[],views=0;
- return {env:{BRAIN:{fetch:async(req)=>new Response('OK',{status:req.headers.get('Authorization')?.startsWith('Bearer rb_')?200:403})},
+ return {env:{BRAIN:{fetch:async(url,init)=>new Response('OK',{status:init?.headers?.Authorization?.startsWith('Bearer rb_')?200:403})},
  BROWSER:{acquire:async()=>{acquired++;return {sessionId:'11111111-1111-4111-8111-111111111111'};},
  devtools:{newTarget:async(id,url)=>{tabs.push(url);return {id:'ABCDEF1234'};},
  listTargets:async()=>tabs.map((url,i)=>({url,title:'tab'+i,type:'page'}))},
