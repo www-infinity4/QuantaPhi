@@ -87,8 +87,12 @@ jobs:
         run: node --test test/bubbles-native-reply-recovery.test.cjs
       - name: Verify three-lane room and internal playback isolation
         run: node --test test/bubbles-room-notes-native.test.cjs test/bubbles-three-lane-voice.test.cjs test/bubbles-phone-playback-lane.test.cjs
-      - name: Verify native screen recorder and no external recorder controls
-        run: node --test test/bubbles-du-recorder-handoff.test.cjs test/bubbles-xrecorder-app-control.test.cjs
+      - name: Verify native screen recorder duration, controls, and speech intents
+        run: |
+          node --test test/bubbles-du-recorder-handoff.test.cjs test/bubbles-xrecorder-app-control.test.cjs test/bubbles-native-recording-lifecycle.test.cjs
+          mkdir -p /tmp/bubbles-capture-intents
+          javac -d /tmp/bubbles-capture-intents android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/VoiceCaptureCommands.java android/bubbles-overlay/checks/VoiceCaptureCommandsCheck.java
+          java -cp /tmp/bubbles-capture-intents org.quantaphi.bubbles.VoiceCaptureCommandsCheck
       - name: Verify adaptive voice pause and CapCut media handoff
         run: |
           node --test test/bubbles-adaptive-voice-capcut.test.cjs
