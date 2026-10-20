@@ -2141,7 +2141,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const detail=event.detail||{};
   const respond=typeof detail.respond==='function'?detail.respond:()=>{};
   const text=String(detail.text||'').slice(0,1800).trim();
-  if(embedded||nativeOverlay||busy||!text){respond({ok:false,error:'bubbles_chat_not_ready'});return}
+  if(embedded||busy||!text){respond({ok:false,error:'bubbles_chat_not_ready'});return}
   const before=messages.length;
   Promise.resolve(sendMessage(text,false)).then(()=>{
    const replies=messages.slice(before).filter(x=>x.role==='assistant');
