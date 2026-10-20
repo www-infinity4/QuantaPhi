@@ -778,7 +778,7 @@ if(!embedded){
  browserLaunch.addEventListener('click',async()=>{
   browserLaunch.disabled=true;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261019-live-chrome1');
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-browser-agent2');
    module.mount({host:panel,ownerHeaders:verifiedOwnerHeaders});
    tools.open=true;
    status.textContent='Cloud browser controls are available in this Bubbles panel. Sign-in stays inside your remote Chrome session.';
