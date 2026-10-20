@@ -1242,6 +1242,14 @@ async function conversationApi(mode,sessionId='',extra={}){
  if(!response.ok||!value.ok)throw Error(value.error||'conversation_unavailable');
  return value;
 }
+async function syncCloudFolder(id,items){
+ if(!ownerReady||!keepChat||embedded||id==='legacy-history')return false;
+ const clean=items.filter(m=>m&&['user','assistant'].includes(m.role)&&m.text).slice(-10)
+  .map(m=>({id:m.id,role:m.role,text:String(m.text).slice(0,6000),at:m.at}));
+ if(!clean.length)return true;
+ try{await conversationApi('sessions-save',id,{messages:clean});return true;}
+ catch{return false;}
+}
 async function refreshConversationFolders(){
  if(!ownerReady){chatsMessage.textContent='Chats saved on this device. Connect your owner account for cloud history.';renderConversationFolders();return;}
  try{
