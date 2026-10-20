@@ -713,9 +713,11 @@ public final class BubblesService extends Service {
                                     return;
                                 }
                                 // Unambiguous recording starts without a fixed end-of-turn delay.
-                                if (!turnBuffer.hasPending() && command != null
+                                if (command != null
                                         && (command.action.equals("screen_video")
                                             || command.action.equals("sound_start"))) {
+                                    main.removeCallbacks(deliverVoiceTurn);
+                                    turnBuffer.clear();
                                     heard(transcript);
                                     return;
                                 }
@@ -1024,7 +1026,8 @@ public final class BubblesService extends Service {
                     break;
                 case "screen_video":
                     if (BrainNotes.prefs(this).getBoolean("capture_active", false)) {
-                        if (!typed) speak("Recording.");
+                        if (!typed) speak(BrainNotes.prefs(this).getBoolean("capture_recording", false)
+                            ? "Recording." : "Screen capture is open; recording has not started.");
                     } else {
                         if (!typed) speak("Starting.");
                         offerCaptureApproval(command);
@@ -1130,7 +1133,15 @@ public final class BubblesService extends Service {
         BrainNotes.prefs(this).edit().putString("capture_state",
             camera ? "Camera recording requested · tap Bubbles capture notification"
                 : "Screen capture requested · tap notification and approve Android dialog").apply();
-        Toast.makeText(this, "Tap Bubbles capture notification to continue", Toast.LENGTH_LONG).show();
+        // A user command in the visible overlay may open the consent activity
+        // directly. Keep the notification as a fallback if Android blocks launch.
+        try {
+            startActivity(intent);
+            BrainNotes.prefs(this).edit().putString("capture_state",
+                camera ? "Opening camera" : "Waiting for Android screen capture approval").apply();
+        } catch (RuntimeException blocked) {
+            Toast.makeText(this, "Tap Bubbles capture notification to continue", Toast.LENGTH_LONG).show();
+        }
     }
 
     private void handleTypedRequest(String text) {
