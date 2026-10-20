@@ -6,6 +6,9 @@ import {browserAction} from '../workers/bubbles-tools/browser-cdp.mjs';
 
 test('Bubbles routes actual spoken Chrome research commands',()=>{
  assert.deepEqual(browserSpeechIntent('open StarQuest in the cloud browser'),{action:'navigate',url:'https://quantaphi.org/starquest/'});
+ assert.deepEqual(browserSpeechIntent('plug cloud browser into Bubbles'),{action:'navigate',url:'https://quantaphi.org/bubbles.html'});
+ assert.deepEqual(browserSpeechIntent('connect the cloud browser'),{action:'navigate',url:'https://quantaphi.org/bubbles.html'});
+ assert.deepEqual(browserSpeechIntent('start cloud browser'),{action:'navigate',url:'https://quantaphi.org/bubbles.html'});
  assert.deepEqual(browserSpeechIntent('read the page in the cloud browser'),{action:'read'});
  assert.deepEqual(browserSpeechIntent('click "Watch" in the cloud browser'),{action:'click',label:'Watch'});
  assert.deepEqual(browserSpeechIntent('type "Rocket" into Search in the cloud browser'),{action:'type',value:'Rocket',field:'Search'});
