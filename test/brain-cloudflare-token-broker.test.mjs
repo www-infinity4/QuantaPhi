@@ -58,14 +58,16 @@ test('actual Cloudflare POST only requests bounded scripts permissions for the o
   {now,request:fakeCloudflare(calls)});
  assert.equal(minted.secret,childSecret);
  assert.equal(calls.length,2);
- assert.equal(calls[0].path,'/client/v4/accounts/'+TOKEN_MANAGER_ACCOUNT+'/tokens/permission_groups');
+ assert.equal(calls[0].path,'/client/v4/user/tokens/permission_groups');
  assert.equal(calls[1].method,'POST');
- assert.equal(calls[1].path,'/client/v4/accounts/'+TOKEN_MANAGER_ACCOUNT+'/tokens');
+ assert.equal(calls[1].path,'/client/v4/user/tokens');
  assert.deepEqual(calls[1].body.policies[0].permission_groups,[{id:groupId}]);
  assert.deepEqual(calls[1].body.policies[0].resources,
   {['com.cloudflare.api.account.'+TOKEN_MANAGER_ACCOUNT]:'*'});
  assert.equal(calls[1].body.expires_on,new Date(plan.expiresAt).toISOString());
  assert.ok(!JSON.stringify(calls[1]).includes('API Tokens Edit'));
+ assert.equal(calls.some(x=>x.path.includes('/accounts/'+TOKEN_MANAGER_ACCOUNT+'/tokens')),false,
+  'User API Tokens Edit must never call the separate Account Tokens Write endpoint');
 });
 test('owner-confirmed Cloudflare token stays encrypted in DO storage and cannot be replay-minted',async()=>{
  const storage=mockStorage();
