@@ -90,7 +90,9 @@ export async function conversationMemory(db,owner,body){
   const statements=[];
   for(const m of messages){
    statements.push(db.prepare('INSERT OR IGNORE INTO bubbles_messages(owner,id,role,text,at) VALUES (?,?,?,?,?)').bind(owner,m.id,m.role,m.text,m.at));
-   // Associate untagged messages with the explicitly selected conversation.\n   // Only genuinely unscoped historical messages belong in the legacy archive.\n   const target=m.sessionId||sessionId;
+   // Associate untagged messages with the explicitly selected conversation.
+   // Only genuinely unscoped historical messages belong in the legacy archive.
+   const target=m.sessionId||sessionId;
    if(target){
     // The owner is derived from verified Brain credentials, never client input.
     statements.push(db.prepare('INSERT OR IGNORE INTO bubbles_sessions(owner,session_id,title,created,updated) VALUES (?,?,?,?,?)').bind(owner,target,'New conversation',m.at,m.at));
