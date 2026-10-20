@@ -1,0 +1,24 @@
+name: Bubbles Browser Consent Gate
+on:
+  pull_request:
+    paths:
+      - 'workers/bubbles-cloud-browser/**'
+      - 'bubbles-cloud-browser.mjs'
+      - 'test/bubbles-browser-consent.test.mjs'
+      - '.github/workflows/bubbles-browser-consent.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  consent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: |
+          node --check workers/bubbles-cloud-browser/worker.mjs
+          node --check workers/bubbles-cloud-browser/consent.mjs
+          node --check bubbles-cloud-browser.mjs
+          node --test test/bubbles-browser-consent.test.mjs
