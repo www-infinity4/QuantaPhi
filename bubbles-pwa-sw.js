@@ -1,6 +1,6 @@
 /* Bubbles Chrome launcher: cache only public bootstrap assets, never wallet, chat or API responses. */
-const CACHE = 'bubbles-public-shell-v1';
-const SHELL = ['/bubbles-pwa-offline.html', '/assets/bubbles-pwa-192.png', '/assets/bubbles-pwa-512.png'];
+const CACHE = 'bubbles-public-shell-v2';
+const SHELL = ['/bubbles-pwa-offline.html', '/assets/bubbles-pwa-oOo.svg', '/assets/bubbles-pwa-192.png', '/assets/bubbles-pwa-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));
   self.skipWaiting();

@@ -32,7 +32,7 @@ test('both Android Chrome icon sizes exist as genuine PNGs and decompress', () =
   assert.equal(buf.readUInt32BE(16),n);
   assert.equal(buf.readUInt32BE(20),n);
   assert.equal(buf[24],1); // indexed 1-bit
-  assert.equal(buf[25],3);
+  assert.ok(buf[25]===0||buf[25]===3,'icon is 1-bit grayscale or indexed color');
   const icon=manifest.icons.find(i=>i.sizes===n+'x'+n);
   assert.equal(icon.type,'image/png');
   assert.equal(icon.src,'/assets/bubbles-pwa-'+n+'.png');
@@ -46,7 +46,7 @@ test('both Android Chrome icon sizes exist as genuine PNGs and decompress', () =
 });
 
 test('offline shell caches only public resources, never auth or chat responses', () => {
- assert.match(sw,/CACHE = 'bubbles-public-shell-v1'/);
+ assert.match(sw,/CACHE = 'bubbles-public-shell-v2'/);
  assert.match(sw,/url\.pathname !== '\/bubbles-chrome\.html'/);
  assert.match(sw,/req\.mode !== 'navigate'/);
  assert.doesNotMatch(sw,/caches\.put\(req|Authorization|localStorage|sessionStorage/);

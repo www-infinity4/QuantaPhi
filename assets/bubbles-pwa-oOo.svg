@@ -17,13 +17,13 @@
 </defs>
 <rect width="512" height="512" rx="115" fill="#19132c"/>
 <g stroke="#ecf9ff" stroke-opacity=".85" stroke-width="8">
-<circle cx="103" cy="273" r="62" fill="url(#shell)"/>
-<circle cx="256" cy="245" r="101" fill="url(#core)" stroke-width="11"/>
-<circle cx="409" cy="273" r="62" fill="url(#shell)"/>
+<circle cx="97" cy="273" r="54" fill="url(#shell)"/>
+<circle cx="256" cy="245" r="91" fill="url(#core)" stroke-width="11"/>
+<circle cx="415" cy="273" r="54" fill="url(#shell)"/>
 </g>
 <g fill="none" stroke="url(#gleam)" stroke-linecap="round">
-<path d="M67 257 A39 39 0 0 1 109 230" stroke-width="12"/>
-<path d="M193 222 A65 65 0 0 1 268 173" stroke-width="20"/>
-<path d="M373 259 A37 37 0 0 1 416 234" stroke-width="11"/>
+<path d="M61 256 A35 35 0 0 1 103 232" stroke-width="12"/>
+<path d="M203 219 A59 59 0 0 1 268 180" stroke-width="20"/>
+<path d="M379 260 A35 35 0 0 1 422 234" stroke-width="11"/>
 </g>
 </svg>
