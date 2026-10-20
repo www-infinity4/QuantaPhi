@@ -49,15 +49,29 @@ function target(tabs,wanted=''){
  const page=(Array.isArray(tabs)?tabs:[]).filter(t=>t.type==='page');
  return wanted?page.find(t=>t.id===wanted)||null:page.at(-1)||null;
 }
-export async function browserAction(env,{sessionId,action,targetId='',url='',label='',field='',value=''}){
+export async function browserAction(env,{sessionId,action,targetId='',url='',label='',field='',value='',mode=''}){
  const targets=await env.BROWSER.devtools.listTargets(sessionId);
  const tab=target(targets,targetId);
  if(!tab)throw Error('browser_tab_not_found');
- if(!['read','navigate','click','type'].includes(action))throw Error('unsupported_browser_action');
+ if(!['read','navigate','click','type','viewport'].includes(action))throw Error('unsupported_browser_action');
+ if(action==='viewport'&&!['phone','desktop'].includes(mode))throw Error('unsupported_browser_viewport');
  if(action==='navigate' && !url)throw Error('browser_url_required');
  if(action==='click' && (!label||label.length>100))throw Error('browser_label_required');
  if(action==='type' && (!field||field.length>100||value.length>500))throw Error('browser_field_invalid');
  return connect(env,sessionId,tab.id,async send=>{
+  if(action==='viewport'){
+   // This changes Chromium's actual CSS viewport, rather than shrinking its iframe.
+   // It is an Android-sized WEBSITE preview, never the user's physical Android screen.
+   const phone=mode==='phone';
+   const width=phone?360:1280,height=phone?800:800;
+   await send('Emulation.setDeviceMetricsOverride',{
+    width,height,deviceScaleFactor:phone?2:1,mobile:phone,
+    screenWidth:width,screenHeight:height
+   });
+   await send('Emulation.setTouchEmulationEnabled',{enabled:phone,maxTouchPoints:phone?1:0});
+   return {ok:true,mode:phone?'phone_website':'desktop_website',width,height,
+    mobileWebPreview:phone,physicalAndroidScreen:false,targetId:tab.id};
+  }
   if(action==='navigate'){
    const response=await send('Page.navigate',{url});return {ok:true,targetId:tab.id,navigationRequested:Boolean(response.frameId)};
   }

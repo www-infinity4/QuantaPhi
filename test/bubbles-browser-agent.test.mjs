@@ -58,6 +58,33 @@ test('Navigation is a real Page.navigate command and click/type are bounded',asy
  assert.match(calls[2].params.expression,/type=password/);
  await assert.rejects(()=>browserAction(env,{sessionId:'11111111-1111-4111-8111-111111111111',action:'type',field:'Search',value:'X'.repeat(501)}),/browser_field_invalid/);
 });
+test('actual responsive website viewport is set through Chrome CDP with a separate Android-device boundary',async()=>{
+ const {env,calls}=fakeBrowser();
+ const sessionId='11111111-1111-4111-8111-111111111111';
+ const phone=await browserAction(env,{sessionId,action:'viewport',mode:'phone'});
+ assert.equal(phone.width,360);assert.equal(phone.height,800);
+ assert.equal(phone.physicalAndroidScreen,false);assert.equal(phone.mobileWebPreview,true);
+ assert.equal(calls[0].method,'Emulation.setDeviceMetricsOverride');
+ assert.equal(calls[0].params.width,360);assert.equal(calls[0].params.mobile,true);
+ assert.equal(calls[1].method,'Emulation.setTouchEmulationEnabled');
+ assert.equal(calls[1].params.enabled,true);
+ const desktop=await browserAction(env,{sessionId,action:'viewport',mode:'desktop'});
+ assert.equal(desktop.width,1280);assert.equal(desktop.mobileWebPreview,false);
+ assert.equal(desktop.physicalAndroidScreen,false);
+ assert.equal(calls[2].params.mobile,false);
+ assert.equal(calls[3].params.enabled,false);
+ await assert.rejects(()=>browserAction(env,{sessionId,action:'viewport',mode:'android_screen'}),/unsupported_browser_viewport/);
+});
+test('Chrome viewport switch is behind owner authorization and separately approved browser control',()=>{
+ const worker=fs.readFileSync('workers/bubbles-cloud-browser/worker.mjs','utf8');
+ const tool=fs.readFileSync('workers/bubbles-tools/browser.mjs','utf8');
+ const ui=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
+ assert.match(worker,/\['read','navigate','click','type','viewport'\]/);
+ assert.match(tool,/\['navigate','read','click','type','viewport'\]/);
+ assert.match(worker,/consentStore\(env\)\.status\(\)/);
+ assert.match(ui,/call\('viewport',\{mode\}\)/);
+ assert.match(ui,/physical Android screen/);
+});
 test('Browser automation never bypasses owner authentication or opens wallet and Github tokens',()=>{
  const gateway=fs.readFileSync('workers/bubbles-tools/browser.mjs','utf8');
  const worker=fs.readFileSync('workers/bubbles-cloud-browser/worker.mjs','utf8');

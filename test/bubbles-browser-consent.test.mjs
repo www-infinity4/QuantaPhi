@@ -29,7 +29,7 @@ test('browser-only grant cannot bypass owner verification and manual viewing con
  const code=readFileSync('workers/bubbles-cloud-browser/worker.mjs','utf8');
  const ui=readFileSync('bubbles-cloud-browser.mjs','utf8');
  assert.match(code,/browser_consent_required/);
- assert.match(code,/\['read','navigate','click','type'\]/);
+ assert.match(code,/\['read','navigate','click','type','viewport'\]/);
  assert.match(code,/owner\(request,env\)/);
  assert.match(code,/return browserTool\(request,env\)/);
  assert.match(ui,/Allow browser assistant · 5 days/);
