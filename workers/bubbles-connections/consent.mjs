@@ -129,8 +129,12 @@ export class ConsentService {
         if(!exists)await tx.put(accountKey,{repository,connectionId:id,createdAt:this.now()});
       });
     }
-    if(mode==='write')await this.storage.put(prefix+'starcoin:last-backup',{
-      repository,hash:snapshot.hash,commit:result.commit||null,status:result.status,at:this.now()});
+    if(mode==='write'){
+      const previous=await this.storage.get(prefix+'starcoin:last-backup');
+      const commit=result.commit||(previous?.repository===repository&&previous?.hash===snapshot.hash?previous.commit:null);
+      await this.storage.put(prefix+'starcoin:last-backup',{
+        repository,hash:snapshot.hash,commit:commit||null,status:result.status,at:this.now()});
+    }
     return result;
     }catch(error){
       if(['backup_mismatch_review_required','backup_account_mismatch_review_required',
