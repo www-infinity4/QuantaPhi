@@ -99,10 +99,15 @@ export async function selectMcpTool(env,question,invoke,context={}){
  if(/\b(?:delete|purchase|pay|transfer|approve|authorize|deploy|merge|commit|install|edit|modify|repair|fix|implement|build|create)\b/i.test(question))return null;
  const functions=tools.map(t=>({type:'function',function:{name:t.name,description:t.description,parameters:t.inputSchema}}));
  let result;
- try{result=await env.AI.run('@cf/openai/gpt-oss-120b',{
+ const options={
   messages:[{role:'system',content:'Interpret natural conversational meaning, not memorized commands. Select one read-only tool only for a clear need for live web search, current weather, dated headlines, or LC calculations; otherwise select no tool. Never invent city, units, factual observations or permission. If no weather location was supplied, leave location empty. No account, browser-control, code, file, phone, GitHub or Robot Brain writes.'},{role:'user',content:clean(question,2500)}],
   tools:functions,tool_choice:'auto',reasoning_effort:'medium',max_tokens:350
- })}catch{return null}
+ };
+ try{result=await env.AI.run('@cf/openai/gpt-oss-120b',options)}
+ catch{
+  try{result=await env.AI.run('@cf/openai/gpt-oss-20b',{...options,reasoning_effort:'low',max_tokens:260})}
+  catch{return null}
+ }
  const calls=result?.choices?.[0]?.message?.tool_calls||result?.tool_calls||
   result?.output?.filter?.(item=>item.type==='function_call')||[];
  if(!Array.isArray(calls)||calls.length!==1)return null;
