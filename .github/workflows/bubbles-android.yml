@@ -23,6 +23,7 @@ on:
       - 'test/bubbles-capture-save.test.cjs'
       - 'test/bubbles-xrecorder-app-control.test.cjs'
       - 'test/bubbles-native-gpt-screen-story.test.cjs'
+      - 'test/bubbles-chatgpt-app-companion.test.cjs'
       - 'test/bubbles-native-session-voice.test.cjs'
       - 'test/bubbles-native-site-parity.test.cjs'
       - '.github/workflows/bubbles-android.yml'
@@ -148,6 +149,12 @@ jobs:
         run: node --test test/bubbles-chatgpt-native.test.cjs
       - name: Verify ChatGPT sign-in handoff, visual reader and story opt-in
         run: node --test test/bubbles-native-gpt-screen-story.test.cjs
+      - name: Verify Android ChatGPT foreground app companion and safe visible controls
+        run: |
+          node --test test/bubbles-chatgpt-app-companion.test.cjs
+          mkdir -p /tmp/bubbles-chatgpt-app
+          javac -d /tmp/bubbles-chatgpt-app android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenAwareness.java android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ChatGPTAppPolicy.java android/bubbles-overlay/checks/ChatGPTAppPolicyCheck.java
+          java -cp /tmp/bubbles-chatgpt-app org.quantaphi.bubbles.ChatGPTAppPolicyCheck
       - name: Verify no extra owner-code buttons and secure in-chat Android pairing
         run: node --test test/bubbles-owner-native-pairing.test.cjs test/bubbles-owner-pairing-visibility.test.cjs
       - name: Verify shared session, Android speech-turn timing and ownership pairing

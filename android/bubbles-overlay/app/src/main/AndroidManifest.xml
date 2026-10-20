@@ -12,6 +12,8 @@
         <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent>
         <package android:name="com.lemon.lvoverseas"/>
         <package android:name="com.android.chrome"/>
+        <!-- Package visibility only. No ChatGPT permissions, cookies or storage access. -->
+        <package android:name="com.openai.chatgpt"/>
         <intent><action android:name="android.speech.RecognitionService"/></intent>
         <intent><action android:name="android.intent.action.TTS_SERVICE"/></intent>
         <package android:name="dev.ahmedmohamed.hayaitts"/>

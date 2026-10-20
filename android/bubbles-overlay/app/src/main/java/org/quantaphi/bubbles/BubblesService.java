@@ -1156,6 +1156,7 @@ public final class BubblesService extends Service {
         }
         // Opening an installed app is a local, explicit command; no cloud model
         // can silently add app permissions or click unrelated controls.
+        if (handleChatGPTAppRequest(addressed, typed)) return;
         String appLaunch = AppControlBridge.tryLaunch(this, addressed);
         if (appLaunch != null) {
             screenStatus(appLaunch, typed);
@@ -1247,6 +1248,7 @@ public final class BubblesService extends Service {
         }
         if (panelCommand(text, true, SystemClock.elapsedRealtime())) return;
         if (handleWorkflowRequest(text, true)) return;
+        if (handleChatGPTAppRequest(text, true)) return;
         String localLaunch = AppControlBridge.tryLaunch(this, text);
         if (localLaunch != null) { screenStatus(localLaunch, true); return; }
         if (SimNetworkCommands.matches(text)) {
@@ -1271,6 +1273,66 @@ public final class BubblesService extends Service {
                 "Bubbles website is unavailable or its queue is full. No alternate AI was used.").apply();
         }
     }
+    /** Visible Android ChatGPT companion, deliberately not an archive API.
+     * Website/OAuth provider access does not grant private Android app data.
+     * Only direct owner voice or typed intent reaches these local actions.
+     */
+    private boolean handleChatGPTAppRequest(String speech, boolean typed) {
+        ChatGPTAppPolicy.Request command = ChatGPTAppPolicy.parse(speech);
+        if (command == null) return false;
+        if (command.kind == ChatGPTAppPolicy.Kind.OPEN) {
+            String opened = AppControlBridge.tryLaunch(this, "open ChatGPT");
+            screenStatus(opened == null
+                ? "ChatGPT could not be opened on this phone." : opened, typed);
+            return true;
+        }
+        if (command.kind == ChatGPTAppPolicy.Kind.ARCHIVE_UNAVAILABLE) {
+            screenStatus("I can read the currently visible ChatGPT screen, but Android does not give me "
+                + "the full private chat history. Import your official ChatGPT ZIP into Bubbles History "
+                + "to restore individual saved conversations.", typed);
+            return true;
+        }
+        if (!BrainLearningService.isConnected()) {
+            screenStatus("To read or control the visible ChatGPT app, enable Bubbles screen access "
+                + "in Android Accessibility settings. Nothing was read or tapped.", typed);
+            try { startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)); }
+            catch (RuntimeException ignored) { /* The owner may open Settings manually. */ }
+            return true;
+        }
+        if (!ChatGPTAppPolicy.PACKAGE.equals(BrainLearningService.workflowForegroundPackage())) {
+            screenStatus("Open the ChatGPT app first. Bubbles did not read or control another app.", typed);
+            return true;
+        }
+        if (command.kind == ChatGPTAppPolicy.Kind.TYPE) {
+            String result = BrainLearningService.workflowTypeInPackage(
+                command.field, command.value, ChatGPTAppPolicy.PACKAGE);
+            screenStatus("TYPE_VERIFIED".equals(result)
+                    ? "Text is in the selected ChatGPT field. It has not been sent."
+                    : "TYPE_UNVERIFIED".equals(result)
+                    ? "Text entry was requested, but I cannot verify it. Nothing was sent by Bubbles."
+                    : "ChatGPT text entry was blocked or the field could not be identified uniquely. "
+                        + "No send action was attempted.", typed);
+            return true;
+        }
+        if (command.kind == ChatGPTAppPolicy.Kind.TAP
+                || command.kind == ChatGPTAppPolicy.Kind.SCROLL) {
+            String receipt = BrainLearningService.performRequestedActionInPackage(
+                command.screenPhrase, ChatGPTAppPolicy.PACKAGE);
+            if (receipt == null) {
+                screenStatus("ChatGPT action was not recognized. No control was activated.", typed);
+                return true;
+            }
+            screenStatus(receipt, typed);
+            if (receipt.startsWith("Tap sent to ") || receipt.startsWith("Scroll ")) {
+                main.postDelayed(() -> inspectScreenRequest(speech, typed, receipt), 500L);
+            }
+            return true;
+        }
+        inspectScreenRequest(speech, typed, "");
+        return true;
+    }
+
     private void screenStatus(String response, boolean typed) {
         BrainNotes.prefs(this).edit().putString("last_reply", response)
             .putString("screen_state", response).apply();
@@ -1314,9 +1376,11 @@ public final class BubblesService extends Service {
     private void inspectScreenRequest(String question, boolean typed, String actionReceipt) {
         final boolean restorePanel = oracleWindow != null && oracleWindow.hideForScreenRead();
         // Give the compositor a frame to remove our own chat from the screenshot.
-        main.postDelayed(() -> BrainLearningService.inspectNow(question, () -> {
-            if (oracleWindow != null) oracleWindow.restoreAfterScreenRead(restorePanel);
-        }, observation -> main.post(() -> {
+        main.postDelayed(() -> {
+            Runnable captured = () -> {
+                if (oracleWindow != null) oracleWindow.restoreAfterScreenRead(restorePanel);
+            };
+            java.util.function.Consumer<String> observed = observation -> main.post(() -> {
             if (oracleWindow != null) oracleWindow.restoreAfterScreenRead(restorePanel);
             if (!connected || (!typed && muted)) return;
             if (observation.startsWith("SCREEN_")) {
@@ -1330,7 +1394,12 @@ public final class BubblesService extends Service {
                 : "Android action receipt: " + actionReceipt + "\nObservation after this action (a screen change is not proof of task completion):\n" + observation, typed)) return;
             BrainNotes.prefs(this).edit().putString("last_error",
                 "The Bubbles website could not accept this screen request. No alternate AI was used.").apply();
-        })), 160L);
+        });
+            if (ChatGPTAppPolicy.parse(question) != null)
+                BrainLearningService.inspectNowForPackage(question,
+                    ChatGPTAppPolicy.PACKAGE, captured, observed);
+            else BrainLearningService.inspectNow(question, captured, observed);
+        }, 160L);
     }
 
     private void askOracle(String userRequest) {
