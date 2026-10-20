@@ -48,8 +48,14 @@ async function sessionHandler(env,body){
  if(!SID.test(sessionId))return {ok:false,error:'invalid_chat_selection'};
  if(body.mode==='sessions-create'){
   const title=typeof body.title==='string'?body.title.slice(0,80).trim():'New conversation';
+  const source=body.source==='chatgpt'?'chatgpt':'bubbles';
+  // Imported history keeps its original chronological position. The source
+  // cannot supply an owner ID or authorization, only historical timestamps.
+  const safeTime=value=>Number.isSafeInteger(value)&&value>=946684800000&&value<=now+60000;
+  const created=source==='chatgpt'&&safeTime(body.created)?body.created:now;
+  const updated=source==='chatgpt'&&safeTime(body.updated)?body.updated:created;
   await env.WORK_DB.prepare('INSERT OR IGNORE INTO bubbles_sessions(owner,session_id,title,created,updated) VALUES (?,?,?,?,?)')
-    .bind(owner,sessionId,title||'New conversation',now,now).run();
+    .bind(owner,sessionId,title||'New conversation',created,updated).run();
   if(body.source==='chatgpt')await env.WORK_DB.prepare("INSERT INTO bubbles_session_sources(owner,session_id,source) VALUES (?,?,'chatgpt') ON CONFLICT(owner,session_id) DO UPDATE SET source='chatgpt'").bind(owner,sessionId).run();
   return {ok:true,sessionId};
  }
