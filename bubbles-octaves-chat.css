@@ -1,0 +1,164 @@
+/* Oracle Octaves / Bubbles: phone-first chat skin. Keeps the animated blue orb.
+   Scoped to Bubbles; no global page, wallet, or card overrides. */
+.ba-panel {
+  --bco-ink: #30243e;
+  --bco-violet: #5f2c91;
+  --bco-purple-dark: #49216f;
+  --bco-line: #ddcdea;
+  --bco-surface: #fffdfa;
+  --bco-lavender: #f6f0fb;
+  --bco-gold: #79571b;
+  --bco-muted: #66546f;
+  background: var(--bco-surface);
+  color: var(--bco-ink);
+  border-color: var(--bco-line);
+  font-family: system-ui, Roboto, sans-serif;
+}
+.ba-panel .ba-header {
+  background: linear-gradient(110deg,#fffdf8 0%,#f6ecfd 100%);
+  border-bottom: 1px solid var(--bco-line);
+  color: var(--bco-purple-dark);
+}
+.ba-panel .ba-header strong {
+  font-size: clamp(16px, 4.8vw, 21px);
+  letter-spacing: -.01em;
+  color: var(--bco-purple-dark);
+}
+.ba-panel .ba-chatgpt-quick {
+  background: linear-gradient(115deg,#f3e7fc,#fffdfa);
+  border-bottom: 1px solid var(--bco-line);
+  min-width: 0;
+  flex-shrink: 0;
+}
+.ba-panel .ba-chatgpt-quick-status,
+.ba-panel .ba-owner-status,
+.ba-panel .ba-status { color: var(--bco-muted)!important; opacity:1!important; }
+.ba-panel .ba-chatgpt-quick button.ba-chatgpt-quick-approve {
+  background: var(--bco-violet)!important;
+  border-color: var(--bco-purple-dark)!important;
+  color: #fff!important;
+  -webkit-text-fill-color:#fff!important;
+  border-radius: 14px!important;
+  box-shadow: 0 3px 8px #4a1a7426;
+  min-height: 50px!important;
+}
+.ba-panel .ba-chatgpt-quick button[data-connected="true"] {
+  color:var(--bco-violet)!important;
+  -webkit-text-fill-color:var(--bco-violet)!important;
+  background:#fff!important;
+  border:1px solid #ad94c5!important;
+  box-shadow:none;
+}
+.ba-panel .ba-thread {
+  display:block;
+  flex: 1 1 0;
+  min-height: 0!important;
+  min-width: 0;
+  overflow-x: hidden!important;
+  overflow-y: auto!important;
+  overscroll-behavior-y: contain;
+  touch-action:pan-y!important;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+  background:#fffdfa;
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+.ba-panel .ba-messages { min-width:0; background:transparent; overflow:visible; }
+.ba-panel .ba-line { max-width: 100%; min-width:0; overflow-wrap:anywhere; }
+.ba-panel .ba-message {
+  max-width:100%; min-width:0; box-sizing:border-box;
+  border-radius:17px; padding:10px 13px;
+  font:500 16px/1.52 system-ui,Roboto,sans-serif;
+  overflow-wrap:anywhere; word-break:normal;
+  color:var(--bco-ink)!important;
+  box-shadow:none;
+}
+.ba-panel .ba-assistant { background:#f2edfa!important; border:1px solid #e2d4ef; }
+.ba-panel .ba-you { background:#e7f5f4!important; border:1px solid #cce7e5; color:#173d43!important; }
+.ba-panel .ba-composer {
+  flex: 0 1 auto;
+  min-height:0!important;
+  max-height:min(43dvh,280px)!important;
+  padding:9px 11px max(10px,env(safe-area-inset-bottom))!important;
+  overflow-x:hidden!important;
+  overflow-y:auto!important;
+  background:#fffdfa!important;
+  border-top:1px solid var(--bco-line)!important;
+  overscroll-behavior:contain;
+}
+.ba-panel .ba-composer textarea {
+  width:100%; box-sizing:border-box;
+  font:500 16px/1.45 system-ui,Roboto,sans-serif!important;
+  background:#fff!important; color:var(--bco-ink)!important;
+  -webkit-text-fill-color:var(--bco-ink)!important;
+  border:1px solid #bda2d3!important;
+  border-radius:12px!important;
+  min-height:52px!important;max-height:96px!important;
+  resize:none!important;
+}
+.ba-panel .ba-actions { display:grid;gap:7px;min-width:0; }
+.ba-panel .ba-actions > * { min-width:0; box-sizing:border-box; }
+.ba-panel .ba-send,
+.ba-panel .ba-actions .ba-send {
+  background:var(--bco-violet)!important;
+  border:1px solid var(--bco-violet)!important;
+  color:#fff!important; -webkit-text-fill-color:#fff!important;
+  border-radius:12px!important;
+  min-height:48px!important;
+}
+.ba-panel .ba-tools, .ba-panel .ba-brain-inbox,
+.ba-panel .ba-browser-advanced, .ba-panel .ba-cloud-browser-scrolling {
+  min-width:0;max-width:100%;box-sizing:border-box;
+  border-color:var(--bco-line);
+}
+.ba-panel .ba-tools > summary,
+.ba-panel .ba-browser-advanced > summary {
+  background:var(--bco-lavender)!important;
+  border-radius:12px!important;
+  color:var(--bco-purple-dark)!important;
+  -webkit-text-fill-color:var(--bco-purple-dark)!important;
+  font-weight:750!important;
+  text-align:left;
+}
+.ba-panel :is(button,input,textarea,summary,a):focus-visible {
+  outline:3px solid #3c80cf!important;
+  outline-offset:2px;
+}
+.ba-panel .ba-tool-rail { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px; }
+.ba-panel .ba-tool-rail > * { min-width:0;overflow-wrap:anywhere;min-height:48px; }
+.ba-panel .ba-inline-account-gate {
+  min-width:0;max-width:100%;overflow-wrap:anywhere;
+  background:var(--bco-lavender);border-color:var(--bco-line);
+}
+.ba-panel .ba-inline-account-provider { min-width:0;max-width:100%; }
+.ba-panel .ba-inline-account-provider button { white-space:normal;overflow-wrap:anywhere; }
+.ba-panel .ba-browser-home, .ba-panel .ba-cloud-browser-scrolling,
+.ba-panel .ba-chatgpt-browser-bridge { width:100%;max-width:100%;min-width:0; }
+/* Preserve Bubbles' original blue animated orb; this file never overrides it. */
+@media(max-width:600px){
+  .ba-panel:not([hidden]) {width:100%!important;max-width:100%!important;min-height:0!important;}
+  .ba-panel .ba-header {min-height:50px;}
+  .ba-panel .ba-chatgpt-quick {padding:7px 10px!important;}
+  .ba-panel .ba-chatgpt-quick-status {font-size:12px!important;line-height:1.35!important;}
+  .ba-panel .ba-thread {padding:8px 11px 18px!important;min-height:0!important;}
+  .ba-panel .ba-inline-account-gate {grid-template-columns:minmax(0,1fr)!important;}
+  .ba-panel .ba-inline-account-gate > .ba-inline-account-title,
+  .ba-panel .ba-inline-account-gate > .ba-inline-account-hint {grid-column:1!important;}
+  .ba-panel .ba-composer {max-height:43dvh!important;padding:7px 9px max(7px,env(safe-area-inset-bottom))!important;}
+  .ba-panel .ba-tool-rail {grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+}
+@media(max-width:360px){
+  .ba-panel .ba-tool-rail {grid-template-columns:minmax(0,1fr);}
+  .ba-panel .ba-message {padding:9px 11px;font-size:15px;}
+}
+@media(max-height:560px){
+  .ba-panel .ba-composer {max-height:49dvh!important;}
+  .ba-panel .ba-chatgpt-quick-status {max-height:2.9em;overflow-y:auto;}
+}
+html.bubbles-native-overlay .ba-panel .ba-thread {
+  flex:1 1 0!important;min-height:0!important;overflow-y:auto!important;
+  touch-action:pan-y!important;-webkit-overflow-scrolling:touch;
+}
+@media(prefers-reduced-motion:reduce){
+ .ba-panel * {scroll-behavior:auto!important;animation-duration:.001ms;}
+}
