@@ -52,7 +52,7 @@ test('Navigation is a real Page.navigate command and click/type are bounded',asy
  await browserAction(env,{sessionId:'11111111-1111-4111-8111-111111111111',action:'click',label:'Watch'});
  assert.match(calls[1].params.expression,/owner_manual_approval_required/);
  await browserAction(env,{sessionId:'11111111-1111-4111-8111-111111111111',action:'type',field:'Search',value:'Serenity'});
- assert.match(calls[2].params.expression,/type="password"/);
+ assert.match(calls[2].params.expression,/type=password/);
  await assert.rejects(()=>browserAction(env,{sessionId:'11111111-1111-4111-8111-111111111111',action:'type',field:'Search',value:'X'.repeat(501)}),/browser_field_invalid/);
 });
 test('Browser automation never bypasses owner authentication or opens wallet and Github tokens',()=>{
