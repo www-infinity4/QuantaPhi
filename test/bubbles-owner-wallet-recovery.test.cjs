@@ -76,6 +76,7 @@ test('Access issuer checks signed RSA JWT, owner, expiry and audience before wri
  const endpoint='https://unified-wallet.marvaseater.workers.dev/v1/wallet/issue-recovery';
  const request=(jwt='',method='GET',origin=endpoint)=>new Request(endpoint,{method,headers:{...(jwt?{'Cf-Access-Jwt-Assertion':jwt}:{}),...(method==='POST'?{Origin:new URL(origin).origin,'Sec-Fetch-Site':'same-origin'}:{})}});
  assert.equal((await issue(request(),env,{})).status,403);
+ assert.match(await (await issue(request(),env,{})).text(),/session was not forwarded/);
  const forged=new Request(endpoint,{headers:{'Cf-Access-Authenticated-User-Email':'owner@example.test'}});
  assert.equal((await issue(forged,env,{})).status,403);
  assert.equal((await issue(request(await sign({...standard,aud:['another-audience']})),env,{})).status,403);
@@ -85,6 +86,9 @@ test('Access issuer checks signed RSA JWT, owner, expiry and audience before wri
  const valid=await sign(standard);
  assert.equal((await issue(request(valid.slice(0,-1)+(valid.at(-1)==='A'?'B':'A')),env,{})).status,403);
  assert.equal((await issue(request(valid),env,{})).status,200);
+ // Access app cookie and assertion header have equal cryptographic proof.
+ const cookieRequest=new Request(endpoint,{headers:{Cookie:'CF_Authorization='+valid}});
+ assert.equal((await issue(cookieRequest,env,{})).status,200);
  assert.equal(inserts.length,0);
  assert.equal((await issue(request(valid,'POST','https://attacker.example'),env,{})).status,403);
  assert.equal(inserts.length,0);
