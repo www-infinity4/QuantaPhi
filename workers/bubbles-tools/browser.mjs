@@ -1,3 +1,4 @@
+import {browserAction} from './browser-cdp.mjs';
 // Verified-owner Cloudflare Browser Run adapter for the Bubbles workspace.
 // Browser URLs contain bearer credentials; never put them in logs, saved chat,
 // wallet records, repo commits or generic public pages.
@@ -52,14 +53,14 @@ export async function browserTool(request, env) {
   try {
     if(body.action==='start'){
       const url=browserTarget(body.url||'https://quantaphi.org/bubbles.html');
-      const session=await env.BROWSER.acquire({keepAlive:600000,targets:true});
+      const session=await env.BROWSER.acquire({keepAlive:1200000,targets:true});
       const sessionId=typeof session==='string'?session:session?.sessionId;
       if(!validSession(sessionId))throw Error('browser_session_not_created');
       try {
-        await env.BROWSER.devtools.newTarget(sessionId,url);
+        const opened=await env.BROWSER.devtools.newTarget(sessionId,url);
         const view=await env.BROWSER.getLiveView(sessionId,{mode:'full',expiresInMs:300000});
         if(!view?.devtoolsFrontendUrl)throw Error('live_view_unavailable');
-        return json(origin,{ok:true,sessionId,proof:await proof(token,sessionId),url:view.devtoolsFrontendUrl,
+        return json(origin,{ok:true,sessionId,targetId:opened?.id||null,proof:await proof(token,sessionId),url:view.devtoolsFrontendUrl,
           status:'live',expiresInSeconds:300});
       } catch(error){await env.BROWSER.closeSession(sessionId).catch(()=>{});throw error;}
     }
@@ -69,14 +70,28 @@ export async function browserTool(request, env) {
       await env.BROWSER.closeSession(body.sessionId);
       return json(origin,{ok:true,status:'closed'});
     }
+    if(['navigate','read','click','type'].includes(body.action)){
+      const action=body.action;
+      const value=typeof body.value==='string'?body.value:'';
+      const field=typeof body.field==='string'?body.field:'';
+      const label=typeof body.label==='string'?body.label:'';
+      const targetId=typeof body.targetId==='string'?body.targetId:'';
+      const url=action==='navigate'?browserTarget(body.url):'';
+      // These are explicit deterministic actions, not unrestricted shell or JS.
+      const result=await browserAction(env,{sessionId:body.sessionId,action,
+       targetId,url,label,field,value});
+      return json(origin,{ok:Boolean(result.ok!==false),status:result.ok===false?'blocked':'verified',
+        action,result:result.ok===false?result:{...result,text:typeof result.text==='string'?result.text.slice(0,8500):undefined}});
+    }
     if(body.action==='tab'){
       const target=await env.BROWSER.devtools.newTarget(body.sessionId,browserTarget(body.url));
       if(!target?.id)throw Error('browser_tab_not_opened');
+      body.targetId=target.id;
     } else if(body.action!=='view')return json(origin,{ok:false,error:'unsupported_action'},400);
     const view=await env.BROWSER.getLiveView(body.sessionId,{mode:'full',expiresInMs:300000});
     if(!view?.devtoolsFrontendUrl)throw Error('live_view_unavailable');
     const tabs=await env.BROWSER.devtools.listTargets(body.sessionId);
-    return json(origin,{ok:true,sessionId:body.sessionId,status:'live',url:view.devtoolsFrontendUrl,
+    return json(origin,{ok:true,sessionId:body.sessionId,targetId:body.targetId||null,status:'live',url:view.devtoolsFrontendUrl,
       tabs:Array.isArray(tabs)?tabs.filter(t=>t.type==='page').map(t=>({title:clamp(t.title),url:clamp(t.url)})):[],
       expiresInSeconds:300});
   } catch(error) {
