@@ -32,6 +32,12 @@ final class VoiceCaptureCommands {
         q = q.replaceFirst("^(?:please\\s+)?", "");
         q = q.replaceFirst("^(?:(?:can|could|would|will) you\\s+(?:please\\s+)?|i (?:want|need|would like) (?:you )?to\\s+|i (?:want|need) (?:a |the )?|you (?:need|have) to\\s+)", "");
         q = q.replaceFirst("^(?:please\\s+)?", "");
+        // "Press the screen-record button" means invoke Bubbles' own recorder.
+        // This cannot press Android's protected MediaProjection permission dialog.
+        q = q.replaceAll("[-‐‑–—]", " ");
+        q = q.replaceAll("\\s+", " ").trim();
+        if (q.matches("^(?:press|tap|hit|click|push|select|use)\\s+(?:(?:the|my)\\s+)?(?:screen\\s+(?:record|recorder|recording)|record\\s+(?:screen|video))(?:(?:\\s+button|\\s+control|\\s+icon))?(?:\\s+now)?$"))
+            return new Command("screen_video", 0, 0);
         if (q.matches("^(?:pause|hold)(?: (?:the |my )?(?:screen |video )?recording)?(?: now)?$"))
             return new Command("screen_pause", 0, 0);
         if (q.matches("^(?:resume|unpause|continue)(?: (?:the |my )?(?:screen |video )?recording)?(?: now)?$"))
