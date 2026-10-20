@@ -511,6 +511,8 @@ if(chatGate){
   button.id='chatBubbles'+provider+'SignIn';button.type='button';button.disabled=true;
   card.append(title,state,button);chatGate.append(card);
  }
+ const backupState=create('small','ba-inline-backup-status','Your private GitHub backup starts after both sign-ins.');
+ backupState.id='chatBubblesBackupStatus';backupState.setAttribute('role','status');chatGate.append(backupState);
  const retry=create('button','ba-control','Check sign-ins again');
  retry.id='chatBubblesRetrySignInCheck';retry.type='button';
  chatGate.append(retry);
