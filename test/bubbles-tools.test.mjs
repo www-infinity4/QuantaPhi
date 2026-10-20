@@ -177,6 +177,24 @@ test('transient Bubbles model failure gets one lower-cost retry with original co
  assert.match((await resp.json()).output,/focused reproduction/);
 });
 
+test('when the primary neural model fails twice, Bubbles answers using supported GPT OSS 20B and labels it',async()=>{
+ const seen=[];
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Hello Bubbles'})});
+ const res=await worker.fetch(req,{AI:{run:async(model,options)=>{
+  seen.push(model);
+  if(model==='@cf/openai/gpt-oss-120b')throw Error('model unavailable');
+  assert.equal(model,'@cf/openai/gpt-oss-20b');
+  assert.equal(options.reasoning_effort,'low');
+  return {response:'Hello. I am using the available fallback model.'};
+ }}});
+ const body=await res.json();
+ assert.equal(res.status,200);
+ assert.deepEqual(seen,['@cf/openai/gpt-oss-120b','@cf/openai/gpt-oss-120b','@cf/openai/gpt-oss-20b']);
+ assert.equal(body.model,'@cf/openai/gpt-oss-20b');
+ assert.equal(body.receipt.status,'complete');
+ assert.match(body.output,/fallback model/);
+});
+
 test('internal planning and fabricated createTicket JSON never become Bubbles speech or a receipt',async()=>{
  const leaked=['We need to send a concise message indicating we are submitting the ticket, then invoke the tool.\nSubmitting a repair ticket to import Omni Code.\n{\n "name": "createTicket",\n "arguments": {"title": "Import Omni Code"}\n}',
   '{"name":"createTicket","arguments":{"title":"Repair Bubbles"}}',
