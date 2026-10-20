@@ -57,10 +57,10 @@ test('Bubbles uses owner-gated gateway and the native Chrome Live View extension
  assert.match(worker,/pathname==='\/v1\/browser'/);
  assert.match(wrangler,/\[browser\]\s*binding = "BROWSER"/);
  assert.match(bubble,/Cloud browser · Live Chrome/);
- assert.equal((bubble.match(/import\('\/bubbles-cloud-browser\.mjs\?v=20261020-chatgpt-bridge1'\)/g)||[]).length,2,
+ assert.equal((bubble.match(/import\('\/bubbles-cloud-browser\.mjs\?v=20261020-chatgpt-bridge2'\)/g)||[]).length,2,
   'Cloud Browser button and voice must share one module instance and Chrome session');
  assert.doesNotMatch(bubble,/20261019-live-chrome1/);
- assert.match(page,/bubbles-ai\.js\?v=20261020-chatgpt-bridge1/);
+ assert.match(page,/bubbles-ai\.js\?v=20261020-chatgpt-bridge2/);
  assert.match(extension,/live\.browser\.run/);
  assert.doesNotMatch(extension,/localStorage|persist.*token/i);
 });
