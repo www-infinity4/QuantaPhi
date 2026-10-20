@@ -20,6 +20,12 @@ public final class VoiceCaptureCommandsCheck {
         expect("stop", "capture_stop");
         expect("stop it", "capture_stop");
         expect("stop recording", "capture_stop");
+        expect("pause", "screen_pause");
+        expect("pause recording", "screen_pause");
+        expect("pause screen recording", "screen_pause");
+        expect("resume", "screen_resume");
+        expect("resume screen recording", "screen_resume");
+        expect("continue recording", "screen_resume");
         expect("is the recorder on", "capture_status");
         expect("are you recording", "capture_status");
         expect("did the recording save", "capture_status");
