@@ -21,7 +21,7 @@ export default {
  async fetch(request,env){
   const path=new URL(request.url).pathname;
   if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',
-   browserBound:!!env.BROWSER,ownerGate:!!env.BRAIN,consentBound:!!env.CONSENT},
+   browserBound:!!env.BROWSER,ownerGate:!!env.BRAIN,consentBound:!!env.CONSENT,chatgptBridgeBound:!!env.BRIDGE_DB},
    {headers:{'Cache-Control':'no-store'}});
   const origin=request.headers.get('Origin')||'';
   if(!origins.has(origin))return respond('https://quantaphi.org',{ok:false,error:'origin_not_allowed'},403);
