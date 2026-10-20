@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<title>Bubbles — o O o</title>
+<defs>
+<radialGradient id="shell" cx="32%" cy="24%" r="82%">
+<stop offset="0" stop-color="#ffffff"/><stop offset=".22" stop-color="#c8edff"/>
+<stop offset=".52" stop-color="#6cb0fb"/><stop offset=".78" stop-color="#8166dd"/>
+<stop offset="1" stop-color="#47227c"/>
+</radialGradient>
+<radialGradient id="core" cx="33%" cy="25%" r="80%">
+<stop offset="0" stop-color="#ffffff"/><stop offset=".26" stop-color="#c5f7ff"/>
+<stop offset=".53" stop-color="#8dd8f0"/><stop offset=".76" stop-color="#6c89dc"/>
+<stop offset="1" stop-color="#322b81"/>
+</radialGradient>
+<linearGradient id="gleam" x1="0" y1="0" x2="1" y2="1">
+<stop stop-color="#fff" stop-opacity=".98"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect width="512" height="512" rx="115" fill="#19132c"/>
+<g stroke="#ecf9ff" stroke-opacity=".85" stroke-width="8">
+<circle cx="103" cy="273" r="62" fill="url(#shell)"/>
+<circle cx="256" cy="245" r="101" fill="url(#core)" stroke-width="11"/>
+<circle cx="409" cy="273" r="62" fill="url(#shell)"/>
+</g>
+<g fill="none" stroke="url(#gleam)" stroke-linecap="round">
+<path d="M67 257 A39 39 0 0 1 109 230" stroke-width="12"/>
+<path d="M193 222 A65 65 0 0 1 268 173" stroke-width="20"/>
+<path d="M373 259 A37 37 0 0 1 416 234" stroke-width="11"/>
+</g>
+</svg>
