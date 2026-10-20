@@ -79,6 +79,41 @@ export function weatherPlace(message,location){
  return '';
 }
 
+// A comparison is an explicit set of places, never one invented combined city.
+// At most four verified Open-Meteo lookups, with the same bounds as single weather.
+export function weatherLocations(message){
+ const q=trim(message,550);
+ const match=q.match(/\b(?:weather|forecast|temperatures?)\b[\s\S]*?\b(?:in|for|at|near)\s+(.+)$/i);
+ if(!match)return [];
+ const raw=match[1].replace(/[?!.\s]+$/g,'')
+  .replace(/\s+(?:right now|today|tomorrow|currently|this evening|this morning)\b.*$/i,'').trim();
+ let parts=raw.split(/\s*;\s*|\s*,?\s+\band\s+/i).map(s=>s.trim()).filter(Boolean);
+ // Also recognize explicit "City, State, City, State" pairs.
+ if(parts.length===1){
+  const names=raw.split(/\s*,\s*/).map(s=>s.trim()).filter(Boolean);
+  if(names.length>=4&&names.length%2===0)
+   parts=Array.from({length:names.length/2},(_,i)=>names[i*2]+', '+names[i*2+1]);
+ }
+ if(parts.length<2)return [];
+ const valid=parts.every(p=>/^[a-z][a-z .'-]*(?:,\s*[a-z][a-z .'-]*)?$/i.test(p)&&p.length<=110&&p.length>=3);
+ if(!valid)return [];
+ return [...new Set(parts.map(p=>p.replace(/\s+/g,' ')))];
+}
+
+export async function compareWeather(message,fetcher=fetch){
+ const locations=weatherLocations(message);
+ if(locations.length<2)return null;
+ if(locations.length>4)return {ok:false,needsLocation:true,output:'I can compare up to four named locations at a time. Please choose four or fewer.',locations:[]};
+ const observations=await Promise.all(locations.map(async location=>{
+  const result=await currentWeather(message,location,fetcher);
+  return {requested:location,...result};
+ }));
+ const count=observations.filter(x=>x.ok).length;
+ return {ok:count===observations.length,partial:count>0&&count<observations.length,
+  locations:observations,provider:'Open-Meteo',
+  output:observations.map(x=>(x.ok?'✓ ':'Could not verify ')+x.requested+': '+x.output).join('\n\n')};
+}
+
 const descriptions={
  0:'clear',1:'mostly clear',2:'partly cloudy',3:'overcast',45:'foggy',48:'freezing fog',
  51:'light drizzle',53:'drizzle',55:'heavy drizzle',56:'freezing drizzle',57:'heavy freezing drizzle',
