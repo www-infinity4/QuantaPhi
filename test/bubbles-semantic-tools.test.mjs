@@ -58,7 +58,7 @@ test('ambiguous subjects and ungrounded model parameters never execute tools',as
   ['What frequency is it?',call('resonance_calculate',{l:10,lUnit:'uH',c:22,cUnit:'pF'}),'resonance_values_not_grounded'],
   ['Find the frequency with 10 microhenries.',call('resonance_calculate',{l:10,lUnit:'uH',c:22,cUnit:'pF'}),'resonance_values_not_grounded'],
   ['For 10 microhenries and 22 picofarads, calculate it.',call('resonance_calculate',{l:20,lUnit:'uH',c:22,cUnit:'pF'}),'resonance_parameters_mismatch'],
-  ['What is the weather over there?',call('weather_current',{location:'Omaha, Nebraska'}),'weather_location_not_grounded'],
+  ['Is it chilly over there?',call('weather_current',{location:'Omaha, Nebraska'}),'weather_location_not_grounded'],
   ['Find that thing for me.',call('web_search',{query:'Omaha restaurants'}),'search_subject_not_grounded'],
   ['Delete my repository.',call('github.delete_repository',{repo:'QuantaPhi'}),'unresolved_or_invalid_tool_request']
  ];
