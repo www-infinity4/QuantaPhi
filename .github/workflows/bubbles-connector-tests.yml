@@ -5,6 +5,8 @@ on:
     paths:
       - 'workers/bubbles-connections/**'
       - 'bubbles-connections.mjs'
+      - 'bubbles-signin-gate.mjs'
+      - 'test/bubbles-signin-gate.test.mjs'
       - 'index.html'
       - 'workers/quantaphi-site/worker.js'
       - 'test/bubbles-home-account-link.test.mjs'
@@ -16,6 +18,8 @@ on:
     paths:
       - 'workers/bubbles-connections/**'
       - 'bubbles-connections.mjs'
+      - 'bubbles-signin-gate.mjs'
+      - 'test/bubbles-signin-gate.test.mjs'
       - 'index.html'
       - 'workers/quantaphi-site/worker.js'
       - 'test/bubbles-home-account-link.test.mjs'
@@ -42,6 +46,7 @@ jobs:
             test/bubbles-consent.test.mjs \
             test/bubbles-connections-router.test.mjs \
             test/bubbles-connections-ui.test.mjs \
+            test/bubbles-signin-gate.test.mjs \
             test/bubbles-connector-pairing.test.mjs \
             test/bubbles-home-account-link.test.mjs \
             test/starcoin-github-backup.test.mjs
