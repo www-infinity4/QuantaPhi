@@ -69,7 +69,7 @@ test('UI has a distinct five-day ChatGPT control; browser worker enforces owner 
  assert.match(consent,/owner-chatgpt-bridge-consent/);
  assert.match(ui,/Allow ChatGPT to use Bubbles · 5 days/);
  assert.match(ui,/Revoke ChatGPT access/);
- assert.match(ui,/chatgpt\/process/);
+ assert.match(ui,/bridgeCall\\('process'/);
  assert.match(ai,/bubbles:chatgpt-bridge/);
  assert.doesNotMatch(ui,/localStorage\.setItem\(.*Authorization/);
 });
