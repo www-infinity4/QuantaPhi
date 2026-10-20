@@ -963,7 +963,7 @@ const brainNotices=[];
 let brainNoticeIndex=0,brainInboxInitialized=false;
 let brainNoticeText=null,brainNoticeCount=null,brainNoticePrevious=null,brainNoticeNext=null,brainInboxState=null;
 if(brainInbox){
- brainInbox.append(create('summary','','Robot Brain notifications'));
+ brainInbox.append(create('summary','','Work details'));
  const head=create('div','ba-brain-inbox-head');
  brainInboxState=create('span','ba-brain-state','Brain connection pending');
  brainInboxState.dataset.connection='pending';
@@ -978,7 +978,7 @@ if(brainInbox){
  brainNoticeText.setAttribute('role','status');
  row.append(brainNoticePrevious,brainNoticeText,brainNoticeNext);
  brainInbox.append(head,row);
- chatScroll.insertBefore(brainInbox,conversation);
+ tools.append(brainInbox);
  brainNoticePrevious.addEventListener('click',()=>{brainNoticeIndex=Math.min(brainNotices.length-1,brainNoticeIndex+1);renderBrainInbox()});
  brainNoticeNext.addEventListener('click',()=>{brainNoticeIndex=Math.max(0,brainNoticeIndex-1);renderBrainInbox()});
 }
@@ -1356,7 +1356,7 @@ longMemory?.onUpdate((events,error)=>{
  if(error){memoryHint.textContent='Private archive sync paused: '+error+'. Owner Brain memory is unchanged.';return}
  if(Array.isArray(events)&&events.length){
   const ids=new Set(messages.map(m=>m.id));
-  for(const m of events)if(['user','assistant'].includes(m.role)&&!ids.has(m.id)){messages.push(m);ids.add(m.id);}
+  for(const m of events)if(m.sessionId===activeThread&&['user','assistant'].includes(m.role)&&!ids.has(m.id)){messages.push(m);ids.add(m.id);}
   messages.sort((a,b)=>a.at-b.at||String(a.id).localeCompare(String(b.id)));
   messages=messages.slice(-400);
   conversation.replaceChildren();for(const m of messages)display(m.text,m.role==='user'?'you':'ai');
@@ -1367,7 +1367,7 @@ if(keepChat&&longMemory){
   await longMemory.appendAll(messages);
   const recent=await longMemory.recent(100);
   const seen=new Set(messages.map(m=>m.id));
-  for(const m of recent)if(['user','assistant'].includes(m.role)&&!seen.has(m.id)){messages.push(m);seen.add(m.id);}
+  for(const m of recent)if(m.sessionId===activeThread&&['user','assistant'].includes(m.role)&&!seen.has(m.id)){messages.push(m);seen.add(m.id);}
   messages.sort((a,b)=>a.at-b.at||String(a.id).localeCompare(String(b.id)));
   messages=messages.slice(-400);
   conversation.replaceChildren();for(const m of messages)display(m.text,m.role==='user'?'you':'ai');
@@ -1412,11 +1412,8 @@ cloudToggle.addEventListener('change',async()=>{
  }catch(error){cloudChat=false;cloudToggle.checked=false;save(CLOUD_MEMORY_KEY,false);
   memoryHint.textContent='Sync not connected: '+String(error.message||error)}
 });
-clearChat.addEventListener('click',()=>{
- messages=[];conversation.replaceChildren();greeted=false;
- try{localStorage.removeItem(HISTORY)}catch{}
- status.textContent='View cleared. Your owner conversation remains archived.';
-});
+clearChat.textContent='Start new chat';
+clearChat.addEventListener('click',()=>void startConversation());
 cloudDelete.addEventListener('click',async()=>{
  if(!cloudChat||!confirm('Erase the extra Bubbles transcript stored under your verified wallet? This will not erase the separate Robot Brain job records.'))return;
  try{await longMemory.clear({cloudToo:true});cloudChat=false;cloudToggle.checked=false;cloudDelete.hidden=true;
@@ -2103,7 +2100,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     drainVoiceTurns()
   }
 }
-if(!embedded)chatScroll.insertBefore(repositoryPicker,conversation);
+if(!embedded)tools.append(repositoryPicker);
 else composer.before(repositoryPicker);
 const backToChat=()=>{repositoryPicker.open=false;input.focus();};
 const repositoryBack=create('button','ba-control ba-back-to-chat','Back to chat');repositoryBack.type='button';
@@ -2451,10 +2448,10 @@ async function pollBrainProgress(){
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
   const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
-  brainConnectionState('Connected · '+result.tickets.length+' tickets · '+(counts.working||0)+' marked working', 'connected');
+  brainConnectionState('Connected · Work status available in Options', 'connected');
   if(!brainInboxInitialized){
    brainInboxInitialized=true;
-   recordBrainNotice('Robot Brain connected. '+result.tickets.length+' saved tickets: '+(counts.working||0)+' marked working, '+(counts.blocked||0)+' blocked, '+(counts.complete||0)+' complete. Working is a label; a commit, test and deployment receipt are separate proof.');
+   recordBrainNotice('Work history is connected. Detailed receipts are available here; waiting and running are not the same as finished.');
   }
   showOwnerApprovalRequests(result.tickets);
   progressTracker.setScope?.(result.notificationScope);
