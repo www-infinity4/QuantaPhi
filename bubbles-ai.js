@@ -892,6 +892,9 @@ if(nativeOverlay){
  if(chatGate)chatScroll.insertBefore(chatGate,ownerMode);
  // Keep options accessible above long transcripts, within the same scroll surface.
  chatScroll.insertBefore(tools,conversation);
+ // The one-time connection code lives under Options, not in the phone-size
+ // message composer. Keep its existing event handlers and owner protections.
+ tools.append(connectorCodeButton,connectorCodeOutput,connectorCodeStatus);
  composer.prepend(status);
  header.hidden=true;
  memoryHint.hidden=true;
