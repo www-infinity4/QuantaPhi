@@ -1737,6 +1737,24 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   status.textContent='Screen request passed to Android; waiting for its observation or action result.';
   return;
  }
+ // Explicit memory instruction authorizes a categorized note. Passive audio
+ // and imported chats never become trusted synapses automatically.
+ const rememberMatch=/^(?:(?:please|hey bubbles|bubbles)[,\s:]+)*(?:remember(?: that| this)?|save (?:this |a )?(?:memory|note))[\s:]+(.{12,1600})$/i.exec(spoken.trim());
+ if(rememberMatch){
+  const noteText=rememberMatch[1].trim(),radio=/^(?:in|under) (?:the )?radio[ -]clubhouse(?: repository| repo)?[:\s]+(.+)$/i.exec(noteText);
+  const textToSave=radio?radio[1].trim():noteText;
+  let answer;
+  try{
+   if(!longMemory?.cloudConnected)throw Error('Private synced memory is not connected in this Bubbles session.');
+   const saved=await longMemory.remember(textToSave,radio?{repository:'www-infinity4/Radio-Clubhouse'}:{});
+   answer='Saved to private Bubbles memory under '+saved.topic.replaceAll('_',' ')+'. The note will be available for contextual recall on your connected devices.';
+  }catch(error){answer='That long-term memory was not saved: '+String(error.message||error).slice(0,145)+' Enable private memory sync in Bubbles settings.';}
+  display(spoken,'you');display(answer,'ai');input.value='';
+  messages.push({role:'user',text:spoken},{role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
+  status.textContent=answer;
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;else if(fromVoice&&config.voice&&!nativeOverlay)speakText(answer);
+  nativeSpeechPending=false;return;
+ }
  const nativeDirective=spoken.toLowerCase()
   .replace(/^(?:(?:hey|hi|hello|okay|ok)\s+)?(?:bubbles(?:\s+ai)?)[\s,:]+/,'')
   .replace(/^please\s+/,'')
