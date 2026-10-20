@@ -57,10 +57,10 @@ export async function browserTool(request, env) {
       const sessionId=typeof session==='string'?session:session?.sessionId;
       if(!validSession(sessionId))throw Error('browser_session_not_created');
       try {
-        await env.BROWSER.devtools.newTarget(sessionId,url);
+        const opened=await env.BROWSER.devtools.newTarget(sessionId,url);
         const view=await env.BROWSER.getLiveView(sessionId,{mode:'full',expiresInMs:300000});
         if(!view?.devtoolsFrontendUrl)throw Error('live_view_unavailable');
-        return json(origin,{ok:true,sessionId,proof:await proof(token,sessionId),url:view.devtoolsFrontendUrl,
+        return json(origin,{ok:true,sessionId,targetId:opened?.id||null,proof:await proof(token,sessionId),url:view.devtoolsFrontendUrl,
           status:'live',expiresInSeconds:300});
       } catch(error){await env.BROWSER.closeSession(sessionId).catch(()=>{});throw error;}
     }
@@ -86,11 +86,12 @@ export async function browserTool(request, env) {
     if(body.action==='tab'){
       const target=await env.BROWSER.devtools.newTarget(body.sessionId,browserTarget(body.url));
       if(!target?.id)throw Error('browser_tab_not_opened');
+      body.targetId=target.id;
     } else if(body.action!=='view')return json(origin,{ok:false,error:'unsupported_action'},400);
     const view=await env.BROWSER.getLiveView(body.sessionId,{mode:'full',expiresInMs:300000});
     if(!view?.devtoolsFrontendUrl)throw Error('live_view_unavailable');
     const tabs=await env.BROWSER.devtools.listTargets(body.sessionId);
-    return json(origin,{ok:true,sessionId:body.sessionId,status:'live',url:view.devtoolsFrontendUrl,
+    return json(origin,{ok:true,sessionId:body.sessionId,targetId:body.targetId||null,status:'live',url:view.devtoolsFrontendUrl,
       tabs:Array.isArray(tabs)?tabs.filter(t=>t.type==='page').map(t=>({title:clamp(t.title),url:clamp(t.url)})):[],
       expiresInSeconds:300});
   } catch(error) {
