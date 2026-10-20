@@ -56,6 +56,8 @@ public final class MainActivity extends Activity {
         TextView copy = new TextView(this);
         copy.setText("Use Recommended setup, approve Android permissions, then say Bubbles to open the assistant. "
             + "Screen access stays under your Android control. Say 'Bubbles, record' to request screen-recording approval. "
+            + "Tap the Bubbles orb for 30 seconds of natural conversation, or say Bubbles before commands at any time. " 
+            + "While recording, say Bubbles pause recording, resume recording or stop recording. " 
             + "Use Chrome to install the same Bubbles website as a home-screen app. Say 'open Bubbles in Chrome' or "
             + "'tap Search in Chrome' for visible browser controls. Chrome logins are not imported automatically into the native overlay.");
         copy.setTextColor(Color.rgb(101, 83, 111));
