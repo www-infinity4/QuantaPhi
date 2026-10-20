@@ -1932,6 +1932,42 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const continued=!embedded?brainTools?.resolveFollowupRequest?.(spoken,messages):'';
  const contextualRepair=!embedded?brainTools?.resolveRepairRequest?.(spoken,messages):'';
  const request=continued||contextualRepair||spoken;
+ // A named public README/source request uses the actual GitHub file reader.
+ // A model summary alone cannot prove that a file was opened. Keep owner-only
+ // GitHub edits on their separate authenticated action route.
+ const sourceReadRequested=/\b(?:read|show|open|summari[sz]e|explain|inspect|review|fetch)\b.{0,150}\b(?:readme(?:\.md)?|(?:docs\/)?[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json))\b/i.test(request)
+   && (/\b[a-z0-9_.-]+\/[a-z0-9_.-]+\b/i.test(request)||/\bquantaphi\b/i.test(request));
+ if(!embedded&&sourceReadRequested){
+  busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+  status.textContent='Reading the requested public GitHub file…';
+  let answer='',readVerified=false;
+  try{
+   const resp=await bubblesFetch(AI,{method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({request,requestId:crypto.randomUUID()})},30000);
+   const result=await resp.json();
+   if(!resp.ok||result.receipt?.tool!=='github.read_file'||result.receipt?.status!=='complete'||
+    result.receipt?.sourceReadVerified!==true||!result.sourceUrl)
+    throw Error(result.receipt?.reason||result.error||'public_source_not_verified');
+   const content=String(result.output||'');
+   if(!content.trim())throw Error('file_reader_empty');
+   answer=content.slice(0,5600)+(content.length>5600?'\n[Long file excerpt shortened for chat; open the source for the full text.]':'')+
+    '\nSource: '+result.sourceUrl;
+   readVerified=true;
+   status.textContent='Bubbles · github.read_file · verified';
+  }catch(error){
+   answer='I could not verify that GitHub returned this file: '+String(error.message||error).slice(0,150)+'. No source content or repository change is being claimed.';
+   status.textContent='Bubbles · GitHub file read unverified';
+  }
+  display(answer,'ai');
+  messages.push({role:'user',text:spoken},{role:'assistant',text:answer});
+  messages=messages.slice(-400);persistChat();
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;
+  else if(fromVoice&&config.voice&&!nativeOverlay)speakText(answer);
+  nativeSpeechPending=false;busy=false;send.disabled=false;
+  if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+  drainVoiceTurns();return;
+ }
  // Explicit code discovery is a read-only tool call, never a build ticket.
  // "All of GitHub" searches public indexed code; "my repos" is owner scoped.
  if(!embedded&&/\bgithub\b/i.test(request)){
