@@ -105,7 +105,7 @@ export async function compareWeather(message,fetcher=fetch){
  if(locations.length<2)return null;
  if(locations.length>4)return {ok:false,needsLocation:true,output:'I can compare up to four named locations at a time. Please choose four or fewer.',locations:[]};
  const observations=await Promise.all(locations.map(async location=>{
-  const result=await currentWeather(message,location,fetcher);
+  const result=await currentWeather(/\btomorrow\b/i.test(message)?'weather tomorrow':'weather now',location,fetcher);
   return {requested:location,...result};
  }));
  const count=observations.filter(x=>x.ok).length;
