@@ -118,6 +118,35 @@ export function githubAdapter(config, request = githubRequest) {
         status:installed?'ready_to_back_up':'needs_github_app_repository_installation',
         private:true};
     },
+    // Create only for the verified GitHub subject attached to this wallet.
+    // The user has already approved the backup connection in Bubbles setup.
+    // Colliding names are never adopted or overwritten implicitly.
+    async createOwnedPrivateLedgerRepository({accessToken,repositoryName,expectedSubject}) {
+      if(!/^infinity-wallet-backup-[a-f0-9]{16}$/.test(repositoryName||'')||
+        !/^[1-9]\d{0,19}$/.test(String(expectedSubject||'')))throw Error('backup_invalid_request');
+      const headers={Authorization:'Bearer '+accessToken,Accept:'application/vnd.github+json',
+        'Content-Type':'application/json','User-Agent':'Bubbles-User-Connections',
+        'X-GitHub-Api-Version':'2022-11-28'};
+      const me=await jsonResponse(await request('https://api.github.com/user',{
+        headers,redirect:'error',signal:AbortSignal.timeout(15000)}),'github_identity');
+      if(!Number.isSafeInteger(me.id)||String(me.id)!==String(expectedSubject)||
+        !/^[A-Za-z0-9-]{1,39}$/.test(me.login||''))throw Error('github_account_identity_mismatch');
+      const response=await request('https://api.github.com/user/repos',{
+        method:'POST',headers,redirect:'error',signal:AbortSignal.timeout(15000),
+        body:JSON.stringify({name:repositoryName,private:true,auto_init:true,
+          description:'Private Bubbles wallet evidence; Cloudflare is authoritative',
+          has_issues:false,has_wiki:false,has_projects:false})});
+      if(response.status===403)throw Error('github_repository_creation_permission_required');
+      if(response.status===422)throw Error('github_repository_name_collision_review_required');
+      if(response.status!==201)throw Error('github_repository_creation_unavailable');
+      const created=await response.json();
+      const fullName=me.login+'/'+repositoryName;
+      if(created.private!==true||created.full_name!==fullName||
+        created.owner?.id!==me.id||created.name!==repositoryName||
+        !Number.isSafeInteger(created.id)||created.id<=0)
+        throw Error('github_repository_creation_unverified');
+      return {repository:fullName,repositoryId:created.id,status:'created_private',private:true};
+    },
     async repositories({accessToken}) {
       const headers={Authorization:'Bearer '+accessToken,Accept:'application/vnd.github+json','User-Agent':'Bubbles-User-Connections','X-GitHub-Api-Version':'2022-11-28'};
       const read=async path=>jsonResponse(await request('https://api.github.com'+path,{headers,redirect:'error',signal:AbortSignal.timeout(15000)}),'github_repositories');
