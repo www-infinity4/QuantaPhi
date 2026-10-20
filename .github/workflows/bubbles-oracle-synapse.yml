@@ -5,6 +5,11 @@ on:
       - 'workers/infinity-brain-clock/oracle-synapse-memory.mjs'
       - 'workers/infinity-brain-clock/conversation-memory.mjs'
       - 'bubbles-ai.js'
+      - 'bubbles-voice-gate.js'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/BubblesService.java'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SpeechAudienceGate.java'
+      - 'test/java/org/quantaphi/bubbles/SpeechAudienceGateTest.java'
+      - 'test/bubbles-audience-filter.test.cjs'
       - 'test/bubbles-oracle-synapse-memory.test.mjs'
       - '.github/workflows/bubbles-oracle-synapse.yml'
   push:
@@ -24,9 +29,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
       - name: Syntax and scoped owner-memory tests
         run: |
           node --check workers/infinity-brain-clock/oracle-synapse-memory.mjs
           node --check workers/infinity-brain-clock/conversation-memory.mjs
           node --check bubbles-ai.js
-          node --test test/bubbles-oracle-synapse-memory.test.mjs test/bubbles-conversation-memory.test.mjs
+          node --check bubbles-voice-gate.js
+          node --test test/bubbles-oracle-synapse-memory.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-audience-filter.test.cjs
+      - name: Compile and run Android audience gate JVM tests
+        run: |
+          mkdir -p /tmp/bubbles-audience-tests
+          javac -d /tmp/bubbles-audience-tests android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/SpeechAudienceGate.java test/java/org/quantaphi/bubbles/SpeechAudienceGateTest.java
+          java -cp /tmp/bubbles-audience-tests org.quantaphi.bubbles.SpeechAudienceGateTest
