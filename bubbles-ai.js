@@ -1992,6 +1992,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     ?'Bubbles direct GitHub is not connected to a server-side write credential. No action occurred; connect the owner GitHub account with appropriate repository permissions.'
     :(result.error||result.summary||'');
    recordBrainNotice('GitHub verified state: '+(result.status||'unconfirmed')+'. '+githubDetail);
+   if(Array.isArray(result.runs)){
+    recordBrainNotice('Bubbles Coder Linux runs: '+result.runs.slice(0,5).map(run=>String(run.status||'unconfirmed')).join(', ')+'. Only a completed successful run confirms that the script ran.');
+   }
+   if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted'){
+    recordBrainNotice('GitHub accepted the workflow dispatch. This is not an execution result.');
+   }
    workEvidence=(await humanReplies()).githubReply(result);
   }catch(error){workEvidence='Direct GitHub did not confirm completion: '+String(error.message||error).slice(0,180);}
  }
