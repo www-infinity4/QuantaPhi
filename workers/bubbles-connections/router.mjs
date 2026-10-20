@@ -87,7 +87,7 @@ export async function handleConnections(request,env,resolveService) {
       const available=id=>id==='github'
         ? Boolean(env.GITHUB_CLIENT_ID&&env.GITHUB_CLIENT_SECRET)
         : Boolean(env.CLOUDFLARE_CLIENT_ID&&env.CLOUDFLARE_CLIENT_SECRET);
-      const required={github:[],cloudflare:['account.read','projects.build','ledger.read']};
+      const required={github:[],cloudflare:['account.read','projects.build','ledger.read','projects.full']};
       const state=id=>{
         const configured=available(id);
         const candidates=accounts.filter(x=>x.provider===id);
