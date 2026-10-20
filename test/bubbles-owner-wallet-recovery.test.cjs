@@ -84,7 +84,9 @@ test('Access issuer checks signed RSA JWT, owner, expiry and audience before wri
  assert.equal((await issue(request(await sign({...standard,exp:now-10})),env,{})).status,403);
  assert.equal((await issue(request(await sign({...standard,email:'other@example.test'})),env,{})).status,403);
  const valid=await sign(standard);
- assert.equal((await issue(request(valid.slice(0,-1)+(valid.at(-1)==='A'?'B':'A')),env,{})).status,403);
+ // Mutate a signed byte, not the unused low-order bits in the last base64url character.
+ const signed=valid.split('.');signed[2]=(signed[2][0]==='A'?'B':'A')+signed[2].slice(1);
+ assert.equal((await issue(request(signed.join('.')),env,{})).status,403);
  assert.equal((await issue(request(valid),env,{})).status,200);
  // Access app cookie and assertion header have equal cryptographic proof.
  const cookieRequest=new Request(endpoint,{headers:{Cookie:'CF_Authorization='+valid}});
