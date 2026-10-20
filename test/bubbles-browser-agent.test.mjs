@@ -4,19 +4,19 @@ import fs from 'node:fs';
 import {browserSpeechIntent} from '../bubbles-cloud-browser.mjs';
 import {browserAction} from '../workers/bubbles-tools/browser-cdp.mjs';
 
-test('Bubbles routes actual spoken Chrome research commands',()=>{
- assert.deepEqual(browserSpeechIntent('open StarQuest in the cloud browser'),{action:'navigate',url:'https://quantaphi.org/starquest/'});
- assert.deepEqual(browserSpeechIntent('open Cloudflare in the cloud browser'),{action:'navigate',url:'https://dash.cloudflare.com/'});
- assert.deepEqual(browserSpeechIntent('plug cloud browser into Bubbles'),{action:'navigate',url:'https://quantaphi.org/bubbles.html'});
- assert.deepEqual(browserSpeechIntent('connect the cloud browser'),{action:'navigate',url:'https://quantaphi.org/bubbles.html'});
- assert.deepEqual(browserSpeechIntent('start cloud browser'),{action:'navigate',url:'https://quantaphi.org/bubbles.html'});
- assert.deepEqual(browserSpeechIntent('read the page in the cloud browser'),{action:'read'});
- assert.deepEqual(browserSpeechIntent('click "Watch" in the cloud browser'),{action:'click',label:'Watch'});
- assert.deepEqual(browserSpeechIntent('type "Rocket" into Search in the cloud browser'),{action:'type',value:'Rocket',field:'Search'});
- assert.deepEqual(browserSpeechIntent('open Gemini'),{action:'navigate',url:'https://gemini.google.com/'});
- assert.deepEqual(browserSpeechIntent('open Cloudflare'),{action:'navigate',url:'https://dash.cloudflare.com/'});
- assert.deepEqual(browserSpeechIntent('search for Android neural speech in the cloud browser'),{action:'navigate',url:'https://www.google.com/search?q=Android%20neural%20speech'});
- assert.deepEqual(browserSpeechIntent('use the cloud browser to search for weather in Albia Iowa'),{action:'navigate',url:'https://www.google.com/search?q=weather%20in%20Albia%20Iowa'});
+test('Bubbles interprets ordinary browser requests without a button or memorized script',()=>{
+ assert.deepEqual(browserSpeechIntent('open StarQuest in the cloud browser'),{action:'navigate',url:'https://quantaphi.org/starquest/',show:false});
+ assert.deepEqual(browserSpeechIntent('open Cloudflare in the cloud browser'),{action:'navigate',url:'https://dash.cloudflare.com/',show:false});
+ assert.deepEqual(browserSpeechIntent('open Gemini'),{action:'navigate',url:'https://gemini.google.com/',show:true});
+ assert.deepEqual(browserSpeechIntent('open Cloudflare'),{action:'navigate',url:'https://dash.cloudflare.com/',show:true});
+ assert.deepEqual(browserSpeechIntent('connect the cloud browser'),{action:'navigate',url:'https://quantaphi.org/bubbles.html',show:false});
+ assert.deepEqual(browserSpeechIntent('start cloud browser'),{action:'navigate',url:'https://quantaphi.org/bubbles.html',show:false});
+ assert.deepEqual(browserSpeechIntent('show me the cloud browser'),{action:'show',show:true});
+ assert.deepEqual(browserSpeechIntent('read the page in the cloud browser'),{action:'read',show:false});
+ assert.deepEqual(browserSpeechIntent('click "Watch" in the cloud browser'),{action:'click',label:'Watch',show:false});
+ assert.deepEqual(browserSpeechIntent('type "Rocket" into Search in the cloud browser'),{action:'type',value:'Rocket',field:'Search',show:false});
+ assert.deepEqual(browserSpeechIntent('search for Android neural speech in the cloud browser'),{action:'research',url:'https://www.google.com/search?q=Android%20neural%20speech',show:false});
+ assert.deepEqual(browserSpeechIntent('show me cloud browser as you search chrome for weather results'),{action:'research',url:'https://www.google.com/search?q=weather%20results',show:true});
  assert.equal(browserSpeechIntent('Why is Gemini useful?'),null);
  assert.equal(browserSpeechIntent('read my Github repository'),null);
 });
