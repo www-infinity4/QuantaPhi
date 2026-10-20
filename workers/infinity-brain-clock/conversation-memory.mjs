@@ -76,7 +76,7 @@ export async function conversationMemory(db,owner,body){
  }
  if(body.mode==='sessions-create'||body.mode==='sessions-rename'){
   if(!sessionId)throw Error('session_required');
-  const title=typeof body.title==='string'?body.title.trim().replace(/\\s+/g,' ').slice(0,90):'New conversation';
+  const title=typeof body.title==='string'?body.title.trim().replace(/\s+/g,' ').slice(0,90):'New conversation';
   if(body.mode==='sessions-create'){
    await db.prepare('INSERT OR IGNORE INTO bubbles_sessions(owner,session_id,title,created,updated) VALUES (?,?,?,?,?)').bind(owner,sessionId,title||'New conversation',now,now).run();
   }else{
@@ -97,7 +97,7 @@ export async function conversationMemory(db,owner,body){
     statements.push(db.prepare('INSERT OR IGNORE INTO bubbles_session_messages(owner,session_id,message_id,at) VALUES (?,?,?,?)').bind(owner,target,m.id,m.at));
     statements.push(db.prepare('UPDATE bubbles_sessions SET updated=MAX(updated,?) WHERE owner=? AND session_id=?').bind(m.at,owner,target));
     if(m.role==='user'){
-     const firstTitle=m.text.trim().replace(/\\s+/g,' ').slice(0,65);
+     const firstTitle=m.text.trim().replace(/\s+/g,' ').slice(0,65);
      statements.push(db.prepare("UPDATE bubbles_sessions SET title=? WHERE owner=? AND session_id=? AND title='New conversation'").bind(firstTitle||'New conversation',owner,target));
     }
    }
