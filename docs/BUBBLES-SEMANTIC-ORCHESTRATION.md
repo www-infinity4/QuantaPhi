@@ -73,6 +73,17 @@ an inferred step was executed.
 | Knowledge and memory | QuantaPhi search, owner conversation, `brain-rag-memory.mjs` | Shared scoped semantic frame with evidence and canonical subject |
 | Robot execution | `workers/infinity-brain-clock/` | Execute approved plans and verify actual downstream receipts |
 
+## Existing owner GitHub planner is not being replaced
+
+The 19 October source upgrade documented in
+`docs/bubbles-open-source-capabilities-2026-10-19.md` already gives the
+**separate authenticated direct-GitHub executor** structured model function
+calls and an eight-step bound, including repository reads, reviewed commits,
+PR creation and workflow receipts. It is not yet one conversational planner
+shared with this public Bubbles gateway, QuantaPhi weighted context and the
+browser/phone tools. Reuse that implementation rather than creating another
+repository writer or disabling its owner policy.
+
 ## Current phase 1 code in this branch
 
 The existing GPT-OSS conversational turn now advertises the **four existing
@@ -82,7 +93,7 @@ schemas are applied before any call. If it selects a tool, a second tool-free
 model pass can explain the verified result. Ordinary conversation is still
 one model call. No permission escalation or new external tool is introduced.
 
-This phase does **not** enable multi-step execution, semantic cross-repository
+This phase does **not** introduce multi-step execution into the public Bubbles gateway, semantic cross-repository
 writes, production deployment, new provider entitlements, owner approval
 or Android permissions. Those require the stages below.
 
