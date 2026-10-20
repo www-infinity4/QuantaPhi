@@ -243,7 +243,7 @@ if(keepChat&&legacy?.length&&!data(THREAD_INDEX+':migrated',false)){
  }
 }
 let lastTab='';try{lastTab=sessionStorage.getItem(TAB_THREAD)||''}catch{}
-const reloaded=performance.getEntriesByType?.('navigation')?.[0]?.type==='reload';
+const reloaded=typeof performance!=='undefined'&&performance.getEntriesByType?.('navigation')?.[0]?.type==='reload';
 let activeThread=reloaded&&threadIndex.some(t=>t.id===lastTab)?lastTab:'chat_'+crypto.randomUUID().replaceAll('-','');
 try{sessionStorage.setItem(TAB_THREAD,activeThread)}catch{}
 if(!threadIndex.some(t=>t.id===activeThread)){
