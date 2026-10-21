@@ -35,3 +35,28 @@ test('First-party site and studio both use new verified owner command assets',()
   assert.match(page,/bubbles-ai\.css\?v=2026\d{4}-[A-Za-z0-9-]+/);
  }
 });
+
+test('An ordinary owner request to add a copy button uses a real code route',()=>{
+ const pattern=bubbles.match(/const codeTask=(\/.*?\/i)\.test\(request\);/);
+ assert.ok(pattern,'direct code request matcher exists');
+ const matches=new Function('request','return '+pattern[1]+'.test(request);');
+ assert.equal(matches('Add copy button to owner approval'),true);
+ assert.equal(matches('Please add a copy button to Bubbles owner approval'),true);
+ assert.equal(matches('Tell me about copying paintings'),false);
+ assert.match(bubbles,/owner\[- \]approval/);
+ assert.match(bubbles,/const copy=create\('button','ba-owner-copy','Copy request'\)/);
+ assert.match(bubbles,/navigator\.clipboard\?\.writeText\(summary\)/);
+ assert.match(bubbles,/result\.textContent='Owner approval details copied\.'/);
+});
+test('Quant-AI selling preferences cannot hijack a normal owner chat',()=>{
+ const rule=bubbles.match(/const privateSellerRequest=(.*);/);
+ assert.ok(rule,'private seller-only request guard exists');
+ const isSeller=new Function('config','nativeOverlay','request','return '+rule[1]+';');
+ const enabled={privateContext:true};
+ assert.equal(isSeller(enabled,false,'Add copy button to owner approval'),false);
+ assert.equal(isSeller(enabled,false,'Fix Bubbles owner mode'),false);
+ assert.equal(isSeller(enabled,false,'Sell this old coin using my selling defaults'),true);
+ assert.equal(isSeller(enabled,true,'Sell this old coin'),false);
+ assert.match(bubbles,/else if\(privateSellerRequest\)/);
+ assert.doesNotMatch(bubbles,/else if\(config\.privateContext&&!nativeOverlay\)/);
+});
