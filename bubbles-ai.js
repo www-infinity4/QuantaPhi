@@ -16,7 +16,8 @@ const humanReplies=()=>({
  githubReply(result){
   if(result.error||!result.ok)return 'I could not confirm that GitHub finished the request. Nothing is being marked complete.';
   if(result.status==='dispatch_accepted')return 'GitHub accepted the request, but the work has not finished.';
-  if(result.status==='repository_created')return 'The repository is created. We can open it and work on its pages.';
+  if(result.status==='repository_created')return 'GitHub created '+result.repository+'. '+(result.url||'')+' The repository is ready for source work.';
+  if(result.status==='repository_already_exists')return 'This repository already exists: '+result.repository+'. '+(result.url||'')+' I can continue work there without creating a duplicate.';
   if(result.status==='credential_verified_read')return 'The GitHub connection is responding.';
   if(result.status==='completed'||result.status==='deployed_verified')return 'The available completion checks passed. What should we work on next?';
   return 'GitHub responded. I can check the detailed result before calling anything finished.';
@@ -610,7 +611,8 @@ const ownerMode=create('small','ba-owner-status',embedded?'Independent visitor a
 ownerMode.hidden=embedded;
 ownerMode.setAttribute('role','status');
 const recorderStatus=create('p','ba-muted','Android recorder: OFF · no saved capture in this session.');
-recorderStatus.hidden=!nativeOverlay;recorderStatus.setAttribute('role','status');
+// RecordB presents the single native recorder UI; keep this old status node for bridge compatibility.
+recorderStatus.hidden=true;recorderStatus.setAttribute('role','status');
 const recorderStop=create('button','ba-control','Stop & save recording');
 recorderStop.type='button';recorderStop.hidden=true;
 recorderStop.addEventListener('click',()=>{
@@ -900,6 +902,21 @@ if(!nativeOverlay&&!embedded){
 if(embedded){
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
  panel.insertBefore(program,composer);
+}
+// The RecordB project owns the reusable recorder-card source. This first-party
+// QuantaPhi bundle gives the Android WebView actual device commands and status.
+// Do not mount a nonfunctional recorder button in ordinary website browsers.
+let recordBController=null,recordBLatestCapture=null;
+if(nativeOverlay&&!embedded){
+ void import('/recordb-card.mjs?v=20261020-recordb1').then(({mountRecordBCard})=>{
+  recordBController=mountRecordBCard({document,container:chatScroll,before:conversation,native:true,
+   enqueue:command=>{
+    if(nativeCaptureRequests.length>=24)return false;
+    nativeCaptureRequests.push(command);
+    return true;
+   }});
+  if(recordBLatestCapture)recordBController.update(recordBLatestCapture);
+ }).catch(error=>{status.textContent='RecordB recorder controls unavailable: '+String(error.message||error).slice(0,120)});
 }
 // Pairing and owner recovery belong in ONE collapsible Options area, not in
 // the transcript or above a working, already connected conversation.
@@ -2034,7 +2051,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
  const createRepository=/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request)
-  || /\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*[A-Za-z][\w.-]*\s+(?:github\s+)?(?:repo|repository)\b/i.test(request);
+  || /\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*[A-Za-z][\w.-]*\s+(?:(?:the|github)\s+)*(?:repo|repository)\b/i.test(request);
  const directRequest=/^(?:(?:hey|please|bubbles)[, ]+)*(?:(?:can|could|would|will) you\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
  // Ordinary one-repository changes belong to Bubbles direct GitHub. Only a
  // clear request for multiple cooperating color agents enters Robot Brain.
@@ -2065,6 +2082,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   // Do not mistake the article "a" in "create a repo" for a repository name.
   const repoName=createRepository?(request.match(/\brepo(?:sitory)?\s+(?:(?:to\s+be\s+)?(?:called|named)|with\s+the\s+name)\s+([A-Za-z0-9_.-]+)/i)?.[1]
    ||request.match(/\b(?:called|named)\s+(?:repo(?:sitory)?\s+)?([A-Za-z0-9_.-]+)/i)?.[1]
+   ||request.match(/\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*([A-Za-z][\w.-]*)\s+(?:(?:the|github)\s+)*(?:repo|repository)\b/i)?.[1]
+   ||request.match(/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\s+([A-Za-z][\w.-]*)\b/i)?.[1]
    ||''):'';
   let repository=named?.[0]||(repoName?'www-infinity4/'+repoName:'');
   // Never silently route the owner's instruction to QuantaPhi when a different
@@ -2758,7 +2777,9 @@ window.QuantaBubbles={
   const paused=capture.screenPaused===true;
   const soundActive=capture.soundActive===true;
   nativeRecordingActive=screenActive||soundActive;
-  recorderStop.hidden=!nativeRecordingActive;
+  recordBLatestCapture=capture;
+  recordBController?.update(capture);
+  recorderStop.hidden=!nativeRecordingActive||nativeOverlay;
   recorderStop.disabled=false;
   const screen=String(capture.screenState||'').slice(0,160);
   const sound=String(capture.soundState||'').slice(0,160);
