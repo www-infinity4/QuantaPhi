@@ -2636,11 +2636,56 @@ async function syncRedSectors(){
 }
 
 const ownerApprovalCards=new Map();
+// Routine visual decisions are handled by existing design defaults. A work
+// authorization stays a real, authenticated user gesture; the conversation
+// never treats an LLM suggestion as approval.
+const ownerDecisionDrawer=create('details','ba-owner-decision-drawer');
+const ownerDecisionSummary=create('summary','','Work decisions');
+const ownerDecisionIntro=create('p','ba-muted',
+ 'Bubbles uses existing QuantaPhi styles for routine design choices. This control applies those defaults to eligible stalled interface jobs in one action. Passwords, payments, wallet changes and account permissions are excluded.');
+const ownerDecisionMessage=create('p','ba-muted','');
+ownerDecisionMessage.setAttribute('role','status');
+const ownerDecisionList=create('div','ba-owner-decision-list');
+const resolveRoutineNow=create('button','ba-control','Use defaults for routine choices');
+resolveRoutineNow.type='button';
+ownerDecisionDrawer.append(ownerDecisionSummary,ownerDecisionIntro,
+ resolveRoutineNow,ownerDecisionMessage,ownerDecisionList);
+tools.append(ownerDecisionDrawer);
+let routineDecisionBusy=false,lastOwnerApprovalTickets=[];
+async function resolveRoutineOwnerDecisions(tickets){
+ if(embedded||!ownerReady||routineDecisionBusy)return;
+ const preview=brainTools?.bulkRunPreview?.(tickets);
+ if(!preview?.ui){ownerDecisionMessage.textContent='No routine interface choices are waiting.';return;}
+ routineDecisionBusy=true;resolveRoutineNow.disabled=true;
+ try{
+  const headers=await verifiedOwnerHeaders();
+  const response=await bubblesFetch(BRAIN+'/work/tickets/approve-all',{
+   method:'POST',headers:{...headers,'Content-Type':'application/json'},
+   body:'{}',cache:'no-store'},25000);
+  const body=await response.json().catch(()=>({}));
+  if(!response.ok||body.ok!==true||!body.batch||!body.summary)throw Error(String(body.error||'approval_receipt_missing'));
+  const accepted=Number(body.summary.uiApproved)||0;
+  const blocked=Number(body.summary.stillBlocked)||0;
+  const execution=String(body.execution?.status||'not_confirmed');
+  const message=accepted+' routine interface decision'+(accepted===1?'':'s')+
+   ' recorded. '+blocked+' technical or sensitive blockers left unchanged. Runner: '+
+   (execution==='queued_for_runner'?'requested, not completed':execution.replace(/_/g,' '))+
+   '. Tests and deployment remain unverified.';
+  ownerDecisionMessage.textContent=message;recordBrainNotice(message);
+ }catch(error){
+  ownerDecisionMessage.textContent='I could not confirm these routine decisions: '+String(error.message||error).slice(0,140)+'. Nothing is claimed approved.';
+ }finally{routineDecisionBusy=false;resolveRoutineNow.disabled=false;}
+}
+resolveRoutineNow.addEventListener('click',()=>void resolveRoutineOwnerDecisions(lastOwnerApprovalTickets));
 // Approval cards are tied to saved, authenticated Brain tickets, never to AI
 // message content or an unverified "owner" sentence.
 function showOwnerApprovalRequests(tickets){
  if(embedded||!ownerReady||!brainTools?.ownerApprovalRequests)return;
  const pending=brainTools.ownerApprovalRequests(tickets);
+ lastOwnerApprovalTickets=Array.isArray(tickets)?tickets:[];
+ const preview=brainTools.bulkRunPreview?.(tickets)||{};
+ ownerDecisionSummary.textContent='Work decisions · '+Number(preview.ui||0)+' routine choice'+(preview.ui===1?'':'s');
+ ownerDecisionDrawer.hidden=!pending.length&&!preview.ui&&!preview.blocked;
  const active=new Set();
  for(const item of pending){
   const key=item.ticketId+':'+item.jobId;active.add(key);
@@ -2648,13 +2693,13 @@ function showOwnerApprovalRequests(tickets){
   const line=create('div','ba-line ba-line-ai ba-owner-approval-line');
   const card=create('section','ba-owner-approval');
   card.setAttribute('aria-label','Owner approval needed');
-  card.append(create('strong','','Owner decision requested'));
+  card.append(create('strong','','Routine interface decision'));
   card.append(create('p','ba-owner-approval-title',item.title));
-  card.append(create('p','ba-owner-approval-copy',item.task));
-  card.append(create('p','ba-owner-approval-choice',item.reason));
+  card.append(create('p','ba-owner-approval-copy','Bubbles can use the existing QuantaPhi design patterns for this change.'));
   const details=create('details','ba-owner-approval-details');
+  details.append(create('p','ba-owner-approval-choice',item.reason));
   details.append(create('summary','','Job details'));
-  details.append(create('p','',item.repository));
+  details.append(create('p','',item.repository),create('p','',item.task));
   card.append(details);
   const actions=create('div','ba-owner-approval-actions');
   const approve=create('button','ba-owner-approve','Approve this job');
@@ -2705,8 +2750,7 @@ function showOwnerApprovalRequests(tickets){
    const prompt='Explain in plain language whether this is genuinely an owner-only UI choice. State what I would approve for '+item.title+', identify any technical error the bots should fix themselves, and do not submit or approve anything. Job: '+item.task.slice(0,350)+'; runner report: '+item.reason.slice(0,850);
    void sendMessage(prompt,false);
   });
-  conversation.append(line);ownerApprovalCards.set(key,line);
-  if(showing)chatScroll.scrollTop=chatScroll.scrollHeight;
+  ownerDecisionList.append(line);ownerApprovalCards.set(key,line);
  }
  for(const [key,line] of ownerApprovalCards){
   if(!active.has(key)){line.remove();ownerApprovalCards.delete(key);}

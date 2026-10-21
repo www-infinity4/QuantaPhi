@@ -92,7 +92,8 @@ test('UI calls the separately owner-authorized approval endpoint from the chat, 
  assert.match(chat,/showOwnerApprovalRequests\(result.tickets\)/);
  assert.match(chat,/Explain this choice/);
  assert.match(chat,/ba-owner-approval-title',item.title/);
- assert.match(chat,/ba-owner-approval-copy',item.task/);
+ assert.match(chat,/ownerDecisionList\.append\(line\)/);
+ assert.match(chat,/details\.append\(create\('p','',item.repository\),create\('p','',item.task\)\)/);
  assert.doesNotMatch(chat,/Review interface changes/);
  assert.match(source,/if\(\['\/work\/tickets\/create'.*'\/work\/tickets\/approve'/);
  assert.match(source,/if\(!await ownerAuthorized\(env,token\)\)/);
