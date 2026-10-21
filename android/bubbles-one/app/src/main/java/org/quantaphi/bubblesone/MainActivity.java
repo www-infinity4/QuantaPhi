@@ -20,7 +20,7 @@ import java.util.UUID;
 public final class MainActivity extends Activity {
     private TextView status;
     private boolean requestedOverlay;
-    private static final int MIC_REQUEST = 11;
+    private static final int MIC_REQUEST = 11, TERMUX_REQUEST = 12, FILE_REQUEST = 13;
 
     @Override public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,10 +47,12 @@ public final class MainActivity extends Activity {
         root.addView(status);
         setContentView(root);
         handleVideoShare(getIntent());
+        handleOtherShare(getIntent());
+        maybePick(getIntent());
         if (getSharedPreferences("bubbles-one", MODE_PRIVATE).getBoolean("enabled", false)) proceed();
     }
     @Override protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent); setIntent(intent); handleVideoShare(intent);
+        super.onNewIntent(intent); setIntent(intent); handleVideoShare(intent); handleOtherShare(intent); maybePick(intent);
     }
     @Override protected void onResume() {
         super.onResume();
@@ -71,15 +73,56 @@ public final class MainActivity extends Activity {
             startActivity(setting);
             return;
         }
+        // The app-level Setup action requests Termux's custom Android grant if installed.
+        // The separate allow-external-apps switch belongs to Termux itself.
+        if (TermuxBridge.installed(this) && checkSelfPermission("com.termux.permission.RUN_COMMAND")
+                != PackageManager.PERMISSION_GRANTED
+                && !getSharedPreferences("bubbles-one", MODE_PRIVATE).getBoolean("termux_grant_prompted", false)) {
+            getSharedPreferences("bubbles-one", MODE_PRIVATE).edit().putBoolean("termux_grant_prompted", true).apply();
+            requestPermissions(new String[]{"com.termux.permission.RUN_COMMAND"}, TERMUX_REQUEST);
+            return;
+        }
         Intent assistant = new Intent(this, AssistantService.class);
         if (Build.VERSION.SDK_INT >= 26) startForegroundService(assistant); else startService(assistant);
         status.setText("Bubbles is ready. Tap its floating circle to chat. You can leave this screen.");
     }
     @Override public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] results) {
         super.onRequestPermissionsResult(requestCode, permissions, results);
+        if (requestCode == TERMUX_REQUEST) { proceed(); return; }
         if (requestCode == MIC_REQUEST) {
             if (results.length > 0 && results[0] == PackageManager.PERMISSION_GRANTED) proceed();
             else status.setText("Microphone access was not granted. Bubbles will not start without it.");
+        }
+    }
+    private void maybePick(Intent intent) {
+        if (intent != null && intent.getBooleanExtra("pick_file", false)) {
+            intent.removeExtra("pick_file");
+            Intent chooser = new Intent(Intent.ACTION_OPEN_DOCUMENT)
+                .addCategory(Intent.CATEGORY_OPENABLE).setType("*/*");
+            startActivityForResult(chooser, FILE_REQUEST);
+        }
+    }
+    @Override protected void onActivityResult(int request, int result, Intent data) {
+        super.onActivityResult(request, result, data);
+        if (request == FILE_REQUEST && result == RESULT_OK && data != null && data.getData() != null) {
+            FileInbox.importFile(this, data.getData(), status);
+        }
+    }
+    private void handleOtherShare(Intent intent) {
+        if (intent == null || !Intent.ACTION_SEND.equals(intent.getAction())
+                || intent.getType() == null || intent.getType().startsWith("video/")) return;
+        Uri uri = Build.VERSION.SDK_INT >= 33
+            ? intent.getParcelableExtra(Intent.EXTRA_STREAM, Uri.class)
+            : (Uri) intent.getParcelableExtra(Intent.EXTRA_STREAM);
+        if (uri != null) FileInbox.importFile(this, uri, status);
+        else if ("text/plain".equals(intent.getType())) {
+            String shared = intent.getStringExtra(Intent.EXTRA_TEXT);
+            if (shared != null) {
+                LocalNotebook notes = new LocalNotebook(this);
+                try { notes.add("shared", shared.substring(0, Math.min(2500, shared.length()))); }
+                finally { notes.close(); }
+                AssistantService.refreshIntegration("Text shared into Bubbles.");
+            }
         }
     }
     private void handleVideoShare(Intent intent) {

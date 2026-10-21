@@ -20,6 +20,13 @@ import java.util.concurrent.*;
 
 public final class AssistantService extends Service implements RecognitionListener {
     private static final String CHANNEL = "bubbles_one_voice";
+    private static volatile AssistantService current;
+    static void refreshIntegration(String message) {
+        AssistantService service = current;
+        if (service != null) service.main.post(() -> {
+            if (!service.destroyed) { service.refreshText(); service.updateStatus(message.length() > 180 ? "Termux result received in chat." : message); }
+        });
+    }
     private static final String STOP = "org.quantaphi.bubblesone.STOP";
     private final Handler main = new Handler(Looper.getMainLooper());
     private final ExecutorService network = Executors.newSingleThreadExecutor();
@@ -42,6 +49,7 @@ public final class AssistantService extends Service implements RecognitionListen
     @Override public void onCreate() {
         super.onCreate();
         notebook = new LocalNotebook(this);
+        current = this;
         NotificationManager manager = getSystemService(NotificationManager.class);
         manager.createNotificationChannel(new NotificationChannel(CHANNEL, "Bubbles voice", NotificationManager.IMPORTANCE_LOW));
         voice = new TextToSpeech(this, code -> {
@@ -152,6 +160,10 @@ public final class AssistantService extends Service implements RecognitionListen
         hide.setOnClickListener(v -> togglePanel());
         header.addView(hide);
         root.addView(header);
+        // One optional in-chat workspace shortcut; natural language remains primary.
+        Button apps = new Button(this); apps.setText("Apps & Code"); apps.setAllCaps(false);
+        apps.setOnClickListener(v -> showAppsHelp());
+        root.addView(apps);
         state = label("Listening for Bubbles…", 13); root.addView(state);
         scroll = new ScrollView(this);
         conversation = label(notebook.recent(), 16);
@@ -266,12 +278,63 @@ public final class AssistantService extends Service implements RecognitionListen
         if (words.isEmpty()) { say("I'm listening."); return; }
         submit(words);
     }
+    private void showAppsHelp() {
+        notebook.add("tool", "Apps & Code: say open Termux; run python: print(2+2); run javascript: console.log(2+2); find Calculator on Google Play; import a file; or download https://example.com/guide.pdf. Custom code must be approved. Android controls installing apps. GitHub and Cloudflare writes need separate owner authorization.");
+        refreshText(); updateStatus("Apps & Code instructions added to the conversation.");
+    }
+    private void confirmCode(String language, String code) {
+        android.app.AlertDialog dialog = new android.app.AlertDialog.Builder(this)
+            .setTitle("Run " + language + " in Termux?")
+            .setMessage("This code will run with your Termux account permissions. Check it before approving.\n\n" + code.substring(0, Math.min(code.length(), 1600)))
+            .setNegativeButton("Cancel", (d, which) -> { notebook.add("tool", "Termux code was not run; owner cancelled."); refreshText(); })
+            .setPositiveButton("Run code", (d, which) -> reply(TermuxBridge.run(this, language, code)))
+            .create();
+        if (dialog.getWindow() != null) dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY);
+        dialog.show();
+    }
+    private void confirmDownload(String url) {
+        android.app.AlertDialog dialog = new android.app.AlertDialog.Builder(this)
+            .setTitle("Download this file?")
+            .setMessage(url + "\n\nAndroid will manage the download. This does not install an APK or open the downloaded code.")
+            .setNegativeButton("Cancel", null)
+            .setPositiveButton("Download", (d, which) -> reply(AppBridge.downloadFile(this, url)))
+            .create();
+        if (dialog.getWindow() != null) dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY);
+        dialog.show();
+    }
+    private void askToImportFile() {
+        try {
+            Intent intent = new Intent(this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            intent.putExtra("pick_file", true);
+            startActivity(intent);
+            updateStatus("Android file picker requested; choose a file to import into Bubbles.");
+        } catch (RuntimeException e) { reply("Android could not open the file picker."); }
+    }
     private void submit(String words) {
         if (destroyed || words == null || words.trim().isEmpty()) return;
         final String utterance = words.trim();
         notebook.add("user", utterance);
         refreshText();
         String lower = utterance.toLowerCase(Locale.US);
+        // These are real local Android tools, not a language model pretending it used them.
+        if (lower.matches("^(?:please )?(?:open|launch|show)(?: the)? termux[.!?]?$")) {
+            reply(TermuxBridge.open(this)); return;
+        }
+        if (lower.matches("^(?:apps(?: and| &) code|apps help|termux help|developer help)[.!?]?$")) {
+            showAppsHelp(); return;
+        }
+        if (lower.matches("^(?:please )?(?:import|upload|attach|pick|choose)(?: a| the)? file[.!?]?$")) {
+            askToImportFile(); return;
+        }
+        java.util.regex.Matcher appSearch = java.util.regex.Pattern.compile(
+            "(?i)^(?:find|search(?: for)?|install|download|get)\\s+(?:the\\s+)?(.{2,80}?)\\s+(?:app\\s+)?(?:on|from|in)\\s+(?:google\\s+)?play(?:\\s+store)?[.!?]?$").matcher(utterance);
+        if (appSearch.matches()) { reply(AppBridge.findOnPlay(this, appSearch.group(1))); return; }
+        java.util.regex.Matcher codeRun = java.util.regex.Pattern.compile(
+            "(?is)^(?:please\\s+)?(?:run|execute)\\s+(python3?|javascript|js|node|bash|shell|sh|ruby|php|perl|lua)\\s*:\\s*(.{1,7000})$").matcher(utterance);
+        if (codeRun.matches()) { confirmCode(codeRun.group(1), codeRun.group(2)); return; }
+        java.util.regex.Matcher download = java.util.regex.Pattern.compile(
+            "(?i)^(?:please\\s+)?download\\s+(https://\\S{4,500})$").matcher(utterance);
+        if (download.matches()) { confirmDownload(download.group(1)); return; }
         if (lower.startsWith("remember that ") || lower.startsWith("make a note ")) {
             String note = utterance.substring(lower.startsWith("remember that ") ? 14 : 12).trim();
             if (note.isEmpty()) { say("What would you like me to remember?"); return; }
@@ -334,6 +397,7 @@ public final class AssistantService extends Service implements RecognitionListen
     @Override public IBinder onBind(Intent intent) { return null; }
     @Override public void onDestroy() {
         destroyed = true;
+        current = null;
         main.removeCallbacksAndMessages(null);
         if (recognizer != null) { try { recognizer.cancel(); recognizer.destroy(); } catch (RuntimeException ignored) { } }
         if (voice != null) voice.shutdown();

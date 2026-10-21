@@ -21,7 +21,7 @@ final class CloudChat {
         connection.setDoOutput(true);
         JSONObject body = new JSONObject();
         body.put("request", request);
-        body.put("input", context + "\nCurrent user request: " + request);
+        body.put("input", "Android Bubbles One capability facts: I can request user-approved Termux Python, JavaScript, Bash, Ruby, PHP, Perl and Lua execution through an actual installed Termux with its Android permission and setting. Execution requires a Termux result with exit status; never invent one. I can open Google Play searches, import selected local files and queue HTTPS downloads, not silently install other apps. I do not possess GitHub or Cloudflare API tokens, owner-session credentials, write/deploy authority, or private files from other apps. Never request secrets in conversational text. Use secured server owner tools for any real changes.\n" + context + "\nCurrent user request: " + request);
         body.put("mcp", true);
         try {
             byte[] bytes = body.toString().getBytes(StandardCharsets.UTF_8);
