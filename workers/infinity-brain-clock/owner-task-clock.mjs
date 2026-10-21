@@ -3,7 +3,7 @@
  * ticket/job. It never grants permissions, creates source code, or certifies CI.
  * Cancellation and archive preserve the ticket, runner history and receipts.
  */
-const KEY='owner-task-clock-v1',REPO=/^www-infinity4\/[A-Za-z0-9_.-]+$/;
+const KEY='owner-task-clock-v1',ARCHIVE_COUNT='owner-task-clock-archive-count-v1',REPO=/^www-infinity4\/[A-Za-z0-9_.-]+$/;
 const ID=/^IW-\d{8}-[0-9A-F-]{8}$/,JOB=/^TASK-\d+$/;
 const LIMIT=40,DAY=86400000,MINUTE=60000;
 const intervals={once:0,hourly:60*MINUTE,daily:DAY};
@@ -35,7 +35,7 @@ export async function ownerClockCommand(store,db,ownerHash,input,now=Date.now())
  if(!/^[a-f0-9]{64}$/.test(ownerHash||''))return failure('clock_owner_partition_unavailable',503);
  const action=String(input?.action||''),all=await entries(store);
  if(action==='list')return {status:200,result:{ok:true,tasks:all.filter(r=>r.status!=='archived').map(exposed),
-  archivedCount:all.filter(r=>r.status==='archived').length,clock:'cloudflare-cron-durable-object'}};
+  archivedCount:(await store.get(ARCHIVE_COUNT)||0)+all.filter(r=>r.status==='archived').length,clock:'cloudflare-cron-durable-object'}};
  if(action==='create'){
   const ticketId=String(input.ticketId||''),jobId=String(input.jobId||'');
   if(!ID.test(ticketId)||!JOB.test(jobId))return failure('existing_ticket_and_job_required');
@@ -76,16 +76,30 @@ export async function ownerClockCommand(store,db,ownerHash,input,now=Date.now())
    let at;try{at=scheduleTime(input.startAt,now)}catch(e){return failure(e.message)}
    row.status='active';row.nextAt=at;
   }
-  row.updatedAt=now;await store.put(KEY,all);
-  return {status:200,result:{ok:true,status:'clock_'+action+'d',task:exposed(row),historyPreserved:true}};
+  row.updatedAt=now;
+  if(action==='archive'){
+   await store.put('owner-task-clock-archive:'+row.id,{...row,archivedAt:now});
+   await store.put(ARCHIVE_COUNT,(await store.get(ARCHIVE_COUNT)||0)+1);
+   await store.put(KEY,all.filter(item=>item.id!==row.id));
+  }else await store.put(KEY,all);
+  const labels={pause:'paused',resume:'resumed',cancel:'cancelled',archive:'archived'};
+  return {status:200,result:{ok:true,status:'clock_'+labels[action],task:exposed(row),historyPreserved:true}};
  }
  if(action==='archive_old'){
   const limit=now-14*DAY;let archived=0;
-  for(const row of all)if(['cancelled','finished'].includes(row.status)&&row.updatedAt<limit){
-   row.status='archived';row.updatedAt=now;archived++;
+  const keep=[];
+  for(const row of all){
+   if((['cancelled','finished','archived'].includes(row.status))&&row.updatedAt<limit){
+    row.status='archived';row.updatedAt=now;
+    await store.put('owner-task-clock-archive:'+row.id,{...row,archivedAt:now});
+    archived++;
+   }else keep.push(row);
   }
-  if(archived)await store.put(KEY,all);
-  return {status:200,result:{ok:true,archived,retained:all.length-archived,receiptsPreserved:true}};
+  if(archived){
+   await store.put(ARCHIVE_COUNT,(await store.get(ARCHIVE_COUNT)||0)+archived);
+   await store.put(KEY,keep);
+  }
+  return {status:200,result:{ok:true,archived,retained:keep.length,receiptsPreserved:true}};
  }
  return failure('unsupported_clock_action',404);
 }
