@@ -1774,11 +1774,21 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     let answer;
     try{
      if(decision.kind==='phone_read'){
-      // Device bridge still independently enforces its owner and Accessibility grant.
-      const result=await (await phoneTools()).request('phone read');
-      answer=result?.ok===true||result?.status==='complete'
-       ?'Read the current phone screen through the approved device tool. '+JSON.stringify(result).slice(0,1400)
-       :'The phone did not confirm a screen observation. No screen access was claimed.';
+      // Android WebView hands this off to its already-permitted native
+      // Accessibility screen reader. Do NOT require a new short-lived phone
+      // tool session just to reuse the app's native device ability.
+      if(nativeOverlay){
+       if(nativeScreenRequests.length>=24)answer='Android screen observation queue is full. No screen was read.';
+       else {
+        nativeScreenRequests.push(spoken);
+        answer='Requested a fresh Android screen observation. Waiting for the device response; I have not claimed to read it yet.';
+       }
+      }else{
+       const result=await (await phoneTools()).request('phone read');
+       answer=result?.ok===true||result?.status==='complete'
+        ?'The approved phone tool returned: '+JSON.stringify(result).slice(0,1400)
+        :'The phone did not confirm a screen observation. No screen access was claimed.';
+      }
      }else{
       const opened=await workspace.handle({action:decision.kind==='play_card'?'play':'open',card:target});
       answer=opened.message;
