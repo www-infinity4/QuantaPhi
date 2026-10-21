@@ -19,7 +19,7 @@ test('external finished video requires actual share and copies bytes',()=>{
  const manifest=read(root+'app/src/main/AndroidManifest.xml');
  const activity=read(root+'app/src/main/java/org/quantaphi/bubblesone/MainActivity.java');
  assert.match(manifest,/android.intent.action.SEND/);
- assert.match(manifest,/video\/\*/);
+ assert.match(manifest,/android:mimeType="(?:video\\/\\*|\\*\\/\\*)"/);
  assert.match(activity,/getContentResolver\(\)\.openInputStream\(source\)/);
  assert.match(activity,/total == 0/);
  assert.match(activity,/512L \* 1024L \* 1024L/);
