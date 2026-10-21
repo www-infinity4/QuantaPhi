@@ -22,7 +22,7 @@ export function parseClockIntent(value,{now=new Date()}={}){
   }
   return {action,id};
  }
- if(!/\b(?:schedule|set an? alarm|run|start)\b/i.test(prefix))return null;
+ if(!/^(?:schedule\b|set an? alarm\b|run (?:the )?(?:ticket|job)\b|start (?:the )?clock\b)/i.test(prefix))return null;
  const ticketId=message.match(TICKET)?.[1]?.toUpperCase(),jobId=message.match(JOB)?.[1]?.toUpperCase();
  if(!ticketId||!jobId)return {action:'create',needsTicket:true};
  const repeat=/\b(?:every\s+hour|hourly)\b/i.test(message)?'hourly':/\b(?:each\s+day|every\s+day|daily)\b/i.test(message)?'daily':'once';
