@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {DatabaseSync} from 'node:sqlite';
 import {processChatGPTJob,completeChatGPTMessage} from '../workers/bubbles-cloud-browser/chatgpt-bridge.mjs';
 
 function fakeJob(action='read',payload={}) {
@@ -57,6 +58,20 @@ test('ChatGPT message is delivered only to Bubbles and response requires owner c
  const result=await completeChatGPTMessage({db,store,id:row.id,reply:{ok:true,reply:'Bubbles response'}});
  assert.equal(result.status,'complete');assert.match(row.result,/Bubbles response/);
  assert.equal((await completeChatGPTMessage({db,store,id:row.id,reply:{ok:true}})).ok,false);
+});
+test('an expired backlog cannot consume the lifetime of the next approved message',async()=>{
+ const sqlite=new DatabaseSync(':memory:');
+ sqlite.exec('CREATE TABLE bubbles_chatgpt_bridge(id TEXT PRIMARY KEY, action TEXT, payload TEXT, status TEXT, created_ms INTEGER, updated_ms INTEGER, expires_ms INTEGER, result TEXT)');
+ const now=Date.now(),insert=sqlite.prepare('INSERT INTO bubbles_chatgpt_bridge VALUES(?,?,?,?,?,?,?,NULL)');
+ for(let i=0;i<50;i++)insert.run('expired_'+i,'message','{}','queued',now-600000,now-600000,now-1000);
+ insert.run('fresh_owner_message','message',JSON.stringify({text:'Inspect Story Writer'}),'queued',now,now,now+240000);
+ const db={prepare(sql){const statement=sqlite.prepare(sql);return {first:async()=>statement.get(),bind(...values){return {run:async()=>({meta:statement.run(...values)}),first:async()=>statement.get(...values)}}}}};
+ try{
+  const result=await processChatGPTJob({db,store:{chatgptStatus:async()=>({enabled:true})},request:owner,env:{},body:{},browserTool:()=>assert.fail(),now});
+  assert.equal(result.status,'needs_bubbles_reply');assert.equal(result.jobId,'fresh_owner_message');
+  assert.equal(sqlite.prepare("SELECT count(*) AS n FROM bubbles_chatgpt_bridge WHERE status='blocked'").get().n,50);
+  assert.equal(sqlite.prepare("SELECT count(*) AS n FROM bubbles_chatgpt_bridge WHERE status='working'").get().n,1);
+ }finally{sqlite.close();}
 });
 test('UI has a distinct five-day ChatGPT control; browser worker enforces owner and retains browser restrictions',()=>{
  const browser=fs.readFileSync('workers/bubbles-cloud-browser/worker.mjs','utf8');
