@@ -1984,29 +1984,32 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // A named public README/source request uses the actual GitHub file reader.
  // A model summary alone cannot prove that a file was opened. Keep owner-only
  // GitHub edits on their separate authenticated action route.
- const sourceReadRequested=/\b(?:read|show|open|summari[sz]e|explain|inspect|review|fetch)\b.{0,150}\b(?:readme(?:\.md)?|(?:docs\/)?[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json))\b/i.test(request)
+ const publicPageReadRequested=/\b(?:read|show|summari[sz]e|explain|inspect|review|fetch)\b/i.test(request)
+   && /https:\/\/(?:www\.)?quantaphi\.org\/[^\s<>"']*/i.test(request);
+ const sourceReadRequested=!publicPageReadRequested&&/\b(?:read|show|open|summari[sz]e|explain|inspect|review|fetch)\b.{0,150}\b(?:readme(?:\.md)?|(?:docs\/)?[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json))\b/i.test(request)
    && (/\b[a-z0-9_.-]+\/[a-z0-9_.-]+\b/i.test(request)||/\bquantaphi\b/i.test(request));
- if(!embedded&&sourceReadRequested){
+ if(!embedded&&(sourceReadRequested||publicPageReadRequested)){
   busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
-  status.textContent='Reading the requested public GitHub file…';
+  const expectedReadTool=publicPageReadRequested?'web.read_page':'github.read_file';
+  status.textContent=publicPageReadRequested?'Reading public webpage HTML…':'Reading the requested public GitHub file…';
   let answer='',readVerified=false;
   try{
    const resp=await bubblesFetch(AI,{method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({request,requestId:crypto.randomUUID()})},30000);
    const result=await resp.json();
-   if(!resp.ok||result.receipt?.tool!=='github.read_file'||result.receipt?.status!=='complete'||
+   if(!resp.ok||result.receipt?.tool!==expectedReadTool||result.receipt?.status!=='complete'||
     result.receipt?.sourceReadVerified!==true||!result.sourceUrl)
     throw Error(result.receipt?.reason||result.error||'public_source_not_verified');
    const content=String(result.output||'');
-   if(!content.trim())throw Error('file_reader_empty');
+   if(!content.trim())throw Error('verified_reader_empty');
    answer=content.slice(0,5600)+(content.length>5600?'\n[Long file excerpt shortened for chat; open the source for the full text.]':'')+
     '\nSource: '+result.sourceUrl;
    readVerified=true;
-   status.textContent='Bubbles · github.read_file · verified';
+   status.textContent='Bubbles · '+expectedReadTool+' · verified';
   }catch(error){
-   answer='I could not verify that GitHub returned this file: '+String(error.message||error).slice(0,150)+'. No source content or repository change is being claimed.';
-   status.textContent='Bubbles · GitHub file read unverified';
+   answer='I could not verify '+(publicPageReadRequested?'the public webpage':'the GitHub file')+': '+String(error.message||error).slice(0,150)+'. No source content or repository change is being claimed.';
+   status.textContent='Bubbles · '+expectedReadTool+' · unverified';
   }
   display(answer,'ai');
   messages.push({role:'user',text:spoken},{role:'assistant',text:answer});
