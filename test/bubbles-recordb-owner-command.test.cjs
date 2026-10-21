@@ -52,7 +52,7 @@ test('explicit RecordB bot-team requests take the authenticated ticket path',()=
 test('every Bubbles entrypoint loads the unpinned fresh action router',()=>{
  const routing=gateway.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|sourceRef) =/.test(line)).join('\n');
  const sourceRef=new Function('route','incoming',routing+';return sourceRef;');
- const version='20261020-tool-driver1';
+ const version='20261021-semantic-orb1';
  const brainsVersion='20261020-tool-driver1';
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const html=fs.readFileSync(path,'utf8');
