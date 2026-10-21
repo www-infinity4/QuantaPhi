@@ -2180,7 +2180,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    :'Select one repository in the GitHub targets menu. Nothing was changed.';
   else try{
    status.textContent='Checking the direct GitHub connection. Actual receipts will also appear in the color-bot feed.';
-   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:add|create|make|build|generate|populate|scaffold|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
+   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:add|create|make|build|generate|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor|populate|scaffold)\b/i.test(request)?'write':'read';
    const namedWorkflow=request.match(/\b([a-z0-9][a-z0-9_.-]*\.ya?ml)\b/i)?.[1]||'';
    const workflowIntent=/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
    const workflowDispatch=workflowIntent&&/\b(?:run|start|trigger|dispatch|rerun|execute)\b/i.test(request);
