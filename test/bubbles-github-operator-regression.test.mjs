@@ -37,7 +37,7 @@ test('create repository differs from file creation; questions and refusals never
 });
 test('GitHub responses distinguish read, commit, PR and repo creation blockers',()=>{
  const start=site.indexOf('const humanReplies=()=>({'),end=site.indexOf('const brainTools=',start);
- const humanReplies=new Function(site.slice(start,end)+'\nreturn humanReplies;')();
+ const humanReplies=new Function(site.slice(start,end)+'\nreturn humanReplies;')()();
  assert.match(humanReplies.githubReply({ok:true,status:'inspected'}),/No files were created or changed/);
  const commit=humanReplies.githubReply({ok:true,status:'committed_unverified',receipts:[
   {status:'committed_unverified',commitSha:'a'.repeat(40)},
