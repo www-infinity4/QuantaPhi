@@ -54,6 +54,11 @@ export default {
    let body={};try{const raw=await request.text();if(raw.length>4200)throw Error('large');
     body=JSON.parse(raw||'{}')}catch{return respond(origin,{ok:false,error:'invalid_request'},400)}
    const store=consentStore(env);
+   if(path==='/v1/browser/chatgpt/heartbeat'){
+    if(Object.keys(body).some(key=>key!=='state'))return respond(origin,{ok:false,error:'invalid_consumer_state'},400);
+    const result=await store.consumerHeartbeat(body.state);
+    return respond(origin,result,result.ok?200:result.status||403);
+   }
    if(path==='/v1/browser/chatgpt/permission'){
     if(body.action==='status')return respond(origin,await store.chatgptStatus());
     if(body.action==='enable')return respond(origin,await store.enableChatGPT());
@@ -65,6 +70,8 @@ export default {
     // a ChatGPT grant never silently reactivates an expired browser grant.
     const browserConsent=await store.status();
     if(!browserConsent.enabled)return respond(origin,{ok:false,error:'browser_consent_required'},403);
+    const heartbeat=await store.consumerHeartbeat('ready');
+    if(!heartbeat.ok)return respond(origin,heartbeat,heartbeat.status||403);
     const result=await processChatGPTJob({db:env.BRIDGE_DB,store,request,env,body,browserTool});
     return respond(origin,result,result.ok?200:result.status||403);
    }
