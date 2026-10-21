@@ -331,7 +331,7 @@ async function execute(request,env,body){
   // A named town may appear before the word "forecast". When the shallow
   // extractor misses it, Grammar Phi may recover only an explicitly supplied
   // place via its grounded, read-only structured tool selector.
-  if(result.needsLocation&&body.mcp!==false&&env.AI){
+  if(result.needsLocation&&body.mcp===true&&env.AI){
    const semantic=await selectMcpTool(env,question,
     command=>runMcpRead(request,env,command),{location:givenLocation||''});
    if(semantic?.receipt?.tool==='weather.current'&&semantic.receipt.status==='complete')
@@ -377,14 +377,13 @@ async function execute(request,env,body){
    }catch{return response(request,{ok:true,output:'I could not retrieve current headlines. I have not substituted remembered headlines.',receipt:{...receipt,status:'failed',reason:'news_sources_unavailable'}});}
   }
  }
- // Grammar Phi: ordinary natural speech selects supported READ-ONLY tools by meaning
- // even when the user has never heard of MCP or memorized a command.
- // A caller can explicitly set mcp:false when it needs chat-only reasoning.
+ // Grammar Phi's semantic card and native screen planner runs in the chat adapter.
+ // MCP read-only function calling here remains opt-in to preserve prompt failure fallbacks.
  // Grammar Phi: ordinary language is eligible for bounded semantic tool choice.
  // The model may choose one read-only registered tool, but never chooses a
  // repository writer, phone action, permission grant or arbitrary URL.
  // Deterministic requests above still take the fastest direct route.
- if(body.mcp!==false&&tool==='oracle.chat'){
+ if(body.mcp===true&&tool==='oracle.chat'){
   const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command),
    {location:body.location||body.context?.location||''});
   if(found&&found.receipt?.tool){
