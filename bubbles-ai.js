@@ -1559,9 +1559,9 @@ function isOwnerWorkRequest(text){
  if(brainTools?.classify(text)==='queue')return true;
  const request=String(text||'').trim();
  if(!request||request.length>4000)return false;
- const verb=/\b(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct)\b/i;
- const target=/\b(?:quantaphi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone)\b/i;
- const direct=/^(?:(?:please|hey bubbles|bubbles)\s+)*(?:fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct)\b/i;
+ const verb=/\b(?:add|insert|attach|fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct)\b/i;
+ const target=/\b(?:quantaphi|website|site|page|card|widget|bubbles|bot|robot|brain|studio|image|video|player|upload|wallet|search|gallery|repository|github|store|radio|microphone|owner.approval|button)\b/i;
+ const direct=/^(?:(?:please|hey bubbles|bubbles)\s+)*(?:add|insert|attach|fix|repair|restore|debug|update|upgrade|build|create|wire|connect|replace|correct)\b/i;
  const directive=/^(?:please\s+)?(?:i\s+(?:need|want)\s+(?:you\s+)?to|you\s+(?:need|have)\s+to|can\s+you|could\s+you|would\s+you|please|we\s+need\s+to)\b/i;
  const followup=/(?:^|[.!?]\s+)(?:please\s+)?(?:fix|repair|restore|update|upgrade|wire|connect)\b/i;
  return verb.test(request)&&target.test(request)&&(direct.test(request)||directive.test(request)||followup.test(request));
@@ -2039,7 +2039,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Ordinary one-repository changes belong to Bubbles direct GitHub. Only a
  // clear request for multiple cooperating color agents enters Robot Brain.
  const requestsAgents=/\b(?:robot\s*brain|moltnook|multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request);
- const codeTask=/\b(?:edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|test|run)\b[\s\S]{0,180}\b(?:github|repository|repo|code|source|file|readme|script|worker|website|page|card|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr)\b/i.test(request);
+ const codeTask=/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|test|run)\b[\s\S]{0,180}\b(?:github|repository|repo|code|source|file|readme|script|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr)\b/i.test(request);
  const directCoding=!requestsAgents&&codeTask;
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
  // without generating a Robot Brain ticket or relying on the writer model.
@@ -2070,7 +2070,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   // Never silently route the owner's instruction to QuantaPhi when a different
   // repository was selected or the project identity is genuinely uncertain.
   if(!repository&&!createRepository){
-   if(githubCheck||coderRequest)repository='www-infinity4/QuantaPhi';
+   if(githubCheck||coderRequest||/\b(?:bubbles|owner[- ]approval)\b/i.test(request))repository='www-infinity4/QuantaPhi';
    else {
     if(!repositorySelectionExplicit)await suggestRepositoryTargets(request,false);
     const targets=[...repositorySelection];
@@ -2082,7 +2082,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    :'Select one repository in the GitHub targets menu. Nothing was changed.';
   else try{
    status.textContent='Checking the direct GitHub connection. Actual receipts will also appear in the color-bot feed.';
-   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
+   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:add|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
    const namedWorkflow=request.match(/\b([a-z0-9][a-z0-9_.-]*\.ya?ml)\b/i)?.[1]||'';
    const workflowIntent=/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
    const workflowDispatch=workflowIntent&&/\b(?:run|start|trigger|dispatch|rerun|execute)\b/i.test(request);
@@ -2168,6 +2168,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let savedWeatherTown='';
  const explicitWeatherTown=/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b.{0,85}\b(?:in|for|at|near)\s+[a-z0-9]/i.test(lookupRequest);
  try{if(liveLookup&&!explicitWeatherTown&&/\b(?:weather|forecast|temperature|rain|snow)\b/i.test(lookupRequest))savedWeatherTown=localStorage.getItem('bubbles-weather-town')||'';}catch{}
+ // Seller defaults are not a replacement model for ordinary Bubbles chat or owner tools.
+ const privateSellerRequest=config.privateContext&&!nativeOverlay&&/\b(?:sell|selling|seller|resale|auction|listing|buyer|shoplc|my selling defaults|quant-ai seller)\b/i.test(request);
  // Opt in to bounded, read-only MCP model tool selection. The MCP bearer key is never present in this WebView.
  const toolRequestId=crypto.randomUUID();
  const lookupPayload=()=>({request:lookupRequest,requestId:toolRequestId,input:prompt,mcp:true,...(/^(?:research|investigate)\b/i.test(lookupRequest.trim())?{tool:'web.search'}:{}),location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
@@ -2191,7 +2193,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    try{const output=await nativeChatGPT(prompt);response={ok:true};json={ok:true,output,provider:'Android ChatGPT plan'};gptStatus.textContent='Response generated using the authorized ChatGPT plan on this phone.'}
    catch(error){nativeGPTAvailable=false;gptStatus.textContent='Android ChatGPT unavailable; using Oracle: '+String(error.message||error).slice(0,90);
     response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}
-  }else if(config.privateContext&&!nativeOverlay){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}}finally{clearTimeout(timer)}
+  }else if(privateSellerRequest){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}}finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
   const rawAnswer=extract(json);if(!rawAnswer)throw Error('The AI returned no spoken or written reply');
    if(/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
@@ -2560,9 +2562,22 @@ function showOwnerApprovalRequests(tickets){
   approve.type='button';
   const review=create('button','ba-owner-review','Explain this choice');
   review.type='button';
-  actions.append(approve,review);card.append(actions);line.append(card);
+  const copy=create('button','ba-owner-copy','Copy request');copy.type='button';
+  actions.append(approve,review,copy);card.append(actions);line.append(card);
   const result=create('p','ba-owner-approval-result','');
   result.setAttribute('role','status');card.append(result);
+  copy.addEventListener('click',async()=>{
+   const summary=[item.title,item.task,item.reason,item.repository].filter(Boolean).join('\n');
+   try{
+    if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(summary);
+    else{
+     const textarea=create('textarea');textarea.value=summary;textarea.style.position='fixed';textarea.style.opacity='0';
+     document.body.append(textarea);textarea.select();
+     try{if(!document.execCommand('copy'))throw Error('copy_unavailable');}finally{textarea.remove();}
+    }
+    result.textContent='Owner approval details copied.';
+   }catch{result.textContent='Could not copy here. Open Job details to select the text.';}
+  });
   approve.addEventListener('click',async()=>{
    approve.disabled=true;review.disabled=true;result.textContent='Checking the latest owner ticket and recording your choice…';
    try{
