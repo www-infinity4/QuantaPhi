@@ -352,6 +352,10 @@ export function mount({host,ownerHeaders,reveal=false}){
  window.addEventListener('focus',()=>void pollChatGPT());
  window.addEventListener('pageshow',()=>void pollChatGPT());
  window.addEventListener('bubbles:owner-ready',()=>void pollChatGPT());
+ // The user-started Android foreground service can nudge its existing, trusted
+ // first-party WebView when Android throttles hidden-page JavaScript timers.
+ // This requests an ordinary consent/owner-verified poll, never new authority.
+ window.addEventListener('bubbles:foreground-poll',()=>void pollChatGPT());
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)void pollChatGPT();});
  void pollChatGPT();
  void bridgePermission('status').catch(()=>{});

@@ -43,7 +43,7 @@ test('busy chat leaves the next job unclaimed; readiness resumes processing with
  await run();assert.deepEqual(calls,['permission','heartbeat']);assert.equal(states.at(-1)[0],'waiting-for-chat');
  ready=true;await run();assert.deepEqual(calls,['permission','heartbeat','process']);assert.equal(states.at(-1)[0],'ready');
  const lifecycle=ui.slice(ui.indexOf("setInterval(()=>void pollChatGPT()"));
- for(const event of ['focus','pageshow','bubbles:owner-ready','visibilitychange'])assert.ok(lifecycle.includes(event));
+ for(const event of ['focus','pageshow','bubbles:owner-ready','bubbles:foreground-poll','visibilitychange'])assert.ok(lifecycle.includes(event));
  assert.ok(lifecycle.includes('void pollChatGPT();'));
 });
 test('consumer heartbeat reports observed readiness without extending either grant or storing identity',async()=>{
