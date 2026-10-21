@@ -56,6 +56,10 @@ try{
   const original={};for(const path of allowedFiles)original[path]=await fs.readFile(path,'utf8');
   const clearJob=/clear\s+(?:text|input)/i.test(lease.job.instructions);
   let edits=clearJob?clearButtonPatch(original):(await call('propose',{source:original})).edits;
+if (!Array.isArray(edits) || edits.length===0) {
+  console.warn('brain-writer: no edits to apply – skipping edit step');
+  process.exit(0);
+}
   const resume=!edits.length && clearJob && /^[a-f0-9]{40}$/.test(lease.job.progress?.commitSha||'');
   if(!edits.length&&!resume)throw Error('Requested change is already present; no recorded source commit to resume');
   const patched=resume?original:applyEdits(original,edits);report.edits=edits;
