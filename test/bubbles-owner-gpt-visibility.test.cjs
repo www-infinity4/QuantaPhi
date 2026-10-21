@@ -14,7 +14,9 @@ test('public Bubbles entry and chat handoff buttons stay hidden until verified o
  assert.ok(chat.includes("quick.hidden=true;quick.style.display='none';"));
  assert.ok(chat.includes("window.addEventListener('bubbles:owner-ready',revealVerifiedOwnerGPT)"));
  assert.ok(chat.includes('if(headers?.Authorization)revealVerifiedOwnerGPT();'));
- assert.ok(chat.includes("top.hidden=false;top.style.removeProperty('display');"));
+ assert.ok(chat.includes("top.hidden=false;top.style.display='';"));
+ assert.ok(chat.includes("void verifiedOwnerHeaders().then(headers=>{"));
+ assert.ok(chat.includes("if(!headers?.Authorization)return;"));
 });
 
 test('cloud-browser GPT grant stays hidden while owner is unverified',()=>{
