@@ -44,7 +44,23 @@ export async function githubOperation(env,body,request=fetch){
   const identity=await request('https://api.github.com/user',options);
   if(!identity.ok||(await identity.json()).login?.toLowerCase()!=='www-infinity4')throw Error('github_repository_creation_owner_mismatch');
   const created=await request('https://api.github.com/user/repos',{...options,method:'POST',body:JSON.stringify({name:repository.split('/')[1],description:String(body.description||'').slice(0,350),private:body.private===true,auto_init:true})});
-  if(!created.ok)throw Error('github_repository_creation_http_'+created.status);
+  if(!created.ok){
+   // Repeated voice requests must never be mistaken for a failed creation
+   // if the exact, authenticated owner repository already exists.
+   if(created.status===422){
+    const existing=await request('https://api.github.com/repos/'+repository,options);
+    if(existing.ok){
+     const known=await existing.json();
+     if(known.full_name?.toLowerCase()===repository.toLowerCase()
+       &&known.owner?.login?.toLowerCase()==='www-infinity4'){
+      return {ok:true,status:'repository_already_exists',repository:known.full_name,
+       url:known.html_url,defaultBranch:known.default_branch,private:known.private===true,
+       testsPassed:false,deployed:false};
+     }
+    }
+   }
+   throw Error('github_repository_creation_http_'+created.status);
+  }
   const repo=await created.json();if(repo.full_name?.toLowerCase()!==repository.toLowerCase())throw Error('github_created_repository_mismatch');
   const workflow=`name: Bubbles Python and Node checks
 on: [push, pull_request, workflow_dispatch]
