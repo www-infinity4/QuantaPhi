@@ -16,7 +16,7 @@ Status: **DRAFT – not licensed, not approved for production advertising, not a
 - Explicit outbound action opens the brand's actual site in a new tab with a fallback rather than claiming unsupported third-party iframe embedding.
 - Anonymized `view` after 1s at least 50% visible, and `click` on the actual outbound action.
 - Cloudflare D1 table and Worker endpoint for idempotent event storage; daily reporting can query `/api/sponsor-stats` after the production binding exists. No client-side credit or payouts.
-- GA4 event pings are kept separate from actual stored D1 receipts.
+- GA4 sends directional client-side sponsor view/click events. These can be checked in the existing Analytics property if available; they are separate from actual stored D1 receipts. The current Worker routing has NOT been updated, so D1 events do NOT yet work.
 
 ## Required before release
 1. Obtain creative/brand advertising permissions and confirm the correct imagery for each campaign, including the requested Lazercat artwork.
