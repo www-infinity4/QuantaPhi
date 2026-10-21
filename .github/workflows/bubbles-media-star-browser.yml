@@ -1,0 +1,69 @@
+name: Bubbles Media Star real Chromium card acceptance
+on:
+  pull_request:
+    paths:
+      - 'bubbles-card-*'
+      - 'bubbles-ai.js'
+      - 'bubbles.html'
+      - 'fred-spaces-radio.js'
+      - 'following-spaces-radio.js'
+      - 'scripts/bubbles-media-star-browser-smoke.mjs'
+      - '.github/workflows/bubbles-media-star-browser.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-card-*'
+      - 'bubbles-ai.js'
+      - 'bubbles.html'
+      - 'fred-spaces-radio.js'
+      - 'following-spaces-radio.js'
+      - 'scripts/bubbles-media-star-browser-smoke.mjs'
+      - '.github/workflows/bubbles-media-star-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  chromium_card_and_chat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check Media Star source and browser probe
+        run: |
+          node --check bubbles-card-workspace.mjs
+          node --check bubbles-card-catalog.mjs
+          node --check bubbles-card-host.mjs
+          node --check scripts/bubbles-media-star-browser-smoke.mjs
+          node --test test/bubbles-card-workspace.test.mjs
+      - name: Install isolated Chromium test dependency
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Open local Bubbles chat and confirm Fred's registered card renders
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/bubbles-card-http.log 2>&1 &
+          echo $! >/tmp/bubbles-card-http.pid
+          for i in {1..20}; do
+            if curl -fsS http://127.0.0.1:8765/bubbles-card-host.html >/dev/null; then break; fi
+            sleep 1
+          done
+          node scripts/bubbles-media-star-browser-smoke.mjs
+      - name: Keep truthful card browser receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bubbles-media-star-browser-evidence
+          path: |
+            test-results/bubbles-media-star-browser.json
+            /tmp/bubbles-media-star-chat-failure.png
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Show real verification boundary
+        if: always()
+        run: |
+          echo 'Hosted Chromium verifies Bubbles DOM card mounting and replay links. It cannot certify X authentication, audible streaming, StarCoin payouts, background Android playback, or the installed Motorola APK.' >> "$GITHUB_STEP_SUMMARY"
