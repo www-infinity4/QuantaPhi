@@ -1,6 +1,7 @@
 import {browserTool} from './browser.mjs';
 import {researchArticle} from './research.mjs';
 import {handleMcp,mcpTools,selectMcpTool} from './mcp.mjs';
+import {semanticDecision} from './semantic-intent.mjs';
 import {lookupKind,webSearch,currentWeather,compareWeather} from './search.mjs';
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
@@ -471,6 +472,17 @@ export default {async fetch(request,env){
  if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',tools:{news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
+ if(request.method==='POST'&&url.pathname==='/v1/intent'){
+  if(!env.AI)return response(request,{ok:false,error:'semantic_model_unavailable'},503);
+  try{
+   const raw=await request.text();
+   if(raw.length>14000)return response(request,{ok:false,error:'intent_request_too_large'},413);
+   const body=JSON.parse(raw);
+   const decision=await semanticDecision(body,options=>runChatModel(env,'@cf/openai/gpt-oss-120b',options));
+   return response(request,{ok:true,decision,receipt:{tool:'grammar_phi.semantic_intent',
+    status:'planned_only',executed:false,permissionGranted:false}});
+  }catch{return response(request,{ok:false,error:'semantic_intent_unavailable'},503)}
+ }
  if(url.pathname==='/v1/browser')return browserTool(request,env);
  if(request.method==='POST'&&url.pathname==='/v1/transcribe')return transcribe(request,env);
  if(request.method==='POST'&&url.pathname==='/v1/research'){
