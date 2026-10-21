@@ -997,7 +997,7 @@ public final class BubblesService extends Service {
 
     private void heard(String raw, boolean typed) {
         String text = raw == null ? "" : raw.replaceAll("\\s+", " ").trim();
-        if (text.isEmpty() || text.length() > 1800 || muted) return;
+        if (text.isEmpty() || text.length() > 1800 || (!typed && muted)) return;
         long now = SystemClock.elapsedRealtime();
         String alias=BrainNotes.prefs(this).getString("name","Brain");
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
@@ -1244,6 +1244,21 @@ public final class BubblesService extends Service {
         BrainNotes.prefs(this).edit().putString("capture_state",
             camera ? "Camera recording requested · tap Bubbles capture notification"
                 : "Screen capture requested · tap notification and approve Android dialog").apply();
+        // A request from the visible floating Android WebView is a real user
+        // action. Try to show the Android permission activity immediately,
+        // instead of forcing another tap in the notification shade. The
+        // notification above remains a fallback if Android blocks the launch.
+        if (oracleWindow != null && Settings.canDrawOverlays(this)) {
+            try {
+                startActivity(intent);
+                BrainNotes.prefs(this).edit().putString("capture_state",
+                    "Opening Android consent · approve system dialog or tap Bubbles capture notification").apply();
+                return;
+            } catch (RuntimeException error) {
+                BrainNotes.prefs(this).edit().putString("last_error",
+                    "Cannot open screen permission directly; use Bubbles capture notification").apply();
+            }
+        }
         Toast.makeText(this, "Tap Bubbles capture notification to continue", Toast.LENGTH_LONG).show();
     }
 
