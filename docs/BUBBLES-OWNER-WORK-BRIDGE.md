@@ -1,8 +1,8 @@
 # Signed owner work intake
 
-Source implementation only until an exact Brain deployment and live ticket
-receipt are recorded here. The existing public `assist` response and the
-browser-polled `submit` queue are not executable Brain work tickets.
+This route has a verified production release and a real ticket-intake receipt below.
+That is **not** proof of runner execution or an owner-page tap. The public
+`assist` response and browser-polled `submit` queue are separate from Brain work tickets.
 
 `POST https://infinity-brain-clock.marvaseater.workers.dev/owner/bridge-work`
 accepts the existing Moltnook `bubbles-owner-message.yml@refs/heads/main`
@@ -44,4 +44,14 @@ PR #856 merged as `ca40684a16fa977f3a3576b62e30c269099c3e51` after 14 successful
 
 Moltnook [staging run 39654973031](https://github.com/www-infinity4/Moltnook/actions/runs/39654973031), job `119412714059`, verified source tests, bundle, existing credential and exact binding parity. Immutable candidate `012107be-79c6-400e-b279-69d11cd646d5` has zero production traffic. The production deployment remained unchanged.
 
-This intake is not yet live. No actual ticket/repair or physical Android acceptance is claimed. Next, refresh the isolated-preview and singleton release evidence from their old `19510f5` pins to this candidate and observed production baseline. Preserve isolated D1/DO, run the canary, and retain the existing owner-confirmed release guard. An unrelated passing workflow cannot substitute for these receipts.
+This paragraph was the pre-release checkpoint. The later evidence below supersedes its deployment status, but not the independent runner, owner-UI or Android requirements.
+
+## Verified production and intake — October 21, 2026, 19:28 UTC
+
+- Moltnook isolated canary [39660781356](https://github.com/www-infinity4/Moltnook/actions/runs/39660781356) verified candidate public endpoint reachability with a fixed anonymous HTTP 401. The previous `redirect:error` probes were invalid as reachability evidence, not proof of a transport defect. See `docs/BUBBLES-END-TO-END-ACCEPTANCE.md`.
+- Guarded owner production release [39661658507](https://github.com/www-infinity4/Moltnook/actions/runs/39661658507) completed, reporting exact 100% deployment readback. That verifies the release, not execution of an owner repair.
+- The bounded owner workflow [39661949801](https://github.com/www-infinity4/Moltnook/actions/runs/39661949801) independently checked existing five-day signed approval (HTTP 200, exact run identity) and POSTed one work request to production `/owner/bridge-work`.
+- The production intake returned ticket `IW-20261021-774371F7`, `status: ready`, `execution.status: queued_for_runner`, `deduplicated: false`, and `completed: false`. This **proves ticket creation and dispatch acceptance only**. Never resubmit this request merely because runner/phone acceptance is pending.
+- At intake, the signed consumer observation was `not_observed`. The website's authenticated Story Writer **View Stories** state change, actual runner claim/PR/target CI, and physical Android tap were not established by this receipt. Follow the distinct runner workflow and compare its actual output with the acceptance matrix before reporting completion.
+
+For future sessions: begin with the above verified ticket and run links. Check newer engine receipts and any resulting PR before considering another dispatch. Do not reset five-day authorization, request a new key, repeat the same ticket, treat generic chat as execution, or speak raw job identifiers to the owner.
