@@ -9,6 +9,8 @@
   if(typeof crypto.randomUUID!=='function')return;
   const payload={id:crypto.randomUUID(),campaign,event,placement};
   const body=JSON.stringify(payload);
+  // GA4 is client-side directional analytics, never purchase or financial proof.
+  try{if(typeof window.gtag==='function')window.gtag('event','sponsor_'+event,{campaign_id:campaign,placement,non_interaction:event==='view'});}catch(_){}
   // A beacon being queued never means that a payable/verified click occurred.
   try{if(navigator.sendBeacon){
     if(navigator.sendBeacon('/api/sponsor-event',new Blob([body],{type:'application/json'})))return;
