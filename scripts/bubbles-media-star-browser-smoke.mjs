@@ -45,6 +45,19 @@ try{
   assert.equal(await nested.locator('#followingSpacesRadio .fsr-person-picker').count(),1);
   assert.match(await workspace.locator('p[role="status"]').first().innerText(),/open in chat/i);
   results.push({probe:'bubbles_chat_spoken_command',status:'passed',card:'media-star',iframeRendered:true,playerLinkedToX:true});
+  // Now execute a FOLLOW-UP ordinary tap. Bubbles must use its real action
+  // adapter and must not fake in-chat X playback or open a paid replay.
+  let externalPopups=0;
+  chat.on('popup',()=>externalPopups++);
+  await field.fill('Bubbles tap Play');
+  await chat.locator('.ba-panel .ba-send').first().click();
+  const last=chat.locator('.ba-panel .ba-message.ba-assistant').last();
+  await last.waitFor({state:'visible',timeout:12000});
+  const tapAnswer=await last.innerText();
+  assert.match(tapAnswer,/original X replay|original X.*replay/i);
+  assert.match(tapAnswer,/no in-chat audio|no audio playback/i);
+  assert.equal(externalPopups,0,'outside publisher playback cannot open without a user tap');
+  results.push({probe:'bubbles_action_driver_fred_play',status:'passed',externalPopups,actualReply:tapAnswer.slice(0,200),audioVerified:false});
  }catch(error){
   chatError=String(error?.message||error).slice(0,450);
   results.push({probe:'bubbles_chat_spoken_command',status:'failed',reason:chatError});
