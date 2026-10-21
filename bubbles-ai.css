@@ -313,3 +313,15 @@
 .ba-panel .ba-recordb-actions .ba-control[hidden]{display:none!important}
 .ba-panel .ba-recordb-start{background:#653096;color:#fff;border-color:#653096}
 .ba-panel .ba-recordb-stop{border-color:#b8879e;color:#6a2245}
+
+
+/* Keep technical owner decisions out of the chat transcript. One collapsed
+   section is readable on a phone; detail remains available on demand. */
+.ba-panel .ba-owner-decision-drawer{margin:8px 0;padding:9px 10px;border:1px solid #c6b3de;border-radius:12px;background:#f9f5fc}
+.ba-panel .ba-owner-decision-drawer>summary{font-weight:750;font-size:15px;cursor:pointer}
+.ba-panel .ba-owner-decision-drawer>.ba-muted{font-size:14px;line-height:1.5}
+.ba-panel .ba-owner-decision-list{display:grid;gap:8px;max-height:42vh;overflow-y:auto}
+.ba-panel .ba-owner-decision-list .ba-line{width:100%;margin:0}
+.ba-panel .ba-owner-decision-list .ba-owner-approval{padding:10px}
+.ba-panel .ba-owner-decision-list .ba-owner-approval-copy{font-weight:500}
+.ba-panel .ba-owner-decision-drawer[hidden]{display:none!important}
