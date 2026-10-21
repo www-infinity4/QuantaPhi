@@ -178,7 +178,7 @@ export class CardWorkspace{
   let snapshot={cardId:record.card.id,title:record.card.title,repository:record.card.repository,url:record.card.url,sourcePaths:record.card.scripts?[...record.card.scripts,...record.card.styles]:record.card.id==='infinity-radio'?['index.html','app.js']:['index.html'],loaded:record.loaded};
   try{
    const doc=record.frame.contentDocument;
-   snapshot={...snapshot,controls:[...doc.querySelectorAll('button,input,select,textarea')].slice(0,35).map(control=>({label:(control.getAttribute('aria-label')||control.textContent||control.placeholder||control.name||control.id).trim().slice(0,100),disabled:control.disabled===true})),
+   snapshot={...snapshot,controls:safeCardControls(doc).map(({label,disabled,visible,tag,frameDepth})=>({label,disabled,visible,tag,frameDepth})),
     playback:[...record.media].map(media=>({paused:media.paused,ended:media.ended,currentTime:Math.round(media.currentTime||0),readyState:media.readyState,error:media.error?.code||null})),
     errors:[...record.errors,...(record.frame.contentWindow.BubblesCardDiagnostics?.().errors||[])].slice(-8)};
    if(['media-star','fred-spaces'].includes(record.card.id)){
