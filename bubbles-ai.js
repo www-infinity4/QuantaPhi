@@ -45,7 +45,7 @@ const humanReplies=()=>({
 const brainTools=window.BubblesBrainActions||null;
 let cardWorkspaceModule,cardWorkspaceInstance,activeCardEvidence=null;
 async function chatCardWorkspace(){
- if(!cardWorkspaceModule)cardWorkspaceModule=import('/bubbles-card-workspace.mjs?v=20261020-card-tools1');
+ if(!cardWorkspaceModule)cardWorkspaceModule=import('/bubbles-card-workspace.mjs?v=20261020-media-star2');
  const module=await cardWorkspaceModule;
  if(!cardWorkspaceInstance){
   const mount=create('section');conversation.append(mount);
