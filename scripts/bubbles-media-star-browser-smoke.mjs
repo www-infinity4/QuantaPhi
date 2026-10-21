@@ -49,11 +49,14 @@ try{
   // adapter and must not fake in-chat X playback or open a paid replay.
   let externalPopups=0;
   chat.on('popup',()=>externalPopups++);
+  await chat.waitForFunction(()=>document.querySelector('.ba-panel .ba-send')?.disabled===false,{timeout:12000});
+  const before=await chat.locator('.ba-panel .ba-message.ba-assistant').count();
   await field.fill('Bubbles tap Play');
   await chat.locator('.ba-panel .ba-send').first().click();
-  const last=chat.locator('.ba-panel .ba-message.ba-assistant').last();
-  await last.waitFor({state:'visible',timeout:12000});
-  const tapAnswer=await last.innerText();
+  await chat.waitForFunction(
+   count=>document.querySelectorAll('.ba-panel .ba-message.ba-assistant').length>count,
+   before,{timeout:12000});
+  const tapAnswer=await chat.locator('.ba-panel .ba-message.ba-assistant').nth(before).innerText();
   assert.match(tapAnswer,/original X replay|original X.*replay/i);
   assert.match(tapAnswer,/no in-chat audio|no audio playback/i);
   assert.equal(externalPopups,0,'outside publisher playback cannot open without a user tap');
