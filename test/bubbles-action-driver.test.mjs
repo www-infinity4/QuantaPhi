@@ -102,3 +102,10 @@ test('Bubbles chat executes adapter action before freeform model advice',()=>{
  assert.ok(start<ui.indexOf(' // Resolve every spoken/typed turn against known cards first'));
  assert.ok(end<ui.indexOf(' // User-selected image is untrusted evidence'));
 });
+
+test('synthetic GitHub tool fixture was created, fetched and updated with no personal data',()=>{
+ const receipt=JSON.parse(readFileSync('test/fixtures/bubbles-tool-execution-receipt.json','utf8'));
+ assert.equal(receipt.stage,'created-read-updated');
+ assert.deepEqual(receipt.verifiedOperations,['create','fetch','update']);
+ assert.equal(receipt.privateData,false);
+});
