@@ -16,9 +16,16 @@ const humanReplies=()=>({
  githubReply(result){
   if(result.error||!result.ok)return 'I could not confirm that GitHub finished the request. Nothing is being marked complete.';
   if(result.status==='dispatch_accepted')return 'GitHub accepted the request, but the work has not finished.';
-  if(result.status==='repository_created')return 'GitHub created '+result.repository+'. '+(result.url||'')+' The repository is ready for source work.';
+  if(result.status==='repository_created')return 'GitHub created '+result.repository+'. '+(result.url||'')+' The repository exists.'+(result.environment?.status==='blocked'?' Automated checks could not be configured: '+String(result.environment.error||'unknown').slice(0,90)+'.':' The automated workflow setup state is '+String(result.environment?.status||'unverified')+'.');
   if(result.status==='repository_already_exists')return 'This repository already exists: '+result.repository+'. '+(result.url||'')+' I can continue work there without creating a duplicate.';
-  if(result.status==='credential_verified_read')return 'The GitHub connection is responding.';
+  if(result.status==='credential_verified_read')return 'GitHub verified read access. File creation and deployment were not attempted.';
+  if(result.status==='inspected')return 'GitHub source inspection finished. No files were created or changed.';
+  if(result.status==='committed_unverified'){
+   const pr=Array.isArray(result.receipts)?result.receipts.find(r=>r.status==='pull_request_open'&&r.url):null;
+   const commit=Array.isArray(result.receipts)?result.receipts.find(r=>r.status==='committed_unverified'&&r.commitSha):null;
+   return 'GitHub recorded a source commit'+(commit?' ('+commit.commitSha.slice(0,12)+')':'')+'.'+(pr?' Review pull request: '+pr.url+'.':' Pull request not yet confirmed.')+' Tests, merge and deployment are not verified.';
+  }
+  if(result.status==='tool_limit_reached')return 'The GitHub assistant reached its tool limit. Check the recorded receipts for any commits or pull requests; completion is unverified.';
   if(result.status==='completed'||result.status==='deployed_verified')return 'The available completion checks passed. What should we work on next?';
   return 'GitHub responded. I can check the detailed result before calling anything finished.';
  },
@@ -2050,6 +2057,10 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  messages.push({role:'user',text:request});messages=messages.slice(-400);persistChat();
  status.textContent=config.alias+' is thinking…';
  let workEvidence='';
+ // Questions and refusals are never GitHub write authorization. A clear
+ // "can you create..." request still counts as an instruction; "how do I..."
+ // and "don't create..." do not.
+ const ownerGithubNonAction=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:do\s+not|don['’]t|never|stop|i\s+(?:do\s+not|don['’]t)\s+want|(?:how|why|what|when|where)\b|(?:can|could|would) you\s+(?:explain|describe|show me how|tell me how)\b)/i.test(request);
  const createRepository=/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request)
   || /\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*[A-Za-z][\w.-]*\s+(?:(?:the|github)\s+)*(?:repo|repository)\b/i.test(request);
  const directRequest=/^(?:(?:hey|please|bubbles)[, ]+)*(?:(?:can|could|would|will) you\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
@@ -2060,7 +2071,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Owner-named RecordB issue #2 is a multi-agent implementation job, not a
  // generic GitHub 'assist' operation or a read-only work history report.
  const namedRecordBIssue=/\brecord\s?b\b/i.test(request)&&/\bissue\s*#?\s*2\b/i.test(request);
- const directCoding=!requestsAgents&&!namedRecordBIssue&&codeTask;
+ const directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
  // without generating a Robot Brain ticket or relying on the writer model.
  const coderRequest=coderIntent(request);
@@ -2079,7 +2090,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   drainVoiceTurns()
   return;
  }
- else if(!embedded&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){
+ else if(!embedded&&!ownerGithubNonAction&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){
   const named=request.match(/\bwww-infinity4\/[A-Za-z0-9_.-]+\b/);
   // Repository names must be explicitly introduced by "named" or "called".
   // Do not mistake the article "a" in "create a repo" for a repository name.
@@ -2105,7 +2116,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    :'Select one repository in the GitHub targets menu. Nothing was changed.';
   else try{
    status.textContent='Checking the direct GitHub connection. Actual receipts will also appear in the color-bot feed.';
-   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:add|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
+   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:add|create|make|build|generate|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
    const namedWorkflow=request.match(/\b([a-z0-9][a-z0-9_.-]*\.ya?ml)\b/i)?.[1]||'';
    const workflowIntent=/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
    const workflowDispatch=workflowIntent&&/\b(?:run|start|trigger|dispatch|rerun|execute)\b/i.test(request);
