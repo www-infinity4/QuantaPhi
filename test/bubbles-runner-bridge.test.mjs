@@ -43,3 +43,11 @@ test('own-run blocked receipts disclose only fixed failure categories, never pri
   assert.ok(!JSON.stringify(status).includes('private'));
  }
 });
+test('signed consumer diagnostics expose only fixed state and bounded age, not private data',async()=>{
+ const f=fixture(),store={...consent(true),consumerStatus:async()=>({state:'ready',ageSeconds:12.7,token:'secret',reply:'private'})};
+ const status=await runnerMessage({claims,body:{operation:'status'},db:f.db,store});
+ assert.deepEqual(status.consumer,{state:'ready',ageSeconds:12});
+ assert.doesNotMatch(JSON.stringify(status),/secret|private/);
+ store.consumerStatus=async()=>({state:'some-private-error',ageSeconds:999999});
+ assert.deepEqual((await runnerMessage({claims,body:{operation:'status'},db:f.db,store})).consumer,{state:'unavailable',ageSeconds:86400});
+});

@@ -3,6 +3,19 @@ import {DurableObject} from 'cloudflare:workers';
 // Every automation call must still pass the existing Robot Brain owner verifier.
 const FIVE_DAYS_MS=5*24*60*60*1000;
 export class BrowserConsentStore extends DurableObject {
+ async consumerHeartbeat(state){
+  if(!['ready','busy'].includes(state))return {ok:false,error:'invalid_consumer_state',status:400};
+  if(!(await this.chatgptStatus()).enabled||!(await this.status()).enabled)return {ok:false,error:'existing_five_day_approval_required',status:403};
+  await this.ctx.storage.put('owner-message-consumer',{state,seenAt:Date.now()});
+  return {ok:true};
+ }
+ async consumerStatus(){
+  if(!(await this.chatgptStatus()).enabled||!(await this.status()).enabled)return {state:'approval_inactive'};
+  const record=await this.ctx.storage.get('owner-message-consumer');
+  if(!record||!['ready','busy'].includes(record.state)||!Number.isFinite(record.seenAt))return {state:'not_observed'};
+  const ageSeconds=Math.max(0,Math.floor((Date.now()-record.seenAt)/1000));
+  return {state:ageSeconds>45?'stale':record.state,ageSeconds};
+ }
  async status(){
   const record=await this.ctx.storage.get('owner-browser-consent');
   return {ok:true,enabled:!!record?.enabled&&record.expiresAt>Date.now(),

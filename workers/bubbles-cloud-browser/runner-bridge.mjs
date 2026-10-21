@@ -48,5 +48,8 @@ export async function runnerMessage({claims,body,db,store,now=Date.now()}){
   const allowed=['job_expired','unsupported_bridge_action','empty_message','bubbles_chat_not_ready','bubbles_did_not_return_a_confirmed_answer','bubbles_chat_request_failed','bubbles_reply_timeout','bubbles_chat_not_available'];
   failureCode=allowed.includes(result?.error)?result.error:'unclassified_bridge_failure';
  }
- return {ok:true,jobId:id,state:row?.status||'missing',expired:!!row&&row.expires_ms<=now,...(failureCode?{failureCode}:{})};
+ const observed=typeof store.consumerStatus==='function'?await store.consumerStatus():{state:'unavailable'};
+ const consumer={state:['ready','busy','stale','not_observed','approval_inactive'].includes(observed?.state)?observed.state:'unavailable',
+  ...(Number.isFinite(observed?.ageSeconds)?{ageSeconds:Math.max(0,Math.min(86400,Math.floor(observed.ageSeconds)))}:{})};
+ return {ok:true,jobId:id,state:row?.status||'missing',expired:!!row&&row.expires_ms<=now,consumer,...(failureCode?{failureCode}:{})};
 }
