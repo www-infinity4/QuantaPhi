@@ -340,7 +340,7 @@ async function execute(request,env,body){
   // place via its grounded, read-only structured tool selector.
   if(result.needsLocation&&body.mcp===true&&env.AI){
    const semantic=await selectMcpTool(env,question,
-    command=>runMcpRead(request,env,command),{location:givenLocation||''});
+    command=>runMcpRead(request,env,command,question),{location:givenLocation||''});
    if(semantic?.receipt?.tool==='weather.current'&&semantic.receipt.status==='complete')
     return response(request,{...semantic,receipt:{...semantic.receipt,
      interpretation:'semantic_read_only',selection:'structured_function_call'}});
@@ -351,8 +351,15 @@ async function execute(request,env,body){
   const result=await webSearch(question,env);
   const sources=result.results.map(x=>({title:x.title,url:x.url,excerpt:x.snippet,provider:x.engine,readScope:'Search result excerpt; full article not fetched'}));
   const output=sources.length?'Live results from '+result.provider+': '+sources.slice(0,5).map((x,i)=>(i+1)+'. '+x.title+' — '+x.excerpt).join('\n'):'Search sources are unavailable. No results were invented. You can still open Google Search using the supplied button.';
-  return response(request,{ok:true,output,query:result.query,sources,googleSearchUrl:result.googleSearchUrl,
-   searchProvider:result.provider,googleVerified:result.googleVerified,receipt:{...receipt,status:result.ok?'complete':'failed',provider:result.provider,googleVerified:result.googleVerified}});
+  const evidence={ok:true,output,query:result.query,sources,googleSearchUrl:result.googleSearchUrl,
+   searchProvider:result.provider,googleVerified:result.googleVerified,receipt:{...receipt,status:result.ok?'complete':'failed',provider:result.provider,googleVerified:result.googleVerified}};
+  const found=response(request,evidence);
+  // Synthesize from verified search excerpts, never fabricated article reads.
+  // Retain all source receipts and explicitly mark failed synthesis incomplete.
+  const researchRequest=clean(body.researchContext,1800)||question;
+  if(sources.length&&env.AI&&/\b(?:research|explain|why|how|summari[sz]e|compare|analy[sz]e|synthesi[sz]e)\b/i.test(researchRequest))
+   return finishSearchReply(found,()=>gptReply(request,env,researchRequest,evidence.receipt,evidence,researchRequest),20000,researchRequest);
+  return found;
  }
  if(tool==='web.read_page')return readPublicPage(request,body,receipt);
  if(tool==='github.read_file')return readGithubFile(request,body,receipt);
@@ -391,7 +398,7 @@ async function execute(request,env,body){
  // repository writer, phone action, permission grant or arbitrary URL.
  // Deterministic requests above still take the fastest direct route.
  if(body.mcp===true&&tool==='oracle.chat'){
-  const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command),
+  const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command,question),
    {location:body.location||body.context?.location||''});
   if(found&&found.receipt?.tool){
    return response(request,{...found,receipt:{...found.receipt,
@@ -401,10 +408,10 @@ async function execute(request,env,body){
  }
  return gptReply(request,env,clean(body.input,32000)||question,receipt,null,question);
 }
-async function runMcpRead(request,env,command){
+async function runMcpRead(request,env,command,originalQuestion=''){
  // Never accept an arbitrary URL, tool name or authorizing role from a model.
  const cases={
-  web_search:()=>({request:command.query,tool:'web.search'}),
+  web_search:()=>({request:command.query,tool:'web.search',researchContext:clean(originalQuestion,1800)}),
   weather_current:()=>({request:'What is the current weather in '+command.location,location:command.location,tool:'weather.current'}),
   resonance_calculate:()=>({request:'Calculate resonance',tool:'resonance.calculate',args:{l:command.l,lUnit:command.lUnit,c:command.c,cUnit:command.cUnit}}),
   news_headlines:()=>({request:'Latest current headlines',tool:'news.headlines'})
@@ -476,7 +483,7 @@ export async function finishSearchReply(original,summarize,timeoutMs=20000,userR
   if(!summarized.ok)return fallback();
   const data=await summarized.clone().json();
   const output=String(data.output||'').trim();
-  if(!output||hasModelToolLeak(output)||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output))return fallback();
+  if(!output||hasModelToolLeak(output)||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output)||(/\b(?:research|explain|synthesi[sz]e)\b/i.test(userRequest)&&/^Live results from /i.test(output)))return fallback();
   return summarized;
  }catch{return fallback()}
  finally{clearTimeout(timer)}
