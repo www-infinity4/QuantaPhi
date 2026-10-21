@@ -40,7 +40,13 @@ export async function runnerMessage({claims,body,db,store,now=Date.now()}){
   if(row.payload!==payload)return {ok:false,error:'bridge_run_message_conflict',status:409};
   return {ok:true,jobId:id,state:row.status,expiresAt:row.expires_ms};
  }
- const row=await db.prepare('SELECT status,expires_ms FROM bubbles_chatgpt_bridge WHERE id=?').bind(id).first();
+ const row=await db.prepare('SELECT status,expires_ms,result FROM bubbles_chatgpt_bridge WHERE id=?').bind(id).first();
  // Status only: never disclose private replies or another run's conversations.
- return {ok:true,jobId:id,state:row?.status||'missing',expired:!!row&&row.expires_ms<=now};
+ let failureCode;
+ if(row?.status==='blocked'){
+  let result;try{result=JSON.parse(row.result||'{}')}catch{}
+  const allowed=['job_expired','unsupported_bridge_action','empty_message','bubbles_chat_not_ready','bubbles_did_not_return_a_confirmed_answer','bubbles_chat_request_failed','bubbles_reply_timeout','bubbles_chat_not_available'];
+  failureCode=allowed.includes(result?.error)?result.error:'unclassified_bridge_failure';
+ }
+ return {ok:true,jobId:id,state:row?.status||'missing',expired:!!row&&row.expires_ms<=now,...(failureCode?{failureCode}:{})};
 }
