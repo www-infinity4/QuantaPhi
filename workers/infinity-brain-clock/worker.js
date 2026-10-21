@@ -6,7 +6,7 @@ import {conversationMemory} from './conversation-memory.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
 import {ownerClockCommand,runDueOwnerClock} from './owner-task-clock.mjs';
-import {checkOwnerRunnerRequest,runnerDispatchReceipt} from './runner-request.mjs';
+import {checkOwnerRunnerRequest,runnerDispatchReceipt,submitApprovedBridgeWork} from './runner-request.mjs';
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
@@ -19,7 +19,7 @@ import {ticketStatusFromJobs} from './ticket-status.mjs';
 import {calculateResonance,parseResonanceSpeech,CALCULATOR_SOURCE} from '../bubbles-tools/resonance.mjs';
 import { evidenceBucket } from './evidence-db.mjs';
 import { DurableObject } from 'cloudflare:workers';
-import { authenticate, supported } from './runner-auth.mjs';
+import { authenticate, supported, authenticateOwnerBridge } from './runner-auth.mjs';
 import { archiveImage, evidenceKey } from './evidence-store.mjs';
 import { validatePreview } from './preview-contract.mjs';
 import { jobQuant } from './job-quant.mjs';
@@ -703,6 +703,14 @@ export class BrainClock extends DurableObject{
   return record;
  }
  async fetch(request){
+  // Service-internal only: the outer Worker verifies bridge signature and
+  // live consent. Serialize submission IDs so conflicting concurrent retries
+  // cannot each insert a different ticket before either sees the other.
+  if(new URL(request.url).pathname==='/owner/bridge-work-create')
+   return this.ctx.blockConcurrencyWhile(async()=>{
+    const result=await ownerTickets(this.env,'/work/tickets/create',await request.json());
+    return Response.json(result.result,{status:result.status});
+   });
   if(new URL(request.url).pathname.startsWith('/phone/')){
    const body=await request.json();
    const result=await this.ctx.blockConcurrencyWhile(()=>phoneTool(this.ctx.storage,
@@ -1221,6 +1229,27 @@ export default{
  },
  async fetch(request,env){
   const path=new URL(request.url).pathname;
+  if(path==='/owner/bridge-work'&&request.method==='POST'){
+   try{
+    const claims=await authenticateOwnerBridge(request);
+    if(Number(request.headers.get('Content-Length')||0)>6000)
+     return output(request,{ok:false,error:'owner_bridge_body_too_large'},413);
+    const raw=await request.text();
+    if(raw.length>6000)return output(request,{ok:false,error:'owner_bridge_body_too_large'},413);
+    const result=await submitApprovedBridgeWork({request,claims,body:JSON.parse(raw),
+      submit:async body=>{
+       const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch(
+        'https://clock.internal/owner/bridge-work-create',{method:'POST',body:JSON.stringify(body)});
+       return {status:response.status,result:await response.json()};
+      },
+      dispatch:async ticketId=>{
+       const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch(
+        'https://clock.internal/run-next',{method:'POST',body:JSON.stringify({ticketId})});
+       return response.json();
+      }});
+    return output(request,result.result,result.status);
+   }catch{return output(request,{ok:false,error:'owner_bridge_work_unavailable'},401)}
+  }
   if(path.startsWith('/tools/phone/')&&request.method==='POST'){
    const op=path.slice('/tools/phone/'.length),origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
