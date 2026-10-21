@@ -40,9 +40,23 @@ test('busy chat leaves the next job unclaimed; readiness resumes processing with
   'let chatgptApproved=false,bridgePolling=false,state=null;'+poll+';return pollChatGPT;')(
   async endpoint=>{calls.push(endpoint);return endpoint==='permission'?{enabled:true,expiresAt:Date.now()+1000}:{queue:'empty'}},
   window,(...state)=>states.push(state),Event,{});
- await run();assert.deepEqual(calls,['permission']);assert.equal(states.at(-1)[0],'waiting-for-chat');
- ready=true;await run();assert.deepEqual(calls,['permission','process']);assert.equal(states.at(-1)[0],'ready');
+ await run();assert.deepEqual(calls,['permission','heartbeat']);assert.equal(states.at(-1)[0],'waiting-for-chat');
+ ready=true;await run();assert.deepEqual(calls,['permission','heartbeat','process']);assert.equal(states.at(-1)[0],'ready');
  const lifecycle=ui.slice(ui.indexOf("setInterval(()=>void pollChatGPT()"));
  for(const event of ['focus','pageshow','bubbles:owner-ready','visibilitychange'])assert.ok(lifecycle.includes(event));
  assert.ok(lifecycle.includes('void pollChatGPT();'));
+});
+test('consumer heartbeat reports observed readiness without extending either grant or storing identity',async()=>{
+ const {store,rows,writes}=fixture();
+ assert.equal((await store.consumerHeartbeat('ready')).status,403);
+ await store.enableChatGPT();const expiry=(await store.chatgptStatus()).expiresAt;
+ assert.equal((await store.consumerStatus()).state,'not_observed');
+ assert.equal((await store.consumerHeartbeat('owner-secret')).status,400);
+ await store.consumerHeartbeat('busy');assert.equal((await store.consumerStatus()).state,'busy');
+ const saved=rows.get('owner-message-consumer');assert.deepEqual(Object.keys(saved).sort(),['seenAt','state']);
+ rows.set('owner-message-consumer',{state:'ready',seenAt:Date.now()-60000});
+ const before=writes.length;assert.equal((await store.consumerStatus()).state,'stale');assert.equal(writes.length,before);
+ assert.equal((await store.chatgptStatus()).expiresAt,expiry);
+ await store.revoke();assert.equal((await store.consumerHeartbeat('ready')).status,403);
+ assert.equal((await store.consumerStatus()).state,'approval_inactive');
 });
