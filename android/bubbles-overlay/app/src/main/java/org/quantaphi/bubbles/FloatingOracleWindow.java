@@ -163,7 +163,7 @@ final class FloatingOracleWindow {
         title.setSingleLine(true);
         title.setTypeface(null, Typeface.BOLD);
         header.addView(title, new LinearLayout.LayoutParams(0, -2, 1));
-        liveBack = button("Live voice", false);
+        liveBack = button("Live", false);
         liveBack.setMinHeight(dp(44));
         liveBack.setContentDescription("Open GPT-Live owner setup");
         liveBack.setOnClickListener(v -> {
@@ -173,17 +173,8 @@ final class FloatingOracleWindow {
                 website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
             } else website.loadUrl("https://quantaphi.org/bubbles-gpt-live.html?v=" + BuildConfig.VERSION_NAME);
         });
-        // Keep the normal chat header readable on a narrow Android screen.
-        // Live voice remains available only when the user opens voice options.
-        liveBack.setVisibility(View.GONE);
-        Button voiceOptions = button("Options", false);
-        voiceOptions.setContentDescription("Show or hide optional live voice control");
-        voiceOptions.setOnClickListener(v -> {
-            boolean showVoice = liveBack.getVisibility() != View.VISIBLE;
-            liveBack.setVisibility(showVoice ? View.VISIBLE : View.GONE);
-            voiceOptions.setText(showVoice ? "Less" : "Options");
-        });
-        header.addView(voiceOptions);
+        // Keep a single visible Live button in the chat header. Do not gate it
+        // behind Options/Less; microphone consent remains in the live page.
         header.addView(liveBack);
         Button close = button("✕ Hide", false);
         close.setMinWidth(dp(72));
@@ -336,7 +327,7 @@ final class FloatingOracleWindow {
                     denyLivePermission();
                     service.releaseLiveMicrophone();
                     livePage = false;
-                    if (liveBack != null) { liveBack.setText("Live voice"); liveBack.setContentDescription("Open GPT-Live owner setup"); }
+                    if (liveBack != null) { liveBack.setText("Live"); liveBack.setContentDescription("Open GPT-Live owner setup"); }
                     loadGeneration++;
                     dispatchInFlight = false;
                     typedDispatchInFlight = false;
