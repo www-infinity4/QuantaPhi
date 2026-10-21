@@ -11,6 +11,10 @@ export async function processChatGPTJob({db,store,request,env,body,browserTool,n
  if(!db?.prepare)return err('bridge_database_not_bound',503);
  const grant=await store.chatgptStatus();
  if(!grant.enabled)return err('chatgpt_five_day_approval_required',403);
+ // Expire stale entries together. One old entry per eight-second poll can
+ // otherwise consume the entire lifetime of a new request behind a backlog.
+ await db.prepare("UPDATE bubbles_chatgpt_bridge SET status='blocked',result=?,updated_ms=? WHERE status='queued' AND (expires_ms<? OR created_ms<? OR created_ms>?)")
+  .bind(JSON.stringify({ok:false,error:'job_expired'}),now,now,now-MAX_AGE_MS,now+30000).run();
  const record=await db.prepare("SELECT id,action,payload,created_ms,expires_ms FROM bubbles_chatgpt_bridge WHERE status='queued' ORDER BY created_ms LIMIT 1").first();
  if(!record)return {ok:true,queue:'empty'};
  if(typeof record.id!=='string'||record.id.length>80)return err('invalid_job_id',400);
