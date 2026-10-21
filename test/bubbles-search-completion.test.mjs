@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {finishSearchReply} from '../workers/bubbles-tools/worker.mjs';
+import worker,{finishSearchReply} from '../workers/bubbles-tools/worker.mjs';
 const original=()=>Response.json({ok:true,output:'SearXNG result: Lovilia is in Iowa.',sources:[{title:'Lovilia',url:'https://example.org'}],receipt:{tool:'web.search',status:'complete'}});
 for(const [name,summarize] of [
  ['model throws',()=>{throw Error('provider unavailable')}],
@@ -27,4 +27,55 @@ test('model planning JSON is not a completed source-backed answer',async()=>{
 test('synthesis timeout preserves sources and explicitly reports the missing requested plan',async()=>{
  const result=await finishSearchReply(original(),()=>new Promise(()=>{}),5,'Research hydrogen and include next steps');
  const data=await result.json();assert.equal(data.answerStatus,'partial');assert.match(data.output,/plan is not complete/);
+});
+
+test('real research tool produces a grounded explanation, not just search excerpts',async()=>{
+ const originalFetch=globalThis.fetch;
+ let modelCalls=0;
+ globalThis.fetch=async()=>Response.json({results:[{
+  title:'Hydrogen storage official research',url:'https://energy.gov/hydrogen',
+  content:'Compressed gas and cold liquid hydrogen storage are physical approaches.',engine:'web'
+ }]});
+ try{
+  const result=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',
+   headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+   body:JSON.stringify({request:'hydrogen storage',tool:'web.search',
+    researchContext:'Research hydrogen storage and explain how it works using credible sources.'})}),{
+    AI:{run:async(_model,options)=>{
+     modelCalls++;
+     assert.match(options.messages[1].content,/Compressed gas and cold liquid hydrogen/);
+     assert.match(options.messages[1].content,/Research hydrogen storage/);
+     return {response:'Hydrogen can be stored as compressed gas or cooled into a liquid. These methods need pressure vessels or refrigeration, according to the source excerpt. The full paper was not read.'};
+    }}
+   });
+  const body=await result.json();
+  assert.equal(modelCalls,1);
+  assert.equal(body.receipt.tool,'web.search');
+  assert.equal(body.receipt.status,'complete');
+  assert.equal(body.sources.length,1);
+  assert.match(body.output,/stored as compressed gas/);
+  assert.doesNotMatch(body.output,/^Live results from /);
+  assert.equal(body.sources[0].readScope,'Search result excerpt; full article not fetched');
+  assert.equal(body.receipt.repositoryActionsVerified,false);
+ }finally{globalThis.fetch=originalFetch}
+});
+test('unavailable research synthesis keeps genuine search sources and marks explanation partial',async()=>{
+ const originalFetch=globalThis.fetch;
+ globalThis.fetch=async()=>Response.json({results:[{
+  title:'Energy research',url:'https://energy.gov/hydrogen',content:'Compressed storage.',engine:'web'
+ }]});
+ try{
+  const result=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',
+   headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+   body:JSON.stringify({request:'Research hydrogen storage',tool:'web.search'})}),{
+    AI:{run:async()=>{throw Error('model failed')}}
+   });
+  const body=await result.json();
+  assert.equal(body.receipt.tool,'web.search');
+  assert.equal(body.receipt.status,'complete');
+  assert.equal(body.sources.length,1);
+  assert.equal(body.answerStatus,'partial');
+  assert.equal(body.analysisVerified,false);
+  assert.match(body.output,/not complete/i);
+ }finally{globalThis.fetch=originalFetch}
 });
