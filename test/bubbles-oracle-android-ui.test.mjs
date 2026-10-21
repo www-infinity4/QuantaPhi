@@ -6,7 +6,7 @@ test('all first party Bubbles entrypoints load one fresh Octaves chat stylesheet
  for(const p of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const html=fs.readFileSync(p,'utf8');
   assert.match(html,/bubbles-octaves-chat\.css\?v=20261020-octaves-chat3/);
-  assert.match(html,/bubbles-ai\.js\?v=20261020-background-bridge1/);
+  assert.match(html,/bubbles-ai\.js\?v=20261020-recordb2/);
  }
 });
 test('Android chat scroll and composer remain distinct, readable surfaces',()=>{
