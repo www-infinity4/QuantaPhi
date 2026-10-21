@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
 class Element {
- constructor(){this.children=[];this.style={};this.classList={add(){}};this.listeners={};}
+ constructor(){this.children=[];this.style={};this.dataset={};this.classList={add(){}};this.listeners={};}
  append(...items){for(const item of items){if(item.parent)item.parent.children=item.parent.children.filter(x=>x!==item);item.parent=this;this.children.push(item);}}
  setAttribute(){} removeAttribute(){} addEventListener(name,fn){this.listeners[name]=fn;}
 }
@@ -13,9 +13,12 @@ async function exercise({approved,proof=true,slow=false}){
  let release;
  const pending=new Promise(resolve=>{release=resolve;});
  try{
-  globalThis.document={hidden:true,createElement:()=>new Element()};
+  globalThis.document={hidden:true,createElement:()=>new Element(),addEventListener(){}};
   globalThis.CustomEvent=class{constructor(type,init){this.type=type;this.detail=init.detail;}};
-  globalThis.window={dispatchEvent(event){events.push(event.type);event.detail.respond({ok:true,reply:'acknowledged'});}};
+  globalThis.window={addEventListener(){},dispatchEvent(event){
+   if(event.type==='bubbles:chatgpt-ready')event.detail.respond(true);
+   if(event.type==='bubbles:chatgpt-bridge'){events.push(event.type);event.detail.respond({ok:true,reply:'acknowledged'});}
+  }};
   globalThis.setInterval=fn=>{intervals.push(fn);return 1;};
   globalThis.fetch=async(url,options)=>{
    assert.equal(options.headers.Authorization,'Bearer owner-fixture');
@@ -29,7 +32,6 @@ async function exercise({approved,proof=true,slow=false}){
   const mod=await import('data:text/javascript;base64,'+Buffer.from(source+'\n// '+Math.random()).toString('base64'));
   mod.mount({host:new Element(),ownerHeaders:async()=>proof?{Authorization:'Bearer owner-fixture'}:null});
   for(let i=0;i<5;i++)await new Promise(resolve=>setImmediate(resolve));
-  intervals[0]();
   if(slow){
    intervals[0]();intervals[0]();
    for(let i=0;i<5;i++)await new Promise(resolve=>setImmediate(resolve));
