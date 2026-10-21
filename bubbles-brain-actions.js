@@ -25,6 +25,9 @@ function classify(utterance){
  if(!text||text.length>4000)return 'chat';
  const addressed=text.replace(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)+/i,'');
  if(/^(?:do\s+not|don['’]t|never|i\s+(?:do\s+not|don['’]t)\s+(?:want|need)|i\s+(?:want|need)\s+(?:you\s+)?not\s+to)\b/i.test(addressed))return 'chat';
+ // RecordB engineering requests are work, not generic recorder questions.
+ // Never interpret playback or a casual mention as permission to record.
+ if(/\brecord\s?b\b/i.test(addressed)&&/\b(?:hook|connect|integrate|build|upgrade|sync|index|store|implement)\b/i.test(addressed)&&/\b(?:bubbles|recordings?|library|video|search|files?)\b/i.test(addressed))return 'queue';
  // Read-only discovery, even across ALL of GitHub, must never create tickets
  // or demand an owner's repository selection. A separate read tool provides
  // real results; requested code modification still requires the write gate.
@@ -186,6 +189,23 @@ function integrationBrief(input){
   'Do not report success for a discovered tool, proposed adapter or queued ticket. All are different states.'
  ].join('\n');
 }
+// A recording-library job needs its own privacy-safe implementation contract.
+// A queued job is not a verified upload, commit, or recording.
+function recordBWorkBrief(input,repository){
+ const request=String(input||'');
+ if(repository!=='www-infinity4/RecordB'||!/\b(?:record\s?b|recordings?|recorder|screen\s*capture|video\s*library)\b/i.test(request))return '';
+ return [
+  'RECORDB — Bubbles recording library implementation contract.',
+  'YELLOW: inspect the RecordB repo and existing QuantaPhi Android ScreenCaptureService, CapturePublisher, SharedScreenAudioMuxer, RecordB in-chat card, and Robot Brain job API. Pin inspected file revisions.',
+  'BLUE: preserve Android foreground MediaProjection approval, the existing native recorder, pause/resume, stop/finalize/save, verified state, and the local Movies/Bubbles originals. Keep explicit user recordings separate from ordinary Bubbles voice listening.',
+  'GREEN: build the recording library for owner-authorized saved files. Phone originals remain in Movies/Bubbles; desktop originals go to a user-selected folder. Display a real live recording state and permitted local video preview, not an invented cloud stream.',
+  'PRIVATE MEDIA: www-infinity4/RecordB is a PUBLIC source repo. Never commit user recordings, sound, screenshots, captions, transcripts, tokens, or personal data to it. To fulfill GitHub storage, first verify a private media repository and GitHub size limits; for larger video use owner-isolated private durable object storage such as R2, with GitHub containing only non-sensitive source/manifests.',
+  'INDEX: on authorized save, create idempotent recording manifests with filenames, hashes, duration, device source, timestamps, consent/sync status and searchable transcript, OCR and scene descriptions. Keep AI observations separate from the originals and provide timestamp-linked search playback.',
+  'TRANSFER: opt-in synchronization, verified owner authorization, resumable uploads, offline retry, access control, deletion/export tools and explicit privacy choices. Never upload or AI-process personal recordings silently.',
+  'TWO REPOS: RecordB owns reusable recorder/library source. QuantaPhi owns the Bubbles chat integration and native Android APK. Request separate authorized tickets and PRs for cross-repository changes instead of claiming one repo job altered the other.',
+  'PINK: test record/pause/resume/stop and playable MP4 on a physical Android device, large-file/low-space/offline failure paths, cross-device sync and accurate search results; report unavailable hardware or credentials honestly.'
+ ].join('\n');
+}
 function requestPlan(request,repository){
  const apk=/\bapk\b|android.*(?:package|builder)/i.test(String(request));
  return {version:1,kind:apk?'website-to-apk':'repository-work',repository,
@@ -210,17 +230,18 @@ function makeJobs(request,selectedRepository){
  if(!message)throw Error('request_required');
  const repository=selectedRepository||repositoryFor(message),title=message.slice(0,180);
  if(!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(repository))throw Error('explicit_owner_repository_required');
- const omniSkill=omniCodeBrief(message),siteSkill=sitePackageBrief(message,repository),bridgeSkill=integrationBrief(message),plan=requestPlan(message,repository);
+ const omniSkill=omniCodeBrief(message),siteSkill=sitePackageBrief(message,repository),bridgeSkill=integrationBrief(message),recordBSkill=recordBWorkBrief(message,repository),plan=requestPlan(message,repository);
  return [{
   id:'TASK-1',agent:'greenbeans',color:'green',team:['yellow-jacket','blueberry','greenbeans','purple-pearl'],
   repository,executor:'repository-engine',queue_priority:80,status:'queued',
-  title,instructions:message+'\n\nExecution plan (planned stages, not completed work):\n'+JSON.stringify(plan)+'\nResearch verified documentation and actual repository source first. Save a structured plan with dependencies before implementation. Independent source inspections may run concurrently; writes must keep the existing repository lease and review gates. Never ask the owner for routine file paths or reversible styling choices.'+(omniSkill?'\n\nApproved Omni Code reference skill:\n'+omniSkill:'')+(siteSkill?'\n\nApproved autonomous website package plan:\n'+siteSkill:'')+(bridgeSkill?'\n\nSource-to-chat integration contract:\n'+bridgeSkill:''),
+  title,instructions:message+'\n\nExecution plan (planned stages, not completed work):\n'+JSON.stringify(plan)+'\nResearch verified documentation and actual repository source first. Save a structured plan with dependencies before implementation. Independent source inspections may run concurrently; writes must keep the existing repository lease and review gates. Never ask the owner for routine file paths or reversible styling choices.'+(omniSkill?'\n\nApproved Omni Code reference skill:\n'+omniSkill:'')+(siteSkill?'\n\nApproved autonomous website package plan:\n'+siteSkill:'')+(bridgeSkill?'\n\nSource-to-chat integration contract:\n'+bridgeSkill:'')+(recordBSkill?'\n\nRecordB recording library work contract:\n'+recordBSkill:''),
   acceptance:['Inspect actual repository implementation and implement this owner request; never fabricate source changes.',
    'Run focused tests and record commit/PR evidence, noting missing credentials or services.',
    'Carry the tested repair through the authorized review, merge and deployment pipeline. Record the actual live result; stop and report blockers when authorization or checks are missing.',
    ...(omniSkill?['Consult pinned Omni Code source as read-only evidence. RED reconciles YELLOW and BLUE findings before GREEN edits anything.']:[]),
     ...(siteSkill?['Use Oracle Octaves as the verified design reference and pin relevant reusable owner-repository source before editing.','Produce an actual buildable package/preview in the selected target repository, run focused mobile/link checks, and return verifiable PR/CI/deployment receipts.','Resolve missing technical dependencies from verified sources or minimal original code; any fork must have confirmed upstream license and explicit authenticated owner-repository scope.']:[]),
-    ...(bridgeSkill?['Inspect the named original tool and record its actual source and interface contract before inventing an adapter.','If missing, build the minimum authorized source-to-Bubbles integration and run a real use-case test; retain owner permission checks.']:[])],
+    ...(bridgeSkill?['Inspect the named original tool and record its actual source and interface contract before inventing an adapter.','If missing, build the minimum authorized source-to-Bubbles integration and run a real use-case test; retain owner permission checks.']:[]),
+    ...(recordBSkill?['Never put private recordings or transcripts in the public RecordB source repo.','Use verified native recordings, implement owner-authenticated search, and report phone tests and deployment receipts or explicit blockers.']:[])],
   dependencies:[],design:'Oracle Octaves · Android first'
  },{
   id:'TASK-2',agent:'pink-panther',color:'pink',team:['pink-panther','purple-pearl'],
@@ -408,7 +429,7 @@ class ProgressTracker{
   return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
-const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief};
+const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);
