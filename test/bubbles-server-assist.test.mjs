@@ -1,16 +1,18 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {serverAssist} from '../workers/bubbles-cloud-browser/server-assist.mjs';
+import {pathToFileURL} from 'node:url';
+import {serverAssist,executeServerAssist} from '../workers/bubbles-cloud-browser/server-assist.mjs';
 function setup(){
  const rows=new Map(),tasks=[],calls=[];let enabled=true;
  const db={prepare(sql){return {bind(...a){return {
   async run(){
-   if(sql.startsWith('INSERT')){if(rows.has(a[0]))return {meta:{changes:0}};rows.set(a[0],{payload:a[1],status:'working',expires_ms:a[4]});return {meta:{changes:1}};}
+   if(sql.startsWith('INSERT')){if(rows.has(a[0]))return {meta:{changes:0}};rows.set(a[0],{payload:a[1],status:'server_pending',expires_ms:a[4]});return {meta:{changes:1}};}
+   if(sql.includes("SET status='working'")){const row=rows.get(a[0]);if(row?.status!=='server_pending')return {meta:{changes:0}};row.status='working';return {meta:{changes:1}};}
    const row=rows.get(a[3]);if(row){row.status=a[0];row.result=a[1];}return {meta:{changes:1}};
   },async first(){return rows.get(a[0])||null;}
  };}}}};
- const store={chatgptStatus:async()=>({enabled}),status:async()=>({enabled})};
+ const store={chatgptStatus:async()=>({enabled}),status:async()=>({enabled}),enqueueServerAssist:async id=>{tasks.push(executeServerAssist({...args,id}));}};
  const args={claims:{run_id:'123'},db,store,schedule:p=>tasks.push(p),now:1000,fetcher:async(url,options)=>{
   calls.push({url,options});return Response.json({ok:true,output:'Verified weather answer',receipt:{tool:'weather.current',status:'complete'}});
  }};
@@ -18,7 +20,7 @@ function setup(){
 }
 test('server completes without an open browser and returns its own answer and receipt',async()=>{
  const f=setup();const first=await serverAssist({...f.args,body:{operation:'assist',text:'Weather in Albia Iowa'}});
- assert.equal(first.execution,'server');assert.equal(first.state,'working');await Promise.all(f.tasks);
+ assert.equal(first.execution,'server');assert.ok(['working','server_pending'].includes(first.state));await Promise.all(f.tasks);
  const result=await serverAssist({...f.args,body:{operation:'result'}});
  assert.equal(result.state,'complete');assert.equal(result.result.output,'Verified weather answer');
  assert.equal(result.result.receipt.tool,'weather.current');assert.equal(result.result.ownerToolsVerified,false);
@@ -56,9 +58,9 @@ test('failed or empty gateway responses cannot claim success; expiry is enforced
  assert.equal((await serverAssist({...f.args,body:{operation:'result'},now:300000})).status,410);
 });
 test('production route uses the exact gateway service binding, not a public-network fetch',()=>{
- const worker=fs.readFileSync('workers/bubbles-cloud-browser/worker.mjs','utf8');
+ const worker=fs.readFileSync('workers/bubbles-cloud-browser/consent.mjs','utf8');
  const config=fs.readFileSync('workers/bubbles-cloud-browser/wrangler.toml','utf8');
- assert.match(worker,/return env\.TOOLS\.fetch\(url,options\)/);
+ assert.match(worker,/return this\.env\.TOOLS\.fetch\(url,options\)/);
  assert.match(worker,/bubbles_tools_binding_missing/);
  assert.match(config,/binding = "TOOLS"\nservice = "bubbles-tools"/);
 });
@@ -67,4 +69,24 @@ test('redirect responses are rejected without parsing or following a different h
  await serverAssist({...f.args,body:{operation:'assist',text:'hello'}});await Promise.all(f.tasks);
  const r=await serverAssist({...f.args,body:{operation:'result'}});
  assert.equal(r.state,'blocked');assert.equal(r.result.error,'gateway_http_302');assert.equal(r.result.gatewayStatus,302);
+});
+test('durable alarm executes a stored job after object restart, without a browser or request task',async()=>{
+ const helper=pathToFileURL(process.cwd()+'/workers/bubbles-cloud-browser/server-assist.mjs').href;
+ const source=fs.readFileSync('workers/bubbles-cloud-browser/consent.mjs','utf8')
+  .replace("import {DurableObject} from 'cloudflare:workers';",'class DurableObject {constructor(ctx,env){this.ctx=ctx;this.env=env}}')
+  .replace("from './server-assist.mjs'",'from '+JSON.stringify(helper));
+ const {BrowserConsentStore}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+ const records=new Map(),alarms=[];
+ const ctx={storage:{get:async k=>records.get(k),put:async(k,v)=>{if(typeof k==='string')records.set(k,v);else for(const [key,value] of Object.entries(k))records.set(key,value);},
+  list:async({prefix,limit})=>new Map([...records].filter(([k])=>k.startsWith(prefix)).slice(0,limit)),delete:async k=>records.delete(k),setAlarm:async at=>alarms.push(at)}};
+ const f=setup(),env={BRIDGE_DB:f.args.db,TOOLS:{fetch:f.args.fetcher}};
+ let store=new BrowserConsentStore(ctx,env);await store.enableChatGPT();
+ const args={...f.args,store,now:Date.now()};
+ await serverAssist({...args,body:{operation:'assist',text:'weather test'}});
+ assert.equal(f.calls.length,0);assert.ok(records.has('assist_job:chatgpt_assist_123_0'));assert.ok(alarms.length);
+ store=new BrowserConsentStore(ctx,env); // No live request or in-memory execution survives.
+ await store.alarm();
+ assert.equal(f.calls.length,1);assert.ok(!records.has('assist_job:chatgpt_assist_123_0'));
+ assert.equal((await serverAssist({...args,store,body:{operation:'result'}})).state,'complete');
+ await store.alarm();assert.equal(f.calls.length,1);
 });

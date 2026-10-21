@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 const source=readFileSync('workers/bubbles-cloud-browser/consent.mjs','utf8');
-const transformed=source.replace("import {DurableObject} from 'cloudflare:workers';",'').replace('export class BrowserConsentStore','class BrowserConsentStore')+'\nthis.BrowserConsentStore=BrowserConsentStore;';
+const transformed=source.replace("import {executeServerAssist} from './server-assist.mjs';",'').replace("import {DurableObject} from 'cloudflare:workers';",'').replace('export class BrowserConsentStore','class BrowserConsentStore')+'\nthis.BrowserConsentStore=BrowserConsentStore;';
 const context={DurableObject:class{},Date:{now:()=>1000000},console};
 vm.runInNewContext(transformed,context);
 function instance(){
