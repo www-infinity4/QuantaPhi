@@ -14,8 +14,8 @@ audience `bubbles-owner-message-bridge`. No permanent GPT key is embedded in cod
 Both existing five-day grants must be active. The route cannot renew them.
 
 Send `{"operation":"assist","text":"a non-sensitive test question","turn":0}`.
-The Worker immediately returns its server job receipt and executes Bubbles in
-`waitUntil`, with a 20-second gateway deadline. Poll using
+The Worker immediately returns its server job receipt and executes Bubbles from a stored Durable Object alarm, with a 90-second gateway
+deadline. It does not depend on request `waitUntil` or an open browser. Poll using
 `{"operation":"result","turn":0}`. The verified GitHub run fixes the result
 namespace; another run cannot read it. Turns 0–9 are supported, each independent.
 Results expire after four minutes. Retries preserve the question and expiry and
@@ -53,7 +53,7 @@ verified candidate using `bubbles-approval-release.yml`, checking source pin,
 equality of all existing bindings, the exact added `TOOLS` service, and production readback. Rollback promotes the recorded prior
 version. Consent records remain in the existing Durable Object.
 
-The public `/health` marker is `serverConversation: signed-runner-v1`.
+The public `/health` marker is `serverConversation: signed-durable-v1`.
 That marker alone is not a completed connection test. Require a real signed
 `assist` followed by a `result` containing a Bubbles answer.
 
