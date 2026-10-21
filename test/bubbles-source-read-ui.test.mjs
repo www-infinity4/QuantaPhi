@@ -21,6 +21,10 @@ test('Bubbles reads named public README through real source receipt before gener
 test('Bubbles routes public QuantaPhi HTML to webpage reading, not GitHub file reading',async()=>{
  const question='Read https://quantaphi.org/bubbles.html and tell me what account connection requirements it actually states. Use the page content and say if you cannot fetch it.';
  assert.equal(chooseTool(question),'web.read_page');
+ // Exact request that failed in the signed live Bubbles QA run.
+ assert.equal(chooseTool('Inspect https://quantaphi.org/bubbles.html and explain what the Bubbles page offers. Distinguish what you inspected from assumptions and never pretend a screenshot was inspected.'),'web.read_page');
+ assert.equal(chooseTool('Read and search the web for https://quantaphi.org/bubbles.html'),'web.read_page');
+ assert.equal(chooseTool('Inspect https://github.com/www-infinity4/QuantaPhi/blob/main/README.md'),'github.read_file');
  assert.equal(chooseTool('Read the QuantaPhi README from www-infinity4/QuantaPhi'),'github.read_file');
  const src=await readFile(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.match(src,/const publicPageReadRequested=/);
