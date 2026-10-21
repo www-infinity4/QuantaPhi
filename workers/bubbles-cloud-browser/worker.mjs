@@ -1,5 +1,6 @@
 import {browserTool} from '../bubbles-tools/browser.mjs';
 import {processChatGPTJob,completeChatGPTMessage} from './chatgpt-bridge.mjs';
+import {authenticateBridge,runnerMessage} from './runner-bridge.mjs';
 export {BrowserConsentStore} from './consent.mjs';
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const respond=(origin,body,status=200)=>Response.json(body,{status,headers:{
@@ -24,6 +25,17 @@ export default {
    browserBound:!!env.BROWSER,ownerGate:!!env.BRAIN,consentBound:!!env.CONSENT,chatgptBridgeBound:!!env.BRIDGE_DB},
    {headers:{'Cache-Control':'no-store'}});
   const origin=request.headers.get('Origin')||'';
+  if(path==='/v1/browser/chatgpt/runner'){
+   const reply=(value,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'no-store'}});
+   if(origin||request.method!=='POST')return reply({ok:false,error:'server_runner_required'},403);
+   let claims;try{claims=await authenticateBridge(request)}catch{return reply({ok:false,error:'bridge_runner_not_verified'},401)}
+   if(!env.CONSENT||!env.BRIDGE_DB)return reply({ok:false,error:'chatgpt_bridge_bindings_missing'},503);
+   let body;try{const raw=await request.text();if(raw.length>4200)throw Error();body=JSON.parse(raw)}catch{return reply({ok:false,error:'invalid_bridge_request'},400)}
+   try{
+    const result=await runnerMessage({claims,body,db:env.BRIDGE_DB,store:consentStore(env)});
+    return reply(result,result.ok?200:result.status||403);
+   }catch{return reply({ok:false,error:'bridge_transport_unavailable'},503)}
+  }
   if(!origins.has(origin))return respond('https://quantaphi.org',{ok:false,error:'origin_not_allowed'},403);
   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{
    'Cache-Control':'no-store','Access-Control-Allow-Origin':origin,
