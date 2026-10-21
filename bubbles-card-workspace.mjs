@@ -77,7 +77,9 @@ export class CardWorkspace{
   if(record.frame.parentNode!==this.stage)this.stage.append(record.frame);this.onEvidence(this.getEvidence(record));
   try{
    await record.ready;if(this.active!==record)return {message:'Card selection changed.'};
-   this.status.textContent=card.title+' is open in chat.';
+   this.status.textContent=card.title+' is open in chat.'+
+    (['media-star','fred-spaces'].includes(card.id)?
+     ' Fred’s Space is linked to the original X replay. Tap ▶ in the card to listen; audio has not been confirmed.':'');
    if(play)return this.play();
    return {message:this.status.textContent};
   }catch(error){
