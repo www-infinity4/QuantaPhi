@@ -301,3 +301,15 @@
 .ba-card-workspace{flex:none;min-height:0;max-width:100%;}
 .ba-card-catalog{overscroll-behavior:contain;touch-action:pan-y;}
 .ba-panel > .ba-composer{max-height:45dvh;overflow-y:auto;}
+
+
+/* RecordB: one compact native recording card in the existing Bubbles thread. */
+.ba-panel .ba-recordb-card{flex:none;min-width:0;margin:7px 0;padding:10px;border:1px solid #baa2d2;border-radius:16px;background:#f7f3fb;display:grid;gap:5px}
+.ba-panel .ba-recordb-title{font:800 15px/1.25 system-ui,sans-serif;color:#502778}
+.ba-panel .ba-recordb-state{display:block;color:#342944;font:600 12px/1.45 system-ui,sans-serif;overflow-wrap:anywhere}
+.ba-panel .ba-recordb-hint{display:block;color:#62586c;font:500 11px/1.35 system-ui,sans-serif}
+.ba-panel .ba-recordb-actions{display:flex;gap:6px;flex-wrap:wrap}
+.ba-panel .ba-recordb-actions .ba-control{min-height:42px;flex:1 1 92px;font-size:13px;padding:7px 9px;border-radius:12px}
+.ba-panel .ba-recordb-actions .ba-control[hidden]{display:none!important}
+.ba-panel .ba-recordb-start{background:#653096;color:#fff;border-color:#653096}
+.ba-panel .ba-recordb-stop{border-color:#b8879e;color:#6a2245}
