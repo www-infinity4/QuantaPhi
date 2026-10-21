@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import {serverAssist} from '../workers/bubbles-cloud-browser/server-assist.mjs';
 function setup(){
  const rows=new Map(),tasks=[],calls=[];let enabled=true;
@@ -52,4 +53,11 @@ test('failed or empty gateway responses cannot claim success; expiry is enforced
  await serverAssist({...f.args,body:{operation:'assist',text:'hello'}});await Promise.all(f.tasks);
  const result=await serverAssist({...f.args,body:{operation:'result'}});assert.equal(result.state,'blocked');
  assert.equal((await serverAssist({...f.args,body:{operation:'result'},now:300000})).status,410);
+});
+test('production route uses the exact gateway service binding, not a public-network fetch',()=>{
+ const worker=fs.readFileSync('workers/bubbles-cloud-browser/worker.mjs','utf8');
+ const config=fs.readFileSync('workers/bubbles-cloud-browser/wrangler.toml','utf8');
+ assert.match(worker,/return env\.TOOLS\.fetch\(url,options\)/);
+ assert.match(worker,/bubbles_tools_binding_missing/);
+ assert.match(config,/binding = "TOOLS"\nservice = "bubbles-tools"/);
 });
