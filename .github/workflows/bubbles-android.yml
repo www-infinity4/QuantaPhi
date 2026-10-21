@@ -21,6 +21,7 @@ on:
       - 'test/bubbles-neural-engine-handoff.test.cjs'
       - 'test/bubbles-neural-voice-bridge.test.cjs'
       - 'test/bubbles-owner-pairing-visibility.test.cjs'
+      - 'test/bubbles-owner-gpt-visibility.test.cjs'
       - 'test/bubbles-capture-save.test.cjs'
       - 'test/bubbles-xrecorder-app-control.test.cjs'
       - 'test/bubbles-native-gpt-screen-story.test.cjs'
@@ -168,7 +169,7 @@ jobs:
           javac -d /tmp/bubbles-chatgpt-app android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ScreenAwareness.java android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/ChatGPTAppPolicy.java android/bubbles-overlay/checks/ChatGPTAppPolicyCheck.java
           java -cp /tmp/bubbles-chatgpt-app org.quantaphi.bubbles.ChatGPTAppPolicyCheck
       - name: Verify no extra owner-code buttons and secure in-chat Android pairing
-        run: node --test test/bubbles-owner-native-pairing.test.cjs test/bubbles-owner-pairing-visibility.test.cjs
+        run: node --test test/bubbles-owner-native-pairing.test.cjs test/bubbles-owner-pairing-visibility.test.cjs test/bubbles-owner-gpt-visibility.test.cjs
       - name: Verify shared session, Android speech-turn timing and ownership pairing
         run: node --test test/bubbles-native-session-voice.test.cjs
       - name: Check full speech-turn accumulator and interruption reset
