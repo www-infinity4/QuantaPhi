@@ -75,7 +75,9 @@ test('owner can pause, resume and cancel, with no destructive purge or ambiguous
  const archived=await ownerClockCommand(f.storage,f.db,owner,{action:'archive_old'},now+16*86400000);
  assert.equal(archived.result.archived,1);
  assert.equal((await ownerClockCommand(f.storage,f.db,owner,{action:'list'},now+16*86400000)).result.tasks.length,0);
- assert.equal(f.mem.get('owner-task-clock-v1').length,1,'task metadata and receipts remain in Durable Object');
+ assert.equal(f.mem.get('owner-task-clock-v1').length,0,'archived schedule frees active capacity');
+ assert.equal(f.mem.get('owner-task-clock-archive:'+x.id).id,x.id,'schedule history remains in Durable Object');
+ assert.equal((await ownerClockCommand(f.storage,f.db,owner,{action:'list'},now+16*86400000)).result.archivedCount,1);
 });
 test('a stale or completed ticket cannot be silently re-created from a recurring schedule',async()=>{
  const f=harness();
