@@ -2089,7 +2089,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   // Never silently route the owner's instruction to QuantaPhi when a different
   // repository was selected or the project identity is genuinely uncertain.
   if(!repository&&!createRepository){
-   if(githubCheck||coderRequest||/\b(?:bubbles|owner[- ]approval)\b/i.test(request))repository='www-infinity4/QuantaPhi';
+   if(/\brecord\s?b\b/i.test(request))repository='www-infinity4/RecordB';
+   else if(githubCheck||coderRequest||/\b(?:bubbles|owner[- ]approval)\b/i.test(request))repository='www-infinity4/QuantaPhi';
    else {
     if(!repositorySelectionExplicit)await suggestRepositoryTargets(request,false);
     const targets=[...repositorySelection];
