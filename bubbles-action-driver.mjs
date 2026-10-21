@@ -14,6 +14,7 @@ const labelText=value=>clean(value).replace(/^[\s"'“”‘’]+|[\s"'“”‘
 const normalized=value=>labelText(value).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 export function resolveToolAction(text,{activeCard=''}={}){
  let phrase=clean(text).replace(preamble,'');
+ phrase=phrase.replace(/^(?:(?:can|could|would|will)\s+you\s+)(?:please\s+)?/i,'');
  if(!phrase||negative.test(phrase)||phrase.length>500)return null;
  // A numbered Android observation is the only permissible basis for tapping
  // a device. The existing session checks the ten-minute grant again.
@@ -35,8 +36,10 @@ export function resolveToolAction(text,{activeCard=''}={}){
  const matched=phrase.match(/^(?:tap|click|press|hit|push|choose|select)\s+(?:on\s+)?(.+?)(?:[.!?]+)?$/i);
  if(!matched)return null;
  let label=labelText(matched[1]);let cardName='';
+ const activeSuffix=label.match(/^(.+?)\s+(?:on|in|inside)\s+(?:the\s+|this\s+|my\s+)?(?:card|viewer|player)$/i);
+ if(activeSuffix&&activeCard)label=labelText(activeSuffix[1]);
  const cardSuffix=label.match(/^(.+?)\s+(?:on|in|inside)\s+(?:the\s+|my\s+)?(.+?)(?:\s+card|\s+player)?$/i);
- if(cardSuffix&&/(?:card|player|radio|media star|fred|infinity|crusher|reads|spaces)/i.test(cardSuffix[2])){
+ if(cardSuffix&&/(?:card|player|radio|media star|fred|infinity|crusher|reads|spaces|story writer)/i.test(cardSuffix[2])){
   label=labelText(cardSuffix[1]);cardName=labelText(cardSuffix[2]);
  }
  if(!cardName&&!activeCard)return null;
@@ -58,13 +61,31 @@ export function cardControlDecision(label,controls){
  return {status:'safe_click',control:target};
 }
 export function safeCardControls(doc){
- const elements=[...(doc?.querySelectorAll?.('button,[role="button"],input[type="button"],a')||[])];
- return elements.slice(0,120).map(el=>{
-  const text=el.getAttribute?.('aria-label')||el.innerText||el.textContent||el.value||'';
-  const visible=el.getClientRects?el.getClientRects().length>0:el.hidden!==true;
-  return {label:clean(text).slice(0,130),tag:String(el.tagName||'').toUpperCase(),disabled:el.disabled===true,
-   visible,external:el.tagName==='A'&&el.target==='_blank',element:el};
- });
+ const controls=[],visited=new Set();let frames=0;
+ const scan=(current,depth)=>{
+ if(!current||visited.has(current)||controls.length>=120)return;
+ visited.add(current);
+ const elements=[...(current.querySelectorAll?.('button,[role="button"],input[type="button"],a')||[])];
+ for(const el of elements){
+  if(controls.length>=120)break;
+  const labelled=(el.getAttribute?.('aria-labelledby')||'').split(/\s+/).filter(Boolean).map(id=>current.getElementById?.(id)?.textContent||'').join(' ').trim();
+  const text=el.getAttribute?.('aria-label')||labelled||el.innerText||el.textContent||el.value||el.getAttribute?.('title')||'';
+  const style=current.defaultView?.getComputedStyle?.(el);
+  const visible=(el.getClientRects?el.getClientRects().length>0:el.hidden!==true)&&
+   style?.visibility!=='hidden'&&style?.visibility!=='collapse'&&!el.closest?.('[inert],[hidden],[aria-hidden="true"]');
+  controls.push({label:clean(text).slice(0,130),tag:String(el.tagName||'').toUpperCase(),disabled:el.disabled===true||el.getAttribute?.('aria-disabled')==='true'||Boolean(el.matches?.(':disabled')),
+   visible,external:el.tagName==='A'&&el.target==='_blank',element:el,frameDepth:depth});
+ }
+ if(depth>=2)return;
+ for(const frame of current.querySelectorAll?.('iframe')||[]){
+  if(frames++>=8)break;
+  if(frame.hidden||frame.getClientRects&&frame.getClientRects().length===0||current.defaultView?.getComputedStyle?.(frame)?.visibility==='hidden')continue;
+  // Browser same-origin enforcement is authoritative. Never proxy or tunnel
+  // into an external viewer to bypass its document access restrictions.
+  try{scan(frame.contentDocument,depth+1);}catch{}
+ }
+ };
+ scan(doc,0);return controls;
 }
 export function toolReply(receipt){
  if(receipt?.status==='safe_click')
