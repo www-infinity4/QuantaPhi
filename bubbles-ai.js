@@ -2636,11 +2636,76 @@ async function syncRedSectors(){
 }
 
 const ownerApprovalCards=new Map();
+// Resolve ordinary UI decisions through the existing authenticated Brain policy.
+// This preference NEVER approves credentials, payments, wallet changes or
+// Android/device permissions. The server independently rechecks every item.
+const routinePolicyKey='bubbles-owner-routine-ui-v1';
+let routinePolicyEnabled=true;
+try{routinePolicyEnabled=localStorage.getItem(routinePolicyKey)!=='off';}catch{}
+const ownerDecisionDrawer=create('details','ba-owner-decision-drawer');
+const ownerDecisionSummary=create('summary','','Work decisions · Bubbles handles routine choices');
+const ownerDecisionIntro=create('p','ba-muted',
+ 'Bubbles chooses ordinary labels, layout and non-sensitive storage. Real account permissions, payments, wallet and security changes still need explicit authorization. Work is not finished until tests and deployment are verified.');
+const ownerDecisionToggleLabel=create('label','ba-owner-decision-toggle');
+const ownerDecisionToggle=create('input');ownerDecisionToggle.type='checkbox';
+ownerDecisionToggle.checked=routinePolicyEnabled;
+ownerDecisionToggle.setAttribute('aria-label','Automatically resolve routine interface decisions');
+ownerDecisionToggleLabel.append(ownerDecisionToggle,create('span','','Handle routine interface choices automatically'));
+ownerDecisionToggle.addEventListener('change',()=>{
+ routinePolicyEnabled=ownerDecisionToggle.checked;
+ try{localStorage.setItem(routinePolicyKey,routinePolicyEnabled?'on':'off');}catch{}
+ ownerDecisionMessage.textContent=routinePolicyEnabled?
+  'Routine design choices will be reviewed by the authenticated Brain policy.':'Automatic decisions paused. Work and chat remain available.';
+});
+const ownerDecisionMessage=create('p','ba-muted','');
+ownerDecisionMessage.setAttribute('role','status');
+const ownerDecisionList=create('div','ba-owner-decision-list');
+const resolveRoutineNow=create('button','ba-control','Resolve routine choices now');
+resolveRoutineNow.type='button';
+ownerDecisionDrawer.append(ownerDecisionSummary,ownerDecisionIntro,ownerDecisionToggleLabel,
+ resolveRoutineNow,ownerDecisionMessage,ownerDecisionList);
+tools.append(ownerDecisionDrawer);
+let routineDecisionBusy=false,routineDecisionLastAttempt=0;
+async function resolveRoutineOwnerDecisions(tickets,manual=false){
+ if(embedded||!ownerReady||routineDecisionBusy||(!manual&&!routinePolicyEnabled))return;
+ const preview=brainTools?.bulkRunPreview?.(tickets);
+ if(!preview?.ui){if(manual)ownerDecisionMessage.textContent='No routine interface decisions are waiting.';return;}
+ const now=Date.now();
+ if(!manual&&now-routineDecisionLastAttempt<5*60*1000)return;
+ routineDecisionBusy=true;routineDecisionLastAttempt=now;resolveRoutineNow.disabled=true;
+ try{
+  const headers=await verifiedOwnerHeaders();
+  const response=await bubblesFetch(BRAIN+'/work/tickets/approve-all',{
+   method:'POST',headers:{...headers,'Content-Type':'application/json'},
+   body:JSON.stringify({mode:manual?'owner_click':'automatic_routine_ui'}),cache:'no-store'},25000);
+  const body=await response.json().catch(()=>({}));
+  if(!response.ok||body.ok!==true||!body.batch||!body.summary)throw Error(String(body.error||'approval_receipt_missing'));
+  const accepted=Number(body.summary.uiApproved)||0;
+  const blocked=Number(body.summary.stillBlocked)||0;
+  const execution=String(body.execution?.status||'not_confirmed');
+  const message=accepted+' routine design decision'+(accepted===1?'':'s')+
+   ' recorded. '+blocked+' technical or sensitive blockers left untouched. Runner: '+
+   (execution==='queued_for_runner'?'requested, not completed':execution.replace(/_/g,' '))+
+   '. No test, merge, or deployment is assumed.';
+  ownerDecisionMessage.textContent=message;recordBrainNotice(message);
+  // The next authenticated poll reads the new state; never fabricate completion.
+ }catch(error){
+  ownerDecisionMessage.textContent='Routine review could not be confirmed: '+String(error.message||error).slice(0,140)+'. No approval is being claimed.';
+ }finally{routineDecisionBusy=false;resolveRoutineNow.disabled=false;}
+}
+resolveRoutineNow.addEventListener('click',()=>void resolveRoutineOwnerDecisions(
+ Array.isArray(lastOwnerApprovalTickets)?lastOwnerApprovalTickets:[],true));
+let lastOwnerApprovalTickets=[];
+
 // Approval cards are tied to saved, authenticated Brain tickets, never to AI
 // message content or an unverified "owner" sentence.
 function showOwnerApprovalRequests(tickets){
  if(embedded||!ownerReady||!brainTools?.ownerApprovalRequests)return;
  const pending=brainTools.ownerApprovalRequests(tickets);
+ lastOwnerApprovalTickets=Array.isArray(tickets)?tickets:[];
+ const preview=brainTools.bulkRunPreview?.(tickets)||{};
+ ownerDecisionSummary.textContent='Work decisions · '+Number(preview.ui||0)+' routine choice'+(preview.ui===1?'':'s');
+ ownerDecisionDrawer.hidden=!pending.length&&!preview.ui&&!preview.blocked;
  const active=new Set();
  for(const item of pending){
   const key=item.ticketId+':'+item.jobId;active.add(key);
@@ -2648,13 +2713,13 @@ function showOwnerApprovalRequests(tickets){
   const line=create('div','ba-line ba-line-ai ba-owner-approval-line');
   const card=create('section','ba-owner-approval');
   card.setAttribute('aria-label','Owner approval needed');
-  card.append(create('strong','','Owner decision requested'));
+  card.append(create('strong','','Routine interface decision'));
   card.append(create('p','ba-owner-approval-title',item.title));
-  card.append(create('p','ba-owner-approval-copy',item.task));
-  card.append(create('p','ba-owner-approval-choice',item.reason));
+  card.append(create('p','ba-owner-approval-copy','Bubbles can use the existing QuantaPhi design patterns for this change.'));
   const details=create('details','ba-owner-approval-details');
+  details.append(create('p','ba-owner-approval-choice',item.reason));
   details.append(create('summary','','Job details'));
-  details.append(create('p','',item.repository));
+  details.append(create('p','',item.repository),create('p','',item.task));
   card.append(details);
   const actions=create('div','ba-owner-approval-actions');
   const approve=create('button','ba-owner-approve','Approve this job');
@@ -2705,8 +2770,7 @@ function showOwnerApprovalRequests(tickets){
    const prompt='Explain in plain language whether this is genuinely an owner-only UI choice. State what I would approve for '+item.title+', identify any technical error the bots should fix themselves, and do not submit or approve anything. Job: '+item.task.slice(0,350)+'; runner report: '+item.reason.slice(0,850);
    void sendMessage(prompt,false);
   });
-  conversation.append(line);ownerApprovalCards.set(key,line);
-  if(showing)chatScroll.scrollTop=chatScroll.scrollHeight;
+  ownerDecisionList.append(line);ownerApprovalCards.set(key,line);
  }
  for(const [key,line] of ownerApprovalCards){
   if(!active.has(key)){line.remove();ownerApprovalCards.delete(key);}
@@ -2732,6 +2796,9 @@ async function pollBrainProgress(){
    recordBrainNotice('Work history is connected. Detailed receipts are available here; waiting and running are not the same as finished.');
   }
   showOwnerApprovalRequests(result.tickets);
+  // The approved owner session resolves only policy-eligible design choices.
+  // This never lets model text, guest sessions or a timer authorize other actions.
+  void resolveRoutineOwnerDecisions(result.tickets);
   progressTracker.setScope?.(result.notificationScope);
   let updates=progressTracker.update(result.tickets);
   if(result.notificationScope&&(nativeOverlay||config.voice)){
