@@ -18,6 +18,10 @@ public final class ScreenCaptureService extends Service {
     static final String STOP = "org.quantaphi.bubbles.CAPTURE_STOP";
     static final String PAUSE = "org.quantaphi.bubbles.CAPTURE_PAUSE";
     static final String RESUME = "org.quantaphi.bubbles.CAPTURE_RESUME";
+    // A persisted 'Saving' state survives process death; this flag does not.
+    private static volatile boolean running;
+    public static boolean isRunning() { return running; }
+    @Override public void onCreate() { super.onCreate(); running = true; }
     private final Handler main = new Handler(Looper.getMainLooper());
     private MediaProjection projection;
     private VirtualDisplay display;
@@ -366,6 +370,7 @@ public final class ScreenCaptureService extends Service {
     }
     @Override public IBinder onBind(Intent intent) { return null; }
     @Override public void onDestroy() {
+        running = false;
         if (!finished) finishCapture();
         mediaExport.shutdown();
         super.onDestroy();
