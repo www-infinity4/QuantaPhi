@@ -2721,7 +2721,7 @@ async function verifiedOwnerHeaders(){
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  // Pairing is handled in the same chat composer.
  workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
- window.dispatchEvent(new CustomEvent('bubbles:owner-ready'));
+ window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));
  return headers;
 }
 async function connectOwner(){
@@ -2730,7 +2730,7 @@ async function connectOwner(){
  const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
- window.dispatchEvent(new CustomEvent('bubbles:owner-ready'));
+ window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  if(nativeOverlay){linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing saved · history syncs automatically.';}
  // Pairing is handled in the same chat composer.
