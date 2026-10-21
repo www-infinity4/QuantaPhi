@@ -30,7 +30,7 @@ test('single-repository populate and scaffold are code writes',()=>{
   assert.equal(result.pairedRepoWork,false,user);
   assert.equal(result.directCoding,true,user);
  }
- assert.match(source,/generate\|populate\|scaffold/,'write-mode tool choice includes populate and scaffold');
+ assert.match(source,/refactor\|populate\|scaffold/,'write-mode tool choice includes populate and scaffold');
 });
 
 test('repository listing is a real read-only tool request',()=>{
