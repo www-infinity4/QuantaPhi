@@ -72,7 +72,9 @@ export function chooseTool(text){
   return 'web.read_page';
  if(/\b(?:read|open|show|inspect|explain|review|fetch|summarize)\b.{0,120}\b(?:readme(?:\.md)?|[a-z0-9_./-]+\.(?:md|markdown|txt|html|css|js|json))\b/i.test(request)
   &&/\b(?:github|repo|repository|quantaphi)\b|\b[a-z0-9_.-]+\/[a-z0-9_.-]+\b/i.test(request))return 'github.read_file';
- if(/\b(?:create|start|make|build)\b.{0,70}\b(?:github\s+)?(?:repo|repository)\b/.test(request))return 'github.create_repository';
+ // Only a direct creation instruction grants creation intent. Descriptions,
+ // quoted drafts and "do not create" inside a repair report are context.
+ if(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:(?:can|could|would|will)\s+you\s+)?(?:create|start|make|build)\s+(?:me\s+)?(?:(?:a|brand\s+new|new|github)\s+)*(?:repo|repository)\b/i.test(request))return 'github.create_repository';
  if(/\b(?:open|pull\s+up|inspect|show|read|list|look\s+up|fetch)\b.{0,100}\b(?:github\s+)?(?:repo|repository)\b/.test(request)&&(/\bgithub\b/.test(request)||/\b[a-z0-9_.-]+\/[a-z0-9_.-]+\b/.test(request)||/\bquantaphi\b/.test(request)))return 'github.read_repository';
  if(/\b(?:news|headlines)\b/.test(request)&&/\b(?:check|read|tell|show|find|latest|current|today|google|get|what|headlines)\b/.test(request))return 'news.headlines';
  return 'oracle.chat';
@@ -117,7 +119,7 @@ export function hasUnverifiedActionClaim(userRequest,answer){
 // Reject the draft before it reaches the floating bubble or Android TTS.
 export function hasModelToolLeak(answer){
  const text=String(answer||'').slice(0,12000);
- const fakeCall=/["']?name["']?\s*:\s*["'](?:createTicket|submitWork|dispatchJob|runTool|invokeTool)["']/i.test(text)
+ const fakeCall=/["']?name["']?\s*:\s*["'](?:createTicket|githubCreateRepo|githubUpdateFile|githubCreateIssue|submitWork|dispatchJob|runTool|invokeTool)["']/i.test(text)
   && /["']?arguments["']?\s*:/i.test(text);
  const internalPlan=/\b(?:we|i) need to\s+(?:send|write|compose|provide|respond with|say)\b[\s\S]{0,300}\b(?:invoke|call|execute) (?:the|a|this) tool\b/i.test(text);
  const rawChannel=/<\|(?:im_start|im_sep|channel)[^>]*\|>|(?:^|\n)\s*(?:assistant|analysis)\s+to=\w+/i.test(text);
