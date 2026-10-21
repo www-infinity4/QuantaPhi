@@ -474,7 +474,7 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
 export async function finishSearchReply(original,summarize,timeoutMs=20000,userRequest=''){
  let timer;
  const fallback=async()=>{
-  if(!/\b(?:project|plan|explain|analy[sz]e|synthesi[sz]e|compare|next steps)\b/i.test(userRequest))return original;
+  if(!/\b(?:research|project|plan|explain|analy[sz]e|synthesi[sz]e|compare|next steps)\b/i.test(userRequest))return original;
   const data=await original.clone().json();
   return Response.json({...data,output:String(data.output||'')+'\nSearch results are available, but the requested explanation or plan is not complete.',answerStatus:'partial',analysisVerified:false},{status:original.status,headers:original.headers});
  };
