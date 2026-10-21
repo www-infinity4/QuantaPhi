@@ -42,7 +42,7 @@ test('named RecordB issue is submitted to its own repository, not stale selectio
 
 test('explicit RecordB bot-team requests take the authenticated ticket path',()=>{
  assert.match(site,/bot\\s\+team/);
- assert.match(site,/const directCoding=!requestsAgents&&!namedRecordBIssue&&codeTask;/);
+ assert.match(site,/const directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;/);
  assert.match(site,/else if\(!embedded&&isOwnerWorkRequest\(request\)\)/);
  assert.match(site,/submitWork\(request,'explicit-user-command'\)/);
  assert.match(site,/Target: '\+ticket.repository/);
