@@ -2085,7 +2085,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Questions and refusals are never GitHub write authorization. A clear
  // "can you create..." request still counts as an instruction; "how do I..."
  // and "don't create..." do not.
- const ownerGithubNonAction=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:do\s+not|don['’]t|never|stop|i\s+(?:do\s+not|don['’]t)\s+want|(?:how|why|what|when|where)\b|(?:can|could|would) you\s+(?:explain|describe|show me how|tell me how)\b)/i.test(request);
+ const ownerGithubNonAction=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:do\s+not|don['’]t|never|stop|i\s+(?:do\s+not|don['’]t)\s+want|(?:how|why|what|when|where|explain|describe)\b|(?:can|could|would) you\s+(?:explain|describe|show me how|tell me how)\b)/i.test(request);
  const createRepository=/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request)
   || /\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*[A-Za-z][\w.-]*\s+(?:(?:the|github)\s+)*(?:repo|repository)\b/i.test(request);
  const directRequest=/^(?:(?:hey|please|bubbles)[, ]+)*(?:(?:can|could|would|will) you\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
