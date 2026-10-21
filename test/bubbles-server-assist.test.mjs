@@ -24,6 +24,7 @@ test('server completes without an open browser and returns its own answer and re
  assert.equal(result.result.receipt.tool,'weather.current');assert.equal(result.result.ownerToolsVerified,false);
  assert.equal(f.calls[0].url,'https://bubbles-tools.marvaseater.workers.dev/v1/assist');
  assert.equal(f.calls[0].options.headers.Authorization,undefined);
+ assert.equal(f.calls[0].options.redirect,'manual');
 });
 test('retries do not execute twice, replace a question or extend expiry',async()=>{
  const f=setup(),body={operation:'assist',text:'hello'};
@@ -60,4 +61,10 @@ test('production route uses the exact gateway service binding, not a public-netw
  assert.match(worker,/return env\.TOOLS\.fetch\(url,options\)/);
  assert.match(worker,/bubbles_tools_binding_missing/);
  assert.match(config,/binding = "TOOLS"\nservice = "bubbles-tools"/);
+});
+test('redirect responses are rejected without parsing or following a different host',async()=>{
+ const f=setup();f.args.fetcher=async()=>new Response('',{status:302,headers:{Location:'https://other.example'}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'hello'}});await Promise.all(f.tasks);
+ const r=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(r.state,'blocked');assert.equal(r.result.error,'gateway_http_302');assert.equal(r.result.gatewayStatus,302);
 });
