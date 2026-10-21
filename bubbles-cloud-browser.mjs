@@ -108,6 +108,10 @@ export function mount({host,ownerHeaders,reveal=false}){
  bridgeNote.style.cssText='font-size:12px;line-height:1.5';
  bridge.append(bridgeTitle,bridgeStatus,approveBridge,revokeBridge,bridgeNote);wrap.append(bridge);
  let chatgptApproved=false,bridgePolling=false;
+ const consumerState=(state,message)=>{
+  wrap.dataset.bridgeConsumer=state;bridgeStatus.textContent=message;
+  window.dispatchEvent(new CustomEvent('bubbles:bridge-state',{detail:{state,message}}));
+ };
  async function bridgeCall(endpoint,payload){
   const headers=await ownerHeaders();
   if(!headers?.Authorization)throw Error('Connect the verified Bubbles owner session first.');
@@ -304,7 +308,12 @@ export function mount({host,ownerHeaders,reveal=false}){
     chatgptApproved=true;
     bridgeStatus.textContent='ChatGPT bridge restored until '+new Date(saved.expiresAt).toLocaleString()+'.';
    }
+   let chatReady=false;
+   window.dispatchEvent(new CustomEvent('bubbles:chatgpt-ready',{detail:{respond:value=>{chatReady=value===true;}}}));
+   if(!chatReady){consumerState('waiting-for-chat','ChatGPT connection preserved. Waiting for Bubbles to finish its current response.');return;}
+   consumerState('checking','Checking the approved Bubbles message connection…');
    const data=await bridgeCall('process',state?{sessionId:state.sessionId,proof:state.proof}:{});
+   consumerState('ready',data.queue==='empty'?'Bubbles is ready for approved ChatGPT requests.':'Bubbles received an approved ChatGPT request.');
    if(data.view){show(data.view)}
    if(data.status==='needs_bubbles_reply'&&data.jobId){
     let reply;
@@ -329,14 +338,21 @@ export function mount({host,ownerHeaders,reveal=false}){
    const value=String(error.message||error);
    if(value==='chatgpt_five_day_approval_required'){
     chatgptApproved=false;bridgeStatus.textContent='ChatGPT five-day approval expired or was revoked.';
-   }else if(!/owner_authorization_required|browser_consent_required/.test(value)){
-    bridgeStatus.textContent='ChatGPT bridge check unavailable: '+value.slice(0,130);
-   }
+   }else if(/owner_authorization_required|verified Bubbles owner session|owner Unified Wallet|owner verification/i.test(value)){
+    consumerState('waiting-for-owner','The five-day connection is preserved. This page is waiting for its saved owner session to restore.');
+   }else if(value==='browser_consent_required'){
+    consumerState('consent-unavailable','The existing browser approval is not active. No request was executed.');
+   }else consumerState('unavailable','Bubbles message check unavailable: '+value.slice(0,130));
   }finally{bridgePolling=false}
  }
  // The session and owner token remain in this first-party page. Cloudflare
  // D1 receives only a structured request/receipt, never browser credentials.
  setInterval(()=>void pollChatGPT(),8000);
+ window.addEventListener('focus',()=>void pollChatGPT());
+ window.addEventListener('pageshow',()=>void pollChatGPT());
+ window.addEventListener('bubbles:owner-ready',()=>void pollChatGPT());
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)void pollChatGPT();});
+ void pollChatGPT();
  void bridgePermission('status').catch(()=>{});
  return wrap;
 }
