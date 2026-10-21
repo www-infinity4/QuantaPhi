@@ -34,7 +34,7 @@ test('unknown, confused, paid and invented tools cannot escape the semantic allo
   'I clicked the button',
   '<function call="github.create_repository"/>'
  ])assert.deepEqual(validateSemanticDecision(reply,catalog),{kind:'none'},reply);
- assert.deepEqual(validateSemanticDecision('{"kind":"open_card","cardId":"media-star","confidence":.98}',catalog),
+ assert.deepEqual(validateSemanticDecision('{"kind":"open_card","cardId":"media-star","confidence":0.98}',catalog),
   {kind:'open_card',cardId:'media-star',confidence:.98});
 });
 
