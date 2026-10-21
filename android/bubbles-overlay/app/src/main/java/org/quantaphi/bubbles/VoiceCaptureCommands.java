@@ -36,6 +36,9 @@ final class VoiceCaptureCommands {
         // This cannot press Android's protected MediaProjection permission dialog.
         q = q.replaceAll("[-‐‑–—]", " ");
         q = q.replaceAll("\\s+", " ").trim();
+        // Common voice recognition / touchscreen misspellings should not turn
+        // an explicit record instruction into ordinary AI chat.
+        q = q.replaceFirst("^(?:recird|recrod|reccord)(?=\\s|$)", "record");
         if (q.matches("^(?:press|tap|hit|click|push|select|use)\\s+(?:(?:the|my)\\s+)?(?:screen\\s+(?:record|recorder|recording)|record\\s+(?:screen|video))(?:(?:\\s+button|\\s+control|\\s+icon))?(?:\\s+now)?$"))
             return new Command("screen_video", 0, 0);
         if (q.matches("^(?:pause|hold)(?: (?:the |my )?(?:screen |video )?recording)?(?: now)?$"))
