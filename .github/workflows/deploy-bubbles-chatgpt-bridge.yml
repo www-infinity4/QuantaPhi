@@ -31,7 +31,7 @@ jobs:
           node --check workers/bubbles-cloud-browser/chatgpt-bridge.mjs
           node --check bubbles-cloud-browser.mjs
           node --check bubbles-ai.js
-          node --test test/bubbles-chatgpt-bridge.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-browser-consent.test.mjs test/bubbles-browser-agent.test.mjs
+          node --test test/bubbles-server-assist.test.mjs test/bubbles-runner-bridge.test.mjs test/bubbles-chatgpt-bridge.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-browser-consent.test.mjs test/bubbles-browser-agent.test.mjs
       - name: Check whether the GitHub runner has Cloudflare deploy credentials
         id: deploy_auth
         env:
