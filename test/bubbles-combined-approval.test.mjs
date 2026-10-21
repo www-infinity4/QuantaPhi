@@ -30,3 +30,19 @@ test('late owner restoration rechecks saved approval without granting new access
  assert.ok(poll.includes("if(saved.enabled!==true)return"));
  assert.ok(!poll.includes("action:'enable'"));
 });
+test('busy chat leaves the next job unclaimed; readiness resumes processing without renewing approval',async()=>{
+ const ui=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
+ const poll=ui.slice(ui.indexOf('async function pollChatGPT()'),ui.indexOf('// The session and owner token remain'));
+ const calls=[],states=[];let ready=false;
+ const window={dispatchEvent:event=>event.detail.respond(ready)};
+ const Event=class{constructor(type,options){this.type=type;this.detail=options.detail}};
+ const run=new Function('bridgeCall','window','consumerState','CustomEvent','bridgeStatus',
+  'let chatgptApproved=false,bridgePolling=false,state=null;'+poll+';return pollChatGPT;')(
+  async endpoint=>{calls.push(endpoint);return endpoint==='permission'?{enabled:true,expiresAt:Date.now()+1000}:{queue:'empty'}},
+  window,(...state)=>states.push(state),Event,{});
+ await run();assert.deepEqual(calls,['permission']);assert.equal(states.at(-1)[0],'waiting-for-chat');
+ ready=true;await run();assert.deepEqual(calls,['permission','process']);assert.equal(states.at(-1)[0],'ready');
+ const lifecycle=ui.slice(ui.indexOf("setInterval(()=>void pollChatGPT()"));
+ for(const event of ['focus','pageshow','bubbles:owner-ready','visibilitychange'])assert.ok(lifecycle.includes(event));
+ assert.ok(lifecycle.includes('void pollChatGPT();'));
+});
