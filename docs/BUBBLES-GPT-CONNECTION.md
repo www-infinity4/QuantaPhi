@@ -46,9 +46,11 @@ execution receipt. Record actual failures and partial answers.
 
 Stage the exact reviewed QuantaPhi commit using Moltnook's existing
 `bubbles-cloud-browser-stage.yml` and its matching verifier source pin. Preserve
-all existing binding identities and traffic during staging. Promote only the
+all existing binding identities and traffic during staging. The sole added binding
+is `TOOLS`, a service connection to the existing public `bubbles-tools` gateway;
+it contains no owner credential. Promote only the
 verified candidate using `bubbles-approval-release.yml`, checking source pin,
-binding equality and production readback. Rollback promotes the recorded prior
+equality of all existing bindings, the exact added `TOOLS` service, and production readback. Rollback promotes the recorded prior
 version. Consent records remain in the existing Durable Object.
 
 The public `/health` marker is `serverConversation: signed-runner-v1`.

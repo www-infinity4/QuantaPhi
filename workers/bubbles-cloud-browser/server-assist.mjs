@@ -36,12 +36,13 @@ export async function serverAssist({claims,body,db,store,schedule,fetcher=fetch,
     const data=await response.json();
     if(!await approved(store))throw Error('consent_revoked');
     const output=String(data.output||data.output_text||'').trim();
-    if(!response.ok||data.ok!==true||!output||!data.receipt)throw Error('no_verified_bubbles_response');
+    if(!response.ok)throw Error('gateway_http_'+response.status);
+    if(data.ok!==true||!output||!data.receipt)throw Error('no_verified_bubbles_response');
     result={ok:true,output:output.slice(0,8000),receipt:{tool:String(data.receipt.tool||'conversation').slice(0,100),status:String(data.receipt.status||'unverified').slice(0,60)},
      sources:(Array.isArray(data.sources)?data.sources:[]).slice(0,8).map(s=>({title:String(s.title||'').slice(0,200),url:String(s.url||'').slice(0,1500)})),
      scope:'public_bubbles_conversation',ownerToolsVerified:false,phoneVerified:false};
     state='complete';
-   }catch(error){result={ok:false,error:error.message==='consent_revoked'?'consent_revoked':'bubbles_server_unavailable'};}
+   }catch(error){result={ok:false,error:/^(?:consent_revoked|bubbles_tools_binding_missing|no_verified_bubbles_response|gateway_http_[1-5][0-9]{2})$/.test(error.message)?error.message:'bubbles_server_unavailable'};}
    await db.prepare("UPDATE bubbles_chatgpt_bridge SET status=?,result=?,updated_ms=? WHERE id=? AND action='server_assist' AND status='working'").bind(state,JSON.stringify(result),Date.now(),id).run();
   })());
  }

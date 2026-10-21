@@ -4,6 +4,9 @@ compatibility_date = "2026-10-19"
 [[services]]
 binding = "BRAIN"
 service = "infinity-brain-clock"
+[[services]]
+binding = "TOOLS"
+service = "bubbles-tools"
 [browser]
 binding = "BROWSER"
 
