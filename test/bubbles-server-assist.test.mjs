@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {serverAssist,executeServerAssist} from '../workers/bubbles-cloud-browser/server-assist.mjs';
+import {serverAssist,executeServerAssist,precedingSignedTurns} from '../workers/bubbles-cloud-browser/server-assist.mjs';
 function setup(){
  const rows=new Map(),tasks=[],calls=[];let enabled=true;
  const db={prepare(sql){return {bind(...a){return {
@@ -79,4 +79,38 @@ test('held signed request waits for a real response and stores it before returni
  assert.equal(receipt.state,'complete');assert.equal(finished,true);
  const result=await serverAssist({...f.args,body:{operation:'result'}});
  assert.equal(result.result.output,'held response');
+});
+
+test('signed Bubbles follow-up receives the real preceding weather answer, scoped to its run',async()=>{
+ const f=setup();
+ f.args.fetcher=async (url,options)=>{
+  f.calls.push({url,options});
+  const input=JSON.parse(options.body);
+  if(/Which of those two/.test(input.request))
+   return Response.json({ok:true,output:'Lovilia and Ottumwa are both 74 degrees right now.',receipt:{tool:'oracle.chat',status:'complete'}});
+  return Response.json({ok:true,output:'Lovilia, Iowa: 74 F; Ottumwa, Iowa: 74 F.',receipt:{tool:'weather.current',status:'complete'}});
+ };
+ const first=await serverAssist({...f.args,body:{operation:'assist',turn:0,text:'Weather in Lovilia, Iowa and Ottumwa, Iowa'}});
+ assert.equal(first.state,'complete');
+ const second=await serverAssist({...f.args,body:{operation:'assist',turn:1,text:'Which of those two towns is warmer?'}});
+ assert.equal(second.state,'complete');
+ const sent=JSON.parse(f.calls[1].options.body);
+ assert.equal(sent.request,'Which of those two towns is warmer?');
+ assert.match(sent.input,/Lovilia, Iowa: 74 F; Ottumwa, Iowa: 74 F/);
+ assert.match(sent.input,/Earlier question: Weather in Lovilia/);
+ assert.match(sent.input,/Current user question: Which of those two/);
+ assert.equal(JSON.parse(f.calls[0].options.body).input,'Weather in Lovilia, Iowa and Ottumwa, Iowa');
+ assert.equal(await precedingSignedTurns({...f.args,id:'chatgpt_assist_456_1'}),'');
+ assert.equal((await serverAssist({...f.args,body:{operation:'result',turn:1}})).result.output,
+  'Lovilia and Ottumwa are both 74 degrees right now.');
+});
+test('signed follow-up history excludes expired, failed, unrelated and untrusted runs',async()=>{
+ const f=setup();
+ await serverAssist({...f.args,body:{operation:'assist',turn:0,text:'private synthetic fixture'}}); 
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_456_1',db:f.args.db,now:1000}),'');
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_123_1',db:f.args.db,now:300000}),'');
+ f.rows.get('chatgpt_assist_123_0').status='blocked';
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_123_1',db:f.args.db,now:1000}),'');
+ const malformed=await precedingSignedTurns({id:'chatgpt_assist_abc_1',db:f.args.db,now:1000});
+ assert.equal(malformed,'');
 });
