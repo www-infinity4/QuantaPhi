@@ -5,6 +5,8 @@ on:
       - 'bubbles-ai.js'
       - 'bubbles-action-driver.mjs'
       - 'test/bubbles-action-driver.test.mjs'
+      - 'test/bubbles-orb-semantic.test.mjs'
+      - 'workers/bubbles-tools/semantic-intent.mjs'
       - 'bubbles-cloud-clock.mjs'
       - 'test/bubbles-owner-clock.test.mjs'
       - 'workers/infinity-brain-clock/owner-task-clock.mjs'
@@ -38,6 +40,8 @@ on:
       - 'bubbles-ai.js'
       - 'bubbles-action-driver.mjs'
       - 'test/bubbles-action-driver.test.mjs'
+      - 'test/bubbles-orb-semantic.test.mjs'
+      - 'workers/bubbles-tools/semantic-intent.mjs'
       - 'bubbles-cloud-clock.mjs'
       - 'test/bubbles-owner-clock.test.mjs'
       - 'workers/infinity-brain-clock/owner-task-clock.mjs'
@@ -82,5 +86,7 @@ jobs:
           node --check workers/infinity-brain-clock/owner-task-clock.mjs
           node --test test/bubbles-owner-clock.test.mjs
           node --check bubbles-action-driver.mjs
+          node --check workers/bubbles-tools/semantic-intent.mjs
+          node --test test/bubbles-orb-semantic.test.mjs
           node --test test/bubbles-action-driver.test.mjs
           node --test test/bubbles-card-workspace.test.mjs test/bubbles-repository-targets.test.mjs test/bubbles-smart-repository-routing.test.mjs test/bubbles-github-operator-regression.test.mjs test/bubbles-recordb-owner-command.test.cjs test/bubbles-direct-github.test.mjs test/bubbles-technical-handoff.test.mjs test/bubbles-owner-tools-webview.test.cjs test/bubbles-runner-dispatch.test.mjs

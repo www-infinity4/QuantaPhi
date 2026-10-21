@@ -155,8 +155,9 @@ public final class BubblesService extends Service {
         bubbleLayout.width = size;
         bubbleLayout.height = size;
         android.util.DisplayMetrics display = getResources().getDisplayMetrics();
-        bubbleLayout.x = Math.max(0, Math.min(display.widthPixels - size, bubbleLayout.x));
-        bubbleLayout.y = Math.max(0, Math.min(display.heightPixels - size, bubbleLayout.y));
+        boolean right = BrainNotes.prefs(this).getBoolean("orb_dock_right", true);
+        bubbleLayout.x = EdgeDockPolicy.edgeX(right, display.widthPixels, size);
+        bubbleLayout.y = EdgeDockPolicy.y(bubbleLayout.y, display.heightPixels, size);
         try { manager.updateViewLayout(orb, bubbleLayout); }
         catch (RuntimeException ignored) { /* Android may remove the overlay first. */ }
     }
@@ -480,6 +481,9 @@ public final class BubblesService extends Service {
             return START_NOT_STICKY;
         }
         if (intent != null && ACTION_STOP.equals(intent.getAction())) {
+            // A deliberate Stop must prevent the next app launch from
+            // immediately restarting the microphone against the owner's wish.
+            BrainNotes.prefs(this).edit().putBoolean("orb_auto_resume", false).apply();
             stopSelf();
             return START_NOT_STICKY;
         }
@@ -529,7 +533,12 @@ public final class BubblesService extends Service {
                     WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
                     PixelFormat.TRANSLUCENT);
             bubbleLayout.gravity = Gravity.TOP | Gravity.LEFT;
-            bubbleLayout.x = 14; bubbleLayout.y = 240;
+            android.util.DisplayMetrics initialDisplay = getResources().getDisplayMetrics();
+            boolean dockRight = BrainNotes.prefs(this).getBoolean("orb_dock_right", true);
+            bubbleLayout.x = EdgeDockPolicy.edgeX(dockRight, initialDisplay.widthPixels, normalOrbSize);
+            bubbleLayout.y = EdgeDockPolicy.y(BrainNotes.prefs(this).getInt("orb_dock_y", 240),
+                    initialDisplay.heightPixels, normalOrbSize);
+            orb.setAlpha(.8f); // XRecorder-style discreet dock; tap restores full glow.
             manager.addView(orb, bubbleLayout);
             connected = true;
             syncRoomBubble();
@@ -1686,6 +1695,7 @@ public final class BubblesService extends Service {
         @Override public boolean onTouchEvent(MotionEvent e) {
             switch(e.getActionMasked()) {
                 case MotionEvent.ACTION_DOWN:
+                    setAlpha(1f);
                     downX=e.getRawX();downY=e.getRawY();downAt=SystemClock.elapsedRealtime();moved=false;
                     startX=bubbleLayout.x;startY=bubbleLayout.y;
                     return true;
@@ -1694,12 +1704,23 @@ public final class BubblesService extends Service {
                     if(Math.abs(dx)>8||Math.abs(dy)>8)moved=true;
                     if(moved && bubbleLayout!=null&&manager!=null) {
                         android.util.DisplayMetrics screen = getResources().getDisplayMetrics();
-                        bubbleLayout.x=Math.max(0,Math.min(screen.widthPixels-getWidth(),startX+Math.round(dx)));
-                        bubbleLayout.y=Math.max(0,Math.min(screen.heightPixels-getHeight(),startY+Math.round(dy)));
+                        bubbleLayout.x=EdgeDockPolicy.dragX(startX+Math.round(dx),screen.widthPixels,getWidth());
+                        bubbleLayout.y=EdgeDockPolicy.y(startY+Math.round(dy),screen.heightPixels,getHeight());
                         try{manager.updateViewLayout(this,bubbleLayout);}catch(Exception ignored){}
                     }
                     return true;
                 case MotionEvent.ACTION_UP:
+                    if(moved && bubbleLayout != null && manager != null) {
+                        android.util.DisplayMetrics screen = getResources().getDisplayMetrics();
+                        boolean right = EdgeDockPolicy.dockRight(bubbleLayout.x, screen.widthPixels, getWidth());
+                        bubbleLayout.x = EdgeDockPolicy.edgeX(right, screen.widthPixels, getWidth());
+                        bubbleLayout.y = EdgeDockPolicy.y(bubbleLayout.y, screen.heightPixels, getHeight());
+                        BrainNotes.prefs(BubblesService.this).edit()
+                                .putBoolean("orb_dock_right",right)
+                                .putInt("orb_dock_y", bubbleLayout.y).apply();
+                        try {manager.updateViewLayout(this, bubbleLayout);} catch (RuntimeException ignored) {}
+                    }
+                    setAlpha(.8f);
                     if(!moved) {
                         if(SystemClock.elapsedRealtime()-downAt>650) {
                             muteSession();

@@ -1,6 +1,6 @@
 import {cards,cardIntent} from './bubbles-card-catalog.mjs';
 import {cardControlDecision,safeCardControls,toolReply} from './bubbles-action-driver.mjs';
-export {cardIntent};
+export {cardIntent,cards};
 export class CardWorkspace{
  constructor(container,onEvidence=()=>{},onClose=()=>{},onEdit=()=>{}){
   this.container=container;this.onEvidence=onEvidence;this.onClose=onClose;this.onEdit=onEdit;this.frames=new Map();this.active=null;this.lastSuggestedWords=[];

@@ -7,6 +7,7 @@ on:
       - 'test/bubbles-native-chat.browser.cjs'
       - 'test/bubbles-image-options.test.mjs'
       - 'workers/bubbles-tools/**'
+      - 'test/bubbles-orb-semantic.test.mjs'
       - 'test/bubbles-web-chat.browser.cjs'
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
@@ -35,6 +36,7 @@ on:
       - 'test/bubbles-native-chat.browser.cjs'
       - 'test/bubbles-image-options.test.mjs'
       - 'workers/bubbles-tools/**'
+      - 'test/bubbles-orb-semantic.test.mjs'
       - 'test/bubbles-web-chat.browser.cjs'
       - 'test/bubbles-chatgpt-native.test.cjs'
       - 'test/bubbles-oracle-chat-native.test.cjs'
@@ -67,6 +69,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify XRecorder-style partial edge docking and native voice continuity
+        run: |
+          node --test test/bubbles-orb-semantic.test.mjs
+          mkdir -p /tmp/bubbles-edge-dock
+          javac -d /tmp/bubbles-edge-dock android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/EdgeDockPolicy.java android/bubbles-overlay/checks/EdgeDockPolicyCheck.java
+          java -cp /tmp/bubbles-edge-dock org.quantaphi.bubbles.EdgeDockPolicyCheck
       - name: Verify spoken multi-step Android app control
         run: |
           node --test test/bubbles-spoken-workflow.test.cjs

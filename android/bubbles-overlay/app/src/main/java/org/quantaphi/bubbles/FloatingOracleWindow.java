@@ -203,6 +203,16 @@ final class FloatingOracleWindow {
         // a second local chat when loading, offline, or owner sync is unavailable.
         createWebsite(page);
 
+        // A simple bottom X hides this chat without closing the one native
+        // microphone service or removing the partly docked floating orb.
+        Button bottomClose = button("✕", false);
+        bottomClose.setMinHeight(dp(48));
+        bottomClose.setContentDescription("Hide Bubbles panel; keep floating orb and voice listening");
+        bottomClose.setOnClickListener(v -> hide());
+        LinearLayout.LayoutParams bottomCloseSize = new LinearLayout.LayoutParams(dp(64), dp(48));
+        bottomCloseSize.gravity = Gravity.CENTER_HORIZONTAL;
+        page.addView(bottomClose, bottomCloseSize);
+
         int width = Math.min(service.getResources().getDisplayMetrics().widthPixels - dp(24), dp(550));
         int height = Math.min((int)(service.getResources().getDisplayMetrics().heightPixels * .74f), dp(680));
         WindowManager.LayoutParams params = new WindowManager.LayoutParams(
