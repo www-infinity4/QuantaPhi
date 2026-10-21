@@ -37,3 +37,11 @@ Do not substitute a public model conversation or an idle writer run for intake.
 Validation: `node --test test/brain-owner-work-bridge.test.mjs test/brain-clock.test.mjs test/brain-owner-runner-request.test.mjs`.
 Production release retains the existing singleton Brain canary and owner-release
 gates; adding this source does not authorize bypassing those gates.
+
+## Verified source and staging — October 21, 2026
+
+PR #856 merged as `ca40684a16fa977f3a3576b62e30c269099c3e51` after 14 successful CI checks; 58 focused local checks passed.
+
+Moltnook [staging run 39654973031](https://github.com/www-infinity4/Moltnook/actions/runs/39654973031), job `119412714059`, verified source tests, bundle, existing credential and exact binding parity. Immutable candidate `012107be-79c6-400e-b279-69d11cd646d5` has zero production traffic. The production deployment remained unchanged.
+
+This intake is not yet live. No actual ticket/repair or physical Android acceptance is claimed. Next, refresh the isolated-preview and singleton release evidence from their old `19510f5` pins to this candidate and observed production baseline. Preserve isolated D1/DO, run the canary, and retain the existing owner-confirmed release guard. An unrelated passing workflow cannot substitute for these receipts.
