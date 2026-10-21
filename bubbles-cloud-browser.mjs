@@ -292,9 +292,17 @@ export function mount({host,ownerHeaders,reveal=false}){
  }};
 
  async function pollChatGPT(){
-  if(bridgePolling||!chatgptApproved||document.hidden)return;
+  if(bridgePolling||document.hidden)return;
   bridgePolling=true;
   try{
+   // Initial mount can precede the APK's native wallet restoration. Re-read
+   // the saved grant with current owner authentication; never enable or renew it.
+   if(!chatgptApproved){
+    const saved=await bridgeCall('permission',{action:'status'});
+    if(saved.enabled!==true)return;
+    chatgptApproved=true;
+    bridgeStatus.textContent='ChatGPT bridge restored until '+new Date(saved.expiresAt).toLocaleString()+'.';
+   }
    const data=await bridgeCall('process',state?{sessionId:state.sessionId,proof:state.proof}:{});
    if(data.view){show(data.view)}
    if(data.status==='needs_bubbles_reply'&&data.jobId){
