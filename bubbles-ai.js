@@ -982,10 +982,14 @@ if(!embedded){
  quickButton.addEventListener('click',()=>void grantBridge());
  const topButton=document.getElementById('bubblesChatGPTTopAccess');
  const revealVerifiedOwnerGPT=()=>{
-  // Visibility is convenience only; protected API verifies real owner credentials.
-  quick.hidden=false;quick.style.removeProperty('display');
-  const top=topButton?.closest('.bubbles-chatgpt-entry');
-  if(top){top.hidden=false;top.style.removeProperty('display');}
+  // An event or query flag is NOT a verified owner session. The backend
+  // independently enforces owner credentials and active consent on POST.
+  void verifiedOwnerHeaders().then(headers=>{
+   if(!headers?.Authorization)return;
+   quick.hidden=false;quick.style.display='';
+   const top=topButton?.closest?.('.bubbles-chatgpt-entry');
+   if(top){top.hidden=false;top.style.display='';}
+  }).catch(()=>{});
  };
  window.addEventListener('bubbles:owner-ready',revealVerifiedOwnerGPT);
  if(window.QuantaBrainOwner?.ready)void window.QuantaBrainOwner.ready.then(headers=>{
