@@ -16,7 +16,8 @@ const humanReplies=()=>({
  githubReply(result){
   if(result.error||!result.ok)return 'I could not confirm that GitHub finished the request. Nothing is being marked complete.';
   if(result.status==='dispatch_accepted')return 'GitHub accepted the request, but the work has not finished.';
-  if(result.status==='repository_created')return 'The repository is created. We can open it and work on its pages.';
+  if(result.status==='repository_created')return 'GitHub created '+result.repository+'. '+(result.url||'')+' The repository is ready for source work.';
+  if(result.status==='repository_already_exists')return 'This repository already exists: '+result.repository+'. '+(result.url||'')+' I can continue work there without creating a duplicate.';
   if(result.status==='credential_verified_read')return 'The GitHub connection is responding.';
   if(result.status==='completed'||result.status==='deployed_verified')return 'The available completion checks passed. What should we work on next?';
   return 'GitHub responded. I can check the detailed result before calling anything finished.';
