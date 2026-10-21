@@ -3,7 +3,7 @@
  * No secrets, alarms, or private worker controls are exposed to anonymous chat.
  */
 const TICKET=/\b(IW-\d{8}-[0-9A-F-]{8})\b/i,JOB=/\b(TASK-\d+)\b/i;
-const CLOCK=/\b(?:schedule|scheduled|scheduler|alarm|clock\s+(?:tasks?|jobs?)|scheduled\s+(?:tasks?|jobs?))\b/i;
+const CLOCK=/\b(?:schedule|scheduled|scheduler|alarm|clock(?:\s+(?:tasks?|jobs?))?|scheduled\s+(?:tasks?|jobs?))\b/i;
 export function parseClockIntent(value,{now=new Date()}={}){
  const message=String(value||'').trim();
  if(!CLOCK.test(message))return null;
@@ -16,7 +16,10 @@ export function parseClockIntent(value,{now=new Date()}={}){
  const control=prefix.match(/^(pause|resume|cancel|archive)\b.{0,60}\b(clock_[0-9a-f-]{36})\b/i);
  if(control){
   const action=control[1].toLowerCase(),id=control[2];
-  if(action==='resume')return {action,id,needsTime:true};
+  if(action==='resume'){
+   const iso=message.match(/\\b(?:at|on)\\s+(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2})?(?:Z|[+-]\\d{2}:\\d{2}))/i)?.[1];
+   return iso?{action,id,startAt:iso}:{action,id,needsTime:true};
+  }
   return {action,id};
  }
  if(!/\b(?:schedule|set an? alarm|run|start)\b/i.test(prefix))return null;
