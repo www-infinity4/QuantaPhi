@@ -63,13 +63,16 @@ export function chooseTool(text){
  if(/\b(?:open|show|launch|pull\s+up|bring\s+up)\b/.test(request)&&/\b(?:resonator|resonance\s+calculator|resonance\s+engine)\b/.test(request))return 'resonance.open';
  if(/\b(?:resonance|resonator|resonant\s+frequency|lc\s+(?:tank|circuit|frequency))\b/.test(request)
    &&(/\b(?:calculate|compute|find|solve|run|what\s+is|what's)\b/.test(request)||parseResonanceSpeech(request)))return 'resonance.calculate';
- const lookup=lookupKind(text);if(lookup)return lookup;
+ // A literal public page URL plus a reading/inspection verb wins over
+ // generic keyword search and GitHub-file heuristics. Owner browser actions
+ // are still separate: this route only fetches permitted public HTML.
  // Reading a named public webpage is different from reading a GitHub
  // repository file, even if the URL ends in .html or mentions QuantaPhi.
  const pageUrl=/https?:\/\/[^\s<>"']+/i.exec(text)?.[0]||'';
  if(pageUrl&&!/^https?:\/\/(?:www\.)?github\.com(?:\/|$)/i.test(pageUrl)&&
     /\b(?:read|inspect|review|fetch|summarize|explain|describe|look\s+at)\b/i.test(request))
   return 'web.read_page';
+ const lookup=lookupKind(text);if(lookup)return lookup;
  if(/\b(?:read|open|show|inspect|explain|review|fetch|summarize)\b.{0,120}\b(?:readme(?:\.md)?|[a-z0-9_./-]+\.(?:md|markdown|txt|html|css|js|json))\b/i.test(request)
   &&/\b(?:github|repo|repository|quantaphi)\b|\b[a-z0-9_.-]+\/[a-z0-9_.-]+\b/i.test(request))return 'github.read_file';
  // Only a direct creation instruction grants creation intent. Descriptions,
