@@ -72,3 +72,23 @@ as a test fixture or publish personal chat contents in repository receipts.
    against actual code; model agreement is not an execution receipt.
 6. Stage and promote through Moltnook's existing credential with exact source
    pins and binding equality checks. Keep private data and credentials out of logs.
+
+
+## Verified rollout receipt — 2026-10-21 UTC
+
+- QuantaPhi PR808 merged as3a5b67b636365bb9f77bdab48d95ed38ab354a97 after30 successful PR checks. Local broad Bubbles/owner suite:585 passed,0 failed. Background mount tests cover hidden approved dispatch/completion, revoked approval, missing owner proof, and single-flight overlapping ticks.
+- Pages run39526457438 succeeded. Canonical Bubbles HTML was separately verified serving `bubbles-ai.js?v=20261020-background-bridge1` after raw-origin propagation; successful Pages status alone was insufficient. Versioned chat JS imports the matching new browser module.
+- Live probe39526551991 was accepted then blocked; do not describe it as successful. Diagnostic source PR809 merged asfd3c9d390dc89888f571e6d011f22c4e77f72584 after12 successful checks. It returns only allowlisted failure categories for its own run, never private reply text or arbitrary errors.
+- Initial diagnostic staging39526939672 uploaded at0% but correctly failed provenance because the staging verifier retained the previous source pin. PR116 aligned the verifier; repeat staging39527049477 passed27 tests and all binding/unchanged-traffic checks.
+- Release39527169009 verified candidate`ca919853-d49e-4933-ae74-31736b30e334` at100% with identical bindings and sourcefd3c9d3.
+- **Live signed Bubbles acknowledgement succeeded:** Moltnook run39527225018, job118984615025. Accepted/queued01:25:30UTC, working01:25:39UTC, complete01:25:47UTC. The private reply remains in owner chat. This proves the approved message round trip, not hardware access or arbitrary job execution.
+
+### Live UI acceptance findings
+
+These checks used a separate cloud browser without a verified owner wallet; they do not certify APK/web owner-history synchronization.
+
+- Individual Albia, Lovilia and Ottumwa Iowa weather prompts returned town-specific conditions, observation timestamps and`weather.current · complete` receipts.
+- Hydrogen web search returned source excerpts, clickable publisher URLs and`web.search · complete`. This does not prove full publisher pages were read.
+- **Open defect:** “What is the current weather in Albia, Lovilia, and Ottumwa, Iowa? Include the observation time and source for each. Tell me if you cannot verify a location.” returned only Albia. Do not mark multi-location acceptance complete. Reproduce and repair the shared-state list/trailing-sentence parser; require an explicit result or failure per requested town.
+- **Open defect:** “Read https://quantaphi.org/bubbles.html and tell me what account connection requirements it actually states. Use the page content and say if you cannot fetch it.” entered the public GitHub-file route and returned`github_file_read_failed`. A public webpage URL ending in.html must not be misclassified as a repository file. A real website-read receipt remains required before claiming page content was fetched.
+- Physical Android screen-recording lifecycle, microphone/voice, installed APK version, cross-device history and private ZIP import remain unverified. Draft conflicting PRs786/788 are not release evidence.
