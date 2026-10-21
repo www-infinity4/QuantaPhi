@@ -64,3 +64,22 @@ test/bubbles-runner-bridge.test.mjs test/bubbles-chatgpt-bridge.test.mjs`.
 
 Deployment and live acceptance must be recorded separately from passing source
 tests; do not claim this route is live from the presence of this document.
+
+## Verified live connection — 2026-10-21 UTC
+
+- QuantaPhi implementation and instructions merged through PRs #839–#843.
+- Active Worker version: `4b56c269-1177-4053-91ae-8785efaf9319`, source
+  `3924fd07371c4b18e8d113f33327f030c4612f4d`. Moltnook release run
+  `39557230601` promoted it and verified binding preservation/readback.
+- Moltnook signed conversation run `39557247327`, job `119079781933`,
+  completed successfully: three questions, zero transport failures.
+- Actual results: Lovilia weather with observation time (`weather.current`),
+  a local recording-app plan (`oracle.chat`), and hydrogen research sources
+  distinguished from full papers (`web.search`). The answers were inspected.
+- This establishes the signed server conversation path without an open owner
+  browser. It does not establish APK synchronization or physical phone access.
+- Source verification: 35 focused tests and all 12 PR checks passed.
+
+Future GPT sessions should begin with this route and inspect current workflow
+results rather than repeat the failed browser-polled queue setup. Existing
+consent expiry/revocation remains authoritative.

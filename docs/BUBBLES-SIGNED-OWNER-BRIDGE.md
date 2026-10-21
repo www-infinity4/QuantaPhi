@@ -1,5 +1,10 @@
 # Bubbles owner bridge: verified connection and batch acceptance
 
+For conversational tests that must work without an open owner browser, use
+[the verified signed server connection](BUBBLES-GPT-CONNECTION.md). Its
+`assist`/`result` operations replace the browser-polled `submit` operation for
+that purpose. Keep the browser-specific procedures below for browser work.
+
 ## Use this route in subsequent sessions
 
 The working transport is the existing Moltnook runner, not a new Chrome wallet login.
