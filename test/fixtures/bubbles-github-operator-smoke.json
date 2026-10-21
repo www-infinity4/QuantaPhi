@@ -3,8 +3,10 @@
   "scope": "synthetic-repository-operator-test",
   "operations": [
     "read",
-    "create_file"
+    "create_file",
+    "read_file",
+    "update_file"
   ],
-  "verification": "pending-update",
+  "verification": "created-read-updated",
   "personalData": false
 }
