@@ -1956,6 +1956,25 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const continued=!embedded?brainTools?.resolveFollowupRequest?.(spoken,messages):'';
  const contextualRepair=!embedded?brainTools?.resolveRepairRequest?.(spoken,messages):'';
  const request=continued||contextualRepair||spoken;
+ // Clock and alarm requests stay in Bubbles' normal conversation. Owner access
+ // is checked by Brain on every call; a schedule NEVER starts a new repo write.
+ if(!embedded&&/\\b(?:schedule|scheduled|scheduler|alarm|clock)\\b/i.test(request)){
+  try{
+   const module=await import('/bubbles-cloud-clock.mjs?v=20261020-clock1');
+   const clockIntent=module.parseClockIntent(request);
+   if(clockIntent){
+    busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+    let reply;
+    try{reply=await module.clockConversation(clockIntent,{
+     ownerHeaders:verifiedOwnerHeaders,fetcher:bubblesFetch,base:BRAIN
+    })}catch(error){reply='Cloudflare clock action not verified: '+String(error.message||error).slice(0,150)+'. No schedule change is being claimed.'}
+    display(reply,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+    status.textContent=reply.slice(0,250);
+    if(nativeOverlay&&fromVoice)nativeSpeechReply=reply;else if(fromVoice&&config.voice&&!nativeOverlay)speakText(reply);
+    nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();return;
+   }
+  }catch(error){status.textContent='Clock module unavailable: '+String(error.message||error).slice(0,120)}
+ }
  // A named public README/source request uses the actual GitHub file reader.
  // A model summary alone cannot prove that a file was opened. Keep owner-only
  // GitHub edits on their separate authenticated action route.

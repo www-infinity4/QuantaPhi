@@ -5,6 +5,7 @@ import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,com
 import {conversationMemory} from './conversation-memory.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
+import {ownerClockCommand,runDueOwnerClock} from './owner-task-clock.mjs';
 import {checkOwnerRunnerRequest,runnerDispatchReceipt} from './runner-request.mjs';
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
@@ -709,6 +710,11 @@ export class BrainClock extends DurableObject{
    return Response.json(result.body,{status:result.status});
   }
   if(new URL(request.url).pathname==='/github')return Response.json(await this.directGithub(await request.json()));
+  if(new URL(request.url).pathname==='/owner/task-clock'){
+   const body=await request.json();
+   const response=await this.ctx.blockConcurrencyWhile(()=>ownerClockCommand(this.ctx.storage,this.env.WORK_DB,this.env.WRITER_OWNER_HASH,body));
+   return Response.json(response.result,{status:response.status});
+  }
   if(new URL(request.url).pathname==='/owner/cloudflare-token-plan')
    return Response.json(await planCloudflareToken(this.ctx.storage,await request.json(),this.env));
   if(new URL(request.url).pathname==='/owner/cloudflare-token-confirm'){
@@ -841,6 +847,19 @@ export class BrainClock extends DurableObject{
    try{await this.archiveOlderPreviews()}catch(e){await this.ctx.storage.put('evidence-archive-error',{when:Date.now(),error:String(e.message).slice(0,200)})}
    if(await this.ctx.storage.get('bot-work-recipient'))await this.settleWork();
    try{await this.recoverDeferredWork()}catch(error){await this.ctx.storage.put('deferred-recovery-status',{at:Date.now(),state:'recovery_error',reason:String(error.message||error).slice(0,160)});}
+   // Owner-defined clock entries use this SAME alarm and existing signed runner.
+   // An alarm authorizes no new source write or ticket; it requests only a
+   // previously owner-approved ticket job, with a five-minute dispatch cap.
+   try{await runDueOwnerClock(this.ctx.storage,{
+    guard:async()=>(await this.ctx.storage.get('alarm-global-next-at')||0)<=Date.now(),
+    dispatch:async target=>{
+     await this.ctx.storage.put('alarm-global-next-at',Date.now()+5*60*1000);
+     const response=await this.fetch(new Request('https://clock.internal/run-next',{
+      method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(target)}));
+     if(!response.ok)throw Error('clock_runner_request_http_'+response.status);
+     return response.json();
+    }
+   })}catch(error){await this.ctx.storage.put('owner-task-clock-error',{at:Date.now(),error:String(error.message||error).slice(0,140)})}
    try{await this.retryPendingWork()}catch(error){await this.ctx.storage.put('alarm-dispatch-error',{when:Date.now(),reason:String(error.message||error).slice(0,160)});}
    const page=await read('https://quantaphi.org/',150000);
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
@@ -1313,6 +1332,21 @@ export default{
     const raw=await request.text();if(raw.length>128000)return output(request,{ok:false,error:'request_too_large'},413);
     return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
+  }
+  if(path==='/work/clock'&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   try{
+    const text=await request.text();if(text.length>2200)return output(request,{ok:false,error:'clock_request_too_large'},413);
+    const body=JSON.parse(text||'{}');
+    if(!body||typeof body!=='object'||Array.isArray(body))return output(request,{ok:false,error:'invalid_clock_request'},400);
+    const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
+    const response=await clock.fetch('https://clock.internal/owner/task-clock',{
+     method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    return output(request,await response.json(),response.status);
+   }catch{return output(request,{ok:false,error:'clock_operation_unavailable'},503)}
   }
   if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/tickets/approve','/work/tickets/approve-all','/work/memory/status'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
