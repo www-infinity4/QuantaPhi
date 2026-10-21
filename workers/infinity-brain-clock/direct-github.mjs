@@ -91,7 +91,7 @@ jobs:
       - name: Run repository checks
         run: |
           if [ -f package.json ]; then npm install --ignore-scripts --no-audit --no-fund; npm run test --if-present; npm run build --if-present; fi
-          if [ -d tests ]; then python3 -m unittest discover -s tests; fi
+          if [ -d tests ] && find tests -type f -name 'test*.py' | grep -q .; then python3 -m unittest discover -s tests; fi
 `;
   const bytes=new TextEncoder().encode(workflow),content=btoa(String.fromCharCode(...bytes));
   const baseline=await request('https://api.github.com/repos/'+repository+'/contents/.github/workflows/bubbles-checks.yml',{...options,method:'PUT',body:JSON.stringify({message:'Add Bubbles Python and Node execution checks',content,branch:repo.default_branch})});
