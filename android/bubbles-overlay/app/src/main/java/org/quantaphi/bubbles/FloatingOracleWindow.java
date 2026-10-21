@@ -50,6 +50,7 @@ final class FloatingOracleWindow {
     private TextView status;
     private Button retryButton;
     private Button liveBack;
+    private Button recordToggle;
     private boolean livePage;
     private PermissionRequest livePermission;
     private AlertDialog livePermissionDialog;
@@ -84,6 +85,16 @@ final class FloatingOracleWindow {
     private final Runnable update = new Runnable() {
         @Override public void run() {
             if (root == null) return;
+            // Reflect only real service state, not stale "Saving" messages.
+            if (recordToggle != null) {
+                boolean recording = ScreenCaptureService.isRunning()
+                    && BrainNotes.prefs(service).getBoolean("capture_recording", false);
+                String label = recording ? "■ Stop" : "● Rec";
+                if (!label.contentEquals(recordToggle.getText())) recordToggle.setText(label);
+                recordToggle.setContentDescription(recording
+                    ? "Stop and save the screen recording"
+                    : "Start screen recording; requires Android screen sharing approval");
+            }
             if (livePage && trustedLive(website)) {
                 final int generation = loadGeneration;
                 website.evaluateJavascript("Boolean(window.BubblesLiveVoice && window.BubblesLiveVoice.inCall())", result -> {
@@ -176,6 +187,41 @@ final class FloatingOracleWindow {
         // Keep a single visible Live button in the chat header. Do not gate it
         // behind Options/Less; microphone consent remains in the live page.
         header.addView(liveBack);
+        // This native button directly invokes Android's recording path.
+        // No model instruction, synthetic screen tap or hidden Options menu.
+        recordToggle = button("● Rec", false);
+        recordToggle.setMinHeight(dp(44));
+        recordToggle.setContentDescription("Start screen recording; requires Android screen sharing approval");
+        recordToggle.setOnClickListener(v -> {
+            boolean active = ScreenCaptureService.isRunning()
+                && BrainNotes.prefs(service).getBoolean("capture_active", false);
+            if (active) {
+                try {
+                    service.startService(new Intent(service, ScreenCaptureService.class)
+                        .setAction(ScreenCaptureService.STOP));
+                    if (status != null) status.setText("Stopping and saving screen recording…");
+                } catch (RuntimeException error) {
+                    if (status != null) status.setText("Could not stop screen recording.");
+                }
+                return;
+            }
+            if (ScreenCaptureService.isRunning()) {
+                if (status != null) status.setText("Screen capture is starting or saving. Check its status.");
+                return;
+            }
+            // The existing MainActivity consumes this only once and opens the
+            // real MediaProjection permission sheet before service startup.
+            Intent intent = new Intent(service, MainActivity.class)
+                .putExtra("voice_capture", "screen_video")
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            try {
+                service.startActivity(intent);
+                if (status != null) status.setText("Approve Android screen sharing to begin recording.");
+            } catch (RuntimeException error) {
+                if (status != null) status.setText("Android could not open screen recording approval.");
+            }
+        });
+        header.addView(recordToggle);
         Button close = button("✕ Hide", false);
         close.setMinWidth(dp(72));
         close.setMinHeight(dp(48));
