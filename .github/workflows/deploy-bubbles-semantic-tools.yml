@@ -1,9 +1,16 @@
 name: Deploy Bubbles semantic tools
 on:
+  pull_request:
+    paths:
+      - 'workers/bubbles-tools/**'
+      - 'scripts/verify-bubbles-live-tools.mjs'
+      - 'test/bubbles-live-tool-acceptance.test.mjs'
+      - '.github/workflows/deploy-bubbles-semantic-tools.yml'
   push:
     branches: [main]
     paths:
       - 'workers/bubbles-tools/**'
+      - 'scripts/verify-bubbles-live-tools.mjs'
       - '.github/workflows/deploy-bubbles-semantic-tools.yml'
   workflow_dispatch:
 permissions:
@@ -28,6 +35,7 @@ jobs:
           node --check workers/bubbles-tools/search.mjs
           node --test test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-tools.test.mjs test/bubbles-live-tool-acceptance.test.mjs
       - name: Check existing deployment authorization
+        if: github.event_name != 'pull_request'
         id: deploy_auth
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
