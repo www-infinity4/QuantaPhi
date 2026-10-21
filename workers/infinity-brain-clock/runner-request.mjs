@@ -3,6 +3,44 @@
  * the Worker, not in the Android microphone or the chat model. */
 import {eligibleForRetry} from './alarm-retry.mjs';
 
+// The five-day bridge may enqueue source work, never impersonate a wallet,
+// approve blocked jobs, release production, or obtain a writer lease.
+export async function submitApprovedBridgeWork({request,claims,body,submit,dispatch,fetcher=fetch}) {
+  if(!body||Object.keys(body).some(k=>!['repository','request'].includes(k))||
+    !['www-infinity4/QuantaPhi','www-infinity4/RecordB'].includes(body.repository)||
+    typeof body.request!=='string'||!body.request.trim()||body.request.length>1800)
+    return {status:400,result:{ok:false,error:'invalid_owner_bridge_work'}};
+  // Ask the deployed consent owner on EVERY attempt, including retries.
+  // This read cannot renew permission or disclose private conversations.
+  const approval=await fetcher('https://bubbles-cloud-browser.marvaseater.workers.dev/v1/browser/chatgpt/runner',{
+    method:'POST',headers:{Authorization:request.headers.get('Authorization'),'Content-Type':'application/json'},
+    body:JSON.stringify({operation:'status'}),signal:AbortSignal.timeout(15000)});
+  const proof=await approval.json().catch(()=>({}));
+  if(!approval.ok||proof.ok!==true||proof.jobId!=='chatgpt_runner_'+claims.run_id)
+    return {status:403,result:{ok:false,error:'owner_bridge_approval_unavailable'}};
+  const text=body.request.trim(),repository=body.repository;
+  const saved=await submit({start_immediately:true,source_app:'Bubbles approved GPT work bridge',
+    source_url:'https://github.com/www-infinity4/Moltnook/actions/runs/'+claims.run_id,
+    title:text.slice(0,120),request:text,repository,context:{kind:'robot-directions',
+      submission_id:'gpt-owner-work-'+claims.run_id,repositories:[repository],approval:'existing-five-day-bridge',
+      color_jobs:[{id:'TASK-1',agent:'greenbeans',executor:'repository-engine',repository,
+        title:'Implement owner repair with independent review',instructions:text,dependencies:[],
+        acceptance:['Reproduce the assigned source failure and implement a bounded repair.',
+          'Pass relevant regression tests and independent Pink/GPT Purple review before publishing a PR.',
+          'Report actual commit, test and PR receipts; keep production and Android hardware acceptance separate.']}]
+    }});
+  if(!saved.result?.ok||!saved.result.ticket?.id) return saved;
+  const ticket=saved.result.ticket;
+  if(ticket.request!==text||ticket.repository!==repository)
+    return {status:409,result:{ok:false,error:'owner_bridge_run_conflict'}};
+  let execution={status:'scheduled_fallback'};
+  // A retry does not revive blocked work or redispatch an existing ticket.
+  if(saved.result.startRequested)try{execution=await dispatch(ticket.id);}catch{}
+  return {status:200,result:{ok:true,ticketId:ticket.id,repository,status:ticket.status,
+    deduplicated:saved.result.deduplicated===true,execution:{status:execution.status||'unverified'},
+    completed:false,productionVerified:false}};
+}
+
 const ownerBlock = /owner_input_required|owner_authorization_required|owner_approval_required|requires_owner|permission_denied|security_hold|sensitive_decision|unsupported_repository|invalid_color_jobs/i;
 
 /**
