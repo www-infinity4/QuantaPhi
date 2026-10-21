@@ -229,3 +229,21 @@ test('Brain rejects truncated repository names before any GitHub API call',async
  }
  assert.equal(calls,0);
 });
+
+test('repeated create RecordB returns a verified existing repository instead of a misleading error',async()=>{
+ const calls=[];
+ const network=async(url,options)=>{
+  calls.push({url,method:options.method||'GET'});
+  if(url==='https://api.github.com/user')return Response.json({login:'www-infinity4'});
+  if(url==='https://api.github.com/user/repos')return Response.json({message:'Name already exists'},{status:422});
+  if(url==='https://api.github.com/repos/www-infinity4/RecordB')
+   return Response.json({full_name:'www-infinity4/RecordB',owner:{login:'www-infinity4'},html_url:'https://github.com/www-infinity4/RecordB',default_branch:'main',private:false});
+  throw Error('unexpected URL '+url);
+ };
+ const result=await githubOperation({GITHUB_TOKEN:'fixture'},{
+  repository:'www-infinity4/RecordB',action:'create_repository',description:'Screen recorder card'},network);
+ assert.equal(result.status,'repository_already_exists');
+ assert.equal(result.ok,true);
+ assert.equal(result.testsPassed,false);
+ assert.equal(calls.length,3);
+});
