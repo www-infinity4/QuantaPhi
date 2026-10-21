@@ -41,3 +41,14 @@ test('Native recorder state is authoritative, including save/failure',()=>{
  assert.match(recordBState({screenState:'Saved screen MP4 to Movies/Bubbles'},true).status,/Saved/);
  assert.match(recordBState({screenState:'Gallery export failed'},true).status,/problem/i);
 });
+
+test('interrupted Android service does not look like an endless or successful save',()=>{
+ const message='Saving recording to Movies/Bubbles…';
+ const working=recordBState({screenState:message,screenCaptureServiceRunning:true},true);
+ assert.equal(working.saving,true);assert.equal(working.canStart,false);
+ const crashed=recordBState({screenState:message,screenCaptureServiceRunning:false},true);
+ assert.equal(crashed.saving,false);assert.equal(crashed.interruptedSaving,true);
+ assert.equal(crashed.canStart,true);assert.match(crashed.status,/interrupted|cannot be verified/);
+ assert.doesNotMatch(crashed.status,/^Saved/);
+ assert.equal(recordBState({screenState:message},true).saving,true);
+});
