@@ -2,7 +2,7 @@ name: Infinity brain repository writer and cloud browser
 on:
   push:
     branches: [main]
-    paths: ['scripts/brain-*.mjs', 'workers/infinity-brain-clock/**', 'test/brain-writer.test.mjs', 'test/brain-preview.test.mjs', '.github/workflows/brain-writer.yml']
+    paths: ['scripts/brain-*.mjs', 'workers/infinity-brain-clock/**']
   workflow_dispatch:
   schedule:
     - cron: '*/5 * * * *'
