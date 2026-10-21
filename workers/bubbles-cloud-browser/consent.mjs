@@ -20,12 +20,17 @@ export class BrowserConsentStore extends DurableObject {
   return {ok:true,enabled,expiresAt:enabled?record.expiresAt:null,
    scope:['chatgpt.browser.read','chatgpt.browser.navigate','chatgpt.browser.safe_click',
     'chatgpt.browser.safe_type','chatgpt.bubbles.message'],
-   channel:'Cloudflare D1 owner-admin bridge',browserActionApprovalSeparate:true};
+   channel:'Cloudflare D1 owner-admin bridge',browserActionApprovalSeparate:false};
  }
  async enableChatGPT(){
   const now=Date.now();
   const value={enabled:true,expiresAt:now+FIVE_DAYS_MS,updatedAt:now};
-  await this.ctx.storage.put('owner-chatgpt-bridge-consent',value);
+  // The visible approval explicitly covers both ChatGPT and Cloud Browser.
+  // Commit both records together so no second hidden approval is required.
+  await this.ctx.storage.put({
+   'owner-chatgpt-bridge-consent':value,
+   'owner-browser-consent':{...value}
+  });
   return this.chatgptStatus();
  }
  async revokeChatGPT(){
