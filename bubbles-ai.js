@@ -1910,7 +1910,10 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   .replace(/^(?:(?:hey|hi|hello|okay|ok)\s+)?(?:bubbles(?:\s+ai)?)[\s,:]+/,'')
   .replace(/^please\s+/,'')
   .replace(/^(?:(?:can|could|would|will) you\s+(?:please\s+)?|i (?:need|want|would like) (?:you )?to\s+|i (?:want|need) (?:a |the )?)/,'')
-  .replace(/^please\s+/,'');
+  .replace(/^please\s+/,'')
+  // Speech-to-text often renders 'record' as 'recird' on a phone.
+  // Recognize this intent locally so it reaches Android rather than an AI card.
+  .replace(/^(?:recird|recrod|reccord)(?=\s|$)/,'record');
  const nativeCaptureTarget=/\b(?:screen(?:\s+recorder|\s+recording|\s+capture|\s+video)?|screenshots?|screen\s*shot)\b/i.test(nativeDirective)
   || /^(?:record|record (?:sound|audio|my voice)|start (?:recording|sound recording|audio recording)|stop (?:recording|audio|sound|microphone)|save (?:recording|audio|sound)|(?:turn|switch) (?:on|off) (?:the |my )?(?:voice|audio|sound|microphone) recorder)$/i.test(nativeDirective)
   || /^(?:open|launch|edit|trim|cut|extract|separate|get|remove)\b.*\b(?:cap\s*cut|video|clip|recording|audio|sound)\b/i.test(nativeDirective)
