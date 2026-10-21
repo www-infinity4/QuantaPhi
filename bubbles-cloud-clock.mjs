@@ -3,7 +3,7 @@
  * No secrets, alarms, or private worker controls are exposed to anonymous chat.
  */
 const TICKET=/\b(IW-\d{8}-[0-9A-F-]{8})\b/i,JOB=/\b(TASK-\d+)\b/i;
-const CLOCK=/\b(?:schedule|scheduled|scheduler|alarm|clock(?:\s+(?:tasks?|jobs?))?|scheduled\s+(?:tasks?|jobs?))\b/i;
+const CLOCK=/\b(?:schedule|scheduled|scheduler|alarm|clock(?:\s+(?:tasks?|jobs?))?|scheduled\s+(?:tasks?|jobs?))\b|\bclock_[0-9a-f-]{36}\b/i;
 export function parseClockIntent(value,{now=new Date()}={}){
  const message=String(value||'').trim();
  if(!CLOCK.test(message))return null;
