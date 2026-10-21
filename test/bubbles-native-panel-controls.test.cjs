@@ -40,11 +40,24 @@ test('visible Start or resume control can restart a previously muted foreground 
  assert.match(service,/private void resumeSession\(\)/);
 });
 
+test('native Record button is visible and requests one real Android approval',()=>{
+ assert.ok(panel.includes('recordToggle = button("● Rec", false);'));
+ assert.ok(panel.includes('header.addView(recordToggle);'));
+ assert.ok(panel.includes('.putExtra("voice_capture", "screen_video")'));
+ assert.ok(panel.includes('service.startActivity(intent);'));
+ assert.ok(panel.includes('ScreenCaptureService.isRunning()'));
+ assert.ok(panel.includes('.setAction(ScreenCaptureService.STOP)'));
+ assert.ok(panel.includes('Approve Android screen sharing to begin recording.'));
+ assert.ok(home.includes('startActivityForResult(projection.createScreenCaptureIntent(), SCREEN_REQUEST);'));
+ assert.ok(home.includes('startForegroundService(capture);'));
+ assert.ok(!panel.includes('performGlobalAction('));
+});
+
 test('Live call control is directly visible without Options/Less',()=>{
- assert.match(panel,/liveBack = button\\("Live", false\\)/);
- assert.match(panel,/header\\.addView\\(liveBack\\);/);
+ assert.ok(panel.includes('liveBack = button("Live", false);'));
+ assert.ok(panel.includes('header.addView(liveBack);'));
  assert.doesNotMatch(panel,/Button voiceOptions = button/);
- assert.doesNotMatch(panel,/liveBack\\.setVisibility\\(View\\.GONE\\)/);
- assert.match(panel,/liveBack\\.setText\\("Chat"\\)/);
+ assert.doesNotMatch(panel,/liveBack[.]setVisibility[(]View[.]GONE[)]/);
+ assert.ok(panel.includes('liveBack.setText("Chat")'));
 });
 
