@@ -1578,6 +1578,7 @@ function extract(reply){
 // model replies; real tool/HTTP auth errors and explicit device pairing are not hidden.
 function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  const answer=String(reply||'').trim();
+ if(/["']name["']\s*:\s*["']github(?:CreateRepo|UpdateFile|CreateIssue)["'][\s\S]*["']arguments["']\s*:/i.test(answer))return 'I received a proposed GitHub action, but it did not run. Your repair report belongs with the affected project and its conversation context; no repository or file change has been verified.';
  if(/\"name\"\s*:\s*\"createTicket\"[\s\S]*\"arguments\"\s*:/.test(answer))return 'Bubbles received a model-generated tool draft. No authenticated ticket or code change was verified by that answer.';
  // Model text that *describes* a GitHub operation is not an execution receipt.
  if((/\b(?:issue|make|need)\s+(?:a\s+)?tool call\b/i.test(answer) ||
@@ -2208,8 +2209,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // "can you create..." request still counts as an instruction; "how do I..."
  // and "don't create..." do not.
  const ownerGithubNonAction=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:do\s+not|don['’]t|never|stop|i\s+(?:do\s+not|don['’]t)\s+want|(?:how|why|what|when|where|explain|describe)\b|(?:can|could|would) you\s+(?:explain|describe|show me how|tell me how)\b)/i.test(request);
- const createRepository=/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request)
-  || /\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*[A-Za-z][\w.-]*\s+(?:(?:the|github)\s+)*(?:repo|repository)\b/i.test(request);
+ const createRepository=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:(?:can|could|would|will) you\s+)?(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request)
+  || /^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:(?:can|could|would|will) you\s+)?(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*[A-Za-z][\w.-]*\s+(?:(?:the|github)\s+)*(?:repo|repository)\b/i.test(request);
  const directRequest=/^(?:(?:hey|please|bubbles)[, ]+)*(?:(?:can|could|would|will) you\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
  // Ordinary one-repository changes belong to Bubbles direct GitHub. Only a
  // clear request for multiple cooperating color agents enters Robot Brain.
