@@ -96,6 +96,11 @@ export function mount({host,ownerHeaders,reveal=false}){
  // private D1 queue; only the signed Bubbles owner can approve this five-day grant.
  // A separate ChatGPT account/browser token is never placed in the HTML.
  const bridge=document.createElement('section');
+ // Hide private GPT controls from visitors; owner APIs also enforce authorization.
+ bridge.hidden=true;bridge.style.display='none';
+ void Promise.resolve().then(()=>ownerHeaders()).then(headers=>{
+  if(headers?.Authorization){bridge.hidden=false;bridge.style.removeProperty('display');}
+ }).catch(()=>{});
  bridge.className='ba-chatgpt-browser-bridge';
  bridge.style.cssText='margin:10px 0;padding:12px;border:1px solid #9e89c4;border-radius:12px';
  const bridgeTitle=element('strong','ChatGPT ↔ Bubbles · Cloud Browser');
