@@ -48,6 +48,7 @@ test('explicit cities stay independent and no missing location is invented',()=>
  assert.equal(weatherPlace('Weather now',null),'');
  const natural='What is the current weather in Albia, Lovilia, and Ottumwa, Iowa? Include the observation time and source for each. Tell me if you cannot verify a location.';
  assert.deepEqual(weatherLocations(natural),['Albia, Iowa','Lovilia, Iowa','Ottumwa, Iowa']);
+ assert.deepEqual(weatherLocations('Weather in Albia, Lovilia, and Ottumwa, Iowa. Check each town separately.'),['Albia, Iowa','Lovilia, Iowa','Ottumwa, Iowa']);
  assert.deepEqual(weatherLocations('Weather in Albia, Iowa and Ottumwa, Iowa?'),['Albia, Iowa','Ottumwa, Iowa']);
  assert.deepEqual(weatherLocations('Weather in Albia, IA, Omaha, NE'),['Albia, IA','Omaha, NE']);
  assert.deepEqual(weatherLocations('Weather in Albia and Ottumwa, Iowa'),['Albia, Iowa','Ottumwa, Iowa']);
