@@ -459,7 +459,7 @@
     // Readers get a real sourced story immediately whenever an unused verified
     // item exists. The Cloudflare writer can replace it with a new original.
     // Search-specific Asteroids do not substitute an unrelated catalog article.
-    const ready = searchMode ? null : pickUnique(roll, seenIds());
+    const ready = searchMode || requireFresh ? null : pickUnique(roll, seenIds());
     if(requireFresh){
       current=null;interactedWithStory=false;
       const card=root.querySelector('.ib-story');card.hidden=false;card.dataset.ready='false';delete card.dataset.storyId;
@@ -636,7 +636,7 @@
     if(!catalog)return;
     placeHomeStory();
     // The opener uses the same live writer as search stories, without an asteroid.
-    void nextStory('',{requireFresh:false});
+    void nextStory('',{requireFresh:true});
   }
   window.addEventListener('quantaphi:new-search',()=>{
     ++activeStoryTicket;
