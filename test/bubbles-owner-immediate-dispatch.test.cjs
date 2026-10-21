@@ -46,7 +46,7 @@ test('An ordinary owner request to add a copy button uses a real code route',()=
  assert.match(bubbles,/const mode=.*\(\?:add\|insert\|attach\|fix/);
  assert.match(bubbles,/owner\[- \]approval/);
  assert.match(bubbles,/const copy=create\('button','ba-owner-copy','Copy request'\)/);
- assert.match(bubbles,/navigator\.clipboard\?\.writeText\(summary\)/);
+ assert.match(bubbles,/navigator\.clipboard\.writeText\(summary\)/);
  assert.match(bubbles,/result\.textContent='Owner approval details copied\.'/);
 });
 test('Quant-AI selling preferences cannot hijack a normal owner chat',()=>{
