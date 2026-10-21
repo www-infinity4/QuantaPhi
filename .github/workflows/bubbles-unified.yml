@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-cloud-clock.mjs'
+      - 'test/bubbles-owner-clock.test.mjs'
+      - 'workers/infinity-brain-clock/owner-task-clock.mjs'
       - 'bubbles-cloud-wallet.js'
       - 'test/bubbles-cloud-wallet-history.test.cjs'
       - 'wallet-recovery.html'
@@ -31,6 +34,9 @@ on:
     branches: [main]
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-cloud-clock.mjs'
+      - 'test/bubbles-owner-clock.test.mjs'
+      - 'workers/infinity-brain-clock/owner-task-clock.mjs'
       - 'bubbles-card-*'
       - 'bubbles-brain-actions.js'
       - 'test/bubbles-card-workspace.test.mjs'
@@ -68,4 +74,7 @@ jobs:
         run: |
           node --check bubbles-card-workspace.mjs
           node --check bubbles-card-host.mjs
+          node --check bubbles-cloud-clock.mjs
+          node --check workers/infinity-brain-clock/owner-task-clock.mjs
+          node --test test/bubbles-owner-clock.test.mjs
           node --test test/bubbles-card-workspace.test.mjs test/bubbles-repository-targets.test.mjs test/bubbles-smart-repository-routing.test.mjs test/bubbles-github-operator-regression.test.mjs test/bubbles-recordb-owner-command.test.cjs test/bubbles-direct-github.test.mjs test/bubbles-technical-handoff.test.mjs test/bubbles-owner-tools-webview.test.cjs test/bubbles-runner-dispatch.test.mjs
