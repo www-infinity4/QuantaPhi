@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'bubbles-card-*'
+      - 'bubbles-action-driver.mjs'
+      - 'scripts/bubbles-components-browser.mjs'
       - 'bubbles-ai.js'
       - 'bubbles.html'
       - 'fred-spaces-radio.js'
@@ -13,6 +15,8 @@ on:
     branches: [main]
     paths:
       - 'bubbles-card-*'
+      - 'bubbles-action-driver.mjs'
+      - 'scripts/bubbles-components-browser.mjs'
       - 'bubbles-ai.js'
       - 'bubbles.html'
       - 'fred-spaces-radio.js'
@@ -53,6 +57,8 @@ jobs:
             sleep 1
           done
           node scripts/bubbles-media-star-browser-smoke.mjs
+          node --test test/bubbles-action-driver.test.mjs
+          node scripts/bubbles-components-browser.mjs
       - name: Keep truthful card browser receipts
         if: always()
         uses: actions/upload-artifact@v4
@@ -60,6 +66,8 @@ jobs:
           name: bubbles-media-star-browser-evidence
           path: |
             test-results/bubbles-media-star-browser.json
+            test-results/bubbles-components.json
+            test-results/bubbles-component-tap.png
             /tmp/bubbles-media-star-chat-failure.png
           if-no-files-found: warn
           retention-days: 14

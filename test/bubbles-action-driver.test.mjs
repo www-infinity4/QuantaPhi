@@ -32,6 +32,25 @@ test('browser and card taps require named targets; explicit safe commands return
  assert.equal(resolveToolAction('tap a random button'),null);
  assert.equal(resolveToolAction('how do I press Play on a card?'),null);
 });
+test('ordinary polite requests and active viewer references resolve without memorized commands',()=>{
+ for(const phrase of ['Could you tap View Stories in Story Writer card?','Please press View Stories in the viewer','Can you please click View Stories in this card?']){
+  const action=resolveToolAction(phrase,{activeCard:'Story Writer'});
+  assert.equal(action.kind,'card',phrase);assert.equal(action.label,'View Stories',phrase);
+  assert.equal(action.cardName,'Story Writer',phrase);
+ }
+ assert.equal(resolveToolAction('Could you please not tap Play',{activeCard:'Story Writer'}),null);
+});
+test('inspection includes labelled controls in same-origin viewers and respects disabled or external boundaries',()=>{
+ const make=(attributes={})=>({tagName:'BUTTON',textContent:'',getAttribute:k=>attributes[k]||null,getClientRects:()=>[{}]});
+ const play=make({'aria-labelledby':'play-label'}),disabled=make({'aria-label':'Pause','aria-disabled':'true'});
+ const child={getElementById:id=>id==='play-label'?{textContent:'Play'}:null,querySelectorAll:s=>s==='iframe'?[]:[play,disabled]};
+ const foreign={getClientRects:()=>[{}],get contentDocument(){throw Error('cross-origin')}};
+ const root={querySelectorAll:s=>s==='iframe'?[{contentDocument:child,getClientRects:()=>[{}]},foreign]:[]};
+ const controls=safeCardControls(root);
+ assert.equal(controls.length,2);assert.equal(controls[0].frameDepth,1);
+ assert.equal(cardControlDecision('Play',controls).status,'safe_click');
+ assert.equal(cardControlDecision('Pause',controls).status,'control_not_found');
+});
 test('a screenshot, model text or foreign app cannot authorize clicking, and payments are never auto-clicked',()=>{
  const controls=[
   {label:'Play',tag:'BUTTON',visible:true,disabled:false,element:{click(){}}},
