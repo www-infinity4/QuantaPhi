@@ -694,6 +694,17 @@ public final class MainActivity extends Activity {
         if (refreshScreenPermission != null) refreshScreenPermission.run();
         if (refreshRecommendedSetup != null) refreshRecommendedSetup.run();
         if (refreshStatus != null) { ui.removeCallbacks(refreshStatus); refreshStatus.run(); }
+        // After first launch and Android overlay/mic approval, the orb appears
+        // automatically when Bubbles is opened. Explicit Stop is respected.
+        // We do NOT launch a background microphone at installation or reboot:
+        // Android requires a visible user-started foreground session.
+        if (canTalk() && !BubblesService.isSessionRunning()
+                && BrainNotes.prefs(this).getBoolean("orb_auto_resume", true)) {
+            ui.postDelayed(() -> {
+                if (!isFinishing() && !BubblesService.isSessionRunning() && canTalk()
+                        && BrainNotes.prefs(this).getBoolean("orb_auto_resume", true)) checkAndStart();
+            }, 250L);
+        }
         String voiceCapture = getIntent().getStringExtra("voice_capture");
         if (voiceCapture != null) {
             ((android.app.NotificationManager)getSystemService(NOTIFICATION_SERVICE)).cancel(513);
@@ -868,6 +879,7 @@ public final class MainActivity extends Activity {
             return;
         }
         try {
+            BrainNotes.prefs(this).edit().putBoolean("orb_auto_resume", true).apply();
             Intent intent = new Intent(this, BubblesService.class);
             if (BubblesService.isSessionRunning())
                 intent.setAction(BubblesService.ACTION_RESUME);
