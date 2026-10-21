@@ -6,6 +6,15 @@ test('spoken commands select actual tools, ordinary conversation remains chat',(
  assert.equal(chooseTool('Create a GitHub repo called Rain'),'github.create_repository');
  assert.equal(chooseTool('Explain this design'),'oracle.chat');
 });
+test('repair context and negated repository creation never select the creation tool',()=>{
+ for(const request of [
+  'Reads & Realms broke again. Build the repair notes in the GPT Investigation repo.',
+  'Do not create a repository. Investigate the story widget.',
+  'A user reports Reads & Realms stopped serving stories. Do not create any repository.',
+  'How do I create a repository?'
+ ])assert.notEqual(chooseTool(request),'github.create_repository',request);
+ assert.equal(chooseTool('Could you create a new repository named StoryQA?'),'github.create_repository');
+});
 test('reasoning level comes from the actual spoken request, not injected persona text',()=>{
  assert.equal(reasoningFor('Hello, what is your name?'),'medium');
  assert.equal(reasoningFor('How are you today?'),'medium');
@@ -198,6 +207,7 @@ test('when the primary neural model fails twice, Bubbles answers using supported
 test('internal planning and fabricated createTicket JSON never become Bubbles speech or a receipt',async()=>{
  const leaked=['We need to send a concise message indicating we are submitting the ticket, then invoke the tool.\nSubmitting a repair ticket to import Omni Code.\n{\n "name": "createTicket",\n "arguments": {"title": "Import Omni Code"}\n}',
   '{"name":"createTicket","arguments":{"title":"Repair Bubbles"}}',
+  '{"name":"githubCreateRepo","arguments":{"repo_name":"GPT Investigation"}}\nCreating repository GPT Investigation…',
   'We need to write a concise reply and then call the tool.',
   '<|im_start|>assistant to=createTicket'];
  for(const value of leaked)assert.equal(hasModelToolLeak(value),true,value);
