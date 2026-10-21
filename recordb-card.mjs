@@ -14,7 +14,10 @@ export function recordBState(capture={},native=false){
  const soundActive=capture.soundActive===true;
  const detail=String(capture.screenState||'').slice(0,180);
  const soundDetail=String(capture.soundState||'').slice(0,180);
- const saving=!screenActive&&/stopping|saving|finalizing|processing|finishing/i.test(detail+' '+soundDetail);
+ // Persisted text is not proof that Android's recording service is running.
+ const saveMessage=!screenActive&&/stopping|saving|finalizing|processing|finishing/i.test(detail+' '+soundDetail);
+ const interruptedSaving=saveMessage&&capture.screenCaptureServiceRunning===false;
+ const saving=saveMessage&&!interruptedSaving;
  const waiting=!screenActive&&/approval|approve|requested|permission/i.test(detail);
  const active=screenActive||soundActive;
  const saved=!active&&!saving&&/saved\b/i.test(detail+' '+soundDetail);
@@ -24,12 +27,13 @@ export function recordBState(capture={},native=false){
   screenRecording?'Recording screen and microphone':
   screenActive?'Preparing screen recording':
   soundActive?'Recording microphone':
+  interruptedSaving?'Previous recording save was interrupted or cannot be verified. Check Movies/Bubbles; the original may remain in private app storage.':
   saving?'Saving recording to Movies/Bubbles…':
   waiting?'Waiting for Android screen-capture approval':
   saved?'Saved · '+(detail||soundDetail):
   failed?'Recording problem · '+(detail||soundDetail):
   'Ready · Android asks permission when you start';
- return {status,active,screenPaused,waiting,saving,
+ return {status,active,screenPaused,waiting,saving,interruptedSaving,
   canStart:native&&!active&&!waiting&&!saving,
   canPause:native&&screenRecording&&!screenPaused,
   canResume:native&&screenActive&&screenPaused,
