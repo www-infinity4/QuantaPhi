@@ -949,6 +949,8 @@ if(!embedded){
 if(!embedded){
  const quick=create('section','ba-chatgpt-quick');
  quick.setAttribute('aria-label','ChatGPT Cloud Browser access');
+ // Private owner-pilot control. Public chats never display the grant button.
+ quick.hidden=true;quick.style.display='none';
  const quickButton=create('button','ba-chatgpt-quick-approve',nativeOverlay?'Allow ChatGPT · 5 days':'Allow ChatGPT to use Bubbles · 5 days');
  quickButton.type='button';
  const quickState=create('p','ba-chatgpt-quick-status','Approval status will be verified with Cloudflare.');
@@ -979,6 +981,20 @@ if(!embedded){
  };
  quickButton.addEventListener('click',()=>void grantBridge());
  const topButton=document.getElementById('bubblesChatGPTTopAccess');
+ const revealVerifiedOwnerGPT=()=>{
+  // An event or query flag is NOT a verified owner session. The backend
+  // independently enforces owner credentials and active consent on POST.
+  void verifiedOwnerHeaders().then(headers=>{
+   if(!headers?.Authorization)return;
+   quick.hidden=false;quick.style.display='';
+   const top=topButton?.closest?.('.bubbles-chatgpt-entry');
+   if(top){top.hidden=false;top.style.display='';}
+  }).catch(()=>{});
+ };
+ window.addEventListener('bubbles:owner-ready',revealVerifiedOwnerGPT);
+ if(window.QuantaBrainOwner?.ready)void window.QuantaBrainOwner.ready.then(headers=>{
+  if(headers?.Authorization)revealVerifiedOwnerGPT();
+ });
  if(topButton){
   topButton.addEventListener('click',()=>{
    toggle(true);

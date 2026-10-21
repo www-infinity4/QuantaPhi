@@ -1208,15 +1208,19 @@ public final class BubblesService extends Service {
         // The separate bridge must have explicit permission and a topical match.
         String ambientContext = RoomContextFusion.forTurn(this, addressed);
         if (oracleWindow != null && oracleWindow.sendSpoken(addressed, ambientContext)) {
-            // Real work has been accepted by the local WebView queue. Give a
-            // short audible acknowledgement immediately, without claiming a
-            // search or tool finished before a verified result exists.
-            if (!typed) speak("On it.");
+            // Accepted by WebView != executed by a tool. Speaking "On it."
+            // for every utterance hid missing results and could feed the
+            // recognizer with our own synthetic response. The website's
+            // completed result or real failure is the only normal voice reply.
+            BrainNotes.prefs(this).edit().putString("voice_dispatch_state",
+                "Voice request queued locally; awaiting website result").apply();
             return;
         }
         BrainNotes.prefs(this).edit().putString("last_error",
-            "Bubbles website is unavailable or its queue is full. Open the floating chat and retry; no alternate AI was used.").apply();
-        Toast.makeText(this, "Open Bubbles chat to check the website connection.", Toast.LENGTH_LONG).show();
+            "Bubbles website is unavailable or its queue is full. No request was executed.")
+            .putString("voice_dispatch_state", "failed_before_dispatch").apply();
+        if (!typed) speak("Bubbles chat is unavailable. I did not run that request.");
+        else Toast.makeText(this, "Open Bubbles chat to check the website connection.", Toast.LENGTH_LONG).show();
     }
 
 

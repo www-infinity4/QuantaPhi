@@ -44,7 +44,7 @@
  
 
     .bubbles-signin-gate{border:1px solid #d9c3eb;border-radius:20px;background:#fff;padding:17px;margin:16px 0 22px;box-shadow:0 5px 20px #48275d14}
-    .bubbles-signin-gate[hidden]{display:none!important}
+    .bubbles-chatgpt-entry[hidden],.bubbles-signin-gate[hidden]{display:none!important}
     .bubbles-signin-gate h2{font-size:21px;color:#4a237c;margin:0}
     .bubbles-signin-gate>p{margin:7px 0 12px}
     .bubbles-signin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
@@ -104,7 +104,7 @@
       <a href="/bubbles-accounts.html">Account connections</a>
     </nav>
 
-    <section class="bubbles-chatgpt-entry" aria-label="ChatGPT access to Bubbles">
+    <section class="bubbles-chatgpt-entry" aria-label="ChatGPT access to Bubbles" hidden style="display:none">
       <button type="button" id="bubblesChatGPTTopAccess">Allow ChatGPT to use Bubbles · 5 days</button>
       <p>One owner-approved connection for ChatGPT and Bubbles Cloud Browser. You can revoke it in Bubbles.</p>
     </section>
