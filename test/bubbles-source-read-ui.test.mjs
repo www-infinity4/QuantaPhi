@@ -9,11 +9,11 @@ test('Bubbles reads named public README through real source receipt before gener
  const generic=src.indexOf("if(!embedded&&/\\bgithub\\b/i.test(request))");
  assert.ok(first>0&&generic>first,'verified source-read route must precede generic GitHub discovery');
  const part=src.slice(first,generic);
- assert.match(part,/receipt\?\.tool!=='github\.read_file'/);
+ assert.match(part,/receipt\?\.tool!==expectedReadTool/);
  assert.match(part,/receipt\?\.sourceReadVerified!==true/);
  assert.match(part,/result\.sourceUrl/);
  assert.match(part,/bubblesFetch\(AI/);
- assert.match(part,/Bubbles · github\.read_file · verified/);
+ assert.match(part,/status\.textContent='Bubbles · '\+expectedReadTool\+' · verified'/);
  assert.match(part,/No source content or repository change is being claimed/);
  assert.doesNotMatch(part,/submitRepositoryWork|startRunner|requestRunner|createGithubRepository/);
 });
