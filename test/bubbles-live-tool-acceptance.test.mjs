@@ -11,7 +11,7 @@ function fixture({badPage=false,badWeather=false}={}){
   assert.equal(options.headers.Origin,'https://quantaphi.org');
   const {request}=JSON.parse(options.body);
   requests.push(request);
-  if(/Read https:\/\/quantaphi\.org\/bubbles\.html/.test(request))
+  if(/(?:Read|Inspect) https:\/\/quantaphi\.org\/bubbles\.html/.test(request))
    return Response.json({ok:true,receipt:{tool:'web.read_page',status:badPage?'failed':'complete',
     sourceReadVerified:!badPage,repositoryActionsVerified:false},
     sourceUrl:'https://quantaphi.org/bubbles.html',
