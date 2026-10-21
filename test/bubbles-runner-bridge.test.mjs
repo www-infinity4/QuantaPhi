@@ -33,3 +33,13 @@ test('same run retries once, cannot replace a message or extend expiry; reads re
  assert.equal(status.state,'queued');assert.ok(!JSON.stringify(status).includes('hello'));
  assert.equal((await runnerMessage({...args,body:{operation:'submit',text:'hello',accountId:'other'}})).status,400);
 });
+
+test('own-run blocked receipts disclose only fixed failure categories, never private reply text',async()=>{
+ for(const error of ['bubbles_chat_not_ready','private-secret-error']){
+  const f=fixture();await runnerMessage({claims,body:{operation:'submit',text:'hello'},db:f.db,store:consent(true)});
+  f.row.status='blocked';f.row.result=JSON.stringify({error,reply:'private reply',token:'private token'});
+  const status=await runnerMessage({claims,body:{operation:'status'},db:f.db,store:consent(true)});
+  assert.equal(status.failureCode,error==='bubbles_chat_not_ready'?error:'unclassified_bridge_failure');
+  assert.ok(!JSON.stringify(status).includes('private'));
+ }
+});
