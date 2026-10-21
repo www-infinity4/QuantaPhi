@@ -40,9 +40,11 @@ test('visible Start or resume control can restart a previously muted foreground 
  assert.match(service,/private void resumeSession\(\)/);
 });
 
-test('optional Live call control starts collapsed in narrow floating chat',()=>{
- assert.match(panel,/liveBack\.setVisibility\(View\.GONE\)/);
- assert.match(panel,/Button voiceOptions = button\("Options", false\)/);
- assert.match(panel,/voiceOptions\.setOnClickListener\(v -> \{/);
- assert.match(panel,/header\.addView\(voiceOptions\);\s*header\.addView\(liveBack\)/);
+test('Live call control is directly visible without Options/Less',()=>{
+ assert.match(panel,/liveBack = button\\("Live", false\\)/);
+ assert.match(panel,/header\\.addView\\(liveBack\\);/);
+ assert.doesNotMatch(panel,/Button voiceOptions = button/);
+ assert.doesNotMatch(panel,/liveBack\\.setVisibility\\(View\\.GONE\\)/);
+ assert.match(panel,/liveBack\\.setText\\("Chat"\\)/);
 });
+
