@@ -310,6 +310,7 @@ export function mount({host,ownerHeaders,reveal=false}){
    }
    let chatReady=false;
    window.dispatchEvent(new CustomEvent('bubbles:chatgpt-ready',{detail:{respond:value=>{chatReady=value===true;}}}));
+   if(!chatReady)await bridgeCall('heartbeat',{state:'busy'});
    if(!chatReady){consumerState('waiting-for-chat','ChatGPT connection preserved. Waiting for Bubbles to finish its current response.');return;}
    consumerState('checking','Checking the approved Bubbles message connection…');
    const data=await bridgeCall('process',state?{sessionId:state.sessionId,proof:state.proof}:{});
