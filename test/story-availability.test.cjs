@@ -6,10 +6,10 @@ const path = require('node:path');
 const vm = require('node:vm');
 const source = name => fs.readFileSync(path.join(__dirname, '..', name), 'utf8');
 
-test('home shows available sourced catalog story immediately and upgrades it with GPT when ready', () => {
+test('home requests fresh research and reserves archived stories for explicit archive mode', () => {
  const book = source('infinite-book.js');
- assert.match(book,/const ready = searchMode \? null : pickUnique\(roll, seenIds\(\)\)/);
- assert.match(book,/void nextStory\('',\{requireFresh:false\}\)/);
+ assert.match(book,/const ready = searchMode \|\| requireFresh \? null : pickUnique\(roll, seenIds\(\)\)/);
+ assert.match(book,/void nextStory\('',\{requireFresh:true\}\)/);
  assert.match(book,/const unread = unique\.length \? unique : all\.filter\(story=>story\.id!==current\?\.id\)/);
  assert.match(book,/if \(ready && current\?\.id !== ready\.id\) return/);
  assert.match(book,/Reading a verified archived story while Oracle researches/);
@@ -32,7 +32,7 @@ test('AI-source fallback is never presented as a generated GPT narrative', () =>
 test('updated production script URLs and syntax',()=>{
  const html=source('index.html');
  assert.match(html,/infinite-book-discovery\.js\?v=20261009-available-source1/);
- assert.match(html,/infinite-book\.js\?v=20261009-available-source1/);
+ assert.match(html,/infinite-book\.js\?v=20261021-fresh-request1/);
  for(const name of ['infinite-book.js','infinite-book-discovery.js']){
   assert.doesNotThrow(()=>new vm.Script(source(name)), name);
  }

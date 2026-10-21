@@ -15,6 +15,11 @@ test('create a new file uses GitHub WRITE, not READ',()=>{
  assert.equal(result.directCoding,true,'file creation must reach GitHub tool route');
  assert.equal(result.mode,'write','file creation needs commit_files permission');
 });
+test('repair conversation mentioning a repository is not a creation instruction',()=>{
+ assert.equal(classify('Reads & Realms broke; build notes in the GPT Investigation repo',()=>null).createRepository,false);
+ assert.equal(classify('Bubbles said create a repository named GPT Investigation',()=>null).createRepository,false);
+ assert.equal(classify('Could you create a new repository named StoryQA?',()=>null).createRepository,true);
+});
 test('create repository differs from file creation; questions and refusals never write',()=>{
  const repo=classify('Create a new repository named Bubbles-QA',()=>null);
  assert.equal(repo.createRepository,true);
