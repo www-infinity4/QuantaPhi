@@ -3,7 +3,7 @@
 const GATEWAY='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
 const denied=(error,status)=>({ok:false,error,status});
 async function approved(store){return (await store.chatgptStatus()).enabled&&(await store.status()).enabled;}
-export async function serverAssist({claims,body,db,store,now=Date.now()}){
+export async function serverAssist({claims,body,db,store,fetcher=fetch,now=Date.now()}){
  if(!await approved(store))return denied('existing_five_day_approval_required',403);
  if(!body||Object.keys(body).some(k=>!['operation','text','turn'].includes(k))||!['assist','result'].includes(body.operation))return denied('invalid_assist_request',400);
  const turn=body.turn??0;
@@ -26,11 +26,12 @@ export async function serverAssist({claims,body,db,store,now=Date.now()}){
  if(!row)return denied('assist_not_stored',503);
  if(row.payload!==payload)return denied('assist_turn_conflict',409);
  if(row.expires_ms<=now)return denied('assist_result_expired',410);
- if(row.status==='server_pending')await store.enqueueServerAssist(id);
- return {ok:true,jobId:id,state:row.status,expiresAt:row.expires_ms,execution:'server',ownerToolsVerified:false};
+ if(row.status==='server_pending')await executeServerAssist({id,db,store,fetcher,now});
+ const latest=await db.prepare('SELECT status FROM bubbles_chatgpt_bridge WHERE id=?').bind(id).first();
+ return {ok:true,jobId:id,state:latest?.status||row.status,expiresAt:row.expires_ms,execution:'server',ownerToolsVerified:false};
 }
 
-// Called by the existing consent Durable Object alarm, not request waitUntil.
+// Executes while the authenticated server client holds its request open.
 export async function executeServerAssist({id,db,store,fetcher=fetch,now=Date.now()}){
  const row=await db.prepare("SELECT payload,status,expires_ms FROM bubbles_chatgpt_bridge WHERE id=? AND action='server_assist'").bind(id).first();
  if(!row||['complete','blocked'].includes(row.status))return;

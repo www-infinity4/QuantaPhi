@@ -2,7 +2,6 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 const source=fs.readFileSync('workers/bubbles-cloud-browser/consent.mjs','utf8')
- .replace("import {executeServerAssist} from './server-assist.mjs';",'')
  .replace("import {DurableObject} from 'cloudflare:workers';","class DurableObject {constructor(ctx){this.ctx=ctx}}");
 const {BrowserConsentStore}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 function fixture(){const rows=new Map(),writes=[];const store=new BrowserConsentStore({storage:{

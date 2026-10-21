@@ -22,7 +22,7 @@ const consentStore=env=>env.CONSENT.get(env.CONSENT.idFromName('single-verified-
 export default {
  async fetch(request,env,ctx){
   const path=new URL(request.url).pathname;
-  if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',serverConversation:'signed-durable-v1',toolsBound:!!env.TOOLS,
+  if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',serverConversation:'signed-server-v2',toolsBound:!!env.TOOLS,
    browserBound:!!env.BROWSER,ownerGate:!!env.BRAIN,consentBound:!!env.CONSENT,chatgptBridgeBound:!!env.BRIDGE_DB},
    {headers:{'Cache-Control':'no-store'}});
   const origin=request.headers.get('Origin')||'';
@@ -34,7 +34,10 @@ export default {
    let body;try{const raw=await request.text();if(raw.length>4200)throw Error();body=JSON.parse(raw)}catch{return reply({ok:false,error:'invalid_bridge_request'},400)}
    try{
     const result=['assist','result'].includes(body.operation)
-     ?await serverAssist({claims,body,db:env.BRIDGE_DB,store:consentStore(env)})
+     ?await serverAssist({claims,body,db:env.BRIDGE_DB,store:consentStore(env),fetcher:(url,options)=>{
+       if(!env.TOOLS?.fetch)throw Error('bubbles_tools_binding_missing');
+       return env.TOOLS.fetch(url,options);
+      }})
      :await runnerMessage({claims,body,db:env.BRIDGE_DB,store:consentStore(env)});
     return reply(result,result.ok?200:result.status||403);
    }catch{return reply({ok:false,error:'bridge_transport_unavailable'},503)}
