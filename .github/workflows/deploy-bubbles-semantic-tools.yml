@@ -26,7 +26,7 @@ jobs:
           node --check workers/bubbles-tools/worker.mjs
           node --check workers/bubbles-tools/mcp.mjs
           node --check workers/bubbles-tools/search.mjs
-          node --test test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-tools.test.mjs
+          node --test test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-tools.test.mjs test/bubbles-live-tool-acceptance.test.mjs
       - name: Check existing deployment authorization
         id: deploy_auth
         env:
@@ -39,6 +39,10 @@ jobs:
             echo "available=false" >> "$GITHUB_OUTPUT"
             echo "::notice::Source checks passed, but this runner did not verify Cloudflare deployment credentials. No production deployment is claimed."
           fi
+      - name: Explain source-only result if deployment authorization is unavailable
+        if: steps.deploy_auth.outputs.available != 'true'
+        run: |
+          echo 'Bubbles tool source passed, but production deployment and live behavioral checks are NOT verified because deploy authorization was unavailable.' >> "$GITHUB_STEP_SUMMARY"
       - name: Deploy authenticated Bubbles tools Worker
         if: steps.deploy_auth.outputs.available == 'true'
         env:
@@ -56,3 +60,7 @@ jobs:
             throw Error('Live Bubbles tool gateway health was not confirmed');
           console.log('Bubbles gateway health checked; individual tool execution still requires receipts.');
           VERIFY
+      - name: Verify live webpage reading and three-town weather routing
+        if: steps.deploy_auth.outputs.available == 'true'
+        run: node scripts/verify-bubbles-live-tools.mjs
+
