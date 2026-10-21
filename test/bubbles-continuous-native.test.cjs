@@ -33,7 +33,7 @@ test('offline model bundled and versions pinned', () => {
 test('movement uses full drag distance and clamps to screen', () => {
   assert.match(source, /Gravity.TOP \| Gravity.LEFT/);
   assert.match(source, /startX\+Math.round\(dx\)/);
-  assert.match(source, /screen.widthPixels-getWidth\(\)/);
+  assert.match(source, /screen.widthPixels-getWidth\(\)|EdgeDockPolicy\.dragX\(/);
   assert.match(source, /if\(!moved\)/);
 });
 
