@@ -59,6 +59,7 @@ final class FloatingOracleWindow {
     private long lastRobotStatusAt = 0L;
     private String lastCaptureSnapshot = "";
     private long lastPhonePollAt;
+    private long lastChatGPTConsumerWakeAt = 0L;
     private boolean phoneCommandRunning;
     // Keep follow-ups in order while the web assistant is loading or busy.
     // One slot silently replaced the first instruction with the second.
@@ -98,6 +99,15 @@ final class FloatingOracleWindow {
                 deliverQueuedSpeech();
                 deliverQueuedText();
                 pollWebsiteReply();
+                // The floating voice service stays foregrounded after Hide.
+                // Android can throttle window timers in a hidden WebView, so
+                // wake only this existing, first-party, authenticated page.
+                // The website itself verifies owner identity and both unexpired
+                // five-day grants; the native app receives no queue credentials.
+                if (trustedChat(website) && now - lastChatGPTConsumerWakeAt >= 8000L) {
+                    lastChatGPTConsumerWakeAt = now;
+                    website.evaluateJavascript("window.dispatchEvent(new Event('bubbles:foreground-poll'))", null);
+                }
             }
             ui.postDelayed(this, 400);
         }
