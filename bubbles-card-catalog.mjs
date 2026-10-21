@@ -7,11 +7,11 @@ export const cards=Object.freeze([
  local('reads-realms','Reads & Realms','infiniteBook',['infinite-book-discovery.js','infinite-book.js'],['infinite-book.css'],['reads and realms','reads realms','big book']),
  local('image-builder','Image Generator','phiImageBuilder',['phi-visual-render.js','phi-generation-references.js','phi-image-builder.js'],['phi-image-builder.css'],['image builder','image studio']),
  local('video-builder','Video Builder','phiVideoBuilder',['phi-video-builder.js'],[],['video studio']),
- local('fred-spaces','Fred Spaces','fredSpacesRadio',['fred-spaces-radio.js'],['fred-spaces-radio.css'],['fred radio','fred krueger']),
+ local('fred-spaces','Fred Spaces','fredSpacesRadio',['fred-spaces-radio.js'],['fred-spaces-radio.css'],['fred radio','fred krueger','fred space','freds spaces','freds space']),
  local('magoo-spaces','Magoo Spaces','magooSpacesRadio',['magoo-spaces-radio.js'],['magoo-spaces-radio.css'],['magoo phd']),
  local('following-spaces','Following Spaces','followingSpacesRadio',['following-spaces-radio.js'],['following-spaces-radio.css'],['followed spaces']),
  // Player-first: Fred and the owner’s followed-person selector share the Media Star surface.
- local('media-star','Media Star','fredSpacesRadio',['fred-spaces-radio.js','following-spaces-radio.js'],['fred-spaces-radio.css','following-spaces-radio.css'],['media star player','media star radio','media star podcasts','media star card'],['followingSpacesRadio']),
+ local('media-star','Media Star','fredSpacesRadio',['fred-spaces-radio.js','following-spaces-radio.js'],['fred-spaces-radio.css','following-spaces-radio.css'],['media star player','media star radio','media star podcasts','media star card','media star fred spaces'],['followingSpacesRadio']),
  local('media-star-creator','Media Star Creator','mediaStarCreator',['media-star-creator.js'],['media-star-creator.css'],['media creator','build media star']),
  local('radio-clubhouse','Radio Clubhouse','radioClubhouse',['radio-clubhouse.js'],['radio-clubhouse.css']),
  local('concepts','Infinity Concepts','infinityConcepts',['infinity-concepts.js'],['infinity-concepts.css']),
@@ -67,12 +67,19 @@ export function cardIntent(text){
  const command=q.match(/^(?:(play|hear|listen to|start playing)|(open|show|display|see|bring(?: in| up)?|pull(?: in| up)?|load|launch|put|insert|find))(?: me)?\s+/i);
  let play=false;
  if(command){play=Boolean(command[1]);q=q.slice(command[0].length);}
+ // Owner voice instructions often include a purpose AFTER the location:
+ // "bring Media Star into chat so I can listen to Fred's Space".
+ // Extract the registered card name; do not send the instruction to an LLM.
  q=q.replace(/^(?:(?:the|a|my|your)\s+)+/i,'')
-    .replace(/\s+(?:in|into|inside|on) (?:the |my )?(?:chat|conversation|screen|workspace)$/i,'')
+    .replace(/\s+(?:in|into|inside|on) (?:the |my )?(?:chat|conversation|screen|workspace)(?=$|[,:;]|\s+(?:so|that|because|then|to)\b)[\s\S]*$/i,'')
+    .replace(/\s+(?:so (?:that )?|because |then |to )(?:(?:i|we)\s+)?(?:can |could |want to |would like to )?(?:listen|hear|play|watch|use|open|see)\b[\s\S]*$/i,'')
     .replace(/\s+please$/i,'')
     .replace(/\s+(?:card|player|widget)$/i,'')
     .trim();
- const card=findCard(q);
+ let card=findCard(q);
+ // "Fred's space" identifies Fred's original player; the Media Star
+ // request identifies the combined Fred player plus person picker.
+ if(!card&&/^(?:fred['’]?s?\s+spaces?|fred krueger['’]?s?\s+spaces?)$/i.test(q))card=findCard('Fred Spaces');
  if(!card)return null;
  return {action:play?'play':'open',card};
 }

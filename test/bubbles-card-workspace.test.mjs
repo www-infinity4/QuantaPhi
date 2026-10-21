@@ -37,9 +37,11 @@ function dom(){
   querySelector(){return null;}
   remove(){this.parentNode=null;}
  }
+ const replayLink={href:'https://x.com/i/spaces/1OyKAjYPeXqGb',getAttribute:()=> 'https://x.com/i/spaces/1OyKAjYPeXqGb'};
  const playButton={textContent:'Play',click(){new Media().play();}};
- const frameDoc={querySelector:selector=>['#play-btn','#musicPlay'].includes(selector)?playButton:null,querySelectorAll:selector=>selector==='audio,video'?[]:[{textContent:'Play',getAttribute:()=>null,disabled:false}]};
- globalThis.document={createElement:tag=>{const node=new Node(tag);if(tag==='iframe'){node.contentDocument=frameDoc;node.contentWindow={location:{origin:'https://quantaphi.org'},HTMLMediaElement:Media,document:frameDoc,addEventListener(){}};}return node;}};
+ const frameDoc={querySelector:selector=>selector==='#fredSpacesRadio .fs-play'?replayLink:['#play-btn','#musicPlay'].includes(selector)?playButton:null,querySelectorAll:selector=>selector==='audio,video'?[]:[{textContent:'Play',getAttribute:()=>null,disabled:false}]};
+ globalThis.document={createElement:tag=>{const node=new Node(tag);if(tag==='iframe'){node.contentDocument=frameDoc;node.contentWindow={location:{origin:'https://quantaphi.org'},HTMLMediaElement:Media,document:frameDoc,addEventListener(){},
+   BubblesCardDiagnostics(){return {id:new URL(node.src,'https://quantaphi.org').searchParams.get('card'),loaded:true,errors:[]}}};}return node;}};
  globalThis.location={origin:'https://quantaphi.org'};
  return {Node,media};
 }
@@ -77,6 +79,10 @@ test('Media Star commands resolve to the real player and person picker, not the 
   'Bubbles, show me Media Star card in chat',
   'Can you bring up the Media Star card?',
   'Bring in the Media Star card into chat',
+  'bring media star into chat',
+  'Bring Media Star into chat so I can listen to Fred’s Space',
+  'Bubbles, bring the Media Star card into chat so I could listen to Fred\'s space',
+  'Could you bring Media Star into the chat to hear Fred',
   'Pull up Media Star',
   'Show me the Media Star player',
   'Give me Media Star, please',
@@ -140,5 +146,50 @@ test('an editable in-chat website opens the actual project before preparing a so
   assert.equal(suggested.message.includes('hashrate'),true);
   assert.equal((await workspace.handle({action:'play-active'})).message.includes('Playback requested'),true);
   assert.equal((await workspace.handle({action:'add-words',words:'a'.repeat(91)})).message.includes('1–100'),true);
+ }finally{delete globalThis.document;delete globalThis.location;}
+});
+
+test('Fred Space speech names the registered player and does not trigger a paid next roll',()=>{
+ assert.equal(cardIntent('Bubbles play Fred\'s Space')?.card.id,'fred-spaces');
+ assert.equal(cardIntent('listen to Fred’s Space')?.action,'play');
+ assert.equal(cardIntent('Bring Media Star into chat so I can listen to Fred')?.card.id,'media-star');
+ assert.equal(cardIntent('Do not play Fred\'s Space'),null);
+ assert.equal(cardIntent('Fix the Media Star card'),null);
+});
+test('Media Star in chat renders the real combined player and reports external X playback honestly',async()=>{
+ const {Node}=dom();
+ try{
+  const workspace=new CardWorkspace(new Node('section'));
+  const opened=await workspace.handle({action:'open',card:findCard('Media Star')});
+  assert.match(opened.message,/open in chat/);
+  assert.equal(workspace.active?.card.id,'media-star');
+  const result=await workspace.handle({action:'play-active'});
+  assert.match(result.message,/original X replay/);
+  assert.match(result.message,/no in-chat audio has been verified/);
+  const diag=workspace.diagnose();
+  assert.equal(diag.snapshot.fredReplay.publisher,'X');
+  assert.equal(diag.snapshot.fredReplay.linkAvailable,true);
+  assert.equal(diag.snapshot.fredReplay.audioHostedInCard,false);
+ }finally{delete globalThis.document;delete globalThis.location;}
+});
+test('iframe navigation without a rendered card never reports a successful open and can retry',async()=>{
+ const {Node}=dom();
+ try{
+  const w=new CardWorkspace(new Node('section'));
+  // Simulates a host asset failure or HTTP fallback document.
+  const originalCreate=document.createElement;
+  document.createElement=tag=>{
+   const el=originalCreate(tag);
+   if(tag==='iframe')el.contentWindow.BubblesCardDiagnostics=()=>({id:'media-star',loaded:false,errors:['Card asset unavailable: fred-spaces-radio.js']});
+   return el;
+  };
+  const failed=await w.handle({action:'open',card:findCard('Media Star')});
+  assert.match(failed.message,/Card could not open/);
+  assert.match(failed.message,/Card asset unavailable/);
+  assert.equal(w.frames.has('media-star'),false);
+  assert.equal(w.active?.loaded,false);
+  document.createElement=originalCreate;
+  const retried=await w.handle({action:'open',card:findCard('Media Star')});
+  assert.match(retried.message,/open in chat/);
  }finally{delete globalThis.document;delete globalThis.location;}
 });
