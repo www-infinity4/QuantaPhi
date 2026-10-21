@@ -1566,6 +1566,12 @@ function extract(reply){
 function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  const answer=String(reply||'').trim();
  if(/\"name\"\s*:\s*\"createTicket\"[\s\S]*\"arguments\"\s*:/.test(answer))return 'Bubbles received a model-generated tool draft. No authenticated ticket or code change was verified by that answer.';
+ // Model text that *describes* a GitHub operation is not an execution receipt.
+ if((/\b(?:issue|make|need)\s+(?:a\s+)?tool call\b/i.test(answer) ||
+     /^\s*\{\s*"tool"\s*:/.test(answer)) &&
+    /"tool"\s*:\s*"github"/i.test(answer) &&
+    /"action"\s*:\s*"(?:list_repos|list_repositories|create_repo|create_repository|read_file|write_file|commit_files)"/i.test(answer))
+  return 'I described a GitHub action instead of running it. No repository was listed or changed by that reply. Ask me to list your repositories or name the repositories for your project; I will use the verified owner GitHub tools and report the real result.';
  if(!ownerVerified)return answer;
  const ask=String(request||'');
  if(/\b(?:pair|link|sync|connect)\b.{0,90}\b(?:another|other|second|new|apk|android|phone|device|browser|session)\b/i.test(ask))return answer;
@@ -2079,17 +2085,24 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Questions and refusals are never GitHub write authorization. A clear
  // "can you create..." request still counts as an instruction; "how do I..."
  // and "don't create..." do not.
- const ownerGithubNonAction=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:do\s+not|don['’]t|never|stop|i\s+(?:do\s+not|don['’]t)\s+want|(?:how|why|what|when|where)\b|(?:can|could|would) you\s+(?:explain|describe|show me how|tell me how)\b)/i.test(request);
+ const ownerGithubNonAction=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:do\s+not|don['’]t|never|stop|i\s+(?:do\s+not|don['’]t)\s+want|(?:how|why|what|when|where|explain|describe)\b|(?:can|could|would) you\s+(?:explain|describe|show me how|tell me how)\b)/i.test(request);
  const createRepository=/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\b/i.test(request)
   || /\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*[A-Za-z][\w.-]*\s+(?:(?:the|github)\s+)*(?:repo|repository)\b/i.test(request);
  const directRequest=/^(?:(?:hey|please|bubbles)[, ]+)*(?:(?:can|could|would|will) you\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
  // Ordinary one-repository changes belong to Bubbles direct GitHub. Only a
  // clear request for multiple cooperating color agents enters Robot Brain.
  const requestsAgents=/\b(?:robot\s*brain|moltnook|multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|bot\s+team|team\s+of\s+bots|run\s+the\s+bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request);
- const codeTask=/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|test|run)\b[\s\S]{0,180}\b(?:github|repository|repo|code|source|file|readme|script|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr)\b/i.test(request);
+ const codeTask=/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|populate|scaffold|test|run)\b[\s\S]{0,180}\b(?:github|repositor(?:y|ies)|repos?|code|source|files?|readme|scripts?|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr)\b/i.test(request);
  // Owner-named RecordB issue #2 is a multi-agent implementation job, not a
  // generic GitHub 'assist' operation or a read-only work history report.
  const namedRecordBIssue=/\brecord\s?b\b/i.test(request)&&/\bissue\s*#?\s*2\b/i.test(request);
+ // Building two linked repositories requires two explicit, verified targets.
+ const pairedRepoWork=!ownerGithubNonAction &&
+  /\b(?:two|both|paired|pair\s+of)\s+(?:(?:linked|connected|matching|identical|hydrogen)\s+)?(?:repos?|repositor(?:y|ies))\b/i.test(request) &&
+  /\b(?:populate|scaffold|create|build|write|implement|sync|mirror|watch|connect|plan)\b/i.test(request) &&
+  /\b(?:repos?|repositor(?:y|ies)|files?|scripts?|project|hydrogen)\b/i.test(request);
+ const githubInventoryRequested=!ownerGithubNonAction &&
+  /\b(?:list|show|find|check|inspect)\b.{0,70}\b(?:(?:my|our|the|all)\s+)?(?:github\s+)?(?:repos?|repositor(?:y|ies))\b/i.test(request);
  const directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
  // without generating a Robot Brain ticket or relying on the writer model.
@@ -2108,6 +2121,38 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');
   drainVoiceTurns()
   return;
+ }
+ else if(!embedded&&pairedRepoWork){
+  const targets=[...new Set([...request.matchAll(/\bwww-infinity4\/[A-Za-z0-9_.-]+\b/gi)].map(match=>match[0]))];
+  // Two explicitly supplied full owner paths can pin targets. The server still
+  // checks authorization; names alone do not grant GitHub permissions.
+  if(targets.length===2){
+   repositorySelection.clear();
+   for(const repository of targets)repositorySelection.add(repository);
+   repositorySelectionExplicit=true;
+  }
+  if(!repositorySelectionExplicit||repositorySelection.size!==2){
+   tools.open=true;repositoryPicker.open=true;
+   workEvidence='I understand the two-repository project: build the files and detailed plan, with each repository checking the other. Select exactly two repositories in GitHub targets, or say both full repository names. No job or GitHub write has started.';
+  }else try{
+   const ticket=await submitWork(request,'explicit-user-command');
+   workEvidence=(await humanReplies()).workReply(ticket);
+   recordBrainNotice('Open verified work details: https://quantaphi.org/#robotDirections');
+  }catch(error){
+   workEvidence='The paired-repository request was not fully confirmed: '+String(error.message||error).slice(0,160)+'. Check work details before retrying. No unverified write is claimed.';
+  }
+ }
+ else if(!embedded&&githubInventoryRequested){
+  try{
+   const result=await directGithubOperation({action:'list_repositories',mode:'read'});
+   if(!result.ok||!result.complete||!Array.isArray(result.repositories))
+    throw Error(result.error||result.status||'GitHub inventory incomplete');
+   const names=result.repositories.map(item=>String(item.repository||item.full_name||'')).filter(Boolean);
+   workEvidence='GitHub returned '+names.length+' repositories'+(names.length?': '+names.slice(0,20).join(', '):'.')+
+    (names.length>20?' (showing the first 20).':'')+' This is a verified read-only result; no files were changed.';
+  }catch(error){
+   workEvidence='I could not verify a GitHub repository list: '+String(error.message||error).slice(0,160)+'. No repository was changed.';
+  }
  }
  else if(!embedded&&!ownerGithubNonAction&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){
   const named=request.match(/\bwww-infinity4\/[A-Za-z0-9_.-]+\b/);
@@ -2135,7 +2180,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    :'Select one repository in the GitHub targets menu. Nothing was changed.';
   else try{
    status.textContent='Checking the direct GitHub connection. Actual receipts will also appear in the color-bot feed.';
-   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:add|create|make|build|generate|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor)\b/i.test(request)?'write':'read';
+   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:add|create|make|build|generate|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor|populate|scaffold)\b/i.test(request)?'write':'read';
    const namedWorkflow=request.match(/\b([a-z0-9][a-z0-9_.-]*\.ya?ml)\b/i)?.[1]||'';
    const workflowIntent=/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
    const workflowDispatch=workflowIntent&&/\b(?:run|start|trigger|dispatch|rerun|execute)\b/i.test(request);
