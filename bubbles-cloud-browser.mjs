@@ -292,7 +292,8 @@ export function mount({host,ownerHeaders,reveal=false}){
  }};
 
  async function pollChatGPT(){
-  if(bridgePolling||document.hidden)return;
+  // Hiding the still-open owner chat does not revoke the five-day grant.
+  if(bridgePolling)return;
   bridgePolling=true;
   try{
    // Initial mount can precede the APK's native wallet restoration. Re-read
@@ -336,6 +337,6 @@ export function mount({host,ownerHeaders,reveal=false}){
  // The session and owner token remain in this first-party page. Cloudflare
  // D1 receives only a structured request/receipt, never browser credentials.
  setInterval(()=>void pollChatGPT(),8000);
- void bridgePermission('status');
+ void bridgePermission('status').catch(()=>{});
  return wrap;
 }
