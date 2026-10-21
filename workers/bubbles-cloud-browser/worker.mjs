@@ -1,6 +1,7 @@
 import {browserTool} from '../bubbles-tools/browser.mjs';
 import {processChatGPTJob,completeChatGPTMessage} from './chatgpt-bridge.mjs';
 import {authenticateBridge,runnerMessage} from './runner-bridge.mjs';
+import {serverAssist} from './server-assist.mjs';
 export {BrowserConsentStore} from './consent.mjs';
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const respond=(origin,body,status=200)=>Response.json(body,{status,headers:{
@@ -19,9 +20,9 @@ async function owner(request,env){
 }
 const consentStore=env=>env.CONSENT.get(env.CONSENT.idFromName('single-verified-bubbles-owner-v1'));
 export default {
- async fetch(request,env){
+ async fetch(request,env,ctx){
   const path=new URL(request.url).pathname;
-  if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',
+  if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',serverConversation:'signed-runner-v1',
    browserBound:!!env.BROWSER,ownerGate:!!env.BRAIN,consentBound:!!env.CONSENT,chatgptBridgeBound:!!env.BRIDGE_DB},
    {headers:{'Cache-Control':'no-store'}});
   const origin=request.headers.get('Origin')||'';
@@ -32,7 +33,9 @@ export default {
    if(!env.CONSENT||!env.BRIDGE_DB)return reply({ok:false,error:'chatgpt_bridge_bindings_missing'},503);
    let body;try{const raw=await request.text();if(raw.length>4200)throw Error();body=JSON.parse(raw)}catch{return reply({ok:false,error:'invalid_bridge_request'},400)}
    try{
-    const result=await runnerMessage({claims,body,db:env.BRIDGE_DB,store:consentStore(env)});
+    const result=['assist','result'].includes(body.operation)
+     ?await serverAssist({claims,body,db:env.BRIDGE_DB,store:consentStore(env),schedule:task=>ctx.waitUntil(task)})
+     :await runnerMessage({claims,body,db:env.BRIDGE_DB,store:consentStore(env)});
     return reply(result,result.ok?200:result.status||403);
    }catch{return reply({ok:false,error:'bridge_transport_unavailable'},503)}
   }
