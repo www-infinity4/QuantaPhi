@@ -8,7 +8,7 @@ const read=name=>fs.readFileSync(base+name,'utf8');
 test('Bubbles routes ordinary repository edits directly but explicit multi-agent requests to Robot Brain',()=>{
  assert.match(site,/const requestsAgents=.*robot/);
  assert.match(site,/const codeTask=.*edit\|fix\|repair/);
- assert.match(site,/const directCoding=!requestsAgents&&codeTask/);
+ assert.match(site,/const directCoding=!requestsAgents&&!namedRecordBIssue&&codeTask/);
  assert.match(site,/directRequest\|\|githubCheck\|\|createRepository\|\|coderRequest\|\|directCoding/);
  assert.match(site,/else if\(!embedded&&isOwnerWorkRequest\(request\)\)/);
  assert.ok(site.indexOf('directRequest||githubCheck||createRepository||coderRequest||directCoding')<
