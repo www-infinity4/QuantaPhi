@@ -16,7 +16,9 @@ const OWNER_REPOS={
  'hbo':'www-infinity4/HBO',
  'tv-database':'www-infinity4/TV-Database',
  'widgetphi':'www-infinity4/WidgetPhi',
- 'widget phi':'www-infinity4/WidgetPhi'
+ 'widget phi':'www-infinity4/WidgetPhi',
+ 'recordb':'www-infinity4/RecordB',
+ 'record b':'www-infinity4/RecordB'
 };
 function classify(utterance){
  const text=String(utterance||'').trim().slice(0,4001);
