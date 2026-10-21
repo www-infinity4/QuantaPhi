@@ -60,3 +60,10 @@ test('consumer heartbeat reports observed readiness without extending either gra
  await store.revoke();assert.equal((await store.consumerHeartbeat('ready')).status,403);
  assert.equal((await store.consumerStatus()).state,'approval_inactive');
 });
+
+test('bridge abort is a recoverable message check failure, not raw signal text',()=>{
+ const src=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
+ assert.ok(src.includes("controller.signal.aborted)throw Error('bubbles_message_check_timed_out')"));
+ assert.ok(src.includes("consumerState('retrying','Bubbles message check timed out"));
+ assert.ok(src.includes('No message was confirmed'));
+});

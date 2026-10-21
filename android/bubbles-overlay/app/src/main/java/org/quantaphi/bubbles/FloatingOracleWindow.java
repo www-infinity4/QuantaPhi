@@ -614,6 +614,8 @@ final class FloatingOracleWindow {
             captureState.put("screenActive", prefs.getBoolean("capture_active", false));
             captureState.put("screenRecording", prefs.getBoolean("capture_recording", false));
             captureState.put("screenPaused", prefs.getBoolean("capture_paused", false));
+            // Current Android service status, never inferred from saved labels.
+            captureState.put("screenCaptureServiceRunning", ScreenCaptureService.isRunning());
             captureState.put("soundActive", prefs.getBoolean("audio_active", false));
             captureState.put("nativeRecorder", true);
             String readState = prefs.getString("screen_state", "");

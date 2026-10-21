@@ -123,6 +123,9 @@ export function mount({host,ownerHeaders,reveal=false}){
    const data=await res.json();
    if(!res.ok||!data.ok)throw Error(data.error||'bridge_operation_not_confirmed');
    return data;
+  }catch(error){
+   if(controller.signal.aborted)throw Error('bubbles_message_check_timed_out');
+   throw error;
   }finally{clearTimeout(timeout)}
  }
  async function bridgePermission(action){
@@ -341,6 +344,8 @@ export function mount({host,ownerHeaders,reveal=false}){
     chatgptApproved=false;bridgeStatus.textContent='ChatGPT five-day approval expired or was revoked.';
    }else if(/owner_authorization_required|verified Bubbles owner session|owner Unified Wallet|owner verification/i.test(value)){
     consumerState('waiting-for-owner','The five-day connection is preserved. This page is waiting for its saved owner session to restore.');
+   }else if(value==='bubbles_message_check_timed_out'){
+    consumerState('retrying','Bubbles message check timed out. No message was confirmed; the ordinary chat remains available while the bridge retries.');
    }else if(value==='browser_consent_required'){
     consumerState('consent-unavailable','The existing browser approval is not active. No request was executed.');
    }else consumerState('unavailable','Bubbles message check unavailable: '+value.slice(0,130));
