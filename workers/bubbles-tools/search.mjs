@@ -90,7 +90,7 @@ export function weatherLocations(message){
  if(!match)return [];
  // A follow-up sentence is not part of a place name. Leave abbreviations
  // such as "St. Louis" alone while removing question and instruction clauses.
- const phrase=match[1].split(/[?!]|(?:\.\s+)(?=(?:include|tell|show|give|cite|mention|explain|say|please)\b)/i)[0];
+ const phrase=match[1].split(/[?!]|(?:\.\s+)(?=(?:include|tell|show|give|cite|mention|explain|say|please|check)\b)/i)[0];
  const raw=phrase.replace(/\s+(?:right now|today|tomorrow|currently|this evening|this morning)\b.*$/i,'')
   .replace(/[\s.]+$/g,'').trim();
  if(!raw)return [];
