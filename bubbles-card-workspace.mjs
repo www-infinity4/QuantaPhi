@@ -45,7 +45,16 @@ export class CardWorkspace{
      try{
       // A catalog route must remain on our origin; redirected third-party pages are not controlled.
       if(frame.contentWindow.location.origin!==location.origin)throw Error('Card left the suite origin');
-      const win=frame.contentWindow,proto=win.HTMLMediaElement.prototype,original=proto.play;
+      const win=frame.contentWindow;
+      // Iframe 'load' includes HTTP fallback pages and asset failures.
+      // Local cards must report actual registered-script rendering, not just
+      // navigation to an empty or broken host document.
+      if(card.mount){
+       const report=win.BubblesCardDiagnostics?.();
+       if(report?.id!==card.id||report?.loaded!==true)
+        throw Error('Registered card did not finish loading: '+String(report?.errors?.at(-1)||win.document.getElementById('host-status')?.textContent||'no verified card host').slice(0,170));
+      }
+      const proto=win.HTMLMediaElement.prototype,original=proto.play;
       win.addEventListener('keydown',this.escape);
       proto.play=function(...args){
        record.media.add(this);
@@ -71,7 +80,14 @@ export class CardWorkspace{
    this.status.textContent=card.title+' is open in chat.';
    if(play)return this.play();
    return {message:this.status.textContent};
-  }catch(error){this.status.textContent='Card could not open: '+String(error.message||error);return {message:this.status.textContent};}
+  }catch(error){
+   record.errors.push(String(error.message||error).slice(0,180));
+   // Failed iframe loads must be retryable on the next owner command.
+   this.pause(record);record.frame.remove();this.frames.delete(card.id);
+   this.status.textContent='Card could not open: '+String(error.message||error).slice(0,180);
+   this.onEvidence({cardId:card.id,title:card.title,repository:card.repository,loaded:false,errors:[...record.errors]});
+   return {message:this.status.textContent};
+  }
  }
  getEvidence(record=this.active){
   if(!record)return null;
@@ -112,6 +128,18 @@ export class CardWorkspace{
   const record=this.active;if(!record?.loaded)return {message:'Open a card before playback.'};
   const doc=record.frame.contentDocument;
   if(!doc)return {message:'Card moved outside the suite. Reopen it before playback.'};
+  // Media Star / Fred's curated Spaces are publisher-owned replay links,
+  // NOT a licensed in-chat audio stream. Opening a card is verified here,
+  // but real listening requires a user tap on the original X link.
+  if(['media-star','fred-spaces'].includes(record.card.id)){
+   const source=doc.querySelector('#fredSpacesRadio .fs-play');
+   const href=source?.getAttribute('href')||source?.href||'';
+   let trusted=false;try{const u=new URL(href,location.origin);trusted=u.protocol==='https:'&&['x.com','twitter.com','www.x.com','www.twitter.com'].includes(u.hostname)&&/^\/i\/spaces\//.test(u.pathname)}catch{}
+   const message=trusted
+    ?'Fred’s Space is selected. Tap ▶ in the card to open the original X replay. X controls actual playback; no in-chat audio has been verified.'
+    :'Fred’s original X replay is not available in this card right now. No audio playback was started.';
+   this.status.textContent=message;return {message};
+  }
   const button=record.card.play?doc.querySelector(record.card.play):null;
   if(button&&!button.disabled){if(![...record.media].some(media=>!media.paused&&!media.ended))button.click();}
   else{const media=doc.querySelector('audio,video');if(!media)return {message:'This card has no available registered playback control. Its controls are available in chat.'};record.media.add(media);const promise=media.play();if(promise?.catch)promise.catch(()=>{});}
@@ -126,6 +154,12 @@ export class CardWorkspace{
    snapshot={...snapshot,controls:[...doc.querySelectorAll('button,input,select,textarea')].slice(0,35).map(control=>({label:(control.getAttribute('aria-label')||control.textContent||control.placeholder||control.name||control.id).trim().slice(0,100),disabled:control.disabled===true})),
     playback:[...record.media].map(media=>({paused:media.paused,ended:media.ended,currentTime:Math.round(media.currentTime||0),readyState:media.readyState,error:media.error?.code||null})),
     errors:[...record.errors,...(record.frame.contentWindow.BubblesCardDiagnostics?.().errors||[])].slice(-8)};
+   if(['media-star','fred-spaces'].includes(record.card.id)){
+    const source=doc.querySelector('#fredSpacesRadio .fs-play');
+    const link=source?.getAttribute('href')||source?.href||'';
+    snapshot.fredReplay={linkAvailable:/^https:\/\/(?:www\.)?(?:x|twitter)\.com\/i\/spaces\//.test(link),audioHostedInCard:false,
+     publisher:'X',requiresOriginalSource:true};
+   }
   }catch(error){snapshot.error=String(error.message||error).slice(0,140);}
   if(record.card.id==='bitcoin-crusher'){
    try{const doc=record.frame.contentDocument;
