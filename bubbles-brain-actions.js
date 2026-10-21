@@ -23,11 +23,16 @@ const OWNER_REPOS={
 function classify(utterance){
  const text=String(utterance||'').trim().slice(0,4001);
  if(!text||text.length>4000)return 'chat';
- const addressed=text.replace(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)+/i,'');
+ const addressed=text.replace(/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)+/i,'').replace(/^[\s:;“”"'‘’]+/,'');
  if(/^(?:do\s+not|don['’]t|never|i\s+(?:do\s+not|don['’]t)\s+(?:want|need)|i\s+(?:want|need)\s+(?:you\s+)?not\s+to)\b/i.test(addressed))return 'chat';
- // RecordB engineering requests are work, not generic recorder questions.
- // Never interpret playback or a casual mention as permission to record.
- if(/\brecord\s?b\b/i.test(addressed)&&/\b(?:hook|connect|integrate|build|upgrade|sync|index|store|implement)\b/i.test(addressed)&&/\b(?:bubbles|recordings?|library|video|search|files?)\b/i.test(addressed))return 'queue';
+ // Explicit RecordB engineering instructions beat trailing words such as
+ // "report the results"; neither status queries nor "start recording" do.
+ const recordB= /\brecord\s?b\b/i.test(addressed);
+ const recordBProject=/\b(?:issue\s*#?\s*2|bots?|team|bubbles|recordings?|library|repo(?:sitory)?|app|files?)\b/i.test(addressed);
+ if(recordB&&recordBProject&&(
+   /^(?:build|fix|repair|finish|complete|implement|upgrade|hook|integrate|test|develop|work\s+on)\b/i.test(addressed)
+   || /\b(?:hook|connect|integrate|build|upgrade|sync|index|store|implement)\b/i.test(addressed)&&/\b(?:bubbles|recordings?|library|video|search|files?)\b/i.test(addressed)
+ ))return 'queue';
  // Read-only discovery, even across ALL of GitHub, must never create tickets
  // or demand an owner's repository selection. A separate read tool provides
  // real results; requested code modification still requires the write gate.

@@ -2055,9 +2055,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const directRequest=/^(?:(?:hey|please|bubbles)[, ]+)*(?:(?:can|could|would|will) you\s+)?(?:go\s+)?(?:direct(?:ly)?\s+(?:to\s+|on\s+)?github|github\s+direct|bypass\s+(?:the\s+)?bots)\b/i.test(request);
  // Ordinary one-repository changes belong to Bubbles direct GitHub. Only a
  // clear request for multiple cooperating color agents enters Robot Brain.
- const requestsAgents=/\b(?:robot\s*brain|moltnook|multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request);
+ const requestsAgents=/\b(?:robot\s*brain|moltnook|multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|bot\s+team|team\s+of\s+bots|run\s+the\s+bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request);
  const codeTask=/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|test|run)\b[\s\S]{0,180}\b(?:github|repository|repo|code|source|file|readme|script|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr)\b/i.test(request);
- const directCoding=!requestsAgents&&codeTask;
+ // Owner-named RecordB issue #2 is a multi-agent implementation job, not a
+ // generic GitHub 'assist' operation or a read-only work history report.
+ const namedRecordBIssue=/\brecord\s?b\b/i.test(request)&&/\bissue\s*#?\s*2\b/i.test(request);
+ const directCoding=!requestsAgents&&!namedRecordBIssue&&codeTask;
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
  // without generating a Robot Brain ticket or relying on the writer model.
  const coderRequest=coderIntent(request);
@@ -2150,6 +2153,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   try{
    const ticket=await submitWork(request,'explicit-user-command');
    workEvidence=(continued?'I picked up your earlier request. ':'')+(await humanReplies()).workReply(ticket);
+   if(/\brecord\s?b\b/i.test(request))workEvidence+=' Target: '+ticket.repository+'. I can verify the request was saved, but completed code, APK recording tests and deployment still require actual runner receipts.';
    recordBrainNotice('Open verified work details: https://quantaphi.org/#robotDirections');
   }catch(error){workEvidence='I could not confirm that Robot Brain received this request: '+String(error.message||error).slice(0,160)+'. Your request is still in the work box; retrying it will not create duplicate jobs.';workStatus.textContent=workEvidence}
  }else if(!embedded&&brainTools?.classify(request)==='connection'){
@@ -2713,8 +2717,11 @@ async function submitWork(request,approval='explicit-click'){
  if(activeCardEvidence)cardWorkspaceInstance?.diagnose();
  const cardEvidenceSnapshot=activeCardEvidence?JSON.parse(JSON.stringify(activeCardEvidence)):null;
  // Resolve the real target before creating tickets. A guess never silently fans out.
- if(!repositorySelectionExplicit&&!activeCardEvidence)await suggestRepositoryTargets(request,false);
- const repositories=[...repositorySelection].sort();
+ // A named issue explicitly targets its own repository, regardless of an
+ // unrelated project the owner selected in an older conversation.
+ const namedRecordBIssue=/\brecord\s?b\b/i.test(request)&&/\bissue\s*#?\s*2\b/i.test(request);
+ if(!namedRecordBIssue&&!repositorySelectionExplicit&&!activeCardEvidence)await suggestRepositoryTargets(request,false);
+ const repositories=namedRecordBIssue?['www-infinity4/RecordB']:[...repositorySelection].sort();
  if(!repositories.length)throw Error('Select at least one repository before creating a ticket.');
  if(repositoryPicker.dataset.submitting==='true')throw Error('Repository tickets are already being submitted.');
  repositoryPicker.dataset.submitting='true';

@@ -68,7 +68,7 @@ test('Brain and floating Android shared Bubbles UI use authenticated catalog rou
  assert.match(brain,/github-owner-catalog-v1/);
  assert.match(brain,/ownerAuthorized\(env,token\)/);
  assert.match(ui,/action:'suggest_repositories'/);
- assert.match(ui,/if\(!repositorySelectionExplicit&&!activeCardEvidence\)await suggestRepositoryTargets\(request,false\)/);
+ assert.match(ui,/if\(!namedRecordBIssue&&!repositorySelectionExplicit&&!activeCardEvidence\)await suggestRepositoryTargets\(request,false\)/);
  assert.match(ui,/result\.requiresReview&&!repositorySelectionExplicit/);
  assert.match(ui,/repositoryFilter\.addEventListener\('input'/);
  assert.match(ui,/if\(!repositoryCatalogComplete&&!repositoryCatalogLoading\)void loadRepositoryCatalog\(\)/);
