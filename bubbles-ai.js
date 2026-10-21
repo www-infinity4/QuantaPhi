@@ -954,11 +954,14 @@ if(!embedded){
  const quickState=create('p','ba-chatgpt-quick-status','Approval status will be verified with Cloudflare.');
  quickState.setAttribute('role','status');quickState.setAttribute('aria-live','polite');
  quick.append(quickButton,quickState);
+ window.addEventListener('bubbles:bridge-state',event=>{
+  if(typeof event.detail?.message==='string')quickState.textContent=event.detail.message.slice(0,240);
+ });
  // Fix the original bug: the Cloud Browser belongs inside this scroll owner.
  chatScroll.prepend(browserHome);
  panel.insertBefore(quick,chatScroll);
  const loadBrowser=async()=>{
-  const module=await import('/bubbles-cloud-browser.mjs?v=20261020-background-bridge1');
+  const module=await import('/bubbles-cloud-browser.mjs?v=20261021-consumer-resume1');
   return module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders});
  };
  const grantBridge=async()=>{
@@ -1706,7 +1709,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
       ?'Phone tool responded with this actual device receipt: '+JSON.stringify(receipt).slice(0,1900)
       :'Phone tool returned an unverified result: '+JSON.stringify(receipt||{}).slice(0,900);
     }else if(toolAction.kind==='browser'){
-     const browser=await import('/bubbles-cloud-browser.mjs?v=20261020-background-bridge1');
+     const browser=await import('/bubbles-cloud-browser.mjs?v=20261021-consumer-resume1');
      answer=await browser.browserConversation(toolAction.command,{host:browserHome,ownerHeaders:verifiedOwnerHeaders});
     }else if(toolAction.kind==='card'){
      const {module,workspace:cardWorkspace}=await chatCardWorkspace();workspace=cardWorkspace;
@@ -2045,7 +2048,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   ||/^(?:(?:hey|okay|please|bubbles)[,\s]+)*(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|chat\s?gpt|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(spoken))){
   let intent=null;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261020-background-bridge1');
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261021-consumer-resume1');
    intent=module.browserSpeechIntent(spoken);
    if(intent){
     busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
@@ -2475,6 +2478,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }
 }
 
+ window.addEventListener('bubbles:chatgpt-ready',event=>{
+  event.detail?.respond?.(!embedded&&!busy&&ownerReady&&Boolean(ownerHeaders?.Authorization));
+ });
  // Owner approved ChatGPT bridge: a message arrives only after the Cloudflare
  // browser Worker verifies the owner session and an active five-day grant.
  // Existing per-action owner approvals inside sendMessage remain mandatory.
@@ -2715,6 +2721,7 @@ async function verifiedOwnerHeaders(){
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  // Pairing is handled in the same chat composer.
  workStatus.textContent='Robot Brain verified. Spoken job commands are ready.';
+ window.dispatchEvent(new CustomEvent('bubbles:owner-ready'));
  return headers;
 }
 async function connectOwner(){
@@ -2723,6 +2730,7 @@ async function connectOwner(){
  const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
+ window.dispatchEvent(new CustomEvent('bubbles:owner-ready'));
  ownerMode.textContent='Owner mode connected · Robot Brain commands active';
  if(nativeOverlay){linkBubbles.textContent='Connected ✓';linkStatus.textContent='One-time pairing saved · history syncs automatically.';}
  // Pairing is handled in the same chat composer.
