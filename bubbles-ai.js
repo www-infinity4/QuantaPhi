@@ -1670,6 +1670,55 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   finally{busy=false;send.disabled=false;nativeSpeechPending=false;}
   return;
  }
+ // Plain-English actions are routed to actual registered UI/tool adapters.
+ // This avoids asking a freeform model to narrate taps, reads, or card actions.
+ // The parser uses ONLY the user's current command, never screen/website text.
+ if(!embedded&&!pendingImage&&/\b(?:tap|click|press|hit|push|choose|select|read|scan|inspect|show|look at|type|enter|fill|what's on|what is on)\b/i.test(spoken)){
+  let toolAction=null,actionDriver=null;
+  try{
+   actionDriver=await import('/bubbles-action-driver.mjs?v=20261020-tool-driver1');
+   toolAction=actionDriver.resolveToolAction(spoken,{
+    activeCard:!cardWorkspaceInstance?.container.hidden&&cardWorkspaceInstance?.active?.loaded
+     ?cardWorkspaceInstance.active.card.title:''
+   });
+  }catch(error){status.textContent='Tool action driver unavailable: '+String(error.message||error).slice(0,110);}
+  if(toolAction){
+   busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+   let answer='',workspace=null;
+   try{
+    if(toolAction.kind==='phone'){
+     const receipt=await (await phoneTools()).request(toolAction.command);
+     answer=receipt?.ok===true||receipt?.status==='complete'
+      ?'Phone tool responded with this actual device receipt: '+JSON.stringify(receipt).slice(0,1900)
+      :'Phone tool returned an unverified result: '+JSON.stringify(receipt||{}).slice(0,900);
+    }else if(toolAction.kind==='browser'){
+     const browser=await import('/bubbles-cloud-browser.mjs?v=20261020-background-bridge1');
+     answer=await browser.browserConversation(toolAction.command,{host:browserHome,ownerHeaders:verifiedOwnerHeaders});
+    }else if(toolAction.kind==='card'){
+     const {module,workspace:cardWorkspace}=await chatCardWorkspace();workspace=cardWorkspace;
+     if(!workspace.active?.loaded||workspace.active.card.title.toLowerCase()!==toolAction.cardName.toLowerCase()){
+      const target=module.cardIntent('open '+toolAction.cardName+' card')?.card;
+      if(!target)throw Error('named_registered_card_not_found');
+      const opened=await workspace.open(target,false);
+      if(!workspace.active?.loaded)throw Error(opened.message||'card_not_loaded');
+     }
+     const result=await workspace.pressControl(toolAction.label);
+     answer=result.message;
+    }else answer=toolAction.message||toolAction.reason||'No tool action was taken.';
+   }catch(error){
+    answer='I could not verify the requested tool action: '+String(error.message||error).slice(0,170)+'. No completed action is being claimed.';
+   }
+   display(answer,'ai');
+   if(workspace&&!workspace.container.hidden){
+    conversation.append(workspace.container);
+    workspace.container.scrollIntoView?.({block:'start'});
+   }
+   messages.push({role:'user',text:spoken},{role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
+   status.textContent=answer.slice(0,250);
+   if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;else if(fromVoice&&config.voice&&!nativeOverlay)speakText(answer);
+   nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();return;
+  }
+ }
  // Resolve every spoken/typed turn against known cards first, including "Media Star card".
  // Card opening is read-only; owner-only Robot Brain and payment controls keep their own gates.
  if(!pendingImage){

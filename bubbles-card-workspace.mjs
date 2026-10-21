@@ -1,4 +1,5 @@
 import {cards,cardIntent} from './bubbles-card-catalog.mjs';
+import {cardControlDecision,safeCardControls,toolReply} from './bubbles-action-driver.mjs';
 export {cardIntent};
 export class CardWorkspace{
  constructor(container,onEvidence=()=>{},onClose=()=>{},onEdit=()=>{}){
@@ -28,6 +29,28 @@ export class CardWorkspace{
   if(intent.action==='add-words')return this.addWords(intent.words);
   if(intent.action==='edit'){const opened=await this.open(intent.card,false);if(this.active?.loaded)this.draftEdit();return opened;}
   return this.open(intent.card,intent.action==='play');
+ }
+ async pressControl(label){
+  const record=this.active;
+  if(!record?.loaded||this.container.hidden)return {status:'control_not_found',message:'Open the requested card before asking me to press its controls.'};
+  const name=String(label||'').trim().toLowerCase();
+  // Fred's player links to X; a synthetic click cannot certify hearing audio.
+  if(['media-star','fred-spaces'].includes(record.card.id)&&/^(?:play|listen|replay|start|audio|▶)$/.test(name))
+   return {status:'external_link_requires_user_tap',message:this.play().message};
+  const doc=record.frame.contentDocument;
+  if(!doc)return {status:'control_not_found',message:'Card document is not available. No tap occurred.'};
+  let decision;
+  try{decision=cardControlDecision(label,safeCardControls(doc));}
+  catch(error){return {status:'control_not_found',message:'Card controls could not be inspected: '+String(error.message||error).slice(0,110)}}
+  if(decision.status!=='safe_click')return {status:decision.status,message:toolReply(decision)};
+  try{
+   // Only a named, unique, visible, enabled and non-sensitive card control.
+   // Browser scripts still enforce all wallet/owner permissions independently.
+   decision.control.element.click();
+   const receipt={status:'safe_click',label:decision.control.label,card:record.card.title};
+   this.onEvidence({...this.getEvidence(record),controlAction:receipt,loaded:true});
+   return {...receipt,message:toolReply(receipt)};
+  }catch(error){return {status:'tap_failed',message:'Card control did not accept the tap: '+String(error.message||error).slice(0,130)}}
  }
  pause(record){if(record)for(const media of record.media)try{media.pause();}catch{}}
  close(){this.pause(this.active);this.active=null;this.container.hidden=true;this.onEvidence(null);this.onClose();}
