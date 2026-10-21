@@ -7,7 +7,7 @@ import {fileURLToPath} from 'node:url';
 const ORIGIN='https://quantaphi.org';
 const WORKER='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
 const WEATHER_REQUEST='What is the current weather in Albia, Lovilia, and Ottumwa, Iowa? Include the observation time and source for each. Tell me if you cannot verify a location.';
-const HTML_REQUEST='Read https://quantaphi.org/bubbles.html and explain what this public page says. Use the actual page content and say if it cannot be read.';
+const HTML_REQUEST='Inspect https://quantaphi.org/bubbles.html and explain what the Bubbles page offers. Distinguish the actual public HTML you inspected from assumptions.';
 
 export async function verifyLiveBubblesTools(fetcher=fetch){
  const ask=async request=>{
