@@ -31,6 +31,29 @@ export async function serverAssist({claims,body,db,store,fetcher=fetch,now=Date.
  return {ok:true,jobId:id,state:latest?.status||row.status,expiresAt:row.expires_ms,execution:'server',ownerToolsVerified:false};
 }
 
+// The signed test route has ten turns but no private chat archive. Reuse only
+// already-completed turns from the SAME verified GitHub run, while both grants
+// remain active. Previous model text is conversation context, never authority
+// to claim that a tool or owner-page action has just executed.
+export async function precedingSignedTurns({id,db,now=Date.now()}){
+ const match=/^chatgpt_assist_(\d{1,24})_([0-9])$/.exec(id);
+ if(!match)return '';
+ const transcript=[];
+ for(let turn=Math.max(0,Number(match[2])-2);turn<Number(match[2]);turn++){
+  const previousId='chatgpt_assist_'+match[1]+'_'+turn;
+  const row=await db.prepare('SELECT payload,status,result,expires_ms FROM bubbles_chatgpt_bridge WHERE id=?').bind(previousId).first();
+  if(row?.status!=='complete'||!Number.isFinite(row.expires_ms)||row.expires_ms<=now)continue;
+  let prompt,answer;
+  try{prompt=JSON.parse(row.payload||'{}')?.text;answer=JSON.parse(row.result||'{}');}catch{continue}
+  if(typeof prompt!=='string'||answer?.ok!==true||typeof answer.output!=='string'||!answer.output.trim())continue;
+  const safe=value=>String(value).replace(/[\x00-\x1f\x7f]/g,' ').trim();
+  transcript.push('Earlier question: '+safe(prompt).slice(0,450)+'\nEarlier Bubbles answer ('+
+   String(answer.receipt?.status||'unverified').slice(0,35)+'): '+safe(answer.output).slice(0,1150));
+ }
+ if(!transcript.length)return '';
+ return 'Relevant recent conversation (verified same-run history, not new tool calls or authorization):\n'+transcript.join('\n')+
+  '\nAnswer the CURRENT user question using relevant context. Do not claim a prior result proves a current button tap or new tool action.\n';
+}
 // Executes while the authenticated server client holds its request open.
 export async function executeServerAssist({id,db,store,fetcher=fetch,now=Date.now()}){
  const row=await db.prepare("SELECT payload,status,expires_ms FROM bubbles_chatgpt_bridge WHERE id=? AND action='server_assist'").bind(id).first();
@@ -46,8 +69,10 @@ export async function executeServerAssist({id,db,store,fetcher=fetch,now=Date.no
    try{
     if(!await approved(store))throw Error('consent_revoked');
     phase='gateway_fetch';
+    const history=await precedingSignedTurns({id,db,now});
+    const input=history?history+'Current user question: '+text:text;
     const response=await fetcher(GATEWAY,{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
-     body:JSON.stringify({request:text,input:text,mcp:true}),signal:AbortSignal.timeout(90000),redirect:'manual'});
+     body:JSON.stringify({request:text,input,mcp:true}),signal:AbortSignal.timeout(90000),redirect:'manual'});
     gatewayStatus=response.status;
     if(!response.ok)throw Error('gateway_http_'+response.status);
     phase='gateway_json';
