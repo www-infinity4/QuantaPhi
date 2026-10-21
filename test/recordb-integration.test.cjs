@@ -25,3 +25,10 @@ test('Bubbles mounts RecordB controls inside Android chat using existing capture
  assert.match(android,/new Command\("screen_resume"/);
  assert.match(android,/new Command\("screen_video"/);
 });
+
+test('RecordB follow-up coding requests resolve to the RecordB repo before generic Bubbles work',()=>{
+ const target="if(/\\brecord\\s?b\\b/i.test(request))repository='www-infinity4/RecordB';";
+ const fallback="if(githubCheck||coderRequest||/\\b(?:bubbles|owner[- ]approval)\\b/i.test(request))repository='www-infinity4/QuantaPhi';";
+ assert.ok(source.includes(target),'named RecordB target is recognized');
+ assert.ok(source.indexOf(target)<source.indexOf(fallback),'RecordB wins over generic Bubbles fallback');
+});
