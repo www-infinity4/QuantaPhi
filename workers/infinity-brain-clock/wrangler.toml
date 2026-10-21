@@ -4,6 +4,9 @@ main = "worker.js"
 # Secrets and owner identity must survive a source-only staged upload.
 keep_vars = true
 compatibility_date = "2026-10-10"
+# Reach the existing public consent Worker through Cloudflare routing.
+# JWT verification and both five-day grants remain required at its endpoint.
+compatibility_flags = ["global_fetch_strictly_public"]
 [[d1_databases]]
 binding = "WORK_DB"
 database_name = "rogers-consensus" # Verified account D1 name; original ID/binding unchanged
