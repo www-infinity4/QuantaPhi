@@ -10,7 +10,9 @@ const weatherFixture=async url=>{
   const q=u.searchParams.get('name')||'';
   const location=/albia/i.test(q)?{name:'Albia',admin1:'Iowa',latitude:1,longitude:1}:
    /omaha/i.test(q)?{name:'Omaha',admin1:'Nebraska',latitude:2,longitude:2}:
-   /denver/i.test(q)?{name:'Denver',admin1:'Colorado',latitude:3,longitude:3}:null;
+   /denver/i.test(q)?{name:'Denver',admin1:'Colorado',latitude:3,longitude:3}:
+   /lovilia/i.test(q)?{name:'Lovilia',admin1:'Iowa',latitude:4,longitude:4}:
+   /ottumwa/i.test(q)?{name:'Ottumwa',admin1:'Iowa',latitude:5,longitude:5}:null;
   return new Response(JSON.stringify({results:location?[{...location,country:'United States',country_code:'US'}]:[]}),{status:200});
  }
  if(u.hostname==='api.open-meteo.com'){
@@ -44,6 +46,11 @@ test('explicit cities stay independent and no missing location is invented',()=>
  assert.deepEqual(weatherLocations('Weather for Albia, Iowa, Omaha, Nebraska, Denver, Colorado'),['Albia, Iowa','Omaha, Nebraska','Denver, Colorado']);
  assert.deepEqual(weatherLocations('Tell me the weather around here'),[]);
  assert.equal(weatherPlace('Weather now',null),'');
+ const natural='What is the current weather in Albia, Lovilia, and Ottumwa, Iowa? Include the observation time and source for each. Tell me if you cannot verify a location.';
+ assert.deepEqual(weatherLocations(natural),['Albia, Iowa','Lovilia, Iowa','Ottumwa, Iowa']);
+ assert.deepEqual(weatherLocations('Weather in Albia, Iowa and Ottumwa, Iowa?'),['Albia, Iowa','Ottumwa, Iowa']);
+ assert.deepEqual(weatherLocations('Weather in Albia, IA, Omaha, NE'),['Albia, IA','Omaha, NE']);
+ assert.deepEqual(weatherLocations('Weather in Albia and Ottumwa, Iowa'),['Albia, Iowa','Ottumwa, Iowa']);
 });
 test('multi-city Open-Meteo test returns separate grounded conditions and source, with a bounded count',async()=>{
  const result=await compareWeather('Check weather in Albia, Iowa; Omaha, Nebraska; Denver, Colorado',weatherFixture);
@@ -54,6 +61,22 @@ test('multi-city Open-Meteo test returns separate grounded conditions and source
  const bounded=await compareWeather('Weather in Albia, Iowa; Omaha, Nebraska; Denver, Colorado; Chicago, Illinois; Kansas City, Missouri',weatherFixture);
  assert.equal(bounded.needsLocation,true);
  assert.match(bounded.output,/four named locations/);
+ const natural='What is the current weather in Albia, Lovilia, and Ottumwa, Iowa? Include the observation time and source for each. Tell me if you cannot verify a location.';
+ const checked=await compareWeather(natural,weatherFixture);
+ assert.equal(checked.ok,true);
+ assert.equal(checked.locations.length,3);
+ assert.deepEqual(checked.locations.map(x=>x.temperatureF),[61,64,65]);
+ for(const place of checked.locations){
+  assert.equal(place.provider,'Open-Meteo');
+  assert.equal(place.observedAt,'2026-10-20T16:00');
+  assert.match(checked.output,new RegExp(place.requested));
+ }
+ const partial=await compareWeather('Weather in Albia, Lovilia, and Unknownville, Iowa? Include observation time.',weatherFixture);
+ assert.equal(partial.ok,false);
+ assert.equal(partial.partial,true);
+ assert.equal(partial.locations.length,3);
+ assert.match(partial.output,/Could not verify Unknownville, Iowa:/);
+ assert.doesNotMatch(partial.output,/✓ Unknownville/);
 });
 test('cloud browser natural phrases map to read-only browser observation with owner gate retained',()=>{
  assert.equal(browserSpeechIntent('Bubbles, show me the cloud browser').action,'show');

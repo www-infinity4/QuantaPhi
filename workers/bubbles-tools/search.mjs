@@ -81,18 +81,32 @@ export function weatherPlace(message,location){
 
 // A comparison is an explicit set of places, never one invented combined city.
 // At most four verified Open-Meteo lookups, with the same bounds as single weather.
+// Normalize state tokens only for grouping expressly named locations;
+// never silently apply a state to an unrelated, unmentioned town.
+const US_STATES=new Set(('alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|wisconsin|wyoming|district of columbia|al|ak|az|ar|ca|co|ct|de|fl|ga|hi|id|il|in|ia|ks|ky|la|me|md|ma|mi|mn|ms|mo|mt|ne|nv|nh|nj|nm|ny|nc|nd|oh|ok|or|pa|ri|sc|sd|tn|tx|ut|vt|va|wa|wv|wi|wy|dc').split('|'));
 export function weatherLocations(message){
  const q=trim(message,550);
  const match=q.match(/\b(?:weather|forecast|temperatures?)\b[\s\S]*?\b(?:in|for|at|near)\s+(.+)$/i);
  if(!match)return [];
- const raw=match[1].replace(/[?!.\s]+$/g,'')
-  .replace(/\s+(?:right now|today|tomorrow|currently|this evening|this morning)\b.*$/i,'').trim();
- let parts=raw.split(/\s*;\s*|\s*,?\s+\band\s+/i).map(s=>s.trim()).filter(Boolean);
- // Also recognize explicit "City, State, City, State" pairs.
+ // A follow-up sentence is not part of a place name. Leave abbreviations
+ // such as "St. Louis" alone while removing question and instruction clauses.
+ const phrase=match[1].split(/[?!]|(?:\.\s+)(?=(?:include|tell|show|give|cite|mention|explain|say|please)\b)/i)[0];
+ const raw=phrase.replace(/\s+(?:right now|today|tomorrow|currently|this evening|this morning)\b.*$/i,'')
+  .replace(/[\s.]+$/g,'').trim();
+ if(!raw)return [];
+ let parts=raw.split(/\s*;\s*/).map(s=>s.replace(/^and\s+/i,'').trim()).filter(Boolean);
  if(parts.length===1){
-  const names=raw.split(/\s*,\s*/).map(s=>s.trim()).filter(Boolean);
-  if(names.length>=4&&names.length%2===0)
-   parts=Array.from({length:names.length/2},(_,i)=>names[i*2]+', '+names[i*2+1]);
+  const normalized=raw.replace(/\s*,?\s+and\s+/gi,', ');
+  const names=normalized.split(/\s*,\s*/).map(s=>s.trim()).filter(Boolean);
+  const isState=value=>US_STATES.has(String(value||'').toLowerCase());
+  // "Albia, Lovilia, and Ottumwa, Iowa" names one shared state.
+  // "Albia, Iowa, Omaha, Nebraska" names two explicit city/state pairs.
+  if(names.length>=3&&isState(names.at(-1))&&names.slice(0,-1).every(x=>!isState(x)))
+   parts=names.slice(0,-1).map(city=>city+', '+names.at(-1));
+  else if(names.length>=4&&names.length%2===0)
+   parts=Array.from({length:names.length/2},(_,i)=>names[2*i]+', '+names[2*i+1]);
+  else if(/\band\b/i.test(raw))
+   parts=raw.split(/\s*,?\s+and\s+/i).map(x=>x.trim()).filter(Boolean);
  }
  if(parts.length<2)return [];
  const valid=parts.every(p=>/^[a-z][a-z .'-]*(?:,\s*[a-z][a-z .'-]*)?$/i.test(p)&&p.length<=110&&p.length>=3);
