@@ -6,6 +6,7 @@ on:
       - 'workers/bubbles-tools/browser.mjs'
       - 'workers/bubbles-cloud-browser/**'
       - 'test/bubbles-chatgpt-bridge.test.mjs'
+      - 'test/bubbles-background-bridge.test.mjs'
       - 'bubbles-cloud-browser.mjs'
       - 'bubbles-ai.js'
       - 'test/bubbles-browser-agent.test.mjs'
@@ -28,4 +29,4 @@ jobs:
           node --check workers/bubbles-cloud-browser/worker.mjs
           node --check bubbles-cloud-browser.mjs
           node --check bubbles-ai.js
-          node --test test/bubbles-browser-agent.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-chatgpt-bridge.test.mjs test/bubbles-browser-consent.test.mjs
+          node --test test/bubbles-browser-agent.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-chatgpt-bridge.test.mjs test/bubbles-browser-consent.test.mjs test/bubbles-background-bridge.test.mjs
