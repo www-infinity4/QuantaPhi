@@ -1753,6 +1753,51 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }
   }
  }
+ // General semantic route: GPT-OSS chooses among the ACTUAL card catalog
+ // and one read-only phone observation. It does not execute model-generated
+ // permissions, repository writes, taps, payments or arbitrary scripts.
+ // Existing deterministic routes still handle clear requests instantly.
+ if(!pendingImage&&!embedded&&spoken.length<1000){
+  try{
+   const {module,workspace}=await chatCardWorkspace();
+   const catalog=module.cards.map(c=>({id:c.id,title:c.title,aliases:c.aliases||[]}));
+   const response=await bubblesFetch(AI.replace('/v1/assist','/v1/intent'),{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({request:spoken,cards:catalog,activeCard:workspace.active?.card?.id||''})
+   },11000);
+   const plan=response.ok?await response.json():null;
+   const decision=plan?.ok===true&&plan?.receipt?.executed===false?plan.decision:null;
+   const target=decision?.cardId?module.cards.find(c=>c.id===decision.cardId):null;
+   if((target&&['open_card','play_card'].includes(decision.kind))
+      ||decision?.kind==='phone_read'){
+    busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+    let answer;
+    try{
+     if(decision.kind==='phone_read'){
+      // Device bridge still independently enforces its owner and Accessibility grant.
+      const result=await (await phoneTools()).request('phone read');
+      answer=result?.ok===true||result?.status==='complete'
+       ?'Read the current phone screen through the approved device tool. '+JSON.stringify(result).slice(0,1400)
+       :'The phone did not confirm a screen observation. No screen access was claimed.';
+     }else{
+      const opened=await workspace.handle({action:decision.kind==='play_card'?'play':'open',card:target});
+      answer=opened.message;
+      if(!workspace.container.hidden){
+       conversation.append(workspace.container);
+       workspace.container.scrollIntoView?.({block:'start'});
+      }
+     }
+    }catch(error){
+     answer='Bubbles could not verify that tool action: '+String(error.message||error).slice(0,140)+'. No completion is claimed.';
+    }
+    display(answer,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:answer});
+    messages=messages.slice(-400);persistChat();
+    status.textContent=answer.slice(0,250);
+    if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;else if(fromVoice&&config.voice&&!nativeOverlay)speakText(answer);
+    nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();return;
+   }
+  }catch(error){status.textContent='Semantic tool selector unavailable; continuing conversation.';}
+ }
  // User-selected image is untrusted evidence and never grants owner work permissions.
  if(pendingImage&&!fromVoice){
   const selected=pendingImage,question=spoken||'Describe this image and its important visible details.';
