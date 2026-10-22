@@ -1,3 +1,35 @@
+## Bubbles website and Android parity — Preview 0.56.0 (October 22, 2026)
+
+The floating APK loads the actual `https://quantaphi.org/bubbles.html?nativeOverlay=1`.
+Both the main website and the APK now open `bubbles_shared_main_v1` by default
+instead of generating independent random first-visit threads. On separately
+verified owner sessions, the existing Brain conversation service synchronizes
+these messages; legacy and explicitly selected chat folders remain accessible.
+Guest conversations have no owner privileges. A browser does not transfer its
+login cookies or wallet token into the Android WebView.
+
+The APK checks the website's published `bubbles-ai.js?v=...` revision when it is
+open and idle. The site itself also checks periodically. A version change
+reloads the first-party website page only after an active conversation turn is
+finished; it never silently upgrades native Android recording permissions,
+forces microphone access, or replaces the Android application binary.
+The APK versionCode/versionName advance to 56 / 0.56.0 so the rebuilt
+Preview 5 package can be installed as an update under the same signing key.
+
+There is one assistant and one transcript: Android speech recognition forwards
+text to the *same website assistant* used by the typed composer. While Android
+owns the voice lane, the website does not start another microphone or read the
+response aloud. Android alone owns TTS playback and Android capture consent.
+Identical speech-voice timbre on Chrome and Android is not guaranteed because
+they use different installed speech engines.
+
+**Evidence limits:** source and CI prove the wiring, not the physical phone.
+On the Motorola, install the newly published Preview 5 APK, verify the existing
+wallet/owner session separately in its WebView, ask a question by voice, and
+confirm the answer appears in the main website's Bubbles shared chat. Then send
+a typed website message and confirm it appears in the APK. No APK installation,
+microphone consent, or owner pairing happens automatically from a GitHub merge.
+
 ## APK 38 feature build (upgrade-safe preview 0.40.0)
 
 The APK 38 work targets a single 58dp Bubbles orb, growing to 78dp only during
