@@ -35,6 +35,22 @@ public final class TermuxProbeResultReceiver extends BroadcastReceiver {
             + (stdout.isEmpty() ? "" : "\n" + stdout)
             + (stderr.isEmpty() ? "" : "\nstderr: " + stderr)
             + (error.isEmpty() ? "" : "\nTermux: " + error);
-        TermuxProbe.saveResult(context, id, success ? "passed" : "failed", detail);
+        String state = success ? "passed" : "failed";
+        String plain = success ? "Python works in Termux. Its temporary files were removed."
+            : "The Python test did not complete successfully.";
+        if (!success && (error.contains("allow-external-apps") || stderr.contains("allow-external-apps"))) {
+            state = "setup_required";
+            plain = "Termux needs one-time permission for external app commands. Python was not run.";
+        } else if (!success && (code == 127 || stdout.contains("python=not_installed"))) {
+            state = "python_missing";
+            plain = "Python is not available inside Termux. No package installation was attempted.";
+        } else if (!success && (code == 73 || stdout.contains("storage=low_no_files_created"))) {
+            state = "storage_low";
+            plain = "Storage is too low for a temporary test file. Nothing was installed.";
+        } else if (!success && !cleaned && code != -999) {
+            state = "cleanup_unverified";
+            plain = "The test did not prove that its temporary folder was removed.";
+        }
+        TermuxProbe.saveResult(context, id, state, plain + "\nTechnical receipt: " + detail);
     }
 }
