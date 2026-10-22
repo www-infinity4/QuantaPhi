@@ -42,7 +42,7 @@ test('named RecordB issue is submitted to its own repository, not stale selectio
 
 test('explicit RecordB bot-team requests take the authenticated ticket path',()=>{
  assert.match(site,/bot\\s\+team/);
- assert.match(site,/const directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;/);
+ assert.match(site,/let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;/);
  assert.match(site,/else if\(!embedded&&isOwnerWorkRequest\(request\)\)/);
  assert.match(site,/submitWork\(request,'explicit-user-command'\)/);
  assert.match(site,/Target: '\+ticket.repository/);
@@ -52,7 +52,7 @@ test('explicit RecordB bot-team requests take the authenticated ticket path',()=
 test('every Bubbles entrypoint loads the unpinned fresh action router',()=>{
  const routing=gateway.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|sourceRef) =/.test(line)).join('\n');
  const sourceRef=new Function('route','incoming',routing+';return sourceRef;');
- const version='20261021-model-tools2';
+ const version='20261021-neural-work3';
  const brainsVersion='20261020-tool-driver1';
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const html=fs.readFileSync(path,'utf8');

@@ -4,7 +4,13 @@ import {readFileSync} from 'node:fs';
 import {directGithubAgent,githubOperation} from '../workers/infinity-brain-clock/direct-github.mjs';
 
 const site=readFileSync('bubbles-ai.js','utf8');
-const source=site.slice(site.indexOf(" let workEvidence='';"),site.indexOf(' if(!embedded&&articleResearch)',site.indexOf(" let workEvidence='';")));
+const originalSource=site.slice(site.indexOf(" let workEvidence='';"),site.indexOf(' if(!embedded&&articleResearch)',site.indexOf(" let workEvidence='';")));
+const neuralStart=originalSource.indexOf(' let neuralCoding=false;');
+const neuralEnd=originalSource.indexOf(' // A direct owner command can use Bubbles',neuralStart);
+assert.ok(neuralStart>0&&neuralEnd>neuralStart);
+// Source classifier fixtures exercise the deterministic path; the asynchronous
+// model only runs in the actual verified-owner chat.
+const source=originalSource.slice(0,neuralStart)+' let neuralCoding=false;\n'+originalSource.slice(neuralEnd);
 const modeLine=site.slice(site.indexOf('   const mode='),site.indexOf('   const namedWorkflow=',site.indexOf('   const mode=')));
 const classify=new Function('request','coderIntent',source+'\n'+modeLine+'\nreturn {ownerGithubNonAction,createRepository,directCoding,requestsAgents,mode};');
 

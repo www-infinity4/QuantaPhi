@@ -261,3 +261,24 @@ test('single-letter or article-only repository names never reach GitHub from Bub
  }
  assert.equal(calls,0);
 });
+
+test('neural owner work endpoint plans only; it cannot authorize or execute the task',async()=>{
+ let modelCalls=0;
+ const request=new Request('https://tools/v1/intent',{method:'POST',
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({mode:'owner_work',request:'Get Bubbles Python runner working properly'})});
+ const response=await worker.fetch(request,{AI:{run:async(model,options)=>{
+  modelCalls++;
+  assert.equal(model,'@cf/openai/gpt-oss-120b');
+  assert.match(options.messages[0].content,/engineering-intent interpreter/);
+  return {response:JSON.stringify({kind:'repository_work',confidence:0.96})};
+ }}});
+ const data=await response.json();
+ assert.equal(response.status,200);
+ assert.equal(modelCalls,1);
+ assert.deepEqual(data.decision,{kind:'repository_work',confidence:0.96});
+ assert.equal(data.receipt.status,'planned_only');
+ assert.equal(data.receipt.executed,false);
+ assert.equal(data.receipt.permissionGranted,false);
+ assert.equal(data.receipt.repositoryActionsVerified,false);
+});
