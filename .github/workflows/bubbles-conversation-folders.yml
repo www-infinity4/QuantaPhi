@@ -6,6 +6,8 @@ on:
       - 'bubbles-human-replies.mjs'
       - 'bubbles-unified.css'
       - 'workers/infinity-brain-clock/conversation-memory.mjs'
+      - 'workers/infinity-brain-clock/conversation-work-audit.mjs'
+      - 'test/bubbles-conversation-work-audit.test.mjs'
       - 'workers/bubbles-chat-folders/**'
       - 'test/bubbles-conversation-folders.test.mjs'
       - 'test/bubbles-chat-folder-api.test.mjs'
@@ -25,5 +27,6 @@ jobs:
           node --check bubbles-ai.js
           node --check bubbles-human-replies.mjs
           node --check workers/infinity-brain-clock/conversation-memory.mjs
+          node --check workers/infinity-brain-clock/conversation-work-audit.mjs
           node --check workers/bubbles-chat-folders/worker.mjs
-          node --test test/bubbles-conversation-folders.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-chat-folder-api.test.mjs
+          node --test test/bubbles-conversation-folders.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-chat-folder-api.test.mjs test/bubbles-conversation-work-audit.test.mjs
