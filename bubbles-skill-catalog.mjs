@@ -14,7 +14,7 @@ export function approvedSourceLink(value){
  try{
   const url=new URL(value);
   return url.origin==='https://github.com'&&!url.username&&!url.password&&!url.search&&!url.hash&&
-    /^\\/www-infinity4\\/Organic-Computation\\/?$/.test(url.pathname)?url.href:'';
+    (url.pathname==='/www-infinity4/Organic-Computation'||url.pathname==='/www-infinity4/Organic-Computation/')?url.href:'';
  }catch{return '';}
 }
 export async function mountBubblesSkillCatalog(target,{fetcher=fetch}={}){
