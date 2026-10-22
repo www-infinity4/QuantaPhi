@@ -1,4 +1,4 @@
-// Server-side read/observe loop. Model output selects registered readers only;
+// Bounded server-side read/observe loop. Model output selects registered readers only;
 // it cannot supply credentials, grant owner access, write files or run code.
 import {mcpTools,validateCall} from './mcp.mjs';
 const object=(properties,required)=>({type:'object',properties,required,additionalProperties:false});
