@@ -60,6 +60,7 @@ final class FloatingOracleWindow {
     private long lastRobotStatusAt = 0L;
     private String lastCaptureSnapshot = "";
     private long lastPhonePollAt;
+    private long lastSiteRevisionCheckAt = 0L;
     private long lastChatGPTConsumerWakeAt = 0L;
     private boolean phoneCommandRunning;
     // Keep follow-ups in order while the web assistant is loading or busy.
@@ -110,6 +111,7 @@ final class FloatingOracleWindow {
                 deliverQueuedSpeech();
                 deliverQueuedText();
                 pollWebsiteReply();
+                checkSiteRevision();
                 // The floating voice service stays foregrounded after Hide.
                 // Android can throttle window timers in a hidden WebView, so
                 // wake only this existing, first-party, authenticated page.
@@ -161,6 +163,7 @@ final class FloatingOracleWindow {
     boolean show() {
         if (root != null) {
             root.setVisibility(View.VISIBLE);
+            checkSiteRevision();
             return true;
         }
         LinearLayout page = new LinearLayout(service);
@@ -181,7 +184,7 @@ final class FloatingOracleWindow {
             if (website == null) return;
             if (livePage) {
                 stopLiveCall();
-                website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+                website.loadUrl(SITE_URL);
             } else website.loadUrl("https://quantaphi.org/bubbles-gpt-live.html?v=" + BuildConfig.VERSION_NAME);
         });
         // Keep a single visible Live button in the chat header. Do not gate it
@@ -242,7 +245,7 @@ final class FloatingOracleWindow {
             } else {
                 showWebsite(false);
                 status.setText("Connecting to QuantaPhi Bubbles… Your queued messages are retained.");
-                website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+                website.loadUrl(SITE_URL);
             }
         });
         page.addView(retryButton);
@@ -448,7 +451,7 @@ final class FloatingOracleWindow {
                 }
             });
             page.addView(website, new LinearLayout.LayoutParams(-1, 0, 1));
-            website.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+            website.loadUrl(SITE_URL);
         } catch (RuntimeException error) {
             // Keep the failure visible; never open a different assistant.
             website = null;
@@ -484,14 +487,28 @@ final class FloatingOracleWindow {
                 view.evaluateJavascript("Boolean(window.BubblesLiveVoice && (window.BubblesLiveVoice.stop(), true))", result -> {
                     if (view != website || generation != loadGeneration) return;
                     if ("true".equals(result)) service.releaseLiveMicrophone();
-                    else view.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+                    else view.loadUrl(SITE_URL);
                 });
             } catch (RuntimeException error) {
                 // Navigation/destruction releases WebView media even when an
                 // older page has no lifecycle helper. Never resume Vosk here.
-                view.loadUrl(SITE_URL + "&v=" + BuildConfig.VERSION_NAME);
+                view.loadUrl(SITE_URL);
             }
         } else service.releaseLiveMicrophone();
+    }
+    /** The APK uses the website's actual Bubbles script revision, never its
+     * own Android versionName. The website performs a no-store read and only
+     * reloads after its current turn has finished. */
+    private void checkSiteRevision() {
+        if (!websiteReady || !trustedChat(website) || !pendingSpeech.isEmpty()
+                || !pendingTyped.isEmpty() || dispatchInFlight || typedDispatchInFlight)
+            return;
+        long now = android.os.SystemClock.elapsedRealtime();
+        if (now - lastSiteRevisionCheckAt < 90000L) return;
+        lastSiteRevisionCheckAt = now;
+        website.evaluateJavascript("Boolean(window.QuantaBubbles"
+            + " && typeof window.QuantaBubbles.checkForSiteUpdate==='function'"
+            + " && (window.QuantaBubbles.checkForSiteUpdate(), true))", null);
     }
     private boolean trustedChat(WebView view) {
         if (view == null || view != website || root == null) return false;
