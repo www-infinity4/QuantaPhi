@@ -43,3 +43,15 @@ test('large history picker cannot contend with active Android video export', () 
   assert.match(voice, /callback\.onReceiveValue\(null\)/);
   assert.match(web, /service\.openFilePicker\(callback, historyJson\)/);
 });
+
+
+test('RecordB tap retains a short speech follow-up without disabling background-audio protection', () => {
+  const voice = read('BubblesService.java');
+  const gate = read('SpeechSourceGate.java');
+  assert.match(voice, /VoiceCaptureCommands\\.parse\\(text\\)/);
+  assert.match(voice, /activeUntil = now \\+ 30000L/);
+  assert.match(voice, /boolean recentRecordBFollowup = !typed && now < activeUntil/);
+  assert.match(voice, /ScreenCaptureService\\.isRunning\\(\\)/);
+  assert.match(voice, /directed \\|\\| suffixCapture \\|\\| recentRecordBFollowup/);
+  assert.match(gate, /typed \\|\\| !phonePlaybackActive \\|\\| directlyAddressed/);
+});
