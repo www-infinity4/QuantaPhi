@@ -193,6 +193,7 @@ public final class MainActivity extends Activity {
                 + "\nLast problem: " + BrainNotes.prefs(this).getString("last_error", "None recorded")
                 + "\nScreen access: " + (BrainLearningService.isConnected() ? "ON" : "OFF — tap Enable Bubbles screen reading above")
                 + "\nLast screen result: " + BrainNotes.prefs(this).getString("screen_state", "No screen read yet")
+                + "\nTermux Python: " + BrainNotes.prefs(this).getString("termux_python_receipt", "Not yet tested by Bubbles")
                 + "\nUI job: " + BrainNotes.prefs(this).getString("workflow_receipt", "No UI job started")
                 + "\nCapture: " + BrainNotes.prefs(this).getString("capture_state", "None")
                 + "\nSound: " + BrainNotes.prefs(this).getString("audio_state", "None")
