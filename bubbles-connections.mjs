@@ -130,7 +130,12 @@ export function mountConnections(container,{token}) {
         const row=element('p',(NAMES[account.provider]||account.provider)+' · '+account.label+' · '+account.status+' ');
         if(account.status!=='disconnected') {
           const button=element('button','Disconnect','ba-control');button.type='button';
-          button.addEventListener('click',async()=>{button.disabled=true;try{
+          button.addEventListener('click',async()=>{
+            if(['github','cloudflare'].includes(account.provider)){
+              const providerName=account.provider==='github'?'GitHub':'Cloudflare';
+              if(!window.confirm('Disconnect '+providerName+' from Bubbles? This can stop repository builds, Cloudflare deployments and related tools until you reconnect. Your existing repositories and deployments will not be deleted by this action.'))return;
+            }
+            button.disabled=true;try{
             const result=await client.call('/disconnect',{id:account.id});await load();
             status.textContent=result.providerRevocation==='failed'?'Disconnected in Bubbles. Provider revocation failed; remove Bubbles access in that service’s account settings.':'Account disconnected.';
           }catch(error){status.textContent=error.message;button.disabled=false;}});row.append(button);
