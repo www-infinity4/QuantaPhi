@@ -3135,7 +3135,7 @@ async function checkForSiteUpdate(){
   const response=await bubblesFetch(target.href,{cache:'no-store'},9000);
   if(!response.ok)return false;
   const html=await response.text();
-  const remote=html.match(/<script\\b[^>]*\\bsrc=["']\\/bubbles-ai\\.js\\?v=([^"'&]+)[^"']*["']/i)?.[1]||'';
+  const remote=html.match(/<script\b[^>]*\bsrc=["']\/bubbles-ai\.js\?v=([^"'&]+)[^"']*["']/i)?.[1]||'';
   if(!remote||!siteRevision||remote===siteRevision)return false;
   if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
   if(keepChat)saveThread();
