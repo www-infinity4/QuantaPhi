@@ -292,6 +292,23 @@ public final class MainActivity extends Activity {
                 + "No XRecorder or DU Recorder installation is needed. The microphone voice stream is shared for recording.");
         captureInfo.setTextColor(Color.rgb(101, 83, 111));
         advancedCapture.addView(captureInfo);
+        // One-time Android permission only. Individual scripts still need owner confirmation
+        // in the shared Bubbles chat. No code executes just by enabling this permission.
+        Button termuxPermission = new Button(this);
+        termuxPermission.setText("Allow Termux commands · once");
+        termuxPermission.setOnClickListener(view -> {
+            if (!TermuxBridge.installed(this)) {
+                state.setText("Install the official Termux app first. No terminal was started.");
+                return;
+            }
+            if (TermuxBridge.permitted(this)) {
+                state.setText("Bubbles has Android's Termux command permission. In Termux set allow-external-apps=true, then ask Bubbles: check termux.");
+                return;
+            }
+            requestPermissions(new String[]{"com.termux.permission.RUN_COMMAND"}, 68);
+            state.setText("Android Termux command permission requested. Script execution still requires separate approval.");
+        });
+        advancedCapture.addView(termuxPermission);
         Button sound = new Button(this);
         sound.setText("Record sound");
         sound.setOnClickListener(v -> {
