@@ -13,6 +13,18 @@ let pending=false,lastUser='';
 function status(message){state.textContent=message}
 function money(value){return Number.isFinite(Number(value))?Number(value).toLocaleString(undefined,{maximumFractionDigits:1}):'—'}
 function accountTime(value){const number=Number(value);if(!Number.isFinite(number)||number<=0)return '';const t=new Date(number);return Number.isNaN(+t)?'':t.toLocaleString()}
+async function verifiedWalletToken(){
+ const bridge=global.QuantaCloudConnection;
+ if(!bridge)return '';
+ let timer;
+ // A hung wallet initialization cannot strand the wallet status or chat.
+ const read=async()=>{if(bridge.ready)await bridge.ready;return bridge.resolveDeviceToken?.();};
+ try{
+  return await Promise.race([read(),new Promise((_,reject)=>{
+   timer=setTimeout(()=>reject(Error('wallet_session_timeout')),10000);
+  })]);
+ }finally{clearTimeout(timer)}
+}
 async function api(url,token){
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
  try{
@@ -106,8 +118,7 @@ async function load(){
  pending=true;refresh.disabled=true;
  status('Checking your previously verified wallet…');
  try{
-  await global.QuantaCloudConnection?.ready;
-  const token=await global.QuantaCloudConnection?.resolveDeviceToken?.();
+  const token=await verifiedWalletToken();
   if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token||'')){
    balances.hidden=true;history.hidden=true;receipts.replaceChildren();
    status('Wallet not connected in this browser or Android app. Your Cloudflare records have not been erased. Use Find Cloud Tokens to restore an existing verified wallet.');
