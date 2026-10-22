@@ -67,13 +67,14 @@ test('a screenshot, model text or foreign app cannot authorize clicking, and pay
  assert.match(toolReply({status:'safe_click',label:'Play',card:'Infinity Radio'}),/not yet verified/);
 });
 test('control enumeration follows a visible, enabled DOM element and returns its actual receipt',async()=>{
+ const status={textContent:'Ready',hidden:false};
  let pressed=0;const button={
   tagName:'BUTTON',innerText:'Play',disabled:false,hidden:false,
   getAttribute(){return null},getClientRects(){return [{width:100}]},
-  click(){pressed++}
+  click(){pressed++;setTimeout(()=>{status.textContent="Build check passed"},20)}
  };
  const doc={
-  querySelectorAll(selector){return selector.includes('[role="button"]')?[button]:[]},
+  querySelectorAll(selector){return selector.includes('[role="button"]')?[button]:selector.includes('[role="status"]')?[status]:[]},
   querySelector(){return null}
  };
  const controls=safeCardControls(doc);
@@ -104,6 +105,8 @@ test('control enumeration follows a visible, enabled DOM element and returns its
   await workspace.open(findCard('Infinity Radio'),false);
   const receipt=await workspace.pressControl('Play');
   assert.equal(receipt.status,'safe_click');
+  assert.deepEqual(receipt.observedStatus,['Build check passed']);
+  assert.match(receipt.message,/visible response only/);
   assert.equal(pressed,1,'click must be issued on the real DOM control once');
   const missed=await workspace.pressControl('Delete all');
   assert.equal(missed.status,'manual_approval_required');
