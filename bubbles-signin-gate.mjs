@@ -50,13 +50,21 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     'Not connected. Sign in once and approve the requested permissions.';
   }
   gate.dataset.ready=String(summary.ready);
+  // Only the server's verified provider status can advance the login sequence.
+  const githubApproved=summary.providers.github.approved;
+  cards.github.hidden=githubApproved;
+  cards.cloudflare.hidden=!githubApproved||summary.providers.cloudflare.approved;
+  actions.cloudflare.disabled=!githubApproved||actions.cloudflare.disabled;
+  gate.hidden=summary.ready;
   if(summary.ready){
    setStatus('GitHub and Cloudflare are verified. You can open Bubbles chat.');
    // The production gate remains in preview until Cloudflare OAuth is live-tested
    // and automatic private backup creation/verification is implemented.
+  }else if(!githubApproved){
+   setStatus('First, sign in to GitHub and approve the requested permissions. Cloudflare sign-in follows.');
   }else if(!summary.providers.cloudflare.configured){
-   setStatus('GitHub sign-in is available. Cloudflare account authorization is awaiting service activation. Chat stays available during setup.');
-  }else setStatus('Approve both sign-ins to connect your accounts. Chat stays available during this pilot.');
+   setStatus('GitHub verified. Cloudflare sign-in is awaiting provider setup. Chat remains usable during this pilot.');
+  }else setStatus('GitHub verified. Next, sign in to Cloudflare and approve its project permissions.');
   return summary;
  };
  const refresh=async()=>{
@@ -81,11 +89,11 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    Object.values(labels).forEach(label=>{label.textContent='Could not check this account. Saved permissions were not changed.';});
    for(const button of Object.values(actions)){button.disabled=true;button.textContent='Check sign-ins again to retry';}
    return null;
-  } finally {loading=false;if(latest)for(const id of ['github','cloudflare'])actions[id].disabled=!latest.providers[id].configured||oauthInProgress;}
+  } finally {loading=false;if(latest)for(const id of ['github','cloudflare'])actions[id].disabled=!latest.providers[id].configured||oauthInProgress||(id==='cloudflare'&&!latest.providers.github.approved);}
  };
  for(const id of ['github','cloudflare']){
   actions[id].addEventListener('click',async()=>{
-   if(oauthInProgress||loading||!latest?.providers[id]?.configured)return;
+   if(oauthInProgress||loading||!latest?.providers[id]?.configured||(id==='cloudflare'&&!latest.providers.github.approved))return;
    oauthInProgress=true;
    for(const button of Object.values(actions))button.disabled=true;
    setStatus('Complete the '+(id==='github'?'GitHub':'Cloudflare')+' permission request in its official sign-in window.');
@@ -98,7 +106,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
       const summary=await refresh();
       if(summary?.ready&&chat)chat.scrollIntoView({behavior:'smooth',block:'start'});
      }
-     for(const provider of ['github','cloudflare'])actions[provider].disabled=!latest?.providers?.[provider]?.configured;
+     for(const provider of ['github','cloudflare'])actions[provider].disabled=!latest?.providers?.[provider]?.configured||(provider==='cloudflare'&&!latest?.providers?.github?.approved);
     });
    }catch(error){
     oauthInProgress=false;
