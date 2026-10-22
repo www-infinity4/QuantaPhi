@@ -450,20 +450,26 @@ async function runMcpRead(request,env,command,originalQuestion=''){
  return result.json();
 }
 async function runChatModel(env,model,options){
+ const usable=result=>{
+  const text=result?.response??result?.choices?.[0]?.message?.content;
+  const calls=result?.tool_calls??result?.choices?.[0]?.message?.tool_calls;
+  if((typeof text==='string'&&text.trim())||(Array.isArray(calls)&&calls.length))return result;
+  throw Error('empty_gpt_response');
+ };
  try{
-  const first=await env.AI.run(model,options);
+  const first=usable(await env.AI.run(model,options));
   return {...first,verifiedModel:model};
  }catch{
   try{
-   const retry=await env.AI.run(model,{...options,reasoning_effort:'medium',
-    max_tokens:Math.min(options.max_tokens||650,650)});
+   const retry=usable(await env.AI.run(model,{...options,reasoning_effort:'low',
+    max_tokens:Math.min(options.max_tokens||650,1600)}));
    return {...retry,verifiedModel:model};
   }catch{
    // Use the smaller, documented Cloudflare Workers AI model rather than
    // failing the entire conversation after one provider/model outage.
    const fallbackModel='@cf/openai/gpt-oss-20b';
-   const fallback=await env.AI.run(fallbackModel,{...options,reasoning_effort:'low',
-    max_tokens:Math.min(options.max_tokens||650,650)});
+   const fallback=usable(await env.AI.run(fallbackModel,{...options,reasoning_effort:'low',
+    max_tokens:Math.min(options.max_tokens||650,1600)}));
    return {...fallback,verifiedModel:fallbackModel};
   }
  }
