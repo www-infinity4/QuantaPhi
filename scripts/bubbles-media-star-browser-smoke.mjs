@@ -75,7 +75,7 @@ try{
  let radioLoads=0;
  await radio.route(origin+'/infinity-radio/',async route=>{
   radioLoads++;
-  await route.fulfill({contentType:'text/html',body:'<!doctype html><title>Radio lifecycle fixture</title><button id="play-btn" onclick="document.body.dataset.played=\'yes\'">Play</button>'});
+  await route.fulfill({contentType:'text/html',body:'<!doctype html><title>Radio lifecycle fixture</title><header id="site-header">Full website navigation</header><main class="player"><button id="play-btn" onclick="document.body.dataset.played=\'yes\'">Play</button></main><footer>Website footer</footer>'});
  });
  await radio.goto(origin+'/bubbles.html',{waitUntil:'domcontentloaded',timeout:25000});
  await radio.locator('.ba-launcher').first().click({timeout:15000});
@@ -86,6 +86,12 @@ try{
  const radioFrame=radio.frameLocator('iframe[title="Infinity Radio"]');
  await radioFrame.locator('body[data-played="yes"]').waitFor({state:'attached',timeout:5000});
  assert.equal(radioLoads,1,'chat must not reload the radio after clicking Play');
+ assert.equal(await radioFrame.locator('#site-header').isVisible(),false,'card hides site navigation');
+ assert.equal(await radioFrame.locator('#play-btn').isVisible(),true,'actual player remains visible');
+ await radio.locator('.ba-card-toolbar button').filter({hasText:'Open webpage'}).click();
+ const full=radio.frameLocator('iframe[title="Infinity Radio"]:not([hidden])');
+ await full.locator('#site-header').waitFor({state:'visible',timeout:15000});
+ assert.equal(radioLoads,2,'full webpage has a separate frame');
  results.push({probe:'radio_playback_survives_chat_reply',status:'passed',radioLoads,playControlClicked:true,audioVerified:false});
  await radio.close();
 
