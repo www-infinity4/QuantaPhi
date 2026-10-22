@@ -148,3 +148,24 @@ test('low storage creates no job directory and retains the Python environment',(
   assert.ok(fs.existsSync(path.join(f.bin,'python')));
  }finally{fs.rmSync(f.dir,{recursive:true,force:true})}
 });
+
+test('natural spoken and typed Python checks share a bounded diagnostic, not arbitrary commands',()=>{
+ const site=read('bubbles-ai.js');
+ const javaService=read(java+'BubblesService.java');
+ const line=site.split('\n').find(x=>x.includes('if(nativeOverlay && /^')&&x.includes('test(spoken)'));
+ assert.ok(line,'first-party Android WebView intercepts local diagnostic requests');
+ const m=line.match(/&& (\/\^.*\$\/i)\.test\(spoken\)/);
+ assert.ok(m,'the actual website interpreter must be executable as a regular expression');
+ const matches=Function('return '+m[1])();
+ for(const utterance of [
+  'test python in termux','please check python','Bubbles, verify termux python',
+  'run python test','is python working in termux?','does python work'
+ ]) assert.equal(matches.test(utterance),true,utterance);
+ for(const utterance of [
+  'do not run python','please install python packages',
+  'delete files from termux','run rm -rf /','execute arbitrary python',
+  'explain what a python test is'
+ ]) assert.equal(matches.test(utterance),false,utterance);
+ assert.match(javaService,/is\\s\+python/);
+ assert.match(javaService,/TermuxProbe/);
+});
