@@ -1,5 +1,5 @@
 import {cards,cardIntent} from './bubbles-card-catalog.mjs';
-import {cardControlDecision,safeCardControls,toolReply,cardStatusSnapshot,changedCardStatus} from './bubbles-action-driver.mjs';
+import {cardControlDecision,safeCardControls,toolReply,cardStatusSnapshot,changedCardStatus} from './bubbles-action-driver.mjs?v=20261022-observed-card1';
 import {compactCardDocument} from './bubbles-card-surface.mjs';
 export {cardIntent,cards};
 export class CardWorkspace{
