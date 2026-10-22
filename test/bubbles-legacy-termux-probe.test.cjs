@@ -166,6 +166,6 @@ test('natural spoken and typed Python checks share a bounded diagnostic, not arb
   'delete files from termux','run rm -rf /','execute arbitrary python',
   'explain what a python test is'
  ]) assert.equal(matches.test(utterance),false,utterance);
- assert.match(javaService,/is\\s\+python/);
+ assert.match(javaService,/does.*python.*work/);
  assert.match(javaService,/TermuxProbe/);
 });
