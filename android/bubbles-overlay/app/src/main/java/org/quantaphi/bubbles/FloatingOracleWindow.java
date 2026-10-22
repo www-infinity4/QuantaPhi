@@ -569,6 +569,13 @@ final class FloatingOracleWindow {
         return true;
     }
 
+    /** The website reply may exist even when the phone has no usable TTS voice. */
+    void showSpeechFailure(String explanation) {
+        if (root == null || status == null) return;
+        status.setText("Voice unavailable · " + explanation);
+        status.setVisibility(View.VISIBLE);
+    }
+
     private void showWebsite(boolean ready) {
         websiteReady = ready && root != null && website != null;
         if (!websiteReady) { robotOwnerConnected = false; lastCaptureSnapshot = ""; phoneCommandRunning = false; }
