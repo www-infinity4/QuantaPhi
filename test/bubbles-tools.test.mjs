@@ -177,13 +177,25 @@ test('transient Bubbles model failure gets one lower-cost retry with original co
  const resp=await worker.fetch(req,{AI:{run:async(model,options)=>{
   calls++;
   if(calls===1){firstPrompt=options.messages;assert.equal(options.reasoning_effort,'high');throw Error('temporary provider error');}
-  assert.equal(options.reasoning_effort,'medium');
-  assert.equal(options.max_tokens,650);
+  assert.equal(options.reasoning_effort,'low');
+  assert.equal(options.max_tokens,1600);
   assert.deepEqual(options.messages,firstPrompt);
   return {response:'The site needs a focused reproduction.'};
  }}});
  assert.equal(resp.status,200);assert.equal(calls,2);
  assert.match((await resp.json()).output,/focused reproduction/);
+});
+
+test('empty provider responses retry with answer space rather than becoming a gateway failure',async()=>{
+ let calls=0;
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Provide a small HTML source document in detail'})});
+ const res=await worker.fetch(req,{AI:{run:async(model,options)=>{
+  calls++;
+  if(calls===1)return {response:'   '};
+  assert.equal(options.reasoning_effort,'low');assert.equal(options.max_tokens,1600);
+  return {response:'<!doctype html><html lang="en"><title>Example</title><p>Hello</p></html>'};
+ }}});
+ assert.equal(res.status,200);assert.equal(calls,2);assert.match((await res.json()).output,/<!doctype html>/);
 });
 
 test('when the primary neural model fails twice, Bubbles answers using supported GPT OSS 20B and labels it',async()=>{
