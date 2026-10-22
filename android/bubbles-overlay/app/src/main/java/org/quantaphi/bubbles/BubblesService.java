@@ -269,6 +269,16 @@ public final class BubblesService extends Service {
      * The former image-only callback made the ChatGPT import button unusable.
      */
     boolean openFilePicker(android.webkit.ValueCallback<android.net.Uri[]> callback, boolean historyJson) {
+        // JSON/ZIP imports can exhaust memory on low-RAM phones during MP4 encoding.
+        // Keep the existing website history intact; retry after Stop & save.
+        if (historyJson && ScreenCaptureService.isRunning()) {
+            BrainNotes.prefs(this).edit().putString("last_error",
+                "Finish saving the current recording before importing history").apply();
+            Toast.makeText(this, "Stop and save the recording before importing history.",
+                Toast.LENGTH_LONG).show();
+            callback.onReceiveValue(null);
+            return true;
+        }
         if (!connected || imagePickerCallback != null) {
             callback.onReceiveValue(null); return true;
         }
