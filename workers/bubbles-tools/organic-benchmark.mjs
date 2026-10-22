@@ -74,9 +74,9 @@ export function calculateOrganicBenchmark(options={}){
 export function organicSpeechArgs(question=''){
  const q=String(question||'').toLowerCase();
  const word={zero:0,one:1,two:2,three:3,four:4,five:5,six:6};
- const flips=/\\b([0-6]|zero|one|two|three|four|five|six)\\s+(?:flipped?\\s+bits?|bit\\s+flips?|bits?\\s+of\\s+noise)\\b/.exec(q);
- const count=/\\b(\\d{1,5})\\s+trials?\\b/.exec(q);
- const seeded=/\\bseed\\s*(?:of|=|:)?\\s*(\\d{1,10})\\b/.exec(q);
+ const flips=/\b([0-6]|zero|one|two|three|four|five|six)\s+(?:flipped?\s+bits?|bit\s+flips?|bits?\s+of\s+noise)\b/.exec(q);
+ const count=/\b(\d{1,5})\s+trials?\b/.exec(q);
+ const seeded=/\bseed\s*(?:of|=|:)?\s*(\d{1,10})\b/.exec(q);
  return organicArgs({...(flips?{flippedBits:Object.hasOwn(word,flips[1])?word[flips[1]]:Number(flips[1])}:{}),
   ...(count?{trials:Number(count[1])}:{}),...(seeded?{seed:Number(seeded[1])}:{})});
 }
