@@ -28,7 +28,7 @@ export class CardWorkspace{
   if(intent.action==='suggest-words')return this.suggestWords();
   if(intent.action==='add-suggested-words')return this.addWords(this.lastSuggestedWords.join(', '));
   if(intent.action==='add-words')return this.addWords(intent.words);
-  if(intent.action==='edit'){const opened=await this.open(intent.card,false);if(this.active?.loaded)this.draftEdit();return opened;}
+  if(intent.action==='edit'){const opened=await this.open(intent.card,false,'page');if(this.active?.loaded)this.draftEdit();return opened;}
   return this.open(intent.card,intent.action==='play');
  }
  async pressControl(label){
@@ -78,7 +78,7 @@ export class CardWorkspace{
       // Iframe 'load' includes HTTP fallback pages and asset failures.
       // Local cards must report actual registered-script rendering, not just
       // navigation to an empty or broken host document.
-      if(card.mount){
+      if(card.mount&&mode==='card'){
        const report=win.BubblesCardDiagnostics?.();
        if(report?.id!==card.id||report?.loaded!==true)
         throw Error('Registered card did not finish loading: '+String(report?.errors?.at(-1)||win.document.getElementById('host-status')?.textContent||'no verified card host').slice(0,170));
@@ -102,7 +102,7 @@ export class CardWorkspace{
     };
     frame.addEventListener('load',onLoad);
    });
-   frame.src=card.url;this.frames.set(frameKey,record);
+   frame.src=mode==='page'?(card.pageUrl||card.url):card.url;this.frames.set(frameKey,record);
    if(this.frames.size>3){const [id,old]=this.frames.entries().next().value;this.pause(old);old.frame.remove();this.frames.delete(id);}
   }
   this.active=record;
