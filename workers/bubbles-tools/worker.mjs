@@ -69,7 +69,7 @@ export function isSourceDraftRequest(text){
 // instructions to browse nonexistent deployed assets.
 export function isSourceReviewRequest(text){
  const raw=String(text||'').trim();
- const marker=/\n(?:Excerpt|Source):\s*\n/i.exec(raw);
+ const marker=/(?:^|[\s.])(?:Excerpt|Source):\s*\n/i.exec(raw);
  if(!marker)return false;
  const instruction=raw.slice(0,marker.index).slice(0,700);
  return /^(?:please\s+)?(?:safety[- ]review\b|review this (?:full source|source|SOURCE EXCERPT ONLY)|review the (?:provided|attached) source)\b/i.test(instruction);
