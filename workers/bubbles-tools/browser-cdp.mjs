@@ -1,3 +1,4 @@
+import {browserReadExpression,browserClickExpression} from './browser-controls.mjs';
 // Bounded Chrome DevTools actions used by authenticated Bubbles conversation.
 // This is a real Browser Run CDP connection; no model-generated JavaScript is evaluated.
 let sequence=0;
@@ -28,15 +29,6 @@ async function connect(env,sessionId,targetId,callback){
  try{return await callback((method,params)=>command(socket,method,params))}
  finally{socket.close()}
 }
-const readExpression="(()=>{const text=(document.body?.innerText||'').slice(0,8500);return {title:String(document.title||'').slice(0,150),url:location.href,text}})()";
-const clickExpression=label=>"(()=>{const label="+JSON.stringify(label)+";"+
-"const key=s=>String(s||'').replace(/\\s+/g,' ').trim().toLowerCase();"+
-"const candidates=[...document.querySelectorAll('button,a[href],[role=button],summary')];"+
-"const found=candidates.find(el=>(key(el.getAttribute('aria-label'))===key(label)||key(el.innerText)===key(label))&&el.getClientRects().length);"+
-"if(!found)return {ok:false,error:'control_not_found'};"+
-"const full=[label,found.innerText,found.getAttribute('aria-label'),found.getAttribute('href')].join(' ');"+
-"if(/delete|remove|purchase|checkout|pay now|transfer|confirm|authorize|grant|permission|password|sign out|logout|submit payment|bid|order/i.test(full) || (found instanceof HTMLButtonElement && found.type==='submit'))return {ok:false,error:'owner_manual_approval_required'};"+
-"found.click();return {ok:true,element:String(found.tagName).toLowerCase(),label:key(found.innerText||found.getAttribute('aria-label')).slice(0,110)}})()";
 const typeExpression=(name,value)=>"(()=>{const name="+JSON.stringify(name)+",value="+JSON.stringify(value)+";"+
 "const key=s=>String(s||'').trim().toLowerCase();"+
 "const inputs=[...document.querySelectorAll('input:not([type=password]),textarea')];"+
@@ -76,7 +68,7 @@ export async function browserAction(env,{sessionId,action,targetId='',url='',lab
    const response=await send('Page.navigate',{url});return {ok:true,targetId:tab.id,navigationRequested:Boolean(response.frameId)};
   }
   const result=await send('Runtime.evaluate',{
-   expression:action==='read'?readExpression:action==='click'?clickExpression(label):typeExpression(field,value),
+   expression:action==='read'?browserReadExpression:action==='click'?browserClickExpression(label):typeExpression(field,value),
    returnByValue:true,awaitPromise:false
   });
   if(result.exceptionDetails||!result.result?.value)throw Error('browser_action_not_confirmed');
