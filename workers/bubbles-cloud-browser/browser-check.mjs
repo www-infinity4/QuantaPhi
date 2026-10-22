@@ -72,6 +72,34 @@ export async function signedBrowserCheck({claims,body,db,store,env,now=Date.now(
      context:String(item.context||'').slice(0,80),
      disabled:item.disabled===true})),
     reason:'verified_public_dom'};
+   // Optional harmless public CTA click. This never signs in, approves an
+   // account, touches wallet controls or uses a pre-authenticated browser.
+   const entry=observed.controls.filter(item=>item?.label==='Open Bubbles chat'&&item.disabled!==true);
+   publicPage.entryClick={dispatched:false,effectObserved:false,status:'not_attempted'};
+   if(entry.length===1){
+    try{
+     await requireConsent();
+     const click=await act(env,{sessionId,targetId:publicTab.id,action:'click',label:'Open Bubbles chat'});
+     if(click?.ok===true&&click.clickDispatched===true){
+      publicPage.entryClick={dispatched:true,effectObserved:false,status:'click_dispatched'};
+      for(let i=0;i<5;i++){
+       await requireConsent();
+       const afterPublic=await act(env,{sessionId,targetId:publicTab.id,action:'read'});
+       if(afterPublic?.ok!==false&&
+        (String(afterPublic.url||'')!==String(observed.url||'')||
+         String(afterPublic.text||'')!==String(observed.text||''))){
+        publicPage.entryClick={dispatched:true,effectObserved:true,status:'page_change_observed'};
+        break;
+       }
+       if(i<4)await pause(250*(i+1));
+      }
+     }else publicPage.entryClick={dispatched:false,effectObserved:false,status:'click_not_accepted'};
+    }catch(error){
+     publicPage.entryClick={dispatched:false,effectObserved:false,
+      status:error?.message==='consent_revoked'?'consent_revoked':'entry_click_unavailable'};
+    }
+   }else publicPage.entryClick={dispatched:false,effectObserved:false,
+    status:entry.length?'ambiguous_control':'control_not_found'};
   }catch(error){
    // Revocation is never ignored; the final approval check below rejects
    // all evidence if owner consent has expired or been revoked.
@@ -82,7 +110,7 @@ export async function signedBrowserCheck({claims,body,db,store,env,now=Date.now(
   result={ok:true,output:'Bubbles opened cloud Chrome, clicked Run browser check, and verified the changed page text.',
    publicPage,
    before:BEFORE,after:AFTER,url:CHECK_URL,
-   receipt:{tool:'browser.click_check',status:'complete',clickObserved:true,beforeObserved:before.text.includes(BEFORE),afterObserved:after.text.includes(AFTER),publicPageReadVerified:publicPage.readVerified,ownerPageVerified:false}};
+   receipt:{tool:'browser.click_check',status:'complete',clickObserved:true,beforeObserved:before.text.includes(BEFORE),afterObserved:after.text.includes(AFTER),publicPageReadVerified:publicPage.readVerified,publicChatClickDispatched:publicPage.entryClick?.dispatched===true,publicChatPageChangeObserved:publicPage.entryClick?.effectObserved===true,ownerPageVerified:false}};
  }catch(error){
   const known=['consent_revoked','session_not_created','target_not_created','page_state_not_observed','control_inventory_not_observed','click_not_accepted'];
   result={ok:false,error:known.includes(error.message)?error.message:'browser_check_failed',phase,
