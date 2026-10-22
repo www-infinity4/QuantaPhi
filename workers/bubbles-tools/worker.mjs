@@ -64,11 +64,21 @@ export function isSourceDraftRequest(text){
  return /^(?:please\s+)?(?:provide|write|draft|generate|compose)\b/i.test(String(text).trim())&&
   /\b(?:source (?:document|code)|file contents|content generation)\b/i.test(text);
 }
+// A code-review prompt can contain filenames and URLs as inert source data.
+// Review the supplied bytes; do not interpret the embedded links as user
+// instructions to browse nonexistent deployed assets.
+export function isSourceReviewRequest(text){
+ const raw=String(text||'').trim();
+ const marker=/(?:^|[\s.])(?:Excerpt|Source):\s*\n/i.exec(raw);
+ if(!marker)return false;
+ const instruction=raw.slice(0,marker.index).slice(0,700);
+ return /^(?:please\s+)?(?:safety[- ]review\b|review this (?:full source|source|SOURCE EXCERPT ONLY)|review the (?:provided|attached) source)\b/i.test(instruction);
+}
 export function chooseTool(text){
  const request=clean(text).toLowerCase();
  // Instructions inside a requested source document are content, not lookup
  // commands. Drafting a README that mentions GitHub must not read a repo.
- if(isSourceDraftRequest(text))return 'oracle.chat';
+ if(isSourceDraftRequest(text)||isSourceReviewRequest(text))return 'oracle.chat';
  if(/\b(?:organic\s+computation|associative\s+memory|memory\s+recall|pattern\s+recall)\b/i.test(request)&&/\b(?:benchmark|compare|simulate|simulation|test\s+recall|run\s+memory)\b/i.test(request))return 'organic.memory_benchmark';
  if(/\b(?:open|show|launch|pull\s+up|bring\s+up)\b/.test(request)&&/\b(?:resonator|resonance\s+calculator|resonance\s+engine)\b/.test(request))return 'resonance.open';
  if(/\b(?:resonance|resonator|resonant\s+frequency|lc\s+(?:tank|circuit|frequency))\b/.test(request)
@@ -449,7 +459,7 @@ async function execute(request,env,body){
    capabilities:{runtime:'cloudflare-workers-javascript',inferenceConnected:Boolean(env.AI),readAgent:true,linuxWorkspace:false,shell:false,python:false,ownerExecutorConfigured:Boolean(env.BRAIN),ownerExecutionVerified:false},
    receipt:{...receipt,tool:'runtime.capabilities',status:'complete',repositoryActionsVerified:false}});
  }
- if(body.mcp===true&&env.AI&&!isSourceDraftRequest(question)&&needsReadAgent(question)){
+ if(body.mcp===true&&env.AI&&!isSourceDraftRequest(question)&&!isSourceReviewRequest(question)&&needsReadAgent(question)){
   const evidence=await runReadAgent({question,input:clean(body.input,6000),
    plan:options=>planReadSteps(env.AI,options),
    invoke:async step=>{
@@ -556,7 +566,7 @@ async function execute(request,env,body){
  // The model may choose one read-only registered tool, but never chooses a
  // repository writer, phone action, permission grant or arbitrary URL.
  // Deterministic requests above still take the fastest direct route.
- if(body.mcp===true&&tool==='oracle.chat'&&!isSourceDraftRequest(question)){
+ if(body.mcp===true&&tool==='oracle.chat'&&!isSourceDraftRequest(question)&&!isSourceReviewRequest(question)){
   const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command,question),
    {location:body.location||body.context?.location||''});
   if(found&&found.receipt?.tool){
