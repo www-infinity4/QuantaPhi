@@ -1,0 +1,32 @@
+name: Bubbles autonomous Brain source and simulation checks
+on:
+  pull_request:
+    paths:
+      - 'workers/infinity-brain-clock/**'
+      - 'scripts/brain-writer.mjs'
+      - 'test/brain-autopilot-*.test.mjs'
+      - 'test/brain-clock.test.mjs'
+      - '.github/workflows/bubbles-autopilot-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  brain-autopilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate exact skill and Brain source
+        run: |
+          node --check workers/infinity-brain-clock/worker.js
+          node --check workers/infinity-brain-clock/autopilot-triage.mjs
+          node --check workers/infinity-brain-clock/agent-skills.mjs
+          node --check scripts/brain-writer.mjs
+      - name: Test staged triage, owner boundary, no-op recovery and Brain clock
+        run: |
+          node --test test/brain-autopilot-triage.test.mjs test/brain-autopilot-writer.test.mjs test/brain-clock.test.mjs test/brain-writer.test.mjs
+      - name: Validate deployable Cloudflare bundle without production writes
+        run: npx --yes wrangler@4 deploy --config workers/infinity-brain-clock/wrangler.toml --dry-run --outdir /tmp/bubbles-autopilot-dry-run
