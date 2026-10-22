@@ -5,7 +5,7 @@ on:
       - 'workers/bubbles-tools/**'
       - 'scripts/verify-bubbles-live-tools.mjs'
       - 'test/bubbles-live-tool-acceptance.test.mjs'
-      - 'test/bubbles-github-raw-fallback.test.mjs'
+      - 'test/bubbles-github-raw-fallback.test.mjs test/bubbles-browser-controls.test.mjs test/bubbles-cloud-browser.test.mjs'
       - '.github/workflows/deploy-bubbles-semantic-tools.yml'
   push:
     branches: [main]
@@ -32,6 +32,8 @@ jobs:
       - name: Test registered semantic tools and explicit receipts
         run: |
           node --check workers/bubbles-tools/worker.mjs
+          node --check workers/bubbles-tools/browser-controls.mjs
+          node --check bubbles-cloud-browser.mjs
           node --check workers/bubbles-tools/mcp.mjs
           node --check workers/bubbles-tools/organic-benchmark.mjs
           node --check workers/bubbles-tools/search.mjs
