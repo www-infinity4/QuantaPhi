@@ -21,7 +21,11 @@ function siteEvidence(site,commit){
 export function earnedWork(quant,commit){
  const attempt=quant?.attempts?.findLast(a=>['committed_unverified','deployed_verified'].includes(a.status)&&a.testsPassed===true&&SHA.test(a.commitSha||''));
  if(!attempt||commit?.sha!==attempt.commitSha||!commit.files?.length||commit.files.length>12||!REPO.test(quant.repository||''))return null;
+ const likelySite=commit.files.some(f=>f.status==='added'&&/(?:^|\/)index\.html$/.test(f.filename)&&f.additions>=20&&/<html\b/i.test(f.patch||''));
  const validFull=attempt.status==='deployed_verified'&&siteEvidence(quant.site,commit);
+ // Do not downgrade a finished website to a StarCoin merely because a search,
+ // HTML hash, or deployment receipt is missing. Such builds await review.
+ if(likelySite&&!validFull)return null;
  const meta={
   policy:'commit-rewards-v2',amount:1,quantId:quant.id,repository:quant.repository,commitSha:attempt.commitSha,
   commitUrl:'https://github.com/'+quant.repository+'/commit/'+attempt.commitSha,
@@ -29,7 +33,8 @@ export function earnedWork(quant,commit){
   kind:validFull?'full-site-build':'repair',
   sourceFiles:commit.files.slice(0,12).map(f=>({path:f.filename,status:f.status,additions:Number(f.additions)||0})),
   ...(validFull?{searchQuery:quant.site.searchQuery,searchReceiptId:quant.site.searchReceipt.id||null,
-    websiteUrl:quant.site.url,htmlPath:quant.site.htmlPath,htmlSha256:quant.site.htmlSha256}:{}),
+    websiteUrl:quant.site.url,htmlPath:quant.site.htmlPath,htmlSha256:quant.site.htmlSha256,
+    htmlSourceUrl:'https://github.com/'+quant.repository+'/blob/'+attempt.commitSha+'/'+quant.site.htmlPath}:{}),
  };
  return {...meta,asset:validFull?'INFINITY':'STARCOIN'};
 }
