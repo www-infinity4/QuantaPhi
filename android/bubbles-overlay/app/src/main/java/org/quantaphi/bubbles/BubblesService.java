@@ -316,6 +316,32 @@ public final class BubblesService extends Service {
     }
     private PlaybackAwareness playbackAwareness;
     private AudioRecord microphone;
+    private volatile boolean microphoneSilencedByAndroid = false;
+    // Android can silence a lower-priority AudioRecord without throwing or
+    // closing it (for example when another recorder app takes priority).
+    // One callback observes priority handoffs; RecordB shares this PCM stream.
+    private final AudioManager.AudioRecordingCallback recordingCallback =
+        new AudioManager.AudioRecordingCallback() {
+            @Override public void onRecordingConfigChanged(java.util.List<android.media.AudioRecordingConfiguration> configs) {
+                if (Build.VERSION.SDK_INT < 29 || microphone == null || !captureRunning) return;
+                boolean found = false, silenced = false;
+                int session = microphone.getAudioSessionId();
+                for (android.media.AudioRecordingConfiguration config : configs) {
+                    if (config.getClientAudioSessionId() == session) {
+                        found = true;
+                        silenced = config.isClientSilenced();
+                        break;
+                    }
+                }
+                if (!found || silenced == microphoneSilencedByAndroid) return;
+                microphoneSilencedByAndroid = silenced;
+                if (silenced) {
+                    state("microphone_conflict", .06f);
+                    BrainNotes.prefs(BubblesService.this).edit().putString("last_error",
+                        "Android temporarily silenced Bubbles microphone while another recorder has priority").apply();
+                } else if (connected && !muted) state("listening", .12f);
+            }
+        };
     private android.media.audiofx.AcousticEchoCanceler echoCanceler;
     private Thread audioThread;
     private Model voiceModel;
@@ -390,6 +416,10 @@ public final class BubblesService extends Service {
         notificationManager.createNotificationChannel(new NotificationChannel(
                     CAPTURE_APPROVAL_CHANNEL, "Bubbles capture approvals", NotificationManager.IMPORTANCE_HIGH));
         playbackAwareness = new PlaybackAwareness(this, main);
+        if (Build.VERSION.SDK_INT >= 29) {
+            try { ((AudioManager)getSystemService(AUDIO_SERVICE)).registerAudioRecordingCallback(recordingCallback, main); }
+            catch (RuntimeException ignored) { /* Recognition still works without callback. */ }
+        }
         reloadSpeechEngine();
     }
 
@@ -682,6 +712,7 @@ public final class BubblesService extends Service {
             final AudioRecord input = microphone;
             final Recognizer decoder = new Recognizer(voiceModel, 16000f);
             input.startRecording();
+            microphoneSilencedByAndroid = false;
             captureRunning = true;
             if (pendingAudioRecording) beginAudioRecording();
             state("listening", .12f);
@@ -694,6 +725,10 @@ public final class BubblesService extends Service {
                     while (captureRunning && connected && !muted) {
                         int count = input.read(samples, 0, samples.length);
                         if (count <= 0) throw new IllegalStateException("Microphone read failed: " + count);
+                        // Keep the single stream alive and continue saving
+                        // RecordB footage, but never hallucinate a voice turn
+                        // from a microphone Android explicitly silenced.
+                        if (microphoneSilencedByAndroid) continue;
                         try { if (!screenAudioPaused) screenAudio.append(samples, count); }
                         catch (Exception error) {
                             // Send at most ONE stop request: the audio loop runs every 100 ms.
@@ -893,6 +928,7 @@ public final class BubblesService extends Service {
         main.removeCallbacks(deliverVoiceTurn);
         turnBuffer.clear();
         captureRunning = false;
+        microphoneSilencedByAndroid = false;
         if (screenAudio.active()) startService(new Intent(this, ScreenCaptureService.class)
             .setAction(ScreenCaptureService.STOP));
         saveAudio();
@@ -1645,6 +1681,10 @@ public final class BubblesService extends Service {
         pendingWebsiteSpeech.clear();
         connected=false;muted=true;resumeAfterLiveCall=false;
         if (playbackAwareness != null) { playbackAwareness.close(); playbackAwareness = null; }
+        if (Build.VERSION.SDK_INT >= 29) {
+            try { ((AudioManager)getSystemService(AUDIO_SERVICE)).unregisterAudioRecordingCallback(recordingCallback); }
+            catch (RuntimeException ignored) {}
+        }
         main.removeCallbacksAndMessages(null);
         stopRecognition();
         if (voiceModel != null && audioThread == null) {
