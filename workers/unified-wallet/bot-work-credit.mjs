@@ -37,8 +37,8 @@ export async function payBotWork(env,input){
      check.searchReceiptVerified!==true||typeof check.searchQuery!=='string'||
      check.searchQuery.trim().length<4||check.searchQuery.length>300||
      !/^[a-f0-9]{64}$/.test(check.htmlSha256||'')||
-     !/^(?:[\\w.-]+\\/)*index\\.html$/.test(check.htmlPath||'')||
-     !/^https:\\/\\/(?:[\\w.-]+\\.)?quantaphi\\.org\\/|^https:\\/\\/www-infinity4\\.github\\.io\\//.test(check.websiteUrl||''))
+     !/^(?:[\w.-]+\/)*index\.html$/.test(check.htmlPath||'')||
+     !/^https:\/\/(?:[\w.-]+\.)?quantaphi\.org\/|^https:\/\/www-infinity4\.github\.io\//.test(check.websiteUrl||''))
      throw Error('verified_site_build_required');
   // Keep the original rewards ledger and its immutable QUANT/STARCOIN check.
   // Site-build awards have an independent D1 table, protecting old histories.
