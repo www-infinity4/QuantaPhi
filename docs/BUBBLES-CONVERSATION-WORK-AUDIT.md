@@ -16,7 +16,7 @@ All results stay behind the existing owner authorization. No private history is 
 
 ## Next autonomous stage
 
-1. Continue paging the owner archive; reconcile candidates across all pages and with existing jobs. Retrieve full messages through `sessions-get` when a short excerpt is insufficient. Later ChatGPT/Gemini history requires a separately approved secure import; it is **not** silently available to this endpoint.
+1. Continue paging the owner archive; reconcile candidates across all pages and with existing jobs. Retrieve full messages through `sessions-get` when a short excerpt is insufficient. Bubbles already has an explicit in-browser ChatGPT/Gemini history importer into private BubblesMemory; **that is a separate store** and its imported records are not automatically present in the Brain `bubbles_messages` archive. Any bridge must be explicitly owner-authorized, idempotent, source-attributed, and account-isolated.
 2. Inspect each proposed repository via **existing owner-authorized GitHub tools**, reading exact files, READMEs, open and merged PRs, issues, workflow runs, and last successful deployments. Discover ambiguities rather than choosing an arbitrary repository.
 3. Compare source to the current owner requirement; resolve later corrections and negative constraints, and never promote an example, an assistant answer, or a quoted instruction into an authorization.
 4. Deduplicate planned work against completed, blocked, or in-flight tickets. Offer eligible plans through existing owner Run All approval; no automatic self-approval or expansion of scopes.
