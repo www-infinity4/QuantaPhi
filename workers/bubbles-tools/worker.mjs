@@ -617,7 +617,8 @@ export async function finishSearchReply(original,summarize,timeoutMs=20000,userR
   if(!summarized.ok)return fallback();
   const data=await summarized.clone().json();
   const output=String(data.output||'').trim();
-  if(data.answerStatus==='partial'||!output||hasModelToolLeak(output)||hasUnfinishedResearchDraft(output)||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output)||(/\b(?:research|explain|synthesi[sz]e)\b/i.test(userRequest)&&/^Live results from /i.test(output)))return fallback();
+  if(data.answerStatus==='partial'||!output||hasModelToolLeak(output)||hasUnfinishedResearchDraft(output)||
+   (/\b(?:research|explain|analy[sz]e|synthesi[sz]e|compare)\b/i.test(userRequest)&&output.length<100)||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output)||(/\b(?:research|explain|synthesi[sz]e)\b/i.test(userRequest)&&/^Live results from /i.test(output)))return fallback();
   return summarized;
  }catch{return fallback()}
  finally{clearTimeout(timer)}
