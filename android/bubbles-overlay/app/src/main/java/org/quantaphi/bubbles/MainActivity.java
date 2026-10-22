@@ -43,6 +43,9 @@ public final class MainActivity extends Activity {
 
     @Override public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // A killed recording/export service may leave a valid MP4 outside Gallery.
+        // Scan and restore only when no screen recording is running.
+        CaptureRecovery.recover(this);
         LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
         layout.setPadding(38, 48, 38, 28);
@@ -196,6 +199,7 @@ public final class MainActivity extends Activity {
                 + "\nLast screen result: " + BrainNotes.prefs(this).getString("screen_state", "No screen read yet")
                 + "\nUI job: " + BrainNotes.prefs(this).getString("workflow_receipt", "No UI job started")
                 + "\nCapture: " + BrainNotes.prefs(this).getString("capture_state", "None")
+                + "\nRecovered recordings: " + BrainNotes.prefs(this).getString("capture_recovery_state", "No recovery needed")
                 + "\nSound: " + BrainNotes.prefs(this).getString("audio_state", "None")
                 + "\nBackground phone audio: " + BrainNotes.prefs(this).getString("phone_media_state", "Not enabled")
                 + "\nLast phone audio heard: " + BrainNotes.prefs(this).getString("phone_media_last_received", "Nothing transcribed")

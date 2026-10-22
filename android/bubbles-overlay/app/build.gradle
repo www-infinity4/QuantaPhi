@@ -9,8 +9,8 @@ android {
         applicationId 'org.quantaphi.bubbles'
         minSdk 26
         targetSdk 35
-        versionCode 56
-        versionName '0.56.0'
+        versionCode 58
+        versionName '0.58.0'
     }
     // Preview 5 is a new installable package because past preview-4 builds had
     // inconsistent certificates. CI supplies a cached preview-only keystore;

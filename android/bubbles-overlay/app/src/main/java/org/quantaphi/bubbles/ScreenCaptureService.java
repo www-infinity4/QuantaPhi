@@ -188,6 +188,10 @@ public final class ScreenCaptureService extends Service {
                 width = Math.max(2, ((int) (width * scale) / 2) * 2);
                 height = Math.max(2, ((int) (height * scale) / 2) * 2);
                 file = new File(directory, "screen-" + System.currentTimeMillis() + ".mp4");
+                // Persist the private original before starting. A process crash after
+                // stop must never make the pending footage undiscoverable.
+                BrainNotes.prefs(this).edit().putString("capture_path", file.getAbsolutePath())
+                    .putString("capture_type", "video/mp4").remove("capture_uri").apply();
                 // A screen recording is one MP4 with microphone sound, not a
                 // silent MP4 plus a separate WAV hidden in Music. Android owns
                 // the screen permission; microphone permission is checked here.
@@ -255,7 +259,8 @@ public final class ScreenCaptureService extends Service {
                 android.net.Uri saved = CapturePublisher.publish(this, completed, type);
                 if (audio != null && soundWarning.isEmpty()) audio.delete();
                 String library = type.startsWith("video/") ? "Movies" : "Pictures";
-                BrainNotes.prefs(this).edit().putString("capture_uri", saved.toString()).apply();
+                BrainNotes.prefs(this).edit().putString("capture_uri", saved.toString())
+                    .putString("capture_published_path", completed.getAbsolutePath()).apply();
                 outcome = "Saved " + completed.getName() + " to " + library + "/Bubbles" + soundWarning;
             } catch (Exception error) {
                 outcome = "Gallery export failed (" + error.getClass().getSimpleName()
