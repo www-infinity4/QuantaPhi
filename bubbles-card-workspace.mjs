@@ -1,5 +1,6 @@
 import {cards,cardIntent} from './bubbles-card-catalog.mjs';
 import {cardControlDecision,safeCardControls,toolReply} from './bubbles-action-driver.mjs';
+import {compactCardDocument} from './bubbles-card-surface.mjs';
 export {cardIntent,cards};
 export class CardWorkspace{
  constructor(container,onEvidence=()=>{},onClose=()=>{},onEdit=()=>{}){
@@ -8,7 +9,7 @@ export class CardWorkspace{
   this.stage=document.createElement('div');this.actions=document.createElement('div');this.actions.className='ba-card-toolbar';
   this.escape=event=>{if(event.key==='Escape'&&!this.container.hidden){event.preventDefault();this.close();}};
   container.addEventListener('keydown',this.escape);document.addEventListener?.('keydown',this.escape);
-  for(const [label,action] of [['Back to chat',()=>this.close()],['Play',()=>this.play()],['Diagnose card',()=>this.diagnose()],['Draft edit',()=>this.draftEdit()],['Close card',()=>this.close()]]){
+  for(const [label,action] of [['Back to chat',()=>this.close()],['Play',()=>this.play()],['Open webpage',()=>this.open(this.active?.card,false,'page')],['Diagnose card',()=>this.diagnose()],['Draft edit',()=>this.draftEdit()],['Close card',()=>this.close()]]){
    const button=document.createElement('button');button.type='button';button.className='ba-miniaction';button.textContent=label;button.onclick=action;this.actions.append(button);
   }
   container.className='ba-card-workspace';container.hidden=true;container.append(this.heading,this.status,this.actions,this.stage);
@@ -54,13 +55,15 @@ export class CardWorkspace{
  }
  pause(record){if(record)for(const media of record.media)try{media.pause();}catch{}}
  close(){this.pause(this.active);this.active=null;this.container.hidden=true;this.onEvidence(null);this.onClose();}
- async open(card,play){
+ async open(card,play,mode='card'){
+  if(!card)return {message:'Choose a card first.'};
+  const frameKey=card.id+':'+mode;
   this.pause(this.active);this.stage.hidden=false;this.container.querySelector('.ba-card-catalog')?.remove();this.container.hidden=false;this.heading.textContent=card.title;this.status.textContent='Opening '+card.title+'…';
-  let record=this.frames.get(card.id);
+  let record=this.frames.get(frameKey);
   if(!record){
    const frame=document.createElement('iframe');frame.title=card.title;frame.allow='autoplay; fullscreen';
    frame.setAttribute('sandbox','allow-scripts allow-same-origin allow-forms allow-popups');
-   record={card,frame,media:new Set(),errors:[],loaded:false};
+   record={card,mode,frame,media:new Set(),errors:[],loaded:false};
    record.ready=new Promise((resolve,reject)=>{
     let opaqueLoadSeen=false;
     const timer=setTimeout(()=>reject(Error('Card loading timed out')),20000);
@@ -71,6 +74,7 @@ export class CardWorkspace{
       // SecurityError; a second opaque/cross-origin load fails closed.
       if(frame.contentWindow.location.origin!==location.origin)throw Error('Card left the suite origin');
       const win=frame.contentWindow;
+      if(mode==='card'&&!card.mount)compactCardDocument(win.document,card);
       // Iframe 'load' includes HTTP fallback pages and asset failures.
       // Local cards must report actual registered-script rendering, not just
       // navigation to an empty or broken host document.
@@ -98,7 +102,7 @@ export class CardWorkspace{
     };
     frame.addEventListener('load',onLoad);
    });
-   frame.src=card.url;this.frames.set(card.id,record);
+   frame.src=card.url;this.frames.set(frameKey,record);
    if(this.frames.size>3){const [id,old]=this.frames.entries().next().value;this.pause(old);old.frame.remove();this.frames.delete(id);}
   }
   this.active=record;
@@ -108,7 +112,7 @@ export class CardWorkspace{
   try{
    await record.ready;if(this.active!==record)return {message:'Card selection changed.'};
    this.onEvidence({...this.getEvidence(record),loaded:true});
-   this.status.textContent=card.title+' is open in chat.'+
+   this.status.textContent=card.title+(mode==='page'?' webpage is open for inspection.':' card is open in chat.')+
     (['media-star','fred-spaces'].includes(card.id)?
      ' Fred’s Space is linked to the original X replay. Tap ▶ in the card to listen; audio has not been confirmed.':'');
    if(play)return this.play();
@@ -116,7 +120,7 @@ export class CardWorkspace{
   }catch(error){
    record.errors.push(String(error.message||error).slice(0,180));
    // Failed iframe loads must be retryable on the next owner command.
-   this.pause(record);record.frame.remove();this.frames.delete(card.id);
+   this.pause(record);record.frame.remove();this.frames.delete(frameKey);
    this.status.textContent='Card could not open: '+String(error.message||error).slice(0,180);
    this.onEvidence({cardId:card.id,title:card.title,repository:card.repository,loaded:false,errors:[...record.errors]});
    return {message:this.status.textContent};
