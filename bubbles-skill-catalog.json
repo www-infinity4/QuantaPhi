@@ -60,6 +60,15 @@
       "origin": "Bubbles",
       "state": "implemented_conditional",
       "requires": "Active five-day grant, verified Unified Wallet, approved scoped job"
+    },
+    {
+      "id": "bubbles:organic-computation",
+      "label": "Organic Computation research and simulation",
+      "description": "Research DARPA O-Circuit goals and source-backed biological-computation concepts. A reproducible Python pattern-memory benchmark with simple baselines exists in the Organic-Computation repository; no live Bubbles executor is connected yet.",
+      "origin": "Bubbles / Organic-Computation",
+      "state": "source_ready_not_deployed",
+      "requires": "Verified read-only Bubbles sandbox adapter to run Python; no neural-tissue or energy claim",
+      "sourceUrl": "https://github.com/www-infinity4/Organic-Computation"
     }
   ],
   "referenceSkills": [
