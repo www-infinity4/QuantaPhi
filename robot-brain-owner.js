@@ -116,7 +116,7 @@ let resolveReady;
 const ready=new Promise(resolve=>{resolveReady=resolve});
 window.QuantaBrainOwner={ready,verify,walletIdentity,diagnostics:()=>({
  bridge:check.bridge,credential:check.credential,server:check.server,reason:check.reason,
- owner:document?.getElementById?.('robotBrainOwner')?.dataset?.state==='verified'?'verified':'not-verified'
+ owner:typeof document!=='undefined'&&document.getElementById?.('robotBrainOwner')?.dataset?.state==='verified'?'verified':'not-verified'
 })};
 
 if(typeof document==='undefined')return;
