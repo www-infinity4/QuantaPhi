@@ -82,6 +82,9 @@ export function chooseTool(text){
  if(pageUrl&&!/^https?:\/\/(?:www\.)?github\.com(?:\/|$)/i.test(pageUrl)&&
     /\b(?:read|inspect|review|fetch|summarize|explain|describe|look\s+at)\b/i.test(request))
   return 'web.read_page';
+ if(/\b(?:show|read|inspect|check|review|explain|list|fetch)\b.{0,120}\bcommits?\b/i.test(request)&&
+    /\b(?:github|repository|repo|quantaphi)\b|\b[a-z0-9_.-]+\/[a-z0-9_.-]+\b/i.test(request))
+   return 'github.read_commit';
  const lookup=lookupKind(text);if(lookup)return lookup;
  if(/\b(?:read|open|show|inspect|explain|review|fetch|summarize)\b.{0,120}\b(?:readme(?:\.md)?|[a-z0-9_./-]+\.(?:md|markdown|txt|html|css|js|json))\b/i.test(request)
   &&/\b(?:github|repo|repository|quantaphi)\b|\b[a-z0-9_.-]+\/[a-z0-9_.-]+\b/i.test(request))return 'github.read_file';
@@ -319,6 +322,45 @@ export async function readGithubFile(request,body,receipt,fetcher=fetch){
  }
 }
 
+// Source-only commit reader for Bubbles and Quant AI. This NEVER mints tokens.
+export async function readGithubCommit(request,body,receipt,fetcher=fetch){
+ const question=clean(body?.request||'',2500);
+ const named=question.match(/\b([a-z0-9][a-z0-9_.-]{0,38}\/[a-z0-9_][a-z0-9_.-]{0,99})\b/i);
+ const repository=String(body?.repository||named?.[1]||(/\bquantaphi\b/i.test(question)?'www-infinity4/QuantaPhi':'')).trim();
+ const sha=String(body?.commitSha||question.match(/\b[a-f0-9]{40}\b/i)?.[0]||'').toLowerCase();
+ const fail=(detail,status='failed')=>response(request,{ok:true,output:'GitHub commit evidence unavailable: '+detail+'. No wallet credit or repository change occurred.',
+  receipt:{...receipt,tool:'github.read_commit',status,sourceReadVerified:false,repositoryActionsVerified:false,walletCredited:false}});
+ if(!/^[a-z0-9][a-z0-9_.-]{0,38}\/[a-z0-9_][a-z0-9_.-]{0,99}$/i.test(repository))return fail('a public owner/repository is required','needs_input');
+ if(sha&&!/^[a-f0-9]{40}$/.test(sha))return fail('invalid Git commit SHA','invalid_input');
+ try{
+  const get=async url=>{
+   const r=await fetcher(url,{headers:{Accept:'application/vnd.github+json','User-Agent':'QuantaPhi-Bubbles-Commit-Reader'},redirect:'manual',signal:AbortSignal.timeout(12000)});
+   if(!r.ok)throw Error('github_http_'+r.status);
+   return r.json();
+  };
+  const endpoint='https://api.github.com/repos/'+repository+'/commits';
+  let exact=sha;
+  if(!exact){
+   const latest=await get(endpoint+'?per_page=1');
+   if(!Array.isArray(latest)||!/^[a-f0-9]{40}$/.test(latest[0]?.sha||''))throw Error('latest_commit_unavailable');
+   exact=latest[0].sha;
+  }
+  const doc=await get(endpoint+'/'+exact);
+  if(doc?.sha!==exact||!Array.isArray(doc.files))throw Error('commit_receipt_invalid');
+  const files=doc.files.slice(0,60).map(x=>({path:clean(x.filename,220),status:clean(x.status,30),additions:Number(x.additions)||0,deletions:Number(x.deletions)||0}));
+  const siteCandidate=files.some(x=>x.status==='added'&&/(?:^|\/)index\.html$/i.test(x.path));
+  const commitUrl='https://github.com/'+repository+'/commit/'+exact;
+  const title=clean(String(doc.commit?.message||'').split('\n')[0],180);
+  const output='GitHub verified commit '+exact.slice(0,12)+' in '+repository+': '+title+'. Changed files: '+files.slice(0,9).map(x=>x.path+' ('+x.status+')').join(', ')+
+   '. '+(siteCandidate?'An Infinity site token needs separate search, published HTML and verified build receipts. ':
+   'A repair StarCoin needs an authenticated Robot Brain job and wallet ledger receipt. ')+
+   'This read did not pay a token. Commit: '+commitUrl;
+  return response(request,{ok:true,output,title,repository,commitSha:exact,sourceUrl:commitUrl,files,
+   candidateAsset:siteCandidate?'INFINITY':'STARCOIN',rewardStatus:'not_verified_paid',walletCredited:false,
+   receipt:{...receipt,tool:'github.read_commit',status:'complete',provider:'github-rest-public',sourceReadVerified:true,repositoryActionsVerified:false,walletCredited:false}});
+ }catch(error){return fail(clean(error?.message,110))}
+}
+
 // Safe, bounded reader for public QuantaPhi HTML. This does not load client
 // scripts, act as a cloud browser, or fetch external hosts with owner tokens.
 export async function readPublicPage(request,body,receipt,fetcher=fetch){
@@ -423,6 +465,7 @@ async function execute(request,env,body){
   return response(request,{ok:true,output:'I could not verify all the steps needed for this request. No completed multi-step task is claimed.',answerStatus:'partial',receipt:{...receipt,tool:'agent.read_sequence',status:'failed',steps:[],repositoryActionsVerified:false}});
  }
  if(/^(?:show|list|check|what are)\b/i.test(question)&&/\bmcp\b/i.test(question)&&/\btools?\b/i.test(question))return response(request,{ok:true,output:'MCP tools available through Bubbles: '+mcpTools.map(t=>t.name).join(', ')+'. These are read-only. Robot Brain owner jobs and GitHub edits still require their separately verified authorization.',receipt:{...receipt,tool:'mcp.catalog',status:'complete',repositoryActionsVerified:false}});
+ if(tool==='github.read_commit')return readGithubCommit(request,body,receipt);
  if(tool==='resonance.open')return response(request,{ok:true,output:'Open the Infinity Resonance Calculator v3 at '+CALCULATOR_UI+'. Say “calculate resonance at 10 microhenries and 22 picofarads” to run the mathematical tool here.',url:CALCULATOR_UI,receipt:{...receipt,status:'complete',calculatorOpened:false}});
  if(tool==='organic.memory_benchmark'){
   try{
