@@ -1,6 +1,6 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 import {readFileSync} from 'node:fs';
-import {rewardSchema,creditStatements} from '../workers/unified-wallet/bot-work-credit.mjs';
+import {rewardSchema,creditStatements,siteRewardSchema,siteCreditStatements} from '../workers/unified-wallet/bot-work-credit.mjs';
 import {earnedWork} from '../workers/infinity-brain-clock/bot-work-policy.mjs';
 import walletWorker from '../workers/unified-wallet/worker.js';
 test('public callers cannot invoke internal bot credits',async()=>{
@@ -21,11 +21,11 @@ print(json.dumps(dict(stars=db.execute('SELECT star_coins FROM accounts').fetcho
  const r=JSON.parse(execFileSync('python3',['-c',python],{input:JSON.stringify({schema:rewardSchema,plan}),encoding:'utf8'}));assert.equal(r.rewards,1);assert.equal(r.stars,asset==='STARCOIN'?11:10);assert.equal(r.quants,asset==='QUANT'?1:0);
  }
 });
-test('blocked work cannot earn; one added full index earns one StarCoin',()=>{
+test('blocked work cannot earn; an ordinary code repair earns a StarCoin while a site build awaits verified deployment',()=>{
  const sha='a'.repeat(40),q={id:'job-quant:test',repository:'www-infinity4/QuantaPhi',attempts:[{status:'committed_unverified',testsPassed:true,commitSha:sha}]};
- assert.equal(earnedWork(q,{sha,files:[{filename:'app.js',status:'modified',additions:3}]}).asset,'QUANT');
- assert.equal(earnedWork(q,{sha,files:[{filename:'new/index.html',status:'added',additions:50,patch:'+<html><title>New page</title><body>Real content</body></html>'}]}).asset,'STARCOIN');
- assert.equal(earnedWork(q,{sha,files:[{filename:'new/index.html',status:'added',additions:50,patch:'+placeholder'}]}).asset,'QUANT');
+ assert.equal(earnedWork(q,{sha,files:[{filename:'app.js',status:'modified',additions:3}]}).asset,'STARCOIN');
+ assert.equal(earnedWork(q,{sha,files:[{filename:'new/index.html',status:'added',additions:50,patch:'+<html><title>New page</title><body>Real content</body></html>'}]}),null);
+ assert.equal(earnedWork(q,{sha,files:[{filename:'new/index.html',status:'added',additions:50,patch:'+placeholder'}]}).asset,'STARCOIN');
  assert.equal(earnedWork({...q,attempts:[{status:'blocked',testsPassed:false}]},{sha,files:[{}]}),null);
 });
 
@@ -49,4 +49,38 @@ print(json.dumps(dict(mints=len(mints),ledgers=len(ledger),rewards=db.execute('S
 `;
  const result=JSON.parse(execFileSync('python3',['-c',python],{input:JSON.stringify({quantSchema:readFileSync('quant-transfer-schema.sql','utf8'),rewardSchema,plan}),encoding:'utf8'}));
  assert.deepEqual(result,{mints:1,ledgers:1,rewards:1,wallet:'existing-wallet',linked:true,balance:1});
+});
+
+
+test('verified deployed site mints an Infinity proposal with a search and immutable HTML reference',()=>{
+ const sha='b'.repeat(40),file='sites/haunted/index.html',commit={sha,files:[{filename:file,status:'added',additions:77,patch:'+<html><title>Haunted Arcade</title><body>Full site</body></html>'}]};
+ const job={id:'job-quant:site-build',repository:'www-infinity4/QuantaPhi',attempts:[{status:'deployed_verified',testsPassed:true,commitSha:sha}],
+  site:{url:'https://quantaphi.org/sites/haunted/',publishedVerified:true,searchQuery:'haunted arcade original website',
+   searchReceipt:{verified:true,id:'search-receipt-20'},htmlSha256:'c'.repeat(64),htmlPath:file}};
+ const verified=earnedWork(job,commit);
+ assert.equal(verified.asset,'INFINITY');
+ assert.equal(verified.kind,'full-site-build');
+ assert.equal(verified.searchQuery,job.site.searchQuery);
+ assert.match(verified.htmlSourceUrl,/github.com\/www-infinity4\/QuantaPhi\/blob\/b{40}\/sites\/haunted\/index.html/);
+ assert.equal(earnedWork({...job,site:{...job.site,searchReceipt:{verified:false}}},commit),null);
+ assert.equal(earnedWork({...job,attempts:[{status:'committed_unverified',testsPassed:true,commitSha:sha}]},commit),null);
+});
+test('Infinity website credit is idempotent in the existing D1 wallet schema',()=>{
+ const id='botwork_verified_site',userId='owner',plan=siteCreditStatements({id,userId,metadata:JSON.stringify({
+  repository:'www-infinity4/QuantaPhi',commitSha:'a'.repeat(40),websiteUrl:'https://quantaphi.org/sites/haunted/',
+  htmlSha256:'b'.repeat(64),searchQuery:'haunted arcade'}),now:123});
+ const python=`import sqlite3,json,sys
+p=json.loads(sys.stdin.read());db=sqlite3.connect(':memory:')
+db.executescript("CREATE TABLE unified_wallet_state(user_id TEXT PRIMARY KEY,infinity_balance INTEGER NOT NULL DEFAULT 0,created_at INTEGER,updated_at INTEGER);CREATE TABLE unified_token_records(token_id TEXT PRIMARY KEY,user_id TEXT,token_type TEXT,source TEXT,data_json TEXT,provenance_hash TEXT UNIQUE,created_at INTEGER);CREATE TABLE unified_wallet_events(event_id TEXT PRIMARY KEY,idempotency_key TEXT UNIQUE,user_id TEXT,asset_code TEXT,event_type TEXT,amount INTEGER,balance_after INTEGER,reference_id TEXT,metadata_json TEXT,created_at INTEGER);")
+db.execute(p['schema'])
+for _ in range(3):
+ with db:
+  for s in p['plan']:db.execute(s['sql'],s['params'])
+print(json.dumps(dict(balance=db.execute("SELECT infinity_balance FROM unified_wallet_state WHERE user_id='owner'").fetchone()[0],
+ rewards=db.execute('SELECT COUNT(*) FROM bot_site_rewards WHERE paid=1').fetchone()[0],
+ tokens=db.execute("SELECT COUNT(*) FROM unified_token_records WHERE token_type='INFINITY_SEARCH'").fetchone()[0],
+ events=db.execute("SELECT COUNT(*) FROM unified_wallet_events WHERE asset_code='INFINITY'").fetchone()[0])) )
+`;
+ const got=JSON.parse(execFileSync('python3',['-c',python],{input:JSON.stringify({schema:siteRewardSchema,plan}),encoding:'utf8'}));
+ assert.deepEqual(got,{balance:1,rewards:1,tokens:1,events:1});
 });

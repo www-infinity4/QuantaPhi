@@ -61,11 +61,12 @@ export class BrainClock extends DurableObject{
   if(quant.payout?.status==='paid')return quant.payout;
   const recipient=await this.ctx.storage.get('bot-work-recipient');
   if(!recipient)return {status:'awaiting_wallet_connection'};
+  if(quant.userId&&quant.userId!==recipient.userId)return {status:'awaiting_verified_recipient'};
   const attempt=quant.attempts?.findLast(a=>['committed_unverified','deployed_verified'].includes(a.status)&&a.testsPassed===true&&/^[a-f0-9]{40}$/.test(a.commitSha||''));
   if(!attempt)return {status:'not_earned'};
   const response=await fetch('https://api.github.com/repos/'+quant.repository+'/commits/'+attempt.commitSha,{headers:{Accept:'application/vnd.github+json','User-Agent':'Infinity-Bot-Earnings',...(verificationToken?{Authorization:'Bearer '+verificationToken}:{})},signal:AbortSignal.timeout(15000)});
   if(!response.ok)throw Error('earnings_commit_read_failed');
-  const reward=earnedWork(quant,await response.json());if(!reward)return {status:'not_earned'};
+  const reward=earnedWork(quant,await response.json());if(!reward)return {status:'awaiting_commit_or_site_evidence'};
   const paid=await this.env.BOT_WALLET.fetch('https://wallet.internal/internal/bot-work-credit',{method:'POST',headers:{'Content-Type':'application/json','X-Bot-Work-Key':this.env.BOT_WORK_SECRET},body:JSON.stringify({...reward,userId:recipient.userId}),signal:AbortSignal.timeout(15000)});
   const receipt=await paid.json();if(!paid.ok||!receipt.ok)throw Error(receipt.error||'earnings_wallet_rejected');
   const payout={status:'paid',...receipt,when:new Date().toISOString()};await this.ctx.storage.put(quant.id,{...quant,payout});return payout;
@@ -111,7 +112,7 @@ export class BrainClock extends DurableObject{
    if(retry?.retryAfter>Date.now())counts.failedRetry++;
    if(recent.length<12)recent.push({quantId:quant.id,repository:quant.repository,status:quant.payout?.status||(!valid?'not_earned':recipient?'awaiting_settlement':'awaiting_wallet_connection'),asset:quant.payout?.asset||null,retryError:retry?.error||null});
   }
-  return {ok:true,recipientConnected:!!recipient,policy:{repair:'1 QUANT',completePage:'1 STARCOIN'},counts,recent,lastError:await this.ctx.storage.get('bot-work-credit-error')||null};
+  return {ok:true,recipientConnected:!!recipient,policy:{repair:'1 STARCOIN',completePage:'1 INFINITY (verified site + search + HTML commit evidence)'},counts,recent,lastError:await this.ctx.storage.get('bot-work-credit-error')||null};
  }
  async emit(agent,to,kind,message,url){
   const entries=await this.ctx.storage.get('events')||[];
@@ -821,7 +822,7 @@ export class BrainClock extends DurableObject{
    const state=await response.json();if(!response.ok||!state.ok||!state.user?.id)return Response.json({ok:false,error:'wallet_identity_not_verified'},{status:401});
    const previous=await this.ctx.storage.get('bot-work-recipient');if(previous&&previous.userId!==state.user.id)return Response.json({ok:false,error:'earnings_wallet_already_bound'},{status:409});
    await this.ctx.storage.put('bot-work-recipient',{userId:state.user.id,username:state.user.username,connectedAt:previous?.connectedAt||Date.now()});
-   return Response.json({ok:true,connected:true,username:state.user.username,payouts:await this.settleWork(),policy:{repair:{asset:'QUANT',amount:1},completePage:{asset:'STARCOIN',amount:1}}});
+   return Response.json({ok:true,connected:true,username:state.user.username,payouts:await this.settleWork(),policy:{repair:{asset:'STARCOIN',amount:1},completePage:{asset:'INFINITY',amount:1,requiresVerifiedSiteAndSearch:true}}});
   }
   if(new URL(request.url).pathname==='/quants'){const id=new URL(request.url).searchParams.get('id');if(id){const quant=id.startsWith('job-quant:')?await this.ctx.storage.get(id):null;return Response.json({ok:!!quant,quant});}return Response.json({ok:true,items:await this.ctx.storage.get('job-quant-index')||[]});}
   if(new URL(request.url).pathname==='/runner/claim')return this.ctx.blockConcurrencyWhile(()=>this.runner(request));
