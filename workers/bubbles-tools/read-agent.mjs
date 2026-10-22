@@ -30,8 +30,13 @@ export function needsReadAgent(question){
  if(writes.test(question)||!/\b(?:and|then|also|compare)\b/i.test(question))return false;
  const groups=[/\b(?:weather|forecast)\b/i,/\b(?:news|headlines)\b/i,/\b(?:search|research)\b/i,
   /\b(?:github|repository)\b|(?:^|\s)[\w.-]+\/[\w.-]+(?=\s|[,.?!]|$)/i,/https:\/\/(?:www\.)?quantaphi\.org/i,/\b(?:calculate|resonance)\b/i];
- return groups.filter(p=>p.test(question)).length>=2||
-  (groups[3].test(question)&&/\b(?:read|inspect)\b/i.test(question)&&/\b(?:readme|documentation)\b/i.test(question));
+ const independentGroups=groups.filter(p=>p.test(question)).length;
+ if(independentGroups>=2)return true;
+ // A user who specifies an exact README/path and only asks to explain that
+ // same file needs one file-reader receipt, not a speculative root listing.
+ if(groups[3].test(question)&&/\b(?:read|fetch|summarize|explain)\b.{0,130}\b(?:readme\.md|[\w.-]+\/[\w./-]+\.(?:md|js|html|json))\b/i.test(question)
+    &&!/\b(?:list|root entries|which files|find the file|discover the path)\b/i.test(question))return false;
+ return groups[3].test(question)&&/\b(?:read|inspect)\b/i.test(question)&&/\b(?:readme|documentation)\b/i.test(question);
 }
 export function validateReadStep(name,args,question,observations=[]){
  const schema=readAgentTools.find(t=>t.name===name)?.inputSchema;
