@@ -4,6 +4,10 @@ import {authenticateBridge,checkBridgeClaims,runnerMessage} from '../workers/bub
 const claims={iss:'https://token.actions.githubusercontent.com',aud:'bubbles-owner-message-bridge',repository:'www-infinity4/Moltnook',repository_id:'1188306316',workflow_ref:'www-infinity4/Moltnook/.github/workflows/bubbles-owner-message.yml@refs/heads/main',ref:'refs/heads/main',event_name:'push',run_id:'12345',iat:1000,nbf:1000,exp:1300};
 test('only exact owner repository main workflow and short lived audience are accepted',()=>{
  assert.equal(checkBridgeClaims(claims,1100),claims);
+ assert.equal(checkBridgeClaims({...claims,event_name:'schedule'},1100).event_name,'schedule');
+ assert.equal(checkBridgeClaims({...claims,event_name:'workflow_dispatch'},1100).event_name,'workflow_dispatch');
+ assert.throws(()=>checkBridgeClaims({...claims,event_name:'schedule',workflow_ref:'www-infinity4/Moltnook/.github/workflows/other.yml@refs/heads/main'},1100));
+ assert.throws(()=>checkBridgeClaims({...claims,event_name:'schedule',ref:'refs/heads/feature'},1100));
  for(const patch of [{repository_id:'1'},{aud:'other'},{ref:'refs/heads/other'},{workflow_ref:'other'},{exp:1099},{iat:1},{event_name:'pull_request'}])assert.throws(()=>checkBridgeClaims({...claims,...patch},1100));
 });
 test('real RS256 verification rejects forged signature',async()=>{
