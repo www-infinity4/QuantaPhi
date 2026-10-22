@@ -1,4 +1,4 @@
-import {normalizeSynapse,recallSynapses} from './synapse-memory.mjs';
+import {TOPICS,normalizeSynapse,recallSynapses} from './synapse-memory.mjs';
 // Private Bubbles history. Every read/write validates the caller's Unified Wallet
 // bearer against the wallet service. No browser-supplied owner/user IDs are trusted.
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org']);
@@ -49,15 +49,25 @@ export async function handle(req,env){
    ).run();
    if(req.method==='GET'){
     const q=(u.searchParams.get('q')||'').trim().slice(0,200);
+    const topic=(u.searchParams.get('topic')||'').trim();
+    if(topic&&!TOPICS.includes(topic))return reply(origin,{ok:false,error:'invalid_topic'},400);
+    const offsetRaw=u.searchParams.get('offset')||'0';
+    if(!/^\d{1,5}$/.test(offsetRaw)||Number(offsetRaw)>10000)
+     return reply(origin,{ok:false,error:'invalid_offset'},400);
+    const offset=Number(offsetRaw);
     const limit=Math.max(1,Math.min(20,Number(u.searchParams.get('limit'))||8));
-    const result=await env.MEMORY_DB.prepare(
-     'SELECT id,text,repository,source,session_id AS sessionId,message_id AS messageId,topic,basis,related_ids AS relatedIds,at FROM bubbles_synapses WHERE owner=? ORDER BY at DESC LIMIT 250'
-    ).bind(owner).all();
-    const rows=(result.results||[]).map(row=>({
+    // Query and pagination are ALWAYS owner-filtered; category is optional.
+    const where=topic?'WHERE owner=? AND topic=?':'WHERE owner=?';
+    const sql='SELECT id,text,repository,source,session_id AS sessionId,message_id AS messageId,topic,basis,related_ids AS relatedIds,at FROM bubbles_synapses '+where+' ORDER BY at DESC,id DESC LIMIT 251 OFFSET ?';
+    const args=topic?[owner,topic,offset]:[owner,offset];
+    const result=await env.MEMORY_DB.prepare(sql).bind(...args).all();
+    const allRows=result.results||[],hasMore=allRows.length>250;
+    const rows=allRows.slice(0,250).map(row=>({
      ...row,relatedTo:(()=>{try{return JSON.parse(row.relatedIds||'[]')}catch{return []}})()
     }));
     const memories=recallSynapses(rows,q,limit).map(({relatedIds,...row})=>row);
-    return reply(origin,{ok:true,memories,scanned:rows.length,hasMore:rows.length===250});
+    return reply(origin,{ok:true,memories,scanned:rows.length,topic:topic||null,
+     offset,nextOffset:hasMore?offset+rows.length:null,hasMore});
    }
    if(req.method==='POST'){
     if(Number(req.headers.get('content-length')||0)>35000)return reply(origin,{ok:false,error:'too_large'},413);
