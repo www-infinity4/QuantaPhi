@@ -339,6 +339,13 @@ async function sharedMemory(query=''){
 }
 // Query-local retrieval must not be dropped by the background sync lock or
 // overwrite another turn's context. Recent conversation remains separate.
+// A pending location question must not consume a memory correction or new task.
+function isWeatherTownReply(value){
+ const text=String(value||'').trim();
+ if(!/^[a-z0-9 ,.'’-]{2,75}$/i.test(text))return false;
+ if(/\b(?:you|your|i|my|me|we|our|remember|forgot|forget|know|already|should|would|could|please|that|this|yes|no|thanks|thank|stop|cancel|play|open|build|fix|search|why|what|how|weather|tomorrow)\b/i.test(text))return false;
+ return /^(?:\d{5}(?:-\d{4})?|[a-z][a-z .’'-]*(?:,? +[a-z][a-z .’'-]*)?)$/i.test(text);
+}
 async function currentOwnerContext(query){
  const empty={related:[],userInstructions:[],capabilities:[],state:'unavailable'};
  if(embedded||!ownerReady||!ownerHeaders)return empty;
@@ -2475,7 +2482,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Search and weather always use real network data instead of expecting a chat model to invent it.
  // If Bubbles asked for a town, the next town-only answer is a weather continuation.
  const lastAssistant=messages.slice(-4).reverse().find(item=>item.role==='assistant')?.text||'';
- const townFollowup=/Which town and state should I use for your weather/i.test(lastAssistant)&&/^[a-z0-9 ,.'-]{2,75}$/i.test(request);
+ const townFollowup=/Which town and state should I use for your weather/i.test(lastAssistant)&&isWeatherTownReply(request);
  const weatherFollowup=/^(?:(?:and|what|how) (?:about )?)?tomorrow[?.! ]*$/i.test(request)&&/weather|forecast|temperature|precipitation/i.test(lastAssistant);
  const lookupRequest=townFollowup?'weather in '+request:weatherFollowup?'weather tomorrow':request;
  const liveLookup=/\b(?:weather|forecast|temperature outside|temperature in|will it rain|is it raining|will it snow|is it snowing|how hot is it|how cold is it|what(?:'s| is) it like outside|conditions outside|do i need an umbrella)\b/i.test(lookupRequest)
