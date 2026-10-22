@@ -1,0 +1,33 @@
+name: Bubbles legacy Termux Python probe
+on:
+  pull_request:
+    paths:
+      - 'android/bubbles-overlay/**'
+      - 'bubbles-ai.js'
+      - 'test/bubbles-legacy-termux-probe.test.cjs'
+      - '.github/workflows/bubbles-legacy-termux-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test legacy Bubbles Termux bridge without touching a device
+        run: |
+          node --check bubbles-ai.js
+          node --test test/bubbles-legacy-termux-probe.test.cjs
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Compile original Bubbles APK including Termux bridge
+        working-directory: android/bubbles-overlay
+        run: gradle --no-daemon assembleDebug
