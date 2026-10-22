@@ -1,4 +1,6 @@
 // Short-lived GitHub identity transports messages; it never creates owner access.
+// The single pinned main-branch workflow may also run on a GitHub cron. Consent
+// is separately revalidated per call; a cron identity grants no owner session.
 const ISSUER='https://token.actions.githubusercontent.com';
 const AUDIENCE='bubbles-owner-message-bridge';
 const WORKFLOW='www-infinity4/Moltnook/.github/workflows/bubbles-owner-message.yml@refs/heads/main';
@@ -6,7 +8,7 @@ const decode=s=>Uint8Array.from(atob(s.replace(/-/g,'+').replace(/_/g,'/')),c=>c
 export function checkBridgeClaims(c,now=Date.now()/1000){
  if(c.iss!==ISSUER||c.aud!==AUDIENCE||c.repository!=='www-infinity4/Moltnook'||
   c.repository_id!=='1188306316'||c.workflow_ref!==WORKFLOW||c.ref!=='refs/heads/main'||
-  !['push','workflow_dispatch'].includes(c.event_name)||!/^\d{1,24}$/.test(c.run_id||'')||
+  !['push','workflow_dispatch','schedule'].includes(c.event_name)||!/^\d{1,24}$/.test(c.run_id||'')||
   !Number.isFinite(c.exp)||c.exp<=now||!Number.isFinite(c.nbf)||c.nbf>now+30||
   !Number.isFinite(c.iat)||c.iat>now+30||now-c.iat>600)throw Error('bridge_runner_identity_rejected');
  return c;
