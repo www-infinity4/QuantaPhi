@@ -83,6 +83,8 @@ async function bubblesFetch(url,options={},timeoutMs=15000){
  },timeoutMs);});
  try{return await Promise.race([deadline,(async()=>{
   const response=await fetch(url,{...options,signal:controller.signal});
+  // Browser Response supplies arrayBuffer(). Test transports may implement only json().
+  if(typeof response.arrayBuffer!=='function')return response;
   // These endpoints return finite JSON, never live audio or event streams.
   // Headers alone do not complete a request: keep the deadline while reading
   // the body so the caller's json() cannot leave Bubbles waiting forever.
