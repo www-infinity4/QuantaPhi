@@ -14,11 +14,22 @@ const RETRY_MS=[5000,15000,30000,60000,120000];
 
 // Android 12 can run a WebView without AbortSignal.timeout. Build the
 // timeout from AbortController so verification still reaches the server.
+async function boundedOwnerWait(task,ms=10000){
+ let timer;
+ try{
+  return await Promise.race([Promise.resolve().then(task),new Promise((_,reject)=>{
+   timer=setTimeout(()=>reject(Error('owner_check_timeout')),ms);
+  })]);
+ }finally{clearTimeout(timer)}
+}
 async function ownerFetch(url,options={},timeoutMs=12000){
  const controller=new AbortController();
- const timer=setTimeout(()=>controller.abort(),timeoutMs);
- try{return await fetch(url,{...options,signal:controller.signal})}
- finally{clearTimeout(timer)}
+ let timer;
+ try{
+  return await Promise.race([fetch(url,{...options,signal:controller.signal}),new Promise((_,reject)=>{
+   timer=setTimeout(()=>{controller.abort();reject(Error('owner_check_timeout'));},timeoutMs);
+  })]);
+ }finally{clearTimeout(timer)}
 }
 
 function openInbox(){
@@ -69,30 +80,44 @@ async function verify(token){
  if(!/^[a-f0-9]{64}$/.test(token))return {state:'rejected'};
  try{
   const r=await ownerFetch('https://infinity-brain-clock.marvaseater.workers.dev/owner/pair/redeem',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({code:token})});
-  const result=await r.json();
+  const result=await boundedOwnerWait(()=>r.json());
   if(!r.ok||!result.ok||!/^rd_[a-f0-9]{64}$/.test(result.token||''))return {state:r.status>=500?'unreachable':'rejected'};
   return {state:'verified',headers:{Authorization:'Bearer '+result.token},pairedToken:result.token};
  }catch{return {state:'unreachable'}}
 }
+const check={bridge:'pending',credential:'pending',server:'pending',reason:'checking'};
 async function walletIdentity(){
  try{
-  await window.QuantaCloudConnection?.ready;
-  let token=await window.QuantaCloudConnection?.resolveDeviceToken?.();
+  const bridge=window.QuantaCloudConnection;
+  if(bridge?.ready)await boundedOwnerWait(()=>bridge.ready,10000);
+  check.bridge=bridge?'ready':'missing';
+  let token=bridge?.resolveDeviceToken?await boundedOwnerWait(()=>bridge.resolveDeviceToken(),10000):'';
   if(!token){try{token=new window.InfinityCloudWallet({appName:document.title}).token()}catch{}}
-  if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token||''))return {state:'no-wallet'};
+  check.credential=/^sq_[A-Za-z0-9_-]{32,}$/.test(token||'')?'present':'missing';
+  if(check.credential!=='present'){check.server='not-checked';check.reason='no-wallet';return {state:'no-wallet'};}
   // A device credential is presented only to this first-party Brain endpoint.
   // The server confirms the session against the private Unified Wallet service.
   const response=await ownerFetch(SESSION,{method:'POST',headers:{Authorization:'Bearer '+token},cache:'no-store'},15000);
-  if(response.status===404||response.status===401||response.status===403)return {state:'not-linked'};
-  if(!response.ok)return {state:'unreachable'};
-  const body=await response.json();
-  if(!body?.ok||!/^rb_[a-f0-9]{64}$/.test(body.token||'')||Number(body.expiresAt)<=Date.now())return {state:'unreachable'};
+  if(response.status===404||response.status===401||response.status===403){
+   check.server='rejected';check.reason='wallet-not-linked';return {state:'not-linked'};
+  }
+  if(!response.ok){
+   check.server='unreachable';check.reason='brain-response-'+response.status;return {state:'unreachable'};
+  }
+  const body=await boundedOwnerWait(()=>response.json(),10000);
+  if(!body?.ok||!/^rb_[a-f0-9]{64}$/.test(body.token||'')||Number(body.expiresAt)<=Date.now()){
+   check.server='unreachable';check.reason='invalid-brain-session';return {state:'unreachable'};
+  }
+  check.server='verified';check.reason='verified';
   return {state:'verified',headers:{Authorization:'Bearer '+body.token},expiresAt:Number(body.expiresAt)};
- }catch{return {state:'unreachable'}}
+ }catch(error){check.server='unreachable';check.reason=error?.message==='owner_check_timeout'?'timeout':'service-error';return {state:'unreachable'}}
 }
 let resolveReady;
 const ready=new Promise(resolve=>{resolveReady=resolve});
-window.QuantaBrainOwner={ready,verify,walletIdentity};
+window.QuantaBrainOwner={ready,verify,walletIdentity,diagnostics:()=>({
+ bridge:check.bridge,credential:check.credential,server:check.server,reason:check.reason,
+ owner:document?.getElementById?.('robotBrainOwner')?.dataset?.state==='verified'?'verified':'not-verified'
+})};
 
 if(typeof document==='undefined')return;
 const host=document.getElementById('robotBrainOwner');
