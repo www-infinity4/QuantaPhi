@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Owner-approved commands via the installed Termux app. Not an Android shell bypass. -->
+    <uses-permission android:name="com.termux.permission.RUN_COMMAND"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
@@ -12,6 +14,7 @@
         <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent>
         <package android:name="com.lemon.lvoverseas"/>
         <package android:name="com.android.chrome"/>
+        <package android:name="com.termux"/>
         <!-- Package visibility only. No ChatGPT permissions, cookies or storage access. -->
         <package android:name="com.openai.chatgpt"/>
         <intent><action android:name="android.speech.RecognitionService"/></intent>
@@ -45,6 +48,7 @@
         </service>
         <service android:name=".ScreenCaptureService" android:exported="false" android:foregroundServiceType="mediaProjection"/>
         <service android:name=".PhonePlaybackService" android:exported="false" android:foregroundServiceType="mediaProjection"/>
+        <receiver android:name=".TermuxResultReceiver" android:exported="false"/>
         <service android:name=".BubblesService" android:exported="false"
             android:foregroundServiceType="microphone"/>
         <service android:name=".BrainLearningService" android:exported="true"

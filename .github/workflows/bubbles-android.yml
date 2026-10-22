@@ -123,6 +123,7 @@ jobs:
       - name: Verify unified Bubbles photo and voice read-aloud contracts
         run: |
           node --check bubbles-ai.js
+          node --test test/bubbles-original-termux.test.cjs
           node --check workers/bubbles-tools/worker.mjs
           node --test test/bubbles-image-options.test.mjs
           node --test test/bubbles-live-screen.test.cjs test/bubbles-direct-github.test.mjs

@@ -126,6 +126,31 @@ function startNativeTurn(value,fromVoice,id,evidence=''){
    setOrbState(voiceEnabled?'listening':'idle');
  }).finally(()=>{nativeBridgeBusy=false;});
 }
+// The original Android APK owns local Termux command approval.
+// This bridge is deliberately absent from the website-only session.
+let nativeTermuxRequest=null;
+function nativeTermuxIntent(value){
+ const q=String(value||'').trim().replace(/^(?:hey[, ]+)?bubbles[, ]+/i,'').trim();
+ if(/^(?:check|test|verify) (?:my )?termux[.!?]*$/i.test(q))
+  return {language:'bash',code:'printf "Bubbles Termux bridge connected\\n"'};
+ if(/^(?:check|test|verify) (?:my )?termux python(?: connection)?[.!?]*$/i.test(q))
+  return {language:'python',code:'import sys; print("Bubbles Python OK:", sys.version.split()[0])'};
+ const cmd=q.match(/^(?:(?:run|execute) (?:in )?termux|termux (?:run|execute)|run|execute)\s+(python3?|javascript|node|js|bash|shell|ruby|php|perl|lua)\s*:\s*([\s\S]{1,7000})$/i);
+ return cmd?{language:cmd[1].toLowerCase(),code:cmd[2]}:null;
+}
+function runNativeTermux(language,code){
+ if(!nativeOverlay)return Promise.reject(Error('Local Termux is available only through the Bubbles APK'));
+ if(nativeTermuxRequest)return Promise.reject(Error('Another Termux command is still awaiting its result'));
+ return new Promise((resolve,reject)=>{
+  const id=crypto.randomUUID();
+  const timeout=setTimeout(()=>{if(nativeTermuxRequest?.id===id){
+   nativeTermuxRequest=null;reject(Error('Termux did not return a verified result in 100 seconds'));
+  }},100000);
+  nativeTermuxRequest={id,language,code,taken:false,
+   resolve(value){clearTimeout(timeout);resolve(value)},
+   reject(error){clearTimeout(timeout);reject(error)}};
+ });
+}
 let nativeGPTAvailable=false,nativeGPTSignInRequested=false,nativeGPTRequest=null;
 const nativeScreenRequests=[];
 const nativeCaptureRequests=[]; // FIFO: Android polls requests; never replace a subsequent stop/start command.
@@ -1673,6 +1698,17 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ const termux=nativeOverlay&&!pendingImage?nativeTermuxIntent(spoken):null;
+ if(termux){
+  busy=true;send.disabled=true;display(spoken,'you');input.value='';
+  let answer;
+  try{answer=await runNativeTermux(termux.language,termux.code);}
+  catch(error){answer='Termux result unverified: '+String(error?.message||error).slice(0,180);}
+  display(answer,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:answer});
+  messages=messages.slice(-400);persistChat();status.textContent=answer.slice(0,220);
+  if(fromVoice)nativeSpeechReply=answer.slice(0,1400);
+  nativeSpeechPending=false;busy=false;send.disabled=false;drainVoiceTurns();return;
+ }
  const preference=!embedded&&!pendingImage?brainTools?.notificationPreference?.(spoken):null;
  if(preference){
   busy=true;send.disabled=true;display(spoken,'you');input.value='';
@@ -3113,6 +3149,18 @@ window.QuantaBubbles={
   if(!nativeOverlay)return '';
   const request=nativeCaptureRequests.shift()||'';
   return request?JSON.stringify({text:request}):'';
+ },
+ drainNativeTermuxRequest:()=>{
+  if(!nativeOverlay||!nativeTermuxRequest||nativeTermuxRequest.taken)return '';
+  nativeTermuxRequest.taken=true;
+  const {id,language,code}=nativeTermuxRequest;
+  return JSON.stringify({id,language,code});
+ },
+ finishNativeTermuxRequest:(id,receipt)=>{
+  if(!nativeOverlay||!nativeTermuxRequest||nativeTermuxRequest.id!==id)return false;
+  const task=nativeTermuxRequest;nativeTermuxRequest=null;
+  task.resolve(String(receipt||'Termux did not return a receipt. Completion unverified.').slice(0,9000));
+  return true;
  },
  drainNativeGPTRequest:()=>{
   if(!nativeOverlay||!nativeGPTRequest||nativeGPTRequest.taken)return '';

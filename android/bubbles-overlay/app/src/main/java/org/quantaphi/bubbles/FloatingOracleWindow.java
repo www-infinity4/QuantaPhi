@@ -34,6 +34,28 @@ import android.widget.TextView;
  * Recognition continues while the panel is open; typing is optional.
  */
 final class FloatingOracleWindow {
+    private static volatile FloatingOracleWindow termuxWindow;
+    private AlertDialog termuxDialog;
+    private boolean termuxBusy;
+    private String pendingTermuxId;
+    /** Called from the private broadcast receiver with real Termux exit/output evidence. */
+    static void onTermuxResult(String id, String result) {
+        FloatingOracleWindow current = termuxWindow;
+        if (current != null) current.ui.post(() -> {
+            if (current == termuxWindow && id.equals(current.pendingTermuxId))
+                current.finishTermuxRequest(id, result);
+        });
+    }
+    private void finishTermuxRequest(String id, String receipt) {
+        if (!id.equals(pendingTermuxId)) return;
+        pendingTermuxId = null;
+        termuxBusy = false;
+        if (websiteReady && trustedChat(website)) {
+            website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.finishNativeTermuxRequest("
+                + JSONObject.quote(id) + "," + JSONObject.quote(receipt) + "))", null);
+        }
+        if (status != null) status.setText(receipt.substring(0, Math.min(220, receipt.length())));
+    }
     // Oracle Octaves visual tokens (light fallback; the actual site supplies its CSS).
     private static final int BACKGROUND = Color.rgb(251, 247, 238);
     private static final int PRIMARY = Color.rgb(181, 48, 39);
@@ -127,6 +149,7 @@ final class FloatingOracleWindow {
     FloatingOracleWindow(BubblesService service, WindowManager manager) {
         this.service = service;
         this.manager = manager;
+        termuxWindow = this;
     }
     private int dp(float value) {
         return Math.round(value * service.getResources().getDisplayMetrics().density);
@@ -721,6 +744,54 @@ final class FloatingOracleWindow {
                 status.setText("Android could not read the requested screen.");
             }
         });
+        // Website requests are accepted only from the pinned first-party HTTPS
+        // chat. The native confirmation shows actual code before local execution.
+        if (!termuxBusy && trustedChat(website)) website.evaluateJavascript(
+            "window.QuantaBubbles && window.QuantaBubbles.drainNativeTermuxRequest()", payload -> {
+                if (!websiteReady || !trustedChat(website) || termuxBusy
+                        || payload == null || "null".equals(payload)) return;
+                try {
+                    Object raw = new JSONTokener(payload).nextValue();
+                    if (!(raw instanceof String) || ((String) raw).isEmpty()) return;
+                    JSONObject command = new JSONObject((String) raw);
+                    String id = command.optString("id", "");
+                    String language = command.optString("language", "");
+                    String code = command.optString("code", "");
+                    if (!id.matches("[0-9a-fA-F-]{36}") || !language.matches("[A-Za-z0-9]{2,12}")
+                            || code.trim().isEmpty() || code.length() > 7000) return;
+                    pendingTermuxId = id;
+                    termuxBusy = true;
+                    String preview = code.length() > 650 ? code.substring(0, 650) + "\\n[more code omitted]" : code;
+                    termuxDialog = new AlertDialog.Builder(service,
+                            android.R.style.Theme_Material_Light_Dialog_Alert)
+                        .setTitle("Run " + language + " in Termux?")
+                        .setMessage("This runs code on your PHONE, not Cloudflare. Review the owner's explicit script before approving.\\n\\n" + preview)
+                        .setNegativeButton("Cancel", (dialog, which) ->
+                            finishTermuxRequest(id, "Termux command cancelled by owner. Nothing was executed."))
+                        .setPositiveButton("Run once", (dialog, which) -> {
+                            String problem = TermuxBridge.run(service, id, language, code);
+                            if (problem != null) {
+                                finishTermuxRequest(id, problem);
+                                return;
+                            }
+                            if (status != null) status.setText("Termux received the command request; waiting for exit/output receipt.");
+                            ui.postDelayed(() -> {
+                                if (id.equals(pendingTermuxId))
+                                    finishTermuxRequest(id, "Termux did not return a result within 90 seconds. Execution is unverified. Check Termux and avoid blindly rerunning side-effecting code.");
+                            }, 90000L);
+                        })
+                        .create();
+                    if (termuxDialog.getWindow() != null)
+                        termuxDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY);
+                    termuxDialog.setOnCancelListener(dialog ->
+                        finishTermuxRequest(id, "Termux permission dialog dismissed. Nothing was executed."));
+                    termuxDialog.show();
+                } catch (Exception error) {
+                    termuxBusy = false;
+                    pendingTermuxId = null;
+                    if (status != null) status.setText("Termux command approval could not open: " + error.getClass().getSimpleName());
+                }
+            });
         if(!gptBusy)website.evaluateJavascript(
             "window.QuantaBubbles && window.QuantaBubbles.drainNativeGPTRequest()", payload -> {
                 if(!websiteReady || gptBusy || payload==null || "null".equals(payload))return;
@@ -794,6 +865,10 @@ final class FloatingOracleWindow {
         loadGeneration++;
         ui.removeCallbacks(update);
         gptWork.shutdownNow();
+        if (termuxDialog != null) { termuxDialog.dismiss(); termuxDialog = null; }
+        pendingTermuxId = null;
+        termuxBusy = false;
+        if (termuxWindow == this) termuxWindow = null;
         websiteReady = false;
         pendingSpeech.clear();
         pendingTyped.clear();
