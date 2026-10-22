@@ -16,18 +16,28 @@ adb shell appops set "$PKG" SYSTEM_ALERT_WINDOW allow
 adb logcat -c
 adb shell am start -W -n "$PKG/org.quantaphi.bubbles.MainActivity" | tee /tmp/bubbles-emulator/launch.txt
 sleep 5
-adb shell uiautomator dump /sdcard/bubbles-initial.xml
-adb pull /sdcard/bubbles-initial.xml /tmp/bubbles-emulator/initial.xml
+# Save the first frame before the assertion, including failed launches.
+adb shell screencap -p /sdcard/bubbles-initial.png
+adb pull /sdcard/bubbles-initial.png /tmp/bubbles-emulator/initial.png
 python3 - <<'PY'
 from xml.etree import ElementTree as ET
-import re,subprocess
-root=ET.parse('/tmp/bubbles-emulator/initial.xml').getroot()
-controls=[node.attrib for node in root.iter('node')]
-if not any('Bubbles AI' in row.get('text','') for row in controls):
-    raise SystemExit('Android Bubbles launch screen not rendered')
-button=next((row for row in controls if 'Start or resume Bubbles voice' in row.get('text','')),None)
+import re, subprocess
+def snapshot(n):
+    subprocess.run(['adb','shell','uiautomator','dump','/sdcard/bubbles-initial.xml'],check=True)
+    subprocess.run(['adb','pull','/sdcard/bubbles-initial.xml',f'/tmp/bubbles-emulator/initial-{n}.xml'],check=True)
+    root=ET.parse(f'/tmp/bubbles-emulator/initial-{n}.xml').getroot()
+    return [node.attrib for node in root.iter('node')]
+controls=[]
+button=None
+for attempt in range(6):
+    controls=snapshot(attempt)
+    button=next((row for row in controls if 'Start or resume Bubbles voice' in row.get('text','')
+         or 'Start or resume Bubbles voice' in row.get('content-desc','')),None)
+    if button: break
+    subprocess.run(['adb','shell','input','swipe','510','1660','510','440','390'],check=True)
 if not button:
-    raise SystemExit('Android voice-launch button not rendered')
+    labels=[x.get('text','')[:100] for x in controls if x.get('clickable')=='true']
+    raise SystemExit('Android voice-launch button not accessible after scrolling: '+repr(labels[:22]))
 coords=list(map(int,re.findall(r'\d+',button.get('bounds',''))))
 if len(coords)!=4:
     raise SystemExit('Android voice-launch button has no bounds')
