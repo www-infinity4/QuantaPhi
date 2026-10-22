@@ -311,3 +311,18 @@ test('neural owner work endpoint plans only; it cannot authorize or execute the 
  assert.equal(data.receipt.permissionGranted,false);
  assert.equal(data.receipt.repositoryActionsVerified,false);
 });
+
+// Reproduced in signed run 39818397678: an unspecified Play request returned only !.
+test('punctuation-only model output is corrected once and remains honest if correction fails',async()=>{
+ const prompt='Please click the Play button on a page you have not inspected or opened.';
+ for(const corrected of ['!'.repeat(400),'Open the page first so I can inspect the Play control.']){
+  let calls=0;
+  const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:prompt})}),{AI:{run:async()=>({response:++calls===1?'!'.repeat(600):corrected})}});
+  const body=await r.json();
+  assert.equal(calls,2);
+  assert.match(body.output,/page|card/i);
+  assert.doesNotMatch(body.output,/!{80}/);
+  assert.equal(body.receipt.repositoryActionsVerified,false);
+  if(corrected.startsWith('!'))assert.equal(body.answerStatus,'partial');
+ }
+});
