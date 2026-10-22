@@ -43,10 +43,11 @@ function fixture(){
   async all(){
    if(!sql.includes('FROM bubbles_synapses'))throw Error('Unexpected query');
    const [owner]=args;
-   return {results:rows.filter(x=>x.owner===owner).map(x=>({
+   const isTopic=sql.includes('AND topic=?'),offset=Number(args[isTopic?2:1]||0);
+   return {results:rows.filter(x=>x.owner===owner&&(!isTopic||x.topic===args[1])).map(x=>({
     id:x.id,text:x.text,repository:x.repository,source:x.source,sessionId:x.sessionId,messageId:x.messageId,
     topic:x.topic,basis:x.basis,relatedIds:x.relatedIds,at:x.at
-   })).sort((a,b)=>b.at-a.at).slice(0,250)};
+   })).sort((a,b)=>b.at-a.at||b.id.localeCompare(a.id)).slice(offset,offset+251)};
   }
  }}}},async batch(commands){return Promise.all(commands.map(x=>x.run()))}};
  const wallet={async fetch(_url,{headers}){
@@ -133,4 +134,29 @@ test('untrusted cross-owner references never become neighbor memory excerpts',()
  assert.deepEqual(returned[0].neighbors,[]);
  assert.ok(!JSON.stringify(returned).includes('Private note'));
  assert.equal(recallSynapses([visible,fromOtherOwner],'nonexistent',5).length,0);
+});
+
+test('category filters, page boundaries and wallet isolation are enforced by the query',async()=>{
+ const env=fixture();
+ for(let i=0;i<251;i+=10){
+  const notes=Array.from({length:Math.min(10,251-i)},(_,j)=>
+   note('memory_radio_'+String(i+j).padStart(5,'0'),'Radio circuit indexed memory '+(i+j),{at:at-(i+j)*1000}));
+  const r=await handle(call('/v1/synapses','POST','alice',{notes}),env);
+  assert.equal(r.status,200);
+ }
+ let r=await handle(call('/v1/synapses?topic=electronics_computing&offset=0&limit=2'),env);
+ let j=await r.json();
+ assert.equal(r.status,200);assert.equal(j.memories.length,2);
+ assert.equal(j.scanned,250);assert.equal(j.hasMore,true);assert.equal(j.nextOffset,250);
+ r=await handle(call('/v1/synapses?topic=electronics_computing&offset=250'),env);
+ j=await r.json();
+ assert.equal(j.scanned,1);assert.equal(j.hasMore,false);assert.equal(j.nextOffset,null);
+ r=await handle(call('/v1/synapses?topic=music_radio','GET','alice'),env);
+ assert.equal((await r.json()).memories.length,0);
+ r=await handle(call('/v1/synapses?topic=electronics_computing','GET','bob'),env);
+ assert.equal((await r.json()).memories.length,0);
+ r=await handle(call('/v1/synapses?topic=other','GET','alice'),env);
+ assert.equal(r.status,400);assert.equal((await r.json()).error,'invalid_topic');
+ r=await handle(call('/v1/synapses?offset=-1','GET','alice'),env);
+ assert.equal(r.status,400);assert.equal((await r.json()).error,'invalid_offset');
 });
