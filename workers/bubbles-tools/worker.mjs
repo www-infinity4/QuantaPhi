@@ -142,7 +142,10 @@ export function hasModelToolLeak(answer){
  // Some models emit a fabricated call with "id" before "tool", hidden
  // after ordinary prose. It must never reach Bubbles voice or count as a read.
  const embeddedToolDraft=/\{[^{}\n]{0,700}["'](?:tool|tool_name|function)["']\s*:\s*["'](?:web[._][\w.-]+|github[._][\w.-]+|browser[._][\w.-]+|weather[._][\w.-]+|tools?[._][\w.-]+)["'][^{}\n]{0,700}\}/i.test(text);
- return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft||embeddedToolDraft;
+ // Short cursor envelopes such as {"id":"https://...","cursor":0} are also
+ // unexecuted model instructions, not a completed publisher-page read.
+ const rawCursorDraft=/^\s*\{[^{}\n]{0,1000}"(?:cursor|next_cursor|read_cursor|page_token)"\s*:\s*(?:\d+|["'])[^{}\n]{0,500}\}\s*$/i.test(text);
+ return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft||embeddedToolDraft||rawCursorDraft;
 }
 // A planning fragment is not a final answer even if the source search completed.
 export function hasUnfinishedResearchDraft(answer){
@@ -614,7 +617,8 @@ export async function finishSearchReply(original,summarize,timeoutMs=20000,userR
   if(!summarized.ok)return fallback();
   const data=await summarized.clone().json();
   const output=String(data.output||'').trim();
-  if(data.answerStatus==='partial'||!output||hasModelToolLeak(output)||hasUnfinishedResearchDraft(output)||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output)||(/\b(?:research|explain|synthesi[sz]e)\b/i.test(userRequest)&&/^Live results from /i.test(output)))return fallback();
+  if(data.answerStatus==='partial'||!output||hasModelToolLeak(output)||hasUnfinishedResearchDraft(output)||
+   (/\b(?:research|explain|analy[sz]e|synthesi[sz]e|compare)\b/i.test(userRequest)&&output.length<100)||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output)||(/\b(?:research|explain|synthesi[sz]e)\b/i.test(userRequest)&&/^Live results from /i.test(output)))return fallback();
   return summarized;
  }catch{return fallback()}
  finally{clearTimeout(timer)}

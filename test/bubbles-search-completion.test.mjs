@@ -161,3 +161,21 @@ test('incomplete DARPA model draft triggers corrective grounded explanation',asy
   assert.notEqual(data.answerStatus,'partial');
  }finally{globalThis.fetch=originalFetch;}
 });
+
+test('raw DARPA page cursor JSON cannot be mistaken for published research',async()=>{
+ const {hasModelToolLeak}=await import('../workers/bubbles-tools/worker.mjs');
+ const leaked='{"id":"https://www.darpa.mil/research/programs/o-circuit","cursor":0}';
+ assert.equal(hasModelToolLeak(leaked),true);
+ const source=Response.json({ok:true,output:'Live results from provider',receipt:{tool:'web.search',status:'complete'},
+  sources:[{title:'O-Circuit — DARPA',url:'https://www.darpa.mil/research/programs/o-circuit',
+    excerpt:'The O-Circuit program proposes studying biological processors and inference.'}]});
+ const reply=await finishSearchReply(source,()=>Response.json({ok:true,output:leaked}),20,
+  'Research DARPA O-Circuit and explain actual evidence');
+ const body=await reply.json();
+ assert.equal(body.answerStatus,'partial');
+ assert.equal(body.analysisVerified,false);
+ assert.equal(body.receipt.status,'complete');
+ assert.match(body.output,/I found source excerpts/);
+ assert.doesNotMatch(body.output,/"cursor"|read the page|Live results from/);
+ assert.equal(body.sources[0].url,'https://www.darpa.mil/research/programs/o-circuit');
+});
