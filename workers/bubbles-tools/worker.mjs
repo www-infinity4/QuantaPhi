@@ -321,9 +321,17 @@ async function execute(request,env,body){
  const question=clean(body.request);if(!question)return response(request,{ok:false,error:'request_required'},400);
  const tool=['resonance.calculate','web.search','weather.current','news.headlines'].includes(body.tool)?body.tool:chooseTool(question),id=crypto.randomUUID();
  const receipt={id,tool,status:'started',createdAt:new Date().toISOString(),kind:'bubbles-tool-result',minted:false};
+ if(/\b(?:what|which|describe|explain|show)\b/i.test(question)&&/\b(?:server runtime|running on|runtime and tools|runtime.*tools)\b/i.test(question)){
+  return response(request,{ok:true,output:'This Bubbles chat runs on Cloudflare Workers using JavaScript. '+
+   (env.AI?'Its connected AI runtime provides GPT-OSS inference. ':'AI inference is not connected in this runtime. ')+
+   'The server can run registered search, weather, news, calculator, public GitHub readers and public QuantaPhi HTML readers. Its bounded read loop can inspect results and choose the next read. '+
+   'A persistent Linux workspace, shell/Python execution, interactive browser session and repository edits are not provided by this public conversation route. Owner work uses separately authenticated adapters; a service binding alone does not prove execution.',
+   capabilities:{runtime:'cloudflare-workers-javascript',inferenceConnected:Boolean(env.AI),readAgent:true,linuxWorkspace:false,shell:false,python:false,ownerExecutorConfigured:Boolean(env.BRAIN),ownerExecutionVerified:false},
+   receipt:{...receipt,tool:'runtime.capabilities',status:'complete',repositoryActionsVerified:false}});
+ }
  if(body.mcp===true&&env.AI&&needsReadAgent(question)){
   const evidence=await runReadAgent({question,input:clean(body.input,6000),
-   plan:options=>runChatModel(env,'@cf/openai/gpt-oss-120b',options),
+   plan:options=>env.AI.run('@cf/openai/gpt-oss-20b',options),
    invoke:async step=>{
     const sub={...receipt,id:crypto.randomUUID()};
     if(step.name==='github_read_repository')return (await readGithubRepository(request,{request:'Read repository '+step.repository,repository:step.repository},sub)).json();
@@ -333,6 +341,9 @@ async function execute(request,env,body){
    }});
   if(evidence){
    const found=response(request,{...evidence,receipt:{...receipt,...evidence.receipt}});
+   // Weather, headlines and calculator adapters already produce readable
+   // observed facts. A second model pass must not alter dates, units or titles.
+   if(evidence.steps.every(s=>['weather.current','news.headlines','resonance.calculate'].includes(s.tool)))return found;
    return finishSearchReply(found,()=>gptReply(request,env,clean(body.input,32000)||question,
     {...receipt,...evidence.receipt},evidence,question),15000,question);
   }
@@ -541,7 +552,7 @@ export default {async fetch(request,env){
   if(text.length>70000)return response(request,{ok:false,error:'body_too_large'},413);
   const result=await execute(request,env,body);if(!result.ok)return result;
   const data=await result.clone().json();
-  if(data.model||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
+  if(data.model||data.receipt?.tool==='runtime.capabilities'||data.receipt?.tool==='agent.read_sequence'||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
   const summarize=()=>gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
   if(data.receipt?.tool==='web.search')return finishSearchReply(result,summarize,20000,clean(body.request));
   if(data.receipt?.tool==='web.read_page')return data.receipt.status==='complete'?finishSearchReply(result,summarize,12000,clean(body.request)):result;

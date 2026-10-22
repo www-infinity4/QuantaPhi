@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {runReadAgent,validateReadStep,needsReadAgent} from '../workers/bubbles-tools/read-agent.mjs';
+import worker from '../workers/bubbles-tools/worker.mjs';
 const call=(name,args)=>({function:{name,arguments:JSON.stringify(args)}});
 const planned=(...calls)=>({tool_calls:calls});
 test('repository inspection supplies the observed filename for the next model step',async()=>{
@@ -58,4 +59,23 @@ test('compound reads are eligible while writes stay on their owner adapter',()=>
  assert.equal(needsReadAgent('Find Lovilia weather and current news'),true);
  assert.equal(needsReadAgent('Inspect https://quantaphi.org/bubbles.html and explain what it offers'),false);
  for(const q of ['hello','What is the weather?','Build a website and deploy it','Read a repo and commit a repair','Run Python and search the web'])assert.equal(needsReadAgent(q),false,q);
+});
+test('finished factual readers retain their exact output without a second model rewrite',async()=>{
+ const original=globalThis.fetch;let modelCalls=0;
+ globalThis.fetch=async()=>new Response('<rss><channel><item><title>Exact observed headline</title><link>https://news.google.com/example</link><pubDate>'+new Date().toUTCString()+'</pubDate><source>Observed publisher</source></item></channel></rss>');
+ try{
+  const env={AI:{run:async()=>++modelCalls===1?planned(call('news_headlines',{}),call('resonance_calculate',{l:10,lUnit:'uH',c:22,cUnit:'pF'})):planned()}};
+  const res=await worker.fetch(new Request('https://bubbles-tools.test/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},body:JSON.stringify({request:'Get headlines and calculate resonance for 10 microhenries and 22 picofarads',mcp:true})}),env);
+  const data=await res.json();
+  assert.equal(res.status,200);assert.equal(data.receipt.status,'complete');
+  assert.equal(modelCalls,2,'planning calls only; no factual rewrite');
+  assert.equal(data.output,data.steps.map(s=>s.output).join('\n\n'));
+  assert.match(data.output,/Exact observed headline/);
+  assert.doesNotMatch(data.output,/news\.headlines \(complete\)/);
+ }finally{globalThis.fetch=original;}
+});
+test('runtime inventory reports actual bindings without relying on model guesses',async()=>{
+ const res=await worker.fetch(new Request('https://bubbles-tools.test/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},body:JSON.stringify({request:'What server runtime and tools are you actually using right now?',mcp:true})}),{AI:{run:()=>assert.fail('inventory is not a model guess')}});
+ const d=await res.json();assert.equal(d.receipt.tool,'runtime.capabilities');
+ assert.equal(d.capabilities.inferenceConnected,true);assert.equal(d.capabilities.shell,false);assert.equal(d.capabilities.ownerExecutionVerified,false);
 });
