@@ -112,7 +112,7 @@ export class CardWorkspace{
   try{
    await record.ready;if(this.active!==record)return {message:'Card selection changed.'};
    this.onEvidence({...this.getEvidence(record),loaded:true});
-   this.status.textContent=card.title+(mode==='page'?' webpage is open for inspection.':' card is open in chat.')+
+   this.status.textContent=card.title+(mode==='page'?' webpage is open for inspection.':' is open in chat.')+
     (['media-star','fred-spaces'].includes(card.id)?
      ' Fred’s Space is linked to the original X replay. Tap ▶ in the card to listen; audio has not been confirmed.':'');
    if(play)return this.play();
