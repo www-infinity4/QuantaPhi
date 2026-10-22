@@ -35,15 +35,15 @@ final class TermuxPythonProbe {
         // on normal completion, including after a Python exception inside the context block.
         // No broad deletion, external downloads, package installs or arbitrary arguments.
         String script =
-                "import os, pathlib, shutil, sys, tempfile\\n" +
-                "home = os.path.expanduser('~')\\n" +
-                "print('PYTHON_VERSION=' + sys.version.split()[0])\\n" +
-                "print('TERMUX_FREE_BYTES=' + str(shutil.disk_usage(home).free))\\n" +
-                "with tempfile.TemporaryDirectory(prefix='bubbles-probe-') as scratch:\\n" +
-                "    p = pathlib.Path(scratch) / 'probe.txt'\\n" +
-                "    p.write_text('OK')\\n" +
-                "    print('BUBBLES_PROBE_OK=' + str(p.read_text() == 'OK'))\\n" +
-                "print('TEMP_REMOVED=' + str(not os.path.exists(scratch)))\\n";
+                "import os, pathlib, shutil, sys, tempfile\n" +
+                "home = os.path.expanduser('~')\n" +
+                "print('PYTHON_VERSION=' + sys.version.split()[0])\n" +
+                "print('TERMUX_FREE_BYTES=' + str(shutil.disk_usage(home).free))\n" +
+                "with tempfile.TemporaryDirectory(prefix='bubbles-probe-') as scratch:\n" +
+                "    p = pathlib.Path(scratch) / 'probe.txt'\n" +
+                "    p.write_text('OK')\n" +
+                "    print('BUBBLES_PROBE_OK=' + str(p.read_text() == 'OK'))\n" +
+                "print('TEMP_REMOVED=' + str(not os.path.exists(scratch)))\n";
         int id = new SecureRandom().nextInt(1_000_000_000);
         Intent response = new Intent(context, TermuxPythonResultReceiver.class)
                 .setAction(RESULT_ACTION).putExtra("probe_id", id);
