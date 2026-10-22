@@ -56,11 +56,16 @@ try{
   const original={};for(const path of allowedFiles)original[path]=await fs.readFile(path,'utf8');
   const clearJob=/clear\s+(?:text|input)/i.test(lease.job.instructions);
   let edits=clearJob?clearButtonPatch(original):(await call('propose',{source:original})).edits;
-if (!Array.isArray(edits) || edits.length===0) {
-  console.warn('brain-writer: no edits to apply – skipping edit step');
-  process.exit(0);
-}
-  const resume=!edits.length && clearJob && /^[a-f0-9]{40}$/.test(lease.job.progress?.commitSha||'');
+  // Never exit successfully with an active lease. process.exit(0) bypassed
+  // the runner result, retry backoff, and finally's saved receipt. This left
+  // tickets claiming "working" with no successful commit or failure evidence.
+  if(!Array.isArray(edits))throw Error('The writer returned no bounded edit list.');
+  const resume=edits.length===0 && clearJob &&
+    /^[a-f0-9]{40}$/.test(lease.job.progress?.commitSha||'');
+  if(edits.length===0&&!resume){
+    await event('yellow-jacket','No applicable source diff was proposed. Recording the blocker instead of pretending the build succeeded.');
+    throw Error('No source diff: the requested change may already exist or this job needs another implementation adapter. Reconcile exact source and receipts before retrying.');
+  }
   if(!edits.length&&!resume)throw Error('Requested change is already present; no recorded source commit to resume');
   const patched=resume?original:applyEdits(original,edits);report.edits=edits;
   const reviewedSource=Object.fromEntries(Object.entries(patched).filter(([path])=>resume?path==='robot-directions.js':edits.some(e=>e.path===path)));
