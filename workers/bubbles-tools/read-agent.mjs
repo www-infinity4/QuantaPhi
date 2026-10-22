@@ -92,6 +92,6 @@ export async function runReadAgent({question,input='',plan,invoke,now=Date.now,m
   return {tool:String(data?.receipt?.tool||step.name),status:String(data?.receipt?.status||'failed'),output:trim(data?.output,6500),arguments:step};
  });
  const complete=steps.every(s=>s.status==='complete')&&stopReason==='model_finished';
- return {ok:true,output:steps.map(s=>s.tool+' ('+s.status+'): '+s.output).join('\n\n'),sources:sources.slice(0,12),steps,
+ return {ok:true,output:steps.map(s=>s.output).join('\n\n'),sources:sources.slice(0,12),steps,
   answerStatus:complete?'complete':'partial',receipt:{tool:'agent.read_sequence',status:complete?'complete':'partial',steps:steps.map(({tool,status})=>({tool,status})),stopReason,repositoryActionsVerified:false,executed:true}};
 }
