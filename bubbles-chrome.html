@@ -50,6 +50,7 @@
   <script defer src="/bubbles-brain-actions.js?v=20261020-tool-driver1"></script>
   <script defer src="/bubbles-memory.js?v=20261020-synapse1"></script>
   <script defer src="/bubbles-ai.js?v=20261021-chat-timeout1"></script>
+  <script defer src="/bubbles-owner-diagnostic.js?v=20261021-owner-check1"></script>
   <script defer src="/bubbles-pwa.js?v=20261019-chrome1"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1">
 <link rel="stylesheet" href="/bubbles-native-chat.css?v=20261015-readable29">
@@ -90,6 +91,12 @@
         <a href="/#robotDirections">Open Robot Brain →</a>
       </div>
       <div id="robotBrainOwner" aria-live="polite"></div>
+      <details id="bubblesOwnerDiagnostics" class="bubbles-owner-diagnostic">
+        <summary id="bubblesOwnerDiagnosticSummary">Owner check: automatic read-only diagnostic</summary>
+        <p>This checks this page's authorization state without displaying credentials. GitHub and Cloudflare sign-in are separate from ordinary chat.</p>
+        <button id="bubblesOwnerDiagnosticRun" type="button">Check owner connection again</button>
+        <ul id="bubblesOwnerDiagnosticResults" role="status" aria-live="polite"><li>Waiting for the initial owner check…</li></ul>
+      </details>
       <div id="bubblesAICard"></div>
     </section>
 
