@@ -725,10 +725,9 @@ public final class BubblesService extends Service {
                     while (captureRunning && connected && !muted) {
                         int count = input.read(samples, 0, samples.length);
                         if (count <= 0) throw new IllegalStateException("Microphone read failed: " + count);
-                        // Keep the single stream alive and continue saving
-                        // RecordB footage, but never hallucinate a voice turn
-                        // from a microphone Android explicitly silenced.
-                        if (microphoneSilencedByAndroid) continue;
+                        // Preserve the RecordB audio timeline even while
+                        // Android temporarily silences input. Never interpret
+                        // muted/zeroed PCM as an owner speech command.
                         try { if (!screenAudioPaused) screenAudio.append(samples, count); }
                         catch (Exception error) {
                             // Send at most ONE stop request: the audio loop runs every 100 ms.
@@ -741,6 +740,7 @@ public final class BubblesService extends Service {
                         }
                         try { recording.append(samples, count); }
                         catch (Exception error) { main.post(this::saveAudio); }
+                        if (microphoneSilencedByAndroid) continue;
                         double sum = 0;
                         for (int i = 0; i < count; i++) sum += (double) samples[i] * samples[i];
                         final float level = Math.min(1f, (float) Math.sqrt(sum / count) / 6000f);
