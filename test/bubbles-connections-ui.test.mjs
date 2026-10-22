@@ -8,6 +8,26 @@ test('connector waits for device bridge and supports both wallet runtime exports
   await assert.rejects(resolveConnectorWalletToken({}),/verified_wallet_required/);
   await assert.rejects(resolveConnectorWalletToken({QuantaCloudConnection:{resolveDeviceToken:async()=>''},InfinityUnifiedWallet:class{token(){return token;}}}),/verified_wallet_required/);
 });
+test('connection check times out even when wallet readiness never settles',async()=>{
+ const client=new AccountConnections({token:()=>new Promise(()=>{}),request:()=>assert.fail('request must not run'),root:{},timeoutMs:15});
+ await assert.rejects(client.call('/gate/status'),/connection_timeout/);
+ assert.match(connectionCodeMessage(Error('connection_timeout')),/timed out/);
+});
+test('connection check aborts a hung fetch and bounds JSON body reads',async()=>{
+ let signal;
+ const stalled=new AccountConnections({token:()=> 'device-token',root:{},timeoutMs:15,request:async(_url,options)=>{
+  signal=options.signal;
+  return new Promise(()=>{});
+ }});
+ await assert.rejects(stalled.call('/gate/status'),/connection_timeout/);
+ assert.equal(signal.aborted,true);
+ const stalledBody=new AccountConnections({token:()=> 'device-token',root:{},timeoutMs:15,request:async(_url,options)=>{
+  signal=options.signal;
+  return {ok:true,json:()=>new Promise(()=>{})};
+ }});
+ await assert.rejects(stalledBody.call('/gate/status'),/connection_timeout/);
+ assert.equal(signal.aborted,true);
+});
 test('redeeming a pairing does not require an existing wallet in the destination browser',async()=>{
   const client=new AccountConnections({token:()=>assert.fail('destination has no wallet'),root:{},request:async(url,options)=>{assert.ok(!options.headers.Authorization);return Response.json({ok:true});}});
   assert.equal((await client.call('/pair/redeem',{code:'example'})).ok,true);
