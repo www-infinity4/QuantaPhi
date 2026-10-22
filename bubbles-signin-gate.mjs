@@ -1,4 +1,4 @@
-import {AccountConnections,resolveConnectorWalletToken} from './bubbles-connections.mjs';
+import {AccountConnections,resolveConnectorWalletToken} from './bubbles-connections.mjs?v=20261021-timeout1';
 
 const REQUIRED=Object.freeze({
  github:['repository.read'],
@@ -75,9 +75,11 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     setStatus('This browser does not have a verified QuantaPhi wallet session. Recover your existing wallet first; no new wallet will be created.');
    } else if(code==='connections_not_configured'||code==='provider_not_configured'){
     setStatus('Account connection service is not ready. Chat remains available while the service is repaired.');
+   } else if(code==='connection_timeout'){
+    setStatus('Account check timed out after ten seconds. Bubbles chat is still available. Tap Check sign-ins again to retry.');
    } else setStatus('Could not verify the account connections right now. You can retry without signing out of Bubbles.');
-   Object.values(labels).forEach(label=>{label.textContent='Not verified in this browser.';});
-   for(const button of Object.values(actions)){button.disabled=true;button.textContent='Waiting for verified wallet';}
+   Object.values(labels).forEach(label=>{label.textContent='Could not check this account. Saved permissions were not changed.';});
+   for(const button of Object.values(actions)){button.disabled=true;button.textContent='Check sign-ins again to retry';}
    return null;
   } finally {loading=false;if(latest)for(const id of ['github','cloudflare'])actions[id].disabled=!latest.providers[id].configured||oauthInProgress;}
  };
