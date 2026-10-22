@@ -56,7 +56,7 @@ export async function precedingSignedTurns({id,db,now=Date.now()}){
  if(browser?.status==='complete'&&Number.isFinite(browser.expires_ms)&&browser.expires_ms>now){
   let observed;try{observed=JSON.parse(browser.result||'null')}catch{}
   if(observed?.ok===true&&observed.receipt?.tool==='browser.click_check'&&observed.receipt?.status==='complete'&&observed.receipt?.clickObserved===true)
-   transcript.push('Verified same-run Bubbles browser receipt: '+JSON.stringify({tool:'browser.click_check',status:'complete',before:String(observed.before||'').slice(0,100),after:String(observed.after||'').slice(0,100),sessionClosed:observed.receipt.sessionClosed===true,ownerPageVerified:false}));
+   transcript.push('Verified same-run Bubbles browser receipt: '+JSON.stringify({tool:'browser.click_check',status:'complete',control:'Run browser check',before:String(observed.before||'').slice(0,100),after:String(observed.after||'').slice(0,100),sessionClosed:observed.receipt.sessionClosed===true,cleanupConfirmed:observed.receipt.sessionClosed===true,ownerPageVerified:false})+' Receipt meanings: sessionClosed=true confirms cleanup of this disposable test browser. ownerPageVerified=false means an owner page was not tested; it does not indicate failed cleanup. Describe these independently.');
  }
  if(!transcript.length)return '';
  return 'Relevant recent conversation (verified same-run history, not new tool calls or authorization):\n'+transcript.join('\n')+
