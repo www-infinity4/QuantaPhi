@@ -5,7 +5,7 @@ on:
       - 'workers/bubbles-tools/**'
       - 'scripts/verify-bubbles-live-tools.mjs'
       - 'test/bubbles-live-tool-acceptance.test.mjs'
-      - 'test/bubbles-github-raw-fallback.test.mjs'
+      - 'test/bubbles-github-raw-fallback.test.mjs test/bubbles-legacy-mongoose-context.test.mjs'
       - '.github/workflows/deploy-bubbles-semantic-tools.yml'
   push:
     branches: [main]
