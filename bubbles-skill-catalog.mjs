@@ -8,6 +8,15 @@ export function describeConnectionRisk(id){
  return id==='github'?'Disconnecting GitHub will stop Bubbles from reading and updating your authorized repositories until you reconnect. Existing projects remain yours.':
  id==='cloudflare'?'Disconnecting Cloudflare will prevent Bubbles from deploying to your account and reading Cloudflare resources until you reconnect. Existing deployments may remain live.':'Disconnecting an account removes Bubbles access to its connected tools.';
 }
+// The source link is intentionally narrow: no arbitrary catalog-provided URLs.
+export function approvedSourceLink(value){
+ if(typeof value!=='string')return '';
+ try{
+  const url=new URL(value);
+  return url.origin==='https://github.com'&&!url.username&&!url.password&&!url.search&&!url.hash&&
+    /^\\/www-infinity4\\/Organic-Computation\\/?$/.test(url.pathname)?url.href:'';
+ }catch{return '';}
+}
 export async function mountBubblesSkillCatalog(target,{fetcher=fetch}={}){
  if(!target)throw Error('skill_catalog_target_missing');
  const status=make('p','Loading Bubbles skills…','ba-muted');status.setAttribute('role','status');
@@ -38,6 +47,12 @@ export async function mountBubblesSkillCatalog(target,{fetcher=fetch}={}){
    const card=make('div','','ba-skill-entry');
    card.append(make('strong',item.label),make('small',item.origin+' · '+item.state),make('p',item.description,'ba-muted'));
    if(item.requires)card.append(make('small','Requires: '+item.requires));
+   const trustedSource=approvedSourceLink(item.sourceUrl);
+   if(trustedSource){
+    const link=make('a','Open verified research repository →','ba-link');
+    link.href=trustedSource;link.target='_blank';link.rel='noopener noreferrer';
+    card.append(link);
+   }
    slot.append(card);
   }
   if(items.length>limit)slot.append(make('p','Showing '+limit+' of '+items.length+' matches. Refine the search to see more.','ba-muted'));
