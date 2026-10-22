@@ -56,8 +56,8 @@ try{
   const original={};for(const path of allowedFiles)original[path]=await fs.readFile(path,'utf8');
   const clearJob=/clear\s+(?:text|input)/i.test(lease.job.instructions);
   let edits=clearJob?clearButtonPatch(original):(await call('propose',{source:original})).edits;
-  // Never exit successfully with an active lease. process.exit(0) bypassed
-  // the runner result, retry backoff, and finally's saved receipt. This left
+  // Never exit successfully with an active lease. An early exit bypassed
+  // the runner result, retry backoff, and saved receipt. This left
   // tickets claiming "working" with no successful commit or failure evidence.
   if(!Array.isArray(edits))throw Error('The writer returned no bounded edit list.');
   const resume=edits.length===0 && clearJob &&
