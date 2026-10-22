@@ -107,9 +107,20 @@
    if(result.accepted!==1)throw Error('Memory was not confirmed saved.');
    return result.routed[0];
   }
+  async function browseSynapses(query='',{limit=8,topic='',offset=0}={}){
+   if(!enabled||!cloud)throw Error('Verified wallet memory is not connected.');
+   const allowed=['electronics_computing','ai_programming','physics_science','music_radio',
+    'stories_media','wallet_ledger','people_pets','general'];
+   if(topic&&!allowed.includes(topic))throw Error('Invalid memory topic.');
+   if(!Number.isSafeInteger(offset)||offset<0||offset>10000)throw Error('Invalid memory page.');
+   const params=new URLSearchParams({q:String(query||'').slice(0,200),
+    limit:String(Math.max(1,Math.min(20,Number(limit)||8))),offset:String(offset)});
+   if(topic)params.set('topic',topic);
+   return remoteFetch('/v1/synapses?'+params.toString());
+  }
   async function recall(query,limit=8){
    if(!enabled||!cloud)return [];
-   const result=await remoteFetch('/v1/synapses?q='+encodeURIComponent(String(query||'').slice(0,200))+'&limit='+Math.max(1,Math.min(20,limit)));
+   const result=await browseSynapses(query,{limit});
    return result.memories||[];
   }
   async function forgetSynapse(id){
@@ -180,7 +191,7 @@
   }
   function setEnabled(value){enabled=value===true;if(!enabled){cloud=false;token='';clearInterval(clock)}}
   function onUpdate(handler){onChange=typeof handler==='function'?handler:()=>{}}
-  return {setEnabled,onUpdate,append,appendAll,recent,search,context,remember,recall,forgetSynapse,connect,sync,clear,
+  return {setEnabled,onUpdate,append,appendAll,recent,search,context,remember,recall,browseSynapses,forgetSynapse,connect,sync,clear,
     get cloudConnected(){return cloud},get enabled(){return enabled}};
  }
  global.BubblesMemory=create();
