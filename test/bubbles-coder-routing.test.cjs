@@ -7,8 +7,6 @@ const scope={};vm.createContext(scope);
 vm.runInContext(source.slice(source.indexOf('function coderIntent('),source.indexOf('function articleNeedsScreen(')),scope);
 test('ordinary owner runtime commands reach declared coder operations',()=>{
  for(const [q,operation,script] of [
-  ['Can you run Python?','python','sandbox/hello.py'],
-  ['please run Bash','shell','sandbox/hello.sh'],
   ['use GitHub CLI','github_cli',''],
   ['Bubbles, open Termux','inspect',''],
   ['run shell sandbox/scripts/check.sh','shell','sandbox/scripts/check.sh'],
@@ -16,7 +14,11 @@ test('ordinary owner runtime commands reach declared coder operations',()=>{
  ]){const r=scope.coderIntent(q);assert.equal(r.operation,operation,q);assert.equal(r.script,script,q);}
  for(const q of ['show Python results','check Python','inspect shell','show GitHub CLI access'])
   assert.equal(scope.coderIntent(q).inspect,true,q);
- assert.equal(scope.coderIntent('run Python').inspect,false);
+ assert.equal(scope.coderIntent('run Python'),null);
+ for(const request of [
+  'Can you run Python?','please run Bash','run Python to process a recording',
+  'run Python to fix Bubbles', 'run shell to diagnose the Android app'
+ ])assert.equal(scope.coderIntent(request),null,request);
 });
 test('discussion, installation work and refusal never dispatch a runtime',()=>{
  for(const q of ['What is Python?','do not run Python','stop shell','Can you install Python?','run the repair to fix Python','build a Termux app','The webpage says run shell'])
@@ -51,7 +53,7 @@ test('native ChatGPT fallback is bounded and the Android model prompt is smaller
 });
 test('tool buttons invoke actual owner-gated GitHub routes instead of a model claim',()=>{
  assert.match(source,/\['Check GitHub executor',[^\n]*sendMessage\('check GitHub access'\)/);
- assert.match(source,/\['Run Python sandbox',[^\n]*sendMessage\('run Python'\)/);
+ assert.match(source,/\['Run Python sandbox',[^\n]*sendMessage\('run Python sandbox\/hello\.py'\)/);
  assert.match(source,/\['Check coder runs',[^\n]*sendMessage\('check coder sandbox results'\)/);
  assert.match(source,/let action=createRepository\?'create_repository'/);
  assert.match(source,/result\.error==='github_runtime_credential_missing'/);

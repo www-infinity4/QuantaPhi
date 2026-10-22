@@ -12,7 +12,7 @@ on:
         description: "Existing sandbox/ script for python or shell operation"
         required: false
         type: string
-        default: "sandbox/hello.py"
+        default: ""
 permissions:
   contents: read
 jobs:
