@@ -300,6 +300,20 @@ public final class BubblesService extends Service {
         String next = pendingWebsiteSpeech.pollFirst();
         if (next != null && !next.trim().isEmpty()) speak(next);
     }
+    private void reportSpeechFailure(String explanation) {
+        BrainNotes.prefs(this).edit().putString("last_error", explanation).apply();
+        if (oracleWindow != null) oracleWindow.showSpeechFailure(explanation);
+        // Avoid a permanent dead TTS engine. The original response remains
+        // visible in website chat even if Android cannot play it.
+        long now = SystemClock.elapsedRealtime();
+        if (!connected || muted || now - lastTtsRecoveryAt < 30000L) return;
+        lastTtsRecoveryAt = now;
+        if (NeuralSpeechEngine.preferredEngine(this) != null)
+            NeuralSpeechEngine.useAndroidDefault(this);
+        main.postDelayed(() -> {
+            if (connected && !muted) reloadSpeechEngine();
+        }, 1200L);
+    }
     private PlaybackAwareness playbackAwareness;
     private AudioRecord microphone;
     private android.media.audiofx.AcousticEchoCanceler echoCanceler;
@@ -313,6 +327,9 @@ public final class BubblesService extends Service {
     private boolean modelLoading = false;
     private boolean ttsReady = false;
     private TextToSpeech tts;
+    // One bounded engine recovery per 30 seconds; failures must not silently
+    // consume website responses or leave the foreground microphone stuck.
+    private long lastTtsRecoveryAt = -30000L;
     // Ignore asynchronous initialization from a replaced speech engine.
     private long ttsEngineGeneration = 0L;
     private volatile boolean connected = false, muted = false, speaking = false;
@@ -398,9 +415,8 @@ public final class BubblesService extends Service {
                     reloadSpeechEngine();
                     return;
                 }
-                pendingWebsiteSpeech.clear(); // The text is still in website chat.
-                BrainNotes.prefs(this).edit().putString("last_error",
-                    "Android speech engine could not initialize; choose an installed voice").apply();
+                // Keep bounded queued replies while trying the system voice.
+                reportSpeechFailure("Android speech engine could not initialize; choose an installed voice");
                 if (connected && !muted) state("error", 0);
                 return;
             }
@@ -447,15 +463,19 @@ public final class BubblesService extends Service {
                     main.post(() -> {if(id != null && id.equals(activeUtteranceId)) state("speaking", 0.6f);});
                 }
                 @Override public void onDone(String id) { main.post(() -> finishSpeaking(id)); }
-                @Override public void onError(String id) { main.post(() -> finishSpeaking(id)); }
+                @Override public void onError(String id) {
+                    main.post(() -> {
+                        if (id != null && id.equals(activeUtteranceId))
+                            reportSpeechFailure("Android voice playback failed; the answer is still in Bubbles chat");
+                        finishSpeaking(id);
+                    });
+                }
             });
             ttsReady = true;
             main.post(this::drainWebsiteSpeech);
             } catch (RuntimeException error) {
                 ttsReady = false;
-                pendingWebsiteSpeech.clear();
-                BrainNotes.prefs(this).edit().putString("last_error",
-                    "Android speech setup failed: " + error.getClass().getSimpleName()).apply();
+                reportSpeechFailure("Android speech setup failed: " + error.getClass().getSimpleName());
                 if (connected && !muted) state("error", 0);
             }
         });
@@ -1590,7 +1610,7 @@ public final class BubblesService extends Service {
             if (speaking && generation == speechGeneration && utterance.equals(activeUtteranceId)) {
                 tts.stop();
                 finishSpeaking(utterance);
-                BrainNotes.prefs(this).edit().putString("last_error", "Speech playback timed out; listening resumed").apply();
+                reportSpeechFailure("Speech playback timed out; listening resumed; answer remains in chat");
             }
         }, 90000);
         state("speaking", .4f);
@@ -1598,16 +1618,14 @@ public final class BubblesService extends Service {
             int result = tts.speak(response, TextToSpeech.QUEUE_FLUSH, null, utterance);
             if (result == TextToSpeech.ERROR) {
                 finishSpeaking(utterance);
-                BrainNotes.prefs(this).edit().putString("last_error",
-                    "Android speech engine rejected playback; text is still in chat").apply();
+                reportSpeechFailure("Android speech engine rejected playback; text is still in chat");
                 state("error", 0);
             }
         } catch (RuntimeException error) {
             // Without this, the speaking flag blocks every later reply until
             // the 90-second watchdog, even though the engine threw immediately.
             finishSpeaking(utterance);
-            BrainNotes.prefs(this).edit().putString("last_error",
-                "Android speech playback failed: " + error.getClass().getSimpleName()).apply();
+            reportSpeechFailure("Android speech playback failed: " + error.getClass().getSimpleName());
             state("error", 0);
         }
     }
