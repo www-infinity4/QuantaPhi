@@ -68,18 +68,18 @@ export async function webSearch(message,env={},fetcher=fetch){
 }
 export function weatherPlace(message,location){
  const s=trim(message,400);
- const zip=s.match(/\\b\\d{5}(?:-\\d{4})?\\b/);
+ const zip=s.match(/\b\d{5}(?:-\d{4})?\b/);
  if(zip)return zip[0];
- let match=s.match(/\\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\\b[\\s\\S]*?\\b(?:in|for|at|near)\\s+([a-z0-9][a-z0-9 ,.'-]{1,110})/i);
- if(!match)match=s.match(/\\b(?:in|at|near)\\s+([a-z0-9][a-z0-9 ,.'-]{1,110})\\s+(?:weather|forecast)\\b/i);
+ let match=s.match(/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b[\s\S]*?\b(?:in|for|at|near)\s+([a-z0-9][a-z0-9 ,.'-]{1,110})/i);
+ if(!match)match=s.match(/\b(?:in|at|near)\s+([a-z0-9][a-z0-9 ,.'-]{1,110})\s+(?:weather|forecast)\b/i);
  // Vosk commonly produces "weather search Albia Iowa", "weather Albia Iowa"
  // or "search for Albia Iowa weather" instead of "weather in Albia, Iowa".
  // These are explicit towns, not permission to use a previously saved location.
- if(!match)match=s.match(/\\b(?:weather|forecast)(?:\\s+(?:search|lookup|check|report|please)){0,2}\\s+([a-z][a-z ,.'-]{2,100})(?:[?!]|$)/i);
- if(!match)match=s.match(/\\b(?:search|check|look up)\\s+(?:for\\s+)?([a-z][a-z ,.'-]{2,100})\\s+(?:weather|forecast)\\b/i);
+ if(!match)match=s.match(/\b(?:weather|forecast)(?:\s+(?:search|lookup|check|report|please)){0,2}\s+([a-z][a-z ,.'-]{2,100})(?:[?!]|$)/i);
+ if(!match)match=s.match(/\b(?:search|check|look up)\s+(?:for\s+)?([a-z][a-z ,.'-]{2,100})\s+(?:weather|forecast)\b/i);
  const explicit=trim((match?.[1]||'')
-  .replace(/\\b(?:right now|today|tomorrow|this evening|this afternoon|this morning|please|currently)\\b.*$/i,'')
-  .replace(/\\s+(?:weather|forecast)\\s*$/i,'')
+  .replace(/\b(?:right now|today|tomorrow|this evening|this afternoon|this morning|please|currently)\b.*$/i,'')
+  .replace(/\s+(?:weather|forecast)\s*$/i,'')
   .replace(/[?.!,]+$/g,''),110);
  const nonPlace=/^(?:weather|forecast|search|search for|lookup|check|report|now|here|outside|there|is|was|will|like|what|how|conditions|in|for|at|near)$/i;
  if(explicit&&!nonPlace.test(explicit))return explicit;
