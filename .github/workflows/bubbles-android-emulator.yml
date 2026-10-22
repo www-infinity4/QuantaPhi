@@ -29,6 +29,12 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
+      - name: Enable host KVM access for Android emulator
+        run: |
+          set -euo pipefail
+          test -e /dev/kvm || { echo "::error::Hosted runner has no KVM device; actual Android execution not possible here"; exit 1; }
+          sudo chmod 666 /dev/kvm
+          test -r /dev/kvm && test -w /dev/kvm
       - name: Boot an Android 15 x86_64 emulator and launch the compiled APK
         uses: reactivecircus/android-emulator-runner@v2
         with:
@@ -37,6 +43,8 @@ jobs:
           arch: x86_64
           profile: pixel_3a
           ram-size: 2048M
+          disable-linux-hw-accel: false
+          emulator-boot-timeout: 1200
           script: bash test/bubbles-emulator-smoke.sh
       - name: Preserve emulator crash logs and screenshot
         if: always()
