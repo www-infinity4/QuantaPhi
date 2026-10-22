@@ -1,0 +1,46 @@
+{
+  "generator": "Bubbles signed server conversation",
+  "runtime": "GitHub Actions Ubuntu",
+  "sourceReviews": "Bubbles independent review turns",
+  "runId": "39829921400",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "945f793b5f0e39afba2c58ba143ceccd584d3fc639163d254c3afd81ddb4a6a5",
+      "reviewed": true
+    },
+    {
+      "path": "styles.css",
+      "sha256": "e02f7771f3a7117f9cae85da2df63e740b7d4f4c542e69af47767a42d03edd92",
+      "reviewed": true
+    },
+    {
+      "path": "app.js",
+      "sha256": "7842b7291fab5fe8b4cd54488ee385106cd22a6e2181075a96193c5bfa901bd5",
+      "reviewed": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "db95c04140c9c5b3d7824d28bfd522c1dbf37b34e46b1943b01eaf847f5501d1",
+      "reviewed": true
+    }
+  ],
+  "skills": [
+    {
+      "id": "linux-job-workspace",
+      "source": "www-infinity4/Moltnook/agents/repository-engine/skills/linux-job-workspace.md"
+    },
+    {
+      "id": "github-build-publish",
+      "source": "www-infinity4/Moltnook/agents/repository-engine/skills/github-build-publish.md"
+    },
+    {
+      "id": "static-site-source",
+      "source": "www-infinity4/Moltnook/agents/repository-engine/skills/static-site-source.md"
+    },
+    {
+      "id": "executor-conversation-handoff",
+      "source": "www-infinity4/Moltnook/agents/repository-engine/skills/executor-conversation-handoff.md"
+    }
+  ]
+}

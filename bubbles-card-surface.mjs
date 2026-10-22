@@ -11,7 +11,7 @@ export function compactCardDocument(doc,card){
  const style=doc.createElement('style');style.id='bubbles-compact-surface';
  style.textContent=`
  html,body{margin:0!important;padding:0!important;min-width:0!important;min-height:0!important;background:#fff!important;color:#231c3c!important}
- body > :not(.bubbles-card-root):not(.bubbles-card-path),.bubbles-card-path > :not(.bubbles-card-root):not(.bubbles-card-path){display:none!important}
+ body:not(.bubbles-card-root) > :not(.bubbles-card-root):not(.bubbles-card-path),.bubbles-card-path > :not(.bubbles-card-root):not(.bubbles-card-path){display:none!important}
  .bubbles-card-path{margin:0!important;padding:0!important;min-height:0!important;max-width:100%!important;width:auto!important}
  .bubbles-card-root{box-sizing:border-box!important;margin:0!important;padding:16px!important;max-width:100%!important;width:100%!important;min-height:0!important;background:#fff!important;border:0!important;box-shadow:none!important}
  `;
