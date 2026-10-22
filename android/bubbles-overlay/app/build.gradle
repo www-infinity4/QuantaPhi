@@ -9,8 +9,8 @@ android {
         applicationId 'org.quantaphi.bubbles'
         minSdk 26
         targetSdk 35
-        versionCode 56
-        versionName '0.56.0'
+        versionCode 57
+        versionName '0.57.0'
     }
     // Preview 5 is a new installable package because past preview-4 builds had
     // inconsistent certificates. CI supplies a cached preview-only keystore;
@@ -32,7 +32,12 @@ android {
                 signingConfig signingConfigs.preview
             }
             // Phone-only preview: exclude x86 emulator libraries from the download.
-            ndk { abiFilters 'armeabi-v7a', 'arm64-v8a' }
+            ndk {
+                // The distributed Moto G APK is ARM-only. A dedicated CI build
+                // adds x86_64 only to boot the real application in an emulator.
+                if (project.hasProperty('bubblesEmulatorSmoke')) abiFilters 'x86_64'
+                else abiFilters 'armeabi-v7a', 'arm64-v8a'
+            }
         }
         release {
             manifestPlaceholders = [appTitle: 'Bubbles AI']
