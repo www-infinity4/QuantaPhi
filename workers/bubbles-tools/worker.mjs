@@ -156,7 +156,12 @@ export function hasUnfinishedResearchDraft(answer){
  if(text.length>320)return false;
  return /^(?:(?:i|we)\s+(?:will|would|should|need to|plan to|am going to)|i(?:'ll| am about to)|attempt(?:ing)? to|let(?:'s| us)|next[:,\s]+)\s+(?:first\s+)?(?:read|fetch|open|retrieve|search|check|inspect|look up|visit)\b/i.test(text);
 }
+export function hasUnusableModelOutput(answer){
+ const text=String(answer||'').trim();
+ return !/[\p{L}\p{N}]/u.test(text)||/(\S)\1{79,}/u.test(text);
+}
 function groundedWorkFallback(request){
+ if(/\b(?:click|tap|press)\b/i.test(request))return 'I could not complete that action. Open the page or card you want me to use so I can inspect its controls and verify the result.';
  const target=/video/i.test(request)?'video generator':/wallet|quant|coin/i.test(request)?'wallet ledger':/image/i.test(request)?'image generator':/radio|music/i.test(request)?'radio player':/robot brain|bot/i.test(request)?'Robot Brain':/bubbles|voice|microphone/i.test(request)?'Bubbles voice and job bridge':'requested repository component';
  return 'This conversation has not verified a code edit, deployment or Robot Brain job. To continue the '+target+' work, inspect its current source and focused tests, then submit the specific repair through the authenticated owner Brain. A real ticket, commit or deployment receipt—not a chat answer—must confirm each completed action.';
 }
@@ -620,7 +625,7 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
  let output=result?.response||result?.choices?.[0]?.message?.content;
  if(typeof output!=='string'||!output.trim())throw Error('empty_gpt_response');
  // One bounded correction; never fabricate a repository edit or execute a job.
- const dubious=()=>isGenericBuildReply(userRequest,output)||hasUnverifiedActionClaim(userRequest,output)||hasModelToolLeak(output)||
+ const dubious=()=>hasUnusableModelOutput(output)||isGenericBuildReply(userRequest,output)||hasUnverifiedActionClaim(userRequest,output)||hasModelToolLeak(output)||
   (Boolean(evidence)&&/\b(?:research|explain|summari[sz]e|analy[sz]e|compare|project)\b/i.test(userRequest)&&hasUnfinishedResearchDraft(output));
  if(dubious()){
   try{
