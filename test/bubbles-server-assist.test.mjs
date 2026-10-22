@@ -122,3 +122,21 @@ test('signed follow-up history excludes expired, failed, unrelated and untrusted
  const malformed=await precedingSignedTurns({id:'chatgpt_assist_abc_1',db:f.args.db,now:1000});
  assert.equal(malformed,'');
 });
+
+test('signed chat distinguishes completed web search from incomplete answer',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({ok:true,output:'I found excerpts but could not finish a reliable explanation.',
+  answerStatus:'partial',analysisVerified:false,
+  receipt:{tool:'web.search',status:'complete'},
+  sources:[{title:'DARPA O-Circuit',url:'https://www.darpa.mil/research/programs/o-circuit'}]});
+ const started=await serverAssist({...f.args,body:{operation:'assist',text:'Explain DARPA O-Circuit'}});
+ assert.equal(started.state,'complete');
+ const result=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(result.state,'complete'); // transport completed
+ assert.equal(result.result.receipt.status,'complete'); // actual search completed
+ assert.equal(result.result.answerStatus,'partial'); // explanation did NOT finish
+ assert.equal(result.result.analysisVerified,false);
+ assert.equal(result.result.sources.length,1);
+ const context=await precedingSignedTurns({id:'chatgpt_assist_123_1',db:f.args.db,now:1000});
+ assert.match(context,/tool complete, answer partial/);
+});

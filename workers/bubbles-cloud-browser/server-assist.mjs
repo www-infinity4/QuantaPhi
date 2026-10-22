@@ -48,7 +48,7 @@ export async function precedingSignedTurns({id,db,now=Date.now()}){
   if(typeof prompt!=='string'||answer?.ok!==true||typeof answer.output!=='string'||!answer.output.trim())continue;
   const safe=value=>String(value).replace(/[\x00-\x1f\x7f]/g,' ').trim();
   transcript.push('Earlier question: '+safe(prompt).slice(0,450)+'\nEarlier Bubbles answer ('+
-   String(answer.receipt?.status||'unverified').slice(0,35)+'): '+safe(answer.output).slice(0,1150));
+   'tool '+String(answer.receipt?.status||'unverified').slice(0,30)+', answer '+String(answer.answerStatus||'unverified').slice(0,30)+'): '+safe(answer.output).slice(0,1150));
  }
  // Pass only this run's fixed browser-check receipt to the conversational
  // agent. Never pass browser bearer URLs, cookies, session IDs or owner pages.
@@ -89,7 +89,8 @@ export async function executeServerAssist({id,db,store,fetcher=fetch,now=Date.no
     if(!await approved(store))throw Error('consent_revoked');
     const output=String(data.output||data.output_text||'').trim();
     if(data.ok!==true||!output||!data.receipt)throw Error('no_verified_bubbles_response');
-    result={ok:true,output:output.slice(0,8000),receipt:{tool:String(data.receipt.tool||'conversation').slice(0,100),status:String(data.receipt.status||'unverified').slice(0,60)},
+    result={ok:true,output:output.slice(0,8000),answerStatus:data.answerStatus==='partial'?'partial':(data.answerStatus==='complete'?'complete':'unverified'),analysisVerified:data.analysisVerified===true,
+     receipt:{tool:String(data.receipt.tool||'conversation').slice(0,100),status:String(data.receipt.status||'unverified').slice(0,60)},
      sources:(Array.isArray(data.sources)?data.sources:[]).slice(0,8).map(s=>({title:String(s.title||'').slice(0,200),url:String(s.url||'').slice(0,1500)})),
      scope:'public_bubbles_conversation',ownerToolsVerified:false,phoneVerified:false};
     state='complete';
