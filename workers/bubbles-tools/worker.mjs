@@ -1,6 +1,7 @@
 import {browserTool} from './browser.mjs';
 import {researchArticle} from './research.mjs';
 import {handleMcp,mcpTools,selectMcpTool} from './mcp.mjs';
+import {calculateOrganicBenchmark,organicSpeechArgs,describeOrganic} from './organic-benchmark.mjs';
 import {semanticDecision,interpretOwnerWork} from './semantic-intent.mjs';
 import {lookupKind,webSearch,currentWeather,compareWeather} from './search.mjs';
 import {needsReadAgent,runReadAgent,planReadSteps} from './read-agent.mjs';
@@ -68,6 +69,7 @@ export function chooseTool(text){
  // Instructions inside a requested source document are content, not lookup
  // commands. Drafting a README that mentions GitHub must not read a repo.
  if(isSourceDraftRequest(text))return 'oracle.chat';
+ if(/\b(?:organic\s+computation|associative\s+memory|memory\s+recall|pattern\s+recall)\b/i.test(request)&&/\b(?:benchmark|compare|simulate|simulation|test\s+recall|run\s+memory)\b/i.test(request))return 'organic.memory_benchmark';
  if(/\b(?:open|show|launch|pull\s+up|bring\s+up)\b/.test(request)&&/\b(?:resonator|resonance\s+calculator|resonance\s+engine)\b/.test(request))return 'resonance.open';
  if(/\b(?:resonance|resonator|resonant\s+frequency|lc\s+(?:tank|circuit|frequency))\b/.test(request)
    &&(/\b(?:calculate|compute|find|solve|run|what\s+is|what's)\b/.test(request)||parseResonanceSpeech(request)))return 'resonance.calculate';
@@ -326,7 +328,7 @@ export async function readPublicPage(request,body,receipt,fetcher=fetch){
 
 async function execute(request,env,body){
  const question=clean(body.request);if(!question)return response(request,{ok:false,error:'request_required'},400);
- const tool=['resonance.calculate','web.search','weather.current','news.headlines'].includes(body.tool)?body.tool:chooseTool(question),id=crypto.randomUUID();
+ const tool=['resonance.calculate','organic.memory_benchmark','web.search','weather.current','news.headlines'].includes(body.tool)?body.tool:chooseTool(question),id=crypto.randomUUID();
  const receipt={id,tool,status:'started',createdAt:new Date().toISOString(),kind:'bubbles-tool-result',minted:false};
  if(/\b(?:what|which|describe|explain|show)\b/i.test(question)&&/\b(?:server runtime|running on|runtime and tools|runtime.*tools)\b/i.test(question)){
   return response(request,{ok:true,output:'This Bubbles chat runs on Cloudflare Workers using JavaScript. '+
@@ -358,6 +360,15 @@ async function execute(request,env,body){
  }
  if(/^(?:show|list|check|what are)\b/i.test(question)&&/\bmcp\b/i.test(question)&&/\btools?\b/i.test(question))return response(request,{ok:true,output:'MCP tools available through Bubbles: '+mcpTools.map(t=>t.name).join(', ')+'. These are read-only. Robot Brain owner jobs and GitHub edits still require their separately verified authorization.',receipt:{...receipt,tool:'mcp.catalog',status:'complete',repositoryActionsVerified:false}});
  if(tool==='resonance.open')return response(request,{ok:true,output:'Open the Infinity Resonance Calculator v3 at '+CALCULATOR_UI+'. Say “calculate resonance at 10 microhenries and 22 picofarads” to run the mathematical tool here.',url:CALCULATOR_UI,receipt:{...receipt,status:'complete',calculatorOpened:false}});
+ if(tool==='organic.memory_benchmark'){
+  try{
+   const options=body.args&&typeof body.args==='object'&&!Array.isArray(body.args)?body.args:organicSpeechArgs(question);
+   const result=calculateOrganicBenchmark(options);
+   return response(request,{ok:true,output:describeOrganic(result),result,
+    receipt:{...receipt,status:'complete',tool:'organic.memory_benchmark',provider:'local-deterministic-software',softwareOnly:true,repositoryActionsVerified:false}});
+  }catch(error){return response(request,{ok:true,output:'I could not run the bounded software memory comparison: '+clean(error?.message,80)+'. Use up to 1,000 trials and 0 to 6 flipped bits.',
+   receipt:{...receipt,status:'invalid_input',tool:'organic.memory_benchmark',repositoryActionsVerified:false}});}
+ }
  if(tool==='resonance.calculate'){
   const args=body.args&&typeof body.args==='object'&&!Array.isArray(body.args)?body.args:parseResonanceSpeech(question);
   if(!args)return response(request,{ok:true,output:'For the resonance calculation, tell me both inductance and capacitance, for example: 10 microhenries and 22 picofarads.',url:CALCULATOR_UI,receipt:{...receipt,status:'needs_input',reason:'inductance_and_capacitance_required'}});
@@ -450,7 +461,8 @@ async function runMcpRead(request,env,command,originalQuestion=''){
   web_search:()=>({request:command.query,tool:'web.search',researchContext:clean(originalQuestion,1800)}),
   weather_current:()=>({request:'What is the current weather in '+command.location,location:command.location,tool:'weather.current'}),
   resonance_calculate:()=>({request:'Calculate resonance',tool:'resonance.calculate',args:{l:command.l,lUnit:command.lUnit,c:command.c,cUnit:command.cUnit}}),
-  news_headlines:()=>({request:'Latest current headlines',tool:'news.headlines'})
+  news_headlines:()=>({request:'Latest current headlines',tool:'news.headlines'}),
+  organic_memory_benchmark:()=>({request:'Compare Organic Computation memory recall',tool:'organic.memory_benchmark',args:{seed:command.seed,trials:command.trials,flippedBits:command.flippedBits}})
  };
  if(!Object.prototype.hasOwnProperty.call(cases,command.name))throw Error('unsupported_mcp_tool');
  const result=await execute(request,env,cases[command.name]());
@@ -534,7 +546,7 @@ export default {async fetch(request,env){
  const url=new URL(request.url);
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
  if(url.pathname==='/mcp')return handleMcp(request,env,command=>runMcpRead(request,env,command));
- if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261022-read-agent-v1',tools:{readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
+ if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261022-read-agent-v1',tools:{readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
  if(request.method==='POST'&&url.pathname==='/v1/intent'){
@@ -565,7 +577,7 @@ export default {async fetch(request,env){
   if(text.length>70000)return response(request,{ok:false,error:'body_too_large'},413);
   const result=await execute(request,env,body);if(!result.ok)return result;
   const data=await result.clone().json();
-  if(data.model||data.receipt?.tool==='runtime.capabilities'||data.receipt?.tool==='agent.read_sequence'||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
+  if(data.model||data.receipt?.tool==='runtime.capabilities'||data.receipt?.tool==='agent.read_sequence'||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='organic.memory_benchmark'||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
   const summarize=()=>gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
   if(data.receipt?.tool==='web.search')return finishSearchReply(result,summarize,20000,clean(body.request));
   if(data.receipt?.tool==='web.read_page')return data.receipt.status==='complete'?finishSearchReply(result,summarize,12000,clean(body.request)):result;

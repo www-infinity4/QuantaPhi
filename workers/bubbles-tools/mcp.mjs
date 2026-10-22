@@ -6,7 +6,8 @@ const tools=[
  {name:'web_search',title:'Bubbles Web Search',description:'Read search-result excerpts, not full pages. No browser, writes or logins.',inputSchema:{type:'object',properties:{query:{type:'string',description:'Search words (max 1500 characters)'}},required:['query'],additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:true}},
  {name:'weather_current',title:'Current Weather',description:'Read town-level weather forecast from the existing Open-Meteo adapter.',inputSchema:{type:'object',properties:{location:{type:'string',description:'Town or city (max 150 characters)'}},required:['location'],additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:true}},
  {name:'resonance_calculate',title:'LC Resonance Calculator',description:'Calculate ideal LC resonant frequency from explicit inductance and capacitance units.',inputSchema:{type:'object',properties:{l:{type:'number'},lUnit:{type:'string',enum:['H','mH','uH'],description:'H, mH, or uH only'},c:{type:'number'},cUnit:{type:'string',enum:['F','uF','nF','pF'],description:'F, uF, nF, or pF only'}},required:['l','lUnit','c','cUnit'],additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false}},
- {name:'news_headlines',title:'Dated News Headlines',description:'Read dated news headlines or an explicitly labeled fallback. Not remembered headlines.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:true}}
+ {name:'news_headlines',title:'Dated News Headlines',description:'Read dated news headlines or an explicitly labeled fallback. Not remembered headlines.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:true}},
+ {name:'organic_memory_benchmark',title:'Organic Computation memory simulation',description:'Run a safe fixed-pattern digital recall comparison, with three fair baselines. No biological experiments, external files, logins or energy claims.',inputSchema:{type:'object',properties:{seed:{type:'integer',minimum:0,maximum:4294967295},trials:{type:'integer',minimum:1,maximum:1000},flippedBits:{type:'integer',minimum:0,maximum:6}},additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false}}
 ];
 export const mcpTools=Object.freeze(tools);
 const clean=(v,max)=>typeof v==='string'?v.trim().slice(0,max):'';
@@ -46,6 +47,13 @@ export function validateCall(name,args){
  if(name==='web_search')return {name,query:clean(args.query,1500)};
  if(name==='weather_current')return {name,location:clean(args.location,150)};
  if(name==='news_headlines')return {name};
+ if(name==='organic_memory_benchmark'){
+  const allowed=['seed','trials','flippedBits'];
+  if(Object.keys(args).some(key=>!allowed.includes(key)))throw Error('invalid_arguments');
+  const seed=args.seed??111,trials=args.trials??250,flippedBits=args.flippedBits??1;
+  if(!Number.isSafeInteger(seed)||seed<0||seed>0xffffffff||!Number.isSafeInteger(trials)||trials<1||trials>1000||!Number.isSafeInteger(flippedBits)||flippedBits<0||flippedBits>6)throw Error('invalid_arguments');
+  return {name,seed,trials,flippedBits};
+ }
  if(!Number.isFinite(args.l)||!Number.isFinite(args.c)||args.l<=0||args.c<=0||args.l>1e15||args.c>1e15||typeof args.lUnit!=='string'||typeof args.cUnit!=='string'||args.lUnit.length>24||args.cUnit.length>24)throw Error('invalid_arguments');
  return {name,l:args.l,lUnit:canonicalUnit(args.lUnit,'inductance'),c:args.c,cUnit:canonicalUnit(args.cUnit,'capacitance')};
 }
@@ -100,7 +108,7 @@ export async function selectMcpTool(env,question,invoke,context={}){
  const functions=tools.map(t=>({type:'function',function:{name:t.name,description:t.description,parameters:t.inputSchema}}));
  let result;
  const options={
-  messages:[{role:'system',content:'Interpret natural conversational meaning, not memorized commands. Select one read-only tool only for a clear need for live web search, current weather, dated headlines, or LC calculations; otherwise select no tool. Never invent city, units, factual observations or permission. If no weather location was supplied, leave location empty. No account, browser-control, code, file, phone, GitHub or Robot Brain writes.'},{role:'user',content:clean(question,2500)}],
+  messages:[{role:'system',content:'Interpret natural conversational meaning, not memorized commands. Select one read-only tool only for a clear need for live web search, current weather, dated headlines, LC calculations, or a named organic computation digital recall benchmark; otherwise select no tool. Never invent city, units, factual observations or permission. If no weather location was supplied, leave location empty. No account, browser-control, code, file, phone, GitHub or Robot Brain writes.'},{role:'user',content:clean(question,2500)}],
   tools:functions,tool_choice:'auto',reasoning_effort:'medium',max_tokens:350
  };
  try{result=await env.AI.run('@cf/openai/gpt-oss-120b',options)}

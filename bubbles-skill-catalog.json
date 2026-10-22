@@ -64,10 +64,10 @@
     {
       "id": "bubbles:organic-computation",
       "label": "Organic Computation research and simulation",
-      "description": "Research DARPA O-Circuit goals and source-backed biological-computation concepts. A reproducible Python pattern-memory benchmark with simple baselines exists in the Organic-Computation repository; no live Bubbles executor is connected yet.",
+      "description": "DARPA O-Circuit research plus a fixed-pattern digital memory benchmark. A read-only JavaScript execution adapter is implemented in Bubbles source and responds with measured counts, matched baseline accuracies and limitations. Live Cloudflare deployment is not yet verified.",
       "origin": "Bubbles / Organic-Computation",
-      "state": "source_ready_not_deployed",
-      "requires": "Verified read-only Bubbles sandbox adapter to run Python; no neural-tissue or energy claim",
+      "state": "implemented_in_source_pending_live_deployment",
+      "requires": "Deploy exact reviewed bubbles-tools Worker version and confirm real /v1/assist and authenticated MCP receipts; software-only",
       "sourceUrl": "https://github.com/www-infinity4/Organic-Computation"
     }
   ],

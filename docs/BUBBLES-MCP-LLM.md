@@ -9,7 +9,7 @@ Bubbles website and Android WebView both use `bubbles-ai.js` -> the existing `bu
 - `bubbles-ai.js`: sets `mcp:true` for ordinary Bubbles Worker messages and offers an **MCP LLM tools** macro button. Explicit requests to use MCP may cause a single Cloudflare GPT-OSS 120B structured function-call decision; unstructured model text and arbitrary tool names never execute.
 - `test/bubbles-mcp.test.mjs`: rejects missing auth, arbitrary GitHub actions, unexpected parameters, mismatched protocol versions, and fake model-generated tool JSON.
 
-Available MCP tools: `web_search` (search snippets only), `weather_current` (town-level provider), `resonance_calculate` (mathematical ideal-LC computation), and `news_headlines` (dated sources and labeled fallback). These are **read-only**. The Worker does not accept MCP-supplied network URLs, filesystem paths, shell commands, repository edits or owner permissions.
+Available MCP tools: `web_search` (search snippets only), `weather_current` (town-level provider), `resonance_calculate` (mathematical ideal-LC computation), `news_headlines` (dated sources and labeled fallback), and `organic_memory_benchmark` (deterministic software-only pattern recall). These are **read-only**. The Organic benchmark uses a fixed six-bit training set, a bounded seeded JavaScript experiment, and three matched baselines; it **does not** execute Python in Workers, measure biological energy, or demonstrate an organoid. Its PR and source tests do not by themselves prove production deployment. The Worker does not accept MCP-supplied network URLs, filesystem paths, shell commands, repository edits or owner permissions.
 
 ## Required configuration and deployment
 
