@@ -7,6 +7,9 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'privacy.html'
+      - 'site-footer.css'
+      - 'about.html'
       - 'explore/**'
       - 'bubbles.html'
       - 'video-studio.html'
@@ -14,6 +17,7 @@ on:
       - 'sitemap.xml'
       - 'scripts/audience-audit.mjs'
       - 'test/audience-audit.test.mjs'
+      - 'test/privacy-policy.test.mjs'
       - '.github/workflows/audience-watch.yml'
 permissions:
   contents: read
@@ -34,7 +38,7 @@ jobs:
       - name: Verify audit source and regression tests
         run: |
           node --check scripts/audience-audit.mjs
-          node --test test/audience-audit.test.mjs
+          node --test test/audience-audit.test.mjs test/privacy-policy.test.mjs
       - name: Inspect public search landing pages and social previews
         id: site_audit
         continue-on-error: true
