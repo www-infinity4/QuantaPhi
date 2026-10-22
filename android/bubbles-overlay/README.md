@@ -13,7 +13,7 @@ open and idle. The site itself also checks periodically. A version change
 reloads the first-party website page only after an active conversation turn is
 finished; it never silently upgrades native Android recording permissions,
 forces microphone access, or replaces the Android application binary.
-The APK versionCode/versionName advance to 56 / 0.56.0 so the rebuilt
+The APK versionCode/versionName advance to 58 / 0.58.0 so the rebuilt
 Preview 5 package can be installed as an update under the same signing key.
 
 There is one assistant and one transcript: Android speech recognition forwards
