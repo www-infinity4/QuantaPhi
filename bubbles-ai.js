@@ -271,6 +271,9 @@ longMemory?.setEnabled(keepChat);
 const THREAD_INDEX='quantaphi:bubbles:threads:v2'+(bubbleId?':'+bubbleId:'');
 const THREAD_PREFIX=THREAD_INDEX+':';
 const TAB_THREAD=THREAD_INDEX+':tab';
+const EXPLICIT_THREAD=TAB_THREAD+':explicit';
+// An ID for a single default website/APK conversation, not an auth credential.
+const SHARED_MAIN_THREAD='bubbles_shared_main_v1';
 let threadIndex=data(THREAD_INDEX,[]);
 if(!Array.isArray(threadIndex))threadIndex=[];
 const legacy=data(HISTORY,[]);
@@ -282,10 +285,13 @@ if(keepChat&&legacy?.length&&!data(THREAD_INDEX+':migrated',false)){
 }
 let lastTab='';try{lastTab=sessionStorage.getItem(TAB_THREAD)||''}catch{}
 const reloaded=typeof performance!=='undefined'&&performance.getEntriesByType?.('navigation')?.[0]?.type==='reload';
-let activeThread=reloaded&&threadIndex.some(t=>t.id===lastTab)?lastTab:'chat_'+crypto.randomUUID().replaceAll('-','');
+let explicitlySelected=false;
+try{explicitlySelected=sessionStorage.getItem(EXPLICIT_THREAD)==='1'}catch{}
+let activeThread=explicitlySelected&&threadIndex.some(t=>t.id===lastTab)?lastTab:
+ embedded?'chat_'+crypto.randomUUID().replaceAll('-',''):SHARED_MAIN_THREAD;
 try{sessionStorage.setItem(TAB_THREAD,activeThread)}catch{}
 if(!threadIndex.some(t=>t.id===activeThread)){
- threadIndex.unshift({id:activeThread,title:'New conversation',updated:Date.now()});
+ threadIndex.unshift({id:activeThread,title:activeThread===SHARED_MAIN_THREAD?'Bubbles shared chat':'New conversation',updated:Date.now()});
  save(THREAD_INDEX,threadIndex);
 }
 const readThread=id=>(data(THREAD_PREFIX+id,[])||[]).filter(m=>m&&['user','assistant'].includes(m.role)&&typeof m.text==='string').slice(-400);
@@ -1409,7 +1415,10 @@ async function openConversation(id){
   }catch{chatsMessage.textContent='Showing the saved device copy. Cloud history was unavailable.'}
  }
  activeThread=id;
- try{sessionStorage.setItem(TAB_THREAD,id)}catch{}
+ try{
+  sessionStorage.setItem(TAB_THREAD,id);
+  sessionStorage.setItem(EXPLICIT_THREAD,id===SHARED_MAIN_THREAD?'0':'1');
+ }catch{}
  messages=next.map(m=>({...m,sessionId:id,id:m.id||crypto.randomUUID(),at:m.at||Date.now()}));
  memoryContext=[];activeCardEvidence=null;cardWorkspaceInstance?.close();cardWorkspaceInstance=null;
  conversation.replaceChildren();
@@ -1423,7 +1432,10 @@ async function startConversation(){
  if(busy){chatsMessage.textContent='Finish the current reply first.';return;}
  if(keepChat)saveThread();
  activeThread='chat_'+crypto.randomUUID().replaceAll('-','');
- try{sessionStorage.setItem(TAB_THREAD,activeThread)}catch{}
+ try{
+  sessionStorage.setItem(TAB_THREAD,activeThread);
+  sessionStorage.setItem(EXPLICIT_THREAD,'1');
+ }catch{}
  threadIndex.unshift({id:activeThread,title:'New conversation',updated:Date.now()});
  save(THREAD_INDEX,threadIndex);
  messages=[];memoryContext=[];greeted=false;activeCardEvidence=null;
@@ -3108,7 +3120,34 @@ if(!embedded&&incomingWork&&incomingWork.length<=1800){
  workStatus.textContent='Your Android work draft is ready. Connect your owner session and press Start work to send it.';
  history.replaceState(null,'',location.pathname);
 }
+// Live HTML is authoritative: Android never pins site JavaScript to an APK
+// version. Compare revisions only on this trusted first-party origin.
+const siteScript=[...document.querySelectorAll('script[src]')].find(el=>
+ {try{return new URL(el.src,location.href).pathname==='/bubbles-ai.js'}catch{return false}});
+const siteRevision=siteScript?new URL(siteScript.src,location.href).searchParams.get('v')||'':'';
+let siteVersionChecking=false,lastSiteVersionCheck=0;
+async function checkForSiteUpdate(){
+ if(embedded||siteVersionChecking||Date.now()-lastSiteVersionCheck<25000)return false;
+ siteVersionChecking=true;lastSiteVersionCheck=Date.now();
+ try{
+  const target=new URL('/bubbles.html',location.origin);
+  target.searchParams.set('revision_check',String(Date.now()));
+  const response=await bubblesFetch(target.href,{cache:'no-store'},9000);
+  if(!response.ok)return false;
+  const html=await response.text();
+  const remote=html.match(/<script\\b[^>]*\\bsrc=["']\\/bubbles-ai\\.js\\?v=([^"'&]+)[^"']*["']/i)?.[1]||'';
+  if(!remote||!siteRevision||remote===siteRevision)return false;
+  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
+  if(keepChat)saveThread();
+  location.reload();
+  return true;
+ }catch{return false}
+ finally{siteVersionChecking=false}
+}
 window.QuantaBubbles={
+ siteRevision,
+ sharedMainThread:SHARED_MAIN_THREAD,
+ checkForSiteUpdate,
  syncNativePhoneStatus:state=>{if(nativeOverlay)void phoneTools().then(m=>m.sync(state)).catch(e=>{status.textContent='Phone tool: '+e.message;});},
  takeNativePhoneCommand:()=>nativeOverlay&&phoneModuleReady?phoneModuleReady.takeCommand():'',
  completeNativePhoneCommand:receipt=>{if(nativeOverlay&&phoneModule)void phoneModule.then(m=>m.complete(receipt));},
@@ -3277,6 +3316,8 @@ if(nativeOverlay){
  status.textContent='Bubbles website assistant · native microphone · owner wallet verification required for Brain jobs';
 }
 if(!embedded&&typeof setInterval==='function'){
+ // Both Chrome and APK can refresh their loaded page after a site deployment.
+ setInterval(()=>{if(!document.hidden)void checkForSiteUpdate()},90000);
  // A short owner-scoped sync loop stops competing microphones and mirrors chat.
  setInterval(()=>{if(ownerReady){
   if(!busy)void sharedMemory();
