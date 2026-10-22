@@ -1032,6 +1032,16 @@ public final class BubblesService extends Service {
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
         Matcher matcher = namedWake.matcher(text);
         boolean directed = matcher.find();
+        // A tapped RecordB start is an intentional foreground interaction. Keep
+        // its short spoken follow-up window even with app/media sound playing.
+        // All longer-lived recording controls still require source gating.
+        if (typed) {
+            VoiceCaptureCommands.Command started = VoiceCaptureCommands.parse(text);
+            if (started != null && "screen_video".equals(started.action)) {
+                activeUntil = now + 30000L;
+                voiceFollowups = 0;
+            }
+        }
         // "Record Bubbles" is a deliberately addressed local capture command
         // even when the optional Room Notes mode requires a wake name.
         boolean suffixCapture = text.matches(
@@ -1053,8 +1063,12 @@ public final class BubblesService extends Service {
             activeUntil = now + 30000L;
             voiceFollowups = 0;
         }
+        boolean recentRecordBFollowup = !typed && now < activeUntil
+            && ScreenCaptureService.isRunning()
+            && BrainNotes.prefs(this).getBoolean("capture_active", false);
         if (!SpeechSourceGate.mayDispatch(typed,
-                playbackAwareness != null && playbackAwareness.mediaPlaying(), directed || suffixCapture)) {
+                playbackAwareness != null && playbackAwareness.mediaPlaying(),
+                directed || suffixCapture || recentRecordBFollowup)) {
             // Background phone audio is not authorization to speak or run jobs.
             BrainNotes.prefs(this).edit().putString("last_suppressed_source",
                     "Phone playback active; say Bubbles to address the assistant").apply();
