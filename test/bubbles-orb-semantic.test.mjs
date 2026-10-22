@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {semanticDecision,validateSemanticDecision} from '../workers/bubbles-tools/semantic-intent.mjs';
+import {semanticDecision,validateSemanticDecision,interpretOwnerWork,validateOwnerWorkDecision} from '../workers/bubbles-tools/semantic-intent.mjs';
 const root='android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/';
 const source=p=>fs.readFileSync(p,'utf8');
 const catalog=[{id:'media-star',title:'Media Star',aliases:['fred radio']},{id:'fred-spaces',title:'Fred Spaces',aliases:['Fred Krueger']},{id:'infinity-radio',title:'Infinity Radio',aliases:['radio']}];
@@ -72,4 +72,20 @@ test('frontend verifies selected registered tool and never executes model-propos
  assert.match(web,/module\.cards\.find\(c=>c\.id===decision\.cardId\)/);
  assert.match(web,/workspace\.handle\(\{action:decision\.kind==='play_card'\?'play':'open',card:target\}\)/);
  assert.match(card,/export \{cardIntent,cards\};/);
+});
+
+test('neural work interpreter labels a direct engineering job but never authorizes an action',async()=>{
+ let called=0;
+ const result=await interpretOwnerWork({request:'Get Bubbles weather search working properly'},async options=>{
+  called++;
+  assert.match(options.messages[0].content,/no authority|grants no authority/i);
+  assert.equal(options.messages[1].content,'Get Bubbles weather search working properly');
+  return {response:JSON.stringify({kind:'repository_work',confidence:0.94})};
+ });
+ assert.equal(called,1);
+ assert.deepEqual(result,{kind:'repository_work',confidence:0.94});
+ assert.equal(validateOwnerWorkDecision('{"kind":"repository_work","confidence":0.3}').kind,'none');
+ assert.equal(validateOwnerWorkDecision('{"kind":"repository_work","confidence":0.95,"command":"rm -rf /"}').kind,'repository_work');
+ assert.deepEqual(await interpretOwnerWork({request:'Please do not repair Bubbles'},async()=>{throw Error('model must not run for refusal')}),{kind:'none'});
+ assert.deepEqual(await interpretOwnerWork({request:'Get Bubbles working'},async()=>{throw Error('provider down')}),{kind:'none'});
 });
