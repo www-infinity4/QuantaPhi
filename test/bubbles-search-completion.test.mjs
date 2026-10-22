@@ -79,3 +79,37 @@ test('unavailable research synthesis keeps genuine search sources and marks expl
   assert.match(body.output,/not complete/i);
  }finally{globalThis.fetch=originalFetch}
 });
+
+test('fabricated id-first web.read JSON never reaches Bubbles chat or voice',async()=>{
+ const bad='We will fetch the DARPA page. {"id":"read1","tool":"web.read","url":"https://www.darpa.mil/research/programs/o-circuit"}';
+ const {hasModelToolLeak}=await import('../workers/bubbles-tools/worker.mjs');
+ assert.equal(hasModelToolLeak(bad),true);
+ const source=Response.json({ok:true,output:'Live results from source excerpts: example.',
+  sources:[{title:'O-Circuit - DARPA',url:'https://www.darpa.mil/research/programs/o-circuit',excerpt:'DARPA program goals involve biological processing units.'}],
+  receipt:{tool:'web.search',status:'complete'}});
+ const result=await finishSearchReply(source,()=>Response.json({ok:true,output:bad}),20,'Research DARPA O-Circuit using sources and explain the findings');
+ const data=await result.json();
+ assert.equal(data.answerStatus,'partial');
+ assert.equal(data.receipt.status,'complete'); // the search succeeded, explanation did not
+ assert.match(data.output,/I found source excerpts/);
+ assert.match(data.output,/could not finish a reliable explanation/);
+ assert.doesNotMatch(data.output,/\{"id"|"tool"|We will fetch|Live results from/);
+ assert.equal(data.sources[0].url,'https://www.darpa.mil/research/programs/o-circuit');
+});
+test('generated draft cannot pass even if model reports success',async()=>{
+ const prior=globalThis.fetch;
+ globalThis.fetch=async()=>Response.json({results:[{title:'O-Circuit DARPA',url:'https://www.darpa.mil/research/programs/o-circuit',
+  content:'DARPA researchers propose an organoid processing research program.',engine:'web'}]});
+ try{
+  const bad='We will fetch the page {"id":"read1","tool":"web.read","url":"https://www.darpa.mil/research/programs/o-circuit"}';
+  const res=await worker.fetch(new Request('https://bubbles-tools.test/v1/assist',{method:'POST',
+   headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+   body:JSON.stringify({request:'Research DARPA O-Circuit and explain what is demonstrated',tool:'web.search'})}),{
+   AI:{run:async()=>({response:bad})}});
+  const data=await res.json();
+  assert.equal(data.answerStatus,'partial');
+  assert.equal(data.analysisVerified,false);
+  assert.equal(data.receipt.tool,'web.search');
+  assert.doesNotMatch(data.output,/web.read|read1|\{"id"/);
+ }finally{globalThis.fetch=prior;}
+});
