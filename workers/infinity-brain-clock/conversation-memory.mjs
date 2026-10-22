@@ -1,4 +1,5 @@
 import {notificationSettings} from './notification-settings.mjs';
+import {oracleSynapse} from './oracle-synapse-memory.mjs';
 // Owner-only conversation archive. Kept separate from verified engineering outcomes.
 const initialized=new WeakSet();
 export const capabilities=[
@@ -33,6 +34,7 @@ export function normalizeMessages(messages){
 export function searchTerms(query){return [...new Set(String(query||'').toLowerCase().match(/[a-z0-9]{3,32}/g)||[])].slice(0,12).map(x=>'"'+x+'"').join(' OR ');}
 export async function conversationMemory(db,owner,body){
  if(!initialized.has(db)){for(const sql of schema)await db.prepare(sql).run();initialized.add(db);}
+ if(typeof body.mode==='string'&&body.mode.startsWith('synapse-'))return oracleSynapse(db,owner,body);
  if(['notification-preferences','notification-claim'].includes(body.mode))return notificationSettings(db,owner,body);
  if(['voice-claim','voice-renew','voice-status','voice-release'].includes(body.mode)){
   if(!/^[a-zA-Z0-9_-]{8,100}$/.test(body.client||''))throw Error('voice_client_invalid');
@@ -90,7 +92,9 @@ export async function conversationMemory(db,owner,body){
   const statements=[];
   for(const m of messages){
    statements.push(db.prepare('INSERT OR IGNORE INTO bubbles_messages(owner,id,role,text,at) VALUES (?,?,?,?,?)').bind(owner,m.id,m.role,m.text,m.at));
-   const target=m.sessionId||(!sessionId?null:'legacy-history');
+   // Associate untagged messages with the explicitly selected conversation.
+   // Only genuinely unscoped historical messages belong in the legacy archive.
+   const target=m.sessionId||sessionId;
    if(target){
     // The owner is derived from verified Brain credentials, never client input.
     statements.push(db.prepare('INSERT OR IGNORE INTO bubbles_sessions(owner,session_id,title,created,updated) VALUES (?,?,?,?,?)').bind(owner,target,'New conversation',m.at,m.at));

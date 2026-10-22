@@ -6,6 +6,7 @@
   const WAKE = /^(?:(?:hey|hi|hello|okay|ok)\s+)?(?:bubbles(?:\s+ai)?|bubble\s+ai)(?=$|[\s,:.!?])/i;
   const MUTE = /^(?:please\s+)?(?:mute|stop listening|go quiet|be quiet|pause listening|sleep|goodbye)(?:\s+(?:bubbles?|bubble\s+ai))?[\s.!?]*$/i;
   const RESUME = /^(?:wake up|start listening|listen|unmute|are you there)[\s.!?]*$/i;
+  const PET_ADDRESS = /^(?:(?:hey|oh|come on)\s+)?(?:good\s+(?:dog|boy|girl|puppy)|bad\s+(?:dog|boy|girl)|who(?:'s| is)\s+a\s+good\s+(?:dog|boy|girl)|sit|stay|heel|fetch|walkies|drop\s+it|leave\s+it|come\s+here|come\s+on\s+(?:boy|girl)|go\s+potty|outside\s+time|want\s+a\s+treat)(?:[\s,.!?]|$)|^(?:(?:hey|listen|come\s+here|come\s+on)\s+)?(?:dogs?|pupp(?:y|ies)|pups?)[\s,:!]+(?:sit|stay|come|heel|stop|wait|down|fetch|quiet)\b/i;
   function create(options) {
     const keepMs = Math.max(5000, Math.min(90000, Number(options?.followupMs) || 30000));
     const requireWakeName = options?.requireWakeName !== false;
@@ -28,6 +29,9 @@
       const directed = Boolean(matched);
       const content = directed ? text.slice(matched[0].length).replace(/^[\s,:.!?-]+/, '').trim() : text;
       if ((!requireWakeName && quiet) || (requireWakeName && !directed && (quiet || now > activeUntil))) return {type: 'ignore', reason: 'wake_name_required'};
+      // No wake word required; ignore high-confidence pet-directed chatter.
+      // This does not identify voices or distinguish every nearby conversation.
+      if (!directed && PET_ADDRESS.test(content)) return {type: 'ignore', reason: 'pet_address'};
       if (MUTE.test(content)) {
         activeUntil = 0; quiet = true;
         return {type: 'mute'};
