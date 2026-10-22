@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {serverAssist,executeServerAssist,precedingSignedTurns} from '../workers/bubbles-cloud-browser/server-assist.mjs';
+import {serverAssist,executeServerAssist,precedingSignedTurns,publicGithubSourceReceipt} from '../workers/bubbles-cloud-browser/server-assist.mjs';
 function setup(){
  const rows=new Map(),tasks=[],calls=[];let enabled=true;
  const db={prepare(sql){return {bind(...a){return {
@@ -139,4 +139,33 @@ test('signed chat distinguishes completed web search from incomplete answer',asy
  assert.equal(result.result.sources.length,1);
  const context=await precedingSignedTurns({id:'chatgpt_assist_123_1',db:f.args.db,now:1000});
  assert.match(context,/tool complete, answer partial/);
+});
+
+test('signed transport keeps real GitHub README source and read proof for graders',async()=>{
+ const f=setup();
+ f.args.fetcher=async()=>Response.json({ok:true,output:'Read README: Infinity Platinum APK withdrawn.',sourceUrl:'https://github.com/www-infinity4/QuantaPhi/blob/main/README.md',receipt:{tool:'github.read_file',status:'complete',sourceReadVerified:true,repositoryActionsVerified:false}});
+ await serverAssist({...f.args,body:{operation:'assist',text:'Read README'}});
+ await Promise.all(f.tasks);
+ const b=await serverAssist({...f.args,body:{operation:'result'}});
+ assert.equal(b.result.receipt.tool,'github.read_file');
+ assert.equal(b.result.receipt.sourceReadVerified,true);
+ assert.equal(b.result.sourceUrl,'https://github.com/www-infinity4/QuantaPhi/blob/main/README.md');
+ assert.deepEqual(b.result.sources,[{title:'Verified public GitHub file',url:b.result.sourceUrl}]);
+ assert.equal(b.result.ownerToolsVerified,false);
+ assert.equal(b.result.receipt.repositoryActionsVerified,false);
+});
+test('unverified, credential-bearing or foreign source URLs cannot cross signed boundary',()=>{
+ const base={receipt:{tool:'github.read_file',status:'complete',sourceReadVerified:true}};
+ const valid='https://github.com/www-infinity4/QuantaPhi/blob/main/README.md';
+ assert.equal(publicGithubSourceReceipt({...base,sourceUrl:valid}),valid);
+ for(const bad of [
+  'https://evil.example/exfil?key=abc',
+  'https://github.com/www-infinity4/QuantaPhi/blob/main/README.md?token=abc',
+  'https://github.com@evil.example/file',
+  'https://github.com/www-infinity4/QuantaPhi/blob/main/../secrets.txt',
+  'javascript:alert(1)'
+ ])assert.equal(publicGithubSourceReceipt({...base,sourceUrl:bad}),null,bad);
+ assert.equal(publicGithubSourceReceipt({...base,sourceUrl:valid,receipt:{tool:'oracle.chat',status:'complete',sourceReadVerified:true}}),null);
+ assert.equal(publicGithubSourceReceipt({...base,sourceUrl:valid,receipt:{tool:'github.read_file',status:'partial',sourceReadVerified:true}}),null);
+ assert.equal(publicGithubSourceReceipt({...base,sourceUrl:valid,receipt:{tool:'github.read_file',status:'complete',sourceReadVerified:false}}),null);
 });
