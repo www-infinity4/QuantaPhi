@@ -3142,7 +3142,15 @@ window.QuantaBubbles={
   display(answer,'ai');messages.push({role:'assistant',text:answer});
   messages=messages.slice(-400);persistChat();
   if(state!=='queued'&&state!=='requested'){
-   progressVoiceQueue.push(answer.slice(0,500));
+   // Chat retains exit/error receipts, but speech is ordinary English.
+   // Never read raw shell diagnostics, tokens or internal numbers aloud.
+   const spoken=state==='passed'
+    ? 'Python works in Termux. Its temporary test files were cleaned up.'
+    : state==='setup_required' ? 'Termux needs one-time external command permission before Bubbles can use it.'
+    : state==='storage_low' ? 'Your phone needs more free storage before this Python test can run.'
+    : state==='python_missing' ? 'Python is not available inside Termux yet.'
+    : 'The Termux Python test needs attention. I saved the details in this Bubbles chat.';
+   progressVoiceQueue.push(spoken);
    if(progressVoiceQueue.length>5)progressVoiceQueue.shift();
   }
   return true;
