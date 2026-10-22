@@ -21,6 +21,7 @@ export function connectionCodeMessage(error) {
     connection_operation_failed:'The server failed while verifying the wallet or creating the code (connection_operation_failed). This needs a service repair.',
     connections_not_configured:'The account connection service setup is incomplete (connections_not_configured).',
     connection_response_invalid:'The connection endpoint returned an unreadable response (connection_response_invalid).',
+    connection_timeout:'The connection check timed out after ten seconds. Chat is still available; try again.',
     TimeoutError:'The connection request timed out. Check your connection and try once more.',
     AbortError:'The connection request was interrupted. Try once more.',
     TypeError:'The connection request could not reach the service. Check your connection and try once more.'
@@ -28,16 +29,29 @@ export function connectionCodeMessage(error) {
   return messages[error?.message]||messages[error?.name]||'Code creation failed (account_connection_unavailable). The service needs further diagnosis.';
 }
 export class AccountConnections {
-  constructor({token,request = (...args)=>fetch(...args),root = window}) {this.token=token;this.request=request;this.root=root;this.pending=null;}
+  constructor({token,request = (...args)=>fetch(...args),root = window,timeoutMs=10000}) {
+    this.token=token;this.request=request;this.root=root;this.pending=null;this.timeoutMs=Math.max(1,Number(timeoutMs)||10000);
+  }
   async call(path,body) {
-    const credential=path==='/pair/redeem'?'':await this.token();
-    const response=await this.request(API+path,{method:body?'POST':'GET',cache:'no-store',
-      headers:{...(credential?{Authorization:'Bearer '+credential}:{}),...(body?{'Content-Type':'application/json'}:{})},
-      ...(body?{body:JSON.stringify(body)}:{})});
-    let data;
-    try {data=await response.json();} catch {throw Error('connection_response_invalid');}
-    if(!response.ok||!data.ok)throw Error(data.error||'account_connection_unavailable');
-    return data;
+    // Cover wallet readiness, the network request AND JSON parsing. AbortController
+    // alone cannot settle a hung bridge or a fetch mock that ignores abort.
+    const controller=new AbortController();
+    let timer;
+    const attempt=async()=>{
+      const credential=path==='/pair/redeem'?'':await this.token();
+      const response=await this.request(API+path,{method:body?'POST':'GET',cache:'no-store',
+        headers:{...(credential?{Authorization:'Bearer '+credential}:{}),...(body?{'Content-Type':'application/json'}:{})},
+        ...(body?{body:JSON.stringify(body)}:{}),signal:controller.signal});
+      let data;
+      try {data=await response.json();} catch {throw Error('connection_response_invalid');}
+      if(!response.ok||!data.ok)throw Error(data.error||'account_connection_unavailable');
+      return data;
+    };
+    try {
+      return await Promise.race([attempt(),new Promise((_,reject)=>{
+        timer=setTimeout(()=>{controller.abort();reject(Error('connection_timeout'));},this.timeoutMs);
+      })]);
+    } finally {clearTimeout(timer);}
   }
   async connect(provider,actions,onComplete) {
     if(this.pending)throw Error('Finish the current sign-in window first.');

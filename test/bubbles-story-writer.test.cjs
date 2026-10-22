@@ -41,7 +41,7 @@ test('Bubbles has real AI chat and opt-in browser speech rather than simulated r
  const code=source('bubbles-ai.js'),css=source('bubbles-ai.css');
  assert.doesNotThrow(()=>new vm.Script(code));
  assert.match(code,/\/v1\/chat/);
- assert.match(code,/await fetch\(AI/);
+ assert.match(code,/await bubblesFetch\(AI/);
  assert.match(code,/if\(!response\.ok\|\|json\.ok===false\)throw/);
  assert.match(code,/navigator\.mediaDevices\.getUserMedia/);
  assert.match(code,/module\.startContinuousVoice/);
