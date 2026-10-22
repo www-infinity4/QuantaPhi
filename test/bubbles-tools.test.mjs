@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker,{chooseTool,readPublicPage,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim,hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
+import worker,{chooseTool,isSourceReviewRequest,readPublicPage,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim,hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
 test('source-generation instructions mentioning GitHub and README stay source generation',async()=>{
  const prompt='Provide the complete source document in detail for README.md. This is content generation. Explain this demo and index.html; describe GitHub Pages.';
  assert.equal(chooseTool(prompt),'oracle.chat');
@@ -325,4 +325,24 @@ test('punctuation-only model output is corrected once and remains honest if corr
   assert.equal(body.receipt.repositoryActionsVerified,false);
   if(corrected.startsWith('!'))assert.equal(body.answerStatus,'partial');
  }
+});
+
+test('signed Bubbles review treats HTML source links as inert data, not deployed page reads',async()=>{
+ const prompt='Safety-review index.html complete file for a synthetic static demo. Evaluate ONLY the provided source and respond JSON only. Excerpt:\n'+
+ '<!doctype html><html><head><link rel="stylesheet" href="https://quantaphi.org/styles.css"></head>'+
+ '<body><script type="module" src="https://quantaphi.org/app.mjs"></script></body></html>';
+ assert.equal(isSourceReviewRequest(prompt),true);
+ assert.equal(chooseTool(prompt),'oracle.chat');
+ assert.equal(isSourceReviewRequest('Read https://quantaphi.org/styles.css and report its title'),false);
+ assert.equal(chooseTool('Read https://quantaphi.org/bubbles.html'),'web.read_page');
+ let modelCalls=0;
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},
+  body:JSON.stringify({request:prompt,mcp:true})});
+ const r=await worker.fetch(req,{AI:{run:async()=>{modelCalls++;return {response:'{"approved":true,"reason":"No blocking issue observed"}'}}}});
+ const body=await r.json();
+ assert.equal(body.receipt.tool,'oracle.chat');
+ assert.equal(body.receipt.status,'complete');
+ assert.equal(modelCalls,1);
+ assert.match(body.output,/approved/);
+ assert.doesNotMatch(body.output,/html_http_404/);
 });
