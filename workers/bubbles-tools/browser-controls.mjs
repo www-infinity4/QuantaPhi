@@ -1,12 +1,12 @@
 // Bubbles Chrome control inspector. Browser-side expressions only; do not run model-supplied JS.
 export const CONTROLS_SELECTOR='button,a[href],[role="button"],[role="menuitem"],summary,input[type="button"],input[type="submit"]';
-const runtime=String.raw\`
- const key=value=>String(value||'').replace(/\\s+/g,' ').trim();
+const runtime=String.raw`
+ const key=value=>String(value||'').replace(/\s+/g,' ').trim();
  const folded=value=>key(value).toLowerCase();
  const visible=el=>Boolean(el.getClientRects?.().length)&&el.getAttribute('aria-hidden')!=='true';
  const disabled=el=>Boolean(el.disabled||el.getAttribute('aria-disabled')==='true');
  const labels=el=>{
-  const refs=key(el.getAttribute('aria-labelledby')).split(/\\s+/).filter(Boolean).slice(0,4);
+  const refs=key(el.getAttribute('aria-labelledby')).split(/\s+/).filter(Boolean).slice(0,4);
   const labelled=refs.map(id=>document.getElementById(id)?.textContent||'').join(' ');
   const icon=el.querySelector?.('img[alt],svg title');
   const candidates=[el.getAttribute('aria-label'),labelled,el.getAttribute('title'),el.innerText,
@@ -21,14 +21,14 @@ const runtime=String.raw\`
    return {el,label:key(labelOptions[0]||''),labels:labelOptions,context:key(heading).slice(0,95),
     tag:String(el.tagName||'').toLowerCase(),disabled:disabled(el)};
   });
-\`;
-export const browserReadExpression="(()=>{"+runtime+String.raw\`
+`;
+export const browserReadExpression="(()=>{"+runtime+String.raw`
  const text=String(document.body?.innerText||'').slice(0,8500);
  return {title:String(document.title||'').slice(0,150),url:location.href,text,
   controls:controls.slice(0,60).map(({label,context,tag,disabled})=>({label:label.slice(0,130)||'(unlabeled control)',
    ...(context?{context}:{}),tag,disabled}))};
-})()\`;
-export const browserClickExpression=label=>"(()=>{const wanted="+JSON.stringify(label)+";"+runtime+String.raw\`
+})()`;
+export const browserClickExpression=label=>"(()=>{const wanted="+JSON.stringify(label)+";"+runtime+String.raw`
  const query=folded(wanted);
  if(!query||query.length>100)return {ok:false,error:'browser_label_required'};
  const exact=controls.filter(c=>c.labels.some(x=>folded(x)===query)||
@@ -41,12 +41,12 @@ export const browserClickExpression=label=>"(()=>{const wanted="+JSON.stringify(
  const target=matches[0];
  if(target.disabled)return {ok:false,error:'control_disabled',label:target.label};
  const href=target.el.getAttribute('href')||'';
- const unsafe=/\\b(?:delete|remove|purchase|checkout|pay now|transfer|confirm|authorize|grant|permission|password|sign out|logout|submit payment|bid|order)\\b/i;
+ const unsafe=/\b(?:delete|remove|purchase|checkout|pay now|transfer|confirm|authorize|grant|permission|password|sign out|logout|submit payment|bid|order)\b/i;
  if(unsafe.test([...target.labels,href].join(' '))||(target.el.tagName==='BUTTON'&&target.el.type==='submit')||
    (target.el.tagName==='INPUT'&&target.el.type==='submit')||
-   /^\\s*(?:javascript|data|file):/i.test(href))
+   /^\s*(?:javascript|data|file):/i.test(href))
   return {ok:false,error:'owner_manual_approval_required',label:target.label};
  target.el.click();
  return {ok:true,clickDispatched:true,effectVerified:false,
   element:target.tag,label:target.label.slice(0,110),context:target.context};
-})()\`;
+})()`;
