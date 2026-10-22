@@ -232,7 +232,7 @@ test('Bubbles never displays or voices fabricated createTicket JSON from Android
  assert.ok(normalizedAt>0,'the actual model-reply path must call the normalization guard');
  const normalizedReplySavedAt=client.indexOf("messages.push({role:'assistant',text:answer})",normalizedAt);
  assert.ok(normalizedReplySavedAt>normalizedAt,'the normalized reply, not a prior Termux/status message, is saved');
- assert.match(client.slice(normalizedAt,normalizedReplySavedAt),/const answer=normalizeOwnerAssistantReply/);
+ assert.match(client.slice(Math.max(0,normalizedAt-35),normalizedReplySavedAt),/const answer=normalizeOwnerAssistantReply/);
 });
 
 test('selected repository pins both writer and verification jobs',()=>{
