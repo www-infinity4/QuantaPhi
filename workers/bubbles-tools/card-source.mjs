@@ -3,7 +3,7 @@
 import {cards} from '../../bubbles-card-catalog.mjs';
 const WORK=/(?:\b(?:audit|inspect|diagnos\w*|repair|fix|upgrade|migrat\w*|refactor|rebuild|integrat\w*|plan|architecture|rework|improv\w*|correct|build out|redesign)\b)/i;
 const untrusted=/^(?:do not|don't|never|ignore this|pretend|quote|example only)\b/i;
-const escape=s=>s.replace(/[.*+?^$()|[\]{}]/g,'\\$&');
+const escape=s=>s.replace(/[^a-z0-9 -]/gi,'');
 export function cardSourcePlanFor(text){
  const request=String(text||'').slice(0,3000);
  if(!WORK.test(request)||untrusted.test(request.trim()))return null;
