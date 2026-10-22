@@ -59,8 +59,15 @@ async function transcribe(request,env) {
  }catch(error){return response(request,{ok:false,error:error?.message==='invalid_audio'?'invalid_audio':'speech_transcription_failed'},error?.message==='invalid_audio'?400:502)}
 }
 import {calculateResonance,parseResonanceSpeech,describeResonance,CALCULATOR_SOURCE,CALCULATOR_UI} from './resonance.mjs';
+export function isSourceDraftRequest(text){
+ return /^(?:please\s+)?(?:provide|write|draft|generate|compose)\b/i.test(String(text).trim())&&
+  /\b(?:source (?:document|code)|file contents|content generation)\b/i.test(text);
+}
 export function chooseTool(text){
  const request=clean(text).toLowerCase();
+ // Instructions inside a requested source document are content, not lookup
+ // commands. Drafting a README that mentions GitHub must not read a repo.
+ if(isSourceDraftRequest(text))return 'oracle.chat';
  if(/\b(?:open|show|launch|pull\s+up|bring\s+up)\b/.test(request)&&/\b(?:resonator|resonance\s+calculator|resonance\s+engine)\b/.test(request))return 'resonance.open';
  if(/\b(?:resonance|resonator|resonant\s+frequency|lc\s+(?:tank|circuit|frequency))\b/.test(request)
    &&(/\b(?:calculate|compute|find|solve|run|what\s+is|what's)\b/.test(request)||parseResonanceSpeech(request)))return 'resonance.calculate';
@@ -257,13 +264,13 @@ export async function readPublicPage(request,body,receipt,fetcher=fetch){
  let url;
  try{
   const parsed=new URL(raw);
-  if(parsed.protocol!=='https:'||!['quantaphi.org','www.quantaphi.org'].includes(parsed.hostname)||
+  if(parsed.protocol!=='https:'||!['quantaphi.org','www.quantaphi.org','www-infinity4.github.io'].includes(parsed.hostname)||
      parsed.username||parsed.password||(parsed.port&&parsed.port!=='443'))
    throw Error('unsupported_host');
   url=parsed.href;
  }catch{
   return fail('public_html_url_required',
-   'I can read public HTML on quantaphi.org. This is not a GitHub file request. For other websites use the separately authorized cloud browser.');
+   'I can read public HTML on quantaphi.org and www-infinity4.github.io. This is not a GitHub file request. For other websites use the separately authorized cloud browser.');
  }
  try{
   const upstream=await fetcher(url,{redirect:'manual',
@@ -329,7 +336,7 @@ async function execute(request,env,body){
    capabilities:{runtime:'cloudflare-workers-javascript',inferenceConnected:Boolean(env.AI),readAgent:true,linuxWorkspace:false,shell:false,python:false,ownerExecutorConfigured:Boolean(env.BRAIN),ownerExecutionVerified:false},
    receipt:{...receipt,tool:'runtime.capabilities',status:'complete',repositoryActionsVerified:false}});
  }
- if(body.mcp===true&&env.AI&&needsReadAgent(question)){
+ if(body.mcp===true&&env.AI&&!isSourceDraftRequest(question)&&needsReadAgent(question)){
   const evidence=await runReadAgent({question,input:clean(body.input,6000),
    plan:options=>planReadSteps(env.AI,options),
    invoke:async step=>{
@@ -426,7 +433,7 @@ async function execute(request,env,body){
  // The model may choose one read-only registered tool, but never chooses a
  // repository writer, phone action, permission grant or arbitrary URL.
  // Deterministic requests above still take the fastest direct route.
- if(body.mcp===true&&tool==='oracle.chat'){
+ if(body.mcp===true&&tool==='oracle.chat'&&!isSourceDraftRequest(question)){
   const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command,question),
    {location:body.location||body.context?.location||''});
   if(found&&found.receipt?.tool){

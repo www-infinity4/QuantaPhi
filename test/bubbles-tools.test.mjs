@@ -1,6 +1,23 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker,{chooseTool,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim,hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
+import worker,{chooseTool,readPublicPage,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim,hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
+test('source-generation instructions mentioning GitHub and README stay source generation',async()=>{
+ const prompt='Provide the complete source document in detail for README.md. This is content generation. Explain this demo and index.html; describe GitHub Pages.';
+ assert.equal(chooseTool(prompt),'oracle.chat');
+ let calls=0;
+ const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:prompt,mcp:true})}),{AI:{run:async()=>{calls++;return {response:'{"content":"# Bubbles Agent Workshop"}'};}}});
+ const b=await r.json();assert.equal(b.receipt.tool,'oracle.chat');assert.equal(b.receipt.status,'complete');assert.equal(calls,1);assert.match(b.output,/Bubbles Agent Workshop/);
+ assert.equal(chooseTool('Read README.md in www-infinity4/QuantaPhi'),'github.read_file');
+});
+test('public HTML reader can inspect owner GitHub Pages but cannot follow redirects or other owners',async()=>{
+ let calls=0;
+ const fetcher=async(url,options)=>{calls++;assert.equal(options.redirect,'manual');return new Response('<!doctype html><title>Workshop</title><body>Bubbles Agent Workshop</body>',{headers:{'Content-Type':'text/html'}});};
+ const req=new Request('https://tools/v1/assist',{headers:{Origin:'https://quantaphi.org'}});
+ const result=await readPublicPage(req,{request:'Read https://www-infinity4.github.io/Bubbles-Agent-Workshop/'},{},fetcher);
+ assert.equal((await result.json()).receipt.status,'complete');assert.equal(calls,1);
+ const denied=await readPublicPage(req,{request:'Read https://other-owner.github.io/'},{},fetcher);
+ assert.equal((await denied.json()).receipt.status,'failed');assert.equal(calls,1);
+});
 test('spoken commands select actual tools, ordinary conversation remains chat',()=>{
  assert.equal(chooseTool('Check Google News and tell me the headlines'),'news.headlines');
  assert.equal(chooseTool('Create a GitHub repo called Rain'),'github.create_repository');
