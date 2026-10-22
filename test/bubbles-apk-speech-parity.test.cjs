@@ -1,0 +1,29 @@
+'use strict';
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
+const root='android/bubbles-overlay/';
+const service=fs.readFileSync(root+'app/src/main/java/org/quantaphi/bubbles/BubblesService.java','utf8');
+const window=fs.readFileSync(root+'app/src/main/java/org/quantaphi/bubbles/FloatingOracleWindow.java','utf8');
+const gradle=fs.readFileSync(root+'app/build.gradle','utf8');
+const smoke=fs.readFileSync('test/bubbles-emulator-smoke.sh','utf8');
+const ci=fs.readFileSync('.github/workflows/bubbles-android-emulator.yml','utf8');
+test('speech errors are shown in the same retained website chat instead of silently losing words',()=>{
+ assert.match(service,/private void reportSpeechFailure\(String explanation\)/);
+ assert.match(service,/oracleWindow\.showSpeechFailure\(explanation\)/);
+ assert.match(window,/status\.setText\("Voice unavailable/);
+ assert.match(window,/status\.setVisibility\(View\.VISIBLE\)/);
+ assert.match(service,/main\.postDelayed\(\(\) -> \{[\s\S]*?reloadSpeechEngine\(\)/);
+ assert.match(service,/now - lastTtsRecoveryAt < 30000L/);
+ assert.match(service,/void speakWebsiteReply\(String response\)/);
+ assert.match(service,/pendingWebsiteSpeech\.addLast\(response/);
+ assert.match(service,/@Override public void onError\(String id\)/);
+});
+test('emulator uses disposable x86_64 build while Moto G APK retains ARM only',()=>{
+ assert.match(gradle,/versionCode 57/);
+ assert.match(gradle,/if \(project\.hasProperty\('bubblesEmulatorSmoke'\)\) abiFilters 'x86_64'/);
+ assert.match(gradle,/else abiFilters 'armeabi-v7a', 'arm64-v8a'/);
+ assert.match(ci,/reactivecircus\/android-emulator-runner@v2/);
+ assert.match(smoke,/adb install -r/);
+ assert.match(smoke,/uiautomator dump/);
+ assert.match(smoke,/dumpsys activity services/);
+ assert.match(smoke,/FATAL EXCEPTION/);
+});
