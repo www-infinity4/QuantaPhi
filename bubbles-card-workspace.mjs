@@ -62,11 +62,13 @@ export class CardWorkspace{
    frame.setAttribute('sandbox','allow-scripts allow-same-origin allow-forms allow-popups');
    record={card,frame,media:new Set(),errors:[],loaded:false};
    record.ready=new Promise((resolve,reject)=>{
+    let opaqueLoadSeen=false;
     const timer=setTimeout(()=>reject(Error('Card loading timed out')),20000);
-    frame.addEventListener('load',()=>{
-     clearTimeout(timer);
+    const onLoad=()=>{
      try{
-      // A catalog route must remain on our origin; redirected third-party pages are not controlled.
+      // Sandboxed iframes can emit one opaque initial about:blank load before
+      // their declared same-origin card route commits. Ignore only that first
+      // SecurityError; a second opaque/cross-origin load fails closed.
       if(frame.contentWindow.location.origin!==location.origin)throw Error('Card left the suite origin');
       const win=frame.contentWindow;
       // Iframe 'load' includes HTTP fallback pages and asset failures.
@@ -88,9 +90,13 @@ export class CardWorkspace{
       const thisWorkspace=this;
       for(const media of win.document.querySelectorAll('audio,video'))record.media.add(media);
       win.addEventListener('error',event=>record.errors.push(String(event.message||'Card error').slice(0,180)));
-      record.loaded=true;resolve();
-     }catch(error){reject(error);}
-    },{once:true});
+      record.loaded=true;clearTimeout(timer);frame.removeEventListener?.('load',onLoad);resolve();
+     }catch(error){
+      if(error?.name==='SecurityError'&&!opaqueLoadSeen){opaqueLoadSeen=true;return;}
+      clearTimeout(timer);frame.removeEventListener?.('load',onLoad);reject(error);
+     }
+    };
+    frame.addEventListener('load',onLoad);
    });
    frame.src=card.url;this.frames.set(card.id,record);
    if(this.frames.size>3){const [id,old]=this.frames.entries().next().value;this.pause(old);old.frame.remove();this.frames.delete(id);}

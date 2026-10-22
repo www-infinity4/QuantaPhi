@@ -193,3 +193,25 @@ test('iframe navigation without a rendered card never reports a successful open 
   assert.match(retried.message,/open in chat/);
  }finally{delete globalThis.document;delete globalThis.location;}
 });
+
+test('initial sandboxed about:blank load cannot abort a same-origin Story Writer card',async()=>{
+ const {Node}=dom();
+ try{
+  const originalCreate=document.createElement;
+  document.createElement=tag=>{
+   const el=originalCreate(tag);
+   if(tag==='iframe'){
+    let first=true;
+    Object.defineProperty(el.contentWindow,'location',{configurable:true,get(){
+     if(first){first=false;queueMicrotask(()=>el.listeners.load?.());throw new DOMException('opaque initial document','SecurityError');}
+     return {origin:'https://quantaphi.org'};
+    }});
+   }
+   return el;
+  };
+  const w=new CardWorkspace(new Node('section'));
+  const opened=await w.handle({action:'open',card:findCard('Story Writer')});
+  assert.match(opened.message,/Story Writer is open in chat/);
+  assert.equal(w.active.loaded,true);
+ }finally{delete globalThis.document;delete globalThis.location;}
+});
