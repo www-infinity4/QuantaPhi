@@ -3122,7 +3122,7 @@ if(!embedded&&incomingWork&&incomingWork.length<=1800){
 }
 // Live HTML is authoritative: Android never pins site JavaScript to an APK
 // version. Compare revisions only on this trusted first-party origin.
-const siteScript=[...document.querySelectorAll('script[src]')].find(el=>
+const siteScript=[...(document.querySelectorAll?.('script[src]')||[])].find(el=>
  {try{return new URL(el.src,location.href).pathname==='/bubbles-ai.js'}catch{return false}});
 const siteRevision=siteScript?new URL(siteScript.src,location.href).searchParams.get('v')||'':'';
 let siteVersionChecking=false,lastSiteVersionCheck=0;
