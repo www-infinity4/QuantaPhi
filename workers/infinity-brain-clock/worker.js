@@ -7,6 +7,7 @@ import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
 import {ownerClockCommand,runDueOwnerClock} from './owner-task-clock.mjs';
 import {triageBacklog} from './autopilot-triage.mjs';
+import {AGENT_SKILLS} from './agent-skills.mjs';
 import {checkOwnerRunnerRequest,runnerDispatchReceipt,submitApprovedBridgeWork} from './runner-request.mjs';
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
@@ -836,7 +837,7 @@ export class BrainClock extends DurableObject{
   if(new URL(request.url).pathname==='/preview'){const sha=new URL(request.url).searchParams.get('sha');const preview=/^[a-f0-9]{40}$/.test(sha||'')?await this.ctx.storage.get('preview:'+sha):null;return preview?Response.json({ok:true,preview}):Response.json({ok:false,error:'preview_not_found'},{status:404});}
   const state=await this.ctx.storage.get('state')||{status:'starting'};
   if(new URL(request.url).pathname==='/autopilot-status')return Response.json({
-   ok:true,source:'cloudflare-durable-object',triage:await this.ctx.storage.get('autopilot-triage-v1')||null,
+   ok:true,source:'cloudflare-durable-object',skills:AGENT_SKILLS,triage:await this.ctx.storage.get('autopilot-triage-v1')||null,
    recentDispatch:await this.ctx.storage.get('alarm-dispatch-state')||null,
    writer:await this.ctx.storage.get('writerHeartbeat')||null,
    executionVerified:false,notAnApproval:true
