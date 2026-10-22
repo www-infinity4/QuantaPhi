@@ -142,7 +142,10 @@ export function hasModelToolLeak(answer){
  // Some models emit a fabricated call with "id" before "tool", hidden
  // after ordinary prose. It must never reach Bubbles voice or count as a read.
  const embeddedToolDraft=/\{[^{}\n]{0,700}["'](?:tool|tool_name|function)["']\s*:\s*["'](?:web[._][\w.-]+|github[._][\w.-]+|browser[._][\w.-]+|weather[._][\w.-]+|tools?[._][\w.-]+)["'][^{}\n]{0,700}\}/i.test(text);
- return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft||embeddedToolDraft;
+ // Short cursor envelopes such as {"id":"https://...","cursor":0} are also
+ // unexecuted model instructions, not a completed publisher-page read.
+ const rawCursorDraft=/^\s*\{[^{}\n]{0,1000}"(?:cursor|next_cursor|read_cursor|page_token)"\s*:\s*(?:\d+|["'])[^{}\n]{0,500}\}\s*$/i.test(text);
+ return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft||embeddedToolDraft||rawCursorDraft;
 }
 // A planning fragment is not a final answer even if the source search completed.
 export function hasUnfinishedResearchDraft(answer){
