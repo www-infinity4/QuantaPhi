@@ -13,7 +13,12 @@ export function cardSourcePlanFor(text){
   // such as "radio" that may be a generic electronics question.
   return [card.title,card.id].some(name=>new RegExp('(?:^|[^a-z0-9])'+escape(name).replace(/[ -]+/g,'[\\s-]+')+'(?=$|[^a-z0-9])','i').test(request));
  });
- if(matches.length!==1)return null;
- const card=matches[0];
+ // Oracle Octaves is also the site's shared visual language. A phrase like
+ // 'with Oracle Octaves white cards' is a design constraint, not a request
+ // to repair a second repository. Two actual site targets still fail closed.
+ const designReference=/(?:\b(?:with|using|following|match)\b.{0,35}\bOracle Octaves\b|\bOracle Octaves\b.{0,35}\b(?:style|theme|design|white cards|styling)\b)/i.test(request);
+ const targets=matches.length>1&&designReference?matches.filter(card=>card.id!=='oracle-octaves'):matches;
+ if(targets.length!==1)return null;
+ const card=targets[0];
  return {repository:card.repository,path:'README.md',card:card.id,liveRoute:card.url};
 }
