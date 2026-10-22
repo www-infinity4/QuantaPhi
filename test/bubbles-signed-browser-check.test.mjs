@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {signedBrowserCheck,browserCheckPage} from '../workers/bubbles-cloud-browser/browser-check.mjs';
 function fixture(){
- const rows=new Map(),calls=[];let enabled=true,clicked=false,unchanged=false;
+ const rows=new Map(),calls=[];let enabled=true,clicked=false,unchanged=false,publicUnavailable=false;
  const db={prepare(sql){return {bind(...a){return {
   async first(){return rows.get(a[0])||null;},
   async run(){
@@ -11,15 +11,30 @@ function fixture(){
    const row=rows.get(a[3]);if(row){row.status=a[0];row.result=a[1];}return {meta:{changes:1}};
   }
  };}}}};
- const env={BROWSER:{acquire:async()=>{calls.push('acquire');return {sessionId:'11111111-1111-4111-8111-111111111111'};},devtools:{newTarget:async(id,url)=>{calls.push('navigate');assert.equal(url,'https://bubbles-cloud-browser.marvaseater.workers.dev/browser-check');return {id:'target'};}},closeSession:async()=>{calls.push('close');}}};
+ const env={BROWSER:{acquire:async()=>{calls.push('acquire');return {sessionId:'11111111-1111-4111-8111-111111111111'};},devtools:{newTarget:async(id,url)=>{if(url==='https://quantaphi.org/bubbles.html'){calls.push('navigate_public');return {id:'public-target'};}calls.push('navigate');assert.equal(url,'https://bubbles-cloud-browser.marvaseater.workers.dev/browser-check');return {id:'target'};}},closeSession:async()=>{calls.push('close');}}};
  const args={claims:{run_id:'123'},body:{operation:'browser_check'},db,env,now:1000,pause:async()=>{},store:{chatgptStatus:async()=>({enabled}),status:async()=>({enabled})},
-  act:async(env,step)=>{calls.push(step.action);if(step.action==='click'){assert.equal(step.label,'Run browser check');clicked=true;return {ok:true};}return {ok:true,url:'https://bubbles-cloud-browser.marvaseater.workers.dev/browser-check',text:clicked&&!unchanged?'Bubbles clicked this control.':'Waiting for browser check.'};}};
- return {args,rows,calls,revoke(){enabled=false;},noChange(){unchanged=true;}};
+  act:async(env,step)=>{
+   if(step.targetId==='public-target'){
+    calls.push('read_public');
+    return publicUnavailable?{ok:false,url:'about:blank'}:{ok:true,url:'https://quantaphi.org/bubbles.html',
+     title:'Bubbles AI — QuantaPhi',controls:[{label:'Open Bubbles chat',context:'Bubbles',disabled:false},
+       {label:'Connect GitHub and other accounts',disabled:false}]};
+   }
+   calls.push(step.action);
+   if(step.action==='click'){assert.equal(step.label,'Run browser check');clicked=true;return {ok:true};}
+   return {ok:true,url:'https://bubbles-cloud-browser.marvaseater.workers.dev/browser-check',
+    controls:[{label:'Run browser check',disabled:false}],
+    text:clicked&&!unchanged?'Bubbles clicked this control.':'Waiting for browser check.'};
+  }};
+ return {args,rows,calls,revoke(){enabled=false;},noChange(){unchanged=true;},noPublicPage(){publicUnavailable=true;}};
 }
 test('signed browser check requires before, click, changed page and cleanup receipts',async()=>{
  const f=fixture();const r=await signedBrowserCheck(f.args);
  assert.equal(r.state,'complete');assert.equal(r.result.receipt.clickObserved,true);assert.equal(r.result.receipt.afterObserved,true);assert.equal(r.result.receipt.sessionClosed,true);
- assert.deepEqual(f.calls,['acquire','navigate','read','click','read','close']);
+ assert.deepEqual(f.calls,['acquire','navigate','read','click','read','navigate_public','read_public','close']);
+ assert.equal(r.result.receipt.publicPageReadVerified,true);
+ assert.equal(r.result.publicPage.controls[0].label,'Open Bubbles chat');
+ assert.equal(r.result.receipt.ownerPageVerified,false);
  assert.doesNotMatch(JSON.stringify(r),/sessionId|proof|devtoolsFrontendUrl|Bearer|jwt=/);
 });
 test('replay reads the same receipt rather than repeating a browser interaction',async()=>{
@@ -51,4 +66,35 @@ test('another run has a separate check; expired receipts never allocate again',a
 test('test page has an explicit harmless non-submit button and visible state change',async()=>{
  const response=browserCheckPage(),html=await response.text();assert.match(html,/button type="button"/);assert.match(html,/Waiting for browser check/);assert.match(html,/textContent='Bubbles clicked this control.'/);
  assert.match(response.headers.get('Content-Security-Policy'),/form-action 'none'/);
+});
+
+test('public-page browser read is limited to fixed Bubbles URL and does not expose private session metadata',async()=>{
+ const f=fixture(),r=await signedBrowserCheck(f.args);
+ assert.equal(r.result.publicPage.readVerified,true);
+ assert.equal(r.result.publicPage.title,'Bubbles AI — QuantaPhi');
+ assert.equal(r.result.publicPage.controls[0].label,'Open Bubbles chat');
+ assert.doesNotMatch(JSON.stringify(r.result),/sessionId|proof|devtoolsFrontendUrl|Bearer|jwt=/);
+ assert.equal(f.calls.includes('navigate_public'),true);
+ assert.equal(f.calls.filter(x=>x==='click').length,1);
+});
+test('unavailable public website control read is reported independently of actual fixture click',async()=>{
+ const f=fixture();f.noPublicPage();
+ const r=await signedBrowserCheck(f.args);
+ assert.equal(r.state,'complete');
+ assert.equal(r.result.receipt.clickObserved,true);
+ assert.equal(r.result.receipt.publicPageReadVerified,false);
+ assert.equal(r.result.publicPage.reason,'public_page_unavailable');
+ assert.equal(r.result.receipt.sessionClosed,true);
+});
+test('known browser fixture control is mandatory before claiming any click',async()=>{
+ const f=fixture(),orig=f.args.act;
+ f.args.act=async(...args)=>{
+  const r=await orig(...args);
+  if(args[1].action==='read'&&args[1].targetId==='target')r.controls=[];
+  return r;
+ };
+ const result=await signedBrowserCheck(f.args);
+ assert.equal(result.state,'blocked');assert.equal(result.result.error,'control_inventory_not_observed');
+ assert.equal(f.calls.includes('click'),false);
+ assert.equal(result.result.receipt.sessionClosed,true);
 });
