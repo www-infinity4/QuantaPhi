@@ -56,5 +56,6 @@ test('plain model JSON and prose never execute a tool',async()=>{
 test('compound reads are eligible while writes stay on their owner adapter',()=>{
  assert.equal(needsReadAgent('Inspect www-infinity4/QuantaPhi and read its README'),true);
  assert.equal(needsReadAgent('Find Lovilia weather and current news'),true);
+ assert.equal(needsReadAgent('Inspect https://quantaphi.org/bubbles.html and explain what it offers'),false);
  for(const q of ['hello','What is the weather?','Build a website and deploy it','Read a repo and commit a repair','Run Python and search the web'])assert.equal(needsReadAgent(q),false,q);
 });

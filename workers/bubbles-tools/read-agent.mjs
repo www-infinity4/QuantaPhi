@@ -14,7 +14,7 @@ const writes=/\b(?:delete|purchase|pay|transfer|approve|authorize|deploy|merge|c
 export function needsReadAgent(question){
  if(writes.test(question)||!/\b(?:and|then|also|compare)\b/i.test(question))return false;
  const groups=[/\b(?:weather|forecast)\b/i,/\b(?:news|headlines)\b/i,/\b(?:search|research)\b/i,
-  /\b(?:github|repository)\b|\b[\w.-]+\/[\w.-]+\b/i,/https:\/\/(?:www\.)?quantaphi\.org/i,/\b(?:calculate|resonance)\b/i];
+  /\b(?:github|repository)\b|(?:^|\s)[\w.-]+\/[\w.-]+(?=\s|[,.?!]|$)/i,/https:\/\/(?:www\.)?quantaphi\.org/i,/\b(?:calculate|resonance)\b/i];
  return groups.filter(p=>p.test(question)).length>=2||
   (groups[3].test(question)&&/\b(?:read|inspect)\b/i.test(question)&&/\b(?:readme|documentation)\b/i.test(question));
 }
