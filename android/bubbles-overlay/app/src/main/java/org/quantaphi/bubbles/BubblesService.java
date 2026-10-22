@@ -71,6 +71,14 @@ public final class BubblesService extends Service {
     public static final String ACTION_MUTE = "org.quantaphi.bubbles.MUTE";
     public static final String ACTION_RECORD = "org.quantaphi.bubbles.RECORD_AUDIO";
     public static final String ACTION_SAVE_AUDIO = "org.quantaphi.bubbles.SAVE_AUDIO";
+    /** Actual on-phone Termux result, never an inferred run from a dispatch. */
+    static void reportTermuxPythonReceipt(Context context, String receipt) {
+        OracleChatActivity.append(context, "Oracle", receipt);
+        BubblesService active = activeImageService;
+        if (active != null) active.main.post(() -> {
+            if (active.connected) active.screenStatus(receipt, false);
+        });
+    }
     private final VoiceRecording recording = new VoiceRecording();
     // The screen recorder consumes the SAME PCM frames as Vosk. Android may
     // silence one client when MediaRecorder opens a second microphone.
@@ -1050,6 +1058,11 @@ public final class BubblesService extends Service {
         if (!typed && addressed.length() < 3) return;
         BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
         if (directed && handleWorkflowRequest(addressed, false)) return;
+        // Fixed, harmless Python test only; ambient speech cannot authorize a tool.
+        if (directed && TermuxPythonProbe.isRequest(addressed)) {
+            screenStatus(TermuxPythonProbe.request(this), false);
+            return;
+        }
         if (SimNetworkCommands.matches(addressed)) {
             screenStatus(CellularInspector.capture(this), false);
             return;
@@ -1280,6 +1293,10 @@ public final class BubblesService extends Service {
             return;
         }
         if (panelCommand(text, true, SystemClock.elapsedRealtime())) return;
+        if (TermuxPythonProbe.isRequest(text)) {
+            screenStatus(TermuxPythonProbe.request(this), true);
+            return;
+        }
         if (handleWorkflowRequest(text, true)) return;
         if (handleChatGPTAppRequest(text, true)) return;
         String localLaunch = AppControlBridge.tryLaunch(this, text);
