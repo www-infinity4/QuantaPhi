@@ -30,11 +30,11 @@ export async function signedBrowserCheck({claims,body,db,store,env,now=Date.now(
  let testGround={readVerified:false,toolRunDispatched:false,toolReplyObserved:false,status:'not_attempted'};
  const requireConsent=async()=>{if(!await approved(store))throw Error('consent_revoked');};
  const observe=async text=>{
-  for(let n=0;n<5;n++){
+  for(let n=0;n<14;n++){
    await requireConsent();
    const page=await act(env,{sessionId,targetId,action:'read'});
    if(page.ok!==false&&page.url===CHECK_URL&&page.text?.includes(text))return page;
-   if(n<4)await pause(300*(n+1));
+   if(n<13)await pause(Math.min(1400,400*(n+1)));
   }
   throw Error('page_state_not_observed');
  };
