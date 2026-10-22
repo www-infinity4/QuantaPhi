@@ -3154,6 +3154,52 @@ async function checkForSiteUpdate(){
 window.QuantaBubbles={
  siteRevision,
  sharedMainThread:SHARED_MAIN_THREAD,
+ // The native Android foreground service pulls this bounded snapshot from
+ // the trusted first-party page. This is crash recovery, not a second chat
+ // runtime or permission to move private history into a public repository.
+ nativeHistorySnapshot:()=>{
+  if(!nativeOverlay)return '';
+  if(!keepChat)return 'history-disabled';
+  const recent=messages.filter(m=>m&&['user','assistant'].includes(m.role)&&m.id&&m.text)
+   .slice(-60).map(m=>({id:String(m.id).slice(0,100),
+     role:m.role,text:String(m.text).slice(0,2200),at:Number(m.at)||Date.now()}));
+  return JSON.stringify({thread:activeThread,messages:recent});
+ },
+ restoreNativeHistory:(backup)=>{
+  if(!nativeOverlay||!keepChat||typeof backup!=='string'||backup.length>160*1024)return false;
+  let restored;
+  try{restored=JSON.parse(backup)}catch{return false}
+  const id=String(restored?.thread||'');
+  if(!/^[a-zA-Z0-9_-]{10,80}$/.test(id)||!Array.isArray(restored.messages)||restored.messages.length>60)return false;
+  const prior=readThread(id),combined=new Map();
+  for(const m of [...restored.messages,...prior]){
+   if(!m||!['user','assistant'].includes(m.role)||typeof m.text!=='string'||!m.text.trim())continue;
+   const key=String(m.id||'');
+   if(!/^[a-zA-Z0-9_-]{8,100}$/.test(key))continue;
+   combined.set(key,{id:key,role:m.role,text:m.text.slice(0,2200),
+     at:Number(m.at)||Date.now(),sessionId:id});
+  }
+  const result=[...combined.values()].sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id)).slice(-160);
+  if(!result.length)return true;
+  if(!save(THREAD_PREFIX+id,result))return false;
+  let row=threadIndex.find(t=>t.id===id);
+  if(!row){row={id,title:id===SHARED_MAIN_THREAD?'Bubbles shared chat':'Recovered Android conversation',updated:Date.now()};threadIndex.push(row);}
+  row.updated=Math.max(row.updated||0,...result.map(m=>m.at));
+  save(THREAD_INDEX,threadIndex.slice(-150));
+  if(id===activeThread){
+   const seen=new Set(messages.map(m=>m.id));
+   const additions=result.filter(m=>!seen.has(m.id));
+   if(additions.length){
+    messages=[...messages,...additions].sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id)).slice(-400);
+    conversation.replaceChildren();
+    for(const m of messages)display(m.text,m.role==='user'?'you':'ai');
+    greeted=messages.length>0;
+    saveThread();
+   }
+  }
+  renderConversationFolders();
+  return true;
+ },
  checkForSiteUpdate,
  syncNativePhoneStatus:state=>{if(nativeOverlay)void phoneTools().then(m=>m.sync(state)).catch(e=>{status.textContent='Phone tool: '+e.message;});},
  takeNativePhoneCommand:()=>nativeOverlay&&phoneModuleReady?phoneModuleReady.takeCommand():'',
