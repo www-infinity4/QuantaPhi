@@ -1,7 +1,7 @@
 import {browserTool} from './browser.mjs';
 import {researchArticle} from './research.mjs';
 import {handleMcp,mcpTools,selectMcpTool} from './mcp.mjs';
-import {semanticDecision} from './semantic-intent.mjs';
+import {semanticDecision,interpretOwnerWork} from './semantic-intent.mjs';
 import {lookupKind,webSearch,currentWeather,compareWeather} from './search.mjs';
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
@@ -501,9 +501,11 @@ export default {async fetch(request,env){
    const raw=await request.text();
    if(raw.length>14000)return response(request,{ok:false,error:'intent_request_too_large'},413);
    const body=JSON.parse(raw);
-   const decision=await semanticDecision(body,options=>runChatModel(env,'@cf/openai/gpt-oss-120b',options));
+   const decision=body?.mode==='owner_work'
+    ?await interpretOwnerWork(body,options=>runChatModel(env,'@cf/openai/gpt-oss-120b',options))
+    :await semanticDecision(body,options=>runChatModel(env,'@cf/openai/gpt-oss-120b',options));
    return response(request,{ok:true,decision,receipt:{tool:'grammar_phi.semantic_intent',
-    status:'planned_only',executed:false,permissionGranted:false}});
+    status:'planned_only',executed:false,permissionGranted:false,repositoryActionsVerified:false}});
   }catch{return response(request,{ok:false,error:'semantic_intent_unavailable'},503)}
  }
  if(url.pathname==='/v1/browser')return browserTool(request,env);
