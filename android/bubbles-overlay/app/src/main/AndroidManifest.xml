@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Explicit owner permission; never grants Termux access automatically. -->
+    <uses-permission android:name="com.termux.permission.RUN_COMMAND"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
@@ -12,6 +14,7 @@
         <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent>
         <package android:name="com.lemon.lvoverseas"/>
         <package android:name="com.android.chrome"/>
+        <package android:name="com.termux"/>
         <!-- Package visibility only. No ChatGPT permissions, cookies or storage access. -->
         <package android:name="com.openai.chatgpt"/>
         <intent><action android:name="android.speech.RecognitionService"/></intent>
@@ -21,6 +24,7 @@
     </queries>
     <application android:label="${appTitle}" android:theme="@android:style/Theme.Material.Light.NoActionBar"
         android:usesCleartextTraffic="false" android:allowBackup="false">
+        <receiver android:name=".TermuxProbeResultReceiver" android:exported="false"/>
         <activity android:name=".OracleChatActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>

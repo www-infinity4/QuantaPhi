@@ -686,6 +686,31 @@ final class FloatingOracleWindow {
                 status.setText("Could not open ChatGPT sign-in settings.");
             }
         });
+        // Only a verified first-party WebView can request the fixed local test.
+        // Android still presents an owner confirmation; a web command is not consent.
+        if (trustedChat(website)) {
+            website.evaluateJavascript(
+                "window.QuantaBubbles && window.QuantaBubbles.drainNativeTermuxProbe()", payload -> {
+                    if (!websiteReady || !trustedChat(website) || payload == null || "null".equals(payload)) return;
+                    try {
+                        Object decoded = new JSONTokener(payload).nextValue();
+                        if (!(decoded instanceof String) || ((String) decoded).isEmpty()) return;
+                        JSONObject request = new JSONObject((String) decoded);
+                        if (!"probe".equals(request.optString("action"))) return;
+                        Intent ownerDialog = new Intent(service, MainActivity.class)
+                            .putExtra("termux_python_probe", true)
+                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                        service.startActivity(ownerDialog);
+                    } catch (RuntimeException error) {
+                        status.setText("Could not show Android's Python test approval; no test ran.");
+                    } catch (Exception error) {
+                        status.setText("Android rejected the Python diagnostic request.");
+                    }
+                });
+            website.evaluateJavascript(
+                "window.QuantaBubbles && window.QuantaBubbles.syncNativeTermuxProbe("
+                    + TermuxProbe.receipt(service).toString() + ")", null);
+        }
         // First-party website composer does not possess Android MediaProjection.
         // Drain only declared local capture intents and run the SAME native command
         // parser used by microphone speech; Android consent is never bypassed.

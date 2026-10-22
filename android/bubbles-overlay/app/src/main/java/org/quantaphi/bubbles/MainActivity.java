@@ -24,6 +24,7 @@ import android.app.AlertDialog;
 
 public final class MainActivity extends Activity {
     private static final int OVERLAY_REQUEST = 61;
+    private static final int TERMUX_PERMISSION_REQUEST = 68;
     private static final int PERMISSIONS_REQUEST = 62;
     private TextView state;
     private final android.os.Handler ui = new android.os.Handler(android.os.Looper.getMainLooper());
@@ -668,6 +669,10 @@ public final class MainActivity extends Activity {
             getIntent().setData(null);
             if (state != null) state.setText("Welcome back to Bubbles. Your secure sign-in is finishing; the account status will update when verified.");
         }
+        if (getIntent().getBooleanExtra("termux_python_probe", false)) {
+            getIntent().removeExtra("termux_python_probe");
+            ui.post(this::offerTermuxPythonProbe);
+        }
         // Only the user's explicit first-party Bubbles button can request this flow.
         // Tokens are encrypted in Android Keystore and never passed to WebView.
         if(getIntent().getBooleanExtra("open_chatgpt_signin",false)){
@@ -735,6 +740,10 @@ public final class MainActivity extends Activity {
     @Override protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
+        if (intent != null && intent.getBooleanExtra("termux_python_probe", false)) {
+            intent.removeExtra("termux_python_probe");
+            ui.post(this::offerTermuxPythonProbe);
+        }
         // A notification tap can reach an ALREADY RESUMED singleTop activity.
         // onResume is not guaranteed to run a second time in that case, so
         // the Android screen-sharing permission dialog must be opened here too.
@@ -758,6 +767,27 @@ public final class MainActivity extends Activity {
             ((android.app.NotificationManager)getSystemService(NOTIFICATION_SERVICE)).cancel(513);
             ui.post(() -> handleVoiceCapture(action, seconds, duration));
         }
+    }
+    private void offerTermuxPythonProbe() {
+        if (state == null) return;
+        if (!TermuxProbe.installed(this)) {
+            state.setText("Termux is not installed or isn't visible. No test was run.");
+            return;
+        }
+        if (!TermuxProbe.permitted(this)) {
+            state.setText("Allow Bubbles to run commands in Termux. Android may show an Additional permissions prompt.");
+            try { requestPermissions(new String[]{TermuxProbe.PERMISSION}, TERMUX_PERMISSION_REQUEST); }
+            catch (RuntimeException error) {
+                state.setText("Open Android Settings → Apps → Bubbles → Permissions → Additional permissions and allow Termux commands.");
+            }
+            return;
+        }
+        new AlertDialog.Builder(this)
+            .setTitle("Test Python with Termux")
+            .setMessage("Run a fixed Python 2 + 2 diagnostic in the real Termux app? No packages will be installed. Below 16 MiB free, no test file is created. Otherwise the one temporary test directory is removed after execution. Python, projects and credentials stay intact.")
+            .setNegativeButton("Cancel", (dialog, which) -> { TermuxProbe.cancel(this); state.setText("Python test cancelled."); })
+            .setPositiveButton("Test Python", (dialog, which) -> state.setText(TermuxProbe.run(this)))
+            .show();
     }
     private void openBubblesDocumentPicker(boolean historyJson) {
         // Explicit Android SAF selection; no background access to account data.
@@ -983,6 +1013,11 @@ public final class MainActivity extends Activity {
 
     @Override public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] results) {
         super.onRequestPermissionsResult(requestCode, permissions, results);
+        if (requestCode == TERMUX_PERMISSION_REQUEST) {
+            if (TermuxProbe.permitted(this)) ui.post(this::offerTermuxPythonProbe);
+            else state.setText("Termux command permission not granted. Nothing was run. Check Bubbles Additional permissions.");
+            return;
+        }
         if (requestCode != PERMISSIONS_REQUEST) return;
         for (int result : results) {
             if (result != PackageManager.PERMISSION_GRANTED) {

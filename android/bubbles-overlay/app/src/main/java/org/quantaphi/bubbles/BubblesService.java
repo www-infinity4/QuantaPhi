@@ -142,6 +142,25 @@ public final class BubblesService extends Service {
         return true;
     }
 
+    /** Fixed diagnostic only; never treats an AI plan or ambient speech as permission
+     * to execute local Python. Android presents a real user-confirmation dialog.
+     */
+    private boolean handleTermuxProbe(String addressed, boolean typed) {
+        if (addressed == null || !addressed.trim().matches(
+                "(?i)^(?:bubbles[, ]+)?(?:please\\s+)?(?:(?:test|check|verify)(?:\\s+the)?\\s+(?:python(?:\\s+(?:in|with))?\\s+termux|python|termux(?:\\s+python)?)|(?:run|start|try)(?:\\s+a)?\\s+python\\s+(?:test|diagnostic)|(?:does\\s+python\\s+work|is\\s+python\\s+(?:working|ready))(?:\\s+in\\s+termux)?)[.!?]*$"))
+            return false;
+        Intent intent = new Intent(this, MainActivity.class)
+            .putExtra("termux_python_probe", true)
+            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        try {
+            startActivity(intent);
+            screenStatus("Python test requested. Android owner approval is required before Termux runs.", typed);
+        } catch (RuntimeException error) {
+            screenStatus("Android could not open the Python approval screen. No test ran.", typed);
+        }
+        return true;
+    }
+
     private final ExecutorService network = Executors.newSingleThreadExecutor();
     private WindowManager manager;
     private WindowManager.LayoutParams bubbleLayout;
@@ -1050,6 +1069,7 @@ public final class BubblesService extends Service {
         if (!typed && addressed.length() < 3) return;
         BrainNotes.prefs(this).edit().putString("last_heard", text).remove("last_partial").apply();
         if (directed && handleWorkflowRequest(addressed, false)) return;
+        if (directed && handleTermuxProbe(addressed, false)) return;
         if (SimNetworkCommands.matches(addressed)) {
             screenStatus(CellularInspector.capture(this), false);
             return;
@@ -1281,6 +1301,7 @@ public final class BubblesService extends Service {
         }
         if (panelCommand(text, true, SystemClock.elapsedRealtime())) return;
         if (handleWorkflowRequest(text, true)) return;
+        if (handleTermuxProbe(text, true)) return;
         if (handleChatGPTAppRequest(text, true)) return;
         String localLaunch = AppControlBridge.tryLaunch(this, text);
         if (localLaunch != null) { screenStatus(localLaunch, true); return; }
