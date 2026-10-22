@@ -1,5 +1,5 @@
 // Repository-backed card definitions. Only these declared modules/routes may run in chat.
-const local=(id,title,mount,scripts,styles=[],aliases=[],extraMounts=[])=>({id,title,mount,scripts,styles,aliases,extraMounts,repository:'www-infinity4/QuantaPhi',url:'/bubbles-card-host.html?card='+id});
+const local=(id,title,mount,scripts,styles=[],aliases=[],extraMounts=[])=>({id,title,mount,scripts,styles,aliases,extraMounts,repository:'www-infinity4/QuantaPhi',pageUrl:'/#'+mount,url:'/bubbles-card-host.html?card='+id});
 const app=(id,title,path,repo,aliases=[],play='')=>({id,title,url:path,repository:'www-infinity4/'+repo,aliases,play,surface:id==='infinity-radio'?'.player':'main, [role="main"]'});
 export const cards=Object.freeze([
  app('infinity-radio','Infinity Radio','/infinity-radio/','Alien-Radio',['radio','alien radio'],'#play-btn'),
