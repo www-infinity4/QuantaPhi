@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {signedBrowserCheck,browserCheckPage} from '../workers/bubbles-cloud-browser/browser-check.mjs';
 function fixture(){
- const rows=new Map(),calls=[];let enabled=true,clicked=false,unchanged=false,publicUnavailable=false;
+ const rows=new Map(),calls=[];let enabled=true,clicked=false,unchanged=false,publicUnavailable=false,publicOpened=false,publicNoChange=false;
  const db={prepare(sql){return {bind(...a){return {
   async first(){return rows.get(a[0])||null;},
   async run(){
@@ -15,8 +15,14 @@ function fixture(){
  const args={claims:{run_id:'123'},body:{operation:'browser_check'},db,env,now:1000,pause:async()=>{},store:{chatgptStatus:async()=>({enabled}),status:async()=>({enabled})},
   act:async(env,step)=>{
    if(step.targetId==='public-target'){
+    if(step.action==='click'){
+     calls.push('click_public');assert.equal(step.label,'Open Bubbles chat');publicOpened=true;
+     return {ok:true,clickDispatched:true,effectVerified:false};
+    }
     calls.push('read_public');
-    return publicUnavailable?{ok:false,url:'about:blank'}:{ok:true,url:'https://quantaphi.org/bubbles.html',
+    return publicUnavailable?{ok:false,url:'about:blank'}:{ok:true,
+     url:publicOpened&&!publicNoChange?'https://quantaphi.org/bubbles.html#chat':'https://quantaphi.org/bubbles.html',
+     text:publicOpened&&!publicNoChange?'Bubbles chat opened':'Bubbles public home',
      title:'Bubbles AI — QuantaPhi',controls:[{label:'Open Bubbles chat',context:'Bubbles',disabled:false},
        {label:'Connect GitHub and other accounts',disabled:false}]};
    }
@@ -26,13 +32,15 @@ function fixture(){
     controls:[{label:'Run browser check',disabled:false}],
     text:clicked&&!unchanged?'Bubbles clicked this control.':'Waiting for browser check.'};
   }};
- return {args,rows,calls,revoke(){enabled=false;},noChange(){unchanged=true;},noPublicPage(){publicUnavailable=true;}};
+ return {args,rows,calls,revoke(){enabled=false;},noChange(){unchanged=true;},noPublicPage(){publicUnavailable=true;},noPublicChange(){publicNoChange=true;}};
 }
 test('signed browser check requires before, click, changed page and cleanup receipts',async()=>{
  const f=fixture();const r=await signedBrowserCheck(f.args);
  assert.equal(r.state,'complete');assert.equal(r.result.receipt.clickObserved,true);assert.equal(r.result.receipt.afterObserved,true);assert.equal(r.result.receipt.sessionClosed,true);
- assert.deepEqual(f.calls,['acquire','navigate','read','click','read','navigate_public','read_public','close']);
+ assert.deepEqual(f.calls,['acquire','navigate','read','click','read','navigate_public','read_public','click_public','read_public','close']);
  assert.equal(r.result.receipt.publicPageReadVerified,true);
+ assert.equal(r.result.receipt.publicChatClickDispatched,true);
+ assert.equal(r.result.receipt.publicChatPageChangeObserved,true);
  assert.equal(r.result.publicPage.controls[0].label,'Open Bubbles chat');
  assert.equal(r.result.receipt.ownerPageVerified,false);
  assert.doesNotMatch(JSON.stringify(r),/sessionId|proof|devtoolsFrontendUrl|Bearer|jwt=/);
@@ -97,4 +105,17 @@ test('known browser fixture control is mandatory before claiming any click',asyn
  assert.equal(result.state,'blocked');assert.equal(result.result.error,'control_inventory_not_observed');
  assert.equal(f.calls.includes('click'),false);
  assert.equal(result.result.receipt.sessionClosed,true);
+});
+
+
+test('public chat entry click receipt distinguishes dispatch from actual observed page change',async()=>{
+ const f=fixture();f.noPublicChange();
+ const r=await signedBrowserCheck(f.args);
+ assert.equal(r.state,'complete');
+ assert.equal(r.result.receipt.publicPageReadVerified,true);
+ assert.equal(r.result.receipt.publicChatClickDispatched,true);
+ assert.equal(r.result.receipt.publicChatPageChangeObserved,false);
+ assert.equal(r.result.publicPage.entryClick.status,'click_dispatched');
+ assert.equal(r.result.receipt.ownerPageVerified,false);
+ assert.equal(r.result.receipt.sessionClosed,true);
 });
