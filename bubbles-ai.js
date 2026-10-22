@@ -2265,7 +2265,33 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   /\b(?:repos?|repositor(?:y|ies)|files?|scripts?|project|hydrogen)\b/i.test(request);
  const githubInventoryRequested=!ownerGithubNonAction &&
   /\b(?:list|show|find|check|inspect)\b.{0,70}\b(?:(?:my|our|the|all)\s+)?(?:github\s+)?(?:repos?|repositor(?:y|ies))\b/i.test(request);
- const directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;
+ let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;
+ // Grammar Phi may interpret an unusually worded direct engineering request
+ // before the owner tool dispatcher. It returns ONLY a non-authorizing label.
+ // Original user intent, verified owner session, repository and permissions
+ // are still enforced independently. Never classify a screen observation.
+ let neuralCoding=false;
+ const neuralWorkCandidate=!embedded&&ownerReady&&!ownerGithubNonAction&&!requestsAgents
+  &&!namedRecordBIssue&&!directCoding
+  &&/^(?:(?:bubbles|please)[\\s,:]+)*(?:(?:can|could|would|will) you\\s+)?(?:get|make|have|help|i (?:need|want) (?:you|bubbles) to|we need (?:you|bubbles) to)\\b/i.test(request)
+  &&/\\b(?:bubbles|quantaphi|quanta phi|robot brain|moltnook|infinity phi|omni phi|code phi|my (?:app|website|program))\\b/i.test(request)
+  &&/\\b(?:work(?:ing)?|fix|repair|restore|integrat(?:e|ion)|hook|connect|build|program|implement|run|execute|test|develop|functional|properly)\\b/i.test(request)
+  &&!/\\b(?:do not|don't|never|cancel|without permission)\\b/i.test(request);
+ if(neuralWorkCandidate){
+  try{
+   const typedPlan=await bubblesFetch(AI.replace('/v1/assist','/v1/intent'),{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({mode:'owner_work',request})
+   },12000);
+   const planned=await typedPlan.json();
+   neuralCoding=typedPlan.ok&&planned.ok===true
+    &&planned.decision?.kind==='repository_work'
+    &&planned.receipt?.executed===false;
+   // A model's label can only enable the already authenticated owner workflow;
+   // it cannot create its own command or silently select a new repository.
+   if(neuralCoding)directCoding=true;
+  }catch{neuralCoding=false;}
+ }
  // A direct owner command can use Bubbles' separate Ubuntu/Python/Git checkout
  // without generating a Robot Brain ticket or relying on the writer model.
  const coderRequest=coderIntent(request);
@@ -2342,7 +2368,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    :'Select one repository in the GitHub targets menu. Nothing was changed.';
   else try{
    status.textContent='Checking the direct GitHub connection. Actual receipts will also appear in the color-bot feed.';
-   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':/\b(?:add|create|make|build|generate|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor|populate|scaffold)\b/i.test(request)?'write':'read';
+   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':neuralCoding||/\b(?:add|create|make|build|generate|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor|populate|scaffold)\b/i.test(request)?'write':'read';
    const namedWorkflow=request.match(/\b([a-z0-9][a-z0-9_.-]*\.ya?ml)\b/i)?.[1]||'';
    const workflowIntent=/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
    const workflowDispatch=workflowIntent&&/\b(?:run|start|trigger|dispatch|rerun|execute)\b/i.test(request);
