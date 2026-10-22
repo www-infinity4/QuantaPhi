@@ -144,6 +144,12 @@ export function hasModelToolLeak(answer){
  const embeddedToolDraft=/\{[^{}\n]{0,700}["'](?:tool|tool_name|function)["']\s*:\s*["'](?:web[._][\w.-]+|github[._][\w.-]+|browser[._][\w.-]+|weather[._][\w.-]+|tools?[._][\w.-]+)["'][^{}\n]{0,700}\}/i.test(text);
  return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft||embeddedToolDraft;
 }
+// A planning fragment is not a final answer even if the source search completed.
+export function hasUnfinishedResearchDraft(answer){
+ const text=String(answer||'').trim().replace(/[’‘]/g,"'").slice(0,1200);
+ if(text.length>320)return false;
+ return /^(?:(?:i|we)\s+(?:will|would|should|need to|plan to|am going to)|i(?:'ll| am about to)|attempt(?:ing)? to|let(?:'s| us)|next[:,\s]+)\s+(?:first\s+)?(?:read|fetch|open|retrieve|search|check|inspect|look up|visit)\b/i.test(text);
+}
 function groundedWorkFallback(request){
  const target=/video/i.test(request)?'video generator':/wallet|quant|coin/i.test(request)?'wallet ledger':/image/i.test(request)?'image generator':/radio|music/i.test(request)?'radio player':/robot brain|bot/i.test(request)?'Robot Brain':/bubbles|voice|microphone/i.test(request)?'Bubbles voice and job bridge':'requested repository component';
  return 'This conversation has not verified a code edit, deployment or Robot Brain job. To continue the '+target+' work, inspect its current source and focused tests, then submit the specific repair through the authenticated owner Brain. A real ticket, commit or deployment receipt—not a chat answer—must confirm each completed action.';
@@ -568,7 +574,8 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
  let output=result?.response||result?.choices?.[0]?.message?.content;
  if(typeof output!=='string'||!output.trim())throw Error('empty_gpt_response');
  // One bounded correction; never fabricate a repository edit or execute a job.
- const dubious=()=>isGenericBuildReply(userRequest,output)||hasUnverifiedActionClaim(userRequest,output)||hasModelToolLeak(output);
+ const dubious=()=>isGenericBuildReply(userRequest,output)||hasUnverifiedActionClaim(userRequest,output)||hasModelToolLeak(output)||
+  (Boolean(evidence)&&/\b(?:research|explain|summari[sz]e|analy[sz]e|compare|project)\b/i.test(userRequest)&&hasUnfinishedResearchDraft(output));
  if(dubious()){
   try{
    const corrected=await env.AI.run(model,{messages:[
@@ -607,7 +614,7 @@ export async function finishSearchReply(original,summarize,timeoutMs=20000,userR
   if(!summarized.ok)return fallback();
   const data=await summarized.clone().json();
   const output=String(data.output||'').trim();
-  if(data.answerStatus==='partial'||!output||hasModelToolLeak(output)||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output)||(/\b(?:research|explain|synthesi[sz]e)\b/i.test(userRequest)&&/^Live results from /i.test(output)))return fallback();
+  if(data.answerStatus==='partial'||!output||hasModelToolLeak(output)||hasUnfinishedResearchDraft(output)||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output)||(/\b(?:research|explain|synthesi[sz]e)\b/i.test(userRequest)&&/^Live results from /i.test(output)))return fallback();
   return summarized;
  }catch{return fallback()}
  finally{clearTimeout(timer)}

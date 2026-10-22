@@ -114,3 +114,50 @@ test('generated draft cannot pass even if model reports success',async()=>{
   assert.doesNotMatch(data.output,/web.read|read1|\{"id"/);
  }finally{globalThis.fetch=prior;}
 });
+
+test('short research plans are not presented as finished answers',async()=>{
+ const {hasUnfinishedResearchDraft}=await import('../workers/bubbles-tools/worker.mjs');
+ for(const draft of ['Attempt to read the DARPA O-Circuit page.','We will fetch the article.','I need to inspect the source.','Let’s open the site.']){
+  assert.equal(hasUnfinishedResearchDraft(draft),true,draft);
+ }
+ for(const factual of ['DARPA O-Circuit is a research program exploring neural tissue for computation.',
+ 'The agency published a solicitation, but the excerpt does not prove a working biological processor.']){
+  assert.equal(hasUnfinishedResearchDraft(factual),false,factual);
+ }
+ const source=Response.json({ok:true,output:'Live results from research sources',receipt:{tool:'web.search',status:'complete'},
+  sources:[{title:'DARPA O-Circuit',url:'https://www.darpa.mil/research/programs/o-circuit',
+   excerpt:'Program proposes future research into organic processing units.'}]});
+ const r=await finishSearchReply(source,()=>Response.json({ok:true,output:'Attempt to read the DARPA O-Circuit page.'}),
+  50,'Research DARPA O-Circuit and explain biological computing goals');
+ const data=await r.json();
+ assert.equal(data.answerStatus,'partial');
+ assert.equal(data.receipt.status,'complete');
+ assert.match(data.output,/I found source excerpts/);
+ assert.doesNotMatch(data.output,/Attempt to read/);
+});
+test('incomplete DARPA model draft triggers corrective grounded explanation',async()=>{
+ const originalFetch=globalThis.fetch;
+ let count=0;
+ globalThis.fetch=async()=>Response.json({results:[
+  {title:'O-Circuit - DARPA',url:'https://www.darpa.mil/research/programs/o-circuit',
+   content:'DARPA proposes research into neural tissue computing with learning and inference goals.',engine:'web'},
+  {title:'DARPA Molecular Informatics',url:'https://www.darpa.mil/research/programs/molecular-informatics',
+   content:'Molecular Informatics investigated information encoding in molecules.',engine:'web'}
+ ]});
+ try{
+  const response=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',
+    headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+    body:JSON.stringify({request:'Research DARPA O-Circuit and molecular informatics and explain what is verified',
+     tool:'web.search'})}),{
+   AI:{run:async()=>{count++;return {response:count===1?'Attempt to read the DARPA O-Circuit page.':
+    'The DARPA O-Circuit description proposes researching neural-tissue computing, including learning and inference. Molecular Informatics concerns molecule-based information encoding, a related but distinct area. These search excerpts document research goals, not measured organoid performance or full-paper findings.'}}}
+  });
+  const data=await response.json();
+  assert.equal(count,2);
+  assert.equal(data.receipt.tool,'web.search');
+  assert.equal(data.receipt.status,'complete');
+  assert.match(data.output,/research goals/);
+  assert.doesNotMatch(data.output,/Attempt to read/);
+  assert.notEqual(data.answerStatus,'partial');
+ }finally{globalThis.fetch=originalFetch;}
+});
