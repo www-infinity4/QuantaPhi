@@ -87,8 +87,8 @@ test('worker synthesizes grounded live search evidence but does not claim Google
 });
 test('same Android Bubbles conversation bypasses model-only chat for live lookup',()=>{
  const source=fs.readFileSync('bubbles-ai.js','utf8');
- const replyRoute=source.slice(source.indexOf('let response,json;try{'),source.indexOf("if(!response.ok||json.ok===false)"));
- assert.match(replyRoute,/response=await fetch\(AI,/);
+ const replyRoute=source.slice(source.indexOf('let response,json;'),source.indexOf("if(!response.ok||json.ok===false)"));
+ assert.match(replyRoute,/response=await bubblesFetch\(AI,/);
  assert.match(replyRoute,/body:JSON.stringify\(lookupPayload\(\)\)/);
  assert.doesNotMatch(replyRoute,/nativeChatGPT\(prompt\)/,'Android cannot bypass tool execution for text-only ChatGPT replies');
  assert.match(source,/const priorWeatherAnswer=/);
