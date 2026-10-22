@@ -499,7 +499,7 @@ async function execute(request,env,body){
  // The model may choose one read-only registered tool, but never chooses a
  // repository writer, phone action, permission grant or arbitrary URL.
  // Deterministic requests above still take the fastest direct route.
- if(body.mcp===true&&tool==='oracle.chat'&&!isSourceDraftRequest(question)){
+ if(body.mcp===true&&tool==='oracle.chat'&&!isSourceDraftRequest(question)&&!historicalCartRecall(question)){
   const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command,question),
    {location:body.location||body.context?.location||''});
   if(found&&found.receipt?.tool){
@@ -547,6 +547,17 @@ async function runChatModel(env,model,options){
    return {...fallback,verifiedModel:fallbackModel};
   }
  }
+}
+// Historical owner project recall is a conversation about known project
+// context, not a request for a random web search. It does NOT read private data.
+// Explicit public web search, exact GitHub files or URLs still use their tools.
+export function historicalCartRecall(text){
+ const q=String(text||'').slice(0,2500);
+ const historical=/\b(?:our|my|old|older|original|previous|historical|legacy)\b/i.test(q);
+ const specific=/\b(?:mongoose\.os|c13b0|cardci)\b/i.test(q)&&/\b(?:carts?|scripts?|python|mongoose)\b/i.test(q);
+ const explicitLookup=/\b(?:search(?:\s+(?:the\s+)?web|\s+google|\s+online)|google\s+search|find\s+online|browse\s+the\s+web)\b/i.test(q);
+ const exactSource=/https?:\/\/|(?:^|\s)[a-z0-9_.-]+\/[a-z0-9_.-]+\/(?:blob|tree)\//i.test(q);
+ return historical&&specific&&!explicitLookup&&!exactSource;
 }
 export function legacyCartContextFor(text){
  const q=String(text||'').toLowerCase().slice(0,2500);
