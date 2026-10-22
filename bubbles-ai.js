@@ -731,6 +731,21 @@ if(!embedded)composer.prepend(connectorCodeButton,connectorCodeOutput,connectorC
 const privateLabel=create('label','ba-muted'),privateContext=create('input');privateContext.type='checkbox';privateContext.checked=config.privateContext===true;privateLabel.append(privateContext,create('span','',' Use my private Quant-AI selling defaults'));privateContext.addEventListener('change',()=>{config.privateContext=privateContext.checked;save(CONFIG,config)});composer.append(privateLabel);
 if(nativeOverlay){privateLabel.hidden=true;privateContext.checked=false;}
 const tools=create('details','ba-tools');const summary=create('summary','','Notes and work');tools.append(summary,privateLabel);
+// Plugins and skills are discoverable in the existing website and original Android chat.
+const pluginsButton=create('button','ba-control ba-plugins-open','Plugins & skills');
+pluginsButton.type='button';pluginsButton.setAttribute('aria-expanded','false');
+const pluginsPanel=create('section','ba-plugins-panel');pluginsPanel.hidden=true;
+let pluginsLoaded=false;
+pluginsButton.addEventListener('click',async()=>{
+ pluginsPanel.hidden=!pluginsPanel.hidden;
+ pluginsButton.setAttribute('aria-expanded',String(!pluginsPanel.hidden));
+ if(pluginsPanel.hidden||pluginsLoaded)return;
+ try{
+  const {mountBubblesSkillCatalog}=await import('/bubbles-skill-catalog.mjs?v=20261022-catalog1');
+  pluginsLoaded=await mountBubblesSkillCatalog(pluginsPanel);
+ }catch{pluginsPanel.textContent='Skill references could not load. Your connections are unchanged.';}
+});
+tools.append(pluginsButton,pluginsPanel);
 tools.addEventListener('toggle',()=>{if(tools.open&&typeof requestAnimationFrame==='function')requestAnimationFrame(()=>tools.scrollIntoView({block:'start'}));});
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
