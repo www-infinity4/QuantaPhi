@@ -11,9 +11,15 @@ function fixture(){
    const row=rows.get(a[3]);if(row){row.status=a[0];row.result=a[1];}return {meta:{changes:1}};
   }
  };}}}};
- const env={BROWSER:{acquire:async()=>{calls.push('acquire');return {sessionId:'11111111-1111-4111-8111-111111111111'};},devtools:{newTarget:async(id,url)=>{if(url==='https://quantaphi.org/bubbles.html'){calls.push('navigate_public');return {id:'public-target'};}calls.push('navigate');assert.equal(url,'https://bubbles-cloud-browser.marvaseater.workers.dev/browser-check');return {id:'target'};}},closeSession:async()=>{calls.push('close');}}};
+ const env={BROWSER:{acquire:async()=>{calls.push('acquire');return {sessionId:'11111111-1111-4111-8111-111111111111'};},devtools:{newTarget:async(id,url)=>{if(url==='https://quantaphi.org/test-ground-ai/'){calls.push('navigate_ground');return {id:'ground-target'};}if(url==='https://quantaphi.org/bubbles.html'){calls.push('navigate_public');return {id:'public-target'};}calls.push('navigate');assert.equal(url,'https://bubbles-cloud-browser.marvaseater.workers.dev/browser-check');return {id:'target'};}},closeSession:async()=>{calls.push('close');}}};
  const args={claims:{run_id:'123'},body:{operation:'browser_check'},db,env,now:1000,pause:async()=>{},store:{chatgptStatus:async()=>({enabled}),status:async()=>({enabled})},
   act:async(env,step)=>{
+   if(step.targetId==='ground-target'){
+    if(step.action==='click'){calls.push('click_ground');assert.equal(step.label,'Test this');return {ok:true,clickDispatched:true,effectVerified:false}}
+    calls.push('read_ground');return {ok:true,title:'Test Ground AI · Oracle Octaves',url:'https://quantaphi.org/test-ground-ai/',
+     text:calls.includes('click_ground')?'Last request: PASSED — verified tool receipt':'Ready to test',
+     controls:[{label:'Test this',disabled:false},{label:'Run 9 read-only tests',disabled:false}]};
+   }
    if(step.targetId==='public-target'){
     if(step.action==='click'){
      calls.push('click_public');assert.equal(step.label,'Open Bubbles chat');publicOpened=true;
@@ -37,10 +43,12 @@ function fixture(){
 test('signed browser check requires before, click, changed page and cleanup receipts',async()=>{
  const f=fixture();const r=await signedBrowserCheck(f.args);
  assert.equal(r.state,'complete');assert.equal(r.result.receipt.clickObserved,true);assert.equal(r.result.receipt.afterObserved,true);assert.equal(r.result.receipt.sessionClosed,true);
- assert.deepEqual(f.calls,['acquire','navigate','read','click','read','navigate_public','read_public','click_public','read_public','close']);
+ assert.deepEqual(f.calls,['acquire','navigate','read','click','read','navigate_public','read_public','click_public','read_public','navigate_ground','read_ground','click_ground','read_ground','close']);
  assert.equal(r.result.receipt.publicPageReadVerified,true);
  assert.equal(r.result.receipt.publicChatClickDispatched,true);
  assert.equal(r.result.receipt.publicChatPageChangeObserved,true);
+ assert.equal(r.result.receipt.testGroundReadVerified,true);
+ assert.equal(r.result.receipt.testGroundToolReplyObserved,true);
  assert.equal(r.result.publicPage.controls[0].label,'Open Bubbles chat');
  assert.equal(r.result.receipt.ownerPageVerified,false);
  assert.doesNotMatch(JSON.stringify(r),/sessionId|proof|devtoolsFrontendUrl|Bearer|jwt=/);
@@ -117,5 +125,16 @@ test('public chat entry click receipt distinguishes dispatch from actual observe
  assert.equal(r.result.receipt.publicChatPageChangeObserved,false);
  assert.equal(r.result.publicPage.entryClick.status,'click_dispatched');
  assert.equal(r.result.receipt.ownerPageVerified,false);
+ assert.equal(r.result.receipt.sessionClosed,true);
+});
+
+test('Test Ground AI uses actual public Chrome DOM and read-only tool receipt',async()=>{
+ const f=fixture();const r=await signedBrowserCheck(f.args);
+ assert.equal(r.result.testGround.readVerified,true);
+ assert.equal(r.result.testGround.toolRunDispatched,true);
+ assert.equal(r.result.testGround.toolReplyObserved,true);
+ assert.equal(r.result.testGround.status,'tool_reply_observed');
+ assert.equal(r.result.receipt.ownerPageVerified,false);
+ assert.equal(f.calls.filter(x=>x==='click_ground').length,1);
  assert.equal(r.result.receipt.sessionClosed,true);
 });
