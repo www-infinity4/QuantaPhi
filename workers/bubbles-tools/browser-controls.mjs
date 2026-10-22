@@ -41,7 +41,7 @@ export const browserClickExpression=label=>"(()=>{const wanted="+JSON.stringify(
  const target=matches[0];
  if(target.disabled)return {ok:false,error:'control_disabled',label:target.label};
  const href=target.el.getAttribute('href')||'';
- const unsafe=/\b(?:delete|remove|purchase|checkout|pay now|transfer|confirm|authorize|grant|permission|password|sign out|logout|submit payment|bid|order)\b/i;
+ const unsafe=/\b(?:delete|remove|buy(?: now)?|purchase|checkout|pay now|transfer|confirm|authorize|grant|permission|password|sign out|logout|submit payment|bid|order)\b/i;
  if(unsafe.test([...target.labels,href].join(' '))||(target.el.tagName==='BUTTON'&&target.el.type==='submit')||
    (target.el.tagName==='INPUT'&&target.el.type==='submit')||
    /^\s*(?:javascript|data|file):/i.test(href))
