@@ -147,7 +147,7 @@ public final class BubblesService extends Service {
      */
     private boolean handleTermuxProbe(String addressed, boolean typed) {
         if (addressed == null || !addressed.trim().matches(
-                "(?i)^(?:please\\s+)?(?:test|check)(?:\\s+the)?\\s+python(?:\\s+(?:in|with))?\\s+termux[.!?]*$"))
+                "(?i)^(?:bubbles[, ]+)?(?:please\\s+)?(?:(?:test|check|verify)(?:\\s+the)?\\s+(?:python(?:\\s+(?:in|with))?\\s+termux|python|termux(?:\\s+python)?)|(?:run|start|try)(?:\\s+a)?\\s+python\\s+(?:test|diagnostic)|(?:does\\s+python\\s+work|is\\s+python\\s+(?:working|ready))(?:\\s+in\\s+termux)?)[.!?]*$"))
             return false;
         Intent intent = new Intent(this, MainActivity.class)
             .putExtra("termux_python_probe", true)
