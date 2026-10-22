@@ -38,5 +38,5 @@ test('the chat only accepts direct, explicit owner Termux requests and real retu
  assert.match(receiver,/result\.getInt\("exitCode"/);
  assert.match(receiver,/result\.getString\("stdout"/);
  assert.match(receiver,/FloatingOracleWindow\.onTermuxResult\(id, report\)/);
- assert.match(receiver,/Termux did not return execution evidence/);
+ assert.match(receiver,/Termux returned no execution evidence/);
 });
