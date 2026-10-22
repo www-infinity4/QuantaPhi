@@ -50,6 +50,14 @@ export async function precedingSignedTurns({id,db,now=Date.now()}){
   transcript.push('Earlier question: '+safe(prompt).slice(0,450)+'\nEarlier Bubbles answer ('+
    String(answer.receipt?.status||'unverified').slice(0,35)+'): '+safe(answer.output).slice(0,1150));
  }
+ // Pass only this run's fixed browser-check receipt to the conversational
+ // agent. Never pass browser bearer URLs, cookies, session IDs or owner pages.
+ const browser=await db.prepare('SELECT status,result,expires_ms FROM bubbles_chatgpt_bridge WHERE id=?').bind('chatgpt_browser_'+match[1]).first();
+ if(browser?.status==='complete'&&Number.isFinite(browser.expires_ms)&&browser.expires_ms>now){
+  let observed;try{observed=JSON.parse(browser.result||'null')}catch{}
+  if(observed?.ok===true&&observed.receipt?.tool==='browser.click_check'&&observed.receipt?.status==='complete'&&observed.receipt?.clickObserved===true)
+   transcript.push('Verified same-run Bubbles browser receipt: '+JSON.stringify({tool:'browser.click_check',status:'complete',before:String(observed.before||'').slice(0,100),after:String(observed.after||'').slice(0,100),sessionClosed:observed.receipt.sessionClosed===true,ownerPageVerified:false}));
+ }
  if(!transcript.length)return '';
  return 'Relevant recent conversation (verified same-run history, not new tool calls or authorization):\n'+transcript.join('\n')+
   '\nAnswer the CURRENT user question using relevant context. Do not claim a prior result proves a current button tap or new tool action.\n';
