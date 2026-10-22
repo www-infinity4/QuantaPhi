@@ -2428,7 +2428,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   ||/\b(?:search the web|search google|look up online|find it online|latest information|latest updates|what(?:'s| is) the latest)\b/i.test(lookupRequest);
  let savedWeatherTown='';
  const explicitWeatherTown=/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b.{0,85}\b(?:in|for|at|near)\s+[a-z0-9]/i.test(lookupRequest);
- try{if(liveLookup&&!explicitWeatherTown&&/\b(?:weather|forecast|temperature|rain|snow)\b/i.test(lookupRequest))savedWeatherTown=localStorage.getItem('bubbles-weather-town')||'';}catch{}
+ const priorWeatherAnswer=messages.slice(-6).some(item=>item.role==='assistant'&&/\b(?:degrees Fahrenheit|°F|weather forecast|temperature|precipitation)\b/i.test(item.text||''));
+ const weatherContinuation=priorWeatherAnswer&&/\b(?:outside|outdoors|jacket|coat|umbrella|warmer|colder|rain|snow|wind|today|tomorrow|there|now)\b/i.test(lookupRequest);
+ try{if(!explicitWeatherTown&&(weatherContinuation||(liveLookup&&/\b(?:weather|forecast|temperature|rain|snow)\b/i.test(lookupRequest))))savedWeatherTown=localStorage.getItem('bubbles-weather-town')||'';}catch{}
  // Seller defaults are not a replacement model for ordinary Bubbles chat or owner tools.
  const privateSellerRequest=config.privateContext&&!nativeOverlay&&/\b(?:sell|selling|seller|resale|auction|listing|buyer|shoplc|my selling defaults|quant-ai seller)\b/i.test(request);
  // Opt in to bounded, read-only MCP model tool selection. The MCP bearer key is never present in this WebView.
@@ -2450,12 +2452,20 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const detailed=isOwnerWorkRequest(request)||/\b(?:analy[sz]e|diagnose|architecture|debug|design|research|thorough|compare|deeply|repository)\b/i.test(request);
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),detailed?60000:38000);
   let response,json;try{
-  if(nativeOverlay&&nativeGPTAvailable&&!config.privateContext&&!liveLookup){
-   try{const output=await nativeChatGPT(prompt);response={ok:true};json={ok:true,output,provider:'Android ChatGPT plan'};gptStatus.textContent='Response generated using the authorized ChatGPT plan on this phone.'}
-   catch(error){nativeGPTAvailable=false;gptStatus.textContent='Android ChatGPT unavailable; using Oracle: '+String(error.message||error).slice(0,90);
-    response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}
-  }else if(privateSellerRequest){if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');json=await window.QuantAIPersonal.chat(request);response={ok:true};}else{response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},signal:controller.signal,body:JSON.stringify(lookupPayload())});json=await response.json()}}finally{clearTimeout(timer)}
+  // The original Android APK and website MUST use the same tool-capable
+  // Cloudflare reasoning route. A separate native text-completion bridge can
+  // speak convincingly but has no live weather/search/action receipts.
+  // Do not bypass MCP tools just because the Android ChatGPT account exists.
+  if(privateSellerRequest){
+   if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');
+   json=await window.QuantAIPersonal.chat(request);response={ok:true};
+  }else{
+   response=await fetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},signal:controller.signal,body:JSON.stringify(lookupPayload())});
+   json=await response.json();
+  }
+ }finally{clearTimeout(timer)}
   if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
+  if(nativeOverlay&&json.receipt?.tool)gptStatus.textContent='Bubbles model + verified tool: '+json.receipt.tool+' · '+json.receipt.status;
   const rawAnswer=extract(json);if(!rawAnswer)throw Error('The AI returned no spoken or written reply');
    if(/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));

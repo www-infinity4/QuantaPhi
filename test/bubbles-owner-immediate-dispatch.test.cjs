@@ -58,6 +58,6 @@ test('Quant-AI selling preferences cannot hijack a normal owner chat',()=>{
  assert.equal(isSeller(enabled,false,'Fix Bubbles owner mode'),false);
  assert.equal(isSeller(enabled,false,'Sell this old coin using my selling defaults'),true);
  assert.equal(isSeller(enabled,true,'Sell this old coin'),false);
- assert.match(bubbles,/else if\(privateSellerRequest\)/);
+ assert.match(bubbles,/if\(privateSellerRequest\)\{/);
  assert.doesNotMatch(bubbles,/else if\(config\.privateContext&&!nativeOverlay\)/);
 });
