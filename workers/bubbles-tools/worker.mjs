@@ -3,7 +3,7 @@ import {researchArticle} from './research.mjs';
 import {handleMcp,mcpTools,selectMcpTool} from './mcp.mjs';
 import {semanticDecision,interpretOwnerWork} from './semantic-intent.mjs';
 import {lookupKind,webSearch,currentWeather,compareWeather} from './search.mjs';
-import {needsReadAgent,runReadAgent} from './read-agent.mjs';
+import {needsReadAgent,runReadAgent,planReadSteps} from './read-agent.mjs';
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
 const VISION_MODEL='@cf/google/gemma-4-26b-a4b-it';
@@ -331,7 +331,7 @@ async function execute(request,env,body){
  }
  if(body.mcp===true&&env.AI&&needsReadAgent(question)){
   const evidence=await runReadAgent({question,input:clean(body.input,6000),
-   plan:options=>env.AI.run('@cf/openai/gpt-oss-20b',options),
+   plan:options=>planReadSteps(env.AI,options),
    invoke:async step=>{
     const sub={...receipt,id:crypto.randomUUID()};
     if(step.name==='github_read_repository')return (await readGithubRepository(request,{request:'Read repository '+step.repository,repository:step.repository},sub)).json();

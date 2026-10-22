@@ -9,6 +9,21 @@ export const readAgentTools=Object.freeze([
  {name:'github_read_file',description:'Read a public GitHub source file. After a repository listing, use the observed path. No edits.',inputSchema:object({repository:string,path:string},['repository','path'])},
  {name:'web_read_page',description:'Read server-delivered public HTML on quantaphi.org; no JavaScript, clicks, private API or account pages.',inputSchema:object({url:string},['url'])}
 ]);
+// Cloudflare's documented JSON Mode returns an object in `response`.
+// This dedicated, schema-constrained planning channel is not chat prose. Every
+// resulting step is still grounded and validated before a registered reader runs.
+export async function planReadSteps(ai,options){
+ const properties={};for(const t of readAgentTools)Object.assign(properties,t.inputSchema.properties);
+ const schema={type:'object',properties:{calls:{type:'array',maxItems:4,items:{type:'object',properties:{name:{type:'string',enum:readAgentTools.map(t=>t.name)},arguments:{type:'object',properties,additionalProperties:false}},required:['name','arguments'],additionalProperties:false}}},required:['calls'],additionalProperties:false};
+ const result=await ai.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast',{
+  messages:[{role:'system',content:'Return only a JSON read plan with a calls array. Use empty calls once the current request has been fully answered by OBSERVED RESULTS. Each entry has name and arguments. Do not repeat observed steps. Use only this tool registry: '+JSON.stringify(readAgentTools)},...options.messages],
+  response_format:{type:'json_schema',json_schema:schema},max_tokens:800,temperature:0
+ });
+ const value=result?.response;
+ if(!value||typeof value!=='object'||Array.isArray(value)||Object.keys(value).some(k=>k!=='calls')||!Array.isArray(value.calls)||value.calls.length>4)throw Error('invalid_schema_read_plan');
+ if(value.calls.some(c=>!c||typeof c!=='object'||Array.isArray(c)||Object.keys(c).some(k=>!['name','arguments'].includes(k))||!readAgentTools.some(t=>t.name===c.name)||!c.arguments||typeof c.arguments!=='object'||Array.isArray(c.arguments)))throw Error('invalid_schema_read_plan');
+ return {tool_calls:value.calls.map(c=>({name:c.name,arguments:c.arguments}))};
+}
 const trim=(v,n)=>typeof v==='string'?v.trim().slice(0,n):'';
 const writes=/\b(?:delete|purchase|pay|transfer|approve|authorize|deploy|merge|commit|install|edit|modify|repair|fix|implement|build|create|execute|shell|python|termux)\b/i;
 export function needsReadAgent(question){
