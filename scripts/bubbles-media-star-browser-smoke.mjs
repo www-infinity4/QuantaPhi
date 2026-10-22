@@ -68,6 +68,27 @@ try{
  }
  await chat.close();
  if(chatError)throw Error('Bubbles chat could not open the Media Star player: '+chatError);
+
+ // A disposable radio fixture isolates iframe lifecycle from external streams.
+ // A browser reload loses its clicked state, reproducing the hosted radio bug.
+ const radio=await browser.newPage({viewport:{width:390,height:844}});
+ let radioLoads=0;
+ await radio.route(origin+'/infinity-radio/',async route=>{
+  radioLoads++;
+  await route.fulfill({contentType:'text/html',body:'<!doctype html><title>Radio lifecycle fixture</title><button id="play-btn" onclick="document.body.dataset.played=\'yes\'">Play</button>'});
+ });
+ await radio.goto(origin+'/bubbles.html',{waitUntil:'domcontentloaded',timeout:25000});
+ await radio.locator('.ba-launcher').first().click({timeout:15000});
+ const radioField=radio.locator('.ba-panel textarea[aria-label="Message Bubbles"]').first();
+ await radioField.fill('Play Infinity Radio');
+ await radio.locator('.ba-panel .ba-send').first().click();
+ await radio.waitForFunction(()=>document.querySelector('.ba-card-workspace')?.textContent.includes('Playback requested')&&!document.querySelector('.ba-panel .ba-send')?.disabled,{timeout:25000});
+ const radioFrame=radio.frameLocator('iframe[title="Infinity Radio"]');
+ await radioFrame.locator('body[data-played="yes"]').waitFor({state:'attached',timeout:5000});
+ assert.equal(radioLoads,1,'chat must not reload the radio after clicking Play');
+ results.push({probe:'radio_playback_survives_chat_reply',status:'passed',radioLoads,playControlClicked:true,audioVerified:false});
+ await radio.close();
+
  if(errors.length)results.push({probe:'public_host_page_errors',status:'observed',errors:errors.slice(0,8)});
 }finally{
  mkdirSync('test-results',{recursive:true});
