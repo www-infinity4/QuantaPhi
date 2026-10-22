@@ -180,7 +180,7 @@ jobs:
       - name: Verify retry-safe native message acknowledgements
         run: node --test test/bubbles-native-message-ack.test.cjs
       - name: Verify native / QuantaPhi site parity and spoken notes
-        run: node --test test/bubbles-native-site-parity.test.cjs
+        run: node --test test/bubbles-native-site-parity.test.cjs test/bubbles-apk-website-release-parity.test.cjs
       - name: Verify Oracle chat interruption and text conversation
         run: node --test test/bubbles-oracle-chat-native.test.cjs
       - name: Verify native overlay layout and screenshot fallback
