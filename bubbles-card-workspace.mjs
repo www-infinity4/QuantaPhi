@@ -5,12 +5,15 @@ export {cardIntent,cards};
 export class CardWorkspace{
  constructor(container,onEvidence=()=>{},onClose=()=>{},onEdit=()=>{}){
   this.container=container;this.onEvidence=onEvidence;this.onClose=onClose;this.onEdit=onEdit;this.frames=new Map();this.active=null;this.lastSuggestedWords=[];
+  this.pageTools=[];
   this.heading=document.createElement('h3');this.status=document.createElement('p');this.status.setAttribute('role','status');
   this.stage=document.createElement('div');this.actions=document.createElement('div');this.actions.className='ba-card-toolbar';
   this.escape=event=>{if(event.key==='Escape'&&!this.container.hidden){event.preventDefault();this.close();}};
   container.addEventListener('keydown',this.escape);document.addEventListener?.('keydown',this.escape);
-  for(const [label,action] of [['Back to chat',()=>this.close()],['Play',()=>this.play()],['Open webpage',()=>this.open(this.active?.card,false,'page')],['Diagnose card',()=>this.diagnose()],['Draft edit',()=>this.draftEdit()],['Close card',()=>this.close()]]){
-   const button=document.createElement('button');button.type='button';button.className='ba-miniaction';button.textContent=label;button.onclick=action;this.actions.append(button);
+  for(const [label,action] of [['Back to chat',()=>this.close()],['Play',()=>this.play()],['Open webpage',()=>this.open(this.active?.card,false,this.active?.mode==='page'?'card':'page')],['Diagnose card',()=>this.diagnose()],['Draft edit',()=>this.draftEdit()],['Close card',()=>this.close()]]){
+   const button=document.createElement('button');button.type='button';button.className='ba-miniaction';button.textContent=label;button.onclick=action;if(['Diagnose card','Draft edit'].includes(label)){this.pageTools.push(button);button.hidden=true;}
+   if(label==='Open webpage')this.pageButton=button;
+   this.actions.append(button);
   }
   container.className='ba-card-workspace';container.hidden=true;container.append(this.heading,this.status,this.actions,this.stage);
  }
@@ -58,6 +61,8 @@ export class CardWorkspace{
  async open(card,play,mode='card'){
   if(!card)return {message:'Choose a card first.'};
   const frameKey=card.id+':'+mode;
+  for(const button of this.pageTools)button.hidden=mode!=='page';
+  this.pageButton.textContent=mode==='page'?'Use card':'Open webpage';
   this.pause(this.active);this.stage.hidden=false;this.container.querySelector('.ba-card-catalog')?.remove();this.container.hidden=false;this.heading.textContent=card.title;this.status.textContent='Opening '+card.title+'…';
   let record=this.frames.get(frameKey);
   if(!record){
