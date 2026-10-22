@@ -33,7 +33,7 @@ jobs:
           node --check workers/bubbles-tools/worker.mjs
           node --check workers/bubbles-tools/mcp.mjs
           node --check workers/bubbles-tools/search.mjs
-          node --test test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-tools.test.mjs test/bubbles-live-tool-acceptance.test.mjs test/bubbles-source-read-ui.test.mjs test/bubbles-search-completion.test.mjs
+          node --test test/bubbles-read-agent.test.mjs test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-tools.test.mjs test/bubbles-live-tool-acceptance.test.mjs test/bubbles-source-read-ui.test.mjs test/bubbles-search-completion.test.mjs
       - name: Check existing deployment authorization
         if: github.event_name != 'pull_request'
         id: deploy_auth
