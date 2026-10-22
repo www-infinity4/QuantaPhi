@@ -1796,7 +1796,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }
    display(answer,'ai');
    if(workspace&&!workspace.container.hidden){
-    conversation.append(workspace.container);
+    if(workspace.container.parentNode!==conversation)conversation.append(workspace.container);
     workspace.container.scrollIntoView?.({block:'start'});
    }
    messages.push({role:'user',text:spoken},{role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
@@ -1818,9 +1818,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     catch(error){answer='Card action failed: '+String(error.message||error).slice(0,170);}
     display(answer,'ai');
     // The card belongs below this exchange, not above it where auto-scroll hides it.
-    // Reuse the existing workspace; moving its node preserves media, state and controls.
+    // Keep the connected workspace in place: reparenting reloads iframe players.
     if(!workspace.container.hidden){
-     conversation.append(workspace.container);
+     if(workspace.container.parentNode!==conversation)conversation.append(workspace.container);
      workspace.container.scrollIntoView?.({block:'start'});
     }
     messages.push({role:'user',text:spoken},{role:'assistant',text:answer});persistChat();
@@ -1879,7 +1879,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
       const opened=await workspace.handle({action:decision.kind==='play_card'?'play':'open',card:target});
       answer=opened.message;
       if(!workspace.container.hidden){
-       conversation.append(workspace.container);
+       if(workspace.container.parentNode!==conversation)conversation.append(workspace.container);
        workspace.container.scrollIntoView?.({block:'start'});
       }
      }
