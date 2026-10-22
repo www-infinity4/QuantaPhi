@@ -139,7 +139,10 @@ export function hasModelToolLeak(answer){
  const falseSubmission=/(?:^|\n)\s*(?:I(?:'m| am)|We(?:'re| are))?\s*[Ss]ubmitting (?:a|the) (?:repair |work |Robot Brain )?ticket\b/i.test(text);
  const searchDraft=/(?:^|\n)\s*\{\s*"(?:query|tool|tool_name)"\s*:/i.test(text)
   && /\b(?:search for|attempt to fetch|fetch a snippet|call|invoke|tool|top_n)\b/i.test(text);
- return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft;
+ // Some models emit a fabricated call with "id" before "tool", hidden
+ // after ordinary prose. It must never reach Bubbles voice or count as a read.
+ const embeddedToolDraft=/\{[^{}\n]{0,700}["'](?:tool|tool_name|function)["']\s*:\s*["'](?:web[._][\w.-]+|github[._][\w.-]+|browser[._][\w.-]+|weather[._][\w.-]+|tools?[._][\w.-]+)["'][^{}\n]{0,700}\}/i.test(text);
+ return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft||embeddedToolDraft;
 }
 function groundedWorkFallback(request){
  const target=/video/i.test(request)?'video generator':/wallet|quant|coin/i.test(request)?'wallet ledger':/image/i.test(request)?'image generator':/radio|music/i.test(request)?'radio player':/robot brain|bot/i.test(request)?'Robot Brain':/bubbles|voice|microphone/i.test(request)?'Bubbles voice and job bridge':'requested repository component';
@@ -539,14 +542,20 @@ export async function finishSearchReply(original,summarize,timeoutMs=20000,userR
  const fallback=async()=>{
   if(!/\b(?:research|project|plan|explain|analy[sz]e|synthesi[sz]e|compare|next steps)\b/i.test(userRequest))return original;
   const data=await original.clone().json();
-  return Response.json({...data,output:String(data.output||'')+'\nSearch results are available, but the requested explanation or plan is not complete.',answerStatus:'partial',analysisVerified:false},{status:original.status,headers:original.headers});
+  const sources=(Array.isArray(data.sources)?data.sources:[]).filter(s=>typeof s?.title==='string'&&s.title.trim()).slice(0,3);
+  const titles=sources.map(s=>s.title.trim().slice(0,110)).join('; ');
+  const excerpt=typeof sources[0]?.excerpt==='string'?sources[0].excerpt.trim().slice(0,220):'';
+  const output='I found source excerpts'+(titles?' from '+titles:'')+'. '+
+   (excerpt?'One excerpt reports: '+excerpt+'. ':'')+
+   'I could not finish a reliable explanation from these snippets. I have not read the full pages or completed the requested research.';
+  return Response.json({...data,output,output_text:output,answerStatus:'partial',analysisVerified:false},{status:original.status,headers:original.headers});
  };
  try{
   const summarized=await Promise.race([summarize(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('search_summary_timeout')),timeoutMs)})]);
   if(!summarized.ok)return fallback();
   const data=await summarized.clone().json();
   const output=String(data.output||'').trim();
-  if(!output||hasModelToolLeak(output)||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output)||(/\b(?:research|explain|synthesi[sz]e)\b/i.test(userRequest)&&/^Live results from /i.test(output)))return fallback();
+  if(data.answerStatus==='partial'||!output||hasModelToolLeak(output)||/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(output)||(/\b(?:research|explain|synthesi[sz]e)\b/i.test(userRequest)&&/^Live results from /i.test(output)))return fallback();
   return summarized;
  }catch{return fallback()}
  finally{clearTimeout(timer)}
