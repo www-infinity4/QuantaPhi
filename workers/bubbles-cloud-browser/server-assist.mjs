@@ -63,6 +63,19 @@ export async function precedingSignedTurns({id,db,now=Date.now()}){
   '\nAnswer the CURRENT user question using relevant context. Do not claim a prior result proves a current button tap or new tool action.\n';
 }
 // Executes while the authenticated server client holds its request open.
+// The public tool itself verifies the source. Carry a *bounded, origin-locked*
+// citation across signed transport instead of silently discarding it.
+export function publicGithubSourceReceipt(data){
+ if(data?.receipt?.status!=='complete'||data?.receipt?.sourceReadVerified!==true||
+    !['github.read_file','github.read_repository'].includes(data.receipt?.tool))return null;
+ const raw=String(data.sourceUrl||data.receipt?.sourceUrl||'');
+ let url;try{url=new URL(raw)}catch{return null}
+ if(url.protocol!=='https:'||url.hostname!=='github.com'||url.username||url.password||
+    url.search||url.hash||url.port)return null;
+ if(!/^\/[a-z0-9_.-]{1,39}\/[a-z0-9_.-]{1,100}\/blob\/[a-z0-9_.-]{1,100}\/[a-z0-9_./-]{1,300}$/i.test(url.pathname)||
+    url.pathname.includes('..'))return null;
+ return url.href;
+}
 export async function executeServerAssist({id,db,store,fetcher=fetch,now=Date.now()}){
  const row=await db.prepare("SELECT payload,status,expires_ms FROM bubbles_chatgpt_bridge WHERE id=? AND action='server_assist'").bind(id).first();
  if(!row||['complete','blocked'].includes(row.status))return;
@@ -89,9 +102,14 @@ export async function executeServerAssist({id,db,store,fetcher=fetch,now=Date.no
     if(!await approved(store))throw Error('consent_revoked');
     const output=String(data.output||data.output_text||'').trim();
     if(data.ok!==true||!output||!data.receipt)throw Error('no_verified_bubbles_response');
+    const verifiedGithubSource=publicGithubSourceReceipt(data);
+    const toolSources=(Array.isArray(data.sources)?data.sources:[]).slice(0,8).map(s=>({title:String(s.title||'').slice(0,200),url:String(s.url||'').slice(0,1500)}));
+    if(verifiedGithubSource&&!toolSources.some(s=>s.url===verifiedGithubSource))
+     toolSources.push({title:'Verified public GitHub file',url:verifiedGithubSource});
     result={ok:true,output:output.slice(0,8000),answerStatus:data.answerStatus==='partial'?'partial':(data.answerStatus==='complete'?'complete':'unverified'),analysisVerified:data.analysisVerified===true,
-     receipt:{tool:String(data.receipt.tool||'conversation').slice(0,100),status:String(data.receipt.status||'unverified').slice(0,60)},
-     sources:(Array.isArray(data.sources)?data.sources:[]).slice(0,8).map(s=>({title:String(s.title||'').slice(0,200),url:String(s.url||'').slice(0,1500)})),
+     receipt:{tool:String(data.receipt.tool||'conversation').slice(0,100),status:String(data.receipt.status||'unverified').slice(0,60),
+      sourceReadVerified:data.receipt.sourceReadVerified===true,repositoryActionsVerified:false},
+     ...(verifiedGithubSource?{sourceUrl:verifiedGithubSource}:{}),sources:toolSources.slice(0,8),
      scope:'public_bubbles_conversation',ownerToolsVerified:false,phoneVerified:false};
     state='complete';
    }catch(error){result={ok:false,error:/^(?:consent_revoked|bubbles_tools_binding_missing|no_verified_bubbles_response|gateway_http_[1-5][0-9]{2})$/.test(error.message)?error.message:'bubbles_server_unavailable',phase,gatewayStatus};}
