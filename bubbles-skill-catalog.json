@@ -1,0 +1,579 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-22",
+  "title": "Bubbles searchable skill reference and capability map",
+  "disclaimer": "A catalog entry is not a permission or an executable tool. Imported ChatGPT skill metadata is reference-only. Bubbles must independently implement, authenticate, test, and authorize each capability. Never copy ChatGPT private memory, tokens, session cookies or connector credentials.",
+  "totalImportedSkillMetadata": 64,
+  "localCapabilities": [
+    {
+      "id": "bubbles:context-recall",
+      "label": "Personal context and memory",
+      "description": "Recall opt-in wallet-scoped Bubbles conversation history and saved synapses. Uses BubblesMemory, /v1/synapses and the owner conversation endpoint. Does not access ChatGPT private personal_context.",
+      "origin": "Bubbles",
+      "state": "implemented_conditional",
+      "requires": "Verified wallet and enabled private memory"
+    },
+    {
+      "id": "bubbles:mcp-read-tools",
+      "label": "Web, weather and read-only MCP",
+      "description": "Read-only tools in Bubbles MCP: web_search, weather_current, resonance_calculate, news_headlines; tool receipts determine actual success.",
+      "origin": "Bubbles",
+      "state": "implemented_conditional",
+      "requires": "Deployed MCP gateway and server-side authorization"
+    },
+    {
+      "id": "bubbles:image-attachment",
+      "label": "Image attachments",
+      "description": "Attach a JPEG, PNG or WebP in the existing Bubbles chat image picker. Actual model processing depends on the receiving service.",
+      "origin": "Bubbles",
+      "state": "implemented_conditional",
+      "requires": "Browser file permission and compatible chat service"
+    },
+    {
+      "id": "bubbles:github-projects",
+      "label": "GitHub projects and builds",
+      "description": "Per-user GitHub App OAuth connection; repository actions require selected resources and verified write permissions. Owner Robot Brain actions are separate.",
+      "origin": "Bubbles",
+      "state": "implemented_conditional",
+      "requires": "User GitHub consent and verified repository permissions"
+    },
+    {
+      "id": "bubbles:cloudflare-projects",
+      "label": "Cloudflare deployments",
+      "description": "Cloudflare project operations require the user's separately approved and configured account access. A wallet login does not grant API permissions.",
+      "origin": "Bubbles",
+      "state": "configuration_pending",
+      "requires": "Cloudflare OAuth client, scopes, authorized deployment executor"
+    },
+    {
+      "id": "bubbles:files-and-video",
+      "label": "File and video attachment adapters",
+      "description": "Reference capability for future document and video uploads. Existing image attachment does not prove file/video processing.",
+      "origin": "Bubbles",
+      "state": "not_connected",
+      "requires": "Verified upload storage, media parser, limits, and privacy controls"
+    },
+    {
+      "id": "bubbles:owner-brain",
+      "label": "Robot Brain owner work",
+      "description": "Signed, owner-scoped, revocable Brain work ticket and receipt pipeline, separate from public chat.",
+      "origin": "Bubbles",
+      "state": "implemented_conditional",
+      "requires": "Active five-day grant, verified Unified Wallet, approved scoped job"
+    }
+  ],
+  "referenceSkills": [
+    {
+      "id": "skills://plugins/vercel/access-protected-vercel-deployment",
+      "label": "access protected vercel deployment",
+      "description": "Access and test Vercel deployments protected by Vercel Authentication, SSO, or Deployment Protection. Use when curl, agent-browser, Playwright, or another automated request reaches a Vercel login or protection page; when a protected preview or production URL returns 401 or 403; when TRUSTED_SOURCES_ENVIRONMENT_MISMATCH appears; or when choosing between `vercel curl` and the `x-vercel-trusted-oidc-idp-token` header.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/ai-gateway",
+      "label": "ai gateway",
+      "description": "Vercel AI Gateway guidance for setup, model discovery, authentication, routing, fallbacks, virtual models, evaluation models, BYOK, budgets, spend reporting, observability, compatible APIs, and coding-agent configuration. Use when adding AI Gateway to an app, migrating provider calls, choosing models or providers, centralizing model configuration, evaluating application state, debugging gateway requests, or running `vercel ai-gateway` commands.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/ai-sdk",
+      "label": "ai sdk",
+      "description": "Vercel AI SDK expert guidance. Use when building AI-powered features — chat interfaces, text generation, structured output, tool calling, agents, MCP integration, streaming, embeddings, reranking, image generation, or working with any LLM provider.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/auth",
+      "label": "auth",
+      "description": "Authentication integration guidance — Clerk (native Vercel Marketplace), Better Auth, Descope, and Auth0 setup for Next.js applications, plus Sign in with Vercel, Vercel Passport, and Vercel KMS. Covers server config, route handlers, proxy.ts auth patterns, sign-in/sign-up flows, and Marketplace provisioning. Use when implementing user authentication, sessions, protected routes, or protecting deployments.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/bootstrap",
+      "label": "bootstrap",
+      "description": "Project bootstrapping orchestrator for repos that depend on Vercel-linked resources (databases, auth, and managed integrations). Use when setting up or repairing a repository so linking, environment provisioning, env pulls, and first-run db/dev commands happen in the correct safe order.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/build-agents",
+      "label": "build agents",
+      "description": "Default guidance for building AI agents. Use for generic requests to build, create, scaffold, design, architect, or implement an AI agent, agent app, tool-calling agent, durable agent, multi-agent system, or scheduled agent.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/cdn-caching",
+      "label": "cdn caching",
+      "description": "Debug Vercel CDN caching — cache hit rate, stale content, revalidation behavior, ISR + PPR, per-request cache reasons (cacheReason) and PPR state (ppr_state), and costs.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/chat-sdk",
+      "label": "chat sdk",
+      "description": "Vercel Chat SDK expert guidance. Use when building multi-platform chat bots — Slack, Telegram, Microsoft Teams, Discord, Google Chat, GitHub, Linear — with a single codebase. Covers the Chat class, adapters, threads, messages, cards, modals, streaming, state management, and webhook setup.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/create-a-backend",
+      "label": "create a backend",
+      "description": "Backend architecture guidance. Use when planning, building, or migrating an API or backend; choosing between Functions, Services, containers, Workflow, Queues, and Marketplace databases; or selecting a supported backend framework or runtime.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/custom-metrics",
+      "label": "custom metrics",
+      "description": "Emit and query Vercel Custom Metrics. Use when instrumenting application or business measurements in Vercel Functions, using metric() from @vercel/functions, choosing metric names and attributes, or querying emitted values with vc metrics.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/deployments-cicd",
+      "label": "deployments cicd",
+      "description": "Vercel deployment and CI/CD expert guidance. Use when deploying, promoting, rolling back, inspecting deployments, building with --prebuilt, or configuring CI workflow files for Vercel.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/domains",
+      "label": "domains",
+      "description": "Search, register, connect, transfer, and renew domain names on Vercel using the CLI or Domains Registrar API. Use for domain availability and pricing, custom domains, DNS records, nameservers, ownership verification, and domain orders.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/env-vars",
+      "label": "env vars",
+      "description": "Vercel environment variable expert guidance. Use when working with .env files, vercel env commands, Secret or Config variable types, OIDC tokens, or managing environment-specific configuration.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/eve",
+      "label": "eve",
+      "description": "eve framework guidance for durable AI agents and agent-powered applications. Use when creating, editing, or debugging an eve project, when the user explicitly asks for eve, or when the build-agents skill has selected eve as the default framework. Covers eve's filesystem-first runtime, durable sessions, tools, skills, connections, channels, sandboxes, subagents, schedules, evals, frontend clients, and Agent Runs observability. Do not use for incidental agent mentions, generic agent-building prompts, or established non-eve stacks unless the user asks for comparison or migration.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/flags-sdk",
+      "label": "flags sdk",
+      "description": "Set up and use feature flags and A/B tests with the Flags SDK (`flags` npm package) and Vercel Flags. Use when installing or configuring the SDK, adding a new or existing flag, wiring `vercelAdapter` (OIDC or SDK keys), declaring flags with `flag()`, using the `vercel flags` CLI (create, inspect, list, enable, disable, set, update, split, rollout, rules, segments, use-targeting, evaluations, versions, open, archive, unarchive, rm, sdk-keys, override, prepare), setting up providers/adapters (Vercel, Statsig, LaunchDarkly, PostHog, GrowthBook, Global Config, OpenFeature, Split, Flagsmith, Reflag, Optimizely, or custom), precompute, `identify`/`dedupe`, Flags Explorer/Toolbar, Next.js or SvelteKit, or encrypting flag values. Triggers: feature flags, feature gates, A/B testing, experimentation, gradual rollout, traffic split, targeting rules, flag overrides, precompute, Flags Explorer, Vercel Flags, vercel flags CLI, `flags/next`, `flags/sveltekit`, `flags/react`, `@flags-sdk/*`.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/is-agentic",
+      "label": "is agentic",
+      "description": "Score how ready a website, domain, or public MCP endpoint is for AI agents using Is Agentic, and read or act on the resulting report. Use when asked to check a site's agent readiness, get its Is Agentic score, fetch a scored report as JSON, or fix the issues that lower a site's score.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/knowledge-update",
+      "label": "knowledge update",
+      "description": "Corrects outdated LLM knowledge about the Vercel platform and introduces new products. Injected at session start.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/marketplace",
+      "label": "marketplace",
+      "description": "Vercel Marketplace expert guidance — discovering, installing, and managing third-party integrations via the `vercel integration` CLI. Use when building any app that needs an external capability without a dedicated skill — commerce (stores, storefronts, selling products), payments (checkout, subscriptions, billing), observability/monitoring, messaging/email, search, or CMS — or when discovering, installing, or managing integrations.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/microfrontends",
+      "label": "microfrontends",
+      "description": "Guide for building, configuring, and deploying microfrontends on Vercel. Use this skill when the user mentions microfrontends, multi-zones, splitting an app across teams, independent deployments, cross-app routing, incremental migration, composing multiple frontends under one domain, microfrontends.json, @vercel/microfrontends, the microfrontends local proxy, or path-based routing between Vercel projects. Also use when the user asks about shared layouts across projects, navigation between microfrontends, fallback environments, asset prefixes, or feature flag controlled routing.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/queues",
+      "label": "queues",
+      "description": "Vercel Queues guidance — durable topics with at-least-once delivery, independent consumer groups, retries, delays, and idempotency keys via @vercel/queue (JS) or vercel-queue (Python). Use when deferring background work, buffering traffic, fanning out events, or choosing between Queues and Workflows.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/react-best-practices",
+      "label": "react best practices",
+      "description": "React best-practices reviewer for TSX files. Triggers after editing multiple TSX components to run a condensed quality checklist covering component structure, hooks usage, accessibility, performance, and TypeScript patterns.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/routing-middleware",
+      "label": "routing middleware",
+      "description": "Vercel Routing Middleware guidance — request interception before cache, rewrites, redirects, personalization. Works with any framework. Supports Edge, Node.js, and Bun runtimes. Use when intercepting requests at the platform level.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/runtime-cache",
+      "label": "runtime cache",
+      "description": "Vercel Runtime Cache API guidance — ephemeral per-region key-value cache with tag-based invalidation. Shared across Functions, Routing Middleware, and Builds. Use when implementing caching strategies beyond framework-level caching.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/vercel-agent",
+      "label": "vercel agent",
+      "description": "Vercel Agent guidance — dashboard and Slack chat, code review, production investigation, approved actions, and product installation. Use when configuring or working with Vercel's AI assistant.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/vercel-cli",
+      "label": "vercel cli",
+      "description": "Vercel CLI expert guidance. Use when deploying, managing environment variables, linking projects, viewing logs, querying metrics, managing domains, managing feature flags with vercel flags, or interacting with the Vercel platform from the command line.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/vercel-connect",
+      "label": "vercel connect",
+      "description": "Vercel Connect expert guidance for securely obtaining scoped credentials for third-party services on behalf of apps or users. Use when wiring up provider API access, OAuth, API-key services, MCP servers, triggers, framework adapters, or eve agent connections.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/vercel-firewall",
+      "label": "vercel firewall",
+      "description": "Vercel Firewall expert guidance — automatic DDoS mitigation, the Vercel WAF (custom rules, IP blocking, managed rulesets, rate limiting), Attack Mode, system bypass, bot management, and the `vercel firewall` CLI. Use when configuring platform-level security, responding to attacks, or staging firewall rules.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/vercel-functions",
+      "label": "vercel functions",
+      "description": "Vercel Functions expert guidance — Node.js/Bun/Python runtimes, Fluid Compute, long-duration (30 min) functions, large functions (5 GB bundles), Docker/OCI container images, plan limits, streaming, WebSockets, and Cron Jobs. Use when configuring, debugging, or optimizing server-side code running on Vercel.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/vercel-sandbox",
+      "label": "vercel sandbox",
+      "description": "Vercel Sandbox guidance — ephemeral Firecracker microVMs for running untrusted code safely. Supports AI agents, code generation, and experimentation. Use when executing user-generated or AI-generated code in isolation.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/vercel-services",
+      "label": "vercel services",
+      "description": "Configure and troubleshoot Vercel Services for multiple frontends and backends in one project. Use when composing a polyglot or multi-service application on one Vercel deployment; defining the `services` key, service-targeted rewrites, or service bindings in `vercel.json`; or running all services with `vercel dev`.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/vercel-storage",
+      "label": "vercel storage",
+      "description": "Vercel storage expert guidance — Blob, Global Config (formerly Edge Config), and Marketplace storage (Neon Postgres, Upstash Redis). Use when choosing, configuring, or using data storage with Vercel applications.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/verification",
+      "label": "verification",
+      "description": "Full-story verification — infers what the user is building, then verifies the complete flow end-to-end: browser → API → data → response. Triggers on dev server start and 'why isn't this working' signals.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/vercel/workflow",
+      "label": "workflow",
+      "description": "Vercel Workflow SDK expert guidance. Use when building durable workflows, long-running tasks, API routes or agents that need pause/resume, retries, step-based execution, or crash-safe orchestration with Vercel Workflow.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-analytics-dashboard",
+      "label": "artifact template analytics dashboard",
+      "description": "Create a spreadsheet using the Analytics Dashboard template and its retained reference file. Use when the user selects or names Analytics Dashboard. Monitor acquisition, engagement, retention, revenue, and conversion funnel KPIs with charts.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-business-review",
+      "label": "artifact template business review",
+      "description": "Create a presentation using the Business Review template and its retained reference file. Use when the user selects or names Business Review. Review business performance, KPIs, segment results, strategic priorities, decisions, and outlook.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-design-report",
+      "label": "artifact template design report",
+      "description": "Create a document using the Design Report template and its retained reference file. Use when the user selects or names Design Report. Produce design reports with an executive summary, key findings, implications, recommendations, and appendix.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-experiment-analysis",
+      "label": "artifact template experiment analysis",
+      "description": "Create a document using the Experiment Analysis template and its retained reference file. Use when the user selects or names Experiment Analysis. Analyze experiments with hypotheses, methodology, results, interpretation, limitations, and next steps.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-financial-budget",
+      "label": "artifact template financial budget",
+      "description": "Create a spreadsheet using the Financial Budget template and its retained reference file. Use when the user selects or names Financial Budget. Model actuals, budget and scenario forecasts, variances, cash runway, and departmental plans.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-investment-committee-memo",
+      "label": "artifact template investment committee memo",
+      "description": "Create a document using the Investment Committee Memo template and its retained reference file. Use when the user selects or names Investment Committee Memo. Prepare investment committee memos with the thesis, transaction details, financial analysis, risks, and recommendation.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-legal-memorandum",
+      "label": "artifact template legal memorandum",
+      "description": "Create a document using the Legal Memorandum template and its retained reference file. Use when the user selects or names Legal Memorandum. Draft legal memoranda with the issue, brief answer, relevant facts, analysis, and conclusion.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-market-trends-report",
+      "label": "artifact template market trends report",
+      "description": "Create a presentation using the Market Trends Report template and its retained reference file. Use when the user selects or names Market Trends Report. Communicate market or industry trends, supporting evidence, implications, and recommended responses.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-minimal-letterhead",
+      "label": "artifact template minimal letterhead",
+      "description": "Create a document using the Minimal Letterhead template and its retained reference file. Use when the user selects or names Minimal Letterhead. Write professional business letters with sender, recipient, message, and signature fields in a minimal letterhead layout.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-operating-calendar",
+      "label": "artifact template operating calendar",
+      "description": "Create a spreadsheet using the Operating Calendar template and its retained reference file. Use when the user selects or names Operating Calendar. Plan annual and monthly operating milestones, campaigns, launches, deadlines, and recurring events.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-operating-review",
+      "label": "artifact template operating review",
+      "description": "Create a presentation using the Operating Review template and its retained reference file. Use when the user selects or names Operating Review. Run weekly operating reviews with scorecards, functional updates, risks, decisions, and action items.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-project-kickoff",
+      "label": "artifact template project kickoff",
+      "description": "Create a presentation using the Project Kickoff template and its retained reference file. Use when the user selects or names Project Kickoff. Align teams on project goals, scope, roles, milestones, risks, and the working model.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-project-tracker",
+      "label": "artifact template project tracker",
+      "description": "Create a spreadsheet using the Project Tracker template and its retained reference file. Use when the user selects or names Project Tracker. Manage workstreams, tasks, owners, status, priority, dates, launch pulse, and a Gantt schedule.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-sales-pipeline",
+      "label": "artifact template sales pipeline",
+      "description": "Create a spreadsheet using the Sales Pipeline template and its retained reference file. Use when the user selects or names Sales Pipeline. Track opportunities, stages, owners, deal sizes, probabilities, forecasts, next steps, and risks.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-simple-dark-mode",
+      "label": "artifact template simple dark mode",
+      "description": "Create a presentation using the Simple Dark Mode template and its retained reference file. Use when the user selects or names Simple Dark Mode. Create clean dark-mode presentations with bold typography, simple sections, charts, and imagery.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-simple-light-mode",
+      "label": "artifact template simple light mode",
+      "description": "Create a presentation using the Simple Light Mode template and its retained reference file. Use when the user selects or names Simple Light Mode. Create clean light-mode presentations with spacious typography, simple sections, charts, and imagery.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-strategy-memorandum",
+      "label": "artifact template strategy memorandum",
+      "description": "Create a document using the Strategy Memorandum template and its retained reference file. Use when the user selects or names Strategy Memorandum. Present strategic context, choices, rationale, risks, milestones, and a clear recommendation.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-system-design",
+      "label": "artifact template system design",
+      "description": "Create a document using the System Design template and its retained reference file. Use when the user selects or names System Design. Document system architecture, requirements, components, data flows, APIs, tradeoffs, and operational considerations.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-team-alignment",
+      "label": "artifact template team alignment",
+      "description": "Create a presentation using the Team Alignment template and its retained reference file. Use when the user selects or names Team Alignment. Facilitate team offsites and planning with context, goals, priorities, decisions, and action items.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/openai-templates/artifact-template-three-statement-forecast",
+      "label": "artifact template three statement forecast",
+      "description": "Create a spreadsheet using the Three-Statement Forecast template and its retained reference file. Use when the user selects or names Three-Statement Forecast. Build an integrated income statement, balance sheet, and cash flow forecast with assumptions, checks, and an executive summary.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/template-creator/template-creator",
+      "label": "template creator",
+      "description": "Create or update an installable personal ChatGPT artifact-template skill from a reference document, presentation, spreadsheet, Google Docs, Slides, or Sheets link, ImageGen or Product Design image, email, Slack message, or Site project. Use when the user selects Template Creator, asks to create a reusable template, or explicitly asks to update one exact personal template. Do not use for one-off creation from an existing template.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/presentations-router/presentation",
+      "label": "presentation",
+      "description": "route explicitly selected presentation or slide artifact requests to the preinstalled capability. use only when the user explicitly selects @presentation; never trigger from request content alone.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/pdf-router/pdf",
+      "label": "pdf",
+      "description": "route explicitly selected pdf artifact requests to the preinstalled capability. use only when the user explicitly selects @pdf; never trigger from request content alone.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/documents-router/document",
+      "label": "document",
+      "description": "route explicitly selected document artifact requests to the preinstalled capability. use only when the user explicitly selects @document; never trigger from request content alone.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/google-drive/google-docs",
+      "label": "google docs",
+      "description": "Create and edit native Google Docs through connected tools.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/google-drive/google-drive",
+      "label": "google drive",
+      "description": "Use connected Google Drive as the single entrypoint for Drive, Docs, Sheets, and Slides work. Use when the user wants to find, fetch, organize, share, export, copy, or delete Drive files, or summarize and edit Google Docs, Google Sheets, and Google Slides through one unified Google Drive plugin.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/google-drive/google-drive-comments",
+      "label": "google drive comments",
+      "description": "Write, reply to, and resolve Google Drive comments on Docs, Sheets, Slides, and Drive files with evidence-backed location context. Use when the user asks to leave comments, review a file with comments, respond to comment threads, or resolve Drive comments.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/google-drive/google-sheets",
+      "label": "google sheets",
+      "description": "Analyze and edit connected Google Sheets with range precision. Use when the user wants to create Google Sheets, find a spreadsheet, inspect tabs or ranges, search rows, plan formulas, create or repair charts, clean or restructure tables, write concise summaries, or make explicit cell-range updates.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/google-drive/google-slides",
+      "label": "google slides",
+      "description": "Route Google Slides authoring requests and derive a design system from a native template or reference deck. Use this skill when the user provides an existing native Google Slides deck as a template, reference, or prior-period source, or asks to edit, update, repair, restyle, or clean up an existing native Google Slides deck. Use the Presentations skill instead for net-new presentation creation when no existing native Google Slides deck must be followed.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/plugin-management/plugin-management",
+      "label": "plugin management",
+      "description": "Discover and suggest relevant plugins, inspect app permissions and dependencies, and manage plugin connections or removal. Use when the user asks about plugins or when a task would materially benefit from an external app, account, service, or data source that available tools cannot access.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    },
+    {
+      "id": "skills://plugins/spreadsheets-router/spreadsheet",
+      "label": "spreadsheet",
+      "description": "route explicitly selected spreadsheet artifact requests to the preinstalled capability. use only when the user explicitly selects @spreadsheet; never trigger from request content alone.",
+      "origin": "ChatGPT skill catalog",
+      "state": "reference_only",
+      "requires": "Independent Bubbles tool/connector implementation and authorization"
+    }
+  ]
+}
