@@ -45,7 +45,7 @@ const humanReplies=()=>({
 const brainTools=window.BubblesBrainActions||null;
 let cardWorkspaceModule,cardWorkspaceInstance,activeCardEvidence=null;
 async function chatCardWorkspace(){
- if(!cardWorkspaceModule)cardWorkspaceModule=import('/bubbles-card-workspace.mjs?v=20261022-compact-cards1');
+ if(!cardWorkspaceModule)cardWorkspaceModule=import('/bubbles-card-workspace.mjs?v=20261022-observed-card1');
  const module=await cardWorkspaceModule;
  if(!cardWorkspaceInstance){
   const mount=create('section');conversation.append(mount);
@@ -1762,7 +1762,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!embedded&&!pendingImage&&/\b(?:tap|click|press|hit|push|choose|select|read|scan|inspect|show|look at|type|enter|fill|what's on|what is on)\b/i.test(spoken)){
   let toolAction=null,actionDriver=null;
   try{
-   actionDriver=await import('/bubbles-action-driver.mjs?v=20261022-compact-cards1');
+   actionDriver=await import('/bubbles-action-driver.mjs?v=20261022-observed-card1');
    toolAction=actionDriver.resolveToolAction(spoken,{
     activeCard:!cardWorkspaceInstance?.container.hidden&&cardWorkspaceInstance?.active?.loaded
      ?cardWorkspaceInstance.active.card.title:''

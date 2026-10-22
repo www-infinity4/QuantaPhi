@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {resolveToolAction,cardControlDecision,safeCardControls,toolReply} from '../bubbles-action-driver.mjs';
+import {resolveToolAction,cardControlDecision,safeCardControls,toolReply,cardStatusSnapshot,changedCardStatus} from '../bubbles-action-driver.mjs';
 import {CardWorkspace} from '../bubbles-card-workspace.mjs';
 import {findCard} from '../bubbles-card-catalog.mjs';
 
@@ -67,13 +67,14 @@ test('a screenshot, model text or foreign app cannot authorize clicking, and pay
  assert.match(toolReply({status:'safe_click',label:'Play',card:'Infinity Radio'}),/not yet verified/);
 });
 test('control enumeration follows a visible, enabled DOM element and returns its actual receipt',async()=>{
+ const status={textContent:'Ready',hidden:false};
  let pressed=0;const button={
   tagName:'BUTTON',innerText:'Play',disabled:false,hidden:false,
   getAttribute(){return null},getClientRects(){return [{width:100}]},
-  click(){pressed++}
+  click(){pressed++;setTimeout(()=>{status.textContent="Build check passed"},20)}
  };
  const doc={
-  querySelectorAll(selector){return selector.includes('[role="button"]')?[button]:[]},
+  querySelectorAll(selector){return selector.includes('[role="button"]')?[button]:selector.includes('[role="status"]')?[status]:[]},
   querySelector(){return null}
  };
  const controls=safeCardControls(doc);
@@ -104,6 +105,8 @@ test('control enumeration follows a visible, enabled DOM element and returns its
   await workspace.open(findCard('Infinity Radio'),false);
   const receipt=await workspace.pressControl('Play');
   assert.equal(receipt.status,'safe_click');
+  assert.deepEqual(receipt.observedStatus,['Build check passed']);
+  assert.match(receipt.message,/visible response only/);
   assert.equal(pressed,1,'click must be issued on the real DOM control once');
   const missed=await workspace.pressControl('Delete all');
   assert.equal(missed.status,'manual_approval_required');
@@ -127,4 +130,20 @@ test('synthetic GitHub tool fixture was created, fetched and updated with no per
  assert.equal(receipt.stage,'created-read-updated');
  assert.deepEqual(receipt.verifiedOperations,['create','fetch','update']);
  assert.equal(receipt.privateData,false);
+});
+
+test('only changed visible status text is acknowledged as a page observation',()=>{
+ const status={textContent:'Ready',hidden:false};
+ const hidden={textContent:'Deployment complete',hidden:true};
+ const doc={querySelectorAll:()=>[status,hidden]};
+ const before=cardStatusSnapshot(doc);
+ assert.deepEqual(changedCardStatus(before,cardStatusSnapshot(doc)),[]);
+ status.textContent='Build check passed';
+ const observedStatus=changedCardStatus(before,cardStatusSnapshot(doc));
+ assert.deepEqual(observedStatus,['Build check passed']);
+ const message=toolReply({status:'safe_click',label:'Run build check',card:'Workshop',observedStatus});
+ assert.match(message,/card now reports: Build check passed/);
+ assert.match(message,/visible response only/);
+ assert.doesNotMatch(message,/Deployment complete/);
+ assert.match(toolReply({status:'safe_click',label:'Run',card:'Workshop',observedStatus:[]}),/not yet verified/);
 });
