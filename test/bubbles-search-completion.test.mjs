@@ -20,13 +20,14 @@ test('model planning JSON is not a completed source-backed answer',async()=>{
  const result=await finishSearchReply(original(),()=>Response.json({output:draft}),20,'Research hydrogen and make a project plan');
  const data=await result.json();
  assert.doesNotMatch(data.output,/top_n|Attempt to fetch/);
- assert.match(data.output,/Lovilia is in Iowa/);
+ assert.match(data.output,/Lovilia/);
+ assert.match(data.output,/could not finish a reliable explanation/);
  assert.equal(data.answerStatus,'partial');assert.equal(data.analysisVerified,false);
  assert.equal(data.receipt.status,'complete');assert.equal(data.sources.length,1);
 });
 test('synthesis timeout preserves sources and explicitly reports the missing requested plan',async()=>{
  const result=await finishSearchReply(original(),()=>new Promise(()=>{}),5,'Research hydrogen and include next steps');
- const data=await result.json();assert.equal(data.answerStatus,'partial');assert.match(data.output,/plan is not complete/);
+ const data=await result.json();assert.equal(data.answerStatus,'partial');assert.match(data.output,/could not finish a reliable explanation/);
 });
 
 test('real research tool produces a grounded explanation, not just search excerpts',async()=>{
@@ -76,7 +77,7 @@ test('unavailable research synthesis keeps genuine search sources and marks expl
   assert.equal(body.sources.length,1);
   assert.equal(body.answerStatus,'partial');
   assert.equal(body.analysisVerified,false);
-  assert.match(body.output,/not complete/i);
+  assert.match(body.output,/could not finish a reliable explanation/i);
  }finally{globalThis.fetch=originalFetch}
 });
 
