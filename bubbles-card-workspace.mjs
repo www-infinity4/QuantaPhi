@@ -1,5 +1,5 @@
 import {cards,cardIntent} from './bubbles-card-catalog.mjs';
-import {cardControlDecision,safeCardControls,toolReply} from './bubbles-action-driver.mjs';
+import {cardControlDecision,safeCardControls,toolReply,cardStatusSnapshot,changedCardStatus} from './bubbles-action-driver.mjs';
 import {compactCardDocument} from './bubbles-card-surface.mjs';
 export {cardIntent,cards};
 export class CardWorkspace{
@@ -50,8 +50,19 @@ export class CardWorkspace{
   try{
    // Only a named, unique, visible, enabled and non-sensitive card control.
    // Browser scripts still enforce all wallet/owner permissions independently.
+   const targetDoc=decision.control.element.ownerDocument||doc;
+   const before=cardStatusSnapshot(targetDoc);
    decision.control.element.click();
-   const receipt={status:'safe_click',label:decision.control.label,card:record.card.title};
+   // Bound observation to the selected control's document; never infer a
+   // server write, deployment or audio result from a page's status text.
+   let observedStatus=[];
+   for(let attempt=0;attempt<6;attempt++){
+    if(this.active!==record)break;
+    observedStatus=changedCardStatus(before,cardStatusSnapshot(targetDoc));
+    if(observedStatus.length)break;
+    await new Promise(resolve=>setTimeout(resolve,100));
+   }
+   const receipt={status:'safe_click',label:decision.control.label,card:record.card.title,observedStatus};
    this.onEvidence({...this.getEvidence(record),controlAction:receipt,loaded:true});
    return {...receipt,message:toolReply(receipt)};
   }catch(error){return {status:'tap_failed',message:'Card control did not accept the tap: '+String(error.message||error).slice(0,130)}}
