@@ -61,3 +61,30 @@ test('Quant-AI selling preferences cannot hijack a normal owner chat',()=>{
  assert.match(bubbles,/if\(privateSellerRequest\)\{/);
  assert.doesNotMatch(bubbles,/else if\(config\.privateContext&&!nativeOverlay\)/);
 });
+
+test('owner-gated neural task candidate recognizes conversational repairs, not ordinary chat',()=>{
+ const beginning=bubbles.indexOf(' const neuralWorkCandidate=');
+ const ending=bubbles.indexOf(' if(neuralWorkCandidate)',beginning);
+ assert.ok(beginning>0&&ending>beginning,'Bubbles has a bounded model-guided task admission guard');
+ const source=bubbles.slice(beginning,ending).replace(' const neuralWorkCandidate=', 'const neuralWorkCandidate=');
+ const evaluate=new Function('embedded','ownerReady','ownerGithubNonAction','requestsAgents','namedRecordBIssue','directCoding','request',
+  source+'\nreturn neuralWorkCandidate;');
+ const permit=(request,options={})=>evaluate(false,options.ownerReady!==false,false,false,false,false,request);
+ for(const request of [
+  'Get Bubbles weather search working properly',
+  'Bubbles, make Bubbles Python integration work',
+  'Please get QuantaPhi website functioning properly'
+ ])assert.equal(permit(request),true,request);
+ for(const request of [
+  'What is the weather in Albia Iowa?',
+  'Can you explain how Bubbles works?',
+  'Please do not make Bubbles run code',
+  'I was discussing how to get Bubbles working',
+  'Please get Bubbles weather search working'
+ ])if(request.startsWith('Please do not')||request.startsWith('What is')||request.startsWith('Can you')||request.startsWith('I was'))
+   assert.equal(permit(request),false,request);
+ assert.equal(permit('Get Bubbles weather search working properly',{ownerReady:false}),false);
+ assert.match(bubbles,/planned\.decision\?\.kind==='repository_work'/);
+ assert.match(bubbles,/planned\.receipt\?\.executed===false/);
+ assert.match(bubbles,/neuralCoding\|\|/);
+});
