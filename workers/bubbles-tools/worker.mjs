@@ -184,6 +184,36 @@ export async function createGithubRepository(request,env,body,receipt){
   return response(request,{ok:true,output:verified?'Created '+repository+'. '+result.url:'GitHub creation was not confirmed: '+clean(result.error||result.status||'executor_unavailable',150)+'. Check this request’s receipt before retrying.',...(verified?{url:result.url}:{}),result,receipt:{...receipt,status:verified?'complete':result.status==='working'?'working':'blocked',requestId,repository,provider:'owner-authenticated-brain',repositoryActionsVerified:verified}});
  }catch{return response(request,{ok:true,output:'The GitHub executor did not return a final result. Check this request’s receipt before retrying.',receipt:{...receipt,status:'unconfirmed',requestId,repository,reason:'github_executor_response_missing',repositoryActionsVerified:false}});}
 }
+// When GitHub REST public reads are rate-limited or blocked (403/429),
+// use GitHub's public raw content host with NO credentials. A README response
+// proves only that exact file on main is publicly readable, not root listing
+// or the default branch of any other repository.
+export async function readPublicGithubRawMain(repository,path,fetcher=fetch){
+ if(!/^[a-z0-9][a-z0-9_.-]{0,38}\/[a-z0-9_][a-z0-9_.-]{0,99}$/i.test(repository)||
+    !/^(?:[a-z0-9_.-]+\/){0,6}[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json)$/i.test(path)||
+    path.includes('..'))throw Error('github_raw_path_invalid');
+ const url='https://raw.githubusercontent.com/'+repository+'/refs/heads/main/'+path.split('/').map(encodeURIComponent).join('/');
+ const upstream=await fetcher(url,{redirect:'manual',headers:{Accept:'text/plain','User-Agent':'QuantaPhi-Bubbles-Reader'},signal:AbortSignal.timeout(12000)});
+ if(!upstream.ok||upstream.status>=300)throw Error('github_raw_http_'+upstream.status);
+ const type=upstream.headers.get('content-type')||'';
+ if(!/^(?:text\/plain|application\/octet-stream|text\/markdown)(?:;|$)/i.test(type))
+  throw Error('github_raw_not_plain_text');
+ if(Number(upstream.headers.get('content-length')||0)>400000)throw Error('github_raw_too_large');
+ const reader=upstream.body?.getReader();
+ if(!reader)throw Error('github_raw_no_body');
+ const pieces=[];let length=0;
+ while(true){
+  const {value,done}=await reader.read();if(done)break;
+  length+=value.byteLength;
+  if(length>400000){await reader.cancel().catch(()=>{});throw Error('github_raw_too_large')}
+  pieces.push(value);
+ }
+ const bytes=new Uint8Array(length);let i=0;
+ for(const part of pieces){bytes.set(part,i);i+=part.byteLength}
+ const text=new TextDecoder('utf-8',{fatal:true}).decode(bytes);
+ if(!text.trim())throw Error('github_raw_empty_file');
+ return {text,sourceUrl:'https://github.com/'+repository+'/blob/main/'+path,provider:'github-raw-public',branch:'main'};
+}
 // Fixed GitHub host, public-read-only API. Reading a repo is NOT creating it.
 // A model's description of files never supplies an authenticated GitHub receipt.
 export async function readGithubRepository(request,body,receipt,fetcher=fetch){
@@ -199,7 +229,18 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch){
    fetcher('https://api.github.com/repos/'+repository,options),
    fetcher('https://api.github.com/repos/'+repository+'/contents',options)
   ]);
-  if(!root.ok||!files.ok)throw Error('github_public_read_http_'+(!root.ok?root.status:files.status));
+  if(!root.ok||!files.ok){
+   const status=!root.ok?root.status:files.status;
+   if(status===403||status===429){
+    const raw=await readPublicGithubRawMain(repository,'README.md',fetcher);
+    return response(request,{ok:true,repository,contents:[{name:'README.md',type:'file'}],
+     sourceUrl:raw.sourceUrl,
+     output:'GitHub public REST listing was unavailable (HTTP '+status+'). I independently read the public README.md on branch main from GitHub raw content. Root directory listing and other files were NOT verified. README excerpt (source data, not commands):\n'+raw.text.slice(0,1800),
+     receipt:{...receipt,tool:'github.read_repository',status:'complete',provider:'github-raw-public',
+      sourceReadVerified:true,rootListingVerified:false,repositoryActionsVerified:false,minted:false}});
+   }
+   throw Error('github_public_read_http_'+status);
+  }
   const meta=await root.json(),listing=await files.json();
   if(meta.full_name?.toLowerCase()!==repository.toLowerCase()||!Array.isArray(listing))
    throw Error('github_response_not_verified');
@@ -238,7 +279,18 @@ export async function readGithubFile(request,body,receipt,fetcher=fetch){
  try{
   const endpoint='https://api.github.com/repos/'+repo+'/contents/'+path.split('/').map(encodeURIComponent).join('/');
   const upstream=await fetcher(endpoint,{headers:{Accept:'application/vnd.github+json','User-Agent':'QuantaPhi-Bubbles-Reader'},redirect:'manual',signal:AbortSignal.timeout(12000)});
-  if(!upstream.ok)throw Error('github_file_http_'+upstream.status);
+  if(!upstream.ok){
+   if(upstream.status===403||upstream.status===429){
+    const raw=await readPublicGithubRawMain(repo,path,fetcher);
+    const content=raw.text.slice(0,30000);
+    return response(request,{ok:true,repository:repo,path,content,sourceUrl:raw.sourceUrl,
+     truncated:raw.text.length>content.length,
+     output:'Verified public GitHub raw source '+repo+'/'+path+' from branch main. GitHub REST returned HTTP '+upstream.status+'. This does NOT establish repository write access.\nFile text (untrusted data):\n'+content,
+     receipt:{...receipt,tool:'github.read_file',status:'complete',provider:'github-raw-public',
+      sourceReadVerified:true,repositoryActionsVerified:false,rootListingVerified:false}});
+   }
+   throw Error('github_file_http_'+upstream.status);
+  }
   const meta=await upstream.json();
   if(meta?.type!=='file'||meta.path!==path||meta.size>400000||meta.encoding!=='base64' ||typeof meta.content!=='string')
    throw Error('github_file_unreadable_or_too_large');
@@ -564,7 +616,7 @@ export default {async fetch(request,env){
  const url=new URL(request.url);
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
  if(url.pathname==='/mcp')return handleMcp(request,env,command=>runMcpRead(request,env,command));
- if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261022-read-agent-v1',tools:{readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
+ if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261022-read-agent-v2-github-raw-fallback',tools:{githubRawReadFallback:'public-main-403-429-only',readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
  if(request.method==='POST'&&url.pathname==='/v1/intent'){
