@@ -2273,10 +2273,10 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let neuralCoding=false;
  const neuralWorkCandidate=!embedded&&ownerReady&&!ownerGithubNonAction&&!requestsAgents
   &&!namedRecordBIssue&&!directCoding
-  &&/^(?:(?:bubbles|please)[\\s,:]+)*(?:(?:can|could|would|will) you\\s+)?(?:get|make|have|help|i (?:need|want) (?:you|bubbles) to|we need (?:you|bubbles) to)\\b/i.test(request)
-  &&/\\b(?:bubbles|quantaphi|quanta phi|robot brain|moltnook|infinity phi|omni phi|code phi|my (?:app|website|program))\\b/i.test(request)
-  &&/\\b(?:work(?:ing)?|fix|repair|restore|integrat(?:e|ion)|hook|connect|build|program|implement|run|execute|test|develop|functional|properly)\\b/i.test(request)
-  &&!/\\b(?:do not|don't|never|cancel|without permission)\\b/i.test(request);
+  &&/^(?:(?:bubbles|please)[\s,:]+)*(?:(?:can|could|would|will) you\s+)?(?:get|make|have|help|i (?:need|want) (?:you|bubbles) to|we need (?:you|bubbles) to)\b/i.test(request)
+  &&/\b(?:bubbles|quantaphi|quanta phi|robot brain|moltnook|infinity phi|omni phi|code phi|my (?:app|website|program))\b/i.test(request)
+  &&/\b(?:work(?:ing)?|fix|repair|restore|integrat(?:e|ion)|hook|connect|build|program|implement|run|execute|test|develop|functional|properly)\b/i.test(request)
+  &&!/\b(?:do not|don't|never|cancel|without permission)\b/i.test(request);
  if(neuralWorkCandidate){
   try{
    const typedPlan=await bubblesFetch(AI.replace('/v1/assist','/v1/intent'),{
