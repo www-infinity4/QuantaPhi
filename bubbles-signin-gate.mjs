@@ -1,4 +1,4 @@
-import {AccountConnections,resolveConnectorWalletToken} from './bubbles-connections.mjs?v=20261021-timeout1';
+import {AccountConnections,resolveConnectorWalletToken} from './bubbles-connections-gate.mjs?v=20261021-timeout1';
 
 const REQUIRED=Object.freeze({
  github:['repository.read'],
