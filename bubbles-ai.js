@@ -160,7 +160,11 @@ function coderIntent(value){
  const operation=/\b(?:github\s+cli|gh\s+cli)\b/i.test(q)?'github_cli':
   /\bpython\b|\.py\b/i.test(q)?'python':/\b(?:shell|bash)\b|\.sh\b/i.test(q)?'shell':
   /\b(?:tests|test suite)\b/i.test(q)?'tests':'inspect';
- return {inspect,operation,script:script||(operation==='python'?'sandbox/hello.py':operation==='shell'?'sandbox/hello.sh':'')};
+ // An unspecified programming task is not permission to execute a sample file.
+ // Only a named, already-existing sandbox script may be dispatched. A request
+ // to write new code belongs to the actual owner-authorized coding workflow.
+ if(!inspect&&(operation==='python'||operation==='shell')&&!script)return null;
+ return {inspect,operation,script:script||''};
 }
 function articleNeedsScreen(value){return /\b(?:this|that|current|looking at|reading|on (?:my |the )?screen)\b/i.test(String(value||''));}
 function readCurrentPage(){
@@ -519,7 +523,7 @@ const macroButtons=[
  ['Robot Brain tools','Check verified owner work tools',()=>void sendMessage('check robot brain tools')],
  ['MCP LLM tools','List Bubbles connected read-only MCP tools',()=>void sendMessage('Show the MCP tools connected to Bubbles')],
  ['Check GitHub executor','Read the real authenticated GitHub capability or missing-credential error',()=>void sendMessage('check GitHub access')],
- ['Run Python sandbox','Request the pinned GitHub Actions Python fixture, not a phone shell',()=>void sendMessage('run Python')],
+ ['Run Python sandbox','Request the pinned GitHub Actions Python fixture, not a phone shell',()=>void sendMessage('run Python sandbox/hello.py')],
  ['Check coder runs','Read actual GitHub Actions sandbox status and receipts',()=>void sendMessage('check coder sandbox results')],
  ['Cloudflare token manager','Review and explicitly approve short-lived Cloudflare Worker access without sharing API keys with the APK',()=>void proposeCloudflareWorkerToken()],
  ['Voice','Preview the currently selected speaking voice',()=>previewVoice.click()],
