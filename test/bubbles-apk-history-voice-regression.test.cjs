@@ -1,0 +1,51 @@
+'use strict';
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const base='android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/';
+const voice=fs.readFileSync(base+'BubblesService.java','utf8');
+const webview=fs.readFileSync(base+'FloatingOracleWindow.java','utf8');
+const journal=fs.readFileSync(base+'NativeChatJournal.java','utf8');
+const recorder=fs.readFileSync(base+'ScreenCaptureService.java','utf8');
+const site=fs.readFileSync('bubbles-ai.js','utf8');
+test('APK recovers history from app-private crash-safe backup rather than depending entirely on WebView',()=>{
+ assert.match(journal,/new AtomicFile\(new File\(context.getFilesDir\(\)/);
+ assert.match(journal,/MAX_MESSAGES = 60/);
+ assert.match(journal,/journal\.finishWrite\(output\)/);
+ assert.match(journal,/journal\.failWrite\(output\)/);
+ assert.match(webview,/restoreRecentHistory\(\)/);
+ assert.match(webview,/backupRecentHistory\(now\)/);
+ assert.match(webview,/trustedChat\(website\)/);
+ assert.match(webview,/historyWriter\.execute\(\(\) ->/);
+ assert.doesNotMatch(webview,/addJavascriptInterface/);
+ assert.match(site,/restoreNativeHistory:\(backup\)=>/);
+ assert.match(site,/nativeHistorySnapshot:\(\)=>/);
+ assert.match(site,/if\(!nativeOverlay\|\|!keepChat/);
+ assert.match(site,/history-disabled/);
+ assert.match(site,/renderConversationFolders\(\)/);
+});
+test('RecordB and Vosk continue using one microphone with Android priority arbitration',()=>{
+ assert.match(voice,/new AudioRecord\(MediaRecorder.AudioSource.VOICE_RECOGNITION/);
+ assert.match(voice,/registerAudioRecordingCallback\(recordingCallback/);
+ assert.match(voice,/config\.isClientSilenced\(\)/);
+ assert.match(voice,/if \(microphoneSilencedByAndroid\) continue;/);
+ assert.match(voice,/screenAudio\.append\(samples, count\)/);
+ assert.match(recorder,/BubblesService\.beginScreenAudio\(\)/);
+ assert.doesNotMatch(recorder,/setAudioSource\(/);
+});
+test('RecordB shows a real pending save until stopped MP4 is exported and rejects a second start',()=>{
+ assert.match(recorder,/capture_saving/);
+ assert.match(recorder,/Previous recording is still saving/);
+ assert.match(recorder,/if \(finished \|\| finalizingMedia \|\| pendingPublications > 0\)/);
+ assert.match(recorder,/stoppingRecorder\.stop\(\)/);
+ assert.doesNotMatch(recorder,/stoppingRecorder\.resume\(\)/);
+ assert.match(recorder,/CapturePublisher\.publish\(this, completed, type\)/);
+});
+test('Android TTS queues one retry after failure and does not silence the microphone',()=>{
+ assert.match(voice,/lastFailedWebsiteUtterance/);
+ assert.match(voice,/pendingWebsiteSpeech\.addFirst\(retry\)/);
+ assert.match(voice,/ttsRecoveryScheduled/);
+ assert.match(voice,/reportSpeechFailure\(message\)/);
+ assert.match(voice,/main\.post\(this::drainWebsiteSpeech\)/);
+ assert.match(voice,/if \(connected && !muted\) reloadSpeechEngine\(\)/);
+});
