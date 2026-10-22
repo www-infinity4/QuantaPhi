@@ -17,6 +17,13 @@ function setup(){
  }};
  return {args,rows,tasks,calls,revoke(){enabled=false}};
 }
+test('browser observer shares only the same-run completed receipt with the conversational agent',async()=>{
+ const f=setup();f.rows.set('chatgpt_browser_123',{status:'complete',expires_ms:200000,result:JSON.stringify({ok:true,before:'Waiting for browser check.',after:'Bubbles clicked this control.',sessionId:'never-send',receipt:{tool:'browser.click_check',status:'complete',clickObserved:true,sessionClosed:true}})});
+ const context=await precedingSignedTurns({id:'chatgpt_assist_123_0',db:f.args.db,now:1000});
+ assert.match(context,/Verified same-run Bubbles browser receipt/);assert.match(context,/Bubbles clicked this control/);assert.doesNotMatch(context,/never-send|sessionId/);
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_456_0',db:f.args.db,now:1000}),'');
+ assert.equal(await precedingSignedTurns({id:'chatgpt_assist_123_0',db:f.args.db,now:300000}),'');
+});
 test('server completes without an open browser and returns its own answer and receipt',async()=>{
  const f=setup();const first=await serverAssist({...f.args,body:{operation:'assist',text:'Weather in Albia Iowa'}});
  assert.equal(first.execution,'server');assert.equal(first.state,'complete');await Promise.all(f.tasks);

@@ -1,5 +1,22 @@
 # Reusable GPT connection to Bubbles
 
+## Signed cloud-browser check
+
+The same signed runner can send `{"operation":"browser_check"}` while both
+existing five-day grants remain active. This opens a new disposable Cloudflare
+Chrome session at the fixed public `/browser-check` page, invokes Bubbles' CDP
+click adapter on **Run browser check**, reads the changed visible text, and
+closes only that test session. The receipt must confirm before/after observation
+and cleanup. A click command being accepted is insufficient.
+
+This operation accepts no URL, session, owner token or label. It cannot open an
+owner page, reuse an owner's logged-in browser, or renew either grant. A run's
+receipt is deduplicated and expires in four minutes. A following signed
+`assist` turn receives the minimal same-run browser evidence, letting the
+conversation explain the executor's actual result without receiving credentials.
+Production deployment and a real signed browser-check receipt are required;
+source tests alone do not establish browser execution.
+
 Use the signed **server conversation** route for conversational acceptance tests.
 Do not use the old browser-polled `submit` operation when the purpose is to talk
 to Bubbles without an open owner chat.

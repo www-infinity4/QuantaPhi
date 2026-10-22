@@ -2,6 +2,7 @@ import {browserTool} from '../bubbles-tools/browser.mjs';
 import {processChatGPTJob,completeChatGPTMessage} from './chatgpt-bridge.mjs';
 import {authenticateBridge,runnerMessage} from './runner-bridge.mjs';
 import {serverAssist} from './server-assist.mjs';
+import {signedBrowserCheck,browserCheckPage,CHECK_PATH} from './browser-check.mjs';
 export {BrowserConsentStore} from './consent.mjs';
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const respond=(origin,body,status=200)=>Response.json(body,{status,headers:{
@@ -22,6 +23,7 @@ const consentStore=env=>env.CONSENT.get(env.CONSENT.idFromName('single-verified-
 export default {
  async fetch(request,env,ctx){
   const path=new URL(request.url).pathname;
+  if(path===CHECK_PATH&&request.method==='GET')return browserCheckPage();
   if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',serverConversation:'signed-server-v2',toolsBound:!!env.TOOLS,
    browserBound:!!env.BROWSER,ownerGate:!!env.BRAIN,consentBound:!!env.CONSENT,chatgptBridgeBound:!!env.BRIDGE_DB},
    {headers:{'Cache-Control':'no-store'}});
@@ -33,7 +35,9 @@ export default {
    if(!env.CONSENT||!env.BRIDGE_DB)return reply({ok:false,error:'chatgpt_bridge_bindings_missing'},503);
    let body;try{const raw=await request.text();if(raw.length>4200)throw Error();body=JSON.parse(raw)}catch{return reply({ok:false,error:'invalid_bridge_request'},400)}
    try{
-    const result=['assist','result'].includes(body.operation)
+    const result=body.operation==='browser_check'
+     ?await signedBrowserCheck({claims,body,db:env.BRIDGE_DB,store:consentStore(env),env})
+     :['assist','result'].includes(body.operation)
      ?await serverAssist({claims,body,db:env.BRIDGE_DB,store:consentStore(env),fetcher:(url,options)=>{
        if(!env.TOOLS?.fetch)throw Error('bubbles_tools_binding_missing');
        return env.TOOLS.fetch(url,options);
