@@ -38,6 +38,5 @@ test('the chat only accepts direct, explicit owner Termux requests and real retu
  assert.match(receiver,/result\.getInt\("exitCode"/);
  assert.match(receiver,/result\.getString\("stdout"/);
  assert.match(receiver,/FloatingOracleWindow\.onTermuxResult\(id, report\)/);
- assert.doesNotMatch(bridgePlaceholder(),/impossible/i);
+ assert.match(receiver,/Termux did not return execution evidence/);
 });
-function bridgePlaceholder(){return read(base+'TermuxBridge.java');}
