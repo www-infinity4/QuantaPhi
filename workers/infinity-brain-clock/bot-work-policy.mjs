@@ -2,6 +2,7 @@
 // A proposal is NOT a paid wallet event. Only verified wallet settlement
 // may mark payout complete, and one commit may have only one recipient.
 const SHA=/^[a-f0-9]{40}$/;
+const DIGEST=/^[a-f0-9]{64}$/;
 const REPO=/^www-infinity4\/[\w.-]+$/;
 export const COMMIT_REWARD_POLICY=Object.freeze({
  repair:'STARCOIN',
@@ -14,7 +15,7 @@ export const COMMIT_REWARD_POLICY=Object.freeze({
 function siteEvidence(site,commit){
  if(!site||site.searchReceipt?.verified!==true||!/^.{4,300}$/.test(site.searchQuery||''))return false;
  if(site.publishedVerified!==true||!/^https:\/\/(?:[\w.-]+\.)?quantaphi\.org\/|^https:\/\/www-infinity4\.github\.io\//.test(site.url||''))return false;
- if(!SHA.test(site.htmlSha256||''))return false;
+ if(!DIGEST.test(site.htmlSha256||''))return false;
  if(!/^(?:[\w.-]+\/)*index\.html$/.test(site.htmlPath||''))return false;
  return commit.files?.some(f=>f.filename===site.htmlPath&&['added','modified'].includes(f.status));
 }
