@@ -10,7 +10,7 @@ on:
       - 'test/bubbles-conversation-work-audit.test.mjs'
       - 'workers/bubbles-chat-folders/**'
       - 'test/bubbles-conversation-folders.test.mjs'
-      - 'test/bubbles-chat-folder-api.test.mjs test/bubbles-conversation-work-audit.test.mjs'
+      - 'test/bubbles-chat-folder-api.test.mjs'
       - 'test/bubbles-conversation-memory.test.mjs'
       - '.github/workflows/bubbles-conversation-folders.yml'
 permissions:
@@ -29,4 +29,4 @@ jobs:
           node --check workers/infinity-brain-clock/conversation-memory.mjs
           node --check workers/infinity-brain-clock/conversation-work-audit.mjs
           node --check workers/bubbles-chat-folders/worker.mjs
-          node --test test/bubbles-conversation-folders.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-chat-folder-api.test.mjs
+          node --test test/bubbles-conversation-folders.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-chat-folder-api.test.mjs test/bubbles-conversation-work-audit.test.mjs
