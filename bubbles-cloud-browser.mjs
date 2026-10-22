@@ -291,14 +291,29 @@ export function mount({host,ownerHeaders,reveal=false}){
    show(started);
    return 'Cloud Chrome opened '+requested.url+'. The live session was confirmed.';
   }
+  const beforeClick=requested.action==='click'?await call('read').catch(()=>null):null;
   const result=await call(requested.action,requested);
   if(result.ok!==true||result.result?.ok===false)throw Error(result.result?.error||result.error||'browser_operation_unverified');
   if(requested.action==='navigate')return result.result?.navigationRequested?
    'Cloud Chrome requested navigation to '+requested.url+'. The loaded page has not yet been read.':
    'Chrome did not confirm navigation.';
-  if(requested.action==='read')return 'Cloud browser read: '+String(result.result?.title||'Untitled')+' · '+
-   String(result.result?.url||'')+'\n'+String(result.result?.text||'').slice(0,7000);
-  if(requested.action==='click')return 'Cloud browser clicked '+String(result.result?.label||requested.label)+'. The changed page has not yet been read.';
+  if(requested.action==='read'){
+   const controls=(Array.isArray(result.result?.controls)?result.result.controls:[]).filter(c=>c?.label).slice(0,18)
+    .map(c=>c.label+(c.context?' — '+c.context:'')+(c.disabled?' (disabled)':'')).join('; ');
+   return 'Cloud browser read: '+String(result.result?.title||'Untitled')+' · '+
+    String(result.result?.url||'')+'\n'+String(result.result?.text||'').slice(0,6400)+
+    (controls?'\nVisible controls: '+controls:'');
+  }
+  if(requested.action==='click'){
+   await new Promise(resolve=>setTimeout(resolve,350));
+   const checked=await call('read').catch(()=>null);
+   const before=beforeClick?.result,after=checked?.result;
+   const changed=Boolean(before&&after&&(before.url!==after.url||before.text!==after.text));
+   return 'Cloud browser sent a click to '+String(result.result?.label||requested.label)+'. '+
+    (changed?'I re-read the page and confirmed its text or location changed.':
+     'I have not confirmed a resulting page change or media playback.')+
+    (after?.title?' Current page: '+String(after.title).slice(0,120)+'.':'');
+  }
   if(requested.action==='type')return 'Cloud browser typed '+result.result.characters+' characters in '+String(result.result.field||'the field')+'. I did not submit the form.';
   return 'Browser action returned a verified server receipt.';
  }};
