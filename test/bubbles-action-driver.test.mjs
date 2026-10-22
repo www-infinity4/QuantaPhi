@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {resolveToolAction,cardControlDecision,safeCardControls,toolReply} from '../bubbles-action-driver.mjs';
+import {resolveToolAction,cardControlDecision,safeCardControls,toolReply,cardStatusSnapshot,changedCardStatus} from '../bubbles-action-driver.mjs';
 import {CardWorkspace} from '../bubbles-card-workspace.mjs';
 import {findCard} from '../bubbles-card-catalog.mjs';
 
@@ -127,4 +127,20 @@ test('synthetic GitHub tool fixture was created, fetched and updated with no per
  assert.equal(receipt.stage,'created-read-updated');
  assert.deepEqual(receipt.verifiedOperations,['create','fetch','update']);
  assert.equal(receipt.privateData,false);
+});
+
+test('only changed visible status text is acknowledged as a page observation',()=>{
+ const status={textContent:'Ready',hidden:false};
+ const hidden={textContent:'Deployment complete',hidden:true};
+ const doc={querySelectorAll:()=>[status,hidden]};
+ const before=cardStatusSnapshot(doc);
+ assert.deepEqual(changedCardStatus(before,cardStatusSnapshot(doc)),[]);
+ status.textContent='Build check passed';
+ const observedStatus=changedCardStatus(before,cardStatusSnapshot(doc));
+ assert.deepEqual(observedStatus,['Build check passed']);
+ const message=toolReply({status:'safe_click',label:'Run build check',card:'Workshop',observedStatus});
+ assert.match(message,/card now reports: Build check passed/);
+ assert.match(message,/visible response only/);
+ assert.doesNotMatch(message,/Deployment complete/);
+ assert.match(toolReply({status:'safe_click',label:'Run',card:'Workshop',observedStatus:[]}),/not yet verified/);
 });
