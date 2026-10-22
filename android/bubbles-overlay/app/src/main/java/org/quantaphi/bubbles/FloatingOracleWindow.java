@@ -362,6 +362,27 @@ final class FloatingOracleWindow {
                 @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                     if (!request.isForMainFrame()) return false;
                     Uri target = request.getUrl();
+                    // A real, user-tapped phone link on the first-party phone
+                    // page may open Android's dialer. Never use ACTION_CALL:
+                    // the owner must still confirm the number and tap Call.
+                    if ("tel".equals(target.getScheme())) {
+                        Uri current = Uri.parse(view.getUrl() == null ? "" : view.getUrl());
+                        String number = target.getSchemeSpecificPart();
+                        boolean trustedPage = "https".equals(current.getScheme())
+                            && SITE_HOST.equals(current.getHost())
+                            && ("/phone/".equals(current.getPath())
+                                || current.getPath().startsWith("/phone/"));
+                        if (trustedPage && request.hasGesture() && number != null
+                                && number.matches("\\+[1-9][0-9]{7,14}")) {
+                            try {
+                                service.startActivity(new Intent(Intent.ACTION_DIAL, target)
+                                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                            } catch (RuntimeException ignored) {
+                                // A missing dialer cannot be reported as a call.
+                            }
+                        }
+                        return true;
+                    }
                     if ("https".equals(target.getScheme()) && SITE_HOST.equals(target.getHost()))
                         return false;
                     // No intent:, file:, content: or javascript: navigation inside the overlay.

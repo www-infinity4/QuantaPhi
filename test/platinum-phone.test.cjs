@@ -110,3 +110,42 @@ test('Carrier requests require an authenticated owner and a configured licensed 
  assert.equal(denied.status,503);
  assert.equal(denied.body.error,'licensed_carrier_gateway_not_connected');
 });
+
+
+test('Bubbles call draft validates numbers, cleans messages, and never dials or starts a call by itself',()=>{
+ const draft=require('../phone/call-handoff.js');
+ assert.deepEqual(draft.normalizedNumber('(402) 555-0123'),
+  {display:'+14025550123',uri:'tel:+14025550123'});
+ assert.deepEqual(draft.normalizedNumber('+44 20 7946 0958'),
+  {display:'+442079460958',uri:'tel:+442079460958'});
+ for(const value of ['911','112','1-1-2','*67 402 555 0123',
+  'tel:+14025550123','javascript:alert(1)','+000123456789','123']) {
+  assert.equal(draft.normalizedNumber(value),null,'invalid: '+value);
+ }
+ assert.equal(draft.preview('Uncle',''),null);
+ const script=draft.preview('my uncle\n',' Hi there!\nCan we chat? ');
+ assert.match(script,/I.m Bubbles, an AI assistant calling on behalf of Kris/);
+ assert.match(script,/Kris asked me to tell you: Hi there! Can we chat\?/);
+ assert.doesNotMatch(script,/\n/);
+ assert.ok(draft.preview('Uncle','x'.repeat(2000)).length<1800);
+});
+test('web handoff keeps approval on the Android dialer, never claims a call or exports user messages',()=>{
+ const html=fs.readFileSync(path.join(__dirname,'../phone/index.html'),'utf8');
+ const ui=fs.readFileSync(path.join(__dirname,'../phone/phone.js'),'utf8');
+ const native=fs.readFileSync(path.join(__dirname,
+  '../android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/FloatingOracleWindow.java'),'utf8');
+ assert.match(html,/id="bubbles-call-form"/);
+ assert.match(html,/id="bubbles-call-message"/);
+ assert.match(html,/call-handoff\.js/);
+ assert.match(ui,/policy\.normalizedNumber/);
+ assert.match(ui,/policy\.preview/);
+ assert.match(ui,/link\.setAttribute\('href',number\.uri\)/);
+ assert.match(ui,/previewArea\.hidden=true/);
+ assert.match(ui,/script\.textContent=draft/);
+ assert.match(native,/Intent\.ACTION_DIAL/);
+ assert.doesNotMatch(native,/Intent\.ACTION_CALL/);
+ assert.match(native,/request\.hasGesture\(\)/);
+ assert.match(native,/SITE_HOST\.equals\(current\.getHost\(\)\)/);
+ assert.match(native,/current\.getPath\(\)\.startsWith\("\/phone\/"\)/);
+ assert.doesNotMatch(html,/Bubbles will place the call automatically/);
+});

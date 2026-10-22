@@ -37,3 +37,12 @@ button.quickdial-item{min-height:110px;display:flex;align-items:flex-start;justi
 .infinity-status small{font-size:12px;color:#66758a}
 
 .phone-offline-status{display:flex;flex-direction:column;gap:4px;margin:9px 0;padding:13px 15px;background:#f4f8fd;border:1px solid #b7c9db;border-radius:13px}.phone-offline-status strong{font-weight:850;font-size:14px;color:#264f6f}.phone-offline-status span{font-size:12px;color:#506a84;line-height:1.5}
+
+/* Oracle Octaves: readable, consent-gated Bubbles call preparation. */
+#bubbles-call-draft{background:#fffdf8;border-color:#e5cfc7}
+#bubbles-call-title{color:#9f302a}
+#bubbles-call-preview{margin-top:18px;padding:14px;border:1px solid #ead7cf;border-radius:14px;background:white}
+#bubbles-call-script{font-size:17px;line-height:1.6;overflow-wrap:anywhere;white-space:pre-wrap}
+#bubbles-carrier-dial{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 18px;border-radius:12px;background:#b83b32;color:#fff;text-decoration:none;font-weight:800}
+#bubbles-carrier-dial:focus-visible{outline:3px solid #9e3028;outline-offset:4px}
+#bubbles-call-state{margin:12px 0 0}
