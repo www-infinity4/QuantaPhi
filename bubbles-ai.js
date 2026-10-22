@@ -1677,7 +1677,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(busy)return;
  // Keep the existing Bubbles chat. A typed command on Android requests a
  // native confirmation dialog, not a second chat or remote Linux sandbox.
- if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\\s+)?(?:test|check)(?:\\s+the)?\\s+python(?:\\s+(?:in|with))?\\s+termux[.!?]*$/i.test(spoken)){
+ if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\\s+)?(?:(?:test|check|verify)(?:\\s+the)?\\s+(?:python(?:\\s+(?:in|with))?\\s+termux|python|termux(?:\\s+python)?)|(?:run|start|try)(?:\\s+a)?\\s+python\\s+(?:test|diagnostic)|(?:does\\s+python\\s+work|is\\s+python\\s+(?:working|ready))(?:\\s+in\\s+termux)?)[.!?]*$/i.test(spoken)){
   display(spoken,'you');input.value='';
   messages.push({role:'user',text:spoken});
   nativeTermuxProbeRequests.push({action:'probe'});
