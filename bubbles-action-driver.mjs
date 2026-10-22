@@ -87,7 +87,20 @@ export function safeCardControls(doc){
  };
  scan(doc,0);return controls;
 }
+
+export function cardStatusSnapshot(doc){
+ return new Map([...(doc?.querySelectorAll?.('[role="status"],[role="alert"],output,[aria-live="polite"],[aria-live="assertive"]')||[])].slice(0,30).filter(el=>{
+  const style=el.ownerDocument?.defaultView?.getComputedStyle?.(el);
+  return !el.hidden&&!el.closest?.('[hidden],[inert],[aria-hidden="true"]')&&style?.display!=='none'&&style?.visibility!=='hidden'&&(!el.getClientRects||el.getClientRects().length>0);
+ }).map(el=>[el,clean(el.innerText||el.textContent).slice(0,240)]));
+}
+export function changedCardStatus(before,after){
+ return [...after].filter(([el,text])=>text&&before.get(el)!==text).map(([,text])=>text).slice(0,3);
+}
+
 export function toolReply(receipt){
+ if(receipt?.status==='safe_click'&&receipt.observedStatus?.length)
+  return 'Pressed '+receipt.label+' on '+receipt.card+'. The card now reports: '+receipt.observedStatus.join(' · ')+'. This confirms the visible response only.';
  if(receipt?.status==='safe_click')
   return 'Pressed '+receipt.label+' on '+receipt.card+'. The tap was sent to the actual card control; its resulting action is not yet verified.';
  if(receipt?.status==='control_not_found')return 'I inspected this card but did not find that control. Nothing was tapped.';
