@@ -31,6 +31,7 @@ export function earnedWork(quant,commit){
   commitUrl:'https://github.com/'+quant.repository+'/commit/'+attempt.commitSha,
   summary:String(attempt.summary||'').slice(0,500),
   kind:validFull?'full-site-build':'repair',
+  ...(validFull?{searchReceiptVerified:true,sitePublishedVerified:true}:{}),
   sourceFiles:commit.files.slice(0,12).map(f=>({path:f.filename,status:f.status,additions:Number(f.additions)||0})),
   ...(validFull?{searchQuery:quant.site.searchQuery,searchReceiptId:quant.site.searchReceipt.id||null,
     websiteUrl:quant.site.url,htmlPath:quant.site.htmlPath,htmlSha256:quant.site.htmlSha256,
