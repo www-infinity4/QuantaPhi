@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readGithubFile,readGithubRepository,readPublicGithubRawMain} from '../workers/bubbles-tools/worker.mjs';
+import {readGithubFile,readGithubRepository,readPublicGithubRawMain,chooseTool} from '../workers/bubbles-tools/worker.mjs';
+import {needsReadAgent} from '../workers/bubbles-tools/read-agent.mjs';
 const origin='https://quantaphi.org';
 const req=new Request('https://bubbles-tools.example/v1/assist',{headers:{Origin:origin}});
 const receipt={id:'synthetic_403_probe',tool:'github.read_file',status:'started'};
@@ -71,4 +72,12 @@ test('403 fallback does not activate for 404 or falsely claim repo listing',asyn
  const x=await (await readGithubFile(req,{request:'Read README.md',repository:repo,path:'README.md'},receipt,fetcher)).json();
  assert.equal(x.receipt.status,'failed');
  assert.deepEqual(seen.map(x=>x.url),[api+'/contents/README.md']);
+});
+
+test('explicit single README read avoids speculative root listing; true multi-source still plans reads',()=>{
+ const q='Bubbles, read the actual README.md from GitHub repository www-infinity4/QuantaPhi, then tell me one detail the file contains.';
+ assert.equal(needsReadAgent(q),false);
+ assert.equal(chooseTool(q),'github.read_file');
+ assert.equal(needsReadAgent('Inspect www-infinity4/QuantaPhi and read its main documentation'),true);
+ assert.equal(needsReadAgent('Read the GitHub README and get the weather in Albia Iowa'),true);
 });
