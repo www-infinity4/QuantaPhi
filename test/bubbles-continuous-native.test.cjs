@@ -46,7 +46,8 @@ test('ordinary spoken work uses the shared website without a native ticket hando
 });
 test('TTS callback loss has a bounded recovery and diagnostics preserve replies', () => {
   assert.match(source, /generation == speechGeneration/);
-  assert.match(source, /tts\.stop\(\);\s*finishSpeaking\(utterance\)/);
+  assert.match(source, /speechPlaybackFailed\(utterance/);
+  assert.match(source, /if \(tts != null\) tts\.stop\(\)/);
   assert.match(source, /!id\.equals\(activeUtteranceId\)/);
   assert.match(source, /putString\("last_heard", text\)/);
   assert.match(source, /putString\("last_reply", result\)/);
@@ -63,8 +64,8 @@ test('Android TTS engine callbacks cannot activate a replaced engine', () => {
 test('Android speech playback errors release busy and retain visible diagnostics', () => {
   const speak = source.slice(source.indexOf('private void speak(String response)'), source.indexOf('@Override public IBinder'));
   assert.match(speak, /try \{[\s\S]*?tts\.speak\(response/);
-  assert.match(speak, /if \(result == TextToSpeech\.ERROR\) \{[\s\S]*?finishSpeaking\(utterance\)/);
-  assert.match(speak, /catch \(RuntimeException error\) \{[\s\S]*?finishSpeaking\(utterance\)/);
+  assert.match(speak, /if \(result == TextToSpeech\.ERROR\) \{[\s\S]*?speechPlaybackFailed\(utterance/);
+  assert.match(speak, /catch \(RuntimeException error\) \{[\s\S]*?speechPlaybackFailed\(utterance/);
   assert.match(speak, /Android speech playback failed:/);
 });
 
