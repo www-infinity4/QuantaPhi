@@ -107,6 +107,38 @@ export function chooseTool(text){
  if(/\b(?:news|headlines)\b/.test(request)&&/\b(?:check|read|tell|show|find|latest|current|today|google|get|what|headlines)\b/.test(request))return 'news.headlines';
  return 'oracle.chat';
 }
+// Page context selects PUBLIC READS only. It never selects a writer or grants
+// owner access. Explicit repository names and registered card targets win.
+export function contextualReadPlan(text,origin,selectedRepository=''){
+ const q=String(text||'').trim();
+ if(isSourceDraftRequest(q)||isSourceReviewRequest(q)||['github.create_repository','web.read_page'].includes(chooseTool(q))||/^(?:do not|don't|never|pretend|quote|example only)\b/i.test(q))return null;
+ const read=/\b(?:read|inspect|check|scan|review|look at|fetch|list|show)\b/i.test(q);
+ const traffic=/\b(?:traffic|visitors?|page\s*views?)\b/i.test(q)&&/\b(?:not updating|stale|stuck|broken|wrong|stored|storage|refresh|count|counter|fix|check|inspect|read)\b/i.test(q);
+ if(!read&&!traffic)return null;
+ const qualified=[...q.replace(/https?:\/\/[^\s]+/gi,'').matchAll(/\b([A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99})\b/g)].map(x=>x[1]).filter(x=>!x.startsWith('github.com/'));
+ const gh=/https:\/\/github\.com\/([\w.-]+\/[\w.-]+)/i.exec(q)?.[1];
+ if(gh)qualified.unshift(gh);
+ const targets=[...new Set(qualified.filter(x=>! /\.(?:md|markdown|txt|html|css|js|json)$/i.test(x)||x===gh))];if(targets.length>1)return null;
+ const card=cardSourcePlanFor(q);
+ let repository=targets[0]||card?.repository||'';
+ const valid=/^[A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99}$/;
+ if(!repository&&valid.test(selectedRepository))repository=selectedRepository;
+ // Tolerate one mistyped character in QuantaPhi, without guessing other names.
+ const nearName=word=>{
+  const target='quantaphi';word=word.toLowerCase();if(Math.abs(word.length-target.length)>1)return false;
+  let i=0,j=0,edits=0;while(i<word.length&&j<target.length){if(word[i]===target[j]){i++;j++;continue;}if(++edits>1)return false;if(word.length>=target.length)i++;if(target.length>=word.length)j++;}
+  return edits+(i<word.length||j<target.length?1:0)<=1;
+ };
+ const named=q.match(/[a-z]+/gi)?.some(nearName);
+ if(!repository&&named)repository='www-infinity4/QuantaPhi';
+ if(!repository&&['https://quantaphi.org','https://www.quantaphi.org'].includes(origin)&&
+   (traffic||/\b(?:this|current|our)\s+(?:site|page|repo|repository)\b|\bthe\s+(?:repo|repository)\b/i.test(q)))repository='www-infinity4/QuantaPhi';
+ if(!repository||!valid.test(repository))return null;
+ if(/\b(?:readme(?:\.md)?|[\w./-]+\.(?:md|markdown|txt|html|css|js|json))\b/i.test(q))return {repository,tool:'github.read_file',basis:'public_repository_context'};
+ if(traffic&&repository==='www-infinity4/QuantaPhi'&&!card)return {repository,tool:'github.read_file',path:'index.html',basis:'public_site_traffic_source'};
+ if(/\b(?:repo|repository)\b/i.test(q)&&!/\b(?:readme(?:\.md)?|[\w./-]+\.(?:md|js|html|css|json))\b/i.test(q))return {repository,tool:'github.read_repository',basis:'public_repository_context'};
+ return null;
+}
 // Spend deeper model reasoning only on clearly technical work; keep everyday
 // voice dialogue responsive and avoid silently escalating every prompt.
 export function reasoningFor(text){
@@ -147,7 +179,7 @@ export function hasUnverifiedActionClaim(userRequest,answer){
 // Reject the draft before it reaches the floating bubble or Android TTS.
 export function hasModelToolLeak(answer){
  const text=String(answer||'').slice(0,12000);
- const fakeCall=/["']?name["']?\s*:\s*["'](?:createTicket|githubCreateRepo|githubUpdateFile|githubCreateIssue|submitWork|dispatchJob|runTool|invokeTool)["']/i.test(text)
+ const fakeCall=/["']?name["']?\s*:\s*["'](?:createTicket|githubCreateRepo|githubUpdateFile|githubCreateIssue|github_read_repository|github_read_file|web_read_page|submitWork|dispatchJob|runTool|invokeTool)["']/i.test(text)
   && /["']?arguments["']?\s*:/i.test(text);
  const internalPlan=/\b(?:we|i) need to\s+(?:send|write|compose|provide|respond with|say)\b[\s\S]{0,300}\b(?:invoke|call|execute) (?:the|a|this) tool\b/i.test(text);
  const rawChannel=/<\|(?:im_start|im_sep|channel)[^>]*\|>|(?:^|\n)\s*(?:assistant|analysis)\s+to=\w+/i.test(text);
@@ -451,8 +483,10 @@ export async function readPublicPage(request,body,receipt,fetcher=fetch){
 
 async function execute(request,env,body){
  const question=clean(body.request);if(!question)return response(request,{ok:false,error:'request_required'},400);
- const tool=['resonance.calculate','organic.memory_benchmark','web.search','weather.current','news.headlines'].includes(body.tool)?body.tool:chooseTool(question),id=crypto.randomUUID();
- const receipt={id,tool,status:'started',createdAt:new Date().toISOString(),kind:'bubbles-tool-result',minted:false};
+ const contextual=contextualReadPlan(question,request.headers.get('Origin')||'',body.repository);
+ if(contextual)body={...body,repository:contextual.repository,...(contextual.path&&!body.path?{path:contextual.path}:{})};
+ const tool=['resonance.calculate','organic.memory_benchmark','web.search','weather.current','news.headlines'].includes(body.tool)?body.tool:contextual?.tool||chooseTool(question),id=crypto.randomUUID();
+ const receipt={id,tool,status:'started',createdAt:new Date().toISOString(),kind:'bubbles-tool-result',minted:false,...(contextual?{repositoryContext:contextual.basis}:{})};
  if(/\b(?:what|which|describe|explain|show)\b/i.test(question)&&/\b(?:server runtime|running on|runtime and tools|runtime.*tools)\b/i.test(question)){
   return response(request,{ok:true,output:'This Bubbles chat runs on Cloudflare Workers using JavaScript. '+
    (env.AI?'Its connected AI runtime provides GPT-OSS inference. ':'AI inference is not connected in this runtime. ')+
@@ -666,6 +700,11 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
 export async function finishSearchReply(original,summarize,timeoutMs=20000,userRequest=''){
  let timer;
  const fallback=async()=>{
+  const source=await original.clone().json();
+  if(source.receipt?.tool==='github.read_file'){
+   const output=source.receipt?.status==='complete'?'I read '+source.repository+'/'+source.path+'. The source read is verified, but I could not finish the findings. No repair was performed.':source.output;
+   return Response.json({...source,output,output_text:output,answerStatus:'partial',analysisVerified:false},{status:original.status,headers:original.headers});
+  }
   if(!/\b(?:research|project|plan|explain|analy[sz]e|synthesi[sz]e|compare|next steps)\b/i.test(userRequest))return original;
   const data=await original.clone().json();
   const sources=(Array.isArray(data.sources)?data.sources:[]).filter(s=>typeof s?.title==='string'&&s.title.trim()).slice(0,3);
@@ -726,6 +765,7 @@ export default {async fetch(request,env){
   const summarize=()=>gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
   if(data.receipt?.tool==='web.search')return finishSearchReply(result,summarize,20000,clean(body.request));
   if(data.receipt?.tool==='web.read_page')return data.receipt.status==='complete'?finishSearchReply(result,summarize,12000,clean(body.request)):result;
+  if(data.receipt?.tool==='github.read_file')return data.receipt.status==='complete'?finishSearchReply(result,summarize,12000,clean(body.request)):result;
   return await summarize();
  }catch(error){
   const invalid=error instanceof SyntaxError;
