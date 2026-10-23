@@ -3205,6 +3205,15 @@ window.QuantaBubbles={
  takeNativePhoneCommand:()=>nativeOverlay&&phoneModuleReady?phoneModuleReady.takeCommand():'',
  completeNativePhoneCommand:receipt=>{if(nativeOverlay&&phoneModule)void phoneModule.then(m=>m.complete(receipt));},
  open:()=>toggle(true),close:()=>toggle(false),
+ openHistory:()=>{
+  if(!nativeOverlay)return false;
+  toggle(true);
+  chatsPanel.open=true;
+  renderConversationFolders();
+  void refreshConversationFolders();
+  chatsPanel.scrollIntoView({block:'start',behavior:'smooth'});
+  return true;
+ },
  // Owner pairing is not itself proof of an executed job. The Brain API
  // authenticates every submission and returns a separate ticket receipt.
  ownerToolConnected:()=>Boolean(nativeOverlay&&ownerReady&&ownerHeaders?.Authorization),
