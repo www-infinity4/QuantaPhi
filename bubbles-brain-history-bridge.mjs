@@ -9,7 +9,8 @@ export async function transferOwnerHistory({
 }={}){
  if(typeof getBatch!=='function'||typeof sendBatch!=='function')throw Error('history_transfer_adapter_required');
  if(!Number.isSafeInteger(startCursor?.afterAt)||startCursor.afterAt<0||
-  typeof startCursor?.afterId!=='string'||startCursor.afterId.length>100)
+  typeof startCursor?.afterId!=='string'||
+  (startCursor.afterId!==''&&!/^[A-Za-z0-9_-]{8,100}$/.test(startCursor.afterId)))
   throw Error('history_transfer_cursor_invalid');
  const cap=Math.min(1000,Math.max(1,Number.isInteger(maxMessages)?maxMessages:1000));
  let cursor={afterAt:startCursor.afterAt,afterId:startCursor.afterId},sent=0,batches=0,done=false;
