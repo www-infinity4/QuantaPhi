@@ -1,0 +1,55 @@
+name: Bubbles Android emulator smoke
+on:
+  pull_request:
+    paths:
+      - 'android/bubbles-overlay/**'
+      - 'test/bubbles-emulator-smoke.sh'
+      - '.github/workflows/bubbles-android-emulator.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  emulator-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Use runner Android SDK (no removed legacy tools package)
+        run: |
+          set -euo pipefail
+          SDK="${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}"
+          echo "ANDROID_HOME=$SDK" >> "$GITHUB_ENV"
+          SDKMANAGER="$(find "$SDK/cmdline-tools" -name sdkmanager -type f | head -n 1)"
+          test -n "$SDKMANAGER"
+          "$SDKMANAGER" "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Enable host KVM access for Android emulator
+        run: |
+          set -euo pipefail
+          test -e /dev/kvm || { echo "::error::Hosted runner has no KVM device; actual Android execution not possible here"; exit 1; }
+          sudo chmod 666 /dev/kvm
+          test -r /dev/kvm && test -w /dev/kvm
+      - name: Boot an Android 15 x86_64 emulator and launch the compiled APK
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          target: google_apis
+          arch: x86_64
+          profile: pixel_3a
+          ram-size: 2048M
+          disable-linux-hw-accel: false
+          emulator-boot-timeout: 1200
+          script: bash test/bubbles-emulator-smoke.sh
+      - name: Preserve emulator crash logs and screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bubbles-emulator-smoke-evidence
+          path: /tmp/bubbles-emulator/
+          if-no-files-found: warn

@@ -21,7 +21,15 @@ public final class ScreenCaptureService extends Service {
     // A persisted 'Saving' state survives process death; this flag does not.
     private static volatile boolean running;
     public static boolean isRunning() { return running; }
-    @Override public void onCreate() { super.onCreate(); running = true; }
+    @Override public void onCreate() {
+        super.onCreate(); running = true;
+        // A killed Android process cannot finish an abandoned MediaRecorder
+        // thread. Do not strand RecordB forever on a stale Saving indicator.
+        if (BrainNotes.prefs(this).getBoolean("capture_saving", false)) {
+            BrainNotes.prefs(this).edit().putBoolean("capture_saving", false)
+                .putString("capture_state", "Previous recording save was interrupted; check Movies/Bubbles or the original private capture file").apply();
+        }
+    }
     private final Handler main = new Handler(Looper.getMainLooper());
     private MediaProjection projection;
     private VirtualDisplay display;
@@ -86,7 +94,12 @@ public final class ScreenCaptureService extends Service {
             }
             return START_NOT_STICKY;
         }
-        if (projection != null || finished) return START_NOT_STICKY;
+        if (finished || finalizingMedia || pendingPublications > 0) {
+            BrainNotes.prefs(this).edit().putString("capture_state",
+                "Previous recording is still saving; wait for the saved-file receipt before recording again").apply();
+            return START_NOT_STICKY;
+        }
+        if (projection != null) return START_NOT_STICKY;
         // Own the screen/video path here. No third-party recorder or overlay
         // controls, and no second microphone AudioRecord: share Bubbles PCM.
         // Android MediaProjection consent is still required for each session.
@@ -280,6 +293,7 @@ public final class ScreenCaptureService extends Service {
     }
     private void stopIfPublished() {
         if (!finished || finalizingMedia || pendingPublications > 0) return;
+        BrainNotes.prefs(this).edit().putBoolean("capture_saving", false).apply();
         stopForeground(STOP_FOREGROUND_REMOVE);
         stopSelf();
         mediaExport.shutdown();
@@ -295,6 +309,7 @@ public final class ScreenCaptureService extends Service {
         // projection callback close together. Only the first owns cleanup.
         if (finished) return;
         finished = true;
+        BrainNotes.prefs(this).edit().putBoolean("capture_saving", true).apply();
         BrainNotes.prefs(this).edit().putBoolean("capture_active", false)
             .putBoolean("capture_recording", false).putBoolean("capture_paused", false).apply();
         main.removeCallbacksAndMessages(null);
@@ -310,7 +325,6 @@ public final class ScreenCaptureService extends Service {
             final VirtualDisplay stoppingDisplay = display; display = null;
             final MediaProjection stoppingProjection = projection; projection = null;
             final boolean wasStarted = recordingStarted;
-            final boolean wasPaused = recordingPaused;
             final File video = file;
             finalizingMedia = true;
             BrainNotes.prefs(this).edit().putString("capture_state",
@@ -328,7 +342,8 @@ public final class ScreenCaptureService extends Service {
                 }
                 try {
                     if (wasStarted) {
-                        if (wasPaused) stoppingRecorder.resume();
+                        // Android's MediaRecorder.stop() may be called while
+                        // paused. Resuming at stop can throw and lose the MP4.
                         stoppingRecorder.stop();
                         validVideo = true;
                     }

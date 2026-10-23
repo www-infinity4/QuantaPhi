@@ -95,6 +95,10 @@ jobs:
         run: node --test test/bubbles-native-wallet-vault.test.cjs
       - name: Verify native final speech recovery after phase acknowledgement
         run: node --test test/bubbles-native-reply-recovery.test.cjs
+      - name: Verify Albia weather and real APK emulator/TTS recovery wiring
+        run: node --test test/bubbles-apk-speech-parity.test.cjs test/bubbles-live-lookup.test.mjs
+      - name: Verify persisted APK chat history, microphone arbitration and safe RecordB saves
+        run: node --test test/bubbles-apk-history-voice-regression.test.cjs
       - name: Verify three-lane room and internal playback isolation
         run: node --test test/bubbles-room-notes-native.test.cjs test/bubbles-three-lane-voice.test.cjs test/bubbles-phone-playback-lane.test.cjs
       - name: Verify native screen recorder duration, controls, and speech intents

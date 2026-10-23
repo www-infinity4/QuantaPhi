@@ -60,6 +60,14 @@ final class FloatingOracleWindow {
     private long lastRobotStatusAt = 0L;
     private String lastCaptureSnapshot = "";
     private long lastPhonePollAt;
+    // The website is the only composer; this journal backs up its recent chat
+    // in Android app-private storage after trusted HTTPS origin verification.
+    private final NativeChatJournal historyJournal;
+    private final java.util.concurrent.ExecutorService historyWriter = java.util.concurrent.Executors.newSingleThreadExecutor();
+    private boolean historyRestored = false, historyPollRunning = false;
+    private boolean historyRecoveryBlocked = false;
+    private long lastHistoryPollAt = 0L;
+    private String lastHistorySnapshot = "";
     private long lastSiteRevisionCheckAt = 0L;
     private long lastChatGPTConsumerWakeAt = 0L;
     private boolean phoneCommandRunning;
@@ -111,6 +119,7 @@ final class FloatingOracleWindow {
                 deliverQueuedSpeech();
                 deliverQueuedText();
                 pollWebsiteReply();
+                backupRecentHistory(now);
                 checkSiteRevision();
                 // The floating voice service stays foregrounded after Hide.
                 // Android can throttle window timers in a hidden WebView, so
@@ -129,6 +138,7 @@ final class FloatingOracleWindow {
     FloatingOracleWindow(BubblesService service, WindowManager manager) {
         this.service = service;
         this.manager = manager;
+        this.historyJournal = new NativeChatJournal(service);
     }
     private int dp(float value) {
         return Math.round(value * service.getResources().getDisplayMetrics().density);
@@ -252,6 +262,22 @@ final class FloatingOracleWindow {
         // The website owns the only composer and conversation. Never substitute
         // a second local chat when loading, offline, or owner sync is unavailable.
         createWebsite(page);
+
+        // The APK needs one direct history control even before cloud owner
+        // pairing. The website remains the only source of conversation UI.
+        Button history = button("Chats / History", false);
+        history.setMinHeight(dp(44));
+        history.setContentDescription("Open saved Bubbles chat history");
+        history.setOnClickListener(v -> {
+            if (trustedChat(website) && websiteReady) {
+                website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.openHistory())", null);
+            } else if (status != null) {
+                status.setText("Bubbles history will open after the website chat reconnects.");
+            }
+        });
+        LinearLayout.LayoutParams historySize = new LinearLayout.LayoutParams(-2, dp(44));
+        historySize.gravity = Gravity.CENTER_HORIZONTAL;
+        page.addView(history, historySize);
 
         // A simple bottom X hides this chat without closing the one native
         // microphone service or removing the partly docked floating orb.
@@ -399,6 +425,10 @@ final class FloatingOracleWindow {
                     livePage = false;
                     if (liveBack != null) { liveBack.setText("Live"); liveBack.setContentDescription("Open GPT-Live owner setup"); }
                     loadGeneration++;
+                    historyRestored = false;
+                    historyRecoveryBlocked = false;
+                    historyPollRunning = false;
+                    lastHistorySnapshot = "";
                     dispatchInFlight = false;
                     typedDispatchInFlight = false;
                     showWebsite(false);
@@ -569,6 +599,13 @@ final class FloatingOracleWindow {
         return true;
     }
 
+    /** The website reply may exist even when the phone has no usable TTS voice. */
+    void showSpeechFailure(String explanation) {
+        if (root == null || status == null) return;
+        status.setText("Voice unavailable · " + explanation);
+        status.setVisibility(View.VISIBLE);
+    }
+
     private void showWebsite(boolean ready) {
         websiteReady = ready && root != null && website != null;
         if (!websiteReady) { robotOwnerConnected = false; lastCaptureSnapshot = ""; phoneCommandRunning = false; }
@@ -579,6 +616,7 @@ final class FloatingOracleWindow {
             if (!websiteReady) status.setText("Connecting to QuantaPhi Bubbles… If it does not load, tap Retry.");
         }
         if (websiteReady) {
+            restoreRecentHistory();
             status.setText("● QuantaPhi Bubbles · full website brain, notes & chat");
             if (!pendingSpeech.isEmpty()) deliverQueuedSpeech();
             if (!pendingTyped.isEmpty()) deliverQueuedText();
@@ -586,6 +624,70 @@ final class FloatingOracleWindow {
             // website only coordinates an owner-scoped lease, never mutes it.
             claimMicrophone();
         }
+    }
+
+    /** Only the trusted first-party Bubbles page can supply or receive the
+     * recovery copy. No WebView JavascriptInterface or arbitrary iframe access. */
+    private void restoreRecentHistory() {
+        historyRestored = false;
+        historyRecoveryBlocked = false;
+        if (!trustedChat(website)) return;
+        final WebView view = website;
+        final int generation = loadGeneration;
+        final String old = historyJournal.read();
+        if (old.isEmpty()) { historyRestored = true; return; }
+        view.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.restoreNativeHistory("
+                + JSONObject.quote(old) + "))", result -> {
+            if (generation != loadGeneration || !trustedChat(view)) return;
+            historyRestored = true;
+            historyRecoveryBlocked = !"true".equals(result);
+            if (historyRecoveryBlocked) {
+                // Never overwrite a still-readable local backup after a web
+                // interface revision or transient DOM-storage error.
+                BrainNotes.prefs(service).edit().putString("history_recovery_state",
+                    "Native history retained; web conversation restore unavailable").apply();
+            } else {
+                BrainNotes.prefs(service).edit().putString("history_recovery_state",
+                    "Recent Android Bubbles conversation restored").apply();
+            }
+        });
+    }
+    private void backupRecentHistory(long now) {
+        if (!historyRestored || historyPollRunning || !trustedChat(website)
+                || now - lastHistoryPollAt < 5000L) return;
+        final WebView view = website;
+        final int generation = loadGeneration;
+        lastHistoryPollAt = now;
+        historyPollRunning = true;
+        view.evaluateJavascript("window.QuantaBubbles && window.QuantaBubbles.nativeHistorySnapshot()",
+            raw -> {
+                historyPollRunning = false;
+                if (generation != loadGeneration || !trustedChat(view) || raw == null) return;
+                try {
+                    Object value = new JSONTokener(raw).nextValue();
+                    if (!(value instanceof String)) return;
+                    String snapshot = (String)value;
+                    if ("history-disabled".equals(snapshot)) {
+                        lastHistorySnapshot = "";
+                        historyRecoveryBlocked = false;
+                        historyWriter.execute(historyJournal::clear);
+                    } else if (historyRecoveryBlocked) {
+                        // Never replace the last good backup with an empty
+                        // or incomplete page after restoration has failed.
+                        return;
+                    } else if (!snapshot.equals(lastHistorySnapshot)
+                            && NativeChatJournal.valid(snapshot)) {
+                        lastHistorySnapshot = snapshot;
+                        historyWriter.execute(() -> {
+                            try { historyJournal.write(snapshot); }
+                            catch (Exception error) {
+                                BrainNotes.prefs(service).edit().putString("history_recovery_state",
+                                    "Android conversation backup failed: " + error.getClass().getSimpleName()).apply();
+                            }
+                        });
+                    }
+                } catch (Exception ignored) { /* Preserve last good history. */ }
+            });
     }
 
     private void deliverQueuedSpeech() {
@@ -857,6 +959,7 @@ final class FloatingOracleWindow {
         loadGeneration++;
         ui.removeCallbacks(update);
         gptWork.shutdownNow();
+        historyWriter.shutdown();
         websiteReady = false;
         pendingSpeech.clear();
         pendingTyped.clear();

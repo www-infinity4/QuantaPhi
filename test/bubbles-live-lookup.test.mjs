@@ -24,6 +24,25 @@ test('actual voice request, not persona history, selects the web and weather too
  assert.equal(weatherPlace('Tell me the weather today in Albia, Iowa'),'Albia, Iowa');
  assert.equal(lookupKind('Build a weather app'),null); // Engineering work is not a live weather lookup.
 });
+test('Android speech weather search uses Albia, Iowa rather than a stale phone location',async()=>{
+ const spoken=['Weather search Albia Iowa','Weather Albia Iowa',
+  'Search for Albia Iowa weather','Bubbles weather search Albia, Iowa'];
+ for(const utterance of spoken){
+  assert.equal(chooseTool(utterance),'weather.current',utterance);
+  assert.match(weatherPlace(utterance,{city:'Omaha',state:'Nebraska'}),/^Albia(?:,)? Iowa$/i);
+  const outcome=await currentWeather(utterance,{city:'Omaha',state:'Nebraska'},weatherFetch);
+  assert.equal(outcome.ok,true,utterance);
+  assert.match(outcome.location,/Albia, Iowa/);
+  assert.equal(outcome.temperatureF,63);
+ }
+});
+test('weather never substitutes a different-state city on geocoding ambiguity',async()=>{
+ const conflicting=async url=>Response.json(String(url).includes('geocoding-api')?
+  {results:[{name:'Albia',admin1:'Nebraska',country:'United States',latitude:39,longitude:-96}]}:mockForecast);
+ const result=await currentWeather('Weather search Albia Iowa',null,conflicting);
+ assert.equal(result.ok,false);
+ assert.match(result.output,/will not use weather for a different place/);
+});
 test('missing town asks once rather than inventing precise coordinates',async()=>{
  const r=await call({request:'How is the weather?'});
  const body=await r.json();
