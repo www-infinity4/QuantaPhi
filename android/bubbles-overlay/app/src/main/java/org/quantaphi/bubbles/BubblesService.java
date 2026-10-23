@@ -270,7 +270,7 @@ public final class BubblesService extends Service {
      */
     boolean openFilePicker(android.webkit.ValueCallback<android.net.Uri[]> callback, boolean historyJson) {
         // JSON/ZIP imports can exhaust memory on low-RAM phones during MP4 encoding.
-        // Keep the existing website history intact; retry after Stop & save.
+        // Preserve the existing history while the recorder finishes saving.
         if (historyJson && ScreenCaptureService.isRunning()) {
             BrainNotes.prefs(this).edit().putString("last_error",
                 "Finish saving the current recording before importing history").apply();
@@ -308,10 +308,58 @@ public final class BubblesService extends Service {
     private void drainWebsiteSpeech() {
         if (!connected || muted || speaking || !ttsReady || tts == null) return;
         String next = pendingWebsiteSpeech.pollFirst();
-        if (next != null && !next.trim().isEmpty()) speak(next);
+        if (next != null && !next.trim().isEmpty()) {
+            currentWebsiteUtterance = next;
+            speak(next);
+        }
+    }
+    private void reportSpeechFailure(String explanation) {
+        BrainNotes.prefs(this).edit().putString("last_error", explanation).apply();
+        if (oracleWindow != null) oracleWindow.showSpeechFailure(explanation);
+        // Avoid a permanent dead TTS engine. The original response remains
+        // visible in website chat even if Android cannot play it.
+        long now = SystemClock.elapsedRealtime();
+        if (!connected || muted || ttsRecoveryScheduled) return;
+        // A failed reply remains queued until Android has a usable engine.
+        // Avoid a hot retry loop but always schedule the next recovery turn.
+        long delay = Math.max(1200L, 30000L - (now - lastTtsRecoveryAt));
+        lastTtsRecoveryAt = now + delay - 1200L;
+        ttsRecoveryScheduled = true;
+        if (NeuralSpeechEngine.preferredEngine(this) != null)
+            NeuralSpeechEngine.useAndroidDefault(this);
+        main.postDelayed(() -> {
+            ttsRecoveryScheduled = false;
+            if (connected && !muted) reloadSpeechEngine();
+        }, delay);
     }
     private PlaybackAwareness playbackAwareness;
     private AudioRecord microphone;
+    private volatile boolean microphoneSilencedByAndroid = false;
+    // Android can silence a lower-priority AudioRecord without throwing or
+    // closing it (for example when another recorder app takes priority).
+    // One callback observes priority handoffs; RecordB shares this PCM stream.
+    private final AudioManager.AudioRecordingCallback recordingCallback =
+        new AudioManager.AudioRecordingCallback() {
+            @Override public void onRecordingConfigChanged(java.util.List<android.media.AudioRecordingConfiguration> configs) {
+                if (Build.VERSION.SDK_INT < 29 || microphone == null || !captureRunning) return;
+                boolean found = false, silenced = false;
+                int session = microphone.getAudioSessionId();
+                for (android.media.AudioRecordingConfiguration config : configs) {
+                    if (config.getClientAudioSessionId() == session) {
+                        found = true;
+                        silenced = config.isClientSilenced();
+                        break;
+                    }
+                }
+                if (!found || silenced == microphoneSilencedByAndroid) return;
+                microphoneSilencedByAndroid = silenced;
+                if (silenced) {
+                    state("microphone_conflict", .06f);
+                    BrainNotes.prefs(BubblesService.this).edit().putString("last_error",
+                        "Android temporarily silenced Bubbles microphone while another recorder has priority").apply();
+                } else if (connected && !muted) state("listening", .12f);
+            }
+        };
     private android.media.audiofx.AcousticEchoCanceler echoCanceler;
     private Thread audioThread;
     private Model voiceModel;
@@ -323,6 +371,12 @@ public final class BubblesService extends Service {
     private boolean modelLoading = false;
     private boolean ttsReady = false;
     private TextToSpeech tts;
+    // One bounded engine recovery per 30 seconds; failures must not silently
+    // consume website responses or leave the foreground microphone stuck.
+    private long lastTtsRecoveryAt = -30000L;
+    private boolean ttsRecoveryScheduled = false;
+    private String currentWebsiteUtterance = "";
+    private String lastFailedWebsiteUtterance = "";
     // Ignore asynchronous initialization from a replaced speech engine.
     private long ttsEngineGeneration = 0L;
     private volatile boolean connected = false, muted = false, speaking = false;
@@ -383,6 +437,10 @@ public final class BubblesService extends Service {
         notificationManager.createNotificationChannel(new NotificationChannel(
                     CAPTURE_APPROVAL_CHANNEL, "Bubbles capture approvals", NotificationManager.IMPORTANCE_HIGH));
         playbackAwareness = new PlaybackAwareness(this, main);
+        if (Build.VERSION.SDK_INT >= 29) {
+            try { ((AudioManager)getSystemService(AUDIO_SERVICE)).registerAudioRecordingCallback(recordingCallback, main); }
+            catch (RuntimeException ignored) { /* Recognition still works without callback. */ }
+        }
         reloadSpeechEngine();
     }
 
@@ -408,9 +466,8 @@ public final class BubblesService extends Service {
                     reloadSpeechEngine();
                     return;
                 }
-                pendingWebsiteSpeech.clear(); // The text is still in website chat.
-                BrainNotes.prefs(this).edit().putString("last_error",
-                    "Android speech engine could not initialize; choose an installed voice").apply();
+                // Keep bounded queued replies while trying the system voice.
+                reportSpeechFailure("Android speech engine could not initialize; choose an installed voice");
                 if (connected && !muted) state("error", 0);
                 return;
             }
@@ -457,15 +514,18 @@ public final class BubblesService extends Service {
                     main.post(() -> {if(id != null && id.equals(activeUtteranceId)) state("speaking", 0.6f);});
                 }
                 @Override public void onDone(String id) { main.post(() -> finishSpeaking(id)); }
-                @Override public void onError(String id) { main.post(() -> finishSpeaking(id)); }
+                @Override public void onError(String id) {
+                    main.post(() -> {
+                        if (id != null && id.equals(activeUtteranceId))
+                            speechPlaybackFailed(id, "Android voice playback failed; the answer is still in Bubbles chat");
+                    });
+                }
             });
             ttsReady = true;
             main.post(this::drainWebsiteSpeech);
             } catch (RuntimeException error) {
                 ttsReady = false;
-                pendingWebsiteSpeech.clear();
-                BrainNotes.prefs(this).edit().putString("last_error",
-                    "Android speech setup failed: " + error.getClass().getSimpleName()).apply();
+                reportSpeechFailure("Android speech setup failed: " + error.getClass().getSimpleName());
                 if (connected && !muted) state("error", 0);
             }
         });
@@ -672,6 +732,7 @@ public final class BubblesService extends Service {
             final AudioRecord input = microphone;
             final Recognizer decoder = new Recognizer(voiceModel, 16000f);
             input.startRecording();
+            microphoneSilencedByAndroid = false;
             captureRunning = true;
             if (pendingAudioRecording) beginAudioRecording();
             state("listening", .12f);
@@ -684,6 +745,9 @@ public final class BubblesService extends Service {
                     while (captureRunning && connected && !muted) {
                         int count = input.read(samples, 0, samples.length);
                         if (count <= 0) throw new IllegalStateException("Microphone read failed: " + count);
+                        // Preserve the RecordB audio timeline even while
+                        // Android temporarily silences input. Never interpret
+                        // muted/zeroed PCM as an owner speech command.
                         try { if (!screenAudioPaused) screenAudio.append(samples, count); }
                         catch (Exception error) {
                             // Send at most ONE stop request: the audio loop runs every 100 ms.
@@ -696,6 +760,7 @@ public final class BubblesService extends Service {
                         }
                         try { recording.append(samples, count); }
                         catch (Exception error) { main.post(this::saveAudio); }
+                        if (microphoneSilencedByAndroid) continue;
                         double sum = 0;
                         for (int i = 0; i < count; i++) sum += (double) samples[i] * samples[i];
                         final float level = Math.min(1f, (float) Math.sqrt(sum / count) / 6000f);
@@ -883,6 +948,7 @@ public final class BubblesService extends Service {
         main.removeCallbacks(deliverVoiceTurn);
         turnBuffer.clear();
         captureRunning = false;
+        microphoneSilencedByAndroid = false;
         if (screenAudio.active()) startService(new Intent(this, ScreenCaptureService.class)
             .setAction(ScreenCaptureService.STOP));
         saveAudio();
@@ -982,6 +1048,7 @@ public final class BubblesService extends Service {
     private void finishSpeaking(String id) {
         if (id == null || !id.equals(activeUtteranceId)) return;
         activeUtteranceId = "";
+        currentWebsiteUtterance = "";
         speaking = false;
         speechGeneration++;
         restoreExternalPlayback();
@@ -1032,9 +1099,7 @@ public final class BubblesService extends Service {
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
         Matcher matcher = namedWake.matcher(text);
         boolean directed = matcher.find();
-        // A tapped RecordB start is an intentional foreground interaction. Keep
-        // its short spoken follow-up window even with app/media sound playing.
-        // All longer-lived recording controls still require source gating.
+        // A tapped RecordB start is an intentional foreground interaction.
         if (typed) {
             VoiceCaptureCommands.Command started = VoiceCaptureCommands.parse(text);
             if (started != null && "screen_video".equals(started.action)) {
@@ -1590,6 +1655,21 @@ public final class BubblesService extends Service {
         drainWebsiteSpeech();
     }
 
+    private void speechPlaybackFailed(String id, String message) {
+        if (id == null || !id.equals(activeUtteranceId)) return;
+        String retry = currentWebsiteUtterance;
+        // One retry per failed website response, after a fresh Android TTS
+        // engine. Never retry the same error forever or lose later replies.
+        if (!retry.isEmpty() && !retry.equals(lastFailedWebsiteUtterance)
+                && pendingWebsiteSpeech.size() < 8) {
+            pendingWebsiteSpeech.addFirst(retry);
+            lastFailedWebsiteUtterance = retry;
+        }
+        ttsReady = false;
+        finishSpeaking(id);
+        reportSpeechFailure(message);
+    }
+
     private void speak(String response) {
         if (!connected || muted) return;
         if (tts == null || !ttsReady) {
@@ -1612,26 +1692,24 @@ public final class BubblesService extends Service {
         activeUtteranceId = utterance;
         main.postDelayed(() -> {
             if (speaking && generation == speechGeneration && utterance.equals(activeUtteranceId)) {
-                tts.stop();
-                finishSpeaking(utterance);
-                BrainNotes.prefs(this).edit().putString("last_error", "Speech playback timed out; listening resumed").apply();
+                if (tts != null) tts.stop();
+                speechPlaybackFailed(utterance,
+                    "Speech playback timed out; listening resumed; answer remains in chat");
             }
         }, 90000);
         state("speaking", .4f);
         try {
             int result = tts.speak(response, TextToSpeech.QUEUE_FLUSH, null, utterance);
             if (result == TextToSpeech.ERROR) {
-                finishSpeaking(utterance);
-                BrainNotes.prefs(this).edit().putString("last_error",
-                    "Android speech engine rejected playback; text is still in chat").apply();
+                speechPlaybackFailed(utterance,
+                    "Android speech engine rejected playback; text is still in chat");
                 state("error", 0);
             }
         } catch (RuntimeException error) {
             // Without this, the speaking flag blocks every later reply until
             // the 90-second watchdog, even though the engine threw immediately.
-            finishSpeaking(utterance);
-            BrainNotes.prefs(this).edit().putString("last_error",
-                "Android speech playback failed: " + error.getClass().getSimpleName()).apply();
+            speechPlaybackFailed(utterance,
+                "Android speech playback failed: " + error.getClass().getSimpleName());
             state("error", 0);
         }
     }
@@ -1651,6 +1729,10 @@ public final class BubblesService extends Service {
         pendingWebsiteSpeech.clear();
         connected=false;muted=true;resumeAfterLiveCall=false;
         if (playbackAwareness != null) { playbackAwareness.close(); playbackAwareness = null; }
+        if (Build.VERSION.SDK_INT >= 29) {
+            try { ((AudioManager)getSystemService(AUDIO_SERVICE)).unregisterAudioRecordingCallback(recordingCallback); }
+            catch (RuntimeException ignored) {}
+        }
         main.removeCallbacksAndMessages(null);
         stopRecognition();
         if (voiceModel != null && audioThread == null) {
