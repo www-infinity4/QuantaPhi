@@ -1147,6 +1147,8 @@ export async function ownerTickets(env,path,body){
  if(path==='/work/tickets/create'){
   // A historical user turn is not permission to execute. Recheck the exact
   // archived source, owner partition, candidate and repository server-side.
+  if(body.from_work_audit!==true&&(body.context?.auditCandidateId!==undefined||body.context?.sourceMessageIds!==undefined))
+   return denied('audit_provenance_requires_owner_archive_verification',409);
   const ownerDraft=body.from_work_audit===true?await validateOwnerAuditDraft(db,ownerHash,body):null;
   if(ownerDraft&&!ownerDraft.ok)return denied(ownerDraft.error,409);
   const request=ownerDraft?.request??(typeof body.request==='string'?body.request.trim().slice(0,12000):'');
