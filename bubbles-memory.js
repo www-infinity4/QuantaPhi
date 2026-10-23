@@ -56,6 +56,42 @@
   }
   async function all(){const db=await dbPromise;return (await list(db))
    .filter(e=>(e.scope||'guest')===scope).sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id))}
+
+  // Owner-controlled historical export into the separately authenticated Brain
+  // archive. Stream an indexed page; never load an entire ZIP transcript into
+  // a low-RAM Android WebView, expose wallet tokens, or send private notes.
+  async function ownerUserBatch({afterAt=0,afterId='',limit=20}={}){
+   if(!enabled||!cloud||scope==='guest')throw Error('Verified wallet memory is required to share old owner messages with Robot Brain.');
+   if(!Number.isSafeInteger(afterAt)||afterAt<0||typeof afterId!=='string'||afterId.length>100)
+    throw Error('Invalid import cursor.');
+   const cap=Math.min(20,Math.max(1,Number.isInteger(limit)?limit:20));
+   const db=await dbPromise;if(!db)throw Error('Private conversation storage is unavailable.');
+   return new Promise((resolve,reject)=>{
+    const out=[];let completed=false;
+    try{
+     const tx=db.transaction('turns','readonly'),index=tx.objectStore('turns').index('byTime');
+     const range=global.IDBKeyRange?.lowerBound?.(afterAt);
+     const req=index.openCursor(range);
+     req.onerror=()=>{if(!completed){completed=true;reject(req.error||Error('Could not read conversation history.'))}};
+     req.onsuccess=()=>{
+      if(completed)return;
+      const cursor=req.result;
+      if(!cursor){completed=true;resolve(out);return;}
+      const item=cursor.value,at=item?.at,id=item?.id;
+      if((item.scope||'guest')===scope&&item.role==='user'&&
+       /^[A-Za-z0-9_-]{8,100}$/.test(id||'')&&
+       Number.isSafeInteger(at)&&at>0&&at<=Date.now()+60000&&
+       (at>afterAt||(at===afterAt&&id>afterId))&&
+       typeof item.text==='string'&&item.text.trim()){
+       out.push({id,role:'user',text:item.text.slice(0,6000),at});
+       if(out.length>=cap){completed=true;resolve(out);return;}
+      }
+      cursor.continue();
+     };
+     tx.onabort=()=>{if(!completed){completed=true;reject(Error('Private memory read interrupted.'))}};
+    }catch(e){if(!completed){completed=true;reject(e)}}
+   });
+  }
   async function recent(limit=30){return (await all()).slice(-limit)}
   async function search(q,limit=8){
    const db=await dbPromise;if(!db)return [];
@@ -191,7 +227,8 @@
   }
   function setEnabled(value){enabled=value===true;if(!enabled){cloud=false;token='';clearInterval(clock)}}
   function onUpdate(handler){onChange=typeof handler==='function'?handler:()=>{}}
-  return {setEnabled,onUpdate,append,appendAll,recent,search,context,remember,recall,browseSynapses,forgetSynapse,connect,sync,clear,
+  return {setEnabled,onUpdate,append,appendAll,recent,ownerUserBatch,search,context,remember,recall,browseSynapses,forgetSynapse,connect,sync,clear,
+    get profileScope(){return cloud&&scope!=='guest'?scope:null},
     get cloudConnected(){return cloud},get enabled(){return enabled}};
  }
  global.BubblesMemory=create();

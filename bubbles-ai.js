@@ -529,6 +529,91 @@ async function proposeCloudflareWorkerToken(){
   status.textContent=plan.managerConfigured?'Review the Cloudflare scope and approve if you want this token.':'Cloudflare credential manager needs its separate server-side connection.';
  }catch(error){status.textContent='Cloudflare token planning unavailable: '+String(error.message||error).slice(0,160);}
 }
+// The report is evidence discovery only. Candidate topics may be out of date;
+// every repository still needs actual source/CI/deployment comparison.
+async function showUnfinishedOwnerWork(){
+ if(embedded||!ownerReady||!ownerHeaders){
+  macroInfo.textContent='Connect the verified owner wallet to read Robot Brain work history.';
+  return;
+ }
+ const headers=ownerHeaders;
+ try{
+  const res=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',
+   headers:{...headers,'Content-Type':'application/json'},
+   body:JSON.stringify({mode:'work-audit-sweep',limit:150,pages:4})
+  },20000);
+  const body=await res.json().catch(()=>({}));
+  if(!res.ok||body.ok!==true||body.mode!=='work-audit-sweep')throw Error(String(body.error||'Audit is not deployed yet.'));
+  if(!ownerReady||ownerHeaders!==headers)throw Error('Owner session changed during audit.');
+  const candidates=Array.isArray(body.candidates)?body.candidates.slice(0,10):[];
+  const lines=candidates.map((x,i)=>(i+1)+'. '+String(x.title||x.id||'Unnamed request').slice(0,90)+
+    ' — '+Number(x.mentions||0)+' messages; source check needed');
+  const report='Robot Brain saved-work audit (read-only)\n'+
+   'Scanned '+Number(body.messagesScanned||0)+' owner turns across '+Number(body.pagesScanned||0)+' pages.\n'+
+   (lines.length?lines.join('\n'):'No matching archived user requests were found in these pages.')+
+   (body.nextCursor?'\nMore archived pages remain to inspect.':'')+
+   '\nNo repositories were changed and no jobs were approved or dispatched.';
+  display(report,'ai');macroInfo.textContent='Read-only owner backlog report shown in the main Bubbles chat.';
+ }catch(error){
+  macroInfo.textContent='Owner work audit unavailable: '+String(error.message||error).slice(0,135);
+ }
+}
+// Owner explicitly approves a private, resumable copy of already imported
+// ChatGPT/Gemini user turns into the existing Robot Brain archive. Never
+// auto-send a ZIP or interpret an old message as execution authorization.
+let ownerHistoryTransferBusy=false,ownerHistoryTransferCancelled=false;
+async function indexImportedOwnerHistory(){
+ if(ownerHistoryTransferBusy){macroInfo.textContent='History transfer is already running. Use Stop history transfer to cancel.';return;}
+ if(embedded||!keepChat||!cloudChat||!longMemory?.cloudConnected||
+  !longMemory.profileScope||!ownerReady||!ownerHeaders){
+  macroInfo.textContent='Enable private Bubbles memory and verify your wallet owner session before indexing imported conversations.';
+  return;
+ }
+ if(nativeOverlay&&nativeRecordingActive){
+  macroInfo.textContent='Stop and save the current RecordB recording before indexing imported conversations.';
+  return;
+ }
+ if(!window.confirm('Copy your saved USER conversation turns from private Bubbles memory into your verified Robot Brain archive? Older ChatGPT/Gemini imports will become private work-audit evidence; they will NOT create tickets, approve jobs or publish code. The transfer can be stopped and resumed.'))return;
+ const owner=longMemory.profileScope,headers=ownerHeaders;
+ const key='quantaphi:bubbles:brain-import-cursor:v1:'+owner;
+ let cursor={afterAt:0,afterId:''};
+ try{const prior=JSON.parse(localStorage.getItem(key)||'null');
+  if(prior&&Number.isSafeInteger(prior.afterAt)&&prior.afterAt>=0&&
+    typeof prior.afterId==='string'&&prior.afterId.length<=100)cursor=prior;
+ }catch{}
+ ownerHistoryTransferCancelled=false;ownerHistoryTransferBusy=true;
+ macroInfo.textContent='Reading saved owner messages; no coding jobs are being submitted.';
+ try{
+  const {transferOwnerHistory}=await import('/bubbles-brain-history-bridge.mjs');
+  const authorize=()=>!ownerHistoryTransferCancelled&&ownerReady&&ownerHeaders===headers&&
+   keepChat&&cloudChat&&longMemory?.cloudConnected&&longMemory.profileScope===owner&&
+   (!nativeOverlay||!nativeRecordingActive);
+  const report=await transferOwnerHistory({
+   startCursor:cursor,maxMessages:400,authorize,
+   getBatch:page=>longMemory.ownerUserBatch(page),
+   sendBatch:async messages=>{
+    if(!authorize())throw Error('Owner connection changed during history transfer.');
+    const res=await bubblesFetch(BRAIN+'/owner/conversation',{
+     method:'POST',headers:{...headers,'Content-Type':'application/json'},
+     body:JSON.stringify({messages})
+    },20000);
+    const result=await res.json().catch(()=>({}));
+    if(!res.ok||result.ok!==true)throw Error(String(result.error||'Brain archive did not acknowledge the batch').slice(0,120));
+    return result.saved;
+   },
+   onProgress:progress=>{
+    try{localStorage.setItem(key,JSON.stringify(progress.cursor))}catch{}
+    macroInfo.textContent=progress.messages+' older owner turns acknowledged by Brain in this transfer; source receipts preserved.';
+   }
+  });
+  if(report.complete){
+   try{localStorage.removeItem(key)}catch{}
+   macroInfo.textContent=report.messages+' older owner turns acknowledged. Scan complete; no tickets created. Repeating later safely deduplicates by message ID.';
+  }else macroInfo.textContent=report.messages+' owner turns acknowledged. Select Index older chats again to resume the next batch; no jobs created.';
+ }catch(e){
+  macroInfo.textContent='History transfer stopped or blocked: '+String(e.message||e).slice(0,145)+'. Only acknowledged batches are checkpointed.';
+ }finally{ownerHistoryTransferBusy=false;}
+}
 const macroButtons=[
  ['Customize bubble','Open Bubbles role and voice settings',()=>{studioToggle.click();edit.scrollIntoView?.({block:'nearest',behavior:'smooth'})}],
  ['Record screen','Request Android screen video with microphone',()=>void sendMessage('record screen')],
@@ -536,6 +621,9 @@ const macroButtons=[
  ['Stop and save','Ask Android to save the current recording',()=>void sendMessage('stop recording')],
  ['SIM and network','Inspect connection from Android, without claiming carrier control',()=>void sendMessage('check my SIM')],
  ['Robot Brain tools','Check verified owner work tools',()=>void sendMessage('check robot brain tools')],
+ ['Index older chats in Brain','Owner-approved, resumable private transfer of imported user messages; does not authorize builds',()=>void indexImportedOwnerHistory()],
+ ['Review unfinished builds','Show ten source-linked work candidates from authenticated Brain, without dispatching anything',()=>void showUnfinishedOwnerWork()],
+ ['Stop history transfer','Cancel any further private-history batches without deleting already archived turns',()=>{ownerHistoryTransferCancelled=true;macroInfo.textContent='Stopping owner history transfer after the current acknowledged batch.'}],
  ['MCP LLM tools','List Bubbles connected read-only MCP tools',()=>void sendMessage('Show the MCP tools connected to Bubbles')],
  ['Check GitHub executor','Read the real authenticated GitHub capability or missing-credential error',()=>void sendMessage('check GitHub access')],
  ['Run Python sandbox','Request the pinned GitHub Actions Python fixture, not a phone shell',()=>void sendMessage('run Python sandbox/hello.py')],
