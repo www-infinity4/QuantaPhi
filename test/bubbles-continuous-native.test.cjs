@@ -80,7 +80,7 @@ test('Android speech playback errors release busy and retain visible diagnostics
     assert.match(speak, /if \(result == TextToSpeech\.ERROR\) \{[\s\S]*?speechPlaybackFailed\(utterance,/);
     assert.match(speak, /catch \(RuntimeException error\) \{[\s\S]*?speechPlaybackFailed\(utterance,/);
     assert.match(source, /private void speechPlaybackFailed\(String id, String message\) \{[\s\S]*?finishSpeaking\(id\)/);
-    assert.match(source, /private void reportSpeechFailure\(String message\) \{/);
+    assert.match(source, /private void reportSpeechFailure\(String (?:message|explanation)\) \{/);
   } else {
     assert.match(speak, /if \(result == TextToSpeech\.ERROR\) \{[\s\S]*?finishSpeaking\(utterance\)/);
     assert.match(speak, /catch \(RuntimeException error\) \{[\s\S]*?finishSpeaking\(utterance\)/);
