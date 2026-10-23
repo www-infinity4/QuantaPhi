@@ -110,23 +110,34 @@
   async function context(q){
    if(!enabled)return '';
    const last=await recent(12),related=await search(q,8),ids=new Set(last.map(e=>e.id));
-   const archived=related.filter(e=>!ids.has(e.id)).reverse();
-   const items=[...archived,...last];let result='';
-   // Durable synapses are explicit saved owner notes, never model commands.
-   // Include provenance so a source hint isn't mistaken for a verified fact.
+   let saved='';
+   // Saved notes remain evidence, never model instructions or permission.
    if(cloud){
     try{
-     const found=await recall(q,5);
-     for(const note of found){
+     for(const note of await recall(q,5)){
       const line='Saved note ['+note.topic+', '+note.basis+', '+(note.repository||note.source)+
        ', '+note.id+']: '+note.text.slice(0,420)+'\n';
-      if(result.length+line.length<2300)result+=line;
+      if(saved.length+line.length<2300)saved+=line;
      }
     }catch{/* Local transcript retrieval still works offline. */}
    }
-   for(const e of items){const line=e.role+': '+e.text.slice(0,900)+'\n';
-    if(result.length+line.length>7800)break;result+=line;}
-   return result;
+   // Reserve space for the newest turns before adding older search matches.
+   // Preserve chronological order in the prompt without letting an old, long
+   // excerpt push the latest owner correction out of the context window.
+   const recentLines=[];let recentSize=0;
+   for(const e of [...last].reverse()){
+    const line=e.role+': '+e.text.slice(0,900)+'\n';
+    if(recentSize+line.length>5000)continue;
+    recentLines.unshift(line);recentSize+=line.length;
+   }
+   let archived='';
+   for(const e of related){
+    if(ids.has(e.id))continue;
+    const line=e.role+': '+e.text.slice(0,900)+'\n';
+    if(saved.length+archived.length+recentSize+line.length>7800)continue;
+    archived+=line;
+   }
+   return saved+archived+recentLines.join('');
   }
   async function remoteFetch(path,options={}){
    const r=await fetch(API+path,{...options,headers:{'authorization':'Bearer '+token,'content-type':'application/json',...(options.headers||{})},cache:'no-store'});
