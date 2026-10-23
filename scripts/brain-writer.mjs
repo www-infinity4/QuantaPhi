@@ -83,7 +83,16 @@ try{
   git('fetch','origin','main');if(git('rev-parse','origin/main')!==report.baseSha)throw Error('Main changed; retry against the new head');
   git('config','user.name','infinity-brain[bot]');git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com');
   git('add','--',...paths);git('commit','-m','Repair '+report.jobId+' after GPT review and tests');commitSha=git('rev-parse','HEAD');
-  report.publication=await publishReviewed({repository:'www-infinity4/QuantaPhi',base:'main',commitSha,jobId:report.jobId,runId:process.env.GITHUB_RUN_ID,push:ref=>git('push','origin',ref),api:async(resource,options)=>{const r=await fetch('https://api.github.com/'+resource,{method:options.method,headers:{Authorization:'Bearer '+process.env.GITHUB_TOKEN,'Content-Type':'application/json',Accept:'application/vnd.github+json'},body:JSON.stringify(options.body),signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Reviewed PR could not be created: HTTP '+r.status);return r.json()}});
+  report.publication=await publishReviewed({repository:'www-infinity4/QuantaPhi',base:'main',commitSha,jobId:report.jobId,runId:process.env.GITHUB_RUN_ID,push:ref=>git('push','origin',ref),api:async(resource,options)=>{const r=await fetch('https://api.github.com/'+resource,{method:options.method,headers:{Authorization:'Bearer '+process.env.GITHUB_TOKEN,'Content-Type':'application/json',Accept:'application/vnd.github+json'},body:JSON.stringify(options.body),signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Reviewed PR could not be created: HTTP '+r.status);return r.json()},
+   requestCI:async({branch:ciBranch,commitSha:ciSha})=>{
+    if(ciSha!==commitSha||!/^robot\/[A-Za-z0-9_-]+\/[1-9][0-9]+$/.test(ciBranch))
+     throw Error('brain_ci_scope_invalid');
+    const r=await fetch('https://api.github.com/repos/www-infinity4/QuantaPhi/actions/workflows/bubbles-brain-full-diagnostic.yml/dispatches',{
+     method:'POST',headers:{Authorization:'Bearer '+process.env.GITHUB_TOKEN,
+      'Content-Type':'application/vnd.github+json','Accept':'application/vnd.github+json'},
+     body:JSON.stringify({ref:ciBranch}),signal:AbortSignal.timeout(20000)});
+    return r.status===204;
+   }});
   if(report.publication.publishedToDefault!==false||report.publication.draft!==true)
    throw Error('writer_must_publish_draft_pr_only');
   report.status='committed_unverified';
@@ -91,7 +100,8 @@ try{
    summary:'Reviewed draft PR — CI, owner merge and deployment unverified: '+report.jobId,jobId:report.jobId};
   await call('result',{status:'committed_unverified',commitSha,testsPassed,reviewApproved,
    message:'Source patch is in draft PR '+report.publication.prUrl+
-    '. Target CI, owner merge, live site and Android acceptance remain unverified.'});
+    '. CI dispatch '+(report.publication.ciDispatchRequested?'requested':'not verified')+'. '+
+    ' Target CI, owner merge, live site and Android acceptance remain unverified.'});
   throw Object.assign(new Error('draft_pr_review_pending'),{reviewPending:true});
 
   }
