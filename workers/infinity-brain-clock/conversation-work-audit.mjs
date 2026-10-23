@@ -41,14 +41,16 @@ export function auditWorkHistory(messages,{maxCandidates=30}={}){
  }
  return [...found.values()].sort((a,b)=>b.evidence.length-a.evidence.length||a.id.localeCompare(b.id)).slice(0,Math.max(0,Math.min(30,Number(maxCandidates)||30)));
 }
-export function reconcileWorkEvidence(candidate,proof){
+// Compatibility helper for candidate rendering only. The old implementation
+// promoted a self-asserted 'passed' flag and an arbitrary URL to 'tests_verified'.
+// Model-provided claims are untrusted evidence; independent readback lives in
+// work-receipt-readback.mjs and even that cannot certify completed features.
+export function reconcileWorkEvidence(candidate,_untrustedClaim){
  if(!candidate||typeof candidate.id!=='string')throw TypeError('candidate_required');
- const base={...candidate};
- if(!proof||proof.repository!==candidate.repositorySuggestion||!/^[0-9a-f]{40}$/.test(proof.sha||''))return base;
- if(!Array.isArray(proof.testReceipts)||!proof.testReceipts.length||proof.testReceipts.some(t=>t?.passed!==true||!t?.url))return base;
- if(proof.deployed===true&&(!/^https:\/\//.test(proof.deploymentUrl||'')||proof.liveObserved!==true))return base;
- return {...base,status:proof.deployed===true?'deployed_observed':'tests_verified',repositoryVerified:true,
-  receipt:{repository:proof.repository,sha:proof.sha,tests:proof.testReceipts.map(t=>t.url).slice(0,8),...(proof.deployed===true?{deploymentUrl:proof.deploymentUrl}:{})}};
+ const copy={...candidate,status:'candidate_needs_repository_inspection',
+  repositoryVerified:false};
+ delete copy.receipt;
+ return copy;
 }
 // Invoke only from existing wallet-verified /owner/conversation route. Owner is server-derived.
 export async function auditOwnerConversation(db,owner,body={}){

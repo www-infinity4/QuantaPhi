@@ -22,6 +22,26 @@ Read `candidates` and follow `nextCursor` as `beforeAt` and `beforeId` to scan m
 
 All results stay behind the existing owner authorization. No private history is written to GitHub, shared with an AI provider, or appended to public CI artifacts. The endpoint creates no jobs, authorizations, git commits, PRs, or releases. Assistant prose or a claimed prior completion is not a receipt.
 
+## Source and CI receipt readback
+
+The owner may ask the **already authenticated** Brain conversation endpoint to
+inspect a proposed GitHub commit/workflow receipt without creating a ticket:
+
+```json
+{"mode":"work-audit-source-check","candidateId":"autonomous-building","repository":"www-infinity4/QuantaPhi","commitSha":"<40-character-Git-SHA>","runId":123456}
+```
+
+The server constructs exact GitHub REST paths (no user-supplied arbitrary URL)
+and reads the commit, workflow, and full workflow job page (up to 100 jobs).
+SHA/repository mismatches, incomplete pages, failed or unfinished CI, or GitHub
+read errors all fail closed. A successful check is only
+`commit_and_ci_readback_observed`, **not** proof the change
+implements the owner's request or passed deployment/browser/device acceptance.
+The historical audit's compatibility reconciler deliberately ignores
+self-asserted model `passed` flags and free-form test URLs.
+Private repositories need a separate authorized GitHub reader; unsigned
+public requests never gain owner archive access or repository credentials.
+
 ## Next autonomous stage
 
 1. Continue paging the owner archive; reconcile candidates across all pages and with existing jobs. Retrieve full messages through `sessions-get` when a short excerpt is insufficient. Bubbles already has an explicit in-browser ChatGPT/Gemini history importer into private BubblesMemory; **that is a separate store** and its imported records are not automatically present in the Brain `bubbles_messages` archive. Any bridge must be explicitly owner-authorized, idempotent, source-attributed, and account-isolated.
