@@ -3194,7 +3194,9 @@ window.QuantaBubbles={
     conversation.replaceChildren();
     for(const m of messages)display(m.text,m.role==='user'?'you':'ai');
     greeted=messages.length>0;
-    saveThread();
+    // Queue restored owner-approved messages through the SAME web/APK
+    // conversation outbox. This does not bypass wallet verification.
+    persistChat();
    }
   }
   renderConversationFolders();
