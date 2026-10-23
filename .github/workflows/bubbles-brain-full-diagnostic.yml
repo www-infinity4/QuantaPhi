@@ -21,6 +21,7 @@ on:
       - 'test/bubbles-*.test.*'
       - 'test/brain-*.test.*'
       - 'scripts/brain-*.mjs'
+      - 'test/brain-stage-source-receipt.test.mjs'
       - '.github/workflows/brain-writer.yml'
       - 'scripts/bubbles-live-smoke.mjs'
   push:
@@ -82,6 +83,7 @@ jobs:
             test/brain-deferred-recovery.test.mjs \
             test/brain-cloudflare-token-broker.test.mjs \
             test/brain-clock-stage.test.mjs \
+            test/brain-stage-source-receipt.test.mjs \
             test/brain-clock-binding-parity.test.mjs \
             test/brain-pink-source-review.test.mjs \
             test/brain-writer.test.mjs \
