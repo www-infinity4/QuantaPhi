@@ -96,6 +96,6 @@ test('writer cannot resume an unverified prior SHA as a deployed fix',()=>{
  assert.match(source,/CI, owner merge, live site and Android acceptance remain unverified/);
  assert.match(workflow,/pull-requests: write/);
  assert.match(workflow,/actions: write/);
- assert.match(source,/bubbles-brain-full-diagnostic\\.yml\\/dispatches/);
+ assert.ok(source.includes('bubbles-brain-full-diagnostic.yml/dispatches'));
  assert.doesNotMatch(workflow,/deployments: write/);
 });
