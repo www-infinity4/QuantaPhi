@@ -72,4 +72,7 @@ test('source UI requires explicit consent, live owner token, private synced wall
  assert.match(memory,/item\.role==='user'/);
  assert.match(memory,/item\.scope\|\|'guest'/);
  assert.match(memory,/get profileScope\(\)/);
+ assert.match(client,/mode:'work-audit-sweep',limit:150,pages:4/);
+ assert.match(client,/Review unfinished builds/);
+ assert.match(client,/No repositories were changed and no jobs were approved or dispatched/);
 });
