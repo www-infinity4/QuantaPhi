@@ -3,6 +3,7 @@ import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtR
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
 import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
 import {conversationMemory} from './conversation-memory.mjs';
+import {validateOwnerAuditDraft} from './owner-audit-draft.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
 import {ownerClockCommand,runDueOwnerClock} from './owner-task-clock.mjs';
@@ -1144,10 +1145,16 @@ export async function ownerTickets(env,path,body){
   return {status:200,result:{ok:true,ticket:publicTicket(current),approval:entry,runner_verified:false}};
  }
  if(path==='/work/tickets/create'){
-  const request=typeof body.request==='string'?body.request.trim().slice(0,12000):'';
-  const title=typeof body.title==='string'?body.title.trim().slice(0,180):'';
-  const context=body.context&&typeof body.context==='object'&&!Array.isArray(body.context)?body.context:{};
-  const repository=String(body.repository||context.repositories?.[0]||'www-infinity4/QuantaPhi');
+  // A historical user turn is not permission to execute. Recheck the exact
+  // archived source, owner partition, candidate and repository server-side.
+  if(body.from_work_audit!==true&&(body.context?.auditCandidateId!==undefined||body.context?.sourceMessageIds!==undefined))
+   return denied('audit_provenance_requires_owner_archive_verification',409);
+  const ownerDraft=body.from_work_audit===true?await validateOwnerAuditDraft(db,ownerHash,body):null;
+  if(ownerDraft&&!ownerDraft.ok)return denied(ownerDraft.error,409);
+  const request=ownerDraft?.request??(typeof body.request==='string'?body.request.trim().slice(0,12000):'');
+  const title=ownerDraft?.title??(typeof body.title==='string'?body.title.trim().slice(0,180):'');
+  const context=ownerDraft?.context??(body.context&&typeof body.context==='object'&&!Array.isArray(body.context)?body.context:{});
+  const repository=String(ownerDraft?.repository||body.repository||context.repositories?.[0]||'www-infinity4/QuantaPhi');
   if(!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(repository))return denied('explicit_owner_repository_required');
   context.repositories=[repository];
   const automatic=body.start_immediately===true;

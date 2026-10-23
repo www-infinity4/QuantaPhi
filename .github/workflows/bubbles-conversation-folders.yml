@@ -13,10 +13,13 @@ on:
       - 'workers/infinity-brain-clock/conversation-work-sweep.mjs'
       - 'workers/infinity-brain-clock/work-receipt-readback.mjs'
       - 'workers/infinity-brain-clock/conversation-ticket-reconcile.mjs'
+      - 'workers/infinity-brain-clock/owner-audit-draft.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
       - 'test/bubbles-conversation-work-audit.test.mjs'
       - 'test/bubbles-conversation-work-sweep.test.mjs'
       - 'test/bubbles-work-receipt-readback.test.mjs'
       - 'test/bubbles-conversation-ticket-reconcile.test.mjs'
+      - 'test/bubbles-owner-history-draft.test.mjs'
       - 'workers/bubbles-chat-folders/**'
       - 'test/bubbles-conversation-folders.test.mjs'
       - 'test/bubbles-chat-folder-api.test.mjs'
@@ -42,5 +45,6 @@ jobs:
           node --check workers/infinity-brain-clock/conversation-work-sweep.mjs
           node --check workers/infinity-brain-clock/work-receipt-readback.mjs
           node --check workers/infinity-brain-clock/conversation-ticket-reconcile.mjs
+          node --check workers/infinity-brain-clock/owner-audit-draft.mjs
           node --check workers/bubbles-chat-folders/worker.mjs
-          node --test test/bubbles-conversation-folders.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-chat-folder-api.test.mjs test/bubbles-conversation-work-audit.test.mjs test/bubbles-conversation-work-sweep.test.mjs test/bubbles-brain-history-bridge.test.mjs test/bubbles-work-receipt-readback.test.mjs test/bubbles-conversation-ticket-reconcile.test.mjs
+          node --test test/bubbles-conversation-folders.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-chat-folder-api.test.mjs test/bubbles-conversation-work-audit.test.mjs test/bubbles-conversation-work-sweep.test.mjs test/bubbles-brain-history-bridge.test.mjs test/bubbles-work-receipt-readback.test.mjs test/bubbles-conversation-ticket-reconcile.test.mjs test/bubbles-owner-history-draft.test.mjs

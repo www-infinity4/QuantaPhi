@@ -575,7 +575,55 @@ async function showUnfinishedOwnerWork(){
     '\nExisting ticket reconciliation is not yet available on this Brain deployment.')+
    (body.nextCursor?'\nMore archived conversation pages remain to inspect.':'')+
    '\nNo repositories were changed and no jobs were approved or dispatched.';
-  display(report,'ai');macroInfo.textContent='Read-only owner backlog comparison shown in Bubbles chat.';
+  display(report,'ai');
+  // A historical request can only become an inert DRAFT after a fresh, explicit
+  // owner click; merely opening this list never creates or dispatches work.
+  if(compared&&!body.ticketInventoryTruncated&&ownerReady&&ownerHeaders===headers){
+   const card=create('div','ba-cloudflare-approval');
+   card.append(create('p','ba-muted','Optional: create a review-only DRAFT for an archived request. This does not approve or start coding.'));
+   let offered=0;
+   for(const candidate of candidates){
+    const repo=String(candidate.repositorySuggestion||'');
+    const source=(candidate.evidence||[]).map(x=>x.messageId)
+     .filter(x=>/^[A-Za-z0-9_-]{8,100}$/.test(x)).slice(0,8);
+    const hasLinked=Array.isArray(candidate.linkedTickets)&&candidate.linkedTickets.length>0;
+    if(hasLinked||!source.length||!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(repo)||
+      !/^[a-z][a-z-]{2,48}$/.test(candidate.id||'')||candidate.status!=='candidate_needs_repository_inspection')continue;
+    const button=create('button','ba-control','Draft review: '+String(candidate.title||candidate.id).slice(0,55));
+    button.type='button';button.title='Requires explicit owner confirmation. Target: '+repo;
+    const resultLine=create('p','ba-muted','Suggested repository: '+repo+'. Existing tickets in that repository may be unrelated.');
+    button.addEventListener('click',async()=>{
+     if(button.disabled||!ownerReady||ownerHeaders!==headers)return;
+     if(!window.confirm('Create ONE review-only DRAFT for "'+String(candidate.title||candidate.id).slice(0,90)+
+       '" in '+repo+'? This repository is suggested, NOT independently verified. No model, GitHub action, wallet token or deployment will start.'))return;
+     button.disabled=true;resultLine.textContent='Checking actual archived owner messages before saving a draft…';
+     try{
+      const fresh=await verifiedOwnerHeaders();
+      if(!ownerReady||ownerHeaders!==headers)throw Error('Owner session changed before draft submission.');
+      const response=await bubblesFetch(TICKETS+'/work/tickets/create',{
+       method:'POST',headers:{...fresh,'Content-Type':'application/json'},
+       body:JSON.stringify({from_work_audit:true,start_immediately:false,
+        auditCandidateId:candidate.id,sourceMessageIds:source,repository:repo})
+      },20000);
+      const saved=await response.json().catch(()=>({}));
+      if(!response.ok||saved.ok!==true||!saved.ticket?.id||
+        saved.ticket.repository!==repo||saved.ticket.context?.auditCandidateId!==candidate.id||
+        saved.startRequested===true)throw Error(String(saved.error||'Draft receipt not verified.'));
+      resultLine.textContent='Owner ticket '+saved.ticket.id+' is '+saved.ticket.status+
+       (saved.deduplicated?' (existing ticket, not duplicated).':' (new draft).')+
+       ' No work was dispatched from this control.';
+      button.disabled=true;
+     }catch(error){
+      resultLine.textContent='Draft was not confirmed: '+String(error.message||error).slice(0,135);
+      button.disabled=false;
+     }
+    });
+    card.append(button,resultLine);offered++;
+    if(offered>=5)break;
+   }
+   if(offered){conversation.append(card);if(showing)chatScroll.scrollTop=chatScroll.scrollHeight;}
+  }
+  macroInfo.textContent='Owner backlog shown. Review only; no work automatically submitted.';
  }catch(error){
   macroInfo.textContent='Owner work audit unavailable: '+String(error.message||error).slice(0,135);
  }
