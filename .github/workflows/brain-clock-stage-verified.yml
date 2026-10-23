@@ -7,6 +7,8 @@ on:
       - 'workers/infinity-brain-clock/**'
       - '.github/workflows/brain-clock-stage-verified.yml'
       - 'scripts/verify-brain-stage.mjs'
+      - 'scripts/brain-stage-source-receipt.mjs'
+      - 'test/brain-stage-source-receipt.test.mjs'
   workflow_dispatch:
     inputs:
       operation:
@@ -46,6 +48,8 @@ jobs:
           node --check workers/infinity-brain-clock/source-review.mjs
           node --test test/brain-pink-source-review.test.mjs
           node --check scripts/verify-brain-stage.mjs
+          node --check scripts/brain-stage-source-receipt.mjs
+          node --test test/brain-stage-source-receipt.test.mjs
           node --test test/brain-clock-stage.test.mjs \
             test/brain-clock-binding-parity.test.mjs
           node --test \
@@ -63,14 +67,21 @@ jobs:
           npx --yes wrangler@4 deploy \
             --config workers/infinity-brain-clock/wrangler.toml \
             --dry-run --outdir /tmp/brain-clock-staged-build
+      - name: Record source-only bundle and check safe stage credentials
+        id: stage_gate
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+          BRAIN_REQUESTED_OPERATION: ${{ inputs.operation || 'stage_version' }}
+        run: node scripts/brain-stage-source-receipt.mjs gate
       - name: Verify original live version, binding identities and owner safety
-        if: ${{ github.event_name == 'push' || inputs.operation == 'stage_version' }}
+        if: ${{ steps.stage_gate.outputs.stage_ready == 'true' }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: node scripts/verify-brain-stage.mjs before
       - name: Upload immutable version without deployment (0% traffic)
-        if: ${{ github.event_name == 'push' || inputs.operation == 'stage_version' }}
+        if: ${{ steps.stage_gate.outputs.stage_ready == 'true' }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -79,7 +90,7 @@ jobs:
             --config workers/infinity-brain-clock/wrangler.toml \
             --message "Verified deferred recovery and owner priority, commit $GITHUB_SHA"
       - name: Prove staged version has the same bindings and live traffic is unchanged
-        if: ${{ github.event_name == 'push' || inputs.operation == 'stage_version' }}
+        if: ${{ steps.stage_gate.outputs.stage_ready == 'true' }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -102,6 +113,8 @@ jobs:
             echo '## Robot Brain release gate'
             echo "Operation requested: $OPERATION"
             echo 'This workflow never deploys a Worker or changes traffic percentages.'
+          echo 'A green source-only dry run is NOT a Cloudflare staging or production receipt.'
+          echo 'Inspect the uploaded source bundle fingerprint and status when Cloudflare credentials are unavailable.'
             echo 'It cannot claim live Brain behavior, owner authentication or job execution success.'
             echo 'Before promoting any staged version, independently compare required binding names/types, security controls and a signed owner job receipt.'
           } >> "$GITHUB_STEP_SUMMARY"
