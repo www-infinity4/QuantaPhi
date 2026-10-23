@@ -17,6 +17,8 @@ test('APK recovers history from app-private crash-safe backup rather than depend
  assert.match(webview,/backupRecentHistory\(now\)/);
  assert.match(webview,/trustedChat\(website\)/);
  assert.match(webview,/historyWriter\.execute\(\(\) ->/);
+ assert.match(webview,/historyRecoveryBlocked = !"true"\.equals\(result\)/);
+ assert.match(webview,/else if \(historyRecoveryBlocked\)/);
  assert.doesNotMatch(webview,/addJavascriptInterface/);
  assert.match(site,/restoreNativeHistory:\(backup\)=>/);
  assert.match(site,/nativeHistorySnapshot:\(\)=>/);
