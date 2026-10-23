@@ -8,6 +8,16 @@ const account=process.env.CLOUDFLARE_ACCOUNT_ID;
 const token=process.env.CLOUDFLARE_API_TOKEN;
 const receiptPath='repository-receipts/brain-clock-staged-version.json';
 const statePath='/tmp/brain-clock-version-before.json';
+function sourceReceipt(){
+ const evidence=JSON.parse(readFileSync(receiptPath,'utf8'));
+ if(evidence.stageReady!==true||evidence.stageUploadAttempted!==false||
+  evidence.sourceDryRunVerified!==true||
+  evidence.githubSha!==process.env.GITHUB_SHA||
+  !/^[a-f0-9]{64}$/.test(evidence.sourceBundleSha256||''))
+  throw Error('source_bundle_stage_provenance_missing_or_unverified');
+ return evidence;
+}
+
 const REQUIRED={
  WORK_DB:'d1',CLOCK:'durable_object_namespace',BOT_WALLET:'service',
  MODELS:'service',WRITER_AI:'ai',BOT_WORK_SECRET:'secret_text',
@@ -54,6 +64,7 @@ function compareBindings(a,b){
  }
 }
 if(mode==='before'){
+ sourceReceipt();
  const active=deployment(await api(base+'/deployments'));
  const current=await api(base+'/versions/'+active.versionId);
  const bound=bindings(current);
@@ -62,6 +73,7 @@ if(mode==='before'){
  console.log('Cloudflare baseline saved: single active production version; all required binding types present.');
 }else{
  const prior=JSON.parse(readFileSync(statePath,'utf8'));
+ const source=sourceReceipt();
  const active=deployment(await api(base+'/deployments'));
  if(active.id!==prior.active.id||active.versionId!==prior.active.versionId)
   throw Error('production_worker_traffic_changed_during_stage');
@@ -77,7 +89,8 @@ if(mode==='before'){
  if(!message.includes(String(process.env.GITHUB_SHA||''))||!message.includes('recovery'))
   throw Error('staged_source_commit_provenance_missing');
  mkdirSync('repository-receipts',{recursive:true});
- const receipt={status:'staged_zero_traffic',stagedVersionId:candidateId,
+ const receipt={...source,status:'staged_zero_traffic',stageUploadAttempted:true,
+  stageVersionVerified:true,stagedVersionId:candidateId,
   previousActiveVersionId:prior.active.versionId,
   productionDeploymentId:active.id,productionUnchanged:true,
   allBindingIdentitiesMatched:true,
