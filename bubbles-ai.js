@@ -529,6 +529,35 @@ async function proposeCloudflareWorkerToken(){
   status.textContent=plan.managerConfigured?'Review the Cloudflare scope and approve if you want this token.':'Cloudflare credential manager needs its separate server-side connection.';
  }catch(error){status.textContent='Cloudflare token planning unavailable: '+String(error.message||error).slice(0,160);}
 }
+// The report is evidence discovery only. Candidate topics may be out of date;
+// every repository still needs actual source/CI/deployment comparison.
+async function showUnfinishedOwnerWork(){
+ if(embedded||!ownerReady||!ownerHeaders){
+  macroInfo.textContent='Connect the verified owner wallet to read Robot Brain work history.';
+  return;
+ }
+ const headers=ownerHeaders;
+ try{
+  const res=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',
+   headers:{...headers,'Content-Type':'application/json'},
+   body:JSON.stringify({mode:'work-audit-sweep',limit:150,pages:4})
+  },20000);
+  const body=await res.json().catch(()=>({}));
+  if(!res.ok||body.ok!==true||body.mode!=='work-audit-sweep')throw Error(String(body.error||'Audit is not deployed yet.'));
+  if(!ownerReady||ownerHeaders!==headers)throw Error('Owner session changed during audit.');
+  const candidates=Array.isArray(body.candidates)?body.candidates.slice(0,10):[];
+  const lines=candidates.map((x,i)=>(i+1)+'. '+String(x.title||x.id||'Unnamed request').slice(0,90)+
+    ' — '+Number(x.mentions||0)+' messages; source check needed');
+  const report='Robot Brain saved-work audit (read-only)\n'+
+   'Scanned '+Number(body.messagesScanned||0)+' owner turns across '+Number(body.pagesScanned||0)+' pages.\n'+
+   (lines.length?lines.join('\n'):'No matching archived user requests were found in these pages.')+
+   (body.nextCursor?'\nMore archived pages remain to inspect.':'')+
+   '\nNo repositories were changed and no jobs were approved or dispatched.';
+  display(report,'ai');macroInfo.textContent='Read-only owner backlog report shown in the main Bubbles chat.';
+ }catch(error){
+  macroInfo.textContent='Owner work audit unavailable: '+String(error.message||error).slice(0,135);
+ }
+}
 // Owner explicitly approves a private, resumable copy of already imported
 // ChatGPT/Gemini user turns into the existing Robot Brain archive. Never
 // auto-send a ZIP or interpret an old message as execution authorization.
@@ -593,6 +622,7 @@ const macroButtons=[
  ['SIM and network','Inspect connection from Android, without claiming carrier control',()=>void sendMessage('check my SIM')],
  ['Robot Brain tools','Check verified owner work tools',()=>void sendMessage('check robot brain tools')],
  ['Index older chats in Brain','Owner-approved, resumable private transfer of imported user messages; does not authorize builds',()=>void indexImportedOwnerHistory()],
+ ['Review unfinished builds','Show ten source-linked work candidates from authenticated Brain, without dispatching anything',()=>void showUnfinishedOwnerWork()],
  ['Stop history transfer','Cancel any further private-history batches without deleting already archived turns',()=>{ownerHistoryTransferCancelled=true;macroInfo.textContent='Stopping owner history transfer after the current acknowledged batch.'}],
  ['MCP LLM tools','List Bubbles connected read-only MCP tools',()=>void sendMessage('Show the MCP tools connected to Bubbles')],
  ['Check GitHub executor','Read the real authenticated GitHub capability or missing-credential error',()=>void sendMessage('check GitHub access')],
