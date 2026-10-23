@@ -23,7 +23,8 @@ export async function publishReviewed({repository,base,commitSha,jobId,runId,pus
  });
  if(!pr?.html_url||!/^https:\/\/github\.com\/www-infinity4\/QuantaPhi\/pull\/[1-9][0-9]*$/.test(pr.html_url)||
   pr.head?.sha!==commitSha||pr.head?.ref!==branch||
-  pr.base?.ref!=='main'||pr.draft!==true||!Number.isSafeInteger(pr.number))
+  pr.base?.ref!=='main'||pr.draft!==true||!Number.isSafeInteger(pr.number)||
+  pr.number<1||Number(pr.html_url.split('/').at(-1))!==pr.number)
   throw Error('reviewed_draft_pr_receipt_mismatch');
  return {status:'committed_unverified',commitSha,publishedToDefault:false,
   draft:true,ciVerified:false,deploymentVerified:false,ownerMergeApproved:false,
