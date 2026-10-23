@@ -3,10 +3,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
 test('all first party Bubbles entrypoints load one fresh Octaves chat stylesheet',()=>{
+ const revision=fs.readFileSync('bubbles.html','utf8').match(/\/bubbles-ai\.js\?v=([0-9A-Za-z_-]+)/)?.[1];
+ assert.ok(revision,'Bubbles script must have a revision');
  for(const p of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const html=fs.readFileSync(p,'utf8');
   assert.match(html,/bubbles-octaves-chat\.css\?v=20261020-octaves-chat3/);
-  assert.match(html,/bubbles-ai\.js\?v=20261022-observed-card1/);
+  assert.match(html,new RegExp('bubbles-ai\\.js\\?v='+revision));
  }
 });
 test('Android chat scroll and composer remain distinct, readable surfaces',()=>{

@@ -69,6 +69,7 @@ jobs:
             test/bubbles-owner-immediate-dispatch.test.cjs \
             test/bubbles-bulk-approval.test.cjs \
             test/bubbles-owner-approval.test.cjs \
+            test/bubbles-fresh-chat-opening.test.mjs \
             test/bubbles-repository-targets.test.mjs \
             test/bubbles-smart-repository-routing.test.mjs \
             test/bubbles-technical-handoff.test.mjs \

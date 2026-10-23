@@ -24,6 +24,8 @@ on:
       - 'test/bubbles-conversation-folders.test.mjs'
       - 'test/bubbles-chat-folder-api.test.mjs'
       - 'test/bubbles-conversation-memory.test.mjs'
+      - 'test/bubbles-fresh-chat-opening.test.mjs'
+      - 'android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/FloatingOracleWindow.java'
       - '.github/workflows/bubbles-conversation-folders.yml'
 permissions:
   contents: read
@@ -47,4 +49,4 @@ jobs:
           node --check workers/infinity-brain-clock/conversation-ticket-reconcile.mjs
           node --check workers/infinity-brain-clock/owner-audit-draft.mjs
           node --check workers/bubbles-chat-folders/worker.mjs
-          node --test test/bubbles-conversation-folders.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-chat-folder-api.test.mjs test/bubbles-conversation-work-audit.test.mjs test/bubbles-conversation-work-sweep.test.mjs test/bubbles-brain-history-bridge.test.mjs test/bubbles-work-receipt-readback.test.mjs test/bubbles-conversation-ticket-reconcile.test.mjs test/bubbles-owner-history-draft.test.mjs
+          node --test test/bubbles-conversation-folders.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-chat-folder-api.test.mjs test/bubbles-conversation-work-audit.test.mjs test/bubbles-conversation-work-sweep.test.mjs test/bubbles-brain-history-bridge.test.mjs test/bubbles-work-receipt-readback.test.mjs test/bubbles-conversation-ticket-reconcile.test.mjs test/bubbles-owner-history-draft.test.mjs test/bubbles-fresh-chat-opening.test.mjs

@@ -272,7 +272,9 @@ const THREAD_INDEX='quantaphi:bubbles:threads:v2'+(bubbleId?':'+bubbleId:'');
 const THREAD_PREFIX=THREAD_INDEX+':';
 const TAB_THREAD=THREAD_INDEX+':tab';
 const EXPLICIT_THREAD=TAB_THREAD+':explicit';
-// An ID for a single default website/APK conversation, not an auth credential.
+const UPDATE_RELOAD_THREAD=TAB_THREAD+':site-update-reload';
+// Kept solely to preserve old website/APK conversations in History. Never the
+// default for a newly opened chat.
 const SHARED_MAIN_THREAD='bubbles_shared_main_v1';
 let threadIndex=data(THREAD_INDEX,[]);
 if(!Array.isArray(threadIndex))threadIndex=[];
@@ -283,15 +285,28 @@ if(keepChat&&legacy?.length&&!data(THREAD_INDEX+':migrated',false)){
   save(THREAD_INDEX,threadIndex);save(THREAD_INDEX+':migrated',true);
  }
 }
-let lastTab='';try{lastTab=sessionStorage.getItem(TAB_THREAD)||''}catch{}
-const reloaded=typeof performance!=='undefined'&&performance.getEntriesByType?.('navigation')?.[0]?.type==='reload';
-let explicitlySelected=false;
-try{explicitlySelected=sessionStorage.getItem(EXPLICIT_THREAD)==='1'}catch{}
-let activeThread=explicitlySelected&&threadIndex.some(t=>t.id===lastTab)?lastTab:
- embedded?'chat_'+crypto.randomUUID().replaceAll('-',''):SHARED_MAIN_THREAD;
-try{sessionStorage.setItem(TAB_THREAD,activeThread)}catch{}
+// A new page/app opening is a new conversation. sessionStorage survives
+// WebView restarts, so it MUST NOT silently reopen a previously selected chat.
+// Only a site-revision reload initiated by our own updater may resume a thread.
+let lastTab='',resumeSiteUpdate=false;
+try{
+ lastTab=sessionStorage.getItem(TAB_THREAD)||'';
+ resumeSiteUpdate=sessionStorage.getItem(UPDATE_RELOAD_THREAD)==='1';
+ sessionStorage.removeItem(UPDATE_RELOAD_THREAD);
+}catch{}
+const freshThreadId=()=> 'chat_'+crypto.randomUUID().replaceAll('-','');
+let activeThread=resumeSiteUpdate&&threadIndex.some(t=>t.id===lastTab)?lastTab:freshThreadId();
+try{
+ sessionStorage.setItem(TAB_THREAD,activeThread);
+ sessionStorage.setItem(EXPLICIT_THREAD,'0');
+}catch{}
+// Keep the old shared-main transcript discoverable after upgrading the site.
+if(keepChat&&!threadIndex.some(t=>t.id===SHARED_MAIN_THREAD)&&
+ Array.isArray(data(THREAD_PREFIX+SHARED_MAIN_THREAD,null))&&
+ data(THREAD_PREFIX+SHARED_MAIN_THREAD,[]).length)
+ threadIndex.push({id:SHARED_MAIN_THREAD,title:'Earlier Bubbles shared chat',updated:Date.now()});
 if(!threadIndex.some(t=>t.id===activeThread)){
- threadIndex.unshift({id:activeThread,title:activeThread===SHARED_MAIN_THREAD?'Bubbles shared chat':'New conversation',updated:Date.now()});
+ threadIndex.unshift({id:activeThread,title:'New conversation',updated:Date.now()});
  save(THREAD_INDEX,threadIndex);
 }
 const readThread=id=>(data(THREAD_PREFIX+id,[])||[]).filter(m=>m&&['user','assistant'].includes(m.role)&&typeof m.text==='string').slice(-400);
@@ -1593,21 +1608,32 @@ async function openConversation(id){
  chatsPanel.open=false;renderConversationFolders();
  input.focus();
 }
-async function startConversation(){
- if(busy){chatsMessage.textContent='Finish the current reply first.';return;}
- if(keepChat)saveThread();
- activeThread='chat_'+crypto.randomUUID().replaceAll('-','');
+async function startConversation({automatic=false}={}){
+ if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length){
+  chatsMessage.textContent='Current reply or voice request must finish before starting a fresh chat.';
+  return false;
+ }
+ if(keepChat&&messages.length)saveThread();
+ // A closed, unused empty chat should not grow the History list every time
+ // the floating bubble is opened and collapsed.
+ if(!messages.length&&threadIndex.find(t=>t.id===activeThread)?.title==='New conversation'&&
+   !readThread(activeThread).length)
+  threadIndex=threadIndex.filter(t=>t.id!==activeThread);
+ activeThread=freshThreadId();
  try{
   sessionStorage.setItem(TAB_THREAD,activeThread);
   sessionStorage.setItem(EXPLICIT_THREAD,'1');
  }catch{}
  threadIndex.unshift({id:activeThread,title:'New conversation',updated:Date.now()});
  save(THREAD_INDEX,threadIndex);
- messages=[];memoryContext=[];greeted=false;activeCardEvidence=null;
+ messages=[];memoryContext=[];memoryInstructions=[];greeted=false;activeCardEvidence=null;
  cardWorkspaceInstance?.close();cardWorkspaceInstance=null;conversation.replaceChildren();
- if(ownerReady)void conversationApi('sessions-create',activeThread,{title:'New conversation'}).catch(()=>{});
- renderConversationFolders();chatsPanel.open=false;status.textContent='New conversation ready. Your earlier chats are saved.';
- input.focus();
+ input.value=''; // Prevent a previous chat's unfinished composer text from appearing as a new turn.
+ if(!automatic&&ownerReady)void conversationApi('sessions-create',activeThread,{title:'New conversation'}).catch(()=>{});
+ renderConversationFolders();chatsPanel.open=false;
+ status.textContent='Fresh chat ready. Earlier conversations are available in Chats / History.';
+ if(!nativeOverlay)input.focus();
+ return true;
 }
 newConversation.addEventListener('click',()=>void startConversation());
 reloadConversations.addEventListener('click',()=>void refreshConversationFolders());
@@ -1773,8 +1799,13 @@ cloudDelete.addEventListener('click',async()=>{
   save(CLOUD_MEMORY_KEY,false);memoryHint.textContent='Optional wallet-scoped transcript erased. Owner Brain archive is unchanged.'}
  catch(error){memoryHint.textContent='Could not erase wallet archive: '+String(error.message||error)}
 });
+let panelWasOpened=false;
 function toggle(open){
- showing=Boolean(open);panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
+ const reopening=Boolean(open)&&!showing&&panelWasOpened;
+ if(reopening&&!nativeOverlay)void startConversation({automatic:true});
+ showing=Boolean(open);
+ if(showing)panelWasOpened=true;
+ panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
  if(embedded)window.parent.postMessage({type:'quantaphi:bubbles:size',open:showing},'*');
  if(showing){
   if(chatGate)void checkPanelGate();
@@ -3304,6 +3335,8 @@ async function checkForSiteUpdate(){
   if(!remote||!siteRevision||remote===siteRevision)return false;
   if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
   if(keepChat)saveThread();
+  // Only this trusted update path may keep the active thread on reload.
+  try{sessionStorage.setItem(UPDATE_RELOAD_THREAD,'1')}catch{}
   location.reload();
   return true;
  }catch{return false}
@@ -3312,6 +3345,14 @@ async function checkForSiteUpdate(){
 window.QuantaBubbles={
  siteRevision,
  sharedMainThread:SHARED_MAIN_THREAD,
+ // The native X hides the outer Android window, not this inner WebView.
+ // Begin another visually empty chat only after a real owner reopening.
+ startFreshOnReopen:()=>{
+  if(!nativeOverlay)return false;
+  if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length)return false;
+  void startConversation({automatic:true});
+  return true;
+ },
  // The native Android foreground service pulls this bounded snapshot from
  // the trusted first-party page. This is crash recovery, not a second chat
  // runtime or permission to move private history into a public repository.

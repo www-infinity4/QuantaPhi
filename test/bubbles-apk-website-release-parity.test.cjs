@@ -10,31 +10,39 @@ const native=read('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbl
 const doc=read('bubbles.html');
 const revision=doc.match(/<script\b[^>]*\bsrc=["']\/bubbles-ai\.js\?v=([^"'&]+)[^"']*["']/i)?.[1];
 
-function defaultThread({embedded=false,explicit=false,lastTab=''}={}){
- const begin=site.indexOf('let explicitlySelected=false;');
- const end=site.indexOf('try{sessionStorage.setItem(TAB_THREAD,activeThread)}',begin);
+let sessionSerial=0;
+function openingThread({lastTab='',siteUpdate=false}={}){
+ const begin=site.indexOf("let lastTab='',resumeSiteUpdate=false;");
+ const end=site.indexOf("try{\n sessionStorage.setItem(TAB_THREAD,activeThread)",begin);
  assert.ok(begin>0&&end>begin);
+ const store=new Map([[ 'tab',lastTab],['tab:site-update-reload',siteUpdate?'1':'0']]);
  const scope=vm.createContext({
-  sessionStorage:{getItem:key=>key==='explicit'?explicit?'1':'0':null},
-  EXPLICIT_THREAD:'explicit',lastTab,embedded,
+  sessionStorage:{getItem:key=>store.get(key)||null,removeItem:key=>store.delete(key)},
+  TAB_THREAD:'tab',UPDATE_RELOAD_THREAD:'tab:site-update-reload',
   threadIndex:lastTab?[{id:lastTab}]:[],
-  SHARED_MAIN_THREAD:'bubbles_shared_main_v1',
-  crypto:{randomUUID:()=> 'abcd-1234'},
+  crypto:{randomUUID:()=>String(++sessionSerial).padStart(32,'0')}
  });
  vm.runInContext(site.slice(begin,end),scope);
- return vm.runInContext('activeThread',scope);
+ return {id:vm.runInContext('activeThread',scope),markerCleared:!store.has('tab:site-update-reload')};
 }
 
-test('website and native APK share one default owner-verified conversation',()=>{
- assert.equal(defaultThread(), 'bubbles_shared_main_v1');
- assert.equal(defaultThread(),defaultThread({embedded:false,lastTab:'old-local-thread'}));
- assert.notEqual(defaultThread({embedded:true}),defaultThread());
- assert.equal(defaultThread({explicit:true,lastTab:'chat_existing_123'}),'chat_existing_123');
+test('website and APK share the same Brain, but each opening starts its own fresh chat',()=>{
+ const first=openingThread();
+ const next=openingThread({lastTab:first.id});
+ assert.match(first.id,/^chat_[0-9a-f]{32}$/);
+ assert.notEqual(first.id,next.id);
+ assert.notEqual(first.id,'bubbles_shared_main_v1');
+ assert.notEqual(openingThread({lastTab:'chat_existing_123'}).id,'chat_existing_123');
+ const refreshed=openingThread({lastTab:first.id,siteUpdate:true});
+ assert.equal(refreshed.id,first.id,'only an internal site update may preserve the active thread');
+ assert.equal(refreshed.markerCleared,true);
  assert.match(site,/sessionId:activeThread/);
  assert.match(site,/m\.sessionId===activeThread/);
  assert.match(site,/ownerReady/);
  assert.match(site,/syncCloudFolder\(activeThread/);
+ assert.match(site,/restoreNativeHistory:\(backup\)=>\{/);
 });
+
 test('native speech and typed messages use the very same QuantaPhi assistant',()=>{
  assert.match(native,/SITE_URL = "https:\/\/quantaphi\.org\/bubbles\.html\?nativeOverlay=1"/);
  assert.match(native,/window\.QuantaBubbles\.sendNativeSpeech/);

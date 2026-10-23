@@ -10,6 +10,7 @@ on:
       - 'fred-spaces-radio.js'
       - 'following-spaces-radio.js'
       - 'scripts/bubbles-media-star-browser-smoke.mjs'
+      - 'scripts/bubbles-fresh-chat-browser-smoke.mjs'
       - '.github/workflows/bubbles-media-star-browser.yml'
   push:
     branches: [main]
@@ -22,6 +23,7 @@ on:
       - 'fred-spaces-radio.js'
       - 'following-spaces-radio.js'
       - 'scripts/bubbles-media-star-browser-smoke.mjs'
+      - 'scripts/bubbles-fresh-chat-browser-smoke.mjs'
       - '.github/workflows/bubbles-media-star-browser.yml'
   workflow_dispatch:
 permissions:
@@ -43,6 +45,7 @@ jobs:
           node --check bubbles-card-catalog.mjs
           node --check bubbles-card-host.mjs
           node --check scripts/bubbles-media-star-browser-smoke.mjs
+          node --check scripts/bubbles-fresh-chat-browser-smoke.mjs
           node --test test/bubbles-card-workspace.test.mjs
       - name: Install isolated Chromium test dependency
         run: |
@@ -57,6 +60,7 @@ jobs:
             sleep 1
           done
           node scripts/bubbles-media-star-browser-smoke.mjs
+          node scripts/bubbles-fresh-chat-browser-smoke.mjs
           node --test test/bubbles-action-driver.test.mjs
           node scripts/bubbles-components-browser.mjs
       - name: Keep truthful card browser receipts
@@ -66,6 +70,7 @@ jobs:
           name: bubbles-media-star-browser-evidence
           path: |
             test-results/bubbles-media-star-browser.json
+            test-results/bubbles-fresh-chat-browser.json
             test-results/bubbles-components.json
             test-results/bubbles-component-tap.png
             /tmp/bubbles-media-star-chat-failure.png
