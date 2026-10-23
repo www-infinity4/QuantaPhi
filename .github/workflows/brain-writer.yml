@@ -9,6 +9,7 @@ on:
 permissions:
   contents: write
   pull-requests: write # Draft only; owner review and target CI remain separate gates.
+  actions: write # Only dispatch fixed read-only CI; never merge or deploy.
   id-token: write
 concurrency:
   group: infinity-brain-quantaphi-writer
