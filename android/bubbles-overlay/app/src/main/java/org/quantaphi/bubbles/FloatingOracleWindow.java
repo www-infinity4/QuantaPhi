@@ -65,6 +65,7 @@ final class FloatingOracleWindow {
     private final NativeChatJournal historyJournal;
     private final java.util.concurrent.ExecutorService historyWriter = java.util.concurrent.Executors.newSingleThreadExecutor();
     private boolean historyRestored = false, historyPollRunning = false;
+    private boolean historyRecoveryBlocked = false;
     private long lastHistoryPollAt = 0L;
     private String lastHistorySnapshot = "";
     private long lastSiteRevisionCheckAt = 0L;
@@ -425,6 +426,7 @@ final class FloatingOracleWindow {
                     if (liveBack != null) { liveBack.setText("Live"); liveBack.setContentDescription("Open GPT-Live owner setup"); }
                     loadGeneration++;
                     historyRestored = false;
+                    historyRecoveryBlocked = false;
                     historyPollRunning = false;
                     lastHistorySnapshot = "";
                     dispatchInFlight = false;
@@ -628,6 +630,7 @@ final class FloatingOracleWindow {
      * recovery copy. No WebView JavascriptInterface or arbitrary iframe access. */
     private void restoreRecentHistory() {
         historyRestored = false;
+        historyRecoveryBlocked = false;
         if (!trustedChat(website)) return;
         final WebView view = website;
         final int generation = loadGeneration;
@@ -637,7 +640,8 @@ final class FloatingOracleWindow {
                 + JSONObject.quote(old) + "))", result -> {
             if (generation != loadGeneration || !trustedChat(view)) return;
             historyRestored = true;
-            if (!"true".equals(result)) {
+            historyRecoveryBlocked = !"true".equals(result);
+            if (historyRecoveryBlocked) {
                 // Never overwrite a still-readable local backup after a web
                 // interface revision or transient DOM-storage error.
                 BrainNotes.prefs(service).edit().putString("history_recovery_state",
@@ -665,7 +669,12 @@ final class FloatingOracleWindow {
                     String snapshot = (String)value;
                     if ("history-disabled".equals(snapshot)) {
                         lastHistorySnapshot = "";
+                        historyRecoveryBlocked = false;
                         historyWriter.execute(historyJournal::clear);
+                    } else if (historyRecoveryBlocked) {
+                        // Never replace the last good backup with an empty
+                        // or incomplete page after restoration has failed.
+                        return;
                     } else if (!snapshot.equals(lastHistorySnapshot)
                             && NativeChatJournal.valid(snapshot)) {
                         lastHistorySnapshot = snapshot;
