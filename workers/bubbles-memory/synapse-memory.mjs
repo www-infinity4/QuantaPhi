@@ -100,8 +100,17 @@ function retrieveMatch(word,textTerms,repoTerms,topicTerms){
 }
 export function recallSynapses(nodes,query='',limit=8){
  const cap=Math.max(1,Math.min(20,Number(limit)||8));
- const words=tokenize(query).filter(w=>!STOPWORDS.has(w)).slice(0,16);
  const ownerRows=Array.isArray(nodes)?nodes:[];
+ const originalWords=tokenize(query).filter(w=>!STOPWORDS.has(w)).slice(0,16);
+ // Saved owner definitions expand retrieval, never action authorization.
+ const definitions=new Map();
+ for(const note of [...ownerRows].sort((a,b)=>(a.at||0)-(b.at||0))){
+  if(note.source!=='owner_note')continue;
+  const match=/^when I say ["“]?([a-z][a-z0-9-]{2,29})["”]?,? I mean\s+(.{3,160})[.!]?$/i.exec(String(note.text||'').trim());
+  if(match)definitions.set(match[1].toLowerCase(),{sourceId:note.id,meaning:match[2]});
+ }
+ const aliasReferences=originalWords.filter(word=>definitions.has(word)).map(term=>({term,...definitions.get(term)}));
+ const words=[...new Set([...originalWords,...aliasReferences.flatMap(ref=>tokenize(ref.meaning).filter(w=>!STOPWORDS.has(w)))])].slice(0,24);
  const scored=ownerRows.map(n=>{
   const textTerms=new Set(tokenize(n.text));
   const repoTerms=new Set(tokenize(n.repository));
@@ -113,7 +122,7 @@ export function recallSynapses(nodes,query='',limit=8){
    if(match){score+=match.strength;matchedBy.push(match.kind);matchedTerms.push(word)}
   }
   if(!words.length)score=1; // Empty/stop-word-only search returns recent notes.
-  return {...n,score,matchedBy:[...new Set(matchedBy)],matchedTerms,
+  return {...n,score,aliasReferences,matchedBy:[...new Set(matchedBy)],matchedTerms,
    relatedTo:Array.isArray(n.relatedTo)?n.relatedTo:[]};
  }).filter(n=>n.score>0).sort((a,b)=>b.score-a.score||b.at-a.at).slice(0,cap);
  // Only rows previously fetched using an authenticated owner filter may resolve
