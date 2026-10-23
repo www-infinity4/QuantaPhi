@@ -95,3 +95,12 @@ test('the authenticated owner API exposes comparison without a new work dispatch
  assert.match(t,/WHERE owner_hash=\?/);
  assert.doesNotMatch(t,/\.run\(|\.put\(|\.fetch\(/);
 });
+
+test('Bubbles presents same-repo work as unverified and handles older Brain releases',()=>{
+ const s=readFileSync('bubbles-ai.js','utf8');
+ assert.match(s,/requestAudit\('work-audit-reconcile'\)/);
+ assert.match(s,/requestAudit\('work-audit-sweep'\)/);
+ assert.match(s,/res\.status===500&&body\?\.error==='conversation_sync_failed'/);
+ assert.match(s,/same-repository ticket\(s\) \(not necessarily related\)/);
+ assert.match(s,/No repositories were changed and no jobs were approved or dispatched/);
+});
