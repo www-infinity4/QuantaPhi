@@ -1,3 +1,4 @@
+import {planCard,refreshCard} from './intelligent-cards.mjs';
 import {browserTool} from './browser.mjs';
 import {researchArticle} from './research.mjs';
 import {handleMcp,mcpTools,selectMcpTool} from './mcp.mjs';
@@ -44,6 +45,7 @@ export function validateSpeechAudio(audio) {
   bytes.length<8044||bytes.length>384044||(bytes.length-44)%2)throw Error('invalid_audio');
  return bytes;
 }
+const cardWindows=new Map();
 const speechWindows=new Map();
 async function transcribe(request,env) {
  if(!env.AI)return response(request,{ok:false,error:'speech_service_unavailable'},503);
@@ -731,8 +733,27 @@ export default {async fetch(request,env){
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
  if(url.pathname==='/mcp')return handleMcp(request,env,command=>runMcpRead(request,env,command));
  if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261022-read-agent-v2-github-raw-fallback',tools:{githubRawReadFallback:'public-main-403-429-only',readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
+ // Exported cards use this public read-only route from their own HTTPS hosts.
+ // Credentials and owner adapters are never accepted or forwarded here.
+ if(url.pathname==='/v1/cards/refresh'&&['POST','OPTIONS'].includes(request.method)){
+  const reply=(data,status=200)=>new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json','Access-Control-Allow-Origin':'*','Access-Control-Allow-Headers':'Content-Type','Access-Control-Allow-Methods':'POST,OPTIONS','Cache-Control':'no-store'}});
+  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':'*','Access-Control-Allow-Headers':'Content-Type','Access-Control-Allow-Methods':'POST,OPTIONS'}});
+  try{const raw=await request.text();if(raw.length>12000)return reply({ok:false,error:'card_request_too_large'},413);return reply(await refreshCard(JSON.parse(raw),env));}
+  catch(error){return reply({ok:false,error:String(error.message||'card_refresh_failed').slice(0,140)},502);}
+ }
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
+ if(request.method==='POST'&&url.pathname==='/v1/cards/plan'){
+  const ip=request.headers.get('CF-Connecting-IP')||'unknown',now=Date.now();
+  let window=cardWindows.get(ip);if(!window||now-window.at>60000){window={at:now,count:0};cardWindows.set(ip,window)}
+  if(cardWindows.size>1024)cardWindows.delete(cardWindows.keys().next().value);
+  if(++window.count>10)return response(request,{ok:false,error:'card_plan_rate_limited'},429);
+  try{
+   const raw=await request.text();if(raw.length>12000)return response(request,{ok:false,error:'card_request_too_large'},413);
+   const body=JSON.parse(raw);
+   return response(request,await planCard(body,env));
+  }catch(error){return response(request,{ok:false,error:String(error.message||'card_request_failed').slice(0,140)},502);}
+ }
  if(request.method==='POST'&&url.pathname==='/v1/intent'){
   if(!env.AI)return response(request,{ok:false,error:'semantic_model_unavailable'},503);
   try{
