@@ -1,0 +1,23 @@
+name: Cloudflare site traffic checks
+on:
+  pull_request:
+    paths:
+      - 'workers/quantaphi-site/traffic-api.mjs'
+      - 'workers/quantaphi-site/worker.js'
+      - 'site-traffic.js'
+      - 'index.html'
+      - 'test/cloudflare-site-traffic.test.mjs'
+      - '.github/workflows/cloudflare-site-traffic-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  traffic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate Cloudflare counter without API credentials
+        run: node --test test/cloudflare-site-traffic.test.mjs
