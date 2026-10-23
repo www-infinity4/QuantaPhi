@@ -58,6 +58,8 @@ jobs:
           node --check bubbles-ai.js
           node --check bubbles-brain-actions.js
           node --check robot-brain-owner.js
+          node --check scripts/brain-writer.mjs
+          node --check scripts/brain-publish.mjs
           node --test \
             test/bubbles-brain-bridge.test.cjs \
             test/bubbles-brain-actions.test.cjs \
