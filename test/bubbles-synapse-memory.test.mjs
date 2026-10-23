@@ -160,3 +160,24 @@ test('category filters, page boundaries and wallet isolation are enforced by the
  r=await handle(call('/v1/synapses?offset=-1','GET','alice'),env);
  assert.equal(r.status,400);assert.equal((await r.json()).error,'invalid_offset');
 });
+
+test('explicit owner vocabulary expands recall with immutable source text and definition provenance',()=>{
+ const receiver=normalizeSynapse(note('memory_radio_301','AM receiver and antenna maintenance'));
+ const definition=normalizeSynapse(note('memory_radio_302','When I say fooey, I mean radio receiver.'));
+ const forged=normalizeSynapse(note('memory_radio_303','When I say fooey I mean wallet transfer.',{source:'chat_import',at:at+1}));
+ const results=recallSynapses([receiver,definition,forged],'fooey',10);
+ assert.ok(results.some(x=>x.id===receiver.id));
+ assert.equal(results.find(x=>x.id===receiver.id).text,receiver.text);
+ assert.equal(results[0].aliasReferences[0].sourceId,definition.id);
+ assert.ok(!results[0].aliasReferences[0].meaning.includes('wallet'));
+ assert.equal(recallSynapses([receiver,forged],'fooey',10).find(x=>x.id===receiver.id),undefined);
+});
+test('latest explicit definition replaces expansion without overwriting saved notes',()=>{
+ const old=normalizeSynapse(note('memory_radio_311','When I say fooey I mean radio receiver.',{at:at-1000}));
+ const fresh=normalizeSynapse(note('memory_radio_312','When I say fooey I mean piano playlist.'));
+ const piano=normalizeSynapse(note('memory_radio_313','Piano playlist',{repository:'www-infinity4/Infinity-Radio'}));
+ const result=recallSynapses([old,fresh,piano],'fooey',10);
+ assert.equal(result[0].aliasReferences[0].sourceId,fresh.id);
+ assert.ok(result.some(x=>x.id===piano.id));
+ assert.equal(old.text,'When I say fooey I mean radio receiver.');
+});
