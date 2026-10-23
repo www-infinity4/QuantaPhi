@@ -135,7 +135,7 @@ test('spoken record without qualifier selects screen + microphone, sound-only re
 test('native WebView gets live capture-service evidence rather than trusting old Saving text',()=>{
  const service=source('ScreenCaptureService.java'),overlay=source('FloatingOracleWindow.java');
  assert.match(service,/static volatile boolean running/);
- assert.match(service,/public void onCreate\(\).*running = true/);
+ assert.match(service,/public void onCreate\(\)[\s\S]*?running = true/);
  assert.match(service,/public void onDestroy\(\)[\s\S]*?running = false/);
  assert.match(overlay,/screenCaptureServiceRunning/);
  assert.match(overlay,/ScreenCaptureService\.isRunning\(\)/);
