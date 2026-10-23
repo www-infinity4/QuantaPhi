@@ -32,7 +32,8 @@ export function auditWorkHistory(messages,{maxCandidates=30}={}){
   for(const [id,title,repo,re] of topics.filter(v=>v[3].test(t)).slice(0,5)){
    let task=found.get(id);
    if(!task){task={id,title,repositorySuggestion:'www-infinity4/'+repo,repositoryVerified:false,status:'candidate_needs_repository_inspection',kind:kind(t),evidence:[],constraints:[],
-    nextChecks:['read target repository and relevant issues/PRs','compare exact source against request','run appropriate tests','verify deployment and observable behavior']};found.set(id,task)}
+    nextChecks:['read target repository and relevant issues/PRs','compare exact source against request','run appropriate tests','verify deployment and observable behavior'],mentions:0};found.set(id,task)}
+   task.mentions++;
    if(task.evidence.length<12&&!task.evidence.some(e=>e.messageId===message.id))task.evidence.push({messageId:message.id,at:Number.isSafeInteger(message.at)?message.at:null,excerpt:brief(t,320)});
    if(CONSTRAINT.test(t)&&task.constraints.length<8){const c=brief(t,220);if(!task.constraints.includes(c))task.constraints.push(c)}
    if(kind(t)==='repair')task.kind='repair';

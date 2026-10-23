@@ -10,6 +10,14 @@ Use the wallet-verified Robot Brain `/owner/conversation` operation, shared by t
 {"mode":"work-audit","limit":100}
 ```
 
+For a longer history, the same verified owner can use the **read-only multipage operation**:
+
+```json
+{"mode":"work-audit-sweep","limit":150,"pages":4}
+```
+
+A sweep scans at most **four owner-partitioned pages**, each at most 250 user turns (up to 1,000 total), and groups repeated requests across those pages. `mentions` counts matched owner turns even when `evidence` is capped at 12 short newest source excerpts. `messagesScanned` and `pagesScanned` report the actual scan. Follow `nextCursor` with another sweep when necessary; candidate groups from sequential sweeps can be reconciled using `combineAuditCandidates`, while preserving the newest twelve excerpt IDs and not resubmitting jobs. A sweep **does not** import private ChatGPT/Gemini files or perform actions. Each response remains behind the existing authenticated wallet owner boundary.
+
 Read `candidates` and follow `nextCursor` as `beforeAt` and `beforeId` to scan more messages. The backend selects only archived `role='user'` messages in the **server-derived owner** partition with D1 keyset pagination (maximum 250 rows/page). It groups requests by known topics, retains message IDs, date and bounded excerpts, and preserves negative instructions as constraints. Candidate repository names are **suggestions**, not verified routing, and the classifier can miss novel topics or nuanced contexts.
 
 All results stay behind the existing owner authorization. No private history is written to GitHub, shared with an AI provider, or appended to public CI artifacts. The endpoint creates no jobs, authorizations, git commits, PRs, or releases. Assistant prose or a claimed prior completion is not a receipt.
