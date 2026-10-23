@@ -61,6 +61,7 @@ jobs:
           node --check robot-brain-owner.js
           node --check scripts/brain-writer.mjs
           node --check scripts/brain-publish.mjs
+          node --check workers/infinity-brain-clock/owner-audit-draft.mjs
           node --test \
             test/bubbles-brain-bridge.test.cjs \
             test/bubbles-brain-actions.test.cjs \
@@ -76,6 +77,7 @@ jobs:
             test/brain-assigned-job-scope.test.mjs \
             test/brain-color-core.test.mjs \
             test/brain-clock.test.mjs \
+            test/bubbles-owner-history-draft.test.mjs \
             test/bubbles-owner-clock.test.mjs \
             test/brain-merge-receipt.test.mjs \
             test/brain-queue-order.test.mjs \
