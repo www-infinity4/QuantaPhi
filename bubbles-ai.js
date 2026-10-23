@@ -538,22 +538,44 @@ async function showUnfinishedOwnerWork(){
  }
  const headers=ownerHeaders;
  try{
-  const res=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',
-   headers:{...headers,'Content-Type':'application/json'},
-   body:JSON.stringify({mode:'work-audit-sweep',limit:150,pages:4})
-  },20000);
-  const body=await res.json().catch(()=>({}));
-  if(!res.ok||body.ok!==true||body.mode!=='work-audit-sweep')throw Error(String(body.error||'Audit is not deployed yet.'));
+  const requestAudit=async mode=>{
+   const res=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',
+    headers:{...headers,'Content-Type':'application/json'},
+    body:JSON.stringify({mode,limit:150,pages:4})
+   },20000);
+   const body=await res.json().catch(()=>({}));
+   return {res,body};
+  };
+  let {res,body}=await requestAudit('work-audit-reconcile');
+  // Older Workers can still show candidates; clearly state that ticket
+  // reconciliation was not performed. Never fall back after access denial.
+  let compared=true;
+  if(res.status===500&&body?.error==='conversation_sync_failed'){
+   ({res,body}=await requestAudit('work-audit-sweep'));
+   compared=false;
+  }
+  if(!res.ok||body.ok!==true||
+    !['work-audit-sweep','work-audit-reconcile'].includes(body.mode))
+   throw Error(String(body.error||'Audit is not deployed yet.'));
   if(!ownerReady||ownerHeaders!==headers)throw Error('Owner session changed during audit.');
   const candidates=Array.isArray(body.candidates)?body.candidates.slice(0,10):[];
-  const lines=candidates.map((x,i)=>(i+1)+'. '+String(x.title||x.id||'Unnamed request').slice(0,90)+
-    ' — '+Number(x.mentions||0)+' messages; source check needed');
-  const report='Robot Brain saved-work audit (read-only)\n'+
+  const lines=candidates.map((x,i)=>{
+   const topic=(i+1)+'. '+String(x.title||x.id||'Unnamed request').slice(0,90)+
+    ' — '+Number(x.mentions||0)+' historical requests';
+   if(!compared)return topic+'; existing tickets not checked';
+   const linked=Array.isArray(x.linkedTickets)?x.linkedTickets.length:0;
+   return topic+'; '+linked+' explicitly linked ticket(s), '+
+    Number(x.sameRepositoryTicketCount||0)+' same-repository ticket(s) (not necessarily related)';
+  });
+  const report='Robot Brain unfinished-work comparison (read-only)\n'+
    'Scanned '+Number(body.messagesScanned||0)+' owner turns across '+Number(body.pagesScanned||0)+' pages.\n'+
    (lines.length?lines.join('\n'):'No matching archived user requests were found in these pages.')+
-   (body.nextCursor?'\nMore archived pages remain to inspect.':'')+
+   (compared?(body.ticketInventoryTruncated?'\nThe ticket inventory is incomplete; more tickets may exist.':
+    '\nExisting ticket counts are not deployment or feature verification.'):
+    '\nExisting ticket reconciliation is not yet available on this Brain deployment.')+
+   (body.nextCursor?'\nMore archived conversation pages remain to inspect.':'')+
    '\nNo repositories were changed and no jobs were approved or dispatched.';
-  display(report,'ai');macroInfo.textContent='Read-only owner backlog report shown in the main Bubbles chat.';
+  display(report,'ai');macroInfo.textContent='Read-only owner backlog comparison shown in Bubbles chat.';
  }catch(error){
   macroInfo.textContent='Owner work audit unavailable: '+String(error.message||error).slice(0,135);
  }
