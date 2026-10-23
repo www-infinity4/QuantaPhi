@@ -2,7 +2,7 @@
  * The autonomous writer must never bypass GitHub PR review just because main
  * happens to accept direct pushes. An accepted push is NOT CI or deployment.
  */
-export async function publishReviewed({repository,base,commitSha,jobId,runId,push,api}){
+export async function publishReviewed({repository,base,commitSha,jobId,runId,push,api,requestCI}){
  if(repository!=='www-infinity4/QuantaPhi'||base!=='main'||
   !/^[a-f0-9]{40}$/.test(commitSha||'')||
   typeof jobId!=='string'||!/^[-A-Za-z0-9_/]{1,150}$/.test(jobId)||
@@ -26,7 +26,15 @@ export async function publishReviewed({repository,base,commitSha,jobId,runId,pus
   pr.base?.ref!=='main'||pr.draft!==true||!Number.isSafeInteger(pr.number)||
   pr.number<1||Number(pr.html_url.split('/').at(-1))!==pr.number)
   throw Error('reviewed_draft_pr_receipt_mismatch');
+ // A GITHUB_TOKEN-authored PR may leave ordinary pull_request CI awaiting
+ // approval. Dispatch a fixed, read-only diagnostic against this exact branch.
+ // GitHub HTTP 204 means accepted for scheduling, NEVER that tests passed.
+ let ciDispatchRequested=false;
+ if(typeof requestCI==='function'){
+  try{ciDispatchRequested=(await requestCI({branch,commitSha,prNumber:pr.number}))===true}
+  catch{ciDispatchRequested=false}
+ }
  return {status:'committed_unverified',commitSha,publishedToDefault:false,
-  draft:true,ciVerified:false,deploymentVerified:false,ownerMergeApproved:false,
+  draft:true,ciDispatchRequested,ciVerified:false,deploymentVerified:false,ownerMergeApproved:false,
   prUrl:pr.html_url,prNumber:pr.number,branch};
 }
