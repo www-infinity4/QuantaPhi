@@ -46,7 +46,18 @@ test('ordinary spoken work uses the shared website without a native ticket hando
 });
 test('TTS callback loss has a bounded recovery and diagnostics preserve replies', () => {
   assert.match(source, /generation == speechGeneration/);
-  assert.match(source, /tts\.stop\(\);\s*finishSpeaking\(utterance\)/);
+  if (source.includes('private void speechPlaybackFailed(')) {
+    const failure = source.slice(source.indexOf('private void speechPlaybackFailed('),
+      source.indexOf('private void speak(String response)'));
+    // The newer recovery path preserves a failed website utterance, clears
+    // busy state through finishSpeaking, and reports the spoken-text failure.
+    assert.match(source, /if \(tts != null\) tts\.stop\(\);\s*speechPlaybackFailed\(utterance,/);
+    assert.match(failure, /if \(id == null \|\| !id\.equals\(activeUtteranceId\)\) return;/);
+    assert.match(failure, /finishSpeaking\(id\)/);
+    assert.match(failure, /reportSpeechFailure\(message\)/);
+  } else {
+    assert.match(source, /tts\.stop\(\);\s*finishSpeaking\(utterance\)/);
+  }
   assert.match(source, /!id\.equals\(activeUtteranceId\)/);
   assert.match(source, /putString\("last_heard", text\)/);
   assert.match(source, /putString\("last_reply", result\)/);
@@ -63,8 +74,17 @@ test('Android TTS engine callbacks cannot activate a replaced engine', () => {
 test('Android speech playback errors release busy and retain visible diagnostics', () => {
   const speak = source.slice(source.indexOf('private void speak(String response)'), source.indexOf('@Override public IBinder'));
   assert.match(speak, /try \{[\s\S]*?tts\.speak\(response/);
-  assert.match(speak, /if \(result == TextToSpeech\.ERROR\) \{[\s\S]*?finishSpeaking\(utterance\)/);
-  assert.match(speak, /catch \(RuntimeException error\) \{[\s\S]*?finishSpeaking\(utterance\)/);
+  if (source.includes('private void speechPlaybackFailed(')) {
+    // Error and thrown-exception paths must use the shared handler, which
+    // reaches finishSpeaking and schedules bounded engine recovery.
+    assert.match(speak, /if \(result == TextToSpeech\.ERROR\) \{[\s\S]*?speechPlaybackFailed\(utterance,/);
+    assert.match(speak, /catch \(RuntimeException error\) \{[\s\S]*?speechPlaybackFailed\(utterance,/);
+    assert.match(source, /private void speechPlaybackFailed\(String id, String message\) \{[\s\S]*?finishSpeaking\(id\)/);
+    assert.match(source, /private void reportSpeechFailure\(String message\) \{/);
+  } else {
+    assert.match(speak, /if \(result == TextToSpeech\.ERROR\) \{[\s\S]*?finishSpeaking\(utterance\)/);
+    assert.match(speak, /catch \(RuntimeException error\) \{[\s\S]*?finishSpeaking\(utterance\)/);
+  }
   assert.match(speak, /Android speech playback failed:/);
 });
 
