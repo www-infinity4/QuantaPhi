@@ -1,0 +1,19 @@
+name: Intelligent card workshop
+on:
+  pull_request:
+    paths: ['card-workshop/**', 'starmaker-card/**', 'workers/quanta-phi-ledger/source-compensation.mjs', 'test/source-compensation.test.mjs', 'workers/bubbles-tools/**', 'cloud-wallet-client.js', 'test/intelligent-card-workshop.test.mjs', '.github/workflows/intelligent-card-workshop.yml']
+  push:
+    branches: [main]
+    paths: ['card-workshop/**', 'starmaker-card/**', 'workers/quanta-phi-ledger/source-compensation.mjs', 'test/source-compensation.test.mjs', 'workers/bubbles-tools/**', 'cloud-wallet-client.js', 'test/intelligent-card-workshop.test.mjs', '.github/workflows/intelligent-card-workshop.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test test/source-compensation.test.mjs test/intelligent-card-workshop.test.mjs test/native-projects.test.mjs test/bubbles-tools.test.mjs test/wallet-assets.test.cjs test/phi-project-actions.test.cjs
+      - run: node --check card-workshop/workshop.mjs && node --check card-workshop/runtime.mjs && node --check cloud-wallet-client.js
