@@ -60,15 +60,14 @@ try{
   // the runner result, retry backoff, and saved receipt. This left
   // tickets claiming "working" with no successful commit or failure evidence.
   if(!Array.isArray(edits))throw Error('The writer returned no bounded edit list.');
-  const resume=edits.length===0 && clearJob &&
-    /^[a-f0-9]{40}$/.test(lease.job.progress?.commitSha||'');
-  if(edits.length===0&&!resume){
+  // A previous claimed SHA is not an authenticated deploy or owner-accepted
+  // PR receipt. Reconciliation belongs to the separate GitHub readback agent.
+  if(edits.length===0){
     await event('yellow-jacket','No applicable source diff was proposed. Recording the blocker instead of pretending the build succeeded.');
     throw Error('No source diff: the requested change may already exist or this job needs another implementation adapter. Reconcile exact source and receipts before retrying.');
   }
-  if(!edits.length&&!resume)throw Error('Requested change is already present; no recorded source commit to resume');
-  const patched=resume?original:applyEdits(original,edits);report.edits=edits;
-  const reviewedSource=Object.fromEntries(Object.entries(patched).filter(([path])=>resume?path==='robot-directions.js':edits.some(e=>e.path===path)));
+  const patched=applyEdits(original,edits);report.edits=edits;
+  const reviewedSource=Object.fromEntries(Object.entries(patched).filter(([path])=>edits.some(e=>e.path===path)));
   const review=await call('review',{job:lease.job,edits,source:reviewedSource});
   if(review.approved!==true)throw Error('GPT patch review rejected: '+review.reason);
   reviewApproved=true;report.review=review;
@@ -80,19 +79,37 @@ try{
    execFileSync(process.execPath,['--test','test/brain-writer.test.mjs','test/brain-clock.test.mjs','test/agent-iteration-card.test.cjs'],{stdio:'pipe'});
   }catch(e){for(const path of paths)await fs.writeFile(path,original[path]);throw Error('Regression failure: '+String(e.stderr||e.message).slice(-1400));}
   testsPassed=true;
-  if(resume){commitSha=lease.job.progress.commitSha;}else{
+  {
   git('fetch','origin','main');if(git('rev-parse','origin/main')!==report.baseSha)throw Error('Main changed; retry against the new head');
   git('config','user.name','infinity-brain[bot]');git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com');
   git('add','--',...paths);git('commit','-m','Repair '+report.jobId+' after GPT review and tests');commitSha=git('rev-parse','HEAD');
-  report.publication=await publishReviewed({repository:'www-infinity4/QuantaPhi',base:'main',commitSha,jobId:report.jobId,runId:process.env.GITHUB_RUN_ID,push:ref=>git('push','origin',ref),api:async(resource,options)=>{const r=await fetch('https://api.github.com/'+resource,{method:options.method,headers:{Authorization:'Bearer '+process.env.GITHUB_TOKEN,'Content-Type':'application/json',Accept:'application/vnd.github+json'},body:JSON.stringify(options.body),signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Reviewed PR could not be created: HTTP '+r.status);return r.json()}});
-  if(!report.publication.publishedToDefault){report.status='committed_unverified';report.preview={baseSha:report.baseSha,commitSha,paths,summary:'Reviewed bot repair: '+report.jobId,jobId:report.jobId};await call('result',{status:'committed_unverified',commitSha,testsPassed,reviewApproved,message:'Tested source repair is awaiting protected-branch review: '+report.publication.prUrl});throw Object.assign(new Error('protected_branch_review_pending'),{reviewPending:true});}
+  report.publication=await publishReviewed({repository:'www-infinity4/QuantaPhi',base:'main',commitSha,jobId:report.jobId,runId:process.env.GITHUB_RUN_ID,push:ref=>git('push','origin',ref),api:async(resource,options)=>{const r=await fetch('https://api.github.com/'+resource,{method:options.method,headers:{Authorization:'Bearer '+process.env.GITHUB_TOKEN,'Content-Type':'application/json',Accept:'application/vnd.github+json'},body:JSON.stringify(options.body),signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error('Reviewed PR could not be created: HTTP '+r.status);return r.json()},
+   requestCI:async({branch:ciBranch,commitSha:ciSha})=>{
+    if(ciSha!==commitSha||!/^robot\/[A-Za-z0-9_-]+\/[1-9][0-9]+$/.test(ciBranch))
+     throw Error('brain_ci_scope_invalid');
+    const r=await fetch('https://api.github.com/repos/www-infinity4/QuantaPhi/actions/workflows/bubbles-brain-full-diagnostic.yml/dispatches',{
+     method:'POST',headers:{Authorization:'Bearer '+process.env.GITHUB_TOKEN,
+      'Content-Type':'application/vnd.github+json','Accept':'application/vnd.github+json'},
+     body:JSON.stringify({ref:ciBranch}),signal:AbortSignal.timeout(20000)});
+    return r.status===204;
+   }});
+  if(report.publication.publishedToDefault!==false||report.publication.draft!==true)
+   throw Error('writer_must_publish_draft_pr_only');
+  report.status='committed_unverified';
+  report.preview={baseSha:report.baseSha,commitSha,paths,
+   summary:'Reviewed draft PR — CI, owner merge and deployment unverified: '+report.jobId,jobId:report.jobId};
+  await call('result',{status:'committed_unverified',commitSha,testsPassed,reviewApproved,
+   message:'Source patch is in draft PR '+report.publication.prUrl+
+    '. CI dispatch '+(report.publication.ciDispatchRequested?'requested':'not verified')+'. '+
+    ' Target CI, owner merge, live site and Android acceptance remain unverified.'});
+  throw Object.assign(new Error('draft_pr_review_pending'),{reviewPending:true});
 
   }
   report.preview={baseSha:git('rev-parse',commitSha+'^'),commitSha,paths:git('diff-tree','--no-commit-id','--name-only','-r',commitSha).split('\n').filter(Boolean),summary:'Bot repair: '+report.jobId,jobId:report.jobId};
   await event('greenbeans','Committed '+commitSha.slice(0,9)+' for '+report.jobId+'. Waiting for the deployed source, then opening the hosted Android browser.',{commitSha});
   // The existing .org edge serves source from main. Verify exact deployed bytes, not HTTP alone.
   let matched=false;
-  const deployedPaths=resume?['robot-directions.js']:paths;
+  const deployedPaths=paths;
   for(let attempt=0;attempt<18&&!matched;attempt++){
    matched=true;
    for(const path of deployedPaths){const r=await fetch('https://quantaphi.org/'+path+'?brainCommit='+commitSha+'&attempt='+attempt,{cache:'no-store',signal:AbortSignal.timeout(20000)});if(!r.ok||await r.text()!==patched[path])matched=false;}

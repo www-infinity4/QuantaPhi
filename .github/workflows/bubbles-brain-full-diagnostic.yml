@@ -20,6 +20,8 @@ on:
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-*.test.*'
       - 'test/brain-*.test.*'
+      - 'scripts/brain-*.mjs'
+      - '.github/workflows/brain-writer.yml'
       - 'scripts/bubbles-live-smoke.mjs'
   push:
     branches: [main]
@@ -56,6 +58,8 @@ jobs:
           node --check bubbles-ai.js
           node --check bubbles-brain-actions.js
           node --check robot-brain-owner.js
+          node --check scripts/brain-writer.mjs
+          node --check scripts/brain-publish.mjs
           node --test \
             test/bubbles-brain-bridge.test.cjs \
             test/bubbles-brain-actions.test.cjs \
@@ -80,6 +84,8 @@ jobs:
             test/brain-clock-stage.test.mjs \
             test/brain-clock-binding-parity.test.mjs \
             test/brain-pink-source-review.test.mjs \
+            test/brain-writer.test.mjs \
+            test/brain-publish-draft.test.mjs \
             test/brain-ticket-status.test.cjs \
             test/work-ticket-bubbles-timed-job-controls.test.cjs
 
