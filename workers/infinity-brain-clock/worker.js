@@ -6,6 +6,8 @@ import {conversationMemory} from './conversation-memory.mjs';
 import {recordRedBrain,redExchange,classifyDispatch} from './red-sectors.mjs';
 import {eligibleForRetry,nextRetryState} from './alarm-retry.mjs';
 import {ownerClockCommand,runDueOwnerClock} from './owner-task-clock.mjs';
+import {triageBacklog} from './autopilot-triage.mjs';
+import {AGENT_SKILLS} from './agent-skills.mjs';
 import {checkOwnerRunnerRequest,runnerDispatchReceipt,submitApprovedBridgeWork} from './runner-request.mjs';
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
@@ -834,6 +836,12 @@ export class BrainClock extends DurableObject{
   }
   if(new URL(request.url).pathname==='/preview'){const sha=new URL(request.url).searchParams.get('sha');const preview=/^[a-f0-9]{40}$/.test(sha||'')?await this.ctx.storage.get('preview:'+sha):null;return preview?Response.json({ok:true,preview}):Response.json({ok:false,error:'preview_not_found'},{status:404});}
   const state=await this.ctx.storage.get('state')||{status:'starting'};
+  if(new URL(request.url).pathname==='/autopilot-status')return Response.json({
+   ok:true,source:'cloudflare-durable-object',skills:AGENT_SKILLS,triage:await this.ctx.storage.get('autopilot-triage-v1')||null,
+   recentDispatch:await this.ctx.storage.get('alarm-dispatch-state')||null,
+   writer:await this.ctx.storage.get('writerHeartbeat')||null,
+   executionVerified:false,notAnApproval:true
+  });
   if(new URL(request.url).pathname==='/feed')return Response.json({schemaVersion:1,items:await this.ctx.storage.get('events')||[],previews:await this.ctx.storage.get('previews')||[],engine:await this.ctx.storage.get('engine-capability')||null,deferredRecovery:await this.ctx.storage.get('deferred-recovery-status')||null,state});
   return Response.json({ok:true,...state,periodMs:PERIOD,nextAlarm:await this.ctx.storage.getAlarm(),executor:'authenticated GitHub writer for brain-interface jobs',writer:await this.ctx.storage.get('writerHeartbeat')||null});
  }
@@ -869,6 +877,28 @@ export class BrainClock extends DurableObject{
      return response.json();
     }
    })}catch(error){await this.ctx.storage.put('owner-task-clock-error',{at:Date.now(),error:String(error.message||error).slice(0,140)})}
+   // Stage large legacy backlogs instead of feeding hundreds of jobs into one
+   // model context. The triage is owner-scoped, read-only and capped at 15
+   // tickets per minute. Real builds still pass the existing signed runner,
+   // queue admission, lease and global five-minute dispatch cooldown.
+   try{
+    const scanAt=Date.now();
+    if((await this.ctx.storage.get('autopilot-triage-next-at')||0)<=scanAt){
+     await this.ctx.storage.put('autopilot-triage-next-at',scanAt+60*1000);
+     const stage=await triageBacklog(this.env.WORK_DB,this.ctx.storage,this.env.WRITER_OWNER_HASH,
+      {now:scanAt,batchSize:15});
+     if(stage.ok&&stage.cycleComplete&&stage.completedCycle?.tickets){
+      const counts=stage.completedCycle.counts||{};
+      await this.emit('red-bubbles','yellow-jacket','backlog scan',
+       'Examined '+stage.completedCycle.tickets+' existing owner tickets across '+stage.completedCycle.projects.length+' projects. No new jobs or permissions created.');
+      await this.emit('yellow-jacket','blueberry','receipt classification',
+       'Separated '+(counts.queued_for_existing_runner||0)+' queued, '+(counts.commit_needs_verification||0)+' commit checks and '+(counts.deployment_needs_verification||0)+' deployment checks. Historical status is not proof of execution.');
+      await this.emit('blueberry','purple-pearl','bounded build scheduling',
+       'Existing signed GitHub runner and one-dispatch-per-five-minutes gate remain responsible for actual builds. Blocked security and owner decisions remain blocked.');
+     }
+    }
+   }catch(error){await this.ctx.storage.put('autopilot-triage-error',
+     {when:Date.now(),reason:String(error.message||error).slice(0,160)});}
    try{await this.retryPendingWork()}catch(error){await this.ctx.storage.put('alarm-dispatch-error',{when:Date.now(),reason:String(error.message||error).slice(0,160)});}
    const page=await read('https://quantaphi.org/',150000);
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
@@ -1362,6 +1392,17 @@ export default{
     const raw=await request.text();if(raw.length>128000)return output(request,{ok:false,error:'request_too_large'},413);
     return output(request,await conversationMemory(env.WORK_DB,env.WRITER_OWNER_HASH,JSON.parse(raw||'{}')));
    }catch{return output(request,{ok:false,error:'conversation_sync_failed'},500)}
+  }
+  if(path==='/work/autopilot/status'&&request.method==='GET'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
+   try{
+    const data=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main'))
+      .fetch('https://clock.internal/autopilot-status');
+    return output(request,await data.json(),data.status);
+   }catch{return output(request,{ok:false,error:'autopilot_status_unavailable'},503)}
   }
   if(path==='/work/clock'&&request.method==='POST'){
    const origin=request.headers.get('Origin');
