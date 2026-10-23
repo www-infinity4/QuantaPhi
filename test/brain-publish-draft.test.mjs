@@ -9,10 +9,10 @@ const branch='robot/TASK-17-repair/345';
 const make=({push=async()=>{},api}={})=>({
  repository:'www-infinity4/QuantaPhi',base:'main',commitSha:sha,
  jobId:task,runId:'345',push,
- api:api||async(_path,{body})=>({
+ api:api||(async(_path,{body})=>({
   html_url:'https://github.com/www-infinity4/QuantaPhi/pull/123',
   head:{sha,ref:body.head},base:{ref:'main'},draft:true,number:123
- })
+ }))
 });
 test('every reviewed writer patch pushes ONLY a job branch and opens a DRAFT PR',async()=>{
  const pushes=[],posts=[];
