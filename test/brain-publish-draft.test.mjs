@@ -69,6 +69,23 @@ test('invalid repo, run ID, SHA or job identifiers prevent both push and API cal
   assert.equal(count,0);
  }
 });
+test('fixed branch CI dispatch is accepted but can never count as passed',async()=>{
+ const requests=[];
+ const result=await publishReviewed({...make(),
+  requestCI:async receipt=>{requests.push(receipt);return true;}});
+ assert.deepEqual(requests,[{branch,commitSha:sha,prNumber:123}]);
+ assert.equal(result.ciDispatchRequested,true);
+ assert.equal(result.ciVerified,false);
+ assert.equal(result.deploymentVerified,false);
+});
+test('failed CI dispatch preserves draft PR receipt but never claims test success',async()=>{
+ const result=await publishReviewed({...make(),
+  requestCI:async()=>{throw Error('actions_permission_missing')}});
+ assert.equal(result.draft,true);
+ assert.equal(result.ciDispatchRequested,false);
+ assert.equal(result.ciVerified,false);
+ assert.equal(result.status,'committed_unverified');
+});
 test('writer cannot resume an unverified prior SHA as a deployed fix',()=>{
  const source=readFileSync(new URL('../scripts/brain-writer.mjs',import.meta.url),'utf8');
  const workflow=readFileSync(new URL('../.github/workflows/brain-writer.yml',import.meta.url),'utf8');
@@ -78,5 +95,7 @@ test('writer cannot resume an unverified prior SHA as a deployed fix',()=>{
  assert.match(source,/draft_pr_review_pending/);
  assert.match(source,/CI, owner merge, live site and Android acceptance remain unverified/);
  assert.match(workflow,/pull-requests: write/);
+ assert.match(workflow,/actions: write/);
+ assert.match(source,/bubbles-brain-full-diagnostic\\.yml\\/dispatches/);
  assert.doesNotMatch(workflow,/deployments: write/);
 });
