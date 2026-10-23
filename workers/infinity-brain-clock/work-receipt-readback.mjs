@@ -40,7 +40,7 @@ export async function readbackOwnerWorkReceipt(owner,body={},fetcher=fetch){
  };
  try{
   const commit=await read('/commits/'+sha);
-  if(commit?.sha!==sha||commit?.commit?.tree?.sha===undefined)
+  if(commit?.sha!==sha||!SHA.test(commit?.commit?.tree?.sha||''))
    return verifiedResponse({ok:false,error:'commit_source_unverified'},409);
   const workflow=await read('/actions/runs/'+runId);
   if(workflow?.head_sha!==sha||workflow?.repository?.full_name!==repository)
