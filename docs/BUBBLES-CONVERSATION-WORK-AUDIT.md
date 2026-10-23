@@ -42,6 +42,22 @@ self-asserted model `passed` flags and free-form test URLs.
 Private repositories need a separate authorized GitHub reader; unsigned
 public requests never gain owner archive access or repository credentials.
 
+## Compare history with actual owner tickets
+
+From an already wallet-authenticated Bubbles owner session:
+
+```json
+{"mode":"work-audit-reconcile","limit":150,"pages":4}
+```
+
+This operation scans up to 1,000 archived **owner user** turns (the same four-page limit as `work-audit-sweep`) and independently reads up to 120 **existing owner-partitioned** `work_tickets` rows. It shows distinct counts of:
+- **Explicitly linked tickets:** an existing ticket's saved `context.auditCandidateId` matches the candidate, or one of its saved `context.sourceMessageIds` is an actual archived evidence message ID, in the **same** repository. The link is unverified until source and job receipts are read.
+- **Same-repository tickets:** a count of existing tickets in the proposed repository, regardless of relevance. This count **does not establish** that an older request is finished, duplicated, or even related.
+
+The response reports `ticketInventoryTruncated` if older tickets were not examined. If the archived conversation requires more pages, follow `nextCursor`. The newest archived request snippets and optional explicit linked-ticket IDs remain private to the owner session. Raw ticket contexts, secrets, and request text are not returned.
+
+**No new job is created or approved, and no existing job is restarted.** The owner must inspect verified current repository source, target CI, existing issue/PR, live Cloudflare deployment and device/browser behavior before deciding an actual repair is needed. Later owner corrections should override old requirements. This mode is not a completion or deployment gate.
+
 ## Next autonomous stage
 
 1. Continue paging the owner archive; reconcile candidates across all pages and with existing jobs. Retrieve full messages through `sessions-get` when a short excerpt is insufficient. Bubbles already has an explicit in-browser ChatGPT/Gemini history importer into private BubblesMemory; **that is a separate store** and its imported records are not automatically present in the Brain `bubbles_messages` archive. Any bridge must be explicitly owner-authorized, idempotent, source-attributed, and account-isolated.
