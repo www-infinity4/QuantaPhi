@@ -67,3 +67,15 @@ test('ledger route authenticates device and active wallet before native project 
  f.sql.exec("UPDATE quant_wallets SET status='disabled'");
  assert.equal((await ledger.fetch(request(token),env)).status,403);
 });
+
+test('racing initial revisions elect one head and streamed bodies stay bounded',async()=>{
+ const f=fixture(),id=(await f.call('alice','',{title:'Race',requestId:'create_001'})).project.id;
+ const results=await Promise.all(['revision_001','revision_002'].map(requestId=>f.call('alice','/'+id+'/revisions',{requestId,expectedHead:null,files:{'index.html':requestId}})));
+ assert.deepEqual(results.map(r=>r.status).sort(),[200,409]);
+ assert.equal(f.sql.prepare('SELECT COUNT(*) AS n FROM phi_native_revisions').get().n,1);
+ const winner=results.find(r=>r.status===200);
+ assert.equal((await f.call('alice','/'+id)).project.head,winner.revisionId);
+ const huge=new Request('https://ledger.test/v1/projects',{method:'POST',body:'x'.repeat(100001)});
+ const rejected=await handleNativeProjects(huge,f.db,'alice');assert.equal(rejected.status,413);
+ const malformed=await handleNativeProjects(new Request('https://ledger.test/v1/projects',{method:'POST',body:'{oops'}),f.db,'alice');assert.equal(malformed.status,400);
+});
