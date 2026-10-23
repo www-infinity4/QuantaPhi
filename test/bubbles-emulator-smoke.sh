@@ -31,13 +31,16 @@ controls=[]
 button=None
 for attempt in range(6):
     controls=snapshot(attempt)
-    button=next((row for row in controls if 'Start or resume Bubbles voice' in row.get('text','')
-         or 'Start or resume Bubbles voice' in row.get('content-desc','')),None)
+    # UIAutomator omits some off-screen ScrollView controls. The actual
+    # first-party Open chat button also starts the same foreground voice service.
+    button=next((row for row in controls if any(label in row.get('text','') or
+         label in row.get('content-desc','') for label in (
+         'Start or resume Bubbles voice','Open QuantaPhi Bubbles chat'))),None)
     if button: break
     subprocess.run(['adb','shell','input','swipe','510','1660','510','440','390'],check=True)
 if not button:
     labels=[x.get('text','')[:100] for x in controls if x.get('clickable')=='true']
-    raise SystemExit('Android voice-launch button not accessible after scrolling: '+repr(labels[:22]))
+    raise SystemExit('Android voice or chat-launch button not accessible after scrolling: '+repr(labels[:22]))
 coords=list(map(int,re.findall(r'\d+',button.get('bounds',''))))
 if len(coords)!=4:
     raise SystemExit('Android voice-launch button has no bounds')
