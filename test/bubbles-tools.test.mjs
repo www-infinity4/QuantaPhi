@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker,{chooseTool,isSourceReviewRequest,readPublicPage,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim,hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
+import worker,{chooseTool,isSourceReviewRequest,readPublicPage,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim,hasModelToolLeak,contextualReadPlan,finishSearchReply} from '../workers/bubbles-tools/worker.mjs';
 test('source-generation instructions mentioning GitHub and README stay source generation',async()=>{
  const prompt='Provide the complete source document in detail for README.md. This is content generation. Explain this demo and index.html; describe GitHub Pages.';
  assert.equal(chooseTool(prompt),'oracle.chat');
@@ -345,4 +345,33 @@ test('signed Bubbles review treats HTML source links as inert data, not deployed
  assert.equal(modelCalls,1);
  assert.match(body.output,/approved/);
  assert.doesNotMatch(body.output,/html_http_404/);
+});
+
+test('site context resolves public repository reads and traffic without inventing write authority',()=>{
+ const origin='https://quantaphi.org';
+ assert.equal(contextualReadPlan('Read the repository',origin).repository,'www-infinity4/QuantaPhi');
+ assert.equal(contextualReadPlan('Read the QuabtaPhi repo',origin).repository,'www-infinity4/QuantaPhi');
+ assert.equal(contextualReadPlan('Check this site traffic count, it is not updating',origin).path,'index.html');
+ assert.equal(contextualReadPlan('Read README.md in this site',origin).tool,'github.read_file');
+ assert.equal(contextualReadPlan('Read other-owner/Other repo',origin).repository,'other-owner/Other');
+ assert.equal(contextualReadPlan('Read https://github.com/other-owner/Other repository',origin).repository,'other-owner/Other');
+ for(const q of ['Read owner1/Repo1 and owner2/Repo2 repositories','What is an antenna?','Do not read this site repository','Create a repository named Rain and read it','Read https://quantaphi.org/index.html','Provide a source document for README.md. This is content generation.'])assert.equal(contextualReadPlan(q,origin),null,q);
+ assert.equal(contextualReadPlan('Read this site repository','https://visitor.example'),null);
+});
+test('file findings timeout reports the real read without displaying tool scripts as action',async()=>{
+ const source=Response.json({ok:true,repository:'www-infinity4/QuantaPhi',path:'index.html',content:'<script>raw</script>',output:'File text: raw',receipt:{tool:'github.read_file',status:'complete',sourceReadVerified:true,repositoryActionsVerified:false}});
+ const r=await finishSearchReply(source,()=>new Promise(()=>{}),5,'Check this traffic counter');const result=await r.json();
+ assert.equal(result.answerStatus,'partial');assert.match(result.output,/I read www-infinity4\/QuantaPhi\/index.html/);assert.doesNotMatch(result.output,/<script>|File text:/);assert.equal(result.receipt.repositoryActionsVerified,false);
+ assert.equal(hasModelToolLeak('{"name":"github_read_repository","arguments":{"repository":"www-infinity4/QuantaPhi"}}'),true);
+});
+test('traffic complaint invokes the real source reader before reporting findings',async()=>{
+ const original=globalThis.fetch,calls=[];
+ globalThis.fetch=async url=>{calls.push(String(url));return Response.json({type:'file',path:'index.html',size:'<!-- Traffic measured by GA4 -->'.length,encoding:'base64',content:btoa('<!-- Traffic measured by GA4 -->')});};
+ try{
+  const request=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Check this site traffic count, it is not updating',mcp:true})});
+  const response=await worker.fetch(request,{AI:{run:async()=>({response:'The source includes a GA4 measurement marker. That does not verify current traffic counts or prove a repair.'})}});
+  const result=await response.json();
+  assert.equal(calls.length,1);assert.match(calls[0],/repos\/www-infinity4\/QuantaPhi\/contents\/index.html$/);
+  assert.equal(result.receipt.sourceReadVerified,true);assert.equal(result.receipt.repositoryActionsVerified,false);assert.match(result.output,/GA4/);
+ }finally{globalThis.fetch=original;}
 });
