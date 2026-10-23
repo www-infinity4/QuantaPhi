@@ -41,3 +41,11 @@ test('archive reads are owner-partitioned, paginated and never create work',asyn
  await assert.rejects(auditOwnerConversation(db,'verified_owner',{beforeAt:12,beforeId:'../../evil'}),/cursor_invalid/);
  await assert.rejects(auditOwnerConversation(db,''),/verified_owner_required/);
 });
+test('plural GitHub repos and repositories are recognized as unfinished owner build work',()=>{
+ for(const request of ['Build GitHub repos automatically for Bubbles.',
+  'Fix GitHub repositories that were left unfinished.',
+  'Check GitHub pull requests and build missing features.']){
+  const found=auditWorkHistory([m(101,'user',request)]);
+  assert.ok(found.some(x=>x.id==='autonomous-building'),request);
+ }
+});
