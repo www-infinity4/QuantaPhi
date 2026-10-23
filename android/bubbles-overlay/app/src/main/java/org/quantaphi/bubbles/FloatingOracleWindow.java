@@ -262,6 +262,22 @@ final class FloatingOracleWindow {
         // a second local chat when loading, offline, or owner sync is unavailable.
         createWebsite(page);
 
+        // The APK needs one direct history control even before cloud owner
+        // pairing. The website remains the only source of conversation UI.
+        Button history = button("Chats / History", false);
+        history.setMinHeight(dp(44));
+        history.setContentDescription("Open saved Bubbles chat history");
+        history.setOnClickListener(v -> {
+            if (trustedChat(website) && websiteReady) {
+                website.evaluateJavascript("Boolean(window.QuantaBubbles && window.QuantaBubbles.openHistory())", null);
+            } else if (status != null) {
+                status.setText("Bubbles history will open after the website chat reconnects.");
+            }
+        });
+        LinearLayout.LayoutParams historySize = new LinearLayout.LayoutParams(-2, dp(44));
+        historySize.gravity = Gravity.CENTER_HORIZONTAL;
+        page.addView(history, historySize);
+
         // A simple bottom X hides this chat without closing the one native
         // microphone service or removing the partly docked floating orb.
         Button bottomClose = button("✕", false);
