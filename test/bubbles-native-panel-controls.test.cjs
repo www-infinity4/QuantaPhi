@@ -28,10 +28,10 @@ test('a large top-right X Hide remains outside the website and restores on wake'
  assert.match(panel,/close\.setMinWidth\(dp\(72\)\)/);
  assert.match(panel,/close\.setMinHeight\(dp\(48\)\)/);
  assert.match(panel,/close\.setOnClickListener\(v -> hide\(\)\)/);
- assert.match(panel,/if \\(root != null\\) \\{[\\s\\S]*?root\\.setVisibility\\(View\\.VISIBLE\\)/);
- assert.match(panel,/final boolean reopened = root\\.getVisibility\\(\\) != View\\.VISIBLE/);
- assert.match(panel,/if \\(reopened && websiteReady && trustedChat\\(website\\)/);
- assert.match(panel,/startFreshOnReopen\\(\\)/);
+ assert.match(panel,/if \(root != null\) \{[\s\S]*?root\.setVisibility\(View\.VISIBLE\)/);
+ assert.match(panel,/final boolean reopened = root\.getVisibility\(\) != View\.VISIBLE/);
+ assert.match(panel,/if \(reopened && websiteReady && trustedChat\(website\)/);
+ assert.match(panel,/startFreshOnReopen\(\)/);
  assert.match(panel,/header\.addView\(close\);\s*page\.addView\(header\)/);
 });
 
