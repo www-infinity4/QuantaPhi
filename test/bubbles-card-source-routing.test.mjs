@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {cardSourcePlanFor} from '../workers/bubbles-tools/card-source.mjs';
+import {cards} from '../bubbles-card-catalog.mjs';
 import {chooseTool} from '../workers/bubbles-tools/worker.mjs';
 test('source-first engineering request grounded to existing registered Bitcoin Crusher card',()=>{
  const prompt='Our old Bitcoin Crusher looked like a Copilot game. Plan the migration into the existing Bitcoin Crusher card and a real research system with Oracle Octaves white cards.';
@@ -27,4 +28,16 @@ test('existing QuantaPhi is not arbitrarily queried as an external card and sour
  assert.equal(cardSourcePlanFor('Fix the QuantaPhi home card'),null);
  const draft='Write source document README.md for an example mentioning Bitcoin Crusher but not fetching it';
  assert.equal(chooseTool(draft),'oracle.chat');
+});
+
+test('engineering source plans preserve the declared live route for every external card',()=>{
+ for(const card of cards.filter(c=>c.repository!=='www-infinity4/QuantaPhi')){
+  const plan=cardSourcePlanFor('Please inspect '+card.title);
+  assert.ok(plan,card.title);
+  assert.equal(plan.repository,card.repository);
+  assert.equal(plan.liveRoute,card.url,card.title+' public route must not be derived from its repo name');
+ }
+ assert.equal(cardSourcePlanFor('Audit Infinity Radio').liveRoute,'/infinity-radio/');
+ assert.equal(cardSourcePlanFor('Audit Infinity Phi').liveRoute,'/infinity-phi/');
+ assert.equal(cardSourcePlanFor('Audit McKee Coins').liveRoute,'/mckee-coins/');
 });
