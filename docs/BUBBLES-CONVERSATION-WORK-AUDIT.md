@@ -58,6 +58,32 @@ The response reports `ticketInventoryTruncated` if older tickets were not examin
 
 **No new job is created or approved, and no existing job is restarted.** The owner must inspect verified current repository source, target CI, existing issue/PR, live Cloudflare deployment and device/browser behavior before deciding an actual repair is needed. Later owner corrections should override old requirements. This mode is not a completion or deployment gate.
 
+## Owner-confirmed draft from archival work
+
+Inside the existing owner-authenticated **Review unfinished builds** card, only an
+unlinked, source-backed, non-truncated work candidate can offer **Draft review**.
+Pressing this button opens a second owner confirmation naming the proposed repo
+(which is explicitly *not yet repository-verified*). The action submits a
+\`from_work_audit:true\`, \`start_immediately:false\` body to the existing
+\`/work/tickets/create\` endpoint with a topic ID and up to eight source IDs.
+
+Robot Brain independently checks each ID against the **same owner's user-message
+archive** and runs the topic classifier against the archived texts. Mismatched
+topics, repositories, cross-owner IDs, assistant-authored turns, malformed rows,
+or attempts to smuggle execution jobs/approval fail before ticket creation.
+Original conversations are NOT copied into a runnable prompt. The server
+generates a neutral review request and records \`auditCandidateId\` plus bounded
+\`sourceMessageIds\` for later reconciliation.
+
+The existing request-fingerprint and owner/repository-scoped submission-id
+deduplication prevents repeated clicks from duplicating the same topic draft.
+A new ticket has \`status:'draft'\` and **no color jobs**: it cannot be claimed
+by the autonomous runner until the owner separately approves a real plan.
+
+This addition does not automatically triage all historical requests, does not
+provide ChatGPT account access, and does not deploy the live Brain. Source
+staging and a real authenticated owner test are still required.
+
 ## Next autonomous stage
 
 1. Continue paging the owner archive; reconcile candidates across all pages and with existing jobs. Retrieve full messages through `sessions-get` when a short excerpt is insufficient. Bubbles already has an explicit in-browser ChatGPT/Gemini history importer into private BubblesMemory; **that is a separate store** and its imported records are not automatically present in the Brain `bubbles_messages` archive. Any bridge must be explicitly owner-authorized, idempotent, source-attributed, and account-isolated.
