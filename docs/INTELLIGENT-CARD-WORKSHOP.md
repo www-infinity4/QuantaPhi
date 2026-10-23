@@ -27,4 +27,4 @@ The independent karaoke studio permits up to eight selected StarMaker share link
 
 Official sources checked 2026-10-23: https://www.starmakerstudios.com/setting/terms/sm/index and https://www.starmakerstudios.com/uploading-faq . These sources do not establish an approved third-party embed/API or a redistribution agreement for QuantaPhi.
 
-Local verification: 79 passing source tests. A browser test was attempted, but Chromium is unavailable and its download failed; no browser or real microphone success is claimed.
+Local verification: 95 passing source and card-integration tests. A browser test was attempted, but Chromium is unavailable and its download failed; no browser or real microphone success is claimed.

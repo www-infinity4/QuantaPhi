@@ -55,3 +55,9 @@ test('public exported-card refresh preflight grants no credential access',async(
  const plan=await worker.fetch(new Request('https://tools.test/v1/cards/plan',{method:'POST',headers:{Origin:'https://my-card.example'},body:'{}'}),{});
  assert.equal(plan.status,403);
 });
+
+import {findCard,cardIntent} from '../bubbles-card-catalog.mjs';
+test('Bubbles can open both registered new card surfaces',()=>{
+ assert.equal(findCard('card builder').url,'/card-workshop/');
+ assert.equal(cardIntent('open starmaker').card.url,'/starmaker-card/');
+});

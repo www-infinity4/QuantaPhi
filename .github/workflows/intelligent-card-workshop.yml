@@ -15,5 +15,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --test test/source-compensation.test.mjs test/intelligent-card-workshop.test.mjs test/native-projects.test.mjs test/bubbles-tools.test.mjs test/wallet-assets.test.cjs test/phi-project-actions.test.cjs
+      - run: node --test test/bubbles-card-workspace.test.mjs test/mini-card-apps.test.mjs test/source-compensation.test.mjs test/intelligent-card-workshop.test.mjs test/native-projects.test.mjs test/bubbles-tools.test.mjs test/wallet-assets.test.cjs test/phi-project-actions.test.cjs
       - run: node --check card-workshop/workshop.mjs && node --check card-workshop/runtime.mjs && node --check cloud-wallet-client.js

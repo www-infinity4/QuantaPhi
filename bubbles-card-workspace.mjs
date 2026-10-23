@@ -77,7 +77,7 @@ export class CardWorkspace{
   this.pause(this.active);this.stage.hidden=false;this.container.querySelector('.ba-card-catalog')?.remove();this.container.hidden=false;this.heading.textContent=card.title;this.status.textContent='Opening '+card.title+'…';
   let record=this.frames.get(frameKey);
   if(!record){
-   const frame=document.createElement('iframe');frame.title=card.title;frame.allow='autoplay; fullscreen';
+   const frame=document.createElement('iframe');frame.title=card.title;frame.allow='autoplay; fullscreen'+(card.id==='starmaker-karaoke'?'; microphone':'');
    frame.setAttribute('sandbox','allow-scripts allow-same-origin allow-forms allow-popups');
    record={card,mode,frame,media:new Set(),errors:[],loaded:false};
    record.ready=new Promise((resolve,reject)=>{
