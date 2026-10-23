@@ -217,6 +217,8 @@ jobs:
         run: node --test test/bubbles-capture-save.test.cjs
       - name: Verify RecordB crash recovery and protected history import
         run: node --test test/bubbles-recordb-recovery.test.cjs
+      - name: Verify original APK history, speech and microphone interoperability
+        run: node --test test/bubbles-apk-speech-parity.test.cjs test/bubbles-apk-history-voice-regression.test.cjs test/bubbles-live-lookup.test.mjs
       - name: Verify sound recording bytes and limits
         run: |
           mkdir -p /tmp/bubbles-wav

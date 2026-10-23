@@ -72,8 +72,17 @@ export function weatherPlace(message,location){
  if(zip)return zip[0];
  let match=s.match(/\b(?:weather|forecast|temperature|rain|raining|snow|snowing)\b[\s\S]*?\b(?:in|for|at|near)\s+([a-z0-9][a-z0-9 ,.'-]{1,110})/i);
  if(!match)match=s.match(/\b(?:in|at|near)\s+([a-z0-9][a-z0-9 ,.'-]{1,110})\s+(?:weather|forecast)\b/i);
- const explicit=trim((match?.[1]||'').replace(/\b(?:right now|today|tomorrow|this evening|this afternoon|this morning|please|currently)\b.*$/i,''),110);
- if(explicit)return explicit;
+ // Vosk commonly produces "weather search Albia Iowa", "weather Albia Iowa"
+ // or "search for Albia Iowa weather" instead of "weather in Albia, Iowa".
+ // These are explicit towns, not permission to use a previously saved location.
+ if(!match)match=s.match(/\b(?:weather|forecast)(?:\s+(?:search|lookup|check|report|please)){0,2}\s+([a-z][a-z ,.'-]{2,100})(?:[?!]|$)/i);
+ if(!match)match=s.match(/\b(?:search|check|look up)\s+(?:for\s+)?([a-z][a-z ,.'-]{2,100})\s+(?:weather|forecast)\b/i);
+ const explicit=trim((match?.[1]||'')
+  .replace(/\b(?:right now|today|tomorrow|this evening|this afternoon|this morning|please|currently)\b.*$/i,'')
+  .replace(/\s+(?:weather|forecast)\s*$/i,'')
+  .replace(/[?.!,]+$/g,''),110);
+ const nonPlace=/^(?:weather|forecast|search|search for|lookup|check|report|now|here|outside|there|is|was|will|like|what|how|conditions|in|for|at|near)$/i;
+ if(explicit&&!nonPlace.test(explicit))return explicit;
  if(typeof location==='string'&&trim(location,100))return trim(location,100);
  if(location&&typeof location==='object'&&trim(location.city,80))return trim(location.city+' '+trim(location.state||location.region,60),110);
  return '';
@@ -166,6 +175,12 @@ export async function currentWeather(message,location=null,fetcher=fetch){
     +(lower.includes(state)&&state.length>=3?5:0)+(lower.includes(country)&&country.length>=3?2:0);};
   places.sort((a,b)=>score(b)-score(a));
   const target=places[0];
+  // Never silently answer for a different state when speech supplied one.
+  // "Albia Iowa" must not turn into another Albia in another state.
+  const stateName=[...US_STATES].filter(x=>x.length>=3&&
+   (lower.endsWith(', '+x)||lower.endsWith(' '+x))).sort((a,b)=>b.length-a.length)[0];
+  if(stateName&&trim(target.admin1,90).toLowerCase()!==stateName)
+   return {ok:false,needsLocation:true,output:'I could not verify '+place+' in '+stateName+'. Please repeat the town and state; I will not use weather for a different place.'};
   if(!Number.isFinite(target.latitude)||!Number.isFinite(target.longitude))throw Error('coordinates_missing');
   const url='https://api.open-meteo.com/v1/forecast?'+new URLSearchParams({
    latitude:String(target.latitude),longitude:String(target.longitude),
