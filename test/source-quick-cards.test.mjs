@@ -41,7 +41,7 @@ test('homepage and Oracle swipe each original provider card with its controls, n
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
  assert.match(deck,/function registerSourceCards\(\)/);
- assert.match(deck,/querySelectorAll\('#siteQuickCards \.iqc-card\[data-source-id\], #premiumSourceCards \.iqc-card\[data-source-id\]'\)/);
+ assert.match(deck,/#brandProductCards \.iqc-card\[data-source-id\]/);
  assert.match(deck,/feedId:id/);
  assert.match(deck,/entries\.push\(entry\)/);
  assert.doesNotMatch(deck,/\['siteQuickCards','Source quick cards/);

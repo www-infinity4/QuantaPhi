@@ -100,7 +100,7 @@ function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
  // Move the ORIGINAL article, preserving its search field, player and listeners.
  let added=false;
- for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id]')){
+ for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id]')){
   if(node.dataset.sourceReady!=='true')continue;
   const id=node.dataset.sourceId;
   if(!/^[a-z0-9-]+$/.test(id||'')||entries.some(e=>e.feedId===id))continue;
@@ -122,7 +122,8 @@ function registerSourceCards(){
    // Lead with an original working source card, not the same static store card.
    const sources=entries.filter(e=>e.id.startsWith('source-')&&available(e))
     .sort((a,b)=>a.count-b.count||entries.indexOf(a)-entries.indexOf(b));
-   const candidate=sources[0]||google;
+   const products=sources.filter(e=>e.node.closest('#brandProductCards'));
+   const candidate=products[0]||sources[0]||google;
    if(candidate&&candidate!==active)show(candidate,false);
   }
   else if(!active&&!expanded)start();

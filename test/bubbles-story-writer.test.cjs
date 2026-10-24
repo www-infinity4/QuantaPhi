@@ -19,13 +19,14 @@ test('QuantaPhi mounts Bubbles beside Media Star and loads all versioned assets'
  assert.ok(!html.includes('href="#bubblesAICard"'));
 });
 
-test('search-first public homepage does not create a Bubbles orb or start microphone services',()=>{
- const document={body:{classList:{contains:name=>name==='oracle-quanta'}},
-  getElementById(){throw new Error('public search must not mount Bubbles')}};
- const window={};
- assert.doesNotThrow(()=>vm.runInNewContext(source('bubbles-ai.js'),{document,window,console}));
- assert.equal(window.__QuantaBubblesMounted,undefined);
- assert.match(source('index.html'),/<body class="oracle-surface oracle-quanta /);
+test('home keeps the working Bubbles orb while APK and Chrome download controls stay collapsed',()=>{
+ const code=source('bubbles-ai.js'),page=source('index.html');
+ assert.match(code,/const launcher=create\('button','ba-launcher'/);
+ assert.doesNotMatch(code,/if\(document\.body\?\.classList\?\.contains\?\.\('oracle-quanta'\)\)return/);
+ assert.match(page,/<details class="q-install-details"/);
+ assert.match(page,/href="\/bubbles-chrome\.html">Install Bubbles in Chrome<\/a>/);
+ assert.match(page,/href="\/downloads\/bubbles\.apk"/);
+ assert.match(page,/<section id="bubblesAICard"/);
 });
 
 test('image-to-story flow inspects real picture bytes; no filename-based story guessing',()=>{
