@@ -192,7 +192,8 @@ export function hasModelToolLeak(answer){
  // Short cursor envelopes such as {"id":"https://...","cursor":0} are also
  // unexecuted model instructions, not a completed publisher-page read.
  const rawCursorDraft=/^\s*\{[^{}\n]{0,1000}"(?:cursor|next_cursor|read_cursor|page_token)"\s*:\s*(?:\d+|["'])[^{}\n]{0,500}\}\s*$/i.test(text);
- return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft||embeddedToolDraft||rawCursorDraft;
+ const actionParameters=/["']action["']\s*:\s*["'](?:read_repo|read_repository|read_file|search|web_search|commit_files|create_pr|deploy)["'][\s\S]{0,1000}["']parameters["']\s*:/i.test(text);
+ return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft||embeddedToolDraft||rawCursorDraft||actionParameters;
 }
 // A planning fragment is not a final answer even if the source search completed.
 export function hasUnfinishedResearchDraft(answer){
@@ -743,7 +744,7 @@ export default {async fetch(request,env){
  const url=new URL(request.url);
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
  if(url.pathname==='/mcp')return handleMcp(request,env,command=>runMcpRead(request,env,command));
- if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261022-read-agent-v2-github-raw-fallback',tools:{githubRawReadFallback:'public-main-403-429-only',readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
+ if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261022-read-agent-v2-github-raw-fallback',tools:{githubRawReadFallback:'public-main-403-429-only',replyActionEnvelopes:'blocked-v1',readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});
  if(!ORIGINS.has(request.headers.get('Origin')))return response(request,{ok:false,error:'origin_not_allowed'},403);
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:headers(request)});
  if(request.method==='POST'&&url.pathname==='/v1/intent'){

@@ -239,6 +239,7 @@ function show(entry,remember=true){
  const marker=document.createComment('Oracle card original location: '+entry.id);
  entry.node.parentNode.insertBefore(marker,entry.node);entry.marker=marker;
  stage.append(entry.node);active=entry;
+ void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
  // Every original Oracle widget receives the same five real actions.
  // Source cards already own the toolbar inside mountCardTools.
  if(!entry.id.startsWith('source-')){
