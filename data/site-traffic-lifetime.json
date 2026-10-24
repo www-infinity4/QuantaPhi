@@ -19,5 +19,6 @@
   "coverageContinuous": true,
   "historicComplete": false,
   "includesBots": true,
-  "uniqueVisitors": false
+  "uniqueVisitors": false,
+  "refreshConfigured": false
 }

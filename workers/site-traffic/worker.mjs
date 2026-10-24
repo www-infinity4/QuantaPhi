@@ -80,6 +80,7 @@ export default {
   if(request.method!=='GET'&&request.method!=='HEAD')return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
   try{
    const snapshot=await readLedger(env.TRAFFIC_LEDGER);
+   snapshot.refreshConfigured=Boolean(env.SITE_TRAFFIC_CLOUDFLARE_TOKEN);
    // Never block the accumulating counter when an analytics refresh fails.
    const stamp=Date.parse(snapshot.fetchedAt);
    if(env.SITE_TRAFFIC_CLOUDFLARE_TOKEN&&ctx?.waitUntil&&(!Number.isFinite(stamp)||Date.now()-stamp>15*60*1000)){
