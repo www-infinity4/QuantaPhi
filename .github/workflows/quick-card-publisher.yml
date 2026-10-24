@@ -9,9 +9,6 @@ on:
       - 'quick-card-share.js'
       - 'bubbles-x-connect.html'
       - 'test/quick-card-share.test.mjs'
-      - 'quick-card-share.js'
-      - 'bubbles-x-connect.html'
-      - 'test/quick-card-share.test.mjs'
       - 'index.html'
       - '.github/workflows/quick-card-publisher.yml'
   push:
@@ -21,6 +18,9 @@ on:
       - 'test/quick-card-publisher.test.mjs'
       - 'published-quick-card*'
       - 'quick-card-builder*'
+      - 'quick-card-share.js'
+      - 'bubbles-x-connect.html'
+      - 'test/quick-card-share.test.mjs'
       - 'index.html'
       - '.github/workflows/quick-card-publisher.yml'
 jobs:
