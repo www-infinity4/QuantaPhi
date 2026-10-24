@@ -114,6 +114,21 @@ function registerSourceCards(){
  }
 }
 window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
+// Discover widgets mounted after the deferred deck script, including roots that
+// did not exist at its first scan. Reparenting is ignored once registered.
+function registerLateWidgets(){
+ let added=false;
+ for(const [id,title] of unique){
+  if(entries.some(e=>e.id===id))continue;
+  const node=document.getElementById(id);if(!node)continue;
+  const [feedId,category,feature]=CARD_DIRECTIONS[id]||['deck-'+id.toLowerCase(),'Discovery',title];
+  entries.push({id,title,feedId,category,feature,study:title,node,marker:null,count:Number(counts[id])||0});
+  observe.observe(node,{childList:true});added=true;
+ }
+ registerSourceCards();
+ if(added){updateTabs();predict();if(!active)start();}
+}
+
 // Module evaluation ordering can differ across mobile WebViews; recover both.
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
@@ -144,7 +159,7 @@ function predict(){
   reason.textContent=proposed?(proposed.title+' · '+pick.reason):
    'Use a card to help choose the next useful action.';
  }else{
-  proposed=possible.find(x=>x!==active)||possible[0];
+  proposed=possible.filter(x=>x!==active).sort((a,b)=>a.count-b.count)[0]||possible[0];
   reason.textContent=proposed?'Next: '+proposed.title:'';
  }
  next.disabled=possible.length<2;
@@ -183,14 +198,14 @@ window.addEventListener('quantaphi:feed-updated',e=>{
  feedState=readDirections();
  updateTabs();predict();
 });
-Promise.all([import('/quanta-feed-rank.mjs?v=20261024-directions1'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261024-clean3'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1')]).then(([r,q])=>{
  directionApi=r;quantApi=q;feedState=readDirections();updateTabs();
  if(selectedTab==='for-you')void connectQuant();
  predict();
 }).catch(()=>{reason.textContent='Card directions are not available; original interactive cards are still usable.'});
 function available(entry){
- if(!entry?.node)return false;
+ if(!entry?.node?.isConnected)return false;
  if(entry.node.hidden)return false;
  if(entry.id==='infiniteBook'&&entry.node.querySelector('.ib-story')===null)return false;
  // Root components can be empty until their asynchronous scripts finish.
@@ -313,8 +328,9 @@ function start(){if(!active&&!expanded){const request=entries.find(x=>x.id===spo
  if(first)show(first,false);else status.textContent='Loading original interactive cards…';
 }}
 start();
-const observe=new MutationObserver(()=>{if(!active)start();});
+const observe=new MutationObserver(()=>{predict();if(!active)start();});
 for(const entry of entries)observe.observe(entry.node,{childList:true,subtree:false,attributes:entry.id==='result',attributeFilter:entry.id==='result'?['hidden']:undefined});
+new MutationObserver(registerLateWidgets).observe(document.querySelector('main.app')||document.body,{childList:true,subtree:true});
 // Reads & Realms can relocate itself on an async home/search cycle. Keep
 // exactly one live DOM node and never fight the search-mode owner.
 new MutationObserver(()=>{

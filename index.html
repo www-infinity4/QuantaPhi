@@ -199,7 +199,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 <style>#quantaAgentIterations[hidden],#robotDirections[hidden]{display:none!important}</style>
 <link rel="stylesheet" href="/halloween-phi.css?v=20261013-cinema5">
 <link rel="stylesheet" href="/phi-channel-cards.css?v=20261015-inline1">
-<link rel="stylesheet" href="/oracle-card-deck.css?v=20261024-directions1">
+<link rel="stylesheet" href="/oracle-card-deck.css?v=20261024-clean3">
 <link rel="stylesheet" href="/google-trending-cards.css?v=20261023-trendsync3">
 <link rel="stylesheet" href="/phi-project-cards.css?v=20261012-action1">
 <link rel="stylesheet" href="/shop-ad-phi.css?v=20261013-cards2">
@@ -339,33 +339,19 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
   <a href="/quick-card-builder.html" style="display:inline-block;border-radius:12px;padding:12px 18px;background:#a52520;color:white;font-weight:800;text-decoration:none">+ Create a Quick Card</a>
 </div>
 <section id="oracleCardDeck" class="oracle-card-deck" aria-label="Interactive Oracle widget viewer">
-  <div class="oracle-card-deck-head"><span class="oracle-card-deck-kicker">INFINITY 2026® · ORACLE INTERACTIVE</span><h2>Choose what happens next</h2>
-    <p>Watch a channel, read a true story, write one of your own, or work with Bubbles. Every card remains interactive.</p>
-  </div>
   <div class="oracle-direction-tabs" role="tablist" aria-label="Choose card direction">
     <button type="button" role="tab" data-oracle-feed="public" aria-selected="true">Public</button>
     <button type="button" role="tab" data-oracle-feed="for-you" aria-selected="false">For You</button>
     <button type="button" role="tab" data-oracle-feed="following" aria-selected="false">Following</button>
   </div>
   <div class="oracle-card-deck-nav" role="group" aria-label="Flip interactive widgets">
-    <button id="oracleCardPrevious" type="button">◀ Previous</button>
+    <button id="oracleCardPrevious" type="button" aria-label="Previous card">‹</button>
     <strong id="oracleCardNow" aria-live="polite">Finding your next card…</strong>
-    <button id="oracleCardNext" type="button">Next useful card ▶</button>
+    <button id="oracleCardNext" type="button" aria-label="Next card">›</button>
   </div>
   <div class="oracle-direction-action">
     <button id="oracleCardFollow" type="button" aria-pressed="false" hidden>+ Follow</button>
     <p id="oracleCardReason" role="status" aria-live="polite">Choosing another useful interactive card…</p>
-  </div>
-  <div class="oracle-card-deck-feature" aria-label="Featured search trend cards">
-    <button data-oracle-spotlight="googleTrendNba" type="button" aria-controls="oracleCardStage">🏀 NBA trends</button>
-    <button data-oracle-spotlight="googleTrendMlb" type="button" aria-controls="oracleCardStage">⚾ World Series</button>
-    <button data-oracle-spotlight="googleTrendCulture" type="button" aria-controls="oracleCardStage">🎬 Media trends</button>
-    <a href="/trending-now.html">All trending tools ↗</a>
-    <button data-oracle-spotlight="pixieStoryCard" type="button" aria-controls="oracleCardStage">✿ Pixie Stories</button>
-  </div>
-  <div class="oracle-card-deck-feature" aria-label="Featured property card shortcut">
-    <button id="oracleCardCardone" type="button" aria-controls="oracleCardStage">View Cardone property card</button>
-    <a href="/cardone-capital.html">Open full property page ↗</a>
   </div>
   <div class="oracle-card-deck-stage" id="oracleCardStage" aria-live="off"></div>
   <button id="oracleCardScroll" type="button" class="oracle-card-scroll" aria-expanded="false">↓ Scroll interactive cards / widgets</button>
@@ -1845,7 +1831,7 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <!-- Legacy 100-card discovery feed retired from homepage; source remains in repository. -->
 <script type="module" src="/source-quick-cards.mjs?v=20261024-foxone1"></script>
 <script type="module" src="/science-quick-cards.mjs?v=20261023-science1"></script>
-<script defer src="/oracle-card-deck.js?v=20261024-foxone1"></script>
+<script defer src="/oracle-card-deck.js?v=20261024-clean3"></script>
 <script defer src="/phi-image-language.js?v=20261011-natural-copy1"></script>
 <script defer src="/phi-visual-render.js?v=20261011-exact-type1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>

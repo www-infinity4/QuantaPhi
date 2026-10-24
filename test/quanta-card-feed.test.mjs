@@ -186,3 +186,20 @@ test('Oracle viewer uses same activity source, scoped tabs and original mounted 
  assert.match(style,/\.oracle-direction-tabs/);
  assert.match(style,/\.oracle-direction-action/);
 });
+
+test('every tab completes repeated catalog rounds despite extreme favorite scores',()=>{
+ const cards=ALL_FEED_CARDS.slice(0,12);
+ for(const tab of ['public','for-you','following']){
+  let state=cleanFeedState({following:cards.map(c=>c.id),counts:{[cards[0].id]:5000},viewed:{[cards[0].id]:20}});
+  state={...state,catalog:cards,quantScores:{[cards[0].id]:70}};
+  let current=cards[0].id;
+  for(let round=0;round<3;round++){
+   const seen=new Set();
+   for(let i=0;i<cards.length-1;i++){
+    const next=nextFeedDirection(cards,tab,state,current).card;
+    seen.add(next.id);state=markViewed(state,next.id);current=next.id;
+   }
+   assert.equal(seen.size,cards.length-1,tab+' must expose every less-seen card each round');
+  }
+ }
+});

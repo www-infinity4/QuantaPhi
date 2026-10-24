@@ -77,8 +77,10 @@ export function nextFeedDirection(cards,tab,state,currentId='',query=''){
  const other=filtered.filter(c=>c.id!==currentId);
  if(!other.length)return {card:filtered[0],reason:'Only one card matches this view'};
  // New content takes precedence in Public but is context-aware within the unseen set.
- const unseen=other.filter(c=>!(state.viewed?.[c.id]||0));
- const pool=tab==='public'&&unseen.length?unseen:other;
+ const leastSeen=Math.min(...other.map(c=>state.viewed?.[c.id]||0));
+ // Rank usefulness within the least-exposed group in every tab. A favorite
+ // cannot starve the remaining catalog, even after the first complete round.
+ const pool=other.filter(c=>(state.viewed?.[c.id]||0)===leastSeen);
  if(!current&&tab==='public')return {card:pool[(state.advance||0)%pool.length],reason:'Discover another interactive card'};
  const scored=pool.map(card=>{
   const relation=directionScore(current,card,state);
