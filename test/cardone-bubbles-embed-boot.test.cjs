@@ -76,7 +76,7 @@ test('Cardone questions use read-only issuer research rather than an internal se
  assert.match(data.researchContext,/original property-investment question/);
  assert.match(data.researchContext,/how are distributions funded/);
  assert.equal(Object.prototype.hasOwnProperty.call(data,'Authorization'),false);
- assert.match(ai,/cardoneReplyUnusable\(rawAnswer\)/);
+ assert.match(ai,/cardoneReplyUnusable\(serviceAnswer\)/);
  assert.match(ai,/cardoneSourceFallback\(request\)/);
 });
 
