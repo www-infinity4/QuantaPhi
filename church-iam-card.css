@@ -1,0 +1,27 @@
+/* Church of I AM promotion: original Gary Cardone portrait, real entry links, no fabricated streams */
+.iam-card{position:relative;isolation:isolate;overflow:hidden;border-radius:20px!important;border:1px solid #bda9b5!important;background:linear-gradient(125deg,#151321,#34223e 55%,#1c2036)!important;color:#fff!important;padding:0!important}
+.iam-card,.iam-card *{box-sizing:border-box}
+.iam-card .iam-layout{display:grid;grid-template-columns:minmax(0,1fr);min-width:0}
+.iam-card .iam-photo{display:block;width:100%;aspect-ratio:16/10;max-height:400px;object-fit:cover;object-position:center 26%;background:#29243c}
+.iam-card .iam-photo-wrap{display:block;position:relative;overflow:hidden;background:#24202c}
+.iam-card .iam-photo-wrap:after{content:"";pointer-events:none;position:absolute;inset:0;background:linear-gradient(0deg,#21172e80,transparent 65%)}
+.iam-card .iam-info{position:relative;padding:20px 18px 19px;color:#fff!important}
+.iam-card .iam-kicker{font:850 12px/1.5 system-ui,sans-serif;letter-spacing:.14em;color:#e0c8e8!important;text-transform:uppercase}
+.iam-card .iam-title{font:950 clamp(33px,8vw,53px)/1.04 system-ui,sans-serif;letter-spacing:-.06em;margin:8px 0;color:#fff!important}
+.iam-card .iam-host{font:800 17px/1.5 system-ui,sans-serif;color:#f4e8fa!important;margin:0 0 12px}
+.iam-card .iam-copy{font:450 16px/1.6 system-ui,sans-serif;color:#f3ebf4!important;margin:0 0 13px}
+.iam-card .iam-time{display:inline-flex;gap:8px;align-items:center;border:1px solid #dcc3e5;border-radius:999px;padding:7px 13px;background:#ffffff12;color:#fff!important;font:800 13px/1.35 system-ui,sans-serif}
+.iam-card .iam-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:17px}
+.iam-card .iam-links a{display:flex;align-items:center;justify-content:center;min-height:52px;min-width:0;padding:10px;border:1px solid #d8c5e9;border-radius:12px;background:#f0e5fb;color:#33214e!important;text-decoration:none!important;font:800 14px/1.3 system-ui,sans-serif;text-align:center;overflow-wrap:anywhere}
+.iam-card .iam-links .iam-primary{background:#fff;color:#352044!important;border-color:#fff}
+.iam-card .iam-disclosure{font:450 11px/1.45 system-ui,sans-serif;color:#e4dce9!important;margin:14px 0 0}
+.iam-card .iam-quick-actions{margin-top:16px}
+.iam-card .qca-toolbar{background:#fffdfb;color:#342532}
+.iam-card .iam-shimmer{position:absolute;pointer-events:none;inset:-60% auto -60% -40%;width:40%;transform:rotate(19deg);background:linear-gradient(90deg,transparent,#ffffff12,transparent);animation:iam-sheen 12s ease-in-out infinite}
+.iam-card.iam-sunday{border-color:#f3c976!important;box-shadow:0 7px 27px #bb916d6b}
+.iam-card .iam-sunday-callout{display:none;color:#fff7d7!important;background:#896333;padding:9px 12px;font-weight:900;font-size:13px}
+.iam-card.iam-sunday .iam-sunday-callout{display:block}
+@keyframes iam-sheen{0%,75%,100%{transform:translateX(-300%) rotate(19deg)}85%{transform:translateX(600%) rotate(19deg)}}
+@media(min-width:720px){.iam-card .iam-layout{grid-template-columns:40% minmax(0,1fr)}.iam-card .iam-photo{height:100%;max-height:none;aspect-ratio:4/5}.iam-card .iam-info{padding:26px}}
+@media(max-width:430px){.iam-card .iam-info{padding:16px}.iam-card .iam-links{grid-template-columns:1fr}.iam-card .iam-title{font-size:35px}}
+@media(prefers-reduced-motion:reduce){.iam-card .iam-shimmer{animation:none}}
