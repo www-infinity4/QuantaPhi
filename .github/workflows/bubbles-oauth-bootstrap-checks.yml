@@ -1,0 +1,41 @@
+name: Bubbles Cloudflare OAuth API bootstrap checks
+on:
+  pull_request:
+    paths:
+      - 'workers/infinity-brain-clock/cloudflare-oauth-bootstrap.mjs'
+      - 'workers/infinity-brain-clock/cloudflare-token-broker.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
+      - 'bubbles-ai.js'
+      - 'test/bubbles-oauth-client-bootstrap.test.mjs'
+      - '.github/workflows/bubbles-oauth-bootstrap-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/infinity-brain-clock/cloudflare-oauth-bootstrap.mjs'
+      - 'workers/infinity-brain-clock/cloudflare-token-broker.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
+      - 'test/bubbles-oauth-client-bootstrap.test.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  bootstrap-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Syntax and locked-down OAuth bootstrap tests
+        run: |
+          node --check workers/infinity-brain-clock/cloudflare-token-broker.mjs
+          node --check workers/infinity-brain-clock/cloudflare-oauth-bootstrap.mjs
+          node --check workers/infinity-brain-clock/worker.js
+          node --check bubbles-ai.js
+          node --test test/bubbles-oauth-client-bootstrap.test.mjs test/brain-cloudflare-token-broker.test.mjs
+      - name: Confirm no credential material in bootstrap source
+        run: |
+          ! grep -En '(^|[^[:alpha:]])(sk_live|cf_api_token|ghp_)[A-Za-z0-9_-]{15,}' workers/infinity-brain-clock/cloudflare-oauth-bootstrap.mjs

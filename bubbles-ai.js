@@ -505,6 +505,50 @@ macroBox.append(macroToggle,macroContent);
 const macroInfo=create('p','ba-muted','Web controls operate this Bubbles session. Android system actions need the installed Bubbles service, user permissions and actual results.');
 // Cloudflare's token admin permission lives in a SERVER secret, not the
 // Android APK. This owner-facing two-tap card never displays minted tokens.
+async function setupCloudflareOAuthClient(){
+ if(embedded||!ownerReady){status.textContent='Connect verified owner mode to configure the Cloudflare OAuth app.';return;}
+ let headers;
+ try{headers=await verifiedOwnerHeaders()}catch{status.textContent='Owner verification required.';return}
+ try{
+  const r=await bubblesFetch(BRAIN+'/work/cloudflare/oauth-client-plan',{
+   method:'POST',headers:{...headers,'Content-Type':'application/json'},
+   body:'{}',cache:'no-store'},15000);
+  const plan=await r.json().catch(()=>({}));
+  if(!r.ok||!plan.ok)throw Error(String(plan.error||'oauth_client_setup_unavailable'));
+  if(plan.installed){status.textContent='Cloudflare OAuth client credentials are already installed on the server. Public-client review is still separate.';return}
+  const card=create('div','ba-cloudflare-approval');
+  const explain=create('p','ba-muted',
+   'Register Bubbles AI - QuantaPhi using Cloudflare’s official API. The initial client remains PRIVATE. This owner-approved action creates short-lived OAuth Clients Write and Workers Scripts Edit API tokens, then places the OAuth client ID, secret and scope allowlist in Cloudflare Worker secrets. No credentials appear in chat.');
+  const scopes=create('p','ba-muted','Requested per-user OAuth scopes: '+String((plan.scopes||[]).join(', ')).slice(0,900)+'. Each connected Cloudflare user must still approve access.');
+  const state=create('p','ba-muted',plan.managerConfigured?
+   'Approve this one-time OAuth client registration and secure server installation.':
+   'The server-side token manager cannot issue OAuth client credentials. No client was created.');
+  const approve=create('button','ba-control','Create Bubbles OAuth client');
+  const cancel=create('button','ba-control','Cancel');
+  approve.type='button';cancel.type='button';approve.disabled=!plan.managerConfigured;
+  cancel.addEventListener('click',()=>{approve.disabled=true;cancel.disabled=true;state.textContent='Cancelled; no registration requested.'});
+  approve.addEventListener('click',async()=>{
+   approve.disabled=true;cancel.disabled=true;
+   state.textContent='Submitting owner-approved OAuth client registration through Cloudflare API…';
+   try{
+    const auth=await verifiedOwnerHeaders();
+    const res=await bubblesFetch(BRAIN+'/work/cloudflare/oauth-client-confirm',{
+     method:'POST',headers:{...auth,'Content-Type':'application/json'},
+     body:JSON.stringify({requestId:plan.requestId}),cache:'no-store'},95000);
+    const result=await res.json().catch(()=>({}));
+    if(!res.ok||!result.ok)throw Error(String(result.error||'oauth_client_registration_unverified'));
+    state.textContent='Cloudflare OAuth client credentials installed and API verified. Client ID: '+String(result.clientId||'not reported').slice(0,100)+
+      '. Publication/domain verification and an actual user login test are not yet verified.';
+   }catch(error){
+    state.textContent='OAuth registration NOT verified: '+String(error.message||error).slice(0,240)+
+      '. Use a new owner-approved setup card only after inspecting the failure receipt.';
+   }
+  });
+  card.append(explain,scopes,state,approve,cancel);
+  conversation.append(card);if(showing)chatScroll.scrollTop=chatScroll.scrollHeight;
+  status.textContent='Review and approve the Cloudflare OAuth API registration in this card.';
+ }catch(e){status.textContent='OAuth setup unavailable: '+String(e.message||e).slice(0,170)}
+}
 async function proposeCloudflareWorkerToken(){
  if(embedded||!ownerReady){status.textContent='Connect the verified owner wallet before requesting Cloudflare token management.';return;}
  let headers;
@@ -716,6 +760,7 @@ const macroButtons=[
  ['Check GitHub executor','Read the real authenticated GitHub capability or missing-credential error',()=>void sendMessage('check GitHub access')],
  ['Run Python sandbox','Request the pinned GitHub Actions Python fixture, not a phone shell',()=>void sendMessage('run Python sandbox/hello.py')],
  ['Check coder runs','Read actual GitHub Actions sandbox status and receipts',()=>void sendMessage('check coder sandbox results')],
+ ['Cloudflare OAuth setup','Register Bubbles as a private Cloudflare OAuth client using the owner-approved server API',()=>void setupCloudflareOAuthClient()],
  ['Cloudflare token manager','Review and explicitly approve short-lived Cloudflare Worker access without sharing API keys with the APK',()=>void proposeCloudflareWorkerToken()],
  ['Voice','Preview the currently selected speaking voice',()=>previewVoice.click()],
  ['ChatGPT','Use Android-first permissioned sign-in',()=>gptConnect.click()]

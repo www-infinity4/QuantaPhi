@@ -23,6 +23,12 @@ export const CAPABILITIES=Object.freeze({
   resource:'account',
   risk:'Cloudflare Worker source and version changes (not full account administration)'
  }),
+ 'oauth-client-write':Object.freeze({
+  name:'OAuth Clients Write',
+  groupNames:['OAuth Clients Write','OAuth Client Write'],
+  resource:'account',
+  risk:'Create and manage OAuth client registrations in one Cloudflare account; does not authorize users\' resources'
+ }),
  'workers-script-read':Object.freeze({
   name:'Workers Scripts Read',
   groupNames:['Workers Scripts Read'],
