@@ -8,12 +8,16 @@
 .oracle-card-deck-nav{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:7px;align-items:center}
 .oracle-card-deck-nav button,.oracle-card-scroll{min-height:47px;padding:8px 10px;border-radius:13px;background:#69309e;color:#fff;font-size:13px;line-height:1.2;touch-action:manipulation}
 .oracle-card-deck-nav strong{font-size:14px;text-align:center;line-height:1.3}
+.oracle-card-deck-feature{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+.oracle-card-deck-feature button,.oracle-card-deck-feature a{font:inherit;font-weight:800;font-size:13px;display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px}
+.oracle-card-deck-feature button{color:#fff;background:#a52b28;border:1px solid #a52b28;cursor:pointer}
+.oracle-card-deck-feature a{border:1px solid #baa39a;background:#fff;color:#7c231f;text-decoration:none}
 .oracle-card-deck-stage{margin:12px 0 9px;min-width:0;max-width:100%}
 .oracle-card-deck-stage:empty{display:none}
 .oracle-card-deck-stage>section{max-width:100%;margin:0!important}
 .oracle-card-deck-stage .ba-panel{z-index:9999}
 .oracle-card-scroll{display:block;width:100%;background:#a33042;font-weight:900;font-size:15px}
 .oracle-card-deck-status{font-size:12px;line-height:1.45;margin:8px 0 0;color:#604d6e}
-.oracle-card-deck-active:not(.oracle-shelf-open) main.app > :is(#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#result,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:none!important}
-.oracle-shelf-open main.app > :is(#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:block}
+.oracle-card-deck-active:not(.oracle-shelf-open) main.app > :is(#cardoneCapitalOffer,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#result,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:none!important}
+.oracle-shelf-open main.app > :is(#cardoneCapitalOffer,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:block}
 @media(max-width:390px){.oracle-card-deck{padding:11px}.oracle-card-deck-nav{grid-template-columns:1fr 1fr}.oracle-card-deck-nav strong{grid-column:1/-1;grid-row:1}.oracle-card-deck-nav button{font-size:13px;min-height:48px}}
