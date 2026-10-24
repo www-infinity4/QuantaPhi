@@ -1,0 +1,41 @@
+name: Bubbles OAuth Client Permission Probe
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/bubbles-oauth-client-permission-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Inspect existing deployment token's OAuth-client permission (no client created)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          node --input-type=module <<'NODE'
+          const token=process.env.CLOUDFLARE_API_TOKEN||'';
+          const account=process.env.CLOUDFLARE_ACCOUNT_ID||'';
+          if(!token||!/^[0-9a-f]{32}$/.test(account)){
+            console.log('BUBBLES_OAUTH_API_PROBE '+JSON.stringify({credentialPresent:!!token,accountConfigured:/^[0-9a-f]{32}$/.test(account),result:'credential_or_account_unavailable'}));
+            process.exit(0);
+          }
+          const path='https://api.cloudflare.com/client/v4/accounts/'+account+'/oauth_clients';
+          const headers={Authorization:'Bearer '+token,'Content-Type':'application/json'};
+          async function probe(method,body){
+            const r=await fetch(path,{method,headers,...(body?{body:JSON.stringify(body)}:{}),redirect:'error',signal:AbortSignal.timeout(15000)});
+            const j=await r.json().catch(()=>({}));
+            return {httpStatus:r.status,apiSuccess:j.success===true,errorCodes:Array.isArray(j.errors)?j.errors.map(e=>e.code).filter(n=>typeof n==='number').slice(0,5):[]};
+          }
+          const read=await probe('GET');
+          // No required fields: Cloudflare's schema guarantees this cannot
+          // create a client. A validation response proves only that the
+          // existing credential reached the validation layer, not full scope.
+          const write=await probe('POST',{});
+          console.log('BUBBLES_OAUTH_API_PROBE '+JSON.stringify({credentialPresent:true,read,invalidCreateProbe:write,clientCreated:false}));
+          if(write.apiSuccess||write.httpStatus<400)throw Error('unexpected_empty_client_creation_check');
+          NODE
