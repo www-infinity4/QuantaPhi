@@ -15,6 +15,7 @@ on:
       - 'quanta-feed-rank.mjs'
       - 'quanta-feed.mjs'
       - 'quanta-feed-spaces.mjs'
+      - 'quanta-feed-quants.mjs'
       - 'quanta-feed.css'
       - 'quanta-feed-card.html'
       - 'test/quanta-card-feed.test.mjs'
@@ -40,6 +41,7 @@ on:
       - 'quanta-feed-rank.mjs'
       - 'quanta-feed.mjs'
       - 'quanta-feed-spaces.mjs'
+      - 'quanta-feed-quants.mjs'
       - 'quanta-feed.css'
       - 'quanta-feed-card.html'
       - 'test/quanta-card-feed.test.mjs'
@@ -78,6 +80,7 @@ jobs:
           node --check quanta-feed-rank.mjs
           node --check quanta-feed.mjs
           node --check quanta-feed-spaces.mjs
+          node --check quanta-feed-quants.mjs
           node --test test/source-quick-cards.test.mjs test/science-quick-cards.test.mjs test/quanta-card-feed.test.mjs
           node --test test/mini-card-apps.test.mjs test/test-ground-ai.test.mjs test/bubbles-github-public-read.test.mjs test/bubbles-tools.test.mjs test/bubbles-card-workspace.test.mjs
   live-bubbles-chat:
