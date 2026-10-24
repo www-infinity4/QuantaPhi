@@ -22,6 +22,7 @@ export const cards=Object.freeze([
  app('trending-nba','Trending NBA Games','/?card=nba','QuantaPhi',['knicks celtics','bulls bucks','nba matchup','nba trends']),
  app('trending-mlb','World Series Tracker','/?card=mlb','QuantaPhi',['world series','rays brewers','mlb trends']),
  app('trending-media','Trending Media Explorer','/?card=media','QuantaPhi',['avengers doomsday','ethan klein','media trends']),
+ app('pixie-stories','Pixie Stories','/pixie/','QuantaPhi',['pixie','pixie story','pixie storybook','pixie quick card']),
  app('cardone-capital','Cardone Real Estate Card','/cardone-capital.html','QuantaPhi',['cardone','grant cardone','cardone capital','10x westshore','westshore south','real estate card']),
  app('quantaphi','QuantaPhi','/','QuantaPhi',['quantaphi home','quantaphi website','quantaphi page']),
  app('alien-coin','Alien Coin','/alien-coin/','Alien-Coin',['alien coin website']),
