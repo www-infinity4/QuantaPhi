@@ -8,6 +8,7 @@ if(!host||!stage)return;
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
+ ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
  ['infiniteBook','Read an original story'],
  ['phiChannelCards','Watch a channel'],
  ['phiStoryWriter','Write a story'],
@@ -30,6 +31,9 @@ const choices=[
 const unique=[...new Map(choices.map(([id,title])=>[id,title])).entries()];
 const entries=unique.map(([id,title])=>({id,title,node:document.getElementById(id),marker:null,count:0})).filter(x=>x.node);
 const STORE='oracle:card-activity:v1';
+const cardoneButton=document.getElementById('oracleCardCardone');
+const CARDONE_ID='cardoneCapitalOffer';
+const spotlightRequested=(()=>{try{const url=new URL(location.href);return url.searchParams.get('card')==='cardone'||url.hash==='#cardoneCapitalOffer'}catch{return false}})();
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
 entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
 let active=null,expanded=false;
@@ -70,6 +74,17 @@ function advance(direction){
  const i=active?list.indexOf(active):-1;
  show(list[(i+direction+list.length)%list.length]);
 }
+cardoneButton?.addEventListener('click',()=>{
+ const entry=entries.find(x=>x.id===CARDONE_ID);
+ if(!available(entry)){status.textContent='The Cardone card is not available in this page version yet.';return;}
+ if(expanded){
+  expanded=false;document.body.classList.remove('oracle-shelf-open');
+  scroll.setAttribute('aria-expanded','false');
+  scroll.textContent='↓ Scroll interactive cards / widgets';
+ }
+ show(entry);
+ host.scrollIntoView?.({block:'start',behavior:'smooth'});
+});
 next.addEventListener('click',()=>advance(1));
 prev.addEventListener('click',()=>advance(-1));
 scroll.addEventListener('click',()=>{
@@ -94,7 +109,7 @@ host.addEventListener('click',e=>{
  counts[entry.id]=Math.min(1000,(counts[entry.id]||0)+1);
 },true);
 document.body.classList.add('oracle-card-deck-active');
-function start(){if(!active&&!expanded){const first=order()[0];if(first)show(first);else status.textContent='Loading original interactive cards…';}}
+function start(){if(!active&&!expanded){const first=spotlightRequested&&available(entries.find(x=>x.id===CARDONE_ID))?entries.find(x=>x.id===CARDONE_ID):order()[0];if(first)show(first);else status.textContent='Loading original interactive cards…';}}
 start();
 const observe=new MutationObserver(()=>{if(!active)start();});
 for(const entry of entries)observe.observe(entry.node,{childList:true,subtree:false,attributes:entry.id==='result',attributeFilter:entry.id==='result'?['hidden']:undefined});
