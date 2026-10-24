@@ -2,6 +2,7 @@ import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
 import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountSpaceSource} from './quanta-feed-spaces.mjs';
+import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,markViewed,markOpened,toggleFollowing} from './quanta-feed-rank.mjs';
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
@@ -21,7 +22,10 @@ const iconFor=c=>/radio/i.test(c.category)?'📻':/coin|silver|gold|metal/i.test
 const create=(tag,cl,text)=>{const node=document.createElement(tag);if(cl)node.className=cl;if(text!==undefined)node.textContent=text;return node;};
 const safeRead=()=>{try{return cleanFeedState(JSON.parse(localStorage.getItem(FEED_STORAGE_KEY)||'{}'));}catch{return cleanFeedState({});}};
 let state=safeRead(),tab='public',current='',query='',showCount=16;
-const ranking=()=>({...state,catalog:ALL_FEED_CARDS});
+// Quant signals are derived in memory from the authenticated user’s existing ledger.
+// They are NEVER written to anonymous localStorage.
+let quantScores={},quantConnected=false,quantAttempted=false;
+const ranking=()=>({...state,catalog:ALL_FEED_CARDS,quantScores});
 const persist=()=>{try{localStorage.setItem(FEED_STORAGE_KEY,JSON.stringify(state));}catch{/* Anonymous state can still work for this page. */}};
 function choose(card){
  if(!card)return;
@@ -85,7 +89,7 @@ function renderHome(){
  const grid=create('div','qf-grid');grid.id='quantaFeedGrid';host.append(grid);
  const more=create('button','qf-more','Show more cards');more.type='button';
  more.addEventListener('click',()=>{showCount+=16;renderResults(false);});host.append(more);
- const privacy=create('p','qf-muted qf-note','For You uses your interactions on this browser only. Following is saved on this device for now; cross-device wallet sync is not yet enabled. No banking or brokerage credentials are read or saved by this feed.');
+ const privacy=create('p','qf-muted qf-note','For You uses signed-in Quant search interests when available and otherwise this browser’s card interactions. Following is saved on this device for now; cross-device wallet sync is not yet enabled. No banking or brokerage credentials are read or saved by this feed.');
  host.append(privacy);
  function renderResults(nextCard){
   const ranked=feedCandidates(ALL_FEED_CARDS,tab,ranking(),query);
@@ -107,10 +111,21 @@ function renderHome(){
   grid.replaceChildren();
   for(const c of ranked.slice(0,showCount))grid.append(makeTile(c,refresh));
   status.textContent=tab==='following'?ranked.length+' followed cards':tab==='for-you'?
-    ranked.length+' recommended cards ranked from your interactions':ranked.length+' public cards · unseen first when using Next';
+    ranked.length+' suggested cards · '+(quantConnected?'your signed-in Quant interests + card activity':'your card interactions on this device'):
+    ranked.length+' public cards · unseen first when using Next';
   more.hidden=ranked.length<=showCount;next.disabled=ranked.length===1;
  }
  renderResults(false);
+ if(tab==='for-you'&&!quantAttempted){
+  quantAttempted=true;
+  // Reuse the SAME authenticated Quant search-history endpoint already used
+  // in Infinity Radio. No chat prompt or provider token is logged or cached.
+  void loadOwnQuantScores(window.QuantaCloudConnection,ALL_FEED_CARDS).then(result=>{
+   quantConnected=result.connected===true;
+   quantScores=result.scores||{};
+   if(tab==='for-you')renderHome();
+  });
+ }
 }
 function renderDetail(){
  const host=document.getElementById('quantaFeedCardDetail');if(!host)return;
