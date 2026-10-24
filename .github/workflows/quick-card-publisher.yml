@@ -39,23 +39,5 @@ jobs:
           curl --fail --show-error --silent --max-time 20 https://quantaphi.org/quick-card-builder.html | grep -q 'id="quickCardCreate"'
           curl --fail --show-error --silent --max-time 20 https://quantaphi.org/published-quick-card.js | grep -q 'paintCard'
           curl --fail --show-error --silent --max-time 20 https://quantaphi.org/published-quick-card.css | grep -q 'qcp-card'
-      - name: Temporary live publishing acceptance
-        run: |
-          node --input-type=module <<'JS'
-          const base='https://quantaphi.org';
-          const form={title:'Quick Card Smoke Test '+Date.now(),website:'https://www.google.com/',description:'Automated one-time verification of durable shareable card publication.',interactionRequest:'Open the real website and show the requested interaction on a durable card.',kind:'visit'};
-          const post=await fetch(base+'/api/quick-cards',{method:'POST',headers:{Origin:base,'Content-Type':'application/json'},body:JSON.stringify(form)});
-          const created=await post.json();
-          if(post.status!==201||!created.ok||!created.cardUrl?.startsWith(base+'/cards/'))throw Error('POST failed: '+post.status+' '+JSON.stringify(created));
-          const detail=await fetch(base+'/api/quick-cards/'+created.slug);
-          const d=await detail.json();
-          if(detail.status!==200||!d.ok||d.card.status!=='unlisted')throw Error('Saved card not found by API');
-          const page=await fetch(created.cardUrl);
-          const html=await page.text();
-          if(page.status!==200||!html.includes('publishedQuickCard')||!html.includes('noindex,follow'))throw Error('Canonical HTML/OG card not served');
-          const feed=await fetch(base+'/api/quick-cards');const listed=await feed.json();
-          if(!feed.ok||!listed.ok||listed.cards.some(c=>c.slug===created.slug))throw Error('Unlisted item leaked to Public feed');
-          console.log('VERIFIED_UNLISTED_SLUG='+created.slug);
-          JS
       - name: Execute publisher tests
         run: node --test test/quick-card-publisher.test.mjs
