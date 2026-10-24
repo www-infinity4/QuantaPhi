@@ -1,4 +1,5 @@
 import {mountCardActions} from '/quanta-card-actions.mjs';
+import {makeShareButton,xShareLink} from '/quick-card-share.js?v=2';
 const host=document.getElementById('publishedQuickCard');const slug=host?.dataset.cardSlug;
 const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
 const browse=url=>{const a=el('a');a.href=url;a.dataset.siteUrl=url;a.dataset.siteTitle='Quick Card · Official website';if(typeof window.QuantaOpenSite==='function'){try{window.QuantaOpenSite(a);return}catch{}}window.open(url,'_blank','noopener,noreferrer');};
@@ -9,6 +10,11 @@ export function paintCard(container,c,{embedded=false}={}){
  const badge=el('p','qcp-eyebrow','QUANTAPHI · ORIGINAL WEBSITE CARD');
  const title=el('h1','',c.title),desc=el('p','qcp-desc',c.description);
  top.append(badge,title,desc);article.append(top);
+ const shareBar=el('div','qcp-share-prominent');
+ const shareStatus=el('p','qcp-small');shareStatus.setAttribute('role','status');shareStatus.setAttribute('aria-live','polite');
+ const share=makeShareButton({url:c.cardUrl,title:c.title+' · QuantaPhi Quick Card',label:'↗ Share this card',status:shareStatus});
+ const xPost=el('a','qcp-x-share','Post card to X ↗');xPost.href=xShareLink(c.cardUrl,c.title);xPost.target='_blank';xPost.rel='noopener noreferrer';
+ shareBar.append(share,xPost);article.append(shareBar,shareStatus);
  if(c.image){const image=el('img','qcp-art');image.src=c.image;image.alt='Artwork supplied for '+c.title;image.loading='lazy';image.referrerPolicy='no-referrer';image.addEventListener('error',()=>image.remove());article.append(image);}
  else article.append(el('div','qcp-brand',new URL(c.website).hostname.replace(/^www\./,'')));
  const info=el('section','qcp-interaction');

@@ -1,3 +1,4 @@
+import {shareQuickCard} from '/quick-card-share.js?v=2';
 const form=document.getElementById('quickCardCreate'),result=document.getElementById('qcpResult'),kind=document.getElementById('qcpKind');
 const show=()=>{document.getElementById('qcpSearchLine').hidden=kind.value!=='search';document.getElementById('qcpVideoLine').hidden=kind.value!=='video';};
 kind.addEventListener('change',show);show();
@@ -23,6 +24,12 @@ function suggestSearch(){
 kind.addEventListener('change',suggestSearch);
 websiteInput.addEventListener('change',suggestSearch);
 
+const pageShareStatus=document.getElementById('qcpPageShareStatus');
+document.getElementById('qcpSharePage')?.addEventListener('click',()=>void shareQuickCard({
+ url:'https://quantaphi.org/quick-card-builder.html',
+ title:'Build interactive Quick Cards on QuantaPhi',
+ status:pageShareStatus
+}));
 const button=document.getElementById('qcpPublish');
 form.addEventListener('submit',async event=>{
  event.preventDefault();button.disabled=true;result.replaceChildren();button.textContent='Publishing…';
@@ -38,7 +45,9 @@ form.addEventListener('submit',async event=>{
   const copy=document.createElement('button');copy.type='button';copy.textContent='Copy link';copy.addEventListener('click',async()=>{
    try{await navigator.clipboard.writeText(value.cardUrl);copy.textContent='Copied';}catch{field.focus();field.select();copy.textContent='Select and copy the link';}
   });
-  row.append(link,copy);result.append(message,field,row);
+  const publishedShare=document.createElement('button');publishedShare.type='button';publishedShare.id='qcpSharePublished';publishedShare.textContent='↗ Share published card';
+  publishedShare.addEventListener('click',()=>void shareQuickCard({url:value.cardUrl,title:body.title+' · QuantaPhi Quick Card',status:message}));
+  row.append(publishedShare,link,copy);result.append(message,field,row);
  }catch(error){const p=document.createElement('p');p.textContent=error.message||'Could not publish your card.';result.append(p);}
  finally{button.disabled=false;button.textContent='Publish shareable card';}
 });
