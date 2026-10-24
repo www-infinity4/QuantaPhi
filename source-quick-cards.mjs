@@ -48,6 +48,7 @@ function starterCard(card){
 }
 function mountShelf(){
  const host=document.getElementById('siteQuickCards');if(!host)return;
+ host.replaceChildren();
  host.append(el('p','iqc-kind','INFINITY 2026® · INDEPENDENT QUICK CARDS'),el('h2','','Websites turned into useful tools'),el('p','iqc-muted','Official sources, interactive search and a specialist Bubbles guide. Live social feeds, personal account access and publisher delivery require separately verified integrations.'));
  const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES)cards.append(starterCard(p));host.append(cards);
 }
