@@ -91,3 +91,23 @@ export function prepareBrainForward(request, env = {}) {
   // Do **not** perform a fetch here – the caller may run in a sandbox without network.
   return { token, brainUrl };
 }
+
+/**
+ * Helper to perform authenticated GitHub API requests.
+ * Reads the GITHUB_TOKEN from the environment and attaches it as a Bearer token.
+ * If the token is missing, logs an error but still proceeds with the request
+ * (allowing downstream handling of unauthenticated failures).
+ */
+export async function makeGitHubRequest(url, options = {}) {
+  const token = process.env.GITHUB_TOKEN;
+  if (!token) {
+    console.error('GITHUB_TOKEN is missing; GitHub requests may fail authentication.');
+  }
+  const headers = {
+    ...(options.headers || {}),
+    Authorization: token ? `Bearer ${token}` : undefined,
+  };
+  // Remove undefined Authorization header if token missing
+  if (!token) delete headers.Authorization;
+  return fetch(url, { ...options, headers });
+}
