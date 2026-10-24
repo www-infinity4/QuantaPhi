@@ -16,13 +16,13 @@ test('published cards have standalone canonical Share and X post compose control
  assert.match(page,/c\.cardUrl/);
  assert.match(page,/mountCardActions/);
 });
-test('X setup never requests secrets through form or promises it is connected',()=>{
+test('X public reader links to hourly browser receipts, not a misleading required developer form',()=>{
  const c=read('bubbles-x-connect.html');
- assert.match(c,/https:\/\/console\.x\.com/);
- assert.match(c,/https:\/\/dash\.cloudflare\.com/);
- assert.match(c,/X_API_BEARER_TOKEN/);
- assert.match(c,/not connected/);
- assert.doesNotMatch(c,/<input[^>]+(?:bearer|token)/i);
+ assert.match(c,/bubbles-hourly-public-x.yml/);
+ assert.match(c,/public X posts/);
+ assert.match(c,/No developer login is needed/);
+ assert.match(c,/not required/);
+ assert.doesNotMatch(c,/<input[^>]+(?:bearer|token|password)/i);
 });
 test('shared URL is composed as a canonical X intent, not an arbitrary embed',async()=>{
  const mod=await import('../quick-card-share.js');
