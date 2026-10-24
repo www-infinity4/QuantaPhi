@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "topic": "2026 World Series",
+  "checked_at": "2026-10-24T23:34:26.954301Z",
+  "source_kind": "Publisher RSS",
+  "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
+  "sources": [
+    {
+      "publisher": "MLB.com",
+      "url": "https://www.mlb.com/feeds/news/rss.xml",
+      "articles_selected": 18
+    },
+    {
+      "publisher": "CBS Sports",
+      "url": "https://www.cbssports.com/partners/feeds/rss/mlb_news",
+      "articles_selected": 31
+    }
+  ],
+  "articles": [
+    {
+      "title": "MLB App launches for iPhone Duo just in time for World Series",
+      "url": "https://www.mlb.com/news/mlb-app-launches-for-iphone-duo",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T22:44:00Z",
+      "summary": "",
+      "author": "",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "This lifelong Brewers fan walks to EVERY home game (yes, even the World Series)",
+      "url": "https://www.mlb.com/news/brewers-fan-walks-to-every-home-game-including-world-series",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T21:52:48Z",
+      "summary": "",
+      "author": "Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "2026 MLB playoff bracket: Schedule and scores as Rays try to even World Series vs. Brewers in Game 2",
+      "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-24T21:41:24Z",
+      "summary": "The Brewers-Rays matchup guarantees that we'll have a first-time champion in 2026",
+      "author": "Kate Feldman",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/20/ad4b6088-a174-48fb-8be4-f78cb2b02b32/2026-mlb-bracket-brewers-rays.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Rays-Brewers World Series Game 2 FAQ, lineups (8 ET, FOX/FOX One)",
+      "url": "https://www.mlb.com/news/rays-brewers-world-series-game-2-starting-lineups-and-pitching-matchup",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T20:36:00Z",
+      "summary": "",
+      "author": "Anthony Castrovince, Adam Berry and Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "He threw the only immaculate inning in postseason history ... and didn't know until 30 years later",
+      "url": "https://www.mlb.com/news/danny-jackson-immaculate-inning-in-1985-world-series",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T19:59:35Z",
+      "summary": "",
+      "author": "Sweeny Murti",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "How William Contreras, the MVP of this Brewers playoff run, is commanding the game from every angle",
+      "url": "https://www.cbssports.com/mlb/news/william-contreras-mvp-brewers-playoff-run-commanding-the-game/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-24T15:57:53Z",
+      "summary": "The Brewers catcher is knocking in runs, throwing out runners and keeping his pitching staff calm this October",
+      "author": "Julian McWilliams",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/24/ccc8f5b3-66c0-480d-bc2a-adb94bbb3f6e/contreras-getty-1.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "What Rob Manfred and the MLBPA said about salary cap fight as lockout looms over 2026 World Series",
+      "url": "https://www.cbssports.com/mlb/news/what-rob-manfred-mlbpa-said-salary-cap-fight-lockout-2026-world-series/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-24T14:19:33Z",
+      "summary": "Manfred and Bruce Meyer addressed the situation on Friday night before Game 1 of the World Series",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/24/5384e04f-cd3c-49c5-81b7-3510a03ad7f1/manfred-getty-3.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Three biggest questions for World Series Game 2: Can the Rays and their ace even the series?",
+      "url": "https://www.cbssports.com/mlb/news/three-biggest-questions-world-series-game-2-rays-brewers/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-24T14:04:05Z",
+      "summary": "Tampa is looking to bounce back against the Brewers, and both clubs are looking for production from the bottom of their orders",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/24/66d9358c-d12b-451a-ac11-3d51927af471/rays-rasumussen-getty.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "It took all of 1 pitch for a World Series record",
+      "url": "https://www.mlb.com/news/jacob-misiorowski-makes-world-series-history-in-game-1",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T07:09:00Z",
+      "summary": "",
+      "author": "Zach Sweet",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "None of Rays' best relievers pitched in Game 1 -- and that could be a good thing",
+      "url": "https://www.mlb.com/news/rays-bullpen-management-game-1-world-series-loss",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T07:03:02Z",
+      "summary": "",
+      "author": "Adam Berry",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Rays' best-laid Game 1 plans undone by Brewers' airtight arms",
+      "url": "https://www.mlb.com/news/rays-lose-game-1-of-2026-world-series",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T06:54:00Z",
+      "summary": "",
+      "author": "Adam Berry",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Rays were perfect on postseason SBs -- until Contreras put up a stop sign",
+      "url": "https://www.mlb.com/news/william-contreras-catches-two-rays-stealing-in-game-1-of-2026-world-series",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T06:39:42Z",
+      "summary": "",
+      "author": "Bryan Hoch",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "4 key takeaways after Brewers win a thriller to start World Series",
+      "url": "https://www.mlb.com/news/key-takeaways-from-world-series-game-1-2026",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T06:16:00Z",
+      "summary": "",
+      "author": "Anthony DiComo",
+      "image_url": "",
+      "kind": "Analysis",
+      "image_credit": ""
+    },
+    {
+      "title": "Brewers weather ninth-inning storm, take Game 1 in front of raucous fans",
+      "url": "https://www.mlb.com/news/brewers-win-world-series-game-1-2026",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T05:47:00Z",
+      "summary": "",
+      "author": "",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Brewers won their first World Series game in 44 years. And then they won it again",
+      "url": "https://www.mlb.com/news/brewers-game-ending-double-play-overturned-world-series-game-1",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T05:36:00Z",
+      "summary": "",
+      "author": "Bryan Hoch",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "In Game 2, Rasmussen will try to beat team he'd otherwise be rooting for",
+      "url": "https://www.mlb.com/news/drew-rasmussen-to-face-former-team-in-game-2-of-2026-world-series",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T04:44:00Z",
+      "summary": "",
+      "author": "Adam Berry",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "3 key questions for World Series Game 2",
+      "url": "https://www.mlb.com/news/2026-world-series-game-2-storylines-rays-vs-brewers",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-24T04:37:18Z",
+      "summary": "",
+      "author": "Will Leitch",
+      "image_url": "",
+      "kind": "Analysis",
+      "image_credit": ""
+    },
+    {
+      "title": "Rust? What rust? Brewers open World Series refreshed and ready thanks to all that winning",
+      "url": "https://www.cbssports.com/mlb/news/2026-world-series-brewers-rested-rays/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-24T04:30:01Z",
+      "summary": "The Brewers have now played nine games in the last 26 days and they've won eight of them",
+      "author": "Matt Snyder",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/24/423563af-9694-4354-a44b-2a5dcf0cb236/miz-getty-4.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "World Series 2026 odds, picks, prediction: Fall Classic preview for Brewers vs. Rays series beginning Friday",
+      "url": "https://www.cbssports.com/betting/news/world-series-2026-odds-picks-prediction-fall-classic-preview-for-brewers-vs-rays-series-beginning-friday/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T23:56:47Z",
+      "summary": "The Milwaukee Brewers face the Tampa Bay Rays in the 2026 World Series and here's everything bettors need to know",
+      "author": "Nick Stellini",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/07/22/b563f6f2-3782-4bf1-9958-e98e5a237e60/jacob-misiorowski-brewers-2.jpg",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Today's top games to watch, best bets, odds: Brewers vs. Rays World Series Game 1, Knicks at Celtics and more",
+      "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-vs-rays-world-series-game-1-knicks-at-celtics-and-more/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T23:56:07Z",
+      "summary": "Find best bets and props for the biggest games in sports on Friday from the SportsLine Projection Model and top CBS Sports experts",
+      "author": "Gene Menez",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/08/20/18a863a5-e179-42fb-bec6-6c0b5b004088/jacob-misiorowski-cbs.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Rays vs. Brewers World Series Game 1 parlay, MLB picks, prediction: Let the small-ball Fall Classic begin",
+      "url": "https://www.cbssports.com/betting/news/rays-vs-brewers-world-series-game-1-parlay-mlb-picks-prediction-let-the-small-ball-fall-classic-begin/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T23:01:18Z",
+      "summary": "The Rays and Brewers open an unlikely 2026 World Series on Friday in Milwaukee",
+      "author": "Matt Severance",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/21/99be7715-986d-4092-ab6b-480f87cb72d4/2026-04-01t204030z-1567889633-mt1usatoday28636884-rtrmadp-3-mlb-tampa-bay-rays-at-milwaukee-brewers-jpg.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Cleavinger back on Rays' World Series roster",
+      "url": "https://www.mlb.com/news/rays-2026-world-series-roster",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-23T21:30:00Z",
+      "summary": "",
+      "author": "Adam Berry",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Brandon Woodruff, Brewers' longest-tenured player, makes World Series roster after long injury absence",
+      "url": "https://www.cbssports.com/mlb/news/brandon-woodruff-injury-brewers-world-series-roster-rays/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T20:48:32Z",
+      "summary": "Woodruff, who debuted with Milwaukee in 2017, hasn't pitched since July 4 due to a shoulder issue",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/4d68ee28-5e19-45f2-a03d-546bdc0dc49d/woodruff-getty.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Woodruff makes unexpected comeback to join World Series roster",
+      "url": "https://www.mlb.com/news/brewers-2026-world-series-roster",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-23T20:44:00Z",
+      "summary": "",
+      "author": "Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Did you know? Cash and Murph have already met in the World Series once before...",
+      "url": "https://www.mlb.com/news/pat-murphy-kevin-cash-1998-college-world-series",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-23T19:35:43Z",
+      "summary": "",
+      "author": "Max Ralph",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Creating the ultimate 2026 World Series roster: Picking the best of the Brewers and Rays at each position",
+      "url": "https://www.cbssports.com/mlb/news/2026-world-series-ultimate-roster-best-brewers-rays-each-position/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T15:34:00Z",
+      "summary": "Pat Murphy and Kevin Cash don't have the luxury of building a Frankenstein roster, but we do, so we will",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/22/51d7f1c5-21d2-41b1-973f-919a4e923282/frankenstein-getty.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Scott Boras decries MLB owners who wear 'floaties' as Brewers-Rays World Series comes with salary cap debate",
+      "url": "https://www.cbssports.com/mlb/news/scott-boras-mlb-owners-floaties-brewers-rays-world-series-salary-cap/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T15:07:08Z",
+      "summary": "MLB's small-market World Series begins on Friday night ahead of a looming labor fight",
+      "author": "Julian McWilliams",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/1ed34928-833d-4e3f-9140-b7c91f7c0513/scott-boras-getty-1.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Three biggest questions for World Series Game 1 as Brewers and Rays kick off 2026 Fall Classic",
+      "url": "https://www.cbssports.com/mlb/news/world-series-game-1-brewers-rays-biggest-questions/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T14:01:51Z",
+      "summary": "Can Jacob Misiorowski reclaim his ace stuff? That and more storylines that will dictate the series opener",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/a83f27ee-8ee7-49fc-80f5-70b73bd1295e/miz-getty-3.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Bold predictions for the 2026 World Series: Jackson Chourio makes history, a no-hitter, an ABS ending and more",
+      "url": "https://www.cbssports.com/mlb/news/2026-world-series-bold-predictions-brewers-rays/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T13:00:13Z",
+      "summary": "Game 1 of the Fall Classic kicks off in Milwaukee on Friday and the chaos is already brewing",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/22/cff21a4f-129b-4382-bcaa-d1c19c75a2be/ashby-getty.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Caleb Williams wins duel of 2024 NFL Draft QBs; Brewers-Rays World Series opens with a twist",
+      "url": "https://www.cbssports.com/nfl/news/caleb-williams-drake-maye-nfl-draft-qb-brewers-rays-world-series-mlb/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T12:49:21Z",
+      "summary": "Plus the Top 100 And 1 college basketball players for 2026-27",
+      "author": "Carter Bahns",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/d1b1cd86-6f6a-493e-b75d-4765a90185fd/gettyimages-2301568587-1.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    }
+  ],
+  "unavailable_sources": [
+    {
+      "publisher": "ESPN",
+      "error": "ValueError"
+    }
+  ]
+}
