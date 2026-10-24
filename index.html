@@ -249,9 +249,14 @@ body.oracle-quanta .search #q{box-sizing:border-box;width:100%;min-width:0;min-h
 body.oracle-quanta .search #go{box-sizing:border-box;min-height:56px;padding:10px 21px;border:2px solid #8a2530;border-radius:14px;background:#a32b32;color:#fff;font:800 16px/1.3 system-ui,sans-serif;cursor:pointer}
 body.oracle-quanta .search #q:focus-visible,body.oracle-quanta .search #go:focus-visible{outline:3px solid #40a1ca;outline-offset:2px}
 body.oracle-quanta #robotBrainOwner,body.oracle-quanta #bubblesAICard,body.oracle-quanta .q-bubbles-entry{display:none!important}
+/* Only installer LINKS are tucked into the closed APK disclosure. Bubbles orb/voice remains active. */
+body.oracle-quanta .q-install-details{margin:6px 0 14px}
+body.oracle-quanta .q-install-details nav{display:flex;flex-direction:column;gap:6px;padding:14px 4px}
+body.oracle-quanta .q-install-details a{font-size:16px;min-height:44px;padding:9px 12px}
+
 body.oracle-quanta .qcp-builder-shortcut{display:none!important}
 @media(max-width:420px){body.oracle-quanta .search{gap:7px}body.oracle-quanta .search #q{font-size:16px;padding:10px}body.oracle-quanta .search #go{padding:10px 13px;font-size:15px}}
-</style><link rel="stylesheet" href="/walmart-card.css?v=20261024-pizza1">
+</style><link rel="stylesheet" href="/walmart-card.css?v=20261024-pizza1"><link rel="stylesheet" href="/brand-product-cards.css?v=20261024-real-products1">
 </head>
 <body class="oracle-surface oracle-quanta oracle-octaves-home"><main class="app">
 <div class="qtop"><button class="qmenuBtn" id="qmenuBtn" type="button" aria-label="Open menu" aria-controls="qmenu" aria-expanded="false">☰</button><h1>Quantaφ</h1><button class="qnewSearch" id="qNewSearch" type="button" aria-label="Start a new search">＋ New Search</button>
@@ -261,7 +266,10 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
 <strong>Site traffic · cumulative recorded totals</strong> · <strong id="qtrafficRequests">—</strong> HTTP requests · <strong id="qtrafficViews">—</strong> page views
 <small id="qtrafficNote" style="display:block;color:#60574e">Loading verified Cloudflare traffic since the first available date; weekly totals will be labeled separately…</small>
 <noscript>Cloudflare verified record since October 4, 2026: 834,107 HTTP requests and 322,061 page views as of October 24, 2026 (partial day). Earlier traffic is not included. Requests include bots and are not individual clicks.</noscript>
-</div><script src="/site-traffic.js" defer></script><script src="/apk-downloads.js" defer></script><p class="sub">Research anything · compare original sources · build and collect interactive QuantaPhi cards</p>
+</div><script src="/site-traffic.js" defer></script><script src="/apk-downloads.js" defer></script>
+<details class="q-install-details" aria-label="Android APK and Chrome app downloads"><summary>Apps, Android APK &amp; account connections</summary>
+<nav aria-label="Bubbles and app installers"><a href="/bubbles.html">Open Bubbles AI</a><a href="/downloads/bubbles.apk" data-apk-download="bubbles">Bubbles Android APK <span data-apk-version="bubbles"></span></a><a href="/bubbles-chrome.html">Install Bubbles in Chrome</a><a href="/bubbles-accounts.html">Bubbles account connections</a><a href="/apps/index.html">Other QuantaPhi apps</a></nav>
+</details><p class="sub">Research anything · compare original sources · build and collect interactive QuantaPhi cards</p>
 <div class="qrefine" id="qrefineWrap" hidden><input id="qrefine" autocomplete="off" placeholder="Refine this entity…"><button id="qrefineBtn" type="button">Refine</button></div>
 <div id="status" role="status" aria-live="polite"></div>
 <section id="walmartShoppingCard" class="card" aria-label="Walmart shopping card" data-walmart-item="19668500198">
@@ -323,6 +331,7 @@ body.oracle-quanta .qcp-builder-shortcut{display:none!important}
  <p role="status">Loading QuantaPhi discovery cards…</p>
 </section>
 <section id="premiumSourceCards" hidden data-oracle-widget-bank="true" aria-label="Collector, shopping, music and NASA source cards"></section>
+<section id="brandProductCards" hidden data-oracle-widget-bank="true" aria-label="Original retail-product quick cards"></section>
 <section id="siteQuickCards" class="card iqc-home-shelf" hidden data-oracle-widget-bank="true" aria-label="Completed source quick cards" style="background:#fff;border:1px solid #e1d3cb;border-radius:18px;padding:16px;margin:16px 0;color:#292222">
   <p role="status" class="iqc-muted">Loading independent source cards…</p>
 </section>
@@ -1852,8 +1861,9 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <link rel="stylesheet" href="/premium-source-cards.css?v=20261024-library1">
 <script type="module" src="/premium-source-cards.mjs?v=20261024-library1"></script>
 <script type="module" src="/source-quick-cards.mjs?v=20261024-public-search2"></script>
+<script type="module" src="/brand-product-cards.mjs?v=20261024-real-products1"></script>
 <script type="module" src="/science-quick-cards.mjs?v=20261023-science1"></script>
-<script defer src="/oracle-card-deck.js?v=20261024-public-search2"></script>
+<script defer src="/oracle-card-deck.js?v=20261024-real-products1"></script>
 <script defer src="/phi-image-language.js?v=20261011-natural-copy1"></script>
 <script defer src="/phi-visual-render.js?v=20261011-exact-type1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
