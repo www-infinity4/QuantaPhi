@@ -37,7 +37,7 @@ function open(card){
  const target=card.route;
  if(typeof window.QuantaOpenSite==='function'){
   // Let the site's original in-page viewer own the selected source card.
-  try{window.QuantaOpenSite(target,card.name);return;}catch{/* The local route is safe to open normally. */}
+  try{const link=document.createElement('a');link.href=target;link.dataset.siteUrl=target;link.dataset.siteTitle=card.name+' · QuantaPhi card';window.QuantaOpenSite(link);return;}catch{/* The local route is safe to open normally. */}
  }
  window.location.href=target;
 }
