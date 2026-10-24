@@ -159,6 +159,10 @@ interaction, source/freshness records, mobile acceptance and deployed readback.
 9. Tesla, Unitree and Optimus: real attributed product/research cards, verified
    demonstrations and specifications, dated sources and links to actual providers.
 
+## New: hourly PUBLIC browser reader for the owner X timeline — 2026-10-24
+
+Owner clarified that Bubbles must read publicly visible @YahooPingcwlz posts with a cloud browser, not require an X Developer Console login, API token, private browser cookies, or internal X code. A separate GitHub Actions workflow with hosted Chromium now checks the public profile **hourly**, inspects both #bubbles and untagged possible build requests, and updates a durable duplicate-safe GitHub issue inbox. Full implementation and readback details: docs/BUBBLES-PUBLIC-X-READING-20261024.md. The existing PR #644 API approach is optional, not a prerequisite for reading public posts. Any inbox item is a **candidate only** until routed through existing signed Brain authorization and actual execution receipts. An observed partial X timeline must never be called complete. This adds no account sign-in capture.
+
 ## Owner #bubbles intake on X
 
 Kris explicitly wants his own #bubbles build requests read and turned into detailed
