@@ -1,3 +1,11 @@
+## Cloudflare reader replaces the blocked GitHub browser (2026-10-24)
+
+The initial GitHub Actions Chromium scan was attempted and honestly recorded a blocked timeline. The direct Cloudflare Browser Run REST renderer separately returned visible @YahooPingcwlz public posts and links. The corrected production path is **workers/bubbles-public-x/worker.mjs** with Cloudflare Browser binding BROWSER and separate D1 DB (quantaphi-bubbles-public-x). See its hourly cron in **workers/bubbles-public-x/wrangler.json**.
+
+The read-only site endpoints are https://quantaphi.org/api/bubbles/public-x/health and https://quantaphi.org/api/bubbles/public-x/inbox. POST and user-directed public rescan are deliberately not exposed, so outsiders cannot spend Browser Run time. The candidate inbox lists matching public posts, but it is **not** privileged owner work intake. The existing signed Brain runner still requires distinct authorization.
+
+The old .github/workflows/bubbles-hourly-public-x.yml has been converted to *source contract tests only*; it must not keep trying the blocked GitHub browser hourly. New Cloudflare Worker runs by its own cron and independently retains read status, errors and deduped items in D1. Cron schedule propagation and actual post read need distinct live receipts; an installed cron alone is not proof of a successful scan.
+
 # Bubbles hourly public X reader — October 24, 2026
 
 The owner requests public-web reading of their own visible posts from https://x.com/YahooPingcwlz, including posts without #bubbles. X developer API credentials, an X password, and a private login are NOT needed for the public browser approach.
