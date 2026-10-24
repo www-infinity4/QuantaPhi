@@ -510,6 +510,12 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
       /^[A-Za-z0-9._-]+$/.test(repo)?('https://quantaphi.org/'+({C13b0:'infinity-phi', 'Omni-Phi':'omni-phi',QuantaPhi:''}[repo]||repo)+'/'):''
     );
    let url;try{url=new URL(raw,location.href)}catch{return}
+   if(url.protocol!=='https:'&&url.protocol!=='http:')return;
+   if(url.origin!==location.origin){
+     // Third-party websites often forbid framing (X-Frame-Options/CSP).
+     // A blocked iframe is NOT an Infinity Viewer feature: go to the real site.
+     location.assign(url.href);return;
+   }
    title.textContent=link.dataset.siteTitle||link.textContent.trim()||url.hostname;
    const fallback=document.getElementById('siteViewerExternal');if(fallback)fallback.href=url.href;
    frame.src=url.href;
@@ -525,6 +531,14 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
  document.addEventListener('click',event=>{
    const link=event.target.closest?.('.inPageSite');
    if(!link)return;
+   // Do not intercept legitimate external links into an iframe that cannot
+   // display most provider sites. Let the browser/WebView own the navigation.
+   try{
+    const target=new URL(link.dataset.siteUrl||link.getAttribute('href')||'',location.href);
+    if((target.protocol==='https:'||target.protocol==='http:')&&target.origin!==location.origin){
+     link.href=target.href;link.target='_blank';link.rel='noopener noreferrer';return;
+    }
+   }catch{}
    event.preventDefault();
    openSite(link);
  },true);
@@ -1805,12 +1819,12 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script defer src="/phi-tv-programs.js?v=20261015-direct1"></script>
 <script defer src="/phi-channel-cards.js?v=20261015-credits1"></script>
 <script defer src="/google-trending-cards.js?v=20261023-trendsync3"></script>
-<link rel="stylesheet" href="/quanta-card-experience.css?v=20261024-interactive1">
-<link rel="stylesheet" href="/quanta-feed.css?v=20261023-qtabs1">
-<script type="module" src="/quanta-feed.mjs?v=20261024-directions1"></script>
-<script type="module" src="/source-quick-cards.mjs?v=20261023-source-quick-cards1"></script>
+<link rel="stylesheet" href="/quanta-card-experience.css?v=20261024-directcards2">
+<link rel="stylesheet" href="/quanta-feed.css?v=20261024-directcards2">
+<script type="module" src="/quanta-feed.mjs?v=20261024-directcards2"></script>
+<script type="module" src="/source-quick-cards.mjs?v=20261024-directcards2"></script>
 <script type="module" src="/science-quick-cards.mjs?v=20261023-science1"></script>
-<script defer src="/oracle-card-deck.js?v=20261024-directions1"></script>
+<script defer src="/oracle-card-deck.js?v=20261024-directcards2"></script>
 <script defer src="/phi-image-language.js?v=20261011-natural-copy1"></script>
 <script defer src="/phi-visual-render.js?v=20261011-exact-type1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>

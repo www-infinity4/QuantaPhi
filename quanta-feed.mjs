@@ -1,5 +1,5 @@
 import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-directcards2';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
 import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountSpaceSource} from './quanta-feed-spaces.mjs';
@@ -9,7 +9,7 @@ import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,ne
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
  id:c.id,name:c.name,category:c.kind,feature:c.feature,study:c.details,
- url:c.featureUrl,route:'/source-quick-card.html?card='+encodeURIComponent(c.id),origin:'source'
+ official:c.official,url:c.featureUrl,route:'/source-quick-card.html?card='+encodeURIComponent(c.id),origin:'source'
 }));
 const fromScience=SCIENCE_CARDS.map(c=>({
  id:c.id,name:c.name,category:c.category,feature:c.feature,study:c.description,
@@ -65,9 +65,17 @@ function makeTile(card,refresh){
  const title=create('h3','',card.name);
  const desc=create('p','qf-description',card.feature);
  const buttons=create('div','qf-actions');
- const openBtn=create('button','qf-button','Open card');openBtn.type='button';openBtn.addEventListener('click',()=>open(card));
- buttons.append(openBtn,followButton(card,refresh));
- tile.append(art,topic,title,desc,buttons);return tile;
+ // The original provider widget is directly on its tile. No internal
+ // Infinity Viewer or extra "Open card" link is needed to begin searching.
+ if(card.origin!=='source'){
+  const openBtn=create('button','qf-button','Open card');openBtn.type='button';openBtn.addEventListener('click',()=>open(card));buttons.append(openBtn);
+ }
+ buttons.append(followButton(card,refresh));
+ tile.append(art,topic,title,desc);
+ if(card.origin==='source'){
+  const inline=create('div','qf-inline-tool');mountCardTools(inline,card);tile.append(inline);
+ }
+ tile.append(buttons);return tile;
 }
 function renderHome(){
  const host=document.getElementById('quantaDiscoveryFeed');if(!host)return;
@@ -117,11 +125,18 @@ function renderHome(){
   const info=create('div','qf-feature-copy');
   info.append(create('p','qf-topic',selected.category),create('h3','',selected.name),
     create('p','',selected.feature),create('p','qf-muted',selected.study));
-  const buttons=create('div','qf-actions');const openBtn=create('button','qf-button','Open interactive card');openBtn.type='button';
-  openBtn.addEventListener('click',()=>open(selected));
-  const original=create('a','qf-link','Original source ↗');original.href=selected.url;original.target='_blank';original.rel='noopener noreferrer';
-  buttons.append(openBtn,followButton(selected,refresh),original);info.append(buttons);
   const tools=create('div','qf-inline-tool');mountCardTools(tools,selected);info.append(tools);
+  const buttons=create('div','qf-actions');
+  // Preserve route navigation only for original standalone QuantaPhi apps.
+  if(selected.origin!=='source'){
+   const openBtn=create('button','qf-button','Open interactive card');openBtn.type='button';
+   openBtn.addEventListener('click',()=>open(selected));buttons.append(openBtn);
+  }
+  buttons.append(followButton(selected,refresh));
+  if(selected.origin!=='source'||!['google','bing'].includes(selected.id)){
+   const original=create('a','qf-link','Original source ↗');original.href=selected.url;original.target='_blank';original.rel='noopener noreferrer';buttons.append(original);
+  }
+  info.append(buttons);
   const direction=create('p','qf-direction',lastReason?'Next direction · '+lastReason:'Select a card to explore, then use Next to continue a related activity.');
   info.append(direction);
   feature.replaceChildren(visual,info);

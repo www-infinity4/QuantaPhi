@@ -6,6 +6,7 @@ const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'utf8');
 const launcher=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
 const deck=readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
+const tools=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
 test('all fifteen provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
  assert.equal(QUICK_CARD_SOURCES.length,15);
  assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,15);
@@ -26,16 +27,25 @@ test('Google and Bing have real provider-submitted search bars, not result place
   assert.equal(card.searchParameter,'q');
   assert.match(card.featureUrl,/^https:\/\/(?:www\.)?(?:google|bing)\.com\/search$/);
  }
- assert.match(launcher,/form.method='GET'/);
- assert.match(launcher,/form.target='_blank'/);
- assert.match(launcher,/input.maxLength=300/);
+ assert.match(tools,/form.method='GET'/);
+ assert.match(tools,/form.action=spec\[0\]\.split\('\?'\)\[0\]/);
+ assert.match(tools,/form.target='_blank'/);
+ assert.match(tools,/field.name='q'/);
+ assert.match(launcher,/mountCardTools\(tools,card\)/);
+ assert.ok(!launcher.includes('Open quick card in Infinity Viewer'));
 });
-test('home and Oracle deck surface source cards through the original in-page viewer',()=>{
+test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=/);
- assert.match(deck,/\['siteQuickCards','Source quick cards/);
- assert.match(launcher,/classList\.add\('inPageSite'\)/);
- assert.match(launcher,/\/source-quick-card\.html\?card=/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261024-directcards2/);
+ assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
+ assert.match(launcher,/mountCardTools\(tools,card\)/);
+ assert.match(launcher,/quantaphi:source-cards-ready/);
+ assert.match(deck,/function registerSourceCards\(\)/);
+ assert.match(deck,/querySelectorAll\('#siteQuickCards \.iqc-card\[data-source-id\]'\)/);
+ assert.match(deck,/feedId:id/);
+ assert.match(deck,/entries\.push\(entry\)/);
+ assert.doesNotMatch(deck,/\['siteQuickCards','Source quick cards/);
+ assert.doesNotMatch(launcher,/preview\.href=/);
  assert.match(home,/window\.QuantaOpenSite=openSite/);
 });
 test('card detail uses existing Cardone Bubbles embed with specialized context, no impersonation or sends',()=>{
@@ -60,4 +70,12 @@ test('provider permissions and content limitations remain explicit',()=>{
  assert.ok(!launcher.includes('navigator.geolocation'));
  assert.ok(!launcher.includes('navigator.mediaDevices.getUserMedia'));
  assert.ok(!launcher.includes('fetch('));
+});
+
+test('cross-origin links cannot white-screen the local Infinity iframe',()=>{
+ assert.match(home,/url\.origin!==location\.origin/);
+ assert.match(home,/location\.assign\(url\.href\)/);
+ assert.match(home,/link\.target='_blank'/);
+ assert.match(home,/link\.rel='noopener noreferrer'/);
+ assert.match(home,/frame\.src=url\.href/);
 });
