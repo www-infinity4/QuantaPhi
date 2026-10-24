@@ -85,7 +85,7 @@ function renderHome(){
  for(const name of FEED_TABS){
   const b=create('button','qf-tab'+(tab===name?' qf-active':''),name==='for-you'?'For You':name==='following'?'Following':'Public');
   b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',String(tab===name));
-  b.addEventListener('click',()=>{tab=name;current='';showCount=16;renderHome();});tabs.append(b);
+  b.addEventListener('click',()=>{tab=name;current='';lastReason='';showCount=16;renderHome();});tabs.append(b);
  }host.append(tabs);
  const status=create('p','qf-muted');status.id='quantaFeedStatus';status.setAttribute('role','status');host.append(status);
  const feature=create('div','qf-feature');feature.id='quantaFeedFeature';host.append(feature);
