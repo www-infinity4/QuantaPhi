@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-10-24T01:32:38.369025Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "davion mitchell",
+      "approx_searches": "10000+",
+      "published_at": "2026-10-24T01:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/boxscore/_/gameId/401867955",
+        "https://www.cbssports.com/fantasy/basketball/news/pistons-jalen-duren-tallies-14-points-vs-toronto/",
+        "https://www.espn.com/nba/odds/_/gameId/401909846"
+      ]
+    },
+    {
+      "query": "mitchell robinson",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-24T01:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/mitchell-robinson-leaving-knicks-wasnt-005059904.html",
+        "https://sny.tv/articles/mitchell-robinson-didnt-watch-knicks-ring-ceremony-celtics-2026",
+        "https://www.bostonglobe.com/2026/10/22/sports/celtics-knicks-mitchell-robinson/"
+      ]
+    },
+    {
+      "query": "kalshi",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-24T01:10:00Z",
+      "related_news_urls": [
+        "https://golfweek.usatoday.com/story/sports/2026/10/23/kalshi-promo-code-sbwire55-new-october-23/90783748007/",
+        "https://www.saturdaydownsouth.com/news/betting/kalshi-promo-code-rad55-get-55-bonus-for-nba-friday-night-trades-oct-23/",
+        "https://www.cbssports.com/nfl/news/best-kalshi-promo-code-cbssports55-get-55-bonus-brewers-rays-spurs-rockets-world-series-nba-friday/"
+      ]
+    },
+    {
+      "query": "hunger games",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-24T01:10:00Z",
+      "related_news_urls": [
+        "https://www.udiscovermusic.com/news/james-newton-howard-haymitch-meets-snow-hunger-games-soundtrack/",
+        "https://www.universalmusic.ca/2026/10/23/the-hunger-games-sunrise-on-the-reaping-the-score-unveils-first-track/",
+        "https://themusicuniverse.com/mca-reveals-the-hunger-games-sunrise-on-the-reaping-the-score/"
+      ]
+    },
+    {
+      "query": "lori vallow",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-24T01:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/news/us-news/lori-vallow-daybell-brandon-boudreaux-rcna604698",
+        "https://people.com/family-member-who-survived-lori-vallow-attempted-murder-speaks-out-12186988",
+        "https://www.nj.com/tv/2026/10/dateline-the-attempted-killing-of-brandon-boudreaux-where-to-watch-for-free-in-case-you-missed-it.html"
+      ]
+    },
+    {
+      "query": "hunger games movies",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-24T01:10:00Z",
+      "related_news_urls": [
+        "https://www.amctheatres.com/movies/hunger-games-sunrise-on-the-reaping-early-access-85446",
+        "https://www.boxofficepro.com/long-range-forecast-the-hunger-games-sunrise-on-the-reaping/",
+        "https://www.usatoday.com/videos/entertainment/movies/2026/10/19/joseph-zada-on-using-the-book-to-shape-his-character-in-new-hunger-games-film/92332735007/"
+      ]
+    },
+    {
+      "query": "jalen duren",
+      "approx_searches": "500+",
+      "published_at": "2026-10-24T01:10:00Z",
+      "related_news_urls": [
+        "https://www.freep.com/story/sports/nba/pistons/2026/10/23/jalen-duren-injury-update-pistons-game-heat-nba/92405201007/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-23/deaaron-fox-wrist-upgraded-to-available-vs-hou",
+        "https://www.detroitnews.com/story/sports/nba/pistons/2026/10/23/pistons-jalen-duren-exits-game-vs-heat-with-lower-leg-injury/92406307007/"
+      ]
+    },
+    {
+      "query": "terminal list season 2 cast",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T01:10:00Z",
+      "related_news_urls": [
+        "https://www.cosmopolitan.com/entertainment/tv/a74183502/the-terminal-list-season-2-schedule/",
+        "https://www.tvguide.com/news/the-terminal-list-season-2-review-chris-pratt-action-thriller/",
+        "https://people.com/the-terminal-list-season-2-ending-explained-12175598"
+      ]
+    },
+    {
+      "query": "cody rhodes",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T01:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/cody-rhodes-reveals-surprising-reason-135259636.html",
+        "https://chrisvanvliet.com/2026/10/22/cody-rhodes-street-fighter-randy-orton-punt-his-final-wwe-contract-dusty-rhodes-impressions/",
+        "https://www.cagesideseats.com/wwe/482913/rhodes-admits-cody-fatigue-last-wwe-contract-retirement-timeline-street-fighter-movie-guile"
+      ]
+    },
+    {
+      "query": "danny mcbride",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T01:10:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/shane-gillis-danny-mcbride-kalshi-ad-1236921825/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/shane-gillis-next-move-snl-164300335.html",
+        "https://www.imdb.com/de/news/ni66077180/?ref_=nwc_art_perm"
+      ]
+    }
+  ]
+}
