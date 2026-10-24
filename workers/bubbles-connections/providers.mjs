@@ -205,9 +205,20 @@ const cfScopes=actions=>[...new Set(actions.flatMap(a=>{
   if(!Object.hasOwn(CLOUDFLARE_SCOPES,a))throw Error('unsupported_action');
   return CLOUDFLARE_SCOPES[a];
 }))];
+// Cloudflare OAuth clients may request only scopes registered on THAT client.
+// The ChatGPT Cloudflare plugin's grant cannot be reused by Bubbles.
+// Set this allowlist from the Bubbles OAuth application's verified client
+// registration, not from a guessed global list of available API scopes.
+export function cloudflareAvailableActions(approvedScopes) {
+  const allowed=new Set(String(approvedScopes||'').split(/[\\s,]+/).filter(Boolean));
+  return Object.keys(CLOUDFLARE_SCOPES).filter(action=>
+    CLOUDFLARE_SCOPES[action].every(scope=>allowed.has(scope)));
+}
 const cfGranted=(actions,scope)=>actions.filter(a=>CLOUDFLARE_SCOPES[a]?.every(s=>scope.has(s)));
 export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...args)){
   const redirectUri=callback(config);
+  const approvedScopes=config.allowedScopes===undefined?null:
+    new Set(String(config.allowedScopes||'').split(/[\\s,]+/).filter(Boolean));
   const basic='Basic '+btoa(config.clientId+':'+config.clientSecret);
   const form=fields=>({method:'POST',redirect:'error',signal:AbortSignal.timeout(15000),
     headers:{Authorization:basic,'Content-Type':'application/x-www-form-urlencoded',Accept:'application/json'},
@@ -220,11 +231,33 @@ export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...
   };
   return {
     id:'cloudflare',
+    async accounts({accessToken}){
+      // This endpoint uses only the connected user's encrypted token. No platform
+      // account token, user-supplied URL or arbitrary account identifier is used.
+      const accounts=[],seen=new Set();
+      for(let page=1;page<=5;page++){
+        const url='https://api.cloudflare.com/client/v4/accounts?page='+page+'&per_page=50';
+        const response=await request(url,{redirect:'error',signal:AbortSignal.timeout(15000),
+          headers:{Authorization:'Bearer '+accessToken,Accept:'application/json'}});
+        const data=await jsonResponse(response,'cloudflare_accounts');
+        if(data.success!==true||!Array.isArray(data.result))throw Error('provider_response_invalid');
+        for(const a of data.result){
+          if(!/^[a-f0-9]{32}$/.test(a?.id||'')||seen.has(a.id))continue;
+          seen.add(a.id);
+          accounts.push({id:a.id,name:typeof a.name==='string'?a.name.slice(0,160):'Cloudflare account'});
+        }
+        if(!data.result_info||page>=data.result_info.total_pages)break;
+      }
+      return {accounts,truncated:accounts.length>=250};
+    },
     authorization({state,challenge,actions}){
       if(!actions.length)throw Error('unsupported_action');
+      const requested=cfScopes(actions);
+      if(approvedScopes && requested.some(scope=>!approvedScopes.has(scope)))
+        throw Error('cloudflare_client_scopes_unavailable');
       const url=new URL('https://dash.cloudflare.com/oauth2/auth');
       url.search=new URLSearchParams({response_type:'code',client_id:config.clientId,
-        redirect_uri:redirectUri,state,scope:cfScopes(actions).join(' '),
+        redirect_uri:redirectUri,state,scope:requested.join(' '),
         code_challenge:challenge,code_challenge_method:'S256'}).toString();
       return url.href;
     },
