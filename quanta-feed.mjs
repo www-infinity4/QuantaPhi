@@ -19,7 +19,7 @@ const fromDiscovery=DISCOVERY_CARDS.map(c=>({
 }));
 // The public feed really includes the kitchen sink: existing QuantaPhi tools,
 // games and media alongside independently researched external sources.
-const fromBubbles=BUBBLES_CARDS.filter(c=>typeof c.url==='string'&&/^\\/(?!\\/)/.test(c.url))
+const fromBubbles=BUBBLES_CARDS.filter(c=>typeof c.url==='string'&&/^\/(?!\/)/.test(c.url))
  .map(c=>({id:c.id,name:c.title,category:'QuantaPhi apps',feature:'Open interactive QuantaPhi app',
   study:'Existing QuantaPhi application or media card with its original controls. Some actions require a verified wallet, source access or the usual owner approval.',
   url:c.url,route:c.url,origin:'quanta-app'}));
