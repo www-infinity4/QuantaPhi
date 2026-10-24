@@ -201,6 +201,19 @@ function nativeChatGPT(prompt){
 }
 if(nativeOverlay)document.documentElement.classList.add('bubbles-native-overlay');
 const bubbleId=embedded?(String(params.get('id')||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,48)||'embedded'):'';
+// Named public-card research stays separate from the owner's signed Bubbles tools.
+const cardoneResearch=embedded&&bubbleId==='cardone-westshore-research';
+function cardoneSourceFallback(question){
+ const docs='Official property: https://cardonecapital.com/westshoresouth/\nOffering documents: https://invest.cardonecapital.com/\nIssuer disclosures: https://cardonecapital.com/disclosures/';
+ if(/\b(?:cash\s*flow|cashflow|distribution|projected|projection|funded|underwrit|rental income)\b/i.test(question))
+  return 'Cardone Capital publicly targets 5% cashflow for 10X Westshore South (608 apartments on approximately 52 acres). The public property summary does not disclose the complete underwriting assumptions or the exact distribution waterfall. Rental collections less expenses, maintenance, debt service and required reserves ordinarily determine available operating cash; this is a general explanation, not a verified property-specific cashflow model. Investor distributions may be subject to fund fees, reserves, financing, manager discretion and the offering documents. Do not assume distributions are paid entirely from operating profits or that the 5% target is guaranteed.\n'+docs;
+ return 'The live Cardone research response could not be verified. I have not invented property figures or fund terms. Here are the issuer sources to check; the precise answer depends on the relevant offering documents.\n'+docs;
+}
+function cardoneReplyUnusable(text){
+ const s=String(text||'').trim();
+ return !s||/^Live results from /i.test(s)||/\b(?:type (?:a )?search|search_query|tool_call|tool_name|invoke (?:a |the )?tool|call (?:the )?(?:search|web)|first (?:i|we) (?:will|need to) search|i(?:'ll| will) (?:first )?(?:search|look up))\b/i.test(s)||
+  /^(?:search for|i need to search|let me search|on it|working on it|thinking|checking)\b[.!…\s]*$/i.test(s);
+}
 const NOTES='quantaphi:bubbles:notes:v1'+(bubbleId?':'+bubbleId:'');
 const CONFIG='quantaphi:bubbles:config:v1'+(bubbleId?':'+bubbleId:'');
 const HISTORY='quantaphi:bubbles:history:v1'+(bubbleId?':'+bubbleId:'');
@@ -2735,7 +2748,14 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const privateSellerRequest=config.privateContext&&!nativeOverlay&&/\b(?:sell|selling|seller|resale|auction|listing|buyer|shoplc|my selling defaults|quant-ai seller)\b/i.test(request);
  // Opt in to bounded, read-only MCP model tool selection. The MCP bearer key is never present in this WebView.
  const toolRequestId=crypto.randomUUID();
- const lookupPayload=()=>({request:lookupRequest,requestId:toolRequestId,input:prompt,mcp:true,...(/^(?:research|investigate)\b/i.test(lookupRequest.trim())?{tool:'web.search'}:{}),location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
+ const lookupPayload=()=>(cardoneResearch?{
+  // Force a real, read-only public search. The model must answer the visitor's
+  // ORIGINAL question from retrieved excerpts, not output a proposed search script.
+  request:'Cardone Capital 10X Westshore South '+lookupRequest,
+  researchContext:'Explain the original property-investment question: '+lookupRequest+
+   '. Distinguish a targeted return from an actual distribution. Prioritize issuer offerings/disclosures. Do not invent an underwriting model or fund waterfall.',
+  requestId:toolRequestId,tool:'web.search',mcp:false,context:{application:'QuantaPhi',task:'public-real-estate-research',persona:'specialist',requireCloudflare:true}
+ }:{request:lookupRequest,requestId:toolRequestId,input:prompt,mcp:true,...(/^(?:research|investigate)\b/i.test(lookupRequest.trim())?{tool:'web.search'}:{}),location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
@@ -2765,12 +2785,17 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }
   if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
   if(nativeOverlay&&json.receipt?.tool)gptStatus.textContent='Bubbles model + verified tool: '+json.receipt.tool+' · '+json.receipt.status;
-  const rawAnswer=extract(json);if(!rawAnswer)throw Error('The AI returned no spoken or written reply');
-   if(/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
+  const rawAnswer=extract(json);
+   if(!rawAnswer&&!cardoneResearch)throw Error('The AI returned no spoken or written reply');
+   if(!cardoneResearch&&/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
+   const finalAnswer=cardoneResearch&&
+    (cardoneReplyUnusable(rawAnswer)||json.answerStatus==='partial'||
+     json.receipt?.tool==='web.search'&&json.receipt?.status!=='complete')
+     ?cardoneSourceFallback(request):answer;
    if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
-  messages.push({role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
-  display(answer,'ai');status.textContent=config.alias+' · response received';
+  messages.push({role:'assistant',text:finalAnswer});messages=messages.slice(-400);persistChat();
+  display(finalAnswer,'ai');status.textContent=config.alias+' · response received';
   // Search sources remain tappable in this same Bubbles chat; voice never reads raw URLs.
   if(json.receipt?.tool==='web.search'){
    const row=create('div','ba-message-actions ba-search-sources');
@@ -2810,10 +2835,10 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(nativeOverlay){
     // The Android foreground service handles speech output; typed messages
     // deliberately stay silent when the user is listening to another app.
-    if(nativeSpeechPending)nativeSpeechReply=answer;
+    if(nativeSpeechPending)nativeSpeechReply=finalAnswer;
     nativeSpeechPending=false;
-   }else if(config.voice)speakText(answer);
- }catch(error){const message=workEvidence||('I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message;if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false}else if(fromVoice&&config.voice)speakText(message)}
+   }else if(config.voice)speakText(finalAnswer);
+ }catch(error){const message=workEvidence||(cardoneResearch?cardoneSourceFallback(request):'I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message;if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false}else if(fromVoice&&config.voice)speakText(message)}
  finally{if(nativeOverlay&&nativeSpeechPending){
      nativeSpeechReply=workEvidence||'The assistant could not complete that request.';
      nativeSpeechPending=false;

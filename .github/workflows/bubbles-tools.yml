@@ -15,4 +15,38 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --check workers/bubbles-tools/browser.mjs && node --check bubbles-cloud-browser.mjs && node --test test/bubbles-current-memory.test.cjs test/bubbles-cloud-browser.test.mjs && node --test test/bubbles-natural-tool-sweep.test.mjs && node --test test/bubbles-source-read-ui.test.mjs test/bubbles-card-source-routing.test.mjs && node --check workers/bubbles-tools/mcp.mjs && node --check workers/bubbles-tools/worker.mjs && node --check bubbles-ai.js && node --check robot-brain-owner.js && node --check bubbles-brain-actions.js && node --test test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-research.test.mjs test/bubbles-owner-native-pairing.test.cjs test/bubbles-resonance.test.mjs test/bubbles-tools.test.mjs test/bubbles-stream-voice.test.mjs test/bubbles-brain-bridge.test.cjs test/bubbles-brain-actions.test.cjs test/bubbles-progress-updates.test.cjs test/bubbles-owner-immediate-dispatch.test.cjs test/specialist-planner.test.mjs
+      - name: Validate tool and chat syntax
+        run: |
+          node --check workers/bubbles-tools/browser.mjs
+          node --check bubbles-cloud-browser.mjs
+          node --check workers/bubbles-tools/mcp.mjs
+          node --check workers/bubbles-tools/worker.mjs
+          node --check bubbles-ai.js
+          node --check robot-brain-owner.js
+          node --check bubbles-brain-actions.js
+      - name: Browser, source and card contract tests
+        run: |
+          node --test test/bubbles-current-memory.test.cjs test/bubbles-cloud-browser.test.mjs
+          node --test test/bubbles-natural-tool-sweep.test.mjs
+          node --test test/bubbles-source-read-ui.test.mjs test/bubbles-card-source-routing.test.mjs
+      - name: MCP lookup and research contract tests
+        run: |
+          node --test test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-research.test.mjs
+      - name: Check bubbles-owner-native-pairing
+        run: node --test test/bubbles-owner-native-pairing.test.cjs
+      - name: Check bubbles-resonance
+        run: node --test test/bubbles-resonance.test.mjs
+      - name: Check bubbles-tools
+        run: node --test test/bubbles-tools.test.mjs
+      - name: Check bubbles-stream-voice
+        run: node --test test/bubbles-stream-voice.test.mjs
+      - name: Check bubbles-brain-bridge
+        run: node --test test/bubbles-brain-bridge.test.cjs
+      - name: Check bubbles-brain-actions
+        run: node --test test/bubbles-brain-actions.test.cjs
+      - name: Check bubbles-progress-updates
+        run: node --test test/bubbles-progress-updates.test.cjs
+      - name: Check bubbles-owner-immediate-dispatch
+        run: node --test test/bubbles-owner-immediate-dispatch.test.cjs
+      - name: Check specialist-planner
+        run: node --test test/specialist-planner.test.mjs
