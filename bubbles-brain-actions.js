@@ -97,6 +97,7 @@ function resolveRepairRequest(utterance, history=[]){
  if(!/^(?:(?:please|bubbles)[\s,:]+)*(?:fix|repair|correct|restore)\s+(?:it|that|this|these(?: things| problems| issues)?|those(?: things| problems| issues)?)[.!]*$/i.test(command))return '';
  const last=Array.isArray(history)?[...history].reverse().find(item=>item?.role==='user'&&typeof item.text==='string'):null;
  const context=String(last?.text||'').trim();
+ if(/^\[Images?: [^\n]+\] /.test(context)&&context.length<=3500)return 'Repair the website problems shown in the latest owner image message. Owner request: '+context.replace(/^\[Images?: [^\n]+\] /,'');
  if(context.length<12||context.length>3500||!(/\b(?:broken|fail|error|problem|issue|not working|doesn['’]t|cannot|can['’]t|won['’]t|missing)\b/i.test(context)||classify(context)==='queue'))return '';
  return 'Repair the problems in this owner message: '+context;
 }
