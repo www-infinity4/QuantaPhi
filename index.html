@@ -285,6 +285,9 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
  </div>
  <p style="font-size:13px;color:#6e5a54">Public contact entries are source-verified. New business profiles require opt-in and moderation. Recorded audio stays local unless you download it.</p>
 </section>
+<section id="quantaDiscoveryFeed" class="qf-surface" aria-label="QuantaPhi Public For You Following discovery feed">
+ <p role="status">Loading QuantaPhi discovery cards…</p>
+</section>
 <section id="siteQuickCards" class="card iqc-home-shelf" aria-label="Fifteen independent source quick cards" style="background:#fff;border:1px solid #e1d3cb;border-radius:18px;padding:16px;margin:16px 0;color:#292222">
   <p role="status" class="iqc-muted">Loading independent source cards…</p>
 </section>
@@ -1793,6 +1796,8 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script defer src="/phi-tv-programs.js?v=20261015-direct1"></script>
 <script defer src="/phi-channel-cards.js?v=20261015-credits1"></script>
 <script defer src="/google-trending-cards.js?v=20261023-trendsync3"></script>
+<link rel="stylesheet" href="/quanta-feed.css?v=20261023-qtabs1">
+<script type="module" src="/quanta-feed.mjs?v=20261023-qtabs1"></script>
 <script type="module" src="/source-quick-cards.mjs?v=20261023-source-quick-cards1"></script>
 <script type="module" src="/science-quick-cards.mjs?v=20261023-science1"></script>
 <script defer src="/oracle-card-deck.js?v=20261023-trending1"></script>

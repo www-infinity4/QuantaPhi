@@ -11,6 +11,14 @@ on:
       - 'science-quick-cards.mjs'
       - 'science-quick-card.html'
       - 'test/science-quick-cards.test.mjs'
+      - 'quanta-feed-catalog.mjs'
+      - 'quanta-feed-rank.mjs'
+      - 'quanta-feed.mjs'
+      - 'quanta-feed-spaces.mjs'
+      - 'quanta-feed-quants.mjs'
+      - 'quanta-feed.css'
+      - 'quanta-feed-card.html'
+      - 'test/quanta-card-feed.test.mjs'
       - 'workers/bubbles-tools/worker.mjs'
       - 'test/bubbles-github-public-read.test.mjs'
       - 'test/mini-card-apps.test.mjs'
@@ -29,6 +37,14 @@ on:
       - 'science-quick-cards.mjs'
       - 'science-quick-card.html'
       - 'test/science-quick-cards.test.mjs'
+      - 'quanta-feed-catalog.mjs'
+      - 'quanta-feed-rank.mjs'
+      - 'quanta-feed.mjs'
+      - 'quanta-feed-spaces.mjs'
+      - 'quanta-feed-quants.mjs'
+      - 'quanta-feed.css'
+      - 'quanta-feed-card.html'
+      - 'test/quanta-card-feed.test.mjs'
       - 'workers/bubbles-tools/worker.mjs'
       - 'test/bubbles-github-public-read.test.mjs'
       - 'test/mini-card-apps.test.mjs'
@@ -60,7 +76,12 @@ jobs:
         run: |
           node --check source-quick-cards.mjs
           node --check science-quick-cards.mjs
-          node --test test/source-quick-cards.test.mjs test/science-quick-cards.test.mjs
+          node --check quanta-feed-catalog.mjs
+          node --check quanta-feed-rank.mjs
+          node --check quanta-feed.mjs
+          node --check quanta-feed-spaces.mjs
+          node --check quanta-feed-quants.mjs
+          node --test test/source-quick-cards.test.mjs test/science-quick-cards.test.mjs test/quanta-card-feed.test.mjs
           node --test test/mini-card-apps.test.mjs test/test-ground-ai.test.mjs test/bubbles-github-public-read.test.mjs test/bubbles-tools.test.mjs test/bubbles-card-workspace.test.mjs
   live-bubbles-chat:
     needs: source-and-mini-apps
