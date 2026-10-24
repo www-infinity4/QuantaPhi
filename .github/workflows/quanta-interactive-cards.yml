@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'quanta-card-experience.*'
+      - 'quanta-card-actions.mjs'
+      - 'oracle-card-deck.js'
       - 'quanta-feed.*'
       - 'quanta-feed-card.html'
       - 'source-quick-cards.mjs'
@@ -12,6 +14,7 @@ on:
       - 'test/quanta-card-experience.test.mjs'
       - 'test/source-quick-cards.test.mjs'
       - 'test/quanta-card-feed.test.mjs'
+      - 'test/quanta-card-actions-fox-one.test.mjs'
       - '.github/workflows/quanta-interactive-cards.yml'
   workflow_dispatch:
 jobs:
@@ -27,10 +30,11 @@ jobs:
       - name: Validate card module syntax
         run: |
           node --check quanta-card-experience.mjs
+          node --check quanta-card-actions.mjs
           node --check quanta-feed.mjs
           node --check source-quick-cards.mjs
       - name: Run interactive card regression tests
-        run: node --test test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs
+        run: node --test test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs
       - name: Install Chromium for live browser QA
         run: |
           npm install --no-save @playwright/test@1.56.1
