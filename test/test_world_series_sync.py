@@ -54,6 +54,25 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(v["articles"][0]["publisher"], "MLB.com")
         self.assertIn("links only", v["rights"])
 
+    def test_one_broken_publisher_does_not_block_valid_stories(self):
+        failures = []
+        data = assemble([
+            ("CBS Sports", "https://www.cbssports.com/partners/feeds/rss/mlb_news", b""),
+            ("ESPN", "https://www.espn.com/espn/rss/mlb/news", b"<html>not rss</html>"),
+            ("MLB.com", "https://www.mlb.com/feeds/news/rss.xml", RSS),
+        ], NOW, failures)
+        self.assertEqual(len(data["articles"]), 1)
+        self.assertEqual(data["sources"][0]["publisher"], "MLB.com")
+        self.assertEqual(len(failures), 2)
+        self.assertEqual(failures[0]["error"], "ParseError")
+        self.assertEqual(failures[1]["error"], "ValueError")
+
+    def test_all_unusable_publishers_still_fail_closed(self):
+        failures = []
+        with self.assertRaisesRegex(ValueError, "no_fresh"):
+            assemble([("MLB.com", "https://www.mlb.com/feeds/news/rss.xml", b"")], NOW, failures)
+        self.assertEqual(failures[0]["publisher"], "MLB.com")
+
     def test_image_domains_and_https_only(self):
         self.assertFalse(is_host("http://www.mlb.com/x", ("mlb.com",)))
         self.assertFalse(is_host("https://mlb.com.evil.org/x", ("mlb.com",)))
