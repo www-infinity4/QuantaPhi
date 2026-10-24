@@ -21,5 +21,5 @@ test('Cardone loads its own specialist bubble, uses the canonical embed and fres
  assert.match(cardone,/data-bubble-role="specialist"/);
  assert.match(embed,/iframe\.src=ORIGIN\+'\/bubbles\.html\?'/);
  assert.match(embed,/quantaphi:bubbles:size/);
- assert.match(bubblePage,/bubbles-ai\.js\?v=20261024-embed-boot1/);
+ assert.match(bubblePage,/bubbles-ai\.js\?v=20261023-fresh-chat1/);
 });
