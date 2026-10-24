@@ -88,3 +88,29 @@ test('FOX One original advertisement and five interactive controls are present',
  await actions.getByRole('button',{name:/Collect/}).click();
  await expect(actions.getByRole('button',{name:/Collected/})).toBeVisible();
 });
+
+test('Pepe Jeans product photographs, exact merchant links, and all five actions rotate in Public',async({page})=>{
+ await page.goto(base+'/?card=pepe-brooke',{waitUntil:'domcontentloaded'});
+ const viewer=page.locator('#oracleCardStage');
+ const card=viewer.locator('[data-source-id="pepe-brooke"]');
+ await expect(card).toBeVisible({timeout:20000});
+ await expect(card.locator('img.qbp-photo')).toHaveAttribute('src',/PL2050628_4UA_000_06_MO/);
+ await expect(card.getByRole('link',{name:/Shop this exact item/})).toHaveAttribute('href',/pepejeans\.com\/uk\/en_gb\/pd\/iconic-brooke/);
+ for(const label of ['Star','Collect','Share','+1 Build','Quick Search'])
+  await expect(card.locator('.qca-toolbar').getByText(label,{exact:false}).first()).toBeVisible();
+ await expect(page.locator('#brandProductCards')).toBeHidden();
+ await page.locator('#oracleCardNext').click();
+ await expect(viewer.locator('[data-source-id="pepe-brooke"]')).toHaveCount(0);
+});
+
+test('GUESS real denim purchase card and app-installer disclosure remain distinct from Bubbles orb',async({page})=>{
+ await page.goto(base+'/?card=guess-g11-light',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage [data-source-id="guess-g11-light"]');
+ await expect(card).toBeVisible({timeout:20000});
+ await expect(card.locator('img.qbp-photo')).toHaveAttribute('src',/W4BA0YD5CCA-GJRV/);
+ await expect(card.getByText('$89.00',{exact:false})).toBeVisible();
+ await expect(page.locator('details.q-install-details')).not.toHaveAttribute('open');
+ await page.locator('details.q-install-details summary').click();
+ await expect(page.getByRole('link',{name:'Install Bubbles in Chrome'})).toBeVisible();
+ await expect(page.locator('#q')).toBeVisible();
+});
