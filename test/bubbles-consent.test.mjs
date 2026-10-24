@@ -262,7 +262,7 @@ test('Cloudflare account selection is isolated by verified wallet, token and sel
  const selected=await service.selectCloudflareAccount({userId:'alice',id:connection.id,accountId:ownerAccount});
  assert.equal(selected.storageReady,false);
  assert.equal(selected.status,'account_selected_not_provisioned');
- assert.deepEqual(requests,['alice-private-token','alice-private-token']);
+ assert.deepEqual(requests,['alice-private-token','alice-private-token','alice-private-token']);
  const saved=await db.get((await service.namespace('alice'))+'cloudflare:selected:'+connection.id);
  assert.equal(saved.accountId,ownerAccount);
  assert.ok(!JSON.stringify([...db.rows]).includes('alice-private-token'));
