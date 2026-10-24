@@ -6,6 +6,8 @@ on:
       - 'bubbles-voice-gate.js'
       - 'test/bubbles-voice-gate.test.cjs'
       - 'test/bubbles-live-voice.test.cjs'
+      - 'test/cardone-bubbles-embed-boot.test.cjs'
+      - 'cardone-capital.html'
       - 'bubbles-ai.css'
       - 'bubbles-embed.js'
       - 'bubbles.html'
@@ -44,4 +46,4 @@ jobs:
           node --check bubbles-voice-gate.js
           node --check bubbles-embed.js
           node --check phi-story-writer.js
-          node --test test/bubbles-story-writer.test.cjs test/bubbles-voice-gate.test.cjs test/bubbles-live-voice.test.cjs
+          node --test test/bubbles-story-writer.test.cjs test/bubbles-voice-gate.test.cjs test/bubbles-live-voice.test.cjs test/cardone-bubbles-embed-boot.test.cjs
