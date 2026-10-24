@@ -49,11 +49,11 @@ test('create repository differs from file creation; questions and refusals never
 test('GitHub responses distinguish read, commit, PR and repo creation blockers',()=>{
  const start=site.indexOf('const humanReplies=()=>({'),end=site.indexOf('const brainTools=',start);
  const humanReplies=new Function(site.slice(start,end)+'\nreturn humanReplies;')()();
- assert.match(humanReplies.githubReply({ok:true,status:'inspected'}),/No files were created or changed/);
+ assert.match(humanReplies.githubReply({ok:true,status:'inspected'}),/No changes were made/);
  const commit=humanReplies.githubReply({ok:true,status:'committed_unverified',receipts:[
   {status:'committed_unverified',commitSha:'a'.repeat(40)},
   {status:'pull_request_open',url:'https://github.com/www-infinity4/RecordB/pull/5'}]});
- assert.match(commit,/source commit/);
+ assert.match(commit,/source changes were saved/);
  assert.match(commit,/pull\/5/);
  assert.match(commit,/not verified/);
  const created=humanReplies.githubReply({ok:true,status:'repository_created',repository:'www-infinity4/Bubbles-QA',url:'https://github.com/www-infinity4/Bubbles-QA',environment:{status:'blocked',error:'github_workflow_setup_http_403'}});
