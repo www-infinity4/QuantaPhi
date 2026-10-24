@@ -1,0 +1,47 @@
+name: World Series publisher RSS report cards
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/sync_world_series.py'
+      - 'test/test_world_series_sync.py'
+      - '.github/workflows/world-series-rss-sync.yml'
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+# Serialize uploads to the existing data branch with the Google Trends writer.
+concurrency:
+  group: quantaphi-google-trends-sync
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unit-test publisher RSS, images, duplicates, freshness
+        run: python3 -m unittest discover -s test -p 'test_world_series_sync.py' -v
+      - name: Fetch official publisher feeds; fail without verified articles
+        run: python3 scripts/sync_world_series.py
+      - name: Publish only verified World Series data to existing trend-data branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp data/world-series-latest.json "$RUNNER_TEMP/world-series-latest.json"
+          git config user.name "quanta-sports-rss-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git clean -fdx
+          git fetch origin refs/heads/trends-rss-data:refs/remotes/origin/trends-rss-data
+          git checkout -B trends-rss-data origin/trends-rss-data
+          mkdir -p data
+          cp "$RUNNER_TEMP/world-series-latest.json" data/world-series-latest.json
+          git add data/world-series-latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: verify World Series news and analysis RSS"
+            git push origin HEAD:refs/heads/trends-rss-data
+          fi
