@@ -19,6 +19,15 @@ test('QuantaPhi mounts Bubbles beside Media Star and loads all versioned assets'
  assert.ok(!html.includes('href="#bubblesAICard"'));
 });
 
+test('search-first public homepage does not create a Bubbles orb or start microphone services',()=>{
+ const document={body:{classList:{contains:name=>name==='oracle-quanta'}},
+  getElementById(){throw new Error('public search must not mount Bubbles')}};
+ const window={};
+ assert.doesNotThrow(()=>vm.runInNewContext(source('bubbles-ai.js'),{document,window,console}));
+ assert.equal(window.__QuantaBubblesMounted,undefined);
+ assert.match(source('index.html'),/<body class="oracle-surface oracle-quanta /);
+});
+
 test('image-to-story flow inspects real picture bytes; no filename-based story guessing',()=>{
  const writer=source('phi-story-writer.js'),adapter=source('phi-visual-render.js'),css=source('phi-story-writer.css');
  assert.doesNotThrow(()=>new vm.Script(writer));
