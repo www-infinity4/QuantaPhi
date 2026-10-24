@@ -5,6 +5,7 @@ const bearer='Bearer sq_'+ 'a'.repeat(40);
 function request(path,{method='GET',origin='https://quantaphi.org',authorization=bearer,body}={}) {
   return new Request('https://quantaphi.org'+PREFIX+path,{method,headers:{Origin:origin,Authorization:authorization,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})});
 }
+const FULL_CLOUDFLARE_SCOPES="user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read workers-routes.read workers-routes.write page.read workers-kv-storage.read workers-kv-storage.write workers-r2.read workers-r2.write queues.read queues.write ai.read ai.write browser-rendering.read browser-rendering.write containers.read containers.write workers-observability.read dns.read dns.write";
 const env={CONNECTIONS_READY:true,BOT_WALLET:{fetch:async(url,options)=>{assert.equal(url,'https://wallet.internal/v1/wallet/state');assert.equal(options.headers.Authorization,bearer);return Response.json({ok:true,user:{id:'verified-alice'}});}}};
 test('router rejects foreign origins and unauthenticated callers before resolving storage',async()=>{
   const resolve=()=>assert.fail('must not resolve a service');
@@ -53,7 +54,7 @@ test('unexpected provider error text is redacted and no token appears in respons
 test('two-provider gate reuses tenant-scoped verified records and never gives chat permission itself',async()=>{
  const now=Date.now();
  const configured={...env,GITHUB_CLIENT_ID:'app-github',GITHUB_CLIENT_SECRET:'not-exposed',
-  CLOUDFLARE_CLIENT_ID:'app-cloudflare',CLOUDFLARE_CLIENT_SECRET:'not-exposed'};
+  CLOUDFLARE_CLIENT_ID:'app-cloudflare',CLOUDFLARE_CLIENT_SECRET:'not-exposed',CLOUDFLARE_OAUTH_ALLOWED_SCOPES:FULL_CLOUDFLARE_SCOPES};
  let seen=null;
  const service={
   gateStatus:async input=>{
@@ -79,7 +80,7 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
  assert.ok(!JSON.stringify(result).includes('not-exposed'));
 });
 test('full Cloudflare project grant is required before reporting full access',async()=>{
- const now=Date.now(),configured={...env,GITHUB_CLIENT_ID:'app',GITHUB_CLIENT_SECRET:'hidden',CLOUDFLARE_CLIENT_ID:'app',CLOUDFLARE_CLIENT_SECRET:'hidden'};
+ const now=Date.now(),configured={...env,GITHUB_CLIENT_ID:'app',GITHUB_CLIENT_SECRET:'hidden',CLOUDFLARE_CLIENT_ID:'app',CLOUDFLARE_CLIENT_SECRET:'hidden',CLOUDFLARE_OAUTH_ALLOWED_SCOPES:FULL_CLOUDFLARE_SCOPES};
  const service={gateStatus:async()=>[
   {provider:'github',status:'connected',expiresAt:now+60000,grantedActions:[]},
   {provider:'cloudflare',status:'connected',expiresAt:now+60000,
@@ -116,4 +117,37 @@ test('Cloudflare OAuth callback is fixed-origin and removes incoming code from i
  assert.ok(html.includes("history.replaceState"));
  assert.ok(!html.includes('private-code'));
  assert.ok(response.headers.get('Content-Security-Policy').includes("frame-ancestors 'none'"));
+});
+
+test('Cloudflare missing OAuth client registration is not advertised as ready despite a working platform token',async()=>{
+ const result=await (await handleConnections(request('/catalog'),{...env,CLOUDFLARE_OAUTH_ALLOWED_SCOPES:FULL_CLOUDFLARE_SCOPES},
+  ()=>assert.fail('catalog must not access private user data'))).json();
+ const provider=result.providers.find(x=>x.id==='cloudflare');
+ assert.equal(provider.configured,false);
+ assert.equal(provider.fullProjectConfigured,false);
+ assert.equal(provider.setupRequired,'oauth_client_not_configured');
+ assert.equal(provider.actions.includes('projects.full'),true);
+});
+test('Cloudflare app registered without full project scopes blocks full consent instead of retrying login',async()=>{
+ const limited={...env,CLOUDFLARE_CLIENT_ID:'client',CLOUDFLARE_CLIENT_SECRET:'private',
+  CLOUDFLARE_OAUTH_ALLOWED_SCOPES:'user-details.read memberships.read'};
+ const catalog=await (await handleConnections(request('/catalog'),limited,()=>assert.fail())).json();
+ const cf=catalog.providers.find(p=>p.id==='cloudflare');
+ assert.equal(cf.configured,true);
+ assert.equal(cf.fullProjectConfigured,false);
+ assert.deepEqual(cf.actions,['account.read']);
+ const gate=await (await handleConnections(request('/gate/status'),limited,
+  ()=>({gateStatus:async()=>[]}))).json();
+ assert.equal(gate.providers.cloudflare.scopeSetupRequired,true);
+ assert.equal(gate.providers.cloudflare.reconnectRequired,false);
+});
+test('Cloudflare account lookup and selection always receive verified wallet user ID, not supplied ID',async()=>{
+ const calls=[],service={cloudflareAccounts:async input=>{calls.push(input);return {accounts:[{id:'a'.repeat(32),name:'Only mine'}]};},
+  selectCloudflareAccount:async input=>{calls.push(input);return {account:{id:input.accountId,name:'Only mine'},storageReady:false};}};
+ const list=await handleConnections(request('/cloudflare/accounts',{method:'POST',body:{id:'connection',userId:'victim'}}),env,()=>service);
+ assert.equal(list.status,200);
+ const select=await handleConnections(request('/cloudflare/select-account',{method:'POST',body:{id:'connection',accountId:'a'.repeat(32),userId:'victim'}}),env,()=>service);
+ assert.equal(select.status,200);
+ assert.ok(calls.every(x=>x.userId==='verified-alice'));
+ assert.equal((await select.json()).storageReady,false);
 });
