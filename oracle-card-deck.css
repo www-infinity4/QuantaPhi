@@ -30,3 +30,21 @@
 .oracle-card-deck-active:not(.oracle-shelf-open) main.app > :is(#cardoneCapitalOffer,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#result,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:none!important}
 .oracle-shelf-open main.app > :is(#cardoneCapitalOffer,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:block}
 @media(max-width:390px){.oracle-card-deck{padding:11px}.oracle-card-deck-nav{grid-template-columns:1fr 1fr}.oracle-card-deck-nav strong{grid-column:1/-1;grid-row:1}.oracle-card-deck-nav button{font-size:13px;min-height:48px}}
+
+/* Search and the working card lead the page; navigation stays quiet. */
+body.oracle-quanta #oracleCardDeck{padding:0;margin:8px 0 20px;border:0;border-radius:0;background:transparent;box-shadow:none;color:#302b29}
+body.oracle-quanta .search{position:relative;top:auto;background:transparent;box-shadow:none;border:0;padding:8px 0}
+body.oracle-quanta .search #q{border:1px solid #c9c3bd;border-radius:12px;box-shadow:none;background:#fff;color:#302b29}
+body.oracle-quanta .search #go{background:#fff;color:#3d3530;border:1px solid #c9c3bd;border-radius:12px;box-shadow:none;padding:10px 14px}
+body.oracle-quanta .search>.public-card-count,body.oracle-quanta .qcp-builder-shortcut{display:none!important}
+body.oracle-quanta #oracleCardDeck .oracle-direction-tabs{margin:0 0 8px}
+body.oracle-quanta #oracleCardDeck .oracle-direction-tabs button{border-radius:0;font-weight:600;font-size:14px}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav{grid-template-columns:44px minmax(0,1fr) 44px;gap:8px}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav button{min-height:44px;padding:0;background:#fff;color:#49413c;border:1px solid #d6cec8;border-radius:10px;box-shadow:none;font-size:27px}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-nav strong{font-size:14px;font-weight:600;grid-column:auto;grid-row:auto}
+body.oracle-quanta #oracleCardDeck .oracle-direction-action{justify-content:flex-end;padding:4px 0}
+body.oracle-quanta #oracleCardDeck #oracleCardFollow{min-width:0;min-height:44px;padding:7px 12px;border-color:#d6cec8;color:#49413c;font-weight:600}
+body.oracle-quanta #oracleCardDeck .oracle-card-deck-stage{margin:4px 0 9px}
+body.oracle-quanta #oracleCardDeck .oracle-card-scroll{background:transparent;color:#62574f;border:1px solid #ddd5ce;min-height:44px;font-size:13px;font-weight:500;box-shadow:none}
+/* Keep changing recommendation explanations accessible without crowding cards. */
+#oracleCardReason,#oracleCardStatus{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important}

@@ -16,8 +16,8 @@ assert.match(deck,/\['cardoneCapitalOffer','10X Westshore/);
 assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
 assert.match(deck,/show\(entry\)/);
 assert.match(deck,/entries\.find\(x=>x\.id===spotlightRequested\)/);
-assert.match(html,/id="oracleCardCardone"/);
-assert.match(html,/oracle-card-deck\.js\?v=20261024-fullcycle1/);
+assert.doesNotMatch(html,/class="oracle-card-deck-feature"/);
+assert.match(html,/oracle-card-deck\.js\?v=20261024-clean3/);
 assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
 assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
 
@@ -27,7 +27,7 @@ for(const id of ['googleTrendNba','googleTrendMlb','googleTrendCulture']){
  assert.match(css,new RegExp('#'+id));
 }
 assert.match(deck,/data-oracle-spotlight/);
-assert.match(html,/href="\/trending-now\.html"/);
+assert.doesNotMatch(html,/Featured search trend cards/);
 
 assert.match(html,/data-oracle-feed="public"/);
 assert.match(html,/data-oracle-feed="for-you"/);
