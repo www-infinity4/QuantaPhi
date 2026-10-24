@@ -178,6 +178,28 @@ credentials or API access must produce an explicit 'not connected/last checked'
 state, never a claim that posts were read. Check available bindings without
 printing tokens. A schedule/configuration alone is not evidence of a read.
 
+
+## Priority companion work order: collector, premium mall and restaurant cards — October 24
+
+Owner added 19 explicit new/upgrade requests for VAMWorld, PCGS, NGC, Heritage
+Auctions, Topps, Beckett, Christie's, Library of Congress, Morrison Hotel
+Gallery, Rolling Stone, Coin World, COINage/COINS magazine title clarification,
+premium Shop LC listings, Sonic, Burger King, McDonald's, related restaurants
+and additional verified collector sources. The in-depth intent, imagery,
+interactions, discovery behavior, source freshness and per-card acceptance gates
+are in **docs/BUBBLES-COLLECTORS-MALL-DINING-20261024.md** and the durable
+machine-readable **data/bubbles-collector-mall-dining-cards-20261024.json**.
+These supersede any assumptions that generic link tiles satisfy the request,
+but do NOT supersede protected existing completed cards, wallet rules or
+deployment gates. See source and test receipts before claiming features done.
+
+Also report: bottom Bubbles/Android/Chrome navigation arrows can be white-on-white;
+the X Developer Console Continue page can stall. Prefer official **OAuth Sign in
+with X with PKCE and read-only scopes** after app registration; never ask for a
+raw X password. A normal X website login can support manual post links, not
+automatic API reading. Any UI fix or X-connect implementation requires its own
+tests, merge, deployed and Android/Chrome observations.
+
 ## Completion receipts
 
 Keep this backlog and batch status durable. For each batch show: exact request,

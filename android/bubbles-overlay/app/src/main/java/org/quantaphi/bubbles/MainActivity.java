@@ -43,6 +43,7 @@ public final class MainActivity extends Activity {
 
     @Override public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        NavigationContrast.apply(this);
         // A killed recording/export service may leave a valid MP4 outside Gallery.
         // Scan and restore only when no screen recording is running.
         CaptureRecovery.recover(this);
