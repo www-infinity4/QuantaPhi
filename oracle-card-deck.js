@@ -8,6 +8,7 @@ if(!host||!stage)return;
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
+ ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
  ['pixieStoryCard','Pixie Stories · Read and explore'],
@@ -37,6 +38,7 @@ const choices=[
 /* These are the ORIGINAL live widgets, not duplicated external link previews.
  * Shared IDs connect the Oracle viewer to Public / For You / Following. */
 const CARD_DIRECTIONS={
+ walmartShoppingCard:['walmart-shopping','Shopping','Shop Walmart pizza, groceries and related products'],
  cardoneCapitalOffer:['cardone-capital','Real estate','Study cashflow, fees and property risk'],
  quantaDirectoryCards:['public-directory','Directory','Search verified names, businesses and websites'],
  scienceQuickCards:['nasa-science','Science','Study current science and research'],
@@ -73,7 +75,7 @@ const cardoneButton=document.getElementById('oracleCardCardone');
 const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
+ const names={walmart:'walmartShoppingCard',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
  return names[url.searchParams.get('card')]||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
 }catch{return null}})();
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
@@ -105,7 +107,7 @@ function registerSourceCards(){
   const google=entries.find(e=>e.id==='source-google');
   // Prefer the first polished Google card on a cold open, never override
   // an explicit Cardone button, saved direction or human flip.
-  if(!expanded&&!viewerTouched&&!spotlightRequested&&google&&available(google)&&(!active||active.id===CARDONE_ID))show(google,false);
+  if(!expanded&&!viewerTouched&&!spotlightRequested&&google&&available(google)&&!entries.some(e=>e.id==='walmartShoppingCard'&&available(e))&&(!active||active.id===CARDONE_ID))show(google,false);
   else if(!active&&!expanded)start();
  }
 }
