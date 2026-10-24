@@ -69,6 +69,9 @@ test('tab controls, mobile search, Bubbles specialists and existing website card
  assert.match(ui,/aria-selected/);
  assert.match(ui,/aria-pressed/);
  assert.match(ui,/quantaFeedFeature/);
+ assert.match(ui,/window\.QuantaOpenSite\(link\)/);
+ assert.match(ui,/link\.dataset\.siteUrl=target/);
+ assert.ok(!ui.includes('QuantaOpenSite(target,card.name)'), 'viewer requires DOM element');
  assert.match(ui,/Next unseen card/);
  assert.match(ui,/localStorage\.setItem/);
  assert.match(ui,/embed\.src='\/bubbles-embed\.js'/);
