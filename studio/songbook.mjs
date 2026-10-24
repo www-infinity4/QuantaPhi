@@ -9,6 +9,21 @@ export const STUDIO_SONGS=Object.freeze([
   source:'StarMaker official songbook',artStatus:'original_card_art_only'}),
  Object.freeze({id:'rest-your-love-on-me-bee-gees',title:'Rest Your Love On Me',artist:'Bee Gees',
   url:'https://www.starmakerstudios.com/en/song/bee-gees-rest-your-love-on-me-lyrics/6755116273981412',
+  source:'StarMaker official songbook',artStatus:'original_card_art_only'}),
+ Object.freeze({id:'dance-monkey-tones-and-i',title:'Dance Monkey',artist:'TONES AND I',
+  url:'https://www.starmakerstudios.com/en/song/tones-and-i-dance-monkey-lyrics/611752105020283316',
+  source:'StarMaker official songbook',artStatus:'original_card_art_only'}),
+ Object.freeze({id:'savage-love-jason-derulo',title:'Savage Love',artist:'Jason Derulo',
+  url:'https://www.starmakerstudios.com/en/song/jason-derulo-savage-love-lyrics/611752105020739568',
+  source:'StarMaker official songbook',artStatus:'original_card_art_only'}),
+ Object.freeze({id:'like-im-gonna-lose-you-meghan-trainor',title:"Like I'm Gonna Lose You",artist:'Meghan Trainor',
+  url:'https://www.starmakerstudios.com/en/song/meghan-trainor-like-im-gonna-lose-you-lyrics/6501562479804416',
+  source:'StarMaker official songbook',artStatus:'original_card_art_only'}),
+ Object.freeze({id:'hello-adele',title:'Hello',artist:'Adele',
+  url:'https://www.starmakerstudios.com/en/song/adele-hello-lyrics/6755116273976328',
+  source:'StarMaker official songbook',artStatus:'original_card_art_only'}),
+ Object.freeze({id:'runaway-aurora',title:'Runaway',artist:'Aurora',
+  url:'https://www.starmakerstudios.com/en/song/aurora-runaway-lyrics/611752105015240427',
   source:'StarMaker official songbook',artStatus:'original_card_art_only'})
 ]);
 export const OFFICIAL_SONGBOOK='https://www.starmakerstudios.com/en/songs';
