@@ -32,3 +32,8 @@
 .gt-page a{color:#9d2e26;text-underline-offset:3px}
 .gt-page .gt-page-footer{padding:18px;margin:16px 0;border-radius:16px;background:#fff;border:1px solid #e8d7c8;font-size:13px}
 @media(max-width:430px){.gt-card{padding:11px!important}.gt-toolbar{gap:5px}.gt-control,.gt-link{min-height:45px}.gt-match{gap:7px}}
+
+/* Current trends appear separately from the dated October 23 archive. */
+.gt-latest-feed{border:1px solid #e7d0c0;border-radius:14px;background:#fff8f3;padding:12px;margin:13px 0}
+.gt-latest-feed .gt-games{max-height:480px;overflow:auto;overscroll-behavior:contain}
+.gt-latest-feed .gt-topic{overflow-wrap:anywhere}
