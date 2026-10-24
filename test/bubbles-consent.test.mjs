@@ -243,3 +243,29 @@ test('connection test never writes without verified installed-repository write p
  adapter.repositories=async()=>({repositories:[{name:'www-infinity4/QuantaPhi',permissions:{write:false}}]});
  await assert.rejects(adapter.connectionTest({accessToken:'test'}),/repository_write_not_verified/);
 });
+
+test('Cloudflare account selection is isolated by verified wallet, token and selected membership',async()=>{
+ const db=storage(),vault=new TokenVault({v1:randomToken()},'v1'),ownerAccount='a'.repeat(32),anotherAccount='b'.repeat(32),requests=[];
+ const adapter={
+  authorization:({state})=>'https://dash.cloudflare.com/oauth2/auth?state='+state,
+  exchange:async()=>({accessToken:'alice-private-token',refreshToken:'alice-refresh',expiresIn:3600,subject:'cf-alice',label:'Alice Cloudflare',grantedActions:['account.read']}),
+  accounts:async({accessToken})=>{requests.push(accessToken);return {accounts:[{id:ownerAccount,name:'Alice own account'}],truncated:false};},
+  revoke:async()=>{}
+ };
+ const service=new ConsentService({storage:db,vault,adapters:{cloudflare:adapter},now:()=>1000});
+ const args={userId:'alice',sessionId:'trusted-session',provider:'cloudflare',actions:['account.read']};
+ const state=new URL((await service.start(args)).authorizationUrl).searchParams.get('state');
+ const connection=await service.complete({...args,state,code:'authorization'});
+ assert.deepEqual((await service.cloudflareAccounts({userId:'alice',id:connection.id})).accounts,[{id:ownerAccount,name:'Alice own account'}]);
+ await assert.rejects(service.cloudflareAccounts({userId:'bob',id:connection.id}),/connection_/);
+ await assert.rejects(service.selectCloudflareAccount({userId:'alice',id:connection.id,accountId:anotherAccount}),/cloudflare_account_not_authorized/);
+ const selected=await service.selectCloudflareAccount({userId:'alice',id:connection.id,accountId:ownerAccount});
+ assert.equal(selected.storageReady,false);
+ assert.equal(selected.status,'account_selected_not_provisioned');
+ assert.deepEqual(requests,['alice-private-token','alice-private-token']);
+ const saved=await db.get((await service.namespace('alice'))+'cloudflare:selected:'+connection.id);
+ assert.equal(saved.accountId,ownerAccount);
+ assert.ok(!JSON.stringify([...db.rows]).includes('alice-private-token'));
+ await service.disconnect({userId:'alice',id:connection.id});
+ assert.equal(await db.get((await service.namespace('alice'))+'cloudflare:selected:'+connection.id),undefined);
+});
