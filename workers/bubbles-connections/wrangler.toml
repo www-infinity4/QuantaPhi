@@ -25,4 +25,10 @@ new_sqlite_classes = ["UserConnections"]
 
 # Server-only secrets: CONNECTION_KEYRING (JSON keyId -> 32-byte base64url key),
 # CONNECTION_ACTIVE_KEY, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET,
-# GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET. Never reuse the owner's GHP token.
+# GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET; and the separate Bubbles public OAuth
+# application CLOUDFLARE_CLIENT_ID, CLOUDFLARE_CLIENT_SECRET. Never reuse
+# ChatGPT's Cloudflare OAuth client, any user's OAuth token, or the owner's GHP.
+# CLOUDFLARE_OAUTH_ALLOWED_SCOPES is a SERVER-ONLY config value listing precisely
+# the scopes pre-registered for the Bubbles OAuth client. Set only after checking
+# that actual client configuration. Without this allowlist, Cloudflare consent
+# stays unavailable instead of entering a repeated ungrantable-scope login loop.
