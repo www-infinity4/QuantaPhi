@@ -65,7 +65,9 @@ test('corrupt or oversized anonymous feed state is sanitized',()=>{
 test('tab controls, mobile search, Bubbles specialists and existing website cards stay integrated',()=>{
  const index=raw('index.html'),ui=raw('quanta-feed.mjs'),css=raw('quanta-feed.css');
  assert.match(index,/id="quantaDiscoveryFeed"/);
- assert.match(index,/quanta-feed\.mjs\?v=/);
+ assert.doesNotMatch(index,/<script type="module" src="\/quanta-feed\.mjs/);
+ assert.match(index,/id="quantaDiscoveryFeed"[^>]+hidden/);
+ assert.match(index,/id="oracleCardDeck"/);
  for(const label of ['Public','For You','Following'])assert.match(ui,new RegExp(label));
  assert.match(ui,/aria-selected/);
  assert.match(ui,/aria-pressed/);
