@@ -8,9 +8,9 @@ const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'
 const launcher=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
 const deck=readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
 const tools=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
-test('all fifteen provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
- assert.equal(QUICK_CARD_SOURCES.length,15);
- assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,15);
+test('all seventeen provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
+ assert.equal(QUICK_CARD_SOURCES.length,17);
+ assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,17);
  for(const card of QUICK_CARD_SOURCES){
   assert.ok(validSourceCard(card),card.id);
   assert.equal(findSourceCard(card.id),card);
@@ -20,7 +20,7 @@ test('all fifteen provider quick cards exist, have unique IDs and real HTTPS ori
  }
  assert.equal(findSourceCard('not-registered'),null);
  assert.deepEqual(QUICK_CARD_SOURCES.map(p=>p.id),
- ['google','youtube','facebook','instagram','chatgpt','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-news','tv-guide','starmaker']);
+ ['google','youtube','facebook','instagram','chatgpt','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-news','tv-guide','starmaker','xavior','bridge']);
 });
 test('Google and Bing start real engine requests inside the Infinity Viewer',()=>{
  for(const id of ['google','bing']){
