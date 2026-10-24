@@ -9,7 +9,6 @@ const now=document.getElementById('oracleCardNow'),status=document.getElementByI
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
- ['siteQuickCards','Source quick cards · Google, YouTube, Fox, CNN, StarMaker and more'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
  ['scienceQuickCards','Muse AI, NASA Webb, science and technology'],
  ['pixieStoryCard','Pixie Stories · Read and explore'],
@@ -40,7 +39,6 @@ const choices=[
  * Shared IDs connect the Oracle viewer to Public / For You / Following. */
 const CARD_DIRECTIONS={
  cardoneCapitalOffer:['cardone-capital','Real estate','Study cashflow, fees and property risk'],
- siteQuickCards:['quanta-feed','Discovery','Use the focused search, media and website cards'],
  quantaDirectoryCards:['public-directory','Directory','Search verified names, businesses and websites'],
  scienceQuickCards:['nasa-science','Science','Study current science and research'],
  pixieStoryCard:['pixie-stories','Stories','Read an original Pixie story'],
@@ -87,6 +85,25 @@ const follow=document.getElementById('oracleCardFollow'),reason=document.getElem
 let selectedTab='public',directionApi=null,quantApi=null,quantWeights={},quantConnected=false;
 let feedState=null,proposed=null;
 const visited=[];
+function registerSourceCards(){
+ // Each real homepage widget gets its own direction and Follow state.
+ // Move the ORIGINAL article, preserving its search field, player and listeners.
+ let added=false;
+ for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id]')){
+  const id=node.dataset.sourceId;
+  if(!/^[a-z0-9-]+$/.test(id||'')||entries.some(e=>e.feedId===id))continue;
+  const label=node.querySelector('h3')?.textContent?.trim()||id;
+  const category=node.querySelector('.iqc-kind')?.textContent?.trim()||'Website';
+  const entry={id:'source-'+id,title:label+' · Interactive',feedId:id,
+   category,feature:'Use the real '+label+' card controls',study:'Original source card with direct controls',
+   node,marker:null,count:Math.max(0,Math.min(1000,Number(counts['source-'+id])||0))};
+  entries.push(entry);added=true;
+ }
+ if(added){updateTabs();predict();if(!active&&!expanded)start();}
+}
+window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
+// Module evaluation ordering can differ across mobile WebViews; recover both.
+registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
 function liveCatalog(){return entries.filter(available).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study}));}
