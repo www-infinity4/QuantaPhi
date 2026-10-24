@@ -142,7 +142,7 @@ function recorder(root){
    rec.onstop=()=>{
     stream?.getTracks().forEach(t=>t.stop());stream=null;
     if(chunks.length){if(objectUrl)URL.revokeObjectURL(objectUrl);const blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'});objectUrl=URL.createObjectURL(blob);
-     player.src=objectUrl;player.hidden=false;save.href=objectUrl;save.hidden=false;status.textContent='Take saved locally in this browser. Play it or save the file.';}
+     player.src=objectUrl;player.hidden=false;save.href=objectUrl;save.hidden=false;status.textContent='Take captured in this session. Play it or download the file before closing.';}
     else status.textContent='No audio data was captured. Nothing has been saved.';
    };
    rec.start(500);start.disabled=true;stop.disabled=false;status.textContent='Recording your voice…';
@@ -187,6 +187,57 @@ function whatsappDraft(root){
   const url='https://wa.me/'+n+'?text='+encodeURIComponent(body.value);window.open(url,'_blank','noopener,noreferrer');status.textContent='Draft opened at WhatsApp; you decide whether to send.';
  });panel.append(recipient,body,b,status);
 }
+
+/* Reuse the existing verified Google Trends RSS importer and cached observations.
+ * These are Google search topics, NOT native rankings on YouTube, CNN or X.
+ */
+export async function loadVerifiedTrends(fetcher=fetch){
+ const sources=['/data/google-trends-latest.json',
+  'https://raw.githubusercontent.com/www-infinity4/QuantaPhi/trends-rss-data/data/google-trends-latest.json'];
+ for(const url of sources){
+  try{
+   const response=await fetcher(url,{cache:'no-store',credentials:'omit',headers:{Accept:'application/json'}});
+   if(!response.ok)continue;
+   const feed=await response.json();
+   if(feed?.source!=='Google Trends Trending Now RSS'||feed.region!=='US'||
+    !Array.isArray(feed.topics)||!Number.isFinite(Date.parse(feed.checked_at)))continue;
+   const items=feed.topics.filter(x=>typeof x.query==='string'&&x.query.trim().length>1&&
+    typeof x.approx_searches==='string'&&/^\\d[\\d,]*(?:\\.\\d+)?[KMB]?\\+$/i.test(x.approx_searches)&&
+    Number.isFinite(Date.parse(x.published_at))).slice(0,15);
+   if(items.length) return {checkedAt:feed.checked_at,items,sourceUrl:feed.source_url};
+  }catch{/* Try the maintained trend-data branch. */}
+ }
+ throw new Error('verified_trends_unavailable');
+}
+function trendingTool(root,card){
+ if(!['google','youtube','yahoo-news','cnn','fox-news','x','bing'].includes(card.id))return;
+ const panel=section(root,'DATED SOURCE · GOOGLE TRENDS RSS','What people are searching for');
+ const status=node('p','qcx-note','Select Refresh to load Google’s latest observed U.S. searches.');
+ const rows=node('div','qcx-trends');rows.setAttribute('aria-live','polite');
+ const refresh=action('↻ Refresh verified topics',()=>void load());
+ panel.append(status,refresh,rows);
+ const base=searchBase[card.id]?.[0]||'https://www.google.com/search?q=';
+ async function load(){
+  refresh.disabled=true;status.textContent='Checking the latest validated Google Trends feed…';rows.replaceChildren();
+  try{
+   const d=await loadVerifiedTrends();
+   const age=Date.now()-Date.parse(d.checkedAt);
+   const stale=age<0||age>36*60*60*1000;
+   const when=new Date(d.checkedAt).toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'});
+   status.textContent=(stale?'Archived observations':'Last checked')+': '+when+' · Google U.S. search-volume buckets, not QuantaPhi visits or '+card.name+' native trends.';
+   for(const item of d.items.slice(0,10)){
+    const r=node('div','qcx-trend');
+    const desc=node('div','');desc.append(node('strong','',item.query),node('small','',item.approx_searches+' approximate Google searches'));
+    const b=action('Explore on '+card.name,()=>window.open(base+encodeURIComponent(item.query),'_blank','noopener,noreferrer'));
+    r.append(desc,b);rows.append(r);
+   }
+   rows.append(link('Google Trends original source',d.sourceUrl));
+  }catch{status.textContent='Live trend snapshot unavailable. No topics were fabricated.';}
+  finally{refresh.disabled=false;}
+ }
+ // Fetch only after the visitor requests it, not for every card on the Public grid.
+}
+
 export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
@@ -198,6 +249,7 @@ export function mountCardTools(root,card){
  if(id==='wikipedia')wikipediaTool(root,card);
  if(id==='gold'||id==='silver')calculator(root,card);
  checklist(root,card);
+ trendingTool(root,card);
  searchTool(root,card);
  if(root.querySelectorAll('.qcx-tool').length===0){
   const tool=section(root,'INVESTIGATE','Research this source');
