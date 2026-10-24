@@ -9,6 +9,9 @@ const now=document.getElementById('oracleCardNow'),status=document.getElementByI
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
+ ['googleTrendNba','NBA · Trending matchups'],
+ ['googleTrendMlb','MLB · World Series'],
+ ['googleTrendCulture','Media · Trending searches'],
  ['infiniteBook','Read an original story'],
  ['phiChannelCards','Watch a channel'],
  ['phiStoryWriter','Write a story'],
@@ -33,7 +36,11 @@ const entries=unique.map(([id,title])=>({id,title,node:document.getElementById(i
 const STORE='oracle:card-activity:v1';
 const cardoneButton=document.getElementById('oracleCardCardone');
 const CARDONE_ID='cardoneCapitalOffer';
-const spotlightRequested=(()=>{try{const url=new URL(location.href);return url.searchParams.get('card')==='cardone'||url.hash==='#cardoneCapitalOffer'}catch{return false}})();
+const spotlightRequested=(()=>{try{
+ const url=new URL(location.href);
+ const names={cardone:'cardoneCapitalOffer',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
+ return names[url.searchParams.get('card')]||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
+}catch{return null}})();
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
 entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
 let active=null,expanded=false;
@@ -85,6 +92,19 @@ cardoneButton?.addEventListener('click',()=>{
  show(entry);
  host.scrollIntoView?.({block:'start',behavior:'smooth'});
 });
+for(const shortcut of document.querySelectorAll('[data-oracle-spotlight]')){
+ shortcut.addEventListener('click',()=>{
+  const id=shortcut.getAttribute('data-oracle-spotlight');
+  const entry=entries.find(x=>x.id===id);
+  if(!available(entry)){status.textContent='Trending card is not available yet.';return}
+  if(expanded){
+   expanded=false;document.body.classList.remove('oracle-shelf-open');
+   scroll.setAttribute('aria-expanded','false');
+   scroll.textContent='↓ Scroll interactive cards / widgets';
+  }
+  show(entry);host.scrollIntoView?.({block:'start',behavior:'smooth'});
+ });
+}
 next.addEventListener('click',()=>advance(1));
 prev.addEventListener('click',()=>advance(-1));
 scroll.addEventListener('click',()=>{
@@ -109,7 +129,7 @@ host.addEventListener('click',e=>{
  counts[entry.id]=Math.min(1000,(counts[entry.id]||0)+1);
 },true);
 document.body.classList.add('oracle-card-deck-active');
-function start(){if(!active&&!expanded){const first=spotlightRequested&&available(entries.find(x=>x.id===CARDONE_ID))?entries.find(x=>x.id===CARDONE_ID):order()[0];if(first)show(first);else status.textContent='Loading original interactive cards…';}}
+function start(){if(!active&&!expanded){const request=entries.find(x=>x.id===spotlightRequested);const first=request&&available(request)?request:order()[0];if(first)show(first);else status.textContent='Loading original interactive cards…';}}
 start();
 const observe=new MutationObserver(()=>{if(!active)start();});
 for(const entry of entries)observe.observe(entry.node,{childList:true,subtree:false,attributes:entry.id==='result',attributeFilter:entry.id==='result'?['hidden']:undefined});
