@@ -36,6 +36,9 @@ jobs:
           cp research/google-trends/observations/*.json "$RUNNER_TEMP/trends-observations/"
           git config user.name "quanta-trends-bot"
           git config user.email "actions@users.noreply.github.com"
+          # Generated JSON is untracked on main; clear it before checking out the
+          # data branch (where that same path is already tracked on later runs).
+          git clean -fdx
           if git ls-remote --exit-code --heads origin trends-rss-data >/dev/null 2>&1; then
             git fetch origin refs/heads/trends-rss-data:refs/remotes/origin/trends-rss-data
             git checkout -B trends-rss-data origin/trends-rss-data
