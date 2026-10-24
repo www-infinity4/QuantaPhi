@@ -2,6 +2,7 @@ import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
 import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountSpaceSource} from './quanta-feed-spaces.mjs';
+import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,markViewed,markOpened,toggleFollowing} from './quanta-feed-rank.mjs';
 
@@ -16,7 +17,14 @@ const fromScience=SCIENCE_CARDS.map(c=>({
 const fromDiscovery=DISCOVERY_CARDS.map(c=>({
  ...c,route:'/quanta-feed-card.html?card='+encodeURIComponent(c.id),origin:'discovery'
 }));
-export const ALL_FEED_CARDS=Object.freeze([...fromSources,...fromScience,...fromDiscovery].map(c=>Object.freeze(c)));
+// The public feed really includes the kitchen sink: existing QuantaPhi tools,
+// games and media alongside independently researched external sources.
+const fromBubbles=BUBBLES_CARDS.filter(c=>typeof c.url==='string'&&/^\\/(?!\\/)/.test(c.url))
+ .map(c=>({id:c.id,name:c.title,category:'QuantaPhi apps',feature:'Open interactive QuantaPhi app',
+  study:'Existing QuantaPhi application or media card with its original controls. Some actions require a verified wallet, source access or the usual owner approval.',
+  url:c.url,route:c.url,origin:'quanta-app'}));
+export const ALL_FEED_CARDS=Object.freeze([...new Map([...fromSources,...fromScience,...fromDiscovery,...fromBubbles]
+ .map(c=>[c.id,Object.freeze(c)])).values()]);
 export const feedCard=id=>ALL_FEED_CARDS.find(c=>c.id===id)||null;
 const iconFor=c=>/radio/i.test(c.category)?'📻':/coin|silver|gold|metal/i.test(c.category)?'🪙':/finance|invest/i.test(c.category)?'📈':/knowledge|science|space/i.test(c.category)?'🔬':/live/i.test(c.category)?'🎙️':/collectible|market/i.test(c.category)?'🧸':/AI/i.test(c.category)?'🤖':'✦';
 const create=(tag,cl,text)=>{const node=document.createElement(tag);if(cl)node.className=cl;if(text!==undefined)node.textContent=text;return node;};
