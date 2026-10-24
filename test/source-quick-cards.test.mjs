@@ -71,3 +71,11 @@ test('provider permissions and content limitations remain explicit',()=>{
  assert.ok(!launcher.includes('navigator.mediaDevices.getUserMedia'));
  assert.ok(!launcher.includes('fetch('));
 });
+
+test('cross-origin links cannot white-screen the local Infinity iframe',()=>{
+ assert.match(home,/url\.origin!==location\.origin/);
+ assert.match(home,/location\.assign\(url\.href\)/);
+ assert.match(home,/link\.target='_blank'/);
+ assert.match(home,/link\.rel='noopener noreferrer'/);
+ assert.match(home,/frame\.src=url\.href/);
+});
