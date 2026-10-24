@@ -1,4 +1,4 @@
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-directcards2';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-oracle-brand3';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -36,7 +36,8 @@ function starterCard(card){
  // The homepage article IS the interactive card. Do not redirect it to an
  // internal viewer; Android WebView's pop-up handling must not be required.
  const item=el('article','iqc-card');item.dataset.sourceId=card.id;
- item.append(createCardArtwork(card,true),el('p','iqc-kind',card.kind),el('h3','',card.name));
+ item.append(createCardArtwork(card,true));
+ if(card.id!=='google'&&card.id!=='bing')item.append(el('p','iqc-kind',card.kind));
  const tools=el('div','iqc-inline-tools');mountCardTools(tools,card);item.append(tools);
  // Search cards are already complete with their own actual search fields.
  if(!['google','bing'].includes(card.id)){
