@@ -44,3 +44,9 @@ test('unavailable sources are explicit and do not fabricate an item',async({page
  const card=page.locator('#oracleCardStage [data-source-id="heritage"]');await expect(card).toBeVisible();
  await expect(card.locator('.premium-state')).toContainText('unavailable right now',{timeout:20000});await expect(card.locator('.premium-selected')).toHaveCount(0);
 });
+
+test('a shared original-tool link waits for its actual controls before spotlighting',async({page})=>{
+ await fixtures(page);await page.goto(base+'/?card=phiStoryWriter',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#oracleCardStage #sw-idea')).toBeVisible();
+ await expect(page.locator('#oracleCardStage .oracle-original-cover h2')).toHaveText('Story Writer');
+});

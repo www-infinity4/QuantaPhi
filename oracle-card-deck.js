@@ -382,7 +382,14 @@ function start(){if(!active&&!expanded){const request=entries.find(x=>x.id===spo
  if(first)show(first,false);else status.textContent='Loading original interactive cards…';
 }}
 start();
-const observe=new MutationObserver(()=>{predict();if(!active)start();});
+const observe=new MutationObserver(()=>{
+ predict();
+ if(!viewerTouched&&!expanded&&spotlightRequested){
+  const requested=entries.find(e=>e.id===spotlightRequested||e.feedId===spotlightRequested);
+  if(available(requested)&&requested!==active)show(requested,false);
+ }
+ if(!active)start();
+});
 for(const entry of entries)observe.observe(entry.node,{childList:true,subtree:false,attributes:entry.id==='result',attributeFilter:entry.id==='result'?['hidden']:undefined});
 new MutationObserver(registerLateWidgets).observe(document.querySelector('main.app')||document.body,{childList:true,subtree:true});
 // Reads & Realms can relocate itself on an async home/search cycle. Keep
