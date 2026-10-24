@@ -15,8 +15,16 @@ assert.match(deck,/if\(available\(entry\)\)/);
 assert.match(deck,/\['cardoneCapitalOffer','10X Westshore/);
 assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
 assert.match(deck,/show\(entry\)/);
-assert.match(deck,/spotlightRequested&&available/);
+assert.match(deck,/entries\.find\(x=>x\.id===spotlightRequested\)/);
 assert.match(html,/id="oracleCardCardone"/);
-assert.match(html,/oracle-card-deck\.js\?v=20261023-cardone-rotation1/);
+assert.match(html,/oracle-card-deck\.js\?v=20261023-trending1/);
 assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
 assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
+
+for(const id of ['googleTrendNba','googleTrendMlb','googleTrendCulture']){
+ assert.ok(deck.includes(id),'All live trending cards should rotate');
+ assert.match(html,new RegExp('id="'+id+'"'));
+ assert.match(css,new RegExp('#'+id));
+}
+assert.match(deck,/data-oracle-spotlight/);
+assert.match(html,/href="\/trending-now\.html"/);
