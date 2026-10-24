@@ -1,4 +1,4 @@
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-quality-gate4';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-foxone1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
