@@ -36,6 +36,10 @@ jobs:
           node --check workers/infinity-brain-clock/worker.js
           node --check bubbles-ai.js
           node --test test/bubbles-oauth-client-bootstrap.test.mjs test/brain-cloudflare-token-broker.test.mjs
+      - name: Verify the entire Brain Worker bundles with the new OAuth route
+        run: |
+          npx --yes wrangler@4 deploy --config workers/infinity-brain-clock/wrangler.toml --dry-run --outdir /tmp/bubbles-oauth-brain-dryrun
+          test -s /tmp/bubbles-oauth-brain-dryrun/worker.js
       - name: Confirm no credential material in bootstrap source
         run: |
           ! grep -En '(^|[^[:alpha:]])(sk_live|cf_api_token|ghp_)[A-Za-z0-9_-]{15,}' workers/infinity-brain-clock/cloudflare-oauth-bootstrap.mjs
