@@ -1,3 +1,4 @@
+import {mountCardActions} from './quanta-card-actions.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
  */
@@ -40,7 +41,17 @@ export function createCardArtwork(card,small=false){
  const theme=/radio/.test(text)?'radio':/music|karaoke|starmaker/.test(text)?'music':/youtube|video|tiktok/.test(text)?'video':/news|cnn|fox/.test(text)?'news':/social|facebook|instagram|reddit|whatsapp|x \/ grok/.test(text)?'social':/coin|vam|silver|gold|mint|pcgs|ngc/.test(text)?'coin':/market|ebay|toy|antique/.test(text)?'market':/finance|invest|robinhood|chime/.test(text)?'finance':/science|knowledge|wikipedia/.test(text)?'research':'other';
  art.dataset.theme=variants.includes(theme)?theme:'other';
  art.dataset.brand=/^[a-z0-9-]{1,45}$/.test(card.id||'')?card.id:'other';
- if(card.id==='google'){
+ if(card.id==='fox-one'){
+  art.classList.add('qcx-fox-one');
+  const foxWordmark=node('img','qcx-fox-one-logo');
+  foxWordmark.alt='FOX One official wordmark';foxWordmark.loading='lazy';
+  foxWordmark.src='https://upload.wikimedia.org/wikipedia/commons/7/77/Fox_One_2025.svg';
+  foxWordmark.addEventListener('load',()=>{const backup=art.querySelector('.qcx-fox-one-brand');if(backup)backup.hidden=true},{once:true});
+  foxWordmark.addEventListener('error',()=>foxWordmark.remove(),{once:true});
+  art.append(node('span','qcx-fox-one-kicker','FOX ONE · STREAMING'),
+    foxWordmark,node('strong','qcx-fox-one-brand','FOX ONE'),
+    node('span','qcx-brand-caption','Sports · News · Entertainment'));
+ }else if(card.id==='google'){
   // Actual Google-hosted logo, not a text approximation or favicon.
   art.classList.add('qcx-google');
   const logo=node('img','qcx-google-wordmark');logo.alt='Google';logo.loading='lazy';
@@ -280,15 +291,46 @@ function trendingTool(root,card){
  // Fetch only after the visitor requests it, not for every card on the Public grid.
 }
 
+/* The owner-supplied FOX One post is the exact source for this spot.
+ * Let X render and license its own video. Third-party autoplay is controlled
+ * by X, browser settings and rights; no invented or scraped MP4/GIF is served.
+ */
+export function mountFoxOneSpot(root,card){
+ const panel=section(root,'FOX ONE · ORIGINAL PROMO','Watch the original FOX One advertisement');
+ const spot='https://x.com/foxone/status/2113352129427730641';
+ const noteText=node('p','qcx-note','Original FOX One post on X. Video playback and autoplay follow X and browser permissions.');
+ const embedded=node('div','qcx-x-embed');
+ const quote=node('blockquote','twitter-tweet');
+ quote.setAttribute('data-conversation','none');quote.setAttribute('data-dnt','true');
+ quote.setAttribute('data-cards','visible');quote.setAttribute('data-theme','light');
+ const a=link('View the exact FOX One advertisement on X',spot);quote.append(a);
+ embedded.append(quote);panel.append(noteText,embedded);
+ const original=link('Open the exact FOX One post',spot);
+ const streaming=link('Explore FOX One streaming',card.official);
+ const options=node('div','qcx-controls');options.append(original,streaming);panel.append(options);
+ if(typeof window!=='undefined'){
+  const load=()=>{try{window.twttr?.widgets?.load(embedded)}catch{}};
+  if(window.twttr?.widgets){load();}
+  else if(!document.querySelector('script[data-fox-x-widget]')){
+   const script=node('script');script.async=true;script.dataset.foxXWidget='true';
+   script.src='https://platform.twitter.com/widgets.js';script.onload=load;
+   script.onerror=()=>note(panel,'X embed is unavailable here. Use the exact-post link above.');
+   document.head.append(script);
+  }else{
+   // Another card may already be loading the provider widget.
+   document.querySelector('script[data-fox-x-widget]')?.addEventListener('load',load,{once:true});
+  }
+ }
+}
 export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
  if(id==='google'||id==='bing'){
-  // Search is the complete primary interaction, never buried under a
-  // dated trends panel, wrapper link, or additional confirmation click.
-  searchTool(root,card);return;
+  // Search remains the primary interaction; global controls come afterward.
+  searchTool(root,card);mountCardActions(root,card);return;
  }
+ if(id==='fox-one')mountFoxOneSpot(root,card);
  if(id==='youtube'||id==='tiktok')mediaPlayer(root,id);
  if(id==='spotify')mediaPlayer(root,'spotify');
  if(id==='starmaker')recorder(root);
@@ -304,4 +346,5 @@ export function mountCardTools(root,card){
   const b=action('Search original topic',()=>{const q=field.value.trim();if(q)window.open('https://www.google.com/search?q='+encodeURIComponent(card.name+' '+q),'_blank','noopener,noreferrer');});
   tool.append(field,b);
  }
+ mountCardActions(root,card);
 }

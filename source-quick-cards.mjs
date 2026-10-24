@@ -1,4 +1,4 @@
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-quality-gate4';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-foxone1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -20,13 +20,14 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('bing','Bing','Search','Search the web','https://www.bing.com/','https://www.bing.com/search','Assist with query formulation, source checking and comparison, not fabricated Bing results.','Submit a real Bing query with a dedicated search bar.',{searchParameter:'q'}),
  source('yahoo-news','Yahoo News','News','Latest Yahoo News','https://news.yahoo.com/','https://news.yahoo.com/','Compare dated, attributed original Yahoo News stories from an authorized feed only.','Visit Yahoo News for current headlines. An in-card list needs an authorized, fresh attributed data source.'), 
  source('cnn','CNN','News','Latest CNN headlines and video','https://www.cnn.com/','https://www.cnn.com/','Summarize verified, dated CNN links neutrally; distinguish reporting from opinion and do not impersonate CNN.','CNN latest articles open at CNN. Legacy CNN RSS is not a dependable live feed; verify fresh sources.'), 
+ source('fox-one','FOX One','TV · Streaming','Watch the exact FOX One video advertisement','https://www.fox.com/','https://x.com/foxone/status/2113352129427730641','Help visitors discover FOX One sports, news and entertainment. Cite original content and do not invent X playback rights.','Official embedded FOX One X post plus real search and collection actions. Playback and mute/autoplay are controlled by X and the browser.'),
  source('fox-news','Fox News','News','Fox News headlines and viewer submissions','https://www.foxnews.com/','https://www.foxnews.com/','Help users research Fox reports and draft a news tip with source evidence. Submission requires a real Fox-approved destination and the visitor’s explicit approval.','View Fox News. Video submissions are draft-only until an authenticated, publisher-approved handoff is built.',{secondUrl:'https://www.foxnews.com/contact',secondLabel:'Contact Fox News'}),
  source('tv-guide','TV Guide','TV','Find tonight’s shows and TV recommendations','https://www.tvguide.com/','https://www.tvguide.com/','Find programs, schedules and credited trailers using a licensed/verified TV listing source and the user’s choice of region.','Open TV Guide to choose shows. The live local schedule needs a licensed guide feed and explicit region selection.'), 
  source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'})
 ]);
-// Only cards with a finished provider-shaped interaction enter the public deck.
-// Social/media previews remain private until actual posts/media and adapters exist.
-export const PUBLIC_SOURCE_IDS=Object.freeze(['google']);
+// Google search and the official FOX One X-post embed have real primary controls.
+// Other unverified social/media previews remain hidden until real adapters exist.
+export const PUBLIC_SOURCE_IDS=Object.freeze(['google','fox-one']);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>QUICK_CARD_SOURCES.find(p=>p.id===id)||null;
 export const validSourceCard=card=>{

@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 const base='http://127.0.0.1:8799';
 test.use({viewport:{width:390,height:844}});
 test('original single-card Oracle viewer replaces the giant feed on Android width',async({page})=>{
- await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+ await page.goto(base+'/?card=google',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#quantaDiscoveryFeed')).toBeHidden();
  await expect(page.locator('#siteQuickCards')).toBeHidden();
  await expect(page.locator('#scienceQuickCards')).toBeHidden();
@@ -25,7 +25,7 @@ test('Google query opens actual attributed engine listings within Infinity Viewe
   return route.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},
    body:JSON.stringify({results:[{title:'Philco model 90 historical radio',url:'https://example.org/philco-90',content:'Real linked listing from a Google engine test fixture.',engine:'google'}]})});
  });
- await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+ await page.goto(base+'/?card=google',{waitUntil:'domcontentloaded'});
  const oracle=page.locator('#oracleCardDeck');
  await oracle.getByRole('searchbox',{name:'Search Google'}).fill('Philco radio');
  await oracle.locator('.qcx-native-search button').click();
@@ -74,4 +74,17 @@ test('StarMaker microphone is off until explicit start and a stop control is pro
  await expect(page.getByText('Microphone is off')).toBeVisible();
  await expect(page.getByRole('button',{name:'● Start recording'})).toBeEnabled();
  await expect(page.getByRole('button',{name:'■ Stop'})).toBeDisabled();
+});
+
+test('FOX One original advertisement and five interactive controls are present',async({page})=>{
+ await page.route('https://platform.twitter.com/widgets.js',route=>route.abort());
+ await page.goto(base+'/source-quick-card.html?card=fox-one',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('.qcx-fox-one-brand')).toHaveText('FOX ONE');
+ await expect(page.locator('.twitter-tweet a')).toHaveAttribute('href','https://x.com/foxone/status/2113352129427730641');
+ const actions=page.locator('#sourceQuickCardDetail .qca-toolbar');
+ for(const label of ['Star','Collect','Share','+1 Build','Quick Search'])await expect(actions.getByText(label,{exact:false}).first()).toBeVisible();
+ await actions.getByRole('button',{name:/Star/}).click();
+ await expect(actions.getByRole('button',{name:/Starred/})).toBeVisible();
+ await actions.getByRole('button',{name:/Collect/}).click();
+ await expect(actions.getByRole('button',{name:/Collected/})).toBeVisible();
 });

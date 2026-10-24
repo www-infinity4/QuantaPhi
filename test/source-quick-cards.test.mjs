@@ -8,9 +8,9 @@ const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'
 const launcher=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
 const deck=readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
 const tools=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
-test('all fifteen provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
- assert.equal(QUICK_CARD_SOURCES.length,15);
- assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,15);
+test('all sixteen provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
+ assert.equal(QUICK_CARD_SOURCES.length,16);
+ assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,16);
  for(const card of QUICK_CARD_SOURCES){
   assert.ok(validSourceCard(card),card.id);
   assert.equal(findSourceCard(card.id),card);
@@ -20,7 +20,7 @@ test('all fifteen provider quick cards exist, have unique IDs and real HTTPS ori
  }
  assert.equal(findSourceCard('not-registered'),null);
  assert.deepEqual(QUICK_CARD_SOURCES.map(p=>p.id),
- ['google','youtube','facebook','instagram','chatgpt','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-news','tv-guide','starmaker']);
+ ['google','youtube','facebook','instagram','chatgpt','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-one','fox-news','tv-guide','starmaker']);
 });
 test('Google and Bing start real engine requests inside the Infinity Viewer',()=>{
  for(const id of ['google','bing']){
@@ -36,7 +36,7 @@ test('Google and Bing start real engine requests inside the Infinity Viewer',()=
 });
 test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261024-quality-gate4/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261024-foxone1/);
  assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
@@ -110,8 +110,19 @@ test('standalone Google results HTML contains executable JavaScript, not an iner
 });
 
 test('unfinished social and media cards cannot enter the public rotation',()=>{
- assert.deepEqual(PUBLIC_SOURCE_IDS,['google']);
- for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),card.id==='google');
+ assert.deepEqual(PUBLIC_SOURCE_IDS,['google','fox-one']);
+ for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),['google','fox-one'].includes(card.id));
  assert.match(launcher,/QUICK_CARD_SOURCES.filter\(isPublicSourceCard\)/);
  assert.match(deck,/node.dataset.sourceReady!=='true'/);
+});
+
+test('FOX One exact original video post is source-linked, without fabricating a GIF or autoplay guarantee',()=>{
+ const c=findSourceCard('fox-one');
+ assert.equal(c.featureUrl,'https://x.com/foxone/status/2113352129427730641');
+ assert.equal(c.official,'https://www.fox.com/');
+ assert.match(tools,/function mountFoxOneSpot/);
+ assert.match(tools,/https:\/\/platform\.twitter\.com\/widgets\.js/);
+ assert.match(tools,/widgets\?\.load/);
+ assert.match(tools,/Third-party autoplay is controlled/);
+ assert.match(tools,/qcx-fox-one-brand/);
 });
