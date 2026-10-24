@@ -2748,7 +2748,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const privateSellerRequest=config.privateContext&&!nativeOverlay&&/\b(?:sell|selling|seller|resale|auction|listing|buyer|shoplc|my selling defaults|quant-ai seller)\b/i.test(request);
  // Opt in to bounded, read-only MCP model tool selection. The MCP bearer key is never present in this WebView.
  const toolRequestId=crypto.randomUUID();
- const lookupPayload=()=>cardoneResearch?{
+ const lookupPayload=()=>(cardoneResearch?{
   // Force a real, read-only public search. The model must answer the visitor's
   // ORIGINAL question from retrieved excerpts, not output a proposed search script.
   request:'Cardone Capital 10X Westshore South '+lookupRequest,
