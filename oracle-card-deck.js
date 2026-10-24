@@ -216,6 +216,18 @@ function show(entry,remember=true){
  const marker=document.createComment('Oracle card original location: '+entry.id);
  entry.node.parentNode.insertBefore(marker,entry.node);entry.marker=marker;
  stage.append(entry.node);active=entry;
+ // Every original Oracle widget receives the same five real actions.
+ // Source cards already own the toolbar inside mountCardTools.
+ if(!entry.id.startsWith('source-')){
+  const displayed=entry;
+  import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
+   if(active!==displayed||!stage.contains(displayed.node))return;
+   const container=document.createElement('div');container.className='oracle-card-actions';
+   mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
+    category:displayed.category,route:location.pathname+location.search});
+   stage.append(container);
+  }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
+ }
  entry.count=Math.min(1000,entry.count+1);counts[entry.id]=entry.count;
  try{localStorage.setItem(STORE,JSON.stringify(counts))}catch{}
  if(directionApi&&feedState){feedState=directionApi.markViewed(readDirections(),entry.feedId);storeDirections()}
