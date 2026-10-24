@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 SOURCE = "https://trends.google.com/trending/rss?geo=US"
 NAMESPACE = "{https://trends.google.com/trending/rss}"
 MAX_BYTES = 2_000_000
-TRAFFIC = re.compile(r"^\\d[\\d,]*(?:\\.\\d+)?[KMB]?\\+$", re.I)
+TRAFFIC = re.compile(r"^\d[\d,]*(?:\.\d+)?[KMB]?\+$", re.I)
 
 
 def parse_rss(body, checked_at=None):
