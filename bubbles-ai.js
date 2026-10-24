@@ -5,7 +5,7 @@
 // The public QuantaPhi homepage is search-first. Do not initialize microphone,
 // overlay launcher, conversation polling or chat UI there. Dedicated Bubbles
 // pages, Chrome PWA and the Android companion retain the full assistant.
-if(document.body?.classList.contains('oracle-quanta'))return;
+if(document.body?.classList?.contains?.('oracle-quanta'))return;
 const host=document.getElementById('bubblesAICard');
 if(!host || window.__QuantaBubblesMounted)return;
 // A second deferred/embedded loader must not create a second conversation.
