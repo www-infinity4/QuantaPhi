@@ -57,12 +57,12 @@ test('trending cards participate in the existing QuantaPhi interaction ledger',(
 test('trending feed has real scheduled ingestion, source-freshness handling and historical backup',()=>{
  const wf=read('.github/workflows/google-trends-sync.yml');
  const importer=read('scripts/sync_google_trends.py');
- assert.match(wf,/cron:.*\\*\\/30/);
- assert.match(wf,/sync_google_trends\\.py/);
- assert.match(importer,/trends\\.google\\.com\\/trending\\/rss\\?geo=US/);
- assert.match(js,/google-trends-latest\\.json/);
- assert.match(js,/stale/);
- assert.match(js,/last checked/);
- assert.match(js,/setInterval/);
- assert.match(page,/RSS importer/);
+ assert.ok(wf.includes('*/30'));
+ assert.ok(wf.includes('sync_google_trends.py'));
+ assert.ok(importer.includes('trends.google.com/trending/rss?geo=US'));
+ assert.ok(js.includes('google-trends-latest.json'));
+ assert.ok(js.includes('stale'));
+ assert.ok(js.includes('last checked'));
+ assert.ok(js.includes('setInterval'));
+ assert.ok(page.includes('RSS importer'));
 });
