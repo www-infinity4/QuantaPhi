@@ -15,6 +15,7 @@ test('public contains every original quick card and 23 new independent cards',()
   assert.ok(feedCard(id),id);
  }
  for(const c of DISCOVERY_CARDS){assert.ok(safeDiscovery(c),c.id);assert.equal(findDiscovery(c.id),c);}
+ for(const id of ['pixie-stories','cardone-capital','media-star','infinity-radio','bitcoin-crusher','story-writer'])assert.ok(feedCard(id),'Public should contain existing QuantaPhi '+id);
  assert.equal(findDiscovery('unknown-card'),null);
  assert.equal(safeDiscovery({id:'fake',url:'javascript:alert(1)'}),false);
  assert.ok(!ALL_FEED_CARDS.some(c=>/tuberadios\.com/.test(c.url)), 'hijacked TubRadios domain must not be linked');
