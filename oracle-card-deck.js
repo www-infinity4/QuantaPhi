@@ -18,7 +18,6 @@ const choices=[
  ['infiniteBook','Read an original story'],
  ['phiChannelCards','Watch a channel'],
  ['phiStoryWriter','Write a story'],
- ['bubblesAICard','Talk to Bubbles'],
  ['phiMediaBuilder','Create images and video'],
  ['result','Explore research and Asteroid'],
  ['fredSpacesRadio','Listen to Media Star'],
@@ -49,7 +48,6 @@ const CARD_DIRECTIONS={
  infiniteBook:['reads-realms','Stories','Read and research an original story'],
  phiChannelCards:['channels','Television','Watch a channel'],
  phiStoryWriter:['story-writer','Stories','Write or continue a story'],
- bubblesAICard:['deck-bubbles','Research','Ask Bubbles to research and connect ideas'],
  phiMediaBuilder:['image-builder','Media','Create images and video'],
  result:['deck-research','Research','Explore sources and a current AI overview'],
  fredSpacesRadio:['fred-spaces','Music','Listen to an indexed Media Star conversation'],
@@ -88,11 +86,10 @@ let selectedTab='public',directionApi=null,quantApi=null,quantWeights={},quantCo
 let feedState=null,proposed=null;
 const visited=[];
 const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
-let viewerTouched=false;
+let viewerTouched=false,selectionVersion=0;
 const ORIGINAL_COVERS={
  phiStoryWriter:['Story Writer','Write it. Illustrate it. Make it yours.','/assets/phi-scholastic-reader.webp'],
  phiMediaBuilder:['Image & Video Studio','Create something worth sharing.','/assets/phi-data-analyst.webp'],
- bubblesAICard:['Bubbles','Your ideas, research and next build.','/assets/bubbles-introduction.webp'],
  infinityConcepts:['Infinity Concepts','Physics, experiments and connected ideas.','/assets/julius-physics-002.png'],
  groupStoryBuild:['Group Stories','Build the next chapter together.','/assets/phi-scholastic-reader.webp'],
  mediaStarCreator:['Media Star','Make your own playable media card.','/apps/icons/media-star-512.png'],
@@ -121,7 +118,13 @@ function registerSourceCards(){
   // an explicit Cardone button, saved direction or human flip.
   const requested=entries.find(e=>e.id===spotlightRequested||e.feedId===spotlightRequested);
   if(!expanded&&!viewerTouched&&requested&&available(requested))show(requested,false);
-  else if(!expanded&&!viewerTouched&&!spotlightRequested&&google&&available(google)&&!entries.some(e=>e.id==='walmartShoppingCard'&&available(e))&&(!active||active.id===CARDONE_ID))show(google,false);
+  else if(!expanded&&!viewerTouched&&!spotlightRequested){
+   // Lead with an original working source card, not the same static store card.
+   const sources=entries.filter(e=>e.id.startsWith('source-')&&available(e))
+    .sort((a,b)=>a.count-b.count||entries.indexOf(a)-entries.indexOf(b));
+   const candidate=sources[0]||google;
+   if(candidate&&candidate!==active)show(candidate,false);
+  }
   else if(!active&&!expanded)start();
  }
 }
@@ -213,14 +216,22 @@ function predict(){
  }
  next.disabled=possible.length<2;
 }
-async function connectQuant(){
- if(selectedTab!=='for-you'||!quantApi)return;
+async function connectQuant({select=false,revision=selectionVersion}={}){
+ if(selectedTab!=='for-you'||!quantApi||!directionApi)return;
  const result=await quantApi.loadOwnQuantScores(window.QuantaCloudConnection,liveCatalog());
+ if(selectedTab!=='for-you'||revision!==selectionVersion)return;
  quantWeights=result.scores||{};quantConnected=result.connected===true;
- if(selectedTab==='for-you')predict();
+ if(select&&!expanded){
+  const catalog=liveCatalog(),ranked=directionApi.feedCandidates(catalog,'for-you',
+   {...readDirections(),catalog,quantScores:quantWeights});
+  const best=eligible().find(e=>e.feedId===ranked[0]?.id);
+  if(best&&best!==active)show(best,false);
+ }
+ predict();
 }
 tabButtons.forEach(b=>b.addEventListener('click',()=>{
  viewerTouched=true;
+ const revision=++selectionVersion;
  selectedTab=b.dataset.oracleFeed;visited.length=0;
  if(active)seenByTab[selectedTab].add(active.feedId);
  feedState=directionApi?readDirections():feedState;
@@ -230,7 +241,7 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
    now.textContent='No followed interactive cards';status.textContent='Use Public and tap + Follow on any live card.';
   }
  }
- if(selectedTab==='for-you')void connectQuant();
+ if(selectedTab==='for-you')void connectQuant({select:true,revision});
  predict();
 }));
 follow?.addEventListener('click',()=>{
@@ -308,7 +319,7 @@ function show(entry,remember=true){
   ' · '+eligible().length+' ready cards in this direction.';
 }
 function advance(direction){
- viewerTouched=true;
+ viewerTouched=true;selectionVersion++;
  const list=eligible();
  if(!list.length){status.textContent=selectedTab==='following'?'Follow a card in Public first.':'The original interactive cards are still initializing.';return}
  if(direction<0){

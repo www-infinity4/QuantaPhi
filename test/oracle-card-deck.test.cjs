@@ -4,7 +4,7 @@ assert.match(html,/id="oracleCardStage"/);assert.match(html,/id="oracleCardNext"
 assert.match(html,/Scroll interactive cards \/ widgets/);
 assert.match(deck,/document\.createComment/);assert.match(deck,/marker\.parentNode\.insertBefore\(node,marker\)/);
 assert.match(deck,/stage\.append\(entry\.node\)/);assert.doesNotMatch(deck,/cloneNode/);
-for(const id of ['phiChannelCards','infiniteBook','bubblesAICard','phiStoryWriter','phiMediaBuilder'])assert.ok(deck.includes(id));
+for(const id of ['phiChannelCards','infiniteBook','phiStoryWriter','phiMediaBuilder'])assert.ok(deck.includes(id));
 assert.match(css,/oracle-card-deck-active:not\(\.oracle-shelf-open\)/);
 assert.doesNotMatch(css,/#sponsorBoard|#bitcoinCrusherShoe|#shoplcShirtButton/);
 assert.doesNotThrow(()=>new Function(deck));
@@ -17,7 +17,7 @@ assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
 assert.match(deck,/show\(entry\)/);
 assert.match(deck,/entries\.find\(x=>x\.id===spotlightRequested/);
 assert.doesNotMatch(html,/class="oracle-card-deck-feature"/);
-assert.match(html,/oracle-card-deck\.js\?v=20261024-library1/);
+assert.match(html,/oracle-card-deck\.js\?v=20261024-public-search2/);
 assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
 assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
 
@@ -53,3 +53,9 @@ assert.match(deck,/seenByTab/);
 assert.match(deck,/nextDeckCycle/);
 assert.match(deck,/tour\.remaining/);
 assert.match(deck,/ready cards in this direction/);
+
+assert.doesNotMatch(deck,/\['bubblesAICard','Talk to Bubbles'\]/);
+assert.match(html,/class=\"search\" role=\"search\"/);
+assert.ok(html.indexOf('class=\"search\"')<html.indexOf('id=\"qtraffic\"'),'Search must lead before traffic counters');
+assert.doesNotMatch(html,/<section class=\"q-bubbles-entry\"/);
+assert.match(deck,/connectQuant\(\{select:true,revision\}\)/);

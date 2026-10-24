@@ -26,11 +26,12 @@ test('next item uses real product candidates and respects signed-in interest wei
  }
  assert.equal(seen.size,4);
 });
-test('one Walmart card enters the original deck first and Google cannot displace it',()=>{
+test('the real Walmart product card remains reachable without taking every visitor\'s first slot',()=>{
  const home=read('index.html'),deck=read('oracle-card-deck.js'),styles=read('walmart-card.css');
  assert.equal((home.match(/id="walmartShoppingCard"/g)||[]).length,1);
- assert.ok(deck.indexOf("['walmartShoppingCard',")<deck.indexOf("['cardoneCapitalOffer',"));
- assert.match(deck,/!entries.some\(e=>e.id==='walmartShoppingCard'&&available\(e\)\)/);
+ assert.match(deck,/\['walmartShoppingCard','Walmart/);
+ assert.match(deck,/const sources=entries\.filter\(e=>e\.id\.startsWith\('source-'\)/);
+ assert.match(deck,/const candidate=sources\[0\]\|\|google/);
  assert.match(deck,/walmartShoppingCard:\['walmart-shopping','Shopping'/);
  assert.match(styles,/main\.app>#walmartShoppingCard\{display:none!important\}/);
  assert.match(home,/data-walmart-next/);

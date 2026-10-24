@@ -73,12 +73,13 @@ test('Chrome launcher is unpinned on current GitHub main and served as JSON', ()
  assert.match(html,/rel="manifest" href="\/bubbles-manifest\.json"/);
 });
 
-test('QuantaPhi home exposes Bubbles page and Chrome install routes in both nav areas', () => {
+test('Bubbles app and Chrome routes remain accessible from the collapsed menu, not crowding homepage search', () => {
   const home = fs.readFileSync('index.html', 'utf8');
-  assert.match(home, /<a href="\/bubbles\.html">Bubbles page<\/a>/);
-  assert.match(home, /<a href="\/bubbles-chrome\.html">Install Bubbles Chrome app<\/a>/);
-  assert.match(home, /<a href="\/bubbles\.html" style="[^"]*">Bubbles page<\/a>/);
-  assert.match(home, /<a href="\/bubbles-chrome\.html" style="[^"]*">Install Bubbles Chrome app<\/a>/);
+  assert.match(home, /<nav class="qmenu" id="qmenu" hidden>/);
+  assert.match(home, /href="\/bubbles\.html">Bubbles page<\/a>/);
+  assert.match(home, /href="\/bubbles-chrome\.html">Install Bubbles Chrome app<\/a>/);
+  assert.match(home, /href="\/downloads\/bubbles\.apk"/);
+  assert.doesNotMatch(home, /<section class="q-bubbles-entry"/);
   for (const file of ['bubbles.html', 'bubbles-chrome.html']) {
     const page = fs.readFileSync(file, 'utf8');
     assert.match(page, /<button id="bubblesInstallChrome" type="button">/);

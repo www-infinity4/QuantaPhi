@@ -25,9 +25,13 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('tv-guide','TV Guide','TV','Find tonight’s shows and TV recommendations','https://www.tvguide.com/','https://www.tvguide.com/','Find programs, schedules and credited trailers using a licensed/verified TV listing source and the user’s choice of region.','Open TV Guide to choose shows. The live local schedule needs a licensed guide feed and explicit region selection.'), 
  source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'})
 ]);
-// Google search and the official FOX One X-post embed have real primary controls.
-// Other unverified social/media previews remain hidden until real adapters exist.
-export const PUBLIC_SOURCE_IDS=Object.freeze(['google','fox-one']);
+// Only expose source cards that contain a usable real action (search, player,
+// message draft, local recording, or approved provider embed). These are
+// independent tools, not claims of publisher data access or affiliation.
+export const PUBLIC_SOURCE_IDS=Object.freeze([
+ 'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one',
+ 'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp'
+]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>QUICK_CARD_SOURCES.find(p=>p.id===id)||null;
 export const validSourceCard=card=>{

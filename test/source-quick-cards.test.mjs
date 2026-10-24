@@ -36,7 +36,7 @@ test('Google and Bing start real engine requests inside the Infinity Viewer',()=
 });
 test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261024-foxone1/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261024-public-search2/);
  assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
@@ -109,11 +109,17 @@ test('standalone Google results HTML contains executable JavaScript, not an iner
  assert.doesNotThrow(()=>new Script(script,{filename:'infinity-search-results-inline.js'}));
 });
 
-test('unfinished social and media cards cannot enter the public rotation',()=>{
- assert.deepEqual(PUBLIC_SOURCE_IDS,['google','fox-one']);
- for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),['google','fox-one'].includes(card.id));
+test('functional source cards enter Public while link-only integrations remain separately accessible',()=>{
+ assert.deepEqual(PUBLIC_SOURCE_IDS,[
+  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one',
+  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp'
+ ]);
+ assert.equal(PUBLIC_SOURCE_IDS.length,15);
+ assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),false);
+ for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/QUICK_CARD_SOURCES.filter\(isPublicSourceCard\)/);
  assert.match(deck,/node.dataset.sourceReady!=='true'/);
+ assert.match(deck,/sources=entries.filter\(e=>e.id.startsWith\('source-'\)/);
 });
 
 test('FOX One exact original video post is source-linked, without fabricating a GIF or autoplay guarantee',()=>{
