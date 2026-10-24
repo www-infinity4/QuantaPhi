@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connect X to Bubbles · QuantaPhi</title><link rel="stylesheet" href="/published-quick-card.css?v=2"></head>
+<body><main class="qcp-shell"><a href="/quick-card-builder.html" class="qcp-home">← Quick Card builder</a>
+<p class="qcp-eyebrow">BUBBLES · READ YOUR OWN X POSTS</p><h1>Connect your X reader</h1>
+<section class="qcp-context"><h2>Connection pending</h2><p>The X-reading service is not verified as connected. The last owner configuration check found no X API bearer token or verified numeric owner ID on the Robot Brain Worker. This is a setup guide, not an active OAuth sign-in or live connection test.</p>
+<p>Read access allows Bubbles to collect your public posts for review. Posts will not automatically receive owner authority to deploy or spend resources.</p></section>
+<section class="qcp-context"><h2>1. Open the official X Developer Console</h2>
+<p>Sign in with the X account that controls <strong>@YahooPingcwlz</strong>, open your approved developer app, and locate <strong>Keys and tokens → Bearer Token</strong>. The X API may require an eligible access plan.</p>
+<p><a class="qcp-link-button" href="https://console.x.com" target="_blank" rel="noopener noreferrer">Open X Developer Console ↗</a></p>
+<p class="qcp-small">Never paste a bearer token into the Quick Card builder, chat, or a GitHub issue.</p></section>
+<section class="qcp-context"><h2>2. Save the token privately in Cloudflare</h2>
+<p>Open Cloudflare → Workers &amp; Pages → <strong>infinity-brain-clock</strong> → Settings → Variables and Secrets. Add the X app's Bearer Token as the encrypted secret <code>X_API_BEARER_TOKEN</code>. Verify your account's numeric X ID through the authenticated X API before configuring <code>X_OWNER_USER_ID</code>. Do not use a display name as that ID.</p>
+<p><a class="qcp-link-button" href="https://dash.cloudflare.com/" target="_blank" rel="noopener noreferrer">Open Cloudflare Dashboard ↗</a></p></section>
+<section class="qcp-context"><h2>3. Enable the existing reader and verify a real scan</h2>
+<p>The author-ID-pinned <strong>#bubbles</strong> reader is in <a href="https://github.com/www-infinity4/QuantaPhi/pull/644" target="_blank" rel="noopener noreferrer">QuantaPhi PR #644</a>, stacked on PRs #642 and #641. The reader still needs integration, tests, protected deployment and a real read receipt. Bubbles must say <strong>not connected</strong> until those steps finish.</p>
+<p>Reading public posts is separate from posting to X, reading private messages, and using any post as authority for owner-only actions.</p>
+<p><a href="/bubbles.html">Return to Bubbles ↗</a></p></section>
+<section class="qcp-context"><h2>Share QuantaPhi with someone</h2><p id="qcpXSetupShareStatus" role="status"></p><button type="button" id="qcpXSetupShare">↗ Share Quick Card builder</button></section>
+</main><script type="module">import {shareQuickCard} from '/quick-card-share.js?v=2';document.querySelector('#qcpXSetupShare').addEventListener('click',()=>shareQuickCard({url:'https://quantaphi.org/quick-card-builder.html',title:'Build a Quick Card on QuantaPhi',status:document.querySelector('#qcpXSetupShareStatus')}));</script></body></html>
