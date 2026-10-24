@@ -11,3 +11,12 @@ assert.doesNotThrow(()=>new Function(deck));
 console.log('Original-card spotlight, flip and accessible shelf contracts passed');
 assert.match(deck,/watcher\.observe\(entry\.node/);
 assert.match(deck,/if\(available\(entry\)\)/);
+
+assert.match(deck,/\['cardoneCapitalOffer','10X Westshore/);
+assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
+assert.match(deck,/show\(entry\)/);
+assert.match(deck,/spotlightRequested&&available/);
+assert.match(html,/id="oracleCardCardone"/);
+assert.match(html,/oracle-card-deck\.js\?v=20261023-cardone-rotation1/);
+assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
+assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
