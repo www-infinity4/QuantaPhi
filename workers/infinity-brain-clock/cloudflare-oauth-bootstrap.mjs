@@ -63,8 +63,7 @@ async function revokeChild(parent,id,request){
 export async function planOAuthClient(storage,env,{now=Date.now()}={}){
  const existing=await storage.get(STATE_KEY);
  if(existing?.status==='installed')return {...safeReceipt(existing),alreadyConfigured:true};
- if(existing?.clientId&&existing.status==='ready_for_install')
-  return {...safeReceipt(existing),resumeInstallation:true};
+ const resumeInstallation=!!(existing?.clientId&&existing.status==='ready_for_install');
  if(existing?.status==='creating')return error('previous_registration_outcome_unverified');
  const parent=parentTokenManager(env);
  const plan={id:'ocp_'+crypto.randomUUID(),createdAt:now,expiresAt:now+TTL,
@@ -75,7 +74,7 @@ export async function planOAuthClient(storage,env,{now=Date.now()}={}){
   redirectUri:CALLBACK,clientUri:SITE,
   clientTokenMethod:'client_secret_basic',usesPKCE:true,
   scopes:[...OAUTH_BOOTSTRAP_SCOPES],visibility:'private',
-  requiresOwnerApproval:true,managerConfigured:!!parent,
+  requiresOwnerApproval:true,managerConfigured:!!parent,resumeInstallation,
   secretWillBeStoredOnlyInServer:true,createsShortLivedScopedApiTokens:true,
   risk:'Creates one Cloudflare OAuth application and writes three server-side Worker secrets; users still approve access separately'};
 }
