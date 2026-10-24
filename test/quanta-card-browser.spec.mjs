@@ -25,7 +25,10 @@ test('YouTube card embeds an actual validated video only after visitor action',a
  await expect(page.locator('iframe.qcx-video')).toHaveAttribute('src','https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ');
 });
 test('Wikipedia previews render real API-supplied text and source links, not invented posts',async({page})=>{
- await page.route('https://en.wikipedia.org/w/api.php**',route=>route.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:JSON.stringify({query:{pages:{'100':{index:1,title:'Philco',extract:'A verified encyclopedia test article.',fullurl:'https://en.wikipedia.org/wiki/Philco'}}}}})}));
+ await page.route('https://en.wikipedia.org/w/api.php**',route=>{
+  const result={query:{pages:{100:{index:1,title:'Philco',extract:'A verified encyclopedia test article.',fullurl:'https://en.wikipedia.org/wiki/Philco'}}}};
+  return route.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:JSON.stringify(result)});
+ });
  await page.goto(base+'/quanta-feed-card.html?card=wikipedia',{waitUntil:'domcontentloaded'});
  await page.getByLabel('Wikipedia search').fill('Philco');
  await page.getByRole('button',{name:'Load articles'}).click();
