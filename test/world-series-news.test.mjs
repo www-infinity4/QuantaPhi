@@ -4,7 +4,7 @@ import {readFileSync} from 'node:fs';
 import {validSeriesSnapshot,mountWorldSeriesNews} from '../world-series-news.mjs';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const code=read('world-series-news.mjs'),styles=read('world-series-news.css');
-const home=read('index.html'),detail=read('trending-now.html'),workflow=read('.github/workflows/google-trends-sync.yml');
+const home=read('index.html'),detail=read('trending-now.html'),workflow=read('.github/workflows/world-series-rss-sync.yml');
 
 function sample(extra={}){
  return {schema_version:1,topic:'2026 World Series',checked_at:new Date().toISOString(),
@@ -58,7 +58,7 @@ test('Cardone existing source-backed property is collectable/shareable and retai
  assert.match(page,/id="cardoneQuickActions"/);
  assert.match(page,/mountCardActions\(host/);
  assert.match(page,/10X Westshore South/);
- assert.match(page,/src="\/bubbles-embed\.js"/);
+ assert.match(page,/src="\/bubbles-embed\.js\?v=/);
  assert.match(page,/cardonecapital\.com\/disclosures/);
  assert.match(page,/image remains hosted by the original publisher/i);
  assert.doesNotMatch(page,/cardNumber|sk_live_/);
