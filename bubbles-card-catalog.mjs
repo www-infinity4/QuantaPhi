@@ -18,6 +18,7 @@ export const cards=Object.freeze([
  local('concepts','Infinity Concepts','infinityConcepts',['infinity-concepts.js'],['infinity-concepts.css']),
  local('group-story','Group Story','groupStoryBuild',['group-story.js'],['group-story.css'],['group story build']),
  local('channels','Television Cards','phiChannelCards',['phi-tv-programs.js','phi-channel-cards.js'],['phi-channel-cards.css'],['channel cards','tv channels','infinity tv']),
+ app('cardone-capital','Cardone Real Estate Card','/cardone-capital.html','QuantaPhi',['cardone','grant cardone','cardone capital','10x westshore','westshore south','real estate card']),
  app('quantaphi','QuantaPhi','/','QuantaPhi',['quantaphi home','quantaphi website','quantaphi page']),
  app('alien-coin','Alien Coin','/alien-coin/','Alien-Coin',['alien coin website']),
  app('resonance','Resonance Calculator','/resonance.html','QuantaPhi',['resonance engine']),
