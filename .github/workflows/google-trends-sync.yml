@@ -27,12 +27,28 @@ jobs:
         run: python3 -m unittest discover -s test -p 'test_google_trends_sync.py' -v
       - name: Fetch and verify real Google Trends RSS
         run: python3 scripts/sync_google_trends.py
-      - name: Preserve latest snapshot and dated research history
+      - name: Publish to dedicated trend-data branch (main stays protected)
+        shell: bash
         run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/trends-observations"
+          cp data/google-trends-latest.json "$RUNNER_TEMP/google-trends-latest.json"
+          cp research/google-trends/observations/*.json "$RUNNER_TEMP/trends-observations/"
           git config user.name "quanta-trends-bot"
           git config user.email "actions@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin trends-rss-data >/dev/null 2>&1; then
+            git fetch origin refs/heads/trends-rss-data:refs/remotes/origin/trends-rss-data
+            git checkout -B trends-rss-data origin/trends-rss-data
+          else
+            git checkout --orphan trends-rss-data
+            git rm -rf . >/dev/null || true
+            git clean -fdx
+          fi
+          mkdir -p data research/google-trends/observations
+          cp "$RUNNER_TEMP/google-trends-latest.json" data/google-trends-latest.json
+          cp "$RUNNER_TEMP/trends-observations/"*.json research/google-trends/observations/
           git add data/google-trends-latest.json research/google-trends/observations/
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh verified Google Trends US RSS"
-            git push
+            git push origin HEAD:refs/heads/trends-rss-data
           fi
