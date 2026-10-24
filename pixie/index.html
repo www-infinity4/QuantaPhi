@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff1f7"><meta name="description" content="Pixie Stories is a cozy public storybook. Read original tales and discover the upcoming private story-writing room.">
+<meta name="robots" content="index,follow">
+<title>Pixie Stories · A little magic in every page | QuantaPhi</title>
+<link rel="canonical" href="https://quantaphi.org/pixie/">
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#482842;background:#fff9f8}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 83% 4%,#ffe0ed 0,transparent 42%),linear-gradient(180deg,#fff7fc,#fffefa 80%)}
+a{color:inherit}button{font:inherit;cursor:pointer}
+.top{max-width:1060px;margin:auto;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.brand{font-size:24px;font-weight:900;text-decoration:none;color:#a34274;letter-spacing:-.04em}.brand span{color:#da6f91}.top nav{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;font-weight:750}
+.top nav a{text-decoration:none}.top nav a:hover,.top nav a:focus-visible{text-decoration:underline}
+main{max-width:1060px;margin:auto;padding:12px 22px 65px}
+.hero{min-height:365px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:30px;padding:38px 40px;border-radius:30px;border:1px solid #f5d4e1;background:linear-gradient(145deg,#fff8fd,#fff0f4);box-shadow:0 15px 40px #8c346014;overflow:hidden}
+.kicker{color:#9f4373;font-size:12px;letter-spacing:.13em;font-weight:900}
+h1{font-size:clamp(39px,6.8vw,68px);letter-spacing:-.055em;line-height:1.05;margin:14px 0 20px}
+h1 em{color:#cd568f;font-family:Georgia,serif;font-weight:500}
+.hero p{max-width:540px;font-size:16px;line-height:1.68;color:#755469}
+.actions{display:flex;flex-wrap:wrap;gap:11px;margin:24px 0 12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;border-radius:14px;padding:11px 19px;text-decoration:none;font-weight:800;border:1px solid #cfa1bd;background:#fff;color:#783963}
+.btn.primary{background:#a83b71;color:white;border-color:#a83b71}
+.illustration{position:relative;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#fce8f3 22%,#f7cde3 40%,#f3bdd9 42%,#fff1f8 43%);box-shadow:inset 0 0 0 14px #ffffff80}
+.illustration span{font-size:clamp(95px,15vw,160px);color:#c967a2;filter:drop-shadow(0 12px 15px #a23c7850)}
+.illustration:before,.illustration:after{position:absolute;content:"✦";color:#c36aa1;font-size:35px;top:7%;left:18%}.illustration:after{top:74%;left:74%;font-size:23px}
+.section{margin-top:34px;background:#fff;border:1px solid #f1d7e4;padding:28px;border-radius:24px;box-shadow:0 7px 25px #a35a7410}
+h2{font-size:clamp(24px,4vw,32px);margin:8px 0 10px;letter-spacing:-.035em}.section p{line-height:1.62;color:#735b6c}
+.shelf{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:18px}.empty{min-height:145px;background:#fff8fc;border:1px dashed #dcb7cb;border-radius:18px;padding:24px}
+.empty strong{display:block;font-size:19px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:19px;margin-top:22px}.two .section{margin:0}
+.chat{margin-top:14px;padding:14px;background:#fff7fc;border:1px solid #e5c7d7;border-radius:16px}
+.chat p{margin:0 0 8px}.faq{display:flex;flex-wrap:wrap;gap:7px}.faq button{background:white;color:#864463;border:1px solid #e1b2ce;border-radius:100px;padding:9px 12px;font-weight:700}
+#answer{margin:12px 0 0;min-height:26px;font-size:14px}
+.small{font-size:13px;color:#8b6f80}
+footer{max-width:1060px;margin:auto;padding:16px 22px 40px;color:#816879;font-size:13px}
+@media(max-width:750px){.hero{grid-template-columns:1fr;padding:27px 22px}.illustration{width:220px;margin:auto}.two{grid-template-columns:1fr}}
+@media(max-width:390px){.top{flex-direction:column;align-items:flex-start}.section{padding:21px}.hero{padding:25px 20px}}
+</style>
+</head><body>
+<header class="top"><a class="brand" href="/pixie/" aria-label="Pixie Stories home">✿ pixie<span>.</span> stories</a><nav aria-label="Navigation"><a href="#stories">Read stories</a><a href="#pixie-chat">Ask Pixie</a><a href="#writer">Writer’s room</a><a href="/">QuantaPhi ↗</a></nav></header>
+<main>
+<section class="hero" aria-labelledby="title"><div><span class="kicker">THE STORYBOOK CORNER</span><h1 id="title">Every story starts with a little <em>magic.</em></h1><p>A cozy home for original stories written with Story Writer AI. Readers are welcome, while publishing will be reserved for Pixie’s writer.</p><div class="actions"><a class="btn primary" href="#stories">Explore the stories →</a><a class="btn" href="#pixie-chat">✧ Ask Pixie</a></div><p class="small">Public reading · Private publishing · Permission-first conversations</p></div><div class="illustration" aria-hidden="true"><span>✿</span></div></section>
+<section class="section" id="stories" aria-labelledby="shelf-title"><span class="kicker">THE BOOKSHELF</span><h2 id="shelf-title">Pixie’s story cards ✧</h2><p>Only stories explicitly published by the writer will appear here. Drafts will remain private.</p><div class="shelf" id="storyShelf"><div class="empty"><strong>✨ A bookshelf waiting for its first story</strong><p>No stories have been published to Pixie yet. Return after the secure publishing service is connected and the writer shares a story.</p></div></div></section>
+<div class="two">
+<section class="section" id="pixie-chat" aria-labelledby="chat-title"><span class="kicker">SAY HELLO</span><h2 id="chat-title">Ask Pixie ✧</h2><p>The AI storyteller and story-question chatbot will appear here after its service is connected. For now, explore a few site questions:</p><div class="chat"><div class="faq"><button type="button" data-answer="Stories will appear here only after the writer publishes them. Private drafts are never shown.">Where are the stories?</button><button type="button" data-answer="Only the writer enrolled with her own device passkey will be able to publish stories. The secure login is not live yet.">Who can publish?</button><button type="button" data-answer="A request will never connect you to the writer automatically. The writer must first approve each conversation. Requests are not enabled yet.">Can I speak to the writer?</button></div><p id="answer" role="status" aria-live="polite">Select a question to learn about Pixie.</p></div><p class="small">This preview is an informational guide, not yet an AI chat.</p></section>
+<section class="section" id="writer" aria-labelledby="writer-title"><span class="kicker">PRIVATE AUTHOR ACCESS</span><h2 id="writer-title">The writer’s room</h2><p>Pixie’s writer will sign in using a phone passkey to create drafts and publish story cards. Readers will never receive publishing permissions.</p><p class="small"><strong>Status:</strong> Passkey enrollment and private publishing are awaiting secure server deployment. No phone number or SIM data is read by this page.</p><p class="small"><strong>Live conversations:</strong> Each visitor request must be accepted by the writer. Bubbles switchboard routing is not active yet.</p></section>
+</div>
+</main><footer>✿ Pixie Stories · Part of QuantaPhi · <a href="/">Return to QuantaPhi</a> · <a href="/privacy.html">Privacy Policy</a>. This preview contains no private manuscripts or owner credentials.</footer>
+<script>document.querySelectorAll('[data-answer]').forEach(b=>b.addEventListener('click',()=>{document.getElementById('answer').textContent=b.dataset.answer}));</script>
+</body></html>
