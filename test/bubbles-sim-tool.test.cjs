@@ -6,6 +6,9 @@ const block=source.slice(source.indexOf(' const simQuestion='),source.indexOf(' 
 function route(spoken,nativeOverlay,nativeSimAvailable){
  const replies=[];
  const c={spoken,nativeOverlay,nativeSimAvailable,nativeScreenRequests:[],input:{value:spoken},status:{},nativeSpeechPending:true,display:v=>replies.push(v)};
+ // The extracted route closes over clearSentComposer in the real handler.
+ // Recreate only that outer helper for the isolated VM, not a production change.
+ c.clearSentComposer=()=>{if(c.input.value.trim()===spoken)c.input.value='';};
  vm.runInNewContext('(()=>{'+block+'})()',c);
  return {...c,replies};
 }
