@@ -13,3 +13,8 @@ body.oracle-shelf-open #premiumSourceCards[hidden],body.oracle-shelf-open #siteQ
 .oracle-card-deck-stage #phiStoryWriter .sw-primary{background:#a42e2d;color:#fff;border-color:#a42e2d;box-shadow:none}
 .oracle-card-deck-stage #phiStoryWriter :is(.sw-field,.sw-personal-row){border-color:#cdbfb4;background:#fff;color:#302923}
 .oracle-card-deck-stage #phiStoryWriter :is(h2,.sw-label){color:#392b28}
+.premium-card .qca-controls{grid-template-columns:repeat(4,minmax(0,1fr))}
+.premium-card .qca-button{padding:9px 6px;border:1px solid #d8bcb6;background:#fff;color:#852d28;font:750 12px/1.3 system-ui;white-space:nowrap;overflow-wrap:normal}
+.premium-card .qca-search-submit{background:#a42e2d;color:#fff}
+.premium-card .qca-button[aria-pressed="true"]{background:#fff1d5;color:#5f3800}
+@media(max-width:420px){.premium-card .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
