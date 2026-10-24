@@ -510,6 +510,12 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
       /^[A-Za-z0-9._-]+$/.test(repo)?('https://quantaphi.org/'+({C13b0:'infinity-phi', 'Omni-Phi':'omni-phi',QuantaPhi:''}[repo]||repo)+'/'):''
     );
    let url;try{url=new URL(raw,location.href)}catch{return}
+   if(url.protocol!=='https:'&&url.protocol!=='http:')return;
+   if(url.origin!==location.origin){
+     // Third-party websites often forbid framing (X-Frame-Options/CSP).
+     // A blocked iframe is NOT an Infinity Viewer feature: go to the real site.
+     location.assign(url.href);return;
+   }
    title.textContent=link.dataset.siteTitle||link.textContent.trim()||url.hostname;
    const fallback=document.getElementById('siteViewerExternal');if(fallback)fallback.href=url.href;
    frame.src=url.href;
@@ -525,6 +531,14 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
  document.addEventListener('click',event=>{
    const link=event.target.closest?.('.inPageSite');
    if(!link)return;
+   // Do not intercept legitimate external links into an iframe that cannot
+   // display most provider sites. Let the browser/WebView own the navigation.
+   try{
+    const target=new URL(link.dataset.siteUrl||link.getAttribute('href')||'',location.href);
+    if((target.protocol==='https:'||target.protocol==='http:')&&target.origin!==location.origin){
+     link.href=target.href;link.target='_blank';link.rel='noopener noreferrer';return;
+    }
+   }catch{}
    event.preventDefault();
    openSite(link);
  },true);
