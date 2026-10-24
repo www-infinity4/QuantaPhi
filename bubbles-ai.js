@@ -1874,6 +1874,12 @@ function toggle(open){
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
+// A host-page orb opens this iframe only on explicit visitor interaction.
+// No owner job, microphone or permission is activated by this display signal.
+if(embedded)window.addEventListener('message',event=>{
+ if(event.source!==window.parent||event.data?.type!=='quantaphi:bubbles:open'||event.data.id!==bubbleId)return;
+ toggle(true);
+});
 launcher.addEventListener('click',()=>{if(dragSuppressed){dragSuppressed=false;return}if(embedded){toggle(!showing);return}if(!voiceEnabled){toggle(true);void startVoice()}else toggle(!showing)});
 launchCard.addEventListener('click',()=>{toggle(true);if(!voiceEnabled)void startVoice()});
 close.addEventListener('click',()=>toggle(false));

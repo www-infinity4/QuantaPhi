@@ -81,7 +81,7 @@ test('existing StarCoin ledger and no-refresh artwork behavior are untouched by 
 });
 
 
-test('published Bubbles embed stays inside a checked-origin floating frame',()=>{
+test('published Bubbles embed hides iframe until visitor opens its host-page bubble',()=>{
  const code=source('bubbles-embed.js');
  const html=source('bubbles.html');
  const css=source('bubbles-ai.css');
@@ -90,19 +90,23 @@ test('published Bubbles embed stays inside a checked-origin floating frame',()=>
  assert.match(html,/bubbles-ai\.js\?v=/);
  assert.match(html,/body\.bubbles-embedded \.ba-launcher/);
  assert.match(css,/\.ba-panel/);
- const events=new Map();
- const child={};
- const iframe={style:{},dataset:{},contentWindow:child,addEventListener:(event,fn)=>events.set('iframe:'+event,fn),setAttribute(){}};
- let appended=null;
- let listener=null;
+ const events=new Map(),appended=[],posted=[];
+ function element(type){
+  const obj={type,style:{setProperty(prop,value){this[prop]=value}},dataset:{},children:[],
+   setAttribute(name,value){this[name]=value},addEventListener:(event,fn)=>events.set(type+':'+event,fn),
+   appendChild(child){this.children.push(child)}};
+  if(type==='iframe')obj.contentWindow={postMessage:(data,origin)=>posted.push({data,origin})};
+  return obj;
+ }
+ let iframe=null,orb=null,listener=null;
  const document={
   currentScript:{dataset:{bubbleRole:'singer',bubbleId:'my_page',bubbleName:'Choir helper',bubbleInstructions:'Original singing exercises'}},
-  createElement:type=>{assert.equal(type,'iframe');return iframe},
-  body:{appendChild:value=>{appended=value}}
+  createElement(type){const obj=element(type);if(type==='iframe')iframe=obj;if(type==='button')orb=obj;return obj},
+  body:{append(...items){appended.push(...items)}}
  };
  const window={addEventListener:(event,fn)=>{if(event==='message')listener=fn}};
  vm.runInNewContext(code,{document,window,URLSearchParams,Set});
- assert.equal(appended,iframe);
+ assert.deepEqual(appended,[iframe,orb]);
  const url=new URL(iframe.src);
  assert.equal(url.origin,'https://quantaphi.org');
  assert.equal(url.pathname,'/bubbles.html');
@@ -110,15 +114,23 @@ test('published Bubbles embed stays inside a checked-origin floating frame',()=>
  assert.equal(url.searchParams.get('id'),'my_page');
  assert.equal(url.searchParams.get('name'),'Choir helper');
  assert.equal(url.searchParams.get('instructions'),'Original singing exercises');
- assert.equal(iframe.style.width,undefined);
- listener({origin:'https://evil.example',source:child,data:{type:'quantaphi:bubbles:size',open:true}});
- assert.equal(iframe.style.width,undefined,'cross-origin frames may not expand');
+ assert.equal(iframe.style.display,'none','closed messenger iframe must be invisible');
+ assert.equal(orb.style.display,'block');
+ assert.match(orb.style.cssText,/border-radius:50%!important/);
+ listener({origin:'https://evil.example',source:iframe.contentWindow,data:{type:'quantaphi:bubbles:size',open:true}});
+ assert.equal(iframe.style.display,'none','a foreign origin cannot open it');
  listener({origin:'https://quantaphi.org',source:{},data:{type:'quantaphi:bubbles:size',open:true}});
- assert.equal(iframe.style.width,undefined,'unrelated frames may not expand');
- listener({origin:'https://quantaphi.org',source:child,data:{type:'quantaphi:bubbles:size',open:true}});
- assert.match(iframe.style.width,/min\(425px/);
- listener({origin:'https://quantaphi.org',source:child,data:{type:'quantaphi:bubbles:size',open:false}});
- assert.equal(iframe.style.width,'70px');
+ assert.equal(iframe.style.display,'none','an unrelated frame cannot open it');
+ events.get('button:click')();
+ assert.equal(iframe.style.display,'block');
+ assert.equal(orb.style.display,'none');
+ events.get('iframe:load')();
+ assert.equal(posted[0].origin,'https://quantaphi.org');
+ assert.equal(posted[0].data.type,'quantaphi:bubbles:open');
+ assert.equal(posted[0].data.id,'my_page');
+ listener({origin:'https://quantaphi.org',source:iframe.contentWindow,data:{type:'quantaphi:bubbles:size',open:false}});
+ assert.equal(iframe.style.display,'none');
+ assert.equal(orb.style.display,'block');
 });
 
 test('multiple Bubbles embeds isolate notes and never inherit owner authorization',()=>{

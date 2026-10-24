@@ -90,7 +90,7 @@
   <script defer src="/bubbles-brain-actions.js?v=20261020-tool-driver1"></script>
   <script defer src="/bubbles-memory.js?v=20261020-synapse1"></script>
   <script defer src="/quant-ai-personal.js?v=20261020-bubbles-private1"></script>
-  <script defer src="/bubbles-ai.js?v=20261023-cardone-research2"></script>
+  <script defer src="/bubbles-ai.js?v=20261024-embed-shell3"></script>
   <script defer src="/bubbles-owner-diagnostic.js?v=20261021-owner-check1"></script>
   <script defer src="/bubbles-pwa.js?v=20261019-chrome1"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1">
@@ -98,7 +98,14 @@
   <link rel="stylesheet" href="/bubbles-unified.css?v=20261020-chatfolders1">  <link rel="stylesheet" href="/bubbles-product.css?v=20261019-product1">
   <link rel="stylesheet" href="/bubbles-mobile-access.css?v=20261020-android-scroll1">
   <link rel="stylesheet" href="/bubbles-octaves-chat.css?v=20261020-octaves-chat3">
-<link rel="stylesheet" href="/site-footer.css?v=20261022-privacy1"></head>
+<link rel="stylesheet" href="/site-footer.css?v=20261022-privacy1">
+  <style id="bubbles-embed-isolation">
+    /* Even older embed scripts must not leak page text into the closed orb. */
+    html.bubble-iframe{height:100%!important;min-height:0!important;overflow:hidden!important;background:transparent!important}
+    html.bubble-iframe body{margin:0!important;padding:0!important;height:100%!important;min-height:0!important;overflow:hidden!important;background:transparent!important}
+    html.bubble-iframe body > :not(.ba-launcher):not(.ba-panel){display:none!important}
+    html.bubble-iframe .ba-launcher[aria-expanded="true"]{display:none!important}
+  </style></head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
     <nav class="bubbles-site-nav" aria-label="Bubbles site navigation">
