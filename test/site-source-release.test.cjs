@@ -66,3 +66,7 @@ test('Infinity results and directory pages allow only same-origin viewer framing
  const home=await context.worker.fetch(new Request('https://quantaphi.org/'),{});
  assert.equal(home.headers.get('X-Frame-Options'),'DENY');
 });
+
+test('the quality-gated card release uses one immutable source for all its assets',()=>{
+ for(const path of ['/source-quick-cards.mjs','/oracle-card-deck.js','/oracle-card-deck.css','/quanta-card-experience.css','/quanta-card-experience.mjs'])assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:path},new URL('https://quantaphi.org/?v=20261024-quality-gate4')),'60f916b744e24c909106f01ae346d9abb2a187b9');
+});
