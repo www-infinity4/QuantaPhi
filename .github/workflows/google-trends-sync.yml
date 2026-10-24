@@ -2,6 +2,11 @@ name: Refresh Google Trending Cards
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/sync_google_trends.py'
+      - '.github/workflows/google-trends-sync.yml'
   schedule:
     - cron: '*/30 * * * *'
 
