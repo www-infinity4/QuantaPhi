@@ -39,6 +39,10 @@ test('Public / For You / Following cards display functional widgets and no emoji
  const theme=read('quanta-card-experience.css');
  assert.match(feed,/mountCardTools\(tools,selected\)/);
  assert.match(feed,/mountCardTools\(tools,card\)/);
+ assert.match(feed,/card\.origin==='source'/);
+ assert.match(feed,/qf-inline-tool/);
+ assert.match(providers,/iqc-inline-tools/);
+ assert.match(providers,/quantaphi:source-cards-ready/);
  assert.match(feed,/createCardArtwork\(selected\)/);
  assert.match(feed,/createCardArtwork\(card,true\)/);
  assert.match(providers,/mountCardTools\(tools,card\)/);
@@ -52,7 +56,8 @@ test('Public / For You / Following cards display functional widgets and no emoji
 test('source providers continue to open on official domains, without faking sign-in',()=>{
  const p=read('source-quick-cards.mjs');
  assert.match(p,/Never claim/);
- assert.match(p,/source-quick-card\.html\?card=/);
+ assert.match(p,/mountCardTools/);
+ assert.doesNotMatch(p,/Open quick card in Infinity Viewer/);
  assert.match(p,/Official site/);
  assert.match(read('quanta-feed-card.html'),/quanta-card-experience\.css/);
 });
@@ -72,4 +77,16 @@ test('existing Google Trends RSS data is validated, attributed and falls back to
  assert.equal(fallback.items.length,1);
  assert.equal(calls,2);
  await assert.rejects(loadVerifiedTrends(async()=>({ok:true,json:async()=>({source:'invented',region:'US',topics:[]})})),/verified_trends_unavailable/);
+});
+
+test('Google and Bing are native search forms on the current tile, before trend extras',()=>{
+ const src=read('quanta-card-experience.mjs'),home=read('source-quick-cards.mjs');
+ assert.match(src,/form\.method='GET'/);
+ assert.match(src,/form\.action=spec\[0\]\.split\('\?'\)\[0\]/);
+ assert.match(src,/field\.name='q'/);
+ assert.match(src,/field\.required=true/);
+ assert.ok(src.indexOf('searchTool(root,card);')<src.indexOf('trendingTool(root,card);'));
+ assert.doesNotMatch(home,/Open quick card in Infinity Viewer/);
+ assert.match(home,/mountCardTools\(tools,card\)/);
+ assert.match(src,/qcx-site-icon/);
 });
