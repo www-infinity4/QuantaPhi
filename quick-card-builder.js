@@ -1,6 +1,28 @@
 const form=document.getElementById('quickCardCreate'),result=document.getElementById('qcpResult'),kind=document.getElementById('qcpKind');
 const show=()=>{document.getElementById('qcpSearchLine').hidden=kind.value!=='search';document.getElementById('qcpVideoLine').hidden=kind.value!=='video';};
 kind.addEventListener('change',show);show();
+// Help creators configure official search interactions without inventing arbitrary APIs.
+const websiteInput=form.elements.namedItem('website'),searchInput=form.elements.namedItem('searchTemplate');
+function suggestSearch(){
+ if(kind.value!=='search'||searchInput.value.trim())return;
+ try{
+  const url=new URL(websiteInput.value),host=url.hostname.toLowerCase();
+  const known={
+   'www.google.com':'/search?q={query}',
+   'google.com':'/search?q={query}',
+   'www.bing.com':'/search?q={query}',
+   'bing.com':'/search?q={query}',
+   'www.ebay.com':'/sch/i.html?_nkw={query}',
+   'ebay.com':'/sch/i.html?_nkw={query}',
+   'www.youtube.com':'/results?search_query={query}',
+   'youtube.com':'/results?search_query={query}'
+  };
+  if(url.protocol==='https:'&&known[host])searchInput.value=url.origin+known[host];
+ }catch{}
+}
+kind.addEventListener('change',suggestSearch);
+websiteInput.addEventListener('change',suggestSearch);
+
 const button=document.getElementById('qcpPublish');
 form.addEventListener('submit',async event=>{
  event.preventDefault();button.disabled=true;result.replaceChildren();button.textContent='Publishing…';
