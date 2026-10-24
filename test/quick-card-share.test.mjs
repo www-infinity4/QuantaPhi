@@ -18,7 +18,7 @@ test('published cards have standalone canonical Share and X post compose control
 });
 test('X public reader links to hourly browser receipts, not a misleading required developer form',()=>{
  const c=read('bubbles-x-connect.html');
- assert.match(c,/bubbles-hourly-public-x.yml/);
+ assert.match(c,/\/api\/bubbles\/public-x\/health/);
  assert.match(c,/public X posts/);
  assert.match(c,/No developer login is needed/);
  assert.match(c,/not required/);
