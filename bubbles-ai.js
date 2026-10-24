@@ -1536,7 +1536,10 @@ const chatsList=create('div','ba-folder-list');chatsList.setAttribute('aria-labe
 const chatsMessage=create('p','ba-muted','Previous conversations are preserved.');
 chatsActions.append(newConversation,reloadConversations);
 chatsPanel.append(chatsSummary,chatsActions,chatsMessage,chatsList);
-chatScroll.insertBefore(chatsPanel,conversation);
+// In a lightweight embed chatScroll IS conversation. Never insert the
+// container before itself: that aborts initialization before launcher listeners.
+// Standalone and native Bubbles keep their existing scrollable history UI.
+if(chatScroll!==conversation)chatScroll.insertBefore(chatsPanel,conversation);
 function renderConversationFolders(){
  chatsList.replaceChildren();
  for(const item of [...threadIndex].sort((a,b)=>(b.updated||0)-(a.updated||0)).slice(0,100)){
