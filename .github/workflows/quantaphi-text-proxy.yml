@@ -15,4 +15,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+      # Ensure we are on the exact base SHA that the patch expects
+      - name: Reset repository to base SHA
+        run: |
+          git fetch --depth=1 origin ${{ github.event.pull_request.base.sha || github.sha }}
+          git checkout ${{ github.event.pull_request.base.sha || github.sha }}
       - run: node --test test/quantaphi-text-proxy.test.mjs
+      - run: node --test test/brain-patch-routing.test.mjs
