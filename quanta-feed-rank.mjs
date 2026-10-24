@@ -79,6 +79,7 @@ export function nextFeedDirection(cards,tab,state,currentId='',query=''){
  // New content takes precedence in Public but is context-aware within the unseen set.
  const unseen=other.filter(c=>!(state.viewed?.[c.id]||0));
  const pool=tab==='public'&&unseen.length?unseen:other;
+ if(!current&&tab==='public')return {card:pool[(state.advance||0)%pool.length],reason:'Discover another interactive card'};
  const scored=pool.map(card=>{
   const relation=directionScore(current,card,state);
   const personal=tab==='public'?0:Math.min(95,feedScore(card,state));
