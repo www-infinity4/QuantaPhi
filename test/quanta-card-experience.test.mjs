@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {validMediaUrl} from '../quanta-card-experience.mjs';
+import {validMediaUrl,loadVerifiedTrends} from '../quanta-card-experience.mjs';
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 
 test('real player URLs are vetted for YouTube, TikTok and Spotify embeds',()=>{
@@ -55,4 +55,21 @@ test('source providers continue to open on official domains, without faking sign
  assert.match(p,/source-quick-card\.html\?card=/);
  assert.match(p,/Official site/);
  assert.match(read('quanta-feed-card.html'),/quanta-card-experience\.css/);
+});
+
+test('existing Google Trends RSS data is validated, attributed and falls back to the maintained snapshot',async()=>{
+ const valid={source:'Google Trends Trending Now RSS',region:'US',checked_at:'2026-10-24T04:00:00Z',source_url:'https://trends.google.com/trending/rss?geo=US',topics:[{query:'vacuum tube radio',approx_searches:'20K+',published_at:'2026-10-24T02:00:00Z'},{query:'fake traffic',approx_searches:'not measured',published_at:'2026-10-24T02:00:00Z'}]};
+ const urls=[];
+ const result=await loadVerifiedTrends(async url=>{urls.push(url);return {ok:true,json:async()=>valid}});
+ assert.equal(result.items.length,1);
+ assert.equal(result.items[0].query,'vacuum tube radio');
+ assert.match(result.sourceUrl,/trends\.google\.com/);
+ assert.equal(urls.length,1);
+ let calls=0;
+ const fallback=await loadVerifiedTrends(async()=>{
+  calls++;return {ok:calls!==1,json:async()=>valid};
+ });
+ assert.equal(fallback.items.length,1);
+ assert.equal(calls,2);
+ await assert.rejects(loadVerifiedTrends(async()=>({ok:true,json:async()=>({source:'invented',region:'US',topics:[]})})),/verified_trends_unavailable/);
 });
