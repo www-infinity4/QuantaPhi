@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Turn a website and its most useful interaction into a shareable QuantaPhi Quick Card.">
+<title>Create a Quick Card · QuantaPhi</title><link rel="stylesheet" href="/published-quick-card.css?v=1">
+</head><body><main class="qcp-shell"><a href="/" class="qcp-home">← QuantaPhi</a>
+<p class="qcp-eyebrow">INFINITY 2026® · BUBBLES CARD STUDIO</p>
+<h1>Build a Quick Card</h1>
+<p>Give Bubbles a website, describe what people should do inside its card, and share a permanent QuantaPhi link immediately. The card enters the main discovery rotation after review.</p>
+<form id="quickCardCreate" class="qcp-form" autocomplete="off">
+<label>Card name <input name="title" maxlength="85" required placeholder="Example: Antique Radio Finder"></label>
+<label>Original website <input name="website" type="url" required maxlength="900" placeholder="https://example.com/"></label>
+<label>Describe this website <textarea name="description" required minlength="12" maxlength="600" rows="3" placeholder="What does this site offer and why should someone interact with it?"></textarea></label>
+<label>Describe the interaction Bubbles should build <textarea name="interactionRequest" required minlength="10" maxlength="500" rows="3" placeholder="Example: Let visitors search for a tube radio by model number inside the card."></textarea></label>
+<label>What should work in the first published version?
+<select name="kind" id="qcpKind"><option value="visit">Visit official website (further interaction requested)</option><option value="search">Use the website's real search field</option><option value="video">Play an authorized public YouTube video</option></select></label>
+<label id="qcpSearchLine" hidden>Verified website search URL, with {query} in the query position
+<input name="searchTemplate" maxlength="700" placeholder="https://example.com/search?q={query}">
+<small>This URL must be on the website you entered. We do not guess third-party search APIs.</small></label>
+<label id="qcpVideoLine" hidden>Public YouTube video URL <input name="video" type="url" maxlength="500" placeholder="https://www.youtube.com/watch?v=..."></label>
+<label>Official or permitted image URL (optional) <input name="image" type="url" maxlength="900" placeholder="https://example.com/your-permitted-photo.jpg"><small>Use artwork you own or have permission to share. If empty, the card uses a clean text identity.</small></label>
+<button type="submit" id="qcpPublish">Publish shareable card</button>
+<p class="qcp-muted">The new URL is public to anyone you share it with, but it stays unlisted in Public / For You until approved. It does not automatically copy another website, connect a third-party account or charge StarCoins.</p>
+</form>
+<section class="qcp-result" id="qcpResult" aria-live="polite" role="status"></section>
+<section class="qcp-context"><h2>Bubbles and X</h2><p>Your official X posts can become build requests after the existing verified account reader is connected. Unverified posts and quoted text must never trigger owner-level work.</p><p><a href="https://x.com/YahooPingcwlz" target="_blank" rel="noopener noreferrer">Your public X profile ↗</a> · <a href="/bubbles.html">Open Bubbles ↗</a></p><p id="qcpXStatus">X reader: connection not verified here.</p></section>
+</main><script type="module" src="/quick-card-builder.js?v=1"></script></body></html>
