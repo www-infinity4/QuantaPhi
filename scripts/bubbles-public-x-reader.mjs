@@ -61,6 +61,14 @@ async function readPublicPosts(browser){
   await page.goto(PROFILE,{waitUntil:'domcontentloaded',timeout:35000});
   await page.locator('[id^="urt:profile:"] article').first().waitFor({timeout:25000});
   await page.waitForTimeout(1300);
+  // Bounded scroll samples additional public posts without invoking private X APIs.
+  // The public profile may only provide a partial timeline; never claim completeness.
+  for(let i=0;i<6;i++){
+   const count=await page.locator('[id^="urt:profile:"] article').count();
+   if(count>=45)break;
+   await page.mouse.wheel(0,1100);
+   await page.waitForTimeout(550);
+  }
   return await page.evaluate(owner=>[...document.querySelectorAll('[id^="urt:profile:"] article')].map(article=>{
    const wrapper=article.closest('li'),href=wrapper?.querySelector('[data-href]')?.getAttribute('data-href')||'';
    const match=href.match(new RegExp('^/'+owner+'/status/(\\d{15,22})$','i'));
