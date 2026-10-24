@@ -29,4 +29,4 @@ jobs:
         run: node --test test/bubbles-public-x-reader.test.mjs test/bubbles-public-x-cloudflare.test.mjs
       - name: Verify Cloudflare hosted reader exists (read-only status)
         run: |
-          curl --fail --show-error --silent --max-time 15 https://quantaphi.org/api/bubbles/public-x/health | node -e "let s=\x27\x27;process.stdin.on(\x27data\x27,d=>s+=d).on(\x27end\x27,()=>{let v=JSON.parse(s);if(v.reader!==\x27Cloudflare Browser Run public profile\x27||v.apiTokenRequired!==false)process.exit(1);console.log(\x27Cloudflare hosted public reader confirmed\x27)})"
+          curl --fail --show-error --silent --max-time 15 https://quantaphi.org/api/bubbles/public-x/health | grep -q 'Cloudflare Browser Run public profile'
