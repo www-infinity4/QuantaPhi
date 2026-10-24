@@ -34,13 +34,13 @@ test('recognized speech cannot erase an in-progress typed message',()=>{
 });
 
 test('Cardone iframe is the existing specialist assistant with versioned scripts',()=>{
- assert.match(cardone,/src="\/bubbles-embed\.js"/);
+ assert.match(cardone,/src="\/bubbles-embed\.js\?v=20261024-embed-shell3"/);
  assert.match(cardone,/data-bubble-id="cardone-westshore-research"/);
  assert.match(cardone,/data-bubble-role="specialist"/);
  assert.match(embed,/iframe\.src=ORIGIN\+'\/bubbles\.html\?'/);
  assert.match(embed,/quantaphi:bubbles:size/);
  assert.match(bubblePage,/bubbles-voice-gate\.js\?v=20261023-cardone-wake1/);
- assert.match(bubblePage,/bubbles-ai\.js\?v=20261023-cardone-research2/);
+ assert.match(bubblePage,/bubbles-ai\.js\?v=20261024-embed-shell3/);
 });
 
 test('public specialist ignores background transcripts even within a conversation window',()=>{
@@ -126,4 +126,17 @@ test('valid researched Cardone response is preserved without replacing it with a
  await settle();
  const history=JSON.parse(h.values.get('quantaphi:bubbles:history:v1:cardone-westshore-research'));
  assert.ok(history.some(m=>m.role==='assistant'&&m.text.startsWith('Verified issuer excerpts')));
+});
+
+test('closed Cardone bubble cannot expose iframe footer wording or a square document',()=>{
+ assert.match(embed,/const orb=document\.createElement\('button'\)/);
+ assert.match(embed,/iframe\.style\.setProperty\('display','none','important'\)/);
+ assert.match(embed,/iframe\.style\.setProperty\('display',expanded\?'block':'none','important'\)/);
+ assert.match(embed,/const bubble=document\.createElement\('span'\)/);
+ assert.match(embed,/iframe\.contentWindow\?\.postMessage\(\{type:'quantaphi:bubbles:open',id\},ORIGIN\)/);
+ assert.match(bubblePage,/html\.bubble-iframe body > :not\(\.ba-launcher\):not\(\.ba-panel\)\{display:none!important\}/);
+ assert.match(bubblePage,/html\.bubble-iframe \ .ba-launcher\[aria-expanded="true"\]\{display:none!important\}/);
+ assert.match(ai,/if\(embedded\)window\.addEventListener\('message',event=>/);
+ assert.match(ai,/event\.source!==window\.parent/);
+ assert.match(ai,/event\.data\.id!==bubbleId/);
 });
