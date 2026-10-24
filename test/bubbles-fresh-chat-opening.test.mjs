@@ -68,6 +68,7 @@ test('automatic reopened chat preserves old turns but does not create empty clou
  const saved=[],cloud=[],storage=new Map(),ctx={
   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],
   chatsMessage:{textContent:''},keepChat:true,
+  pendingImage:{data:'old-image'},pendingImages:[{data:'old-image'}],photoInput:{value:'old'},photoPreview:{hidden:false},
   messages:[{id:'message_0001',role:'user',text:'earlier turn'}],
   threadIndex:[{id:'chat_previous',title:'Previous chat',updated:100}],
   activeThread:'chat_previous',
@@ -89,6 +90,9 @@ test('automatic reopened chat preserves old turns but does not create empty clou
  assert.equal(result,true);
  assert.deepEqual(saved,['chat_previous']);
  assert.equal(ctx.activeThread,'chat_fresh_00001');
+ assert.equal(ctx.pendingImage,null);
+ assert.equal(ctx.pendingImages.length,0);
+ assert.equal(ctx.photoPreview.hidden,true);
  assert.equal(ctx.input.value,'');
  assert.equal(ctx.messages.length,0);
  assert.equal(ctx.memoryContext.length,0);

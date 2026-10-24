@@ -918,10 +918,11 @@ const removePhoto=create('button','ba-control','Remove image');removePhoto.type=
 removePhoto.addEventListener('click',()=>{pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;status.textContent='Images removed before sending.';});
 photoPreview.append(photoThumb,photoStatus,removePhoto);
 photoInput.addEventListener('change',async()=>{
+ if(busy)return;
  const preparationThread=activeThread;
  const files=Array.from(photoInput.files||[]);if(!files.length)return;
  if(files.length+pendingImages.length>4){status.textContent='Attach up to four images per message.';photoInput.value='';return;}
- photoInput.disabled=true;send.disabled=true;
+ busy=true;photoInput.disabled=true;send.disabled=true;
  try{for(const file of files){
  if(!/^image\/(?:jpeg|png|webp)$/.test(file.type)||file.size>8*1024*1024){photoInput.value='';status.textContent='Choose a JPEG, PNG or WebP image smaller than 8 MB.';continue;}
  status.textContent='Preparing image privately on your phone…';
@@ -942,7 +943,7 @@ photoInput.addEventListener('change',async()=>{
   status.textContent='Image attached. Ask Bubbles about it and tap Send. Nothing uploaded yet.';
  }catch(error){status.textContent='Image unavailable: '+String(error.message||error).slice(0,110);}
  finally{URL.revokeObjectURL(objectUrl);}
- }}finally{photoInput.disabled=false;send.disabled=busy;photoInput.value='';}
+ }}finally{busy=false;photoInput.disabled=false;send.disabled=false;photoInput.value='';}
 });
 const input=create('textarea','ba-field');input.rows=2;input.maxLength=2500;input.placeholder=nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
 const actions=create('div','ba-actions');
@@ -2184,6 +2185,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }
   }catch(error){status.textContent='Semantic tool selector unavailable; continuing conversation.';}
  }
+ // User-selected image is untrusted evidence and never grants owner work permissions.
  // Image findings are evidence only; explicit owner text determines work intent.
  let imageWorkEvidence='';
  if(pendingImage&&!fromVoice){
@@ -3726,5 +3728,3 @@ if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 
 })();
-
-
