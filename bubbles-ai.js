@@ -330,7 +330,7 @@ function drainVoiceTurns(){
 }
 let playbackVersion=0,voiceEchoUntil=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
-const voiceGate=window.BubblesVoiceGate?.create({followupMs:12000,name:config.alias,requireWakeName:true,requireWakeEveryTurn:embedded})||null;
+const voiceGate=window.BubblesVoiceGate?.create({followupMs:12000,name:config.alias,requireWakeName:embedded,requireWakeEveryTurn:embedded})||null;
 
 const MEMORY_OUTBOX=HISTORY+':outbox';
 const memoryPending=new Map((data(MEMORY_OUTBOX,[])||[]).filter(m=>m?.id&&m?.text).map(m=>[m.id,m])),memoryAck=new Set();let memoryBusy=false,memoryContext=[],memoryInstructions=[],memoryCapabilities=[],memoryLastError='',voiceConflict=false;
@@ -437,7 +437,7 @@ function persistChat(){
  return saved;
 }
 const card=create('section','ba-card ba-studio-card');
-card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','Tap Bubbles to enable continuous listening. Start a request with “Bubbles” so nearby television and conversations are not treated as commands. Speech clips go to Cloudflare for transcription; silence stays on your device. Mute releases the microphone.'));
+card.append(create('div','ba-eyebrow','ORACLE OCTAVES · VOICE COMPANION'),create('h2','','Bubbles AI'),create('p','ba-copy','Tap Bubbles once to enable continuous listening. Speak naturally in your main Bubbles chat. Embedded specialist cards require their name before each spoken command. Speech clips go to Cloudflare for transcription; silence stays on your device. Mute releases the microphone.'));
 const studioToggle=create('button','ba-control ba-studio-toggle','Customize Bubbles');studioToggle.type='button';studioToggle.setAttribute('aria-expanded','false');
 studioToggle.addEventListener('click',()=>{const open=card.dataset.expanded!=='true';card.dataset.expanded=String(open);studioToggle.setAttribute('aria-expanded',String(open));studioToggle.textContent=open?'Hide customization':'Customize Bubbles'});card.append(studioToggle);
 const edit=create('div','ba-settings');
@@ -1811,7 +1811,7 @@ function toggle(open){
  if(embedded)window.parent.postMessage({type:'quantaphi:bubbles:size',open:showing},'*');
  if(showing){
   if(chatGate)void checkPanelGate();
-  if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. Start with my name to talk, or type below. Say Bubbles stop listening to mute.','ai',true);greeted=true}
+  if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. '+(embedded?'Use my name before speaking, or type below.':'Speak naturally or type below.')+' Say stop listening to mute.','ai',true);greeted=true}
   if(!nativeOverlay && window.innerWidth>600)input.focus();
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
@@ -2955,7 +2955,7 @@ async function startVoice(){
   });
   if(generation!==voiceGeneration){capture.stop();stream.getTracks().forEach(t=>t.stop());return}
   streamVoice=capture;mic.textContent='🔇 Mute Bubbles';mic.setAttribute('aria-pressed','true');
-  setOrbState('listening');status.textContent='Microphone on · start with “'+config.alias+'”. Background audio is not a command.';
+  setOrbState('listening');status.textContent=embedded?'Microphone on · start with “'+config.alias+'”. Other background audio is ignored.':'Microphone on continuously · speak naturally. Mute to stop.';
   if(config.voice)speakText('I am listening. Just speak naturally.');
  }catch(error){stopVoice('Microphone could not start: '+String(error?.message||error?.name||error).slice(0,130))}
  finally{voiceStarting=false}
