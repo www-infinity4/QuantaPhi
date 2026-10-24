@@ -199,7 +199,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 <style>#quantaAgentIterations[hidden],#robotDirections[hidden]{display:none!important}</style>
 <link rel="stylesheet" href="/halloween-phi.css?v=20261013-cinema5">
 <link rel="stylesheet" href="/phi-channel-cards.css?v=20261015-inline1">
-<link rel="stylesheet" href="/oracle-card-deck.css?v=20261024-clean3">
+<link rel="stylesheet" href="/oracle-card-deck.css?v=20261024-library1">
 <link rel="stylesheet" href="/google-trending-cards.css?v=20261023-trendsync3">
 <link rel="stylesheet" href="/phi-project-cards.css?v=20261012-action1">
 <link rel="stylesheet" href="/shop-ad-phi.css?v=20261024-legible-post1">
@@ -304,6 +304,7 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
 <section id="quantaDiscoveryFeed" class="qf-surface" hidden data-archived-feed="true" aria-label="QuantaPhi Public For You Following discovery feed">
  <p role="status">Loading QuantaPhi discovery cards…</p>
 </section>
+<section id="premiumSourceCards" hidden data-oracle-widget-bank="true" aria-label="Collector, shopping, music and NASA source cards"></section>
 <section id="siteQuickCards" class="card iqc-home-shelf" hidden data-oracle-widget-bank="true" aria-label="Completed source quick cards" style="background:#fff;border:1px solid #e1d3cb;border-radius:18px;padding:16px;margin:16px 0;color:#292222">
   <p role="status" class="iqc-muted">Loading independent source cards…</p>
 </section>
@@ -353,6 +354,7 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
     <button id="oracleCardFollow" type="button" aria-pressed="false" hidden>+ Follow</button>
     <p id="oracleCardReason" role="status" aria-live="polite">Choosing another useful interactive card…</p>
   </div>
+  <details class="oracle-card-library"><summary id="oracleCardInventory">Choose a card</summary><label for="oracleCardChooser">Jump to an available card</label><select id="oracleCardChooser"><option value="">Choose a card…</option></select><p>QuantaPhi originals and source tools · select any card directly, or use the arrows.</p></details>
   <div class="oracle-card-deck-stage" id="oracleCardStage" aria-live="off"></div>
   <button id="oracleCardScroll" type="button" class="oracle-card-scroll" aria-expanded="false">↓ Scroll interactive cards / widgets</button>
   <p id="oracleCardStatus" class="oracle-card-deck-status" role="status" aria-live="polite"></p>
@@ -1829,9 +1831,11 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <link rel="stylesheet" href="/quanta-card-experience.css?v=20261024-foxone1">
 <link rel="stylesheet" href="/quanta-feed.css?v=20261024-directcards2">
 <!-- Legacy 100-card discovery feed retired from homepage; source remains in repository. -->
+<link rel="stylesheet" href="/premium-source-cards.css?v=20261024-library1">
+<script type="module" src="/premium-source-cards.mjs?v=20261024-library1"></script>
 <script type="module" src="/source-quick-cards.mjs?v=20261024-foxone1"></script>
 <script type="module" src="/science-quick-cards.mjs?v=20261023-science1"></script>
-<script defer src="/oracle-card-deck.js?v=20261024-evidence1"></script>
+<script defer src="/oracle-card-deck.js?v=20261024-library1"></script>
 <script defer src="/phi-image-language.js?v=20261011-natural-copy1"></script>
 <script defer src="/phi-visual-render.js?v=20261011-exact-type1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
