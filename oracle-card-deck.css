@@ -5,6 +5,15 @@
 .oracle-card-deck-head h2{font-size:clamp(23px,5vw,32px);margin:6px 0;line-height:1.16}
 .oracle-card-deck-head p{font-size:14px;line-height:1.5;margin:5px 0 12px}
 .oracle-card-deck-kicker{font-size:11px;letter-spacing:.12em;font-weight:900;color:#8c3858}
+.oracle-direction-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:10px 0 12px;border-bottom:1px solid #d8c9cc}
+.oracle-direction-tabs button{min-height:46px;padding:9px 5px;border:0;border-bottom:3px solid transparent;background:transparent;color:#594b53;font:800 14px/1.3 system-ui,sans-serif;cursor:pointer;touch-action:manipulation}
+.oracle-direction-tabs button.oracle-current,.oracle-direction-tabs button[aria-selected="true"]{border-bottom-color:#a72d2c;color:#952b2c}
+.oracle-direction-tabs button:focus-visible,.oracle-direction-action button:focus-visible{outline:3px solid #9952ba;outline-offset:2px}
+.oracle-direction-action{display:flex;gap:11px;align-items:center;flex-wrap:wrap;padding:6px 0 1px}
+.oracle-direction-action #oracleCardFollow{min-height:44px;min-width:105px;border:1px solid #c7a8a1;border-radius:12px;padding:8px 12px;background:#fff;color:#842d2e;font:800 13px system-ui,sans-serif;cursor:pointer}
+.oracle-direction-action #oracleCardFollow[aria-pressed="true"]{border-color:#a72d2c;background:#f9ece9}
+.oracle-direction-action #oracleCardReason{margin:0;flex:1 1 220px;font-size:13px;line-height:1.45;color:#514054}
+.oracle-direction-action button[hidden]{display:none!important}
 .oracle-card-deck-nav{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:7px;align-items:center}
 .oracle-card-deck-nav button,.oracle-card-scroll{min-height:47px;padding:8px 10px;border-radius:13px;background:#69309e;color:#fff;font-size:13px;line-height:1.2;touch-action:manipulation}
 .oracle-card-deck-nav strong{font-size:14px;text-align:center;line-height:1.3}
