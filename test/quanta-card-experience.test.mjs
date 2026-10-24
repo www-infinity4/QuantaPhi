@@ -58,7 +58,7 @@ test('source providers continue to open on official domains, without faking sign
  assert.match(p,/Never claim/);
  assert.match(p,/mountCardTools/);
  assert.doesNotMatch(p,/Open quick card in Infinity Viewer/);
- assert.match(p,/Official site/);
+ assert.match(p,/Official '\+card\.name\+' website/);
  assert.match(read('quanta-feed-card.html'),/quanta-card-experience\.css/);
 });
 
