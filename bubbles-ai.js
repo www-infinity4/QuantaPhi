@@ -211,7 +211,7 @@ function cardoneSourceFallback(question){
 }
 function cardoneReplyUnusable(text){
  const s=String(text||'').trim();
- return !s||/\b(?:type (?:a )?search|search_query|tool_call|tool_name|invoke (?:a |the )?tool|call (?:the )?(?:search|web)|first (?:i|we) (?:will|need to) search|i(?:'ll| will) (?:first )?(?:search|look up))\b/i.test(s)||
+ return !s||/^Live results from /i.test(s)||/\b(?:type (?:a )?search|search_query|tool_call|tool_name|invoke (?:a |the )?tool|call (?:the )?(?:search|web)|first (?:i|we) (?:will|need to) search|i(?:'ll| will) (?:first )?(?:search|look up))\b/i.test(s)||
   /^(?:search for|i need to search|let me search|on it|working on it|thinking|checking)\b[.!…\s]*$/i.test(s);
 }
 const NOTES='quantaphi:bubbles:notes:v1'+(bubbleId?':'+bubbleId:'');
