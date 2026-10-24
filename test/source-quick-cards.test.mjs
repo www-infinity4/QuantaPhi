@@ -46,7 +46,7 @@ test('card detail uses existing Cardone Bubbles embed with specialized context, 
  assert.match(launcher,/bubbleRole='specialist'/);
  assert.match(launcher,/bubbleInstructions/);
  assert.match(launcher,/Never claim|Never execute|Never claim/i); // agent safety prompt
- assert.match(launcher,/No messages, social account feeds, location, recordings or contact information are transferred/);
+ assert.match(launcher,/Location reaches OpenStreetMap only when you approve a map preview/);
  assert.match(launcher,/before sending/);
 });
 test('provider permissions and content limitations remain explicit',()=>{
