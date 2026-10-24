@@ -265,6 +265,18 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
 <section id="siteQuickCards" class="card iqc-home-shelf" aria-label="Fifteen independent source quick cards" style="background:#fff;border:1px solid #e1d3cb;border-radius:18px;padding:16px;margin:16px 0;color:#292222">
   <p role="status" class="iqc-muted">Loading independent source cards…</p>
 </section>
+<section id="scienceQuickCards" class="card sqc-home-shelf" aria-label="Muse NASA James Webb science and technology quick cards" style="background:#fff;border:1px solid #e1d3cb;border-radius:18px;padding:16px;margin:16px 0;color:#292222">
+ <p role="status">Loading science and technology quick cards…</p>
+</section>
+<style id="sqc-home-css">
+.sqc-home-shelf .sqc-label{font-size:12px;letter-spacing:.08em;font-weight:850;color:#a12d2a;text-transform:uppercase}
+.sqc-home-shelf .sqc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(218px,1fr));gap:14px}
+.sqc-home-shelf .sqc-card{padding:16px;background:white;border:1px solid #e6d9ce;border-radius:16px;display:grid;gap:8px;align-content:start}
+.sqc-home-shelf .sqc-card h3,.sqc-home-shelf .sqc-card p{margin:0}
+.sqc-home-shelf .sqc-muted{color:#605650;font-size:14px}
+.sqc-home-shelf .sqc-button{display:inline-flex;align-items:center;justify-content:center;background:#aa302e;color:white;min-height:44px;padding:10px 12px;border-radius:12px;text-decoration:none;font-weight:750;margin:4px 0}
+.sqc-home-shelf a:focus-visible{outline:3px solid #ae6e32;outline-offset:3px}
+</style>
 <style id="iqc-home-css">
 .iqc-home-shelf .iqc-kind{font-size:11px;letter-spacing:.09em;color:#9a302a;font-weight:900;text-transform:uppercase}
 .iqc-home-shelf h2{font-size:1.45rem;margin:.3em 0}.iqc-home-shelf p{line-height:1.45}
@@ -1759,6 +1771,7 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script defer src="/phi-channel-cards.js?v=20261015-credits1"></script>
 <script defer src="/google-trending-cards.js?v=20261023-trendsync3"></script>
 <script type="module" src="/source-quick-cards.mjs?v=20261023-source-quick-cards1"></script>
+<script type="module" src="/science-quick-cards.mjs?v=20261023-science1"></script>
 <script defer src="/oracle-card-deck.js?v=20261023-trending1"></script>
 <script defer src="/phi-image-language.js?v=20261011-natural-copy1"></script>
 <script defer src="/phi-visual-render.js?v=20261011-exact-type1"></script>
