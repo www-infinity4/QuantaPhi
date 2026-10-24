@@ -1,0 +1,35 @@
+name: Quick Card publisher regression
+on:
+  pull_request:
+    paths:
+      - 'workers/quick-card-publisher/**'
+      - 'test/quick-card-publisher.test.mjs'
+      - 'published-quick-card*'
+      - 'quick-card-builder*'
+      - 'index.html'
+      - '.github/workflows/quick-card-publisher.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/quick-card-publisher/**'
+      - 'test/quick-card-publisher.test.mjs'
+      - 'published-quick-card*'
+      - 'quick-card-builder*'
+      - 'index.html'
+      - '.github/workflows/quick-card-publisher.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check module syntax
+        run: |
+          node --check workers/quick-card-publisher/worker.mjs
+          node --check published-quick-card.js
+          node --check published-quick-cards-feed.js
+          node --check quick-card-builder.js
+      - name: Execute publisher tests
+        run: node --test test/quick-card-publisher.test.mjs
