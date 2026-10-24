@@ -31,6 +31,7 @@ orb.type='button';orb.className='quantaphi-bubbles-embed-launcher';
 orb.setAttribute('aria-label','Open '+name+' chat');
 orb.setAttribute('aria-expanded','false');
 orb.style.cssText='position:fixed!important;right:11px;bottom:80px;width:68px!important;height:68px!important;border:2px solid #b9fbff!important;border-radius:50%!important;box-sizing:border-box!important;display:block!important;padding:0!important;margin:0!important;background:radial-gradient(circle at 30% 21%,#fff 0%,#f7ffffaa 15%,transparent 28%),radial-gradient(circle at 69% 78%,#395acc,#6354c9 52%,transparent 82%),radial-gradient(circle at 28% 38%,#bbfaff,#60c8ed 52%,#7153d6 95%)!important;box-shadow:inset 4px 5px 12px #ffffffa6,inset -8px -8px 15px #34268b8c,0 0 12px #77e6f5b0,0 5px 19px #25195b76!important;cursor:pointer!important;touch-action:none!important;overflow:hidden!important;z-index:2147483001!important;';
+orb.style.setProperty('display','block','important');
 for(const [left,top,size] of [[13,37,14],[21,16,29],[48,37,12]]){
  const bubble=document.createElement('span');
  bubble.setAttribute('aria-hidden','true');
