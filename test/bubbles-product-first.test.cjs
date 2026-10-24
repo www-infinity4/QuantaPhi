@@ -6,12 +6,14 @@ const site=fs.readFileSync('index.html','utf8');
 const css=fs.readFileSync('bubbles-product.css','utf8');
 const gateway=fs.readFileSync('workers/quantaphi-site/worker.js','utf8');
 
-test('QuantaPhi opens the assistant directly before the search row',()=>{
- const entry=site.indexOf('class="q-bubbles-entry"');
+test('QuantaPhi prioritizes search before Bubbles, whose full assistant remains on its own pages and APK',()=>{
  const search=site.indexOf('class="search" role="search"');
- assert.ok(entry>0&&search>entry,'assistant CTA should appear before search');
- assert.match(site,/class="q-bubbles-entry-primary" href="\/bubbles\.html">Open Bubbles/);
- assert.match(site,/href="\/bubbles-chrome\.html">Install in Chrome<\/a>/);
+ const traffic=site.indexOf('id="qtraffic"');
+ assert.ok(search>0&&search<traffic,'public search should be the homepage primary control');
+ assert.doesNotMatch(site,/<section class="q-bubbles-entry"/);
+ assert.match(site,/<nav class="qmenu" id="qmenu" hidden>/);
+ assert.match(site,/href="\/bubbles\.html">Bubbles page<\/a>/);
+ assert.match(site,/href="\/bubbles-chrome\.html">Install Bubbles Chrome app<\/a>/);
 });
 
 for(const path of ['bubbles.html','bubbles-chrome.html','bubbles/index.html']){
