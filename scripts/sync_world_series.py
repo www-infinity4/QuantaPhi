@@ -95,14 +95,23 @@ def fetch_url(url):
         requested = urlsplit(url)
         if not is_host(actual, (requested.hostname,)):
             raise ValueError("rss_redirected_away_from_provider")
-        return response.read(MAX_BYTES + 1)
+        body = response.read(MAX_BYTES + 1)
+        if not body.strip():
+            raise ValueError("empty_rss_response")
+        return body
 
-def assemble(samples, checked_at):
+def assemble(samples, checked_at, failures=None):
     if checked_at.tzinfo is None:
         raise ValueError("naive_datetime")
     combined, checked_sources, seen = [], [], set()
     for label, url, body in samples:
-        articles = parse_feed(body, label, checked_at)
+        try:
+            articles = parse_feed(body, label, checked_at)
+        except (ET.ParseError, ValueError) as exc:
+            # An empty/invalid provider must not hide valid reporting from others.
+            if failures is not None:
+                failures.append({"publisher": label, "error": type(exc).__name__})
+            continue
         checked_sources.append({"publisher": label, "url": url, "articles_selected": len(articles)})
         for article in articles:
             key = urlsplit(article["url"]).path.rstrip("/").lower()
@@ -135,14 +144,14 @@ def main():
             samples.append((label, url, fetch_url(url)))
         except Exception as exc:
             failures.append({"publisher": label, "error": type(exc).__name__})
-    data = assemble(samples, checked_at)
+    data = assemble(samples, checked_at, failures)
     data["unavailable_sources"] = failures
     path = Path(args.output)
     path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_suffix(".json.tmp")
     temp.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     temp.replace(path)
-    print("World Series RSS: %s verified stories from %s providers" % (len(data["articles"]), len(samples)))
+    print("World Series RSS: %s verified stories from %s valid providers; %s unavailable" % (len(data["articles"]), len(data["sources"]), len(failures)))
 
 if __name__ == "__main__":
     main()
