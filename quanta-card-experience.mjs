@@ -39,22 +39,32 @@ export function createCardArtwork(card,small=false){
  const text=(category+' '+title).toLowerCase();
  const theme=/radio/.test(text)?'radio':/music|karaoke|starmaker/.test(text)?'music':/youtube|video|tiktok/.test(text)?'video':/news|cnn|fox/.test(text)?'news':/social|facebook|instagram|reddit|whatsapp|x \/ grok/.test(text)?'social':/coin|vam|silver|gold|mint|pcgs|ngc/.test(text)?'coin':/market|ebay|toy|antique/.test(text)?'market':/finance|invest|robinhood|chime/.test(text)?'finance':/science|knowledge|wikipedia/.test(text)?'research':'other';
  art.dataset.theme=variants.includes(theme)?theme:'other';
- art.append(node('span','qcx-art-kicker','INFINITY · '+category.toUpperCase()));
- // Source-owned site icon instead of an invented brand photograph or emoji.
- // If unavailable, the original editorial lettering stays legible.
- if(card.official){
+ art.dataset.brand=/^[a-z0-9-]{1,45}$/.test(card.id||'')?card.id:'other';
+ if(card.id==='google'){
+  // Actual Google-hosted logo, not a text approximation or favicon.
+  art.classList.add('qcx-google');
+  const logo=node('img','qcx-google-wordmark');logo.alt='Google';logo.loading='lazy';
+  logo.src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';
+  logo.addEventListener('error',()=>{logo.hidden=true;art.append(node('strong','qcx-google-backup','Google'))},{once:true});
+  art.append(logo,node('span','qcx-brand-caption','Search Google from this QuantaPhi card'));
+ }else if(card.official){
+  // Full-height source-owned icon, paired with real brand name and a
+  // distinct branded composition; no arbitrary two-letter cover art.
+  const inner=node('div','qcx-brand-hero');
   try{
    const origin=new URL(card.official);
    if(origin.protocol==='https:'){
-    const img=node('img','qcx-site-icon');img.alt=title+' website icon';
-    img.loading='lazy';img.referrerPolicy='no-referrer';
-    img.src='https://www.google.com/s2/favicons?domain='+encodeURIComponent(origin.hostname)+'&sz=128';
-    img.addEventListener('error',()=>img.remove(),{once:true});
-    art.append(img);
+    const logo=node('img','qcx-brand-icon');logo.alt=title+' icon';logo.loading='lazy';logo.referrerPolicy='no-referrer';
+    logo.src='https://www.google.com/s2/favicons?domain='+encodeURIComponent(origin.hostname)+'&sz=128';
+    logo.addEventListener('error',()=>logo.remove(),{once:true});
+    inner.append(logo);
    }
-  }catch{/* Keep the offline-safe editorial cover. */}
+  }catch{}
+  inner.append(node('strong','qcx-brand-title',title));
+  art.append(inner,node('span','qcx-brand-caption',String(card.feature||category)));
+ }else{
+  art.append(node('strong','qcx-art-mark',mark),node('span','qcx-art-name',title));
  }
- art.append(node('strong','qcx-art-mark',mark),node('span','qcx-art-name',title));
  art.setAttribute('aria-label',title+' '+category+' cover');
  return art;
 }
@@ -64,12 +74,22 @@ function searchTool(root,card,options={}){
  const panel=section(root,direct?'SEARCH · '+spec[1].toUpperCase():'SEARCH · ORIGINAL SOURCE',direct?'Search the web with '+spec[1]:'Find exactly what interests you');
  const form=node('form','qcx-search-form');const field=input(card.id==='facebook'?'Local events, people, groups…':card.id==='ebay'?'Morgan dollars, radios, parts…':direct?'Search '+spec[1]+'…':'Topic, show, artist, product…','Search '+spec[1]);
  if(card.id==='instagram')field.placeholder='Enter a hashtag (without #)';
- const b=node('button','qcx-button','Search '+spec[1]);b.type='submit';
+ const b=node('button','qcx-button',direct?'Search':'Search '+spec[1]);b.type='submit';
  field.required=true;form.append(field,b);
  if(direct){
-  // A genuine browser GET search. No intermediary Infinity viewer page,
-  // fake search results, JavaScript pop-up, or extra Open card button.
-  form.method='GET';form.action=spec[0].split('?')[0];form.target='_blank';field.name='q';
+  // The search starts on this card. Infinity Viewer owns a SAME-ORIGIN
+  // results interface; google.com cannot be framed as a third-party page.
+  form.classList.add('qcx-native-search');
+  field.name='q';
+  form.addEventListener('submit',e=>{
+   e.preventDefault();const q=field.value.trim().slice(0,180);if(!q)return;
+   const target='/infinity-search-results.html?'+new URLSearchParams({engine:card.id,q});
+   if(typeof window.QuantaOpenSite==='function'){
+    const a=node('a');a.href=target;a.dataset.siteUrl=target;a.dataset.siteTitle=spec[1]+' · Infinity Search Results';
+    window.QuantaOpenSite(a);
+   }else location.assign(target);
+  });
+  note(panel,'Google/Bing listings are displayed through the Infinity search broker, with their source identified. This is an independent QuantaPhi tool.');
  }else{
   form.addEventListener('submit',e=>{
    e.preventDefault();const query=field.value.trim().replace(/^#/,'');if(!query)return;
@@ -264,6 +284,11 @@ export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
+ if(id==='google'||id==='bing'){
+  // Search is the complete primary interaction, never buried under a
+  // dated trends panel, wrapper link, or additional confirmation click.
+  searchTool(root,card);return;
+ }
  if(id==='youtube'||id==='tiktok')mediaPlayer(root,id);
  if(id==='spotify')mediaPlayer(root,'spotify');
  if(id==='starmaker')recorder(root);

@@ -85,6 +85,7 @@ const follow=document.getElementById('oracleCardFollow'),reason=document.getElem
 let selectedTab='public',directionApi=null,quantApi=null,quantWeights={},quantConnected=false;
 let feedState=null,proposed=null;
 const visited=[];
+let viewerTouched=false;
 function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
  // Move the ORIGINAL article, preserving its search field, player and listeners.
@@ -99,7 +100,14 @@ function registerSourceCards(){
    node,marker:null,count:Math.max(0,Math.min(1000,Number(counts['source-'+id])||0))};
   entries.push(entry);added=true;
  }
- if(added){updateTabs();predict();if(!active&&!expanded)start();}
+ if(added){
+  updateTabs();predict();
+  const google=entries.find(e=>e.id==='source-google');
+  // Prefer the first polished Google card on a cold open, never override
+  // an explicit Cardone button, saved direction or human flip.
+  if(!expanded&&!viewerTouched&&!spotlightRequested&&google&&available(google)&&(!active||active.id===CARDONE_ID))show(google,false);
+  else if(!active&&!expanded)start();
+ }
 }
 window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
 // Module evaluation ordering can differ across mobile WebViews; recover both.
@@ -144,6 +152,7 @@ async function connectQuant(){
  if(selectedTab==='for-you')predict();
 }
 tabButtons.forEach(b=>b.addEventListener('click',()=>{
+ viewerTouched=true;
  selectedTab=b.dataset.oracleFeed;visited.length=0;
  feedState=directionApi?readDirections():feedState;
  updateTabs();
@@ -214,6 +223,7 @@ function show(entry,remember=true){
     selectedTab==='following'?'Only your followed cards appear here.':'Public includes every available original widget.');
 }
 function advance(direction){
+ viewerTouched=true;
  const list=eligible();
  if(!list.length){status.textContent=selectedTab==='following'?'Follow a card in Public first.':'The original interactive cards are still initializing.';return}
  if(direction<0){
@@ -228,6 +238,7 @@ function advance(direction){
  show(list[(i+1+list.length)%list.length]);
 }
 cardoneButton?.addEventListener('click',()=>{
+ viewerTouched=true;
  const entry=entries.find(x=>x.id===CARDONE_ID);
  if(!available(entry)){status.textContent='The Cardone card is not available in this page version yet.';return;}
  if(expanded){
@@ -240,6 +251,7 @@ cardoneButton?.addEventListener('click',()=>{
 });
 for(const shortcut of document.querySelectorAll('[data-oracle-spotlight]')){
  shortcut.addEventListener('click',()=>{
+  viewerTouched=true;
   const id=shortcut.getAttribute('data-oracle-spotlight');
   const entry=entries.find(x=>x.id===id);
   if(!available(entry)){status.textContent='Trending card is not available yet.';return}

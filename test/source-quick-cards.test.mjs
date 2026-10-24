@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {Script} from 'node:vm';
 import {QUICK_CARD_SOURCES,findSourceCard,validSourceCard} from '../source-quick-cards.mjs';
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'utf8');
@@ -21,22 +22,21 @@ test('all fifteen provider quick cards exist, have unique IDs and real HTTPS ori
  assert.deepEqual(QUICK_CARD_SOURCES.map(p=>p.id),
  ['google','youtube','facebook','instagram','chatgpt','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-news','tv-guide','starmaker']);
 });
-test('Google and Bing have real provider-submitted search bars, not result placeholders',()=>{
+test('Google and Bing start real engine requests inside the Infinity Viewer',()=>{
  for(const id of ['google','bing']){
   const card=findSourceCard(id);
   assert.equal(card.searchParameter,'q');
   assert.match(card.featureUrl,/^https:\/\/(?:www\.)?(?:google|bing)\.com\/search$/);
  }
- assert.match(tools,/form.method='GET'/);
- assert.match(tools,/form.action=spec\[0\]\.split\('\?'\)\[0\]/);
- assert.match(tools,/form.target='_blank'/);
+ assert.match(tools,/infinity-search-results\.html/);
+ assert.match(tools,/window\.QuantaOpenSite\(a\)/);
  assert.match(tools,/field.name='q'/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.ok(!launcher.includes('Open quick card in Infinity Viewer'));
 });
 test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261024-directcards2/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261024-oracle-brand3/);
  assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
@@ -78,4 +78,33 @@ test('cross-origin links cannot white-screen the local Infinity iframe',()=>{
  assert.match(home,/link\.target='_blank'/);
  assert.match(home,/link\.rel='noopener noreferrer'/);
  assert.match(home,/frame\.src=url\.href/);
+});
+
+test('the old visual catalog is removed without deleting source widgets or the original chooser',()=>{
+ assert.match(home,/id="quantaDiscoveryFeed"[^>]+hidden/);
+ assert.match(home,/id="siteQuickCards"[^>]+hidden/);
+ assert.match(home,/id="scienceQuickCards"[^>]+hidden/);
+ assert.doesNotMatch(home,/<script type="module" src="\/quanta-feed.mjs/);
+ assert.match(home,/id="oracleCardDeck"/);
+ assert.match(deck,/registerSourceCards/);
+ assert.match(deck,/const google=entries\.find\(e=>e\.id==='source-google'\)/);
+ assert.match(deck,/viewerTouched/);
+});
+test('Google logo and Infinity local results page are genuine assets and do not frame google.com',()=>{
+ const page=readFileSync(new URL('../infinity-search-results.html',import.meta.url),'utf8');
+ assert.match(tools,/www\.google\.com\/images\/branding\/googlelogo/);
+ assert.match(tools,/qcx-google-wordmark/);
+ assert.match(page,/orange-brook-a2ac\.marvaseater\.workers\.dev\/search/);
+ assert.match(page,/engines:engine/);
+ assert.match(page,/filter\(r=>r\.engines\.some\(e=>e===engine\)\)/);
+ assert.match(page,/not verified.*results/);
+ assert.doesNotMatch(page,/<iframe/);
+ assert.match(tools,/window\.QuantaOpenSite\(a\)/);
+});
+
+test('standalone Google results HTML contains executable JavaScript, not an inert blank iframe',()=>{
+ const html=readFileSync(new URL('../infinity-search-results.html',import.meta.url),'utf8');
+ const script=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+ assert.ok(script&&script.includes('void search()'));
+ assert.doesNotThrow(()=>new Script(script,{filename:'infinity-search-results-inline.js'}));
 });

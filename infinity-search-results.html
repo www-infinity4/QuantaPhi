@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffffff"><title>Infinity Viewer · Search results</title>
+<style>
+:root{font:16px/1.5 system-ui,-apple-system,Roboto,sans-serif;color:#24272d;background:#fff}
+*{box-sizing:border-box}body{margin:0}main{max-width:780px;margin:auto;padding:20px 16px 55px}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border-bottom:1px solid #e8ebef;padding-bottom:16px}
+.brand{font-size:12px;letter-spacing:.08em;font-weight:900;color:#b2332c;text-transform:uppercase}
+h1{font-size:25px;line-height:1.15;margin:4px 0}.source{color:#56616b;font-size:13px}
+form{display:flex;gap:8px;margin:16px 0}input{min-width:0;flex:1;border:1px solid #c7cdd5;border-radius:24px;padding:13px 16px;font:inherit;box-shadow:0 2px 9px #28344a15}
+button{min-height:48px;background:#a62f29;color:#fff;border:0;border-radius:24px;padding:10px 19px;font:700 15px system-ui;cursor:pointer}
+#status{min-height:24px;font-size:14px;color:#59616d;margin:12px 0}#results{display:grid;gap:22px}
+.result{padding:0 0 15px;border-bottom:1px solid #ebedf0;min-width:0}
+.result a{color:#1a52ac;text-decoration:none;font-size:19px;line-height:1.25;font-weight:550;overflow-wrap:anywhere}
+.result a:hover{text-decoration:underline}.url{font-size:12px;color:#326348;overflow-wrap:anywhere}.snippet{color:#464b55;line-height:1.5;margin:6px 0 0;font-size:14px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}.actions a{font-size:13px;color:#8d2f28;font-weight:750}
+.warning{background:#fff6e7;border:1px solid #ebdbb2;border-radius:12px;padding:12px;color:#5c4434}
+:focus-visible{outline:3px solid #a52d2b;outline-offset:2px}
+@media(max-width:440px){form{flex-wrap:wrap}form button{width:100%}}
+</style></head>
+<body><main><header><div><span class="brand">Infinity Viewer · QuantaPhi</span><h1 id="title">Search results</h1><div class="source" id="sourceLabel">Independent result viewer · original publisher links</div></div></header>
+<form id="searchForm" role="search"><input id="q" type="search" aria-label="Search the web" required maxlength="180" autocomplete="off" placeholder="Search the web"><button type="submit">Search</button></form>
+<div class="actions"><a id="original" href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Open the complete search on Google ↗</a></div>
+<p id="status" role="status">Loading source results…</p><section id="results" aria-live="polite" aria-label="Search results"></section>
+<p class="source">QuantaPhi is independent of Google and Bing. This page displays live attributed results from its search broker, not an embedded or copied Google search page. Original sites retain their own content.</p>
+</main>
+<script>
+(()=>{
+'use strict';
+const $=id=>document.getElementById(id),params=new URLSearchParams(location.search);
+const engine=params.get('engine')==='bing'?'bing':'google';
+const provider=engine==='google'?'Google':'Bing';
+const query=String(params.get('q')||'').trim().slice(0,180);
+const q=$('q'),status=$('status'),results=$('results'),sourceLabel=$('sourceLabel'),original=$('original');
+const rawUrl=engine==='google'?'https://www.google.com/search?q=':'https://www.bing.com/search?q=';
+q.value=query;$('title').textContent=provider+' · Results';$('searchForm').addEventListener('submit',e=>{
+ e.preventDefault();const term=q.value.trim();if(!term)return;
+ location.replace('/infinity-search-results.html?'+new URLSearchParams({engine,q:term}));
+});
+original.textContent='Open exact search at '+provider+' ↗';
+original.href=rawUrl+encodeURIComponent(query);
+function safeUrl(value){try{const url=new URL(value);return url.protocol==='https:'&&url.hostname&&!url.username&&!url.password?url.href:null}catch{return null}}
+function short(text,limit){return String(text||'').replace(/\s+/g,' ').trim().slice(0,limit)}
+function rows(data){return (Array.isArray(data?.results)?data.results:[]).map(r=>({
+ title:short(r.title,180),url:safeUrl(r.url),snippet:short(r.content||r.description||r.snippet,430),
+ engines:[...(Array.isArray(r.engines)?r.engines:[]),r.engine].filter(Boolean).map(x=>String(x).toLowerCase())
+})).filter(r=>r.url&&r.title).filter((r,i,a)=>a.findIndex(x=>x.url===r.url)===i)}
+function show(list,verified){
+ results.replaceChildren();
+ sourceLabel.textContent=verified?provider+' engine results via Infinity search broker':'General web search via Infinity broker · not verified '+provider+' results';
+ status.textContent=list.length+' attributed '+(verified?provider+' engine':'web')+' results for '+query;
+ if(!verified){const n=document.createElement('p');n.className='warning';n.textContent=provider+'-specific results could not be verified. These are general web results. Use the original '+provider+' link above for the full '+provider+' search.';results.append(n)}
+ for(const x of list.slice(0,12)){
+  const a=document.createElement('article');a.className='result';
+  const host=document.createElement('div');host.className='url';try{host.textContent=new URL(x.url).hostname}catch{}
+  const link=document.createElement('a');link.href=x.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=x.title;
+  const description=document.createElement('p');description.className='snippet';description.textContent=x.snippet;
+  a.append(host,link,description);results.append(a)
+ }
+}
+async function search(){
+ if(!query){status.textContent='Enter a search above.';return}
+ const broker='https://orange-brook-a2ac.marvaseater.workers.dev/search';
+ const lookup=async specific=>{
+  const url=broker+'?'+new URLSearchParams({q:query,format:'json',categories:'general',safesearch:'1',...(specific?{engines:engine}:{})});
+  const response=await fetch(url,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(9000)});
+  if(!response.ok)throw Error('upstream_http_'+response.status);
+  return rows(await response.json())
+ };
+ let found=[];
+ try{found=(await lookup(true)).filter(r=>r.engines.some(e=>e===engine));}catch{}
+ if(found.length){show(found,true);return}
+ try{found=await lookup(false);}catch{}
+ if(found.length){show(found,false);return}
+ status.textContent='Search results could not be fetched. The original '+provider+' search link above remains available.';
+ sourceLabel.textContent='Live source unavailable · nothing fabricated';
+ const p=document.createElement('p');p.className='warning';p.textContent='Unable to fetch verified live results at this time.';results.replaceChildren(p)
+}
+void search();
+})();
+</script></body></html>

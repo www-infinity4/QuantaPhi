@@ -79,14 +79,17 @@ test('existing Google Trends RSS data is validated, attributed and falls back to
  await assert.rejects(loadVerifiedTrends(async()=>({ok:true,json:async()=>({source:'invented',region:'US',topics:[]})})),/verified_trends_unavailable/);
 });
 
-test('Google and Bing are native search forms on the current tile, before trend extras',()=>{
+test('Google source design and in-viewer result handoff are interactive without extra links',()=>{
  const src=read('quanta-card-experience.mjs'),home=read('source-quick-cards.mjs');
- assert.match(src,/form\.method='GET'/);
- assert.match(src,/form\.action=spec\[0\]\.split\('\?'\)\[0\]/);
- assert.match(src,/field\.name='q'/);
+ assert.match(src,/qcx-google-wordmark/);
+ assert.match(src,/www\.google\.com\/images\/branding\/googlelogo/);
+ assert.match(src,/if\(id==='google'\|\|id==='bing'\)/);
+ assert.match(src,/infinity-search-results\.html/);
+ assert.match(src,/window\.QuantaOpenSite\(a\)/);
  assert.match(src,/field\.required=true/);
- assert.ok(src.indexOf('searchTool(root,card);')<src.indexOf('trendingTool(root,card);'));
  assert.doesNotMatch(home,/Open quick card in Infinity Viewer/);
  assert.match(home,/mountCardTools\(tools,card\)/);
- assert.match(src,/qcx-site-icon/);
+ const css=read('quanta-card-experience.css');
+ assert.match(css,/qcx-art\[data-brand="google"\]/);
+ assert.match(css,/oracle-card-deck-stage>article\.iqc-card/);
 });
