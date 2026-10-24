@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/bubbles-pwa-192.png">
   <link rel="apple-touch-icon" href="/assets/bubbles-pwa-192.png">
   <meta name="theme-color" content="#5f259f">
+  <meta name="color-scheme" content="light">
   <link rel="stylesheet" href="/bubbles-ai.css?v=20261020-tool-driver1">
   <style>
     html{min-height:100%;background:#f7f4f0}
@@ -109,6 +110,7 @@
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
     <nav class="bubbles-site-nav" aria-label="Bubbles site navigation">
+      <a href="/bubbles-x-connect.html">Connect X · read posts</a>
       <a href="/">← QuantaPhi</a>
       <span>Bubbles AI</span>
       <a href="/bubbles-accounts.html">Account connections</a>
@@ -197,6 +199,33 @@
     </details>
     <p class="bubbles-page-note">Bubbles uses QuantaPhi services. Connected accounts and Android screen access each require your permission; a queued job is not a verified deployment.</p>
   </main>
+<nav class="bubbles-bottom-nav" aria-label="Bubbles page navigation" id="bubblesBottomNav">
+  <button id="bubblesGoBack" type="button" aria-label="Back to previous page">← Back</button>
+  <a href="/" aria-label="QuantaPhi home">⌂ Home</a>
+  <button id="bubblesGoForward" type="button" aria-label="Go forward to next page">Forward →</button>
+</nav>
+<script>
+(function(){
+ const bar=document.getElementById('bubblesBottomNav');
+ if(!bar||new URLSearchParams(location.search).get('embed')==='1'){if(bar)bar.hidden=true;return}
+ document.getElementById('bubblesGoBack')?.addEventListener('click',()=>{if(history.length>1)history.back();else location.assign('/')});
+ document.getElementById('bubblesGoForward')?.addEventListener('click',()=>history.forward());
+})();
+</script>
+<style>
+:root{color-scheme:light}
+.bubbles-bottom-nav[hidden]{display:none!important}
+.bubbles-bottom-nav{display:flex;position:relative;isolation:isolate;max-width:720px;margin:26px auto 8px;
+ padding:12px max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));
+ align-items:stretch;justify-content:space-between;gap:9px;border-radius:16px;border:2px solid #2b1e33;background:#2b1e33!important;color:#fff!important}
+.bubbles-bottom-nav :is(button,a){flex:1 1 0;display:flex;align-items:center;justify-content:center;min-height:48px;
+ border-radius:10px;border:2px solid #f1e5f9!important;background:#4f2a70!important;color:#fff!important;
+ text-decoration:none;font:bold 15px/1.2 system-ui,-apple-system,sans-serif!important;text-align:center;padding:8px!important;
+ opacity:1!important;filter:none!important;-webkit-text-fill-color:#fff!important;cursor:pointer}
+.bubbles-bottom-nav :is(button,a):focus-visible{outline:3px solid #ffe78a;outline-offset:2px}
+@media(max-width:390px){.bubbles-bottom-nav{gap:5px;padding:8px}.bubbles-bottom-nav :is(button,a){font-size:13px!important}}
+html.bubble-iframe .bubbles-bottom-nav,body.bubbles-embedded .bubbles-bottom-nav{display:none!important}
+</style>
 <footer class="qp-site-footer" aria-label="QuantaPhi site information"><p>QuantaPhi · AI research, media and learning</p><nav aria-label="Legal and site links"><a href="/">Home</a><a href="/about.html">About</a><a href="/privacy.html">Privacy Policy</a><a href="/learn/">Learn</a></nav></footer>
   <script type="module">
     import('/bubbles-signin-gate.mjs?v=20261021-timeout1')
