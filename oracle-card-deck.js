@@ -14,6 +14,7 @@ const choices=[
  ['pixieStoryCard','Pixie Stories · Read and explore'],
  ['googleTrendNba','NBA · Trending matchups'],
  ['googleTrendMlb','MLB · World Series'],
+ ['churchOfIAmCard','Church of I AM · Gary Cardone'],
  ['googleTrendCulture','Media · Trending searches'],
  ['infiniteBook','Read an original story'],
  ['phiChannelCards','Watch a channel'],
@@ -44,6 +45,7 @@ const CARD_DIRECTIONS={
  pixieStoryCard:['pixie-stories','Stories','Read an original Pixie story'],
  googleTrendNba:['trending-nba','Sports','Explore an NBA match and related research'],
  googleTrendMlb:['trending-mlb','Sports','Explore World Series matchups'],
+ churchOfIAmCard:['church-of-i-am','Sunday conversations','Find Gary Cardone’s official Sunday I AM gathering'],
  googleTrendCulture:['trending-media','Media','Investigate popular media and events'],
  infiniteBook:['reads-realms','Stories','Read and research an original story'],
  phiChannelCards:['channels','Television','Watch a channel'],
@@ -73,7 +75,7 @@ const cardoneButton=document.getElementById('oracleCardCardone');
 const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={walmart:'walmartShoppingCard',google:'source-google','fox-one':'source-fox-one',foxone:'source-fox-one',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
+ const names={walmart:'walmartShoppingCard',google:'source-google','fox-one':'source-fox-one',foxone:'source-fox-one',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
  const requested=url.searchParams.get('card');
  return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
 }catch{return null}})();
@@ -123,7 +125,9 @@ function registerSourceCards(){
    const sources=entries.filter(e=>e.id.startsWith('source-')&&available(e))
     .sort((a,b)=>a.count-b.count||entries.indexOf(a)-entries.indexOf(b));
    const products=sources.filter(e=>e.node.closest('#brandProductCards'));
-   const candidate=products[0]||sources[0]||google;
+   const sundayPromo=window.QuantaChurchIam?.sundayMorning?.(new Date())?
+    entries.find(e=>e.id==='churchOfIAmCard'&&available(e)):null;
+   const candidate=sundayPromo||products[0]||sources[0]||google;
    if(candidate&&candidate!==active)show(candidate,false);
   }
   else if(!active&&!expanded)start();
@@ -390,7 +394,9 @@ host.addEventListener('click',e=>{
 },true);
 document.body.classList.add('oracle-card-deck-active');
 function start(){if(!active&&!expanded){const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
- const first=request&&available(request)?request:eligible()[0]||order()[0];
+ const sundayPromo=window.QuantaChurchIam?.sundayMorning?.(new Date())&&selectedTab==='public'?
+  entries.find(e=>e.id==='churchOfIAmCard'&&available(e)):null;
+ const first=request&&available(request)?request:sundayPromo||eligible()[0]||order()[0];
  if(first)show(first,false);else status.textContent='Loading original interactive cards…';
 }}
 start();
