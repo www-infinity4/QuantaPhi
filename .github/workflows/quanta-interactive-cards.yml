@@ -16,6 +16,10 @@ on:
       - 'source-quick-card.html'
       - 'index.html'
       - 'world-series-news.mjs'
+      - 'church-iam-card.js'
+      - 'church-iam-card.css'
+      - 'test/church-iam-card.test.mjs'
+      - 'bubbles-card-catalog.mjs'
       - 'world-series-news.css'
       - 'cardone-capital.html'
       - 'test/world-series-news.test.mjs'
@@ -48,6 +52,7 @@ jobs:
           node --check premium-source-cards.mjs
           node --check brand-product-cards.mjs
           node --check world-series-news.mjs
+          node --check church-iam-card.js
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
         run: node --test test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs
@@ -58,7 +63,7 @@ jobs:
       - name: Check World Series publisher stories and Cardone detail actions
         run: |
           python3 -m unittest discover -s test -p 'test_world_series_sync.py' -v
-          node --test test/world-series-news.test.mjs
+          node --test test/world-series-news.test.mjs test/church-iam-card.test.mjs
       - name: Check original-card preservation
         run: node test/oracle-card-deck.test.cjs
       - name: Install Chromium for live browser QA
