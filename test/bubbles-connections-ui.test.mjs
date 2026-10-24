@@ -153,3 +153,30 @@ test('Cloudflare OAuth never mistakes limited consent for project management per
  const result=await adapter.exchange({code:'code',verifier:'verifier',actions:['account.read','projects.build']});
  assert.deepEqual(result.grantedActions,['account.read']);
 });
+
+test('Cloudflare Bubbles client restricts requests to scopes registered on its own OAuth app',async()=>{
+ const {cloudflareAdapter,cloudflareAvailableActions}=await import('../workers/bubbles-connections/providers.mjs');
+ const allowed='user-details.read memberships.read d1.read';
+ assert.deepEqual(cloudflareAvailableActions(allowed),['account.read','ledger.read']);
+ assert.deepEqual(cloudflareAvailableActions(''),[]);
+ const adapter=cloudflareAdapter({clientId:'bubble-app',clientSecret:'server-only',allowedScopes:allowed,
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'});
+ assert.throws(()=>adapter.authorization({state:'x',challenge:'y',actions:['projects.full']}),/cloudflare_client_scopes_unavailable/);
+ const url=new URL(adapter.authorization({state:'x',challenge:'y',actions:['account.read','ledger.read']}));
+ assert.equal(url.searchParams.get('scope'),'user-details.read memberships.read d1.read');
+ assert.ok(!url.href.includes('server-only'));
+});
+test('Cloudflare account discovery is verified with the users token and strips private API fields',async()=>{
+ const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+ const id='a'.repeat(32),calls=[];
+ const adapter=cloudflareAdapter({clientId:'app',clientSecret:'secret',allowedScopes:'user-details.read memberships.read',
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
+     calls.push({url,authorization:options.headers.Authorization});
+     return Response.json({success:true,result:[{id,name:'Personal account',api_key:'SHOULD_NOT_LEAK'}],result_info:{total_pages:1}});
+   });
+ const result=await adapter.accounts({accessToken:'user-specific-token'});
+ assert.deepEqual(result,{accounts:[{id,name:'Personal account'}],truncated:false});
+ assert.equal(calls[0].authorization,'Bearer user-specific-token');
+ assert.equal(calls[0].url,'https://api.cloudflare.com/client/v4/accounts?page=1&per_page=50');
+ assert.ok(!JSON.stringify(result).includes('SHOULD_NOT_LEAK'));
+});

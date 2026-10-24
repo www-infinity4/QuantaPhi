@@ -114,8 +114,11 @@ export function mountConnections(container,{token}) {
     try {
       const data=await client.call('/catalog');let available=false;
       for(const provider of data.providers) {
-        const button=element('button',(provider.configured?'Connect ':'Unavailable: ')+(NAMES[provider.id]||provider.id),'ba-control');button.type='button';button.disabled=!provider.configured;
-        if(provider.configured)available=true;
+        const cloudFull=provider.id==='cloudflare'&&provider.fullProjectConfigured!==true;
+        const button=element('button',(provider.configured&&!cloudFull?'Connect ':cloudFull?'Setup needed: ':'Unavailable: ')+(NAMES[provider.id]||provider.id),'ba-control');
+        button.type='button';button.disabled=!provider.configured||cloudFull;
+        if(cloudFull)button.title='The Bubbles Cloudflare OAuth client must first register its exact full-project scopes. Trying to sign in again cannot fix this.';
+        if(provider.configured&&!cloudFull)available=true;
         button.addEventListener('click',async()=>{
           const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):provider.id==='cloudflare'?['account.read','projects.build','ledger.read','projects.full']:['repository.read'];
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';return;}
@@ -226,6 +229,33 @@ export function mountConnections(container,{token}) {
           }
         }
         accounts.append(row);
+        if(account.provider==='cloudflare'&&account.status==='connected'){
+          const chooser=element('div','','ba-cloudflare-account-select');
+          const statusLine=element('p','Choose a Cloudflare account that you own or can manage. Nothing will be deployed automatically.','ba-muted');
+          statusLine.setAttribute('role','status');
+          const list=document.createElement('select');list.className='ba-field';
+          list.setAttribute('aria-label','Select my Cloudflare account');
+          const confirm=element('button','Use this Cloudflare account','ba-control');confirm.type='button';confirm.disabled=true;
+          const loadAccounts=async()=>{
+            list.replaceChildren();
+            const response=await client.call('/cloudflare/accounts',{id:account.id});
+            const empty=document.createElement('option');empty.value='';empty.textContent='Choose account';list.append(empty);
+            for(const cf of response.accounts){
+              const option=document.createElement('option');option.value=cf.id;option.textContent=cf.name;list.append(option);
+            }
+            if(response.truncated)statusLine.textContent='The account list is incomplete. No other account can be selected without verification.';
+            list.addEventListener('change',()=>{confirm.disabled=!list.value;});
+          };
+          confirm.addEventListener('click',async()=>{
+            confirm.disabled=true;try{
+              const response=await client.call('/cloudflare/select-account',{id:account.id,accountId:list.value});
+              statusLine.textContent=response.account.name+' selected and verified. Cloudflare storage is not provisioned yet; no deployment or data migration was performed.';
+            }catch{statusLine.textContent='Account selection failed verification. No account was changed.';}
+            finally{confirm.disabled=!list.value;}
+          });
+          chooser.append(statusLine,list,confirm);accounts.append(chooser);
+          void loadAccounts().catch(()=>{statusLine.textContent='Could not list the accounts authorized by Cloudflare. No account has been selected.';});
+        }
         if(account.provider==='google'&&account.status==='connected') {
           const tools=element('details','');tools.append(element('summary','Use this Google account'));
           const output=element('pre','');output.style.whiteSpace='pre-wrap';output.style.maxHeight='22rem';output.style.overflow='auto';

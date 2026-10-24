@@ -70,6 +70,33 @@ export class ConsentService {
     }));
     return publicConnection(connection);
   }
+  async cloudflareAccounts({userId,id}) {
+    return this.withCredential({userId,id,provider:'cloudflare',action:'account.read'},
+      async (accessToken)=>this.adapters.cloudflare.accounts({accessToken}));
+  }
+  async selectCloudflareAccount({userId,id,accountId}) {
+    if(typeof accountId!=='string'||!/^[a-f0-9]{32}$/.test(accountId))
+      throw Error('cloudflare_account_invalid');
+    // Never bind an arbitrary account supplied by chat or page JavaScript.
+    // Confirm membership directly against this wallet's Cloudflare token.
+    const listing=await this.cloudflareAccounts({userId,id});
+    const chosen=listing.accounts.find(account=>account.id===accountId);
+    if(!chosen)throw Error('cloudflare_account_not_authorized');
+    const prefix=await this.namespace(userId),key=prefix+'connection:'+id;
+    const existing=await this.storage.get(key);
+    if(existing?.userId!==userId||existing.provider!=='cloudflare'||existing.status!=='connected')
+      throw Error('connection_not_verified');
+    await this.storage.transaction(async tx=>{
+      const current=await tx.get(key);
+      if(current?.revision!==existing.revision||current.status!=='connected')
+        throw Error('connection_cancelled');
+      await tx.put(prefix+'cloudflare:selected:'+id,{
+        userId,connectionId:id,accountId:chosen.id,name:chosen.name,
+        connectionRevision:current.revision,selectedAt:this.now()});
+    });
+    return {account:{id:chosen.id,name:chosen.name},
+      storageReady:false,status:'account_selected_not_provisioned'};
+  }
   async githubRepositories({userId,id,test=false}) {
     const prefix=await this.namespace(userId);
     if(typeof id!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(id))throw Error('connection_invalid');
@@ -171,6 +198,7 @@ export class ConsentService {
       const credentials = record.credentialRef ? await tx.get(record.credentialRef) : null;
       await tx.put(prefix + 'generation:' + record.provider, (await tx.get(prefix + 'generation:' + record.provider) || 0)+1);
       if (record.credentialRef) await tx.delete(record.credentialRef);
+      if (record.provider==='cloudflare') await tx.delete(prefix+'cloudflare:selected:'+id);
       await tx.put(key, {...record, status:'disconnected', grantedActions:[], credentialRef:null, revision:randomToken(), updatedAt:this.now()});
       return {credentials, context:record.credentialRef, provider:record.provider};
     });

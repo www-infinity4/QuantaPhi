@@ -1,7 +1,7 @@
 import {cloudStarCoinBackup} from './starcoin-backup.mjs';
 import {digest} from './vault.mjs';
 import {PROVIDERS} from './authorization.mjs';
-import {CONNECTOR_REQUIREMENTS} from './providers.mjs';
+import {CONNECTOR_REQUIREMENTS,cloudflareAvailableActions} from './providers.mjs';
 const ORIGINS = new Set(['https://quantaphi.org','https://www.quantaphi.org']);
 export const PREFIX = '/api/bubbles/connections';
 function json(origin,value,status = 200) {
@@ -70,12 +70,20 @@ export async function handleConnections(request,env,resolveService) {
       if(!token.startsWith('bc_'))throw Error('verified_wallet_required');
       return json(origin,await env.CONNECTIONS.get(env.CONNECTIONS.idFromName('connector-pairing-v1')).endPair({token}));
     }
+    const oauthClientScopes=cloudflareAvailableActions(env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES);
+    const cloudflareAppReady=Boolean(env.CLOUDFLARE_CLIENT_ID&&env.CLOUDFLARE_CLIENT_SECRET&&
+      oauthClientScopes.includes('account.read'));
+    const cloudflareFullReady=cloudflareAppReady&&
+      ['account.read','projects.build','ledger.read','projects.full'].every(a=>oauthClientScopes.includes(a));
     if (request.method === 'GET' && url.pathname === PREFIX+'/catalog') {
       const ready = env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true';
-      return json(origin,{ok:true,starcoinBackupEnabled:Boolean(ready&&env.STARQUEST_LEDGER?.fetch&&env.BOT_WALLET?.fetch),providers:Object.keys(PROVIDERS).map(id=>({id,actions:PROVIDERS[id].actions,
+      return json(origin,{ok:true,starcoinBackupEnabled:Boolean(ready&&env.STARQUEST_LEDGER?.fetch&&env.BOT_WALLET?.fetch),providers:Object.keys(PROVIDERS).map(id=>({id,actions:id==='cloudflare'?oauthClientScopes:PROVIDERS[id].actions,
         configured:ready && ((id==='google' && !!env.GOOGLE_CLIENT_ID && !!env.GOOGLE_CLIENT_SECRET) ||
           (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET) ||
-          (id==='cloudflare' && !!env.CLOUDFLARE_CLIENT_ID && !!env.CLOUDFLARE_CLIENT_SECRET)),requirement:CONNECTOR_REQUIREMENTS[id]}))});
+          (id==='cloudflare' && cloudflareAppReady)),
+        ...(id==='cloudflare'?{fullProjectConfigured:ready&&cloudflareFullReady,
+          setupRequired:!cloudflareAppReady?'oauth_client_not_configured':!cloudflareFullReady?'oauth_client_full_scopes_not_registered':null}:{}),
+        requirement:CONNECTOR_REQUIREMENTS[id]}))});
     }
     if (!(env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true')) return json(origin,{ok:false,error:'connections_not_configured'},503);
     const service = await resolveService(identity.userId);
@@ -86,7 +94,7 @@ export async function handleConnections(request,env,resolveService) {
       const accounts=await service.gateStatus(identity);
       const available=id=>id==='github'
         ? Boolean(env.GITHUB_CLIENT_ID&&env.GITHUB_CLIENT_SECRET)
-        : Boolean(env.CLOUDFLARE_CLIENT_ID&&env.CLOUDFLARE_CLIENT_SECRET);
+        : cloudflareAppReady;
       const required={github:[],cloudflare:['account.read','projects.build','ledger.read','projects.full']};
       const state=id=>{
         const configured=available(id);
@@ -98,7 +106,9 @@ export async function handleConnections(request,env,resolveService) {
           permissionsApproved:Boolean(configured&&matching&&missingActions.length===0),
           label:configured&&matching?matching.label:null,
           missingActions:matching?missingActions:[],
-          reconnectRequired:candidates.length>0&&!matching};
+          reconnectRequired:candidates.length>0&&!matching,
+          ...(id==='cloudflare'?{fullProjectConfigured:cloudflareFullReady,
+            scopeSetupRequired:cloudflareAppReady&&!cloudflareFullReady}: {})};
       };
       const github=state('github'),cloudflare=state('cloudflare');
       return json(origin,{ok:true,mode:'preview',enforced:false,
@@ -135,6 +145,8 @@ export async function handleConnections(request,env,resolveService) {
         mode:url.pathname.endsWith('/verify')?'verify':'write'})});
     }
     // Explicit field selection prevents supplied userId/sessionId from winning.
+    if (url.pathname === PREFIX+'/cloudflare/accounts') return json(origin,{ok:true,...await service.cloudflareAccounts({userId:identity.userId,id:body.id})});
+    if (url.pathname === PREFIX+'/cloudflare/select-account') return json(origin,{ok:true,...await service.selectCloudflareAccount({userId:identity.userId,id:body.id,accountId:body.accountId})});
     if (url.pathname === PREFIX+'/github/test') return json(origin,{ok:true,...await service.githubConnectionTest({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/github/repositories') return json(origin,{ok:true,...await service.githubRepositories({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/start') return json(origin,{ok:true,...await service.start({...identity,provider:body.provider,actions:body.actions})});
@@ -145,7 +157,7 @@ export async function handleConnections(request,env,resolveService) {
     if (url.pathname === PREFIX+'/select-resource') return json(origin,await service.selectResource({userId:identity.userId,id:body.id,kind:body.kind,resourceId:body.resourceId}));
     return json(origin,{ok:false,error:'not_found'},404);
   } catch (error) {
-    const expected = /^(?:starcoin_account_identity_mismatch|starcoin_state_invalid|starcoin_sources_disagree|starcoin_duplicate_receipt|starcoin_cloud_unavailable|starcoin_verified_device_required|github_private_write_not_verified|github_backup_http_\d+|backup_(?:account_mismatch_review_required|mismatch_review_required|malformed_review_required|commit_conflict_retry|commit_unverified|repository_invalid|repository_already_selected|not_configured|invalid_request)|connection_complete_(?:state|exchange|seal|store|unknown)_(?:timeout|type|internal)(?:_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown))?|pairing_invalid_or_expired|verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+)$/;
+    const expected = /^(?:starcoin_account_identity_mismatch|starcoin_state_invalid|starcoin_sources_disagree|starcoin_duplicate_receipt|starcoin_cloud_unavailable|starcoin_verified_device_required|github_private_write_not_verified|github_backup_http_\d+|backup_(?:account_mismatch_review_required|mismatch_review_required|malformed_review_required|commit_conflict_retry|commit_unverified|repository_invalid|repository_already_selected|not_configured|invalid_request)|connection_complete_(?:state|exchange|seal|store|unknown)_(?:timeout|type|internal)(?:_(?:token_redirect|login_redirect|external_redirect|other_redirect|receiver|context|redirect|headers|url|timeout|network|function|unknown))?|pairing_invalid_or_expired|verified_wallet_required|wallet_validation_unavailable|connections_not_configured|provider_not_configured|unsupported_action|callback_invalid|callback_session_mismatch|state_invalid_or_used|state_expired|connection_cancelled|connection_invalid|connection_not_found|connection_not_verified|connection_required|credential_unavailable|consent_required|refresh_in_progress|refresh_required|reconnect_required|resource_selection_required|range_invalid|time_invalid|provider_response_too_large|too_many_requests|google_read_http_\d+|cloudflare_client_scopes_unavailable|cloudflare_account_(?:invalid|not_authorized)|cloudflare_accounts_http_\d+)$/;
     const message = expected.test(error.message) ? error.message : 'connection_operation_failed';
     const status = ['verified_wallet_required','starcoin_verified_device_required'].includes(message) ? 401 : message === 'too_many_requests' ? 429 : /unavailable|not_configured|operation_failed/.test(message) ? 503 : 400;
     return json(origin,{ok:false,error:message},status);
