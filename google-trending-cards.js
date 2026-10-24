@@ -33,7 +33,7 @@ const readJson=async(url,controller)=>{
 function heading(host,title,label,volume){
  const eyebrow=make(host,'p','gt-eyebrow',label);
  const h=make(host,'h3','gt-title',title);
- make(host,'p','gt-snapshot',volume+' Google searches in the U.S. snapshot · '+snapshot+' · source: Google Trends');
+ make(host,'p','gt-snapshot',volume==='automatic'?'Latest observed trends are refreshed through a scheduled Google RSS import; the timestamp below shows actual freshness.':volume+' Google searches in the U.S. snapshot · '+snapshot+' · source: Google Trends');
  return {eyebrow,h};
 }
 function button(row,title,cb){
@@ -137,7 +137,9 @@ const mediaTopics=[
  {id:'gladiator',title:'Gladiator II on Netflix',volume:'20K+',question:'Where can I confirm streaming availability?',options:['Availability reporting','Trailer clips','Official title search'],query:'Gladiator II Netflix'}
 ];
 function cultureCard(host){
- heading(host,'Trending Media Explorer','ENTERTAINMENT','200K+ Ethan Klein / 20K+ Avengers: Doomsday');
+ heading(host,'Google Trending Now Explorer','SEARCH & MEDIA','automatic');
+ mountLatestTrends(host);
+ make(host,'h4','gt-topic','October 23, 2026 archived media spotlights');
  const nav=make(host,'div','gt-tabs');
  const details=make(host,'div','gt-media-detail');
  let selected=mediaTopics[0].id;
@@ -158,6 +160,53 @@ function cultureCard(host){
  }
  render();actions(host,[['View current Google trends ↗',SOURCES.trends],['Explore related stories ↗','https://news.google.com/']]);
 }
+
+/* Google search demand is checked on the server, NOT guessed in the browser.
+ * This source feed is distinct from QuantaPhi's own visitor analytics. */
+function mountLatestTrends(host){
+ const panel=make(host,'section','gt-latest-feed');
+ make(panel,'h4','gt-topic','Latest U.S. Google search trends');
+ const controls=make(panel,'div','gt-toolbar');
+ const status=make(panel,'p','gt-status','Checking the latest attributed Google Trends feed…');
+ status.setAttribute('role','status');status.setAttribute('aria-live','polite');
+ const list=make(panel,'div','gt-games');
+ controls.append(link('Original Google Trends feed ↗',SOURCES.trends));
+ let controller;
+ async function refresh(){
+  controller?.abort();controller=new AbortController();
+  status.textContent='Checking latest published trend observations…';
+  try{
+   const response=await fetch('/data/google-trends-latest.json?checked='+Date.now(),{cache:'no-store',signal:controller.signal,headers:{Accept:'application/json'}});
+   if(!response.ok)throw Error('Source sync not published yet (HTTP '+response.status+')');
+   const feed=await response.json();
+   if(feed.schema_version!==1||feed.source_url!=='https://trends.google.com/trending/rss?geo=US'||!Array.isArray(feed.topics))throw Error('Invalid trend feed');
+   const checked=Date.parse(feed.checked_at);
+   const valid=feed.topics.filter(t=>t&&typeof t.query==='string'&&t.query.trim()&&typeof t.approx_searches==='string'&&Number.isFinite(Date.parse(t.published_at))&&Date.parse(t.published_at)<=Date.now()+300000).slice(0,25);
+   if(!Number.isFinite(checked)||checked>Date.now()+300000||!valid.length)throw Error('No verified trends in response');
+   const newest=Math.max(...valid.map(t=>Date.parse(t.published_at)));
+   const stale=Date.now()-checked>2*60*60*1000||Date.now()-newest>36*60*60*1000;
+   list.replaceChildren();
+   for(const item of valid){
+    const card=make(list,'article','gt-game');
+    make(card,'h4','gt-topic',item.query.slice(0,160));
+    make(card,'p','gt-fine','Google estimate: '+item.approx_searches.slice(0,30)+' searches · observed '+new Date(item.published_at).toLocaleString());
+    const row=make(card,'div','gt-actions');
+    row.append(link('Publisher coverage ↗',SOURCES.news+encodeURIComponent(item.query)),link('Explore search ↗','https://www.google.com/search?q='+encodeURIComponent(item.query)));
+   }
+   status.textContent=(stale?'STALE SOURCE — last verified topics shown, not current trends':'Source verified')+' · last checked '+new Date(checked).toLocaleString()+' · '+valid.length+' topics · Google Trends approximate buckets, not QuantaPhi visits';
+  }catch(error){
+   if(error.name==='AbortError')return;
+   list.replaceChildren();make(list,'p','gt-empty','A current trend snapshot is unavailable. Use the original Google Trends link; archived examples are below.');
+   status.textContent='Trend refresh unavailable · '+safeStatus(error.message);
+  }
+ }
+ button(controls,'↻ Refresh trends',()=>void refresh());
+ const timer=setInterval(()=>{if(!document.hidden)void refresh()},5*60*1000);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)void refresh()});
+ void refresh();
+ return timer;
+}
+
 const containers=[['googleTrendNba',nbaCard],['googleTrendMlb',mlbCard],['googleTrendCulture',cultureCard]];
 for(const [id,init] of containers){const el=root.getElementById(id);if(!el)continue;el.classList.add('gt-card');if(el.dataset.trendingMounted==='1')continue;el.dataset.trendingMounted='1';init(el)}
 })();
