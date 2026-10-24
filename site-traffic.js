@@ -8,7 +8,7 @@
  function valid(d){
   const t=Date.parse(d?.fetchedAt);
   return d?.schemaVersion===2&&d.site==='quantaphi.org'&&d.source==='Cloudflare GraphQL httpRequests1dGroups'&&
-   d.scope==='recorded_since'&&d.historicComplete===false&&
+   d.scope==='recorded_since'&&d.historicComplete===false&&typeof d.refreshConfigured==='boolean'&&
    /^\d{4}-\d{2}-\d{2}$/.test(d.since)&&/^\d{4}-\d{2}-\d{2}$/.test(d.through)&&d.since<=d.through&&
    Number.isFinite(t)&&t<Date.now()+60000&&validCount(d.requests)&&validCount(d.pageViews)&&
    d.last7Days&&validCount(d.last7Days.requests)&&validCount(d.last7Days.pageViews)&&
@@ -23,10 +23,10 @@
   views.textContent=d.pageViews.toLocaleString();
   const updated=new Date(d.fetchedAt).toLocaleString();
   const age=Date.now()-Date.parse(d.fetchedAt);
-  const live=!fallback&&age<60*60*1000&&d.through===new Date().toISOString().slice(0,10);
+  const live=d.refreshConfigured&&!fallback&&age<60*60*1000&&d.through===new Date().toISOString().slice(0,10);
   const prefix='Recorded since '+d.since+' (earliest available Cloudflare date), through '+d.through+'. ';
   const recent=' Last 7 days (UTC): '+d.last7Days.requests.toLocaleString()+' requests, '+d.last7Days.pageViews.toLocaleString()+' page views.';
-  const status=live?'Auto-updating Cloudflare ledger. ':'Latest recorded total, not currently live. ';
+  const status=live?'Automatic Cloudflare sync is active. ':(d.refreshConfigured?'Last recorded total; feed is temporarily stale. ':'Last recorded total; automatic ingestion is not yet authorized. ');
   note.textContent=prefix+status+'Last verified '+updated+'.'+recent+
    ' Includes bots; not unique visitors or individual clicks.'+
    (d.coverageContinuous?'':' Some daily records are missing; the total is incomplete.');
