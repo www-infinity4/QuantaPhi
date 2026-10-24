@@ -18,3 +18,55 @@
 .sap-shell [hidden]{display:none!important}
 
 #shopAdPhi .sap-shell{background:#fffdf8;border:1px solid #ceb5e6;border-radius:22px;color:#2b1e33;box-shadow:0 8px 25px #3a203315}#shopAdPhi .sap-shell button,#shopAdPhi .sap-shell a{color:#492277;border-color:#ceb5e6}#shopAdPhi .sap-actions>button:first-child,#shopAdPhi .sap-review-btn,#shopAdPhi .sap-form>button[type=submit]{background:#492277;color:#fff}#shopAdPhi .sap-shell button:disabled{opacity:.55;cursor:default}#shopAdPhi .sap-feature{background:#fff;border-color:#ceb5e6}#shopAdPhi .sap-shell h2{font-size:24px}#shopAdPhi .sap-form details{background:#fff7ef;border:1px solid #e3d0c1;border-radius:14px;padding:12px}#shopAdPhi .sap-form summary{min-height:44px;color:#492277;font-weight:800;cursor:pointer}
+
+
+/* Shop Phi Create Post: readable tap targets, real-product hero and provenance. */
+#shopAdPhi .sap-shell{max-width:100%;background:#fffaf2;color:#25202b;border:1px solid #e6d8c7;overflow:hidden}
+#shopAdPhi .sap-shell h2{font-size:clamp(25px,6vw,34px);color:#231628}
+#shopAdPhi .sap-shell .sap-actions{display:flex;flex-wrap:wrap;align-items:stretch;gap:9px}
+#shopAdPhi .sap-shell .sap-actions button,#shopAdPhi .sap-shell .sap-actions a,
+#shopAdPhi .sap-form>button,#shopAdPhi .sap-form details button{
+ display:inline-flex;justify-content:center;align-items:center;text-align:center;
+ min-height:48px;max-width:100%;padding:11px 16px;white-space:normal;
+ overflow-wrap:break-word;line-height:1.25;font-size:14px;font-weight:800;
+ background:#fff!important;color:#46236d!important;border:1.5px solid #926bb2!important;
+ opacity:1;text-shadow:none;box-shadow:none;
+}
+#shopAdPhi .sap-shell .sap-actions>button:first-child,
+#shopAdPhi .sap-shell .sap-form>button[type=submit]{
+ background:#a52428!important;color:#fff!important;border-color:#a52428!important;
+}
+#shopAdPhi .sap-shell button:disabled{
+ background:#e5e0e5!important;color:#524c58!important;border-color:#c9c2c9!important;
+ opacity:1!important;cursor:not-allowed;
+}
+#shopAdPhi .sap-feature{
+ display:flex;flex-direction:column;gap:11px;padding:clamp(14px,3vw,22px);
+ border:1px solid #e3d7cb;background:white;border-radius:20px;
+ box-shadow:0 6px 24px #35243c12;
+}
+#shopAdPhi .sap-feature>img{
+ width:100%;max-height:420px;min-height:170px;aspect-ratio:16/10;
+ object-fit:contain;display:block;background:#f7f4ef;
+ border:1px solid #eee5da;border-radius:15px;
+}
+#shopAdPhi .sap-feature h3{margin:0;font-size:clamp(21px,5vw,29px);line-height:1.18;color:#29172e}
+#shopAdPhi .sap-feature p{margin:0;overflow-wrap:anywhere}
+#shopAdPhi .sap-feature>small:first-child{
+ display:block;align-self:flex-start;letter-spacing:.05em;text-transform:uppercase;
+ color:#683f22;font-size:11px;font-weight:900;
+}
+#shopAdPhi .sap-item-meta{display:flex;gap:8px 15px;flex-wrap:wrap;align-items:center;font-size:13px;color:#595061}
+#shopAdPhi .sap-item-meta strong{font-size:20px;color:#862b2e}
+#shopAdPhi .sap-media-missing{
+ border:1px dashed #bbafa0;border-radius:12px;background:#fcf6ea;
+ color:#5d5360;padding:14px;font-size:13px;
+}
+#shopAdPhi .sap-status{padding:11px 13px;border-left:4px solid #a52428;border-radius:4px;background:#f6efe7;color:#38253d;min-height:48px;font-weight:650;overflow-wrap:anywhere}
+#shopAdPhi .sap-form{min-width:0}
+#shopAdPhi .sap-form input,#shopAdPhi .sap-form textarea{min-width:0;max-width:100%;color:#281f2f;background:#fff}
+@media(max-width:540px){
+ #shopAdPhi .sap-shell{padding:14px}
+ #shopAdPhi .sap-shell .sap-actions button,#shopAdPhi .sap-shell .sap-actions a{flex:1 1 130px}
+ #shopAdPhi .sap-feature>img{min-height:140px;max-height:310px}
+}
