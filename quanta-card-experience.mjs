@@ -43,8 +43,13 @@ export function createCardArtwork(card,small=false){
  art.dataset.brand=/^[a-z0-9-]{1,45}$/.test(card.id||'')?card.id:'other';
  if(card.id==='fox-one'){
   art.classList.add('qcx-fox-one');
+  const foxWordmark=node('img','qcx-fox-one-logo');
+  foxWordmark.alt='FOX One official wordmark';foxWordmark.loading='lazy';
+  foxWordmark.src='https://upload.wikimedia.org/wikipedia/commons/7/77/Fox_One_2025.svg';
+  foxWordmark.addEventListener('load',()=>{const backup=art.querySelector('.qcx-fox-one-brand');if(backup)backup.hidden=true},{once:true});
+  foxWordmark.addEventListener('error',()=>foxWordmark.remove(),{once:true});
   art.append(node('span','qcx-fox-one-kicker','FOX ONE · STREAMING'),
-    node('strong','qcx-fox-one-brand','FOX ONE'),
+    foxWordmark,node('strong','qcx-fox-one-brand','FOX ONE'),
     node('span','qcx-brand-caption','Sports · News · Entertainment'));
  }else if(card.id==='google'){
   // Actual Google-hosted logo, not a text approximation or favicon.
