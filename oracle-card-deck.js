@@ -9,6 +9,7 @@ const now=document.getElementById('oracleCardNow'),status=document.getElementByI
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
+ ['pixieStoryCard','Pixie Stories · Read and explore'],
  ['googleTrendNba','NBA · Trending matchups'],
  ['googleTrendMlb','MLB · World Series'],
  ['googleTrendCulture','Media · Trending searches'],
@@ -38,7 +39,7 @@ const cardoneButton=document.getElementById('oracleCardCardone');
 const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={cardone:'cardoneCapitalOffer',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
+ const names={cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
  return names[url.searchParams.get('card')]||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
 }catch{return null}})();
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
