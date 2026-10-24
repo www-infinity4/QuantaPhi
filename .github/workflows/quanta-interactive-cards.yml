@@ -1,0 +1,32 @@
+name: QuantaPhi real interactive card quality
+on:
+  pull_request:
+    paths:
+      - 'quanta-card-experience.*'
+      - 'quanta-feed.*'
+      - 'quanta-feed-card.html'
+      - 'source-quick-cards.mjs'
+      - 'source-quick-card.html'
+      - 'index.html'
+      - 'test/quanta-card-experience.test.mjs'
+      - 'test/source-quick-cards.test.mjs'
+      - 'test/quanta-card-feed.test.mjs'
+      - '.github/workflows/quanta-interactive-cards.yml'
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate card module syntax
+        run: |
+          node --check quanta-card-experience.mjs
+          node --check quanta-feed.mjs
+          node --check source-quick-cards.mjs
+      - name: Run interactive card regression tests
+        run: node --test test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs
