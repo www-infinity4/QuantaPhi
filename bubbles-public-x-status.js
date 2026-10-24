@@ -8,6 +8,9 @@ if(status){
   if(s.status==='public_posts_observed'){
    status.textContent='Cloud browser reading public X posts';
    if(detail)detail.textContent='Last successful check: '+(s.last_success||'unverified')+' · Visible posts: '+(s.visible_count??0)+' · Newly recorded: '+(s.new_count??0)+' · Possible new build requests: '+(s.candidate_count??0);
+  }else if(s.status==='manual_browser_verified'){
+   status.textContent='Public X browser read verified; next scheduled scan pending';
+   if(detail)detail.textContent='Manual check: '+(s.last_success||'unavailable')+' · Posts saved: '+(s.new_count??0)+' · Possible work requests: '+(s.candidate_count??0)+'. Recurring schedule is configured but its first run is not yet verified.';
   }else if(s.status==='blocked'){
    status.textContent='Public X reader cannot currently retrieve the timeline';
    if(detail)detail.textContent='Last checked: '+(s.last_checked||'unknown')+' · Error: '+(s.error||'not specified')+'. An unsuccessful scan does not mean there were no posts.';
