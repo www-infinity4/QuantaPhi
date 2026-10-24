@@ -55,3 +55,75 @@ test('public specialist ignores background transcripts even within a conversatio
  assert.equal(gate.accept('ignore this voice from across the room',1550).type,'ignore');
  assert.equal(gate.accept('Bubbles what about the disclosures',1800).type,'message');
 });
+
+
+test('embedded orb canvas is transparent so the round launcher has no square backdrop',()=>{
+ assert.match(bubblePage,/html\.bubble-iframe\{height:100%;min-height:0;background:transparent!important\}/);
+ assert.match(bubblePage,/body\.bubbles-embedded\{background:transparent!important/);
+});
+
+test('Cardone questions use read-only issuer research rather than an internal search script',()=>{
+ const start=ai.indexOf('const lookupPayload=()=>cardoneResearch?{');
+ const end=ai.indexOf('\n const prompt=',start);
+ assert.ok(start>=0&&end>start);
+ const question='What assumptions support the projected cashflow, and how are distributions funded?';
+ const data=vm.runInNewContext(ai.slice(start,end)+'\nlookupPayload()',{
+  cardoneResearch:true,lookupRequest:question,toolRequestId:'test-uuid'
+ });
+ assert.equal(data.tool,'web.search');
+ assert.equal(data.mcp,false);
+ assert.match(data.request,/Cardone Capital 10X Westshore South/);
+ assert.match(data.researchContext,/original property-investment question/);
+ assert.match(data.researchContext,/how are distributions funded/);
+ assert.equal(Object.prototype.hasOwnProperty.call(data,'Authorization'),false);
+ assert.match(ai,/cardoneReplyUnusable\(rawAnswer\)/);
+ assert.match(ai,/cardoneSourceFallback\(request\)/);
+});
+
+function testCardoneChat(answer){
+ const nodes=[],values=new Map(),calls=[];
+ const make=tag=>{
+  const e={tag,children:[],dataset:{},style:{setProperty(){}},hidden:false,handlers:{},value:'',
+   prepend(...items){this.children.unshift(...items)},before(){},
+   append(...items){this.children.push(...items)},
+   insertBefore(item,before){const i=this.children.indexOf(before);this.children.splice(i<0?this.children.length:i,0,item)},
+   setAttribute(){},addEventListener(type,handler){this.handlers[type]=handler},focus(){},
+   replaceChildren(...items){this.children=items},removeAttribute(){},select(){}};
+  nodes.push(e);return e;
+ };
+ const host=make('div'),document={createElement:make,getElementById:id=>id==='bubblesAICard'?host:null};
+ document.body=make('body');document.head=make('head');
+ const window={parent:{postMessage(){}},addEventListener(){},innerHeight:780};
+ const localStorage={getItem:key=>values.get(key)||null,setItem:(key,v)=>values.set(key,v),removeItem:key=>values.delete(key)};
+ const fetch=async(url,opts)=>{calls.push({url,data:JSON.parse(opts.body)});return{ok:true,json:async()=>answer}};
+ vm.runInNewContext(ai,{
+  document,window,localStorage,URLSearchParams,fetch,AbortController,
+  location:{search:'?embed=1&id=cardone-westshore-research&role=specialist&name=Real%20Estate%20Bubbles',origin:'https://quantaphi.org',pathname:'/bubbles.html'},
+  crypto:{randomUUID:()=>'cardone-uuid'},navigator:{},setTimeout:()=>1,clearTimeout:()=>{}
+ },{timeout:3000});
+ return {nodes,values,calls};
+}
+const settle=async()=>{for(let i=0;i<35;i++)await new Promise(resolve=>setImmediate(resolve))};
+test('unfinished tool-script reply becomes useful sourced answer in retained Cardone history',async()=>{
+ const h=testCardoneChat({ok:true,output:'I will type search then invoke tool_name: web_search to find the underwriting.',receipt:{tool:'web.search',status:'complete'}});
+ const input=h.nodes.find(n=>n.tag==='textarea'&&n.placeholder?.startsWith('Say something'));
+ assert.ok(input);
+ input.value='What assumptions support the projected cashflow, and how are distributions funded?';
+ h.nodes.find(n=>n.className==='ba-composer').handlers.submit({preventDefault(){}});
+ await settle();
+ assert.equal(h.calls.length,1);
+ assert.equal(h.calls[0].data.tool,'web.search');
+ const history=JSON.parse(h.values.get('quantaphi:bubbles:history:v1:cardone-westshore-research'));
+ assert.ok(history.some(m=>m.role==='assistant'&&m.text.includes('5% cashflow')));
+ assert.ok(history.some(m=>m.role==='assistant'&&m.text.includes('https://invest.cardonecapital.com/')));
+ assert.ok(!history.some(m=>m.text.includes('invoke tool_name')));
+});
+test('valid researched Cardone response is preserved without replacing it with a canned answer',async()=>{
+ const h=testCardoneChat({ok:true,output:'Verified issuer excerpts describe a targeted yield rather than a guaranteed payout; the offering documents determine actual distributions.',receipt:{tool:'web.search',status:'complete'},sources:[]});
+ const input=h.nodes.find(n=>n.tag==='textarea'&&n.placeholder?.startsWith('Say something'));
+ input.value='Explain occupancy and rent assumptions at Westshore';
+ h.nodes.find(n=>n.className==='ba-composer').handlers.submit({preventDefault(){}});
+ await settle();
+ const history=JSON.parse(h.values.get('quantaphi:bubbles:history:v1:cardone-westshore-research'));
+ assert.ok(history.some(m=>m.role==='assistant'&&m.text.startsWith('Verified issuer excerpts')));
+});
