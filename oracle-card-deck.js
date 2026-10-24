@@ -140,7 +140,12 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
 }));
 follow?.addEventListener('click',()=>{
  if(!directionApi||!active)return;
- feedState=directionApi.toggleFollowing(readDirections(),active.feedId);storeDirections();updateTabs();predict();
+ feedState=directionApi.toggleFollowing(readDirections(),active.feedId);storeDirections();
+ if(selectedTab==='following'&&!feedState.following.includes(active.feedId)){
+  returnActive();const first=eligible()[0];if(first)show(first,false);
+  else {now.textContent='No followed interactive cards';status.textContent='Choose Public and follow a card to fill this view.';}
+ }
+ updateTabs();predict();
  window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
 });
 window.addEventListener('quantaphi:feed-updated',e=>{
