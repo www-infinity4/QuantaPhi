@@ -263,7 +263,8 @@ if(embedded&&!previousConfig){
  if(instruction)config.instructions=instruction;
 }
 let notes=data(NOTES,[]);if(!Array.isArray(notes))notes=[];
-let keepChat=data(KEEP_HISTORY,!embedded)===true;
+// Named specialists retain device-local chats by default; visitors can opt out.
+let keepChat=data(KEEP_HISTORY,true)===true;
 const CLOUD_MEMORY_KEY='quantaphi:bubbles:cloud-memory:v1'+(bubbleId?':'+bubbleId:'');
 let cloudChat=data(CLOUD_MEMORY_KEY,false)===true;
 const longMemory=embedded?null:window.BubblesMemory||null;
@@ -295,7 +296,9 @@ try{
  sessionStorage.removeItem(UPDATE_RELOAD_THREAD);
 }catch{}
 const freshThreadId=()=> 'chat_'+crypto.randomUUID().replaceAll('-','');
-let activeThread=resumeSiteUpdate&&threadIndex.some(t=>t.id===lastTab)?lastTab:freshThreadId();
+const embeddedResume=embedded&&keepChat?(threadIndex.find(t=>t.id===lastTab)?.id||
+ threadIndex.find(t=>Array.isArray(data(THREAD_PREFIX+t.id,null))&&data(THREAD_PREFIX+t.id,[]).length)?.id||''):'';
+let activeThread=embeddedResume||(resumeSiteUpdate&&threadIndex.some(t=>t.id===lastTab)?lastTab:freshThreadId());
 try{
  sessionStorage.setItem(TAB_THREAD,activeThread);
  sessionStorage.setItem(EXPLICIT_THREAD,'0');
@@ -327,7 +330,7 @@ function drainVoiceTurns(){
 }
 let playbackVersion=0,voiceEchoUntil=0;
 let meterStream=null,audioContext=null,meterAnalyser=null,meterFrame=0,orbDragging=false,dragSuppressed=false;
-const voiceGate=window.BubblesVoiceGate?.create({followupMs:30000,name:config.alias,requireWakeName:false})||null;
+const voiceGate=window.BubblesVoiceGate?.create({followupMs:12000,name:config.alias,requireWakeName:true,requireWakeEveryTurn:embedded})||null;
 
 const MEMORY_OUTBOX=HISTORY+':outbox';
 const memoryPending=new Map((data(MEMORY_OUTBOX,[])||[]).filter(m=>m?.id&&m?.text).map(m=>[m.id,m])),memoryAck=new Set();let memoryBusy=false,memoryContext=[],memoryInstructions=[],memoryCapabilities=[],memoryLastError='',voiceConflict=false;
@@ -836,10 +839,10 @@ recorderStop.addEventListener('click',()=>{
  recorderStatus.textContent='Stop request sent to Android; waiting for save confirmation…';
  recorderStop.disabled=true;
 });
-const memoryHint=create('small','ba-memory-status',embedded?'Conversation stays in this embed.':'Shared memory waits for your verified owner connection.');memoryHint.setAttribute('role','status');
+const memoryHint=create('small','ba-memory-status',embedded?'Card chats save on this device only · use Chats to resume or disable saving in Options.':'Shared memory waits for your verified owner connection.');memoryHint.setAttribute('role','status');
 status.setAttribute('role','status');
 const conversation=create('div','ba-messages');conversation.setAttribute('role','log');conversation.setAttribute('aria-live','polite');
-const chatScroll=!embedded?create('div','ba-thread'):conversation;
+const chatScroll=create('div','ba-thread');
 // Browser tools live INSIDE the single touch-scroll surface, never as a
 // clipped sibling of the fixed-height Android chat panel.
 const browserHome=!embedded?create('div','ba-browser-home'):null;
@@ -936,7 +939,7 @@ tools.addEventListener('toggle',()=>{if(tools.open&&typeof requestAnimationFrame
 const privacy=create('div','ba-privacy');
 const privacyLabel=create('label','ba-privacy-label');
 const historyToggle=create('input','');historyToggle.type='checkbox';historyToggle.checked=keepChat;
-privacyLabel.append(historyToggle,create('span','','Keep conversation history (owner history also syncs across linked Bubbles sessions)'));
+privacyLabel.append(historyToggle,create('span','',embedded?'Save this card’s chats on this device':'Keep conversation history (owner history also syncs across linked Bubbles sessions)'));
 const cloudLabel=create('label','ba-privacy-label'),cloudToggle=create('input','');
 cloudToggle.type='checkbox';cloudToggle.checked=cloudChat;cloudToggle.disabled=!keepChat;
 cloudLabel.append(cloudToggle,create('span','','Optional extra wallet transcript backup (separate from APK pairing)'));
@@ -1129,6 +1132,9 @@ if(!nativeOverlay&&!embedded){
  composer.insertBefore(status,input);
 }
 if(embedded){
+ // Chats and messages share a dedicated touch-scrolling viewport.
+ panel.insertBefore(chatScroll,conversation);
+ chatScroll.append(conversation);
  const program=create('details','ba-program');program.append(create('summary','','Program this bubble'),edit);
  panel.insertBefore(program,composer);
 }
@@ -1536,10 +1542,8 @@ const chatsList=create('div','ba-folder-list');chatsList.setAttribute('aria-labe
 const chatsMessage=create('p','ba-muted','Previous conversations are preserved.');
 chatsActions.append(newConversation,reloadConversations);
 chatsPanel.append(chatsSummary,chatsActions,chatsMessage,chatsList);
-// In a lightweight embed chatScroll IS conversation. Never insert the
-// container before itself: that aborts initialization before launcher listeners.
-// Standalone and native Bubbles keep their existing scrollable history UI.
-if(chatScroll!==conversation)chatScroll.insertBefore(chatsPanel,conversation);
+// Embedded specialists now have their own scroll owner and a visible Chats section.
+chatScroll.insertBefore(chatsPanel,conversation);
 function renderConversationFolders(){
  chatsList.replaceChildren();
  for(const item of [...threadIndex].sort((a,b)=>(b.updated||0)-(a.updated||0)).slice(0,100)){
@@ -1789,13 +1793,8 @@ cloudToggle.addEventListener('change',async()=>{
  }catch(error){cloudChat=false;cloudToggle.checked=false;save(CLOUD_MEMORY_KEY,false);
   memoryHint.textContent='Sync not connected: '+String(error.message||error)}
 });
-clearChat.textContent=embedded?'Clear this view':'Start new chat';
-clearChat.addEventListener('click',()=>{
- if(embedded){messages=[];conversation.replaceChildren();greeted=false;
-  try{localStorage.removeItem(HISTORY)}catch{}
-  status.textContent='View cleared. Your notes and owner archive remain saved.';
- }else void startConversation();
-});
+clearChat.textContent=embedded?'New card chat':'Start new chat';
+clearChat.addEventListener('click',()=>void startConversation());
 cloudDelete.addEventListener('click',async()=>{
  if(!cloudChat||!confirm('Erase the extra Bubbles transcript stored under your verified wallet? This will not erase the separate Robot Brain job records.'))return;
  try{await longMemory.clear({cloudToo:true});cloudChat=false;cloudToggle.checked=false;cloudDelete.hidden=true;
@@ -1805,7 +1804,7 @@ cloudDelete.addEventListener('click',async()=>{
 let panelWasOpened=false;
 function toggle(open){
  const reopening=Boolean(open)&&!showing&&panelWasOpened;
- if(reopening&&!nativeOverlay)void startConversation({automatic:true});
+ if(reopening&&!nativeOverlay&&!embedded)void startConversation({automatic:true});
  showing=Boolean(open);
  if(showing)panelWasOpened=true;
  panel.hidden=!showing;launcher.setAttribute('aria-expanded',String(showing));
@@ -1817,7 +1816,7 @@ function toggle(open){
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
-launcher.addEventListener('click',()=>{if(dragSuppressed){dragSuppressed=false;return}if(!voiceEnabled){toggle(true);void startVoice()}else toggle(!showing)});
+launcher.addEventListener('click',()=>{if(dragSuppressed){dragSuppressed=false;return}if(embedded){toggle(!showing);return}if(!voiceEnabled){toggle(true);void startVoice()}else toggle(!showing)});
 launchCard.addEventListener('click',()=>{toggle(true);if(!voiceEnabled)void startVoice()});
 close.addEventListener('click',()=>toggle(false));
 function extract(reply){
@@ -1898,6 +1897,8 @@ async function consumeOwnerCodeFromChat(message,fromVoice){
 }
 async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const spoken=String(text||'').trim();
+ // Voice turns must never overwrite partially typed messages.
+ const clearSentComposer=()=>{if(!fromVoice&&input.value.trim()===spoken)clearSentComposer();};
  // Observation is delivered separately so its untrusted words can never be
  // classified as an owner job, local tool command, navigation, or approval.
  const nativeEvidence=nativeOverlay?String(androidScreenEvidence||'').slice(0,7000):'';
@@ -1910,7 +1911,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Keep the existing Bubbles chat. A typed command on Android requests a
  // native confirmation dialog, not a second chat or remote Linux sandbox.
  if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\s+)?(?:(?:test|check|verify)(?:\s+the)?\s+(?:python(?:\s+(?:in|with))?\s+termux|python|termux(?:\s+python)?)|(?:run|start|try)(?:\s+a)?\s+python\s+(?:test|diagnostic)|(?:does\s+python\s+work|is\s+python\s+(?:working|ready))(?:\s+in\s+termux)?)[.!?]*$/i.test(spoken)){
-  display(spoken,'you');input.value='';
+  display(spoken,'you');clearSentComposer();
   messages.push({role:'user',text:spoken});
   nativeTermuxProbeRequests.push({action:'probe'});
   const answer='Python diagnostic requested on this phone. Approve the Android prompt; execution is not confirmed yet.';
@@ -1920,7 +1921,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }
  const preference=!embedded&&!pendingImage?brainTools?.notificationPreference?.(spoken):null;
  if(preference){
-  busy=true;send.disabled=true;display(spoken,'you');input.value='';
+  busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();
   let answer;
   try{
    const headers=await verifiedOwnerHeaders();
@@ -1936,7 +1937,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   busy=false;send.disabled=false;nativeSpeechPending=false;return;
  }
  if(!embedded&&/^(?:phone (?:read|status|tap|type|scroll_up|scroll_down)\b|ask (?:Gemini|IBM(?: Orchestrate)?):)/i.test(spoken)){
-  busy=true;send.disabled=true;display(spoken,'you');input.value='';
+  busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();
   try{
    const result=await (await phoneTools()).request(spoken);
    const answer=result?JSON.stringify(result,null,2):'Use phone read, phone tap NUMBER, phone type NUMBER: message, or ask Gemini: message.';
@@ -1961,7 +1962,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    });
   }catch(error){status.textContent='Tool action driver unavailable: '+String(error.message||error).slice(0,110);}
   if(toolAction){
-   busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+   busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
    let answer='',workspace=null;
    try{
     if(toolAction.kind==='phone'){
@@ -2004,7 +2005,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const {module,workspace}=await chatCardWorkspace();
    const intent=module.cardIntent(spoken);
    if(intent){
-    busy=true;send.disabled=true;display(spoken,'you');input.value='';
+    busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();
     let answer;
     try{const result=await workspace.handle(intent);answer=result.message;}
     catch(error){answer='Card action failed: '+String(error.message||error).slice(0,170);}
@@ -2024,7 +2025,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    status.textContent=detail;
    // Do not let the model claim a registered card-opening tool is nonexistent.
    if(/\b(?:card|catalog|media star|infinity radio|fred spaces|magoo spaces|following spaces)\b/i.test(spoken)){
-    busy=true;send.disabled=true;display(spoken,'you');input.value='';
+    busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();
     display(detail,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:detail});persistChat();
     if(nativeOverlay&&fromVoice)nativeSpeechReply=detail;else if(config.voice&&!nativeOverlay)speakText(detail);
     nativeSpeechPending=false;busy=false;send.disabled=false;return;
@@ -2048,7 +2049,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const target=decision?.cardId?module.cards.find(c=>c.id===decision.cardId):null;
    if((target&&['open_card','play_card'].includes(decision.kind))
       ||decision?.kind==='phone_read'){
-    busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+    busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
     let answer;
     try{
      if(decision.kind==='phone_read'){
@@ -2100,7 +2101,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    display(visible,'you');display(answer,'ai');
    messages.push({role:'user',text:visible},{role:'assistant',text:answer});
    messages=messages.slice(-400);persistChat();
-   pendingImage=null;photoInput.value='';photoPreview.hidden=true;input.value='';
+   pendingImage=null;photoInput.value='';photoPreview.hidden=true;clearSentComposer();
    status.textContent='Image analyzed. No image bytes were saved in chat history.';
   }catch(error){status.textContent='Image analysis failed: '+String(error.message||error).slice(0,145)+'. The image stays attached for retry.';}
   finally{busy=false;send.disabled=false;nativeSpeechPending=false;}
@@ -2123,7 +2124,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(nativeOverlay){
    if(!nativeSimAvailable){status.textContent='SIM inspection needs Bubbles Android 0.24 or later. This installed app has not advertised that tool.';nativeSpeechPending=false;return;}
    if(nativeScreenRequests.length>=24){status.textContent='Android request queue is full. Try again after the current requests finish.';return;}
-   nativeScreenRequests.push(spoken);input.value='';
+   nativeScreenRequests.push(spoken);clearSentComposer();
    status.textContent='Checking this phone’s SIM and actual connection through Android. Waiting for device results…';
   }else{
    const reply='SIM inspection runs in the Bubbles Android app. Say “check my SIM” there. A website cannot read your SIM. The check reports SIM presence, network name and actual internet connection; it cannot activate free carrier data.';
@@ -2140,12 +2141,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   screenShareButton.setAttribute('aria-pressed',String(pageScreenSharing));
   screenShareButton.textContent=pageScreenSharing?'Stop page view':'Share current screen';
   const answer=pageScreenSharing?'Page view ON. I will read the current visible page with each message, including after you scroll. This browser view reads page text; the Android APK handles other apps.':'Page view OFF.';
-  display(spoken,'you');display(answer,'ai');input.value='';status.textContent=answer;return;
+  display(spoken,'you');display(answer,'ai');clearSentComposer();status.textContent=answer;return;
  }
  if(!nativeOverlay&&(pageScreenSharing||screenQuestion))screenEvidence=readCurrentPage();
  if(nativeOverlay&&!fromVoice&&!screenEvidence&&(screenQuestion||sharing||nativeScreenSharing)&&(!articleResearch||articleResearchCurrent)){
   if(nativeScreenRequests.length>=24){status.textContent='Android screen request queue is full. Check Bubbles.';return;}
-  nativeScreenRequests.push(spoken);input.value='';
+  nativeScreenRequests.push(spoken);clearSentComposer();
   status.textContent='Screen request passed to Android; waiting for its observation or action result.';
   return;
  }
@@ -2161,7 +2162,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const saved=await longMemory.remember(textToSave,radio?{repository:'www-infinity4/Radio-Clubhouse'}:{});
    answer='Saved to private Bubbles memory under '+saved.topic.replaceAll('_',' ')+'. The note will be available for contextual recall on your connected devices.';
   }catch(error){answer='That long-term memory was not saved: '+String(error.message||error).slice(0,145)+' Enable private memory sync in Bubbles settings.';}
-  display(spoken,'you');display(answer,'ai');input.value='';
+  display(spoken,'you');display(answer,'ai');clearSentComposer();
   messages.push({role:'user',text:spoken},{role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
   status.textContent=answer;
   if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;else if(fromVoice&&config.voice&&!nativeOverlay)speakText(answer);
@@ -2315,7 +2316,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const module=await import('/bubbles-cloud-browser.mjs?v=20261021-android-foreground-poll1');
    intent=module.browserSpeechIntent(spoken);
    if(intent){
-    busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+    busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
     status.textContent='Bubbles is using the authenticated cloud browser…';
     let reply;
     try{reply=await module.browserConversation(spoken,{host:browserHome,ownerHeaders:verifiedOwnerHeaders});}
@@ -2354,7 +2355,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    const module=await import('/bubbles-cloud-clock.mjs?v=20261020-clock1');
    const clockIntent=module.parseClockIntent(request);
    if(clockIntent){
-    busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+    busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
     let reply;
     try{reply=await module.clockConversation(clockIntent,{
      ownerHeaders:verifiedOwnerHeaders,fetcher:bubblesFetch,base:BRAIN
@@ -2374,7 +2375,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const sourceReadRequested=!publicPageReadRequested&&/\b(?:read|show|open|summari[sz]e|explain|inspect|review|fetch)\b.{0,150}\b(?:readme(?:\.md)?|(?:docs\/)?[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json))\b/i.test(request)
    && (/\b[a-z0-9_.-]+\/[a-z0-9_.-]+\b/i.test(request)||/\bquantaphi\b/i.test(request));
  if(!embedded&&(sourceReadRequested||publicPageReadRequested)){
-  busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+  busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
   const expectedReadTool=publicPageReadRequested?'web.read_page':'github.read_file';
   status.textContent=publicPageReadRequested?'Reading public webpage HTML…':'Reading the requested public GitHub file…';
   let answer='',readVerified=false;
@@ -2411,7 +2412,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const githubModule=await import('/bubbles-github-research.mjs?v=20261019-global1');
   const intent=githubModule.githubResearchIntent(request);
   if(intent){
-   busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+   busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
    status.textContent='Searching '+(intent.scope==='owner'?'your GitHub repositories':'public GitHub')+'…';
    let answer;
    try{
@@ -2436,7 +2437,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    return;
   }
  }
- busy=true;send.disabled=true;display(spoken,'you');input.value='';setOrbState('thinking');
+ busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
  // This acknowledgement describes the active processing phase, not a fabricated search,
  // completed tool call or owner action. It is drained before the verified answer.
  // Native Android already acknowledges an accepted request. No second
@@ -2918,8 +2919,9 @@ document.addEventListener?.('visibilitychange',()=>{
 function heardTranscript(transcript){
  if(nativeOverlay||!voiceEnabled||speaking||Date.now()<voiceEchoUntil||!voiceGate)return;
  heardUntil=Date.now()+750;setOrbState('hearing');launcher.style.setProperty('--ba-energy','1');
- status.textContent='Heard: '+transcript;launcher.dataset.words=String(transcript.split(/\s+/).length);
  const turn=voiceGate.accept(transcript,Date.now());
+ if(turn.type==='ignore'){status.textContent='Background audio ignored · say “'+config.alias+'” to speak to Bubbles.';return;}
+ status.textContent='Heard: '+transcript;launcher.dataset.words=String(transcript.split(/\s+/).length);
  if(turn.type==='mute'){stopVoice('Bubbles muted by your voice command.');return}
  if(turn.type==='wake'){status.textContent='I’m listening. Go ahead.';return}
  if(turn.type==='message'){if(busy)enqueueVoiceTurn(turn.text);else void sendMessage(turn.text,true)}
@@ -2953,7 +2955,7 @@ async function startVoice(){
   });
   if(generation!==voiceGeneration){capture.stop();stream.getTracks().forEach(t=>t.stop());return}
   streamVoice=capture;mic.textContent='🔇 Mute Bubbles';mic.setAttribute('aria-pressed','true');
-  setOrbState('listening');status.textContent='Microphone on continuously · speak naturally, no wake name needed.';
+  setOrbState('listening');status.textContent='Microphone on · start with “'+config.alias+'”. Background audio is not a command.';
   if(config.voice)speakText('I am listening. Just speak naturally.');
  }catch(error){stopVoice('Microphone could not start: '+String(error?.message||error?.name||error).slice(0,130))}
  finally{voiceStarting=false}
