@@ -65,7 +65,7 @@ export function mountCardActions(host,card){
   try{sessionStorage.setItem(STORE_DRAFT,request);location.assign('/#robotDirectionsInput')}catch{notify(status,'Build draft could not be opened.')}
  });
  const search=element('form','qca-search'),q=element('input','qca-search-input');
- q.type='search';q.placeholder='Quick search '+name+'…';q.required=true;q.maxLength=180;q.setAttribute('aria-label','Quick search '+name);
+ q.type='search';q.placeholder='Quick search '+name+'…';q.required=true;q.maxLength=180;q.setAttribute('aria-label','Find within '+name+' card');
  const submit=element('button','qca-button qca-search-submit','⌕ Quick Search');submit.type='submit';
  search.append(q,submit);search.addEventListener('submit',event=>{
   event.preventDefault();const value=q.value.trim();if(!value)return;
