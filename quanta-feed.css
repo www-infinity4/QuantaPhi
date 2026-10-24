@@ -1,3 +1,4 @@
+@import url('/quanta-card-experience.css');
 .qf-surface{--qf-red:#a72d2c;background:#fff;border:1px solid #e5d7ca;border-radius:20px;padding:clamp(14px,3vw,25px);color:#2c2422;box-shadow:0 10px 26px #51331c0b}
 .qf-surface *{box-sizing:border-box}.qf-eyebrow,.qf-topic{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:#9b3631;font-weight:850}
 .qf-heading h2{font-size:clamp(1.4rem,4.3vw,2rem);line-height:1.2;margin:.2em 0}.qf-muted{color:#655957;line-height:1.5;font-size:14px}

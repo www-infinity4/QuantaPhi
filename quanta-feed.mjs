@@ -1,4 +1,5 @@
 import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
 import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountSpaceSource} from './quanta-feed-spaces.mjs';
@@ -26,7 +27,6 @@ const fromBubbles=BUBBLES_CARDS.filter(c=>typeof c.url==='string'&&/^\/(?!\/)/.t
 export const ALL_FEED_CARDS=Object.freeze([...new Map([...fromSources,...fromScience,...fromDiscovery,...fromBubbles]
  .map(c=>[c.id,Object.freeze(c)])).values()]);
 export const feedCard=id=>ALL_FEED_CARDS.find(c=>c.id===id)||null;
-const iconFor=c=>/radio/i.test(c.category)?'📻':/coin|silver|gold|metal/i.test(c.category)?'🪙':/finance|invest/i.test(c.category)?'📈':/knowledge|science|space/i.test(c.category)?'🔬':/live/i.test(c.category)?'🎙️':/collectible|market/i.test(c.category)?'🧸':/AI/i.test(c.category)?'🤖':'✦';
 const create=(tag,cl,text)=>{const node=document.createElement(tag);if(cl)node.className=cl;if(text!==undefined)node.textContent=text;return node;};
 const safeRead=()=>{try{return cleanFeedState(JSON.parse(localStorage.getItem(FEED_STORAGE_KEY)||'{}'));}catch{return cleanFeedState({});}};
 let state=safeRead(),tab='public',current='',query='',showCount=16;
@@ -59,7 +59,7 @@ function followButton(card,refresh){
 }
 function makeTile(card,refresh){
  const tile=create('article','qf-tile');tile.dataset.cardId=card.id;
- const art=create('div','qf-art',iconFor(card));art.setAttribute('aria-hidden','true');
+ const art=createCardArtwork(card,true);
  const topic=create('p','qf-topic',card.category);
  const title=create('h3','',card.name);
  const desc=create('p','qf-description',card.feature);
@@ -107,7 +107,7 @@ function renderHome(){
    current=pick?.id||ranked[0].id;
   }
   const selected=ranked.find(c=>c.id===current)||ranked[0];
-  const visual=create('div','qf-big-art',iconFor(selected));visual.setAttribute('aria-hidden','true');
+  const visual=createCardArtwork(selected);
   const info=create('div','qf-feature-copy');
   info.append(create('p','qf-topic',selected.category),create('h3','',selected.name),
     create('p','',selected.feature),create('p','qf-muted',selected.study));
@@ -115,6 +115,7 @@ function renderHome(){
   openBtn.addEventListener('click',()=>open(selected));
   const original=create('a','qf-link','Original source ↗');original.href=selected.url;original.target='_blank';original.rel='noopener noreferrer';
   buttons.append(openBtn,followButton(selected,refresh),original);info.append(buttons);
+  const tools=create('div','qf-inline-tool');mountCardTools(tools,selected);info.append(tools);
   feature.replaceChildren(visual,info);
   grid.replaceChildren();
   for(const c of ranked.slice(0,showCount))grid.append(makeTile(c,refresh));
@@ -141,7 +142,7 @@ function renderDetail(){
  if(!card){host.append(create('p','','Unknown card. Open the QuantaPhi public feed.'));return;}
  document.title=card.name+' · QuantaPhi';
  host.append(create('p','qf-eyebrow','INFINITY 2026® · ORIGINAL-SOURCE STUDY CARD'),
- create('div','qf-big-art',iconFor(card)),create('h1','',card.name),
+ createCardArtwork(card),create('h1','',card.name),
  create('h2','',card.feature),create('p','qf-muted',card.study));
  const actions=create('div','qf-actions');
  actions.append(followButton(card,renderDetailAgain));
@@ -161,6 +162,7 @@ function renderDetail(){
  host.append(guard);
  const study=create('section','qf-study');study.append(create('h3','','Investigate with Bubbles'),create('p','','Ask Bubbles to compare the original source with other references, explain the history, and check evidence. It does not have this provider’s private login or account data.'));
  host.append(study);
+ const tools=create('div','qf-inline-tool');mountCardTools(tools,card);host.append(tools);
  if(card.id==='x-live-spaces'){
   const list=create('section','qf-study');mountSpaceSource(list);host.append(list);
  }
