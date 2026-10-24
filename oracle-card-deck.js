@@ -122,7 +122,8 @@ function registerSourceCards(){
    // Lead with an original working source card, not the same static store card.
    const sources=entries.filter(e=>e.id.startsWith('source-')&&available(e))
     .sort((a,b)=>a.count-b.count||entries.indexOf(a)-entries.indexOf(b));
-   const candidate=sources[0]||google;
+   const products=sources.filter(e=>e.node.closest('#brandProductCards'));
+   const candidate=products[0]||sources[0]||google;
    if(candidate&&candidate!==active)show(candidate,false);
   }
   else if(!active&&!expanded)start();
