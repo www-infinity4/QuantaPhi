@@ -3,107 +3,106 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-24T14:55:46.353885Z",
+  "checked_at": "2026-10-24T17:41:54.781919Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "pl",
+      "query": "byrum brown",
       "approx_searches": "500+",
-      "published_at": "2026-10-24T14:40:00Z",
+      "published_at": "2026-10-24T17:20:00Z",
       "related_news_urls": [
-        "https://tvn24.pl/plus/programy/horyzont/czy-o-losie-ukrainy-zdecyduja-wielkie-mocarstwa-vc9303414",
-        "https://www.vietnam.vn/pl/mot-nuoc-chau-au-theo-eu-trung-phat-moscow-nham-vao-nhung-tru-cot-then-chot-cua-kinh-te-nga",
-        "https://www.tvp.info/96049417/z-paszportem-czy-donald-trump-gra-na-rosje"
+        "https://www.al.com/auburnfootball/2026/10/can-auburn-keep-byrum-brown-fresh-while-utilizing-him-as-a-runner.html",
+        "https://www.montgomeryadvertiser.com/story/sports/college/auburn/2026/10/17/byrum-brown-injury-auburn-football-georgia/92306963007/",
+        "https://www.on3.com/teams/auburn-tigers/news/byrum-brown-as-tough-as-they-come-running-the-ball/"
       ]
     },
     {
-      "query": "cincinnati football",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T14:40:00Z",
+      "query": "malachi toney",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-24T17:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/texas-tech-cincinnati-red-raiders-140033921.html",
-        "https://sportsbook.fanduel.com/football/ncaa-football-games/texas-tech-@-cincinnati-36202425",
-        "https://www.covers.com/ncaaf/texas-tech-vs-cincinnati-prediction-picks-odds-best-bets-today-oct-24-2026"
+        "https://www.yardbarker.com/college_football/articles/malachi_toney_passes_pro_football_hall_of_famer_on_miami_career_receiving_yards_list/s1_13132_44455523",
+        "https://www.dailygazette.com/ap/sports/wr-malachi-toney-in-only-23-games-goes-over-2-000-yard-career-mark-for/article_15bf29b5-7d44-5eba-8b6f-e333f237d16f.html",
+        "https://www.mankatofreepress.com/ap/sports/wr-malachi-toney-in-only-23-games-goes-over-2-000-yard-career-mark-for/article_31ef6fd5-ca48-51b8-a872-cc4cd72c5cad.html"
       ]
     },
     {
-      "query": "voter registration",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T14:40:00Z",
-      "related_news_urls": [
-        "https://www.newsnationnow.com/politics/2026-midterm-elections/states-where-you-can-register-vote-election-day/",
-        "https://m.economictimes.com/world/us/some-us-states-allow-voter-registration-on-election-day-or-during-early-voting-how-to-check-your-options/articleshow/135120002.cms",
-        "https://www.dailykos.com/stories/2026/10/16/800113172/community/there-is-still-time-to-register-to-vote-in-some-states/"
-      ]
-    },
-    {
-      "query": "flavio cobolli",
+      "query": "jeff gordon",
       "approx_searches": "1000+",
-      "published_at": "2026-10-24T14:30:00Z",
+      "published_at": "2026-10-24T17:10:00Z",
       "related_news_urls": [
-        "https://www.atptour.com/en/news/cobolli-turin-chase-2026-feature",
-        "https://www.si.com/onsi/serve/news/whos-still-in-race-for-atp-finals-without-jannik-sinner-01m5j9y0m4yg",
-        "https://sports.yahoo.com/articles/flavio-cobolli-honestly-rates-season-090000801.html"
+        "https://www.nascar.com/news-media/2026/10/18/nascar-tv-guide/",
+        "https://www.jayski.com/2026/10/21/phoenix-tv-ratings-32/",
+        "https://www.foxnews.com/outkick-sports/nascar-fans-changed-channel-good-alarming-trend-hit-boiling-point"
       ]
     },
     {
-      "query": "mario cristobal",
+      "query": "steve sarkisian",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-24T17:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50240573/arch-manning-steve-sarkisian-texas-pressure",
+        "https://www.foxnews.com/outkick-sports/steve-sarkisian-face-college-footballs-hardest-call-arch-manning-invokes-much-higher-stakes",
+        "https://www.kxan.com/sports-general/horns-report/sarkisian-sees-edgy-arch-manning-as-texas-looks-to-bounce-back-against-ole-miss/"
+      ]
+    },
+    {
+      "query": "north dakota vs south dakota",
       "approx_searches": "500+",
-      "published_at": "2026-10-24T14:20:00Z",
+      "published_at": "2026-10-24T17:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/miami-vs-pitt-live-updates-130123149.html",
-        "https://www.oregonlive.com/tv/2026/10/you-can-watch-miami-hurricanes-vs-pitt-panthers-streaming-live-for-free-today-heres-how.html",
-        "https://triblive.com/sports/pitt-faces-daunting-challenge-of-containing-malachi-toney-miamis-many-offensive-weapons/"
+        "https://www.grandforksherald.com/sports/college/live-blog-und-at-south-dakota-1-p-m",
+        "https://www.argusleader.com/story/sports/college/university-of-south-dakota/2026/10/24/south-dakota-vs-north-dakota-football-2026-score-live-updates-recap--live/92405872007/",
+        "https://www.yahoo.com/news/articles/no-8-usd-welcomes-no-030244946.html"
       ]
     },
     {
-      "query": "yasmeen ali safeguarding review bristol",
+      "query": "scratchcard",
       "approx_searches": "500+",
-      "published_at": "2026-10-24T14:20:00Z",
+      "published_at": "2026-10-24T17:10:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/news/articles/cmy83q4g1jqlo",
-        "https://www.bbc.co.uk/news/articles/cm4g17qn738xo",
-        "https://www.thesun.co.uk/news/40785140/mum-guilty-killing-children-home/"
+        "https://igamingbusiness.com/legal-compliance/scratch-cards-fraud-uncovered-rome-25-million-in-assets-seized/",
+        "https://www.casino.org/news/lottery-employees-knew-where-winning-tickets-would-be-sold-in-alleged-27m-scam/",
+        "https://sccgmanagement.com/sccg-articles/2026/10/24/italian-authorities-freeze-28-million-in-assets-in-alleged-27-million-gratta-e-vinci-lottery-insider-scheme/"
       ]
     },
     {
-      "query": "urban meyer",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T14:20:00Z",
+      "query": "john james",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-24T17:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7711953/2026/10/22/college-football-playoff-rankings-sec-24-teams/",
-        "https://www.dallasnews.com/sports/college-sports/article/24-team-college-football-playoff-cfp-expansion-22487348.php",
-        "https://www.detroitnews.com/story/sports/college/2026/10/21/central-michigan-coach-blasts-proposed-24-team-cfp-expansion/92365773007/"
+        "https://www.detroitnews.com/story/news/politics/2026/10/23/michigan-republican-party-limitless-donors-contribution-limit-john-james-doug-dan-devos/92406409007/",
+        "https://bridgemi.com/michigan-government/late-1-8m-surge-for-john-james-tests-michigan-campaign-finance-law/",
+        "https://pro.stateaffairs.com/mi/elections/gop-funds-james-campaign"
       ]
     },
     {
-      "query": "saka injury",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T14:20:00Z",
+      "query": "trey'dez green",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-24T17:00:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/cmwyql6v5q82o",
-        "https://www.nytimes.com/athletic/7717467/2026/10/24/bukayo-saka-injury-arsenal-update-fears/",
-        "https://www.theguardian.com/football/2026/oct/23/arsenal-arteta-concerned-saka-durability-six-week-absence"
+        "https://www.espn.com/college-football/story/_/id/50243513/lsu-tigers-treydez-green-leg-injury-return-auburn",
+        "https://www.nola.com/sports/lsu/lsu-football-sec-availability-report-treydez-green-princewill-umanmielen/article_b661449c-9c39-4bb0-aa30-cdb22c22b217.html",
+        "https://www.theadvertiser.com/story/sports/college/lsu/2026/10/24/who-will-miss-lsu-football-game-v-auburn-see-the-injury-report-here/92280412007/"
       ]
     },
     {
-      "query": "ezri konsa",
+      "query": "east tn st vs vmi",
       "approx_searches": "500+",
-      "published_at": "2026-10-24T14:10:00Z",
+      "published_at": "2026-10-24T17:00:00Z",
       "related_news_urls": [
-        "https://coventryobserver.co.uk/sport/football-matt-grimes-insists-coventry-city-must-continue-learning-and-adapting-to-life-in-the-premier-league/",
-        "https://www.idahostatejournal.com/sports/national/britain-premier-league-soccer/image_7971e161-ff6c-5896-a2cb-35ab8d2e2e9a.html",
-        "https://uk.sports.yahoo.com/news/frank-lampard-found-coventrys-unlikely-150000026.html"
+        "https://www.wjhl.com/sports/college-sports-2/etsu-bucs/etsu-vows-to-stay-hungry-against-the-winless-vmi-keydets-on-saturday/",
+        "https://johnsoncitypress.com/news/419956/looking-back-and-looking-ahead-at-etsus-season/",
+        "https://wcyb.com/sports/local-college/etsu-football-returns-from-bye-week-to-prepare-for-vmi"
       ]
     },
     {
-      "query": "celebrity",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T14:10:00Z",
+      "query": "gen z stare",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-24T16:50:00Z",
       "related_news_urls": [
-        "https://www.cleveland.com/entertainment/2026/10/todays-famous-birthdays-list-for-october-24-2026-includes-celebrities-f-murray-abraham-drake.html",
-        "https://www.boredpanda.com/celebrity-birthdays-today-october-24/",
-        "https://www.buzzfeed.com/kristenharris1/celebrity-relationship-ultimatums"
+        "https://www.cnn.com/2026/10/24/health/gen-z-stare-wellness",
+        "https://news.sbs.co.kr/english/article.do?news_id=N1008811335"
       ]
     }
   ]
