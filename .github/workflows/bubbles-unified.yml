@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-project-discovery.mjs'
+      - 'test/bubbles-project-discovery.test.mjs'
       - 'bubbles-action-driver.mjs'
       - 'test/bubbles-action-driver.test.mjs'
       - 'test/bubbles-orb-semantic.test.mjs'
@@ -38,6 +40,8 @@ on:
     branches: [main]
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-project-discovery.mjs'
+      - 'test/bubbles-project-discovery.test.mjs'
       - 'bubbles-action-driver.mjs'
       - 'test/bubbles-action-driver.test.mjs'
       - 'test/bubbles-orb-semantic.test.mjs'
@@ -89,4 +93,4 @@ jobs:
           node --check workers/bubbles-tools/semantic-intent.mjs
           node --test test/bubbles-orb-semantic.test.mjs
           node --test test/bubbles-action-driver.test.mjs
-          node --test test/bubbles-card-workspace.test.mjs test/bubbles-repository-targets.test.mjs test/bubbles-smart-repository-routing.test.mjs test/bubbles-github-operator-regression.test.mjs test/bubbles-recordb-owner-command.test.cjs test/bubbles-direct-github.test.mjs test/bubbles-technical-handoff.test.mjs test/bubbles-owner-tools-webview.test.cjs test/bubbles-runner-dispatch.test.mjs
+          node --test test/bubbles-project-discovery.test.mjs test/bubbles-card-workspace.test.mjs test/bubbles-repository-targets.test.mjs test/bubbles-smart-repository-routing.test.mjs test/bubbles-github-operator-regression.test.mjs test/bubbles-recordb-owner-command.test.cjs test/bubbles-direct-github.test.mjs test/bubbles-technical-handoff.test.mjs test/bubbles-owner-tools-webview.test.cjs test/bubbles-runner-dispatch.test.mjs

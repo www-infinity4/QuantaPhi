@@ -114,7 +114,8 @@ test('same Android Bubbles conversation bypasses model-only chat for live lookup
  assert.match(source,/const weatherContinuation=/);
  assert.match(source,/bubbles-weather-town/);
  assert.match(source,/do i need an umbrella/);
- assert.match(source,/sourceTool\?/);
+ assert.match(source,/status\.textContent=json\.answerStatus==='partial'/);
+ assert.doesNotMatch(source,/Bubbles model \+ verified tool:/);
  assert.match(source,/ba-search-sources/);
  assert.match(source,/body:JSON.stringify\(lookupPayload\(\)\)/);
 });
