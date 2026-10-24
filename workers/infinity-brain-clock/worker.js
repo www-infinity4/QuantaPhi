@@ -14,6 +14,7 @@ import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {planCloudflareToken,confirmCloudflareToken} from './cloudflare-token-broker.mjs';
+import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
@@ -735,6 +736,14 @@ export class BrainClock extends DurableObject{
     'Owner-approved '+result.capability+' token provisioned and stored encrypted on Brain. No secret value sent to chat.');
    return Response.json(result,{status:result.httpStatus||200});
   }
+  if(new URL(request.url).pathname==='/owner/cloudflare-oauth-client-plan')
+   return Response.json(await planOAuthClient(this.ctx.storage,this.env));
+  if(new URL(request.url).pathname==='/owner/cloudflare-oauth-client-confirm'){
+   const result=await confirmOAuthClient(this.ctx.storage,await request.json(),this.env);
+   if(result.ok)await this.emit('purple-pearl','bubbles','oauth client installed',
+    'Cloudflare OAuth client ID and secret are installed server-side; publication remains private until publisher verification.');
+   return Response.json(result,{status:result.httpStatus||200});
+  }
   if(new URL(request.url).pathname==='/owner/red-sync')return Response.json(await redExchange(this.ctx.storage,await request.json()));
   if(new URL(request.url).pathname==='/owner/session-create'){
    const body=await request.json(),recipient=await this.ctx.storage.get('bot-work-recipient');
@@ -1334,6 +1343,23 @@ export default{
     const result=await response.json();
     return output(request,result,response.status);
    }catch{return output(request,{ok:false,error:'cloudflare_token_broker_unavailable'},503);}
+  }
+  if(['/work/cloudflare/oauth-client-plan','/work/cloudflare/oauth-client-confirm'].includes(path)&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   if(Number(request.headers.get('Content-Length')||0)>1500)return output(request,{ok:false,error:'request_too_large'},413);
+   try{
+    const raw=await request.text();if(raw.length>1500)return output(request,{ok:false,error:'request_too_large'},413);
+    const body=JSON.parse(raw||'{}');
+    if(Object.keys(body).some(k=>k!=='requestId'))return output(request,{ok:false,error:'invalid_oauth_client_request'},400);
+    const subpath=path.endsWith('-plan')?'/owner/cloudflare-oauth-client-plan':'/owner/cloudflare-oauth-client-confirm';
+    const response=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal'+subpath,{
+     method:'POST',body:JSON.stringify(body)});
+    const result=await response.json();
+    return output(request,result,response.status);
+   }catch{return output(request,{ok:false,error:'oauth_client_broker_unavailable'},503)}
   }
   // Read-only scientific tool. Owner sessions or authenticated repository runners
   // may call this directly; no job is queued and no coins are minted.
