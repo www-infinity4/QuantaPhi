@@ -65,7 +65,7 @@ function show(item,draft=false){
  feature.append(meta);
  const row=node('div',undefined,'sap-actions');feature.append(row);
  if(draft&&item.mediaIds?.length){const blocked=button(row,'Publish after verification',()=>{status.textContent='Photo listings need a verified robot review, durable cloud media and server moderation before publishing. The current draft stays private.'});blocked.disabled=true;}
- if(draft&&connected&&!item.mediaIds?.length&&item.publishState!=='public')button(row,'Retry public posting',()=>publish(item));
+ if(draft&&connected&&!item.mediaIds?.length){if(item.publishState!=='public')button(row,'Retry public posting',()=>publish(item));}
 
 
  button(row,'☆ Star',()=>{try{const k='quantaphi:shop-ad-phi:stars:v1';const ref=item.url||item.itemId;save(k,[ref,...read(k).filter(x=>x!==ref)]);status.textContent='Item starred.'}catch{status.textContent='Could not save on this device.'}});
