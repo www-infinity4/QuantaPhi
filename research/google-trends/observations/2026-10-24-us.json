@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-24T11:41:15.371721Z",
+  "checked_at": "2026-10-24T14:55:46.353885Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "anna wintour",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T11:20:00Z",
-      "related_news_urls": [
-        "https://parade.com/celebrities/jenny-mccarthy-anna-wintour-stupid-bob",
-        "https://www.fashiontimes.co.uk/harry-styles-anna-wintour-go-bed-concert-1766198",
-        "https://www.mirror.co.uk/lifestyle/woman-looks-bored-harry-styles-37802945"
-      ]
-    },
-    {
-      "query": "mega millions october 23 drawing",
-      "approx_searches": "100+",
-      "published_at": "2026-10-24T11:20:00Z",
-      "related_news_urls": [
-        "https://www.cbs8.com/article/news/nation-world/mega-millions-jackpot-winning-numbers-friday-oct-23-2026/507-24d953b3-4d8e-4413-94a2-62dfc8de7ad2",
-        "https://www.usatoday.com/story/money/lottery/2026/10/23/mega-millions-winning-numbers-oct-23-2026-drawing/92401206007/",
-        "https://www.cincinnati.com/story/news/lottery/2026/10/21/did-anyone-win-mega-millions-last-night-oct-20-drawing-numbers-results/92345610007/"
-      ]
-    },
-    {
-      "query": "gina hinojosa",
+      "query": "pl",
       "approx_searches": "500+",
-      "published_at": "2026-10-24T11:20:00Z",
+      "published_at": "2026-10-24T14:40:00Z",
       "related_news_urls": [
-        "https://www.multistate.us/elections/governor-race/texas-2026",
-        "https://www.click2houston.com/news/local/2026/10/22/gina-hinojosa-to-hold-get-out-the-vote-events-in-houston-fort-bend-county/",
-        "https://www.ktsm.com/news/gina-hinojosa-to-visit-el-paso-during-one-fight-tour/"
+        "https://tvn24.pl/plus/programy/horyzont/czy-o-losie-ukrainy-zdecyduja-wielkie-mocarstwa-vc9303414",
+        "https://www.vietnam.vn/pl/mot-nuoc-chau-au-theo-eu-trung-phat-moscow-nham-vao-nhung-tru-cot-then-chot-cua-kinh-te-nga",
+        "https://www.tvp.info/96049417/z-paszportem-czy-donald-trump-gra-na-rosje"
       ]
     },
     {
-      "query": "connections hints today",
-      "approx_searches": "500+",
-      "published_at": "2026-10-24T11:20:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-october-24-2026",
-        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-and-answers-for-saturday-oct-24-1231/",
-        "https://lifehacker.com/entertainment/nyt-connections-answer-today-october-24-2026"
-      ]
-    },
-    {
-      "query": "nyc marathon 2026",
-      "approx_searches": "100+",
-      "published_at": "2026-10-24T11:20:00Z",
-      "related_news_urls": [
-        "https://www.nyc.gov/mayors-office/news/2026/10/mayor-mamdani-announces-350-free-tickets-to-tcs-new-york-city-ma",
-        "https://www.aol.com/articles/delta-offering-nyc-marathon-runners-173051000.html",
-        "https://secretnyc.co/2026-tcs-nyc-marathon-freebies-discounts/"
-      ]
-    },
-    {
-      "query": "dena vs softbank",
-      "approx_searches": "100+",
-      "published_at": "2026-10-24T11:20:00Z",
-      "related_news_urls": [
-        "https://news.yahoo.co.jp/articles/428f4a3eeee20ab4f8d649e75deda585d350de0f",
-        "https://www.nikkansports.com/baseball/photonews/photonews_nsInc_202610240000997-1.html",
-        "https://www.sanspo.com/article/20261024-R3V45WR4DJJEHEEDY5R2G3CVFE/"
-      ]
-    },
-    {
-      "query": "rayo vallecano - elche c. f.",
-      "approx_searches": "500+",
-      "published_at": "2026-10-24T11:10:00Z",
-      "related_news_urls": [
-        "https://www.marca.com/futbol/rayo/2026/10/23/penas-celebran-acuerdo-avisan-batalla-supone-avance-salvacion-rayo.html",
-        "https://es-us.noticias.yahoo.com/deportes/rayo-vallecano-vs-elche-alineaciones-090000463.html",
-        "https://as.com/futbol/primera/el-dia-que-vallecas-cautivo-a-anselmi-f202610-n/"
-      ]
-    },
-    {
-      "query": "rayo vs elche",
+      "query": "cincinnati football",
       "approx_searches": "200+",
-      "published_at": "2026-10-24T11:10:00Z",
+      "published_at": "2026-10-24T14:40:00Z",
       "related_news_urls": [
-        "https://www.sportsmole.co.uk/football/rayo-vallecano/preview/rayo-vallecano-vs-elche-prediction-team-news-lineups_607489.html",
-        "https://www.docsports.com/free-picks/soccer/2026/rayo-vallecano-vs-elche-prediction-10-25-2026-soccer-pick-tips-and-odds.html",
-        "https://onefootball.com/en/news/preview-rayo-vallecano-vs-elche-cf-team-news-lineups-predictions-la-liga-2410-43653452"
+        "https://sports.yahoo.com/articles/texas-tech-cincinnati-red-raiders-140033921.html",
+        "https://sportsbook.fanduel.com/football/ncaa-football-games/texas-tech-@-cincinnati-36202425",
+        "https://www.covers.com/ncaaf/texas-tech-vs-cincinnati-prediction-picks-odds-best-bets-today-oct-24-2026"
       ]
     },
     {
-      "query": "samsung galaxy z fold 8 vs iphone duo",
+      "query": "voter registration",
       "approx_searches": "200+",
-      "published_at": "2026-10-24T11:10:00Z",
+      "published_at": "2026-10-24T14:40:00Z",
       "related_news_urls": [
-        "https://arstechnica.com/gadgets/2026/10/samsung-all-but-confirms-iphone-duo-is-goosing-galaxy-z8-sales/",
-        "https://mashable.com/tech/apple-iphone-duo-samsung-foldable-sales",
-        "https://news.samsung.com/uk/samsung-continues-to-see-record-sales-for-galaxy-z8-series-in-europe-with-galaxy-z-fold8-and-fold8-ultra-up-almost-50"
+        "https://www.newsnationnow.com/politics/2026-midterm-elections/states-where-you-can-register-vote-election-day/",
+        "https://m.economictimes.com/world/us/some-us-states-allow-voter-registration-on-election-day-or-during-early-voting-how-to-check-your-options/articleshow/135120002.cms",
+        "https://www.dailykos.com/stories/2026/10/16/800113172/community/there-is-still-time-to-register-to-vote-in-some-states/"
       ]
     },
     {
-      "query": "voley",
-      "approx_searches": "100+",
-      "published_at": "2026-10-24T11:10:00Z",
+      "query": "flavio cobolli",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-24T14:30:00Z",
       "related_news_urls": [
-        "https://peru21.pe/deportes/alianza-lima-vs-regatas-lima-en-vivo-liga-peruana-de-voley-latina-tv-online/",
-        "https://radioondaazul.com/este-24-y-25-de-octubre-se-continuara-con-la-segunda-fecha-de-la-liga-peruana-de-voley-2026-2027-fase-1/",
-        "https://www.infobae.com/peru/deportes/2026/10/23/clarivett-yllescas-jugara-en-alianza-lima-vs-regatas-lima-la-condicion-de-la-central-previo-al-clasico-de-la-liga-peruana-de-voley-20262027/"
+        "https://www.atptour.com/en/news/cobolli-turin-chase-2026-feature",
+        "https://www.si.com/onsi/serve/news/whos-still-in-race-for-atp-finals-without-jannik-sinner-01m5j9y0m4yg",
+        "https://sports.yahoo.com/articles/flavio-cobolli-honestly-rates-season-090000801.html"
+      ]
+    },
+    {
+      "query": "mario cristobal",
+      "approx_searches": "500+",
+      "published_at": "2026-10-24T14:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/miami-vs-pitt-live-updates-130123149.html",
+        "https://www.oregonlive.com/tv/2026/10/you-can-watch-miami-hurricanes-vs-pitt-panthers-streaming-live-for-free-today-heres-how.html",
+        "https://triblive.com/sports/pitt-faces-daunting-challenge-of-containing-malachi-toney-miamis-many-offensive-weapons/"
+      ]
+    },
+    {
+      "query": "yasmeen ali safeguarding review bristol",
+      "approx_searches": "500+",
+      "published_at": "2026-10-24T14:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cmy83q4g1jqlo",
+        "https://www.bbc.co.uk/news/articles/cm4g17qn738xo",
+        "https://www.thesun.co.uk/news/40785140/mum-guilty-killing-children-home/"
+      ]
+    },
+    {
+      "query": "urban meyer",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T14:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7711953/2026/10/22/college-football-playoff-rankings-sec-24-teams/",
+        "https://www.dallasnews.com/sports/college-sports/article/24-team-college-football-playoff-cfp-expansion-22487348.php",
+        "https://www.detroitnews.com/story/sports/college/2026/10/21/central-michigan-coach-blasts-proposed-24-team-cfp-expansion/92365773007/"
+      ]
+    },
+    {
+      "query": "saka injury",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T14:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/articles/cmwyql6v5q82o",
+        "https://www.nytimes.com/athletic/7717467/2026/10/24/bukayo-saka-injury-arsenal-update-fears/",
+        "https://www.theguardian.com/football/2026/oct/23/arsenal-arteta-concerned-saka-durability-six-week-absence"
+      ]
+    },
+    {
+      "query": "ezri konsa",
+      "approx_searches": "500+",
+      "published_at": "2026-10-24T14:10:00Z",
+      "related_news_urls": [
+        "https://coventryobserver.co.uk/sport/football-matt-grimes-insists-coventry-city-must-continue-learning-and-adapting-to-life-in-the-premier-league/",
+        "https://www.idahostatejournal.com/sports/national/britain-premier-league-soccer/image_7971e161-ff6c-5896-a2cb-35ab8d2e2e9a.html",
+        "https://uk.sports.yahoo.com/news/frank-lampard-found-coventrys-unlikely-150000026.html"
+      ]
+    },
+    {
+      "query": "celebrity",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T14:10:00Z",
+      "related_news_urls": [
+        "https://www.cleveland.com/entertainment/2026/10/todays-famous-birthdays-list-for-october-24-2026-includes-celebrities-f-murray-abraham-drake.html",
+        "https://www.boredpanda.com/celebrity-birthdays-today-october-24/",
+        "https://www.buzzfeed.com/kristenharris1/celebrity-relationship-ultimatums"
       ]
     }
   ]
