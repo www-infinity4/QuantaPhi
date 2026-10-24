@@ -13,6 +13,8 @@
 .qcx-art[data-theme="research"]{--qcx-a:#5d3952;background:linear-gradient(125deg,#6a4858,#292438)}
 .qcx-art-kicker{font:750 10px/1.35 system-ui,sans-serif;letter-spacing:.14em;opacity:.92;text-wrap:balance}
 .qcx-art-mark{font:400 clamp(3.8rem,10vw,5.4rem)/.85 Georgia,'Times New Roman',serif;letter-spacing:-.075em;text-shadow:0 4px 24px #0002}
+.qcx-site-icon{position:absolute;right:15px;top:44px;width:64px;height:64px;object-fit:contain;background:#fff;border-radius:15px;border:1px solid #ffffffbc;padding:9px;box-shadow:0 4px 16px #0005;z-index:1}
+.qcx-art.qcx-small .qcx-site-icon{right:10px;top:30px;width:42px;height:42px;padding:5px;border-radius:10px}
 .qcx-art-name{font:700 clamp(14px,2.5vw,17px)/1.3 system-ui,sans-serif;max-width:94%;text-wrap:balance}
 .qcx-art.qcx-small{min-height:112px;padding:11px 12px;border-radius:12px;gap:7px}.qcx-small .qcx-art-kicker{font-size:8px;letter-spacing:.1em}
 .qcx-small .qcx-art-mark{font-size:2.4rem}.qcx-small .qcx-art-name{font-size:12px}
@@ -45,3 +47,17 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcx-trend>div{display:grid;gap:5px;min-width:0}.qcx-trend strong{font-size:14px;color:#2a2321;overflow-wrap:anywhere}
 .qcx-trend small{font-size:11px;color:#75665e}.qcx-trend .qcx-button{font-size:12px;min-height:40px}
 @media(max-width:420px){.qcx-trend{flex-wrap:wrap}.qcx-trend .qcx-button{width:100%}}
+
+/* The compact source tiles must keep their actual search/player controls visible. */
+.iqc-home-shelf .iqc-inline-tools{width:100%;min-width:0;margin-top:4px}
+.iqc-home-shelf .iqc-inline-tools .qcx-experience{margin:0}
+.iqc-home-shelf .iqc-inline-tools .qcx-tool{padding:12px;gap:8px}
+.iqc-home-shelf .iqc-inline-tools .qcx-tool h3{font-size:16px!important}
+.iqc-home-shelf .iqc-inline-tools .qcx-button{min-height:46px}
+.iqc-home-shelf .iqc-inline-tools .qcx-input{font-size:16px;min-width:0;width:100%}
+.iqc-home-shelf .iqc-inline-tools .qcx-player iframe{max-width:100%}
+.iqc-home-shelf .iqc-card{min-width:0}
+.qf-tile .qf-inline-tool{min-width:0;margin:0}
+.qf-tile .qf-inline-tool .qcx-tool{padding:11px;gap:7px}
+.qf-tile .qf-inline-tool .qcx-tool h3{font-size:15px!important}
+.qf-tile .qf-inline-tool .qcx-button{min-height:44px}
