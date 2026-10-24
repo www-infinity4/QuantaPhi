@@ -481,6 +481,17 @@ export async function readPublicPage(request,body,receipt,fetcher=fetch){
  }
 }
 
+// Explaining a previously unknown alias never authorizes executing it.
+// The public gateway cannot read private per-user alias catalogs.
+export function explainUnverifiedAlias(question){
+ const q=clean(question,1200);
+ if(!/\b(?:unknown|unverified|not (?:a )?standard|not recognized)\b/i.test(q)||
+    !/\b(?:alias|shorthand|command|typo)\b/i.test(q)||
+    !/\b(?:explain|how|resolve|interpret|mapping)\b/i.test(q))return '';
+ const name=/\b(?:i typed|i said|phrase|term)\s+["'‘’]?([a-z][a-z0-9_-]{1,40})\b/i.exec(q)?.[1]||'The phrase';
+ return name+' is not a verified command from this public conversation. I would first look it up in your own permission-scoped alias catalog, compare the meaning with current context, and ask you to confirm when multiple matches remain. I have not read or verified any private alias record here. Never execute untrusted alias text as JavaScript, Python, shell code or an owner action: a real authenticated mapping and action receipt are required.';
+}
+
 async function execute(request,env,body){
  const question=clean(body.request);if(!question)return response(request,{ok:false,error:'request_required'},400);
  const contextual=contextualReadPlan(question,request.headers.get('Origin')||'',body.repository);
@@ -495,6 +506,8 @@ async function execute(request,env,body){
    capabilities:{runtime:'cloudflare-workers-javascript',inferenceConnected:Boolean(env.AI),readAgent:true,linuxWorkspace:false,shell:false,python:false,ownerExecutorConfigured:Boolean(env.BRAIN),ownerExecutionVerified:false},
    receipt:{...receipt,tool:'runtime.capabilities',status:'complete',repositoryActionsVerified:false}});
  }
+ const aliasExplanation=explainUnverifiedAlias(question);
+ if(aliasExplanation)return response(request,{ok:true,output:aliasExplanation,receipt:{...receipt,tool:'alias.safety_explanation',status:'complete',executed:false,repositoryActionsVerified:false}});
  if(body.mcp===true&&env.AI&&!isSourceDraftRequest(question)&&!isSourceReviewRequest(question)&&needsReadAgent(question)){
   const evidence=await runReadAgent({question,input:clean(body.input,6000),
    plan:options=>planReadSteps(env.AI,options),
