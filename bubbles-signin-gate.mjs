@@ -14,6 +14,7 @@ export function summarizeGate(payload){
   summary.providers[id]={configured,connected,approved,
    label:approved&&typeof record.label==='string'?record.label:'',
    reconnect:record?.reconnectRequired===true,
+   scopeSetupRequired:record?.scopeSetupRequired===true,
    missing:Array.isArray(record?.missingActions)?record.missingActions.filter(a=>typeof a==='string'&&a.length<80).slice(0,6):[]};
  }
  summary.ready=summary.providers.github.approved&&summary.providers.cloudflare.approved&&payload?.ready===true;
@@ -39,11 +40,12 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   for(const id of ['github','cloudflare']){
    const value=summary.providers[id];
    cards[id].dataset.status=value.approved?'connected':value.configured?'pending':'unavailable';
-   actions[id].disabled=!value.configured||oauthInProgress||loading;
+   actions[id].disabled=!value.configured||oauthInProgress||loading||(id==='cloudflare'&&value.scopeSetupRequired);
    actions[id].textContent=value.approved?'Connected — review permissions':
-     value.configured?(id==='cloudflare'?'Approve full project access with Cloudflare':'Sign in with GitHub'):'Awaiting provider setup';
+     value.configured?(id==='cloudflare'?(value.scopeSetupRequired?'Cloudflare app scopes need setup':'Approve full project access with Cloudflare'):'Sign in with GitHub'):'Awaiting provider setup';
    labels[id].textContent=value.approved?
     'Verified'+(value.label?' · '+value.label:'')+' · authorization saved securely':
+    value.scopeSetupRequired?'Bubbles Cloudflare OAuth client lacks registered project scopes. A new sign-in will not fix this.':
     value.connected?'Account connected, but full requested permissions have not been verified':
     !value.configured?'The provider application is not configured yet. No access is claimed.':
     value.reconnect?'Authorization expired or disconnected; sign in again.':
@@ -63,7 +65,9 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   }else if(!githubApproved){
    setStatus('First, sign in to GitHub and approve the requested permissions. Cloudflare sign-in follows.');
   }else if(!summary.providers.cloudflare.configured){
-   setStatus('GitHub verified. Cloudflare sign-in is awaiting provider setup. Chat remains usable during this pilot.');
+   setStatus('GitHub verified. Bubbles Cloudflare OAuth client registration is incomplete. Chat remains usable; no repeated sign-in needed.');
+  }else if(summary.providers.cloudflare.scopeSetupRequired){
+   setStatus('Cloudflare OAuth app permissions need configuration by the Bubbles administrator. Repeated login cannot grant unavailable scopes.');
   }else setStatus('GitHub verified. Next, sign in to Cloudflare and approve its project permissions.');
   return summary;
  };
@@ -89,11 +93,11 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    Object.values(labels).forEach(label=>{label.textContent='Could not check this account. Saved permissions were not changed.';});
    for(const button of Object.values(actions)){button.disabled=true;button.textContent='Check sign-ins again to retry';}
    return null;
-  } finally {loading=false;if(latest)for(const id of ['github','cloudflare'])actions[id].disabled=!latest.providers[id].configured||oauthInProgress||(id==='cloudflare'&&!latest.providers.github.approved);}
+  } finally {loading=false;if(latest)for(const id of ['github','cloudflare'])actions[id].disabled=!latest.providers[id].configured||oauthInProgress||(id==='cloudflare'&&(!latest.providers.github.approved||latest.providers.cloudflare.scopeSetupRequired));}
  };
  for(const id of ['github','cloudflare']){
   actions[id].addEventListener('click',async()=>{
-   if(oauthInProgress||loading||!latest?.providers[id]?.configured||(id==='cloudflare'&&!latest.providers.github.approved))return;
+   if(oauthInProgress||loading||!latest?.providers[id]?.configured||(id==='cloudflare'&&(!latest.providers.github.approved||latest.providers.cloudflare.scopeSetupRequired)))return;
    oauthInProgress=true;
    for(const button of Object.values(actions))button.disabled=true;
    setStatus('Complete the '+(id==='github'?'GitHub':'Cloudflare')+' permission request in its official sign-in window.');
@@ -106,12 +110,12 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
       const summary=await refresh();
       if(summary?.ready&&chat)chat.scrollIntoView({behavior:'smooth',block:'start'});
      }
-     for(const provider of ['github','cloudflare'])actions[provider].disabled=!latest?.providers?.[provider]?.configured||(provider==='cloudflare'&&!latest?.providers?.github?.approved);
+     for(const provider of ['github','cloudflare'])actions[provider].disabled=!latest?.providers?.[provider]?.configured||(provider==='cloudflare'&&(!latest?.providers?.github?.approved||latest?.providers?.cloudflare?.scopeSetupRequired));
     });
    }catch(error){
     oauthInProgress=false;
     setStatus('Could not start sign-in: '+String(error.message||'authorization_error').slice(0,180));
-    for(const provider of ['github','cloudflare'])actions[provider].disabled=!latest?.providers?.[provider]?.configured;
+    for(const provider of ['github','cloudflare'])actions[provider].disabled=!latest?.providers?.[provider]?.configured||(provider==='cloudflare'&&latest?.providers?.cloudflare?.scopeSetupRequired);
    }
   });
  }
