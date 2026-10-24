@@ -1,3 +1,4 @@
+import {handleArchive} from './archive.mjs';
 import {TOPICS,normalizeSynapse,recallSynapses} from './synapse-memory.mjs';
 // Private Bubbles history. Every read/write validates the caller's Unified Wallet
 // bearer against the wallet service. No browser-supplied owner/user IDs are trusted.
@@ -6,7 +7,7 @@ const MAX_BODY=350_000;
 function reply(origin,data,status=200){
  return new Response(JSON.stringify(data),{status,headers:{'content-type':'application/json; charset=utf-8',
   'cache-control':'no-store','vary':'Origin',...(ORIGINS.has(origin)?{'access-control-allow-origin':origin}:{}),
-  'access-control-allow-headers':'authorization, content-type','access-control-allow-methods':'GET, POST, DELETE, OPTIONS'}});
+  'access-control-allow-headers':'authorization, content-type','access-control-allow-methods':'GET, PUT, POST, DELETE, OPTIONS'}});
 }
 export function validEvent(e){
  return e&&typeof e==='object'&&/^[A-Za-z0-9_-]{8,80}$/.test(e.id||'')
@@ -29,16 +30,19 @@ async function identify(req,env){
 }
 export async function handle(req,env){
  const u=new URL(req.url),origin=req.headers.get('Origin')||'';
- if(u.pathname==='/health'&&req.method==='GET')return reply(origin,{ok:true,service:'bubbles-memory',authenticatedHistory:true,synapseMemory:true});
+ if(u.pathname==='/health'&&req.method==='GET')return reply(origin,{ok:true,service:'bubbles-memory',authenticatedHistory:true,synapseMemory:true,archiveBindingReady:!!env.ARCHIVE_BUCKET});
  if(!ORIGINS.has(origin))return corsError(origin);
  if(req.method==='OPTIONS')return new Response(null,{status:204,headers:{
   'access-control-allow-origin':origin,'access-control-allow-headers':'authorization, content-type',
-  'access-control-allow-methods':'GET, POST, DELETE, OPTIONS','vary':'Origin'}});
+  'access-control-allow-methods':'GET, PUT, POST, DELETE, OPTIONS','vary':'Origin'}});
  if(!env.MEMORY_DB)return reply(origin,{ok:false,error:'memory_database_unavailable'},503);
  let owner;
  try{owner=await identify(req,env)}catch{return reply(origin,{ok:false,error:'wallet_validation_unavailable'},503)}
  if(!owner)return reply(origin,{ok:false,error:'verified_wallet_required'},401);
  try{
+  // R2 object storage is opt-in and wallet-scoped; D1 history stays canonical.
+  if(u.pathname==='/v1/archive'||u.pathname.startsWith('/v1/archive/'))
+   return await handleArchive(req,env,owner,origin,reply);
   // Explicit owner-authorized memories, not passive audio or imported chat.
   if(u.pathname==='/v1/synapses'&&['GET','POST','DELETE'].includes(req.method)){
    await env.MEMORY_DB.prepare(
