@@ -31,3 +31,16 @@ test('new research page is present in sitemap and tracker can watch its card',()
  assert.match(read('sitemap.xml'),/https:\/\/quantaphi\.org\/cardone-capital\.html/);
  assert.match(read('public-card-trends.js'),/cardone-offer.*cardoneCapitalOffer/);
 });
+
+test('Cardone property card is wired to the Oracle next/previous carousel and one-tap spotlight',()=>{
+ const home=read('index.html'),deck=read('oracle-card-deck.js');
+ const css=read('oracle-card-deck.css');
+ assert.match(home,/id="oracleCardCardone"/);
+ assert.match(home,/id="cardoneCapitalOffer"/);
+ assert.match(home,/href="\/cardone-capital\.html"/);
+ assert.match(deck,/\['cardoneCapitalOffer','10X Westshore/);
+ assert.match(deck,/cardoneButton\?\.addEventListener/);
+ assert.match(deck,/stage\.append\(entry\.node\)/);
+ assert.match(deck,/spotlightRequested/);
+ assert.match(css,/#cardoneCapitalOffer/);
+});
