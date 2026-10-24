@@ -135,7 +135,7 @@ test('closed Cardone bubble cannot expose iframe footer wording or a square docu
  assert.match(embed,/const bubble=document\.createElement\('span'\)/);
  assert.match(embed,/iframe\.contentWindow\?\.postMessage\(\{type:'quantaphi:bubbles:open',id\},ORIGIN\)/);
  assert.match(bubblePage,/html\.bubble-iframe body > :not\(\.ba-launcher\):not\(\.ba-panel\)\{display:none!important\}/);
- assert.match(bubblePage,/html\.bubble-iframe \ .ba-launcher\[aria-expanded="true"\]\{display:none!important\}/);
+ assert.match(bubblePage,/html\.bubble-iframe \.ba-launcher\[aria-expanded="true"\]\{display:none!important\}/);
  assert.match(ai,/if\(embedded\)window\.addEventListener\('message',event=>/);
  assert.match(ai,/event\.source!==window\.parent/);
  assert.match(ai,/event\.data\.id!==bubbleId/);
