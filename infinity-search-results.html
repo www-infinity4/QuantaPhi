@@ -48,7 +48,7 @@ function rows(data){return (Array.isArray(data?.results)?data.results:[]).map(r=
 function show(list,verified){
  results.replaceChildren();
  sourceLabel.textContent=verified?provider+' engine results via Infinity search broker':'General web search via Infinity broker · not verified '+provider+' results';
- status.textContent=list.length+' attributed '+(verified?provider+' engine':'web')+' results for “‘+query+'”';
+ status.textContent=list.length+' attributed '+(verified?provider+' engine':'web')+' results for '+query;
  if(!verified){const n=document.createElement('p');n.className='warning';n.textContent=provider+'-specific results could not be verified. These are general web results. Use the original '+provider+' link above for the full '+provider+' search.';results.append(n)}
  for(const x of list.slice(0,12)){
   const a=document.createElement('article');a.className='result';
