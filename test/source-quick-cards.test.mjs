@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {Script} from 'node:vm';
 import {QUICK_CARD_SOURCES,findSourceCard,validSourceCard} from '../source-quick-cards.mjs';
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'utf8');
@@ -99,4 +100,11 @@ test('Google logo and Infinity local results page are genuine assets and do not 
  assert.match(page,/not verified.*results/);
  assert.doesNotMatch(page,/<iframe/);
  assert.match(tools,/window\.QuantaOpenSite\(a\)/);
+});
+
+test('standalone Google results HTML contains executable JavaScript, not an inert blank iframe',()=>{
+ const html=readFileSync(new URL('../infinity-search-results.html',import.meta.url),'utf8');
+ const script=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+ assert.ok(script&&script.includes('void search()'));
+ assert.doesNotThrow(()=>new Script(script,{filename:'infinity-search-results-inline.js'}));
 });
