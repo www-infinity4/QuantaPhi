@@ -9,7 +9,7 @@ import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,ne
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
  id:c.id,name:c.name,category:c.kind,feature:c.feature,study:c.details,
- url:c.featureUrl,route:'/source-quick-card.html?card='+encodeURIComponent(c.id),origin:'source'
+ official:c.official,url:c.featureUrl,route:'/source-quick-card.html?card='+encodeURIComponent(c.id),origin:'source'
 }));
 const fromScience=SCIENCE_CARDS.map(c=>({
  id:c.id,name:c.name,category:c.category,feature:c.feature,study:c.description,
