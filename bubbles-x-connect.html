@@ -1,9 +1,15 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connect X to Bubbles · QuantaPhi</title><link rel="stylesheet" href="/published-quick-card.css?v=2"></head>
 <body><main class="qcp-shell"><a href="/quick-card-builder.html" class="qcp-home">← Quick Card builder</a>
 <p class="qcp-eyebrow">BUBBLES · READ YOUR OWN X POSTS</p><h1>Connect your X reader</h1>
+<section class="qcp-context" id="xSimpleSignIn">
+<h2>Prefer your normal X sign-in?</h2>
+<p>Open your real X account, sign in on <strong>x.com</strong>, and copy any post link into Bubbles for an immediate, user-directed research/build request. This avoids the Developer Console for individual posts but <strong>does not yet grant Bubbles automatic access</strong> to your account.</p>
+<p><a class="qcp-link-button" href="https://x.com/login" target="_blank" rel="noopener noreferrer">Sign in at X ↗</a> <a class="qcp-link-button" href="/bubbles.html#bubblesAICard">Take a post to Bubbles ↗</a></p>
+<p>For automatic reading later, a <strong>Sign in with X</strong> authorization using OAuth 2.0 + PKCE is the intended simpler user experience. It avoids sharing your password with Bubbles. However, the QuantaPhi application must first be registered with X, authorized for read scopes and deployed; your ordinary web login alone cannot complete that step. If the X Developer Console Continue button is disabled, Bubbles cannot bypass or impersonate that approval.</p>
+</section>
 <section class="qcp-context"><h2>Connection pending</h2><p>The X-reading service is not verified as connected. The last owner configuration check found no X API bearer token or verified numeric owner ID on the Robot Brain Worker. This is a setup guide, not an active OAuth sign-in or live connection test.</p>
 <p>Read access allows Bubbles to collect your public posts for review. Posts will not automatically receive owner authority to deploy or spend resources.</p></section>
-<section class="qcp-context"><h2>1. Open the official X Developer Console</h2>
+<section class="qcp-context"><h2>1. Automatic reader: official X app registration</h2>
 <p>Sign in with the X account that controls <strong>@YahooPingcwlz</strong>, open your approved developer app, and locate <strong>Keys and tokens → Bearer Token</strong>. The X API may require an eligible access plan.</p>
 <p><a class="qcp-link-button" href="https://console.x.com" target="_blank" rel="noopener noreferrer">Open X Developer Console ↗</a></p>
 <p class="qcp-small">Never paste a bearer token into the Quick Card builder, chat, or a GitHub issue.</p></section>
