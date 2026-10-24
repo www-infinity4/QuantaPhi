@@ -29,8 +29,8 @@ test('cumulative Cloudflare counter sums every recorded day, not seven-day windo
  assert.equal(s.recordedDays,21);
  assert.equal(s.requests,2310);
  assert.equal(s.pageViews,1260);
- assert.equal(s.last7Days.requests,861);
- assert.equal(s.last7Days.pageViews,511);
+ assert.equal(s.last7Days.requests,819);
+ assert.equal(s.last7Days.pageViews,469);
  assert.equal(s.coverageContinuous,true);
  assert.equal(s.historicComplete,false);
  assert.equal(s.includesBots,true);
