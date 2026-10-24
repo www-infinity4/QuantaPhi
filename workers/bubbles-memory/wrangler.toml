@@ -10,3 +10,8 @@ binding = "BOT_WALLET"
 service = "unified-wallet"
 environment = "production"
 entrypoint = "BrainModels"
+
+# Explicit uploads and retrievals only; no public R2 bucket URL.
+[[r2_buckets]]
+binding = "ARCHIVE_BUCKET"
+bucket_name = "bubbles-private-archive"
