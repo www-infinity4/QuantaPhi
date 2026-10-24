@@ -1,3 +1,4 @@
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -41,7 +42,7 @@ function feature(root,card){
 }
 function starterCard(card){
  const item=el('article','iqc-card');item.dataset.sourceId=card.id;
- item.append(el('p','iqc-kind',card.kind),el('h3','',card.name),el('p','',card.feature),el('p','iqc-muted',card.details));
+ item.append(createCardArtwork(card,true),el('p','iqc-kind',card.kind),el('h3','',card.name),el('p','',card.feature));
  const actions=el('div','iqc-actions');
  const preview=el('a','iqc-primary','Open quick card in Infinity Viewer');preview.href='/source-quick-card.html?card='+encodeURIComponent(card.id);preview.classList.add('inPageSite');preview.dataset.siteUrl=preview.href;preview.dataset.siteTitle=card.name+' · Infinity quick card';
  actions.append(preview,link('Official site ↗',card.official));item.append(actions);return item;
@@ -49,7 +50,7 @@ function starterCard(card){
 function mountShelf(){
  const host=document.getElementById('siteQuickCards');if(!host)return;
  host.replaceChildren();
- host.append(el('p','iqc-kind','INFINITY 2026® · INDEPENDENT QUICK CARDS'),el('h2','','Websites turned into useful tools'),el('p','iqc-muted','Official sources, interactive search and a specialist Bubbles guide. Live social feeds, personal account access and publisher delivery require separately verified integrations.'));
+ host.append(el('p','iqc-kind','INFINITY 2026® · INTERACTIVE SOURCE TOOLS'),el('h2','','Discover, watch, search, research and create'),el('p','iqc-muted','Use the feature on each card. Provider-owned accounts and copyrighted catalogs remain with their original services.'));
  const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES)cards.append(starterCard(p));host.append(cards);
 }
 function installBubble(card){
@@ -69,8 +70,9 @@ function mountDetail(){
  const host=document.getElementById('sourceQuickCardDetail');if(!host)return;
  const card=findSourceCard(new URLSearchParams(location.search).get('card'));if(!card){host.append(el('p','','Unknown quick card. Return to the QuantaPhi source card shelf.'));return}
  document.title=card.name+' · Infinity Quick Card';
- host.append(el('p','iqc-kind','INFINITY 2026® · INDEPENDENT SOURCE QUICK CARD'),el('h1','',card.name),el('h2','',card.feature),el('p','',card.details));
- const featureBox=el('section','iqc-feature');featureBox.append(el('h3','','Most-used feature'),el('p','iqc-muted','Actual original-source action, not a cloned site.'));feature(featureBox,card);host.append(featureBox);
+ host.append(el('p','iqc-kind','INFINITY 2026® · SOURCE EXPERIENCE'),createCardArtwork(card),el('h1','',card.name),el('h2','',card.feature));
+ const tools=el('div','iqc-tools');mountCardTools(tools,card);host.append(tools);
+ if(card.searchParameter){const featureBox=el('section','iqc-feature');featureBox.append(el('h3','','Search directly at '+card.name));feature(featureBox,card);host.append(featureBox);}
  const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio)}actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
  const about=el('section','iqc-feature');about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));host.append(about);
  installBubble(card);
