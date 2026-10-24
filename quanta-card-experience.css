@@ -150,3 +150,6 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcx-fox-one-brand{font:950 clamp(2.9rem,10vw,4.3rem)/1.03 system-ui,sans-serif;letter-spacing:-.065em;text-shadow:0 3px 8px #0007}
 .qcx-fox-one .qcx-brand-caption{color:#e5f2ff!important;font-size:14px!important}
 @media(max-width:570px){.qca-controls{grid-template-columns:repeat(3,minmax(0,1fr))}.qca-search{flex-wrap:wrap}.qca-search-input,.qca-search-submit{width:100%;flex:1 1 100%}.qca-button{font-size:12px}.qcx-fox-one{min-height:165px!important}}
+
+.qcx-fox-one-logo{display:block;width:min(300px,88%);height:auto;max-height:120px;object-fit:contain;filter:invert(1);margin:12px auto 0}
+.qcx-fox-one-brand[hidden]{display:none!important}
