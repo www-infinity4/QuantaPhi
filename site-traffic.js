@@ -1,32 +1,38 @@
-/* Public Cloudflare traffic display. Never ship credentials to the browser. */
+/* Cumulative verified Cloudflare traffic. Never turn stale counters into zero. */
 (() => {
  'use strict';
  const requests=document.getElementById('qtrafficRequests'),views=document.getElementById('qtrafficViews'),note=document.getElementById('qtrafficNote');
  if(!requests||!views||!note)return;
- const maximumAge=6*60*60*1000;
- let last=null,busy=false;
+ let best=null,busy=false;
  const validCount=n=>Number.isSafeInteger(n)&&n>=0;
  function valid(d){
-  const at=Date.parse(d?.fetchedAt);
-  return d?.schemaVersion===1&&d.site==='quantaphi.org'&&d.source==='Cloudflare GraphQL httpRequests1dGroups'&&Number.isFinite(at)&&at<=Date.now()+60000&&
-   validCount(d.requests)&&validCount(d.pageViews)&&Array.isArray(d.days)&&d.days.length===7&&
-   d.period?.timeZone==='UTC'&&/^\d{4}-\d{2}-\d{2}$/.test(d.period.since)&&
-   d.days.every(x=>/^\d{4}-\d{2}-\d{2}$/.test(x.date)&&validCount(x.requests)&&validCount(x.pageViews))&&
-   d.days.reduce((n,x)=>n+x.requests,0)===d.requests&&d.days.reduce((n,x)=>n+x.pageViews,0)===d.pageViews;
+  const t=Date.parse(d?.fetchedAt);
+  return d?.schemaVersion===2&&d.site==='quantaphi.org'&&d.source==='Cloudflare GraphQL httpRequests1dGroups'&&
+   d.scope==='recorded_since'&&d.historicComplete===false&&
+   /^\d{4}-\d{2}-\d{2}$/.test(d.since)&&/^\d{4}-\d{2}-\d{2}$/.test(d.through)&&d.since<=d.through&&
+   Number.isFinite(t)&&t<Date.now()+60000&&validCount(d.requests)&&validCount(d.pageViews)&&
+   d.last7Days&&validCount(d.last7Days.requests)&&validCount(d.last7Days.pageViews)&&
+   validCount(d.recordedDays)&&typeof d.coverageContinuous==='boolean'&&
+   d.last7Days.requests<=d.requests&&d.last7Days.pageViews<=d.pageViews;
  }
  function render(d,{fallback=false}={}){
-  last=d;
-  requests.textContent=d.requests.toLocaleString();views.textContent=d.pageViews.toLocaleString();
-  const age=Date.now()-Date.parse(d.fetchedAt),verified=new Date(d.fetchedAt).toLocaleString();
-  const range=d.period.since+'–'+d.days[d.days.length-1].date+' UTC';
-  if(age>maximumAge){
-   note.textContent='Historical Cloudflare snapshot only ('+range+'). Last verified '+verified+'. Live totals are unavailable; automatic refresh will retry. Includes bots; not unique visitors.';
-  }else{
-   note.textContent='Cloudflare · '+range+' (today partial) · verified '+verified+' · includes bots; not unique visitors. '+(fallback?'Live endpoint unavailable; verified snapshot shown.':'Updated via live server feed; analytics can lag.');
-  }
+  // A recovered older file must not replace more recent verified numbers in the same session.
+  if(best&&best.since===d.since&&Date.parse(best.fetchedAt)>Date.parse(d.fetchedAt))d=best;
+  best=d;
+  requests.textContent=d.requests.toLocaleString();
+  views.textContent=d.pageViews.toLocaleString();
+  const updated=new Date(d.fetchedAt).toLocaleString();
+  const age=Date.now()-Date.parse(d.fetchedAt);
+  const live=!fallback&&age<60*60*1000&&d.through===new Date().toISOString().slice(0,10);
+  const prefix='Recorded since '+d.since+' (earliest available Cloudflare date), through '+d.through+'. ';
+  const recent=' Last 7 days (UTC): '+d.last7Days.requests.toLocaleString()+' requests, '+d.last7Days.pageViews.toLocaleString()+' page views.';
+  const status=live?'Auto-updating Cloudflare ledger. ':'Latest recorded total, not currently live. ';
+  note.textContent=prefix+status+'Last verified '+updated+'.'+recent+
+   ' Includes bots; not unique visitors or individual clicks.'+
+   (d.coverageContinuous?'':' Some daily records are missing; the total is incomplete.');
  }
- async function load(path){
-  const r=await fetch(path,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(10000)});
+ async function load(url){
+  const r=await fetch(url,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(10000)});
   if(!r.ok)throw Error('traffic_http_'+r.status);
   const d=await r.json();
   if(!valid(d))throw Error('traffic_invalid');
@@ -36,13 +42,13 @@
   if(busy)return;busy=true;
   try{
    try{render(await load('/api/site-traffic'),{fallback:false});}
-   catch{render(await load('/data/site-traffic.json?v='+Math.floor(Date.now()/60000)),{fallback:true});}
+   catch{render(await load('/data/site-traffic-lifetime.json?v='+Math.floor(Date.now()/60000)),{fallback:true});}
   }catch{
-   if(last){render(last,{fallback:true});}
-   else{requests.textContent='—';views.textContent='—';note.textContent='Cloudflare traffic is unavailable. No estimated totals are shown.';}
+   if(best)render(best,{fallback:true});
+   else{requests.textContent='—';views.textContent='—';note.textContent='Cloudflare lifetime ledger currently unavailable; no estimated counts shown.';}
   }finally{busy=false;}
  }
  refresh();
- setInterval(()=>{if(last)render(last,{fallback:true});if(!document.hidden)refresh();},60000);
+ setInterval(()=>{if(!document.hidden)refresh();},60000);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
 })();

@@ -3,3 +3,9 @@ main = "worker.mjs"
 compatibility_date = "2026-10-24"
 account_id = "ef25728c096c6ba92cf510caa2058003"
 routes = [{ pattern = "quantaphi.org/api/site-traffic*", zone_name = "quantaphi.org" }]
+[triggers]
+crons = ["*/15 * * * *"]
+[[d1_databases]]
+binding = "TRAFFIC_LEDGER"
+database_name = "quantaphi-site-traffic-ledger"
+database_id = "d2ff1e67-be90-467b-b478-3c52d6739b89"
