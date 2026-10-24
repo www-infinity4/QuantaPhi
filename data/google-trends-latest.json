@@ -3,105 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-24T19:52:28.052075Z",
+  "checked_at": "2026-10-24T22:00:25.366412Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "manel kape",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-24T19:30:00Z",
-      "related_news_urls": [
-        "https://uk.sports.yahoo.com/news/ufc-336-carlos-prates-vs-michael-morales-interim-title-fight-set-joshua-van-vs-manel-kape-to-co-main-193513965.html"
-      ]
-    },
-    {
-      "query": "carlos prates",
+      "query": "sammy smith",
       "approx_searches": "500+",
-      "published_at": "2026-10-24T19:30:00Z",
+      "published_at": "2026-10-24T21:40:00Z",
       "related_news_urls": [
-        "https://www.uol.com.br/esporte/colunas/na-grade-do-mma/2026/10/23/sem-islam-makhachev-carlos-prates-so-tem-dois-caminhos-no-ufc.htm",
-        "https://www.superlutas.com.br/noticias/379601/makhachev-fora-dana-white-reage-rumor-sobre-luta-carlos-prates-ufc-336/",
-        "https://www.itatiaia.com.br/esportes/lutas/ufc/carlos-prates-x-makhachev-treinador-abre-o-jogo-sobre-disputa-de-cinturao/"
+        "https://www.nascar.com/gallery/at-track-photos-2026-talladega-superspeedway-chase-weekend/",
+        "https://www.jayski.com/2026/10/23/loves-rv-stop-225-post-race-inspection-report-sammy-smith-win-official/",
+        "https://www.al.com/sports/2026/10/after-split-from-earnhardt-jrs-team-sammy-smith-makes-statement-at-talladega.html"
       ]
     },
     {
-      "query": "ofer winter",
+      "query": "paul bettany",
       "approx_searches": "500+",
-      "published_at": "2026-10-24T19:30:00Z",
+      "published_at": "2026-10-24T21:30:00Z",
       "related_news_urls": [
-        "https://www.haaretz.com/israel-news/elections/2026-10-21/ty-article/.premium/both-blocs-expect-netanyahu-to-push-far-right-rival-below-electoral-threshold/000001a1-5d82-d6b0-abe9-dfb283fd0000",
-        "https://www.timesofisrael.com/people-of-israel-charedi-public-vow-to-stay-in-race-despite-pressure-from-pm-and-allies/",
-        "https://www.jpost.com/israel-election-2026/article-912440"
+        "https://abc.com/news/b59579fb-3bf1-4c94-9681-75f1028640f2/category/154926",
+        "https://latenighter.com/news/foo-fighters-jimmy-kimmel-live-residency/",
+        "https://whatsondisneyplus.com/paul-bettany-owen-wilson-to-appear-on-jimmy-kimmel-live/"
       ]
     },
     {
-      "query": "ofer winter vs benjamin netanyahu",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-24T19:20:00Z",
-      "related_news_urls": [
-        "https://www.timesofisrael.com/report-netanyahus-campaign-against-winter-rooted-in-anger-over-advice-to-eli-feldstein/",
-        "https://www.timesofisrael.com/liveblog_entry/report-netanyahus-campaign-against-winter-rooted-in-anger-over-advice-to-eli-feldstein/",
-        "https://www.haaretz.com/israel-news/elections/2026-10-21/ty-article/.premium/both-blocs-expect-netanyahu-to-push-far-right-rival-below-electoral-threshold/000001a1-5d82-d6b0-abe9-dfb283fd0000"
-      ]
-    },
-    {
-      "query": "joshua van",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-24T19:20:00Z",
-      "related_news_urls": [
-        "https://www.mmafighting.com/ufc/517181/joshua-van-sean-strickland-in-a-bad-spot-in-dana-white-feud-over-ufc-pay",
-        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/19/joe-pyfer-calls-imavovs-antics-toward-strickland-a-bit-ridiculous/92325763007/",
-        "https://bloodyelbow.com/2026/10/23/arman-tsarukyan-questions-sean-stricklands-intelligence-in-response-to-his-ufc-pay-complaints/"
-      ]
-    },
-    {
-      "query": "atletico madrid",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-24T19:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cqpvglrn2w8xt",
-        "https://www.marca.com/en/soccer/laliga-ea-sports/atletico-deportivo/2026/10/24/01_0101_20261024_175_180-live.html",
-        "https://www.nytimes.com/athletic/7719886/2026/10/24/rc-deportivo-la-coruna-vs-atletico-madrid-stream-how-to-watch-la-liga-oct-24/"
-      ]
-    },
-    {
-      "query": "josh hoover",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-24T19:20:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/indiana/longformarticle/midweek-musings-indiana-iu-football-josh-hoover-concerns-rushing-struggles-cfp-expansion-291610245/",
-        "https://heavy.com/sports/college-football/indiana-hoosiers/indiana-urged-to-make-qb-josh-hoover-change-amid-michigan-struggles/",
-        "https://sports.yahoo.com/articles/indiana-football-must-solve-running-113000187.html"
-      ]
-    },
-    {
-      "query": "internacional vs botafogo",
+      "query": "robert griffin iii",
       "approx_searches": "200+",
-      "published_at": "2026-10-24T19:20:00Z",
+      "published_at": "2026-10-24T21:30:00Z",
       "related_news_urls": [
-        "https://ge.globo.com/rs/futebol/brasileirao-serie-a/noticia/2026/10/24/internacional-x-botafogo-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://gauchazh.clicrbs.com.br/esportes/inter/noticia/2026/10/gramado-do-inter-registra-acumulo-de-agua-antes-da-partida-com-o-botafogo-cmvmrf1ac02cy014ww3avtxhi.html",
-        "https://internacional.com.br/noticias/masculino/raio-x-inter-enfrenta-o-botafogo-pela-32-rodada-do-brasileirao"
+        "https://roundtable.io/sports/ncaa/ucf/community/former-nfl-qb-robert-griffin-iii-at-ucf-spirit-splash",
+        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-friday-oct-23",
+        "https://sports.yahoo.com/articles/bears-lose-heartbeat-cole-kmet-200854848.html"
       ]
     },
     {
-      "query": "uzbekistan",
-      "approx_searches": "500+",
-      "published_at": "2026-10-24T19:10:00Z",
+      "query": "apple tv",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-24T21:20:00Z",
       "related_news_urls": [
-        "https://tvbrics.com/en/news/uzbekistan-s-population-reaches-39-54-million-as-growth-continues/",
-        "https://yuz.uz/en/news/cislennost-postoiannogo-naseleniia-uzbekistana-prevysila-395",
-        "https://qazinform.com/news/uzbekistans-population-increases-by-nearly-700000-in-one-year-7df3b3"
+        "https://9to5mac.com/2026/10/23/heres-everything-new-apple-tv-has-coming-in-november-2/",
+        "https://theapopkavoice.com/stories/apple-tvs-november-lineup-brings-heists-holiday-cheer-and-second-chances,190074",
+        "https://news.lavx.hu/article/apple-tv-packs-november-with-comedy-heist-thriller-and-oscar-follow-up"
       ]
     },
     {
-      "query": "mirassol vs são paulo",
-      "approx_searches": "500+",
-      "published_at": "2026-10-24T19:10:00Z",
+      "query": "devils",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-24T21:10:00Z",
       "related_news_urls": [
-        "https://ge.globo.com/sp/tem-esporte/futebol/brasileirao-serie-a/noticia/2026/10/24/mirassol-x-sao-paulo-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://www.abcdoabc.com.br/sao-paulo-mira-melhorar-desempenho-como-visitan/",
-        "https://www.terra.com.br/esportes/sao-paulo/vai-assistir-ao-sao-paulo-hoje-confira-o-horario-da-partida,30f8770486951b196d48595707731e084675ugdz.html"
+        "https://www.espn.com/nhl/story/_/id/50268327/connor-hellebuyck-happy-join-devils-jets-standoff",
+        "https://www.nhl.com/news/trade-to-new-jersey-devils-going-to-fit-perfectly-for-connor-hellebuyck",
+        "https://buffalonews.com/sports/professional/nhl/sabres/article_33888300-9c74-46fd-82df-af934431a50c.html"
+      ]
+    },
+    {
+      "query": "marines",
+      "approx_searches": "500+",
+      "published_at": "2026-10-24T21:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/10/23/us/trans-troops-military-boards-retain.html",
+        "https://www.yahoo.com/news/politics/articles/navy-marine-corps-largely-ignoring-194531848.html",
+        "https://www.dailykos.com/stories/2026/10/23/800116799/news/the-militarys-quiet-rebellion-against-trumps-anti-trans-orders/"
+      ]
+    },
+    {
+      "query": "quinn hughes comments wild future",
+      "approx_searches": "500+",
+      "published_at": "2026-10-24T21:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7720935/2026/10/24/wild-quinn-hughes-contract-talks/",
+        "https://www.sportsnet.ca/nhl/article/quinn-hughes-on-wild-contract-talks-my-two-feet-are-planted-in-minnesota/",
+        "https://sports.yahoo.com/articles/quinn-hughes-hints-progress-contract-200306678.html"
+      ]
+    },
+    {
+      "query": "chivas vs monterrey",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T21:10:00Z",
+      "related_news_urls": [
+        "https://www.chivasdecorazon.com.mx/es/noticias/41663/DA-CLIC-AQU-para-ver-a-Chivas-vs.-Rayados",
+        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17421304/monterrey-vs-chivas-alineacione-apertura-2026",
+        "https://www.lavozarizona.com/story/deportes/futbol/2026/10/23/chivas-vs-monterrey-jornada-14-liga-mx-hora-canal-previa-alineaciones/92402931007/"
+      ]
+    },
+    {
+      "query": "university of central florida",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T21:10:00Z",
+      "related_news_urls": [
+        "https://www.ucf.edu/news/ucf-alums-bring-a-fresh-brew-to-familiar-grounds/",
+        "https://www.fox.com/sports/football/college-football/watch-byu-cougars-vs-ucf-knights-oct-24-2026",
+        "https://www.deseret.com/sports/2026/10/24/byu-cougars-football-ucf-2026-live-coverage/"
+      ]
+    },
+    {
+      "query": "dalton smith",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T21:10:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/liveblogs/25519632-dalton-smith-vs-alberto-puello-live-updates-highlights-and-results",
+        "https://www.bbc.com/sport/boxing/articles/cqn73k05xjx6o",
+        "https://fightnews.com/dalton-vs-puello-weigh-in-results/198984"
       ]
     }
   ]
