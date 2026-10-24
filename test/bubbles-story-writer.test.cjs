@@ -15,7 +15,8 @@ test('QuantaPhi mounts Bubbles beside Media Star and loads all versioned assets'
  assert.ok(html.includes('/phi-story-writer.css?'));
  assert.match(html,/id="bubblesAICard"/);
  assert.ok(html.indexOf('id="mediaStarCreator"')<html.indexOf('id="bubblesAICard"'));
- assert.ok(html.includes('href="#bubblesAICard"'));
+ assert.ok(html.includes('<nav class="qmenu" id="qmenu" hidden>'));
+ assert.ok(!html.includes('href="#bubblesAICard"'));
 });
 
 test('image-to-story flow inspects real picture bytes; no filename-based story guessing',()=>{
