@@ -1,0 +1,20 @@
+{
+  "name": "bubbles-public-x",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-24",
+  "browser": {
+    "binding": "BROWSER"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "quantaphi-bubbles-public-x",
+      "database_id": "62b68926-5396-43be-b42a-5ee2160c64e2"
+    }
+  ],
+  "triggers": {
+    "crons": [
+      "17 * * * *"
+    ]
+  }
+}

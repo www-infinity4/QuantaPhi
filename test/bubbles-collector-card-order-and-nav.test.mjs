@@ -56,8 +56,8 @@ test('all Android entry activities set navigation icon contrast',()=>{
 });
 test('X public reader page gives real cloud-browser receipts without password capture',()=>{
  const c=read('bubbles-x-connect.html');
- assert.match(c,/hourly GitHub cloud-browser job/);
- assert.match(c,/bubbles-hourly-public-x.yml/);
+ assert.match(c,/scheduled Cloudflare-native browser/);
+ assert.match(c,/\/api\/bubbles\/public-x\/health/);
  assert.match(c,/https:\/\/x.com\/YahooPingcwlz/);
  assert.match(c,/candidate/i);
  assert.doesNotMatch(c,/<input[^>]+(?:password|bearer|secret)/i);
