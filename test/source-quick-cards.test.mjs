@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {Script} from 'node:vm';
-import {QUICK_CARD_SOURCES,findSourceCard,validSourceCard} from '../source-quick-cards.mjs';
+import {QUICK_CARD_SOURCES,findSourceCard,validSourceCard,PUBLIC_SOURCE_IDS,isPublicSourceCard} from '../source-quick-cards.mjs';
 const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'utf8');
 const launcher=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
@@ -36,7 +36,7 @@ test('Google and Bing start real engine requests inside the Infinity Viewer',()=
 });
 test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261024-oracle-brand3/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261024-quality-gate4/);
  assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
@@ -107,4 +107,11 @@ test('standalone Google results HTML contains executable JavaScript, not an iner
  const script=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
  assert.ok(script&&script.includes('void search()'));
  assert.doesNotThrow(()=>new Script(script,{filename:'infinity-search-results-inline.js'}));
+});
+
+test('unfinished social and media cards cannot enter the public rotation',()=>{
+ assert.deepEqual(PUBLIC_SOURCE_IDS,['google']);
+ for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),card.id==='google');
+ assert.match(launcher,/QUICK_CARD_SOURCES.filter\(isPublicSourceCard\)/);
+ assert.match(deck,/node.dataset.sourceReady!=='true'/);
 });

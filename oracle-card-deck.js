@@ -10,7 +10,6 @@ const now=document.getElementById('oracleCardNow'),status=document.getElementByI
 const choices=[
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
- ['scienceQuickCards','Muse AI, NASA Webb, science and technology'],
  ['pixieStoryCard','Pixie Stories · Read and explore'],
  ['googleTrendNba','NBA · Trending matchups'],
  ['googleTrendMlb','MLB · World Series'],
@@ -91,9 +90,10 @@ function registerSourceCards(){
  // Move the ORIGINAL article, preserving its search field, player and listeners.
  let added=false;
  for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id]')){
+  if(node.dataset.sourceReady!=='true')continue;
   const id=node.dataset.sourceId;
   if(!/^[a-z0-9-]+$/.test(id||'')||entries.some(e=>e.feedId===id))continue;
-  const label=node.querySelector('h3')?.textContent?.trim()||id;
+  const label=node.dataset.sourceName||node.querySelector('h3')?.textContent?.trim()||id;
   const category=node.querySelector('.iqc-kind')?.textContent?.trim()||'Website';
   const entry={id:'source-'+id,title:label+' · Interactive',feedId:id,
    category,feature:'Use the real '+label+' card controls',study:'Original source card with direct controls',
