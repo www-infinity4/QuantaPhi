@@ -54,10 +54,11 @@ test('all Android entry activities set navigation icon contrast',()=>{
   assert.match(read(p),/setNavigationBarColor/);assert.match(read(p),/LIGHT_NAVIGATION_BAR/);
  }
 });
-test('X sign-in fallback does not claim it authorizes automated posts',()=>{
+test('X public reader page gives real cloud-browser receipts without password capture',()=>{
  const c=read('bubbles-x-connect.html');
- assert.match(c,/https:\/\/x.com\/login/);
- assert.match(c,/does not yet grant Bubbles automatic access/);
- assert.match(c,/OAuth 2.0 \+ PKCE/);
+ assert.match(c,/hourly GitHub cloud-browser job/);
+ assert.match(c,/bubbles-hourly-public-x.yml/);
+ assert.match(c,/https:\/\/x.com\/YahooPingcwlz/);
+ assert.match(c,/candidate/i);
  assert.doesNotMatch(c,/<input[^>]+(?:password|bearer|secret)/i);
 });
