@@ -63,7 +63,7 @@ test('embedded orb canvas is transparent so the round launcher has no square bac
 });
 
 test('Cardone questions use read-only issuer research rather than an internal search script',()=>{
- const start=ai.indexOf('const lookupPayload=()=>cardoneResearch?{');
+ const start=ai.indexOf('const lookupPayload=()=>(cardoneResearch?{');
  const end=ai.indexOf('\n const prompt=',start);
  assert.ok(start>=0&&end>start);
  const question='What assumptions support the projected cashflow, and how are distributions funded?';
