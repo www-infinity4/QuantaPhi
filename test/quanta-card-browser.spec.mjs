@@ -11,7 +11,7 @@ test('original single-card Oracle viewer replaces the giant feed on Android widt
  await expect(oracle.getByRole('tab',{name:'Public'})).toBeVisible();
  await expect(oracle.getByRole('tab',{name:'For You'})).toBeVisible();
  await expect(oracle.getByRole('tab',{name:'Following'})).toBeVisible();
- await expect(oracle.locator('.oracle-card-deck-stage .qcx-google-wordmark')).toHaveAttribute('src',/www\\.google\\.com\\/images\\/branding\\/googlelogo/,{timeout:15000});
+ await expect(oracle.locator('.oracle-card-deck-stage .qcx-google-wordmark')).toHaveAttribute('src',/www\.google\.com\/images\/branding\/googlelogo/,{timeout:15000});
  const input=oracle.getByRole('searchbox',{name:'Search Google'});
  await expect(input).toBeVisible();
  const overflow=await oracle.locator('.oracle-card-deck-stage').evaluate(e=>e.getBoundingClientRect().width>window.innerWidth);
@@ -27,7 +27,7 @@ test('Google query opens actual attributed engine listings within Infinity Viewe
  await oracle.getByRole('searchbox',{name:'Search Google'}).fill('Philco radio');
  await oracle.locator('.qcx-native-search button').click();
  await expect(page.locator('#siteViewer')).toBeVisible();
- await expect(page.locator('#siteViewerFrame')).toHaveAttribute('src',/infinity-search-results\\.html\\?engine=google&(?:amp;)?q=Philco/);
+ await expect(page.locator('#siteViewerFrame')).toHaveAttribute('src',/infinity-search-results\.html\?engine=google&(?:amp;)?q=Philco/);
  const view=page.frameLocator('#siteViewerFrame');
  await expect(view.getByText('Philco model 90 historical radio')).toBeVisible();
  await expect(view.getByText('Google engine results via Infinity search broker')).toBeVisible();
