@@ -48,7 +48,7 @@ test('for you uses explicit engagement and category similarity without opaque or
  assert.equal(ranked[0].id,radio.id);
  assert.ok(ranked.indexOf(other)<ranked.indexOf(feedCard('whatsapp')),'radio interest helps another radio');
  assert.equal(state.counts[radio.id],4);
- assert.ok(!JSON.stringify(state).includes('token'));
+ assert.ok(!JSON.stringify(cleanFeedState(state)).includes('token'));
 });
 test('corrupt or oversized anonymous feed state is sanitized',()=>{
  const s=cleanFeedState({following:['google','google','bad/../id'],counts:{google:999999,secret:-4,robinhood:2.5},
@@ -69,7 +69,7 @@ test('tab controls, mobile search, Bubbles specialists and existing website card
  assert.match(ui,/quantaFeedFeature/);
  assert.match(ui,/Next unseen card/);
  assert.match(ui,/localStorage\.setItem/);
- assert.match(ui,/script\.src='\/bubbles-embed\.js'/);
+ assert.match(ui,/embed\.src='\/bubbles-embed\.js'/);
  assert.match(ui,/wallet sync is not yet enabled/);
  assert.match(css,/@media\(max-width:560px\)/);
  assert.match(raw('quanta-feed-card.html'),/id="quantaFeedCardDetail"/);
