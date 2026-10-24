@@ -37,7 +37,7 @@ test('research lab provides accessible, non-fictional interaction', () => {
 
 test('console navigates and never executes arbitrary input', () => {
   class Element {
-    constructor() { this.listeners = {}; this.children = []; this.value = ''; this.hidden = false; }
+    constructor() { this.listeners = {}; this.children = []; this.value = ''; this.hidden = false; this.dataset = {}; }
     addEventListener(type, cb) { this.listeners[type] = cb; }
     appendChild(child) { this.children.push(child); return child; }
     replaceChildren() { this.children.length = 0; }
