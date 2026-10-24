@@ -1,0 +1,5 @@
+name = "quantaphi-site-traffic"
+main = "worker.mjs"
+compatibility_date = "2026-10-24"
+account_id = "ef25728c096c6ba92cf510caa2058003"
+routes = [{ pattern = "quantaphi.org/api/site-traffic*", zone_name = "quantaphi.org" }]
