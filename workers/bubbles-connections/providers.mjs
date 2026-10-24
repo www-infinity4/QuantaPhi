@@ -210,7 +210,7 @@ const cfScopes=actions=>[...new Set(actions.flatMap(a=>{
 // Set this allowlist from the Bubbles OAuth application's verified client
 // registration, not from a guessed global list of available API scopes.
 export function cloudflareAvailableActions(approvedScopes) {
-  const allowed=new Set(String(approvedScopes||'').split(/[\\s,]+/).filter(Boolean));
+  const allowed=new Set(String(approvedScopes||'').split(/[\s,]+/).filter(Boolean));
   return Object.keys(CLOUDFLARE_SCOPES).filter(action=>
     CLOUDFLARE_SCOPES[action].every(scope=>allowed.has(scope)));
 }
@@ -218,7 +218,7 @@ const cfGranted=(actions,scope)=>actions.filter(a=>CLOUDFLARE_SCOPES[a]?.every(s
 export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...args)){
   const redirectUri=callback(config);
   const approvedScopes=config.allowedScopes===undefined?null:
-    new Set(String(config.allowedScopes||'').split(/[\\s,]+/).filter(Boolean));
+    new Set(String(config.allowedScopes||'').split(/[\s,]+/).filter(Boolean));
   const basic='Basic '+btoa(config.clientId+':'+config.clientSecret);
   const form=fields=>({method:'POST',redirect:'error',signal:AbortSignal.timeout(15000),
     headers:{Authorization:basic,'Content-Type':'application/x-www-form-urlencoded',Accept:'application/json'},
