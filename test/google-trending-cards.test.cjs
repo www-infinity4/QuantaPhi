@@ -22,8 +22,8 @@ test('three dedicated original website cards mount on homepage and full-page exp
  assert.match(page,/source: Google Trends|Google Trends/);
  assert.match(home,/\/trending-now\.html/);
  assert.match(read('sitemap.xml'),/trending-now\.html/);
- assert.match(home,/google-trending-cards\.js\?v=20261023-trendsync2/);
- assert.match(home,/google-trending-cards\.css\?v=20261023-trendsync2/);
+ assert.match(home,/google-trending-cards\.js\?v=20261023-trendsync3/);
+ assert.match(home,/google-trending-cards\.css\?v=20261023-trendsync3/);
 });
 test('only sourced sport states are displayed; status does not fabricate games',()=>{
  assert.doesNotThrow(()=>new Function(js));
@@ -59,6 +59,8 @@ test('trending feed has real scheduled ingestion, source-freshness handling and 
  const importer=read('scripts/sync_google_trends.py');
  assert.ok(wf.includes('*/30'));
  assert.ok(wf.includes('sync_google_trends.py'));
+ assert.ok(wf.includes('trends-rss-data'));
+ assert.ok(js.includes('raw.githubusercontent.com/www-infinity4/QuantaPhi/trends-rss-data/'));
  assert.ok(importer.includes('trends.google.com/trending/rss?geo=US'));
  assert.ok(js.includes('google-trends-latest.json'));
  assert.ok(js.includes('stale'));

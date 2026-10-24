@@ -176,9 +176,23 @@ function mountLatestTrends(host){
   controller?.abort();controller=new AbortController();
   status.textContent='Checking latest published trend observations…';
   try{
-   const response=await fetch('/data/google-trends-latest.json?checked='+Date.now(),{cache:'no-store',signal:controller.signal,headers:{Accept:'application/json'}});
-   if(!response.ok)throw Error('Source sync not published yet (HTTP '+response.status+')');
-   const feed=await response.json();
+   // Protected main cannot accept bot data commits. Prefer the freshest checked
+   // snapshot from the canonical site or the dedicated, public trend-data branch.
+   const urls=[
+    '/data/google-trends-latest.json?checked='+Date.now(),
+    'https://raw.githubusercontent.com/www-infinity4/QuantaPhi/trends-rss-data/data/google-trends-latest.json?checked='+Date.now()
+   ];
+   let feed=null;
+   for(const url of urls){
+    try{
+     const response=await fetch(url,{cache:'no-store',signal:controller.signal,headers:{Accept:'application/json'}});
+     if(!response.ok)continue;
+     const candidate=await response.json();
+     if(candidate.schema_version!==1||candidate.source_url!=='https://trends.google.com/trending/rss?geo=US'||!Array.isArray(candidate.topics)||!candidate.topics.length)continue;
+     if(Number.isFinite(Date.parse(candidate.checked_at))&&(!feed||Date.parse(candidate.checked_at)>Date.parse(feed.checked_at)))feed=candidate;
+    }catch(error){if(error.name==='AbortError')throw error;}
+   }
+   if(!feed)throw Error('No verified published trend data from either source');
    if(feed.schema_version!==1||feed.source_url!=='https://trends.google.com/trending/rss?geo=US'||!Array.isArray(feed.topics))throw Error('Invalid trend feed');
    const checked=Date.parse(feed.checked_at);
    const valid=feed.topics.filter(t=>t&&typeof t.query==='string'&&t.query.trim()&&typeof t.approx_searches==='string'&&Number.isFinite(Date.parse(t.published_at))&&Date.parse(t.published_at)<=Date.now()+300000).slice(0,25);
