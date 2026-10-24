@@ -1,4 +1,4 @@
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-oracle-brand3';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-quality-gate4';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -24,6 +24,10 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('tv-guide','TV Guide','TV','Find tonight’s shows and TV recommendations','https://www.tvguide.com/','https://www.tvguide.com/','Find programs, schedules and credited trailers using a licensed/verified TV listing source and the user’s choice of region.','Open TV Guide to choose shows. The live local schedule needs a licensed guide feed and explicit region selection.'), 
  source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'})
 ]);
+// Only cards with a finished provider-shaped interaction enter the public deck.
+// Social/media previews remain private until actual posts/media and adapters exist.
+export const PUBLIC_SOURCE_IDS=Object.freeze(['google']);
+export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>QUICK_CARD_SOURCES.find(p=>p.id===id)||null;
 export const validSourceCard=card=>{
  if(!card||!/^[a-z0-9-]+$/.test(card.id||''))return false;
@@ -35,7 +39,7 @@ function link(text,href,klass=''){const a=el('a',klass,text);a.href=href;a.targe
 function starterCard(card){
  // The homepage article IS the interactive card. Do not redirect it to an
  // internal viewer; Android WebView's pop-up handling must not be required.
- const item=el('article','iqc-card');item.dataset.sourceId=card.id;
+ const item=el('article','iqc-card');item.dataset.sourceId=card.id;item.dataset.sourceName=card.name;item.dataset.sourceReady='true';
  item.append(createCardArtwork(card,true));
  if(card.id!=='google'&&card.id!=='bing')item.append(el('p','iqc-kind',card.kind));
  const tools=el('div','iqc-inline-tools');mountCardTools(tools,card);item.append(tools);
@@ -50,7 +54,7 @@ function mountShelf(){
  const host=document.getElementById('siteQuickCards');if(!host)return;
  host.replaceChildren();
  host.append(el('p','iqc-kind','INFINITY 2026® · INTERACTIVE SOURCE TOOLS'),el('h2','','Discover, watch, search, research and create'),el('p','iqc-muted','Use the feature on each card. Provider-owned accounts and copyrighted catalogs remain with their original services.'));
- const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES)cards.append(starterCard(p));host.append(cards);
+ const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES.filter(isPublicSourceCard))cards.append(starterCard(p));host.append(cards);
  // The Oracle viewer discovers each original source article as an individual
  // swipeable card, never a single 15-item link shelf.
  window.dispatchEvent(new Event('quantaphi:source-cards-ready'));

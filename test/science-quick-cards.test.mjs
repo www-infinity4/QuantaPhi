@@ -29,7 +29,8 @@ test('home, source detail, Oracle rotation and Bubbles catalog expose the cards'
  assert.match(root('index.html'),/id="scienceQuickCards"/);
  assert.match(root('index.html'),/science-quick-cards\.mjs\?v=/);
  assert.match(root('science-quick-card.html'),/id="scienceQuickDetail"/);
- assert.match(root('oracle-card-deck.js'),/\['scienceQuickCards','Muse AI, NASA Webb/);
+ assert.doesNotMatch(root('oracle-card-deck.js'),/\['scienceQuickCards','Muse AI, NASA Webb/);
+ assert.match(root('index.html'),/id="scienceQuickCards"[^>]+hidden/);
  for(const id of ['muse-ai','nasa-webb','nasa-science','ars-science','ars-tech'])
   assert.ok(root('bubbles-card-catalog.mjs').includes("app('"+id+"'"));
  assert.match(root('science-quick-cards.mjs'),/classList\.add\('inPageSite'\)/);

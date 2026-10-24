@@ -54,3 +54,15 @@ test('versioned chat repair assets use one tested immutable commit, while future
   assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/?v=future-release')),'main');
  }
 });
+
+test('Infinity results and directory pages allow only same-origin viewer framing',async()=>{
+ const context={URL,Request,Response,Headers,AbortController,setTimeout,clearTimeout,
+ fetch:async()=>new Response('<html><body>source</body></html>',{headers:{'Content-Type':'text/html','X-Frame-Options':'DENY'}})};
+ vm.runInNewContext(source.replace(/^import \{videoAPI\} from '.\/video-api\.mjs';\s*/,'').replace('export default','globalThis.worker='),context);
+ for(const path of ['/infinity-search-results.html','/directory/','/studio/','/source-quick-card.html']){
+  const response=await context.worker.fetch(new Request('https://quantaphi.org'+path),{});
+  assert.equal(response.headers.get('X-Frame-Options'),'SAMEORIGIN',path);
+ }
+ const home=await context.worker.fetch(new Request('https://quantaphi.org/'),{});
+ assert.equal(home.headers.get('X-Frame-Options'),'DENY');
+});
