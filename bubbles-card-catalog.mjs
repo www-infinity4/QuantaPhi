@@ -55,7 +55,7 @@ export const cards=Object.freeze([
  app('ars-tech','Ars Technica News','/science-quick-card.html?card=ars-technology','QuantaPhi',['technology news','tech news','ars technica']),
  app('public-directory','Verified Contact Directory','/directory/','QuantaPhi',['phonebook','telephone book','directory','public phone','business contact','directory card']),
  app('website-directory','Website Directory','/directory/?kind=website','QuantaPhi',['website directory','website catalog']),
- app('fox-one','FOX One Original Advertisement','/source-quick-card.html?card=fox-one','QuantaPhi',['fox one','foxone','fox one ad','fox one advertisement']),
+ app('fox-one-video','FOX One Original Advertisement','/source-quick-card.html?card=fox-one','QuantaPhi',['fox one','foxone','fox one ad','fox one advertisement']),
  app('starmaker-studio','StarMaker Song Studio','/studio/','QuantaPhi',['starmaker','karaoke','song directory','sing','record voice','music studio']),
  app('quantaphi','QuantaPhi','/','QuantaPhi',['quantaphi home','quantaphi website','quantaphi page']),
  app('alien-coin','Alien Coin','/alien-coin/','Alien-Coin',['alien coin website']),
