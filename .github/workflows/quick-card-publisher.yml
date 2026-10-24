@@ -6,6 +6,12 @@ on:
       - 'test/quick-card-publisher.test.mjs'
       - 'published-quick-card*'
       - 'quick-card-builder*'
+      - 'quick-card-share.js'
+      - 'bubbles-x-connect.html'
+      - 'test/quick-card-share.test.mjs'
+      - 'quick-card-share.js'
+      - 'bubbles-x-connect.html'
+      - 'test/quick-card-share.test.mjs'
       - 'index.html'
       - '.github/workflows/quick-card-publisher.yml'
   push:
@@ -31,6 +37,7 @@ jobs:
           node --check published-quick-card.js
           node --check published-quick-cards-feed.js
           node --check quick-card-builder.js
+          node --check quick-card-share.js
       - name: Live Cloudflare card API readback
         run: |
           curl --fail --show-error --silent --max-time 15 https://quantaphi.org/api/quick-cards/health | node -e "let b='';process.stdin.on('data',d=>b+=d).on('end',()=>{const r=JSON.parse(b);if(r.ok!==true||r.storage!=='connected')process.exit(1);console.log('Live Quick Card D1 route verified')})"
@@ -40,4 +47,4 @@ jobs:
           curl --fail --show-error --silent --max-time 20 https://quantaphi.org/published-quick-card.js | grep -q 'paintCard'
           curl --fail --show-error --silent --max-time 20 https://quantaphi.org/published-quick-card.css | grep -q 'qcp-card'
       - name: Execute publisher tests
-        run: node --test test/quick-card-publisher.test.mjs
+        run: node --test test/quick-card-publisher.test.mjs test/quick-card-share.test.mjs
