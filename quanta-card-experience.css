@@ -61,3 +61,54 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qf-tile .qf-inline-tool .qcx-tool{padding:11px;gap:7px}
 .qf-tile .qf-inline-tool .qcx-tool h3{font-size:15px!important}
 .qf-tile .qf-inline-tool .qcx-button{min-height:44px}
+
+/* Distinct original-brand experiences inside the ONE Oracle direction viewer. */
+#quantaDiscoveryFeed[hidden],#siteQuickCards[hidden],#scienceQuickCards[hidden]{display:none!important}
+.oracle-card-deck-stage>article.iqc-card{padding:12px;border-radius:17px;background:#fff;border:1px solid #e2dce0;display:grid;gap:11px;min-width:0}
+.oracle-card-deck-stage>article.iqc-card .iqc-kind{color:#9d4338;font:800 11px system-ui;letter-spacing:.09em;text-transform:uppercase}
+.oracle-card-deck-stage>article.iqc-card>h3{font-size:20px;line-height:1.2;color:#23232a;margin:0}
+.oracle-card-deck-stage>article.iqc-card .iqc-inline-tools{min-width:0}
+.oracle-card-deck-stage>article.iqc-card .qcx-experience{margin:0}
+.oracle-card-deck-stage>article.iqc-card .iqc-actions{display:flex;flex-wrap:wrap;margin:4px 0}
+.oracle-card-deck-stage>article.iqc-card .iqc-actions a{color:#8d2c25;font-weight:750;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.oracle-card-deck-stage>article.iqc-card .qcx-art.qcx-small{min-height:170px;padding:14px}
+.qcx-art[data-brand]{background:#fbfcff;color:#222;border:1px solid #e6e8ee;box-shadow:inset 0 0 0 1px #fff}
+.qcx-art[data-brand]:before,.qcx-art[data-brand]:after{display:none}
+.qcx-art[data-brand] .qcx-brand-hero{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;text-align:center;min-width:0;flex:1;padding:6px}
+.qcx-art[data-brand] .qcx-brand-icon{width:60px;height:60px;object-fit:contain}
+.qcx-art[data-brand] .qcx-brand-title{font-size:clamp(26px,6vw,40px);font-weight:800;letter-spacing:-.045em;line-height:1.1;overflow-wrap:anywhere}
+.qcx-art[data-brand] .qcx-brand-caption{font-size:12px;color:#656874;text-align:center;line-height:1.35}
+.qcx-art[data-brand="google"]{background:#fff;min-height:165px;justify-content:center;align-items:center;gap:4px}
+.qcx-google-wordmark{display:block;width:min(225px,80%);height:auto;object-fit:contain;max-height:84px}
+.qcx-google-backup{font:bold 45px system-ui;letter-spacing:-.08em;color:#4285f4}
+.qcx-art[data-brand="google"] .qcx-brand-caption{font-size:12px;color:#64666c}
+.qcx-art[data-brand="bing"]{background:linear-gradient(145deg,#eefaf9,#ffffff)}
+.qcx-art[data-brand="bing"] .qcx-brand-title{color:#008676}
+.qcx-art[data-brand="youtube"]{background:#fff7f7}
+.qcx-art[data-brand="youtube"] .qcx-brand-title{color:#e02221}
+.qcx-art[data-brand="facebook"]{background:#f2f6ff}
+.qcx-art[data-brand="facebook"] .qcx-brand-title{color:#0866ff}
+.qcx-art[data-brand="instagram"]{background:linear-gradient(120deg,#fff8fb,#f9f1ff)}
+.qcx-art[data-brand="instagram"] .qcx-brand-title{color:#af267b}
+.qcx-art[data-brand="reddit"]{background:#fff6ee}
+.qcx-art[data-brand="reddit"] .qcx-brand-title{color:#ed4400}
+.qcx-art[data-brand="x"],.qcx-art[data-brand="tiktok"]{background:#15181d;color:#fff}
+.qcx-art[data-brand="x"] .qcx-brand-title,.qcx-art[data-brand="tiktok"] .qcx-brand-title{color:#fff}
+.qcx-art[data-brand="x"] .qcx-brand-caption,.qcx-art[data-brand="tiktok"] .qcx-brand-caption{color:#bec5cb}
+.qcx-art[data-brand="whatsapp"]{background:#effbf4}
+.qcx-art[data-brand="whatsapp"] .qcx-brand-title{color:#13894d}
+.qcx-art[data-brand="cnn"]{background:#fff5f3}
+.qcx-art[data-brand="cnn"] .qcx-brand-title{color:#be1915}
+.qcx-art[data-brand="fox-news"]{background:#f3f7fe}
+.qcx-art[data-brand="fox-news"] .qcx-brand-title{color:#244779}
+.qcx-art[data-brand="chatgpt"]{background:#f3f7f6}
+.qcx-art[data-brand="chatgpt"] .qcx-brand-title{color:#256452}
+.qcx-art[data-brand="yahoo-news"]{background:#f7f2ff}
+.qcx-art[data-brand="yahoo-news"] .qcx-brand-title{color:#6329a4}
+.qcx-art[data-brand="starmaker"]{background:linear-gradient(145deg,#fff5fb,#f4f4ff)}
+.qcx-art[data-brand="starmaker"] .qcx-brand-title{color:#71349b}
+.qcx-native-search{display:flex;flex-wrap:nowrap;gap:8px;align-items:stretch}
+.qcx-native-search .qcx-input{border-radius:28px;box-shadow:0 2px 12px #27385214;border:1px solid #cbd0d8;padding:14px 17px;min-width:0}
+.qcx-native-search .qcx-button{border-radius:28px;min-width:94px}
+.qcx-art[data-brand="google"]+.iqc-kind{margin:0}
+@media(max-width:480px){.oracle-card-deck-stage>article.iqc-card{padding:10px}.qcx-native-search{flex-wrap:wrap}.qcx-native-search .qcx-input{width:100%;flex-basis:100%}.qcx-native-search .qcx-button{width:100%}}
