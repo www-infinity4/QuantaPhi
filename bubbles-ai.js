@@ -1898,7 +1898,7 @@ async function consumeOwnerCodeFromChat(message,fromVoice){
 async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  const spoken=String(text||'').trim();
  // Voice turns must never overwrite partially typed messages.
- const clearSentComposer=()=>{if(!fromVoice&&input.value.trim()===spoken)clearSentComposer();};
+ const clearSentComposer=()=>{if(!fromVoice&&input.value.trim()===spoken)input.value='';};
  // Observation is delivered separately so its untrusted words can never be
  // classified as an owner job, local tool command, navigation, or approval.
  const nativeEvidence=nativeOverlay?String(androidScreenEvidence||'').slice(0,7000):'';
