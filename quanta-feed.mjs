@@ -5,7 +5,7 @@ import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountSpaceSource} from './quanta-feed-spaces.mjs';
 import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
-import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,markViewed,markOpened,toggleFollowing} from './quanta-feed-rank.mjs';
+import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing} from './quanta-feed-rank.mjs';
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
  id:c.id,name:c.name,category:c.kind,feature:c.feature,study:c.details,
@@ -29,19 +29,20 @@ export const ALL_FEED_CARDS=Object.freeze([...new Map([...fromSources,...fromSci
 export const feedCard=id=>ALL_FEED_CARDS.find(c=>c.id===id)||null;
 const create=(tag,cl,text)=>{const node=document.createElement(tag);if(cl)node.className=cl;if(text!==undefined)node.textContent=text;return node;};
 const safeRead=()=>{try{return cleanFeedState(JSON.parse(localStorage.getItem(FEED_STORAGE_KEY)||'{}'));}catch{return cleanFeedState({});}};
-let state=safeRead(),tab='public',current='',query='',showCount=16;
+let state=safeRead(),tab='public',current='',query='',showCount=16,lastReason='';
 // Quant signals are derived in memory from the authenticated user’s existing ledger.
 // They are NEVER written to anonymous localStorage.
 let quantScores={},quantConnected=false,quantAttempted=false;
 const ranking=()=>({...state,catalog:ALL_FEED_CARDS,quantScores});
 const persist=()=>{try{localStorage.setItem(FEED_STORAGE_KEY,JSON.stringify(state));}catch{/* Anonymous state can still work for this page. */}};
+const shareChange=()=>window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'public-feed'}}));
 function choose(card){
  if(!card)return;
  if(current&&current!==card.id)state=markViewed(state,current);
  current=card.id;persist();
 }
 function open(card){
- state=markOpened(state,card.id);persist();
+ state=markOpened(safeRead(),card.id);persist();shareChange();
  const target=card.route;
  if(typeof window.QuantaOpenSite==='function'){
   // Let the site's original in-page viewer own the selected source card.
@@ -54,7 +55,7 @@ function followButton(card,refresh){
  const b=create('button','qf-follow'+(followed?' qf-saved':''),followed?'✓ Following':'+ Follow');
  b.type='button';b.setAttribute('aria-label',(followed?'Remove ':'Add ')+card.name+(followed?' from':' to')+' Following');
  b.setAttribute('aria-pressed',String(followed));b.addEventListener('click',()=>{
-  state=toggleFollowing(state,card.id);persist();refresh();
+  state=toggleFollowing(safeRead(),card.id);persist();refresh();shareChange();
  });return b;
 }
 function makeTile(card,refresh){
@@ -70,6 +71,7 @@ function makeTile(card,refresh){
 }
 function renderHome(){
  const host=document.getElementById('quantaDiscoveryFeed');if(!host)return;
+ state=safeRead();
  const refresh=()=>renderHome();
  host.replaceChildren();
  const heading=create('div','qf-heading');
@@ -90,8 +92,12 @@ function renderHome(){
  const controls=create('div','qf-controls');
  const next=create('button','qf-button','Next unseen card →');next.type='button';
  next.addEventListener('click',()=>{
-  if(current)state=markViewed(state,current);
-  current='';state.advance++;persist();renderResults(true);
+  const prior=current;
+  if(prior)state=markViewed(state,prior);
+  const pick=nextFeedDirection(ALL_FEED_CARDS,tab,ranking(),prior,query);
+  current=pick.card?.id||'';
+  lastReason=pick.reason||'';
+  persist();renderResults(false);
  });
  controls.append(next);host.append(controls);
  const grid=create('div','qf-grid');grid.id='quantaFeedGrid';host.append(grid);
@@ -103,7 +109,7 @@ function renderHome(){
   const ranked=feedCandidates(ALL_FEED_CARDS,tab,ranking(),query);
   if(!ranked.length){feature.replaceChildren(create('p','qf-empty',tab==='following'?'No followed cards yet. Open Public and tap + Follow.':'No matches. Try another search.'));grid.replaceChildren();more.hidden=true;next.disabled=true;status.textContent='No matching cards';return;}
   if(!current||!ranked.some(c=>c.id===current)){
-   const pick=nextFeedCard(ALL_FEED_CARDS,tab,ranking(),nextCard?'':current,query);
+   const pick=nextFeedCard(ALL_FEED_CARDS,tab,ranking(),current,query);
    current=pick?.id||ranked[0].id;
   }
   const selected=ranked.find(c=>c.id===current)||ranked[0];
@@ -116,6 +122,8 @@ function renderHome(){
   const original=create('a','qf-link','Original source ↗');original.href=selected.url;original.target='_blank';original.rel='noopener noreferrer';
   buttons.append(openBtn,followButton(selected,refresh),original);info.append(buttons);
   const tools=create('div','qf-inline-tool');mountCardTools(tools,selected);info.append(tools);
+  const direction=create('p','qf-direction',lastReason?'Next direction · '+lastReason:'Select a card to explore, then use Next to continue a related activity.');
+  info.append(direction);
   feature.replaceChildren(visual,info);
   grid.replaceChildren();
   for(const c of ranked.slice(0,showCount))grid.append(makeTile(c,refresh));
@@ -174,6 +182,11 @@ function renderDetail(){
  function renderDetailAgain(){const b=host.querySelector('.qf-follow');if(!b)return;const yes=state.following.includes(card.id);b.textContent=yes?'✓ Following':'+ Follow';b.classList.toggle('qf-saved',yes);b.setAttribute('aria-pressed',String(yes));}
 }
 if(typeof document!=='undefined'){
+ window.addEventListener('quantaphi:feed-updated',event=>{
+  if(event.detail?.origin==='public-feed')return;
+  state=safeRead();
+  if(document.getElementById('quantaDiscoveryFeed'))renderHome();
+ });
  const mount=()=>{renderHome();renderDetail();};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
 }
