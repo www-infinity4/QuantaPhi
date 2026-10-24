@@ -39,22 +39,44 @@ export function createCardArtwork(card,small=false){
  const text=(category+' '+title).toLowerCase();
  const theme=/radio/.test(text)?'radio':/music|karaoke|starmaker/.test(text)?'music':/youtube|video|tiktok/.test(text)?'video':/news|cnn|fox/.test(text)?'news':/social|facebook|instagram|reddit|whatsapp|x \/ grok/.test(text)?'social':/coin|vam|silver|gold|mint|pcgs|ngc/.test(text)?'coin':/market|ebay|toy|antique/.test(text)?'market':/finance|invest|robinhood|chime/.test(text)?'finance':/science|knowledge|wikipedia/.test(text)?'research':'other';
  art.dataset.theme=variants.includes(theme)?theme:'other';
- art.append(node('span','qcx-art-kicker','INFINITY · '+category.toUpperCase()),node('strong','qcx-art-mark',mark),node('span','qcx-art-name',title));
+ art.append(node('span','qcx-art-kicker','INFINITY · '+category.toUpperCase()));
+ // Source-owned site icon instead of an invented brand photograph or emoji.
+ // If unavailable, the original editorial lettering stays legible.
+ if(card.official){
+  try{
+   const origin=new URL(card.official);
+   if(origin.protocol==='https:'){
+    const img=node('img','qcx-site-icon');img.alt=title+' website icon';
+    img.loading='lazy';img.referrerPolicy='no-referrer';
+    img.src='https://www.google.com/s2/favicons?domain='+encodeURIComponent(origin.hostname)+'&sz=128';
+    img.addEventListener('error',()=>img.remove(),{once:true});
+    art.append(img);
+   }
+  }catch{/* Keep the offline-safe editorial cover. */}
+ }
+ art.append(node('strong','qcx-art-mark',mark),node('span','qcx-art-name',title));
  art.setAttribute('aria-label',title+' '+category+' cover');
  return art;
 }
 function searchTool(root,card,options={}){
  const spec=searchBase[card.id];if(!spec)return false;
- const panel=section(root,'SEARCH · ORIGINAL SOURCE','Find exactly what interests you');
- const form=node('form','qcx-search-form');const field=input(card.id==='facebook'?'Local events, people, groups…':card.id==='ebay'?'Morgan dollars, radios, parts…':'Topic, show, artist, product…','Search '+spec[1]);
+ const direct=card.id==='google'||card.id==='bing';
+ const panel=section(root,direct?'SEARCH · '+spec[1].toUpperCase():'SEARCH · ORIGINAL SOURCE',direct?'Search the web with '+spec[1]:'Find exactly what interests you');
+ const form=node('form','qcx-search-form');const field=input(card.id==='facebook'?'Local events, people, groups…':card.id==='ebay'?'Morgan dollars, radios, parts…':direct?'Search '+spec[1]+'…':'Topic, show, artist, product…','Search '+spec[1]);
  if(card.id==='instagram')field.placeholder='Enter a hashtag (without #)';
  const b=node('button','qcx-button','Search '+spec[1]);b.type='submit';
- form.append(field,b);form.addEventListener('submit',e=>{
-  e.preventDefault();const query=field.value.trim().replace(/^#/,'');if(!query)return;
-  // Provider-owned search, not a pretend in-card copy or API result.
-  const url=spec[0]+encodeURIComponent(query);
-  window.open(url,'_blank','noopener,noreferrer');
- });
+ field.required=true;form.append(field,b);
+ if(direct){
+  // A genuine browser GET search. No intermediary Infinity viewer page,
+  // fake search results, JavaScript pop-up, or extra Open card button.
+  form.method='GET';form.action=spec[0].split('?')[0];form.target='_blank';field.name='q';
+ }else{
+  form.addEventListener('submit',e=>{
+   e.preventDefault();const query=field.value.trim().replace(/^#/,'');if(!query)return;
+   // Other sites' authenticated search cannot be copied into this origin.
+   window.open(spec[0]+encodeURIComponent(query),'_blank','noopener,noreferrer');
+  });
+ }
  panel.append(form);
  if(card.id==='facebook')note(panel,'Search at Facebook. Local personalization only follows location or interests you explicitly enter.');
  if(card.id==='cnn'||card.id==='fox-news')note(panel,'Publisher-specific web search. Results, dates and article rights remain with the original publisher.');
@@ -249,8 +271,8 @@ export function mountCardTools(root,card){
  if(id==='wikipedia')wikipediaTool(root,card);
  if(id==='gold'||id==='silver')calculator(root,card);
  checklist(root,card);
- trendingTool(root,card);
  searchTool(root,card);
+ trendingTool(root,card);
  if(root.querySelectorAll('.qcx-tool').length===0){
   const tool=section(root,'INVESTIGATE','Research this source');
   const field=input('What would you like to investigate?','Research topic');
