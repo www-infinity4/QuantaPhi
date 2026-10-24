@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-24T06:34:40.055822Z",
+  "checked_at": "2026-10-24T11:41:15.371721Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "internet",
+      "query": "anna wintour",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T11:20:00Z",
+      "related_news_urls": [
+        "https://parade.com/celebrities/jenny-mccarthy-anna-wintour-stupid-bob",
+        "https://www.fashiontimes.co.uk/harry-styles-anna-wintour-go-bed-concert-1766198",
+        "https://www.mirror.co.uk/lifestyle/woman-looks-bored-harry-styles-37802945"
+      ]
+    },
+    {
+      "query": "mega millions october 23 drawing",
+      "approx_searches": "100+",
+      "published_at": "2026-10-24T11:20:00Z",
+      "related_news_urls": [
+        "https://www.cbs8.com/article/news/nation-world/mega-millions-jackpot-winning-numbers-friday-oct-23-2026/507-24d953b3-4d8e-4413-94a2-62dfc8de7ad2",
+        "https://www.usatoday.com/story/money/lottery/2026/10/23/mega-millions-winning-numbers-oct-23-2026-drawing/92401206007/",
+        "https://www.cincinnati.com/story/news/lottery/2026/10/21/did-anyone-win-mega-millions-last-night-oct-20-drawing-numbers-results/92345610007/"
+      ]
+    },
+    {
+      "query": "gina hinojosa",
       "approx_searches": "500+",
-      "published_at": "2026-10-24T06:20:00Z",
+      "published_at": "2026-10-24T11:20:00Z",
       "related_news_urls": [
-        "https://openai.com/index/securing-our-frontier-model-training-environment/",
-        "https://www.bloomberg.com/news/articles/2026-10-23/openai-to-train-ai-models-without-internet-after-cyber-incidents",
-        "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+        "https://www.multistate.us/elections/governor-race/texas-2026",
+        "https://www.click2houston.com/news/local/2026/10/22/gina-hinojosa-to-hold-get-out-the-vote-events-in-houston-fort-bend-county/",
+        "https://www.ktsm.com/news/gina-hinojosa-to-visit-el-paso-during-one-fight-tour/"
       ]
     },
     {
-      "query": "abubakar vagaev",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T06:00:00Z",
+      "query": "connections hints today",
+      "approx_searches": "500+",
+      "published_at": "2026-10-24T11:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/jacob-malkoun-vs-abubaka-vagaev-024028452.html",
-        "https://www.foxsports.com.au/ufc/ufc-2026-australias-jacob-malkoun-vs-abubakar-vagaev-at-ufc-333-preview-interview-latest-news/news-story/818fb961e533a58440a3b026774dca9f",
-        "https://sportsbook.fanduel.com/mma/ufc-matches/abubakar-vagaev-v-jacob-malkoun-36212145"
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-october-24-2026",
+        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-and-answers-for-saturday-oct-24-1231/",
+        "https://lifehacker.com/entertainment/nyt-connections-answer-today-october-24-2026"
       ]
     },
     {
-      "query": "detention",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T06:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/10/23/us/politics/appeals-court-trump-constitution-detention.html",
-        "https://news.bloomberglaw.com/litigation/full-fifth-circuit-upholds-trumps-migrant-detention-policy",
-        "https://www.reuters.com/legal/government/detained-migrants-have-no-constitutional-right-bond-hearings-us-court-rules-2026-10-23/"
-      ]
-    },
-    {
-      "query": "zendaya",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T06:00:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/awards/zendaya-oscars-dune-3-best-actress-1236918133/",
-        "https://www.yahoo.com/entertainment/movies/articles/dune-part-three-oscar-awards-213900970.html",
-        "https://www.avclub.com/zendaya-dune-part-three-oscars-best-actress"
-      ]
-    },
-    {
-      "query": "grant dawson",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T06:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/grant-dawson-vs-nurullo-aliev-024220929.html",
-        "https://www.ufc.com.br/video/161103",
-        "https://sports.betmgm.com/en/blog/ufc/333-grant-dawson-nurullo-aliev-predictions-odds-bm05/"
-      ]
-    },
-    {
-      "query": "dove perfume",
+      "query": "nyc marathon 2026",
       "approx_searches": "100+",
-      "published_at": "2026-10-24T06:00:00Z",
+      "published_at": "2026-10-24T11:20:00Z",
       "related_news_urls": [
-        "https://www.beautypackaging.com/breaking-news/dove-debuts-its-first-ever-fine-fragrance/",
-        "https://www.instyle.com/dove-beauty-bar-limited-edition-perfume-12186358",
-        "https://people.com/dove-launches-its-first-ever-fine-fragrance-12189843"
+        "https://www.nyc.gov/mayors-office/news/2026/10/mayor-mamdani-announces-350-free-tickets-to-tcs-new-york-city-ma",
+        "https://www.aol.com/articles/delta-offering-nyc-marathon-runners-173051000.html",
+        "https://secretnyc.co/2026-tcs-nyc-marathon-freebies-discounts/"
       ]
     },
     {
-      "query": "state farm",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-24T05:50:00Z",
-      "related_news_urls": [
-        "https://wnax.com/commodity-wrap/10-23-26-zach-tindall-with-producers-livestock-marketing/",
-        "https://wnax.com/news/180081-field-work-steams-forward/",
-        "https://wnax.com/news/180081-usda-crop-progress-oct-19/"
-      ]
-    },
-    {
-      "query": "iasmin lucindo",
+      "query": "dena vs softbank",
       "approx_searches": "100+",
-      "published_at": "2026-10-24T05:50:00Z",
+      "published_at": "2026-10-24T11:20:00Z",
       "related_news_urls": [
-        "https://www.ufc.com/news/iasmin-lucindo-back-in-game-ufc-333",
-        "https://mmasucka.com/news/iasmin-lucindo-opens-up-about-doping-case-ahead-of-ufc-333-return/",
-        "https://www.ufc.com/video/161106"
+        "https://news.yahoo.co.jp/articles/428f4a3eeee20ab4f8d649e75deda585d350de0f",
+        "https://www.nikkansports.com/baseball/photonews/photonews_nsInc_202610240000997-1.html",
+        "https://www.sanspo.com/article/20261024-R3V45WR4DJJEHEEDY5R2G3CVFE/"
       ]
     },
     {
-      "query": "android devices showing january 2027 update",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T05:40:00Z",
+      "query": "rayo vallecano - elche c. f.",
+      "approx_searches": "500+",
+      "published_at": "2026-10-24T11:10:00Z",
       "related_news_urls": [
-        "https://www.androidpolice.com/google-sends-android-phones-into-2027-update-date-mix-up/",
-        "https://www.sammobile.com/news/samsung-phones-get-google-play-system-update-from-future/",
-        "https://sammyguru.com/galaxy-phones-january-2027-play-system-update/"
+        "https://www.marca.com/futbol/rayo/2026/10/23/penas-celebran-acuerdo-avisan-batalla-supone-avance-salvacion-rayo.html",
+        "https://es-us.noticias.yahoo.com/deportes/rayo-vallecano-vs-elche-alineaciones-090000463.html",
+        "https://as.com/futbol/primera/el-dia-que-vallecas-cautivo-a-anselmi-f202610-n/"
       ]
     },
     {
-      "query": "bolaji oki",
+      "query": "rayo vs elche",
       "approx_searches": "200+",
-      "published_at": "2026-10-24T05:40:00Z",
+      "published_at": "2026-10-24T11:10:00Z",
       "related_news_urls": [
-        "https://clutchpoints.com/betting/daniel-santos-vs-bolaji-oki-prediction-odds-pick-for-ufc-333",
-        "https://robinhood.com/us/en/prediction-markets/mma/events/333-kody-steele-vs-noah-gugnon-oct-24-2026/",
-        "https://twaslnews1.twaslnews.com/6498764/"
+        "https://www.sportsmole.co.uk/football/rayo-vallecano/preview/rayo-vallecano-vs-elche-prediction-team-news-lineups_607489.html",
+        "https://www.docsports.com/free-picks/soccer/2026/rayo-vallecano-vs-elche-prediction-10-25-2026-soccer-pick-tips-and-odds.html",
+        "https://onefootball.com/en/news/preview-rayo-vallecano-vs-elche-cf-team-news-lineups-predictions-la-liga-2410-43653452"
+      ]
+    },
+    {
+      "query": "samsung galaxy z fold 8 vs iphone duo",
+      "approx_searches": "200+",
+      "published_at": "2026-10-24T11:10:00Z",
+      "related_news_urls": [
+        "https://arstechnica.com/gadgets/2026/10/samsung-all-but-confirms-iphone-duo-is-goosing-galaxy-z8-sales/",
+        "https://mashable.com/tech/apple-iphone-duo-samsung-foldable-sales",
+        "https://news.samsung.com/uk/samsung-continues-to-see-record-sales-for-galaxy-z8-series-in-europe-with-galaxy-z-fold8-and-fold8-ultra-up-almost-50"
+      ]
+    },
+    {
+      "query": "voley",
+      "approx_searches": "100+",
+      "published_at": "2026-10-24T11:10:00Z",
+      "related_news_urls": [
+        "https://peru21.pe/deportes/alianza-lima-vs-regatas-lima-en-vivo-liga-peruana-de-voley-latina-tv-online/",
+        "https://radioondaazul.com/este-24-y-25-de-octubre-se-continuara-con-la-segunda-fecha-de-la-liga-peruana-de-voley-2026-2027-fase-1/",
+        "https://www.infobae.com/peru/deportes/2026/10/23/clarivett-yllescas-jugara-en-alianza-lima-vs-regatas-lima-la-condicion-de-la-central-previo-al-clasico-de-la-liga-peruana-de-voley-20262027/"
       ]
     }
   ]
