@@ -98,13 +98,32 @@ body:has(#q:focus) .media,body:has(#qrefine:focus) .media{content-visibility:hid
 #result .qbranch-actions :is(button,a),#result .qregion-act,
 #result .qassim-actions :is(button,a){appearance:none;display:inline-flex;align-items:center;justify-content:center;border:1px solid #bf9ce9;border-radius:999px;background:linear-gradient(145deg,#fefbff,#ecdfff);color:#542783;font:700 12px/1.3 inherit;text-decoration:none;padding:8px 12px;min-height:34px;box-shadow:0 0 8px #9c62e455;cursor:pointer}
 #result .qregion-act{margin:6px 0 0 5px}
-#result .qassim-package{list-style:none;margin:12px 0;padding:16px;border:1px solid #ae76ff;border-radius:19px;background:linear-gradient(125deg,#32115d,#22103e);box-shadow:inset 0 0 24px #7534b52a,0 0 15px #8e4cde50}
-#result .qassim-package strong{display:block;font-size:17px}
-#result .qassim-package p{margin:8px 0;line-height:1.5}
-#result .qassim-package small{display:block;color:#ddc9fc;line-height:1.5}
-#result .qassim-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
-#result .qassim-count{display:block;color:#d7c4ee;font-size:11px;line-height:1.5;margin-top:10px}
-#result .qzonePurple #qPurpleList{padding:0;list-style:none}
+/* Accessible Oracle Octaves research cards — no dark-on-dark inherited type. */
+#result .qzonePurple #qPurpleList{display:grid;gap:14px;padding:0;margin:16px 0 0;list-style:none;min-width:0}
+#result .qassim-package{list-style:none;margin:12px 0;padding:18px;min-width:0;box-sizing:border-box;border:1px solid #d8c7e6;border-left:5px solid #6a3292;border-radius:18px;background:linear-gradient(150deg,#fff,#fbf8ff);color:#342744;box-shadow:0 8px 22px #17052626}
+#result .qzonePurple #qPurpleList .qassim-package{margin:0;background:linear-gradient(150deg,#fff,#fbf8ff)!important;color:#342744!important;border-color:#d8c7e6!important;border-left-color:#6a3292!important}
+#result .qzonePurple .qassim-package :is(h4,strong,p,small),#result .qzonePurple .qassim-package{color:#342744!important;-webkit-text-fill-color:currentColor}
+#result .qassim-head{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px 12px}
+#result .qzonePurple .qassim-package .qassim-title{margin:0;flex:1 1 180px;font-size:19px;line-height:1.3;letter-spacing:0;font-weight:850;color:#2b1742!important;-webkit-text-fill-color:#2b1742}
+#result .qzonePurple .qassim-package .qassim-status{display:inline-flex;align-items:center;max-width:100%;padding:5px 9px;border-radius:999px;border:1px solid #d5bdea;background:#f0e6f8;color:#5b297f!important;-webkit-text-fill-color:#5b297f;font:800 12px/1.3 system-ui,sans-serif}
+#result .qzonePurple .qassim-package .qassim-description{margin:12px 0;color:#46364f!important;-webkit-text-fill-color:#46364f;font-size:16px;line-height:1.6;overflow-wrap:anywhere}
+#result .qzonePurple .qassim-package .qassim-topics{margin:12px 0 0;color:#584569!important;-webkit-text-fill-color:#584569;font-size:14px;line-height:1.55;overflow-wrap:anywhere}
+#result .qzonePurple .qassim-package .qassim-question{margin:14px 0 0;padding:12px 13px;border-radius:12px;border-left:3px solid #8550aa;background:#f4eef9;color:#342744!important;-webkit-text-fill-color:#342744;font-size:15px;line-height:1.5;overflow-wrap:anywhere}
+#result .qzonePurple .qassim-package .qassim-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px}
+#result .qzonePurple .qassim-package .qassim-actions > :is(button,a){box-sizing:border-box;display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:50px;margin:0;padding:11px 14px;border:1px solid #b99bcf;border-radius:13px;background:#f5effa;color:#3d2360!important;-webkit-text-fill-color:#3d2360;text-decoration:none!important;text-align:center;font:800 15px/1.3 system-ui,sans-serif;white-space:normal;overflow-wrap:anywhere;box-shadow:none;cursor:pointer}
+#result .qzonePurple .qassim-package .qassim-actions > :first-child{background:#542779;color:#fff!important;-webkit-text-fill-color:#fff;border-color:#542779}
+#result .qzonePurple .qassim-package .qassim-actions > :last-child{grid-column:1/-1;background:#e9dbf7;border-color:#aa8bc6;color:#37204d!important;-webkit-text-fill-color:#37204d}
+#result .qzonePurple .qassim-package .qassim-actions > :is(button,a):focus-visible{outline:3px solid #2e92b9;outline-offset:3px}
+#result .qzonePurple .qassim-package .qassim-actions > :is(button,a):active{filter:brightness(.95)}
+#result .qzonePurple .qassim-package .qassim-source{display:inline-block;margin-top:14px;color:#4d267d!important;-webkit-text-fill-color:#4d267d;font-size:14px;font-weight:800;text-decoration:underline;overflow-wrap:anywhere}
+#result .qzonePurple .qassim-count{display:block;margin:15px 0;color:#eee5fc!important;-webkit-text-fill-color:#eee5fc;font-size:13px;line-height:1.55}
+@media(max-width:540px){
+ #result .qassim-package{padding:15px}
+ #result .qzonePurple .qassim-package .qassim-actions{grid-template-columns:minmax(0,1fr)}
+ #result .qzonePurple .qassim-package .qassim-actions > :last-child{grid-column:auto}
+ #result .qzonePurple .qassim-package .qassim-title{font-size:18px}
+}
+
 </style><style id="quantWalletStyle">
 .qwalletPanel{position:fixed;inset:0;z-index:9999;background:#f7f3fb;color:#21172b;padding:16px;overflow:auto}.qwalletHead{display:flex;align-items:center;justify-content:space-between;gap:12px}.qwalletHead h2{margin:0}.qwalletClose{border:0;border-radius:12px;padding:10px 14px;font-weight:900}.qwalletTabs{display:flex;gap:8px;margin:18px 0}.qwalletTabs button{flex:1;border:0;border-radius:14px;padding:12px;font-weight:900}.qwalletBox{background:#fff;border:1px solid #ddd2e8;border-radius:18px;padding:16px;margin-top:12px}.qwalletBox label{display:block;font-weight:800;margin:12px 0 5px}.qwalletBox input{box-sizing:border-box;width:100%;padding:12px;border:1px solid #b9a9c9;border-radius:12px;font-size:16px}.qwalletPrimary{width:100%;margin-top:14px;border:0;border-radius:14px;padding:13px;background:#5f259f;color:#fff;font-weight:900}.qwalletId{overflow-wrap:anywhere;font-family:monospace;background:#f3edf8;padding:12px;border-radius:12px}.qwalletMsg{margin-top:12px;font-weight:700}
 .book-shelf-link{margin:8px 0 16px}.book-shelf-link a{display:block;border-radius:999px;background:#fff4b8;border:1px solid #e7d17d;color:#382400;text-align:center;text-decoration:none;font-weight:900;padding:12px 14px}</style><script src="https://www-infinity4.github.io/C13b0/unified-token-count.js?v=20261002-stable3"></script><script src="asset-balances.js?v=20261004-authoritative1"></script><script src="cloud-wallet-client.js?v=20261011-account-selection1"></script><script src="music-quant-store.js?v=20261005-org-runtime1"></script><script src="music-quant-cloud.js?v=20261011-full-history1"></script><script>window.__quantaStarServerSettlement=true;</script><script src="wallet-runtime.js?v=20261010-masked-media-sync4" data-control-phi-wallet-only="true"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"992ccaa311754974becbcebf74de1b34"}'></script><script src="search-wallet-sync.js?v=20261005-pairedmint1"></script><script src="star-coin-cloud.js?v=20261010-reconcile-and-pay1"></script><script defer src="domain-health.js?v=20261004-org7"></script><style id="shoplcShirtStyle">
@@ -1810,7 +1829,7 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script src="media-repair.js?v=20261003-refine2"></script><script>window.PhiInfiniteBookFeedUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/feed';window.PhiInfiniteBookBanksUrl='https://infinite-book-library.marvaseater.workers.dev/v1/book/banks';</script><script defer src="/infinite-book-discovery.js?v=20261009-available-source1"></script>
 <script defer src="/phi-scholastic-data.js?v=20261011-context-compare1"></script>
 <script defer src="/phi-business-search.js?v=20261011-shopping-source1"></script>
-<script defer src="/phi-assimilation.js?v=20261011-relevance1"></script>
+<script defer src="/phi-assimilation.js?v=20261024-mobile-readable1"></script>
 <script defer src="/phi-story-share.js?v=20261011-full-story1"></script>
 <script defer src="/infinite-book.js?v=20261021-fresh-request1"></script>
 <script defer src="/infinity-concepts.js?v=20261019-physics-images1"></script>

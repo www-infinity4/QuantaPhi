@@ -12,6 +12,8 @@ on:
       - 'source-quick-cards.mjs'
       - 'source-quick-card.html'
       - 'index.html'
+      - 'phi-assimilation.js'
+      - 'test/assimilation-mobile-accessibility.test.mjs'
       - 'test/quanta-card-browser.spec.mjs'
       - 'test/quanta-card-experience.test.mjs'
       - 'test/source-quick-cards.test.mjs'
@@ -36,8 +38,11 @@ jobs:
           node --check quanta-feed.mjs
           node --check source-quick-cards.mjs
           node --check premium-source-cards.mjs
+          node --check phi-assimilation.js
       - name: Run interactive card regression tests
         run: node --test test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs
+      - name: Check assimilation contrast and action contracts
+        run: node --test test/assimilation-mobile-accessibility.test.mjs
       - name: Check original-card preservation
         run: node test/oracle-card-deck.test.cjs
       - name: Install Chromium for live browser QA
