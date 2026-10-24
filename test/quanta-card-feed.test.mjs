@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {DISCOVERY_CARDS,findDiscovery,safeDiscovery} from '../quanta-feed-catalog.mjs';
 import {ALL_FEED_CARDS,feedCard} from '../quanta-feed.mjs';
 import {validSpaceLink,readIndexedSpaces} from '../quanta-feed-spaces.mjs';
+import {quantScores,loadOwnQuantScores} from '../quanta-feed-quants.mjs';
 import {cleanFeedState,feedCandidates,nextFeedCard,markOpened,markViewed,toggleFollowing} from '../quanta-feed-rank.mjs';
 const raw=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const base=()=>({...cleanFeedState({}),catalog:ALL_FEED_CARDS});
@@ -109,4 +110,23 @@ test('live Spaces card reads only verified wallet-indexed original titles withou
  assert.match(result.episodes[0].status,/unverified/);
  assert.ok(calls.every(c=>c.token==='Bearer sq_'+ 'a'.repeat(32)));
  assert.deepEqual(calls.map(c=>c.url.split('/v1/')[1]),['hosts','episodes?handle=tester']);
+});
+
+test('For You uses only signed-in committed Quant search topics and never persists raw queries',async()=>{
+ const radios=ALL_FEED_CARDS.filter(x=>x.category==='Vintage radios');
+ const topics=[{query:'philco tube radio restoration',hits:7},{query:'silver Morgan dollar',hits:2}];
+ const map=quantScores(topics,ALL_FEED_CARDS);
+ assert.ok(map['radio-philco-90']>0);
+ assert.ok(map['silver']>0);
+ const state={...base(),quantScores:map};
+ const ranked=feedCandidates(ALL_FEED_CARDS,'for-you',state);
+ assert.ok(ranked.indexOf(feedCard('radio-philco-90'))<ranked.indexOf(feedCard('whatsapp')));
+ let requests=0;
+ const bridge={authenticatedFetch:async(url)=>{requests++;assert.match(url,/quants\/interests/);return {ok:true,json:async()=>({ok:true,total_searches:15,topics})}}};
+ const result=await loadOwnQuantScores(bridge,ALL_FEED_CARDS);
+ assert.equal(result.connected,true);
+ assert.equal(result.committedSearches,15);
+ assert.equal(requests,1);
+ assert.ok(!JSON.stringify(cleanFeedState(state)).includes('philco tube radio restoration'));
+ assert.equal((await loadOwnQuantScores(null,ALL_FEED_CARDS)).connected,false);
 });
