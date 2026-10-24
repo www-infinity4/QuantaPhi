@@ -75,6 +75,7 @@ test('public traffic endpoint serves durable counts even when live token is abse
  const body=await res.json();
  assert.equal(body.requests,2310);
  assert.equal(body.scope,'recorded_since');
+ assert.equal(body.refreshConfigured,false);
  assert.equal(res.headers.get('cache-control'),'public, max-age=60, s-maxage=120');
 });
 test('uninitialized database fails safe; unrelated paths and writes are denied',async()=>{
