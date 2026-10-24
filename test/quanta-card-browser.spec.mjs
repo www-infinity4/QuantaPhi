@@ -18,6 +18,9 @@ test('original single-card Oracle viewer replaces the giant feed on Android widt
  expect(overflow).toBeFalsy();
 });
 test('Google query opens actual attributed engine listings within Infinity Viewer',async({page})=>{
+ page.on('pageerror',error=>console.log('INFINITY PAGE ERROR',error.message));
+ page.on('console',message=>{if(message.type()==='error')console.log('INFINITY CONSOLE ERROR',message.text())});
+ page.on('requestfailed',request=>{if(request.url().includes('orange-brook'))console.log('INFINITY REQUEST FAILED',request.url(),request.failure()?.errorText)});
  await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
   return route.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},
    body:JSON.stringify({results:[{title:'Philco model 90 historical radio',url:'https://example.org/philco-90',content:'Real linked listing from a Google engine test fixture.',engine:'google'}]})});
