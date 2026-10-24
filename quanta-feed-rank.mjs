@@ -97,6 +97,24 @@ export function nextFeedDirection(cards,tab,state,currentId='',query=''){
    tab==='following'?'From your followed cards':tab==='public'?'Discover another interactive card':'Based on the cards you use');
  return {card:found.card,reason:explanation};
 }
+/* Round-robin eligibility within each Oracle direction. Personal ranking chooses
+ * between cards NOT shown in this round, so two high-Quant favorites cannot trap
+ * Public or For You in a two-card loop. This changes neither saved follows nor
+ * the underlying ranking/engagement ledger. */
+export function nextDeckCycle(cards,currentId,seenIds=[]){
+ const seen=new Set([...seenIds].filter(validId));
+ if(validId(currentId))seen.add(currentId);
+ let pending=cards.filter(c=>c&&validId(c.id)&&c.id!==currentId&&!seen.has(c.id));
+ let restarted=false;
+ if(!pending.length&&cards.some(c=>c&&validId(c.id)&&c.id!==currentId)){
+  seen.clear();if(validId(currentId))seen.add(currentId);
+  pending=cards.filter(c=>c&&validId(c.id)&&c.id!==currentId);
+  restarted=true;
+ }
+ const ids=new Set(pending.map(c=>c.id));
+ return {cards:cards.filter(c=>c&&((c.id===currentId)||ids.has(c.id))),
+  seen,restarted,remaining:pending.length};
+}
 export function nextFeedCard(cards,tab,state,currentId='',query=''){
  return nextFeedDirection(cards,tab,state,currentId,query).card;
 }

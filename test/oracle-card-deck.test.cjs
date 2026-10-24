@@ -17,7 +17,7 @@ assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
 assert.match(deck,/show\(entry\)/);
 assert.match(deck,/entries\.find\(x=>x\.id===spotlightRequested\)/);
 assert.match(html,/id="oracleCardCardone"/);
-assert.match(html,/oracle-card-deck\.js\?v=20261024-foxone1/);
+assert.match(html,/oracle-card-deck\.js\?v=20261024-fullcycle1/);
 assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
 assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
 
@@ -47,3 +47,9 @@ assert.doesNotMatch(deck,/\['siteQuickCards','Source quick cards/);
 assert.match(html,/id="siteQuickCards"[^>]+hidden/);
 assert.match(deck,/viewerTouched/);
 assert.match(deck,/source-google/);
+
+// Regression: For You and Public cannot oscillate between two favorites.
+assert.match(deck,/seenByTab/);
+assert.match(deck,/nextDeckCycle/);
+assert.match(deck,/tour\.remaining/);
+assert.match(deck,/ready cards in this direction/);
