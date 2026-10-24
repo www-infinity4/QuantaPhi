@@ -108,8 +108,8 @@ test('active requests do not reset the chat when a panel is reopened',async()=>{
  assert.deepEqual(state.messages,['existing']);
  assert.match(state.chatsMessage.textContent,/must finish/);
 });
-test('both website reopen and Android hide/show open new chats without wiping recorder history',()=>{
- assert.match(ui,/if\(reopening&&!nativeOverlay\)void startConversation\(\{automatic:true\}\)/);
+test('standalone website and Android reopen fresh chats while embedded cards retain their thread',()=>{
+ assert.match(ui,/if\(reopening&&!nativeOverlay&&!embedded\)void startConversation\(\{automatic:true\}\)/);
  assert.match(ui,/startFreshOnReopen:\(\)=>\{/);
  assert.match(ui,/if\(busy\|\|nativeBridgeBusy\|\|nativeSpeechPending\|\|voicePending\.length\)return false/);
  assert.match(ui,/sessionStorage\.setItem\(UPDATE_RELOAD_THREAD,'1'\)/);

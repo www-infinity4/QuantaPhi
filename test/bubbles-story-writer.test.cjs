@@ -223,9 +223,9 @@ test('reply actions take notes and prepare work without sending unapproved robot
  const history=JSON.parse(values.get('quantaphi:bubbles:history:v1:work-cards'));
  assert.equal(history.length,2);
  assert.equal(history[0].role,'user');
- get('button','Clear this view').handlers.click();
- assert.equal(values.has('quantaphi:bubbles:history:v1:work-cards'),false);
- assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'clearing chat never destroys notes');
+ get('button','New card chat').handlers.click();
+ assert.ok(values.has('quantaphi:bubbles:history:v1:work-cards'),'starting a new conversation must not erase previously saved card chat');
+ assert.ok(values.has('quantaphi:bubbles:notes:v1:work-cards'),'starting a new chat never destroys notes');
 });
 
 test('Vertigo Macro Zoom maps actual controls without fake permission or local notes resurrection',()=>{
