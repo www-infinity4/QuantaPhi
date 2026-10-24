@@ -23,7 +23,7 @@ body.oracle-quanta .qp-lab .qp-lab-title{font-family:"Iowan Old Style","Baskervi
 .qp-lab-actions a{display:inline-flex;min-height:46px;align-items:center;justify-content:center;padding:10px 16px;border:1px solid #707070;font-weight:700;font-size:12px;letter-spacing:.02em}
 .qp-lab-actions a:first-child{background:#f6f6f3;color:#0c0c0c!important;border-color:#f6f6f3}
 .qp-lab-actions a:hover{border-color:#fff;filter:brightness(1.1)}
-.qp-lab-diagram{border:1px solid #303030;background:#0b0b0b;padding:15px;min-width:0;align-self:stretch;display:flex;flex-direction:column;justify-content:space-between}
+.qp-lab-diagram{margin:0;border:1px solid #303030;background:#0b0b0b;padding:15px;min-width:0;align-self:stretch;display:flex;flex-direction:column;justify-content:space-between}
 .qp-lab-diagram figcaption{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap;font-size:10px;letter-spacing:.05em;color:#aaa}
 .qp-lab-diagram svg{width:100%;height:auto;max-height:255px;display:block;margin:12px auto;overflow:visible}
 .qp-lab-equation{font:400 clamp(11px,1.25vw,15px)/1.4 ui-monospace,monos;color:#e1e1dc;overflow-wrap:anywhere}
