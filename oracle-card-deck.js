@@ -9,6 +9,7 @@ const now=document.getElementById('oracleCardNow'),status=document.getElementByI
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
  ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
+ ['siteQuickCards','Source quick cards · Google, YouTube, Fox, CNN, StarMaker and more'],
  ['pixieStoryCard','Pixie Stories · Read and explore'],
  ['googleTrendNba','NBA · Trending matchups'],
  ['googleTrendMlb','MLB · World Series'],
