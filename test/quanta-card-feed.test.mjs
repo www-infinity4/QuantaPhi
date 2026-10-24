@@ -5,7 +5,7 @@ import {DISCOVERY_CARDS,findDiscovery,safeDiscovery} from '../quanta-feed-catalo
 import {ALL_FEED_CARDS,feedCard} from '../quanta-feed.mjs';
 import {validSpaceLink,readIndexedSpaces} from '../quanta-feed-spaces.mjs';
 import {quantScores,loadOwnQuantScores} from '../quanta-feed-quants.mjs';
-import {cleanFeedState,feedCandidates,nextFeedCard,markOpened,markViewed,toggleFollowing} from '../quanta-feed-rank.mjs';
+import {cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,directionScore,markOpened,markViewed,toggleFollowing} from '../quanta-feed-rank.mjs';
 const raw=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const base=()=>({...cleanFeedState({}),catalog:ALL_FEED_CARDS});
 test('public contains every original quick card and 23 new independent cards',()=>{
@@ -133,4 +133,54 @@ test('For You uses only signed-in committed Quant search topics and never persis
  assert.equal(requests,1);
  assert.ok(!JSON.stringify(cleanFeedState(state)).includes('philco tube radio restoration'));
  assert.equal((await loadOwnQuantScores(null,ALL_FEED_CARDS)).connected,false);
+});
+
+test('Choose Direction learns useful next-card workflows instead of repeating favorites',()=>{
+ const cards=[
+  {id:'radio-study',name:'Philco Tube Radio',category:'Vintage radios',feature:'Study a cathedral receiver',study:'Philco repair and restoration schematic'},
+  {id:'radio-kit',name:'Radio Component Kit',category:'Vintage radios',feature:'Build a restoration kit',study:'Philco radio replacement components and schematic'},
+  {id:'unrelated',name:'Movie News',category:'Entertainment',feature:'Watch a film',study:'Movie trailers'}
+ ];
+ let s=cleanFeedState({});
+ for(let i=0;i<3;i++)s=markOpened(s,'radio-study');
+ s=markOpened(s,'radio-kit');
+ assert.equal(s.transitions['radio-study']['radio-kit'],1);
+ const result=nextFeedDirection(cards,'public',{...s,catalog:cards},'radio-study');
+ assert.equal(result.card.id,'radio-kit');
+ assert.match(result.reason,/previous card choices/i);
+ assert.ok(directionScore(cards[0],cards[1],s).score>directionScore(cards[0],cards[2],s).score);
+ assert.equal(nextFeedDirection(cards,'public',s,'radio-kit').card.id,'radio-study','no immediate identical card');
+});
+test('Following is strict, Public remains broad, For You uses Quant interests without persisting raw queries',()=>{
+ const cards=[
+  {id:'story',name:'Original story',category:'Stories',feature:'Read a story',study:'Creative writing'},
+  {id:'writer',name:'Story Writer',category:'Stories',feature:'Write a story',study:'Create an original story'},
+  {id:'radio',name:'Radio',category:'Music',feature:'Listen to classic radio',study:'Antique radio programs'}
+ ];
+ let s=cleanFeedState({});
+ assert.equal(nextFeedDirection(cards,'following',s,'story').card,null);
+ s=toggleFollowing(s,'writer');
+ assert.equal(nextFeedDirection(cards,'following',s,'story').card.id,'writer');
+ s={...s,quantScores:{radio:70}};
+ assert.equal(nextFeedDirection(cards,'for-you',s,'story').card.id,'radio');
+ assert.equal(nextFeedDirection(cards,'public',s,'story').card.id,'writer','public contextual transition uses next writing step');
+ const stored=cleanFeedState({...s,transitions:{story:{writer:2,radio:-1,bad:'oops'}}});
+ assert.equal(stored.transitions.story.writer,2);
+ assert.equal(stored.transitions.story.radio,undefined);
+ assert.ok(!JSON.stringify(stored).includes('quantScores'));
+});
+test('Oracle viewer uses same activity source, scoped tabs and original mounted interactive controls',()=>{
+ const source=raw('oracle-card-deck.js'),html=raw('index.html'),style=raw('oracle-card-deck.css');
+ for(const tab of ['public','for-you','following'])assert.match(html,new RegExp('data-oracle-feed="'+tab+'"'));
+ assert.match(html,/id="oracleCardFollow"/);
+ assert.match(html,/id="oracleCardReason"/);
+ assert.match(source,/nextFeedDirection/);
+ assert.match(source,/markOpened\(readDirections\(\),active\.feedId\)/);
+ assert.match(source,/markViewed\(readDirections\(\),entry\.feedId\)/);
+ assert.match(source,/quantaphi:feed-updated/);
+ assert.match(source,/loadOwnQuantScores/);
+ assert.match(source,/stage\.append\(entry\.node\)/);
+ assert.doesNotMatch(source,/cloneNode/);
+ assert.match(style,/\.oracle-direction-tabs/);
+ assert.match(style,/\.oracle-direction-action/);
 });

@@ -199,7 +199,7 @@ filter:drop-shadow(0 10px 13px rgba(5,78,89,.28));font-weight:900;letter-spacing
 <style>#quantaAgentIterations[hidden],#robotDirections[hidden]{display:none!important}</style>
 <link rel="stylesheet" href="/halloween-phi.css?v=20261013-cinema5">
 <link rel="stylesheet" href="/phi-channel-cards.css?v=20261015-inline1">
-<link rel="stylesheet" href="/oracle-card-deck.css?v=20261023-trending1">
+<link rel="stylesheet" href="/oracle-card-deck.css?v=20261024-directions1">
 <link rel="stylesheet" href="/google-trending-cards.css?v=20261023-trendsync3">
 <link rel="stylesheet" href="/phi-project-cards.css?v=20261012-action1">
 <link rel="stylesheet" href="/shop-ad-phi.css?v=20261013-cards2">
@@ -321,10 +321,19 @@ body.oracle-quanta #qmenuBtn{min-width:49px;min-height:49px;font-size:26px;line-
   <div class="oracle-card-deck-head"><span class="oracle-card-deck-kicker">INFINITY 2026® · ORACLE INTERACTIVE</span><h2>Choose what happens next</h2>
     <p>Watch a channel, read a true story, write one of your own, or work with Bubbles. Every card remains interactive.</p>
   </div>
+  <div class="oracle-direction-tabs" role="tablist" aria-label="Choose card direction">
+    <button type="button" role="tab" data-oracle-feed="public" aria-selected="true">Public</button>
+    <button type="button" role="tab" data-oracle-feed="for-you" aria-selected="false">For You</button>
+    <button type="button" role="tab" data-oracle-feed="following" aria-selected="false">Following</button>
+  </div>
   <div class="oracle-card-deck-nav" role="group" aria-label="Flip interactive widgets">
     <button id="oracleCardPrevious" type="button">◀ Previous</button>
     <strong id="oracleCardNow" aria-live="polite">Finding your next card…</strong>
-    <button id="oracleCardNext" type="button">Next most active ▶</button>
+    <button id="oracleCardNext" type="button">Next useful card ▶</button>
+  </div>
+  <div class="oracle-direction-action">
+    <button id="oracleCardFollow" type="button" aria-pressed="false" hidden>+ Follow</button>
+    <p id="oracleCardReason" role="status" aria-live="polite">Choosing another useful interactive card…</p>
   </div>
   <div class="oracle-card-deck-feature" aria-label="Featured search trend cards">
     <button data-oracle-spotlight="googleTrendNba" type="button" aria-controls="oracleCardStage">🏀 NBA trends</button>
@@ -1798,10 +1807,10 @@ window.addEventListener('storage',e=>{if(['c13b0_infinity_token_ledger_v3','infi
 <script defer src="/google-trending-cards.js?v=20261023-trendsync3"></script>
 <link rel="stylesheet" href="/quanta-card-experience.css?v=20261024-interactive1">
 <link rel="stylesheet" href="/quanta-feed.css?v=20261023-qtabs1">
-<script type="module" src="/quanta-feed.mjs?v=20261023-qtabs1"></script>
+<script type="module" src="/quanta-feed.mjs?v=20261024-directions1"></script>
 <script type="module" src="/source-quick-cards.mjs?v=20261023-source-quick-cards1"></script>
 <script type="module" src="/science-quick-cards.mjs?v=20261023-science1"></script>
-<script defer src="/oracle-card-deck.js?v=20261023-trending1"></script>
+<script defer src="/oracle-card-deck.js?v=20261024-directions1"></script>
 <script defer src="/phi-image-language.js?v=20261011-natural-copy1"></script>
 <script defer src="/phi-visual-render.js?v=20261011-exact-type1"></script>
 <script defer src="/phi-image-learning.js?v=20261008-quality2"></script>
