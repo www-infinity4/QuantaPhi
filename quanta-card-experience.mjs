@@ -202,7 +202,7 @@ export async function loadVerifiedTrends(fetcher=fetch){
    if(feed?.source!=='Google Trends Trending Now RSS'||feed.region!=='US'||
     !Array.isArray(feed.topics)||!Number.isFinite(Date.parse(feed.checked_at)))continue;
    const items=feed.topics.filter(x=>typeof x.query==='string'&&x.query.trim().length>1&&
-    typeof x.approx_searches==='string'&&/^\\d[\\d,]*(?:\\.\\d+)?[KMB]?\\+$/i.test(x.approx_searches)&&
+    typeof x.approx_searches==='string'&&/^\d[\d,]*(?:\.\d+)?[KMB]?\+$/i.test(x.approx_searches)&&
     Number.isFinite(Date.parse(x.published_at))).slice(0,15);
    if(items.length) return {checkedAt:feed.checked_at,items,sourceUrl:feed.source_url};
   }catch{/* Try the maintained trend-data branch. */}
