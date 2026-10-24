@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {DISCOVERY_CARDS,findDiscovery,safeDiscovery} from '../quanta-feed-catalog.mjs';
 import {ALL_FEED_CARDS,feedCard} from '../quanta-feed.mjs';
+import {validSpaceLink,readIndexedSpaces} from '../quanta-feed-spaces.mjs';
 import {cleanFeedState,feedCandidates,nextFeedCard,markOpened,markViewed,toggleFollowing} from '../quanta-feed-rank.mjs';
 const raw=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const base=()=>({...cleanFeedState({}),catalog:ALL_FEED_CARDS});
@@ -84,4 +85,28 @@ test('holdings, bank link, live Spaces and copyright-sensitive image feeds are t
  assert.match(findDiscovery('x-live-spaces').study,/authorized X Spaces search API/);
  assert.match(findDiscovery('vam-scarface').study,/photos remain on the original source/);
  assert.match(findDiscovery('just-radios').url,/justradios\.com\/capkits\.html/);
+});
+
+test('live Spaces card reads only verified wallet-indexed original titles without claiming live X status',async()=>{
+ assert.equal(validSpaceLink('https://x.com/i/spaces/1OyKAjYPeXqGb'),true);
+ assert.equal(validSpaceLink('https://evil.example/i/spaces/1OyKAjYPeXqGb'),false);
+ assert.equal(validSpaceLink('javascript:alert(1)'),false);
+ await assert.rejects(readIndexedSpaces({token:''}),/wallet_not_connected/);
+ const calls=[];
+ const data=[
+  {hosts:[{handle:'tester',name:'Test host'}]},
+  {episodes:[{title:'Original Q&A',url:'https://x.com/i/spaces/1OyKAjYPeXqGb',availability:'indexed'},
+    {title:'Locked show',url:'https://x.com/i/spaces/1MnGnPEEvWYxO',requiresOriginalUnlock:true},
+    {title:'Bad host',url:'https://evil.example/i/spaces/ABCD123456789'}]}
+ ];
+ const result=await readIndexedSpaces({token:'sq_'+ 'a'.repeat(32),fetcher:async(url,options)=>{
+  calls.push({url,token:options.headers.Authorization});
+  return {ok:true,json:async()=>data[calls.length-1]};
+ }});
+ assert.equal(result.episodes.length,1);
+ assert.equal(result.episodes[0].title,'Original Q&A');
+ assert.equal(result.liveVerified,false);
+ assert.match(result.episodes[0].status,/unverified/);
+ assert.ok(calls.every(c=>c.token==='Bearer sq_'+ 'a'.repeat(32)));
+ assert.deepEqual(calls.map(c=>c.url.split('/v1/')[1]),['hosts','episodes?handle=tester']);
 });
