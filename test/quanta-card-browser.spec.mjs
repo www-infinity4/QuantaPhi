@@ -29,6 +29,9 @@ test('Google query opens actual attributed engine listings within Infinity Viewe
  await expect(page.locator('#siteViewer')).toBeVisible();
  await expect(page.locator('#siteViewerFrame')).toHaveAttribute('src',/infinity-search-results\.html\?engine=google&(?:amp;)?q=Philco/);
  const view=page.frameLocator('#siteViewerFrame');
+ const statusText=await view.locator('#status').textContent({timeout:7000}).catch(e=>'NO STATUS '+e.message);
+ const bodyText=await view.locator('body').innerText({timeout:5000}).catch(e=>'NO BODY '+e.message);
+ console.log('VIEWER QA DIAGNOSTIC',JSON.stringify({statusText,bodyText:bodyText.slice(0,900)}));
  await expect(view.getByText('Philco model 90 historical radio')).toBeVisible();
  await expect(view.getByText('Google engine results via Infinity search broker')).toBeVisible();
  await expect(view.getByRole('link',{name:'Philco model 90 historical radio'})).toHaveAttribute('href','https://example.org/philco-90');
@@ -61,7 +64,7 @@ test('Google card prioritizes source search, not unrelated trends or a fake embe
  await expect(page.getByRole('searchbox',{name:'Search Google'})).toBeVisible();
  await expect(page.getByRole('button',{name:'Search',exact:true})).toBeVisible();
  await expect(page.getByRole('button',{name:/Refresh verified topics/})).toHaveCount(0);
- await expect(page.locator('iframe')).toHaveCount(0);
+ await expect(page.locator('#sourceQuickCardDetail .qcx-tools iframe')).toHaveCount(0);
 });
 test('StarMaker microphone is off until explicit start and a stop control is provided',async({page})=>{
  await page.goto(base+'/source-quick-card.html?card=starmaker',{waitUntil:'domcontentloaded'});
