@@ -23,7 +23,7 @@ export function feedScore(card,state){
  const saved=state.following.includes(card.id);
  const seen=state.viewed[card.id]||0;
  // The number reflects voluntary selections, not private behavioral profiling.
- return clicks*8+category*2+(saved?12:0)+((card.id.charCodeAt(0)%5)/20)-seen*2;
+ return clicks*8+category*2+(saved?12:0)+Math.min(70,Math.max(0,Number(state.quantScores?.[card.id])||0))+((card.id.charCodeAt(0)%5)/20)-seen*2;
 }
 export function feedCandidates(cards,tab,state,query=''){
  const q=String(query).trim().toLowerCase().slice(0,120);
