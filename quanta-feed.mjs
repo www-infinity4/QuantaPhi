@@ -1,6 +1,7 @@
 import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
 import {DISCOVERY_CARDS,findDiscovery} from './quanta-feed-catalog.mjs';
+import {mountSpaceSource} from './quanta-feed-spaces.mjs';
 import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,markViewed,markOpened,toggleFollowing} from './quanta-feed-rank.mjs';
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
@@ -137,6 +138,9 @@ function renderDetail(){
  host.append(guard);
  const study=create('section','qf-study');study.append(create('h3','','Investigate with Bubbles'),create('p','','Ask Bubbles to compare the original source with other references, explain the history, and check evidence. It does not have this provider’s private login or account data.'));
  host.append(study);
+ if(card.id==='x-live-spaces'){
+  const list=create('section','qf-study');mountSpaceSource(list);host.append(list);
+ }
  const embed=document.createElement('script');embed.src='/bubbles-embed.js';embed.dataset.bubbleId='feed-'+card.id;
  embed.dataset.bubbleRole='specialist';embed.dataset.bubbleName=(card.name+' Bubbles').slice(0,38);
  embed.dataset.bubbleInstructions=('Independent research specialist for '+card.name+'. '+card.study+
