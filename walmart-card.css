@@ -1,0 +1,27 @@
+/* White Oracle card; original Walmart spark and blue identity, red Oracle action. */
+#walmartShoppingCard{background:#fff;border:1px solid #e3d8ce;border-radius:20px;padding:16px;color:#292222;min-width:0;max-width:100%;box-sizing:border-box}
+#walmartShoppingCard *{box-sizing:border-box}
+.walmart-card-header{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #eee5dc;padding-bottom:12px}
+.walmart-card-brand{display:flex;align-items:center;gap:9px;color:#0053e2;font:800 27px/1.1 system-ui,sans-serif;letter-spacing:-.04em;text-decoration:none}
+.walmart-card-brand img{width:34px;height:34px;object-fit:contain;flex:none}
+.walmart-card-label{font:700 11px/1.4 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#75665b;text-align:right}
+.walmart-card-photo{margin:12px 0;background:#fff;border-radius:14px;min-height:160px;display:grid;place-items:center}
+.walmart-card-photo img{display:block;width:100%;max-width:340px;height:clamp(220px,52vw,320px);object-fit:contain;background:#fff}
+#walmartShoppingCard h2{font-size:clamp(20px,4vw,26px);line-height:1.2;margin:9px 0;letter-spacing:-.025em;color:#302525;overflow-wrap:anywhere}
+.walmart-card-size{color:#74655d;font-size:13px;margin:0 0 8px}
+.walmart-card-description{font-size:14px;line-height:1.5;margin:0 0 12px;color:#594e46}
+.walmart-card-offer{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:10px 0}
+.walmart-card-price{font:850 32px/1.1 system-ui,sans-serif;color:#25201e;letter-spacing:-.04em}
+.walmart-card-price-label{color:#75675d;font-size:12px}
+.walmart-card-actions{display:grid;grid-template-columns:1fr;gap:9px;margin:12px 0}
+.walmart-card-buy,.walmart-card-next{display:flex;align-items:center;justify-content:center;min-height:49px;width:100%;border-radius:13px;padding:12px 15px;font:800 15px/1.3 system-ui,sans-serif;text-decoration:none;cursor:pointer;text-align:center}
+.walmart-card-buy{background:#a52e2c;color:#fff!important;border:1px solid #a52e2c}
+.walmart-card-next{background:#fff;color:#8b2b28;border:1px solid #d9bfb1}
+.walmart-card-buy:hover,.walmart-card-next:hover{filter:brightness(.96)}
+.walmart-card-note{font-size:11px;line-height:1.5;color:#7a6b61;margin:7px 0 0}
+.walmart-card-position{font-size:11px;color:#8b7567;margin:0;text-align:center}
+#walmartShoppingCard :is(a,button):focus-visible{outline:3px solid #0053e2;outline-offset:3px}
+#walmartShoppingCard [hidden]{display:none!important}
+.oracle-card-deck-active:not(.oracle-shelf-open) main.app>#walmartShoppingCard{display:none!important}
+.oracle-card-deck-stage>#walmartShoppingCard{margin:0!important}
+@media(max-width:380px){#walmartShoppingCard{padding:12px}.walmart-card-brand{font-size:24px}.walmart-card-photo img{height:230px}}
