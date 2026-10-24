@@ -22,8 +22,8 @@ test('three dedicated original website cards mount on homepage and full-page exp
  assert.match(page,/source: Google Trends|Google Trends/);
  assert.match(home,/\/trending-now\.html/);
  assert.match(read('sitemap.xml'),/trending-now\.html/);
- assert.match(home,/google-trending-cards\.js\?v=20261023-trending1/);
- assert.match(home,/google-trending-cards\.css\?v=20261023-trending1/);
+ assert.match(home,/google-trending-cards\.js\?v=20261023-trendsync2/);
+ assert.match(home,/google-trending-cards\.css\?v=20261023-trendsync2/);
 });
 test('only sourced sport states are displayed; status does not fabricate games',()=>{
  assert.doesNotThrow(()=>new Function(js));
@@ -52,4 +52,17 @@ test('trending cards participate in the existing QuantaPhi interaction ledger',(
  for(const id of ['google-trend-nba','google-trend-mlb','google-trend-media'])assert.ok(trends.includes(id));
  assert.match(deck,/data-oracle-spotlight/);
  assert.match(deck,/stage\.append\(entry\.node\)/);
+});
+
+test('trending feed has real scheduled ingestion, source-freshness handling and historical backup',()=>{
+ const wf=read('.github/workflows/google-trends-sync.yml');
+ const importer=read('scripts/sync_google_trends.py');
+ assert.match(wf,/cron:.*\\*\\/30/);
+ assert.match(wf,/sync_google_trends\\.py/);
+ assert.match(importer,/trends\\.google\\.com\\/trending\\/rss\\?geo=US/);
+ assert.match(js,/google-trends-latest\\.json/);
+ assert.match(js,/stale/);
+ assert.match(js,/last checked/);
+ assert.match(js,/setInterval/);
+ assert.match(page,/RSS importer/);
 });
