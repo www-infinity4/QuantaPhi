@@ -32,26 +32,27 @@ export const validSourceCard=card=>{
 };
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
 function link(text,href,klass=''){const a=el('a',klass,text);a.href=href;a.target='_blank';a.rel='noopener noreferrer';return a}
-function feature(root,card){
- if(card.searchParameter){
-  const form=el('form','iqc-search');form.method='GET';form.action=card.featureUrl;form.target='_blank';
-  const label=el('label','', 'Search on '+card.name);const input=el('input');input.name=card.searchParameter;input.type='search';input.required=true;input.maxLength=300;input.placeholder='Enter your search';input.setAttribute('aria-label',label.textContent);
-  const button=el('button','iqc-primary','Search '+card.name);button.type='submit';form.append(label,input,button);root.append(form);return;
- }
- const a=link('Open '+card.feature+' ↗',card.featureUrl,'iqc-primary');root.append(a);
-}
 function starterCard(card){
+ // The homepage article IS the interactive card. Do not redirect it to an
+ // internal viewer; Android WebView's pop-up handling must not be required.
  const item=el('article','iqc-card');item.dataset.sourceId=card.id;
- item.append(createCardArtwork(card,true),el('p','iqc-kind',card.kind),el('h3','',card.name),el('p','',card.feature));
- const actions=el('div','iqc-actions');
- const preview=el('a','iqc-primary','Open quick card in Infinity Viewer');preview.href='/source-quick-card.html?card='+encodeURIComponent(card.id);preview.classList.add('inPageSite');preview.dataset.siteUrl=preview.href;preview.dataset.siteTitle=card.name+' · Infinity quick card';
- actions.append(preview,link('Official site ↗',card.official));item.append(actions);return item;
+ item.append(createCardArtwork(card,true),el('p','iqc-kind',card.kind),el('h3','',card.name));
+ const tools=el('div','iqc-inline-tools');mountCardTools(tools,card);item.append(tools);
+ // Search cards are already complete with their own actual search fields.
+ if(!['google','bing'].includes(card.id)){
+  const actions=el('div','iqc-actions');
+  actions.append(link('Official '+card.name+' website',card.official));item.append(actions);
+ }
+ return item;
 }
 function mountShelf(){
  const host=document.getElementById('siteQuickCards');if(!host)return;
  host.replaceChildren();
  host.append(el('p','iqc-kind','INFINITY 2026® · INTERACTIVE SOURCE TOOLS'),el('h2','','Discover, watch, search, research and create'),el('p','iqc-muted','Use the feature on each card. Provider-owned accounts and copyrighted catalogs remain with their original services.'));
  const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES)cards.append(starterCard(p));host.append(cards);
+ // The Oracle viewer discovers each original source article as an individual
+ // swipeable card, never a single 15-item link shelf.
+ window.dispatchEvent(new Event('quantaphi:source-cards-ready'));
 }
 function installBubble(card){
  // Same existing Bubbles launcher as Cardone, not a second chatbot.
@@ -72,7 +73,6 @@ function mountDetail(){
  document.title=card.name+' · Infinity Quick Card';
  host.append(el('p','iqc-kind','INFINITY 2026® · SOURCE EXPERIENCE'),createCardArtwork(card),el('h1','',card.name),el('h2','',card.feature));
  const tools=el('div','iqc-tools');mountCardTools(tools,card);host.append(tools);
- if(card.searchParameter){const featureBox=el('section','iqc-feature');featureBox.append(el('h3','','Search directly at '+card.name));feature(featureBox,card);host.append(featureBox);}
  const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio)}actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
  const about=el('section','iqc-feature');about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));host.append(about);
  installBubble(card);
