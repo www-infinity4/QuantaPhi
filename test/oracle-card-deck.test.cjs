@@ -47,3 +47,9 @@ assert.doesNotMatch(deck,/\['siteQuickCards','Source quick cards/);
 assert.match(html,/id="siteQuickCards"[^>]+hidden/);
 assert.match(deck,/viewerTouched/);
 assert.match(deck,/source-google/);
+
+// Regression: For You and Public cannot oscillate between two favorites.
+assert.match(deck,/seenByTab/);
+assert.match(deck,/nextDeckCycle/);
+assert.match(deck,/tour\.remaining/);
+assert.match(deck,/ready cards in this direction/);

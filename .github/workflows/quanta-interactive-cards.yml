@@ -34,7 +34,8 @@ jobs:
           node --check quanta-feed.mjs
           node --check source-quick-cards.mjs
       - name: Run interactive card regression tests
-        run: node --test test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs
+        run: node --test test/source-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/oracle-deck-cycle.test.mjs
+          node test/oracle-card-deck.test.cjs
       - name: Install Chromium for live browser QA
         run: |
           npm install --no-save @playwright/test@1.56.1

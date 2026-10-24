@@ -86,6 +86,7 @@ const follow=document.getElementById('oracleCardFollow'),reason=document.getElem
 let selectedTab='public',directionApi=null,quantApi=null,quantWeights={},quantConnected=false;
 let feedState=null,proposed=null;
 const visited=[];
+const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
 let viewerTouched=false;
 function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
@@ -153,10 +154,14 @@ function predict(){
  if(directionApi&&feedState){
   const present=liveCatalog();
   const context={...feedState,catalog:present,quantScores:quantWeights};
-  const pick=directionApi.nextFeedDirection(
-   present.filter(c=>possible.some(e=>e.feedId===c.id)),selectedTab,context,active?.feedId||'');
+  const eligibleIds=new Set(possible.map(e=>e.feedId));
+  const tour=directionApi.nextDeckCycle(
+   present.filter(c=>eligibleIds.has(c.id)),active?.feedId||'',seenByTab[selectedTab]);
+  seenByTab[selectedTab]=tour.seen;
+  const pick=directionApi.nextFeedDirection(tour.cards,selectedTab,context,active?.feedId||'');
   proposed=possible.find(e=>e.feedId===pick.card?.id)||null;
-  reason.textContent=proposed?(proposed.title+' · '+pick.reason):
+  reason.textContent=proposed?(proposed.title+' · '+pick.reason+
+   ' · '+tour.remaining+' other cards in this round'):
    'Use a card to help choose the next useful action.';
  }else{
   proposed=possible.filter(x=>x!==active).sort((a,b)=>a.count-b.count)[0]||possible[0];
@@ -173,6 +178,7 @@ async function connectQuant(){
 tabButtons.forEach(b=>b.addEventListener('click',()=>{
  viewerTouched=true;
  selectedTab=b.dataset.oracleFeed;visited.length=0;
+ if(active)seenByTab[selectedTab].add(active.feedId);
  feedState=directionApi?readDirections():feedState;
  updateTabs();
  if(selectedTab==='following'&&!eligible().some(e=>e===active)){
@@ -248,10 +254,12 @@ function show(entry,remember=true){
  entry.count=Math.min(1000,entry.count+1);counts[entry.id]=entry.count;
  try{localStorage.setItem(STORE,JSON.stringify(counts))}catch{}
  if(directionApi&&feedState){feedState=directionApi.markViewed(readDirections(),entry.feedId);storeDirections()}
+ seenByTab[selectedTab].add(entry.feedId);
  now.textContent=entry.title;updateTabs();predict();
  status.textContent='Live interactive card · '+entry.title+
   '. '+(selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
-    selectedTab==='following'?'Only your followed cards appear here.':'Public includes every available original widget.');
+    selectedTab==='following'?'Only your followed cards appear here.':'Public includes every available original widget.')+
+  ' · '+eligible().length+' ready cards in this direction.';
 }
 function advance(direction){
  viewerTouched=true;
