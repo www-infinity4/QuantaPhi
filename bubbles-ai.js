@@ -2785,17 +2785,17 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }
   if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
   if(nativeOverlay&&json.receipt?.tool)gptStatus.textContent='Bubbles model + verified tool: '+json.receipt.tool+' · '+json.receipt.status;
-  const serviceAnswer=extract(json);
-   const rawAnswer=cardoneResearch&&
-    (cardoneReplyUnusable(serviceAnswer)||json.answerStatus==='partial'||
-     json.receipt?.tool==='web.search'&&json.receipt?.status!=='complete')
-     ?cardoneSourceFallback(request):serviceAnswer;
-   if(!rawAnswer)throw Error('The AI returned no spoken or written reply');
-   if(/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
+  const rawAnswer=extract(json);
+   if(!rawAnswer&&!cardoneResearch)throw Error('The AI returned no spoken or written reply');
+   if(!cardoneResearch&&/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
+   const finalAnswer=cardoneResearch&&
+    (cardoneReplyUnusable(rawAnswer)||json.answerStatus==='partial'||
+     json.receipt?.tool==='web.search'&&json.receipt?.status!=='complete')
+     ?cardoneSourceFallback(request):answer;
    if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
-  messages.push({role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
-  display(answer,'ai');status.textContent=config.alias+' · response received';
+  messages.push({role:'assistant',text:finalAnswer});messages=messages.slice(-400);persistChat();
+  display(finalAnswer,'ai');status.textContent=config.alias+' · response received';
   // Search sources remain tappable in this same Bubbles chat; voice never reads raw URLs.
   if(json.receipt?.tool==='web.search'){
    const row=create('div','ba-message-actions ba-search-sources');
@@ -2835,9 +2835,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(nativeOverlay){
     // The Android foreground service handles speech output; typed messages
     // deliberately stay silent when the user is listening to another app.
-    if(nativeSpeechPending)nativeSpeechReply=answer;
+    if(nativeSpeechPending)nativeSpeechReply=finalAnswer;
     nativeSpeechPending=false;
-   }else if(config.voice)speakText(answer);
+   }else if(config.voice)speakText(finalAnswer);
  }catch(error){const message=workEvidence||(cardoneResearch?cardoneSourceFallback(request):'I could not complete the response: '+String(error?.message||error).slice(0,150));display(message,'ai');status.textContent=message;if(nativeOverlay&&nativeSpeechPending){nativeSpeechReply=message;nativeSpeechPending=false}else if(fromVoice&&config.voice)speakText(message)}
  finally{if(nativeOverlay&&nativeSpeechPending){
      nativeSpeechReply=workEvidence||'The assistant could not complete that request.';
