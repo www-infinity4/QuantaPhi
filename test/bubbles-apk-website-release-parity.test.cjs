@@ -17,6 +17,7 @@ function openingThread({lastTab='',siteUpdate=false}={}){
  assert.ok(begin>0&&end>begin);
  const store=new Map([[ 'tab',lastTab],['tab:site-update-reload',siteUpdate?'1':'0']]);
  const scope=vm.createContext({
+  embedded:false,keepChat:false,
   sessionStorage:{getItem:key=>store.get(key)||null,removeItem:key=>store.delete(key)},
   TAB_THREAD:'tab',UPDATE_RELOAD_THREAD:'tab:site-update-reload',
   threadIndex:lastTab?[{id:lastTab}]:[],
