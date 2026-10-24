@@ -1,20 +1,40 @@
 import {test,expect} from '@playwright/test';
 const base='http://127.0.0.1:8799';
 test.use({viewport:{width:390,height:844}});
-test('Public / For You / Following uses polished functional card on homepage',async({page})=>{
+test('original single-card Oracle viewer replaces the giant feed on Android width',async({page})=>{
  await page.goto(base+'/',{waitUntil:'domcontentloaded'});
- const feed=page.locator('#quantaDiscoveryFeed');
- await expect(feed.locator('.qf-tabs')).toBeVisible({timeout:15000});
- await expect(feed.locator('.qcx-art').first()).toBeVisible();
- await expect(feed.locator('.qcx-experience').first()).toBeVisible();
- const art=feed.locator('.qcx-art').first();
- await expect(art).not.toHaveText(/^✦$/);
- const overflow=await art.evaluate(e=>e.getBoundingClientRect().width>window.innerWidth);
+ await expect(page.locator('#quantaDiscoveryFeed')).toBeHidden();
+ await expect(page.locator('#siteQuickCards')).toBeHidden();
+ await expect(page.locator('#scienceQuickCards')).toBeHidden();
+ const oracle=page.locator('#oracleCardDeck');
+ await expect(oracle).toBeVisible();
+ await expect(oracle.getByRole('tab',{name:'Public'})).toBeVisible();
+ await expect(oracle.getByRole('tab',{name:'For You'})).toBeVisible();
+ await expect(oracle.getByRole('tab',{name:'Following'})).toBeVisible();
+ await expect(oracle.locator('.oracle-card-deck-stage .qcx-google-wordmark')).toHaveAttribute('src',/www\\.google\\.com\\/images\\/branding\\/googlelogo/,{timeout:15000});
+ const input=oracle.getByRole('searchbox',{name:'Search Google'});
+ await expect(input).toBeVisible();
+ const overflow=await oracle.locator('.oracle-card-deck-stage').evaluate(e=>e.getBoundingClientRect().width>window.innerWidth);
  expect(overflow).toBeFalsy();
- await feed.getByRole('tab',{name:'For You'}).click();
- await expect(feed.getByRole('tab',{name:'For You'})).toHaveAttribute('aria-selected','true');
- await feed.getByRole('tab',{name:'Following'}).click();
- await expect(feed.getByText('No followed cards yet')).toBeVisible();
+});
+test('Google query opens actual attributed engine listings within Infinity Viewer',async({page})=>{
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
+  return route.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},
+   body:JSON.stringify({results:[{title:'Philco model 90 historical radio',url:'https://example.org/philco-90',content:'Real linked listing from a Google engine test fixture.',engine:'google'}]})});
+ });
+ await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+ const oracle=page.locator('#oracleCardDeck');
+ await oracle.getByRole('searchbox',{name:'Search Google'}).fill('Philco radio');
+ await oracle.locator('.qcx-native-search button').click();
+ await expect(page.locator('#siteViewer')).toBeVisible();
+ await expect(page.locator('#siteViewerFrame')).toHaveAttribute('src',/infinity-search-results\\.html\\?engine=google&(?:amp;)?q=Philco/);
+ const view=page.frameLocator('#siteViewerFrame');
+ await expect(view.getByText('Philco model 90 historical radio')).toBeVisible();
+ await expect(view.getByText('Google engine results via Infinity search broker')).toBeVisible();
+ await expect(view.getByRole('link',{name:'Philco model 90 historical radio'})).toHaveAttribute('href','https://example.org/philco-90');
+ await page.locator('#siteViewerClose').click();
+ await expect(page.locator('#siteViewer')).toBeHidden();
+ await expect(oracle.getByRole('searchbox',{name:'Search Google'})).toHaveValue('Philco radio');
 });
 test('YouTube card embeds an actual validated video only after visitor action',async({page})=>{
  await page.goto(base+'/source-quick-card.html?card=youtube',{waitUntil:'domcontentloaded'});
@@ -35,14 +55,13 @@ test('Wikipedia previews render real API-supplied text and source links, not inv
  await expect(page.getByText('A verified encyclopedia test article.')).toBeVisible();
  await expect(page.getByRole('link',{name:/Read and verify at Wikipedia/})).toHaveAttribute('href','https://en.wikipedia.org/wiki/Philco');
 });
-test('Google trends refresh displays only a dated and attributed Google RSS snapshot',async({page})=>{
- const body={source:'Google Trends Trending Now RSS',region:'US',checked_at:'2026-10-24T04:00:00Z',source_url:'https://trends.google.com/trending/rss?geo=US',topics:[{query:'Philco radios',approx_searches:'20K+',published_at:'2026-10-24T02:00:00Z'}]};
- await page.route('**/data/google-trends-latest.json',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(body)}));
+test('Google card prioritizes source search, not unrelated trends or a fake embedded website',async({page})=>{
  await page.goto(base+'/source-quick-card.html?card=google',{waitUntil:'domcontentloaded'});
- await page.getByRole('button',{name:/Refresh verified topics/}).click();
- await expect(page.getByText('Philco radios')).toBeVisible();
- await expect(page.getByText(/20K\+ approximate Google searches/)).toBeVisible();
- await expect(page.getByText(/Google U.S. search-volume buckets/)).toBeVisible();
+ await expect(page.locator('.qcx-google-wordmark')).toHaveAttribute('src',/googlelogo_color/);
+ await expect(page.getByRole('searchbox',{name:'Search Google'})).toBeVisible();
+ await expect(page.getByRole('button',{name:'Search',exact:true})).toBeVisible();
+ await expect(page.getByRole('button',{name:/Refresh verified topics/})).toHaveCount(0);
+ await expect(page.locator('iframe')).toHaveCount(0);
 });
 test('StarMaker microphone is off until explicit start and a stop control is provided',async({page})=>{
  await page.goto(base+'/source-quick-card.html?card=starmaker',{waitUntil:'domcontentloaded'});
