@@ -112,6 +112,7 @@ export function createVerifiedCard(card){
   controls.append(link(action.label,action.url,'vbs-source-action'));
  }
  info.append(controls);
+ if(isEvent(card))appendSportsCoverage(card,info,node);
  if(card.kind==='announcer')appendAnnouncer(info);
  const notes=el('p','vbs-attribution','Verified source links · Checked '+card.checked+' · Independent QuantaPhi card, not an official endorsement or paid advertisement.');
  info.append(notes);
@@ -124,6 +125,72 @@ export function createVerifiedCard(card){
  node.append(info);
  return node;
 }
+const sportsQueries=Object.freeze({
+ 'packers-lions-2026':['packers.com','Packers Lions October 25 2026 play-by-play highlights'],
+ 'fox-nfl-watch':['foxsports.com','Packers Lions NFL October 25 2026 highlights'],
+ 'lions-interception-watch':['detroitlions.com','Packers Lions 2026 interceptions takeaways highlight'],
+ 'packers-next-schedule':['packers.com','Packers next game 2026 schedule'],
+ 'lions-next-schedule':['detroitlions.com','Lions next game 2026 schedule'],
+ 'world-series-game3-2026':['mlb.com','World Series Brewers Rays Game 3 October 26 2026'],
+ 'world-series-pitchers-2026':['mlb.com','Brewers Rays Game 3 pitcher Robert Gasser Freddy Peralta'],
+ 'world-series-lineups-2026':['mlb.com','2026 World Series Game 3 lineups Brewers Rays'],
+ 'world-series-game2-highlights':['mlb.com','Brewers Rays Game 2 2026 World Series highlights'],
+ 'world-series-game1-recap':['mlb.com','Brewers Rays World Series Game 1 2026 highlights'],
+ 'world-series-future-games':['mlb.com','2026 World Series upcoming games schedule'],
+ 'tucker-kraft-plays':['packers.com','Tucker Kraft 2026 Packers Lions highlights']
+});
+export function safeSportsArticle(url,domain){
+ if(!isSafeCardUrl(url)||!domain)return false;
+ const host=new URL(url).hostname.toLowerCase();
+ return host===domain||host.endsWith('.'+domain);
+}
+function appendSportsCoverage(card,info,node){
+ const record=sportsQueries[card.id];
+ if(!record)return;
+ const [domain,query]=record;
+ const panel=el('section','vbs-news-panel');
+ const title=el('h4','vbs-news-title','Recent official-source coverage');
+ const status=el('p','vbs-news-status','Source headlines load only when this card opens.');
+ const results=el('div','vbs-news-results');
+ const refresh=el('button','vbs-news-refresh','Refresh source headlines');refresh.type='button';
+ panel.append(title,status,results,refresh);
+ info.append(panel);
+ let active=false,last=0,seq=0;
+ async function load(){
+  if(active||Date.now()-last<60*1000)return;
+  active=true;last=Date.now();const thisRequest=++seq;
+  status.textContent='Checking attributed source headlines…';refresh.disabled=true;
+  try{
+   const url=new URL('https://orange-brook-a2ac.marvaseater.workers.dev/search');
+   url.search=new URLSearchParams({q:'site:'+domain+' '+query,format:'json',categories:'general',safesearch:'1'});
+   const r=await fetch(url,{credentials:'omit',signal:AbortSignal.timeout(14000)});
+   if(!r.ok)throw Error('unavailable');
+   const data=await r.json();
+   if(thisRequest!==seq)return;
+   const list=(Array.isArray(data?.results)?data.results:[])
+     .filter(x=>x&&safeSportsArticle(x.url,domain)&&String(x.title||'').length>9)
+     .slice(0,4);
+   results.replaceChildren();
+   for(const item of list){
+    const row=el('article','vbs-news-item');
+    row.append(link(String(item.title).slice(0,160),item.url,'vbs-news-link'));
+    if(item.publishedDate){
+     const d=new Date(item.publishedDate);
+     if(Number.isFinite(d.getTime()))row.append(el('small','vbs-news-date','Published '+d.toLocaleDateString()));
+    }
+    row.append(el('p','vbs-news-preview',String(item.content||item.description||'').replace(/<[^>]*>/g,'').slice(0,150)));
+    results.append(row);
+   }
+   status.textContent=list.length?list.length+' attributed results · indexed source headlines, NOT a live score':
+    'No matching recent source headlines found. Use official game and video links above.';
+  }catch{
+   status.textContent='Source headlines are unavailable. Official broadcast and game-center links remain available.';
+  }finally{active=false;refresh.disabled=false;}
+ }
+ refresh.addEventListener('click',()=>{last=0;void load()});
+ node.addEventListener('oracle:activate',()=>{void load()});
+}
+
 function appendAnnouncer(info){
  const panel=el('section','vbs-announcer');
  const facts=el('p','vbs-announcer-copy',sampleAnnouncerFacts.join(' '));
