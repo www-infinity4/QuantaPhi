@@ -284,7 +284,7 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch){
  const q=clean(body.request);
  const match=q.match(/\b([A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/\w[A-Za-z0-9_.-]{0,99})\b/);
  const repository=String(body.repository||match?.[1]||
-  (/\bquantaphi\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
+  (/\b(?:quanta\s?phi|quabtaphi|bubbles|quick\s*cards?|website\s+cards?|this\s+(?:site|website))\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
  if(!/^[A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99}$/.test(repository))
   return response(request,{ok:true,output:'Give me the public repository owner/name to inspect, for example www-infinity4/QuantaPhi.',receipt:{...receipt,status:'needs_input',reason:'repository_name_required',repositoryActionsVerified:false}});
  try{
@@ -331,7 +331,7 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch){
 export async function readGithubFile(request,body,receipt,fetcher=fetch){
  const q=clean(body.request,2500);
  const full=q.match(/\b([a-z0-9][a-z0-9_.-]{0,38}\/[a-z0-9_][a-z0-9_.-]{0,99})\b/i);
- const repo=String(body.repository||full?.[1]||(/\bquantaphi\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
+ const repo=String(body.repository||full?.[1]||(/\b(?:quanta\s?phi|quabtaphi|bubbles|quick\s*cards?|website\s+cards?|this\s+(?:site|website))\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
  const fileMatch=q.match(/\b(readme(?:\.md)?|(?:[a-z0-9_.-]+\/){0,6}[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json))\b/i);
  const requested=String(body.path||fileMatch?.[1]||'').trim();
  const path=/^readme(?:\.md)?$/i.test(requested)?'README.md':requested;
