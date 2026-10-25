@@ -1,4 +1,5 @@
 import {createChatGPTLoop} from './bubbles-chatgpt-loop.mjs';
+import {selectChatGPTSignInTab} from './bubbles-chatgpt-continuity.mjs';
 // Bubbles owner-only interactive Cloudflare Browser Run panel.
 // The browser page is real hosted Chrome Live View, not an ordinary iframe
 // pretending to click cross-origin websites. Provider logins stay in Chrome.
@@ -358,6 +359,14 @@ export function mount({host,ownerHeaders,reveal=false}){
   advanced.open=true;wrap.hidden=false;
   for(let step=0;step<12;step++){
    if(signal?.aborted)throw Error('continuation_stopped');
+   // Google may open an OAuth popup. Follow only an unambiguous official
+   // sign-in tab. The final ChatGPT account still needs independent proof.
+   if(step>0||waitingForSignIn){
+    const live=await call('view');
+    const selected=selectChatGPTSignInTab(live.tabs,historyTargetId);
+    if(!selected.targetId)throw Error(selected.state);
+    historyTargetId=selected.targetId;
+   }
    const result=(await call('chatgpt_signin',{targetId:historyTargetId})).result;
    if(result?.state==='history_ready'&&result.accountVerified===true){
     waitingForSignIn=false;return;
