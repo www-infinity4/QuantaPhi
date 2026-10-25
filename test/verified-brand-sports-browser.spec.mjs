@@ -26,7 +26,7 @@ test('World Series pitchers, actual coupons and medically sourced screening have
  await expect(stage.getByText(/Robert Gasser vs Rays RHP Freddy Peralta/)).toBeVisible({timeout:20000});
  await page.locator('.oracle-card-library summary').click();
  await page.locator('#oracleCardChooser').selectOption('source-kohls-coupons');
- console.log('KOHL_STAGE_DETAIL', JSON.stringify({active:await stage.locator('[data-source-id]').first().getAttribute('data-source-id'),text:(await stage.innerText()).slice(0,1300)}));
+ console.log('KOHL_STAGE_DETAIL', JSON.stringify(await page.evaluate(()=>({value:document.getElementById('oracleCardChooser')?.value,stage:document.querySelector('#oracleCardStage [data-source-id]')?.dataset?.sourceId,bank:[...document.querySelectorAll('#verifiedBrandSportsCards [data-source-id]')].filter(n=>n.dataset.sourceId.includes('kohls')).map(n=>({id:n.dataset.sourceId,ready:n.dataset.sourceReady,connected:n.isConnected,imgComplete:n.querySelector('img')?.complete,naturalWidth:n.querySelector('img')?.naturalWidth})),hasOption:!!document.querySelector('#oracleCardChooser option[value="source-kohls-coupons"]'),status:document.getElementById('oracleCardStatus')?.textContent}))));
  await expect(stage.locator('[data-source-id="kohls-coupons"]')).toBeVisible({timeout:10000});
  await expect(stage.locator('.vbs-terms')).toContainText('No fabricated coupons.');
  await expect(stage.getByRole('link',{name:'Current coupons and offers'})).toBeVisible();
