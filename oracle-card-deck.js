@@ -81,7 +81,7 @@ const spotlightRequested=(()=>{try{
 }catch{return null}})();
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
 entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
-let active=null,expanded=false;
+let active=null,expanded=false,activeMediaObserver=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
 let selectedTab='public',directionApi=null,quantApi=null,quantWeights={},quantConnected=false;
@@ -278,9 +278,31 @@ function available(entry){
  return entry.node.children.length>0;
 }
 function order(){return entries.filter(available).sort((a,b)=>b.count-a.count||entries.indexOf(a)-entries.indexOf(b))}
+// Native video starts muted inside the active interactive card to satisfy
+// modern autoplay rules. Provider iframes remain subject to their own policy.
+// A game, GIF or live player retains its original DOM and controls.
+function startNativeCardVideo(node){
+ activeMediaObserver?.disconnect();
+ const attempted=new WeakSet();
+ const start=()=>{
+  for(const video of node.querySelectorAll('video')){
+   if(attempted.has(video))continue;
+   attempted.add(video);
+   video.muted=true;video.defaultMuted=true;video.setAttribute('muted','');
+   video.playsInline=true;video.setAttribute('playsinline','');
+   video.autoplay=true;
+   try{const result=video.play();result?.catch?.(()=>{})}catch{}
+  }
+ };
+ start();
+ activeMediaObserver=new MutationObserver(start);
+ activeMediaObserver.observe(node,{subtree:true,childList:true});
+}
 function returnActive(){
+ activeMediaObserver?.disconnect();activeMediaObserver=null;
  if(!active)return;
  const {node,marker}=active;
+ for(const video of node.querySelectorAll('video'))video.pause();
  // Playing TV must stop immediately before the viewer switches away.
  if(active.id==='phiChannelCards')document.dispatchEvent(new CustomEvent('oracle:card-deactivated',{detail:{id:active.id}}));
  // Story generation may reparent Asteroid into the research card while a
@@ -303,7 +325,8 @@ function show(entry,remember=true){
  // Preserve exactly one original node and every listener, media control and data store.
  const marker=document.createComment('Oracle card original location: '+entry.id);
  entry.node.parentNode.insertBefore(marker,entry.node);entry.marker=marker;
- presentOriginal(entry);stage.append(entry.node);active=entry;
+ presentOriginal(entry);stage.append(entry.node);stage.scrollTop=0;active=entry;
+ startNativeCardVideo(entry.node);
  entry.node.dispatchEvent(new Event('oracle:activate'));
  void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
  // The original card owns its actions when it already provides a toolbar.
