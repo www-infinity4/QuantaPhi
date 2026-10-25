@@ -70,7 +70,7 @@ export function mountPremiumCard(card){
     if(row.image){const image=make('img','premium-photo');image.src=row.image;image.alt=row.title;image.referrerPolicy='no-referrer';image.addEventListener('error',()=>{image.remove()},{once:true});visual.append(image)}
     visual.append(make('p','premium-credit',row.credit+(row.date?' · '+String(row.date).slice(0,10):'')),make('h3','',row.title),make('p','premium-description',String(row.description||'').replace(/<[^>]*>/g,'').slice(0,600)));
     const open=make('a','premium-open','Read at '+card.name+' ↗');open.href=sourceURL(row.url);open.target='_blank';open.rel='noopener noreferrer';visual.append(open);
-    const itemActions=make('div');mountCardActions(itemActions,{id:card.id+'-item-'+hash(row.url),name:row.title,category:card.category,url:row.url,route:'/?card='+card.id+'&topic='+encodeURIComponent(query)+'&item='+hash(row.url)});visual.append(itemActions);
+    const itemActions=make('div');mountCardActions(itemActions,{id:card.id+'-item-'+hash(row.url),name:row.title,category:card.category,url:row.url,image:row.image,description:row.description,route:'/?card='+card.id+'&topic='+encodeURIComponent(query)+'&item='+hash(row.url)});visual.append(itemActions);
     count.textContent=(selected+1)+' / '+rows.length;previous.disabled=selected===0;next.disabled=selected===rows.length-1;
    }
    previous.addEventListener('click',()=>{selected--;show()});next.addEventListener('click',()=>{selected++;show()});content.append(visual,nav);show();

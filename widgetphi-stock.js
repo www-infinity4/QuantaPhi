@@ -62,7 +62,15 @@
 
   async function share(card) {
     const item = payload(card); const title = `${item.company || item.symbol} (${item.symbol})`;
-    const url = item.permalink || location.href; const text = `${title} market card`;
+    const destination='/stock-quick-card.html?'+new URLSearchParams({
+      symbol:String(item.symbol||'').slice(0,16),exchange:String(item.exchange||'').slice(0,20),
+      company:String(item.company||item.symbol||'').slice(0,180)});
+    const {socialShareUrl}=await import('/card-social-share.mjs');
+    const url=socialShareUrl({id:'stock-'+String(item.symbol||'').toLowerCase(),
+      name:title,category:'Markets · Interactive stock chart',
+      description:'Explore the sourced market chart inside Infinity; verify prices at the market data source.',
+      route:destination},{origin:location.origin});
+    const text = `${title} market card`;
     let completed = false;
     try {
       if (navigator.share) { await navigator.share({ title, text, url }); completed = true; }

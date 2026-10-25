@@ -40,6 +40,13 @@ test('exact product photos and exact product destinations match item code',()=>{
 test('product cards use five working QuantaPhi actions plus exact shop links, no fake offers',()=>{
  assert.match(module,/mountCardActions\(activity,/);
  assert.match(module,/Shop this exact item/);
+ assert.ok(module.includes("route:'/q-share?card='"));
+ assert.match(deck,/qbp-product-card/);
+ assert.ok(deck.includes('/q-share?card='));
+ const detail=read('product-quick-card.html'),detailJs=read('product-quick-card.mjs');
+ assert.ok(detail.includes('brand-product-cards.css'));
+ assert.ok(detailJs.includes('createBrandProductCard(card)'));
+ assert.match(detailJs,/BRAND_PRODUCT_CARDS/);
  assert.match(module,/aria-label/);
  assert.match(module,/img\.addEventListener\('error'/);
  assert.match(module,/Independent product discovery/);
@@ -76,4 +83,18 @@ test('product cards retain mobile portrait product photos and readable calls to 
  assert.match(css,/min-height:54px/);
  assert.match(css,/@media\(max-width:410px\)/);
  assert.match(css,/:focus-visible/);
+});
+
+test('Cloudflare share registry matches all six real product photos, descriptions and dated prices',()=>{
+ const edge=read('workers/quantaphi-site/worker.js');
+ const prefix='const QP_PRODUCT_SHARE=Object.freeze(';
+ const first=edge.indexOf(prefix),last=edge.indexOf('});',first);
+ const match=first<0||last<0?null:[null,edge.slice(first+prefix.length,last+1)];
+ assert.ok(match,'Edge share records exist');
+ const catalog=JSON.parse(match[1]);
+ assert.deepEqual(Object.keys(catalog).sort(),BRAND_PRODUCT_CARDS.map(p=>p.id).sort());
+ for(const card of BRAND_PRODUCT_CARDS){
+  const {id,brand,title,price,region,description,image,checked}=card;
+  assert.deepEqual(catalog[id],{id,brand,title,price,region,description,image,checked});
+ }
 });

@@ -530,8 +530,12 @@
     if (!current) return;
     interactedWithStory = true;
     let url;
-    try { url=await deepLink(current); }
-    catch(error){ note(String(error?.message||'Full-story link could not be prepared')+' No share credit was issued.');return; }
+    try {
+      const destination=await deepLink(current);
+      const {socialShareUrl}=await import('/card-social-share.mjs');
+      url=socialShareUrl({id:'infinite-book-'+current.id,name:current.title,
+       category:'Interactive story reader',description:current.summary||'',route:destination},{origin:location.origin});
+    }catch(error){ note(String(error?.message||'Full-story link could not be prepared')+' No share credit was issued.');return; }
     // Never replace a full-story link with a search URL.
     const starter = String(current.summary || '').replace(/\s+/g,' ').trim();
     const teaser = (starter.slice(0,150).replace(/\s+\S*$/,'') || starter.slice(0,150)) + (starter.length > 150 ? '… Read and research it in Infinity Phi.' : ' · Explore on Phi.');

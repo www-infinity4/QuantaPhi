@@ -145,10 +145,14 @@
     finally{busy=false;render()}
   }
   window.addEventListener('phi:media-star:fred-selected',event=>{void selectRadioEpisode(event?.detail?.spaceId)});
-  function share(){
-    const url=new URL(location.href);url.hash="fredSpacesRadio";url.searchParams.set("fredSpace",active.id);
-    const data={title:active.title+" — Fred Krueger Space",text:active.title,url:url.href};
-    const completed=navigator.share?navigator.share(data):navigator.clipboard?.writeText?.(url.href)||Promise.reject(new Error("No share mechanism"));
+  async function share(){
+    const destination=new URL(location.href);destination.hash="fredSpacesRadio";destination.searchParams.set("fredSpace",active.id);
+    const url=(await import('/card-social-share.mjs')).socialShareUrl({
+      id:'fred-space-'+active.id,name:active.title+' — Fred Krueger Space',
+      category:'Audio · Public replay',description:active.description,route:destination.href
+    },{origin:location.origin});
+    const data={title:active.title+" — Fred Krueger Space",text:active.title,url};
+    const completed=navigator.share?navigator.share(data):navigator.clipboard?.writeText?.(url)||Promise.reject(new Error("No share mechanism"));
     Promise.resolve(completed).then(()=>{window.QuantaStarCredit?.("share","fred-space:"+active.id+":"+Date.now(),active);note("Shared +0.1 StarCoin.");}).catch(()=>note("Share canceled; no StarCoin awarded."));
   }
   function collect(){

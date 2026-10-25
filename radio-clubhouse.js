@@ -98,7 +98,11 @@
   share.addEventListener('click',async()=>{
    share.disabled=true;
    try{
-    const page=readerUrl(t);
+    const page=(await import('/card-social-share.mjs')).socialShareUrl({
+      id:'radio-topic-'+String(t.id).replace(/[^a-z0-9-]/gi,'-'),
+      name:t.title,category:'Radio Clubhouse · Reader',description:t.summary||t.description||'Read the original forum discussion',
+      route:readerUrl(t)
+     },{origin:location.origin});
     if(navigator.share)await navigator.share({title:t.title+' · QuantaPhi Radio Clubhouse',text:'Read the Radio Clubhouse card on QuantaPhi. The original forum source is linked inside.',url:page});
     else if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(page);
     else throw new Error('Sharing is not available on this device');

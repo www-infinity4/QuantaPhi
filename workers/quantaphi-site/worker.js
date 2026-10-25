@@ -251,6 +251,71 @@ function rewriteSuiteText(text) {
 }
 // Social crawlers do not execute the browser app. Render topic metadata on the edge.
 const QP_PREVIEW_IMAGE = CANONICAL_ORIGIN + '/preview.png?v=20261008-share1';
+// Stable, approved share metadata for the six curated products. Duplicated here so
+// edge and legacy VM-based routing tests have no extra module imports or network dependency.
+// Regression tests compare these records with brand-product-cards.mjs to prevent drift.
+const QP_PRODUCT_SHARE=Object.freeze({
+ "pepe-brooke": {
+  "id": "pepe-brooke",
+  "brand": "Pepe Jeans",
+  "title": "Iconic Brooke · Low-Rise Slim Fit",
+  "price": "",
+  "region": "UK",
+  "description": "Classic low-rise slim denim with five-pocket stitching.",
+  "image": "https://images.pepejeans.com/dw/image/v2/BCDD_PRD/on/demandware.static/-/Sites-pjg-master-catalog/default/dw6862b90e/images/hi-res/PL2050628_4UA_000_06_MO.jpg?q=90&sw=600",
+  "checked": "2026-10-24"
+ },
+ "pepe-vapour": {
+  "id": "pepe-vapour",
+  "brand": "Pepe Jeans",
+  "title": "Vapour · Dark Blue Tapered Jeans",
+  "price": "",
+  "region": "India",
+  "description": "Dark-wash low-rise tapered jeans. Browse this exact colour and available sizes at the original source.",
+  "image": "https://d1pdzcnm6xgxlz.cloudfront.net/bottoms/8905875130871-15.jpg",
+  "checked": "2026-10-24"
+ },
+ "guess-g11-light": {
+  "id": "guess-g11-light",
+  "brand": "GUESS JEANS",
+  "title": "G11 · River Light Vintage Wash",
+  "price": "$89.00",
+  "region": "US",
+  "description": "Medium-rise wide leg with classic five-pocket construction and a soft light-denim finish.",
+  "image": "https://img.guess.com/image/upload/f_auto%2Cq_auto%2Cfl_strip_profile%2Cw_640%2Car_2%3A3%2Cc_fill/v1/NA/Style/ECOMM/W4BA0YD5CCA-GJRV",
+  "checked": "2026-10-24"
+ },
+ "guess-g11-dark": {
+  "id": "guess-g11-dark",
+  "brand": "GUESS JEANS",
+  "title": "G11 · Heritage Dark Wash",
+  "price": "$89.00",
+  "region": "US",
+  "description": "A dark-wash medium-rise wide-leg option with the original denim hardware and seams.",
+  "image": "https://guess.com.au/cdn/shop/files/W5RA0YD5M42-GJHR-ALT3.jpg?v=1768983059",
+  "checked": "2026-10-24"
+ },
+ "levis-501-dark": {
+  "id": "levis-501-dark",
+  "brand": "Levi’s",
+  "title": "501® Original Fit · Dark Wash",
+  "price": "$69.98",
+  "region": "US",
+  "description": "Straight-fit 501® jeans with the characteristic button fly and five-pocket design.",
+  "image": "https://lsco.scene7.com/is/image/lsco/005013373-front-gstk?fit=crop%2C0&fmt=jpeg&hei=1852&op_usm=0.6%2C0.6%2C8&qlt=70&resMode=bisharp&wid=2000",
+  "checked": "2026-10-24"
+ },
+ "levis-501-medium": {
+  "id": "levis-501-medium",
+  "brand": "Levi’s",
+  "title": "501® Original Fit · Medium Wash",
+  "price": "$84.95",
+  "region": "US",
+  "description": "A medium-wash version of the original straight-leg 501® denim silhouette.",
+  "image": "https://lsco.scene7.com/is/image/lsco/005013306-front-pdp?fit=crop%2C1&fmt=jpeg&hei=1840&op_usm=0.6%2C0.6%2C8&qlt=70&resMode=sharp2&wid=2000",
+  "checked": "2026-10-24"
+ }
+});
 function qpShareEscape(value) {
  return String(value || '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 }
@@ -266,44 +331,74 @@ function qpShareImage(value) {
  }catch{return ''}
 }
 function qpShareResponse(incoming) {
- const search=qpSharePlain(incoming.searchParams.get('q'),320);
- const title=qpSharePlain(incoming.searchParams.get('title'),160) || search || 'QuantaPhi AI Research';
- const summary=qpSharePlain(incoming.searchParams.get('text'),450) || 'Discover original research, surprising stories, images, video and sound with QuantaPhi.';
- const kind=qpSharePlain(incoming.searchParams.get('kind'),30) || 'research';
- const customImage=qpShareImage(incoming.searchParams.get('image'));
+ // Only first-party, curated merchandise IDs can supply product metadata.
+ // Ignore user-provided image, price, title and checkout overrides for products.
+ const productId=qpSharePlain(incoming.searchParams.get('card'),70);
+ const product=Object.hasOwn(QP_PRODUCT_SHARE,productId)?QP_PRODUCT_SHARE[productId]:null;
+ const search=product?'':qpSharePlain(incoming.searchParams.get('q'),320);
+ const observedPrice=product?.price?product.price+' · checked '+product.checked:'Price at retailer';
+ const title=product
+  ?qpSharePlain(product.brand+' '+product.title+' · '+observedPrice,160)
+  :qpSharePlain(incoming.searchParams.get('title'),160) || search || 'QuantaPhi AI Research';
+ const summary=product
+  ?qpSharePlain(product.description+' View the real product photo and details in the Infinity Quick Card, then buy through the original retailer. Price and availability may change.',450)
+  :qpSharePlain(incoming.searchParams.get('text'),450) || 'Discover original research, surprising stories, images, video and sound with QuantaPhi.';
+ const kind=product?'product':qpSharePlain(incoming.searchParams.get('kind'),30) || 'research';
+ // X displays a linked preview, not arbitrary HTML controls inside an image.
+ // The descriptive action tells the user what works AFTER opening Infinity.
+ const action=product?'Shop this item':qpSharePlain(incoming.searchParams.get('action'),48);
+ const previewTitle=!product&&action?qpSharePlain(title+' · '+action,210):title;
+ // Verified product images include CDN transformation URLs without file extensions.
+ const customImage=product?product.image:qpShareImage(incoming.searchParams.get('image'));
  const image=customImage || QP_PREVIEW_IMAGE;
- const destination=new URL('/',CANONICAL_ORIGIN);
- if(search)destination.searchParams.set('q',search);
- destination.hash='result';
+ const imageAlt=product
+  ?product.brand+' '+product.title+' — authentic retailer product photo'
+  :(customImage?'QuantaPhi research image about '+title:'QuantaPhi copper emblem on deep blue background');
+ const destination=new URL(product?'/product-quick-card.html':'/',CANONICAL_ORIGIN);
+ if(product)destination.searchParams.set('card',product.id);
+ else{
+  if(search)destination.searchParams.set('q',search);
+  destination.hash='result';
+ }
  const provided=qpSharePlain(incoming.searchParams.get('dest'),1800);
- if(provided) {
+ if(provided&&!product) {
   try{const next=new URL(provided,CANONICAL_ORIGIN);if(next.origin===CANONICAL_ORIGIN && !next.pathname.startsWith('/q-share')){destination.pathname=next.pathname;destination.search=next.search;destination.hash=next.hash;}}
   catch {}
  }
- const canonical=new URL(incoming);canonical.hash='';
+ const canonical=product?new URL('/q-share?card='+encodeURIComponent(product.id),CANONICAL_ORIGIN):new URL(incoming);canonical.hash='';
  const tags=[
   '<!doctype html><html lang="en"><head><meta charset="utf-8">',
   '<meta name="viewport" content="width=device-width,initial-scale=1">',
-  '<title>'+qpShareEscape(title)+' | QuantaPhi</title>',
+  '<title>'+qpShareEscape(previewTitle)+' | QuantaPhi</title>',
   '<meta name="description" content="'+qpShareEscape(summary.slice(0,240))+'">',
   '<link rel="canonical" href="'+qpShareEscape(canonical.href)+'">',
   '<meta property="og:type" content="article">',
   '<meta property="og:site_name" content="QuantaPhi">',
   '<meta property="og:url" content="'+qpShareEscape(canonical.href)+'">',
-  '<meta property="og:title" content="'+qpShareEscape(title)+'">',
+  '<meta property="og:title" content="'+qpShareEscape(previewTitle)+'">',
   '<meta property="og:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
   '<meta property="og:image" content="'+qpShareEscape(image)+'">',
-  '<meta property="og:image:alt" content="'+qpShareEscape(customImage?'QuantaPhi research image about '+title:'QuantaPhi copper emblem on deep blue background')+'">',
+  '<meta property="og:image:alt" content="'+qpShareEscape(imageAlt)+'">',
   '<meta name="twitter:card" content="summary_large_image">',
-  '<meta name="twitter:title" content="'+qpShareEscape(title)+'">',
+  '<meta name="twitter:title" content="'+qpShareEscape(previewTitle)+'">',
   '<meta name="twitter:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
   '<meta name="twitter:image" content="'+qpShareEscape(image)+'">',
-  '<meta name="twitter:image:alt" content="'+qpShareEscape(customImage?'QuantaPhi research image about '+title:'QuantaPhi research cover artwork')+'">',
+  '<meta name="twitter:image:alt" content="'+qpShareEscape(imageAlt)+'">',
  ];
  if(!customImage)tags.push('<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png">');
+ if(action&&!product){
+  tags.push('<meta name="twitter:label1" content="Open the interactive card">');
+  tags.push('<meta name="twitter:data1" content="'+qpShareEscape(action)+'">');
+ }
+ if(product?.price&&product.region==='US'){
+  tags.push('<meta property="product:price:amount" content="'+qpShareEscape(product.price.replace(/[^0-9.]/g,''))+'">');
+  tags.push('<meta property="product:price:currency" content="USD">');
+  tags.push('<meta name="twitter:label1" content="Observed price">');
+  tags.push('<meta name="twitter:data1" content="'+qpShareEscape(product.price+' · '+product.checked)+'">');
+ }
  const html=tags.join('\n')+'</head><body style="background:#0a215f;color:white;font:16px system-ui;padding:2rem;max-width:42rem;margin:auto">'+
   '<h1>'+qpShareEscape(title)+'</h1><p>'+qpShareEscape(summary.slice(0,800))+'</p>'+
-  '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">Open in QuantaPhi</a>'+
+  '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">'+qpShareEscape(action||'Open in Infinity')+'</a>'+
   '<script>location.replace('+JSON.stringify(destination.href).replace(/</g,'\\u003c')+')</script></body></html>';
  return new Response(html,{status:200,headers:{'content-type':'text/html; charset=utf-8','cache-control':'public, max-age=120, s-maxage=300','x-content-type-options':'nosniff','x-quantaphi-edge':EDGE_VERSION,'x-quantaphi-share':kind}});
 }

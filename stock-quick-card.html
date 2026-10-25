@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Infinity Stock Quick Card</title><meta name="theme-color" content="#f8f3ef">
+<meta name="description" content="An independent interactive stock research card. Prices and quotes are external and can be delayed.">
+<style>
+:root{font:16px/1.5 system-ui,sans-serif;background:#f8f3ef;color:#292226}
+*{box-sizing:border-box}body{margin:0;padding:16px 10px 80px}
+main{max-width:740px;margin:auto}nav a{color:#a32928;font-weight:700}
+header{background:white;padding:20px;border-radius:18px;margin:15px 0;box-shadow:0 8px 24px #30212910}
+h1{font-size:clamp(1.4rem,5vw,2rem);margin:4px 0}
+small,p{color:#635a60}.notice{background:white;border:1px solid #e3d3c9;border-radius:14px;padding:15px;margin-top:12px}
+</style></head><body>
+<main><nav><a href="/">← Infinity · QuantaPhi</a></nav>
+<header><small>INFINITY 2026® · PUBLIC MARKET RESEARCH</small>
+<h1 id="title">Original stock research card</h1>
+<p>Interactive chart and exact quoted symbol, opened from a shared card.</p></header>
+<section id="stockQuickCard" aria-live="polite"><p>Loading market widget…</p></section>
+<p class="notice">Independent research display, not investment advice. The TradingView widget may be delayed or unavailable. Verify market data and trade only with your own authorized brokerage.</p>
+</main>
+<script src="/widgetphi-stock.js?v=20261025-share-universal1" defer></script>
+<script defer>
+window.addEventListener('DOMContentLoaded',()=>{
+ const p=new URLSearchParams(location.search);
+ const symbol=(p.get('symbol')||'').toUpperCase().slice(0,16),exchange=(p.get('exchange')||'').toUpperCase().slice(0,20),company=(p.get('company')||symbol).slice(0,180);
+ const root=document.getElementById('stockQuickCard');
+ if(!/^[A-Z0-9.^-]{1,16}$/.test(symbol)||exchange&&!/^[A-Z0-9._-]{2,20}$/.test(exchange)){root.textContent='A valid market symbol is required.';return;}
+ document.title=symbol+' · Infinity Stock Quick Card';
+ document.getElementById('title').textContent=company+' ('+symbol+')';
+ try{window.WidgetPhiStock.renderCard({symbol,exchange,company,permalink:location.href},root)}
+ catch{root.textContent='The stock widget is unavailable. Verify this ticker at the original market source.'}
+});
+</script></body></html>
