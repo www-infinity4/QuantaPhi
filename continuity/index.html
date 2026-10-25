@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f1ea"><meta name="description" content="Continuity: keep intelligent work moving from first request to verified completion.">
+<title>Continuity — Work that picks up where it left off</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to workspace</a>
+<div class="app">
+<aside class="side">
+  <a class="brand" href="./" aria-label="Continuity home"><span class="brand-symbol" aria-hidden="true">∞</span><span><b>continuity</b><small>THE EXECUTION MEMORY</small></span></a>
+  <div class="side-head"><span>WORKSPACES</span><button class="icon-button" id="new-project" title="Add a project folder" aria-label="Add project folder">+</button></div>
+  <nav id="projects" aria-label="Project folders"></nav>
+  <div class="side-break"></div>
+  <p class="side-copy">One uninterrupted record from the original request to the evidence that it worked.</p>
+  <div class="side-tools">
+    <button id="export" class="ghost full">↧ &nbsp; Export recovery file</button>
+    <label for="import" class="ghost full upload">↥ &nbsp; Restore from file</label>
+    <input id="import" type="file" accept="application/json,.json" hidden>
+  </div>
+  <a class="side-foot" href="https://quantaphi.org/bubbles.html" rel="noopener">Open Bubbles <span aria-hidden="true">↗</span></a>
+</aside>
+<main id="main">
+  <header class="top">
+    <div><span class="kicker"><span class="online-dot"></span> CONTINUITY ENGINE / WORKSPACE 01</span><h1>Keep the work moving.</h1></div>
+    <div class="top-actions"><button id="sync" class="ghost">↻ &nbsp; Sync sources</button><button id="create" class="primary">+ New work</button></div>
+  </header>
+  <div class="notice" id="notice" role="status" aria-live="polite">Workspace loaded. Work and receipts are saved in this browser; export a recovery copy.</div>
+  <section class="hero" aria-label="Execution overview">
+    <div class="hero-copy">
+      <span class="eyebrow">THE WORK DOESN'T DISAPPE</span>
+      <h2>Remember the state.<br><em>Resume the execution.</em></h2>
+      <p>Plans, tools, blockers, original instructions and proof — together in one living project memory.</p>
+      <div class="hero-buttons"><button class="hero-btn" id="resume-first">Resume next job <span aria-hidden="true">↗</span></button><button class="text-btn" id="show-blocked">Investigate blocked work <span aria-hidden="true">→</span></button></div>
+    </div>
+    <div class="flow-graphic" aria-hidden="true">
+      <svg viewBox="0 0 400 210" role="img" aria-label="Work moves from intake through execution to verified completion">
+        <defs><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#d8a19d"/><stop offset="1" stop-color="#c1584d"/></linearGradient></defs>
+        <path d="M45 106 H358" stroke="#e6dad1" stroke-width="3" stroke-linecap="round"/>
+        <path d="M45 106 H231" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="48" cy="106" r="23" fill="#fff" stroke="#c73f36" stroke-width="3"/>
+        <circle cx="147" cy="106" r="23" fill="#fff" stroke="#c73f36" stroke-width="3"/>
+        <circle cx="247" cy="106" r="23" fill="#fff" stroke="#dbc4b9" stroke-width="3"/>
+        <circle cx="349" cy="106" r="23" fill="#fff" stroke="#dbc4b9" stroke-width="3"/>
+        <path d="m39 106 6 6 12-13 M139 106l6 6 12-13" stroke="#c73f36" fill="none" stroke-width="3" stroke-linecap="round"/>
+        <path d="M242 97h10v18h-10z M344 100l5 8 6-8" stroke="#9a867f" fill="none" stroke-width="2.6" stroke-linecap="round"/>
+        <g font-size="12" font-family="system-ui" fill="#77645e" text-anchor="middle"><text x="48" y="154">INTAKE</text><text x="147" y="154">ROUTE</text><text x="247" y="154">RUN</text><text x="349" y="154">PROVE</text></g>
+        <rect x="105" y="22" width="124" height="35" rx="11" fill="#fff5ee" stroke="#e4cdc0"/><text x="167" y="44" font-size="11" font-family="monospace" fill="#a4453a" text-anchor="middle">STATE PRESERVED</text>
+        <path d="M167 57 V76" stroke="#c9a69a" stroke-dasharray="4 4"/>
+      </svg>
+      <div class="flow-caption"><span class="pulse"></span> CHECKPOINT → RESUME → VERIFY</div>
+    </div>
+  </section>
+  <section class="metrics" aria-label="Work state totals">
+    <div class="metric"><span>ACTIVE THREADS</span><strong id="metric-total">—</strong><small>all tracked work</small></div>
+    <div class="metric"><span>READY TO RESUME</span><strong id="metric-ready">—</strong><small>next actions prepared</small></div>
+    <div class="metric"><span>NEEDS ATTENTION</span><strong id="metric-blocked">—</strong><small>blocked or in review</small></div>
+    <div class="metric"><span>COMPLETED</span><strong id="metric-complete">—</strong><small>receipt-confirmed</small></div>
+  </section>
+  <div class="content-layout">
+    <section class="board">
+      <div class="section-title"><div><span class="eyebrow">EXECUTION QUEUE</span><h2>Project continuity</h2></div><span class="count" id="shown-count"></span></div>
+      <div class="filters">
+        <label class="search" for="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search projects, tools, blockers…" autocomplete="off"></label>
+        <select id="status-filter" aria-label="Filter by status"><option value="all">All states</option><option value="inbox">Inbox</option><option value="ready">Ready</option><option value="running">In progress</option><option value="blocked">Blocked</option><option value="review">Needs proof</option><option value="complete">Completed</option></select>
+      </div>
+      <div id="cards" class="cards"></div>
+    </section>
+    <aside class="insights">
+      <div class="insight-panel">
+        <div class="panel-heading"><span class="eyebrow">NEXT BEST STEP</span><span class="live-label">WORKFLOW</span></div>
+        <h3 id="next-title">Resume with context</h3>
+        <p id="next-action">The last verified checkpoint determines what happens next.</p>
+        <button id="next-open" class="outline full">Open next checkpoint →</button>
+      </div>
+      <div class="insight-panel sources">
+        <div class="panel-heading"><span class="eyebrow">CONNECTED OBSERVATIONS</span><span class="source-dot"></span></div>
+        <h3>Source watch</h3>
+        <div class="source-row"><span class="source-icon">GH</span><div><b>GitHub / QuantaPhi</b><small id="github-status">Public source read not checked</small></div></div>
+        <div class="source-row"><span class="source-icon red">𝕏</span><div><b>X / public posts</b><small id="x-status">Last scan not checked</small></div></div>
+        <button id="sync-x" class="text-btn light">Read public X candidates →</button>
+        <p class="fine">X posts are source material, not automatic owner approval. Failed scans remain reported as failed.</p>
+      </div>
+      <div class="insight-panel small-panel">
+        <span class="eyebrow">NOTHING LOST, NOTHING INVENTED</span>
+        <p>Every work item preserves a next action, a blocking reason and an evidence trail. No “done” without a checked receipt.</p>
+        <a href="./README.md" target="_blank" rel="noopener">How continuity works ↗</a>
+      </div>
+    </aside>
+  </div>
+  <footer><span>CONTINUITY / PART OF QUANTAPHI</span><span>Work survives interruptions. Verification survives optimism.</span></footer>
+</main>
+</div>
+<dialog id="task-dialog" aria-labelledby="dialog-title">
+<form id="task-form" method="dialog">
+  <div class="dialog-heading"><div><span class="eyebrow">WORK CHECKPOINT</span><h2 id="dialog-title">New work</h2></div><button type="button" class="close" data-close aria-label="Close">✕</button></div>
+  <input type="hidden" name="id">
+  <label>What must be built or fixed?<input name="title" maxlength="150" required placeholder="e.g. Restore full Bubbles X reading"></label>
+  <label>Project folder<input name="project" list="project-suggestions" maxlength="64" placeholder="Bubbles"></label><datalist id="project-suggestions"></datalist>
+  <label>Acceptance / observable result<textarea name="objective" rows="2" placeholder="Describe what users must actually see working"></textarea></label>
+  <label>Next executable step<textarea name="nextAction" rows="2" placeholder="What should the authorized agent do next?"></textarea></label>
+  <label>Current blocker (if any)<textarea name="blocker" rows="2" placeholder="Exact failure message or missing dependency"></textarea></label>
+  <label>State<select name="status"><option value="inbox">Inbox — needs planning</option><option value="ready">Ready — can execute</option><option value="running">Running — awaiting receipt</option><option value="blocked">Blocked — needs recovery</option><option value="review">Review — needs verification</option><option value="complete">Complete — checked receipt</option></select></label>
+  <label>Source link<input type="url" name="sourceUrl" placeholder="https://github.com/…"></label>
+  <label>Acceptance checks (one per line)<textarea name="acceptance" rows="3" placeholder="Verified actual live response&#10;No old duplicate jobs"></textarea></label>
+  <div class="dialog-actions"><button type="button" class="ghost" data-close>Cancel</button><button type="submit" class="primary">Save checkpoint</button></div>
+</form>
+</dialog>
+<dialog id="receipt-dialog" aria-labelledby="receipt-title">
+<form id="receipt-form" method="dialog">
+ <div class="dialog-heading"><div><span class="eyebrow">PROOF, NOT A PROMISE</span><h2 id="receipt-title">Check an execution receipt</h2></div><button type="button" class="close" data-close aria-label="Close">✕</button></div>
+ <p>Paste a public GitHub Actions run URL. Continuity checks GitHub directly; a failed run is recorded as failed, not completed.</p>
+ <input type="hidden" name="id"><label>GitHub workflow URL<input name="url" type="url" required placeholder="https://github.com/owner/repo/actions/runs/…"></label>
+ <div class="dialog-actions"><button type="button" class="ghost" data-close>Cancel</button><button type="submit" class="primary">Verify with GitHub</button></div>
+</form>
+</dialog>
+<script type="module" src="./app.mjs"></script>
+</body>
+</html>
