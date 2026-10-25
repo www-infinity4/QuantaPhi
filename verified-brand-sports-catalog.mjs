@@ -75,7 +75,7 @@ export const REQUESTED_PUBLIC_CARDS=Object.freeze([
   ['Current coupons and offers','https://www.kohls.com/sale-event/todays-deals.jsp'],
   ['Shop Kohl’s','https://www.kohls.com/'],
   ['Find a store','https://www.kohls.com/stores.shtml']
- ),icon('kohls.com')),
+ ),icon('kohls.com'),{offer:{headline:'Earn $10 Kohl’s Cash for every $50 spent',endDate:'2026-10-25',redemption:'October 26–November 1, 2026',disclaimer:'Not valid on Sephora at Kohl’s. Check the official deal page for all exclusions.'}}),
  entry('honda-vehicles','Honda · vehicle builder','vehicle','Automotive','Compare actual Honda vehicles, specifications and builder options at Honda.','https://automobiles.honda.com/vehicles',actions(
   ['Models and prices','https://automobiles.honda.com/vehicles'],
   ['Build a Honda','https://automobiles.honda.com/'],
