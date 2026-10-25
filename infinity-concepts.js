@@ -132,7 +132,12 @@
       if(shareButton.disabled)return;
       shareButton.disabled=true;
       try{
-        const link=deepLink(e),details={title:e.title,text:'Infinity 2026® physics experiment: '+String(e.description||'').slice(0,170),url:link};
+        const destination=deepLink(e),poster=CARD_ART[e.id]||'';
+         const {socialShareUrl}=await import('/card-social-share.mjs');
+         const link=socialShareUrl({id:'infinity-concept-'+e.id,name:e.title,
+          category:'Physics · Interactive experiment',description:e.description,route:destination,
+          image:poster?new URL(poster,location.origin).href:''},{origin:location.origin});
+         const details={title:e.title,text:'Infinity 2026® physics experiment: '+String(e.description||'').slice(0,170),url:link};
         if(navigator.share)await navigator.share(details);
         else if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(details.text+' '+link);
         else throw Error('Sharing is unavailable in this browser');
