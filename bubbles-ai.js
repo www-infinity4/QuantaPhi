@@ -2656,7 +2656,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Ordinary one-repository changes belong to Bubbles direct GitHub. Only a
  // clear request for multiple cooperating color agents enters Robot Brain.
  const requestsAgents=/\b(?:robot\s*brain|moltnook|multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|bot\s+team|team\s+of\s+bots|run\s+the\s+bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request);
- const codeTask=Boolean(namedCardWork)||/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|populate|scaffold|test|run)\b[\s\S]{0,180}\b(?:github|repositor(?:y|ies)|repos?|code|source|files?|readme|scripts?|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr)\b/i.test(request);
+ const codeTask=/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|populate|scaffold|test|run)\b[\s\S]{0,180}\b(?:github|repositor(?:y|ies)|repos?|code|source|files?|readme|scripts?|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr)\b/i.test(request);
  // Owner-named RecordB issue #2 is a multi-agent implementation job, not a
  // generic GitHub 'assist' operation or a read-only work history report.
  const namedRecordBIssue=/\brecord\s?b\b/i.test(request)&&/\bissue\s*#?\s*2\b/i.test(request);
@@ -2667,7 +2667,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   /\b(?:repos?|repositor(?:y|ies)|files?|scripts?|project|hydrogen)\b/i.test(request);
  const githubInventoryRequested=!ownerGithubNonAction &&
   /\b(?:list|show|find|check|inspect)\b.{0,70}\b(?:(?:my|our|the|all)\s+)?(?:github\s+)?(?:repos?|repositor(?:y|ies))\b/i.test(request);
- let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;
+ let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&(codeTask||Boolean(namedCardWork));
  // Grammar Phi may interpret an unusually worded direct engineering request
  // before the owner tool dispatcher. It returns ONLY a non-authorizing label.
  // Original user intent, verified owner session, repository and permissions
