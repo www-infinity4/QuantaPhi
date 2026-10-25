@@ -40,6 +40,13 @@ test('exact product photos and exact product destinations match item code',()=>{
 test('product cards use five working QuantaPhi actions plus exact shop links, no fake offers',()=>{
  assert.match(module,/mountCardActions\(activity,/);
  assert.match(module,/Shop this exact item/);
+ assert.match(module,/route:'\\/q-share\\?card='/);
+ assert.match(deck,/qbp-product-card/);
+ assert.match(deck,/q-share\\?card/);
+ const detail=read('product-quick-card.html'),detailJs=read('product-quick-card.mjs');
+ assert.match(detail,/brand-product-cards\\.css/);
+ assert.match(detailJs,/createBrandProductCard\\(card\\)/);
+ assert.match(detailJs,/BRAND_PRODUCT_CARDS/);
  assert.match(module,/aria-label/);
  assert.match(module,/img\.addEventListener\('error'/);
  assert.match(module,/Independent product discovery/);
