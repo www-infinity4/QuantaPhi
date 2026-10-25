@@ -383,7 +383,7 @@ async function currentOwnerContext(query){
  if(embedded||!ownerReady||!ownerHeaders)return empty;
  const headers=ownerHeaders,thread=activeThread;
  try{
-  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({messages:[],query,sessionId:thread})},1300);
+  const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({messages:[],query,sessionId:thread})},/\b(?:remember|earlier|previous|last time|continue|resume|again|already|told you|finish|stalled|fix that|that card)\b/i.test(query)?6500:3000);
   const result=await response.json();
   if(!response.ok||!result.ok||ownerHeaders!==headers||activeThread!==thread||!ownerReady)return empty;
   return {related:Array.isArray(result.related)?result.related:[],userInstructions:Array.isArray(result.userInstructions)?result.userInstructions:[],capabilities:Array.isArray(result.capabilities)?result.capabilities:[],state:'retrieved'};
@@ -1080,14 +1080,15 @@ async function suggestRepositoryTargets(request,preview=false){
  // a repository. Both voice and typed repair requests use this path.
  if(!repositorySelectionExplicit){
   try{
-   if(!repositoryCatalogComplete)await loadRepositoryCatalog();
-   if(repositoryCatalogComplete){
-    const discovery=await import('/bubbles-project-discovery.mjs?v=20261025-owner-source2');
+   {
+    // Search authenticated GitHub source first. Listing hundreds of repositories
+    // is only a fallback, not a blocker before every ordinary repair.
+    const discovery=await import('/bubbles-project-discovery.mjs?v=20261025-owner-source3');
     const ownerTurns=messages.filter(m=>m.role==='user'&&typeof m.text==='string'&&m.text!==request).slice(-8);
     const searchRequest=discovery.sourceQueryFor(request,ownerTurns);
     const key=searchRequest.toLowerCase().trim();
     if(!repositorySourceSearch||repositorySourceSearch.key!==key||Date.now()-repositorySourceSearch.at>60000){
-     const pending=discovery.discoverProject({request:searchRequest,catalog:repositoryCatalog,
+     const pending=discovery.discoverProject({request:searchRequest,catalog:repositoryCatalogComplete?repositoryCatalog:null,
       views:discovery.relevantProjectViews(request),invoke:async operation=>{
        let read=await directGithubOperation(operation,{quiet:true});
        if(['read_file','read_repository'].includes(operation.action)&&read.requestId){
@@ -1100,6 +1101,7 @@ async function suggestRepositoryTargets(request,preview=false){
      repositorySourceSearch={key,at:Date.now(),pending};
     }
     const evidence=await repositorySourceSearch.pending;
+    if(evidence&&!repositoryCatalog.includes(evidence.repository))repositoryCatalog.push(evidence.repository);
     // If indexed GitHub search is temporarily unavailable, a registered
     // named card still provides a grounded project target, not a blind guess.
     const knownCard=discovery.namedCardFor(searchRequest);
@@ -1139,7 +1141,7 @@ async function suggestRepositoryTargets(request,preview=false){
  if(result.requiresReview&&!result.allTargets&&!repositorySelectionExplicit&&!repositorySourceSearch){
   try{
    if(!repositoryCatalogComplete)await loadRepositoryCatalog();
-   const discovery=await import('/bubbles-project-discovery.mjs?v=20261025-owner-source2');
+   const discovery=await import('/bubbles-project-discovery.mjs?v=20261025-owner-source3');
    const evidence=repositoryCatalogComplete?await discovery.discoverProject({request,catalog:repositoryCatalog,
     views:discovery.relevantProjectViews(request),invoke:async operation=>{
      let read=await directGithubOperation(operation,{quiet:true});
@@ -2637,7 +2639,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   catch{status.textContent='Card diagnostic skipped; processing the request.';}
  }
  const userRules=[...ownerContext.userInstructions,...messages.filter(m=>m.role==='user'&&/\b(?:don['’]t|do not|never|stop|remember|prefer)\b/i.test(m.text)).slice(-16)];
- const projectContextModule=await import('/bubbles-project-discovery.mjs?v=20261025-owner-source2').catch(()=>null);
+ const projectContextModule=await import('/bubbles-project-discovery.mjs?v=20261025-owner-source3').catch(()=>null);
  const observedViews=projectContextModule?.relevantProjectViews(request)||[];
  // This resolves ordinary phrases like "fix Gary Cardone's Sunday promotion"
  // and "fix that card" from the connected card catalog and recent user turns.
