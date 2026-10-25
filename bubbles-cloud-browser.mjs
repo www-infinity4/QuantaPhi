@@ -469,11 +469,46 @@ export function mount({host,ownerHeaders,reveal=false}){
    }
   }
  }
- openHistory.addEventListener('click',()=>{
+ // One owner tap opens the exact provider page and, when visible and unique,
+ // clicks its PUBLIC login/Google-provider navigation only. Google account
+ // selection, passwords, MFA and every permission grant remain in owner hands.
+ async function openChatGPTHistory(){
+  if(busy)return;
   advanced.open=true;wrap.hidden=false;
-  address.value=destinations.chatgpt;
-  void action(state?'tab':'start',{url:destinations.chatgpt});
- });
+  address.value=destinations.chatgpt;loading(true);
+  try{
+   const opened=await call(state?'tab':'start',{url:destinations.chatgpt});
+   show(opened);
+   const findButton=async labels=>{
+    for(let n=0;n<6;n++){
+     await pause(600);
+     const read=(await call('read')).result;
+     const controls=Array.isArray(read?.controls)?read.controls:[];
+     for(const label of labels){
+      if(controls.filter(control=>String(control.label||'').toLowerCase()===label.toLowerCase()&&!control.disabled).length===1)
+       return label;
+     }
+    }
+    return '';
+   };
+   const login=await findButton(['Log in','Sign in']);
+   if(login){
+    const clicked=await call('click',{label:login});
+    if(clicked.result?.clickDispatched!==true)throw Error('login_navigation_not_confirmed');
+   }
+   const google=await findButton(['Continue with Google','Sign in with Google']);
+   if(google){
+    const clicked=await call('click',{label:google});
+    if(clicked.result?.clickDispatched!==true)throw Error('google_navigation_not_confirmed');
+    status.textContent='Google sign-in opened. Select your existing account in Chrome and complete any required verification yourself.';
+   }else{
+    status.textContent='ChatGPT Chrome is open. If not signed in, select your existing sign-in method directly in the Chrome view.';
+   }
+  }catch(error){
+   status.textContent='Could not confirm sign-in navigation: '+String(error?.message||error).slice(0,140)+'. Continue directly in the private Chrome view.';
+  }finally{loading(false)}
+ }
+ openHistory.addEventListener('click',()=>void openChatGPTHistory());
  continueChats.addEventListener('click',startContinuationWatch);
  stopContinuations.addEventListener('click',()=>{
   stopRequested=true;continuationWatching=false;
