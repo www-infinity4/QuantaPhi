@@ -1,5 +1,5 @@
 import {browserReadExpression,browserClickExpression} from './browser-controls.mjs';
-import {chatgptInspectExpression,chatgptPrepareExpression,chatgptSendExpression} from './chatgpt-dom.mjs';
+import {chatgptInspectExpression,chatgptPrepareExpression,chatgptSendExpression,scopedChatGPTExpression} from './chatgpt-dom.mjs';
 import {chatgptLoginExpression} from './chatgpt-login.mjs';
 // Bounded Chrome DevTools actions used by authenticated Bubbles conversation.
 // This is a real Browser Run CDP connection; no model-generated JavaScript is evaluated.
@@ -43,7 +43,7 @@ function target(tabs,wanted=''){
  const page=(Array.isArray(tabs)?tabs:[]).filter(t=>t.type==='page');
  return wanted?page.find(t=>t.id===wanted)||null:page.at(-1)||null;
 }
-export async function browserAction(env,{sessionId,action,targetId='',url='',label='',field='',value='',mode='',text='',conversationUrl='',messageCount}){
+export async function browserAction(env,{sessionId,action,targetId='',url='',label='',field='',value='',mode='',text='',conversationUrl='',messageCount,canSend}){
  const targets=await env.BROWSER.devtools.listTargets(sessionId);
  const tab=target(targets,targetId);
  if(!tab)throw Error('browser_tab_not_found');
@@ -74,10 +74,13 @@ export async function browserAction(env,{sessionId,action,targetId='',url='',lab
    if(current.generating||current.draftPresent)
     return {ok:false,error:'conversation_not_idle'};
    const continuation='*';
-   const prepared=await evaluate(chatgptPrepareExpression);
+   const scope={conversationUrl,messageCount,claim:crypto.randomUUID()};
+   const prepared=await evaluate(scopedChatGPTExpression(chatgptPrepareExpression,scope));
    if(prepared.ok!==true)return prepared;
+   if(canSend&&!await canSend())return {ok:false,error:'continuation_stopped'};
    await send('Input.insertText',{text:continuation});
-   const submitted=await evaluate(chatgptSendExpression);
+   if(canSend&&!await canSend())return {ok:false,error:'continuation_stopped'};
+   const submitted=await evaluate(scopedChatGPTExpression(chatgptSendExpression,scope));
    if(submitted.ok!==true)return submitted;
    for(let i=0;i<8;i++){
     await new Promise(resolve=>setTimeout(resolve,300));

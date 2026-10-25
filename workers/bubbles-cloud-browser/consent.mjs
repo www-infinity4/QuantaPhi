@@ -1,8 +1,24 @@
 import {DurableObject} from 'cloudflare:workers';
+import {ContinuationSupervisor} from './continuation.mjs';
 // Owner-controlled permission for browser automation; no credentials are created.
 // Every automation call must still pass the existing Robot Brain owner verifier.
 const FIVE_DAYS_MS=5*24*60*60*1000;
 export class BrowserConsentStore extends DurableObject {
+ continuation(){
+  return new ContinuationSupervisor(this.ctx.storage,this.env,async()=>{
+   const a=await this.status(),b=await this.chatgptStatus();
+   return {enabled:a.enabled&&b.enabled,expiresAt:Math.min(a.expiresAt||0,b.expiresAt||0)};
+  });
+ }
+ async startContinuation(input){return this.continuation().start(input);}
+ async continuationStatus(){return this.continuation().status();}
+ async continuationContext(){return this.continuation().context();}
+ async stopContinuation(){return this.continuation().stop();}
+ async alarm(){
+  if(this.continuationTickRunning)return;
+  this.continuationTickRunning=true;
+  try{await this.continuation().tick();}finally{this.continuationTickRunning=false;}
+ }
  async consumerHeartbeat(state){
   if(!['ready','busy'].includes(state))return {ok:false,error:'invalid_consumer_state',status:400};
   if(!(await this.chatgptStatus()).enabled||!(await this.status()).enabled)return {ok:false,error:'existing_five_day_approval_required',status:403};
@@ -48,11 +64,13 @@ export class BrowserConsentStore extends DurableObject {
  }
  async revokeChatGPT(){
   await this.ctx.storage.put('owner-chatgpt-bridge-consent',{enabled:false,expiresAt:0,updatedAt:Date.now()});
+  await this.stopContinuation();
   return {ok:true,enabled:false,revoked:true};
  }
  async revoke(){
   // Storage transaction makes revocation visible to the next serialized DO request.
   await this.ctx.storage.put('owner-browser-consent',{enabled:false,expiresAt:0,updatedAt:Date.now()});
+  await this.stopContinuation();
   return {ok:true,enabled:false,revoked:true};
  }
 }

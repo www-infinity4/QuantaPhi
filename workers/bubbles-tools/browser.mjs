@@ -20,7 +20,7 @@ export function browserTarget(raw) {
 }
 const validSession = value => /^[a-f0-9-]{36}$/i.test(value || '');
 const validProof = value => /^[a-f0-9]{64}$/.test(value || '');
-async function proof(token, id) {
+export async function proof(token, id) {
   const bytes = new TextEncoder().encode('bubbles-browser-owner-v1:' + id + ':' + token);
   const hash = await crypto.subtle.digest('SHA-256', bytes);
   return Array.from(new Uint8Array(hash), b => b.toString(16).padStart(2,'0')).join('');
@@ -68,6 +68,10 @@ export async function browserTool(request, env, {chatgptApproved=false}={}) {
     }
     if(!validSession(body.sessionId)||!validProof(body.proof)||
        body.proof!==await proof(token,body.sessionId)) return json(origin,{ok:false,error:'browser_session_not_owned'},403);
+    if(body.action==='view'&&typeof env.BROWSER.getSession==='function'){
+      const known=await env.BROWSER.getSession(body.sessionId);
+      if(!known||known.endTime>0)return json(origin,{ok:false,error:'browser_session_ended'},410);
+    }
     if(body.action==='stop'){
       await env.BROWSER.closeSession(body.sessionId);
       return json(origin,{ok:true,status:'closed'});
@@ -93,7 +97,7 @@ export async function browserTool(request, env, {chatgptApproved=false}={}) {
     const view=await env.BROWSER.getLiveView(body.sessionId,{mode:'full',expiresInMs:300000});
     if(!view?.devtoolsFrontendUrl)throw Error('live_view_unavailable');
     const tabs=await env.BROWSER.devtools.listTargets(body.sessionId);
-    return json(origin,{ok:true,sessionId:body.sessionId,targetId:body.targetId||null,status:'live',url:view.devtoolsFrontendUrl,
+    return json(origin,{ok:true,sessionId:body.sessionId,proof:body.proof,targetId:body.targetId||null,status:'live',url:view.devtoolsFrontendUrl,
       tabs:Array.isArray(tabs)?tabs.filter(t=>t.type==='page').map(t=>({id:t.id,title:clamp(t.title),url:clamp(t.url)})):[],
       expiresInSeconds:300});
   } catch(error) {
