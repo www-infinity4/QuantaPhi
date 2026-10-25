@@ -70,7 +70,7 @@ export async function browserTool(request, env) {
       await env.BROWSER.closeSession(body.sessionId);
       return json(origin,{ok:true,status:'closed'});
     }
-    if(['navigate','read','click','type','viewport','chatgpt_scan','chatgpt_resume'].includes(body.action)){
+    if((['navigate','read','click','type','viewport'].includes(body.action)||['chatgpt_scan','chatgpt_resume'].includes(body.action))){
       const action=body.action;
       const value=typeof body.value==='string'?body.value:'';
       const field=typeof body.field==='string'?body.field:'';
