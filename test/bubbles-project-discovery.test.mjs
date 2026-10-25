@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {discoverProject,discoveryTerms,recordProjectView,relevantProjectViews,hasActionDraft} from '../bubbles-project-discovery.mjs';
+import {discoverProject,discoveryTerms,sourceQueryFor,recordProjectView,relevantProjectViews,hasActionDraft} from '../bubbles-project-discovery.mjs';
 import {hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
 const catalog=['www-infinity4/QuantaPhi','www-infinity4/ShopLC'];
 const hit={repository:catalog[0],path:'walmart-card.mjs',excerpt:'Walmart products'};
@@ -33,6 +33,12 @@ test('Gary Cardone Church of I AM resolves the real card source across repositor
  assert.equal(source.path,'church-iam-card.js');
  assert.equal(source.card,'church-of-i-am');
  assert.equal(source.writeAuthorized,false);
+});
+test('a natural follow-up reuses the card named in recent owner conversation',()=>{
+ const history=[{role:'user',text:'The Gary Cardone Church of I AM card needs attention.'},
+ {role:'assistant',text:'I will inspect the source.'}];
+ assert.match(sourceQueryFor('Fix that card',history),/Church of I AM/);
+ assert.equal(sourceQueryFor('Fix the Walmart card',history),'Fix the Walmart card');
 });
 test('missing source and genuinely ambiguous matches never silently select a repository',async()=>{
  for(const result of [{...search,results:[hit,{...hit,repository:catalog[1]}]}, {...search,results:[{...hit,repository:'attacker/project'}]}]){
