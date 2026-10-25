@@ -133,6 +133,10 @@ test('ChatGPT continuation route is literal-star only and verifies exact convers
  assert.match(cdp,/if\(text!=='\*'\)/);
  assert.match(cdp,/current\.conversationUrl!==conversationUrl/);
  assert.match(cdp,/recentNudgeCount>0/);
+ assert.match(cdp,/import \{chooseContinuation\} from '\.\.\/\.\.\/bubbles-chatgpt-continuity\.mjs'/);
+ assert.match(cdp,/const eligibility=chooseContinuation\(current\)/);
+ assert.match(cdp,/eligibility\.state!=='ready'/);
+ assert.match(cdp,/continuation_not_eligible/);
  assert.match(tool,/conversationUrl:body\.conversationUrl/);
  assert.match(ui,/chatgpt_resume',\{text:'\*',conversationUrl:item\.url\}/);
  assert.match(ui,/Open ChatGPT history · sign in once/);
