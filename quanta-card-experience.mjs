@@ -28,7 +28,11 @@ const searchBase={
  'us-mint':['https://www.google.com/search?q=site%3Ausmint.gov%20','U.S. Mint'],
  pcgs:['https://www.google.com/search?q=site%3Apcgs.com%20','PCGS'],
  ngc:['https://www.google.com/search?q=site%3Angccoin.com%20','NGC'],
- chime:['https://www.google.com/search?q=site%3Achime.com%20','Chime']
+ chime:['https://www.google.com/search?q=site%3Achime.com%20','Chime'],
+ 'google-ai-studio':['https://www.google.com/search?q=site%3Aai.google.dev%20','Google AI Studio docs'],
+ 'google-maps':['https://www.google.com/maps/search/?api=1&query=','Google Maps'],
+ 'google-finance':['https://www.google.com/search?q=site%3Agoogle.com%2Ffinance%20','Google Finance'],
+ 'capital-one':['https://www.google.com/search?q=site%3Acapitalone.com%20','Capital One public pages']
 };
 export function createCardArtwork(card,small=false){
  const art=node('div','qcx-art'+(small?' qcx-small':''));
@@ -323,6 +327,21 @@ export function mountFoxOneSpot(root,card){
   }
  }
 }
+function googleStudioPromptTool(root){
+ const panel=section(root,'CREATE · FIRST-PARTY PROMPT DRAFT','Plan an app idea for Google AI Studio');
+ const label=node('label','qcx-eyebrow','Describe the app or interactive experience');
+ const draft=node('textarea','qcx-input');draft.rows=4;draft.maxLength=1200;
+ draft.placeholder='An interactive map, physics demonstration, card search, or game…';
+ draft.setAttribute('aria-label','App idea to copy into Google AI Studio');
+ const status=node('p','qcx-note','Your prompt stays on this page until you copy it. Google AI Studio sign-in is separate.');
+ const copy=action('Copy prompt for Google AI Studio',async()=>{
+  const prompt=draft.value.trim();if(!prompt){status.textContent='Write an app idea first.';return;}
+  try{await navigator.clipboard.writeText(prompt);status.textContent='Prompt copied. Open Google AI Studio and paste it into Build mode.';}
+  catch{draft.select();status.textContent='Copy the selected prompt manually, then open Google AI Studio.';}
+ });
+ const open=link('Open official Google AI Studio','https://aistudio.google.com/');
+ panel.append(label,draft,copy,open,status);
+}
 export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
@@ -331,6 +350,7 @@ export function mountCardTools(root,card){
   // Search remains the primary interaction; global controls come afterward.
   searchTool(root,card);mountCardActions(root,card);return;
  }
+ if(id==='google-ai-studio')googleStudioPromptTool(root);
  if(id==='fox-one'||id==='fox-one-live-news')mountFoxOneSpot(root,card);
  if(id==='youtube'||id==='tiktok')mediaPlayer(root,id);
  if(id==='spotify')mediaPlayer(root,'spotify');
