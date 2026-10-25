@@ -41,3 +41,14 @@ test('Sunday promo uses actual website-hosted image and standard actions, clear 
  assert.match(page,/church-iam-card\.css\?v=20261024-sunday1/);
  assert.match(page,/church-iam-card\.js\?v=20261024-sunday1/);
 });
+
+test('direct portrait source, verified backup and accessible fallback replace Cloudimage proxy',()=>{
+ assert.doesNotMatch(page,/cloudimg\\.io/);
+ assert.match(page,/src="https:\\/\\/cdn\\.ccard\\.to\\/static\\/media\\/2024\\/08\\/18\\/aitvlufi/);
+ assert.match(module,/cdn\\.theorg\\.com\\/82a317f7/);
+ assert.match(module,/portrait\\.addEventListener\\('error',portraitError\\)/);
+ assert.match(module,/portrait\\.complete&&!portrait\\.naturalWidth/);
+ assert.match(style,/iam-photo-unavailable/);
+ assert.match(style,/body\\.oracle-quanta \\.iam-card \\.iam-copy/);
+ assert.doesNotMatch(page,/onerror="this\\.style\\.display='none'"/);
+});
