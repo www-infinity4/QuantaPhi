@@ -1,0 +1,36 @@
+name: Continuity checkpoint engine
+on:
+  pull_request:
+    paths:
+      - 'continuity/**'
+      - 'test/continuity.test.mjs'
+      - '.github/workflows/continuity-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'continuity/**'
+      - 'test/continuity.test.mjs'
+      - '.github/workflows/continuity-checks.yml'
+permissions:
+  contents: read
+jobs:
+  continuity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and checkpoint recovery regression tests
+        run: |
+          node --check continuity/engine.mjs
+          node --check continuity/app.mjs
+          node --test test/continuity.test.mjs
+      - name: Validate isolated app entrypoint
+        run: |
+          test -f continuity/index.html
+          test -f continuity/style.css
+          test -f continuity/app.mjs
+          grep -q 'type="module" src="./app.mjs"' continuity/index.html
+          grep -q 'href="./style.css"' continuity/index.html
+          grep -q 'Access-Control-Allow-Origin' workers/bubbles-public-x/worker.mjs
