@@ -138,3 +138,14 @@ test('ChatGPT continuation route is literal-star only and verifies exact convers
  assert.match(ui,/Open ChatGPT history · sign in once/);
  assert.doesNotMatch(ui,/watsonkris611@gmail\.com/i,'never embed the owner email in a public source file');
 });
+
+test('foreground owner watcher rechecks next eight and stops, never claiming an always-on login',()=>{
+ const ui=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
+ assert.match(ui,/function startContinuationWatch\(\)/);
+ assert.match(ui,/continuationTimer=setTimeout\(/);
+ assert.match(ui,/5\*60\*1000/);
+ assert.match(ui,/continuationWatching=false/);
+ assert.match(ui,/clearTimeout\(continuationTimer\)/);
+ assert.match(ui,/advanced\.open=true;wrap\.hidden=false/);
+ assert.doesNotMatch(ui,/Cloud Chrome is always available even if the app is closed/);
+});
