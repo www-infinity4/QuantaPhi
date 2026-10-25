@@ -31,7 +31,7 @@ test('browser-only grant cannot bypass owner verification and manual viewing con
  assert.match(code,/browser_consent_required/);
  assert.match(code,/\['read','navigate','click','type','viewport'\]/);
  assert.match(code,/owner\(request,env\)/);
- assert.match(code,/return browserTool\(request,env\)/);
+ assert.match(code,/return browserTool\(request,env,/);
  assert.match(ui,/Allow browser assistant · 5 days/);
  assert.match(ui,/Revoke browser assistant access/);
  assert.doesNotMatch(ui,/localStorage\.setItem.*Authorization/);

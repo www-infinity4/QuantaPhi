@@ -30,6 +30,14 @@ test('deny other origins and unverified owner sessions',async()=>{
  assert.equal(response.status,403);
  assert.equal(inspect().acquired,0);
 });
+test('generic browser gateway cannot bypass the separate five-day ChatGPT grant',async()=>{
+ const {env,inspect}=fake();
+ for(const action of ['chatgpt_scan','chatgpt_resume','chatgpt_signin']){
+  const response=await browserTool(make(action),env);
+  assert.equal(response.status,403);assert.equal((await response.json()).error,'chatgpt_five_day_approval_required');
+ }
+ assert.equal(inspect().acquired,0);
+});
 test('verified owner can start, open tab, reconnect and close; foreign proofs rejected',async()=>{
  const {env,inspect}=fake();
  const started=await browserTool(make('start',{url:'https://quantaphi.org/'}),env);
@@ -58,7 +66,7 @@ test('Bubbles uses owner-gated gateway and the native Chrome Live View extension
  assert.match(wrangler,/\[browser\]\s*binding = "BROWSER"/);
  assert.doesNotMatch(bubble,/create\('button','ba-tool-link','Cloud browser/);
  assert.match(bubble,/browserConversation\(spoken/);
- assert.equal((bubble.match(/import\('\/bubbles-cloud-browser\.mjs\?v=20261021-android-foreground-poll1'\)/g)||[]).length,3,
+ assert.equal((bubble.match(/import\('\/bubbles-cloud-browser\.mjs\?v=20261025-eight-chat2'\)/g)||[]).length,4,
   'Bubbles voice/chat and semantic tool driver must reuse the same browser session module');
  assert.doesNotMatch(bubble,/20261019-live-chrome1/);
  assert.match(page,/bubbles-ai\.js\?v=[0-9A-Za-z_-]+/);

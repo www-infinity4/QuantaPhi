@@ -100,7 +100,7 @@ test('Browser automation never bypasses owner authentication or opens wallet and
  const worker=fs.readFileSync('workers/bubbles-cloud-browser/worker.mjs','utf8');
  const ai=fs.readFileSync('bubbles-ai.js','utf8');
  assert.match(gateway,/ownerAllowed\(request,env\)/);
- assert.match(worker,/browserTool\(request,env\)/);
+ assert.match(worker,/browserTool\(request,env,/);
  assert.match(ai,/browserConversation\(spoken/);
  assert.doesNotMatch(gateway,/bcb_|durable_object_namespace|GRANTS\.get/);
 });

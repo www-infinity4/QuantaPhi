@@ -14,10 +14,10 @@ test('literal star only, not wildcard text, unlocks continuation',()=>{
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  const send=ui.slice(ui.indexOf('async function sendMessage('),ui.indexOf('input.addEventListener(\'keydown\''));
  assert.match(send,/if\(spoken==='\*'\)/);
- assert.match(send,/module\.continueSavedWork/);
+ assert.match(send,/browserConversation\('continue unfinished ChatGPT conversations'/);
+ assert.doesNotMatch(send.slice(send.indexOf("if(spoken==='*')"),send.indexOf('return;',send.indexOf("if(spoken==='*')"))),/module\.continueSavedWork/);
  assert.match(send,/ownerHeaders:verifiedOwnerHeaders/);
- assert.match(send,/nativeSpeechReply=spokenResult/);
- assert.match(send,/Runner requested\./);
+ assert.match(send,/Checking ChatGPT\./);
 });
 test('most recent signed owner tickets come first; exclude completed and security holds',()=>{
  const data=[
