@@ -4,6 +4,7 @@ import vm from 'node:vm';
 import fs from 'node:fs';
 import {chatgptLoginExpression} from '../workers/bubbles-tools/chatgpt-login.mjs';
 import {browserAction} from '../workers/bubbles-tools/browser-cdp.mjs';
+import {selectChatGPTSignInTab} from '../bubbles-chatgpt-continuity.mjs';
 
 const expected='owner@example.com';
 function fixture({origin='https://accounts.google.com',accounts=[],password=false,google=false,emailInput=false,menu='',profile=false}={}){
@@ -105,4 +106,36 @@ test('actual CDP route rejects finished or owner-blocked chats before inserting 
   assert.equal(receipt.error,'continuation_not_eligible');
   assert.equal(f.calls.some(c=>c.method==='Input.insertText'),false);
  }
+});
+
+
+test('ChatGPT login stays on exact official origin even when unrelated tab is open',()=>{
+ const tabs=[{id:'main',url:'https://chatgpt.com/'},
+  {id:'evil',url:'https://accounts.google.com.evil.example/login'},
+  {id:'google',url:'https://accounts.google.com/o/oauth2/v2/auth'}];
+ assert.deepEqual(selectChatGPTSignInTab(tabs,'main'),
+  {state:'authentication_page',targetId:'google'});
+});
+test('ChatGPT OAuth popup that closes returns to original authenticated ChatGPT tab',()=>{
+ const tabs=[{id:'main',url:'https://chatgpt.com/'},
+  {id:'other',url:'https://quantaphi.org/'},
+  {id:'conversation',url:'https://chatgpt.com/c/12345678-1234-4123-8123-123456789abc'}];
+ assert.deepEqual(selectChatGPTSignInTab(tabs,'google'),
+  {state:'chatgpt_return_tab',targetId:'main'});
+ assert.deepEqual(selectChatGPTSignInTab(tabs,'conversation'),
+  {state:'current_chatgpt_tab',targetId:'conversation'});
+});
+test('ambiguous OAuth tabs require owner instead of guessing account',()=>{
+ const tabs=[{id:'google-1',url:'https://accounts.google.com/abc'},
+ {id:'google-2',url:'https://accounts.google.com/def'},
+ {id:'main',url:'https://chatgpt.com/'}];
+ assert.deepEqual(selectChatGPTSignInTab(tabs,'main'),
+  {state:'ambiguous_authentication_tabs',targetId:''});
+});
+test('untrusted tabs cannot be used to enter a Google account',()=>{
+ assert.deepEqual(selectChatGPTSignInTab([{id:'bad',url:'https://chatgpt.com.attacker.example/'}],'bad'),
+  {state:'no_official_signin_tab',targetId:''});
+ const ui=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
+ assert.match(ui,/selectChatGPTSignInTab\(live\.tabs,historyTargetId\)/);
+ assert.match(ui,/if\(!selected\.targetId\)throw Error\(selected\.state\)/);
 });
