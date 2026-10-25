@@ -97,3 +97,16 @@ test('new replies require a different verified assistant turn, not stale page te
  assert.equal(classifyReply({...base,messageCount:10,latestAssistantText:'Please send your files'},base).state,'needs_details');
  assert.equal(classifyReply({...base,messageCount:10,conversationUrl:'https://chatgpt.com/c/other'},base).state,'unverified');
 });
+
+test('Bubbles single-star command delegates to signed-in ChatGPT, never to its own code runner',()=>{
+ const source=fs.readFileSync('bubbles-ai.js','utf8');
+ const send=source.slice(source.indexOf('async function sendMessage('));
+ const begin=send.indexOf("if(spoken==='*')");
+ assert.notEqual(begin,-1,'literal star must have a dedicated route');
+ const end=send.indexOf('return;',begin);
+ const branch=send.slice(begin,end+7);
+ assert.match(branch,/browserConversation\('continue unfinished ChatGPT conversations'/);
+ assert.match(branch,/ownerHeaders:verifiedOwnerHeaders/);
+ assert.doesNotMatch(branch,/continueSavedWork|\/work\/run-next|directGithubOperation|submitRepositoryWork/);
+ assert.match(branch,/No message or build was confirmed/);
+});
