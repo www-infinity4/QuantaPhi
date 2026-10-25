@@ -99,6 +99,14 @@ function mountMuseumCollection(){
  const registry=new Set();
  let page=0,busy=false,more=true,lastRequest=0;
  const control=element('article','iqc-card aic-loader-card');
+ control.dataset.sourceId='aic-gallery-loader';
+ control.dataset.sourceName='Art studios · discover museum originals';
+ control.dataset.sourceReady='true';
+ const cover=external('','https://www.artic.edu/artworks/27992','aic-picture');
+ const coverImage=element('img','aic-art-image');
+ coverImage.src='https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg';
+ coverImage.alt='A Sunday on La Grande Jatte by Georges Seurat — official museum image';
+ coverImage.loading='lazy';cover.append(coverImage);
  const intro=element('h2','aic-loader-title','Art studios · museum originals');
  const note=element('p','aic-loader-note','Explore actual public-domain artwork, sourced images and artist records. Each discovered artwork becomes its own interactive rotating card.');
  const status=element('p','aic-loader-status','Source-backed artwork catalog ready to discover.');
@@ -106,9 +114,10 @@ function mountMuseumCollection(){
  const button=element('button','aic-load-button','Discover museum artworks');
  button.type='button';
  const visit=external('Museum collection','https://www.artic.edu/collection','aic-museum-link');
- control.append(intro,note,button,visit,status);
+ control.append(cover,intro,note,button,visit,status);
  // The load control itself is not an artwork card and is never counted as one.
  bank.append(control);
+ window.dispatchEvent(new CustomEvent('quantaphi:source-cards-ready',{detail:{source:'art-gallery-loader'}}));
  const done=()=>registry.size>=ART_CARD_TARGET||page>=100||!more;
  async function loadNext(){
   if(busy||done())return;
@@ -128,7 +137,9 @@ function mountMuseumCollection(){
     if(registry.has(art.id))continue;
     registry.add(art.id);nodes.push(createMuseumCard(art));added++;
    }
-   if(nodes.length)control.before(...nodes);
+   // Control can be inside the Oracle viewer; artwork cards belong in the
+   // hidden source bank until individually chosen by the deck.
+   if(nodes.length)bank.append(...nodes);
    if(added)window.dispatchEvent(new CustomEvent('quantaphi:source-cards-ready',{
     detail:{source:'art-institute',count:added,total:registry.size}
    }));
