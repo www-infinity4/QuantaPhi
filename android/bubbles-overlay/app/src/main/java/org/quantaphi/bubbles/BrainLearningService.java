@@ -533,6 +533,81 @@ public final class BrainLearningService extends AccessibilityService {
         }
     }
 
+    /** One foreground-only ChatGPT handoff, initiated by owner speech or typing.
+     * First verify an EMPTY named composer; never overwrite the user's draft.
+     * This does not authorize background ChatGPT access or a repeated UI loop.
+     */
+    static String workflowPrepareChatGPTPrompt(String value) {
+        BrainLearningService service=active.get();
+        if (service==null) return "ACCESS_OFF";
+        if (value==null || value.trim().isEmpty() || value.length()>160) return "PROMPT_BLOCKED";
+        AccessibilityNodeInfo root=service.currentRoot();
+        if (root==null) return "COMPOSER_NOT_FOUND";
+        ArrayList<AccessibilityNodeInfo> matches=new ArrayList<>();
+        String target="message";
+        try {
+            if (!ChatGPTAppPolicy.PACKAGE.equals(String.valueOf(root.getPackageName())))
+                return "APP_NOT_FOREGROUND";
+            // Only known ChatGPT composer labels; do not type into a search field.
+            for (String label : new String[]{"message","ask anything","ask chatgpt"}) {
+                service.workflowMatches(root,label,matches,true,0);
+                if (matches.size()>0) {target=label;break;}
+            }
+            if (matches.size()!=1) return matches.isEmpty()?"COMPOSER_NOT_FOUND":"COMPOSER_AMBIGUOUS";
+            AccessibilityNodeInfo field=matches.get(0);
+            if (!field.isEditable() || field.isPassword()) return "PROMPT_BLOCKED";
+            CharSequence draft=field.getText();
+            if (draft!=null && draft.length()>0) return "COMPOSER_DRAFT_PRESENT";
+        } finally {
+            for (AccessibilityNodeInfo item : matches) item.recycle();
+            root.recycle();
+        }
+        return workflowTypeInPackage(target,value,ChatGPTAppPolicy.PACKAGE);
+    }
+
+    /** A successful Android tap proves only that Send was requested, NOT that
+     * ChatGPT generated a result, used tools or completed the owner's task.
+     */
+    static String workflowSubmitVisibleChatGPTPrompt(String expected) {
+        BrainLearningService service=active.get();
+        if (service==null) return "ACCESS_OFF";
+        AccessibilityNodeInfo root=service.currentRoot();
+        if (root==null) return "COMPOSER_NOT_FOUND";
+        ArrayList<AccessibilityNodeInfo> fields=new ArrayList<>(),buttons=new ArrayList<>();
+        try {
+            if (!ChatGPTAppPolicy.PACKAGE.equals(String.valueOf(root.getPackageName())))
+                return "APP_NOT_FOREGROUND";
+            for (String label : new String[]{"message","ask anything","ask chatgpt"}) {
+                service.workflowMatches(root,label,fields,true,0);
+                if (!fields.isEmpty()) break;
+            }
+            if (fields.size()!=1 || fields.get(0).getText()==null
+                    || !expected.contentEquals(fields.get(0).getText()))
+                return "PROMPT_CHANGED_OR_MISSING";
+            for (String label : new String[]{"send","send message","send prompt"}) {
+                service.findLabel(root,label,buttons,0);
+                if (!buttons.isEmpty()) break;
+            }
+            if (buttons.size()!=1) return buttons.isEmpty()?"SEND_BUTTON_NOT_FOUND":"SEND_BUTTON_AMBIGUOUS";
+            AccessibilityNodeInfo control=AccessibilityNodeInfo.obtain(buttons.get(0));
+            try {
+                for(int i=0;i<5&&control!=null;i++){
+                    if(control.isClickable()&&control.isEnabled())
+                        return control.performAction(AccessibilityNodeInfo.ACTION_CLICK)
+                            ?"SEND_TAP_REQUESTED":"SEND_TAP_REFUSED";
+                    AccessibilityNodeInfo parent=control.getParent();
+                    control.recycle();control=parent;
+                }
+                return "SEND_BUTTON_NOT_CLICKABLE";
+            } finally {if(control!=null)control.recycle();}
+        } catch(RuntimeException error){return "SEND_TAP_REFUSED";}
+        finally {
+            for(AccessibilityNodeInfo field:fields)field.recycle();
+            for(AccessibilityNodeInfo button:buttons)button.recycle();
+            root.recycle();
+        }
+    }
+
     private AccessibilityNodeInfo findScrollable(AccessibilityNodeInfo node, int depth) {
         if (node == null || depth > 25 || !node.isVisibleToUser() || node.isPassword()) return null;
         if (node.isScrollable()) return AccessibilityNodeInfo.obtain(node);

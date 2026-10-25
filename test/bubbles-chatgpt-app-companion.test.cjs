@@ -32,3 +32,18 @@ test('Current app screen is not mislabeled as complete ChatGPT history or export
  assert.match(service,/It has not been sent/);
  assert.doesNotMatch(policy,/HttpURLConnection|openAIKey|api\.openai\.com|ACTION_GLOBAL|SharedPreferences/);
 });
+
+test('Explicit owner request can be handed to foreground ChatGPT without a manual Send tap',()=>{
+ const service=load('BubblesService.java'),access=load('BrainLearningService.java'),policy=load('ChatGPTAppPolicy.java');
+ assert.match(policy,/ASK_AND_SEND/);
+ assert.match(policy,/CONTINUE_AND_SEND/);
+ assert.match(service,/deliverOwnerChatGPTPrompt\(command,typed\)/);
+ assert.match(service,/workflowPrepareChatGPTPrompt\(command\.value\)/);
+ assert.match(service,/workflowSubmitVisibleChatGPTPrompt\(command\.value\)/);
+ assert.match(access,/COMPOSER_DRAFT_PRESENT/);
+ assert.match(access,/PROMPT_CHANGED_OR_MISSING/);
+ assert.match(access,/SEND_TAP_REQUESTED/);
+ assert.match(access,/ChatGPTAppPolicy\.PACKAGE\.equals\(String\.valueOf\(root\.getPackageName\(\)\)\)/);
+ assert.doesNotMatch(access,/performGlobalAction\(/);
+ assert.doesNotMatch(service,/automatically (?:grant|approve) ChatGPT access/i);
+});

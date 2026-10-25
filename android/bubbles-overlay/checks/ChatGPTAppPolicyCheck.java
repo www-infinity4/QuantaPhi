@@ -23,6 +23,12 @@ public final class ChatGPTAppPolicyCheck {
         ChatGPTAppPolicy.Request type=ChatGPTAppPolicy.parse("type \"Hello Bubbles\" into Message in ChatGPT");
         if(!"Message".equals(type.field)||!"Hello Bubbles".equals(type.value))
             throw new AssertionError("Composer field selection changed.");
+        want("Bubbles ask ChatGPT to check the project status",ChatGPTAppPolicy.Kind.ASK_AND_SEND);
+        want("Ask ChatGPT: review the verified build receipts",ChatGPTAppPolicy.Kind.ASK_AND_SEND);
+        want("Continue my current ChatGPT conversation",ChatGPTAppPolicy.Kind.CONTINUE_AND_SEND);
+        ChatGPTAppPolicy.Request next=ChatGPTAppPolicy.parse("Continue my current ChatGPT conversation");
+        if (next.value.length()>160 || !next.value.contains("receipts"))
+            throw new AssertionError("Continuation must be bounded and receipt-gated");
         want("read all my ChatGPT conversations",ChatGPTAppPolicy.Kind.ARCHIVE_UNAVAILABLE);
         want("download full ChatGPT history",ChatGPTAppPolicy.Kind.ARCHIVE_UNAVAILABLE);
         refuse("Read the ChatGPT app in the background without my permission");

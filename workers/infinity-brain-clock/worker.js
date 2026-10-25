@@ -1,3 +1,4 @@
+import {nextOwnerJobPage} from './work-queue-cursor.mjs';
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
@@ -284,6 +285,13 @@ export class BrainClock extends DurableObject{
   if(path==='/runner/claim'){
    const requested=await this.ctx.storage.get('requested-next-job');
    const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at DESC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+   // The normal newest-ticket window is supplemented with a rotating older
+   // owner-scoped window, so an authenticated scheduled runner can actually
+   // claim work beyond the first 100 without another tap in Bubbles.
+   const olderPage=await nextOwnerJobPage(this.env.WORK_DB,this.ctx.storage,
+     this.env.WRITER_OWNER_HASH,'claim-runner',{limit:80});
+   const visibleIds=new Set((rows.results||[]).map(x=>x.id));
+   rows.results=[...(rows.results||[]),...olderPage.rows.filter(x=>!visibleIds.has(x.id))];
    // The owner-selected ticket can be older than the bounded 100-row scan.
    // Add it read-only by exact owner partition; never silently lose priority.
    if(requested?.ticketId&&!(rows.results||[]).some(t=>t.id===requested.ticketId)){
@@ -494,7 +502,8 @@ export class BrainClock extends DurableObject{
  }
  async reconcilePendingWork(){
   const now=Date.now(),summary={recovered:0,stale:0,conflicts:0};
-  const rows=await this.env.WORK_DB.prepare("SELECT id,status,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+  const page=await nextOwnerJobPage(this.env.WORK_DB,this.ctx.storage,this.env.WRITER_OWNER_HASH,'recover-stale');
+  const rows={results:page.rows};
   for(const row of rows.results||[]){
    let context;try{context=JSON.parse(row.context_json)}catch{continue}
    let changed=false,recovered=0,stale=0;
@@ -532,9 +541,8 @@ export class BrainClock extends DurableObject{
   if(Number(await this.ctx.storage.get('deferred-recovery-next-at')||0)>now)
    return {state:'recovery_cooldown'};
   await this.ctx.storage.put('deferred-recovery-next-at',now+DEFERRED_REVIEW_INTERVAL_MS);
-  const rows=await this.env.WORK_DB.prepare(
-   "SELECT id,created_at,status,request,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100"
-  ).bind(this.env.WRITER_OWNER_HASH).all();
+  const page=await nextOwnerJobPage(this.env.WORK_DB,this.ctx.storage,this.env.WRITER_OWNER_HASH,'deferred-recover');
+  const rows={results:page.rows};
   for(const row of rows.results||[]){
    let context;try{context=JSON.parse(row.context_json)}catch{continue}
    for(const job of context.color_jobs||[]){
@@ -605,7 +613,8 @@ export class BrainClock extends DurableObject{
   // Across ALL pending jobs, run at most one automatic GitHub dispatch per
   // five minutes. Otherwise hundreds of blocked tickets could flood Actions.
   if((await this.ctx.storage.get('alarm-global-next-at')||0)>now)return {state:'global_dispatch_cooldown'};
-  const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+  const page=await nextOwnerJobPage(this.env.WORK_DB,this.ctx.storage,this.env.WRITER_OWNER_HASH,'dispatch-retry');
+  const rows={results:page.rows};
   const requested=await this.ctx.storage.get('requested-next-job');
   const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json||'{}')}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
   sortCandidates(candidates,requested);

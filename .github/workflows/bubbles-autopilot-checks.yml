@@ -27,6 +27,6 @@ jobs:
           node --check scripts/brain-writer.mjs
       - name: Test staged triage, owner boundary, no-op recovery and Brain clock
         run: |
-          node --test test/brain-autopilot-triage.test.mjs test/brain-autopilot-writer.test.mjs test/brain-clock.test.mjs test/brain-writer.test.mjs
+          node --test test/brain-work-queue-cursor.test.mjs test/brain-autopilot-triage.test.mjs test/brain-autopilot-writer.test.mjs test/brain-clock.test.mjs test/brain-writer.test.mjs
       - name: Validate deployable Cloudflare bundle without production writes
         run: npx --yes wrangler@4 deploy --config workers/infinity-brain-clock/wrangler.toml --dry-run --outdir /tmp/bubbles-autopilot-dry-run
