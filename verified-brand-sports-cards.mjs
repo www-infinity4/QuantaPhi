@@ -22,7 +22,9 @@ function createVisual(card,article){
  const visual=el('div','vbs-art vbs-'+card.kind);
  const primary=el('img','vbs-identity');
  primary.alt=card.name+' — source identity';
- primary.loading='lazy';primary.decoding='async';
+ // The source bank is hidden, so lazy images would NEVER load and
+ // the logo gate would prevent a card from entering rotation.
+ primary.loading='eager';primary.decoding='async';
  primary.referrerPolicy='no-referrer';
  primary.src=card.visual;
  let failed=false;
@@ -45,7 +47,7 @@ function createVisual(card,article){
   const divider=el('span','vbs-vs','VS');
   const second=el('img','vbs-identity vbs-secondary');
   second.alt='Opponent/team logo from original sports media';
-  second.src=card.secondaryVisual;second.decoding='async';second.loading='lazy';
+  second.src=card.secondaryVisual;second.decoding='async';second.loading='eager';
   second.addEventListener('error',unavailable,{once:true});
   visual.append(divider,second);
  }
