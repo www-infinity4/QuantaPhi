@@ -2667,7 +2667,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   /\b(?:repos?|repositor(?:y|ies)|files?|scripts?|project|hydrogen)\b/i.test(request);
  const githubInventoryRequested=!ownerGithubNonAction &&
   /\b(?:list|show|find|check|inspect)\b.{0,70}\b(?:(?:my|our|the|all)\s+)?(?:github\s+)?(?:repos?|repositor(?:y|ies))\b/i.test(request);
- let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&(codeTask||Boolean(namedCardWork));
+ let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;
+ // Additional natural-language route, without changing the original command matcher.
+ if(namedCardWork&&!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue)directCoding=true;
  // Grammar Phi may interpret an unusually worded direct engineering request
  // before the owner tool dispatcher. It returns ONLY a non-authorizing label.
  // Original user intent, verified owner session, repository and permissions
