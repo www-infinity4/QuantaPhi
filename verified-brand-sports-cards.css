@@ -1,0 +1,34 @@
+/* Distinct brand, civic, product and sports experiences. 2026 Oracle style:
+   readable, original-source identity, no fake photography or promotional copy. */
+.vbs-card{padding:0!important;overflow:hidden;isolation:isolate;border:1px solid #d7c7ba!important;background:#fff!important;color:#1c2028!important}
+.vbs-art{display:flex;align-items:center;justify-content:center;gap:12px;min-height:180px;background:radial-gradient(circle at 50% 36%,#fff 0%,#f4ebe5 82%);padding:20px 10px;border-bottom:1px solid #ece3dc}
+.vbs-identity{display:block;max-width:46%;height:auto;max-height:150px;min-width:90px;object-fit:contain;filter:drop-shadow(0 7px 12px #0001)}
+.vbs-secondary{max-width:38%}
+.vbs-vs{font:900 13px/1 system-ui;color:#535d69;letter-spacing:.07em}
+.vbs-category-nfl .vbs-art{background:linear-gradient(120deg,#093c31,#183c69)}
+.vbs-category-mlb .vbs-art{background:linear-gradient(120deg,#103761,#7a2430)}
+.vbs-category-nfl .vbs-vs,.vbs-category-mlb .vbs-vs{color:#fff}
+.vbs-kind-coupon .vbs-art{background:linear-gradient(145deg,#fff4d9,#fbf3ff)}
+.vbs-kind-health .vbs-art{background:linear-gradient(135deg,#eef7f6,#fafafa)}
+.vbs-kind-civic .vbs-art{background:linear-gradient(135deg,#eef1fa,#fff)}
+.vbs-kind-vehicle .vbs-art{background:linear-gradient(140deg,#e3eaef,#fcfbf8)}
+.vbs-kind-food .vbs-art{background:linear-gradient(135deg,#fff8ea,#fff3e3)}
+.vbs-kind-announcer .vbs-art{background:linear-gradient(145deg,#161822,#4a2139)}
+.vbs-info{padding:20px 16px 14px}
+.vbs-kicker{font-size:10px;font-weight:900;letter-spacing:.12em;color:#a13c2d!important;margin:0 0 6px}
+.vbs-title{font:800 clamp(23px,6vw,30px)/1.15 system-ui!important;letter-spacing:-.035em!important;margin:0 0 9px!important;color:#1e2025!important}
+.vbs-broadcaster{font-size:11px;font-weight:850;color:#233e5c;margin:6px 0}
+.vbs-description{font-size:15px;line-height:1.52;margin:9px 0;color:#38424a!important}
+.vbs-terms,.vbs-neutral,.vbs-health-note,.vbs-updates{font-size:12px;line-height:1.5;color:#5c6266;margin:8px 0}
+.vbs-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:17px 0}
+.vbs-source-action{display:flex;align-items:center;justify-content:center;min-height:52px;padding:8px 4px;text-align:center;text-decoration:none;background:#fff8f5;border:1px solid #c26d57;border-radius:12px;color:#813421!important;font:800 12px/1.2 system-ui}
+.vbs-category-nfl .vbs-source-action,.vbs-category-mlb .vbs-source-action{background:#f0f5fa;border-color:#aabacc;color:#1a3858!important}
+.vbs-source-action:hover,.vbs-source-action:focus-visible{background:#ffe6dc;outline:2px solid #8e3025;outline-offset:2px}
+.vbs-attribution{font-size:11px;line-height:1.5;color:#60676e!important;margin:12px 0 7px}
+.vbs-shared-actions .qca-toolbar{margin:9px 0 0}
+.vbs-announcer{background:#f9f5fa;border:1px solid #e4d4e7;border-radius:14px;padding:12px;margin:12px 0}
+.vbs-announcer-copy{font-size:14px;line-height:1.5;color:#302634}
+.vbs-announcer button{padding:10px 12px;min-height:44px;font-weight:850;background:#752c48;color:white;border-radius:10px;margin:6px 4px 4px 0}
+.vbs-announcer-status{font-size:12px;color:#5e515f}
+@media(max-width:410px){.vbs-info{padding:14px 12px}.vbs-art{min-height:156px}.vbs-identity{max-height:130px;min-width:76px}.vbs-topics{gap:5px}.vbs-source-action{font-size:11px;min-height:49px}}
+@media(prefers-reduced-motion:reduce){.vbs-card *, .vbs-card *::before,.vbs-card *::after{animation:none!important;transition:none!important}}
