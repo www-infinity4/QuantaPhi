@@ -77,8 +77,16 @@ export class AccountConnections {
     let complete;
     try{
      if(message.error)throw Error('Account authorization was declined.');
+     // A callback from the expected popup is not proof that a usable code
+     // was returned. Fail locally before any server exchange or success UI.
+     if(typeof message.code!=='string'||!message.code||message.code.length>4096)
+      throw Error('Provider did not return a valid authorization code.');
      complete=await this.call('/complete',{provider,state,code:message.code});
-    }catch(error){await onComplete(error);return;}
+    }catch(error){
+     // A declined or malformed return must not strand the OAuth popup.
+     try{popup.close();}catch{}
+     await onComplete(error);return;
+    }
     popup.close();await onComplete(null,complete.account);
    };
    this.pending.listener=listener;this.root.addEventListener('message',listener);
