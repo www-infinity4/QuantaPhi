@@ -7,7 +7,8 @@
 
 ## Not implemented or independently confirmed
 - The APK downloader does not silently install or launch Android packages. Android prompts the user. The present Open Bubbles link opens the existing **web chat**, not an Android deep link (native deep link requires a verified Android release and testing).
-- The card ID/title travels in the URL for a future native/web handoff. The chat does **not yet consume** it to automatically open third-party card surfaces.
+- The card ID/title travels in the web link. The existing Bubbles web conversation now recognizes a registered `sourceCard` ID and tries to open the corresponding first-party card in its retained chat. This is **not** a native Android deep link or proof of a phone install.
+- `bubbles-provider-card.html` and `bubbles-provider-card.mjs` supply responsive in-chat public search panels for Google, X, Facebook, Instagram, TikTok, GUESS, and Pepe Jeans. They give users contextual source searches and a separate official-site link. They are not native installed third-party apps or logged-in copies.
 - Integra's X handle, its email identity, official X API OAuth app, written AI reply approval, and Google account do not yet exist in these changes. No automated public replies are active.
 - Browser-rendered X scraping is not used for this new bot. X requires official API use for automated activities; the older owner's public reader is separate and remains review-only.
 - Google/Facebook/Instagram/TikTok pages cannot be forced into cross-origin frames when blocked. Use permitted deep links, authenticated provider APIs, and first-party search/result cards; never request or persist personal passwords in an APK.
@@ -17,7 +18,7 @@
 1. Confirm card selector coverage and user taps on a real Android device; inspect and execute Node tests and CI checks; collect browser receipts for install/unavailable states. Fix any CSS conflicts before merge.
 2. Create official Integra X account and its separate service identity through owner-driven signup/verification; request X's written approval for AI auto-replies and acquire properly scoped OAuth tokens stored as encrypted secrets.
 3. Integrate approved X API event intake and opt-in controls with Cloudflare Worker + deduplicated D1 reply ledger, apply the policy before each post, use existing Google-backed Bubbles research via authorized APIs, and log actual X post IDs.
-4. Implement Android app/deep-link routing and safe in-chat first-party app adapters for Google/X/Facebook/Instagram/TikTok and shopping cards, each respecting service permissions and interactive restrictions. Validate foreground/overlay behavior on the phone.
+4. Verify the new first-party app adapters live in the retained Bubbles chat, then implement a native Android install/open deep link and any provider-authorized richer interactions. Validate foreground/overlay behavior on the phone.
 5. Set up QuantaPhi-controlled mail routing/mailbox as a separate task, with MX/DKIM/SPF/DMARC verification and account protections if actual sending is needed.
 
 Security holds remain in force for Infinity Platinum. \`Integra\` also serves the independent safety/integrity gate, so publication never implies validation without external evidence.
