@@ -1,7 +1,8 @@
 /* Continuity owner UI. Uses the same first-party verified owner session as Bubbles. */
+import {projectLegacyTickets} from './client-model.mjs';
 const $=id=>document.getElementById(id);
 const API='https://infinity-brain-clock.marvaseater.workers.dev';
-let auth=null,rows=[],cursor=null,hasMore=false,selected='',loading=false;
+let auth=null,rows=[],cursor=null,hasMore=false,selected='',loading=false,inventoryCoverage='';
 const statuses={verified_delivery:'Verified delivery',completion_needs_receipts:'Completion needs proof',
  awaiting_deployment_proof:'Deployment unverified',stale_working:'Stale working job',
  blocked_recoverable:'Blocked · inspect',owner_decision_required:'Owner decision required',
@@ -62,7 +63,7 @@ function draw(){
   output.append(box);
  }
  $('more').hidden=!hasMore;
- $('coverage').textContent=hasMore?'More saved work remains. Load the next page before treating this as the whole backlog.':'All pages fetched in this view.';
+ $('coverage').textContent=inventoryCoverage==='potentially_truncated_at_100'?'Showing the latest 100 tickets from the existing Brain. Older work may be outside this limited list.':hasMore?'More saved work remains; load another page for full coverage.':'This available ticket page has been loaded.';
 }
 async function request(path,data){
  if(!auth?.Authorization)throw Error('Owner connection is not verified.');
@@ -75,7 +76,15 @@ async function load(reset=false){
  if(loading)return;loading=true;$('error').textContent='';
  $('refresh').disabled=true;$('more').disabled=true;
  try{
-  const body={limit:100,...(!reset&&cursor?cursor:{})},data=await request('/work/continuity',body);
+  const body={limit:100,...(!reset&&cursor?cursor:{})};
+  let data;
+  try{data=await request('/work/continuity',body);}
+  catch(error){
+   if(!reset&&cursor)throw error;
+   const saved=await request('/work/tickets/list',{});
+   data=projectLegacyTickets(saved.tickets);
+  }
+  inventoryCoverage=data.inventoryCoverage||'';
   if(reset){rows=[];selected='';}
   const seen=new Set(rows.map(t=>t.ticketId));
   for(const item of data.tickets||[]){if(!seen.has(item.ticketId)){rows.push(item);seen.add(item.ticketId);}}
