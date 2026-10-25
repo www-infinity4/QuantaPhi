@@ -57,7 +57,7 @@ test('up to eight independent project slots, exactly one eligible runner request
  assert.equal(requests[2].body.ticketId,'IW-20261025-00000010');
  assert.equal(requests[2].body.jobId,'TASK-1');
  assert.equal(requests[2].authorization,'Bearer owner-test');
- assert.match(continuationReply(result),/runner was requested/);
+ assert.match(continuationReply(result),/Runner requested/);
  assert.equal(result.executionVerified,false);
 });
 test('no existing eligible job triggers no GitHub writes, even if archived suggestions exist',async()=>{
@@ -92,4 +92,11 @@ test('private archive error does not invent work; signed tickets remain authorit
  assert.equal(result.archive.checked,false);
  assert.equal(result.dispatch,null);
  assert.deepEqual(paths,['/owner/conversation','/work/tickets/list']);
+});
+
+test('merged is still unverified until deployment evidence exists',()=>{
+ const t=ticket('IW-20261025-ABCDEF12',a,{status:'merged_verified'},'working');
+ const selected=selectContinuation([t]);
+ assert.equal(selected.target,null);
+ assert.equal(selected.slots[0].stage,'verify_receipt');
 });
