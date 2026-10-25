@@ -145,7 +145,8 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcx-x-embed{width:100%;min-height:155px;min-width:0;overflow:hidden}
 .qcx-x-embed .twitter-tweet,.qcx-x-embed iframe{max-width:100%!important;margin-inline:auto}
 .qcx-fox-one{background:radial-gradient(ellipse at 78% 3%,#b9d9f5 0,transparent 45%),linear-gradient(135deg,#06152d,#09366b)!important;color:white!important;min-height:200px!important;justify-content:center!important;align-items:center!important;text-align:center}
-.qcx-art[data-brand="fox-one"]:before,.qcx-art[data-brand="fox-one"]:after{display:none}
+.qcx-art[data-brand="fox-one"]:before,.qcx-art[data-brand="fox-one"]:after,.qcx-art[data-brand="fox-one-live-news"]:before,.qcx-art[data-brand="fox-one-live-news"]:after{display:none}
+.qcx-art[data-brand="fox-one-live-news"]{background:radial-gradient(ellipse at 78% 5%,#823546 0,transparent 43%),linear-gradient(125deg,#07172a,#17406b 72%,#5d162c)!important}
 .qcx-fox-one-kicker{font:900 12px/1.4 system-ui,sans-serif;letter-spacing:.2em;color:#c7e3ff}
 .qcx-fox-one-brand{font:950 clamp(2.9rem,10vw,4.3rem)/1.03 system-ui,sans-serif;letter-spacing:-.065em;text-shadow:0 3px 8px #0007}
 .qcx-fox-one .qcx-brand-caption{color:#e5f2ff!important;font-size:14px!important}

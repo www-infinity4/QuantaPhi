@@ -41,16 +41,16 @@ export function createCardArtwork(card,small=false){
  const theme=/radio/.test(text)?'radio':/music|karaoke|starmaker/.test(text)?'music':/youtube|video|tiktok/.test(text)?'video':/news|cnn|fox/.test(text)?'news':/social|facebook|instagram|reddit|whatsapp|x \/ grok/.test(text)?'social':/coin|vam|silver|gold|mint|pcgs|ngc/.test(text)?'coin':/market|ebay|toy|antique/.test(text)?'market':/finance|invest|robinhood|chime/.test(text)?'finance':/science|knowledge|wikipedia/.test(text)?'research':'other';
  art.dataset.theme=variants.includes(theme)?theme:'other';
  art.dataset.brand=/^[a-z0-9-]{1,45}$/.test(card.id||'')?card.id:'other';
- if(card.id==='fox-one'){
+ if(card.id==='fox-one'||card.id==='fox-one-live-news'){
   art.classList.add('qcx-fox-one');
   const foxWordmark=node('img','qcx-fox-one-logo');
   foxWordmark.alt='FOX One official wordmark';foxWordmark.loading='lazy';
   foxWordmark.src='https://upload.wikimedia.org/wikipedia/commons/7/77/Fox_One_2025.svg';
   foxWordmark.addEventListener('load',()=>{const backup=art.querySelector('.qcx-fox-one-brand');if(backup)backup.hidden=true},{once:true});
   foxWordmark.addEventListener('error',()=>foxWordmark.remove(),{once:true});
-  art.append(node('span','qcx-fox-one-kicker','FOX ONE · STREAMING'),
+  art.append(node('span','qcx-fox-one-kicker',card.id==='fox-one-live-news'?'FOX ONE · NEWS VIDEO':'FOX ONE · STREAMING'),
     foxWordmark,node('strong','qcx-fox-one-brand','FOX ONE'),
-    node('span','qcx-brand-caption','Sports · News · Entertainment'));
+    node('span','qcx-brand-caption',card.id==='fox-one-live-news'?'FOX News · Stream via FOX One':'Sports · News · Entertainment'));
  }else if(card.id==='google'){
   // Actual Google-hosted logo, not a text approximation or favicon.
   art.classList.add('qcx-google');
@@ -296,8 +296,9 @@ function trendingTool(root,card){
  * by X, browser settings and rights; no invented or scraped MP4/GIF is served.
  */
 export function mountFoxOneSpot(root,card){
- const panel=section(root,'FOX ONE · ORIGINAL PROMO','Watch the original FOX One advertisement');
- const spot='https://x.com/foxone/status/2113352129427730641';
+ const liveNews=card.id==='fox-one-live-news';
+ const panel=section(root,liveNews?'FOX ONE · NEWS VIDEO':'FOX ONE · ORIGINAL PROMO',liveNews?'FOX One video spot · FOX News':'Watch the original FOX One advertisement');
+ const spot=card.featureUrl||'https://x.com/foxone/status/2113352129427730641';
  const noteText=node('p','qcx-note','Original FOX One post on X. Video playback and autoplay follow X and browser permissions.');
  const embedded=node('div','qcx-x-embed');
  const quote=node('blockquote','twitter-tweet');
@@ -306,7 +307,7 @@ export function mountFoxOneSpot(root,card){
  const a=link('View the exact FOX One advertisement on X',spot);quote.append(a);
  embedded.append(quote);panel.append(noteText,embedded);
  const original=link('Open the exact FOX One post',spot);
- const streaming=link('Explore FOX One streaming',card.official);
+ const streaming=link(liveNews?'Watch FOX News live at FOX One':'Explore FOX One streaming',card.official);
  const options=node('div','qcx-controls');options.append(original,streaming);panel.append(options);
  if(typeof window!=='undefined'){
   const load=()=>{try{window.twttr?.widgets?.load(embedded)}catch{}};
@@ -330,7 +331,7 @@ export function mountCardTools(root,card){
   // Search remains the primary interaction; global controls come afterward.
   searchTool(root,card);mountCardActions(root,card);return;
  }
- if(id==='fox-one')mountFoxOneSpot(root,card);
+ if(id==='fox-one'||id==='fox-one-live-news')mountFoxOneSpot(root,card);
  if(id==='youtube'||id==='tiktok')mediaPlayer(root,id);
  if(id==='spotify')mediaPlayer(root,'spotify');
  if(id==='starmaker')recorder(root);
