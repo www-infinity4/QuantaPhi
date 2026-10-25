@@ -3,6 +3,24 @@
 (()=>{
  'use strict';
  const host=document.getElementById('churchOfIAmCard');if(!host)return;
+ // The publisher's direct CDN is primary. Avoid a third-party Cloudimage
+ // proxy; show a second verified portrait on failure, then a readable label.
+ const portrait=host.querySelector('.iam-photo');
+ if(portrait){
+  const backup='https://cdn.theorg.com/82a317f7-13d8-4cc4-817b-0d87647fdda8_medium.jpg';
+  function portraitError(){
+   if(!portrait.dataset.backupAttempted){
+    portrait.dataset.backupAttempted='true';
+    portrait.src=backup;
+   }else{
+    portrait.hidden=true;
+    portrait.closest('.iam-photo-wrap')?.classList.add('iam-photo-unavailable');
+   }
+  }
+  portrait.addEventListener('error',portraitError);
+  if(portrait.complete&&!portrait.naturalWidth)portraitError();
+ }
+
  const sundayMorning=now=>{
   const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',
    weekday:'short',hour:'2-digit',hourCycle:'h23'}).formatToParts(now);
