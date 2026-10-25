@@ -61,3 +61,5 @@ body.oracle-shelf-open #premiumSourceCards[hidden],body.oracle-shelf-open #siteQ
 .premium-feature-action-host .qca-title-searches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:7px}
 .premium-feature-action-host .qca-title-search-button{white-space:normal;line-height:1.3;min-height:46px;border:1px solid #b77d68;background:#fff6ed;color:#792f29}
 @media(max-width:360px){.premium-feature-action-host .qca-title-searches{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.premium-feature-action-host .qca-title-search-button{font-size:11px;padding:7px 4px}}
+
+.premium-card:has(.premium-feature-host){padding-bottom:18px}
