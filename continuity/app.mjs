@@ -153,7 +153,7 @@ async function syncGithub(){
  render();return fresh.length;
 }
 async function syncX(){
- const base='https://quantaphi.org/api/bubbles/public-x/';
+ const base=location.origin+'/api/bubbles/public-x/';
  const [h,i]=await Promise.all([fetch(base+'health',{cache:'no-store',signal:AbortSignal.timeout(12000)}),fetch(base+'inbox',{cache:'no-store',signal:AbortSignal.timeout(12000)})]);
  if(!h.ok||!i.ok)throw Error('Reader endpoints returned HTTP '+h.status+'/'+i.status);
  const health=await h.json(),inbox=await i.json();
