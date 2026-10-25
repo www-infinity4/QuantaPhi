@@ -55,7 +55,7 @@ export function mountCardActions(host,card){
   notify(status,'Select and copy this Quick Card link.');
  });
  b('+1 Build',()=>{
-  const request='Build one improvement for the '+name+' QuantaPhi Quick Card. Preserve original graphics and functional controls; use real verified provider sources. Card: '+previewUrl(card)+'. Keep Star, Collect, Share, +1 Build and Quick Search. Verify build results and receipts before marking complete.';
+  const request='Build one improvement for the '+name+' QuantaPhi Quick Card. Preserve original graphics and functional controls; use real verified provider sources. Card: '+previewUrl(card)+'. Keep Star, Collect, Share, +1 Build and exactly three title-based search buttons with no generic card search input; preserve the card\'s specific on-card interaction and verify mobile navigation. Verify build results and receipts before marking complete.';
   const builder=document.getElementById('robotDirectionsInput');
   if(builder){
    builder.value=request;builder.dispatchEvent(new Event('input',{bubbles:true}));
@@ -64,19 +64,40 @@ export function mountCardActions(host,card){
   }
   try{sessionStorage.setItem(STORE_DRAFT,request);location.assign('/#robotDirectionsInput')}catch{notify(status,'Build draft could not be opened.')}
  });
- const search=element('form','qca-search'),q=element('input','qca-search-input');
- q.type='search';q.placeholder='Quick search '+name+'…';q.required=true;q.maxLength=180;q.setAttribute('aria-label','Find within '+name+' card');
- const submit=element('button','qca-button qca-search-submit','⌕ Quick Search');submit.type='submit';
- search.append(q,submit);search.addEventListener('submit',event=>{
-  event.preventDefault();const value=q.value.trim();if(!value)return;
-  const destination='/infinity-search-results.html?'+new URLSearchParams({engine:'google',q:name+' '+value});
-  if(typeof window.QuantaOpenSite==='function'){
-   const a=element('a');a.href=destination;a.dataset.siteUrl=destination;a.dataset.siteTitle=name+' · Quick Search';
-   try{window.QuantaOpenSite(a);return}catch{}
-  }
-  location.assign(destination);
- });
- bar.append(controls,search,status);host.append(bar);return bar;
+ // One-tap discovery uses the actual subject of this card. A search box belongs
+ // only to a dedicated search experience (Google, Bing, catalogs), not every card.
+ const category=String(card.category||card.kind||'').toLowerCase();
+ const title=String(card.searchTitle||name).trim().slice(0,160);
+ const encoded=encodeURIComponent(title);
+ const destinations={
+  google:'https://www.google.com/search?q='+encoded,
+  bing:'https://www.bing.com/search?q='+encoded,
+  images:'https://www.google.com/search?tbm=isch&q='+encoded,
+  videos:'https://www.youtube.com/results?search_query='+encoded,
+  news:'https://news.google.com/search?q='+encoded,
+  x:'https://x.com/search?q='+encoded+'&src=typed_query'
+ };
+ // Preserve a consistent three-search interface while matching the topic:
+ // shopping benefits from photos, news from reporting, and video from video.
+ const searchKinds=/shopping|product|coin|auction|collect|fashion|real estate|market/.test(category)?
+  [['Google','google'],['Images','images'],['Videos','videos']]:
+  /news|sport|event|politic/.test(category)?
+  [['Google','google'],['News','news'],['X','x']]:
+  /music|television|video|radio|film|entertain|sunday|social/.test(category)?
+  [['Videos','videos'],['Google','google'],['X','x']]:
+  [['Google','google'],['Bing','bing'],['Videos','videos']];
+ const quick=element('div','qca-quick-search');
+ quick.setAttribute('aria-label','Search for '+title);
+ const heading=element('span','qca-search-label','Quick Search · '+title);
+ const links=element('div','qca-search-links');
+ for(const [label,kind] of searchKinds){
+  const link=element('a','qca-button qca-search-link',label);
+  link.href=destinations[kind];link.target='_blank';link.rel='noopener noreferrer';
+  link.setAttribute('aria-label','Search '+label+' for '+title);
+  links.append(link);
+ }
+ quick.append(heading,links);
+ bar.append(controls,quick,status);host.append(bar);return bar;
 }
 function restoreDraft(){
  let request;try{request=sessionStorage.getItem(STORE_DRAFT)}catch{return}
