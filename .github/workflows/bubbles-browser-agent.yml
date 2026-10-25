@@ -6,9 +6,12 @@ on:
       - 'workers/bubbles-tools/browser.mjs'
       - 'workers/bubbles-cloud-browser/**'
       - 'test/bubbles-chatgpt-bridge.test.mjs'
+      - 'test/bubbles-chatgpt-continuation.test.mjs'
       - 'test/bubbles-background-bridge.test.mjs'
       - 'test/bubbles-runner-bridge.test.mjs'
       - 'bubbles-cloud-browser.mjs'
+      - 'bubbles-chatgpt-continuity.mjs'
+      - 'test/bubbles-background-bridge.test.mjs'
       - 'bubbles-ai.js'
       - 'test/bubbles-browser-agent.test.mjs'
       - '.github/workflows/bubbles-browser-agent.yml'
@@ -29,5 +32,6 @@ jobs:
           node --check workers/bubbles-cloud-browser/chatgpt-bridge.mjs
           node --check workers/bubbles-cloud-browser/worker.mjs
           node --check bubbles-cloud-browser.mjs
+          node --check bubbles-chatgpt-continuity.mjs
           node --check bubbles-ai.js
-          node --test test/bubbles-browser-agent.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-chatgpt-bridge.test.mjs test/bubbles-browser-consent.test.mjs test/bubbles-background-bridge.test.mjs test/bubbles-runner-bridge.test.mjs test/bubbles-server-assist.test.mjs
+          node --test test/bubbles-browser-agent.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-chatgpt-bridge.test.mjs test/bubbles-browser-consent.test.mjs test/bubbles-background-bridge.test.mjs test/bubbles-runner-bridge.test.mjs test/bubbles-server-assist.test.mjs test/bubbles-chatgpt-continuation.test.mjs

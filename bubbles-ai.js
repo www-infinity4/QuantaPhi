@@ -2052,31 +2052,29 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
- // One character from the owner or the Android Bubbles bridge resumes
- // existing work. Archived text is context, NEVER new build authorization.
+ // The owner's single star asks BUBBLES to drive a signed-in ChatGPT tab.
+ // ChatGPT (not Bubbles' own repository runner) decides which previous work to
+ // continue. The only browser submit permitted by this route is literal '*'.
  if(spoken==='*'){
+  busy=true;send.disabled=true;
   display(spoken,'you');clearSentComposer();
   messages.push({role:'user',text:spoken});persistChat();
-  busy=true;send.disabled=true;setOrbState('busy');
-  let reply,spokenResult='Blocked.';
+  setOrbState('thinking');
+  let reply='Blocked: ChatGPT browser continuation was not verified.';
   try{
    if(embedded)throw Error('verified_owner_session_required');
-   const module=await import('/bubbles-star-continuation.mjs?v=20261025-star1');
-   const result=await module.continueSavedWork({
-    fetcher:bubblesFetch,ownerHeaders:verifiedOwnerHeaders,base:BRAIN,maxSlots:8
-   });
-   reply=module.continuationReply(result);
-   spokenResult=result.dispatch?.status==='queued_for_runner'?'Runner requested.':
-    result.dispatch?.status==='job_not_dispatchable'?'Blocked.':
-    result.selected?.target?'Checking runner.':'No eligible job.';
+   const browser=await import('/bubbles-cloud-browser.mjs?v=20261025-chatgpt-star1');
+   reply=await browser.browserConversation('continue unfinished ChatGPT conversations',
+    {host:browserHome,ownerHeaders:verifiedOwnerHeaders});
   }catch(error){
-   reply='Blocked: Bubbles could not verify and resume existing owner work ('+
-    String(error.message||error).replace(/_/g,' ').slice(0,115)+'). No build or GitHub write has been confirmed.';
+   reply='Blocked: signed-in ChatGPT browser continuation unavailable ('+
+    String(error?.message||error).replace(/_/g,' ').slice(0,140)+'). No message or build was confirmed.';
   }
-  display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
-  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=spokenResult;
-  else if(config.voice&&!nativeOverlay)speakText(spokenResult);
-  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');drainVoiceTurns();
+  display(reply,'ai');messages.push({role:'assistant',text:reply});
+  messages=messages.slice(-400);persistChat();
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=reply.startsWith('Blocked')?'Blocked.':'Checking ChatGPT.';
+  else if(fromVoice&&config.voice&&!nativeOverlay)speakText(reply.startsWith('Blocked')?'Blocked.':'Checking ChatGPT.');
+  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();
   return;
  }
  // Keep the existing Bubbles chat. A typed command on Android requests a

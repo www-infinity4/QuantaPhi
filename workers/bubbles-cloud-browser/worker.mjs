@@ -105,11 +105,13 @@ export default {
    const raw=await request.clone().text();if(raw.length>4096)throw Error('too_large');
    action=JSON.parse(raw||'{}').action||'';
   }catch{return respond(origin,{ok:false,error:'invalid_request'},400);}
-  if(['read','navigate','click','type','viewport'].includes(action)){
+  if((['read','navigate','click','type','viewport'].includes(action)||['chatgpt_scan','chatgpt_resume'].includes(action))){
    if(!(await owner(request,env)))return respond(origin,{ok:false,error:'owner_authorization_required'},403);
    if(!env.CONSENT)return respond(origin,{ok:false,error:'consent_storage_unavailable'},503);
    const state=await consentStore(env).status();
    if(!state.enabled)return respond(origin,{ok:false,error:'browser_consent_required'},403);
+   if(['chatgpt_scan','chatgpt_resume'].includes(action)&&!(await consentStore(env).chatgptStatus()).enabled)
+    return respond(origin,{ok:false,error:'chatgpt_five_day_approval_required'},403);
   }
   return browserTool(request,env);
  }
