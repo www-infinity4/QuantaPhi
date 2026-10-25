@@ -20,15 +20,12 @@ test('NFL game shows two actual source marks, FOX destination and live-data disc
  expect(await stage.evaluate(node=>node.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
 });
 test('World Series pitchers, actual coupons and medically sourced screening have separate cards',async({page})=>{
- page.on('console',m=>{if(/ORACLE_SELECT_/.test(m.text()))console.log('BROWSER_ORACLE_EVENT',m.text())});
- page.on('pageerror',e=>console.log('BROWSER_PAGE_ERROR',e.message));
  await images(page);
  await page.goto(base+'/?card=world-series-pitchers-2026',{waitUntil:'domcontentloaded'});
  const stage=page.locator('#oracleCardStage');
  await expect(stage.getByText(/Robert Gasser vs Rays RHP Freddy Peralta/)).toBeVisible({timeout:20000});
  await page.locator('.oracle-card-library summary').click();
  await page.locator('#oracleCardChooser').selectOption('source-kohls-coupons');
- console.log('KOHL_STAGE_DETAIL', JSON.stringify(await page.evaluate(()=>({value:document.getElementById('oracleCardChooser')?.value,stage:document.querySelector('#oracleCardStage [data-source-id]')?.dataset?.sourceId,bank:[...document.querySelectorAll('#verifiedBrandSportsCards [data-source-id]')].filter(n=>n.dataset.sourceId.includes('kohls')).map(n=>({id:n.dataset.sourceId,ready:n.dataset.sourceReady,connected:n.isConnected,imgComplete:n.querySelector('img')?.complete,naturalWidth:n.querySelector('img')?.naturalWidth})),hasOption:!!document.querySelector('#oracleCardChooser option[value="source-kohls-coupons"]'),status:document.getElementById('oracleCardStatus')?.textContent}))));
  await expect(stage.locator('[data-source-id="kohls-coupons"]')).toBeVisible({timeout:10000});
  await expect(stage.locator('.vbs-terms')).toContainText('No fabricated coupons.');
  await expect(stage.getByRole('link',{name:'Current coupons and offers'})).toBeVisible();
