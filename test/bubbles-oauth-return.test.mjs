@@ -67,3 +67,19 @@ test('popup callback posts only to fixed Bubbles origins and never navigates the
  assert.deepEqual(posts.map(x=>x.target),['https://quantaphi.org','https://www.quantaphi.org']);
  assert.equal(f.calls.length,0);
 });
+
+test('malformed or declined popup returns fail closed, close the window and release retry',async()=>{
+ for(const bad of [{code:''},{code:'x'.repeat(4097)},{code:null},{code:'code',error:'provider_declined'}]){
+  const f=fixture(),failures=[];
+  const client=new AccountConnections({root:f.root,token:()=>token,request:f.request});
+  await client.connect('github',['repository.read'],error=>failures.push(error));
+  const listener=f.listeners.get('message');
+  await listener({origin:'https://quantaphi.org',source:f.popup,
+   data:{type:'bubbles:oauth-return',provider:'github',state,...bad}});
+  assert.equal(f.calls.length,1,'invalid callbacks must never reach /complete');
+  assert.equal(f.popup.closed,true,'failed popup must close');
+  assert.equal(client.pending,null,'owner must be able to retry');
+  assert.equal(failures.length,1);
+  assert.match(failures[0].message,bad.error?/declined/:/valid authorization code/);
+ }
+});
