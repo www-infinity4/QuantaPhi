@@ -1,5 +1,6 @@
 import {browserReadExpression,browserClickExpression} from './browser-controls.mjs';
 import {chatgptInspectExpression,chatgptPrepareExpression,chatgptSendExpression} from './chatgpt-dom.mjs';
+import {chooseContinuation} from '../../bubbles-chatgpt-continuity.mjs';
 // Bounded Chrome DevTools actions used by authenticated Bubbles conversation.
 // This is a real Browser Run CDP connection; no model-generated JavaScript is evaluated.
 let sequence=0;
@@ -66,7 +67,10 @@ export async function browserAction(env,{sessionId,action,targetId='',url='',lab
    const current=await evaluate(chatgptInspectExpression);
    if(!current.authenticatedConversation||current.conversationUrl!==conversationUrl)
     return {ok:false,error:'conversation_changed_before_send'};
-   if(current.latestRole!=='assistant')return {ok:false,error:'assistant_reply_required'};
+   // Re-evaluate the same eligibility policy server-side. A direct API caller
+   // must not bypass owner-input, pending-work or recent-nudge safeguards.
+   const eligibility=chooseContinuation(current);
+   if(eligibility.state!=='ready')return {ok:false,error:'continuation_not_eligible',reason:eligibility.reason};
    if(current.generating||current.draftPresent||current.recentNudgeCount>0)
     return {ok:false,error:'conversation_not_idle'};
    const continuation='*';
