@@ -60,8 +60,8 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
   gateStatus:async input=>{
    seen=input;
    return [
-    {provider:'github',status:'connected',label:'user-github',expiresAt:now+60000,grantedActions:[]},
-    {provider:'cloudflare',status:'connected',label:'user-cloudflare',
+    {provider:'github',status:'connected',integrityVerified:true,label:'user-github',expiresAt:now+60000,grantedActions:[]},
+    {provider:'cloudflare',status:'connected',integrityVerified:true,label:'user-cloudflare',
      expiresAt:now+60000,grantedActions:['account.read','projects.build','ledger.read','projects.full']}
    ];
   }
@@ -73,7 +73,7 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
  assert.equal(response.status,200);
  assert.equal(seen.userId,'verified-alice');
  assert.equal(result.enforced,false);
- assert.equal(result.mode,'preview');
+ assert.equal(result.mode,'required');
  assert.equal(result.ready,true);
  assert.equal(result.providers.cloudflare.permissionsApproved,true);
  assert.equal(result.providers.github.permissionsApproved,true);
@@ -82,8 +82,8 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
 test('full Cloudflare project grant is required before reporting full access',async()=>{
  const now=Date.now(),configured={...env,GITHUB_CLIENT_ID:'app',GITHUB_CLIENT_SECRET:'hidden',CLOUDFLARE_CLIENT_ID:'app',CLOUDFLARE_CLIENT_SECRET:'hidden',CLOUDFLARE_OAUTH_ALLOWED_SCOPES:FULL_CLOUDFLARE_SCOPES};
  const service={gateStatus:async()=>[
-  {provider:'github',status:'connected',expiresAt:now+60000,grantedActions:[]},
-  {provider:'cloudflare',status:'connected',expiresAt:now+60000,
+  {provider:'github',status:'connected',integrityVerified:true,expiresAt:now+60000,grantedActions:[]},
+  {provider:'cloudflare',status:'connected',integrityVerified:true,expiresAt:now+60000,
    grantedActions:['account.read','projects.build','ledger.read']}
  ]};
  const value=await (await handleConnections(request('/gate/status'),configured,()=>service)).json();
@@ -95,8 +95,8 @@ test('gate fails closed for missing Cloudflare setup, expired credentials and pa
  const now=Date.now();
  const e={...env,GITHUB_CLIENT_ID:'github',GITHUB_CLIENT_SECRET:'secret'};
  const service={gateStatus:async()=>[
-  {provider:'github',status:'connected',expiresAt:now-5000,grantedActions:[]},
-  {provider:'cloudflare',status:'connected',expiresAt:now+60000,grantedActions:['account.read']}
+  {provider:'github',status:'connected',integrityVerified:true,expiresAt:now-5000,grantedActions:[]},
+  {provider:'cloudflare',status:'connected',integrityVerified:true,expiresAt:now+60000,grantedActions:['account.read']}
  ]};
  const response=await handleConnections(request('/gate/status'),e,()=>service);
  const result=await response.json();
@@ -113,7 +113,8 @@ test('Cloudflare OAuth callback is fixed-origin and removes incoming code from i
  const response=await handleConnections(request('/cloudflare/callback?code=private-code'),{},()=>assert.fail());
  const html=await response.text();
  assert.equal(response.status,200);
- assert.match(html,/bubbles:oauth-return/);
+ assert.match(html,/bubbles-oauth-return\.mjs/);
+ assert.match(html,/https:\/\/quantaphi\.org\/bubbles\.html/);
  assert.ok(html.includes("history.replaceState"));
  assert.ok(!html.includes('private-code'));
  assert.ok(response.headers.get('Content-Security-Policy').includes("frame-ancestors 'none'"));

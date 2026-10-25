@@ -6,6 +6,14 @@ on:
       - 'workers/bubbles-connections/**'
       - 'bubbles-connections.mjs'
       - 'bubbles-signin-gate.mjs'
+      - 'bubbles-connections-gate.mjs'
+      - 'bubbles-oauth-return.mjs'
+      - 'bubbles.html'
+      - 'bubbles-ai.js'
+      - 'playwright.signin.config.mjs'
+      - 'test/bubbles-signin-browser.spec.mjs'
+      - 'test/bubbles-integra.test.mjs'
+      - 'test/bubbles-oauth-return.test.mjs'
       - 'test/bubbles-signin-gate.test.mjs'
       - 'index.html'
       - 'workers/quantaphi-site/worker.js'
@@ -19,6 +27,14 @@ on:
       - 'workers/bubbles-connections/**'
       - 'bubbles-connections.mjs'
       - 'bubbles-signin-gate.mjs'
+      - 'bubbles-connections-gate.mjs'
+      - 'bubbles-oauth-return.mjs'
+      - 'bubbles.html'
+      - 'bubbles-ai.js'
+      - 'playwright.signin.config.mjs'
+      - 'test/bubbles-signin-browser.spec.mjs'
+      - 'test/bubbles-integra.test.mjs'
+      - 'test/bubbles-oauth-return.test.mjs'
       - 'test/bubbles-signin-gate.test.mjs'
       - 'index.html'
       - 'workers/quantaphi-site/worker.js'
@@ -47,6 +63,14 @@ jobs:
             test/bubbles-connections-router.test.mjs \
             test/bubbles-connections-ui.test.mjs \
             test/bubbles-signin-gate.test.mjs \
+            test/bubbles-integra.test.mjs \
+            test/bubbles-oauth-return.test.mjs \
             test/bubbles-connector-pairing.test.mjs \
             test/bubbles-home-account-link.test.mjs \
             test/starcoin-github-backup.test.mjs
+      - name: Install pinned browser test runner
+        run: |
+          npm install --no-save --package-lock=false @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify sequential sign-in, popup return, current application and locked errors
+        run: npx playwright test --config=playwright.signin.config.mjs

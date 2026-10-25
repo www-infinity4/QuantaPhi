@@ -227,7 +227,27 @@ export class ConsentService {
       try { await this.refresh({userId,id:record.id}); }
       catch { /* A failed refresh remains visibly unverified. */ }
     }
-    return this.list({userId});
+    const prefix=await this.namespace(userId);
+    const rows=await this.storage.list({prefix:prefix+'connection:',limit:100});
+    const result=[];
+    for(const [key,record] of rows){
+      if(record.userId!==userId||!['github','cloudflare'].includes(record.provider))continue;
+      let integrityVerified=false;
+      if(record.status==='connected'&&record.providerSubject&&
+          record.credentialRef===prefix+'credential:'+record.id&&key===prefix+'connection:'+record.id){
+        try{
+          const encrypted=await this.storage.get(record.credentialRef);
+          if(encrypted){
+            const credential=await this.vault.open(encrypted,record.credentialRef);
+            const current=await this.storage.get(key);
+            integrityVerified=typeof credential?.accessToken==='string'&&credential.accessToken.length>0&&
+              current?.revision===record.revision&&current.status==='connected';
+          }
+        }catch{ /* Integra reports an unverifiable credential, never its secret. */ }
+      }
+      result.push({...publicConnection(record),integrityVerified});
+    }
+    return result;
   }
   async refresh({userId, id}) {
     const prefix = await this.namespace(userId);

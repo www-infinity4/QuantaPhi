@@ -1,6 +1,7 @@
 import {cloudStarCoinBackup} from './starcoin-backup.mjs';
 import {digest} from './vault.mjs';
 import {PROVIDERS} from './authorization.mjs';
+import {inspectConnectionIntegrity} from './integra.mjs';
 import {CONNECTOR_REQUIREMENTS,cloudflareAvailableActions} from './providers.mjs';
 const ORIGINS = new Set(['https://quantaphi.org','https://www.quantaphi.org']);
 export const PREFIX = '/api/bubbles/connections';
@@ -28,20 +29,19 @@ export async function walletIdentity(request,env) {
 export function callbackPage(provider) {
   if (!['google','github','cloudflare'].includes(provider)) return new Response('Unknown provider',{status:404});
   const nonce = crypto.randomUUID();
-  const html = `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Return to Bubbles</title><body><h1>Return to Bubbles</h1><p id="status">Completing your account connection…</p><script nonce="${nonce}">
+  const html = `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Return to Bubbles</title><body><h1>Return to Bubbles</h1><p id="status">Completing your account connection…</p><p><a href="https://quantaphi.org/bubbles.html" rel="noopener noreferrer">Open the current Bubbles application</a></p><script nonce="${nonce}">
 const params=new URLSearchParams(location.search);history.replaceState(null,'',location.pathname);
-const targets=['https://quantaphi.org','https://www.quantaphi.org'];
-if(window.opener){for(const origin of targets)window.opener.postMessage({type:'bubbles:oauth-return',provider:${JSON.stringify(provider)},state:params.get('state'),code:params.get('code'),error:params.has('error')?'provider_declined':null},origin);document.getElementById('status').textContent='Return to the Bubbles window to check the connection result.';}
-else document.getElementById('status').textContent='The original Bubbles window is unavailable. Return to Bubbles and start Connect account again. No connection is confirmed here.';
+window.QuantaCloudConnectionDisableAutoRecovery=true;
+import('/bubbles-oauth-return.mjs?v=20261025-required1').then(({completeBubblesReturn})=>completeBubblesReturn({provider:${JSON.stringify(provider)},state:params.get('state'),code:params.get('code'),error:params.has('error')})).catch(()=>{document.getElementById('status').textContent='Could not load account verification. Open the current Bubbles application and start sign-in again.';});
 </script></body></html>`;
   return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer',
-    'Content-Security-Policy':`default-src 'none'; script-src 'nonce-${nonce}'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'`,
+    'Content-Security-Policy':`default-src 'none'; script-src 'self' 'nonce-${nonce}'; connect-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'`,
     'X-Content-Type-Options':'nosniff'}});
 }
 // resolveService is an internal dependency, selected only by verified user ID.
 export async function handleConnections(request,env,resolveService) {
   const url = new URL(request.url), origin = request.headers.get('Origin') || '';
-  if (request.method === 'GET' && url.pathname === PREFIX+'/health') return json(origin,{ok:true,service:'bubbles-connections',version:2});
+  if (request.method === 'GET' && url.pathname === PREFIX+'/health') return json(origin,{ok:true,service:'bubbles-connections',version:3,entryPolicy:'github-cloudflare-required-v1',integrityValidator:'integra-v1'});
   const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/);
   if (callback && request.method === 'GET') return callbackPage(callback[1]);
   // Browsers normally omit Origin for same-origin GET fetches. Accept only
@@ -87,33 +87,12 @@ export async function handleConnections(request,env,resolveService) {
     }
     if (!(env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true')) return json(origin,{ok:false,error:'connections_not_configured'},503);
     const service = await resolveService(identity.userId);
-    // Stage 2 is a read-only pre-chat gate while live OAuth provisioning is
-    // incomplete. Only records resolved from the verified StarQuest session
-    // count, and the server refreshes expired provider credentials.
+    // Integra checks trusted, wallet-partitioned vault records. This status is
+    // application entry policy; each executor retains its own authorization.
     if (request.method === 'GET' && url.pathname === PREFIX+'/gate/status') {
-      const accounts=await service.gateStatus(identity);
-      const available=id=>id==='github'
-        ? Boolean(env.GITHUB_CLIENT_ID&&env.GITHUB_CLIENT_SECRET)
-        : cloudflareAppReady;
-      const required={github:[],cloudflare:['account.read','projects.build','ledger.read','projects.full']};
-      const state=id=>{
-        const configured=available(id);
-        const candidates=accounts.filter(x=>x.provider===id);
-        const matching=candidates.find(x=>x.status==='connected' &&
-          Number.isFinite(x.expiresAt)&&x.expiresAt>Date.now()+30000);
-        const missingActions=required[id].filter(a=>!matching?.grantedActions?.includes(a));
-        return {configured,connected:Boolean(configured&&matching),
-          permissionsApproved:Boolean(configured&&matching&&missingActions.length===0),
-          label:configured&&matching?matching.label:null,
-          missingActions:matching?missingActions:[],
-          reconnectRequired:candidates.length>0&&!matching,
-          ...(id==='cloudflare'?{fullProjectConfigured:cloudflareFullReady,
-            scopeSetupRequired:cloudflareAppReady&&!cloudflareFullReady}: {})};
-      };
-      const github=state('github'),cloudflare=state('cloudflare');
-      return json(origin,{ok:true,mode:'preview',enforced:false,
-        ready:github.permissionsApproved&&cloudflare.permissionsApproved,
-        providers:{github,cloudflare}});
+      return json(origin,inspectConnectionIntegrity({accounts:await service.gateStatus(identity),
+        configured:{github:Boolean(env.GITHUB_CLIENT_ID&&env.GITHUB_CLIENT_SECRET),cloudflare:cloudflareAppReady},
+        cloudflareFullReady}));
     }
     if (request.method === 'GET' && url.pathname === PREFIX+'/accounts') return json(origin,{ok:true,accounts:await service.list(identity)});
     if (request.method !== 'POST') return json(origin,{ok:false,error:'not_found'},404);
