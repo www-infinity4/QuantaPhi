@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-24T22:00:25.366412Z",
+  "checked_at": "2026-10-25T00:23:30.745031Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "sammy smith",
-      "approx_searches": "500+",
-      "published_at": "2026-10-24T21:40:00Z",
-      "related_news_urls": [
-        "https://www.nascar.com/gallery/at-track-photos-2026-talladega-superspeedway-chase-weekend/",
-        "https://www.jayski.com/2026/10/23/loves-rv-stop-225-post-race-inspection-report-sammy-smith-win-official/",
-        "https://www.al.com/sports/2026/10/after-split-from-earnhardt-jrs-team-sammy-smith-makes-statement-at-talladega.html"
-      ]
-    },
-    {
-      "query": "paul bettany",
-      "approx_searches": "500+",
-      "published_at": "2026-10-24T21:30:00Z",
-      "related_news_urls": [
-        "https://abc.com/news/b59579fb-3bf1-4c94-9681-75f1028640f2/category/154926",
-        "https://latenighter.com/news/foo-fighters-jimmy-kimmel-live-residency/",
-        "https://whatsondisneyplus.com/paul-bettany-owen-wilson-to-appear-on-jimmy-kimmel-live/"
-      ]
-    },
-    {
-      "query": "robert griffin iii",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T21:30:00Z",
-      "related_news_urls": [
-        "https://roundtable.io/sports/ncaa/ucf/community/former-nfl-qb-robert-griffin-iii-at-ucf-spirit-splash",
-        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-friday-oct-23",
-        "https://sports.yahoo.com/articles/bears-lose-heartbeat-cole-kmet-200854848.html"
-      ]
-    },
-    {
-      "query": "apple tv",
+      "query": "pelicans vs nuggets",
       "approx_searches": "2000+",
-      "published_at": "2026-10-24T21:20:00Z",
+      "published_at": "2026-10-25T00:10:00Z",
       "related_news_urls": [
-        "https://9to5mac.com/2026/10/23/heres-everything-new-apple-tv-has-coming-in-november-2/",
-        "https://theapopkavoice.com/stories/apple-tvs-november-lineup-brings-heists-holiday-cheer-and-second-chances,190074",
-        "https://news.lavx.hu/article/apple-tv-packs-november-with-comedy-heist-thriller-and-oscar-follow-up"
+        "https://sports.yahoo.com/articles/game-preview-orleans-pelicans-denver-202153737.html",
+        "https://www.nytimes.com/athletic/7720569/2026/10/24/pelicans-vs-nuggets-stream-how-to-watch-oct-24/",
+        "https://nuggets.com/news/nuggets-host-pelicans-for-home-opener"
       ]
     },
     {
-      "query": "devils",
+      "query": "lightning vs mammoth",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-25T00:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/tampa-bay-lightning-utah-mammoth-game-preview-october-24-2026",
+        "https://www.nytimes.com/athletic/7720602/2026/10/24/lightning-vs-mammoth-stream-how-to-watch-oct-24/",
+        "https://sports.ksl.com/watch/mikhail-sergachev-previews-utahs-matchup-against-the-tampa-bay-lightning/01a16f8c-09f8-8008-ef9d-965a3adc37c4"
+      ]
+    },
+    {
+      "query": "chandler simpson",
       "approx_searches": "1000+",
-      "published_at": "2026-10-24T21:10:00Z",
+      "published_at": "2026-10-25T00:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50268327/connor-hellebuyck-happy-join-devils-jets-standoff",
-        "https://www.nhl.com/news/trade-to-new-jersey-devils-going-to-fit-perfectly-for-connor-hellebuyck",
-        "https://buffalonews.com/sports/professional/nhl/sabres/article_33888300-9c74-46fd-82df-af934431a50c.html"
+        "https://www.mlb.com/news/chandler-simpson-brings-famous-speed-to-world-series",
+        "https://blogs.fangraphs.com/chandler-simpson-could-be-the-king-of-competitive-runs/",
+        "https://andscape.com/features/chandler-simpson-rays-outfielder-speed-black-baseball-atlanta-baserunning/"
       ]
     },
     {
-      "query": "marines",
+      "query": "derek jeter",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-25T00:10:00Z",
+      "related_news_urls": [
+        "https://people.com/derek-jeter-flaunts-sweat-drenched-shirt-in-relatable-dad-moment-12190045",
+        "https://heavy.com/sports/mlb/new-york-yankees/jeter-sends-out-viral-10-word-post/",
+        "https://www.cnn.com/2026/10/24/sport/live-news/world-series-game-2"
+      ]
+    },
+    {
+      "query": "penelope cruz",
       "approx_searches": "500+",
-      "published_at": "2026-10-24T21:10:00Z",
+      "published_at": "2026-10-25T00:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/10/23/us/trans-troops-military-boards-retain.html",
-        "https://www.yahoo.com/news/politics/articles/navy-marine-corps-largely-ignoring-194531848.html",
-        "https://www.dailykos.com/stories/2026/10/23/800116799/news/the-militarys-quiet-rebellion-against-trumps-anti-trans-orders/"
+        "https://www.nytimes.com/2026/10/19/magazine/penelope-cruz-acting-career.html",
+        "https://thatshelf.com/your-invite-to-the-year-of-penelope-cruz/",
+        "https://www.imdb.com/fr-ca/news/ni66011643/"
       ]
     },
     {
-      "query": "quinn hughes comments wild future",
+      "query": "janel parrish",
+      "approx_searches": "200+",
+      "published_at": "2026-10-25T00:10:00Z",
+      "related_news_urls": [
+        "https://www.usmagazine.com/celebrity-news/news/sasha-farber-gives-dating-update-after-janel-parrish-split/",
+        "https://www.hallmarkchannel.com/forgotten-holiday/videos",
+        "https://www.yahoo.com/entertainment/movies/articles/forgotten-holiday-cast-plot-filming-194354247.html"
+      ]
+    },
+    {
+      "query": "peyton manning",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-25T00:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50218623/colts-fire-gm-chris-ballard-shane-steichen",
+        "https://www.cbssports.com/nfl/news/quenton-nelson-trade-destinations-landing-spots-colts/",
+        "https://fox59.com/sports/colts/source-carlie-irsay-gordon-hasnt-reached-out-to-peyton-manning/"
+      ]
+    },
+    {
+      "query": "john smoltz",
       "approx_searches": "500+",
-      "published_at": "2026-10-24T21:10:00Z",
+      "published_at": "2026-10-25T00:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7720935/2026/10/24/wild-quinn-hughes-contract-talks/",
-        "https://www.sportsnet.ca/nhl/article/quinn-hughes-on-wild-contract-talks-my-two-feet-are-planted-in-minnesota/",
-        "https://sports.yahoo.com/articles/quinn-hughes-hints-progress-contract-200306678.html"
+        "https://sports.yahoo.com/articles/mets-pitcher-mistaken-brewers-star-165231283.html",
+        "https://thespun.com/mlb/mlb-fans-call-out-john-smoltz-for-embarrassing-world-series-performance",
+        "https://risingapple.com/ny-mets-pitcher-john-smoltz-world-series-faux-pas-trevor-megill-tylor-megill"
       ]
     },
     {
-      "query": "chivas vs monterrey",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T21:10:00Z",
+      "query": "vj edgecombe",
+      "approx_searches": "500+",
+      "published_at": "2026-10-25T00:00:00Z",
       "related_news_urls": [
-        "https://www.chivasdecorazon.com.mx/es/noticias/41663/DA-CLIC-AQU-para-ver-a-Chivas-vs.-Rayados",
-        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17421304/monterrey-vs-chivas-alineacione-apertura-2026",
-        "https://www.lavozarizona.com/story/deportes/futbol/2026/10/23/chivas-vs-monterrey-jornada-14-liga-mx-hora-canal-previa-alineaciones/92402931007/"
+        "https://www.rotowire.com/basketball/headlines/vj-edgecombe-injury-exits-to-locker-room-535905",
+        "https://sports.yahoo.com/articles/sixers-star-joel-embiid-gives-171233941.html",
+        "https://sixers.com/news/2026-27-76ers-theme-nights-and-fan-favorite-gameday-activations"
       ]
     },
     {
-      "query": "university of central florida",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T21:10:00Z",
+      "query": "andrew wiggins",
+      "approx_searches": "500+",
+      "published_at": "2026-10-25T00:00:00Z",
       "related_news_urls": [
-        "https://www.ucf.edu/news/ucf-alums-bring-a-fresh-brew-to-familiar-grounds/",
-        "https://www.fox.com/sports/football/college-football/watch-byu-cougars-vs-ucf-knights-oct-24-2026",
-        "https://www.deseret.com/sports/2026/10/24/byu-cougars-football-ucf-2026-live-coverage/"
-      ]
-    },
-    {
-      "query": "dalton smith",
-      "approx_searches": "200+",
-      "published_at": "2026-10-24T21:10:00Z",
-      "related_news_urls": [
-        "https://bleacherreport.com/liveblogs/25519632-dalton-smith-vs-alberto-puello-live-updates-highlights-and-results",
-        "https://www.bbc.com/sport/boxing/articles/cqn73k05xjx6o",
-        "https://fightnews.com/dalton-vs-puello-weigh-in-results/198984"
+        "https://www.cbssports.com/fantasy/basketball/news/heats-andrew-wiggins-scores-11-in-lopsided-loss/",
+        "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-timberwolves-vs-heat-nhl-action-and-more/",
+        "https://www.canishoopus.com/timberwolves-game-previews/70888/nba-thread-miami-heat-lamelo-ball-giannis-antetokounmpo"
       ]
     }
   ]
