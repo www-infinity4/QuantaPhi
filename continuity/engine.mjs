@@ -58,7 +58,7 @@ export function recover(payload){
 }
 export function mergeTasks(current,incoming){
  const map=new Map(current.map(t=>[t.id,t]));
- for(const raw of incoming){const t=newTask(raw),old=map.get(t.id);if(!old||t.updatedAt>old.updatedAt)map.set(t.id,t);}
+ for(const raw of incoming){const t=newTask(raw),old=map.get(t.id);if(!old||t.updatedAt>=old.updatedAt)map.set(t.id,t);}
  return [...map.values()];
 }
 export function stats(items){
