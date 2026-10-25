@@ -25,3 +25,18 @@
 @media(min-width:720px){.iam-card .iam-layout{grid-template-columns:40% minmax(0,1fr)}.iam-card .iam-photo{height:100%;max-height:none;aspect-ratio:4/5}.iam-card .iam-info{padding:26px}}
 @media(max-width:430px){.iam-card .iam-info{padding:16px}.iam-card .iam-links{grid-template-columns:1fr}.iam-card .iam-title{font-size:35px}}
 @media(prefers-reduced-motion:reduce){.iam-card .iam-shimmer{animation:none}}
+
+/* Photo failure must never expose a broken-image icon or illegible card. */
+.iam-card .iam-photo-wrap{min-height:185px;background:linear-gradient(145deg,#201724,#443052)}
+.iam-card .iam-photo[hidden]{display:none!important}
+.iam-card .iam-photo-wrap.iam-photo-unavailable:before{
+ content:"CHURCH OF I AM";position:absolute;inset:0;display:grid;place-items:center;
+ padding:24px;text-align:center;color:#fff;font:900 clamp(25px,7vw,39px)/1.1 system-ui,sans-serif;
+ letter-spacing:-.025em;text-shadow:0 2px 10px #0009
+}
+/* Use high-contrast, readable copy even when inherited homepage rules change. */
+body.oracle-quanta .iam-card .iam-copy{color:#fff!important;font-size:clamp(16px,3.9vw,18px)!important;line-height:1.65!important;opacity:1!important}
+body.oracle-quanta .iam-card .iam-host{color:#fff!important;opacity:1!important}
+body.oracle-quanta .iam-card .iam-disclosure{color:#f1e8f4!important;font-size:13px!important;line-height:1.5!important;opacity:1!important}
+body.oracle-quanta .iam-card .iam-links a{color:#24142c!important;font-size:15px!important;line-height:1.45!important;min-height:50px}
+body.oracle-quanta .iam-card .iam-info{background:#201827;color:#fff!important}
