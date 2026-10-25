@@ -50,7 +50,7 @@ test('product cards use five working QuantaPhi actions plus exact shop links, no
 
 test('all six original product widgets are exposed to the three direction tabs as independent articles',()=>{
  assert.match(home,/id="brandProductCards" hidden/);
- assert.match(home,/brand-product-cards\.mjs\?v=20261024-real-products1/);
+ assert.match(home,/brand-product-cards\.mjs\?v=20261025-title-search1/);
  assert.match(home,/brand-product-cards\.css\?v=20261024-real-products1/);
  assert.match(deck,/#brandProductCards \.iqc-card\[data-source-id\]/);
  assert.match(deck,/const products=sources\.filter/);
