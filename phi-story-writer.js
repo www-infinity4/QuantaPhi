@@ -393,7 +393,10 @@ async function share(){
  const teaser=active.body.replace(/\s+/g,' ').slice(0,160).trim()+'…';
  try{
   if(typeof window.PhiStoryShare?.create!=='function')throw Error('The full-story reader is unavailable');
-  const url=await window.PhiStoryShare.create({kind:'fiction',title:active.title,body:active.body,summary:teaser});
+  const destination=await window.PhiStoryShare.create({kind:'fiction',title:active.title,body:active.body,summary:teaser});
+  const {socialShareUrl}=await import('/card-social-share.mjs');
+  const url=socialShareUrl({id:'story-writer-'+active.id,name:active.title,
+   category:'Interactive story reader',description:teaser,route:destination},{origin:location.origin});
   const data={title:active.title,text:teaser,url};
   if(navigator.share)await navigator.share(data);
   else if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(teaser+' '+url);
