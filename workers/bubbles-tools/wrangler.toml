@@ -25,3 +25,7 @@ service = "orange-brook-a2ac"
 # Remote Chromium with authenticated, owner-scoped Live View sessions.
 [browser]
 binding = "BROWSER"
+
+[[services]]
+binding = "PUBLIC_X"
+service = "bubbles-public-x"
