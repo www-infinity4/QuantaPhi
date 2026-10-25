@@ -3,108 +3,104 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-25T13:59:13.445155Z",
+  "checked_at": "2026-10-25T17:24:11.501589Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "2026 us grand prix starting grid",
-      "approx_searches": "10000+",
-      "published_at": "2026-10-25T13:40:00Z",
-      "related_news_urls": [
-        "https://www.kvue.com/article/travel/ground-delay-austin-airport-us-grand-prix-texas-ole-miss/269-877f42f4-1058-4ada-8c20-f560bacd9d69",
-        "https://sports.yahoo.com/articles/watch-f1-united-states-grand-123825545.html",
-        "https://www.formula1.com/en/latest/article/strategy-guide-what-are-the-tactical-options-for-the-united-states-gp.6GuFxNKHQ7TgdoH0Cc78TD"
-      ]
-    },
-    {
-      "query": "crystal palace - newcastle",
-      "approx_searches": "500+",
-      "published_at": "2026-10-25T13:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmde8r06wxp3t",
-        "https://www.skysports.com/football/live-blog/13602651/crystal-palace-vs-newcastle-live-premier-league-score-updates-news-prediction-lineups-and-how-to-watch-or-stream",
-        "https://www.newcastleunited.com/en/news/matthias-jaissles-team-news-update-elanga-and-ramsey-latest-ahead-of-palace-trip"
-      ]
-    },
-    {
-      "query": "jordyn tyson",
-      "approx_searches": "200+",
-      "published_at": "2026-10-25T13:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/happened-jordyn-tyson-return-latest-120035144.html",
-        "https://www.usatoday.com/story/sports/nfl/saints/2026/10/25/jordyn-tyson-injury-update-return-saints/92354996007/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-19/tyson-hamstring-traveled-with-saints-to-paris"
-      ]
-    },
-    {
-      "query": "bandar abbas",
-      "approx_searches": "200+",
-      "published_at": "2026-10-25T13:40:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/middle-east/iranian-army-says-it-shot-down-us-drone-over-bandar-abbas-tasnim-reports-2026-10-25/",
-        "https://www.jpost.com/middle-east/iran-news/2026-10-25/live-updates-912732",
-        "https://www.tasnimnews.ir/en/news/2026/10/25/3731598/iran-downs-us-lucas-drone"
-      ]
-    },
-    {
-      "query": "travis etienne",
-      "approx_searches": "200+",
-      "published_at": "2026-10-25T13:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/travis-etienne-injury-163055669.html",
-        "https://www.aol.com/articles/happened-travis-etienne-jr-return-121244000.html",
-        "https://heavy.com/sports/nfl/new-orleans-saints/when-travis-etienne-coming-back-saints-rb-injury-timeline/"
-      ]
-    },
-    {
-      "query": "nfl network",
+      "query": "jonathan taylor",
       "approx_searches": "2000+",
-      "published_at": "2026-10-25T13:30:00Z",
+      "published_at": "2026-10-25T17:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50249972/week-7-predictions-upsets-fantasy-sleepers-stats-2026",
-        "https://www.cbssports.com/nfl/news/how-to-bet-on-2026-nfl-week-7-betting-odds-tips-trends-schedule-game-previews-sportsbook-promos-offers/",
-        "https://www.thefantasyfootballers.com/dfs/nfl-dfs-draftkings-gpp-picks-week-7-fantasy-football-6/"
+        "https://sports.yahoo.com/articles/broncos-circling-trade-44-million-165247420.html",
+        "https://bleacherreport.com/articles/25520020-new-jonathan-taylor-trade-rumors-reveal-every-team-eyeing-colts-star-nfl-landing-spot",
+        "https://sports.mynorthwest.com/nfl/seattle-seahawks/nfl-insider-floats-seattle-seahawks-potential-jonathan-taylor-suitor"
       ]
     },
     {
-      "query": "palace vs newcastle",
+      "query": "sauce gardner",
       "approx_searches": "500+",
-      "published_at": "2026-10-25T13:30:00Z",
+      "published_at": "2026-10-25T17:10:00Z",
       "related_news_urls": [
-        "https://www.goal.com/en-us/news/watch-live-stream-crystal-palace-newcastle-united-free/blt7d21cb0c63302a15",
-        "https://www.town.shodoshima.lg.jp/section/VR_choseiyoran/shodoshima349.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vYWxsYmxhY2tzdndhbGxhYmllczIuZ2l0aHViLmlvL210cC91Y2wueG1sIi8+PC9rcnBhbm8+&id=video-newcastle-v-palace-match-lie-vkcfanm",
-        "https://www.vavel.com/en-us/soccer/2026/10/25/1276588-crystal-palace-vs-newcastle-live-score-premier-league-2026-27.html"
+        "https://www.thefantasyfootballers.com/news/644221/-ruled-out-for-week-7/",
+        "https://www.indystar.com/story/sports/nfl/colts/2026/10/21/sauce-gardner-injury-update-colts-provided-an-update-on-cornerback-calf-week-to-week/92366177007/",
+        "https://www.fantasypros.com/nfl/news/615647/sauce-gardner-calf-will-not-play-week-7.php"
       ]
     },
     {
-      "query": "chase young",
-      "approx_searches": "200+",
-      "published_at": "2026-10-25T13:30:00Z",
+      "query": "caleb douglas",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-25T17:00:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chase-young-christen-miller-were-fined-for-violent-gestures-on-same-play",
-        "https://sports.yahoo.com/articles/nfl-fines-giants-thomas-fidone-115532332.html",
-        "https://heavy.com/sports/nfl/new-york-giants/nfl-announces-punishment-giants-player/"
+        "https://sports.yahoo.com/articles/dolphins-inactives-miami-without-7-153308662.html",
+        "https://www.miamiherald.com/sports/article317771122.html",
+        "https://www.espn.com/nfl/story/_/id/50259154/dolphins-rookie-wr-caleb-douglas-set-return-vs-jets"
       ]
     },
     {
-      "query": "monaco vs losc",
-      "approx_searches": "200+",
-      "published_at": "2026-10-25T13:30:00Z",
+      "query": "tank dell injury",
+      "approx_searches": "500+",
+      "published_at": "2026-10-25T17:00:00Z",
       "related_news_urls": [
-        "https://www.france24.com/fr/info-en-continu/20261025-ligue-1-rebond-mon%C3%A9gasque-attendu-avec-camara-en-leader",
-        "https://www.footmercato.net/a731099431492767872-as-monaco-lille-osc-les-compositions-officielles",
-        "https://www.eurosport.fr/football/ligue-1/2026-2027/live-monaco-lille-osc_mtc21875522/live-commentary.shtml"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/texans-activate-wr-tank-dell-to-the-active-roster",
+        "https://www.espn.com/nfl/story/_/id/50242240/texans-tank-dell-fear-being-hit-sunday-giants",
+        "https://www.houstonchronicle.com/sports/texans/article/tank-dell-return-receiver-room-22490206.php"
       ]
     },
     {
-      "query": "kellen moore",
-      "approx_searches": "200+",
-      "published_at": "2026-10-25T13:30:00Z",
+      "query": "keenan allen",
+      "approx_searches": "500+",
+      "published_at": "2026-10-25T17:00:00Z",
       "related_news_urls": [
-        "https://triblive.com/sports/first-call-mike-mccarthy-faces-former-assistant-in-france-kyle-dubas-to-provide-update-on-ben-kindel/",
-        "https://sports.yahoo.com/videos/kellen-moore-outcoach-mike-mccarthy-010411826.html",
-        "https://steelersdepot.com/2026/10/saints-head-coach-kellen-moore-opens-up-about-what-he-learned-under-mike-mccarthy/"
+        "https://www.nfl.com/news/colts-quenton-nelson-not-focused-trade-rumors-gm-firing",
+        "https://www.stampedeblue.com/indianapolis-colts-rumors/129155/no-colts-player-reportedly-off-limits-if-rebuild-begins-before-upcoming-trade-deadline",
+        "https://www.si.com/nfl/steelers/onsi/pros-cons-pittsburgh-steelers-trying-land-quenton-nelson"
       ]
+    },
+    {
+      "query": "college basketball",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-25T17:00:00Z",
+      "related_news_urls": [
+        "https://www.wholehogsports.com/news/2026/oct/24/arkansas-basketball-notebook-razorbacks-john-calipari-mark-few-zags-bulldogs-exhibition-76-72-final/",
+        "https://sports.yahoo.com/articles/encouraging-news-arkansas-basketball-gonzaga-153026753.html",
+        "https://arkansasrazorbacks.com/12-13-arkansas-rallies-to-beat-15-12-gonzaga-in-exhibition/"
+      ]
+    },
+    {
+      "query": "vikings game today",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-25T16:50:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/stories/nfl/how-to-watch-colts-vs-vikings-tv-channel-live-stream-time-october-25-2026",
+        "https://sports.yahoo.com/articles/colts-vs-vikings-live-updates-154042711.html",
+        "https://www.fox9.com/live-blog/sports/live-updates-minnesota-vikings-vs-indianapolis-colts"
+      ]
+    },
+    {
+      "query": "greg olsen",
+      "approx_searches": "500+",
+      "published_at": "2026-10-25T16:50:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/sports/football/troy-aikman-joe-buck-espn-monday-night-football-d7349ac9",
+        "https://www.boston.com/sports/media/2026/10/24/troy-aikman-espn-patriots-super-bowl-calls/",
+        "https://sports.yahoo.com/articles/don-t-see-many-stepping-184903008.html"
+      ]
+    },
+    {
+      "query": "real sociedad - levante",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-25T16:40:00Z",
+      "related_news_urls": [
+        "https://as.com/futbol/primera/el-momento-de-remiro-ante-el-efecto-castro-f202610-n/",
+        "https://www.eldesmarque.com/futbol/liga-1a-division/20261024/pellegrino-matarazzo-regreso-dos-jugadores-real-sociedad-gestionar-cargas_18_020528316.html",
+        "https://www.mundodeportivo.com/futbol/real-sociedad/20261024/1004242579/yangel-aramburu-llegan-jugar-levante.html"
+      ]
+    },
+    {
+      "query": "drew mehringer",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-25T16:40:00Z",
+      "related_news_urls": []
     }
   ]
 }
