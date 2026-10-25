@@ -41,3 +41,6 @@
 .vbs-news-preview{font-size:12px;line-height:1.45;color:#525a65}
 .vbs-news-date{color:#555e69;font-size:11px;display:block;margin-top:4px}
 .vbs-news-refresh{padding:10px 13px;min-height:44px;background:#193e61;border-radius:10px;color:#fff;margin-top:12px;font-size:13px;font-weight:800}
+
+.vbs-offer{padding:13px 14px;border-left:4px solid #b92d36;background:#fff3cf;border-radius:9px;color:#5b3018;font-size:14px;line-height:1.5;font-weight:800}
+.vbs-offer-expired{background:#f4f1ee;border-color:#8a8b8d;color:#666;font-weight:600}
