@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-25T09:33:02.249217Z",
+  "checked_at": "2026-10-25T13:59:13.445155Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "deportation",
-      "approx_searches": "200+",
-      "published_at": "2026-10-25T09:10:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/10/23/nx-s1-6012356/a-new-study-gives-us-a-clearer-picture-on-how-many-people-have-been-deported",
-        "https://apnews.com/article/trump-immigration-data-numbers-deportations-a550c554eea7d71deb00d92a0ba78677",
-        "https://www.washingtonpost.com/immigration/2026/10/22/trump-administration-deported-nearly-1-million-through-july-report-finds/"
-      ]
-    },
-    {
-      "query": "india vs zimbabwe",
-      "approx_searches": "200+",
-      "published_at": "2026-10-25T09:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/cricket/story/_/id/50274785/ind-vs-zim-2nd-odi-india-opt-bat-second-odi-vaishnavi-replaces-rested-gaud",
-        "https://www.cricbuzz.com/cricket-news/140626/india-vs-zimbabwe-shree-charani-pratika-rawal-fire-india-to-comfortable-win-in-opener-cricbuzzcom",
-        "https://www.cricinfo.com/story/jintimani-kalita-debuts-in-first-ever-odi-between-india-and-zimbabwe-1559719"
-      ]
-    },
-    {
-      "query": "lawrence mccutcheon",
-      "approx_searches": "500+",
-      "published_at": "2026-10-25T09:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50261735/lawrence-mccutcheon-dies-76",
-        "https://sports.yahoo.com/articles/rip-condolences-pour-troy-aikman-032304900.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/former-rams-rb-lawrence-mccutcheon-dies-at-76"
-      ]
-    },
-    {
-      "query": "rybakina",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-25T08:50:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4598107/elena-rybakina-vs-leylah-fernandez-everything-to-know-about-the-ningbo-final",
-        "https://www.espn.com/tennis/story/_/id/50266100/elena-rybakina-face-leylah-fernandez-ningbo-open-final",
-        "https://www.reuters.com/sports/tennis/holder-rybakina-sets-up-fernandez-clash-ningbo-final-2026-10-24/"
-      ]
-    },
-    {
-      "query": "swift",
+      "query": "2026 us grand prix starting grid",
       "approx_searches": "10000+",
-      "published_at": "2026-10-25T08:40:00Z",
+      "published_at": "2026-10-25T13:40:00Z",
       "related_news_urls": [
-        "https://people.com/prince-william-jokes-he-was-trying-to-move-travis-kelce-out-of-taylor-swift-selfie-photo-12191917",
-        "https://www.eonline.com/news/1437441/taylor-swift-travis-kelces-photo-with-royal-family-almost-didnt-happen",
-        "https://pagesix.com/2026/10/24/royal-family/prince-william-playfully-shades-travis-kelce-over-viral-taylor-swift-selfie/"
+        "https://www.kvue.com/article/travel/ground-delay-austin-airport-us-grand-prix-texas-ole-miss/269-877f42f4-1058-4ada-8c20-f560bacd9d69",
+        "https://sports.yahoo.com/articles/watch-f1-united-states-grand-123825545.html",
+        "https://www.formula1.com/en/latest/article/strategy-guide-what-are-the-tactical-options-for-the-united-states-gp.6GuFxNKHQ7TgdoH0Cc78TD"
       ]
     },
     {
-      "query": "the office",
-      "approx_searches": "100+",
-      "published_at": "2026-10-25T08:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/commentisfree/2026/oct/22/prince-harry-david-brent-reboot-purpose",
-        "https://www.the-independent.com/news/uk/home-news/willam-harry-meghan-markle-b3072433.html",
-        "https://www.geo.tv/latest/688060-king-charles-gives-william-extraordinary-power-as-harry-spreads-wings"
-      ]
-    },
-    {
-      "query": "journalist",
-      "approx_searches": "200+",
-      "published_at": "2026-10-25T08:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/oct/19/abdul-el-sayed-heckler-tommy",
-        "https://www.washingtonpost.com/politics/2026/10/23/examining-muslim-brotherhood-claims-michigans-senate-race/",
-        "https://www.cnn.com/2026/10/22/us/word-of-week-abdul-el-sayed-disavow-cec"
-      ]
-    },
-    {
-      "query": "stanley",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-25T08:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50260103/nhl-hellebuyck-trade-grades-devils-jets-mercer-bjugstad-command-daws",
-        "https://sports.yahoo.com/articles/hurricanes-tried-acquire-forward-hellebuyck-055934130.html",
-        "https://www.foxnews.com/outkick-sports/team-usa-hero-connor-hellebuyck-discusses-difference-playing-hockey-us-canada"
-      ]
-    },
-    {
-      "query": "england vs pakistan",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-25T08:10:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/pakistan-odi-tri-series-2026-27-1550706/pakistan-vs-england-4th-match-1550716/match-preview",
-        "https://www.bbc.co.uk/sport/cricket/live/cm3eqnpn2jzvt",
-        "https://sports.yahoo.com/articles/pak-vs-eng-4th-odi-063500203.html"
-      ]
-    },
-    {
-      "query": "eng vs pak",
+      "query": "crystal palace - newcastle",
       "approx_searches": "500+",
-      "published_at": "2026-10-25T08:10:00Z",
+      "published_at": "2026-10-25T13:40:00Z",
       "related_news_urls": [
-        "https://www.pcb.com.pk/press-release-detail/pcb-to-observe-breast-cancer-awareness-day-during-pakistan-v-england-odi-in-lahore.html",
-        "https://www.geosuper.tv/latest/60722-pcb-announces-auction-of-signed-shaheen-babar-shirts-for-breast-cancer-treatment",
-        "https://sports.yahoo.com/articles/explained-why-pakistan-wear-pink-175630008.html"
+        "https://www.bbc.com/sport/football/live/cmde8r06wxp3t",
+        "https://www.skysports.com/football/live-blog/13602651/crystal-palace-vs-newcastle-live-premier-league-score-updates-news-prediction-lineups-and-how-to-watch-or-stream",
+        "https://www.newcastleunited.com/en/news/matthias-jaissles-team-news-update-elanga-and-ramsey-latest-ahead-of-palace-trip"
+      ]
+    },
+    {
+      "query": "jordyn tyson",
+      "approx_searches": "200+",
+      "published_at": "2026-10-25T13:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/happened-jordyn-tyson-return-latest-120035144.html",
+        "https://www.usatoday.com/story/sports/nfl/saints/2026/10/25/jordyn-tyson-injury-update-return-saints/92354996007/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-19/tyson-hamstring-traveled-with-saints-to-paris"
+      ]
+    },
+    {
+      "query": "bandar abbas",
+      "approx_searches": "200+",
+      "published_at": "2026-10-25T13:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/middle-east/iranian-army-says-it-shot-down-us-drone-over-bandar-abbas-tasnim-reports-2026-10-25/",
+        "https://www.jpost.com/middle-east/iran-news/2026-10-25/live-updates-912732",
+        "https://www.tasnimnews.ir/en/news/2026/10/25/3731598/iran-downs-us-lucas-drone"
+      ]
+    },
+    {
+      "query": "travis etienne",
+      "approx_searches": "200+",
+      "published_at": "2026-10-25T13:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/travis-etienne-injury-163055669.html",
+        "https://www.aol.com/articles/happened-travis-etienne-jr-return-121244000.html",
+        "https://heavy.com/sports/nfl/new-orleans-saints/when-travis-etienne-coming-back-saints-rb-injury-timeline/"
+      ]
+    },
+    {
+      "query": "nfl network",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-25T13:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50249972/week-7-predictions-upsets-fantasy-sleepers-stats-2026",
+        "https://www.cbssports.com/nfl/news/how-to-bet-on-2026-nfl-week-7-betting-odds-tips-trends-schedule-game-previews-sportsbook-promos-offers/",
+        "https://www.thefantasyfootballers.com/dfs/nfl-dfs-draftkings-gpp-picks-week-7-fantasy-football-6/"
+      ]
+    },
+    {
+      "query": "palace vs newcastle",
+      "approx_searches": "500+",
+      "published_at": "2026-10-25T13:30:00Z",
+      "related_news_urls": [
+        "https://www.goal.com/en-us/news/watch-live-stream-crystal-palace-newcastle-united-free/blt7d21cb0c63302a15",
+        "https://www.town.shodoshima.lg.jp/section/VR_choseiyoran/shodoshima349.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vYWxsYmxhY2tzdndhbGxhYmllczIuZ2l0aHViLmlvL210cC91Y2wueG1sIi8+PC9rcnBhbm8+&id=video-newcastle-v-palace-match-lie-vkcfanm",
+        "https://www.vavel.com/en-us/soccer/2026/10/25/1276588-crystal-palace-vs-newcastle-live-score-premier-league-2026-27.html"
+      ]
+    },
+    {
+      "query": "chase young",
+      "approx_searches": "200+",
+      "published_at": "2026-10-25T13:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chase-young-christen-miller-were-fined-for-violent-gestures-on-same-play",
+        "https://sports.yahoo.com/articles/nfl-fines-giants-thomas-fidone-115532332.html",
+        "https://heavy.com/sports/nfl/new-york-giants/nfl-announces-punishment-giants-player/"
+      ]
+    },
+    {
+      "query": "monaco vs losc",
+      "approx_searches": "200+",
+      "published_at": "2026-10-25T13:30:00Z",
+      "related_news_urls": [
+        "https://www.france24.com/fr/info-en-continu/20261025-ligue-1-rebond-mon%C3%A9gasque-attendu-avec-camara-en-leader",
+        "https://www.footmercato.net/a731099431492767872-as-monaco-lille-osc-les-compositions-officielles",
+        "https://www.eurosport.fr/football/ligue-1/2026-2027/live-monaco-lille-osc_mtc21875522/live-commentary.shtml"
+      ]
+    },
+    {
+      "query": "kellen moore",
+      "approx_searches": "200+",
+      "published_at": "2026-10-25T13:30:00Z",
+      "related_news_urls": [
+        "https://triblive.com/sports/first-call-mike-mccarthy-faces-former-assistant-in-france-kyle-dubas-to-provide-update-on-ben-kindel/",
+        "https://sports.yahoo.com/videos/kellen-moore-outcoach-mike-mccarthy-010411826.html",
+        "https://steelersdepot.com/2026/10/saints-head-coach-kellen-moore-opens-up-about-what-he-learned-under-mike-mccarthy/"
       ]
     }
   ]
