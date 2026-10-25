@@ -244,6 +244,12 @@ test('selected repository pins both writer and verification jobs',()=>{
  assert.throws(()=>makeJobs('Fix menu','another-owner/repo'),/explicit_owner_repository_required/);
 });
 
+test('speech rejects unverified AI tool-call envelopes',()=>{
+ const {speechText}=require('../bubbles-brain-actions.js');
+ assert.equal(speechText('{"tool":"github","action":"read_file","parameters":{"repository":"www-infinity4/QuantaPhi"}}'),
+  'The requested action has not been verified.');
+ assert.equal(speechText('Recording started.'),'Recording started.');
+});
 test('speech omits internal IDs but preserves useful ordinary numbers',()=>{
  const {speechText}=require('../bubbles-brain-actions.js');
  const spoken=speechText('Ticket 39214848817 TASK-9921 IW-20261019-A1B2C3D4 12345678-abcd-1234-abcd-123456789abc '+ 'a'.repeat(40)+'. Build uses Android 35 and 2 files.');
