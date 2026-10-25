@@ -13,7 +13,7 @@ function route(card){
 }
 function previewUrl(card){return new URL(route(card),location.origin).href}
 function notify(host,s){host.textContent=s}
-export function mountCardActions(host,card){
+export function mountCardActions(host,card,options={}){
  if(!host||!card)return;
  const id=String(card.id||'').replace(/[^a-z0-9-]/g,'').slice(0,90);
  if(!id)return;
@@ -76,7 +76,7 @@ export function mountCardActions(host,card){
   }
   location.assign(destination);
  });
- bar.append(controls,search,status);host.append(bar);return bar;
+ bar.append(controls);if(options.showSearch!==false)bar.append(search);bar.append(status);host.append(bar);return bar;
 }
 function restoreDraft(){
  let request;try{request=sessionStorage.getItem(STORE_DRAFT)}catch{return}
