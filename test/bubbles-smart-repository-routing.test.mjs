@@ -20,6 +20,13 @@ test('Bubbles voice/APK requests route to the actual QuantaPhi source, not a mad
  assert.equal(r.confidence,'high');
  assert.equal(r.catalogSize,6);
 });
+test('ordinary site cards and repairs resolve to QuantaPhi without a repo question',()=>{
+ for(const request of ['Fix the Walmart card on the homepage','Build the Fox One quick card','Repair the ShopPhi post button','Improve our card carousel']){
+  const r=selectRepositories(request,catalog);
+  assert.deepEqual(r.selection,['www-infinity4/QuantaPhi'],request);
+  assert.equal(r.requiresReview,false,request);
+ }
+});
 test('named repositories outrank incidental project names',()=>{
  const r=selectRepositories('Fix www-infinity4/WidgetPhi card inside QuantaPhi',catalog);
  assert.deepEqual(r.selection,['www-infinity4/WidgetPhi']);
