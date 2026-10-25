@@ -14,7 +14,7 @@ test('standalone Bubbles loads wallet and verified Robot Brain ahead of chat',()
 test('work is routed only for explicit requests outside embedded mode',()=>{
  assert.match(js,/function isOwnerWorkRequest\(text\)/);
  assert.match(js,/if\(!embedded&&isOwnerWorkRequest\(request\)\)/);
- assert.match(js,/submitWork\(request,'explicit-user-command'\)/);
+ assert.match(js,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
  assert.match(js,/window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready/);
 });
 
