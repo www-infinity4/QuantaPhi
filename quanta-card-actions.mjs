@@ -88,7 +88,8 @@ export function mountCardActions(host,card){
   [['Google','google'],['Bing','bing'],['Videos','videos']];
  const quick=element('div','qca-quick-search');
  quick.setAttribute('aria-label','Search for '+title);
- const heading=element('span','qca-search-label','Quick Search · '+title);
+ const heading=element('span','qca-search-label','Quick Search');
+ heading.title='Search for '+title;
  const links=element('div','qca-search-links');
  for(const [label,kind] of searchKinds){
   const link=element('a','qca-button qca-search-link',label);
