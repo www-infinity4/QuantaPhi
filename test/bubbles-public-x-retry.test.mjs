@@ -5,7 +5,7 @@ const item='<div role="link" data-href="/YahooPingcwlz/status/211335212942773064
 function envWith(responses){
  const statements=[],calls=[];
  return {env:{BROWSER:{async quickAction(op,args){
-  assert.equal(op,'content');calls.push(args.waitForTimeout);return new Response(responses.shift());
+  assert.equal(op,'content');calls.push(args.waitForTimeout);return Response.json({success:true,result:responses.shift()});
  }},DB:{prepare(sql){return{bind(...args){statements.push({sql,args});return{
   async run(){return {meta:{changes:1}}}
  }}}}}},
