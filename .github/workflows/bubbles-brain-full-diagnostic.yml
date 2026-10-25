@@ -16,6 +16,8 @@ on:
       - 'bubbles-brain-actions.js'
       - 'robot-brain-owner.js'
       - 'workers/infinity-brain-clock/**'
+      - 'continuity/**'
+      - 'test/continuity-*.test.mjs'
       - 'workers/bubbles-tools/**'
       - 'android/bubbles-overlay/**'
       - 'test/bubbles-*.test.*'
@@ -32,6 +34,8 @@ on:
       - 'bubbles-brain-actions.js'
       - 'robot-brain-owner.js'
       - 'workers/infinity-brain-clock/**'
+      - 'continuity/**'
+      - 'test/continuity-*.test.mjs'
       - 'workers/bubbles-tools/**'
       - 'android/bubbles-overlay/**'
 
@@ -78,6 +82,8 @@ jobs:
             test/brain-assigned-job-scope.test.mjs \
             test/brain-color-core.test.mjs \
             test/brain-clock.test.mjs \
+            test/continuity-snapshot.test.mjs \
+            test/continuity-client-model.test.mjs \
             test/bubbles-owner-history-draft.test.mjs \
             test/bubbles-owner-clock.test.mjs \
             test/brain-merge-receipt.test.mjs \
