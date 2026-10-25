@@ -297,7 +297,7 @@ function qpShareResponse(incoming) {
   try{const next=new URL(provided,CANONICAL_ORIGIN);if(next.origin===CANONICAL_ORIGIN && !next.pathname.startsWith('/q-share')){destination.pathname=next.pathname;destination.search=next.search;destination.hash=next.hash;}}
   catch {}
  }
- const canonical=new URL(incoming);canonical.hash='';
+ const canonical=product?new URL('/q-share?card='+encodeURIComponent(product.id),CANONICAL_ORIGIN):new URL(incoming);canonical.hash='';
  const tags=[
   '<!doctype html><html lang="en"><head><meta charset="utf-8">',
   '<meta name="viewport" content="width=device-width,initial-scale=1">',
