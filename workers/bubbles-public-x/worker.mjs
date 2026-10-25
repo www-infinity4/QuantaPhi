@@ -44,7 +44,10 @@ export async function scanPublicX(env){
    const response=await env.BROWSER.quickAction('content',{url:PROFILE,waitForTimeout,
     gotoOptions:{waitUntil:'domcontentloaded',timeout:25000}});
    if(!response.ok)throw Error('browser_http_'+response.status);
-   observed=parsePublicProfile(await response.text());
+   // The browser binding returns {success,result: renderedHTML}, not raw HTML.
+   const payload=await response.json();
+   if(payload?.success!==true||typeof payload.result!=='string')throw Error('browser_content_payload_invalid');
+   observed=parsePublicProfile(payload.result);
    if(observed.length)break;
   }
   if(!observed.length)throw Error('no_visible_public_owner_posts_after_retry');
