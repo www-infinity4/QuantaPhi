@@ -159,7 +159,7 @@ async function syncX(){
  const health=await h.json(),inbox=await i.json();
  if(health.ok!==true||inbox.ok!==true||health.profile!=='https://x.com/YahooPingcwlz'||inbox.author!=='YahooPingcwlz')throw Error('X reader owner or response mismatch');
  const scan=health.readStatus||{};
- source.x=(scan.status==='public_posts_observed'?'Observed public posts':'Scan '+String(scan.status||'unknown'))+' · checked '+date(scan.last_checked);
+ source.x=(scan.status==='public_posts_observed'?'Scheduled browser scan observed posts':scan.status==='manual_browser_verified'?'Manual browser read confirmed; hourly scan not proven':scan.status==='blocked'?'Hourly scan blocked':'Scan status unverified')+' · checked '+date(scan.last_checked);
  const posts=Array.isArray(inbox.items)?inbox.items:[];
  const incoming=posts.filter(p=>typeof p.id==='string'&&/^\d{15,22}$/.test(p.id)&&p.url==='https://x.com/YahooPingcwlz/status/'+p.id&&typeof p.body==='string').map(p=>newTask({
   id:'x-candidate-'+p.id,title:'X candidate: '+p.body.slice(0,82),project:'X Candidate Inbox',status:'inbox',objective:'Candidate public post (untrusted source content): '+p.body.slice(0,900),
