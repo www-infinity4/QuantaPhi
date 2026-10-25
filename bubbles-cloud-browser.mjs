@@ -6,7 +6,7 @@ let panelInstance=null, agent=null;
 const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',chatgpt:'https://chatgpt.com/',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
 export function browserSpeechIntent(input){
  const utterance=String(input||'').trim().replace(/^(?:(?:hey|okay|please|bubbles)[,\s]+)+/i,'');
- const continueGPT=/\\b(?:continue|resume|restart|finish)\\b[\\s\\S]{0,80}\\b(?:chat\\s?gpt|gpt)\\b[\\s\\S]{0,80}\\b(?:conversations?|chats?|threads?|sessions?)\\b/i.test(utterance);
+ const continueGPT=/\b(?:continue|resume|restart|finish)\b[\s\S]{0,80}\b(?:chat\s?gpt|gpt)\b[\s\S]{0,80}\b(?:conversations?|chats?|threads?|sessions?)\b/i.test(utterance);
  if(continueGPT)return {action:'continue_chatgpt',show:true};
  const browser=/\b(?:cloud|remote|chrome)\s+browser\b|\bbrowser run\b|\bin (?:the )?browser\b/i.test(utterance);
  const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|chat\s?gpt|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
