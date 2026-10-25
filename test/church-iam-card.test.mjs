@@ -38,17 +38,17 @@ test('Sunday promo uses actual website-hosted image and standard actions, clear 
  assert.match(style,/\.iam-links/);
  assert.match(style,/iam-sheen/);
  assert.match(style,/prefers-reduced-motion/);
- assert.match(page,/church-iam-card\.css\?v=20261024-sunday1/);
- assert.match(page,/church-iam-card\.js\?v=20261024-sunday1/);
+ assert.match(page,/church-iam-card\.css\?v=20261024-photo2/);
+ assert.match(page,/church-iam-card\.js\?v=20261024-photo2/);
 });
 
-test('direct portrait source, verified backup and accessible fallback replace Cloudimage proxy',()=>{
- assert.doesNotMatch(page,/cloudimg\\.io/);
- assert.match(page,/src="https:\\/\\/cdn\\.ccard\\.to\\/static\\/media\\/2024\\/08\\/18\\/aitvlufi/);
- assert.match(module,/cdn\\.theorg\\.com\\/82a317f7/);
- assert.match(module,/portrait\\.addEventListener\\('error',portraitError\\)/);
- assert.match(module,/portrait\\.complete&&!portrait\\.naturalWidth/);
- assert.match(style,/iam-photo-unavailable/);
- assert.match(style,/body\\.oracle-quanta \\.iam-card \\.iam-copy/);
- assert.doesNotMatch(page,/onerror="this\\.style\\.display='none'"/);
+test('direct portrait source, verified backup and readable fallback replace Cloudimage proxy',()=>{
+ assert.ok(!page.includes('cloudimg.io'));
+ assert.ok(page.includes('src="https://cdn.ccard.to/static/media/2024/08/18/aitvlufi'));
+ assert.ok(module.includes('cdn.theorg.com/82a317f7'));
+ assert.ok(module.includes("portrait.addEventListener('error',portraitError)"));
+ assert.ok(module.includes('portrait.complete&&!portrait.naturalWidth'));
+ assert.ok(style.includes('iam-photo-unavailable'));
+ assert.ok(style.includes('body.oracle-quanta .iam-card .iam-copy'));
+ assert.ok(!page.includes('onerror="this.style.display'));
 });
