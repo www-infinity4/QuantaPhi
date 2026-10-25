@@ -2052,6 +2052,30 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ // One character from the owner or the Android Bubbles bridge resumes
+ // existing work. Archived text is context, NEVER new build authorization.
+ if(spoken==='*'){
+  display(spoken,'you');clearSentComposer();
+  messages.push({role:'user',text:spoken});persistChat();
+  busy=true;send.disabled=true;setOrbState('busy');
+  let reply;
+  try{
+   if(embedded)throw Error('verified_owner_session_required');
+   const module=await import('/bubbles-star-continuation.mjs?v=20261025-star1');
+   const result=await module.continueSavedWork({
+    fetcher:bubblesFetch,ownerHeaders:verifiedOwnerHeaders,base:BRAIN,maxSlots:8
+   });
+   reply=module.continuationReply(result);
+  }catch(error){
+   reply='Blocked: Bubbles could not verify and resume existing owner work ('+
+    String(error.message||error).replace(/_/g,' ').slice(0,115)+'). No build or GitHub write has been confirmed.';
+  }
+  display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=reply;
+  else if(config.voice&&!nativeOverlay)speakText(reply);
+  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');drainVoiceTurns();
+  return;
+ }
  // Keep the existing Bubbles chat. A typed command on Android requests a
  // native confirmation dialog, not a second chat or remote Linux sandbox.
  if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\s+)?(?:(?:test|check|verify)(?:\s+the)?\s+(?:python(?:\s+(?:in|with))?\s+termux|python|termux(?:\s+python)?)|(?:run|start|try)(?:\s+a)?\s+python\s+(?:test|diagnostic)|(?:does\s+python\s+work|is\s+python\s+(?:working|ready))(?:\s+in\s+termux)?)[.!?]*$/i.test(spoken)){
