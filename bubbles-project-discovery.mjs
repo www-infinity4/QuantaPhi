@@ -33,6 +33,18 @@ export function namedCardFor(request){
  possible.sort((a,b)=>b.alias.length-a.alias.length);
  return possible[0]?.card||null;
 }
+// Use recent owner conversation to resolve "fix that card" without making the
+// user repeat a repository name. This lookup never authorizes a write.
+export function sourceQueryFor(request,history=[]){
+ const q=String(request||'').trim();
+ if(discoveryTerms(q).length||!/\b(?:it|that|this|card|one|thing)\b/i.test(q))return q;
+ for(const row of (Array.isArray(history)?history:[]).slice(-8).reverse()){
+  if(row?.role!=='user'||typeof row.text!=='string')continue;
+  const card=namedCardFor(row.text);
+  if(card)return q+' '+card.title;
+ }
+ return q;
+}
 function rankSource(hit,terms,expected){
  const path=String(hit.path||'').toLowerCase(),excerpt=String(hit.excerpt||'').toLowerCase();
  const joined=path+' '+excerpt;
