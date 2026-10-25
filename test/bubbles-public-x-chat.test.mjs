@@ -22,3 +22,16 @@ test('successful scan is distinguished from blocked and foreign post links are d
  const b=await(await worker.fetch(req('Show my latest tweets'),env)).json();
  assert.equal(b.receipt.status,'complete');assert.equal(b.items.length,0);assert.equal(b.receipt.cached,true);
 });
+
+test('manual Cloudflare browser observation is reported accurately rather than as a blocked scan',async()=>{
+ const env={PUBLIC_X:{fetch:async r=>Response.json(r.url.endsWith('/health')?{
+  ok:true,profile:'https://x.com/YahooPingcwlz',readStatus:{status:'manual_browser_verified',last_success:'2026-10-25T04:42:03Z'}
+ }:{ok:true,author:'YahooPingcwlz',items:[{id:'2114207111101997487',url:'https://x.com/YahooPingcwlz/status/2114207111101997487',body:'#bubbles research web design'}]})}};
+ const data=await(await worker.fetch(req('Read my Twitter posts'),env)).json();
+ assert.equal(data.receipt.status,'partial');
+ assert.equal(data.receipt.lastScanProvenance,'manual_browser');
+ assert.equal(data.receipt.freshScanTriggered,false);
+ assert.match(data.output,/independent manual cloud-browser scan observed public posts/);
+ assert.doesNotMatch(data.output,/latest scan was blocked/);
+ assert.equal(data.items.length,1);
+});
