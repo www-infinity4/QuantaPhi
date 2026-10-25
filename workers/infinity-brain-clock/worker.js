@@ -1469,7 +1469,11 @@ export default{
      try{const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));const started=await clock.fetch('https://clock.internal/run-next',{method:'POST',body:JSON.stringify(result.result.runnerTarget||{ticketId:result.result.ticket?.id||body.id})});result.result.execution=await started.json();}catch{result.result.execution={status:'scheduled_fallback'};}
     }
     return output(request,result.result,result.status);
-   }catch(error){return output(request,{ok:false,error:'owner_ticket_request_failed'},500)}
+   }catch(error){
+    if(path==='/work/continuity'&&error?.status===413)return output(request,{ok:false,error:'request_too_large'},413);
+    if(path==='/work/continuity'&&error instanceof SyntaxError)return output(request,{ok:false,error:'invalid_continuity_request'},400);
+    return output(request,{ok:false,error:'owner_ticket_request_failed'},500);
+   }
   }
   if((path==='/work/evidence'||path==='/work/evidence/list')&&request.method==='GET'){
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
