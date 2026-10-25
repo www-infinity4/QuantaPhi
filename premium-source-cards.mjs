@@ -97,7 +97,7 @@ export function mountCollectorGallery(host,card){
   previous.disabled=selected===0;next.disabled=selected===items.length-1;
   mountCardActions(itemActions,{
    id:card.id+'-spotlight-'+item.id,name:item.title,category:card.category,
-   url:item.imageSource,featureUrl:item.imageSource,
+   url:item.imageSource,featureUrl:item.imageSource,titleQuickSearch:true,
    route:'/?card='+encodeURIComponent(card.id)+'&spotlight='+encodeURIComponent(item.id)
   });
  }
