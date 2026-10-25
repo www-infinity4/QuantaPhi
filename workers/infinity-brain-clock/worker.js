@@ -145,8 +145,10 @@ export class BrainClock extends DurableObject{
  async acceptSourceReview({lease,body,runUrl,engine}){
   // This path is OIDC-authenticated by the outer Worker and never authorizes
   // a GitHub write, payout, new credential, owner approval or production claim.
-  if(!engine||!lease.engine||lease.job?.sourceReview?.kind!=='source_review_only')
-   throw Error('source_review_runner_identity_required');
+  if (!engine || !lease.engine) throw Error('source_review_runner_identity_required');
+  const kind = lease.job?.sourceReview?.kind;
+  if (kind && kind !== 'source_review_only')
+    throw Error('source_review_runner_identity_required');
   const pinned=lease.job.sourceReview;
   const tentative=validatePinkSourceReceipt({review:pinned,job:lease.job,body});
   const fresh=await this.env.WORK_DB.prepare(
