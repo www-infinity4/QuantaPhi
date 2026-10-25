@@ -30,7 +30,20 @@ test('malformed or absent subtask instructions never fall back to an entire tick
  assert.throws(()=>scopedRepositoryJob({...webhook,instructions:'  '}),/instructions_missing/);
  assert.throws(()=>scopedRepositoryJob(null),/assigned_job_missing/);
  const oversized={...webhook,instructions:'a'.repeat(17000),acceptance:['a'.repeat(900)]};
- const bounded=scopedRepositoryJob(oversized);
- assert.equal(bounded.instructions.length,9500);
- assert.equal(bounded.acceptance[0].length,800);
+ assert.throws(()=>scopedRepositoryJob(oversized),/instructions_too_large/);
+ assert.throws(()=>scopedRepositoryJob({...webhook,acceptance:['a'.repeat(701)]}),/acceptance_invalid/);
+});
+
+test('all intake-accepted instructions and all twenty acceptance items reach the assigned model intact',()=>{
+ const tail='FINAL OWNER REQUIREMENT: retain the real image and verify the actual result.';
+ const instructions='x'.repeat(12000-tail.length)+tail;
+ const acceptance=Array.from({length:20},(_,i)=>'Acceptance '+(i+1)+': verify actual behavior');
+ const scoped=scopedRepositoryJob({...webhook,instructions,acceptance});
+ assert.equal(scoped.instructions,instructions);assert.ok(scoped.instructions.endsWith(tail));
+ assert.deepEqual(scoped.acceptance,acceptance);assert.equal(scoped.acceptance[19],acceptance[19]);
+});
+test('oversized or malformed acceptance is rejected precisely instead of dropped or shortened',()=>{
+ for(const acceptance of [Array(21).fill('criterion'),['valid',42],['x'.repeat(701)],'criteria'])
+  assert.throws(()=>scopedRepositoryJob({...webhook,acceptance}),/assigned_job_acceptance_invalid/);
+ assert.equal(scopedRepositoryJob({...webhook,acceptance:['x'.repeat(700)]}).acceptance[0].length,700);
 });
