@@ -136,6 +136,35 @@ test('credential entry may wait while alarms keep the same Chrome session availa
  assert.equal(f.sends.length,0);assert.equal(f.targets.length,1);assert.ok(f.alarm>f.now);
 });
 
+test('background sign-in follows an official Google popup and then the returned ChatGPT tab',async()=>{
+ const f=fixture({count:1});await f.start();let phase=0;
+ f.onAction=async args=>{
+  if(args.action==='chatgpt_signin'&&phase===0){
+   assert.equal(args.targetId,'history');phase=1;
+   f.targets.push({id:'google',type:'page',url:'https://accounts.google.com/v3/signin/identifier?app_domain=https%3A%2F%2Fauth.openai.com'});
+   return {ok:true,state:'progress'};
+  }
+  if(args.action==='chatgpt_signin'&&phase===1){
+   assert.equal(args.targetId,'google');phase=2;return {ok:true,state:'needs_owner'};
+  }
+  if(args.action==='chatgpt_signin'&&phase===2){
+   assert.equal(args.targetId,'google');phase=3;return {ok:true,state:'needs_owner'};
+  }
+  if(args.action==='chatgpt_signin'&&phase===3){
+   assert.equal(args.targetId,'returned');return {ok:true,state:'history_ready',accountVerified:true};
+  }
+  assert.equal(args.action,'chatgpt_scan');assert.equal(args.targetId,'returned');
+  return {ok:true,conversations:[{url:url(0)}]};
+ };
+ await f.make().tick();await f.make().tick();
+ f.targets.find(t=>t.id==='google').url='https://accounts.google.com/v3/signin/challenge/pwd';
+ await f.make().tick();
+ f.targets.splice(0,f.targets.length,{id:'returned',type:'page',url:'https://chatgpt.com/'});
+ await f.make().tick();
+ assert.equal((await f.storage.get(KEY)).historyTargetId,'returned');
+ assert.equal((await f.make().status()).selected,1);
+});
+
 test('private message text and authentication artifacts do not enter durable checkpoints or status',async()=>{
  const f=fixture({count:1});await f.start();await f.make().tick();await f.make().tick();
  const persisted=JSON.stringify(await f.storage.get(KEY));

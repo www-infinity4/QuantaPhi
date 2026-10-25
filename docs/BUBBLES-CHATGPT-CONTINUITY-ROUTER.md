@@ -11,6 +11,10 @@ secret. The identifier is returned only by the existing owner-authenticated
 `POST /v1/browser/chatgpt/account` endpoint, with no-store responses. Passwords,
 MFA, CAPTCHA and unexpected consent stay in the owner's live sign-in page.
 
+OAuth popups must show an OpenAI redirect/app-domain relationship. Verified
+authentication target IDs remain scoped to that flow across later redirects;
+unrelated official Google tabs cannot become the login destination.
+
 Bubbles reuses the current approved Browser Run session. A scoped server job
 keeps that session active after the Bubbles page or Android WebView closes.
 The Durable Object retains its session/target references and reconnects after

@@ -67,6 +67,9 @@ test('CDP only sends a continuation after guarded inspection and verifies owner-
  const ui=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
  assert.match(cdp,/Input\.insertText/);
  assert.match(cdp,/submissionVerified:true/);
+ assert.match(cdp,/import \{chooseContinuation\} from '\.\.\/\.\.\/bubbles-chatgpt-continuity\.mjs'/);
+ assert.match(cdp,/chooseContinuation\(current,\{allowRevisit:true\}\)/);
+ assert.match(cdp,/continuation_not_eligible/);
  assert.match(tool,/chatgpt_resume/);
  assert.match(worker,/chatgpt_resume/);
  assert.match(ui,/Continue latest 8 ChatGPT conversations/);

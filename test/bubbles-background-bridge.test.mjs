@@ -35,7 +35,9 @@ async function exercise({approved,proof=true,slow=false,restore=false}){
    if(url.endsWith('/complete'))return Response.json({ok:true,status:'complete'});
    throw Error('unexpected_request');
   };
-  const source=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
+  const selectorURL=new URL('../bubbles-chatgpt-continuity.mjs',import.meta.url).href;
+  const source=fs.readFileSync('bubbles-cloud-browser.mjs','utf8')
+   .replace("from './bubbles-chatgpt-continuity.mjs'","from '"+selectorURL+"'");
   const mod=await import('data:text/javascript;base64,'+Buffer.from(source+'\n// '+Math.random()).toString('base64'));
   mod.mount({host:new Element(),ownerHeaders:async()=>proof?{Authorization:'Bearer owner-fixture'}:null});
   for(let i=0;i<5;i++)await new Promise(resolve=>setImmediate(resolve));

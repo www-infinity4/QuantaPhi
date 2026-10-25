@@ -1,5 +1,5 @@
 import {browserAction} from '../bubbles-tools/browser-cdp.mjs';
-import {chooseContinuation,nextEightConversations,snapshotKey,classifyReply} from '../../bubbles-chatgpt-continuity.mjs';
+import {chooseContinuation,nextEightConversations,snapshotKey,classifyReply,selectChatGPTSignInTab} from '../../bubbles-chatgpt-continuity.mjs';
 
 const KEY='owner-chatgpt-continuation-v1',TICK=15000,COOLDOWN=120000;
 const hash=async text=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',
@@ -20,7 +20,7 @@ export class ContinuationSupervisor {
  async context(){
   const state=await this.storage.get(KEY);
   if(!state)return null;
-  return {sessionId:state.sessionId,targetId:state.historyTargetId};
+  return {sessionId:state.sessionId,targetId:state.chats.length?state.historyTargetId:state.signInTargetId||state.historyTargetId};
  }
  async start({sessionId,targetId}){
   if(!/^[a-f0-9-]{36}$/i.test(sessionId||'')||typeof targetId!=='string'||!targetId||targetId.length>200)
@@ -37,7 +37,7 @@ export class ContinuationSupervisor {
    await this.storage.setAlarm(this.now()+TICK);return summary(current);
   }
   const state={id:crypto.randomUUID(),running:true,phase:'awaiting_signin',sessionId,
-   historyTargetId:targetId,expiresAt:grant.expiresAt,cursor:0,chats:[],checked:0,
+   historyTargetId:targetId,trustedAuthTargetIds:[],expiresAt:grant.expiresAt,cursor:0,chats:[],checked:0,
    submitted:0,repliesObserved:0,lastCheckedAt:null};
   await this.storage.transaction(async tx=>{await tx.put(KEY,state);await tx.setAlarm(this.now()+TICK);});
   return summary(state);
@@ -92,11 +92,22 @@ export class ContinuationSupervisor {
     return result;
    };
    if(!state.chats.length){
-    const login=await act('chatgpt_signin',{targetId:state.historyTargetId});
+    const tabs=await this.env.BROWSER.devtools.listTargets(state.sessionId);
+    const trustedAuthTargetIds=state.trustedAuthTargetIds||[];
+    const selectedTab=selectChatGPTSignInTab(tabs,state.signInTargetId||state.historyTargetId,{trustedAuthTargetIds});
+    if(!selectedTab.targetId){
+     state.phase='awaiting_signin';state.error=selectedTab.state;await this.save(state,60000);return;
+    }
+    if(selectedTab.state==='authentication_page'&&!trustedAuthTargetIds.includes(selectedTab.targetId))
+     trustedAuthTargetIds.push(selectedTab.targetId);
+    state.trustedAuthTargetIds=trustedAuthTargetIds;
+    state.signInTargetId=selectedTab.targetId;
+    const login=await act('chatgpt_signin',{targetId:state.signInTargetId});
     if(login.state!=='history_ready'||login.accountVerified!==true){
      state.phase=login.state==='progress'?'signing_in':'awaiting_signin';
      state.lastCheckedAt=this.now();await this.save(state,login.state==='progress'?TICK:60000);return;
     }
+    state.historyTargetId=state.signInTargetId;delete state.error;
     const history=await act('chatgpt_scan',{targetId:state.historyTargetId});
     const selected=nextEightConversations(history.conversations).conversations;
     if(!selected.length){state.phase='awaiting_history';await this.save(state,60000);return;}

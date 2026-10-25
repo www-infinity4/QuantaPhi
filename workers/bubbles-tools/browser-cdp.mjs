@@ -1,6 +1,7 @@
 import {browserReadExpression,browserClickExpression} from './browser-controls.mjs';
 import {chatgptInspectExpression,chatgptPrepareExpression,chatgptSendExpression,scopedChatGPTExpression} from './chatgpt-dom.mjs';
 import {chatgptLoginExpression} from './chatgpt-login.mjs';
+import {chooseContinuation} from '../../bubbles-chatgpt-continuity.mjs';
 // Bounded Chrome DevTools actions used by authenticated Bubbles conversation.
 // This is a real Browser Run CDP connection; no model-generated JavaScript is evaluated.
 let sequence=0;
@@ -71,6 +72,11 @@ export async function browserAction(env,{sessionId,action,targetId='',url='',lab
    if(current.latestRole!=='assistant')return {ok:false,error:'assistant_reply_required'};
    if(!Number.isSafeInteger(messageCount)||messageCount!==current.messageCount)
     return {ok:false,error:'conversation_turn_changed'};
+   // Apply the same unfinished-work and owner-input rules in the Worker.
+   // Direct browser API requests must not bypass the UI's eligibility check.
+   const eligibility=chooseContinuation(current,{allowRevisit:true});
+   if(eligibility.state!=='ready')
+    return {ok:false,error:'continuation_not_eligible',reason:eligibility.reason};
    if(current.generating||current.draftPresent)
     return {ok:false,error:'conversation_not_idle'};
    const continuation='*';

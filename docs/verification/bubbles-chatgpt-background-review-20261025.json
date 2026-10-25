@@ -4,7 +4,7 @@
   "role": "Pink verification specialist",
   "sourceBase": "8b3734d0ff8eef55a10ca5cc37152e613d1d5417",
   "decision": "approved_for_staging",
-  "reviewerTestsPassed": 49,
+  "reviewerTestsPassed": 57,
   "rewrittenPreviewScriptsCompiled": 36,
   "resolvedFindings": [
     "Final synchronous exact conversation/turn/editor claim guards",
@@ -12,20 +12,24 @@
     "Stop during grant checks blocks sends",
     "History selection requires the actual sidebar",
     "Confirmed ended-session recovery and stale target reset",
-    "Fresh owner view returns a reusable browser proof"
+    "Fresh owner view returns a reusable browser proof",
+    "Worker enforces unfinished-work policy for direct API callers",
+    "OAuth popups require OpenAI flow correlation; verified targets survive opaque redirects"
   ],
   "liveGoogleSignIn": "unverified",
   "liveAlarmExecution": "unverified",
   "realChatGPTSubmission": "unverified",
   "files": {
-    "bubbles-cloud-browser.mjs": "269e3afe46c60aceb370b24016ac6ea17b354582b8aed56d22b9e2b8cc3ab01a",
-    "workers/bubbles-cloud-browser/continuation.mjs": "9ecbd3462cafb2c0e2c1e2ffc93ca5cdd1b114a4d41ebda701c175da09f7e62a",
+    "bubbles-cloud-browser.mjs": "fd17f83e9b148ccffc7301d2b932deb35bbb1864129c3620220fba0398c68bbd",
+    "workers/bubbles-cloud-browser/continuation.mjs": "3762b45bbc6ecb914c61107f7747a90bb0018056c2269c08e1cc43beae11c102",
     "workers/bubbles-cloud-browser/consent.mjs": "8841ffbc905a7f520aed149b2f9c60cdb78a8ecbb76be071da11c8ad83e0ec62",
     "workers/bubbles-cloud-browser/worker.mjs": "f5c224ba684dab510e7806868b4bf2a45cfbf249cc622614c22f1bc00558f6d8",
     "workers/bubbles-cloud-browser/preview.mjs": "5feaa890f8d0ed9ebe35d6c751ab3e35cf3c7c2ad7a99f80a9f87f51d8a076ae",
-    "workers/bubbles-tools/browser-cdp.mjs": "49b9ecf54258eff5449162d80207f080ba47da0ec3c94196924b022a98ee122f",
+    "workers/bubbles-tools/browser-cdp.mjs": "c900cbee1b0a358b461a4396b59afe828cb2250553b9b733c4a9cb7145b96568",
     "workers/bubbles-tools/browser.mjs": "fc2ff7b0715a3909984e6a192344bcd62eb2109222fe987815cf78dfe0c4c2fe",
     "workers/bubbles-tools/chatgpt-dom.mjs": "9fd6448a39b6c9481e6d629bc0358a7858101e555d30f7d7ff4b2e53e9d726b6",
-    "workers/bubbles-tools/chatgpt-login.mjs": "efe9d90caeeb19fe7e0d03a9978c1ac2f64ea5a07135b418442ac7ee6133daea"
-  }
+    "workers/bubbles-tools/chatgpt-login.mjs": "efe9d90caeeb19fe7e0d03a9978c1ac2f64ea5a07135b418442ac7ee6133daea",
+    "bubbles-chatgpt-continuity.mjs": "5f4c83e3e0e92b3c3a6d1c1cfe7dfe4a5f68b3dddfc3071dca47c86e9c476da9"
+  },
+  "concurrentBase": "ee36bb67ef4d36f56f3f966c946f543034d84b60"
 }

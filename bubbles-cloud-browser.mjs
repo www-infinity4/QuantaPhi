@@ -1,3 +1,4 @@
+import {selectChatGPTSignInTab} from './bubbles-chatgpt-continuity.mjs';
 // Bubbles owner-only interactive Cloudflare Browser Run panel.
 // The browser page is real hosted Chrome Live View, not an ordinary iframe
 // pretending to click cross-origin websites. Provider logins stay in Chrome.
@@ -218,7 +219,7 @@ export function mount({host,ownerHeaders,reveal=false}){
  }
  const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,cloudflare,chatgpt,gemini,phonePreview,desktopPreview])b.disabled=value;};
  const show=(result)=>{
-   if(result.sessionId&&state?.sessionId!==result.sessionId)historyTargetId='';
+   if(result.sessionId&&state?.sessionId!==result.sessionId){historyTargetId='';trustedAuthTargetIds.length=0;}
    if(result.sessionId)state={sessionId:result.sessionId,proof:result.proof||state?.proof,targetId:result.targetId||state?.targetId};
    if(result.url){
      const u=new URL(result.url);
@@ -342,6 +343,7 @@ export function mount({host,ownerHeaders,reveal=false}){
  // only starts/stops it and displays receipts; closing this page is harmless.
  let continuationRunning=false,continuationStarting=false,continuationPolling=false;
  let historyTargetId='',loginBusy=false;
+ const trustedAuthTargetIds=[];
  const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  function showContinuation(result){
   continuationRunning=result.running===true;
@@ -384,6 +386,11 @@ export function mount({host,ownerHeaders,reveal=false}){
   advanced.open=true;wrap.hidden=false;
   if(!signIn)return;
   for(let step=0;step<12;step++){
+   const live=await call('view');
+   const selected=selectChatGPTSignInTab(live.tabs,historyTargetId,{trustedAuthTargetIds});
+   if(!selected.targetId)throw Error(selected.state);
+   if(selected.state==='authentication_page'&&!trustedAuthTargetIds.includes(selected.targetId))trustedAuthTargetIds.push(selected.targetId);
+   historyTargetId=selected.targetId;
    const result=(await call('chatgpt_signin',{targetId:historyTargetId})).result;
    if(result?.state==='history_ready'&&result.accountVerified===true)return;
    if(result?.state==='needs_owner'){
