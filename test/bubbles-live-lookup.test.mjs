@@ -215,7 +215,7 @@ test('model-suggested tools never turn a repository repair or greeting into a re
  r=await call({request:'Hello Bubbles',mcp:true},env);
  data=await r.json();
  assert.equal(data.receipt.tool,'oracle.chat');
- assert.equal(selections,1);
+ assert.equal(selections,0,'greetings should avoid the redundant read-only AI selector');
  assert.equal(chats,2);
 });
 
