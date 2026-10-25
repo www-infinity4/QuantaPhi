@@ -182,3 +182,4 @@ $('#sync').addEventListener('click',()=>syncAll(false));
 $('#sync-x').addEventListener('click',()=>syncAll(true));
 render();
 persist();
+if(location.protocol==='https:'&&['quantaphi.org','www.quantaphi.org','continuity-preview.marvaseater.workers.dev'].includes(location.hostname))syncAll(true);
