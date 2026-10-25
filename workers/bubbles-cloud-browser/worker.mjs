@@ -110,6 +110,8 @@ export default {
    if(!env.CONSENT)return respond(origin,{ok:false,error:'consent_storage_unavailable'},503);
    const state=await consentStore(env).status();
    if(!state.enabled)return respond(origin,{ok:false,error:'browser_consent_required'},403);
+   if(['chatgpt_scan','chatgpt_resume'].includes(action)&&!(await consentStore(env).chatgptStatus()).enabled)
+    return respond(origin,{ok:false,error:'chatgpt_five_day_approval_required'},403);
   }
   return browserTool(request,env);
  }
