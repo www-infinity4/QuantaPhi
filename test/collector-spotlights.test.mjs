@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {COLLECTOR_SPOTLIGHTS,getCollectorSpotlights,validCollectorFeature} from '../collector-spotlights.mjs';
 import {PREMIUM_CARDS} from '../premium-source-cards.mjs';
+import {titleSearchPresets} from '../quanta-card-actions.mjs';
 
 test('Topps, Beckett and VAMWorld open with independently credited actual collectibles',()=>{
  const configured=new Set(PREMIUM_CARDS.map(c=>c.id));
@@ -36,4 +37,15 @@ test('Topps visual originates from official manufacturer product CDN',()=>{
 test('Unknown provider has no falsely featured photo',()=>{
  assert.equal(getCollectorSpotlights('not-real'),null);
  assert.equal(validCollectorFeature({image:'javascript:alert(1)',imageSource:'https://topps.com',title:'bad'}),false);
+});
+
+test('featured item has three real title-derived searches with no empty generic field',()=>{
+ const coin=titleSearchPresets({name:'1888-O VAM-1B4 Scarface',category:'Coin varieties'});
+ const card=titleSearchPresets({name:'2026 Topps Chrome Nolan McLean RC',category:'Trading cards'});
+ assert.equal(coin.length,3);assert.equal(card.length,3);
+ assert.equal(coin[0].query,'1888-O VAM-1B4 Scarface');
+ assert.match(coin[1].query,/die variety/);
+ assert.match(card[1].query,/checklist card number/);
+ assert.ok([...coin,...card].every(x=>x.label&&x.query.includes(x===coin[0]?'1888-O':x.query.includes('Topps')?'2026':'1888-O')));
+ assert.equal(titleSearchPresets({name:''}).length,0);
 });
