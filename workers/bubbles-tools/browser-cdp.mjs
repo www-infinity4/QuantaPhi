@@ -46,7 +46,7 @@ export async function browserAction(env,{sessionId,action,targetId='',url='',lab
  const targets=await env.BROWSER.devtools.listTargets(sessionId);
  const tab=target(targets,targetId);
  if(!tab)throw Error('browser_tab_not_found');
- if(!['read','navigate','click','type','viewport','chatgpt_scan','chatgpt_resume'].includes(action))throw Error('unsupported_browser_action');
+ if(!(['read','navigate','click','type','viewport'].includes(action)||['chatgpt_scan','chatgpt_resume'].includes(action)))throw Error('unsupported_browser_action');
  if(action==='viewport'&&!['phone','desktop'].includes(mode))throw Error('unsupported_browser_viewport');
  if(action==='navigate' && !url)throw Error('browser_url_required');
  if(action==='click' && (!label||label.length>100))throw Error('browser_label_required');
