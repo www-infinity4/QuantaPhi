@@ -105,7 +105,7 @@ export default {
    const raw=await request.clone().text();if(raw.length>4096)throw Error('too_large');
    action=JSON.parse(raw||'{}').action||'';
   }catch{return respond(origin,{ok:false,error:'invalid_request'},400);}
-  if(['read','navigate','click','type','viewport','chatgpt_scan','chatgpt_resume'].includes(action)){
+  if((['read','navigate','click','type','viewport'].includes(action)||['chatgpt_scan','chatgpt_resume'].includes(action))){
    if(!(await owner(request,env)))return respond(origin,{ok:false,error:'owner_authorization_required'},403);
    if(!env.CONSENT)return respond(origin,{ok:false,error:'consent_storage_unavailable'},503);
    const state=await consentStore(env).status();
