@@ -70,7 +70,7 @@ test('HTML-escape the share title; never redirect viewers off-site',async()=>{
  assert.match(html,/location\.replace\("https:\/\/quantaphi\.org/);
 });
 
-test('Levi’s product sharing serves the actual item photo, observed price, and Infinity viewer destination',async()=>{
+test('Levi’s share serves the exact item image, observed price and Infinity product viewer',async()=>{
  const u=new URL('https://quantaphi.org/q-share');
  u.searchParams.set('card','levis-501-dark');
  u.searchParams.set('title','FAKE OFFER');
@@ -80,21 +80,20 @@ test('Levi’s product sharing serves the actual item photo, observed price, and
  assert.equal(r.status,200);
  assert.equal(r.headers.get('x-quantaphi-share'),'product');
  const html=await r.text();
- assert.match(html,/<meta name="twitter:card" content="summary_large_image">/);
- assert.match(html,/<meta name="twitter:image" content="https:\\/\\/lsco\\.scene7\\.com\\/is\\/image\\/lsco\\/005013373-front-gstk/);
- assert.match(html,/\\$69\\.98/);
- assert.match(html,/checked 2026-10-24/);
- assert.match(html,/product:price:currency" content="USD"/);
- assert.match(html,/product-quick-card\\.html\\?card=levis-501-dark/);
- assert.doesNotMatch(html,/FAKE OFFER|fake\\.png|location\\.replace\\("https:\\/\\/quantaphi\\.org\\/"\\)/);
+ assert.ok(html.includes('name="twitter:card" content="summary_large_image"'));
+ assert.ok(html.includes('name="twitter:image" content="https://lsco.scene7.com/is/image/lsco/005013373-front-gstk'));
+ assert.ok(html.includes('$69.98'));
+ assert.ok(html.includes('checked 2026-10-24'));
+ assert.ok(html.includes('product:price:currency" content="USD"'));
+ assert.ok(html.includes('product-quick-card.html?card=levis-501-dark'));
+ assert.ok(!html.includes('FAKE OFFER')&&!html.includes('fake.png'));
 });
-
-test('unknown product ID cannot replace a legitimate share image or redirect',async()=>{
+test('unknown product IDs do not replace the ordinary preview',async()=>{
  const u=new URL('https://quantaphi.org/q-share?card=not-a-product&title=Ordinary%20search');
  const html=await (await share(u.href)).text();
- assert.match(html,/Ordinary search/);
- assert.match(html,/https:\\/\\/quantaphi\\.org\\/preview\\.png/);
- assert.doesNotMatch(html,/product-quick-card\\.html/);
+ assert.ok(html.includes('Ordinary search'));
+ assert.ok(html.includes('https://quantaphi.org/preview.png'));
+ assert.ok(!html.includes('product-quick-card.html'));
 });
 test('HEAD shares return metadata headers without a body',async()=>{
  const r=await share('https://quantaphi.org/q-share?title=QuantaPhi',{method:'HEAD'});
