@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  */
 final class ChatGPTAppPolicy {
     static final String PACKAGE = "com.openai.chatgpt";
-    enum Kind { OPEN, READ, TAP, SCROLL, TYPE, ARCHIVE_UNAVAILABLE }
+    enum Kind { OPEN, READ, TAP, SCROLL, TYPE, ASK_AND_SEND, CONTINUE_AND_SEND, ARCHIVE_UNAVAILABLE }
     static final class Request {
         final Kind kind;
         final String screenPhrase, field, value;
@@ -27,6 +27,18 @@ final class ChatGPTAppPolicy {
     private static final Pattern TYPE = Pattern.compile(
         "^(?:type|enter|put)\\s+[\\\"“](.{1,160})[\\\"”]\\s+(?:in|into)\\s+(?:the\\s+)?(.{1,80}?)\\s+(?:in|on|inside)\\s+(?:the\\s+)?"+APP+"[.!?]*$",
         Pattern.CASE_INSENSITIVE);
+    // A spoken owner instruction can send ONE turn to the currently visible app;
+    // this is never a hidden ChatGPT session or permission to replay model text.
+    private static final Pattern ASK = Pattern.compile(
+        "^(?:ask|tell)\\s+"+APP+"(?:\\s+to|\\s*:)\\s+(.{5,160})[.!?]*$",
+        Pattern.CASE_INSENSITIVE);
+    private static final Pattern CONTINUE = Pattern.compile(
+        "^(?:continue|resume|finish)(?:\\s+working\\s+on)?(?:\\s+my|\\s+the)?(?:\\s+current|\\s+open)?\\s+"+APP+
+        "\\s+(?:conversation|chat|task)(?:\\s+now)?[.!?]*$",
+        Pattern.CASE_INSENSITIVE);
+    private static final String FOLLOWUP =
+        "Continue the previous task. Complete remaining verified steps using available tools. "+
+        "Do not claim finished without receipts; report blockers.";
     private static final Pattern TAP = Pattern.compile(
         "^(?:tap|click|press|select)\\s+(?:on\\s+)?(?:the\\s+)?(.{1,80}?)\\s+(?:in|on|inside)\\s+(?:the\\s+)?"+APP+"[.!?]*$",
         Pattern.CASE_INSENSITIVE);
@@ -51,6 +63,11 @@ final class ChatGPTAppPolicy {
         if (text.matches("(?is).*\\b(?:all|every|entire|complete|full|download|export)\\b.*\\b(?:history|conversations|chats|data)\\b.*")
             || text.matches("(?is).*\\b(?:history|conversations|chats|data)\\b.*\\b(?:all|every|entire|complete|full|download|export)\\b.*"))
             return new Request(Kind.ARCHIVE_UNAVAILABLE,"","","");
+        Matcher prompt = ASK.matcher(text);
+        if (prompt.matches() && !ScreenAwareness.sensitive("message"))
+            return new Request(Kind.ASK_AND_SEND,"","message",prompt.group(1).trim());
+        if (CONTINUE.matcher(text).matches())
+            return new Request(Kind.CONTINUE_AND_SEND,"","message",FOLLOWUP);
         Matcher match = TYPE.matcher(text);
         if (match.matches() && !ScreenAwareness.sensitive(match.group(2)))
             return new Request(Kind.TYPE,"",match.group(2).trim(),match.group(1));
