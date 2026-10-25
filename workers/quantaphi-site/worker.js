@@ -344,6 +344,10 @@ function qpShareResponse(incoming) {
   ?qpSharePlain(product.description+' View the real product photo and details in the Infinity Quick Card, then buy through the original retailer. Price and availability may change.',450)
   :qpSharePlain(incoming.searchParams.get('text'),450) || 'Discover original research, surprising stories, images, video and sound with QuantaPhi.';
  const kind=product?'product':qpSharePlain(incoming.searchParams.get('kind'),30) || 'research';
+ // X displays a linked preview, not arbitrary HTML controls inside an image.
+ // The descriptive action tells the user what works AFTER opening Infinity.
+ const action=product?'Shop this item':qpSharePlain(incoming.searchParams.get('action'),48);
+ const previewTitle=!product&&action?qpSharePlain(title+' · '+action,210):title;
  // Verified product images include CDN transformation URLs without file extensions.
  const customImage=product?product.image:qpShareImage(incoming.searchParams.get('image'));
  const image=customImage || QP_PREVIEW_IMAGE;
@@ -365,23 +369,27 @@ function qpShareResponse(incoming) {
  const tags=[
   '<!doctype html><html lang="en"><head><meta charset="utf-8">',
   '<meta name="viewport" content="width=device-width,initial-scale=1">',
-  '<title>'+qpShareEscape(title)+' | QuantaPhi</title>',
+  '<title>'+qpShareEscape(previewTitle)+' | QuantaPhi</title>',
   '<meta name="description" content="'+qpShareEscape(summary.slice(0,240))+'">',
   '<link rel="canonical" href="'+qpShareEscape(canonical.href)+'">',
   '<meta property="og:type" content="article">',
   '<meta property="og:site_name" content="QuantaPhi">',
   '<meta property="og:url" content="'+qpShareEscape(canonical.href)+'">',
-  '<meta property="og:title" content="'+qpShareEscape(title)+'">',
+  '<meta property="og:title" content="'+qpShareEscape(previewTitle)+'">',
   '<meta property="og:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
   '<meta property="og:image" content="'+qpShareEscape(image)+'">',
   '<meta property="og:image:alt" content="'+qpShareEscape(imageAlt)+'">',
   '<meta name="twitter:card" content="summary_large_image">',
-  '<meta name="twitter:title" content="'+qpShareEscape(title)+'">',
+  '<meta name="twitter:title" content="'+qpShareEscape(previewTitle)+'">',
   '<meta name="twitter:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
   '<meta name="twitter:image" content="'+qpShareEscape(image)+'">',
   '<meta name="twitter:image:alt" content="'+qpShareEscape(imageAlt)+'">',
  ];
  if(!customImage)tags.push('<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png">');
+ if(action&&!product){
+  tags.push('<meta name="twitter:label1" content="Open the interactive card">');
+  tags.push('<meta name="twitter:data1" content="'+qpShareEscape(action)+'">');
+ }
  if(product?.price&&product.region==='US'){
   tags.push('<meta property="product:price:amount" content="'+qpShareEscape(product.price.replace(/[^0-9.]/g,''))+'">');
   tags.push('<meta property="product:price:currency" content="USD">');
@@ -390,7 +398,7 @@ function qpShareResponse(incoming) {
  }
  const html=tags.join('\n')+'</head><body style="background:#0a215f;color:white;font:16px system-ui;padding:2rem;max-width:42rem;margin:auto">'+
   '<h1>'+qpShareEscape(title)+'</h1><p>'+qpShareEscape(summary.slice(0,800))+'</p>'+
-  '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">'+(product?'View product · Shop at retailer':'Open in QuantaPhi')+'</a>'+
+  '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">'+qpShareEscape(action||'Open in Infinity')+'</a>'+
   '<script>location.replace('+JSON.stringify(destination.href).replace(/</g,'\\u003c')+')</script></body></html>';
  return new Response(html,{status:200,headers:{'content-type':'text/html; charset=utf-8','cache-control':'public, max-age=120, s-maxage=300','x-content-type-options':'nosniff','x-quantaphi-edge':EDGE_VERSION,'x-quantaphi-share':kind}});
 }
