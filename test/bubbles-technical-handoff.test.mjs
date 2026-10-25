@@ -44,6 +44,37 @@ test('a child repair must not recursively spawn another child or rewrite parent 
  assert.deepEqual(parent.dependencies,['TASK-2']);
 });
 
+const originalWorkJob=()=>({id:'TASK-1',agent:'greenbeans',repository:'www-infinity4/QuantaPhi',instructions:'Repair the missing control. Preserve the real image and owner actions.',acceptance:['Use actual source','Run focused behavior tests'],dependencies:[],status:'blocked'});
+const receipt={summary:'Runner failed: Invalid redirect value',when:'2026-10-25T03:00:00Z'};
+
+test('real repair carries original owner instructions and acceptance without rewriting them',()=>{
+ const source=originalWorkJob(),context={color_jobs:[source]},before={instructions:source.instructions,acceptance:[...source.acceptance]};
+ const r=attachTechnicalHandoff(context,source,receipt);assert.equal(r.queued,true);
+ const child=context.color_jobs.find(j=>j.id===r.jobId);
+ assert.equal(child.repository,source.repository);
+ for(const value of [before.instructions,...before.acceptance])assert.ok(child.instructions.includes(value)||child.instructions.includes(JSON.stringify(value)),value);
+ assert.equal(source.instructions,before.instructions);assert.deepEqual(source.acceptance,before.acceptance);
+ assert.match(child.instructions,/Do not ask Kris to relay/);assert.ok(child.instructions.length<=12000);
+});
+
+test('oversized original context fails before any jobs, dependencies or handoffs mutate',()=>{
+ const source={...originalWorkJob(),instructions:'x'.repeat(12001)},context={color_jobs:[source]},before=structuredClone(context);
+ const r=attachTechnicalHandoff(context,source,receipt);assert.equal(r.queued,false);assert.deepEqual(context,before);
+});
+
+test('invalid original context fails without mutation',()=>{
+ for(const patch of [{instructions:{}},{acceptance:['valid',42]}]){
+  const source={...originalWorkJob(),...patch},context={color_jobs:[source]},before=structuredClone(context);
+  assert.equal(attachTechnicalHandoff(context,source,receipt).queued,false);assert.deepEqual(context,before);
+ }
+});
+
+test('real Green original jobs remain eligible but generated technical children do not recurse',()=>{
+ const source=originalWorkJob(),context={color_jobs:[source]};assert.equal(attachTechnicalHandoff(context,source,receipt).queued,true);
+ const child=context.color_jobs[1],before=structuredClone(context);
+ assert.equal(attachTechnicalHandoff(context,child,receipt).queued,false);assert.deepEqual(context,before);
+});
+
 test('historical reader owner-input refusals do not silently invent a new permission grant',()=>{
  for(const message of [
   'Reader blocker: owner_input_required: The repository is read-only and requires write permission',
