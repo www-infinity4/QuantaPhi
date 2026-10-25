@@ -17,6 +17,7 @@ h1{font-size:clamp(2rem,5.5vw,3.5rem);line-height:1.04;letter-spacing:-.04em;mar
 .list{display:grid;gap:12px}.work{border:1px solid var(--edge);padding:16px;border-radius:14px;background:#fff}.work h3{margin:0 0 7px;font-size:1.05rem}.work small{color:var(--muted)}.work p{margin:8px 0}.work .line{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.phase{border:1px solid #ded5d5;border-radius:20px;padding:4px 9px;color:#672a38;font-size:.8rem;font-weight:700}.phase.verified{color:#176243;border-color:#b7d9c9}.work details{margin-top:11px}.work summary{font-weight:700;cursor:pointer}.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}.error{color:#ab1430}.hide{display:none!important}
 #robotBrainOwner details{border:1px solid var(--edge);padding:12px;margin:10px 0;border-radius:12px}#robotBrainOwner input{font:inherit;padding:10px;max-width:100%;border:1px solid #a49b99;border-radius:8px}#robotBrainOwner button{margin:8px;border-radius:8px;padding:10px}
 @media(max-width:600px){.inner,main{padding-left:15px;padding-right:15px}.panel{padding:15px}nav{gap:10px}}
+.grow-heading{margin:0;flex:1}.small-print{font-size:.85rem}
 </style>
 </head><body>
 <header><nav class="inner"><a href="../">Continuity workspace</a><strong>Owner work</strong><a href="/bubbles.html">Bubbles</a><a href="/">QuantaPhi</a><a href="/#robotDirections">Robot Brain</a></nav></header>
@@ -26,11 +27,11 @@ h1{font-size:clamp(2rem,5.5vw,3.5rem);line-height:1.04;letter-spacing:-.04em;mar
 <section class="panel" aria-label="Owner session"><h2>Owner connection</h2><div id="robotBrainOwner" aria-live="polite"></div><p id="connection" role="status">Checking your existing owner session…</p></section>
 <div id="app" class="hide">
 <div id="stats" class="stats" aria-label="Saved work summary"></div>
-<section class="panel"><div class="controls"><h2 style="margin:0;flex:1">Project folders</h2><button id="refresh" class="btn" type="button">Refresh actual status</button></div><p class="muted">Tap a folder to see its saved work. Jobs are not restarted simply by opening a folder.</p><div id="folders" class="folders"></div></section>
-<section class="panel"><div class="controls"><h2 style="margin:0;flex:1" id="listTitle">Unfinished work</h2><button id="showAll" class="btn secondary" type="button">All projects</button></div><div id="tickets" class="list"></div><div class="bar"><button id="more" class="btn secondary" type="button">Load more saved work</button><p id="coverage" class="muted" role="status"></p></div></section>
+<section class="panel"><div class="controls"><h2 class="grow-heading">Project folders</h2><button id="refresh" class="btn" type="button">Refresh actual status</button></div><p class="muted">Tap a folder to see its saved work. Jobs are not restarted simply by opening a folder.</p><div id="folders" class="folders"></div></section>
+<section class="panel"><div class="controls"><h2 class="grow-heading" id="listTitle">Unfinished work</h2><button id="showAll" class="btn secondary" type="button">All projects</button></div><div id="tickets" class="list"></div><div class="bar"><button id="more" class="btn secondary" type="button">Load more saved work</button><p id="coverage" class="muted" role="status"></p></div></section>
 </div>
 <p id="error" role="alert" class="error"></p>
-<p class="muted" style="font-size:.85rem">Stored receipt flags are recorded evidence; they have not been independently rechecked by opening this page. This interface cannot grant access or override an owner/security hold.</p>
+<p class="muted small-print">Stored receipt flags are recorded evidence; they have not been independently rechecked by opening this page. This interface cannot grant access or override an owner/security hold.</p>
 </main>
 <script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script>
 <script src="/cloud-wallet-client.js?v=20261013-brain-bridge1"></script>
