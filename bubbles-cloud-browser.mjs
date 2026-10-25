@@ -1,3 +1,4 @@
+import {chooseContinuation,snapshotKey,classifyReply} from './bubbles-chatgpt-continuity.mjs';
 // Bubbles owner-only interactive Cloudflare Browser Run panel.
 // The browser page is real hosted Chrome Live View, not an ordinary iframe
 // pretending to click cross-origin websites. Provider logins stay in Chrome.
@@ -338,13 +339,16 @@ export function mount({host,ownerHeaders,reveal=false}){
  // completed threads, and no invented success. Only visible sidebar chats can
  // be inspected; another device or a fresh cloud Chrome session requires sign-in.
  let continuationRunning=false,stopRequested=false;
+ // Ephemeral, per-owner-page dedupe; the ChatGPT DOM also guards recent '*'
+ // messages across refreshes. Never store private chat text or URLs in storage.
+ const continuationSentKeys=new Set();
  const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
  async function runChatGPTContinuations(){
   if(continuationRunning)return;
   continuationRunning=true;stopRequested=false;
   continueChats.disabled=true;stopContinuations.disabled=false;
-  let submitted=0,skipped=0,answered=0;
-  const details=[],failures=[];
+  let submitted=0,skipped=0,repliesObserved=0,needsOwner=0;
+  const details=[],failures=[],states=[];
   try{
    const approval=await bridgeCall('permission',{action:'status'});
    if(approval.enabled!==true)throw Error('Approve five-day ChatGPT browser access first.');
@@ -352,12 +356,10 @@ export function mount({host,ownerHeaders,reveal=false}){
     const opened=await call('start',{url:destinations.chatgpt});
     show(opened);
    }
-   // First inspect the actual signed-in ChatGPT sidebar. Never try a guessed
-   // conversation URL or query a private ChatGPT API.
    const overview=await call('chatgpt_scan');
    const conversations=(overview.result?.conversations||[]).slice(0,20);
-   if(!conversations.length)throw Error('No visible ChatGPT conversations. Sign in using the live Chrome view, open the sidebar, then run again.');
-   continuationStatus.textContent='Found '+conversations.length+' visible conversations. Checking for unfinished work…';
+   if(!conversations.length)throw Error('No visible conversations. Sign in through Cloud Chrome, open the ChatGPT sidebar, then run again.');
+   continuationStatus.textContent='Found '+conversations.length+' visible conversations. Checking unfinished work…';
    const seen=new Set();
    for(const item of conversations){
     if(stopRequested)break;
@@ -370,46 +372,69 @@ export function mount({host,ownerHeaders,reveal=false}){
      for(let n=0;n<7;n++){
       await pause(550);
       const observed=await call('chatgpt_scan');
-      if(observed.result?.authenticatedConversation===true&&observed.result.conversationUrl===item.url){
+      if(observed.result?.authenticatedConversation===true&&observed.result.conversationUrl===item.url&&
+         observed.result.latestRole&&Number(observed.result.messageCount)>0){
        snapshot=observed.result;break;
       }
      }
-     if(!snapshot)throw Error('chat_not_loaded');
-     // An existing unsent draft or in-progress ChatGPT response is never
-     // overwritten or interrupted. A previous literal * is not sent again.
-     if(!snapshot.needsAttention||snapshot.draftPresent||snapshot.alreadyNudged){
-      skipped++;
-      continuationStatus.textContent='Checked '+seen.size+'/'+conversations.length+' chats · '+submitted+' follow-ups sent · '+skipped+' skipped.';
+     if(!snapshot)throw Error('conversation_not_loaded');
+     const decision=chooseContinuation(snapshot,{sentKeys:continuationSentKeys});
+     if(decision.state!=='ready'){
+      skipped++;states.push(item.title+': '+decision.reason);
+      if(decision.state==='needs_details'){
+       needsOwner++;
+       details.push(item.title+': '+String(snapshot.latestAssistantText||'').slice(-240));
+      }
       continue;
      }
+     const key=snapshotKey(snapshot);
      const result=await call('chatgpt_resume',{text:'*'});
+     // If Chrome sent a click but lost its receipt, never resend blindly.
+     continuationSentKeys.add(key);
      if(result.result?.submissionVerified!==true)throw Error(result.result?.error||'follow_up_not_observed');
      submitted++;
-     continuationStatus.textContent='Sent a follow-up in '+item.title+'. Waiting to see whether ChatGPT responds…';
-     let reply=null;
-     for(let check=0;check<12&&!stopRequested;check++){
+     states.push(item.title+': follow-up submission verified; awaiting ChatGPT reply');
+     continuationStatus.textContent='Submitted in '+item.title+'. Verifying a NEW response…';
+     let reply=null,stable=0,lastAnswer='';
+     for(let check=0;check<16&&!stopRequested;check++){
       await pause(1500);
       const current=(await call('chatgpt_scan')).result;
-      if(current?.authenticatedConversation&&current.latestRole==='assistant'&&!current.generating){
-       reply=current;break;
+      const review=classifyReply(current,snapshot);
+      if(review.state!=='unverified'){
+       const candidate=String(current.latestAssistantText||'');
+       stable=candidate===lastAnswer?stable+1:1;
+       lastAnswer=candidate;
+       if(stable>=2){reply=review;break}
       }
      }
      if(reply){
-      answered++;
-      if(/[?]\s*$/.test(reply.latestAssistantText||'')||/\b(?:please (?:provide|send|share)|I need (?:more|the|you)|could you)\b/i.test(reply.latestAssistantText||'')){
-       details.push(item.title+': '+String(reply.latestAssistantText||'').slice(-240));
+      repliesObserved++;
+      states[states.length-1]=item.title+': '+reply.state;
+      if(reply.state==='needs_details'){
+       needsOwner++;
+       details.push(item.title+': '+reply.excerpt);
       }
-     }else failures.push(item.title+': response not confirmed');
-    }catch(error){failures.push(item.title+': '+String(error.message||error).slice(0,80));}
-    continuationStatus.textContent='Checked '+seen.size+'/'+conversations.length+' chats · '+submitted+' follow-ups sent · '+answered+' replies observed. '+(details.length?'Details needed in '+details.length+' chats.':'');
+     }else{
+      states[states.length-1]=item.title+': reply not yet confirmed';
+      failures.push(item.title+': no new, stable ChatGPT reply observed');
+     }
+    }catch(error){
+     failures.push(item.title+': '+String(error.message||error).slice(0,90));
+    }finally{
+     continuationStatus.textContent='Checked '+seen.size+'/'+conversations.length+' chats · '+submitted+
+      ' follow-ups verified · '+repliesObserved+' new replies · '+needsOwner+' need owner details.';
+    }
    }
-   continuationStatus.textContent='Checked '+seen.size+' visible chats; '+submitted+' follow-ups verified; '+answered+' responses observed; '+skipped+' skipped.'+
+   continuationStatus.textContent='Reviewed '+seen.size+' visible chats; '+submitted+
+    ' follow-ups verified; '+repliesObserved+' new ChatGPT replies observed; '+skipped+' skipped; '+needsOwner+' need owner input.'+
     (stopRequested?' Stopped by owner.':'')+
-    (details.length?'\nDetails requested:\n'+details.slice(0,8).join('\n'):'')+
-    (failures.length?'\nUnverified/blocked:\n'+failures.slice(0,8).join('\n'):'');
+    (details.length?'\nOwner details needed:\n'+details.slice(0,8).join('\n'):'')+
+    (failures.length?'\nUnverified/blocked:\n'+failures.slice(0,8).join('\n'):'')+
+    (states.length?'\nConversation checkpoints:\n'+states.slice(0,12).join('\n'):'')+
+    '\nChatGPT replies alone do not prove a repository commit, successful build, or deployment.';
   }catch(error){
    continuationStatus.textContent='ChatGPT continuation blocked: '+String(error.message||error).slice(0,200)+
-    '. Browser sign-in and the five-day owner session are separate requirements.';
+    '. Owner session, five-day consent and ChatGPT sign-in must all be valid.';
   }finally{continuationRunning=false;continueChats.disabled=false;stopContinuations.disabled=true;}
  }
  continueChats.addEventListener('click',()=>void runChatGPTContinuations());
