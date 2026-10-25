@@ -17,8 +17,8 @@ test('literal star only, not wildcard text, unlocks continuation',()=>{
  assert.match(send,/browserConversation\('continue unfinished ChatGPT conversations'/);
  assert.doesNotMatch(send.slice(send.indexOf("if(spoken==='*')"),send.indexOf('return;',send.indexOf("if(spoken==='*')"))),/continueSavedWork|\/work\/run-next/);
  assert.match(send,/ownerHeaders:verifiedOwnerHeaders/);
- assert.match(send,/nativeSpeechReply=spokenResult/);
- assert.match(send,/Runner requested\./);
+ assert.match(send,/nativeSpeechReply=reply\.startsWith\('Blocked'\)/);
+ assert.match(send,/Checking ChatGPT\./);
 });
 test('most recent signed owner tickets come first; exclude completed and security holds',()=>{
  const data=[
