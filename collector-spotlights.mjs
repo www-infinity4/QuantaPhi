@@ -28,14 +28,23 @@ export const COLLECTOR_SPOTLIGHTS=Object.freeze({
   )
  ]),
  beckett:Object.freeze([
-  feature('bgs-manga-example','Beckett grading · authenticated manga example',
-   'https://www.beckett.com/_next/image?q=75&url=%2F_next%2Fstatic%2Fmedia%2FVerifiesAuthenticity.d9def955.png&w=3840',
-   'https://www.beckett.com/manga-grading',
-   'Beckett · official grading example',
-   'Chainsaw Man #1 · example graded cover',
-   ['Publisher: Beckett','Example label: 9.2','Authentication & encapsulation'],
-   'Study the actual encapsulation and label. A printed grade applies only to the photographed collectible and does not determine the price of an unrelated card.',
-   'Beckett catalog, grader population and market sale data must be checked separately; no invented book value.'
+  feature('ohtani-bgs95','2018 Topps Chrome · Shohei Ohtani RC, BGS 9.5',
+   'https://cdn-vault.fanaticscollect.com/2025/12/29/rm2/large/v2176913_2020122810265670R_47.jpg',
+   'https://www.fanaticscollect.com/buy-now/eda9f975-7736-4f81-b764-c64100e2ffdc/2018-topps-chrome-shohei-ohtani-rookie-150-bgs-95-gem-mint',
+   'Fanatics Collect · photographed Beckett-graded card',
+   'Los Angeles Angels · 2018 Topps Chrome #150 rookie',
+   ['Card #150','BGS 9.5 Gem Mint','Corners 10 on pictured slab'],
+   'The picture shows the actual Beckett label, 9.5 overall grade, subgrades and 2018 Topps Chrome #150 Shohei Ohtani rookie. This specimen is a grading reference, not another listing’s valuation.',
+   'Check that another specimen is the same card, condition and grade before comparing sale prices. No unverified Beckett guide value is stated.'
+  ),
+  feature('judge-bgs95','2017 Topps Chrome · Aaron Judge RC, BGS 9.5',
+   'https://images.pristineauction.com/258/2586146/share_1672426774-Aaron-Judge-2017-Topps-Chrome-169A-RC-BGS-95-PristineAuction.com.jpg',
+   'https://www.pristineauction.com/a7132419-Aaron-Judge-2017-Topps-Chrome-169A-RC-BGS-95',
+   'Pristine Auction · photographed Beckett-graded card',
+   'New York Yankees · 2017 Topps Chrome #169A rookie',
+   ['Card #169A','BGS 9.5 Gem Mint','Visible grading subgrades'],
+   'Identify the real Aaron Judge rookie image, the Topps Chrome issue and the BGS slab. A separate image variation, grade or autograph is not interchangeable.',
+   'The photograph establishes identification and grade only; confirm completed sales before displaying a price.'
   )
  ]),
  vamworld:Object.freeze([
