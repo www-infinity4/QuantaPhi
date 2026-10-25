@@ -13,6 +13,27 @@ test('Walmart request searches owner source then reads the observed file before 
  assert.equal(calls[0].query,'walmart');assert.equal(calls[0].scope,'owner');
  assert.equal(found.repository,catalog[0]);assert.equal(found.path,hit.path);assert.equal(found.writeAuthorized,false);
 });
+test('Gary Cardone Church of I AM resolves the real card source across repository matches',async()=>{
+ const owned=['www-infinity4/QuantaPhi','www-infinity4/WidgetPhi'];
+ const seen=[];
+ const hits=[
+  {repository:owned[1],path:'browser/widgetphi-cardone.js',excerpt:'Cardone Capital quick card'},
+  {repository:owned[0],path:'church-iam-card.js',excerpt:'Church of I AM Gary Cardone original Sunday promotion'}
+ ];
+ const source=await discoverProject({request:'Fix the Gary Cardone Church of I AM card',catalog:owned,
+  invoke:async operation=>{
+   seen.push(operation);
+   if(operation.action==='search_github_code')return {ok:true,status:'code_search_results',results:hits};
+   if(operation.action==='read_repository')return {ok:true,headSha:'b'.repeat(40)};
+   if(operation.action==='read_file')return {ok:true,sha:'a'.repeat(40),content:'Church of I AM Gary Cardone official Sunday promotion'};
+   throw Error('unexpected action');
+  }});
+ assert.equal(seen[0].scope,'owner');
+ assert.equal(source.repository,owned[0]);
+ assert.equal(source.path,'church-iam-card.js');
+ assert.equal(source.card,'church-of-i-am');
+ assert.equal(source.writeAuthorized,false);
+});
 test('missing source and genuinely ambiguous matches never silently select a repository',async()=>{
  for(const result of [{...search,results:[hit,{...hit,repository:catalog[1]}]}, {...search,results:[{...hit,repository:'attacker/project'}]}]){
   assert.equal(await discoverProject({request:'Fix Walmart card',catalog,invoke:async()=>result}),null);
