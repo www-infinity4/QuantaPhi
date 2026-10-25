@@ -16,6 +16,8 @@ test('literal star only, not wildcard text, unlocks continuation',()=>{
  assert.match(send,/if\(spoken==='\*'\)/);
  assert.match(send,/module\.continueSavedWork/);
  assert.match(send,/ownerHeaders:verifiedOwnerHeaders/);
+ assert.match(send,/nativeSpeechReply=spokenResult/);
+ assert.match(send,/Runner requested\./);
 });
 test('most recent signed owner tickets come first; exclude completed and security holds',()=>{
  const data=[
