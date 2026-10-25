@@ -1,0 +1,32 @@
+name: Product share and Infinity viewer regression
+on:
+  pull_request:
+    paths:
+      - 'workers/quantaphi-site/worker.js'
+      - 'brand-product-cards.mjs'
+      - 'oracle-card-deck.js'
+      - 'product-quick-card.html'
+      - 'product-quick-card.mjs'
+      - 'test/social-share-preview.test.cjs'
+      - 'test/brand-product-cards.test.mjs'
+      - '.github/workflows/product-share-regressions.yml'
+  workflow_dispatch:
+jobs:
+  product-sharing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check share and card module syntax
+        run: |
+          node --check workers/quantaphi-site/worker.js
+          node --check product-quick-card.mjs
+          node --check brand-product-cards.mjs
+          node --check oracle-card-deck.js
+      - name: Verify exact product share previews and mobile card routes
+        run: node --test test/social-share-preview.test.cjs test/brand-product-cards.test.mjs
