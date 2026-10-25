@@ -1,5 +1,5 @@
 import {videoAPI} from './video-api.mjs';
-import {BRAND_PRODUCT_CARDS} from '../../brand-product-cards.mjs';
+import {BRAND_PRODUCT_CARDS,validBrandProduct} from '../../brand-product-cards.mjs';
 const EDGE_VERSION = 'quantaphi-org-service-20261024-walmart-v5';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
@@ -270,7 +270,7 @@ function qpShareResponse(incoming) {
  // Only first-party, curated merchandise IDs can supply product metadata.
  // Ignore user-provided image, price, title and checkout overrides for products.
  const productId=qpSharePlain(incoming.searchParams.get('card'),70);
- const product=BRAND_PRODUCT_CARDS.find(p=>p.id===productId)||null;
+ const product=BRAND_PRODUCT_CARDS.find(p=>p.id===productId&&validBrandProduct(p))||null;
  const search=product?'':qpSharePlain(incoming.searchParams.get('q'),320);
  const observedPrice=product?.price?product.price+' · checked '+product.checked:'Price at retailer';
  const title=product
@@ -280,7 +280,8 @@ function qpShareResponse(incoming) {
   ?qpSharePlain(product.description+' View the real product photo and details in the Infinity Quick Card, then buy through the original retailer. Price and availability may change.',450)
   :qpSharePlain(incoming.searchParams.get('text'),450) || 'Discover original research, surprising stories, images, video and sound with QuantaPhi.';
  const kind=product?'product':qpSharePlain(incoming.searchParams.get('kind'),30) || 'research';
- const customImage=product?qpShareImage(product.image):qpShareImage(incoming.searchParams.get('image'));
+ // Verified product images include CDN transformation URLs without file extensions.
+ const customImage=product?product.image:qpShareImage(incoming.searchParams.get('image'));
  const image=customImage || QP_PREVIEW_IMAGE;
  const imageAlt=product
   ?product.brand+' '+product.title+' — authentic retailer product photo'
@@ -325,7 +326,7 @@ function qpShareResponse(incoming) {
  }
  const html=tags.join('\n')+'</head><body style="background:#0a215f;color:white;font:16px system-ui;padding:2rem;max-width:42rem;margin:auto">'+
   '<h1>'+qpShareEscape(title)+'</h1><p>'+qpShareEscape(summary.slice(0,800))+'</p>'+
-  '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">'+(product?'View product · Shop at Levi\'s':'Open in QuantaPhi')+'</a>'+
+  '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">'+(product?'View product · Shop at retailer':'Open in QuantaPhi')+'</a>'+
   '<script>location.replace('+JSON.stringify(destination.href).replace(/</g,'\\u003c')+')</script></body></html>';
  return new Response(html,{status:200,headers:{'content-type':'text/html; charset=utf-8','cache-control':'public, max-age=120, s-maxage=300','x-content-type-options':'nosniff','x-quantaphi-edge':EDGE_VERSION,'x-quantaphi-share':kind}});
 }
