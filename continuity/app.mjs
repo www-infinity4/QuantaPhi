@@ -173,7 +173,7 @@ async function syncAll(onlyX=false){
  try{
   let results=[];
   if(!onlyX){try{results.push('GitHub: '+await syncGithub()+' new checkpoints');}catch(e){source.github='Unavailable: '+e.message;results.push('GitHub blocked: '+e.message)}}
-  try{const x=await syncX();results.push('X: '+x.newCount+' saved candidates'+(x.blocked+'').replace('true','; most recent scan blocked').replace('false',''));}
+  try{const x=await syncX();results.push('X: '+x.newCount+' saved candidates'+(x.blocked?'; latest scan blocked':''));}
   catch(e){source.x='Unavailable: '+e.message;results.push('X blocked: '+e.message)}
   render();const failed=results.some(s=>/blocked/i.test(s));announce(results.join(' · '),failed?'error':'good');
  }finally{busy=false;$('#sync').disabled=false;$('#sync-x').disabled=false;}
