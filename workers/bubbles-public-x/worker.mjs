@@ -35,13 +35,19 @@ async function recordScan(env,{status,visible=0,added=0,candidates=0,error=''}){
 }
 export async function scanPublicX(env){
  if(!env.BROWSER||!env.DB)throw Error('browser_or_db_binding_unavailable');
+ // A profile may render its initial skeleton before public articles arrive.
+ // Retry one empty render with a longer DOM wait, but never report zero posts
+ // as a successful read; X sometimes returns a login wall or rate limit.
  let observed=[];
  try{
-  const response=await env.BROWSER.quickAction('content',{url:PROFILE,waitForTimeout:2200,gotoOptions:{waitUntil:'domcontentloaded',timeout:20000}});
-  if(!response.ok)throw Error('browser_http_'+response.status);
-  const html=await response.text();
-  observed=parsePublicProfile(html);
-  if(!observed.length)throw Error('no_visible_public_owner_posts');
+  for(const waitForTimeout of [4800,8000]){
+   const response=await env.BROWSER.quickAction('content',{url:PROFILE,waitForTimeout,
+    gotoOptions:{waitUntil:'domcontentloaded',timeout:25000}});
+   if(!response.ok)throw Error('browser_http_'+response.status);
+   observed=parsePublicProfile(await response.text());
+   if(observed.length)break;
+  }
+  if(!observed.length)throw Error('no_visible_public_owner_posts_after_retry');
  }catch(e){await recordScan(env,{status:'blocked',error:String(e.message||e)});throw e}
  const stamp=now();
  let newCount=0,candidates=0;
