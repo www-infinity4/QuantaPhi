@@ -1078,14 +1078,16 @@ async function suggestRepositoryTargets(request,preview=false){
  const seq=++repositorySuggestionSequence;
  // Find the owner’s actual card source BEFORE asking the owner to name
  // a repository. Both voice and typed repair requests use this path.
- if(!repositorySelectionExplicit&&/\b(?:card|church|gary|cardone|walmart|shopphi|fox.?one|carousel|widget)\b/i.test(request)){
+ if(!repositorySelectionExplicit){
   try{
    if(!repositoryCatalogComplete)await loadRepositoryCatalog();
    if(repositoryCatalogComplete){
     const discovery=await import('/bubbles-project-discovery.mjs?v=20261025-owner-source2');
-    const key=request.toLowerCase().trim();
+    const ownerTurns=messages.filter(m=>m.role==='user'&&typeof m.text==='string'&&m.text!==request).slice(-8);
+    const searchRequest=discovery.sourceQueryFor(request,ownerTurns);
+    const key=searchRequest.toLowerCase().trim();
     if(!repositorySourceSearch||repositorySourceSearch.key!==key||Date.now()-repositorySourceSearch.at>60000){
-     const pending=discovery.discoverProject({request,catalog:repositoryCatalog,
+     const pending=discovery.discoverProject({request:searchRequest,catalog:repositoryCatalog,
       views:discovery.relevantProjectViews(request),invoke:async operation=>{
        let read=await directGithubOperation(operation,{quiet:true});
        if(['read_file','read_repository'].includes(operation.action)&&read.requestId){
@@ -1100,7 +1102,7 @@ async function suggestRepositoryTargets(request,preview=false){
     const evidence=await repositorySourceSearch.pending;
     // If indexed GitHub search is temporarily unavailable, a registered
     // named card still provides a grounded project target, not a blind guess.
-    const knownCard=discovery.namedCardFor(request);
+    const knownCard=discovery.namedCardFor(searchRequest);
     const target=evidence?.repository||(
      knownCard&&repositoryCatalog.includes(knownCard.repository)?knownCard.repository:'');
     if(target&&seq===repositorySuggestionSequence&&!repositorySelectionExplicit){
