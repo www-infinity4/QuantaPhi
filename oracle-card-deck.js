@@ -408,6 +408,9 @@ function chooseOpening(){
 }
 function start(){if(!active&&!expanded){
  const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
+ // Keep an explicitly requested original card in front of generic rotation.
+ // Some tools hydrate asynchronously after DOMContentLoaded.
+ if(request&&!available(request)){status.textContent='Loading requested interactive card…';return;}
  const first=request&&available(request)?request:chooseOpening();
  if(first)show(first,false);else status.textContent='Loading original interactive cards…';
 }}
