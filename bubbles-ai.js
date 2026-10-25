@@ -2205,7 +2205,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }
    if(activeThread!==imageThread)throw Error('Conversation changed; images were not added to another chat');
    const visible='[Images: '+selected.map(item=>item.name).join(' | ')+'] '+question;
-   const answer=findings.join('\n\n');
+   // Share the existing saved-evidence budget across every attached image.
+   // A long first finding must not erase images two through four.
+   const perImageLimit=Math.floor((5000-2*Math.max(0,findings.length-1))/Math.max(1,findings.length));
+   const shortened=' [observation shortened]';
+   const answer=findings.map(text=>text.length>perImageLimit?text.slice(0,perImageLimit-shortened.length)+shortened:text).join('\n\n');
    display(visible,'you');display(answer,'ai');
    messages.push({role:'user',text:visible},{role:'assistant',text:answer});
    messages=messages.slice(-400);persistChat();
