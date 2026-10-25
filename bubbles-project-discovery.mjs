@@ -45,6 +45,17 @@ export function sourceQueryFor(request,history=[]){
  }
  return q;
 }
+// A named card can be a direct engineering target even when the owner does
+// not mention GitHub, repository, source, code, or the word "card".
+export function cardWorkTargetFor(request,history=[]){
+ const q=String(request||'').trim().slice(0,2400);
+ if(!q||/^(?:(?:please|bubbles)[,\s]+)*(?:do\s+not|don't|never|how|why|what|explain|describe)\b/i.test(q))return null;
+ const direct=/^(?:(?:please|hey\s+bubbles|bubbles)[,\s:]+)*(?:(?:can|could|would|will)\s+you\s+)?(?:fix|repair|restore|debug|update|upgrade|rebuild|build|implement|improve|redesign|correct|replace|wire|connect|finish)\b/i.test(q);
+ const directive=/^(?:(?:please|bubbles)[,\s:]+)*(?:i\s+(?:need|want)\s+(?:you|bubbles)\s+to|we\s+need\s+(?:you|bubbles)\s+to|you\s+(?:need|have)\s+to)\b/i.test(q)&&
+  /\b(?:fix|repair|restore|debug|update|upgrade|rebuild|build|implement|improve|redesign|correct|replace|wire|connect|finish)\b/i.test(q);
+ if(!direct&&!directive)return null;
+ return namedCardFor(sourceQueryFor(q,history));
+}
 function rankSource(hit,terms,expected){
  const path=String(hit.path||'').toLowerCase(),excerpt=String(hit.excerpt||'').toLowerCase();
  const joined=path+' '+excerpt;
