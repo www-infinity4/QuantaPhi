@@ -3,12 +3,12 @@ import {getCollectorSpotlights,validCollectorFeature} from './collector-spotligh
 // Real source searches, not invented inventory, account data or offers.
 const provider=(id,name,category,official,query,topics,color)=>({id,name,category,official,query,topics,color});
 export const PREMIUM_CARDS=Object.freeze([
- provider('vamworld','VAMWorld','Coin varieties','https://vamworld.com/','Morgan dollar',['1888 O Scarface VAM 1B','1888 O Hot Lips VAM 4','1891 CC Spitting Eagle VAM 3'],'#514536'),
+ provider('vamworld','VAMWorld','Coin varieties','https://vamworld.com/','Morgan dollar',['Scarface VAM-1B4','Hot Lips VAM-4','Spitting Eagle VAM-3'],'#514536'),
  provider('pcgs','PCGS CoinFacts','Coins','https://www.pcgs.com/coinfacts','Morgan dollar',['Morgan dollars','Photograde','Certification verification'],'#243b56'),
  provider('ngc','NGC Coin Explorer','Coins','https://www.ngccoin.com/coin-explorer/','Morgan dollar',['Morgan dollars','Coin census','Variety attribution'],'#333f6c'),
  provider('heritage','Heritage Auctions','Auctions','https://coins.ha.com/','Morgan dollar auction',['Carson City Morgan','Early silver dollars','Gold coins'],'#42332c'),
- provider('topps','Topps','Trading cards','https://www.topps.com/','baseball cards',['Baseball releases','Basketball cards','Chrome'],'#a72532'),
- provider('beckett','Beckett','Trading cards','https://www.beckett.com/','baseball card grading',['Grading','Vintage baseball','Card price guide'],'#1b4255'),
+ provider('topps','Topps','Trading cards','https://www.topps.com/','baseball cards',['2026 Chrome Baseball','Nolan McLean RC','Konnor Griffin autograph'],'#a72532'),
+ provider('beckett','Beckett','Trading cards','https://www.beckett.com/','baseball card grading',['2026 Topps #1 Aaron Judge','BGS graded examples','Beckett price guide'],'#1b4255'),
  provider('christies',"Christie’s",'Auctions','https://www.christies.com/','photographs auction',['Photography','Jewellery','Music memorabilia'],'#712f38'),
  provider('morrison-hotel-gallery','Morrison Hotel Gallery','Music photography','https://morrisonhotelgallery.com/','Pink Floyd',['Pink Floyd','The Rolling Stones','Jazz photography'],'#292727'),
  provider('rolling-stone','Rolling Stone','Music','https://www.rollingstone.com/','music',['Pink Floyd','Tool','Music news'],'#a62831'),
@@ -133,7 +133,7 @@ export function mountPremiumCard(card){
   state.textContent='Featured original photographs · select a topic to research more.';
   article.append(header,gallery,topics,searchDetails,state,content,disclaimer,actions);
  }else article.append(header,form,topics,state,content,disclaimer,actions);
- mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
+ if(!hasGallery)mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
  let serial=0,loaded=false;
  async function run(){
   const query=field.value.trim();if(!query)return;const request=++serial;loaded=true;state.textContent='Searching '+card.name+'…';article.setAttribute('aria-busy','true');
