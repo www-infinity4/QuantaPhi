@@ -51,6 +51,16 @@ test('invalid, declined or session-mismatched callback never redirects or claims
  assert.equal(await completeBubblesReturn({...f,provider:'github',state,code:'code',client:{call:async()=>{throw Error('callback_session_mismatch')}}}),false);
  assert.match(f.status.textContent,/No connection is confirmed/);assert.equal(f.calls.length,0);
 });
+test('popup callback rejects missing or oversized authorization codes before messaging the opener',async()=>{
+ for(const code of ['', 'x'.repeat(4097)]){
+  const f=fixture(),posts=[];
+  f.root.opener={postMessage:(message,target)=>posts.push({message,target})};
+  assert.equal(await completeBubblesReturn({...f,provider:'github',state,code,client:{call:()=>assert.fail()}}),false);
+  assert.equal(posts.length,0);
+  assert.match(f.status.textContent,/valid sign-in code/);
+ }
+});
+
 test('popup callback posts only to fixed Bubbles origins and never navigates the opener',async()=>{
  const f=fixture(),posts=[];f.root.opener={postMessage:(message,target)=>posts.push({message,target})};
  assert.equal(await completeBubblesReturn({...f,provider:'github',state,code:'code',client:{call:()=>assert.fail()}}),true);
