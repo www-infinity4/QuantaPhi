@@ -1,0 +1,36 @@
+name: Continuity state and recovery contracts
+on:
+  push:
+    paths:
+      - 'continuity/**'
+      - 'workers/infinity-brain-clock/continuity-snapshot.mjs'
+      - 'test/continuity-*.test.mjs'
+      - '.github/workflows/continuity-contracts.yml'
+  pull_request:
+    paths:
+      - 'continuity/**'
+      - 'workers/infinity-brain-clock/continuity-snapshot.mjs'
+      - 'test/continuity-*.test.mjs'
+      - '.github/workflows/continuity-contracts.yml'
+
+permissions:
+  contents: read
+jobs:
+  continuity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate owner-only recovery module and browser UI
+        run: |
+          node --check workers/infinity-brain-clock/continuity-snapshot.mjs
+          node --check continuity/client-model.mjs
+          node --check --input-type=module < continuity/app.js
+          node --test test/continuity-snapshot.test.mjs test/continuity-client-model.test.mjs
+          grep -q 'id="robotBrainOwner"' continuity/index.html
+          grep -q 'continuity/app.js' continuity/index.html
