@@ -18,7 +18,8 @@ export const chatgptInspectExpression='(()=>{'+prelude+String.raw`
  const unique=[...new Map(links.map(x=>[x.url,x])).values()].slice(0,60);
  const unfinished=role==='user'||(role==='assistant'&&/\b(?:pending|queued|blocked|unverified|not (?:finished|complete|verified)|still (?:need|missing)|unable to|failed|cannot|need (?:more|you|the)|please (?:provide|send|share))\b/i.test(lastText.slice(-1200)));
  return {ok:true,authenticatedConversation:valid,conversationUrl:valid?location.origin+location.pathname:'',
-  title:String(document.title||'').slice(0,120),latestRole:role,generating,
+  title:String(document.title||'').slice(0,120),latestRole:role,generating,messageCount:messages.length,
+  recentNudgeCount:messages.slice(-4).filter(node=>node?.getAttribute('data-message-author-role')==='user'&&String(node.innerText||'').trim()==='*').length,
   editorReady:!!editor,draftPresent:!!editor?.innerText?.trim(),alreadyNudged:role==='user'&&lastText.trim()==='*',
   latestAssistantText:role==='assistant'?lastText.slice(-700):'',latestUserText:role==='user'?lastText.slice(-500):'',
   needsAttention:valid&&!!editor&&!generating&&unfinished,conversations:unique};
