@@ -94,3 +94,24 @@ test('malformed snapshot is rejected instead of appearing as an empty successful
  await setup(page);await page.route(api+'/**',r=>respond(r,{ok:true,tickets:[]}));
  await page.goto(base+'/continuity/owner/');await expect(page.locator('#error')).toContainText('Invalid saved-work response');await expect(page.locator('#app')).toBeHidden();
 });
+
+test('built Cloudflare static shell admits its exact inline styles and owner bootstrap under CSP',async({page})=>{
+ const {createServer}=await import('node:http'),{readFile}=await import('node:fs/promises');
+ const {createContinuitySite}=await import('../workers/continuity-site/worker.mjs');
+ const {ASSETS}=await import('../scripts/build-continuity-site.mjs');
+ const assets={};for(const name of ASSETS)assets[name]=await readFile(new URL('../continuity/'+name,import.meta.url),'utf8');
+ const gateway=createContinuitySite(assets,'a'.repeat(40));
+ const server=createServer(async(req,res)=>{try{
+  const r=await gateway.fetch(new Request('http://127.0.0.1'+req.url),{});
+  res.writeHead(r.status,Object.fromEntries(r.headers));res.end(await r.text());
+ }catch{res.writeHead(500);res.end('fixture failed');}});
+ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+ try{
+  await setup(page);await page.route(api+'/**',r=>respond(r,snapshot([ticket(1)])));
+  const violations=[];page.on('console',msg=>{if(/Refused|Content Security Policy/i.test(msg.text()))violations.push(msg.text());});
+  await page.goto('http://127.0.0.1:'+server.address().port+'/continuity/owner/');
+  await expect(page.locator('#app')).toBeVisible();await expect(page.locator('#tickets')).toContainText('Saved 1');
+  expect(await page.locator('body').evaluate(el=>getComputedStyle(el).margin)).toBe('0px');
+  expect(violations).toEqual([]);
+ }finally{await new Promise(resolve=>server.close(resolve));}
+});
