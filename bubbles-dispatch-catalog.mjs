@@ -20,8 +20,12 @@ export const AGENT_CATALOG=Object.freeze({
  })
 });
 
+const DEFINITIVE_NO_ACTION=new Set([
+ 'direct_engineer_model_unavailable', // model check precedes tools
+ 'repository_job_running'             // Durable Object checks a repository lease before starting
+]);
 const NO_ACTION_ERRORS=new Set([
- 'direct_engineer_model_unavailable', // existing Worker returns before any model/tools
+ ...DEFINITIVE_NO_ACTION,
  'direct_capacity_reached',          // future capacity contract requires noActionTaken:true
  'direct_runner_capacity_reached'
 ]);
@@ -45,7 +49,7 @@ export function chooseOverflow({result,operation,repository,request}={}){
  if(!/^[a-zA-Z0-9-]{8,100}$/.test(result.requestId||''))
   return blocked('direct_receipt_correlation_missing');
  if(!NO_ACTION_ERRORS.has(result.error))return blocked('direct_failure_not_safe_to_retry');
- if((result.error!=='direct_engineer_model_unavailable'&&result.noActionTaken!==true)||
+ if((!DEFINITIVE_NO_ACTION.has(result.error)&&result.noActionTaken!==true)||
     (result.receipts!==undefined&&(!Array.isArray(result.receipts)||result.receipts.length>0))||
     result.commitSha||result.prUrl||result.runId||
     result.completed===true||result.testsVerified===true||result.deploymentVerified===true)
