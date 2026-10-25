@@ -76,10 +76,10 @@ test('explicit workflow dispatch can overflow only before execution and with a p
 test('live website routes an eligible failure through existing authenticated tickets, never local fake commit',()=>{
  const js=fs.readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.match(js,/chooseOverflow\(\{result,operation,repository:operation\.repository,request:ownerRequest\}\)/);
- assert.match(js,/watchDirectGithubReceipt\(requestId,operation,ownerRequest\|\|operation\.request\|\|''\)/);
- assert.match(js,/const report=await maybeDelegateDirectOverflow\(result,operation,ownerRequest\)/);
- assert.match(js,/const overflowEvidence=await maybeDelegateDirectOverflow\(result,args,request\)/);
- assert.match(js,/submitRepositoryWork\(ownerRequest,'explicit-direct-overflow',operation\.repository,null\)/);
+ assert.match(js,/watchDirectGithubReceipt\(requestId,operation,ownerRequest\|\|operation\.request\|\|'',imageEvidence\)/);
+ assert.match(js,/const report=await maybeDelegateDirectOverflow\(result,operation,ownerRequest,imageEvidence\)/);
+ assert.match(js,/const overflowEvidence=await maybeDelegateDirectOverflow\(result,args,request,imageWorkEvidence\)/);
+ assert.match(js,/submitRepositoryWork\(ownerRequest,'explicit-direct-overflow',operation\.repository,null,imageEvidence\)/);
  assert.match(js,/workReply\(delegated\)/);
  assert.match(js,/not a finished file edit, passed build or deployment/);
  assert.doesNotMatch(js,/new CloneWorker\(/);
