@@ -59,3 +59,8 @@ assert.match(html,/class=\"search\" role=\"search\"/);
 assert.ok(html.indexOf('class=\"search\"')<html.indexOf('id=\"qtraffic\"'),'Search must lead before traffic counters');
 assert.doesNotMatch(html,/<section class=\"q-bubbles-entry\"/);
 assert.match(deck,/connectQuant\(\{select:true,revision\}\)/);
+
+// A card with its own toolbar must not get a second row of Star/Collect/Share/Build/Search.
+assert.match(deck,/function hasBuiltInCardActions\\(node\\)/);
+assert.match(deck,/#churchIamActions/);
+assert.match(deck,/!hasBuiltInCardActions\\(entry\\.node\\)/);
