@@ -309,7 +309,7 @@ function show(entry,remember=true){
    if(active!==displayed||!stage.contains(displayed.node))return;
    const container=document.createElement('div');container.className='oracle-card-actions';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
-    category:displayed.category,route:'/?card='+encodeURIComponent(displayed.id)});
+    category:displayed.category,route:displayed.node.classList.contains('qbp-product-card')?'/q-share?card='+encodeURIComponent(displayed.feedId):'/?card='+encodeURIComponent(displayed.id)});
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
