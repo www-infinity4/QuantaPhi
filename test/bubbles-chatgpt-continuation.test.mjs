@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import fs from 'node:fs';
 import {chatgptInspectExpression,chatgptPrepareExpression,chatgptSendExpression} from '../workers/bubbles-tools/chatgpt-dom.mjs';
+import {browserSpeechIntent} from '../bubbles-cloud-browser.mjs';
 
 const ID='12345678-1234-4123-8123-123456789abc';
 function page({origin='https://chatgpt.com',pathname='/c/'+ID,role='assistant',lastText='Work is pending verification.',draft='',generating=false}={}){
@@ -60,4 +61,11 @@ test('CDP only sends a continuation after guarded inspection and verifies owner-
  assert.match(ui,/needsAttention/);
  assert.match(ui,/slice\(0,20\)/);
  assert.doesNotMatch(ui,/localStorage\.setItem\(['"]chatgpt/);
+});
+
+test('natural Bubbles command triggers continuation without per-chat clicks',()=>{
+ const intent=browserSpeechIntent('Bubbles, continue unfinished ChatGPT conversations');
+ assert.equal(intent.action,'continue_chatgpt');
+ assert.equal(intent.show,true);
+ assert.equal(browserSpeechIntent('Finish my ChatGPT conversations').action,'continue_chatgpt');
 });
