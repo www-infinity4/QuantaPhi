@@ -83,7 +83,7 @@ test('independent physics, audio, reader and stock Share buttons join the common
 
 test('story writer, Infinite Book and story reader links share exact stories rather than generic banners',()=>{
  for(const path of ['phi-story-writer.js','infinite-book.js','story.html','story/index.html']){
-  assert.match(read(path),/card-social-share\\.mjs/,path);
-  assert.match(read(path),/socialShareUrl\\(/,path);
+  assert.ok(read(path).includes('card-social-share.mjs'),path);
+  assert.ok(read(path).includes('socialShareUrl('),path);
  }
 });
