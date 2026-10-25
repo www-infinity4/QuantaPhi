@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-dispatch-catalog.mjs'
+      - 'test/bubbles-dispatch-catalog.test.mjs'
       - 'bubbles-project-discovery.mjs'
       - 'test/bubbles-project-discovery.test.mjs'
       - 'bubbles-action-driver.mjs'
@@ -40,6 +42,8 @@ on:
     branches: [main]
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-dispatch-catalog.mjs'
+      - 'test/bubbles-dispatch-catalog.test.mjs'
       - 'bubbles-project-discovery.mjs'
       - 'test/bubbles-project-discovery.test.mjs'
       - 'bubbles-action-driver.mjs'
@@ -79,6 +83,8 @@ jobs:
         with:
           node-version: '22'
       - run: node --check bubbles-ai.js
+      - run: node --check bubbles-dispatch-catalog.mjs
+      - run: node --test test/bubbles-dispatch-catalog.test.mjs
       - run: node --check bubbles-cloud-wallet.js
       - run: node --test test/bubbles-cloud-wallet-history.test.cjs test/bubbles-owner-wallet-recovery.test.cjs
       - run: node --test test/bubbles-unified.test.mjs

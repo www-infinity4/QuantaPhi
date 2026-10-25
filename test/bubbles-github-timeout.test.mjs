@@ -43,7 +43,7 @@ test('direct GitHub creates one durable receipt and responds before a slow opera
 
 test('the website preserves and polls the original request ID; no false merge or deployment claim',()=>{
  assert.ok(client.includes("body:JSON.stringify({action:'receipt',requestId})"));
- assert.ok(client.includes('watchDirectGithubReceipt(requestId)'));
+ assert.ok(client.includes("watchDirectGithubReceipt(requestId,operation,ownerRequest||operation.request||'')"));
  assert.ok(client.includes('operation.requestId||crypto.randomUUID()'));
  assert.ok(client.includes('Testing, merge and deployment require separate verified receipts'));
  assert.ok(worker.includes('this.ctx.waitUntil(this.completeDirectGithub('));
