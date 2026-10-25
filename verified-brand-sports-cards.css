@@ -32,3 +32,12 @@
 .vbs-announcer-status{font-size:12px;color:#5e515f}
 @media(max-width:410px){.vbs-info{padding:14px 12px}.vbs-art{min-height:156px}.vbs-identity{max-height:130px;min-width:76px}.vbs-topics{gap:5px}.vbs-source-action{font-size:11px;min-height:49px}}
 @media(prefers-reduced-motion:reduce){.vbs-card *, .vbs-card *::before,.vbs-card *::after{animation:none!important;transition:none!important}}
+
+.vbs-news-panel{padding:13px;margin:14px 0;background:#f6f9fc;border:1px solid #cbd8e5;border-radius:15px}
+.vbs-news-title{font-size:17px;color:#173d61!important;margin:0 0 9px}
+.vbs-news-status{color:#5c6370;font-size:12px;line-height:1.45}
+.vbs-news-item{border-top:1px solid #d5e0ea;margin-top:9px;padding-top:9px}
+.vbs-news-link{color:#16436e!important;font-size:14px;line-height:1.35;font-weight:850;text-decoration:underline}
+.vbs-news-preview{font-size:12px;line-height:1.45;color:#525a65}
+.vbs-news-date{color:#555e69;font-size:11px;display:block;margin-top:4px}
+.vbs-news-refresh{padding:10px 13px;min-height:44px;background:#193e61;border-radius:10px;color:#fff;margin-top:12px;font-size:13px;font-weight:800}
