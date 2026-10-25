@@ -54,7 +54,7 @@ test('every Bubbles entrypoint loads the unpinned fresh action router',()=>{
  const sourceRef=new Function('route','incoming',routing+';return sourceRef;');
  const version=fs.readFileSync('bubbles.html','utf8').match(/\/bubbles-ai\.js\?v=([0-9A-Za-z_-]+)/)?.[1];
  assert.ok(version,'Bubbles script revision is required');
- const brainsVersion='20261020-tool-driver1';
+ const brainsVersion='20261025-speech-guard1';
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const html=fs.readFileSync(path,'utf8');
   assert.match(html,new RegExp('bubbles-brain-actions\\.js\\?v='+brainsVersion));
