@@ -57,7 +57,7 @@ test('chat dispatcher treats recognized card work as a direct owner engineering 
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.match(ui,/const namedCardWork=projectContextModule\?\.cardWorkTargetFor/);
  assert.match(ui,/const codeTask=\//);
- assert.match(ui,/\(codeTask\|\|Boolean\(namedCardWork\)\)/);
+ assert.match(ui,/if\(namedCardWork&&!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue\)directCoding=true/);
 });
 test('missing source and genuinely ambiguous matches never silently select a repository',async()=>{
  for(const result of [{...search,results:[hit,{...hit,repository:catalog[1]}]}, {...search,results:[{...hit,repository:'attacker/project'}]}]){
