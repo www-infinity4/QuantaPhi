@@ -6,6 +6,8 @@ let panelInstance=null, agent=null;
 const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',chatgpt:'https://chatgpt.com/',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
 export function browserSpeechIntent(input){
  const utterance=String(input||'').trim().replace(/^(?:(?:hey|okay|please|bubbles)[,\s]+)+/i,'');
+ const continueGPT=/\\b(?:continue|resume|restart|finish)\\b[\\s\\S]{0,80}\\b(?:chat\\s?gpt|gpt)\\b[\\s\\S]{0,80}\\b(?:conversations?|chats?|threads?|sessions?)\\b/i.test(utterance);
+ if(continueGPT)return {action:'continue_chatgpt',show:true};
  const browser=/\b(?:cloud|remote|chrome)\s+browser\b|\bbrowser run\b|\bin (?:the )?browser\b/i.test(utterance);
  const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|chat\s?gpt|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
  if(!browser&&!namedOpen)return null;
@@ -267,6 +269,11 @@ export function mount({host,ownerHeaders,reveal=false}){
  stop.addEventListener('click',()=>{if(state)void action('stop');else status.textContent='No live Chrome session to stop.'});
  agent={async run(intent){
   const actionName=intent.action;
+  if(actionName==='continue_chatgpt'){
+   if(continuationRunning)return 'Bubbles is already checking unfinished ChatGPT conversations.';
+   void runChatGPTContinuations();
+   return 'Started checking the signed-in ChatGPT conversations. Bubbles will send only verified follow-ups and show requests for missing details.';
+  }
   if(actionName==='show'){
    if(!state){
     const opened=await call('start',{url:destinations.quantaphi});
