@@ -3,12 +3,20 @@ on:
   pull_request:
     paths:
       - 'continuity/**'
+      - 'workers/infinity-brain-clock/continuity-snapshot.mjs'
+      - 'test/brain-clock.test.mjs'
+      - 'test/continuity-owner-browser.spec.mjs'
+      - 'playwright.continuity.config.mjs'
       - 'test/continuity*.test.mjs'
       - '.github/workflows/continuity-checks.yml'
   push:
     branches: [main]
     paths:
       - 'continuity/**'
+      - 'workers/infinity-brain-clock/continuity-snapshot.mjs'
+      - 'test/brain-clock.test.mjs'
+      - 'test/continuity-owner-browser.spec.mjs'
+      - 'playwright.continuity.config.mjs'
       - 'test/continuity*.test.mjs'
       - '.github/workflows/continuity-checks.yml'
 permissions:
@@ -20,13 +28,15 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
       - name: Syntax and checkpoint recovery regression tests
         run: |
           node --check continuity/engine.mjs
           node --check continuity/app.mjs
           node --check continuity/router.mjs
-          node --test test/continuity*.test.mjs
+          node --check continuity/owner/app.mjs
+          node --check workers/infinity-brain-clock/continuity-snapshot.mjs
+          node --test test/continuity*.test.mjs test/brain-clock.test.mjs
       - name: Validate isolated app entrypoint
         run: |
           test -f continuity/index.html
@@ -35,3 +45,9 @@ jobs:
           grep -q 'type="module" src="./app.mjs"' continuity/index.html
           grep -q 'href="./style.css"' continuity/index.html
           grep -q 'Access-Control-Allow-Origin' workers/bubbles-public-x/worker.mjs
+      - name: Install browser test runtime
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify mounted owner page and preserved notebook with synthetic fixtures
+        run: npx playwright test --config=playwright.continuity.config.mjs --reporter=line
