@@ -174,10 +174,13 @@ function updateInventory(){
  if(inventory)inventory.textContent='Choose a card · '+cards.length+' available';
 }
 document.getElementById('oracleCardChooser')?.addEventListener('change',event=>{
- const entry=eligible().find(e=>e.id===event.target.value);if(!entry)return;
+ const entry=eligible().find(e=>e.id===event.target.value);
+ console.info('ORACLE_SELECT_DIAGNOSTIC',JSON.stringify({requested:event.target.value,found:!!entry,expanded,active:active?.id,allCount:entries.length,eligibleCount:eligible().length}));
+ if(!entry){status.textContent='That card is no longer available in this viewer. Choose another verified source.';return;}
  viewerTouched=true;
  if(expanded){expanded=false;document.body.classList.remove('oracle-shelf-open');scroll.setAttribute('aria-expanded','false');scroll.textContent='↓ Scroll interactive cards / widgets'}
- show(entry);host.scrollIntoView?.({block:'start',behavior:'smooth'});
+ try{show(entry)}catch(error){console.error('ORACLE_SELECT_ERROR',error);status.textContent='Could not open the selected card.'}
+ host.scrollIntoView?.({block:'start',behavior:'smooth'});
 });
 function presentOriginal(entry){
  const cover=ORIGINAL_COVERS[entry.id];if(!cover||entry.node.querySelector(':scope > .oracle-original-cover'))return;
