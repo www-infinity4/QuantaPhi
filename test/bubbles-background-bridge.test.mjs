@@ -33,7 +33,10 @@ async function exercise({approved,proof=true,slow=false}){
   const policyURL=new URL('../bubbles-chatgpt-loop.mjs',import.meta.url).href;
   const originalSource=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
   assert.match(originalSource,/from '\.\/bubbles-chatgpt-loop\.mjs'/);
-  const source=originalSource.replace("from './bubbles-chatgpt-loop.mjs'","from '"+policyURL+"'");
+  const selectorURL=new URL('../bubbles-chatgpt-continuity.mjs',import.meta.url).href;
+  const source=originalSource
+   .replace("from './bubbles-chatgpt-loop.mjs'","from '"+policyURL+"'")
+   .replace("from './bubbles-chatgpt-continuity.mjs'","from '"+selectorURL+"'");
   const mod=await import('data:text/javascript;base64,'+Buffer.from(source+'\n// '+Math.random()).toString('base64'));
   mod.mount({host:new Element(),ownerHeaders:async()=>proof?{Authorization:'Bearer owner-fixture'}:null});
   for(let i=0;i<5;i++)await new Promise(resolve=>setImmediate(resolve));
