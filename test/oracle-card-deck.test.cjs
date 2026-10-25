@@ -61,6 +61,6 @@ assert.doesNotMatch(html,/<section class=\"q-bubbles-entry\"/);
 assert.match(deck,/connectQuant\(\{select:true,revision\}\)/);
 
 // A card with its own toolbar must not get a second row of Star/Collect/Share/Build/Search.
-assert.match(deck,/function hasBuiltInCardActions\\(node\\)/);
+assert.match(deck,/function hasBuiltInCardActions\(node\)/);
 assert.match(deck,/#churchIamActions/);
-assert.match(deck,/!hasBuiltInCardActions\\(entry\\.node\\)/);
+assert.match(deck,/!hasBuiltInCardActions\(entry\.node\)/);
