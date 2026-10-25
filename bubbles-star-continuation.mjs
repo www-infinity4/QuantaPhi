@@ -4,7 +4,8 @@
  */
 const REPO=/^www-infinity4\/[A-Za-z0-9_.-]+$/;
 const ID=/^IW-\d{8}-[A-F0-9-]{8}$/i,JOB=/^TASK-\d+$/;
-const FINISHED=new Set(['complete','deployed_verified','merged_verified','superseded']);
+const FINISHED=new Set(['complete','deployed_verified','superseded']);
+const DEPENDENCY_DONE=new Set(['complete','deployed_verified','merged_verified']);
 const DENIAL=/owner_input_required|owner_authorization_required|owner_approval_required|security_hold|permission_denied|password|secret|credential|wallet|payment|biometric|consent_required|account_connection_required/i;
 const VERIFY=/commit_verification_required|deployment_not_verified|deployed_unverified|merge_verification_required/i;
 const bounded=n=>Number.isFinite(n)?Math.max(1,Math.min(8,Math.trunc(n))):8;
@@ -15,11 +16,11 @@ function jobStage(job,jobs,now){
  if(FINISHED.has(status))return 'finished';
  const progress=job?.progress||{};
  const hints=[progress.blocker,progress.summary,progress.next].map(String).join(' ');
- if(progress.commitSha||VERIFY.test(hints)||status==='committed_unverified')return 'verify_receipt';
+ if(progress.commitSha||VERIFY.test(hints)||status==='committed_unverified'||status==='merged_verified')return 'verify_receipt';
  if(DENIAL.test(hints))return 'owner_or_security_hold';
  if(!['queued','ready','working','blocked'].includes(status))return 'not_ready';
  const dependencies=Array.isArray(job.dependencies)?job.dependencies:[];
- if(dependencies.some(id=>!jobs.some(other=>other.id===id&&FINISHED.has(other.status))))return 'dependencies';
+ if(dependencies.some(id=>!jobs.some(other=>other.id===id&&DEPENDENCY_DONE.has(other.status))))return 'dependencies';
  const started=time(progress.attemptedAt||progress.claimedAt);
  if(status==='working'&&started>now-40*60*1000)return 'already_running';
  if(status==='blocked'&&!/runner_lease_expired|runner_stopped|runner_timeout|timeout|temporary|retry|network|queued|awaiting_repository_runner|runner_dispatch_failed/i.test(hints))return 'blocked_needs_review';
@@ -88,7 +89,7 @@ export function continuationReply(result){
 }
 function dispatchSummary(value){
  if(!value)return 'No eligible existing job was dispatched. Previously blocked or unverified work remains flagged.';
- if(value.status==='queued_for_runner')return 'Started: the authenticated runner was requested. Code changes and completion still require verified receipts.';
+ if(value.status==='queued_for_runner')return 'Runner requested. GitHub execution has not been confirmed yet; code changes and completion require verified receipts.';
  if(value.status==='job_not_dispatchable'||value.status==='no_pending_jobs')return 'Blocked: the runner did not accept a job ('+String(value.reason||value.status).replace(/_/g,' ').slice(0,110)+'). No completion claimed.';
  return 'Runner response: '+String(value.status||'unconfirmed').replace(/_/g,' ').slice(0,100)+'. A dispatch is not a finished build.';
 }
