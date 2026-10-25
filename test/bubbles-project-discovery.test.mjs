@@ -98,7 +98,7 @@ test('large owner inventory is not required for verified cross-repository source
   throw Error('unexpected operation');
  }});
  assert.equal(found?.repository,'www-infinity4/QuantaPhi');
- assert.deepEqual(calls.slice(0,2).map(x=>x.query),['gary cardone church iam','gary cardone']);
+ assert.deepEqual(calls.slice(0,2).map(x=>x.query),['gary cardone church','gary cardone']);
  assert.equal(calls[2].action,'read_repository');
  assert.equal(calls[3].action,'read_file');
  assert.equal(found.writeAuthorized,false);
