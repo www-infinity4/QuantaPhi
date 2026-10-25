@@ -149,3 +149,13 @@ test('foreground owner watcher rechecks next eight and stops, never claiming an 
  assert.match(ui,/advanced\.open=true;wrap\.hidden=false/);
  assert.doesNotMatch(ui,/Cloud Chrome is always available even if the app is closed/);
 });
+
+test('one-tap Google sign-in navigation leaves account selection and secrets to owner',()=>{
+ const ui=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
+ const flow=ui.slice(ui.indexOf('async function openChatGPTHistory()'),ui.indexOf("openHistory.addEventListener('click'"));
+ assert.match(flow,/findButton\(\['Log in','Sign in'\]\)/);
+ assert.match(flow,/findButton\(\['Continue with Google','Sign in with Google'\]\)/);
+ assert.match(flow,/call\('click',\{label:google\}\)/);
+ assert.doesNotMatch(flow,/call\('type'|password|api_key|refresh_token|access_token/i);
+ assert.match(flow,/complete any required verification yourself/);
+});
