@@ -97,6 +97,13 @@ export function createVerifiedCard(card){
  }
  info.append(el('p','vbs-description',card.description));
  if(card.kind==='coupon'){
+  if(card.offer){
+   const now=new Date();const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
+   const current=today<=card.offer.endDate;
+   const message=current?card.offer.headline+' · Through '+card.offer.endDate+' · Redeem '+card.offer.redemption+'. '+card.offer.disclaimer:
+    'Previous verified offer expired '+card.offer.endDate+'. Open the original merchant page for new terms.';
+   info.append(el('p','vbs-offer'+(current?'':' vbs-offer-expired'),message));
+  }
   info.append(el('p','vbs-terms','Offer codes, dates, eligibility and redemption must be checked with the original retailer. No fabricated coupons.'));
  }
  if(card.kind==='health'){
