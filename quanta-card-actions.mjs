@@ -1,3 +1,4 @@
+import {socialShareUrl,shareImage,cardAction} from './card-social-share.mjs';
 /* Shared actions for QuantaPhi quick cards. Client actions must never imply a wallet payout or runner receipt. */
 const STORE_STARS='quantaPhiCardStarsV1';
 const STORE_COLLECT='quantaPhiCollected';
@@ -12,6 +13,21 @@ function route(card){
  return location.pathname+location.search;
 }
 function previewUrl(card){return new URL(route(card),location.origin).href}
+function contextualImage(host,card){
+ const direct=shareImage(card.image||card.photo||'');
+ if(direct)return direct;
+ // Search within THIS card, not the full document: nearby cards may belong to
+ // different brands/products in the Oracle carousel.
+ const surface=host.closest('.premium-selected, .qbp-product-card, .iqc-card, .qcp-card, article')
+  ||host.closest('.oracle-card-deck-stage')||host.parentElement;
+ for(const selector of ['img.qbp-photo','img.premium-photo','img.qcp-art','img.iam-photo',
+  'img.qcx-google-wordmark','img.qcx-fox-one-logo','img']){
+  const img=surface?.querySelector(selector);
+  const uri=shareImage(img?.currentSrc||img?.src||'');
+  if(uri)return uri;
+ }
+ return '';
+}
 function notify(host,s){host.textContent=s}
 export function mountCardActions(host,card){
  if(!host||!card)return;
@@ -46,13 +62,14 @@ export function mountCardActions(host,card){
   notify(status,'Collected on this device. Cloud sync and coin rewards are not confirmed.');
  });
  b('↗ Share',async()=>{
-  const url=previewUrl(card);
+  const url=socialShareUrl({...card,id,name},{origin:location.origin,
+   image:contextualImage(host,card),destination:route(card)});
   try{
-   if(navigator.share){await navigator.share({title:name,text:'Explore the '+name+' interactive Quick Card on QuantaPhi',url});notify(status,'Share sheet opened.');return}
-   if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);notify(status,'Quick Card link copied.');return}
+   if(navigator.share){await navigator.share({title:name,text:cardAction(card)+' · '+name,url});notify(status,'Share sheet opened.');return}
+   if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);notify(status,'Interactive card share link copied.');return}
   }catch(error){if(error?.name==='AbortError')return notify(status,'Share cancelled.');}
   const field=element('input','qca-copy');field.value=url;field.readOnly=true;field.setAttribute('aria-label','Copy card link');bar.append(field);field.focus();field.select();
-  notify(status,'Select and copy this Quick Card link.');
+  notify(status,'Select and copy this product-specific Quick Card link.');
  });
  b('+1 Build',()=>{
   const request='Build one improvement for the '+name+' QuantaPhi Quick Card. Preserve original graphics and functional controls; use real verified provider sources. Card: '+previewUrl(card)+'. Keep Star, Collect, Share, +1 Build and Quick Search. Verify build results and receipts before marking complete.';
