@@ -20,6 +20,8 @@ test('NFL game shows two actual source marks, FOX destination and live-data disc
  expect(await stage.evaluate(node=>node.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
 });
 test('World Series pitchers, actual coupons and medically sourced screening have separate cards',async({page})=>{
+ page.on('console',m=>{if(/ORACLE_SELECT_/.test(m.text()))console.log('BROWSER_ORACLE_EVENT',m.text())});
+ page.on('pageerror',e=>console.log('BROWSER_PAGE_ERROR',e.message));
  await images(page);
  await page.goto(base+'/?card=world-series-pitchers-2026',{waitUntil:'domcontentloaded'});
  const stage=page.locator('#oracleCardStage');
