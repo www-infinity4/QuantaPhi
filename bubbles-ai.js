@@ -2744,7 +2744,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      args.inputs={operation:coderRequest.operation,script_path:coderRequest.script};
     }
    }
-   const result=await directGithubOperation(args);
+   const result=await directGithubOperation(args,{ownerRequest:request});
    const githubDetail=result.error==='github_runtime_credential_missing'
     ?'Bubbles direct GitHub is not connected to a server-side write credential. No action occurred; connect the owner GitHub account with appropriate repository permissions.'
     :(result.error||result.summary||'');
@@ -2755,24 +2755,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted'){
     recordBrainNotice('GitHub accepted the workflow dispatch. This is not an execution result.');
    }
-   // A direct GitHub failure is not permission to replay its writes. Only the
-   // server's definite no-action failures may enter the existing authenticated
-   // Brain ticket queue. The APK uses this same first-party website session;
-   // no Java clone, alternate token, or hidden authorization is introduced.
-   const {chooseOverflow}=await import('/bubbles-dispatch-catalog.mjs?v=20261024-verified-overflow1');
-   const overflow=chooseOverflow({result,operation:args,repository,request});
-   if(overflow.delegate){
-    try{
-     const delegated=await submitRepositoryWork(request,'explicit-direct-overflow',repository,null);
-     recordBrainNotice('Direct GitHub was unavailable before execution. Robot Brain accepted '+overflow.role+' work for '+repository+'. Ticket '+String(delegated.status||'saved')+'; source, CI and deployment unverified.');
-     workEvidence='Direct GitHub could not execute this request ('+String(result.error)+'). '+
-      (await humanReplies()).workReply(delegated)+
-      ' Bubbles delegated to the authenticated Robot Brain '+overflow.role+
-      ' pipeline. This is a saved work request, not a finished file edit, passed build or deployment.';
-    }catch(error){
-     workEvidence='Direct GitHub could not execute the request and Robot Brain did not confirm a fallback ticket: '+
-      String(error.message||error).slice(0,170)+'. No completed write is claimed.';
-    }
+   // The final direct receipt arrives asynchronously in the ordinary case.
+   // This also handles a definite no-action reply returned immediately.
+   const overflowEvidence=await maybeDelegateDirectOverflow(result,args,request);
+   if(overflowEvidence){
+    workEvidence=overflowEvidence;
    }else if(args.action==='list_workflows'&&result.ok===true&&result.complete===true&&Array.isArray(result.workflows)){
     const names=result.workflows.filter(item=>item.state==='active').slice(0,12)
      .map(item=>String(item.name||item.path||'').slice(0,90)).filter(Boolean);
@@ -2969,7 +2956,27 @@ async function githubReceipt(requestId){
  if(!r.ok)throw Error('github_receipt_http_'+r.status);
  return r.json();
 }
-function watchDirectGithubReceipt(requestId){
+// Direct GitHub jobs start asynchronously. Only a final persisted no-action
+// receipt can justify a fallback. Never replay an in-flight or ambiguous write.
+async function maybeDelegateDirectOverflow(result,operation,ownerRequest){
+ if(result?.ok!==false||result.status!=='blocked'||!operation)return null;
+ try{
+  const {chooseOverflow}=await import('/bubbles-dispatch-catalog.mjs?v=20261024-verified-overflow1');
+  const overflow=chooseOverflow({result,operation,repository:operation.repository,request:ownerRequest});
+  if(!overflow.delegate)return null;
+  const delegated=await submitRepositoryWork(ownerRequest,'explicit-direct-overflow',operation.repository,null);
+  recordBrainNotice('Direct GitHub did not execute; Robot Brain accepted '+overflow.role+
+   ' work for '+operation.repository+'. Source, CI and deployment remain unverified.');
+  return 'Direct GitHub could not execute this request ('+String(result.error)+'). '+
+   (await humanReplies()).workReply(delegated)+
+   ' Bubbles delegated to the authenticated Robot Brain '+overflow.role+
+   ' pipeline. This is a saved work request, not a finished file edit, passed build or deployment.';
+ }catch(error){
+  return 'Direct GitHub could not execute the request and Robot Brain did not confirm a fallback ticket: '+
+   String(error.message||error).slice(0,170)+'. No completed write is claimed.';
+ }
+}
+function watchDirectGithubReceipt(requestId,operation,ownerRequest){
  if(pendingGithubReceipts.has(requestId))return;
  pendingGithubReceipts.add(requestId);
  void (async()=>{
@@ -2981,14 +2988,15 @@ function watchDirectGithubReceipt(requestId){
     if(result.status==='working'||result.error==='receipt_not_found')continue;
     // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
-    const report=(await humanReplies()).githubReply(result);
+    const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest)||
+     (await humanReplies()).githubReply(result);
     display(report,'ai');messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
     return;
    }
   }finally{pendingGithubReceipts.delete(requestId);}
  })();
 }
-async function directGithubOperation(operation,{quiet=false}={}){
+async function directGithubOperation(operation,{quiet=false,ownerRequest=''}={}){
  if(embedded)throw Error('owner_tools_unavailable_in_embed');
  const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
  let result;
@@ -3002,7 +3010,7 @@ async function directGithubOperation(operation,{quiet=false}={}){
   result={ok:true,status:'unconfirmed',requestId,error:'response_missing_or_timed_out',detail:String(error.message||error).slice(0,100)};
  }
  if(result.status==='working'||result.status==='unconfirmed'){
-  if(!quiet)watchDirectGithubReceipt(requestId);
+  if(!quiet)watchDirectGithubReceipt(requestId,operation,ownerRequest||operation.request||'');
   return {...result,requestId,next:'Checking the durable receipt using this request ID. Tests, merge and deployment remain unverified.'};
  }
  return {...result,requestId};
