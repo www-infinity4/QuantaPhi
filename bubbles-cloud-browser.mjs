@@ -389,7 +389,7 @@ export function mount({host,ownerHeaders,reveal=false}){
      }
      if(reply){
       answered++;
-      if(/[?]\\s*$/.test(reply.latestAssistantText||'')||/\\b(?:please (?:provide|send|share)|I need (?:more|the|you)|could you)\\b/i.test(reply.latestAssistantText||'')){
+      if(/[?]\s*$/.test(reply.latestAssistantText||'')||/\b(?:please (?:provide|send|share)|I need (?:more|the|you)|could you)\b/i.test(reply.latestAssistantText||'')){
        details.push(item.title+': '+String(reply.latestAssistantText||'').slice(-240));
       }
      }else failures.push(item.title+': response not confirmed');
@@ -398,8 +398,8 @@ export function mount({host,ownerHeaders,reveal=false}){
    }
    continuationStatus.textContent='Checked '+seen.size+' visible chats; '+submitted+' follow-ups verified; '+answered+' responses observed; '+skipped+' skipped.'+
     (stopRequested?' Stopped by owner.':'')+
-    (details.length?'\\nDetails requested:\\n'+details.slice(0,8).join('\\n'):'')+
-    (failures.length?'\\nUnverified/blocked:\\n'+failures.slice(0,8).join('\\n'):'');
+    (details.length?'\nDetails requested:\n'+details.slice(0,8).join('\n'):'')+
+    (failures.length?'\nUnverified/blocked:\n'+failures.slice(0,8).join('\n'):'');
   }catch(error){
    continuationStatus.textContent='ChatGPT continuation blocked: '+String(error.message||error).slice(0,200)+
     '. Browser sign-in and the five-day owner session are separate requirements.';
