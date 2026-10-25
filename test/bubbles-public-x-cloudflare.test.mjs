@@ -31,7 +31,7 @@ test('retries a late public timeline and records real owner posts',async()=>{
  const html=x('2113352129427730641','Repair Bubbles #bubbles'),calls=[],writes=[];
  const responses=['<p>Loading...</p>',html];
  const env={BROWSER:{async quickAction(name,opts){calls.push(opts.waitForTimeout);
-  return new Response(responses.shift());}},
+  return Response.json({success:true,result:responses.shift()});}},
   DB:{prepare(sql){return{bind(...args){writes.push({sql,args});return{
    async run(){return {meta:{changes:1}}}
   }}}}}};
@@ -44,11 +44,19 @@ test('retries a late public timeline and records real owner posts',async()=>{
 test('rendered login wall stays blocked after bounded retry',async()=>{
  const calls=[],writes=[];
  const env={BROWSER:{async quickAction(name,opts){calls.push(opts.waitForTimeout);
-  return new Response('<p>Log in to X</p>');}},
+  return Response.json({success:true,result:'<p>Log in to X</p>'});}},
   DB:{prepare(sql){return{bind(...args){writes.push({sql,args});return{
    async run(){return {meta:{changes:1}}}
   }}}}}};
  await assert.rejects(scanPublicX(env),/no_visible_public_owner_posts_after_retry/);
  assert.deepEqual(calls,[4800,8000]);
  assert.ok(writes.some(w=>w.args.includes('blocked')));
+});
+
+test('Browser Run failure envelope is not mistaken for HTML',async()=>{
+ const statuses=[];
+ const env={BROWSER:{async quickAction(){return Response.json({success:false,result:'<article>False success</article>'});}},
+ DB:{prepare(sql){return {bind(...args){statuses.push({sql,args});return {async run(){return{meta:{changes:1}}}}}}}}};
+ await assert.rejects(scanPublicX(env),/browser_content_payload_invalid/);
+ assert.ok(statuses.some(x=>x.args.includes('blocked')));
 });
