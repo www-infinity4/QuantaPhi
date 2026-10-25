@@ -8,6 +8,12 @@ on:
       - 'quanta-card-actions.mjs'
       - 'source-quick-cards.mjs'
       - 'premium-source-cards.mjs'
+      - 'radio-clubhouse.js'
+      - 'fred-spaces-radio.js'
+      - 'infinity-concepts.js'
+      - 'widgetphi-stock.js'
+      - 'stock-quick-card.html'
+      - 'test/source-quick-cards.test.mjs'
       - 'quanta-card-experience.mjs'
       - 'test/sitewide-social-card-sharing.test.mjs'
       - 'oracle-card-deck.js'
@@ -38,6 +44,10 @@ jobs:
           node --check source-quick-cards.mjs
           node --check premium-source-cards.mjs
           node --check quanta-card-experience.mjs
+          node --check radio-clubhouse.js
+          node --check fred-spaces-radio.js
+          node --check infinity-concepts.js
+          node --check widgetphi-stock.js
           node --check oracle-card-deck.js
       - name: Verify exact product share previews and mobile card routes
         run: node --test test/social-share-preview.test.cjs test/brand-product-cards.test.mjs test/sitewide-social-card-sharing.test.mjs test/source-quick-cards.test.mjs
