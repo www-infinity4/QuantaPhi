@@ -1935,7 +1935,7 @@ function normalizeOwnerAssistantReply(reply,request,ownerVerified){
      /^\s*\{\s*"tool"\s*:/.test(answer)) &&
     /"tool"\s*:\s*"github"/i.test(answer) &&
     /"action"\s*:\s*"(?:list_repos|list_repositories|create_repo|create_repository|read_file|write_file|commit_files)"/i.test(answer))
-  return 'I described a GitHub action instead of running it. No repository was listed or changed by that reply. Ask me to list your repositories or name the repositories for your project; I will use the verified owner GitHub tools and report the real result.';
+  return 'That reply described an action instead of executing it. I have not verified a source read or file change. Bubbles should locate the project using its connected GitHub catalog and the conversation context.';
  if(!ownerVerified)return answer;
  const ask=String(request||'');
  if(/\b(?:pair|link|sync|connect)\b.{0,90}\b(?:another|other|second|new|apk|android|phone|device|browser|session)\b/i.test(ask))return answer;
