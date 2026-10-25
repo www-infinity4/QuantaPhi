@@ -764,5 +764,9 @@ test('Continuity route preserves owner auth, origin guards and revoked-session d
  const data=await result.json();assert.equal(data.executionStarted,false);assert.equal(data.tickets[0].request,'Keep my context');assert.equal(reads,1);
  allowed=false;assert.equal((await brainWorker.fetch(request(token),env)).status,404);assert.equal(reads,1);
  allowed=true;assert.equal((await brainWorker.fetch(request(token,'https://quantaphi.org',{limit:0}),env)).status,400);assert.equal(reads,1);
+ for(const [body,status] of [['{',400],['x'.repeat(2201),413],['x'.repeat(160001),413]]){
+  const invalid=new Request('https://brain.local/work/continuity',{method:'POST',headers:{Origin:'https://quantaphi.org',Authorization:'Bearer '+token},body});
+  assert.equal((await brainWorker.fetch(invalid,env)).status,status);assert.equal(reads,1);
+ }
  assert.equal(writes,0);assert.ok(clockPaths.every(p=>p.endsWith('/owner/session-check')));
 });
