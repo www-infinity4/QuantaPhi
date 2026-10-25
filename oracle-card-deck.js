@@ -333,7 +333,7 @@ function show(entry,remember=true){
  // Source cards also mount their own toolbar; never add a duplicate stage toolbar.
  if(!entry.id.startsWith('source-')&&!hasBuiltInCardActions(entry.node)){
   const displayed=entry;
-  import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
+  import('/quanta-card-actions.mjs?v=20261025-title-search1').then(({mountCardActions})=>{
    if(active!==displayed||!stage.contains(displayed.node))return;
    const container=document.createElement('div');container.className='oracle-card-actions';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
