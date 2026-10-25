@@ -42,7 +42,7 @@ test('slow owner memory does not gate the Android or website work dispatcher',()
  const send=source.slice(source.indexOf('async function sendMessage('),source.indexOf('composer.before(repositoryPicker)'));
  assert.match(send,/void sharedMemory\(spoken\)/);
  assert.doesNotMatch(send,/^\s*await sharedMemory\(spoken\);/m);
- assert.ok(send.indexOf('void sharedMemory(spoken)')<send.indexOf('directGithubOperation(args)'));
+ assert.ok(send.indexOf('void sharedMemory(spoken)')<send.indexOf('directGithubOperation(args,{ownerRequest:request})'));
 });
 test('native ChatGPT fallback is bounded and the Android model prompt is smaller',()=>{
  const bridge=source.slice(source.indexOf('function nativeChatGPT('),source.indexOf('if(nativeOverlay)document.documentElement'));
