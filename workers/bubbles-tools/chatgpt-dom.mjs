@@ -20,7 +20,7 @@ export const chatgptInspectExpression='(()=>{'+prelude+String.raw`
  return {ok:true,authenticatedConversation:valid,conversationUrl:valid?location.origin+location.pathname:'',
   title:String(document.title||'').slice(0,120),latestRole:role,generating,
   editorReady:!!editor,draftPresent:!!editor?.innerText?.trim(),alreadyNudged:role==='user'&&lastText.trim()==='*',
-  latestAssistantText:role==='assistant'?lastText.slice(-700):'',
+  latestAssistantText:role==='assistant'?lastText.slice(-700):'',latestUserText:role==='user'?lastText.slice(-500):'',
   needsAttention:valid&&!!editor&&!generating&&unfinished,conversations:unique};
 })()`;
 export const chatgptPrepareExpression='(()=>{'+prelude+String.raw`
