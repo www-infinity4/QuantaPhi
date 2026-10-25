@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {discoverProject,discoveryTerms,sourceQueryFor,recordProjectView,relevantProjectViews,hasActionDraft} from '../bubbles-project-discovery.mjs';
+import {discoverProject,discoveryTerms,sourceQueryFor,cardWorkTargetFor,recordProjectView,relevantProjectViews,hasActionDraft} from '../bubbles-project-discovery.mjs';
 import {hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
 const catalog=['www-infinity4/QuantaPhi','www-infinity4/ShopLC'];
 const hit={repository:catalog[0],path:'walmart-card.mjs',excerpt:'Walmart products'};
@@ -39,6 +39,24 @@ test('a natural follow-up reuses the card named in recent owner conversation',()
  {role:'assistant',text:'I will inspect the source.'}];
  assert.match(sourceQueryFor('Fix that card',history),/Church of I AM/);
  assert.equal(sourceQueryFor('Fix the Walmart card',history),'Fix the Walmart card');
+});
+test('ordinary repair instructions find the right card, not a repository picker',()=>{
+ const gary=cardWorkTargetFor('Fix the Gary Cardone Sunday promotion');
+ assert.equal(gary?.id,'church-of-i-am');
+ assert.equal(gary?.repository,'www-infinity4/QuantaPhi');
+ assert.equal(cardWorkTargetFor('Please repair Gary Cardone'),gary);
+ assert.equal(cardWorkTargetFor('Repair Cardone Capital')?.id,'cardone-capital');
+ const history=[{role:'user',text:'We need to fix the Gary Cardone Church of I AM card'}];
+ assert.equal(cardWorkTargetFor('Fix that card',history)?.id,'church-of-i-am');
+ for(const q of ['What is Church of I AM?','Do not fix Gary Cardone','Explain Cardone Capital']){
+  assert.equal(cardWorkTargetFor(q),null,q);
+ }
+});
+test('chat dispatcher treats recognized card work as a direct owner engineering task',()=>{
+ const {readFileSync}=require('node:fs');
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/const namedCardWork=projectContextModule\?\.cardWorkTargetFor/);
+ assert.match(ui,/const codeTask=Boolean\(namedCardWork\)/);
 });
 test('missing source and genuinely ambiguous matches never silently select a repository',async()=>{
  for(const result of [{...search,results:[hit,{...hit,repository:catalog[1]}]}, {...search,results:[{...hit,repository:'attacker/project'}]}]){
