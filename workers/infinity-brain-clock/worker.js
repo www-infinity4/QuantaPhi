@@ -1,4 +1,5 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
+import {ownerContinuitySnapshot} from './continuity-snapshot.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
 import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
@@ -1034,6 +1035,7 @@ export async function ownerTickets(env,path,body){
    return {status:200,result:{ok:true,total:row?.total||0,indexed:row?.indexed||0,retry:row?.retry||0,vectorBinding:!!env.BRAIN_MEMORY,embeddingBinding:!!env.WRITER_AI}};
   }catch{return {status:503,result:{ok:false,error:'brain_memory_schema_unavailable'}}}
  }
+ if(path==='/work/continuity')return ownerContinuitySnapshot(db,ownerHash,body);
  if(path==='/work/tickets/list'){
   const rows=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? ORDER BY updated_at DESC LIMIT 100").bind(ownerHash).all();
   return {status:200,result:{ok:true,notificationScope:ownerHash,tickets:(rows.results||[]).map(publicTicket)}};
@@ -1452,13 +1454,14 @@ export default{
     return output(request,await response.json(),response.status);
    }catch{return output(request,{ok:false,error:'clock_operation_unavailable'},503)}
   }
-  if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/tickets/approve','/work/tickets/approve-all','/work/memory/status'].includes(path)&&request.method==='POST'){
+  if(['/work/tickets/create','/work/tickets/list','/work/tickets/update','/work/tickets/approve','/work/tickets/approve-all','/work/memory/status','/work/continuity'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
    if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},404);
    try{
-    const text=await request.text();
+    const text=path==='/work/continuity'?await readRunnerBody(request,path):await request.text();
+    if(path==='/work/continuity'&&text.length>2200)return output(request,{ok:false,error:'request_too_large'},413);
     if(text.length>70000)return output(request,{ok:false,error:'request_too_large'},413);
     const body=JSON.parse(text||'{}');
     const result=await ownerTickets(env,path,body);
