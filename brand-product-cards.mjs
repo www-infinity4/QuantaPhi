@@ -90,7 +90,7 @@ export function createBrandProductCard(card){
  const activity=create('div','qbp-actions');
  mountCardActions(activity,{
   id:card.id,name:card.brand+' · '+card.title,category:'Shopping · denim',
-  featureUrl:card.url,official:card.url,route:'/?card='+encodeURIComponent(card.id)
+  featureUrl:card.url,official:card.url,route:'/q-share?card='+encodeURIComponent(card.id)
  });
  info.append(title,description,price,links,detail,activity);
  article.append(kicker,imageLink,info);
