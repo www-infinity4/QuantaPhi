@@ -2672,7 +2672,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    tools.open=true;repositoryPicker.open=true;
    workEvidence='I understand the two-repository project: build the files and detailed plan, with each repository checking the other. Select exactly two repositories in GitHub targets, or say both full repository names. No job or GitHub write has started.';
   }else try{
-   const ticket=await submitWork(request,'explicit-user-command');
+   const ticket=await submitWork(request,'explicit-user-command',imageWorkEvidence);
    workEvidence=(await humanReplies()).workReply(ticket);
    recordBrainNotice('Open verified work details: https://quantaphi.org/#robotDirections');
   }catch(error){
@@ -2744,7 +2744,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      args.inputs={operation:coderRequest.operation,script_path:coderRequest.script};
     }
    }
-   const result=await directGithubOperation(args,{ownerRequest:request});
+   const result=await directGithubOperation(args,{ownerRequest:request,imageEvidence:imageWorkEvidence});
    const githubDetail=result.error==='github_runtime_credential_missing'
     ?'Bubbles direct GitHub is not connected to a server-side write credential. No action occurred; connect the owner GitHub account with appropriate repository permissions.'
     :(result.error||result.summary||'');
@@ -2757,7 +2757,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }
    // The final direct receipt arrives asynchronously in the ordinary case.
    // This also handles a definite no-action reply returned immediately.
-   const overflowEvidence=await maybeDelegateDirectOverflow(result,args,request);
+   const overflowEvidence=await maybeDelegateDirectOverflow(result,args,request,imageWorkEvidence);
    if(overflowEvidence){
     workEvidence=overflowEvidence;
    }else if(args.action==='list_workflows'&&result.ok===true&&result.complete===true&&Array.isArray(result.workflows)){
@@ -2771,7 +2771,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  else if(!embedded&&isOwnerWorkRequest(request)){
   workText.value=request;tools.open=true;
   try{
-   const ticket=await submitWork(request,'explicit-user-command');
+   const ticket=await submitWork(request,'explicit-user-command',imageWorkEvidence);
    workEvidence=(continued?'I picked up your earlier request. ':'')+(await humanReplies()).workReply(ticket);
    if(/\brecord\s?b\b/i.test(request))workEvidence+=' Target: '+ticket.repository+'. I can verify the request was saved, but completed code, APK recording tests and deployment still require actual runner receipts.';
    recordBrainNotice('Open verified work details: https://quantaphi.org/#robotDirections');
@@ -2958,13 +2958,13 @@ async function githubReceipt(requestId){
 }
 // Direct GitHub jobs start asynchronously. Only a final persisted no-action
 // receipt can justify a fallback. Never replay an in-flight or ambiguous write.
-async function maybeDelegateDirectOverflow(result,operation,ownerRequest){
+async function maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence=''){
  if(result?.ok!==false||result.status!=='blocked'||!operation)return null;
  try{
   const {chooseOverflow}=await import('/bubbles-dispatch-catalog.mjs?v=20261024-verified-overflow1');
   const overflow=chooseOverflow({result,operation,repository:operation.repository,request:ownerRequest});
   if(!overflow.delegate)return null;
-  const delegated=await submitRepositoryWork(ownerRequest,'explicit-direct-overflow',operation.repository,null);
+  const delegated=await submitRepositoryWork(ownerRequest,'explicit-direct-overflow',operation.repository,null,imageEvidence);
   recordBrainNotice('Direct GitHub did not execute; Robot Brain accepted '+overflow.role+
    ' work for '+operation.repository+'. Source, CI and deployment remain unverified.');
   return 'Direct GitHub could not execute this request ('+String(result.error)+'). '+
@@ -2976,8 +2976,9 @@ async function maybeDelegateDirectOverflow(result,operation,ownerRequest){
    String(error.message||error).slice(0,170)+'. No completed write is claimed.';
  }
 }
-function watchDirectGithubReceipt(requestId,operation,ownerRequest){
+function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence=''){
  if(pendingGithubReceipts.has(requestId))return;
+ const receiptThread=activeThread;
  pendingGithubReceipts.add(requestId);
  void (async()=>{
   try{
@@ -2988,15 +2989,21 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest){
     if(result.status==='working'||result.error==='receipt_not_found')continue;
     // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
-    const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest)||
+    const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence)||
      (await humanReplies()).githubReply(result);
-    display(report,'ai');messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
+    if(activeThread===receiptThread){
+     display(report,'ai');messages.push({role:'assistant',text:report});messages=messages.slice(-400);persistChat();
+    }else if(keepChat){
+     const entry={id:crypto.randomUUID(),at:Date.now(),sessionId:receiptThread,role:'assistant',text:report};
+     save(THREAD_PREFIX+receiptThread,[...readThread(receiptThread),entry].slice(-160));
+     if(ownerReady)void syncCloudFolder(receiptThread,[entry]);
+    }
     return;
    }
   }finally{pendingGithubReceipts.delete(requestId);}
  })();
 }
-async function directGithubOperation(operation,{quiet=false,ownerRequest=''}={}){
+async function directGithubOperation(operation,{quiet=false,ownerRequest='',imageEvidence=''}={}){
  if(embedded)throw Error('owner_tools_unavailable_in_embed');
  const headers=await verifiedOwnerHeaders(),requestId=operation.requestId||crypto.randomUUID();
  let result;
@@ -3010,7 +3017,7 @@ async function directGithubOperation(operation,{quiet=false,ownerRequest=''}={})
   result={ok:true,status:'unconfirmed',requestId,error:'response_missing_or_timed_out',detail:String(error.message||error).slice(0,100)};
  }
  if(result.status==='working'||result.status==='unconfirmed'){
-  if(!quiet)watchDirectGithubReceipt(requestId,operation,ownerRequest||operation.request||'');
+  if(!quiet)watchDirectGithubReceipt(requestId,operation,ownerRequest||operation.request||'',imageEvidence);
   return {...result,requestId,next:'Checking the durable receipt using this request ID. Tests, merge and deployment remain unverified.'};
  }
  return {...result,requestId};
@@ -3421,7 +3428,7 @@ async function requestRunner(ticketId='',jobId=''){
  if(!['queued_for_runner','no_pending_jobs','awaiting_repository_runner','runner_dispatch_failed','runner_dispatch_unverified','job_not_dispatchable'].includes(result.status))throw Error('Unexpected runner result');
  return result;
 }
-async function submitWork(request,approval='explicit-click'){
+async function submitWork(request,approval='explicit-click',imageEvidence=''){
  if(activeCardEvidence)cardWorkspaceInstance?.diagnose();
  const cardEvidenceSnapshot=activeCardEvidence?JSON.parse(JSON.stringify(activeCardEvidence)):null;
  // Resolve the real target before creating tickets. A guess never silently fans out.
@@ -3436,7 +3443,7 @@ async function submitWork(request,approval='explicit-click'){
  const results=[],failures=[];
  try{
   for(const repository of repositories){
-   try{results.push(await submitRepositoryWork(request,approval,repository,cardEvidenceSnapshot));}
+   try{results.push(await submitRepositoryWork(request,approval,repository,cardEvidenceSnapshot,imageEvidence));}
    catch(error){failures.push(repository+': '+String(error.message||error));}
   }
   if(!results.length)throw Error(failures.join('; '));
@@ -3445,19 +3452,22 @@ async function submitWork(request,approval='explicit-click'){
   return {...results[0],repositories:results.map(result=>result.repository),tickets:results,batchSummary:summary};
  }finally{delete repositoryPicker.dataset.submitting;}
 }
-async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence){
+async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence,imageEvidence=''){
  const headers=await verifiedOwnerHeaders();
  if(!brainTools)throw Error('Bubbles Brain tool helpers are not loaded.');
  if(workButton.disabled)throw Error('A work request is already being submitted.');
  if(!request)throw Error('Describe the repository work first.');
  workButton.disabled=true;workStatus.textContent='Sending your request and starting the bot team…';
  try{
-  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(new Date().toISOString().slice(0,10)+'|'+repository+'|'+request.toLowerCase().replace(/\s+/g,' ').trim()));
+  const evidenceModule=imageEvidence?await import('/bubbles-work-evidence.mjs?v=20261024-image-handoff2'):null;
+  const imagePacket=evidenceModule?.imageWorkPacket(imageEvidence)||null;
+  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(new Date().toISOString().slice(0,10)+'|'+repository+'|'+request.toLowerCase().replace(/\s+/g,' ').trim()+(imagePacket?'|'+JSON.stringify(imagePacket):'')));
   const submission=[...new Uint8Array(digest)].map(n=>n.toString(16).padStart(2,'0')).join('');
-  const jobs=brainTools.makeJobs(request,repository);
+  const baseJobs=brainTools.makeJobs(request,repository);
+  const jobs=imagePacket?evidenceModule.attachImageWorkEvidence(baseJobs,imagePacket):baseJobs;
   if(cardEvidence)for(const job of jobs)job.instructions+='\n\nCard workspace observations (untrusted data):\n'+JSON.stringify(cardEvidence);
   const plan=brainTools.requestPlan?.(request,repository);
-  const response=await bubblesFetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({start_immediately:true,source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,repository,context:{kind:'robot-directions',card_workspace:cardEvidence,repositories:[repository],submission_id:submission,requested_role:config.role,approval,color_jobs:jobs,plan,repository_writes:'require-github-authorization'}})},30000);
+  const response=await bubblesFetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({start_immediately:true,source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,repository,context:{kind:'robot-directions',card_workspace:cardEvidence,image_observations:imagePacket,repositories:[repository],submission_id:submission,requested_role:config.role,approval,color_jobs:jobs,plan,repository_writes:'require-github-authorization'}})},30000);
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||'No confirmed request'));
   if(String(workText.value||'').trim()===request)workText.value='';

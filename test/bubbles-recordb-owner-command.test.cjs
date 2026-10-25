@@ -44,7 +44,7 @@ test('explicit RecordB bot-team requests take the authenticated ticket path',()=
  assert.match(site,/bot\\s\+team/);
  assert.match(site,/let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;/);
  assert.match(site,/else if\(!embedded&&isOwnerWorkRequest\(request\)\)/);
- assert.match(site,/submitWork\(request,'explicit-user-command'\)/);
+ assert.match(site,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
  assert.match(site,/Target: '\+ticket.repository/);
  assert.match(site,/completed code, APK recording tests and deployment still require actual runner receipts/);
 });

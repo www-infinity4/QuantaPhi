@@ -109,7 +109,7 @@ test('website uses same-origin verified owner gate for Brain calls and keeps gue
  const js=fs.readFileSync('bubbles-ai.js','utf8');
  assert.match(js,/function isOwnerWorkRequest\(text\)/);
  assert.match(js,/if\(!embedded&&isOwnerWorkRequest\(request\)\)/);
- assert.match(js,/submitWork\(request,'explicit-user-command'\)/);
+ assert.match(js,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
  assert.match(js,/window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready/);
  assert.match(js,/if\(embedded\)throw Error\('Guest embed bubbles cannot access the owner Robot Brain\.'\)/);
  assert.match(js,/await verifiedOwnerHeaders\(\)/);
