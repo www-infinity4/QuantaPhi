@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {REQUESTED_PUBLIC_CARDS,QUEUED_REQUESTS,validBrandSportsCard} from '../verified-brand-sports-catalog.mjs';
-import {VERIFIED_CARD_COUNT,isSafeCardUrl} from '../verified-brand-sports-cards.mjs';
+import {VERIFIED_CARD_COUNT,isSafeCardUrl,safeSportsArticle} from '../verified-brand-sports-cards.mjs';
 const read=x=>readFileSync(new URL('../'+x,import.meta.url),'utf8');
 test('all curated sources have real image URLs and exactly three source-aware interactions',()=>{
  assert.ok(REQUESTED_PUBLIC_CARDS.length>=25);
@@ -56,4 +56,12 @@ test('same Oracle viewer, no useless generic search bar, original narration',()=
  assert.match(js,/sourceReady='true'/);
  assert.match(js,/sampleAnnouncerFacts/);
  assert.match(js,/speechSynthesis/);
+});
+
+test('on-card sports source headlines are restricted to attributed original hosts',()=>{
+ assert.ok(safeSportsArticle('https://www.mlb.com/video/rays-vs-brewers-game-2-highlights','mlb.com'));
+ assert.ok(safeSportsArticle('https://www.packers.com/news/something','packers.com'));
+ assert.equal(safeSportsArticle('https://fake-mlb.com/news','mlb.com'),false);
+ assert.equal(safeSportsArticle('https://mlb.com.evil.org/','mlb.com'),false);
+ assert.equal(safeSportsArticle('https://name@mlb.com/news','mlb.com'),false);
 });
