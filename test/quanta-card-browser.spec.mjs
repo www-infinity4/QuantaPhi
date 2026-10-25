@@ -103,6 +103,8 @@ test('FOX One live news card has its own post, official FOX News viewing link, a
 });
 
 test('Pepe Jeans product photographs, exact merchant links, and all five actions rotate in Public',async({page})=>{
+ // CI checks the exact manufacturer image URL, not third-party CDN uptime.
+ await page.route('https://images.pepejeans.com/**',route=>route.fulfill({status:200,contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600"><rect width="600" height="600" fill="#dedad2"/></svg>'}));
  await page.goto(base+'/?card=pepe-brooke',{waitUntil:'domcontentloaded'});
  const viewer=page.locator('#oracleCardStage');
  const card=viewer.locator('[data-source-id="pepe-brooke"]');
