@@ -89,6 +89,7 @@ jobs:
             test/brain-stage-source-receipt.test.mjs \
             test/brain-clock-binding-parity.test.mjs \
             test/brain-pink-source-review.test.mjs \
+            test/brain-source-review-identity-guard.test.mjs \
             test/brain-writer.test.mjs \
             test/brain-publish-draft.test.mjs \
             test/brain-ticket-status.test.cjs \
