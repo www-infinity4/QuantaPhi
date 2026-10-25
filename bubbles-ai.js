@@ -2755,7 +2755,25 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(args.action==='dispatch_workflow'&&result.status==='dispatch_accepted'){
     recordBrainNotice('GitHub accepted the workflow dispatch. This is not an execution result.');
    }
-   if(args.action==='list_workflows'&&result.ok===true&&result.complete===true&&Array.isArray(result.workflows)){
+   // A direct GitHub failure is not permission to replay its writes. Only the
+   // server's definite no-action failures may enter the existing authenticated
+   // Brain ticket queue. The APK uses this same first-party website session;
+   // no Java clone, alternate token, or hidden authorization is introduced.
+   const {chooseOverflow}=await import('/bubbles-dispatch-catalog.mjs?v=20261024-verified-overflow1');
+   const overflow=chooseOverflow({result,operation:args,repository,request});
+   if(overflow.delegate){
+    try{
+     const delegated=await submitRepositoryWork(request,'explicit-direct-overflow',repository,null);
+     recordBrainNotice('Direct GitHub was unavailable before execution. Robot Brain accepted '+overflow.role+' work for '+repository+'. Ticket '+String(delegated.status||'saved')+'; source, CI and deployment unverified.');
+     workEvidence='Direct GitHub could not execute this request ('+String(result.error)+'). '+
+      (await humanReplies()).workReply(delegated)+
+      ' Bubbles delegated to the authenticated Robot Brain '+overflow.role+
+      ' pipeline. This is a saved work request, not a finished file edit, passed build or deployment.';
+    }catch(error){
+     workEvidence='Direct GitHub could not execute the request and Robot Brain did not confirm a fallback ticket: '+
+      String(error.message||error).slice(0,170)+'. No completed write is claimed.';
+    }
+   }else if(args.action==='list_workflows'&&result.ok===true&&result.complete===true&&Array.isArray(result.workflows)){
     const names=result.workflows.filter(item=>item.state==='active').slice(0,12)
      .map(item=>String(item.name||item.path||'').slice(0,90)).filter(Boolean);
     workEvidence='GitHub Actions workflows: '+(names.length?names.join(', '):'No active workflows returned')+
