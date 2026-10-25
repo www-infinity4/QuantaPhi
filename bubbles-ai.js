@@ -1136,7 +1136,7 @@ async function suggestRepositoryTargets(request,preview=false){
  }
  // A repository-name guess is not the end of discovery. Search real owner
  // source and read the matching file before burdening the owner with a picker.
- if(result.requiresReview&&!result.allTargets&&!repositorySelectionExplicit&&!(repositorySourceSearch?.key===request.toLowerCase().trim()&&Date.now()-repositorySourceSearch.at<60000)){
+ if(result.requiresReview&&!result.allTargets&&!repositorySelectionExplicit&&!repositorySourceSearch){
   try{
    if(!repositoryCatalogComplete)await loadRepositoryCatalog();
    const discovery=await import('/bubbles-project-discovery.mjs?v=20261025-owner-source2');
