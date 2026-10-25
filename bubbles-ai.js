@@ -1098,14 +1098,22 @@ async function suggestRepositoryTargets(request,preview=false){
      repositorySourceSearch={key,at:Date.now(),pending};
     }
     const evidence=await repositorySourceSearch.pending;
-    if(evidence&&seq===repositorySuggestionSequence&&!repositorySelectionExplicit){
+    // If indexed GitHub search is temporarily unavailable, a registered
+    // named card still provides a grounded project target, not a blind guess.
+    const knownCard=discovery.namedCardFor(request);
+    const target=evidence?.repository||(
+     knownCard&&repositoryCatalog.includes(knownCard.repository)?knownCard.repository:'');
+    if(target&&seq===repositorySuggestionSequence&&!repositorySelectionExplicit){
+     const grounded=Boolean(evidence);
      const matched={ok:true,status:'repository_suggestions',catalogComplete:true,
-      candidates:[{repository:evidence.repository,score:100,reason:'verified source file'}],
-      selection:[evidence.repository],confidence:'high',requiresReview:false,
-      source:evidence.source,reason:'I found and read the matching source file.',evidence};
-     repositoryAdvice=matched;repositorySelection.clear();repositorySelection.add(evidence.repository);
-     repositoryAdviceLine.textContent='Found source for '+(evidence.card||'your card')+' · '+evidence.repository.split('/')[1]+'.';
-     repositoryState.textContent='Source found in your connected projects. No repository name needed.';
+      candidates:[{repository:target,score:100,reason:grounded?'verified source file':'registered card mapping'}],
+      selection:[target],confidence:'high',requiresReview:false,
+      source:grounded?evidence.source:'registered-card-catalog',
+      reason:grounded?'I found and read the matching source file.':'Card mapped from the installed catalog; source still needs inspection.',
+      evidence:evidence||null};
+     repositoryAdvice=matched;repositorySelection.clear();repositorySelection.add(target);
+     repositoryAdviceLine.textContent=(grounded?'Found source for ':'Located ')+(evidence?.card||knownCard?.title||'your card')+' · '+target.split('/')[1]+'.';
+     repositoryState.textContent=grounded?'Source found in your connected projects.':'Card identified; source inspection is next.';
      renderRepositoryOptions();return matched;
     }
    }
@@ -1126,7 +1134,7 @@ async function suggestRepositoryTargets(request,preview=false){
  }
  // A repository-name guess is not the end of discovery. Search real owner
  // source and read the matching file before burdening the owner with a picker.
- if(result.requiresReview&&!result.allTargets&&!repositorySelectionExplicit){
+ if(result.requiresReview&&!result.allTargets&&!repositorySelectionExplicit&&!(repositorySourceSearch?.key===request.toLowerCase().trim()&&Date.now()-repositorySourceSearch.at<60000)){
   try{
    if(!repositoryCatalogComplete)await loadRepositoryCatalog();
    const discovery=await import('/bubbles-project-discovery.mjs?v=20261025-owner-source2');
@@ -1160,7 +1168,7 @@ async function suggestRepositoryTargets(request,preview=false){
  renderRepositoryOptions();
  if(!preview&&result.requiresReview&&!repositorySelectionExplicit){
   repositoryPicker.open=true;
-  throw Error(result.allTargets?'Select All repositories in the dropdown to confirm this broad repair. No ticket was sent.':'Repository match is uncertain. Choose a suggested repository, or describe the project more precisely. No ticket was sent.');
+  throw Error(result.allTargets?'Changing every project requires a separate owner approval. No work was submitted.':'I searched the connected projects but could not identify the right card source. Tell me the card or feature you mean, not a repository name. No change was made.');
  }
  return result;
 }
