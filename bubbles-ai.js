@@ -2006,6 +2006,31 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ // The owner's single star asks BUBBLES to drive a signed-in ChatGPT tab.
+ // ChatGPT (not Bubbles' own repository runner) decides which previous work to
+ // continue. The only browser submit permitted by this route is literal '*'.
+ if(spoken==='*'){
+  busy=true;send.disabled=true;
+  display(spoken,'you');clearSentComposer();
+  messages.push({role:'user',text:spoken});persistChat();
+  setOrbState('thinking');
+  let reply='Blocked: ChatGPT browser continuation was not verified.';
+  try{
+   if(embedded)throw Error('verified_owner_session_required');
+   const browser=await import('/bubbles-cloud-browser.mjs?v=20261025-chatgpt-star1');
+   reply=await browser.browserConversation('continue unfinished ChatGPT conversations',
+    {host:browserHome,ownerHeaders:verifiedOwnerHeaders});
+  }catch(error){
+   reply='Blocked: signed-in ChatGPT browser continuation unavailable ('+
+    String(error?.message||error).replace(/_/g,' ').slice(0,140)+'). No message or build was confirmed.';
+  }
+  display(reply,'ai');messages.push({role:'assistant',text:reply});
+  messages=messages.slice(-400);persistChat();
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=reply.startsWith('Blocked')?'Blocked.':'Checking ChatGPT.';
+  else if(fromVoice&&config.voice&&!nativeOverlay)speakText(reply.startsWith('Blocked')?'Blocked.':'Checking ChatGPT.');
+  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();
+  return;
+ }
  // Keep the existing Bubbles chat. A typed command on Android requests a
  // native confirmation dialog, not a second chat or remote Linux sandbox.
  if(nativeOverlay && /^(?:bubbles[, ]+)?(?:please\s+)?(?:(?:test|check|verify)(?:\s+the)?\s+(?:python(?:\s+(?:in|with))?\s+termux|python|termux(?:\s+python)?)|(?:run|start|try)(?:\s+a)?\s+python\s+(?:test|diagnostic)|(?:does\s+python\s+work|is\s+python\s+(?:working|ready))(?:\s+in\s+termux)?)[.!?]*$/i.test(spoken)){
