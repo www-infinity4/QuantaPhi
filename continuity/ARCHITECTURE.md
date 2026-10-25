@@ -37,3 +37,9 @@ Knowledge is stored before it is synthesized: each research action first produce
 6. Verify one bounded owner-authorized task from original request through actual tool execution and acceptance evidence. Report source, deployment and physical-device checks separately.
 
 This document records the architecture and acceptance plan. It does not implement or deploy these remaining services, connect continuity.org DNS, or authorize new payments or account access.
+
+## Integration finding: preserve the existing workspace
+
+Review of open PR #1049 on October 25 found that its proposed `continuity/index.html` and `continuity/README.md` occupy the same paths as the already merged PR #1050 workspace. Do not resolve that conflict by replacing the working workspace. Keep the local notebook/export/recovery app at `/continuity/`; mount the authenticated backlog separately at `/continuity/owner/` (with correctly relative asset paths) and expose a clear navigation link only after browser verification. Keep its read-only projection module and existing Brain owner gate; reuse `/work/run-next` for authorized execution. The new pure router must not be connected to that endpoint until a server-owned work-state mapping and atomic state/event transaction are implemented and tested.
+
+Reconciliation acceptance: both views remain usable; existing notebook data/export/import survives; unauthenticated requests cannot access owner tickets; the owner backlog covers more than 100 tickets through pagination; recorded completion claims remain distinguished from independently verified delivery. PR #1049's current UI/README path conflicts must be resolved before integration. This finding does not establish that the proposed endpoint is deployed.
