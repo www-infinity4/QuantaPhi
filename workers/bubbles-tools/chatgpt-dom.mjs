@@ -1,7 +1,7 @@
 // Bounded ChatGPT conversation inspection. Never reads cookies, tokens or hidden state.
 // Only owner-approved Cloud Chrome on chatgpt.com/c/<conversation> can submit a continuation.
 const prelude=String.raw`
- const valid=location.origin==='https://chatgpt.com'&&/^\\/c\\/[a-zA-Z0-9_-]{12,}\\/?$/.test(location.pathname);
+ const valid=location.origin==='https://chatgpt.com'&&/^\/c\/[a-zA-Z0-9_-]{12,}\/?$/.test(location.pathname);
  const messages=[...document.querySelectorAll('[data-message-author-role]')];
  const last=messages.at(-1);
  const role=last?.getAttribute('data-message-author-role')||'';
@@ -12,11 +12,11 @@ const prelude=String.raw`
 `;
 export const chatgptInspectExpression='(()=>{'+prelude+String.raw`
  const links=[...document.querySelectorAll('a[href]')].filter(a=>a.getClientRects().length)
-  .map(a=>{try{const u=new URL(a.href);return u.origin===location.origin&&/^\\/c\\/[a-zA-Z0-9_-]{12,}\\/?$/.test(u.pathname)
+  .map(a=>{try{const u=new URL(a.href);return u.origin===location.origin&&/^\/c\/[a-zA-Z0-9_-]{12,}\/?$/.test(u.pathname)
     ?{url:u.origin+u.pathname,title:String(a.innerText||a.getAttribute('aria-label')||'Conversation').trim().slice(0,95)}:null}catch{return null}})
   .filter(Boolean);
  const unique=[...new Map(links.map(x=>[x.url,x])).values()].slice(0,60);
- const unfinished=role==='user'||(role==='assistant'&&/\\b(?:pending|queued|blocked|unverified|not (?:finished|complete|verified)|still (?:need|missing)|unable to|failed|cannot|need (?:more|you|the)|please (?:provide|send|share))\\b/i.test(lastText.slice(-1200)));
+ const unfinished=role==='user'||(role==='assistant'&&/\b(?:pending|queued|blocked|unverified|not (?:finished|complete|verified)|still (?:need|missing)|unable to|failed|cannot|need (?:more|you|the)|please (?:provide|send|share))\b/i.test(lastText.slice(-1200)));
  return {ok:true,authenticatedConversation:valid,conversationUrl:valid?location.origin+location.pathname:'',
   title:String(document.title||'').slice(0,120),latestRole:role,generating,
   editorReady:!!editor,draftPresent:!!editor?.innerText?.trim(),alreadyNudged:role==='user'&&lastText.trim()==='*',
