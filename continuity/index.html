@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Continuity · Robot Brain work recovery</title>
+<meta name="description" content="Owner-only Robot Brain continuity: reopen unfinished QuantaPhi projects, inspect blockers and verified receipts.">
+<style>
+:root{font:16px/1.48 system-ui,-apple-system,Segoe UI,sans-serif;color:#272226;background:#f6f2ec;--red:#a12135;--edge:#e2d9d0;--muted:#695e60}
+*{box-sizing:border-box}body{margin:0}button,a{touch-action:manipulation}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #772c88;outline-offset:3px}
+header{background:#fff;border-bottom:1px solid var(--edge)}.inner{max-width:1100px;margin:auto;padding:18px 20px}
+nav{display:flex;align-items:center;gap:16px;flex-wrap:wrap}nav a{color:#8b2034;font-weight:700;text-decoration:none}nav strong{font-size:1.15rem}main{max-width:1100px;padding:25px 20px 64px;margin:auto}
+h1{font-size:clamp(2rem,5.5vw,3.5rem);line-height:1.04;letter-spacing:-.04em;margin:8px 0 12px}h2{font-size:1.25rem;margin:0 0 14px}p{margin:10px 0 15px}.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:800;color:var(--red)}
+.panel{border:1px solid var(--edge);background:#fff;border-radius:18px;padding:20px;margin-top:20px;box-shadow:0 2px 12px #28101008}.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{background:var(--red);border:1px solid var(--red);color:white;padding:11px 17px;min-height:44px;border-radius:11px;font-weight:700}.btn.secondary{background:#fff;color:var(--red);border-color:#cda9af}.btn:disabled{opacity:.5;cursor:default}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin:20px 0}.stat{border:1px solid var(--edge);border-radius:14px;background:white;padding:16px}.stat b{font-size:1.9rem;display:block;line-height:1.2}.stat span{font-size:.83rem;color:var(--muted)}
+.folders{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.folder{border:1px solid var(--edge);background:white;border-radius:14px;text-align:left;padding:16px;min-height:105px;color:inherit}.folder[aria-pressed=true]{border:2px solid var(--red);padding:15px}.folder b{display:block;font-size:1rem;overflow-wrap:anywhere}.folder small{color:var(--muted)}
+.list{display:grid;gap:12px}.work{border:1px solid var(--edge);padding:16px;border-radius:14px;background:#fff}.work h3{margin:0 0 7px;font-size:1.05rem}.work small{color:var(--muted)}.work p{margin:8px 0}.work .line{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.phase{border:1px solid #ded5d5;border-radius:20px;padding:4px 9px;color:#672a38;font-size:.8rem;font-weight:700}.phase.verified{color:#176243;border-color:#b7d9c9}.work details{margin-top:11px}.work summary{font-weight:700;cursor:pointer}.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}.error{color:#ab1430}.hide{display:none!important}
+#robotBrainOwner details{border:1px solid var(--edge);padding:12px;margin:10px 0;border-radius:12px}#robotBrainOwner input{font:inherit;padding:10px;max-width:100%;border:1px solid #a49b99;border-radius:8px}#robotBrainOwner button{margin:8px;border-radius:8px;padding:10px}
+@media(max-width:600px){.inner,main{padding-left:15px;padding-right:15px}.panel{padding:15px}nav{gap:10px}}
+</style>
+</head><body>
+<header><nav class="inner"><strong>Continuity</strong><a href="/bubbles.html">Bubbles</a><a href="/">QuantaPhi</a><a href="/#robotDirections">Robot Brain</a></nav></header>
+<main>
+<div class="eyebrow">Robot Brain · saved work</div><h1>Pick up where the work stopped.</h1>
+<p class="muted">Projects and tickets come from the existing owner-only Brain database. No blank replacements, no invented completion, and no changes to public cards.</p>
+<section class="panel" aria-label="Owner session"><h2>Owner connection</h2><div id="robotBrainOwner" aria-live="polite"></div><p id="connection" role="status">Checking your existing owner session…</p></section>
+<div id="app" class="hide">
+<div id="stats" class="stats" aria-label="Saved work summary"></div>
+<section class="panel"><div class="controls"><h2 style="margin:0;flex:1">Project folders</h2><button id="refresh" class="btn" type="button">Refresh actual status</button></div><p class="muted">Tap a folder to see its saved work. Jobs are not restarted simply by opening a folder.</p><div id="folders" class="folders"></div></section>
+<section class="panel"><div class="controls"><h2 style="margin:0;flex:1" id="listTitle">Unfinished work</h2><button id="showAll" class="btn secondary" type="button">All projects</button></div><div id="tickets" class="list"></div><div class="bar"><button id="more" class="btn secondary" type="button">Load more saved work</button><p id="coverage" class="muted" role="status"></p></div></section>
+</div>
+<p id="error" role="alert" class="error"></p>
+<p class="muted" style="font-size:.85rem">Only a verified execution receipt, passed acceptance checks and actual deployment may establish completion. This interface cannot grant access or override an owner/security hold.</p>
+</main>
+<script src="/cloud-wallet-client.js?v=20261013-brain-bridge1"></script>
+<script src="/robot-brain-owner.js?v=20261014-shared-memory6"></script>
+<script type="module" src="/continuity/app.js"></script>
+</body></html>
