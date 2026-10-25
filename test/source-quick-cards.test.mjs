@@ -87,7 +87,7 @@ test('the old visual catalog is removed without deleting source widgets or the o
  assert.doesNotMatch(home,/<script type="module" src="\/quanta-feed.mjs/);
  assert.match(home,/id="oracleCardDeck"/);
  assert.match(deck,/registerSourceCards/);
- assert.match(deck,/const google=entries\.find\(e=>e\.id==='source-google'\)/);
+ assert.match(deck,/function chooseOpening\(\)/);
  assert.match(deck,/viewerTouched/);
 });
 test('Google logo and Infinity local results page are genuine assets and do not frame google.com',()=>{
@@ -119,7 +119,7 @@ test('functional source cards enter Public while link-only integrations remain s
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/QUICK_CARD_SOURCES.filter\(isPublicSourceCard\)/);
  assert.match(deck,/node.dataset.sourceReady!=='true'/);
- assert.match(deck,/sources=entries.filter\(e=>e.id.startsWith\('source-'\)/);
+ assert.match(deck,/const requested=entries.find/);
 });
 
 test('FOX One exact original video post is source-linked, without fabricating a GIF or autoplay guarantee',()=>{
