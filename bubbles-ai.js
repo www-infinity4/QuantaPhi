@@ -3815,6 +3815,25 @@ if(!embedded&&typeof setInterval==='function'){
   if(!nativeOverlay)void checkSharedVoiceStatus();
  }},3000);
 }
+// A visitor explicitly opened Bubbles from a Quick Card. Only registry cards
+// may load here: URL parameters never authorize tools, publishing, or sign-in.
+if(!embedded){
+ const cardId=new URLSearchParams(location.search).get('sourceCard');
+ if(cardId&&/^[a-zA-Z0-9_-]{1,90}$/.test(cardId)){
+  Promise.resolve().then(async()=>{
+   try{
+    const {module,workspace}=await chatCardWorkspace();
+    const target=module.cards.find(card=>card.id===cardId);
+    if(target){
+     const opened=await workspace.open(target,false);
+     if(opened?.message)status.textContent=opened.message;
+    }
+   }catch(error){
+    status.textContent='Bubbles opened; this card could not be loaded inside chat.';
+   }
+  });
+ }
+}
 if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 

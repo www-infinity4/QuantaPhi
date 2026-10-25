@@ -1,0 +1,47 @@
+name: Integra X and Bubbles Card APK bridge
+on:
+  pull_request:
+    paths:
+      - 'quick-card-apk-bridge.mjs'
+      - 'quick-card-apk-bridge.css'
+      - 'integra-x-reply-policy.mjs'
+      - 'bubbles-ai.js'
+      - 'bubbles-provider-card.mjs'
+      - 'bubbles-provider-card.html'
+      - 'bubbles-card-catalog.mjs'
+      - 'test/bubbles-provider-card.test.mjs'
+      - 'test/quick-card-apk-bridge.test.mjs'
+      - 'test/integra-x-reply-policy.test.mjs'
+      - '.github/workflows/integra-quickcard-bridge.yml'
+      - 'index.html'
+      - 'source-quick-card.html'
+      - 'quanta-feed-card.html'
+      - 'quick-card-builder.html'
+      - 'bubbles-card-host.html'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check syntax of new public entry points
+        run: |
+          node --check quick-card-apk-bridge.mjs
+          node --check integra-x-reply-policy.mjs
+          node --check bubbles-provider-card.mjs
+          node --check bubbles-ai.js
+          node --check bubbles-card-catalog.mjs
+      - name: Verify URL safety, X reply consent, and replay protection
+        run: node --test test/quick-card-apk-bridge.test.mjs test/integra-x-reply-policy.test.mjs test/bubbles-provider-card.test.mjs
+      - name: Check all public card pages load the shared bridge
+        shell: bash
+        run: |
+          for page in index.html source-quick-card.html quanta-feed-card.html quick-card-builder.html bubbles-card-host.html; do
+            grep -q 'quick-card-apk-bridge.mjs' "$page"
+            grep -q 'quick-card-apk-bridge.css' "$page"
+          done

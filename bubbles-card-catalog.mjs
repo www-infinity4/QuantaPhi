@@ -70,6 +70,13 @@ export const cards=Object.freeze([
  app('mckee-coins','McKee Coins','/mckee-coins/','Mckee-Coins-Inc'),
  app('omni-tv','Omni TV','/omni-tv/','Omni-TV'),
  app('storybook','My Storybook','/storybook/','QuantaPhi',['storybook']),
+ app('google','Google','/bubbles-provider-card.html?provider=google','QuantaPhi',['google search','google bubbles']),
+ app('x','X','/bubbles-provider-card.html?provider=x','QuantaPhi',['twitter','x twitter','integra x']),
+ app('facebook','Facebook','/bubbles-provider-card.html?provider=facebook','QuantaPhi',['facebook page','facebook events']),
+ app('instagram','Instagram','/bubbles-provider-card.html?provider=instagram','QuantaPhi',['instagram reels','instagram profiles']),
+ app('tiktok','TikTok','/bubbles-provider-card.html?provider=tiktok','QuantaPhi',['tiktok videos','tiktok app']),
+ app('guess','GUESS','/bubbles-provider-card.html?provider=guess','QuantaPhi',['guess jeans','guess denim']),
+ app('pepe-jeans','Pepe Jeans','/bubbles-provider-card.html?provider=pepe-jeans','QuantaPhi',['pepe','pepe jeans']),
  app('builder-reserve','Builder Reserve','/builder-reserve/','Builder-Reserve')
 ].map(card=>Object.freeze(card)));
 export function findCard(name){
@@ -112,7 +119,7 @@ export function cardIntent(text){
  // "bring Media Star into chat so I can listen to Fred's Space".
  // Extract the registered card name; do not send the instruction to an LLM.
  q=q.replace(/^(?:(?:the|a|my|your)\s+)+/i,'')
-    .replace(/\s+(?:in|into|inside|on) (?:the |my )?(?:chat|conversation|screen|workspace)(?=$|[,:;]|\s+(?:so|that|because|then|to)\b)[\s\S]*$/i,'')
+    .replace(/\s+(?:in|into|inside|on) (?:the |my )?(?:chat|conversation|screen|workspace|bubble)(?=$|[,:;]|\s+(?:so|that|because|then|to)\b)[\s\S]*$/i,'')
     .replace(/\s+(?:so (?:that )?|because |then |to )(?:(?:i|we)\s+)?(?:can |could |want to |would like to )?(?:listen|hear|play|watch|use|open|see)\b[\s\S]*$/i,'')
     .replace(/\s+please$/i,'')
     .replace(/\s+(?:card|player|widget)$/i,'')
