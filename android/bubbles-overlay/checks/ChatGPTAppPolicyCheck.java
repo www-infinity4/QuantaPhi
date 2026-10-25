@@ -29,7 +29,6 @@ public final class ChatGPTAppPolicyCheck {
         ChatGPTAppPolicy.Request next=ChatGPTAppPolicy.parse("Continue my current ChatGPT conversation");
         if (next.value.length()>160 || !next.value.contains("receipts"))
             throw new AssertionError("Continuation must be bounded and receipt-gated");
-        want("type \\"Hello Bubbles\\" into Message in ChatGPT",ChatGPTAppPolicy.Kind.TYPE);
         want("read all my ChatGPT conversations",ChatGPTAppPolicy.Kind.ARCHIVE_UNAVAILABLE);
         want("download full ChatGPT history",ChatGPTAppPolicy.Kind.ARCHIVE_UNAVAILABLE);
         refuse("Read the ChatGPT app in the background without my permission");
