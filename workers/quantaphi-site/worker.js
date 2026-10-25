@@ -1,5 +1,4 @@
 import {videoAPI} from './video-api.mjs';
-import {BRAND_PRODUCT_CARDS,validBrandProduct} from '../../brand-product-cards.mjs';
 const EDGE_VERSION = 'quantaphi-org-service-20261024-walmart-v5';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
@@ -252,6 +251,71 @@ function rewriteSuiteText(text) {
 }
 // Social crawlers do not execute the browser app. Render topic metadata on the edge.
 const QP_PREVIEW_IMAGE = CANONICAL_ORIGIN + '/preview.png?v=20261008-share1';
+// Stable, approved share metadata for the six curated products. Duplicated here so
+// edge and legacy VM-based routing tests have no extra module imports or network dependency.
+// Regression tests compare these records with brand-product-cards.mjs to prevent drift.
+const QP_PRODUCT_SHARE=Object.freeze({
+ "pepe-brooke": {
+  "id": "pepe-brooke",
+  "brand": "Pepe Jeans",
+  "title": "Iconic Brooke · Low-Rise Slim Fit",
+  "price": "",
+  "region": "UK",
+  "description": "Classic low-rise slim denim with five-pocket stitching.",
+  "image": "https://images.pepejeans.com/dw/image/v2/BCDD_PRD/on/demandware.static/-/Sites-pjg-master-catalog/default/dw6862b90e/images/hi-res/PL2050628_4UA_000_06_MO.jpg?q=90&sw=600",
+  "checked": "2026-10-24"
+ },
+ "pepe-vapour": {
+  "id": "pepe-vapour",
+  "brand": "Pepe Jeans",
+  "title": "Vapour · Dark Blue Tapered Jeans",
+  "price": "",
+  "region": "India",
+  "description": "Dark-wash low-rise tapered jeans. Browse this exact colour and available sizes at the original source.",
+  "image": "https://d1pdzcnm6xgxlz.cloudfront.net/bottoms/8905875130871-15.jpg",
+  "checked": "2026-10-24"
+ },
+ "guess-g11-light": {
+  "id": "guess-g11-light",
+  "brand": "GUESS JEANS",
+  "title": "G11 · River Light Vintage Wash",
+  "price": "$89.00",
+  "region": "US",
+  "description": "Medium-rise wide leg with classic five-pocket construction and a soft light-denim finish.",
+  "image": "https://img.guess.com/image/upload/f_auto%2Cq_auto%2Cfl_strip_profile%2Cw_640%2Car_2%3A3%2Cc_fill/v1/NA/Style/ECOMM/W4BA0YD5CCA-GJRV",
+  "checked": "2026-10-24"
+ },
+ "guess-g11-dark": {
+  "id": "guess-g11-dark",
+  "brand": "GUESS JEANS",
+  "title": "G11 · Heritage Dark Wash",
+  "price": "$89.00",
+  "region": "US",
+  "description": "A dark-wash medium-rise wide-leg option with the original denim hardware and seams.",
+  "image": "https://guess.com.au/cdn/shop/files/W5RA0YD5M42-GJHR-ALT3.jpg?v=1768983059",
+  "checked": "2026-10-24"
+ },
+ "levis-501-dark": {
+  "id": "levis-501-dark",
+  "brand": "Levi’s",
+  "title": "501® Original Fit · Dark Wash",
+  "price": "$69.98",
+  "region": "US",
+  "description": "Straight-fit 501® jeans with the characteristic button fly and five-pocket design.",
+  "image": "https://lsco.scene7.com/is/image/lsco/005013373-front-gstk?fit=crop%2C0&fmt=jpeg&hei=1852&op_usm=0.6%2C0.6%2C8&qlt=70&resMode=bisharp&wid=2000",
+  "checked": "2026-10-24"
+ },
+ "levis-501-medium": {
+  "id": "levis-501-medium",
+  "brand": "Levi’s",
+  "title": "501® Original Fit · Medium Wash",
+  "price": "$84.95",
+  "region": "US",
+  "description": "A medium-wash version of the original straight-leg 501® denim silhouette.",
+  "image": "https://lsco.scene7.com/is/image/lsco/005013306-front-pdp?fit=crop%2C1&fmt=jpeg&hei=1840&op_usm=0.6%2C0.6%2C8&qlt=70&resMode=sharp2&wid=2000",
+  "checked": "2026-10-24"
+ }
+});
 function qpShareEscape(value) {
  return String(value || '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 }
@@ -270,7 +334,7 @@ function qpShareResponse(incoming) {
  // Only first-party, curated merchandise IDs can supply product metadata.
  // Ignore user-provided image, price, title and checkout overrides for products.
  const productId=qpSharePlain(incoming.searchParams.get('card'),70);
- const product=BRAND_PRODUCT_CARDS.find(p=>p.id===productId&&validBrandProduct(p))||null;
+ const product=Object.hasOwn(QP_PRODUCT_SHARE,productId)?QP_PRODUCT_SHARE[productId]:null;
  const search=product?'':qpSharePlain(incoming.searchParams.get('q'),320);
  const observedPrice=product?.price?product.price+' · checked '+product.checked:'Price at retailer';
  const title=product
