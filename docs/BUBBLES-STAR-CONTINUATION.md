@@ -1,28 +1,24 @@
-# Bubbles continuity contract — literal `*`
+# Owner `*`: Bubbles drives ChatGPT, ChatGPT owns the work
 
-Owner instruction (October 25, 2026): typing a single `*` in the main Bubbles conversation means **recover and continue recent unfinished, previously owner-authorized work**. Do not ask the owner to identify a repository or repeat an already recorded instruction. Do not invent a new product, ticket, consent, or work scope.
+Owner clarification on October 25, 2026: the single star `*` typed into Bubbles must open the owner's **signed-in ChatGPT browser history**, inspect the most recent owner conversations, and send a literal `*` to suitable unfinished conversations **in ChatGPT**. ChatGPT then uses its personal context and connected tools to finish coding, testing, and verifying existing builds. Bubbles is the browser driver / QA observer, **not** the primary coding executor for this command.
 
-## Existing implementation and data boundaries
+## Actual source path
 
-- Android Bubbles and the site use the same `bubbles-ai.js` chat. `*` is intercepted **before** the ordinary chat model, tool-call formatter, and general command classifier.
-- A verified Bubbles owner session first requests `POST /owner/conversation` with `mode=work-audit-reconcile`. This consults saved owner conversations and compares them with existing tickets. It is **read-only** and may report unmatched candidate work, never enqueue that text as a new ticket or infer consent from it.
-- Next, request `POST /work/tickets/list` from the existing Brain. It returns real persisted owner-partitioned tickets and job state; the client chooses recent unfinished work. Up to **eight distinct project slots** are tracked in a bounded working set.
-- Only an eligible **previously authorized** ticket/job can be submitted to `POST /work/run-next`. The Brain checks real job eligibility, dependencies, owner authorization, signed runner identity, repo leases, and receipt history. The client requests at most **one** dispatch for each `*` turn; the pre-existing Cloudflare Cron/Durable Object continues rechecking the queue while the APK is not running.
-- A locked, revoked, security-held, wallet/payment-sensitive, or approval-requiring task remains blocked. A commit without CI/deployment verification goes to verification, **never** a fresh duplicate write.
-- Status messages should be short and truthful: **Started**, **Finished**, or **Blocked**, with detailed receipts available in work history. Queued is not started on the GitHub runner; tests passed is not deployed.
+1. `bubbles-ai.js` intercepts a literal star before Bubbles' own job dispatcher and calls the owner-approved `bubbles-cloud-browser.mjs` ChatGPT continuation method.
+2. The owner-only browser UI has a one-tap **Open ChatGPT history · sign in once** control. The owner signs in to the correct ChatGPT account in the remote Chrome window with the existing sign-in method (for example, Continue with Google). Never embed the owner's email, password, cookies, OTPs, browser session tokens or login state in public repositories. Do not request passwords in a chat transcript.
+3. After browser consent and the separate five-day ChatGPT consent are valid, the owner can send `*`. The browser checks the first 40 **visible sidebar links**, in their displayed order, eight per wave. It rotates its ephemeral cursor to the next eight on a later star.
+4. For each visited chat the browser verifies same-origin conversation URL, idle assistant answer, unmodified composer, no pending owner decision and no recent prior `*`. It then types **only `*`**, confirms the just-submitted user turn appeared, and waits for a new stable assistant reply. It never sends arbitrary text through this specialized route.
+5. Bubbles receives observed browser and assistant-reply status; separate GitHub/Cloudflare/Android receipts establish implementation, CI, deployment and functional completion.
 
-## Concurrency and autonomy
+## Important execution boundaries
 
-The eight slots are independent **work tracks**, not eight ChatGPT accounts or browser sessions. The production Brain currently enforces a *global one-dispatch-per-five-minutes* automatic retry gate and per-repository leases. Do not bypass those gates merely to raise concurrency. Expand to parallel read-only research or independent CI inspection first; increase authenticated write concurrency only after load/lease tests and explicit deployment approval.
+- Eight are **sequential browser inspections**, not eight parallel ChatGPT sessions or guaranteed concurrently executing builds.
+- Sidebar visibility is not the full ChatGPT archive. The displayed sidebar order is the best available recency signal; no date/timestamp or private ChatGPT API is assumed.
+- The Bubbles browser batch requires a valid owner login and browser session. The ChatGPT desktop/app session and remote Cloudflare Chrome are **different** session profiles; signing in to one does not ensure the other is signed in.
+- The existing `bubbles-star-continuation.mjs` remains as a legacy Brain-ticket utility for explicit Robot Brain operations, but the `*` chat command no longer calls it. No deleted tickets or permissions changes.
+- Work continuing **when Bubbles is closed** is managed separately by the user's scheduled ChatGPT Continuity Builds task. It is not a guarantee of a logged-in remote Chrome session or continuous browser access.
+- Stop the batch from the visible owner panel. Never silently repeat a star if a submission receipt is lost.
 
-The Brain clock is already configured for every-minute Cloudflare Cron and 30-second Durable Object alarms. It does not need an Android microphone, open chat, or browser automation to wake the existing runner. A missing external credential may still block a job.
+## Release gates
 
-**ChatGPT personal context is separate from Bubbles' private owner archive.** ChatGPT can use personal-context retrieval when a user types `*` here; the Bubbles Worker cannot call that privileged context tool directly. A future supported ChatGPT/API connection must be separately authenticated and approved, pass only the minimum owner-scoped context, and never scrape ChatGPT pages/cookies or impersonate user sessions.
-
-## Verification before deployment
-
-1. Run `node --test test/bubbles-star-continuation.test.mjs` and existing Bubbles/Brain tests.
-2. With authenticated owner mode, type `*` in the website, then through Android Bubbles; ensure both use the **same authenticated endpoints**.
-3. Seed a verified ready ticket and a blocked security ticket; confirm only the approved job is requested and the security ticket remains blocked.
-4. Run the GitHub Action and inspect its actual claim, commit/PR/CI result, and production deployment separately. Restart the Android APK and confirm the saved conversations remain available.
-5. A browser/phone test, a GitHub dispatch acceptance, and a pending Cloudflare deployment are **not** completion evidence.
+Source commits, passing GitHub Actions, a live Cloudflare Worker version and an owner-authenticated Chrome/ChatGPT test are **independent checks**. Keep a draft PR and do not claim production activation until the correct source, Worker bindings, browser login, permissions, actual ChatGPT star submission and newest reply are all proved on a live owner session.
