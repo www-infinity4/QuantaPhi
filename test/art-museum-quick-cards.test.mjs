@@ -35,6 +35,6 @@ test('art cards use three title-aware research actions and preserve original act
  assert.match(js,/originalSearch\('Market'/);
  assert.match(js,/mountCardActions\(actions/);
  assert.match(js,/showSearch:false/);
- assert.match(js,/data\.sourceReady='true'/);
+ assert.match(js,/dataset\.sourceReady='true'/);
  assert.match(home,/art-museum-quick-cards\.mjs/);
 });
