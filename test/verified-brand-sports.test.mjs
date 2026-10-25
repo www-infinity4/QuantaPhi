@@ -65,3 +65,10 @@ test('on-card sports source headlines are restricted to attributed original host
  assert.equal(safeSportsArticle('https://mlb.com.evil.org/','mlb.com'),false);
  assert.equal(safeSportsArticle('https://name@mlb.com/news','mlb.com'),false);
 });
+
+test('Oracle opening selector is initialized before any eager hidden-bank images announce their cards',()=>{
+ const deck=read('oracle-card-deck.js');
+ const declaration=deck.indexOf('let openingCursor=null;');
+ const firstSourceScan=deck.indexOf('registerSourceCards();');
+ assert.ok(declaration>0 && firstSourceScan>declaration,'No temporary-dead-zone crash before chooser listeners mount');
+});
