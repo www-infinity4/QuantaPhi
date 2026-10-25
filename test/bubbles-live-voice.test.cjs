@@ -53,14 +53,23 @@ function harness(owner=false,speech=false,verified=true){
    return Response.json(await fixture.json(),{status:fixture.ok?200:500});
   },AbortController,setTimeout:()=>1,clearTimeout(){}};
  if(speech){context.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};context.speechSynthesis={cancel(){},getVoices:()=>[],speak(u){utterances.push(u);u.onstart?.()}};}
- vm.runInNewContext(gateSource,context);
- vm.runInNewContext(brainSource,context);
- vm.runInNewContext(appSource,context);
+ vm.createContext(context);
+ vm.runInContext(gateSource,context);
+ vm.runInContext(brainSource,context);
+ vm.runInContext(appSource,context);
+ // This legacy voice suite exercises an already verified owner/visitor session.
+ // Production authorization remains fail-closed; it is tested separately.
+ if(verified)vm.runInContext('setAccountEntry({ready:true})',context);
  const orb=nodes.find(n=>n.className==='ba-launcher');
  return {window,document,nodes,orb,requests,recognized,track,utterances,memoryRequests,catalogCalls,advance:ms=>{clock.now+=ms},setVoiceOwned:value=>{ownsVoice=value}};
 }
 const flush=async()=>{for(let i=0;i<40;i++)await Promise.resolve()};
 const result=s=>Object.assign([{transcript:s}],{isFinal:true});
+test('Unverified account entry cannot activate the website microphone',async()=>{
+ const h=harness(false,false,false);h.orb.handlers.click();await flush();
+ assert.equal(h.recognized.length,0,'microphone stays off before both accounts verify');
+ assert.equal(h.track.stopped,false,'no media track was opened');
+});
 test('Touching Bubbles starts continuous listening',async()=>{
  const h=harness();assert.equal(h.recognized.length,0);
  h.orb.handlers.click();await flush();assert.equal(h.recognized.length,1);
