@@ -7,7 +7,7 @@ const gateSource=fs.readFileSync('bubbles-voice-gate.js','utf8');
 const appSource=fs.readFileSync('bubbles-ai.js','utf8');
 const brainSource=fs.readFileSync('bubbles-brain-actions.js','utf8');
 
-function harness(owner=false,speech=false){
+function harness(owner=false,speech=false,verified=true){
  const clock={now:Date.now()};const FakeDate=class extends Date{static now(){return clock.now}};
  const utterances=[],memoryRequests=[],catalogCalls=[];let ownsVoice=true;const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
  const node=(tag)=>{
