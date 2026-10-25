@@ -284,7 +284,7 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch){
  const q=clean(body.request);
  const match=q.match(/\b([A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/\w[A-Za-z0-9_.-]{0,99})\b/);
  const repository=String(body.repository||match?.[1]||
-  (/\bquantaphi\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
+  (/\b(?:quanta\s?phi|quabtaphi|bubbles|quick\s*cards?|website\s+cards?|this\s+(?:site|website))\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
  if(!/^[A-Za-z0-9][A-Za-z0-9_.-]{0,38}\/[A-Za-z0-9_][A-Za-z0-9_.-]{0,99}$/.test(repository))
   return response(request,{ok:true,output:'Give me the public repository owner/name to inspect, for example www-infinity4/QuantaPhi.',receipt:{...receipt,status:'needs_input',reason:'repository_name_required',repositoryActionsVerified:false}});
  try{
@@ -331,7 +331,7 @@ export async function readGithubRepository(request,body,receipt,fetcher=fetch){
 export async function readGithubFile(request,body,receipt,fetcher=fetch){
  const q=clean(body.request,2500);
  const full=q.match(/\b([a-z0-9][a-z0-9_.-]{0,38}\/[a-z0-9_][a-z0-9_.-]{0,99})\b/i);
- const repo=String(body.repository||full?.[1]||(/\bquantaphi\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
+ const repo=String(body.repository||full?.[1]||(/\b(?:quanta\s?phi|quabtaphi|bubbles|quick\s*cards?|website\s+cards?|this\s+(?:site|website))\b/i.test(q)?'www-infinity4/QuantaPhi':'')).trim();
  const fileMatch=q.match(/\b(readme(?:\.md)?|(?:[a-z0-9_.-]+\/){0,6}[a-z0-9_.-]+\.(?:md|markdown|txt|html|css|js|json))\b/i);
  const requested=String(body.path||fileMatch?.[1]||'').trim();
  const path=/^readme(?:\.md)?$/i.test(requested)?'README.md':requested;
@@ -623,7 +623,7 @@ async function execute(request,env,body){
  // The model may choose one read-only registered tool, but never chooses a
  // repository writer, phone action, permission grant or arbitrary URL.
  // Deterministic requests above still take the fastest direct route.
- if(body.mcp===true&&tool==='oracle.chat'&&!isSourceDraftRequest(question)&&!isSourceReviewRequest(question)){
+ if(body.mcp===true&&tool==='oracle.chat'&&shouldSelectReadTool(question)&&!isSourceDraftRequest(question)&&!isSourceReviewRequest(question)){
   const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command,question),
    {location:body.location||body.context?.location||''});
   if(found&&found.receipt?.tool){
@@ -633,6 +633,13 @@ async function execute(request,env,body){
   }
  }
  return gptReply(request,env,clean(body.input,32000)||question,receipt,null,question);
+}
+// Avoid a redundant GPT tool-selector inference during ordinary chat.
+// Tools still require the existing schema validation and authorization.
+export function shouldSelectReadTool(question){
+ const q=clean(question,2500);
+ if(!q||/^(?:hi|hello|hey|thanks|thank you|okay|ok|yes|no|good morning|good night|how are you|who are you)[\s!?.]*$/i.test(q))return false;
+ return /\b(?:weather|forecast|temperature|rain|snow|wind|humid|chilly|coat|jacket|umbrella|outside|outdoors|current|latest|today|tonight|news|headlines|search|google|look\s+up|browse|find\s+online|source|citations?|web|resonan\w*|inductance|capacitance|henr(?:y|ies)|farads?|oscillat\w*|organic\s+comput\w*|recall|benchmark|mcp\s+tools?)\b/i.test(q);
 }
 async function runMcpRead(request,env,command,originalQuestion=''){
  // Never accept an arbitrary URL, tool name or authorizing role from a model.

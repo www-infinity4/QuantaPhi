@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {discoverProject,discoveryTerms,recordProjectView,relevantProjectViews,hasActionDraft} from '../bubbles-project-discovery.mjs';
+import {discoverProject,discoveryTerms,sourceQueryFor,recordProjectView,relevantProjectViews,hasActionDraft} from '../bubbles-project-discovery.mjs';
 import {hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
 const catalog=['www-infinity4/QuantaPhi','www-infinity4/ShopLC'];
 const hit={repository:catalog[0],path:'walmart-card.mjs',excerpt:'Walmart products'};
@@ -12,6 +12,33 @@ test('Walmart request searches owner source then reads the observed file before 
  assert.deepEqual(calls.map(x=>x.action),['search_github_code','read_repository','read_file']);
  assert.equal(calls[0].query,'walmart');assert.equal(calls[0].scope,'owner');
  assert.equal(found.repository,catalog[0]);assert.equal(found.path,hit.path);assert.equal(found.writeAuthorized,false);
+});
+test('Gary Cardone Church of I AM resolves the real card source across repository matches',async()=>{
+ const owned=['www-infinity4/QuantaPhi','www-infinity4/WidgetPhi'];
+ const seen=[];
+ const hits=[
+  {repository:owned[1],path:'browser/widgetphi-cardone.js',excerpt:'Cardone Capital quick card'},
+  {repository:owned[0],path:'church-iam-card.js',excerpt:'Church of I AM Gary Cardone original Sunday promotion'}
+ ];
+ const source=await discoverProject({request:'Fix the Gary Cardone Church of I AM card',catalog:owned,
+  invoke:async operation=>{
+   seen.push(operation);
+   if(operation.action==='search_github_code')return {ok:true,status:'code_search_results',results:hits};
+   if(operation.action==='read_repository')return {ok:true,headSha:'b'.repeat(40)};
+   if(operation.action==='read_file')return {ok:true,sha:'a'.repeat(40),content:'Church of I AM Gary Cardone official Sunday promotion'};
+   throw Error('unexpected action');
+  }});
+ assert.equal(seen[0].scope,'owner');
+ assert.equal(source.repository,owned[0]);
+ assert.equal(source.path,'church-iam-card.js');
+ assert.equal(source.card,'church-of-i-am');
+ assert.equal(source.writeAuthorized,false);
+});
+test('a natural follow-up reuses the card named in recent owner conversation',()=>{
+ const history=[{role:'user',text:'The Gary Cardone Church of I AM card needs attention.'},
+ {role:'assistant',text:'I will inspect the source.'}];
+ assert.match(sourceQueryFor('Fix that card',history),/Church of I AM/);
+ assert.equal(sourceQueryFor('Fix the Walmart card',history),'Fix the Walmart card');
 });
 test('missing source and genuinely ambiguous matches never silently select a repository',async()=>{
  for(const result of [{...search,results:[hit,{...hit,repository:catalog[1]}]}, {...search,results:[{...hit,repository:'attacker/project'}]}]){
