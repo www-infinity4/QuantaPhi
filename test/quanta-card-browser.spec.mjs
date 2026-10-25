@@ -146,6 +146,7 @@ test('title-based shortcuts keep carousel arrows in viewport without a generic c
  }));
  expect(queries).toHaveLength(3);
  expect(queries.every(q=>q.includes('Church of I AM')&&q.includes('Gary Cardone'))).toBeTruthy();
+ await page.locator('#oracleCardDeck').evaluate(e=>e.scrollIntoView({block:'start'}));
  const position=await stage.evaluate(e=>{e.scrollTop=e.scrollHeight;return {scroll:e.scrollTop,client:e.clientHeight,total:e.scrollHeight}});
  expect(position.total).toBeGreaterThan(position.client);
  const nav=page.locator('#oracleCardNext');
