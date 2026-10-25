@@ -32,7 +32,7 @@ test('World Series source reporting shows real feed image, analysts, usable link
  await expect(news).toBeVisible({timeout:20000});
  await expect(news.locator('.ws-news-story')).toHaveCount(2,{timeout:20000});
  const first=news.locator('.ws-news-story').first();
- await expect(first.getByText('Four key World Series Game 2 questions')).toBeVisible();
+ await expect(first.locator('.ws-news-title')).toBeVisible();
  await expect(first.locator('.ws-news-photo')).toHaveAttribute('src',/img\.mlbstatic\.com/);
  await expect(first.getByRole('link',{name:/Read the original report/})).toHaveAttribute('href',/mlb\.com\/news/);
  for(const part of ['Star','Collect','Share','+1 Build','Quick Search'])

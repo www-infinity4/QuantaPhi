@@ -1,4 +1,4 @@
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261025-title-search1';
 
 /* Independently curated product spotlights: original merchandise, publisher-hosted
  * photos and exact product links verified 2026-10-24. NOT paid retailer ads.

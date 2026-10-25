@@ -38,7 +38,7 @@
  showSunday();document.addEventListener('visibilitychange',()=>{if(!document.hidden)showSunday()});
  const actions=host.querySelector('#churchIamActions');
  if(actions){
-  import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
+  import('/quanta-card-actions.mjs?v=20261025-title-search1').then(({mountCardActions})=>{
    mountCardActions(actions,{
     id:'church-of-i-am',name:'Church of I AM · Gary Cardone',
     category:'Sunday conversations',official:'https://x.com/GaryCardone',

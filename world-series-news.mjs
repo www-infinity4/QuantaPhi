@@ -1,4 +1,4 @@
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261025-title-search1';
 
 /* World Series: publisher RSS article metadata, NOT a generic search-links card.
  * Refuses unverifiable content; photographs are only displayed if advertised by

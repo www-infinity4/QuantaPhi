@@ -1,4 +1,4 @@
-import {mountCardActions} from '/quanta-card-actions.mjs';
+import {mountCardActions} from '/quanta-card-actions.mjs?v=20261025-title-search1';
 import {makeShareButton,xShareLink} from '/quick-card-share.js?v=2';
 const host=document.getElementById('publishedQuickCard');const slug=host?.dataset.cardSlug;
 const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};

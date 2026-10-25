@@ -39,7 +39,7 @@ test('Sunday promo uses actual website-hosted image and standard actions, clear 
  assert.match(style,/iam-sheen/);
  assert.match(style,/prefers-reduced-motion/);
  assert.match(page,/church-iam-card\.css\?v=20261024-photo2/);
- assert.match(page,/church-iam-card\.js\?v=20261024-photo2/);
+ assert.match(page,/church-iam-card\.js\?v=20261025-one-tap1/);
 });
 
 test('direct portrait source, verified backup and readable fallback replace Cloudimage proxy',()=>{

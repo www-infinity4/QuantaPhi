@@ -41,7 +41,7 @@ test('show World Series publisher articles with feed-supplied photography, dates
 test('report cards are wired into both QuantaPhi and standalone trending explorer',()=>{
  for(const html of [home,detail]){
   assert.match(html,/id="googleTrendMlb"/);
-  assert.match(html,/world-series-news\.mjs\?v=20261024-rss1/);
+  assert.match(html,/world-series-news\.mjs\?v=20261025-one-tap1/);
   assert.match(html,/world-series-news\.css\?v=20261024-rss1/);
  }
  assert.match(workflow,/scripts\/sync_world_series\.py/);

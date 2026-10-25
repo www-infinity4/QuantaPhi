@@ -114,3 +114,63 @@ test('GUESS real denim purchase card and app-installer disclosure remain distinc
  await expect(page.getByRole('link',{name:'Install Bubbles in Chrome'})).toBeVisible();
  await expect(page.locator('#q')).toBeVisible();
 });
+
+test('Church of I AM uses one owned action toolbar on Android, not a duplicate outside the card',async({page})=>{
+ await page.goto(base+'/?card=iam',{waitUntil:'domcontentloaded'});
+ const stage=page.locator('#oracleCardStage');
+ const card=stage.locator('#churchOfIAmCard');
+ await expect(card).toBeVisible({timeout:20000});
+ const actions=card.locator('#churchIamActions .qca-toolbar');
+ await expect(actions).toHaveCount(1,{timeout:20000});
+ await expect(stage.locator('.qca-toolbar')).toHaveCount(1);
+ await expect(stage.locator('.oracle-card-actions')).toHaveCount(0);
+ for(const label of ['Star','Collect','Share','+1 Build','Quick Search']){
+  await expect(actions.getByText(label,{exact:false}).first()).toBeVisible();
+ }
+ await actions.getByRole('button',{name:/Star/}).click();
+ await expect(actions.getByRole('button',{name:/Starred/})).toBeVisible();
+});
+
+test('title-based shortcuts keep carousel arrows in viewport without a generic card search field',async({page})=>{
+ await page.goto(base+'/?card=iam',{waitUntil:'domcontentloaded'});
+ const stage=page.locator('#oracleCardStage'),card=stage.locator('#churchOfIAmCard');
+ await expect(card).toBeVisible({timeout:20000});
+ const toolbar=card.locator('.qca-toolbar');
+ await expect(toolbar).toBeVisible({timeout:20000});
+ await expect(toolbar.locator('input[type="search"]')).toHaveCount(0);
+ const links=toolbar.locator('.qca-search-links a');
+ await expect(links).toHaveCount(3);
+ const queries=await links.evaluateAll(nodes=>nodes.map(n=>{
+  const u=new URL(n.href);
+  return u.searchParams.get('q')||u.searchParams.get('search_query');
+ }));
+ expect(queries).toHaveLength(3);
+ expect(queries.every(q=>q.includes('Church of I AM')&&q.includes('Gary Cardone'))).toBeTruthy();
+ await page.locator('#oracleCardDeck').evaluate(e=>e.scrollIntoView({block:'start'}));
+ const position=await stage.evaluate(e=>{e.scrollTop=e.scrollHeight;return {scroll:e.scrollTop,client:e.clientHeight,total:e.scrollHeight}});
+ expect(position.total).toBeGreaterThan(position.client);
+ const nav=page.locator('#oracleCardNext');
+ await expect(nav).toBeVisible();
+ const bounds=await nav.boundingBox();
+ expect(bounds).not.toBeNull();
+ expect(bounds.y).toBeGreaterThanOrEqual(0);
+ expect(bounds.y+bounds.height).toBeLessThanOrEqual(844);
+ await nav.click();
+ await expect(page.locator('#oracleCardNow')).not.toContainText('Church of I AM');
+ expect(await stage.evaluate(e=>e.scrollTop)).toBe(0);
+});
+
+test('native in-card video gets a muted playback attempt when activated',async({page})=>{
+ await page.goto(base+'/?card=iam',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage #churchOfIAmCard');
+ await expect(card).toBeVisible({timeout:20000});
+ await card.evaluate(node=>{
+  const video=document.createElement('video');
+  video.play=()=>{video.dataset.playAttempted='yes';return Promise.resolve()};
+  node.append(video);
+ });
+ const video=card.locator('video');
+ await expect(video).toHaveAttribute('data-play-attempted','yes');
+ await expect(video).toHaveAttribute('muted','');
+ await expect(video).toHaveAttribute('playsinline','');
+});

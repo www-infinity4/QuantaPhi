@@ -17,7 +17,7 @@ assert.match(deck,/cardoneButton\?\.addEventListener\('click'/);
 assert.match(deck,/show\(entry\)/);
 assert.match(deck,/entries\.find\(x=>x\.id===spotlightRequested/);
 assert.doesNotMatch(html,/class="oracle-card-deck-feature"/);
-assert.match(html,/oracle-card-deck\.js\?v=20261024-real-products1/);
+assert.match(html,/oracle-card-deck\.js\?v=20261025-sticky-player1/);
 assert.match(css,/\.oracle-card-deck-active[^\n]*#cardoneCapitalOffer/);
 assert.match(css,/\.oracle-shelf-open[^\n]*#cardoneCapitalOffer/);
 
@@ -59,3 +59,8 @@ assert.match(html,/class=\"search\" role=\"search\"/);
 assert.ok(html.indexOf('class=\"search\"')<html.indexOf('id=\"qtraffic\"'),'Search must lead before traffic counters');
 assert.doesNotMatch(html,/<section class=\"q-bubbles-entry\"/);
 assert.match(deck,/connectQuant\(\{select:true,revision\}\)/);
+
+// A card with its own toolbar must not get a second row of Star/Collect/Share/Build/Search.
+assert.match(deck,/function hasBuiltInCardActions\(node\)/);
+assert.match(deck,/#churchIamActions/);
+assert.match(deck,/!hasBuiltInCardActions\(entry\.node\)/);
