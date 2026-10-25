@@ -1,4 +1,4 @@
-import {chooseContinuation,snapshotKey,classifyReply} from './bubbles-chatgpt-continuity.mjs';
+import {chooseContinuation,snapshotKey,classifyReply,nextEightConversations} from './bubbles-chatgpt-continuity.mjs';
 // Bubbles owner-only interactive Cloudflare Browser Run panel.
 // The browser page is real hosted Chrome Live View, not an ordinary iframe
 // pretending to click cross-origin websites. Provider logins stay in Chrome.
@@ -112,18 +112,19 @@ export function mount({host,ownerHeaders,reveal=false}){
  const approveBridge=element('button','Allow ChatGPT to use Bubbles · 5 days');
  const revokeBridge=element('button','Revoke ChatGPT access');
  for(const b of [approveBridge,revokeBridge]){b.type='button';b.style.cssText='min-height:44px;padding:8px 10px;margin:3px;border:1px solid #6d579b;border-radius:9px;background:#fff;color:#362657'}
- const continueChats=element('button','Continue unfinished ChatGPT conversations');
+ const openHistory=element('button','Open ChatGPT history · sign in once');
+ const continueChats=element('button','Continue next 8 ChatGPT conversations');
  const stopContinuations=element('button','Stop conversation follow-ups');
  const continuationStatus=element('p','No ChatGPT continuations have run.');
  continuationStatus.setAttribute('role','status');
  continuationStatus.style.cssText='font-size:13px;line-height:1.5;margin:8px 0;white-space:pre-wrap';
- for(const button of [continueChats,stopContinuations]){
+ for(const button of [openHistory,continueChats,stopContinuations]){
   button.type='button';button.style.cssText='min-height:44px;padding:9px 11px;margin:3px;border:1px solid #a9423b;border-radius:10px;background:#fff;color:#362657';
  }
  stopContinuations.disabled=true;
  const bridgeNote=element('p','Allows authenticated Cloudflare account tools to send browser requests and messages into this Bubbles session for five days. Bubbles must be open for tasks to run. Browser passwords, payments and permission confirmations still require you. Commands and text results are recorded in your private Cloudflare D1.');
  bridgeNote.style.cssText='font-size:12px;line-height:1.5';
- bridge.append(bridgeTitle,bridgeStatus,approveBridge,revokeBridge,continueChats,stopContinuations,continuationStatus,bridgeNote);wrap.append(bridge);
+ bridge.append(bridgeTitle,bridgeStatus,approveBridge,revokeBridge,openHistory,continueChats,stopContinuations,continuationStatus,bridgeNote);wrap.append(bridge);
  let chatgptApproved=false,bridgePolling=false;
  const consumerState=(state,message)=>{
   wrap.dataset.bridgeConsumer=state;bridgeStatus.textContent=message;
@@ -338,7 +339,7 @@ export function mount({host,ownerHeaders,reveal=false}){
  // Owner-started batch: no per-chat taps, no automatic sending into already
  // completed threads, and no invented success. Only visible sidebar chats can
  // be inspected; another device or a fresh cloud Chrome session requires sign-in.
- let continuationRunning=false,stopRequested=false;
+ let continuationRunning=false,stopRequested=false,continuationCursor=0;
  // Ephemeral, per-owner-page dedupe; the ChatGPT DOM also guards recent '*'
  // messages across refreshes. Never store private chat text or URLs in storage.
  const continuationSentKeys=new Set();
@@ -355,11 +356,22 @@ export function mount({host,ownerHeaders,reveal=false}){
    if(!state){
     const opened=await call('start',{url:destinations.chatgpt});
     show(opened);
+   }else{
+    const nav=await call('navigate',{url:destinations.chatgpt});
+    if(nav.result?.navigationRequested!==true)throw Error('chatgpt_navigation_unverified');
    }
-   const overview=await call('chatgpt_scan');
-   const conversations=(overview.result?.conversations||[]).slice(0,20);
-   if(!conversations.length)throw Error('No visible conversations. Sign in through Cloud Chrome, open the ChatGPT sidebar, then run again.');
-   continuationStatus.textContent='Found '+conversations.length+' visible conversations. Checking unfinished work…';
+   let overview=null;
+   for(let attempt=0;attempt<9&&!stopRequested;attempt++){
+    await pause(500);
+    const scanned=await call('chatgpt_scan');
+    if((scanned.result?.conversations||[]).length){overview=scanned;break}
+   }
+   const available=(overview?.result?.conversations||[]).slice(0,40);
+   const batch=nextEightConversations(available,{cursor:continuationCursor});
+   const conversations=batch.conversations;
+   if(!conversations.length)throw Error('No visible ChatGPT history. Sign in interactively, open the sidebar, then continue.');
+   continuationCursor=batch.cursor;
+   continuationStatus.textContent='Inspecting '+conversations.length+' recent conversations (group '+(batch.from+1)+' of '+batch.total+' visible).';
    const seen=new Set();
    for(const item of conversations){
     if(stopRequested)break;
@@ -388,7 +400,7 @@ export function mount({host,ownerHeaders,reveal=false}){
       continue;
      }
      const key=snapshotKey(snapshot);
-     const result=await call('chatgpt_resume',{text:'*'});
+     const result=await call('chatgpt_resume',{text:'*',conversationUrl:item.url});
      // If Chrome sent a click but lost its receipt, never resend blindly.
      continuationSentKeys.add(key);
      if(result.result?.submissionVerified!==true)throw Error(result.result?.error||'follow_up_not_observed');
@@ -437,6 +449,11 @@ export function mount({host,ownerHeaders,reveal=false}){
     '. Owner session, five-day consent and ChatGPT sign-in must all be valid.';
   }finally{continuationRunning=false;continueChats.disabled=false;stopContinuations.disabled=true;}
  }
+ openHistory.addEventListener('click',()=>{
+  advanced.open=true;wrap.hidden=false;
+  address.value=destinations.chatgpt;
+  void action(state?'tab':'start',{url:destinations.chatgpt});
+ });
  continueChats.addEventListener('click',()=>void runChatGPTContinuations());
  stopContinuations.addEventListener('click',()=>{stopRequested=true;continuationStatus.textContent='Stopping after the current browser request…';});
 
