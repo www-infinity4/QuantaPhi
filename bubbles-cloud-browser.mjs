@@ -209,7 +209,7 @@ export function mount({host,ownerHeaders,reveal=false}){
    try{
      const response=await fetch(SERVICE,{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify({action,...(state||{}),...extra}),signal:controller.signal,cache:'no-store'});
      const result=await response.json();
-     if(!response.ok||result.ok!==true)throw Error(result.error==='browser_binding_not_deployed'?'Cloud browser deployment or binding is not active yet.':result.error||'browser_request_failed');
+     if(!response.ok||result.ok!==true)throw Error(result.error==='browser_binding_not_deployed'?'Cloud browser deployment or binding is not active yet.':result.error||result.result?.error||'browser_request_failed');
      return result;
    }finally{clearTimeout(timeout);}
  }
