@@ -19,15 +19,15 @@ export async function publicXRead(env){
   const items=(Array.isArray(inbox.items)?inbox.items:[]).slice(0,30).filter(p=>
    typeof p.id==='string'&&/^\d{15,22}$/.test(p.id)&&p.url==='https://x.com/YahooPingcwlz/status/'+p.id&&typeof p.body==='string')
    .map(p=>({id:p.id,url:p.url,text:p.body.slice(0,2000),observedAt:p.observed_at}));
-  const scan=health.readStatus||{},fresh=scan.status==='public_posts_observed';
+  const scan=health.readStatus||{},fresh=scan.status==='public_posts_observed',manual=scan.status==='manual_browser_verified';
   const status=fresh?'complete':'partial';
   const output='Your public X reader uses the Cloudflare cloud browser. '+
-   (fresh?'The last scan observed public posts. ':'The latest scan was blocked; these are previously saved posts, not a fresh timeline read. ')+
+   (fresh?'The last scheduled scan observed public posts. ':manual?'An independent manual cloud-browser scan observed public posts; a scheduled scan is not verified by that receipt. ':scan.status==='blocked'?'The latest scan was blocked; these are previously saved posts, not a fresh timeline read. ':'A successful fresh timeline scan has not been verified. ')+
    (scan.last_success?'Last successful scan: '+scan.last_success+'. ':'')+
    'This inbox contains candidate Bubbles requests, not your complete feed. '+
    (items.length?items.map(p=>p.text+' ('+p.url+')').join('\n'):'No saved candidate posts are available.')+
    ' Reading these posts does not submit or execute a Brain job.';
   return {ok:true,output,items,readStatus:scan,sources:items.map(p=>({url:p.url,title:'Public X post by @YahooPingcwlz'})),
-   receipt:{tool:'public_x.read',status,provider:'Cloudflare Browser Run public profile',cached:true,freshScanTriggered:false,completeHistory:false,scope:'candidate_inbox',repositoryActionsVerified:false,executed:false}};
+   receipt:{tool:'public_x.read',status,provider:'Cloudflare Browser Run public profile',cached:true,freshScanTriggered:false,completeHistory:false,scope:'candidate_inbox',lastScanProvenance:manual?'manual_browser':fresh?'scheduled_browser':'unverified_or_blocked',repositoryActionsVerified:false,executed:false}};
  }catch{return {ok:false,output:'The Cloudflare public X reader could not be reached. I have not verified a fresh Twitter read.',receipt:{tool:'public_x.read',status:'failed',repositoryActionsVerified:false}};}
 }
