@@ -83,3 +83,36 @@ test('pasted read_repo/search action envelopes are rejected as replies without b
  assert.equal(hasModelToolLeak('{"action":"search","parameters":{"query":"Walmart","top_n":10}}'),true);
  assert.equal(hasActionDraft('I found the Walmart card and read its source.'),false);
 });
+
+test('large owner inventory is not required for verified cross-repository source discovery',async()=>{
+ const hits=[{repository:'www-infinity4/QuantaPhi',path:'church-iam-card.js',excerpt:'Church of I AM Gary Cardone Sunday promotion'}];
+ const calls=[];
+ const found=await discoverProject({request:'Fix Gary Cardone Church of I AM',catalog:null,invoke:async command=>{
+  calls.push(command);
+  if(command.action==='search_github_code'){
+   // The full conjunctive query misses indexed source; the shorter query finds it.
+   return {ok:true,status:'code_search_results',results:command.query==='gary cardone'?hits:[]};
+  }
+  if(command.action==='read_repository')return {ok:true,headSha:'b'.repeat(40)};
+  if(command.action==='read_file')return {ok:true,sha:'a'.repeat(40),content:'Gary Cardone Church of I AM Sunday promotion'};
+  throw Error('unexpected operation');
+ }});
+ assert.equal(found?.repository,'www-infinity4/QuantaPhi');
+ assert.deepEqual(calls.slice(0,2).map(x=>x.query),['gary cardone church','gary cardone']);
+ assert.equal(calls[2].action,'read_repository');
+ assert.equal(calls[3].action,'read_file');
+ assert.equal(found.writeAuthorized,false);
+});
+test('source discovery without catalog never accepts results from another owner',async()=>{
+ const found=await discoverProject({request:'Fix Walmart card',catalog:null,
+  invoke:async()=>({ok:true,status:'code_search_results',
+   results:[{repository:'stranger/Walmart',path:'walmart-card.js',excerpt:'Walmart'}]})});
+ assert.equal(found,null);
+});
+test('Bubbles begins source discovery without waiting for the full owner catalog',()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const routing=ui.slice(ui.indexOf('async function suggestRepositoryTargets('),ui.indexOf('async function loadRepositoryCatalog('));
+ assert.match(routing,/catalog:repositoryCatalogComplete\?repositoryCatalog:null/);
+ assert.doesNotMatch(routing,/if\(!repositoryCatalogComplete\)await loadRepositoryCatalog\(\);\s*if\(repositoryCatalogComplete\)/);
+ assert.match(ui,/last time\|continue\|resume/);
+});

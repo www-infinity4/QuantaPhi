@@ -10,7 +10,7 @@ function setup(fetcher){
 }
 test('current query gets its own bounded request while background synchronization is busy',async()=>{
  const scope=setup(async(url,options,timeout)=>{
-  assert.equal(timeout,1300);assert.equal(options.headers.Authorization,'Bearer fixture');
+  assert.equal(timeout,3000);assert.equal(options.headers.Authorization,'Bearer fixture');
   const body=JSON.parse(options.body);assert.equal(body.query,'recording');assert.equal(body.sessionId,'thread-a');assert.deepEqual(body.messages,[]);
   return Response.json({ok:true,related:[{text:'recording memory'}],userInstructions:[],capabilities:[]});
  });
@@ -40,4 +40,14 @@ test('owner or thread changes discard an in-flight private response',async()=>{
 test('missing owner verification cannot make a private request',async()=>{
  const scope=setup(async()=>{throw Error('must not call')});scope.ownerReady=false;
  assert.equal((await scope.currentOwnerContext('query')).state,'unavailable');
+});
+
+test('older-work recall allows a longer bounded fetch window',async()=>{
+ const scope=setup(async(url,options,timeout)=>{
+  assert.equal(timeout,6500);assert.equal(JSON.parse(options.body).query,'continue the previous repair');
+  return Response.json({ok:true,related:[{text:'prior repair state'}],userInstructions:[],capabilities:[]});
+ });
+ const result=await scope.currentOwnerContext('continue the previous repair');
+ assert.equal(result.state,'retrieved');
+ assert.equal(result.related[0].text,'prior repair state');
 });
