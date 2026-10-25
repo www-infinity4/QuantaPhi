@@ -2,14 +2,17 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
+import {ContinuationSupervisor} from '../workers/bubbles-cloud-browser/continuation.mjs';
 const source=readFileSync('workers/bubbles-cloud-browser/consent.mjs','utf8');
-const transformed=source.replace("import {DurableObject} from 'cloudflare:workers';",'').replace('export class BrowserConsentStore','class BrowserConsentStore')+'\nthis.BrowserConsentStore=BrowserConsentStore;';
-const context={DurableObject:class{},Date:{now:()=>1000000},console};
+const transformed=source.replace("import {DurableObject} from 'cloudflare:workers';",'').replace("import {ContinuationSupervisor} from './continuation.mjs';",'').replace('export class BrowserConsentStore','class BrowserConsentStore')+'\nthis.BrowserConsentStore=BrowserConsentStore;';
+const context={ContinuationSupervisor,DurableObject:class{},Date:{now:()=>1000000},console};
 vm.runInNewContext(transformed,context);
 function instance(){
  const records=new Map();
  const x=new context.BrowserConsentStore();
- x.ctx={storage:{get:async k=>records.get(k),put:async(k,v)=>records.set(k,v)}};
+ const storage={get:async k=>records.get(k),put:async(k,v)=>records.set(k,v)};
+ storage.transaction=async fn=>fn(storage);storage.deleteAlarm=async()=>{};
+ x.ctx={storage};
  return x;
 }
 test('five-day permission is explicit, scope-limited, expires, and revokes on server',async()=>{

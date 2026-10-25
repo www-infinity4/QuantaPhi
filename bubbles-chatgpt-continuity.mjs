@@ -59,12 +59,33 @@ export function nextEightConversations(visible,{cursor=0,size=8}={}){
  * Only select an exact official origin, never an arbitrary Chrome tab.
  * Account verification is still performed by the owner-gated DOM action.
  */
-export function selectChatGPTSignInTab(tabs,currentId=''){
+const openAIOrigin=value=>{
+ try{const u=new URL(value);return !u.username&&!u.password&&['https://chatgpt.com','https://auth.openai.com'].includes(u.origin);}catch{return false;}
+};
+function googleFlow(url){
+ let page=url,verified=false;
+ for(let depth=0;depth<4;depth++){
+  for(const key of ['redirect_uri','app_domain']){
+   const value=page.searchParams.get(key);
+   if(value){if(!openAIOrigin(value))return 'foreign';verified=true;}
+  }
+  const next=page.searchParams.get('continue');if(!next)return verified?'openai':'unknown';
+  if(openAIOrigin(next))return 'openai';
+  try{page=new URL(next);if(page.origin!=='https://accounts.google.com')return 'foreign';}catch{return 'unknown';}
+ }
+ return verified?'openai':'unknown';
+}
+export function selectChatGPTSignInTab(tabs,currentId='',{trustedAuthTargetIds=[]}={}){
  const allowed=[];
  for(const tab of Array.isArray(tabs)?tabs:[]){
   if(typeof tab?.id!=='string'||!tab.id||typeof tab.url!=='string')continue;
   let page;try{page=new URL(tab.url)}catch{continue}
+  if(page.username||page.password)continue;
   if(!['https://chatgpt.com','https://auth.openai.com','https://accounts.google.com'].includes(page.origin))continue;
+  if(page.origin==='https://accounts.google.com'){
+   const flow=googleFlow(page);
+   if(flow==='foreign'||(flow!=='openai'&&!trustedAuthTargetIds.includes(tab.id)))continue;
+  }
   allowed.push({id:tab.id,origin:page.origin,path:page.pathname});
  }
  const providers=allowed.filter(t=>t.origin!=='https://chatgpt.com');

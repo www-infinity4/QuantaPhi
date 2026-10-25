@@ -7,7 +7,7 @@ class Element {
  append(...items){for(const item of items){if(item.parent)item.parent.children=item.parent.children.filter(x=>x!==item);item.parent=this;this.children.push(item);}}
  setAttribute(){} removeAttribute(){} addEventListener(name,fn){this.listeners[name]=fn;}
 }
-async function exercise({approved,proof=true,slow=false}){
+async function exercise({approved,proof=true,slow=false,restore=false}){
  const originals=Object.fromEntries(['document','window','fetch','setInterval','CustomEvent'].map(k=>[k,globalThis[k]]));
  const calls=[],intervals=[],events=[];
  let release;
@@ -24,18 +24,19 @@ async function exercise({approved,proof=true,slow=false}){
    assert.equal(options.headers.Authorization,'Bearer owner-fixture');
    const body=JSON.parse(options.body);calls.push({url,body});
    if(url.endsWith('/permission'))return Response.json({ok:true,enabled:approved,expiresAt:Date.now()+86400000});
+   if(url.endsWith('/continuity'))return body.action==='view'?
+    Response.json({ok:true,sessionId:'11111111-1111-4111-8111-111111111111',targetId:'history',proof:'a'.repeat(64),url:'https://live.browser.run/fixture'}):
+    Response.json({ok:true,running:restore,phase:restore?'watching':'off'});
+   if(url.endsWith('/v1/browser')){
+    assert.equal(body.proof,'a'.repeat(64));assert.equal(body.sessionId,'11111111-1111-4111-8111-111111111111');
+    return Response.json({ok:true,result:{ok:true,navigationRequested:true}});
+   }
    if(url.endsWith('/process')){if(slow)await pending;return Response.json({ok:true,jobId:'chatgpt_fixture_12345',status:'needs_bubbles_reply',message:'connection check'});}
    if(url.endsWith('/complete'))return Response.json({ok:true,status:'complete'});
    throw Error('unexpected_request');
   };
-  // A data: URL has no filesystem base; resolve the new local policy module
-  // explicitly while still exercising the real, unmodified application logic.
-  const policyURL=new URL('../bubbles-chatgpt-loop.mjs',import.meta.url).href;
-  const originalSource=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
-  assert.match(originalSource,/from '\.\/bubbles-chatgpt-loop\.mjs'/);
   const selectorURL=new URL('../bubbles-chatgpt-continuity.mjs',import.meta.url).href;
-  const source=originalSource
-   .replace("from './bubbles-chatgpt-loop.mjs'","from '"+policyURL+"'")
+  const source=fs.readFileSync('bubbles-cloud-browser.mjs','utf8')
    .replace("from './bubbles-chatgpt-continuity.mjs'","from '"+selectorURL+"'");
   const mod=await import('data:text/javascript;base64,'+Buffer.from(source+'\n// '+Math.random()).toString('base64'));
   mod.mount({host:new Element(),ownerHeaders:async()=>proof?{Authorization:'Bearer owner-fixture'}:null});
@@ -47,6 +48,7 @@ async function exercise({approved,proof=true,slow=false}){
    release();
   }
   for(let i=0;i<10;i++)await new Promise(resolve=>setImmediate(resolve));
+  if(restore)await mod.browserConversation('open Gemini',{host:new Element(),ownerHeaders:async()=>({Authorization:'Bearer owner-fixture'})});
   return {calls,events};
  }finally{for(const [key,value] of Object.entries(originals)){if(value===undefined)delete globalThis[key];else globalThis[key]=value;}}
 }
@@ -59,7 +61,7 @@ test('hidden but open approved Bubbles receives and completes a real bridge mess
 });
 test('hidden page with revoked approval never processes a queued message',async()=>{
  const {calls,events}=await exercise({approved:false});
- assert.equal(events.length,0);assert.ok(calls.every(x=>x.url.endsWith('/permission')));
+ assert.equal(events.length,0);assert.ok(calls.every(x=>x.url.endsWith('/permission')||x.url.endsWith('/continuity')));
  assert.ok(calls.every(x=>x.body.action==='status'));
 });
 test('missing owner proof cannot fetch permissions or process messages',async()=>{
@@ -71,4 +73,9 @@ test('slow background request keeps one flight across overlapping timer ticks',a
  assert.equal(calls.filter(x=>x.url.endsWith('/process')).length,1);
  assert.equal(calls.filter(x=>x.url.endsWith('/complete')).length,1);
  assert.equal(events.length,1);
+});
+test('a fresh Bubbles page restores the owner-only view proof and can operate the same browser session',async()=>{
+ const {calls}=await exercise({approved:true,restore:true});
+ const continued=calls.find(x=>x.url.endsWith('/v1/browser'));
+ assert.equal(continued.body.action,'navigate');assert.equal(continued.body.proof,'a'.repeat(64));
 });

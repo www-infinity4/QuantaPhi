@@ -8,58 +8,76 @@ this command does not dispatch Bubbles' internal repository builder.
 
 The expected Google account comes from the private `CHATGPT_LOGIN_EMAIL` Worker
 secret. The identifier is returned only by the existing owner-authenticated
-`POST /v1/browser/chatgpt/account` endpoint, with no-store responses. Do not put
-its value in the public repository, test fixtures, or workflow output.
+`POST /v1/browser/chatgpt/account` endpoint, with no-store responses. Passwords,
+MFA, CAPTCHA and unexpected consent stay in the owner's live sign-in page.
 
-Bubbles reuses an available ChatGPT tab in its current approved Chrome session.
-Fixed DOM actions can click the OpenAI Google sign-in button, choose the exact
-configured Google account, or enter that email on accounts.google.com. Passwords,
-MFA, CAPTCHAs, unexpected permissions, and an unverifiable or different account
-require the owner in the live browser. No password, cookie, token, or hidden
-provider state is read or exported. The exact email must be observed in the
-ChatGPT account menu before the history loop starts.
+OAuth popups must show an OpenAI redirect/app-domain relationship. Verified
+authentication target IDs remain scoped to that flow across later redirects;
+unrelated official Google tabs cannot become the login destination.
 
-Cloudflare Browser Run currently provides a **temporary Chrome session**, not a
-persistent profile inherited from the owner's phone or desktop browser. A new
-session can require another interactive Google login. This implementation does
-not claim persistent sign-in or execution after the Bubbles page is closed.
+Bubbles reuses the current approved Browser Run session. A scoped server job
+keeps that session active after the Bubbles page or Android WebView closes.
+The Durable Object retains its session/target references and reconnects after
+object eviction. Google cookies remain inside Browser Run; they are not exported
+into checkpoints. A Browser Run rollout, crash or explicit close can destroy the
+profile. Such a loss pauses the job rather than silently creating a new signed-out
+browser. An explicit owner restart may create a replacement after a confirmed
+ended-session response. General transport failures preserve the existing session.
 
-## Continuation loop
+## Standing authorization
 
-1. Require the existing owner verifier and both active five-day grants. Every
-   browser action rechecks them on the server. The generic tools gateway cannot
-   bypass the ChatGPT grant; no grant is silently enabled or extended.
-2. Read visible sidebar conversation links and pin the first eight unique valid
-   conversation URLs. The same set is revisited so the bot's own messages cannot
-   reorder the sidebar into duplicate work. Older history is not an archive API.
-3. Reuse or create a separate tab for each conversation, keeping active replies
-   mounted. Inspect each tab serially, then revisit the same eight every minute.
+Every owner command uses the existing Brain owner verifier. Starting also proves
+ownership of the specific browser session. The resulting server job has exactly
+one capability: inspect the selected history and submit literal `*` to at most
+eight pinned conversations. Its deadline is the earlier of the two existing
+five-day grants. Each alarm and send guard rechecks those grants and the current
+job ID. Stop and either revocation cancel the alarm. No grant is silently enabled,
+renewed, or widened into general GitHub, wallet or browser control. No owner
+bearer/proof is retained by the background job.
+
+## Durable loop and receipts
+
+1. Use fixed sign-in/account steps and require the configured email to be observed
+   in ChatGPT's account menu. A missing or different account pauses for owner input.
+2. Pin the first eight unique valid conversation URLs from the visible history
+   sidebar. Missing sidebar means no selection. Links pasted into a transcript
+   cannot become history. Older history remains available to ChatGPT normally.
+3. Reuse or create one tab per selected conversation. One alarm inspects one tab
+   every 15 seconds, preserving active replies and keeping Chrome available.
 4. Send only `*` for explicit unfinished work in a completed assistant turn.
-   Preserve drafts and wait for active generation or unanswered user requests.
-   Questions requiring owner information remain blocked for owner input.
-5. Recheck the exact conversation and expected message count at send time; claim
-   the composer atomically, insert only `*`, and require exactly that text at
-   Send. A new user turn at or after the previous message count must contain the
-   star in the exact same conversation. Fast assistant replies are supported.
-6. Require a new completed assistant turn observed twice before a later nudge.
-   Enforce a two-minute per-chat cooldown; unchanged replies, uncertain sends,
-   revoked approval, and transport failures cannot cause blind retries. Stop
-   cancels pending waits and prevents the next send.
+   Preserve textarea/contenteditable drafts, active generation, unanswered owner
+   turns, and prompts requiring owner details.
+5. Recheck exact conversation URL, expected message count and a per-editor claim
+   synchronously at Prepare and Send. Verify a new user star in that same chat;
+   a click or a fast assistant reply alone is insufficient.
+6. Persist the sending phase before external I/O. An alarm retry after an uncertain
+   send must pause, never resend. Use hashes and message counts for duplicate,
+   unchanged-answer, completed-reply stability and two-minute cooldown guards.
+7. Restore a fresh owner-only browser view/proof when Bubbles reopens. Status
+   summaries contain counts and fixed phase/error codes, without chat URLs,
+   titles, messages or live-view credentials. Durable checkpoints contain only
+   the necessary private session/tab/conversation references, hashes and counters.
 
-All conversation checkpoints and tab references remain in memory. They are not
-persisted into browser storage, public workflow logs, or the private bridge queue.
-Cross-device dedupe and a persistent background browser remain separate work.
+ChatGPT answers never prove a repository commit, passing CI, deployment, APK
+installation, or completed work. Those require the relevant executor receipts.
 
-## Evidence and release
+## First-party preview and release
 
-Local source verification covers 126 tests for sign-in/account isolation, real
-CDP request/receipt handling, the loop, drafts, active generation, changed turns,
-fast replies, cooldowns, stop, consent expiry/revocation, and existing bridge,
-conversation, and Brain behavior. These tests use controlled fixtures.
+The existing browser Worker can serve an isolated preview under
+`/bubbles-continuity-preview/bubbles.html` on QuantaPhi. Build-time
+`CONTINUITY_PREVIEW_SOURCE_SHA` pins all Bubbles source to one reviewed Git commit.
+The preview shares QuantaPhi's existing owner-authentication adapters and storage;
+query parameters cannot choose a source revision. Its Worker route must match only
+`quantaphi.org/bubbles-continuity-preview/*`, leaving the public homepage and main
+Bubbles source unchanged during live acceptance.
 
-No live signed-in ChatGPT submission or new reply has been observed for this
-feature. Before production promotion, verify the real Google account menu and
-sidebar, a single eligible star, new reply, repeat protection, stop, deployed
-source/bindings, and Android separately. Keep the PR draft until those live gates
-pass. A ChatGPT answer is never independent proof of a repository commit, passing
-CI, deployment, APK installation, or completed work.
+Stage through Moltnook's existing browser staging workflow with matching source
+pins and compile-time preview define. Require source checks, independent review,
+unchanged production traffic during version upload, and preserved binding/secret
+identities. Promote the verified backend candidate using the existing release
+workflow; verify health, preview source header, and unsigned-owner rejection.
+
+The main frontend PR stays draft until the real owner Google account, sidebar,
+one star and new reply, repeat protection, Stop/restart, and reopened-session
+behavior have been verified in the preview. Android installation remains separate.
+Do not infer production execution from source tests or a published preview.

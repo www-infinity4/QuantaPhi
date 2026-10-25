@@ -14,6 +14,8 @@ on:
       - 'bubbles-chatgpt-loop.mjs'
       - 'workers/bubbles-tools/chatgpt-*.mjs'
       - 'test/bubbles-chatgpt-loop.test.mjs'
+      - 'test/bubbles-chatgpt-background.test.mjs'
+      - 'test/bubbles-continuity-preview.test.mjs'
       - 'test/bubbles-chatgpt-login.test.mjs'
       - 'test/bubbles-background-bridge.test.mjs'
       - 'bubbles-ai.js'
@@ -39,5 +41,7 @@ jobs:
           node --check bubbles-chatgpt-continuity.mjs
           node --check bubbles-chatgpt-loop.mjs
           node --check workers/bubbles-tools/chatgpt-login.mjs
+          node --check workers/bubbles-cloud-browser/continuation.mjs
+          node --check workers/bubbles-cloud-browser/preview.mjs
           node --check bubbles-ai.js
-          node --test test/bubbles-browser-agent.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-chatgpt-bridge.test.mjs test/bubbles-browser-consent.test.mjs test/bubbles-background-bridge.test.mjs test/bubbles-runner-bridge.test.mjs test/bubbles-server-assist.test.mjs test/bubbles-chatgpt-continuation.test.mjs test/bubbles-chatgpt-loop.test.mjs test/bubbles-chatgpt-login.test.mjs test/bubbles-star-continuation.test.mjs
+          node --test test/bubbles-browser-agent.test.mjs test/bubbles-cloud-browser.test.mjs test/bubbles-chatgpt-bridge.test.mjs test/bubbles-browser-consent.test.mjs test/bubbles-background-bridge.test.mjs test/bubbles-runner-bridge.test.mjs test/bubbles-server-assist.test.mjs test/bubbles-chatgpt-continuation.test.mjs test/bubbles-chatgpt-loop.test.mjs test/bubbles-chatgpt-background.test.mjs test/bubbles-continuity-preview.test.mjs test/bubbles-chatgpt-login.test.mjs test/bubbles-star-continuation.test.mjs

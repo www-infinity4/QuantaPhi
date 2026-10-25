@@ -32,7 +32,8 @@ export function chatgptLoginExpression(expectedEmail){
  const google=exact(['continue with google','sign in with google']);
  if(google.length===1)return click(google[0]);
  const login=exact(['log in','sign in']);
- if(location.origin==='https://chatgpt.com'&&login.length===1)return click(login[0]);
+ const primaryLogin=login.find(e=>e.closest?.('header,[role="banner"]'));
+ if(location.origin==='https://chatgpt.com'&&(primaryLogin||login.length===1))return click(primaryLogin||login[0]);
  if(location.origin==='https://chatgpt.com'){
   const profile=document.querySelector('[data-testid="accounts-profile-button"],[data-testid="profile-button"],button[aria-label="Open profile menu"]');
   const menus=[...document.querySelectorAll('[role="menu"],[data-radix-menu-content]')].filter(visible);

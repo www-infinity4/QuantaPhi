@@ -2,29 +2,34 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import fs from 'node:fs';
-import {chatgptInspectExpression,chatgptPrepareExpression,chatgptSendExpression} from '../workers/bubbles-tools/chatgpt-dom.mjs';
+import {chatgptInspectExpression,chatgptPrepareExpression,chatgptSendExpression,scopedChatGPTExpression} from '../workers/bubbles-tools/chatgpt-dom.mjs';
 import {browserSpeechIntent} from '../bubbles-cloud-browser.mjs';
 import {chooseContinuation,classifyReply,snapshotKey} from '../bubbles-chatgpt-continuity.mjs';
 
 const ID='12345678-1234-4123-8123-123456789abc';
-function page({origin='https://chatgpt.com',pathname='/c/'+ID,role='assistant',lastText='Work is pending verification.',draft='',generating=false}={}){
+function page({origin='https://chatgpt.com',pathname='/c/'+ID,role='assistant',lastText='Work is pending verification.',draft='',generating=false,textarea=false,sidebarPresent=true}={}){
  let clicks=0;
- const editor={innerText:draft,getClientRects:()=>[{}],focus(){document.activeElement=editor},contains:()=>false};
+ const editor={dataset:{},...(textarea?{value:draft}:{innerText:draft}),getClientRects:()=>[{}],focus(){document.activeElement=editor},contains:()=>false};
  const message={getAttribute:()=>role,innerText:lastText};
+ const messages=[message];
  const anchor={href:'https://chatgpt.com/c/'+ID,innerText:'QuantaPhi repair',getClientRects:()=>[{}],getAttribute:()=>null};
  const send={disabled:false,getClientRects:()=>[{}],getAttribute:()=>null,click(){clicks++}};
  const document={title:'ChatGPT conversation',activeElement:null,documentElement:{dataset:{}},
   querySelectorAll(selector){
-   if(selector==='[data-message-author-role]')return [message];
+   if(selector==='[data-message-author-role]')return messages;
    if(selector.includes('#prompt-textarea'))return [editor];
    if(selector==='a[href]')return [anchor];
    if(selector.startsWith('button[data-testid="send-button"]'))return [send];
    return [];
   },
-  querySelector(selector){return generating&&selector.startsWith('button[data-testid="stop-button"]')?{}:null;}
+  querySelector(selector){
+   if(selector.startsWith('#ds-sidebar'))return sidebarPresent?{querySelectorAll:()=>[anchor]}:null;
+   return generating&&selector.startsWith('button[data-testid="stop-button"]')?{}:null;
+  }
  };
  const location={origin,pathname};
- return {run:expression=>vm.runInNewContext(expression,{document,location,URL}),get clicks(){return clicks},editor};
+ return {run:expression=>vm.runInNewContext(expression,{document,location,URL}),get clicks(){return clicks},editor,
+  location,messages};
 }
 test('owner can inspect visible signed-in conversations without fetching private APIs',()=>{
  const browser=page();
@@ -35,6 +40,10 @@ test('owner can inspect visible signed-in conversations without fetching private
  assert.equal(data.recentNudgeCount,0);
  assert.deepEqual(JSON.parse(JSON.stringify(data.conversations)),[{url:'https://chatgpt.com/c/'+ID,title:'QuantaPhi repair'}]);
  assert.equal(data.latestAssistantText,'Work is pending verification.');
+});
+test('transcript conversation links cannot replace a missing history sidebar',()=>{
+ const data=page({sidebarPresent:false}).run(chatgptInspectExpression);
+ assert.equal(data.conversations.length,0);
 });
 test('requires exact ChatGPT conversation, no active generation, and no unsent owner draft',()=>{
  assert.equal(page({origin:'https://example.org'}).run(chatgptPrepareExpression).error,'not_a_chatgpt_conversation');
@@ -65,10 +74,10 @@ test('CDP only sends a continuation after guarded inspection and verifies owner-
  assert.match(worker,/chatgpt_resume/);
  assert.match(ui,/Continue latest 8 ChatGPT conversations/);
  assert.match(ui,/Stop conversation follow-ups/);
- assert.match(ui,/createChatGPTLoop/);
+ assert.match(ui,/bridgeCall\('continuity'/);
  assert.match(ui,/chatgpt_signin/);
  assert.match(ui,/new ChatGPT replies observed/);
- assert.match(ui,/conversationTabs/);
+ assert.match(ui,/continues when Bubbles closes/);
  assert.doesNotMatch(ui,/localStorage\.setItem\(['"]chatgpt/);
 });
 
@@ -113,4 +122,31 @@ test('Bubbles single-star command delegates to signed-in ChatGPT, never to its o
  assert.match(branch,/ownerHeaders:verifiedOwnerHeaders/);
  assert.doesNotMatch(branch,/continueSavedWork|\/work\/run-next|directGithubOperation|submitRepositoryWork/);
  assert.match(branch,/No message or build was confirmed/);
+});
+
+
+test('mobile textarea preserves an owner draft and requires a literal star in its value',()=>{
+ const browser=page({textarea:true,draft:'Keep my draft'});
+ assert.equal(browser.run(chatgptInspectExpression).draftPresent,true);
+ assert.equal(browser.run(chatgptPrepareExpression).error,'owner_draft_present');
+ browser.editor.value='';
+ assert.equal(browser.run(chatgptPrepareExpression).ready,true);
+ browser.editor.value='another message';
+ assert.equal(browser.run(chatgptSendExpression).error,'literal_star_only');
+ browser.editor.value='*';
+ assert.equal(browser.run(chatgptSendExpression).sendDispatched,true);
+});
+
+test('final synchronous Send rejects navigation, a changed turn, or a replaced composer claim',()=>{
+ const scope={conversationUrl:'https://chatgpt.com/c/'+ID,messageCount:1,claim:'fixed-fixture-claim'};
+ for(const change of ['navigation','turn','claim']){
+  const browser=page();
+  assert.equal(browser.run(scopedChatGPTExpression(chatgptPrepareExpression,scope)).ready,true);
+  browser.editor.innerText='*';
+  if(change==='navigation')browser.location.pathname='/c/another-valid-conversation';
+  if(change==='turn')browser.messages.push({getAttribute:()=> 'assistant',innerText:'Another turn'});
+  if(change==='claim')browser.editor.dataset.bubblesContinuationClaim='another-claim';
+  assert.equal(browser.run(scopedChatGPTExpression(chatgptSendExpression,scope)).ok,false);
+  assert.equal(browser.clicks,0);
+ }
 });

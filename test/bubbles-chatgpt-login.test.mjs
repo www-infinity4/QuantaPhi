@@ -1,13 +1,13 @@
+import {selectChatGPTSignInTab} from '../bubbles-chatgpt-continuity.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import fs from 'node:fs';
 import {chatgptLoginExpression} from '../workers/bubbles-tools/chatgpt-login.mjs';
 import {browserAction} from '../workers/bubbles-tools/browser-cdp.mjs';
-import {selectChatGPTSignInTab} from '../bubbles-chatgpt-continuity.mjs';
 
 const expected='owner@example.com';
-function fixture({origin='https://accounts.google.com',accounts=[],password=false,google=false,emailInput=false,menu='',profile=false}={}){
+function fixture({origin='https://accounts.google.com',accounts=[],password=false,google=false,emailInput=false,menu='',profile=false,duplicateLogin=false}={}){
  const clicks=[];
  const el=(label,attrs={})=>({innerText:label,getClientRects:()=>[{}],getAttribute:k=>attrs[k]||null,
   click:()=>clicks.push(label),dispatchEvent(){}});
@@ -15,8 +15,10 @@ function fixture({origin='https://accounts.google.com',accounts=[],password=fals
  function HTMLInputElement(){}
  Object.defineProperty(HTMLInputElement.prototype,'value',{set(v){input.value=v;}});
  const next=el('Next'),provider=el('Continue with Google'),profileButton=el('Profile');
+ const mainLogin=el('Log in');mainLogin.closest=()=>({tagName:'HEADER'});
+ const sidebarLogin=el('Log in');sidebarLogin.closest=()=>null;
  const document={
-  querySelectorAll:selector=>selector.startsWith('button,')?(google?[provider]:emailInput?[next]:[]):
+  querySelectorAll:selector=>selector.startsWith('button,')?(duplicateLogin?[mainLogin,sidebarLogin]:google?[provider]:emailInput?[next]:[]):
    selector.includes('input[type="password"]')?(password?[el('password')]:[]):
    selector==='[data-identifier],[data-email]'?accounts.map(email=>el(email,{'data-identifier':email})):
    selector==='input[type="email"]'?(emailInput?[input]:[]):
@@ -50,6 +52,10 @@ test('an already signed-in ChatGPT account must expose the exact expected email'
  const wrong=fixture({origin:'https://chatgpt.com',profile:true,menu:'other@example.com'});
  assert.equal(wrong.run().error,'different_chatgpt_account');assert.equal(wrong.clicks.length,0);
  const unknown=fixture({origin:'https://chatgpt.com'});assert.equal(unknown.run().state,'needs_owner');
+});
+test('duplicate header and sidebar Log in buttons use the visible primary header action',()=>{
+ const f=fixture({origin:'https://chatgpt.com',duplicateLogin:true});
+ assert.equal(f.run().state,'progress');assert.deepEqual(f.clicks,['Log in']);
 });
 
 test('account configuration is available only through the verified owner endpoint',async()=>{
@@ -97,6 +103,42 @@ test('actual CDP send rejects a changed turn and can verify a star followed by a
  assert.deepEqual(f.calls.find(c=>c.method==='Input.insertText').params,{text:'*'});
 });
 
+test('a revoked background job cannot insert text or click Send through CDP',async()=>{
+ const f=cdpFixture();
+ const receipt=await browserAction(f.env,{sessionId:'SESSION',action:'chatgpt_resume',
+  conversationUrl:'https://chatgpt.com/c/12345678-1234-4123-8123-123456789abc',
+  text:'*',messageCount:8,canSend:async()=>false});
+ assert.equal(receipt.error,'continuation_stopped');
+ assert.equal(f.calls.some(c=>c.method==='Input.insertText'),false);
+});
+
+test('real owner continuity/view derives a fresh proof that works after reopening the page',async()=>{
+ const source=fs.readFileSync('workers/bubbles-cloud-browser/worker.mjs','utf8')
+  .replace(/^export \{BrowserConsentStore\}.*$/m,'')
+  .replace(/from '(\.[^']+)'/g,(_,path)=>'from '+JSON.stringify(new URL('../workers/bubbles-cloud-browser/'+path,import.meta.url).href));
+ const worker=(await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'))).default;
+ const sessionId='11111111-1111-4111-8111-111111111111';let contexts=0,newTabs=0;
+ const store={status:async()=>({enabled:true}),chatgptStatus:async()=>({enabled:true}),
+  continuationContext:async()=>{contexts++;return {sessionId,targetId:'history'};}};
+ const env={BRAIN:{fetch:async()=>new Response('ok')},BRIDGE_DB:{},
+  CONSENT:{idFromName:()=>'',get:()=>store},BROWSER:{
+   acquire:async()=>{},getSession:async()=>({sessionId}),
+   getLiveView:async()=>({devtoolsFrontendUrl:'https://live.browser.run/fixture'}),
+   devtools:{listTargets:async()=>[{id:'history',type:'page',url:'https://chatgpt.com/'}],newTarget:async()=>{newTabs++;return {id:'new'};}}
+  }};
+ const request=(path,body,authenticated=true)=>new Request('https://browser.example'+path,{method:'POST',
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json',
+   ...(authenticated?{Authorization:'Bearer rb_'+'a'.repeat(64)}:{})},body:JSON.stringify(body)});
+ assert.equal((await worker.fetch(request('/v1/browser/chatgpt/continuity',{action:'view'},false),env,{})).status,403);
+ assert.equal(contexts,0);
+ const response=await worker.fetch(request('/v1/browser/chatgpt/continuity',{action:'view'}),env,{});
+ assert.equal(response.status,200);const restored=await response.json();
+ assert.match(restored.proof,/^[a-f0-9]{64}$/);assert.equal(restored.sessionId,sessionId);
+ const operated=await worker.fetch(request('/v1/browser',{action:'tab',sessionId:restored.sessionId,
+  proof:restored.proof,url:'https://chatgpt.com/'}),env,{});
+ assert.equal(operated.status,200);assert.equal(newTabs,1);
+});
+
 test('actual CDP route rejects finished or owner-blocked chats before inserting a star',async()=>{
  const conversationUrl='https://chatgpt.com/c/12345678-1234-4123-8123-123456789abc';
  const args={sessionId:'SESSION',action:'chatgpt_resume',conversationUrl,text:'*',messageCount:8};
@@ -112,7 +154,7 @@ test('actual CDP route rejects finished or owner-blocked chats before inserting 
 test('ChatGPT login stays on exact official origin even when unrelated tab is open',()=>{
  const tabs=[{id:'main',url:'https://chatgpt.com/'},
   {id:'evil',url:'https://accounts.google.com.evil.example/login'},
-  {id:'google',url:'https://accounts.google.com/o/oauth2/v2/auth'}];
+  {id:'google',url:'https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=https%3A%2F%2Fauth.openai.com%2Fapi%2Faccounts%2Fcallback%2Fgoogle'}];
  assert.deepEqual(selectChatGPTSignInTab(tabs,'main'),
   {state:'authentication_page',targetId:'google'});
 });
@@ -126,8 +168,8 @@ test('ChatGPT OAuth popup that closes returns to original authenticated ChatGPT 
   {state:'current_chatgpt_tab',targetId:'conversation'});
 });
 test('ambiguous OAuth tabs require owner instead of guessing account',()=>{
- const tabs=[{id:'google-1',url:'https://accounts.google.com/abc'},
- {id:'google-2',url:'https://accounts.google.com/def'},
+ const tabs=[{id:'google-1',url:'https://accounts.google.com/abc?app_domain=https%3A%2F%2Fauth.openai.com'},
+ {id:'google-2',url:'https://accounts.google.com/def?app_domain=https%3A%2F%2Fauth.openai.com'},
  {id:'main',url:'https://chatgpt.com/'}];
  assert.deepEqual(selectChatGPTSignInTab(tabs,'main'),
   {state:'ambiguous_authentication_tabs',targetId:''});
@@ -136,6 +178,17 @@ test('untrusted tabs cannot be used to enter a Google account',()=>{
  assert.deepEqual(selectChatGPTSignInTab([{id:'bad',url:'https://chatgpt.com.attacker.example/'}],'bad'),
   {state:'no_official_signin_tab',targetId:''});
  const ui=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
- assert.match(ui,/selectChatGPTSignInTab\(live\.tabs,historyTargetId\)/);
+ assert.match(ui,/selectChatGPTSignInTab\(live\.tabs,historyTargetId,\{trustedAuthTargetIds\}\)/);
  assert.match(ui,/if\(!selected\.targetId\)throw Error\(selected\.state\)/);
+});
+
+
+test('an unrelated official Google OAuth tab cannot hijack ChatGPT sign-in',()=>{
+ const main={id:'main',url:'https://chatgpt.com/'};
+ const foreign={id:'google',url:'https://accounts.google.com/signin?redirect_uri=https%3A%2F%2Fother.example%2Fcallback'};
+ assert.equal(selectChatGPTSignInTab([main,foreign],'main').targetId,'main');
+ assert.equal(selectChatGPTSignInTab([main,foreign],'main',{trustedAuthTargetIds:['google']}).targetId,'main');
+ const opaque={id:'verified-popup',url:'https://accounts.google.com/v3/signin/challenge/pwd'};
+ assert.equal(selectChatGPTSignInTab([main,opaque],'main').targetId,'main');
+ assert.equal(selectChatGPTSignInTab([main,opaque],'main',{trustedAuthTargetIds:['verified-popup']}).targetId,'verified-popup');
 });

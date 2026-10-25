@@ -1312,7 +1312,7 @@ if(!embedded){
  chatScroll.prepend(browserHome);
  panel.insertBefore(quick,chatScroll);
  const loadBrowser=async()=>{
-  const module=await import('/bubbles-cloud-browser.mjs?v=20261025-eight-chat2');
+  const module=await import('/bubbles-cloud-browser.mjs?v=20261025-background-chat3');
   return module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders});
  };
  const grantBridge=async()=>{
@@ -2063,7 +2063,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   let reply='Blocked: ChatGPT browser continuation was not verified.';
   try{
    if(embedded)throw Error('verified_owner_session_required');
-   const browser=await import('/bubbles-cloud-browser.mjs?v=20261025-eight-chat2');
+   const browser=await import('/bubbles-cloud-browser.mjs?v=20261025-background-chat3');
    reply=await browser.browserConversation('continue unfinished ChatGPT conversations',
     {host:browserHome,ownerHeaders:verifiedOwnerHeaders});
   }catch(error){
@@ -2140,7 +2140,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
       ?'Phone tool responded with this actual device receipt: '+JSON.stringify(receipt).slice(0,1900)
       :'Phone tool returned an unverified result: '+JSON.stringify(receipt||{}).slice(0,900);
     }else if(toolAction.kind==='browser'){
-     const browser=await import('/bubbles-cloud-browser.mjs?v=20261025-eight-chat2');
+     const browser=await import('/bubbles-cloud-browser.mjs?v=20261025-background-chat3');
      answer=await browser.browserConversation(toolAction.command,{host:browserHome,ownerHeaders:verifiedOwnerHeaders});
     }else if(toolAction.kind==='card'){
      const {module,workspace:cardWorkspace}=await chatCardWorkspace();workspace=cardWorkspace;
@@ -2502,7 +2502,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   ||/^(?:(?:hey|okay|please|bubbles)[,\s]+)*(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|chat\s?gpt|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(spoken))){
   let intent=null;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261025-eight-chat2');
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261025-background-chat3');
    intent=module.browserSpeechIntent(spoken);
    if(intent){
     busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');

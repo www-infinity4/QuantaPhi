@@ -1,8 +1,9 @@
-import {browserTool} from '../bubbles-tools/browser.mjs';
+import {browserTool,proof} from '../bubbles-tools/browser.mjs';
 import {processChatGPTJob,completeChatGPTMessage} from './chatgpt-bridge.mjs';
 import {authenticateBridge,runnerMessage} from './runner-bridge.mjs';
 import {serverAssist} from './server-assist.mjs';
 import {signedBrowserCheck,browserCheckPage,CHECK_PATH} from './browser-check.mjs';
+import {continuityPreview} from './preview.mjs';
 export {BrowserConsentStore} from './consent.mjs';
 const origins=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const respond=(origin,body,status=200)=>Response.json(body,{status,headers:{
@@ -23,8 +24,12 @@ const consentStore=env=>env.CONSENT.get(env.CONSENT.idFromName('single-verified-
 export default {
  async fetch(request,env,ctx){
   const path=new URL(request.url).pathname;
+  if(path.startsWith('/bubbles-continuity-preview/')){
+   try{return await continuityPreview(request,typeof CONTINUITY_PREVIEW_SOURCE_SHA==='undefined'?'':CONTINUITY_PREVIEW_SOURCE_SHA);}
+   catch{return new Response('Preview source unavailable',{status:502,headers:{'Cache-Control':'no-store'}});}
+  }
   if(path===CHECK_PATH&&request.method==='GET')return browserCheckPage();
-  if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',serverConversation:'signed-server-v2',toolsBound:!!env.TOOLS,
+  if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',serverConversation:'signed-server-v2',continuationController:'durable-eight-v1',toolsBound:!!env.TOOLS,
    browserBound:!!env.BROWSER,ownerGate:!!env.BRAIN,consentBound:!!env.CONSENT,chatgptBridgeBound:!!env.BRIDGE_DB},
    {headers:{'Cache-Control':'no-store'}});
   const origin=request.headers.get('Origin')||'';
@@ -58,9 +63,33 @@ export default {
    let body={};try{const raw=await request.text();if(raw.length>4200)throw Error('large');
     body=JSON.parse(raw||'{}')}catch{return respond(origin,{ok:false,error:'invalid_request'},400)}
    const store=consentStore(env);
+   if(path==='/v1/browser/chatgpt/continuity'){
+    if(!['start','status','stop','view'].includes(body.action))return respond(origin,{ok:false,error:'unsupported_action'},400);
+    if(body.action!=='start'&&Object.keys(body).some(key=>key!=='action'))return respond(origin,{ok:false,error:'invalid_request'},400);
+    if(body.action==='status')return respond(origin,await store.continuationStatus());
+    if(body.action==='stop')return respond(origin,await store.stopContinuation());
+    if(!(await store.status()).enabled||!(await store.chatgptStatus()).enabled)
+     return respond(origin,{ok:false,error:'existing_five_day_approval_required'},403);
+    if(body.action==='start'){
+     if(Object.keys(body).some(key=>!['action','sessionId','proof','targetId'].includes(key)))
+      return respond(origin,{ok:false,error:'invalid_request'},400);
+     // Verify the owner-bound browser proof with the existing adapter before
+     // admitting a scoped background job. No bearer/proof is stored in the DO.
+     const checked=await browserTool(new Request(request.url,{method:'POST',headers:request.headers,
+      body:JSON.stringify({...body,action:'view'})}),env);
+     if(!checked.ok)return checked;
+     try{return respond(origin,await store.startContinuation({sessionId:body.sessionId,targetId:body.targetId}));}
+     catch{return respond(origin,{ok:false,error:'continuation_start_unconfirmed'},409);}
+    }
+    const context=await store.continuationContext();
+    if(!context)return respond(origin,{ok:false,error:'continuation_not_started'},404);
+    return browserTool(new Request(request.url,{method:'POST',headers:request.headers,
+     body:JSON.stringify({action:'view',...context,
+      proof:await proof(request.headers.get('Authorization'),context.sessionId)})}),env);
+   }
    if(path==='/v1/browser/chatgpt/account'){
     if(Object.keys(body).length)return respond(origin,{ok:false,error:'invalid_request'},400);
-    return respond(origin,{ok:true,email:String(env.CHATGPT_LOGIN_EMAIL||''),persistentProfile:false});
+    return respond(origin,{ok:true,email:String(env.CHATGPT_LOGIN_EMAIL||''),persistentProfile:false,backgroundContinuation:true});
    }
    if(path==='/v1/browser/chatgpt/heartbeat'){
     if(Object.keys(body).some(key=>key!=='state'))return respond(origin,{ok:false,error:'invalid_consumer_state'},400);

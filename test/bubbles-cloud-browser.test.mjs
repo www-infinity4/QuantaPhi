@@ -38,6 +38,15 @@ test('generic browser gateway cannot bypass the separate five-day ChatGPT grant'
  }
  assert.equal(inspect().acquired,0);
 });
+test('confirmed ended sessions have a distinct recovery receipt; transport errors do not impersonate expiry',async()=>{
+ const {env}=fake();const started=await browserTool(make('start'),env);const context=await started.json();
+ env.BROWSER.getSession=async()=>null;
+ const ended=await browserTool(make('view',{sessionId:context.sessionId,proof:context.proof}),env);
+ assert.equal(ended.status,410);assert.equal((await ended.json()).error,'browser_session_ended');
+ env.BROWSER.getSession=async()=>{throw Error('network unavailable');};
+ const transient=await browserTool(make('view',{sessionId:context.sessionId,proof:context.proof}),env);
+ assert.equal(transient.status,503);assert.equal((await transient.json()).error,'browser_session_unavailable');
+});
 test('verified owner can start, open tab, reconnect and close; foreign proofs rejected',async()=>{
  const {env,inspect}=fake();
  const started=await browserTool(make('start',{url:'https://quantaphi.org/'}),env);
@@ -51,9 +60,12 @@ test('verified owner can start, open tab, reconnect and close; foreign proofs re
  assert.equal(tab.status,200);
  const refreshed=await browserTool(make('view',{sessionId:s.sessionId,proof:s.proof}),env);
  assert.equal(refreshed.status,200);
+ const restored=await refreshed.json();assert.equal(restored.proof,s.proof);
+ const fromFreshPage=await browserTool(make('tab',{sessionId:restored.sessionId,proof:restored.proof,url:'https://chatgpt.com/'}),env);
+ assert.equal(fromFreshPage.status,200);
  const stopped=await browserTool(make('stop',{sessionId:s.sessionId,proof:s.proof}),env);
  assert.equal(stopped.status,200);
- assert.deepEqual(inspect(),{acquired:1,closed:1,tabs:['https://quantaphi.org/','https://www.google.com/'],views:3});
+ assert.deepEqual(inspect(),{acquired:1,closed:1,tabs:['https://quantaphi.org/','https://www.google.com/','https://chatgpt.com/'],views:4});
 });
 test('Bubbles uses owner-gated gateway and the native Chrome Live View extension',()=>{
  const worker=fs.readFileSync('workers/bubbles-tools/worker.mjs','utf8');
@@ -66,7 +78,7 @@ test('Bubbles uses owner-gated gateway and the native Chrome Live View extension
  assert.match(wrangler,/\[browser\]\s*binding = "BROWSER"/);
  assert.doesNotMatch(bubble,/create\('button','ba-tool-link','Cloud browser/);
  assert.match(bubble,/browserConversation\(spoken/);
- assert.equal((bubble.match(/import\('\/bubbles-cloud-browser\.mjs\?v=20261025-eight-chat2'\)/g)||[]).length,4,
+ assert.equal((bubble.match(/import\('\/bubbles-cloud-browser\.mjs\?v=20261025-background-chat3'\)/g)||[]).length,4,
   'Bubbles voice/chat and semantic tool driver must reuse the same browser session module');
  assert.doesNotMatch(bubble,/20261019-live-chrome1/);
  assert.match(page,/bubbles-ai\.js\?v=[0-9A-Za-z_-]+/);
