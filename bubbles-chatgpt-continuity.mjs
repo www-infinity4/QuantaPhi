@@ -37,3 +37,20 @@ export function classifyReply(reply,previous){
  if(pending.test(answer))return {state:'awaiting_evidence',reason:'work_not_verified',excerpt:answer.slice(-240)};
  return {state:'answered_unverified',reason:'assistant_replied_no_external_receipt',excerpt:answer.slice(-240)};
 }
+
+/* The sidebar is already ordered by ChatGPT's visible recent-first UI.
+ * Visit at most eight different chats per wave. Cursor is ephemeral so the
+ * next star inspects the next group, wrapping to the newest after the end.
+ * No private conversation URL is persisted on the server or on disk.
+ */
+export function nextEightConversations(visible,{cursor=0,size=8}={}){
+ const items=(Array.isArray(visible)?visible:[]).filter(x=>
+  typeof x?.url==='string'&&/^https:\/\/chatgpt\.com\/c\/[a-zA-Z0-9_-]{12,}\/?$/.test(x.url));
+ const unique=[...new Map(items.map(x=>[x.url,x])).values()].slice(0,40);
+ const take=Math.max(1,Math.min(8,Number.isInteger(size)?size:8));
+ if(!unique.length)return {conversations:[],cursor:0,total:0};
+ const first=Number.isInteger(cursor)&&cursor>=0&&cursor<unique.length?cursor:0;
+ const conversations=unique.slice(first,first+take);
+ return {conversations,cursor:first+conversations.length>=unique.length?0:first+conversations.length,
+  total:unique.length,from:first};
+}
