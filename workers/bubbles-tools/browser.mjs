@@ -35,7 +35,7 @@ async function ownerAllowed(request, env) {
     return r.ok;
   } catch { return false; }
 }
-export async function browserTool(request, env) {
+export async function browserTool(request, env, {chatgptApproved=false}={}) {
   const origin = request.headers.get('Origin') || '';
   if (!ALLOWED.has(origin)) return json('https://quantaphi.org',{ok:false,error:'origin_not_allowed'},403);
   if (request.method === 'OPTIONS') return new Response(null,{status:204,headers:{
@@ -49,6 +49,8 @@ export async function browserTool(request, env) {
   try { if(Number(request.headers.get('Content-Length')||0)>4096)throw Error('body_too_large');
     const raw=await request.text();if(raw.length>4096)throw Error('body_too_large');body=JSON.parse(raw||'{}');
   } catch {return json(origin,{ok:false,error:'invalid_request'},400);}
+  if(['chatgpt_scan','chatgpt_resume','chatgpt_signin'].includes(body.action)&&!chatgptApproved)
+    return json(origin,{ok:false,error:'chatgpt_five_day_approval_required'},403);
   const token=request.headers.get('Authorization');
   try {
     if(body.action==='start'){
@@ -70,7 +72,7 @@ export async function browserTool(request, env) {
       await env.BROWSER.closeSession(body.sessionId);
       return json(origin,{ok:true,status:'closed'});
     }
-    if((['navigate','read','click','type','viewport'].includes(body.action)||['chatgpt_scan','chatgpt_resume'].includes(body.action))){
+    if((['navigate','read','click','type','viewport'].includes(body.action)||['chatgpt_scan','chatgpt_resume','chatgpt_signin'].includes(body.action))){
       const action=body.action;
       const value=typeof body.value==='string'?body.value:'';
       const field=typeof body.field==='string'?body.field:'';
@@ -79,7 +81,7 @@ export async function browserTool(request, env) {
       const url=action==='navigate'?browserTarget(body.url):'';
       // These are explicit deterministic actions, not unrestricted shell or JS.
       const result=await browserAction(env,{sessionId:body.sessionId,action,
-       targetId,url,label,field,value,mode:body.mode,text:body.text,conversationUrl:body.conversationUrl});
+       targetId,url,label,field,value,mode:body.mode,text:body.text,conversationUrl:body.conversationUrl,messageCount:body.messageCount});
       return json(origin,{ok:Boolean(result.ok!==false),status:result.ok===false?'blocked':action==='click'?'dispatched':'verified',
         action,result:result.ok===false?result:{...result,text:typeof result.text==='string'?result.text.slice(0,8500):undefined}});
     }
@@ -92,7 +94,7 @@ export async function browserTool(request, env) {
     if(!view?.devtoolsFrontendUrl)throw Error('live_view_unavailable');
     const tabs=await env.BROWSER.devtools.listTargets(body.sessionId);
     return json(origin,{ok:true,sessionId:body.sessionId,targetId:body.targetId||null,status:'live',url:view.devtoolsFrontendUrl,
-      tabs:Array.isArray(tabs)?tabs.filter(t=>t.type==='page').map(t=>({title:clamp(t.title),url:clamp(t.url)})):[],
+      tabs:Array.isArray(tabs)?tabs.filter(t=>t.type==='page').map(t=>({id:t.id,title:clamp(t.title),url:clamp(t.url)})):[],
       expiresInSeconds:300});
   } catch(error) {
     const reason=String(error?.message||'browser_unavailable');

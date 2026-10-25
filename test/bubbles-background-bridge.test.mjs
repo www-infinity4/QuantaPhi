@@ -30,15 +30,15 @@ async function exercise({approved,proof=true,slow=false}){
   };
   // A data: URL has no filesystem base; resolve the new local policy module
   // explicitly while still exercising the real, unmodified application logic.
-  const policyURL=new URL('../bubbles-chatgpt-continuity.mjs',import.meta.url).href;
+  const policyURL=new URL('../bubbles-chatgpt-loop.mjs',import.meta.url).href;
   const originalSource=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
-  assert.match(originalSource,/from '\.\/bubbles-chatgpt-continuity\.mjs'/);
-  const source=originalSource.replace("from './bubbles-chatgpt-continuity.mjs'","from '"+policyURL+"'");
+  assert.match(originalSource,/from '\.\/bubbles-chatgpt-loop\.mjs'/);
+  const source=originalSource.replace("from './bubbles-chatgpt-loop.mjs'","from '"+policyURL+"'");
   const mod=await import('data:text/javascript;base64,'+Buffer.from(source+'\n// '+Math.random()).toString('base64'));
   mod.mount({host:new Element(),ownerHeaders:async()=>proof?{Authorization:'Bearer owner-fixture'}:null});
   for(let i=0;i<5;i++)await new Promise(resolve=>setImmediate(resolve));
   if(slow){
-   intervals[0]();intervals[0]();
+   intervals.at(-1)();intervals.at(-1)();
    for(let i=0;i<5;i++)await new Promise(resolve=>setImmediate(resolve));
    assert.equal(calls.filter(x=>x.url.endsWith('/process')).length,1);
    release();

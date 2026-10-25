@@ -58,6 +58,10 @@ export default {
    let body={};try{const raw=await request.text();if(raw.length>4200)throw Error('large');
     body=JSON.parse(raw||'{}')}catch{return respond(origin,{ok:false,error:'invalid_request'},400)}
    const store=consentStore(env);
+   if(path==='/v1/browser/chatgpt/account'){
+    if(Object.keys(body).length)return respond(origin,{ok:false,error:'invalid_request'},400);
+    return respond(origin,{ok:true,email:String(env.CHATGPT_LOGIN_EMAIL||''),persistentProfile:false});
+   }
    if(path==='/v1/browser/chatgpt/heartbeat'){
     if(Object.keys(body).some(key=>key!=='state'))return respond(origin,{ok:false,error:'invalid_consumer_state'},400);
     const result=await store.consumerHeartbeat(body.state);
@@ -105,14 +109,14 @@ export default {
    const raw=await request.clone().text();if(raw.length>4096)throw Error('too_large');
    action=JSON.parse(raw||'{}').action||'';
   }catch{return respond(origin,{ok:false,error:'invalid_request'},400);}
-  if((['read','navigate','click','type','viewport'].includes(action)||['chatgpt_scan','chatgpt_resume'].includes(action))){
+  if((['read','navigate','click','type','viewport'].includes(action)||['chatgpt_scan','chatgpt_resume','chatgpt_signin'].includes(action))){
    if(!(await owner(request,env)))return respond(origin,{ok:false,error:'owner_authorization_required'},403);
    if(!env.CONSENT)return respond(origin,{ok:false,error:'consent_storage_unavailable'},503);
    const state=await consentStore(env).status();
    if(!state.enabled)return respond(origin,{ok:false,error:'browser_consent_required'},403);
-   if(['chatgpt_scan','chatgpt_resume'].includes(action)&&!(await consentStore(env).chatgptStatus()).enabled)
+   if(['chatgpt_scan','chatgpt_resume','chatgpt_signin'].includes(action)&&!(await consentStore(env).chatgptStatus()).enabled)
     return respond(origin,{ok:false,error:'chatgpt_five_day_approval_required'},403);
   }
-  return browserTool(request,env);
+  return browserTool(request,env,{chatgptApproved:['chatgpt_scan','chatgpt_resume','chatgpt_signin'].includes(action)});
  }
 };

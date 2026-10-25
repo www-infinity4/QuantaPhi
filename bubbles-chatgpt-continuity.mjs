@@ -9,13 +9,13 @@ export function snapshotKey(snapshot){
  return JSON.stringify([snapshot?.conversationUrl,snapshot?.messageCount,snapshot?.latestRole,
   normalize(snapshot?.latestAssistantText).slice(-700),normalize(snapshot?.latestUserText).slice(-500)]);
 }
-export function chooseContinuation(snapshot,{sentKeys=new Set()}={}){
+export function chooseContinuation(snapshot,{sentKeys=new Set(),allowRevisit=false}={}){
  if(!snapshot?.authenticatedConversation||!/^https:\/\/chatgpt\.com\/c\/[a-zA-Z0-9_-]{12,}\/?$/.test(snapshot?.conversationUrl||''))
   return {state:'blocked',reason:'conversation_not_verified'};
  if(snapshot.generating)return {state:'waiting',reason:'assistant_still_responding'};
  if(!snapshot.editorReady)return {state:'blocked',reason:'composer_not_available'};
  if(snapshot.draftPresent)return {state:'waiting',reason:'owner_draft_present'};
- if(snapshot.alreadyNudged||snapshot.recentNudgeCount>0)return {state:'waiting',reason:'recent_continuation_already_sent'};
+ if(snapshot.alreadyNudged||(!allowRevisit&&snapshot.recentNudgeCount>0))return {state:'waiting',reason:'recent_continuation_already_sent'};
  if(snapshot.latestRole==='user')return {state:'waiting',reason:'last_user_request_unanswered'};
  if(snapshot.latestRole!=='assistant')return {state:'blocked',reason:'assistant_message_not_found'};
  const message=normalize(snapshot.latestAssistantText);

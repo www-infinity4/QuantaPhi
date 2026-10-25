@@ -24,7 +24,7 @@ export const cards=Object.freeze([
  app('trending-media','Trending Media Explorer','/?card=media','QuantaPhi',['avengers doomsday','ethan klein','media trends']),
  app('pixie-stories','Pixie Stories','/pixie/','QuantaPhi',['pixie','pixie story','pixie storybook','pixie quick card']),
  app('cardone-capital','Cardone Real Estate Card','/cardone-capital.html','QuantaPhi',['cardone','grant cardone','cardone capital','10x westshore','westshore south','real estate card']),
- app('church-of-i-am','Church of I AM · Gary Cardone','/?card=iam','QuantaPhi',['church of i am','i am sunday','gary cardone sunday','gary cardone church','i am promo']),
+ app('church-of-i-am','Church of I AM · Gary Cardone','/?card=iam','QuantaPhi',['church of i am','i am sunday','gary cardone','gary cardone sunday','gary cardone church','i am promo']),
  app('muse-ai','Muse AI Reviewer','/science-quick-card.html?card=muse-ai','QuantaPhi',['muse','meta muse','muse reviewer']),
  app("quanta-feed","QuantaPhi Public For You Following","/",'QuantaPhi',["public feed","for you page","following feed"]),
  app("just-radios","JustRadios restoration kits","/quanta-feed-card.html?card=just-radios",'QuantaPhi',["justradios","radio kits"]),

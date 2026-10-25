@@ -13,7 +13,7 @@ function page({origin='https://chatgpt.com',pathname='/c/'+ID,role='assistant',l
  const message={getAttribute:()=>role,innerText:lastText};
  const anchor={href:'https://chatgpt.com/c/'+ID,innerText:'QuantaPhi repair',getClientRects:()=>[{}],getAttribute:()=>null};
  const send={disabled:false,getClientRects:()=>[{}],getAttribute:()=>null,click(){clicks++}};
- const document={title:'ChatGPT conversation',activeElement:null,
+ const document={title:'ChatGPT conversation',activeElement:null,documentElement:{dataset:{}},
   querySelectorAll(selector){
    if(selector==='[data-message-author-role]')return [message];
    if(selector.includes('#prompt-textarea'))return [editor];
@@ -47,6 +47,7 @@ test('ChatGPT send requires focused composer; does not click generic submit butt
  assert.equal(browser.run(chatgptSendExpression).error,'composer_not_focused');
  assert.equal(browser.clicks,0);
  assert.equal(browser.run(chatgptPrepareExpression).ready,true);
+ browser.editor.innerText='*';
  assert.equal(browser.run(chatgptSendExpression).sendDispatched,true);
  assert.equal(browser.clicks,1);
 });
@@ -59,12 +60,12 @@ test('CDP only sends a continuation after guarded inspection and verifies owner-
  assert.match(cdp,/submissionVerified:true/);
  assert.match(tool,/chatgpt_resume/);
  assert.match(worker,/chatgpt_resume/);
- assert.match(ui,/Continue unfinished ChatGPT conversations/);
+ assert.match(ui,/Continue latest 8 ChatGPT conversations/);
  assert.match(ui,/Stop conversation follow-ups/);
- assert.match(ui,/chooseContinuation/);
- assert.match(ui,/classifyReply/);
+ assert.match(ui,/createChatGPTLoop/);
+ assert.match(ui,/chatgpt_signin/);
  assert.match(ui,/new ChatGPT replies observed/);
- assert.match(ui,/slice\(0,20\)/);
+ assert.match(ui,/conversationTabs/);
  assert.doesNotMatch(ui,/localStorage\.setItem\(['"]chatgpt/);
 });
 
