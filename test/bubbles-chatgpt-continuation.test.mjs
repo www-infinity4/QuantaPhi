@@ -4,7 +4,7 @@ import vm from 'node:vm';
 import fs from 'node:fs';
 import {chatgptInspectExpression,chatgptPrepareExpression,chatgptSendExpression} from '../workers/bubbles-tools/chatgpt-dom.mjs';
 import {browserSpeechIntent} from '../bubbles-cloud-browser.mjs';
-import {chooseContinuation,classifyReply,snapshotKey} from '../bubbles-chatgpt-continuity.mjs';
+import {chooseContinuation,classifyReply,snapshotKey,nextEightConversations} from '../bubbles-chatgpt-continuity.mjs';
 
 const ID='12345678-1234-4123-8123-123456789abc';
 function page({origin='https://chatgpt.com',pathname='/c/'+ID,role='assistant',lastText='Work is pending verification.',draft='',generating=false}={}){
@@ -59,12 +59,12 @@ test('CDP only sends a continuation after guarded inspection and verifies owner-
  assert.match(cdp,/submissionVerified:true/);
  assert.match(tool,/chatgpt_resume/);
  assert.match(worker,/chatgpt_resume/);
- assert.match(ui,/Continue unfinished ChatGPT conversations/);
+ assert.match(ui,/Continue next 8 ChatGPT conversations/);
  assert.match(ui,/Stop conversation follow-ups/);
  assert.match(ui,/chooseContinuation/);
  assert.match(ui,/classifyReply/);
  assert.match(ui,/new ChatGPT replies observed/);
- assert.match(ui,/slice\(0,20\)/);
+ assert.match(ui,/nextEightConversations/);
  assert.doesNotMatch(ui,/localStorage\.setItem\(['"]chatgpt/);
 });
 
@@ -109,4 +109,32 @@ test('Bubbles single-star command delegates to signed-in ChatGPT, never to its o
  assert.match(branch,/ownerHeaders:verifiedOwnerHeaders/);
  assert.doesNotMatch(branch,/continueSavedWork|\/work\/run-next|directGithubOperation|submitRepositoryWork/);
  assert.match(branch,/No message or build was confirmed/);
+});
+
+test('recent first visible ChatGPT history rotates in waves of eight without repeating a wave',()=>{
+ const chats=Array.from({length:20},(_,i)=>({url:'https://chatgpt.com/c/'+String(i).padStart(12,'0'),title:'Recent '+i}));
+ const first=nextEightConversations(chats);
+ assert.equal(first.conversations.length,8);
+ assert.equal(first.conversations[0].title,'Recent 0');
+ assert.equal(first.cursor,8);
+ const second=nextEightConversations(chats,{cursor:first.cursor});
+ assert.equal(second.conversations.length,8);
+ assert.equal(second.conversations[0].title,'Recent 8');
+ const third=nextEightConversations(chats,{cursor:second.cursor});
+ assert.equal(third.conversations.length,4);
+ assert.equal(third.cursor,0);
+ const restart=nextEightConversations(chats,{cursor:third.cursor});
+ assert.equal(restart.conversations[0].title,'Recent 0');
+});
+test('ChatGPT continuation route is literal-star only and verifies exact conversation before typing',()=>{
+ const cdp=fs.readFileSync('workers/bubbles-tools/browser-cdp.mjs','utf8');
+ const tool=fs.readFileSync('workers/bubbles-tools/browser.mjs','utf8');
+ const ui=fs.readFileSync('bubbles-cloud-browser.mjs','utf8');
+ assert.match(cdp,/if\(text!=='\*'\)/);
+ assert.match(cdp,/current\.conversationUrl!==conversationUrl/);
+ assert.match(cdp,/recentNudgeCount>0/);
+ assert.match(tool,/conversationUrl:body\.conversationUrl/);
+ assert.match(ui,/chatgpt_resume',\{text:'\*',conversationUrl:item\.url\}/);
+ assert.match(ui,/Open ChatGPT history · sign in once/);
+ assert.doesNotMatch(ui,/watsonkris611@gmail\.com/i,'never embed the owner email in a public source file');
 });
