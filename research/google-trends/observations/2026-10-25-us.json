@@ -3,104 +3,108 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-25T17:24:11.501589Z",
+  "checked_at": "2026-10-25T19:47:09.176110Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jonathan taylor",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-25T17:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/broncos-circling-trade-44-million-165247420.html",
-        "https://bleacherreport.com/articles/25520020-new-jonathan-taylor-trade-rumors-reveal-every-team-eyeing-colts-star-nfl-landing-spot",
-        "https://sports.mynorthwest.com/nfl/seattle-seahawks/nfl-insider-floats-seattle-seahawks-potential-jonathan-taylor-suitor"
-      ]
-    },
-    {
-      "query": "sauce gardner",
-      "approx_searches": "500+",
-      "published_at": "2026-10-25T17:10:00Z",
-      "related_news_urls": [
-        "https://www.thefantasyfootballers.com/news/644221/-ruled-out-for-week-7/",
-        "https://www.indystar.com/story/sports/nfl/colts/2026/10/21/sauce-gardner-injury-update-colts-provided-an-update-on-cornerback-calf-week-to-week/92366177007/",
-        "https://www.fantasypros.com/nfl/news/615647/sauce-gardner-calf-will-not-play-week-7.php"
-      ]
-    },
-    {
-      "query": "caleb douglas",
+      "query": "independiente - boca juniors",
       "approx_searches": "1000+",
-      "published_at": "2026-10-25T17:00:00Z",
+      "published_at": "2026-10-25T19:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/dolphins-inactives-miami-without-7-153308662.html",
-        "https://www.miamiherald.com/sports/article317771122.html",
-        "https://www.espn.com/nfl/story/_/id/50259154/dolphins-rookie-wr-caleb-douglas-set-return-vs-jets"
+        "https://www.tycsports.com/boca-juniors/la-formacion-de-boca-vs-independiente-por-el-torneo-clausura-id768050.html",
+        "https://www.ole.com.ar/futbol-primera/independiente-vs-boca-partido-torneo-clausura-fecha14-vivo-minuto-minuto_0_Owr3tRrXSr.html",
+        "https://www.infobae.com/deportes/2026/10/25/boca-juniors-visitara-a-independiente-por-el-torneo-clausura-tras-clasificar-a-la-final-de-la-copa-sudamericana-hora-tv-y-formaciones/"
       ]
     },
     {
-      "query": "tank dell injury",
+      "query": "abc",
       "approx_searches": "500+",
-      "published_at": "2026-10-25T17:00:00Z",
+      "published_at": "2026-10-25T19:30:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/texans-activate-wr-tank-dell-to-the-active-roster",
-        "https://www.espn.com/nfl/story/_/id/50242240/texans-tank-dell-fear-being-hit-sunday-giants",
-        "https://www.houstonchronicle.com/sports/texans/article/tank-dell-return-receiver-room-22490206.php"
+        "https://abcnews.com/GMA/Shop/gma-deals-steals-ultimate-fan-week/story?id=137511950",
+        "https://www.goodmorningamerica.com/shop/story/abc-secret-savings-137509906",
+        "https://www.yahoo.com/news/videos/gma-deals-steals-ultimate-fan-083916664.html"
       ]
     },
     {
-      "query": "keenan allen",
-      "approx_searches": "500+",
-      "published_at": "2026-10-25T17:00:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/colts-quenton-nelson-not-focused-trade-rumors-gm-firing",
-        "https://www.stampedeblue.com/indianapolis-colts-rumors/129155/no-colts-player-reportedly-off-limits-if-rebuild-begins-before-upcoming-trade-deadline",
-        "https://www.si.com/nfl/steelers/onsi/pros-cons-pittsburgh-steelers-trying-land-quenton-nelson"
-      ]
-    },
-    {
-      "query": "college basketball",
-      "approx_searches": "5000+",
-      "published_at": "2026-10-25T17:00:00Z",
-      "related_news_urls": [
-        "https://www.wholehogsports.com/news/2026/oct/24/arkansas-basketball-notebook-razorbacks-john-calipari-mark-few-zags-bulldogs-exhibition-76-72-final/",
-        "https://sports.yahoo.com/articles/encouraging-news-arkansas-basketball-gonzaga-153026753.html",
-        "https://arkansasrazorbacks.com/12-13-arkansas-rallies-to-beat-15-12-gonzaga-in-exhibition/"
-      ]
-    },
-    {
-      "query": "vikings game today",
-      "approx_searches": "5000+",
-      "published_at": "2026-10-25T16:50:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/stories/nfl/how-to-watch-colts-vs-vikings-tv-channel-live-stream-time-october-25-2026",
-        "https://sports.yahoo.com/articles/colts-vs-vikings-live-updates-154042711.html",
-        "https://www.fox9.com/live-blog/sports/live-updates-minnesota-vikings-vs-indianapolis-colts"
-      ]
-    },
-    {
-      "query": "greg olsen",
-      "approx_searches": "500+",
-      "published_at": "2026-10-25T16:50:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/sports/football/troy-aikman-joe-buck-espn-monday-night-football-d7349ac9",
-        "https://www.boston.com/sports/media/2026/10/24/troy-aikman-espn-patriots-super-bowl-calls/",
-        "https://sports.yahoo.com/articles/don-t-see-many-stepping-184903008.html"
-      ]
-    },
-    {
-      "query": "real sociedad - levante",
+      "query": "appletv",
       "approx_searches": "2000+",
-      "published_at": "2026-10-25T16:40:00Z",
+      "published_at": "2026-10-25T19:30:00Z",
       "related_news_urls": [
-        "https://as.com/futbol/primera/el-momento-de-remiro-ante-el-efecto-castro-f202610-n/",
-        "https://www.eldesmarque.com/futbol/liga-1a-division/20261024/pellegrino-matarazzo-regreso-dos-jugadores-real-sociedad-gestionar-cargas_18_020528316.html",
-        "https://www.mundodeportivo.com/futbol/real-sociedad/20261024/1004242579/yangel-aramburu-llegan-jugar-levante.html"
+        "https://www.theverge.com/tech/1018253/now-you-can-watch-instagram-reels-on-your-apple-tv",
+        "https://mashable.com/tech/new-instagram-app-on-apple-tv-brings-reels-long-form-video-and-live-shows",
+        "https://www.macrumors.com/2026/10/25/instagram-launches-apple-tv-app/"
       ]
     },
     {
-      "query": "drew mehringer",
+      "query": "la liga standings",
+      "approx_searches": "500+",
+      "published_at": "2026-10-25T19:30:00Z",
+      "related_news_urls": [
+        "https://onefootball.com/en/news/real-sociedad-could-overtake-espanyol-to-go-seventh-in-all-time-la-liga-standings-with-win-43671058",
+        "https://www.theguardian.com/football/live/2026/oct/25/barcelona-v-real-madrid-el-clasico-live",
+        "https://www.espn.in/football/story/_/id/50278532/barcelona-real-madrid-live-laliga-latest-updates-commentary-score-result"
+      ]
+    },
+    {
+      "query": "mary peltola",
+      "approx_searches": "500+",
+      "published_at": "2026-10-25T19:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/10/25/us/politics/peltola-automobile-collision-campaign-events-postponed.html",
+        "https://www.cbsnews.com/news/mary-peltola-car-accident-alaska-senate-race/",
+        "https://www.nbcnews.com/politics/2026-election/mary-peltola-delays-campaign-events-minor-injury-car-crash-alaska-rcna605556"
+      ]
+    },
+    {
+      "query": "za'darius smith",
+      "approx_searches": "200+",
+      "published_at": "2026-10-25T19:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/zadarius-smith-likely-play-week-144338788.html",
+        "https://www.cbssports.com/fantasy/football/news/falcons-gervon-dexter-on-track-for-week-7/",
+        "https://www.audacy.com/929thegame/video/good-injury-news-for-the-falcons-xbq7tgy"
+      ]
+    },
+    {
+      "query": "aaron jones",
       "approx_searches": "1000+",
-      "published_at": "2026-10-25T16:40:00Z",
-      "related_news_urls": []
+      "published_at": "2026-10-25T19:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50242272/vikings-praise-aaron-jones-heart-jordan-mason",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/aaron-jones-knee-questionable-to-return",
+        "https://www.rotowire.com/football/headlines/aaron-jones-injury-visits-medical-tent-sunday-644300"
+      ]
+    },
+    {
+      "query": "woody marks",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-25T19:20:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/nfl/texans/2026/10/25/woody-marks-injury-update-texans-giants-running-back/92433347007/",
+        "https://www.rotoballer.com/player-news/woody-marks-set-up-for-a-heavy-workload/1974372",
+        "https://www.prizepicks.com/playbook-article/nlf-week-7-start-em-sit-em-rbs-woody-marks-vs-tony-pollard"
+      ]
+    },
+    {
+      "query": "formula 1",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-25T19:20:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/sports/formula1/alpine-f1-team-defends-colapinto-after-clarkson-comments-2026-10-25/",
+        "https://www.espn.com/f1/story/_/id/50250085/alpine-condemn-jeremy-clarksons-nationality-comments-franco-colapinto-united-states-grand-prix-circuit-americas-austin-formula-1",
+        "https://www.telegraph.co.uk/formula-1/2026/10/25/jeremy-clarkson-reignites-rift-with-argentina/"
+      ]
+    },
+    {
+      "query": "watkins 49ers",
+      "approx_searches": "500+",
+      "published_at": "2026-10-25T19:20:00Z",
+      "related_news_urls": [
+        "https://ninernoise.com/brandin-cooks-jordan-watkins-need-step-49ers-2nd-half-falcons",
+        "https://www.rotoballer.com/player-news/brandin-cooks-a-waiver-option-with-expanded-receiving-opportunity/1974913",
+        "https://www.thefantasyfootballers.com/news/643466/brandin-cooks-one-catch-in-week-6-win/"
+      ]
     }
   ]
 }
