@@ -290,6 +290,11 @@ function returnActive(){
  active.marker=null;active=null;
  stage.replaceChildren();
 }
+function hasBuiltInCardActions(node){
+ // Keep original live handlers and one visible toolbar. A card may have an
+ // empty action mount while its own lazy card script is still loading.
+ return Boolean(node.querySelector('#churchIamActions,.iam-quick-actions,.qca-toolbar,[data-card-actions-owner]'));
+}
 function show(entry,remember=true){
  if(!entry||expanded||entry===active)return;
  if(remember&&active)visited.push(active.id);
@@ -301,9 +306,9 @@ function show(entry,remember=true){
  presentOriginal(entry);stage.append(entry.node);active=entry;
  entry.node.dispatchEvent(new Event('oracle:activate'));
  void import('/bubbles-project-discovery.mjs?v=20261024-evidence1').then(m=>m.recordProjectView({title:entry.title,cardId:entry.feedId,url:location.href})).catch(()=>{});
- // Every original Oracle widget receives the same five real actions.
- // Source cards already own the toolbar inside mountCardTools.
- if(!entry.id.startsWith('source-')){
+ // The original card owns its actions when it already provides a toolbar.
+ // Source cards also mount their own toolbar; never add a duplicate stage toolbar.
+ if(!entry.id.startsWith('source-')&&!hasBuiltInCardActions(entry.node)){
   const displayed=entry;
   import('/quanta-card-actions.mjs').then(({mountCardActions})=>{
    if(active!==displayed||!stage.contains(displayed.node))return;
