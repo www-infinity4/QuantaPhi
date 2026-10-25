@@ -69,3 +69,14 @@ test('real Google Maps URLs and safe AI Studio prompt drafts are wired, not mock
  assert.match(edge,/twitter:label1/);
  assert.match(edge,/qpShareResponse/);
 });
+
+test('independent physics, audio, reader and stock Share buttons join the common preview router',()=>{
+ for(const path of ['radio-clubhouse.js','fred-spaces-radio.js','infinity-concepts.js','widgetphi-stock.js']){
+  assert.match(read(path),/card-social-share\.mjs/,path);
+  assert.match(read(path),/socialShareUrl\(/,path);
+ }
+ const stock=read('stock-quick-card.html');
+ assert.match(stock,/WidgetPhiStock\.renderCard/);
+ assert.match(stock,/data|symbol/);
+ assert.match(stock,/www|TradingView|market/);
+});
