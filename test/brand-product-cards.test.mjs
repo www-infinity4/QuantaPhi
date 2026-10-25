@@ -87,7 +87,9 @@ test('product cards retain mobile portrait product photos and readable calls to 
 
 test('Cloudflare share registry matches all six real product photos, descriptions and dated prices',()=>{
  const edge=read('workers/quantaphi-site/worker.js');
- const match=edge.match(/const QP_PRODUCT_SHARE=Object.freeze\\((\\{[\\s\\S]*?\\})\\);/);
+ const prefix='const QP_PRODUCT_SHARE=Object.freeze(';
+ const first=edge.indexOf(prefix),last=edge.indexOf('});',first);
+ const match=first<0||last<0?null:[null,edge.slice(first+prefix.length,last+1)];
  assert.ok(match,'Edge share records exist');
  const catalog=JSON.parse(match[1]);
  assert.deepEqual(Object.keys(catalog).sort(),BRAND_PRODUCT_CARDS.map(p=>p.id).sort());
