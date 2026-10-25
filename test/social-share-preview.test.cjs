@@ -69,6 +69,33 @@ test('HTML-escape the share title; never redirect viewers off-site',async()=>{
  assert.doesNotMatch(html,/location\.replace\("https:\/\/untrusted\.example/);
  assert.match(html,/location\.replace\("https:\/\/quantaphi\.org/);
 });
+
+test('Levi’s product sharing serves the actual item photo, observed price, and Infinity viewer destination',async()=>{
+ const u=new URL('https://quantaphi.org/q-share');
+ u.searchParams.set('card','levis-501-dark');
+ u.searchParams.set('title','FAKE OFFER');
+ u.searchParams.set('image','https://untrusted.example/fake.png');
+ u.searchParams.set('dest','https://quantaphi.org/');
+ const r=await share(u.href);
+ assert.equal(r.status,200);
+ assert.equal(r.headers.get('x-quantaphi-share'),'product');
+ const html=await r.text();
+ assert.match(html,/<meta name="twitter:card" content="summary_large_image">/);
+ assert.match(html,/<meta name="twitter:image" content="https:\\/\\/lsco\\.scene7\\.com\\/is\\/image\\/lsco\\/005013373-front-gstk/);
+ assert.match(html,/\\$69\\.98/);
+ assert.match(html,/checked 2026-10-24/);
+ assert.match(html,/product:price:currency" content="USD"/);
+ assert.match(html,/product-quick-card\\.html\\?card=levis-501-dark/);
+ assert.doesNotMatch(html,/FAKE OFFER|fake\\.png|location\\.replace\\("https:\\/\\/quantaphi\\.org\\/"\\)/);
+});
+
+test('unknown product ID cannot replace a legitimate share image or redirect',async()=>{
+ const u=new URL('https://quantaphi.org/q-share?card=not-a-product&title=Ordinary%20search');
+ const html=await (await share(u.href)).text();
+ assert.match(html,/Ordinary search/);
+ assert.match(html,/https:\\/\\/quantaphi\\.org\\/preview\\.png/);
+ assert.doesNotMatch(html,/product-quick-card\\.html/);
+});
 test('HEAD shares return metadata headers without a body',async()=>{
  const r=await share('https://quantaphi.org/q-share?title=QuantaPhi',{method:'HEAD'});
  assert.equal(r.status,200);
