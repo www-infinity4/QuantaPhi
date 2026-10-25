@@ -6,8 +6,8 @@ import {readFileSync} from 'node:fs';
 // The runner's rejected PR #1042 introduced a security regression by allowing
 // an ordinary job with no sourceReview to enter this separate OIDC-only path.
 const source=readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
-const start=source.indexOf('  async acceptSourceReview({lease,body,runUrl,engine}){');
-const end=source.indexOf('  const pinned=lease.job.sourceReview;',start);
+const start=source.indexOf('async acceptSourceReview({lease,body,runUrl,engine}){');
+const end=source.indexOf('const pinned=lease.job.sourceReview;',start);
 assert.ok(start>0&&end>start&&end-start<2000,'actual source-review guard is present');
 const preflight=source.slice(start,end);
 const Guard=new Function('return class Guard {\n'+preflight+'  return true;\n }\n}')();
