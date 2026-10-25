@@ -36,8 +36,11 @@ a{color:#5d2394}button{background:#5b2a91;color:#fff;border:0;border-radius:12px
     a.textContent=story.sourceTitle||'Read the original research source';source.append(a);
   }
   button.hidden=false;button.onclick=async()=>{try{
-    if(navigator.share)await navigator.share({title:story.title,url:location.href});
-    else if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(location.href);status.textContent='Full-story link copied.'}
+    const {socialShareUrl}=await import('/card-social-share.mjs');
+    const link=socialShareUrl({id:'story-'+String(story.id||'original').replace(/[^a-z0-9-]/gi,'-'),
+     name:story.title,category:'Interactive story reader',description:story.summary||'',route:location.href},{origin:location.origin});
+    if(navigator.share)await navigator.share({title:story.title,url:link});
+    else if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(link);status.textContent='Full-story link copied.'}
     else status.textContent='Copy the address to share this story.';
   }catch(e){if(e.name!=='AbortError')status.textContent='Sharing unavailable on this device.'}};
  }catch(e){h.textContent='Story link could not be opened';status.textContent=String(e.message||e)+ ' No replacement search or unrelated story was opened.'}
