@@ -24,6 +24,16 @@ test('a known direct model outage with no operations gets ONE authenticated tick
  assert.equal(r.status,'eligible_for_brain_ticket');
 });
 
+test('existing repository lease reports overload before starting a second direct executor',()=>{
+ const busy={...result,error:'repository_job_running'};
+ assert.equal(chooseOverflow({result:busy,operation,request,repository:repo}).delegate,true);
+ assert.equal(chooseOverflow({result:{...busy,receipts:[{status:'commit_files'}]},operation,request,repository:repo}).delegate,false);
+ const worker=fs.readFileSync(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8');
+ const lease=worker.indexOf("if(lease?.leaseUntil>Date.now())return {existing:{ok:false,status:'blocked',error:'repository_job_running'");
+ const starting=worker.indexOf("const record={ok:true,status:'working'",lease);
+ assert.ok(lease>0&&starting>lease,'overload must be detected before the new request starts');
+});
+
 test('a future capacity response must explicitly certify no side effect before delegation',()=>{
  const base={...result,error:'direct_capacity_reached'};
  assert.equal(chooseOverflow({result:base,operation,request,repository:repo}).delegate,false);
