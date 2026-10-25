@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-25T16:57:29.711254Z",
+  "checked_at": "2026-10-25T19:29:02.582873Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
@@ -17,6 +17,28 @@
     }
   ],
   "articles": [
+    {
+      "title": "How the Rays can send the World Series back to Milwaukee",
+      "url": "https://www.mlb.com/news/rays-keys-to-extending-world-series-vs-brewers-after-game-2",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-25T16:57:17Z",
+      "summary": "",
+      "author": "Adam Berry",
+      "image_url": "",
+      "kind": "Analysis",
+      "image_credit": ""
+    },
+    {
+      "title": "Turang made shocking pitch to Brewers to land 1st pro contract ... or did he?",
+      "url": "https://www.mlb.com/news/brice-turang-s-surprising-pitch-to-brewers-for-first-pro-contract",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-25T16:40:00Z",
+      "summary": "",
+      "author": "Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
     {
       "title": "Four things that need to happen for Rays to overcome 2-0 World Series deficit vs. Brewers",
       "url": "https://www.cbssports.com/mlb/news/2026-world-series-how-rays-can-overcome-2-0-deficit-brewers/",
@@ -161,17 +183,6 @@
       "image_credit": ""
     },
     {
-      "title": "He threw the only immaculate inning in postseason history ... and didn't know until 30 years later",
-      "url": "https://www.mlb.com/news/danny-jackson-immaculate-inning-in-1985-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-24T19:59:35Z",
-      "summary": "",
-      "author": "Sweeny Murti",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "How William Contreras, the MVP of this Brewers playoff run, is commanding the game from every angle",
       "url": "https://www.cbssports.com/mlb/news/william-contreras-mvp-brewers-playoff-run-commanding-the-game/",
       "publisher": "CBS Sports",
@@ -211,17 +222,6 @@
       "published_at": "2026-10-24T07:09:00Z",
       "summary": "",
       "author": "Zach Sweet",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Rays' best-laid Game 1 plans undone by Brewers' airtight arms",
-      "url": "https://www.mlb.com/news/rays-lose-game-1-of-2026-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-24T06:54:00Z",
-      "summary": "",
-      "author": "Adam Berry",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
