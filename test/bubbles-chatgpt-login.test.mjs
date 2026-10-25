@@ -69,10 +69,11 @@ test('account configuration is available only through the verified owner endpoin
  assert.equal(JSON.stringify(await health.json()).includes(email),false);
 });
 
-function cdpFixture({currentCount=8,observedUrl='https://chatgpt.com/c/12345678-1234-4123-8123-123456789abc'}={}){
+function cdpFixture({currentCount=8,assistantText='Pending verification',observedUrl='https://chatgpt.com/c/12345678-1234-4123-8123-123456789abc'}={}){
  const calls=[];let listener,reads=0;
  const snapshot={authenticatedConversation:true,conversationUrl:observedUrl,latestRole:'assistant',messageCount:currentCount,
-  latestAssistantText:'Pending verification',draftPresent:false,generating:false};
+  latestAssistantText:assistantText,editorReady:true,alreadyNudged:false,recentNudgeCount:0,
+  draftPresent:false,generating:false};
  const socket={accept(){},close(){},addEventListener(type,fn){if(type==='message')listener=fn;},removeEventListener(){},
   send(raw){
    const call=JSON.parse(raw);calls.push(call);let value={ok:true};
@@ -93,4 +94,15 @@ test('actual CDP send rejects a changed turn and can verify a star followed by a
  const f=cdpFixture();const receipt=await browserAction(f.env,args);
  assert.equal(receipt.submissionVerified,true);assert.equal(receipt.answerVerified,false);
  assert.deepEqual(f.calls.find(c=>c.method==='Input.insertText').params,{text:'*'});
+});
+
+test('actual CDP route rejects finished or owner-blocked chats before inserting a star',async()=>{
+ const conversationUrl='https://chatgpt.com/c/12345678-1234-4123-8123-123456789abc';
+ const args={sessionId:'SESSION',action:'chatgpt_resume',conversationUrl,text:'*',messageCount:8};
+ for(const assistantText of ['Everything is complete.','Please provide your account approval.']){
+  const f=cdpFixture({assistantText});
+  const receipt=await browserAction(f.env,args);
+  assert.equal(receipt.error,'continuation_not_eligible');
+  assert.equal(f.calls.some(c=>c.method==='Input.insertText'),false);
+ }
 });
