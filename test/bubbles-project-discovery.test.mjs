@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {discoverProject,discoveryTerms,sourceQueryFor,cardWorkTargetFor,recordProjectView,relevantProjectViews,hasActionDraft} from '../bubbles-project-discovery.mjs';
 import {hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
 const catalog=['www-infinity4/QuantaPhi','www-infinity4/ShopLC'];
@@ -53,7 +54,6 @@ test('ordinary repair instructions find the right card, not a repository picker'
  }
 });
 test('chat dispatcher treats recognized card work as a direct owner engineering task',()=>{
- const {readFileSync}=require('node:fs');
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.match(ui,/const namedCardWork=projectContextModule\?\.cardWorkTargetFor/);
  assert.match(ui,/const codeTask=Boolean\(namedCardWork\)/);
