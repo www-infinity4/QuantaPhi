@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'continuity/**'
+      - 'workers/continuity-site/**'
+      - 'scripts/build-continuity-site.mjs'
       - 'workers/infinity-brain-clock/continuity-snapshot.mjs'
       - 'test/brain-clock.test.mjs'
       - 'test/continuity-owner-browser.spec.mjs'
@@ -13,6 +15,8 @@ on:
     branches: [main]
     paths:
       - 'continuity/**'
+      - 'workers/continuity-site/**'
+      - 'scripts/build-continuity-site.mjs'
       - 'workers/infinity-brain-clock/continuity-snapshot.mjs'
       - 'test/brain-clock.test.mjs'
       - 'test/continuity-owner-browser.spec.mjs'
