@@ -3,13 +3,13 @@ on:
   pull_request:
     paths:
       - 'continuity/**'
-      - 'test/continuity.test.mjs'
+      - 'test/continuity*.test.mjs'
       - '.github/workflows/continuity-checks.yml'
   push:
     branches: [main]
     paths:
       - 'continuity/**'
-      - 'test/continuity.test.mjs'
+      - 'test/continuity*.test.mjs'
       - '.github/workflows/continuity-checks.yml'
 permissions:
   contents: read
@@ -25,7 +25,8 @@ jobs:
         run: |
           node --check continuity/engine.mjs
           node --check continuity/app.mjs
-          node --test test/continuity.test.mjs
+          node --check continuity/router.mjs
+          node --test test/continuity*.test.mjs
       - name: Validate isolated app entrypoint
         run: |
           test -f continuity/index.html
