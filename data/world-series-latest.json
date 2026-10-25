@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-25T19:29:02.582873Z",
+  "checked_at": "2026-10-25T21:59:57.041082Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 16
+      "articles_selected": 17
     },
     {
       "publisher": "CBS Sports",
@@ -17,6 +17,61 @@
     }
   ],
   "articles": [
+    {
+      "title": "Rays lend a helping hand (literally) to fellow member of 'Champa Bay'",
+      "url": "https://www.mlb.com/news/rays-glove-buccaneers-quarterback-baker-mayfield",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-25T21:30:48Z",
+      "summary": "",
+      "author": "Bryan Hoch",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Brewers-Rays World Series Game 3 FAQ (Monday, 8 ET, FOX/FOX One)",
+      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-3-starting-lineups-and-pitching-matchup",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-25T20:19:00Z",
+      "summary": "",
+      "author": "Anthony Castrovince, Adam Berry and Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "In tatters 2 years ago, rejuvenated Trop will host first World Series since '08",
+      "url": "https://www.mlb.com/news/world-series-returns-to-tropicana-field-for-first-time-since-2008",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-25T19:58:57Z",
+      "summary": "",
+      "author": "Adam Berry",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "'Fastball Freddy' benefiting from historic velo bump this postseason",
+      "url": "https://www.mlb.com/news/freddy-peralta-velocity-increase-2026-postseason",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-25T19:47:23Z",
+      "summary": "",
+      "author": "Jared Greenspan",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Brewers, Rays prove there's still room for old-school scouting",
+      "url": "https://www.mlb.com/news/brewers-rays-scouting-investment-world-series-2026",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-25T18:46:13Z",
+      "summary": "",
+      "author": "",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
     {
       "title": "How the Rays can send the World Series back to Milwaukee",
       "url": "https://www.mlb.com/news/rays-keys-to-extending-world-series-vs-brewers-after-game-2",
@@ -71,17 +126,6 @@
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/0e27538b-6922-4e4b-8ad5-9ff5676c15bb/frelick-homer-imagn.png",
       "kind": "Analysis",
       "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Brewers-Rays World Series Game 3 FAQ (Monday, 8 ET, FOX/FOX One)",
-      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-3-starting-lineups-and-pitching-matchup",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-25T06:54:52Z",
-      "summary": "",
-      "author": "Anthony Castrovince, Adam Berry and Adam McCalvy",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
     },
     {
       "title": "Fiery Caminero airs frustrations about Rays' miscues as focus shifts to Game 3",
@@ -216,39 +260,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "It took all of 1 pitch for a World Series record",
-      "url": "https://www.mlb.com/news/jacob-misiorowski-makes-world-series-history-in-game-1",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-24T07:09:00Z",
-      "summary": "",
-      "author": "Zach Sweet",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Rays were perfect on postseason SBs -- until Contreras put up a stop sign",
-      "url": "https://www.mlb.com/news/william-contreras-catches-two-rays-stealing-in-game-1-of-2026-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-24T06:39:42Z",
-      "summary": "",
-      "author": "Bryan Hoch",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "4 key takeaways after Brewers win a thriller to start World Series",
-      "url": "https://www.mlb.com/news/key-takeaways-from-world-series-game-1-2026",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-24T06:16:00Z",
-      "summary": "",
-      "author": "Anthony DiComo",
-      "image_url": "",
-      "kind": "Analysis",
-      "image_credit": ""
-    },
-    {
       "title": "Brewers weather ninth-inning storm, take Game 1 in front of raucous fans",
       "url": "https://www.mlb.com/news/brewers-win-world-series-game-1-2026",
       "publisher": "MLB.com",
@@ -335,17 +346,6 @@
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
-    },
-    {
-      "title": "Creating the ultimate 2026 World Series roster: Picking the best of the Brewers and Rays at each position",
-      "url": "https://www.cbssports.com/mlb/news/2026-world-series-ultimate-roster-best-brewers-rays-each-position/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-23T15:34:00Z",
-      "summary": "Pat Murphy and Kevin Cash don't have the luxury of building a Frankenstein roster, but we do, so we will",
-      "author": "Mike Axisa",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/22/51d7f1c5-21d2-41b1-973f-919a4e923282/frankenstein-getty.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
     }
   ],
   "unavailable_sources": [
