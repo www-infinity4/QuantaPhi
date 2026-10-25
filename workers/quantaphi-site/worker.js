@@ -1,4 +1,5 @@
 import {videoAPI} from './video-api.mjs';
+import {BRAND_PRODUCT_CARDS} from '../../brand-product-cards.mjs';
 const EDGE_VERSION = 'quantaphi-org-service-20261024-walmart-v5';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
@@ -266,17 +267,32 @@ function qpShareImage(value) {
  }catch{return ''}
 }
 function qpShareResponse(incoming) {
- const search=qpSharePlain(incoming.searchParams.get('q'),320);
- const title=qpSharePlain(incoming.searchParams.get('title'),160) || search || 'QuantaPhi AI Research';
- const summary=qpSharePlain(incoming.searchParams.get('text'),450) || 'Discover original research, surprising stories, images, video and sound with QuantaPhi.';
- const kind=qpSharePlain(incoming.searchParams.get('kind'),30) || 'research';
- const customImage=qpShareImage(incoming.searchParams.get('image'));
+ // Only first-party, curated merchandise IDs can supply product metadata.
+ // Ignore user-provided image, price, title and checkout overrides for products.
+ const productId=qpSharePlain(incoming.searchParams.get('card'),70);
+ const product=BRAND_PRODUCT_CARDS.find(p=>p.id===productId)||null;
+ const search=product?'':qpSharePlain(incoming.searchParams.get('q'),320);
+ const observedPrice=product?.price?product.price+' · checked '+product.checked:'Price at retailer';
+ const title=product
+  ?qpSharePlain(product.brand+' '+product.title+' · '+observedPrice,160)
+  :qpSharePlain(incoming.searchParams.get('title'),160) || search || 'QuantaPhi AI Research';
+ const summary=product
+  ?qpSharePlain(product.description+' View the real product photo and details in the Infinity Quick Card, then buy through the original retailer. Price and availability may change.',450)
+  :qpSharePlain(incoming.searchParams.get('text'),450) || 'Discover original research, surprising stories, images, video and sound with QuantaPhi.';
+ const kind=product?'product':qpSharePlain(incoming.searchParams.get('kind'),30) || 'research';
+ const customImage=product?qpShareImage(product.image):qpShareImage(incoming.searchParams.get('image'));
  const image=customImage || QP_PREVIEW_IMAGE;
- const destination=new URL('/',CANONICAL_ORIGIN);
- if(search)destination.searchParams.set('q',search);
- destination.hash='result';
+ const imageAlt=product
+  ?product.brand+' '+product.title+' — authentic retailer product photo'
+  :(customImage?'QuantaPhi research image about '+title:'QuantaPhi copper emblem on deep blue background');
+ const destination=new URL(product?'/product-quick-card.html':'/',CANONICAL_ORIGIN);
+ if(product)destination.searchParams.set('card',product.id);
+ else{
+  if(search)destination.searchParams.set('q',search);
+  destination.hash='result';
+ }
  const provided=qpSharePlain(incoming.searchParams.get('dest'),1800);
- if(provided) {
+ if(provided&&!product) {
   try{const next=new URL(provided,CANONICAL_ORIGIN);if(next.origin===CANONICAL_ORIGIN && !next.pathname.startsWith('/q-share')){destination.pathname=next.pathname;destination.search=next.search;destination.hash=next.hash;}}
   catch {}
  }
@@ -293,17 +309,23 @@ function qpShareResponse(incoming) {
   '<meta property="og:title" content="'+qpShareEscape(title)+'">',
   '<meta property="og:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
   '<meta property="og:image" content="'+qpShareEscape(image)+'">',
-  '<meta property="og:image:alt" content="'+qpShareEscape(customImage?'QuantaPhi research image about '+title:'QuantaPhi copper emblem on deep blue background')+'">',
+  '<meta property="og:image:alt" content="'+qpShareEscape(imageAlt)+'">',
   '<meta name="twitter:card" content="summary_large_image">',
   '<meta name="twitter:title" content="'+qpShareEscape(title)+'">',
   '<meta name="twitter:description" content="'+qpShareEscape(summary.slice(0,240))+'">',
   '<meta name="twitter:image" content="'+qpShareEscape(image)+'">',
-  '<meta name="twitter:image:alt" content="'+qpShareEscape(customImage?'QuantaPhi research image about '+title:'QuantaPhi research cover artwork')+'">',
+  '<meta name="twitter:image:alt" content="'+qpShareEscape(imageAlt)+'">',
  ];
  if(!customImage)tags.push('<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png">');
+ if(product?.price&&product.region==='US'){
+  tags.push('<meta property="product:price:amount" content="'+qpShareEscape(product.price.replace(/[^0-9.]/g,''))+'">');
+  tags.push('<meta property="product:price:currency" content="USD">');
+  tags.push('<meta name="twitter:label1" content="Observed price">');
+  tags.push('<meta name="twitter:data1" content="'+qpShareEscape(product.price+' · '+product.checked)+'">');
+ }
  const html=tags.join('\n')+'</head><body style="background:#0a215f;color:white;font:16px system-ui;padding:2rem;max-width:42rem;margin:auto">'+
   '<h1>'+qpShareEscape(title)+'</h1><p>'+qpShareEscape(summary.slice(0,800))+'</p>'+
-  '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">Open in QuantaPhi</a>'+
+  '<a style="color:#ffe2b5" href="'+qpShareEscape(destination.href)+'">'+(product?'View product · Shop at Levi\'s':'Open in QuantaPhi')+'</a>'+
   '<script>location.replace('+JSON.stringify(destination.href).replace(/</g,'\\u003c')+')</script></body></html>';
  return new Response(html,{status:200,headers:{'content-type':'text/html; charset=utf-8','cache-control':'public, max-age=120, s-maxage=300','x-content-type-options':'nosniff','x-quantaphi-edge':EDGE_VERSION,'x-quantaphi-share':kind}});
 }
