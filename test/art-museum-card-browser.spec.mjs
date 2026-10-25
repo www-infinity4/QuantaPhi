@@ -19,6 +19,7 @@ test('museum original becomes a real mobile Oracle card with picture and context
  const stage=page.locator('#oracleCardStage');
  await expect(stage.locator('[data-source-id="aic-gallery-loader"]')).toBeVisible({timeout:15000});
  await expect(stage.getByText('1 source-backed artwork cards loaded')).toBeVisible({timeout:15000});
+ await page.locator('.oracle-card-library summary').click();
  await page.locator('#oracleCardChooser').selectOption('source-aic-27992');
  await expect(stage.locator('.aic-art-image')).toBeVisible();
  await expect(stage.getByRole('link',{name:'View the original museum record'})).toHaveAttribute('href','https://www.artic.edu/artworks/27992');
