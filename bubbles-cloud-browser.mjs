@@ -350,7 +350,7 @@ export function mount({host,ownerHeaders,reveal=false}){
   if(!state){show(await call('start',{url:destinations.chatgpt}));historyTargetId=state.targetId;}
   else if(!historyTargetId){
    const existing=await call('view');
-   const match=(existing.tabs||[]).find(tab=>/^https:\/\/(?:chatgpt\.com|auth\.openai\.com|accounts\.google\.com)\//.test(tab.url));
+   const match=(existing.tabs||[]).find(tab=>/^https:\/\/(?:chatgpt\.com|auth\.openai\.com)\//.test(tab.url));
    if(match?.id)historyTargetId=match.id;
    else{show(await call('tab',{url:destinations.chatgpt}));historyTargetId=state.targetId;}
    for(const tab of existing.tabs||[])if(tab.id&&/^https:\/\/chatgpt\.com\/c\//.test(tab.url))conversationTabs.set(tab.url,tab.id);
@@ -439,7 +439,7 @@ export function mount({host,ownerHeaders,reveal=false}){
  continueChats.addEventListener('click',runChatGPTContinuations);
  stopContinuations.addEventListener('click',()=>{
   continuationRequested=false;waitingForSignIn=false;continuationLoop.stop();
-  stopContinuations.disabled=true;continuationStatus.textContent='Stopping conversation follow-ups…';
+  stopContinuations.disabled=true;continuationStatus.textContent='Conversation follow-ups stopped.';
  });
  // A password/MFA handoff can finish in the live viewer without another start
  // tap. This never renews either existing five-day approval.
