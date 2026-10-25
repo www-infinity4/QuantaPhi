@@ -42,7 +42,7 @@ function target(tabs,wanted=''){
  const page=(Array.isArray(tabs)?tabs:[]).filter(t=>t.type==='page');
  return wanted?page.find(t=>t.id===wanted)||null:page.at(-1)||null;
 }
-export async function browserAction(env,{sessionId,action,targetId='',url='',label='',field='',value='',mode='',text=''}){
+export async function browserAction(env,{sessionId,action,targetId='',url='',label='',field='',value='',mode='',text='',conversationUrl=''}){
  const targets=await env.BROWSER.devtools.listTargets(sessionId);
  const tab=target(targets,targetId);
  if(!tab)throw Error('browser_tab_not_found');
@@ -60,8 +60,16 @@ export async function browserAction(env,{sessionId,action,targetId='',url='',lab
     return r.result.value;
    };
    if(action==='chatgpt_scan')return {...await evaluate(chatgptInspectExpression),targetId:tab.id};
-   const continuation=typeof text==='string'?text:'';
-   if(!continuation.trim()||continuation.length>500) return {ok:false,error:'invalid_continuation'};
+   // This specialized route has exactly one permitted message. A caller
+   // cannot turn an owner-approved continuation into arbitrary browser typing.
+   if(text!=='*')return {ok:false,error:'literal_star_only'};
+   const current=await evaluate(chatgptInspectExpression);
+   if(!current.authenticatedConversation||current.conversationUrl!==conversationUrl)
+    return {ok:false,error:'conversation_changed_before_send'};
+   if(current.latestRole!=='assistant')return {ok:false,error:'assistant_reply_required'};
+   if(current.generating||current.draftPresent||current.recentNudgeCount>0)
+    return {ok:false,error:'conversation_not_idle'};
+   const continuation='*';
    const prepared=await evaluate(chatgptPrepareExpression);
    if(prepared.ok!==true)return prepared;
    await send('Input.insertText',{text:continuation});
