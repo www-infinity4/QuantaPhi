@@ -623,7 +623,7 @@ async function execute(request,env,body){
  // The model may choose one read-only registered tool, but never chooses a
  // repository writer, phone action, permission grant or arbitrary URL.
  // Deterministic requests above still take the fastest direct route.
- if(body.mcp===true&&tool==='oracle.chat'&&!isSourceDraftRequest(question)&&!isSourceReviewRequest(question)){
+ if(body.mcp===true&&tool==='oracle.chat'&&shouldSelectReadTool(question)&&!isSourceDraftRequest(question)&&!isSourceReviewRequest(question)){
   const found=await selectMcpTool(env,question,command=>runMcpRead(request,env,command,question),
    {location:body.location||body.context?.location||''});
   if(found&&found.receipt?.tool){
@@ -633,6 +633,13 @@ async function execute(request,env,body){
   }
  }
  return gptReply(request,env,clean(body.input,32000)||question,receipt,null,question);
+}
+// Avoid a redundant GPT tool-selector inference during ordinary chat.
+// Tools still require the existing schema validation and authorization.
+export function shouldSelectReadTool(question){
+ const q=clean(question,2500);
+ if(!q||/^(?:hi|hello|hey|thanks|thank you|okay|ok|yes|no|good morning|good night|how are you|who are you)[\s!?.]*$/i.test(q))return false;
+ return /\b(?:weather|forecast|temperature|rain|snow|wind|humid|chilly|coat|jacket|umbrella|outside|outdoors|current|latest|today|tonight|news|headlines|search|google|look\s+up|browse|find\s+online|source|citations?|web|resonan\w*|inductance|capacitance|henr(?:y|ies)|farads?|oscillat\w*|organic\s+comput\w*|recall|benchmark|mcp\s+tools?)\b/i.test(q);
 }
 async function runMcpRead(request,env,command,originalQuestion=''){
  // Never accept an arbitrary URL, tool name or authorizing role from a model.
