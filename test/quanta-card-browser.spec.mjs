@@ -114,3 +114,19 @@ test('GUESS real denim purchase card and app-installer disclosure remain distinc
  await expect(page.getByRole('link',{name:'Install Bubbles in Chrome'})).toBeVisible();
  await expect(page.locator('#q')).toBeVisible();
 });
+
+test('Church of I AM uses one owned action toolbar on Android, not a duplicate outside the card',async({page})=>{
+ await page.goto(base+'/?card=iam',{waitUntil:'domcontentloaded'});
+ const stage=page.locator('#oracleCardStage');
+ const card=stage.locator('#churchOfIAmCard');
+ await expect(card).toBeVisible({timeout:20000});
+ const actions=card.locator('#churchIamActions .qca-toolbar');
+ await expect(actions).toHaveCount(1,{timeout:20000});
+ await expect(stage.locator('.qca-toolbar')).toHaveCount(1);
+ await expect(stage.locator('.oracle-card-actions')).toHaveCount(0);
+ for(const label of ['Star','Collect','Share','+1 Build','Quick Search']){
+  await expect(actions.getByText(label,{exact:false}).first()).toBeVisible();
+ }
+ await actions.getByRole('button',{name:/Star/}).click();
+ await expect(actions.getByRole('button',{name:/Starred/})).toBeVisible();
+});
