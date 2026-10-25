@@ -14,6 +14,11 @@ const catalog=[
  {repository:'other-owner/QuantaPhi',description:'Not owned'},
  {repository:'www-infinity4/Old-App',archived:true}
 ];
+test('follow-up card searches do not repeat a completed source-discovery attempt',()=>{
+ const ui=readFileSync('bubbles-ai.js','utf8');
+ assert.match(ui,/result\.requiresReview&&!result\.allTargets&&!repositorySelectionExplicit&&!repositorySourceSearch/);
+ assert.doesNotMatch(ui,/repositorySourceSearch\?\.key===request\.toLowerCase\(\)\.trim\(\)/);
+});
 test('Bubbles voice/APK requests route to the actual QuantaPhi source, not a made-up Bubbles repository',()=>{
  const r=selectRepositories('Repair Bubbles APK microphone and voice overlay',catalog);
  assert.deepEqual(r.selection,['www-infinity4/QuantaPhi']);
