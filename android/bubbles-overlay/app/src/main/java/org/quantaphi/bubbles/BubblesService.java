@@ -1446,7 +1446,24 @@ public final class BubblesService extends Service {
             return true;
         }
         if (!ChatGPTAppPolicy.PACKAGE.equals(BrainLearningService.workflowForegroundPackage())) {
-            screenStatus("Open the ChatGPT app first. Bubbles did not read or control another app.", typed);
+            if (command.kind == ChatGPTAppPolicy.Kind.ASK_AND_SEND
+                    || command.kind == ChatGPTAppPolicy.Kind.CONTINUE_AND_SEND) {
+                // The owner requested a message. Opening the app is not a send
+                // receipt; delay the verified handoff until it is foreground.
+                String opened=AppControlBridge.tryLaunch(this,"open ChatGPT");
+                if (opened==null) {
+                    screenStatus("ChatGPT could not open. No message was sent.",typed);
+                } else {
+                    main.postDelayed(() -> deliverOwnerChatGPTPrompt(command,typed),900L);
+                }
+            } else {
+                screenStatus("Open the ChatGPT app first. Bubbles did not read or control another app.", typed);
+            }
+            return true;
+        }
+        if (command.kind == ChatGPTAppPolicy.Kind.ASK_AND_SEND
+                || command.kind == ChatGPTAppPolicy.Kind.CONTINUE_AND_SEND) {
+            deliverOwnerChatGPTPrompt(command,typed);
             return true;
         }
         if (command.kind == ChatGPTAppPolicy.Kind.TYPE) {
@@ -1476,6 +1493,35 @@ public final class BubblesService extends Service {
         }
         inspectScreenRequest(speech, typed, "");
         return true;
+    }
+
+    /** Dispatch a single owner-authored prompt with no ChatGPT Send tap.
+     * Foreground and existing draft are checked again before the actual tap.
+     * A follow-up model reply NEVER loops back here as an autonomous command.
+     */
+    private void deliverOwnerChatGPTPrompt(ChatGPTAppPolicy.Request command,boolean typed) {
+        if (!BrainLearningService.isConnected()
+                || !ChatGPTAppPolicy.PACKAGE.equals(BrainLearningService.workflowForegroundPackage())) {
+            screenStatus("ChatGPT is not visible with screen access. No message was sent.",typed);
+            return;
+        }
+        final String prepared=BrainLearningService.workflowPrepareChatGPTPrompt(command.value);
+        if (!"TYPE_VERIFIED".equals(prepared)) {
+            screenStatus("ChatGPT prompt not sent: "+prepared.replace('_',' ').toLowerCase(java.util.Locale.ROOT)
+                +". Check the visible message field; an existing draft is never overwritten.",typed);
+            return;
+        }
+        // ChatGPT may enable Send only after processing an accessibility text
+        // event. The delayed step independently verifies the SAME exact draft.
+        main.postDelayed(() -> {
+            String outcome=BrainLearningService.workflowSubmitVisibleChatGPTPrompt(command.value);
+            if ("SEND_TAP_REQUESTED".equals(outcome)) {
+                screenStatus("Message sent to the visible ChatGPT Send control. Waiting for its reply; task completion is not yet verified.",typed);
+            } else {
+                screenStatus("ChatGPT message remains in the composer; Send was not confirmed ("
+                    +outcome.replace('_',' ').toLowerCase(java.util.Locale.ROOT)+").",typed);
+            }
+        },350L);
     }
 
     private void screenStatus(String response, boolean typed) {
