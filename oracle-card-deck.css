@@ -48,3 +48,31 @@ body.oracle-quanta #oracleCardDeck .oracle-card-deck-stage{margin:4px 0 9px}
 body.oracle-quanta #oracleCardDeck .oracle-card-scroll{background:transparent;color:#62574f;border:1px solid #ddd5ce;min-height:44px;font-size:13px;font-weight:500;box-shadow:none}
 /* Keep changing recommendation explanations accessible without crowding cards. */
 #oracleCardReason,#oracleCardStatus{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important}
+
+/* Mobile deck is a viewport, not a long scroll-away list: switch controls remain
+   on screen while only the selected original card's content scrolls. */
+@media(max-width:700px){
+ body.oracle-quanta:not(.oracle-shelf-open) #oracleCardDeck{
+  box-sizing:border-box;display:flex;flex-direction:column;
+  height:calc(100dvh - 14px);max-height:none;min-height:360px;
+  overflow:hidden;isolation:isolate
+ }
+ body.oracle-quanta:not(.oracle-shelf-open) #oracleCardDeck :is(.oracle-direction-tabs,.oracle-card-deck-nav,.oracle-direction-action,.oracle-card-library,.oracle-card-scroll){
+  flex-shrink:0
+ }
+ body.oracle-quanta:not(.oracle-shelf-open) #oracleCardDeck .oracle-card-deck-nav{
+  position:relative;z-index:3;background:#f8f5f2;
+  padding:3px 0
+ }
+ body.oracle-quanta:not(.oracle-shelf-open) #oracleCardDeck .oracle-card-deck-stage{
+  flex:1 1 0;min-height:0;overflow-y:auto;overflow-x:hidden;
+  overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+  scrollbar-gutter:stable;padding:2px 2px 12px
+ }
+ body.oracle-quanta:not(.oracle-shelf-open) #oracleCardDeck .oracle-card-scroll{
+  margin-top:4px
+ }
+}
+/* No cookie-cutter shrink-to-fit of functional players or games in the stage. */
+#oracleCardStage :is(video,iframe,canvas){max-width:100%}
+#oracleCardStage video{height:auto}
