@@ -1,4 +1,4 @@
-import {mountCardActions} from './quanta-card-actions.mjs';
+import {mountCardActions} from './quanta-card-actions.mjs?v=20261025-title-search1';
 // Real source searches, not invented inventory, account data or offers.
 const provider=(id,name,category,official,query,topics,color)=>({id,name,category,official,query,topics,color});
 export const PREMIUM_CARDS=Object.freeze([
