@@ -131,7 +131,7 @@ export function mountPremiumCard(card){
   // The photographed original is first. Three topic buttons remain visible;
   // the manual text field stays available only in an optional detail.
   state.textContent='Featured original photographs · select a topic to research more.';
-  article.append(header,gallery,topics,searchDetails,state,content,disclaimer,actions);
+  article.append(header,gallery,topics,searchDetails,state,content,disclaimer);
  }else article.append(header,form,topics,state,content,disclaimer,actions);
  if(!hasGallery)mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
  let serial=0,loaded=false;
