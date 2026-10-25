@@ -82,6 +82,8 @@ const spotlightRequested=(()=>{try{
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
 entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
 let active=null,expanded=false;
+// Must be ready before early registerSourceCards() invokes start().
+let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
 let selectedTab='public',directionApi=null,quantApi=null,quantWeights={},quantConnected=false;
@@ -175,7 +177,6 @@ function updateInventory(){
 }
 document.getElementById('oracleCardChooser')?.addEventListener('change',event=>{
  const entry=eligible().find(e=>e.id===event.target.value);
- console.info('ORACLE_SELECT_DIAGNOSTIC',JSON.stringify({requested:event.target.value,found:!!entry,expanded,active:active?.id,allCount:entries.length,eligibleCount:eligible().length}));
  if(!entry){status.textContent='That card is no longer available in this viewer. Choose another verified source.';return;}
  viewerTouched=true;
  if(expanded){expanded=false;document.body.classList.remove('oracle-shelf-open');scroll.setAttribute('aria-expanded','false');scroll.textContent='↓ Scroll interactive cards / widgets'}
@@ -388,7 +389,6 @@ host.addEventListener('click',e=>{
 document.body.classList.add('oracle-card-deck-active');
 // Every ready card competes for first placement. The source/museum/product
 // categories and both Cardone cards have no privileged opening positions.
-let openingCursor=null;
 function chooseOpening(){
  const ready=eligible();
  if(!ready.length)return null;
