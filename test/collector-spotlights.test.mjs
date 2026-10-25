@@ -49,3 +49,14 @@ test('featured item has three real title-derived searches with no empty generic 
  assert.ok([...coin,...card].every(x=>x.label&&x.query.includes(x===coin[0]?'1888-O':x.query.includes('Topps')?'2026':'1888-O')));
  assert.equal(titleSearchPresets({name:''}).length,0);
 });
+
+test('Beckett feature photography is an actual BGS graded sports card, not abstract grading art',()=>{
+ const items=getCollectorSpotlights('beckett');
+ assert.equal(items.length,2);
+ for(const item of items){
+  assert.match(item.title,/Topps Chrome.*BGS 9\.5/);
+  assert.match(item.credit,/photographed Beckett-graded card/);
+  assert.match(item.subhead,/#(150|169A)/);
+  assert.match(item.valueNote,/before|no unverified/i);
+ }
+});
