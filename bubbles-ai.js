@@ -2058,7 +2058,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   display(spoken,'you');clearSentComposer();
   messages.push({role:'user',text:spoken});persistChat();
   busy=true;send.disabled=true;setOrbState('busy');
-  let reply;
+  let reply,spokenResult='Blocked.';
   try{
    if(embedded)throw Error('verified_owner_session_required');
    const module=await import('/bubbles-star-continuation.mjs?v=20261025-star1');
@@ -2066,13 +2066,16 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     fetcher:bubblesFetch,ownerHeaders:verifiedOwnerHeaders,base:BRAIN,maxSlots:8
    });
    reply=module.continuationReply(result);
+   spokenResult=result.dispatch?.status==='queued_for_runner'?'Runner requested.':
+    result.dispatch?.status==='job_not_dispatchable'?'Blocked.':
+    result.selected?.target?'Checking runner.':'No eligible job.';
   }catch(error){
    reply='Blocked: Bubbles could not verify and resume existing owner work ('+
     String(error.message||error).replace(/_/g,' ').slice(0,115)+'). No build or GitHub write has been confirmed.';
   }
   display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
-  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=reply;
-  else if(config.voice&&!nativeOverlay)speakText(reply);
+  if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=spokenResult;
+  else if(config.voice&&!nativeOverlay)speakText(spokenResult);
   nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState('idle');drainVoiceTurns();
   return;
  }
