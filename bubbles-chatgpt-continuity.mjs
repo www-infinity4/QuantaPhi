@@ -54,3 +54,26 @@ export function nextEightConversations(visible,{cursor=0,size=8}={}){
  return {conversations,cursor:first+conversations.length>=unique.length?0:first+conversations.length,
   total:unique.length,from:first};
 }
+
+/* Sign-in can move between a ChatGPT tab and a Google/OpenAI popup.
+ * Only select an exact official origin, never an arbitrary Chrome tab.
+ * Account verification is still performed by the owner-gated DOM action.
+ */
+export function selectChatGPTSignInTab(tabs,currentId=''){
+ const allowed=[];
+ for(const tab of Array.isArray(tabs)?tabs:[]){
+  if(typeof tab?.id!=='string'||!tab.id||typeof tab.url!=='string')continue;
+  let page;try{page=new URL(tab.url)}catch{continue}
+  if(!['https://chatgpt.com','https://auth.openai.com','https://accounts.google.com'].includes(page.origin))continue;
+  allowed.push({id:tab.id,origin:page.origin,path:page.pathname});
+ }
+ const providers=allowed.filter(t=>t.origin!=='https://chatgpt.com');
+ if(providers.length>1)return {state:'ambiguous_authentication_tabs',targetId:''};
+ if(providers.length===1)return {state:'authentication_page',targetId:providers[0].id};
+ const current=allowed.find(t=>t.id===currentId);
+ if(current)return {state:'current_chatgpt_tab',targetId:current.id};
+ const landing=allowed.filter(t=>t.origin==='https://chatgpt.com'&&!/^\/c\//.test(t.path));
+ if(landing.length===1)return {state:'chatgpt_return_tab',targetId:landing[0].id};
+ if(allowed.length===1)return {state:'only_chatgpt_tab',targetId:allowed[0].id};
+ return {state:allowed.length?'ambiguous_chatgpt_tabs':'no_official_signin_tab',targetId:''};
+}
