@@ -22,7 +22,7 @@ test('shared controls are exported and bound to real browser actions',()=>{
 test('Oracle viewer retains the original DOM and gives every original card an action bar',()=>{
  const src=read('oracle-card-deck.js');
  assert.match(src,/stage\.append\(entry\.node\);stage\.scrollTop=0;active=entry/);
- assert.match(src,/import\\('\\/quanta-card-actions\\.mjs\\?v=20261025-title-search1'\\)/);
+ assert.match(src,/import\('\/quanta-card-actions\.mjs\?v=20261025-title-search1'\)/);
  assert.match(src,/mountCardActions\(container/);
  assert.match(src,/!entry\.id\.startsWith\('source-'\)&&!hasBuiltInCardActions/);
 });
