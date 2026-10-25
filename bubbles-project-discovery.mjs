@@ -67,37 +67,49 @@ function rankSource(hit,terms,expected){
   (expected?.repository===hit.repository?24:0);
  return {...hit,score,termHits:hits.length};
 }
-export async function discoverProject({request,catalog,views=[],invoke}){
- const allowed=new Set(catalog.map(x=>typeof x==='string'?x:x.repository));
+export async function discoverProject({request,catalog=null,views=[],invoke}){
+ // A complete 448-repository inventory is NOT a prerequisite for source discovery.
+ // Authenticated owner code search is read-only; actual files are pinned below.
+ const allowed=Array.isArray(catalog)?new Set(catalog.map(x=>typeof x==='string'?x:x.repository)):null;
  let terms=discoveryTerms(request);
  if(!terms.length&&views.length)terms=discoveryTerms(views[0].title).slice(0,1);
  if(!terms.length)return null;
- // Read the owner's indexed repository *contents*, not just repository names.
- const result=await invoke({action:'search_github_code',scope:'owner',mode:'read',query:terms.join(' ')});
- if(!result.ok||result.status!=='code_search_results')return null;
+ // Multi-word GitHub code searches can return zero despite an indexed file
+ // containing the project's proper name. Retry narrower, bounded queries.
+ const queries=[...new Set([terms.join(' '),terms.slice(0,2).join(' '),terms.length>1?terms[1]:terms[0]])].filter(Boolean).slice(0,3);
  const expected=namedCardFor(request);
- const matches=(result.results||[]).filter(x=>allowed.has(x.repository)&&
-  !/(?:^|\/)(?:tests?|docs?|work-tickets|\.github)(?:\/|$)/i.test(x.path||'')&&
-  /\.(?:m?js|cjs|tsx?|jsx|html|css|json)$/i.test(x.path||''))
-  .map(x=>rankSource(x,terms,expected)).filter(Boolean)
-  .sort((a,b)=>b.score-a.score||a.repository.localeCompare(b.repository)||a.path.localeCompare(b.path));
- if(!matches.length)return null;
- // A generic same-strength match in two different repositories is not proof.
- const top=matches[0],otherRepo=matches.find(x=>x.repository!==top.repository);
- if(otherRepo&&top.score-otherRepo.score<6)return null;
- // Pin an actual source read. Do not treat model text or an excerpt as proof.
- const repo=await invoke({action:'read_repository',mode:'read',repository:top.repository});
- if(!repo.ok||!/^([a-f0-9]{40})$/.test(repo.headSha||''))return null;
- // Try the best few source hits from that same verified repository in order.
- for(const candidate of matches.filter(x=>x.repository===top.repository).slice(0,3)){
-  const file=await invoke({action:'read_file',mode:'read',repository:candidate.repository,path:candidate.path,ref:repo.headSha});
-  if(!file.ok||file.exists===false||!file.sha)continue;
-  const content=String(file.content||'').toLowerCase();
-  const actual=terms.filter(t=>content.includes(t));
-  if(actual.length<Math.min(2,terms.length))continue;
-  return {repository:candidate.repository,path:candidate.path,sha:file.sha,source:'verified-code-search-and-file-read',
-   card:expected?.repository===candidate.repository?expected.id:null,
-   views:views.slice(0,3),writeAuthorized:false};
+ for(const query of queries){
+  let result;
+  try{result=await invoke({action:'search_github_code',scope:'owner',mode:'read',query})}
+  catch{continue}
+  if(!result?.ok||result.status!=='code_search_results')continue;
+  const matches=(result.results||[]).filter(x=>
+   /^www-infinity4\/[A-Za-z0-9_.-]+$/.test(x.repository||'')&&
+   (!allowed||allowed.has(x.repository))&&
+   !/(?:^|\/)(?:tests?|docs?|work-tickets|\.github)(?:\/|$)/i.test(x.path||'')&&
+   /\.(?:m?js|cjs|tsx?|jsx|html|css|json)$/i.test(x.path||''))
+   .map(x=>rankSource(x,terms,expected)).filter(Boolean)
+   .sort((a,b)=>b.score-a.score||a.repository.localeCompare(b.repository)||a.path.localeCompare(b.path));
+  if(!matches.length)continue;
+  // Equal-strength hits across projects are insufficient to authorize routing.
+  const top=matches[0],otherRepo=matches.find(x=>x.repository!==top.repository);
+  if(otherRepo&&top.score-otherRepo.score<6)continue;
+  let repo;
+  try{repo=await invoke({action:'read_repository',mode:'read',repository:top.repository})}
+  catch{continue}
+  if(!repo?.ok||!/^([a-f0-9]{40})$/.test(repo.headSha||''))continue;
+  for(const candidate of matches.filter(x=>x.repository===top.repository).slice(0,3)){
+   let file;
+   try{file=await invoke({action:'read_file',mode:'read',repository:candidate.repository,path:candidate.path,ref:repo.headSha})}
+   catch{continue}
+   if(!file?.ok||file.exists===false||!file.sha)continue;
+   const content=String(file.content||'').toLowerCase();
+   const actual=terms.filter(t=>content.includes(t));
+   if(actual.length<Math.min(2,terms.length))continue;
+   return {repository:candidate.repository,path:candidate.path,sha:file.sha,source:'verified-code-search-and-file-read',
+    card:expected?.repository===candidate.repository?expected.id:null,
+    views:views.slice(0,3),writeAuthorized:false};
+  }
  }
  return null;
 }
