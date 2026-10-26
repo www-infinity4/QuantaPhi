@@ -315,3 +315,19 @@ test('concurrent handoff finishes cannot exchange twice',async()=>{
   assert.equal(outcomes.filter(x=>x.status==='fulfilled'&&x.value.status==='connected').length,1);
   assert.equal(f.calls,1);
 });
+
+test('completed external-browser handoff survives a lost completion response',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'external-code'});
+  const first=await f.service.finishHandoff(auth);
+  assert.equal(first.status,'connected');
+  const recovered=await f.service.handoffStatus(auth);
+  assert.equal(recovered.status,'connected');
+  assert.deepEqual(recovered.account,first.account);
+  assert.deepEqual(await f.service.finishHandoff(auth),first);
+  assert.equal(f.calls,1);
+  await assert.rejects(f.service.handoffStatus({...auth,sessionId:'other-session'}),/callback_session_mismatch/);
+  await assert.rejects(f.service.finishHandoff({...auth,provider:'github'}),/callback_session_mismatch/);
+  f.setTime(301000);
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
+});
