@@ -39,6 +39,7 @@ test('Android widths use compact navigation with no forced full-width stack of h
   assert.match(css,/min-height:42px/);
   assert.match(css,/safe-area-inset-top/);
   assert.match(css,/overflow-x:clip/);
+  assert.match(css,/\.bubbles-page\{[\s\S]*?box-sizing:border-box!important;/,'container includes padding within viewport width');
   assert.match(css,/\.bubbles-nav-menu/);
   assert.match(css,/\.bubbles-signin-help/);
 });
