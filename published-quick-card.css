@@ -6,3 +6,12 @@
 .qcp-x-share,.qcp-link-button{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:12px;background:#fff;color:#92221f;border:1px solid #b76f62;text-decoration:none;font-weight:800}
 .qcp-x-share:hover,.qcp-link-button:hover{background:#ffebe7}
 .qcp-copy-fallback{display:block;width:100%;margin-top:8px}
+
+/* Published user cards share the standard compact action controls. */
+.qcp-actions .qca-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.qcp-actions .qca-controls>:is(button,a){margin:0;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 7px;text-align:center;border:1px solid #d8bcb6;background:#fff;color:#852d28;font:800 12px/1.3 system-ui,sans-serif;text-decoration:none;border-radius:10px}
+.qcp-actions .qca-controls>a.qca-signin{grid-column:span 2;background:#a52520;color:#fff;border-color:#a52520}
+.qcp-actions .qca-controls>a.qca-connect{background:#fff8f2;border-color:#c58c67}
+.qcp-actions .qca-controls>[aria-pressed="true"]{background:#fff1d5;color:#5f3800}
+.qcp-actions .qca-controls>:focus-visible{outline:3px solid #c47936;outline-offset:2px}
+@media(min-width:650px){.qcp-actions .qca-controls{grid-template-columns:repeat(5,minmax(0,1fr))}}
