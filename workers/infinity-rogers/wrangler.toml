@@ -15,3 +15,8 @@ binding = "AI"
 binding = "METER_DB"
 database_name = "infinity-ai-meter"
 database_id = "3a755f82-da9a-4e2b-a4f8-67f35d726ee0"
+
+# Only authenticated Bubbles owner sessions can use the external AI keys.
+[[services]]
+binding = "BRAIN"
+service = "infinity-brain-clock"
