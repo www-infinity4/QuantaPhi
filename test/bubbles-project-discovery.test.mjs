@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {discoverProject,discoveryTerms,sourceQueryFor,cardWorkTargetFor,recordProjectView,relevantProjectViews,hasActionDraft} from '../bubbles-project-discovery.mjs';
-import {hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
+import worker,{hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
 const catalog=['www-infinity4/QuantaPhi','www-infinity4/ShopLC'];
 const hit={repository:catalog[0],path:'walmart-card.mjs',excerpt:'Walmart products'};
 const search={ok:true,status:'code_search_results',results:[hit]};
@@ -82,4 +82,43 @@ test('pasted read_repo/search action envelopes are rejected as replies without b
  assert.equal(hasActionDraft(leaked),true);assert.equal(hasModelToolLeak(leaked),true);
  assert.equal(hasModelToolLeak('{"action":"search","parameters":{"query":"Walmart","top_n":10}}'),true);
  assert.equal(hasActionDraft('I found the Walmart card and read its source.'),false);
+});
+
+const leakedSearches=['Gary','cardone'].map(term=>JSON.stringify({action:'github.searchCode',
+ parameters:{query:term+' org:www-infinity4',per_page:20}},null,2)).join('\n')+
+ '\nI’m searching the organization’s code. I’ll report the exact files once the results are returned.';
+test('the reported namespaced search drafts are blocked at both chat boundaries',()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const begin=ui.indexOf('function normalizeOwnerAssistantReply('),end=ui.indexOf('function isOwnerWorkRequest(',begin);
+ const normalize=new Function(ui.slice(begin,end)+'\nreturn normalizeOwnerAssistantReply;')();
+ assert.equal(hasActionDraft(leakedSearches),true);
+ assert.equal(hasModelToolLeak(leakedSearches),true);
+ for(const owner of [false,true]){
+  const reply=normalize(leakedSearches,'Move the Gary Cardone card to the carousel',owner);
+  assert.doesNotMatch(reply,/github\.searchCode|per_page|I’m searching/);
+  assert.match(reply,/not verified/);
+ }
+ assert.equal(hasModelToolLeak('{"action":"collect","parameters":{"card":"gary"}}'),false);
+});
+test('the gateway corrects the reported draft without treating its JSON as execution',async()=>{
+ let modelCalls=0;
+ const result=await worker.fetch(new Request('https://tools.test/v1/assist',{method:'POST',
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({request:'Move the Gary Cardone card to the carousel'})}),{
+  AI:{run:async()=>{modelCalls++;return {response:leakedSearches};}}
+ });
+ const body=await result.json();
+ assert.equal(modelCalls,2,'one bounded correction attempt');
+ assert.doesNotMatch(body.output,/github\.searchCode|per_page|I’m searching/);
+ assert.equal(body.answerStatus,'partial');
+ assert.equal(body.receipt.repositoryActionsVerified,false);
+});
+test('card movement resolves named and follow-up targets without making questions into writes',()=>{
+ const history=[{role:'user',text:'Gary Cardone Church of I AM is above the carousel.'}];
+ for(const request of ['Move the Gary Cardone card to the carousel','Please place Gary Cardone in the carousel',
+  'I want you to relocate the Gary Cardone card','Put that card into the carousel','Move that card to the carousel']){
+  assert.equal(cardWorkTargetFor(request,history)?.id,'church-of-i-am',request);
+ }
+ for(const request of ['Do not move the Gary Cardone card','Why move the Gary Cardone card?',
+  'Explain how to place Gary Cardone in the carousel'])assert.equal(cardWorkTargetFor(request,history),null,request);
 });
