@@ -16,7 +16,7 @@ test('I AM is Gary Cardone Sunday promo, not an invented episode library',()=>{
  assert.doesNotMatch(page,/Church of I AM.{0,400}episode library/is);
  assert.match(page,/not a live-stream player/);
 });
-test('visible all days, preferential Sunday-morning rotation, explicitly not a verified live state',()=>{
+test('visible all days, with no forced Sunday priority',()=>{
  assert.match(module,/const sundayMorning=now/);
  assert.match(module,/timeZone:'America\/New_York'/);
  assert.match(module,/weekday==='Sun'&&hour>=8&&hour<13/);
@@ -24,8 +24,8 @@ test('visible all days, preferential Sunday-morning rotation, explicitly not a v
  assert.match(deck,/churchOfIAmCard.*Church of I AM/);
  assert.match(deck,/churchOfIAmCard:\['church-of-i-am'/);
  assert.match(deck,/iam:'churchOfIAmCard'/);
- assert.match(deck,/sundayPromo\|\|products\[0\]/);
- assert.match(deck,/sundayPromo\|\|eligible\(\)\[0\]/);
+ assert.doesNotMatch(deck,/const candidate=sundayPromo/);
+ assert.doesNotMatch(deck,/const candidate=sundayPromo/);
  assert.match(catalog,/app\('church-of-i-am'/);
  assert.doesNotMatch(page,/<audio[^>]+autoplay|<video[^>]+autoplay/i);
 });

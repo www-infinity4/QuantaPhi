@@ -356,6 +356,12 @@ function nativeCaptureNotice(previous,current){
  return '';
 }
 function speechText(value){
+ // Tool-call JSON from a chat model is not evidence of a completed action.
+ // Never recite its parameters or function names through Android TTS.
+ const raw=String(value||'').trim();
+ if(/^[\[{]\s*(?:\{\s*)?["'](?:tool|tool_name|function|action|name|tool_calls)["']\s*:/i.test(raw)||
+    /["'](?:tool_calls|function_call)["']\s*:/.test(raw)&&/\b(?:arguments|parameters|action)\b/i.test(raw))
+  return 'The requested action has not been verified.';
  // Spoken narration is a different representation from the visible chat.
  // Never read formatting symbols, code fences, URLs or markdown syntax aloud.
  return String(value||'')

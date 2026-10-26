@@ -75,13 +75,15 @@ const cardoneButton=document.getElementById('oracleCardCardone');
 const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={walmart:'walmartShoppingCard',google:'source-google','fox-one':'source-fox-one',foxone:'source-fox-one',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
+ const names={walmart:'walmartShoppingCard',google:'source-google','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
  const requested=url.searchParams.get('card');
  return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
 }catch{return null}})();
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
 entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
 let active=null,expanded=false;
+// Must be ready before early registerSourceCards() invokes start().
+let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
 let selectedTab='public',directionApi=null,quantApi=null,quantWeights={},quantConnected=false;
@@ -102,7 +104,7 @@ function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
  // Move the ORIGINAL article, preserving its search field, player and listeners.
  let added=false;
- for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id]')){
+ for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id]')){
   if(node.dataset.sourceReady!=='true')continue;
   const id=node.dataset.sourceId;
   if(!/^[a-z0-9-]+$/.test(id||'')||entries.some(e=>e.feedId===id))continue;
@@ -115,21 +117,11 @@ function registerSourceCards(){
  }
  if(added){
   updateTabs();predict();
-  const google=entries.find(e=>e.id==='source-google');
-  // Prefer the first polished Google card on a cold open, never override
-  // an explicit Cardone button, saved direction or human flip.
+  // New sources enter the same rotation as originals, product cards and Cardone.
+  // Explicit deep links still take priority, but source arrival cannot steal
+  // the first slot from a legitimate earlier Quant/rotation selection.
   const requested=entries.find(e=>e.id===spotlightRequested||e.feedId===spotlightRequested);
   if(!expanded&&!viewerTouched&&requested&&available(requested))show(requested,false);
-  else if(!expanded&&!viewerTouched&&!spotlightRequested){
-   // Lead with an original working source card, not the same static store card.
-   const sources=entries.filter(e=>e.id.startsWith('source-')&&available(e))
-    .sort((a,b)=>a.count-b.count||entries.indexOf(a)-entries.indexOf(b));
-   const products=sources.filter(e=>e.node.closest('#brandProductCards'));
-   const sundayPromo=window.QuantaChurchIam?.sundayMorning?.(new Date())?
-    entries.find(e=>e.id==='churchOfIAmCard'&&available(e)):null;
-   const candidate=sundayPromo||products[0]||sources[0]||google;
-   if(candidate&&candidate!==active)show(candidate,false);
-  }
   else if(!active&&!expanded)start();
  }
 }
@@ -184,10 +176,12 @@ function updateInventory(){
  if(inventory)inventory.textContent='Choose a card · '+cards.length+' available';
 }
 document.getElementById('oracleCardChooser')?.addEventListener('change',event=>{
- const entry=eligible().find(e=>e.id===event.target.value);if(!entry)return;
+ const entry=eligible().find(e=>e.id===event.target.value);
+ if(!entry){status.textContent='That card is no longer available in this viewer. Choose another verified source.';return;}
  viewerTouched=true;
  if(expanded){expanded=false;document.body.classList.remove('oracle-shelf-open');scroll.setAttribute('aria-expanded','false');scroll.textContent='↓ Scroll interactive cards / widgets'}
- show(entry);host.scrollIntoView?.({block:'start',behavior:'smooth'});
+ try{show(entry)}catch(error){console.error('ORACLE_SELECT_ERROR',error);status.textContent='Could not open the selected card.'}
+ host.scrollIntoView?.({block:'start',behavior:'smooth'});
 });
 function presentOriginal(entry){
  const cover=ORIGINAL_COVERS[entry.id];if(!cover||entry.node.querySelector(':scope > .oracle-original-cover'))return;
@@ -393,10 +387,34 @@ host.addEventListener('click',e=>{
  }
 },true);
 document.body.classList.add('oracle-card-deck-active');
-function start(){if(!active&&!expanded){const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
- const sundayPromo=window.QuantaChurchIam?.sundayMorning?.(new Date())&&selectedTab==='public'?
-  entries.find(e=>e.id==='churchOfIAmCard'&&available(e)):null;
- const first=request&&available(request)?request:sundayPromo||eligible()[0]||order()[0];
+// Every ready card competes for first placement. The source/museum/product
+// categories and both Cardone cards have no privileged opening positions.
+function chooseOpening(){
+ const ready=eligible();
+ if(!ready.length)return null;
+ if(directionApi&&feedState){
+  const catalog=liveCatalog(),context={...feedState,catalog,quantScores:quantWeights};
+  const selected=directionApi.nextFeedDirection(catalog,selectedTab,context,'').card;
+  const ranked=ready.find(e=>e.feedId===selected?.id);
+  if(ranked)return ranked;
+ }
+ // Before the ranking module loads, rotate across sessions rather than
+ // exposing one permanent first card. Store no raw searches or location.
+ if(openingCursor===null){
+  try{
+   const saved=Number(localStorage.getItem('oracle:opening-rotation:v1'));
+   openingCursor=Number.isSafeInteger(saved)&&saved>=0?saved:0;
+   localStorage.setItem('oracle:opening-rotation:v1',String((openingCursor+1)%1000000));
+  }catch{openingCursor=0}
+ }
+ return ready[openingCursor%ready.length];
+}
+function start(){if(!active&&!expanded){
+ const request=entries.find(x=>x.id===spotlightRequested||x.feedId===spotlightRequested);
+ // Keep an explicitly requested original card in front of generic rotation.
+ // Some tools hydrate asynchronously after DOMContentLoaded.
+ if(request&&!available(request)){status.textContent='Loading requested interactive card…';return;}
+ const first=request&&available(request)?request:chooseOpening();
  if(first)show(first,false);else status.textContent='Loading original interactive cards…';
 }}
 start();

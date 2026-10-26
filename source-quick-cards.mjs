@@ -1,4 +1,4 @@
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261024-foxone1';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261025-foxnewslive1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -21,6 +21,7 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('yahoo-news','Yahoo News','News','Latest Yahoo News','https://news.yahoo.com/','https://news.yahoo.com/','Compare dated, attributed original Yahoo News stories from an authorized feed only.','Visit Yahoo News for current headlines. An in-card list needs an authorized, fresh attributed data source.'), 
  source('cnn','CNN','News','Latest CNN headlines and video','https://www.cnn.com/','https://www.cnn.com/','Summarize verified, dated CNN links neutrally; distinguish reporting from opinion and do not impersonate CNN.','CNN latest articles open at CNN. Legacy CNN RSS is not a dependable live feed; verify fresh sources.'), 
  source('fox-one','FOX One','TV · Streaming','Watch the exact FOX One video advertisement','https://www.fox.com/','https://x.com/foxone/status/2113352129427730641','Help visitors discover FOX One sports, news and entertainment. Cite original content and do not invent X playback rights.','Official embedded FOX One X post plus real search and collection actions. Playback and mute/autoplay are controlled by X and the browser.'),
+ source('fox-one-live-news','FOX One · Live News','News · Video','FOX One video spot · Watch FOX News live','https://www.fox.com/stream/fox-news','https://x.com/foxone/status/2070282166190408122','Present the original FOX One video spot and help viewers find FOX News streaming through FOX One. Do not imply affiliation, free live access, video rights, or guaranteed autoplay.','Official FOX One post embed. Full FOX News live viewing requires an eligible FOX One subscription or TV provider sign-in. The video embed depends on X and browser support.',{secondUrl:'https://www.fox.com/',secondLabel:'Explore all FOX One channels'}),
  source('fox-news','Fox News','News','Fox News headlines and viewer submissions','https://www.foxnews.com/','https://www.foxnews.com/','Help users research Fox reports and draft a news tip with source evidence. Submission requires a real Fox-approved destination and the visitor’s explicit approval.','View Fox News. Video submissions are draft-only until an authenticated, publisher-approved handoff is built.',{secondUrl:'https://www.foxnews.com/contact',secondLabel:'Contact Fox News'}),
  source('tv-guide','TV Guide','TV','Find tonight’s shows and TV recommendations','https://www.tvguide.com/','https://www.tvguide.com/','Find programs, schedules and credited trailers using a licensed/verified TV listing source and the user’s choice of region.','Open TV Guide to choose shows. The live local schedule needs a licensed guide feed and explicit region selection.'), 
  source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'})
@@ -29,7 +30,7 @@ export const QUICK_CARD_SOURCES=Object.freeze([
 // message draft, local recording, or approved provider embed). These are
 // independent tools, not claims of publisher data access or affiliation.
 export const PUBLIC_SOURCE_IDS=Object.freeze([
- 'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one',
+ 'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp'
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));

@@ -30,8 +30,8 @@ test('the real Walmart product card remains reachable without taking every visit
  const home=read('index.html'),deck=read('oracle-card-deck.js'),styles=read('walmart-card.css');
  assert.equal((home.match(/id="walmartShoppingCard"/g)||[]).length,1);
  assert.match(deck,/\['walmartShoppingCard','Walmart/);
- assert.match(deck,/const sources=entries\.filter\(e=>e\.id\.startsWith\('source-'\)/);
- assert.match(deck,/const candidate=sundayPromo\|\|products\[0\]\|\|sources\[0\]\|\|google/);
+ assert.match(deck,/function chooseOpening\(\)/);
+ assert.doesNotMatch(deck,/const candidate=sundayPromo/);
  assert.match(deck,/walmartShoppingCard:\['walmart-shopping','Shopping'/);
  assert.match(styles,/main\.app>#walmartShoppingCard\{display:none!important\}/);
  assert.match(home,/data-walmart-next/);

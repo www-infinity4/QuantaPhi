@@ -8,9 +8,9 @@ const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'
 const launcher=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
 const deck=readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
 const tools=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
-test('all sixteen provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
- assert.equal(QUICK_CARD_SOURCES.length,16);
- assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,16);
+test('all seventeen provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
+ assert.equal(QUICK_CARD_SOURCES.length,17);
+ assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,17);
  for(const card of QUICK_CARD_SOURCES){
   assert.ok(validSourceCard(card),card.id);
   assert.equal(findSourceCard(card.id),card);
@@ -20,7 +20,7 @@ test('all sixteen provider quick cards exist, have unique IDs and real HTTPS ori
  }
  assert.equal(findSourceCard('not-registered'),null);
  assert.deepEqual(QUICK_CARD_SOURCES.map(p=>p.id),
- ['google','youtube','facebook','instagram','chatgpt','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-one','fox-news','tv-guide','starmaker']);
+ ['google','youtube','facebook','instagram','chatgpt','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-one','fox-one-live-news','fox-news','tv-guide','starmaker']);
 });
 test('Google and Bing start real engine requests inside the Infinity Viewer',()=>{
  for(const id of ['google','bing']){
@@ -36,7 +36,7 @@ test('Google and Bing start real engine requests inside the Infinity Viewer',()=
 });
 test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261024-public-search2/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261025-foxnewslive1/);
  assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
@@ -87,7 +87,7 @@ test('the old visual catalog is removed without deleting source widgets or the o
  assert.doesNotMatch(home,/<script type="module" src="\/quanta-feed.mjs/);
  assert.match(home,/id="oracleCardDeck"/);
  assert.match(deck,/registerSourceCards/);
- assert.match(deck,/const google=entries\.find\(e=>e\.id==='source-google'\)/);
+ assert.match(deck,/function chooseOpening\(\)/);
  assert.match(deck,/viewerTouched/);
 });
 test('Google logo and Infinity local results page are genuine assets and do not frame google.com',()=>{
@@ -111,21 +111,25 @@ test('standalone Google results HTML contains executable JavaScript, not an iner
 
 test('functional source cards enter Public while link-only integrations remain separately accessible',()=>{
  assert.deepEqual(PUBLIC_SOURCE_IDS,[
-  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one',
+  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
   'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp'
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,15);
+ assert.equal(PUBLIC_SOURCE_IDS.length,16);
  assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),false);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/QUICK_CARD_SOURCES.filter\(isPublicSourceCard\)/);
  assert.match(deck,/node.dataset.sourceReady!=='true'/);
- assert.match(deck,/sources=entries.filter\(e=>e.id.startsWith\('source-'\)/);
+ assert.match(deck,/const requested=entries.find/);
 });
 
 test('FOX One exact original video post is source-linked, without fabricating a GIF or autoplay guarantee',()=>{
  const c=findSourceCard('fox-one');
  assert.equal(c.featureUrl,'https://x.com/foxone/status/2113352129427730641');
  assert.equal(c.official,'https://www.fox.com/');
+ const live=findSourceCard('fox-one-live-news');
+ assert.ok(isPublicSourceCard(live));
+ assert.equal(live.featureUrl,'https://x.com/foxone/status/2070282166190408122');
+ assert.equal(live.official,'https://www.fox.com/stream/fox-news');
  assert.match(tools,/function mountFoxOneSpot/);
  assert.match(tools,/https:\/\/platform\.twitter\.com\/widgets\.js/);
  assert.match(tools,/widgets\?\.load/);

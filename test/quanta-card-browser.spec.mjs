@@ -89,7 +89,22 @@ test('FOX One original advertisement and five interactive controls are present',
  await expect(actions.getByRole('button',{name:/Collected/})).toBeVisible();
 });
 
+test('FOX One live news card has its own post, official FOX News viewing link, and interactive actions',async({page})=>{
+ await page.route('https://platform.twitter.com/widgets.js',route=>route.abort());
+ await page.goto(base+'/source-quick-card.html?card=fox-one-live-news',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('.qcx-fox-one-brand')).toHaveText('FOX ONE');
+ await expect(page.getByText('FOX One video spot · FOX News')).toBeVisible();
+ await expect(page.locator('.twitter-tweet a')).toHaveAttribute('href','https://x.com/foxone/status/2070282166190408122');
+ await expect(page.getByRole('link',{name:/Watch FOX News live at FOX One/})).toHaveAttribute('href','https://www.fox.com/stream/fox-news');
+ const actions=page.locator('#sourceQuickCardDetail .qca-toolbar');
+ for(const label of ['Star','Collect','Share','+1 Build','Quick Search'])await expect(actions.getByText(label,{exact:false}).first()).toBeVisible();
+ await actions.getByRole('button',{name:/Collect/}).click();
+ await expect(actions.getByRole('button',{name:/Collected/})).toBeVisible();
+});
+
 test('Pepe Jeans product photographs, exact merchant links, and all five actions rotate in Public',async({page})=>{
+ // CI checks the exact manufacturer image URL, not third-party CDN uptime.
+ await page.route('https://images.pepejeans.com/**',route=>route.fulfill({status:200,contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600"><rect width="600" height="600" fill="#dedad2"/></svg>'}));
  await page.goto(base+'/?card=pepe-brooke',{waitUntil:'domcontentloaded'});
  const viewer=page.locator('#oracleCardStage');
  const card=viewer.locator('[data-source-id="pepe-brooke"]');

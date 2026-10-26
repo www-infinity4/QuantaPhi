@@ -53,8 +53,8 @@ test('all six original product widgets are exposed to the three direction tabs a
  assert.match(home,/brand-product-cards\.mjs\?v=20261024-real-products1/);
  assert.match(home,/brand-product-cards\.css\?v=20261024-real-products1/);
  assert.match(deck,/#brandProductCards \.iqc-card\[data-source-id\]/);
- assert.match(deck,/const products=sources\.filter/);
- assert.match(deck,/const candidate=sundayPromo\|\|products\[0\]\|\|sources\[0\]\|\|google/);
+ assert.match(deck,/function chooseOpening\(\)/);
+ assert.doesNotMatch(deck,/const candidate=sundayPromo/);
  assert.match(module,/source-cards-ready/);
  assert.match(module,/dataset\.sourceReady='true'/);
  for(const tab of ['public','for-you','following'])assert.ok(home.includes('data-oracle-feed="'+tab+'"'));
