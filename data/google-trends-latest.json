@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-26T05:08:28.791711Z",
+  "checked_at": "2026-10-26T11:18:38.291810Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "kody brown",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T04:40:00Z",
+      "query": "packers roughing the passer penalties",
+      "approx_searches": "10000+",
+      "published_at": "2026-10-26T11:00:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/em-sister-wives-em-meri-030000601.html",
-        "https://www.yahoo.com/entertainment/tv/articles/sister-wives-star-janelle-brown-143934425.html",
-        "https://www.imdb.com/news/ni66078349/?ref_=nmnw_art_perm"
+        "https://www.espn.com/nfl/story/_/id/50284205/packers-rip-officiating-roughing-penalties-prove-costly-loss",
+        "https://sports.yahoo.com/articles/no-way-tom-brady-rant-101500798.html",
+        "https://www.nytimes.com/athletic/7725034/2026/10/25/tom-brady-criticize-referees-penalties-packers-lions/"
       ]
     },
     {
-      "query": "kirill kaprizov",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T04:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7721921/2026/10/25/wild-kraken-blake-coleman-penalty-kill/",
-        "https://www.espn.com/nhl/recap/_/gameId/401892577",
-        "https://www.startribune.com/minnesota-wild-seattle-kraken-game-score-quinn-hughes-contract-kirill-kaprizov-stats-nhl-standings/601900463"
-      ]
-    },
-    {
-      "query": "laika studios",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T04:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/10/22/movies/wildwood-review.html",
-        "https://www.hollywoodreporter.com/movies/movie-features/wildwood-director-travis-knight-films-journey-interview-1236736246/",
-        "https://www.cbc.ca/news/entertainment/wildwood-review-laika-9.7393321"
-      ]
-    },
-    {
-      "query": "attack on titan",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T04:30:00Z",
-      "related_news_urls": [
-        "https://www.cbr.com/attack-on-titan-officially-returns-december-9/",
-        "https://www.imdb.com/news/ni66067721/?ref_=int_nwr_1",
-        "https://www.polygon.com/vinland-saga-season-3-creator-update-not-in-production/"
-      ]
-    },
-    {
-      "query": "cyclist",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T04:20:00Z",
-      "related_news_urls": [
-        "https://ktla.com/news/california/2-killed-after-car-strikes-cyclists-drags-victim-over-a-mile-in-southern-california/",
-        "https://www.nbclosangeles.com/video/news/local/suspected-dui-driver-arrested-after-2-cyclists-killed-in-montclair/3960608/",
-        "https://www.latimes.com/california/story/2026-10-25/two-bicyclists-killed-by-alleged-drunk-driver-during-pre-halloween-ride"
-      ]
-    },
-    {
-      "query": "xbox fifty new games release",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T04:20:00Z",
-      "related_news_urls": [
-        "https://www.purexbox.com/news/2026/10/these-40plus-games-are-coming-to-xbox-next-week-october-26-31",
-        "https://news.xbox.com/en-us/2026/10/23/next-week-on-xbox-new-games-for-october-26-to-30/",
-        "https://en.gamegpu.com/news/igry/polzovateli-konsolej-xbox-poluchat-50-igr-s-26-po-31-oktyabrya"
-      ]
-    },
-    {
-      "query": "canelo fight",
+      "query": "nu stock",
       "approx_searches": "500+",
-      "published_at": "2026-10-26T04:10:00Z",
+      "published_at": "2026-10-26T11:00:00Z",
       "related_news_urls": [
-        "https://www.badlefthook.com/boxing-schedule/119946/how-to-watch-canelo-alvarez-christian-mbilli-rafael-espinoza-jaime-munguia-streaming-tv-schedule-boxing-news-2026",
-        "https://www.nytimes.com/athletic/7713543/2026/10/22/canelo-alvarez-christian-mbilli-saudi-fight-safety/",
-        "https://www.boxingnews24.com/2026/10/canelo-alvarez-admits-the-blueprint-why-playing-smart-means-surviving-christian-mbilli/"
+        "https://www.cnbc.com/2026/10/26/brazil-stocks-neoclouds-selloff.html",
+        "https://www.bloomberg.com/news/newsletters/2026-10-26/brazil-catches-investors-leaning-the-wrong-way",
+        "https://www.reuters.com/business/finance/investors-expect-markets-unwind-brazils-lula-reelected-2026-10-26/"
       ]
     },
     {
-      "query": "canelo",
+      "query": "election day",
+      "approx_searches": "100+",
+      "published_at": "2026-10-26T11:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/10/23/world/middleeast/gadi-eisenkot-israel-election.html",
+        "https://www.jpost.com/israel-election-2026/article-911464",
+        "https://www.dw.com/en/gadi-eisenkot-campaigns-on-moroccan-roots-in-challenge-to-netanyahu/a-79747193"
+      ]
+    },
+    {
+      "query": "coindesk",
       "approx_searches": "200+",
-      "published_at": "2026-10-26T04:10:00Z",
+      "published_at": "2026-10-26T10:50:00Z",
       "related_news_urls": [
-        "https://www.si.com/mx/box/canelo-llega-a-arabia-saudita-entre-gritos-de-mexico-mexico-para-enfrentar-a-mbilli",
-        "https://fightnews.com/detras-de-escena-saul-canelo-alvarez-y-christian-mbilli-con-dazn/199032",
-        "https://www.mediotiempo.com/mas-deportes/box/canelo-alvarez-ya-llego-riad-pelea-vs-christian-mbilli-en-medio-de-alertas-de-posibles-ataques"
+        "https://www.coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying",
+        "https://en.bloomingbit.io/feed/news/122935",
+        "https://www.tokenpost.com/news/insights/36228"
       ]
     },
     {
-      "query": "anaheim",
+      "query": "amber nova",
       "approx_searches": "200+",
-      "published_at": "2026-10-26T04:00:00Z",
+      "published_at": "2026-10-26T10:50:00Z",
       "related_news_urls": [
-        "https://www.latimes.com/california/story/2026-10-25/man-is-found-dead-near-entrance-to-disneyland-police-say",
-        "https://www.yahoo.com/news/articles/dead-body-found-next-disneyland-005354044.html",
-        "https://nypost.com/2026/10/25/us-news/body-found-near-disneyland-resort-sign-in-anaheim-police-investigating/"
+        "https://sports.yahoo.com/articles/popular-wwe-star-amber-nova-152920847.html",
+        "https://nypost.com/2026/10/25/us-news/wwe-wrestler-amber-nova-flora-busted-for-dui-in-florida/",
+        "https://www.fightful.com/wrestling/amber-nova-posts-bail-after-being-arrested-for-dui-refusal-to-submit-to-dui-testing/"
       ]
     },
     {
-      "query": "sports",
-      "approx_searches": "20000+",
-      "published_at": "2026-10-26T03:50:00Z",
+      "query": "amc theatres",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T10:50:00Z",
       "related_news_urls": [
-        "https://www.espn.com/wnba/story/_/id/50278436/place-unclear-game-6-valkyries-dream-wnba-finals",
-        "https://www.nytimes.com/athletic/7721369/2026/10/24/atlanta-dream-game-6-state-farm-arena-wnba-finals/",
-        "https://sports.yahoo.com/wnba/breaking-news/article/wnba-finals-league-reportedly-unsure-where-or-when-game-6-will-be-held-due-to-fan-demand-scheduling-complications-185227169.html"
+        "https://www.nydailynews.com/2026/10/25/ceo-amc-wants-keep-kips-bay-movie-theater-nyu-wants-gone/",
+        "https://deadline.com/2026/10/amc-theatres-kips-bay-multiplex-1237172359/",
+        "https://variety.com/2026/film/news/amc-kips-bay-closing-date-ceo-adam-aron-1236930275/"
+      ]
+    },
+    {
+      "query": "weather boston",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T10:40:00Z",
+      "related_news_urls": [
+        "https://whdh.com/weather-blog/warmer-sunny-for-sunday/",
+        "https://www.wkbw.com/weather/mary-beths-sunday-forecast-plenty-of-sunshine-with-above-average-high-temps",
+        "https://www.wdio.com/weather-news/storm-track-forecast/lauren-bryant-cooler-and-crisp-start-to-sunday/"
+      ]
+    },
+    {
+      "query": "brent crude price drops today",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T10:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/business/energy/oil-prices-down-almost-1-early-trading-2026-10-25/",
+        "https://www.barrons.com/livecoverage/stock-market-news-today-102626/card/oil-falls-amid-diplomatic-efforts-to-end-iran-war-1QIP9kW1S0joRFGk4XGK",
+        "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html"
+      ]
+    },
+    {
+      "query": "temperature",
+      "approx_searches": "500+",
+      "published_at": "2026-10-26T10:40:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/climate/events/los-angeles-temperature-at-9-am-ct-oct-26-2026/",
+        "https://timesofindia.indiatimes.com/weather/us/los-angeles-weather-forecast-pleasant-sunny-day-with-highs-of-26c-and-lows-of-15c-on-october-24-2026/articleshow/135170424.cms",
+        "https://timesofindia.indiatimes.com/weather/us/los-angeles-weather-report-for-october-25-sunny-skies-comfortable-temperatures-at-27c/articleshow/135190858.cms"
+      ]
+    },
+    {
+      "query": "usc football loss wisconsin 2026",
+      "approx_searches": "100+",
+      "published_at": "2026-10-26T10:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-football/news/usc-lincoln-rileys-buyout-wisconsin/",
+        "https://www.espn.com/college-football/story/_/id/50273308/former-usc-rb-jackson-wisconsin-upset-no-16-trojans",
+        "https://www.buckys5thquarter.com/wisconsin-badgers-football/91386/wisconsin-badgers-football-news-what-luke-fickell-said-after-win-usc-trojans-saturday-colton-joseph-week-8"
       ]
     }
   ]
