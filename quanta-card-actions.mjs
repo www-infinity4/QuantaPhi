@@ -13,6 +13,17 @@ function route(card){
 }
 function previewUrl(card){return new URL(route(card),location.origin).href}
 function notify(host,s){host.textContent=s}
+export function titleSearchPresets(card){
+ const name=String(card?.name||card?.title||'').trim().slice(0,160);
+ if(!name)return [];
+ const category=String(card?.category||'').toLowerCase();
+ const coin=/coin|variet|silver/.test(category);
+ return [
+  {label:'Research item',query:name},
+  {label:coin?'Verify VAM / grade':'Verify set / grade',query:name+(coin?' die variety attribution PCGS NGC grade':' checklist card number Beckett grading')},
+  {label:'Compare sold',query:name+' completed auction sale price date exact grade'}
+ ];
+}
 export function mountCardActions(host,card,options={}){
  if(!host||!card)return;
  const id=String(card.id||'').replace(/[^a-z0-9-]/g,'').slice(0,90);
@@ -64,19 +75,35 @@ export function mountCardActions(host,card,options={}){
   }
   try{sessionStorage.setItem(STORE_DRAFT,request);location.assign('/#robotDirectionsInput')}catch{notify(status,'Build draft could not be opened.')}
  });
- const search=element('form','qca-search'),q=element('input','qca-search-input');
- q.type='search';q.placeholder='Quick search '+name+'…';q.required=true;q.maxLength=180;q.setAttribute('aria-label','Find within '+name+' card');
- const submit=element('button','qca-button qca-search-submit','⌕ Quick Search');submit.type='submit';
- search.append(q,submit);search.addEventListener('submit',event=>{
-  event.preventDefault();const value=q.value.trim();if(!value)return;
-  const destination='/infinity-search-results.html?'+new URLSearchParams({engine:'google',q:name+' '+value});
+ const sendTitleQuery=query=>{
+  const destination='/infinity-search-results.html?'+new URLSearchParams({engine:'google',q:query});
   if(typeof window.QuantaOpenSite==='function'){
-   const a=element('a');a.href=destination;a.dataset.siteUrl=destination;a.dataset.siteTitle=name+' · Quick Search';
+   const a=element('a');a.href=destination;a.dataset.siteUrl=destination;a.dataset.siteTitle=name+' · Collector research';
    try{window.QuantaOpenSite(a);return}catch{}
   }
   location.assign(destination);
- });
- bar.append(controls);if(options.showSearch!==false)bar.append(search);bar.append(status);host.append(bar);return bar;
+ };
+ if(card.titleQuickSearch&&options.showSearch!==false){
+  // Exactly three useful one-tap actions. No duplicate, empty search field.
+  const quick=element('div','qca-title-searches');
+  for(const choice of titleSearchPresets({name,category:card.category})){
+   const button=element('button','qca-button qca-title-search-button',choice.label);
+   button.type='button';button.addEventListener('click',()=>sendTitleQuery(choice.query));
+   quick.append(button);
+  }
+  bar.append(controls,quick,status);
+ }else if(options.showSearch!==false){
+  const search=element('form','qca-search'),q=element('input','qca-search-input');
+  q.type='search';q.placeholder='Quick search '+name+'…';q.required=true;q.maxLength=180;q.setAttribute('aria-label','Find within '+name+' card');
+  const submit=element('button','qca-button qca-search-submit','⌕ Quick Search');submit.type='submit';
+  search.append(q,submit);search.addEventListener('submit',event=>{
+   event.preventDefault();const value=q.value.trim();if(!value)return;
+   sendTitleQuery(name+' '+value);
+  });
+  bar.append(controls,search,status);
+ }
+ if(options.showSearch===false)bar.append(controls,status);
+ host.append(bar);return bar;
 }
 function restoreDraft(){
  let request;try{request=sessionStorage.getItem(STORE_DRAFT)}catch{return}

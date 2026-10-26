@@ -18,3 +18,48 @@ body.oracle-shelf-open #premiumSourceCards[hidden],body.oracle-shelf-open #siteQ
 .premium-card .qca-search-submit{background:#a42e2d;color:#fff}
 .premium-card .qca-button[aria-pressed="true"]{background:#fff1d5;color:#5f3800}
 @media(max-width:420px){.premium-card .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Collector visual-first treatment: actual photographed object dominates. */
+.premium-feature-host{position:relative;margin:0 22px;padding:0;background:#fff}
+.premium-feature-caption{margin:0 0 9px;color:#8c3a33;font:800 10px/1.4 system-ui;letter-spacing:.15em}
+.premium-feature-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:20px;align-items:start}
+.premium-feature-image-link{display:grid;place-items:center;min-height:300px;overflow:hidden;background:#f7f3ee;border:1px solid #e4dbd0;border-radius:16px;text-decoration:none;color:#694335}
+.premium-feature-image{display:block;width:100%;height:360px;max-height:50vh;object-fit:contain;object-position:center;box-shadow:none}
+.premium-image-unavailable{padding:45px 18px;text-align:center;font:650 14px/1.5 system-ui;color:#714a3b}
+.premium-feature-information{min-width:0;display:flex;flex-direction:column;gap:11px}
+.premium-feature-information h3{font:700 clamp(22px,3vw,31px)/1.17 Georgia,serif!important;letter-spacing:-.02em;margin:0!important;color:#332a25!important}
+.premium-feature-eyebrow{font:800 11px/1.5 system-ui;color:#a23a2e!important;text-transform:uppercase;letter-spacing:.075em}
+.premium-feature-description{font:15px/1.55 system-ui!important;color:#433a33!important;margin:0!important}
+.premium-feature-facts{display:flex;gap:7px;flex-wrap:wrap}
+.premium-feature-facts span{padding:6px 9px;border-radius:999px;background:#eee7de;color:#503c30;font:700 11px/1.35 system-ui}
+.premium-feature-value{padding:12px;border-left:3px solid #a8332f;background:#fcf8f4;font:13px/1.5 system-ui!important;color:#503f33!important;margin:0!important}
+.premium-feature-source,.premium-feature-comparable{color:#9b2e27;text-decoration:underline;text-underline-offset:3px;font:750 13px/1.5 system-ui;overflow-wrap:anywhere}
+.premium-feature-credit{font:11px/1.45 system-ui!important;color:#756b63!important;margin:0!important}
+.premium-feature-nav{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;margin:10px 0 2px}
+.premium-feature-nav .premium-feature-arrow{width:44px;min-height:44px;padding:6px;border-radius:50%;font:800 24px/1 system-ui;background:#a42e2d;color:white}
+.premium-feature-count{min-width:55px;text-align:center;font:750 12px/1.4 system-ui;color:#55453c}
+.premium-feature-action-host .qca-toolbar{margin:8px 0 0;border-top:1px solid #eee4d8;padding-top:12px}
+.premium-feature-action-host .qca-search{margin-top:8px}
+.premium-research-details{margin:0 22px;border-top:1px solid #e8dbcf;padding:8px 0}
+.premium-research-details summary{cursor:pointer;color:#8e332c;font:750 13px/1.4 system-ui;min-height:40px;padding:10px 0}
+.premium-research-details .premium-search{margin:8px 0 12px}
+.premium-feature-host+.premium-topics{margin-top:4px}
+@media(max-width:680px){
+ .premium-feature-host{margin:0 16px}
+ .premium-feature-layout{grid-template-columns:minmax(0,1fr);gap:12px}
+ .premium-feature-image-link{min-height:0}
+ .premium-feature-image{height:min(330px,65vw);max-height:none}
+ .premium-feature-nav{position:absolute;top:32px;left:8px;right:8px;justify-content:space-between;pointer-events:none}
+ .premium-feature-nav .premium-feature-arrow{pointer-events:auto;background:#a42e2def;box-shadow:0 2px 8px #3a211a30}
+ .premium-feature-count{background:#fffdf8ed;border-radius:999px;padding:7px;color:#3d3029}
+ .premium-research-details{margin:0 16px}
+ .premium-feature-action-host .qca-controls{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+ .premium-feature-action-host .qca-button{white-space:normal;min-height:44px}
+}
+@media(max-width:360px){.premium-feature-action-host .qca-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.premium-feature-action-host .qca-title-searches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:7px}
+.premium-feature-action-host .qca-title-search-button{white-space:normal;line-height:1.3;min-height:46px;border:1px solid #b77d68;background:#fff6ed;color:#792f29}
+@media(max-width:360px){.premium-feature-action-host .qca-title-searches{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.premium-feature-action-host .qca-title-search-button{font-size:11px;padding:7px 4px}}
+
+.premium-card:has(.premium-feature-host){padding-bottom:18px}

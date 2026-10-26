@@ -40,3 +40,31 @@ Do not call HTTP requests unique visitors or fabricate a lifetime before coverag
 Verify source-card eligibility, mobile width, tab/follow/next behavior, an actual
 search submission and result rendering, viewer response headers, APK release link,
 and the live traffic response. A commit or queued build alone is not deployment.
+
+## Collector and image-led card acceptance (October 25)
+Topps, Beckett, VAMWorld, PCGS, NGC, auction houses and collectible sellers must
+be judged by a real **identifiable item**, not a branded header, stock texture,
+favicon, generic search response or made-up collectable art.
+
+* Lead with actual source-attributed card/coin/lot photography and a direct
+  clickable original photograph/listing. Preserve a legible portrait crop.
+  A failed image cannot be counted as an image pass, and must expose the source
+  link rather than silently swapping in unrelated stock art.
+* Identify the pictured item by verified set/year/card number/parallel or coin
+  date/mint/VAM/die state; distinguish photograph of the **specific specimen**
+  from a representative illustration, different lot or publisher preview.
+* Put meaningful identification, rarity, context and research actions alongside
+  the photo. Price is either a dated **sale for that exact specimen**, a clearly
+  described comparable for a **different specimen**, or unavailable. Do not
+  convert list prices, guide figures, melt value or unauthenticated grades into
+  an appraisal. Link evidence and preserve the date/grade/variant.
+* Three visible relevant topic actions should work without a manual query.
+  For selected photographed items, Star, Collect, Share and +1 Build attach
+  to that item's stable identifier; three contextual quick searches insert
+  the selected title without another generic search bar.
+* Keep the image, details and next/previous item navigation within the same
+  usable mobile card view; verify on the target Android width. A cosmetic
+  screenshot or static build is not proof of rendered original imagery.
+* Do not publish a new source card as ready solely because a DOM element exists,
+  a favicon loads or a generic web search returns a snippet. Require verified
+  image rendering, first-party link, control behavior, and live readback.
