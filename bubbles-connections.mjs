@@ -250,16 +250,20 @@ export function mountConnections(container,{token}) {
         const providerName=NAMES[provider.id]||provider.id;
         if(!provider.configured){unavailable.append(element('p',providerName+' — connection setup is not available yet.','ba-muted'));continue;}
         const card=element('div','','ba-provider-card');
-        if(signedIn.has(provider.id)){
-          const account=signedIn.get(provider.id);
+        const existing=signedIn.get(provider.id);
+        const upgrade=provider.id==='cloudflare'&&existing&&
+          Array.isArray(provider.actions)&&provider.actions.includes('owner.full')&&
+          !existing.grantedActions?.includes('owner.full');
+        if(existing&&!upgrade){
           card.dataset.status='connected';
-          const connected=element('p',providerName+' · Signed in'+(account.label?' as '+account.label:''),'ba-provider-connected');
+          const connected=element('p',providerName+' · Signed in'+(existing.label?' as '+existing.label:''),'ba-provider-connected');
           connected.setAttribute('role','status');
           card.append(connected);
           catalog.append(card);
           continue;
         }
-        const button=element('button','Sign in with '+providerName,'ba-control');
+        if(upgrade)card.append(element('p','Cloudflare signed in, but full toolkit access is not approved yet. Review the expanded permissions to connect them.','ba-muted'));
+        const button=element('button',upgrade?'Authorize full Cloudflare toolkit':'Sign in with '+providerName,'ba-control');
         button.type='button';button.disabled=Boolean(client.pending);button.dataset.provider=provider.id;
         button.classList.add('ba-signin-button');
         button.setAttribute('aria-label','Sign in with '+providerName);
