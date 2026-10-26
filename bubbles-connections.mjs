@@ -55,45 +55,72 @@ export class AccountConnections {
   }
   async connect(provider,actions,onComplete) {
     if(this.pending)throw Error('Finish the current sign-in window first.');
-    // Open from the user gesture before awaiting network so popup blockers can
-    // make a clear decision. Never expose platform/provider tokens to it.
+    // Android Chrome and embedded viewers may not share opener or BroadcastChannel.
+    // Keep the verified wallet in this window; the provider callback is stored
+    // server-side and only this original session can finish the connection.
     const popup=this.root.open('about:blank','bubbles-account-connect','popup,width=520,height=720');
     if(!popup)throw Error('Allow the sign-in window to open, then try again.');
-    try {
+    try{
       const result=await this.call('/start',{provider,actions});
       const authorization=new URL(result.authorizationUrl),state=authorization.searchParams.get('state');
       const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':'';
-      if(authorization.protocol!=='https:'||authorization.hostname!==expectedHost||authorization.port||!state)throw Error('Sign-in address rejected.');
-      const origin='https://quantaphi.org'; // Registered callback's origin.
-      // Android browser windows may lose window.opener after provider navigation.
-      // A same-origin BroadcastChannel gives the callback a second return path.
-      // Both paths require the server-generated OAuth state and provider match.
-      const channel=typeof this.root.BroadcastChannel==='function'
-        ?new this.root.BroadcastChannel('bubbles-oauth-return-v1'):null;
-      const finish=async message=>{
-        if(message?.type!=='bubbles:oauth-return'||message.provider!==provider||message.state!==state||!this.pending)return;
+      if(authorization.protocol!=='https:'||authorization.hostname!==expectedHost||authorization.port||
+         !/^[A-Za-z0-9_-]{43}$/.test(state||''))throw Error('Sign-in address rejected.');
+      const pending={timer:null,pollTimer:null,polling:false,finished:false,onReturn:null,popup};
+      this.pending=pending;
+      const finish=(error,account)=>{
+        if(this.pending!==pending||pending.finished)return;
+        pending.finished=true;
         this.cleanup();
-        try {
-          if(message.error)throw Error('Account authorization was declined.');
-          if(typeof message.code!=='string'||!message.code)throw Error('Authorization code missing.');
-          const complete=await this.call('/complete',{provider,state,code:message.code});
-          onComplete(null,complete.account);popup.close();
-        } catch(error) {onComplete(error);}
+        try{popup.close();}catch{}
+        onComplete(error,account);
       };
-      const listener=async event=>{
-        if(event.origin!==origin||event.source!==popup)return;
-        await finish(event.data);
+      const poll=async()=>{
+        if(this.pending!==pending||pending.polling||pending.finished)return;
+        pending.polling=true;
+        try{
+          const data=await this.call('/handoff/status',{provider,state});
+          if(data.status==='received'){
+            const completed=await this.call('/handoff/finish',{provider,state});
+            if(completed.status==='connected'&&completed.account)finish(null,completed.account);
+            else if(completed.status==='expired')finish(Error('Sign-in expired. Start Connect account again.'));
+            else if(completed.status==='declined')finish(Error('Account authorization was declined.'));
+          }else if(data.status==='declined')finish(Error('Account authorization was declined.'));
+          else if(data.status==='expired')finish(Error('Sign-in expired. Start Connect account again.'));
+        }catch(error){
+          if(['callback_session_mismatch','verified_wallet_required','state_invalid_or_used'].includes(error.message))
+            finish(error);
+          // Transient network failure: retry while the five-minute state is valid.
+        }finally{
+          pending.polling=false;
+          if(this.pending===pending&&!pending.finished)
+            pending.pollTimer=this.root.setTimeout(()=>void poll(),2500);
+        }
       };
-      if(channel)channel.onmessage=event=>{void finish(event.data);};
-      const timer=this.root.setTimeout(()=>{this.cleanup();onComplete(Error('Sign-in expired. Start Connect account again.'));},300000);
-      this.pending={listener,timer,channel};this.root.addEventListener('message',listener);
+      pending.onReturn=()=>{if(this.pending===pending&&!pending.finished)void poll();};
+      this.root.addEventListener?.('focus',pending.onReturn);
+      this.root.addEventListener?.('pageshow',pending.onReturn);
+      this.root.document?.addEventListener?.('visibilitychange',pending.onReturn);
+      pending.timer=this.root.setTimeout(()=>finish(Error('Sign-in expired. Start Connect account again.')),300000);
       popup.location.href=authorization.href;
-    } catch(error) {popup.close();this.cleanup();throw error;}
+      void poll();
+    }catch(error){
+      try{popup.close();}catch{}
+      this.cleanup();
+      throw error;
+    }
   }
   cleanup() {
-    if(!this.pending)return;
-    this.root.removeEventListener('message',this.pending.listener);this.root.clearTimeout(this.pending.timer);
-    this.pending.channel?.close();this.pending=null;
+    const pending=this.pending;
+    if(!pending)return;
+    this.pending=null;
+    if(pending.timer)this.root.clearTimeout(pending.timer);
+    if(pending.pollTimer)this.root.clearTimeout(pending.pollTimer);
+    if(pending.onReturn){
+      this.root.removeEventListener?.('focus',pending.onReturn);
+      this.root.removeEventListener?.('pageshow',pending.onReturn);
+      this.root.document?.removeEventListener?.('visibilitychange',pending.onReturn);
+    }
   }
 }
 function element(tag,text,className='') {
