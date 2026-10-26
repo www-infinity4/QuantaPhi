@@ -67,6 +67,11 @@ test('provider callback stores authorization on the server and redirects to a co
   assert.ok(!html.includes('private-code'));
   assert.ok(!html.includes('postMessage'));
   assert.match(html,/Return to Bubbles/);
+  assert.match(html,/href="quantaphi-bubbles:\/\/return"/);
+  assert.match(html,/href="\/bubbles-accounts\.html"/);
+  assert.match(html,/Connection is not confirmed until Bubbles checks/);
+  assert.ok(!html.includes(state));
+  assert.ok(!html.includes('Authorization'));
 });
 test('callback rejects unregistered states without revealing provider code',async()=>{
   const state='b'.repeat(43);
