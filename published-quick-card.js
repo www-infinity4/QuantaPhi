@@ -33,7 +33,7 @@ export function paintCard(container,c,{embedded=false}={}){
  info.append(el('h3','','Requested Bubbles interaction'),el('p','qcp-request',c.interactionRequest));
  article.append(info);
  const controls=el('div','qcp-actions');article.append(controls);
- mountCardActions(controls,{id:'published-'+c.slug,name:c.title,category:'Community Quick Card',route:'/cards/'+c.slug,url:c.website});
+ mountCardActions(controls,{id:'published-'+c.slug,name:c.title,category:'Community Quick Card',route:'/cards/'+c.slug,website:c.website,url:c.website});
  const foot=el('p','qcp-small',c.status==='approved'?'Approved for public discovery; Quant matching determines placement.':'This card is shareable by URL. Main-feed placement is pending review.');
  article.append(foot);
  const embed=el('div','qcp-embed'); const code=el('input');code.readOnly=true;code.value='<iframe title="'+c.title.replace(/"/g,'')+'" src="'+c.cardUrl+'" loading="lazy" width="100%" height="720"></iframe>';code.setAttribute('aria-label','Copy embeddable iframe HTML');

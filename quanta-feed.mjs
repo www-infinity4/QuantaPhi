@@ -70,7 +70,7 @@ function makeTile(card,refresh){
  if(card.origin!=='source'){
   const openBtn=create('button','qf-button','Open card');openBtn.type='button';openBtn.addEventListener('click',()=>open(card));buttons.append(openBtn);
  }
- buttons.append(followButton(card,refresh));
+ if(card.origin!=='source')buttons.append(followButton(card,refresh));
  tile.append(art,topic,title,desc);
  if(card.origin==='source'){
   const inline=create('div','qf-inline-tool');mountCardTools(inline,card);tile.append(inline);
@@ -132,7 +132,7 @@ function renderHome(){
    const openBtn=create('button','qf-button','Open interactive card');openBtn.type='button';
    openBtn.addEventListener('click',()=>open(selected));buttons.append(openBtn);
   }
-  buttons.append(followButton(selected,refresh));
+  if(selected.origin!=='source')buttons.append(followButton(selected,refresh));
   if(selected.origin!=='source'||!['google','bing'].includes(selected.id)){
    const original=create('a','qf-link','Original source ↗');original.href=selected.url;original.target='_blank';original.rel='noopener noreferrer';buttons.append(original);
   }
