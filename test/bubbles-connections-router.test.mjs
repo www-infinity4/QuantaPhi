@@ -141,6 +141,31 @@ test('Cloudflare app registered without full project scopes blocks full consent 
  assert.equal(gate.providers.cloudflare.scopeSetupRequired,true);
  assert.equal(gate.providers.cloudflare.reconnectRequired,false);
 });
+test('Cloudflare client credentials without registered scope binding are not sign-in ready',async()=>{
+ const e={...env,CLOUDFLARE_CLIENT_ID:'registered-client',CLOUDFLARE_CLIENT_SECRET:'private-server-value'};
+ const catalog=await (await handleConnections(request('/catalog'),e,
+  ()=>assert.fail('catalog must not read wallet records'))).json();
+ const cf=catalog.providers.find(x=>x.id==='cloudflare');
+ assert.equal(cf.configured,false);
+ assert.equal(cf.fullProjectConfigured,false);
+ assert.equal(cf.setupRequired,'oauth_client_scope_allowlist_missing');
+ assert.deepEqual(cf.actions,[]);
+ const gate=await (await handleConnections(request('/gate/status'),e,
+  ()=>({gateStatus:async()=>[]}))).json();
+ assert.equal(gate.ready,false);
+ assert.equal(gate.providers.cloudflare.configured,false);
+ assert.equal(gate.providers.cloudflare.scopeSetupRequired,true);
+ assert.equal(gate.providers.cloudflare.setupRequired,'oauth_client_scope_allowlist_missing');
+ assert.ok(!JSON.stringify({catalog,gate}).includes('private-server-value'));
+});
+test('Cloudflare OAuth account scopes are distinguished from absent allowlist',async()=>{
+ const e={...env,CLOUDFLARE_CLIENT_ID:'registered-client',CLOUDFLARE_CLIENT_SECRET:'private',
+  CLOUDFLARE_OAUTH_ALLOWED_SCOPES:'workers-r2.read workers-r2.write'};
+ const catalog=await (await handleConnections(request('/catalog'),e,()=>assert.fail())).json();
+ const cf=catalog.providers.find(x=>x.id==='cloudflare');
+ assert.equal(cf.configured,false);
+ assert.equal(cf.setupRequired,'oauth_client_account_scopes_not_registered');
+});
 test('Cloudflare account lookup and selection always receive verified wallet user ID, not supplied ID',async()=>{
  const calls=[],service={cloudflareAccounts:async input=>{calls.push(input);return {accounts:[{id:'a'.repeat(32),name:'Only mine'}]};},
   selectCloudflareAccount:async input=>{calls.push(input);return {account:{id:input.accountId,name:'Only mine'},storageReady:false};}};
