@@ -71,8 +71,14 @@ export async function handleConnections(request,env,resolveService) {
       return json(origin,await env.CONNECTIONS.get(env.CONNECTIONS.idFromName('connector-pairing-v1')).endPair({token}));
     }
     const oauthClientScopes=cloudflareAvailableActions(env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES);
-    const cloudflareAppReady=Boolean(env.CLOUDFLARE_CLIENT_ID&&env.CLOUDFLARE_CLIENT_SECRET&&
+    const cloudflareClientCredentialsReady=Boolean(env.CLOUDFLARE_CLIENT_ID&&env.CLOUDFLARE_CLIENT_SECRET);
+    const cloudflareAppReady=Boolean(cloudflareClientCredentialsReady&&
       oauthClientScopes.includes('account.read'));
+    // The OAuth client may exist while its separately required scope binding is
+    // missing. Surface that exact deployment blocker without exposing secrets.
+    const cloudflareConfigurationIssue=!cloudflareClientCredentialsReady?'oauth_client_not_configured'
+      :!env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES?'oauth_client_scope_allowlist_missing'
+      :!cloudflareAppReady?'oauth_client_account_scopes_not_registered':null;
     const cloudflareFullReady=cloudflareAppReady&&
       ['account.read','projects.build','ledger.read','projects.full'].every(a=>oauthClientScopes.includes(a));
     if (request.method === 'GET' && url.pathname === PREFIX+'/catalog') {
@@ -82,7 +88,7 @@ export async function handleConnections(request,env,resolveService) {
           (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET) ||
           (id==='cloudflare' && cloudflareAppReady)),
         ...(id==='cloudflare'?{fullProjectConfigured:ready&&cloudflareFullReady,
-          setupRequired:!cloudflareAppReady?'oauth_client_not_configured':!cloudflareFullReady?'oauth_client_full_scopes_not_registered':null}:{}),
+          setupRequired:cloudflareConfigurationIssue||(!cloudflareFullReady?'oauth_client_full_scopes_not_registered':null)}:{}),
         requirement:CONNECTOR_REQUIREMENTS[id]}))});
     }
     if (!(env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true')) return json(origin,{ok:false,error:'connections_not_configured'},503);
@@ -108,7 +114,8 @@ export async function handleConnections(request,env,resolveService) {
           missingActions:matching?missingActions:[],
           reconnectRequired:candidates.length>0&&!matching,
           ...(id==='cloudflare'?{fullProjectConfigured:cloudflareFullReady,
-            scopeSetupRequired:cloudflareAppReady&&!cloudflareFullReady}: {})};
+            scopeSetupRequired:cloudflareClientCredentialsReady&&!cloudflareFullReady,
+            setupRequired:cloudflareConfigurationIssue||(!cloudflareFullReady?'oauth_client_full_scopes_not_registered':null)}: {})};
       };
       const github=state('github'),cloudflare=state('cloudflare');
       return json(origin,{ok:true,mode:'preview',enforced:false,
