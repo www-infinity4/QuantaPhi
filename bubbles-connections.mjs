@@ -71,7 +71,7 @@ export class AccountConnections {
       const saved=JSON.parse(this.root.sessionStorage?.getItem('bubbles:oauth-pending:v1')||'null');
       if(saved&&['github','google','cloudflare'].includes(saved.provider)&&
         /^[A-Za-z0-9_-]{43}$/.test(saved.state)&&Number.isFinite(saved.expiresAt)&&
-        saved.expiresAt>Date.now()&&saved.expiresAt<=Date.now()+300000)return saved;
+        saved.expiresAt>Date.now()&&saved.expiresAt<=Date.now()+300000&&saved.flow==='same-window')return saved;
     }catch{}
     this.clearPendingHandoff();
     return null;
@@ -152,7 +152,7 @@ export class AccountConnections {
       if(authorization.protocol!=='https:'||authorization.hostname!==expectedHost||authorization.port||
          !/^[A-Za-z0-9_-]{43}$/.test(state||''))throw Error('Sign-in address rejected.');
       const returnPath=this.root.location?.pathname==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
-      const saved={provider,state,returnPath,expiresAt:Date.now()+Math.min(300,Math.max(1,Number(result.expiresIn)||300))*1000};
+      const saved={provider,state,returnPath,flow:sameWindow?'same-window':'popup',expiresAt:Date.now()+Math.min(300,Math.max(1,Number(result.expiresIn)||300))*1000};
       try{this.root.sessionStorage?.setItem('bubbles:oauth-pending:v1',JSON.stringify(saved));}
       catch{if(!popup)throw Error('This viewer cannot preserve sign-in. Open Account Connections in Chrome.');}
       this.trackHandoff(saved,popup,onComplete);
