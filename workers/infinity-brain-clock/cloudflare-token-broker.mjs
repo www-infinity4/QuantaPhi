@@ -79,15 +79,58 @@ function getValidPlan(plan,id,{now=Date.now()}={}){
  if(!CAPABILITIES[plan.capability]||plan.account!==TOKEN_MANAGER_ACCOUNT)return fail('cloudflare_token_plan_tampered',403);
  return {ok:true};
 }
+// Never include Cloudflare error messages, URLs, authorization headers or
+// token values in owner-facing receipts. Numeric provider codes are safe.
+const numericCodes=payload=>Array.isArray(payload?.errors)?
+ payload.errors.map(e=>e?.code).filter(v=>Number.isInteger(v)&&v>0).slice(0,3):[];
+const tokenApiStage=path=>path==='/user/tokens/permission_groups'?'permission_group_lookup':
+ path==='/user/tokens'?'temporary_token_create':
+ path.startsWith('/user/tokens/')?'temporary_token_revoke':'token_manager_api';
+export async function inspectCloudflareTokenManager(env,{request=fetch}={}){
+ const parent=parentTokenManager(env);
+ if(!parent)return {ok:false,stage:'token_manager_not_configured',httpStatus:503,
+  diagnostic:'Cloudflare API token creator is not configured on Robot Brain.'};
+ try{
+  const res=await request('https://api.cloudflare.com/client/v4/user/tokens/permission_groups',{
+   method:'GET',headers:{Authorization:'Bearer '+parent,Accept:'application/json'},
+   redirect:'error',signal:AbortSignal.timeout(12000)});
+  const data=await res.json().catch(()=>({}));
+  if(!res.ok||data.success!==true){
+   return {ok:false,stage:'permission_group_lookup',httpStatus:res.status,
+    providerCodes:numericCodes(data),diagnostic:'Cloudflare token-manager permission check failed. No OAuth or Worker settings changed.'};
+  }
+  if(!Array.isArray(data.result))return {ok:false,stage:'permission_group_format',
+   httpStatus:502,diagnostic:'Cloudflare returned an unusable permission-group catalog.'};
+  const rules=['oauth-client-read','workers-script-edit'];
+  const capabilityChecks=rules.map(capability=>{
+   const rule=CAPABILITIES[capability];
+   const candidates=data.result.filter(group=>
+    HEX.test(group?.id||'')&&rule.groupNames.some(n=>n.toLowerCase()===String(group?.name||'').toLowerCase())&&
+    (!group?.meta?.scopes||String(group.meta.scopes).includes('account')));
+   return {capability,available:candidates.length===1&&candidates[0].is_selectable!==false};
+  });
+  const ready=capabilityChecks.every(c=>c.available);
+  return {ok:ready,stage:ready?'token_manager_ready':'required_permission_group_unavailable',
+   httpStatus:ready?200:409,capabilityChecks,
+   diagnostic:ready?'Cloudflare token-manager metadata is readable. Temporary token creation has not been tested.':
+    'Cloudflare does not expose every required temporary-token permission to this token manager.'};
+ }catch{
+  return {ok:false,stage:'permission_group_request_unreachable',httpStatus:503,
+   diagnostic:'Cloudflare token-manager permission-group request failed before an HTTP response.'};
+ }
+}
 async function cloudflareJSON(path,token,{method='GET',body,request=fetch}={}){
  const res=await request('https://api.cloudflare.com/client/v4'+path,{
   method,redirect:'manual',signal:AbortSignal.timeout(12000),
   headers:{Authorization:'Bearer '+token,Accept:'application/json',...(body?{'Content-Type':'application/json'}:{})},
   ...(body?{body:JSON.stringify(body)}:{})
  });
- if(!res?.ok)throw Error('cloudflare_provisioning_api_http_'+(res?.status||0));
- const payload=await res.json();
- if(payload?.success!==true)throw Error('cloudflare_provisioning_api_rejected');
+ const payload=await res.json().catch(()=>({}));
+ if(!res?.ok||payload.success!==true){
+  const codes=numericCodes(payload);
+  throw Error('cloudflare_'+tokenApiStage(path)+'_http_'+(res?.status||0)+
+   (codes.length?'_codes_'+codes.join('_'):''));
+ }
  return payload.result;
 }
 function selectPermissionGroup(result,capability){
