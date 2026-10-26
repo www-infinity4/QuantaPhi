@@ -10,6 +10,7 @@ export function providerAuthorizationActions(provider) {
   if(provider.id!=='cloudflare')return provider.id==='github'?['repository.read']:[];
   const available=provider.authorizationActions??provider.actions;
   const required=['account.read','projects.build','ledger.read','projects.full'];
+  if(Array.isArray(available)&&available.includes('owner.full'))return ['owner.full'];
   return Array.isArray(available)?required.filter(action=>available.includes(action)):
     provider.fullProjectConfigured===false||provider.scopeSetupRequired===true?['account.read']:required;
 }
