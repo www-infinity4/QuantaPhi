@@ -12,7 +12,10 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('youtube','YouTube','Video','Trending and popular videos','https://www.youtube.com/','https://www.youtube.com/feed/trending','Find verified channel uploads, popular videos and authorized YouTube player embeds.','Discover videos on the official YouTube trending destination. An actual in-card reel needs YouTube API video IDs and permitted embeds.'), 
  source('facebook','Facebook','Social','Local groups and events','https://www.facebook.com/','https://www.facebook.com/events/','Help signed-in users navigate groups, events and voluntary local interests without assuming their location.','Facebook local items require Facebook sign-in and explicit location consent. This independent card cannot read private feeds.'), 
  source('instagram','Instagram','Social','Explore photos and reels','https://www.instagram.com/','https://www.instagram.com/explore/','Explain image attribution and discover explicitly authorized media via supported Instagram APIs or embeds.','Explore photos and reels at Instagram. Real images require authorized media/official embeds, not scraped CDN images.'), 
- source('chatgpt','ChatGPT','AI','Open your real ChatGPT conversation','https://chatgpt.com/','https://chatgpt.com/','Help visitors decide which research or creative task to bring to ChatGPT. Do not impersonate ChatGPT or claim cross-service conversation access.','Open the authentic ChatGPT site. ChatGPT sessions do not get embedded or synchronized by this card.'), 
+ source('chatgpt','ChatGPT','AI','Open your real ChatGPT conversation','https://chatgpt.com/','https://chatgpt.com/','Help visitors decide which research or creative task to bring to ChatGPT. Do not impersonate ChatGPT or claim cross-service conversation access.','Open the authentic ChatGPT site. ChatGPT sessions do not get embedded or synchronized by this card.'),
+ source('gemini','Google Gemini','AI · Planning','Ask Gemini first through Bubbles','https://gemini.google.com/','https://gemini.google.com/','Gemini offers the first research/engineering plan. Independently check model advice before acting.','Use the real Gemini API only with verified Bubbles owner access, or continue in the official Gemini app.'),
+ source('claude','Anthropic Claude','AI · Review','Review the Gemini plan with Claude','https://claude.ai/','https://claude.ai/','Claude independently reviews proposed changes, tests and possible hazards; no generated text is execution authorization.','The card can ask Bubbles for an authenticated Anthropic API response, if configured; otherwise use the official Claude interface.'),
+ source('copilot','GitHub Copilot','AI · Coding','Review work with GitHub Copilot','https://github.com/copilot','https://github.com/copilot/agents','GitHub Copilot cloud agent can work on appropriately enabled repositories through approved GitHub issues and PRs.','Open the official GitHub Copilot interface. This card does not inherit private repository permissions or claim a direct Copilot chat API.'), 
  source('x','X / Grok','Social','Trends, posts and Grok','https://x.com/','https://x.com/explore','Explore verified public X posts, native embeds and the separate Grok product only when allowed.','Open the X Explore interface. Post streams and Grok need supported provider authorization.',{secondUrl:'https://x.com/i/grok',secondLabel:'Open Grok'}),
  source('reddit','Reddit','Community','Popular communities and discussions','https://www.reddit.com/','https://www.reddit.com/r/popular/','Find relevant communities and explain posts only from explicitly permitted Reddit sources.','Open Reddit popular. Commercial reuse and embedding require provider permission; no unlicensed card feed.'), 
  source('tiktok','TikTok','Video','Discover popular short videos','https://www.tiktok.com/','https://www.tiktok.com/explore','Curate original creators with verified post URLs and approved TikTok Embed Player.','Open TikTok Explore. A real player reel needs actual authorized post IDs and player use; no fabricated trends.'), 
@@ -31,7 +34,8 @@ export const QUICK_CARD_SOURCES=Object.freeze([
 // independent tools, not claims of publisher data access or affiliation.
 export const PUBLIC_SOURCE_IDS=Object.freeze([
  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
- 'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp'
+ 'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
+ 'chatgpt','gemini','claude','copilot'
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>QUICK_CARD_SOURCES.find(p=>p.id===id)||null;
@@ -42,6 +46,40 @@ export const validSourceCard=card=>{
 };
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
 function link(text,href,klass=''){const a=el('a',klass,text);a.href=href;a.target='_blank';a.rel='noopener noreferrer';return a}
+export const aiCardMode=id=>id==='gemini'?'gemini_first':id==='claude'?'gemini_claude_review':null;
+function askAiTools(root,card){
+ if(!['gemini','claude','copilot'].includes(card.id))return;
+ const area=el('div','iqc-ask-ai');
+ if(card.id==='copilot'){
+  area.append(el('p','iqc-muted','Copilot runs through GitHub’s own agent interface, with repository permission and a reviewable PR. No silent issue assignment.'));
+  root.append(area);return;
+ }
+ const form=el('form','iqc-ai-form');
+ const input=el('textarea','iqc-ai-input');
+ input.maxLength=1800;input.rows=2;
+ input.placeholder=card.id==='gemini'?'Ask Gemini to plan a fix…':'Ask Gemini first, then Claude to review…';
+ input.setAttribute('aria-label','Question for '+card.name);
+ const button=el('button','iqc-ai-send',card.id==='gemini'?'Ask Gemini via Bubbles':'Gemini → Claude review');
+ button.type='submit';
+ const result=el('p','iqc-ai-receipt','');
+ result.setAttribute('role','status');
+ form.append(input,button);area.append(form,result);
+ form.addEventListener('submit',event=>{
+  event.preventDefault();
+  const question=input.value.trim().slice(0,1800);if(question.length<3)return;
+  button.disabled=true;result.textContent='Asking Bubbles through your verified session…';
+  // This is a local, explicit user gesture. No password/session is copied.
+  const detail={question,mode:aiCardMode(card.id),respond:value=>{
+   button.disabled=false;result.textContent=String(value||'No verified provider response.').slice(0,3000);
+  }};
+  const handled=window.dispatchEvent(new CustomEvent('bubbles:ai-consult',{detail,cancelable:true}));
+  if(handled){
+   button.disabled=false;
+   result.textContent='Open your Bubbles chat to use the verified AI connection, or continue in the official '+card.name+' site.';
+  }
+ });
+ root.append(area);
+}
 function starterCard(card){
  // The homepage article IS the interactive card. Do not redirect it to an
  // internal viewer; Android WebView's pop-up handling must not be required.
@@ -49,6 +87,7 @@ function starterCard(card){
  item.append(createCardArtwork(card,true));
  if(card.id!=='google'&&card.id!=='bing')item.append(el('p','iqc-kind',card.kind));
  const tools=el('div','iqc-inline-tools');mountCardTools(tools,card);item.append(tools);
+ askAiTools(item,card);
  // Search cards are already complete with their own actual search fields.
  if(!['google','bing'].includes(card.id)){
   const actions=el('div','iqc-actions');
@@ -84,6 +123,7 @@ function mountDetail(){
  document.title=card.name+' · Infinity Quick Card';
  host.append(el('p','iqc-kind','INFINITY 2026® · SOURCE EXPERIENCE'),createCardArtwork(card),el('h1','',card.name),el('h2','',card.feature));
  const tools=el('div','iqc-tools');mountCardTools(tools,card);host.append(tools);
+ askAiTools(host,card);
  const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio)}actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
  const about=el('section','iqc-feature');about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));host.append(about);
  installBubble(card);

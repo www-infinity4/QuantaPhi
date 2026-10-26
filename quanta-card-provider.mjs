@@ -12,6 +12,9 @@ const PROVIDERS=Object.freeze([
  {id:'youtube',name:'YouTube',hosts:['youtube.com','youtu.be'],signin:'https://accounts.google.com/',search:'https://www.youtube.com/results?search_query=',actions:['search','watch'],connector:'google'},
  {id:'github',name:'GitHub',hosts:['github.com'],signin:'https://github.com/login',actions:['repos','read','write'],connector:'github'},
  {id:'cloudflare',name:'Cloudflare',hosts:['cloudflare.com'],signin:'https://dash.cloudflare.com/login',actions:['projects','deploy'],connector:'cloudflare'},
+ {id:'gemini',name:'Google Gemini',hosts:['gemini.google.com'],signin:'https://gemini.google.com/',actions:['ask','research','plan'],providerMode:'gemini_first'},
+ {id:'claude',name:'Anthropic Claude',hosts:['claude.ai'],signin:'https://claude.ai/',actions:['ask','review'],providerMode:'gemini_claude_review'},
+ {id:'copilot',name:'GitHub Copilot',hosts:['github.com'],signin:'https://github.com/login',actions:['code-review','agent-work'],providerMode:'github_review'},
  {id:'jcpenney',name:'JCPenney',hosts:['jcpenney.com'],actions:['shop','orders'],purchase:'provider-checkout'},
  {id:'guess',name:'GUESS',hosts:['guess.com'],actions:['shop','orders'],purchase:'provider-checkout'}
 ]);
@@ -23,7 +26,9 @@ const matches=(hostname,root)=>hostname===root||hostname.endsWith('.'+root);
 /** Pure capability resolution. Do not trust user-supplied card names or IDs as provider identity. */
 export function cardProvider(card){
  const verified=asHttps(card?.official)||asHttps(card?.website)||asHttps(card?.url);
- const descriptor=verified&&PROVIDERS.find(p=>p.hosts.some(root=>matches(verified.hostname.toLowerCase(),root)));
+ const copilot=verified?.hostname==='github.com'&&/^\/copilot(?:\/|$)/.test(verified.pathname);
+ const descriptor=verified&&(copilot?PROVIDERS.find(p=>p.id==='copilot'):
+  PROVIDERS.find(p=>p.hosts.some(root=>matches(verified.hostname.toLowerCase(),root))));
  if(!descriptor)return null;
  return Object.freeze({
   id:descriptor.id,name:descriptor.name,origin:verified.origin,

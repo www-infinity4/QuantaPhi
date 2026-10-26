@@ -8,9 +8,9 @@ const detail=readFileSync(new URL('../source-quick-card.html',import.meta.url),'
 const launcher=readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
 const deck=readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
 const tools=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
-test('all seventeen provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
- assert.equal(QUICK_CARD_SOURCES.length,17);
- assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,17);
+test('all twenty provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
+ assert.equal(QUICK_CARD_SOURCES.length,20);
+ assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,20);
  for(const card of QUICK_CARD_SOURCES){
   assert.ok(validSourceCard(card),card.id);
   assert.equal(findSourceCard(card.id),card);
@@ -20,7 +20,7 @@ test('all seventeen provider quick cards exist, have unique IDs and real HTTPS o
  }
  assert.equal(findSourceCard('not-registered'),null);
  assert.deepEqual(QUICK_CARD_SOURCES.map(p=>p.id),
- ['google','youtube','facebook','instagram','chatgpt','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-one','fox-one-live-news','fox-news','tv-guide','starmaker']);
+ ['google','youtube','facebook','instagram','chatgpt','gemini','claude','copilot','x','reddit','tiktok','whatsapp','bing','yahoo-news','cnn','fox-one','fox-one-live-news','fox-news','tv-guide','starmaker']);
 });
 test('Google and Bing start real engine requests inside the Infinity Viewer',()=>{
  for(const id of ['google','bing']){
@@ -36,7 +36,7 @@ test('Google and Bing start real engine requests inside the Infinity Viewer',()=
 });
 test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261026-live-results1/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261026-ai-collaboration1/);
  assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
@@ -112,10 +112,11 @@ test('standalone Google results HTML contains executable JavaScript, not an iner
 test('functional source cards enter Public while link-only integrations remain separately accessible',()=>{
  assert.deepEqual(PUBLIC_SOURCE_IDS,[
   'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
-  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp'
+  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
+  'chatgpt','gemini','claude','copilot'
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,16);
- assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),false);
+ assert.equal(PUBLIC_SOURCE_IDS.length,20);
+ assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),true);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/QUICK_CARD_SOURCES.filter\(isPublicSourceCard\)/);
  assert.match(deck,/node.dataset.sourceReady!=='true'/);

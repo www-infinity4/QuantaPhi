@@ -173,3 +173,12 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcx-source-item p{font:450 12px/1.45 system-ui,sans-serif;color:#554943;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .qcx-source-item :focus-visible{outline:3px solid #ba672b;outline-offset:3px}
 @media(max-width:480px){.qcx-source-item{padding:9px 10px}.qcx-source-item a{font-size:13px}}
+
+/* AI consultation tools reuse the Oracle Octaves warm/white quick-card surface. */
+.iqc-ask-ai{margin:10px 0 0;padding:10px;background:#fff;border:1px solid #e4d8cf;border-radius:14px;color:#362b26}
+.iqc-ai-form{display:grid;gap:8px;margin:0}
+.iqc-ai-input{box-sizing:border-box;width:100%;max-width:100%;min-height:70px;resize:vertical;border:1px solid #c8b8ac;border-radius:12px;padding:10px;font:inherit;background:#fff;color:#2a2420}
+.iqc-ai-send{font:inherit;font-weight:750;background:#9f2626;color:#fff;border:0;border-radius:12px;min-height:44px;padding:10px 14px;cursor:pointer}
+.iqc-ai-send:disabled{opacity:.65;cursor:wait}
+.iqc-ai-receipt{margin:0;font-size:13px;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere;color:#544840}
+.iqc-ai-input:focus-visible,.iqc-ai-send:focus-visible{outline:3px solid #70469c;outline-offset:2px}

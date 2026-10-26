@@ -1318,7 +1318,7 @@ if(!embedded){
  chatScroll.prepend(browserHome);
  panel.insertBefore(quick,chatScroll);
  const loadBrowser=async()=>{
-  const module=await import('/bubbles-cloud-browser.mjs?v=20261021-android-foreground-poll1');
+  const module=await import('/bubbles-cloud-browser.mjs?v=20261026-ai-collab-browser1');
   return module.mount({host:browserHome,ownerHeaders:verifiedOwnerHeaders});
  };
  const grantBridge=async()=>{
@@ -2066,6 +2066,42 @@ async function consumeOwnerCodeFromChat(message,fromVoice){
  }finally{busy=false;send.disabled=false;}
  return true;
 }
+// Bubbles delegates explicitly requested external advice, never deployment rights.
+async function consultExternalAi(question,mode='gemini_first',fromVoice=false,respond=null){
+ const safe=String(question||'').trim().slice(0,2400);
+ if(safe.length<3||busy){respond?.('Bubbles is busy or the question is empty.');return;}
+ busy=true;send.disabled=true;setOrbState('busy');
+ const label=mode==='gemini_claude_review'?'Gemini then Claude':mode==='claude_only'?'Claude':'Gemini';
+ const requestLabel='Ask '+label+': '+safe;
+ display(requestLabel,'you');messages.push({role:'user',text:requestLabel});persistChat();
+ let answer='',completed=false;
+ try{
+  if(embedded)throw Error('Use the main Bubbles chat for owner AI consultations.');
+  const headers=await verifiedOwnerHeaders();
+  const response=await bubblesFetch('https://infinity-rogers.marvaseater.workers.dev/v1/ai/collaborate',{
+   method:'POST',headers:{...headers,'Content-Type':'application/json'},
+   body:JSON.stringify({question:safe,mode})},69000);
+  const result=await response.json().catch(()=>({}));
+  if(!response.ok||result.ok!==true||!Array.isArray(result.stages)||!result.stages.length)
+   throw Error(String(result.error||'The provider returned no confirmed response.'));
+  completed=true;
+  answer=result.stages.map(stage=>String(stage.provider||'AI')+' · '+String(stage.status||'unverified')+'\n'+String(stage.text||'').slice(0,5000)).join('\n\n');
+  if(result.errors?.length)answer+='\n\nUnavailable: '+result.errors.map(e=>e.provider+' ('+e.error+')').join(', ');
+  answer+='\n\nConsultation only. No GitHub changes, sandbox tests or deployment performed. Ask Bubbles to start an authorized Robot Brain job to implement the reviewed plan.';
+ }catch(error){
+  answer='AI consultation not confirmed: '+String(error.message||error).slice(0,180)+'. No Robot Brain job was submitted. You can continue through the official provider quick card.';
+ }
+ display(answer,'ai');messages.push({role:'assistant',text:answer});messages=messages.slice(-400);persistChat();
+ status.textContent=completed?'AI consultation received, no code executed.':answer.slice(0,140);respond?.(answer);
+ if(fromVoice){if(nativeOverlay)nativeSpeechReply=completed?'AI consultation finished.':'AI consultation not confirmed.';
+  else if(config.voice)speakText(completed?'AI consultation finished.':'AI consultation not confirmed.');}
+ nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();
+}
+window.addEventListener('bubbles:ai-consult',event=>{
+ if(embedded||busy||!event?.detail?.question)return;
+ if(!['gemini_first','gemini_claude_review','claude_only'].includes(event.detail.mode))return;
+ event.preventDefault();void consultExternalAi(event.detail.question,event.detail.mode,false,event.detail.respond);
+});
 async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let spoken=String(text||'').trim();
  // Voice turns must never overwrite partially typed messages.
@@ -2079,6 +2115,13 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(busy)return;
+ const aiConsult=/^(?:bubbles[, ]+)?ask (gemini then claude|gemini|claude)\s*:\s*([\s\S]{3,2400})$/i.exec(spoken);
+ if(aiConsult){
+  clearSentComposer();
+  const mode=aiConsult[1].toLowerCase()==='gemini then claude'?'gemini_claude_review':
+   aiConsult[1].toLowerCase()==='claude'?'claude_only':'gemini_first';
+  await consultExternalAi(aiConsult[2],mode,fromVoice);return;
+ }
  // One character from the owner or the Android Bubbles bridge resumes
  // existing work. Archived text is context, NEVER new build authorization.
  if(spoken==='*'){
@@ -2134,7 +2177,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(nativeOverlay&&fromVoice)nativeSpeechReply=answer;else if(fromVoice)speakText(answer);
   busy=false;send.disabled=false;nativeSpeechPending=false;return;
  }
- if(!embedded&&/^(?:phone (?:read|status|tap|type|scroll_up|scroll_down)\b|ask (?:Gemini|IBM(?: Orchestrate)?):)/i.test(spoken)){
+ if(!embedded&&/^(?:phone (?:read|status|tap|type|scroll_up|scroll_down)\b|ask IBM(?: Orchestrate)?:)/i.test(spoken)){
   busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();
   try{
    const result=await (await phoneTools()).request(spoken);
@@ -2169,7 +2212,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
       ?'Phone tool responded with this actual device receipt: '+JSON.stringify(receipt).slice(0,1900)
       :'Phone tool returned an unverified result: '+JSON.stringify(receipt||{}).slice(0,900);
     }else if(toolAction.kind==='browser'){
-     const browser=await import('/bubbles-cloud-browser.mjs?v=20261021-android-foreground-poll1');
+     const browser=await import('/bubbles-cloud-browser.mjs?v=20261026-ai-collab-browser1');
      answer=await browser.browserConversation(toolAction.command,{host:browserHome,ownerHeaders:verifiedOwnerHeaders});
     }else if(toolAction.kind==='card'){
      const {module,workspace:cardWorkspace}=await chatCardWorkspace();workspace=cardWorkspace;
@@ -2531,7 +2574,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   ||/^(?:(?:hey|okay|please|bubbles)[,\s]+)*(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|chat\s?gpt|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(spoken))){
   let intent=null;
   try{
-   const module=await import('/bubbles-cloud-browser.mjs?v=20261021-android-foreground-poll1');
+   const module=await import('/bubbles-cloud-browser.mjs?v=20261026-ai-collab-browser1');
    intent=module.browserSpeechIntent(spoken);
    if(intent){
     busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');

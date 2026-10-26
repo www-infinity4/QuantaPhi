@@ -45,7 +45,7 @@ test('account connection repair follows current main; unrelated source pins stay
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-connections.mjs'},url),'main');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/apk-downloads.js'},url),'6643d2727f5be56dd0f1b217f532099899833bca');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-gpt-live.js'},url),'40dc5b89ec8ae53804daa7fae6184a904b73fab0');
- assert.match(source,/quantaphi-org-service-20261026-full-consent-v11/);
+ assert.match(source,/quantaphi-org-service-20261026-ai-collaboration-v12/);
  assert.doesNotMatch(source,/quantaphi-org-service-20261026-oracle-auth-v7/);
  assert.doesNotMatch(source,/quantaphi-org-service-20261026-mobile-oauth-v8/);
 });

@@ -3,11 +3,11 @@
 // pretending to click cross-origin websites. Provider logins stay in Chrome.
 const SERVICE='https://bubbles-cloud-browser.marvaseater.workers.dev/v1/browser';
 let panelInstance=null, agent=null;
-const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',chatgpt:'https://chatgpt.com/',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',quantaphi:'https://quantaphi.org/'};
+const destinations={cloudflare:'https://dash.cloudflare.com/',starquest:'https://quantaphi.org/starquest/',bubbles:'https://quantaphi.org/bubbles.html',github:'https://github.com/www-infinity4',chatgpt:'https://chatgpt.com/',gemini:'https://gemini.google.com/',claude:'https://claude.ai/',copilot:'https://github.com/copilot/agents',quantaphi:'https://quantaphi.org/'};
 export function browserSpeechIntent(input){
  const utterance=String(input||'').trim().replace(/^(?:(?:hey|okay|please|bubbles)[,\s]+)+/i,'');
  const browser=/\b(?:cloud|remote|chrome)\s+browser\b|\bbrowser run\b|\bin (?:the )?browser\b/i.test(utterance);
- const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|chat\s?gpt|gemini|claude|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
+ const namedOpen=/^(?:open|launch|go to|visit)\s+(?:(?:the|my)\s+)?(?:cloudflare|chat\s?gpt|gemini|claude|copilot|starquest|bubbles(?: chat)?|quantaphi)(?:\s+(?:website|page|app))?[.!?]*$/i.test(utterance);
  if(!browser&&!namedOpen)return null;
  const show=/^(?:show|display|bring up|pull up|see|watch)\b/i.test(utterance)||namedOpen;
  const url=utterance.match(/https:\/\/[^\s"'<>]+/i)?.[0]||'';
@@ -67,7 +67,9 @@ export function mount({host,ownerHeaders,reveal=false}){
  // Owner signs in interactively; no provider credentials stored in Bubbles.
  const chatgpt=element('button','ChatGPT · sign in');
  const gemini=element('button','Gemini · sign in');
- for(const button of [start,refresh,stop,add,cloudflare,chatgpt,gemini]){button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';controls.append(button);}
+ const claude=element('button','Claude · sign in');
+ const copilot=element('button','GitHub Copilot');
+ for(const button of [start,refresh,stop,add,cloudflare,chatgpt,gemini,claude,copilot]){button.type='button';button.style.cssText='min-height:44px;padding:9px;border-radius:10px;border:1px solid #7767a5;background:#fff;color:#322754';controls.append(button);}
  wrap.append(controls,address);
  // Device-size inspection changes the remote Chrome viewport through CDP.
  // A web preview is not the native phone display; the APK's own screen sharing
@@ -204,7 +206,7 @@ export function mount({host,ownerHeaders,reveal=false}){
      return result;
    }finally{clearTimeout(timeout);}
  }
- const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,cloudflare,chatgpt,gemini,phonePreview,desktopPreview])b.disabled=value;};
+ const loading=(value)=>{busy=value;for(const b of [start,stop,refresh,add,cloudflare,chatgpt,gemini,claude,copilot,phonePreview,desktopPreview])b.disabled=value;};
  const show=(result)=>{
    if(result.sessionId)state={sessionId:result.sessionId,proof:result.proof||state?.proof,targetId:result.targetId||state?.targetId};
    if(result.url){
@@ -245,7 +247,7 @@ export function mount({host,ownerHeaders,reveal=false}){
   address.value=destinations.cloudflare;
   void action(state?'tab':'start',{url:destinations.cloudflare});
  });
- for(const [button,url] of [[chatgpt,destinations.chatgpt],[gemini,destinations.gemini]]){
+ for(const [button,url] of [[chatgpt,destinations.chatgpt],[gemini,destinations.gemini],[claude,destinations.claude],[copilot,destinations.copilot]]){
   button.addEventListener('click',()=>{
    address.value=url;
    // Tabs share one Chrome profile; owner selects the desired provider account.
