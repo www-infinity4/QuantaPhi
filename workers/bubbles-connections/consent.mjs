@@ -149,7 +149,7 @@ export class ConsentService {
         // winner alone exchanges the provider code; the loser should keep
         // polling rather than surface a false sign-in failure.
         const recovered=await this.handoffStatus(input);
-        if(recovered.status==='connected')return recovered;
+        if(recovered.status==='connected'||recovered.status==='pending')return recovered;
         if(recovered.status==='expired')return {status:'pending'};
       }
       // An exchange or receipt failure is terminal for this consumed state.
