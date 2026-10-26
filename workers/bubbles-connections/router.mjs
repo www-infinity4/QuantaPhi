@@ -25,20 +25,16 @@ export async function walletIdentity(request,env) {
   // Binding uses the authenticated device session, not browser-provided IDs.
   return {userId:String(id),sessionId:await digest(authorization)};
 }
-export function callbackPage(provider) {
-  if (!['google','github','cloudflare'].includes(provider)) return new Response('Unknown provider',{status:404});
-  const nonce = crypto.randomUUID();
-  const html = `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Return to Bubbles</title><body><h1>Return to Bubbles</h1><p id="status">Completing your account connection…</p><script nonce="${nonce}">
-const params=new URLSearchParams(location.search);history.replaceState(null,'',location.pathname);
-const targets=['https://quantaphi.org','https://www.quantaphi.org'];
-const result={type:'bubbles:oauth-return',provider:${JSON.stringify(provider)},state:params.get('state'),code:params.get('code'),error:params.has('error')?'provider_declined':null};
-let delivered=false;
-if(window.opener){for(const origin of targets)window.opener.postMessage(result,origin);delivered=true;}
-if(typeof BroadcastChannel==='function'){const channel=new BroadcastChannel('bubbles-oauth-return-v1');channel.postMessage(result);channel.close();delivered=true;}
-document.getElementById('status').textContent=delivered?'Return to Bubbles to confirm the connection. This page does not confirm account access.':'The original Bubbles window is unavailable. Return to Bubbles and start Connect account again. No connection is confirmed here.';
-</script></body></html>`;
-  return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer',
-    'Content-Security-Policy':`default-src 'none'; script-src 'nonce-${nonce}'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'`,
+export function callbackPage(provider,result='') {
+  if(!['google','github','cloudflare'].includes(provider))return new Response('Unknown provider',{status:404});
+  const message=result==='received'
+    ? 'Authorization received securely. Return to Bubbles to verify and finish connecting your account.'
+    : result==='failed'
+      ? 'The authorization could not be received. Return to Bubbles and retry the sign-in.'
+      : 'Return to Bubbles to check your account connection.';
+  const html='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Return to Bubbles</title><body><h1>Return to Bubbles</h1><p>'+message+'</p></body></html>';
+  return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store',
+    'Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
     'X-Content-Type-Options':'nosniff'}});
 }
 // resolveService is an internal dependency, selected only by verified user ID.
@@ -46,7 +42,25 @@ export async function handleConnections(request,env,resolveService) {
   const url = new URL(request.url), origin = request.headers.get('Origin') || '';
   if (request.method === 'GET' && url.pathname === PREFIX+'/health') return json(origin,{ok:true,service:'bubbles-connections',version:2});
   const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/);
-  if (callback && request.method === 'GET') return callbackPage(callback[1]);
+  if(callback && request.method==='GET'){
+    const provider=callback[1],state=url.searchParams.get('state');
+    if(!state)return callbackPage(provider,url.searchParams.get('result')||'');
+    let result='failed';
+    try{
+      const code=url.searchParams.get('code'),denied=url.searchParams.has('error');
+      if(!denied&&!code)throw Error('callback_invalid');
+      const registry=env.CONNECTIONS.get(env.CONNECTIONS.idFromName('oauth-state-registry-v1'));
+      const locator=await registry.lookupOAuthState({state,provider});
+      const service=await resolveService(locator.userId);
+      await service.handoff({userId:locator.userId,provider,state,
+        ...(denied?{error:true}:{code})});
+      result='received';
+    }catch{
+      // Never return provider codes or detailed state errors to the browser.
+    }
+    return new Response(null,{status:303,headers:{Location:PREFIX+'/'+provider+'/callback?result='+result,
+      'Cache-Control':'no-store','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff'}});
+  }
   // Browsers normally omit Origin for same-origin GET fetches. Accept only
   // their Fetch Metadata-confirmed same-origin reads, never originless writes
   // or cross-site reads. A bearer token is still required on protected routes.
@@ -154,7 +168,14 @@ export async function handleConnections(request,env,resolveService) {
     if (url.pathname === PREFIX+'/cloudflare/select-account') return json(origin,{ok:true,...await service.selectCloudflareAccount({userId:identity.userId,id:body.id,accountId:body.accountId})});
     if (url.pathname === PREFIX+'/github/test') return json(origin,{ok:true,...await service.githubConnectionTest({userId:identity.userId,id:body.id})});
     if (url.pathname === PREFIX+'/github/repositories') return json(origin,{ok:true,...await service.githubRepositories({userId:identity.userId,id:body.id})});
-    if (url.pathname === PREFIX+'/start') return json(origin,{ok:true,...await service.start({...identity,provider:body.provider,actions:body.actions})});
+    if(url.pathname===PREFIX+'/start'){
+      const started=await service.start({...identity,provider:body.provider,actions:body.actions});
+      const state=new URL(started.authorizationUrl).searchParams.get('state');
+      const registry=env.CONNECTIONS.get(env.CONNECTIONS.idFromName('oauth-state-registry-v1'));
+      await registry.registerOAuthState({state,provider:body.provider,userId:identity.userId,
+        expiresAt:Date.now()+Math.min(300,started.expiresIn||300)*1000});
+      return json(origin,{ok:true,...started});
+    }
     if (url.pathname === PREFIX+'/complete') {const account=await service.complete({...identity,provider:body.provider,state:body.state,code:body.code});if(account?.connectionError)throw Error(account.connectionError);return json(origin,{ok:true,account});}
     if (url.pathname === PREFIX+'/disconnect') return json(origin,await service.disconnect({userId:identity.userId,id:body.id}));
     if (url.pathname === PREFIX+'/refresh') return json(origin,{ok:true,account:await service.refresh({userId:identity.userId,id:body.id})});
