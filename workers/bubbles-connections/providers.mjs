@@ -201,25 +201,38 @@ const CLOUDFLARE_SCOPES=Object.freeze({
     'dns.read','dns.write'
   ]
 });
-const cfScopes=actions=>[...new Set(actions.flatMap(a=>{
-  if(!Object.hasOwn(CLOUDFLARE_SCOPES,a))throw Error('unsupported_action');
-  return CLOUDFLARE_SCOPES[a];
-}))];
+const FULL_ACTION='owner.full';
+// A single request for the exact server-provisioned client scope inventory.
+// Do not infer authorization from the global Cloudflare scope catalog.
+const cfScopes=(actions,allowlist)=>{
+ const all=allowlist?Array.from(allowlist):[];
+ return [...new Set(actions.flatMap(action=>{
+  if(action===FULL_ACTION){
+   if(all.length<25||all.length>401)throw Error('cloudflare_client_scopes_unavailable');
+   return all;
+  }
+  if(!Object.hasOwn(CLOUDFLARE_SCOPES,action))throw Error('unsupported_action');
+  return CLOUDFLARE_SCOPES[action];
+ }))];
+};
 // Cloudflare OAuth clients may request only scopes registered on THAT client.
 // The ChatGPT Cloudflare plugin's grant cannot be reused by Bubbles.
 // Set this allowlist from the Bubbles OAuth application's verified client
 // registration, not from a guessed global list of available API scopes.
 export function cloudflareAvailableActions(approvedScopes) {
   const allowed=new Set(String(approvedScopes||'').split(/[\s,]+/).filter(Boolean));
-  return Object.keys(CLOUDFLARE_SCOPES).filter(action=>
+  const actions=Object.keys(CLOUDFLARE_SCOPES).filter(action=>
     CLOUDFLARE_SCOPES[action].every(scope=>allowed.has(scope)));
+  if(allowed.size>=25&&allowed.size<=401)actions.push(FULL_ACTION);
+  return actions;
 }
 export function cloudflareScopeInventory(allowedScopes){
   const configured=new Set(String(allowedScopes||'').split(/[\s,]+/).filter(Boolean));
   const available=cloudflareAvailableActions(allowedScopes);
-  const loginActions=['account.read','projects.build','ledger.read','projects.full']
+  const loginActions=available.includes(FULL_ACTION)?[FULL_ACTION]:
+    ['account.read','projects.build','ledger.read','projects.full']
     .filter(action=>available.includes(action));
-  const requested=cfScopes(loginActions);
+  const requested=cfScopes(loginActions,configured);
   return Object.freeze({
     serverAllowlistCount:configured.size,
     signInRequestScopeCount:requested.length,
@@ -228,7 +241,10 @@ export function cloudflareScopeInventory(allowedScopes){
     clientRegistrationVerified:false
   });
 }
-const cfGranted=(actions,scope)=>actions.filter(a=>CLOUDFLARE_SCOPES[a]?.every(s=>scope.has(s)));
+const cfGranted=(actions,scope,allowlist)=>actions.filter(action=>
+ action===FULL_ACTION
+  ? allowlist?.size>=25&&Array.from(allowlist).every(s=>scope.has(s))
+  : CLOUDFLARE_SCOPES[action]?.every(s=>scope.has(s)));
 export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...args)){
   const redirectUri=callback(config);
   const approvedScopes=config.allowedScopes===undefined?null:
@@ -241,7 +257,7 @@ export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...
     await request('https://dash.cloudflare.com/oauth2/token',form(fields)),'cloudflare_exchange'));
   const withScope=(token,value,actions)=>{
     const scopes=new Set(String(value.scope||'').trim().split(/\s+/).filter(Boolean));
-    return {...token,grantedActions:cfGranted(actions,scopes)};
+    return {...token,grantedActions:cfGranted(actions,scopes,approvedScopes)};
   };
   return {
     id:'cloudflare',
@@ -266,7 +282,7 @@ export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...
     },
     authorization({state,challenge,actions}){
       if(!actions.length)throw Error('unsupported_action');
-      const requested=cfScopes(actions);
+      const requested=cfScopes(actions,approvedScopes);
       if(approvedScopes && requested.some(scope=>!approvedScopes.has(scope)))
         throw Error('cloudflare_client_scopes_unavailable');
       const url=new URL('https://dash.cloudflare.com/oauth2/auth');
