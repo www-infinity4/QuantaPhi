@@ -362,8 +362,20 @@ export function mountConnections(container,{token}) {
             }catch(error){backupStatus.textContent='Private repository not created: '+error.message;}
             finally{createPrivate.disabled=false;}
           });
-          row.append(inspect,test,result,walletRepo,backup,compare,createPrivate,backupStatus);
-          void loadPrivateRepositories().catch(()=>{backupStatus.textContent='GitHub repository list is unavailable. No backup was written.';});
+          // Backup controls are unrelated to signing in. Keep them optional,
+          // collapsed and inert until explicitly opened by the account owner.
+          const backupTools=element('details','','ba-optional-backup');
+          backupTools.append(element('summary','Optional StarCoin backup'),
+            walletRepo,backup,compare,createPrivate,backupStatus);
+          let backupLoaded=false;
+          backupTools.addEventListener('toggle',()=>{
+            if(!backupTools.open||backupLoaded)return;
+            backupLoaded=true;
+            void loadPrivateRepositories().catch(()=>{
+              backupStatus.textContent='GitHub repository list is unavailable. No backup was written.';
+            });
+          });
+          row.append(inspect,test,result,backupTools);
           }
         }
         accounts.append(row);
