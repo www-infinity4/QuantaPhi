@@ -1,4 +1,5 @@
 import {mountCardActions} from './quanta-card-actions.mjs';
+import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
  */
@@ -101,6 +102,21 @@ function searchTool(root,card,options={}){
    }else location.assign(target);
   });
   note(panel,'Google/Bing listings are displayed through the Infinity search broker, with their source identified. This is an independent QuantaPhi tool.');
+ }else if(liveSourceProfile(card.id)){
+  // Keep the existing single search field: source-matched public listings
+  // appear INSIDE this card instead of opening a different browser view.
+  const results=node('div','qcx-source-live');
+  results.setAttribute('aria-label',liveSourceProfile(card.id).name+' public search results');
+  form.addEventListener('submit',async e=>{
+   e.preventDefault();const query=field.value.trim().slice(0,110);if(!query)return;
+   b.disabled=true;
+   try{await showLiveSourceResults(results,card.id,query);}
+   finally{b.disabled=false;}
+  });
+  panel.append(form,results);
+  const target=card.official||card.url||spec[0];
+  if(/^https:\/\//.test(target))panel.append(link('Open original '+liveSourceProfile(card.id).name+' site',target));
+  note(panel,'Results are independently indexed public pages, filtered to the original website. Not an official provider API, live listing inventory, price quote, or account session.');
  }else{
   form.addEventListener('submit',e=>{
    e.preventDefault();const query=field.value.trim().replace(/^#/,'');if(!query)return;
@@ -108,7 +124,7 @@ function searchTool(root,card,options={}){
    window.open(spec[0]+encodeURIComponent(query),'_blank','noopener,noreferrer');
   });
  }
- panel.append(form);
+ if(!panel.contains(form))panel.append(form);
  if(card.id==='facebook')note(panel,'Search at Facebook. Local personalization only follows location or interests you explicitly enter.');
  if(card.id==='cnn'||card.id==='fox-news')note(panel,'Publisher-specific web search. Results, dates and article rights remain with the original publisher.');
  if(card.id==='robinhood'||card.id==='chime')note(panel,'Public research only. Personal balances and holdings require a separately approved integration.');
