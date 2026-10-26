@@ -59,6 +59,29 @@ ChatGPT's old Cloudflare API connector and current Cloudflare connector are
 separate platform connections. Repository code can fix Bubbles' own return flow;
 it cannot change a ChatGPT connector's platform-owned callback registration.
 
+
+## Cloudflare registration: minimum app-entry scopes
+
+For the private Bubbles OAuth client, use the registered callback
+`https://quantaphi.org/api/bubbles/connections/cloudflare/callback`, response
+`code`, authorization-code and refresh-token grants, `client_secret_basic`, and
+PKCE S256. The six owner-selected scopes are:
+
+`user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read`
+
+**Three Worker configuration values** are required, not just two:
+`CLOUDFLARE_CLIENT_ID` and `CLOUDFLARE_CLIENT_SECRET` as encrypted Worker
+secrets, and `CLOUDFLARE_OAUTH_ALLOWED_SCOPES` containing exactly the registered
+scope names above. Never paste client secrets into chat or commit them to Git.
+
+App entry requires a verified GitHub identity and a verified Cloudflare
+`account.read` grant (derived from `user-details.read` plus `memberships.read`).
+The other registered scopes allow separately authorized project actions; they
+do not grant project execution merely by opening Bubbles. The much broader
+`projects.full` action is optional and **must not be required for sign-in**.
+Integra reports `projectPermissionsApproved: false` until the full registered
+project toolkit and a matching user grant are independently verified.
+
 ## Verification and rollout
 
 Node tests cover consent, session isolation, encryption, refresh, state replay,

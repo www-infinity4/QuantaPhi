@@ -3,7 +3,7 @@
 // Passing this check never authorizes repository writes, deployments or money.
 export const ENTRY_REQUIREMENTS=Object.freeze({
  github:Object.freeze([]), // GitHub identity; installation permissions are separate.
- cloudflare:Object.freeze(['account.read','projects.build','ledger.read','projects.full'])
+ cloudflare:Object.freeze(['account.read'])
 });
 export function inspectConnectionIntegrity({accounts,configured,cloudflareFullReady,now=Date.now()}){
  const providers={};
@@ -16,12 +16,16 @@ export function inspectConnectionIntegrity({accounts,configured,cloudflareFullRe
   const available=configured[id]===true;
   const missingActions=matching?required.filter(a=>!matching.grantedActions?.includes(a)):[];
   const scopeSetupRequired=id==='cloudflare'&&available&&!cloudflareFullReady;
-  const permissionsApproved=Boolean(available&&matching&&!scopeSetupRequired&&missingActions.length===0);
+  const permissionsApproved=Boolean(available&&matching&&missingActions.length===0);
+  // Full project permissions are a separate, optional elevation; they are not
+  // required to prove Cloudflare identity or open the Bubbles application.
+  const projectPermissionsApproved=id==='cloudflare'&&Boolean(available&&matching&&cloudflareFullReady&&
+    ['projects.build','ledger.read','projects.full'].every(a=>matching.grantedActions?.includes(a)));
   providers[id]={configured:available,connected:Boolean(available&&matching),permissionsApproved,
    label:permissionsApproved&&typeof matching?.label==='string'?matching.label.slice(0,160):null,
    missingActions,reconnectRequired:candidates.length>0&&!matching,
-   ...(id==='cloudflare'?{fullProjectConfigured:cloudflareFullReady===true,scopeSetupRequired}:{}),
-   integrity:permissionsApproved?'passed':!available?'provider_setup_required':scopeSetupRequired?'registered_scopes_required':
+   ...(id==='cloudflare'?{fullProjectConfigured:cloudflareFullReady===true,projectPermissionsApproved,scopeSetupRequired}:{}),
+   integrity:permissionsApproved?'passed':!available?'provider_setup_required':
     !matching?'verified_connection_required':'consent_required'};
  }
  const ready=providers.github.permissionsApproved&&providers.cloudflare.permissionsApproved;

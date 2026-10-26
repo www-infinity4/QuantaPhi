@@ -88,9 +88,10 @@ test('full Cloudflare project grant is required before reporting full access',as
    grantedActions:['account.read','projects.build','ledger.read']}
  ]};
  const value=await (await handleConnections(request('/gate/status'),configured,()=>service)).json();
- assert.equal(value.ready,false);
- assert.deepEqual(value.providers.cloudflare.missingActions,['projects.full']);
- assert.equal(value.providers.cloudflare.permissionsApproved,false);
+ assert.equal(value.ready,true);
+ assert.deepEqual(value.providers.cloudflare.missingActions,[]);
+ assert.equal(value.providers.cloudflare.permissionsApproved,true);
+ assert.equal(value.providers.cloudflare.projectPermissionsApproved,false);
 });
 test('gate fails closed for missing Cloudflare setup, expired credentials and partial scopes',async()=>{
  const now=Date.now();
@@ -138,6 +139,8 @@ test('Cloudflare app registered without full project scopes blocks full consent 
  assert.equal(cf.configured,true);
  assert.equal(cf.fullProjectConfigured,false);
  assert.deepEqual(cf.actions,['account.read']);
+ assert.equal(cf.setupRequired,null);
+ assert.equal(cf.projectScopeSetupRequired,true);
  const gate=await (await handleConnections(request('/gate/status'),limited,
   ()=>({gateStatus:async()=>[]}))).json();
  assert.equal(gate.providers.cloudflare.scopeSetupRequired,true);
@@ -174,4 +177,20 @@ test('callback rejects duplicate provider parameters and fragments before code e
   assert.match(status.textContent,/Invalid sign-in return/);
   assert.equal(historyCalls.length,1,'callback must clear the provider query');
  }
+});
+
+test('six registered Cloudflare scopes enable identity gate while full project access stays disabled',async()=>{
+ const now=Date.now(),scopes='user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read';
+ const configured={...env,GITHUB_CLIENT_ID:'github',GITHUB_CLIENT_SECRET:'hidden',CLOUDFLARE_CLIENT_ID:'cloudflare',CLOUDFLARE_CLIENT_SECRET:'hidden',CLOUDFLARE_OAUTH_ALLOWED_SCOPES:scopes};
+ const service={gateStatus:async()=>[
+  {provider:'github',status:'connected',integrityVerified:true,expiresAt:now+60000,grantedActions:[]},
+  {provider:'cloudflare',status:'connected',integrityVerified:true,expiresAt:now+60000,grantedActions:['account.read','projects.build','ledger.read']}
+ ]};
+ const catalog=await (await handleConnections(request('/catalog'),configured,()=>service)).json();
+ const provider=catalog.providers.find(p=>p.id==='cloudflare');
+ assert.equal(provider.configured,true);assert.equal(provider.setupRequired,null);
+ assert.equal(provider.fullProjectConfigured,false);
+ const gate=await (await handleConnections(request('/gate/status'),configured,()=>service)).json();
+ assert.equal(gate.ready,true);assert.equal(gate.providers.cloudflare.projectPermissionsApproved,false);
+ assert.equal(gate.integra.executionAuthorized,false);
 });

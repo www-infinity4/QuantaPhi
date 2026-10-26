@@ -11,7 +11,7 @@ test('Integra confirms both server-verified connections but grants no execution 
  assert.deepEqual(result.integra.blockers,[]);
 });
 test('missing, corrupted, expired, revoked and partial connections remain blocked',()=>{
- for(const change of [{integrityVerified:false},{integrityVerified:undefined},{expiresAt:now},{expiresAt:now+30000},{status:'disconnected'},{grantedActions:['account.read']}]){
+ for(const change of [{integrityVerified:false},{integrityVerified:undefined},{expiresAt:now},{expiresAt:now+30000},{status:'disconnected'},{grantedActions:[]}]){
   const result=inspect([account('github'),account('cloudflare',change)]);
   assert.equal(result.ready,false);assert.equal(result.integra.status,'blocked');
  }
@@ -21,10 +21,19 @@ test('app registration and every configured scope must agree with the saved gran
  const accounts=[account('github'),account('cloudflare')];
  assert.equal(inspect(accounts,{configured:{github:true,cloudflare:false}}).ready,false);
  const limited=inspect(accounts,{cloudflareFullReady:false});
- assert.equal(limited.ready,false);assert.equal(limited.providers.cloudflare.scopeSetupRequired,true);
- assert.deepEqual(limited.integra.blockers,[{provider:'cloudflare',reason:'registered_scopes_required'}]);
+ assert.equal(limited.ready,true);assert.equal(limited.providers.cloudflare.scopeSetupRequired,true);
+ assert.equal(limited.providers.cloudflare.projectPermissionsApproved,false);
+ assert.deepEqual(limited.integra.blockers,[]);
 });
 test('a complete verified account wins over another partial saved account',()=>{
  const result=inspect([account('github'),account('cloudflare',{grantedActions:[]}),account('cloudflare')]);
  assert.equal(result.ready,true);
+});
+
+test('minimum verified Cloudflare identity permits app entry without project-admin consent',()=>{
+ const result=inspect([account('github'),account('cloudflare',{grantedActions:['account.read']})],{cloudflareFullReady:false});
+ assert.equal(result.ready,true);
+ assert.equal(result.providers.cloudflare.permissionsApproved,true);
+ assert.equal(result.providers.cloudflare.projectPermissionsApproved,false);
+ assert.equal(result.integra.executionAuthorized,false);
 });

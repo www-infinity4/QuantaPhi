@@ -88,7 +88,8 @@ export async function handleConnections(request,env,resolveService) {
           (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET) ||
           (id==='cloudflare' && cloudflareAppReady)),
         ...(id==='cloudflare'?{fullProjectConfigured:ready&&cloudflareFullReady,
-          setupRequired:!cloudflareAppReady?'oauth_client_not_configured':!cloudflareFullReady?'oauth_client_full_scopes_not_registered':null}:{}),
+          setupRequired:!cloudflareAppReady?'oauth_client_not_configured':null,
+          projectScopeSetupRequired:ready&&cloudflareAppReady&&!cloudflareFullReady}:{}),
         requirement:CONNECTOR_REQUIREMENTS[id]}))});
     }
     if (!(env.CONNECTIONS_READY === true || env.CONNECTIONS_READY === 'true')) return json(origin,{ok:false,error:'connections_not_configured'},503);
