@@ -41,7 +41,7 @@ on:
       - 'test/quanta-card-experience.test.mjs'
       - 'test/source-quick-cards.test.mjs'
       - 'test/quanta-card-feed.test.mjs'
-      - 'test/quanta-card-actions-fox-one.test.mjs'
+      - 'test/quanta-card-actions-fox-one.test.mjs test/quanta-card-provider.test.mjs'
       - '.github/workflows/quanta-interactive-cards.yml'
   workflow_dispatch:
 jobs:
@@ -65,6 +65,8 @@ jobs:
           node --check source-quick-cards.mjs
           node --check premium-source-cards.mjs
           node --check brand-product-cards.mjs
+          node --check quanta-card-provider.mjs
+          node --check quanta-card-actions.mjs
           node --check world-series-news.mjs
           node --check church-iam-card.js
           node --check phi-assimilation.js
