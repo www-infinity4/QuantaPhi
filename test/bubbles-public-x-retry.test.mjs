@@ -23,3 +23,30 @@ test('login wall is never a zero-post success',async()=>{
  await assert.rejects(scanPublicX(env),/no_visible_public_owner_posts_after_retry/);
  assert.equal(calls.length,2);assert.ok(statements.some(s=>s.args.includes('blocked')));
 });
+
+test('Browser Run JSON content envelope yields actual authored posts',async()=>{
+ const {env,calls,statements}=envWith([JSON.stringify({success:true,result:item})]);
+ const result=await scanPublicX(env);
+ assert.equal(result.status,'public_posts_observed');
+ assert.equal(result.visibleCount,1);
+ assert.equal(calls.length,1);
+ const post=statements.find(s=>s.sql.includes('owner_x_posts'));
+ assert.equal(post.args[0],'2113352129427730641');
+ assert.equal(post.args[2],'Fix Bubbles #bubbles');
+});
+
+test('unsuccessful Browser Run envelope cannot save apparent posts',async()=>{
+ const {env,statements}=envWith([JSON.stringify({success:false,result:item})]);
+ await assert.rejects(scanPublicX(env),/browser_content_unavailable/);
+ assert.equal(statements.some(s=>s.sql.includes('owner_x_posts')),false);
+ assert.ok(statements.some(s=>s.args.includes('blocked')));
+});
+
+test('oversized or malformed browser output never persists posts',async()=>{
+ for(const [body,error] of [['{broken-json',/browser_content_invalid/],['x'.repeat(2*1024*1024+1),/browser_content_too_large/]]){
+  const {env,statements}=envWith([body]);
+  await assert.rejects(scanPublicX(env),error);
+  assert.equal(statements.some(s=>s.sql.includes('owner_x_posts')),false);
+ }
+});
+

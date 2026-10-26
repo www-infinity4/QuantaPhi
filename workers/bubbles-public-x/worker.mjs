@@ -33,6 +33,32 @@ async function recordScan(env,{status,visible=0,added=0,candidates=0,error=''}){
  const lastSuccess=status==='public_posts_observed'?now():null;
  await env.DB.prepare("INSERT INTO owner_x_scans (k,last_checked,last_success,status,visible_count,new_count,candidate_count,error) VALUES ('main',?,?,?,?,?,?,?) ON CONFLICT(k) DO UPDATE SET last_checked=excluded.last_checked,last_success=COALESCE(excluded.last_success,owner_x_scans.last_success),status=excluded.status,visible_count=excluded.visible_count,new_count=excluded.new_count,candidate_count=excluded.candidate_count,error=excluded.error").bind(now(),lastSuccess,status,visible,added,candidates,error.slice(0,180)).run();
 }
+async function renderedProfileHTML(response){
+ const reader=response.body?.getReader();
+ if(!reader)throw Error('browser_content_invalid');
+ const chunks=[];let size=0;
+ try{
+  while(true){
+   const {done,value}=await reader.read();if(done)break;
+   size+=value.byteLength;
+   if(size>2*1024*1024)throw Error('browser_content_too_large');
+   chunks.push(value);
+  }
+ }finally{await reader.cancel().catch(()=>{});}
+ const bytes=new Uint8Array(size);let offset=0;
+ for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.byteLength;}
+ const raw=new TextDecoder().decode(bytes);
+ // Browser Run /content returns a JSON envelope, including from quickAction.
+ // Parse only its successful rendered HTML; escaped JSON is not page markup.
+ if(raw.trimStart().startsWith('{')){
+  let content;try{content=JSON.parse(raw);}catch{throw Error('browser_content_invalid');}
+  if(content.success!==true||typeof content.result!=='string')throw Error('browser_content_unavailable');
+  return content.result;
+ }
+ // Retain compatibility with direct HTML responses from existing adapters.
+ if(!raw.trimStart().startsWith('<'))throw Error('browser_content_invalid');
+ return raw;
+}
 export async function scanPublicX(env){
  if(!env.BROWSER||!env.DB)throw Error('browser_or_db_binding_unavailable');
  // A profile may render its initial skeleton before public articles arrive.
@@ -44,7 +70,7 @@ export async function scanPublicX(env){
    const response=await env.BROWSER.quickAction('content',{url:PROFILE,waitForTimeout,
     gotoOptions:{waitUntil:'domcontentloaded',timeout:25000}});
    if(!response.ok)throw Error('browser_http_'+response.status);
-   observed=parsePublicProfile(await response.text());
+   observed=parsePublicProfile(await renderedProfileHTML(response));
    if(observed.length)break;
   }
   if(!observed.length)throw Error('no_visible_public_owner_posts_after_retry');
@@ -77,3 +103,4 @@ export default {
   return json({ok:false,error:'not_found'},404);
  }
 };
+
