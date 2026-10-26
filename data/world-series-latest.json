@@ -1,22 +1,88 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-26T11:22:46.741984Z",
+  "checked_at": "2026-10-26T17:31:34.737736Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 16
+      "articles_selected": 17
     },
     {
       "publisher": "CBS Sports",
       "url": "https://www.cbssports.com/partners/feeds/rss/mlb_news",
-      "articles_selected": 31
+      "articles_selected": 32
     }
   ],
   "articles": [
+    {
+      "title": "Brewers prep for potential 'roof ball' as World Series shifts to Tampa Bay",
+      "url": "https://www.mlb.com/news/brewers-practice-plays-off-tropicana-field-roof",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-26T14:52:48Z",
+      "summary": "",
+      "author": "Max Ralph",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Maddon to return to Trop to throw out Game 3 1st pitch",
+      "url": "https://www.mlb.com/news/20261026-joe-maddon-first-pitch-rays",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-26T14:51:00Z",
+      "summary": "",
+      "author": "",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "How the Rays fixed Freddy Peralta: The changes that propelled him back to ace form after ugly Mets stint",
+      "url": "https://www.cbssports.com/mlb/news/how-rays-fixed-freddy-peralta-changes-propelled-him-back-to-ace-form/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-26T14:35:42Z",
+      "summary": "Peralta, starting for Tampa in a must-win World Series Game 3, has been dominant since a midseason trade",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/57f549ac-d816-49ea-8961-b30971a0be17/freddy-peralta-getty.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Brewers vs. Rays World Series Game 3 picks: Freddy Peralta aims to handle former club, make this a series",
+      "url": "https://www.cbssports.com/betting/news/brewers-vs-rays-world-series-game-3-picks-freddy-peralta-aims-to-handle-former-club-make-this-a-series/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-26T13:21:49Z",
+      "summary": "Down 2-0, the Rays turn to former Brewer Freddy Peralta in Game 3 of the World Series",
+      "author": "Matt Severance",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/ec28b1c5-f0f5-4126-b8e8-dab9e1c3403a/freddy-peralta-rays-cbs.jpg",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Giants among NFL's biggest Week 7 winners; today's rare Sports Equinox with World Series, MNF, WNBA Finals",
+      "url": "https://www.cbssports.com/nfl/news/giants-among-nfls-biggest-week-7-winners-todays-rare-sports-equinox-with-world-series-mnf-wnba-finals/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-26T12:56:38Z",
+      "summary": "Plus highlights from UFC 333, another chaotic weekend of college football and blockbuster NHL trade",
+      "author": "Carter Bahns",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/26/a55dbc41-553a-4ba7-bc6b-de85c9dc699b/untitled-design-2026-10-25t224644-396.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Three biggest questions for World Series Game 3: Can the Rays get off the mat at home?",
+      "url": "https://www.cbssports.com/mlb/news/three-biggest-questions-world-series-game-3-rays-brewers/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-26T12:33:55Z",
+      "summary": "The Brewers hold a 2-0 lead after two one-run wins at home, but now the series shifts to St. Petersburg",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/042d3910-65c9-459f-b1ef-32f0d72d9a31/yandy-getty.png",
+      "kind": "Analysis",
+      "image_credit": "CBS Sports RSS"
+    },
     {
       "title": "With World Series start, Gasser is living his dream -- and his dad's",
       "url": "https://www.mlb.com/news/robert-gasser-living-his-dream-dad-s-in-2026-world-series",
@@ -216,17 +282,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "First World Series HR comes from Hicks, capping 4-run first",
-      "url": "https://www.mlb.com/news/rays-score-4-runs-in-first-inning-of-2026-world-series-game-2",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-25T03:57:00Z",
-      "summary": "",
-      "author": "Bryan Hoch",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "This lifelong Brewers fan walks to EVERY home game (yes, even the World Series)",
       "url": "https://www.mlb.com/news/brewers-fan-walks-to-every-home-game-including-world-series",
       "publisher": "MLB.com",
@@ -290,61 +345,6 @@
       "author": "Nick Stellini",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/07/22/b563f6f2-3782-4bf1-9958-e98e5a237e60/jacob-misiorowski-brewers-2.jpg",
       "kind": "Analysis",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Today's top games to watch, best bets, odds: Brewers vs. Rays World Series Game 1, Knicks at Celtics and more",
-      "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-vs-rays-world-series-game-1-knicks-at-celtics-and-more/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-23T23:56:07Z",
-      "summary": "Find best bets and props for the biggest games in sports on Friday from the SportsLine Projection Model and top CBS Sports experts",
-      "author": "Gene Menez",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/08/20/18a863a5-e179-42fb-bec6-6c0b5b004088/jacob-misiorowski-cbs.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Rays vs. Brewers World Series Game 1 parlay, MLB picks, prediction: Let the small-ball Fall Classic begin",
-      "url": "https://www.cbssports.com/betting/news/rays-vs-brewers-world-series-game-1-parlay-mlb-picks-prediction-let-the-small-ball-fall-classic-begin/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-23T23:01:18Z",
-      "summary": "The Rays and Brewers open an unlikely 2026 World Series on Friday in Milwaukee",
-      "author": "Matt Severance",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/21/99be7715-986d-4092-ab6b-480f87cb72d4/2026-04-01t204030z-1567889633-mt1usatoday28636884-rtrmadp-3-mlb-tampa-bay-rays-at-milwaukee-brewers-jpg.jpg",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Brandon Woodruff, Brewers' longest-tenured player, makes World Series roster after long injury absence",
-      "url": "https://www.cbssports.com/mlb/news/brandon-woodruff-injury-brewers-world-series-roster-rays/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-23T20:48:32Z",
-      "summary": "Woodruff, who debuted with Milwaukee in 2017, hasn't pitched since July 4 due to a shoulder issue",
-      "author": "Mike Axisa",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/4d68ee28-5e19-45f2-a03d-546bdc0dc49d/woodruff-getty.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Ever wonder what a Chandler Simpson homer would look like? We'll show you",
-      "url": "https://www.mlb.com/news/chandler-simpson-home-run-breakdown",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-23T16:04:00Z",
-      "summary": "Rays speedster has zero official MLB HR. That doesn't mean he's never hit one",
-      "author": "Mike Petriello",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Creating the ultimate 2026 World Series roster: Picking the best of the Brewers and Rays at each position",
-      "url": "https://www.cbssports.com/mlb/news/2026-world-series-ultimate-roster-best-brewers-rays-each-position/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-23T15:34:00Z",
-      "summary": "Pat Murphy and Kevin Cash don't have the luxury of building a Frankenstein roster, but we do, so we will",
-      "author": "Mike Axisa",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/22/51d7f1c5-21d2-41b1-973f-919a4e923282/frankenstein-getty.png",
-      "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
   ],
