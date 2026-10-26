@@ -1,9 +1,5 @@
-import {AccountConnections,resolveConnectorWalletToken} from './bubbles-connections-gate.mjs?v=20261026-signin2';
+import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261026-oracle-auth1';
 
-const REQUIRED=Object.freeze({
- github:['repository.read'],
- cloudflare:['account.read','projects.build','ledger.read','projects.full']
-});
 export function summarizeGate(payload){
  const summary={ready:false,signedIn:false,providers:{},state:'unverified'};
  for(const id of ['github','cloudflare']){
@@ -13,9 +9,7 @@ export function summarizeGate(payload){
   const approved=connected&&record?.permissionsApproved===true;
   // Request every capability registered for this application. A missing project
   // capability must not prevent account sign-in or imply that access was granted.
-  const authorizationActions=id==='cloudflare'&&Array.isArray(record?.authorizationActions)
-   ? REQUIRED.cloudflare.filter(action=>record.authorizationActions.includes(action))
-   : id==='cloudflare'&&record?.scopeSetupRequired===true?['account.read']:[...REQUIRED[id]];
+  const authorizationActions=providerAuthorizationActions({id,...record});
   summary.providers[id]={configured,connected,approved,authorizationActions,
    label:connected&&typeof record.label==='string'?record.label:'',
    reconnect:record?.reconnectRequired===true,
@@ -37,6 +31,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  const cards={github:get('bubblesGithubCard'),cloudflare:get('bubblesCloudflareCard')};
  const chat=get('bubblesAICard');
  const retry=get('bubblesRetrySignInCheck');
+ const cancel=get('bubblesCancelSignIn');
  const client=new AccountConnections({token:()=>resolveConnectorWalletToken(host),root:host});
  let loading=false,oauthInProgress=false,latest=null,lastChecked=0;
  const setStatus=text=>{status.textContent=text;};
@@ -45,6 +40,8 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
    actions[id].disabled=loading||oauthInProgress||!latest?.providers[id]?.configured||!latest.providers[id].authorizationActions.length;
   }
   if(retry)retry.disabled=loading||oauthInProgress;
+  if(cancel)cancel.hidden=!oauthInProgress||!client.pending;
+  for(const button of Object.values(actions))button.setAttribute?.('aria-busy',String(oauthInProgress));
  };
  const render=data=>{
   const summary=summarizeGate(data);latest=summary;
@@ -109,14 +106,21 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
      }
      updateButtons();
     });
-   }catch{
+    updateButtons();
+   }catch(error){
     oauthInProgress=false;
-    setStatus('Couldn’t open sign-in. Try again.');
+    setStatus(error?.message==='cloudflare_client_scopes_unavailable'?
+     'Cloudflare has not enabled the requested permissions for this application.':
+     'Couldn’t open sign-in. Try again.');
     updateButtons();
    }
   });
  }
  if(retry)retry.addEventListener('click',()=>void refresh());
+ if(cancel)cancel.addEventListener('click',()=>{
+  client.cancelConnect();oauthInProgress=false;
+  setStatus('Sign-in cancelled. You can try again.');updateButtons();
+ });
  host.addEventListener('pageshow',()=>{if(Date.now()-lastChecked>15000)void refresh();});
  root.addEventListener('visibilitychange',()=>{if(!root.hidden&&Date.now()-lastChecked>15000)void refresh();});
  // Resume the existing wallet-bound Android handoff after same-window navigation.

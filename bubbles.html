@@ -10,7 +10,7 @@
   <link rel="manifest" href="/bubbles-manifest.json">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/bubbles-pwa-192.png">
   <link rel="apple-touch-icon" href="/assets/bubbles-pwa-192.png">
-  <meta name="theme-color" content="#5f259f">
+  <meta name="theme-color" content="#f7f4f0">
   <meta name="color-scheme" content="light">
   <link rel="stylesheet" href="/bubbles-ai.css?v=20261020-tool-driver1">
   <style>
@@ -57,7 +57,6 @@
     .bubbles-signin-provider p{font-size:13px;line-height:1.5;overflow-wrap:anywhere;margin:7px 0 0;color:#655c6b}
     .bubbles-signin-provider p:empty{display:none}
     .bubbles-signin-provider button{width:100%;min-height:48px;background:#24292f;color:#fff;border:1px solid #24292f;border-radius:8px;font:650 16px system-ui;padding:12px 16px;cursor:pointer}
-    #bubblesCloudflareSignIn{background:#fff;color:#262626;border-color:#b1a8a1;border-left:5px solid #f48120}
     .bubbles-signin-provider button:hover:not(:disabled){filter:brightness(.95)}
     .bubbles-signin-provider button:focus-visible{outline:3px solid #298ed4;outline-offset:3px}
     .bubbles-signin-provider button:disabled{opacity:.55;cursor:default}
@@ -109,7 +108,9 @@
     html.bubble-iframe body{margin:0!important;padding:0!important;height:100%!important;min-height:0!important;overflow:hidden!important;background:transparent!important}
     html.bubble-iframe body > :not(.ba-launcher):not(.ba-panel){display:none!important}
     html.bubble-iframe .ba-launcher[aria-expanded="true"]{display:none!important}
-  </style></head>
+  </style>
+  <link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1">
+</head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
     <nav class="bubbles-site-nav" aria-label="Bubbles site navigation">
@@ -146,16 +147,17 @@
       <p id="bubblesSigninStatus" role="status" aria-live="polite">Checking your sign-in…</p>
       <div class="bubbles-signin-grid">
         <article class="bubbles-signin-provider" id="bubblesGithubCard">
-          <button id="bubblesGithubSignIn" type="button" disabled aria-describedby="bubblesGithubStatus">Sign in with GitHub</button>
+          <button id="bubblesGithubSignIn" data-provider="github" type="button" disabled aria-describedby="bubblesGithubStatus">Sign in with GitHub</button>
           <p id="bubblesGithubStatus"></p>
         </article>
         <article class="bubbles-signin-provider" id="bubblesCloudflareCard">
-          <button id="bubblesCloudflareSignIn" type="button" disabled aria-describedby="bubblesCloudflareStatus">Sign in with Cloudflare</button>
+          <button id="bubblesCloudflareSignIn" data-provider="cloudflare" type="button" disabled aria-describedby="bubblesCloudflareStatus">Sign in with Cloudflare</button>
           <p id="bubblesCloudflareStatus"></p>
         </article>
       </div>
       <div class="bubbles-signin-controls">
         <button id="bubblesRetrySignInCheck" type="button" class="bubbles-signin-retry">Try again</button>
+        <button id="bubblesCancelSignIn" type="button" class="bubbles-signin-retry" hidden>Cancel sign-in</button>
         <a id="bubblesOpenExistingChat" href="#bubblesAICard">Open chat</a>
         <a href="/bubbles-accounts.html">Connections</a>
         <a href="/wallet-recovery.html?verify=1">Restore wallet</a>
@@ -227,7 +229,7 @@ html.bubble-iframe .bubbles-bottom-nav,body.bubbles-embedded .bubbles-bottom-nav
 </style>
 <footer class="qp-site-footer" aria-label="QuantaPhi site information"><p>QuantaPhi · AI research, media and learning</p><nav aria-label="Legal and site links"><a href="/">Home</a><a href="/about.html">About</a><a href="/privacy.html">Privacy Policy</a><a href="/learn/">Learn</a></nav></footer>
   <script type="module">
-    import('/bubbles-signin-gate.mjs?v=20261026-signin2')
+    import('/bubbles-signin-gate.mjs?v=20261026-oracle-auth1')
       .then(({mountBubblesSigninGate})=>mountBubblesSigninGate())
       .catch(()=>{
         const state=document.getElementById('bubblesSigninStatus');

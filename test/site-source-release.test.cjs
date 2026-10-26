@@ -33,24 +33,24 @@ test('QuantaPhi gateway serves current main Oracle styling and video studio asse
  assert.ok(!calls.some(url=>url.includes('/www-infinity4/Oracle/main/oracle-interface.css')));
 });
 
-const routing=source.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|signinRelease|sourceRef) =/.test(line)).join('\n');
+const routing=source.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|signinRelease|accountRelease|sourceRef) =/.test(line)).join('\n');
 const sourceRef=new Function('route','incoming',routing+';return sourceRef;');
 test('the automatic request interface and planner follow current main, including legacy cache URLs',()=>{
  for(const sourcePath of ['/index.html','/bubbles.html','/bubbles/index.html','/bubbles-chrome.html','/bubbles-ai.js','/bubbles-brain-actions.js','/robot-directions.js','/robot-work-report.js','/src/specialist-planner.js','/bubbles-ai.css','/bubbles-card-workspace.mjs']){
   for(const query of ['','?v=20261017-verified-receipts1','?v=20261019-auto-start1'])assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/'+query)),'main');
  }
 });
-test('OAuth handoff account asset is staged at a reviewed immutable commit; other source pins preserved',()=>{
+test('account connection repair follows current main; unrelated source pins stay preserved',()=>{
  const url=new URL('https://quantaphi.org/');
- assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-connections.mjs'},url),'4cf440ce8e7b1b7ac966e8b141a2578c84658722');
+ assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-connections.mjs'},url),'main');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/apk-downloads.js'},url),'6643d2727f5be56dd0f1b217f532099899833bca');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-gpt-live.js'},url),'40dc5b89ec8ae53804daa7fae6184a904b73fab0');
- assert.match(source,/quantaphi-org-service-20261026-signin-v6/);
+ assert.match(source,/quantaphi-org-service-20261026-oracle-auth-v7/);
 });
 
-test('versioned sign-in page and modules serve the same tested release without pinning future main',()=>{
- for(const sourcePath of ['/bubbles.html','/bubbles-signin-gate.mjs','/bubbles-connections-gate.mjs']){
-  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/?v=20261026-signin2')),'21a7e92014c7688069094b8ed8131f69ac78880d');
+test('old and new sign-in URLs use the same current account repair',()=>{
+ for(const sourcePath of ['/bubbles.html','/bubbles-accounts.html','/bubbles-signin-gate.mjs','/bubbles-connections-gate.mjs','/bubbles-connections.mjs','/bubbles-auth.css','/bubbles-auth-return.mjs','/assets/auth-cloudflare.svg','/assets/auth-github.svg']){
+  for(const v of ['20261026-signin2','20261018-direct2','20261026-oracle-auth1'])assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/?v='+v)),'main');
   assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/?v=future-release')),'main');
  }
 });

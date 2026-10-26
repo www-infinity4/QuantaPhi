@@ -35,9 +35,9 @@ export function callbackPage(provider,result='') {
   // The callback has already redirected away from the provider code. Offer
   // user-initiated navigation to the registered Android return intent or to
   // the Chrome/PWA account page. Neither link carries OAuth state or tokens.
-  const html='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Return to Bubbles</title><body><main><h1>Return to Bubbles</h1><p>'+message+'</p><p><a href="quantaphi-bubbles://return">Return to Bubbles Android app</a></p><p><a href="/bubbles-accounts.html">Continue in Bubbles Chrome</a></p><p>Connection is not confirmed until Bubbles checks your account securely.</p></main></body></html>';
+  const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f4f0"><title>Return to Bubbles</title><link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1"></head><body class="bubbles-auth-page"><main class="bubbles-auth-shell"><article class="auth-return-card"><h1>Return to Bubbles</h1><p>'+message+'</p><p><a class="auth-action auth-primary" href="/bubbles.html">Continue in Bubbles</a><a class="auth-action" href="quantaphi-bubbles://return">Return to Bubbles Android app</a></p><p><a href="/bubbles-accounts.html">Account connections</a></p><p class="auth-intro">Connection is not confirmed until Bubbles checks your account securely.</p></article></main><script type="module" src="/bubbles-auth-return.mjs?v=20261026-oracle-auth1"></script></body></html>';
   return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store',
-    'Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+    'Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'none'; style-src 'self'; script-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
     'X-Content-Type-Options':'nosniff'}});
 }
 // resolveService is an internal dependency, selected only by verified user ID.
