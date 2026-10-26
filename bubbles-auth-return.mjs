@@ -2,6 +2,10 @@
 // wallet credentials, cross-window messages, or arbitrary destinations.
 export function resumeAuthReturn(host=window) {
   try {
+    // Never navigate away from an OAuth callback failure. Display its
+    // existing safe error page rather than turning it into "Sign-in expired".
+    const result=new URLSearchParams(host.location?.search||'').get('result');
+    if(result==='failed')return false;
     const pending=JSON.parse(host.sessionStorage.getItem('bubbles:oauth-pending:v1')||'null');
     if(!pending||!['github','cloudflare','google'].includes(pending.provider)||
        !/^[A-Za-z0-9_-]{43}$/.test(pending.state)||!Number.isFinite(pending.expiresAt)||
