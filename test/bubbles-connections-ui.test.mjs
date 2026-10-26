@@ -277,6 +277,33 @@ test('Cloudflare OAuth never mistakes limited consent for project management per
  assert.deepEqual(result.grantedActions,['account.read']);
 });
 
+test('full Cloudflare consent requests all 386 configured scopes once, without guessing from the catalog',async()=>{
+ const {cloudflareAdapter,cloudflareAvailableActions,cloudflareScopeInventory}=await import('../workers/bubbles-connections/providers.mjs');
+ const registered=['user-details.read','memberships.read',...Array.from({length:384},(_,i)=>'preview-scope-'+i+'.read')];
+ const manifest=registered.join(' ');
+ assert.equal(registered.length,386);
+ assert.ok(cloudflareAvailableActions(manifest).includes('owner.full'));
+ const inventory=cloudflareScopeInventory(manifest);
+ assert.equal(inventory.signInRequestScopeCount,386);
+ assert.equal(inventory.serverAllowlistCount,386);
+ assert.equal(inventory.clientRegistrationVerified,false);
+ const adapter=cloudflareAdapter({clientId:'registered-bubbles-client',clientSecret:'server-secret',allowedScopes:manifest,
+  redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'});
+ const url=new URL(adapter.authorization({state:'s'.repeat(43),challenge:'challenge',actions:['owner.full']}));
+ assert.equal(url.origin,'https://dash.cloudflare.com');
+ assert.equal(url.searchParams.get('client_id'),'registered-bubbles-client');
+ assert.deepEqual(url.searchParams.get('scope').split(' '),registered);
+ assert.equal(url.searchParams.get('code_challenge_method'),'S256');
+ assert.ok(!url.href.includes('server-secret'));
+ // The old six-scope binding must never announce 386 or offer owner.full.
+ const limited='user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read';
+ assert.ok(!cloudflareAvailableActions(limited).includes('owner.full'));
+ assert.equal(cloudflareScopeInventory(limited).signInRequestScopeCount,6);
+ assert.throws(()=>cloudflareAdapter({clientId:'client',clientSecret:'private',allowedScopes:limited,
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'})
+   .authorization({state:'s',challenge:'c',actions:['owner.full']}),/cloudflare_client_scopes_unavailable/);
+});
+
 test('Cloudflare Bubbles client restricts requests to scopes registered on its own OAuth app',async()=>{
  const {cloudflareAdapter,cloudflareAvailableActions}=await import('../workers/bubbles-connections/providers.mjs');
  const allowed='user-details.read memberships.read d1.read';
