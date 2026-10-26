@@ -3,7 +3,7 @@ const test=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 
-const css=fs.readFileSync('bubbles-responsive-site.css','utf8');
+const css=fs.readFileSync('bubbles-responsive-20261026-v2.css','utf8');
 
 for(const page of ['bubbles.html','bubbles-chrome.html']){
   test(page+' uses compact website navigation and puts chat before secondary panels',()=>{
@@ -13,7 +13,7 @@ for(const page of ['bubbles.html','bubbles-chrome.html']){
     assert.match(html,/class="bubbles-nav-chat" href="#bubblesAICard"/);
     assert.match(html,/<details class="bubbles-nav-more">/);
     assert.match(html,/href="\/bubbles-accounts\.html">Accounts<\/a>/);
-    assert.match(html,/href="\/bubbles-responsive-site\.css\?v=20261026-mobile-layout2"/);
+    assert.match(html,/href="\/bubbles-responsive-20261026-v2\.css\?v=20261026-mobile-layout3"/);
     assert.equal((html.match(/id="bubblesAICard"/g)||[]).length,1,'one chat mount point');
     assert.ok(html.indexOf('id="bubblesAICard"') < html.indexOf('id="robotBrainOwner"'), 'chat before owner diagnostics');
     assert.doesNotMatch(html,/Connect GitHub and other accounts<\/a>/);
@@ -27,7 +27,7 @@ test('Bubbles sign-in still has functioning hooks, with recovery links tucked in
     assert.match(html,new RegExp('id="'+id+'"'));
   assert.match(html,/<details class="bubbles-signin-help">/);
   assert.match(html,/href="\/wallet-recovery\.html\?verify=1">Restore wallet<\/a>/);
-  assert.ok(html.indexOf('bubbles-responsive-site.css') > html.indexOf('bubbles-auth.css'),'mobile styles load after provider styles');
+  assert.ok(html.indexOf('bubbles-responsive-20261026-v2.css') > html.indexOf('bubbles-auth.css'),'mobile styles load after provider styles');
 });
 
 test('Android widths use compact navigation with no forced full-width stack of hero actions',()=>{
