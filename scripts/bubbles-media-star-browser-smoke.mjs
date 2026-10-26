@@ -50,7 +50,9 @@ try{
   const response=await chat.goto(origin+'/bubbles.html',{waitUntil:'domcontentloaded',timeout:25000});
   assert.equal(response.status(),200);
   await chat.locator('.ba-launcher').first().waitFor({state:'attached',timeout:20000});
-  await chat.locator('.ba-launcher').first().click({timeout:9000});
+  // A verified required-account gate opens the conversation automatically.
+  // Clicking its already-open launcher would close it and hide the composer.
+  await chat.waitForFunction(()=>document.querySelector('#bubblesSigninGate')?.dataset.ready==='true',{timeout:20000});
   const field=chat.locator('.ba-panel textarea[aria-label="Message Bubbles"]').first();
   await field.waitFor({state:'visible',timeout:10000});
   await field.fill('Bubbles, bring the Media Star card into chat so I can listen to Fred\'s Space');
@@ -98,7 +100,7 @@ try{
  });
  await prepareSyntheticSignedIn(radio);
  await radio.goto(origin+'/bubbles.html',{waitUntil:'domcontentloaded',timeout:25000});
- await radio.locator('.ba-launcher').first().click({timeout:15000});
+ await radio.waitForFunction(()=>document.querySelector('#bubblesSigninGate')?.dataset.ready==='true',{timeout:20000});
  const radioField=radio.locator('.ba-panel textarea[aria-label="Message Bubbles"]').first();
  await radioField.fill('Play Infinity Radio');
  await radio.locator('.ba-panel .ba-send').first().click();
