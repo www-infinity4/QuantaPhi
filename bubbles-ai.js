@@ -523,6 +523,18 @@ async function repairCloudflareConsent(){
  if(embedded||!ownerReady){status.textContent='Verified Bubbles owner access is required for scope sync.';return;}
  try{
   const headers=await verifiedOwnerHeaders();
+  // Read-only preflight first: never ask the owner to confirm a doomed write.
+  const diagRes=await bubblesFetch(BRAIN+'/work/cloudflare/scope-sync-diagnose',{
+   method:'POST',headers:{...headers,'Content-Type':'application/json'},
+   body:'{}',cache:'no-store'},18000);
+  const diag=await diagRes.json().catch(()=>({}));
+  if(!diagRes.ok||diag.ok!==true){
+   const code=Array.isArray(diag.providerCodes)&&diag.providerCodes.length?
+     ' / Cloudflare code '+diag.providerCodes.join(','):'';
+   throw Error('Token manager blocked during '+String(diag.stage||'preflight')+
+     ' (HTTP '+String(diag.httpStatus||diagRes.status||'unknown')+code+
+     '). No OAuth client, DNS or wallet change was attempted. '+String(diag.diagnostic||'').slice(0,140));
+  }
   const res=await bubblesFetch(BRAIN+'/work/cloudflare/scope-sync-plan',{
    method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',
    cache:'no-store'},15000);
@@ -554,7 +566,7 @@ async function repairCloudflareConsent(){
     state.textContent=live?
      'Verified: Bubbles now requests '+result.serverScopeCount+' registered Cloudflare permissions. Use Sign in with Cloudflare once to review and authorize them.':
      'Scope synchronization submitted. Live readback still pending; do not assume full access yet. Return to Account Connections for a fresh scope count.';
-   }catch(e){state.textContent='Not synchronized: '+String(e.message||e).slice(0,230)+'. No new client was created. Do not retry until the blocker is reviewed.'}
+   }catch(e){state.textContent='Not synchronized: '+String(e.message||e).slice(0,230)+'. The token manager needs review; the 386-permission OAuth settings were not reduced.'}
   };
   card.append(info,state,apply,cancel);conversation.append(card);
   if(showing)chatScroll.scrollTop=chatScroll.scrollHeight;
