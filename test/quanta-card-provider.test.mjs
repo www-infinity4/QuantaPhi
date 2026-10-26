@@ -45,3 +45,17 @@ test('unknown public site keeps general card controls, no fake account integrati
  assert.equal(m.checkout,'not-integrated');
  assert.ok(m.interactions.includes('collect'));
 });
+
+test('StarMaker uses the verified publisher-owned login without inventing an OAuth grant',()=>{
+ const profile=cardProvider({id:'starmaker',official:'https://www.starmakerstudios.com/en/songs'});
+ assert.equal(profile.id,'starmaker');
+ assert.equal(profile.signin,'https://www.starmakerstudios.com/en/web-login');
+ assert.equal(profile.hasDedicatedSignin,true);
+ assert.equal(profile.connector,null);
+ const manifest=quickCardManifest({id:'starmaker',official:'https://www.starmakerstudios.com/en/songs'});
+ assert.equal(manifest.providerId,'starmaker');
+ assert.equal(manifest.providerLogin,'https://www.starmakerstudios.com/en/web-login');
+ assert.equal(manifest.accountConnection,'not-integrated');
+ assert.equal(manifest.apiAccess,'not-granted-by-card');
+ assert.equal(cardProvider({id:'starmaker',name:'StarMaker',website:'https://starmakerstudios.com.phishing.example'}),null);
+});
