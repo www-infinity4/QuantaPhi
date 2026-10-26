@@ -298,7 +298,7 @@ export function mountConnections(container,{token}) {
           (account.status==='connected'&&!activeConnection(account)?'reconnect required':account.status)));
         if(account.provider==='cloudflare'&&activeConnection(account)){
           const grants=account.grantedActions||[];
-          const access=grants.includes('projects.full')?'Full project access approved.':
+          const access=grants.includes('projects.full')?'Project toolkit approved (DNS permissions separate).':
             grants.includes('projects.build')?'Approved: deploy Workers, Pages and D1 projects. Additional project permissions are not yet approved.':
             'Account connected. Project deployment permission is not yet approved.';
           row.append(element('p',access,'ba-muted'));
