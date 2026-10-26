@@ -6,6 +6,7 @@ body.oracle-octaves-page{
   overflow-x:clip;
 }
 body.oracle-octaves-page .bubbles-page{
+  box-sizing:border-box!important;
   width:min(100%,980px)!important;
   max-width:980px!important;
   min-width:0;
