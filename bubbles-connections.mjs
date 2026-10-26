@@ -275,10 +275,14 @@ export function mountConnections(container,{token}) {
           button.disabled=true;button.setAttribute('aria-busy','true');status.textContent='Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
           const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):availableActions;
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';button.disabled=false;button.removeAttribute('aria-busy');return;}
-          try {await client.connect(provider.id,actions,(error,account)=>{
+          try {await client.connect(provider.id,actions,async(error,account)=>{
             cancel.hidden=true;
-            if(error)status.textContent=error.message;
-            else{status.textContent='Connected '+account.label+'.';void load();}
+            if(error){
+              // A timed-out return cannot leave its old disabled button behind.
+              // Rebuild from the verified account catalog, then retain the error.
+              const message=error.message;
+              await load();status.textContent=message;
+            }else{status.textContent='Connected '+account.label+'.';void load();}
           });cancel.hidden=false;
             status.textContent=provider.id==='cloudflare'
               ?'On Cloudflare, select your account and tap Authorize to finish connecting Bubbles.'
@@ -474,10 +478,16 @@ export function mountConnections(container,{token}) {
     finally {refresh.disabled=false;}
   }
   refresh.addEventListener('click',()=>void load());
-  if(client.resumePending((error,account)=>{
+  if(client.resumePending(async(error,account)=>{
     cancel.hidden=true;
-    status.textContent=error?error.message:'Connected '+account.label+'.';
-    if(!error)void load();
+    if(error){
+      // The resumed page was rendered with all buttons disabled while pending.
+      // A failed/expired attempt must restore Cloudflare Sign in immediately.
+      const message=error.message;
+      await load();status.textContent=message;
+    }else{
+      status.textContent='Connected '+account.label+'.';await load();
+    }
   })){cancel.hidden=false;status.textContent='Finishing Cloudflare authorization securely…';}
   return {client,refresh:load};
 }
