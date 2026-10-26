@@ -33,7 +33,7 @@ test('QuantaPhi gateway serves current main Oracle styling and video studio asse
  assert.ok(!calls.some(url=>url.includes('/www-infinity4/Oracle/main/oracle-interface.css')));
 });
 
-const routing=source.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|sourceRef) =/.test(line)).join('\n');
+const routing=source.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|signinRelease|sourceRef) =/.test(line)).join('\n');
 const sourceRef=new Function('route','incoming',routing+';return sourceRef;');
 test('the automatic request interface and planner follow current main, including legacy cache URLs',()=>{
  for(const sourcePath of ['/index.html','/bubbles.html','/bubbles/index.html','/bubbles-chrome.html','/bubbles-ai.js','/bubbles-brain-actions.js','/robot-directions.js','/robot-work-report.js','/src/specialist-planner.js','/bubbles-ai.css','/bubbles-card-workspace.mjs']){
@@ -45,7 +45,14 @@ test('OAuth handoff account asset is staged at a reviewed immutable commit; othe
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-connections.mjs'},url),'4cf440ce8e7b1b7ac966e8b141a2578c84658722');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/apk-downloads.js'},url),'6643d2727f5be56dd0f1b217f532099899833bca');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-gpt-live.js'},url),'40dc5b89ec8ae53804daa7fae6184a904b73fab0');
- assert.match(source,/quantaphi-org-service-20261024-walmart-v5/);
+ assert.match(source,/quantaphi-org-service-20261026-signin-v6/);
+});
+
+test('versioned sign-in page and modules serve the same tested release without pinning future main',()=>{
+ for(const sourcePath of ['/bubbles.html','/bubbles-signin-gate.mjs','/bubbles-connections-gate.mjs']){
+  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/?v=20261026-signin2')),'21a7e92014c7688069094b8ed8131f69ac78880d');
+  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/?v=future-release')),'main');
+ }
 });
 
 test('versioned chat repair assets use one tested immutable commit, while future main stays current',()=>{
