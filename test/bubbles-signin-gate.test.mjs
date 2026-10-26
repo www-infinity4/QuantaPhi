@@ -105,6 +105,21 @@ test('failed sign-in launch restores the button for another attempt',async t=>{
  assert.equal(ui.get('bubblesRetrySignInCheck').disabled,false);
  assert.match(ui.get('bubblesSigninStatus').textContent,/Try again/);
 });
+test('an abandoned provider sign-in can be cancelled and immediately retried',async t=>{
+ const ui=mountedGate(t,partialGate());
+ await new Promise(setImmediate);
+ const button=ui.get('bubblesCloudflareSignIn'),cancel=ui.get('bubblesCancelSignIn');
+ assert.equal(cancel.hidden,true);
+ await button.listeners.click();
+ assert.equal(button.disabled,true);
+ assert.equal(cancel.hidden,false);
+ cancel.listeners.click();
+ assert.equal(button.disabled,false);
+ assert.equal(cancel.hidden,true);
+ await button.listeners.click();
+ assert.equal(ui.calls.filter(c=>c.path==='/start').length,2);
+ cancel.listeners.click();
+});
 test('signed-in form hides while missing project permissions remain unapproved',async t=>{
  const payload=partialGate();
  payload.providers.cloudflare.connected=true;

@@ -1,5 +1,18 @@
 const API = '/api/bubbles/connections';
 const NAMES = {cloudflare:'Cloudflare',google:'Google',github:'GitHub',ebay:'eBay',walmart:'Walmart',ibm:'IBM',anthropic:'Anthropic'};
+export function availableCloudflareLoginActions(provider) {
+  if(provider?.id!=='cloudflare'||provider.configured!==true||!Array.isArray(provider.actions))return [];
+  return ['account.read','projects.build','ledger.read','projects.full'].filter(action=>provider.actions.includes(action));
+}
+
+export function providerAuthorizationActions(provider) {
+  if(!provider?.configured)return [];
+  if(provider.id!=='cloudflare')return provider.id==='github'?['repository.read']:[];
+  const available=provider.authorizationActions??provider.actions;
+  const required=['account.read','projects.build','ledger.read','projects.full'];
+  return Array.isArray(available)?required.filter(action=>available.includes(action)):
+    provider.fullProjectConfigured===false||provider.scopeSetupRequired===true?['account.read']:required;
+}
 export async function resolveConnectorWalletToken(root=window){
   const bridge=root.QuantaCloudConnection;
   if(bridge?.ready)await bridge.ready;
@@ -129,7 +142,8 @@ export class AccountConnections {
       const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':'';
       if(authorization.protocol!=='https:'||authorization.hostname!==expectedHost||authorization.port||
          !/^[A-Za-z0-9_-]{43}$/.test(state||''))throw Error('Sign-in address rejected.');
-      const saved={provider,state,expiresAt:Date.now()+Math.min(300,Math.max(1,Number(result.expiresIn)||300))*1000};
+      const returnPath=this.root.location?.pathname==='/bubbles-accounts.html'?'/bubbles-accounts.html':'/bubbles.html';
+      const saved={provider,state,returnPath,expiresAt:Date.now()+Math.min(300,Math.max(1,Number(result.expiresIn)||300))*1000};
       try{this.root.sessionStorage?.setItem('bubbles:oauth-pending:v1',JSON.stringify(saved));}
       catch{if(!popup)throw Error('This viewer cannot preserve sign-in. Open Account Connections in Chrome.');}
       this.trackHandoff(saved,popup,onComplete);
@@ -141,6 +155,12 @@ export class AccountConnections {
       this.clearPendingHandoff();
       throw error;
     }
+  }
+  cancelConnect() {
+    const pending=this.pending;
+    this.cleanup();
+    this.clearPendingHandoff();
+    try{pending?.popup?.close();}catch{}
   }
   cleanup() {
     const pending=this.pending;
@@ -158,25 +178,21 @@ export class AccountConnections {
 function element(tag,text,className='') {
   const node=document.createElement(tag);node.textContent=text;if(className)node.className=className;return node;
 }
-export function availableCloudflareLoginActions(provider) {
-  if(provider?.id!=='cloudflare'||provider.configured!==true||!Array.isArray(provider.actions))return [];
-  // The OAuth client may authorize an account before full project scopes
-  // are registered. Request only server-verified, registered actions.
-  return ['account.read','projects.build','ledger.read','projects.full'].filter(action=>provider.actions.includes(action));
-}
 export function mountConnections(container,{token}) {
   const sessionKey='bubbles:connector-session:v1';
   const paired=()=>{try{const value=JSON.parse(sessionStorage.getItem(sessionKey)||'null');return value?.expiresAt>Date.now()?value.token:'';}catch{return '';}};
-  const client=new AccountConnections({token:async()=>{const session=paired();if(session)return session;try{return await token();}catch{return '';}}}),section=element('section',''),status=element('p','Choose an account service.','ba-muted');
-  const refresh=element('button','Check connected accounts','ba-control'),catalog=element('div',''),accounts=element('div','');
+  const client=new AccountConnections({token:async()=>{const session=paired();if(session)return session;try{return await token();}catch{return '';}}}),section=element('section','','ba-connection-section'),status=element('p','Choose an account service.','ba-muted');
+  const refresh=element('button','Check connected accounts','ba-control'),catalog=element('div','','ba-provider-catalog'),accounts=element('div','');
+  const cancel=element('button','Cancel sign-in','ba-control');cancel.type='button';cancel.hidden=true;
+  cancel.addEventListener('click',()=>{client.cancelConnect();cancel.hidden=true;status.textContent='Sign-in cancelled. You can try again.';void load();});
   refresh.type='button';status.setAttribute('role','status');
   const scopes=element('fieldset',''),legend=element('legend','Google access');scopes.append(legend);
   const selections=[];
   for(const [name,action] of [['Find Drive files','drive.read'],['Read spreadsheets','sheets.read'],['Read calendar events','calendar.read']]) {
     const label=element('label',''),check=document.createElement('input');check.type='checkbox';check.value=action;label.append(check,document.createTextNode(' '+name+' '));scopes.append(label);selections.push(check);
   }
-  section.append(element('strong','Your connected accounts'),status,scopes,refresh,catalog,accounts);container.append(section);
-  const pairing=element('details','');pairing.append(element('summary','Connect this browser using your phone'));
+  section.append(element('h2','Your accounts'),status,catalog,cancel,accounts,scopes,refresh);container.append(section);
+  const pairing=element('details','','ba-pairing');pairing.append(element('summary','Connect another browser'));
   pairing.append(element('p','On your phone, open Bubbles on quantaphi.org in the browser with your existing wallet. Open these account settings and create a two-minute code. Enter it here. This grants account-connector access for 15 minutes, without transferring your wallet token. Keep the code private.'));
   const create=element('button','Create connection code on this device','ba-control'),redeem=element('button','Connect this browser','ba-control'),end=element('button','End this browser connection','ba-control'),code=document.createElement('input'),output=element('p','');
   code.type='password';code.autocomplete='off';code.maxLength=43;code.setAttribute('aria-label','Two-minute connector pairing code');
@@ -184,34 +200,47 @@ export function mountConnections(container,{token}) {
   create.addEventListener('click',async()=>{create.disabled=true;output.textContent='Checking this device’s wallet…';try{const data=await client.call('/pair/create',{});output.textContent='Private code (expires in two minutes): '+data.code;setTimeout(()=>{output.textContent='Code expired. Create another if needed.';},data.expiresIn*1000);}catch(error){output.textContent=connectionCodeMessage(error);}finally{create.disabled=false;}});
   redeem.addEventListener('click',async()=>{redeem.disabled=true;try{const data=await client.call('/pair/redeem',{code:code.value.trim()});sessionStorage.setItem(sessionKey,JSON.stringify({token:data.token,expiresAt:data.expiresAt}));code.value='';output.textContent='This browser is connected for 15 minutes.';await load();}catch{output.textContent='Connection failed. Use a fresh code from your verified phone.';}finally{redeem.disabled=false;}});
   end.addEventListener('click',async()=>{try{if(paired())await client.call('/pair/end',{});sessionStorage.removeItem(sessionKey);output.textContent='Browser connection ended.';await load();}catch{output.textContent='Could not end the server session. Try again; it expires automatically after 15 minutes.';}});
-  pairing.append(create,output,code,redeem,end);section.prepend(pairing);
+  pairing.append(create,output,code,redeem,end);section.append(pairing);
   async function load() {
     refresh.disabled=true;catalog.replaceChildren();accounts.replaceChildren();
     try {
-      const data=await client.call('/catalog');let available=false;
+      const data=await client.call('/catalog');
+      scopes.hidden=!data.providers.some(provider=>provider.id==='google'&&provider.configured);
+      const unavailable=element('details','','ba-unavailable');unavailable.append(element('summary','Other account services'));
       for(const provider of data.providers) {
-        const registeredCloudflareActions=availableCloudflareLoginActions(provider);
-        const canConnect=provider.configured&&(provider.id!=='cloudflare'||registeredCloudflareActions.length>0);
-        const cloudLimited=provider.id==='cloudflare'&&provider.fullProjectConfigured!==true;
-        const button=element('button',(canConnect?'Sign in with ':'Unavailable: ')+(NAMES[provider.id]||provider.id),'ba-control');
-        button.type='button';button.disabled=!canConnect;
+        const providerName=NAMES[provider.id]||provider.id;
+        if(!provider.configured){unavailable.append(element('p',providerName+' — connection setup is not available yet.','ba-muted'));continue;}
+        const card=element('div','','ba-provider-card');
+        const button=element('button','Sign in with '+providerName,'ba-control');
+        button.type='button';button.disabled=Boolean(client.pending);button.dataset.provider=provider.id;
         button.classList.add('ba-signin-button');
-        button.setAttribute('aria-label',(canConnect?'Sign in with ':'Account setup required for ')+(NAMES[provider.id]||provider.id));
-        if(cloudLimited&&canConnect)button.title='Cloudflare account sign-in is available. Some project permissions are not registered; Bubbles will not claim those permissions.';
-        if(canConnect)available=true;
+        button.setAttribute('aria-label','Sign in with '+providerName);
+        card.append(button);
+        if(provider.id==='cloudflare'&&provider.fullProjectConfigured===false)
+          card.append(element('p','Sign in to connect your account. Additional project permissions still need application setup.'));
+        const availableActions=providerAuthorizationActions(provider);
         button.addEventListener('click',async()=>{
+          if(client.pending){status.textContent='Finish or cancel the current sign-in first.';return;}
           button.disabled=true;button.setAttribute('aria-busy','true');status.textContent='Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
-          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):provider.id==='cloudflare'?registeredCloudflareActions:['repository.read'];
+          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):availableActions;
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';button.disabled=false;button.removeAttribute('aria-busy');return;}
           try {await client.connect(provider.id,actions,(error,account)=>{
-            status.textContent=error?error.message:provider.id==='cloudflare'&&!account.grantedActions?.includes('projects.full')?'Cloudflare returned limited permission. Full project access is not yet approved.':'Connected '+account.label+'.';if(!error)void load();
-          });status.textContent='Finish authorization in the sign-in window.';}catch(error){status.textContent=error.message;}finally{button.disabled=!canConnect;button.removeAttribute('aria-busy');}
-        });catalog.append(button);
+            cancel.hidden=true;status.textContent=error?error.message:'Connected '+account.label+'.';void load();
+          });cancel.hidden=false;status.textContent='Continue on '+providerName+' to sign in, then return here.';}catch(error){status.textContent=error.message;}finally{button.disabled=Boolean(client.pending);button.removeAttribute('aria-busy');}
+        });catalog.append(card);
       }
-      if(!available){status.textContent='Account connections are awaiting service setup. No account access has been granted.';return;}
+      if(unavailable.childNodes.length>1)catalog.append(unavailable);
       const dataAccounts=await client.call('/accounts');
       for(const account of dataAccounts.accounts) {
-        const row=element('p',(NAMES[account.provider]||account.provider)+' · '+account.label+' · '+account.status+' ');
+        const row=element('div','','ba-account-card');
+        row.append(element('p',(NAMES[account.provider]||account.provider)+' · '+account.label+' · '+account.status));
+        if(account.provider==='cloudflare'&&account.status==='connected'){
+          const grants=account.grantedActions||[];
+          const access=grants.includes('projects.full')?'Full project access approved.':
+            grants.includes('projects.build')?'Approved: deploy Workers, Pages and D1 projects. Additional project permissions are not yet approved.':
+            'Account connected. Project deployment permission is not yet approved.';
+          row.append(element('p',access,'ba-muted'));
+        }
         if(account.status!=='disconnected') {
           const button=element('button','Disconnect','ba-control');button.type='button';
           button.addEventListener('click',async()=>{
@@ -367,13 +396,14 @@ export function mountConnections(container,{token}) {
         }
       }
       status.textContent=dataAccounts.accounts.length?'Connected accounts checked.':'No connected accounts yet.';
-    }catch {status.textContent='Account connections are unavailable. Connect your wallet and try again.';}
+    }catch(error) {status.textContent=connectionCodeMessage(error);}
     finally {refresh.disabled=false;}
   }
   refresh.addEventListener('click',()=>void load());
   if(client.resumePending((error,account)=>{
+    cancel.hidden=true;
     status.textContent=error?error.message:'Connected '+account.label+'.';
     if(!error)void load();
-  }))status.textContent='Checking returned account authorization…';
+  })){cancel.hidden=false;status.textContent='Checking returned account authorization…';}
   return {client,refresh:load};
 }

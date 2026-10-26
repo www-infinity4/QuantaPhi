@@ -45,7 +45,7 @@ test('buttons receive explicit readable color even after site-specific Oracle st
  assert.match(css,/a\.bubbles-primary-action:visited/);
  assert.match(css,/color:#fff!important/);
  assert.match(css,/\.bubbles-actions a:visited/);
- assert.match(css,/color:#392157!important/);
+ assert.match(css,/color:#312722!important/);
  assert.match(css,/min-height:46px/);
  assert.match(css,/:focus-visible/);
 });

@@ -1,6 +1,45 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {AccountConnections,resolveConnectorWalletToken,connectionCodeMessage,availableCloudflareLoginActions} from '../bubbles-connections.mjs';
+import {AccountConnections,mountConnections,resolveConnectorWalletToken,connectionCodeMessage,availableCloudflareLoginActions} from '../bubbles-connections.mjs';
+
+test('account page launches real Cloudflare consent with registered actions even without the full project toolkit',async t=>{
+ class Element {
+  constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.classList={add(){}};}
+  append(...nodes){this.childNodes.push(...nodes);}
+  prepend(...nodes){this.childNodes.unshift(...nodes);}
+  replaceChildren(...nodes){this.childNodes=nodes;}
+  setAttribute(name,value){this[name]=value;}
+  removeAttribute(name){delete this[name];}
+  addEventListener(name,callback){this.listeners[name]=callback;}
+ }
+ const originals={document:globalThis.document,window:globalThis.window,sessionStorage:globalThis.sessionStorage,fetch:globalThis.fetch};
+ t.after(()=>Object.assign(globalThis,originals));
+ const document={createElement:tag=>new Element(tag),createTextNode:text=>({textContent:text}),addEventListener(){}};
+ const storage=new Map(),sessionStorage={getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
+ const popup={location:{},close(){}},calls=[];
+ const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
+ Object.assign(globalThis,{document,sessionStorage,window,fetch:async(url,options)=>{
+  const path=String(url).replace('/api/bubbles/connections','');
+  const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
+  if(path==='/catalog')return Response.json({ok:true,providers:[{id:'cloudflare',configured:true,fullProjectConfigured:false,actions:['account.read','projects.build','ledger.read']},{id:'google',configured:false}]});
+  if(path==='/accounts')return Response.json({ok:true,accounts:[]});
+  if(path==='/start')return Response.json({ok:true,authorizationUrl:'https://dash.cloudflare.com/oauth2/auth?state='+'s'.repeat(43),expiresIn:300});
+  if(path==='/handoff/status')return Response.json({ok:true,status:'pending'});
+  assert.fail('Unexpected endpoint '+path);
+ }});
+ const container=new Element('main'),panel=mountConnections(container,{token:async()=>'sq_'+'a'.repeat(40)});
+ await panel.refresh();
+ const descendants=node=>[node,...(node.childNodes||[]).flatMap(descendants)];
+ const button=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
+ assert.equal(button.disabled,false);
+ assert.equal(button.textContent,'Sign in with Cloudflare');
+ assert.equal(descendants(container).find(node=>node.tag==='fieldset').hidden,true);
+ await button.listeners.click();
+ assert.deepEqual(calls.find(call=>call.path==='/start').body,{provider:'cloudflare',actions:['account.read','projects.build','ledger.read']});
+ assert.equal(new URL(popup.location.href).origin,'https://dash.cloudflare.com');
+ assert.equal(JSON.parse(storage.get('bubbles:oauth-pending:v1')).returnPath,'/bubbles-accounts.html');
+ panel.client.cancelConnect();
+});
 test('connector waits for device bridge and supports both wallet runtime exports',async()=>{
   let ready=false;const token='sq_'+'a'.repeat(40);
   assert.equal(await resolveConnectorWalletToken({QuantaCloudConnection:{ready:Promise.resolve().then(()=>ready=true),resolveDeviceToken:async()=>{assert.ok(ready);return token;}}}),token);

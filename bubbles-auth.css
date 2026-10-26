@@ -1,0 +1,90 @@
+/* Oracle Octaves account surfaces. Provider controls keep their own brand. */
+body.bubbles-auth-page,
+body.oracle-octaves-page:has(.bubbles-page) {
+  --auth-paper: #f7f4f0;
+  --auth-ink: #312722;
+  --auth-muted: #736a64;
+  --auth-line: #e5ddd6;
+  --auth-red: #b83b32;
+  color: var(--auth-ink);
+  background: radial-gradient(ellipse at 90% 0%, #d6a34a1f, transparent 34rem), var(--auth-paper);
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+}
+body.bubbles-auth-page { margin: 0; padding: 24px 18px 48px; font-size: 16px; line-height: 1.55; }
+.bubbles-auth-page *, .bubbles-page * { box-sizing: border-box; }
+.bubbles-auth-shell { max-width: 760px; margin: auto; }
+.bubbles-auth-page h1 { margin: 24px 0 12px; font-size: clamp(28px, 6vw, 38px); line-height: 1.15; letter-spacing: -.035em; }
+.bubbles-auth-page h2 { font-size: 21px; margin: 0 0 12px; }
+.bubbles-auth-page p { overflow-wrap: anywhere; }
+.bubbles-auth-page a, body.oracle-octaves-page .bubbles-page a { color: #8e2b25; }
+.bubbles-auth-page .auth-intro { color: var(--auth-muted); max-width: 620px; margin-bottom: 24px; }
+.bubbles-auth-page :is(button, input, select) { font: inherit; max-width: 100%; }
+.bubbles-auth-page :is(button, .auth-action) {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 44px; padding: 11px 16px; margin: 5px 8px 5px 0;
+  border: 1px solid var(--auth-line); border-radius: 10px;
+  color: var(--auth-ink); background: #f3efeb; font-weight: 650; cursor: pointer;
+  line-height: 1.4; text-align: center; text-decoration: none;
+}
+.bubbles-auth-page .auth-primary { background: var(--auth-red); border-color: var(--auth-red); color: white; }
+.bubbles-auth-page button:disabled { opacity: .6; cursor: not-allowed; }
+.bubbles-auth-page :is(input, select) { padding: 12px; border: 1px solid #cdbfb5; border-radius: 10px; background: white; color: var(--auth-ink); }
+.bubbles-auth-page input:not([type=checkbox]), .bubbles-auth-page select { width: 100%; min-height: 44px; }
+.bubbles-auth-page :is(button, a, input, select, summary):focus-visible { outline: 3px solid #236b83; outline-offset: 3px; }
+.bubbles-auth-page [hidden] { display: none !important; }
+.bubbles-auth-page .ba-connection-section, .bubbles-auth-page .auth-return-card {
+  background: white; border: 1px solid var(--auth-line); border-radius: 18px;
+  padding: 24px; box-shadow: 0 12px 36px #3127220d;
+}
+.bubbles-auth-page .ba-provider-catalog { display: grid; gap: 12px; margin: 20px 0; }
+.bubbles-auth-page .ba-provider-card { min-width: 0; padding: 16px; border: 1px solid var(--auth-line); border-radius: 12px; }
+.bubbles-auth-page .ba-provider-card p { margin: 10px 0 0; color: var(--auth-muted); font-size: 14px; }
+.bubbles-auth-page .ba-provider-catalog button { width: 100%; margin: 0; }
+.bubbles-auth-page .ba-account-card { padding: 18px 0; border-top: 1px solid var(--auth-line); }
+.bubbles-auth-page .ba-muted { color: var(--auth-muted); font-size: 14px; }
+.bubbles-auth-page .ba-pairing { margin-top: 24px; border-top: 1px solid var(--auth-line); padding-top: 12px; }
+.bubbles-auth-page summary { cursor: pointer; padding: 10px 0; font-weight: 650; }
+.bubbles-auth-page fieldset { border: 1px solid var(--auth-line); border-radius: 10px; margin: 16px 0; }
+.bubbles-auth-page fieldset label { display: block; padding: 4px 0; }
+.bubbles-auth-page pre { max-width: 100%; overflow: auto; }
+/* These selectors intentionally outrank the generic purple pill theme. */
+body.oracle-octaves-page .bubbles-signin-gate {
+  max-width: 460px; padding: 24px; border: 1px solid var(--auth-line); border-radius: 18px; background: white;
+}
+body.oracle-octaves-page .bubbles-signin-gate h2 { color: var(--auth-ink); }
+body.oracle-octaves-page .bubbles-signin-gate p { color: var(--auth-muted); }
+body.oracle-octaves-page .bubbles-signin-provider {
+  padding: 0; background: transparent !important; border: 0 !important; border-radius: 0; box-shadow: none;
+}
+body.oracle-octaves-page .bubbles-signin-retry { background: #f3efeb; color: var(--auth-ink); border: 1px solid var(--auth-line); border-radius: 10px; }
+body.oracle-octaves-page .bubbles-page :is(.bubbles-intro, .bubbles-workspace, .bubbles-install) { background: white; border-color: var(--auth-line); }
+body.oracle-octaves-page .bubbles-page :is(h1, h2, h3) { color: var(--auth-ink); }
+body.oracle-octaves-page .bubbles-page :is(.bubbles-lead, .bubbles-eyebrow, .bubbles-section-heading p) { color: var(--auth-muted); }
+body.oracle-octaves-page .bubbles-actions a { color: var(--auth-ink); background: #f3efeb; border-color: var(--auth-line); border-radius: 10px; }
+body.oracle-octaves-page .bubbles-actions .bubbles-primary-action { background: var(--auth-red); border-color: var(--auth-red); color: white; }
+body.oracle-octaves-page .bubbles-page button[data-provider],
+body.bubbles-auth-page button[data-provider] {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  width: 100%; min-height: 48px; padding: 12px 16px;
+  border: 1px solid #d1d5da; border-radius: 6px; box-shadow: none;
+  font: 600 16px/1.4 system-ui, sans-serif; cursor: pointer;
+}
+body.oracle-octaves-page .bubbles-page button[data-provider]::before,
+body.bubbles-auth-page button[data-provider]::before {
+  content: ""; display: block; width: 24px; height: 24px; flex: 0 0 24px;
+  background-position: center; background-repeat: no-repeat; background-size: contain;
+}
+body.oracle-octaves-page .bubbles-page button[data-provider=github],
+body.bubbles-auth-page button[data-provider=github] { color: white; background: #24292f; border-color: #24292f; }
+button[data-provider=github]::before { background-image: url('/assets/auth-github.svg'); }
+body.oracle-octaves-page .bubbles-page button[data-provider=cloudflare],
+body.bubbles-auth-page button[data-provider=cloudflare] { color: #313131; background: white; border: 1px solid #b6b6b6; }
+button[data-provider=cloudflare]::before { background-image: url('/assets/auth-cloudflare.svg'); }
+body.oracle-octaves-page .bubbles-page button[data-provider]:disabled,
+body.bubbles-auth-page button[data-provider]:disabled { cursor: not-allowed; opacity: .65; }
+@media (max-width: 480px) {
+  body.bubbles-auth-page { padding: 20px 14px 36px; }
+  .bubbles-auth-page .ba-connection-section, .bubbles-auth-page .auth-return-card { padding: 18px; }
+  .bubbles-auth-page .ba-account-card > button { width: 100%; }
+  body.oracle-octaves-page .bubbles-signin-gate { max-width: 100%; padding: 22px; }
+}
