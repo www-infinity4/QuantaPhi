@@ -118,10 +118,6 @@ export async function handleConnections(request,env,resolveService) {
         ready:github.permissionsApproved&&cloudflare.permissionsApproved,
         providers:{github,cloudflare}});
     }
-    if (request.method === 'GET' && url.pathname === PREFIX+'/handoff/status') {
-      const provider=url.searchParams.get('provider'),state=url.searchParams.get('state');
-      return json(origin,{ok:true,...await service.handoffStatus({...identity,provider,state})});
-    }
     if (request.method === 'GET' && url.pathname === PREFIX+'/accounts') return json(origin,{ok:true,accounts:await service.list(identity)});
     if (request.method !== 'POST') return json(origin,{ok:false,error:'not_found'},404);
     if (!request.headers.get('Content-Type')?.startsWith('application/json')) return json(origin,{ok:false,error:'json_required'},415);
@@ -129,6 +125,7 @@ export async function handleConnections(request,env,resolveService) {
     const raw = await request.text(); if (raw.length > 8192) return json(origin,{ok:false,error:'too_large'},413);
     let body; try {body = JSON.parse(raw);} catch {return json(origin,{ok:false,error:'invalid_json'},400);}
     if (!body || typeof body !== 'object' || Array.isArray(body)) return json(origin,{ok:false,error:'invalid_json'},400);
+    if (url.pathname === PREFIX+'/handoff/status') return json(origin,{ok:true,...await service.handoffStatus({...identity,provider:body.provider,state:body.state})});
     if (url.pathname === PREFIX+'/github/starcoins/create-repository')
       return json(origin,{ok:true,...await service.createStarCoinRepository({userId:identity.userId,id:body.id})});
     if(url.pathname===PREFIX+'/github/starcoins/backup'||url.pathname===PREFIX+'/github/starcoins/verify'){
