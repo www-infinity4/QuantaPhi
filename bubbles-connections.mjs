@@ -82,7 +82,8 @@ export class AccountConnections {
       pending.polling=true;
       try{
         const data=await this.call('/handoff/status',{provider,state});
-        if(data.status==='received'){
+        if(data.status==='connected'&&data.account)finish(null,data.account);
+        else if(data.status==='received'){
           const completed=await this.call('/handoff/finish',{provider,state});
           if(completed.status==='connected'&&completed.account)finish(null,completed.account);
           else if(completed.status==='expired')finish(Error('Sign-in expired. Start Connect account again.'));
