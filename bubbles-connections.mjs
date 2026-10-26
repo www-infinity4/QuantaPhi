@@ -94,6 +94,7 @@ export class AccountConnections {
     try{this.root.sessionStorage?.removeItem('bubbles:oauth-pending:v1');}catch{}
   }
   trackHandoff({provider,state,expiresAt},popup,onComplete) {
+    const expiredMessage='Authorization was not completed within five minutes. Start again and tap Authorize on '+(NAMES[provider]||provider)+'.';
     const pending={timer:null,pollTimer:null,polling:false,finished:false,onReturn:null,popup};
     this.pending=pending;
     const finish=(error,account)=>{
@@ -113,10 +114,10 @@ export class AccountConnections {
         else if(data.status==='received'){
           const completed=await this.call('/handoff/finish',{provider,state});
           if(completed.status==='connected'&&completed.account)finish(null,completed.account);
-          else if(completed.status==='expired')finish(Error('Sign-in expired. Start Connect account again.'));
+          else if(completed.status==='expired')finish(Error(expiredMessage));
           else if(completed.status==='declined')finish(Error('Account authorization was declined.'));
         }else if(data.status==='declined')finish(Error('Account authorization was declined.'));
-        else if(data.status==='expired')finish(Error('Sign-in expired. Start Connect account again.'));
+        else if(data.status==='expired')finish(Error(expiredMessage));
       }catch(error){
         // Callback/code exchange failures cannot be cured by polling. Surface a
         // recoverable, sanitized error now rather than waiting five minutes and
@@ -139,7 +140,7 @@ export class AccountConnections {
     this.root.addEventListener?.('focus',pending.onReturn);
     this.root.addEventListener?.('pageshow',pending.onReturn);
     this.root.document?.addEventListener?.('visibilitychange',pending.onReturn);
-    pending.timer=this.root.setTimeout(()=>finish(Error('Sign-in expired. Start Connect account again.')),
+    pending.timer=this.root.setTimeout(()=>finish(Error(expiredMessage)),
       Math.max(1,expiresAt-Date.now()));
     void poll();
   }
