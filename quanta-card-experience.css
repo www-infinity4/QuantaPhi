@@ -161,3 +161,15 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qca-controls>.qca-signin:hover{background:#80231f;color:#fff}
 .qca-controls>.qca-connect{background:#fff8f2;border-color:#c58c67}
 @media(max-width:570px){.qca-controls>.qca-signin{grid-column:span 2}}
+
+/* Genuine public-source result rows: compact, readable, no nested scroll panels. */
+.qcx-source-live:empty{display:none}
+.qcx-source-live{display:grid;gap:8px;min-width:0;max-width:100%}
+.qcx-source-status{margin:0;color:#66574d;font:650 12px/1.45 system-ui,sans-serif}
+.qcx-source-list{display:grid;gap:7px;min-width:0}
+.qcx-source-item{border:1px solid #e6d9cd;background:#fff;border-radius:12px;padding:10px 12px;display:grid;gap:3px;min-width:0}
+.qcx-source-item a{color:#852d29;font:800 14px/1.35 system-ui,sans-serif;overflow-wrap:anywhere;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+.qcx-source-item small{color:#526a50;font:650 11px/1.3 system-ui,sans-serif}
+.qcx-source-item p{font:450 12px/1.45 system-ui,sans-serif;color:#554943;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.qcx-source-item :focus-visible{outline:3px solid #ba672b;outline-offset:3px}
+@media(max-width:480px){.qcx-source-item{padding:9px 10px}.qcx-source-item a{font-size:13px}}
