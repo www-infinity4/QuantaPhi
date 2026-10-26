@@ -3,6 +3,7 @@
  'use strict';
  const requests=document.getElementById('qtrafficRequests'),views=document.getElementById('qtrafficViews'),note=document.getElementById('qtrafficNote');
  if(!requests||!views||!note)return;
+ const STORAGE_KEY='quantaphi_verified_traffic_v2';
  let best=null,busy=false;
  const validCount=n=>Number.isSafeInteger(n)&&n>=0;
  function valid(d){
@@ -15,15 +16,22 @@
    validCount(d.recordedDays)&&typeof d.coverageContinuous==='boolean'&&
    d.last7Days.requests<=d.requests&&d.last7Days.pageViews<=d.pageViews;
  }
+ // Keep only validated aggregate counts across page reloads. No visitor identifiers are stored.
+ try{const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');if(valid(saved))best=saved;}catch{}
  function render(d,{fallback=false}={}){
-  // A recovered older file must not replace more recent verified numbers in the same session.
-  if(best&&best.since===d.since&&Date.parse(best.fetchedAt)>Date.parse(d.fetchedAt))d=best;
+  // Static fallbacks and older responses must not make verified counters shrink after reload.
+  let recovered=false;
+  if(best&&best.since===d.since&&
+   (best.requests>d.requests||best.pageViews>d.pageViews||Date.parse(best.fetchedAt)>Date.parse(d.fetchedAt))){
+   d=best;recovered=true;
+  }
   best=d;
+  try{localStorage.setItem(STORAGE_KEY,JSON.stringify(best));}catch{}
   requests.textContent=d.requests.toLocaleString();
   views.textContent=d.pageViews.toLocaleString();
   const updated=new Date(d.fetchedAt).toLocaleString();
   const age=Date.now()-Date.parse(d.fetchedAt);
-  const live=d.refreshConfigured&&!fallback&&age<60*60*1000&&d.through===new Date().toISOString().slice(0,10);
+  const live=d.refreshConfigured&&!fallback&&!recovered&&age<60*60*1000&&d.through===new Date().toISOString().slice(0,10);
   const prefix='Recorded since '+d.since+' (earliest available Cloudflare date), through '+d.through+'. ';
   const recent=' Last 7 days (UTC): '+d.last7Days.requests.toLocaleString()+' requests, '+d.last7Days.pageViews.toLocaleString()+' page views.';
   const status=live?'Automatic Cloudflare sync is active. ':(d.refreshConfigured?'Last recorded total; feed is temporarily stale. ':'Last recorded total; automatic ingestion is not yet authorized. ');
