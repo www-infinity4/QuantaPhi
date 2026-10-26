@@ -249,8 +249,7 @@ test('Bubbles full project grant requests real provider scopes and requires ever
  const all=['user-details.read','memberships.read','workers-scripts.admin','d1.write','page.write','d1.read',
    'workers-routes.read','workers-routes.write','page.read','workers-kv-storage.read','workers-kv-storage.write',
    'workers-r2.read','workers-r2.write','queues.read','queues.write','ai.read','ai.write',
-   'browser-rendering.read','browser-rendering.write','containers.read','containers.write','workers-observability.read',
-   'dns.read','dns.write'];
+   'browser-rendering.read','browser-rendering.write','containers.read','containers.write','workers-observability.read'];
  let providerScopes=all;
  const adapter=cloudflareAdapter({clientId:'client-id',clientSecret:'server-side',redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async url=>url.endsWith('/token')?
    Response.json({access_token:'test-token',refresh_token:'refresh',token_type:'Bearer',expires_in:3600,scope:providerScopes.join(' ')}):
@@ -266,6 +265,22 @@ test('Bubbles full project grant requests real provider scopes and requires ever
  providerScopes=all.filter(scope=>scope!=='queues.write');
  const partial=await adapter.exchange({code:'code',verifier:'verifier',actions});
  assert.deepEqual(partial.grantedActions,['account.read','projects.build','ledger.read']);
+});
+test('DNS read and DNS changes remain independently consented from normal projects',async()=>{
+ const {cloudflareAdapter,cloudflareAvailableActions}=await import('../workers/bubbles-connections/providers.mjs');
+ const basic='user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read';
+ assert.ok(cloudflareAvailableActions(basic).includes('projects.build'));
+ assert.ok(!cloudflareAvailableActions(basic).includes('dns.inspect'));
+ assert.deepEqual(cloudflareAvailableActions('dns.read'),['dns.inspect']);
+ assert.deepEqual(cloudflareAvailableActions('dns.read dns.write'),['dns.inspect','dns.manage']);
+ const adapter=cloudflareAdapter({clientId:'c',clientSecret:'server-side',
+   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback',
+   allowedScopes:'dns.read dns.write'});
+ const read=new URL(adapter.authorization({state:'state',challenge:'challenge',actions:['dns.inspect']}));
+ assert.equal(read.searchParams.get('scope'),'dns.read');
+ assert.throws(()=>adapter.authorization({state:'state',challenge:'challenge',actions:['projects.full']}),/cloudflare_client_scopes_unavailable/);
+ const write=new URL(adapter.authorization({state:'state',challenge:'challenge',actions:['dns.manage']}));
+ assert.equal(write.searchParams.get('scope'),'dns.read dns.write');
 });
 test('Cloudflare OAuth never mistakes limited consent for project management permission',async()=>{
  const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
