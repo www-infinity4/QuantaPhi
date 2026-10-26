@@ -16,6 +16,7 @@ import {githubOperation,directGithubAgent,validateRepository,suggestRepositories
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {planCloudflareToken,confirmCloudflareToken} from './cloudflare-token-broker.mjs';
 import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
+
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
@@ -737,6 +738,15 @@ export class BrainClock extends DurableObject{
     'Owner-approved '+result.capability+' token provisioned and stored encrypted on Brain. No secret value sent to chat.');
    return Response.json(result,{status:result.httpStatus||200});
   }
+  if(new URL(request.url).pathname==='/owner/cloudflare-scope-sync-plan'){
+   const {planBubblesScopeSync}=await import('./cloudflare-scope-sync.mjs');
+   return Response.json(await planBubblesScopeSync(this.ctx.storage,this.env));
+  }
+  if(new URL(request.url).pathname==='/owner/cloudflare-scope-sync-confirm'){
+   const {confirmBubblesScopeSync}=await import('./cloudflare-scope-sync.mjs');
+   const result=await confirmBubblesScopeSync(this.ctx.storage,await request.json(),this.env);
+   return Response.json(result,{status:result.httpStatus||200});
+  }
   if(new URL(request.url).pathname==='/owner/cloudflare-oauth-client-plan')
    return Response.json(await planOAuthClient(this.ctx.storage,this.env));
   if(new URL(request.url).pathname==='/owner/cloudflare-oauth-client-confirm'){
@@ -1345,6 +1355,23 @@ export default{
     const result=await response.json();
     return output(request,result,response.status);
    }catch{return output(request,{ok:false,error:'cloudflare_token_broker_unavailable'},503);}
+  }
+  // Owner-scoped repair; plan has no mutation, confirmation is an explicit click.
+  if(['/work/cloudflare/scope-sync-plan','/work/cloudflare/scope-sync-confirm'].includes(path)&&request.method==='POST'){
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
+   if(!await ownerAuthorized(env,token))return output(request,{ok:false,error:'owner_authorization_required'},401);
+   const raw=await request.text();
+   if(raw.length>700)return output(request,{ok:false,error:'scope_sync_body_too_large'},413);
+   try{
+    const body=JSON.parse(raw||'{}');
+    if(Object.keys(body).some(k=>k!=='requestId'))return output(request,{ok:false,error:'scope_sync_request_invalid'},400);
+    const subpath=path.endsWith('-plan')?'/owner/cloudflare-scope-sync-plan':'/owner/cloudflare-scope-sync-confirm';
+    const r=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main'))
+      .fetch('https://clock.internal'+subpath,{method:'POST',body:JSON.stringify(body)});
+    return output(request,await r.json(),r.status);
+   }catch{return output(request,{ok:false,error:'scope_sync_broker_unavailable'},503)}
   }
   if(['/work/cloudflare/oauth-client-plan','/work/cloudflare/oauth-client-confirm'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');

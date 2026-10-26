@@ -29,6 +29,12 @@ export const CAPABILITIES=Object.freeze({
   resource:'account',
   risk:'Create and manage OAuth client registrations in one Cloudflare account; does not authorize users\' resources'
  }),
+ 'oauth-client-read':Object.freeze({
+  name:'OAuth Clients Read',
+  groupNames:['OAuth Clients Read','OAuth Client Read'],
+  resource:'account',
+  risk:'Read an existing Cloudflare OAuth client registration; cannot change its permissions'
+ }),
  'workers-script-read':Object.freeze({
   name:'Workers Scripts Read',
   groupNames:['Workers Scripts Read'],
