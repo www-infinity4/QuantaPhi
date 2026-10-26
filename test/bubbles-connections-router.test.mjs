@@ -151,3 +151,17 @@ test('Cloudflare account lookup and selection always receive verified wallet use
  assert.ok(calls.every(x=>x.userId==='verified-alice'));
  assert.equal((await select.json()).storageReady,false);
 });
+
+test('OAuth callback supports same-origin Android broadcast without relaxing CSP or exposing codes in page history',async()=>{
+ const {callbackPage}=await import('../workers/bubbles-connections/router.mjs');
+ const page=await callbackPage('github');
+ const html=await page.text();
+ assert.equal(page.status,200);
+ assert.match(html,/new BroadcastChannel\('bubbles-oauth-return-v1'\)/);
+ assert.match(html,/history\.replaceState\(null,'',location\.pathname\)/);
+ assert.match(html,/window\.opener\.postMessage\(result,origin\)/);
+ assert.match(html,/channel\.postMessage\(result\)/);
+ assert.match(page.headers.get('Content-Security-Policy'),/script-src 'nonce-/);
+ assert.equal(page.headers.get('Cache-Control'),'no-store');
+ assert.equal((await callbackPage('unknown')).status,404);
+});
