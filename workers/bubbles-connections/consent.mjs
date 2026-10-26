@@ -33,12 +33,132 @@ export class ConsentService {
       if (recent.count >= 10) throw Error('too_many_requests');
       const pending = await tx.list({prefix:prefix+'state:',limit:64});
       for (const [pendingKey,value] of pending) if (value.expiresAt <= this.now()) await tx.delete(pendingKey);
+      const receipts=await tx.list({prefix:prefix+'handoff-receipt:',limit:64});
+      for(const [receiptKey,value] of receipts)if(value.expiresAt<=this.now())await tx.delete(receiptKey);
       await tx.put(limitKey,{...recent,count:recent.count+1});
       const generation = await tx.get(prefix + 'generation:' + provider) || 0;
       const record = {userId, sessionHash, provider, verifier, actions:[...new Set(actions)], expiresAt:this.now()+300000, generation};
       await tx.put(key, {...await this.vault.seal(record,key),expiresAt:record.expiresAt});
     });
     return {provider, authorizationUrl, expiresIn:300};
+  }
+  // Cross-browser handoff is stored only in the wallet owner's Durable Object.
+  // No OAuth code is returned to a browser status poll.
+  async handoff({userId,provider,state,code,error}) {
+    const prefix=await this.namespace(userId);
+    if(!Object.hasOwn(PROVIDERS,provider)||typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state))
+      throw Error('callback_invalid');
+    if(code!==undefined&&(typeof code!=='string'||!code||code.length>4096))
+      throw Error('callback_invalid');
+    const key=prefix+'state:'+await digest(state),handoffKey=prefix+'handoff:'+await digest(state);
+    return this.storage.transaction(async tx=>{
+      const sealed=await tx.get(key);
+      if(!sealed)throw Error('state_invalid_or_used');
+      const pending=await this.vault.open(sealed,key);
+      if(pending.provider!==provider||pending.userId!==userId||pending.expiresAt<=this.now())
+        throw Error('state_invalid_or_used');
+      if(await tx.get(handoffKey))throw Error('callback_already_received');
+      await tx.put(handoffKey,{...await this.vault.seal({code:code||null,error:error?'provider_declined':null},handoffKey),expiresAt:pending.expiresAt});
+      return {received:true};
+    });
+  }
+  async handoffStatus({userId,sessionId,provider,state}) {
+    const prefix=await this.namespace(userId),sessionHash=await this.session(sessionId);
+    if(!Object.hasOwn(PROVIDERS,provider)||typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state))
+      throw Error('callback_invalid');
+    const hash=await digest(state),key=prefix+'state:'+hash,handoffKey=prefix+'handoff:'+hash;
+    const receiptKey=prefix+'handoff-receipt:'+hash;
+    const sealedReceipt=await this.storage.get(receiptKey);
+    if(sealedReceipt){
+      const receipt=await this.vault.open(sealedReceipt,receiptKey);
+      if(receipt.userId!==userId||receipt.sessionHash!==sessionHash||receipt.provider!==provider)
+        throw Error('callback_session_mismatch');
+      if(receipt.expiresAt<=this.now())return {status:'expired'};
+      // A cached success must never outlive disconnect, token removal, or
+      // a replacement connection revision. It is recovery, not authority.
+      const current=await this.storage.get(prefix+'connection:'+receipt.account?.id);
+      if(current?.userId!==userId||current.provider!==provider||
+         current.status!=='connected'||!current.credentialRef||
+         current.revision!==receipt.connectionRevision||
+         current.expiresAt<=this.now()||
+         !(await this.storage.get(current.credentialRef)))return {status:'expired'};
+      return {status:'connected',account:receipt.account};
+    }
+    const sealed=await this.storage.get(key);
+    if(!sealed){
+      // The first finish request consumes the OAuth state before exchanging
+      // the provider code. During that network request, another poll must
+      // not report an expired sign-in. This marker is session-bound and
+      // contains no provider code or access token.
+      const inflight=await this.storage.get(prefix+'handoff-inflight:'+hash);
+      if(!inflight)return {status:'expired'};
+      if(inflight.userId!==userId||inflight.sessionHash!==sessionHash||inflight.provider!==provider)
+        throw Error('callback_session_mismatch');
+      return {status:inflight.expiresAt>this.now()?'pending':'expired'};
+    }
+    const pending=await this.vault.open(sealed,key);
+    if(pending.userId!==userId||pending.sessionHash!==sessionHash||pending.provider!==provider)
+      throw Error('callback_session_mismatch');
+    if(pending.expiresAt<=this.now())return {status:'expired'};
+    const arrival=await this.storage.get(handoffKey);
+    if(!arrival)return {status:'pending'};
+    const handoff=await this.vault.open(arrival,handoffKey);
+    if(handoff.error)return {status:'declined'};
+    return {status:'received'};
+  }
+  async finishHandoff(input) {
+    const {userId,sessionId,provider,state}=input;
+    const status=await this.handoffStatus(input);
+    if(status.status!=='received')return status;
+    const sessionHash=await this.session(sessionId);
+    const prefix=await this.namespace(userId);
+    const key=prefix+'handoff:'+await digest(state);
+    const encrypted=await this.storage.get(key);
+    if(!encrypted)return {status:'pending'};
+    const received=await this.vault.open(encrypted,key);
+    if(!received.code)throw Error('callback_invalid');
+    const inflightKey=prefix+'handoff-inflight:'+await digest(state);
+    await this.storage.transaction(async tx=>{
+      const previous=await tx.get(inflightKey);
+      if(previous&&(previous.userId!==userId||previous.sessionHash!==sessionHash||previous.provider!==provider))
+        throw Error('callback_session_mismatch');
+      await tx.put(inflightKey,{userId,sessionHash,provider,expiresAt:this.now()+300000});
+    });
+    // The storage contract exposes transactional delete, not a top-level
+    // delete method. Erase the sealed callback even if token exchange fails.
+    try {
+      const account=await this.complete({userId,sessionId,provider,state,code:received.code});
+      // A lost Android HTTP response must not force a second provider login.
+      // Persist a sealed, session-bound completion receipt before returning.
+      const receiptKey=prefix+'handoff-receipt:'+await digest(state);
+      const receipt={userId,sessionHash,provider,account,expiresAt:this.now()+300000};
+      await this.storage.transaction(async tx=>{
+        const current=await tx.get(prefix+'connection:'+account.id);
+        if(current?.userId!==userId||current.provider!==provider||
+           current.status!=='connected'||!current.credentialRef||
+           current.expiresAt<=this.now()||!(await tx.get(current.credentialRef)))
+          throw Error('connection_cancelled');
+        receipt.connectionRevision=current.revision;
+        await tx.put(receiptKey,{...await this.vault.seal(receipt,receiptKey),expiresAt:receipt.expiresAt});
+        await tx.delete(inflightKey);
+      });
+      return {status:'connected',account};
+    } catch(error) {
+      if(error?.message==='state_invalid_or_used') {
+        // Two authenticated polls may race to consume one callback. The
+        // winner alone exchanges the provider code; the loser should keep
+        // polling rather than surface a false sign-in failure.
+        const recovered=await this.handoffStatus(input);
+        if(recovered.status==='connected'||recovered.status==='pending')return recovered;
+        if(recovered.status==='expired')return {status:'pending'};
+      }
+      // An exchange or receipt failure is terminal for this consumed state.
+      // Only the racing loser keeps the marker while the winner completes.
+      await this.storage.transaction(async tx=>{await tx.delete(inflightKey);});
+      throw error;
+    } finally {
+      await this.storage.transaction(async tx=>{await tx.delete(key);});
+    }
   }
   async complete({userId, sessionId, provider, state, code}) {
     const prefix = await this.namespace(userId), sessionHash = await this.session(sessionId);

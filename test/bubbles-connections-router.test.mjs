@@ -28,11 +28,20 @@ test('same-origin browser GET works without Origin while cross-site and unsafe r
     method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}'}),env,()=>assert.fail());
   assert.equal(unsafe.status,403);
 });
-test('caller supplied identities cannot replace verified wallet identity or device session',async()=>{
-  let received;
-  const response=await handleConnections(request('/start',{method:'POST',body:{userId:'victim',sessionId:'attacker',provider:'google',actions:['drive.read']}}),env,async id=>{
-    assert.equal(id,'verified-alice');return {start:async input=>{received=input;return {authorizationUrl:'https://accounts.google.com/'};}};
-  });assert.equal(response.status,200);assert.equal(received.userId,'verified-alice');assert.notEqual(received.sessionId,'attacker');assert.ok(!received.sessionId.includes('sq_'));
+test('start registers state only for verified wallet identity',async()=>{
+  let received,registered;
+  const state='a'.repeat(43);
+  const configured={...env,CONNECTIONS:{idFromName:name=>name,get:()=>({
+    registerOAuthState:async input=>{registered=input;return {registered:true};}
+  })}};
+  const response=await handleConnections(request('/start',{method:'POST',body:{userId:'victim',sessionId:'attacker',provider:'google',actions:['drive.read']}}),configured,async id=>{
+    assert.equal(id,'verified-alice');return {start:async input=>{received=input;return {authorizationUrl:'https://accounts.google.com/o/oauth2/v2/auth?state='+state,expiresIn:300};}};
+  });
+  assert.equal(response.status,200);
+  assert.equal(received.userId,'verified-alice');
+  assert.notEqual(received.sessionId,'attacker');
+  assert.equal(registered.userId,'verified-alice');
+  assert.equal(registered.state,state);
 });
 test('unconfigured service exposes catalog status without claiming accounts are connected',async()=>{
   const e={...env,CONNECTIONS_READY:false};
@@ -40,11 +49,37 @@ test('unconfigured service exposes catalog status without claiming accounts are 
   assert.ok((await response.json()).providers.every(p=>p.configured===false));
   assert.equal((await handleConnections(request('/accounts'),e,()=>assert.fail())).status,503);
 });
-test('callback has no-store, referrer protection, fixed target origins and code removal',async()=>{
-  const response=await handleConnections(request('/google/callback?code=private-code'),{},()=>assert.fail());
-  const html=await response.text();assert.equal(response.status,200);assert.equal(response.headers.get('Referrer-Policy'),'no-referrer');
-  assert.ok(html.includes('history.replaceState'));assert.ok(response.headers.get('Content-Security-Policy').includes("frame-ancestors 'none'"));
-  assert.ok(!html.includes('private-code'));assert.ok(!html.includes("postMessage(message,'*')"));
+test('provider callback stores authorization on the server and redirects to a code-free page',async()=>{
+  const state='a'.repeat(43),received=[];
+  const registry={lookupOAuthState:async input=>{assert.equal(input.state,state);return {userId:'verified-alice'};}};
+  const configured={CONNECTIONS:{idFromName:name=>name,get:()=>registry}};
+  const resolve=async userId=>({handoff:async input=>{received.push(input);assert.equal(userId,'verified-alice');return {received:true};}});
+  const response=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/google/callback?state='+state+'&code=private-code'),configured,resolve);
+  assert.equal(response.status,303);
+  assert.equal(response.headers.get('Referrer-Policy'),'no-referrer');
+  assert.equal(response.headers.get('Cache-Control'),'no-store');
+  assert.equal(response.headers.get('Location'),PREFIX+'/google/callback?result=received');
+  assert.equal(received[0].code,'private-code');
+  assert.equal(await response.text(),'');
+  const clean=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/google/callback?result=received'),configured,()=>assert.fail());
+  const html=await clean.text();
+  assert.equal(clean.status,200);
+  assert.ok(!html.includes('private-code'));
+  assert.ok(!html.includes('postMessage'));
+  assert.match(html,/Return to Bubbles/);
+  assert.match(html,/href="quantaphi-bubbles:\/\/return"/);
+  assert.match(html,/href="\/bubbles-accounts\.html"/);
+  assert.match(html,/Connection is not confirmed until Bubbles checks/);
+  assert.ok(!html.includes(state));
+  assert.ok(!/Bearer\\s+[A-Za-z0-9._~-]+/.test(html));
+});
+test('callback rejects unregistered states without revealing provider code',async()=>{
+  const state='b'.repeat(43);
+  const configured={CONNECTIONS:{idFromName:name=>name,get:()=>({lookupOAuthState:async()=>{throw Error('state_invalid_or_used');}})}};
+  const response=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/github/callback?state='+state+'&code=secret'),configured,()=>assert.fail());
+  assert.equal(response.status,303);
+  assert.equal(response.headers.get('Location'),PREFIX+'/github/callback?result=failed');
+  assert.ok(!response.headers.get('Location').includes('secret'));
 });
 test('unexpected provider error text is redacted and no token appears in response',async()=>{
   const response=await handleConnections(request('/refresh',{method:'POST',body:{id:'id'}}),env,()=>({refresh:async()=>{throw Error('secret-token-would-be-leaked');}}));
@@ -109,14 +144,14 @@ test('gate fails closed for missing Cloudflare setup, expired credentials and pa
  assert.equal((await handleConnections(request('/gate/status',{authorization:''}),e,
   ()=>assert.fail('must not resolve unauthenticated user'))).status,401);
 });
-test('Cloudflare OAuth callback is fixed-origin and removes incoming code from its HTML',async()=>{
- const response=await handleConnections(request('/cloudflare/callback?code=private-code'),{},()=>assert.fail());
+test('Cloudflare callback response never includes provider code or cross-window messaging',async()=>{
+ const response=await handleConnections(request('/cloudflare/callback?result=received'),{},()=>assert.fail());
  const html=await response.text();
  assert.equal(response.status,200);
- assert.match(html,/bubbles:oauth-return/);
- assert.ok(html.includes("history.replaceState"));
- assert.ok(!html.includes('private-code'));
+ assert.match(html,/Return to Bubbles/);
+ assert.doesNotMatch(html,/BroadcastChannel|postMessage|private-code/);
  assert.ok(response.headers.get('Content-Security-Policy').includes("frame-ancestors 'none'"));
+ assert.equal(response.headers.get('Cache-Control'),'no-store');
 });
 
 test('Cloudflare missing OAuth client registration is not advertised as ready despite a working platform token',async()=>{
@@ -152,16 +187,14 @@ test('Cloudflare account lookup and selection always receive verified wallet use
  assert.equal((await select.json()).storageReady,false);
 });
 
-test('OAuth callback supports same-origin Android broadcast without relaxing CSP or exposing codes in page history',async()=>{
+test('OAuth callback HTML has no browser messaging or provider secrets',async()=>{
  const {callbackPage}=await import('../workers/bubbles-connections/router.mjs');
- const page=await callbackPage('github');
+ const page=callbackPage('github','received');
  const html=await page.text();
  assert.equal(page.status,200);
- assert.match(html,/new BroadcastChannel\('bubbles-oauth-return-v1'\)/);
- assert.match(html,/history\.replaceState\(null,'',location\.pathname\)/);
- assert.match(html,/window\.opener\.postMessage\(result,origin\)/);
- assert.match(html,/channel\.postMessage\(result\)/);
- assert.match(page.headers.get('Content-Security-Policy'),/script-src 'nonce-/);
+ assert.doesNotMatch(html,/BroadcastChannel|postMessage|authorization-code|state=/);
+ assert.match(html,/Return to Bubbles/);
+ assert.match(page.headers.get('Content-Security-Policy'),/default-src 'none'/);
  assert.equal(page.headers.get('Cache-Control'),'no-store');
- assert.equal((await callbackPage('unknown')).status,404);
+ assert.equal(callbackPage('unknown').status,404);
 });

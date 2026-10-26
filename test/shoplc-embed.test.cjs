@@ -13,8 +13,12 @@ test('unrelated HTML and ShopLC scripts keep their upstream frame restriction',a
 test('every registered public chat card can embed on this origin',async()=>{
  const {cards}=await import('../bubbles-card-catalog.mjs');
  for(const card of cards){
+  const url=new URL(card.url,'https://quantaphi.org');
   const r=await request(card.url);
-  assert.equal(r.headers.get('X-Frame-Options'),'SAMEORIGIN',card.title+' '+card.url);
+  // Home and home-query views are not public embeddable cards: preserve
+  // anti-clickjacking DENY until they have dedicated viewer routes.
+  const expected=url.pathname==='/'?'DENY':'SAMEORIGIN';
+  assert.equal(r.headers.get('X-Frame-Options'),expected,card.title+' '+card.url);
  }
 });
 test('owner, connection and unrelated pages retain upstream frame protection',async()=>{

@@ -43,18 +43,33 @@ test('redeeming a pairing does not require an existing wallet in the destination
   const client=new AccountConnections({token:()=>assert.fail('destination has no wallet'),root:{},request:async(url,options)=>{assert.ok(!options.headers.Authorization);return Response.json({ok:true});}});
   assert.equal((await client.call('/pair/redeem',{code:'example'})).ok,true);
 });
-test('OAuth return checks exact popup, callback origin, provider and state before code exchange',async()=>{
+test('OAuth resumes after Android browser return without sharing a popup or code',async()=>{
   const listeners=new Map(),calls=[],popup={location:{},close(){this.closed=true;}};
-  const root={location:{origin:'https://quantaphi.org'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener:(key,value)=>listeners.set(key,value),removeEventListener:key=>listeners.delete(key)};
-  const request=async(url,options)=>{calls.push({url,options});return Response.json(url.endsWith('/start')?{ok:true,authorizationUrl:'https://accounts.google.com/o/oauth2/v2/auth?state=expected-state'}:{ok:true,account:{label:'connected'}});};
-  const client=new AccountConnections({token:()=> 'private-device-token',request,root});let completed=false;
-  await client.connect('google',['drive.read'],()=>completed=true);
-  const listener=listeners.get('message'),message={type:'bubbles:oauth-return',provider:'google',state:'expected-state',code:'authorization-code'};
-  for(const event of [{origin:'https://evil.test',source:popup,data:message},{origin:'https://quantaphi.org',source:{},data:message},{origin:'https://quantaphi.org',source:popup,data:{...message,state:'wrong'}}])await listener(event);
-  assert.equal(calls.length,1);assert.equal(completed,false);
-  await listener({origin:'https://quantaphi.org',source:popup,data:message});
-  assert.equal(calls.length,2);assert.equal(completed,true);assert.equal(popup.closed,true);
-  assert.ok(calls.every(c=>!c.url.includes('private-device-token')&&!c.options.body.includes('private-device-token')));
+  const state='a'.repeat(43);let serverStatus='pending';
+  const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},
+    addEventListener:(key,value)=>listeners.set(key,value),removeEventListener:key=>listeners.delete(key)};
+  const request=async(url,options)=>{
+    calls.push({url,options});
+    if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://accounts.google.com/o/oauth2/v2/auth?state='+state});
+    if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:serverStatus});
+    if(url.endsWith('/handoff/finish'))return Response.json({ok:true,status:'connected',account:{label:'verified'}});
+    throw Error('unexpected endpoint');
+  };
+  const client=new AccountConnections({token:()=> 'private-device-token',request,root});
+  let completed=null;
+  await client.connect('google',['drive.read'],(error,account)=>{completed={error,account};});
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(completed,null);
+  assert.match(popup.location.href,/accounts.google.com/);
+  serverStatus='received';
+  listeners.get('focus')();
+  await new Promise(resolve=>setImmediate(resolve));
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(completed.account.label,'verified');
+  assert.equal(completed.error,null);
+  assert.equal(popup.closed,true);
+  assert.ok(calls.some(c=>c.url.endsWith('/handoff/finish')));
+  assert.ok(calls.every(c=>!c.url.endsWith('/complete')&&!String(c.options.body).includes('authorization-code')));
 });
 test('unsafe authorization URL closes the popup without navigating to it',async()=>{
   const popup={location:{},close(){this.closed=true;}},root={open:()=>popup};
@@ -181,31 +196,81 @@ test('Cloudflare account discovery is verified with the users token and strips p
  assert.ok(!JSON.stringify(result).includes('SHOULD_NOT_LEAK'));
 });
 
-test('Android callback broadcast accepts only matching OAuth provider and state',async()=>{
- const listeners=new Map(),calls=[],channels=[],popup={location:{},close(){this.closed=true;}};
- class Channel {
-   constructor(name){assert.equal(name,'bubbles-oauth-return-v1');channels.push(this);}
-   close(){this.closed=true;}
- }
- const root={open:()=>popup,BroadcastChannel:Channel,setTimeout:()=>1,clearTimeout(){},
-   addEventListener:(key,value)=>listeners.set(key,value),removeEventListener:key=>listeners.delete(key)};
+test('separate Chrome context needs no BroadcastChannel or window.opener',async()=>{
+ const popup={location:{},close(){this.closed=true;}},calls=[];
+ const state='b'.repeat(43);
+ const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},
+   BroadcastChannel:class{constructor(){throw Error('should not create a channel');}},
+   addEventListener(){},removeEventListener(){}};
  const client=new AccountConnections({root,token:()=> 'private-device-token',request:async(url)=>{
-   calls.push(url);return Response.json(url.endsWith('/start')
-     ?{ok:true,authorizationUrl:'https://github.com/login/oauth/authorize?state=expected'}
-     :{ok:true,account:{label:'connected'}});
+   calls.push(url);
+   if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://github.com/login/oauth/authorize?state='+state});
+   if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:'received'});
+   if(url.endsWith('/handoff/finish'))return Response.json({ok:true,status:'connected',account:{label:'github-owner'}});
+   throw Error('unexpected request');
  }});
  let completion=0;
- await client.connect('github',['repository.read'],()=>completion++);
- const channel=channels[0];
- for(const data of [
-   {type:'bubbles:oauth-return',provider:'cloudflare',state:'expected',code:'bad'},
-   {type:'bubbles:oauth-return',provider:'github',state:'wrong',code:'bad'}
- ])await channel.onmessage({data});
- assert.equal(calls.length,1);
- await channel.onmessage({data:{type:'bubbles:oauth-return',provider:'github',state:'expected',code:'real-code'}});
+ await client.connect('github',['repository.read'],(error,account)=>{
+   assert.equal(error,null);assert.equal(account.label,'github-owner');completion++;
+ });
  await new Promise(resolve=>setImmediate(resolve));
- assert.equal(calls.length,2);
+ await new Promise(resolve=>setImmediate(resolve));
  assert.equal(completion,1);
- assert.equal(channel.closed,true);
  assert.equal(popup.closed,true);
+ assert.ok(calls.includes('/api/bubbles/connections/handoff/finish'));
+});
+
+test('Android popup-blocked viewer can resume after returning from external Chrome',async()=>{
+  const state='z'.repeat(43),data=new Map(),calls=[];let serverStatus='pending',navigated='';
+  const root={open:()=>null,location:{assign:url=>{navigated=url;}},sessionStorage:{
+    getItem:key=>data.get(key)||null,setItem:(key,value)=>data.set(key,value),removeItem:key=>data.delete(key)
+  },setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
+  const request=async(url,options)=>{
+    calls.push({url,body:options.body});
+    if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://github.com/login/oauth/authorize?state='+state,expiresIn:300});
+    if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:serverStatus});
+    if(url.endsWith('/handoff/finish'))return Response.json({ok:true,status:'connected',account:{label:'verified-github'}});
+    throw Error('unexpected route');
+  };
+  const first=new AccountConnections({token:()=> 'wallet-bound-session',root,request});
+  await first.connect('github',['repository.read'],()=>assert.fail('old viewer was navigated away'));
+  assert.match(navigated,/^https:\/\/github.com\/login\/oauth\/authorize/);
+  assert.ok(data.has('bubbles:oauth-pending:v1'));
+  assert.ok(!data.get('bubbles:oauth-pending:v1').includes('wallet-bound-session'));
+  assert.ok(!data.get('bubbles:oauth-pending:v1').includes('code'));
+  first.cleanup(); // Android destroys the original page on external navigation.
+  serverStatus='received';
+  const restored=new AccountConnections({token:()=> 'wallet-bound-session',root,request});
+  let outcome=null;
+  assert.equal(restored.resumePending((error,account)=>outcome={error,account}),true);
+  await new Promise(resolve=>setImmediate(resolve));
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(outcome.error,null);
+  assert.equal(outcome.account.label,'verified-github');
+  assert.equal(data.has('bubbles:oauth-pending:v1'),false);
+  assert.ok(calls.some(x=>x.url.endsWith('/handoff/finish')));
+});
+test('popup-blocked viewer refuses redirect when it cannot preserve authorization state',async()=>{
+  const root={open:()=>null,location:{assign:()=>assert.fail('must not navigate without session storage')}};
+  const client=new AccountConnections({token:()=> 'wallet',root,request:()=>assert.fail('must not start OAuth')});
+  await assert.rejects(client.connect('github',['repository.read'],()=>{}),/Open Account Connections in Chrome/);
+});
+
+test('Android return accepts a sealed connected receipt without repeating token exchange',async()=>{
+ const state='r'.repeat(43),popup={location:{},close(){this.closed=true;}},calls=[];
+ const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
+ const client=new AccountConnections({root,token:()=> 'wallet-bound-session',request:async url=>{
+  calls.push(url);
+  if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://github.com/login/oauth/authorize?state='+state});
+  if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:'connected',account:{label:'saved-github'}});
+  if(url.endsWith('/handoff/finish'))throw Error('must not exchange a second time');
+  throw Error('unexpected route');
+ }});
+ let completed=null;
+ await client.connect('github',['repository.read'],(error,account)=>{completed={error,account};});
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(completed.error,null);
+ assert.equal(completed.account.label,'saved-github');
+ assert.equal(popup.closed,true);
+ assert.equal(calls.filter(x=>x.endsWith('/handoff/finish')).length,0);
 });

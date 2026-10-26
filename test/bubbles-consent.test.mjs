@@ -269,3 +269,110 @@ test('Cloudflare account selection is isolated by verified wallet, token and sel
  await service.disconnect({userId:'alice',id:connection.id});
  assert.equal(await db.get((await service.namespace('alice'))+'cloudflare:selected:'+connection.id),undefined);
 });
+
+test('cross-browser handoff remains bound to the initiating wallet session',async()=>{
+  const f=fixture(),state=await f.begin();
+  assert.deepEqual(await f.service.handoffStatus({...f.input,state}),{status:'pending'});
+  await assert.rejects(f.service.handoffStatus({...f.input,state,sessionId:'another-session'}),/callback_session_mismatch/);
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'provider-code'});
+  assert.deepEqual(await f.service.handoffStatus({...f.input,state}),{status:'received'});
+  await assert.rejects(f.service.handoff({userId:'alice',provider:'google',state,code:'replayed'}),/callback_already_received/);
+  assert.equal(JSON.stringify([...f.db.rows]).includes('provider-code'),false);
+});
+test('cross-browser handoff rejects wrong owner, provider and expired state',async()=>{
+  const f=fixture(),state=await f.begin();
+  await assert.rejects(f.service.handoff({userId:'bob',provider:'google',state,code:'code'}),/state_invalid_or_used/);
+  await assert.rejects(f.service.handoff({userId:'alice',provider:'github',state,code:'code'}),/state_invalid_or_used/);
+  f.setTime(301000);
+  await assert.rejects(f.service.handoff({userId:'alice',provider:'google',state,code:'code'}),/state_invalid_or_used/);
+});
+
+test('isolated browser callback completes exactly once through original verified session',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'code-from-external-chrome'});
+  await assert.rejects(f.service.finishHandoff({...auth,sessionId:'other-device'}),/callback_session_mismatch/);
+  await assert.rejects(f.service.finishHandoff({...auth,provider:'github'}),/callback_session_mismatch/);
+  const result=await f.service.finishHandoff(auth);
+  assert.equal(result.status,'connected');
+  assert.equal(result.account.status,'connected');
+  assert.equal(f.calls,1);
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  assert.equal((await f.service.finishHandoff(auth)).status,'connected');
+  assert.equal(f.calls,1);
+  assert.equal(JSON.stringify([...f.db.rows]).includes('code-from-external-chrome'),false);
+});
+test('declined authorization never exchanges a provider code',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,error:true});
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'declined'});
+  assert.deepEqual(await f.service.finishHandoff(auth),{status:'declined'});
+  assert.equal(f.calls,0);
+});
+test('concurrent handoff finishes cannot exchange twice',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'single-use-code'});
+  const outcomes=await Promise.allSettled([f.service.finishHandoff(auth),f.service.finishHandoff(auth)]);
+  assert.equal(outcomes.filter(x=>x.status==='rejected').length,0,JSON.stringify(outcomes.map(x=>x.status==='rejected'?{error:x.reason?.message}:x.value)));
+  assert.ok(outcomes.some(x=>x.value.status==='connected'));
+  assert.ok(outcomes.every(x=>['connected','pending'].includes(x.value.status)));
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  assert.equal(f.calls,1);
+});
+
+test('polls stay pending while the first Android handoff exchanges its provider code',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'single-use-code'});
+  let entered,release;
+  const exchanging=new Promise(resolve=>{entered=resolve;});
+  const continueExchange=new Promise(resolve=>{release=resolve;});
+  const original=f.adapter.exchange;
+  f.adapter.exchange=async args=>{entered();await continueExchange;return original(args);};
+  const first=f.service.finishHandoff(auth);
+  await exchanging; // OAuth state is already consumed; provider request is in flight.
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'pending'});
+  assert.deepEqual(await f.service.finishHandoff(auth),{status:'pending'});
+  await assert.rejects(f.service.handoffStatus({...auth,sessionId:'different-session'}),/callback_session_mismatch/);
+  release();
+  const completed=await first;
+  assert.equal(completed.status,'connected');
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  assert.equal(f.calls,1);
+  assert.equal([...f.db.rows.keys()].filter(k=>k.includes('handoff-inflight:')).length,0);
+});
+
+test('completed external-browser handoff survives a lost completion response',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'external-code'});
+  const first=await f.service.finishHandoff(auth);
+  assert.equal(first.status,'connected');
+  const recovered=await f.service.handoffStatus(auth);
+  assert.equal(recovered.status,'connected');
+  assert.deepEqual(recovered.account,first.account);
+  assert.deepEqual(await f.service.finishHandoff(auth),first);
+  assert.equal(f.calls,1);
+  await assert.rejects(f.service.handoffStatus({...auth,sessionId:'other-session'}),/callback_session_mismatch/);
+  await assert.rejects(f.service.finishHandoff({...auth,provider:'github'}),/callback_session_mismatch/);
+  f.setTime(301000);
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
+});
+
+test('recovered OAuth success never survives account disconnect',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'code'});
+  const result=await f.service.finishHandoff(auth);
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  await f.service.disconnect({userId:'alice',id:result.account.id});
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
+  assert.deepEqual(await f.service.finishHandoff(auth),{status:'expired'});
+  assert.equal(f.calls,1);
+});
+test('recovered OAuth success cannot impersonate a later connection revision',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'old-code'});
+  const old=await f.service.finishHandoff(auth);
+  assert.equal(old.status,'connected');
+  const newer=await f.finish(await f.begin());
+  assert.equal(newer.id,old.account.id);
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
+  assert.equal(f.calls,2);
+});
