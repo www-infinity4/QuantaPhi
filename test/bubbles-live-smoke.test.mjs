@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {runSmoke} from '../scripts/bubbles-live-smoke.mjs';
 
 const healthy={ok:true,service:'bubbles-tools',tools:{chat:true,speech:true}};
-function stub({authorizedLeak=false,chatAnswer='The smallest next step is to run the owner adapter tests; no code was edited.',staleAdapter=false}={}){
+function stub({authorizedLeak=false,chatAnswer='The smallest next step is to run the owner adapter tests; no code was edited.',staleAdapter=false,scopeServer=6,scopeRequested=6,scopeMalformed=false}={}){
  const calls=[];
  return {
   calls,
@@ -14,6 +14,7 @@ function stub({authorizedLeak=false,chatAnswer='The smallest next step is to run
    if(path==='/work/tickets/list')return Response.json(authorizedLeak?{ok:true,tickets:[]}:{ok:false,error:'forbidden'},{status:authorizedLeak?200:404});
    if(path==='/bubbles.html')return new Response('<script src="/bubbles-ai.js?v=new"></script><script src="/bubbles-brain-actions.js?v=new"></script>',{status:200});
    if(path==='/bubbles-brain-actions.js')return new Response(staleAdapter?'outdated':'resolveFollowupRequest makeJobs',{status:200});
+   if(path==='/api/bubbles/connections/scope-inventory')return Response.json(scopeMalformed?{ok:true,configured:true,scopeInventory:{serverAllowlistCount:6,signInRequestScopeCount:386}}:{ok:true,configured:true,clientIdPrefix:'8f676e020d9ff91a',scopeInventory:{serverAllowlistCount:scopeServer,signInRequestScopeCount:scopeRequested}});
    if(path==='/v1/assist'&&options.headers?.Origin?.includes('untrusted'))return Response.json({ok:false,error:'origin_not_allowed'},{status:403});
    if(path==='/v1/assist')return Response.json({ok:true,model:'@cf/openai/gpt-oss-120b',output:chatAnswer,receipt:{status:'complete',minted:false,repositoryActionsVerified:false}});
    throw Error('Unexpected '+path);
@@ -42,7 +43,11 @@ test('a successful uncredentialed Brain read fails closed',async()=>{
 test('real-mode public site, checked owner adapter and concrete GPT response must all agree',async()=>{
  const mock=stub();const report=await runSmoke({fetcher:mock.fetcher,full:true});
  assert.equal(report.status,'pass');
- assert.equal(mock.calls.length,6);
+ assert.equal(mock.calls.length,7);
+ assert.deepEqual(report.checks.find(x=>x.name==='cloudflare_scope_inventory'),{
+  name:'cloudflare_scope_inventory',result:'observed',http:200,
+  serverAllowlistCount:6,signInRequestScopeCount:6,fullScopeRequestConfigured:false,
+  clientRegistrationVerified:false,ownerConsentVerified:false});
  assert.ok(report.checks.some(x=>x.name==='live_gpt_reply'&&x.result==='pass'));
 });
 
@@ -65,4 +70,31 @@ test('live Bubbles must not suggest invented Python owner-adapter modules',async
  const result=await runSmoke({fetcher:mock.fetcher,full:true});
  assert.equal(result.status,'failed');
  assert.match(result.error,/fabricated Python module/);
+});
+
+test('live smoke records configured 386 requests without claiming registration or consent',async()=>{
+ const mock=stub({scopeServer:386,scopeRequested:386});
+ const report=await runSmoke({fetcher:mock.fetcher,full:true});
+ assert.equal(report.status,'pass');
+ const proof=report.checks.find(x=>x.name==='cloudflare_scope_inventory');
+ assert.equal(proof.fullScopeRequestConfigured,true);
+ assert.equal(proof.clientRegistrationVerified,false);
+ assert.equal(proof.ownerConsentVerified,false);
+});
+
+test('live smoke distinguishes stale OAuth request from complete server allowlist',async()=>{
+ const mock=stub({scopeServer:386,scopeRequested:6});
+ const report=await runSmoke({fetcher:mock.fetcher,full:true});
+ assert.equal(report.status,'pass');
+ const proof=report.checks.find(x=>x.name==='cloudflare_scope_inventory');
+ assert.equal(proof.serverAllowlistCount,386);
+ assert.equal(proof.signInRequestScopeCount,6);
+ assert.equal(proof.fullScopeRequestConfigured,false);
+});
+
+test('live smoke rejects inconsistent Cloudflare scope counts',async()=>{
+ const mock=stub({scopeMalformed:true});
+ const report=await runSmoke({fetcher:mock.fetcher,full:true});
+ assert.equal(report.status,'failed');
+ assert.match(report.error,/malformed or inconsistent/);
 });
