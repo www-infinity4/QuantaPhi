@@ -125,6 +125,16 @@ export class ConsentService {
         await tx.put(receiptKey,{...await this.vault.seal(receipt,receiptKey),expiresAt:receipt.expiresAt});
       });
       return {status:'connected',account};
+    } catch(error) {
+      if(error?.message==='state_invalid_or_used') {
+        // Two authenticated polls may race to consume one callback. The
+        // winner alone exchanges the provider code; the loser should keep
+        // polling rather than surface a false sign-in failure.
+        const recovered=await this.handoffStatus(input);
+        if(recovered.status==='connected')return recovered;
+        if(recovered.status==='expired')return {status:'pending'};
+      }
+      throw error;
     } finally {
       await this.storage.transaction(async tx=>{await tx.delete(key);});
     }
