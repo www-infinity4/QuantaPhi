@@ -3,105 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-26T00:29:39.129294Z",
+  "checked_at": "2026-10-26T05:08:28.791711Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "grizzlies vs kings",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-26T00:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/keegan-murray-officially-tonight-stiff-233757761.html",
-        "https://www.hoopsrumors.com/2026/10/pacific-notes-murray-warriors-lendeborg-timme.html",
-        "https://www.commercialappeal.com/story/sports/nba/grizzlies/2026/10/25/memphis-grizzlies-sacramento-kings-score-cam-boozer-highlights--live/92432590007/"
-      ]
-    },
-    {
-      "query": "lamelo ball",
-      "approx_searches": "5000+",
-      "published_at": "2026-10-26T00:10:00Z",
-      "related_news_urls": [
-        "https://www.startribune.com/minnesota-timberwolves-toronto-raptors-target-center-lamelo-ball-stats-anthony-edwards-chris-finch/601902946",
-        "https://www.nytimes.com/athletic/7714081/2026/10/22/lamelo-ball-giannis-nba-debuts-the-bounce/",
-        "https://www.nba.com/watch/video/alt-angle-lamelo-ball-made-shot-anthony-edwards-celebration?plsrc=nba&collection=must-watch-videos"
-      ]
-    },
-    {
-      "query": "76ers game",
-      "approx_searches": "10000+",
-      "published_at": "2026-10-26T00:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50272945/embiid-posts-triple-double-james-less-76ers-stay-unbeaten",
-        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-overcome-22-rebound-deficit-without-lebron/761373/",
-        "https://www.jsonline.com/story/sports/nba/bucks/2026/10/24/bucks-vs-76ers-team-feels-sense-of-urgency-after-two-straight-losses/92401319007/"
-      ]
-    },
-    {
-      "query": "ken jeong",
-      "approx_searches": "500+",
-      "published_at": "2026-10-26T00:10:00Z",
-      "related_news_urls": [
-        "https://people.com/celebrity-ken-jeong-wife-said-he-has-a-face-for-audio-exclusive-12190021",
-        "https://people.com/danny-pudi-had-a-different-experience-on-community-than-his-costars-here-is-why-exclusive-12186345"
-      ]
-    },
-    {
-      "query": "terrence shannon jr.",
-      "approx_searches": "500+",
-      "published_at": "2026-10-26T00:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/one-underrated-timberwolves-wing-gets-130036612.html",
-        "https://sportsnaut.com/nba/timberwolves-coach-chris-finch-admits-he-made-a-mistake"
-      ]
-    },
-    {
-      "query": "querétaro - cruz azul",
+      "query": "kody brown",
       "approx_searches": "200+",
-      "published_at": "2026-10-26T00:10:00Z",
+      "published_at": "2026-10-26T04:40:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17426445/queretaro-vs-cruz-azul-alineaciones-posibles-jornada-14",
-        "https://www.lavozarizona.com/story/deportes/futbol/2026/10/24/queretaro-vs-cruz-azul-previa-hora-canal-fecha-apertura-2026-liga-mx/92403086007/",
-        "https://www.si.com/es-us/lesionados-y-suspendidos-para-el-partido-queretaro-vs-cruz-azul"
+        "https://www.yahoo.com/entertainment/tv/articles/em-sister-wives-em-meri-030000601.html",
+        "https://www.yahoo.com/entertainment/tv/articles/sister-wives-star-janelle-brown-143934425.html",
+        "https://www.imdb.com/news/ni66078349/?ref_=nmnw_art_perm"
       ]
     },
     {
-      "query": "is taylor swift in seattle for chiefs game",
+      "query": "kirill kaprizov",
       "approx_searches": "200+",
-      "published_at": "2026-10-26T00:10:00Z",
+      "published_at": "2026-10-26T04:40:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/sports/nfl/chiefs/2026/10/25/taylor-swift-chiefs-seahawks/92415297007/",
-        "https://people.com/taylor-swift-brought-showgirl-style-chiefs-home-game-against-chargers-12154783",
-        "https://www.elle.com/culture/celebrities/a74163901/taylor-swift-photos-travis-kelce-chiefs-chargers-home-game-october-2026/"
+        "https://www.nytimes.com/athletic/7721921/2026/10/25/wild-kraken-blake-coleman-penalty-kill/",
+        "https://www.espn.com/nhl/recap/_/gameId/401892577",
+        "https://www.startribune.com/minnesota-wild-seattle-kraken-game-score-quinn-hughes-contract-kirill-kaprizov-stats-nhl-standings/601900463"
       ]
     },
     {
-      "query": "kenneth walker",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-26T00:00:00Z",
+      "query": "laika studios",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T04:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50233140/seattle-seahawks-kansas-city-chiefs-kenneth-walker",
-        "https://sports.yahoo.com/articles/seahawks-kenneth-walker-decision-draws-000749032.html",
-        "https://www.arrowheadpride.com/kansas-city-chiefs-news/213984/kenneth-walker-treating-seattle-return-any-other-week"
+        "https://www.nytimes.com/2026/10/22/movies/wildwood-review.html",
+        "https://www.hollywoodreporter.com/movies/movie-features/wildwood-director-travis-knight-films-journey-interview-1236736246/",
+        "https://www.cbc.ca/news/entertainment/wildwood-review-laika-9.7393321"
       ]
     },
     {
-      "query": "phantom blade zero",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-26T00:00:00Z",
+      "query": "attack on titan",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T04:30:00Z",
       "related_news_urls": [
-        "https://www.ign.com/articles/phantom-blade-zero-review",
-        "https://mp1st.com/news/phantom-blade-zero-preload-time-clocks-145-gb-pc-requirements-listed",
-        "https://www.pushsquare.com/news/2026/10/phantom-blade-zero-physical-version-set-for-2027-3-ps5-editions-revealed"
+        "https://www.cbr.com/attack-on-titan-officially-returns-december-9/",
+        "https://www.imdb.com/news/ni66067721/?ref_=int_nwr_1",
+        "https://www.polygon.com/vinland-saga-season-3-creator-update-not-in-production/"
       ]
     },
     {
-      "query": "dolar hoje",
+      "query": "cyclist",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T04:20:00Z",
+      "related_news_urls": [
+        "https://ktla.com/news/california/2-killed-after-car-strikes-cyclists-drags-victim-over-a-mile-in-southern-california/",
+        "https://www.nbclosangeles.com/video/news/local/suspected-dui-driver-arrested-after-2-cyclists-killed-in-montclair/3960608/",
+        "https://www.latimes.com/california/story/2026-10-25/two-bicyclists-killed-by-alleged-drunk-driver-during-pre-halloween-ride"
+      ]
+    },
+    {
+      "query": "xbox fifty new games release",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T04:20:00Z",
+      "related_news_urls": [
+        "https://www.purexbox.com/news/2026/10/these-40plus-games-are-coming-to-xbox-next-week-october-26-31",
+        "https://news.xbox.com/en-us/2026/10/23/next-week-on-xbox-new-games-for-october-26-to-30/",
+        "https://en.gamegpu.com/news/igry/polzovateli-konsolej-xbox-poluchat-50-igr-s-26-po-31-oktyabrya"
+      ]
+    },
+    {
+      "query": "canelo fight",
       "approx_searches": "500+",
-      "published_at": "2026-10-26T00:00:00Z",
+      "published_at": "2026-10-26T04:10:00Z",
       "related_news_urls": [
-        "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/dolar-fecha-abaixo-de-r-5-e-recua-158-na-semana",
-        "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/eleicoes-agitam-a-bolsa-petrobras-dispara-e-risco-nos-eua-preocupa-veja-as-mais-lidas-da-semana/",
-        "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-reta-final-do-2o-turno-petroleo-e-defasagem-do-diesel-2101664"
+        "https://www.badlefthook.com/boxing-schedule/119946/how-to-watch-canelo-alvarez-christian-mbilli-rafael-espinoza-jaime-munguia-streaming-tv-schedule-boxing-news-2026",
+        "https://www.nytimes.com/athletic/7713543/2026/10/22/canelo-alvarez-christian-mbilli-saudi-fight-safety/",
+        "https://www.boxingnews24.com/2026/10/canelo-alvarez-admits-the-blueprint-why-playing-smart-means-surviving-christian-mbilli/"
+      ]
+    },
+    {
+      "query": "canelo",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T04:10:00Z",
+      "related_news_urls": [
+        "https://www.si.com/mx/box/canelo-llega-a-arabia-saudita-entre-gritos-de-mexico-mexico-para-enfrentar-a-mbilli",
+        "https://fightnews.com/detras-de-escena-saul-canelo-alvarez-y-christian-mbilli-con-dazn/199032",
+        "https://www.mediotiempo.com/mas-deportes/box/canelo-alvarez-ya-llego-riad-pelea-vs-christian-mbilli-en-medio-de-alertas-de-posibles-ataques"
+      ]
+    },
+    {
+      "query": "anaheim",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T04:00:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/california/story/2026-10-25/man-is-found-dead-near-entrance-to-disneyland-police-say",
+        "https://www.yahoo.com/news/articles/dead-body-found-next-disneyland-005354044.html",
+        "https://nypost.com/2026/10/25/us-news/body-found-near-disneyland-resort-sign-in-anaheim-police-investigating/"
+      ]
+    },
+    {
+      "query": "sports",
+      "approx_searches": "20000+",
+      "published_at": "2026-10-26T03:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/wnba/story/_/id/50278436/place-unclear-game-6-valkyries-dream-wnba-finals",
+        "https://www.nytimes.com/athletic/7721369/2026/10/24/atlanta-dream-game-6-state-farm-arena-wnba-finals/",
+        "https://sports.yahoo.com/wnba/breaking-news/article/wnba-finals-league-reportedly-unsure-where-or-when-game-6-will-be-held-due-to-fan-demand-scheduling-complications-185227169.html"
       ]
     }
   ]
