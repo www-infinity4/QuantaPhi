@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-10-26T00:29:39.129294Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "grizzlies vs kings",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-26T00:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/keegan-murray-officially-tonight-stiff-233757761.html",
+        "https://www.hoopsrumors.com/2026/10/pacific-notes-murray-warriors-lendeborg-timme.html",
+        "https://www.commercialappeal.com/story/sports/nba/grizzlies/2026/10/25/memphis-grizzlies-sacramento-kings-score-cam-boozer-highlights--live/92432590007/"
+      ]
+    },
+    {
+      "query": "lamelo ball",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-26T00:10:00Z",
+      "related_news_urls": [
+        "https://www.startribune.com/minnesota-timberwolves-toronto-raptors-target-center-lamelo-ball-stats-anthony-edwards-chris-finch/601902946",
+        "https://www.nytimes.com/athletic/7714081/2026/10/22/lamelo-ball-giannis-nba-debuts-the-bounce/",
+        "https://www.nba.com/watch/video/alt-angle-lamelo-ball-made-shot-anthony-edwards-celebration?plsrc=nba&collection=must-watch-videos"
+      ]
+    },
+    {
+      "query": "76ers game",
+      "approx_searches": "10000+",
+      "published_at": "2026-10-26T00:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50272945/embiid-posts-triple-double-james-less-76ers-stay-unbeaten",
+        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-overcome-22-rebound-deficit-without-lebron/761373/",
+        "https://www.jsonline.com/story/sports/nba/bucks/2026/10/24/bucks-vs-76ers-team-feels-sense-of-urgency-after-two-straight-losses/92401319007/"
+      ]
+    },
+    {
+      "query": "ken jeong",
+      "approx_searches": "500+",
+      "published_at": "2026-10-26T00:10:00Z",
+      "related_news_urls": [
+        "https://people.com/celebrity-ken-jeong-wife-said-he-has-a-face-for-audio-exclusive-12190021",
+        "https://people.com/danny-pudi-had-a-different-experience-on-community-than-his-costars-here-is-why-exclusive-12186345"
+      ]
+    },
+    {
+      "query": "terrence shannon jr.",
+      "approx_searches": "500+",
+      "published_at": "2026-10-26T00:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/one-underrated-timberwolves-wing-gets-130036612.html",
+        "https://sportsnaut.com/nba/timberwolves-coach-chris-finch-admits-he-made-a-mistake"
+      ]
+    },
+    {
+      "query": "querétaro - cruz azul",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T00:10:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17426445/queretaro-vs-cruz-azul-alineaciones-posibles-jornada-14",
+        "https://www.lavozarizona.com/story/deportes/futbol/2026/10/24/queretaro-vs-cruz-azul-previa-hora-canal-fecha-apertura-2026-liga-mx/92403086007/",
+        "https://www.si.com/es-us/lesionados-y-suspendidos-para-el-partido-queretaro-vs-cruz-azul"
+      ]
+    },
+    {
+      "query": "is taylor swift in seattle for chiefs game",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T00:10:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/nfl/chiefs/2026/10/25/taylor-swift-chiefs-seahawks/92415297007/",
+        "https://people.com/taylor-swift-brought-showgirl-style-chiefs-home-game-against-chargers-12154783",
+        "https://www.elle.com/culture/celebrities/a74163901/taylor-swift-photos-travis-kelce-chiefs-chargers-home-game-october-2026/"
+      ]
+    },
+    {
+      "query": "kenneth walker",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-26T00:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50233140/seattle-seahawks-kansas-city-chiefs-kenneth-walker",
+        "https://sports.yahoo.com/articles/seahawks-kenneth-walker-decision-draws-000749032.html",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-news/213984/kenneth-walker-treating-seattle-return-any-other-week"
+      ]
+    },
+    {
+      "query": "phantom blade zero",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-26T00:00:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/articles/phantom-blade-zero-review",
+        "https://mp1st.com/news/phantom-blade-zero-preload-time-clocks-145-gb-pc-requirements-listed",
+        "https://www.pushsquare.com/news/2026/10/phantom-blade-zero-physical-version-set-for-2027-3-ps5-editions-revealed"
+      ]
+    },
+    {
+      "query": "dolar hoje",
+      "approx_searches": "500+",
+      "published_at": "2026-10-26T00:00:00Z",
+      "related_news_urls": [
+        "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/dolar-fecha-abaixo-de-r-5-e-recua-158-na-semana",
+        "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/eleicoes-agitam-a-bolsa-petrobras-dispara-e-risco-nos-eua-preocupa-veja-as-mais-lidas-da-semana/",
+        "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-reta-final-do-2o-turno-petroleo-e-defasagem-do-diesel-2101664"
+      ]
+    }
+  ]
+}

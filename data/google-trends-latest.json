@@ -3,107 +3,105 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-25T22:07:15.479692Z",
+  "checked_at": "2026-10-26T00:29:39.129294Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ted cruz",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-25T21:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/10/25/us/politics/he-took-big-risks-to-make-billions-he-wants-georgia-voters-to-bet-on-him.html",
-        "https://apnews.com/article/georgia-governor-jackson-lance-bottoms-trump-billionaire-e8713a409979ce4012e3eff0df18ccb8",
-        "https://www.ajc.com/politics/2026/10/georgia-election-poll-governor-us-senate/"
-      ]
-    },
-    {
-      "query": "trent alexander-arnold",
-      "approx_searches": "500+",
-      "published_at": "2026-10-25T21:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7710420/2026/10/22/alexander-arnold-real-madrid-liverpool-transfer-mourinho/",
-        "https://www.si.com/soccer/trent-alexander-arnold-stance-real-madrid-exit-wild-transfer-rumors",
-        "https://talksport.com/football/4664836/trent-alexander-arnold-real-madrid-liverpool-charlie-austin/"
-      ]
-    },
-    {
-      "query": "sam laporta",
+      "query": "grizzlies vs kings",
       "approx_searches": "2000+",
-      "published_at": "2026-10-25T21:40:00Z",
+      "published_at": "2026-10-26T00:10:00Z",
       "related_news_urls": [
-        "https://www.cleveland.com/news/2026/10/dan-campbell-suddenly-ends-lions-news-conference-after-one-topic-keeps-coming-up.html",
-        "https://www.nytimes.com/athletic/7718014/2026/10/23/sam-laporta-lions-contract-extension-comments-barstool/",
-        "https://www.freep.com/story/sports/columnists/carlos-monarrez/2026/10/23/detroit-lions-stung-by-sam-laporta-midseason-contract-gripes/92380235007/"
+        "https://sports.yahoo.com/articles/keegan-murray-officially-tonight-stiff-233757761.html",
+        "https://www.hoopsrumors.com/2026/10/pacific-notes-murray-warriors-lendeborg-timme.html",
+        "https://www.commercialappeal.com/story/sports/nba/grizzlies/2026/10/25/memphis-grizzlies-sacramento-kings-score-cam-boozer-highlights--live/92432590007/"
       ]
     },
     {
-      "query": "gabriel jesus",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-25T21:40:00Z",
+      "query": "lamelo ball",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-26T00:10:00Z",
       "related_news_urls": [
-        "https://www.barcablaugranes.com/barcelona-la-liga/135954/gabriel-jesus-it-is-truly-a-dream-to-play-in-el-clasico",
-        "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/10/arsenal-transfers-summer-sale-labelled-great-success-at-new-club",
-        "https://barcauniversal.com/barcelona-newcomer-once-again-proves-he-has-been-a-bargain-after-impressive-display-vs-real-betis/"
+        "https://www.startribune.com/minnesota-timberwolves-toronto-raptors-target-center-lamelo-ball-stats-anthony-edwards-chris-finch/601902946",
+        "https://www.nytimes.com/athletic/7714081/2026/10/22/lamelo-ball-giannis-nba-debuts-the-bounce/",
+        "https://www.nba.com/watch/video/alt-angle-lamelo-ball-made-shot-anthony-edwards-celebration?plsrc=nba&collection=must-watch-videos"
       ]
     },
     {
-      "query": "camavinga",
+      "query": "76ers game",
+      "approx_searches": "10000+",
+      "published_at": "2026-10-26T00:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50272945/embiid-posts-triple-double-james-less-76ers-stay-unbeaten",
+        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-overcome-22-rebound-deficit-without-lebron/761373/",
+        "https://www.jsonline.com/story/sports/nba/bucks/2026/10/24/bucks-vs-76ers-team-feels-sense-of-urgency-after-two-straight-losses/92401319007/"
+      ]
+    },
+    {
+      "query": "ken jeong",
       "approx_searches": "500+",
-      "published_at": "2026-10-25T21:40:00Z",
+      "published_at": "2026-10-26T00:10:00Z",
       "related_news_urls": [
-        "https://www.365scores.com/es/news/por-que-no-juega-camavinga-vs-barcelona/",
-        "https://as.com/futbol/primera/alineacion-posible-del-real-madrid-contra-el-barcelona-en-laliga-ea-sports-f202610-n/",
-        "https://es-us.noticias.yahoo.com/deportes/ferm%C3%ADn-l%C3%B3pez-critica-jose-mourinho-214650905.html"
+        "https://people.com/celebrity-ken-jeong-wife-said-he-has-a-face-for-audio-exclusive-12190021",
+        "https://people.com/danny-pudi-had-a-different-experience-on-community-than-his-costars-here-is-why-exclusive-12186345"
       ]
     },
     {
-      "query": "max verstappen",
+      "query": "terrence shannon jr.",
       "approx_searches": "500+",
-      "published_at": "2026-10-25T21:40:00Z",
+      "published_at": "2026-10-26T00:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/f1/story/_/id/50277461/max-verstappen-hits-back-cota-boss-able-walk-drove-my-car",
-        "https://sports.yahoo.com/articles/max-verstappen-reacts-cota-boss-092316018.html",
-        "https://www.bbc.com/sport/formula1/articles/c8r4y3gpwkl2o"
+        "https://sports.yahoo.com/articles/one-underrated-timberwolves-wing-gets-130036612.html",
+        "https://sportsnaut.com/nba/timberwolves-coach-chris-finch-admits-he-made-a-mistake"
       ]
     },
     {
-      "query": "darryn peterson",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-25T21:40:00Z",
+      "query": "querétaro - cruz azul",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T00:10:00Z",
       "related_news_urls": [
-        "https://www.sltrib.com/sports/jazz/2026/10/21/our-jazz-beat-writer-answers-your/",
-        "https://utahjazz.com/news/utah-jazz-preseason-takeaways-darryn-petersons-debut-ace-baileys-defense-and-more",
-        "https://sports.yahoo.com/articles/utah-jazz-must-let-darryn-120006879.html"
+        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17426445/queretaro-vs-cruz-azul-alineaciones-posibles-jornada-14",
+        "https://www.lavozarizona.com/story/deportes/futbol/2026/10/24/queretaro-vs-cruz-azul-previa-hora-canal-fecha-apertura-2026-liga-mx/92403086007/",
+        "https://www.si.com/es-us/lesionados-y-suspendidos-para-el-partido-queretaro-vs-cruz-azul"
       ]
     },
     {
-      "query": "river vs racing",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-25T21:40:00Z",
+      "query": "is taylor swift in seattle for chiefs game",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T00:10:00Z",
       "related_news_urls": [
-        "https://www.sportingnews.com/us-es/futbol/news/como-salio-river-racing-resultado-goles-clausura-2026/ad5ae199b6d859699a884165",
-        "https://www.ole.com.ar/river-plate/river-plate-lista-concentrados-racing-marcos-acuna_0_E3KlhmRgcC.html",
-        "https://soydelmillo.com/river-en-la-liga/2026/10/23/river-nuevo-refuerzo-defensa-scaloni/"
+        "https://www.usatoday.com/story/sports/nfl/chiefs/2026/10/25/taylor-swift-chiefs-seahawks/92415297007/",
+        "https://people.com/taylor-swift-brought-showgirl-style-chiefs-home-game-against-chargers-12154783",
+        "https://www.elle.com/culture/celebrities/a74163901/taylor-swift-photos-travis-kelce-chiefs-chargers-home-game-october-2026/"
       ]
     },
     {
-      "query": "adeyemi",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-25T21:40:00Z",
+      "query": "kenneth walker",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-26T00:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/real-madrid-turned-down-summer-182000502.html",
-        "https://www.livescore.com/en/news/football/laliga/fabrizio-romano-confirms-surprising-real-madrid-barcelona-transfer-footballtransfers/",
-        "https://barcauniversal.com/barcelona-explored-move-for-real-madrids-club-record-signing-but-were-put-off-by-the-price-romano/"
+        "https://www.espn.com/nfl/story/_/id/50233140/seattle-seahawks-kansas-city-chiefs-kenneth-walker",
+        "https://sports.yahoo.com/articles/seahawks-kenneth-walker-decision-draws-000749032.html",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-news/213984/kenneth-walker-treating-seattle-return-any-other-week"
       ]
     },
     {
-      "query": "teslaa lions",
+      "query": "phantom blade zero",
       "approx_searches": "1000+",
-      "published_at": "2026-10-25T21:40:00Z",
+      "published_at": "2026-10-26T00:00:00Z",
       "related_news_urls": [
-        "https://www.prideofdetroit.com/post/-N_K-elzaa90",
-        "https://www.rotoballer.com/player-news/isaac-teslaa-is-tough-to-trust-as-a-fantasy-starter-in-week-7/1974569",
-        "https://sports.yahoo.com/articles/lions-former-third-round-pick-140734307.html"
+        "https://www.ign.com/articles/phantom-blade-zero-review",
+        "https://mp1st.com/news/phantom-blade-zero-preload-time-clocks-145-gb-pc-requirements-listed",
+        "https://www.pushsquare.com/news/2026/10/phantom-blade-zero-physical-version-set-for-2027-3-ps5-editions-revealed"
+      ]
+    },
+    {
+      "query": "dolar hoje",
+      "approx_searches": "500+",
+      "published_at": "2026-10-26T00:00:00Z",
+      "related_news_urls": [
+        "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/dolar-fecha-abaixo-de-r-5-e-recua-158-na-semana",
+        "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/eleicoes-agitam-a-bolsa-petrobras-dispara-e-risco-nos-eua-preocupa-veja-as-mais-lidas-da-semana/",
+        "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-reta-final-do-2o-turno-petroleo-e-defasagem-do-diesel-2101664"
       ]
     }
   ]
