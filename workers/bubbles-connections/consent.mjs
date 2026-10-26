@@ -77,6 +77,20 @@ export class ConsentService {
     if(handoff.error)return {status:'declined'};
     return {status:'received'};
   }
+  async finishHandoff(input) {
+    const {userId,sessionId,provider,state}=input;
+    const status=await this.handoffStatus(input);
+    if(status.status!=='received')return status;
+    const prefix=await this.namespace(userId);
+    const key=prefix+'handoff:'+await digest(state);
+    const encrypted=await this.storage.get(key);
+    if(!encrypted)return {status:'pending'};
+    const received=await this.vault.open(encrypted,key);
+    if(!received.code)throw Error('callback_invalid');
+    const account=await this.complete({userId,sessionId,provider,state,code:received.code});
+    await this.storage.delete(key);
+    return {status:'connected',account};
+  }
   async complete({userId, sessionId, provider, state, code}) {
     const prefix = await this.namespace(userId), sessionHash = await this.session(sessionId);
     if (typeof state !== 'string' || !/^[A-Za-z0-9_-]{43}$/.test(state) || typeof code !== 'string' || !code || code.length > 4096) throw Error('callback_invalid');
