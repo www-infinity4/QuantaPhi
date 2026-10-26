@@ -114,13 +114,15 @@ export function mountConnections(container,{token}) {
     try {
       const data=await client.call('/catalog');let available=false;
       for(const provider of data.providers) {
-        const cloudFull=provider.id==='cloudflare'&&provider.fullProjectConfigured!==true;
-        const button=element('button',(provider.configured&&!cloudFull?'Connect ':cloudFull?'Setup needed: ':'Unavailable: ')+(NAMES[provider.id]||provider.id),'ba-control');
-        button.type='button';button.disabled=!provider.configured||cloudFull;
-        if(cloudFull)button.title='The Bubbles Cloudflare OAuth client must first register its exact full-project scopes. Trying to sign in again cannot fix this.';
-        if(provider.configured&&!cloudFull)available=true;
+        // Basic Cloudflare consent must remain usable while optional full-project
+        // scopes await registration. Never request unregistered elevated scopes.
+        const cloudLimited=provider.id==='cloudflare'&&provider.fullProjectConfigured!==true;
+        const button=element('button',(provider.configured?'Connect ':'Unavailable: ')+(NAMES[provider.id]||provider.id)+(cloudLimited&&provider.configured?' (limited access)':''),'ba-control');
+        button.type='button';button.disabled=!provider.configured;
+        if(cloudLimited)button.title='Connect with registered basic scopes. Full project management remains unavailable until separately authorized.';
+        if(provider.configured)available=true;
         button.addEventListener('click',async()=>{
-          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):provider.id==='cloudflare'?['account.read','projects.build','ledger.read','projects.full']:['repository.read'];
+          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):provider.id==='cloudflare'?(cloudLimited?['account.read','projects.build','ledger.read']:['account.read','projects.build','ledger.read','projects.full']):['repository.read'];
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';return;}
           try {await client.connect(provider.id,actions,(error,account)=>{
             status.textContent=error?error.message:provider.id==='cloudflare'&&!account.grantedActions?.includes('projects.full')?'Cloudflare returned limited permission. Full project access is not yet approved.':'Connected '+account.label+'.';if(!error)void load();
