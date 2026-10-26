@@ -12,7 +12,8 @@ function storage(){
 }
 const fakeScopeIDs=()=>['user-details.read','memberships.read','workers-scripts.admin','d1.read','d1.write','page.write',
  ...Array.from({length:380},(_,i)=>'test-provider-scope-'+i+'.read')];
-function harness({scopes=fakeScopeIDs(),client=ID,active=ID.slice(0,16),live=386}={}){
+function harness({scopes=fakeScopeIDs(),client=ID,active=ID.slice(0,16),
+ live=386,liveRequested=live,postActive=active,initial=6,initialRequested=initial}={}){
  const logs=[],issued=[];
  const endpoint='https://api.cloudflare.com/client/v4';
  const json=x=>Response.json({success:true,result:x});
@@ -25,8 +26,11 @@ function harness({scopes=fakeScopeIDs(),client=ID,active=ID.slice(0,16),live=386
   const path=String(url);
   logs.push({url:path,method:opts.method||'GET',body:opts.body});
   if(path.startsWith('https://quantaphi.org/api/bubbles/connections/scope-inventory')){
-   catalogCalls++;return Response.json({ok:true,configured:true,clientIdPrefix:active,
-    scopeInventory:{serverAllowlistCount:catalogCalls>1?live:6}});
+   catalogCalls++;
+   const after=catalogCalls>1;
+   return Response.json({ok:true,configured:true,clientIdPrefix:after?postActive:active,
+    scopeInventory:{serverAllowlistCount:after?live:initial,
+     signInRequestScopeCount:after?liveRequested:initialRequested}});
   }
   assert.ok(path.startsWith(endpoint));
   if(path.endsWith('/oauth_clients/'+ID))return json({client_id:client,redirect_uris:[CB],scopes});
@@ -90,4 +94,40 @@ test('approval is mandatory and no token is issued for absent authorization',asy
  const h=harness(),db=storage();
  const result=await confirmBubblesScopeSync(db,{requestId:'css_bad'},env,{issue:h.issue,request:h.request});
  assert.equal(result.ok,false);assert.equal(result.httpStatus,403);assert.equal(h.issued.length,0);
+});
+
+test('post-write allowlist of 386 is pending when sign-in still requests only six',async()=>{
+ const db=storage(),plan=await planBubblesScopeSync(db,env);
+ const h=harness({live:386,liveRequested:6});
+ const result=await confirmBubblesScopeSync(db,{requestId:plan.requestId},env,{issue:h.issue,request:h.request});
+ assert.equal(result.ok,true);
+ assert.equal(result.status,'installed_awaiting_live_verification');
+ assert.equal(result.serverScopeCount,386);
+ assert.equal(result.signInRequestScopeCount,6);
+ assert.equal(h.logs.filter(x=>x.url.endsWith('/secrets')).length,1);
+});
+test('post-write client identity drift is pending even when both counts are 386',async()=>{
+ const db=storage(),plan=await planBubblesScopeSync(db,env);
+ const h=harness({postActive:'ffffffffffffffff'});
+ const result=await confirmBubblesScopeSync(db,{requestId:plan.requestId},env,{issue:h.issue,request:h.request});
+ assert.equal(result.ok,true);
+ assert.equal(result.status,'installed_awaiting_live_verification');
+ assert.equal(result.liveClientMatches,false);
+});
+test('already configured allowlist cannot claim success with incomplete sign-in request',async()=>{
+ const db=storage(),plan=await planBubblesScopeSync(db,env);
+ const h=harness({initial:386,initialRequested:6});
+ const result=await confirmBubblesScopeSync(db,{requestId:plan.requestId},env,{issue:h.issue,request:h.request});
+ assert.equal(result.ok,false);
+ assert.match(result.error,/scope_inventory_request_count_mismatch/);
+ assert.equal(h.logs.filter(x=>x.url.endsWith('/secrets')).length,0);
+});
+test('already synchronized requires both verified counts and makes no write',async()=>{
+ const db=storage(),plan=await planBubblesScopeSync(db,env);
+ const h=harness({initial:386,initialRequested:386});
+ const result=await confirmBubblesScopeSync(db,{requestId:plan.requestId},env,{issue:h.issue,request:h.request});
+ assert.equal(result.ok,true);
+ assert.equal(result.status,'already_synchronized');
+ assert.equal(result.signInRequestScopeCount,386);
+ assert.equal(h.logs.filter(x=>x.url.endsWith('/secrets')).length,0);
 });
