@@ -571,7 +571,7 @@ async function repairCloudflareConsent(){
   card.append(info,state,apply,cancel);conversation.append(card);
   if(showing)chatScroll.scrollTop=chatScroll.scrollHeight;
   status.textContent='Review the one-time Cloudflare permission synchronization.';
- }catch(e){status.textContent='Cloudflare scope repair unavailable: '+String(e.message||e).slice(0,230)}
+ }catch(e){const message='Cloudflare scope repair unavailable: '+String(e.message||e).slice(0,230);status.textContent=message;display(message,'ai');}
 }
 async function setupCloudflareOAuthClient(){
  if(embedded||!ownerReady){status.textContent='Connect verified owner mode to configure the Cloudflare OAuth app.';return;}
