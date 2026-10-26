@@ -219,3 +219,39 @@ test('separate Chrome context needs no BroadcastChannel or window.opener',async(
  assert.equal(popup.closed,true);
  assert.ok(calls.includes('/api/bubbles/connections/handoff/finish'));
 });
+
+test('Android popup-blocked viewer can resume after returning from external Chrome',async()=>{
+  const state='z'.repeat(43),data=new Map(),calls=[];let serverStatus='pending',navigated='';
+  const root={open:()=>null,location:{assign:url=>{navigated=url;}},sessionStorage:{
+    getItem:key=>data.get(key)||null,setItem:(key,value)=>data.set(key,value),removeItem:key=>data.delete(key)
+  },setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
+  const request=async(url,options)=>{
+    calls.push({url,body:options.body});
+    if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://github.com/login/oauth/authorize?state='+state,expiresIn:300});
+    if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:serverStatus});
+    if(url.endsWith('/handoff/finish'))return Response.json({ok:true,status:'connected',account:{label:'verified-github'}});
+    throw Error('unexpected route');
+  };
+  const first=new AccountConnections({token:()=> 'wallet-bound-session',root,request});
+  await first.connect('github',['repository.read'],()=>assert.fail('old viewer was navigated away'));
+  assert.match(navigated,/^https:\/\/github.com\/login\/oauth\/authorize/);
+  assert.ok(data.has('bubbles:oauth-pending:v1'));
+  assert.ok(!data.get('bubbles:oauth-pending:v1').includes('wallet-bound-session'));
+  assert.ok(!data.get('bubbles:oauth-pending:v1').includes('code'));
+  first.cleanup(); // Android destroys the original page on external navigation.
+  serverStatus='received';
+  const restored=new AccountConnections({token:()=> 'wallet-bound-session',root,request});
+  let outcome=null;
+  assert.equal(restored.resumePending((error,account)=>outcome={error,account}),true);
+  await new Promise(resolve=>setImmediate(resolve));
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(outcome.error,null);
+  assert.equal(outcome.account.label,'verified-github');
+  assert.equal(data.has('bubbles:oauth-pending:v1'),false);
+  assert.ok(calls.some(x=>x.url.endsWith('/handoff/finish')));
+});
+test('popup-blocked viewer refuses redirect when it cannot preserve authorization state',async()=>{
+  const root={open:()=>null,location:{assign:()=>assert.fail('must not navigate without session storage')}};
+  const client=new AccountConnections({token:()=> 'wallet',root,request:()=>assert.fail('must not start OAuth')});
+  await assert.rejects(client.connect('github',['repository.read'],()=>{}),/Open Account Connections in Chrome/);
+});
