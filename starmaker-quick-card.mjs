@@ -89,7 +89,8 @@ export function mountStarMakerQuickCard(root){
   more.hidden=ranked.length<=3;more.textContent=expanded?'Show fewer songs':'Show all '+ranked.length+' curated songs';
   if(!query)status.textContent=check.checked
    ?(listens.length?(personalized?'Music Quant match found · '+listens.length+' listening records available.':'No direct matches in the curated list · '+listens.length+' listening records available.'):'No listening-song records available to this card. Browse or search manually.')
-   :'Searching '+ranked.length+' verified public song links'+(check.checked?' with Music Quant suggestions':'')+'.';
+   :'Recommendations off. Listening history stays private.';
+  else status.textContent='Showing '+ranked.length+' verified public song links'+(check.checked?' with Music Quant suggestions':'')+'.';
  }
  const more=text('button','Show more songs','qcx-button');more.type='button';more.addEventListener('click',()=>{expanded=!expanded;render();});
  form.addEventListener('submit',e=>{e.preventDefault();expanded=true;render();});
