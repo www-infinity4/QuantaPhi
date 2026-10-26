@@ -44,7 +44,7 @@ test('Gary Cardone appears once, inside the carousel, and survives Next/Previous
    await page.locator('#oracleCardPrevious').click();
    state=await metrics();assert.equal(state.parent,'oracleCardStage');assert.equal(state.same,true);
    await page.locator('#oracleCardScroll').click();
-   state=await metrics();assert.notEqual(state.parent,'oracleCardStage');assert.notEqual(state.display,'none');
+   state=await metrics();assert.notEqual(state.parent,'oracleCardStage');assert.equal(state.display,'none','Gary remains carousel-only in the expanded shelf');
    await page.locator('#oracleCardScroll').click();
    await page.locator('#oracleCardChooser').selectOption('churchOfIAmCard');
    state=await metrics();assert.equal(state.count,1);assert.equal(state.parent,'oracleCardStage');assert.equal(state.same,true);
