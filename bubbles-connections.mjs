@@ -263,8 +263,22 @@ export function mountConnections(container,{token}) {
         button.classList.add('ba-signin-button');
         button.setAttribute('aria-label','Sign in with '+providerName);
         card.append(button);
-        if(provider.id==='cloudflare'&&provider.fullProjectConfigured===false)
-          card.append(element('p','Sign in to connect your account. Additional project permissions still need application setup.'));
+        if(provider.id==='cloudflare'){
+          card.append(element('p','Cloudflare may already recognize your login and go straight to Review permissions. After authorizing, Bubbles must verify the connection.','ba-muted'));
+          const inventory=provider.scopeInventory;
+          if(inventory&&Number.isInteger(inventory.signInRequestScopeCount)){
+            const client=typeof provider.clientIdPrefix==='string'&&provider.clientIdPrefix?
+              ' OAuth client begins '+provider.clientIdPrefix+'.':'';
+            card.append(element('p','Bubbles sign-in currently requests '+inventory.signInRequestScopeCount+
+              ' Cloudflare scopes; its server allowlist contains '+inventory.serverAllowlistCount+
+              '. This is not proof of the scopes registered on Cloudflare.'+client,'ba-muted'));
+          }
+          const login=element('a','Open Cloudflare login separately','ba-link');
+          login.href='https://dash.cloudflare.com/login';login.target='_blank';login.rel='noopener noreferrer';
+          card.append(login);
+          if(provider.fullProjectConfigured===false)
+            card.append(element('p','Additional project permissions need Bubbles OAuth client setup. More scopes in the Cloudflare dashboard do not automatically change this sign-in request.','ba-muted'));
+        }
         const availableActions=providerAuthorizationActions(provider);
         if(provider.id!=='google'&&!availableActions.length){
           button.disabled=true;
