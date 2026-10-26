@@ -56,10 +56,15 @@ function harness(owner=false,speech=false,verified=true){
  vm.createContext(context);
  vm.runInContext(gateSource,context);
  vm.runInContext(brainSource,context);
- vm.runInContext(appSource,context);
- // This legacy voice suite exercises an already verified owner/visitor session.
- // Production authorization remains fail-closed; it is tested separately.
- if(verified)vm.runInContext('setAccountEntry({ready:true})',context);
+ const fixtureSource=appSource.replace(
+  'if(!embedded){setAccountEntry(null);void checkPanelGate();}',
+  'if(!embedded){setAccountEntry(null);if(window.__testAuthorizedEntry){accountGateController={check:async()=>({ready:true})};setAccountEntry({ready:true});}}'
+ );
+ assert.notEqual(fixtureSource,appSource,'the test-only authorization fixture must match the production initialization anchor');
+ window.__testAuthorizedEntry=verified;
+ vm.runInContext(fixtureSource,context);
+ // The synthetic server-approved state exists only inside this isolated VM.
+ // The unverified case and production OAuth flow remain fail-closed.
  const orb=nodes.find(n=>n.className==='ba-launcher');
  return {window,document,nodes,orb,requests,recognized,track,utterances,memoryRequests,catalogCalls,advance:ms=>{clock.now+=ms},setVoiceOwned:value=>{ownsVoice=value}};
 }
