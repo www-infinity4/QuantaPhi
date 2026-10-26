@@ -46,6 +46,8 @@ test('ordinary repair instructions find the right card, not a repository picker'
  assert.equal(gary?.id,'church-of-i-am');
  assert.equal(gary?.repository,'www-infinity4/QuantaPhi');
  assert.equal(cardWorkTargetFor('Please repair Gary Cardone'),gary);
+ assert.equal(cardWorkTargetFor('Move Gary Cardone into the carousel'),gary);
+ assert.equal(cardWorkTargetFor('Place the Gary Cardone card in rotation'),gary);
  assert.equal(cardWorkTargetFor('Repair Cardone Capital')?.id,'cardone-capital');
  const history=[{role:'user',text:'We need to fix the Gary Cardone Church of I AM card'}];
  assert.equal(cardWorkTargetFor('Fix that card',history)?.id,'church-of-i-am');
@@ -58,6 +60,8 @@ test('chat dispatcher treats recognized card work as a direct owner engineering 
  assert.match(ui,/const namedCardWork=projectContextModule\?\.cardWorkTargetFor/);
  assert.match(ui,/const codeTask=\//);
  assert.match(ui,/if\(namedCardWork&&!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue\)directCoding=true/);
+ assert.match(ui,/\|move\|place\)/);
+ assert.match(ui,/unexecuted GitHub search instructions/);
 });
 test('missing source and genuinely ambiguous matches never silently select a repository',async()=>{
  for(const result of [{...search,results:[hit,{...hit,repository:catalog[1]}]}, {...search,results:[{...hit,repository:'attacker/project'}]}]){
@@ -81,5 +85,7 @@ test('pasted read_repo/search action envelopes are rejected as replies without b
  const leaked='{"action":"read_repo","parameters":{"owner":"www-infinity4","repo":"QuantaPhi","path":"cards","depth":2}}\nStatus pending';
  assert.equal(hasActionDraft(leaked),true);assert.equal(hasModelToolLeak(leaked),true);
  assert.equal(hasModelToolLeak('{"action":"search","parameters":{"query":"Walmart","top_n":10}}'),true);
+ assert.equal(hasActionDraft('{"action":"github.searchCode","parameters":{"query":"Gary org:www-infinity4"}}'),true);
+ assert.equal(hasModelToolLeak('{"action":"github.searchCode","parameters":{"query":"cardone org:www-infinity4"}}'),true);
  assert.equal(hasActionDraft('I found the Walmart card and read its source.'),false);
 });
