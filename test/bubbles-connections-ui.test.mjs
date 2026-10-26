@@ -90,6 +90,25 @@ test('old blank-popup authorization does not strand Sign in on a fresh page',()=
  assert.equal(client.readPendingHandoff()?.state,state,'Verified same-tab callback state must remain resumable');
 });
 
+test('failed Cloudflare code exchange reports a specific retry message before expiring',async()=>{
+ const state='r'.repeat(43),popup={location:{},close(){this.closed=true;}};
+ const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
+ let completed;
+ const client=new AccountConnections({token:()=> 'device-session',root,request:async url=>{
+  if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://dash.cloudflare.com/oauth2/auth?state='+state,expiresIn:300});
+  if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:'received'});
+  if(url.endsWith('/handoff/finish'))return Response.json({ok:false,error:'connection_operation_failed'},{status:503});
+  assert.fail('Unexpected URL '+url);
+ }});
+ await client.connect('cloudflare',['account.read'],(error,account)=>{completed={error,account};});
+ for(let i=0;i<6&&!completed;i++)await new Promise(resolve=>setImmediate(resolve));
+ assert.ok(completed?.error);
+ assert.match(completed.error.message,/could not complete the account connection/i);
+ assert.doesNotMatch(completed.error.message,/expired/i);
+ assert.equal(client.pending,null);
+ assert.equal(popup.closed,true);
+});
+
 test('connector waits for device bridge and supports both wallet runtime exports',async()=>{
   let ready=false;const token='sq_'+'a'.repeat(40);
   assert.equal(await resolveConnectorWalletToken({QuantaCloudConnection:{ready:Promise.resolve().then(()=>ready=true),resolveDeviceToken:async()=>{assert.ok(ready);return token;}}}),token);
