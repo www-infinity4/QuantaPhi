@@ -217,9 +217,11 @@ export function mountConnections(container,{token}) {
       // "Sign in" above a confirmed connected account while a second fetch runs.
       const [data,dataAccounts]=await Promise.all([client.call('/catalog'),client.call('/accounts')]);
       catalog.replaceChildren();accounts.replaceChildren();
+      const activeConnection=account=>account.status==='connected'&&
+        Number.isFinite(account.expiresAt)&&account.expiresAt>Date.now()+30000;
       const signedIn=new Map();
       for(const account of dataAccounts.accounts||[]){
-        if(account.status==='connected'&&!signedIn.has(account.provider))signedIn.set(account.provider,account);
+        if(activeConnection(account)&&!signedIn.has(account.provider))signedIn.set(account.provider,account);
       }
       scopes.hidden=!data.providers.some(provider=>provider.id==='google'&&provider.configured);
       const unavailable=element('details','','ba-unavailable');unavailable.append(element('summary','Other account services'));
@@ -261,8 +263,9 @@ export function mountConnections(container,{token}) {
       if(unavailable.childNodes.length>1)catalog.append(unavailable);
       for(const account of dataAccounts.accounts) {
         const row=element('div','','ba-account-card');
-        row.append(element('p',(NAMES[account.provider]||account.provider)+' · '+account.label+' · '+account.status));
-        if(account.provider==='cloudflare'&&account.status==='connected'){
+        row.append(element('p',(NAMES[account.provider]||account.provider)+' · '+account.label+' · '+
+          (account.status==='connected'&&!activeConnection(account)?'reconnect required':account.status)));
+        if(account.provider==='cloudflare'&&activeConnection(account)){
           const grants=account.grantedActions||[];
           const access=grants.includes('projects.full')?'Full project access approved.':
             grants.includes('projects.build')?'Approved: deploy Workers, Pages and D1 projects. Additional project permissions are not yet approved.':
@@ -281,7 +284,7 @@ export function mountConnections(container,{token}) {
             status.textContent=result.providerRevocation==='failed'?'Disconnected in Bubbles. Provider revocation failed; remove Bubbles access in that service’s account settings.':'Account disconnected.';
           }catch(error){status.textContent=error.message;button.disabled=false;}});row.append(button);
         }
-        if(account.provider==='github'&&account.status==='connected'){
+        if(account.provider==='github'&&activeConnection(account)){
           const inspect=element('button','Check GitHub repositories','ba-control');inspect.type='button';
           const result=element('div','');result.setAttribute('role','status');
           inspect.addEventListener('click',async()=>{inspect.disabled=true;result.textContent='Checking installed repositories with GitHub…';try{
@@ -379,7 +382,7 @@ export function mountConnections(container,{token}) {
           }
         }
         accounts.append(row);
-        if(account.provider==='cloudflare'&&account.status==='connected'){
+        if(account.provider==='cloudflare'&&activeConnection(account)){
           const chooser=element('div','','ba-cloudflare-account-select');
           const statusLine=element('p','Choose a Cloudflare account that you own or can manage. Nothing will be deployed automatically.','ba-muted');
           statusLine.setAttribute('role','status');
