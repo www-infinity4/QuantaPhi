@@ -26,7 +26,8 @@ jobs:
           node --check bubbles-brain-actions.js
       - name: Browser, source and card contract tests
         run: |
-          node --test test/bubbles-current-memory.test.cjs test/bubbles-cloud-browser.test.mjs
+          node --test test/bubbles-project-discovery.test.mjs test/bubbles-github-operator-regression.test.mjs
+          node --test test/bubbles-current-memory.test.cjs test/bubbles-cloud-browser.test.mjs test/bubbles-star-continuation.test.mjs
           node --test test/bubbles-natural-tool-sweep.test.mjs
           node --test test/bubbles-source-read-ui.test.mjs test/bubbles-card-source-routing.test.mjs
       - name: MCP lookup and research contract tests

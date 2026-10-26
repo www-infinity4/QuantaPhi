@@ -42,3 +42,14 @@ test('FOX One is real original post, officially embedded, and no invented MP4 or
  assert.match(source,/twttr\?\.widgets/);
  assert.doesNotMatch(source,/video\.twimg\.com\/|\.mp4\?autoplay/);
 });
+test('FOX One live news promo is a separate interactive card and preserves the original',()=>{
+ const news=findSourceCard('fox-one-live-news');
+ assert.ok(isPublicSourceCard(news));
+ assert.equal(news.featureUrl,'https://x.com/foxone/status/2070282166190408122');
+ assert.equal(news.official,'https://www.fox.com/stream/fox-news');
+ assert.equal(findSourceCard('fox-one').featureUrl,'https://x.com/foxone/status/2113352129427730641');
+ const source=read('quanta-card-experience.mjs');
+ assert.match(source,/const spot=card\.featureUrl/);
+ assert.match(source,/if\(id==='fox-one'\|\|id==='fox-one-live-news'\)mountFoxOneSpot/);
+ assert.doesNotMatch(source,/video\.twimg\.com\/|\.mp4\?autoplay/);
+});

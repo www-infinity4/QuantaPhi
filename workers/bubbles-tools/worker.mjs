@@ -194,7 +194,7 @@ export function hasModelToolLeak(answer){
  // Short cursor envelopes such as {"id":"https://...","cursor":0} are also
  // unexecuted model instructions, not a completed publisher-page read.
  const rawCursorDraft=/^\s*\{[^{}\n]{0,1000}"(?:cursor|next_cursor|read_cursor|page_token)"\s*:\s*(?:\d+|["'])[^{}\n]{0,500}\}\s*$/i.test(text);
- const actionParameters=/["']action["']\s*:\s*["'](?:read_repo|read_repository|read_file|search|web_search|commit_files|create_pr|deploy)["'][\s\S]{0,1000}["']parameters["']\s*:/i.test(text);
+ const actionParameters=/["']action["']\s*:\s*["'](?:(?:github|web|browser|weather|tools?|brain)[._][\w.-]{1,80}|read_repo|read_repository|read_file|search|web_search|commit_files|create_pr|deploy)["'][\s\S]{0,1000}["']parameters["']\s*:/i.test(text);
  return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft||embeddedToolDraft||rawCursorDraft||actionParameters;
 }
 // A planning fragment is not a final answer even if the source search completed.

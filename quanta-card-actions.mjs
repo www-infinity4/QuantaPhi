@@ -24,7 +24,7 @@ export function titleSearchPresets(card){
   {label:'Compare sold',query:name+' completed auction sale price date exact grade'}
  ];
 }
-export function mountCardActions(host,card){
+export function mountCardActions(host,card,options={}){
  if(!host||!card)return;
  const id=String(card.id||'').replace(/[^a-z0-9-]/g,'').slice(0,90);
  if(!id)return;
@@ -83,7 +83,7 @@ export function mountCardActions(host,card){
   }
   location.assign(destination);
  };
- if(card.titleQuickSearch){
+ if(card.titleQuickSearch&&options.showSearch!==false){
   // Exactly three useful one-tap actions. No duplicate, empty search field.
   const quick=element('div','qca-title-searches');
   for(const choice of titleSearchPresets({name,category:card.category})){
@@ -92,7 +92,7 @@ export function mountCardActions(host,card){
    quick.append(button);
   }
   bar.append(controls,quick,status);
- }else{
+ }else if(options.showSearch!==false){
   const search=element('form','qca-search'),q=element('input','qca-search-input');
   q.type='search';q.placeholder='Quick search '+name+'…';q.required=true;q.maxLength=180;q.setAttribute('aria-label','Find within '+name+' card');
   const submit=element('button','qca-button qca-search-submit','⌕ Quick Search');submit.type='submit';
@@ -102,6 +102,7 @@ export function mountCardActions(host,card){
   });
   bar.append(controls,search,status);
  }
+ if(options.showSearch===false)bar.append(controls,status);
  host.append(bar);return bar;
 }
 function restoreDraft(){

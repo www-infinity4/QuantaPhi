@@ -1,0 +1,22 @@
+/* Distinct, source-backed art experience with real museum images. */
+.aic-art-card{overflow:hidden;isolation:isolate;padding:0!important;border:1px solid #ddd0bb!important;background:#fffaf3!important;color:#2b241e!important}
+.aic-picture{display:block;background:#e8e0d4;min-height:180px;overflow:hidden}
+.aic-art-image{display:block;width:100%;height:auto;max-height:480px;object-fit:contain;aspect-ratio:4/3}
+.aic-meta{padding:18px 16px 20px}
+.aic-label{display:block;letter-spacing:.1em;color:#7a452e;font-size:11px;font-weight:800}
+.aic-title{margin:10px 0 4px;font:700 clamp(23px,5vw,32px)/1.12 Georgia,serif!important;color:#251a19!important}
+.aic-artist{font-size:17px;font-weight:700;margin:6px 0;color:#4d352c}
+.aic-details,.aic-disclosure{color:#695a51;font-size:13px;line-height:1.5}
+.aic-explore{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:16px 0}
+.aic-research{min-height:48px;display:flex;align-items:center;justify-content:center;padding:9px 3px;border:1px solid #b75b3b;border-radius:12px;background:#fff;color:#8b351b!important;font-size:13px;font-weight:850;text-align:center;text-decoration:none}
+.aic-museum-link{display:inline-flex;align-items:center;min-height:46px;color:#fff!important;background:#9c3327;border-radius:11px;padding:10px 15px;text-decoration:none;font-weight:800;margin:6px 0}
+.aic-actions .qca-toolbar{margin:12px 0 0}
+.aic-loader-card{border:1px solid #bb9886!important;border-radius:20px;padding:20px!important;background:linear-gradient(145deg,#fcf0e2,#fff,#f9e4d7)!important;color:#30231f!important}
+.aic-loader-title{font:700 26px/1.2 Georgia,serif;color:#351a15;margin:0 0 8px}
+.aic-loader-note{color:#654c40;line-height:1.6}
+.aic-load-button{display:block;padding:13px 16px;border-radius:12px;background:#9b3328;color:white;font-weight:850;margin:12px 0;min-height:48px}
+.aic-load-button:disabled{opacity:.65}
+.aic-loader-status{color:#4e453e;font-size:13px}
+.aic-research:focus-visible,.aic-museum-link:focus-visible,.aic-load-button:focus-visible{outline:3px solid #2e58a6;outline-offset:3px}
+@media(max-width:410px){.aic-meta{padding:14px 12px}.aic-research{font-size:12px}.aic-art-image{max-height:350px}}
+@media(prefers-reduced-motion:reduce){.aic-research,.aic-museum-link{transition:none}}

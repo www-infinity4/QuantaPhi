@@ -23,6 +23,17 @@ test('create a new file uses GitHub WRITE, not READ',()=>{
  assert.equal(result.directCoding,true,'file creation must reach GitHub tool route');
  assert.equal(result.mode,'write','file creation needs commit_files permission');
 });
+test('moving a card enters the direct write adapter, while questions and refusals stay inert',()=>{
+ for(const request of ['Move the Gary Cardone card to the carousel','Put the Gary Cardone card in the carousel',
+  'Place the Gary Cardone card in rotation','Relocate the Gary Cardone card']){
+  const result=classify(request,()=>null);
+  assert.equal(result.directCoding,true,request);
+  assert.equal(result.mode,'write',request);
+ }
+ for(const request of ['Do not move the Gary Cardone card','How do I move the Gary Cardone card?']){
+  assert.equal(classify(request,()=>null).directCoding,false,request);
+ }
+});
 test('repair conversation mentioning a repository is not a creation instruction',()=>{
  assert.equal(classify('Reads & Realms broke; build notes in the GPT Investigation repo',()=>null).createRepository,false);
  assert.equal(classify('Bubbles said create a repository named GPT Investigation',()=>null).createRepository,false);
