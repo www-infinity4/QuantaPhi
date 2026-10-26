@@ -69,11 +69,28 @@ test('Google card prioritizes source search, not unrelated trends or a fake embe
  await expect(page.getByRole('button',{name:/Refresh verified topics/})).toHaveCount(0);
  await expect(page.locator('#sourceQuickCardDetail .qcx-tools iframe')).toHaveCount(0);
 });
-test('StarMaker microphone is off until explicit start and a stop control is provided',async({page})=>{
+test('StarMaker displays song search and keeps the local microphone off until the visitor opens recording',async({page})=>{
  await page.goto(base+'/source-quick-card.html?card=starmaker',{waitUntil:'domcontentloaded'});
+ await expect(page.getByRole('searchbox',{name:'Search verified StarMaker songs'})).toBeVisible();
+ await expect(page.getByText('Recommendations off. Listening history stays private.')).toBeVisible();
+ await expect(page.locator('details.qcx-recording-details')).not.toHaveAttribute('open');
+ await page.locator('details.qcx-recording-details summary').click();
  await expect(page.getByText('Microphone is off')).toBeVisible();
  await expect(page.getByRole('button',{name:'● Start recording'})).toBeEnabled();
  await expect(page.getByRole('button',{name:'■ Stop'})).toBeDisabled();
+});
+test('StarMaker opt-in uses real local Music Quant listening song to prioritize a verified karaoke link',async({page})=>{
+ await page.addInitScript(()=>{
+  localStorage.setItem('musicPhi:listeningQuants:v1',JSON.stringify([{id:'mq_test',kind:'listening',song:'Ed Sheeran - Perfect',createdAt:'2026-10-26T12:00:00Z'}]));
+ });
+ await page.goto(base+'/source-quick-card.html?card=starmaker',{waitUntil:'domcontentloaded'});
+ await page.getByRole('checkbox',{name:'Use my Music Quant listening history for singing suggestions'}).check();
+ await expect(page.getByText(/Music Quant match found/)).toBeVisible();
+ const first=page.locator('.qcx-song-picks .qcx-result').first();
+ await expect(first.getByText('Perfect',{exact:true})).toBeVisible();
+ await expect(first.getByRole('link',{name:/Sing/})).toHaveAttribute('href','https://www.starmakerstudios.com/en/song/ed-sheeran-perfect-lyrics/611752105016719259');
+ await page.getByRole('checkbox',{name:'Use my Music Quant listening history for singing suggestions'}).uncheck();
+ await expect(page.getByText('Recommendations off. Listening history stays private.')).toBeVisible();
 });
 
 test('FOX One original advertisement and five interactive controls are present',async({page})=>{
