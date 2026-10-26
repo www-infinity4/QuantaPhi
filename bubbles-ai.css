@@ -325,3 +325,21 @@
 .ba-panel .ba-owner-decision-list .ba-owner-approval{padding:10px}
 .ba-panel .ba-owner-decision-list .ba-owner-approval-copy{font-weight:500}
 .ba-panel .ba-owner-decision-drawer[hidden]{display:none!important}
+
+/* Account sign-in is a primary Android touch action, not a tiny utility control. */
+#bubblesAICard .ba-signin-button,.ba-panel .ba-signin-button{
+ display:block;width:100%;max-width:100%;box-sizing:border-box;min-height:56px;
+ margin:10px 0;padding:14px 18px;border-radius:18px;
+ border:2px solid #9c261e;background:#b72d24;color:#fff;
+ font-size:16px;font-weight:800;line-height:1.35;text-align:center;
+ box-shadow:0 3px 10px rgba(90,35,25,.16);touch-action:manipulation;
+}
+#bubblesAICard .ba-signin-button:focus-visible,.ba-panel .ba-signin-button:focus-visible{
+ outline:3px solid #163e72;outline-offset:3px;
+}
+#bubblesAICard .ba-signin-button:disabled,.ba-panel .ba-signin-button:disabled{
+ background:#ece9e6;color:#534f4b;border-color:#a9a19b;box-shadow:none;cursor:not-allowed;
+}
+#bubblesAICard .ba-signin-button[aria-busy="true"],.ba-panel .ba-signin-button[aria-busy="true"]{
+ opacity:.75;cursor:progress;
+}

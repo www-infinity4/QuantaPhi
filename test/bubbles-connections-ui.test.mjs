@@ -180,3 +180,32 @@ test('Cloudflare account discovery is verified with the users token and strips p
  assert.equal(calls[0].url,'https://api.cloudflare.com/client/v4/accounts?page=1&per_page=50');
  assert.ok(!JSON.stringify(result).includes('SHOULD_NOT_LEAK'));
 });
+
+test('Android callback broadcast accepts only matching OAuth provider and state',async()=>{
+ const listeners=new Map(),calls=[],channels=[],popup={location:{},close(){this.closed=true;}};
+ class Channel {
+   constructor(name){assert.equal(name,'bubbles-oauth-return-v1');channels.push(this);}
+   close(){this.closed=true;}
+ }
+ const root={open:()=>popup,BroadcastChannel:Channel,setTimeout:()=>1,clearTimeout(){},
+   addEventListener:(key,value)=>listeners.set(key,value),removeEventListener:key=>listeners.delete(key)};
+ const client=new AccountConnections({root,token:()=> 'private-device-token',request:async(url)=>{
+   calls.push(url);return Response.json(url.endsWith('/start')
+     ?{ok:true,authorizationUrl:'https://github.com/login/oauth/authorize?state=expected'}
+     :{ok:true,account:{label:'connected'}});
+ }});
+ let completion=0;
+ await client.connect('github',['repository.read'],()=>completion++);
+ const channel=channels[0];
+ for(const data of [
+   {type:'bubbles:oauth-return',provider:'cloudflare',state:'expected',code:'bad'},
+   {type:'bubbles:oauth-return',provider:'github',state:'wrong',code:'bad'}
+ ])await channel.onmessage({data});
+ assert.equal(calls.length,1);
+ await channel.onmessage({data:{type:'bubbles:oauth-return',provider:'github',state:'expected',code:'real-code'}});
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(calls.length,2);
+ assert.equal(completion,1);
+ assert.equal(channel.closed,true);
+ assert.equal(popup.closed,true);
+});

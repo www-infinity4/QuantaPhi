@@ -65,24 +65,35 @@ export class AccountConnections {
       const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':'';
       if(authorization.protocol!=='https:'||authorization.hostname!==expectedHost||authorization.port||!state)throw Error('Sign-in address rejected.');
       const origin='https://quantaphi.org'; // Registered callback's origin.
-      const listener=async event=>{
-        const message=event.data;
-        if(event.origin!==origin||event.source!==popup||message?.type!=='bubbles:oauth-return'||message.provider!==provider||message.state!==state)return;
+      // Android browser windows may lose window.opener after provider navigation.
+      // A same-origin BroadcastChannel gives the callback a second return path.
+      // Both paths require the server-generated OAuth state and provider match.
+      const channel=typeof this.root.BroadcastChannel==='function'
+        ?new this.root.BroadcastChannel('bubbles-oauth-return-v1'):null;
+      const finish=async message=>{
+        if(message?.type!=='bubbles:oauth-return'||message.provider!==provider||message.state!==state||!this.pending)return;
         this.cleanup();
         try {
           if(message.error)throw Error('Account authorization was declined.');
+          if(typeof message.code!=='string'||!message.code)throw Error('Authorization code missing.');
           const complete=await this.call('/complete',{provider,state,code:message.code});
           onComplete(null,complete.account);popup.close();
         } catch(error) {onComplete(error);}
       };
+      const listener=async event=>{
+        if(event.origin!==origin||event.source!==popup)return;
+        await finish(event.data);
+      };
+      if(channel)channel.onmessage=event=>{void finish(event.data);};
       const timer=this.root.setTimeout(()=>{this.cleanup();onComplete(Error('Sign-in expired. Start Connect account again.'));},300000);
-      this.pending={listener,timer};this.root.addEventListener('message',listener);
+      this.pending={listener,timer,channel};this.root.addEventListener('message',listener);
       popup.location.href=authorization.href;
     } catch(error) {popup.close();this.cleanup();throw error;}
   }
   cleanup() {
     if(!this.pending)return;
-    this.root.removeEventListener('message',this.pending.listener);this.root.clearTimeout(this.pending.timer);this.pending=null;
+    this.root.removeEventListener('message',this.pending.listener);this.root.clearTimeout(this.pending.timer);
+    this.pending.channel?.close();this.pending=null;
   }
 }
 function element(tag,text,className='') {
@@ -117,14 +128,17 @@ export function mountConnections(container,{token}) {
         const cloudFull=provider.id==='cloudflare'&&provider.fullProjectConfigured!==true;
         const button=element('button',(provider.configured&&!cloudFull?'Connect ':cloudFull?'Setup needed: ':'Unavailable: ')+(NAMES[provider.id]||provider.id),'ba-control');
         button.type='button';button.disabled=!provider.configured||cloudFull;
+        button.classList.add('ba-signin-button');
+        button.setAttribute('aria-label',(provider.configured&&!cloudFull?'Sign in with ':'Account setup required for ')+(NAMES[provider.id]||provider.id));
         if(cloudFull)button.title='The Bubbles Cloudflare OAuth client must first register its exact full-project scopes. Trying to sign in again cannot fix this.';
         if(provider.configured&&!cloudFull)available=true;
         button.addEventListener('click',async()=>{
+          button.disabled=true;button.setAttribute('aria-busy','true');status.textContent='Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
           const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):provider.id==='cloudflare'?['account.read','projects.build','ledger.read','projects.full']:['repository.read'];
-          if(!actions.length){status.textContent='Choose the Google access you want to allow.';return;}
+          if(!actions.length){status.textContent='Choose the Google access you want to allow.';button.disabled=false;button.removeAttribute('aria-busy');return;}
           try {await client.connect(provider.id,actions,(error,account)=>{
             status.textContent=error?error.message:provider.id==='cloudflare'&&!account.grantedActions?.includes('projects.full')?'Cloudflare returned limited permission. Full project access is not yet approved.':'Connected '+account.label+'.';if(!error)void load();
-          });status.textContent='Finish authorization in the sign-in window.';}catch(error){status.textContent=error.message;}
+          });status.textContent='Finish authorization in the sign-in window.';}catch(error){status.textContent=error.message;}finally{button.disabled=!provider.configured||cloudFull;button.removeAttribute('aria-busy');}
         });catalog.append(button);
       }
       if(!available){status.textContent='Account connections are awaiting service setup. No account access has been granted.';return;}

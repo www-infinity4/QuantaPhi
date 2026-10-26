@@ -31,8 +31,11 @@ export function callbackPage(provider) {
   const html = `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Return to Bubbles</title><body><h1>Return to Bubbles</h1><p id="status">Completing your account connection…</p><script nonce="${nonce}">
 const params=new URLSearchParams(location.search);history.replaceState(null,'',location.pathname);
 const targets=['https://quantaphi.org','https://www.quantaphi.org'];
-if(window.opener){for(const origin of targets)window.opener.postMessage({type:'bubbles:oauth-return',provider:${JSON.stringify(provider)},state:params.get('state'),code:params.get('code'),error:params.has('error')?'provider_declined':null},origin);document.getElementById('status').textContent='Return to the Bubbles window to check the connection result.';}
-else document.getElementById('status').textContent='The original Bubbles window is unavailable. Return to Bubbles and start Connect account again. No connection is confirmed here.';
+const result={type:'bubbles:oauth-return',provider:${JSON.stringify(provider)},state:params.get('state'),code:params.get('code'),error:params.has('error')?'provider_declined':null};
+let delivered=false;
+if(window.opener){for(const origin of targets)window.opener.postMessage(result,origin);delivered=true;}
+if(typeof BroadcastChannel==='function'){const channel=new BroadcastChannel('bubbles-oauth-return-v1');channel.postMessage(result);channel.close();delivered=true;}
+document.getElementById('status').textContent=delivered?'Return to Bubbles to confirm the connection. This page does not confirm account access.':'The original Bubbles window is unavailable. Return to Bubbles and start Connect account again. No connection is confirmed here.';
 </script></body></html>`;
   return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer',
     'Content-Security-Policy':`default-src 'none'; script-src 'nonce-${nonce}'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'`,
