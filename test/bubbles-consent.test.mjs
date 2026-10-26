@@ -286,3 +286,32 @@ test('cross-browser handoff rejects wrong owner, provider and expired state',asy
   f.setTime(301000);
   await assert.rejects(f.service.handoff({userId:'alice',provider:'google',state,code:'code'}),/state_invalid_or_used/);
 });
+
+test('isolated browser callback completes exactly once through original verified session',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'code-from-external-chrome'});
+  await assert.rejects(f.service.finishHandoff({...auth,sessionId:'other-device'}),/callback_session_mismatch/);
+  await assert.rejects(f.service.finishHandoff({...auth,provider:'github'}),/callback_session_mismatch/);
+  const result=await f.service.finishHandoff(auth);
+  assert.equal(result.status,'connected');
+  assert.equal(result.account.status,'connected');
+  assert.equal(f.calls,1);
+  assert.equal((await f.service.handoffStatus(auth)).status,'expired');
+  await assert.rejects(f.service.finishHandoff(auth),/state_invalid_or_used|callback_session_mismatch/);
+  assert.equal(f.calls,1);
+  assert.equal(JSON.stringify([...f.db.rows]).includes('code-from-external-chrome'),false);
+});
+test('declined authorization never exchanges a provider code',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,error:true});
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'declined'});
+  assert.deepEqual(await f.service.finishHandoff(auth),{status:'declined'});
+  assert.equal(f.calls,0);
+});
+test('concurrent handoff finishes cannot exchange twice',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'single-use-code'});
+  const outcomes=await Promise.allSettled([f.service.finishHandoff(auth),f.service.finishHandoff(auth)]);
+  assert.equal(outcomes.filter(x=>x.status==='fulfilled'&&x.value.status==='connected').length,1);
+  assert.equal(f.calls,1);
+});
