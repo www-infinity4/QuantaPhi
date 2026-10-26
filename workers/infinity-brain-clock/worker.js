@@ -16,7 +16,7 @@ import {githubOperation,directGithubAgent,validateRepository,suggestRepositories
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
 import {planCloudflareToken,confirmCloudflareToken} from './cloudflare-token-broker.mjs';
 import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
-import {planBubblesScopeSync,confirmBubblesScopeSync} from './cloudflare-scope-sync.mjs';
+
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
@@ -738,9 +738,12 @@ export class BrainClock extends DurableObject{
     'Owner-approved '+result.capability+' token provisioned and stored encrypted on Brain. No secret value sent to chat.');
    return Response.json(result,{status:result.httpStatus||200});
   }
-  if(new URL(request.url).pathname==='/owner/cloudflare-scope-sync-plan')
+  if(new URL(request.url).pathname==='/owner/cloudflare-scope-sync-plan'){
+   const {planBubblesScopeSync}=await import('./cloudflare-scope-sync.mjs');
    return Response.json(await planBubblesScopeSync(this.ctx.storage,this.env));
+  }
   if(new URL(request.url).pathname==='/owner/cloudflare-scope-sync-confirm'){
+   const {confirmBubblesScopeSync}=await import('./cloudflare-scope-sync.mjs');
    const result=await confirmBubblesScopeSync(this.ctx.storage,await request.json(),this.env);
    return Response.json(result,{status:result.httpStatus||200});
   }
