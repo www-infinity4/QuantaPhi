@@ -865,6 +865,7 @@ if(chatGate){
   state.id='chatBubbles'+provider+'Status';
   const button=create('button','ba-control','Checking '+label+'…');
   button.id='chatBubbles'+provider+'SignIn';button.type='button';button.disabled=true;
+  button.dataset.provider=provider.toLowerCase();
   card.append(title,state,button);chatGate.append(card);
  }
  const retry=create('button','ba-control','Check sign-ins again');
@@ -1393,6 +1394,24 @@ body .ba-panel button:disabled,#bubblesAICard button:disabled{
  color:#65536f!important;-webkit-text-fill-color:#65536f!important;
  background:#f1eaf5!important;opacity:.58!important;cursor:not-allowed!important;
 }
+/* Provider identity remains familiar inside the floating chat; these override generic purple controls. */
+body .ba-panel .ba-inline-account-provider button[data-provider]{
+ display:flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;
+ width:100%!important;border-radius:8px!important;min-height:48px!important;
+ box-shadow:none!important;
+}
+body .ba-panel .ba-inline-account-provider button[data-provider]::before{
+ content:"";display:block;width:24px;height:24px;flex:0 0 24px;
+ background-repeat:no-repeat;background-position:center;background-size:contain;
+}
+body .ba-panel .ba-inline-account-provider button[data-provider="github"]{
+ color:#fff!important;-webkit-text-fill-color:#fff!important;background:#24292f!important;border-color:#24292f!important;
+}
+body .ba-panel .ba-inline-account-provider button[data-provider="github"]::before{background-image:url('/assets/auth-github.svg')}
+body .ba-panel .ba-inline-account-provider button[data-provider="cloudflare"]{
+ color:#262626!important;-webkit-text-fill-color:#262626!important;background:#fff!important;border-color:#b1a8a1!important;
+}
+body .ba-panel .ba-inline-account-provider button[data-provider="cloudflare"]::before{background-image:url('/assets/auth-cloudflare.svg')}
 body .ba-panel .ba-send,#bubblesAICard .ba-primary{
  color:#fff!important;-webkit-text-fill-color:#fff!important;
  background:#5f2c91!important;border-color:#5f2c91!important;
