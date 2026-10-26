@@ -74,6 +74,7 @@ jobs:
             test/bubbles-smart-repository-routing.test.mjs \
             test/bubbles-technical-handoff.test.mjs \
             test/bubbles-direct-github.test.mjs \
+            test/bubbles-native-code-search.test.mjs \
             test/bubbles-tools.test.mjs \
             test/brain-assigned-job-scope.test.mjs \
             test/brain-color-core.test.mjs \
