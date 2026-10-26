@@ -50,7 +50,7 @@ test('explicit RecordB bot-team requests take the authenticated ticket path',()=
 });
 
 test('every Bubbles entrypoint loads the unpinned fresh action router',()=>{
- const routing=gateway.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|sourceRef) =/.test(line)).join('\n');
+ const routing=gateway.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|signinRelease|accountRelease|sourceRef) =/.test(line)).join('\n');
  const sourceRef=new Function('route','incoming',routing+';return sourceRef;');
  const version=fs.readFileSync('bubbles.html','utf8').match(/\/bubbles-ai\.js\?v=([0-9A-Za-z_-]+)/)?.[1];
  assert.ok(version,'Bubbles script revision is required');
