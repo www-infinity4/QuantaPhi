@@ -46,18 +46,21 @@
 
  
 
-    .bubbles-signin-gate{border:1px solid #d9c3eb;border-radius:20px;background:#fff;padding:17px;margin:16px 0 22px;box-shadow:0 5px 20px #48275d14}
+    .bubbles-signin-gate{border:1px solid #e1dad4;border-radius:16px;background:#fff;padding:24px;margin:16px auto 24px;max-width:420px;box-shadow:0 5px 20px #48275d0a}
     .bubbles-chatgpt-entry[hidden],.bubbles-signin-gate[hidden]{display:none!important}
-    .bubbles-signin-gate h2{font-size:21px;color:#4a237c;margin:0}
-    .bubbles-signin-gate>p{margin:7px 0 12px}
-    .bubbles-signin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .bubbles-signin-provider{border:1px solid #e0d5e9;background:#fcfaff;border-radius:15px;padding:14px;min-width:0}
+    .bubbles-signin-gate h2{font-size:24px;color:#30243e;margin:0}
+    .bubbles-signin-gate>p{margin:8px 0 20px;color:#655c6b;font-size:15px}
+    .bubbles-signin-grid{display:grid;gap:16px}
+    .bubbles-signin-provider{min-width:0}
+    .bubbles-signin-provider[hidden]{display:none!important}
     .bubbles-signin-provider[data-status="connected"]{border-color:#7fb9a2;background:#f3fbf7}
-    .bubbles-signin-provider[data-status="unavailable"]{opacity:.8}
-    .bubbles-signin-provider h3{font-size:18px;margin:0 0 6px;color:#382047}
-    .bubbles-signin-provider p{font-size:13px;line-height:1.5;overflow-wrap:anywhere}
-    .bubbles-signin-provider button{width:100%;min-height:45px;background:#612991;color:white;border:0;border-radius:11px;font:700 14px system-ui;padding:10px;cursor:pointer}
-    .bubbles-signin-provider button:disabled{opacity:.6;cursor:default}
+    .bubbles-signin-provider p{font-size:13px;line-height:1.5;overflow-wrap:anywhere;margin:7px 0 0;color:#655c6b}
+    .bubbles-signin-provider p:empty{display:none}
+    .bubbles-signin-provider button{width:100%;min-height:48px;background:#24292f;color:#fff;border:1px solid #24292f;border-radius:8px;font:650 16px system-ui;padding:12px 16px;cursor:pointer}
+    #bubblesCloudflareSignIn{background:#fff;color:#262626;border-color:#b1a8a1;border-left:5px solid #f48120}
+    .bubbles-signin-provider button:hover:not(:disabled){filter:brightness(.95)}
+    .bubbles-signin-provider button:focus-visible{outline:3px solid #298ed4;outline-offset:3px}
+    .bubbles-signin-provider button:disabled{opacity:.55;cursor:default}
     .bubbles-signin-provider small{display:block;line-height:1.5;color:#575069;margin-top:10px;font-size:12px}
     .bubbles-signin-gate[data-ready="true"]{border-color:#7fb9a2;background:#f5fcf7}
     .bubbles-signin-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:13px;margin-top:14px}
@@ -139,27 +142,23 @@
     <!-- Stage 2 preview: chat remains usable until both providers and backup
          recovery are verified live; no client-side status authorizes tools. -->
     <section class="bubbles-signin-gate" id="bubblesSigninGate" data-ready="false" aria-labelledby="bubblesSigninTitle">
-      <h2 id="bubblesSigninTitle">Connect Bubbles once</h2>
-      <p id="bubblesSigninStatus" role="status" aria-live="polite">Checking saved GitHub and Cloudflare permissions…</p>
+      <h2 id="bubblesSigninTitle">Sign in to Bubbles</h2>
+      <p id="bubblesSigninStatus" role="status" aria-live="polite">Checking your sign-in…</p>
       <div class="bubbles-signin-grid">
         <article class="bubbles-signin-provider" id="bubblesGithubCard">
-          <h3>GitHub sign-in</h3>
-          <p id="bubblesGithubStatus">Checking your private account connection…</p>
-          <button id="bubblesGithubSignIn" type="button" disabled>Checking GitHub…</button>
-          <small>Approve the official GitHub App permissions. Your private backup repository is created only after its write access is verified in Stage 3.</small>
+          <button id="bubblesGithubSignIn" type="button" disabled aria-describedby="bubblesGithubStatus">Sign in with GitHub</button>
+          <p id="bubblesGithubStatus"></p>
         </article>
         <article class="bubbles-signin-provider" id="bubblesCloudflareCard">
-          <h3>Cloudflare sign-in</h3>
-          <p id="bubblesCloudflareStatus">Checking your project permissions…</p>
-          <button id="bubblesCloudflareSignIn" type="button" disabled>Checking Cloudflare…</button>
-          <details class="bubbles-permission-preview"><summary>Review full project access request</summary><p>Workers, Workers routes, Pages, D1, KV, R2, Queues, Workers AI, Browser Rendering, Containers, observability and DNS. Cloudflare itself must confirm the requested permissions. This does not grant billing, account-membership administration, or API-token creation.</p></details><small>One-time authorization, encrypted server-side with refresh/revoke. Bubbles cannot claim full access without Cloudflare's approval.</small>
+          <button id="bubblesCloudflareSignIn" type="button" disabled aria-describedby="bubblesCloudflareStatus">Sign in with Cloudflare</button>
+          <p id="bubblesCloudflareStatus"></p>
         </article>
       </div>
       <div class="bubbles-signin-controls">
-        <button id="bubblesRetrySignInCheck" type="button" class="bubbles-signin-retry">Check sign-ins again</button>
-        <a id="bubblesOpenExistingChat" href="#bubblesAICard">Continue to existing chat while setup completes</a>
-        <a href="/bubbles-accounts.html">Manage connections</a>
-        <a href="/wallet-recovery.html?verify=1">Restore an existing wallet session</a>
+        <button id="bubblesRetrySignInCheck" type="button" class="bubbles-signin-retry">Try again</button>
+        <a id="bubblesOpenExistingChat" href="#bubblesAICard">Open chat</a>
+        <a href="/bubbles-accounts.html">Connections</a>
+        <a href="/wallet-recovery.html?verify=1">Restore wallet</a>
       </div>
     </section>
 
@@ -228,7 +227,7 @@ html.bubble-iframe .bubbles-bottom-nav,body.bubbles-embedded .bubbles-bottom-nav
 </style>
 <footer class="qp-site-footer" aria-label="QuantaPhi site information"><p>QuantaPhi · AI research, media and learning</p><nav aria-label="Legal and site links"><a href="/">Home</a><a href="/about.html">About</a><a href="/privacy.html">Privacy Policy</a><a href="/learn/">Learn</a></nav></footer>
   <script type="module">
-    import('/bubbles-signin-gate.mjs?v=20261021-timeout1')
+    import('/bubbles-signin-gate.mjs?v=20261026-signin2')
       .then(({mountBubblesSigninGate})=>mountBubblesSigninGate())
       .catch(()=>{
         const state=document.getElementById('bubblesSigninStatus');
