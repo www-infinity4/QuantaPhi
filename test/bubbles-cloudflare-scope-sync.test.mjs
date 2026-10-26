@@ -64,6 +64,16 @@ test('verified exact client + 386 scopes updates one secret and checks live coun
  const repeat=await confirmBubblesScopeSync(db,{requestId:plan.requestId},env,{issue:h.issue,request:h.request});
  assert.equal(repeat.ok,false);
 });
+test('refresh-token protocol scope is not counted as an application permission',async()=>{
+ const db=storage(),plan=await planBubblesScopeSync(db,env);
+ const h=harness({scopes:[...fakeScopeIDs(),'offline_access']});
+ const result=await confirmBubblesScopeSync(db,{requestId:plan.requestId},env,{issue:h.issue,request:h.request});
+ assert.equal(result.ok,true);
+ assert.equal(result.verifiedRegisteredScopeCount,386);
+ const request=h.logs.find(x=>x.url.endsWith('/workers/scripts/bubbles-connections/secrets'));
+ assert.equal(JSON.parse(request.body).text.split(' ').length,386);
+ assert.ok(!JSON.parse(request.body).text.includes('offline_access'));
+});
 test('385 scoped client is never guessed or altered',async()=>{
  const db=storage(),plan=await planBubblesScopeSync(db,env),h=harness({scopes:fakeScopeIDs().slice(0,385)});
  const result=await confirmBubblesScopeSync(db,{requestId:plan.requestId},env,{issue:h.issue,request:h.request});
