@@ -180,3 +180,10 @@ test('Cloudflare account discovery is verified with the users token and strips p
  assert.equal(calls[0].url,'https://api.cloudflare.com/client/v4/accounts?page=1&per_page=50');
  assert.ok(!JSON.stringify(result).includes('SHOULD_NOT_LEAK'));
 });
+
+test('Cloudflare limited configuration remains connectable without requesting full-project scopes',async()=>{
+ const source=await (await import('node:fs/promises')).readFile(new URL('../bubbles-connections.mjs',import.meta.url),'utf8');
+ assert.match(source,/button\.disabled=!provider\.configured;/);
+ assert.match(source,/cloudLimited\?\['account\.read','projects\.build','ledger\.read'\]/);
+ assert.doesNotMatch(source,/button\.disabled=!provider\.configured\|\|cloudFull/);
+});
