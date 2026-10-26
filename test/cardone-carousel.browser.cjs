@@ -28,6 +28,11 @@ test('Gary Cardone appears once, inside the carousel, and survives Next/Previous
    await page.goto(origin+'/?card=cardone',{waitUntil:'domcontentloaded'});
    await page.waitForFunction(()=>document.body.classList.contains('oracle-card-deck-active'));
    await page.waitForFunction(()=>document.querySelector('#oracleCardChooser option[value="churchOfIAmCard"]'));
+   const chooseGary=async()=>{
+    const chooser=page.locator('#oracleCardChooser');
+    if(!await chooser.isVisible())await page.locator('#oracleCardInventory').click();
+    await chooser.selectOption('churchOfIAmCard');
+   };
    const metrics=()=>page.evaluate(()=>{
     const card=document.getElementById('churchOfIAmCard');
     return {count:document.querySelectorAll('#churchOfIAmCard').length,
@@ -36,7 +41,7 @@ test('Gary Cardone appears once, inside the carousel, and survives Next/Previous
    });
    assert.equal((await metrics()).display,'none','Gary must not remain above the carousel at '+width+'px');
    await page.evaluate(()=>{window.__qaGary=document.getElementById('churchOfIAmCard')});
-   await page.locator('#oracleCardChooser').selectOption('churchOfIAmCard');
+   await chooseGary();
    let state=await metrics();
    assert.equal(state.count,1);assert.equal(state.parent,'oracleCardStage');assert.notEqual(state.display,'none');
    await page.locator('#oracleCardNext').click();
@@ -46,7 +51,7 @@ test('Gary Cardone appears once, inside the carousel, and survives Next/Previous
    await page.locator('#oracleCardScroll').click();
    state=await metrics();assert.notEqual(state.parent,'oracleCardStage');assert.equal(state.display,'none','Gary remains carousel-only in the expanded shelf');
    await page.locator('#oracleCardScroll').click();
-   await page.locator('#oracleCardChooser').selectOption('churchOfIAmCard');
+   await chooseGary();
    state=await metrics();assert.equal(state.count,1);assert.equal(state.parent,'oracleCardStage');assert.equal(state.same,true);
    await page.close();
   }
