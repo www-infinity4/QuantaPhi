@@ -41,6 +41,20 @@ export function connectionCodeMessage(error) {
   };
   return messages[error?.message]||messages[error?.name]||'Code creation failed (account_connection_unavailable). The service needs further diagnosis.';
 }
+export function providerSignInErrorMessage(code){
+  const value=String(code||'');
+  if(value==='callback_session_mismatch'||value==='verified_wallet_required')
+    return 'Bubbles could not verify this browser session. Return to the original Bubbles browser and sign in again.';
+  if(value==='state_invalid_or_used'||value==='state_expired')
+    return 'This authorization was already used or expired. Start a new Cloudflare authorization.';
+  if(value==='connection_operation_failed'||value.startsWith('connection_complete_'))
+    return 'Cloudflare returned to Bubbles, but Bubbles could not complete the account connection. Please retry; the connector needs repair if this repeats.';
+  if(value==='cloudflare_client_scopes_unavailable'||value==='provider_not_configured')
+    return 'The Bubbles Cloudflare OAuth application requires configuration before this permission can be authorized.';
+  if(value==='provider_response_invalid'||value==='provider_identity_invalid'||value.startsWith('cloudflare_exchange'))
+    return 'Cloudflare did not return a usable authorization. Retry the Bubbles Cloudflare connection.';
+  return 'Bubbles could not confirm the authorization. Retry Cloudflare sign-in.';
+}
 export class AccountConnections {
   constructor({token,request = (...args)=>fetch(...args),root = window,timeoutMs=10000}) {
     this.token=token;this.request=request;this.root=root;this.pending=null;this.timeoutMs=Math.max(1,Number(timeoutMs)||10000);
@@ -104,8 +118,13 @@ export class AccountConnections {
         }else if(data.status==='declined')finish(Error('Account authorization was declined.'));
         else if(data.status==='expired')finish(Error('Sign-in expired. Start Connect account again.'));
       }catch(error){
-        if(['callback_session_mismatch','verified_wallet_required','state_invalid_or_used'].includes(error.message))
-          finish(error);
+        // Callback/code exchange failures cannot be cured by polling. Surface a
+        // recoverable, sanitized error now rather than waiting five minutes and
+        // incorrectly reporting that the user never authorized the account.
+        const code=String(error?.message||'');
+        if(!['connection_timeout','AbortError','TimeoutError','TypeError','refresh_in_progress'].includes(code)){
+          finish(Error(providerSignInErrorMessage(code)));
+        }
       }finally{
         pending.polling=false;
         if(this.pending===pending&&!pending.finished)
@@ -256,8 +275,15 @@ export function mountConnections(container,{token}) {
           const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):availableActions;
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';button.disabled=false;button.removeAttribute('aria-busy');return;}
           try {await client.connect(provider.id,actions,(error,account)=>{
-            cancel.hidden=true;status.textContent=error?error.message:'Connected '+account.label+'.';void load();
-          });cancel.hidden=false;status.textContent='Continue on '+providerName+' to sign in, then return here.';}catch(error){status.textContent=error.message;}finally{button.disabled=Boolean(client.pending);button.removeAttribute('aria-busy');}
+            cancel.hidden=true;
+            if(error)status.textContent=error.message;
+            else{status.textContent='Connected '+account.label+'.';void load();}
+          });cancel.hidden=false;
+            status.textContent=provider.id==='cloudflare'
+              ?'On Cloudflare, select your account and tap Authorize to finish connecting Bubbles.'
+              :'Continue on '+providerName+' to authorize Bubbles, then return here.';
+          }catch(error){status.textContent=providerSignInErrorMessage(error.message);}
+          finally{button.disabled=Boolean(client.pending);button.removeAttribute('aria-busy');}
         });catalog.append(card);
       }
       if(unavailable.childNodes.length>1)catalog.append(unavailable);
@@ -451,6 +477,6 @@ export function mountConnections(container,{token}) {
     cancel.hidden=true;
     status.textContent=error?error.message:'Connected '+account.label+'.';
     if(!error)void load();
-  })){cancel.hidden=false;status.textContent='Checking returned account authorization…';}
+  })){cancel.hidden=false;status.textContent='Finishing Cloudflare authorization securely…';}
   return {client,refresh:load};
 }
