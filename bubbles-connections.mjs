@@ -112,7 +112,11 @@ export class AccountConnections {
           pending.pollTimer=this.root.setTimeout(()=>void poll(),2500);
       }
     };
-    pending.onReturn=()=>{if(this.pending===pending&&!pending.finished)void poll();};
+    pending.onReturn=()=>{
+      if(this.pending!==pending||pending.finished)return;
+      if(popup?.closed){finish(Error('The sign-in window was closed. Tap Sign in to retry.'));return;}
+      void poll();
+    };
     this.root.addEventListener?.('focus',pending.onReturn);
     this.root.addEventListener?.('pageshow',pending.onReturn);
     this.root.document?.addEventListener?.('visibilitychange',pending.onReturn);
@@ -132,10 +136,15 @@ export class AccountConnections {
     // Open synchronously on the user's tap where supported. Android WebViews
     // may block window.open; use same-window navigation with session-bound
     // short-lived state as a fallback, never a provider code or wallet token.
+    // Navigate the initiating browser directly. Android Chrome/PWA/WebView must
+    // never receive an empty popup while /start is resolving asynchronously.
+    // The callback resumes from this tab's sealed short-lived session state.
+    const sameWindow=Boolean(this.root.location?.assign&&this.root.sessionStorage);
     let popup=null;
-    try{popup=this.root.open?.('about:blank','bubbles-account-connect','popup,width=520,height=720')||null;}catch{}
-    if(!popup&&(!this.root.location?.assign||!this.root.sessionStorage))
-      throw Error('This viewer cannot open sign-in. Open Account Connections in Chrome.');
+    if(!sameWindow){
+      try{popup=this.root.open?.('about:blank','bubbles-account-connect','popup,width=520,height=720')||null;}catch{}
+      if(!popup)throw Error('This viewer cannot open sign-in. Open Account Connections in Chrome.');
+    }
     try{
       const result=await this.call('/start',{provider,actions});
       const authorization=new URL(result.authorizationUrl),state=authorization.searchParams.get('state');
@@ -147,8 +156,8 @@ export class AccountConnections {
       try{this.root.sessionStorage?.setItem('bubbles:oauth-pending:v1',JSON.stringify(saved));}
       catch{if(!popup)throw Error('This viewer cannot preserve sign-in. Open Account Connections in Chrome.');}
       this.trackHandoff(saved,popup,onComplete);
-      if(popup)popup.location.href=authorization.href;
-      else this.root.location.assign(authorization.href);
+      if(sameWindow)this.root.location.assign(authorization.href);
+      else popup.location.href=authorization.href;
     }catch(error){
       try{popup?.close();}catch{}
       this.cleanup();
@@ -192,7 +201,7 @@ export function mountConnections(container,{token}) {
     const label=element('label',''),check=document.createElement('input');check.type='checkbox';check.value=action;label.append(check,document.createTextNode(' '+name+' '));scopes.append(label);selections.push(check);
   }
   section.append(element('h2','Your accounts'),status,catalog,cancel,accounts,scopes,refresh);container.append(section);
-  const pairing=element('details','','ba-pairing');pairing.append(element('summary','Connect another browser'));
+  const pairing=element('details','','ba-pairing');pairing.append(element('summary','Advanced: connect another browser (optional)'));
   pairing.append(element('p','On your phone, open Bubbles on quantaphi.org in the browser with your existing wallet. Open these account settings and create a two-minute code. Enter it here. This grants account-connector access for 15 minutes, without transferring your wallet token. Keep the code private.'));
   const create=element('button','Create connection code on this device','ba-control'),redeem=element('button','Connect this browser','ba-control'),end=element('button','End this browser connection','ba-control'),code=document.createElement('input'),output=element('p','');
   code.type='password';code.autocomplete='off';code.maxLength=43;code.setAttribute('aria-label','Two-minute connector pairing code');
@@ -202,15 +211,31 @@ export function mountConnections(container,{token}) {
   end.addEventListener('click',async()=>{try{if(paired())await client.call('/pair/end',{});sessionStorage.removeItem(sessionKey);output.textContent='Browser connection ended.';await load();}catch{output.textContent='Could not end the server session. Try again; it expires automatically after 15 minutes.';}});
   pairing.append(create,output,code,redeem,end);section.append(pairing);
   async function load() {
-    refresh.disabled=true;catalog.replaceChildren();accounts.replaceChildren();
+    refresh.disabled=true;
     try {
-      const data=await client.call('/catalog');
+      // Wait for BOTH authenticated service reads before painting. Do not display
+      // "Sign in" above a confirmed connected account while a second fetch runs.
+      const [data,dataAccounts]=await Promise.all([client.call('/catalog'),client.call('/accounts')]);
+      catalog.replaceChildren();accounts.replaceChildren();
+      const signedIn=new Map();
+      for(const account of dataAccounts.accounts||[]){
+        if(account.status==='connected'&&!signedIn.has(account.provider))signedIn.set(account.provider,account);
+      }
       scopes.hidden=!data.providers.some(provider=>provider.id==='google'&&provider.configured);
       const unavailable=element('details','','ba-unavailable');unavailable.append(element('summary','Other account services'));
       for(const provider of data.providers) {
         const providerName=NAMES[provider.id]||provider.id;
         if(!provider.configured){unavailable.append(element('p',providerName+' — connection setup is not available yet.','ba-muted'));continue;}
         const card=element('div','','ba-provider-card');
+        if(signedIn.has(provider.id)){
+          const account=signedIn.get(provider.id);
+          card.dataset.status='connected';
+          const connected=element('p',providerName+' · Signed in'+(account.label?' as '+account.label:''),'ba-provider-connected');
+          connected.setAttribute('role','status');
+          card.append(connected);
+          catalog.append(card);
+          continue;
+        }
         const button=element('button','Sign in with '+providerName,'ba-control');
         button.type='button';button.disabled=Boolean(client.pending);button.dataset.provider=provider.id;
         button.classList.add('ba-signin-button');
@@ -219,6 +244,10 @@ export function mountConnections(container,{token}) {
         if(provider.id==='cloudflare'&&provider.fullProjectConfigured===false)
           card.append(element('p','Sign in to connect your account. Additional project permissions still need application setup.'));
         const availableActions=providerAuthorizationActions(provider);
+        if(provider.id!=='google'&&!availableActions.length){
+          button.disabled=true;
+          card.append(element('p','This provider has no registered sign-in permissions. Application setup is required.','ba-muted'));
+        }
         button.addEventListener('click',async()=>{
           if(client.pending){status.textContent='Finish or cancel the current sign-in first.';return;}
           button.disabled=true;button.setAttribute('aria-busy','true');status.textContent='Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
@@ -230,7 +259,6 @@ export function mountConnections(container,{token}) {
         });catalog.append(card);
       }
       if(unavailable.childNodes.length>1)catalog.append(unavailable);
-      const dataAccounts=await client.call('/accounts');
       for(const account of dataAccounts.accounts) {
         const row=element('div','','ba-account-card');
         row.append(element('p',(NAMES[account.provider]||account.provider)+' · '+account.label+' · '+account.status));
@@ -334,8 +362,20 @@ export function mountConnections(container,{token}) {
             }catch(error){backupStatus.textContent='Private repository not created: '+error.message;}
             finally{createPrivate.disabled=false;}
           });
-          row.append(inspect,test,result,walletRepo,backup,compare,createPrivate,backupStatus);
-          void loadPrivateRepositories().catch(()=>{backupStatus.textContent='GitHub repository list is unavailable. No backup was written.';});
+          // Backup controls are unrelated to signing in. Keep them optional,
+          // collapsed and inert until explicitly opened by the account owner.
+          const backupTools=element('details','','ba-optional-backup');
+          backupTools.append(element('summary','Optional StarCoin backup'),
+            walletRepo,backup,compare,createPrivate,backupStatus);
+          let backupLoaded=false;
+          backupTools.addEventListener('toggle',()=>{
+            if(!backupTools.open||backupLoaded)return;
+            backupLoaded=true;
+            void loadPrivateRepositories().catch(()=>{
+              backupStatus.textContent='GitHub repository list is unavailable. No backup was written.';
+            });
+          });
+          row.append(inspect,test,result,backupTools);
           }
         }
         accounts.append(row);
@@ -395,8 +435,12 @@ export function mountConnections(container,{token}) {
           tools.append(output);accounts.append(tools);
         }
       }
-      status.textContent=dataAccounts.accounts.length?'Connected accounts checked.':'No connected accounts yet.';
-    }catch(error) {status.textContent=connectionCodeMessage(error);}
+      status.textContent=client.pending?'Complete or cancel the current sign-in.':
+        dataAccounts.accounts.length?'Account connection status verified.':'No connected accounts yet.';
+      cancel.hidden=!client.pending;
+    }catch(error) {status.textContent=error?.message==='verified_wallet_required'?
+      'This browser has no verified Bubbles account session. Open Bubbles in the browser where you are signed in.':
+      'Could not verify account connections. Please retry.';}
     finally {refresh.disabled=false;}
   }
   refresh.addEventListener('click',()=>void load());
