@@ -44,6 +44,16 @@ export function callbackPage(provider,result='') {
 export async function handleConnections(request,env,resolveService) {
   const url = new URL(request.url), origin = request.headers.get('Origin') || '';
   if (request.method === 'GET' && url.pathname === PREFIX+'/health') return json(origin,{ok:true,service:'bubbles-connections',version:2});
+  // Public configuration proof only. No account identity, token, or user data.
+  if(request.method==='GET'&&url.pathname===PREFIX+'/scope-inventory'){
+    const ready=env.CONNECTIONS_READY===true||env.CONNECTIONS_READY==='true';
+    const clientId=String(env.CLOUDFLARE_CLIENT_ID||'');
+    const configured=ready&&/^[a-f0-9]{32}$/i.test(clientId);
+    const inventory=cloudflareScopeInventory(env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES);
+    return json(origin,{ok:true,configured,clientIdPrefix:configured?clientId.slice(0,16):null,
+      scopeInventory:{serverAllowlistCount:inventory.serverAllowlistCount,
+        signInRequestScopeCount:inventory.signInRequestScopeCount}});
+  }
   const callback = url.pathname.match(/^\/api\/bubbles\/connections\/(google|github|cloudflare)\/callback$/);
   if(callback && request.method==='GET'){
     const provider=callback[1],state=url.searchParams.get('state');

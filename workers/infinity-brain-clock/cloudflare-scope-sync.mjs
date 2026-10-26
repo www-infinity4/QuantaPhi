@@ -68,10 +68,10 @@ export async function confirmBubblesScopeSync(storage,body,env,{
   if(scopes.length!==EXPECTED)throw Error('oauth_client_scope_count_not_386');
   if(!scopes.every(s=>typeof s==='string'&&/^[a-zA-Z][\w.-]{1,100}$/.test(s))||
     new Set(scopes).size!==scopes.length)throw Error('oauth_client_scopes_invalid');
-  const existing=await request('https://quantaphi.org/api/bubbles/connections/catalog',{
+  const existing=await request('https://quantaphi.org/api/bubbles/connections/scope-inventory',{
    headers:{Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(12000)});
   const catalog=existing.ok?await existing.json().catch(()=>({})):{};
-  const cloudflare=catalog.providers?.find(x=>x.id==='cloudflare');
+  const cloudflare=catalog.ok===true&&catalog.configured===true?catalog:null;
   if(cloudflare?.clientIdPrefix!==CLIENT_ID.slice(0,16))
    throw Error('active_bubbles_client_does_not_match');
   // We have verified the registered scope inventory AND that this is the live client.
@@ -96,9 +96,9 @@ export async function confirmBubblesScopeSync(storage,body,env,{
   // until a fresh public catalog read actually returns the new count.
   let count=null;
   try{
-   const check=await request('https://quantaphi.org/api/bubbles/connections/catalog?scopeSync=1',
+   const check=await request('https://quantaphi.org/api/bubbles/connections/scope-inventory?scopeSync=1',
     {headers:{Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(12000)});
-   if(check.ok){const data=await check.json();count=data?.providers?.find(x=>x.id==='cloudflare')?.scopeInventory?.serverAllowlistCount??null;}
+   if(check.ok){const data=await check.json();count=data?.scopeInventory?.serverAllowlistCount??null;}
   }catch{}
   return {ok:true,status:count===EXPECTED?'live_scope_count_verified':'installed_awaiting_live_verification',
    clientIdPrefix:CLIENT_ID.slice(0,16),verifiedRegisteredScopeCount:scopes.length,

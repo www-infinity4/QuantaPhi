@@ -218,3 +218,20 @@ test('OAuth callback HTML has no browser messaging or provider secrets',async()=
  assert.equal(page.headers.get('Cache-Control'),'no-store');
  assert.equal(callbackPage('unknown').status,404);
 });
+
+test('public scope inventory is session-free, secret-free, and never grants mutation',async()=>{
+  const configured={...env,CLOUDFLARE_CLIENT_ID:'8f676e020d9ff91a2951e415d144c9b7',
+    CLOUDFLARE_CLIENT_SECRET:'hidden-secret-do-not-return',
+    CLOUDFLARE_OAUTH_ALLOWED_SCOPES:FULL_CLOUDFLARE_SCOPES};
+  const url='https://quantaphi.org'+PREFIX+'/scope-inventory';
+  const res=await handleConnections(new Request(url),configured,()=>assert.fail('never resolve identity'));
+  assert.equal(res.status,200);
+  const data=await res.json();
+  assert.equal(data.ok,true);
+  assert.equal(data.clientIdPrefix,'8f676e020d9ff91a');
+  assert.equal(data.scopeInventory.serverAllowlistCount,FULL_CLOUDFLARE_SCOPES.split(' ').length);
+  assert.ok(!JSON.stringify(data).includes('hidden-secret'));
+  assert.ok(!Object.keys(data).includes('providers'));
+  const blocked=await handleConnections(new Request(url,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}),configured,()=>assert.fail('no mutation'));
+  assert.equal(blocked.status,403);
+});
