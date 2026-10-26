@@ -40,6 +40,43 @@ export class ConsentService {
     });
     return {provider, authorizationUrl, expiresIn:300};
   }
+  // Cross-browser handoff is stored only in the wallet owner's Durable Object.
+  // No OAuth code is returned to a browser status poll.
+  async handoff({userId,provider,state,code,error}) {
+    const prefix=await this.namespace(userId);
+    if(!Object.hasOwn(PROVIDERS,provider)||typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state))
+      throw Error('callback_invalid');
+    if(code!==undefined&&(typeof code!=='string'||!code||code.length>4096))
+      throw Error('callback_invalid');
+    const key=prefix+'state:'+await digest(state),handoffKey=prefix+'handoff:'+await digest(state);
+    return this.storage.transaction(async tx=>{
+      const sealed=await tx.get(key);
+      if(!sealed)throw Error('state_invalid_or_used');
+      const pending=await this.vault.open(sealed,key);
+      if(pending.provider!==provider||pending.userId!==userId||pending.expiresAt<=this.now())
+        throw Error('state_invalid_or_used');
+      if(await tx.get(handoffKey))throw Error('callback_already_received');
+      await tx.put(handoffKey,{...await this.vault.seal({code:code||null,error:error?'provider_declined':null},handoffKey),expiresAt:pending.expiresAt});
+      return {received:true};
+    });
+  }
+  async handoffStatus({userId,sessionId,provider,state}) {
+    const prefix=await this.namespace(userId),sessionHash=await this.session(sessionId);
+    if(!Object.hasOwn(PROVIDERS,provider)||typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state))
+      throw Error('callback_invalid');
+    const hash=await digest(state),key=prefix+'state:'+hash,handoffKey=prefix+'handoff:'+hash;
+    const sealed=await this.storage.get(key);
+    if(!sealed)return {status:'expired'};
+    const pending=await this.vault.open(sealed,key);
+    if(pending.userId!==userId||pending.sessionHash!==sessionHash||pending.provider!==provider)
+      throw Error('callback_session_mismatch');
+    if(pending.expiresAt<=this.now())return {status:'expired'};
+    const arrival=await this.storage.get(handoffKey);
+    if(!arrival)return {status:'pending'};
+    const handoff=await this.vault.open(arrival,handoffKey);
+    if(handoff.error)return {status:'declined'};
+    return {status:'received'};
+  }
   async complete({userId, sessionId, provider, state, code}) {
     const prefix = await this.namespace(userId), sessionHash = await this.session(sessionId);
     if (typeof state !== 'string' || !/^[A-Za-z0-9_-]{43}$/.test(state) || typeof code !== 'string' || !code || code.length > 4096) throw Error('callback_invalid');
