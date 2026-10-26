@@ -1,5 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
+import {runInNewContext} from 'node:vm';
 import {handleConnections,PREFIX} from '../workers/bubbles-connections/router.mjs';
 const bearer='Bearer sq_'+ 'a'.repeat(40);
 function request(path,{method='GET',origin='https://quantaphi.org',authorization=bearer,body}={}) {
@@ -151,4 +152,26 @@ test('Cloudflare account lookup and selection always receive verified wallet use
  assert.equal(select.status,200);
  assert.ok(calls.every(x=>x.userId==='verified-alice'));
  assert.equal((await select.json()).storageReady,false);
+});
+
+// Exercise the real callback HTML's inline script, not a reimplemented validator.
+test('callback rejects duplicate provider parameters and fragments before code exchange',async()=>{
+ const response=await handleConnections(request('/github/callback'),{},()=>assert.fail());
+ const html=await response.text();
+ const script=html.match(/<script nonce="[^"]+">([\s\S]*?)<\/script>/)?.[1];
+ assert.ok(script,'the callback page must have its inline script');
+ const cases=[
+  {search:'?state='+ 's'.repeat(43)+'&state=duplicate&code=code',hash:''},
+  {search:'?state='+ 's'.repeat(43)+'&code=one&code=two',hash:''},
+  {search:'?state='+ 's'.repeat(43)+'&code=code&error=access_denied',hash:''},
+  {search:'?state='+ 's'.repeat(43)+'&code=code',hash:'#access_token=unsafe'}
+ ];
+ for(const {search,hash} of cases){
+  const status={textContent:'initial'},historyCalls=[];
+  const location={search,hash,pathname:'/api/bubbles/connections/github/callback'};
+  runInNewContext(script,{URLSearchParams,location,history:{replaceState:(...args)=>historyCalls.push(args)},
+   window:{},document:{getElementById:()=>status}});
+  assert.match(status.textContent,/Invalid sign-in return/);
+  assert.equal(historyCalls.length,1,'callback must clear the provider query');
+ }
 });
