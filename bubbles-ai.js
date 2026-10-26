@@ -500,7 +500,7 @@ let accountConnectionsUI=null;
 connectedAccounts.addEventListener('toggle',async()=>{
  if(!connectedAccounts.open||accountConnectionsUI)return;
  try{
-  const module=await import('/bubbles-connections.mjs?v=20261018-direct2');
+  const module=await import('/bubbles-connections.mjs?v=20261026-account-signin1');
   accountConnectionsUI=module.mountConnections(connectedAccounts,{token:()=>module.resolveConnectorWalletToken(window)});
   await accountConnectionsUI.refresh();
  }catch{connectedAccounts.append(create('p','ba-muted','Account connections could not load. Try again after reconnecting your wallet.'));}
@@ -875,11 +875,16 @@ async function checkPanelGate(){
  if(!chatGate||chatGateMounted||chatGateLoading)return;
  chatGateLoading=true;
  try{
-  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261021-timeout1');
+  const {mountBubblesSigninGate}=await Promise.race([import('/bubbles-signin-gate.mjs?v=20261026-oracle-auth1'),new Promise((_,reject)=>setTimeout(()=>reject(Error('signin_gate_load_timeout')),9000))]);
   chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
  }catch{
   const hint=document.getElementById('chatBubblesSigninStatus');
-  if(hint)hint.textContent='Account sign-ins are temporarily unavailable. Bubbles chat remains available.';
+  if(hint)hint.textContent='Sign-in status unavailable. Open Account Connections to continue; chat remains available.';
+   for(const id of ['chatBubblesGithub','chatBubblesCloudflare']){
+    const button=document.getElementById(id+'SignIn'),label=document.getElementById(id+'Status');
+    if(label)label.textContent='Status unavailable';
+    if(button){button.disabled=false;button.textContent='Open Account Connections';button.addEventListener('click',()=>location.assign('/bubbles-accounts.html'),{once:true});}
+   }
  }finally{chatGateLoading=false;}
 }
 const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then speak naturally.');
@@ -971,7 +976,7 @@ connectorCodeButton.addEventListener('click',async()=>{
  connectorCodeOutput.hidden=true;connectorCodeValue.value='';clearTimeout(connectorCodeTimer);
  let module;
  try{
-  module=await import('/bubbles-connections.mjs?v=20261018-direct2');
+  module=await import('/bubbles-connections.mjs?v=20261026-account-signin1');
   const client=new module.AccountConnections({token:()=>module.resolveConnectorWalletToken(window)});
   const result=await client.call('/pair/create',{});
   if(!/^[A-Za-z0-9_-]{16,64}$/.test(result.code||'')||!Number.isFinite(result.expiresIn)||result.expiresIn<=0)throw Error('connection_response_invalid');

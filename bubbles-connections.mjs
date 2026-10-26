@@ -1,5 +1,10 @@
 const API = '/api/bubbles/connections';
 const NAMES = {cloudflare:'Cloudflare',google:'Google',github:'GitHub',ebay:'eBay',walmart:'Walmart',ibm:'IBM',anthropic:'Anthropic'};
+export function availableCloudflareLoginActions(provider) {
+  if(provider?.id!=='cloudflare'||provider.configured!==true||!Array.isArray(provider.actions))return [];
+  return ['account.read','projects.build','ledger.read','projects.full'].filter(action=>provider.actions.includes(action));
+}
+
 export function providerAuthorizationActions(provider) {
   if(!provider?.configured)return [];
   if(provider.id!=='cloudflare')return provider.id==='github'?['repository.read']:[];

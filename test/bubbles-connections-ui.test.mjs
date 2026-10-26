@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {AccountConnections,mountConnections,resolveConnectorWalletToken,connectionCodeMessage} from '../bubbles-connections.mjs';
+import {AccountConnections,mountConnections,resolveConnectorWalletToken,connectionCodeMessage,availableCloudflareLoginActions} from '../bubbles-connections.mjs';
 
 test('account page launches real Cloudflare consent with registered actions even without the full project toolkit',async t=>{
  class Element {
@@ -312,4 +312,13 @@ test('Android return accepts a sealed connected receipt without repeating token 
  assert.equal(completed.account.label,'saved-github');
  assert.equal(popup.closed,true);
  assert.equal(calls.filter(x=>x.endsWith('/handoff/finish')).length,0);
+});
+
+test('Account Connections Cloudflare sign-in is usable without unregistered full-project scopes',()=>{
+ const provider={id:'cloudflare',configured:true,fullProjectConfigured:false,actions:['account.read']};
+ assert.deepEqual(availableCloudflareLoginActions(provider),['account.read']);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,actions:['account.read','ledger.read','projects.full']}),['account.read','ledger.read','projects.full']);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,configured:false}),[]);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,actions:[]}),[]);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,id:'github'}),[]);
 });
