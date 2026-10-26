@@ -126,6 +126,7 @@ export async function handleConnections(request,env,resolveService) {
     let body; try {body = JSON.parse(raw);} catch {return json(origin,{ok:false,error:'invalid_json'},400);}
     if (!body || typeof body !== 'object' || Array.isArray(body)) return json(origin,{ok:false,error:'invalid_json'},400);
     if (url.pathname === PREFIX+'/handoff/status') return json(origin,{ok:true,...await service.handoffStatus({...identity,provider:body.provider,state:body.state})});
+    if (url.pathname === PREFIX+'/handoff/finish') return json(origin,{ok:true,...await service.finishHandoff({...identity,provider:body.provider,state:body.state})});
     if (url.pathname === PREFIX+'/github/starcoins/create-repository')
       return json(origin,{ok:true,...await service.createStarCoinRepository({userId:identity.userId,id:body.id})});
     if(url.pathname===PREFIX+'/github/starcoins/backup'||url.pathname===PREFIX+'/github/starcoins/verify'){
