@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {planBubblesScopeSync,confirmBubblesScopeSync} from '../workers/infinity-brain-clock/cloudflare-scope-sync.mjs';
+import {inspectCloudflareTokenManager,issueScopedCloudflareToken} from '../workers/infinity-brain-clock/cloudflare-token-broker.mjs';
 const ID='8f676e020d9ff91a2951e415d144c9b7';
 const CB='https://quantaphi.org/api/bubbles/connections/cloudflare/callback';
 const OLD=['BOT_WALLET','CLOUDFLARE_CLIENT_ID','CLOUDFLARE_CLIENT_SECRET','CLOUDFLARE_OAUTH_ALLOWED_SCOPES',
@@ -90,4 +91,54 @@ test('approval is mandatory and no token is issued for absent authorization',asy
  const h=harness(),db=storage();
  const result=await confirmBubblesScopeSync(db,{requestId:'css_bad'},env,{issue:h.issue,request:h.request});
  assert.equal(result.ok,false);assert.equal(result.httpStatus,403);assert.equal(h.issued.length,0);
+});
+
+test('read-only preflight identifies the failing Cloudflare endpoint before any token mint',async()=>{
+ const requests=[];
+ const request=async(url,options)=>{
+  requests.push({url,method:options.method||'GET'});
+  return Response.json({success:false,errors:[{code:6003,message:'DO NOT ECHO SECRET MATERIAL'}]},
+   {status:400});
+ };
+ const diagnostic=await inspectCloudflareTokenManager(env,{request});
+ assert.equal(diagnostic.ok,false);
+ assert.equal(diagnostic.stage,'permission_group_lookup');
+ assert.equal(diagnostic.httpStatus,400);
+ assert.deepEqual(diagnostic.providerCodes,[6003]);
+ assert.equal(requests.length,1);
+ assert.equal(requests[0].method,'GET');
+ assert.ok(!JSON.stringify(diagnostic).includes('DO NOT ECHO'));
+ assert.ok(!JSON.stringify(diagnostic).includes(env.CLOUDFLARE_TOKEN_MANAGER));
+});
+test('preflight checks both relevant permission groups and is_selectable flag',async()=>{
+ const groups=[
+  {id:'a'.repeat(32),name:'OAuth Clients Read',is_selectable:true,meta:{scopes:'com.cloudflare.api.account'}},
+  {id:'b'.repeat(32),name:'Workers Scripts Edit',is_selectable:true,meta:{scopes:'com.cloudflare.api.account'}}
+ ];
+ const request=async()=>Response.json({success:true,result:groups});
+ const d=await inspectCloudflareTokenManager(env,{request});
+ assert.equal(d.ok,true);
+ assert.equal(d.stage,'token_manager_ready');
+ assert.equal(d.capabilityChecks.length,2);
+ const blocked=await inspectCloudflareTokenManager(env,{request:async()=>Response.json({
+  success:true,result:[groups[0],{...groups[1],is_selectable:false}]})});
+ assert.equal(blocked.ok,false);
+ assert.equal(blocked.stage,'required_permission_group_unavailable');
+});
+test('Cloudflare token provisioning 400 identifies whether group lookup or creation failed',async()=>{
+ const now=Date.now();
+ const plan={capability:'oauth-client-read',requestId:'cft_'+crypto.randomUUID(),expiresAt:now+600000};
+ const groups=[{id:'a'.repeat(32),name:'OAuth Clients Read',meta:{scopes:'com.cloudflare.api.account'}}];
+ const issued=[];
+ const postError=async(url,options)=>{
+  issued.push({url,method:options.method});
+  if(url.endsWith('/permission_groups'))return Response.json({success:true,result:groups});
+  return Response.json({success:false,errors:[{code:1004,message:'PRIVATE BODY'}]},{status:400});
+ };
+ await assert.rejects(()=>issueScopedCloudflareToken(plan,env.CLOUDFLARE_TOKEN_MANAGER,{now,request:postError}),
+  /cloudflare_temporary_token_create_http_400_codes_1004/);
+ assert.deepEqual(issued.map(x=>x.method),['GET','POST']);
+ const lookupError=async()=>Response.json({success:false,errors:[{code:1006,message:'PRIVATE'}]},{status:400});
+ await assert.rejects(()=>issueScopedCloudflareToken(plan,env.CLOUDFLARE_TOKEN_MANAGER,{now,request:lookupError}),
+  /cloudflare_permission_group_lookup_http_400_codes_1006/);
 });

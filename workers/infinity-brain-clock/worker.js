@@ -14,7 +14,7 @@ import {checkOwnerRunnerRequest,runnerDispatchReceipt,submitApprovedBridgeWork} 
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
-import {planCloudflareToken,confirmCloudflareToken} from './cloudflare-token-broker.mjs';
+import {planCloudflareToken,confirmCloudflareToken,inspectCloudflareTokenManager} from './cloudflare-token-broker.mjs';
 import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
 
 import {reconcileMergedJob} from './merge-receipt.mjs';
@@ -738,6 +738,8 @@ export class BrainClock extends DurableObject{
     'Owner-approved '+result.capability+' token provisioned and stored encrypted on Brain. No secret value sent to chat.');
    return Response.json(result,{status:result.httpStatus||200});
   }
+  if(new URL(request.url).pathname==='/owner/cloudflare-scope-sync-diagnose')
+   return Response.json(await inspectCloudflareTokenManager(this.env));
   if(new URL(request.url).pathname==='/owner/cloudflare-scope-sync-plan'){
    const {planBubblesScopeSync}=await import('./cloudflare-scope-sync.mjs');
    return Response.json(await planBubblesScopeSync(this.ctx.storage,this.env));
@@ -1357,7 +1359,7 @@ export default{
    }catch{return output(request,{ok:false,error:'cloudflare_token_broker_unavailable'},503);}
   }
   // Owner-scoped repair; plan has no mutation, confirmation is an explicit click.
-  if(['/work/cloudflare/scope-sync-plan','/work/cloudflare/scope-sync-confirm'].includes(path)&&request.method==='POST'){
+  if(['/work/cloudflare/scope-sync-diagnose','/work/cloudflare/scope-sync-plan','/work/cloudflare/scope-sync-confirm'].includes(path)&&request.method==='POST'){
    const origin=request.headers.get('Origin');
    if(origin&&!origins.has(origin))return output(request,{ok:false,error:'origin_not_allowed'},403);
    const token=request.headers.get('Authorization')?.match(/^Bearer (.{1,256})$/)?.[1];
@@ -1367,7 +1369,7 @@ export default{
    try{
     const body=JSON.parse(raw||'{}');
     if(Object.keys(body).some(k=>k!=='requestId'))return output(request,{ok:false,error:'scope_sync_request_invalid'},400);
-    const subpath=path.endsWith('-plan')?'/owner/cloudflare-scope-sync-plan':'/owner/cloudflare-scope-sync-confirm';
+    const subpath=path.endsWith('-diagnose')?'/owner/cloudflare-scope-sync-diagnose':path.endsWith('-plan')?'/owner/cloudflare-scope-sync-plan':'/owner/cloudflare-scope-sync-confirm';
     const r=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main'))
       .fetch('https://clock.internal'+subpath,{method:'POST',body:JSON.stringify(body)});
     return output(request,await r.json(),r.status);
