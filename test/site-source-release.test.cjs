@@ -42,7 +42,7 @@ test('the automatic request interface and planner follow current main, including
 });
 test('OAuth handoff account asset is staged at a reviewed immutable commit; other source pins preserved',()=>{
  const url=new URL('https://quantaphi.org/');
- assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-connections.mjs'},url),'1a139f972e3568c8323ecbc6084d28c945d2c2d0');
+ assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-connections.mjs'},url),'4cf440ce8e7b1b7ac966e8b141a2578c84658722');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/apk-downloads.js'},url),'6643d2727f5be56dd0f1b217f532099899833bca');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-gpt-live.js'},url),'40dc5b89ec8ae53804daa7fae6184a904b73fab0');
  assert.match(source,/quantaphi-org-service-20261024-walmart-v5/);
