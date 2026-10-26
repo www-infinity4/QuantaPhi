@@ -1,3 +1,5 @@
+import vm from 'node:vm';
+import {readFileSync} from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import worker,{validateGroups,queryTraffic,refreshLedger,cumulativeSnapshot} from '../workers/site-traffic/worker.mjs';
@@ -83,4 +85,52 @@ test('uninitialized database fails safe; unrelated paths and writes are denied',
  assert.equal((await worker.fetch(req,{},null)).status,503);
  assert.equal((await worker.fetch(new Request('https://quantaphi.org/unrelated'),{},null)).status,404);
  assert.equal((await worker.fetch(new Request(req.url,{method:'POST'}),{},null)).status,405);
+});
+
+const clientSource=readFileSync(new URL('../site-traffic.js',import.meta.url),'utf8');
+const trafficPayload=(requests,pageViews,fetchedAt)=>({
+ schemaVersion:2,site:'quantaphi.org',source:'Cloudflare GraphQL httpRequests1dGroups',
+ scope:'recorded_since',historicComplete:false,refreshConfigured:false,
+ since:'2026-10-04',through:'2026-10-26',fetchedAt,requests,pageViews,
+ last7Days:{requests:100,pageViews:50},recordedDays:23,coverageContinuous:true
+});
+async function runClientOnce(store,queue){
+ const nodes=Object.fromEntries(['qtrafficRequests','qtrafficViews','qtrafficNote'].map(id=>[id,{textContent:''}]));
+ const document={getElementById:id=>nodes[id],hidden:false,addEventListener(){}};
+ const localStorage={getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)};
+ const fetch=async()=>{
+  const value=queue.shift();
+  if(value instanceof Error)throw value;
+  return {ok:true,json:async()=>value};
+ };
+ vm.runInNewContext(clientSource,{document,localStorage,fetch,AbortSignal,
+  setInterval:()=>0,Date,Number,JSON,Math,Promise,Error});
+ await new Promise(resolve=>setTimeout(resolve,5));
+ return nodes;
+}
+test('public counter remains monotonic across reloads, later lower totals and static fallback',async()=>{
+ const store=new Map();
+ const original=trafficPayload(958421,374475,'2026-10-26T16:28:24.621Z');
+ let nodes=await runClientOnce(store,[original]);
+ assert.equal(nodes.qtrafficRequests.textContent,'958,421');
+ assert.equal(nodes.qtrafficViews.textContent,'374,475');
+ const lower=trafficPayload(900000,340000,'2026-10-26T17:00:00.000Z');
+ nodes=await runClientOnce(store,[lower]);
+ assert.equal(nodes.qtrafficRequests.textContent,'958,421');
+ assert.equal(nodes.qtrafficViews.textContent,'374,475');
+ const stale=trafficPayload(834107,322061,'2026-10-24T06:00:00.000Z');
+ nodes=await runClientOnce(store,[new Error('offline'),stale]);
+ assert.equal(nodes.qtrafficRequests.textContent,'958,421');
+ assert.equal(nodes.qtrafficViews.textContent,'374,475');
+ assert.match(nodes.qtrafficNote.textContent,/temporarily stale|not yet authorized/);
+ const higher=trafficPayload(970000,380000,'2026-10-26T17:00:00.000Z');
+ nodes=await runClientOnce(store,[higher]);
+ assert.equal(nodes.qtrafficRequests.textContent,'970,000');
+ assert.equal(nodes.qtrafficViews.textContent,'380,000');
+});
+test('malformed saved traffic is ignored rather than displayed',async()=>{
+ const store=new Map([['quantaphi_verified_traffic_v2','{"requests":999999999}']]);
+ const nodes=await runClientOnce(store,[trafficPayload(1000,500,'2026-10-26T16:28:24.621Z')]);
+ assert.equal(nodes.qtrafficRequests.textContent,'1,000');
+ assert.equal(nodes.qtrafficViews.textContent,'500');
 });
