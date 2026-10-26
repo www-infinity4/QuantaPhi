@@ -87,9 +87,14 @@ export class ConsentService {
     if(!encrypted)return {status:'pending'};
     const received=await this.vault.open(encrypted,key);
     if(!received.code)throw Error('callback_invalid');
-    const account=await this.complete({userId,sessionId,provider,state,code:received.code});
-    await this.storage.delete(key);
-    return {status:'connected',account};
+    // The storage contract exposes transactional delete, not a top-level
+    // delete method. Erase the sealed callback even if token exchange fails.
+    try {
+      const account=await this.complete({userId,sessionId,provider,state,code:received.code});
+      return {status:'connected',account};
+    } finally {
+      await this.storage.transaction(async tx=>{await tx.delete(key);});
+    }
   }
   async complete({userId, sessionId, provider, state, code}) {
     const prefix = await this.namespace(userId), sessionHash = await this.session(sessionId);
