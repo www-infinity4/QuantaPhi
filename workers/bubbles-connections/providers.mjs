@@ -197,9 +197,12 @@ const CLOUDFLARE_SCOPES=Object.freeze({
     'workers-r2.read','workers-r2.write',
     'queues.read','queues.write',
     'ai.read','ai.write','browser-rendering.read','browser-rendering.write',
-    'containers.read','containers.write','workers-observability.read',
-    'dns.read','dns.write'
-  ]
+    'containers.read','containers.write','workers-observability.read'
+  ],
+  // DNS is a distinct power, not a prerequisite for project deployments.
+  // Registering either permission never runs an operation by itself.
+  'dns.inspect':['dns.read'],
+  'dns.manage':['dns.read','dns.write']
 });
 const cfScopes=actions=>[...new Set(actions.flatMap(a=>{
   if(!Object.hasOwn(CLOUDFLARE_SCOPES,a))throw Error('unsupported_action');
