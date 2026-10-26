@@ -30,9 +30,15 @@ export function callbackPage(provider) {
   if (!['google','github','cloudflare'].includes(provider)) return new Response('Unknown provider',{status:404});
   const nonce = crypto.randomUUID();
   const html = `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Return to Bubbles</title><body><h1>Return to Bubbles</h1><p id="status">Completing your account connection…</p><p><a href="https://quantaphi.org/bubbles.html" rel="noopener noreferrer">Open the current Bubbles application</a></p><script nonce="${nonce}">
-const params=new URLSearchParams(location.search);history.replaceState(null,'',location.pathname);
+const params=new URLSearchParams(location.search);
+// Reject ambiguous provider callbacks before importing or exchanging any code.
+// Capture the fragment check BEFORE replaceState removes it from location.
+const invalid=params.getAll('state').length!==1||params.getAll('code').length>1||params.getAll('error').length>1||
+ (params.has('code')&&params.has('error'))||Boolean(location.hash);
+history.replaceState(null,'',location.pathname);
 window.QuantaCloudConnectionDisableAutoRecovery=true;
-import('/bubbles-oauth-return.mjs?v=20261025-required1').then(({completeBubblesReturn})=>completeBubblesReturn({provider:${JSON.stringify(provider)},state:params.get('state'),code:params.get('code'),error:params.has('error')})).catch(()=>{document.getElementById('status').textContent='Could not load account verification. Open the current Bubbles application and start sign-in again.';});
+if(invalid){document.getElementById('status').textContent='Invalid sign-in return. Open Bubbles and start sign-in again.';}
+else import('/bubbles-oauth-return.mjs?v=20261025-required1').then(({completeBubblesReturn})=>completeBubblesReturn({provider:${JSON.stringify(provider)},state:params.get('state'),code:params.get('code'),error:params.has('error')})).catch(()=>{document.getElementById('status').textContent='Could not load account verification. Open the current Bubbles application and start sign-in again.';});
 </script></body></html>`;
   return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer',
     'Content-Security-Policy':`default-src 'none'; script-src 'self' 'nonce-${nonce}'; connect-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'`,
