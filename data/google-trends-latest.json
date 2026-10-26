@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-26T11:18:38.291810Z",
+  "checked_at": "2026-10-26T17:28:45.736093Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "packers roughing the passer penalties",
-      "approx_searches": "10000+",
-      "published_at": "2026-10-26T11:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50284205/packers-rip-officiating-roughing-penalties-prove-costly-loss",
-        "https://sports.yahoo.com/articles/no-way-tom-brady-rant-101500798.html",
-        "https://www.nytimes.com/athletic/7725034/2026/10/25/tom-brady-criticize-referees-penalties-packers-lions/"
-      ]
-    },
-    {
-      "query": "nu stock",
+      "query": "saquon barkley trade rumors giants eagles",
       "approx_searches": "500+",
-      "published_at": "2026-10-26T11:00:00Z",
+      "published_at": "2026-10-26T17:10:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/10/26/brazil-stocks-neoclouds-selloff.html",
-        "https://www.bloomberg.com/news/newsletters/2026-10-26/brazil-catches-investors-leaning-the-wrong-way",
-        "https://www.reuters.com/business/finance/investors-expect-markets-unwind-brazils-lula-reelected-2026-10-26/"
+        "https://www.cbssports.com/nfl/news/eagles-saquon-barkley-trade-proposals-giants-bengals/",
+        "https://www.usatoday.com/story/sports/nfl/eagles/2026/10/26/saquon-barkley-trade-fits-texans-seahawks/92431601007/",
+        "https://sports.yahoo.com/articles/why-seahawks-trading-running-back-150000972.html"
       ]
     },
     {
-      "query": "election day",
-      "approx_searches": "100+",
-      "published_at": "2026-10-26T11:00:00Z",
+      "query": "prince harry public reconciliation comments",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-26T17:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/10/23/world/middleeast/gadi-eisenkot-israel-election.html",
-        "https://www.jpost.com/israel-election-2026/article-911464",
-        "https://www.dw.com/en/gadi-eisenkot-campaigns-on-moroccan-roots-in-challenge-to-netanyahu/a-79747193"
+        "https://www.foxnews.com/entertainment/prince-harry-making-big-mistake-destroy-chance-royal-reconciliation-expert",
+        "https://pagesix.com/2026/10/20/royal-family/how-frustrated-prince-william-will-respond-to-prince-harrys-public-plea-for-reconciliation/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/royal-family-tries-approach-tackle-121129447.html"
       ]
     },
     {
-      "query": "coindesk",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T10:50:00Z",
-      "related_news_urls": [
-        "https://www.coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying",
-        "https://en.bloomingbit.io/feed/news/122935",
-        "https://www.tokenpost.com/news/insights/36228"
-      ]
-    },
-    {
-      "query": "amber nova",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T10:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/popular-wwe-star-amber-nova-152920847.html",
-        "https://nypost.com/2026/10/25/us-news/wwe-wrestler-amber-nova-flora-busted-for-dui-in-florida/",
-        "https://www.fightful.com/wrestling/amber-nova-posts-bail-after-being-arrested-for-dui-refusal-to-submit-to-dui-testing/"
-      ]
-    },
-    {
-      "query": "amc theatres",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T10:50:00Z",
-      "related_news_urls": [
-        "https://www.nydailynews.com/2026/10/25/ceo-amc-wants-keep-kips-bay-movie-theater-nyu-wants-gone/",
-        "https://deadline.com/2026/10/amc-theatres-kips-bay-multiplex-1237172359/",
-        "https://variety.com/2026/film/news/amc-kips-bay-closing-date-ceo-adam-aron-1236930275/"
-      ]
-    },
-    {
-      "query": "weather boston",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T10:40:00Z",
-      "related_news_urls": [
-        "https://whdh.com/weather-blog/warmer-sunny-for-sunday/",
-        "https://www.wkbw.com/weather/mary-beths-sunday-forecast-plenty-of-sunshine-with-above-average-high-temps",
-        "https://www.wdio.com/weather-news/storm-track-forecast/lauren-bryant-cooler-and-crisp-start-to-sunday/"
-      ]
-    },
-    {
-      "query": "brent crude price drops today",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T10:40:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/energy/oil-prices-down-almost-1-early-trading-2026-10-25/",
-        "https://www.barrons.com/livecoverage/stock-market-news-today-102626/card/oil-falls-amid-diplomatic-efforts-to-end-iran-war-1QIP9kW1S0joRFGk4XGK",
-        "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html"
-      ]
-    },
-    {
-      "query": "temperature",
+      "query": "keanu reeves netflix maelstrom movie",
       "approx_searches": "500+",
-      "published_at": "2026-10-26T10:40:00Z",
+      "published_at": "2026-10-26T17:00:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/climate/events/los-angeles-temperature-at-9-am-ct-oct-26-2026/",
-        "https://timesofindia.indiatimes.com/weather/us/los-angeles-weather-forecast-pleasant-sunny-day-with-highs-of-26c-and-lows-of-15c-on-october-24-2026/articleshow/135170424.cms",
-        "https://timesofindia.indiatimes.com/weather/us/los-angeles-weather-report-for-october-25-sunny-skies-comfortable-temperatures-at-27c/articleshow/135190858.cms"
+        "https://variety.com/2026/film/news/keanu-reeves-maelstrom-netflix-alan-ritchson-drops-out-1236931242/",
+        "https://pagesix.com/2026/10/26/hollywood/keanu-reeves-to-star-in-netflix-revival-of-die-hard-inspired-action-movie-first-pitched-in-1993/",
+        "https://theplaylist.net/keanu-reeves-netflix-maelstrom-20261026/"
       ]
     },
     {
-      "query": "usc football loss wisconsin 2026",
-      "approx_searches": "100+",
-      "published_at": "2026-10-26T10:40:00Z",
+      "query": "ios 27.2",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-26T17:00:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/usc-lincoln-rileys-buyout-wisconsin/",
-        "https://www.espn.com/college-football/story/_/id/50273308/former-usc-rb-jackson-wisconsin-upset-no-16-trojans",
-        "https://www.buckys5thquarter.com/wisconsin-badgers-football/91386/wisconsin-badgers-football-news-what-luke-fickell-said-after-win-usc-trojans-saturday-colton-joseph-week-8"
+        "https://9to5mac.com/2026/10/23/ios-27-2-three-new-features-coming-soon-to-your-iphone/",
+        "https://mashable.com/tech/apple-ios-27-2-new-features-face-time-home-app",
+        "https://apple.gadgethacks.com/news/should-i-install-ios-272-rc-before-the-public-release/"
+      ]
+    },
+    {
+      "query": "dawn staley",
+      "approx_searches": "500+",
+      "published_at": "2026-10-26T17:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/womens-college-basketball/story/_/id/50239191/2027-womens-basketball-recruiting-class-rankings",
+        "https://www.cityofbasketballlove.com/news_article/show/1369015",
+        "https://www.usatoday.com/story/sports/high-school/girls-basketball/2026/10/23/jordyn-palmer-south-carolina-basketball-commitment-dawn-staley/92404525007/"
+      ]
+    },
+    {
+      "query": "besiktas",
+      "approx_searches": "500+",
+      "published_at": "2026-10-26T17:00:00Z",
+      "related_news_urls": [
+        "https://www.hurriyet.com.tr/sporarena/canli-anlatim-besiktas-basaksehir-super-lig-maci-43354971",
+        "https://www.aksiyon.com.tr/besiktas-ile-basaksehir-ilk-yarida-gol-sesi-cikarmadi-381991",
+        "https://www.star.com.tr/spor/nuri-sahinden-ilk-11de-2-degisiklik-haber-2049277/"
+      ]
+    },
+    {
+      "query": "journalist",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-26T16:50:00Z",
+      "related_news_urls": [
+        "https://www.nbc4i.com/news/local-news/ohio-state-university/ohio-state-professor-accused-of-attacking-independent-journalist-resigns/",
+        "https://www.thelantern.com/2026/10/ohio-state-professor-who-assaulted-cameraman-resigns/",
+        "https://www.wosu.org/news/2026-10-23/ohio-state-university-professor-who-assaulted-a-documentarian-in-february-resigns"
+      ]
+    },
+    {
+      "query": "espn college football rankings week 8",
+      "approx_searches": "20000+",
+      "published_at": "2026-10-26T16:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50272138/2026-college-football-power-rankings-top-25-week-8",
+        "https://www.nytimes.com/athletic/7722928/2026/10/25/ap-top-25-college-football-week-8/",
+        "https://www.cbssports.com/college-football/news/ap-top-25-poll-texas-utah-college-football-rankings/"
+      ]
+    },
+    {
+      "query": "cyanide lol",
+      "approx_searches": "500+",
+      "published_at": "2026-10-26T16:40:00Z",
+      "related_news_urls": [
+        "https://www.sheepesports.com/en/articles/cyanide-former-fnatic-jungler-and-lol-world-champion-dies-aged-31/en",
+        "https://www.hotspawn.com/league-of-legends/news/cyanide-passed-away",
+        "https://gamedaily.com/games/cyanide-lauri-happonen-lol-world-champion-dies-31"
+      ]
+    },
+    {
+      "query": "nascar news",
+      "approx_searches": "20000+",
+      "published_at": "2026-10-26T16:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/nascar-fuming-embarrassing-dega-race-drivers-livid-controversial-finish-raises-doubt",
+        "https://www.nascar.com/news-media/2026/10/25/cup-series-talladega-chase-race-recap-results-2026/",
+        "https://www.espn.com/racing/nascar/story/_/id/50281784/kyle-larson-extends-chase-points-lead-first-nascar-win-talladega-last-lap-scramble"
       ]
     }
   ]
