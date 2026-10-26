@@ -66,7 +66,9 @@ export class AccountConnections {
    const authorization=new URL(result.authorizationUrl),state=authorization.searchParams.get('state');
    const [hostname,pathname]=PROVIDERS[provider];
    if(authorization.protocol!=='https:'||authorization.hostname!==hostname||authorization.pathname!==pathname||
-      authorization.port||authorization.username||authorization.password||!state||
+      authorization.port||authorization.username||authorization.password||authorization.hash||
+      !/^[A-Za-z0-9_-]{43}$/.test(state||'')||authorization.searchParams.getAll('state').length!==1||
+      authorization.searchParams.getAll('redirect_uri').length!==1||
       authorization.searchParams.get('redirect_uri')!==CALLBACK_ORIGIN+API+'/'+provider+'/callback')
     throw Error('Sign-in address rejected. The callback must return to the current QuantaPhi application.');
    const listener=async event=>{
