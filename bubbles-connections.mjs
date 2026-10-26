@@ -65,24 +65,35 @@ export class AccountConnections {
       const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':'';
       if(authorization.protocol!=='https:'||authorization.hostname!==expectedHost||authorization.port||!state)throw Error('Sign-in address rejected.');
       const origin='https://quantaphi.org'; // Registered callback's origin.
-      const listener=async event=>{
-        const message=event.data;
-        if(event.origin!==origin||event.source!==popup||message?.type!=='bubbles:oauth-return'||message.provider!==provider||message.state!==state)return;
+      // Android browser windows may lose window.opener after provider navigation.
+      // A same-origin BroadcastChannel gives the callback a second return path.
+      // Both paths require the server-generated OAuth state and provider match.
+      const channel=typeof this.root.BroadcastChannel==='function'
+        ?new this.root.BroadcastChannel('bubbles-oauth-return-v1'):null;
+      const finish=async message=>{
+        if(message?.type!=='bubbles:oauth-return'||message.provider!==provider||message.state!==state||!this.pending)return;
         this.cleanup();
         try {
           if(message.error)throw Error('Account authorization was declined.');
+          if(typeof message.code!=='string'||!message.code)throw Error('Authorization code missing.');
           const complete=await this.call('/complete',{provider,state,code:message.code});
           onComplete(null,complete.account);popup.close();
         } catch(error) {onComplete(error);}
       };
+      const listener=event=>{
+        if(event.origin!==origin||event.source!==popup)return;
+        void finish(event.data);
+      };
+      if(channel)channel.onmessage=event=>{void finish(event.data);};
       const timer=this.root.setTimeout(()=>{this.cleanup();onComplete(Error('Sign-in expired. Start Connect account again.'));},300000);
-      this.pending={listener,timer};this.root.addEventListener('message',listener);
+      this.pending={listener,timer,channel};this.root.addEventListener('message',listener);
       popup.location.href=authorization.href;
     } catch(error) {popup.close();this.cleanup();throw error;}
   }
   cleanup() {
     if(!this.pending)return;
-    this.root.removeEventListener('message',this.pending.listener);this.root.clearTimeout(this.pending.timer);this.pending=null;
+    this.root.removeEventListener('message',this.pending.listener);this.root.clearTimeout(this.pending.timer);
+    this.pending.channel?.close();this.pending=null;
   }
 }
 function element(tag,text,className='') {
