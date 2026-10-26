@@ -174,6 +174,8 @@ test('Cloudflare app registered without full project scopes blocks full consent 
  const gate=await (await handleConnections(request('/gate/status'),limited,
   ()=>({gateStatus:async()=>[]}))).json();
  assert.equal(gate.providers.cloudflare.scopeSetupRequired,true);
+ assert.deepEqual(gate.providers.cloudflare.authorizationActions,['account.read']);
+ assert.equal(gate.providers.cloudflare.permissionsApproved,false);
  assert.equal(gate.providers.cloudflare.reconnectRequired,false);
 });
 test('Cloudflare account lookup and selection always receive verified wallet user ID, not supplied ID',async()=>{

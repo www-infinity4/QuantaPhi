@@ -128,6 +128,7 @@ export async function handleConnections(request,env,resolveService) {
           missingActions:matching?missingActions:[],
           reconnectRequired:candidates.length>0&&!matching,
           ...(id==='cloudflare'?{fullProjectConfigured:cloudflareFullReady,
+            authorizationActions:oauthClientScopes,
             scopeSetupRequired:cloudflareAppReady&&!cloudflareFullReady}: {})};
       };
       const github=state('github'),cloudflare=state('cloudflare');
