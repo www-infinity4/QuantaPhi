@@ -1,6 +1,6 @@
 import {DurableObject} from 'cloudflare:workers';
 import {ConsentService} from './consent.mjs';
-import {TokenVault} from './vault.mjs';
+import {TokenVault,digest} from './vault.mjs';
 import {googleAdapter,githubAdapter,cloudflareAdapter} from './providers.mjs';
 import {executeGoogleRead,selectGoogleResource} from './google-read.mjs';
 import {handleConnections} from './router.mjs';
@@ -27,6 +27,26 @@ export class UserConnections extends DurableObject {
   async githubConnectionTest(input) {return this.service.githubRepositories({...input,test:true});}
   async starCoinBackup(input) {return this.service.starCoinBackup(input);}
   async createStarCoinRepository(input) {return this.service.createStarCoinRepository(input);}
+  async registerOAuthState({state,provider,userId,expiresAt}) {
+    if(typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state)||
+       !['github','cloudflare','google'].includes(provider)||
+       typeof userId!=='string'||!userId||!Number.isFinite(expiresAt)||
+       expiresAt<=Date.now()||expiresAt>Date.now()+300000)throw Error('callback_invalid');
+    const key='oauth-locator:'+await digest(state);
+    await this.service.storage.transaction(async tx=>{
+      if(await tx.get(key))throw Error('state_invalid_or_used');
+      await tx.put(key,{provider,userId,expiresAt});
+    });
+    return {registered:true};
+  }
+  async lookupOAuthState({state,provider}) {
+    if(typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state)||
+       !['github','cloudflare','google'].includes(provider))throw Error('callback_invalid');
+    const key='oauth-locator:'+await digest(state);
+    const record=await this.service.storage.get(key);
+    if(!record||record.provider!==provider||record.expiresAt<=Date.now())throw Error('state_invalid_or_used');
+    return {userId:record.userId};
+  }
   async start(input) {return this.service.start(input);}
   async handoff(input) {return this.service.handoff(input);}
   async handoffStatus(input) {return this.service.handoffStatus(input);}
