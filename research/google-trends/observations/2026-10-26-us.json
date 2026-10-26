@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-26T17:28:45.736093Z",
+  "checked_at": "2026-10-26T21:45:36.641429Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "saquon barkley trade rumors giants eagles",
-      "approx_searches": "500+",
-      "published_at": "2026-10-26T17:10:00Z",
+      "query": "unai simon",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-26T21:30:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/nfl/news/eagles-saquon-barkley-trade-proposals-giants-bengals/",
-        "https://www.usatoday.com/story/sports/nfl/eagles/2026/10/26/saquon-barkley-trade-fits-texans-seahawks/92431601007/",
-        "https://sports.yahoo.com/articles/why-seahawks-trading-running-back-150000972.html"
+        "https://www.marca.com/futbol/balon-oro/2026/10/26/unai-simon-todos-luce-mejor-portero-mundo.html",
+        "https://www.latercera.com/el-deportivo/noticia/la-dura-competencia-que-tiene-vozinha-para-quedarse-con-el-premio-lev-yashin-en-la-ceremonia-del-balon-de-oro/",
+        "https://as.com/futbol/simon-camino-de-la-gloria-f202610-n/"
       ]
     },
     {
-      "query": "prince harry public reconciliation comments",
+      "query": "cata coll",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-26T21:30:00Z",
+      "related_news_urls": [
+        "https://www.marca.com/futbol/balon-oro/2026/10/26/cata-coll-trofeo-yashin.html",
+        "https://cadenaser.com/baleares/2026/10/26/orgullo-balear-en-la-gala-del-balon-de-oro-cata-coll-patri-guijarro-y-mariona-caldentey-suenan-a-lo-grande-radio-mallorca/",
+        "https://www.diariodemallorca.es/deportes/2026/10/26/padres-cata-coll-londres-hemos-135765144.html"
+      ]
+    },
+    {
+      "query": "chad lowe",
       "approx_searches": "1000+",
-      "published_at": "2026-10-26T17:00:00Z",
+      "published_at": "2026-10-26T21:30:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/entertainment/prince-harry-making-big-mistake-destroy-chance-royal-reconciliation-expert",
-        "https://pagesix.com/2026/10/20/royal-family/how-frustrated-prince-william-will-respond-to-prince-harrys-public-plea-for-reconciliation/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/royal-family-tries-approach-tackle-121129447.html"
+        "https://people.com/chad-lowe-family-hosted-funeral-for-daughter-this-weekend-exclusive-source-12195173",
+        "https://www.aol.com/articles/exclusive-chad-lowe-reveals-heartbreak-133000000.html",
+        "https://people.com/9-1-1-nashville-honors-chad-lowes-daughter-fiona-after-her-death-at-age-13-12177219"
       ]
     },
     {
-      "query": "keanu reeves netflix maelstrom movie",
+      "query": "francis lawrence bioshock movie progress",
       "approx_searches": "500+",
-      "published_at": "2026-10-26T17:00:00Z",
+      "published_at": "2026-10-26T21:30:00Z",
       "related_news_urls": [
-        "https://variety.com/2026/film/news/keanu-reeves-maelstrom-netflix-alan-ritchson-drops-out-1236931242/",
-        "https://pagesix.com/2026/10/26/hollywood/keanu-reeves-to-star-in-netflix-revival-of-die-hard-inspired-action-movie-first-pitched-in-1993/",
-        "https://theplaylist.net/keanu-reeves-netflix-maelstrom-20261026/"
+        "https://thedirect.com/article/bioshock-movie-francis-lawrence-story-world",
+        "https://www.ign.com/articles/bioshock-movie-director-francis-lawrence-explains-why-its-taken-hollywood-so-long-to-adapt-the-game",
+        "https://movieweb.com/bioshock-netflix-update/"
       ]
     },
     {
-      "query": "ios 27.2",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-26T17:00:00Z",
-      "related_news_urls": [
-        "https://9to5mac.com/2026/10/23/ios-27-2-three-new-features-coming-soon-to-your-iphone/",
-        "https://mashable.com/tech/apple-ios-27-2-new-features-face-time-home-app",
-        "https://apple.gadgethacks.com/news/should-i-install-ios-272-rc-before-the-public-release/"
-      ]
-    },
-    {
-      "query": "dawn staley",
+      "query": "elizabeth holmes deception expert analysis",
       "approx_searches": "500+",
-      "published_at": "2026-10-26T17:00:00Z",
+      "published_at": "2026-10-26T21:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/womens-college-basketball/story/_/id/50239191/2027-womens-basketball-recruiting-class-rankings",
-        "https://www.cityofbasketballlove.com/news_article/show/1369015",
-        "https://www.usatoday.com/story/sports/high-school/girls-basketball/2026/10/23/jordyn-palmer-south-carolina-basketball-commitment-dawn-staley/92404525007/"
+        "https://www.nytimes.com/2026/10/22/insider/elizabeth-holmes-backstory.html",
+        "https://www.forbes.com/sites/alexknapp/2026/10/22/when-elizabeth-holmes-lied-to-forbes-about-theranos/",
+        "https://variety.com/2026/film/news/elizabeth-holmes-new-york-times-quote-reporter-1236929661/"
       ]
     },
     {
-      "query": "besiktas",
+      "query": "luis de la fuente",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-26T21:20:00Z",
+      "related_news_urls": [
+        "https://www.marca.com/futbol/balon-oro/2026/10/26/6adf46e7020dbf8b21772b9e-directo.html",
+        "https://www.latimes.com/espanol/deportes/articulo/2026-10-24/como-los-tecnicos-espanoles-se-convirtieron-en-los-mas-cotizados-del-futbol",
+        "https://elpais.com/deportes/futbol/2026-10-26/premio-balon-de-oro-en-directo-la-gala-en-vivo.html"
+      ]
+    },
+    {
+      "query": "james comey",
+      "approx_searches": "10000+",
+      "published_at": "2026-10-26T21:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/10/26/nyregion/maurene-comey-firing-doj-trump-epstein.html",
+        "https://www.foxnews.com/politics/obama-judge-rules-trump-doj-illegally-fired-james-comeys-daughter-rejects-sweeping-article-ii-claim",
+        "https://www.washingtonpost.com/national-security/2026/10/26/doj-unlawfully-fired-maurene-comey-daughter-former-fbi-director-judge-rules/"
+      ]
+    },
+    {
+      "query": "openai 6.1 terra",
       "approx_searches": "500+",
-      "published_at": "2026-10-26T17:00:00Z",
+      "published_at": "2026-10-26T21:20:00Z",
       "related_news_urls": [
-        "https://www.hurriyet.com.tr/sporarena/canli-anlatim-besiktas-basaksehir-super-lig-maci-43354971",
-        "https://www.aksiyon.com.tr/besiktas-ile-basaksehir-ilk-yarida-gol-sesi-cikarmadi-381991",
-        "https://www.star.com.tr/spor/nuri-sahinden-ilk-11de-2-degisiklik-haber-2049277/"
+        "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/",
+        "https://9to5mac.com/2026/10/26/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-1-terra-model/",
+        "https://thenextweb.com/news/openai-gpt-6-1-terra-computer-use"
       ]
     },
     {
-      "query": "journalist",
-      "approx_searches": "1000+",
-      "published_at": "2026-10-26T16:50:00Z",
+      "query": "mika godts",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T21:20:00Z",
       "related_news_urls": [
-        "https://www.nbc4i.com/news/local-news/ohio-state-university/ohio-state-professor-accused-of-attacking-independent-journalist-resigns/",
-        "https://www.thelantern.com/2026/10/ohio-state-professor-who-assaulted-cameraman-resigns/",
-        "https://www.wosu.org/news/2026-10-23/ohio-state-university-professor-who-assaulted-a-documentarian-in-february-resigns"
+        "https://sporza.be/nl/matches/voetbal/buitenland/fra/ligue-1-mcdonald-s/2026-2027/regulier/08/paris-saint-germain-olympique-lyon-mika-godts-schittert-als-invaller-bij-psg-rode-duivel-zorgt-voor-zege-met-eerste-goal-en-assist~1792568160845/",
+        "https://www.telegraaf.nl/sport/voetbal/paris-saint-germain-grijpt-koppositie-mika-godts-maakt-prachtige-eerste-treffer-voor-fransen/163650468.html",
+        "https://www.nu.nl/voetbal/6414497/mika-godts-schittert-met-goal-en-assist-voor-psg-in-verplaatste-topper-tegen-lyon.html"
       ]
     },
     {
-      "query": "espn college football rankings week 8",
-      "approx_searches": "20000+",
-      "published_at": "2026-10-26T16:50:00Z",
+      "query": "senny mayulu",
+      "approx_searches": "200+",
+      "published_at": "2026-10-26T21:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50272138/2026-college-football-power-rankings-top-25-week-8",
-        "https://www.nytimes.com/athletic/7722928/2026/10/25/ap-top-25-college-football-week-8/",
-        "https://www.cbssports.com/college-football/news/ap-top-25-poll-texas-utah-college-football-rankings/"
-      ]
-    },
-    {
-      "query": "cyanide lol",
-      "approx_searches": "500+",
-      "published_at": "2026-10-26T16:40:00Z",
-      "related_news_urls": [
-        "https://www.sheepesports.com/en/articles/cyanide-former-fnatic-jungler-and-lol-world-champion-dies-aged-31/en",
-        "https://www.hotspawn.com/league-of-legends/news/cyanide-passed-away",
-        "https://gamedaily.com/games/cyanide-lauri-happonen-lol-world-champion-dies-31"
-      ]
-    },
-    {
-      "query": "nascar news",
-      "approx_searches": "20000+",
-      "published_at": "2026-10-26T16:30:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/nascar-fuming-embarrassing-dega-race-drivers-livid-controversial-finish-raises-doubt",
-        "https://www.nascar.com/news-media/2026/10/25/cup-series-talladega-chase-race-recap-results-2026/",
-        "https://www.espn.com/racing/nascar/story/_/id/50281784/kyle-larson-extends-chase-points-lead-first-nascar-win-talladega-last-lap-scramble"
+        "https://www.idahostatejournal.com/sports/national/france-league-one-soccer/image_f9c953d7-75fd-5f5c-91b4-93b1340393ea.html",
+        "https://www.athensreview.com/sports/national_sports/france-league-one-soccer/image_00be6c84-2348-5492-8bed-090300848f9f.html",
+        "https://www.hjnews.com/sports/nation/france-league-one-soccer/image_7f71d441-fed6-523b-8ff0-c71c7ff461c5.html"
       ]
     }
   ]
