@@ -74,6 +74,14 @@ export class ConsentService {
       if(receipt.userId!==userId||receipt.sessionHash!==sessionHash||receipt.provider!==provider)
         throw Error('callback_session_mismatch');
       if(receipt.expiresAt<=this.now())return {status:'expired'};
+      // A cached success must never outlive disconnect, token removal, or
+      // a replacement connection revision. It is recovery, not authority.
+      const current=await this.storage.get(prefix+'connection:'+receipt.account?.id);
+      if(current?.userId!==userId||current.provider!==provider||
+         current.status!=='connected'||!current.credentialRef||
+         current.revision!==receipt.connectionRevision||
+         current.expiresAt<=this.now()||
+         !(await this.storage.get(current.credentialRef)))return {status:'expired'};
       return {status:'connected',account:receipt.account};
     }
     const sealed=await this.storage.get(key);
@@ -108,6 +116,12 @@ export class ConsentService {
       const receiptKey=prefix+'handoff-receipt:'+await digest(state);
       const receipt={userId,sessionHash,provider,account,expiresAt:this.now()+300000};
       await this.storage.transaction(async tx=>{
+        const current=await tx.get(prefix+'connection:'+account.id);
+        if(current?.userId!==userId||current.provider!==provider||
+           current.status!=='connected'||!current.credentialRef||
+           current.expiresAt<=this.now()||!(await tx.get(current.credentialRef)))
+          throw Error('connection_cancelled');
+        receipt.connectionRevision=current.revision;
         await tx.put(receiptKey,{...await this.vault.seal(receipt,receiptKey),expiresAt:receipt.expiresAt});
       });
       return {status:'connected',account};
