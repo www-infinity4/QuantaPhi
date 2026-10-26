@@ -110,14 +110,24 @@
     html.bubble-iframe .ba-launcher[aria-expanded="true"]{display:none!important}
   </style>
   <link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1">
+  <link rel="stylesheet" href="/bubbles-responsive-site.css?v=20261026-mobile-layout1">
 </head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
     <nav class="bubbles-site-nav" aria-label="Bubbles site navigation">
-      <a href="/bubbles-x-connect.html">X public post inbox</a>
-      <a href="/">← QuantaPhi</a>
-      <span>Bubbles AI</span>
-      <a href="/bubbles-accounts.html">Account connections</a>
+      <a class="bubbles-nav-brand" href="/" aria-label="QuantaPhi home"><span class="bubbles-nav-mark" aria-hidden="true">o O o</span><strong>Bubbles</strong></a>
+      <div class="bubbles-nav-links">
+        <a class="bubbles-nav-chat" href="#bubblesAICard" aria-current="page">Chat</a>
+        <a href="/bubbles-accounts.html">Accounts</a>
+        <details class="bubbles-nav-more">
+          <summary>More</summary>
+          <div class="bubbles-nav-menu">
+            <a href="/bubbles-x-connect.html">X inbox</a>
+            <a href="/#robotDirections">Robot Brain</a>
+            <a href="/">QuantaPhi home</a>
+          </div>
+        </details>
+      </div>
     </nav>
 
     <section class="bubbles-chatgpt-entry" aria-label="ChatGPT access to Bubbles" hidden style="display:none">
@@ -130,11 +140,10 @@
       <div class="bubbles-copy">
         <span class="bubbles-eyebrow">QUANTAPHI · AI ASSISTANT</span>
         <h1 id="bubbles-title">Bubbles</h1>
-        <p class="bubbles-lead">Research, talk, work with your cards and send approved jobs to Robot Brain — from one conversation.</p>
+        <p class="bubbles-lead">Talk, search, and work with your cards.</p>
         <div class="bubbles-actions">
           <a class="bubbles-primary-action" href="#bubblesAICard">Open Bubbles chat</a>
           <a href="/#robotDirections">Robot Brain</a>
-          <a href="/bubbles-accounts.html">Connect GitHub and other accounts</a>
         </div>
       </div>
     </section>
@@ -158,17 +167,23 @@
       <div class="bubbles-signin-controls">
         <button id="bubblesRetrySignInCheck" type="button" class="bubbles-signin-retry">Try again</button>
         <button id="bubblesCancelSignIn" type="button" class="bubbles-signin-retry" hidden>Cancel sign-in</button>
-        <a id="bubblesOpenExistingChat" href="#bubblesAICard">Open chat</a>
-        <a href="/bubbles-accounts.html">Connections</a>
-        <a href="/wallet-recovery.html?verify=1">Restore wallet</a>
+        <details class="bubbles-signin-help">
+          <summary>Other options</summary>
+          <div>
+            <a id="bubblesOpenExistingChat" href="#bubblesAICard">Open chat</a>
+            <a href="/bubbles-accounts.html">Connections</a>
+            <a href="/wallet-recovery.html?verify=1">Restore wallet</a>
+          </div>
+        </details>
       </div>
     </section>
 
     <section class="bubbles-workspace" aria-label="Bubbles assistant and jobs">
       <div class="bubbles-section-heading">
-        <div><span class="bubbles-eyebrow">WORKSPACE</span><h2>Talk to Bubbles</h2><p>The assistant and verified job receipts belong here, not behind a video advertisement.</p></div>
-        <a href="/#robotDirections">Open Robot Brain →</a>
+        <div><span class="bubbles-eyebrow">WORKSPACE</span><h2>Talk to Bubbles</h2><p>Chat, cards, and verified job receipts in one place.</p></div>
+        <a href="/#robotDirections">Robot Brain →</a>
       </div>
+      <div id="bubblesAICard"></div>
       <section class="bubbles-wallet" aria-labelledby="bubblesWalletTitle">
         <div class="bubbles-wallet-head"><h2 id="bubblesWalletTitle">Unified Wallet</h2><button type="button" id="bubblesWalletRefresh">Refresh wallet</button></div>
         <p role="status" aria-live="polite" id="bubblesWalletConnection">Checking the existing Cloudflare wallet…</p>
@@ -183,7 +198,7 @@
         <button id="bubblesOwnerDiagnosticRun" type="button">Check owner connection again</button>
         <ul id="bubblesOwnerDiagnosticResults" role="status" aria-live="polite"><li>Waiting for the initial owner check…</li></ul>
       </details>
-      <div id="bubblesAICard"></div>
+      
     </section>
 
     <section class="bubbles-install" aria-labelledby="bubbles-install-title">
