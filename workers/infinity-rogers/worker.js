@@ -1,4 +1,4 @@
-import {COLLAB_PATH,handleCollaboration} from './ai-collaboration.mjs';
+const COLLAB_PATH='/v1/ai/collaborate';
 const ALLOWED_ORIGINS = new Set([
   "https://www-infinity4.github.io",
   "https://oracle-card-studio.pages.dev",
@@ -884,6 +884,7 @@ export default {
     if (request.method === "POST") {
       if (!originAllowed(request)) return json(request, { ok: false, error: "origin_not_allowed" }, 403);
       if(url.pathname===COLLAB_PATH){
+        const {handleCollaboration}=await import('./ai-collaboration.mjs');
         const result=await handleCollaboration(request,env);
         return new Response(result.body,{status:result.status,headers:{...headers(request)}});
       }
