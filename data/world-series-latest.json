@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-26T17:31:34.737736Z",
+  "checked_at": "2026-10-26T22:18:03.769355Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
@@ -17,6 +17,50 @@
     }
   ],
   "articles": [
+    {
+      "title": "2026 MLB playoff bracket: Schedule and scores as Brewers go for 3-0 World Series lead over Rays",
+      "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-26T21:08:28Z",
+      "summary": "The Brewers-Rays matchup guarantees that we'll have a first-time champion in 2026",
+      "author": "Kate Feldman",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/20/ad4b6088-a174-48fb-8be4-f78cb2b02b32/2026-mlb-bracket-brewers-rays.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Brewers-Rays World Series Game 3 FAQ, lineups (Monday, 8 ET, FOX/FOX One)",
+      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-3-starting-lineups-and-pitching-matchup",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-26T20:41:00Z",
+      "summary": "",
+      "author": "Anthony Castrovince, Adam Berry and Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Former Ray -- and 2020 World Series hero -- gives back to cause near and dear to him",
+      "url": "https://www.mlb.com/news/mlb-rays-partner-on-boys-and-girls-club-event-in-tampa-bay",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-26T20:39:24Z",
+      "summary": "",
+      "author": "CJ Haddad",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Today's top games to watch, best bets, odds: Brewers vs. Rays World Series Game 3, Cowboys vs. Eagles MNF",
+      "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-brewers-vs-rays-world-series-game-3-cowboys-vs-eagles-mnf/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-26T19:30:47Z",
+      "summary": "Find best bets and props for the biggest games in sports on Monday from the SportsLine Projection Model and top CBS Sports experts",
+      "author": "Gene Menez",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/20/e0d2033a-c06f-4b36-94a0-5353321e822a/peralta-imagn.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
     {
       "title": "Brewers prep for potential 'roof ball' as World Series shifts to Tampa Bay",
       "url": "https://www.mlb.com/news/brewers-practice-plays-off-tropicana-field-roof",
@@ -48,17 +92,6 @@
       "author": "Mike Axisa",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/57f549ac-d816-49ea-8961-b30971a0be17/freddy-peralta-getty.png",
       "kind": "Analysis",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Brewers vs. Rays World Series Game 3 picks: Freddy Peralta aims to handle former club, make this a series",
-      "url": "https://www.cbssports.com/betting/news/brewers-vs-rays-world-series-game-3-picks-freddy-peralta-aims-to-handle-former-club-make-this-a-series/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-26T13:21:49Z",
-      "summary": "Down 2-0, the Rays turn to former Brewer Freddy Peralta in Game 3 of the World Series",
-      "author": "Matt Severance",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/ec28b1c5-f0f5-4126-b8e8-dab9e1c3403a/freddy-peralta-rays-cbs.jpg",
-      "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     },
     {
@@ -112,17 +145,6 @@
       "published_at": "2026-10-25T21:30:48Z",
       "summary": "",
       "author": "Bryan Hoch",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Brewers-Rays World Series Game 3 FAQ (Monday, 8 ET, FOX/FOX One)",
-      "url": "https://www.mlb.com/news/brewers-rays-world-series-game-3-starting-lineups-and-pitching-matchup",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-25T20:19:00Z",
-      "summary": "",
-      "author": "Anthony Castrovince, Adam Berry and Adam McCalvy",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -205,17 +227,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Key takeaways as Brewers take commanding 2-0 lead in World Series",
-      "url": "https://www.mlb.com/news/key-takeaways-from-world-series-game-2-2026",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-25T15:05:00Z",
-      "summary": "",
-      "author": "Anthony DiComo",
-      "image_url": "",
-      "kind": "Analysis",
-      "image_credit": ""
-    },
-    {
       "title": "How Sal Frelick became Brewers' unlikely World Series hero with Game 2 blast: 'He has this edge about him'",
       "url": "https://www.cbssports.com/mlb/news/2026-world-series-brewers-rays-sal-frelick-home-run/",
       "publisher": "CBS Sports",
@@ -267,17 +278,6 @@
       "summary": "Give the Brewers so much credit for their inevitability, but the Rays are handing them every opportunity",
       "author": "Matt Snyder",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/25/c885909f-daef-47b2-915a-ed688ea0389a/chandler-simpson-error-getty.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "2026 MLB playoff bracket: Schedule and scores as Brewers take 2-0 World Series lead over Rays",
-      "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-25T04:45:54Z",
-      "summary": "The Brewers-Rays matchup guarantees that we'll have a first-time champion in 2026",
-      "author": "Kate Feldman",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/20/ad4b6088-a174-48fb-8be4-f78cb2b02b32/2026-mlb-bracket-brewers-rays.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     },
