@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {AccountConnections,resolveConnectorWalletToken,connectionCodeMessage} from '../bubbles-connections.mjs';
+import {AccountConnections,resolveConnectorWalletToken,connectionCodeMessage,availableCloudflareLoginActions} from '../bubbles-connections.mjs';
 test('connector waits for device bridge and supports both wallet runtime exports',async()=>{
   let ready=false;const token='sq_'+'a'.repeat(40);
   assert.equal(await resolveConnectorWalletToken({QuantaCloudConnection:{ready:Promise.resolve().then(()=>ready=true),resolveDeviceToken:async()=>{assert.ok(ready);return token;}}}),token);
@@ -273,4 +273,13 @@ test('Android return accepts a sealed connected receipt without repeating token 
  assert.equal(completed.account.label,'saved-github');
  assert.equal(popup.closed,true);
  assert.equal(calls.filter(x=>x.endsWith('/handoff/finish')).length,0);
+});
+
+test('Account Connections Cloudflare sign-in is usable without unregistered full-project scopes',()=>{
+ const provider={id:'cloudflare',configured:true,fullProjectConfigured:false,actions:['account.read']};
+ assert.deepEqual(availableCloudflareLoginActions(provider),['account.read']);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,actions:['account.read','ledger.read','projects.full']}),['account.read','ledger.read','projects.full']);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,configured:false}),[]);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,actions:[]}),[]);
+ assert.deepEqual(availableCloudflareLoginActions({...provider,id:'github'}),[]);
 });
