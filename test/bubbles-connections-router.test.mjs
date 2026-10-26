@@ -228,7 +228,7 @@ test('public scope inventory is session-free, secret-free, and never grants muta
   assert.equal(res.status,200);
   const data=await res.json();
   assert.equal(data.ok,true);
-  assert.equal(data.clientIdPrefix,'8f676e020d9ff91');
+  assert.equal(data.clientIdPrefix,'8f676e020d9ff91a');
   assert.equal(data.scopeInventory.serverAllowlistCount,FULL_CLOUDFLARE_SCOPES.split(' ').length);
   assert.ok(!JSON.stringify(data).includes('hidden-secret'));
   assert.ok(!Object.keys(data).includes('providers'));
