@@ -5,7 +5,8 @@ const bearer='Bearer sq_'+ 'a'.repeat(40);
 function request(path,{method='GET',origin='https://quantaphi.org',authorization=bearer,body}={}) {
   return new Request('https://quantaphi.org'+PREFIX+path,{method,headers:{Origin:origin,Authorization:authorization,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})});
 }
-const FULL_CLOUDFLARE_SCOPES="user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read workers-routes.read workers-routes.write page.read workers-kv-storage.read workers-kv-storage.write workers-r2.read workers-r2.write queues.read queues.write ai.read ai.write browser-rendering.read browser-rendering.write containers.read containers.write workers-observability.read dns.read dns.write";
+const FULL_CLOUDFLARE_SCOPES="user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read workers-routes.read workers-routes.write page.read workers-kv-storage.read workers-kv-storage.write workers-r2.read workers-r2.write queues.read queues.write ai.read ai.write browser-rendering.read browser-rendering.write containers.read containers.write workers-observability.read";
+const DNS_CLOUDFLARE_SCOPES='dns.read dns.write';
 const env={CONNECTIONS_READY:true,BOT_WALLET:{fetch:async(url,options)=>{assert.equal(url,'https://wallet.internal/v1/wallet/state');assert.equal(options.headers.Authorization,bearer);return Response.json({ok:true,user:{id:'verified-alice'}});}}};
 test('router rejects foreign origins and unauthenticated callers before resolving storage',async()=>{
   const resolve=()=>assert.fail('must not resolve a service');
@@ -113,6 +114,23 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
  assert.equal(result.providers.cloudflare.permissionsApproved,true);
  assert.equal(result.providers.github.permissionsApproved,true);
  assert.ok(!JSON.stringify(result).includes('not-exposed'));
+});
+test('full project permissions do not require unrelated DNS grants',async()=>{
+ const configured={...env,CONNECTIONS_READY:true,CLOUDFLARE_CLIENT_ID:'client',CLOUDFLARE_CLIENT_SECRET:'secret',
+   CLOUDFLARE_OAUTH_ALLOWED_SCOPES:FULL_CLOUDFLARE_SCOPES};
+ const catalog=await (await handleConnections(request('/catalog'),configured,()=>assert.fail('catalog needs no personal data'))).json();
+ const client=catalog.providers.find(p=>p.id==='cloudflare');
+ assert.equal(client.fullProjectConfigured,true);
+ assert.ok(client.actions.includes('projects.full'));
+ assert.ok(!client.actions.includes('dns.inspect'));
+ assert.ok(!client.actions.includes('dns.manage'));
+ const withDns=await (await handleConnections(request('/catalog'),
+   {...configured,CLOUDFLARE_OAUTH_ALLOWED_SCOPES:FULL_CLOUDFLARE_SCOPES+' '+DNS_CLOUDFLARE_SCOPES},
+   ()=>assert.fail('catalog needs no personal data'))).json();
+ const broadened=withDns.providers.find(p=>p.id==='cloudflare');
+ assert.equal(broadened.fullProjectConfigured,true);
+ assert.ok(broadened.actions.includes('dns.inspect'));
+ assert.ok(broadened.actions.includes('dns.manage'));
 });
 test('full Cloudflare project grant is required before reporting full access',async()=>{
  const now=Date.now(),configured={...env,GITHUB_CLIENT_ID:'app',GITHUB_CLIENT_SECRET:'hidden',CLOUDFLARE_CLIENT_ID:'app',CLOUDFLARE_CLIENT_SECRET:'hidden',CLOUDFLARE_OAUTH_ALLOWED_SCOPES:FULL_CLOUDFLARE_SCOPES};
