@@ -33,6 +33,8 @@ export class ConsentService {
       if (recent.count >= 10) throw Error('too_many_requests');
       const pending = await tx.list({prefix:prefix+'state:',limit:64});
       for (const [pendingKey,value] of pending) if (value.expiresAt <= this.now()) await tx.delete(pendingKey);
+      const receipts=await tx.list({prefix:prefix+'handoff-receipt:',limit:64});
+      for(const [receiptKey,value] of receipts)if(value.expiresAt<=this.now())await tx.delete(receiptKey);
       await tx.put(limitKey,{...recent,count:recent.count+1});
       const generation = await tx.get(prefix + 'generation:' + provider) || 0;
       const record = {userId, sessionHash, provider, verifier, actions:[...new Set(actions)], expiresAt:this.now()+300000, generation};
@@ -65,6 +67,15 @@ export class ConsentService {
     if(!Object.hasOwn(PROVIDERS,provider)||typeof state!=='string'||!/^[A-Za-z0-9_-]{43}$/.test(state))
       throw Error('callback_invalid');
     const hash=await digest(state),key=prefix+'state:'+hash,handoffKey=prefix+'handoff:'+hash;
+    const receiptKey=prefix+'handoff-receipt:'+hash;
+    const sealedReceipt=await this.storage.get(receiptKey);
+    if(sealedReceipt){
+      const receipt=await this.vault.open(sealedReceipt,receiptKey);
+      if(receipt.userId!==userId||receipt.sessionHash!==sessionHash||receipt.provider!==provider)
+        throw Error('callback_session_mismatch');
+      if(receipt.expiresAt<=this.now())return {status:'expired'};
+      return {status:'connected',account:receipt.account};
+    }
     const sealed=await this.storage.get(key);
     if(!sealed)return {status:'expired'};
     const pending=await this.vault.open(sealed,key);
@@ -81,6 +92,7 @@ export class ConsentService {
     const {userId,sessionId,provider,state}=input;
     const status=await this.handoffStatus(input);
     if(status.status!=='received')return status;
+    const sessionHash=await this.session(sessionId);
     const prefix=await this.namespace(userId);
     const key=prefix+'handoff:'+await digest(state);
     const encrypted=await this.storage.get(key);
@@ -91,6 +103,13 @@ export class ConsentService {
     // delete method. Erase the sealed callback even if token exchange fails.
     try {
       const account=await this.complete({userId,sessionId,provider,state,code:received.code});
+      // A lost Android HTTP response must not force a second provider login.
+      // Persist a sealed, session-bound completion receipt before returning.
+      const receiptKey=prefix+'handoff-receipt:'+await digest(state);
+      const receipt={userId,sessionHash,provider,account,expiresAt:this.now()+300000};
+      await this.storage.transaction(async tx=>{
+        await tx.put(receiptKey,{...await this.vault.seal(receipt,receiptKey),expiresAt:receipt.expiresAt});
+      });
       return {status:'connected',account};
     } finally {
       await this.storage.transaction(async tx=>{await tx.delete(key);});
