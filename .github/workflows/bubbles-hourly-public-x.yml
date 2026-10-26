@@ -6,6 +6,7 @@ on:
       - 'test/bubbles-public-x-reader.test.mjs'
       - 'workers/bubbles-public-x/**'
       - 'test/bubbles-public-x-cloudflare.test.mjs'
+      - 'test/bubbles-public-x-retry.test.mjs'
       - '.github/workflows/bubbles-hourly-public-x.yml'
   push:
     branches: [main]
@@ -14,6 +15,7 @@ on:
       - 'test/bubbles-public-x-reader.test.mjs'
       - 'workers/bubbles-public-x/**'
       - 'test/bubbles-public-x-cloudflare.test.mjs'
+      - 'test/bubbles-public-x-retry.test.mjs'
       - '.github/workflows/bubbles-hourly-public-x.yml'
 permissions:
   contents: read
@@ -26,7 +28,8 @@ jobs:
         with:
           node-version: '22'
       - name: Test public author/source parsing and deduplication
-        run: node --test test/bubbles-public-x-reader.test.mjs test/bubbles-public-x-cloudflare.test.mjs
+        run: node --test test/bubbles-public-x-reader.test.mjs test/bubbles-public-x-cloudflare.test.mjs test/bubbles-public-x-retry.test.mjs
       - name: Verify Cloudflare hosted reader exists (read-only status)
         run: |
           curl --fail --show-error --silent --max-time 15 https://quantaphi.org/api/bubbles/public-x/health | grep -q 'Cloudflare Browser Run public profile'
+
