@@ -80,9 +80,9 @@ export class AccountConnections {
           onComplete(null,complete.account);popup.close();
         } catch(error) {onComplete(error);}
       };
-      const listener=event=>{
+      const listener=async event=>{
         if(event.origin!==origin||event.source!==popup)return;
-        void finish(event.data);
+        await finish(event.data);
       };
       if(channel)channel.onmessage=event=>{void finish(event.data);};
       const timer=this.root.setTimeout(()=>{this.cleanup();onComplete(Error('Sign-in expired. Start Connect account again.'));},300000);
