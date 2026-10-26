@@ -13,7 +13,7 @@ for(const page of ['bubbles.html','bubbles-chrome.html']){
     assert.match(html,/class="bubbles-nav-chat" href="#bubblesAICard"/);
     assert.match(html,/<details class="bubbles-nav-more">/);
     assert.match(html,/href="\/bubbles-accounts\.html">Accounts<\/a>/);
-    assert.match(html,/href="\/bubbles-responsive-site\.css\?v=20261026-mobile-layout1"/);
+    assert.match(html,/href="\/bubbles-responsive-site\.css\?v=20261026-mobile-layout2"/);
     assert.equal((html.match(/id="bubblesAICard"/g)||[]).length,1,'one chat mount point');
     assert.ok(html.indexOf('id="bubblesAICard"') < html.indexOf('id="robotBrainOwner"'), 'chat before owner diagnostics');
     assert.doesNotMatch(html,/Connect GitHub and other accounts<\/a>/);
