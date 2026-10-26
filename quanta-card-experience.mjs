@@ -363,5 +363,6 @@ export function mountCardTools(root,card){
   const b=action('Search original topic',()=>{const q=field.value.trim();if(q)window.open('https://www.google.com/search?q='+encodeURIComponent(card.name+' '+q),'_blank','noopener,noreferrer');});
   tool.append(field,b);
  }
- mountCardActions(root,card);
+ // Cards with their own working source search do not need a duplicate generic search bar.
+ mountCardActions(root,card,{showSearch:!liveSourceProfile(id)});
 }
