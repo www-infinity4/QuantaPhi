@@ -269,3 +269,20 @@ test('Cloudflare account selection is isolated by verified wallet, token and sel
  await service.disconnect({userId:'alice',id:connection.id});
  assert.equal(await db.get((await service.namespace('alice'))+'cloudflare:selected:'+connection.id),undefined);
 });
+
+test('cross-browser handoff remains bound to the initiating wallet session',async()=>{
+  const f=fixture(),state=await f.begin();
+  assert.deepEqual(await f.service.handoffStatus({...f.input,state}),{status:'pending'});
+  await assert.rejects(f.service.handoffStatus({...f.input,state,sessionId:'another-session'}),/callback_session_mismatch/);
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'provider-code'});
+  assert.deepEqual(await f.service.handoffStatus({...f.input,state}),{status:'received'});
+  await assert.rejects(f.service.handoff({userId:'alice',provider:'google',state,code:'replayed'}),/callback_already_received/);
+  assert.equal(JSON.stringify([...f.db.rows]).includes('provider-code'),false);
+});
+test('cross-browser handoff rejects wrong owner, provider and expired state',async()=>{
+  const f=fixture(),state=await f.begin();
+  await assert.rejects(f.service.handoff({userId:'bob',provider:'google',state,code:'code'}),/state_invalid_or_used/);
+  await assert.rejects(f.service.handoff({userId:'alice',provider:'github',state,code:'code'}),/state_invalid_or_used/);
+  f.setTime(301000);
+  await assert.rejects(f.service.handoff({userId:'alice',provider:'google',state,code:'code'}),/state_invalid_or_used/);
+});
