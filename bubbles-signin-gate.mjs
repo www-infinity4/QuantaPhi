@@ -126,6 +126,22 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  });
  host.addEventListener('pageshow',()=>{if(Date.now()-lastChecked>15000)void refresh();});
  root.addEventListener('visibilitychange',()=>{if(!root.hidden&&Date.now()-lastChecked>15000)void refresh();});
- void refresh();
+ // After a same-window Android OAuth round trip, the previous page was
+ // destroyed. Recover the pending state from this tab and let the wallet-
+ // authenticated server finish it; never infer approval from the callback URL.
+ const resuming=client.resumePending(async (error)=>{
+  oauthInProgress=false;
+  if(error){
+   setStatus('Sign-in was not completed: '+String(error.message||'authorization_error').slice(0,180));
+  }else{
+   setStatus('Authorization returned. Checking the saved account permissions…');
+  }
+  const summary=await refresh();
+  if(!error&&summary?.ready&&chat)chat.scrollIntoView({behavior:'smooth',block:'start'});
+ });
+ if(resuming){
+  oauthInProgress=true;
+  setStatus('Checking returned account authorization securely…');
+ }else void refresh();
  return {refresh};
 }
