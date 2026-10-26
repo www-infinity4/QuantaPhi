@@ -1,5 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {summarizeGate} from '../bubbles-signin-gate.mjs';
 
 test('both real authorizations must be server-confirmed before gate says ready',()=>{
@@ -30,4 +31,12 @@ test('missing server status and spoofed local positive status never enable the g
  for(const data of [null,undefined,{}, {ready:true}, {ready:false,providers:{github:{configured:true,connected:true,permissionsApproved:true},cloudflare:{configured:true,connected:true,permissionsApproved:true}}}]){
   assert.equal(summarizeGate(data).ready,false);
  }
+});
+
+test('main Bubbles gate resumes Android OAuth after same-window navigation',()=>{
+ const source=readFileSync(new URL('../bubbles-signin-gate.mjs',import.meta.url),'utf8');
+ assert.match(source,/client\.resumePending\(/);
+ assert.match(source,/const summary=await refresh\(\)/);
+ assert.match(source,/if\(resuming\)/);
+ assert.match(source,/Checking returned account authorization securely/);
 });
