@@ -262,7 +262,17 @@ export async function directGithubAgent(env,body,request=fetch,onReceipt=async()
   const raw=JSON.stringify(step);
   if(step.action==='finish'){
    if(unresolvedValidation)return {ok:false,status:'blocked',error:'unresolved_tool_validation',repository,branch,receipts,testsVerified:false,deploymentVerified:false};
-   await publishIfNeeded();return {ok:true,status:receipts.some(r=>r.status==='committed_unverified')?'committed_unverified':'inspected',summary:String(step.summary||'').slice(0,2000),repository,branch,receipts,testsVerified:false,deploymentVerified:false};
+   await publishIfNeeded();
+   // A model's "finish" is not a GitHub operation. Require a successful
+   // receipt, and do not turn an unfinished write/dispatch into completion.
+   const verified=receipts.filter(r=>r.ok===true);
+   const committed=verified.some(r=>r.status==='committed_unverified');
+   const dispatched=verified.some(r=>r.status==='dispatch_accepted');
+   const missing=!verified.length?'no_verified_github_operation'
+    :body.mode==='write'&&!committed?'requested_write_not_committed'
+    :body.mode==='actions'&&!dispatched?'requested_workflow_not_dispatched':null;
+   if(missing)return {ok:false,status:'blocked',error:missing,repository,branch,receipts,testsVerified:false,deploymentVerified:false};
+   return {ok:true,status:committed?'committed_unverified':dispatched?'dispatch_accepted':'inspected',summary:String(step.summary||'').slice(0,2000),repository,branch,receipts,testsVerified:false,deploymentVerified:false};
   }
   if(step.action==='commit_files'){
    let pink=null;
@@ -290,7 +300,8 @@ export async function directGithubAgent(env,body,request=fetch,onReceipt=async()
  }
  if(unresolvedValidation)return {ok:false,status:'blocked',error:'unresolved_tool_validation',repository,branch,receipts,testsVerified:false,deploymentVerified:false};
  await publishIfNeeded();
- return {ok:true,status:'tool_limit_reached',repository,branch,receipts,testsVerified:false,deploymentVerified:false};
+ // Even eight real reads or a staged PR do not mean the requested task finished.
+ return {ok:false,status:'tool_limit_reached',error:'direct_engineer_tool_limit_reached',repository,branch,receipts,testsVerified:false,deploymentVerified:false};
 }
 
 
