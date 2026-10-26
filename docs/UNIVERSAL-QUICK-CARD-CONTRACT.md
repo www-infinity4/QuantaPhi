@@ -29,6 +29,7 @@ This is the shared card contract for QuantaPhi, Infinity Phi and Bubbles. Each c
 | X | Official sign-in, search, native compose | Registered X OAuth/user scopes, read/post adapters, per-post preview and confirmation. No X password storage. |
 | Facebook / Instagram | Official sign-in, original-site discovery | Meta-approved Login and Graph API permissions for supported accounts/features. Private feed or ordinary Instagram consumer posting is not presumed available. |
 | TikTok | Official sign-in, search / embeds | Approved TikTok API permissions and explicit publishing consent. |
+| StarMaker | Verified official sign-in handoff, curated song picker and voluntary Music Quant suggestions | Request direct developer/partner authorization for OAuth, song/catalog/search, playback, recordings, duets and social write scopes. Do not reuse StarMaker's Google/Facebook sign-in as third-party access or infer a live API. See issue #1118. |
 | JCPenney / GUESS | Verified original-domain shop entry | Merchant-approved product/catalog/checkout APIs if available, otherwise merchant-hosted cart/checkout. |
 | Google / GitHub / Cloudflare | Official sign-in plus existing Bubbles account settings | Require existing account connector live grant, validated scope/receipt; do not claim any provider is currently connected without readback. |
 

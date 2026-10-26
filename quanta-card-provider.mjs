@@ -8,6 +8,7 @@ const PROVIDERS=Object.freeze([
  {id:'facebook',name:'Facebook',hosts:['facebook.com'],signin:'https://www.facebook.com/login/',search:'https://www.facebook.com/search/top?q=',actions:['search','post','follow']},
  {id:'instagram',name:'Instagram',hosts:['instagram.com'],signin:'https://www.instagram.com/accounts/login/',actions:['explore','publish','follow']},
  {id:'tiktok',name:'TikTok',hosts:['tiktok.com'],signin:'https://www.tiktok.com/login',search:'https://www.tiktok.com/search?q=',actions:['search','publish','follow']},
+ {id:'starmaker',name:'StarMaker',hosts:['starmakerstudios.com'],signin:'https://www.starmakerstudios.com/en/web-login',actions:['song-discovery']},
  {id:'google',name:'Google',hosts:['google.com'],signin:'https://accounts.google.com/',search:'https://www.google.com/search?q=',actions:['search'],connector:'google'},
  {id:'youtube',name:'YouTube',hosts:['youtube.com','youtu.be'],signin:'https://accounts.google.com/',search:'https://www.youtube.com/results?search_query=',actions:['search','watch'],connector:'google'},
  {id:'github',name:'GitHub',hosts:['github.com'],signin:'https://github.com/login',actions:['repos','read','write'],connector:'github'},
