@@ -1,7 +1,7 @@
 // Observed first-party views are hints, never write authority or source proof.
 const KEY='bubbles:observed-project-views:v1';
 const clean=s=>String(s||'').replace(/[\x00-\x1f]/g,' ').trim().slice(0,160);
-const stop=new Set('a an the my our your this that it here page card cards repo repository repositories github fix repair update add ads advertisement advertisements search find fill populate build create implement fetch dataset data api from for with and to in on of is was just please want need i you can could should he she bubbles work working code source file files all more next previous current fill stop stopped where when every time product full make get use using improve improve expand complete gather proper properly real actual'.split(' '));
+const stop=new Set('a an the my our your this that it here page card cards repo repository repositories github fix repair update add ads advertisement advertisements search find fill populate build create implement fetch dataset data api from for with and to in on of is was just please want need i you can could should he she bubbles work working code source file files all more next previous current fill stop stopped where when every time product full make get use using improve improve expand complete gather proper properly real actual move put place relocate carousel rotation into'.split(' '));
 export function discoveryTerms(request){return [...new Set(String(request||'').slice(0,2500).toLowerCase().match(/[a-z][a-z0-9-]{2,}/g)||[])].filter(w=>!stop.has(w)).slice(0,4);}
 export function recordProjectView(view,storage=globalThis.localStorage,now=Date.now()){
  try{
@@ -50,9 +50,9 @@ export function sourceQueryFor(request,history=[]){
 export function cardWorkTargetFor(request,history=[]){
  const q=String(request||'').trim().slice(0,2400);
  if(!q||/^(?:(?:please|bubbles)[,\s]+)*(?:do\s+not|don't|never|how|why|what|explain|describe)\b/i.test(q))return null;
- const direct=/^(?:(?:please|hey\s+bubbles|bubbles)[,\s:]+)*(?:(?:can|could|would|will)\s+you\s+)?(?:fix|repair|restore|debug|update|upgrade|rebuild|build|implement|improve|redesign|correct|replace|wire|connect|finish)\b/i.test(q);
+ const direct=/^(?:(?:please|hey\s+bubbles|bubbles)[,\s:]+)*(?:(?:can|could|would|will)\s+you\s+)?(?:fix|repair|restore|debug|update|upgrade|rebuild|build|implement|improve|redesign|correct|replace|wire|connect|finish|move|put|place|relocate)\b/i.test(q);
  const directive=/^(?:(?:please|bubbles)[,\s:]+)*(?:i\s+(?:need|want)\s+(?:you|bubbles)\s+to|we\s+need\s+(?:you|bubbles)\s+to|you\s+(?:need|have)\s+to)\b/i.test(q)&&
-  /\b(?:fix|repair|restore|debug|update|upgrade|rebuild|build|implement|improve|redesign|correct|replace|wire|connect|finish)\b/i.test(q);
+  /\b(?:fix|repair|restore|debug|update|upgrade|rebuild|build|implement|improve|redesign|correct|replace|wire|connect|finish|move|put|place|relocate)\b/i.test(q);
  if(!direct&&!directive)return null;
  return namedCardFor(sourceQueryFor(q,history));
 }
@@ -102,5 +102,5 @@ export async function discoverProject({request,catalog,views=[],invoke}){
  return null;
 }
 export function hasActionDraft(text){
- return /["']action["']\s*:\s*["'](?:read_repo|read_repository|read_file|search|web_search|commit_files|create_pr|deploy)["'][\s\S]{0,1000}["']parameters["']\s*:/i.test(String(text||''));
+ return /["']action["']\s*:\s*["'](?:(?:github|web|browser|weather|tools?|brain)[._][\w.-]{1,80}|read_repo|read_repository|read_file|search|web_search|commit_files|create_pr|deploy)["'][\s\S]{0,1000}["']parameters["']\s*:/i.test(String(text||''));
 }

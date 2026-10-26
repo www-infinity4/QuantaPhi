@@ -27,6 +27,9 @@
 .oracle-card-deck-stage .ba-panel{z-index:9999}
 .oracle-card-scroll{display:block;width:100%;background:#a33042;font-weight:900;font-size:15px}
 .oracle-card-deck-status{font-size:12px;line-height:1.45;margin:8px 0 0;color:#604d6e}
+/* Keep the original Gary Cardone I AM node available to the Oracle carousel,
+ * but never render it as a standalone homepage card, even before JS loads. */
+main.app > #churchOfIAmCard{display:none!important}
 .oracle-card-deck-active:not(.oracle-shelf-open) main.app > :is(#cardoneCapitalOffer,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#result,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:none!important}
 .oracle-shelf-open main.app > :is(#cardoneCapitalOffer,#pixieStoryCard,#googleTrendNba,#googleTrendMlb,#googleTrendCulture,#publicCardTrends,#phiChannelCards,#shopAdPhi,#radioClubhouse,#infiniteBook,#infinityConcepts,#groupStoryBuild,#phiStoryWriter,#phiMediaBuilder,#fredSpacesRadio,#magooSpacesRadio,#followingSpacesRadio,#mediaStarCreator,#bubblesAICard,#phiProjectActions,#halloweenPhi){display:block}
 @media(max-width:390px){.oracle-card-deck{padding:11px}.oracle-card-deck-nav{grid-template-columns:1fr 1fr}.oracle-card-deck-nav strong{grid-column:1/-1;grid-row:1}.oracle-card-deck-nav button{font-size:13px;min-height:48px}}

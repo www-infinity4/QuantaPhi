@@ -52,3 +52,11 @@ test('direct portrait source, verified backup and readable fallback replace Clou
  assert.ok(style.includes('body.oracle-quanta .iam-card .iam-copy'));
  assert.ok(!page.includes('onerror="this.style.display'));
 });
+
+// Regression: the live original is only presented inside the Oracle viewer.
+test('Church of I AM appears in the carousel, not separately on the homepage',()=>{
+ const deckStyle=read('oracle-card-deck.css');
+ assert.match(deck,/\['churchOfIAmCard','Church of I AM · Gary Cardone'\]/);
+ assert.match(deck,/stage\.append\(entry\.node\)/);
+ assert.match(deckStyle,/main\.app > #churchOfIAmCard\{display:none!important\}/);
+});

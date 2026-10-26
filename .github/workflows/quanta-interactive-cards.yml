@@ -14,6 +14,8 @@ on:
       - 'test/art-museum-quick-cards.test.mjs'
       - 'test/art-museum-card-browser.spec.mjs'
       - 'oracle-card-deck.js'
+      - 'oracle-card-deck.css'
+      - 'test/cardone-carousel.browser.cjs'
       - 'premium-source-cards.*'
       - 'test/premium*'
       - 'quanta-feed.*'
@@ -84,5 +86,6 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Run Android-width interactive browser QA
         run: |
+          node --test test/cardone-carousel.browser.cjs
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/quanta-browser.log 2>&1 &
           npx playwright test test/verified-brand-sports-browser.spec.mjs test/art-museum-card-browser.spec.mjs test/quanta-card-browser.spec.mjs test/premium-card-browser.spec.mjs test/world-series-browser.spec.mjs --reporter=line --workers=1
