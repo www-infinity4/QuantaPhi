@@ -312,7 +312,10 @@ test('concurrent handoff finishes cannot exchange twice',async()=>{
   const f=fixture(),state=await f.begin(),auth={...f.input,state};
   await f.service.handoff({userId:'alice',provider:'google',state,code:'single-use-code'});
   const outcomes=await Promise.allSettled([f.service.finishHandoff(auth),f.service.finishHandoff(auth)]);
-  assert.equal(outcomes.filter(x=>x.status==='fulfilled'&&x.value.status==='connected').length,1);
+  assert.equal(outcomes.filter(x=>x.status==='rejected').length,0);
+  assert.ok(outcomes.some(x=>x.value.status==='connected'));
+  assert.ok(outcomes.every(x=>['connected','pending'].includes(x.value.status)));
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
   assert.equal(f.calls,1);
 });
 
