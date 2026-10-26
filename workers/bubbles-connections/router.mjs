@@ -32,7 +32,10 @@ export function callbackPage(provider,result='') {
     : result==='failed'
       ? 'The authorization could not be received. Return to Bubbles and retry the sign-in.'
       : 'Return to Bubbles to check your account connection.';
-  const html='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Return to Bubbles</title><body><h1>Return to Bubbles</h1><p>'+message+'</p></body></html>';
+  // The callback has already redirected away from the provider code. Offer
+  // user-initiated navigation to the registered Android return intent or to
+  // the Chrome/PWA account page. Neither link carries OAuth state or tokens.
+  const html='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Return to Bubbles</title><body><main><h1>Return to Bubbles</h1><p>'+message+'</p><p><a href="quantaphi-bubbles://return">Return to Bubbles Android app</a></p><p><a href="/bubbles-accounts.html">Continue in Bubbles Chrome</a></p><p>Connection is not confirmed until Bubbles checks your account securely.</p></main></body></html>';
   return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store',
     'Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
     'X-Content-Type-Options':'nosniff'}});
