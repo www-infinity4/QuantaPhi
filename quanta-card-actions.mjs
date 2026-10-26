@@ -1,4 +1,6 @@
-/* Shared actions for QuantaPhi quick cards. Client actions must never imply a wallet payout or runner receipt. */
+import {cardProvider,providerSearchUrl,quickCardManifest} from './quanta-card-provider.mjs';
+import {FEED_STORAGE_KEY,cleanFeedState,toggleFollowing} from './quanta-feed-rank.mjs';
+/* Shared actions for QuantaPhi quick cards. No browser sign-in implies API permission. */
 const STORE_STARS='quantaPhiCardStarsV1';
 const STORE_COLLECT='quantaPhiCollected';
 const STORE_DRAFT='quantaPhiBuildDraftV1';
@@ -18,11 +20,22 @@ export function mountCardActions(host,card,options={}){
  const id=String(card.id||'').replace(/[^a-z0-9-]/g,'').slice(0,90);
  if(!id)return;
  const name=String(card.name||card.title||id).slice(0,160);
- const bar=element('section','qca-toolbar');bar.dataset.cardActions=id;bar.setAttribute('aria-label',name+' card actions');
+ const provider=cardProvider(card),manifest=quickCardManifest(card);
+ const bar=element('section','qca-toolbar');bar.dataset.cardActions=id;bar.dataset.cardCapabilities=JSON.stringify(manifest);bar.setAttribute('aria-label',name+' card actions');
  const controls=element('div','qca-controls'),status=element('p','qca-status','');
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const b=(label,fn)=>{const n=element('button','qca-button',label);n.type='button';n.addEventListener('click',fn);controls.append(n);return n};
- const stars=read(STORE_STARS,{}),key='quick-card|'+id;
+ const key='quick-card|'+id,followId=id.slice(0,70);
+ const followed=()=>cleanFeedState(read(FEED_STORAGE_KEY,{})).following.includes(followId);
+ const follow=b(followed()?'✓ Following':'+ Follow',()=>{
+  const state=cleanFeedState(read(FEED_STORAGE_KEY,{}));
+  const next=toggleFollowing(state,followId);
+  if(!write(FEED_STORAGE_KEY,next))return notify(status,'Could not save Follow on this device.');
+  const yes=next.following.includes(followId);
+  follow.textContent=yes?'✓ Following':'+ Follow';follow.setAttribute('aria-pressed',String(yes));
+  notify(status,yes?'Following saved on this device.':'Unfollowed on this device.');
+  window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'card-actions',id:followId}}));
+ });follow.setAttribute('aria-pressed',String(followed()));
  const starred=()=>Boolean(read(STORE_STARS,{})[id]);
  const star=b(starred()?'★ Starred':'☆ Star',()=>{
   const next={...read(STORE_STARS,{})};
@@ -54,6 +67,24 @@ export function mountCardActions(host,card,options={}){
   const field=element('input','qca-copy');field.value=url;field.readOnly=true;field.setAttribute('aria-label','Copy card link');bar.append(field);field.focus();field.select();
   notify(status,'Select and copy this Quick Card link.');
  });
+ if(provider){
+  const signin=element('a','qca-button qca-signin',provider.hasDedicatedSignin?'Sign in with '+provider.name:'Open '+provider.name+' to sign in');
+  signin.href=provider.signin;signin.target='_blank';signin.rel='noopener noreferrer';
+  signin.setAttribute('aria-label','Open the real '+provider.name+' sign-in on its official site');
+  signin.addEventListener('click',()=>notify(status,provider.name+' sign-in opens at the original site. This does not connect an account to Bubbles.'));
+  controls.append(signin);
+  if(provider.connector){
+   const connect=element('a','qca-button qca-connect','Connect to Bubbles');
+   connect.href='/bubbles-accounts.html';connect.setAttribute('aria-label','Manage '+provider.name+' permissions in Bubbles');
+   controls.append(connect);
+  }
+  if(provider.compose){
+   const compose=element('a','qca-button qca-compose','Write on '+provider.name);
+   compose.href=provider.compose;compose.target='_blank';compose.rel='noopener noreferrer';
+   compose.setAttribute('aria-label','Compose directly on '+provider.name+' with your own account');
+   controls.append(compose);
+  }
+ }
  b('+1 Build',()=>{
   const request='Build one improvement for the '+name+' QuantaPhi Quick Card. Preserve original graphics and functional controls; use real verified provider sources. Card: '+previewUrl(card)+'. Keep Star, Collect, Share, +1 Build and Quick Search. Verify build results and receipts before marking complete.';
   const builder=document.getElementById('robotDirectionsInput');
@@ -69,7 +100,7 @@ export function mountCardActions(host,card,options={}){
  const submit=element('button','qca-button qca-search-submit','⌕ Quick Search');submit.type='submit';
  search.append(q,submit);search.addEventListener('submit',event=>{
   event.preventDefault();const value=q.value.trim();if(!value)return;
-  const destination='/infinity-search-results.html?'+new URLSearchParams({engine:'google',q:name+' '+value});
+  const destination=providerSearchUrl(provider,value)||'/infinity-search-results.html?'+new URLSearchParams({engine:'google',q:name+' '+value});
   if(typeof window.QuantaOpenSite==='function'){
    const a=element('a');a.href=destination;a.dataset.siteUrl=destination;a.dataset.siteTitle=name+' · Quick Search';
    try{window.QuantaOpenSite(a);return}catch{}
