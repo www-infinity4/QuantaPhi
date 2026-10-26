@@ -331,3 +331,24 @@ test('completed external-browser handoff survives a lost completion response',as
   f.setTime(301000);
   assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
 });
+
+test('recovered OAuth success never survives account disconnect',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'code'});
+  const result=await f.service.finishHandoff(auth);
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  await f.service.disconnect({userId:'alice',id:result.account.id});
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
+  assert.deepEqual(await f.service.finishHandoff(auth),{status:'expired'});
+  assert.equal(f.calls,1);
+});
+test('recovered OAuth success cannot impersonate a later connection revision',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'old-code'});
+  const old=await f.service.finishHandoff(auth);
+  assert.equal(old.status,'connected');
+  const newer=await f.finish(await f.begin());
+  assert.equal(newer.id,old.account.id);
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
+  assert.equal(f.calls,2);
+});
