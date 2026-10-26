@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-26T00:06:13.872438Z",
+  "checked_at": "2026-10-26T05:08:13.006973Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 15
+      "articles_selected": 16
     },
     {
       "publisher": "CBS Sports",
@@ -17,6 +17,28 @@
     }
   ],
   "articles": [
+    {
+      "title": "With World Series start, Gasser is living his dream -- and his dad's",
+      "url": "https://www.mlb.com/news/robert-gasser-living-his-dream-dad-s-in-2026-world-series",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-26T01:47:18Z",
+      "summary": "",
+      "author": "Adam McCalvy",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "3 pressing questions for World Series Game 3",
+      "url": "https://www.mlb.com/news/2026-world-series-game-3-storylines-brewers-vs-rays",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-26T01:41:55Z",
+      "summary": "",
+      "author": "Will Leitch",
+      "image_url": "",
+      "kind": "Analysis",
+      "image_credit": ""
+    },
     {
       "title": "Rays lend a helping hand (literally) to fellow member of 'Champa Bay'",
       "url": "https://www.mlb.com/news/rays-glove-buccaneers-quarterback-baker-mayfield",
@@ -68,6 +90,17 @@
       "published_at": "2026-10-25T18:46:13Z",
       "summary": "",
       "author": "",
+      "image_url": "",
+      "kind": "Reporting",
+      "image_credit": ""
+    },
+    {
+      "title": "Peralta set to meet old friends -- and new foes -- in Fall Classic",
+      "url": "https://www.mlb.com/news/freddy-peralta-ready-to-face-old-team-in-2026-world-series",
+      "publisher": "MLB.com",
+      "published_at": "2026-10-25T18:00:00Z",
+      "summary": "",
+      "author": "Anthony DiComo",
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
@@ -194,28 +227,6 @@
       "image_credit": ""
     },
     {
-      "title": "Jennie Finch Empowerment Award recipients take center stage at World Series",
-      "url": "https://www.mlb.com/news/jennie-finch-empowerment-award-recipients-honored-at-2026-world-series",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-25T00:06:15Z",
-      "summary": "",
-      "author": "Zach Sweet",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "MLB App launches for iPhone Duo just in time for World Series",
-      "url": "https://www.mlb.com/news/mlb-app-launches-for-iphone-duo",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-24T22:44:00Z",
-      "summary": "",
-      "author": "",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "This lifelong Brewers fan walks to EVERY home game (yes, even the World Series)",
       "url": "https://www.mlb.com/news/brewers-fan-walks-to-every-home-game-including-world-series",
       "publisher": "MLB.com",
@@ -333,17 +344,6 @@
       "summary": "Pat Murphy and Kevin Cash don't have the luxury of building a Frankenstein roster, but we do, so we will",
       "author": "Mike Axisa",
       "image_url": "https://sportshub.cbsistatic.com/i/2026/10/22/51d7f1c5-21d2-41b1-973f-919a4e923282/frankenstein-getty.png",
-      "kind": "Reporting",
-      "image_credit": "CBS Sports RSS"
-    },
-    {
-      "title": "Scott Boras decries MLB owners who wear 'floaties' as Brewers-Rays World Series comes with salary cap debate",
-      "url": "https://www.cbssports.com/mlb/news/scott-boras-mlb-owners-floaties-brewers-rays-world-series-salary-cap/",
-      "publisher": "CBS Sports",
-      "published_at": "2026-10-23T15:07:08Z",
-      "summary": "MLB's small-market World Series begins on Friday night ahead of a looming labor fight",
-      "author": "Julian McWilliams",
-      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/1ed34928-833d-4e3f-9140-b7c91f7c0513/scott-boras-getty-1.png",
       "kind": "Reporting",
       "image_credit": "CBS Sports RSS"
     }
