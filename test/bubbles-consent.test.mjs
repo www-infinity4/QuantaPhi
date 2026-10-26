@@ -319,6 +319,27 @@ test('concurrent handoff finishes cannot exchange twice',async()=>{
   assert.equal(f.calls,1);
 });
 
+test('polls stay pending while the first Android handoff exchanges its provider code',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'single-use-code'});
+  let entered,release;
+  const exchanging=new Promise(resolve=>{entered=resolve;});
+  const continueExchange=new Promise(resolve=>{release=resolve;});
+  const original=f.adapter.exchange;
+  f.adapter.exchange=async args=>{entered();await continueExchange;return original(args);};
+  const first=f.service.finishHandoff(auth);
+  await exchanging; // OAuth state is already consumed; provider request is in flight.
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'pending'});
+  assert.deepEqual(await f.service.finishHandoff(auth),{status:'pending'});
+  await assert.rejects(f.service.handoffStatus({...auth,sessionId:'different-session'}),/callback_session_mismatch/);
+  release();
+  const completed=await first;
+  assert.equal(completed.status,'connected');
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  assert.equal(f.calls,1);
+  assert.equal([...f.db.rows.keys()].filter(k=>k.includes('handoff-inflight:')).length,0);
+});
+
 test('completed external-browser handoff survives a lost completion response',async()=>{
   const f=fixture(),state=await f.begin(),auth={...f.input,state};
   await f.service.handoff({userId:'alice',provider:'google',state,code:'external-code'});
