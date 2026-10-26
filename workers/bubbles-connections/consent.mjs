@@ -85,7 +85,17 @@ export class ConsentService {
       return {status:'connected',account:receipt.account};
     }
     const sealed=await this.storage.get(key);
-    if(!sealed)return {status:'expired'};
+    if(!sealed){
+      // The first finish request consumes the OAuth state before exchanging
+      // the provider code. During that network request, another poll must
+      // not report an expired sign-in. This marker is session-bound and
+      // contains no provider code or access token.
+      const inflight=await this.storage.get(prefix+'handoff-inflight:'+hash);
+      if(!inflight)return {status:'expired'};
+      if(inflight.userId!==userId||inflight.sessionHash!==sessionHash||inflight.provider!==provider)
+        throw Error('callback_session_mismatch');
+      return {status:inflight.expiresAt>this.now()?'pending':'expired'};
+    }
     const pending=await this.vault.open(sealed,key);
     if(pending.userId!==userId||pending.sessionHash!==sessionHash||pending.provider!==provider)
       throw Error('callback_session_mismatch');
@@ -107,6 +117,13 @@ export class ConsentService {
     if(!encrypted)return {status:'pending'};
     const received=await this.vault.open(encrypted,key);
     if(!received.code)throw Error('callback_invalid');
+    const inflightKey=prefix+'handoff-inflight:'+await digest(state);
+    await this.storage.transaction(async tx=>{
+      const previous=await tx.get(inflightKey);
+      if(previous&&(previous.userId!==userId||previous.sessionHash!==sessionHash||previous.provider!==provider))
+        throw Error('callback_session_mismatch');
+      await tx.put(inflightKey,{userId,sessionHash,provider,expiresAt:this.now()+300000});
+    });
     // The storage contract exposes transactional delete, not a top-level
     // delete method. Erase the sealed callback even if token exchange fails.
     try {
@@ -123,6 +140,7 @@ export class ConsentService {
           throw Error('connection_cancelled');
         receipt.connectionRevision=current.revision;
         await tx.put(receiptKey,{...await this.vault.seal(receipt,receiptKey),expiresAt:receipt.expiresAt});
+        await tx.delete(inflightKey);
       });
       return {status:'connected',account};
     } catch(error) {
@@ -134,6 +152,9 @@ export class ConsentService {
         if(recovered.status==='connected')return recovered;
         if(recovered.status==='expired')return {status:'pending'};
       }
+      // An exchange or receipt failure is terminal for this consumed state.
+      // Only the racing loser keeps the marker while the winner completes.
+      await this.storage.transaction(async tx=>{await tx.delete(inflightKey);});
       throw error;
     } finally {
       await this.storage.transaction(async tx=>{await tx.delete(key);});
