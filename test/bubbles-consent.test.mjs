@@ -269,3 +269,20 @@ test('Cloudflare account selection is isolated by verified wallet, token and sel
  await service.disconnect({userId:'alice',id:connection.id});
  assert.equal(await db.get((await service.namespace('alice'))+'cloudflare:selected:'+connection.id),undefined);
 });
+
+test('Integra checks the encrypted credential, never just the connection label or status',async()=>{
+ const f=fixture();
+ f.service.adapters.github=f.adapter;
+ const input={...f.input,provider:'github',actions:['repository.read']};
+ const started=await f.service.start(input);
+ const state=new URL(started.authorizationUrl).searchParams.get('state');
+ await f.service.complete({...input,state,code:'synthetic-code'});
+ let [record]=await f.service.gateStatus({userId:'alice'});
+ assert.equal(record.integrityVerified,true);
+ assert.ok(!JSON.stringify(record).includes('secret-access'));
+ const key=[...f.db.rows.keys()].find(key=>key.includes(':credential:'));
+ f.db.rows.delete(key);
+ [record]=await f.service.gateStatus({userId:'alice'});
+ assert.equal(record.integrityVerified,false);
+ assert.deepEqual(await f.service.gateStatus({userId:'bob'}),[]);
+});

@@ -7,7 +7,7 @@ const gateSource=fs.readFileSync('bubbles-voice-gate.js','utf8');
 const appSource=fs.readFileSync('bubbles-ai.js','utf8');
 const brainSource=fs.readFileSync('bubbles-brain-actions.js','utf8');
 
-function harness(owner=false,speech=false){
+function harness(owner=false,speech=false,verified=true){
  const clock={now:Date.now()};const FakeDate=class extends Date{static now(){return clock.now}};
  const utterances=[],memoryRequests=[],catalogCalls=[];let ownsVoice=true;const nodes=[],storage=new Map(),requests=[],recognized=[],track={stopped:false,stop(){this.stopped=true}};
  const node=(tag)=>{
@@ -53,14 +53,28 @@ function harness(owner=false,speech=false){
    return Response.json(await fixture.json(),{status:fixture.ok?200:500});
   },AbortController,setTimeout:()=>1,clearTimeout(){}};
  if(speech){context.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};context.speechSynthesis={cancel(){},getVoices:()=>[],speak(u){utterances.push(u);u.onstart?.()}};}
- vm.runInNewContext(gateSource,context);
- vm.runInNewContext(brainSource,context);
- vm.runInNewContext(appSource,context);
+ vm.createContext(context);
+ vm.runInContext(gateSource,context);
+ vm.runInContext(brainSource,context);
+ const fixtureSource=appSource.replace(
+  'if(!embedded){setAccountEntry(null);void checkPanelGate();}',
+  'if(!embedded){setAccountEntry(null);if(window.__testAuthorizedEntry){accountGateController={check:async()=>({ready:true})};setAccountEntry({ready:true});}}'
+ );
+ assert.notEqual(fixtureSource,appSource,'the test-only authorization fixture must match the production initialization anchor');
+ window.__testAuthorizedEntry=verified;
+ vm.runInContext(fixtureSource,context);
+ // The synthetic server-approved state exists only inside this isolated VM.
+ // The unverified case and production OAuth flow remain fail-closed.
  const orb=nodes.find(n=>n.className==='ba-launcher');
  return {window,document,nodes,orb,requests,recognized,track,utterances,memoryRequests,catalogCalls,advance:ms=>{clock.now+=ms},setVoiceOwned:value=>{ownsVoice=value}};
 }
 const flush=async()=>{for(let i=0;i<40;i++)await Promise.resolve()};
 const result=s=>Object.assign([{transcript:s}],{isFinal:true});
+test('Unverified account entry cannot activate the website microphone',async()=>{
+ const h=harness(false,false,false);h.orb.handlers.click();await flush();
+ assert.equal(h.recognized.length,0,'microphone stays off before both accounts verify');
+ assert.equal(h.track.stopped,false,'no media track was opened');
+});
 test('Touching Bubbles starts continuous listening',async()=>{
  const h=harness();assert.equal(h.recognized.length,0);
  h.orb.handlers.click();await flush();assert.equal(h.recognized.length,1);

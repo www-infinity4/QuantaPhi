@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {summarizeGate} from '../bubbles-signin-gate.mjs';
 
 test('both real authorizations must be server-confirmed before gate says ready',()=>{
- const valid={ready:true,providers:{
+ const valid={ready:true,mode:'required',integra:{status:'passed'},providers:{
   github:{configured:true,connected:true,permissionsApproved:true,label:'gh-account'},
   cloudflare:{configured:true,connected:true,permissionsApproved:true,label:'cf-account',missingActions:[]}
  }};
@@ -30,4 +30,11 @@ test('missing server status and spoofed local positive status never enable the g
  for(const data of [null,undefined,{}, {ready:true}, {ready:false,providers:{github:{configured:true,connected:true,permissionsApproved:true},cloudflare:{configured:true,connected:true,permissionsApproved:true}}}]){
   assert.equal(summarizeGate(data).ready,false);
  }
+});
+
+test('the old optional preview service cannot unlock the required application',()=>{
+ const payload={ready:true,providers:{github:{configured:true,connected:true,permissionsApproved:true},cloudflare:{configured:true,connected:true,permissionsApproved:true}}};
+ assert.equal(summarizeGate({...payload,mode:'preview'}).ready,false);
+ assert.equal(summarizeGate({...payload,mode:'required',integra:{status:'blocked'}}).ready,false);
+ assert.equal(summarizeGate({...payload,mode:'required',integra:{status:'passed'}}).ready,true);
 });

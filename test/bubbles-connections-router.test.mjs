@@ -1,5 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
+import {runInNewContext} from 'node:vm';
 import {handleConnections,PREFIX} from '../workers/bubbles-connections/router.mjs';
 const bearer='Bearer sq_'+ 'a'.repeat(40);
 function request(path,{method='GET',origin='https://quantaphi.org',authorization=bearer,body}={}) {
@@ -60,8 +61,8 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
   gateStatus:async input=>{
    seen=input;
    return [
-    {provider:'github',status:'connected',label:'user-github',expiresAt:now+60000,grantedActions:[]},
-    {provider:'cloudflare',status:'connected',label:'user-cloudflare',
+    {provider:'github',status:'connected',integrityVerified:true,label:'user-github',expiresAt:now+60000,grantedActions:[]},
+    {provider:'cloudflare',status:'connected',integrityVerified:true,label:'user-cloudflare',
      expiresAt:now+60000,grantedActions:['account.read','projects.build','ledger.read','projects.full']}
    ];
   }
@@ -73,7 +74,7 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
  assert.equal(response.status,200);
  assert.equal(seen.userId,'verified-alice');
  assert.equal(result.enforced,false);
- assert.equal(result.mode,'preview');
+ assert.equal(result.mode,'required');
  assert.equal(result.ready,true);
  assert.equal(result.providers.cloudflare.permissionsApproved,true);
  assert.equal(result.providers.github.permissionsApproved,true);
@@ -82,21 +83,22 @@ test('two-provider gate reuses tenant-scoped verified records and never gives ch
 test('full Cloudflare project grant is required before reporting full access',async()=>{
  const now=Date.now(),configured={...env,GITHUB_CLIENT_ID:'app',GITHUB_CLIENT_SECRET:'hidden',CLOUDFLARE_CLIENT_ID:'app',CLOUDFLARE_CLIENT_SECRET:'hidden',CLOUDFLARE_OAUTH_ALLOWED_SCOPES:FULL_CLOUDFLARE_SCOPES};
  const service={gateStatus:async()=>[
-  {provider:'github',status:'connected',expiresAt:now+60000,grantedActions:[]},
-  {provider:'cloudflare',status:'connected',expiresAt:now+60000,
+  {provider:'github',status:'connected',integrityVerified:true,expiresAt:now+60000,grantedActions:[]},
+  {provider:'cloudflare',status:'connected',integrityVerified:true,expiresAt:now+60000,
    grantedActions:['account.read','projects.build','ledger.read']}
  ]};
  const value=await (await handleConnections(request('/gate/status'),configured,()=>service)).json();
- assert.equal(value.ready,false);
- assert.deepEqual(value.providers.cloudflare.missingActions,['projects.full']);
- assert.equal(value.providers.cloudflare.permissionsApproved,false);
+ assert.equal(value.ready,true);
+ assert.deepEqual(value.providers.cloudflare.missingActions,[]);
+ assert.equal(value.providers.cloudflare.permissionsApproved,true);
+ assert.equal(value.providers.cloudflare.projectPermissionsApproved,false);
 });
 test('gate fails closed for missing Cloudflare setup, expired credentials and partial scopes',async()=>{
  const now=Date.now();
  const e={...env,GITHUB_CLIENT_ID:'github',GITHUB_CLIENT_SECRET:'secret'};
  const service={gateStatus:async()=>[
-  {provider:'github',status:'connected',expiresAt:now-5000,grantedActions:[]},
-  {provider:'cloudflare',status:'connected',expiresAt:now+60000,grantedActions:['account.read']}
+  {provider:'github',status:'connected',integrityVerified:true,expiresAt:now-5000,grantedActions:[]},
+  {provider:'cloudflare',status:'connected',integrityVerified:true,expiresAt:now+60000,grantedActions:['account.read']}
  ]};
  const response=await handleConnections(request('/gate/status'),e,()=>service);
  const result=await response.json();
@@ -113,7 +115,8 @@ test('Cloudflare OAuth callback is fixed-origin and removes incoming code from i
  const response=await handleConnections(request('/cloudflare/callback?code=private-code'),{},()=>assert.fail());
  const html=await response.text();
  assert.equal(response.status,200);
- assert.match(html,/bubbles:oauth-return/);
+ assert.match(html,/bubbles-oauth-return\.mjs/);
+ assert.match(html,/https:\/\/quantaphi\.org\/bubbles\.html/);
  assert.ok(html.includes("history.replaceState"));
  assert.ok(!html.includes('private-code'));
  assert.ok(response.headers.get('Content-Security-Policy').includes("frame-ancestors 'none'"));
@@ -136,6 +139,8 @@ test('Cloudflare app registered without full project scopes blocks full consent 
  assert.equal(cf.configured,true);
  assert.equal(cf.fullProjectConfigured,false);
  assert.deepEqual(cf.actions,['account.read']);
+ assert.equal(cf.setupRequired,null);
+ assert.equal(cf.projectScopeSetupRequired,true);
  const gate=await (await handleConnections(request('/gate/status'),limited,
   ()=>({gateStatus:async()=>[]}))).json();
  assert.equal(gate.providers.cloudflare.scopeSetupRequired,true);
@@ -150,4 +155,42 @@ test('Cloudflare account lookup and selection always receive verified wallet use
  assert.equal(select.status,200);
  assert.ok(calls.every(x=>x.userId==='verified-alice'));
  assert.equal((await select.json()).storageReady,false);
+});
+
+// Exercise the real callback HTML's inline script, not a reimplemented validator.
+test('callback rejects duplicate provider parameters and fragments before code exchange',async()=>{
+ const response=await handleConnections(request('/github/callback'),{},()=>assert.fail());
+ const html=await response.text();
+ const script=html.match(/<script nonce="[^"]+">([\s\S]*?)<\/script>/)?.[1];
+ assert.ok(script,'the callback page must have its inline script');
+ const cases=[
+  {search:'?state='+ 's'.repeat(43)+'&state=duplicate&code=code',hash:''},
+  {search:'?state='+ 's'.repeat(43)+'&code=one&code=two',hash:''},
+  {search:'?state='+ 's'.repeat(43)+'&code=code&error=access_denied',hash:''},
+  {search:'?state='+ 's'.repeat(43)+'&code=code',hash:'#access_token=unsafe'}
+ ];
+ for(const {search,hash} of cases){
+  const status={textContent:'initial'},historyCalls=[];
+  const location={search,hash,pathname:'/api/bubbles/connections/github/callback'};
+  runInNewContext(script,{URLSearchParams,location,history:{replaceState:(...args)=>historyCalls.push(args)},
+   window:{},document:{getElementById:()=>status}});
+  assert.match(status.textContent,/Invalid sign-in return/);
+  assert.equal(historyCalls.length,1,'callback must clear the provider query');
+ }
+});
+
+test('six registered Cloudflare scopes enable identity gate while full project access stays disabled',async()=>{
+ const now=Date.now(),scopes='user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read';
+ const configured={...env,GITHUB_CLIENT_ID:'github',GITHUB_CLIENT_SECRET:'hidden',CLOUDFLARE_CLIENT_ID:'cloudflare',CLOUDFLARE_CLIENT_SECRET:'hidden',CLOUDFLARE_OAUTH_ALLOWED_SCOPES:scopes};
+ const service={gateStatus:async()=>[
+  {provider:'github',status:'connected',integrityVerified:true,expiresAt:now+60000,grantedActions:[]},
+  {provider:'cloudflare',status:'connected',integrityVerified:true,expiresAt:now+60000,grantedActions:['account.read','projects.build','ledger.read']}
+ ]};
+ const catalog=await (await handleConnections(request('/catalog'),configured,()=>service)).json();
+ const provider=catalog.providers.find(p=>p.id==='cloudflare');
+ assert.equal(provider.configured,true);assert.equal(provider.setupRequired,null);
+ assert.equal(provider.fullProjectConfigured,false);
+ const gate=await (await handleConnections(request('/gate/status'),configured,()=>service)).json();
+ assert.equal(gate.ready,true);assert.equal(gate.providers.cloudflare.projectPermissionsApproved,false);
+ assert.equal(gate.integra.executionAuthorized,false);
 });

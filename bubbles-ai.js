@@ -847,9 +847,10 @@ const panel=create('section','ba-panel');panel.hidden=true;panel.setAttribute('a
 const header=create('header','ba-header');const name=create('strong','',config.alias||'Bubbles');const close=create('button','ba-close','×');close.type='button';close.setAttribute('aria-label','Close Bubbles');
 header.append(name,close);
 // The same wallet-scoped two-account setup appears at the start of first-party
-// Bubbles chat (including the Android WebView). Preview never blocks chat.
+// Bubbles chat (including the Android WebView). Both connections are required.
 const chatGate=embedded?null:create('section','ba-inline-account-gate');
-let chatGateMounted=false,chatGateLoading=false;
+let accountEntryReady=false,accountGateController=null,chatGatePromise=null;
+const entryHidden=new Map();
 if(chatGate){
  chatGate.id='chatBubblesSigninGate';
  chatGate.setAttribute('aria-label','GitHub and Cloudflare account permissions');
@@ -870,17 +871,41 @@ if(chatGate){
  const retry=create('button','ba-control','Check sign-ins again');
  retry.id='chatBubblesRetrySignInCheck';retry.type='button';
  chatGate.append(retry);
+ const restore=create('a','ba-link','Restore existing account');restore.href='/wallet-recovery.html?verify=1';chatGate.append(restore);
+ retry.addEventListener('click',()=>{if(!accountGateController)void checkPanelGate();});
 }
 async function checkPanelGate(){
- if(!chatGate||chatGateMounted||chatGateLoading)return;
- chatGateLoading=true;
- try{
-  const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261021-timeout1');
-  chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
- }catch{
-  const hint=document.getElementById('chatBubblesSigninStatus');
-  if(hint)hint.textContent='Account sign-ins are temporarily unavailable. Bubbles chat remains available.';
- }finally{chatGateLoading=false;}
+ if(!chatGate)return null;
+ if(accountGateController)return accountGateController;
+ if(chatGatePromise)return chatGatePromise;
+ chatGatePromise=(async()=>{
+  try{
+   const {mountBubblesSigninGate}=await import('/bubbles-signin-gate.mjs?v=20261025-required1');
+   accountGateController=mountBubblesSigninGate({root:document,host:window,prefix:'chat',onChange:setAccountEntry});
+   return accountGateController;
+  }catch{
+   setAccountEntry(null);
+   const hint=document.getElementById('chatBubblesSigninStatus');
+   if(hint)hint.textContent='Account verification could not load. Bubbles stays locked. Retry the account check.';
+   return null;
+  }finally{chatGatePromise=null;}
+ })();return chatGatePromise;
+}
+function setAccountEntry(summary){
+ const ready=summary?.ready===true;
+ accountEntryReady=ready;
+ for(const node of [card,conversation,composer,tools,ownerMode,createOwnerCode,ownerCodeHelp,linkBubbles,linkStatus,memoryHint,pairingCard,chatsPanel,browserHome]){
+  if(!ready){if(!entryHidden.has(node))entryHidden.set(node,node.hidden);node.hidden=true;node.inert=true;}
+  else if(entryHidden.has(node)){node.hidden=entryHidden.get(node);node.inert=false;entryHidden.delete(node);}
+ }
+ if(ready&&!nativeOverlay&&!embedded&&/^\/bubbles(?:\.html|\/|$)/.test(location.pathname))toggle(true);
+}
+async function requireAccountEntry(){
+ if(embedded)return true; // Independent visitor cards never receive owner tools.
+ const controller=await checkPanelGate();
+ const verified=await controller?.check();
+ if(verified?.ready&&accountEntryReady)return true;
+ toggle(true);return false;
 }
 const status=create('p','ba-status','Microphone off. Touch the bubble to connect, then speak naturally.');
 const ownerMode=create('small','ba-owner-status',embedded?'Independent visitor assistant':'Owner tools: checking Unified Wallet…');
@@ -1947,8 +1972,8 @@ function toggle(open){
  if(embedded)window.parent.postMessage({type:'quantaphi:bubbles:size',open:showing},'*');
  if(showing){
   if(chatGate)void checkPanelGate();
-  if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. '+(embedded?'Use my name before speaking, or type below.':'Speak naturally or type below.')+' Say stop listening to mute.','ai',true);greeted=true}
-  if(!nativeOverlay && window.innerWidth>600)input.focus();
+  if((embedded||accountEntryReady)&&!greeted&&!messages.length){display('Hello! I am '+config.alias+'. '+(embedded?'Use my name before speaking, or type below.':'Speak naturally or type below.')+' Say stop listening to mute.','ai',true);greeted=true}
+  if((embedded||accountEntryReady)&&!nativeOverlay && window.innerWidth>600)input.focus();
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
@@ -2054,6 +2079,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let screenEvidence=roomContext?'':nativeEvidence;
  if(!spoken&&!pendingImage)return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
+ if(!await requireAccountEntry()){nativeSpeechPending=false;return;}
  if(busy)return;
  // One character from the owner or the Android Bubbles bridge resumes
  // existing work. Archived text is context, NEVER new build authorization.
@@ -3180,6 +3206,7 @@ async function startVoice(){
  // microphone here competes with it and can double-submit fabricated words.
  if(nativeOverlay){status.textContent='Android Bubbles owns the microphone. Speak to the orb or type here.';return;}
  if(voiceEnabled||voiceStarting)return;
+ if(!embedded&&!accountEntryReady){toggle(true);return;}
  if(androidCompanionListening){status.textContent='Android Bubbles is already listening. Type here or use the APK microphone.';return;}
  voiceStarting=true;const generation=++voiceGeneration;
  toggle(true);
@@ -3499,6 +3526,7 @@ async function readBrainReport(){
  const report=(await humanReplies()).workSummary(result.tickets);
  return report;
 }
+if(!embedded){setAccountEntry(null);void checkPanelGate();}
 void connectOwner();
 // Home loads the owner helper after this script. Deferred scripts finish before
 // DOMContentLoaded; attach to its real verification promise after load order settles.

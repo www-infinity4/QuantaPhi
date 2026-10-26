@@ -27,6 +27,22 @@ try{
   if(!sessionStorage.getItem(key+':tab:explicit'))
    sessionStorage.setItem(key+':tab:explicit','1');
  },{key,oldId,oldText});
+ // This acceptance test exercises conversation history after a synthetic,
+ // server-shaped two-provider sign-in. It never authenticates an owner.
+ const token='sq_'+'t'.repeat(40);
+ await context.addInitScript(value=>{
+  window.QuantaCloudConnectionDisableAutoRecovery=true;
+  window.QuantaCloudConnection={ready:Promise.resolve(),resolveDeviceToken:async()=>value};
+ },token);
+ await context.route('**/cloud-wallet-client.js*',route=>route.fulfill({contentType:'application/javascript',body:''}));
+ await context.route('**/robot-brain-owner.js*',route=>route.fulfill({contentType:'application/javascript',body:''}));
+ await context.route('**/api/bubbles/connections/gate/status',route=>route.fulfill({
+  status:200,contentType:'application/json',body:JSON.stringify({ok:true,ready:true,mode:'required',
+   integra:{status:'passed'},providers:{
+    github:{configured:true,connected:true,permissionsApproved:true,label:'Synthetic GitHub'},
+    cloudflare:{configured:true,connected:true,permissionsApproved:true,label:'Synthetic Cloudflare'}
+   }})
+ }));
  const page=await context.newPage();
  const resp=await page.goto(origin+'/bubbles.html',{waitUntil:'domcontentloaded',timeout:25000});
  assert.equal(resp.status(),200);
@@ -34,7 +50,9 @@ try{
  const before=await page.evaluate(key=>sessionStorage.getItem(key+':tab'),key);
  assert.match(before,/^chat_[a-f0-9]{32}$/);
  assert.notEqual(before,oldId);
- await page.locator('.ba-launcher').click({timeout:15000});
+ // Verified entry automatically opens Bubbles; clicking the launcher here
+ // would initiate microphone handling or close an already-open conversation.
+ await page.waitForFunction(()=>document.querySelector('#bubblesSigninGate')?.dataset.ready==='true',{timeout:20000});
  await page.locator('.ba-panel textarea[aria-label="Message Bubbles"]').waitFor({state:'visible',timeout:10000});
  assert.equal((await page.locator('.ba-messages').innerText()).includes(oldText),false);
  results.push({probe:'startup_after_saved_session',status:'passed',previousVisible:false,uniqueNewSession:true});
@@ -60,6 +78,8 @@ try{
  // conversation. The special updater marker is NOT set on this path.
  await page.reload({waitUntil:'domcontentloaded'});
  await page.locator('.ba-launcher').waitFor({state:'attached',timeout:20000});
+ await page.waitForFunction(()=>document.querySelector('#bubblesSigninGate')?.dataset.ready==='true',{timeout:20000});
+ await page.locator('.ba-panel textarea[aria-label="Message Bubbles"]').waitFor({state:'visible',timeout:10000});
  const reloaded=await page.evaluate(key=>sessionStorage.getItem(key+':tab'),key);
  assert.match(reloaded,/^chat_[a-f0-9]{32}$/);
  assert.notEqual(reloaded,reopened);

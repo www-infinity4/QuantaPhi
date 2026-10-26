@@ -7,6 +7,24 @@ import {writeFileSync,mkdirSync} from 'node:fs';
 const origin=process.env.BUBBLES_LOCAL_ORIGIN||'http://127.0.0.1:8765';
 const browser=await chromium.launch({headless:true,args:['--no-sandbox','--use-fake-device-for-media-stream','--use-fake-ui-for-media-stream']});
 const results=[];
+// The card behavior is tested behind a synthetic, server-shaped account gate.
+// This fixture never authenticates a person or grants production owner access.
+async function prepareSyntheticSignedIn(page){
+ const token='sq_'+'t'.repeat(40);
+ await page.addInitScript(value=>{
+  window.QuantaCloudConnectionDisableAutoRecovery=true;
+  window.QuantaCloudConnection={ready:Promise.resolve(),resolveDeviceToken:async()=>value};
+ },token);
+ await page.route('**/cloud-wallet-client.js*',route=>route.fulfill({contentType:'application/javascript',body:''}));
+ await page.route('**/robot-brain-owner.js*',route=>route.fulfill({contentType:'application/javascript',body:''}));
+ await page.route('**/api/bubbles/connections/gate/status',route=>route.fulfill({
+  status:200,contentType:'application/json',body:JSON.stringify({ok:true,ready:true,mode:'required',
+   integra:{status:'passed'},providers:{
+    github:{configured:true,connected:true,permissionsApproved:true,label:'Synthetic GitHub'},
+    cloudflare:{configured:true,connected:true,permissionsApproved:true,label:'Synthetic Cloudflare'}
+   }})
+ }));
+}
 try{
  const page=await browser.newPage({viewport:{width:390,height:844},permissions:[]});
  const errors=[];
@@ -28,10 +46,13 @@ try{
  const chat=await browser.newPage({viewport:{width:390,height:844},permissions:[]});
  let chatError='';
  try{
+  await prepareSyntheticSignedIn(chat);
   const response=await chat.goto(origin+'/bubbles.html',{waitUntil:'domcontentloaded',timeout:25000});
   assert.equal(response.status(),200);
   await chat.locator('.ba-launcher').first().waitFor({state:'attached',timeout:20000});
-  await chat.locator('.ba-launcher').first().click({timeout:9000});
+  // A verified required-account gate opens the conversation automatically.
+  // Clicking its already-open launcher would close it and hide the composer.
+  await chat.waitForFunction(()=>document.querySelector('#bubblesSigninGate')?.dataset.ready==='true',{timeout:20000});
   const field=chat.locator('.ba-panel textarea[aria-label="Message Bubbles"]').first();
   await field.waitFor({state:'visible',timeout:10000});
   await field.fill('Bubbles, bring the Media Star card into chat so I can listen to Fred\'s Space');
@@ -44,7 +65,7 @@ try{
   await nested.locator('#fredSpacesRadio .fs-media-star').waitFor({state:'visible',timeout:20000});
   assert.equal(await nested.locator('#followingSpacesRadio .fsr-person-picker').count(),1);
   assert.match(await workspace.locator('p[role="status"]').first().innerText(),/open in chat/i);
-  results.push({probe:'bubbles_chat_spoken_command',status:'passed',card:'media-star',iframeRendered:true,playerLinkedToX:true});
+  results.push({probe:'bubbles_chat_spoken_command',status:'passed',card:'media-star',iframeRendered:true,playerLinkedToX:true,accountGate:'synthetic'});
   // Now execute a FOLLOW-UP ordinary tap. Bubbles must use its real action
   // adapter and must not fake in-chat X playback or open a paid replay.
   let externalPopups=0;
@@ -77,8 +98,9 @@ try{
   radioLoads++;
   await route.fulfill({contentType:'text/html',body:'<!doctype html><title>Radio lifecycle fixture</title><header id="site-header">Full website navigation</header><main class="player"><button id="play-btn" onclick="document.body.dataset.played=\'yes\'">Play</button></main><footer>Website footer</footer>'});
  });
+ await prepareSyntheticSignedIn(radio);
  await radio.goto(origin+'/bubbles.html',{waitUntil:'domcontentloaded',timeout:25000});
- await radio.locator('.ba-launcher').first().click({timeout:15000});
+ await radio.waitForFunction(()=>document.querySelector('#bubblesSigninGate')?.dataset.ready==='true',{timeout:20000});
  const radioField=radio.locator('.ba-panel textarea[aria-label="Message Bubbles"]').first();
  await radioField.fill('Play Infinity Radio');
  await radio.locator('.ba-panel .ba-send').first().click();
@@ -98,7 +120,7 @@ try{
  if(errors.length)results.push({probe:'public_host_page_errors',status:'observed',errors:errors.slice(0,8)});
 }finally{
  mkdirSync('test-results',{recursive:true});
- writeFileSync('test-results/bubbles-media-star-browser.json',JSON.stringify({platform:'hosted chromium, local QuantaPhi public sources',audioVerified:false,androidDeviceVerified:false,results},null,2)+'\n');
+ writeFileSync('test-results/bubbles-media-star-browser.json',JSON.stringify({platform:'hosted chromium, local QuantaPhi public sources, synthetic required account gate',audioVerified:false,androidDeviceVerified:false,results},null,2)+'\n');
  await browser.close();
 }
 console.log('Verified Media Star and Fred replay controls rendered inside real Chromium Bubbles chat; playback remains on X.');

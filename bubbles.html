@@ -47,7 +47,7 @@
  
 
     .bubbles-signin-gate{border:1px solid #d9c3eb;border-radius:20px;background:#fff;padding:17px;margin:16px 0 22px;box-shadow:0 5px 20px #48275d14}
-    .bubbles-chatgpt-entry[hidden],.bubbles-signin-gate[hidden]{display:none!important}
+    .bubbles-chatgpt-entry[hidden],.bubbles-signin-gate[hidden],#bubblesApplication[hidden],.bubbles-signin-provider[hidden]{display:none!important}
     .bubbles-signin-gate h2{font-size:21px;color:#4a237c;margin:0}
     .bubbles-signin-gate>p{margin:7px 0 12px}
     .bubbles-signin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
@@ -91,7 +91,7 @@
   <script defer src="/bubbles-brain-actions.js?v=20261025-speech-guard1"></script>
   <script defer src="/bubbles-memory.js?v=20261020-synapse1"></script>
   <script defer src="/quant-ai-personal.js?v=20261020-bubbles-private1"></script>
-  <script defer src="/bubbles-ai.js?v=20261026-card-move1"></script>
+  <script defer src="/bubbles-ai.js?v=20261026-required-cardmove1"></script>
   <script defer src="/bubbles-owner-diagnostic.js?v=20261021-owner-check1"></script>
   <script defer src="/bubbles-pwa.js?v=20261019-chrome1"></script>
 <link rel="stylesheet" href="/oracle-octaves.css?v=20261014-white1">
@@ -136,17 +136,16 @@
     </section>
 
 
-    <!-- Stage 2 preview: chat remains usable until both providers and backup
-         recovery are verified live; no client-side status authorizes tools. -->
+    <!-- Required application entry. Executor permissions remain server-side. -->
     <section class="bubbles-signin-gate" id="bubblesSigninGate" data-ready="false" aria-labelledby="bubblesSigninTitle">
-      <h2 id="bubblesSigninTitle">Connect Bubbles once</h2>
+      <h2 id="bubblesSigninTitle">Sign in to Bubbles</h2>
       <p id="bubblesSigninStatus" role="status" aria-live="polite">Checking saved GitHub and Cloudflare permissions…</p>
       <div class="bubbles-signin-grid">
         <article class="bubbles-signin-provider" id="bubblesGithubCard">
           <h3>GitHub sign-in</h3>
           <p id="bubblesGithubStatus">Checking your private account connection…</p>
           <button id="bubblesGithubSignIn" type="button" disabled>Checking GitHub…</button>
-          <small>Approve the official GitHub App permissions. Your private backup repository is created only after its write access is verified in Stage 3.</small>
+          <small>Use your GitHub account. Repository actions still require verified installation permissions.</small>
         </article>
         <article class="bubbles-signin-provider" id="bubblesCloudflareCard">
           <h3>Cloudflare sign-in</h3>
@@ -157,13 +156,12 @@
       </div>
       <div class="bubbles-signin-controls">
         <button id="bubblesRetrySignInCheck" type="button" class="bubbles-signin-retry">Check sign-ins again</button>
-        <a id="bubblesOpenExistingChat" href="#bubblesAICard">Continue to existing chat while setup completes</a>
         <a href="/bubbles-accounts.html">Manage connections</a>
         <a href="/wallet-recovery.html?verify=1">Restore an existing wallet session</a>
       </div>
     </section>
 
-    <section class="bubbles-workspace" aria-label="Bubbles assistant and jobs">
+    <section class="bubbles-workspace" id="bubblesApplication" hidden inert aria-label="Bubbles assistant and jobs">
       <div class="bubbles-section-heading">
         <div><span class="bubbles-eyebrow">WORKSPACE</span><h2>Talk to Bubbles</h2><p>The assistant and verified job receipts belong here, not behind a video advertisement.</p></div>
         <a href="/#robotDirections">Open Robot Brain →</a>
@@ -178,7 +176,7 @@
       <div id="robotBrainOwner" aria-live="polite"></div>
       <details id="bubblesOwnerDiagnostics" class="bubbles-owner-diagnostic">
         <summary id="bubblesOwnerDiagnosticSummary">Owner check: automatic read-only diagnostic</summary>
-        <p>This checks this page's authorization state without displaying credentials. GitHub and Cloudflare sign-in are separate from ordinary chat.</p>
+        <p>This checks this page's authorization state without displaying credentials. GitHub and Cloudflare sign-in are required to open Bubbles. Each work tool also verifies its own permissions.</p>
         <button id="bubblesOwnerDiagnosticRun" type="button">Check owner connection again</button>
         <ul id="bubblesOwnerDiagnosticResults" role="status" aria-live="polite"><li>Waiting for the initial owner check…</li></ul>
       </details>
@@ -228,11 +226,11 @@ html.bubble-iframe .bubbles-bottom-nav,body.bubbles-embedded .bubbles-bottom-nav
 </style>
 <footer class="qp-site-footer" aria-label="QuantaPhi site information"><p>QuantaPhi · AI research, media and learning</p><nav aria-label="Legal and site links"><a href="/">Home</a><a href="/about.html">About</a><a href="/privacy.html">Privacy Policy</a><a href="/learn/">Learn</a></nav></footer>
   <script type="module">
-    import('/bubbles-signin-gate.mjs?v=20261021-timeout1')
+    import('/bubbles-signin-gate.mjs?v=20261025-required1')
       .then(({mountBubblesSigninGate})=>mountBubblesSigninGate())
       .catch(()=>{
         const state=document.getElementById('bubblesSigninStatus');
-        if(state)state.textContent='Could not load account connection checks. Bubbles chat is still available; retry after refreshing the page.';
+        if(state)state.textContent='Could not load account verification. Bubbles stays locked; refresh the page to retry.';
         for(const id of ['bubblesGithubStatus','bubblesCloudflareStatus']){
           const label=document.getElementById(id);
           if(label)label.textContent='Status unavailable; saved permissions were not changed.';
