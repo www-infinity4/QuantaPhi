@@ -47,3 +47,57 @@ test('repository scope refuses foreign repository names and never searches publi
  assert.equal(calls,0);
  assert.ok(directGithubTools('write').some(t=>t.function.name==='search_code'));
 });
+
+test('a model saying finish before any GitHub operation cannot claim source inspection',async()=>{
+ let calls=0;
+ const result=await directGithubAgent({GITHUB_TOKEN:'fixture-token',WRITER_AI:{run:async()=>tool('finish',{summary:'All done.'})}},
+  {repository,request:'Inspect current card source',mode:'read'},async url=>{
+   calls++;assert.equal(url,'https://api.github.com/repos/'+repository);
+   return Response.json({default_branch:'main',permissions:{push:true}});
+  });
+ assert.equal(calls,1,'only the initial capability probe may run');
+ assert.equal(result.ok,false);
+ assert.equal(result.status,'blocked');
+ assert.equal(result.error,'no_verified_github_operation');
+ assert.deepEqual(result.receipts,[]);
+});
+
+test('a read receipt cannot satisfy an owner-requested write or workflow dispatch',async()=>{
+ for(const [mode,steps,error] of [
+  ['write',[tool('read_repository'),tool('finish',{summary:'Fixed card.'})],'requested_write_not_committed'],
+  ['actions',[tool('list_workflows'),tool('finish',{summary:'Workflow completed.'})],'requested_workflow_not_dispatched']
+ ]){
+  const network=async url=>{
+   if(url.endsWith('/git/ref/heads/main'))return Response.json({object:{sha}});
+   if(url.endsWith('/actions/workflows?per_page=100&page=1'))return Response.json({workflows:[],total_count:0});
+   if(url==='https://api.github.com/repos/'+repository)return Response.json({default_branch:'main',permissions:{push:true}});
+   throw Error('unexpected request: '+url);
+  };
+  const env={GITHUB_TOKEN:'fixture-token',WRITER_AI:{run:async()=>steps.shift()}};
+  const result=await directGithubAgent(env,{repository,request:'Complete the requested '+mode+' task',mode},network);
+  assert.equal(result.ok,false);
+  assert.equal(result.status,'blocked');
+  assert.equal(result.error,error);
+  assert.equal(result.receipts.length,1,'real read receipt remains visible');
+  assert.equal(result.testsVerified,false);
+  assert.equal(result.deploymentVerified,false);
+ }
+});
+
+test('exhausting eight real GitHub reads returns partial receipts, never successful completion',async()=>{
+ let modelCalls=0;
+ const env={GITHUB_TOKEN:'fixture-token',WRITER_AI:{run:async()=>{modelCalls++;return tool('read_repository')}}};
+ const result=await directGithubAgent(env,{repository,request:'Inspect repository and finish the source audit',mode:'read'},async url=>{
+  if(url.endsWith('/git/ref/heads/main'))return Response.json({object:{sha}});
+  if(url==='https://api.github.com/repos/'+repository)return Response.json({default_branch:'main',permissions:{push:true}});
+  throw Error('unexpected request: '+url);
+ });
+ assert.equal(modelCalls,8);
+ assert.equal(result.receipts.length,8);
+ assert.ok(result.receipts.every(r=>r.ok&&r.headSha===sha));
+ assert.equal(result.ok,false);
+ assert.equal(result.status,'tool_limit_reached');
+ assert.equal(result.error,'direct_engineer_tool_limit_reached');
+ assert.equal(result.testsVerified,false);
+ assert.equal(result.deploymentVerified,false);
+});
