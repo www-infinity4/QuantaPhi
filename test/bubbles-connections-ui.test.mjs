@@ -16,13 +16,13 @@ test('account page launches real Cloudflare consent with registered actions even
  t.after(()=>Object.assign(globalThis,originals));
  const document={createElement:tag=>new Element(tag),createTextNode:text=>({textContent:text}),addEventListener(){}};
  const storage=new Map(),sessionStorage={getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
- const popup={location:{},close(){}},calls=[];
+ const popup={location:{},close(){}},calls=[];let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',grantedActions:['repository.read']}];
  const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
  Object.assign(globalThis,{document,sessionStorage,window,fetch:async(url,options)=>{
   const path=String(url).replace('/api/bubbles/connections','');
   const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
-  if(path==='/catalog')return Response.json({ok:true,providers:[{id:'cloudflare',configured:true,fullProjectConfigured:false,actions:['account.read','projects.build','ledger.read']},{id:'google',configured:false}]});
-  if(path==='/accounts')return Response.json({ok:true,accounts:[]});
+  if(path==='/catalog')return Response.json({ok:true,providers:[{id:'github',configured:true,actions:['repository.read']},{id:'cloudflare',configured:true,fullProjectConfigured:false,actions:['account.read','projects.build','ledger.read']},{id:'google',configured:false}]});
+  if(path==='/accounts')return Response.json({ok:true,accounts:accountRecords});
   if(path==='/start')return Response.json({ok:true,authorizationUrl:'https://dash.cloudflare.com/oauth2/auth?state='+'s'.repeat(43),expiresIn:300});
   if(path==='/handoff/status')return Response.json({ok:true,status:'pending'});
   assert.fail('Unexpected endpoint '+path);
@@ -30,6 +30,8 @@ test('account page launches real Cloudflare consent with registered actions even
  const container=new Element('main'),panel=mountConnections(container,{token:async()=>'sq_'+'a'.repeat(40)});
  await panel.refresh();
  const descendants=node=>[node,...(node.childNodes||[]).flatMap(descendants)];
+ assert.equal(descendants(container).some(node=>node.dataset?.provider==='github'),false,'Connected GitHub must not show a second sign-in button');
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('GitHub · Signed in as www-infinity4')));
  const button=descendants(container).find(node=>node.dataset?.provider==='cloudflare');
  assert.equal(button.disabled,false);
  assert.equal(button.textContent,'Sign in with Cloudflare');
@@ -39,7 +41,33 @@ test('account page launches real Cloudflare consent with registered actions even
  assert.equal(new URL(popup.location.href).origin,'https://dash.cloudflare.com');
  assert.equal(JSON.parse(storage.get('bubbles:oauth-pending:v1')).returnPath,'/bubbles-accounts.html');
  panel.client.cancelConnect();
+ accountRecords=[...accountRecords,{id:'cf-a',provider:'cloudflare',label:'owner@example.test',status:'connected',grantedActions:['account.read']}];
+ await panel.refresh();
+ assert.equal(descendants(container).some(node=>node.dataset?.provider==='cloudflare'),false,'Connected Cloudflare button must disappear');
+ assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare · Signed in as owner@example.test')));
 });
+
+test('Android Cloudflare sign-in navigates this tab directly and never opens about:blank',async()=>{
+ const state='m'.repeat(43),saved=new Map();let navigated='',popups=0;
+ const root={
+  location:{pathname:'/bubbles-accounts.html',assign(url){navigated=url;}},
+  sessionStorage:{getItem:key=>saved.get(key)||null,setItem:(key,value)=>saved.set(key,value),removeItem:key=>saved.delete(key)},
+  open(){popups++;throw Error('blank popup must not open');},
+  setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}
+ };
+ const client=new AccountConnections({token:()=> 'existing-device-session',root,request:async url=>{
+  if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://dash.cloudflare.com/oauth2/auth?state='+state,expiresIn:300});
+  if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:'pending'});
+  assert.fail('Unexpected connection endpoint '+url);
+ }});
+ await client.connect('cloudflare',['account.read'],()=>{});
+ assert.equal(popups,0);
+ assert.equal(new URL(navigated).origin,'https://dash.cloudflare.com');
+ assert.equal(JSON.parse(saved.get('bubbles:oauth-pending:v1')).returnPath,'/bubbles-accounts.html');
+ assert.ok(!saved.get('bubbles:oauth-pending:v1').includes('existing-device-session'));
+ client.cancelConnect();
+});
+
 test('connector waits for device bridge and supports both wallet runtime exports',async()=>{
   let ready=false;const token='sq_'+'a'.repeat(40);
   assert.equal(await resolveConnectorWalletToken({QuantaCloudConnection:{ready:Promise.resolve().then(()=>ready=true),resolveDeviceToken:async()=>{assert.ok(ready);return token;}}}),token);
