@@ -215,7 +215,7 @@ export function cloudflareAvailableActions(approvedScopes) {
     CLOUDFLARE_SCOPES[action].every(scope=>allowed.has(scope)));
 }
 export function cloudflareScopeInventory(allowedScopes){
-  const configured=new Set(String(allowedScopes||'').split(/[\\s,]+/).filter(Boolean));
+  const configured=new Set(String(allowedScopes||'').split(/[\s,]+/).filter(Boolean));
   const available=cloudflareAvailableActions(allowedScopes);
   const loginActions=['account.read','projects.build','ledger.read','projects.full']
     .filter(action=>available.includes(action));
