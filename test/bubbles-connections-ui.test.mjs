@@ -255,3 +255,21 @@ test('popup-blocked viewer refuses redirect when it cannot preserve authorizatio
   const client=new AccountConnections({token:()=> 'wallet',root,request:()=>assert.fail('must not start OAuth')});
   await assert.rejects(client.connect('github',['repository.read'],()=>{}),/Open Account Connections in Chrome/);
 });
+\ntest('Android return accepts a sealed connected receipt without repeating token exchange',async()=>{
+ const state='r'.repeat(43),popup={location:{},close(){this.closed=true;}},calls=[];
+ const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
+ const client=new AccountConnections({root,token:()=> 'wallet-bound-session',request:async url=>{
+  calls.push(url);
+  if(url.endsWith('/start'))return Response.json({ok:true,authorizationUrl:'https://github.com/login/oauth/authorize?state='+state});
+  if(url.endsWith('/handoff/status'))return Response.json({ok:true,status:'connected',account:{label:'saved-github'}});
+  if(url.endsWith('/handoff/finish'))throw Error('must not exchange a second time');
+  throw Error('unexpected route');
+ }});
+ let completed=null;
+ await client.connect('github',['repository.read'],(error,account)=>{completed={error,account};});
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(completed.error,null);
+ assert.equal(completed.account.label,'saved-github');
+ assert.equal(popup.closed,true);
+ assert.equal(calls.filter(x=>x.endsWith('/handoff/finish')).length,0);
+});
