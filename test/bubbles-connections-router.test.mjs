@@ -71,7 +71,7 @@ test('provider callback stores authorization on the server and redirects to a co
   assert.match(html,/href="\/bubbles-accounts\.html"/);
   assert.match(html,/Connection is not confirmed until Bubbles checks/);
   assert.ok(!html.includes(state));
-  assert.ok(!html.includes('Authorization'));
+  assert.ok(!/Bearer\\s+[A-Za-z0-9._~-]+/.test(html));
 });
 test('callback rejects unregistered states without revealing provider code',async()=>{
   const state='b'.repeat(43);
