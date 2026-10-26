@@ -1,4 +1,4 @@
-import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261026-oracle-auth1';
+import {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections-gate.mjs?v=20261026-mobile-oauth3';
 
 export function summarizeGate(payload){
  const summary={ready:false,signedIn:false,providers:{},state:'unverified'};

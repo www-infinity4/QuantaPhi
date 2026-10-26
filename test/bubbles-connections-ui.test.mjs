@@ -16,7 +16,7 @@ test('account page launches real Cloudflare consent with registered actions even
  t.after(()=>Object.assign(globalThis,originals));
  const document={createElement:tag=>new Element(tag),createTextNode:text=>({textContent:text}),addEventListener(){}};
  const storage=new Map(),sessionStorage={getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
- const popup={location:{},close(){}},calls=[];let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',grantedActions:['repository.read']}];
+ const popup={location:{},close(){}},calls=[];let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',expiresAt:Date.now()+600000,grantedActions:['repository.read']}];
  const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
  Object.assign(globalThis,{document,sessionStorage,window,fetch:async(url,options)=>{
   const path=String(url).replace('/api/bubbles/connections','');
@@ -41,10 +41,17 @@ test('account page launches real Cloudflare consent with registered actions even
  assert.equal(new URL(popup.location.href).origin,'https://dash.cloudflare.com');
  assert.equal(JSON.parse(storage.get('bubbles:oauth-pending:v1')).returnPath,'/bubbles-accounts.html');
  panel.client.cancelConnect();
- accountRecords=[...accountRecords,{id:'cf-a',provider:'cloudflare',label:'owner@example.test',status:'connected',grantedActions:['account.read']}];
+ accountRecords=[...accountRecords,{id:'cf-a',provider:'cloudflare',label:'owner@example.test',status:'connected',expiresAt:Date.now()+600000,grantedActions:['account.read']}];
  await panel.refresh();
  assert.equal(descendants(container).some(node=>node.dataset?.provider==='cloudflare'),false,'Connected Cloudflare button must disappear');
  assert.ok(descendants(container).some(node=>node.textContent?.includes('Cloudflare · Signed in as owner@example.test')));
+ // An expired provider grant must not claim sign-in, even if the historical
+ // row still has a connected status until the service refreshes it.
+ accountRecords=accountRecords.map(row=>row.provider==='cloudflare'?{...row,expiresAt:Date.now()-10000}:row);
+ await panel.refresh();
+ assert.ok(descendants(container).some(node=>node.dataset?.provider==='cloudflare'));
+ assert.ok(descendants(container).some(node=>String(node.textContent).includes('reconnect required')));
+
 });
 
 test('Android Cloudflare sign-in navigates this tab directly and never opens about:blank',async()=>{
@@ -62,10 +69,25 @@ test('Android Cloudflare sign-in navigates this tab directly and never opens abo
  }});
  await client.connect('cloudflare',['account.read'],()=>{});
  assert.equal(popups,0);
+ assert.equal(JSON.parse(saved.get('bubbles:oauth-pending:v1')).flow,'same-window');
  assert.equal(new URL(navigated).origin,'https://dash.cloudflare.com');
  assert.equal(JSON.parse(saved.get('bubbles:oauth-pending:v1')).returnPath,'/bubbles-accounts.html');
  assert.ok(!saved.get('bubbles:oauth-pending:v1').includes('existing-device-session'));
  client.cancelConnect();
+});
+
+
+test('old blank-popup authorization does not strand Sign in on a fresh page',()=>{
+ const state='p'.repeat(43),data=new Map();
+ const storage={getItem:key=>data.get(key)||null,setItem:(key,v)=>data.set(key,v),removeItem:key=>data.delete(key)};
+ const root={sessionStorage:storage};
+ const old={provider:'cloudflare',state,returnPath:'/bubbles-accounts.html',expiresAt:Date.now()+120000};
+ storage.setItem('bubbles:oauth-pending:v1',JSON.stringify(old));
+ const client=new AccountConnections({token:()=> 'current-device',root});
+ assert.equal(client.readPendingHandoff(),null,'Legacy popup state must not block new login');
+ assert.equal(data.has('bubbles:oauth-pending:v1'),false);
+ storage.setItem('bubbles:oauth-pending:v1',JSON.stringify({...old,flow:'same-window'}));
+ assert.equal(client.readPendingHandoff()?.state,state,'Verified same-tab callback state must remain resumable');
 });
 
 test('connector waits for device bridge and supports both wallet runtime exports',async()=>{
