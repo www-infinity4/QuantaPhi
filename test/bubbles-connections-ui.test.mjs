@@ -255,7 +255,8 @@ test('popup-blocked viewer refuses redirect when it cannot preserve authorizatio
   const client=new AccountConnections({token:()=> 'wallet',root,request:()=>assert.fail('must not start OAuth')});
   await assert.rejects(client.connect('github',['repository.read'],()=>{}),/Open Account Connections in Chrome/);
 });
-\ntest('Android return accepts a sealed connected receipt without repeating token exchange',async()=>{
+
+test('Android return accepts a sealed connected receipt without repeating token exchange',async()=>{
  const state='r'.repeat(43),popup={location:{},close(){this.closed=true;}},calls=[];
  const root={open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
  const client=new AccountConnections({root,token:()=> 'wallet-bound-session',request:async url=>{
