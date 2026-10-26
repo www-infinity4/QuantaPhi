@@ -323,7 +323,8 @@ function advance(direction){
  if(!list.length){status.textContent=selectedTab==='following'?'Follow a card in Public first.':'The original interactive cards are still initializing.';return}
  if(direction<0){
   while(visited.length){
-   const last=entries.find(x=>x.id===visited.pop());
+   const previousId=visited.pop();
+   const last=entries.find(x=>x.id===previousId);
    if(last&&list.includes(last)){show(last,false);return}
   }
   status.textContent='This is the first card in your current direction.';return;
