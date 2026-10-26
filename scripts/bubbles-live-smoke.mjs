@@ -50,6 +50,24 @@ export async function runSmoke({fetcher=fetch,full=false}={}) {
     'Bubbles live page missing its conversation or Brain action adapter');
    add('bubbles_page_assets','pass',{http:page.status});
 
+   // Public configuration evidence, never proof of provider registration or
+   // owner consent. Report both counts without treating six as 386.
+   const scopeRes=await request(fetcher,SITE+'/api/bubbles/connections/scope-inventory?smoke=1');
+   check(scopeRes.status===200,'Cloudflare scope inventory unavailable: HTTP '+scopeRes.status);
+   const scope=await jsonResponse(scopeRes,'Cloudflare scope inventory');
+   const allowed=scope.scopeInventory?.serverAllowlistCount;
+   const requested=scope.scopeInventory?.signInRequestScopeCount;
+   check(scope.ok===true&&typeof scope.configured==='boolean'&&
+     Number.isSafeInteger(allowed)&&allowed>=0&&
+     Number.isSafeInteger(requested)&&requested>=0&&requested<=allowed,
+     'Cloudflare scope inventory is malformed or inconsistent');
+   check(!/clientSecret|accessToken|refreshToken|apiToken/i.test(JSON.stringify(scope)),
+     'Cloudflare scope inventory exposed credential fields');
+   add('cloudflare_scope_inventory','observed',{http:scopeRes.status,
+     serverAllowlistCount:allowed,signInRequestScopeCount:requested,
+     fullScopeRequestConfigured:scope.configured&&allowed===386&&requested===386,
+     clientRegistrationVerified:false,ownerConsentVerified:false});
+
    const brainScript=await request(fetcher,SITE+'/bubbles-brain-actions.js');
    check(brainScript.status===200,'Bubbles owner adapter not reachable: '+brainScript.status);
    const code=await brainScript.text();
