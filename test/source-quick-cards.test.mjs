@@ -36,7 +36,7 @@ test('Google and Bing start real engine requests inside the Infinity Viewer',()=
 });
 test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261025-foxnewslive1/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261026-live-results1/);
  assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
