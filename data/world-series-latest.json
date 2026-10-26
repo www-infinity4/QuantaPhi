@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "topic": "2026 World Series",
-  "checked_at": "2026-10-25T21:59:57.041082Z",
+  "checked_at": "2026-10-26T00:06:13.872438Z",
   "source_kind": "Publisher RSS",
   "rights": "Attribution and links only; no permission to rehost full articles or protected media.",
   "sources": [
     {
       "publisher": "MLB.com",
       "url": "https://www.mlb.com/feeds/news/rss.xml",
-      "articles_selected": 17
+      "articles_selected": 15
     },
     {
       "publisher": "CBS Sports",
@@ -73,14 +73,14 @@
       "image_credit": ""
     },
     {
-      "title": "How the Rays can send the World Series back to Milwaukee",
+      "title": "3 things the Rays need to do to send World Series back to Milwaukee",
       "url": "https://www.mlb.com/news/rays-keys-to-extending-world-series-vs-brewers-after-game-2",
       "publisher": "MLB.com",
       "published_at": "2026-10-25T16:57:17Z",
       "summary": "",
       "author": "Adam Berry",
       "image_url": "",
-      "kind": "Analysis",
+      "kind": "Reporting",
       "image_credit": ""
     },
     {
@@ -260,28 +260,6 @@
       "image_credit": "CBS Sports RSS"
     },
     {
-      "title": "Brewers weather ninth-inning storm, take Game 1 in front of raucous fans",
-      "url": "https://www.mlb.com/news/brewers-win-world-series-game-1-2026",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-24T05:47:00Z",
-      "summary": "",
-      "author": "",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
-      "title": "Brewers won their first World Series game in 44 years. And then they won it again",
-      "url": "https://www.mlb.com/news/brewers-game-ending-double-play-overturned-world-series-game-1",
-      "publisher": "MLB.com",
-      "published_at": "2026-10-24T05:36:00Z",
-      "summary": "",
-      "author": "Bryan Hoch",
-      "image_url": "",
-      "kind": "Reporting",
-      "image_credit": ""
-    },
-    {
       "title": "Rust? What rust? Brewers open World Series refreshed and ready thanks to all that winning",
       "url": "https://www.cbssports.com/mlb/news/2026-world-series-brewers-rested-rays/",
       "publisher": "CBS Sports",
@@ -346,6 +324,28 @@
       "image_url": "",
       "kind": "Reporting",
       "image_credit": ""
+    },
+    {
+      "title": "Creating the ultimate 2026 World Series roster: Picking the best of the Brewers and Rays at each position",
+      "url": "https://www.cbssports.com/mlb/news/2026-world-series-ultimate-roster-best-brewers-rays-each-position/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T15:34:00Z",
+      "summary": "Pat Murphy and Kevin Cash don't have the luxury of building a Frankenstein roster, but we do, so we will",
+      "author": "Mike Axisa",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/22/51d7f1c5-21d2-41b1-973f-919a4e923282/frankenstein-getty.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
+    },
+    {
+      "title": "Scott Boras decries MLB owners who wear 'floaties' as Brewers-Rays World Series comes with salary cap debate",
+      "url": "https://www.cbssports.com/mlb/news/scott-boras-mlb-owners-floaties-brewers-rays-world-series-salary-cap/",
+      "publisher": "CBS Sports",
+      "published_at": "2026-10-23T15:07:08Z",
+      "summary": "MLB's small-market World Series begins on Friday night ahead of a looming labor fight",
+      "author": "Julian McWilliams",
+      "image_url": "https://sportshub.cbsistatic.com/i/2026/10/23/1ed34928-833d-4e3f-9140-b7c91f7c0513/scott-boras-getty-1.png",
+      "kind": "Reporting",
+      "image_credit": "CBS Sports RSS"
     }
   ],
   "unavailable_sources": [
