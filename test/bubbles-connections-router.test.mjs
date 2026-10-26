@@ -139,14 +139,14 @@ test('gate fails closed for missing Cloudflare setup, expired credentials and pa
  assert.equal((await handleConnections(request('/gate/status',{authorization:''}),e,
   ()=>assert.fail('must not resolve unauthenticated user'))).status,401);
 });
-test('Cloudflare OAuth callback is fixed-origin and removes incoming code from its HTML',async()=>{
- const response=await handleConnections(request('/cloudflare/callback?code=private-code'),{},()=>assert.fail());
+test('Cloudflare callback response never includes provider code or cross-window messaging',async()=>{
+ const response=await handleConnections(request('/cloudflare/callback?result=received'),{},()=>assert.fail());
  const html=await response.text();
  assert.equal(response.status,200);
- assert.match(html,/bubbles:oauth-return/);
- assert.ok(html.includes("history.replaceState"));
- assert.ok(!html.includes('private-code'));
+ assert.match(html,/Return to Bubbles/);
+ assert.doesNotMatch(html,/BroadcastChannel|postMessage|private-code/);
  assert.ok(response.headers.get('Content-Security-Policy').includes("frame-ancestors 'none'"));
+ assert.equal(response.headers.get('Cache-Control'),'no-store');
 });
 
 test('Cloudflare missing OAuth client registration is not advertised as ready despite a working platform token',async()=>{
