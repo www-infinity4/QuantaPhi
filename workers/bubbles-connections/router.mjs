@@ -118,6 +118,10 @@ export async function handleConnections(request,env,resolveService) {
         ready:github.permissionsApproved&&cloudflare.permissionsApproved,
         providers:{github,cloudflare}});
     }
+    if (request.method === 'GET' && url.pathname === PREFIX+'/handoff/status') {
+      const provider=url.searchParams.get('provider'),state=url.searchParams.get('state');
+      return json(origin,{ok:true,...await service.handoffStatus({...identity,provider,state})});
+    }
     if (request.method === 'GET' && url.pathname === PREFIX+'/accounts') return json(origin,{ok:true,accounts:await service.list(identity)});
     if (request.method !== 'POST') return json(origin,{ok:false,error:'not_found'},404);
     if (!request.headers.get('Content-Type')?.startsWith('application/json')) return json(origin,{ok:false,error:'json_required'},415);
