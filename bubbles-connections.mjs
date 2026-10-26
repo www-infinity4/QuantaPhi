@@ -158,6 +158,12 @@ export class AccountConnections {
 function element(tag,text,className='') {
   const node=document.createElement(tag);node.textContent=text;if(className)node.className=className;return node;
 }
+export function availableCloudflareLoginActions(provider) {
+  if(provider?.id!=='cloudflare'||provider.configured!==true||!Array.isArray(provider.actions))return [];
+  // The OAuth client may authorize an account before full project scopes
+  // are registered. Request only server-verified, registered actions.
+  return ['account.read','projects.build','ledger.read','projects.full'].filter(action=>provider.actions.includes(action));
+}
 export function mountConnections(container,{token}) {
   const sessionKey='bubbles:connector-session:v1';
   const paired=()=>{try{const value=JSON.parse(sessionStorage.getItem(sessionKey)||'null');return value?.expiresAt>Date.now()?value.token:'';}catch{return '';}};
@@ -184,20 +190,22 @@ export function mountConnections(container,{token}) {
     try {
       const data=await client.call('/catalog');let available=false;
       for(const provider of data.providers) {
-        const cloudFull=provider.id==='cloudflare'&&provider.fullProjectConfigured!==true;
-        const button=element('button',(provider.configured&&!cloudFull?'Connect ':cloudFull?'Setup needed: ':'Unavailable: ')+(NAMES[provider.id]||provider.id),'ba-control');
-        button.type='button';button.disabled=!provider.configured||cloudFull;
+        const registeredCloudflareActions=availableCloudflareLoginActions(provider);
+        const canConnect=provider.configured&&(provider.id!=='cloudflare'||registeredCloudflareActions.length>0);
+        const cloudLimited=provider.id==='cloudflare'&&provider.fullProjectConfigured!==true;
+        const button=element('button',(canConnect?'Sign in with ':'Unavailable: ')+(NAMES[provider.id]||provider.id),'ba-control');
+        button.type='button';button.disabled=!canConnect;
         button.classList.add('ba-signin-button');
-        button.setAttribute('aria-label',(provider.configured&&!cloudFull?'Sign in with ':'Account setup required for ')+(NAMES[provider.id]||provider.id));
-        if(cloudFull)button.title='The Bubbles Cloudflare OAuth client must first register its exact full-project scopes. Trying to sign in again cannot fix this.';
-        if(provider.configured&&!cloudFull)available=true;
+        button.setAttribute('aria-label',(canConnect?'Sign in with ':'Account setup required for ')+(NAMES[provider.id]||provider.id));
+        if(cloudLimited&&canConnect)button.title='Cloudflare account sign-in is available. Some project permissions are not registered; Bubbles will not claim those permissions.';
+        if(canConnect)available=true;
         button.addEventListener('click',async()=>{
           button.disabled=true;button.setAttribute('aria-busy','true');status.textContent='Opening secure '+(NAMES[provider.id]||provider.id)+' sign-in…';
-          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):provider.id==='cloudflare'?['account.read','projects.build','ledger.read','projects.full']:['repository.read'];
+          const actions=provider.id==='google'?selections.filter(c=>c.checked).map(c=>c.value):provider.id==='cloudflare'?registeredCloudflareActions:['repository.read'];
           if(!actions.length){status.textContent='Choose the Google access you want to allow.';button.disabled=false;button.removeAttribute('aria-busy');return;}
           try {await client.connect(provider.id,actions,(error,account)=>{
             status.textContent=error?error.message:provider.id==='cloudflare'&&!account.grantedActions?.includes('projects.full')?'Cloudflare returned limited permission. Full project access is not yet approved.':'Connected '+account.label+'.';if(!error)void load();
-          });status.textContent='Finish authorization in the sign-in window.';}catch(error){status.textContent=error.message;}finally{button.disabled=!provider.configured||cloudFull;button.removeAttribute('aria-busy');}
+          });status.textContent='Finish authorization in the sign-in window.';}catch(error){status.textContent=error.message;}finally{button.disabled=!canConnect;button.removeAttribute('aria-busy');}
         });catalog.append(button);
       }
       if(!available){status.textContent='Account connections are awaiting service setup. No account access has been granted.';return;}

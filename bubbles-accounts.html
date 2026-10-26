@@ -7,7 +7,7 @@
 <p>Connect GitHub on this device, or create a temporary code to connect another browser. Your existing wallet must be available in this browser; no new wallet is created.</p>
 <main id="accounts"></main>
 <script type="module">
-import {mountConnections,resolveConnectorWalletToken} from '/bubbles-connections.mjs?v=20261018-direct2';
+import {mountConnections,resolveConnectorWalletToken} from '/bubbles-connections.mjs?v=20261026-account-signin1';
 const panel=mountConnections(document.getElementById('accounts'),{token:()=>resolveConnectorWalletToken(window)});
 document.querySelector('main details').open=true;
 await panel.refresh();
