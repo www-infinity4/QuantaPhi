@@ -500,7 +500,7 @@ let accountConnectionsUI=null;
 connectedAccounts.addEventListener('toggle',async()=>{
  if(!connectedAccounts.open||accountConnectionsUI)return;
  try{
-  const module=await import('/bubbles-connections.mjs?v=20261026-scope-audit5');
+  const module=await import('/bubbles-connections.mjs?v=20261026-full-consent6');
   accountConnectionsUI=module.mountConnections(connectedAccounts,{token:()=>module.resolveConnectorWalletToken(window)});
   await accountConnectionsUI.refresh();
  }catch{connectedAccounts.append(create('p','ba-muted','Account connections could not load. Try again after reconnecting your wallet.'));}
@@ -876,7 +876,7 @@ async function checkPanelGate(){
  if(!chatGate||chatGateMounted||chatGateLoading)return;
  chatGateLoading=true;
  try{
-  const {mountBubblesSigninGate}=await Promise.race([import('/bubbles-signin-gate.mjs?v=20261026-scope-audit5'),new Promise((_,reject)=>setTimeout(()=>reject(Error('signin_gate_load_timeout')),9000))]);
+  const {mountBubblesSigninGate}=await Promise.race([import('/bubbles-signin-gate.mjs?v=20261026-full-consent6'),new Promise((_,reject)=>setTimeout(()=>reject(Error('signin_gate_load_timeout')),9000))]);
   chatGateMounted=!!mountBubblesSigninGate({root:document,host:window,prefix:'chat'});
  }catch{
   const hint=document.getElementById('chatBubblesSigninStatus');
@@ -977,7 +977,7 @@ connectorCodeButton.addEventListener('click',async()=>{
  connectorCodeOutput.hidden=true;connectorCodeValue.value='';clearTimeout(connectorCodeTimer);
  let module;
  try{
-  module=await import('/bubbles-connections.mjs?v=20261026-scope-audit5');
+  module=await import('/bubbles-connections.mjs?v=20261026-full-consent6');
   const client=new module.AccountConnections({token:()=>module.resolveConnectorWalletToken(window)});
   const result=await client.call('/pair/create',{});
   if(!/^[A-Za-z0-9_-]{16,64}$/.test(result.code||'')||!Number.isFinite(result.expiresIn)||result.expiresIn<=0)throw Error('connection_response_invalid');
