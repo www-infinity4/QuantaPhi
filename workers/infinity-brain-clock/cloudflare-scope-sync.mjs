@@ -59,8 +59,12 @@ export async function confirmBubblesScopeSync(storage,body,env,{
    throw Error('oauth_client_identity_mismatch');
   if(!(registration?.redirect_uris||[]).includes(CALLBACK))
    throw Error('oauth_client_callback_mismatch');
-  const scopes=registration?.scopes;
-  if(!Array.isArray(scopes))throw Error('oauth_client_scope_list_missing');
+  // Cloudflare may include OAuth protocol scopes automatically when refresh
+  // tokens are enabled. These are NOT the 386 project permission checkboxes.
+  const rawScopes=registration?.scopes;
+  if(!Array.isArray(rawScopes))throw Error('oauth_client_scope_list_missing');
+  const protocol=new Set(['openid','offline','offline_access']);
+  const scopes=rawScopes.filter(s=>!protocol.has(s));
   if(scopes.length!==EXPECTED)throw Error('oauth_client_scope_count_not_386');
   if(!scopes.every(s=>typeof s==='string'&&/^[a-zA-Z][\w.-]{1,100}$/.test(s))||
     new Set(scopes).size!==scopes.length)throw Error('oauth_client_scopes_invalid');
