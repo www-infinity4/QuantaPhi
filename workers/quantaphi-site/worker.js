@@ -1,5 +1,5 @@
 import {videoAPI} from './video-api.mjs';
-const EDGE_VERSION = 'quantaphi-org-service-20261026-ai-collaboration-v12';
+const EDGE_VERSION = 'quantaphi-org-service-20261026-cf-repair-v13';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 const APPS = [
  { slug: '/infinity-phi/', aliases: ['/infinity/', '/InfinityPhi/', '/Infinity-Phi/'], repo: 'C13b0' },
