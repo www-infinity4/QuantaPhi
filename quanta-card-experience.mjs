@@ -1,5 +1,6 @@
 import {mountCardActions} from './quanta-card-actions.mjs';
 import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
+import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
  */
@@ -350,7 +351,16 @@ export function mountCardTools(root,card){
  if(id==='fox-one'||id==='fox-one-live-news')mountFoxOneSpot(root,card);
  if(id==='youtube'||id==='tiktok')mediaPlayer(root,id);
  if(id==='spotify')mediaPlayer(root,'spotify');
- if(id==='starmaker')recorder(root);
+ if(id==='starmaker'){
+  // Real on-card curated song search, explicitly consented Music Quant
+  // recommendations, and an optional local recorder. No duplicate Google
+  // site-search or assumed StarMaker account/API session.
+  mountStarMakerQuickCard(root);
+  const recording=node('details','qcx-recording-details');
+  recording.append(node('summary','','Record a local voice take'));
+  recorder(recording);root.append(recording);
+  mountCardActions(root,card,{showSearch:false});return;
+ }
  if(id==='whatsapp')whatsappDraft(root);
  if(id==='wikipedia')wikipediaTool(root,card);
  if(id==='gold'||id==='silver')calculator(root,card);
