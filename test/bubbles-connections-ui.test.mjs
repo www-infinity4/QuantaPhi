@@ -75,11 +75,11 @@ test('old blank-popup authorization does not strand Sign in on a fresh page',()=
  const storage={getItem:key=>data.get(key)||null,setItem:(key,v)=>data.set(key,v),removeItem:key=>data.delete(key)};
  const root={sessionStorage:storage};
  const old={provider:'cloudflare',state,returnPath:'/bubbles-accounts.html',expiresAt:Date.now()+120000};
- storage.set('bubbles:oauth-pending:v1',JSON.stringify(old));
+ storage.setItem('bubbles:oauth-pending:v1',JSON.stringify(old));
  const client=new AccountConnections({token:()=> 'current-device',root});
  assert.equal(client.readPendingHandoff(),null,'Legacy popup state must not block new login');
- assert.equal(storage.has('bubbles:oauth-pending:v1'),false);
- storage.set('bubbles:oauth-pending:v1',JSON.stringify({...old,flow:'same-window'}));
+ assert.equal(data.has('bubbles:oauth-pending:v1'),false);
+ storage.setItem('bubbles:oauth-pending:v1',JSON.stringify({...old,flow:'same-window'}));
  assert.equal(client.readPendingHandoff()?.state,state,'Verified same-tab callback state must remain resumable');
 });
 
