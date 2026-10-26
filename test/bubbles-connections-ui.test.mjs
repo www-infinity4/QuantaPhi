@@ -383,6 +383,18 @@ test('Android return accepts a sealed connected receipt without repeating token 
  assert.equal(calls.filter(x=>x.endsWith('/handoff/finish')).length,0);
 });
 
+test('Cloudflare scope diagnostic reports only server-configured and requested scopes, never a fabricated 386',async()=>{
+ const {cloudflareScopeInventory}=await import('../workers/bubbles-connections/providers.mjs');
+ const limited=cloudflareScopeInventory('user-details.read memberships.read');
+ assert.deepEqual(limited,{serverAllowlistCount:2,signInRequestScopeCount:2,clientRegistrationVerified:false});
+ const full='user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read workers-routes.read workers-routes.write page.read workers-kv-storage.read workers-kv-storage.write workers-r2.read workers-r2.write queues.read queues.write ai.read ai.write browser-rendering.read browser-rendering.write containers.read containers.write workers-observability.read dns.read dns.write';
+ const inventory=cloudflareScopeInventory(full);
+ assert.equal(inventory.serverAllowlistCount,full.split(' ').length);
+ assert.equal(inventory.signInRequestScopeCount,inventory.serverAllowlistCount);
+ assert.equal(inventory.clientRegistrationVerified,false);
+ assert.equal(cloudflareScopeInventory('user-details.read, memberships.read').serverAllowlistCount,2);
+});
+
 test('Account Connections Cloudflare sign-in is usable without unregistered full-project scopes',()=>{
  const provider={id:'cloudflare',configured:true,fullProjectConfigured:false,actions:['account.read']};
  assert.deepEqual(availableCloudflareLoginActions(provider),['account.read']);

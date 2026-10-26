@@ -163,6 +163,24 @@ test('Cloudflare missing OAuth client registration is not advertised as ready de
  assert.equal(provider.setupRequired,'oauth_client_not_configured');
  assert.equal(provider.actions.includes('projects.full'),true);
 });
+test('OAuth client diagnostic ties Bubbles to one actual client and avoids claiming 386 scopes',async()=>{
+ const configured={...env,CLOUDFLARE_CLIENT_ID:'49081c8b98c58a21EXAMPLE-OTHER-CHARS',CLOUDFLARE_CLIENT_SECRET:'server-only',
+  CLOUDFLARE_OAUTH_ALLOWED_SCOPES:'user-details.read memberships.read'};
+ const response=await handleConnections(request('/catalog'),configured,
+  ()=>assert.fail('metadata must not open provider tokens'));
+ const body=await response.json();
+ const cf=body.providers.find(provider=>provider.id==='cloudflare');
+ assert.deepEqual(cf.scopeInventory,{serverAllowlistCount:2,signInRequestScopeCount:2,clientRegistrationVerified:false});
+ assert.equal(cf.clientIdPrefix,'49081c8b98c58a21');
+ assert.ok(!JSON.stringify(body).includes('server-only'));
+ const other=await (await handleConnections(request('/catalog'),{...configured,
+   CLOUDFLARE_OAUTH_ALLOWED_SCOPES:FULL_CLOUDFLARE_SCOPES},()=>assert.fail('no provider token access'))).json();
+ const full=other.providers.find(provider=>provider.id==='cloudflare');
+ assert.equal(full.scopeInventory.serverAllowlistCount,FULL_CLOUDFLARE_SCOPES.split(' ').length);
+ assert.equal(full.scopeInventory.signInRequestScopeCount,FULL_CLOUDFLARE_SCOPES.split(' ').length);
+ assert.equal(full.scopeInventory.clientRegistrationVerified,false);
+});
+
 test('Cloudflare app registered without full project scopes blocks full consent instead of retrying login',async()=>{
  const limited={...env,CLOUDFLARE_CLIENT_ID:'client',CLOUDFLARE_CLIENT_SECRET:'private',
   CLOUDFLARE_OAUTH_ALLOWED_SCOPES:'user-details.read memberships.read'};

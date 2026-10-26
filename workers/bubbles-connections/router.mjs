@@ -1,7 +1,7 @@
 import {cloudStarCoinBackup} from './starcoin-backup.mjs';
 import {digest} from './vault.mjs';
 import {PROVIDERS} from './authorization.mjs';
-import {CONNECTOR_REQUIREMENTS,cloudflareAvailableActions} from './providers.mjs';
+import {CONNECTOR_REQUIREMENTS,cloudflareAvailableActions,cloudflareScopeInventory} from './providers.mjs';
 const ORIGINS = new Set(['https://quantaphi.org','https://www.quantaphi.org']);
 export const PREFIX = '/api/bubbles/connections';
 function json(origin,value,status = 200) {
@@ -101,7 +101,9 @@ export async function handleConnections(request,env,resolveService) {
         configured:ready && ((id==='google' && !!env.GOOGLE_CLIENT_ID && !!env.GOOGLE_CLIENT_SECRET) ||
           (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET) ||
           (id==='cloudflare' && cloudflareAppReady)),
-        ...(id==='cloudflare'?{fullProjectConfigured:ready&&cloudflareFullReady,
+        ...(id==='cloudflare'?{scopeInventory:cloudflareScopeInventory(env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES),
+          clientIdPrefix:ready&&env.CLOUDFLARE_CLIENT_ID?String(env.CLOUDFLARE_CLIENT_ID).slice(0,16):null,
+          fullProjectConfigured:ready&&cloudflareFullReady,
           setupRequired:!cloudflareAppReady?'oauth_client_not_configured':!cloudflareFullReady?'oauth_client_full_scopes_not_registered':null}:{}),
         requirement:CONNECTOR_REQUIREMENTS[id]}))});
     }

@@ -214,6 +214,20 @@ export function cloudflareAvailableActions(approvedScopes) {
   return Object.keys(CLOUDFLARE_SCOPES).filter(action=>
     CLOUDFLARE_SCOPES[action].every(scope=>allowed.has(scope)));
 }
+export function cloudflareScopeInventory(allowedScopes){
+  const configured=new Set(String(allowedScopes||'').split(/[\s,]+/).filter(Boolean));
+  const available=cloudflareAvailableActions(allowedScopes);
+  const loginActions=['account.read','projects.build','ledger.read','projects.full']
+    .filter(action=>available.includes(action));
+  const requested=cfScopes(loginActions);
+  return Object.freeze({
+    serverAllowlistCount:configured.size,
+    signInRequestScopeCount:requested.length,
+    // This is not a verified registration count: the OAuth management API may
+    // require a separate OAuth Client Read permission.
+    clientRegistrationVerified:false
+  });
+}
 const cfGranted=(actions,scope)=>actions.filter(a=>CLOUDFLARE_SCOPES[a]?.every(s=>scope.has(s)));
 export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...args)){
   const redirectUri=callback(config);
