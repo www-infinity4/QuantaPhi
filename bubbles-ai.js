@@ -1972,6 +1972,9 @@ function extract(reply){
 // model replies; real tool/HTTP auth errors and explicit device pairing are not hidden.
 function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  const answer=String(reply||'').trim();
+ // Preserve the specific GitHub-search failure message from the concurrent repair.
+ if(/["']action["']\s*:\s*["']github[.](?:searchCode|search_code)["'][\s\S]{0,1600}["']parameters["']\s*:/i.test(answer))
+  return 'Bubbles received unexecuted GitHub search instructions, not actual results. The source search and card repair have not been verified.';
  if(/["']action["']\s*:\s*["'](?:(?:github|web|browser|weather|tools?|brain)[._][\w.-]{1,80}|read_repo|read_repository|read_file|search|web_search|commit_files|create_pr|deploy)["'][\s\S]{0,1000}["']parameters["']\s*:/i.test(answer))
   return 'That reply proposed actions without running them. The requested source reads and changes are not verified.';
  if(/["']name["']\s*:\s*["']github(?:CreateRepo|UpdateFile|CreateIssue)["'][\s\S]*["']arguments["']\s*:/i.test(answer))return 'I received a proposed GitHub action, but it did not run. Your repair report belongs with the affected project and its conversation context; no repository or file change has been verified.';
