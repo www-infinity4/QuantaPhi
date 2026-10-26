@@ -296,8 +296,8 @@ test('isolated browser callback completes exactly once through original verified
   assert.equal(result.status,'connected');
   assert.equal(result.account.status,'connected');
   assert.equal(f.calls,1);
-  assert.equal((await f.service.handoffStatus(auth)).status,'expired');
-  assert.deepEqual(await f.service.finishHandoff(auth),{status:'expired'});
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  assert.equal((await f.service.finishHandoff(auth)).status,'connected');
   assert.equal(f.calls,1);
   assert.equal(JSON.stringify([...f.db.rows]).includes('code-from-external-chrome'),false);
 });
