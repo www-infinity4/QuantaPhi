@@ -24,9 +24,9 @@ function harness({scopes=fakeScopeIDs(),client=ID,active=ID.slice(0,16),live=386
  const request=async (url,opts={})=>{
   const path=String(url);
   logs.push({url:path,method:opts.method||'GET',body:opts.body});
-  if(path.startsWith('https://quantaphi.org/api/bubbles/connections/catalog')){
-   catalogCalls++;return Response.json({providers:[{id:'cloudflare',clientIdPrefix:active,
-    scopeInventory:{serverAllowlistCount:catalogCalls>1?live:6}}]});
+  if(path.startsWith('https://quantaphi.org/api/bubbles/connections/scope-inventory')){
+   catalogCalls++;return Response.json({ok:true,configured:true,clientIdPrefix:active,
+    scopeInventory:{serverAllowlistCount:catalogCalls>1?live:6}});
   }
   assert.ok(path.startsWith(endpoint));
   if(path.endsWith('/oauth_clients/'+ID))return json({client_id:client,redirect_uris:[CB],scopes});
