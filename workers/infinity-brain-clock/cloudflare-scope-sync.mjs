@@ -82,10 +82,17 @@ export async function confirmBubblesScopeSync(storage,body,env,{
   if(!['CLOUDFLARE_CLIENT_ID','CLOUDFLARE_CLIENT_SECRET',
     'CLOUDFLARE_OAUTH_ALLOWED_SCOPES','CONNECTIONS','CONNECTION_KEYRING'].every(n=>names.includes(n)))
     throw Error('bubbles_worker_binding_drift');
-  if(Number(cloudflare?.scopeInventory?.serverAllowlistCount)===EXPECTED)
+  // A configured allowlist is not proof that the OAuth sign-in actually
+  // requests the same permissions. Do not claim 386 when either count differs.
+  const preAllowlist=Number(cloudflare?.scopeInventory?.serverAllowlistCount);
+  const preRequested=Number(cloudflare?.scopeInventory?.signInRequestScopeCount);
+  if(preAllowlist===EXPECTED){
+   if(preRequested!==EXPECTED)throw Error('scope_inventory_request_count_mismatch');
    return {ok:true,status:'already_synchronized',clientIdPrefix:CLIENT_ID.slice(0,16),
-    verifiedRegisteredScopeCount:scopes.length,serverScopeCount:EXPECTED,secretExposed:false,
+    verifiedRegisteredScopeCount:scopes.length,serverScopeCount:EXPECTED,
+    signInRequestScopeCount:preRequested,secretExposed:false,
     needsUserCloudflareConsent:true};
+  }
   await getResult(prefix+'/secrets',writer.secret,{method:'PUT',request,
    body:{name:'CLOUDFLARE_OAUTH_ALLOWED_SCOPES',type:'secret_text',text:scopes.join(' ')}});
   wrote=true;
@@ -94,15 +101,26 @@ export async function confirmBubblesScopeSync(storage,body,env,{
    throw Error('updated_worker_secret_missing_on_readback');
   // The Worker secret value cannot be read back. Never claim 386 is in use
   // until a fresh public catalog read actually returns the new count.
-  let count=null;
+  let count=null,requested=null,clientMatches=false;
   try{
    const check=await request('https://quantaphi.org/api/bubbles/connections/scope-inventory?scopeSync=1',
     {headers:{Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(12000)});
-   if(check.ok){const data=await check.json();count=data?.scopeInventory?.serverAllowlistCount??null;}
+   if(check.ok){
+    const data=await check.json();
+    clientMatches=data?.ok===true&&data?.configured===true&&
+      data?.clientIdPrefix===CLIENT_ID.slice(0,16);
+    count=data?.scopeInventory?.serverAllowlistCount??null;
+    requested=data?.scopeInventory?.signInRequestScopeCount??null;
+   }
   }catch{}
-  return {ok:true,status:count===EXPECTED?'live_scope_count_verified':'installed_awaiting_live_verification',
+  // A concurrent deployment, stale response or incomplete OAuth action map
+  // must never be reported as successful 386-scope authorization.
+  const liveVerified=clientMatches&&count===EXPECTED&&requested===EXPECTED;
+  return {ok:true,status:liveVerified?'live_scope_count_verified':'installed_awaiting_live_verification',
    clientIdPrefix:CLIENT_ID.slice(0,16),verifiedRegisteredScopeCount:scopes.length,
-   serverScopeCount:Number.isInteger(count)?count:null,secretExposed:false,
+   serverScopeCount:Number.isInteger(count)?count:null,
+   signInRequestScopeCount:Number.isInteger(requested)?requested:null,
+   liveClientMatches:clientMatches,secretExposed:false,
    needsUserCloudflareConsent:true};
  }catch(e){return fail(wrote?'scope_write_outcome_needs_live_verification_':
     'scope_sync_failed_'+sanitize(e?.message),503)}
