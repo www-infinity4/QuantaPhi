@@ -519,6 +519,48 @@ macroBox.append(macroToggle,macroContent);
 const macroInfo=create('p','ba-muted','Web controls operate this Bubbles session. Android system actions need the installed Bubbles service, user permissions and actual results.');
 // Cloudflare's token admin permission lives in a SERVER secret, not the
 // Android APK. This owner-facing two-tap card never displays minted tokens.
+async function repairCloudflareConsent(){
+ if(embedded||!ownerReady){status.textContent='Verified Bubbles owner access is required for scope sync.';return;}
+ try{
+  const headers=await verifiedOwnerHeaders();
+  const res=await bubblesFetch(BRAIN+'/work/cloudflare/scope-sync-plan',{
+   method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',
+   cache:'no-store'},15000);
+  const plan=await res.json().catch(()=>({}));
+  if(!res.ok||!plan.ok)throw Error(String(plan.error||'scope_sync_plan_unavailable'));
+  const card=create('div','ba-cloudflare-approval');
+  const info=create('p','ba-muted',
+   'Repair the existing Bubbles Cloudflare OAuth client '+String(plan.clientIdPrefix||'8f676e')+
+   '. Read the permission list you already selected at Cloudflare and, ONLY IF it contains exactly 386 verified scopes, synchronize Bubbles’ single server-side allowlist. This creates no new OAuth client, changes no DNS, security settings or wallet, and never exposes credentials.');
+  const state=create('p','ba-muted',plan.managerConfigured?
+   'Approve the one-time permission sync. Cloudflare signs you in separately only when needed.':
+   'Cloudflare token manager is not configured. No changes can be made.');
+  state.setAttribute('role','status');
+  const apply=create('button','ba-control','Synchronize 386 Cloudflare permissions');
+  const cancel=create('button','ba-control','Cancel');
+  apply.type='button';cancel.type='button';apply.disabled=!plan.managerConfigured;
+  cancel.onclick=()=>{apply.disabled=true;cancel.disabled=true;state.textContent='Cancelled. Nothing changed.'};
+  apply.onclick=async()=>{
+   apply.disabled=true;cancel.disabled=true;
+   state.textContent='Checking the existing OAuth client and its 386 scopes directly with Cloudflare…';
+   try{
+    const auth=await verifiedOwnerHeaders();
+    const response=await bubblesFetch(BRAIN+'/work/cloudflare/scope-sync-confirm',{
+     method:'POST',headers:{...auth,'Content-Type':'application/json'},
+     body:JSON.stringify({requestId:plan.requestId}),cache:'no-store'},95000);
+    const result=await response.json().catch(()=>({}));
+    if(!response.ok||result.ok!==true)throw Error(String(result.error||'scope_sync_unverified'));
+    const live=result.status==='live_scope_count_verified';
+    state.textContent=live?
+     'Verified: Bubbles now requests '+result.serverScopeCount+' registered Cloudflare permissions. Use Sign in with Cloudflare once to review and authorize them.':
+     'Scope synchronization submitted. Live readback still pending; do not assume full access yet. Return to Account Connections for a fresh scope count.';
+   }catch(e){state.textContent='Not synchronized: '+String(e.message||e).slice(0,230)+'. No new client was created. Do not retry until the blocker is reviewed.'}
+  };
+  card.append(info,state,apply,cancel);conversation.append(card);
+  if(showing)chatScroll.scrollTop=chatScroll.scrollHeight;
+  status.textContent='Review the one-time Cloudflare permission synchronization.';
+ }catch(e){status.textContent='Cloudflare scope repair unavailable: '+String(e.message||e).slice(0,230)}
+}
 async function setupCloudflareOAuthClient(){
  if(embedded||!ownerReady){status.textContent='Connect verified owner mode to configure the Cloudflare OAuth app.';return;}
  let headers;
@@ -774,6 +816,7 @@ const macroButtons=[
  ['Check GitHub executor','Read the real authenticated GitHub capability or missing-credential error',()=>void sendMessage('check GitHub access')],
  ['Run Python sandbox','Request the pinned GitHub Actions Python fixture, not a phone shell',()=>void sendMessage('run Python sandbox/hello.py')],
  ['Check coder runs','Read actual GitHub Actions sandbox status and receipts',()=>void sendMessage('check coder sandbox results')],
+ ['Repair Cloudflare login','Synchronize the existing Bubbles OAuth client’s 386 registered scopes with its current server allowlist',()=>void repairCloudflareConsent()],
  ['Cloudflare OAuth setup','Register Bubbles as a private Cloudflare OAuth client using the owner-approved server API',()=>void setupCloudflareOAuthClient()],
  ['Cloudflare token manager','Review and explicitly approve short-lived Cloudflare Worker access without sharing API keys with the APK',()=>void proposeCloudflareWorkerToken()],
  ['Voice','Preview the currently selected speaking voice',()=>previewVoice.click()],
@@ -871,6 +914,10 @@ if(chatGate){
  const retry=create('button','ba-control','Check sign-ins again');
  retry.id='chatBubblesRetrySignInCheck';retry.type='button';
  chatGate.append(retry);
+ const repair=create('button','ba-control','Repair Cloudflare permissions');
+ repair.type='button';repair.id='chatBubblesRepairCloudflare';
+ repair.addEventListener('click',()=>void repairCloudflareConsent());
+ chatGate.append(repair);
 }
 async function checkPanelGate(){
  if(!chatGate||chatGateMounted||chatGateLoading)return;
