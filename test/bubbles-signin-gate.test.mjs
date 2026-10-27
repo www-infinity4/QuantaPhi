@@ -42,7 +42,7 @@ test('main Bubbles gate resumes Android OAuth after same-window navigation',()=>
  assert.match(source,/Finishing sign-in/);
 });
 
-function mountedGate(t,payload,{startFails=false,walletMissing=false}={}){
+function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn=null}={}){
  const elements=new Map();
  const root={getElementById(id){
   if(!elements.has(id))elements.set(id,{dataset:{},hidden:false,disabled:false,textContent:'',
@@ -50,6 +50,7 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false}={}){
   return elements.get(id);
  },addEventListener(){}};
  const popups=[],calls=[],storage=new Map();
+ if(oauthReturn)storage.set('bubbles:oauth-return-note:v1',JSON.stringify({provider:'cloudflare',result:oauthReturn,at:Date.now()}));
  const host={document:root,QuantaCloudConnection:{resolveDeviceToken:async()=>walletMissing?'':'sq_'+'a'.repeat(40)},
   addEventListener(){},removeEventListener(){},setTimeout:()=>1,clearTimeout(){},
   sessionStorage:{getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)},
@@ -163,4 +164,20 @@ test('public Bubbles markup includes clickable Cloudflare action and wallet reco
  assert.match(html,/<button id="bubblesCloudflareSignIn"[^>]*type="button"[^>]*>/);
  assert.doesNotMatch(html,/<button id="bubblesCloudflareSignIn"[^>]*disabled/);
  assert.match(html,/id="bubblesRecoverWallet"/);
+});
+
+test('a declined Cloudflare callback remains visible through wallet status refresh',async t=>{
+ const ui=mountedGate(t,partialGate(),{oauthReturn:'declined'});
+ await new Promise(setImmediate);
+ assert.match(ui.get('bubblesSigninStatus').textContent,/authorization was declined/i);
+ await ui.controller.refresh();
+ assert.match(ui.get('bubblesSigninStatus').textContent,/authorization was declined/i);
+ assert.equal(ui.get('bubblesCloudflareSignIn').disabled,false);
+});
+test('received callback with no completion receipt never claims the user is connected',async t=>{
+ const ui=mountedGate(t,partialGate(),{oauthReturn:'received'});
+ await new Promise(setImmediate);
+ assert.match(ui.get('bubblesSigninStatus').textContent,/Waiting to verify/);
+ assert.equal(ui.get('bubblesCloudflareCard').hidden,false);
+ assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
 });
