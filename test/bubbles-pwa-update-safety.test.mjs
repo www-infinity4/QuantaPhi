@@ -138,3 +138,18 @@ test('Bubbles PWA clears a previously offered update if a later release verifica
   assert.equal(app.navigations.length, 0, 'stale release must never navigate');
   assert.equal(app.confirmations, 0, 'stale release must never prompt for reload');
 });
+
+test('Bubbles PWA release manifest and cache-busted entry points match the update script', () => {
+  const release = JSON.parse(fs.readFileSync('bubbles-app-version.json', 'utf8')).version;
+  assert.match(release, /^[a-zA-Z0-9_-]{5,64}$/);
+  const updater = fs.readFileSync('bubbles-pwa.js', 'utf8');
+  assert.ok(updater.includes("const CURRENT_RELEASE = '" + release + "';"), 'current release must match the first-party manifest');
+  for (const page of ['bubbles-chrome.html', 'bubbles.html', 'bubbles/index.html', 'index.html']) {
+    const html = fs.readFileSync(page, 'utf8');
+    assert.ok(html.includes('/bubbles-ai.js?v=' + release), page + ' must refresh the conversation-preservation script');
+    assert.ok(html.includes('/bubbles-ui-clean-20261026.css?v=' + release), page + ' must refresh the Settings UI stylesheet');
+    if (page === 'bubbles-chrome.html' || page === 'bubbles.html') {
+      assert.ok(html.includes('/bubbles-pwa.js?v=' + release), page + ' must refresh the PWA update guard');
+    }
+  }
+});
