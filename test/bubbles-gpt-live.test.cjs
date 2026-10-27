@@ -67,3 +67,50 @@ test('UI never stores owner token or promises free ChatGPT Live audio',()=>{
  assert.doesNotMatch(frontend.split('\n').filter(line=>!line.trim().startsWith('//')).join('\n'),/localStorage|sessionStorage/);
  assert.match(frontend,/secret\.value=""/);
 });
+
+test('wallet-derived Brain owner session can start Live only after independent Brain verification',async()=>{
+ const app=await load();
+ const previous=globalThis.fetch;
+ const bearer='rb_'+'a'.repeat(64);
+ let approved=0,provider=0;
+ const env={OPENAI_API_KEY:'NOT_A_REAL_KEY',BRAIN:{fetch:async(url,options)=>{
+   approved++;assert.equal(url,'https://brain.internal/health');
+   assert.equal(options.headers.Authorization,'Bearer '+bearer);
+   return new Response('owner verified',{status:200});
+ }}};
+ globalThis.fetch=async(url,options)=>{
+   provider++;assert.equal(url,'https://api.openai.com/v1/live/sessions');
+   assert.equal(options.headers.Authorization,'Bearer NOT_A_REAL_KEY');
+   return new Response(JSON.stringify({session:{id:'wallet_live_test'},
+    transport:{type:'webrtc',sdp:'v=0\\nanswer'}}),{status:201});
+ };
+ try{
+   const res=await app.fetch(request(undefined,bearer.slice(7)),env);
+   assert.equal(res.status,201);
+   assert.equal(approved,1);assert.equal(provider,1);
+   const json=await res.json();
+   assert.equal(json.session.id,'wallet_live_test');
+   assert.ok(!JSON.stringify(json).includes(bearer));
+ }finally{globalThis.fetch=previous}
+});
+test('wallet device token, rejected Brain proof and absent provider key never start paid sessions',async()=>{
+ const app=await load();
+ let brainReads=0,provider=0;
+ const previous=globalThis.fetch;
+ globalThis.fetch=async()=>{provider++;throw Error('provider must not be called')};
+ try{
+   const env={OPENAI_API_KEY:'NOT_A_REAL_KEY',BRAIN:{fetch:async()=>{brainReads++;return new Response('',{status:404})}}};
+   assert.equal((await app.fetch(request(undefined,'sq_'+'a'.repeat(40)),env)).status,401);
+   assert.equal(brainReads,0);
+   assert.equal((await app.fetch(request(undefined,'rb_'+'a'.repeat(64)),env)).status,401);
+   assert.equal(brainReads,1);
+   assert.equal((await app.fetch(request(undefined,'rb_'+'a'.repeat(64)),{BRAIN:env.BRAIN})).status,503);
+   assert.equal(provider,0);
+ }finally{globalThis.fetch=previous}
+});
+test('wallet source is never copied to GPT Live broker or browser storage',()=>{
+ assert.match(frontend,/QuantaBrainOwner\\?\\.ready/);
+ assert.match(frontend,/^.*Authorization.*/m);
+ assert.doesNotMatch(frontend,/resolveDeviceToken|InfinityCloudWallet|sq_[A-Za-z0-9_-]/);
+ assert.match(source,/r\\[bd\\]_/);
+});
