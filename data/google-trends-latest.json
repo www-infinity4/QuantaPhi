@@ -3,107 +3,107 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-10-26T21:45:36.641429Z",
+  "checked_at": "2026-10-27T00:57:13.883664Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "unai simon",
-      "approx_searches": "5000+",
-      "published_at": "2026-10-26T21:30:00Z",
-      "related_news_urls": [
-        "https://www.marca.com/futbol/balon-oro/2026/10/26/unai-simon-todos-luce-mejor-portero-mundo.html",
-        "https://www.latercera.com/el-deportivo/noticia/la-dura-competencia-que-tiene-vozinha-para-quedarse-con-el-premio-lev-yashin-en-la-ceremonia-del-balon-de-oro/",
-        "https://as.com/futbol/simon-camino-de-la-gloria-f202610-n/"
-      ]
-    },
-    {
-      "query": "cata coll",
-      "approx_searches": "2000+",
-      "published_at": "2026-10-26T21:30:00Z",
-      "related_news_urls": [
-        "https://www.marca.com/futbol/balon-oro/2026/10/26/cata-coll-trofeo-yashin.html",
-        "https://cadenaser.com/baleares/2026/10/26/orgullo-balear-en-la-gala-del-balon-de-oro-cata-coll-patri-guijarro-y-mariona-caldentey-suenan-a-lo-grande-radio-mallorca/",
-        "https://www.diariodemallorca.es/deportes/2026/10/26/padres-cata-coll-londres-hemos-135765144.html"
-      ]
-    },
-    {
-      "query": "chad lowe",
+      "query": "red wings vs oilers",
       "approx_searches": "1000+",
-      "published_at": "2026-10-26T21:30:00Z",
+      "published_at": "2026-10-27T00:40:00Z",
       "related_news_urls": [
-        "https://people.com/chad-lowe-family-hosted-funeral-for-daughter-this-weekend-exclusive-source-12195173",
-        "https://www.aol.com/articles/exclusive-chad-lowe-reveals-heartbreak-133000000.html",
-        "https://people.com/9-1-1-nashville-honors-chad-lowes-daughter-fiona-after-her-death-at-age-13-12177219"
+        "https://www.nhl.com/redwings/news/preview-red-wings-take-on-oilers-on-monday-wrap-up-four-game-road-trip-through-pacific-northwest-and-western-canada",
+        "https://www.covers.com/nhl/red-wings-vs-oilers-prediction-picks-oct-26-2026",
+        "https://oilersnation.com/news/edmonton-oilers-detroit-red-wings-game-preview-babcock-lineups"
       ]
     },
     {
-      "query": "francis lawrence bioshock movie progress",
-      "approx_searches": "500+",
-      "published_at": "2026-10-26T21:30:00Z",
+      "query": "devonta smith",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-27T00:40:00Z",
       "related_news_urls": [
-        "https://thedirect.com/article/bioshock-movie-francis-lawrence-story-world",
-        "https://www.ign.com/articles/bioshock-movie-director-francis-lawrence-explains-why-its-taken-hollywood-so-long-to-adapt-the-game",
-        "https://movieweb.com/bioshock-netflix-update/"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/monday-night-football-jonathan-greenard-saquon-barkley-are-active-for-eagles-vs-cowboys",
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-inactives-saquon-barkley-jalyx-hunt-2026-week-7-monday-night-football",
+        "https://www.espn.com/nfl/story/_/id/50269752/eagles-devonta-smith-dontayvion-wicks-vs-cowboys"
       ]
     },
     {
-      "query": "elizabeth holmes deception expert analysis",
-      "approx_searches": "500+",
-      "published_at": "2026-10-26T21:30:00Z",
+      "query": "dameon pierce",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-27T00:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/10/22/insider/elizabeth-holmes-backstory.html",
-        "https://www.forbes.com/sites/alexknapp/2026/10/22/when-elizabeth-holmes-lied-to-forbes-about-theranos/",
-        "https://variety.com/2026/film/news/elizabeth-holmes-new-york-times-quote-reporter-1236929661/"
+        "https://www.cbssports.com/fantasy/football/news/eagles-dameon-pierce-returning-to-reserve-role/",
+        "https://www.fantasysp.com/start/nfl/872010/dameon-pierce-or-jaylin-noel",
+        "https://www.thefantasyfootballers.com/news/644530/dameon-pierce-returning-to-reserve-role/"
       ]
     },
     {
-      "query": "luis de la fuente",
+      "query": "ajay mitchell",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-27T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-26/naz-reid-illness-upgraded-to-available-monday",
+        "https://www.fantasypros.com/nba/news/616044/chet-holmgren-knee-ruled-out-monday.php",
+        "https://www.rotowire.com/basketball/headlines/ajay-mitchell-news-starting-vs-phoenix-536215"
+      ]
+    },
+    {
+      "query": "zach ertz",
+      "approx_searches": "200+",
+      "published_at": "2026-10-27T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/eagles-facing-zach-ertz-decision-200519181.html",
+        "https://www.cbssports.com/fantasy/football/news/zach-ertz-remains-on-practice-squad/",
+        "https://www.delawareonline.com/story/sports/nfl/eagles/2026/10/24/eagles-injury-update-is-devonta-smith-heading-to-ir-zach-ertz-decision/92343971007/"
+      ]
+    },
+    {
+      "query": "chandler simpson",
       "approx_searches": "2000+",
-      "published_at": "2026-10-26T21:20:00Z",
+      "published_at": "2026-10-27T00:30:00Z",
       "related_news_urls": [
-        "https://www.marca.com/futbol/balon-oro/2026/10/26/6adf46e7020dbf8b21772b9e-directo.html",
-        "https://www.latimes.com/espanol/deportes/articulo/2026-10-24/como-los-tecnicos-espanoles-se-convirtieron-en-los-mas-cotizados-del-futbol",
-        "https://elpais.com/deportes/futbol/2026-10-26/premio-balon-de-oro-en-directo-la-gala-en-vivo.html"
+        "https://www.mlb.com/stories/game/849802",
+        "https://www.usatoday.com/story/sports/mlb/2026/10/26/chandler-simpson-catch-world-series-highlights-rays/92452792007/",
+        "https://blogs.fangraphs.com/chandler-simpson-can-fly/"
       ]
     },
     {
-      "query": "james comey",
-      "approx_searches": "10000+",
-      "published_at": "2026-10-26T21:20:00Z",
+      "query": "stephen a smith",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-27T00:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/10/26/nyregion/maurene-comey-firing-doj-trump-epstein.html",
-        "https://www.foxnews.com/politics/obama-judge-rules-trump-doj-illegally-fired-james-comeys-daughter-rejects-sweeping-article-ii-claim",
-        "https://www.washingtonpost.com/national-security/2026/10/26/doj-unlawfully-fired-maurene-comey-daughter-former-fbi-director-judge-rules/"
+        "https://www.espn.com/video/clip/_/id/50287807/stephen-lays-michael-irvin-saying-cowboys-season-line-mnf",
+        "https://heavy.com/sports/nfl/dallas-cowboys/swipe-at-dak-prescott-before-eagles-game/",
+        "https://cowboyswire.usatoday.com/story/sports/nfl/cowboys/2026/10/26/former-dallas-cowboy-michael-irvin-adds-fuel-to-the-fire-in-rivalry-with-the-philadelphia-eagles/92445793007/"
       ]
     },
     {
-      "query": "openai 6.1 terra",
+      "query": "nick sirianni",
       "approx_searches": "500+",
-      "published_at": "2026-10-26T21:20:00Z",
+      "published_at": "2026-10-27T00:30:00Z",
       "related_news_urls": [
-        "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/",
-        "https://9to5mac.com/2026/10/26/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-1-terra-model/",
-        "https://thenextweb.com/news/openai-gpt-6-1-terra-computer-use"
+        "https://www.inquirer.com/eagles/nick-sirianni-jalen-hurts-monday-night-football-nfl-week-7-20261026.html",
+        "https://insidethestar.com/nfc-east-proving-why-cowboys-have-a-clear-coaching-mismatch",
+        "https://sports.yahoo.com/articles/3-eagles-lineup-decisions-id-103000369.html"
       ]
     },
     {
-      "query": "mika godts",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T21:20:00Z",
+      "query": "brasileirao",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-27T00:30:00Z",
       "related_news_urls": [
-        "https://sporza.be/nl/matches/voetbal/buitenland/fra/ligue-1-mcdonald-s/2026-2027/regulier/08/paris-saint-germain-olympique-lyon-mika-godts-schittert-als-invaller-bij-psg-rode-duivel-zorgt-voor-zege-met-eerste-goal-en-assist~1792568160845/",
-        "https://www.telegraaf.nl/sport/voetbal/paris-saint-germain-grijpt-koppositie-mika-godts-maakt-prachtige-eerste-treffer-voor-fransen/163650468.html",
-        "https://www.nu.nl/voetbal/6414497/mika-godts-schittert-met-goal-en-assist-voor-psg-in-verplaatste-topper-tegen-lyon.html"
+        "https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/ao-vivo/coritiba-x-gremio/97727/",
+        "https://ge.globo.com/rs/futebol/times/gremio/noticia/2026/10/26/gremio-entra-em-campo-mais-afundado-no-z-4-entenda-motivos-para-decisao-contra-o-coritiba.ghtml",
+        "https://www.correiodopovo.com.br/blogs/hiltormombach/braithwaite-marca-e-gremio-respira-no-brasileiro-1.1759278"
       ]
     },
     {
-      "query": "senny mayulu",
-      "approx_searches": "200+",
-      "published_at": "2026-10-26T21:20:00Z",
+      "query": "riq woolen",
+      "approx_searches": "500+",
+      "published_at": "2026-10-27T00:30:00Z",
       "related_news_urls": [
-        "https://www.idahostatejournal.com/sports/national/france-league-one-soccer/image_f9c953d7-75fd-5f5c-91b4-93b1340393ea.html",
-        "https://www.athensreview.com/sports/national_sports/france-league-one-soccer/image_00be6c84-2348-5492-8bed-090300848f9f.html",
-        "https://www.hjnews.com/sports/nation/france-league-one-soccer/image_7f71d441-fed6-523b-8ff0-c71c7ff461c5.html"
+        "https://www.buffalorumblings.com/buffalo-bills-analysis/143524/nfl-trade-deadline-buffalo-bills-trade-candidate-tariq-woolen",
+        "https://www.si.com/nfl/bills/onsi/trade-deadline-bills-paired-with-eagles-fix-defensive-problem-for-buffalo",
+        "https://athlonsports.com/nfl/philadelphia-eagles/riq-woolen-went-from-super-bowl-champion-to-unwanted-eagles-could-flip-him"
       ]
     }
   ]

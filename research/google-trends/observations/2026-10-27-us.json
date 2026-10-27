@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-10-27T00:57:13.883664Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "red wings vs oilers",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-27T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/redwings/news/preview-red-wings-take-on-oilers-on-monday-wrap-up-four-game-road-trip-through-pacific-northwest-and-western-canada",
+        "https://www.covers.com/nhl/red-wings-vs-oilers-prediction-picks-oct-26-2026",
+        "https://oilersnation.com/news/edmonton-oilers-detroit-red-wings-game-preview-babcock-lineups"
+      ]
+    },
+    {
+      "query": "devonta smith",
+      "approx_searches": "5000+",
+      "published_at": "2026-10-27T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/monday-night-football-jonathan-greenard-saquon-barkley-are-active-for-eagles-vs-cowboys",
+        "https://www.philadelphiaeagles.com/news/cowboys-vs-eagles-inactives-saquon-barkley-jalyx-hunt-2026-week-7-monday-night-football",
+        "https://www.espn.com/nfl/story/_/id/50269752/eagles-devonta-smith-dontayvion-wicks-vs-cowboys"
+      ]
+    },
+    {
+      "query": "dameon pierce",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-27T00:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/football/news/eagles-dameon-pierce-returning-to-reserve-role/",
+        "https://www.fantasysp.com/start/nfl/872010/dameon-pierce-or-jaylin-noel",
+        "https://www.thefantasyfootballers.com/news/644530/dameon-pierce-returning-to-reserve-role/"
+      ]
+    },
+    {
+      "query": "ajay mitchell",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-27T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-26/naz-reid-illness-upgraded-to-available-monday",
+        "https://www.fantasypros.com/nba/news/616044/chet-holmgren-knee-ruled-out-monday.php",
+        "https://www.rotowire.com/basketball/headlines/ajay-mitchell-news-starting-vs-phoenix-536215"
+      ]
+    },
+    {
+      "query": "zach ertz",
+      "approx_searches": "200+",
+      "published_at": "2026-10-27T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/eagles-facing-zach-ertz-decision-200519181.html",
+        "https://www.cbssports.com/fantasy/football/news/zach-ertz-remains-on-practice-squad/",
+        "https://www.delawareonline.com/story/sports/nfl/eagles/2026/10/24/eagles-injury-update-is-devonta-smith-heading-to-ir-zach-ertz-decision/92343971007/"
+      ]
+    },
+    {
+      "query": "chandler simpson",
+      "approx_searches": "2000+",
+      "published_at": "2026-10-27T00:30:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/stories/game/849802",
+        "https://www.usatoday.com/story/sports/mlb/2026/10/26/chandler-simpson-catch-world-series-highlights-rays/92452792007/",
+        "https://blogs.fangraphs.com/chandler-simpson-can-fly/"
+      ]
+    },
+    {
+      "query": "stephen a smith",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-27T00:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50287807/stephen-lays-michael-irvin-saying-cowboys-season-line-mnf",
+        "https://heavy.com/sports/nfl/dallas-cowboys/swipe-at-dak-prescott-before-eagles-game/",
+        "https://cowboyswire.usatoday.com/story/sports/nfl/cowboys/2026/10/26/former-dallas-cowboy-michael-irvin-adds-fuel-to-the-fire-in-rivalry-with-the-philadelphia-eagles/92445793007/"
+      ]
+    },
+    {
+      "query": "nick sirianni",
+      "approx_searches": "500+",
+      "published_at": "2026-10-27T00:30:00Z",
+      "related_news_urls": [
+        "https://www.inquirer.com/eagles/nick-sirianni-jalen-hurts-monday-night-football-nfl-week-7-20261026.html",
+        "https://insidethestar.com/nfc-east-proving-why-cowboys-have-a-clear-coaching-mismatch",
+        "https://sports.yahoo.com/articles/3-eagles-lineup-decisions-id-103000369.html"
+      ]
+    },
+    {
+      "query": "brasileirao",
+      "approx_searches": "1000+",
+      "published_at": "2026-10-27T00:30:00Z",
+      "related_news_urls": [
+        "https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/ao-vivo/coritiba-x-gremio/97727/",
+        "https://ge.globo.com/rs/futebol/times/gremio/noticia/2026/10/26/gremio-entra-em-campo-mais-afundado-no-z-4-entenda-motivos-para-decisao-contra-o-coritiba.ghtml",
+        "https://www.correiodopovo.com.br/blogs/hiltormombach/braithwaite-marca-e-gremio-respira-no-brasileiro-1.1759278"
+      ]
+    },
+    {
+      "query": "riq woolen",
+      "approx_searches": "500+",
+      "published_at": "2026-10-27T00:30:00Z",
+      "related_news_urls": [
+        "https://www.buffalorumblings.com/buffalo-bills-analysis/143524/nfl-trade-deadline-buffalo-bills-trade-candidate-tariq-woolen",
+        "https://www.si.com/nfl/bills/onsi/trade-deadline-bills-paired-with-eagles-fix-defensive-problem-for-buffalo",
+        "https://athlonsports.com/nfl/philadelphia-eagles/riq-woolen-went-from-super-bowl-champion-to-unwanted-eagles-could-flip-him"
+      ]
+    }
+  ]
+}
