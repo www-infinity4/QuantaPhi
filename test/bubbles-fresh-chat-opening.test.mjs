@@ -176,3 +176,14 @@ test('PWA update preparation checkpoints the active chat and rejects active work
  ctx.sessionStorage.setItem=()=>{throw Error('storage disabled')};
  assert.equal(prepare(),false,'no resume marker means no reload');
 });
+
+
+test('automatic site revision reload uses the same safe conversation checkpoint gate',()=>{
+ const end=ui.indexOf('window.QuantaBubbles={');
+ const start=ui.lastIndexOf('siteVersionChecking=true;',end);
+ assert.ok(start>0&&end>start);
+ const autoUpdater=ui.slice(start,end);
+ assert.match(autoUpdater,/prepareSiteUpdateReload\\?\\.\\(\\)\\s*!==true/);
+ assert.doesNotMatch(autoUpdater,/sessionStorage\\.setItem\\(UPDATE_RELOAD_THREAD/);
+ assert.match(autoUpdater,/location\\.reload\\(\\)/);
+});
