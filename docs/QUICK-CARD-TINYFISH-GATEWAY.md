@@ -9,7 +9,7 @@
 
 ## Proposed source changes
 - Homepage source cards retain their original DOM node, curated media, Follow/Star/Collect/Share/+1 Build and navigation.
-- A separate read-only TinyFish question panel appears on 13 **public-source** cards, including StarMaker. No account cookies, logins or recordings are forwarded.
+- A separate read-only TinyFish question panel is mounted through the **shared card toolbar** on 65 fixed, catalogued public-website cards: 13 original source cards (including StarMaker), 17 premium sources, 6 product cards and 29 verified brand/sports cards. Uncatalogued URLs and generic internal tools remain unsupported. No account cookies, logins or recordings are forwarded.
 - The first-party website makes a CORS POST to `https://continuity-session-coordinator.marvaseater.workers.dev/v1/quick-cards/tinyfish`. Only fixed known card IDs are accepted. Arbitrary URLs are rejected.
 - The Cloudflare coordinator (tracked snapshot in `workers/continuity-session-coordinator/`) imports `workers/quick-card-tinyfish/gateway.mjs` and mounts the route. It uses the existing secret, a hashed-IP quota and a hard daily global budget, fixed read-only goal, and checks the final TinyFish SSE COMPLETED event.
 - Gateway timeout, cost/rate limits and source failures return explicit errors; no fabricated provider answer.
