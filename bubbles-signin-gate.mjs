@@ -182,7 +182,8 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  host.addEventListener('pageshow',()=>{if(Date.now()-lastChecked>15000)void refresh();});
  root.addEventListener('visibilitychange',()=>{if(!root.hidden&&Date.now()-lastChecked>15000)void refresh();});
  // Resume the existing wallet-bound Android handoff after same-window navigation.
- const resuming=client.resumePending(error=>void finalizeReturn('cloudflare',error));
+ const resumingProvider=client.readPendingHandoff()?.provider||'cloudflare';
+ const resuming=client.resumePending(error=>void finalizeReturn(resumingProvider,error));
  if(resuming){
   oauthInProgress=true;updateButtons();
   setStatus('Finishing sign-in…');
