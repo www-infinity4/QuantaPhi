@@ -78,7 +78,7 @@ test('callback rejects unregistered states without revealing provider code',asyn
   const configured={CONNECTIONS:{idFromName:name=>name,get:()=>({lookupOAuthState:async()=>{throw Error('state_invalid_or_used');}})}};
   const response=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/github/callback?state='+state+'&code=secret'),configured,()=>assert.fail());
   assert.equal(response.status,303);
-  assert.equal(response.headers.get('Location'),PREFIX+'/github/callback?result=failed');
+  assert.equal(response.headers.get('Location'),PREFIX+'/github/callback?result=failed&reason=callback_state_invalid');
   assert.ok(!response.headers.get('Location').includes('secret'));
 });
 test('unexpected provider error text is redacted and no token appears in response',async()=>{
@@ -243,4 +243,30 @@ test('Cloudflare callback return distinguishes decline from server failure witho
  assert.match(denied,/declined the requested access/);
  assert.match(failed,/authorization could not be received/);
  assert.doesNotMatch(denied,/access_token|refresh_token|client_secret/);
+});
+
+test('Cloudflare callback reports missing authorization code without exposing state',async()=>{
+ const state='z'.repeat(43);
+ const response=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/cloudflare/callback?state='+state),
+  {CONNECTIONS:{idFromName:name=>name,get:()=>assert.fail('must not access state registry without code')}},
+  ()=>assert.fail('must not resolve user identity'));
+ assert.equal(response.status,303);
+ assert.equal(response.headers.get('Location'),PREFIX+'/cloudflare/callback?result=failed&reason=callback_missing_code');
+ assert.ok(!response.headers.get('Location').includes(state));
+});
+test('OAuth provider invalid_scope is classified separately from user decline',async()=>{
+ const state='s'.repeat(43);
+ const env={CONNECTIONS:{idFromName:name=>name,get:()=>({
+  lookupOAuthState:async()=>({userId:'verified-alice'})
+ })}};
+ const response=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/cloudflare/callback?state='+state+'&error=invalid_scope&error_description=SECRET'),
+  env,()=>({handoff:async input=>{assert.equal(input.error,true);return {received:true};}}));
+ assert.equal(response.status,303);
+ assert.equal(response.headers.get('Location'),PREFIX+'/cloudflare/callback?result=failed&reason=invalid_scope');
+ assert.doesNotMatch(response.headers.get('Location'),/SECRET|state=|code=/);
+ const page=await handleConnections(new Request('https://quantaphi.org'+PREFIX+'/cloudflare/callback?result=failed&reason=invalid_scope'),
+  env,()=>assert.fail());
+ const html=await page.text();
+ assert.match(html,/rejected the requested permission combination/);
+ assert.doesNotMatch(html,/SECRET/);
 });
