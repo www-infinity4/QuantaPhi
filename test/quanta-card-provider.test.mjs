@@ -59,3 +59,6 @@ test('StarMaker uses the verified publisher-owned login without inventing an OAu
  assert.equal(manifest.apiAccess,'not-granted-by-card');
  assert.equal(cardProvider({id:'starmaker',name:'StarMaker',website:'https://starmakerstudios.com.phishing.example'}),null);
 });
+
+// C13B0 wiring study and real Termux scaffold are in the shared card regression suite.
+import './quick-card-wiring.test.mjs';
