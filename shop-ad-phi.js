@@ -90,13 +90,12 @@ function show(item,draft=false){
   const result=packageApi.capture({kind:'product',id:'shop:'+item.itemId,title:item.title,description:item.description,sourceUrl:item.url,imageUrl:safe(item.imageUrl),originCard:'shop-phi'});
   status.textContent=result.ok?(result.duplicate?'Already in your Code Phi project.':'Added this exact product to your Code Phi project (+1).'):result.reason||'Could not add this post to the project.';
  });
- button(row,'Browse related listings',()=>{
-  // No generic Google search: show related inventory within the QuantaPhi
-  // original-site ecosystem, then let the visitor choose a merchant.
-  const term=String(item.title||'').trim().slice(0,100);
-  const route='/shopphi-sell.html?browse='+encodeURIComponent(term);
-  if(sellerMode){window.location.href=route;return}
-  window.open(route,'_blank','noopener,noreferrer');
+ button(row,'Browse similar at eBay',()=>{
+  // Direct original-marketplace search, not a pretend TinyFish API response
+  // or unrelated Google results.
+  const url=new URL('https://www.ebay.com/sch/i.html');
+  url.searchParams.set('_nkw',String(item.title||'').trim().slice(0,100));
+  window.open(url.href,'_blank','noopener,noreferrer');
  });
  button(row,'Collect',()=>{try{const k='quantaPhiCollected',data={key:'shop:'+(item.url||item.itemId),type:'Shop Phi',title:item.title,sourceUrl:item.url,media:item.imageUrl||'',story:item.description||'',collectedAt:new Date().toISOString()};save(k,[data,...read(k).filter(x=>x.key!==data.key)]);window.QuantaStarCredit?.('collect',data.key,data);status.textContent='Item collected. Rewards depend on StarQuest confirmation.'}catch{status.textContent='Collection could not be saved.'}});
  if(item.url)button(row,'Share',async()=>{try{if(navigator.share)await navigator.share({title:item.title,url:item.url});else await navigator.clipboard.writeText(item.url);status.textContent='Seller link shared.'}catch(e){status.textContent=e.name==='AbortError'?'Share canceled.':'Sharing unavailable.'}});
