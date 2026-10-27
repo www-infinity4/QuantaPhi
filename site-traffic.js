@@ -25,7 +25,7 @@
    Number.isFinite(recentStart)&&Number.isFinite(recentUntil)&&
    // The recorded ledger may start after the seven-day window begins, or end before it.
    // Neither condition invalidates its durable cumulative totals.
-   recentUntil-recentStart===6*86400000&&
+   recentUntil-recentStart===6*86400000&&recentUntil>=through&&
    validCount(d.recordedDays)&&d.last7Days.daysRecorded<=d.recordedDays&&
    typeof d.coverageContinuous==='boolean'&&
    d.last7Days.requests<=d.requests&&d.last7Days.pageViews<=d.pageViews;
