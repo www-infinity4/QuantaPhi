@@ -321,7 +321,7 @@ function show(entry,remember=true){
    const container=document.createElement('div');container.className='oracle-card-actions';
    // Capture the real photo/artwork from the displayed original card, not
    // the generic QuantaPhi site preview used by unrelated URLs.
-   const mediaSrc=displayed.node.querySelector('img[src]:not([hidden])')?.getAttribute('src')||'';
+   const mediaSrc=displayed.node.querySelector('[data-walmart-image],.qbp-photo,.sap-feature img,.iqc-media img,.qcx-art img,.premium-selected img,.oracle-original-cover img,img[src]')?.getAttribute('src')||'';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
     category:displayed.category,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
    stage.append(container);
