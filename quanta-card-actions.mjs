@@ -134,6 +134,26 @@ export function mountCardActions(host,card,options={}){
   }catch{}
   if(source){
    const open=element('a','qca-button qca-source','↗ Open original website');
+
+   // User-triggered public TinyFetch. Never show a fake Google fallback.
+   const read=b('⌕ Live card source',async()=>{
+    read.disabled=true;notify(status,'Reading this source with TinyFish…');
+    let detail=bar.querySelector('.qca-live-source');
+    if(!detail){detail=element('p','qca-live-source');detail.setAttribute('role','status');bar.append(detail);}
+    try{
+     const r=await fetch('https://bubbles-tools.marvaseater.workers.dev/v1/assist',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({tool:'tinyfish.fetch',request:'Read this Quick Card public source',url:source}),
+      signal:AbortSignal.timeout(24000)});
+     const result=await r.json();
+     if(!r.ok||result?.receipt?.status!=='complete'||result.provider!=='TinyFish')
+      throw Error(result.error||'provider_unavailable');
+     detail.textContent=String(result.output||'').slice(0,2200)||'The source returned no readable text.';
+     notify(status,'TinyFish live source checked. Read-only, with source evidence; no checkout or sign-in.');
+    }catch{detail.textContent='Live source unavailable. You can open the original site instead.';
+     notify(status,'TinyFish did not return a verified read.');}
+    finally{read.disabled=false;}
+   });
    open.href=source;open.target='_blank';open.rel='noopener noreferrer';controls.append(open);
   }
  }
