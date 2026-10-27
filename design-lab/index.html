@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f5f2eb">
+<meta name="description" content="QuantaPhi Design Lab: invent professional, interactive Quick Cards and test the Power Chain research circuit with verified original-source results.">
+<title>Design Lab · Power Chain | QuantaPhi</title>
+<link rel="canonical" href="https://quantaphi.org/design-lab/index.html">
+<link rel="stylesheet" href="/design-lab/lab.css?v=1">
+</head>
+<body data-finish="copper">
+<header class="lab-top">
+ <a class="lab-logo" href="/" aria-label="QuantaPhi home"><span aria-hidden="true">Q<span class="lab-phi">φ</span></span><span>QUANTAPHI</span></a>
+ <nav aria-label="Design Lab navigation"><a href="#workbench">Power Chain</a><a href="#blueprint">Blueprint</a><a href="/">Back to QuantaPhi</a></nav>
+ <span class="lab-status"><i aria-hidden="true"></i> EXPERIMENT 001</span>
+</header>
+<main>
+<section class="lab-hero" aria-labelledby="headline">
+ <div class="lab-copy">
+  <div class="lab-eyebrow"><span>INFINITY® / DESIGN LAB</span><span class="lab-eyeline"></span><span>CONCEPT 001</span></div>
+  <h1 id="headline">Invent the <em>impossible-looking.</em><br>Build the useful.</h1>
+  <p class="lab-intro">One power button. Forty original websites in coordinated public-index research circuits. Real source receipts—presented as a card worth opening.</p>
+  <div class="lab-hero-tags"><span>3D interface</span><span>Explainable intent</span><span>Source-backed</span></div>
+  <a class="lab-jump" href="#workbench">Enter the workbench <span aria-hidden="true">↗</span></a>
+ </div>
+ <div class="lab-sculpture" id="labSculpture" role="group" aria-label="Three-dimensional Power Chain concept. Its central button runs the research circuit.">
+  <div class="lab-scene">
+   <div class="lab-disc lab-disc--outer"></div><div class="lab-disc lab-disc--middle"></div><div class="lab-disc lab-disc--inner"></div>
+   <div class="lab-orbit lab-orbit--a"><span class="lab-node"></span><span class="lab-node"></span><span class="lab-node"></span><span class="lab-node"></span></div>
+   <div class="lab-orbit lab-orbit--b"><span class="lab-node"></span><span class="lab-node"></span><span class="lab-node"></span><span class="lab-node"></span></div>
+   <button class="lab-reactor" type="button" id="heroPower" aria-label="Run Power Chain"><span class="lab-reactor-icon" aria-hidden="true">⏻</span><strong>POWER</strong><small>ONE PRESS</small></button>
+   <span class="lab-float lab-float--left">01 / INTENT</span><span class="lab-float lab-float--right">40 / SOURCES</span>
+  </div>
+  <p class="lab-sculpture-caption">A real control inside a CSS 3D design prototype. <span>No rendered-only buttons.</span></p>
+ </div>
+</section>
+<section class="lab-workbench" id="workbench" aria-labelledby="workbenchHeading">
+ <div class="lab-heading"><div><span class="lab-kicker">THE FIRST INVENTION</span><h2 id="workbenchHeading">Power Chain <span>01</span></h2></div><p>Configure once. Run a controlled fan-out. Read every original source from one place.</p></div>
+ <div class="lab-workgrid">
+  <div class="lab-console">
+   <label class="lab-field-label" for="chainIntent"><span>01</span> What do you want to discover?</label>
+   <div class="lab-query-wrap"><input id="chainIntent" type="search" autocomplete="off" maxlength="110" value="1881 Morgan dollar" placeholder="What do you want to find across the web?"><button type="button" id="autoWire">AUTO-WIRE ↗</button></div>
+   <p id="intentReason" class="lab-reason" aria-live="polite">Collector terminology points to listings and attribution sources.</p>
+   <div class="lab-control-title"><span>02</span> Choose your circuits <small>Tap any lane to include or remove it</small></div>
+   <div id="laneGrid" class="lab-lanes" role="group" aria-label="Source circuits"></div>
+   <div class="lab-bottom-controls"><label for="runDepth">03 <strong>Run depth</strong><select id="runDepth"><option value="10">10 sites · Quick</option><option value="24">24 sites · Deep</option><option value="40">40 sites · Full grid</option></select></label><div class="lab-button-stack"><button class="lab-main-power" id="runPower" type="button"><span aria-hidden="true">⏻</span> RUN POWER CHAIN</button><button class="lab-stop" id="stopPower" type="button" disabled>Stop</button></div></div>
+   <p class="lab-disclosure">This version queries QuantaPhi's public web-search index for each selected domain. It does not directly open, scrape or sign in to 40 websites. A 1,000-site distributed crawler/queue is a future infrastructure milestone, not a current claim.</p>
+  </div>
+  <aside class="lab-dashboard" aria-label="Power Chain execution dashboard">
+   <div class="lab-readout-top"><span>FIELD MONITOR</span><span id="monitorMode">STANDBY</span></div>
+   <div class="lab-digits"><div><strong id="countChecked" aria-live="polite">00</strong><span>Sources checked</span></div><div><strong id="countMatches">00</strong><span>Verified matches</span></div></div>
+   <div class="lab-progress" role="progressbar" aria-label="Search progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="chainProgress"><div id="chainProgressFill"></div></div>
+   <p id="chainStatus" class="lab-status-text" role="status">System ready. Enter your intent and press Power.</p>
+   <div class="lab-map-header"><span>LIVE CIRCUIT LOG</span><span id="targetCount">10 TARGETS</span></div>
+   <div id="chainLog" class="lab-log" aria-live="polite"><p class="lab-empty">Each checked domain will appear here with a verified result, no match, or an error receipt.</p></div>
+  </aside>
+ </div>
+</section>
+<section id="resultsSection" class="lab-results" aria-labelledby="resultsHeading" hidden>
+ <div class="lab-heading"><div><span class="lab-kicker">ORIGINAL SOURCES</span><h2 id="resultsHeading">Signal returns.</h2></div><button type="button" id="copyReceipt" class="lab-outline">Copy run receipt</button></div>
+ <p class="lab-result-note">Links are independently indexed public results filtered to their original domains; not paid placements, official partner feeds, live prices or logged-in account data.</p>
+ <div id="chainResults" class="lab-result-grid"></div>
+</section>
+<section class="lab-blueprint" id="blueprint" aria-labelledby="blueprintHeading">
+ <div class="lab-heading"><div><span class="lab-kicker">WHY THIS CARD EXISTS</span><h2 id="blueprintHeading">A circuit with a purpose.</h2></div><p>Every new Quick Card begins with intent, an actual working mechanism, and proof.</p></div>
+ <div class="lab-principles">
+  <article><span>01 / REASON</span><h3>Understand intent</h3><p>A visible, overridable intent router recommends a source circuit. It doesn't secretly decide what to send or buy.</p></article>
+  <article><span>02 / ENGINE</span><h3>Operate, don't imitate</h3><p>One button launches bounded public-index queries, not 40 browser popups. Stop cancels outstanding requests.</p></article>
+  <article><span>03 / EVIDENCE</span><h3>Make every claim testable</h3><p>Original URLs, match counts and per-domain receipts distinguish a real result from empty data or a failed search.</p></article>
+ </div>
+ <div class="lab-roadmap"><div><span>DESIGN TARGET / PHASE 2</span><strong>1,000-node orchestration grid</strong><p>Server-side queued jobs, domain rate limits, robots and publisher terms, cancellation, provenance and reusable worker receipts. Not deployed in prototype 001.</p></div><span class="lab-future">BLUEPRINT</span></div>
+</section>
+</main>
+<footer class="lab-footer"><span>INFINITY® 2026 · QUANTAPHI DESIGN LAB</span><span>Concept 001 · Functional prototype · Source-first design</span><a href="/">QUANTAPHI ↗</a></footer>
+<script type="module" src="/design-lab/app.mjs?v=1"></script>
+</body></html>
