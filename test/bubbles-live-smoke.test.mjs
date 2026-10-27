@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {runSmoke} from '../scripts/bubbles-live-smoke.mjs';
 
 const healthy={ok:true,service:'bubbles-tools',tools:{chat:true,speech:true}};
-function stub({authorizedLeak=false,chatAnswer='The smallest next step is to run the owner adapter tests; no code was edited.',staleAdapter=false,scopeServer=6,scopeRequested=6,scopeMalformed=false}={}){
+function stub({authorizedLeak=false,chatAnswer='The smallest next step is to run the owner adapter tests; no code was edited.',staleAdapter=false,scopeServer=6,scopeRequested=6,scopeMalformed=false,scopeClientPrefix='8f676e020d9ff91a'}={}){
  const calls=[];
  return {
   calls,
@@ -14,7 +14,7 @@ function stub({authorizedLeak=false,chatAnswer='The smallest next step is to run
    if(path==='/work/tickets/list')return Response.json(authorizedLeak?{ok:true,tickets:[]}:{ok:false,error:'forbidden'},{status:authorizedLeak?200:404});
    if(path==='/bubbles.html')return new Response('<script src="/bubbles-ai.js?v=new"></script><script src="/bubbles-brain-actions.js?v=new"></script>',{status:200});
    if(path==='/bubbles-brain-actions.js')return new Response(staleAdapter?'outdated':'resolveFollowupRequest makeJobs',{status:200});
-   if(path==='/api/bubbles/connections/scope-inventory')return Response.json(scopeMalformed?{ok:true,configured:true,scopeInventory:{serverAllowlistCount:6,signInRequestScopeCount:386}}:{ok:true,configured:true,clientIdPrefix:'8f676e020d9ff91a',scopeInventory:{serverAllowlistCount:scopeServer,signInRequestScopeCount:scopeRequested}});
+   if(path==='/api/bubbles/connections/scope-inventory')return Response.json(scopeMalformed?{ok:true,configured:true,scopeInventory:{serverAllowlistCount:6,signInRequestScopeCount:386}}:{ok:true,configured:true,clientIdPrefix:scopeClientPrefix,scopeInventory:{serverAllowlistCount:scopeServer,signInRequestScopeCount:scopeRequested}});
    if(path==='/v1/assist'&&options.headers?.Origin?.includes('untrusted'))return Response.json({ok:false,error:'origin_not_allowed'},{status:403});
    if(path==='/v1/assist')return Response.json({ok:true,model:'@cf/openai/gpt-oss-120b',output:chatAnswer,receipt:{status:'complete',minted:false,repositoryActionsVerified:false}});
    throw Error('Unexpected '+path);
@@ -46,7 +46,7 @@ test('real-mode public site, checked owner adapter and concrete GPT response mus
  assert.equal(mock.calls.length,7);
  assert.deepEqual(report.checks.find(x=>x.name==='cloudflare_scope_inventory'),{
   name:'cloudflare_scope_inventory',result:'observed',http:200,
-  serverAllowlistCount:6,signInRequestScopeCount:6,fullScopeRequestConfigured:false,
+  clientIdPrefix:'8f676e020d9ff91a',serverAllowlistCount:6,signInRequestScopeCount:6,fullScopeRequestConfigured:false,
   clientRegistrationVerified:false,ownerConsentVerified:false});
  assert.ok(report.checks.some(x=>x.name==='live_gpt_reply'&&x.result==='pass'));
 });
@@ -97,4 +97,13 @@ test('live smoke rejects inconsistent Cloudflare scope counts',async()=>{
  const report=await runSmoke({fetcher:mock.fetcher,full:true});
  assert.equal(report.status,'failed');
  assert.match(report.error,/malformed or inconsistent/);
+});
+
+test('live smoke refuses 386/386 counts when active OAuth client identity is absent or malformed',async()=>{
+ for(const prefix of [undefined,'','wrong-client','1234567890abcdef1234']){
+  const mock=stub({scopeServer:386,scopeRequested:386,scopeClientPrefix:prefix??null});
+  const report=await runSmoke({fetcher:mock.fetcher,full:true});
+  assert.equal(report.status,'failed');
+  assert.match(report.error,/malformed or inconsistent/);
+ }
 });
