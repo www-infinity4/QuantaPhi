@@ -116,9 +116,24 @@
       updateButton.disabled = false;
     }
   };
+  // A reload must never discard a composed message or an unsent image.
+  // The conversation may be collapsed, so inspect all Bubbles composers.
+  const hasUnsentMessage = () => {
+    if (typeof document.querySelectorAll !== 'function') return false;
+    for (const form of document.querySelectorAll('.ba-composer')) {
+      const message = form.querySelector('textarea[aria-label="Message Bubbles"]');
+      const image = form.querySelector('.ba-photo-preview');
+      if (String(message?.value || '').trim() || (image && !image.hidden)) return true;
+    }
+    return false;
+  };
   updateButton.addEventListener('click', () => {
     if (!latest) { void check(true); return; }
-    if (!window.confirm('Reload Bubbles to apply the web app update? Copy or send unsent text first. Your wallet will not be erased.')) return;
+    if (hasUnsentMessage()) {
+      updateMessage.textContent = 'Your unsent Bubbles message or image is still here. Send or remove it before updating; no reload occurred.';
+      return;
+    }
+    if (!window.confirm('Reload Bubbles to apply the web app update? Your wallet will not be erased.')) return;
     const url = new URL(location.href);
     url.searchParams.set('appVersion', latest);
     location.assign(url.href);
