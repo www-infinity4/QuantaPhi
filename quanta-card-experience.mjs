@@ -366,14 +366,9 @@ export function mountCardTools(root,card){
  if(id==='wikipedia')wikipediaTool(root,card);
  if(id==='gold'||id==='silver')calculator(root,card);
  checklist(root,card);
- searchTool(root,card);
+ // Keep vetted first-party source experiences; TinyFish adds the shared
+ // original-site lookup. Never substitute a Google site: search for a site.
+ if(liveSourceProfile(id))searchTool(root,card);
  trendingTool(root,card);
- if(root.querySelectorAll('.qcx-tool').length===0){
-  const tool=section(root,'INVESTIGATE','Research this source');
-  const field=input('What would you like to investigate?','Research topic');
-  const b=action('Search original topic',()=>{const q=field.value.trim();if(q)window.open('https://www.google.com/search?q='+encodeURIComponent(card.name+' '+q),'_blank','noopener,noreferrer');});
-  tool.append(field,b);
- }
- // Cards with their own working source search do not need a duplicate generic search bar.
- mountCardActions(root,card,{showSearch:!liveSourceProfile(id)});
+ mountCardActions(root,card,{showSearch:false});
 }

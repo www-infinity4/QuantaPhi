@@ -7,7 +7,8 @@ const TINYFISH='https://agent.tinyfish.ai';
 const uuid=v=>/^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(v||'');
 const fail=(error,status=400)=>({httpStatus:status,result:{ok:false,error,executed:false}});
 const success=(obj,status=200)=>({httpStatus:status,result:{ok:true,...obj}});
-const configured=env=>typeof env.TINYFISH_API_KEY==='string'&&env.TINYFISH_API_KEY.length>12;
+const brokerReady=env=>Boolean(env.TINYFISH_BROKER&&typeof env.TINYFISH_BROKER.fetch==='function'&&typeof env.TINYFISH_BRIDGE_TOKEN==='string'&&env.TINYFISH_BRIDGE_TOKEN.length>12);
+const configured=env=>brokerReady(env)||(typeof env.TINYFISH_API_KEY==='string'&&env.TINYFISH_API_KEY.length>12);
 const profileConfigured=env=>typeof env.TINYFISH_PROFILE_ID==='string'&&/^prof_[a-zA-Z0-9]{8,80}$/.test(env.TINYFISH_PROFILE_ID);
 const summary=job=>({jobId:job.jobId,cardId:job.cardId,action:job.action,state:job.state,
  createdAt:job.createdAt,requestId:job.requestId,
@@ -36,9 +37,16 @@ export async function readBoundedJson(response,maxBytes=50000){
  return JSON.parse(new TextDecoder().decode(bytes));
 }
 async function tinyfish(env,fetcher,path,body){
- const r=await fetcher(TINYFISH+path,{method:body?'POST':'GET',
-  headers:{'X-API-Key':env.TINYFISH_API_KEY,...(body?{'Content-Type':'application/json'}:{})},
-  ...(body?{body:JSON.stringify(body)}:{}),redirect:'manual',signal:AbortSignal.timeout(20000)});
+ // The production TinyFish API key lives on continuity-session-coordinator.
+ // The Brain uses its service binding with a shared private bridge secret.
+ // A direct API key is supported only for legacy isolated tests/deployments.
+ const broker=brokerReady(env);
+ const endpoint=broker?'https://continuity-session-coordinator.internal/internal/tinyfish'+path:TINYFISH+path;
+ const headers=broker?{'Authorization':'Bearer '+env.TINYFISH_BRIDGE_TOKEN}: {'X-API-Key':env.TINYFISH_API_KEY};
+ if(body)headers['Content-Type']='application/json';
+ const options={method:body?'POST':'GET',headers,
+  ...(body?{body:JSON.stringify(body)}:{}),redirect:'manual',signal:AbortSignal.timeout(20000)};
+ const r=await (broker?env.TINYFISH_BROKER.fetch(endpoint,options):fetcher(endpoint,options));
  if(!r.ok){await r.body?.cancel();throw Error('tinyfish_http_'+r.status)}
  return readBoundedJson(r);
 }

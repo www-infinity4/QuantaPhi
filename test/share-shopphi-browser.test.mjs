@@ -30,8 +30,8 @@ test('seller has full-width eBay-like fields and an honest preview instead of fa
 });
 test('ordinary Quick Cards never masquerade Google results as a TinyFish website browser',()=>{
  assert.doesNotMatch(actions,/providerSearchUrl\(provider,value\)\|\|/);
- assert.match(actions,/const verifiedSearch=providerSearchUrl\(provider,'example'\)/);
- assert.match(actions,/Open original website/);
+ assert.match(actions,/mountTinyFishCardReader\(bar,card\)/);
+ assert.match(source('tinyfish-card-reader.mjs'),/Open official website/);
  assert.doesNotMatch(shop,/https:\/\/www\.google\.com\/search/);
  assert.match(shop,/https:\/\/www\.ebay\.com\/sch\/i\.html/);
 });
