@@ -23,7 +23,9 @@
    d.last7Days&&validCount(d.last7Days.requests)&&validCount(d.last7Days.pageViews)&&
    validCount(d.last7Days.daysRecorded)&&d.last7Days.daysRecorded<=7&&
    Number.isFinite(recentStart)&&Number.isFinite(recentUntil)&&
-   recentUntil-recentStart===6*86400000&&recentStart>=start&&recentStart<=through&&
+   // The recorded ledger may start after the seven-day window begins, or end before it.
+   // Neither condition invalidates its durable cumulative totals.
+   recentUntil-recentStart===6*86400000&&
    validCount(d.recordedDays)&&d.last7Days.daysRecorded<=d.recordedDays&&
    typeof d.coverageContinuous==='boolean'&&
    d.last7Days.requests<=d.requests&&d.last7Days.pageViews<=d.pageViews;
