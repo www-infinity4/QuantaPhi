@@ -1,4 +1,5 @@
 import {mountCardActions} from './quanta-card-actions.mjs';
+import {tinyfishCardSupported} from './quanta-tinyfish-card.mjs';
 import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
@@ -366,7 +367,7 @@ export function mountCardTools(root,card){
  if(id==='wikipedia')wikipediaTool(root,card);
  if(id==='gold'||id==='silver')calculator(root,card);
  checklist(root,card);
- searchTool(root,card);
+ if(!tinyfishCardSupported(id))searchTool(root,card);
  trendingTool(root,card);
  if(root.querySelectorAll('.qcx-tool').length===0){
   const tool=section(root,'INVESTIGATE','Research this source');
@@ -375,5 +376,5 @@ export function mountCardTools(root,card){
   tool.append(field,b);
  }
  // Cards with their own working source search do not need a duplicate generic search bar.
- mountCardActions(root,card,{showSearch:!liveSourceProfile(id)});
+ mountCardActions(root,card,{showSearch:!liveSourceProfile(id)&&!tinyfishCardSupported(id)});
 }
