@@ -29,3 +29,9 @@ binding = "BROWSER"
 [[services]]
 binding = "PUBLIC_X"
 service = "bubbles-public-x"
+
+# TinyFish public read broker. API key stays only on continuity-session-coordinator.
+[[services]]
+binding = "TINYFISH_BROKER"
+service = "continuity-session-coordinator"
+environment = "production"
