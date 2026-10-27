@@ -183,7 +183,7 @@ test('automatic site revision reload uses the same safe conversation checkpoint 
  const start=ui.lastIndexOf('siteVersionChecking=true;',end);
  assert.ok(start>0&&end>start);
  const autoUpdater=ui.slice(start,end);
- assert.match(autoUpdater,/prepareSiteUpdateReload\\?\\.\\(\\)\\s*!==true/);
- assert.doesNotMatch(autoUpdater,/sessionStorage\\.setItem\\(UPDATE_RELOAD_THREAD/);
- assert.match(autoUpdater,/location\\.reload\\(\\)/);
+ assert.match(autoUpdater,/prepareSiteUpdateReload\?\.\(\)\s*!==true/);
+ assert.doesNotMatch(autoUpdater,/sessionStorage\.setItem\(UPDATE_RELOAD_THREAD/);
+ assert.match(autoUpdater,/location\.reload\(\)/);
 });
