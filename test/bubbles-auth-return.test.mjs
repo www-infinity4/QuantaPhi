@@ -44,7 +44,7 @@ test('Cloudflare return stores only a bounded UI outcome and not an OAuth secret
  assert.equal(resumeAuthReturn(host),true);
  assert.equal(destination,'/bubbles.html');
  const receipt=JSON.parse(data.get('bubbles:oauth-return-note:v1'));
- assert.deepEqual(Object.keys(receipt).sort(),['at','provider','result']);
+ assert.deepEqual(Object.keys(receipt).sort(),['at','provider','reason','result']);
  assert.equal(receipt.result,'received');
  assert.ok(!data.get('bubbles:oauth-return-note:v1').includes(pending.state));
  host.location.search='?result=declined';destination='';
@@ -60,4 +60,22 @@ test('received callback with lost tab session stays visible with an explanation'
   document:{querySelector:()=>({set textContent(value){message=value;}})}};
  assert.equal(resumeAuthReturn(host),false);
  assert.match(message,/no longer has the matching Bubbles sign-in session/);
+});
+
+test('failed callback reports only recognized error classes and never OAuth code or state',()=>{
+ const store=new Map();
+ const pending={provider:'cloudflare',state:'q'.repeat(43),returnPath:'/bubbles.html',expiresAt:Date.now()+60000};
+ store.set('bubbles:oauth-pending:v1',JSON.stringify(pending));
+ const host={location:{pathname:'/api/bubbles/connections/cloudflare/callback',
+   search:'?result=failed&reason=callback_state_invalid&code=HIDDEN-CODE',
+   replace:()=>assert.fail('failed callback must remain visible')},
+  sessionStorage:{getItem:k=>store.get(k)||null,setItem:(k,v)=>store.set(k,v)}};
+ assert.equal(resumeAuthReturn(host),false);
+ const note=JSON.parse(store.get('bubbles:oauth-return-note:v1'));
+ assert.equal(note.reason,'callback_state_invalid');
+ assert.ok(!JSON.stringify(note).includes('HIDDEN-CODE'));
+ assert.ok(!JSON.stringify(note).includes(pending.state));
+ host.location.search='?result=failed&reason=leak-USER-ID';
+ assert.equal(resumeAuthReturn(host),false);
+ assert.equal(JSON.parse(store.get('bubbles:oauth-return-note:v1')).reason,null);
 });
