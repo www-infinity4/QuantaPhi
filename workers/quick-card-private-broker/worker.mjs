@@ -1,4 +1,4 @@
-import {planCardBrowserAction,cardActionGoal} from '../infinity-brain-clock/quick-card-browser-policy.mjs';
+import {CARD_SITES,planCardBrowserAction,cardActionGoal} from '../infinity-brain-clock/quick-card-browser-policy.mjs';
 
 // Private service-binding transport only. Never attach a public route or workers.dev URL.
 // Brain must authenticate the owner and reserve the request ID before calling this worker.
@@ -40,9 +40,8 @@ export function validatePrivateBrokerRequest(body){
  if(body.action==='status'){
   if(Object.keys(body).some(k=>!['action','cardId','runId'].includes(k)))throw Error('extra_fields');
   if(!UUID.test(body.runId||''))throw Error('invalid_run_id');
-  const plan=planCardBrowserAction({cardId:body.cardId,action:'inspect'});
-  // Durable cards have named mapped actions, not a generic inspect action.
-  if(plan.kind!=='durable')throw Error('account_profile_not_authorized');
+  const card=typeof body.cardId==='string'&&Object.hasOwn(CARD_SITES,body.cardId)?CARD_SITES[body.cardId]:null;
+  if(!card||card.kind!=='durable'||!card.mappings.length)throw Error('account_profile_not_authorized');
   return {action:'status',runId:body.runId};
  }
  throw Error('unsupported_action');
@@ -76,7 +75,7 @@ export async function handlePrivateBroker(request,env,fetcher=fetch){
   if(start){
    const runId=data?.run_id||data?.runId;
    if(!UUID.test(runId||''))return reply({ok:false,error:'provider_receipt_invalid'},502);
-   return reply({ok:true,runId,requestId:request.headers.get('X-QuantaPhi-Request-Id')||null},202);
+   return reply({ok:true,runId},202);
   }
   return reply({ok:true,status:String(data?.status||'UNKNOWN').slice(0,30),result:data?.result??null,
    error:data?.error?{message:String(data.error?.message||data.error).slice(0,140)}:null});
