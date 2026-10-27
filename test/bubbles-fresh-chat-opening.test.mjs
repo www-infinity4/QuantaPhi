@@ -150,3 +150,29 @@ test('standalone website and Android reopen fresh chats while embedded cards ret
  assert.match(native,/void hide\(\) \{/);
  assert.match(native,/historyJournal\.read\(\)/);
 });
+
+
+test('PWA update preparation checkpoints the active chat and rejects active work or unsafe storage',()=>{
+ const a=ui.indexOf('prepareSiteUpdateReload:()=>{');
+ const b=ui.indexOf('\\n },',a);
+ assert.ok(a>0&&b>a,'first-party updater must expose a bounded checkpoint method');
+ const stored=[],ctx={busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,
+  voicePending:[],input:{value:''},pendingImage:null,pendingImages:[],photoInput:{files:[]},
+  keepChat:true,messages:[{role:'user',text:'Earlier owner work'}],
+  saveThread:()=>true,UPDATE_RELOAD_THREAD:'site-update-reload',
+  sessionStorage:{setItem:(key,value)=>stored.push([key,value])}};
+ const prepare=vm.runInNewContext('({'+ui.slice(a,b+4)+'}).prepareSiteUpdateReload',ctx);
+ ctx.busy=true;assert.equal(prepare(),false);ctx.busy=false;
+ ctx.nativeSpeechPending=true;assert.equal(prepare(),false);ctx.nativeSpeechPending=false;
+ ctx.input.value='Owner unsent draft';assert.equal(prepare(),false);ctx.input.value='';
+ ctx.photoInput.files=[{name:'preparing.png'}];assert.equal(prepare(),false);ctx.photoInput.files=[];
+ ctx.keepChat=false;assert.equal(prepare(),false);ctx.keepChat=true;
+ ctx.saveThread=()=>false;assert.equal(prepare(),false);
+ assert.equal(stored.length,0,'unsafe paths must not arm the resume marker');
+ let saves=0;ctx.saveThread=()=>{saves++;return true};
+ assert.equal(prepare(),true);
+ assert.equal(saves,1);
+ assert.equal(JSON.stringify(stored),JSON.stringify([['site-update-reload','1']]));
+ ctx.sessionStorage.setItem=()=>{throw Error('storage disabled')};
+ assert.equal(prepare(),false,'no resume marker means no reload');
+});
