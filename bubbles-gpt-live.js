@@ -87,8 +87,20 @@ function iceReady(peer){
 }
 start.addEventListener("click",async()=>{
  if(pc)return;
- const credential=secret.value.trim();
- if(credential.length<32){show("Owner authorization must be configured on the gateway.");return;}
+ // The StarQuest wallet is converted to a short-lived owner session by the
+ // existing Brain bridge. Never send the raw sq_ wallet device credential.
+ const manual=secret.value.trim();
+ let authorization=manual.length>=32?"Bearer "+manual:"";
+ if(!authorization&&window.QuantaBrainOwner?.ready){
+   let timeout;
+   try{
+     const verified=await Promise.race([window.QuantaBrainOwner.ready,
+       new Promise(resolve=>{timeout=setTimeout(()=>resolve(null),8000);})]);
+     const candidate=verified?.Authorization||"";
+     if(/^Bearer r[bd]_[a-f0-9]{64}$/.test(candidate))authorization=candidate;
+   }finally{clearTimeout(timeout)}
+ }
+ if(!authorization){show("Verify your StarQuest wallet in Robot Brain first, or use a separate owner authorization. No paid call started.");return;}
  const generation=++attempt;
  requestController=new AbortController();
  const signal=requestController.signal;
@@ -125,7 +137,7 @@ start.addEventListener("click",async()=>{
    if(generation!==attempt)return;
    show("Establishing genuine GPT-Live session…");
    const response=await fetch(gateway,{
-     signal,method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+credential},
+     signal,method:"POST",headers:{"Content-Type":"application/json","Authorization":authorization},
      body:JSON.stringify({sdp:pc.localDescription.sdp})
    });
    // Never store or log the secret, not even in localStorage.
