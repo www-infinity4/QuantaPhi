@@ -122,7 +122,7 @@ class Handler(BaseHTTPRequestHandler):
             if role not in ("user", "assistant", "tool") or not isinstance(text, str) or len(text) > 2000:
                 return self.send(400, {"ok": False, "error": "invalid_chat_turn"})
             stripped = text.strip()
-            structured = stripped.startswith(("{", "[", "&#123;")) or stripped.startswith("&#96;&#96;&#96;")
+            structured = stripped.startswith(("{", "[", "```"))
             tool_syntax = structured and any(key in stripped[:500] for key in
                 ('"tool_calls"', '"function"', '"tool_name"', '"arguments"', '"action"'))
             self.send(200, {"ok": True, "syntax_checked": True, "has_tool_syntax": tool_syntax,
