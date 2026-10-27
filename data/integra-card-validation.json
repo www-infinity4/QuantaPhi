@@ -4,8 +4,12 @@
   "title": "Integra · Quick Card Validator",
   "role": "validate-only",
   "gmailAccount": {
-    "status": "not-created",
-    "address": null
+    "status": "owner-declared",
+    "address": "quantaphi.integra.ai@gmail.com",
+    "connected": false,
+    "verification": "not-verified-via-connector",
+    "source": "owner-provided",
+    "lastConnectionCheck": "unavailable"
   },
   "xAccount": {
     "status": "not-created",
@@ -32,5 +36,5 @@
     "deploymentProof"
   ],
   "releaseStatus": "not-authorized",
-  "requiredOwnerAction": "Register provider identity and verify permissions separately"
+  "requiredOwnerAction": "Sign in to the new Gmail account through Google's own login and connect this account to ChatGPT/Gmail; verify delegated access before enabling any message handling. Integra stays validation-only."
 }
