@@ -60,5 +60,5 @@ test('StarMaker uses the verified publisher-owned login without inventing an OAu
  assert.equal(cardProvider({id:'starmaker',name:'StarMaker',website:'https://starmakerstudios.com.phishing.example'}),null);
 });
 
-// C13B0 wiring study and real Termux scaffold are in the shared card regression suite.
+// C13B0 study regressions also assert Integra's owner-declared Gmail remains unconnected.
 import './quick-card-wiring.test.mjs';
