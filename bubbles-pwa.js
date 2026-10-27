@@ -138,6 +138,13 @@
       return;
     }
     if (!window.confirm('Reload Bubbles to apply the web app update? Your wallet will not be erased.')) return;
+    // A clean composer is not sufficient: a reply may still be generating.
+    // Bubbles must checkpoint the active thread and explicitly authorize this
+    // one reload; otherwise a fresh-chat startup would hide the conversation.
+    if (window.QuantaBubbles?.prepareSiteUpdateReload?.() !== true) {
+      updateMessage.textContent = 'Bubbles is still working, or the current conversation could not be safely saved. Update paused; no reload occurred.';
+      return;
+    }
     const url = new URL(location.href);
     url.searchParams.set('appVersion', latest);
     location.assign(url.href);
