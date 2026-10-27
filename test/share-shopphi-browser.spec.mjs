@@ -6,7 +6,7 @@ test('ShopPhi full-page seller studio opens with working item fields, draft and 
  await expect(form).toBeVisible();
  await expect(page.locator('#shopAdPhi .sap-seller-fullscreen')).toBeVisible();
  await page.locator('[name="title"]').fill('Vintage denim jacket');
- await page.locator('[name="description"]').fill('Original denim jacket in used condition, photographed and described by seller.');
+ await form.locator('textarea[name="description"]').fill('Original denim jacket in used condition, photographed and described by seller.');
  await page.locator('[name="url"]').fill('https://www.ebay.com/itm/123456789012');
  await page.locator('[name="priceLabel"]').fill('49.95');
  await page.locator('[name="category"]').selectOption('Clothing & shoes');
