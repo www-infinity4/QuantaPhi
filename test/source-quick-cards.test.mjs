@@ -36,7 +36,7 @@ test('Google and Bing start real engine requests inside the Infinity Viewer',()=
 });
 test('homepage and Oracle swipe each original provider card with its controls, no viewer detour',()=>{
  assert.match(home,/id="siteQuickCards"/);
- assert.match(home,/source-quick-cards\.mjs\?v=20261027-karaoke1/);
+ assert.match(home,/source-quick-cards\.mjs\?v=20261027-siteviewer1/);
  assert.match(launcher,/item\.dataset\.sourceId=card\.id/);
  assert.match(launcher,/mountCardTools\(tools,card\)/);
  assert.match(launcher,/quantaphi:source-cards-ready/);
@@ -65,7 +65,8 @@ test('provider permissions and content limitations remain explicit',()=>{
  assert.match(findSourceCard('whatsapp').details,/cannot be embedded/);
  assert.match(findSourceCard('starmaker').details,/backing tracks/);
  assert.match(findSourceCard('fox-news').details,/draft-only/);
- assert.match(findSourceCard('chatgpt').details,/not get embedded/);
+ assert.match(findSourceCard('chatgpt').details,/Framing depends on the provider and browser/);
+ assert.match(findSourceCard('chatgpt').details,/not synchronized to QuantaPhi/);
  assert.ok(!launcher.includes('localStorage.setItem'));
  assert.ok(!launcher.includes('navigator.geolocation'));
  assert.ok(!launcher.includes('navigator.mediaDevices.getUserMedia'));
