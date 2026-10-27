@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {planBubblesScopeSync,confirmBubblesScopeSync} from '../workers/infinity-brain-clock/cloudflare-scope-sync.mjs';
 import {inspectCloudflareTokenManager,issueScopedCloudflareToken} from '../workers/infinity-brain-clock/cloudflare-token-broker.mjs';
+import {resolveCloudflareScopeConfig,cloudflareScopeInventory} from '../workers/bubbles-connections/providers.mjs';
 const ID='8f676e020d9ff91a2951e415d144c9b7';
 const CB='https://quantaphi.org/api/bubbles/connections/cloudflare/callback';
 const OLD=['BOT_WALLET','CLOUDFLARE_CLIENT_ID','CLOUDFLARE_CLIENT_SECRET','CLOUDFLARE_OAUTH_ALLOWED_SCOPES',
@@ -14,7 +15,7 @@ function storage(){
 const fakeScopeIDs=()=>['user-details.read','memberships.read','workers-scripts.admin','d1.read','d1.write','page.write',
  ...Array.from({length:380},(_,i)=>'test-provider-scope-'+i+'.read')];
 function harness({scopes=fakeScopeIDs(),client=ID,active=ID.slice(0,16),live=386}={}){
- const logs=[],issued=[];
+ const logs=[],issued=[],bindings=new Set(OLD);
  const endpoint='https://api.cloudflare.com/client/v4';
  const json=x=>Response.json({success:true,result:x});
  const issue=async(plan)=>{
@@ -31,8 +32,13 @@ function harness({scopes=fakeScopeIDs(),client=ID,active=ID.slice(0,16),live=386
   }
   assert.ok(path.startsWith(endpoint));
   if(path.endsWith('/oauth_clients/'+ID))return json({client_id:client,redirect_uris:[CB],scopes});
-  if(path.endsWith('/workers/scripts/bubbles-connections/settings'))return json({bindings:OLD.map(name=>({name,type:'secret_text'}))});
-  if(path.endsWith('/workers/scripts/bubbles-connections/secrets'))return json({ok:true});
+  if(path.endsWith('/workers/scripts/bubbles-connections/settings'))return json({bindings:[...bindings].map(name=>({name,type:'secret_text'}))});
+  if(path.endsWith('/workers/scripts/bubbles-connections/secrets')){
+   const payload=JSON.parse(opts.body);
+   if(new TextEncoder().encode(payload.text).length>5120)
+    return Response.json({success:false,errors:[{code:1000,message:'Secret exceeds limit'}]},{status:400});
+   bindings.add(payload.name);return json({ok:true});
+  }
   if(/\/user\/tokens\/temporary-token-/.test(path))return json({});
   throw Error('unexpected_mock_endpoint:'+path);
  };
@@ -48,7 +54,7 @@ test('plan is read-only and explicitly requires owner approval',async()=>{
  assert.equal(plan.changesDns,false);
  assert.equal(plan.requiresOwnerApproval,true);
 });
-test('verified exact client + 386 scopes updates one secret and checks live count',async()=>{
+test('verified exact client + 386 scopes installs three size-safe secrets and checks live count',async()=>{
  const db=storage(),plan=await planBubblesScopeSync(db,env);
  const h=harness();
  const result=await confirmBubblesScopeSync(db,{requestId:plan.requestId},env,{issue:h.issue,request:h.request});
@@ -56,10 +62,15 @@ test('verified exact client + 386 scopes updates one secret and checks live coun
  assert.equal(result.status,'live_scope_count_verified');
  assert.deepEqual(h.issued,['oauth-client-read','workers-script-edit']);
  const write=h.logs.filter(x=>x.url.endsWith('/workers/scripts/bubbles-connections/secrets'));
- assert.equal(write.length,1);
- const payload=JSON.parse(write[0].body);
- assert.equal(payload.name,'CLOUDFLARE_OAUTH_ALLOWED_SCOPES');
- assert.equal(payload.text.split(' ').length,386);
+ assert.equal(write.length,3);
+ const payloads=write.map(entry=>JSON.parse(entry.body));
+ assert.deepEqual(payloads.map(v=>v.name),[1,2,3].map(i=>'CLOUDFLARE_OAUTH_ALLOWED_SCOPES_PART_'+i));
+ assert.equal(payloads.flatMap(v=>v.text.split(' ')).length,386);
+ assert.ok(payloads.every(v=>new TextEncoder().encode(v.text).length<=5120));
+ const chunks=Object.fromEntries(payloads.map(v=>[v.name,v.text]));
+ assert.equal(cloudflareScopeInventory(resolveCloudflareScopeConfig(chunks)).serverAllowlistCount,386);
+ assert.equal(cloudflareScopeInventory(resolveCloudflareScopeConfig(chunks)).signInRequestScopeCount,386);
+ assert.equal(cloudflareScopeInventory(resolveCloudflareScopeConfig({...chunks,CLOUDFLARE_OAUTH_ALLOWED_SCOPES_PART_3:''})).serverAllowlistCount,0);
  assert.ok(!JSON.stringify(result).includes('test-parent-manager'));
  assert.equal(h.logs.filter(x=>/\/user\/tokens\/temporary-token-/.test(x.url)).length,2);
  const repeat=await confirmBubblesScopeSync(db,{requestId:plan.requestId},env,{issue:h.issue,request:h.request});
@@ -71,9 +82,9 @@ test('refresh-token protocol scope is not counted as an application permission',
  const result=await confirmBubblesScopeSync(db,{requestId:plan.requestId},env,{issue:h.issue,request:h.request});
  assert.equal(result.ok,true);
  assert.equal(result.verifiedRegisteredScopeCount,386);
- const request=h.logs.find(x=>x.url.endsWith('/workers/scripts/bubbles-connections/secrets'));
- assert.equal(JSON.parse(request.body).text.split(' ').length,386);
- assert.ok(!JSON.parse(request.body).text.includes('offline_access'));
+ const chunks=h.logs.filter(x=>x.url.endsWith('/workers/scripts/bubbles-connections/secrets'));
+ assert.equal(chunks.flatMap(x=>JSON.parse(x.body).text.split(' ')).length,386);
+ assert.ok(chunks.every(x=>!JSON.parse(x.body).text.includes('offline_access')));
 });
 test('385 scoped client is never guessed or altered',async()=>{
  const db=storage(),plan=await planBubblesScopeSync(db,env),h=harness({scopes:fakeScopeIDs().slice(0,385)});

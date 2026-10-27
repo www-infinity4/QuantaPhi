@@ -1,7 +1,7 @@
 import {cloudStarCoinBackup} from './starcoin-backup.mjs';
 import {digest} from './vault.mjs';
 import {PROVIDERS} from './authorization.mjs';
-import {CONNECTOR_REQUIREMENTS,cloudflareAvailableActions,cloudflareScopeInventory} from './providers.mjs';
+import {CONNECTOR_REQUIREMENTS,cloudflareAvailableActions,cloudflareScopeInventory,resolveCloudflareScopeConfig} from './providers.mjs';
 const ORIGINS = new Set(['https://quantaphi.org','https://www.quantaphi.org']);
 export const PREFIX = '/api/bubbles/connections';
 function json(origin,value,status = 200) {
@@ -43,13 +43,14 @@ export function callbackPage(provider,result='') {
 // resolveService is an internal dependency, selected only by verified user ID.
 export async function handleConnections(request,env,resolveService) {
   const url = new URL(request.url), origin = request.headers.get('Origin') || '';
+  const cloudflareScopes=resolveCloudflareScopeConfig(env);
   if (request.method === 'GET' && url.pathname === PREFIX+'/health') return json(origin,{ok:true,service:'bubbles-connections',version:2});
   // Public configuration proof only. No account identity, token, or user data.
   if(request.method==='GET'&&url.pathname===PREFIX+'/scope-inventory'){
     const ready=env.CONNECTIONS_READY===true||env.CONNECTIONS_READY==='true';
     const clientId=String(env.CLOUDFLARE_CLIENT_ID||'');
     const configured=ready&&/^[a-f0-9]{32}$/i.test(clientId);
-    const inventory=cloudflareScopeInventory(env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES);
+    const inventory=cloudflareScopeInventory(cloudflareScopes);
     return json(origin,{ok:true,configured,clientIdPrefix:configured?clientId.slice(0,16):null,
       scopeInventory:{serverAllowlistCount:inventory.serverAllowlistCount,
         signInRequestScopeCount:inventory.signInRequestScopeCount}});
@@ -100,7 +101,7 @@ export async function handleConnections(request,env,resolveService) {
       if(!token.startsWith('bc_'))throw Error('verified_wallet_required');
       return json(origin,await env.CONNECTIONS.get(env.CONNECTIONS.idFromName('connector-pairing-v1')).endPair({token}));
     }
-    const oauthClientScopes=cloudflareAvailableActions(env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES);
+    const oauthClientScopes=cloudflareAvailableActions(cloudflareScopes);
     const cloudflareAppReady=Boolean(env.CLOUDFLARE_CLIENT_ID&&env.CLOUDFLARE_CLIENT_SECRET&&
       oauthClientScopes.includes('account.read'));
     const cloudflareFullReady=cloudflareAppReady&&
@@ -111,7 +112,7 @@ export async function handleConnections(request,env,resolveService) {
         configured:ready && ((id==='google' && !!env.GOOGLE_CLIENT_ID && !!env.GOOGLE_CLIENT_SECRET) ||
           (id==='github' && !!env.GITHUB_CLIENT_ID && !!env.GITHUB_CLIENT_SECRET) ||
           (id==='cloudflare' && cloudflareAppReady)),
-        ...(id==='cloudflare'?{scopeInventory:cloudflareScopeInventory(env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES),
+        ...(id==='cloudflare'?{scopeInventory:cloudflareScopeInventory(cloudflareScopes),
           clientIdPrefix:ready&&env.CLOUDFLARE_CLIENT_ID?String(env.CLOUDFLARE_CLIENT_ID).slice(0,16):null,
           fullProjectConfigured:ready&&cloudflareFullReady,
           setupRequired:!cloudflareAppReady?'oauth_client_not_configured':!cloudflareFullReady?'oauth_client_full_scopes_not_registered':null}:{}),

@@ -1,7 +1,7 @@
 import {DurableObject} from 'cloudflare:workers';
 import {ConsentService} from './consent.mjs';
 import {TokenVault,digest} from './vault.mjs';
-import {googleAdapter,githubAdapter,cloudflareAdapter} from './providers.mjs';
+import {googleAdapter,githubAdapter,cloudflareAdapter,resolveCloudflareScopeConfig} from './providers.mjs';
 import {executeGoogleRead,selectGoogleResource} from './google-read.mjs';
 import {handleConnections} from './router.mjs';
 import {ConnectorPairing} from './pairing.mjs';
@@ -11,11 +11,12 @@ export class UserConnections extends DurableObject {
     super(ctx,env);
     this.pairing=new ConnectorPairing(ctx.storage);
     const adapters = {};
+    const cloudflareScopes=resolveCloudflareScopeConfig(env);
     if (env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET) adapters.google = googleAdapter({clientId:env.GOOGLE_CLIENT_ID,clientSecret:env.GOOGLE_CLIENT_SECRET,redirectUri:'https://quantaphi.org/api/bubbles/connections/google/callback'});
     if (env.GITHUB_CLIENT_ID && env.GITHUB_CLIENT_SECRET) adapters.github = githubAdapter({clientId:env.GITHUB_CLIENT_ID,clientSecret:env.GITHUB_CLIENT_SECRET,redirectUri:'https://quantaphi.org/api/bubbles/connections/github/callback'});
-    if (env.CLOUDFLARE_CLIENT_ID && env.CLOUDFLARE_CLIENT_SECRET && env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES)
+    if (env.CLOUDFLARE_CLIENT_ID && env.CLOUDFLARE_CLIENT_SECRET && cloudflareScopes)
       adapters.cloudflare = cloudflareAdapter({clientId:env.CLOUDFLARE_CLIENT_ID,clientSecret:env.CLOUDFLARE_CLIENT_SECRET,
-        allowedScopes:env.CLOUDFLARE_OAUTH_ALLOWED_SCOPES,
+        allowedScopes:cloudflareScopes,
         redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'});
     this.service = new ConsentService({storage:ctx.storage,vault:new TokenVault(JSON.parse(env.CONNECTION_KEYRING || '{}'),env.CONNECTION_ACTIVE_KEY),adapters});
   }
