@@ -30,13 +30,26 @@ export async function walletIdentity(request,env) {
 const OAUTH_RETURN_REASONS=Object.freeze({
   callback_missing_code:'Cloudflare returned without an authorization code.',
   callback_state_invalid:'The login session could not be matched to the authorization return.',
-  callback_handoff_failed:'Cloudflare returned, but Bubbles could not securely save the authorization.',
+  callback_handoff_failed:'Cloudflare returned, but the Bubbles authorization handoff could not finish. The Worker may be unavailable.',
+  callback_handoff_state_invalid:'Cloudflare returned, but the original Bubbles sign-in session expired or was no longer available.',
+  callback_handoff_conflict:'Cloudflare returned an authorization callback conflicting with one already saved. Sign in again to avoid reusing an earlier code.',
+  callback_handoff_decrypt_failed:'Bubbles could not decrypt the saved authorization session. Check the connection keyring without replacing its keys.',
+  callback_handoff_encrypt_failed:'Bubbles could not encrypt the returned authorization. Check the connection keyring without resetting it.',
+  callback_handoff_store_failed:'Bubbles could not write the encrypted authorization to its account storage.',
   invalid_scope:'Cloudflare rejected the requested permission combination.',
   invalid_request:'Cloudflare rejected the authorization request.',
   unauthorized_client:'Cloudflare did not authorize this application for sign-in.',
   access_denied:'Cloudflare authorization was declined.',
   server_error:'Cloudflare reported an authorization service error.',
   temporarily_unavailable:'Cloudflare authorization is temporarily unavailable.',
+});
+const HANDOFF_FAILURE_REASONS=Object.freeze({
+  state_invalid:'callback_handoff_state_invalid',
+  conflicting_callback:'callback_handoff_conflict',
+  decrypt:'callback_handoff_decrypt_failed',
+  encrypt:'callback_handoff_encrypt_failed',
+  storage:'callback_handoff_store_failed',
+  unavailable:'callback_handoff_failed',
 });
 export function callbackPage(provider,result='',reason='') {
   if(!['google','github','cloudflare'].includes(provider))return new Response('Unknown provider',{status:404});
@@ -87,8 +100,13 @@ export async function handleConnections(request,env,resolveService) {
       catch{reason='callback_state_invalid';throw Error('state_invalid_or_used');}
       const service=await resolveService(locator.userId);
       reason='callback_handoff_failed';
-      await service.handoff({userId:locator.userId,provider,state,
+      const handoff=await service.handoff({userId:locator.userId,provider,state,
         ...(denied?{error:true}:{code})});
+      if(handoff?.received!==true){
+        reason=Object.hasOwn(HANDOFF_FAILURE_REASONS,handoff?.failure)
+          ?HANDOFF_FAILURE_REASONS[handoff.failure]:'callback_handoff_failed';
+        throw Error('handoff_unavailable');
+      }
       const errorCode=url.searchParams.get('error')||'';
       result=denied?(errorCode==='access_denied'?'declined':'failed'):'received';
       reason=denied&&Object.hasOwn(OAUTH_RETURN_REASONS,errorCode)?errorCode:'';
