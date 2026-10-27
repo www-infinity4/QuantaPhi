@@ -92,7 +92,7 @@ test('six responsive positions preserve original viewer and scripts, with real p
  assert.match(shop,/quantaphi:switchboard-change/);
  assert.match(engine,/stage\.parentNode\.insertBefore\(grid,stage\)/);
  assert.match(engine,/grid\.append\(before,stage,after\)/);
- assert.match(engine,/RELATED QUICK CARD/);
+ assert.match(engine,/INDEPENDENT SOURCE CARD/);
  assert.match(engine,/SPONSORED/);
  assert.match(css,/@media\(max-width:480px\)/);
  assert.match(css,/repeat\(3,minmax\(0,1fr\)\)/);
