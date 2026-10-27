@@ -40,7 +40,7 @@ test('Cardone iframe is the existing specialist assistant with versioned scripts
  assert.match(embed,/iframe\.src=ORIGIN\+'\/bubbles\.html\?'/);
  assert.match(embed,/quantaphi:bubbles:size/);
  assert.match(bubblePage,/bubbles-voice-gate\.js\?v=20261023-cardone-wake1/);
- assert.match(bubblePage,/bubbles-ai\.js\?v=20261026-settings1/);
+ assert.ok(bubblePage.includes('/bubbles-ai.js?v=' + JSON.parse(fs.readFileSync('bubbles-app-version.json', 'utf8')).version));
 });
 
 test('public specialist ignores background transcripts even within a conversation window',()=>{
