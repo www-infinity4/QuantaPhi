@@ -1,8 +1,9 @@
 import {mountCardTools} from './quanta-card-experience.mjs';
+import {STARMAKER_EMBED_URL,STARMAKER_EMBED_HTML} from './starmaker-quick-card.mjs';
 const card=Object.freeze({id:'starmaker',name:'StarMaker',kind:'Karaoke · Singing',feature:'Find a song and sing karaoke',official:'https://www.starmakerstudios.com/en/songs',featureUrl:'https://www.starmakerstudios.com/en/songs'});
 mountCardTools(document.getElementById('starmakerLive'),card);
-const url='https://quantaphi.org/starmaker-embed.html';
-const snippet='<iframe title="StarMaker interactive QuantaPhi Quick Card" src="'+url+'" width="100%" height="780" loading="lazy" allow="microphone" style="width:100%;max-width:880px;min-width:0;border:0;border-radius:18px" referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+const url=STARMAKER_EMBED_URL;
+const snippet=STARMAKER_EMBED_HTML;
 const code=document.getElementById('smEmbedCode'),status=document.getElementById('smShareStatus');
 code.value=snippet;
 async function copyValue(value){
