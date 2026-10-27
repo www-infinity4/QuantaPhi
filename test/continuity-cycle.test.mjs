@@ -349,3 +349,37 @@ test('authentication denials are never retried through a public route', async ()
   assert.equal(browser.state, 'unreachable');
   assert.equal(browser.reason, 'upstream_http_403');
 });
+
+
+test('legacy one-of-one CI success is invalidated rather than inherited from a cached receipt', async () => {
+  const d = database(), f = fixture();
+  try {
+    f.env.WORK_DB = d.db;
+    const first = await runCycle(f.env, AT, {now: () => f.at, fetcher: f.fetcher, fence: 'legacy'});
+    assert.equal(first.report.tracks.find(t => t.id === 'build').ci.passed, true);
+    const row = d.sql.prepare('SELECT report_json FROM continuity_cycle_receipts WHERE cycle_id=?').get(first.report.cycleId);
+    const legacy = JSON.parse(row.report_json);
+    const oldBuild = legacy.tracks.find(t => t.id === 'build');
+    oldBuild.ci = {success: 1, failed: 0, pending: 0, observed: 1, coverageComplete: true, passed: true};
+    oldBuild.detail = 'PR #1144: 1/1 latest workflows successful';
+    d.sql.prepare('UPDATE continuity_cycle_receipts SET report_json=? WHERE cycle_id=?')
+      .run(JSON.stringify(legacy), first.report.cycleId);
+    let sourceReads = 0;
+    const fetcher = (url, opts) => {
+      sourceReads++;
+      if (url.includes('/actions/runs')) return json({total_count: 1, workflow_runs: [f.runs[0]]});
+      return f.fetcher(url, opts);
+    };
+    const next = await runCycle(f.env, AT + INTERVAL, {
+      now: () => f.at + INTERVAL, fetcher, fence: 'corrected',
+    });
+    const build = next.report.tracks.find(t => t.id === 'build');
+    assert.equal(sourceReads, 2, 'legacy build evidence must be re-read, not silently inherited');
+    assert.equal(build.state, 'blocked');
+    assert.equal(build.cached, undefined);
+    assert.equal(build.ci.expectedMinimum, 37);
+    assert.equal(build.ci.coverageComplete, false);
+    assert.equal(build.ci.passed, false);
+    assert.equal(next.report.tracks.find(t => t.id === 'history').state, 'cached');
+  } finally {d.close();}
+});
