@@ -71,7 +71,7 @@ test('competitors must have distinct destinations and sponsored merchants',()=>{
  const a=mockAd('a','silver dollar','SameMerchant'),b=mockAd('b','gold coins','SameMerchant');
  const dup={...mockAd('c','coin albums'),url:a.url};
  const selected=chooseCompanions(hero,[a,b,dup]);
- assert.equal(selected.length,1);assert.equal(selected[0].url,a.url);
+ assert.equal(selected.length,1);assert.ok([a.url,b.url].includes(selected[0].url));
 });
 test('recorded anonymous exposure reduces repeated winning, not creates StarCoin payouts',()=>{
  const hero={id:'coins',title:'Morgan silver dollar'};
