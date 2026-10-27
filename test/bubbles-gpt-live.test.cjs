@@ -85,7 +85,7 @@ test('wallet-derived Brain owner session can start Live only after independent B
     transport:{type:'webrtc',sdp:'v=0\\nanswer'}}),{status:201});
  };
  try{
-   const res=await app.fetch(request(undefined,bearer.slice(7)),env);
+   const res=await app.fetch(request(undefined,bearer),env);
    assert.equal(res.status,201);
    assert.equal(approved,1);assert.equal(provider,1);
    const json=await res.json();
@@ -109,8 +109,8 @@ test('wallet device token, rejected Brain proof and absent provider key never st
  }finally{globalThis.fetch=previous}
 });
 test('wallet source is never copied to GPT Live broker or browser storage',()=>{
- assert.match(frontend,/QuantaBrainOwner\\?\\.ready/);
+ assert.match(frontend,/QuantaBrainOwner\?\.ready/);
  assert.match(frontend,/^.*Authorization.*/m);
  assert.doesNotMatch(frontend,/resolveDeviceToken|InfinityCloudWallet|sq_[A-Za-z0-9_-]/);
- assert.match(source,/r\\[bd\\]_/);
+ assert.match(source,/r\[bd\]_/);
 });
